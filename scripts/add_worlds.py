@@ -1,5 +1,6 @@
 import sys
 import os
+from time import sleep
 
 import yaml
 
@@ -23,18 +24,19 @@ if not queue:
     print("Nothing to do")
     exit()
 
-for repo in queue.copy():
-    if not repo.strip():
-        queue.remove(repo)
+for url in queue.copy():
+    if not url.strip():
+        queue.remove(url)
         continue
     repositories = RepositoryManager()
-    github = repo.strip()
+    github = url.strip()
     if github.endswith('/releases'):
         github = github[:-9]
     repo = repositories.add_github_repository(github)
     repositories.refresh()
     if not repo.worlds:
         print(f"Repository {github} has no worlds")
+        queue.remove(url)
         continue
 
     for world in repositories.all_known_package_ids:
@@ -44,7 +46,8 @@ for repo in queue.copy():
             yaml.dump({"game": "", "github": github}, f)
         print(f"Added {world} from {github}")
     print(f"Finished {github}")
-    queue.remove(repo)
+    queue.remove(url)
+    sleep(60)
 
 with open("queue.txt", "w") as f:
     f.write("\n".join(queue))

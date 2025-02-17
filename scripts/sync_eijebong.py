@@ -14,7 +14,7 @@ if not ejindex.exists():
 else:
     subprocess.run(["git", "pull"], cwd=ejindex)
 
-my_index = pathlib.Path(os.path.abspath(os.path.join(os.path.dirname(__file__), "index")))
+my_index = pathlib.Path(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "index")))
 files = [f.stem for f in my_index.glob("*")]
 
 index = ejindex / "index"
@@ -23,7 +23,7 @@ for file in index.iterdir():
     game = manifest.get("name")
     if file.stem in files:
         remote = yaml.safe_load((my_index / f"{file.stem}.yaml").read_text())
-        r_ver = remote.setdefault("manifest", {}).get("world_version")
+        r_ver = remote.setdefault("metadata", {}).get("world_version")
         if not r_ver:
             continue
         if r_ver not in manifest.get("versions", []):
