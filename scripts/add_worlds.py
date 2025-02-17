@@ -23,18 +23,21 @@ if not queue:
     print("Nothing to do")
     exit()
 
-for repo in queue:
+for repo in queue.copy():
+    if not repo.strip():
+        queue.remove(repo)
+        continue
     repositories = RepositoryManager()
     github = repo.strip()
     if github.endswith('/releases'):
         github = github[:-9]
     repo = repositories.add_github_repository(github)
-    repo.refresh()
+    repositories.refresh()
     if not repo.worlds:
         print(f"Repository {github} has no worlds")
         continue
 
-    for world in repo.all_known_package_ids:
+    for world in repositories.all_known_package_ids:
         if os.path.exists(f"index/{world}.yaml"):
             continue
         with open(f"index/{world}.yaml", "w") as f:
