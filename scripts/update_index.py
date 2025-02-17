@@ -71,5 +71,7 @@ for world in pathlib.Path("index").iterdir():
 
 save_last_checked()
 
+output = {"worlds": worlds}
+
 with open("index.json", "w") as f:
-    f.write(json.dumps(worlds, indent=2))
+    f.write(json.dumps(output, indent=2))
