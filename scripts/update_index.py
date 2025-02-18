@@ -38,7 +38,9 @@ for world in pathlib.Path("index").iterdir():
                 last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
                 save_last_checked()
                 sleep(2)
-            for version in manifest.get('versions', {}).values():
+            versions = list(manifest.get('versions', {}).values())
+
+            for version in versions:
                 worlds.append({
                     "world": version['source_url'],
                     "size": version['size'],

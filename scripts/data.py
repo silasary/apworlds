@@ -54,6 +54,12 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             'version_simple': ".".join(str(item) for item in release.version_tuple),
             'game': release.name or manifest.setdefault('game', ''),
         }
+    if 'id' in manifest:
+        del manifest['id']
+    if 'metadata' in manifest:
+        del manifest['metadata']
+    if 'world' in manifest:
+        del manifest['world']
 
     for name, manifest in manifests.items():
         yaml_path = index / f"{name}.yaml"
