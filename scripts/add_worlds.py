@@ -16,7 +16,7 @@ from worlds.apworld_manager.world_manager import RepositoryManager
 
 if os.path.exists("queue.txt"):
     with open("queue.txt") as f:
-        queue = [l.strip() for l in f.readlines() if l.strip()]
+        queue = [l.strip() for l in set(f.readlines()) if l.strip()]
 else:
     queue = []
 
@@ -27,7 +27,6 @@ if not queue:
 def save():
     with open("queue.txt", "w") as f:
         f.write("\n".join(queue))
-i = 0
 
 for url in queue.copy():
     if not url.strip():
@@ -44,7 +43,7 @@ for url in queue.copy():
     if not repo.worlds:
         print(f"Repository {github} has no worlds")
         queue.remove(url)
-        sleep(30)
+        sleep(2)
         continue
 
     for world in repositories.all_known_package_ids:
@@ -65,8 +64,4 @@ for url in queue.copy():
     print(f"Finished {github}")
     queue.remove(url)
     save()
-    i += 1
-    if i > 10:
-        print("Done for now")
-        break
-    sleep(30)
+    sleep(2)

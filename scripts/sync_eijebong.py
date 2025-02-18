@@ -23,6 +23,11 @@ for file in index.iterdir():
     game = manifest.get("name")
     if file.stem in files:
         remote = yaml.safe_load((my_index / f"{file.stem}.yaml").read_text())
+        if manifest.get("supported", False):
+            remote["supported"] = True
+            with open(my_index / f"{file.stem}.yaml", "w") as f:
+                yaml.dump(remote, f)
+            continue
         r_ver = remote.setdefault("metadata", {}).get("world_version")
         if not r_ver:
             continue

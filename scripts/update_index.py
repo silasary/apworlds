@@ -31,6 +31,9 @@ for world in pathlib.Path("index").iterdir():
     else:
         try:
             manifest = yaml.safe_load(world.read_text())
+            if manifest.get('supported', False):
+                continue
+
             github = manifest.get('github')
             stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, '2000-01-01T00:00:00+00:00')) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(days=3)
             if stale and github:
