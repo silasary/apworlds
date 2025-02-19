@@ -43,7 +43,10 @@ for world in pathlib.Path("index").iterdir():
             versions = list(manifest.get('versions', {}).values())
 
             for version in versions:
-                world_version = parse_version(version['world_version'])
+                tag_str = version['world_version']
+                if tag_str.lower().startswith(world.stem):
+                    tag_str = tag_str[len(world.stem):].lstrip("-_")
+                world_version = parse_version(tag_str)
                 worlds.append({
                     "world": version['source_url'],
                     "size": version['size'],
