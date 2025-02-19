@@ -2,7 +2,6 @@ import os
 import sys
 import json
 import pathlib
-from time import sleep
 import yaml
 import datetime
 
@@ -40,7 +39,6 @@ for world in pathlib.Path("index").iterdir():
                 update_yaml_from_github(world, manifest, github)
                 last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
                 save_last_checked()
-                sleep(2)
             versions = list(manifest.get('versions', {}).values())
 
             for version in versions:
