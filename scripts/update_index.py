@@ -35,7 +35,7 @@ for world in pathlib.Path("index").iterdir():
                 continue
 
             github = manifest.get('github')
-            stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, '2000-01-01T00:00:00+00:00')) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(days=3)
+            stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, '2000-01-01T00:00:00+00:00')) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(hours=1)
             if stale and github:
                 update_yaml_from_github(world, manifest, github)
                 last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
