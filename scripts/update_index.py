@@ -2,10 +2,11 @@ import os
 import sys
 import json
 import pathlib
+import packaging
 import yaml
 import datetime
 
-from data import update_yaml_from_github
+from data import parse_version, update_yaml_from_github
 
 
 worlds = []
@@ -42,14 +43,15 @@ for world in pathlib.Path("index").iterdir():
             versions = list(manifest.get('versions', {}).values())
 
             for version in versions:
+                world_version = parse_version(version['world_version'])
                 worlds.append({
                     "world": version['source_url'],
                     "size": version['size'],
                     "metadata": {
                         "game": manifest['game'],
                         "id": world.stem,
-                        "world_version": version['world_version'],
-                        "version_simple": version['version_simple'],
+                        "world_version": str(world_version),
+                        "tag_version": version['world_version'],
                         }
                     })
 

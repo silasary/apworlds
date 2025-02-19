@@ -1,8 +1,10 @@
 import os
+import re
 from pathlib import Path
 import pathlib
 import sys
 import yaml
+from packaging.version import Version, VERSION_PATTERN, InvalidVersion
 
 
 from time import sleep
@@ -36,7 +38,8 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         repo = repositories.add_github_repository(github_url)
         repo.refresh()
     if not repo.worlds:
-        sleep(60)
+        print(f"Repository {github_url} has no worlds, retrying in 60 seconds")
+        sleep(10)
         repo.refresh()
     for world in repo.worlds:
         repositories.all_known_package_ids.add(world.id)
@@ -65,3 +68,12 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         yaml_path = index / f"{name}.yaml"
         yaml_path.write_text(yaml.dump(manifest))
     return manifests
+
+def parse_version(version: str) -> Version:
+    try:
+        return Version(version)
+    except InvalidVersion as e:
+        simple = re.search(VERSION_PATTERN, version, re.VERBOSE | re.IGNORECASE)
+        if simple:
+            return Version(simple.group(0))
+        return Version(f"0.0.0+{version}")
