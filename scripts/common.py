@@ -49,13 +49,16 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         raise Exception(f"Repository {world_id} not found in {github_url}")
     releases = repositories.packages_by_id_version.get(world_id)
     for release in releases.values():
+        source_url = release.source_url
+        if source_url and repo.url and source_url != repo.url:
+            continue
         manifest = manifests.setdefault(world_id, None)
         manifest.setdefault('versions', {})[release.world_version] = {
+            'download_url': release.download_url,
             'source_url': release.source_url,
             'size': release.data.get('size', 0),
             'world_version': release.world_version,
-            'version_simple': ".".join(str(item) for item in release.version_tuple),
-            'game': release.name or manifest.setdefault('game', ''),
+            'version_simple': parse_version(release.world_version).base_version,
         }
     if 'id' in manifest:
         del manifest['id']

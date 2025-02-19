@@ -6,7 +6,7 @@ import packaging
 import yaml
 import datetime
 
-from data import parse_version, update_yaml_from_github
+from common import parse_version, update_yaml_from_github
 
 
 worlds = []
@@ -48,8 +48,9 @@ for world in pathlib.Path("index").iterdir():
                     tag_str = tag_str[len(world.stem):].lstrip("-_")
                 world_version = parse_version(tag_str)
                 worlds.append({
-                    "world": version['source_url'],
+                    "world": version['download_url'],
                     "size": version['size'],
+                    # "source_url": version.get('source_url'),
                     "metadata": {
                         "game": manifest['game'],
                         "id": world.stem,
