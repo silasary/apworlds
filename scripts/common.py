@@ -47,12 +47,15 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
 
     if yaml_path and world_id not in repositories.all_known_package_ids:
         raise Exception(f"Repository {world_id} not found in {github_url}")
-    releases = repositories.packages_by_id_version.get(world_id)
-    for release in releases.values():
+    if yaml_path:
+        releases = repositories.packages_by_id_version.get(world_id).values()
+    else:
+        releases = repo.worlds
+    for release in releases:
         source_url = release.source_url
         if source_url and repo.url and source_url != repo.url:
             continue
-        manifest = manifests.setdefault(world_id, None)
+        manifest = manifests.setdefault(release.id, {"github": github_url})
         manifest.setdefault('versions', {})[release.world_version] = {
             'download_url': release.download_url,
             'source_url': release.source_url,
