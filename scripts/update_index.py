@@ -5,9 +5,13 @@ import pathlib
 import packaging
 import yaml
 import datetime
+import argparse
 
 from common import parse_version, update_yaml_from_github
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--no-refresh", action='store_true', help="Don't refresh the GitHub repositories")
+args = parser.parse_args()
 
 worlds = []
 
@@ -36,7 +40,7 @@ for world in pathlib.Path("index").iterdir():
 
             github = manifest.get('github')
             stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, '2000-01-01T00:00:00+00:00')) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(hours=1)
-            if stale and github:
+            if stale and github and not args.no_refresh:
                 update_yaml_from_github(world, manifest, github)
                 last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
                 save_last_checked()
