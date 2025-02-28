@@ -55,7 +55,14 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         source_url = release.source_url
         if source_url and repo.url and source_url != repo.url:
             continue
-        manifest = manifests.setdefault(release.id, {"github": github_url})
+        manifest = manifests.setdefault(release.id, None)
+        if not manifest:
+            yaml_path = index / f"{release.id}.yaml"
+            if yaml_path.exists():
+                manifest = yaml.safe_load(yaml_path.read_text())
+            else:
+                manifest = {"game": "", "github": github_url}
+            manifests[release.id] = manifest
         manifest.setdefault('versions', {})[release.world_version] = {
             'download_url': release.download_url,
             'source_url': release.source_url,
