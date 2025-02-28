@@ -1,9 +1,10 @@
-import re
-import yaml
-import toml
 import os
 import pathlib
+import re
 import subprocess
+
+import toml
+import yaml
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 

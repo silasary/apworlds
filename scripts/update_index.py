@@ -1,10 +1,10 @@
-import os
-import json
-import pathlib
-import yaml
-import datetime
 import argparse
+import datetime
+import json
+import os
+import pathlib
 
+import yaml
 from common import parse_version, update_yaml_from_github
 
 parser = argparse.ArgumentParser()
@@ -49,6 +49,7 @@ for world in pathlib.Path("index").iterdir():
                 worlds.append({
                     "world": version['download_url'],
                     "size": version['size'],
+                    "hash_sha256": version.get('hash_sha256'),
                     # "source_url": version.get('source_url'),
                     "metadata": {
                         "game": manifest['game'],

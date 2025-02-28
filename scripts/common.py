@@ -1,22 +1,24 @@
 import datetime
 import functools
+import hashlib
 import os
-import re
-from pathlib import Path
 import pathlib
+import re
 import sys
-import yaml
-from packaging.version import Version, VERSION_PATTERN, InvalidVersion
-
-
+from pathlib import Path
 from time import sleep
+
+import yaml
+from packaging.version import VERSION_PATTERN, InvalidVersion, Version
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
 sys.path.append("Archipelago")
 import Utils  # noqa
+
 Utils.local_path.cached_path = os.path.dirname(os.path.abspath(Utils.__file__))
 import ModuleUpdate
+
 ModuleUpdate.update(yes=True)
 
 from worlds.apworld_manager.world_manager import RepositoryManager
@@ -77,14 +79,19 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
                 if release.world_version in manifest.get('versions', {}):
                     del manifest['versions'][release.world_version]
                 continue
-        manifest.setdefault('versions', {})[release.world_version] = {
+        manifest.setdefault('versions', {}).setdefault(release.world_version, {}).update({
             'download_url': release.download_url,
             'source_url': release.source_url,
             'size': release.data.get('size', 0),
             'world_version': release.world_version,
             'version_simple': parse_version(release.world_version).base_version,
             'created_at': release.created_at,
-        }
+        })
+        if 'hash_sha256' not in manifest['versions'][release.world_version]:
+            file = repositories.download_remote_world(release, False)
+            with open(file, 'rb') as f:
+                hash = hashlib.sha256(f.read()).hexdigest()
+            manifest['versions'][release.world_version]['hash_sha256'] = hash
     if 'id' in manifest:
         del manifest['id']
     if 'metadata' in manifest:

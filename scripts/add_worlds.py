@@ -2,10 +2,7 @@ import os
 from time import sleep
 
 import yaml
-
 from common import parse_version, update_yaml_from_github
-
-
 from worlds.apworld_manager.world_manager import RepositoryManager
 
 if os.path.exists("queue.txt"):
