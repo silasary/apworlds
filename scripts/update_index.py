@@ -26,10 +26,6 @@ def save_last_checked():
 for world in pathlib.Path("index").iterdir():
     if world.is_dir():
         pass
-        # manifest = {}
-        # manifest_file = directory / "archipelago.json"
-        # if manifest_file.exists():
-        #     manifest = json.loads(manifest_file.read_text())
     else:
         try:
             manifest = yaml.safe_load(world.read_text())
