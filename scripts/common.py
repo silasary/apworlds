@@ -88,6 +88,7 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             'created_at': release.created_at,
         })
         if 'hash_sha256' not in manifest['versions'][release.world_version]:
+            print(f"Downloading and hashing {release.download_url}")
             file = repositories.download_remote_world(release, False)
             with open(file, 'rb') as f:
                 hash = hashlib.sha256(f.read()).hexdigest()
