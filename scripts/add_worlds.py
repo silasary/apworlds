@@ -27,6 +27,7 @@ def save():
 for url in queue.copy():
     repositories = RepositoryManager()
     github = url.strip()
+    github = github.replace("/releases", "")
     manifests = update_yaml_from_github(None, None, github)
     for world, manifest in manifests.items():
         print(f"Added {world} from {github}")
