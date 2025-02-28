@@ -38,6 +38,8 @@ for world in pathlib.Path("index").iterdir():
             versions = list(manifest.get('versions', {}).values())
 
             for version in versions:
+                if version.get('ignore', False):
+                    continue
                 tag_str = version['world_version']
                 if tag_str.lower().startswith(world.stem):
                     tag_str = tag_str[len(world.stem):].lstrip("-_")
