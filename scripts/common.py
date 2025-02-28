@@ -1,3 +1,5 @@
+import datetime
+import functools
 import os
 import re
 from pathlib import Path
@@ -22,6 +24,13 @@ from worlds.apworld_manager.world_manager import RepositoryManager
 index = pathlib.Path("index")
 
 repositories = RepositoryManager()
+
+@functools.cache
+def latest_ap_release() -> datetime.datetime:
+    repo = repositories.add_github_repository("https://github.com/ArchipelagoMW/Archipelago")
+    repo.refresh()
+    return max(datetime.datetime.fromisoformat(release['published_at']) for release in repo.release_json)
+
 
 def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: str) -> dict[str, dict]:
     world_id = ''
@@ -63,6 +72,11 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             else:
                 manifest = {"game": "", "github": github_url}
             manifests[release.id] = manifest
+        if manifest.get('supported', False):
+            if datetime.datetime.fromisoformat(release.created_at) < latest_ap_release():
+                if release.world_version in manifest.get('versions', {}):
+                    del manifest['versions'][release.world_version]
+                continue
         manifest.setdefault('versions', {})[release.world_version] = {
             'download_url': release.download_url,
             'source_url': release.source_url,
