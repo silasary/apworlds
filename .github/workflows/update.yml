@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: true
     - name: Git Config
       run: |
         git config --global user.email "ci@katelyngigante.com"
@@ -17,4 +19,6 @@ jobs:
     - name: Update Index
       run: |
         python3 scripts/update_index.py
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - uses: stefanzweifel/git-auto-commit-action@v5
