@@ -1,0 +1,19 @@
+name: Update Index
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Git Config
+      run: |
+        git config --global user.email "ci@katelyngigante.com"
+        git config --global user.name "Github Actions"
+    - name: Update Index
+      run: |
+        python3 scripts/update_index.py
+    - uses: stefanzweifel/git-auto-commit-action@v5
