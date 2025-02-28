@@ -69,6 +69,7 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             'size': release.data.get('size', 0),
             'world_version': release.world_version,
             'version_simple': parse_version(release.world_version).base_version,
+            'created_at': release.created_at,
         }
     if 'id' in manifest:
         del manifest['id']

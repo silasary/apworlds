@@ -58,6 +58,7 @@ for world in pathlib.Path("index").iterdir():
                         "id": world.stem,
                         "world_version": str(world_version),
                         "tag_version": version['world_version'],
+                        "created_at": version.get('created_at'),
                         }
                     })
 
