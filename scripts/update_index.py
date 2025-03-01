@@ -5,7 +5,7 @@ import os
 import pathlib
 
 import yaml
-from common import parse_version, update_yaml_from_github
+from common import parse_version, update_yaml_from_github, repositories
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--no-refresh", action='store_true', help="Don't refresh the GitHub repositories")
@@ -69,3 +69,5 @@ output = {"worlds": worlds}
 
 with open("index.json", "w") as f:
     f.write(json.dumps(output, indent=2))
+
+print(f'Scanned {len(repositories.repositories)} repositories, found {len(repositories.all_known_package_ids)} packages with a total of {len(worlds)} versions')
