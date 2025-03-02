@@ -93,6 +93,9 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             with open(file, 'rb') as f:
                 hash = hashlib.sha256(f.read()).hexdigest()
             manifest['versions'][release.world_version]['hash_sha256'] = hash
+    if manifest is None:
+        return manifests
+
     if 'id' in manifest:
         del manifest['id']
     if 'metadata' in manifest:
