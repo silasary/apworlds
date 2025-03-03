@@ -11,6 +11,8 @@ if os.path.exists("queue.txt"):
 else:
     queue = []
 
+failed = []
+
 if not queue:
     print("Nothing to do")
     with open("queue.txt", "w") as f:
@@ -20,6 +22,9 @@ if not queue:
 def save():
     with open("queue.txt", "w") as f:
         f.write("\n".join(queue))
+    if failed:
+        with open("failed.txt", "w") as f:
+            f.write("\n".join(failed))
 
 for url in queue.copy():
     repositories = RepositoryManager()
@@ -28,6 +33,8 @@ for url in queue.copy():
     manifests = update_yaml_from_github(None, None, github)
     for world, manifest in manifests.items():
         print(f"Added {world} from {github}")
+    if not manifests:
+        failed.append(github)
 
     print(f"Finished {github}")
     queue.remove(url)
