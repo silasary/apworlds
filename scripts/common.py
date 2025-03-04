@@ -81,9 +81,11 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
                 continue
         version_info = manifest.setdefault('versions', {}).setdefault(release.world_version, {})
         if version_info.get('size', 0) and version_info.get('size', 0) != release.data.get('size', 0):
-            print(f"{release.id} {release.world_version} was replaced in place")
-            if 'hash_sha256' in version_info:
-                del version_info['hash_sha256']
+            release.data['metadata']['world_version'] = f"{release.world_version}r2"
+            version_info = manifest.setdefault('versions', {}).setdefault(release.world_version, {})
+            if not version_info:
+                print(f"{release.id} {release.world_version} was replaced in place")
+
         version_info.update({
             'download_url': release.download_url,
             'source_url': release.source_url,
