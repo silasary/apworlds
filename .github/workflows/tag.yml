@@ -27,4 +27,14 @@ jobs:
         python3 scripts/tag_worlds.py
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - uses: stefanzweifel/git-auto-commit-action@v5
+    # - uses: stefanzweifel/git-auto-commit-action@v5
+    #   with:
+    #     file_pattern: index/*.yaml
+    #     branch: tagging
+    #     create_branch: true
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v7
+      with:
+        branch: tagging
+        title: Tag Worlds
+        add-paths: 'index/*.yaml'
