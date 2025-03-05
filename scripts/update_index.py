@@ -9,6 +9,7 @@ from common import parse_version, update_yaml_from_github, repositories
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--no-refresh", action='store_true', help="Don't refresh the GitHub repositories")
+parser.add_argument("--add-unknown", action='store_true', help="Add unknown worlds from known repos to the index")
 args = parser.parse_args()
 
 worlds = []
@@ -29,6 +30,8 @@ for world in pathlib.Path("index").iterdir():
     else:
         try:
             manifest = yaml.safe_load(world.read_text())
+            if manifest.get('ignore', False):
+                continue
             github = manifest.get('github')
             stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, '2000-01-01T00:00:00+00:00')) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(hours=1)
             if stale and github and not args.no_refresh:
@@ -69,5 +72,13 @@ output = {"worlds": worlds}
 
 with open("index.json", "w") as f:
     f.write(json.dumps(output, indent=2))
+
+if args.add_unknown:
+    for id in repositories.all_known_package_ids:
+        manifest = pathlib.Path("index") / f"{id}.yaml"
+        if not manifest.exists():
+            version = list(repositories.packages_by_id_version[id].values())[0]
+            manifest.write_text(yaml.dump({"game": "", "github": version.source_url}))
+            print(f"Missing {manifest}")
 
 print(f'Scanned {len(repositories.repositories)} repositories, found {len(repositories.all_known_package_ids)} packages with a total of {len(worlds)} versions')
