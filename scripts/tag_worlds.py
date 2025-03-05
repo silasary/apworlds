@@ -41,20 +41,27 @@ for world in pathlib.Path("index").iterdir():
     if world.is_dir():
         pass
     else:
+        manifest = yaml.safe_load(world.read_text())
+        github = manifest.get('github')
+
+        do_analyze = not manifest.get('game')
+
+        if not do_analyze:
+            continue
+
+        update_yaml_from_github(world, manifest, github)
+        versions = repositories.packages_by_id_version.get(world.stem)
+        if not versions:
+            print(f"No versions found for {world}")
+            continue
+        available_versions = []
+        for version, v in versions.items():
+            if not manifest.setdefault('versions', {}).get(version, {}).get('failed_to_load'):
+                available_versions.append(v)
+        highest_remote_version = max(available_versions, key=lambda w: parse_version(w.world_version))
+        path = repositories.download_remote_world(highest_remote_version, False)
+
         try:
-            manifest = yaml.safe_load(world.read_text())
-            github = manifest.get('github')
-
-            do_analyze = not manifest.get('game')
-
-            if not do_analyze:
-                continue
-
-            update_yaml_from_github(world, manifest, github)
-            versions = repositories.packages_by_id_version[world.stem]
-            highest_remote_version = max(versions.values(), key=lambda w: parse_version(w.world_version))
-            path = repositories.download_remote_world(highest_remote_version, False)
-
             AutoWorldRegister.world_types = {}
             mod = import_world(path, world.stem)
             if not mod:
@@ -77,5 +84,7 @@ for world in pathlib.Path("index").iterdir():
 
         except Exception as e:
             print(f"Error processing {world}: {e}")
+            manifest['versions'].get(highest_remote_version.world_version, {})['failed_to_load'] = str(e)
+            world.write_text(yaml.dump(manifest))
             continue
 
