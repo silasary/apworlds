@@ -2,6 +2,8 @@ name: Tag Worlds
 
 on:
   workflow_dispatch: {}
+  schedule:
+    - cron: '0 0 * * 3'
 
 jobs:
   update:
@@ -39,3 +41,4 @@ jobs:
         branch: tagging
         title: Tag Worlds
         add-paths: 'index/*.yaml'
+        reviewers: silasary
