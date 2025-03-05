@@ -58,6 +58,9 @@ for world in pathlib.Path("index").iterdir():
         for version, v in versions.items():
             if not manifest.setdefault('versions', {}).get(version, {}).get('failed_to_load'):
                 available_versions.append(v)
+        if not available_versions:
+            print(f"No good versions available for {world}")
+            continue
         highest_remote_version = max(available_versions, key=lambda w: parse_version(w.world_version))
         path = repositories.download_remote_world(highest_remote_version, False)
 
@@ -70,7 +73,7 @@ for world in pathlib.Path("index").iterdir():
 
             objects = {name: obj for name, obj in inspect.getmembers(mod) if isinstance(obj, type)}
             for name, obj in objects.items():
-                if World in inspect.getmro(obj):
+                if World in inspect.getmro(obj) and obj != World:
                     world_class = obj
                     break
             else:
