@@ -21,7 +21,7 @@ import ModuleUpdate
 
 ModuleUpdate.update(yes=True)
 
-from worlds.apworld_manager.world_manager import RepositoryManager
+from worlds.apworld_manager.world_manager import RepositoryManager, parse_version
 
 index = pathlib.Path("index")
 
@@ -91,7 +91,7 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             'source_url': release.source_url,
             'size': release.data.get('size', 0),
             'world_version': release.world_version,
-            'version_simple': parse_version(release.world_version).base_version,
+            'version_simple': parse_version(release.world_version.replace(release.id, '')).base_version,
             'created_at': release.created_at,
         })
         if 'hash_sha256' not in manifest['versions'][release.world_version]:
@@ -115,11 +115,11 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         yaml_path.write_text(yaml.dump(manifest))
     return manifests
 
-def parse_version(version: str) -> Version:
-    try:
-        return Version(version)
-    except InvalidVersion as e:
-        simple = re.search(VERSION_PATTERN, version, re.VERBOSE | re.IGNORECASE)
-        if simple:
-            return Version(simple.group(0))
-        return Version(f"0.0.0+{version}")
+# def parse_version(version: str) -> Version:
+#     try:
+#         return Version(version)
+#     except InvalidVersion as e:
+#         simple = re.search(VERSION_PATTERN, version, re.VERBOSE | re.IGNORECASE)
+#         if simple:
+#             return Version(simple.group(0))
+#         return Version(f"0.0.0+{version}")

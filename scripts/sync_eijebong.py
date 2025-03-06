@@ -65,11 +65,13 @@ for file in index.iterdir():
             continue
         versions = manifest.get("versions", {})
         r_ver = remote.get('versions', {})
-        max_ver = max(versions.keys(), key=lambda x: x['created_at'])
-        if max_ver in versions:
+        if not r_ver:
+            continue
+        max_ver = max(r_ver.values(), key=lambda x: x['created_at'])
+        if max_ver['version_simple'] in versions:
             continue
 
-        manifest["versions"][max_ver] = {}
+        manifest["versions"][max_ver['version_simple']] = {}
         with open(file, "w") as f:
             toml.dump(manifest, f, encoder=CustomTomlEncoder(preserve=True))
         print(f"Added {max_ver} to {file}")
@@ -100,7 +102,7 @@ for file in my_index.iterdir():
     if e_file.exists():
         continue
     r_ver = manifest.get('versions', {})
-    max_ver = max(r_ver.keys(), key=lambda x: x['created_at'])
+    max_ver = max(r_ver.values(), key=lambda x: x['created_at'])['world_version']
 
     simple = {
         "name": manifest["game"],
