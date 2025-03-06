@@ -6,6 +6,8 @@ import subprocess
 import toml
 import yaml
 
+from common import parse_version
+
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
 
@@ -45,6 +47,8 @@ if not ejindex.exists():
 else:
     subprocess.run(["git", "pull"], cwd=ejindex)
 
+outbound = {}
+
 my_index = pathlib.Path(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "index")))
 files = [f.stem for f in my_index.glob("*")]
 
@@ -59,15 +63,17 @@ for file in index.iterdir():
             with open(my_index / f"{file.stem}.yaml", "w") as f:
                 yaml.dump(remote, f)
             continue
-        r_ver = remote.setdefault("metadata", {}).get("world_version")
-        if not r_ver:
+        versions = manifest.get("versions", {})
+        r_ver = remote.get('versions', {})
+        max_ver = max(versions.keys(), key=lambda x: x['created_at'])
+        if max_ver in versions:
             continue
-        if r_ver not in manifest.get("versions", []):
-            manifest["versions"][r_ver] = {}
-            with open(file, "w") as f:
-                toml.dump(manifest, f, encoder=CustomTomlEncoder(preserve=True))
-            print(f"Added {r_ver} to {file}")
-        pass
+
+        manifest["versions"][max_ver] = {}
+        with open(file, "w") as f:
+            toml.dump(manifest, f, encoder=CustomTomlEncoder(preserve=True))
+        print(f"Added {max_ver} to {file}")
+        outbound[file.stem] = max_ver
     else:
         default_url = manifest.get("default_url")
         if not default_url:
@@ -87,3 +93,24 @@ for file in index.iterdir():
         }
         with open(my_index / f"{file.stem}.yaml", "w") as f:
             yaml.dump(game_info, f)
+
+for file in my_index.iterdir():
+    manifest = yaml.safe_load(file.read_text())
+    e_file = ejindex / "index" / f"{file.stem}.toml"
+    if e_file.exists():
+        continue
+    r_ver = manifest.get('versions', {})
+    max_ver = max(r_ver.keys(), key=lambda x: x['created_at'])
+
+    simple = {
+        "name": manifest["game"],
+        "default_url": manifest["github"] + "/releases/download/{{version}}/" + f"{file.stem}.zip",
+        "versions": {
+            max_ver: {}
+        }
+    }
+    with open(e_file, 'w') as f:
+        toml.dump(simple, f, encoder=CustomTomlEncoder(preserve=True))
+    print(f"Added {max_ver} to {file}")
+    outbound[file.stem] = max_ver
+
