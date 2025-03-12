@@ -48,7 +48,7 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
     else:
         repo = repositories.add_github_repository(github_url)
         repo.refresh()
-    if not repo.worlds:
+    if not repo.worlds and not repo.release_json:
         print(f"Repository {github_url} has no worlds, retrying in 60 seconds")
         sleep(10)
         repo.refresh()
@@ -86,12 +86,18 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             if not version_info:
                 print(f"{release.id} {release.world_version} was replaced in place")
 
+        version_number = parse_version(release.data['metadata']['title'].replace(release.id, ''))
+        if version_number.base_version == '0.0.0':
+            version_number = parse_version(release.world_version.replace(release.id, ''))
+
         version_info.update({
+            'title': release.data['metadata'].get('title', ''),
             'download_url': release.download_url,
             'source_url': release.source_url,
             'size': release.data.get('size', 0),
-            'world_version': release.world_version,
-            'version_simple': parse_version(release.world_version.replace(release.id, '')).base_version,
+            'tag': release.world_version,
+            "world_version": str(version_number),
+            'version_simple': version_number.base_version,
             'created_at': release.created_at,
         })
         if 'hash_sha256' not in manifest['versions'][release.world_version]:

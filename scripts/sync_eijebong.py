@@ -1,3 +1,4 @@
+import datetime
 import os
 import pathlib
 import re
@@ -7,6 +8,7 @@ import toml
 import yaml
 
 from common import parse_version
+from worlds.apworld_manager._vendor.packaging.version import _Version
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -67,11 +69,30 @@ for file in index.iterdir():
         r_ver = remote.get('versions', {})
         if not r_ver:
             continue
-        max_ver = max(r_ver.values(), key=lambda x: x['created_at'])
+        max_ver = max(r_ver.values(), key=lambda x: datetime.datetime.fromisoformat(x['created_at']))
+        parsed_world_version = parse_version(max_ver['world_version'].replace(file.stem, ""))
+        if len(parsed_world_version.release) == 2:
+            parsed_world_version._version = _Version(
+                parsed_world_version._version.epoch,
+                parsed_world_version._version.release + (0,),
+                parsed_world_version._version.dev,
+                parsed_world_version._version.pre,
+                parsed_world_version._version.post,
+                parsed_world_version._version.local,
+            )
+        verstr = str(parsed_world_version)
         if max_ver['version_simple'] in versions:
             continue
+        if verstr in versions:
+            continue
+        if any(max_ver['download_url'] == v.get('url', manifest.get("default_url", "").replace("{{version}}", k)) for k, v in versions.items()):
+            continue
 
-        manifest["versions"][max_ver['version_simple']] = {}
+
+        manifest["versions"][verstr] = {}
+        url = manifest.get("default_url", "").replace("{{version}}", verstr)
+        if max_ver['download_url'] != url:
+            manifest["versions"][verstr]['url'] = max_ver['download_url']
         with open(file, "w") as f:
             toml.dump(manifest, f, encoder=CustomTomlEncoder(preserve=True))
         print(f"Added {max_ver} to {file}")
@@ -96,23 +117,33 @@ for file in index.iterdir():
         with open(my_index / f"{file.stem}.yaml", "w") as f:
             yaml.dump(game_info, f)
 
-for file in my_index.iterdir():
-    manifest = yaml.safe_load(file.read_text())
-    e_file = ejindex / "index" / f"{file.stem}.toml"
-    if e_file.exists():
-        continue
-    r_ver = manifest.get('versions', {})
-    max_ver = max(r_ver.values(), key=lambda x: x['created_at'])['world_version']
+for world, ver in outbound.items():
+    verstr = str(parse_version(ver['world_version'].replace(world, "")))
+    print(f"Added {verstr} to {world}")
+    subprocess.run(['git', 'branch', '-f', f"{world}"], cwd=ejindex)
+    subprocess.run(['git', 'checkout', f"{world}"], cwd=ejindex)
+    subprocess.run(['git', 'add', f"index/{world}.toml"], cwd=ejindex)
+    subprocess.run(['git', 'commit', '-m', f"Update {world} to {verstr}"], cwd=ejindex)
+    subprocess.run(['git', 'checkout', 'main'], cwd=ejindex)
+    pass
+outbound = {}
+# for file in my_index.iterdir():
+#     manifest = yaml.safe_load(file.read_text())
+#     e_file = ejindex / "index" / f"{file.stem}.toml"
+#     if e_file.exists():
+#         continue
+#     r_ver = manifest.get('versions', {})
+#     max_ver = max(r_ver.values(), key=lambda x: x['created_at'])['world_version']
 
-    simple = {
-        "name": manifest["game"],
-        "default_url": manifest["github"] + "/releases/download/{{version}}/" + f"{file.stem}.zip",
-        "versions": {
-            max_ver: {}
-        }
-    }
-    with open(e_file, 'w') as f:
-        toml.dump(simple, f, encoder=CustomTomlEncoder(preserve=True))
-    print(f"Added {max_ver} to {file}")
-    outbound[file.stem] = max_ver
+#     simple = {
+#         "name": manifest["game"],
+#         "default_url": manifest["github"] + "/releases/download/{{version}}/" + f"{file.stem}.zip",
+#         "versions": {
+#             max_ver: {}
+#         }
+#     }
+#     with open(e_file, 'w') as f:
+#         toml.dump(simple, f, encoder=CustomTomlEncoder(preserve=True))
+#     print(f"Added {max_ver} to {file}")
+#     outbound[file.stem] = max_ver
 
