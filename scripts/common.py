@@ -3,13 +3,13 @@ import functools
 import hashlib
 import os
 import pathlib
-import re
 import sys
 from pathlib import Path
 from time import sleep
 
 import yaml
-from packaging.version import VERSION_PATTERN, InvalidVersion, Version
+
+from worlds.apworld_manager._vendor.packaging.version import InvalidVersion
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -86,8 +86,11 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             if not version_info:
                 print(f"{release.id} {release.world_version} was replaced in place")
 
-        version_number = parse_version(release.data['metadata']['title'].replace(release.id, ''))
-        if version_number.base_version == '0.0.0':
+        try:
+            version_number = parse_version(release.data['metadata']['title'].replace(release.id, ''))
+        except InvalidVersion:
+            version_number = None
+        if version_number is None or version_number.base_version == '0.0.0':
             version_number = parse_version(release.world_version.replace(release.id, ''))
 
         version_info.update({
