@@ -9,7 +9,6 @@ from time import sleep
 
 import yaml
 
-from worlds.apworld_manager._vendor.packaging.version import InvalidVersion
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -22,6 +21,7 @@ import ModuleUpdate
 ModuleUpdate.update(yes=True)
 
 from worlds.apworld_manager.world_manager import RepositoryManager, parse_version
+from worlds.apworld_manager._vendor.packaging.version import InvalidVersion
 
 index = pathlib.Path("index")
 
