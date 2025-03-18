@@ -25,6 +25,7 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         pip install -r Archipelago/requirements.txt
+        python3 scripts/common.py
     - name: Update Index
       run: |
         python3 scripts/tag_worlds.py
