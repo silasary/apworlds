@@ -27,6 +27,9 @@ index = pathlib.Path("index")
 
 repositories = RepositoryManager()
 
+class NoWorldsFound(Exception):
+    pass
+
 @functools.cache
 def latest_ap_release() -> datetime.datetime:
     repo = repositories.add_github_repository("https://github.com/ArchipelagoMW/Archipelago")
@@ -57,7 +60,7 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         repositories.packages_by_id_version[world.id][world.world_version] = world
 
     if yaml_path and world_id not in repositories.all_known_package_ids:
-        raise Exception(f"Repository {world_id} not found in {github_url}")
+        raise NoWorldsFound(f"Repository {world_id} not found in {github_url}")
     if yaml_path:
         releases = repositories.packages_by_id_version.get(world_id).values()
     else:

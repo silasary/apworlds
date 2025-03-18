@@ -11,7 +11,7 @@ import warnings
 import zipimport
 
 import yaml
-from common import parse_version, update_yaml_from_github, repositories
+from common import NoWorldsFound, parse_version, update_yaml_from_github, repositories
 from worlds import AutoWorldRegister
 from worlds.AutoWorld import World
 
@@ -49,7 +49,11 @@ for world in pathlib.Path("index").iterdir():
         if not do_analyze:
             continue
 
-        update_yaml_from_github(world, manifest, github)
+        try:
+            update_yaml_from_github(world, manifest, github)
+        except NoWorldsFound:
+            print(f"Failed to find {world} in {github}")
+            continue
         versions = repositories.packages_by_id_version.get(world.stem)
         if not versions:
             print(f"No versions found for {world}")
