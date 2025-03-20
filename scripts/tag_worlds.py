@@ -43,6 +43,9 @@ for world in pathlib.Path("index").iterdir():
     else:
         manifest = yaml.safe_load(world.read_text())
         github = manifest.get('github')
+        if not github:
+            print(f"Skipping {world} due to missing github")
+            continue
         license = manifest.get('license')
 
         if not license:
