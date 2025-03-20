@@ -44,13 +44,7 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         world_id = yaml_path.stem
         manifests[world_id] = manifest
 
-    for added in repositories.repositories:
-        if added.url == github_url:
-            repo = added
-            break
-    else:
-        repo = repositories.add_github_repository(github_url)
-        repo.refresh()
+    repo = get_or_add_github_repo(github_url)
     if not repo.worlds and not repo.release_json:
         print(f"Repository {github_url} has no worlds, retrying in 60 seconds")
         sleep(10)
@@ -126,6 +120,16 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         yaml_path = index / f"{name}.yaml"
         yaml_path.write_text(yaml.dump(manifest))
     return manifests
+
+def get_or_add_github_repo(github_url):
+    for added in repositories.repositories:
+        if added.url == github_url:
+            repo = added
+            break
+    else:
+        repo = repositories.add_github_repository(github_url)
+        repo.refresh()
+    return repo
 
 # def parse_version(version: str) -> Version:
 #     try:

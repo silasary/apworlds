@@ -11,7 +11,7 @@ import warnings
 import zipimport
 
 import yaml
-from common import NoWorldsFound, parse_version, update_yaml_from_github, repositories
+from common import NoWorldsFound, parse_version, update_yaml_from_github, repositories, get_or_add_github_repo
 from worlds import AutoWorldRegister
 from worlds.AutoWorld import World
 
@@ -43,6 +43,13 @@ for world in pathlib.Path("index").iterdir():
     else:
         manifest = yaml.safe_load(world.read_text())
         github = manifest.get('github')
+        license = manifest.get('license')
+
+        if not license:
+            repo = get_or_add_github_repo(github)
+            manifest['license'] = repo.get_license()
+            if manifest['license']:
+                world.write_text(yaml.dump(manifest))
 
         do_analyze = not manifest.get('game')
 
