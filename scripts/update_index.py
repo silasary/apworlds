@@ -47,18 +47,21 @@ for world in pathlib.Path("index").iterdir():
                 if tag_str.lower().startswith(world.stem):
                     tag_str = tag_str[len(world.stem):].lstrip("-_")
                 world_version = parse_version(tag_str)
-                worlds.append({
-                    "world": version['download_url'],
-                    "size": version['size'],
-                    "hash_sha256": version.get('hash_sha256'),
-                    # "source_url": version.get('source_url'),
-                    "metadata": {
+                metadata = {
                         "game": manifest['game'],
                         "id": world.stem,
                         "world_version": str(world_version),
                         "tag_version": version['world_version'],
                         "created_at": version.get('created_at'),
                         }
+                if manifest.get('after_dark'):
+                    metadata['after_dark'] = True
+                worlds.append({
+                    "world": version['download_url'],
+                    "size": version['size'],
+                    "hash_sha256": version.get('hash_sha256'),
+                    # "source_url": version.get('source_url'),
+                    "metadata": metadata
                     })
 
                 # if not version.get('source_url'):
