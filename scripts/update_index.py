@@ -25,7 +25,7 @@ def save_last_checked():
         json.dump(last_checked, f, indent=0)
 
 files = list(pathlib.Path("index").iterdir())
-files.sort()
+files.sort(key=lambda x: x.stem.lower())
 for world in files:
     if world.is_dir():
         pass
