@@ -24,7 +24,9 @@ def save_last_checked():
     with open('last_checked.json', 'w') as f:
         json.dump(last_checked, f, indent=0)
 
-for world in pathlib.Path("index").iterdir():
+files = list(pathlib.Path("index").iterdir())
+files.sort()
+for world in files:
     if world.is_dir():
         pass
     else:
@@ -48,7 +50,7 @@ for world in pathlib.Path("index").iterdir():
                     tag_str = tag_str[len(world.stem):].lstrip("-_")
                 world_version = parse_version(tag_str)
                 metadata = {
-                        "game": manifest['game'],
+                        "game": manifest.get('game', ''),
                         "id": world.stem,
                         "world_version": str(world_version),
                         "tag_version": version['world_version'],
