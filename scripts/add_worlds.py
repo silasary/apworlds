@@ -1,8 +1,9 @@
 import os
+import pathlib
 from time import sleep
 
 import yaml
-from common import parse_version, update_yaml_from_github
+from common import parse_version, update_yaml_from_github, index
 from worlds.apworld_manager.world_manager import RepositoryManager
 
 if os.path.exists("queue.txt"):
@@ -14,10 +15,8 @@ else:
 failed = []
 
 if not queue:
-    print("Nothing to do")
     with open("queue.txt", "w") as f:
         f.write("")
-    exit()
 
 def save():
     with open("queue.txt", "w") as f:
@@ -40,3 +39,17 @@ for url in queue.copy():
     queue.remove(url)
     save()
     sleep(2)
+
+for world in pathlib.Path('Archipelago', 'worlds').iterdir():
+    if world.stem == 'apworld_manager':
+        continue
+    if world.is_dir():
+        print(world.stem)
+        file = index / f"{world.stem}.yaml"
+        if file.exists():
+            with open(file) as f:
+                manifest = yaml.safe_load(f)
+            if 'supported' not in manifest:
+                manifest['supported'] = True
+                with open(file, 'w') as f:
+                    yaml.safe_dump(manifest, f)
