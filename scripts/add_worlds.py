@@ -44,7 +44,6 @@ for world in pathlib.Path('Archipelago', 'worlds').iterdir():
     if world.stem == 'apworld_manager':
         continue
     if world.is_dir():
-        print(world.stem)
         file = index / f"{world.stem}.yaml"
         if file.exists():
             with open(file) as f:
