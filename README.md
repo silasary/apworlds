@@ -1,6 +1,6 @@
 # APWorld Index
 
-Primarily designed for my [APWorld Manager](https://github.com/silasary/Archipelago/releases/tag/apworld_manager-0.0.4), this repo tries to be a comprehensive list of every apworld that exists.
+Primarily designed for my [APWorld Manager](https://github.com/silasary/Archipelago/releases?q=Manager), this repo tries to be a comprehensive list of every apworld that exists.
 
 I make no promises about compatibility, quality, or trustworthiness.  I just index everything that can be indexed.
 
