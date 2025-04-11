@@ -5,6 +5,7 @@ WARNING:  This script executes untrusted apworlds, do not run this outside of a 
 """
 import importlib
 import inspect
+import json
 import pathlib
 import sys
 import warnings
@@ -35,6 +36,12 @@ def import_world(path, world_id: str):
             importer.exec_module(mod)
     return mod
 
+
+def save(world, manifest):
+    if world.suffix == '.yaml':
+        world.write_text(yaml.dump(manifest))
+    else:
+        world.write_text(json.dumps(manifest, indent=2))
 
 for world in pathlib.Path("index").iterdir():
     AutoWorldRegister.world_types = WORLD_TYPES
@@ -97,11 +104,13 @@ for world in pathlib.Path("index").iterdir():
             if not manifest.get('game'):
                 manifest['game'] = world_class.game
 
-            world.write_text(yaml.dump(manifest))
+            save(world, manifest)
 
         except Exception as e:
             print(f"Error processing {world}: {e}")
             manifest['versions'].get(highest_remote_version.world_version, {})['failed_to_load'] = str(e)
-            world.write_text(yaml.dump(manifest))
+            if 'SpecialRange' in str(e):
+                manifest['versions'].get(highest_remote_version.world_version, {})['maximum_ap_version'] = '0.4.6'
+            save(world, manifest)
             continue
 
