@@ -55,7 +55,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         repositories.packages_by_id_version[world.id][world.world_version] = world
 
     if file_path and world_id not in repositories.all_known_package_ids:
-        raise NoWorldsFound(f"Repository {world_id} not found in {github_url}")
+        raise NoWorldsFound(f"{world_id}.apworld not found in {github_url}")
     if file_path:
         releases = repositories.packages_by_id_version.get(world_id).values()
     else:
