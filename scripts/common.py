@@ -40,7 +40,6 @@ def latest_ap_release() -> datetime.datetime:
 
 def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str) -> dict[str, dict]:
     world_id = ''
-    suffix = file_path.suffix if file_path else '.json'
     manifests = {}
     if manifest:
         world_id = file_path.stem
