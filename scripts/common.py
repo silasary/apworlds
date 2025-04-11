@@ -1,6 +1,7 @@
 import datetime
 import functools
 import hashlib
+import json
 import os
 import pathlib
 import sys
@@ -37,11 +38,12 @@ def latest_ap_release() -> datetime.datetime:
     return max(datetime.datetime.fromisoformat(release['published_at']) for release in repo.release_json)
 
 
-def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: str) -> dict[str, dict]:
+def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str) -> dict[str, dict]:
     world_id = ''
+    suffix = file_path.suffix if file_path else '.json'
     manifests = {}
     if manifest:
-        world_id = yaml_path.stem
+        world_id = file_path.stem
         manifests[world_id] = manifest
 
     repo = get_or_add_github_repo(github_url)
@@ -53,9 +55,9 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         repositories.all_known_package_ids.add(world.id)
         repositories.packages_by_id_version[world.id][world.world_version] = world
 
-    if yaml_path and world_id not in repositories.all_known_package_ids:
+    if file_path and world_id not in repositories.all_known_package_ids:
         raise NoWorldsFound(f"Repository {world_id} not found in {github_url}")
-    if yaml_path:
+    if file_path:
         releases = repositories.packages_by_id_version.get(world_id).values()
     else:
         releases = repo.worlds
@@ -65,9 +67,11 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
             continue
         manifest = manifests.setdefault(release.id, None)
         if not manifest:
-            yaml_path = index / f"{release.id}.yaml"
-            if yaml_path.exists():
-                manifest = yaml.safe_load(yaml_path.read_text())
+            file_path = index / f"{release.id}.json"
+            if file_path.exists():
+                manifest = json.loads(file_path.read_text())
+            elif file_path.with_suffix('.yaml').exists():
+                manifest = yaml.safe_load(file_path.with_suffix('.yaml').read_text())
             else:
                 manifest = {"game": "", "github": github_url}
             manifests[release.id] = manifest
@@ -117,8 +121,11 @@ def update_yaml_from_github(yaml_path: Path | None, manifest: dict, github_url: 
         del manifest['world']
 
     for name, manifest in manifests.items():
-        yaml_path = index / f"{name}.yaml"
-        yaml_path.write_text(yaml.dump(manifest))
+        file_path = index / f"{name}.yaml"
+        if file_path.exists():
+            file_path.unlink()
+        file_path = index / f"{name}.json"
+        file_path.write_text(json.dumps(manifest, indent=2))
     return manifests
 
 def get_or_add_github_repo(github_url):

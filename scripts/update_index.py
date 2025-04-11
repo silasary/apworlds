@@ -5,7 +5,7 @@ import os
 import pathlib
 
 import yaml
-from common import parse_version, update_yaml_from_github, repositories
+from common import parse_version, update_index_from_github, repositories
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--no-refresh", action='store_true', help="Don't refresh the GitHub repositories")
@@ -31,13 +31,19 @@ for world in files:
         pass
     else:
         try:
-            manifest = yaml.safe_load(world.read_text())
+            if world.suffix == '.yaml':
+                manifest = yaml.safe_load(world.read_text())
+            elif world.suffix == '.json':
+                manifest = json.loads(world.read_text())
+            else:
+                print(f"Unknown file type {world}")
+                continue
             if manifest.get('ignore', False):
                 continue
             github = manifest.get('github')
             stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, '2000-01-01T00:00:00+00:00')) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(hours=1)
             if stale and github and not args.no_refresh:
-                update_yaml_from_github(world, manifest, github)
+                update_index_from_github(world, manifest, github)
                 last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
                 save_last_checked()
             versions = list(manifest.get('versions', {}).values())

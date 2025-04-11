@@ -3,7 +3,7 @@ import pathlib
 from time import sleep
 
 import yaml
-from common import parse_version, update_yaml_from_github, index
+from common import parse_version, update_index_from_github, index
 from worlds.apworld_manager.world_manager import RepositoryManager
 
 if os.path.exists("queue.txt"):
@@ -29,7 +29,7 @@ for url in queue.copy():
     repositories = RepositoryManager()
     github = url.strip()
     github = github.replace("/releases", "")
-    manifests = update_yaml_from_github(None, None, github)
+    manifests = update_index_from_github(None, None, github)
     for world, manifest in manifests.items():
         print(f"Added {world} from {github}")
     if not manifests:

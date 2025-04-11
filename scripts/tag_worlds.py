@@ -11,7 +11,7 @@ import warnings
 import zipimport
 
 import yaml
-from common import NoWorldsFound, parse_version, update_yaml_from_github, repositories, get_or_add_github_repo
+from common import NoWorldsFound, parse_version, update_index_from_github, repositories, get_or_add_github_repo
 from worlds import AutoWorldRegister
 from worlds.AutoWorld import World
 
@@ -60,7 +60,7 @@ for world in pathlib.Path("index").iterdir():
             continue
 
         try:
-            update_yaml_from_github(world, manifest, github)
+            update_index_from_github(world, manifest, github)
         except NoWorldsFound:
             print(f"Failed to find {world} in {github}")
             continue
