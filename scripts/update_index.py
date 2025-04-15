@@ -64,6 +64,11 @@ for world in files:
                         }
                 if manifest.get('after_dark'):
                     metadata['after_dark'] = True
+                if version.get('minimum_ap_version'):
+                    metadata['minimum_ap_version'] = version['minimum_ap_version']
+                if version.get('maximum_ap_version'):
+                    metadata['maximum_ap_version'] = version['maximum_ap_version']
+
                 worlds.append({
                     "world": version['download_url'],
                     "size": version['size'],
