@@ -1,3 +1,4 @@
+import argparse
 import os
 import pathlib
 from time import sleep
@@ -11,6 +12,12 @@ if os.path.exists("queue.txt"):
         queue = [l.strip() for l in set(f.readlines()) if l.strip()]
 else:
     queue = []
+
+parser = argparse.ArgumentParser(description="Add worlds to the index")
+parser.add_argument("url", nargs="*", help="URL to add to the index")
+args = parser.parse_args()
+if args.url:
+    queue.extend(args.url)
 
 failed = []
 
