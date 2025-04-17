@@ -7,7 +7,7 @@ import subprocess
 import toml
 import yaml
 
-from common import parse_version
+from common import parse_version, load_manifest
 from worlds.apworld_manager._vendor.packaging.version import _Version
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
@@ -56,20 +56,20 @@ files = [f.stem for f in my_index.glob("*")]
 
 index = ejindex / "index"
 for file in index.iterdir():
-    manifest = toml.loads(file.read_text())
-    game = manifest.get("name")
+    ej_manifest = toml.loads(file.read_text())
+    game = ej_manifest.get("name")
     if file.stem in files:
-        remote = yaml.safe_load((my_index / f"{file.stem}.yaml").read_text())
-        if manifest.get("supported", False):
+        remote = load_manifest((my_index / f"{file.stem}.yaml"))
+        if ej_manifest.get("supported", False):
             remote["supported"] = True
             with open(my_index / f"{file.stem}.yaml", "w") as f:
                 yaml.dump(remote, f)
             continue
-        versions = manifest.get("versions", {})
+        versions = ej_manifest.get("versions", {})
         r_ver = remote.get('versions', {})
         if not r_ver:
             continue
-        max_ver = max(r_ver.values(), key=lambda x: datetime.datetime.fromisoformat(x['created_at']))
+        max_ver = max(r_ver.values(), key=lambda x: datetime.datetime.fromisoformat(x.get('created_at', "2020-01-01T00:00:00Z")))
         parsed_world_version = parse_version(max_ver['world_version'].replace(file.stem, ""))
         if len(parsed_world_version.release) == 2:
             parsed_world_version._version = _Version(
@@ -85,20 +85,20 @@ for file in index.iterdir():
             continue
         if verstr in versions:
             continue
-        if any(max_ver['download_url'] == v.get('url', manifest.get("default_url", "").replace("{{version}}", k)) for k, v in versions.items()):
+        if any(max_ver['download_url'] == v.get('url', ej_manifest.get("default_url", "").replace("{{version}}", k)) for k, v in versions.items()):
             continue
 
 
-        manifest["versions"][verstr] = {}
-        url = manifest.get("default_url", "").replace("{{version}}", verstr)
+        ej_manifest["versions"][verstr] = {}
+        url = ej_manifest.get("default_url", "").replace("{{version}}", verstr)
         if max_ver['download_url'] != url:
-            manifest["versions"][verstr]['url'] = max_ver['download_url']
+            ej_manifest["versions"][verstr]['url'] = max_ver['download_url']
         with open(file, "w") as f:
-            toml.dump(manifest, f, encoder=CustomTomlEncoder(preserve=True))
+            toml.dump(ej_manifest, f, encoder=CustomTomlEncoder(preserve=True))
         print(f"Added {max_ver} to {file}")
         outbound[file.stem] = max_ver
-    else:
-        default_url = manifest.get("default_url")
+    else:  # Eijebong has the world, but we don't
+        default_url = ej_manifest.get("default_url")
         if not default_url:
             continue
         repo = re.match(r"^https://github.com/([\w-]+)/([\w-]+)/", default_url)
@@ -107,7 +107,7 @@ for file in index.iterdir():
             continue
 
         game_info = {"game": game, "github": repo.group(0)}
-        latest_version = list(manifest["versions"].keys())[-1]
+        latest_version = list(ej_manifest["versions"].keys())[-1]
         game_info.setdefault("versions", {})[latest_version] = {
             "source_url": default_url.replace("{{version}}", latest_version),
             "size": 0,

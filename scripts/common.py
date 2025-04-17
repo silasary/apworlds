@@ -67,12 +67,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         manifest = manifests.setdefault(release.id, None)
         if not manifest:
             file_path = index / f"{release.id}.json"
-            if file_path.exists():
-                manifest = json.loads(file_path.read_text())
-            elif file_path.with_suffix('.yaml').exists():
-                manifest = yaml.safe_load(file_path.with_suffix('.yaml').read_text())
-            else:
-                manifest = {"game": "", "github": github_url}
+            manifest = load_manifest(file_path, github_url)
             manifests[release.id] = manifest
         if manifest.get('supported', False):
             if datetime.datetime.fromisoformat(release.created_at) < latest_ap_release():
@@ -126,6 +121,17 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         file_path = index / f"{name}.json"
         file_path.write_text(json.dumps(manifest, indent=2))
     return manifests
+
+def load_manifest(file_path: pathlib.Path, github_url: str = None) -> dict | None:
+    if (file_path := file_path.with_suffix('.json')).exists():
+        manifest = json.loads(file_path.read_text())
+    elif (file_path := file_path.with_suffix('.yaml')).exists():
+        manifest = yaml.safe_load(file_path.read_text())
+    elif github_url:
+        manifest = {"game": "", "github": github_url}
+    else:
+        manifest = None
+    return manifest
 
 def get_or_add_github_repo(github_url):
     for added in repositories.repositories:
