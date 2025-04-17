@@ -1,4 +1,5 @@
 import datetime
+import json
 import os
 import pathlib
 import re
@@ -59,44 +60,48 @@ for file in index.iterdir():
     ej_manifest = toml.loads(file.read_text())
     game = ej_manifest.get("name")
     if file.stem in files:
-        remote = load_manifest((my_index / f"{file.stem}.yaml"))
-        if ej_manifest.get("supported", False):
-            remote["supported"] = True
-            with open(my_index / f"{file.stem}.yaml", "w") as f:
-                yaml.dump(remote, f)
-            continue
-        versions = ej_manifest.get("versions", {})
-        r_ver = remote.get('versions', {})
-        if not r_ver:
-            continue
-        max_ver = max(r_ver.values(), key=lambda x: datetime.datetime.fromisoformat(x.get('created_at', "2020-01-01T00:00:00Z")))
-        parsed_world_version = parse_version(max_ver['world_version'].replace(file.stem, ""))
-        if len(parsed_world_version.release) == 2:
-            parsed_world_version._version = _Version(
-                parsed_world_version._version.epoch,
-                parsed_world_version._version.release + (0,),
-                parsed_world_version._version.dev,
-                parsed_world_version._version.pre,
-                parsed_world_version._version.post,
-                parsed_world_version._version.local,
-            )
-        verstr = str(parsed_world_version)
-        if max_ver['version_simple'] in versions:
-            continue
-        if verstr in versions:
-            continue
-        if any(max_ver['download_url'] == v.get('url', ej_manifest.get("default_url", "").replace("{{version}}", k)) for k, v in versions.items()):
-            continue
+        try:
+            remote = load_manifest((my_index / f"{file.stem}.yaml"))
+            if ej_manifest.get("supported", False) and not remote.get("supported", False):
+                remote["supported"] = True
+                with open(my_index / f"{file.stem}.json", "w") as f:
+                    json.dump(remote, f)
+                continue
+            versions = ej_manifest.get("versions", {})
+            r_ver = remote.get('versions', {})
+            if not r_ver:
+                continue
+            max_ver = max(r_ver.values(), key=lambda x: datetime.datetime.fromisoformat(x.get('created_at', "2020-01-01T00:00:00Z")))
+            parsed_world_version = parse_version(max_ver['world_version'].replace(file.stem, ""))
+            if len(parsed_world_version.release) == 2:
+                parsed_world_version._version = _Version(
+                    parsed_world_version._version.epoch,
+                    parsed_world_version._version.release + (0,),
+                    parsed_world_version._version.dev,
+                    parsed_world_version._version.pre,
+                    parsed_world_version._version.post,
+                    parsed_world_version._version.local,
+                )
+            verstr = str(parsed_world_version)
+            if max_ver['version_simple'] in versions:
+                continue
+            if verstr in versions:
+                continue
+            if any(max_ver['download_url'] == v.get('url', ej_manifest.get("default_url", "").replace("{{version}}", k)) for k, v in versions.items()):
+                continue
 
 
-        ej_manifest["versions"][verstr] = {}
-        url = ej_manifest.get("default_url", "").replace("{{version}}", verstr)
-        if max_ver['download_url'] != url:
-            ej_manifest["versions"][verstr]['url'] = max_ver['download_url']
-        with open(file, "w") as f:
-            toml.dump(ej_manifest, f, encoder=CustomTomlEncoder(preserve=True))
-        print(f"Added {max_ver} to {file}")
-        outbound[file.stem] = max_ver
+            ej_manifest["versions"][verstr] = {}
+            url = ej_manifest.get("default_url", "").replace("{{version}}", verstr)
+            if max_ver['download_url'] != url:
+                ej_manifest["versions"][verstr]['url'] = max_ver['download_url']
+            with open(file, "w") as f:
+                toml.dump(ej_manifest, f, encoder=CustomTomlEncoder(preserve=True))
+            print(f"Added {max_ver} to {file}")
+            outbound[file.stem] = max_ver
+        except Exception as e:
+            print(f"Failed to parse {file}: {e}")
+            continue
     else:  # Eijebong has the world, but we don't
         default_url = ej_manifest.get("default_url")
         if not default_url:
@@ -108,12 +113,6 @@ for file in index.iterdir():
 
         game_info = {"game": game, "github": repo.group(0)}
         latest_version = list(ej_manifest["versions"].keys())[-1]
-        game_info.setdefault("versions", {})[latest_version] = {
-            "source_url": default_url.replace("{{version}}", latest_version),
-            "size": 0,
-            "world_version": latest_version,
-            "game": game,
-        }
         with open(my_index / f"{file.stem}.yaml", "w") as f:
             yaml.dump(game_info, f)
 
