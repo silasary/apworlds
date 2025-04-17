@@ -4,7 +4,7 @@ import pathlib
 from time import sleep
 
 import yaml
-from common import parse_version, update_index_from_github, index
+from common import update_index_from_github, index
 from worlds.apworld_manager.world_manager import RepositoryManager
 
 if os.path.exists("queue.txt"):
