@@ -10,6 +10,8 @@ from time import sleep
 
 import yaml
 
+from worlds.Files import InvalidDataError
+
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -23,6 +25,11 @@ ModuleUpdate.update(yes=True)
 
 from worlds.apworld_manager.world_manager import RepositoryManager, parse_version
 from worlds.apworld_manager._vendor.packaging.version import InvalidVersion
+
+try:
+    from worlds.Files import APWorldContainer
+except ImportError:
+    from worlds.apworld_manager._vendor.world_container import APWorldContainer
 
 index = pathlib.Path("index")
 
@@ -104,6 +111,16 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             with open(file, 'rb') as f:
                 hash = hashlib.sha256(f.read()).hexdigest()
             manifest['versions'][release.world_version]['hash_sha256'] = hash
+            container = APWorldContainer(file)
+            try:
+                container.read()
+            except InvalidDataError:
+                pass
+            manifest_data = container.get_manifest()
+            for key in ("minimum_ap_version", "maximum_ap_version"):
+                if key in manifest_data:
+                    manifest['versions'][release.world_version][key] = manifest_data[key]
+
     if manifest is None:
         return manifests
 
