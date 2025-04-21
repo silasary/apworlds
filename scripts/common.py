@@ -10,8 +10,6 @@ from time import sleep
 
 import yaml
 
-from worlds.Files import InvalidDataError
-
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -23,6 +21,7 @@ import ModuleUpdate
 
 ModuleUpdate.update(yes=True)
 
+from worlds.Files import InvalidDataError
 from worlds.apworld_manager.world_manager import RepositoryManager, parse_version
 from worlds.apworld_manager._vendor.packaging.version import InvalidVersion
 
