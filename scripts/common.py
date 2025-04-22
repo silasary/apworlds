@@ -81,8 +81,11 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                     del manifest['versions'][release.world_version]
                 continue
         version_info = manifest.setdefault('versions', {}).setdefault(release.world_version, {})
-        if version_info.get('size', 0) and version_info.get('size', 0) != release.data.get('size', 0):
-            release.data['metadata']['world_version'] = f"{release.world_version}r2"
+        revision = 1
+        raw_version = release.world_version
+        while version_info.get('size', 0) and version_info.get('size', 0) != release.data.get('size', 0):
+            revision += 1
+            release.data['metadata']['world_version'] = f"{raw_version}r{revision}"
             version_info = manifest.setdefault('versions', {}).setdefault(release.world_version, {})
             if not version_info:
                 print(f"{release.id} {release.world_version} was replaced in place")
@@ -92,7 +95,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         except InvalidVersion:
             version_number = None
         if version_number is None or version_number.base_version == '0.0.0':
-            version_number = parse_version(release.world_version.replace(release.id, ''))
+            version_number = parse_version(raw_version.replace(release.id, ''))
 
         version_info.update({
             'title': release.data['metadata'].get('title', ''),
