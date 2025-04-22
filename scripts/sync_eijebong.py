@@ -60,6 +60,7 @@ for file in index.iterdir():
     ej_manifest = toml.loads(file.read_text())
     game = ej_manifest.get("name")
     if file.stem in files:
+        continue
         try:
             remote = load_manifest((my_index / f"{file.stem}.yaml"))
             if ej_manifest.get("supported", False) and not remote.get("supported", False):
@@ -105,6 +106,8 @@ for file in index.iterdir():
     else:  # Eijebong has the world, but we don't
         default_url = ej_manifest.get("default_url")
         if not default_url:
+            if not ej_manifest.get('supported', False):
+                print(f"Skipping {game}, no default_url found")
             continue
         repo = re.match(r"^https://github.com/([\w-]+)/([\w-]+)/", default_url)
         if not repo:
