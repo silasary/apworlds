@@ -59,7 +59,7 @@ for world in pathlib.Path("index").iterdir():
             repo = get_or_add_github_repo(github)
             manifest['license'] = repo.get_license()
             if manifest['license']:
-                world.write_text(yaml.dump(manifest))
+                save(world, manifest)
 
         do_analyze = not manifest.get('game')
 
