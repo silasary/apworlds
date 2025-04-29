@@ -23,7 +23,7 @@ ModuleUpdate.update(yes=True)
 
 from worlds.Files import InvalidDataError
 from worlds.apworld_manager.world_manager import RepositoryManager, parse_version
-from worlds.apworld_manager._vendor.packaging.version import InvalidVersion
+from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version
 
 try:
     from worlds.Files import APWorldContainer
@@ -96,6 +96,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             version_number = None
         if version_number is None or version_number.base_version == '0.0.0':
             version_number = parse_version(raw_version.replace(release.id, ''))
+        if revision > 1:
+            version_number = Version(f"{version_number.base_version}r{revision}")
 
         version_info.update({
             'title': release.data['metadata'].get('title', ''),

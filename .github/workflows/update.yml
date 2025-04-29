@@ -25,6 +25,10 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install -r Archipelago/requirements.txt
         python3 scripts/common.py
+    - name: Configure host.yaml
+      uses: mikefarah/yq@v4.45.1
+      with:
+        cmd: yq -i '.apworld_manager.github_token = strenv(NAMEGITHUB_TOKEN)' Archipelago/host.yaml
     - name: Update Index
       run: |
         python3 scripts/update_index.py
