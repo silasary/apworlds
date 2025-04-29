@@ -30,7 +30,7 @@ jobs:
     - name: Configure host.yaml
       uses: mikefarah/yq@v4.45.1
       with:
-        cmd: yq -i '.apworld_manager.github_token = strenv(NAMEGITHUB_TOKEN)' Archipelago/host.yaml
+        cmd: yq -i '.apworld_manager.github_token = "${{ secrets.GITHUB_TOKEN }}"' Archipelago/host.yaml
     - name: Update Index
       run: |
         python3 scripts/tag_worlds.py
