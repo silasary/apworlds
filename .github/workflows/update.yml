@@ -30,10 +30,7 @@ jobs:
       uses: mikefarah/yq@v4.45.1
       with:
         cmd: yq -i '.apworld_manager.github_token = strenv(NAMEGITHUB_TOKEN)' Archipelago/host.yaml
-      if:
     - name: Update Index
       run: |
         python3 scripts/update_index.py
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - uses: stefanzweifel/git-auto-commit-action@v5

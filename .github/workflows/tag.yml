@@ -26,16 +26,14 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install -r Archipelago/requirements.txt
         python3 scripts/common.py
+        [ -e Archipelago/host.yaml ] || echo "{}" >> Archipelago/host.yaml
+    - name: Configure host.yaml
+      uses: mikefarah/yq@v4.45.1
+      with:
+        cmd: yq -i '.apworld_manager.github_token = strenv(NAMEGITHUB_TOKEN)' Archipelago/host.yaml
     - name: Update Index
       run: |
         python3 scripts/tag_worlds.py
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    # - uses: stefanzweifel/git-auto-commit-action@v5
-    #   with:
-    #     file_pattern: index/*.yaml
-    #     branch: tagging
-    #     create_branch: true
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v7
       with:
