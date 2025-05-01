@@ -55,6 +55,9 @@ for world in files:
                 if tag_str.lower().startswith(world.stem):
                     tag_str = tag_str[len(world.stem):].lstrip("-_")
                 world_version = parse_version(tag_str)
+                flags = manifest.get('flags', [])
+                if version.get('flags'):
+                    flags.extend(version['flags'])
                 metadata = {
                         "game": manifest.get('game', ''),
                         "id": world.stem,
@@ -63,11 +66,15 @@ for world in files:
                         "created_at": version.get('created_at'),
                         }
                 if manifest.get('after_dark'):
-                    metadata['after_dark'] = True
+                    metadata['after_dark'] = True  # deprecated
+                    flags.append('after_dark')
                 if version.get('minimum_ap_version'):
                     metadata['minimum_ap_version'] = version['minimum_ap_version']
                 if version.get('maximum_ap_version'):
                     metadata['maximum_ap_version'] = version['maximum_ap_version']
+
+                if flags:
+                    metadata['flags'] = flags
 
                 worlds.append({
                     "world": version['download_url'],
@@ -84,7 +91,10 @@ for world in files:
 
 save_last_checked()
 
-output = {"worlds": worlds}
+output = {
+    "index_version": 1,
+    "worlds": worlds
+    }
 
 with open("index.json", "w") as f:
     f.write(json.dumps(output, indent=2))
