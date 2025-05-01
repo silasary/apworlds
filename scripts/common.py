@@ -80,7 +80,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                 if release.world_version in manifest.get('versions', {}):
                     del manifest['versions'][release.world_version]
                 continue
-        version_info = manifest.setdefault('versions', {}).setdefault(release.world_version, {})
+        version_info: dict = manifest.setdefault('versions', {}).setdefault(release.world_version, {})
         revision = 1
         raw_version = release.world_version
         while version_info.get('size', 0) and version_info.get('size', 0) != release.data.get('size', 0):
@@ -103,12 +103,18 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             'title': release.data['metadata'].get('title', ''),
             'download_url': release.download_url,
             'source_url': release.source_url,
+        })
+        data = {  # only update these if they are not already set
             'size': release.data.get('size', 0),
             'tag': release.world_version,
             "world_version": str(version_number),
             'version_simple': version_number.base_version,
             'created_at': release.created_at,
-        })
+        }
+        for key in data:
+            if key not in version_info:
+                version_info[key] = data[key]
+
         if 'hash_sha256' not in manifest['versions'][release.world_version]:
             print(f"Downloading and hashing {release.download_url}")
             file = repositories.download_remote_world(release, False)
