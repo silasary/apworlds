@@ -4,7 +4,7 @@ import pathlib
 from time import sleep
 
 import yaml
-from common import update_index_from_github, index
+from common import get_or_add_github_repo, update_index_from_github, index
 from worlds.apworld_manager.world_manager import RepositoryManager
 
 if os.path.exists("queue.txt"):
@@ -14,12 +14,26 @@ else:
     queue = []
 
 parser = argparse.ArgumentParser(description="Add worlds to the index")
+parser.add_argument('--dark', default=False, action='store_true', help="Add worlds as After Dark")
+parser.add_argument('--scan-forks', default=False, action='store_true', help="Scan forks for worlds")
 parser.add_argument("url", nargs="*", help="URL to add to the index")
 args = parser.parse_args()
 if args.url:
     queue.extend(args.url)
 
 failed = []
+
+if args.scan_forks:
+    repo = get_or_add_github_repo("https://github.com/ArchipelagoMW/Archipelago")
+
+    page = 1
+    forks = repo.fetch(repo.url + '/forks?per_page=100&page=' + str(page))
+    while forks:
+        for fork in forks:
+            queue.append(fork['html_url'])
+        page += 1
+        forks = repo.fetch(repo.url + '/forks?per_page=100&page=' + str(page))
+
 
 if not queue:
     with open("queue.txt", "w") as f:

@@ -3,7 +3,7 @@ name: Tag Worlds
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: '0 0 * * 3'
+    - cron: '0 0 * * 1'
 
 jobs:
   update:
@@ -31,13 +31,14 @@ jobs:
       uses: mikefarah/yq@v4.45.1
       with:
         cmd: yq -i '.apworld_manager.github_token = "${{ secrets.GITHUB_TOKEN }}"' Archipelago/host.yaml
-    - name: Tag Worlds
+    - name: Scan Forks
       run: |
+        python3 scripts/add_worlds.py --scan-forks
         python3 scripts/tag_worlds.py
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v7
       with:
-        branch: tagging
-        title: Tag Worlds
+        branch: new-worlds
+        title: Add Worlds
         add-paths: 'index/*.json'
         reviewers: silasary

@@ -39,7 +39,7 @@ class NoWorldsFound(Exception):
 
 @functools.cache
 def latest_ap_release() -> datetime.datetime:
-    repo = repositories.add_github_repository("https://github.com/ArchipelagoMW/Archipelago")
+    repo = get_or_add_github_repo("https://github.com/ArchipelagoMW/Archipelago")
     repo.refresh()
     return max(datetime.datetime.fromisoformat(release['published_at']) for release in repo.release_json)
 
@@ -52,10 +52,6 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         manifests[world_id] = manifest
 
     repo = get_or_add_github_repo(github_url)
-    if not repo.worlds and not repo.release_json:
-        print(f"Repository {github_url} has no worlds, retrying in 60 seconds")
-        sleep(10)
-        repo.refresh()
     for world in repo.worlds:
         repositories.all_known_package_ids.add(world.id)
         repositories.packages_by_id_version[world.id][world.world_version] = world
