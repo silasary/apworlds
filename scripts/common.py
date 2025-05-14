@@ -44,7 +44,11 @@ def latest_ap_release() -> datetime.datetime:
     return max(datetime.datetime.fromisoformat(release['published_at']) for release in repo.release_json)
 
 
-def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str) -> dict[str, dict]:
+def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str | list) -> dict[str, dict]:
+    if isinstance(github_url, list):
+        for url in github_url:
+            update_index_from_github(file_path, manifest, url)
+        return
     world_id = ''
     manifests = {}
     if manifest:
@@ -157,6 +161,9 @@ def load_manifest(file_path: pathlib.Path, github_url: str = None) -> dict | Non
     return manifest
 
 def get_or_add_github_repo(github_url):
+    if isinstance(github_url, list):
+        print("Github URL is a list, using the first one")
+        github_url = github_url[0]
     for added in repositories.repositories:
         if added.url == github_url:
             repo = added
