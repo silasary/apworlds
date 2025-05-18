@@ -16,3 +16,8 @@ You have two options:
 ## I want to add a game, but the creator only posts APWorlds on Discord
 
 Ask them to post releases on a github.  I can't do anything if it's not queryable by an API.
+
+## World Flags
+Currently the following flags are supported:
+* `after_dark` This game is 18+ or Unrated.  The Updater has a setting to hide these games.
+* `unready` This game is still in early development.  The Updater won't show this game unless you already have it installed.

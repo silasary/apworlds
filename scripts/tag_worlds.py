@@ -12,7 +12,7 @@ import warnings
 import zipimport
 
 import yaml
-from common import NoWorldsFound, parse_version, update_index_from_github, repositories, get_or_add_github_repo
+from common import NoWorldsFound, load_manifest, parse_version, update_index_from_github, repositories, get_or_add_github_repo
 from worlds import AutoWorldRegister
 from worlds.AutoWorld import World
 
@@ -41,14 +41,15 @@ def save(world, manifest):
     if world.suffix == '.yaml':
         world.write_text(yaml.dump(manifest))
     else:
-        world.write_text(json.dumps(manifest, indent=2))
+        world.write_text(json.dumps(manifest, indent=2, sort_keys=True))
 
 for world in pathlib.Path("index").iterdir():
     AutoWorldRegister.world_types = WORLD_TYPES
     if world.is_dir():
         pass
     else:
-        manifest = yaml.safe_load(world.read_text())
+        manifest = load_manifest(world)
+        assert manifest is not None, f"Failed to load manifest for {world}"
         github = manifest.get('github')
         if not github:
             print(f"Skipping {world} due to missing github")
@@ -60,6 +61,12 @@ for world in pathlib.Path("index").iterdir():
             manifest['license'] = repo.get_license()
             if manifest['license']:
                 save(world, manifest)
+
+        if manifest.get('after_dark'):
+            del manifest['after_dark']
+            manifest.setdefault('flags', []).append('after_dark')
+            save(world, manifest)
+
 
         do_analyze = not manifest.get('game')
 

@@ -146,7 +146,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         if file_path.exists():
             file_path.unlink()
         file_path = index / f"{name}.json"
-        file_path.write_text(json.dumps(manifest, indent=2))
+        file_path.write_text(json.dumps(manifest, indent=2, sort_keys=True))
     return manifests
 
 def load_manifest(file_path: pathlib.Path, github_url: str = None) -> dict | None:
