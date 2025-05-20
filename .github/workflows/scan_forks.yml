@@ -3,7 +3,7 @@ name: Scan Forks
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: '0 5 1 * *'
 
 jobs:
   update:
@@ -39,6 +39,6 @@ jobs:
       uses: peter-evans/create-pull-request@v7
       with:
         branch: new-worlds
-        title: Add Worlds
+        title: Scan Forks
         add-paths: 'index/*.json'
         reviewers: silasary
