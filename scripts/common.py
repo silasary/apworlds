@@ -22,7 +22,7 @@ import ModuleUpdate
 ModuleUpdate.update(yes=True)
 
 from worlds.Files import InvalidDataError
-from worlds.apworld_manager.world_manager import RepositoryManager, parse_version
+from worlds.apworld_manager.world_manager import GithubRepository, RepositoryManager, parse_version
 from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version
 
 try:
@@ -44,13 +44,14 @@ def latest_ap_release() -> datetime.datetime:
     return max(datetime.datetime.fromisoformat(release['published_at']) for release in repo.release_json)
 
 
-def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str | list) -> dict[str, dict]:
-    if isinstance(github_url, list):
-        for url in github_url:
-            update_index_from_github(file_path, manifest, url)
-        return
+def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str | list, default_flags: dict | None = None) -> dict[str, dict]:
     world_id = ''
     manifests = {}
+    if isinstance(github_url, list):
+        for url in github_url:
+            manifests.update(update_index_from_github(file_path, manifest, url))
+        return manifests
+
     if manifest:
         world_id = file_path.stem
         manifests[world_id] = manifest
@@ -73,7 +74,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         manifest = manifests.setdefault(release.id, None)
         if not manifest:
             file_path = index / f"{release.id}.json"
-            manifest = load_manifest(file_path, github_url)
+            manifest = load_manifest(file_path, github_url, default_flags)
             manifests[release.id] = manifest
         if manifest.get('supported', False):
             if datetime.datetime.fromisoformat(release.created_at) < latest_ap_release():
@@ -131,7 +132,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                 if key in manifest_data:
                     manifest['versions'][release.world_version][key] = manifest_data[key]
 
-    if manifest is None:
+    if not manifest:
         return manifests
 
     if 'id' in manifest:
@@ -149,13 +150,15 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         file_path.write_text(json.dumps(manifest, indent=2, sort_keys=True))
     return manifests
 
-def load_manifest(file_path: pathlib.Path, github_url: str = None) -> dict | None:
+def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags = None) -> dict | None:
     if (file_path := file_path.with_suffix('.json')).exists():
         manifest = json.loads(file_path.read_text())
     elif (file_path := file_path.with_suffix('.yaml')).exists():
         manifest = yaml.safe_load(file_path.read_text())
     elif github_url:
         manifest = {"game": "", "github": github_url}
+        if default_flags:
+            manifest['flags'] = default_flags
     else:
         manifest = None
     return manifest
@@ -165,7 +168,7 @@ def get_or_add_github_repo(github_url):
         print("Github URL is a list, using the first one")
         github_url = github_url[0]
     for added in repositories.repositories:
-        if added.url == github_url:
+        if isinstance(added, GithubRepository) and github_url in [added.url, added.url.replace('https://api.github.com/repos', 'https://github.com')]:
             repo = added
             break
     else:
