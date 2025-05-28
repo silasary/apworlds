@@ -46,13 +46,13 @@ def latest_ap_release() -> datetime.datetime:
 
 def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str | list, default_flags: dict | None = None) -> dict[str, dict]:
     world_id = ''
-    manifests = {}
+    manifests: dict[str, dict] = {}
     if isinstance(github_url, list):
         for url in github_url:
             manifests.update(update_index_from_github(file_path, manifest, url))
         return manifests
 
-    if manifest:
+    if manifest and file_path:
         world_id = file_path.stem
         manifests[world_id] = manifest
 
