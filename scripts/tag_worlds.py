@@ -49,7 +49,10 @@ for world in pathlib.Path("index").iterdir():
         pass
     else:
         manifest = load_manifest(world)
-        assert manifest is not None, f"Failed to load manifest for {world}"
+        if manifest is None:
+            print(f"Failed to load manifest for {world}")
+            continue
+
         github = manifest.get('github')
         if not github:
             print(f"Skipping {world} due to missing github")
