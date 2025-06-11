@@ -6,15 +6,13 @@ WARNING:  This script executes untrusted apworlds, do not run this outside of a 
 import datetime
 import importlib
 import inspect
-import json
-import os
 import pathlib
 import sys
 import warnings
 import zipimport
+import traceback_with_variables
 
-import yaml
-from common import NoWorldsFound, load_manifest, parse_version, update_index_from_github, repositories, get_or_add_github_repo
+from common import NoWorldsFound, load_manifest, parse_version, update_index_from_github, repositories, get_or_add_github_repo, save
 from worlds import AutoWorldRegister
 from worlds.AutoWorld import World, WebWorldRegister
 
@@ -37,13 +35,6 @@ def import_world(path, world_id: str):
         if hasattr(importer, "exec_module"):
             importer.exec_module(mod)
     return mod
-
-
-def save(world, manifest):
-    if world.suffix == '.yaml':
-        world.write_text(yaml.dump(manifest))
-    else:
-        world.write_text(json.dumps(manifest, indent=2, sort_keys=True))
 
 for world in pathlib.Path("index").iterdir():
     AutoWorldRegister.world_types = WORLD_TYPES
@@ -128,6 +119,7 @@ for world in pathlib.Path("index").iterdir():
             manifest['versions'].get(highest_remote_version.world_version, {})['failed_to_load'] = str(e)
             if 'SpecialRange' in str(e):
                 manifest['versions'].get(highest_remote_version.world_version, {})['maximum_ap_version'] = '0.4.6'
+            with open(f'{world.stem}.log', 'w') as f:
+                f.writelines([l + '\n' for l in traceback_with_variables.iter_exc_lines(e)])
             save(world, manifest)
             continue
-

@@ -14,6 +14,7 @@ import yaml
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
 sys.path.append("Archipelago")
+sys.path.append("Archipelago/lib")
 import Utils  # noqa
 
 Utils.local_path.cached_path = os.path.dirname(os.path.abspath(Utils.__file__))
@@ -147,7 +148,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         if file_path.exists():
             file_path.unlink()
         file_path = index / f"{name}.json"
-        file_path.write_text(json.dumps(manifest, indent=2, sort_keys=True))
+        save(file_path, manifest)
     return manifests
 
 def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags = None) -> dict | None:
@@ -175,6 +176,13 @@ def get_or_add_github_repo(github_url):
         repo = repositories.add_github_repository(github_url)
         repo.refresh()
     return repo
+
+
+def save(world: pathlib.Path, manifest: dict):
+    if world.suffix == '.yaml':
+        world.write_text(yaml.dump(manifest))
+    else:
+        world.write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
 
 # def parse_version(version: str) -> Version:
 #     try:
