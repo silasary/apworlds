@@ -3,9 +3,11 @@ Metadata Extractor
 
 WARNING:  This script executes untrusted apworlds, do not run this outside of a sandboxed environment.
 """
+import datetime
 import importlib
 import inspect
 import json
+import os
 import pathlib
 import sys
 import warnings
@@ -14,7 +16,7 @@ import zipimport
 import yaml
 from common import NoWorldsFound, load_manifest, parse_version, update_index_from_github, repositories, get_or_add_github_repo
 from worlds import AutoWorldRegister
-from worlds.AutoWorld import World
+from worlds.AutoWorld import World, WebWorldRegister
 
 
 WORLD_TYPES = AutoWorldRegister.world_types
@@ -117,6 +119,11 @@ for world in pathlib.Path("index").iterdir():
             save(world, manifest)
 
         except Exception as e:
+            if manifest.get('supported', False) and not manifest.get('versions'):
+                created = datetime.datetime.fromisoformat(highest_remote_version.created_at)
+                if datetime.datetime.now(tz=datetime.UTC) - created > datetime.timedelta(days=500):
+                    world.unlink()
+                continue
             print(f"Error processing {world}: {e}")
             manifest['versions'].get(highest_remote_version.world_version, {})['failed_to_load'] = str(e)
             if 'SpecialRange' in str(e):

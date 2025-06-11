@@ -128,7 +128,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             except InvalidDataError:
                 pass
             manifest_data = container.get_manifest()
-            for key in ("minimum_ap_version", "maximum_ap_version"):
+            for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
                 if key in manifest_data:
                     manifest['versions'][release.world_version][key] = manifest_data[key]
 
