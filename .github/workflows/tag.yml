@@ -25,6 +25,7 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         pip install -r Archipelago/requirements.txt
+        pip install -r scripts/requirements.txt
         python3 scripts/common.py
         [ -e Archipelago/host.yaml ] || echo "{}" >> Archipelago/host.yaml
     - name: Configure host.yaml
