@@ -10,6 +10,8 @@ from time import sleep
 
 import yaml
 
+from worlds.apworld_manager.container import RepoWorldContainer
+
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -123,10 +125,10 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             with open(file, 'rb') as f:
                 hash = hashlib.sha256(f.read()).hexdigest()
             manifest['versions'][release.world_version]['hash_sha256'] = hash
-            container = APWorldContainer(file)
+            container = RepoWorldContainer(file)
             try:
                 container.read()
-            except InvalidDataError:
+            except InvalidDataError as e:
                 pass
             manifest_data = container.get_manifest()
             for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
