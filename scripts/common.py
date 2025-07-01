@@ -10,9 +10,6 @@ from time import sleep
 
 import yaml
 
-from worlds.apworld_manager.container import RepoWorldContainer
-
-
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
 sys.path.append("Archipelago")
@@ -27,11 +24,7 @@ ModuleUpdate.update(yes=True)
 from worlds.Files import InvalidDataError
 from worlds.apworld_manager.world_manager import GithubRepository, RepositoryManager, parse_version
 from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version
-
-try:
-    from worlds.Files import APWorldContainer
-except ImportError:
-    from worlds.apworld_manager._vendor.world_container import APWorldContainer
+from worlds.apworld_manager.container import RepoWorldContainer
 
 index = pathlib.Path("index")
 
