@@ -3,9 +3,11 @@ import datetime
 import json
 import os
 import pathlib
+import sys
 
 import yaml
 from common import parse_version, update_index_from_github, repositories
+from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--no-refresh", action='store_true', help="Don't refresh the GitHub repositories")
@@ -86,6 +88,11 @@ for world in files:
 
                 # if not version.get('source_url'):
                 #     print(f"Missing source_url for {world.stem} {version.get('world_version')}")
+        except GithubRateLimitExceeded as e:
+            print(f"GitHub rate limit exceeded: {e}")
+            save_last_checked()
+            sys.exit(1)
+            break
         except Exception as e:
             print(f"Error updating {world.stem}: {e}")
 
