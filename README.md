@@ -8,7 +8,7 @@ Where possible, I'll try to tag worlds as AD and remove those that can't be play
 
 ## Adding a world
 
-You have two options:
+You have three options:
 * Use `scripts/add_worlds.py https://github.com/ORG/REPO` to automatically scrape every release in that repo.
 * Manually create a yaml file in the index folder with the Game name and repo, and let the nightly script do the rest.
 * Open a Github Issue
