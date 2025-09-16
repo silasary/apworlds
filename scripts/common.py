@@ -114,6 +114,11 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             if key not in version_info:
                 version_info[key] = data[key]
 
+        if 'lib_file' in manifest:
+            lib_file = release.data.get('other_assets', {}).get(manifest['lib_file'])
+            if lib_file:
+                version_info['lib_file'] = lib_file['browser_download_url']
+
         if 'hash_sha256' not in manifest['versions'][release.world_version]:
             print(f"Downloading and hashing {release.download_url}")
             file = repositories.download_remote_world(release, False)

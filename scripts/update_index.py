@@ -78,13 +78,17 @@ for world in files:
                 if flags:
                     metadata['flags'] = flags
 
-                worlds.append({
+                entry = {
                     "world": version['download_url'],
                     "size": version['size'],
                     "hash_sha256": version.get('hash_sha256'),
                     # "source_url": version.get('source_url'),
                     "metadata": metadata
-                    })
+                    }
+                if version.get('lib_file'):
+                    entry['lib_file'] = version['lib_file']
+
+                worlds.append(entry)
 
                 # if not version.get('source_url'):
                 #     print(f"Missing source_url for {world.stem} {version.get('world_version')}")
