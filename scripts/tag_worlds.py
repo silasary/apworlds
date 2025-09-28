@@ -64,7 +64,7 @@ for world in pathlib.Path("index").iterdir():
             save(world, manifest)
 
 
-        do_analyze = not manifest.get('game')
+        do_analyze = not manifest.get('game') or not manifest.get('description')
 
         if not do_analyze:
             continue
@@ -106,6 +106,11 @@ for world in pathlib.Path("index").iterdir():
 
             if not manifest.get('game'):
                 manifest['game'] = world_class.game
+
+            if not manifest.get('description'):
+                manifest['description'] = (world_class.__doc__ or '')
+                if manifest['description']:
+                    manifest['description'] = inspect.cleandoc(manifest['description']).strip()
 
             save(world, manifest)
 

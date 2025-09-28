@@ -1,4 +1,5 @@
 import argparse
+from collections import defaultdict
 import datetime
 import json
 import os
@@ -15,6 +16,7 @@ parser.add_argument("--add-unknown", action='store_true', help="Add unknown worl
 args = parser.parse_args()
 
 worlds = []
+meta = defaultdict(dict)
 
 last_checked = {}
 
@@ -49,6 +51,7 @@ for world in files:
                 last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
                 save_last_checked()
             versions = list(manifest.get('versions', {}).values())
+            meta[world.stem]['description'] = manifest.get('description', '')
 
             for version in versions:
                 if version.get('ignore', False):
@@ -104,7 +107,8 @@ save_last_checked()
 
 output = {
     "index_version": 1,
-    "worlds": worlds
+    "worlds": worlds,
+    "meta": meta,
     }
 
 with open("index.json", "w") as f:
