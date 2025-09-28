@@ -1,0 +1,68 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    - id: requirements-txt-fixer
+      name: Requirements
+      types: [file]
+      exclude_types: ['image']
+    - id: debug-statements
+      name: Debugging
+      language: python
+      types: [file, python]
+      exclude_types: ['image']
+    - id: trailing-whitespace
+      name: Trailing Whitespace
+      language: python
+      types: [file]
+      exclude_types: ['image', 'binary', 'executable']
+    - id: end-of-file-fixer
+      name: EOF Newlines
+      language: python
+      types: [file]
+      exclude_types: ['image', 'binary', 'executable']
+    - id: check-yaml
+      name: YAML Structure
+      language: python
+      args: ['--unsafe']
+    - id: check-toml
+      name: TOML Structure
+    - id: check-merge-conflict
+      name: Merge Conflicts
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: 'v0.0.272'
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        name: Black Formatting
+        language: python
+        types: [ file, python ]
+  - repo: https://github.com/PyCQA/autoflake
+    rev: v2.2.0
+    hooks:
+        - id: autoflake
+          args: [--remove-all-unused-imports, --in-place, --ignore-init-module-imports]
+          exclude: wsgi$
+  # - repo: https://github.com/pre-commit/mirrors-mypy
+  #   rev: v1.15.0
+  #   hooks:
+  #   -   id: mypy
+  #       additional_dependencies:
+  #         - types-redis
+  #         - types-requests
+#  - repo: https://github.com/pycqa/isort
+#    rev: 5.11.4
+#    hooks:
+#      - id: isort
+#        name: isort Formatting
+#        language: python
+#        types: [file, python]
+ci:
+  autofix_prs: true
+  autoupdate_commit_msg: "ci: weekly check."
+  autoupdate_schedule: weekly
+  autofix_commit_msg: "ci: correct from checks."
