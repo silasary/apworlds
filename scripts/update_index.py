@@ -69,19 +69,20 @@ for world in files:
                 if version.get("flags"):
                     flags.extend(version["flags"])
                 metadata = {
-                    "game": manifest.get("game", ""),
+                    "game": manifest.get("game", ""),  # deprecated
                     "id": world.stem,
                     "world_version": str(world_version),
                     "tag_version": version["world_version"],
                     "created_at": version.get("created_at"),
                 }
                 if manifest.get("after_dark"):
-                    metadata["after_dark"] = True  # deprecated
                     flags.append("after_dark")
                 if version.get("minimum_ap_version"):
                     metadata["minimum_ap_version"] = version["minimum_ap_version"]
                 if version.get("maximum_ap_version"):
                     metadata["maximum_ap_version"] = version["maximum_ap_version"]
+                if version.get("prerelease"):
+                    flags.append("prerelease")
 
                 if flags:
                     metadata["flags"] = flags
