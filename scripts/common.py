@@ -152,6 +152,14 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
     if "world" in manifest:
         del manifest["world"]
 
+    if "tags" in manifest:
+        # common typo
+        manifest["flags"] = manifest.get("flags", []) + manifest.pop("tags")
+        del manifest["tags"]
+
+    if isinstance(manifest.get("flags", []), dict):
+        manifest["flags"] = [flag for flag, enabled in manifest["flags"].items() if enabled]
+
     for name, manifest in manifests.items():
         file_path = index / f"{name}.yaml"
         if file_path.exists():

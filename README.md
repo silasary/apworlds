@@ -21,3 +21,4 @@ Ask them to post releases on a github.  I can't do anything if it's not queryabl
 Currently the following flags are supported:
 * `after_dark` This game is 18+ or Unrated.  The Updater has a setting to hide these games.
 * `unready` This game is still in early development.  The Updater won't show this game unless you already have it installed.
+* `tracker_included` This game has an integrated tracker, and doesn't need an external tracker.
