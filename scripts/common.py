@@ -6,7 +6,6 @@ import os
 import pathlib
 import sys
 from pathlib import Path
-from time import sleep
 
 import yaml
 
@@ -17,31 +16,33 @@ sys.path.append("Archipelago/lib")
 import Utils  # noqa
 
 Utils.local_path.cached_path = os.path.dirname(os.path.abspath(Utils.__file__))
-import ModuleUpdate
+import ModuleUpdate  # noqa: E402
 
 ModuleUpdate.update(yes=True)
 
-from worlds.Files import InvalidDataError
-from worlds.apworld_manager.world_manager import GithubRepository, RepositoryManager, parse_version
-from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version
-from worlds.apworld_manager.container import RepoWorldContainer
+from worlds.Files import InvalidDataError  # noqa: E402
+from worlds.apworld_manager.world_manager import GithubRepository, RepositoryManager, parse_version  # noqa: E402
+from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version  # noqa: E402
+from worlds.apworld_manager.container import RepoWorldContainer  # noqa: E402
 
 index = pathlib.Path("index")
 
 repositories = RepositoryManager()
 
+
 class NoWorldsFound(Exception):
     pass
+
 
 @functools.cache
 def latest_ap_release() -> datetime.datetime:
     repo = get_or_add_github_repo("https://github.com/ArchipelagoMW/Archipelago")
     repo.refresh()
-    return max(datetime.datetime.fromisoformat(release['published_at']) for release in repo.release_json)
+    return max(datetime.datetime.fromisoformat(release["published_at"]) for release in repo.release_json)
 
 
 def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str | list, default_flags: dict | None = None) -> dict[str, dict]:
-    world_id = ''
+    world_id = ""
     manifests: dict[str, dict] = {}
     if isinstance(github_url, list):
         for url in github_url:
@@ -72,78 +73,84 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             file_path = index / f"{release.id}.json"
             manifest = load_manifest(file_path, github_url, default_flags)
             manifests[release.id] = manifest
-        if manifest.get('supported', False):
+        if manifest.get("supported", False):
             if datetime.datetime.fromisoformat(release.created_at) < latest_ap_release():
-                if release.world_version in manifest.get('versions', {}):
-                    del manifest['versions'][release.world_version]
+                if release.world_version in manifest.get("versions", {}):
+                    del manifest["versions"][release.world_version]
                 continue
-        version_info: dict = manifest.setdefault('versions', {}).setdefault(release.world_version, {})
+        version_info: dict = manifest.setdefault("versions", {}).setdefault(release.world_version, {})
         revision = 1
         raw_version = release.world_version
-        while version_info.get('size', 0) and version_info.get('size', 0) != release.data.get('size', 0):
+        while version_info.get("size", 0) and version_info.get("size", 0) != release.data.get("size", 0):
             revision += 1
-            release.data['metadata']['world_version'] = f"{raw_version}r{revision}"
-            version_info = manifest.setdefault('versions', {}).setdefault(release.world_version, {})
+            release.data["metadata"]["world_version"] = f"{raw_version}r{revision}"
+            version_info = manifest.setdefault("versions", {}).setdefault(release.world_version, {})
             if not version_info:
                 print(f"{release.id} {release.world_version} was replaced in place")
 
         try:
-            version_number = parse_version(release.data['metadata']['title'].replace(release.id, ''))
+            version_number = parse_version(release.data["metadata"]["title"].replace(release.id, ""))
         except InvalidVersion:
             version_number = None
-        if version_number is None or version_number.base_version == '0.0.0':
-            version_number = parse_version(raw_version.replace(release.id, ''))
+        if version_number is None or version_number.base_version == "0.0.0":
+            version_number = parse_version(raw_version.replace(release.id, ""))
         if revision > 1:
             version_number = Version(f"{version_number.base_version}r{revision}")
 
-        version_info.update({
-            'title': release.data['metadata'].get('title', ''),
-            'download_url': release.download_url,
-            'source_url': release.source_url,
-        })
-        if 'prerelease' in release.data['metadata']:
-            version_info['prerelease'] = release.data['metadata']['prerelease']
+        version_info.update(
+            {
+                "title": release.data["metadata"].get("title", ""),
+                "download_url": release.download_url,
+                "source_url": release.source_url,
+            }
+        )
+        if "prerelease" in release.data["metadata"]:
+            version_info["prerelease"] = release.data["metadata"]["prerelease"]
         data = {  # only update these if they are not already set
-            'size': release.data.get('size', 0),
-            'tag': release.world_version,
+            "size": release.data.get("size", 0),
+            "tag": release.world_version,
             "world_version": str(version_number),
-            'version_simple': version_number.base_version,
-            'created_at': release.created_at,
+            "version_simple": version_number.base_version,
+            "created_at": release.created_at,
         }
         for key in data:
             if key not in version_info:
                 version_info[key] = data[key]
 
-        if 'lib_file' in manifest:
-            lib_file = release.data.get('other_assets', {}).get(manifest['lib_file'])
+        if "lib_file" in manifest:
+            lib_file = release.data.get("other_assets", {}).get(manifest["lib_file"])
             if lib_file:
-                version_info['lib_file'] = lib_file['browser_download_url']
+                version_info["lib_file"] = lib_file["browser_download_url"]
 
-        if 'hash_sha256' not in manifest['versions'][release.world_version]:
+        if "hash_sha256" not in manifest["versions"][release.world_version]:
             print(f"Downloading and hashing {release.download_url}")
             file = repositories.download_remote_world(release, False)
-            with open(file, 'rb') as f:
+            with open(file, "rb") as f:
                 hash = hashlib.sha256(f.read()).hexdigest()
-            manifest['versions'][release.world_version]['hash_sha256'] = hash
+            manifest["versions"][release.world_version]["hash_sha256"] = hash
             container = RepoWorldContainer(file)
             try:
                 container.read()
-            except InvalidDataError as e:
+            except InvalidDataError:
                 pass
             manifest_data = container.get_manifest()
             for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
                 if key in manifest_data:
-                    manifest['versions'][release.world_version][key] = manifest_data[key]
+                    manifest["versions"][release.world_version][key] = manifest_data[key]
+            if "tracker" in manifest_data:
+                manifest["tracker"] = manifest_data["tracker"]
+            elif "poptracker" in manifest_data:
+                manifest["tracker"] = manifest_data["poptracker"]
 
     if not manifest:
         return manifests
 
-    if 'id' in manifest:
-        del manifest['id']
-    if 'metadata' in manifest:
-        del manifest['metadata']
-    if 'world' in manifest:
-        del manifest['world']
+    if "id" in manifest:
+        del manifest["id"]
+    if "metadata" in manifest:
+        del manifest["metadata"]
+    if "world" in manifest:
+        del manifest["world"]
 
     for name, manifest in manifests.items():
         file_path = index / f"{name}.yaml"
@@ -153,25 +160,27 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         save(file_path, manifest)
     return manifests
 
-def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags = None) -> dict | None:
-    if (file_path := file_path.with_suffix('.json')).exists():
+
+def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=None) -> dict | None:
+    if (file_path := file_path.with_suffix(".json")).exists():
         manifest = json.loads(file_path.read_text())
-    elif (file_path := file_path.with_suffix('.yaml')).exists():
+    elif (file_path := file_path.with_suffix(".yaml")).exists():
         manifest = yaml.safe_load(file_path.read_text())
     elif github_url:
         manifest = {"game": "", "github": github_url}
         if default_flags:
-            manifest['flags'] = default_flags
+            manifest["flags"] = default_flags
     else:
         manifest = None
     return manifest
+
 
 def get_or_add_github_repo(github_url):
     if isinstance(github_url, list):
         print("Github URL is a list, using the first one")
         github_url = github_url[0]
     for added in repositories.repositories:
-        if isinstance(added, GithubRepository) and github_url in [added.url, added.url.replace('https://api.github.com/repos', 'https://github.com')]:
+        if isinstance(added, GithubRepository) and github_url in [added.url, added.url.replace("https://api.github.com/repos", "https://github.com")]:
             repo = added
             break
     else:
@@ -181,10 +190,11 @@ def get_or_add_github_repo(github_url):
 
 
 def save(world: pathlib.Path, manifest: dict):
-    if world.suffix == '.yaml':
+    if world.suffix == ".yaml":
         world.write_text(yaml.dump(manifest))
     else:
-        world.write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
+        world.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+
 
 # def parse_version(version: str) -> Version:
 #     try:

@@ -14,10 +14,16 @@ import traceback_with_variables
 
 from common import NoWorldsFound, load_manifest, parse_version, update_index_from_github, repositories, get_or_add_github_repo, save
 from worlds import AutoWorldRegister
-from worlds.AutoWorld import World, WebWorldRegister
+from worlds.AutoWorld import World
 
 
 WORLD_TYPES = AutoWorldRegister.world_types
+
+BAD_DESCRIPTIONS = [
+    "Insert description of the world/game here.",
+    "TODO",
+]
+
 
 def import_world(path, world_id: str):
     importer = zipimport.zipimporter(path)
@@ -36,6 +42,7 @@ def import_world(path, world_id: str):
             importer.exec_module(mod)
     return mod
 
+
 for world in pathlib.Path("index").iterdir():
     AutoWorldRegister.world_types = WORLD_TYPES
     if world.is_dir():
@@ -46,25 +53,27 @@ for world in pathlib.Path("index").iterdir():
             print(f"Failed to load manifest for {world}")
             continue
 
-        github = manifest.get('github')
+        github = manifest.get("github")
         if not github:
             print(f"Skipping {world} due to missing github")
             continue
-        license = manifest.get('license')
+        license = manifest.get("license")
 
         if not license:
             repo = get_or_add_github_repo(github)
-            manifest['license'] = repo.get_license()
-            if manifest['license']:
+            manifest["license"] = repo.get_license()
+            if manifest["license"]:
                 save(world, manifest)
 
-        if manifest.get('after_dark'):
-            del manifest['after_dark']
-            manifest.setdefault('flags', []).append('after_dark')
+        if manifest.get("after_dark"):
+            del manifest["after_dark"]
+            manifest.setdefault("flags", []).append("after_dark")
             save(world, manifest)
 
+        do_analyze = not manifest.get("game") or not manifest.get("description")
 
-        do_analyze = not manifest.get('game') or not manifest.get('description')
+        if manifest.get("description") in BAD_DESCRIPTIONS:
+            do_analyze = True
 
         if not do_analyze:
             continue
@@ -80,8 +89,12 @@ for world in pathlib.Path("index").iterdir():
             continue
         available_versions = []
         for version, v in versions.items():
-            if not manifest.setdefault('versions', {}).get(version, {}).get('failed_to_load'):
-                available_versions.append(v)
+            if manifest.setdefault("versions", {}).get(version, {}).get("failed_to_load"):
+                continue
+            if manifest.setdefault("versions", {}).get(version, {}).get("ignore"):
+                continue
+            available_versions.append(v)
+
         if not available_versions:
             print(f"No good versions available for {world}")
             continue
@@ -104,27 +117,27 @@ for world in pathlib.Path("index").iterdir():
                 print(f"No worlds found in {world}")
                 continue
 
-            if not manifest.get('game'):
-                manifest['game'] = world_class.game
+            if not manifest.get("game"):
+                manifest["game"] = world_class.game
 
-            if not manifest.get('description'):
-                manifest['description'] = (world_class.__doc__ or '')
-                if manifest['description']:
-                    manifest['description'] = inspect.cleandoc(manifest['description']).strip()
+            if not manifest.get("description"):
+                manifest["description"] = world_class.__doc__ or ""
+                if manifest["description"]:
+                    manifest["description"] = inspect.cleandoc(manifest["description"]).strip()
 
             save(world, manifest)
 
         except Exception as e:
-            if manifest.get('supported', False) and not manifest.get('versions'):
+            if manifest.get("supported", False) and not manifest.get("versions"):
                 created = datetime.datetime.fromisoformat(highest_remote_version.created_at)
                 if datetime.datetime.now(tz=datetime.UTC) - created > datetime.timedelta(days=500):
                     world.unlink()
                 continue
             print(f"Error processing {world}: {e}")
-            manifest['versions'].get(highest_remote_version.world_version, {})['failed_to_load'] = str(e)
-            if 'SpecialRange' in str(e):
-                manifest['versions'].get(highest_remote_version.world_version, {})['maximum_ap_version'] = '0.4.6'
-            with open(f'{world.stem}.log', 'w') as f:
-                f.writelines([l + '\n' for l in traceback_with_variables.iter_exc_lines(e)])
+            manifest["versions"].get(highest_remote_version.world_version, {})["failed_to_load"] = str(e)
+            if "SpecialRange" in str(e):
+                manifest["versions"].get(highest_remote_version.world_version, {})["maximum_ap_version"] = "0.4.6"
+            with open(f"{world.stem}.log", "w") as f:
+                f.writelines([line + "\n" for line in traceback_with_variables.iter_exc_lines(e)])
             save(world, manifest)
             continue
