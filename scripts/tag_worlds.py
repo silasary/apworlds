@@ -22,6 +22,14 @@ WORLD_TYPES = AutoWorldRegister.world_types
 BAD_DESCRIPTIONS = [
     "Insert description of the world/game here.",
     "TODO",
+    "TODO: Description",
+    "Placeholder description",
+    "Keep Talking and Nobody Explodes game description.",
+    "Stacklands - Description here",
+    "Rift of the Necrodancer is a game that you play.",
+    "Plok whose apworld code is completely stolen from Majoras Masks apworld.",
+    "Momodora Moonlit Farewell is a game",
+    "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.\nThis allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.\nThe key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,\nthe player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent.",  # noqa: E501
 ]
 
 
@@ -72,7 +80,7 @@ for world in pathlib.Path("index").iterdir():
 
         do_analyze = not manifest.get("game") or not manifest.get("description")
 
-        if manifest.get("description") in BAD_DESCRIPTIONS:
+        if manifest.get("description") in BAD_DESCRIPTIONS or manifest.get("description", "") == manifest.get("game", ""):
             do_analyze = True
 
         if not do_analyze:
