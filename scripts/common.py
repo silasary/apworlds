@@ -46,7 +46,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
     manifests: dict[str, dict] = {}
     if isinstance(github_url, list):
         for url in github_url:
-            manifests.update(update_index_from_github(file_path, manifest, url))
+            manifests.update(update_index_from_github(file_path, manifest, url, default_flags))
         return manifests
 
     if manifest and file_path:
@@ -161,6 +161,16 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         manifest["flags"] = [flag for flag, enabled in manifest["flags"].items() if enabled]
 
     for name, manifest in manifests.items():
+        if github_url not in manifest.get("github", []):
+            versions = [v for v in manifest.get("versions", {}).values()]
+            versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)
+            source_url = versions[0].get("source_url").replace("https://api.github.com/repos", "https://github.com") if versions else None
+            if source_url and source_url == github_url:
+                print(f"Adding {source_url} to {name} manifest")
+                if isinstance(manifest.get("github", []), str):
+                    manifest["github"] = [manifest["github"]]
+                manifest["github"].append(source_url)
+
         file_path = index / f"{name}.yaml"
         if file_path.exists():
             file_path.unlink()
