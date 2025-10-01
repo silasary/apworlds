@@ -170,17 +170,21 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
 
 
 def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=None) -> dict | None:
-    if (file_path := file_path.with_suffix(".json")).exists():
-        manifest = json.loads(file_path.read_text())
-    elif (file_path := file_path.with_suffix(".yaml")).exists():
-        manifest = yaml.safe_load(file_path.read_text())
-    elif github_url:
-        manifest = {"game": "", "github": github_url}
-        if default_flags:
-            manifest["flags"] = default_flags
-    else:
-        manifest = None
-    return manifest
+    try:
+        if (file_path := file_path.with_suffix(".json")).exists():
+            manifest = json.loads(file_path.read_text())
+        elif (file_path := file_path.with_suffix(".yaml")).exists():
+            manifest = yaml.safe_load(file_path.read_text())
+        elif github_url:
+            manifest = {"game": "", "github": github_url}
+            if default_flags:
+                manifest["flags"] = default_flags
+        else:
+            manifest = None
+        return manifest
+    except json.decoder.JSONDecodeError as e:
+        print(f"Failed to parse {file_path}: {e}")
+        raise
 
 
 def get_or_add_github_repo(github_url):
