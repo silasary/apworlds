@@ -139,8 +139,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                     manifest["versions"][release.world_version][key] = manifest_data[key]
             if "tracker" in manifest_data:
                 manifest["tracker"] = manifest_data["tracker"]
-            elif "poptracker" in manifest_data:
-                manifest["tracker"] = manifest_data["poptracker"]
+            if "flags" in manifest_data:
+                manifest["flags"] = manifest_data["flags"]
 
     if not manifest:
         return manifests
@@ -159,6 +159,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
 
     if isinstance(manifest.get("flags", []), dict):
         manifest["flags"] = [flag for flag, enabled in manifest["flags"].items() if enabled]
+    elif isinstance(manifest.get("flags", []), str):
+        manifest["flags"] = manifest["flags"].split(",")
 
     for name, manifest in manifests.items():
         if github_url not in manifest.get("github", []):
