@@ -88,12 +88,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             if not version_info:
                 print(f"{release.id} {release.world_version} was replaced in place")
 
-        try:
-            version_number = parse_version(release.data["metadata"]["title"].replace(release.id, ""))
-        except InvalidVersion:
-            version_number = None
-        if version_number is None or version_number.base_version == "0.0.0":
-            version_number = parse_version(raw_version.replace(release.id, ""))
+        prefer_version_from_title = manifest.get("prefer_version_from_title", False)
+        version_number = parse_version_from_release(release, raw_version, prefer_version_from_title)
         if revision > 1:
             version_number = Version(f"{version_number.base_version}r{revision}")
 
@@ -179,6 +175,28 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         file_path = index / f"{name}.json"
         save(file_path, manifest)
     return manifests
+
+
+def parse_version_from_release(release: dict, raw_version: str, prefer_version_from_title: bool) -> Version:
+    if prefer_version_from_title:
+        try:
+            version_number = parse_version(release.data["metadata"]["title"].replace(release.id, ""))
+        except InvalidVersion:
+            version_number = None
+        if version_number is None or version_number.base_version == "0.0.0":
+            version_number = parse_version(raw_version.replace(release.id, ""))
+    else:
+        try:
+            version_number = parse_version(raw_version.replace(release.id, ""))
+        except InvalidVersion:
+            version_number = None
+        try:
+            if version_number is None or version_number.base_version == "0.0.0":
+                version_number = parse_version(release.data["metadata"]["title"].replace(release.id, ""))
+        except InvalidVersion:
+            if version_number is None:
+                version_number = Version("0.0.0")
+    return version_number
 
 
 def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=None) -> dict | None:
