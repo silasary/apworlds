@@ -74,7 +74,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             manifest = load_manifest(file_path, github_url, default_flags)
             manifests[release.id] = manifest
         if manifest.get("supported", False):
-            if datetime.datetime.fromisoformat(release.created_at) < latest_ap_release():
+            if datetime.datetime.fromisoformat(release.created_at) < latest_ap_release() - datetime.timedelta(days=365):
                 if release.world_version in manifest.get("versions", {}):
                     del manifest["versions"][release.world_version]
                 continue
