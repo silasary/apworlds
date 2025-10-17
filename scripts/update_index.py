@@ -65,7 +65,7 @@ for world in files:
                 if tag_str.lower().startswith(world.stem):
                     tag_str = tag_str[len(world.stem) :].lstrip("-_")
                 world_version = parse_version(tag_str)
-                flags = manifest.get("flags", [])
+                flags = manifest.get("flags", []).copy()
                 if version.get("flags"):
                     flags.extend(version["flags"])
                 metadata = {
