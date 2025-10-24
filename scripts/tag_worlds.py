@@ -35,6 +35,9 @@ BAD_DESCRIPTIONS = [
 
 
 def import_world(path, world_id: str):
+    if f"worlds.{world_id}" in sys.modules:
+        return sys.modules[f"worlds.{world_id}"]
+
     importer = zipimport.zipimporter(path)
     spec = importer.find_spec(world_id)
     assert spec, f"{path} is not a loadable module"
@@ -53,7 +56,7 @@ def import_world(path, world_id: str):
 
 
 for world in pathlib.Path("index").iterdir():
-    AutoWorldRegister.world_types = WORLD_TYPES
+    # AutoWorldRegister.world_types = WORLD_TYPES
     if world.is_dir():
         pass
     else:
@@ -111,7 +114,7 @@ for world in pathlib.Path("index").iterdir():
         path = repositories.download_remote_world(highest_remote_version, False)
 
         try:
-            AutoWorldRegister.world_types = {}
+            # AutoWorldRegister.world_types = {}
             mod = import_world(path, world.stem)
             if not mod:
                 print(f"Failed to load {world}")
