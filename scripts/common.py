@@ -137,6 +137,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                 manifest["tracker"] = manifest_data["tracker"]
             if "flags" in manifest_data:
                 manifest["flags"] = manifest_data["flags"]
+            if "igdb_id" in manifest_data:
+                manifest["igdb_id"] = manifest_data["igdb_id"]
 
     if not manifest:
         return manifests
