@@ -216,6 +216,11 @@ def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=N
         return manifest
     except json.decoder.JSONDecodeError as e:
         print(f"Failed to parse {file_path}: {e}")
+        try:
+            manifest = yaml.safe_load(file_path.read_text())
+            return manifest
+        except yaml.YAMLError as e:
+            print(f"Also failed to parse as YAML: {e}")
         raise
 
 

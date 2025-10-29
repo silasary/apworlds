@@ -7,7 +7,7 @@ import pathlib
 import sys
 
 import yaml
-from common import parse_version, update_index_from_github, repositories
+from common import parse_version, update_index_from_github, repositories, load_manifest
 from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
 
 parser = argparse.ArgumentParser()
@@ -37,11 +37,8 @@ for world in files:
         pass
     else:
         try:
-            if world.suffix == ".yaml":
-                manifest = yaml.safe_load(world.read_text())
-            elif world.suffix == ".json":
-                manifest = json.loads(world.read_text())
-            else:
+            manifest = load_manifest(world)
+            if not manifest:
                 print(f"Unknown file type {world}")
                 continue
             if manifest.get("ignore", False):
