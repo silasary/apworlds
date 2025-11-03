@@ -3,6 +3,7 @@ Metadata Extractor
 
 WARNING:  This script executes untrusted apworlds, do not run this outside of a sandboxed environment.
 """
+
 import datetime
 import importlib
 import inspect
