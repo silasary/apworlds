@@ -38,11 +38,11 @@ class CustomTomlEncoder(toml.TomlPreserveCommentEncoder):
         class _dict(dict, toml.decoder.InlineTableDict):
             pass
 
-        for v, d in o.get('versions', {}).items():
+        for v, d in o.get("versions", {}).items():
             if not isinstance(d, toml.decoder.InlineTableDict):
-                o['versions'][v] = _dict(d)
-            pass
+                o["versions"][v] = _dict(d)
         return super().dump_sections(o, sup)
+
 
 ejindex = pathlib.Path(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "Archipelago-index")))
 if not ejindex.exists():
@@ -69,11 +69,11 @@ for file in index.iterdir():
                     json.dump(remote, f)
                 continue
             versions = ej_manifest.get("versions", {})
-            r_ver = remote.get('versions', {})
+            r_ver = remote.get("versions", {})
             if not r_ver:
                 continue
-            max_ver = max(r_ver.values(), key=lambda x: datetime.datetime.fromisoformat(x.get('created_at', "2020-01-01T00:00:00Z")))
-            parsed_world_version = parse_version(max_ver['world_version'].replace(file.stem, ""))
+            max_ver = max(r_ver.values(), key=lambda x: datetime.datetime.fromisoformat(x.get("created_at", "2020-01-01T00:00:00Z")))
+            parsed_world_version = parse_version(max_ver["world_version"].replace(file.stem, ""))
             if len(parsed_world_version.release) == 2:
                 parsed_world_version._version = _Version(
                     parsed_world_version._version.epoch,
@@ -84,18 +84,17 @@ for file in index.iterdir():
                     parsed_world_version._version.local,
                 )
             verstr = str(parsed_world_version)
-            if max_ver['version_simple'] in versions:
+            if max_ver["version_simple"] in versions:
                 continue
             if verstr in versions:
                 continue
-            if any(max_ver['download_url'] == v.get('url', ej_manifest.get("default_url", "").replace("{{version}}", k)) for k, v in versions.items()):
+            if any(max_ver["download_url"] == v.get("url", ej_manifest.get("default_url", "").replace("{{version}}", k)) for k, v in versions.items()):
                 continue
-
 
             ej_manifest["versions"][verstr] = {}
             url = ej_manifest.get("default_url", "").replace("{{version}}", verstr)
-            if max_ver['download_url'] != url:
-                ej_manifest["versions"][verstr]['url'] = max_ver['download_url']
+            if max_ver["download_url"] != url:
+                ej_manifest["versions"][verstr]["url"] = max_ver["download_url"]
             with open(file, "w") as f:
                 toml.dump(ej_manifest, f, encoder=CustomTomlEncoder(preserve=True))
             print(f"Added {max_ver} to {file}")
@@ -106,7 +105,7 @@ for file in index.iterdir():
     else:  # Eijebong has the world, but we don't
         default_url = ej_manifest.get("default_url")
         if not default_url:
-            if not ej_manifest.get('supported', False):
+            if not ej_manifest.get("supported", False):
                 print(f"Skipping {game}, no default_url found")
             continue
         repo = re.match(r"^https://github.com/([\w-]+)/([\w-]+)/", default_url)
@@ -120,14 +119,13 @@ for file in index.iterdir():
             yaml.dump(game_info, f)
 
 for world, ver in outbound.items():
-    verstr = str(parse_version(ver['world_version'].replace(world, "")))
+    verstr = str(parse_version(ver["world_version"].replace(world, "")))
     print(f"Added {verstr} to {world}")
-    subprocess.run(['git', 'branch', '-f', f"{world}"], cwd=ejindex)
-    subprocess.run(['git', 'checkout', f"{world}"], cwd=ejindex)
-    subprocess.run(['git', 'add', f"index/{world}.toml"], cwd=ejindex)
-    subprocess.run(['git', 'commit', '-m', f"Update {world} to {verstr}"], cwd=ejindex)
-    subprocess.run(['git', 'checkout', 'main'], cwd=ejindex)
-    pass
+    subprocess.run(["git", "branch", "-f", f"{world}"], cwd=ejindex)
+    subprocess.run(["git", "checkout", f"{world}"], cwd=ejindex)
+    subprocess.run(["git", "add", f"index/{world}.toml"], cwd=ejindex)
+    subprocess.run(["git", "commit", "-m", f"Update {world} to {verstr}"], cwd=ejindex)
+    subprocess.run(["git", "checkout", "main"], cwd=ejindex)
 outbound = {}
 # for file in my_index.iterdir():
 #     manifest = yaml.safe_load(file.read_text())
@@ -148,4 +146,3 @@ outbound = {}
 #         toml.dump(simple, f, encoder=CustomTomlEncoder(preserve=True))
 #     print(f"Added {max_ver} to {file}")
 #     outbound[file.stem] = max_ver
-
