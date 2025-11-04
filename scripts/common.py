@@ -29,6 +29,8 @@ index = pathlib.Path("index")
 
 repositories = RepositoryManager()
 
+bad_names = yaml.safe_load(pathlib.Path("scripts", "skipped_filenames.yaml").read_text()).get("skipped_filenames", [])
+
 
 class NoWorldsFound(Exception):
     pass
@@ -65,6 +67,10 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
     else:
         releases = repo.worlds
     for release in releases:
+        if release.id in bad_names:
+            print(f"Skipping known bad world name: {release.id}")
+            continue
+
         source_url = release.source_url
         if source_url and repo.url and source_url != repo.url:
             continue
