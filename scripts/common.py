@@ -133,8 +133,9 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             container = RepoWorldContainer(file)
             try:
                 container.read()
+                version_info["has_manifest"] = True
             except InvalidDataError:
-                pass
+                version_info["has_manifest"] = False
             manifest_data = container.get_manifest()
             for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
                 if key in manifest_data:

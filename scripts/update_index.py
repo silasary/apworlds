@@ -80,6 +80,8 @@ for world in files:
                     metadata["maximum_ap_version"] = version["maximum_ap_version"]
                 if version.get("prerelease"):
                     flags.append("prerelease")
+                if not version.get("has_manifest", True):  # Assume missing data means it has one
+                    metadata.setdefault("maximum_ap_version", "0.6.99")
 
                 if flags:
                     metadata["flags"] = flags
