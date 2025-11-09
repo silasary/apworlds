@@ -16,6 +16,7 @@ import traceback_with_variables
 from common import NoWorldsFound, load_manifest, parse_version, update_index_from_github, repositories, get_or_add_github_repo, save
 from worlds import AutoWorldRegister
 from worlds.AutoWorld import World
+from worlds.apworld_manager.world_manager import ApWorldMetadata
 
 
 WORLD_TYPES = AutoWorldRegister.world_types
@@ -32,6 +33,9 @@ BAD_DESCRIPTIONS = [
     "Momodora Moonlit Farewell is a game",
     "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.\nThis allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.\nThe key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,\nthe player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent.",  # noqa: E501
     "TTYD",
+    "Randomizer methods/data for generation",
+    "ToeJam & Earl",
+    "TODO: Better docstring",
 ]
 
 
@@ -56,101 +60,112 @@ def import_world(path, world_id: str):
     return mod
 
 
-for world in pathlib.Path("index").iterdir():
-    # AutoWorldRegister.world_types = WORLD_TYPES
-    if world.is_dir():
-        pass
-    else:
-        manifest = load_manifest(world)
-        if manifest is None:
-            print(f"Failed to load manifest for {world}")
-            continue
+def tag_worlds():
+    for world in pathlib.Path("index").iterdir():
+        # AutoWorldRegister.world_types = WORLD_TYPES
+        if world.is_dir():
+            pass
+        else:
+            manifest = load_manifest(world)
+            if manifest is None:
+                print(f"Failed to load manifest for {world}")
+                continue
 
-        github = manifest.get("github")
-        if not github:
-            print(f"Skipping {world} due to missing github")
-            continue
-        license = manifest.get("license")
+            github = manifest.get("github")
+            if not github:
+                print(f"Skipping {world} due to missing github")
+                continue
+            license = manifest.get("license")
 
-        if not license:
-            repo = get_or_add_github_repo(github)
-            manifest["license"] = repo.get_license()
-            if manifest["license"]:
+            if not license:
+                if isinstance(github, list):
+                    github = github[0]
+                repo = get_or_add_github_repo(github)
+                manifest["license"] = repo.get_license()
+                if manifest["license"]:
+                    save(world, manifest)
+
+            if manifest.get("after_dark"):
+                del manifest["after_dark"]
+                manifest.setdefault("flags", []).append("after_dark")
                 save(world, manifest)
 
-        if manifest.get("after_dark"):
-            del manifest["after_dark"]
-            manifest.setdefault("flags", []).append("after_dark")
-            save(world, manifest)
+            do_analyze = not manifest.get("game") or not manifest.get("description")
 
-        do_analyze = not manifest.get("game") or not manifest.get("description")
+            if manifest.get("description") in BAD_DESCRIPTIONS or manifest.get("description", "") == manifest.get("game", ""):
+                do_analyze = True
 
-        if manifest.get("description") in BAD_DESCRIPTIONS or manifest.get("description", "") == manifest.get("game", ""):
-            do_analyze = True
-
-        if not do_analyze:
-            continue
-
-        try:
-            update_index_from_github(world, manifest, github)
-        except NoWorldsFound:
-            print(f"Failed to find {world} in {github}")
-            continue
-        versions = repositories.packages_by_id_version.get(world.stem)
-        if not versions:
-            print(f"No versions found for {world}")
-            continue
-        available_versions = []
-        for version, v in versions.items():
-            if manifest.setdefault("versions", {}).get(version, {}).get("failed_to_load"):
-                continue
-            if manifest.setdefault("versions", {}).get(version, {}).get("ignore"):
-                continue
-            available_versions.append(v)
-
-        if not available_versions:
-            print(f"No good versions available for {world}")
-            continue
-        highest_remote_version = max(available_versions, key=lambda w: parse_version(w.world_version))
-        path = repositories.download_remote_world(highest_remote_version, False)
-
-        try:
-            # AutoWorldRegister.world_types = {}
-            mod = import_world(path, world.stem)
-            if not mod:
-                print(f"Failed to load {world}")
+            if not do_analyze:
                 continue
 
-            objects = {name: obj for name, obj in inspect.getmembers(mod) if isinstance(obj, type)}
-            for name, obj in objects.items():
-                if World in inspect.getmro(obj) and obj != World:
-                    world_class = obj
-                    break
-            else:
-                print(f"No worlds found in {world}")
+            try:
+                update_index_from_github(world, manifest, github)
+            except NoWorldsFound:
+                print(f"Failed to find {world} in {github}")
                 continue
-
-            if not manifest.get("game"):
-                manifest["game"] = world_class.game
-
-            if not manifest.get("description"):
-                manifest["description"] = world_class.__doc__ or ""
-                if manifest["description"]:
-                    manifest["description"] = inspect.cleandoc(manifest["description"]).strip()
-
-            save(world, manifest)
-
-        except Exception as e:
-            if manifest.get("supported", False) and not manifest.get("versions"):
-                created = datetime.datetime.fromisoformat(highest_remote_version.created_at)
-                if datetime.datetime.now(tz=datetime.UTC) - created > datetime.timedelta(days=500):
-                    world.unlink()
+            versions = repositories.packages_by_id_version.get(world.stem)
+            if not versions:
+                print(f"No versions found for {world}")
                 continue
-            print(f"Error processing {world}: {e}")
-            manifest["versions"].get(highest_remote_version.world_version, {})["failed_to_load"] = str(e)
-            if "SpecialRange" in str(e):
-                manifest["versions"].get(highest_remote_version.world_version, {})["maximum_ap_version"] = "0.4.6"
-            with open(f"{world.stem}.log", "w") as f:
-                f.writelines([line + "\n" for line in traceback_with_variables.iter_exc_lines(e)])
-            save(world, manifest)
+            import_and_introspect_world(world, manifest, versions)
+
+
+def import_and_introspect_world(world: pathlib.Path, manifest: dict, versions: dict[str, ApWorldMetadata]):
+    available_versions = []
+    for version, v in versions.items():
+        if manifest.setdefault("versions", {}).get(version, {}).get("failed_to_load"):
             continue
+        if manifest.setdefault("versions", {}).get(version, {}).get("ignore"):
+            continue
+        available_versions.append(v)
+
+    if not available_versions:
+        print(f"No good versions available for {world}")
+        return
+    highest_remote_version = max(available_versions, key=lambda w: parse_version(w.world_version))
+    path = repositories.download_remote_world(highest_remote_version, False)
+
+    try:
+        # AutoWorldRegister.world_types = {}
+        mod = import_world(path, world.stem)
+        if not mod:
+            print(f"Failed to load {world}")
+            return
+
+        objects = {name: obj for name, obj in inspect.getmembers(mod) if isinstance(obj, type)}
+        for name, obj in objects.items():
+            if World in inspect.getmro(obj) and obj != World:
+                world_class = obj
+                break
+        else:
+            print(f"No worlds found in {world}")
+            return
+
+        if not manifest.get("game"):
+            manifest["game"] = world_class.game
+
+        if not manifest.get("description"):
+            manifest["description"] = world_class.__doc__ or ""
+            if manifest["description"]:
+                manifest["description"] = inspect.cleandoc(manifest["description"]).strip()
+
+        save(world, manifest)
+
+    except Exception as e:
+        if manifest.get("supported", False) and not manifest.get("versions"):
+            created = datetime.datetime.fromisoformat(highest_remote_version.created_at)
+            if datetime.datetime.now(tz=datetime.UTC) - created > datetime.timedelta(days=500):
+                world.unlink()
+            return
+        print(f"Error processing {world}: {e}")
+        manifest["versions"].get(highest_remote_version.world_version, {})["failed_to_load"] = str(e)
+        if "SpecialRange" in str(e):
+            manifest["versions"].get(highest_remote_version.world_version, {})["maximum_ap_version"] = "0.4.6"
+        with open(f"{world.stem}.log", "w") as f:
+            f.writelines([line + "\n" for line in traceback_with_variables.iter_exc_lines(e)])
+        save(world, manifest)
+        return
+
+
+if __name__ == "__main__":
+    tag_worlds()
