@@ -66,6 +66,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         releases = repositories.packages_by_id_version.get(world_id).values()
     else:
         releases = repo.worlds
+
+    done_manifest_check = False
     for release in releases:
         if release.id in bad_names:
             print(f"Skipping known bad world name: {release.id}")
@@ -124,7 +126,13 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             if lib_file:
                 version_info["lib_file"] = lib_file["browser_download_url"]
 
-        if "hash_sha256" not in manifest["versions"][release.world_version]:
+        should_download = "hash_sha256" not in manifest["versions"][release.world_version]
+        if not should_download and not done_manifest_check and "has_manifest" not in version_info:
+            # Pace ourselves on this one
+            done_manifest_check = True
+            should_download = True
+
+        if should_download:
             print(f"Downloading and hashing {release.download_url}")
             file = repositories.download_remote_world(release, False)
             with open(file, "rb") as f:
