@@ -58,7 +58,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
     repo = get_or_add_github_repo(github_url)
     for world in repo.worlds:
         repositories.all_known_package_ids.add(world.id)
-        repositories.packages_by_id_version[world.id][world.world_version] = world
+        repositories.packages_by_id_version.setdefault(world.id, {})[world.world_version] = world
 
     if file_path and world_id not in repositories.all_known_package_ids:
         raise NoWorldsFound(f"{world_id}.apworld not found in {github_url}")
@@ -189,7 +189,12 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         file_path = index / f"{name}.yaml"
         if file_path.exists():
             file_path.unlink()
-        file_path = index / f"{name}.json"
+        if name != name.lower():
+            file_path = index / f"{name}.json"
+            if file_path.exists():
+                print(f"Renaming {name} manifest to lowercase filename")
+                file_path.unlink()
+        file_path = index / f"{name.lower()}.json"
         save(file_path, manifest)
     return manifests
 
@@ -222,6 +227,8 @@ def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=N
             manifest = json.loads(file_path.read_text())
         elif (file_path := file_path.with_suffix(".yaml")).exists():
             manifest = yaml.safe_load(file_path.read_text())
+        elif (file_path := file_path.with_name(file_path.name.lower()).with_suffix(".json")).exists():
+            manifest = json.loads(file_path.read_text())
         elif github_url:
             manifest = {"game": "", "github": github_url}
             if default_flags:
