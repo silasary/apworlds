@@ -54,6 +54,10 @@ for world in files:
             meta[world.stem]["description"] = manifest.get("description", "")
             if tracker := manifest.get("tracker"):
                 meta[world.stem]["tracker"] = tracker
+            if manifest.get("upgrades_into"):
+                meta[world.stem]["upgrades_into"] = manifest["upgrades_into"]
+                if "unready" not in manifest.setdefault("flags", []):
+                    manifest["flags"].append("unready")
 
             for version in versions:
                 if version.get("ignore", False):
