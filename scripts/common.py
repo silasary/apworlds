@@ -148,6 +148,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
                 if key in manifest_data:
                     manifest["versions"][release.world_version][key] = manifest_data[key]
+                    if key == "world_version":
+                        manifest["versions"][release.world_version]["version_simple"] = parse_version(manifest_data[key]).base_version
             if "tracker" in manifest_data:
                 manifest["tracker"] = manifest_data["tracker"]
             if "flags" in manifest_data:
