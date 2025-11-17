@@ -17,6 +17,7 @@ args = parser.parse_args()
 
 worlds = []
 meta = defaultdict(dict)
+manifest_ready = defaultdict(bool)
 
 last_checked = {}
 
@@ -52,6 +53,8 @@ for world in files:
             versions = list(manifest.get("versions", {}).values())
             meta[world.stem]["game"] = manifest.get("game", "")
             meta[world.stem]["description"] = manifest.get("description", "")
+            manifest_ready[world.stem] = any(v.get("has_manifest", False) for v in versions)
+
             if tracker := manifest.get("tracker"):
                 meta[world.stem]["tracker"] = tracker
             if manifest.get("upgrades_into"):
@@ -123,6 +126,15 @@ output = {
 with open("index.json", "w") as f:
     f.write(json.dumps(output, indent=2))
 
+with open("report.json", "w") as f:
+    report = {
+        "total_repositories": len(repositories.repositories),
+        "total_packages": len(repositories.all_known_package_ids),
+        "total_versions": len(worlds),
+        "manifest_ready": {k: v for k, v in manifest_ready.items()},
+    }
+    f.write(json.dumps(report, indent=2))
+
 if args.add_unknown:
     for id in repositories.all_known_package_ids:
         manifest = pathlib.Path("index") / f"{id}.yaml"
@@ -132,3 +144,4 @@ if args.add_unknown:
             print(f"Missing {manifest}")
 
 print(f"Scanned {len(repositories.repositories)} repositories, found {len(repositories.all_known_package_ids)} packages with a total of {len(worlds)} versions")
+print(f"{len([k for k, v in manifest_ready.items() if v])}/{len(manifest_ready)} worlds have a manifest.")
