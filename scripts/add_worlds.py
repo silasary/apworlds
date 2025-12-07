@@ -6,6 +6,7 @@ from time import sleep
 import requests
 import csv
 
+import common
 import yaml
 from common import get_or_add_github_repo, update_index_from_github, index
 from worlds.apworld_manager.world_manager import RepositoryManager
@@ -30,6 +31,7 @@ if args.url:
     queue.extend(args.url)
 
 failed: list[str] = []
+ad_games: list[str] = []
 
 if args.scan_forks:
     parents = ["https://github.com/ArchipelagoMW/Archipelago"]
@@ -60,6 +62,8 @@ if args.spreadsheet:
             wheretofind = row["Where can you get the APWorld and Client?"]
             repolinks = re.findall(REPO_REGEX, wheretofind)
             queue.extend(repolinks)
+        if "After Dark" in row["Notes"] and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
+            ad_games.append(row["Game"].strip())
 
 if not queue:
     with open("queue.txt", "w") as f:
@@ -87,6 +91,9 @@ for url in queue.copy():
     manifests = update_index_from_github(None, {}, github_url=github, default_flags=default_flags)
     for world, manifest in manifests.items():
         print(f"Added {world} from {github}")
+        if manifest.get("game") in ad_games and "after_dark" not in manifest.setdefault("flags", []):
+            manifest["flags"].append("after_dark")
+            common.save(world=pathlib.Path("index", world + ".json"), manifest=manifest)
     if not manifests:
         failed.append(github)
 

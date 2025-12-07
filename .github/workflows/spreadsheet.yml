@@ -3,7 +3,7 @@ name: Scan Forks
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: '0 5 1 * *'
+    - cron: '0 2 * * 1'
 
 jobs:
   update:
@@ -34,7 +34,7 @@ jobs:
         cmd: yq -i '.apworld_manager.github_token = "${{ secrets.GITHUB_TOKEN }}"' Archipelago/host.yaml
     - name: Scan Forks
       run: |
-        python3 scripts/add_worlds.py --scan-forks --unready
+        python3 scripts/add_worlds.py --spreadsheet
         python3 scripts/tag_worlds.py
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v7
