@@ -29,7 +29,7 @@ args = parser.parse_args()
 if args.url:
     queue.extend(args.url)
 
-failed = []
+failed: list[str] = []
 
 if args.scan_forks:
     parents = ["https://github.com/ArchipelagoMW/Archipelago"]

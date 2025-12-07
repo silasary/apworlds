@@ -67,7 +67,7 @@ def tag_worlds():
             pass
         else:
             manifest = load_manifest(world)
-            if manifest is None:
+            if not manifest:
                 print(f"Failed to load manifest for {world}")
                 continue
 

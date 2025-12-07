@@ -6,6 +6,7 @@ import os
 import pathlib
 import sys
 from pathlib import Path
+import zipfile
 
 import yaml
 
@@ -141,6 +142,22 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                 hash = hashlib.sha256(f.read()).hexdigest()
             manifest["versions"][release.world_version]["hash_sha256"] = hash
             container = RepoWorldContainer(file)
+            with zipfile.ZipFile(file, "r") as zf:
+                directories = [f.name for f in zipfile.Path(zf).iterdir() if f.is_dir()]
+                if len(directories) == 1 and directories[0] in file:
+                    module_name = directories[0]
+                    if module_name != release.id:
+                        print(f"Module name {module_name} does not match expected {release.id}")
+                        del manifests[release.id]
+                        release.data["metadata"]["id"] = module_name
+                        real_manifest = manifests.get(module_name, None) or load_manifest(index / f"{module_name}.json", github_url, default_flags)
+                        if real_manifest.setdefault("versions", {}).get(release.world_version):
+                            continue
+                        real_manifest["versions"][release.world_version] = manifest["versions"][release.world_version]
+                        manifest = real_manifest
+                        if module_name not in manifests:
+                            manifests[module_name] = real_manifest
+
             try:
                 container.read()
                 version_info["has_manifest"] = True
@@ -220,7 +237,7 @@ def parse_version_from_release(release: dict, raw_version: str, prefer_version_f
     return version_number
 
 
-def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=None) -> dict | None:
+def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=None) -> dict:
     try:
         if (file_path := file_path.with_suffix(".json")).exists():
             manifest = json.loads(file_path.read_text())
@@ -231,7 +248,7 @@ def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=N
             if default_flags:
                 manifest["flags"] = default_flags
         else:
-            manifest = None
+            manifest = {}
         return manifest
     except json.decoder.JSONDecodeError as e:
         print(f"Failed to parse {file_path}: {e}")
