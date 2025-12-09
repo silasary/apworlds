@@ -50,7 +50,7 @@ if args.scan_forks:
             forks = repo.fetch(repo.url + "/forks?per_page=100&page=" + str(page))
 
 if args.spreadsheet:
-    SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/1iuzDTOAvdoNe8Ne8i461qGNucg5OuEoF-Ikqs8aUQZw/export?gid=58422002&single=true&format=csv"
+    SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/1iuzDTOAvdoNe8Ne8i461qGNucg5OuEoF-Ikqs8aUQZw/export?gid=58422002&format=csv"
     response = requests.get(SPREADSHEET_URL)
     response.raise_for_status()
     all_rows = response.text.splitlines()

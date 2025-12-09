@@ -1,4 +1,4 @@
-name: Scan Forks
+name: Scan Spreadsheet
 
 on:
   workflow_dispatch: {}
@@ -32,7 +32,7 @@ jobs:
       uses: mikefarah/yq@v4.45.1
       with:
         cmd: yq -i '.apworld_manager.github_token = "${{ secrets.GITHUB_TOKEN }}"' Archipelago/host.yaml
-    - name: Scan Forks
+    - name: Scan Spreadsheet
       run: |
         python3 scripts/add_worlds.py --spreadsheet
         python3 scripts/tag_worlds.py
@@ -40,6 +40,6 @@ jobs:
       uses: peter-evans/create-pull-request@v7
       with:
         branch: new-worlds
-        title: Scan Forks
+        title: Scan Spreadsheet
         add-paths: 'index/*.json'
         reviewers: silasary
