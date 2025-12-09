@@ -49,19 +49,23 @@ if args.scan_forks:
             page += 1
             forks = repo.fetch(repo.url + "/forks?per_page=100&page=" + str(page))
 
-if args.spreadsheet:
-    SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/1iuzDTOAvdoNe8Ne8i461qGNucg5OuEoF-Ikqs8aUQZw/export?gid=58422002&format=csv"
-    response = requests.get(SPREADSHEET_URL)
-    response.raise_for_status()
-    all_rows = response.text.splitlines()
-    while all_rows[0].split(",")[0] != "Game":
-        all_rows.pop(0)
-    rows = csv.DictReader(all_rows)
-    for row in rows:
-        if row["Where can you get the APWorld and Client?"].strip():
-            wheretofind = row["Where can you get the APWorld and Client?"]
+if args.spreadsheet or True:
+    all_rows = []
+    tabs = [58422002, 857819707]
+    for gid in tabs:
+        SPREADSHEET_URL = f"https://docs.google.com/spreadsheets/d/1iuzDTOAvdoNe8Ne8i461qGNucg5OuEoF-Ikqs8aUQZw/export?gid={gid}&format=csv"
+        response = requests.get(SPREADSHEET_URL)
+        response.raise_for_status()
+        rows = response.text.splitlines()
+        while rows[0].split(",")[0] != "Game":
+            rows.pop(0)
+        parsed = csv.DictReader(rows)
+        all_rows.extend(parsed)
+    for row in all_rows:
+        if wheretofind := (row.get("Where can you get the APWorld and Client?", "").strip() or row.get("Where can you get the APWorld or program?", "").strip()):
             repolinks = re.findall(REPO_REGEX, wheretofind)
             queue.extend(repolinks)
+
         if "After Dark" in row["Notes"] and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
             ad_games.append(row["Game"].strip())
 

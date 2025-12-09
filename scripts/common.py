@@ -197,15 +197,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         manifest["flags"] = manifest["flags"].split(",")
 
     for name, manifest in manifests.items():
-        if github_url not in manifest.get("github", []):
-            versions = [v for v in manifest.get("versions", {}).values()]
-            versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)
-            source_url = versions[0].get("source_url").replace("https://api.github.com/repos", "https://github.com") if versions else None
-            if source_url and source_url == github_url:
-                print(f"Adding {source_url} to {name} manifest")
-                if isinstance(manifest.get("github", []), str):
-                    manifest["github"] = [manifest["github"]]
-                manifest["github"].append(source_url)
+        check_manifest_has_github_url(manifest, github_url, name)
 
         file_path = index / f"{name}.yaml"
         if file_path.exists():
@@ -213,6 +205,23 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         file_path = index / f"{name}.json"
         save(file_path, manifest)
     return manifests
+
+
+def check_manifest_has_github_url(manifest, github_url, name):
+    if github_url not in manifest.get("github", []):
+        versions = [v for v in manifest.get("versions", {}).values()]
+        versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)
+        source_url = versions[0].get("source_url").replace("https://api.github.com/repos", "https://github.com") if versions else None
+        if source_url and source_url == github_url:
+            print(f"Adding {source_url} to {name} manifest")
+            if isinstance(manifest.get("github", []), str):
+                if manifest["github"].startswith("https://api.github.com/repos"):
+                    manifest["github"] = manifest["github"].replace("https://api.github.com/repos", "https://github.com")
+                if manifest["github"].lower() == source_url.lower():
+                    return
+
+                manifest["github"] = [manifest["github"]]
+            manifest["github"].append(source_url)
 
 
 def parse_version_from_release(release: dict, raw_version: str, prefer_version_from_title: bool) -> Version:
