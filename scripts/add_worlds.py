@@ -49,7 +49,7 @@ if args.scan_forks:
             page += 1
             forks = repo.fetch(repo.url + "/forks?per_page=100&page=" + str(page))
 
-if args.spreadsheet or True:
+if args.spreadsheet:
     all_rows = []
     tabs = [58422002, 857819707]
     for gid in tabs:
