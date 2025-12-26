@@ -56,6 +56,9 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         world_id = file_path.stem
         manifests[world_id] = manifest
 
+    if "world_id" in manifest:
+        world_id = manifest["world_id"]
+
     repo = get_or_add_github_repo(github_url)
     for world in repo.worlds:
         repositories.all_known_package_ids.add(world.id)
@@ -199,6 +202,18 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
     for name, manifest in manifests.items():
         check_manifest_has_github_url(manifest, github_url, name)
 
+        if not name.islower():
+            file_path = index / f"{name}.yaml"
+            if file_path.exists():
+                file_path.unlink()
+            file_path = index / f"{name}.json"
+            if file_path.exists():
+                print(f"Renaming {name}.json to {name.lower()}.json")
+                file_path.unlink()
+            if "world_id" not in manifest:
+                manifest["world_id"] = name
+            name = name.lower()
+
         file_path = index / f"{name}.yaml"
         if file_path.exists():
             file_path.unlink()
@@ -252,6 +267,10 @@ def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=N
             manifest = json.loads(file_path.read_text())
         elif (file_path := file_path.with_suffix(".yaml")).exists():
             manifest = yaml.safe_load(file_path.read_text())
+        elif (file_path := file_path.with_suffix(".yml")).exists():
+            manifest = yaml.safe_load(file_path.read_text())
+        elif (file_path := file_path.with_suffix(".json").with_name(file_path.name.lower())).exists():
+            manifest = json.loads(file_path.read_text())
         elif github_url:
             manifest = {"game": "", "github": github_url}
             if default_flags:

@@ -34,6 +34,7 @@ def save_last_checked():
 files = list(pathlib.Path("index").iterdir())
 files.sort(key=lambda x: x.stem.lower())
 for world in files:
+    world_id = world.stem
     if world.is_dir():
         pass
     else:
@@ -44,21 +45,24 @@ for world in files:
                 continue
             if manifest.get("ignore", False):
                 continue
+            if "world_id" in manifest:
+                world_id = manifest["world_id"]
             github = manifest.get("github")
-            stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, "2000-01-01T00:00:00+00:00")) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(hours=1)
+
+            stale = datetime.datetime.fromisoformat(last_checked.setdefault(world_id, "2000-01-01T00:00:00+00:00")) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(hours=1)
             if stale and github and not args.no_refresh:
                 update_index_from_github(world, manifest, github)
-                last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
+                last_checked[world_id] = datetime.datetime.now(tz=datetime.UTC).isoformat()
                 save_last_checked()
             versions = list(manifest.get("versions", {}).values())
-            meta[world.stem]["game"] = manifest.get("game", "")
-            meta[world.stem]["description"] = manifest.get("description", "")
-            manifest_ready[world.stem] = any(v.get("has_manifest", False) for v in versions)
+            meta[world_id]["game"] = manifest.get("game", "")
+            meta[world_id]["description"] = manifest.get("description", "")
+            manifest_ready[world_id] = any(v.get("has_manifest", False) for v in versions)
 
             if tracker := manifest.get("tracker"):
-                meta[world.stem]["tracker"] = tracker
+                meta[world_id]["tracker"] = tracker
             if manifest.get("upgrades_into"):
-                meta[world.stem]["upgrades_into"] = manifest["upgrades_into"]
+                meta[world_id]["upgrades_into"] = manifest["upgrades_into"]
                 if "unready" not in manifest.setdefault("flags", []):
                     manifest["flags"].append("unready")
 
@@ -66,15 +70,15 @@ for world in files:
                 if version.get("ignore", False):
                     continue
                 tag_str = version["world_version"]
-                if tag_str.lower().startswith(world.stem):
-                    tag_str = tag_str[len(world.stem) :].lstrip("-_")
+                if tag_str.lower().startswith(world_id):
+                    tag_str = tag_str[len(world_id) :].lstrip("-_")
                 world_version = parse_version(tag_str)
                 flags = manifest.get("flags", []).copy()
                 if version.get("flags"):
                     flags.extend(version["flags"])
                 metadata = {
                     "game": manifest.get("game", ""),  # deprecated
-                    "id": world.stem,
+                    "id": world_id,
                     "world_version": str(world_version),
                     "tag_version": version["world_version"],
                     "created_at": version.get("created_at"),
@@ -106,14 +110,14 @@ for world in files:
                 worlds.append(entry)
 
                 # if not version.get('source_url'):
-                #     print(f"Missing source_url for {world.stem} {version.get('world_version')}")
+                #     print(f"Missing source_url for {world_id} {version.get('world_version')}")
         except GithubRateLimitExceeded as e:
             print(f"GitHub rate limit exceeded: {e}")
             save_last_checked()
             sys.exit(1)
             break
         except Exception as e:
-            print(f"Error updating {world.stem}: {e}")
+            print(f"Error updating {world_id}: {e}")
 
 save_last_checked()
 
