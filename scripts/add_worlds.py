@@ -88,6 +88,7 @@ if args.dark:
 if args.unready:
     default_flags["unready"] = True
 
+queue = list(set(queue))
 for url in queue.copy():
     repositories = RepositoryManager()
     github = url.strip()

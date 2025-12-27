@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 import zipfile
 
+import requests
 import yaml
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
@@ -137,7 +138,14 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
 
         if should_download:
             print(f"Downloading and hashing {release.download_url}")
-            file = repositories.download_remote_world(release, False)
+            try:
+                file = repositories.download_remote_world(release, False)
+            except requests.exceptions.HTTPError as e:
+                print(f"Failed to download {release.download_url}: {e}")
+                if e.response.status_code == 404:
+                    if release.world_version in manifest.get("versions", {}):
+                        del manifest["versions"][release.world_version]
+                continue
             with open(file, "rb") as f:
                 hash = hashlib.sha256(f.read()).hexdigest()
             manifest["versions"][release.world_version]["hash_sha256"] = hash
@@ -222,6 +230,8 @@ def check_manifest_has_github_url(manifest, github_url, name):
 
                 manifest["github"] = [manifest["github"]]
             manifest["github"].append(source_url)
+    if isinstance(manifest.get("github", ""), list) and len(manifest["github"]) == 1:
+        manifest["github"] = manifest["github"][0]
 
 
 def parse_version_from_release(release: dict, raw_version: str, prefer_version_from_title: bool) -> Version:
@@ -278,7 +288,7 @@ def get_or_add_github_repo(github_url):
             repo = added
             break
     else:
-        repo = repositories.add_github_repository(github_url)
+        repo = repositories.add_repo(github_url)
         repo.refresh()
     return repo
 
