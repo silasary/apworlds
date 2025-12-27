@@ -6,24 +6,23 @@ import os
 import pathlib
 import sys
 from pathlib import Path
+from typing import Any
 import zipfile
 
 import requests
 import yaml
+import bs4
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
 sys.path.append("Archipelago")
 sys.path.append("Archipelago/lib")
-import Utils  # noqa
-
-Utils.local_path.cached_path = os.path.dirname(os.path.abspath(Utils.__file__))
 import ModuleUpdate  # noqa: E402
 
 ModuleUpdate.update(yes=True)
 
 from worlds.Files import InvalidDataError  # noqa: E402
-from worlds.apworld_manager.world_manager import GithubRepository, RepositoryManager, parse_version  # noqa: E402
+from worlds.apworld_manager.world_manager import ApWorldMetadata, GithubRepository, RemoteWorldSource, RepositoryManager, parse_version  # noqa: E402
 from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version  # noqa: E402
 from worlds.apworld_manager.container import RepoWorldContainer  # noqa: E402
 
@@ -71,7 +70,6 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
     else:
         releases = repo.worlds
 
-    done_manifest_check = False
     for release in releases:
         if release.id in bad_names:
             print(f"Skipping known bad world name: {release.id}")
@@ -130,63 +128,16 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             if lib_file:
                 version_info["lib_file"] = lib_file["browser_download_url"]
 
-        should_download = "hash_sha256" not in manifest["versions"][release.world_version]
-        if not should_download and not done_manifest_check and "has_manifest" not in version_info:
-            # Pace ourselves on this one
-            done_manifest_check = True
-            should_download = True
-
-        if should_download:
-            print(f"Downloading and hashing {release.download_url}")
-            try:
-                file = repositories.download_remote_world(release, False)
-            except requests.exceptions.HTTPError as e:
-                print(f"Failed to download {release.download_url}: {e}")
-                if e.response.status_code == 404:
-                    if release.world_version in manifest.get("versions", {}):
-                        del manifest["versions"][release.world_version]
-                continue
-            with open(file, "rb") as f:
-                hash = hashlib.sha256(f.read()).hexdigest()
-            manifest["versions"][release.world_version]["hash_sha256"] = hash
-            container = RepoWorldContainer(file)
-            with zipfile.ZipFile(file, "r") as zf:
-                directories = [f.name for f in zipfile.Path(zf).iterdir() if f.is_dir()]
-                if len(directories) == 1 and directories[0] in file:
-                    module_name = directories[0]
-                    if module_name != release.id:
-                        print(f"Module name {module_name} does not match expected {release.id}")
-                        del manifests[release.id]
-                        release.data["metadata"]["id"] = module_name
-                        real_manifest = manifests.get(module_name, None) or load_manifest(index / f"{module_name}.json", github_url, default_flags)
-                        if real_manifest.setdefault("versions", {}).get(release.world_version):
-                            continue
-                        real_manifest["versions"][release.world_version] = manifest["versions"][release.world_version]
-                        manifest = real_manifest
-                        if module_name not in manifests:
-                            manifests[module_name] = real_manifest
-
-            try:
-                container.read()
-                version_info["has_manifest"] = True
-            except InvalidDataError:
-                version_info["has_manifest"] = False
-            manifest_data = container.get_manifest()
-            for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
-                if key in manifest_data:
-                    manifest["versions"][release.world_version][key] = manifest_data[key]
-                    if key == "world_version":
-                        manifest["versions"][release.world_version]["version_simple"] = parse_version(manifest_data[key]).base_version
-            if "tracker" in manifest_data:
-                manifest["tracker"] = manifest_data["tracker"]
-            if "flags" in manifest_data:
-                manifest["flags"] = manifest_data["flags"]
-            if "igdb_id" in manifest_data:
-                manifest["igdb_id"] = manifest_data["igdb_id"]
+        download_and_hash_manifest(manifest, default_flags, manifests, release)
 
     if not manifest:
         return manifests
 
+    save_manifests(github_url, manifests)
+    return manifests
+
+
+def cleanup_manifest(manifest):
     if "id" in manifest:
         del manifest["id"]
     if "metadata" in manifest:
@@ -204,14 +155,119 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
     elif isinstance(manifest.get("flags", []), str):
         manifest["flags"] = manifest["flags"].split(",")
 
+
+def save_manifests(github_url, manifests):
     for name, manifest in manifests.items():
-        check_manifest_has_github_url(manifest, github_url, name)
+        cleanup_manifest(manifest)
+        if github_url:
+            check_manifest_has_github_url(manifest, github_url, name)
 
         file_path = index / f"{name}.yaml"
         if file_path.exists():
             file_path.unlink()
         file_path = index / f"{name}.json"
         save(file_path, manifest)
+
+
+def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | None, manifests: dict[str, dict], release: ApWorldMetadata) -> None:
+    version_info = manifest["versions"][release.world_version]
+    should_download = "hash_sha256" not in manifest["versions"][release.world_version]
+    if "has_manifest" not in version_info:
+        should_download = True
+
+    if should_download:
+        print(f"Downloading and hashing {release.download_url}")
+        try:
+            file = repositories.download_remote_world(release, False)
+        except requests.exceptions.HTTPError as e:
+            print(f"Failed to download {release.download_url}: {e}")
+            if e.response.status_code == 404:
+                if release.world_version in manifest.get("versions", {}):
+                    del manifest["versions"][release.world_version]
+                    return
+            raise
+        with open(file, "rb") as f:
+            hash = hashlib.sha256(f.read()).hexdigest()
+        manifest["versions"][release.world_version]["hash_sha256"] = hash
+        container = RepoWorldContainer(file)
+        with zipfile.ZipFile(file, "r") as zf:
+            directories = [f.name for f in zipfile.Path(zf).iterdir() if f.is_dir()]
+            if len(directories) == 1 and directories[0] in file:
+                module_name = directories[0]
+                if module_name != release.id:
+                    print(f"Module name {module_name} does not match expected {release.id}")
+                    del manifests[release.id]
+                    release.data["metadata"]["id"] = module_name
+                    real_manifest = manifests.get(module_name, None) or load_manifest(index / f"{module_name}.json", "", default_flags)
+                    if real_manifest.setdefault("versions", {}).get(release.world_version):
+                        return
+                    real_manifest["versions"][release.world_version] = manifest["versions"][release.world_version]
+                    manifest = real_manifest
+                    if module_name not in manifests:
+                        manifests[module_name] = real_manifest
+
+        try:
+            container.read()
+            version_info["has_manifest"] = True
+        except InvalidDataError:
+            version_info["has_manifest"] = False
+        manifest_data = container.get_manifest()
+        for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
+            if key in manifest_data:
+                manifest["versions"][release.world_version][key] = manifest_data[key]
+                if key == "world_version":
+                    manifest["versions"][release.world_version]["version_simple"] = parse_version(manifest_data[key]).base_version
+        if "tracker" in manifest_data:
+            manifest["tracker"] = manifest_data["tracker"]
+        if "flags" in manifest_data:
+            manifest["flags"] = manifest_data["flags"]
+        if "igdb_id" in manifest_data:
+            manifest["igdb_id"] = manifest_data["igdb_id"]
+
+
+def update_index_from_changelog(file_path: Path | None, manifest: dict, changelog: str) -> dict[str, dict]:
+    manifests: dict[str, dict] = {}
+    world_id = file_path.stem if file_path else ""
+    if manifest and world_id:
+        manifests[world_id] = manifest
+    response = requests.get(changelog)
+    response.raise_for_status()
+    soup = bs4.BeautifulSoup(response.text, "html.parser")
+    links = soup.find_all("a", href=True)
+    worlds = [link for link in links if link["href"].endswith(".apworld")]
+    for world_link in worlds:
+        apworld_url = world_link["href"]
+        world_id = pathlib.Path(apworld_url).stem
+        manifest = manifests.setdefault(world_id, {})
+        versions = manifest.setdefault("versions", {})
+        # The tag is one directory up from the .apworld file
+        tag_version = pathlib.Path(apworld_url).parent.name
+        v = parse_version(tag_version)
+        if tag_version not in versions:
+            versions[tag_version] = {
+                "download_url": apworld_url,
+                "world_version": str(v),
+                "source_url": changelog,
+                "size": 0,
+            }
+
+        release = ApWorldMetadata(
+            RemoteWorldSource.REMOTE,
+            {
+                "metadata": {
+                    "id": world_id,
+                    "world_version": tag_version,
+                    "title": "",
+                    "size": 0,
+                },
+                "source_url": changelog,
+                "world": apworld_url,
+                "hash_sha256": versions[tag_version].get("hash_sha256"),
+            },
+        )
+        download_and_hash_manifest(manifest, None, manifests, release)
+
+    save_manifests(None, manifests)
     return manifests
 
 

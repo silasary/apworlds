@@ -7,7 +7,7 @@ import pathlib
 import sys
 
 import yaml
-from common import parse_version, update_index_from_github, repositories, load_manifest
+from common import parse_version, update_index_from_github, repositories, load_manifest, update_index_from_changelog
 from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
 
 parser = argparse.ArgumentParser()
@@ -45,11 +45,17 @@ for world in files:
             if manifest.get("ignore", False):
                 continue
             github = manifest.get("github")
-            stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, "2000-01-01T00:00:00+00:00")) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(hours=1)
+            changelog = manifest.get("changelog")
+            stale = datetime.datetime.fromisoformat(last_checked.setdefault(world.stem, "2000-01-01T00:00:00+00:00")) < datetime.datetime.now(tz=datetime.UTC) - datetime.timedelta(hours=4)
             if stale and github and not args.no_refresh:
                 update_index_from_github(world, manifest, github)
                 last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
                 save_last_checked()
+            if stale and changelog and not args.no_refresh:
+                update_index_from_changelog(world, manifest, changelog)
+                last_checked[world.stem] = datetime.datetime.now(tz=datetime.UTC).isoformat()
+                save_last_checked()
+
             versions = list(manifest.get("versions", {}).values())
             meta[world.stem]["game"] = manifest.get("game", "")
             meta[world.stem]["description"] = manifest.get("description", "")
