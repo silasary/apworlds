@@ -1,5 +1,22 @@
 # {{game}}
 
 ## Downloads
-- {{latest_version.download_url}}
-- All Versions: <a href="downloads.html">here</a>
+- <a href="{{latest_version.download_url}}">Latest Version ({{latest_version.world_version}})</a>
+- <a href="downloads.html">View all versions</a>
+
+## Game Information
+{{#game_info}}
+- <a href="{{.}}">{{.}}</a>
+{{/game_info}}
+
+## Setup Guide
+{{#setup_guides}}
+- <a href="{{.}}">{{.}}</a>
+{{/setup_guides}}
+
+{{#has_other_files}}
+## Other Documentation files
+{{#other_files}}
+- <a href="{{.}}">{{.}}</a>
+{{/other_files}}
+{{/has_other_files}}

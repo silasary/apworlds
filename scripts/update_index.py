@@ -5,6 +5,7 @@ import json
 import os
 import pathlib
 import sys
+import traceback
 
 import yaml
 from common import parse_version, update_index_from_github, repositories, load_manifest, update_index_from_changelog
@@ -125,6 +126,7 @@ for world in files:
             break
         except Exception as e:
             print(f"Error updating {world.stem}: {e}")
+            traceback.print_exc()
 
 save_last_checked()
 
