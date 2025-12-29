@@ -8,7 +8,7 @@ import sys
 import traceback
 
 import yaml
-from common import parse_version, update_index_from_github, repositories, load_manifest, update_index_from_changelog
+from common import NoWorldsFound, parse_version, update_index_from_github, repositories, load_manifest, update_index_from_changelog
 from write_docs import write_docs
 from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
 
@@ -124,6 +124,8 @@ for world in files:
             save_last_checked()
             sys.exit(1)
             break
+        except NoWorldsFound as e:
+            print(f"Error updating {world.stem}: {e}")
         except Exception as e:
             print(f"Error updating {world.stem}: {e}")
             traceback.print_exc()

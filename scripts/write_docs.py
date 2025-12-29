@@ -4,8 +4,11 @@ from pathlib import Path
 from typing import Any
 import pystache
 import zipfile
+import langcodes
 
-from common import construct_metadata_release, repositories
+import requests
+
+from common import construct_metadata_release, repositories, save as save_manifest
 
 with open("templates/downloads_template.mustache") as f:
     downloads_template = f.read()
@@ -14,6 +17,8 @@ with open("templates/index_template.mustache") as f:
 
 
 def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[str, Any]) -> None:
+    if not versions:
+        return
     lower_stem = world_stem.lower()
     os.makedirs(f"docs/{lower_stem}", exist_ok=True)
 
@@ -34,12 +39,14 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
 
     pages = [Path(f).stem for f in filenames]
 
-    setup_guides = [f for f in pages if f.startswith("setup")]
-    game_info = f"en_{manifest.get('game','')}"
-    if game_info not in pages:
-        game_info = None
+    def langfile(file_stem: str, front: bool) -> dict[str, str]:
+        lang = langcodes.Language.get(file_stem.split("_")[0 if front else 1]).display_name()
+        return {"file": file_stem, "lang": lang}
 
-    other_files = sorted(set(pages) - set(setup_guides) - {game_info})
+    setup_guides = [langfile(f, False) for f in pages if f.startswith("setup")]
+    game_infos = [langfile(f, True) for f in pages if f.endswith(f"_{manifest.get('game','')}")]
+
+    other_files = sorted(set(pages) - set(i["file"] for i in setup_guides) - set(i["file"] for i in game_infos))
 
     index_output = pystache.render(
         index_template,
@@ -49,7 +56,7 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
             "game": manifest.get("game", ""),
             "manifest": manifest,
             "setup_guides": setup_guides,
-            "game_info": game_info,
+            "game_info": game_infos,
             "other_files": other_files,
             "has_other_files": len(other_files) > 0,
         },
@@ -61,7 +68,15 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
 
 def copy_documentation(world_stem: str, versions: list[dict[str, Any]], manifest: dict[str, Any], lower_stem: str) -> list[str]:
     release = construct_metadata_release(world_stem, manifest, versions[0])
-    path = repositories.download_remote_world(release, False)
+    try:
+        path = repositories.download_remote_world(release, False)
+    except requests.exceptions.HTTPError as e:
+        if e.response.status_code == 404:
+            del manifest["versions"][versions[0]["world_version"]]
+            save_manifest(Path("index") / f"{world_stem}.json", manifest)
+            return []
+        print(f"Failed to download {world_stem} for documentation: {e}")
+        return []
     filenames = []
     with zipfile.ZipFile(path, "r") as zf:
         directories = [f for f in zipfile.Path(zf).iterdir() if f.is_dir()]
