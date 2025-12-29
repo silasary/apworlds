@@ -8,6 +8,7 @@ import sys
 
 import yaml
 from common import parse_version, update_index_from_github, repositories, load_manifest, update_index_from_changelog
+from write_docs import write_docs
 from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
 
 parser = argparse.ArgumentParser()
@@ -33,6 +34,7 @@ def save_last_checked():
 
 files = list(pathlib.Path("index").iterdir())
 files.sort(key=lambda x: x.stem.lower())
+
 for world in files:
     if world.is_dir():
         pass
@@ -57,6 +59,7 @@ for world in files:
                 save_last_checked()
 
             versions = list(manifest.get("versions", {}).values())
+            versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)
             meta[world.stem]["game"] = manifest.get("game", "")
             meta[world.stem]["description"] = manifest.get("description", "")
             manifest_ready[world.stem] = any(v.get("has_manifest", False) for v in versions)
@@ -79,7 +82,7 @@ for world in files:
                 if version.get("flags"):
                     flags.extend(version["flags"])
                 metadata = {
-                    "game": manifest.get("game", ""),  # deprecated
+                    "game": "",  # deprecated
                     "id": world.stem,
                     "world_version": str(world_version),
                     "tag_version": version["world_version"],
@@ -113,6 +116,8 @@ for world in files:
 
                 # if not version.get('source_url'):
                 #     print(f"Missing source_url for {world.stem} {version.get('world_version')}")
+
+            write_docs(world.stem, versions, manifest)
         except GithubRateLimitExceeded as e:
             print(f"GitHub rate limit exceeded: {e}")
             save_last_checked()

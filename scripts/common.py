@@ -170,8 +170,9 @@ def save_manifests(github_url, manifests):
 
 
 def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | None, manifests: dict[str, dict], release: ApWorldMetadata) -> None:
-    version_info = manifest["versions"][release.world_version]
-    should_download = "hash_sha256" not in manifest["versions"][release.world_version]
+    tag_version = release.world_version
+    version_info = manifest["versions"][tag_version]
+    should_download = "hash_sha256" not in version_info
     if "has_manifest" not in version_info:
         should_download = True
 
@@ -182,13 +183,13 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
         except requests.exceptions.HTTPError as e:
             print(f"Failed to download {release.download_url}: {e}")
             if e.response.status_code == 404:
-                if release.world_version in manifest.get("versions", {}):
-                    del manifest["versions"][release.world_version]
+                if tag_version in manifest.get("versions", {}):
+                    del manifest["versions"][tag_version]
                     return
             raise
         with open(file, "rb") as f:
             hash = hashlib.sha256(f.read()).hexdigest()
-        manifest["versions"][release.world_version]["hash_sha256"] = hash
+        version_info["hash_sha256"] = hash
         container = RepoWorldContainer(file)
         with zipfile.ZipFile(file, "r") as zf:
             directories = [f.name for f in zipfile.Path(zf).iterdir() if f.is_dir()]
@@ -199,9 +200,9 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
                     del manifests[release.id]
                     release.data["metadata"]["id"] = module_name
                     real_manifest = manifests.get(module_name, None) or load_manifest(index / f"{module_name}.json", "", default_flags)
-                    if real_manifest.setdefault("versions", {}).get(release.world_version):
+                    if real_manifest.setdefault("versions", {}).get(tag_version):
                         return
-                    real_manifest["versions"][release.world_version] = manifest["versions"][release.world_version]
+                    real_manifest["versions"][tag_version] = manifest["versions"][tag_version]
                     manifest = real_manifest
                     if module_name not in manifests:
                         manifests[module_name] = real_manifest
@@ -214,9 +215,9 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
         manifest_data = container.get_manifest()
         for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
             if key in manifest_data:
-                manifest["versions"][release.world_version][key] = manifest_data[key]
+                version_info[key] = manifest_data[key]
                 if key == "world_version":
-                    manifest["versions"][release.world_version]["version_simple"] = parse_version(manifest_data[key]).base_version
+                    version_info["version_simple"] = parse_version(manifest_data[key]).base_version
         if "tracker" in manifest_data:
             manifest["tracker"] = manifest_data["tracker"]
         if "flags" in manifest_data:
@@ -241,34 +242,40 @@ def update_index_from_changelog(file_path: Path | None, manifest: dict, changelo
         manifest = manifests.setdefault(world_id, {})
         versions = manifest.setdefault("versions", {})
         # The tag is one directory up from the .apworld file
-        tag_version = pathlib.Path(apworld_url).parent.name
-        v = parse_version(tag_version)
-        if tag_version not in versions:
-            versions[tag_version] = {
+        tag = pathlib.Path(apworld_url).parent.name
+        v = parse_version(tag)
+        version_str = str(v)
+        if version_str not in versions:
+            versions[version_str] = {
                 "download_url": apworld_url,
-                "world_version": str(v),
+                "world_version": version_str,
                 "source_url": changelog,
                 "size": 0,
+                "tag": tag,
             }
 
-        release = ApWorldMetadata(
-            RemoteWorldSource.REMOTE,
-            {
-                "metadata": {
-                    "id": world_id,
-                    "world_version": tag_version,
-                    "title": "",
-                    "size": 0,
-                },
-                "source_url": changelog,
-                "world": apworld_url,
-                "hash_sha256": versions[tag_version].get("hash_sha256"),
-            },
-        )
+        release = construct_metadata_release(world_id, manifest, versions[version_str])
         download_and_hash_manifest(manifest, None, manifests, release)
 
     save_manifests(None, manifests)
     return manifests
+
+
+def construct_metadata_release(world_id, manifest, version):
+    return ApWorldMetadata(
+        RemoteWorldSource.REMOTE,
+        {
+            "metadata": {
+                "id": world_id,
+                "world_version": version["world_version"],
+                "title": "",
+                "size": 0,
+            },
+            "source_url": manifest.get("source_url"),
+            "world": version.get("download_url"),
+            "hash_sha256": version.get("hash_sha256"),
+        },
+    )
 
 
 def check_manifest_has_github_url(manifest, github_url, name):
