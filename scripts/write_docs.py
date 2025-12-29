@@ -53,7 +53,7 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
         {
             "world_stem": world_stem,
             "latest_version": versions[0],
-            "game": manifest.get("game", ""),
+            "game": manifest.get("game", world_stem),
             "manifest": manifest,
             "setup_guides": setup_guides,
             "game_info": game_infos,
@@ -106,7 +106,7 @@ def write_downloads(world_stem: str, versions: list[dict[str, Any]], manifest: d
         {
             "world_stem": world_stem,
             "latest_version": versions[0],
-            "game": manifest.get("game", ""),
+            "game": manifest.get("game", world_stem),
             "manifest": manifest,
             "versions": versions,
         },
