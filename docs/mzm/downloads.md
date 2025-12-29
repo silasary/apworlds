@@ -1,0 +1,52 @@
+# Metroid Zero Mission
+
+## Latest
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.2/mzm.apworld
+
+## All Versions
+#### v0.4.2
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.2/mzm.apworld
+#### v0.4.1
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.1/mzm.apworld
+#### v0.4.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0/mzm.apworld
+#### v0.4.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0-pre1/mzm.apworld
+#### v0.4.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0-pre2/mzm.apworld
+#### v0.3.1
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.1/mzm.apworld
+#### v0.3.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0/mzm.apworld
+#### v0.3.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre1/mzm.apworld
+#### v0.3.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre2a/mzm.apworld
+#### v0.3.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre3/mzm.apworld
+#### v0.3.0rc0.post0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre2/mzm.apworld
+#### v0.2.3
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.2.3/mzm.apworld
+#### v0.2.2
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.2.2/mzm.apworld
+#### v0.2.1
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.2.1/mzm.apworld
+#### v0.2.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.2.0/mzm.apworld
+#### v0.2.0rc4
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.2.0-pre4/mzm.apworld
+#### v0.2.0rc3
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.2.0-pre3/mzm.apworld
+#### v0.2.0rc2
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.2.0-pre2/mzm.apworld
+#### v0.2.0rc1
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.2.0-pre1/mzm.apworld
+#### v0.1.3
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.1.3/mzm.apworld
+#### v0.1.2
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.1.2/mzm.apworld
+#### v0.1.1
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.1.1/mzm.apworld
+#### v0.1.0
+- https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.1.0/mzm.apworld

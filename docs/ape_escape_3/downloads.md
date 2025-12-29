@@ -1,0 +1,50 @@
+# Ape Escape 3
+
+## Latest
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld
+
+## All Versions
+#### v2.0.0.post3
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld
+#### v2.0.0.post2
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld
+#### v2.0.0
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5/ape_escape_3.apworld
+#### v2.0.0b4
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld
+#### v2.0.0b3+1
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.3%2B1/ape_escape_3.apworld
+#### v2.0.0b3
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.3/ape_escape_3.apworld
+#### v2.0.0b2
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.2/ape_escape_3.apworld
+#### v2.0.0b2
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00beta-2/ape_escape_3.apworld
+#### v2.0.0b1
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00beta-1/ape_escape_3.apworld
+#### v1.0.80.post3
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.80exp/ape_escape_3.apworld
+#### v1.0.80.post2
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.80exp/ape_escape_3.apworld
+#### v1.0.80
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.80exp/ape_escape_3.apworld
+#### v1.0.72
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.72/ape_escape_3.apworld
+#### v1.0.71
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.71/ape_escape_3.apworld
+#### v1.0.70
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.70/ape_escape_3.apworld
+#### v1.0.60
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.60/ape_escape_3.apworld
+#### v1.0.50
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.50/ape_escape_3.apworld
+#### v1.0.40
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.40/ape_escape_3.apworld
+#### v1.0.30
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.30/ape_escape_3.apworld
+#### v1.0.20
+- https://github.com/aidanii24/ae3-archipelago/releases/download/v1.0.20/ape_escape_3.apworld
+#### v1.0.10
+- https://github.com/aidanii24/ae3-archipelago/releases/download/1.0.10/ape_escape_3.apworld
+#### v1.0.0
+- https://github.com/aidanii24/ae3-archipelago/releases/download/1.0.00/ape_escape_3.apworld

@@ -1,0 +1,42 @@
+# AM2R
+
+## Latest
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-4/am2r.apworld
+
+## All Versions
+#### v4
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-4/am2r.apworld
+#### v3
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-3/am2r.apworld
+#### v2
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-2/am2r.apworld
+#### v1.4.2
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.2-M2/am2r.apworld
+#### v1.4.1
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.1-M2/am2r.apworld
+#### v1.4.0
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.0-M2/am2r.apworld
+#### v1.3.0
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2/am2r.apworld
+#### v1.3.0
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2-RC2/am2r.apworld
+#### v1.3.0
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2-beta/am2r.apworld
+#### v1.3.0
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.1-M2/am2r.apworld
+#### v1.3.0
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.2-M2/am2r.apworld
+#### v1.2.0
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.2.0-M2/am2r.apworld
+#### v1.1.4
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.1.4-M2/am2r.apworld
+#### v1.1.3
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.1.3-M2/am2r.apworld
+#### v1.1.2
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.1.2-M2/am2r.apworld
+#### v1.1.1
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.1.1-b/am2r.apworld
+#### v1.0.3
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.0.3/am2r.apworld
+#### v1.0.2
+- https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.0/am2r.apworld

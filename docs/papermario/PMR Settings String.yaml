@@ -1,0 +1,35 @@
+Paper Mario:
+    progression_balancing: 50
+    accessibility: items
+
+    # AP World Version: 0.6.4
+
+    # To get the settings string, go to https://pm64randomizer.com/
+    # 1. Choose your settings
+    # 2. At the top of the page, click Export
+    # 3. Copy the text in the "Settings string" field
+    # 4. Paste it below where it says SettingString
+
+    # Unavailable options:
+    # Shuffle dungeon entrances (must be turned off)
+    # Shuffle bosses (must be turned off)
+    # Mirror mode (cannot be static random)
+    pmr_settings_string: SettingsString
+
+    # The below option(s) are AP only and do not exist on the PMR site.
+
+    local_consumables: 100
+    # The given percentage of consumables will be forced into your world. This can be helpful for ensuring you don't
+    # have to rely on off-world consumables too terribly much. If you receive a lot of consumables at once, you may need
+    # to swing by a shop to store or sell items.
+
+    blooper_damage_requirements: None
+    # Other options: Low, Medium, High
+    # This can add logic to blooper fights to ensure you're well-equipped enough with boots and partners to beat them.
+
+    death_link: False
+    # death link is not yet implemented, leave this False
+
+description: Paper Mario YAML using PMR Setting String
+game: Paper Mario
+name: PMR

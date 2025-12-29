@@ -1,0 +1,50 @@
+# 
+
+## Latest
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release2.2/srb2.apworld
+
+## All Versions
+#### v2.2
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release2.2/srb2.apworld
+#### v2.1
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release2.1/srb2.apworld
+#### v2
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release2/srb2.apworld
+#### v1.5.2
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.5.2/srb2.apworld
+#### v1.5.2rc0
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.5.2c/srb2.apworld
+#### v1.5.1
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.5.1/srb2.apworld
+#### v1.5.0
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.5.0/srb2.apworld
+#### v1.4.5
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.4.5/srb2.apworld
+#### v1.4.4
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.4.4/srb2.apworld
+#### v1.4.3
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.4.3/srb2.apworld
+#### v1.4.2
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.4.2/srb2.apworld
+#### v1.4.0
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.4.0/srb2.apworld
+#### v1.3.6
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.3.6/srb2.apworld
+#### v1.3.5
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.3.5/srb2.apworld
+#### v1.3.4
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.3.4/srb2.apworld
+#### v1.3.3
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.3.3/srb2.apworld
+#### v1.3.2
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.3.2/srb2.apworld
+#### v1.3.1
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release1.3.1/srb2.apworld
+#### v1.3
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release1.3/srb2.apworld
+#### v1.2.1
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release1.2.1/srb2.apworld
+#### v1.2
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release1.2/srb2.apworld
+#### v1.0.0
+- https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release/srb2.apworld

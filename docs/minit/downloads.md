@@ -1,0 +1,42 @@
+# Minit
+
+## Latest
+- https://github.com/qwint/APMinit/releases/download/v0.6.10/minit.apworld
+
+## All Versions
+#### v0.6.10
+- https://github.com/qwint/APMinit/releases/download/v0.6.10/minit.apworld
+#### v0.6.6
+- https://github.com/qwint/APMinit/releases/download/v0.6.6/minit.apworld
+#### v0.6.6
+- https://github.com/qwint/APMinit/releases/download/v0.6.7/minit.apworld
+#### v0.6.6
+- https://github.com/qwint/APMinit/releases/download/v0.6.8/minit.apworld
+#### v0.6.6
+- https://github.com/qwint/APMinit/releases/download/v0.6.9/minit.apworld
+#### v0.6.5
+- https://github.com/qwint/APMinit/releases/download/v0.6.5/minit.apworld
+#### v0.6.4
+- https://github.com/qwint/APMinit/releases/download/v0.6.4/minit.apworld
+#### v0.6.3
+- https://github.com/qwint/APMinit/releases/download/v0.6.3/minit.apworld
+#### v0.6.2
+- https://github.com/qwint/APMinit/releases/download/v0.6.2/minit.apworld
+#### v0.6.1
+- https://github.com/qwint/APMinit/releases/download/v0.6.1/minit.apworld
+#### v0.6.0
+- https://github.com/qwint/APMinit/releases/download/v0.6.0/minit.apworld
+#### v0.5.0
+- https://github.com/qwint/APMinit/releases/download/v0.5.0/minit.apworld
+#### v0.4.0
+- https://github.com/qwint/APMinit/releases/download/v0.4.0/minit.apworld
+#### v0.3.0
+- https://github.com/qwint/APMinit/releases/download/v0.3.0/minit.apworld
+#### v0.2.1
+- https://github.com/qwint/APMinit/releases/download/v0.2.1/minit.apworld
+#### v0.2.0
+- https://github.com/qwint/APMinit/releases/download/v0.2.0/minit.apworld
+#### v0.1.0
+- https://github.com/qwint/APMinit/releases/download/v0.1.0/minit.apworld
+#### v0.0.1
+- https://github.com/qwint/APMinit/releases/download/v0.0.1/minit.apworld

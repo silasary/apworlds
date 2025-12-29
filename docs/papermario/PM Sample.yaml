@@ -1,0 +1,166 @@
+Paper Mario:
+    progression_balancing: 50
+    accessibility: items
+
+    # True and False values are case sensitive
+    # Values with spaces in them must use underscores
+
+    # Some settings and options are not yet implemented, and will not successfully generate. These will be marked (NYI).
+    # Changing settings with this marks at the moment will at worst break generation, and at best change nothing. Probably.
+    # Many settings do not affect logic or generation in any way and will only be relevant when an actual file gets created. These will be marked (NLA).
+    # Changing these settings is usually fine, just don't be too surprised if they don't work. If you have generation issues or crash issues, leave them as is to ensure they aren't the cause.
+    
+    # AP World Version: 0.6.4
+
+    # Items
+    keysanity: True                         # Other options: False
+    shuffle_hidden_panels: False            # Other options: True
+    gear_shuffle_mode: full_shuffle         # Other options: gear_location_shuffle, vanilla
+    trading_events: False                   # Other options: True
+    koot_favors: vanilla                    # Other options: shuffle_rewards, full_shuffle
+    koot_coins: False                       # Other options: True
+    overworld_coins: False                  # Other options: True
+    foliage_coins: False                    # Other options: True
+    coin_blocks: False                      # Other options: True
+    include_shops: True                     # Other options: False
+    dojo: 0                                 # Other options: 0-5
+    partner_upgrades: vanilla               # Other options: super_block_locations, full_shuffle
+    letter_rewards: vanilla                 # Other options: vanilla_letter_chain, final_letter_chain_reward, full_shuffle
+    super_multi_blocks: Anywhere            # Other options: off, shuffle
+    rowf_items: 5                           # Other options: 0-5
+    merlow_items: False                     # Other options: True
+    cheato_items: 6                         # Other options: 0 to 11
+    local_consumables: 100                  # Other options: 0 to 100, percentage of consumables forced to your world
+
+    # Partner
+    partners: Full_Shuffle                  # Other options: Off, Partner_Locations
+    partners_always_usable: False           # Other options: True
+    start_random_partners: False            # Other options: True
+    start_partners: 1                       # Other options: 1-8; for random, use random-low, random-high, or random-range-#-#
+    start_with_goombario: True              # Other options: False
+    start_with_kooper: False                # Other options: True
+    start_with_bombette: False              # Other options: True
+    start_with_parakarry: False             # Other options: True
+    start_with_bow: False                   # Other options: True
+    start_with_watt: False                  # Other options: True
+    start_with_sushie: False                # Other options: True
+    start_with_lakilester: False            # Other options: True
+
+    # Gameplay
+    badge_bp_shuffle: vanilla               # Other options: balanced_random, shuffled, fully_random
+    badge_fp_shuffle: vanilla               # Other options: balanced_random, shuffled, fully_random
+    partner_fp_shuffle: vanilla             # Other options: balanced_random, shuffled, fully_random
+    sp_shuffle: vanilla                     # Other options: balanced_random, shuffled, fully_random
+    mystery_shuffle: vanilla                # Other options: random_pick, random_per_use
+    formation_shuffle: False                # Other options: True
+    random_puzzles: False                   # Other options: True
+    boss_shuffle: False                     # Other options: True (NYI)
+    blooper_damage_requirements: None       # Other options: Low, Medium, High
+
+    # General Difficulty
+    enemy_difficulty: progressive_scaling   # Other options: shuffle_chapter_difficulty, progressive_scaling
+    enemy_damage: Normal                    # Other options: double_pain, quadruple_pain
+    cap_enemy_xp: False                     # Other options: True
+    enemy_xp_multiplier: 2                  # Other options: 0-4, set this to double the desired multiplier; ex: for double xp, set this to 4
+    no_save_blocks: False                   # Other options: True
+    no_heart_blocks: False                  # Other options: True
+    no_healing_items: False                 # Other options: True
+    one_hit_ko: False                       # Other options: True
+    drop_star_points: False                 # Other options: True
+    badge_synergy: False                    # Other options: True
+    merlow_rewards_pricing: vanilla         # Other options: cheap
+    chet_rippo: True                        # Other options: False
+    bowser_door_quiz: quiz                  # Other options: anti_guys_unit, skip
+    kent_c_koopa: already_paid              # Other options: blocks_pleasant_path, must_defeat, already_defeated
+
+    # Goals
+    seed_goal: defeat_bowser                # Other options: open_star_way
+    star_way_spirits: 7                     # Other options: 0-7
+    spirit_requirements: Any                # Other options: specific, specific_and_limit_chapter_logic
+    shuffle_star_beam: False                # Other options: True
+    star_beam_spirits: 0                    # Other options: 0-7
+    power_star_hunt: False                  # Other options: True
+    star_way_power_stars: 50                # Other options: 0-120
+    star_beam_power_stars: 0                # Other options: 0-120
+    total_power_stars: 70                   # Other options: 0-120
+
+    # Stats and Gear
+    starting_boots: Normal                  # Other options: jumpless, super, ultra
+    starting_hammer: Normal                 # Other options: hammerless, super, ultra
+    starting_coins: 100                     # Other options: 0-999; remember to keep 50 to access Pleasant Path at start
+    starting_hp: 10                         # Other options: 5-50
+    starting_bp: 3                          # Other options: 3-30
+    starting_fp: 5                          # Other options: 5-50
+    random_start_stats: False               # Other options: True
+    random_start_stats_level: 1             # Other options: 1-27
+    starting_sp: 0                          # Other options: 0-7
+    random_start_items: 0                   # Other options: 0-16
+
+    # Item Pool
+    consumable_item_pool: vanilla           # Other options: fully_random, balanced_random, mystery_only
+    consumable_item_quality: 100            # Other options: 25-125
+    item_traps: No_Traps                    # Other options: sparse, moderate, plenty
+    item_pouches: False                     # Other options: True
+    unused_badge_dupes: False               # Other options: True
+    beta_items: False                       # Other options: True
+    progressive_badges: False               # Other options: True
+    badge_pool_limit: 128                   # Other options: 0-128
+
+    # World Settings
+    starting_map: Toad_Town                 # Other options: goomba_village, dry_dry_outpost, yoshi_village
+    open_prologue: False                    # Other options: True
+    open_mt_rugged: False                   # Other options: True
+    open_forest: False                      # Other options: True
+    magical_seeds: 4                        # Other options: 0-4
+    open_toybox: False                      # Other options: True
+    open_whale: False                       # Other options: True
+    open_blue_house: False                  # Other options: True
+    ch7_bridge_visible: False               # Other options: True
+    mirror_mode: Off                        # Other options: always_on (NLA), random_on_every_load (NLA), static_random (NYI)
+    bowser_castle_mode: vanilla             # Other options: shortened, boss_rush
+    shuffle_dungeon_entrances: Off          # Other options: Only_Spirit_Dungeons (NYI), Include_Bowsers_Castle (NYI)
+
+    # Quality of Life Settings
+    hidden_block_mode: Always_Visible       # Other options: vanilla, watt_out, watt_obtained, always_visible
+    prevent_ooblzs: True                    # Other options: False
+    skip_quiz: True                         # Other options: False
+    quizmo_always_appears: True             # Other options: False
+    visible_hidden_panels: True             # Other options: False
+    always_speedy_spin: True                # Other options: False
+    always_peekaboo: True                   # Other options: False
+    always_ispy: True                       # Other options: False
+    ispy_panel_hints: Vague                 # Other options: Off, Concrete
+    foliage_item_hints: True                # Other options: False
+    cook_without_frying_pan: True           # Other options: False
+    cutscene_mode: Minimal                  # Other options: vanilla, shortened
+    skip_epilogue: True                     # Other options: False
+
+    # Cosmetics (see Options.py for settings with too many options to list here
+    mario_palette: Default                  # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    goombario_palette: Default              # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    kooper_palette: Default                 # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    bombette_palette: Default               # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    parakarry_palette: Default              # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    bow_palette: Default                    # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    watt_palette: Default                   # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    sushie_palette: Default                 # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    lakilester_palette: Default             # Other options: [A lot of 'em], random_pick_no_vanilla, random_on_every_load
+    boss_palette: Default                   # Other options: random_pick, random_pick_no_vanilla, random_on_every_load
+    npc_palette: Default                    # Other options: random_pick, random_pick_no_vanilla, random_on_every_load
+    enemy_palette: Default                  # Other options: random_pick, random_pick_no_vanilla, random_on_every_load
+    hammer_palette: Default                 # Other options: random_pick, random_pick_no_vanilla, random_on_every_load
+    status_menu_palette: Default            # Other options: blue, green, teal, brown, purple, grey, random_pick, animated
+    coin_palette: Default                   # Other options: red, blue, purple, silver
+    random_text: False                      # Other options: True
+    roman_numerals: False                   # Other options: True
+
+    # Audio
+    shuffle_music: Off                      # Other options: shuffle_by_mood, shuffle_by_type, full_shuffle
+    shuffle_jingles: False                  # Other options: True
+    random_pitch: False                     # Other options: True
+    mute_danger_beeps: True                 # Other options: False
+
+    death_link: False                       # NYI
+description: Sample Paper Mario AP World YAML
+game: Paper Mario
+name: JKB

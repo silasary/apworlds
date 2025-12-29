@@ -1,0 +1,50 @@
+# Skyward Sword
+
+## Latest
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.3/ss.apworld
+
+## All Versions
+#### v0.5.3
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.3/ss.apworld
+#### v0.5.2
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2/ss.apworld
+#### v0.5.2
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2-pre1/ss.apworld
+#### v0.5.2
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2-pre2/ss.apworld
+#### v0.5.1
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.1/ss.apworld
+#### v0.5.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0/ss.apworld
+#### v0.5.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0-pre/ss.apworld
+#### v0.5.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0-pre2/ss.apworld
+#### v0.5.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre/ss.apworld
+#### v0.5.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre2/ss.apworld
+#### v0.5.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.2-pre/ss.apworld
+#### v0.5.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.3-pre/ss.apworld
+#### v0.5.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.4-pre/ss.apworld
+#### v0.4.1
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.4.1/ss.apworld
+#### v0.4.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.4.0/ss.apworld
+#### v0.3.4
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.3.4/ss.apworld
+#### v0.3.3
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.3.3/ss.apworld
+#### v0.3.2
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.3.2/ss.apworld
+#### v0.3.1
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.3.1/ss.apworld
+#### v0.3.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.3.0/ss.apworld
+#### v0.2.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.2.0/ss.apworld
+#### v0.1.0
+- https://github.com/Battlecats59/SS_APWorld/releases/download/v0.1.0/ss.apworld

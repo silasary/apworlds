@@ -1,0 +1,54 @@
+# Path of Exile
+
+## Latest
+- https://github.com/stubobis1/Archipelago/releases/download/1.2.1/poe.apworld
+
+## All Versions
+#### v1.2.1
+- https://github.com/stubobis1/Archipelago/releases/download/1.2.1/poe.apworld
+#### v1.2.0
+- https://github.com/stubobis1/Archipelago/releases/download/1.2.0/poe.apworld
+#### v1.1.5
+- https://github.com/stubobis1/Archipelago/releases/download/1.1.5/poe.apworld
+#### v1.1.4
+- https://github.com/stubobis1/Archipelago/releases/download/1.1.4/poe.apworld
+#### v1.1.3
+- https://github.com/stubobis1/Archipelago/releases/download/1.1.3/poe.apworld
+#### v1.1.2
+- https://github.com/stubobis1/Archipelago/releases/download/1.1.2/poe.apworld
+#### v1.1.1
+- https://github.com/stubobis1/Archipelago/releases/download/1.1.1-poe/poe.apworld
+#### v1.1.0
+- https://github.com/stubobis1/Archipelago/releases/download/1.1.0-poe/poe.apworld
+#### v1.0.5
+- https://github.com/stubobis1/Archipelago/releases/download/1.0.5-poe/poe.apworld
+#### v1.0.4
+- https://github.com/stubobis1/Archipelago/releases/download/1.0.4-poe/poe.apworld
+#### v1.0.3
+- https://github.com/stubobis1/Archipelago/releases/download/1.0.3-poe/poe.apworld
+#### v1.0.2
+- https://github.com/stubobis1/Archipelago/releases/download/1.0.2-poe/poe.apworld
+#### v1.0.1
+- https://github.com/stubobis1/Archipelago/releases/download/1.0.1-poe/poe.apworld
+#### v1.0.0
+- https://github.com/stubobis1/Archipelago/releases/download/1.0.0-poe/poe.apworld
+#### v0.3.3
+- https://github.com/stubobis1/Archipelago/releases/download/0.3.3-poe/poe.apworld
+#### v0.3.2
+- https://github.com/stubobis1/Archipelago/releases/download/0.3.2-poe/poe.apworld
+#### v0.3.1
+- https://github.com/stubobis1/Archipelago/releases/download/0.3.1-unstable-poe/poe.apworld
+#### v0.3.0
+- https://github.com/stubobis1/Archipelago/releases/download/0.3.0-poe/poe.apworld
+#### v0.2.2
+- https://github.com/stubobis1/Archipelago/releases/download/0.2.2-poe/poe.apworld
+#### v0.2.1
+- https://github.com/stubobis1/Archipelago/releases/download/0.2.1-poe/poe.apworld
+#### v0.2.0
+- https://github.com/stubobis1/Archipelago/releases/download/0.2.0-poe-rc/poe.apworld
+#### v0.1.0
+- https://github.com/stubobis1/Archipelago/releases/download/0.1.0-poe/poe.apworld
+#### v0.0.2
+- https://github.com/stubobis1/Archipelago/releases/download/0.0.002/poe.apworld
+#### v0.0.1
+- https://github.com/stubobis1/Archipelago/releases/download/0.0.001/poe.apworld
