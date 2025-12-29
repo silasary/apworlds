@@ -1,10 +1,10 @@
 # Mario Party Advance
 
 ## Latest
-- https://github.com/etherware-novice/candypelago/releases/download/v1.0/mpadv.apworld
+- <a href="https://github.com/etherware-novice/candypelago/releases/download/v1.0/mpadv.apworld">Latest Version (1.0)</a>
 
 ## All Versions
 #### v1.0
-- https://github.com/etherware-novice/candypelago/releases/download/v1.0/mpadv.apworld
+- <a href="https://github.com/etherware-novice/candypelago/releases/download/v1.0/mpadv.apworld">https://github.com/etherware-novice/candypelago/releases/download/v1.0/mpadv.apworld</a>
 #### v0.98
-- https://github.com/etherware-novice/candypelago/releases/download/v0.98/mpadv.apworld
+- <a href="https://github.com/etherware-novice/candypelago/releases/download/v0.98/mpadv.apworld">https://github.com/etherware-novice/candypelago/releases/download/v0.98/mpadv.apworld</a>

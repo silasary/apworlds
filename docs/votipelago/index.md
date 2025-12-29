@@ -1,0 +1,13 @@
+# Votipelago
+
+## Downloads
+- <a href="https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.7/votipelago.apworld">Latest Version (0.1.7)</a>
+- <a href="downloads.html">View all versions</a>
+
+## Game Information
+
+## Setup Guide
+
+## Other Documentation files
+- <a href="en_votipelago">en_votipelago</a>
+- <a href="votipelago_en">votipelago_en</a>

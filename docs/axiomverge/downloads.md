@@ -1,16 +1,16 @@
 # Axiom Verge
 
 ## Latest
-- https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld
+- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld">Latest Version (3.post2)</a>
 
 ## All Versions
 #### v3.post2
-- https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld
+- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld">https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld</a>
 #### v3
-- https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld
+- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld">https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld</a>
 #### v2.1
-- https://github.com/mail-liam/Archipelago/releases/download/beta2.1/axiomverge.apworld
+- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta2.1/axiomverge.apworld">https://github.com/mail-liam/Archipelago/releases/download/beta2.1/axiomverge.apworld</a>
 #### v2
-- https://github.com/mail-liam/Archipelago/releases/download/beta2/axiomverge.apworld
+- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta2/axiomverge.apworld">https://github.com/mail-liam/Archipelago/releases/download/beta2/axiomverge.apworld</a>
 #### v1
-- https://github.com/mail-liam/Archipelago/releases/download/beta/axiomverge.apworld
+- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta/axiomverge.apworld">https://github.com/mail-liam/Archipelago/releases/download/beta/axiomverge.apworld</a>

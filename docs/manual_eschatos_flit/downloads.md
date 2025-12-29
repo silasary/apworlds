@@ -1,8 +1,8 @@
 # Manual_ESCHATOS_Flit
 
 ## Latest
-- https://github.com/FlitPix/archipelago-manuals/releases/download/eschatos_v1.0.1/manual_eschatos_flit.apworld
+- <a href="https://github.com/FlitPix/archipelago-manuals/releases/download/eschatos_v1.0.1/manual_eschatos_flit.apworld">Latest Version (1.0.1)</a>
 
 ## All Versions
 #### v1.0.1
-- https://github.com/FlitPix/archipelago-manuals/releases/download/eschatos_v1.0.1/manual_eschatos_flit.apworld
+- <a href="https://github.com/FlitPix/archipelago-manuals/releases/download/eschatos_v1.0.1/manual_eschatos_flit.apworld">https://github.com/FlitPix/archipelago-manuals/releases/download/eschatos_v1.0.1/manual_eschatos_flit.apworld</a>

@@ -1,10 +1,10 @@
 # Discord Rich Presence
 
 ## Latest
-- https://github.com/SerpentAI/Archipelago/releases/download/rich-presence-002/rich_presence.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/rich-presence-002/rich_presence.apworld">Latest Version (2)</a>
 
 ## All Versions
 #### v2
-- https://github.com/SerpentAI/Archipelago/releases/download/rich-presence-002/rich_presence.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/rich-presence-002/rich_presence.apworld">https://github.com/SerpentAI/Archipelago/releases/download/rich-presence-002/rich_presence.apworld</a>
 #### v1
-- https://github.com/SerpentAI/Archipelago/releases/download/rich-presence-001/rich_presence.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/rich-presence-001/rich_presence.apworld">https://github.com/SerpentAI/Archipelago/releases/download/rich-presence-001/rich_presence.apworld</a>

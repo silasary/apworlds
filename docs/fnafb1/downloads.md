@@ -1,20 +1,20 @@
 # 
 
 ## Latest
-- https://github.com/Scrungip/FNaFBAP/releases/download/v1.0.0/fnafb1.apworld
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v1.0.0/fnafb1.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
 #### v1.0.0
-- https://github.com/Scrungip/FNaFBAP/releases/download/v1.0.0/fnafb1.apworld
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v1.0.0/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/v1.0.0/fnafb1.apworld</a>
 #### v0.4.0
-- https://github.com/Scrungip/FNaFBAP/releases/download/v0.4.0/fnafb1.apworld
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v0.4.0/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/v0.4.0/fnafb1.apworld</a>
 #### v0.3.0
-- https://github.com/Scrungip/FNaFBAP/releases/download/v0.3.0/fnafb1.apworld
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v0.3.0/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/v0.3.0/fnafb1.apworld</a>
 #### v0.2.1
-- https://github.com/Scrungip/FNaFBAP/releases/download/v0.2.1/fnafb1.apworld
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v0.2.1/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/v0.2.1/fnafb1.apworld</a>
 #### v0.2
-- https://github.com/Scrungip/FNaFBAP/releases/download/v0.2/fnafb1.apworld
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v0.2/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/v0.2/fnafb1.apworld</a>
 #### v0.1.1
-- https://github.com/Scrungip/FNaFBAP/releases/download/v0.1.1/fnafb1.apworld
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v0.1.1/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/v0.1.1/fnafb1.apworld</a>
 #### v0.1
-- https://github.com/Scrungip/FNaFBAP/releases/download/v0.1/fnafb1.apworld
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v0.1/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/v0.1/fnafb1.apworld</a>

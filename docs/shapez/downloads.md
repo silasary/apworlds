@@ -1,60 +1,60 @@
 # shapez
 
 ## Latest
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.3/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.3/shapez.apworld">Latest Version (0.6.3)</a>
 
 ## All Versions
 #### v0.6.3
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.3/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.3/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.3/shapez.apworld</a>
 #### v0.6.2
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.2/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.2/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.2/shapez.apworld</a>
 #### v0.6.1
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.1/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.1/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.1/shapez.apworld</a>
 #### v0.6.0
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.0/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.0/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.6.0/shapez.apworld</a>
 #### v0.5.13
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.13/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.13/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.13/shapez.apworld</a>
 #### v0.5.12
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.12/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.12/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.12/shapez.apworld</a>
 #### v0.5.11
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.11/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.11/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.11/shapez.apworld</a>
 #### v0.5.10
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.10/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.10/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.10/shapez.apworld</a>
 #### v0.5.9
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.9/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.9/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.9/shapez.apworld</a>
 #### v0.5.8
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.8/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.8/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.8/shapez.apworld</a>
 #### v0.5.7
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.7/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.7/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.7/shapez.apworld</a>
 #### v0.5.6
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.6/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.6/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.6/shapez.apworld</a>
 #### v0.5.5
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.5/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.5/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.5/shapez.apworld</a>
 #### v0.5.4
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.4/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.4/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.4/shapez.apworld</a>
 #### v0.5.3
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.3/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.3/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.3/shapez.apworld</a>
 #### v0.5.2
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.2/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.2/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.2/shapez.apworld</a>
 #### v0.5.1
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.1/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.1/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.1/shapez.apworld</a>
 #### v0.5.0
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.0/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.0/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.5.0/shapez.apworld</a>
 #### v0.4.1
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.4.1/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.4.1/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.4.1/shapez.apworld</a>
 #### v0.4.0
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.4.0/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.4.0/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.4.0/shapez.apworld</a>
 #### v0.3.1
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.3.1/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.3.1/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.3.1/shapez.apworld</a>
 #### v0.3.0
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.3.0/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.3.0/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.3.0/shapez.apworld</a>
 #### v0.2.1
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.2.1/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.2.1/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.2.1/shapez.apworld</a>
 #### v0.2.0
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.2.0/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.2.0/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.2.0/shapez.apworld</a>
 #### v0.1.2
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.1.2/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.1.2/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.1.2/shapez.apworld</a>
 #### v0.1.1
-- https://github.com/BlastSlimey/shapezipelago/releases/download/0.1.1/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/0.1.1/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/0.1.1/shapez.apworld</a>
 #### v0.1.0
-- https://github.com/BlastSlimey/shapezipelago/releases/download/alpha/shapez.apworld
+- <a href="https://github.com/BlastSlimey/shapezipelago/releases/download/alpha/shapez.apworld">https://github.com/BlastSlimey/shapezipelago/releases/download/alpha/shapez.apworld</a>

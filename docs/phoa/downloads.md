@@ -1,10 +1,10 @@
 # Phoenotopia: Awakening
 
 ## Latest
-- https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.1.1/phoa.apworld
+- <a href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.1.1/phoa.apworld">Latest Version (0.1.1)</a>
 
 ## All Versions
 #### v0.1.1
-- https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.1.1/phoa.apworld
+- <a href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.1.1/phoa.apworld">https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.1.1/phoa.apworld</a>
 #### v0.1.0
-- https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.1.0/phoa.apworld
+- <a href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.1.0/phoa.apworld">https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.1.0/phoa.apworld</a>

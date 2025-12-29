@@ -1,18 +1,18 @@
 # Forged Curse
 
 ## Latest
-- https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0/forgedcurse.apworld
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0/forgedcurse.apworld">Latest Version (1.1.0)</a>
 
 ## All Versions
 #### v1.1.0
-- https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0/forgedcurse.apworld
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0/forgedcurse.apworld</a>
 #### v1.0.4
-- https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.4/forgedcurse.apworld
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.4/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.4/forgedcurse.apworld</a>
 #### v1.0.3
-- https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.3/forgedcurse.apworld
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.3/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.3/forgedcurse.apworld</a>
 #### v1.0.2
-- https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.2/forgedcurse.apworld
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.2/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.2/forgedcurse.apworld</a>
 #### v1.0.1
-- https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.1/forgedcurse.apworld
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.1/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.1/forgedcurse.apworld</a>
 #### v1.0.0
-- https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.0/forgedcurse.apworld
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.0/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.0.0/forgedcurse.apworld</a>

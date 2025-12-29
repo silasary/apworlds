@@ -1,68 +1,68 @@
 # Hades
 
 ## Latest
-- https://github.com/NaixGames/Polycosmos/releases/download/0.14.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.14.0/hades.apworld">Latest Version (0.14.0)</a>
 
 ## All Versions
 #### v0.14.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.14.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.14.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.14.0/hades.apworld</a>
 #### v0.13.2
-- https://github.com/NaixGames/Polycosmos/releases/download/0.13.2/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.13.2/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.13.2/hades.apworld</a>
 #### v0.13.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.13.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.13.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.13.1/hades.apworld</a>
 #### v0.13.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.13.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.13.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.13.0/hades.apworld</a>
 #### v0.13.0
-- https://github.com/NaixGames/Polycosmos/releases/download/pre-0.13.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/pre-0.13.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/pre-0.13.0/hades.apworld</a>
 #### v0.12.3
-- https://github.com/NaixGames/Polycosmos/releases/download/0.12.3/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.12.3/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.12.3/hades.apworld</a>
 #### v0.12.2
-- https://github.com/NaixGames/Polycosmos/releases/download/0.12.2/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.12.2/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.12.2/hades.apworld</a>
 #### v0.12.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.12.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.12.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.12.1/hades.apworld</a>
 #### v0.12.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.12.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.12.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.12.0/hades.apworld</a>
 #### v0.11.4
-- https://github.com/NaixGames/Polycosmos/releases/download/0.11.4/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.11.4/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.11.4/hades.apworld</a>
 #### v0.11.3
-- https://github.com/NaixGames/Polycosmos/releases/download/0.11.3/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.11.3/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.11.3/hades.apworld</a>
 #### v0.11.2
-- https://github.com/NaixGames/Polycosmos/releases/download/0.11.2/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.11.2/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.11.2/hades.apworld</a>
 #### v0.11.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.11.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.11.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.11.1/hades.apworld</a>
 #### v0.11.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.11.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.11.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.11.0/hades.apworld</a>
 #### v0.10.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.10.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.10.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.10.1/hades.apworld</a>
 #### v0.10.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.10.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.10.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.10.0/hades.apworld</a>
 #### v0.9.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.9.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.9.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.9.1/hades.apworld</a>
 #### v0.9.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.9.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.9.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.9.0/hades.apworld</a>
 #### v0.8.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.8.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.8.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.8.0/hades.apworld</a>
 #### v0.7.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.7.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.7.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.7.0/hades.apworld</a>
 #### v0.6.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.6.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.6.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.6.1/hades.apworld</a>
 #### v0.6.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.6.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.6.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.6.0/hades.apworld</a>
 #### v0.5.2
-- https://github.com/NaixGames/Polycosmos/releases/download/0.5.2/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.5.2/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.5.2/hades.apworld</a>
 #### v0.5.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.5.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.5.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.5.1/hades.apworld</a>
 #### v0.5.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.5.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.5.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.5.0/hades.apworld</a>
 #### v0.4.1.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.4.1.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.4.1.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.4.1.1/hades.apworld</a>
 #### v0.4.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.4.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.4.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.4.1/hades.apworld</a>
 #### v0.4.0
-- https://github.com/NaixGames/Polycosmos/releases/download/0.4.0/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.4.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.4.0/hades.apworld</a>
 #### v0.3.2
-- https://github.com/NaixGames/Polycosmos/releases/download/0.3.2/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.3.2/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.3.2/hades.apworld</a>
 #### v0.3.1
-- https://github.com/NaixGames/Polycosmos/releases/download/0.3.1/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.3.1/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.3.1/hades.apworld</a>
 #### v0.0.0+macexperimental
-- https://github.com/NaixGames/Polycosmos/releases/download/MacExperimental/hades.apworld
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/MacExperimental/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/MacExperimental/hades.apworld</a>

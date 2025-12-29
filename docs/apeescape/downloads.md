@@ -1,68 +1,68 @@
 # Ape Escape
 
 ## Latest
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/0.20/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/0.20/apeescape.apworld">Latest Version (0.20)</a>
 
 ## All Versions
 #### v0.20
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/0.20/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/0.20/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/0.20/apeescape.apworld</a>
 #### v0.9.4
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.4/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.4/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.4/apeescape.apworld</a>
 #### v0.9.3
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.3/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.3/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.3/apeescape.apworld</a>
 #### v0.9.2
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.2/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.2/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.2/apeescape.apworld</a>
 #### v0.9.1
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.1/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.1/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.1/apeescape.apworld</a>
 #### v0.9.0a
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.0a/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.0a/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.0a/apeescape.apworld</a>
 #### v0.8.9
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.9/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.9/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.9/apeescape.apworld</a>
 #### v0.8.8
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.8/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.8/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.8/apeescape.apworld</a>
 #### v0.8.7
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.7/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.7/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.7/apeescape.apworld</a>
 #### v0.8.6
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.6/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.6/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.6/apeescape.apworld</a>
 #### v0.8.5
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.5/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.5/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.5/apeescape.apworld</a>
 #### v0.8.4
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.4/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.4/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.4/apeescape.apworld</a>
 #### v0.8.3
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.3/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.3/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.3/apeescape.apworld</a>
 #### v0.8.2
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.2/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.2/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.2/apeescape.apworld</a>
 #### v0.8.1
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.1/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.1/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.1/apeescape.apworld</a>
 #### v0.8.0.post2
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.0/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.0/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.0/apeescape.apworld</a>
 #### v0.8.0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.0/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.0/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.8.0/apeescape.apworld</a>
 #### v0.7.3
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.3/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.3/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.3/apeescape.apworld</a>
 #### v0.7.2
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.2/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.2/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.2/apeescape.apworld</a>
 #### v0.7.2a0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.2a/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.2a/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.2a/apeescape.apworld</a>
 #### v0.7.1
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.1/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.1/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.1/apeescape.apworld</a>
 #### v0.7.0rc0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0c/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0c/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0c/apeescape.apworld</a>
 #### v0.7.0b0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0b/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0b/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0b/apeescape.apworld</a>
 #### v0.7.0a0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0a/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0a/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.7.0a/apeescape.apworld</a>
 #### v0.6.5
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.5/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.5/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.5/apeescape.apworld</a>
 #### v0.6.4
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.4/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.4/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.4/apeescape.apworld</a>
 #### v0.6.1
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.1/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.1/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.1/apeescape.apworld</a>
 #### v0.6.0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.0/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.0/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.6.0/apeescape.apworld</a>
 #### v0.5.0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.5.0/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.5.0/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.5.0/apeescape.apworld</a>
 #### v0.4.0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.4.0/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.4.0/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.4.0/apeescape.apworld</a>
 #### v0.3.0
-- https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.3.0/apeescape.apworld
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.3.0/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.3.0/apeescape.apworld</a>

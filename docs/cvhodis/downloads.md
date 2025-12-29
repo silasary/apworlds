@@ -1,16 +1,16 @@
 # Castlevania - Harmony of Dissonance
 
 ## Latest
-- https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0/cvhodis.apworld
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0/cvhodis.apworld">Latest Version (2.0)</a>
 
 ## All Versions
 #### v2.0
-- https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0/cvhodis.apworld
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0/cvhodis.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0/cvhodis.apworld</a>
 #### v2.0
-- https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0hotfix/cvhodis.apworld
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0hotfix/cvhodis.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0hotfix/cvhodis.apworld</a>
 #### v1.2
-- https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.2/cvhodis.apworld
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.2/cvhodis.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.2/cvhodis.apworld</a>
 #### v1.1
-- https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.1/cvhodis.apworld
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.1/cvhodis.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.1/cvhodis.apworld</a>
 #### v1.0
-- https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.0/cvhodis.apworld
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.0/cvhodis.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v1.0/cvhodis.apworld</a>

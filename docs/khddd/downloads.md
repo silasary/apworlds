@@ -1,14 +1,14 @@
 # Kingdom Hearts Dream Drop Distance
 
 ## Latest
-- https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.4/khddd.apworld
+- <a href="https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.4/khddd.apworld">Latest Version (0.0.4)</a>
 
 ## All Versions
 #### v0.0.4
-- https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.4/khddd.apworld
+- <a href="https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.4/khddd.apworld">https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.4/khddd.apworld</a>
 #### v0.0.3
-- https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.3/khddd.apworld
+- <a href="https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.3/khddd.apworld">https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.3/khddd.apworld</a>
 #### v0.0.2
-- https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.2/khddd.apworld
+- <a href="https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.2/khddd.apworld">https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.2/khddd.apworld</a>
 #### v0.0.1
-- https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.1/khddd.apworld
+- <a href="https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.1/khddd.apworld">https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.1/khddd.apworld</a>

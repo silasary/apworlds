@@ -1,58 +1,58 @@
 # Paper Mario
 
 ## Latest
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld">Latest Version (0.6.4)</a>
 
 ## All Versions
 #### v0.6.4
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld</a>
 #### v0.6.3
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.3/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.3/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.3/papermario.apworld</a>
 #### v0.6.2
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.2/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.2/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.2/papermario.apworld</a>
 #### v0.6.1
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.1/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.1/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.1/papermario.apworld</a>
 #### v0.6.0.post2
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.0/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.0/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.0/papermario.apworld</a>
 #### v0.6.0
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.0/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.0/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.0/papermario.apworld</a>
 #### v0.5.0
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.5.0/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.5.0/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.5.0/papermario.apworld</a>
 #### v0.4.4
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.4/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.4/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.4/papermario.apworld</a>
 #### v0.4.3
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.3/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.3/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.3/papermario.apworld</a>
 #### v0.4.2
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.2/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.2/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.2/papermario.apworld</a>
 #### v0.4.1
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.1/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.1/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.1/papermario.apworld</a>
 #### v0.4.0
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.0/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.0/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.4.0/papermario.apworld</a>
 #### v0.3.3
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.3/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.3/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.3/papermario.apworld</a>
 #### v0.3.2
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.2/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.2/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.2/papermario.apworld</a>
 #### v0.3.1
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.1/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.1/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.1/papermario.apworld</a>
 #### v0.3.0
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.0/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.0/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.3.0/papermario.apworld</a>
 #### v0.2.4
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.4/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.4/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.4/papermario.apworld</a>
 #### v0.2.3
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.3/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.3/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.3/papermario.apworld</a>
 #### v0.2.2
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.2/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.2/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.2/papermario.apworld</a>
 #### v0.2.1
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.1/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.1/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.1/papermario.apworld</a>
 #### v0.2.0
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.0/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.0/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.0/papermario.apworld</a>
 #### v0.2.0a0
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.0a/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.0a/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.2.0a/papermario.apworld</a>
 #### v0.1.7
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.7/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.7/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.7/papermario.apworld</a>
 #### v0.1.6
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.6/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.6/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.6/papermario.apworld</a>
 #### v0.1.6a0
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.6a/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.6a/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.6a/papermario.apworld</a>
 #### v0.1.5
-- https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.5/papermario.apworld
+- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.5/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.1.5/papermario.apworld</a>

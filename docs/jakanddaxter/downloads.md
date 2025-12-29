@@ -1,74 +1,74 @@
 # Jak and Daxter The Precursor Legacy
 
 ## Latest
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.3/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.3/jakanddaxter.apworld">Latest Version (1.1.3)</a>
 
 ## All Versions
 #### v1.1.3
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.3/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.3/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.3/jakanddaxter.apworld</a>
 #### v1.1.2
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.2/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.2/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.2/jakanddaxter.apworld</a>
 #### v1.1.1
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.1/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.1/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.1/jakanddaxter.apworld</a>
 #### v1.1.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.0/jakanddaxter.apworld</a>
 #### v0.5.2
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.2/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.2/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.2/jakanddaxter.apworld</a>
 #### vbeta-0.5.1
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.1/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.1/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.1/jakanddaxter.apworld</a>
 #### v0.5.1
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.1/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.1/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.1/jakanddaxter.apworld</a>
 #### vbeta-0.5.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.0/jakanddaxter.apworld</a>
 #### v0.5.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.5.0/jakanddaxter.apworld</a>
 #### vbeta-0.4.1
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.1/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.1/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.1/jakanddaxter.apworld</a>
 #### v0.4.1
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.1/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.1/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.1/jakanddaxter.apworld</a>
 #### vbeta-0.4.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.0/jakanddaxter.apworld</a>
 #### v0.4.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.4.0/jakanddaxter.apworld</a>
 #### vbeta-0.3.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.3.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.3.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.3.0/jakanddaxter.apworld</a>
 #### v0.3.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.3.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.3.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.3.0/jakanddaxter.apworld</a>
 #### vbeta-0.2.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.2.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.2.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.2.0/jakanddaxter.apworld</a>
 #### v0.2.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.2.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.2.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.2.0/jakanddaxter.apworld</a>
 #### vbeta-0.1.2
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.2/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.2/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.2/jakanddaxter.apworld</a>
 #### v0.1.2
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.2/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.2/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.2/jakanddaxter.apworld</a>
 #### vbeta-0.1.1
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.1/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.1/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.1/jakanddaxter.apworld</a>
 #### v0.1.1
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.1/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.1/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.1/jakanddaxter.apworld</a>
 #### vbeta-0.1.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.0/jakanddaxter.apworld</a>
 #### v0.1.0
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.0/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.0/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/beta-v0.1.0/jakanddaxter.apworld</a>
 #### v0.0.11
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.11/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.11/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.11/jakanddaxter.apworld</a>
 #### v0.0.10
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.10/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.10/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.10/jakanddaxter.apworld</a>
 #### v0.0.9
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.9/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.9/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.9/jakanddaxter.apworld</a>
 #### v0.0.8
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.8/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.8/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.8/jakanddaxter.apworld</a>
 #### v0.0.7
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.07/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.07/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.07/jakanddaxter.apworld</a>
 #### v0.0.6
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.6/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.6/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.6/jakanddaxter.apworld</a>
 #### v0.0.5
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.5/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.5/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.5/jakanddaxter.apworld</a>
 #### v0.0.4
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.4/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.4/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.4/jakanddaxter.apworld</a>
 #### v0.0.3
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.3/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.3/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.3/jakanddaxter.apworld</a>
 #### v0.0.2
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.2/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.2/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.2/jakanddaxter.apworld</a>
 #### v0.0.1
-- https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.1/jakanddaxter.apworld
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.1/jakanddaxter.apworld">https://github.com/ArchipelaGOAL/Archipelago/releases/download/alpha-v0.0.1/jakanddaxter.apworld</a>

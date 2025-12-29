@@ -1,12 +1,12 @@
 # Watery Words
 
 ## Latest
-- https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.1.0/waterywords.apworld
+- <a href="https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.1.0/waterywords.apworld">Latest Version (0.1.0)</a>
 
 ## All Versions
 #### v0.1.0
-- https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.1.0/waterywords.apworld
+- <a href="https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.1.0/waterywords.apworld">https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.1.0/waterywords.apworld</a>
 #### v0.0.2
-- https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.0.2/waterywords.apworld
+- <a href="https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.0.2/waterywords.apworld">https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.0.2/waterywords.apworld</a>
 #### v0.0.1
-- https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.0.1/waterywords.apworld
+- <a href="https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.0.1/waterywords.apworld">https://github.com/spineraks-org/ArchipelagoWateryWords/releases/download/v0.0.1/waterywords.apworld</a>

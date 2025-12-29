@@ -1,42 +1,42 @@
 # Keymaster&#x27;s Keep
 
 ## Latest
-- https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld
+- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld">Latest Version (2.1.2)</a>
 
 ## All Versions
 #### v2.1.2
-- https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld
+- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld">https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld</a>
 #### v2.1.1
-- https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.1/keymasters_keep.apworld
+- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.1/keymasters_keep.apworld">https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.1/keymasters_keep.apworld</a>
 #### v2.1.0
-- https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.0/keymasters_keep.apworld
+- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.0/keymasters_keep.apworld">https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.0/keymasters_keep.apworld</a>
 #### v2.0.1
-- https://github.com/silasary/Archipelago/releases/download/keymasters-2.0.1/keymasters_keep.apworld
+- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters-2.0.1/keymasters_keep.apworld">https://github.com/silasary/Archipelago/releases/download/keymasters-2.0.1/keymasters_keep.apworld</a>
 #### v2.post3
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld</a>
 #### v2.post2
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld</a>
 #### v2
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-0002/keymasters_keep.apworld</a>
 #### v1.post2
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-0001/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-0001/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-0001/keymasters_keep.apworld</a>
 #### v1
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-0001/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-0001/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-0001/keymasters_keep.apworld</a>
 #### v0.9
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0009/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0009/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0009/keymasters_keep.apworld</a>
 #### v0.8
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0008/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0008/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0008/keymasters_keep.apworld</a>
 #### v0.7
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0007/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0007/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0007/keymasters_keep.apworld</a>
 #### v0.6
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0006/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0006/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0006/keymasters_keep.apworld</a>
 #### v0.5
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0005/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0005/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0005/keymasters_keep.apworld</a>
 #### v0.4
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0004/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0004/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0004/keymasters_keep.apworld</a>
 #### v0.3
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0003/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0003/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0003/keymasters_keep.apworld</a>
 #### v0.2
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0002/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0002/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0002/keymasters_keep.apworld</a>
 #### v0.1
-- https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0001/keymasters_keep.apworld
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0001/keymasters_keep.apworld">https://github.com/SerpentAI/Archipelago/releases/download/kmk-pre-0001/keymasters_keep.apworld</a>

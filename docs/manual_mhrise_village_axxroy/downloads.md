@@ -1,10 +1,10 @@
 # 
 
 ## Latest
-- https://github.com/axxroytovu/archipelago_manuals/releases/download/Rise_1.0.0/manual_mhrise_village_axxroy.apworld
+- <a href="https://github.com/axxroytovu/archipelago_manuals/releases/download/Rise_1.0.0/manual_mhrise_village_axxroy.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
 #### v1.0.0
-- https://github.com/axxroytovu/archipelago_manuals/releases/download/Rise_1.0.0/manual_mhrise_village_axxroy.apworld
+- <a href="https://github.com/axxroytovu/archipelago_manuals/releases/download/Rise_1.0.0/manual_mhrise_village_axxroy.apworld">https://github.com/axxroytovu/archipelago_manuals/releases/download/Rise_1.0.0/manual_mhrise_village_axxroy.apworld</a>
 #### v0.1.1
-- https://github.com/axxroytovu/archipelago_manuals/releases/download/Rise_0.1.1/manual_mhrise_village_axxroy.apworld
+- <a href="https://github.com/axxroytovu/archipelago_manuals/releases/download/Rise_0.1.1/manual_mhrise_village_axxroy.apworld">https://github.com/axxroytovu/archipelago_manuals/releases/download/Rise_0.1.1/manual_mhrise_village_axxroy.apworld</a>

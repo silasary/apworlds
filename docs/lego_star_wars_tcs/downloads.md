@@ -1,24 +1,24 @@
 # Lego Star Wars: The Complete Saga
 
 ## Latest
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.2.1/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.2.1/lego_star_wars_tcs.apworld">Latest Version (1.2.1)</a>
 
 ## All Versions
 #### v1.2.1
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.2.1/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.2.1/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.2.1/lego_star_wars_tcs.apworld</a>
 #### v1.2.0
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.2.0/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.2.0/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.2.0/lego_star_wars_tcs.apworld</a>
 #### v1.1.3
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.1.3/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.1.3/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.1.3/lego_star_wars_tcs.apworld</a>
 #### v1.1.2
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.1.2/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.1.2/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.1.2/lego_star_wars_tcs.apworld</a>
 #### v1.0.1
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.0.1/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.0.1/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.0.1/lego_star_wars_tcs.apworld</a>
 #### v1.0.0
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.0.0/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.0.0/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.0.0/lego_star_wars_tcs.apworld</a>
 #### v0.2.1
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.2.1/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.2.1/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.2.1/lego_star_wars_tcs.apworld</a>
 #### v0.2.0
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.2.0/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.2.0/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.2.0/lego_star_wars_tcs.apworld</a>
 #### v0.1.0
-- https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.1.0/lego_star_wars_tcs.apworld
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.1.0/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v0.1.0/lego_star_wars_tcs.apworld</a>

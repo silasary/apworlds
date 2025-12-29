@@ -1,12 +1,12 @@
 # 
 
 ## Latest
-- https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.2.0/sdc.apworld
+- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.2.0/sdc.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
 #### v0.2.0
-- https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.2.0/sdc.apworld
+- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.2.0/sdc.apworld">https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.2.0/sdc.apworld</a>
 #### v0.1.1
-- https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.1.1/sdc.apworld
+- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.1.1/sdc.apworld">https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.1.1/sdc.apworld</a>
 #### v0.1.0
-- https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.1.0/sdc.apworld
+- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.1.0/sdc.apworld">https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.1.0/sdc.apworld</a>

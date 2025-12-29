@@ -1,12 +1,12 @@
 # Links Awakening DX
 
 ## Latest
-- https://github.com/threeandthreee/Archipelago/releases/download/v9.4/ladx.apworld
+- <a href="https://github.com/threeandthreee/Archipelago/releases/download/v9.4/ladx.apworld">Latest Version (9.4)</a>
 
 ## All Versions
 #### v9.4
-- https://github.com/threeandthreee/Archipelago/releases/download/v9.4/ladx.apworld
+- <a href="https://github.com/threeandthreee/Archipelago/releases/download/v9.4/ladx.apworld">https://github.com/threeandthreee/Archipelago/releases/download/v9.4/ladx.apworld</a>
 #### v9.3
-- https://github.com/threeandthreee/Archipelago/releases/download/v9.3/ladx.apworld
+- <a href="https://github.com/threeandthreee/Archipelago/releases/download/v9.3/ladx.apworld">https://github.com/threeandthreee/Archipelago/releases/download/v9.3/ladx.apworld</a>
 #### v9.2
-- https://github.com/threeandthreee/Archipelago/releases/download/v9.2/ladx.apworld
+- <a href="https://github.com/threeandthreee/Archipelago/releases/download/v9.2/ladx.apworld">https://github.com/threeandthreee/Archipelago/releases/download/v9.2/ladx.apworld</a>

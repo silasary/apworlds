@@ -1,84 +1,84 @@
 # CrossCode
 
 ## Latest
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.4/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.4/crosscode.apworld">Latest Version (0.7.4)</a>
 
 ## All Versions
 #### v0.7.4
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.4/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.4/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.4/crosscode.apworld</a>
 #### v0.7.3
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.3/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.3/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.3/crosscode.apworld</a>
 #### v0.7.2
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.2/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.2/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.2/crosscode.apworld</a>
 #### v0.7.1
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.1/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.1/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.1/crosscode.apworld</a>
 #### v0.7.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0/crosscode.apworld</a>
 #### v0.7.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.1/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.1/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.1/crosscode.apworld</a>
 #### v0.7.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.2/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.2/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.2/crosscode.apworld</a>
 #### v0.7.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.3/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.3/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.3/crosscode.apworld</a>
 #### v0.6.11
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.11/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.11/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.11/crosscode.apworld</a>
 #### v0.6.10
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.10/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.10/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.10/crosscode.apworld</a>
 #### v0.6.9
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.9/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.9/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.9/crosscode.apworld</a>
 #### v0.6.8
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.8/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.8/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.8/crosscode.apworld</a>
 #### v0.6.7
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.7/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.7/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.7/crosscode.apworld</a>
 #### v0.6.6
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.6/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.6/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.6/crosscode.apworld</a>
 #### v0.6.5
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.5/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.5/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.5/crosscode.apworld</a>
 #### v0.6.4
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.4/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.4/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.4/crosscode.apworld</a>
 #### v0.6.3
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.3/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.3/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.3/crosscode.apworld</a>
 #### v0.6.2
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.2/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.2/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.2/crosscode.apworld</a>
 #### v0.6.1
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.1/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.1/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.1/crosscode.apworld</a>
 #### v0.6.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0/crosscode.apworld</a>
 #### v0.6.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.1/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.1/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.1/crosscode.apworld</a>
 #### v0.6.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.2/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.2/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.2/crosscode.apworld</a>
 #### v0.6.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.3/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.3/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.3/crosscode.apworld</a>
 #### v0.6.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.4/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.4/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.4/crosscode.apworld</a>
 #### v0.6.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.5/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.5/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.5/crosscode.apworld</a>
 #### v0.5.1
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.1/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.1/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.1/crosscode.apworld</a>
 #### v0.5.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0/crosscode.apworld</a>
 #### v0.5.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre1/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre1/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre1/crosscode.apworld</a>
 #### v0.5.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre2/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre2/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre2/crosscode.apworld</a>
 #### v0.5.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre4/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre4/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre4/crosscode.apworld</a>
 #### v0.5.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre5/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre5/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0-pre5/crosscode.apworld</a>
 #### v0.4.6
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.6/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.6/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.6/crosscode.apworld</a>
 #### v0.4.5
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.5/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.5/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.5/crosscode.apworld</a>
 #### v0.4.4
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.4/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.4/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.4/crosscode.apworld</a>
 #### v0.4.3
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.3/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.3/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.3/crosscode.apworld</a>
 #### v0.4.2
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.2/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.2/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.2/crosscode.apworld</a>
 #### v0.4.1
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.1/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.1/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.1/crosscode.apworld</a>
 #### v0.4.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.0/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.0/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.0/crosscode.apworld</a>
 #### v0.4.0
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.0-pre6/crosscode.apworld
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.0-pre6/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.0-pre6/crosscode.apworld</a>

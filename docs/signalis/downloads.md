@@ -1,14 +1,14 @@
 # Signalis
 
 ## Latest
-- https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.2/signalis.apworld
+- <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.2/signalis.apworld">Latest Version (0.1.2)</a>
 
 ## All Versions
 #### v0.1.2
-- https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.2/signalis.apworld
+- <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.2/signalis.apworld">https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.2/signalis.apworld</a>
 #### v0.1.1
-- https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.1/signalis.apworld
+- <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.1/signalis.apworld">https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.1/signalis.apworld</a>
 #### v0.1.0
-- https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/release/signalis.apworld
+- <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/release/signalis.apworld">https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/release/signalis.apworld</a>
 #### v0.1.0
-- https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.0/signalis.apworld
+- <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.0/signalis.apworld">https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.0/signalis.apworld</a>

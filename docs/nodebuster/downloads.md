@@ -1,12 +1,12 @@
 # Nodebuster
 
 ## Latest
-- https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.1.0/nodebuster.apworld
+- <a href="https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.1.0/nodebuster.apworld">Latest Version (0.1.0)</a>
 
 ## All Versions
 #### v0.1.0
-- https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.1.0/nodebuster.apworld
+- <a href="https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.1.0/nodebuster.apworld">https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.1.0/nodebuster.apworld</a>
 #### v0.0.1
-- https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.0.1/nodebuster.apworld
+- <a href="https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.0.1/nodebuster.apworld">https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.0.1/nodebuster.apworld</a>
 #### v0.0.1
-- https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.0.1hf/nodebuster.apworld
+- <a href="https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.0.1hf/nodebuster.apworld">https://github.com/Emerald836/Emerlads-Nodebuster_AP_Mod/releases/download/v0.0.1hf/nodebuster.apworld</a>

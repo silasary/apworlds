@@ -1,28 +1,28 @@
 # Hammerwatch
 
 ## Latest
-- https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.3/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.3/hammerwatch.apworld">Latest Version (1.2.3)</a>
 
 ## All Versions
 #### v1.2.3
-- https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.3/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.3/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.3/hammerwatch.apworld</a>
 #### v1.2.2
-- https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.2/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.2/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.2/hammerwatch.apworld</a>
 #### v1.2
-- https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2/hammerwatch.apworld</a>
 #### v1.1.13
-- https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.1.13/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.1.13/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.1.13/hammerwatch.apworld</a>
 #### v1.1.4
-- https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.1.4/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.1.4/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.1.4/hammerwatch.apworld</a>
 #### v1.1
-- https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.1/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.1/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.1/hammerwatch.apworld</a>
 #### v1.0.4
-- https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.0.4/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.0.4/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.0.4/hammerwatch.apworld</a>
 #### v1.0
-- https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.0/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.0/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.0/hammerwatch.apworld</a>
 #### v0.8
-- https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.8/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.8/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.8/hammerwatch.apworld</a>
 #### v0.7.1
-- https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.7.1/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.7.1/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.7.1/hammerwatch.apworld</a>
 #### v0.7
-- https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.7/hammerwatch.apworld
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.7/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v0.7/hammerwatch.apworld</a>

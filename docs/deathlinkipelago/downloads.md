@@ -1,50 +1,50 @@
 # DeathLinkipelago
 
 ## Latest
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.13.0/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.13.0/deathlinkipelago.apworld">Latest Version (0.13.0)</a>
 
 ## All Versions
 #### v0.13.0
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.13.0/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.13.0/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.13.0/deathlinkipelago.apworld</a>
 #### v0.12.1
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.12.1hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.12.1hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.12.1hf/deathlinkipelago.apworld</a>
 #### v0.12
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.12/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.12/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.12/deathlinkipelago.apworld</a>
 #### v0.11.3
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.3hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.3hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.3hf/deathlinkipelago.apworld</a>
 #### v0.11.2
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.2hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.2hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.2hf/deathlinkipelago.apworld</a>
 #### v0.11.1
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.1hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.1hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11.1hf/deathlinkipelago.apworld</a>
 #### v0.11
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.11/deathlinkipelago.apworld</a>
 #### v0.10
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.10/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.10/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.10/deathlinkipelago.apworld</a>
 #### v0.9.1
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.9.1hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.9.1hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.9.1hf/deathlinkipelago.apworld</a>
 #### v0.9
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.9/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.9/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.9/deathlinkipelago.apworld</a>
 #### v0.8
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.8/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.8/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.8/deathlinkipelago.apworld</a>
 #### v0.7.2
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7.2hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7.2hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7.2hf/deathlinkipelago.apworld</a>
 #### v0.7.1
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7.1hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7.1hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7.1hf/deathlinkipelago.apworld</a>
 #### v0.7
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.7/deathlinkipelago.apworld</a>
 #### v0.6
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.6/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.6/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.6/deathlinkipelago.apworld</a>
 #### v0.5.2
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5.2hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5.2hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5.2hf/deathlinkipelago.apworld</a>
 #### v0.5.1
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5.1hf/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5.1hf/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5.1hf/deathlinkipelago.apworld</a>
 #### v0.5
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.5/deathlinkipelago.apworld</a>
 #### v0.4
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.4/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.4/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.4/deathlinkipelago.apworld</a>
 #### v0.3
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.3/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.3/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.3/deathlinkipelago.apworld</a>
 #### v0.2
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.2/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.2/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.2/deathlinkipelago.apworld</a>
 #### v0.1
-- https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.1/deathlinkipelago.apworld
+- <a href="https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.1/deathlinkipelago.apworld">https://github.com/SWCreeperKing/DeathLinkipelago/releases/download/v.0.1/deathlinkipelago.apworld</a>

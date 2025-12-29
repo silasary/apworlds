@@ -1,52 +1,52 @@
 # gzDoom
 
 ## Latest
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld">Latest Version (0.7.0.post2)</a>
 
 ## All Versions
 #### v0.7.0.post2
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld</a>
 #### v0.7.0
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld</a>
 #### v0.6.6
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.6/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.6/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.6/gzdoom.apworld</a>
 #### v0.6.5
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.5/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.5/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.5/gzdoom.apworld</a>
 #### v0.6.4
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.4/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.4/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.4/gzdoom.apworld</a>
 #### v0.6.3
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.3/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.3/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.3/gzdoom.apworld</a>
 #### v0.6.2
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.2/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.2/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.2/gzdoom.apworld</a>
 #### v0.6.1
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.1/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.1/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.1/gzdoom.apworld</a>
 #### v0.6.0
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.6.0/gzdoom.apworld</a>
 #### v0.5.0
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.5.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.5.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.5.0/gzdoom.apworld</a>
 #### v0.4.3
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.3/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.3/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.3/gzdoom.apworld</a>
 #### v0.4.2
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.2/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.2/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.2/gzdoom.apworld</a>
 #### v0.4.1
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.1/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.1/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.1/gzdoom.apworld</a>
 #### v0.4.0
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.4.0/gzdoom.apworld</a>
 #### v0.3.5.post2
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.5/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.5/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.5/gzdoom.apworld</a>
 #### v0.3.5
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.5/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.5/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.5/gzdoom.apworld</a>
 #### v0.3.4
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.4/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.4/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.4/gzdoom.apworld</a>
 #### v0.3.3
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.3/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.3/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.3/gzdoom.apworld</a>
 #### v0.3.2
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.2/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.2/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.2/gzdoom.apworld</a>
 #### v0.3.1
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.1/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.1/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.1/gzdoom.apworld</a>
 #### v0.3.0
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.3.0/gzdoom.apworld</a>
 #### v0.2.0
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.2.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.2.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.2.0/gzdoom.apworld</a>
 #### v0.1.0
-- https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.1.0/gzdoom.apworld
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.1.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.1.0/gzdoom.apworld</a>

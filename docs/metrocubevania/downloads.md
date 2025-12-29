@@ -1,10 +1,10 @@
 # MetroCUBEvania
 
 ## Latest
-- https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_0.2.0_beta/metrocubevania.apworld
+- <a href="https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_0.2.0_beta/metrocubevania.apworld">Latest Version (0.2.0b0)</a>
 
 ## All Versions
 #### v0.2.0b0
-- https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_0.2.0_beta/metrocubevania.apworld
+- <a href="https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_0.2.0_beta/metrocubevania.apworld">https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_0.2.0_beta/metrocubevania.apworld</a>
 #### v0.1.1
-- https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_0.1.1/metrocubevania.apworld
+- <a href="https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_0.1.1/metrocubevania.apworld">https://github.com/ap-metrocubevania/ap-metrocubevania/releases/download/v_0.1.1/metrocubevania.apworld</a>

@@ -1,16 +1,16 @@
 # Hexcells Infinite
 
 ## Latest
-- https://github.com/Heaxeus/Archipelago/releases/download/v1.2/hexcells_infinite.apworld
+- <a href="https://github.com/Heaxeus/Archipelago/releases/download/v1.2/hexcells_infinite.apworld">Latest Version (1.2)</a>
 
 ## All Versions
 #### v1.2
-- https://github.com/Heaxeus/Archipelago/releases/download/v1.2/hexcells_infinite.apworld
+- <a href="https://github.com/Heaxeus/Archipelago/releases/download/v1.2/hexcells_infinite.apworld">https://github.com/Heaxeus/Archipelago/releases/download/v1.2/hexcells_infinite.apworld</a>
 #### v1.1
-- https://github.com/Heaxeus/Archipelago/releases/download/v1.1/hexcells_infinite.apworld
+- <a href="https://github.com/Heaxeus/Archipelago/releases/download/v1.1/hexcells_infinite.apworld">https://github.com/Heaxeus/Archipelago/releases/download/v1.1/hexcells_infinite.apworld</a>
 #### v1.0
-- https://github.com/Heaxeus/Archipelago/releases/download/v1.0/hexcells_infinite.apworld
+- <a href="https://github.com/Heaxeus/Archipelago/releases/download/v1.0/hexcells_infinite.apworld">https://github.com/Heaxeus/Archipelago/releases/download/v1.0/hexcells_infinite.apworld</a>
 #### v0.5
-- https://github.com/Heaxeus/Archipelago/releases/download/v0.5/hexcells_infinite.apworld
+- <a href="https://github.com/Heaxeus/Archipelago/releases/download/v0.5/hexcells_infinite.apworld">https://github.com/Heaxeus/Archipelago/releases/download/v0.5/hexcells_infinite.apworld</a>
 #### v0.4
-- https://github.com/Heaxeus/Archipelago/releases/download/v0.4/hexcells_infinite.apworld
+- <a href="https://github.com/Heaxeus/Archipelago/releases/download/v0.4/hexcells_infinite.apworld">https://github.com/Heaxeus/Archipelago/releases/download/v0.4/hexcells_infinite.apworld</a>
