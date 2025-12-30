@@ -8,8 +8,8 @@ As the mandatory client runs only on Windows, no other systems are supported.
 
 - [Duckstation](https://www.duckstation.org) - Detailed installation instructions for Duckstation can be found at the above link.
 - Archipelago version 0.6.1 or later.
-- The [Spyro 3 Archipelago Client and .apworld](https://github.com/ArsonAssassin/S3AP/releases)
-- A legal US (NTSC-U) Spyro: Year of the Dragon v1.1 (Greatest Hits version) ROM.  We cannot help with this step.
+- The [Spyro 3 Archipelago Client and .apworld](https://github.com/Uroogla/S3AP/releases)
+- A legal US (NTSC-U) Spyro: Year of the Dragon NTSC-U (US release) ROM.  We cannot help with this step.
 
 
 ## Create a Config (.yaml) File
@@ -48,7 +48,7 @@ You may upload this to [the Archipelago website](https://archipelago.gg/uploads)
 2. Double click the apworld to install to your Archipelago installation.
 3. Extract S3AP.zip and note where S3AP.exe is.
 4. Open Duckstation and load into Spyro: Year of the Dragon.
-5. Start a new game (or if continuing an exisiting seed, load into that save file).
+5. Start a new game (or if continuing an existing seed, load into that save file).
 6. Open S3AP.exe, the Spyro 3 client.  You will likely want to do so as an administrator.
 7. In the top left of the Spyro 3 client, click the "burger" menu to open the settings page.
 8. Enter your host, slot, and optionally your password. 

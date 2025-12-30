@@ -1,11 +1,9 @@
 # Ape Escape
 
 ## Latest
-- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/0.20/apeescape.apworld">Latest Version (0.20)</a>
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.4/apeescape.apworld">Latest Version (0.9.4)</a>
 
 ## All Versions
-#### v0.20
-- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/0.20/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/0.20/apeescape.apworld</a>
 #### v0.9.4
 - <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.4/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.4/apeescape.apworld</a>
 #### v0.9.3

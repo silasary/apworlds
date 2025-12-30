@@ -16,8 +16,6 @@
 - <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.16/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.16/apworld_manager.apworld</a>
 #### v0.0.15
 - <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.15/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.15/apworld_manager.apworld</a>
-#### v0.0.14
-- <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.14/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.14/apworld_manager.apworld</a>
 #### v0.0.13
 - <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.13/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.13/apworld_manager.apworld</a>
 #### v0.0.12
@@ -38,8 +36,6 @@
 - <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.5/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.5/apworld_manager.apworld</a>
 #### v0.0.4
 - <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.4/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.4/apworld_manager.apworld</a>
-#### v0.0.3
-- <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.3/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.3/apworld_manager.apworld</a>
 #### v0.0.2
 - <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.2/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.2/apworld_manager.apworld</a>
 #### v0.0.1

@@ -1,27 +1,9 @@
 # ChecksMate
 
 ## Latest
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.12.01/checksmate.apworld">Latest Version (2023.post12)</a>
+- <a href="https://github.com/chesslogic/chessv/releases/download/v0.3.1/checksmate.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
-#### v2023.post12
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.12.01/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.12.01/checksmate.apworld</a>
-#### v2023.post11
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.11.06/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.11.06/checksmate.apworld</a>
-#### v2023.post11
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.11.10/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.11.10/checksmate.apworld</a>
-#### v2023.post11
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.11.13/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.11.13/checksmate.apworld</a>
-#### v2023.post11
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.11.16/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.11.16/checksmate.apworld</a>
-#### v2023.post11
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.11.21/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.11.21/checksmate.apworld</a>
-#### v2023.post11
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.11.25/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.11.25/checksmate.apworld</a>
-#### v2023.post11
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.11.28/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.11.28/checksmate.apworld</a>
-#### v2023.post11
-- <a href="https://github.com/chesslogic/chessv/releases/download/v2023.11.29/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v2023.11.29/checksmate.apworld</a>
 #### v0.3.1
 - <a href="https://github.com/chesslogic/chessv/releases/download/v0.3.1/checksmate.apworld">https://github.com/chesslogic/chessv/releases/download/v0.3.1/checksmate.apworld</a>
 #### v0.3.0

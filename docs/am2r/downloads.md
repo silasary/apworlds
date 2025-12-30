@@ -1,15 +1,9 @@
 # AM2R
 
 ## Latest
-- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-4/am2r.apworld">Latest Version (4)</a>
+- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.2-M2/am2r.apworld">Latest Version (1.4.2)</a>
 
 ## All Versions
-#### v4
-- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-4/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-4/am2r.apworld</a>
-#### v3
-- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-3/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-3/am2r.apworld</a>
-#### v2
-- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/beta-2/am2r.apworld</a>
 #### v1.4.2
 - <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.2-M2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.2-M2/am2r.apworld</a>
 #### v1.4.1

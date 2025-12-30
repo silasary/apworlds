@@ -6,14 +6,6 @@
 ## All Versions
 #### v1.0.4
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.4/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.4/cotnd.apworld</a>
-#### v1.0.3
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.3/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.3/cotnd.apworld</a>
-#### v1.0.2
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.2/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.2/cotnd.apworld</a>
-#### v1.0.1
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.1/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.1/cotnd.apworld</a>
-#### v1.0.0
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.0/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.0/cotnd.apworld</a>
 #### v0.3.5
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.3.5/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.3.5/cotnd.apworld</a>
 #### v0.3.4

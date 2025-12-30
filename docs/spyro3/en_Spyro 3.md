@@ -8,7 +8,7 @@ config file.
 ## Which version of the game is supported?
 
 This is an Archipelago implementation of the PlayStation 1 version of Spyro: Year of the Dragon (2000), **not**
-the Reignited Trilogy version (2018).  This randomizer requires use of the Greatest Hits (often called version 1.1 or revision 1)
+the Reignited Trilogy version (2018).  This randomizer requires use of either
 NTSC-U (North America, as opposed to the PAL/European) version, due to differences in the internal workings of the game.
 
 ## What does randomization do to this game?
@@ -20,15 +20,20 @@ This does not randomize the location of eggs or gems, shuffle entrances, or make
 While previous versions of this Archipelago implementation were compatible with the standalone Spyro 3 randomizer,
 support has been removed based on community feedback and developer time constraints.
 
-Further, the underlying game logic is unchanged.  For instance, accessing the balloon to Buzz in Sunrise Spring requires
+When open world mode is disabled, the underlying game logic is unchanged.  For instance, accessing the balloon to Buzz in Sunrise Spring requires
 helping all 5 NPCs in this world, whether or not they give an egg for the assistance.  The HUD's egg count
 shows how many egg items you have received, while the in game Atlas shows which checks you have completed.
 
-## What items and locations get shuffled?
-Eggs are always shuffled.  Based on the player's options, skill points, and milestones for reaching certain numbers of gems
-per level or overall may also release checks.
+Open World mode gives access to all 4 homeworlds immediately, removing some eggs from the game.
 
-The item pool will always contain 150 eggs.  Depending on the player's options, companion unlocks or all Moneybags unlocks may
+It is possible to change the access restrictions for normal levels, as well.
+
+## What items and locations get shuffled?
+Eggs are always shuffled.  Based on the player's options, skill points, life bottles, individual gems,
+and milestones for reaching certain numbers of gems per level or overall may also release checks.
+
+The item pool will contain 150 eggs, unless the goal is Egg Hunt.
+Depending on the player's options, companion unlocks or all Moneybags unlocks may
 be shuffled into the pool, rather than having the player pay Moneybags.  Leftover items will be "filler", based on the player's
 options.  Examples include giving extra lives, temporary invincibility, changing Spyro's color, or making the player Sparxless.
 
@@ -68,5 +73,5 @@ If playing on a new save file, you will still need to get to the end of each lev
 
 The following are known issues that can impact your gameplay.
 
-- Companionsanity and Moneybagssanity can very rarely result in softlocks in a few places.
-- Leaving the client and game idle for extended periods of time may result in errors.
+- Leaving the client and game open for extended periods of time may result in errors.
+- Receiving invincibility in a time attack stops the timer and doesn't automatically complete until invincibility runs out, you give up (which counts as victory), or crash (counts as victory)
