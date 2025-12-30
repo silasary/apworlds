@@ -1,11 +1,9 @@
 # Crypt of the NecroDancer
 
 ## Latest
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.4/cotnd.apworld">Latest Version (1.0.4)</a>
+- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.3.5/cotnd.apworld">Latest Version (0.3.5)</a>
 
 ## All Versions
-#### v1.0.4
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.4/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/1.0.4/cotnd.apworld</a>
 #### v0.3.5
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.3.5/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.3.5/cotnd.apworld</a>
 #### v0.3.4
