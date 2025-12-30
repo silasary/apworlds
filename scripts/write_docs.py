@@ -38,7 +38,7 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
             os.remove(filepath)
             print(f"Removed outdated documentation file: {filepath}")
 
-    pages = [Path(f).stem for f in filenames]
+    pages = [Path(f).stem for f in filenames if f.endswith(".md")]
 
     def langfile(file_stem: str, front: bool) -> dict[str, str]:
         lang = langcodes.Language.get(file_stem.split("_")[0 if front else 1]).display_name()
