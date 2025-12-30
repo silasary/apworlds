@@ -17,6 +17,7 @@ with open("templates/index_template.mustache") as f:
 
 
 def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[str, Any]) -> None:
+    versions = [v for v in versions if not v.get("ignore", False)]
     if not versions:
         return
     lower_stem = world_stem.lower()
