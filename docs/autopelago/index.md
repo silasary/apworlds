@@ -5,7 +5,7 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Autopelago">en_Autopelago</a>
+- <a href="en_Autopelago">English</a>
 
 ## Setup Guide
 
