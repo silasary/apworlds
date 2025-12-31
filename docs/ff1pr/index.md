@@ -5,8 +5,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_FF1 Pixel Remaster">en_FF1 Pixel Remaster</a>
+- <a href="en_FF1 Pixel Remaster">English</a>
 
 ## Setup Guide
-- <a href="setup_en">setup_en</a>
+- <a href="setup_en">English</a>
 
