@@ -1,12 +1,15 @@
 # Xenoblade X
 
+Xenoblade Chronicles X another 100+ hour game. Sounds like fun?
+
+
 ## Downloads
 - <a href="https://github.com/MaragonMH/Archipelago/releases/download/0.1.12/xenobladex.apworld">Latest Version (0.1.12)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Xenoblade X">en_Xenoblade X</a>
+- <a href="en_Xenoblade X">English</a>
 
 ## Setup Guide
-- <a href="setup_en">setup_en</a>
+- <a href="setup_en">English</a>
 

@@ -1,5 +1,9 @@
 # Monster Hunter Frontier
 
+Monster Hunter is a game about hunting monsters. Collect items, defeat monsters, and progress through the ranks.
+Monsters get progressively harder as the ranks go on.
+
+
 ## Downloads
 - <a href="https://github.com/matthe815/APFrontier/releases/download/v1.0/monsterhunterfrontier.apworld">Latest Version (1.0)</a>
 - <a href="downloads.html">View all versions</a>

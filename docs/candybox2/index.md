@@ -1,11 +1,14 @@
 # Candy Box 2
 
+Candy Box 2 is a text-based browser RPG that features beautiful ASCII art
+
+
 ## Downloads
 - <a href="https://github.com/vicr123/Archipelago/releases/download/20251006-1/candybox2.apworld">Latest Version (20251006.post1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Candy Box 2">en_Candy Box 2</a>
+- <a href="en_Candy Box 2">English</a>
 
 ## Setup Guide
 

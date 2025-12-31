@@ -4,7 +4,10 @@
 - <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.1.3/albw.apworld">Latest Version (0.1.3)</a>
 
 ## All Versions
+
 #### v0.1.3
 - <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.1.3/albw.apworld">https://github.com/randomsalience/albw-archipelago/releases/download/v0.1.3/albw.apworld</a>
+
 #### v0.1.2
 - <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.1.2/albw.apworld">https://github.com/randomsalience/albw-archipelago/releases/download/v0.1.2/albw.apworld</a>
+

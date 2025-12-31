@@ -1,7 +1,10 @@
-# 
+# Silver Daze
+
+This will describe Silver Daze eventually
+
 
 ## Downloads
-- <a href="https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.6.1/silverdaze.apworld">Latest Version (0.6.1)</a>
+- <a href="https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.6.2/silverdaze.apworld">Latest Version (0.6.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

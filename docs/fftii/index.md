@@ -1,11 +1,15 @@
 # Final Fantasy Tactics Ivalice Island
 
+An open world mod for Final Fantasy Tactics for Archipelago.
+Find all the Zodiac Stones and make your way to Murond Death City to confront Altima!
+
+
 ## Downloads
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.1.0/fftii.apworld">Latest Version (0.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Final Fantasy Tactics Ivalice Island">en_Final Fantasy Tactics Ivalice Island</a>
+- <a href="en_Final Fantasy Tactics Ivalice Island">English</a>
 
 ## Setup Guide
 

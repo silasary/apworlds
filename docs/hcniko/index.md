@@ -1,11 +1,14 @@
 # Here Comes Niko!
 
+A cozy little game, about frogs and being a good friend
+
+
 ## Downloads
 - <a href="https://github.com/niieli/Niko-Archipelago/releases/download/0.8.0/hcniko.apworld">Latest Version (0.8.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Here Comes Niko!">en_Here Comes Niko!</a>
+- <a href="en_Here Comes Niko!">English</a>
 
 ## Setup Guide
 

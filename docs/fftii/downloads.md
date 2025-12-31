@@ -4,5 +4,7 @@
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.1.0/fftii.apworld">Latest Version (0.1.0)</a>
 
 ## All Versions
+
 #### v0.1.0
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.1.0/fftii.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.1.0/fftii.apworld</a>
+

@@ -1,5 +1,10 @@
 # Factorio - Space Age Without Space
 
+Factorio is a game about automation. You play as an engineer who has crash landed on the planet
+Nauvis, an inhospitable world filled with dangerous creatures called biters. Build a factory,
+research new technologies, and become more efficient in your quest to build a rocket and return home.
+
+
 ## Downloads
 - <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.8.3/factorio_saws.apworld">Latest Version (0.8.3)</a>
 - <a href="downloads.html">View all versions</a>
@@ -7,9 +12,7 @@
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">setup_en</a>
+- <a href="setup_en">English</a>
 
 ## Other Documentation files
-- <a href="connect-to-ap-server">connect-to-ap-server</a>
 - <a href="en_Factorio">en_Factorio</a>
-- <a href="factorio-download">factorio-download</a>

@@ -1,5 +1,8 @@
 # Bomberman The Second Attack
 
+The greatest game of all time.
+
+
 ## Downloads
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombtsa_v0.1.2/bomberman_tsa.apworld">Latest Version (0.1.2)</a>
 - <a href="downloads.html">View all versions</a>

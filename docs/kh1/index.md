@@ -1,11 +1,15 @@
 # Kingdom Hearts
 
+Kingdom Hearts is an action RPG following Sora on his journey 
+through many worlds to find Riku and Kairi.
+
+
 ## Downloads
 - <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.11.0/kh1.apworld">Latest Version (0.11.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Kingdom Hearts">en_Kingdom Hearts</a>
+- <a href="en_Kingdom Hearts">English</a>
 
 ## Setup Guide
 

@@ -1,11 +1,14 @@
 # Borderlands 2
 
+Borderlands 2 is a looter shooter we all love.
+
+
 ## Downloads
 - <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-41/borderlands2.apworld">Latest Version (41)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Borderlands 2">en_Borderlands 2</a>
+- <a href="en_Borderlands 2">English</a>
 
 ## Setup Guide
 

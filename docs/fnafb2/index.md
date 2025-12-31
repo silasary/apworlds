@@ -1,4 +1,7 @@
-# 
+# Five Nights at Fuckboy&#x27;s 2
+
+Are you Freddy for ready?
+
 
 ## Downloads
 - <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.3.1/fnafb2.apworld">Latest Version (0.3.1)</a>

@@ -1,12 +1,16 @@
 # Jigsaw
 
+Make a Jigsaw puzzle! But first you&#x27;ll have to find your pieces.
+Connect the pieces to unlock more. Goal: solve the puzzle of course!
+
+
 ## Downloads
 - <a href="https://github.com/spineraks-org/ArchipelagoJigsaw/releases/download/v0.9.1/jigsaw.apworld">Latest Version (0.9.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Jigsaw">en_Jigsaw</a>
+- <a href="en_Jigsaw">English</a>
 
 ## Setup Guide
-- <a href="setup_en">setup_en</a>
+- <a href="setup_en">English</a>
 

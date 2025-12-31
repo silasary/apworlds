@@ -1,5 +1,8 @@
 # lingo2
 
+
+
+
 ## Downloads
 - <a href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v8.0.3/lingo2.apworld">Latest Version (8.0.3)</a>
 - <a href="downloads.html">View all versions</a>
