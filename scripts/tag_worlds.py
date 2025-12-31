@@ -144,10 +144,9 @@ def import_and_introspect_world(world: pathlib.Path, manifest: dict, versions: d
         if not manifest.get("game"):
             manifest["game"] = world_class.game
 
-        if not manifest.get("description"):
-            manifest["description"] = world_class.__doc__ or ""
-            if manifest["description"]:
-                manifest["description"] = inspect.cleandoc(manifest["description"]).strip()
+        description = world_class.__doc__ or ""
+        if description:
+            manifest["description"] = inspect.cleandoc(description).strip()
 
         save(world, manifest)
 
