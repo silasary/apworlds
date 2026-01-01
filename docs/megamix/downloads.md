@@ -8,6 +8,9 @@
 #### v1.4.2
 - <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.4.2B/megamix.apworld">https://github.com/Cynichill/DivaAPworld/releases/download/1.4.2B/megamix.apworld</a>
 
+#### v1.4.2
+- <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.4.3B/megamix.apworld">https://github.com/Cynichill/DivaAPworld/releases/download/1.4.3B/megamix.apworld</a>
+
 #### v1.4.0
 - <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.4.0B/megamix.apworld">https://github.com/Cynichill/DivaAPworld/releases/download/1.4.0B/megamix.apworld</a>
 

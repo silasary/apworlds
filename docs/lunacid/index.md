@@ -9,7 +9,7 @@ sleeping old one below. On the way there will be many creatures and secrets to d
 
 
 ## Downloads
-- <a href="https://github.com/Witchybun/LunacidAPClient/releases/download/0.9.10/lunacid.apworld">Latest Version (0.9.10)</a>
+- <a href="https://github.com/Witchybun/LunacidAPClient/releases/download/1.0.0-pre1/lunacid.apworld">Latest Version (1.0.0rc1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

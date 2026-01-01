@@ -7,10 +7,12 @@ what lies behind the madness going on in Halloween Hill.
 
 
 ## Downloads
-- <a href="https://github.com/AutomaticFrenzy/Archipelago/releases/download/0.2.1/loonyland.apworld">Latest Version (0.2.1)</a>
+- <a href="https://github.com/AutomaticFrenzy/Archipelago/releases/download/v0.2.1/loonyland.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Loonyland">English</a>
 
 ## Setup Guide
+- <a href="setup_en">English</a>
 

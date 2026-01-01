@@ -11,6 +11,9 @@
 #### v0.1.61
 - <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.61/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.61/commandmission.apworld</a>
 
+#### v0.1.7
+- <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.7/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.7/commandmission.apworld</a>
+
 #### v0.1.6.post2
 - <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.6/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.6/commandmission.apworld</a>
 
