@@ -4,7 +4,7 @@ Gauntlet Legends
 
 
 ## Downloads
-- <a href="https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v2.0.3/gl.apworld">Latest Version (2.0.3)</a>
+- <a href="https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v2.1.0/gl.apworld">Latest Version (2.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

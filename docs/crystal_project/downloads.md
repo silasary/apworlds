@@ -1,9 +1,12 @@
 # Crystal Project
 
 ## Latest
-- <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.4/crystal_project.apworld">Latest Version (0.11.4)</a>
+- <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.12.0/crystal_project.apworld">Latest Version (0.12.0)</a>
 
 ## All Versions
+
+#### v0.12.0
+- <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.12.0/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.12.0/crystal_project.apworld</a>
 
 #### v0.11.4
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.4/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.4/crystal_project.apworld</a>
