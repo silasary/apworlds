@@ -3,18 +3,16 @@
 ## Required Software
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases).
-- A decrypted, North American A Link Between Worlds `.3ds` ROM. Instructions for dumping your ROM can be found [here](https://wiki.hacks.guide/wiki/3DS:Dump_titles_and_game_cartridges). **Make sure to select "decrypt" when dumping.**
-- [Lime3DS](https://github.com/Lime3DS/Lime3DS/releases) or [PabloMK7's Citra](https://github.com/PabloMK7/citra/releases).
+- A decrypted, North American A Link Between Worlds `.3ds` ROM. Instructions for dumping your ROM can be found [here](https://wiki.hacks.guide/wiki/3DS:Dump_titles_and_game_cartridges). **Make sure to select "decrypt" when dumping.** Note: for use with the Azahar emulator (below), rename the `.3ds` ROM to a `.cci` file. These files are identical, only the extension is different.
+- [Azahar](https://azahar-emu.org/pages/download/)
 - **The game must be played with the language set to English.**
 
 ## Installation
 
 1. Install the latest version of Archipelago.
 2. Download `albw.apworld` and put it in your `Archipelago/custom_worlds/` folder.
-3. Download and unzip `albwrandomizer.zip`. Put the `albwrandomizer` folder in your `Archipelago/lib/` folder.
- - If you already have an `albwrandomizer` *file* in your `lib` folder from a previous version, remove it.
- - If running from source, place the `albwrandomizer` folder in your `Archipelago` folder instead.
-4. In the emulator, select `File > Open Lime3DS Folder` or `File > Open Citra Folder`. Create a `load` folder inside this folder, and inside the `load` folder create a `mods` folder.
+3. In the emulator, select `File > Open Azahar Folder`. Create a `load` folder inside this folder, and inside the `load` folder create a `mods` folder.
+4. Also in the emulator, select `Emulation > Configure`. Then, in the general section, on the top, select `Debug`. Finally, at the bottom, ensure that the `Enable RPC Server` option is enabled.
 
 ## Generating a Game
 
