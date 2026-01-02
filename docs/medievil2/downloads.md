@@ -1,9 +1,12 @@
 # Medievil 2
 
 ## Latest
-- <a href="https://github.com/riezahughes/Medievil2APWorld/releases/download/v0.0.13/medievil2.apworld">Latest Version (0.0.13)</a>
+- <a href="https://github.com/riezahughes/Medievil2APWorld/releases/download/v0.0.14/medievil2.apworld">Latest Version (0.0.14)</a>
 
 ## All Versions
+
+#### v0.0.14
+- <a href="https://github.com/riezahughes/Medievil2APWorld/releases/download/v0.0.14/medievil2.apworld">https://github.com/riezahughes/Medievil2APWorld/releases/download/v0.0.14/medievil2.apworld</a>
 
 #### v0.0.13
 - <a href="https://github.com/riezahughes/Medievil2APWorld/releases/download/v0.0.13/medievil2.apworld">https://github.com/riezahughes/Medievil2APWorld/releases/download/v0.0.13/medievil2.apworld</a>

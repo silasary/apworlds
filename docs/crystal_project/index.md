@@ -4,7 +4,7 @@ Crystal Project is a mix of old school job based jRPG mixed with a ton of 3D pla
 
 
 ## Downloads
-- <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.12.0/crystal_project.apworld">Latest Version (0.12.0)</a>
+- <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.12.1/crystal_project.apworld">Latest Version (0.12.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

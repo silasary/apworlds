@@ -4,7 +4,7 @@ Glover is an N64 physics puzzle platforming game.
 
 
 ## Downloads
-- <a href="https://github.com/Smg065/GloverArchipelago/releases/download/beta/glover.apworld">Latest Version (0.1.0)</a>
+- <a href="https://github.com/Smg065/GloverArchipelago/releases/download/v1.0.0/glover.apworld">Latest Version (1.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
