@@ -122,3 +122,45 @@
 #### v0.4.0
 - <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.0-pre6/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.0-pre6/crosscode.apworld</a>
 
+#### v0.4.0rc5
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre5/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre5/crosscode.apworld</a>
+
+#### v0.4.0rc4
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre4/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre4/crosscode.apworld</a>
+
+#### v0.4.0rc3
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre3/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre3/crosscode.apworld</a>
+
+#### v0.4.0rc2
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre2/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre2/crosscode.apworld</a>
+
+#### v0.4.0rc1
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre1/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.4.0-pre1/crosscode.apworld</a>
+
+#### v0.3.0.2
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.3.0.2/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.3.0.2/crosscode.apworld</a>
+
+#### v0.3.0.1
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.3.0.1/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.3.0.1/crosscode.apworld</a>
+
+#### v0.3.0
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.3.0/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.3.0/crosscode.apworld</a>
+
+#### v0.3.0rc5
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.3.0-pre5/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.3.0-pre5/crosscode.apworld</a>
+
+#### v0.2.3
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.3/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.3/crosscode.apworld</a>
+
+#### v0.2.2
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.2/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.2/crosscode.apworld</a>
+
+#### v0.2.1
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.1/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.1/crosscode.apworld</a>
+
+#### v0.2.0
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.0/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.0/crosscode.apworld</a>
+
+#### v0.1.0
+- <a href="https://github.com/CodeTriangle/Archipelago/releases/download/0.1.0/crosscode.apworld">https://github.com/CodeTriangle/Archipelago/releases/download/0.1.0/crosscode.apworld</a>
+

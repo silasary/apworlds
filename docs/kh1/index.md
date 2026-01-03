@@ -5,7 +5,7 @@ through many worlds to find Riku and Kairi.
 
 
 ## Downloads
-- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.11.0/kh1.apworld">Latest Version (0.11.0)</a>
+- <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/2.4.3/kh1.apworld">Latest Version (2.4.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -44,6 +44,12 @@
 #### v0.2.0
 - <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.2.0/minishoot.apworld">https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.2.0/minishoot.apworld</a>
 
+#### v0.1.1
+- <a href="https://github.com/TheNooodle/Archipelago/releases/download/v0.1.1/minishoot.apworld">https://github.com/TheNooodle/Archipelago/releases/download/v0.1.1/minishoot.apworld</a>
+
+#### v0.1.0.post2
+- <a href="https://github.com/TheNooodle/Archipelago/releases/download/v0.1.0/minishoot.apworld">https://github.com/TheNooodle/Archipelago/releases/download/v0.1.0/minishoot.apworld</a>
+
 #### v0.1.0
 - <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.1.0/minishoot.apworld">https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.1.0/minishoot.apworld</a>
 

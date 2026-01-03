@@ -5,7 +5,7 @@ Sora on his journey through Castle Oblivion to find Riku and Kairi.
 
 
 ## Downloads
-- <a href="https://github.com/gaithernOrg/ArchipelagoKHCOM/releases/download/1.0.1/khcom.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/GoblinOrg/ArchipelagoKHCOM/releases/download/1.0.1/khcom.apworld">Latest Version (1.0.1.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

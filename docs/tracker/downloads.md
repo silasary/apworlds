@@ -149,6 +149,15 @@
 #### v0.1.8
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.1.8/tracker.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.1.8/tracker.apworld</a>
 
+#### v0.1.8
+- <a href="https://github.com/SunCat-s-Archipelago/UT-fixed-for-Longest-Async/releases/download/Tracker_v0.1.8-fixed/tracker.apworld">https://github.com/SunCat-s-Archipelago/UT-fixed-for-Longest-Async/releases/download/Tracker_v0.1.8-fixed/tracker.apworld</a>
+
+#### v0.1.8
+- <a href="https://github.com/SunCat-s-Archipelago/UT-fixed-for-Longest-Async/releases/download/Tracker_v0.1.8-fixed-0.2/tracker.apworld">https://github.com/SunCat-s-Archipelago/UT-fixed-for-Longest-Async/releases/download/Tracker_v0.1.8-fixed-0.2/tracker.apworld</a>
+
+#### v0.1.8
+- <a href="https://github.com/SunCat-s-Archipelago/UT-fixed-for-Longest-Async/releases/download/Tracker_v0.1.8-fixed-0.3/tracker.apworld">https://github.com/SunCat-s-Archipelago/UT-fixed-for-Longest-Async/releases/download/Tracker_v0.1.8-fixed-0.3/tracker.apworld</a>
+
 #### v0.1.7
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.1.7/tracker.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.1.7/tracker.apworld</a>
 

@@ -38,6 +38,9 @@
 #### v1.2.1
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.2.1/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.2.1/tevi.apworld</a>
 
+#### v0.6.3
+- <a href="https://github.com/BlackSoulKnight/Tevi_Archipelago/releases/download/v0.6.3/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Archipelago/releases/download/v0.6.3/tevi.apworld</a>
+
 #### v0.3
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/Ap.3/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/Ap.3/tevi.apworld</a>
 

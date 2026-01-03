@@ -8,6 +8,9 @@
 #### v0.15.0
 - <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.15.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.15.0/hades.apworld</a>
 
+#### v0.15.0
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.15.0-hotfix/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.15.0-hotfix/hades.apworld</a>
+
 #### v0.14.0
 - <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.14.0/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.14.0/hades.apworld</a>
 

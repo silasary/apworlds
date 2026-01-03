@@ -35,3 +35,6 @@
 #### v0.4.0
 - <a href="https://github.com/aki665/react-native-archipelago/releases/download/0.4.0/apgo.apworld">https://github.com/aki665/react-native-archipelago/releases/download/0.4.0/apgo.apworld</a>
 
+#### v0.1.0
+- <a href="https://github.com/SunCat-s-Archipelago/AP-KaitoKid/releases/download/apgo-with-groups-v0.1.0/apgo.apworld">https://github.com/SunCat-s-Archipelago/AP-KaitoKid/releases/download/apgo-with-groups-v0.1.0/apgo.apworld</a>
+

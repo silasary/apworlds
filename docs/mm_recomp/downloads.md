@@ -50,3 +50,15 @@
 #### v0.2.4
 - <a href="https://github.com/RecompRando/MMRecompRando/releases/download/v0.2.4/mm_recomp.apworld">https://github.com/RecompRando/MMRecompRando/releases/download/v0.2.4/mm_recomp.apworld</a>
 
+#### v0.2.3
+- <a href="https://github.com/LittleCube-hax/Archipelago/releases/download/v0.2.3/mm_recomp.apworld">https://github.com/LittleCube-hax/Archipelago/releases/download/v0.2.3/mm_recomp.apworld</a>
+
+#### v0.2.2
+- <a href="https://github.com/LittleCube-hax/Archipelago/releases/download/v0.2.2/mm_recomp.apworld">https://github.com/LittleCube-hax/Archipelago/releases/download/v0.2.2/mm_recomp.apworld</a>
+
+#### v0.2.2b0
+- <a href="https://github.com/LittleCube-hax/Archipelago/releases/download/v0.2.2b/mm_recomp.apworld">https://github.com/LittleCube-hax/Archipelago/releases/download/v0.2.2b/mm_recomp.apworld</a>
+
+#### v0.2.2a0
+- <a href="https://github.com/LittleCube-hax/Archipelago/releases/download/v0.2.2a/mm_recomp.apworld">https://github.com/LittleCube-hax/Archipelago/releases/download/v0.2.2a/mm_recomp.apworld</a>
+
