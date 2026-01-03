@@ -4,7 +4,7 @@ Dead Rising is a game about re-killing people and taking photos.
 
 
 ## Downloads
-- <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/0.0.2/drdr.apworld">Latest Version (0.0.1)</a>
+- <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/0.0.10/drdr.apworld">Latest Version (0.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

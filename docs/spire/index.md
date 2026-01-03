@@ -5,7 +5,7 @@ immense power, and Slay the Spire!
 
 
 ## Downloads
-- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.2.1/spire.apworld">Latest Version (2.2.1)</a>
+- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.3.0/spire.apworld">Latest Version (2.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
