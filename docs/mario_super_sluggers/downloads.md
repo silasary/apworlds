@@ -8,3 +8,6 @@
 #### v0.0.0
 - <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.0/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.0/mario_super_sluggers.apworld</a>
 
+#### v0.0.0
+- <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.1/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.1/mario_super_sluggers.apworld</a>
+

@@ -26,6 +26,9 @@
 #### v2
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i/cuphead.apworld</a>
 
+#### v2
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i.1/cuphead.apworld</a>
+
 #### v2rc0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02c/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02c/cuphead.apworld</a>
 
