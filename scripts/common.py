@@ -58,7 +58,14 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
 
     repo = get_or_add_github_repo(github_url)
     if isinstance(repo, GithubRepository):
-        github_url = repo.html_url or repo.url
+        new_github_url = repo.html_url or repo.url
+        if new_github_url and new_github_url != github_url:
+            manifest_url = manifest.get("github", None)
+            if isinstance(manifest_url, str):
+                manifest["github"] = new_github_url
+            elif isinstance(manifest_url, list):
+                manifest["github"] = [new_github_url if u == github_url else u for u in manifest_url]
+
     for world in repo.worlds:
         repositories.all_known_package_ids.add(world.id)
         repositories.packages_by_id_version[world.id][world.world_version] = world
@@ -295,8 +302,11 @@ def check_manifest_has_github_url(manifest, github_url, name):
 
                 manifest["github"] = [manifest["github"]]
             manifest["github"].append(source_url)
-    if isinstance(manifest.get("github", ""), list) and len(manifest["github"]) == 1:
-        manifest["github"] = manifest["github"][0]
+    if isinstance(manifest.get("github", []), list):
+        if len(manifest["github"]) != len(set(manifest["github"])):
+            manifest["github"] = list(set(manifest["github"]))
+        if len(manifest["github"]) == 1:
+            manifest["github"] = manifest["github"][0]
 
 
 def parse_version_from_release(release: dict, raw_version: str, prefer_version_from_title: bool) -> Version:
