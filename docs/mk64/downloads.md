@@ -8,6 +8,9 @@
 #### v0.2.3
 - <a href="https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.3/mk64.apworld">https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.3/mk64.apworld</a>
 
+#### v0.2.3b0
+- <a href="https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.3b/mk64.apworld">https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.3b/mk64.apworld</a>
+
 #### v0.2.1
 - <a href="https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.1/mk64.apworld">https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.1/mk64.apworld</a>
 

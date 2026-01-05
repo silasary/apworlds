@@ -4,7 +4,7 @@
 ## What does randomization do to this game?
 
 The game begins in a special state that exists outside of the main story. You begin in Geo's Room and will be given one party member, after which point you will be able to explore the world freely.
-In order to access each Zone, you'll need to collect keys to pass doors and other miscellaneous items to unlock features. Silver Daze Archipelago functions identically to the vanilla Archipelago, but
+In order to access each Zone, you'll need to collect keys to pass doors and other miscellaneous items to unlock features. Silver Daze Archipelago functions identically to the vanilla randomizer, but
 contains additional options and features.
 
 ## What is the goal of Silver Daze when randomized?
@@ -32,6 +32,19 @@ Once you have reached Omni, you will need to defeat them, which can require stra
 is preset to ensure that you have access to at least one build that can provably defeat Omni, but this logic is extremely soft and
 any strategy can be utilized.
 
+
+### Memory Emblems
+This goal requires you seek out a specific number of Memory Emblems as specified by your options.
+You can select the Required Emblems amount (the number needed to finish the game), as well as the amount added to the pool.
+For example, if your required amount is 10 and the amount in the pool is 20, then you will need to find any 10 of those 20 items to finish.
+If your required amount exceeds the pool amount, the difference will be added to ensure the game is always beatable.
+
+
+### Chaos Seeds
+This goal requires you seek out a specific number of Chaos Seeds as specified by your options.
+The goal is very similar to Memory Emblems, however the Chaos Seeds will only be placed in locations dropped by bosses; in other words, this is a boss rush mode.
+Your settings will enable you to influence which bosses are able to drop Chaos Seeds.
+
 ## What items and locations can get shuffled?
 
 Locations in which items can be found:
@@ -47,7 +60,7 @@ Locations in which items can be found:
 - All shop items
 - All ReCollection rewards
 
-Based on your settings, some locations may only drop filler.
+Based on your settings, some locations may only drop filler and are not included in the pool.
 
 
 Items that can be shuffled:

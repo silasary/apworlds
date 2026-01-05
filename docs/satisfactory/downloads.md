@@ -8,6 +8,9 @@
 #### v2.3.1
 - <a href="https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases/download/world-v2.3.1/satisfactory.apworld">https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases/download/world-v2.3.1/satisfactory.apworld</a>
 
+#### v2.3.1
+- <a href="https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases/download/world-v2.3.1-ut-fix/satisfactory.apworld">https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases/download/world-v2.3.1-ut-fix/satisfactory.apworld</a>
+
 #### v2.3.0
 - <a href="https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases/download/world-v2.3.0/satisfactory.apworld">https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases/download/world-v2.3.0/satisfactory.apworld</a>
 
