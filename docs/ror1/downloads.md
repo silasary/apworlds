@@ -1,9 +1,12 @@
 # Risk of Rain
 
 ## Latest
-- <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.6.1/ror1.apworld">Latest Version (0.6.1)</a>
+- <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.6.2/ror1.apworld">Latest Version (0.6.2)</a>
 
 ## All Versions
+
+#### v0.6.2
+- <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.6.2/ror1.apworld">https://github.com/studkid/RoR_Archipelago/releases/download/v0.6.2/ror1.apworld</a>
 
 #### v0.6.1
 - <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.6.1/ror1.apworld">https://github.com/studkid/RoR_Archipelago/releases/download/v0.6.1/ror1.apworld</a>
