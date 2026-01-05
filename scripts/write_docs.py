@@ -31,7 +31,7 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
     print(f"Copied {len(filenames)} documentation files for {world_stem}: {', '.join(filenames)}")
 
     all_files = glob.glob(f"docs/{lower_stem}/*")
-    expected_filenames = set(filenames) | {"downloads.md"}
+    expected_filenames = set(filenames) | {"downloads.md", "index.md"}
     for filepath in all_files:
         filename = os.path.basename(filepath)
         if filename not in expected_filenames:

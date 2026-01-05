@@ -22,7 +22,7 @@ import ModuleUpdate  # noqa: E402
 ModuleUpdate.update(yes=True)
 
 from worlds.Files import InvalidDataError  # noqa: E402
-from worlds.apworld_manager.world_manager import ApWorldMetadata, GithubRepository, RemoteWorldSource, RepositoryManager, parse_version  # noqa: E402
+from worlds.apworld_manager.world_manager import ApWorldMetadata, GithubRepository, RemoteWorldSource, RepositoryManager, parse_version, Repository  # noqa: E402
 from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version  # noqa: E402
 from worlds.apworld_manager.container import RepoWorldContainer  # noqa: E402
 
@@ -57,6 +57,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         manifests[world_id] = manifest
 
     repo = get_or_add_github_repo(github_url)
+    if isinstance(repo, GithubRepository):
+        github_url = repo.html_url or repo.url
     for world in repo.worlds:
         repositories.all_known_package_ids.add(world.id)
         repositories.packages_by_id_version[world.id][world.world_version] = world
@@ -342,12 +344,12 @@ def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=N
         raise
 
 
-def get_or_add_github_repo(github_url):
+def get_or_add_github_repo(github_url) -> GithubRepository | Repository:
     if isinstance(github_url, list):
         print("Github URL is a list, using the first one")
         github_url = github_url[0]
     for added in repositories.repositories:
-        if isinstance(added, GithubRepository) and github_url in [added.url, added.url.replace("https://api.github.com/repos", "https://github.com")]:
+        if isinstance(added, GithubRepository) and (github_url in [added.url, added.url.replace("https://api.github.com/repos", "https://github.com")] or github_url.lower() == added.url.lower()):
             repo = added
             break
     else:
