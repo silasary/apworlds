@@ -1,9 +1,12 @@
 # Frogmonster
 
 ## Latest
-- <a href="https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v0.2.1/frogmonster.apworld">Latest Version (0.2.1.post2)</a>
+- <a href="https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v0.2.2/frogmonster.apworld">Latest Version (0.2.2)</a>
 
 ## All Versions
+
+#### v0.2.2
+- <a href="https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v0.2.2/frogmonster.apworld">https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v0.2.2/frogmonster.apworld</a>
 
 #### v0.2.1.post2
 - <a href="https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v0.2.1/frogmonster.apworld">https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v0.2.1/frogmonster.apworld</a>

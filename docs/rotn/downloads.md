@@ -1,9 +1,12 @@
 # Rift of the Necrodancer
 
 ## Latest
-- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.8/rotn.apworld">Latest Version (0.8)</a>
+- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.8.1/rotn.apworld">Latest Version (0.8.1)</a>
 
 ## All Versions
+
+#### v0.8.1
+- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.8.1/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.8.1/rotn.apworld</a>
 
 #### v0.8
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.8/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.8/rotn.apworld</a>

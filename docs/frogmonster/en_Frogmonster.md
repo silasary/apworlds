@@ -8,7 +8,7 @@ The goal is set in your settings. By default, you win the game by going to Myzan
 
 ## What does another world's item look like in Frogmonster?
 
-Most models and text lines are unchanged from the baseline Frogmonster game, causing the items to look like their vanilla counterparts until checked. Once found, a pop-up in the top-right corner of the screen will indicate what item was found, and for what player. Please note that not all characters are able to be shown in the Frogmonster font, including numbers, so you may wish to look at the console, or have a text client open, in order to get the full picture.
+Most models and text lines are unchanged from the baseline Frogmonster game, causing the items to look like their vanilla counterparts until checked. Once found, a pop-up in the top-right corner of the screen will indicate what item was found, and for which player. Please note that not all characters are able to be shown in the Frogmonster font, so you may wish to look at the console or a text client in order to get the full picture.
 
 ## When the player receives an item, what happens?
 

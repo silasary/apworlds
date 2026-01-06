@@ -1,10 +1,12 @@
 # Rift of the Necrodancer
 
-Rift of the Necrodancer is a game that you play.
+Rift of the Necrodancer is a rhythm game where you hit monsters to the beat of one of 60+ songs.
+Play through a selection of randomly chosen songs, collecting diamonds
+until you have enough to play and complete the goal song!
 
 
 ## Downloads
-- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.8/rotn.apworld">Latest Version (0.8)</a>
+- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.8.1/rotn.apworld">Latest Version (0.8.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
