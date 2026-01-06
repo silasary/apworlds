@@ -47,7 +47,7 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
     setup_guides = [langfile(f, False) for f in pages if f.startswith("setup")]
     game_infos = [langfile(f, True) for f in pages if f.endswith(f"_{manifest.get('game','')}")]
 
-    other_files = sorted(set(pages) - set(i["file"] for i in setup_guides) - set(i["file"] for i in game_infos))
+    other_files = sorted(set(pages) - set(i["file"] for i in setup_guides) - set(i["file"] for i in game_infos) - {"en_Manual_UltimateMarvelVsCapcom3_ManualTeam"})
 
     index_output = pystache.render(
         index_template,

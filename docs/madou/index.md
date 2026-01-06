@@ -5,7 +5,7 @@ You only know about the puzzle game?  Uhhh BAYOEN BAYOEN ICE STOOOMU DIACUTO.
 
 
 ## Downloads
-- <a href="https://github.com/Witchybun/Archipelago/releases/download/MadouMonogatari103/madou.apworld">Latest Version (103)</a>
+- <a href="https://github.com/Witchybun/Archipelago/releases/download/MadouMonogatari103/madou.apworld">Latest Version (1.0.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
