@@ -7,7 +7,7 @@
 - A dumped North American copy of Mario Super Sluggers in any format Dolphin can read
 
 ## Optional Software
-- [Mario Super Sluggers Tracker](https://github.com/MarioManTAW/MarioSuperSluggersTracker/releases/)
+- [Mario Super Sluggers Tracker](https://github.com/MarioManTAW/MarioSuperSluggersAPTracker/releases/)
   - Requires [PopTracker](https://github.com/black-sliver/PopTracker/releases/)
 
 ## How to play
