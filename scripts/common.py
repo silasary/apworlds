@@ -224,9 +224,15 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
         manifest_data = container.get_manifest()
         for key in ("minimum_ap_version", "maximum_ap_version", "world_version"):
             if key in manifest_data:
-                version_info[key] = manifest_data[key]
                 if key == "world_version":
-                    version_info["version_simple"] = parse_version(manifest_data[key]).base_version
+                    embedded_version = parse_version(manifest_data[key])
+                    version_info["version_simple"] = embedded_version.base_version
+                    # Only replace the version if the interpreted version is wrong
+                    if embedded_version.base_version != parse_version(version_info["world_version"]).base_version:
+                        version_info[key] = manifest_data[key]
+                else:
+                    version_info[key] = manifest_data[key]
+
         if "tracker" in manifest_data:
             manifest["tracker"] = manifest_data["tracker"]
         if "flags" in manifest_data:
