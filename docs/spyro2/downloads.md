@@ -8,6 +8,9 @@
 #### v31.post2
 - <a href="https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld</a>
 
+#### v6
+- <a href="https://github.com/Uroogla/S2AP/releases/download/test_jan_6/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/test_jan_6/spyro2.apworld</a>
+
 #### v0.3.2
 - <a href="https://github.com/Uroogla/S2AP/releases/download/0.3.2/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.3.2/spyro2.apworld</a>
 

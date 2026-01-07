@@ -1,9 +1,12 @@
 # Axiom Verge
 
 ## Latest
-- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld">Latest Version (3.post2)</a>
+- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta3.2/axiomverge.apworld">Latest Version (3.2)</a>
 
 ## All Versions
+
+#### v3.2
+- <a href="https://github.com/mail-liam/Archipelago/releases/download/beta3.2/axiomverge.apworld">https://github.com/mail-liam/Archipelago/releases/download/beta3.2/axiomverge.apworld</a>
 
 #### v3.post2
 - <a href="https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld">https://github.com/mail-liam/Archipelago/releases/download/beta3/axiomverge.apworld</a>
