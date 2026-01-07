@@ -11,6 +11,9 @@
 #### v0.9.5
 - <a href="https://github.com/RecompRando/MMRecompRando/releases/download/v0.9.5/mm_recomp.apworld">https://github.com/RecompRando/MMRecompRando/releases/download/v0.9.5/mm_recomp.apworld</a>
 
+#### v0.9.5a0
+- <a href="https://github.com/RecompRando/MMRecompRando/releases/download/v0.9.5a/mm_recomp.apworld">https://github.com/RecompRando/MMRecompRando/releases/download/v0.9.5a/mm_recomp.apworld</a>
+
 #### v0.9.4
 - <a href="https://github.com/RecompRando/MMRecompRando/releases/download/v0.9.4/mm_recomp.apworld">https://github.com/RecompRando/MMRecompRando/releases/download/v0.9.4/mm_recomp.apworld</a>
 

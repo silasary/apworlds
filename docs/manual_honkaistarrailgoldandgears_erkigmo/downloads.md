@@ -1,4 +1,4 @@
-# 
+# Manual_HonkaiStarRailGoldAndGears_Erkigmo
 
 ## Latest
 - <a href="https://github.com/Erkigmo/Gold-And-Gears-Manual/releases/download/v0.1.2/manual_honkaistarrailgoldandgears_erkigmo.apworld">Latest Version (0.1.2)</a>
