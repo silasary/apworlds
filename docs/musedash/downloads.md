@@ -1,9 +1,12 @@
 # Muse Dash
 
 ## Latest
-- <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.28/musedash.apworld">Latest Version (1.5.28)</a>
+- <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.28/musedash.apworld">Latest Version (1.5.28.post2)</a>
 
 ## All Versions
+
+#### v1.5.28.post2
+- <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.28/musedash.apworld">https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.28/musedash.apworld</a>
 
 #### v1.5.28
 - <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.28/musedash.apworld">https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.28/musedash.apworld</a>

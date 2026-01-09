@@ -1,9 +1,12 @@
 # Keymaster&#x27;s Keep
 
 ## Latest
-- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld">Latest Version (2.1.2)</a>
+- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.3/keymasters_keep.apworld">Latest Version (2.1.3)</a>
 
 ## All Versions
+
+#### v2.1.3
+- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.3/keymasters_keep.apworld">https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.3/keymasters_keep.apworld</a>
 
 #### v2.1.2
 - <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld">https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld</a>

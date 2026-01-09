@@ -6,7 +6,7 @@ until you have enough to play and complete the goal song!
 
 
 ## Downloads
-- <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.28/musedash.apworld">Latest Version (1.5.28)</a>
+- <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.28/musedash.apworld">Latest Version (1.5.28.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,6 +1,6 @@
 # The Binding of Isaac: Repentance
 ## Where is the settings page?
-The [player settings](/games/The%20Binding%20of%20Isaac%20Repentance/player-options) page for this game contains all the options you need to configure and export a config file.  
+~~The [player settings](/games/The%20Binding%20of%20Isaac%20Repentance/player-options) page for this game contains all the options you need to configure and export a config file.~~  
 ... if the game ever gets core-verified that is. For now you'll have to generate a yaml template via the Archipelago Launcher or download it from the release page.
 
 ## What does randomization do to this game?
@@ -67,7 +67,7 @@ Setting this to 100% and given immediately on run start would make subsequent ru
 Traps do never carry over into new runs and are only applied the moment they're received.
 
 ## Does the mod affect my saves?
-It does not. If you want to clear later bosses and don't want to bother with unlocking, you can use the isaac-save-insaller by Zamiell to install a fully-unlocked save file and backup you old saves.
+It does not "hurt" your save, however, you can still unlock new things with the mod enabled if you for example beat a boss for the first time in an Archipelago run. If you want to clear later bosses and don't want to bother with unlocking, you can install a fully-unlocked save file and backup you old saves.
 
 ## Can you play multiplayer?
 Currently no support for multiplayer has been implemented. It will not crash the game or anything but probably won't be the experience you imagine.

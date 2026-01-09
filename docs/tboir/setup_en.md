@@ -12,10 +12,8 @@
   - [Github](https://github.com/Zamiell/isaac-save-installer/)
 
 ## Installation Procedures
-After installing *The Binding of Isaac: Rebirth* and its DLCs via Steam you have two options on how to install the mod:
-- Via Steam Workshop
-  1. Open the Steam Workshop page for the mod linked above
-  2. Click **Subscribe**
+1. Open the Steam Workshop page for the mod linked above
+2. Click **Subscribe**
 
 ## Create a Config (.yaml) File
 
@@ -44,7 +42,7 @@ As the game is not officially supported yet. Please use the new Options Creator 
 5. Open the **Isaac Client** in your Archipelago Launcher
 6. Input the address and port for the MultiWorld Server
 7. Click **Connect**
-8. Enter your slot name and your save slot if prompted
+8. Enter your slot name and which save file you're playing on when prompted
 9. Once the connection status in the top left corner of your game turns green you can start playing
 
 ## Hosting a MultiWorld game

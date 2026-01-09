@@ -6,7 +6,7 @@ artifacts of resolve, and face the ultimate trial to claim victory.
 
 
 ## Downloads
-- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.2/keymasters_keep.apworld">Latest Version (2.1.2)</a>
+- <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.3/keymasters_keep.apworld">Latest Version (2.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
