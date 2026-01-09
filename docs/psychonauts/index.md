@@ -6,7 +6,7 @@ the minds of other characters in order to save his fellow psychic campers, and t
 
 
 ## Downloads
-- <a href="https://github.com/Akashortstack/Psychonauts-AP-Integration/releases/download/v0.9.2-BETA/psychonauts.apworld">Latest Version (0.9.2b0)</a>
+- <a href="https://github.com/Akashortstack/Psychonauts-AP-Integration/releases/download/v0.9.3-BETA/psychonauts.apworld">Latest Version (0.9.3b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

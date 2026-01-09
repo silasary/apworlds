@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.26/dk64.apworld">Latest Version (1.4.26)</a>
+- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.27/dk64.apworld">Latest Version (1.4.27)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
