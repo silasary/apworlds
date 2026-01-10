@@ -8,6 +8,9 @@
 #### v6
 - <a href="https://github.com/Alchav/Archipelago/releases/download/pokemon-rb-v6/pokemon_rb.apworld">https://github.com/Alchav/Archipelago/releases/download/pokemon-rb-v6/pokemon_rb.apworld</a>
 
+#### v6b5
+- <a href="https://github.com/Alchav/Archipelago/releases/download/pokemon-rb-v6-b5/pokemon_rb.apworld">https://github.com/Alchav/Archipelago/releases/download/pokemon-rb-v6-b5/pokemon_rb.apworld</a>
+
 #### v6b4
 - <a href="https://github.com/Alchav/Archipelago/releases/download/pokemon-rb-v6-b4/pokemon_rb.apworld">https://github.com/Alchav/Archipelago/releases/download/pokemon-rb-v6-b4/pokemon_rb.apworld</a>
 
