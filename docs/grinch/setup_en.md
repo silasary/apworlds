@@ -1,12 +1,12 @@
 # The Grinch (PS1) - Setup Guide
 
 ## Required Software
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). Please use version 0.6.3 or later for integrated
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). Please use version 0.6.5 or later for integrated
 BizHawk support.
 - Legally obtained NTSC Bin ROM file, probably named something like `Grinch, The (USA) (En,Fr,Es).bin`. 
 The game's CUE file should also work aswell along side the BIN file if you have troubles opening the BIN file.
-- [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) Version 2.11 is required to play. Any version below 2.9.1 compatible may have unintended behavior in 
-the game as well as not being able to connect to the client through the LUA Console.
+- [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) Versions between 2.9.1 & 2.11 will allow you to play the game. 
+But 2.11 is recommended since with older versions, you may encounter instability & crashes within the game. Any version below 2.9.1 may not work.
 - The latest `grinch.apworld` file. You can find this on the [Releases page](https://github.com/MarioSpore/Grinch-AP/releases/latest). Put this in your `Archipelago/custom_worlds` folder.
 - PSX BIOS Firmware bin file, which is required to run the game through Bizhawk. The file you need should be
 named something like `SCPH-5501.BIN`.
@@ -21,7 +21,8 @@ tabbed out of EmuHawk.
 `Controllers…`, it's because you need to load a game first.
 You may need to invert Sensitivity for the up/down axis to -100%.
 This can be found under Analog Controls through `Config > Controllers…`.
-Depending on your controller, you may also want to tweak the Deadzone. Something like 6% is recommended for a DualShock 4.
+Depending on your controller, you may also want to tweak the Deadzone & Sensitivity to prevent weird movements when using
+the analog stick to move. Something like 6% is recommended for a DualShock 4 controller.
 - Consider clearing keybinds in `Config > Hotkeys…` if you don't intend to use them. Select the keybind and press Esc to
 clear it.
 - You are required to legally obtain a PSX Bios BIN firmware file for the game to be opened. To import this, you go to

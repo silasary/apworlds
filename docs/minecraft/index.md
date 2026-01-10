@@ -7,7 +7,7 @@ victory!
 
 
 ## Downloads
-- <a href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.1.6_hotfix/minecraft.apworld">Latest Version (0.1.6)</a>
+- <a href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.1.7_hotfix/minecraft.apworld">Latest Version (0.1.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Pokemon Mystery Dungeon Explorers of Sky
 
 ## Latest
-- <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.3.2rc3/pmd_eos.apworld">Latest Version (0.3.2rc3)</a>
+- <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.3.2/pmd_eos.apworld">Latest Version (0.3.2)</a>
 
 ## All Versions
+
+#### v0.3.2
+- <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.3.2/pmd_eos.apworld">https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.3.2/pmd_eos.apworld</a>
 
 #### v0.3.2rc3
 - <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.3.2rc3/pmd_eos.apworld">https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.3.2rc3/pmd_eos.apworld</a>
