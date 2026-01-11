@@ -1,9 +1,18 @@
 # dk64
 
 ## Latest
-- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.28/dk64.apworld">Latest Version (1.4.28)</a>
+- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.31/dk64.apworld">Latest Version (1.4.31)</a>
 
 ## All Versions
+
+#### v1.4.31
+- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.31/dk64.apworld">https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.31/dk64.apworld</a>
+
+#### v1.4.30
+- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.30/dk64.apworld">https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.30/dk64.apworld</a>
+
+#### v1.4.29
+- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.29/dk64.apworld">https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.29/dk64.apworld</a>
 
 #### v1.4.28
 - <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.28/dk64.apworld">https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.28/dk64.apworld</a>

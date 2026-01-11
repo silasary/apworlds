@@ -1,9 +1,12 @@
 # Archipela-Go!
 
 ## Latest
-- <a href="https://github.com/aki665/react-native-archipelago/releases/download/0.6.2/apgo.apworld">Latest Version (0.6.2)</a>
+- <a href="https://github.com/aki665/react-native-archipelago/releases/download/0.7.0/apgo.apworld">Latest Version (0.7.0)</a>
 
 ## All Versions
+
+#### v0.7.0
+- <a href="https://github.com/aki665/react-native-archipelago/releases/download/0.7.0/apgo.apworld">https://github.com/aki665/react-native-archipelago/releases/download/0.7.0/apgo.apworld</a>
 
 #### v0.6.2
 - <a href="https://github.com/aki665/react-native-archipelago/releases/download/0.6.2/apgo.apworld">https://github.com/aki665/react-native-archipelago/releases/download/0.6.2/apgo.apworld</a>
