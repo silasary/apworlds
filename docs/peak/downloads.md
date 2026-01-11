@@ -1,9 +1,12 @@
 # PEAK
 
 ## Latest
-- <a href="https://github.com/Mickemoose/peak-archipelago/releases/download/0.5.8.rc-1/peak.apworld">Latest Version (0.5.8rc1)</a>
+- <a href="https://github.com/Mickemoose/peak-archipelago/releases/download/0.5.8.rc-2/peak.apworld">Latest Version (0.5.8rc2)</a>
 
 ## All Versions
+
+#### v0.5.8rc2
+- <a href="https://github.com/Mickemoose/peak-archipelago/releases/download/0.5.8.rc-2/peak.apworld">https://github.com/Mickemoose/peak-archipelago/releases/download/0.5.8.rc-2/peak.apworld</a>
 
 #### v0.5.8rc1
 - <a href="https://github.com/Mickemoose/peak-archipelago/releases/download/0.5.8.rc-1/peak.apworld">https://github.com/Mickemoose/peak-archipelago/releases/download/0.5.8.rc-1/peak.apworld</a>

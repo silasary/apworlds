@@ -22,18 +22,12 @@ Check if the mod is actually loaded by looking for the version text in the botto
 
 Make sure the XCOM 2 WotC AP Client is connected to your slot in the multiworld server, then restart your game.
 
-## The game isn't behaving how I expected
-
-### I have a skulljack but can't use it
-
-To build the skulljack, all you need is `[Tech] ADVENT Officer Autopsy` which unlocks the proving ground. To use it, the corresponding objective will need to be active as well, which only happens once you've also received `[Tech] Alien Biotech`.
-
-### I can't unlock the final mission
+## I can't unlock the final mission
 
 To unlock the final set of missions you need to complete the objective to do an avatar autopsy, this requires `[Tech] Avatar Autopsy` and `[Tech] Alien Encryption` (for the shadow chamber) as well as completing any one of the following questlines (unless some or all are required in your options, in which case you have to do those specific ones):
-- Complete the Blacksite mission -> Receive `[Tech] Blacksite Data` -> Complete the ADVENT Forge mission -> Receive `[Tech] Forge Stasis Suit`
-- Skulljack an officer and kill a codex -> Receive `[Tech] Codex Brain` -> Complete the Psi Gate mission -> Receive `[Tech] Psi Gate`
-- Skulljack an officer and kill a codex -> Receive `[Tech] Codex Brain` -> Receive `[Tech] Encrypted Codex Data` -> Skulljack a codex and kill an avatar
+- Complete the Blacksite mission -> Receive `[Tech] Blacksite Vial` -> Complete the ADVENT Forge mission -> Receive `[Tech] Recovered ADVENT Stasis Suit`
+- Receive `[Tech] ADVENT Officer Autopsy` -> Skulljack an officer and kill a codex -> Receive `[Tech] Codex Brain` -> Complete the Psi Gate mission -> Receive `[Tech] Psionic Gate`
+- Receive `[Tech] ADVENT Officer Autopsy` -> Skulljack an officer and kill a codex -> Receive `[Tech] Codex Brain` -> Receive `[Tech] Encrypted Codex Data` -> Skulljack a codex and kill an avatar
 
 ## Reporting issues
 
