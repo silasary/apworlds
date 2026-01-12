@@ -25,6 +25,7 @@ parser.add_argument("--dark", default=False, action="store_true", help="Add worl
 parser.add_argument("--unready", default=False, action="store_true", help="Add worlds as Unready")
 parser.add_argument("--scan-forks", default=False, action="store_true", help="Scan forks for worlds")
 parser.add_argument("--spreadsheet", default=False, action="store_true", help="Add worlds from the spreadsheet")
+parser.add_argument("--allow-uppercase", default=False, action="store_true", help="Allow uppercase letters in filenames")
 parser.add_argument("url", nargs="*", help="URL to add to the index")
 args = parser.parse_args()
 if args.url:
@@ -95,6 +96,9 @@ for url in queue.copy():
     github = github.split("/releases", 1)[0]
     manifests = update_index_from_github(None, {}, github_url=github, default_flags=default_flags)
     for world, manifest in manifests.items():
+        if not args.allow_uppercase and not world.islower():
+            print(f"Skipping {world} due to uppercase letters in filename")
+            continue
         print(f"Added {world} from {github}")
         if manifest.get("game") in ad_games and "after_dark" not in manifest.setdefault("flags", []):
             manifest["flags"].append("after_dark")
