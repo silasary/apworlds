@@ -1,9 +1,12 @@
 # Resident Evil 2 Remake
 
 ## Latest
-- <a href="https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/download/0.3.0/residentevil2remake.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/download/0.3.1/residentevil2remake.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/download/0.3.1/residentevil2remake.apworld">https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/download/0.3.1/residentevil2remake.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/download/0.3.0/residentevil2remake.apworld">https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/download/0.3.0/residentevil2remake.apworld</a>

@@ -8,6 +8,9 @@
 #### v1.3.3
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.3/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.3/factorio_bobs.apworld</a>
 
+#### v1.3.3
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.0.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.0.0/factorio_bobs.apworld</a>
+
 #### v1.3.2
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.2/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.2/factorio_bobs.apworld</a>
 

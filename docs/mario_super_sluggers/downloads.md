@@ -8,6 +8,9 @@
 #### v0.0.3
 - <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.3/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.3/mario_super_sluggers.apworld</a>
 
+#### v0.0.3
+- <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.4/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.4/mario_super_sluggers.apworld</a>
+
 #### v0.0.2
 - <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.2/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.2/mario_super_sluggers.apworld</a>
 
