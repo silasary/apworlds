@@ -8,6 +8,9 @@
 #### v0.10
 - <a href="https://github.com/CDRomatron/Archipelago/releases/download/v0.10/apeescape.apworld">https://github.com/CDRomatron/Archipelago/releases/download/v0.10/apeescape.apworld</a>
 
+#### v0.9.5
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.5/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.5/apeescape.apworld</a>
+
 #### v0.9.4
 - <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.4/apeescape.apworld">https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.4/apeescape.apworld</a>
 

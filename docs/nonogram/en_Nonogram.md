@@ -1,3 +1,0 @@
-# Nonogram
-
-Nonogram for Archipelago!

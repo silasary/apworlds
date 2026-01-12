@@ -1,6 +1,8 @@
-# dk64
+# Donkey Kong 64
 
+Donkey Kong 64 is a 3D collectathon platforming game.
 
+Play as the whole DK Crew and rescue the Golden Banana hoard from King K. Rool.
 
 
 ## Downloads

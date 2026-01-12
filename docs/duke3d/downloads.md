@@ -11,8 +11,14 @@
 #### v0.0.7
 - <a href="https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.7/duke3d.apworld">https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.7/duke3d.apworld</a>
 
+#### v0.0.6.post2
+- <a href="https://github.com/randomcodegen/NBloodAP/releases/download/0.0.6/duke3d.apworld">https://github.com/randomcodegen/NBloodAP/releases/download/0.0.6/duke3d.apworld</a>
+
 #### v0.0.6
 - <a href="https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.6/duke3d.apworld">https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.6/duke3d.apworld</a>
+
+#### v0.0.5.post2
+- <a href="https://github.com/randomcodegen/NBloodAP/releases/download/0.0.5/duke3d.apworld">https://github.com/randomcodegen/NBloodAP/releases/download/0.0.5/duke3d.apworld</a>
 
 #### v0.0.5
 - <a href="https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.5/duke3d.apworld">https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.5/duke3d.apworld</a>

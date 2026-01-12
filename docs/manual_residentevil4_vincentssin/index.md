@@ -7,13 +7,10 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.4/manual_residentevil4_vincentssin.apworld">Latest Version (2.0.4)</a>
+- <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.5/manual_residentevil4_vincentssin.apworld">Latest Version (2.0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Manual_UltimateMarvelVsCapcom3_ManualTeam">en_Manual_UltimateMarvelVsCapcom3_ManualTeam</a>
