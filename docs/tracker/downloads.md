@@ -1,24 +1,9 @@
 # Universal Tracker
 
 ## Latest
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.1/tracker.apworld">Latest Version (0.6.1)</a>
+- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.24.1/tracker.apworld">Latest Version (0.2.24.1)</a>
 
 ## All Versions
-
-#### v0.6.1
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.1/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.1/tracker.apworld</a>
-
-#### v0.6.0
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.0/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.0/tracker.apworld</a>
-
-#### v0.5.0
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.5.0/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.5.0/tracker.apworld</a>
-
-#### v0.4.0
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.4.0/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.4.0/tracker.apworld</a>
-
-#### v0.3.0
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.3.0/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.3.0/tracker.apworld</a>
 
 #### v0.2.24.1
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.24.1/tracker.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.24.1/tracker.apworld</a>
@@ -128,9 +113,6 @@
 #### v0.2.1
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.1/tracker.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.1/tracker.apworld</a>
 
-#### v0.2.1
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.2.1/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.2.1/tracker.apworld</a>
-
 #### v0.2.0
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.0/tracker.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.0/tracker.apworld</a>
 
@@ -187,4 +169,22 @@
 
 #### v0.1.4
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.1.4/tracker.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.1.4/tracker.apworld</a>
+
+#### v0.0.61
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.1/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.1/tracker.apworld</a>
+
+#### v0.0.60
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.0/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.0/tracker.apworld</a>
+
+#### v0.0.50
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.5.0/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.5.0/tracker.apworld</a>
+
+#### v0.0.40
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.4.0/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.4.0/tracker.apworld</a>
+
+#### v0.0.30
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.3.0/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.3.0/tracker.apworld</a>
+
+#### v0.0.21
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.2.1/tracker.apworld">https://github.com/qwint/APMinit/releases/download/v0.2.1/tracker.apworld</a>
 
