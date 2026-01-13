@@ -1,9 +1,12 @@
 # Smushi Come Home
 
 ## Latest
-- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/1.0.8/smushi_come_home.apworld">Latest Version (1.0.8)</a>
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/1.0.9/smushi_come_home.apworld">Latest Version (1.0.9)</a>
 
 ## All Versions
+
+#### v1.0.9
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/1.0.9/smushi_come_home.apworld">https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/1.0.9/smushi_come_home.apworld</a>
 
 #### v1.0.8
 - <a href="https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/1.0.8/smushi_come_home.apworld">https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/1.0.8/smushi_come_home.apworld</a>

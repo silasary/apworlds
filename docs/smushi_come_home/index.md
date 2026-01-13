@@ -6,7 +6,7 @@ and take on different adventures to get back home!
 
 
 ## Downloads
-- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/1.0.8/smushi_come_home.apworld">Latest Version (1.0.8)</a>
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-SmushiComeHome/releases/download/1.0.9/smushi_come_home.apworld">Latest Version (1.0.9)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

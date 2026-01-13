@@ -1,9 +1,12 @@
 # Severed Soul
 
 ## Latest
-- <a href="https://github.com/Grenhunterr/Archipelago/releases/download/v2.6/severed_soul.apworld">Latest Version (2.6.post2)</a>
+- <a href="https://github.com/Grenhunterr/Archipelago/releases/download/v2.7/severed_soul.apworld">Latest Version (2.7)</a>
 
 ## All Versions
+
+#### v2.7
+- <a href="https://github.com/Grenhunterr/Archipelago/releases/download/v2.7/severed_soul.apworld">https://github.com/Grenhunterr/Archipelago/releases/download/v2.7/severed_soul.apworld</a>
 
 #### v2.6.post2
 - <a href="https://github.com/Grenhunterr/Archipelago/releases/download/v2.6/severed_soul.apworld">https://github.com/Grenhunterr/Archipelago/releases/download/v2.6/severed_soul.apworld</a>

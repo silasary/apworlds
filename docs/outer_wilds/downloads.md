@@ -1,9 +1,12 @@
 # Outer Wilds
 
 ## Latest
-- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.19/outer_wilds.apworld">Latest Version (0.3.19)</a>
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.20/outer_wilds.apworld">Latest Version (0.3.20)</a>
 
 ## All Versions
+
+#### v0.3.20
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.20/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.20/outer_wilds.apworld</a>
 
 #### v0.3.19
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.19/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.19/outer_wilds.apworld</a>
