@@ -6,7 +6,7 @@ the PlayStation 2.
 
 
 ## Downloads
-- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.4/sly2.apworld">Latest Version (0.8.4)</a>
+- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.5/sly2.apworld">Latest Version (0.8.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

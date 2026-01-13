@@ -4,7 +4,7 @@ This will describe Silver Daze eventually
 
 
 ## Downloads
-- <a href="https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.6.4/silverdaze.apworld">Latest Version (0.6.4)</a>
+- <a href="https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.7.2/silverdaze.apworld">Latest Version (0.7.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
