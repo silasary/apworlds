@@ -1,3 +1,4 @@
+import argparse
 import glob
 import os
 from pathlib import Path
@@ -8,7 +9,7 @@ import langcodes
 
 import requests
 
-from common import construct_metadata_release, repositories, save as save_manifest
+from common import construct_metadata_release, repositories, save as save_manifest, load_manifest, parse_version
 
 with open("templates/downloads_template.mustache") as f:
     downloads_template = f.read()
@@ -124,3 +125,20 @@ def write_downloads(world_stem: str, versions: list[dict[str, Any]], manifest: d
         f.write(output)
     print(f"Wrote docs/{lower_stem}/downloads.md")
     return True
+
+
+if __name__ == "__main__":
+    argparser = argparse.ArgumentParser(description="Write documentation files for worlds.")
+    argparser.add_argument("world", type=str, help="The stem of the world to write documentation for")
+
+    args = argparser.parse_args()
+
+    world_stem = args.world
+    manifest_path = Path("index") / f"{world_stem}.json"
+    if not manifest_path.exists():
+        print(f"Manifest for world {world_stem} does not exist.")
+        exit(1)
+    manifest = load_manifest(manifest_path)
+    versions = list(manifest.get("versions", {}).values())
+    versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)
+    write_docs(world_stem, versions, manifest)
