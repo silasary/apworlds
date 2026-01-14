@@ -7,7 +7,7 @@ behind the Robot Masters&#x27; betrayal.
 
 
 ## Downloads
-- <a href="https://github.com/Silvris/Archipelago/releases/download/mm3_0.1.6/mm3.apworld">Latest Version (0.1.6)</a>
+- <a href="https://github.com/Silvris/Archipelago/releases/download/mm3_0.1.7/mm3.apworld">Latest Version (0.1.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

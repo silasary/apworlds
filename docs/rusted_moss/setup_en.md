@@ -30,6 +30,7 @@
 * Optional: backup your save files located in `/AppData/Local/Rusted_Moss`
 1. Open Rusted Moss and start a new save file, the mod has primarily been tested on Speedrun mode, but Normal and Flexible should mostly work as well
    * Maya and Ameli mode are unsupported
+   * Using [Gimmick mod](https://github.com/Harlem512/rm-mod-database#gimmick) is supported (you must install and enable Gimmick manually)
 2. The game will appear to have gone back to the main menu, this is expected
 3. A new file named f_save_#.archipelago.save will have been created in the save data folder `/AppData/Local/Rusted_Moss`
    * These file names are 0 indexed, so the first save file is f_save_0, and the last (sixth) save file is f_save_5

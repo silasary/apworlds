@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/silasary/APxiv/releases/download/0.26.0/ffxiv.apworld">Latest Version (0.26.0)</a>
+- <a href="https://github.com/silasary/APxiv/releases/download/0.26.1/ffxiv.apworld">Latest Version (0.26.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -16,4 +16,4 @@ the player must manually refrain from using these gathered items until the track
 - <a href="setup_en">English</a>
 
 ## Other Documentation files
-- <a href="en_Manual_UltimateMarvelVsCapcom3_ManualTeam">en_Manual_UltimateMarvelVsCapcom3_ManualTeam</a>
+- <a href="en_Manual_FFXIV_Silasary">en_Manual_FFXIV_Silasary</a>

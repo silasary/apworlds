@@ -1,9 +1,12 @@
 # Mega Man 3
 
 ## Latest
-- <a href="https://github.com/Silvris/Archipelago/releases/download/mm3_0.1.6/mm3.apworld">Latest Version (0.1.6)</a>
+- <a href="https://github.com/Silvris/Archipelago/releases/download/mm3_0.1.7/mm3.apworld">Latest Version (0.1.7)</a>
 
 ## All Versions
+
+#### v0.1.7
+- <a href="https://github.com/Silvris/Archipelago/releases/download/mm3_0.1.7/mm3.apworld">https://github.com/Silvris/Archipelago/releases/download/mm3_0.1.7/mm3.apworld</a>
 
 #### v0.1.6
 - <a href="https://github.com/Silvris/Archipelago/releases/download/mm3_0.1.6/mm3.apworld">https://github.com/Silvris/Archipelago/releases/download/mm3_0.1.6/mm3.apworld</a>

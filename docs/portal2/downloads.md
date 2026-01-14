@@ -1,9 +1,12 @@
 # Portal 2
 
 ## Latest
-- <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.3/portal2.apworld">Latest Version (0.3)</a>
+- <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.3/portal2.apworld">Latest Version (0.3.post2)</a>
 
 ## All Versions
+
+#### v0.3.post2
+- <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.3/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.3/portal2.apworld</a>
 
 #### v0.3
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.3/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.3/portal2.apworld</a>

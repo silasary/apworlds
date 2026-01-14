@@ -92,6 +92,9 @@
 #### v0.41
 - <a href="https://github.com/fdelduque/Archipelago/releases/download/b041/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/b041/sotn.apworld</a>
 
+#### v0.8.15
+- <a href="https://github.com/Darvitz/Archipelago-Crystal/releases/download/Unofficial/sotn.apworld">https://github.com/Darvitz/Archipelago-Crystal/releases/download/Unofficial/sotn.apworld</a>
+
 #### v0.4
 - <a href="https://github.com/fdelduque/Archipelago/releases/download/b04/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/b04/sotn.apworld</a>
 

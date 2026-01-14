@@ -4,7 +4,7 @@ Rusted Moss is a metroidvania featuring an elastic physics-based grappling hook.
 
 
 ## Downloads
-- <a href="https://github.com/Harlem512/Archipelago/releases/download/v0.1.7-alpha-gimmick/rusted_moss.apworld">Latest Version (0.1.7a0)</a>
+- <a href="https://github.com/dgrossmann144/Archipelago/releases/download/v0.1.6-alpha/rusted_moss.apworld">Latest Version (0.1.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -11,6 +11,9 @@
 #### v0.6.0
 - <a href="https://github.com/Bartz24/Archipelago/releases/download/0.6.0.1/ff12_open_world.apworld">https://github.com/Bartz24/Archipelago/releases/download/0.6.0.1/ff12_open_world.apworld</a>
 
+#### v0.6.0
+- <a href="https://github.com/Bartz24/Archipelago/releases/download/0.6.0.2/ff12_open_world.apworld">https://github.com/Bartz24/Archipelago/releases/download/0.6.0.2/ff12_open_world.apworld</a>
+
 #### v0.5.3.1
 - <a href="https://github.com/Bartz24/Archipelago/releases/download/0.5.3.1/ff12_open_world.apworld">https://github.com/Bartz24/Archipelago/releases/download/0.5.3.1/ff12_open_world.apworld</a>
 

@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/WalWalrus/ABLAP/releases/download/v0.1.1/abugslife.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/WalWalrus/ABLAP/releases/download/v0.1.2/abugslife.apworld">Latest Version (0.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -4,7 +4,7 @@
 The location of items and abilities are randomized. The ability to teleport is granted to the player at the start, and the player can open the pause menu and press F5 to teleport to the first teleporter. The Maya boss fight in the Factory Roof which teleports to the player to the Snowy Outpost upon defeat is always there so the player can get teleported to the Snowy Outpost again. Some blocks which block the entrance to the Bonnie fight after it has been completed have been removed.
 
 ## What Rusted Moss items are randomized?
-* Content that was added in the Major Content Update is not yet supported (the new trinkets and grappling hook reset on kill upgrade)
+* Content that was added in the Major Content Update and Winter Update are not yet supported (the new trinkets and grappling hook reset on kill upgrade)
 * Abilities such as the grappling hook, the grappling hook pull upgrade, the infinite use grappling hook, charge jump, grenade
    * The grappling hook items are treated as progressive upgrades, the first you receive will let you use the grappling hook, the second will let you use the upgraded grappling hook, and the third will let you use the infinite grappling hook.
 * Titania Pieces
@@ -16,6 +16,18 @@ The location of items and abilities are randomized. The ability to teleport is g
 
 ## What does another world's item look like in Rusted Moss?
 Most locations in Rusted Moss have been replaced by an image of the archipelago logo. Some locations are sent automatically depending on the gamestate and may appear as if they were obtained normally.
+
+## Can you play multiplayer?
+
+Yes! The mod [Ghost Multiplayer](https://steamcommunity.com/sharedfiles/filedetails/?id=3484991017) is fully compatible with Archipelago, letting you see other Rusted Moss players in-game. Having multiple players on the same slot for co-op is also supported. Ghost Multiplayer is only available for legal Steam copies of the game.
+
+## Is Archipelago compatible with other Rusted Moss mods?
+
+Yes! Cosmetic mods, such as Palette editor and Minimap, are fully supported. Checklist is compatible with Archipelago and displays (most) checks that haven't been completed yet. Pursuit adds extra challenge, if you're up for it.
+
+Minify! is partially compatible; the increase in speed and Heavy Ammo start don't affect any of the logic.
+
+Gimmick is fully compatible; changing the `character` YAML option to `gimmick` will use a new set of logic. However, you must install and enable Gimmick mod on your own; the client won't enforce your character selection.
 
 ## Known Limitations and Issues
 * Many of the yaml settings are drastically underused with some only being considered in one or two rooms.
