@@ -5,7 +5,7 @@ befriend villagers, and uncover dark secrets.
 
 
 ## Downloads
-- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/7.3.7/stardew_valley.apworld">Latest Version (7.3.7)</a>
+- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/7.3.10/stardew_valley.apworld">Latest Version (7.3.10)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
