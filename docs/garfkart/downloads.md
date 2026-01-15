@@ -8,6 +8,9 @@
 #### v0.4.3b0
 - <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.3-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.3-beta/garfkart.apworld</a>
 
+#### v0.4.2
+- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/0.4.4-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/0.4.4-beta/garfkart.apworld</a>
+
 #### v0.4.2b0
 - <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.2-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.2-beta/garfkart.apworld</a>
 

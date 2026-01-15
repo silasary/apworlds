@@ -10,7 +10,7 @@ nightmares!
 
 
 ## Downloads
-- <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.2.3/tboir.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.2.3/tboir.apworld">Latest Version (0.2.3.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

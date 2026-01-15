@@ -1,10 +1,5 @@
 # Don't Starve Together
 
-## Where is the options page?
-
-The [player options page for this game](../player-options) contains all the options you need to configure and export a
-config file.
-
 ## What does randomization do to this game?
 
 Instead of learning recipes from a prototyping station, your recipes are earned by doing tasks in Don't Starve Together,
@@ -76,7 +71,7 @@ Some grindier checks have been set to not be allowed progression items.
 
 ## Can this work with a world without caves?
 
-As of Version 1.2, worlds without caves are supported. Make sure in your yaml that cave_regions is set to none, and that your goal is not set to a cave boss.
+Yes. Make sure in your yaml that cave_regions is set to none, and that your goal is not set to a cave boss.
 
 ## What happens if I choose Survival or Wilderness as my server playstyle or otherwise regenerate my world?
 

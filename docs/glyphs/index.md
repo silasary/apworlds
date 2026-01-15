@@ -7,7 +7,7 @@ willingly searches for true knowledge. Your determination dictates where this st
 
 
 ## Downloads
-- <a href="https://github.com/BuffYoda21/ap-glyphs/releases/download/v1.0.2/glyphs.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/BuffYoda21/ap-glyphs/releases/download/v1.1.1/glyphs.apworld">Latest Version (1.1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

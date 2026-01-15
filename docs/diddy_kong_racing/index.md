@@ -4,7 +4,7 @@ Diddy Kong Racing is a kart racing game with a story mode, complete with bosses 
 
 
 ## Downloads
-- <a href="https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v1.1.2/diddy_kong_racing.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v1.1.3/diddy_kong_racing.apworld">Latest Version (1.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Votipelago
 
 ## Latest
-- <a href="https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.7/votipelago.apworld">Latest Version (0.1.7)</a>
+- <a href="https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.8/votipelago.apworld">Latest Version (0.1.8)</a>
 
 ## All Versions
+
+#### v0.1.8
+- <a href="https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.8/votipelago.apworld">https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.8/votipelago.apworld</a>
 
 #### v0.1.7
 - <a href="https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.7/votipelago.apworld">https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.7/votipelago.apworld</a>

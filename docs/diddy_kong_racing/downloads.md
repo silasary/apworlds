@@ -1,9 +1,12 @@
 # Diddy Kong Racing
 
 ## Latest
-- <a href="https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v1.1.2/diddy_kong_racing.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v1.1.3/diddy_kong_racing.apworld">Latest Version (1.1.3)</a>
 
 ## All Versions
+
+#### v1.1.3
+- <a href="https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v1.1.3/diddy_kong_racing.apworld">https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v1.1.3/diddy_kong_racing.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v1.1.2/diddy_kong_racing.apworld">https://github.com/zakwiz/DiddyKongRacingAP/releases/download/v1.1.2/diddy_kong_racing.apworld</a>

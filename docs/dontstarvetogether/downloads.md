@@ -1,9 +1,12 @@
 # Don&#x27;t Starve Together
 
 ## Latest
-- <a href="https://github.com/DragonWolfLeo/Archipelago-DST/releases/download/dst-v1.3.2/dontstarvetogether.apworld">Latest Version (1.3.2)</a>
+- <a href="https://github.com/DragonWolfLeo/Archipelago-DST/releases/download/dst-v1.3.3/dontstarvetogether.apworld">Latest Version (1.3.3)</a>
 
 ## All Versions
+
+#### v1.3.3
+- <a href="https://github.com/DragonWolfLeo/Archipelago-DST/releases/download/dst-v1.3.3/dontstarvetogether.apworld">https://github.com/DragonWolfLeo/Archipelago-DST/releases/download/dst-v1.3.3/dontstarvetogether.apworld</a>
 
 #### v1.3.2
 - <a href="https://github.com/DragonWolfLeo/Archipelago-DST/releases/download/dst-v1.3.2/dontstarvetogether.apworld">https://github.com/DragonWolfLeo/Archipelago-DST/releases/download/dst-v1.3.2/dontstarvetogether.apworld</a>
