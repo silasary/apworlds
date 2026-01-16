@@ -7,7 +7,7 @@ Fork of the original Manual_LinkLink_Silasary.
 
 
 ## Downloads
-- <a href="https://github.com/nicopop/linklink/releases/download/1.2.0/manual_linklink_nicopopxd.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/nicopop/linklink/releases/download/1.2.1/manual_linklink_nicopopxd.apworld">Latest Version (1.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
