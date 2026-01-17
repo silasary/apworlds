@@ -26,11 +26,11 @@ Hosting a game locally is simply taking the Lunacid.yaml file, editing it to sui
 
 *Q: My server's port changed and I can't connect.  How do I fix this?*
 
-**A: Open the .json file for your related save, and change the port in the save directly.**
+**A: In-game, open the options menu at the start screen and change your port.**
 
-*Q: Nothing is sending and when I pick stuff up I get a lot of red.
+*Q: Nothing is sending and when I pick stuff up I get a lot of red.*
 
-**A: Currently a bug; you likely started the game because your game actually connected.
+**A: You are likely in a game state in which the game thinks its connected, but it isn't.  Bug report this!**
 
 *Q: I was sent a key to open a door, but it won't open.*
 
