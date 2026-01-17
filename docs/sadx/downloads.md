@@ -1,9 +1,12 @@
 # Sonic Adventure DX
 
 ## Latest
-- <a href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.1.3/sadx.apworld">Latest Version (1.1.3)</a>
+- <a href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.0/sadx.apworld">Latest Version (1.2.0)</a>
 
 ## All Versions
+
+#### v1.2.0
+- <a href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.0/sadx.apworld">https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.0/sadx.apworld</a>
 
 #### v1.1.3
 - <a href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.1.3/sadx.apworld">https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.1.3/sadx.apworld</a>
