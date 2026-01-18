@@ -1,9 +1,12 @@
 # Here Comes Niko!
 
 ## Latest
-- <a href="https://github.com/niieli/Niko-Archipelago/releases/download/0.8.0/hcniko.apworld">Latest Version (0.8.0)</a>
+- <a href="https://github.com/niieli/Niko-Archipelago/releases/download/0.8.1/hcniko.apworld">Latest Version (0.8.1)</a>
 
 ## All Versions
+
+#### v0.8.1
+- <a href="https://github.com/niieli/Niko-Archipelago/releases/download/0.8.1/hcniko.apworld">https://github.com/niieli/Niko-Archipelago/releases/download/0.8.1/hcniko.apworld</a>
 
 #### v0.8.0
 - <a href="https://github.com/niieli/Niko-Archipelago/releases/download/0.8.0/hcniko.apworld">https://github.com/niieli/Niko-Archipelago/releases/download/0.8.0/hcniko.apworld</a>

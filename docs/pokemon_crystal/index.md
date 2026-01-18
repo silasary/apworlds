@@ -6,7 +6,7 @@ defeat the elusive Red at the peak of Mt. Silver!
 
 
 ## Downloads
-- <a href="https://github.com/gerbiljames/Archipelago-Crystal/releases/download/5.3.6/pokemon_crystal.apworld">Latest Version (5.3.6)</a>
+- <a href="https://github.com/gerbiljames/Archipelago-Crystal/releases/download/5.3.7/pokemon_crystal.apworld">Latest Version (5.3.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

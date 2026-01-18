@@ -1,9 +1,12 @@
 # Sentinels of the Multiverse
 
 ## Latest
-- <a href="https://github.com/Totox00/Archipelago-sotm/releases/download/v0.4.4/sotm.apworld">Latest Version (0.4.4)</a>
+- <a href="https://github.com/Totox00/Archipelago-sotm/releases/download/v0.4.5/sotm.apworld">Latest Version (0.4.5)</a>
 
 ## All Versions
+
+#### v0.4.5
+- <a href="https://github.com/Totox00/Archipelago-sotm/releases/download/v0.4.5/sotm.apworld">https://github.com/Totox00/Archipelago-sotm/releases/download/v0.4.5/sotm.apworld</a>
 
 #### v0.4.4
 - <a href="https://github.com/Totox00/Archipelago-sotm/releases/download/v0.4.4/sotm.apworld">https://github.com/Totox00/Archipelago-sotm/releases/download/v0.4.4/sotm.apworld</a>
