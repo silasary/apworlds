@@ -4,7 +4,7 @@ A live stream polling bot. Viewers can vote on which items are sent to the multi
 
 
 ## Downloads
-- <a href="https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.8/votipelago.apworld">Latest Version (0.1.8)</a>
+- <a href="https://github.com/FlySniper/Archipelago/releases/download/votipelago-0.1.9/votipelago.apworld">Latest Version (0.1.9)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

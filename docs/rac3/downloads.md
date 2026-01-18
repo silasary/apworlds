@@ -26,6 +26,9 @@
 #### v0.4.0
 - <a href="https://github.com/jacobmix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld">https://github.com/jacobmix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld</a>
 
+#### v0.4.0rc1
+- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc1/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc1/rac3.apworld</a>
+
 #### v0.3.9rc0
 - <a href="https://github.com/jacobmix/Archipelago-RaC3/releases/download/v0.3.9-pre/rac3.apworld">https://github.com/jacobmix/Archipelago-RaC3/releases/download/v0.3.9-pre/rac3.apworld</a>
 

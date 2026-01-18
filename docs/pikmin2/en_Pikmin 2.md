@@ -6,7 +6,7 @@ All treasures are shuffled to different locations, except for the five treasures
 
 ## What items and locations get shuffled?
 
-Any location that contains a treasure, including those in caves, are included in the pool, except for those on floor 14 of Dream Den (Titan Dweevil treasure drops). There are a total of 196 randomized locations.
+Any location that contains a treasure, including those in caves, are included in the pool, except for those on floor 14 of Dream Den (Titan Dweevil treasure drops). There are a total of 196 randomized locations. More checks can be added through randomizer options.
 
 ## What is the goal of Pikmin 2 when randomized?
 
