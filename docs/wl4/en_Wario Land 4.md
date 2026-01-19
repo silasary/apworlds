@@ -100,6 +100,8 @@ Smash or by throwing a Toy Car from the top of the room. You need to do one of t
 escape without Ground Pound.
 - Also in Domino Row's red tower, you can get the diamond at the top by going up the left path and
 using invulnerability frames to break one of the blocks and collect it from above.
+- In the switch room in Domino Row, you can ground pound the hard block without dash attacking the
+block above the ladder if you ground pound immediately after dropping off.
 - In Arabian Night, you can reach the bottom of the room full of mummy enemies by throwing them at
 the wooden boxes if you have Grab.
 - In Hotel Horror, you can access the frog switch on Hard without carrying the Ringosuki by throwing
