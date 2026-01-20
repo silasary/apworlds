@@ -6,7 +6,7 @@ the bottom of the Focus Tower, then straight up through the top!
 
 
 ## Downloads
-- <a href="https://github.com/Alchav/Archipelago/releases/download/ffmq-1.7-b1/ffmq.apworld">Latest Version (1.7b1)</a>
+- <a href="https://github.com/Alchav/Archipelago/releases/download/ffmq-1.7-b2/ffmq.apworld">Latest Version (1.7b2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
