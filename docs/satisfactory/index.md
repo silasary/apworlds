@@ -5,7 +5,7 @@ Explore an alien planet, create multi-story factories, and enter conveyor belt h
 
 
 ## Downloads
-- <a href="https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases/download/world-v2.3.1/satisfactory.apworld">Latest Version (2.3.1)</a>
+- <a href="https://github.com/Jarno458/SatisfactoryArchipelagoMod/releases/download/world-v2.3.1-ut-fix/satisfactory.apworld">Latest Version (2.3.1.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

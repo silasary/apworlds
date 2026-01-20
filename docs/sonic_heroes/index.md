@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/EthicalLogic-Archipelago-Org/SonicHeroesArchipelago/releases/download/2.0.1/sonic_heroes.apworld">Latest Version (2.0.1)</a>
+- <a href="https://github.com/EthicalLogic-Archipelago-Org/SonicHeroesArchipelago/releases/download/2.1.0/sonic_heroes.apworld">Latest Version (2.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
