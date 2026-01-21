@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.1.1/manual_blocktales_wolfboi008.apworld">Latest Version (4.1.1)</a>
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.1.2/manual_blocktales_wolfboi008.apworld">Latest Version (4.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -15,5 +15,3 @@ the player must manually refrain from using these gathered items until the track
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Manual_UltimateMarvelVsCapcom3_ManualTeam">en_Manual_UltimateMarvelVsCapcom3_ManualTeam</a>
