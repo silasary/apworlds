@@ -1,9 +1,12 @@
 # osu!
 
 ## Latest
-- <a href="https://github.com/lilymnky-F/Archipelago-Osu/releases/download/v1.3.1/osu.apworld">Latest Version (1.3.1)</a>
+- <a href="https://github.com/lilymnky-F/Archipelago-Osu/releases/download/v1.3.2/osu.apworld">Latest Version (1.3.2)</a>
 
 ## All Versions
+
+#### v1.3.2
+- <a href="https://github.com/lilymnky-F/Archipelago-Osu/releases/download/v1.3.2/osu.apworld">https://github.com/lilymnky-F/Archipelago-Osu/releases/download/v1.3.2/osu.apworld</a>
 
 #### v1.3.1
 - <a href="https://github.com/lilymnky-F/Archipelago-Osu/releases/download/v1.3.1/osu.apworld">https://github.com/lilymnky-F/Archipelago-Osu/releases/download/v1.3.1/osu.apworld</a>
