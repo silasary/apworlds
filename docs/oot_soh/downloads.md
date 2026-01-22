@@ -8,6 +8,9 @@
 #### v1.1.0
 - <a href="https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.1.0/oot_soh.apworld">https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.1.0/oot_soh.apworld</a>
 
+#### v1.1.0
+- <a href="https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.1.0-Hotfix/oot_soh.apworld">https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.1.0-Hotfix/oot_soh.apworld</a>
+
 #### v1.0.0
 - <a href="https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.0.0/oot_soh.apworld">https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.0.0/oot_soh.apworld</a>
 
