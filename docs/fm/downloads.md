@@ -1,9 +1,12 @@
 # Yu-Gi-Oh! Forbidden Memories
 
 ## Latest
-- <a href="https://github.com/sg4e/Archipelago/releases/download/v2.1.3/fm.apworld">Latest Version (2.1.3)</a>
+- <a href="https://github.com/sg4e/Archipelago/releases/download/v2.1.4/fm.apworld">Latest Version (2.1.4)</a>
 
 ## All Versions
+
+#### v2.1.4
+- <a href="https://github.com/sg4e/Archipelago/releases/download/v2.1.4/fm.apworld">https://github.com/sg4e/Archipelago/releases/download/v2.1.4/fm.apworld</a>
 
 #### v2.1.3
 - <a href="https://github.com/sg4e/Archipelago/releases/download/v2.1.3/fm.apworld">https://github.com/sg4e/Archipelago/releases/download/v2.1.3/fm.apworld</a>
