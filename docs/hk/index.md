@@ -7,7 +7,7 @@ As the enigmatic Knight, you’ll traverse the depths, unravel its mysteries and
 
 
 ## Downloads
-- <a href="https://github.com/qwint/Archipelago/releases/download/1.0.2/hk.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/qwint/Archipelago/releases/download/1.0.3/hk.apworld">Latest Version (1.0.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Yacht Dice
 
 ## Latest
-- <a href="https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v2.3.2/yachtdice.apworld">Latest Version (2.3.2)</a>
+- <a href="https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v2.3.3/yachtdice.apworld">Latest Version (2.3.3)</a>
 
 ## All Versions
+
+#### v2.3.3
+- <a href="https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v2.3.3/yachtdice.apworld">https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v2.3.3/yachtdice.apworld</a>
 
 #### v2.3.2
 - <a href="https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v2.3.2/yachtdice.apworld">https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v2.3.2/yachtdice.apworld</a>

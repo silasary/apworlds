@@ -9,7 +9,7 @@ Roll your way to victory by reaching the target score!
 
 
 ## Downloads
-- <a href="https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v2.3.2/yachtdice.apworld">Latest Version (2.3.2)</a>
+- <a href="https://github.com/spinerak/ArchipelagoYachtDice/releases/download/v2.3.3/yachtdice.apworld">Latest Version (2.3.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

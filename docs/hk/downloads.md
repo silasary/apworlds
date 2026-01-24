@@ -1,9 +1,12 @@
 # Hollow Knight
 
 ## Latest
-- <a href="https://github.com/qwint/Archipelago/releases/download/1.0.2/hk.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/qwint/Archipelago/releases/download/1.0.3/hk.apworld">Latest Version (1.0.3)</a>
 
 ## All Versions
+
+#### v1.0.3
+- <a href="https://github.com/qwint/Archipelago/releases/download/1.0.3/hk.apworld">https://github.com/qwint/Archipelago/releases/download/1.0.3/hk.apworld</a>
 
 #### v1.0.2
 - <a href="https://github.com/qwint/Archipelago/releases/download/1.0.2/hk.apworld">https://github.com/qwint/Archipelago/releases/download/1.0.2/hk.apworld</a>
