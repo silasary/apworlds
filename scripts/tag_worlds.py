@@ -18,7 +18,6 @@ from worlds import AutoWorldRegister
 from worlds.AutoWorld import World
 from worlds.apworld_manager.world_manager import ApWorldMetadata
 
-
 WORLD_TYPES = AutoWorldRegister.world_types
 
 BAD_DESCRIPTIONS = [
