@@ -6,7 +6,7 @@ restore the shattered crystal, and bring peace to the world.
 
 
 ## Downloads
-- <a href="https://github.com/Silvris/Archipelago/releases/download/k64_0.3.0/k64.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/Silvris/Archipelago/releases/download/k64_0.3.1/k64.apworld">Latest Version (0.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

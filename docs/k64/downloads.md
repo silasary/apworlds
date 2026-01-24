@@ -1,9 +1,12 @@
 # Kirby 64 - The Crystal Shards
 
 ## Latest
-- <a href="https://github.com/Silvris/Archipelago/releases/download/k64_0.3.0/k64.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/Silvris/Archipelago/releases/download/k64_0.3.1/k64.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/Silvris/Archipelago/releases/download/k64_0.3.1/k64.apworld">https://github.com/Silvris/Archipelago/releases/download/k64_0.3.1/k64.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/Silvris/Archipelago/releases/download/k64_0.3.0/k64.apworld">https://github.com/Silvris/Archipelago/releases/download/k64_0.3.0/k64.apworld</a>
