@@ -11,9 +11,9 @@
 3. Head over to your NecroDancer game directory and access the `Necrodancer64` folder.
    - Steam: You can access this via right-clicking your game in your library, hovering over "Manage" and selecting "Browse Local Files".
    - Steam File Directory: `Steam\steamapps\common\Crypt of the NecroDancer\Necrodancer64`
-4. Modify `config.json`, adding the following string to the end of the `scriptWhitelist` property: `"system.file.Storage"`. An example is provided below.
+4. Modify `config.json`, adding the following strings to the end of the `scriptWhitelist` property: `"system.file.Storage"` and `"system.network.Client`. An example is provided below.
    ```json
-   "scriptWhitelist":["necro.*","system.game.Audio","system.game.Bitmap","system.game.Entities","system.game.FileIO","system.game.Graphics","system.game.Input","system.network.IPC","system.events.*","system.gfx.*","system.i18n.*","system.utils.*", "system.file.Storage"]
+   "scriptWhitelist": ["necro.*","system.game.Audio","system.game.Bitmap","system.game.Entities","system.game.FileIO","system.game.Graphics","system.game.Input","system.network.IPC","system.events.*","system.gfx.*","system.i18n.*","system.utils.*","system.file.Storage","system.network.Client"]
    ```
 5. Head over to your NecroDancer local data directory and insert the mod downloaded from the [mod page](https://mod.io/g/crypt/m/ap) into your `downloadedMods` folder. A list of file directories for this manual install are provided.
    - Note that you can skip this step if you want to use the in-game mod browser. Just search "Archipelago Redux" and install.
