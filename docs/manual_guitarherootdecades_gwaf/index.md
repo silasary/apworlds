@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/GirlWithoutAFairy/Guitar-Hero-On-Tour-Decades-AP-Manual/releases/download/1.0/manual_guitarherootdecades_gwaf.apworld">Latest Version (1.0)</a>
+- <a href="https://github.com/GirlWithoutAFairy/Official-GH-and-RB-AP-Manuals/releases/download/25.12.11/manual_guitarherootdecades_gwaf.apworld">Latest Version (25.12.11)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -15,5 +15,3 @@ the player must manually refrain from using these gathered items until the track
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Manual_UltimateMarvelVsCapcom3_ManualTeam">en_Manual_UltimateMarvelVsCapcom3_ManualTeam</a>

@@ -1,9 +1,12 @@
 # Hero Core
 
 ## Latest
-- <a href="https://github.com/Minish-Link/HeroCore-Archipelago/releases/download/v1.0.3/herocore.apworld">Latest Version (1.0.3)</a>
+- <a href="https://github.com/Minish-Link/HeroCore-Archipelago/releases/download/v1.0.4/herocore.apworld">Latest Version (1.0.4)</a>
 
 ## All Versions
+
+#### v1.0.4
+- <a href="https://github.com/Minish-Link/HeroCore-Archipelago/releases/download/v1.0.4/herocore.apworld">https://github.com/Minish-Link/HeroCore-Archipelago/releases/download/v1.0.4/herocore.apworld</a>
 
 #### v1.0.3
 - <a href="https://github.com/Minish-Link/HeroCore-Archipelago/releases/download/v1.0.3/herocore.apworld">https://github.com/Minish-Link/HeroCore-Archipelago/releases/download/v1.0.3/herocore.apworld</a>

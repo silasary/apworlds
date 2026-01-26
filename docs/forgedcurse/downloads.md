@@ -8,6 +8,9 @@
 #### v1.1.0
 - <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0/forgedcurse.apworld</a>
 
+#### v1.1.0b1
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0-beta.1/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0-beta.1/forgedcurse.apworld</a>
+
 #### v1.1.0b0
 - <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0-beta/forgedcurse.apworld">https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0-beta/forgedcurse.apworld</a>
 
