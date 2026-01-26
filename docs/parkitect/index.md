@@ -5,7 +5,7 @@ Construct your own coasters, design efficiently operating parks that fully immer
 
 
 ## Downloads
-- <a href="https://github.com/CrusherRL/AP_Parkitect_World/releases/download/1.2.0/parkitect.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/CrusherRL/AP_Parkitect_World/releases/download/1.3.0/parkitect.apworld">Latest Version (1.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

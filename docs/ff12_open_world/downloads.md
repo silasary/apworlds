@@ -1,9 +1,12 @@
 # Final Fantasy 12 Open World
 
 ## Latest
-- <a href="https://github.com/Bartz24/Archipelago/releases/download/0.6.0/ff12_open_world.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/Bartz24/Archipelago/releases/download/0.6.1/ff12_open_world.apworld">Latest Version (0.6.1)</a>
 
 ## All Versions
+
+#### v0.6.1
+- <a href="https://github.com/Bartz24/Archipelago/releases/download/0.6.1/ff12_open_world.apworld">https://github.com/Bartz24/Archipelago/releases/download/0.6.1/ff12_open_world.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/Bartz24/Archipelago/releases/download/0.6.0/ff12_open_world.apworld">https://github.com/Bartz24/Archipelago/releases/download/0.6.0/ff12_open_world.apworld</a>

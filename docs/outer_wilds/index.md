@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v1.0.1/outer_wilds.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v1.1.0/outer_wilds.apworld">Latest Version (1.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
