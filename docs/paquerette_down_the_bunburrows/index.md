@@ -1,6 +1,7 @@
 # Paquerette Down The Bunburrows
 
-
+Capture Bunnies and explore the Bunburrows in this Soko-bun experience!
+Archipelago amps up this already difficult puzzle game by further locking your progression behind the Multiworld.
 
 
 ## Downloads

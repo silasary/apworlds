@@ -1,6 +1,7 @@
 # Plok
 
-Plok whose apworld code is completely stolen from Majoras Masks apworld.
+Plok is here for his adventures in this Poly-Esta Archipelago implementation! 
+Get ready to enjoy the classic SNES platformer and its iconic soundtrack. Plok is one of my favorite games and I&#x27;ve been excited to take this on.
 
 
 ## Downloads

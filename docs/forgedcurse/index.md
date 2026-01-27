@@ -6,7 +6,7 @@ magic crossbow to destroy the barrier to the sealed hall and defeat Big Wizard.
 
 
 ## Downloads
-- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0/forgedcurse.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/cheesepak/ap-forged-curse/releases/download/v1.1.0-beta.1/forgedcurse.apworld">Latest Version (1.1.0b1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -14,5 +14,3 @@ Collect your Goal Locking items in order to beat your final song!
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Manual_UltimateMarvelVsCapcom3_ManualTeam">en_Manual_UltimateMarvelVsCapcom3_ManualTeam</a>

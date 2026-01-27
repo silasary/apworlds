@@ -17,5 +17,4 @@ the player must manually refrain from using these gathered items until the track
 
 ## Other Documentation files
 - <a href="en_Manual">en_Manual</a>
-- <a href="en_Manual_UltimateMarvelVsCapcom3_ManualTeam">en_Manual_UltimateMarvelVsCapcom3_ManualTeam</a>
 - <a href="readme">readme</a>

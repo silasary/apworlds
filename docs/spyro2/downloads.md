@@ -1,15 +1,9 @@
 # Spyro 2
 
 ## Latest
-- <a href="https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld">Latest Version (31.post2)</a>
+- <a href="https://github.com/Uroogla/S2AP/releases/download/1.0.0/spyro2.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
-
-#### v31.post2
-- <a href="https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld</a>
-
-#### v6
-- <a href="https://github.com/Uroogla/S2AP/releases/download/test_jan_6/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/test_jan_6/spyro2.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Uroogla/S2AP/releases/download/1.0.0/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/1.0.0/spyro2.apworld</a>

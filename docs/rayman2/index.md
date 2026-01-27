@@ -5,7 +5,7 @@ masks to defeat an army of Robo-Pirates attacking the Glade of Dreams.
 
 
 ## Downloads
-- <a href="https://github.com/Aeltumn/Archipelago/releases/download/v0.0.1/rayman2.apworld">Latest Version (0.0.1)</a>
+- <a href="https://github.com/Aeltumn/Rayman2AP/releases/download/v0.0.5/rayman2.apworld">Latest Version (0.0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
