@@ -118,7 +118,7 @@ for world in files:
                 # if not version.get('source_url'):
                 #     print(f"Missing source_url for {world.stem} {version.get('world_version')}")
 
-            write_docs(world.stem, versions, manifest)
+            write_docs(world.stem, versions, manifest, False)
         except GithubRateLimitExceeded as e:
             print(f"GitHub rate limit exceeded: {e}")
             save_last_checked()

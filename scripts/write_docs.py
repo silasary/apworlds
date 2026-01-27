@@ -2,7 +2,8 @@ import argparse
 import glob
 import os
 from pathlib import Path
-from typing import Any
+import pathlib
+from typing import Any, Iterable
 import pystache
 import zipfile
 import langcodes
@@ -17,7 +18,7 @@ with open("templates/index_template.mustache") as f:
     index_template = f.read()
 
 
-def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[str, Any]) -> None:
+def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[str, Any], force: bool) -> None:
     versions = [v for v in versions if not v.get("ignore", False)]
     if not versions:
         return
@@ -25,18 +26,20 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
     os.makedirs(f"docs/{lower_stem}", exist_ok=True)
 
     updated = write_downloads(world_stem, versions, manifest, lower_stem)
-    if not updated:
+    if not updated and not force:
         return
 
     filenames = copy_documentation(world_stem, versions, manifest, lower_stem)
     print(f"Copied {len(filenames)} documentation files for {world_stem}: {', '.join(filenames)}")
 
-    all_files = glob.glob(f"docs/{lower_stem}/*")
+    all_files = glob.glob("**", root_dir=f"docs/{lower_stem}/", recursive=True)
     expected_filenames = set(filenames) | {"downloads.md", "index.md"}
     for filepath in all_files:
-        filename = os.path.basename(filepath)
+        filename = filepath
+        if os.path.isdir(os.path.join(f"docs/{lower_stem}/", filepath)):
+            continue
         if filename not in expected_filenames:
-            os.remove(filepath)
+            os.remove(os.path.join(f"docs/{lower_stem}/", filepath))
             print(f"Removed outdated documentation file: {filepath}")
 
     pages = [Path(f).stem for f in filenames if f.endswith(".md")]
@@ -45,7 +48,7 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
         lang = langcodes.Language.get(file_stem.split("_")[0 if front else 1]).display_name()
         return {"file": file_stem, "lang": lang}
 
-    setup_guides = [langfile(f, False) for f in pages if f.startswith("setup")]
+    setup_guides = [langfile(f, False) for f in pages if f.startswith("setup_")]
     game_infos = [langfile(f, True) for f in pages if f.endswith(f"_{manifest.get('game','')}")]
 
     other_files = sorted(set(pages) - set(i["file"] for i in setup_guides) - set(i["file"] for i in game_infos) - {"en_Manual_UltimateMarvelVsCapcom3_ManualTeam"})
@@ -74,7 +77,7 @@ def copy_documentation(world_stem: str, versions: list[dict[str, Any]], manifest
         path = repositories.download_remote_world(release, False)
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 404:
-            del manifest["versions"][versions[0]["world_version"]]
+            del manifest["versions"][versions[0]["tag"]]
             save_manifest(Path("index") / f"{world_stem}.json", manifest)
             return []
         print(f"Failed to download {world_stem} for documentation: {e}")
@@ -85,20 +88,31 @@ def copy_documentation(world_stem: str, versions: list[dict[str, Any]], manifest
         directories = [f for f in directories[0].iterdir() if f.is_dir()]
         docs = next((d for d in directories if d.stem == "docs"), None)
         if docs:
-            for doc in docs.iterdir():
-                doc_path = f"docs/{lower_stem}/{doc.name}"
-                filenames.append(doc.name)
-                if os.path.exists(doc_path):
-                    with open(doc_path, "rb") as bf:
-                        existing = bf.read()
-                else:
-                    existing = None
-                with doc.open("rb") as bf:
-                    new_content = bf.read()
-                if existing == new_content:
-                    continue
-                with open(doc_path, "wb") as bf:
-                    bf.write(new_content)
+            filenames = copy_doc_files(lower_stem, docs.iterdir())
+    return filenames
+
+
+def copy_doc_files(lower_stem: str, files: Iterable[pathlib.Path]) -> list[str]:
+    filenames = []
+    for doc in files:
+        doc_path = f"docs/{lower_stem}/{doc.name}"
+        if doc.is_dir():
+            os.makedirs(doc_path, exist_ok=True)
+            subdir_filenames = copy_doc_files(f"{lower_stem}/{doc.stem}", doc.iterdir())
+            filenames.extend([f"{doc.stem}/{subfile}" for subfile in subdir_filenames])
+            continue
+        filenames.append(doc.name)
+        if os.path.exists(doc_path):
+            with open(doc_path, "rb") as bf:
+                existing = bf.read()
+        else:
+            existing = None
+        with doc.open("rb") as bf:
+            new_content = bf.read()
+        if existing == new_content:
+            continue
+        with open(doc_path, "wb") as bf:
+            bf.write(new_content)
     return filenames
 
 
@@ -127,13 +141,7 @@ def write_downloads(world_stem: str, versions: list[dict[str, Any]], manifest: d
     return True
 
 
-if __name__ == "__main__":
-    argparser = argparse.ArgumentParser(description="Write documentation files for worlds.")
-    argparser.add_argument("world", type=str, help="The stem of the world to write documentation for")
-
-    args = argparser.parse_args()
-
-    world_stem = args.world
+def run_for_world(world_stem: str) -> None:
     manifest_path = Path("index") / f"{world_stem}.json"
     if not manifest_path.exists():
         print(f"Manifest for world {world_stem} does not exist.")
@@ -141,4 +149,22 @@ if __name__ == "__main__":
     manifest = load_manifest(manifest_path)
     versions = list(manifest.get("versions", {}).values())
     versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)
-    write_docs(world_stem, versions, manifest)
+    write_docs(world_stem, versions, manifest, True)
+
+
+if __name__ == "__main__":
+    argparser = argparse.ArgumentParser(description="Write documentation files for worlds.")
+    argparser.add_argument("world", type=str, nargs="?", help="The stem of the world to write documentation for")
+
+    args = argparser.parse_args()
+    if args.world:
+        run_for_world(args.world)
+    else:
+        files = list(pathlib.Path("index").iterdir())
+        files.sort(key=lambda x: x.stem.lower())
+        for world in files:
+            if not world.is_file():
+                continue
+            if world.suffix != ".json":
+                continue
+            run_for_world(world.stem)

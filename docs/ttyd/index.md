@@ -1,6 +1,9 @@
 # Paper Mario The Thousand Year Door
 
-TTYD
+Paper Mario: The Thousand-Year Door is a quirky, turn-based RPG with a paper-craft twist.
+Mario teams up with oddball allies to stop an ancient evil sealed behind a magical door.
+Set in Rogueport, the game mixes platforming, puzzles, and witty, self-aware dialogue.
+Battles play out on a stage with timed button presses and a live audience cheering you on.
 
 
 ## Downloads
