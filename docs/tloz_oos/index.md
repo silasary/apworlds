@@ -6,7 +6,7 @@ Gather the Essences of Nature, confront Onox and rescue Din to give nature some 
 
 
 ## Downloads
-- <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-13.7.4/tloz_oos.apworld">Latest Version (13.7.4)</a>
+- <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.0/tloz_oos.apworld">Latest Version (17.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

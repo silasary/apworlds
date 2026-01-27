@@ -4,7 +4,7 @@ A freeware metroidvania game created by Maddy Thorson chronicling the travels of
 
 
 ## Downloads
-- <a href="https://github.com/ThatOneGuy27/Archipelago-aus/releases/download/v1.1-beta/aus.apworld">Latest Version (1.1b0)</a>
+- <a href="https://github.com/ThatOneGuy27/Archipelago-aus/releases/download/v1.3-beta/aus.apworld">Latest Version (1.3b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
