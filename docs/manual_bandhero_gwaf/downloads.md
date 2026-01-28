@@ -1,4 +1,4 @@
-# 
+# Manual_BandHero_GWAF
 
 ## Latest
 - <a href="https://github.com/GirlWithoutAFairy/Official-GH-and-RB-AP-Manuals/releases/download/25.12.11/manual_bandhero_gwaf.apworld">Latest Version (25.12.11)</a>

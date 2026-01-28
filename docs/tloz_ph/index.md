@@ -4,7 +4,7 @@ The Legend of Zelda: Phantom Hourglass is the sea bound handheld sequel to the W
 
 
 ## Downloads
-- <a href="https://github.com/carrotinator/Archipelago/releases/download/v0.8.0-alpha/tloz_ph.apworld">Latest Version (0.8.0a0)</a>
+- <a href="https://github.com/carrotinator/Archipelago/releases/download/v0.8.1-alpha/tloz_ph.apworld">Latest Version (0.8.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

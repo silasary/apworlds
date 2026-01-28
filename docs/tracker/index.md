@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.25/tracker.apworld">Latest Version (0.2.25)</a>
+- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.2.26/tracker.apworld">Latest Version (0.2.26)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
