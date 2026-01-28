@@ -1,5 +1,5 @@
 import argparse
-from collections import defaultdict
+from collections import defaultdict, Counter
 import datetime
 import json
 import os
@@ -20,6 +20,8 @@ args = parser.parse_args()
 worlds = []
 meta = defaultdict(dict)
 manifest_ready = defaultdict(bool)
+max_minimum_ap_version: Counter[str] = Counter()
+max_maximum_ap_version: Counter[str] = Counter()
 
 last_checked = {}
 
@@ -97,8 +99,9 @@ for world in files:
                     metadata["maximum_ap_version"] = version["maximum_ap_version"]
                 if version.get("prerelease"):
                     flags.append("prerelease")
-                if not version.get("has_manifest", True):  # Assume missing data means it has one
+                if not version.get("has_manifest"):
                     metadata.setdefault("maximum_ap_version", "0.6.99")
+                    version.setdefault("maximum_ap_version", "0.6.99")
 
                 if flags:
                     metadata["flags"] = flags
@@ -117,6 +120,10 @@ for world in files:
 
                 # if not version.get('source_url'):
                 #     print(f"Missing source_url for {world.stem} {version.get('world_version')}")
+
+            if versions:
+                max_minimum_ap_version[max(versions, key=lambda v: parse_version(v.get("minimum_ap_version", "0.0.0"))).get("minimum_ap_version", "")] += 1
+                max_maximum_ap_version[max(versions, key=lambda v: parse_version(v.get("world_version", "0.0.0"))).get("maximum_ap_version", "")] += 1
 
             write_docs(world.stem, versions, manifest, False)
         except GithubRateLimitExceeded as e:
@@ -147,8 +154,11 @@ with open("report.json", "w") as f:
         "total_packages": len(repositories.all_known_package_ids),
         "total_versions": len(worlds),
         "manifest_ready": {k: v for k, v in manifest_ready.items()},
+        # "manifest_fields": {k: v for k, v in manifest_ready.items()},
+        "max_minimum_ap_version": {k: v for k, v in sorted(max_minimum_ap_version.items()) if v},
+        "max_maximum_ap_version": {k: v for k, v in sorted(max_maximum_ap_version.items()) if v},
     }
-    f.write(json.dumps(report, indent=2))
+    f.write(json.dumps(report, indent=2, sort_keys=False))
 
 if args.add_unknown:
     for id in repositories.all_known_package_ids:

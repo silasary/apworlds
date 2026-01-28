@@ -153,6 +153,9 @@ def cleanup_manifest(manifest):
         del manifest["metadata"]
     if "world" in manifest:
         del manifest["world"]
+    if "_manifest_fields" in manifest:
+        manifest["manifest_fields"] = manifest["_manifest_fields"]
+        del manifest["_manifest_fields"]
 
     if "tags" in manifest:
         # common typo
@@ -183,6 +186,8 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
     version_info = manifest["versions"][tag_version]
     should_download = "hash_sha256" not in version_info
     if "has_manifest" not in version_info:
+        should_download = True
+    if "manifest_fields" not in manifest:
         should_download = True
 
     if should_download:
@@ -239,6 +244,7 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
             manifest["flags"] = manifest_data["flags"]
         if "igdb_id" in manifest_data:
             manifest["igdb_id"] = manifest_data["igdb_id"]
+        manifest["manifest_fields"] = list(set(manifest_data.keys()) - {"compatible_version", "version", "game"})  # We only care about optional fields
 
 
 def update_index_from_changelog(file_path: Path | None, manifest: dict, changelog: str) -> dict[str, dict]:
