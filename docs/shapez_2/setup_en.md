@@ -34,7 +34,7 @@ use the manual-like client and ingame cheats.
 ### Sending locations using the manual-like client
 
 Open the Archipelago Launcher and select `shapez 2 Client`. A client window that looks like the text client should then 
-appear. Connect to the multiworld like you would do with the standard text client and switch to the `Locations` tab. 
+appear. Connect to the multiworld like you would do with the standard text client and switch to the various tabs. 
 There you can click the milestone, task, or operator level you just completed in order to send the location check(s).
 Do note that the client will show you more locations than you actually have in your world. Clicking them won't have any 
 effect.

@@ -6,7 +6,7 @@ Bits &amp; Bops is a collection of original rhythm mini-games!
 
 
 ## Downloads
-- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/1.0.3/bits_and_bops.apworld">Latest Version (1.0.3.post2)</a>
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/1.0.5/bits_and_bops.apworld">Latest Version (1.0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

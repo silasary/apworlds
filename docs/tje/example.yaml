@@ -1,4 +1,4 @@
-# This is an example YAML for ToeJam & Earl, intended as a "typical" configuration and/or quickstart.
+# This is an example YAML for ToeJam & Earl, intended as a quickstart.
 #
 # For a full overview of all of the options, run "Generate Template Options"
 # in the Archipelago Launcher and check /Players/Templates/ToeJam and Earl.yaml.
@@ -10,11 +10,14 @@ ToeJam and Earl:
   bad_food: yes
   bad_presents: yes
   auto_bad_presents: no_randomizer
-  trap_cupid: yes
-  trap_burp: yes
-  trap_sleep: no
-  trap_earthling: no
-  trap_skates: yes
+  trap_weights:
+    cupid: 2
+    burp: 2
+    sleep: 2
+    earthling: 3
+    skates: 1
+    randomizer: 0
+  trap_percentage: 3
   starting_presents: hitops
   elevator_keys: yes
   key_gap: 4
