@@ -4,24 +4,24 @@
 * Latest release of [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases).
 * The `rimworld.apworld` from the latest [Archipelago RimWorld](https://github.com/PhantomOfAres/ArchipelagoRimworld/releases) release.
 * The `Harmony` mod, which can be downloaded from the workshop [here](https://steamcommunity.com/workshop/filedetails/?id=2009463077)
-* The `ArchipelagoRimworld.zip` mod file from the [Rimworld Archipelago Client](https://github.com/PhantomOfAres/RimworldArchipelagoClient)
+* The `RimworldArchipelagoClient<version>.zip` mod file from the [Rimworld Archipelago Client](https://github.com/PhantomOfAres/RimworldArchipelagoClient)
     * Workshop support coming soon!
-* A legal copy of RimWorld, on version 1.5 or later.
+* A legal copy of RimWorld, on version 1.6 or later.
     * Only tested on Steam version.
-    * All expansions up to Anomaly are currently supported.
+    * All expansions up to Odyssey are currently supported.
     * Additional mods are not guaranteed to work, but if you're interested, see `Advanced Setup` at the end of this guide.
 
 ## Installing the Archipelago Mod to RimWorld
 1. Navigate to the install folder for Rimworld (right-click RimWorld in Steam, click Properties -> Installed Files -> Browse)
 2. Open the Mods folder
-3. Extract the contents of `ArchipelagoRimworld.zip` into the Mods folder - there should now be a RimworldArchipelago folder alongside the "Place mods here.text" file in the Mods folder.
+3. Extract the contents of `ArchipelagoRimworldClient.zip` into the Mods folder - there should now be a RimworldArchipelago folder alongside the "Place mods here.text" file in the Mods folder.
 4. Open RimWorld
 5. Click the "Mods" button from the main menu
 6. Enable the Harmony mod, and the Archipelago mod. The Harmony mod must be at the top of the list, and the Archipelago mod should be below all of the base game files (Core, Royalty, Ideology, etc.) You can use the Auto-Sort button to resolve this order.
 
 ## Generating and Hosting a Seed
 * If you are unfamiliar with Archipelago, I recommend reading through the [Archipelago Setup Guide](https://archipelago.gg/tutorial/Archipelago/setup/en) to gain an understanding of how Archipelago works and to better understand the steps below.
-1. Download the `rimworld.apworld` and `Rimworld.yaml` files from the latest [Archipelago RimWorld](https://github.com/PhantomOfAres/ArchipelagoRimworld/releases) release.
+1. Download the `rimworld.apworld` and `yaml` files from the latest [Archipelago RimWorld](https://github.com/PhantomOfAres/ArchipelagoRimworld/releases) release. Note: There are multiple sample yaml files, depending on whether you own DLCs. Both can be edited as desired.
 2. Put the `rimworld.apworld` file in the `Archipelago/custom_worlds` directory.
 3. Edit `Rimworld.yaml`
     1. Take a look at all of the options in the yaml file, and adjust them as desired. Take special note of the `expansion_enabled` settings if you don't own or would like to exclude certain expansioins.
@@ -46,7 +46,7 @@ This mod has been designed to attempt to support future expansions as well as mo
 3. Open Options -> Mod options -> Archipelago
 4. Click the `Extract Ap Data` button. This wil export all of the game's data into a format that both the generator/server and the client can read. It will be saved in the user's Documents folder (note that modernly, there are two Documents folders, one connected to OneDrive, and one local - it's in the local one.)
 5. Send the ArchipelagoItemDefs.xml file to all Rimworld players in this multiworld.
-6. All players must put this ArchipelagoItemDefs.xml file in their mod folder (`Rimworld/Mods/RimworldArchipelago/1.5/Defs`) - it will overwrite the existing xml file.
+6. All players must put this ArchipelagoItemDefs.xml file in their mod folder (`Rimworld/Mods/RimworldArchipelago/Defs`) - it will overwrite the existing xml file.
 7. Open the apworld file (it's a zip file - it can be opened with anything that can open a zip file.)
 8. Replace the `ArchipelagoItemDefs.xml` in the apworld with the new xml file.
 9. If multiple people in the same multiworld are using different sets of mods, each player must exclude the items from the other mods from their yamls. (Soon, there will be a way to do this directly. As a workaround, you should be able to exclude the locations and items from other mods - you'll have to go digging through `ArchipelagoItemDefs.xml` to find them - it should include the source mod for all items.)

@@ -1,9 +1,12 @@
 # Rimworld
 
 ## Latest
-- <a href="https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v0.4.3-alpha/rimworld.apworld">Latest Version (0.4.3a0)</a>
+- <a href="https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v0.5.0-alpha/rimworld.apworld">Latest Version (0.5.0a0)</a>
 
 ## All Versions
+
+#### v0.5.0a0
+- <a href="https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v0.5.0-alpha/rimworld.apworld">https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v0.5.0-alpha/rimworld.apworld</a>
 
 #### v0.4.3a0
 - <a href="https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v0.4.3-alpha/rimworld.apworld">https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v0.4.3-alpha/rimworld.apworld</a>
