@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/111222111/Tale-of-Two-Wastelands/releases/download/Beta_2.0.0/manual_taleoftwowastelands_fallenkingdoms.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/111222111/Tale-of-Two-Wastelands/releases/download/Beta_2.5.0/manual_taleoftwowastelands_fallenkingdoms.apworld">Latest Version (2.5.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

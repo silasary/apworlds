@@ -35,9 +35,6 @@
 | Swapper                                | RemoteSwapper                          |
 | Sandbox Item Producer                  | RemoteSandboxItemProducer              |
 | Sandbox Fluid Producer                 | RemoteSandboxFluidProducer             |
-| Fluid Miner                            | RemoteFluidMiner                       |
-| Shape Miner Extension                  | RemoteShapeMinerExtension              |
-| Fluid Miner Extension                  | RemoteFluidMinerExtension              |
 | Space Pipe                             | RemoteSpacePipe                        |
 | Rails                                  | RemoteRails                            |
 | Shape (Un)loader                       | RemoteShapeUnLoader                    |
@@ -68,17 +65,26 @@
 | Train Wait Stop                        | RemoteTrainWaitStop                    |
 | Filler Wagon                           | RemoteFillerWagon                      |
 | Space Belt                             | RemoteSpaceBelt                        |
-| Shape Miner                            | RemoteShapeMiner                       |
 | 1x1 Foundation                         | Remote1x1Foundation                    |
 | 1x2 Foundation                         | Remote1x2Foundation                    |
+| Shape Miner                            | RemoteShapeMiner                       |
+| Fluid Miner                            | RemoteFluidMiner                       |
+| Shape Miner Extension                  | RemoteShapeMinerExtension              |
+| Fluid Miner Extension                  | RemoteFluidMinerExtension              |
+| Shape Miner + Extension                | RemoteShapeMinerPlusExtension          |
+| Fluid Miner + Extension                | RemoteFluidMinerPlusExtension          |
 | 2nd Floor                              | Remote2ndFloor                         |
 | Blueprints                             | RemoteBlueprints                       |
-| Operator Levels                        | RemoteOperatorLevels                   |
 | 3rd Platform Floor                     | Remote3rdPlatformFloor                 |
 | 3rd Floor                              | Remote3rdFloor                         |
 | Train Delivery                         | RemoteTrainDelivery                    |
 | Space Platforms                        | RemoteSpacePlatforms                   |
 | 2nd Platform Floor                     | Remote2ndPlatformFloor                 |
+| Wires (Category)                       | RemoteWiresCategory                    |
+| Trains                                 | RemoteTrains                           |
+| Fluids                                 | RemoteFluids                           |
+| Upgrades                               | RemoteUpgrades                         |
+| Operator Levels                        | RemoteOperatorLevels                   |
 | Task line #1                           | RemoteTaskLine1                        |
 | Task line #2                           | RemoteTaskLine2                        |
 | Task line #3                           | RemoteTaskLine3                        |

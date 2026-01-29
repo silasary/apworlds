@@ -6,7 +6,7 @@ cute, action-packed, and possibly pretty difficult adventure.
 
 
 ## Downloads
-- <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.2/rabi_ribi.apworld">Latest Version (1.4.2)</a>
+- <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.3/rabi_ribi.apworld">Latest Version (1.4.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

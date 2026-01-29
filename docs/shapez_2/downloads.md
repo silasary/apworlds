@@ -1,9 +1,15 @@
 # shapez 2
 
 ## Latest
-- <a href="https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.1/shapez_2.apworld">Latest Version (0.99.1)</a>
+- <a href="https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.3/shapez_2.apworld">Latest Version (0.99.3)</a>
 
 ## All Versions
+
+#### v0.99.3
+- <a href="https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.3/shapez_2.apworld">https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.3/shapez_2.apworld</a>
+
+#### v0.99.2
+- <a href="https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.2/shapez_2.apworld">https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.2/shapez_2.apworld</a>
 
 #### v0.99.1
 - <a href="https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.1/shapez_2.apworld">https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.1/shapez_2.apworld</a>
