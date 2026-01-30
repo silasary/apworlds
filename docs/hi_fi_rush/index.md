@@ -4,7 +4,7 @@ Feel the beat as wannabe rockstar Chai and his ragtag team fight against evil me
 
 
 ## Downloads
-- <a href="https://github.com/TRPG0/HbkArchipelago/releases/download/0.1.2/hi_fi_rush.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/TRPG0/HbkArchipelago/releases/download/0.2.0/hi_fi_rush.apworld">Latest Version (0.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

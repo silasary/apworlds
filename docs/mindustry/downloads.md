@@ -1,9 +1,12 @@
 # Mindustry
 
 ## Latest
-- <a href="https://github.com/JohnMahglass/Archipelago-Mindustry/releases/download/v0.4.0/mindustry.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/JohnMahglass/Archipelago-Mindustry/releases/download/v0.4.2/mindustry.apworld">Latest Version (0.4.2)</a>
 
 ## All Versions
+
+#### v0.4.2
+- <a href="https://github.com/JohnMahglass/Archipelago-Mindustry/releases/download/v0.4.2/mindustry.apworld">https://github.com/JohnMahglass/Archipelago-Mindustry/releases/download/v0.4.2/mindustry.apworld</a>
 
 #### v0.4.0
 - <a href="https://github.com/JohnMahglass/Archipelago-Mindustry/releases/download/v0.4.0/mindustry.apworld">https://github.com/JohnMahglass/Archipelago-Mindustry/releases/download/v0.4.0/mindustry.apworld</a>
