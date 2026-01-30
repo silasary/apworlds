@@ -7,7 +7,7 @@ This randomizer comes with an automated WAD scanner that makes it easy to add su
 
 
 ## Downloads
-- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld">Latest Version (0.7.0.post2)</a>
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.1/gzdoom.apworld">Latest Version (0.7.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

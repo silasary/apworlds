@@ -1,9 +1,12 @@
 # gzDoom
 
 ## Latest
-- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld">Latest Version (0.7.0.post2)</a>
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.1/gzdoom.apworld">Latest Version (0.7.1)</a>
 
 ## All Versions
+
+#### v0.7.1
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.1/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.1/gzdoom.apworld</a>
 
 #### v0.7.0.post2
 - <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.7.0/gzdoom.apworld</a>

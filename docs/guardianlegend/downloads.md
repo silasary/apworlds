@@ -1,9 +1,12 @@
 # The Guardian Legend
 
 ## Latest
-- <a href="https://github.com/CoreZer0/TheGuardianLegend-AP/releases/download/v0.6.0/guardianlegend.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/CoreZer0/TheGuardianLegend-AP/releases/download/v0.7.0/guardianlegend.apworld">Latest Version (0.7.0)</a>
 
 ## All Versions
+
+#### v0.7.0
+- <a href="https://github.com/CoreZer0/TheGuardianLegend-AP/releases/download/v0.7.0/guardianlegend.apworld">https://github.com/CoreZer0/TheGuardianLegend-AP/releases/download/v0.7.0/guardianlegend.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/CoreZer0/TheGuardianLegend-AP/releases/download/v0.6.0/guardianlegend.apworld">https://github.com/CoreZer0/TheGuardianLegend-AP/releases/download/v0.6.0/guardianlegend.apworld</a>
