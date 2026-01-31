@@ -1,9 +1,12 @@
 # Bits &amp; Bops
 
 ## Latest
-- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/1.0.5/bits_and_bops.apworld">Latest Version (1.0.5)</a>
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/1.0.6/bits_and_bops.apworld">Latest Version (1.0.6)</a>
 
 ## All Versions
+
+#### v1.0.6
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/1.0.6/bits_and_bops.apworld">https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/1.0.6/bits_and_bops.apworld</a>
 
 #### v1.0.5
 - <a href="https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/1.0.5/bits_and_bops.apworld">https://github.com/xMcacutt-Archipelago/Archipelago-Bits-and-Bops/releases/download/1.0.5/bits_and_bops.apworld</a>
