@@ -7,7 +7,7 @@ climb walls, which were new to the series at the time.
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.5.0/mmx.apworld">Latest Version (1.5.0)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">Latest Version (1.6.0b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
