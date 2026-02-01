@@ -1,9 +1,12 @@
 # Paint
 
 ## Latest
-- <a href="https://github.com/MarioManTAW/jspaint/releases/download/v0.6.0/paint.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/MarioManTAW/jspaint/releases/download/v0.6.1/paint.apworld">Latest Version (0.6.1)</a>
 
 ## All Versions
+
+#### v0.6.1
+- <a href="https://github.com/MarioManTAW/jspaint/releases/download/v0.6.1/paint.apworld">https://github.com/MarioManTAW/jspaint/releases/download/v0.6.1/paint.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/MarioManTAW/jspaint/releases/download/v0.6.0/paint.apworld">https://github.com/MarioManTAW/jspaint/releases/download/v0.6.0/paint.apworld</a>
