@@ -1,9 +1,12 @@
 # Codeforces
 
 ## Latest
-- <a href="https://github.com/glipR/Archipelago/releases/download/codeforces-v0.0.2/codeforces.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/glipR/Archipelago/releases/download/codeforces-v0.0.3/codeforces.apworld">Latest Version (0.0.3)</a>
 
 ## All Versions
+
+#### v0.0.3
+- <a href="https://github.com/glipR/Archipelago/releases/download/codeforces-v0.0.3/codeforces.apworld">https://github.com/glipR/Archipelago/releases/download/codeforces-v0.0.3/codeforces.apworld</a>
 
 #### v0.0.2
 - <a href="https://github.com/glipR/Archipelago/releases/download/codeforces-v0.0.2/codeforces.apworld">https://github.com/glipR/Archipelago/releases/download/codeforces-v0.0.2/codeforces.apworld</a>
