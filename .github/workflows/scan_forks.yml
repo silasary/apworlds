@@ -39,7 +39,8 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v7
       with:
-        branch: new-worlds
+        branch: fork-scan
         title: Scan Forks
         add-paths: 'index/*.json'
         reviewers: silasary
+        draft: true
