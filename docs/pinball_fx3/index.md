@@ -1,6 +1,8 @@
-# 
+# Pinball FX3
 
-
+Pinball FX3 delivers fast, physics-driven pinball action with meticulously crafted tables inspired by iconic
+franchises and original designs. With competitive modes, online tournaments, and razor-sharp controls, it turns
+classic pinball into a modern skill-based challenge.
 
 
 ## Downloads

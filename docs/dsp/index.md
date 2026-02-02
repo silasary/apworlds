@@ -4,7 +4,7 @@ Dyson Sphere Program is a sci-fi strategy game where you build and manage a fact
 
 
 ## Downloads
-- <a href="https://github.com/FHAUKEM/Archipelago-DSP/releases/download/v0.1.1/dsp.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/BloodStainedCrow/Archipelago-DSP/releases/download/v0.2.0rc4/dsp.apworld">Latest Version (0.2.0rc4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
