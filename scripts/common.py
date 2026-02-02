@@ -30,7 +30,9 @@ index = pathlib.Path("index")
 
 repositories = RepositoryManager()
 
-bad_names = yaml.safe_load(pathlib.Path("scripts", "skipped_filenames.yaml").read_text()).get("skipped_filenames", [])
+skip_config = yaml.safe_load(pathlib.Path("scripts", "skipped_filenames.yaml").read_text())
+bad_names = skip_config.get("skipped_filenames", [])
+bad_repos = skip_config.get("skipped_repos", [])
 
 
 class NoWorldsFound(Exception):
@@ -50,6 +52,10 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
     if isinstance(github_url, list):
         for url in github_url:
             manifests.update(update_index_from_github(file_path, manifest, url, default_flags))
+        return manifests
+
+    if github_url in bad_repos:
+        print(f"Skipping known bad repo: {github_url}")
         return manifests
 
     if manifest and file_path:
@@ -244,7 +250,7 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
             manifest["flags"] = manifest_data["flags"]
         if "igdb_id" in manifest_data:
             manifest["igdb_id"] = manifest_data["igdb_id"]
-        manifest["manifest_fields"] = list(set(manifest_data.keys()) - {"compatible_version", "version", "game"})  # We only care about optional fields
+        manifest["manifest_fields"] = sorted(set(manifest_data.keys()) - {"compatible_version", "version", "game"})  # We only care about optional fields
 
 
 def update_index_from_changelog(file_path: Path | None, manifest: dict, changelog: str) -> dict[str, dict]:
