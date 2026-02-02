@@ -1,9 +1,15 @@
 # The Legend of Zelda - Oracle of Seasons
 
 ## Latest
-- <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.0/tloz_oos.apworld">Latest Version (17.0.0)</a>
+- <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.1/tloz_oos.apworld">Latest Version (17.0.1)</a>
 
 ## All Versions
+
+#### v17.0.1
+- <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.1/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.1/tloz_oos.apworld</a>
+
+#### v17.0.0.post2
+- <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.0-2/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.0-2/tloz_oos.apworld</a>
 
 #### v17.0.0
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.0/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-17.0.0/tloz_oos.apworld</a>
