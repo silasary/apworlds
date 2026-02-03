@@ -1,9 +1,12 @@
 # Mega Man X
 
 ## Latest
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">Latest Version (1.6.0.post2)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">Latest Version (1.6.0.post3)</a>
 
 ## All Versions
+
+#### v1.6.0.post3
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld</a>
 
 #### v1.6.0.post2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld</a>

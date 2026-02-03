@@ -1,1 +1,0 @@
-# Ty the Tasmanian Tiger 2 Randomizer Setup Guide

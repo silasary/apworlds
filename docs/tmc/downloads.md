@@ -1,9 +1,12 @@
 # The Minish Cap
 
 ## Latest
-- <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.3.0/tmc.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.3.1/tmc.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.3.1/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.3.1/tmc.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.3.0/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.3.0/tmc.apworld</a>
