@@ -4,7 +4,7 @@ Join Zoe on an adventure in Haste.
 
 
 ## Downloads
-- <a href="https://github.com/WritingHusky/haste_apworld/releases/download/v0.3.2/haste.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/WritingHusky/haste_apworld/releases/download/v0.4.0/haste.apworld">Latest Version (0.4.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -14,4 +14,6 @@ Join Zoe on an adventure in Haste.
 - <a href="setup_en">English</a>
 
 ## Other Documentation files
+- <a href="ConsoleCommands">ConsoleCommands</a>
 - <a href="CurrentState">CurrentState</a>
+- <a href="ItemCategories">ItemCategories</a>
