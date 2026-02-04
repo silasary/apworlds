@@ -4,7 +4,7 @@ Description of TEVI
 
 
 ## Downloads
-- <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.4.7/tevi.apworld">Latest Version (1.4.7)</a>
+- <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.4.8/tevi.apworld">Latest Version (1.4.8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

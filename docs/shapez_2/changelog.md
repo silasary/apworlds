@@ -1,6 +1,13 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 0.99.4 (Who's that pokémon? update)
+
+- Fixed bad copy-pasting of the scenario preset file content
+- Tried reducing the frequency of a downgraded shape being the same as before
+- Added an option to show the names of other players' items in your world (enabled by default)
+  - Also added the possibility to show the receiving player's name and the item's classification
+
 ## 0.99.3 (mid-stream hotfix)
 
 - Actually fixed fluids, wires, and trains toolbars never being unlocked
