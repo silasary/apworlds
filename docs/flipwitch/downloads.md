@@ -1,9 +1,12 @@
 # Flipwitch Forbidden Sex Hex
 
 ## Latest
-- <a href="https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.0-pre1/flipwitch.apworld">Latest Version (1.0.0rc1)</a>
+- <a href="https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.0-pre1/flipwitch.apworld">Latest Version (1.0.0.post2)</a>
 
 ## All Versions
+
+#### v1.0.0.post2
+- <a href="https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.0-pre1/flipwitch.apworld">https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.0-pre1/flipwitch.apworld</a>
 
 #### v1.0.0rc1
 - <a href="https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.0-pre1/flipwitch.apworld">https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.0-pre1/flipwitch.apworld</a>
