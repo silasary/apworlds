@@ -6,7 +6,7 @@ before it&#x27;s too late!
 
 
 ## Downloads
-- <a href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.0.2/cobalt_core.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.0-rc1/cobalt_core.apworld">Latest Version (1.1.0rc1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
