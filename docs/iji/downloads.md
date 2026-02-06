@@ -1,9 +1,12 @@
 # Iji
 
 ## Latest
-- <a href="https://github.com/Minish-Link/Iji-Archipelago/releases/download/v1.2.5/iji.apworld">Latest Version (1.2.5)</a>
+- <a href="https://github.com/Minish-Link/Iji-Archipelago/releases/download/v1.2.6/iji.apworld">Latest Version (1.2.6)</a>
 
 ## All Versions
+
+#### v1.2.6
+- <a href="https://github.com/Minish-Link/Iji-Archipelago/releases/download/v1.2.6/iji.apworld">https://github.com/Minish-Link/Iji-Archipelago/releases/download/v1.2.6/iji.apworld</a>
 
 #### v1.2.5
 - <a href="https://github.com/Minish-Link/Iji-Archipelago/releases/download/v1.2.5/iji.apworld">https://github.com/Minish-Link/Iji-Archipelago/releases/download/v1.2.5/iji.apworld</a>

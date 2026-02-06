@@ -77,6 +77,12 @@
 #### v1.1.0
 - <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/1.1.0/kh1.apworld">https://github.com/gaithernOrg/KH1FM-AP/releases/download/1.1.0/kh1.apworld</a>
 
+#### v1.0.1
+- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/1.0.1/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/1.0.1/kh1.apworld</a>
+
+#### v1.0.0.post2
+- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/1.0.0/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/1.0.0/kh1.apworld</a>
+
 #### v1.0.0
 - <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/1.0.0/kh1.apworld">https://github.com/gaithernOrg/KH1FM-AP/releases/download/1.0.0/kh1.apworld</a>
 
