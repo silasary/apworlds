@@ -1,9 +1,12 @@
 # Final Fantasy XII Trial Mode
 
 ## Latest
-- <a href="https://github.com/silasary/Archipelago/releases/download/ffxiitm-0.0.9/ffxiitm.apworld">Latest Version (0.0.9)</a>
+- <a href="https://github.com/silasary/Archipelago/releases/download/ffxiitm-0.0.10/ffxiitm.apworld">Latest Version (0.0.10)</a>
 
 ## All Versions
+
+#### v0.0.10
+- <a href="https://github.com/silasary/Archipelago/releases/download/ffxiitm-0.0.10/ffxiitm.apworld">https://github.com/silasary/Archipelago/releases/download/ffxiitm-0.0.10/ffxiitm.apworld</a>
 
 #### v0.0.9
 - <a href="https://github.com/silasary/Archipelago/releases/download/ffxiitm-0.0.9/ffxiitm.apworld">https://github.com/silasary/Archipelago/releases/download/ffxiitm-0.0.9/ffxiitm.apworld</a>

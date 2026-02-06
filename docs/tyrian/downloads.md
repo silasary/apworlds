@@ -1,9 +1,12 @@
 # Tyrian
 
 ## Latest
-- <a href="https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.3/tyrian.apworld">Latest Version (1.0.3)</a>
+- <a href="https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.4/tyrian.apworld">Latest Version (1.0.4)</a>
 
 ## All Versions
+
+#### v1.0.4
+- <a href="https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.4/tyrian.apworld">https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.4/tyrian.apworld</a>
 
 #### v1.0.3
 - <a href="https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.3/tyrian.apworld">https://github.com/KScl/TyrianArchipelago/releases/download/v1.0.3/tyrian.apworld</a>
