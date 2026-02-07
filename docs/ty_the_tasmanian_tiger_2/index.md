@@ -5,7 +5,7 @@ Play as Ty and travel the Australian outback to snowy mountains to defeat Boss C
 
 
 ## Downloads
-- <a href="https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.2.0/ty_the_tasmanian_tiger_2.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.2.1/ty_the_tasmanian_tiger_2.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
