@@ -7,7 +7,7 @@ Battles play out on a stage with timed button presses and a live audience cheeri
 
 
 ## Downloads
-- <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.7.0/ttyd.apworld">Latest Version (0.7.0)</a>
+- <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.8.0/ttyd.apworld">Latest Version (0.8.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

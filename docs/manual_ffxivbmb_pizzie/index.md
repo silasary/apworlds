@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/pizie11/FFXIVBMB/releases/download/0.6/manual_ffxivbmb_pizzie.apworld">Latest Version (0.6.post2)</a>
+- <a href="https://github.com/pizie11/FFXIVBMB/releases/download/0.7.0/manual_ffxivbmb_pizzie.apworld">Latest Version (0.7.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
