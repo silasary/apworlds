@@ -1,9 +1,12 @@
 # Spelunky 2
 
 ## Latest
-- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.8/spelunky2.apworld">Latest Version (0.3.8)</a>
+- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.9/spelunky2.apworld">Latest Version (0.3.9)</a>
 
 ## All Versions
+
+#### v0.3.9
+- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.9/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.9/spelunky2.apworld</a>
 
 #### v0.3.8
 - <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.8/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.8/spelunky2.apworld</a>
