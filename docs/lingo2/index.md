@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.0.0/lingo2.apworld">Latest Version (9.0.0)</a>
+- <a href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.1.0/lingo2.apworld">Latest Version (9.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

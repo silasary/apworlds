@@ -8,7 +8,7 @@ called Dragoons exist, to fight against evil forces who are threatening to destr
 
 
 ## Downloads
-- <a href="https://github.com/pkolb-dev/Archipelago/releases/download/0.0.3/legend_of_dragoon.apworld">Latest Version (0.0.3)</a>
+- <a href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.0/legend_of_dragoon.apworld">Latest Version (0.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

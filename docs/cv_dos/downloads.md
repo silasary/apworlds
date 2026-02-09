@@ -1,9 +1,12 @@
 # Castlevania: Dawn of Sorrow
 
 ## Latest
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos1.3/cv_dos.apworld">Latest Version (1.3.0)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos1.4/cv_dos.apworld">Latest Version (1.4.0)</a>
 
 ## All Versions
+
+#### v1.4.0
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos1.4/cv_dos.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvdos1.4/cv_dos.apworld</a>
 
 #### v1.3.0
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos1.3/cv_dos.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvdos1.3/cv_dos.apworld</a>

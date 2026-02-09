@@ -12,7 +12,7 @@
 **You must set up Severed Chains before you can install mods for it.**
 
 - Follow the installation process for Severed Chains. See [here](https://legendofdragoon.org/guides/setup-severed-chains/). 
-- Download the [Archipelagoon](https://www.google.com) and place it in Severed Chains' mod folder.
+- Download the latest release of [Archipelagoon](https://github.com/pkolb-dev/Archipelagoon/releases) and place it in Severed Chains' mod folder.
 
 ## Updates and New Releases via Severed Chains
 For up-to-date news and release info for Severed Chains, please join the [discord](https://discord.gg/legendofdragoon)
