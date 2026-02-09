@@ -6,7 +6,7 @@ until you have enough to play and complete the goal song!
 
 
 ## Downloads
-- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.8.2/rotn.apworld">Latest Version (0.8.2)</a>
+- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.9.0/rotn.apworld">Latest Version (0.9.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
