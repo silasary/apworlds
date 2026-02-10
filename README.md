@@ -31,7 +31,9 @@ There are a couple common issues that can come up if you ignore version number i
 Take a game with a Base Rom (eg Pokemon Crystal) that has its major version numbers tied to the base patch revision.  All of v4.X uses the same rom as v5.X, so memory offsets are interchangable within a major version.
 Once a new base patch is developed, new features and developments will target the latest branch.  However, because ongoing asyncs cannot upgrade their apworld to versions build with different offsets, occasionally a bugfix for older basepatches may be released after the latest version has already been published.
 
-In other words, chronological release order can go: `4.2.0, 4.2.1, 5.0.0, 5.0.1, 4.2.3, 5.1.0`
+In other words, chronological release order can go: `4.2.0, 4.2.1, 4.2.2, 5.0.0, 5.0.1, 5.0.2, 4.2.3`
+
+Anyone on 4.2.2 wants to be upgraded to 4.2.3, but people already on 5.0.2 doesn't want to be downgraded.
 
 ### Preleases
 The same effect can happen when you're juggling a stable version and upcoming betas.  Prereleases are something users must opt in to, and by default are ignored by the APWorld Manager.
@@ -39,6 +41,7 @@ Let's take two users:  Player A, who has prereleases disabled, and Player B, who
 Player A is currently on version 1.6 (stable), and player B is currently on 2.0alpha3 (prerelease).
 
 The chronological order of the repo's releases look something like this: `1.5, 2.0a1, 1.6, 2.0a2, 2.0a3, 2.0a4, 1.7`
+
 Player A would expect to be upgraded to 1.7, while Player B would expect to be offered 2.0alpha4, even though 1.7 is technically newer.
 
 ### Github is confusing
