@@ -28,7 +28,7 @@ Currently the following flags are supported:
 Version numbers are more intentional, more reliable, and allow for more use-cases than simply saying "The newest release is the latest".
 There are a couple common issues that can come up if you ignore version number in favour of Release Date:
 ### Backports
-Take a game with a Base Rom (eg Pokemon Crystal) that has its major version numbers tied to the base patch revision.  All of v4.X uses the same rom as v5.X, so memory offsets are interchangable within a major version.
+Take a game with a Base Rom (eg Pokemon Crystal) that has its major version numbers tied to the base patch revision.  All of v4.X uses the same rom, as does v5.X, etc. As such memory offsets are interchangable within a major version, but not across different base patches.
 Once a new base patch is developed, new features and developments will target the latest branch.  However, because ongoing asyncs cannot upgrade their apworld to versions build with different offsets, occasionally a bugfix for older basepatches may be released after the latest version has already been published.
 
 In other words, chronological release order can go: `4.2.0, 4.2.1, 4.2.2, 5.0.0, 5.0.1, 5.0.2, 4.2.3`
