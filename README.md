@@ -24,7 +24,7 @@ Currently the following flags are supported:
 * `tracker_included` This game has an integrated tracker, and doesn't need an external tracker.
 
 
-## FAQ: Why do we use Version Numbers over dates?
+## FAQ: Why do we use Version Numbers over Release Dates?
 Version numbers are more intentional, more reliable, and allow for more use-cases than simply saying "The newest release is the latest".
 There are a couple common issues that can come up if you ignore version number in favour of Release Date:
 ### Backports
@@ -35,7 +35,7 @@ In other words, chronological release order can go: `4.2.0, 4.2.1, 4.2.2, 5.0.0,
 
 While anyone on 4.2.2 would want to install 4.2.3, we do not want to offer a downgrade to 5.0 users simply because a backported bugfix was released.
 
-### Preleases
+### Prereleases
 The same effect can happen when you're juggling a stable version and upcoming betas.  Prereleases are something users must opt in to, and by default are ignored by the APWorld Manager.
 Let's take two users:  Player A, who has prereleases disabled, and Player B, who has them enabled.
 Player A is currently on version 1.6 (stable), and player B is currently on 2.0alpha3 (prerelease).
