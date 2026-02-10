@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/BigBradley/Mario-Kart-7-Manual-APworld/releases/download/V1.2.2/manual_mariokart7_bigbradley.apworld">Latest Version (1.2.2)</a>
+- <a href="https://github.com/BigBradley/Mario-Kart-7-Manual-APworld/releases/download/V1.2.3/manual_mariokart7_bigbradley.apworld">Latest Version (1.2.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

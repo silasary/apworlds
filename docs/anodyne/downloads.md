@@ -8,6 +8,9 @@
 #### v0.5.1
 - <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.1/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.1/anodyne.apworld</a>
 
+#### v0.5.1
+- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.2/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.2/anodyne.apworld</a>
+
 #### v0.5.0
 - <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.0/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.0/anodyne.apworld</a>
 

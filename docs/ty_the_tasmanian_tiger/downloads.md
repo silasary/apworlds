@@ -1,9 +1,12 @@
 # Ty the Tasmanian Tiger
 
 ## Latest
-- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger/releases/download/1.3.7/ty_the_tasmanian_tiger.apworld">Latest Version (1.3.7)</a>
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger/releases/download/1.4.0/ty_the_tasmanian_tiger.apworld">Latest Version (1.4.0)</a>
 
 ## All Versions
+
+#### v1.4.0
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger/releases/download/1.4.0/ty_the_tasmanian_tiger.apworld">https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger/releases/download/1.4.0/ty_the_tasmanian_tiger.apworld</a>
 
 #### v1.3.7
 - <a href="https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger/releases/download/1.3.7/ty_the_tasmanian_tiger.apworld">https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger/releases/download/1.3.7/ty_the_tasmanian_tiger.apworld</a>

@@ -1,9 +1,12 @@
 # Manual_MarioKart7_BigBradley
 
 ## Latest
-- <a href="https://github.com/BigBradley/Mario-Kart-7-Manual-APworld/releases/download/V1.2.2/manual_mariokart7_bigbradley.apworld">Latest Version (1.2.2)</a>
+- <a href="https://github.com/BigBradley/Mario-Kart-7-Manual-APworld/releases/download/V1.2.3/manual_mariokart7_bigbradley.apworld">Latest Version (1.2.3)</a>
 
 ## All Versions
+
+#### v1.2.3
+- <a href="https://github.com/BigBradley/Mario-Kart-7-Manual-APworld/releases/download/V1.2.3/manual_mariokart7_bigbradley.apworld">https://github.com/BigBradley/Mario-Kart-7-Manual-APworld/releases/download/V1.2.3/manual_mariokart7_bigbradley.apworld</a>
 
 #### v1.2.2
 - <a href="https://github.com/BigBradley/Mario-Kart-7-Manual-APworld/releases/download/V1.2.2/manual_mariokart7_bigbradley.apworld">https://github.com/BigBradley/Mario-Kart-7-Manual-APworld/releases/download/V1.2.2/manual_mariokart7_bigbradley.apworld</a>

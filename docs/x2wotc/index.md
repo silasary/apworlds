@@ -6,7 +6,7 @@ resistance to save humanity from the occupation of the Elders!&quot;
 
 
 ## Downloads
-- <a href="https://github.com/MaxReinstadler/X2WOTCArchipelago/releases/download/0.10.9-beta/x2wotc.apworld">Latest Version (0.10.9b0)</a>
+- <a href="https://github.com/MaxReinstadler/X2WOTCArchipelago/releases/download/0.10.10-beta/x2wotc.apworld">Latest Version (0.10.10b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
