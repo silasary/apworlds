@@ -33,7 +33,7 @@ Once a new base patch is developed, new features and developments will target th
 
 In other words, chronological release order can go: `4.2.0, 4.2.1, 4.2.2, 5.0.0, 5.0.1, 5.0.2, 4.2.3`
 
-Anyone on 4.2.2 wants to be upgraded to 4.2.3, but people already on 5.0.2 doesn't want to be downgraded.
+While anyone on 4.2.2 would want to install 4.2.3, we do not want to offer a downgrade to 5.0 users simply because a backported bugfix was released.
 
 ### Preleases
 The same effect can happen when you're juggling a stable version and upcoming betas.  Prereleases are something users must opt in to, and by default are ignored by the APWorld Manager.
