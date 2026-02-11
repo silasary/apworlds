@@ -25,7 +25,7 @@ Currently the following flags are supported:
 
 
 ## FAQ: Why do we use Version Numbers over Release Dates?
-Version numbers are more intentional, more reliable, and allow for more use-cases than simply saying "The newest release is the latest". 
+Version numbers are more intentional, more reliable, and allow for more use-cases than simply saying "The newest release is the latest".
 Here are a few common examples about how the "latest" release is not always the one that was released last chronologically.
 
 ### Backports
