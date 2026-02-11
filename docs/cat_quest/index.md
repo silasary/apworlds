@@ -5,7 +5,7 @@ Slash and dodge enemies while completing quests, dungeons and obtaining new gear
 
 
 ## Downloads
-- <a href="https://github.com/Nikkilites/Archipelago-CatQuest/releases/download/0.2.3-alpha/cat_quest.apworld">Latest Version (0.2.3a0)</a>
+- <a href="https://github.com/Nikkilites/Archipelago-CatQuest/releases/download/0.3.0-alpha/cat_quest.apworld">Latest Version (0.3.0a0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
