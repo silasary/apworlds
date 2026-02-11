@@ -26,7 +26,7 @@ Currently the following flags are supported:
 
 ## FAQ: Why do we use Version Numbers over Release Dates?
 Version numbers are more intentional, more reliable, and allow for more use-cases than simply saying "The newest release is the latest". 
-Here are a few common examples about how the "latest" release is not the one that was released last chronologically.
+Here are a few common examples about how the "latest" release is not always the one that was released last chronologically.
 
 ### Backports
 Take a game with a Base Rom (eg Pokemon Crystal) that has its major version numbers tied to the base patch revision.  All of v4.X uses the same rom, as does v5.X, etc. As such memory offsets are interchangable within a major version, but not across different base patches.
@@ -44,6 +44,3 @@ Player A is currently on version 1.6 (stable), and player B is currently on 2.0a
 The chronological order of the repo's releases look something like this: `1.5, 2.0a1, 1.6, 2.0a2, 2.0a3, 2.0a4, 1.7`
 
 Player A would expect to be upgraded to 1.7, while Player B would expect to be offered 2.0alpha4, even though 1.7 is technically newer.
-
-### Github is confusing
-When determining dates, github uses the commit time of the tag as the creation date.  It is possible for people working with multiple branches to accidentally leave the tag set to `main` instead of the branch for that world.  This can lead to a release being backdated, and if done inconsistently, can lead to multiple versions being released at the same time (down to the second), or the latest version being backdated to months earlier than the one it supercedes.  Version numbers much easier for amateur developers to understand compared to semi-permanent named commit pointers (git tags)
