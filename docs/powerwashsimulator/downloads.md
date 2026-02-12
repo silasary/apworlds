@@ -1,9 +1,12 @@
 # Powerwash Simulator
 
 ## Latest
-- <a href="https://github.com/SWCreeperKing/PowerwashSimAP/releases/download/v0.5.13/powerwashsimulator.apworld">Latest Version (0.5.13)</a>
+- <a href="https://github.com/SWCreeperKing/PowerwashSimAP/releases/download/v0.5.14/powerwashsimulator.apworld">Latest Version (0.5.14)</a>
 
 ## All Versions
+
+#### v0.5.14
+- <a href="https://github.com/SWCreeperKing/PowerwashSimAP/releases/download/v0.5.14/powerwashsimulator.apworld">https://github.com/SWCreeperKing/PowerwashSimAP/releases/download/v0.5.14/powerwashsimulator.apworld</a>
 
 #### v0.5.13
 - <a href="https://github.com/SWCreeperKing/PowerwashSimAP/releases/download/v0.5.13/powerwashsimulator.apworld">https://github.com/SWCreeperKing/PowerwashSimAP/releases/download/v0.5.13/powerwashsimulator.apworld</a>

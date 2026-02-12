@@ -14,6 +14,9 @@
 #### v0.6.0
 - <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.1/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.1/casualtiesunknown.apworld</a>
 
+#### v0.6.0
+- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.2/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.2/casualtiesunknown.apworld</a>
+
 #### v0.6.0rc4
 - <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.0-pre4/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.0-pre4/casualtiesunknown.apworld</a>
 
