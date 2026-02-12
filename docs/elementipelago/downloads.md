@@ -1,9 +1,12 @@
 # Elementipelago
 
 ## Latest
-- <a href="https://github.com/peppidesu/elementipelago/releases/download/v1.0.1/elementipelago.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/peppidesu/elementipelago/releases/download/v1.1.0/elementipelago.apworld">Latest Version (1.1.0)</a>
 
 ## All Versions
+
+#### v1.1.0
+- <a href="https://github.com/peppidesu/elementipelago/releases/download/v1.1.0/elementipelago.apworld">https://github.com/peppidesu/elementipelago/releases/download/v1.1.0/elementipelago.apworld</a>
 
 #### v1.0.1
 - <a href="https://github.com/peppidesu/elementipelago/releases/download/v1.0.1/elementipelago.apworld">https://github.com/peppidesu/elementipelago/releases/download/v1.0.1/elementipelago.apworld</a>
