@@ -4,7 +4,7 @@ Rabbit and Steel game description.
 
 
 ## Downloads
-- <a href="https://github.com/tjwombo/RNSArchipelago/releases/download/v0.2.7/rabbit_and_steel.apworld">Latest Version (0.2.7)</a>
+- <a href="https://github.com/tjwombo/RNSArchipelago/releases/download/v0.2.8/rabbit_and_steel.apworld">Latest Version (0.2.8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
