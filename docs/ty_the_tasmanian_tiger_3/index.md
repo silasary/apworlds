@@ -6,7 +6,7 @@ is Ty&#x27;s most exciting and dangerous quest yet -- save Ty and his friends be
 
 
 ## Downloads
-- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger3/releases/download/1.2.0/ty_the_tasmanian_tiger_3.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-TyTheTasmanianTiger3/releases/download/1.2.1/ty_the_tasmanian_tiger_3.apworld">Latest Version (1.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
