@@ -6,7 +6,7 @@ research new technologies, and become more efficient in your quest to build a ro
 
 
 ## Downloads
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.3/factorio_bobs.apworld">Latest Version (1.3.3)</a>
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.0/factorio_bobs.apworld">Latest Version (2.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -16,3 +16,4 @@ research new technologies, and become more efficient in your quest to build a ro
 
 ## Other Documentation files
 - <a href="en_Factorio">en_Factorio</a>
+- <a href="todo">todo</a>
