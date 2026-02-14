@@ -34,7 +34,7 @@ jobs:
         cmd: yq -i '.apworld_manager.github_token = "${{ secrets.GITHUB_TOKEN }}"' Archipelago/host.yaml
     - name: Scan Spreadsheet
       run: |
-        python3 scripts/add_worlds.py --spreadsheet
+        python3 scripts/add_worlds.py --spreadsheet --ready
         python3 scripts/tag_worlds.py
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v7

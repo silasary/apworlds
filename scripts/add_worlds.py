@@ -22,6 +22,7 @@ else:
 parser = argparse.ArgumentParser(description="Add worlds to the index")
 parser.add_argument("--dark", default=False, action="store_true", help="Add worlds as After Dark")
 parser.add_argument("--unready", default=False, action="store_true", help="Add worlds as Unready")
+parser.add_argument("--ready", default=False, action="store_true", help="Unflag things as Unready")
 parser.add_argument("--scan-forks", default=False, action="store_true", help="Scan forks for worlds")
 parser.add_argument("--spreadsheet", default=False, action="store_true", help="Add worlds from the spreadsheet")
 parser.add_argument("--allow-uppercase", default=False, action="store_true", help="Allow uppercase letters in filenames")
@@ -95,12 +96,15 @@ for url in queue.copy():
     github = github.split("/releases", 1)[0]
     manifests = update_index_from_github(None, {}, github_url=github, default_flags=default_flags)
     for world, manifest in manifests.items():
-        if not args.allow_uppercase and not world.islower():
-            print(f"Skipping {world} due to uppercase letters in filename")
-            continue
+        # if not args.allow_uppercase and not world.islower():
+        #     print(f"Skipping {world} due to uppercase letters in filename")
+        #     continue
         print(f"Added {world} from {github}")
         if manifest.get("game") in ad_games and "after_dark" not in manifest.setdefault("flags", []):
             manifest["flags"].append("after_dark")
+            common.save(world=pathlib.Path("index", world + ".json"), manifest=manifest)
+        if args.ready and "unready" in manifest.get("flags", []):
+            manifest["flags"].remove("unready")
             common.save(world=pathlib.Path("index", world + ".json"), manifest=manifest)
     if not manifests:
         failed.append(github)
