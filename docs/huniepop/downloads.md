@@ -1,9 +1,15 @@
 # Hunie Pop
 
 ## Latest
-- <a href="https://github.com/DotsofdarknessArchipelago/HuniePop-APWorld/releases/download/v1.1.0/huniepop.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/download/V2.1.0/huniepop.apworld">Latest Version (2.1.0)</a>
 
 ## All Versions
+
+#### v2.1.0
+- <a href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/download/V2.1.0/huniepop.apworld">https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/download/V2.1.0/huniepop.apworld</a>
+
+#### v2.0.0
+- <a href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/download/V2.0.0/huniepop.apworld">https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/download/V2.0.0/huniepop.apworld</a>
 
 #### v1.1.0
 - <a href="https://github.com/DotsofdarknessArchipelago/HuniePop-APWorld/releases/download/v1.1.0/huniepop.apworld">https://github.com/DotsofdarknessArchipelago/HuniePop-APWorld/releases/download/v1.1.0/huniepop.apworld</a>

@@ -47,6 +47,3 @@
 #### v0.2.3
 - <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.2.3/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.2.3/spelunky2.apworld</a>
 
-#### v0.1.0
-- <a href="https://github.com/Eszenn/Archipelago/releases/download/Spelunky2v0.1.0/spelunky2.apworld">https://github.com/Eszenn/Archipelago/releases/download/Spelunky2v0.1.0/spelunky2.apworld</a>
-
