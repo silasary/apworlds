@@ -1,9 +1,12 @@
 # Void Stranger
 
 ## Latest
-- <a href="https://github.com/CriminalPancake/void-stranger-ap/releases/download/v0.8.5.1/voidstranger.apworld">Latest Version (0.8.5.1)</a>
+- <a href="https://github.com/CriminalPancake/void-stranger-ap/releases/download/v0.9.1.0/voidstranger.apworld">Latest Version (0.9.1.0)</a>
 
 ## All Versions
+
+#### v0.9.1.0
+- <a href="https://github.com/CriminalPancake/void-stranger-ap/releases/download/v0.9.1.0/voidstranger.apworld">https://github.com/CriminalPancake/void-stranger-ap/releases/download/v0.9.1.0/voidstranger.apworld</a>
 
 #### v0.8.5.1
 - <a href="https://github.com/CriminalPancake/void-stranger-ap/releases/download/v0.8.5.1/voidstranger.apworld">https://github.com/CriminalPancake/void-stranger-ap/releases/download/v0.8.5.1/voidstranger.apworld</a>
