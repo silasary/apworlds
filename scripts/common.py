@@ -319,7 +319,7 @@ def check_manifest_has_github_url(manifest, github_url, name):
                     return
 
                 manifest["github"] = [manifest["github"]]
-            manifest["github"].append(source_url)
+            manifest.setdefault("github", []).append(source_url)
     if isinstance(manifest.get("github", []), list):
         if len(manifest["github"]) != len(set(manifest["github"])):
             manifest["github"] = list(set(manifest["github"]))
