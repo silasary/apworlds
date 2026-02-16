@@ -11,6 +11,9 @@
 #### v0.1.0
 - <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.1.2-beta/diceydungeons.apworld">https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.1.2-beta/diceydungeons.apworld</a>
 
+#### v0.1.0
+- <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.1.2.1-beta/diceydungeons.apworld">https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.1.2.1-beta/diceydungeons.apworld</a>
+
 #### v0.1.0b0
 - <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.1.0-beta/diceydungeons.apworld">https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.1.0-beta/diceydungeons.apworld</a>
 

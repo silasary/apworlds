@@ -7,7 +7,7 @@ additional characters and key items to save the world from the evil Lavos.
 
 
 ## Downloads
-- <a href="https://github.com/Anguirel86/Archipelago/releases/download/v0.0.3/ctjot.apworld">Latest Version (0.0.3)</a>
+- <a href="https://github.com/Anguirel86/Archipelago/releases/download/v0.0.4/ctjot.apworld">Latest Version (0.0.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

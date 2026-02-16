@@ -3,34 +3,17 @@
 ## Required Software
 
 - Hammerwatch: [Hammerwatch Steam Page](https://store.steampowered.com/app/239070/Hammerwatch/)
-- Hammerwatch Client Mod Installer: [Hammerwatch Archipelago Mod Installer Page](https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases)
+- Hammerwatch Client Mod Installer: [Hammerwatch Archipelago Mod Installer Page](https://github.com/Parcosmic/HammerwatchAPMod/releases)
 - Archipelago: [Archipelago Releases Page](https://github.com/ArchipelagoMW/Archipelago/releases)
 
 ## Hammerwatch Mod Installation Procedures
 
-Download and extract the .zip file containing the installer and necessary files. Run HammerwatchAPInstaller.exe, and
+Download and extract the .zip file containing the installer and necessary files. Run HammerwatchAPModInstaller.exe, and
 in the file dialogue box select your Hammerwatch executable (Hammerwatch.exe), or navigate to it if it is not
 automatically selected. If the installer displays the message "Patching successful!" you know the mod is successfully
 installed! You may launch Hammerwatch as normal using Steam to play with Archipelago.
 
 To uninstall the mod run APModUninstall.bat to remove all mod files.
-
-## Configuring your config (.yaml) file
-
-### What is a config file and why do I need one?
-
-See the guide for info about YAML files on the Archipelago setup guide: 
-[Archipelago Setup Guide](/tutorial/Archipelago/setup/en)
-
-### Where do I get a config file?
-
-You can configure the settings for your game on the Player Settings page and export them as a config file.
-Player settings page: [Hammerwatch Player Settings Page](/games/Hammerwatch/player-settings)
-
-### Verifying your config file
-
-To make sure your config file is formatted correctly you can check it on the YAML Validation page:
-[YAML Validation page](/mysterycheck)
 
 ## Joining a multiworld game
 
