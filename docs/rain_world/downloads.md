@@ -8,6 +8,9 @@
 #### v2.0rc2
 - <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.2/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.2/rain_world.apworld</a>
 
+#### v1.5.0.post2
+- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.0/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.0/rain_world.apworld</a>
+
 #### v1.5.0
 - <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.0/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.0/rain_world.apworld</a>
 

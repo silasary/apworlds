@@ -8,6 +8,9 @@
 #### v0.1.20
 - <a href="https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v0.1.20-beta/openrct2.apworld">https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v0.1.20-beta/openrct2.apworld</a>
 
+#### v0.1.20
+- <a href="https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v0.1.21-beta/openrct2.apworld">https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v0.1.21-beta/openrct2.apworld</a>
+
 #### v0.1.19b0
 - <a href="https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v.0.1.19-beta/openrct2.apworld">https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v.0.1.19-beta/openrct2.apworld</a>
 
