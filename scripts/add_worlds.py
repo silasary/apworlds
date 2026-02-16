@@ -67,7 +67,7 @@ if args.spreadsheet:
             repolinks = re.findall(REPO_REGEX, wheretofind)
             queue.extend(repolinks)
 
-        if "After Dark" in row["Notes"] and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
+        if "After Dark" in row.get("Notes", "") and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
             ad_games.append(row["Game"].strip())
 
 if not queue:
