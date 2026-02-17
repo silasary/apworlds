@@ -1,9 +1,12 @@
 # Brotato
 
 ## Latest
-- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.13.0/brotato.apworld">Latest Version (0.13.0)</a>
+- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.14.0/brotato.apworld">Latest Version (0.14.0)</a>
 
 ## All Versions
+
+#### v0.14.0
+- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.14.0/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.14.0/brotato.apworld</a>
 
 #### v0.13.0
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.13.0/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.13.0/brotato.apworld</a>

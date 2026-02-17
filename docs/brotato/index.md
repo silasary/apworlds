@@ -6,7 +6,7 @@ and items to create unique builds and survive until help arrives.
 
 
 ## Downloads
-- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.13.0/brotato.apworld">Latest Version (0.13.0)</a>
+- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.14.0/brotato.apworld">Latest Version (0.14.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

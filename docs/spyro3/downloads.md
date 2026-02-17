@@ -1,9 +1,12 @@
 # Spyro 3
 
 ## Latest
-- <a href="https://github.com/Uroogla/S3AP/releases/download/1.2.3-rc1/spyro3.apworld">Latest Version (1.2.3rc1)</a>
+- <a href="https://github.com/Uroogla/S3AP/releases/download/1.3.0/spyro3.apworld">Latest Version (1.3.0)</a>
 
 ## All Versions
+
+#### v1.3.0
+- <a href="https://github.com/Uroogla/S3AP/releases/download/1.3.0/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.3.0/spyro3.apworld</a>
 
 #### v1.2.3rc1
 - <a href="https://github.com/Uroogla/S3AP/releases/download/1.2.3-rc1/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.2.3-rc1/spyro3.apworld</a>

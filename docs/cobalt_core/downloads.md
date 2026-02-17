@@ -1,9 +1,12 @@
 # Cobalt Core
 
 ## Latest
-- <a href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.2/cobalt_core.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.4/cobalt_core.apworld">Latest Version (1.1.4)</a>
 
 ## All Versions
+
+#### v1.1.4
+- <a href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.4/cobalt_core.apworld">https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.4/cobalt_core.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.2/cobalt_core.apworld">https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.2/cobalt_core.apworld</a>

@@ -1,9 +1,12 @@
 # Pokemon Platinum
 
 ## Latest
-- <a href="https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.1.6/pokemon_platinum.apworld">Latest Version (0.1.6)</a>
+- <a href="https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.1.7/pokemon_platinum.apworld">Latest Version (0.1.7)</a>
 
 ## All Versions
+
+#### v0.1.7
+- <a href="https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.1.7/pokemon_platinum.apworld">https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.1.7/pokemon_platinum.apworld</a>
 
 #### v0.1.6
 - <a href="https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.1.6/pokemon_platinum.apworld">https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.1.6/pokemon_platinum.apworld</a>
