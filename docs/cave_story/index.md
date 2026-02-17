@@ -9,7 +9,7 @@ of this world&#x27;s power, stop the delusional villain and save the Mimiga!
 
 
 ## Downloads
-- <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.5/cave_story.apworld">Latest Version (0.6.5)</a>
+- <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.6/cave_story.apworld">Latest Version (0.6.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

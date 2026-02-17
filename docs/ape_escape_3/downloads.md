@@ -1,9 +1,12 @@
 # Ape Escape 3
 
 ## Latest
-- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld">Latest Version (2.0.0.post3)</a>
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld">Latest Version (2.0.1.post2)</a>
 
 ## All Versions
+
+#### v2.0.1.post2
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld</a>
 
 #### v2.0.0.post3
 - <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld</a>

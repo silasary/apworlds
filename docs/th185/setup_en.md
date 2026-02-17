@@ -9,7 +9,7 @@
 ## Starting Conditions
 
 - You will begin the game with one stage unlocked, no cards unlocked, no Funds, only 1 loadout card, and 100% equipment cost limit.
-- Which stage would be unlocked at start will be determined in the Options.
+- Which stage would be unlocked at start can be changed in the Options.
 - For beginners, it is recommended to choose "**Tutorial - First Black Market Deal**" as the Starting Market.
 - The client will **automatically** save your progress and restore it according to server data. You will receive your unlocked stages, cards, Funds, card slots, and equipment cost upon a successful connection. **_Local save data/Steam save data is not needed for this reason._**
 
