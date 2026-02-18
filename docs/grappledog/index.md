@@ -1,6 +1,6 @@
-# 
+# Grapple Dog
 
-
+A dog with a grappling hook, what more do you want
 
 
 ## Downloads

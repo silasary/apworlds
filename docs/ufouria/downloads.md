@@ -1,4 +1,4 @@
-# 
+# Ufouria
 
 ## Latest
 - <a href="https://github.com/vinheim3/Archipelago/releases/download/0.0.1/ufouria.apworld">Latest Version (0.0.1)</a>

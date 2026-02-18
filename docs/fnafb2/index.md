@@ -4,7 +4,7 @@ Are you Freddy for ready?
 
 
 ## Downloads
-- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.3.4/fnafb2.apworld">Latest Version (0.3.4)</a>
+- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.3.5/fnafb2.apworld">Latest Version (0.3.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

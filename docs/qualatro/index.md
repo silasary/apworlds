@@ -1,6 +1,8 @@
-# 
+# Qualatro
 
-
+Qualatro is a poker-themed roguelike deck-building video game developed by LocalThunk.
+In the game, players play poker hands to score points and defeat &quot;blinds&quot;, while improving their deck and purchasing joker cards with a variety of effects. 
+Source: https://en.wikipedia.org/wiki/Qualatro_(video_game)
 
 
 ## Downloads

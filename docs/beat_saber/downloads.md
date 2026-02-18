@@ -1,4 +1,4 @@
-# beat_saber
+# Beat Saber
 
 ## Latest
 - <a href="https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.0.5/beat_saber.apworld">Latest Version (0.0.5)</a>

@@ -1,6 +1,6 @@
-# 
+# I Hate You, Please Suffer
 
-
+I Hate You, Please Suffer is a heart-filled RPG about paying your rent in a hostile world.
 
 
 ## Downloads

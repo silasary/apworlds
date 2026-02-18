@@ -1,6 +1,6 @@
-# 
+# High Roller
 
-
+High Roller is a slot machine styled game, where you collect various buffs to increase your scores on the slots.
 
 
 ## Downloads

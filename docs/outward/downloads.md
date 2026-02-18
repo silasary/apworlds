@@ -1,4 +1,4 @@
-# 
+# Outward: Definitive Edition
 
 ## Latest
 - <a href="https://github.com/Daemonarian/AP_Outward/releases/download/v0.2.1/outward.apworld">Latest Version (0.2.1)</a>

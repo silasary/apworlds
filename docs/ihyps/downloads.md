@@ -1,4 +1,4 @@
-# 
+# I Hate You, Please Suffer
 
 ## Latest
 - <a href="https://github.com/chloebangbang/Archipelago/releases/download/v0.1.0/ihyps.apworld">Latest Version (0.1.0)</a>

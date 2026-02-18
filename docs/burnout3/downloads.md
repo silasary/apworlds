@@ -1,4 +1,4 @@
-# 
+# Burnout 3
 
 ## Latest
 - <a href="https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.3/burnout3.apworld">Latest Version (0.0.3)</a>

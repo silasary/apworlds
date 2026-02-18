@@ -1,4 +1,4 @@
-# 
+# YARGGuitarHero1
 
 ## Latest
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.07/YARGGuitarHero1.apworld">Latest Version (26.2.7)</a>

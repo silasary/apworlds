@@ -1,6 +1,8 @@
-# 
+# Peggle Deluxe
 
-
+Peggle Deluxe blends pachinko-style physics with arcade strategy, tasking players with clearing orange pegs to
+achieve &#x27;Extreme Fever&#x27;. Guided by eccentric Peggle Masters and their unique power-ups, you’ll navigate vibrant
+levels that reward precision and creative shot-making.
 
 
 ## Downloads

@@ -1,6 +1,7 @@
-# 
+# VRChat
 
-
+This is where you describe your game. Pretend you are marketing the game and that people have no clue what it is.
+Or make it silly. Whatever you wish I have no control over you.
 
 
 ## Downloads

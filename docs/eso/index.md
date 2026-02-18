@@ -1,6 +1,7 @@
-# 
+# Elder Scrolls Online
 
-
+Elder Scrolls Online is a MMORPG Set in the world of The elder Scrolls. Journey across the reagons of Tamriel while fighting
+against various enemys
 
 
 ## Downloads

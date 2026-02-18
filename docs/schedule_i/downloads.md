@@ -1,9 +1,12 @@
 # Schedule I
 
 ## Latest
-- <a href="https://github.com/MacH8s/Narcopelago/releases/download/v3.3.3/Schedule_I.apworld">Latest Version (3.3.3)</a>
+- <a href="https://github.com/MacH8s/Narcopelago/releases/download/v3.4.0-traps/Schedule_I.apworld">Latest Version (3.4.0)</a>
 
 ## All Versions
+
+#### v3.4.0
+- <a href="https://github.com/MacH8s/Narcopelago/releases/download/v3.4.0-traps/Schedule_I.apworld">https://github.com/MacH8s/Narcopelago/releases/download/v3.4.0-traps/Schedule_I.apworld</a>
 
 #### v3.3.3
 - <a href="https://github.com/MacH8s/Narcopelago/releases/download/v3.3.3/Schedule_I.apworld">https://github.com/MacH8s/Narcopelago/releases/download/v3.3.3/Schedule_I.apworld</a>

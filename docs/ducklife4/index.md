@@ -1,6 +1,6 @@
-# 
+# Duck Life 4
 
-
+Duck Life 4 is the fourth installment in the popular Duck Life series. Train and race your duck around the globe and become the champion!
 
 
 ## Downloads

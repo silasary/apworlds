@@ -1,4 +1,4 @@
-# 
+# Plants Vs Zombies Fusion
 
 ## Latest
 - <a href="https://github.com/GraymonDgt/PVZFusionArchipelago/releases/download/v1.6.1/pvzf.apworld">Latest Version (1.6.1)</a>

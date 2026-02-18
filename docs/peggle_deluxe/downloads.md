@@ -1,4 +1,4 @@
-# 
+# Peggle Deluxe
 
 ## Latest
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.1.1/peggle_deluxe.apworld">Latest Version (1.1.1)</a>
