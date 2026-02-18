@@ -8,6 +8,9 @@
 #### v0.5.2
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.2/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5.2/portal2.apworld</a>
 
+#### v0.5.2
+- <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.3/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5.3/portal2.apworld</a>
+
 #### v0.5.1
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.1/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5.1/portal2.apworld</a>
 
