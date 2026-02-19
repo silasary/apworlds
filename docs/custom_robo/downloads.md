@@ -1,9 +1,12 @@
 # Custom Robo
 
 ## Latest
-- <a href="https://github.com/Metaruler/ArchipelagoCR/releases/download/V0.2/custom_robo.apworld">Latest Version (0.2)</a>
+- <a href="https://github.com/Metaruler/ArchipelagoCR/releases/download/V0.3/custom_robo.apworld">Latest Version (0.3)</a>
 
 ## All Versions
+
+#### v0.3
+- <a href="https://github.com/Metaruler/ArchipelagoCR/releases/download/V0.3/custom_robo.apworld">https://github.com/Metaruler/ArchipelagoCR/releases/download/V0.3/custom_robo.apworld</a>
 
 #### v0.2
 - <a href="https://github.com/Metaruler/ArchipelagoCR/releases/download/V0.2/custom_robo.apworld">https://github.com/Metaruler/ArchipelagoCR/releases/download/V0.2/custom_robo.apworld</a>

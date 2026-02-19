@@ -1,9 +1,12 @@
 # The Legend of Zelda - Phantom Hourglass
 
 ## Latest
-- <a href="https://github.com/carrotinator/Archipelago/releases/download/ph-v0.8.4-alpha/tloz_ph.apworld">Latest Version (0.8.4a0)</a>
+- <a href="https://github.com/carrotinator/Archipelago/releases/download/ph-v0.8.5-alpha/tloz_ph.apworld">Latest Version (0.8.5a0)</a>
 
 ## All Versions
+
+#### v0.8.5a0
+- <a href="https://github.com/carrotinator/Archipelago/releases/download/ph-v0.8.5-alpha/tloz_ph.apworld">https://github.com/carrotinator/Archipelago/releases/download/ph-v0.8.5-alpha/tloz_ph.apworld</a>
 
 #### v0.8.4a0
 - <a href="https://github.com/carrotinator/Archipelago/releases/download/ph-v0.8.4-alpha/tloz_ph.apworld">https://github.com/carrotinator/Archipelago/releases/download/ph-v0.8.4-alpha/tloz_ph.apworld</a>
