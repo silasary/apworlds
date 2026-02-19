@@ -6,7 +6,7 @@ Expand your empire and become the ultimate drug lord!
 
 
 ## Downloads
-- <a href="https://github.com/MacH8s/Narcopelago/releases/download/v3.4.0-traps/Schedule_I.apworld">Latest Version (3.4.0)</a>
+- <a href="https://github.com/MacH8s/Narcopelago/releases/download/v3.4.0/Schedule_I.apworld">Latest Version (3.4.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
