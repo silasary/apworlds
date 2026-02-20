@@ -10,8 +10,11 @@ The following are now location checks:
 - All boss encounters in Challenge Market.
 - All card unlocks at the end of every run.
 - All card dex unlocks.
+Optionally, the following could also be location checks:
+- All Music Room soundtrack unlocks.
+- All Achievements.
 
-They may contain items for different games as well as different items from _within_ 100th Black Market.
+They may contain items for different games as well as different items from within 100th Black Market.
 
 ## What is the goal of 100th Black Market when randomized?
 You may choose 1 out of 5 goals to reach for in this implementation.

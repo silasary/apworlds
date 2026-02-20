@@ -4,7 +4,7 @@ Portal 2 is a first person puzzle adventure where you shoot solve test chambers 
 
 
 ## Downloads
-- <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.2/portal2.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.6/portal2.apworld">Latest Version (0.5.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

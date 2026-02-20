@@ -10,7 +10,7 @@ and save the world.
 
 
 ## Downloads
-- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.1.4/jakanddaxter.apworld">Latest Version (1.1.4)</a>
+- <a href="https://github.com/ArchipelaGOAL/Archipelago/releases/download/v1.2.0/jakanddaxter.apworld">Latest Version (1.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Ship of Harkinian
 
 ## Latest
-- <a href="https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.2.0/oot_soh.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.2.1/oot_soh.apworld">Latest Version (1.2.1)</a>
 
 ## All Versions
+
+#### v1.2.1
+- <a href="https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.2.1/oot_soh.apworld">https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.2.1/oot_soh.apworld</a>
 
 #### v1.2.0
 - <a href="https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.2.0/oot_soh.apworld">https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.2.0/oot_soh.apworld</a>
