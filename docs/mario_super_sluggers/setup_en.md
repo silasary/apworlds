@@ -25,3 +25,10 @@ runtime.
 - Write your host connection info in the box at the top of the client and press enter.
 - Write your slot/player name into the box at the bottom and press enter. If needed, enter the room password.
 - Once you are connected, enter Challenge Mode and start a new game.
+- When reconnecting, it is fine to reuse the same save file but both the game and client need to be closed between
+sessions.
+
+## Troubleshooting
+
+There are failsafes in place to ensure the game does not softlock by choosing an impossible mission. If an issue with
+missions does pop up, however, you can use the `/reset_mission` command in the client to select a random safe mission.

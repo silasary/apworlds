@@ -8,6 +8,9 @@
 #### v0.4.2
 - <a href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.2/tje.apworld">https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.2/tje.apworld</a>
 
+#### v0.4.2a0
+- <a href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.2a/tje.apworld">https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.2a/tje.apworld</a>
+
 #### v0.4.1
 - <a href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.1/tje.apworld">https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.1/tje.apworld</a>
 

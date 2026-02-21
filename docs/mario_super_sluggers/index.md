@@ -6,7 +6,7 @@ in a game. PLAY BALL!
 
 
 ## Downloads
-- <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.2.1/mario_super_sluggers.apworld">Latest Version (0.2.1)</a>
+- <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.2.2/mario_super_sluggers.apworld">Latest Version (0.2.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

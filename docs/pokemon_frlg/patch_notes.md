@@ -1,3 +1,9 @@
+# 1.0.3
+## Bug Fixes
+* Fixed an issue where Eggs could receive EXP and evolve
+* Fixed an issue where Pokémon found in Cerulean Cave 2F would show Cerulean Cave 1F instead
+* Fixed a logic issue with Route 22 ledges
+
 # 1.0.2
 ## Bug Fixes
 * Fixed a typo in Route 25 - Man Gift location groups (credit to [Mysteryem](https://github.com/Mysteryem))

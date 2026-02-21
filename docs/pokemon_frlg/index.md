@@ -7,7 +7,7 @@ earn Badges, help resolve the many crises on the Sevii Islands, and become the P
 
 
 ## Downloads
-- <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.2/pokemon_frlg.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.3/pokemon_frlg.apworld">Latest Version (1.0.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
