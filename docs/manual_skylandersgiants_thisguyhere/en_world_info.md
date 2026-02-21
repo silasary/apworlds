@@ -70,6 +70,9 @@ Visit the manual Discord server <a href=https://discord.com/channels/10975325916
     * there will be 35 element lock traps
   * Do not set all trap weights to 0. Something very bad will happen if you do.
 
+## Death link
+A death occurs when a skylander is defeated in-game or a challenge/arena match is failed. When you receive a death, you cannot use the current skylander for the remainder of the current level unless you restart. If you receive a death in the arena or during a challenge, you must restart it immediately.
+
 ## Additional Notes for Non-Linear Mode
 The provided save for non-linear mode was created using leaked debug tools. Those tools trick the game into thinking that every level but the last is complete, but do not collect any items or check off any level progress. As such, you may end up playing a level that expects you to have some item collected from a previous chapter. The biggest example is skystones. Until you beat a skystones match, your deck will be comprised of five Drow Lancemasters. Some battles are impossible to beat with this deck, and many others are extremely difficult. The best workaround is to immediately challenge Dreadbeard in the game room to get your starter deck and a couple of decent stones.
 

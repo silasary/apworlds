@@ -4,7 +4,7 @@ A dog with a grappling hook, what more do you want
 
 
 ## Downloads
-- <a href="https://github.com/ProfDeCube/GrappleDog-Archipelago-Manual/releases/download/1.1.0/grappledog.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/ProfDeCube/GrappleDog-Archipelago-Manual/releases/download/1.2.0/grappledog.apworld">Latest Version (1.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
