@@ -1,9 +1,12 @@
 # The Legend of Dragoon
 
 ## Latest
-- <a href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.0/legend_of_dragoon.apworld">Latest Version (0.1.0)</a>
+- <a href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2/legend_of_dragoon.apworld">Latest Version (0.1.1)</a>
 
 ## All Versions
+
+#### v0.1.1
+- <a href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2/legend_of_dragoon.apworld">https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2/legend_of_dragoon.apworld</a>
 
 #### v0.1.0
 - <a href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.0/legend_of_dragoon.apworld">https://github.com/pkolb-dev/Archipelago/releases/download/0.1.0/legend_of_dragoon.apworld</a>
