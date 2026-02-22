@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/download/v0.0.2/twistycube.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/download/v1.0.0/twistycube.apworld">Latest Version (1.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

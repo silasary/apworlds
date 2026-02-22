@@ -1,1 +1,1 @@
-# YARGGuitarHero1 Randomizer Setup Guide
+# YARG Randomizer Setup Guide

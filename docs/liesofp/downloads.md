@@ -1,9 +1,12 @@
 # Lies Of P
 
 ## Latest
-- <a href="https://github.com/Xtruh/LiesOfAP/releases/download/0.1.5/liesofp.apworld">Latest Version (0.1.5.post3)</a>
+- <a href="https://github.com/Xtruh/LiesOfAP/releases/download/0.1.5/liesofp.apworld">Latest Version (0.1.5.post4)</a>
 
 ## All Versions
+
+#### v0.1.5.post4
+- <a href="https://github.com/Xtruh/LiesOfAP/releases/download/0.1.5/liesofp.apworld">https://github.com/Xtruh/LiesOfAP/releases/download/0.1.5/liesofp.apworld</a>
 
 #### v0.1.5.post3
 - <a href="https://github.com/Xtruh/LiesOfAP/releases/download/0.1.5/liesofp.apworld">https://github.com/Xtruh/LiesOfAP/releases/download/0.1.5/liesofp.apworld</a>

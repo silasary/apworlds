@@ -10,7 +10,7 @@ Ugh. I don&#x27;t even know why I&#x27;m talking to you. Looking at you just mak
 
 
 ## Downloads
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.4/ss.apworld">Latest Version (0.5.4)</a>
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.5/ss.apworld">Latest Version (0.5.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
