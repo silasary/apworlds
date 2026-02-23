@@ -17,6 +17,9 @@
 #### v1.4.2
 - <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.2/rabi_ribi.apworld">https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.2/rabi_ribi.apworld</a>
 
+#### v1.4.2
+- <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.5/rabi_ribi.apworld">https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.5/rabi_ribi.apworld</a>
+
 #### v1.4.1
 - <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/beta-1.4.1/rabi_ribi.apworld">https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/beta-1.4.1/rabi_ribi.apworld</a>
 

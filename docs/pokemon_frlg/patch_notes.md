@@ -1,3 +1,7 @@
+# 1.0.4
+## Bug Fixes
+* Fixed an accessibility  option that could occur with randomized wild Pokémon and Pokémon request locations (credit to [Eijebong](https://github.com/Eijebong))
+
 # 1.0.3
 ## Bug Fixes
 * Fixed an issue where Eggs could receive EXP and evolve

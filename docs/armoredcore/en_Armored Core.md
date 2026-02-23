@@ -2,7 +2,7 @@
 
 ## What does randomization do to this game?
 
-Mission order, acquiring Parts, and receiving bonus Human+ levels and Credits are all randomized.
+Mission order, acquiring Parts, starting AC, and receiving bonus Human+ levels and Credits are all randomized.
 
 ## What is the goal of Armored Core when randomized?
 
@@ -21,7 +21,7 @@ Missions and Progressive Missions depending on how you are playing, as well as f
 
 ## What does another world's item look like in Armored Core?
 
-You item acquisitions take the form of having completed a mission, reading mail, or buying a Part from the shop.
+Your item acquisitions take the form of having completed a mission, reading mail, or buying a Part from the shop.
 You'll have to check the BizHawk client to know the actual items that are unlocked from non-shop locations.
 Note that mission completion isn't checked until you have re-entered the Raven's Nest menu.
 

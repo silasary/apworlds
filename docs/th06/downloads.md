@@ -1,9 +1,12 @@
 # Touhou Koumakyou ~ the Embodiment of Scarlet Devil
 
 ## Latest
-- <a href="https://github.com/Nepley/eosd-apworld/releases/download/v1.3.3/th06.apworld">Latest Version (1.3.3)</a>
+- <a href="https://github.com/Nepley/eosd-apworld/releases/download/v1.4.0/th06.apworld">Latest Version (1.4.0)</a>
 
 ## All Versions
+
+#### v1.4.0
+- <a href="https://github.com/Nepley/eosd-apworld/releases/download/v1.4.0/th06.apworld">https://github.com/Nepley/eosd-apworld/releases/download/v1.4.0/th06.apworld</a>
 
 #### v1.3.3
 - <a href="https://github.com/Nepley/eosd-apworld/releases/download/v1.3.3/th06.apworld">https://github.com/Nepley/eosd-apworld/releases/download/v1.3.3/th06.apworld</a>

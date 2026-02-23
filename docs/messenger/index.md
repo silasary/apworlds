@@ -6,7 +6,7 @@ adventure full of thrills, surprises, and humor.
 
 
 ## Downloads
-- <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld">Latest Version (0.6.6)</a>
+- <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld">Latest Version (0.6.6.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
