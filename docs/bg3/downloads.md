@@ -1,9 +1,12 @@
 # Baldur&#x27;s Gate 3
 
 ## Latest
-- <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.1/bg3.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.2/bg3.apworld">Latest Version (0.4.2)</a>
 
 ## All Versions
+
+#### v0.4.2
+- <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.2/bg3.apworld">https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.2/bg3.apworld</a>
 
 #### v0.4.1
 - <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.1/bg3.apworld">https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.1/bg3.apworld</a>

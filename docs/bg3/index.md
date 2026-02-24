@@ -4,7 +4,7 @@ Baldur&#x27;s Gate 3 is a large adventure game modeled after Dungeons and Dragon
 
 
 ## Downloads
-- <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.1/bg3.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.2/bg3.apworld">Latest Version (0.4.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
