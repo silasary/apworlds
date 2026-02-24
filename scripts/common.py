@@ -239,7 +239,7 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
                     embedded_version = parse_version(manifest_data[key])
                     version_info["version_simple"] = embedded_version.base_version
                     # Only replace the version if the interpreted version is wrong
-                    if embedded_version.base_version != parse_version(version_info["world_version"]).base_version:
+                    if embedded_version.base_version.split(".")[:3] != parse_version(version_info["world_version"]).base_version.split(".")[:3]:
                         version_info[key] = manifest_data[key]
                 else:
                     version_info[key] = manifest_data[key]
@@ -250,6 +250,8 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
             manifest["flags"] = manifest_data["flags"]
         if "igdb_id" in manifest_data:
             manifest["igdb_id"] = manifest_data["igdb_id"]
+        if "authors" in manifest_data:
+            manifest["authors"] = manifest_data["authors"]
         manifest["manifest_fields"] = sorted(set(manifest_data.keys()) - {"compatible_version", "version", "game"})  # We only care about optional fields
 
 
@@ -279,6 +281,7 @@ def update_index_from_changelog(file_path: Path | None, manifest: dict, changelo
                 "source_url": changelog,
                 "size": 0,
                 "tag": tag,
+                "created_at": datetime.datetime.now(tz=datetime.UTC).isoformat(),
             }
 
         release = construct_metadata_release(world_id, manifest, versions[version_str])
