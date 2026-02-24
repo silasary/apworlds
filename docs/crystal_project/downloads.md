@@ -8,6 +8,9 @@
 #### v0.15.0
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.0/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.0/crystal_project.apworld</a>
 
+#### v0.15.0
+- <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.1/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.1/crystal_project.apworld</a>
+
 #### v0.14.0
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.14.0/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.14.0/crystal_project.apworld</a>
 

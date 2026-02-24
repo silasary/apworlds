@@ -1,9 +1,12 @@
 # Manual_Fellowship_Chakraa
 
 ## Latest
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2025.10.14/manual_fellowship_chakraa.apworld">Latest Version (2025.10.14)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2026.02.23/manual_fellowship_chakraa.apworld">Latest Version (2026.2.23)</a>
 
 ## All Versions
+
+#### v2026.2.23
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2026.02.23/manual_fellowship_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2026.02.23/manual_fellowship_chakraa.apworld</a>
 
 #### v2025.10.14
 - <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2025.10.14/manual_fellowship_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2025.10.14/manual_fellowship_chakraa.apworld</a>

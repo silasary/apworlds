@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2025.10.14/manual_fellowship_chakraa.apworld">Latest Version (2025.10.14)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2026.02.23/manual_fellowship_chakraa.apworld">Latest Version (2026.2.23)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

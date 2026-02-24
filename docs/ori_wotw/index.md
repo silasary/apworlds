@@ -7,7 +7,7 @@ The player controls the titular Ori, a white guardian spirit.
 
 
 ## Downloads
-- <a href="https://github.com/Satisha10/APwotw_release/releases/download/v0.4.2/ori_wotw.apworld">Latest Version (0.4.2)</a>
+- <a href="https://github.com/Satisha10/APwotw_release/releases/download/v0.5.0/ori_wotw.apworld">Latest Version (0.5.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
