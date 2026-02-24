@@ -174,6 +174,7 @@ if args.add_unknown:
             print(f"Missing {manifest}")
 
 recent_worlds = sorted((w for w in feed_versions if w.get("created_at")), key=lambda w: w["created_at"], reverse=True)[:50]
+used_ids = set()
 fg = FeedGenerator()
 fg.id("https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom")
 fg.title("Recent APWorlds")
@@ -182,15 +183,19 @@ fg.updated(datetime.datetime.now(tz=datetime.UTC))
 for w in recent_worlds:
     stem = os.path.splitext(os.path.basename(w["download_url"]))[0]
     title = f"{meta[stem]['game'] or stem} v{w['world_version']}"
+    link = w.get("html_url", w["download_url"])
+    if link in used_ids:
+        continue
 
     fe = fg.add_entry()
-    fe.id(w.get("html_url", w["download_url"]))
+    fe.id(link)
     fe.title(title)
-    fe.link(href=w.get("html_url", w["download_url"]))
+    fe.link(href=link)
     fe.content(w.get("description", ""))
     fe.updated(w["created_at"])
     if meta[stem]["authors"]:
         fe.author([{"name": author} for author in meta[stem]["authors"]], replace=True)
+    used_ids.add(link)
 
 fg.atom_file("recent.atom", pretty=True)
 # fg.rss_file("recent.rss")
