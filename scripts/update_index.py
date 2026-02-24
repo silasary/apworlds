@@ -11,6 +11,7 @@ import yaml
 from common import NoWorldsFound, parse_version, update_index_from_github, repositories, load_manifest, update_index_from_changelog
 from write_docs import write_docs
 from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
+from feedgen.feed import FeedGenerator
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--no-refresh", action="store_true", help="Don't refresh the GitHub repositories")
@@ -18,6 +19,7 @@ parser.add_argument("--add-unknown", action="store_true", help="Add unknown worl
 args = parser.parse_args()
 
 worlds = []
+feed_versions = []  # List of versions that can appear in the RSS feed
 meta = defaultdict(dict)
 manifest_ready = defaultdict(bool)
 max_minimum_ap_version: Counter[str] = Counter()
@@ -65,6 +67,7 @@ for world in files:
             versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)
             meta[world.stem]["game"] = manifest.get("game", "")
             meta[world.stem]["description"] = manifest.get("description", "")
+            meta[world.stem]["authors"] = manifest.get("authors", [])
             manifest_ready[world.stem] = any(v.get("has_manifest", False) for v in versions)
 
             if tracker := manifest.get("tracker"):
@@ -117,6 +120,8 @@ for world in files:
                     entry["lib_file"] = version["lib_file"]
 
                 worlds.append(entry)
+                if "unready" not in flags:
+                    feed_versions.append(version)
 
                 # if not version.get('source_url'):
                 #     print(f"Missing source_url for {world.stem} {version.get('world_version')}")
@@ -167,6 +172,29 @@ if args.add_unknown:
             version = list(repositories.packages_by_id_version[id].values())[0]
             manifest.write_text(yaml.dump({"game": "", "github": version.source_url}))
             print(f"Missing {manifest}")
+
+recent_worlds = sorted((w for w in feed_versions if w.get("created_at")), key=lambda w: w["created_at"], reverse=True)[:50]
+fg = FeedGenerator()
+fg.id("https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom")
+fg.title("Recent APWorlds")
+fg.author({"name": "Silasary"})
+fg.updated(datetime.datetime.now(tz=datetime.UTC))
+for w in recent_worlds:
+    stem = os.path.splitext(os.path.basename(w["download_url"]))[0]
+    title = f"{meta[stem]['game']} v{w['world_version']}"
+
+    fe = fg.add_entry()
+    fe.id(w.get("html_url", w["download_url"]))
+    fe.title(title)
+    fe.link(href=w.get("html_url", w["download_url"]))
+    fe.content(w.get("description", ""))
+    fe.updated(w["created_at"])
+    for author in meta[stem]["authors"]:
+        fe.author({"name": author})
+
+fg.atom_file("recent.atom", pretty=True)
+# fg.rss_file("recent.rss")
+
 
 print(f"Scanned {len(repositories.repositories)} repositories, found {len(repositories.all_known_package_ids)} packages with a total of {len(worlds)} versions")
 print(f"{len([k for k, v in manifest_ready.items() if v])}/{len(manifest_ready)} worlds have a manifest.")

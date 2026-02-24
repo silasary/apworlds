@@ -123,6 +123,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                 "title": release.data["metadata"].get("title", ""),
                 "download_url": release.download_url,
                 "source_url": release.source_url,
+                "description": release.data["metadata"].get("description"),
+                "html_url": release.data["metadata"].get("html_url"),
             }
         )
         if "prerelease" in release.data["metadata"]:
