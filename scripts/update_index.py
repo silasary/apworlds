@@ -181,7 +181,7 @@ fg.author({"name": "Silasary"})
 fg.updated(datetime.datetime.now(tz=datetime.UTC))
 for w in recent_worlds:
     stem = os.path.splitext(os.path.basename(w["download_url"]))[0]
-    title = f"{meta[stem]['game']} v{w['world_version']}"
+    title = f"{meta[stem]['game'] or stem} v{w['world_version']}"
 
     fe = fg.add_entry()
     fe.id(w.get("html_url", w["download_url"]))
@@ -189,8 +189,8 @@ for w in recent_worlds:
     fe.link(href=w.get("html_url", w["download_url"]))
     fe.content(w.get("description", ""))
     fe.updated(w["created_at"])
-    for author in meta[stem]["authors"]:
-        fe.author({"name": author})
+    if meta[stem]["authors"]:
+        fe.author([{"name": author} for author in meta[stem]["authors"]], replace=True)
 
 fg.atom_file("recent.atom", pretty=True)
 # fg.rss_file("recent.rss")
