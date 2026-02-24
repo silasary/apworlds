@@ -11,10 +11,12 @@
   "versions": {
     "BombTsa_0.1.0": {
       "created_at": "2025-03-14T20:26:20Z",
+      "description": "## Setup Guide\r\n### What you need\r\n- [Bizhawk 2.9.1](https://tasvideos.org/Bizhawk/ReleaseHistory#Bizhawk291) (Use 2.9.1, version 2.10 does not work with AP)\r\n- The latest bomberman_tsa.apworld provided in the latest release post\r\n\r\n\r\n### Installation\r\nSame as every other unsupported N64 apworld, \r\n- simply move bomberman_tsa.apworld into the custom_worlds directory in your Archipelago install server\r\n(default path: C:\\ProgramData\\Archipelago\\custom_worlds)\r\n- or simply double click the apworld and it should install itself (Archipelago version 0.5.0 and later)\r\n\r\n### Running\r\n1. In the Archipelago launcher push the 'Generate Template Options' button to generate a yaml for your options\r\n2. Like every other apworld, fill out your yaml options and have the host generate the multiworld, the produced zip file should contain a .apbomb64 patch file. Receive this .apbomb64 patch from the multiworld host.\r\n3. Push the 'Open Patch' button in the launcher and it should ask for a 'Bomberman 64 (US)' legal ROM dump (MD5 Hash: aec1fdb0f1caad86c9f457989a4ce482), then select the generated  .apbomb64 patch file to produce a .z64 ROM which should auto launch in a bizhawk instance. You should be set otherwise from here just follow the same instructions as any other supported N64 apworld.\r\n\r\n### Recomendations\r\n- In Bizhawk change your graphics plugin (Config -> Core Setting -> For Consoles -> Mupen64Plus -> Video Plugins) to Rice\r\n\r\n\r\n### Troubleshooting\r\n- The windows 7 version of archipelago uses python 3.8 which will not work with this apworld.\r\n- Make sure you are not using version 2.10 of Bizhawk\r\n\r\n\r\n## What is Randomized\r\n### Items\r\n- Elemental Stones\r\n- Stage Access\r\n- Guardian Armor Pieces\r\n- Pommy Transformations\r\n- Stage Key Items\r\n\r\n### Locations\r\n- Boss Clears\r\n- Generator Clears\r\n- Custom Parts/Gurdian Armor\r\n- Stage Key Items\r\n\r\n\r\n## Features\r\n- Shopsanity (Shop Item checks)\r\n- Powerupsanity (Bomb Kick, Power Gloves, Remote)\r\n- Pommysanity (Each Pommy Transformation is a check)\r\n- Deathlink\r\n- Randomized Music/Sound Effects\r\n\r\n## Known Issues\r\n- Some custom part checks can be collected over and over (ex. Alcatraz)\r\n- Shopsanity: Sandals, Sneakers, and Gold Boots can be bought over and over (by entering/exiting a world and returning to the shop)\r\n- Shopsanity: Buying High Heels sends Neverland Guardian Armor check.\r\n- Starting with Dark Stone can crash the game if you watch the tutorial long enough\r\n- Effects shuffle can crash the game (but this is noted as unstable in the yaml so it's fine)\r\n- Rom Adjuster: \"Open Doors\" despawns the Starlight elevator in the area with the limo, making that passage one-way\r\n\r\n\r\n## Planned Features\r\n- I'll get back to you on that\r\n\r\n## Notes\r\n### Big thanks to \r\n- SavageWizzrobe for their extensive testing and RAM Mapping, this likely would not have come together without their help\r\n- Cedar from the [decomp server](https://discord.gg/hpkAyZwF) for their tireless work and documentation of the game\r\n- Adeleine64DS for their initial logic document for the game\r\n- Ikari for special art assets for the powerups (usable with the ROM adjuster)\r\n- Usagi Tsuki for testing\r\n- And of course Noa for their motivation, testing, ideas and overall hard work bringing this together with me. Also likely would not have come together without them.\r\na legal Bomberman 64 The Second Attack (US) legal dump is required to play this apworld\r\nHash: aec1fdb0f1caad86c9f457989a4ce482\r\n",
       "download_url": "https://github.com/Happyhappyism/Archipelago/releases/download/BombTsa_0.1.0/bomberman_tsa.apworld",
       "failed_to_load": "Choice option 'random' cannot be manually assigned.",
       "has_manifest": false,
       "hash_sha256": "5a7e272b170599edda52de5d128958a6ec3aa2052ae8b5bcb4a83a70cd88c3a1",
+      "html_url": "https://github.com/Happyhappyism/Archipelago/releases/tag/BombTsa_0.1.0",
       "size": 34724,
       "source_url": "https://api.github.com/repos/Happyhappyism/Archipelago",
       "tag": "BombTsa_0.1.0",
@@ -24,9 +26,11 @@
     },
     "bombtsa_v0.1.1": {
       "created_at": "2025-09-18T19:26:07Z",
+      "description": "## Updates\r\n- Internal changes for Archipelago v0.6.4 compatibility\r\n\r\na legal Bomberman 64 The Second Attack (US) legal dump is required to play this apworld\r\nHash: aec1fdb0f1caad86c9f457989a4ce482\r\n",
       "download_url": "https://github.com/Happyhappyism/Archipelago/releases/download/bombtsa_v0.1.1/bomberman_tsa.apworld",
       "has_manifest": true,
       "hash_sha256": "6b579dd6b6611673f915f5023ea83d47027a00f1425a2bd46a25fc03a56ac369",
+      "html_url": "https://github.com/Happyhappyism/Archipelago/releases/tag/bombtsa_v0.1.1",
       "minimum_ap_version": "0.6.3",
       "size": 36117,
       "source_url": "https://api.github.com/repos/Happyhappyism/Archipelago",
@@ -37,9 +41,11 @@
     },
     "bombtsa_v0.1.2": {
       "created_at": "2025-09-18T19:26:07Z",
+      "description": "## Updates\r\n- Added Options Groups\r\n- Fixed an issue where enabling the Pommy Shop option while disabling shopsanity would cause the generation to fail\r\n\r\na legal Bomberman 64 The Second Attack (US) legal dump is required to play this apworld\r\nHash: aec1fdb0f1caad86c9f457989a4ce482",
       "download_url": "https://github.com/Happyhappyism/Archipelago/releases/download/bombtsa_v0.1.2/bomberman_tsa.apworld",
       "has_manifest": true,
       "hash_sha256": "8b09f621f30a0770e3bb8d485616d9384b9a84d01b215783506e67283bb923d5",
+      "html_url": "https://github.com/Happyhappyism/Archipelago/releases/tag/bombtsa_v0.1.2",
       "minimum_ap_version": "0.6.3",
       "size": 35109,
       "source_url": "https://api.github.com/repos/Happyhappyism/Archipelago",
@@ -50,9 +56,11 @@
     },
     "bombtsa_v0.1.3": {
       "created_at": "2025-11-05T01:53:53Z",
+      "description": "## Updates\r\n- Fixed an issue in generation where the random starting stone option would fail generation\r\n\r\na legal Bomberman 64 The Second Attack (US) legal dump is required to play this apworld\r\nHash: aec1fdb0f1caad86c9f457989a4ce482",
       "download_url": "https://github.com/Happyhappyism/Archipelago/releases/download/bombtsa_v0.1.3/bomberman_tsa.apworld",
       "has_manifest": true,
       "hash_sha256": "bb586a5d3c8c6204a9cec16a0b1729565389f6f41e23ca8eb2cc0aed786e63a7",
+      "html_url": "https://github.com/Happyhappyism/Archipelago/releases/tag/bombtsa_v0.1.3",
       "minimum_ap_version": "0.6.3",
       "size": 35273,
       "source_url": "https://api.github.com/repos/Happyhappyism/Archipelago",

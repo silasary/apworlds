@@ -1,9 +1,12 @@
 # Cave Story
 
 ## Latest
-- <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.6/cave_story.apworld">Latest Version (0.6.6)</a>
+- <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.7/cave_story.apworld">Latest Version (0.6.7)</a>
 
 ## All Versions
+
+#### v0.6.7
+- <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.7/cave_story.apworld">https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.7/cave_story.apworld</a>
 
 #### v0.6.6
 - <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.6/cave_story.apworld">https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.6/cave_story.apworld</a>

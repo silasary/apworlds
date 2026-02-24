@@ -13,9 +13,11 @@
   "versions": {
     "sc2-beta-after-044": {
       "created_at": "2024-01-30T00:11:20Z",
+      "description": "Apworlds for beta test. You need both of them.\r\nFor getting map/mod data, do `/download_data` in the client.",
       "download_url": "https://github.com/Ziktofel/Archipelago/releases/download/sc2-beta-after-044/sc2.apworld",
       "has_manifest": false,
       "hash_sha256": "d54bcd6a5e4fc641e8e472695b6fd9c0f7d10ee944d210206462fb21500c77d7",
+      "html_url": "https://github.com/Ziktofel/Archipelago/releases/tag/sc2-beta-after-044",
       "prerelease": true,
       "size": 123423,
       "source_url": "https://api.github.com/repos/Ziktofel/Archipelago",
@@ -26,9 +28,11 @@
     },
     "v0.6.4": {
       "created_at": "2025-09-25T03:10:23Z",
+      "description": "**Update**: Archipelago 0.6.4 has gone live, it is now the preferred way to play this apworld.\r\n\r\nA downloadable apworld containing planned 0.6.4 content and cherry-picked bugfixes. Download the sc2.apworld file (ignore the source code downloads, those are out-of-date).\r\nCheck out the changelog [here](https://github.com/MatthewMarinets/ap_sc2_notes/blob/main/changelog.md).\r\n\r\nAfter installing the apworld, you can generate a template yaml by running the Archipelago launcher and selecting \"Generate Template Settings\". Move the templates you want into the base Players/ folder and remove the rest. When you're ready to generate a game, run ArchipelagoGenerate.exe, and upload the resulting file from the output/ folder to https://archipelago.gg/uploads.\r\n\r\nNotes:\r\n* This .apworld _replaces_ the one in lib/worlds/; the live version should be removed and replaced with this one\r\n* Because this .apworld and the live version conflict, a multiworld does not support both versions at the same time. Either all players play beta or all players play live\r\n* This .apworld will not work with ArchipelagoStarcraft2Client.exe; launch the client by launching the general Archipelago launcher and searching for the starcraft 2 client from there\r\n  * **Known issue**: There will be two copies of the starcraft 2 client in the launcher list; both should work the same. This is a byproduct of pasting an .apworld on an older install, and will be fixed automatically when upgrading to Archipelago 0.6.4\r\n\r\nThe custom mission order documentation can be found [here](https://github.com/ArchipelagoMW/Archipelago/blob/main/worlds/sc2/docs/custom_mission_orders_en.md). Unfortunately it doesn't get hosted by archipelago.gg until they do their next version release.",
       "download_url": "https://github.com/MatthewMarinets/Archipelago/releases/download/v0.6.4/sc2.apworld",
       "has_manifest": false,
       "hash_sha256": "ebd2486d7524f7c7eabf79fc6d4cdb01c3d5c1bebf86689c7dae1db43675a3c6",
+      "html_url": "https://github.com/MatthewMarinets/Archipelago/releases/tag/v0.6.4",
       "prerelease": true,
       "size": 310699,
       "source_url": "https://api.github.com/repos/MatthewMarinets/Archipelago",

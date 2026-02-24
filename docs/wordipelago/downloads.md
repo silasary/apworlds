@@ -1,15 +1,15 @@
 # Wordipelago
 
 ## Latest
-- <a href="https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.1_wordsearch-0.5.0/wordipelago.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/ProfDeCube/Archipelago/releases/download/1.0.2/wordipelago.apworld">Latest Version (1.0.1)</a>
 
 ## All Versions
 
 #### v1.0.1
-- <a href="https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.1_wordsearch-0.5.0/wordipelago.apworld">https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.1_wordsearch-0.5.0/wordipelago.apworld</a>
+- <a href="https://github.com/ProfDeCube/Archipelago/releases/download/1.0.2/wordipelago.apworld">https://github.com/ProfDeCube/Archipelago/releases/download/1.0.2/wordipelago.apworld</a>
 
 #### v1.0.1
-- <a href="https://github.com/ProfDeCube/Archipelago/releases/download/1.0.2/wordipelago.apworld">https://github.com/ProfDeCube/Archipelago/releases/download/1.0.2/wordipelago.apworld</a>
+- <a href="https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.1_wordsearch-0.5.0/wordipelago.apworld">https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.1_wordsearch-0.5.0/wordipelago.apworld</a>
 
 #### v1.0.1
 - <a href="https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.2_wordsearch-0.5.0/wordipelago.apworld">https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.2_wordsearch-0.5.0/wordipelago.apworld</a>

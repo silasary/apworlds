@@ -11,9 +11,11 @@
   "versions": {
     "v0.1.0-alpha": {
       "created_at": "2026-01-10T00:23:14Z",
+      "description": "The first release!\r\n\r\nCheck [the README](https://github.com/AllPoland/unbeatAP/blob/main/README.md) for installation instructions.\r\n\r\nThe mod and apworld are both still early in development, and are not feature complete nor are there guarantees about stability.\r\n\r\n**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.\r\n\r\nAny feedback or ideas are welcome in the \"UNBEATABLE (PC)\" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!",
       "download_url": "https://github.com/AllPoland/unbeatAP/releases/download/v0.1.0-alpha/unbeatable_arcade.apworld",
       "has_manifest": true,
       "hash_sha256": "c063ec89f047784388fee62dc9685a50747b919f18f4f0357407d14c203d9c9c",
+      "html_url": "https://github.com/AllPoland/unbeatAP/releases/tag/v0.1.0-alpha",
       "minimum_ap_version": "0.6.4",
       "size": 19189,
       "source_url": "https://api.github.com/repos/AllPoland/unbeatAP",
@@ -24,9 +26,11 @@
     },
     "v0.1.1-alpha": {
       "created_at": "2026-01-19T01:31:55Z",
+      "description": "You know, when you release a randomizer, the randomizer fundamentally changes.\r\n\r\nThis patch fixes as many known issues as possible while maintaining compatibility with v0.1.0. This means **you can (and should) update the client to this version if you still have a game running on v0.1.0**. (You should update the apworld ASAP too!)\r\n\r\napworld changes:\r\n- Song items now follow progression balancing, improving pacing in multiplayer lobbies\r\n- Added the \"Non-local Traps\" setting as a shorthand to add all trap items to \"Non-local Items\"\r\n- Improved the detail and clarity of several options, and improved some default values\r\n\r\nclient changes:\r\n- Fixed an issue where an out-of-range port would lock up the connection screen\r\n- Fixed an issue where the game would stop responding while connecting if many items have been collected\r\n- Fixed an issue where pressing `J` while typing in an input field would open the options menu\r\n- Fixed an ugly layout issue with the connection screen\r\n- Traps are no longer cancelled when quitting or failing a song\r\n- The effects of Zoom Traps have been reduced, and the default duration of all traps has been increased\r\n\r\nCheck [the README](https://github.com/AllPoland/unbeatAP/blob/main/README.md) for installation instructions.\r\n\r\nThe mod and apworld are both still early in development, and are not feature complete nor are there guarantees about stability.\r\n\r\n**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.\r\n\r\nAny feedback or ideas are welcome in the \"UNBEATABLE (PC)\" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!",
       "download_url": "https://github.com/AllPoland/unbeatAP/releases/download/v0.1.1-alpha/unbeatable_arcade.apworld",
       "has_manifest": true,
       "hash_sha256": "6c7b8dd1124f1e4cca9c9fc253992d2ecbdfe29ae5cec5cc8aff1a252f372992",
+      "html_url": "https://github.com/AllPoland/unbeatAP/releases/tag/v0.1.1-alpha",
       "minimum_ap_version": "0.6.4",
       "size": 21829,
       "source_url": "https://api.github.com/repos/AllPoland/unbeatAP",
@@ -37,9 +41,11 @@
     },
     "v0.1.2-alpha": {
       "created_at": "2026-01-19T01:31:55Z",
+      "description": "The obligatory hotfix for the thing that goes wrong after the first update.\r\n\r\nThis fixes an issue where YAMLs generated with the Options Creator tool would be missing the `skill_rating` entry, which completely breaks progression.\r\nIf you have a YAML submitted for an upcoming game, **please check if this issue has affected you and update/resubmit as necessary!**\r\n\r\n**This is ONLY an apworld update!** There are no changes to the client.\r\n\r\nCheck [the README](https://github.com/AllPoland/unbeatAP/blob/main/README.md) for installation instructions.\r\n\r\nThe mod and apworld are both still early in development, and are not feature complete nor are there guarantees about stability.\r\n\r\n**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.\r\n\r\nAny feedback or ideas are welcome in the \"UNBEATABLE (PC)\" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!",
       "download_url": "https://github.com/AllPoland/unbeatAP/releases/download/v0.1.2-alpha/unbeatable_arcade.apworld",
       "has_manifest": true,
       "hash_sha256": "8d9f64087a8ac991781e8b1ec2bdb8609ba1bf2dc519cbb8eaba7e335e2d2184",
+      "html_url": "https://github.com/AllPoland/unbeatAP/releases/tag/v0.1.2-alpha",
       "minimum_ap_version": "0.6.4",
       "size": 21812,
       "source_url": "https://api.github.com/repos/AllPoland/unbeatAP",
@@ -50,9 +56,11 @@
     },
     "v0.2.0-alpha": {
       "created_at": "2026-02-16T03:41:57Z",
+      "description": "Thanks to work from @estradiol-valerate, this update brings the songs added in game patch 1.7.1 to the randomizer, as well as some songs that were already present but missing from the rando.\r\n\r\nAdditionally, there are a few fixes:\r\n- Fixed an issue that caused connection to take a really long time (fixed by @estradiol-valerate)\r\n- Skill rating is now on a 1000x scale instead of a 100x scale. This should hopefully be more intuitive, since the game always displays rating with three decimal places (now a rating of 5.318 translates to skill rating 5318 in the YAML).\r\n- Removed the \"non-local traps\" option, as it caused a lot of generation failures when used. It is still possible to place traps in non-local items manually.\r\n\r\nThis update is **NOT compatible** with v0.1.x! You will have to update both the client and apworld together and generate a new game.\r\n\r\nCheck [the README](https://github.com/AllPoland/unbeatAP/blob/main/README.md) for installation instructions.\r\n\r\nThe mod and apworld are both still early in development, and are not feature complete nor are there guarantees about stability.\r\n\r\n**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.\r\n\r\nAny feedback or ideas are welcome in the \"UNBEATABLE (PC)\" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!",
       "download_url": "https://github.com/AllPoland/unbeatAP/releases/download/v0.2.0-alpha/unbeatable_arcade.apworld",
       "has_manifest": true,
       "hash_sha256": "ab0caf21bb50f677306b59b2c752f8a137d3f8698dca5d420918e58c2961ee04",
+      "html_url": "https://github.com/AllPoland/unbeatAP/releases/tag/v0.2.0-alpha",
       "minimum_ap_version": "0.6.4",
       "size": 22188,
       "source_url": "https://api.github.com/repos/AllPoland/unbeatAP",

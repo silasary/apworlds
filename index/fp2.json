@@ -7,9 +7,11 @@
   "versions": {
     "0.1.0": {
       "created_at": "2025-09-04T15:50:16Z",
+      "description": "An initial release of the partially manual based implementation, mostly present for convenience so people don't have to compile the mod manually.\r\nTo install the mod, make sure that BepInEx and FP2Lib are installed and enabled (using [Freedom Manager](https://gamebanana.com/tools/10870) will take care of this), then just extract the Archipelago.7z file to the game's root and merge the folders when prompted.\r\n\r\n### Changes since Manual 0.0.2:\r\n- The apworld (while still being based on the 2024/11/19 manual) is now called fp2.apworld and is referred to as Freedom Planet 2, rather than Manual_FreedomPlanet2_Knuxfan24. This will break compatibility with previously generated games, as the client won't be able to connect to those due to the old name.\r\n- Open Stage Progression option. Chapters will be removed from the pool, with each stage getting its own item instead.\r\n- TrapLink support (untested).\r\n- Config options to force enable DeathLink, RingLink or TrapLink even if not enabled in the YAML (shamelessly stolen from the [Sonic Adventure DX](https://github.com/ClassicSpeed/sadx-classic-randomizer/) implementation).\r\n- Untested improvement to Enemy Sanity performance.\r\n- Untested option to try and weight traps.\r\n- Untested edit to try and keep Chest Tracers hidden upon opening a chest with them already hidden.\r\n\r\n**Issues:**\r\n- Rail Traps are still a bit wonky and don't get disabled upon restarting a stage, only quitting to the map removes it.",
       "download_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/0.1.0/fp2.apworld",
       "has_manifest": false,
       "hash_sha256": "a33b0a0538dfd4718e232ed506711ba9145dbe0d020e49f99c889f43084c8e88",
+      "html_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/0.1.0",
       "size": 49817,
       "source_url": "https://api.github.com/repos/Knuxfan24/Freedom-Planet-2-Archipelago",
       "tag": "0.1.0",
@@ -19,9 +21,11 @@
     },
     "0.1.1": {
       "created_at": "2025-09-15T20:55:48Z",
+      "description": "An updated release to provide a build that (should hopefully) run a hell of a lot better thanks to @Gomiken making a lot of improvements to actually multithread the mod's code.\r\n\r\nBesides improvements, this build adds a few more handlers for new TrapLink traps, and fixes a couple of bugs in 0.1.0 (namely the Chest Tracers breaking horribly if leaving a stage and newer versions of FP2Lib correcting the behaviour that caused the Battlesphere to end up with stage ID 4 rather than 31).\r\n\r\nOnly the mod DLL has been updated since 0.1.0, but the apworld and full mod download are here for convenience.",
       "download_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/0.1.1/fp2.apworld",
       "has_manifest": false,
       "hash_sha256": "a33b0a0538dfd4718e232ed506711ba9145dbe0d020e49f99c889f43084c8e88",
+      "html_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/0.1.1",
       "size": 49817,
       "source_url": "https://api.github.com/repos/Knuxfan24/Freedom-Planet-2-Archipelago",
       "tag": "0.1.1",
@@ -31,9 +35,11 @@
     },
     "0.1.2": {
       "created_at": "2025-10-06T22:52:50Z",
+      "description": "Update to fix a few bugs/oversights that either crept in with 0.1.1 or have been lingering around for a while.\r\n\r\n### Changes since 0.1.1:\r\n- Minor fix to the apworld that actually names the Filler Time Capsules option (would previously show in the spoiler log as Filler Star Cards due to a copy paste error).\r\n- Finally fixed DeathLink in Bakunawa Chase and made it work for the BFF2000 in Nalao Lake and Mecha Madness.\r\n- Fixed a logic error that said Corrupted Flash Mouths appear in Nalao Lake. They do not.\r\n- Fixed a crash introduced in 0.1.1 when finding a trap in a chest.\r\n- Fixed an issue where the Dangerous Time Limit option didn't actually function correctly due to a backwards `if` statement.\r\n- Changed a log of console writes to be marked as Debug. By default BepInEx's console logging doesn't display logs marked as Debug.\r\n- Chest Tracers now stay hidden upon opening a chest with them hidden.\r\n- Purchased items in the shop no longer try and send out a hint.\r\n- Added a way to autogenerate a template items.json file for any game in the Archipelago cache (by pressing F9 or Select on the connection menu).\r\n- Made chat messages show up in the game, with the ability to provide a custom icon for the player.\r\n- The game will now autocreate the custom directories on start up if they're not present.",
       "download_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/0.1.2/fp2.apworld",
       "has_manifest": false,
       "hash_sha256": "28ff4160caecbd137b7087d0ca2b59d489a4f20b83bc66eb86e0af2b087d9058",
+      "html_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/0.1.2",
       "size": 49820,
       "source_url": "https://api.github.com/repos/Knuxfan24/Freedom-Planet-2-Archipelago",
       "tag": "0.1.2",

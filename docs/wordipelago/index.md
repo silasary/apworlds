@@ -4,7 +4,7 @@ A brand new take on the world famous word guessing game.
 
 
 ## Downloads
-- <a href="https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.1_wordsearch-0.5.0/wordipelago.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/ProfDeCube/Archipelago/releases/download/1.0.2/wordipelago.apworld">Latest Version (1.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

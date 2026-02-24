@@ -7,9 +7,11 @@
   "versions": {
     "v1.0": {
       "created_at": "2025-07-22T00:20:37Z",
+      "description": "This is the first official release of the Pok\u00e9mon Black and White AP Manual.\r\n## Current Available Options\r\n### Two Goal Options\r\n- Defeat Ghetsis at N's Castle - The default goal where you collect eight Badges receive the game's credits (Longer goal ideal for Asyncs)\r\n- Defeat Cobalion at Mistralton Cave - A shorter goal that excludes all checks from Twist Mountain and beyond, where you collect four Badges and take down the Sword of Justice (Ideal for Syncs)\r\n### Other Options\r\n- Include NPC Items - Adds checks from all random NPCs that give items\r\n- Randomize Hidden Items - Adds checks for the hidden items found throughout the game\r\n- Require Dowsing MCHN - Makes it so you need to receive the Dowsing MCHN before you are logically required to pick up hidden items\r\n- Include Mistralton Cave Items - Adds Mistralton Cave checks to the pool. This option was added to improve the Cobalion goal by preventing you from having to go through the cave twice if this is set to \"false\"",
       "download_url": "https://github.com/Snifit57/BlackWhiteAPManual/releases/download/v1.0/manual_pokemonbw_snifit.apworld",
       "has_manifest": false,
       "hash_sha256": "bafde7b5a786f20fca45041ae9b9616e853eb746dd9f12c2a1b710b2627eb1e3",
+      "html_url": "https://github.com/Snifit57/BlackWhiteAPManual/releases/tag/v1.0",
       "size": 50390,
       "source_url": "https://api.github.com/repos/Snifit57/BlackWhiteAPManual",
       "tag": "v1.0",
@@ -19,9 +21,11 @@
     },
     "v2.0": {
       "created_at": "2025-08-29T20:11:37Z",
+      "description": "## Changelog\r\n\r\n\r\n### Added\r\n\r\n- New goal option `undella town - defeat cynthia` which requires you to defeat Ghetsis then confront Cynthia\r\n- New goal option `pokemon league - become champion` which requires you to defeat Ghetsis then collect all seven \"Sage's Wills\", arrest the scattered Sages and finally rebattle the Elite Four to become the Champion\r\n- All items that become accessable after defeating Ghetsis to the new goal options\r\n- New option `add_resort_pass` that can logically lock access to Desert Resort and Relic Castle behind receiving the new \"Resort Pass\" item\r\n- New option `require_flash` that can logically lock access to items in or through dark areas behind recieving \"TM70 Flash\"\r\n- New option `include_abyssal_ruins_items` that can shuffle items found in Abyssal Ruins into the pool (only works for the new goal options)\r\n- New items known as the \"Sage's Wills\" which are required Progression Items for the `pokemon league - become champion` goal\r\n- New item known as the \"Resort Pass\" that can be required to access Desert Resort and Relic Castle\r\n- New item known as the \"Machine Part\" that is needed to 'repair' the 'blackout' affecting the area from Marvelous Bridge to Route 14 and therefore logically gain access to that area\r\n- A bunch more miscellaneous Filler Items to make up for all the extra post-game location checks\r\n- A few new location checks added to existing areas\r\n\r\n### Fixes\r\n\r\n- Various logic mistakes have been corrected\r\n\r\n### New Logic Requirements\r\n\r\n- If the `add_resort_pass` option is on the Resort Pass is needed to access Desert Resort and Relic Castle\r\n- For the two post-game goals, `[EVENT] Defeat Elite Four` is needed to obtain item only accessable after defeating Ghetsis\r\n- HM03 Surf is needed to enter Giant Chasm\r\n- HM03 Surf and HM06 Dive are needed to enter Abyssal Ruins\r\n- The Machine Part is needed to access Marvelous Bridge, Route 15, Route 14, and Abundant Shrine\r\n- HM03 Surf and HM05 Waterfall are needed to access Abundant Shrine",
       "download_url": "https://github.com/Snifit57/BlackWhiteAPManual/releases/download/v2.0/manual_pokemonbw_snifit.apworld",
       "has_manifest": false,
       "hash_sha256": "6cad0ee1a06b6a72bb310828a2929765449fe75f268c223c62b40cd0207f82a8",
+      "html_url": "https://github.com/Snifit57/BlackWhiteAPManual/releases/tag/v2.0",
       "size": 54582,
       "source_url": "https://api.github.com/repos/Snifit57/BlackWhiteAPManual",
       "tag": "v2.0",

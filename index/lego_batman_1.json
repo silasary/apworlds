@@ -7,9 +7,11 @@
   "versions": {
     "v0.1.1-alpha": {
       "created_at": "2025-08-14T03:21:53Z",
+      "description": "This is instructions for the alpha test of Lego Batman: The Videogame for Archipelago multiworld randomizer made by ZAPaDASH04 and Jr (jr5768).\r\nWith assistance from:\r\n- Snolid Ice\r\n- Spencenox\r\n\r\nSpecial shout out to N00byKing for developing the client library to connect to the Archipelago Server and the other SM64 Devs for being an good example of its implementation\r\n\r\nThis alpha test is essentially a kits only test. A kit hunt if you will. All minikits are in the item pool. When you run the program it will run some setup for the sake of testing such as unlocking all levels, characters, suits, and red bricks to make the hunt faster.\r\n## Important Notes\r\n- You must use unmodified steam version of LEGO Batman: The Videogame\r\n- You will be using a 3rd party tool, a mod loader called Reloaded II, to run. Installation instructions are included in the instructions below.\r\n- Make sure to pay attention to which locations are sent to verify it sends the correct location. (check that kit locations aren't being missed or swapped)\r\n- debug messages are logged in a.txt (ours) and b.txt (ap's) both of which will be located in the LEGOBatman.exe folder.\r\n\r\n### Instructions\r\n\r\n#### Onetime Setup\r\n\r\n- Install [Reloaded II](https://reloaded-project.github.io/Reloaded-II/QuickStart)\r\n- Add lego batman either through setup or by clicking the + on the left. Must use the exe found in the legobatman folder of steam (LEGOBatman.exe).\r\n- If you don't already have the mod \"Reloaded II Server\", click the Download Mods button in the top left and search for \"Reloaded II Server\" made by Sewer56 and download it.\r\n- Navigate to the \"Mods\" folder in wherever you installed Reloaded II (usually desktop .\\Reloaded-II\\Mods)\r\n- Move the 2 folders \"legobatman1.apconnectsupport\" and \"legobatman1.apsupport\" into the Reloaded II Mods folder.\r\n- Reloaded should be setup now.\r\n- Lastly move APConnect.txt from this folder to be in the same folder as LEGOBatman.exe.\r\n  \r\n#### Setup AP game\r\n- Set up an AP game using the lego_batman_1.apworld (Alpha test is not intended for multiple players or serious games as currently there are no spheres or logic. You can play multiple games if you wish.)\r\n\r\n- Open the APConnect.txt file (should be in the same folder as LEGOBatman.exe) and add the AP info. follow instructions on the first line.\r\n- Run lego batman (tested methods: through steam, directly through the LEGOBatman.exe, or using DXWND).\r\n- Make a new game and **EXIT THE LEVEL**. If you already have an AP game then just load the save.\r\n- Once in the hub go to Reloaded II and click lego batman on the left side.\r\n- In \"Configure Mods\" enable only \"Reloaded II Server\" and \"LB1 Archipelago\" (Enabled mods have a red plus and disabled mods, if any, have a grey minus). LB1 Client Connector should be a filled red box.\r\n- In the bottom left, under Processes there should be process to select.\r\n- There should now be an inject button click it and switch back to the game.\r\n- Check that a message appeared in the hint box indicating that the program connected.\r\n- Check the AP game webpage to see that you have connected.\r\n- Get those kits!",
       "download_url": "https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/download/v0.1.1-alpha/lego_batman_1.apworld",
       "has_manifest": false,
       "hash_sha256": "ba943f2995d0f7c72f39c5e19b6c1ba593c3ddfb1b4a510848fb196e4d03cbea",
+      "html_url": "https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v0.1.1-alpha",
       "size": 14153,
       "source_url": "https://api.github.com/repos/ZAPaDASH04/LEGO-Batman-APworld",
       "tag": "v0.1.1-alpha",
@@ -19,9 +21,11 @@
     },
     "v0.1.2-alpha": {
       "created_at": "2025-08-21T22:57:25Z",
+      "description": "## Optional Hotfix\r\n\r\nThis is an optional APworld update. If you have an existing game, updating is optional. Specific changes are:\r\n- Fixed issue where regions were being added to the multiworld twice\r\n- Renamed \"A Surprise for the Commissioner: Minikit 9 - Park 3 Cars\" to \"A Surprise for the Commissioner: Minikit 9 - Park 4 Trucks\"",
       "download_url": "https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/download/v0.1.2-alpha/lego_batman_1.apworld",
       "has_manifest": false,
       "hash_sha256": "09df6f5f0ab5b97e30cf670d71c57c598d6a803ad0f4d41c9bba6f25940d7ddf",
+      "html_url": "https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v0.1.2-alpha",
       "size": 64083,
       "source_url": "https://api.github.com/repos/ZAPaDASH04/LEGO-Batman-APworld",
       "tag": "v0.1.2-alpha",
@@ -31,9 +35,11 @@
     },
     "v0.2.0-alpha": {
       "created_at": "2025-09-26T18:11:23Z",
+      "description": "This release includes the following updates:\r\n- New YAML Options:\r\n    - New Win Con - Levels Beaten.\r\n    - Number of Minikits & Levels Beaten are customizable. Minimum is 5 levels worth.\r\n    - Minikit Sanity can be turned off (if Minikits are NOT your wincon).\r\n    - True Status Sanity can be turned off.\r\n    - Choose between unlocking only story mode or both story and freeplay mode.\r\n    - All major items & locations are grouped.\r\n        - This means you can junk a whole level or hint a Level.",
       "download_url": "https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/download/v0.2.0-alpha/lego_batman_1.apworld",
       "has_manifest": true,
       "hash_sha256": "66c06aa9db0d6ee1b7ee5f63b437a1f67cca233adeff86f7bb78019305674409",
+      "html_url": "https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v0.2.0-alpha",
       "size": 18566,
       "source_url": "https://api.github.com/repos/ZAPaDASH04/LEGO-Batman-APworld",
       "tag": "v0.2.0-alpha",

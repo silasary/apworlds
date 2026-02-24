@@ -11,9 +11,11 @@
   "versions": {
     "phst-0.0.3": {
       "created_at": "2025-12-02T18:51:32Z",
+      "description": "Mainly fixes in this version:\r\n- Tech shuffling now properly assigns _all_ possible techs instead of leaving some out\r\n- Having the `RECORDER` at odd times shouldn't cause conversations loops at the Central Tower anymore\r\n\r\nBut one added feature:\r\n- `randomise_techs` is now a choice of Vanilla, Shuffle and 'Sensible Shuffle'\r\n  - Sensible Shuffle performs Shuffle then sorts them by relative strength, so you should get weaker techs earlier",
       "download_url": "https://github.com/lagdotcom/Archipelago/releases/download/phst-0.0.3/phantasy_star_2.apworld",
       "has_manifest": true,
       "hash_sha256": "790f6be4c8a43e73455f293d55bfafc63c589e4cc5a4476b9f33d4a3c7f89971",
+      "html_url": "https://github.com/lagdotcom/Archipelago/releases/tag/phst-0.0.3",
       "minimum_ap_version": "0.6.1",
       "size": 31407,
       "source_url": "https://api.github.com/repos/lagdotcom/Archipelago",
@@ -24,9 +26,11 @@
     },
     "phst2-0.0.1": {
       "created_at": "2025-11-28T17:34:08Z",
+      "description": "It's Phantasy Star II! You'll need a dump of the U/E REV02 version as base ROM. This works like every other BizHawk APWorld.\r\n\r\nCurrent options:\r\n- **goal**: Mother Brain or Neifirst.\r\n- **item_distribution**: Shuffle items from the vanilla game or randomly pick them from useful/filler lists.\r\n- **useful_items**: Affects the random mode above; choose how many items will be from the useful list.\r\n- **xp_multi/meseta_multi**: Speed up your playthrough! If you set these too high, you might hit overflows, but nothing should explode.\r\n\r\n**What gets randomised?** Every item in chests and given by events.\r\n\r\n**What happens when I receive an item?** It will go in the first empty inventory slot in your current party. If there's no room, you'll get a message on the bottom of the screen.\r\n\r\n**Known issues**\r\n- Don't give yourself a `Recorder` before you've watched the opening scenes.\r\n- You can't `!getitem` for quest flags (like having the Jet Scooter) yet. I'll figure it out.\r\n- Recruiting Hugh/Anna/Kain/Shir can be annoying if your rando doesn't give you enough `Dynamite` early on. Persevere and try to keep Nei for as long as possible.\r\n\r\n**Future things**\r\n- QoL options like no flashing, faster movement...\r\n- Smarter 'random' item picking based on tier/character...\r\n- Shuffle quest flags? Shop inventories?\r\n- 'Free Enterprise' mode where you start with the Jet Scooter and Spaceship?\r\n- Change what Shir steals from shops?\r\n\r\nI'm eager to hear about your playthroughs and any requests that come to mind!",
       "download_url": "https://github.com/lagdotcom/Archipelago/releases/download/phst2-0.0.1/phantasy_star_2.apworld",
       "has_manifest": true,
       "hash_sha256": "4d5e6abf388b77f2e751b2e5d0c49d76d53f3e0fdc4abd51e813663c73f6196c",
+      "html_url": "https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.0.1",
       "minimum_ap_version": "0.6.1",
       "size": 23081,
       "source_url": "https://api.github.com/repos/lagdotcom/Archipelago",
@@ -37,9 +41,11 @@
     },
     "phst2-0.0.2": {
       "created_at": "2025-11-30T21:47:09Z",
+      "description": "New options for you to play with:\r\n- **starting_meseta**: Give yourself more cash. Or less!\r\n- **randomise_techs**: Techs are shuffled between all characters. Note that this might make a person know `RES` in a battle without knowing how to use it out of battle, and vice-versa.\r\n- **encounter_rate**: Fed up with fighting every four steps? Make it eight!\r\n- **movement_speed**: Proceed at greater than snail's pace!",
       "download_url": "https://github.com/lagdotcom/Archipelago/releases/download/phst2-0.0.2/phantasy_star_2.apworld",
       "has_manifest": true,
       "hash_sha256": "7b523662ff5128b25f018c71cdba7636109a602d2e0d0fbf5f9182efd018d89e",
+      "html_url": "https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.0.2",
       "minimum_ap_version": "0.6.1",
       "size": 27003,
       "source_url": "https://api.github.com/repos/lagdotcom/Archipelago",
@@ -50,9 +56,11 @@
     },
     "phst2-0.1.0": {
       "created_at": "2025-12-13T12:01:56Z",
+      "description": "It's a new release! Why did I bump the minor version? Decide for yourself:\r\n- Jet Scooter Unlock, Spaceship Unlock and all four dam key cards are no longer fixed in place. You can find them anywhere!\r\n  - You will have to activate the Gaira Control Panel twice; once to get the check, then again to get the normal cutscene and leave.\r\n- Receiving an item from another player will give you an emulator message, like \"Rolf received item: Dynamite\".\r\n- Garbage should no longer mess up the inventory when you find it.\r\n- Logic update: Defeating Neifirst is now only required for getting into Control Tower. Go defeat Dark Force with Nei in your party, she doesn't mind.\r\n- Lowered SHU and SASHU ratings in 'Sensible Shuffle' mode because they suck.\r\n\r\nKnown issues:\r\n- If you finish Gaira before handing in the Recorder, the cutscene will walk you to the Central Tower and you'll get the intro text again, complete with being walked back to Rolf's house and having your party reset to Rolf and Nei. No progress is lost, it just looks silly.",
       "download_url": "https://github.com/lagdotcom/Archipelago/releases/download/phst2-0.1.0/phantasy_star_2.apworld",
       "has_manifest": true,
       "hash_sha256": "c38d1c87c10c6d4687e24d762d5e4801451b471236f24398f828abf2507e51d2",
+      "html_url": "https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.0",
       "minimum_ap_version": "0.6.1",
       "size": 36366,
       "source_url": "https://api.github.com/repos/lagdotcom/Archipelago",

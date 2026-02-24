@@ -11,9 +11,11 @@
   "versions": {
     "v0.1.0": {
       "created_at": "2026-01-16T20:59:03Z",
+      "description": "This is the first playable build for Crash 2 (PAL)\r\nThere are currently no customization options beyond the default template\r\nThe randomization logic assumes you are able to perform speed-run skips (i.e. red gem early, road to ruin box gem early, ruination green gem path without green gem)\r\n\r\n**Checks:**\r\n\r\n- All 25 crystals\r\n- All 42 clear/colored gems\r\n- All 27 level exits + 5 secret exits\r\n- All bosses (excluding Cortex)\r\n\r\n**Item Pool:**\r\n\r\n- 25 crystals (used to unlock the next warp room / boss)\r\n- 37 clear gems (does nothing)\r\n- 5 colored gems (used to unlock colored gem platforms)\r\n- lives (filler item)\r\n\r\n**Goal:**\r\n\r\n- Defeat Dr. Neo Cortex\r\n\r\n**Features:**\r\n\r\n- View your item inventory with the in-game pause menu\r\n- Completed crystal/gem checks show up in the warp room\r\n- Connecting syncs your progress, so if the game crashes you can always start a new save, re-open the client, and connect\r\n\r\n**Known Issues:**\r\n\r\n- Re-opening the client and connecting to a game that was connected crashes the game\r\n- Connecting, then loading a state where the game wasn't connected, and then reconnecting crashes the game",
       "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.1.0/crash2.apworld",
       "has_manifest": true,
       "hash_sha256": "4f13d71a67b1af7743bb73a5ebb64eea151915fe383fe8b4fd3c7a43a0f154d7",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.1.0",
       "minimum_ap_version": "0.6.5",
       "size": 15496,
       "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
@@ -24,9 +26,11 @@
     },
     "v0.1.1": {
       "created_at": "2026-01-19T23:54:58Z",
+      "description": "Note: When playing make sure DuckStation is on Interpreter mode\r\n\r\n## Changes:\r\n\r\n**Bug Fixes:**\r\n- Game should now never crash when clicking connect in the client\r\n- Fixed logic so that it acknowledges locked secret entrances\r\n- There are definitely no bugs introduced in this release*\r\n\r\nThere are now options!\r\n\r\n**Options:**\r\n- Toggle level exit checks\r\n- Add extra crystals to the item pool\r\n- Toggle if speedrun skips are in logic\r\n- Chance for filler lives to instead be a single wumpa fruit\r\n\r\n**New Checks:**\r\n- Warp room polar lives secret\r\n\r\n**New Items:**\r\n- Singular wumpa fruit\r\n\r\n\r\n**Known Issues:**\r\n- The version of Archipelago Core that this release uses can rarely desync and delete a received item\r\n\r\nAlso I updated the readme so that it has the correct game and instructions\r\n\r\n(*until you find them, that is)",
       "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.1.1/crash2.apworld",
       "has_manifest": true,
       "hash_sha256": "a7572f6778a5b4b5fabf9bd6269100a8549cf5f91b15a9106a3bdf46c27ef329",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.1.1",
       "minimum_ap_version": "0.6.5",
       "size": 17752,
       "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
@@ -37,9 +41,11 @@
     },
     "v0.2.0": {
       "created_at": "2026-02-12T19:45:06Z",
+      "description": "Note: When playing make sure DuckStation is on Interpreter mode\r\n\r\n## Changes:\r\n**Bug Fixes:**\r\n- This release was updated to use different version of AP core to fix the game-state from rarely de-syncing \r\n- Fixed a lot of bugs found in v0.2.0-pre\r\n\r\n**New Checks:**\r\n- Option to enable wumpa fruit checks (a.k.a. fruit sanity)\r\n  - Can choose to make each individual wumpa fruit a check, or to have wumpa fruit \"bundles\" to reduce check spam\r\n  - Adds a total of 2393 wumpa checks, or 404 bundle checks\r\n  - Wumpas found inside of crates are not counted\r\n\r\n**Known Issues:**\r\n- Nothing :)\r\n  - Well technically reconnecting on a new save will not give you back opened secret entrances and credit for defeating specifically Komodo Bros, but who asked",
       "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.2.0/crash2.apworld",
       "has_manifest": true,
       "hash_sha256": "23f112f52aa41f74f6604307c62a4130d1373c0bdd0ec019f029fbcbc36a2e4d",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.2.0",
       "minimum_ap_version": "0.6.5",
       "size": 36451,
       "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
@@ -50,9 +56,11 @@
     },
     "v0.2.0-pre": {
       "created_at": "2026-02-04T02:23:46Z",
+      "description": "Note: the fruit sanity option is meant for demo purposes only\r\n\r\n## Changes:\r\n\r\n**Bug Fixes:**\r\n- This release was updated to use different version of AP core to fix the Gamestate from rarely de-syncing (probably)\r\n  - This potentially broke some things since I re-worked a lot of the item/location code\r\n\r\n**New Checks:**\r\n- Option to enable wumpa fruit checks (a.k.a. fruit sanity)\r\n  - Can choose to make each wumpa fruit a check, or to have wumpa fruit \"bundles\" to reduce check spam\r\n  - This pre release **ONLY** adds wumpa checks to the first warp room\r\n\r\n**Known Issues:**\r\n- Individual wumpa checks show up with broken names in the client\r\n- Because fruit sanity currently only applies to the first 5 levels, the concentration of items is very front heavy\r\n- Connecting doesn't sync already found locations, which it does in v0.1.1",
       "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.2.0-pre/crash2.apworld",
       "has_manifest": true,
       "hash_sha256": "4c2fc907c06c53b26fa94a47e467784b2a4b28bc99bb9379b6412af76e89f60e",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.2.0-pre",
       "minimum_ap_version": "0.6.5",
       "prerelease": true,
       "size": 19922,

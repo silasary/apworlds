@@ -10,9 +10,11 @@
   "versions": {
     "v0.3.1": {
       "created_at": "2025-11-07T21:05:37Z",
+      "description": "First revision to the third major release of the Haste Archipelago\r\n\r\nYou will need to subscribe to and enable the [Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3462307025) on Steam.\r\n\r\n## Bugfixes\r\n- Fixed the \"Ability Purchases\" location group being nonfunctional\r\n- Fixed some overlapping location IDs\r\n- Stopped shop/fragmentsanity regions from being created if they were going to be empty anyway (since their corresponding Event to unlock said region would never be created)\r\n\r\n## Known Issues\r\n- The in-game text hints for Captain's Upgrades don't update until their buttons are hovered over (except the upgrade for Max Lives, which *does* update immediately for some reason)\r\n- When a shop has multiple AP Items, if you purchase the left-most AP Item first, the rightmost AP is purchased at the leftmost's price\r\n- The in-game notification for important items doesn't like appearing in shops and also is deleted upon loading the end-of-fragment rank screen (which is really annoying for fragmentsanity checks)",
       "download_url": "https://github.com/WritingHusky/haste_apworld/releases/download/v0.3.1/haste.apworld",
       "has_manifest": true,
       "hash_sha256": "71d3b4c09274ff16c640bde0ae1ad1bc7fea76c14447409885e94e9fd2e19840",
+      "html_url": "https://github.com/WritingHusky/haste_apworld/releases/tag/v0.3.1",
       "size": 26302,
       "source_url": "https://api.github.com/repos/WritingHusky/haste_apworld",
       "tag": "v0.3.1",
@@ -22,9 +24,11 @@
     },
     "v0.3.2": {
       "created_at": "2025-11-09T23:22:46Z",
+      "description": "Second revision to the third major release of the Haste Archipelago\r\n\r\nYou will need to subscribe to and enable the [Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3462307025) on Steam.\r\n\r\n## Bugfixes\r\n- Fixed issue where a lower Shard Goal could cause fill issues when trying to create locations for the Weeboh and Flopsy costume purchases\r\n- Added conditions within generate_early to preemptively stop seeds that would be too restrictive to generate consistently or generate at all\r\n- Fixed internal issue where the Menu region was added twice\r\n- Fixed some numeral regions still being created unnecessarily even after I asked them not to last update\r\n\r\n## Known Issues\r\n- The in-game text hints for Captain's Upgrades don't update until their buttons are hovered over (except the upgrade for Max Lives, which *does* update immediately for some reason)\r\n- When a shop has multiple AP Items, if you purchase the left-most AP Item first, the rightmost AP is purchased at the leftmost's price\r\n- The in-game notification for important items doesn't like appearing in shops and also is deleted upon loading the end-of-fragment rank screen (which is really annoying for Fragmentsanity checks)",
       "download_url": "https://github.com/WritingHusky/haste_apworld/releases/download/v0.3.2/haste.apworld",
       "has_manifest": true,
       "hash_sha256": "cdb70a20e7ec3e25a3a999fd87b3771e0f5a33d8a02e5f318a1ed3050f46cf03",
+      "html_url": "https://github.com/WritingHusky/haste_apworld/releases/tag/v0.3.2",
       "size": 26991,
       "source_url": "https://api.github.com/repos/WritingHusky/haste_apworld",
       "tag": "v0.3.2",
@@ -34,9 +38,11 @@
     },
     "v0.4.0": {
       "created_at": "2026-02-03T23:35:04Z",
+      "description": "The fourth major release of the Haste Archipelago\r\n\r\nYou will need to subscribe to and enable the [Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3462307025) on Steam.\r\n\r\n## New YAML Features\r\n- **Starting Ability** allows you to choose one of the 4 abilities to start with... or start with no ability at all!\r\n- **Persistent Items** will add items that will be granted to you at the start of a Shard\r\n  - Each item is broken down by rarity and category, and a new item *from your unlocked items* is selected on each Shard\r\n  - The quantity of each rarity/category combination can be set independently\r\n  - The item categories can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ItemCategories.md)\r\n- *We got traps now*. They will apply at the start of the next Fragment, and last until either the Fragment is cleared or you die, whichever happens first\r\n  - **Disaster Traps** will activate the Level 1 effects (lava flowers & health loss when slow)\r\n  - **Landing Downgrade Traps** will downgrade any landing you make (Perfect -> Good, Good -> Ok, Ok -> Bad)\r\n- **Extra Shards** will add extra Progressive Shards to the pool to add a buffer to any Shard Goal setting\r\n  - **Remove Post-Victory Locations** has been changed to now *only* give you enough Progressive Shards to access you goal, instead of there always being 9 of them\r\n\r\n## Bugfixes\r\n- Added a comical amount of version checks to prevent future issues where old savedata caused new seeds to bug out\r\n- Added last-resort console commands to help unstuck bugged Shop/Fragmentsanity data\r\n  - The list of console commands can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ConsoleCommands.md)\r\n- Fixed issues where attempting to load a new save wouldn't kill any existing connections if they somehow weren't closed prior (Final Machine)\r\n- Fixed various issues regarding the unlock and logic conditions with the Flopsy and Weeboh costumes\r\n- Fixed issue where the default costumes would not be unlocked under certain circumstances\r\n- Fixed issue where the Shard 1 location group also included Shard 10\r\n- Fixed the vanilla bug where a shop with duplicate items will let you buy the rightmost item at the leftmost's price\r\n- Fixed visual issues with the Item notification and Captain purchases caused by the Haste 1.8.0 update\r\n- Fixed issue where Force Reloading from some NPC conversations softlocked the player\r\n- Fixed issue where starting_inventory could cause desyncs with the internal ExpectedIndex, resulting in duplicate items\r\n- Fixed issue where the Max Lives item wouldn't actually grant an extra life (because it's coded weirdly in vanilla)\r\n- Changed the default hostname to `archipelago.gg` instead of localhost",
       "download_url": "https://github.com/WritingHusky/haste_apworld/releases/download/v0.4.0/haste.apworld",
       "has_manifest": true,
       "hash_sha256": "0500ff1d241f5012bcd890765725f919f3ed772444f75a10def012740a977299",
+      "html_url": "https://github.com/WritingHusky/haste_apworld/releases/tag/v0.4.0",
       "size": 35176,
       "source_url": "https://api.github.com/repos/WritingHusky/haste_apworld",
       "tag": "v0.4.0",

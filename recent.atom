@@ -2,111 +2,264 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-02-24T03:38:57.443950+00:00</updated>
+  <updated>2026-02-24T04:44:53.166257+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/asdfwyay/APBuckshot/releases/download/v0.1.2/buckshot.apworld</id>
-    <title>Buckshot Roulette v0.1.2</title>
-    <updated>2026-02-21T03:00:46+00:00</updated>
-    <author>
-      <name>asdfwyay</name>
-    </author>
-    <content/>
-    <link href="https://github.com/asdfwyay/APBuckshot/releases/download/v0.1.2/buckshot.apworld"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.2a/tje.apworld</id>
-    <title>ToeJam and Earl v0.4.2a0</title>
-    <updated>2026-02-21T04:15:07+00:00</updated>
-    <content/>
-    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.2a/tje.apworld"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v0.4.2/PokemonStadium.apworld</id>
-    <title>Pokemon Stadium v0.4.2</title>
-    <updated>2026-02-21T06:49:55+00:00</updated>
-    <content/>
-    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v0.4.2/PokemonStadium.apworld"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SephDB/SBURBelago/releases/download/v2.1.0/sburbelago.apworld</id>
-    <title>SBURBelago v2.1.0</title>
-    <updated>2026-02-21T10:32:10+00:00</updated>
-    <content/>
-    <link href="https://github.com/SephDB/SBURBelago/releases/download/v2.1.0/sburbelago.apworld"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dannybonz/replanted_archipelago/releases/download/v1.5.1/pvzr.apworld</id>
+    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.5.1</id>
     <title>Plants vs. Zombies: Replanted v1.5.1</title>
     <updated>2026-02-21T12:38:12+00:00</updated>
-    <content/>
-    <link href="https://github.com/dannybonz/replanted_archipelago/releases/download/v1.5.1/pvzr.apworld"/>
+    <content>- Conveyor randomisation on "Little Zombie" levels is now guaranteed to provide at least one type of explosive plant.&#13;
+- Balloon Zombie can no longer appear in Wall-nut Bowling levels.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.5.1"/>
   </entry>
   <entry>
-    <id>https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.4.0/yayarg.apworld</id>
+    <id>https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.4.0</id>
     <title>YAYARG v2.4.0</title>
     <updated>2026-02-21T15:37:52+00:00</updated>
-    <content/>
-    <link href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.4.0/yayarg.apworld"/>
+    <content>## Yet Another YARG AP V2.4.0&#13;
+### APWorld Changes&#13;
+- New Song Pool settings: `Min Time` and `Max Time`. Lets you define the minimum and maximum song length (in seconds) allowed in the pool.&#13;
+- New setting: `Song Pack Percentage`. Choose what percentage of songs unlock as part of a song pack instead of the previous all-or-nothing behavior.&#13;
+- New setting: `Extra Song Unlock Percentage`. Adds a second copy of a percentage of your song unlock items to the pool.&#13;
+- New *experimental* setting `Max Setlist Time`: Limits total setlist duration; removes songs until the total time is at or below the configured maximum.&#13;
+  - Must be added to the yaml and configured manually; can easily cause generation issues if not used carefully.&#13;
+- The selected goal song has been added to the spoiler log.&#13;
+- The spoiler log now lists what songs are unlocked from each song pack.&#13;
+- The base YARG setlist now always loads into the APWorld allowing unit tests and fuzzer runs pass properly.&#13;
+- Fix: Prevent song distribution from stealing plando’d goal songs or pool inclusions to fill other pools.&#13;
+- Fix: The `YAYARG Song Data` folder is now always created when the world is loaded.&#13;
+- Fix: No longer create locations and items for for songs on instruments they don't have charts for.&#13;
+&#13;
+### Client Changes&#13;
+- Add a soft Song cap of 500 to the YAML creator. This can be bypassed, but will warn of issues with larger song list.&#13;
+- The keybind to open the connection window can now be remapped in the BepInEx config &#13;
+  - installation/BepInEx/config/thedrummonger.yarg.archipelago.cfg&#13;
+- Increased arbitrary setting caps in the YAML Creator to match APWorld limits.&#13;
+- The client will now refuse to connect to worlds generated with a different version.&#13;
+- Added a toggle to set what triggers a death link (client only toggle for now, no yaml setting) (#2) @ihavespoons&#13;
+- Fix: Restart Trap crash (hopefully for real this time).&#13;
+- Fix: Reload the song library on disconnect to remove AP headers.&#13;
+- Fix: Clamp any songs with negative intensity values to 0. Should fix Guitar Hero 1 - 3 exports not being recognized as valid songs.&#13;
+- Fix: Connection no longer blocks the game tread (#1) @alexkibler&#13;
+&#13;
+Tested against [YARG nightly b3525](https://github.com/YARC-Official/YARG-Bleedingedge/releases/tag/b3525)&#13;
+***Newer version may be incompatible.***&#13;
+&#13;
+#### ⚠️ Warning!&#13;
+You **must** regenerate your song export list by rescanning your songs in YARG after installing the new plugin for this release.  &#13;
+It’s also recommended to delete and fully replace any older versions of the YAML Creator and its cache file.&#13;
+&#13;
+If you don’t, world generation **will** fail.&#13;
+&#13;
+This version is **not compatible with older worlds.**&#13;
+&#13;
+Setup Guide:&#13;
+https://github.com/Thedrummonger/Archipelago/blob/YARGV2/worlds/yayarg/docs/guide_en.md</content>
+    <link href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.4.0"/>
   </entry>
   <entry>
-    <id>https://github.com/SDMichaud/Archipelago-MGS/releases/download/v0.7.0/mgs.apworld</id>
+    <id>https://github.com/SDMichaud/Archipelago-MGS/releases/tag/v0.7.0</id>
     <title>Metal Gear Solid v0.7.0</title>
     <updated>2026-02-21T17:30:01+00:00</updated>
-    <content/>
-    <link href="https://github.com/SDMichaud/Archipelago-MGS/releases/download/v0.7.0/mgs.apworld"/>
+    <content>## Version 0.7.0 - First Release!&#13;
+&#13;
+### Install&#13;
+Follow the Archipelago instructions for [Playing with custom worlds](https://archipelago.gg/tutorial/Archipelago/setup_en#playing-with-custom-worlds).  &#13;
+Afterwards, ensure you select [Generate Template Options](https://archipelago.gg/tutorial/Archipelago/setup_en#creating-a-yaml) from the Archipelago Launcher to generate a default Metal Gear Solid YAML option file for editing.&#13;
+&#13;
+### Setup&#13;
+The Setup guide for this Archipelago mod can be found [here](https://github.com/SDMichaud/Archipelago-MGS/blob/main/worlds/mgs/docs/setup_en.md).&#13;
+&#13;
+### </content>
+    <link href="https://github.com/SDMichaud/Archipelago-MGS/releases/tag/v0.7.0"/>
   </entry>
   <entry>
-    <id>https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.5/ss.apworld</id>
+    <id>https://github.com/Battlecats59/SS_APWorld/releases/tag/v0.5.5</id>
     <title>Skyward Sword v0.5.5</title>
     <updated>2026-02-21T17:35:19+00:00</updated>
-    <content/>
-    <link href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.5/ss.apworld"/>
+    <content>## v0.5.5 [Alpha]&#13;
+&#13;
+This version is only compatible with Archipelago 0.6.5 or greater!!&#13;
+&#13;
+Report any issues to the Skyward Sword channel under custom worlds in the AP discord server.&#13;
+&#13;
+For setup instructions, visit [the SS AP Setup Guide](https://github.com/Battlecats59/SSArchipelago/blob/ss/worlds/ss/docs/setup_en.md).&#13;
+&#13;
+## What has changed? (v0.5.5)&#13;
+- Logic revamp, no longer using eval() function, which brings us closer to core eligibility&#13;
+- Updated setup guide - new tutorial video by bcats&#13;
+- Fixed client connection bug regarding hints ( by Harmjan387 - see [#42](https://github.com/Battlecats59/SSArchipelago/pull/42) )&#13;
+- Fixed logic bug regarding Eldin starting statues ( by bcats - see [this commit](https://github.com/Battlecats59/SSArchipelago/commit/52d7a057c3b80d911d79de70e4e6d53681d65ff9) )&#13;
+&#13;
+## What has changed? (v0.5.4)&#13;
+- WII CONSOLE SUPPORT! ( by YourAverageLink - see [#27](https://github.com/battlecats59/SSArchipelago/pull/27) )&#13;
+  - For more info, see [setting up your wii console](https://github.com/YourAverageLink/SSArchipelago/blob/console-socket/worlds/ss/docs/setup_en.md#setting-up-your-client-wii-console) in the SSAP Setup Guide&#13;
+- Fixed an issue with generation failure in AP 0.6.5 ( by Harmjan387 - see [#31](https://github.com/Battlecats59/SSArchipelago/pull/31) )&#13;
+- Fixed an issue with the lumpy pumpkin chandelier send flag ( by Harmjan387 - see [#32](https://github.com/Battlecats59/SSArchipelago/pull/32) )&#13;
+- Fixed an issue with death link on console ( by YourAverageLink - see [#34](https://github.com/Battlecats59/SSArchipelago/pull/34) )&#13;
+- Added Goddess cube autotracking (by Harmjan387 and YourAverageLink - see [#33](https://github.com/Battlecats59/SSArchipelago/pull/33) )&#13;
+- Added console auto-reconnect ( by YourAverageLink - see [#37](https://github.com/Battlecats59/SSArchipelago/pull/37) )&#13;
+&#13;
+## What has changed? (v0.5.3)&#13;
+- Added a client command to toggle deathlink mid-game ( by Harmjan 387 - see [#29](https://github.com/Battlecats59/SSArchipelago/pull/29) )&#13;
+- Fixed plando items breaking generation ( by Harmjan 387 - see [#29](https://github.com/Battlecats59/SSArchipelago/pull/29) )&#13;
+&#13;
+## What has changed? (v0.5.2)&#13;
+- Several fixes for generation errors ( by Harmjan387 - see [#24](https://github.com/Battlecats59/SSArchipelago/pull/24), [#25](https://github.com/Battlecats59/SSArchipelago/pull/25), and [#26](https://github.com/Battlecats59/SSArchipelago/pull/26) )&#13;
+- Completion condition fix ( by LelouBil - see [#22](https://github.com/Battlecats59/SSArchipelago/pull/22) )&#13;
+- Shuffled Batreaux Counts ( by Battlecats59 - see [#19](https://github.com/Battlecats59/SSArchipelago/pull/19) )&#13;
+  - Options including vanilla (5-80), half (2-40), random (1-80), random-high (30-80), and random-low (1-50)&#13;
+    - Batreaux check names are changed to contain the required amount of crystals. Kukiel will also appear in Batreaux's house, telling you what the shuffled crystal counts are.&#13;
+  - Batreaux progression option is now a range 0-7, which will determine how many of Batreaux's rewards can possibly contain progression items.&#13;
+    - If set to 0, no Batreaux rewards can contain progression items.&#13;
+    - If set to 7, all Batreaux rewards could contain progression items.&#13;
+    - If set to any number (n) between 0 and 7, then the first (n) rewards could contain progression items, and the highest rewards will not contain progression items.&#13;
+- Print client messages in-game ( by YourAverageLink - see [#21](https://github.com/Battlecats59/SSArchipelago/pull/21) )&#13;
+  - A cosmetic option has been added to the patcher to allow client messages in-game to be turned on or off before iso generation.&#13;
+  - If turned on, client messages will be printed in-game in the bottom left corner of the screen.&#13;
+- Fix for incorrect hints ( by Harmjan387 - see [issue #22](https://github.com/Battlecats59/SS_APWorld/issues/22) and [PR #28](https://github.com/Battlecats59/SSArchipelago/pull/28) )&#13;
+- Separate option for Lanayru Caves Small Key - moved away from dungeon small keys&#13;
+  - New option has choices "Start With", "Caves", "Lanayru", and "Anywhere". All options will ensure that you will not be locked out of sand sea / lanayru desert / and so on, no matter where your starting statue or entrance is.&#13;
+- APWorld is now auto-generated by a github workflow, like the patcher build is.&#13;
+- Added an icon to the Skyward Sword client on the Archipelago launcher&#13;
+- Fix for APPlayerContainer issue in AP 0.6.2&#13;
+- Update to AP 0.6.2&#13;
+&#13;
+## What has changed? (v0.5.1)&#13;
+- Fixes for issues during seed generation: #20 &#13;
+- Logic fixes&#13;
+- Update to AP 0.6.1&#13;
+&#13;
+## What has changed? (v0.5.0)&#13;
+- Logic has been rewritten to support entrance randomization. There will likely be logic bugs floating around, some may not have a significant impact while some may end your run. Hence, **use at your own risk!**&#13;
+- Random starting statues and random starting entrance options are now fully supported.&#13;
+- The itempool generation has been changed significantly, fixing several bugs regarding starting items and item placements. Although it is unlikely, there may be bugs that were created as a result.&#13;
+- Single crystals have been added as AP-recognized checks, however they will remain as single gratitude crystals for the time being. In the future, these checks may be randomized, for now they have been added to support single crystal logic.&#13;
+- Code has been cleaned up.&#13;
+&#13;
+gl, hf! -bcats&#13;
+&#13;
+### Downloads:&#13;
+&#13;
+[RECOMMENDED] The zip file containing the apworld, YAML, and setup guides (ss_apworld-v0.5.5.zip)&#13;
+[RECOMMENDED] The patcher build (SS_APPatcher-v0.5.5.zip)&#13;
+&#13;
+The apworld file (ss.apworld)&#13;
+The template YAML file (Skyward.Sword.yaml)&#13;
+*The above two files are contained in the first zip, and do not need to be downloaded if you download the apworld zip*</content>
+    <link href="https://github.com/Battlecats59/SS_APWorld/releases/tag/v0.5.5"/>
   </entry>
   <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21/YARGRockBand3.apworld</id>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21</id>
     <title>YARGRockBand3 v26.2.21</title>
     <updated>2026-02-21T19:15:41+00:00</updated>
-    <content/>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21/YARGRockBand3.apworld"/>
+    <content>New apworld featuring the Rock Band 3 setllist.&#13;
+&#13;
+New apworld combining the Guitar Hero 1, Rock Band 3, and YARG setlists.&#13;
+&#13;
+Updates to the Guitar Hero 1 apworld are mostly backend changes to maintain compatibility going forward.&#13;
+&#13;
+A tutorial for ripping songs or verifying existing rips has been provided in the Github readme.&#13;
+&#13;
+If you previously had rips that worked with the version 1 of the Guitar Hero 1 apworld, they may no longer be compatible. However, they are relatively easy to fix. Refer to the guide on metadata in the Github readme.</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21"/>
   </entry>
   <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21/YARGGuitarHero1.apworld</id>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21</id>
     <title>YARGGuitarHero1 v26.2.21</title>
     <updated>2026-02-21T19:15:41+00:00</updated>
-    <content/>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21/YARGGuitarHero1.apworld"/>
+    <content>New apworld featuring the Rock Band 3 setllist.&#13;
+&#13;
+New apworld combining the Guitar Hero 1, Rock Band 3, and YARG setlists.&#13;
+&#13;
+Updates to the Guitar Hero 1 apworld are mostly backend changes to maintain compatibility going forward.&#13;
+&#13;
+A tutorial for ripping songs or verifying existing rips has been provided in the Github readme.&#13;
+&#13;
+If you previously had rips that worked with the version 1 of the Guitar Hero 1 apworld, they may no longer be compatible. However, they are relatively easy to fix. Refer to the guide on metadata in the Github readme.</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21"/>
   </entry>
   <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21/YARGAllSetlists.apworld</id>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21</id>
     <title>YARGAllSetlists v26.2.21</title>
     <updated>2026-02-21T19:15:41+00:00</updated>
-    <content/>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21/YARGAllSetlists.apworld"/>
+    <content>New apworld featuring the Rock Band 3 setllist.&#13;
+&#13;
+New apworld combining the Guitar Hero 1, Rock Band 3, and YARG setlists.&#13;
+&#13;
+Updates to the Guitar Hero 1 apworld are mostly backend changes to maintain compatibility going forward.&#13;
+&#13;
+A tutorial for ripping songs or verifying existing rips has been provided in the Github readme.&#13;
+&#13;
+If you previously had rips that worked with the version 1 of the Guitar Hero 1 apworld, they may no longer be compatible. However, they are relatively easy to fix. Refer to the guide on metadata in the Github readme.</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21"/>
   </entry>
   <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-61/borderlands2.apworld</id>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-61</id>
     <title>Borderlands 2 v61</title>
     <updated>2026-02-21T20:12:19+00:00</updated>
-    <content/>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-61/borderlands2.apworld"/>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-61"/>
   </entry>
   <entry>
-    <id>https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/download/v1.0.0/twistycube.apworld</id>
+    <id>https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/tag/v1.0.0</id>
     <title>Twisty Cube v1.0.0</title>
     <updated>2026-02-21T21:25:07+00:00</updated>
-    <content/>
-    <link href="https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/download/v1.0.0/twistycube.apworld"/>
+    <content># Version 1.0.0!&#13;
+Massive thanks to @nepcore, @BaNyaaNyaa and @bbernardoni for basically everything in this update!&#13;
+&#13;
+- option to complete goal even without all stickers&#13;
+- New scoring (you get more points more easily)&#13;
+- Save system to keep your layout&#13;
+- Loading screen&#13;
+- Hide stickers before shuffling (only when layout is randomized)&#13;
+- queue inputs and execute keyboard inputs faster&#13;
+- "prevent undo after death link to prevent chrism from cheesing it"&#13;
+&#13;
+I think that's the main changes :D</content>
+    <link href="https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/tag/v1.0.0"/>
   </entry>
   <entry>
-    <id>https://github.com/tjwombo/RNSArchipelago/releases/download/v0.2.9-fix/rabbit_and_steel.apworld</id>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.2.9-fix</id>
     <title>Rabbit and Steel v0.2.9</title>
     <updated>2026-02-21T22:31:44+00:00</updated>
-    <content/>
-    <link href="https://github.com/tjwombo/RNSArchipelago/releases/download/v0.2.9-fix/rabbit_and_steel.apworld"/>
+    <content>Fixes most of the bugs I'm aware of&#13;
+- Ids updated for dlc, this should fix wrong items appearing in normal chests and shops, and should fix the chest crash (never verified this, was just a hunch)&#13;
+- Shop sanity shouldn't crash anymore&#13;
+- Connecting to lobby without a server open / bad ip shouldn't crash anymore&#13;
+- Treasurespheres shouldn't make default windows error noise&#13;
+- Pause menu connection sprites updated with the new ids&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.2.9](https://github.com/tjwombo/RNSArchipelago/compare/v0.2.9-fix...v0.2.9) - 2026-02-21&#13;
+&#13;
+## [v0.2.9-fix](https://github.com/tjwombo/RNSArchipelago/compare/v0.2.8...v0.2.9-fix) - 2026-02-21&#13;
+&#13;
+### Commits&#13;
+&#13;
+- Adjust ids and created individual item ids [`d1e73c2`](https://github.com/tjwombo/RNSArchipelago/commit/d1e73c234674338907b6885b8969206b316d2094)&#13;
+- Update README.md [`0428329`](https://github.com/tjwombo/RNSArchipelago/commit/0428329ed3cacebd1e89ab92de822337aa9aff50)&#13;
+- Update shop upgrade its [`5de1833`](https://github.com/tjwombo/RNSArchipelago/commit/5de183374353ba939696d2d812d28d29abb0a59b)&#13;
+- DLC bug fixes [`a8b3bf9`](https://github.com/tjwombo/RNSArchipelago/commit/a8b3bf92e63698cdfc053d348ad466d7fe8e0e8f)&#13;
+- Update mod version [`c7953c1`](https://github.com/tjwombo/RNSArchipelago/commit/c7953c1b8097f4207ccb93026ae8ac00c0d009de)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.2.9-fix"/>
   </entry>
   <entry>
     <id>https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld</id>
@@ -116,53 +269,100 @@
     <link href="https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld"/>
   </entry>
   <entry>
-    <id>https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.1.8/pokemon_platinum.apworld</id>
+    <id>https://github.com/ljtpetersen/platinum_archipelago/releases/tag/v0.1.8</id>
     <title>Pokemon Platinum v0.1.8</title>
     <updated>2026-02-21T23:48:18+00:00</updated>
-    <content/>
-    <link href="https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.1.8/pokemon_platinum.apworld"/>
+    <content>### Fixed&#13;
+* Event tracking for Saturn's defeat at Valor now works.</content>
+    <link href="https://github.com/ljtpetersen/platinum_archipelago/releases/tag/v0.1.8"/>
   </entry>
   <entry>
-    <id>https://github.com/dmwever/Ageipelago/releases/download/0.1.1/age2de.apworld</id>
+    <id>https://github.com/dmwever/Ageipelago/releases/tag/0.1.1</id>
     <title>Age Of Empires II: Definitive Edition v0.0.1</title>
     <updated>2026-02-22T00:50:16+00:00</updated>
-    <content/>
-    <link href="https://github.com/dmwever/Ageipelago/releases/download/0.1.1/age2de.apworld"/>
+    <content>- Fix issue where the client won't connect to a campaign.&#13;
+- Attila: The Scourge of God: Kill the Iron Boar trigger now properly detects the boar is killed.&#13;
+- **NEW COMMAND:** /refresh: disconnects and reconnects to the campaign or scenario. Usually only needed when quickly switching between campaigns or standalone scenarios.</content>
+    <link href="https://github.com/dmwever/Ageipelago/releases/tag/0.1.1"/>
   </entry>
   <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/download/v0.6.5/casualtiesunknown.apworld</id>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.6.5</id>
     <title>Casualties: Unknown v0.6.5</title>
     <updated>2026-02-22T01:15:07+00:00</updated>
-    <content/>
-    <link href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.5/casualtiesunknown.apworld"/>
+    <content>### Casualties: Unknown Archipelago v0.6.5&#13;
+This update is compatible with worlds generated on versions 0.6.4 and above!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+&#13;
+# Changes&#13;
+- Update to support Casualties: Unknown v5.1&#13;
+- Item, Hint, and Error popup notifications are no longer affected by the game's speed&#13;
+- Added Start Inventory from Pool option [APWorld Change]&#13;
+- Added option groups [APWorld Change]&#13;
+&#13;
+# Known Issues&#13;
+Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
+Recipes may sometimes wipe themselves upon reconnection. Getting another recipe item triggers a failsafe that should fix this&#13;
+Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.6.4...v0.6.5</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.6.5"/>
   </entry>
   <entry>
-    <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/download/V2.1.2/huniepop.apworld</id>
+    <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V2.1.2</id>
     <title>Hunie Pop v2.1.2</title>
     <updated>2026-02-22T01:52:50+00:00</updated>
-    <content/>
-    <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/download/V2.1.2/huniepop.apworld"/>
+    <content>- (Client) Fix error when processing "nothing" items causing it to skip other items that need to be processed&#13;
+&#13;
+V2.1.1 changelog&#13;
+- (Repo) added info in README.md for using "ws://" or "wss://" if getting SSL error&#13;
+- (Client) Fixed luck upgrades not being processed properly&#13;
+&#13;
+V2.1.0 changelog&#13;
+- (APWorld) Added option for setting cost of date gifts in store&#13;
+- (Client) Changed gift store tab to populate with date gifts&#13;
+- (Client) Changed unique store tab to populate with girl gifts and arch items&#13;
+- (Client) Changed start up message in console to include information about F8 to open/close console&#13;
+- (Client) Changed Item processing message for gifts to be in one line&#13;
+&#13;
+&lt;br&gt;&lt;/br&gt;&#13;
+CLIENT INSTALLATION INSTRUCTIONS:&#13;
+- Have Hunie Pop Installed&#13;
+- Download Hunie Pop Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Hunie Pop Archipelago plugin.zip" to the directory where "HuniePop.exe" is if it asks you to overwrite files click yes&#13;
+- NOTE if you get a game crash when starting the game make sure that in "{huniepop game directory}/BepInEx/config/BepInEx.cfg" the 2nd last option is "type = MonoBehaviour" not "type = Application"&#13;
+&#13;
+&#13;
+&#13;
+APWORLD INSTALLATION INSTRUCTIONS:&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Huniepop APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Huniepop APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop YMAL&#13;
+</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V2.1.2"/>
   </entry>
   <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGRockBand3.apworld</id>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21.1</id>
     <title>YARGRockBand3 v26.2.21.1</title>
     <updated>2026-02-22T03:29:04+00:00</updated>
-    <content/>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGRockBand3.apworld"/>
+    <content>Fix an issue in YARGGuitarHero1.apworld that caused generation to fail.</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21.1"/>
   </entry>
   <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGGuitarHero1.apworld</id>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21.1</id>
     <title>YARGGuitarHero1 v26.2.21.1</title>
     <updated>2026-02-22T03:29:04+00:00</updated>
-    <content/>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGGuitarHero1.apworld"/>
+    <content>Fix an issue in YARGGuitarHero1.apworld that caused generation to fail.</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21.1"/>
   </entry>
   <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGAllSetlists.apworld</id>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21.1</id>
     <title>YARGAllSetlists v26.2.21.1</title>
     <updated>2026-02-22T03:29:04+00:00</updated>
-    <content/>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGAllSetlists.apworld"/>
+    <content>Fix an issue in YARGGuitarHero1.apworld that caused generation to fail.</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21.1"/>
   </entry>
   <entry>
     <id>https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2/legend_of_dragoon.apworld</id>
@@ -179,185 +379,595 @@
     <link href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2-alpha/legend_of_dragoon.apworld"/>
   </entry>
   <entry>
-    <id>https://github.com/Uroogla/S2AP/releases/download/1.1.1/spyro2.apworld</id>
+    <id>https://github.com/Uroogla/S2AP/releases/tag/1.1.1</id>
     <title>Spyro 2 v1.1.1</title>
     <updated>2026-02-22T05:24:52+00:00</updated>
-    <content/>
-    <link href="https://github.com/Uroogla/S2AP/releases/download/1.1.1/spyro2.apworld"/>
+    <content>This release contains changes only to the client (S2AP.Desktop.exe).  The APWorld remains unchanged - a copy with an updated version number is provided for convenience, but seeds rolled on 1.1.0 will run correctly.&#13;
+&#13;
+Bug Fix:&#13;
+- Fixed a bug where if a player's most recent save is an autosave while exiting a Winter Tundra sublevel, the orb section of the save file became corrupted.&#13;
+  - This bug existed on versions 1.0.0 and later.  If you are playing on the 1.0.1 or 1.0.2 client and cannot update, you can avoid this issue by ending with a manual save, or by using save states.</content>
+    <link href="https://github.com/Uroogla/S2AP/releases/tag/1.1.1"/>
   </entry>
   <entry>
-    <id>https://github.com/Nepley/eosd-apworld/releases/download/v1.4.0/th06.apworld</id>
+    <id>https://github.com/Nepley/eosd-apworld/releases/tag/v1.4.0</id>
     <title>Touhou Koumakyou ~ the Embodiment of Scarlet Devil v1.4.0</title>
     <updated>2026-02-22T15:02:28+00:00</updated>
-    <content/>
-    <link href="https://github.com/Nepley/eosd-apworld/releases/download/v1.4.0/th06.apworld"/>
+    <content>* Option changed: Difficulty is now a toggle and the option to make lower difficulty check when doing a higher one has been added separately&#13;
+* Option added: Deathlink amnesty added and possiblity to change the trigger by either life or game over&#13;
+* Option added: Possibility to add a limit to the max number of life and bomb that the client give to the game (does not affect logic)&#13;
+* Added a GuardRail that will check for incoherence&#13;
+* ItemGroup added for characters, allowing to hint with shorter name (Ex: "Reimu A")&#13;
+* Traps that can't be applied more than once in a stage will not be queued anymore&#13;
+* Manifest added&#13;
+* slotData changed to only have necessary values&#13;
+* Better client stability&#13;
+* Better error messages in the client&#13;
+* Fix ItemClassification&#13;
+* Added client commands to change the following options at any time: DeathLink, DeathLinkAmnesty, DeathLinkTrigger, RingLink, Limits and MultipleDifficultyCheck</content>
+    <link href="https://github.com/Nepley/eosd-apworld/releases/tag/v1.4.0"/>
   </entry>
   <entry>
-    <id>https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v1.2.0/outer_wilds.apworld</id>
+    <id>https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.0</id>
     <title>Outer Wilds v1.2.0</title>
     <updated>2026-02-22T17:10:27+00:00</updated>
-    <content/>
-    <link href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v1.2.0/outer_wilds.apworld"/>
+    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
+&#13;
+- New `song_of_the_universe` goal and `required_friends` option (thanks @msyverw). This goal requires meeting a certain number of "friends" before going to the Eye. For example, if you enable the DLC and all 7 story mods, `song_of_the_universe: true` and `required_friends: 9` will require you to reach the ends of the DLC and all 7 story mods before goaling.&#13;
+- Added option groups. Since this is a custom game, mostly this means reordering and adding headers to the template/example .yamls, but you may also see these on alternate webhosts. &#13;
+- Universal Tracker nits:&#13;
+	- In `shuffle_spacesuit: true` slots, Universal Tracker's `/next_progression` command should now be aware of the Spacesuit item&#13;
+	- The Universal Tracker code can now handle missing options in slot_data. This probably has no impact today, but the next time we add a new logic-relevant option, it should allow UT with the latest OW apworld to just work on slots generated before the option was added.&#13;
+	- Some dead code required by older Universal Tracker versions has been cleaned up (specifically the `interpret_slot_data` stub)&#13;
+</content>
+    <link href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.0"/>
   </entry>
   <entry>
-    <id>https://github.com/vyneras/Archipelago/releases/download/1.0.4/pokemon_frlg.apworld</id>
+    <id>https://github.com/vyneras/Archipelago/releases/tag/1.0.4</id>
     <title>Pokemon FireRed and LeafGreen v1.0.4</title>
     <updated>2026-02-22T18:42:59+00:00</updated>
-    <content/>
-    <link href="https://github.com/vyneras/Archipelago/releases/download/1.0.4/pokemon_frlg.apworld"/>
+    <content>ROM CHECKSUM: `74F792D9`&#13;
+&#13;
+[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.0.4/worlds/pokemon_frlg/docs/setup_en.md)&#13;
+[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.0.4/worlds/pokemon_frlg/docs/rom%20changes.md)&#13;
+&#13;
+**Bug Fixes**&#13;
+- Fixed an accessibility option that could occur with randomized wild Pokémon and Pokémon request locations (@Eijebong)&#13;
+&#13;
+**Known Issues**&#13;
+- The `base_stats` option does not affect Deoxys attack/defense forms&#13;
+- The Rival battle in Oak's Lab can occasionally softlock the game. Recommend saving before triggering the battle&#13;
+- Logic can expect you to board the Seagallop in Vermilion City by talking to the sailor from the south without actually having any island passes</content>
+    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.0.4"/>
   </entry>
   <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.47/dk64.apworld</id>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.4.47</id>
     <title>Donkey Kong 64 v1.4.47</title>
     <updated>2026-02-22T20:44:53+00:00</updated>
-    <content/>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.47/dk64.apworld"/>
+    <content>DK64 Randomizer APWorld file for Archipelago version 1.4.47
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.4.47"/>
   </entry>
   <entry>
-    <id>https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.5/rabi_ribi.apworld</id>
+    <id>https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.4.5</id>
     <title>Rabi-Ribi v1.4.2</title>
     <updated>2026-02-22T20:49:55+00:00</updated>
-    <content/>
-    <link href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.5/rabi_ribi.apworld"/>
+    <content>## Quick Links&#13;
+- [Game Info Page](https://github.com/tdkollins/Archipelago-Rabi-Ribi/blob/main/worlds/rabi_ribi/docs/en_Rabi-Ribi.md)&#13;
+- [Setup Guide](https://github.com/tdkollins/Archipelago-Rabi-Ribi/blob/main/worlds/rabi_ribi/docs/setup_beta_en.md)&#13;
+- [Known Issues](https://github.com/tdkollins/Archipelago-Rabi-Ribi/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)&#13;
+&#13;
+## Before Playing&#13;
+This randomizer assumes the player is aware of hidden techniques that allow the game to be beaten without items, even at the lowest settings. It is HIGHLY recommended to play through the Basic section of the [Platforming Tricks Tutorial](https://steamcommunity.com/sharedfiles/filedetails/?id=1706422414) before starting your first seed!&#13;
+&#13;
+Additionally, the logic assumes that the player knows of hidden paths throughout the game, revealed with Ribbon, Fire Orb, or Carrot Bombs. A patch is available to expose these paths, alongside other useful features! It can be enabled by setting "Apply Beginner Mod" to `true`.&#13;
+&#13;
+## What's Changed&#13;
+* Fix issues found in fuzz testing by @dclaganiere in https://github.com/tdkollins/Archipelago-Rabi-Ribi/pull/80&#13;
+* Clean up options by @dclaganiere in https://github.com/tdkollins/Archipelago-Rabi-Ribi/pull/81&#13;
+* Fix Various Constraint Issues by @dclaganiere in https://github.com/tdkollins/Archipelago-Rabi-Ribi/pull/82&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/tdkollins/Archipelago-Rabi-Ribi/compare/1.4.4...1.4.5</content>
+    <link href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.4.5"/>
   </entry>
   <entry>
-    <id>https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld</id>
+    <id>https://github.com/Jouramie/Archipelago/releases/tag/0.6.6-messenger-ut</id>
     <title>The Messenger v0.6.6.post2</title>
     <updated>2026-02-22T22:19:34+00:00</updated>
-    <content/>
-    <link href="https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld"/>
+    <content># The Messenger with Universal Tracker integration&#13;
+This alternate version of the The Messenger apworld has integration for portal and transition shuffle with [Universal Tracker](https://discord.com/channels/731205301247803413/1367270230635839539).&#13;
+&#13;
+Compatible with games generated with [Archipelago 0.6.6](https://github.com/ArchipelagoMW/Archipelago/releases/tag/0.6.6)&#13;
+&#13;
+# Installation Instructions (for Windows, but likely compatible with other systems)&#13;
+- Install Archipelago (link below) with the generator enabled.&#13;
+- Place the new `messenger.apworld` file in your custom world folder.&#13;
+- Remove the old `messenger.apworld` file from your `lib/worlds` folder.&#13;
+&#13;
+# Troubleshooting&#13;
+- Make sure you removed your `messenger.apworld` from `lib/worlds` and added the new apworld in `custom_worlds`&#13;
+- Report any issue in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel in the Archipelago discord. Make sure to ping @jouramie otherwise I won't read. &#13;
+&#13;
+# We Need Your Help! &#13;
+If you'd like to help integrate this into the main Archipelago releases, drop us a [code review](https://github.com/ArchipelagoMW/Archipelago/pull/5344)! :wink:&#13;
+Also, please mention in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel that you used it, and report any issue. This will help with the integration process if some player mention using the beta world! </content>
+    <link href="https://github.com/Jouramie/Archipelago/releases/tag/0.6.6-messenger-ut"/>
   </entry>
   <entry>
-    <id>https://github.com/JustinMarshall98/Armored-Core-PSX-Archipelago/releases/download/v0.3.0/armoredcore.apworld</id>
+    <id>https://github.com/JustinMarshall98/Armored-Core-PSX-Archipelago/releases/tag/v0.3.0</id>
     <title>Armored Core v0.3.0</title>
     <updated>2026-02-22T22:29:20+00:00</updated>
-    <content/>
-    <link href="https://github.com/JustinMarshall98/Armored-Core-PSX-Archipelago/releases/download/v0.3.0/armoredcore.apworld"/>
+    <content># v0.3.0 Armored Core (PSX) APworld&#13;
+&#13;
+## New in this version&#13;
+- Starting AC Randomization! With this setting on the AC you generate with at the beginning of the game in the Raven's Test will be random (but still a valid AC).&#13;
+- Added a manifest file to make the apworld compatible with future versions of Archipelago.&#13;
+&#13;
+## Bug Fixes&#13;
+- When Shopsanity is off, shop locations are no longer generated for the game. You can now safely play with this option off.&#13;
+- When Human+ upgrades are not shuffled into the pool the game no longer fails to generate. You can now safely play with this option off.&#13;
+- The Missionsanity Goal Location (Armored Core Goal) now properly has its name associated with itself.&#13;
+&#13;
+## Known Issues&#13;
+- The client is generally a bit sluggish in the menu.&#13;
+- The Missions Menu / Shop Menu (when shopsanity is on) sometimes need a moment to structure themselves properly, hover over it for a second before entering or exit and re-enter to get the properly constructed mission selection options. Failing to do so for the Mission Menu can rarely result in a crash.&#13;
+- If in the shop a Parts description is completely blank, try hitting Triangle a few more times or moving between entries. This is a Bizhawk issue.&#13;
+- When Shopsanity is on, Hidden Parts can be obtained either by someone sending the part to you or picking it up in the level its in. Once the Hidden Part appears in the shop as a check to be sold however, it will no longer appear in its normal level anymore.&#13;
+- If you try to start yourself with a part from your pool and you have randomized starting ac on, if you luck into starting with that part your world may fail to generate properly. Try generating again until this doesn't happen. (The same is true for trying to start yourself off with one of the normal starting parts if your starting ac is not randomized).&#13;
+- In some cases, selling an equipped optional part will keep it equipped until you open the optional parts menu.&#13;
+- It is likely impossible to randomly generate with tank legs to start the game right now.&#13;
+&#13;
+## Additional Notes and Setup Guide&#13;
+https://github.com/JustinMarshall98/Armored-Core-PSX-Archipelago/tree/main/docs</content>
+    <link href="https://github.com/JustinMarshall98/Armored-Core-PSX-Archipelago/releases/tag/v0.3.0"/>
   </entry>
   <entry>
-    <id>https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.5/shapez_2.apworld</id>
+    <id>https://github.com/BlastSlimey/2hapezipelago/releases/tag/0.99.5</id>
     <title>shapez 2 v0.99.5</title>
     <updated>2026-02-22T22:51:12+00:00</updated>
-    <content/>
-    <link href="https://github.com/BlastSlimey/2hapezipelago/releases/download/0.99.5/shapez_2.apworld"/>
+    <content># Changelog&#13;
+&#13;
+- Added the hexagonal shape configuration&#13;
+- Fixed milestone counts of more than 8 always crashing multiworld generation&#13;
+- Fixed manual-like client not allowing to check operator levels over 100&#13;
+&#13;
+## Is this version compatible with older multiworld slots?&#13;
+Manual-like client yes, back to 0.99.0&#13;
+UT will probably be inaccurate</content>
+    <link href="https://github.com/BlastSlimey/2hapezipelago/releases/tag/0.99.5"/>
   </entry>
   <entry>
-    <id>https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.1/crystal_project.apworld</id>
+    <id>https://github.com/Emerassi/CrystalProjectAPWorld/releases/tag/CrystalProject-v0.15.1</id>
     <title>Crystal Project v0.15.0</title>
     <updated>2026-02-22T23:07:44+00:00</updated>
-    <content/>
-    <link href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.1/crystal_project.apworld"/>
+    <content>### **Crystal Project Hotfix v. 0.15.1**&#13;
+&lt;https://github.com/Emerassi/CrystalProjectAPWorld/releases&gt;&#13;
+&#13;
+### 🚨 AP Mod Update 🚨&#13;
+Fixed a crash with Ancient Labyrinth&#13;
+&#13;
+### KNOWN ISSUES&#13;
+- Receiving a passive point cap increase does not update the available passive points until a passive is toggled on or off.&#13;
+- Mods that change the text scrolls (such as the intro in spawning meadows) may result in unexpected behaviour</content>
+    <link href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/tag/CrystalProject-v0.15.1"/>
   </entry>
   <entry>
-    <id>https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.0/crystal_project.apworld</id>
+    <id>https://github.com/Emerassi/CrystalProjectAPWorld/releases/tag/CrystalProject-v0.15.0</id>
     <title>Crystal Project v0.15.0</title>
     <updated>2026-02-22T23:07:44+00:00</updated>
-    <content/>
-    <link href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.0/crystal_project.apworld"/>
+    <content>### **Crystal Project v. 0.15.0**&#13;
+&lt;https://github.com/Emerassi/CrystalProjectAPWorld/releases&gt;&#13;
+&#13;
+### 🚨 AP World Update 🚨&#13;
+&#13;
+Fixed crash that occurred with home point hustle and mods enabled.&#13;
+Fixed logic for checks in Jojo sewers, Castle Sequoia, and Jidamba Tangle.&#13;
+&#13;
+### 🚨 AP Mod Update 🚨&#13;
+Fixed an issue with extreme region sanity teleport triggering A.) in regular region sanity and B.) too quickly for the first teleport.&#13;
+Possessor will no longer give an Ibek bell to the player if it is not part of the seeds logic.&#13;
+&#13;
+### KNOWN ISSUES&#13;
+- Receiving a passive point cap increase does not update the available passive points until a passive is toggled on or off.&#13;
+- Mods that change the text scrolls (such as the intro in spawning meadows) may result in unexpected behaviour</content>
+    <link href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/tag/CrystalProject-v0.15.0"/>
   </entry>
   <entry>
-    <id>https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.6/burnout3.apworld</id>
+    <id>https://github.com/Metasura/Burnout3Archipelago/releases/tag/0.0.6</id>
     <title>Burnout 3 v0.0.6</title>
     <updated>2026-02-22T23:45:31+00:00</updated>
-    <content/>
-    <link href="https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.6/burnout3.apworld"/>
+    <content>## Fixes  &#13;
+ - Mountain Parkway Signature Takedowns logic is fixed.&#13;
+ - You can no longer get "Unlock" items for events that aren't generated in the seed (This also fix getting BK at the start of the run).&#13;
+ - Crash events are now properly included in logic.&#13;
+&#13;
+## Known Issue&#13;
+ - In Race Mode (and probably All Mode) the starting car can rarely be replaced by a filler item (Bonus Point), game should still be beatable.&#13;
+ - The game will not generate if you select too few events when solo playing.&#13;
+&#13;
+## Game Version&#13;
+- You need a PS2 Burnout 3 US ISO (`SLUS-21050`).</content>
+    <link href="https://github.com/Metasura/Burnout3Archipelago/releases/tag/0.0.6"/>
   </entry>
   <entry>
-    <id>https://github.com/furret78/Archipelago/releases/download/unstable-0.3.3/th185.apworld</id>
+    <id>https://github.com/furret78/Archipelago/releases/tag/unstable-0.3.3</id>
     <title>Black Market of Bulletphilia ~ 100th Black Market v0.3.3</title>
     <updated>2026-02-23T00:00:50+00:00</updated>
-    <content/>
-    <link href="https://github.com/furret78/Archipelago/releases/download/unstable-0.3.3/th185.apworld"/>
+    <content>Archipelago Randomizer implementation for **_Black Market of Bulletphilia ~ 100th Black Market_**, also known as _**Touhou 18.5**_.&#13;
+&#13;
+- **Ap world version:** Unstable 0.3.3&#13;
+- **Minimum Archipelago Launcher version:** 0.6.6&#13;
+&#13;
+Recommended to play on Windows, as **the game does not support Linux natively**. If playing on Linux, it is recommended to run both Archipelago Launcher and the game in Wine/Proton.&#13;
+&#13;
+# Changelog&#13;
+&#13;
+- Fixed same names in Ability Card location strings unintentionally checking off certain Ability Card locations.&#13;
+- Fixed `Achievement #11` not immediately unlocking upon reaching max equipment slots.&#13;
+- Slightly diversified Death Link messages.&#13;
+- Updated location groups to include Music Room and Achievement locations.&#13;
+- Updated client to show the ID of unknown items received.&#13;
+- Updated client to check for boss clears via hidden game records. This does not break anything in practice.&#13;
+- Updated AP-specific scorefile to be cleaner.&#13;
+- Updated internal Options names for Death Link Trigger. This breaks .yaml files generated before this release.&#13;
+&#13;
+Compatible with releases since 0.3.0.&#13;
+&#13;
+**Full Changelog**: https://github.com/furret78/Archipelago/compare/unstable-0.3.2...unstable-0.3.3&#13;
+&#13;
+# Game Details and Setup&#13;
+- See **game details** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/en_100th%20Black%20Market.md). When exporting .yaml files for this game, it is recommended to use the Options Creator in the Archipelago Launcher for a smooth experience.&#13;
+- See the **setup guide** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/setup_en.md).</content>
+    <link href="https://github.com/furret78/Archipelago/releases/tag/unstable-0.3.3"/>
   </entry>
   <entry>
-    <id>https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.3.2/wl4.apworld</id>
+    <id>https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.3.2</id>
     <title>Wario Land 4 v3.3.2</title>
     <updated>2026-02-23T00:21:44+00:00</updated>
-    <content/>
-    <link href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.3.2/wl4.apworld"/>
+    <content>* Fixed an issue where turning Open Doors on and Keyzer Shuffle off would make Keyzers completely cease to exist&#13;
+* Fixed the '0' character being broken on sent off-world items&#13;
+* (Finally) added Keyzers item group&#13;
+&#13;
+**Full Changelog**: https://github.com/lilDavid/Archipelago-Wario-Land-4/compare/3.3.1...3.3.2&#13;
+**Basepatch**: https://github.com/lilDavid/WL4-Archipelago-Patch/compare/3cee1d2...676516d</content>
+    <link href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.3.2"/>
   </entry>
   <entry>
-    <id>https://github.com/TRPG0/HbkArchipelago/releases/download/0.2.1/hi_fi_rush.apworld</id>
+    <id>https://github.com/TRPG0/HbkArchipelago/releases/tag/0.2.1</id>
     <title>Hi-Fi RUSH v0.2.1</title>
     <updated>2026-02-23T01:59:42+00:00</updated>
-    <content/>
-    <link href="https://github.com/TRPG0/HbkArchipelago/releases/download/0.2.1/hi_fi_rush.apworld"/>
+    <content>See [README](https://github.com/TRPG0/HbkArchipelago/blob/main/README.md) for install instructions.&#13;
+&#13;
+Packaged with `zDEV-UE4SS_v3.0.1-848-g91b70e5`, `hibiki-bootstrap-v0.2.0`&#13;
+&#13;
+- Added a new build for the Xbox Store version of the game!&#13;
+- Added a new `resend` command, which will attempt to resend all previously checked locations to the server. This cannot be undone.&#13;
+- Significantly increased client polling rate.&#13;
+- Fixed disconnecting due to a bug during server seed/version check.&#13;
+- Missing items will now be received again after reloading from a checkpoint during a stage.</content>
+    <link href="https://github.com/TRPG0/HbkArchipelago/releases/tag/0.2.1"/>
   </entry>
   <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.8/crosscode.apworld</id>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.8</id>
     <title>CrossCode v0.7.8</title>
     <updated>2026-02-23T02:03:07+00:00</updated>
-    <content/>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.8/crosscode.apworld"/>
+    <content>## Changes to Generation&#13;
+&#13;
+* Modified the pre-fill process to reduce the incidence of generation errors when `element_shuffle`, `,small_key_shuffle`, and `master_key_shuffle` are set to options other than `any_world` (@Mysteryem).&#13;
+* Stabilized the order in which items and locations are added to the world, eliminating remaining situations where generation is nondeterministic (@Mysteryem}.&#13;
+* Update several other aspects of generation to ensure future stability.</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.8"/>
   </entry>
   <entry>
-    <id>https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.2_wordsearch-0.5.0/wordipelago.apworld</id>
+    <id>https://github.com/ProfDeCube/Archipelago/releases/tag/wordipelago-1.0.2_wordsearch-0.5.0</id>
     <title>Wordipelago v1.0.1</title>
     <updated>2026-02-23T15:24:35+00:00</updated>
     <content/>
-    <link href="https://github.com/ProfDeCube/Archipelago/releases/download/wordipelago-1.0.2_wordsearch-0.5.0/wordipelago.apworld"/>
+    <link href="https://github.com/ProfDeCube/Archipelago/releases/tag/wordipelago-1.0.2_wordsearch-0.5.0"/>
   </entry>
   <entry>
-    <id>https://github.com/ProfDeCube/Archipelago/releases/download/1.0.2/wordipelago.apworld</id>
+    <id>https://github.com/ProfDeCube/Archipelago/releases/tag/1.0.2</id>
     <title>Wordipelago v1.0.1</title>
     <updated>2026-02-23T15:36:48+00:00</updated>
-    <content/>
-    <link href="https://github.com/ProfDeCube/Archipelago/releases/download/1.0.2/wordipelago.apworld"/>
+    <content>Updated Wordipelago, Adjusting options to allow for more consistent generation</content>
+    <link href="https://github.com/ProfDeCube/Archipelago/releases/tag/1.0.2"/>
   </entry>
   <entry>
-    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.1/flipwitch.apworld</id>
+    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.1</id>
     <title>Flipwitch Forbidden Sex Hex v1.0.1</title>
     <updated>2026-02-23T16:31:41+00:00</updated>
-    <content/>
-    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.1/flipwitch.apworld"/>
+    <content>Changes:&#13;
+- Add double jump or roll requirement to reach the Rose Garden door from the right.&#13;
+- Add rule for Upper Halls to Ladder Room</content>
+    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.1"/>
   </entry>
   <entry>
-    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.2b/tje.apworld</id>
+    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.4.2b</id>
     <title>ToeJam and Earl v0.4.2b0</title>
     <updated>2026-02-23T18:02:46+00:00</updated>
-    <content/>
-    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.4.2b/tje.apworld"/>
+    <content>- Fixed a freeze that could occur when collecting ship pieces with `max_level` set to less than 25&#13;
+- Fixed a race condition in how the item queue handles local and remote collection that may have been the cause of some items going missing&#13;
+- Modified the "jammin" text on ship piece collection to match the vanilla game</content>
+    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.4.2b"/>
   </entry>
   <entry>
-    <id>https://github.com/dannybonz/replanted_archipelago/releases/download/v1.5.2/pvzr.apworld</id>
+    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.5.2</id>
     <title>Plants vs. Zombies: Replanted v1.5.2</title>
     <updated>2026-02-23T19:27:30+00:00</updated>
-    <content/>
-    <link href="https://github.com/dannybonz/replanted_archipelago/releases/download/v1.5.2/pvzr.apworld"/>
+    <content>- If Bungee Zombie appears in Bobsled Bonanza, Pogo Party or Air Raid, then Umbrella Leaf will be logically expected before the level can be cleared.&#13;
+- Giga Gargantuar can no longer appear in Bobsled Bonanza, Pogo Party or Air Raid.&#13;
+- Zomboni can no longer appear in Roof: Level 5-5.&#13;
+- Conveyor randomisation will no longer allow Spikeweed and Spikerock on Roof levels.&#13;
+- Corrected the Sun cost of Spikerock when playing with `easy_upgrade_plants` enabled.&#13;
+- Fixed a logic issue that could result in the game expecting you to beat Night levels without Sun producing plants. &#13;
+- Fixed the potential for `plant_stat_randomisation` to roll negative Sun costs.&#13;
+&#13;
+This update only affects the APWorld. There are no changes to the client mod from v1.5.1.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.5.2"/>
   </entry>
   <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2026.02.23/manual_fellowship_chakraa.apworld</id>
+    <id>https://github.com/wcolding/SWR_AP_Client/releases/tag/v0.8.0</id>
+    <title>Star Wars Episode I Racer v0.8.0</title>
+    <updated>2026-02-23T19:42:51+00:00</updated>
+    <content>**NOTE:** This version has breaking changes! Only use this client and this apworld together. **Previous versions are incompatible with this release!**&#13;
+&#13;
+### Changelog (0.7.1 -&gt; 0.8.0)&#13;
+&#13;
+#### Client&#13;
+* **Install method change:**&#13;
+  * This client **no longer uses ASI Loader** to inject into the game. Going forward this client will be distributed as a zipped collection of `dsound.dll`, `SWR_AP_Client.ini` and `APCpp.dll` which will all need to be placed **in the game's main folder**. Players with previous installations should delete their ASI Loader dll and scripts folder before installing this version.&#13;
+* **Save location change**:&#13;
+  * Starting this version each slot and seed will create its own save folder (within `ArchipelagoSaves` in the main directory). If you connect and go "where are my saves???", that's why. Your vanilla saves and saves from other seeds will not be visible once everything is connected. They are not being deleted!&#13;
+* **New client config file options**:&#13;
+  * `waittime`: Adds additional milliseconds before running client code and patching the game. Adjusting this is not advised and should generally not be necessary for most users.&#13;
+  * `hidepurchases`: Removes purchased items from Watto's shop to cut down on clutter. When you are purchasing an item it is still replaced with a tiny Watto model, but on subsequent visits that item will not be loaded. Keeping this disabled retains the previous shop behavior.&#13;
+* **Pit Droid Shop change**:&#13;
+  * There was a bug with previous versions where the pit droid shop didn't do a good job of tracking whether its locations had been sent to the server, and as a result it could become impossible to check some of them in certain cases. This client will track that more closely, and instead of modifying what checks are available to the player, it will simply not charge the player 1000 Truguts if that location was already checked.&#13;
+  * This means that in asyncs you will see upon relaunching that you will have 3 checks there again, even if you purchased them. *This isn't ideal and will be addressed in a future update*, but you will only be charged for droid checks the server has not marked as completed already.&#13;
+  * Please note you will still need at least 1000 truguts to peform these checks, even if you aren't actually charged for them.&#13;
+* **Faster item processing**:&#13;
+  * Backend changes to how items are processed have reduced the need for delays between receiving them.&#13;
+* **Crash Logs**:&#13;
+  * The client now makes use of a crash logging library to dump some useful information into a folder helpfully called `crash_dumps`.&#13;
+&#13;
+#### apworld&#13;
+* **Changed option: `Course Unlock Mode`**:&#13;
+  * New settings are `Full Shuffle`, `Circuits` and `Progressive Circuits`. The circuit modes now both treat the Invitational Circuit just like the others, with the vanilla unlocks option removed. This was done largely to simplify the logic and remove generation errors. With the ongoing client restructure, vanilla unlocks could potentially make a reappearance down the line, but for now they are being shelved. `Full Shuffle` is the default recommended mode now.&#13;
+  * Circuit pass modes now retain "Course Unlock" checks and place appropriate "vanilla" items on them to unlock the next course in the circuit. &#13;
+    * As an example, completing `Amateur Race 1 - Course Unlock` will award an `Amateur Course Unlock` item. This bypasses the vanilla game unlocking code and brings them closer in line with how `Full Shuffle` works.&#13;
+* **Option `Shop Costs` default changed**:&#13;
+  * `Normalized` is now the default setting to soften some of the outlier expensive purchases in the shop and reduce grind.&#13;
+* .apworld now contains manifest for eventual compatibility with Archipelago 0.7.0 when it releases.&#13;
+* Lambda capture issues resolved (special thanks to Mysteryem!)</content>
+    <link href="https://github.com/wcolding/SWR_AP_Client/releases/tag/v0.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/tag/2026.02.23</id>
     <title>Manual_Fellowship_Chakraa v2026.2.23</title>
     <updated>2026-02-23T20:03:05+00:00</updated>
-    <content/>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/download/2026.02.23/manual_fellowship_chakraa.apworld"/>
+    <content>* NEW: Added the two new Heroes, Aeona &amp; Xavian&#13;
+&#13;
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/compare/2025.10.14...2026.02.23</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/tag/2026.02.23"/>
   </entry>
   <entry>
-    <id>https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2-alpha.2/legend_of_dragoon.apworld</id>
+    <id>https://github.com/pkolb-dev/Archipelago/releases/tag/0.1.2-alpha.2</id>
     <title>The Legend of Dragoon v0.1.2a2</title>
     <updated>2026-02-23T21:22:37+00:00</updated>
-    <content/>
-    <link href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2-alpha.2/legend_of_dragoon.apworld"/>
+    <content>## What's Changed&#13;
+* Legend of Dragoon: Dedupe extra .add_locations calls by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/26&#13;
+* Legend of Dragoon: Update docs &amp; version by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/35&#13;
+* Fork Sync by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/36&#13;
+* Legend of Dragoon: Chore/refactor into readable functions by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/37&#13;
+* Bugfix/fix addition logic again by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/38&#13;
+* Update game info by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/39&#13;
+* revert minimum ap version by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/40&#13;
+* Update archipelago.json by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/41&#13;
+* Feature: Add shop to generation by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/45&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/pkolb-dev/Archipelago/compare/0.1.0...0.1.2-alpha.2</content>
+    <link href="https://github.com/pkolb-dev/Archipelago/releases/tag/0.1.2-alpha.2"/>
   </entry>
   <entry>
-    <id>https://github.com/Joshark/archipelago-sms/releases/download/0.5.2/sms.apworld</id>
+    <id>https://github.com/Joshark/archipelago-sms/releases/tag/0.5.2</id>
     <title>Super Mario Sunshine v0.5.2</title>
     <updated>2026-02-23T21:30:41+00:00</updated>
-    <content/>
-    <link href="https://github.com/Joshark/archipelago-sms/releases/download/0.5.2/sms.apworld"/>
+    <content>## Main Changes&#13;
+* Generation now accordingly sets amount of Shines and Blues if there are too many compared to amount of locations available as to minimize generation failures&#13;
+* Rewrote logic for upcoming difficulty options (More down below about its PR, thanks a bunch again @SomeJakeGuy)&#13;
+* Fixed SSL error that would occur during patching process &#13;
+&#13;
+## PRs/Contributions&#13;
+* Use world instance random over global random by @gerbiljames in https://github.com/Joshark/archipelago-sms/pull/17&#13;
+* Use instance vars for world state by @gerbiljames in https://github.com/Joshark/archipelago-sms/pull/16&#13;
+* Update sms_rom to handle downloading the repo assets using a different library / default SSL when able. by @SomeJakeGuy in https://github.com/Joshark/archipelago-sms/pull/18&#13;
+* Fixed merge between multiple PRs. by @Griffork in https://github.com/Joshark/archipelago-sms/pull/19&#13;
+* Added a Tutorial and OptionGroup for SMSWebWorld. Fixed a warning about settings ClassVar by @SomeJakeGuy in https://github.com/Joshark/archipelago-sms/pull/20&#13;
+* Regions and logic re-written into smaller, more manageable files, with a logic parser based on a named-tuple rather than straight lambda statements. by @SomeJakeGuy in https://github.com/Joshark/archipelago-sms/pull/25&#13;
+* Jake locations fix by @SomeJakeGuy in https://github.com/Joshark/archipelago-sms/pull/27&#13;
+&#13;
+## New Contributors&#13;
+* @gerbiljames made their first contribution in https://github.com/Joshark/archipelago-sms/pull/17&#13;
+* @Griffork made their first contribution in https://github.com/Joshark/archipelago-sms/pull/19&#13;
+&#13;
+**Full Changelog**: https://github.com/Joshark/archipelago-sms/compare/0.5.1...0.5.2</content>
+    <link href="https://github.com/Joshark/archipelago-sms/releases/tag/0.5.2"/>
   </entry>
   <entry>
-    <id>https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v1.0.0/factorio_space_age.apworld</id>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.0.0</id>
     <title>factorio_space_age v1.0.0</title>
     <updated>2026-02-23T23:07:53+00:00</updated>
-    <content/>
-    <link href="https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v1.0.0/factorio_space_age.apworld"/>
+    <content># Factorio: Space Age apworld v1.0.0&#13;
+&#13;
+Setup docs here: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md&#13;
+&#13;
+Source code here: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age&#13;
+&#13;
+Hello everyone! I've emerged from a 6 week frenzy seeing if I could tackle getting the Space Age expansion into Archipelago. It ended up taking a very different approach from the core Factorio world by Berserker et al.&#13;
+&#13;
+### Differences from core Factorio&#13;
+&#13;
+There are numerous necessary changes due to Space Age being kinda a completely different game,&#13;
+but some of the notable design choices here that deviate from the core Factorio world are:&#13;
+&#13;
+* Random recipe generation is removed.&#13;
+* Random technology dependency generation is removed.&#13;
+* Craftsanity is removed.&#13;
+* The vanilla tech tree requirements and shape are preserved. Trigger techs and dependencies are all vanilla, but the effect of each research objective is random.&#13;
+* Different groupings of progressive item chains.&#13;
+* Infinite technologies are shuffled locally and optionally used as filler items.&#13;
+&#13;
+There are also a ton of options to check out (template attached with this release).&#13;
+&#13;
+### Feedback&#13;
+&#13;
+Please report bugs, feature requests, etc. here: https://github.com/thejoshwolfe/Archipelago/issues&#13;
+&#13;
+(I am not very active on Discord.)&#13;
+</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.0.0"/>
   </entry>
   <entry>
-    <id>https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.5/cobalt_core.apworld</id>
+    <id>https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.1.5</id>
     <title>Cobalt Core v1.1.5</title>
     <updated>2026-02-23T23:25:06+00:00</updated>
+    <content>- `shuffle_artifacts` now has a `double` setting, which is the new default. With this setting, almost all AP artifacts give two AP items instead of one, to compensate for the amount of artifacts to artifact offerings ratio. You can still get one item per artifact with the `simple` setting.&#13;
+- AP artifacts now show which items they give and the recipient's names on the button itself.&#13;
+- The codex has been revamped.&#13;
+  - All cards and artifacts are now unlocked in the codex from the start, with extra visuals to show which ones have been actually unlocked in AP or not&#13;
+  - Added the "Archipelago Tracker" page in the codex. It shows you which items you can access, which ones you've gotten, and which ones have been hinted.&#13;
+- Added the `auto_release_characters` option (off by default). With it, you can set an amount of run completions required for a character to automatically release all their associated items, so that you never need to run with them again. Be careful though, some of these items may be traps!&#13;
+- The mod now checks more accurately for the APworld version when connecting, and should give a more precise error in the log in case of version mismatches in the future.&#13;
+- Hovering over character portraits anywhere will now show you the amount of memories (or memory items in case of `shuffle_memories`) that you've found with them in the tooltip, including during a run.&#13;
+&#13;
+The YAML and APWorld must both be updated.&#13;
+&#13;
+As always, thanks everyone for the feedback! While there are some more minor features I want to add, I think I'll bundle them with 1.2.0 and the progression smoothing, which means that barring any significant bugs, this should be the last version before 1.2.0.</content>
+    <link href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/tag/V0.3.1</id>
+    <title>Hunie Cam Studio v0.3.1</title>
+    <updated>2026-02-24T01:00:49+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- (Client) Added a check to see if your connecting from the same server as the last connection to allow for continuing a save (NOTE will only work on saves started after updating)&#13;
+&#13;
+V0.3.0 changelog&#13;
+- fixed client not sending completion to server&#13;
+- fixed "$goal" working before reaching day 22 and not working afterwards&#13;
+&#13;
+&#13;
+&#13;
+INSTALLATION INSTRUCTIONS:&#13;
+&#13;
+CLIENT:&#13;
+- Have Hunie Cam Studio Installed&#13;
+- Download Hunie Cam Studio Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Hunie Cam Studio Archipelago Client v#.#.#.zip" to the directory where "HunieCamStudio.exe" is&#13;
+&#13;
+APWORLD (needed for generating archieplago game):&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Spirit Valley APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Hunie Cam Studio APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recomended)Select "Generate Template Options" to generate default Hunie Cam Studio YMAL</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/tag/V0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.10.4</id>
+    <title>SlotLock v0.10.4</title>
+    <updated>2026-02-24T01:35:42+00:00</updated>
+    <author>
+      <name>S</name>
+    </author>
+    <author>
+      <name>a</name>
+    </author>
+    <author>
+      <name>n</name>
+    </author>
+    <author>
+      <name>d</name>
+    </author>
+    <author>
+      <name>r</name>
+    </author>
+    <author>
+      <name>a</name>
+    </author>
+    <author>
+      <name> </name>
+    </author>
+    <author>
+      <name>(</name>
+    </author>
+    <author>
+      <name>T</name>
+    </author>
+    <author>
+      <name>h</name>
+    </author>
+    <author>
+      <name>e</name>
+    </author>
+    <author>
+      <name>S</name>
+    </author>
+    <author>
+      <name>a</name>
+    </author>
+    <author>
+      <name>n</name>
+    </author>
+    <author>
+      <name>d</name>
+    </author>
+    <author>
+      <name>r</name>
+    </author>
+    <author>
+      <name>o</name>
+    </author>
+    <author>
+      <name>m</name>
+    </author>
+    <author>
+      <name>a</name>
+    </author>
+    <author>
+      <name>t</name>
+    </author>
+    <author>
+      <name>i</name>
+    </author>
+    <author>
+      <name>c</name>
+    </author>
+    <author>
+      <name>)</name>
+    </author>
+    <content>## What's Changed&#13;
+* Adds the logo Ruby3440 made into the launcher by @Enderdraak in https://github.com/gjgfuj/SlotLock/pull/3&#13;
+* Changed how the /create_tree get handled, making it more robust by @Enderdraak in https://github.com/gjgfuj/SlotLock/pull/4&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.10.3...slotlockv0.10.4&#13;
+&#13;
+Thankyou @Enderdraak for these, and thanks Ruby3440 for the logo.</content>
+    <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.10.4"/>
+  </entry>
+  <entry>
+    <id>https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.2.0/lingo2.apworld</id>
+    <title>lingo2 v9.2.0</title>
+    <updated>2026-02-24T04:41:45.971455+00:00</updated>
     <content/>
-    <link href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.1.5/cobalt_core.apworld"/>
+    <link href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.2.0/lingo2.apworld"/>
   </entry>
 </feed>

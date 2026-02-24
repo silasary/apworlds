@@ -11,9 +11,11 @@
   "versions": {
     "v0.1.0": {
       "created_at": "2025-12-09T10:17:07Z",
+      "description": "# Shovel Knight Pocket Dungeon Archipelago v0.1.0\r\n\r\n[Setup](https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md) | [Mod Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702)\r\n\r\nInitial release of the Shovel Knight Pocket Dungeon Archipelago implementation! This is considered in beta for now and may be unstable as mod support for this game is still in active development. **Please read the setup page**, I've tried making setup as easy as possible but setup may still require a bit of work in some cases.\r\n\r\n### Here's the list of features:\r\n- Key Fragments, Characters, Refract Variants, Relics and Shop Restocks are randomized into the multiworld as important progression items.\r\n- Chester's shop in the hub sells 5 items, with each Shop Restock adding another 5.\r\n- Each character comes with an unique shop location per stage, as well as a run complete location.\r\n- Progression can be further gated using Progressive Dungeons.\r\n- Gems and Garbage act as the default filler and traps respectively.\r\n- Hats can be randomized into the multiworld for more chaos! Their behavior can be customized inside your YAML settings.\r\n- The stage and boss order can be randomized based on your Archipelago seed.\r\n- The amount of characters shuffled into the multiworld can be reduced to facilitate shorter Archipelago sessions.\r\n- Starting Relic items can be optionally shuffled into the multiworld, these give you a relic at the start of each run which helps with making Percy's cannon a more viable option for obtaining later checks.\r\n- Shops in-game can show which items are for sale!\r\n- Simple in-game location tracking.\r\n- YAMLess UT intergration.",
       "download_url": "https://github.com/Mitchell1711/Archipelago/releases/download/v0.1.0/pocket_dungeon.apworld",
       "has_manifest": true,
       "hash_sha256": "af0fe9a351ed9926055e0e8215a6776a5c4c0ff275969ae0f5c20de668167b86",
+      "html_url": "https://github.com/Mitchell1711/Archipelago/releases/tag/v0.1.0",
       "minimum_ap_version": "0.6.3",
       "size": 25478,
       "source_url": "https://api.github.com/repos/Mitchell1711/Archipelago",
@@ -24,9 +26,11 @@
     },
     "v0.2.0": {
       "created_at": "2025-12-13T22:33:02Z",
+      "description": "# Shovel Knight Pocket Dungeon Archipelago v0.2.0\r\n\r\n[Setup](https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md) | [Mod Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702)\r\n\r\nSmall patch for a couple of issues I missed during release, comes with expanded UT support as a bonus. Due to some options fixes this release has an updated yaml.\r\n\r\n### Changes\r\n- The client now has a page for Universal Tracker if the apworld is installed.\r\n- Tracker now supports UTs \"glitched logic\" feature, for checks that are reachable but considered out of logic due to a lack of relics.\r\n- \"Relic Leniency\" option works as intended now.\r\n- Including your starting character as an excluded character will raise an OptionError.\r\n- One too many shop restocks were being shuffled into the item pool.\r\n- Savedata backups now won't be able to override eachother.\r\n- Minor adjustment to the camp shop soft logic.",
       "download_url": "https://github.com/Mitchell1711/Archipelago/releases/download/v0.2.0/pocket_dungeon.apworld",
       "has_manifest": true,
       "hash_sha256": "ab88a549969654284de84c1d43aa49d0eedec5801004ee020f38142f668d6ff2",
+      "html_url": "https://github.com/Mitchell1711/Archipelago/releases/tag/v0.2.0",
       "minimum_ap_version": "0.6.3",
       "size": 25749,
       "source_url": "https://api.github.com/repos/Mitchell1711/Archipelago",
@@ -37,9 +41,11 @@
     },
     "v0.2.1": {
       "created_at": "2025-12-17T20:55:33Z",
+      "description": "# Shovel Knight Pocket Dungeon Archipelago v0.2.1\r\n\r\n[Setup](https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md) | [Mod Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702)\r\n\r\nBugfix patch for a couple of issues along with new option groups.\r\n\r\n### Changes\r\n- Added option groups.\r\n- Boss randomization is tracked as intended by UT.\r\n- Hats will stop trying to fill when there's not enough locations.\r\n- Logic that prevented certain bosses from being in logic if you only have 1 character now works as intended.",
       "download_url": "https://github.com/Mitchell1711/Archipelago/releases/download/v0.2.1/pocket_dungeon.apworld",
       "has_manifest": true,
       "hash_sha256": "16e4db5bbe3b3bb21ec679d0420a7e1bc27a301611bbb98b302fa24f871317b1",
+      "html_url": "https://github.com/Mitchell1711/Archipelago/releases/tag/v0.2.1",
       "minimum_ap_version": "0.6.3",
       "size": 26073,
       "source_url": "https://api.github.com/repos/Mitchell1711/Archipelago",
@@ -50,9 +56,11 @@
     },
     "v0.2.2": {
       "created_at": "2025-12-22T18:21:17Z",
+      "description": "# Shovel Knight Pocket Dungeon Archipelago v0.2.2\r\n\r\n[Setup](https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md) | [Mod Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702)\r\n\r\n### Changes\r\n- Fixed path commands in the client not saving unless you had Universal Tracker installed.",
       "download_url": "https://github.com/Mitchell1711/Archipelago/releases/download/v0.2.2/pocket_dungeon.apworld",
       "has_manifest": true,
       "hash_sha256": "8b92f88f5bae0a80702c9a19c10ccb363911b0b483a07f3e9a7746973954788c",
+      "html_url": "https://github.com/Mitchell1711/Archipelago/releases/tag/v0.2.2",
       "minimum_ap_version": "0.6.3",
       "size": 26094,
       "source_url": "https://api.github.com/repos/Mitchell1711/Archipelago",

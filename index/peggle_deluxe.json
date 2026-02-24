@@ -13,9 +13,11 @@
   "versions": {
     "peggle-deluxe-v1.0.0": {
       "created_at": "2026-02-09T01:44:20Z",
+      "description": "_Peggle Deluxe - A pachinko-inspired arcade game by PopCap Games_\r\n\r\n**Randomizer Features**\r\n* All 55 Quick Play levels + 10 Peggle Masters supported\r\n* Ability to select individual levels to include / exclude from generation\r\n* Ability to select individual masters to include / exclude from generation\r\n* Ability to customize how many levels to play (5-55)\r\n* Ability to customize how many masters are available for play (1-10)\r\n* Ability to set / randomize difficulty of target scores. By level or globally\r\n* Ability to convert filler items into useful items during generation to provide additional help\r\n* Starting Ball Count / Fever Meter logic\r\n* Scales well for all types of multiworlds: Short / Long Syncs, Asyncs; ~50-750 checks\r\n* Custom client UI that displays important information and updates in real-time (see screenshot)\r\n* No modding! Only light memory manipulation that works directly from the client\r\n* Universal Tracker (UT) fully supported (and recommended for guidance). YAML-free!\r\n\r\n**How it works and what to expect**\r\n- A custom campaign of N levels is generated based on your settings\r\n- You are granted a starting level and master where you are able to complete your first location checks\r\n- You start with only 5 balls, but can receive more\r\n- Your fever meter is capped at each multiplier, but you can receive upgrades\r\n- You progress through the campaign by receiving level unlocks and progressive items\r\n- You will also gather some gold pegs along the way. These are needed for both goal types. Either:\r\n  - Collect N gold pegs to unlock a final level and clear it to win\r\n  - Collect N gold pegs to win\r\n- Each master's power is usable right away\r\n- Your playthrough will have you jumping between levels as you unlock more stuff, not just beating levels and moving on\r\n- The game is one the shorter side, with high check density. It is on the easier side, save for high tier scores and full clears\r\n- Since the game hasn't been deeply modified, you won't be prevented from playing anything. That said, locations checks will only be registered when meeting the proper requirements\r\n\r\n**Locations**\r\n- Fever Meter Multipliers (2X, 3X, 5X, 10X)\r\n- Level Clears\r\n- Target Scores (Low / Mid / High)\r\n- Style Shots\r\n- Orange Peg Combos (3X, 5X)\r\n- Peg Combos (7X, 15X)\r\n- Full Clears (optional)\r\n\r\n**Items**\r\n- Level Unlocks\r\n- Master Unlocks\r\n- Progressive Fever Meter Thresholds (Locks Fever Meter Multiplier, Level Clear and Target Score locations)\r\n- Progressive Starting Ball Increases (Locks Target Score and Full Clear locations)\r\n- Gold Pegs (Macguffins)\r\n- Level-specific useful items to progressively make things (even) easier: Fever Meter Permanent Bonuses, Full Clear Discounts, Score Multipliers, Target Score Discounts\r\n\r\n<img width=\"795\" height=\"1059\" alt=\"Screenshot 2026-02-08 184610\" src=\"https://github.com/user-attachments/assets/ccf045af-6d4b-4dd7-8e23-f6f41807c6bc\" />\r\n",
       "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.0.0/peggle_deluxe.apworld",
       "has_manifest": true,
       "hash_sha256": "0e86d74309c4de75fc32930bc5bf2c1e7de311298c2dbacc0a0e92bc8fb3ee63",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.0.0",
       "minimum_ap_version": "0.6.5",
       "size": 1833860,
       "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
@@ -26,9 +28,11 @@
     },
     "peggle-deluxe-v1.0.1": {
       "created_at": "2026-02-09T17:50:21Z",
+      "description": "This is a minor bugfix / improvement release.\r\n\r\n**Improvement:** Renamed `Style Shot` locations to `Style Shot (25,000+)` to clarify what is expected to check them\r\n**Improvement:** Any further client or game controller crashes will now spam their tracebacks in the Archipelago tab of the client to make it simpler to report issues\r\n\r\n**Fix:** Addressed a silent client crash where it would look for non-existent target scores on goal levels\r\n\r\n_If you have an ongoing game that was started on 1.0.0, wait until reaching the goal level before swapping the APWorld with this one and restarting both the AP launcher and the client_\r\n\r\n**Link to the previous release (with README):** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.0.0)\r\n",
       "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.0.1/peggle_deluxe.apworld",
       "has_manifest": true,
       "hash_sha256": "578de7562d1f56caa1691c7a96048972cfe45881d8fd7278f851a5208f33d3df",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.0.1",
       "minimum_ap_version": "0.6.5",
       "size": 1833945,
       "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
@@ -39,9 +43,11 @@
     },
     "peggle-deluxe-v1.1.0": {
       "created_at": "2026-02-10T23:24:43Z",
+      "description": "This is a minor bugfix release. \r\n\r\n**This release is NOT compatible with games generated on 1.0.x versions. Nothing has changed from a gameplay perspective, but generation has changed**\r\n\r\n**Fix:** Addressed an issue where the Universal Tracker (UT) Go Mode indicator would not work for Gold Pegs + Final Level goals\r\n\r\n**Link to the previous release:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.0.1)\r\n**Link to the original release, with README:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.0.0)",
       "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.1.0/peggle_deluxe.apworld",
       "has_manifest": true,
       "hash_sha256": "b5dfca9b1a7b771fd8b0097d359d0e7ecf0754d028a632d3c91d5ba62d27ba17",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.1.0",
       "minimum_ap_version": "0.6.5",
       "size": 1834000,
       "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
@@ -52,9 +58,11 @@
     },
     "peggle-deluxe-v1.1.1": {
       "created_at": "2026-02-12T11:46:51Z",
+      "description": "This is a minor bugfix / improvement release. \r\n\r\n**This release IS compatible with games generated on 1.1.x versions**\r\n\r\n**Improvement:** Any errors are now saved in `peggle_deluxe_errors.log` in your Archipelago directory instead of output to the client\r\n**Improvement:** Entering Fever Mode now multiplies the multiplier by 10, regardless of your current fever meter cap (e.g entering fever mode with 2 Progressive Fever Meter Threshold items will give you a 50x multiplier for the duration of fever mode). This is a buff.\r\n\r\n**Fix:** Addressed an issue where Warren would be able to send Level Clear location checks while the Triple Score buff was active\r\n**Fix:** Addressed an issue where the goal level would light up in the custom client tab without having 4 Progressive Fever Meter Threshold items (i.e. only having the level unlock + required gold pegs)\r\n**Fix:** Addressed an issue where Fever Meter Multiplier location checks would send when hitting pegs in Fever Mode without their required amount of Progressive Fever Meter Threshold items \r\n\r\n**Link to the previous release:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.1.0)\r\n**Link to the original release, with README:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.0.0)",
       "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.1.1/peggle_deluxe.apworld",
       "has_manifest": true,
       "hash_sha256": "55ed8bd4f588b8e1b6fd60179d4a5862ca0e3ae63eaf1b6525559c256a1470da",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.1.1",
       "minimum_ap_version": "0.6.5",
       "size": 1834191,
       "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",

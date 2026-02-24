@@ -1,5 +1,7 @@
 {
-  "authors": ["asdfwyay"],
+  "authors": [
+    "asdfwyay"
+  ],
   "description": "A Computer Game by Mike Klubnika",
   "game": "Buckshot Roulette",
   "github": "https://github.com/asdfwyay/APBuckshot",
@@ -12,9 +14,11 @@
   "versions": {
     "v0.0.1": {
       "created_at": "2025-12-24T04:08:26Z",
+      "description": "## Features\r\n- **Consumable Item Randomization**\r\n    - Item unlocks are shuffled randomly\r\n- **Steam Achievements**\r\n    - Obtain items from completing achievements\r\n- **Shotsanity**\r\n    - Obtain items from successful shots\r\n- **Customizable Goal**\r\n    - Choose from one of the following goals:\r\n        - **70K**: Beat the game\r\n        - **140K**: Beat 6 Double or Nothing rounds in a row\r\n        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million\r\n        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score\r\n- **Consumable Item Logic**\r\n    - Customize how many consumable are expected to beat a certain number of rounds\r\n    \r\n## Changelog\r\n\r\n- **Items**\r\n    - Added consumable items\r\n    - Added Double or Nothing pills\r\n    - Added filler items\r\n\r\n- **Locations**\r\n    - Added round completion locations\r\n    - Added achievement locations\r\n    - Added shotsanity locations\r\n\r\n- **Client**\r\n    - Initial release\r\n\r\n## Guides\r\n- [Info](<https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md>)\r\n- [Setup](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)\r\n\r\n\r\n",
       "download_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.0.1/buckshot.apworld",
       "has_manifest": true,
       "hash_sha256": "8a8e6ad8625993916b38a9067309b8659e5078f744c20109d59ed74aa95f8817",
+      "html_url": "https://github.com/asdfwyay/APBuckshot/releases/tag/v0.0.1",
       "minimum_ap_version": "0.6.4",
       "prerelease": true,
       "size": 16549,
@@ -26,9 +30,11 @@
     },
     "v0.0.2": {
       "created_at": "2026-01-05T02:15:58Z",
+      "description": "**Hotfix 1 (1/7/2026):** Shotsanity counts are now properly set when reconnecting to Archipelago. This does not affect the AP World.\r\n\r\n## Features\r\n- **Consumable Item Randomization**\r\n    - Item unlocks are shuffled randomly\r\n- **Steam Achievements**\r\n    - Obtain items from completing achievements\r\n- **Shotsanity**\r\n    - Obtain items from successful shots\r\n- **Customizable Goal**\r\n    - Choose from one of the following goals:\r\n        - **70K**: Beat the game\r\n        - **140K**: Beat 6 Double or Nothing rounds in a row\r\n        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million\r\n        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score\r\n- **Consumable Item Logic**\r\n    - Customize how many consumable are expected to beat a certain number of rounds\r\n## Changelog\r\n### World\r\n- Fixed numerous generation errors primarily involving restrictive starts or a 70K goal.\r\n- Fixed logic for Double or Nothing round locations with `goal` set to `\"custom\"`.\r\n- Fixed access rules for the following achievements, which would previously be marked as unable to reach:\r\n    - Nope!\r\n    - 140K\r\n    - 1000K\r\n    - Know When to Quit\r\n### Client\r\n- Added an overlay during gameplay that displays the server connection status\r\n- Connection status now properly updates upon failing to connect\r\n- Fixed connection info text fields not accepting backspaces\r\n- Fixed connection failure to locally hosted Archipelago servers\r\n- Fixed Double or Nothing mode unlocking upon beating the base game regardless of user options\r\n## Guides\r\n- [Info](<https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md>)\r\n- [Setup & Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)",
       "download_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.0.2/buckshot.apworld",
       "has_manifest": true,
       "hash_sha256": "71dbaed057b9775b593f4c7bf327fafb07d6da4bdf82792222d629daf6394d3d",
+      "html_url": "https://github.com/asdfwyay/APBuckshot/releases/tag/v0.0.2",
       "minimum_ap_version": "0.6.4",
       "prerelease": true,
       "size": 16755,
@@ -53,9 +59,11 @@
     },
     "v0.0.3r2": {
       "created_at": "2026-01-15T04:24:07Z",
+      "description": "**Hotfix 1 (1/15/2026):** Fixed KeyError during generation when attempting to generate a game where custom goal amount is set to \u226470000 and achievements are disabled. This does not affect the client.\r\n\r\n## Features\r\n- **Consumable Item Randomization**\r\n    - Item unlocks are shuffled randomly\r\n- **Steam Achievements**\r\n    - Obtain items from completing achievements\r\n- **Shotsanity**\r\n    - Obtain items from successful shots\r\n- **Customizable Goal**\r\n    - Choose from one of the following goals:\r\n        - **70K**: Beat the game\r\n        - **140K**: Beat 6 Double or Nothing rounds in a row\r\n        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million\r\n        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score\r\n- **Consumable Item Logic**\r\n    - Customize how many consumable are expected to beat a certain number of rounds\r\n## Changelog\r\n### World\r\n- Fixed bug where an extra filler item would be added to the item pool\r\n### Client\r\n- Added an in-game item tracker\r\n    - Press **TAB** while in-game to open the tracker\r\n    - Hover over an icon to display the item name, model, and collection status\r\n- Added a sound effect that plays when you fail to roll an item\r\n- Added a version label in the main menu\r\n## Guides\r\n- [Info](<https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md>)\r\n- [Setup & Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)",
       "download_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.0.3/buckshot.apworld",
       "has_manifest": true,
       "hash_sha256": "b97f4bcd87ac066cbdaa9e565d0823f929fdc6ba5acceb467312e248a01ea155",
+      "html_url": "https://github.com/asdfwyay/APBuckshot/releases/tag/v0.0.3",
       "minimum_ap_version": "0.6.4",
       "size": 17122,
       "source_url": "https://api.github.com/repos/asdfwyay/APBuckshot",
@@ -66,9 +74,11 @@
     },
     "v0.1.0": {
       "created_at": "2026-02-09T06:05:18Z",
+      "description": "## Features\r\n- **Consumable Item Randomization**\r\n    - Item unlocks are shuffled randomly\r\n- **Steam Achievements**\r\n    - Obtain items from completing achievements\r\n- **Shotsanity**\r\n    - Obtain items from successful shots\r\n- **Customizable Goal**\r\n    - Choose from one of the following goals:\r\n        - **70K**: Beat the game\r\n        - **140K**: Beat 6 Double or Nothing rounds in a row\r\n        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million\r\n        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score\r\n- **Consumable Item Logic**\r\n    - Customize how many consumable are expected to beat a certain number of rounds\r\n- **Custom Mechanics**\r\n    - Unique gameplay features specific to the Archipelago world\r\n## Changelog\r\n### World\r\n#### Custom Mechanics\r\n- Added items/options for custom mechanics, aimed to make the game more sync-friendly.\r\n    - **Item Luck**: Increase the likelihood of pulling an item\r\n    - **Life Bank**: Spend charges from your life bank to replenish your health\r\n#### Traps\r\n- Added traps and trap-related options\r\n    - **Stolen Package Trap**: The box will be empty the next time items are drawn\r\n    - **Schrodinger's Bullet Trap**: The loaded shell is randomized right before you shoot\r\n#### Other\r\n- Added **Death Link**\r\n- Merged live and blank shotsanity\r\n- Changed default shotsanity option to *\"balanced\"*\r\n- Clarified documentation about shotsanity in the player YAML\r\n### Client\r\n#### Custom Mechanics\r\n- Added functionality\r\n- Added info to the tracker displaying the current tier of item luck\r\n    - Accessible by opening the tracker and not hovering over an item\r\n- Added Life Bank UI\r\n    - Accessible by clicking on the lightning bolt near the top-left of the screen\r\n    - Visible only after first obtaining a *Life Bank Charge* item from the multiworld\r\n#### Traps\r\n- Added functionality\r\n- Added indicators to the bottom left of the screen displaying which traps are active\r\n#### Other\r\n- Added **Death Link** functionality\r\n    - When you lose all your health, you will send a death link.\r\n    - When receiving a death link, you will be killed by the dealer on your next turn.\r\n    - An indicator is visible if you are awaiting a death link.\r\n- Changed the in-game Archipelago connection fields to be persistent after the menu is closed and reopened\r\n## Guides\r\n- [Info](<https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md>)\r\n- [Setup & Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)",
       "download_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.1.0/buckshot.apworld",
       "has_manifest": true,
       "hash_sha256": "321a5e38242d9b4e92f32028e08a43e7337afcd573f72146f215fc9505b0b702",
+      "html_url": "https://github.com/asdfwyay/APBuckshot/releases/tag/v0.1.0",
       "minimum_ap_version": "0.6.4",
       "size": 18177,
       "source_url": "https://api.github.com/repos/asdfwyay/APBuckshot",
@@ -79,9 +89,11 @@
     },
     "v0.1.1": {
       "created_at": "2026-02-15T08:20:52Z",
+      "description": "**Hotfix 1 (2/15/2026):** Greatly increased the inbound buffer size of the web socket, allowing you to connect to large rooms without dropping packets.\r\n\r\n## Features\r\n- **Consumable Item Randomization**\r\n    - Item unlocks are shuffled randomly\r\n- **Steam Achievements**\r\n    - Obtain items from completing achievements\r\n- **Shotsanity**\r\n    - Obtain items from successful shots\r\n- **Customizable Goal**\r\n    - Choose from one of the following goals:\r\n        - **70K**: Beat the game\r\n        - **140K**: Beat 6 Double or Nothing rounds in a row\r\n        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million\r\n        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score\r\n- **Consumable Item Logic**\r\n    - Customize how many consumable are expected to beat a certain number of rounds\r\n- **Custom Mechanics**\r\n    - Unique gameplay features specific to the Archipelago world\r\n## Changelog\r\n### World\r\n- Added an error message when attempting to generate a single-player world with tight logic and few locations (no achievements or shotsanity)\r\n### Client\r\n- Added new functionality to Progressive Item Luck\r\n    - Progressive Item Luck now decreases the chance of the dealer drawing an item by 10% per tier (Up to a max of 30%)\r\n- Added new functionality to the Life Bank\r\n    - If you have charges in your Life Bank when getting death linked, you will be set to 1 hp instead of dying (and a charge will be used)\r\n- Added notifications when receiving an item\r\n- Added error notifications when connecting to a game\r\n- Changed the death link dialogue to an explanation for the cause of death\r\n- Fixed issue where the overlay and tracker would not unload when winning the game\r\n- Fixed issue where the player could interact with items or grab the shotgun during a death link\r\n- Fixed issue where using the Life Bank or tracker in the main menu or in heaven crashes the game\r\n- Fixed issue where the 'Cash Out' location wouldn't send, making 1000k and custom goals now possible without manual intervention\r\n## Guides\r\n- [Info](<https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md>)\r\n- [Setup & Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)",
       "download_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.1.1/buckshot.apworld",
       "has_manifest": true,
       "hash_sha256": "85c56a09d19541c005edd7b251db8a0770b84fe52955309347eaee86c3f2c819",
+      "html_url": "https://github.com/asdfwyay/APBuckshot/releases/tag/v0.1.1",
       "minimum_ap_version": "0.6.4",
       "size": 18385,
       "source_url": "https://api.github.com/repos/asdfwyay/APBuckshot",
@@ -92,9 +104,11 @@
     },
     "v0.1.2": {
       "created_at": "2026-02-21T03:00:46Z",
+      "description": "**Hotfix 1 (2/21/2026):** Actually/hopefully fixed crash during item drawing, which occurred due to a bug where the dealer could draw more items than they should have been able to.\r\n\r\n## Features\r\n- **Consumable Item Randomization**\r\n    - Item unlocks are shuffled randomly\r\n- **Steam Achievements**\r\n    - Obtain items from completing achievements\r\n- **Shotsanity**\r\n    - Obtain items from successful shots\r\n- **Customizable Goal**\r\n    - Choose from one of the following goals:\r\n        - **70K**: Beat the game\r\n        - **140K**: Beat 6 Double or Nothing rounds in a row\r\n        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million\r\n        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score\r\n- **Consumable Item Logic**\r\n    - Customize how many consumable are expected to beat a certain number of rounds\r\n- **Custom Mechanics**\r\n    - Unique gameplay features specific to the Archipelago world\r\n## Changelog\r\n### World\r\n- Added proper logic for the *Cash Out* location\r\n- Removed error message when attempting to generate a single-player world with tight logic and few locations (no achievements or shotsanity). It should just generate now when using those options.\r\n### Client\r\n- Checking *Chasing Losses* now also checks *Overdose*\r\n- Re-added Multiplayer button to the main menu\r\n    - The mod does not affect multiplayer (yet)\r\n## Guides\r\n- [Info](<https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md>)\r\n- [Setup & Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)",
       "download_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.1.2/buckshot.apworld",
       "has_manifest": true,
       "hash_sha256": "3494229c638d39e32003e7e3a3622823c3e5e0855c417614d43f687b36c9cd11",
+      "html_url": "https://github.com/asdfwyay/APBuckshot/releases/tag/v0.1.2",
       "minimum_ap_version": "0.6.4",
       "size": 19599,
       "source_url": "https://api.github.com/repos/asdfwyay/APBuckshot",

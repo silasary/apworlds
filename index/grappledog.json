@@ -7,9 +7,11 @@
   "versions": {
     "1.1.0": {
       "created_at": "2026-01-22T16:10:51Z",
+      "description": "Follow the instructions to use delta patcher\r\nhttps://github.com/marco-calautti/DeltaPatcher\r\nThis will set up Grapple dog for playing AP.\r\n\r\ninstall the apworld, this includes a client that needs to be running for the game to connect to.\r\nOnce the client is running, start Grapple Dog and use the new menu option to connect to the client.\r\n\r\nThe world select menu now has an extra stat showing completes checks / available checks.\r\nThis is useful for checking where to go next.\r\n\r\nreport any issues on the discord thread\r\n\r\nDebug options for disabling gameplay features\r\nHold Shift + the following\r\n1 - Grapple Hook\r\n2 - Swim\r\n3 - Wall Climb\r\n4 - Wall Jump/Slide\r\n5 - Slam\r\n6 - Sprint\r\n7 - Carrots\r\n8 - Bounce Pads\r\n9 - Balloons\r\n0 - Cannons",
       "download_url": "https://github.com/ProfDeCube/GrappleDog-Archipelago-Manual/releases/download/1.1.0/grappledog.apworld",
       "has_manifest": false,
       "hash_sha256": "0a1e8fd67bc36031fc8fc0b9f171dca1304affafa58b7c60747c83e518d7d139",
+      "html_url": "https://github.com/ProfDeCube/GrappleDog-Archipelago-Manual/releases/tag/1.1.0",
       "prerelease": true,
       "size": 48276,
       "source_url": "https://api.github.com/repos/ProfDeCube/GrappleDog-Archipelago-Manual",
@@ -59,9 +61,11 @@
     },
     "1.2.0r4": {
       "created_at": "2026-01-22T16:10:51Z",
+      "description": "# This is not a manual implementation\r\n# As such it is the final release on the manual repo\r\n## All future changes will be in a dedicated AP fork\r\n\r\n## This is the first testing release for movement rando, Tracker to be updated soon\r\n\r\n--------\r\n\r\n## Custom APWorld Installation\r\n\r\nPlace the provided `.apworld` file into:\r\n\r\n```\r\nArchipelago/custom_worlds/\r\n```\r\n\r\n* Do **not** extract the file.\r\n* Restart Archipelago after adding it.\r\n* Confirm the world appears in the generator game list.\r\n\r\nIf it does not load:\r\n\r\n* Ensure it is not nested inside another directory.\r\n* Confirm the file extension is `.apworld`.\r\n* Check Archipelago logs for world load errors.\r\n\r\n---\r\n\r\n## Grapple Dog \u2013 Applying the Patch\r\n\r\nPatches are distributed as `.xdelta` files and require a clean base file matching the specified game version.\r\n\r\n### Requirements\r\n\r\n* Clean installation of Grapple Dog \r\n* Target file specified by the patch (`data.win` for GameMaker title)\r\n* delta patcher (https://github.com/marco-calautti/DeltaPatcher)\r\n\r\n### Procedure\r\n\r\n1. Back up the original target file.\r\n2. Apply the `.xdelta` patch to the clean file.\r\n3. Replace the original file if a new file is generated.\r\n\r\nIf patching fails:\r\n\r\n* Version mismatch is the most common cause.\r\n* Confirm the correct base file was used.\r\n* Ensure the file has not been modified previously.\r\n* Validate files through steam and try again\r\n\r\n---\r\n\r\n## PopTracker Pack Installation\r\n\r\nInstall the custom pack into:\r\n\r\n```\r\nPopTracker/packs/\r\n```\r\n\r\nAfter placement:\r\n\r\n* Launch PopTracker.\r\n* Load the pack.\r\n* Connect to the Archipelago session if applicable.",
       "download_url": "https://github.com/ProfDeCube/GrappleDog-Archipelago-Manual/releases/download/1.2.0/grappledog.apworld",
       "has_manifest": false,
       "hash_sha256": "4cc4f3146a72d5b95556637d50d1238559d7fa801e22e0afa2a60ef854be3f76",
+      "html_url": "https://github.com/ProfDeCube/GrappleDog-Archipelago-Manual/releases/tag/1.2.0",
       "prerelease": true,
       "size": 95887,
       "source_url": "https://api.github.com/repos/ProfDeCube/GrappleDog-Archipelago-Manual",

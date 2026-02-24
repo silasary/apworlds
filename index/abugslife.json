@@ -9,9 +9,11 @@
   "versions": {
     "v0.1.0": {
       "created_at": "2025-12-29T01:27:51Z",
+      "description": "# A Bug's Life (PS1 1998) - Archipelago Implementation v0.1.0\r\n\r\nThis is the initial experimental release of an apworld, client and lua for A Bug's Life for BizHawk. This supports only NTSC-U (US release) of the original game and requires Windows and BizHawk to play.\r\n\r\nRelease: https://github.com/WalWalrus/ABLAP/releases/tag/0.1.0\r\nSetup and Requirements: https://github.com/WalWalrus/ABLAP/blob/main/README.md\r\n\r\n## What checks are supported?\r\n- All levels completed\r\n- All grain collected\r\n- All FLIK letters collected\r\n- All enemies killed\r\n- Grainsanity (check after x amount of grain collected per level - default: 10)\r\n- Individual FLIK letters collected per level\r\n- 25%, 50%, 75% and/or 100% of enemies killed in each level\r\n\r\n## What goals are possible?\r\n- All levels complete (This does not include training)\r\n\r\n## What's in the item pool?\r\n- All brown, green, blue, purple and yellow seed tokens in each level (up to the level max)\r\n- All berry upgrades in each level (for levels that do not have 4 purple seeds/3 yellow seeds)\r\n\r\n## Known Bugs\r\n- Receiving seed tokens in some levels causes the UI to have issues but is only cosmetic.\r\n- Some experimental checks will be unreachable due to lack of logic surrounding their collection.",
       "download_url": "https://github.com/WalWalrus/ABLAP/releases/download/v0.1.0/abugslife.apworld",
       "has_manifest": false,
       "hash_sha256": "bb80ac1ddde7498c60b1f088666180f185a026b31318410c188627e001f07db7",
+      "html_url": "https://github.com/WalWalrus/ABLAP/releases/tag/v0.1.0",
       "prerelease": true,
       "size": 6984,
       "source_url": "https://api.github.com/repos/WalWalrus/ABLAP",
@@ -22,9 +24,11 @@
     },
     "v0.1.1": {
       "created_at": "2025-12-29T03:48:17Z",
+      "description": "### If you are patching v0.1.0 you only need to replace abugslife.apworld in your Archipelago `worlds/` folder.\r\n\r\n_ABugsLife_Client.zip and ABL.lua are **unchanged** from v0.1.0._\r\n\r\nBug Fixes:\r\n\r\n- Removed \"All Enemies\" from location checks",
       "download_url": "https://github.com/WalWalrus/ABLAP/releases/download/v0.1.1/abugslife.apworld",
       "has_manifest": false,
       "hash_sha256": "62fecbd3ee6483f9ed7ba28a8e966490d37aad589df69d9da37ad01c2e82809a",
+      "html_url": "https://github.com/WalWalrus/ABLAP/releases/tag/v0.1.1",
       "prerelease": true,
       "size": 6979,
       "source_url": "https://api.github.com/repos/WalWalrus/ABLAP",
@@ -35,9 +39,11 @@
     },
     "v0.1.2": {
       "created_at": "2025-12-29T03:48:17Z",
+      "description": "This release contains both Client (ABugsLife_Client.exe) and APWorld changes. It is recommended to update both.\r\n**Note:** This is the minimum APWorld version required to run with Archipelago 0.7.0+\r\n\r\n### Improvements\r\n\r\n- Unified all checks under a single, consistent logic system\r\n- Added caps and requirements to all level data\r\n- Improved sphere generation and progression balancing accuracy\r\n\r\n### Bug Fixes\r\n\r\n- Fixed a problem with upgrade items acting as endless filler despite being capped in-game\r\n- Added new location ids to avoid potential overlapping\r\n- Resolved progression dead-ends caused by mismatched caps vs required checks",
       "download_url": "https://github.com/WalWalrus/ABLAP/releases/download/v0.1.2/abugslife.apworld",
       "has_manifest": true,
       "hash_sha256": "459d855f4553842c10866f6ed611012c890da9de0e53c219c38097aded01f89f",
+      "html_url": "https://github.com/WalWalrus/ABLAP/releases/tag/v0.1.2",
       "minimum_ap_version": "0.6.1",
       "prerelease": true,
       "size": 14104,

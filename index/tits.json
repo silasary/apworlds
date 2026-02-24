@@ -6,9 +6,11 @@
   "versions": {
     "tits-v.0.8.0": {
       "created_at": "2025-03-28T16:33:40Z",
+      "description": "A Text Client that interfaces with [T.I.T.S](https://remasuri3.itch.io/tits) to throw items when certain triggers in a multiworld occur.\r\n\r\n# Usage:\r\n1. Run T.I.T.S. and enable the API through Settings menu. You may specify a port, or leave it at the default value of 42069\r\n2. Define any number of Triggers with the specified names below, and adjust any settings you want. The entire \"Trigger On\" section is not relevant for API triggers and can be ignored.\r\n3. Install the attached APWorld\r\n4. Run the `T.I.T.S. Integrated Text Service` from the Archipelago Launcher\r\n5. Connect to a running Multiworld game. If T.I.T.S. had its port number left at default, it will auto-connect. Otherwise, you can use the `/tits-connect [optional_port]` command to connect on a different port.\r\n\r\nOnce connected, any time one of the triggering conditions is met, it will execute that trigger!\r\n\r\n# Trigger Endpoints\r\nThese are the Trigger names that will be called by the Client, and when. You can also find this list in the client itself with the command `/tits_help`\r\n\r\n- **AP-Receive** - When receiving any item\r\n- **AP-Receive-Progression**- When receiving a progression item\r\n- **AP-Receive-Useful**- When receiving a useful item\r\n- **AP-Receive-Filler**- When receiving a filler item\r\n- **AP-Receive-Trap**- When receiving a trap item\r\n- **AP-Goal**- When you have achieved your goal\r\n- **AP-Deathlink**- When a Deathlink is received, regardless of source (including yourself!)\r\n\r\n_All_ triggers will be run when the condition is met, so if you have triggers for both `AP-Receive` and `AP-Receive-Progression`, both will fire when you receive a progression item. The intention is to use `AP-Receive` only when you want the same trigger to run regardless of item tier, and to use the specified ones instead when you want them to behave differently. Any triggers that are not set up in T.I.T.S. will be quietly skipped. As such, all are optional.",
       "download_url": "https://github.com/digiholic/Archipelago/releases/download/tits-v.0.8.0/tits.apworld",
       "has_manifest": false,
       "hash_sha256": "573065a109f18788b951866c45157289c623f2731067d58efac83b76c80077cc",
+      "html_url": "https://github.com/digiholic/Archipelago/releases/tag/tits-v.0.8.0",
       "size": 8960,
       "source_url": "https://api.github.com/repos/digiholic/Archipelago",
       "tag": "tits-v.0.8.0",
@@ -18,9 +20,11 @@
     },
     "tits-v0.8.1": {
       "created_at": "2025-04-07T20:28:49Z",
+      "description": "A Text Client that interfaces with [T.I.T.S](https://remasuri3.itch.io/tits) to throw items when certain triggers in a multiworld occur.\r\n\r\n# Usage:\r\n1. Run T.I.T.S. and enable the API through Settings menu. You may specify a port, or leave it at the default value of 42069\r\n2. Define any number of Triggers with the specified names below, and adjust any settings you want. The entire \"Trigger On\" section is not relevant for API triggers and can be ignored.\r\n3. Install the attached APWorld\r\n4. Run the `T.I.T.S. Integrated Text Service` from the Archipelago Launcher\r\n5. Connect to a running Multiworld game. If T.I.T.S. had its port number left at default, it will auto-connect. Otherwise, you can use the `/tits-connect [optional_port]` command to connect on a different port.\r\n\r\nOnce connected, any time one of the triggering conditions is met, it will execute that trigger!\r\n\r\n# Trigger Endpoints\r\nThese are the Trigger names that will be called by the Client, and when. You can also find this list in the client itself with the command `/tits_help`\r\n\r\n- **AP-Receive** - When receiving any item\r\n- **AP-Receive-Progression**- When receiving a progression item\r\n- **AP-Receive-Useful**- When receiving a useful item\r\n- **AP-Receive-Filler**- When receiving a filler item\r\n- **AP-Receive-Trap**- When receiving a trap item\r\n- **AP-Goal**- When you have achieved your goal\r\n- **AP-Deathlink**- When a Deathlink is received, regardless of source (including yourself!)\r\n\r\n_All_ triggers will be run when the condition is met, so if you have triggers for both `AP-Receive` and `AP-Receive-Progression`, both will fire when you receive a progression item. The intention is to use `AP-Receive` only when you want the same trigger to run regardless of item tier, and to use the specified ones instead when you want them to behave differently. Any triggers that are not set up in T.I.T.S. will be quietly skipped. As such, all are optional.\r\n\r\n# Changes v0.8.1:\r\n- Added Deathlink tag so client can properly receive Deathlink messages",
       "download_url": "https://github.com/digiholic/Archipelago/releases/download/tits-v0.8.1/tits.apworld",
       "has_manifest": false,
       "hash_sha256": "1084cdba7ad43e37e5fd37d763c4d4371c0751a0f1bc03dfd2daef0149499d0b",
+      "html_url": "https://github.com/digiholic/Archipelago/releases/tag/tits-v0.8.1",
       "size": 8964,
       "source_url": "https://api.github.com/repos/digiholic/Archipelago",
       "tag": "tits-v0.8.1",
@@ -30,9 +34,11 @@
     },
     "tits-v0.8.2": {
       "created_at": "2025-09-06T02:30:14Z",
+      "description": "Bugfix version, mostly to fix race conditions caused by firing off multiple async trigger endpoints at once. Should fix most problems with items not triggering throws.\r\n\r\n# Changes in this version\r\n- Changed `AP-Received` trigger to take priority over others, if there is an endpoint for it, no other trigger will run for that item\r\n- Changed Item Flag handling so things marked both `Progression` and `Useful` do not fire two events at once\r\n- Will attempt to reacquire T.I.T.S. endpoints if an item is received but no trigger is found.\r\n- Added `/tits_debug` command to enable verbose logging.",
       "download_url": "https://github.com/digiholic/Archipelago/releases/download/tits-v0.8.2/tits.apworld",
       "has_manifest": false,
       "hash_sha256": "f76b0b386de3830538bc30ba56fb495180188880e06d5dad8060778bbe43bbb6",
+      "html_url": "https://github.com/digiholic/Archipelago/releases/tag/tits-v0.8.2",
       "prerelease": true,
       "size": 9474,
       "source_url": "https://api.github.com/repos/digiholic/Archipelago",

@@ -7,9 +7,11 @@
   "versions": {
     "0.1.0": {
       "created_at": "2025-08-31T00:32:36Z",
+      "description": "Includes:\r\nAll chapters supported except Hell.\r\nSeveral victory conditions, including completing x number of major side quests, escape spellhold, and defeat firkraag/kangaxx/irenicus.\r\n\r\nRandomized Items:\r\nKey items\r\nArea unlocks\r\nCompanions (optional)\r\nEquipment (optional)\r\nGold (filler)\r\n\r\nLocations:\r\nQuest progress\r\nDefeating enemies\r\nContainer/room looting (optional)\r\nCompanion Quests (optional)\r\n\r\nOptions:\r\nChoose how many chapters to include\r\nInclude/exclude Enhanced Edition content \r\nInclude/exclude Chapter 1 / Irenicus Dungeon\r\nInclude/exclude City of Caverns / Sahaguin City in Chapter 4\r\nProgressive equipment based on the +x bonuses\r\nCollector\u2019s edition items \r\nSupport for Gibberlings 3 Item Randomizer mod\r\n\r\nGame progression is locked by area unlocks and key items. You are expected to use the cheat console to give yourself received items. All relevant items have the item code in the name, so you won\u2019t have to look them up. See the readme for how to use the cheat console.\r\n\r\nAlternatively, there is an optional mod I made for the game. The GO_AP mod adds APITEM to Imoen\u2019s inventory at the start of the game and to Ribald\u2019s store in Waukeen\u2019s Promenade. When you right-click -> Converse with this item in your inventory, it opens a menu where you can tell it which items you\u2019ve received, and it\u2019ll give them to you. It can also teleport you to unlocked areas for faster travel. The mod is meant to be easier than using the cheat console since you won\u2019t have to type anything. See the setup guide for instructions on installing the mod.\r\n\r\nKnown issues:\r\nIf you choose to start with companions, you have to click the \u201cStarting Companion\u201d location checks to receive them. \r\nIf you exclude Irenicus's Dungeon, you have to click the \u201cWaukeen's Promenade Unlock\u201d location check to immediately receive the Waukeen's Promenade Unlock. This will put Waukeen's Promenade into logic.\r\nIf you exclude Irenicus's Dungeon, Sphere 1 is pretty big. I\u2019m open to suggestions on how to lock it down. \r\nItem categories for options you didn\u2019t choose will still appear in the Manual Client. I tried my best to organize the items so the same type of items are grouped together.\r\nWatcher's Keep checks are not implemented yet.\r\nSome location names are too long so they are cut off in the Manual Client. This is a limitation of the Manual Client.\r\nIn the generated template yaml, the goal option shows up at the bottom of the option list.\r\nWhen Equipment is included, only one \u2018count\u2019 of each equipment is put in the item pool, even if more copies exist in the vanilla game. I can adjust this upon request (thinking mostly about boots of speed) but for now it's just 1 for everything. \r\n\r\nGO_AP mod known issues:\r\nThe GO_AP conversation menu might not show a specific item if you already have it in your inventory. Simply drop the duplicate item and then it should show up in the menu.\r\nThe GO_AP mod currently does not include scrolls/potions. \r\nThe GO_AP mod will always put the items into the 1st party slot\u2019s inventory and will force something at random onto the ground if there\u2019s no room.\r\nEquipment received through the mod is always unidentified.\r\nThere is no option to receive the gold filler through the mod.\r\n\r\nSince this is the initial release, I expect issues. I\u2019m expecting typos especially with item codes for the cheat console and the GO_AP mod. Please report these issues!\r\n\r\n**Full Changelog**: https://github.com/Angevon-1/manual_baldursgate2_angevon/commits/0.1.0",
       "download_url": "https://github.com/Angevon-1/manual_baldursgate2_angevon/releases/download/0.1.0/manual_baldursgate2_angevon.apworld",
       "has_manifest": false,
       "hash_sha256": "8e88739430f0319df8e837651dddc57f1225449b7471b618090398ce4d2e5838",
+      "html_url": "https://github.com/Angevon-1/manual_baldursgate2_angevon/releases/tag/0.1.0",
       "size": 2061970,
       "source_url": "https://api.github.com/repos/Angevon-1/manual_baldursgate2_angevon",
       "tag": "0.1.0",
@@ -19,9 +21,11 @@
     },
     "0.2.0": {
       "created_at": "2025-09-11T14:07:24Z",
+      "description": "Changes to apworld and yaml:\r\n- Added a new option to handle miscellaneous items.\r\n- Some logic fixes (turns out Rayic Gethras's house isn't available to loot until you're on Edwin's quest to kill him)\r\n- Fixes for generation errors.",
       "download_url": "https://github.com/Angevon-1/manual_baldursgate2_angevon/releases/download/0.2.0/manual_baldursgate2_angevon.apworld",
       "has_manifest": false,
       "hash_sha256": "38c69a672445a0b3fd0650a484f40882374e65e9033f449d105332180e234f3d",
+      "html_url": "https://github.com/Angevon-1/manual_baldursgate2_angevon/releases/tag/0.2.0",
       "size": 2129607,
       "source_url": "https://api.github.com/repos/Angevon-1/manual_baldursgate2_angevon",
       "tag": "0.2.0",
@@ -31,9 +35,11 @@
     },
     "0.3.0": {
       "created_at": "2025-11-03T03:47:40Z",
+      "description": "Changes to apworld and yaml:\r\nFixed generation failures when include_irenicus_dungeon was false. (i.e. fixed the start_inventory).\r\nAdded support for up to 29 different mod npcs to be included as randomized companions.\r\n\r\nChanges to GO_AP mod:\r\nFixed scimitars which were showing up as short swords instead.\r\n",
       "download_url": "https://github.com/Angevon-1/manual_baldursgate2_angevon/releases/download/0.3.0/manual_baldursgate2_angevon.apworld",
       "has_manifest": false,
       "hash_sha256": "510f0c4ebbc63fe2caa323a9be798e795d787a4622e59271efe9c2c792dfbc80",
+      "html_url": "https://github.com/Angevon-1/manual_baldursgate2_angevon/releases/tag/0.3.0",
       "size": 2378691,
       "source_url": "https://api.github.com/repos/Angevon-1/manual_baldursgate2_angevon",
       "tag": "0.3.0",
