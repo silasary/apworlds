@@ -63,7 +63,9 @@ if args.spreadsheet:
         parsed = csv.DictReader(rows)
         all_rows.extend(parsed)
     for row in all_rows:
-        if wheretofind := (row.get("Where can you get the APWorld and Client?", "").strip() or row.get("Where can you get the APWorld or program?", "").strip()):
+        if wheretofind := (row.get("Where can you get the APWorld and Client?", "").strip() or row.get("Where can you get the APWorld or program?", "").strip()) or (
+            row.get("APWorld Link", "").strip()
+        ):
             repolinks = re.findall(REPO_REGEX, wheretofind)
             queue.extend(repolinks)
 
