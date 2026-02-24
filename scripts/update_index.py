@@ -7,6 +7,7 @@ import pathlib
 import sys
 import traceback
 
+import urllib.parse
 import yaml
 from common import NoWorldsFound, parse_version, update_index_from_github, repositories, load_manifest, update_index_from_changelog
 from write_docs import write_docs
@@ -195,6 +196,9 @@ for w in recent_worlds:
     fe.updated(w["created_at"])
     if meta[stem]["authors"]:
         fe.author([{"name": author} for author in meta[stem]["authors"]], replace=True)
+    else:
+        org = urllib.parse.urlparse(link).path.split("/")[1]
+        fe.author({"name": org})
     used_ids.add(link)
 
 fg.atom_file("recent.atom", pretty=True)
