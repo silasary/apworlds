@@ -34,7 +34,7 @@ repos:
     - id: check-merge-conflict
       name: Merge Conflicts
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.15.1'
+    rev: 'v0.15.2'
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
@@ -46,7 +46,7 @@ repos:
         language: python
         types: [ file, python ]
   - repo: https://github.com/PyCQA/autoflake
-    rev: v2.3.1
+    rev: v2.3.3
     hooks:
         - id: autoflake
           args: [--remove-all-unused-imports, --in-place, --ignore-init-module-imports]
