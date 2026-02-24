@@ -35,7 +35,6 @@ jobs:
     - name: Scan Forks
       run: |
         python3 scripts/add_worlds.py --scan-forks --unready
-        python3 scripts/tag_worlds.py
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v7
       with:
