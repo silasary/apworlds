@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "LiquidCat64"
+  ],
   "description": "Castlevania: Legacy of Darkness is an expanded \"director's cut\" edition of Castlevania 64, featuring new characters,\nnew and heavily altered stages, new bosses, and more. In addition to Reinhardt and Carrie from the prior game, you\ncan now play as Cornell, a man-beast who sets out on a quest to rescue his sister, and Henry, a gun-toting knight\ntasked by the church to rescue kidnapped children.",
   "game": "Castlevania - Legacy of Darkness",
   "github": "https://github.com/LiquidCat64/LiquidCatipelago",
@@ -36,6 +39,21 @@
       "source_url": "https://api.github.com/repos/LiquidCat64/LiquidCatipelago",
       "tag": "cvlod_v1.0hotfix",
       "title": "CVLoD apworld v1.0 hotfix",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "cvlod_v1.1": {
+      "created_at": "2026-02-08T17:39:49Z",
+      "description": "Relatively small update with some new things that might be appreciated, especially if you are a Cornell fan!\r\n\r\nAdded two new options:\r\n- `Detransform at Will` (true or false): If enabled, Cornell will be able to detransform from wolf to human at any time by pressing L again. This should make his wolf form a lot more viable to use!\r\n- `Restore Cornell Fall Voice` (true or false): So, in the vanilla game, the voice clip you normally hear when falling as Cornell is the same as Reinhardt's and Henry's. But, fun fact: a unique falling voice clip for him actually does, in fact, exist in the game's files! And it has an assigned ID and everything, so why they didn't use it is beyond me. Enabling this option will enable the voice clip when falling as Cornell.\r\n\r\nThe following fixes and adjustments were made:\r\n- Added two new text spots at the ends of Villa and Castle Center that will tell you which stage each of the available branching paths will lead you to, so testing them yourself should no longer be necessary to find out. The text spots are on the Villa coffin and behind the Castle Center elevator respectively.\r\n- Changing character in the warp menu while Cornell is in wolf form is now prevented; he MUST detransform first to allow character changing again.\r\n- Whether the Villa maze enemies that only show up once the child Henry escort begins are placed is now dependent on the `Villa Maze Kid` option, not the Villa State option like before.\r\n- Very slightly moved the Gardener actor so that entering his spawn radius from the Villa servant entrance door area is now impossible. This prevents a possible vanilla softlock wherein grabbing the Copper Key location on the servants' path on Hard Mode and then spawning him in this way would trigger the Hard-exclusive fight with him and lock all doors/gates, trapping you entirely in a spot wherein he cannot actually be fought.\r\n- Fixed a vanilla US-exclusive bug wherein trying to pause after child Henry dies and before the fadeout concludes would crash the game. Pausing is now disabled entirely during this moment, which is how JP and PAL also fixed it.\r\n- Fixed `Tower of Execution: Top balcony last excavator pillar` not spawning as the correct item and not setting its flag properly on Hard Mode. As far as difficulty-specific pickups go, evidently I missed this one...\r\n- Fixed the Tower of Sorcery cyan diamonds not being properly removed from the created locations pool if Empty Breakables is off.\r\n- `Castle Wall: Central rampart broken pillar` is now considered a sub-weapon location, instead of a regular one.\r\n\r\nNote that seeds generated on previous versions will be incompatible with this one, as I changed an item ID as part of the Castle Wall location. Enjoy and as always, let me know if you find issues!\r\n",
+      "download_url": "https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v1.1/cvlod.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4e06ee2778087449ec37b873ec100bb8ae10e48f3928a1617e123d95430bcfc6",
+      "html_url": "https://github.com/LiquidCat64/LiquidCatipelago/releases/tag/cvlod_v1.1",
+      "minimum_ap_version": "0.6.3",
+      "size": 210623,
+      "source_url": "https://api.github.com/repos/LiquidCat64/LiquidCatipelago",
+      "tag": "cvlod_v1.1",
+      "title": "CVLoD apworld v1.1",
       "version_simple": "0.1.0",
       "world_version": "0.1.0"
     },

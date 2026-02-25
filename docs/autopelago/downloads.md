@@ -15,6 +15,9 @@
 - <a href="https://github.com/airbreather/Autopelago/releases/download/v0.11.11/autopelago.apworld">https://github.com/airbreather/Autopelago/releases/download/v0.11.11/autopelago.apworld</a>
 
 #### v0.11.0
+- <a href="https://github.com/airbreather/Autopelago/releases/download/v0.11.12/autopelago.apworld">https://github.com/airbreather/Autopelago/releases/download/v0.11.12/autopelago.apworld</a>
+
+#### v0.11.0
 - <a href="https://github.com/airbreather/Autopelago/releases/download/v0.11.2/autopelago.apworld">https://github.com/airbreather/Autopelago/releases/download/v0.11.2/autopelago.apworld</a>
 
 #### v0.11.0
@@ -37,9 +40,6 @@
 
 #### v0.11.0
 - <a href="https://github.com/airbreather/Autopelago/releases/download/v0.11.9/autopelago.apworld">https://github.com/airbreather/Autopelago/releases/download/v0.11.9/autopelago.apworld</a>
-
-#### v0.11.0
-- <a href="https://github.com/airbreather/Autopelago/releases/download/v0.11.12/autopelago.apworld">https://github.com/airbreather/Autopelago/releases/download/v0.11.12/autopelago.apworld</a>
 
 #### v0.10.4
 - <a href="https://github.com/airbreather/Autopelago/releases/download/v0.10.4/autopelago.apworld">https://github.com/airbreather/Autopelago/releases/download/v0.10.4/autopelago.apworld</a>
