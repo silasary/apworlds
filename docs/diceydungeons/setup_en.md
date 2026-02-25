@@ -20,11 +20,15 @@ Launch the Dicey Dungeons Client from Archipelago, add the URL:Port and your slo
 Your Dicey Dungeons installation path needs to be configured with client command `/install_location [install location]`.
 If you installed into the default Steam installation location on your C: drive, you can skip this.
 
+If your installation path has spaces in it, which is very likely, you will have to wrap the [install location] in quotes. For example:
+
+`/install_location "C:\Program Files (x86)\Steam\steamapps\common\Dicey Dungeons"`
+
 You then need to patch your local installation with client command `/patch`.
 
 Finally, launch the game with `/dicey`, and you're off and running!
 
-## Helpful client commands
+## Helpful commands
 
-- `/missing Completed` will show you which episodes still need to be beaten.
+- `!missing Completed` will show you which episodes still need to be beaten.
 

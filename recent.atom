@@ -2,157 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-02-24T12:30:06.129566+00:00</updated>
+  <updated>2026-02-25T00:58:28.736225+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.4.0</id>
-    <title>YAYARG v2.4.0</title>
-    <updated>2026-02-21T15:37:52+00:00</updated>
-    <author>
-      <name>Thedrummonger</name>
-    </author>
-    <content>## Yet Another YARG AP V2.4.0&#13;
-### APWorld Changes&#13;
-- New Song Pool settings: `Min Time` and `Max Time`. Lets you define the minimum and maximum song length (in seconds) allowed in the pool.&#13;
-- New setting: `Song Pack Percentage`. Choose what percentage of songs unlock as part of a song pack instead of the previous all-or-nothing behavior.&#13;
-- New setting: `Extra Song Unlock Percentage`. Adds a second copy of a percentage of your song unlock items to the pool.&#13;
-- New *experimental* setting `Max Setlist Time`: Limits total setlist duration; removes songs until the total time is at or below the configured maximum.&#13;
-  - Must be added to the yaml and configured manually; can easily cause generation issues if not used carefully.&#13;
-- The selected goal song has been added to the spoiler log.&#13;
-- The spoiler log now lists what songs are unlocked from each song pack.&#13;
-- The base YARG setlist now always loads into the APWorld allowing unit tests and fuzzer runs pass properly.&#13;
-- Fix: Prevent song distribution from stealing plando’d goal songs or pool inclusions to fill other pools.&#13;
-- Fix: The `YAYARG Song Data` folder is now always created when the world is loaded.&#13;
-- Fix: No longer create locations and items for for songs on instruments they don't have charts for.&#13;
-&#13;
-### Client Changes&#13;
-- Add a soft Song cap of 500 to the YAML creator. This can be bypassed, but will warn of issues with larger song list.&#13;
-- The keybind to open the connection window can now be remapped in the BepInEx config &#13;
-  - installation/BepInEx/config/thedrummonger.yarg.archipelago.cfg&#13;
-- Increased arbitrary setting caps in the YAML Creator to match APWorld limits.&#13;
-- The client will now refuse to connect to worlds generated with a different version.&#13;
-- Added a toggle to set what triggers a death link (client only toggle for now, no yaml setting) (#2) @ihavespoons&#13;
-- Fix: Restart Trap crash (hopefully for real this time).&#13;
-- Fix: Reload the song library on disconnect to remove AP headers.&#13;
-- Fix: Clamp any songs with negative intensity values to 0. Should fix Guitar Hero 1 - 3 exports not being recognized as valid songs.&#13;
-- Fix: Connection no longer blocks the game tread (#1) @alexkibler&#13;
-&#13;
-Tested against [YARG nightly b3525](https://github.com/YARC-Official/YARG-Bleedingedge/releases/tag/b3525)&#13;
-***Newer version may be incompatible.***&#13;
-&#13;
-#### ⚠️ Warning!&#13;
-You **must** regenerate your song export list by rescanning your songs in YARG after installing the new plugin for this release.  &#13;
-It’s also recommended to delete and fully replace any older versions of the YAML Creator and its cache file.&#13;
-&#13;
-If you don’t, world generation **will** fail.&#13;
-&#13;
-This version is **not compatible with older worlds.**&#13;
-&#13;
-Setup Guide:&#13;
-https://github.com/Thedrummonger/Archipelago/blob/YARGV2/worlds/yayarg/docs/guide_en.md</content>
-    <link href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SDMichaud/Archipelago-MGS/releases/tag/v0.7.0</id>
-    <title>Metal Gear Solid v0.7.0</title>
-    <updated>2026-02-21T17:30:01+00:00</updated>
-    <author>
-      <name>SDMichaud</name>
-    </author>
-    <content>## Version 0.7.0 - First Release!&#13;
-&#13;
-### Install&#13;
-Follow the Archipelago instructions for [Playing with custom worlds](https://archipelago.gg/tutorial/Archipelago/setup_en#playing-with-custom-worlds).  &#13;
-Afterwards, ensure you select [Generate Template Options](https://archipelago.gg/tutorial/Archipelago/setup_en#creating-a-yaml) from the Archipelago Launcher to generate a default Metal Gear Solid YAML option file for editing.&#13;
-&#13;
-### Setup&#13;
-The Setup guide for this Archipelago mod can be found [here](https://github.com/SDMichaud/Archipelago-MGS/blob/main/worlds/mgs/docs/setup_en.md).&#13;
-&#13;
-### </content>
-    <link href="https://github.com/SDMichaud/Archipelago-MGS/releases/tag/v0.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Battlecats59/SS_APWorld/releases/tag/v0.5.5</id>
-    <title>Skyward Sword v0.5.5</title>
-    <updated>2026-02-21T17:35:19+00:00</updated>
-    <author>
-      <name>Battlecats59</name>
-    </author>
-    <content>## v0.5.5 [Alpha]&#13;
-&#13;
-This version is only compatible with Archipelago 0.6.5 or greater!!&#13;
-&#13;
-Report any issues to the Skyward Sword channel under custom worlds in the AP discord server.&#13;
-&#13;
-For setup instructions, visit [the SS AP Setup Guide](https://github.com/Battlecats59/SSArchipelago/blob/ss/worlds/ss/docs/setup_en.md).&#13;
-&#13;
-## What has changed? (v0.5.5)&#13;
-- Logic revamp, no longer using eval() function, which brings us closer to core eligibility&#13;
-- Updated setup guide - new tutorial video by bcats&#13;
-- Fixed client connection bug regarding hints ( by Harmjan387 - see [#42](https://github.com/Battlecats59/SSArchipelago/pull/42) )&#13;
-- Fixed logic bug regarding Eldin starting statues ( by bcats - see [this commit](https://github.com/Battlecats59/SSArchipelago/commit/52d7a057c3b80d911d79de70e4e6d53681d65ff9) )&#13;
-&#13;
-## What has changed? (v0.5.4)&#13;
-- WII CONSOLE SUPPORT! ( by YourAverageLink - see [#27](https://github.com/battlecats59/SSArchipelago/pull/27) )&#13;
-  - For more info, see [setting up your wii console](https://github.com/YourAverageLink/SSArchipelago/blob/console-socket/worlds/ss/docs/setup_en.md#setting-up-your-client-wii-console) in the SSAP Setup Guide&#13;
-- Fixed an issue with generation failure in AP 0.6.5 ( by Harmjan387 - see [#31](https://github.com/Battlecats59/SSArchipelago/pull/31) )&#13;
-- Fixed an issue with the lumpy pumpkin chandelier send flag ( by Harmjan387 - see [#32](https://github.com/Battlecats59/SSArchipelago/pull/32) )&#13;
-- Fixed an issue with death link on console ( by YourAverageLink - see [#34](https://github.com/Battlecats59/SSArchipelago/pull/34) )&#13;
-- Added Goddess cube autotracking (by Harmjan387 and YourAverageLink - see [#33](https://github.com/Battlecats59/SSArchipelago/pull/33) )&#13;
-- Added console auto-reconnect ( by YourAverageLink - see [#37](https://github.com/Battlecats59/SSArchipelago/pull/37) )&#13;
-&#13;
-## What has changed? (v0.5.3)&#13;
-- Added a client command to toggle deathlink mid-game ( by Harmjan 387 - see [#29](https://github.com/Battlecats59/SSArchipelago/pull/29) )&#13;
-- Fixed plando items breaking generation ( by Harmjan 387 - see [#29](https://github.com/Battlecats59/SSArchipelago/pull/29) )&#13;
-&#13;
-## What has changed? (v0.5.2)&#13;
-- Several fixes for generation errors ( by Harmjan387 - see [#24](https://github.com/Battlecats59/SSArchipelago/pull/24), [#25](https://github.com/Battlecats59/SSArchipelago/pull/25), and [#26](https://github.com/Battlecats59/SSArchipelago/pull/26) )&#13;
-- Completion condition fix ( by LelouBil - see [#22](https://github.com/Battlecats59/SSArchipelago/pull/22) )&#13;
-- Shuffled Batreaux Counts ( by Battlecats59 - see [#19](https://github.com/Battlecats59/SSArchipelago/pull/19) )&#13;
-  - Options including vanilla (5-80), half (2-40), random (1-80), random-high (30-80), and random-low (1-50)&#13;
-    - Batreaux check names are changed to contain the required amount of crystals. Kukiel will also appear in Batreaux's house, telling you what the shuffled crystal counts are.&#13;
-  - Batreaux progression option is now a range 0-7, which will determine how many of Batreaux's rewards can possibly contain progression items.&#13;
-    - If set to 0, no Batreaux rewards can contain progression items.&#13;
-    - If set to 7, all Batreaux rewards could contain progression items.&#13;
-    - If set to any number (n) between 0 and 7, then the first (n) rewards could contain progression items, and the highest rewards will not contain progression items.&#13;
-- Print client messages in-game ( by YourAverageLink - see [#21](https://github.com/Battlecats59/SSArchipelago/pull/21) )&#13;
-  - A cosmetic option has been added to the patcher to allow client messages in-game to be turned on or off before iso generation.&#13;
-  - If turned on, client messages will be printed in-game in the bottom left corner of the screen.&#13;
-- Fix for incorrect hints ( by Harmjan387 - see [issue #22](https://github.com/Battlecats59/SS_APWorld/issues/22) and [PR #28](https://github.com/Battlecats59/SSArchipelago/pull/28) )&#13;
-- Separate option for Lanayru Caves Small Key - moved away from dungeon small keys&#13;
-  - New option has choices "Start With", "Caves", "Lanayru", and "Anywhere". All options will ensure that you will not be locked out of sand sea / lanayru desert / and so on, no matter where your starting statue or entrance is.&#13;
-- APWorld is now auto-generated by a github workflow, like the patcher build is.&#13;
-- Added an icon to the Skyward Sword client on the Archipelago launcher&#13;
-- Fix for APPlayerContainer issue in AP 0.6.2&#13;
-- Update to AP 0.6.2&#13;
-&#13;
-## What has changed? (v0.5.1)&#13;
-- Fixes for issues during seed generation: #20 &#13;
-- Logic fixes&#13;
-- Update to AP 0.6.1&#13;
-&#13;
-## What has changed? (v0.5.0)&#13;
-- Logic has been rewritten to support entrance randomization. There will likely be logic bugs floating around, some may not have a significant impact while some may end your run. Hence, **use at your own risk!**&#13;
-- Random starting statues and random starting entrance options are now fully supported.&#13;
-- The itempool generation has been changed significantly, fixing several bugs regarding starting items and item placements. Although it is unlikely, there may be bugs that were created as a result.&#13;
-- Single crystals have been added as AP-recognized checks, however they will remain as single gratitude crystals for the time being. In the future, these checks may be randomized, for now they have been added to support single crystal logic.&#13;
-- Code has been cleaned up.&#13;
-&#13;
-gl, hf! -bcats&#13;
-&#13;
-### Downloads:&#13;
-&#13;
-[RECOMMENDED] The zip file containing the apworld, YAML, and setup guides (ss_apworld-v0.5.5.zip)&#13;
-[RECOMMENDED] The patcher build (SS_APPatcher-v0.5.5.zip)&#13;
-&#13;
-The apworld file (ss.apworld)&#13;
-The template YAML file (Skyward.Sword.yaml)&#13;
-*The above two files are contained in the first zip, and do not need to be downloaded if you download the apworld zip*</content>
-    <link href="https://github.com/Battlecats59/SS_APWorld/releases/tag/v0.5.5"/>
-  </entry>
   <entry>
     <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21</id>
     <title>YARGAllSetlists v26.2.21</title>
@@ -170,21 +24,6 @@ A tutorial for ripping songs or verifying existing rips has been provided in the
 &#13;
 If you previously had rips that worked with the version 1 of the Guitar Hero 1 apworld, they may no longer be compatible. However, they are relatively easy to fix. Refer to the guide on metadata in the Github readme.</content>
     <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-61</id>
-    <title>Borderlands 2 v61</title>
-    <updated>2026-02-21T20:12:19+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-61"/>
   </entry>
   <entry>
     <id>https://github.com/spineraks-org/ArchipelagoTwistyCube/releases/tag/v1.0.0</id>
@@ -785,7 +624,7 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_
 * **Pit Droid Shop change**:&#13;
   * There was a bug with previous versions where the pit droid shop didn't do a good job of tracking whether its locations had been sent to the server, and as a result it could become impossible to check some of them in certain cases. This client will track that more closely, and instead of modifying what checks are available to the player, it will simply not charge the player 1000 Truguts if that location was already checked.&#13;
   * This means that in asyncs you will see upon relaunching that you will have 3 checks there again, even if you purchased them. *This isn't ideal and will be addressed in a future update*, but you will only be charged for droid checks the server has not marked as completed already.&#13;
-  * Please note you will still need at least 1000 truguts to peform these checks, even if you aren't actually charged for them.&#13;
+  * Please note you will still need at least 1000 Truguts to perform these checks, even if you aren't actually charged for them.&#13;
 * **Faster item processing**:&#13;
   * Backend changes to how items are processed have reduced the need for delays between receiving them.&#13;
 * **Crash Logs**:&#13;
@@ -795,7 +634,7 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_
 * **Changed option: `Course Unlock Mode`**:&#13;
   * New settings are `Full Shuffle`, `Circuits` and `Progressive Circuits`. The circuit modes now both treat the Invitational Circuit just like the others, with the vanilla unlocks option removed. This was done largely to simplify the logic and remove generation errors. With the ongoing client restructure, vanilla unlocks could potentially make a reappearance down the line, but for now they are being shelved. `Full Shuffle` is the default recommended mode now.&#13;
   * Circuit pass modes now retain "Course Unlock" checks and place appropriate "vanilla" items on them to unlock the next course in the circuit. &#13;
-    * As an example, completing `Amateur Race 1 - Course Unlock` will award an `Amateur Course Unlock` item. This bypasses the vanilla game unlocking code and brings them closer in line with how `Full Shuffle` works.&#13;
+    * As an example, completing `Amateur Race 1 - Course Unlock` will award an `Amateur Course Unlock` item. This bypasses the vanilla game unlocking code and brings these modes closer in-line with how `Full Shuffle` works.&#13;
 * **Option `Shop Costs` default changed**:&#13;
   * `Normalized` is now the default setting to soften some of the outlier expensive purchases in the shop and reduce grind.&#13;
 * .apworld now contains manifest for eventual compatibility with Archipelago 0.7.0 when it releases.&#13;
@@ -1056,5 +895,450 @@ Thankyou @Enderdraak for these, and thanks Ruby3440 for the logo.</content>
 &#13;
 Installation instructions: Download bg3.apworld, double click. Relaunch Archipelago.</content>
     <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.8.6-alpha</id>
+    <title>The Legend of Zelda - Phantom Hourglass v0.8.6a0</title>
+    <updated>2026-02-24T13:11:21+00:00</updated>
+    <author>
+      <name>carrotinator</name>
+    </author>
+    <author>
+      <name>Tanker50207</name>
+    </author>
+    <author>
+      <name>palex00</name>
+    </author>
+    <author>
+      <name>CelestialKitsune</name>
+    </author>
+    <author>
+      <name>DayKat</name>
+    </author>
+    <author>
+      <name>1313e</name>
+    </author>
+    <author>
+      <name>Catzador</name>
+    </author>
+    <content>Compatible with seeds generated in 0.8.3+&#13;
+&#13;
+- Fixed UT Crash in TotOK 1F&#13;
+- Added boat speed support to the client. Use `/boat speed` to change the boats maximum speed, and `/boat snap_speed` to toggle instant acceleration. Your options are saved in `host.yaml` and persist between sessions and seeds.&#13;
+- Formatted option titles consistently for the Options Creator</content>
+    <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.8.6-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ArsonAssassin/DSAP/releases/tag/0.0.22.0</id>
+    <title>Dark Souls Remastered v0.0.22.0</title>
+    <updated>2026-02-24T14:19:34+00:00</updated>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <author>
+      <name>Noka</name>
+    </author>
+    <content>Release version 0.0.22.0
+
+## Changes:
+
+* 2ae675f53e944fcf4e4bd5a08abc798400a799f5 Update azure-pipelines.yml for Azure Pipelines
+* 2af25afb3d321d5dd0604eb998b1faff620c7346 Bump version to 0.0.22.0 [skip ci]
+* 06fe0976b184a97ce9b6806a664a99771e8a4a76 Merge pull request #87 from ArsonAssassin/azure-pipelines
+* 4cf4f914892c31c3347e18ccabd700aa4d7e2d3e Update azure-pipelines.yml for Azure Pipelines
+* e3f30001db972f64e93f2a810449180cb56fffbf Merge pull request #86 from tathxo/22.0.5-pr-fixes-qol
+* 04238595d5723a98f89eac6c431120c8f7925f6f Fix typos, missing items in README
+* 16759ccde36fa999072c0e69647ea5d667d7571a README cleanup
+* aea1710335e22e513463972c4350306f757cc887 Update Dependencies, ready for v0.0.22.0
+* 1bd1feb2528b2816f8098c058b080308cc61438c Merge pull request #85 from tathxo/22.0.5-pr-fixes-qol
+* 40c90ce862aca1148006db3d8f33e5d01c00b7b1 Cleanup Emk zero handling
+&lt;details&gt;&lt;summary&gt;&lt;b&gt;See More&lt;/b&gt;&lt;/summary&gt;
+
+* 57f2be313ecfcfdffb328e7427c53ad88a0e7835 Merge pull request #84 from tathxo/22.0.5-pr-fixes-qol
+* 2574ac4011f5d1d8b7f5eeac4309fee8c497da60 README ToC fix pt2
+* 477df0e654a3ea405888b37d148a3e765243faed README Table of Contents format fix
+* a9efc75364536c39be1a6a63a2d993d0ff44d5a7 Fix 2 DR location names pt 2
+* 071fd402e13b5f2090958713c60ec91f85b95020 Big Update to README
+* 205703c29ebeaf5b09459e76bf84fe326210e9f7 Reduce messaging
+* bd81d8c059d4397f5bc59896d8a1c6c32a8136e8 Update Demon Ruins confusing names
+* 167635cb00f87697011b9c99e94dff1acc63df9b Add Yaml-less UT support and Cleanup Generate Prints
+* 7efbbde6119507aff4e9c9d9c0d64d330fdb32f0 Merge pull request #83 from tathxo/22.0.5-pr-fixes-qol
+* 97f11b88a1e69306fd9686e5455aec1fa3e08603 Fix 9000 extra items msgs, buffer overrun
+* a5ba221114fff00ee4c7440df6ff201491f6a5a1 Add /connect and /unstuck text commands
+* 1aec42a4a13dcb86b9e411f455b4db1991b8b188 Add Yaml Option for Catacombs Logic
+* 4e324197d3472412c97c7cb3df8e047e8648432b Add /warp Commands for Persistent Reachability
+* 6b14ef194b6b8305361afb4cde402ef15e522c9b Linux support work
+* ed8498babf278f571e22d1e3b622ba423762b7af Fix: Require Placeable Lordvessel to pass Gold Fog
+* 2e1107c1ef01edfafcfb55f521408945743a441f Merge pull request #81 from tathxo/22.0.4-helpersplit
+* 007966d84731d46938b97b36b9f5608f57651b56 Refactor Helpers.cs
+* 37b32628e87b8fa725e318f3af78c7509243cc59 Merge pull request #80 from tathxo/22.0-3-deps+apitems
+* fc99697e64a48fd1ec70917986c3708115df4816 Cleanup + Improve Messages
+* 4c4c24cdf70957a8edbc33640df165ffda9b9cb5 Improve Reconnection Handling somewhat
+* add0e923979b028161023200445849955350977d Filter DSR AP items -&gt; unclutter inventory
+* 0ca7f89d2b5d463af3a06160a6ebb2a6ba5a6045 Improve Reconnect Detection and AP item handling
+* ad754309f18a71a811f639aa0d54fd99f0b71b90 Add item popup Filter &amp; Refactor/Cleanup
+* f160b5606a62fee0c655bb8efc99f75b49f53d4c Only Popup Progression Items, add return values for asm
+* 53447913134d015eb982deed09dc603c8f67f6ad Item popup batching + avoid popup-based crashes
+* d7219d0734a0835759e4120e0a041667523a8be7 Item Popup - Don't Crash on load
+* dd8c5eb5044d7b3ace38b4ba964edf7d8acd99a4 Add popups for received items
+* d41885549627b052f5a81f33942895db5f4457ee Add Fogwall DSR items, remove old "condition reward" code
+* 5634149511b4037ad132a00364b486e9003a6619 Order events alphabetically
+* 3ad84d6f8b06c39f47e48a57de5968dcd4672ec8 Replace remote items with DSRAP items
+* 042e8e7e5a8acff7c431e4851b9f017e547fe075 Add all scouted AP items to DSR with full text
+* 6a931162bcf646b2af7e1d4b900611f75a45ecbe Proof of Concept - Add an item and update its name
+* 3c8aebcb4893a86ee84eaf47ad95f0ca706f1582 AP items as DSR items step 1
+* 4fbaeef5e1397903028d15db45e98a4db8cf6409 Use ScoutLocations instead of Game Data Storage/Slot Data
+* ec828bc35106b3a84104b56a1aaa924dd6ded16e Update to 0.6.1
+* 0b9a11b39b3c1d2990a7f86d78843ea186795063 Fix DLC boss fog walls
+* c526aa02bc387f7527069e6cd1e89f09c10cf4ae Merge pull request #79 from tathxo/22.0-itempool-merge
+* 628309ca1630a07135555460704df8d571938f8b Update README.md
+* 77e24c03f76488dd89ee3c79bcc53f3f522db423 Bump Version -&gt; 0.0.22.0
+* 2491c6efcaebc5997e534d0c3d5c2b2732f5b4a4 Add upgraded weapons &amp; Quantity &gt; 1 items handling to client
+* 8b39ed64f1393e183edbc6006a0a3395ae666424 Feature: Improved Item Pool generation + simplified options
+* caa08527fd96254d19157aa2163b0efa5de2133e Research Tools
+* 04bd61955bf1ba0fcaf3e95426806a6020bbc20b v0.0.21.1 beta
+* e39b909db14785a8a5efc1e9ac4e2ad6d8cbb9be Update azure-pipelines.yml for Azure Pipelines
+* cf9c0ee3924da7a8530e50987be7bec9680b9bf5 Add known issue to README.md
+* 12ca26da78aa3162e8482c1c917388f2cb9d15cd Merge pull request #78 from tathxo/22.0-item-stability
+* d9440a72ff38a04bf9ef5696570d2366ff65c0c6 Reduce Error Messages
+* 1f0bd2e00f865dd195e76bf09e765c5d5913f8fa Save and Validate Slot # from AP
+* 4da167dd99edf2c6d05b12558a92d4408c9c6d4a More co-op support
+* 54150822c2c6e3652a4bb976d90dcb85ca8cb1dd Merge pull request #77 from tathxo/22.0-item-stability
+* 570a3ecc08b410614727542a0c3f1f351dae94b0 Fix fogwall keys not getting processed
+* a7500d110e419d234f33bce8c8e49f4100a0e686 Item safety / multi-saves for items
+* f17502e89ba71c8214bf59d0ff89e28d3d9aa30d Switch item mode -&gt; Receive All Items
+* a185607b5a6d761a6aabdd427ab0a654bbcd7b5e Add some known issues to README
+* db96a24d562c90eda4f630b1b81efe17fdeefe0e Update README.md
+* 0902675ef92914a7a82d2c00fe86894bce82f377 Update README.md
+* 16347896986161185a626418a51d83e2863d24a5 undo bad version change
+* 84f49593b60c48a58ded5816d86ef489774da139 Bump version to 0.1.0.0 [skip ci]
+* 3293a7c65d9f4d530d91df4a68af319f740abd0b Merge pull request #76 from tathxo/21.0-fixes+fogwalls+
+* f11a90dbf0a41d18c45bb85403e16bc369b490d2 Improve handling of invalid options
+* 4b6f46e15248610cf1ed3b9615e4e36784e43cdd Merge pull request #75 from tathxo/21.0-fixes+fogwalls+
+* 6acbb782343799f048c09fb5174de5cad317bb08 Feature: Add Fog Wall item and loc groups
+* 60856f7632606e349bea6294206a4e4dd9cf0732 Feature: Add Overlay Toggle
+* 07bfc2e5234f0286e03e761a8c3367b896cbacd5 Print Upgrade information to spoiler log
+* 61862940372af20b663712106c18a650b18d1644 Fixes for fuzzer + gen failures
+* a6943009fa305b7bbca8373f60b4dedc212b78cd Merge pull request #74 from tathxo/21.0-fixes+fogwalls
+* 93f86e967e4695bcfdd26eb6e1cfd4110f49ca92 Update /diag to also work if user isn't connected
+* be336185a729013004146bdf2235810b25677cf4 PR #74 feedback
+* 068b7330efc1aa5f1a67117eb61cc22833a06dba Fix some logic and add new /lock command
+* 842df324225db80412de876f10ade8f0f803045b v0.0.20.2 -&gt; v0.0.21.0, + compatibility for v0.0.20.*
+* ecfc9905695d7022dad6f1d27d180065ab11f715 Various Logic fixes
+* 41d00601683b39b65128fa1268fac4e674837528 Separate Fogwall Location and Item names, improve boss fog wall names
+* 4ba566656be15a517e49c3aee805f3f55f12bd29 Update versions to 0.0.20.2, compatibility, versioning fixes+messages
+* 26806bfd6e8bb6fe7e69c7f5ced9aa9df4357274 Add useful debugging commands
+* c44a8fa2e12935165a47b2bf8f86a326fc3c44be Add changelog information &amp; improve options documentation
+* 6222c20ad03fd5b4427e22c2ee47733edc6d0212 Make Artificial logic only apply without fogwall locking
+* 6ba577926d8080b67d934857d5f294e3c7f26ffb FIX: logic for NL Key to the Seal, remove uub -&gt; db
+* eee688cfe3f6966ed039b94b7af16554c3fc8adc Add 2-way Entrance Logic for Backward-Traversable Regions
+* 0a02feb4fcdbd79a4518191ef5f7943f1162c54f Make SendGoal put its work on the scheduler to avoid deadlock
+* 32c8ac7580d6fe43f89e6d68c5b7cae697ab22c6 Switch Wait()s to async awaits
+* e404890238359386fc7ec308b7444e6c7e6523bc Slightly improve messaging for /goalcheck and /diag
+* 10200b6b1b873dea91c9372c2f9b3da98d37ded0 Add fog wall logic less verbosely
+* b8396d92231d4b9c51ec466e22b708da7338306d Feature: Fogwall sanity
+* 4a67dd976aa42ec0db3e0ba10a52111de594787c Feature: Fog Wall Locking
+* 62b0c4d87483977e86fdfba2229259ec581c4fdb Add UT-&gt;poptracker map support
+* 9e7668bca10af6e30ad738f328f9be7b95d39bcd More diag info for #73
+* 31e26ad9f88bc9f5d38cc43c6dee2a12db261e61 Fix multiple SendGoalCompletion() calls happening at once
+* 411cc4eece8d8f153b2346512092e3b649e0cdbf PR review result
+* b157f53ccc8dbe0c097a6056a01f83ce6b6af0de Update client display version
+* 380e28373ba9f203dd1840730cc748e5040fad94 Add logging of goal send, Add /goalcheck and /diag
+* 029fdeb6fbad7bf87cdbacdba2665e29fbeaa711 Fix: Task.Delay() with no Wait() or await
+* b32ce46fdff2e94beb3b0a90e9402a7e7bd09ec5 Add location groups to readme
+* c93974c04974b8aa2a80d0b20b47f2175405d03a Update README.md
+* 831aed7c7f8c7c47c69f32525970eb55ae42e0ad Bump version to 0.0.20.0 [skip ci]
+* 39f92558a03a0c462a5ca4bcc50dfbac211d931c Merge pull request #72 from tathxo/20.2.1
+* fbce35b3352485f0a70614b9edc8c301dd0d3743 Fix invalid "Weapon Upgrades" to Shields
+* 6db8c2792fc808686791b8f825d0f0d70d634eda Update README.md
+* fa4eed0da00f040e5d7887ac47ac2ed763247d9c Update README.md
+* 59d30c512af27fe08e9cb4c035e1f6db1b407d3e Update README.md
+* 896bbd97c8d29a2e505aa9d0b42ed45e5c32ad08 Update dependencies
+* 3467c954d4bba6b2876012f5e77cbc458ba1ce05 Merge pull request #71 from tathxo/20.2.1
+* e54e94631a31428e0da01dd3f7952df3bd00f91e Fix: Handle Failed-Received Items
+* 7582050a10268536f1386f5aafe0b9c236591136 Merge pull request #70 from tathxo/20.2.1
+* 36ac1c759c375fe49430e490f2b0118658a9294c Fix: Spells with "Soul" in Name Wrongly Added to Item Pool Instead of Soul Items
+* 9db921050bac0586525ef279eca60327b8276d03 Merge pull request #69 from tathxo/20.2.1
+* 2b17868e7d99d76fa15d44853003ab31e3bae7a5 Add Changelog and Roadmap to README
+* f8e7edc56b28d8ce517e5255772c0f977cc3f6e7 Merge pull request #68 from tathxo/20.2.1
+* 15217ec6d441d01d6f8b8a89982a0c9756c5994d Add /deathlink command for toggling it after yaml creation
+* 0e61dbd154e2a089177123ed70a0267c733e366d Fix typo in warning message
+* a6e83cee82e8512c21e17351729bde9c283be6cd Add DLC location OT: Soul of a Hero behind Stairs
+* 1fd5b0771ec6694391dedfc376cd70d385a17aff Fix spam of Debug Log level
+* 4d9e88172a1b356f31041d3f2bffd0516daf5bed Merge pull request #67 from tathxo/20.2.1
+* 0d773fd7957e7713f70959b41f43ecd79634f7cc Improve AoB Helper
+* 0126186951499a5b95f378de197454b2d0a896f1 Merge pull request #66 from tathxo/20.2.1
+* f007560b54cf159482c903dc258e6bdc7808f7af Fix deathlink, add AoB Helper class, some cleanup
+* 64ff417abd2b20991ab72b9e52f504a01344bbcb Update README.md
+* a1dd8ed1481fe186ab17709e64e4f37823e3d2fd Merge pull request #65 from tathxo/20.2.1
+* 997e03d23c0d1caba3b69b67008350b30059ab54 Update logic and hint text on a PW check
+* b378e8a1e72ca237a728d8a19d1f8a25ea0f8d93 Limit number of "discrepancy" warnings, put an error message out
+* f7d7f23eba58f8d04d2b5c56d305f7537a5d6862 Fix: Locations Names Consistency ("Caverns" -&gt; "Cave")
+* 3b7c3bc8c43fe5d85426957f6d09161b358fe83b Add an apworld "api version" to the slotdata
+* a3c1db5cb31fa22722f2759172cc1b8e88898308 Merge pull request #64 from tathxo/20.2.1
+* 0df72ffcd35516f8cd4567bf0772669a64097de1 Feature: Unstuck Button Support
+* 0671fbfca325c26aba6449274766b222c978c918 Feature: Prevent Firelink Chest behind Frampt from Breaking Logic
+* d54ad7512824c946c2efb78d17b5ca5e9691bbad Merge pull request #62 from tathxo/20.1-candidate
+* 793a1880a6a15ac04d728b0ca1f3ed17f8611a67 Add Item Name Groups
+* 46b22557242679f069f60a0e5b2efe0828a0ff59 Merge pull request #61 from tathxo/19.4-fixes
+* c08d3eaec65a0a99f39800dbe8f64fdcf85969f0 Split Blighttown region into a Lower and Two Upper regions
+* a662b4502e49f903db56ae7fa2f3eedbae9456ff Add location groups (including DLC group), remove enable_dlc yaml option
+* d4131613b628ff1114be5174ede7089f71144f24 Standardize Region Names
+* 2ff8ce1a2dd2e82c563fca6ea64d8766e23cdd31 Fix up Post-Seath Arena entrance logic
+* c03a913830557433befda90fc2d1513923e4ab84 Merge pull request #54 from tathxo/19.4-fixes
+* 1634755085f2a71a9548380211689a6b1ad26ea1 Fix: PW Gold Coin -&gt; Before Annex Key
+* dc7da04cd5dfd7767f157b826c8a6951fb3baf14 Merge pull request #52 from tathxo/19.4-fixes
+* 286541ce87d2acee4a6204e8aee81016b46f4b84 Fix: Make Goal a normally Monitored Location
+* 8d1c3d7ef00534084c56f977f5b99da8bd50c896 Update README.md
+* 956641198d48d566ee941b8d0d5eb677df12c83e Merge pull request #50 from tathxo/19.3-dlc+
+* c5b7db156d7b211e6d72e6a3ec5de2fa0bcb1b06 Send Error message if no items were overwritten, Add overlay messages
+* a705814c46afd5926d7178027a137454390e7189 Feature - Enable DLC (via yaml option)
+* 654aa34c9c9e4d1abb1b6fdcab74eb8fde4a2fa3 Merge pull request #49 from tathxo/19.2+
+* e2f31df919d0e3d8af8f852bb2c0ac77133f70bb Fix 1 incorrect item lot flag &amp; 2 bad logic locations in Painted World
+* d55c477dc79be99fae58764c1e42a0f86a651f97 Merge pull request #48 from tathxo/19.2+
+* 65730d2133be786a99387cecde145104f3980166 Feature: Weapon Upgrades Yaml Option
+* c6072af9dcd3dc8013e05163a097dda61c814b59 Update README.md
+* 3e4a43945213fd971739c306d2cab495bd65eb7c Merge pull request #47 from tathxo/19.2+
+* 67414529f2cb7334bcdc1cd07e31d10b43483e1b Move Embers to their own resource file
+* a8f2b16f1b1dde65b44c234cd679664da96486a8 Update README.md
+* 9a7acd9d4b564a618e9cda3d84072cd6ca846f07 Make Embers useful - and Require them to be in the Item Pool
+* b37fdd98c0e485edbba2a39c823d079bf2675ff9 Add Elite Cleric Armor Set to Armor.json
+* 69b2a6d9674f2f6781b140c06eac132a00eb783d Remove nonexistent location
+* 0d65f6b943a597a87804f38d79554687ced438d4 Stop Replacing Every Single item lot
+* b462619846ef670f02c2814dbc336e7e238da232 Update README.md
+* 01f766f85b8e7442378f6f3aef49c47615f4dd05 Merge pull request #46 from tathxo/main
+* 31696f3477f2e691115fec4cff5657522cf9f3e5 Document Known Issues: Firelink Shrine chest and some npc/enemy drops erroneously replaced
+* c0d94a57f97e8a87e70b16d746bf48c1f9781a28 Update azure-pipelines.yml for Azure Pipelines
+* e6e6d18048daee395d3de9bce6ef88569714caac Update azure-pipelines.yml for Azure Pipelines
+* 438c9b8c4e6c63362d7c6976dc3421d76cba74ca Update azure-pipelines.yml for Azure Pipelines
+* ce3b2af505486109ceed098ab6a38fcc7a98e2bc Update azure-pipelines.yml for Azure Pipelines
+* 619a6bbb5de2e7d1dac8a312aaf8f50eadd44ddc Merge branch 'main' of https://github.com/ArsonAssassin/DSAP
+* 867f4b47e44afbb3bca20aaace105b5468ece0f9 Update avalonia package
+* 74af9a440531da2d438753345385bcc0f50d9ed9 Merge pull request #45 from tathxo/0.0.18.4c
+* b8827d7507cf37453c6729a69a215e889645b864 Add Overlay messages and Offset Overlay messages below hp + status bar
+* 13dfe3af9919d319391eab241dd26c31eecd0ac4 Update to latest AvaloniaGUI package
+* e7dc93dce96e93a2f818e9b3c3971cffd4a654f9 Merge pull request #44 from tathxo/0.0.18.4c
+* 19cf20aec75d63cefde0c7d5c496af2dd58df5f8 Updated README.md
+* c1469f32874a47684239a6b896a9a7bd1d90a07c More README enhancements
+* f07df8c51610730247f61804be2bff0ab67f0c56 Minor updates for PR #44
+* 32005e248edaedabb90e51050ac5ce55d6c40e1f Minor changes to some types
+* 5da2593d54a71d4d797ccf1db091f67d299919ab Fix occasional Avalonia LogListItem exceptions
+* db25349efa65d2944f417ce6b18522daffe39410 Fix Detecting player as Not in Game when they are Human/Unhollowed
+* 059cb78db02c5a81860b5318633910bea6e44978 Add Ability to Receive Deathlinks and Add Default Grace Period
+* c528266981578e2721a66f21f735d504c2877653 Update the README to Better Answer Common Questions and Issues
+* 7da0941ed64f3536e01ed546c514c89c1b2d66c4 Merge pull request #43 from tathxo/0.0.18.4
+* dc3279671db19ddcb418d011532d940869fb4ea5 Update azure-pipelines.yml for Azure Pipelines
+* cc3c5d5220b3e4b7bffde02a8e93616c092a32ea Update README.md
+* c4a546c75b6e777792ab6e6654ae135c503e0b73 Preliminary deathlink support
+* dce46b17c685f41be9e17dd31bd364f524e282b9 Add IsInGame() condition for location checking, preventing crashes
+* 1353ec3db27029c3e576a55852442295fe89f6c8 Exploit new field added with PR 15 to Archipelago.Core
+* 59af95b6ec66b73509b146badf563e0e5e066d91 Allow dupe Ktts and WSSs ItemLotParam entries, Temporarily remove Overlay, and other changes to support new Core version
+* 003bee2dbccae7d12c10c8fa515b1227c56b5660 Make 2nd and beyond items in Multi-Item Lots give correct items, added messaging for replacement process
+* c88d71a879b102c0942e7a5c9f1fa4fda8b34f1e Add basic connection checks and reduce Log spam
+* 26472f9ecd411a5a6a0468854d65bb1d96c94ea3 Merge branch 'main' of https://github.com/ArsonAssassin/DSAP
+* 82f434d5888fdf5dfa047807af3b0d1c5e91fb76 Updated client
+* 45f42b6373f78c76d5bc218419231749aaa05484 Bump version to 0.0.18.3 [skip ci]
+* 1ba122e3a512107dddf1e5484a11ceeb6d9656a4 Merge pull request #42 from tathxo/0.0.18.3
+* 0839d7b8e20bb600145289f81fff505390e5f677 Fix uninitialized Maps
+* 2ae2df050903924e8da8dace19c2b371811606f7 Replace own-world items, make the replacement leverage parallelism, and Add Homeward bone forced refresh
+* a2a5fec75bef3e9d60123cb71133bb845b028be2 Move some newly added logging from Debug to Verbose
+* 0b5c304d138bef12309c93dee51f250ce07152d0 Fix and Improve Item Overwriting Code
+* 99629df2d68b6e76936ab1cfd6763019fa158e15 Bump version to 0.0.18.2 [skip ci]
+* 3935466fdd22938d7a073466f42ae617df5e3337 Fix formatting in slot_data dictionary
+* 688f59a20cf46301a5c6bd8e93033175199fb36c Update azure-pipelines.yml for Azure Pipelines
+* d66188171196bc316c778ca3c0e6ff07a3a47581 Merge pull request #41 from tathxo/0.0.18.1-target
+* 8df3a63754f5c16a792485fb104306ba5c477902 Bump version to 0.0.18.1
+* 80228bcbddf39ab92c43709ea1876a66ce17f883 Merge Helpers.cs changes from 35b88a8
+* 96b3057653c2d6cbe8f40c15da7ad1dc0e338b41 Merge .editorconfig from 35b88a8
+* 964615a1084373662fdc73f2f62bcc29e6a7e80a Merge async item removal changes from 35b88a8
+* 5fca09d670a9c977ea83e565b5680c7894cbbcfc Merge apworld changes from 35b88a8
+* 68294421f812d0773a1caa553429c60c5429c57a remove snuggly trade items from key items list
+* d9669a3e3091ab80b6e8991a6ef1da06fd8232a4 disable invader locations, add options to slotdata
+* 4bfe7d710e08e8b96ae532c8a53f944cde399a18 Update App.xaml.cs
+* 16b4a053605bf313e64dbc2b14b4627b8fa91369 Update DarkSoulsClient connect() to not spam messages
+* 69013114485c712cf61f69b291e495d0a5e2b251 Set version 0.0.17.2
+* 9c1336a50c192b0b3bed3095009c53ac679a7eff Update Memory util version
+* be7b8a5271847dedf6a386b3f51e7f5778776fca Support 0.6.2+ of Archipelago
+* 3dd3c678948b0b1049fa5fc18aae570c49c3a4b0 Update azure-pipelines.yml for Azure Pipelines
+* 971bbae9a56ddc63a6d785b2a050a6f186e29676 Update azure-pipelines.yml for Azure Pipelines
+* f49844d9903ea6ba83bbd51fe63e7f04f0d40f41 Update azure-pipelines.yml for Azure Pipelines
+* 1fc81c627a00eb71c2d1d532290f18519e5d2266 Update azure-pipelines.yml for Azure Pipelines
+* 78ac15c3ae819763b75b5696a73b3ba729fd1451 Update azure-pipelines.yml for Azure Pipelines
+* 3936a90b5d8a42adc04203e827dc077cf9c2229d undo version change
+* 56d463f9c3c9444fa4bfffb977367b2d96609615 Update azure-pipelines.yml for Azure Pipelines
+* ac0d4ff9baca54aa42db1aa1b239c31dd87a403e Bump version to 0.0.17 [skip ci]
+* 0659b965fc5eb8de086a7eaccdd6ca197381ab0c Merge branch 'main' of https://github.com/ArsonAssassin/DSAP
+* ab110e6d87b70a5e36452914077bd30b57e77033 Add deathlink yaml option
+* a0bbf4eb10cffe5060b74efa302a1db7cfb42961 Update azure-pipelines.yml for Azure Pipelines
+* a98119be7b6d74741f232848ffbf0cfbced1bb99 Update azure-pipelines.yml for Azure Pipelines
+* 9b047d5d102572d5635f857f25fc4c61718a083b Bump version to 0.0.16 [skip ci]
+* 5acdec1b6f8d987c5d22027244ae7124b69383be Update azure-pipelines.yml for Azure Pipelines
+* 7791515821644d027f884ac339bc889660a156ea Update azure-pipelines.yml for Azure Pipelines
+* 2dbd940d46776290fbad9f98d43c6aa1a4252846 Update azure-pipelines.yml for Azure Pipelines
+* 5972f032f5e94d5a2a89fd929725bc533bca422c Merge branch 'main' of https://github.com/ArsonAssassin/DSAP
+* 30a228ddf8d2f4cdaa6097dfa18582d2ad053cab deathlink or something idk
+* 3c91e45a33ee670cb5909e4c721eef6db0646c87 Bump version to 0.0.15 [skip ci]
+* c96ad076739e8adda8a9d5d750e503117e2aaf8c Merge branch 'main' of https://github.com/ArsonAssassin/DSAP
+* 6b5686b6c677e4ab21f150f1a5ca6056ff4cd787 update version number and archipelago.core version
+* b81772650db5796b550613ecb289bab48118b18e Update azure-pipelines.yml for Azure Pipelines
+* 9ca8fa0e2e557af6ac89d6d8a833378b6feb5332 Update azure-pipelines.yml for Azure Pipelines
+* 860d67e580c9ef6d214acb59671769830d32d2c2 Merge branch 'main' of https://github.com/ArsonAssassin/DSAP
+* 9cf9c171fba3e8a33b0aa3510ee8a13caeea324f disable snuggly trades
+* 45e1bff577f6826c6472dd56b28df7d43cce49c6 Update azure-pipelines.yml for Azure Pipelines
+* 24f2db3876440d653d225179dc4f466f42bb04a0 Update azure-pipelines.yml for Azure Pipelines
+* bbce8a525e53b0e466ee47a7fbf5dcfd6c717a98 Bump version to 0.0.13 [skip ci]
+* 0aff07b5e212e687ef77f99eaeb728a2491d5e72 upgrade core library
+* 2552ac5a337aac99e6bf8c2874d8bd0791e42d40 Update azure-pipelines.yml for Azure Pipelines
+* 2def4c14c305c6e1c7a8009298b2c0f1f492b2d8 Update azure-pipelines.yml for Azure Pipelines
+* f1a584feefa59b0d61582e964282dce8eba86bd2 Update azure-pipelines.yml for Azure Pipelines
+* dc031df51d2bd4541ecd6cff4d516253c5ade7cc Update azure-pipelines.yml for Azure Pipelines
+* 3118357e42272b293e42ec8f5c71b8c7d92f00f3 Update azure-pipelines.yml for Azure Pipelines
+
+This list of changes was [auto generated](https://dev.azure.com/arsonassassin/DSAP/_build/results?buildId=145&amp;view=logs).&lt;/details&gt;</content>
+    <link href="https://github.com/ArsonAssassin/DSAP/releases/tag/0.0.22.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.7</id>
+    <title>Warioworld v0.1.7</title>
+    <updated>2026-02-24T15:23:21+00:00</updated>
+    <author>
+      <name>moester_</name>
+    </author>
+    <content>## Fixes&#13;
+&gt; Fixed Trap and Filler Items being given once for every item you had collected already&#13;
+&gt; Fixed Trap and Filler items showing up as Unknown ID on the Client&#13;
+&gt; Fixed random crash when entering the Overworld for the first time&#13;
+&#13;
+## Known Bugs&#13;
+&gt; The most recent item will be given to you again if it is a Filler/Trap item</content>
+    <link href="https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/airbreather/Autopelago/releases/tag/v0.11.12</id>
+    <title>Autopelago v0.11.0</title>
+    <updated>2026-02-24T21:50:22+00:00</updated>
+    <author>
+      <name>airbreather</name>
+    </author>
+    <author>
+      <name>skidznet</name>
+    </author>
+    <content># https://autopelago.app&#13;
+&#13;
+The game client has been completely rewritten from scratch. It runs in the browser now.&#13;
+&#13;
+The .apworld now has a manifest, but has otherwise not changed since 0.10.3.&#13;
+&#13;
+# Changes since 0.11.11&#13;
+1. Fix an oversight that caused messages to get repeatedly processed over and over again. This was most visible when telling the rat to do something: it would go into an infinite loop of acknowledging the request forever.&#13;
+&#13;
+Everything from the original native version *should* be present in this one. If not, then that's a bug. Please report it.&#13;
+&#13;
+# Other changes since 0.10.4&#13;
+&#13;
+1. You no longer need to run any native executable files. It's a web app now, so just go to that URL.&#13;
+   - If you want to self-host it, it's all static files - this release should have a  "dist.zip" asset that you can just drop into any reasonable static web server.&#13;
+   - You will **need** to self-host if you want it to work with an Archipelago server that doesn't use HTTPS.&#13;
+2. You can now launch directly to the game if you know all the magical things to type into the URL fragment. This is mostly provided so you can refresh the page without having to click through the menu again.&#13;
+3. As is web tradition, most errors that happen when the game is running will not automatically take you out of the game screen. Instead, they will just create banners along the top that you have to click to dismiss. Hopefully, this will never happen to you (of course, it happened to me constantly while developing this).&#13;
+4. Not only is this a web app (and so it finally runs on Mac and Android), but it's a **progressive** web app. This means that you can "install" it as a native app on Android, even.&#13;
+5. Interval between "when STILL blocked" messages is now configurable (though it's still got a minimum of 15 minutes so that you don't spam everyone).&#13;
+6. There's now a separate "Connecting..." screen between the settings page and the main game screen, instead of showing a version of the game screen instantly and then modifying it once you're finally connected.&#13;
+7. When you get disconnected for any reason (other than clicking the button to go back to the menu), you now get spat back to the same "Connecting..." screen (with a different message) and it will try to reconnect you automatically, at least once every 30 seconds.&#13;
+8. The game version is now visible in the title bar and on the game screen. This is more relevant here because browsers like to cache way too much stuff.&#13;
+9. Somewhat redesigned the layout of the game screen to be a bit clearer. Instead of shorthand "RAT" / "NOM" / etc., we have a "RATS: ##" expander, and then all the active buffs / debuffs are visible with their full names under it. This takes up a lot of screen space, so you can collapse it to just show the rat count.&#13;
+10. The left panel can also shrink MUCH more than before.&#13;
+11. The position of the grid separator is now saved between runs.&#13;
+12. If your slot has an alias, we now show that (without the parenthetical slot name) instead of always just showing the official slot name.&#13;
+13. Chat commands can now be addressed to the rat's alias (with or without the parenthetical slot name) instead of always having to be its slot name, provided that nobody else in the room has picked the same alias.&#13;
+14. Added a simple chat tab to just send / receive messages in the room, so that you don't HAVE to flip back and forth. It's not quite as fancy as the standard text client, but it should be good enough.&#13;
+15. Elements that you can interact with all support tab-focusing, and the tooltips as well.&#13;
+16. When a lot of things happen all at once that the game hasn't animated yet, the app will try to play back everything that happened. This was important when moving to a web app, because browsers don't render things when the tab is in the background or minimized, so when you come back, a LOT of things could have changed. In fact, when LOTS of things changed, it speeds up the playback up to 5x so that you can "catch up" to the current state more quickly.&#13;
+17. When clicking on an item in the panel to request a hint, the confirmation box now shows up right next to it instead of in the middle of the screen.&#13;
+18. The "u win." screen now just covers a *part* of the map instead of taking you all the way out.&#13;
+19. Fix an oversight where the self-host bundle was still expecting to run on `https://autopelago.app`&#13;
+20. Add a discriminator to the beginning of the title for the benefit of those with multiple tabs&#13;
+21. #129: Bring back the ability to show the path to the target by clicking on the rat.&#13;
+22. Fix a minor issue where the rat would face its ultimate target instead of the next location along the route to it.&#13;
+23. Fix an issue where the rat would go to the nearest user-requested location instead of going in order of when they were requested.&#13;
+24. (After the failed v0.11.2) probably fix a calculation error in the "show path" calculation?&#13;
+25. #130: Bring back the ability to personalize your rat.&#13;
+26. Replace Pixi.js with native elements, which should unblock those getting the error "`CanvasRenderer` is not yet implemented". This also probably brings with it a mixed bag of performance penalties and performance improvements.&#13;
+27. Fix several ways in which the page could look self-inconsistent while the rat is still catching up to where the server is.&#13;
+28. Correct the size of the "Personalize Your Rat!" button on the main page for non-Firefox browsers.&#13;
+29. Remove a brief flicker of the "Personalize Your Rat!" window's header text. It might still sometimes shift, but generally shouldn't have any frames where the text goes outside the window like it did.&#13;
+30. Add tooltips for the filler squares to show their names, exactly the same as tooltips for landmarks.&#13;
+31. Add information about known hints onto these tooltips.&#13;
+32. Move some quest markers out of the way so that they no longer overlap filler squares.&#13;
+33. Shrink landmark images so that they don't crowd their filler squares.&#13;
+34. Extra-shrink the hitboxes around the quest markers to make their nearby filler squares easier to get to.&#13;
+35. Add the ability to "hyper-focus" a location by clicking on it (or pressing Enter on it if you are tabbing through with your keyboard). This "hyper-focus" can only be adjusted by interacting with it in the browser (no chat commands supported, by design) for multiple reasons.&#13;
+36. #134: Fix an issue where the rat's focused location(s) would get cleared — even if the location wasn't checked — if it happened to land on the location without any actions remaining to make an attempt at checking it.&#13;
+37. Fix an oversight from 0.11.5 where the animation checkboxes did nothing.&#13;
+    - In addition to restoring the original few things that these checkboxes control:&#13;
+        1. Transitions on Food/Energy/Luck bars will be animated (or not) according to the player animation checkbox.&#13;
+        2. Tile examples in the tooltips and the "u win." dialog will be animated (or not) along with the tiles, synchronized to the same frame.&#13;
+        3. The dashed line showing the path from the rat to its target location will be animated (or not) according to the player animation checkbox.&#13;
+        4. The rat token will animate its movement from one location to the next (or not) according to the player animation checkbox.&#13;
+        5. On systems where the user has indicated a [preference for "reduced motion"](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion#user_preferences), the two checkboxes will be unchecked by default.&#13;
+38. #143: Stop automatically reconnecting after getting disconnected. This has been resurrecting rooms that had previously timed out, which is rude. Some version of this MAY come back in the future, if I can find a way to detect when it would be OK.&#13;
+39. #142: The dashed path to the rat's current target will no longer get misaligned and shrunk on games that don't go all the way to Snakes on a Planet.&#13;
+40. #138: The sidebar now has an extra spot at the beginning that shows the number of all rats. This lets you do the same stuff that the other icons in this panel let you do: click to hint for any rat (i.e., any item in the "Rats" item group) and hover over it to see a tooltip with all the hinted rat locations.&#13;
+41. Because I kept getting annoyed while testing the previous one, tooltips now stay around when the cursor goes inside them instead of needing the cursor to stay inside the original trigger box. This means that you can now highlight text from these tooltips with your mouse and copy-paste.&#13;
+42. I might have fixed a bug where sometimes the rat wouldn't send its chat messages immediately, but would wait for some arbitrary event to happen in the future. I have no idea why I wrote it the way I did at first...&#13;
+43. Whenever we see `{RANDOM_PLAYER}` in any message from your YAML file, we'll replace that with the current alias of a random player. I tried to make this as useful and sensible as I could:&#13;
+   - If you are the only player (on your team), it will always just pick you. Otherwise, it will never pick you, but instead:&#13;
+   - If any other players (on your team) are connected and haven't completed their goal yet, then it will pick a random one of them. Otherwise, it will pick a random other player (on your team).&#13;
+   - If there are multiple `{RANDOM_PLAYER}` placeholders in a single message, then we'll try to pick as many **different** players as possible (in random order still), only repeating a player if there are more placeholders than the number of players allowed by the above rules. To be precise, we sample randomly without replacement from the list until the list is empty, then we refill it and repeat the process until all placeholders have been filled.</content>
+    <link href="https://github.com/airbreather/Autopelago/releases/tag/v0.11.12"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ryguy-9999/ArchipelagoATS/releases/tag/v1.2.0</id>
+    <title>Against the Storm v1.2.0</title>
+    <updated>2026-02-24T23:18:09+00:00</updated>
+    <author>
+      <name>Ryguy9999</name>
+    </author>
+    <content>[Info about this randomizer](https://github.com/RyanCirincione/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/en_Against_The_Storm.md)&#13;
+[Setup instructions](https://github.com/RyanCirincione/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/setup_en.md)&#13;
+# Changes&#13;
+- New:&#13;
+  - Universal Tracker support! Specifically for blueprint_items + recipe_shuffle, and trade locations.&#13;
+    - This was tricky for me, so please report if there are still any issues.&#13;
+  - Added Brineworks to the item pool.&#13;
+- Changed:&#13;
+  - If you have a biome key in your starting inventory, the apworld should no longer hand you another.&#13;
+  - On connection, gifts with the same name and sender should be aggregated into one alert.&#13;
+- Fixed:&#13;
+  - Upgraded bat houses location now properly requires copper ore.&#13;
+  - Resolved issue where Training Expedition panel wouldn't open when disconnected from AP.&#13;
+  - Fixed villager needs showing incorrect icons when unlocked.</content>
+    <link href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/tag/v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.0-beta</id>
+    <title>Dicey Dungeons v0.2.0b0</title>
+    <updated>2026-02-25T00:06:51+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>### Dicey Dungeons v0.2.0-beta&#13;
+&#13;
+Warning: This release comes with many new options. Because of this, multiworlds generated using previous releases will probably not play well with the new client. I HIGHLY recommend waiting to upgrade to this release until all multiworlds generated have been played through.&#13;
+&#13;
+Changes from v0.1.2.1-beta:&#13;
+- Option: Episode progression - Choose between 'vanilla' (like starting a new save file, later episodes are locked until earlier episodes are completed) and 'open_world' (relies on your Dicey Dungeons save, all episodes available from start)&#13;
+- Option: Floor 5 Shop Selection - Choose between 'vanilla' (floor 5 shops will have an upgrade, a heal, and an item, which might be a multiworld item) and 'items_only' (floor 5 shops will have 3 items, all of which may be multiworld items)&#13;
+- Option: Skip Cutscenes - Choose whether you want intro/outro cutscenes for episodes to be skipped&#13;
+- Option: Split dice - Choose if you'd like dice (gained from leveling up) to be locked behind receiving a certain number of Dice Shards first. Configurable both in required numbers of dice shards per die, and number of spare dice shards added to the pool, for safety&#13;
+- Flavor: Revamped filler items - There are now multiple filler items, all inspired by fighters in game (e.g. Rotten Apple's Pet Worm)&#13;
+- Graphics: A new title screen, featuring an Archipelago logo created using the Characters from the game (inspired by krunk on Discord) will now appear instead of the default title screen&#13;
+&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.1.2.1-beta...v0.2.0-beta&#13;
+&#13;
+</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.0-beta"/>
   </entry>
 </feed>
