@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "KitLemonfoot"
+  ],
   "description": "In 2013 hacker supergroup \u201cArcane Kid$\u201d acquired a SEGA DREAMCAST developer kit from ebay.com.\nDeep in the filescape they unearthed a note from the director of MJSTUDIO,\na \u201cmessage in a bottle\u201d detailing the work of SEGA's top secret studio which was re-invisioning the future of video gaming.\nThe Arcane Kid$ salvaged FOUR playable prototypes, some concept art, and countless top-secret SEGA files.\n\u201cSEGA squandered MJSTUDIO's gift to the world\u2026 and dissed Sonic fans globally\u2026 by burying these games\u201d Arcane Kid$ spokesperson Jo says.\n\u201cIt's time to set them free.\u201d",
   "flags": [
     "unready"
@@ -6,7 +9,11 @@
   "game": "Sonic Dreams Collection",
   "github": "https://github.com/KitLemonfoot/ArchipelagoSDC",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0": {
       "created_at": "2025-02-16T00:52:37Z",
@@ -49,6 +56,21 @@
       "title": "ArchipelagoSDC v0.2.0",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "v0.3.0": {
+      "created_at": "2026-02-25T18:08:37Z",
+      "description": "**NOTABLE:** Nothing items are no more. They have been replaced with `Ring`, `Eggshell`, and `Small Heart` items.\r\n**NOTABLE:** Password-proteceted Archipelago servers are now able to be connected to.\r\n**NOTABLE:** Added Photosanity into SMMSanity! This puts 10 checks behind the various photos viewable in the Prom scenario.\r\n**NOTABLE:** Changed how SMM Eggysanity works. Eggys that ask for props will now only give you their check if you give them the prop they ask for. This adds two new checks: `Bring a Football to Egg`, and `Bring Tails to Egg`.\r\n**NOTABLE:** Added logic for the ascension-based Eggys in Eggman Origin when playing EO Eggysanity. They will be available depending on your Ascensions to Goal count. This adds three new checks: `Housekeeper Egg`, `Baby Egg`, and `Adult Egg`.\r\n**NOTABLE:** Changed the goaling event, with a little surprise\u2026\r\n\r\n**APWORLD:** Added an archipelago.json manifest file.\r\n**APWORLD:** Fixed an issue where EO Eggysanity was in the wrong region.\r\n**APWORLD:** Adjusted junk item distribution to make it more in line with options page.\r\n**APWORLD:** Hopefully fixed the game's WebWorld.\r\n**AP:** Updated Multiclient.NET to 6.7.0.\r\n**AP:** Updated internal AP version to 0.6.6.\r\n**GENERAL:** The menu buttons will be greyed out if you do not have access to a game.\r\n**GENERAL:** Removed the annoying Sonic voiceline spam from connection windows.\r\n**GENERAL:** Fixed a bug that let you input newlines into connection windows.\r\n**GENERAL:** The NETCONNECTED SegaNet graphic will now display if you have the SegaNet Adapter item.\r\n**MMS:** The error given when attempting to upload to SegaNet will now be different if you have the SegaNet Adapter, but not enough SegaNet accounts to upload.\r\n**EO:** Added a fallback for an issue that would cause datastorage desynchronization on ascension.\r\n**EO:** The Egg Baby will now scale properly on warmstart.\r\n**EO:** Fixed powerups not rendering their colors correctly.\r\n**SMM:** Changed the Next Stage/Wrap Party button to make things more visually clear.",
+      "download_url": "https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.3.0/sdc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d105ed51c4f0e06ce211182ed7653cc35f51784c90cb35d475a7450b0a39228e",
+      "html_url": "https://github.com/KitLemonfoot/ArchipelagoSDC/releases/tag/v0.3.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 9685,
+      "source_url": "https://api.github.com/repos/KitLemonfoot/ArchipelagoSDC",
+      "tag": "v0.3.0",
+      "title": "ArchipelagoSDC v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

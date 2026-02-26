@@ -16,8 +16,10 @@
 	- The DLC stage is unlocked normally, and will be in logic when *My Roommate Sonic* is unlocked.
 - Obtaining the level's camera and finishing the level is a check.
 - Access to the Fuckball can also be given as an item.
+- (Optional) Every photoshoot background in Stage 2 can be a check.
 - (Optional) Every item given to Sonic in Stage 4 can be a check.
 - (Optional) Every object released by Sonic in Stage 5 can be a check.
+- (Optional) Every Eggy that can be interacted with can be a check.
 ### MY ROOMMATE SONIC
 - Every major progression of the story is a check.
 - (Optional) Minor progressions of the story can also be checks.
@@ -30,6 +32,9 @@
 - Feeding the Egg Baby a Robust Worm is a check, alongside ascensions themselves.
     - The amount of Robust Worms you have fed to the Egg Baby is saved to your Archipelago slot. 
 - Access to the two powerups you gain for completing ascensions (Speed and Search) can also be given as items.
+- (Optional) Every Eggy that can be interacted with can be a check.
+
+In order to goal, you will need to fully complete all ascensions in Eggman Origin.
 
 ## What the fuck is wrong with you?
 

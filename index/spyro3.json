@@ -1,4 +1,8 @@
 {
+  "authors": [
+    "ArsonAssassin",
+    "Uroogla"
+  ],
   "description": "Spyro 3 is a game about a purple dragon who likes eggs.",
   "game": "Spyro 3",
   "github": [
@@ -429,6 +433,21 @@
       "title": "v1.3.0",
       "version_simple": "1.3.0",
       "world_version": "1.3.0"
+    },
+    "1.3.1": {
+      "created_at": "2026-02-25T18:05:35Z",
+      "description": "**Note that setup instructions have changed slightly in v1.3.0+. Within Duckstation, navigate to Settings > Game Properties > Console and select \"Interpreter\" under \"Execution Mode\".**\r\n\r\nThis release contains both Client (S3AP.Desktop.exe) and APWorld changes.\r\n\r\nNew Features:\r\n- Full Bundle Gemsanity\r\n  - Every gem in the game, except for Super Bonus Round, becomes a location.  Gem bundles of 50 or 100 per level are added to the item pool.\r\n  - This adds nearly 4000 locations, of which roughly 200 are progression items.  You may wish to modify your filler pool accordingly.\r\n  - Unless played with other games of a similar size, this is likely to negatively impact placement of the multiworld's progression items and may spam game clients with checks.  As a result, the host must approve use of this setting in their host.yaml file.\r\n\r\nBug Fixes:\r\n- Fixed a bug where Egg for Sale was not marked as complete in Open World Mode.\r\n- Fixed a bug where Universal Tracker was showing Sparx levels as being in logic before the previous one was completed in Open World Mode.\r\n- Partially fixed a bug where Molten Crater and Seashell Shores would not open immediately on receiving enough eggs in Open World Mode with Vanilla Level Locks.\r\n  - If you receive your 10th or 14th egg while in Sunrise Spring Home, you will still need to exit and re-enter the homeworld to enter these levels.",
+      "download_url": "https://github.com/Uroogla/S3AP/releases/download/1.3.1/spyro3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bf20c155738c67907e3722f334b8f8641a383c252e98456458356f4e076835fc",
+      "html_url": "https://github.com/Uroogla/S3AP/releases/tag/1.3.1",
+      "minimum_ap_version": "0.6.1",
+      "size": 54243,
+      "source_url": "https://api.github.com/repos/Uroogla/S3AP",
+      "tag": "1.3.1",
+      "title": "v1.3.1",
+      "version_simple": "1.3.1",
+      "world_version": "1.3.1"
     },
     "open_world_test": {
       "created_at": "2025-09-07T15:42:03Z",

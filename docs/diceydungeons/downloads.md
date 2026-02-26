@@ -1,9 +1,12 @@
 # Dicey Dungeons
 
 ## Latest
-- <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.2.0-beta/diceydungeons.apworld">Latest Version (0.2.0b0)</a>
+- <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.2.1-beta/diceydungeons.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.2.1-beta/diceydungeons.apworld">https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.2.1-beta/diceydungeons.apworld</a>
 
 #### v0.2.0b0
 - <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.2.0-beta/diceydungeons.apworld">https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.2.0-beta/diceydungeons.apworld</a>

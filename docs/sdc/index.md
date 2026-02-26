@@ -9,7 +9,7 @@ The Arcane Kid$ salvaged FOUR playable prototypes, some concept art, and countle
 
 
 ## Downloads
-- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.2.0/sdc.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.3.0/sdc.apworld">Latest Version (0.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

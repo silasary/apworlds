@@ -753,6 +753,22 @@
       "title": "StardewArchipelago Release 7.4.1",
       "version_simple": "7.4.0",
       "world_version": "7.4.0"
+    },
+    "7.4.2": {
+      "created_at": "2026-02-25T23:06:24Z",
+      "description": "- New Feature: MultiplayerVision\r\n  - Enabled from the config file. Defaults to false, until I'm sure it's stable. Then I'll probably make it default to true afterwards\r\n  - Allows seeing other Stardew players in game\r\n  - Uses bounce packets for communication.\r\n    - Frequent packets for positioning (map, pixel, direction, velocity)\r\n    - Rare packets for player appearance updates (clothes, hair, etc)\r\n  - No player limit. If you experience lag, feel free to share how many players caused it\r\n  - Can only see players currently on the same map as you\r\n  - Cannot interact with other players, only see them\r\n  - Most animations will not happen (tools, weapons, sleep). Some animations will play (walk, run)\r\n  - Works between slots, and also when cooping the same slot\r\n  - The interval for updates, combined with whatever latency you have with the server, will cause some stuttering and rubber banding. I don't think there's a way to avoid this while keeping network usage low, so we have to live with it.",
+      "download_url": "https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.2/stardew_valley.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3e9609bab7f3da9a5cc8e4b829f7b0e4005160b3369e7cdf632e021b64924bfa",
+      "html_url": "https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.2",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 525161,
+      "source_url": "https://api.github.com/repos/agilbert1412/StardewArchipelago",
+      "tag": "7.4.2",
+      "title": "StardewArchipelago Release 7.4.2",
+      "version_simple": "7.4.0",
+      "world_version": "7.4.0"
     }
   }
 }
