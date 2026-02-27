@@ -2,115 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-02-27T00:54:51.666827+00:00</updated>
+  <updated>2026-02-27T12:25:54.523069+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21.1</id>
-    <title>YARGAllSetlists v26.2.21.1</title>
-    <updated>2026-02-22T03:29:04+00:00</updated>
-    <author>
-      <name>GirlWithoutAFairy</name>
-    </author>
-    <content>Fix an issue in YARGGuitarHero1.apworld that caused generation to fail.</content>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.02.21.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2/legend_of_dragoon.apworld</id>
-    <title>The Legend of Dragoon v0.1.1</title>
-    <updated>2026-02-22T04:01:18+00:00</updated>
-    <author>
-      <name>pkolb-dev</name>
-    </author>
-    <content/>
-    <link href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2/legend_of_dragoon.apworld"/>
-  </entry>
-  <entry>
-    <id>https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2-alpha/legend_of_dragoon.apworld</id>
-    <title>The Legend of Dragoon v0.1.2a0</title>
-    <updated>2026-02-22T04:01:18+00:00</updated>
-    <author>
-      <name>pkolb-dev</name>
-    </author>
-    <content/>
-    <link href="https://github.com/pkolb-dev/Archipelago/releases/download/0.1.2-alpha/legend_of_dragoon.apworld"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Uroogla/S2AP/releases/tag/1.1.1</id>
-    <title>Spyro 2 v1.1.1</title>
-    <updated>2026-02-22T05:24:52+00:00</updated>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>This release contains changes only to the client (S2AP.Desktop.exe).  The APWorld remains unchanged - a copy with an updated version number is provided for convenience, but seeds rolled on 1.1.0 will run correctly.&#13;
-&#13;
-Bug Fix:&#13;
-- Fixed a bug where if a player's most recent save is an autosave while exiting a Winter Tundra sublevel, the orb section of the save file became corrupted.&#13;
-  - This bug existed on versions 1.0.0 and later.  If you are playing on the 1.0.1 or 1.0.2 client and cannot update, you can avoid this issue by ending with a manual save, or by using save states.</content>
-    <link href="https://github.com/Uroogla/S2AP/releases/tag/1.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Nepley/eosd-apworld/releases/tag/v1.4.0</id>
-    <title>Touhou Koumakyou ~ the Embodiment of Scarlet Devil v1.4.0</title>
-    <updated>2026-02-22T15:02:28+00:00</updated>
-    <author>
-      <name>Nepley</name>
-    </author>
-    <content>* Option changed: Difficulty is now a toggle and the option to make lower difficulty check when doing a higher one has been added separately&#13;
-* Option added: Deathlink amnesty added and possiblity to change the trigger by either life or game over&#13;
-* Option added: Possibility to add a limit to the max number of life and bomb that the client give to the game (does not affect logic)&#13;
-* Added a GuardRail that will check for incoherence&#13;
-* ItemGroup added for characters, allowing to hint with shorter name (Ex: "Reimu A")&#13;
-* Traps that can't be applied more than once in a stage will not be queued anymore&#13;
-* Manifest added&#13;
-* slotData changed to only have necessary values&#13;
-* Better client stability&#13;
-* Better error messages in the client&#13;
-* Fix ItemClassification&#13;
-* Added client commands to change the following options at any time: DeathLink, DeathLinkAmnesty, DeathLinkTrigger, RingLink, Limits and MultipleDifficultyCheck</content>
-    <link href="https://github.com/Nepley/eosd-apworld/releases/tag/v1.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.0</id>
-    <title>Outer Wilds v1.2.0</title>
-    <updated>2026-02-22T17:10:27+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
-&#13;
-- New `song_of_the_universe` goal and `required_friends` option (thanks @msyverw). This goal requires meeting a certain number of "friends" before going to the Eye. For example, if you enable the DLC and all 7 story mods, `song_of_the_universe: true` and `required_friends: 9` will require you to reach the ends of the DLC and all 7 story mods before goaling.&#13;
-- Added option groups. Since this is a custom game, mostly this means reordering and adding headers to the template/example .yamls, but you may also see these on alternate webhosts. &#13;
-- Universal Tracker nits:&#13;
-	- In `shuffle_spacesuit: true` slots, Universal Tracker's `/next_progression` command should now be aware of the Spacesuit item&#13;
-	- The Universal Tracker code can now handle missing options in slot_data. This probably has no impact today, but the next time we add a new logic-relevant option, it should allow UT with the latest OW apworld to just work on slots generated before the option was added.&#13;
-	- Some dead code required by older Universal Tracker versions has been cleaned up (specifically the `interpret_slot_data` stub)&#13;
-</content>
-    <link href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vyneras/Archipelago/releases/tag/1.0.4</id>
-    <title>Pokemon FireRed and LeafGreen v1.0.4</title>
-    <updated>2026-02-22T18:42:59+00:00</updated>
-    <author>
-      <name>vyneras</name>
-    </author>
-    <content>ROM CHECKSUM: `74F792D9`&#13;
-&#13;
-[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.0.4/worlds/pokemon_frlg/docs/setup_en.md)&#13;
-[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.0.4/worlds/pokemon_frlg/docs/rom%20changes.md)&#13;
-&#13;
-**Bug Fixes**&#13;
-- Fixed an accessibility option that could occur with randomized wild Pokémon and Pokémon request locations (@Eijebong)&#13;
-&#13;
-**Known Issues**&#13;
-- The `base_stats` option does not affect Deoxys attack/defense forms&#13;
-- The Rival battle in Oak's Lab can occasionally softlock the game. Recommend saving before triggering the battle&#13;
-- Logic can expect you to board the Seagallop in Vermilion City by talking to the sailor from the south without actually having any island passes</content>
-    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.0.4"/>
-  </entry>
   <entry>
     <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.4.47</id>
     <title>Donkey Kong 64 v1.4.47</title>
@@ -537,7 +433,10 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_
     <title>factorio_space_age v1.0.0</title>
     <updated>2026-02-23T23:07:53+00:00</updated>
     <author>
-      <name>thejoshwolfe</name>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
     </author>
     <content># Factorio: Space Age apworld v1.0.0&#13;
 &#13;
@@ -1618,5 +1517,179 @@ Since [5.3.9](https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.
 &#13;
 _This release is backwards compatible with seeds generated on 5.3.9_</content>
     <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.3.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.0</id>
+    <title>TOEM: A Photo Adventure v2.0.0</title>
+    <updated>2026-02-27T01:59:16+00:00</updated>
+    <author>
+      <name>DrTChops</name>
+    </author>
+    <author>
+      <name>0xDEAFC0DE</name>
+    </author>
+    <author>
+      <name>Shellshe</name>
+    </author>
+    <content>Changes:&#13;
+&#13;
+- Reimplments Cassettes with new ER logic&#13;
+- Added version checks for Client and UT&#13;
+- Adjust min connection window size for lower resolutions&#13;
+- Make ER data more memory efficient&#13;
+- Bugfix: Cassettes locations trigger properly if item is already received&#13;
+- Bugfix: Added logic for raft being fixed with electricity&#13;
+- Bugfix: Basto ticket now properly unlocks house exit&#13;
+&#13;
+Randomizer details: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/en_TOEM.md&#13;
+Setup guide: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/setup_en.md</content>
+    <link href="https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR</id>
+    <title>The Grinch v1.5.0</title>
+    <updated>2026-02-27T03:04:38+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content># Notice&#13;
+Keep in mind that this is a beta release and is not currently ready for a full release. Do not bring this into serious groups unless you know what you are doing. This is for testing purposes only to ensure everything is ready when this update gets a full release. Report bugs and check certain things to make sure everything works as intended.&#13;
+&#13;
+# Changes&#13;
+- Updated to require AP v0.6.6 to encourage people to update with security patch.&#13;
+- Deathlink! Keep in mind that every area you are able to die in except for Mount Crumpit, Clock Tower, Post Office, &amp; Sleigh Room due to ingame issues I encountered during testing.&#13;
+- Gadgets are now given to you sooner! No longer you are required to use the computer to get the gadget. Just reload/enter a new area to get the gadgets on demand!&#13;
+- Sleigh Parts are now items in the pool! Find them through out the multiworld and enter the sleigh ride with the Sleigh Room Key! Because of this, the sleigh part locations are temporarily removed for the time being.&#13;
+- Grass.&#13;
+- Presents are in the pool aswell. These are items that do nothing to the game if you decide to not want to add rotten eggs to the pool.&#13;
+- Mission completion for squashing all gifts should be removed if you exclude at least one subarea per area. For example if you have `giftsanity` enabled and you have excluded on of Whoville's subareas, the mission will be removed.&#13;
+- Added new `misc_checks` option. Adds various categorized locations in the multiworld. From platforms to killsanity, and other funny locations.&#13;
+- Few new item/location groups&#13;
+&#13;
+# Bug Fixes&#13;
+- Fixed bug regarding certain locations sending when they should not be.&#13;
+- Elevator in Mount Crumpit should hopefully be positioned in the right level when using the teleport multibind&#13;
+- Various small logic tweaks and fixes that went overlooked.&#13;
+&#13;
+# Things to do until full release&#13;
+- Fix Heart of Stone locations sometimes not sending&#13;
+- Support for incremental location checks&#13;
+- OR condition addresses for locations&#13;
+- Fix fuzzer errors&#13;
+&#13;
+There are probably many more changes I missed. Look around and see what you can spot!</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.0.1</id>
+    <title>factorio_space_age v1.0.1</title>
+    <updated>2026-02-27T03:43:15+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld v1.0.1&#13;
+&#13;
+* Add logic option to require steel power poles on vulcanus and fulgora.&#13;
+* Fix Archipelago required version to address a settings related crash.&#13;
+* Fix typos in yaml option description.&#13;
+</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.3.2</id>
+    <title>ULTRAKILL v3.3.2</title>
+    <updated>2026-02-27T03:44:06+00:00</updated>
+    <author>
+      <name>TRPG</name>
+    </author>
+    <content>- Fixed to work on Fraud patch.&#13;
+	- This update *does not* contain any new content from Layer 8. That will be coming soon.</content>
+    <link href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.0.2</id>
+    <title>factorio_space_age v1.0.2</title>
+    <updated>2026-02-27T04:12:20+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld v1.0.2&#13;
+&#13;
+* Fix corrupted factorio mod generation due to version number conflict.</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/josephwhite/Emerlads-Nodebuster_AP_Mod/releases/tag/v0.1.3</id>
+    <title>Nodebuster v0.1.3</title>
+    <updated>2026-02-27T04:15:31+00:00</updated>
+    <author>
+      <name>Emerald</name>
+    </author>
+    <author>
+      <name>josephwhite</name>
+    </author>
+    <content>## TL;DR&#13;
+&#13;
+The main highlight are rules based on upgrade connections to help prevent a lot of upgrades being "reachable" in Sphere 0/1 in UT.&#13;
+&#13;
+### Changed&#13;
+&#13;
+* Added save file functionality.&#13;
+    * Connecting to a server will check for save files in `user://` with the same seed and player.&#13;
+    * Saving will occur more frequently.&#13;
+* Added additional rules for node connections.&#13;
+* Added additional rules to seperate easy milestones from milestones that logically need to be grinded.&#13;
+* Set item classification of `Progressive SpawnRate` from `useful` to `progressive`.&#13;
+* Disabled auto-unlocking upgrade locations, as save files properly save per slot.&#13;
+&#13;
+### Fixes&#13;
+&#13;
+* Save created UUID to file in `user://` and load UUID from said file, ensuring UUIDs are reused for future server locking feature.&#13;
+&#13;
+## What's Changed&#13;
+* Validation: Set Upgrade Nodes to checked "continuous" max level by @josephwhite in https://github.com/josephwhite/Emerlads-Nodebuster_AP_Mod/pull/38&#13;
+* UUID and Save Files in User Folder by @josephwhite in https://github.com/josephwhite/Emerlads-Nodebuster_AP_Mod/pull/45&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/josephwhite/Emerlads-Nodebuster_AP_Mod/compare/v0.1.2...v0.1.3</content>
+    <link href="https://github.com/josephwhite/Emerlads-Nodebuster_AP_Mod/releases/tag/v0.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/AllPoland/unbeatAP/releases/tag/v0.2.1-alpha</id>
+    <title>UNBEATABLE Arcade v0.2.1a0</title>
+    <updated>2026-02-27T06:47:59+00:00</updated>
+    <author>
+      <name>AllPoland</name>
+    </author>
+    <content>This update comes with a fix to generation issues, as well as some much needed QOL features!&#13;
+&#13;
+APworld changes:&#13;
+- Fixed generation errors where location count did not match item count (thanks to [@gerbiljames](https://github.com/gerbiljames))&#13;
+- Added a song blacklist option - add any songs you *don't* want to include in the randomizer here. Useful if you don't want to play bookend for 30 minutes or a friend's apworld is too weak to handle Clef's greatness&#13;
+&#13;
+Client changes:&#13;
+- Added more configuration for death link - you can now separately choose whether or not to trigger deathlink on restarting/quitting a song (thanks to @estradiol-valerate)&#13;
+- Added a notification popup for sending/receiving items (also thanks to @estradiol-valerate)&#13;
+  - Notification popups can also be configured in the mod settings!&#13;
+&#13;
+This release is **compatible** with v0.2.0!&#13;
+&#13;
+Check [the README](https://github.com/AllPoland/unbeatAP/blob/main/README.md) for installation instructions.&#13;
+&#13;
+The mod and apworld are both still early in development, and are not feature complete nor are there guarantees about stability.&#13;
+&#13;
+**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.&#13;
+&#13;
+Any feedback or ideas are welcome in the "UNBEATABLE (PC)" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!</content>
+    <link href="https://github.com/AllPoland/unbeatAP/releases/tag/v0.2.1-alpha"/>
   </entry>
 </feed>

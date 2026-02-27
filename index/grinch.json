@@ -1,12 +1,16 @@
 {
+  "authors": [
+    "MarioSpore",
+    "SomeJakeGuy"
+  ],
   "description": "",
   "game": "The Grinch",
   "github": "https://github.com/MarioSpore/Grinch-AP",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "v1.0.0": {
@@ -267,6 +271,22 @@
       "title": "The Grinch (PS1) - v1.4.0",
       "version_simple": "1.4.0",
       "world_version": "1.4.0"
+    },
+    "v1.5.0-PR": {
+      "created_at": "2026-02-27T03:04:38Z",
+      "description": "# Notice\r\nKeep in mind that this is a beta release and is not currently ready for a full release. Do not bring this into serious groups unless you know what you are doing. This is for testing purposes only to ensure everything is ready when this update gets a full release. Report bugs and check certain things to make sure everything works as intended.\r\n\r\n# Changes\r\n- Updated to require AP v0.6.6 to encourage people to update with security patch.\r\n- Deathlink! Keep in mind that every area you are able to die in except for Mount Crumpit, Clock Tower, Post Office, & Sleigh Room due to ingame issues I encountered during testing.\r\n- Gadgets are now given to you sooner! No longer you are required to use the computer to get the gadget. Just reload/enter a new area to get the gadgets on demand!\r\n- Sleigh Parts are now items in the pool! Find them through out the multiworld and enter the sleigh ride with the Sleigh Room Key! Because of this, the sleigh part locations are temporarily removed for the time being.\r\n- Grass.\r\n- Presents are in the pool aswell. These are items that do nothing to the game if you decide to not want to add rotten eggs to the pool.\r\n- Mission completion for squashing all gifts should be removed if you exclude at least one subarea per area. For example if you have `giftsanity` enabled and you have excluded on of Whoville's subareas, the mission will be removed.\r\n- Added new `misc_checks` option. Adds various categorized locations in the multiworld. From platforms to killsanity, and other funny locations.\r\n- Few new item/location groups\r\n\r\n# Bug Fixes\r\n- Fixed bug regarding certain locations sending when they should not be.\r\n- Elevator in Mount Crumpit should hopefully be positioned in the right level when using the teleport multibind\r\n- Various small logic tweaks and fixes that went overlooked.\r\n\r\n# Things to do until full release\r\n- Fix Heart of Stone locations sometimes not sending\r\n- Support for incremental location checks\r\n- OR condition addresses for locations\r\n- Fix fuzzer errors\r\n\r\nThere are probably many more changes I missed. Look around and see what you can spot!",
+      "download_url": "https://github.com/MarioSpore/Grinch-AP/releases/download/v1.5.0-PR/grinch.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8609338b7295200f300f6541afa48d05557627c2c532759494a28b07ba60538d",
+      "html_url": "https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR",
+      "minimum_ap_version": "0.6.6",
+      "prerelease": true,
+      "size": 121336,
+      "source_url": "https://api.github.com/repos/MarioSpore/Grinch-AP",
+      "tag": "v1.5.0-PR",
+      "title": "The Grinch (PS1) - v1.5 Pre Release",
+      "version_simple": "1.5.0",
+      "world_version": "1.5.0"
     }
   }
 }

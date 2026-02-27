@@ -1,9 +1,12 @@
 # ULTRAKILL
 
 ## Latest
-- <a href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/3.3.1/ultrakill.apworld">Latest Version (3.3.1)</a>
+- <a href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/3.3.2/ultrakill.apworld">Latest Version (3.3.2)</a>
 
 ## All Versions
+
+#### v3.3.2
+- <a href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/3.3.2/ultrakill.apworld">https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/3.3.2/ultrakill.apworld</a>
 
 #### v3.3.1
 - <a href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/3.3.1/ultrakill.apworld">https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/3.3.1/ultrakill.apworld</a>

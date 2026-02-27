@@ -5,3 +5,5 @@ into motion
 - Shoutouts to BootsinSoots for helping with the implementation of the logic rules code itself.
 - Thanks to the Grinch PS1 speedrunning discord community server for encouraging the production of this randomizer.
 - Credit to Artamiss for the vast majority of BZZ decompilation and general backend coding.
+- Shoutouts to TheMogul for further ram address searches via CPU for more complicated addresses such as 
+gadgets, new traps, and other complicated searches.

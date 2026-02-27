@@ -5,7 +5,7 @@ UNBEATABLE Arcade Mode is a game mode separate from the story mode, where you ca
 
 
 ## Downloads
-- <a href="https://github.com/AllPoland/unbeatAP/releases/download/v0.2.0-alpha/unbeatable_arcade.apworld">Latest Version (0.2.0a0)</a>
+- <a href="https://github.com/AllPoland/unbeatAP/releases/download/v0.2.1-alpha/unbeatable_arcade.apworld">Latest Version (0.2.1a0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
