@@ -1,9 +1,12 @@
 # Jigsaw
 
 ## Latest
-- <a href="https://github.com/spineraks-org/ArchipelagoJigsaw/releases/download/v0.9.1/jigsaw.apworld">Latest Version (0.9.1)</a>
+- <a href="https://github.com/spineraks-org/ArchipelagoJigsaw/releases/download/v0.10.0/jigsaw.apworld">Latest Version (0.10.0)</a>
 
 ## All Versions
+
+#### v0.10.0
+- <a href="https://github.com/spineraks-org/ArchipelagoJigsaw/releases/download/v0.10.0/jigsaw.apworld">https://github.com/spineraks-org/ArchipelagoJigsaw/releases/download/v0.10.0/jigsaw.apworld</a>
 
 #### v0.9.1
 - <a href="https://github.com/spineraks-org/ArchipelagoJigsaw/releases/download/v0.9.1/jigsaw.apworld">https://github.com/spineraks-org/ArchipelagoJigsaw/releases/download/v0.9.1/jigsaw.apworld</a>

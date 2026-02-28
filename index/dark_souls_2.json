@@ -1,9 +1,15 @@
 {
+  "authors": [
+    "WildBunnie"
+  ],
   "description": "",
   "game": "Dark Souls II",
   "github": "https://github.com/WildBunnie/DarkSoulsII-Archipelago",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version"
+  ],
   "versions": {
     "v0.1.0": {
       "created_at": "2025-02-28T17:24:12Z",
@@ -310,6 +316,22 @@
       "title": "v0.5.5-hotfix",
       "version_simple": "0.5.5",
       "world_version": "0.5.5.post2"
+    },
+    "v0.6.0-alpha.1": {
+      "created_at": "2026-02-27T10:09:36Z",
+      "description": "Setup instructions for this release can be found [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/setup_en.md). Info about locations [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/location_en.md), and info about items [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/items_en.md).\r\n\r\nKeep in mind that this is an **Alpha** release. It\u2019s a **full rewrite** of both the client and the world. While the core features are in place and working, you should expect that bugs might happen. Please report any bugs in the Discord thread so we can fix them as quickly as possible. Feedback and opinions on the new features are also very much appreciated.\r\n\r\nThe big change that lead to this rewrite was: **pickups that contain multiple items are no longer a single check.** Now, each item within that pickup counts as its own Archipelago check.\r\n\r\nSo if you pick up something that gives 5 items, that now results in 5 separate checks instead of just 1.\r\n\r\nBecause of this change, all locations have updated names as well.\r\n\r\n## Changes and New Features\r\n\r\n### Archipelago\r\n- Multi-item pickups/rewards now grant one Archipelago check per item  \r\n- New names for all Archipelago locations updated to match the new multi-item system.\r\n- Added more location groups (bosses, shops, item categories)  \r\n- Shops can contain progression items again  \r\n  - Shops that don\u2019t evolve when the NPC is killed are marked as missable\r\n  - A lot of restrictions of what items can appear in shops have been temporarily lifted to see how it feels.\r\n- YAML option for randomized reinforcement levels (weapons & armor)  \r\n- YAML option to remove armor requirements  \r\n- Added item bundles (e.g. Arrow x20)\r\n\r\n### User Input\r\n- New in-game overlay (no more console)  \r\n  - Sending messages (e.g. `!hint`) is not yet implemented, planned before the full release of 0.6.0  \r\n  - Feedback on the overlay and its settings is greatly appreciated  \r\n\r\n###  Game Modifications\r\n- Giant's Kinship and Eye of the Priestess are now randomized  \r\n- DLC keys are no longer given at character creation in Vanilla  \r\n- Blowup, barrel, and Ogre breakable walls can now be broken by hitting them  \r\n- NPC gravestones now spawn instantly and cost 0 to revive (this is to allow the player to buy items even if they kill the NPC)\r\n- Majula rotunda now requires the `Rotunda Lockstone` item (can no longer be rotated with souls)  \r\n\r\n### Technical Stuff\r\n- Integrated ds2-modengine (easier file modification and multi-mod support, similar to LazyLoader functionality)  \r\n- Safeguards to prevent losing an entire batch of items if inventory is full  \r\n- Archipelago save data now only gets saved when the game saves (helps prevent item loss on crashes)\r\n\r\n### Quality of Life\r\n- Game finish credits shortened to ~10 seconds  \r\n\r\n## Not Yet Ported\r\n\r\nThese features haven\u2019t been moved over yet, but will return before 0.6.0:\r\n\r\n- Starter class randomization  \r\n- Autoequip  \r\n- DeathLink  \r\n\r\n## Known Issues\r\n- While the giant's kinship and eye of the priestess are randomized and getting them is enough to trigger the events related to them, killing giant lord or interacting with the altar will still trigger the event (we might keep this?)\r\n\r\n## Links\r\n\r\n- `apworld` code: https://github.com/WildBunnie/Archipelago/commit/412f44aa44168af93efeceb8b4e63f2c11850a14\r\n\r\n- `ds2-modengine`: https://github.com/WildBunnie/ds2-modengine/commit/c0ef18882298495314668223930af7a621e85163\r\n\r\n- **Full Changelog**: https://github.com/WildBunnie/DarkSoulsII-Archipelago/compare/v0.5.5...v0.6.0-alpha.1 \r\n\r\n## Special Thanks\r\nA huge thank you to everyone in the Archipelago Discord server who made this release possible.\r\n\r\nA **very special thank you** to **Seeno** for not only helping with a lot of the location names but also playtesting this release with me.",
+      "download_url": "https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.1/dark_souls_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "52eb55aa935e28eac5ece8fda527484c6afb7b468df62c75822e60645a61b52d",
+      "html_url": "https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/tag/v0.6.0-alpha.1",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 194239,
+      "source_url": "https://api.github.com/repos/WildBunnie/DarkSoulsII-Archipelago",
+      "tag": "v0.6.0-alpha.1",
+      "title": "v0.6.0-alpha.1",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0a1"
     }
   }
 }
