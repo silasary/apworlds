@@ -185,6 +185,8 @@ for w in recent_worlds:
     stem = os.path.splitext(os.path.basename(w["download_url"]))[0]
     title = f"{meta[stem]['game'] or stem} v{w['world_version']}"
     link = w.get("html_url", w["download_url"])
+    description = w.get("description", "")
+    # description = description.replace('\n', '<br/>\n')
     if link in used_ids:
         continue
 
@@ -192,7 +194,7 @@ for w in recent_worlds:
     fe.id(link)
     fe.title(title)
     fe.link(href=link)
-    fe.content(w.get("description", ""))
+    fe.content(description)
     fe.updated(w["created_at"])
     if meta[stem]["authors"]:
         fe.author([{"name": author} for author in meta[stem]["authors"]], replace=True)
