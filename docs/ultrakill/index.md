@@ -4,7 +4,7 @@ MANKIND IS DEAD. BLOOD IS FUEL. HELL IS FULL.
 
 
 ## Downloads
-- <a href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/3.3.2/ultrakill.apworld">Latest Version (3.3.2)</a>
+- <a href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/download/3.3.3/ultrakill.apworld">Latest Version (3.3.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

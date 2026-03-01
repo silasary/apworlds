@@ -5,7 +5,7 @@ Lot of Minigames in the mission to save the Pokepark through the collection of P
 
 
 ## Downloads
-- <a href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/1.1.2/pokepark.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/1.1.3/pokepark.apworld">Latest Version (1.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
