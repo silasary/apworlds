@@ -1,9 +1,12 @@
 # Beat Saber
 
 ## Latest
-- <a href="https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.0.5/beat_saber.apworld">Latest Version (0.0.5)</a>
+- <a href="https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.0.5/beat_saber.apworld">Latest Version (0.0.5.post2)</a>
 
 ## All Versions
+
+#### v0.0.5.post2
+- <a href="https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.0.5/beat_saber.apworld">https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.0.5/beat_saber.apworld</a>
 
 #### v0.0.5
 - <a href="https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.0.5/beat_saber.apworld">https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.0.5/beat_saber.apworld</a>

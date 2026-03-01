@@ -1,9 +1,12 @@
 # Donkey Kong 64
 
 ## Latest
-- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.47/dk64.apworld">Latest Version (1.4.47)</a>
+- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.48/dk64.apworld">Latest Version (1.4.48)</a>
 
 ## All Versions
+
+#### v1.4.48
+- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.48/dk64.apworld">https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.48/dk64.apworld</a>
 
 #### v1.4.47
 - <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.47/dk64.apworld">https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v1.4.47/dk64.apworld</a>

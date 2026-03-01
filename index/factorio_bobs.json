@@ -93,7 +93,7 @@
     },
     "V1.3.3": {
       "created_at": "2025-12-24T21:34:46Z",
-      "description": "Merry Christmas all, I bring tidings of AP factorio client improvements\r\n\r\n# Changelog\r\n- the apworld now uses the correct settings in host.yaml\r\n- made AP use alternate config file and write directory to enable to require only 1 factorio install to work \u2013 suggestion to base factorio by @silasary\r\n  - config and write directory defaults to `factorio_mods` in ap root\r\n  - unlike saws this implementation still uses the default mods folder unless you use command arguments or\r\n- added new 2 setting to host.yaml\r\n  - mod_directory, can change the default mod directory ap uses\r\n  - config_file, changes the default server config file \r\n- new `/start_client` command which will start up a factorio client using the same mods and settings as the server and automatically join it\r\n  - use this to change mod setting (would require a server restart)\r\n- new command argument `--only-client` which only runs the factorio client\r\n- save creation now uses all server arguments to prevent crash \u2013 thank you @marys for helping me debug the problem\r\n- full error occurs if failure of save file is detected \u2013 don\u2019t you love silent failures \r\n\r\nIf anyone wants to try to update the factorio saves folder by default moves from normal location to `factorio_mods\\saves\\Archipelago` in the ap folder so you need to move all your save to the new location\r\n",
+      "description": "Merry Christmas all, I bring tidings of AP factorio client improvements\r\n\r\nEdit:\r\nDue to issues with mod versions I'm starting to compile needed mod versions for this version for the apworld:\r\nbobpower <= 2.0.1\r\nbobplate <= 2.0.3\r\n\r\n# Changelog\r\n- the apworld now uses the correct settings in host.yaml\r\n- made AP use alternate config file and write directory to enable to require only 1 factorio install to work \u2013 suggestion to base factorio by @silasary\r\n  - config and write directory defaults to `factorio_mods` in ap root\r\n  - unlike saws this implementation still uses the default mods folder unless you use command arguments or\r\n- added new 2 setting to host.yaml\r\n  - mod_directory, can change the default mod directory ap uses\r\n  - config_file, changes the default server config file \r\n- new `/start_client` command which will start up a factorio client using the same mods and settings as the server and automatically join it\r\n  - use this to change mod setting (would require a server restart)\r\n- new command argument `--only-client` which only runs the factorio client\r\n- save creation now uses all server arguments to prevent crash \u2013 thank you @marys for helping me debug the problem\r\n- full error occurs if failure of save file is detected \u2013 don\u2019t you love silent failures \r\n\r\nIf anyone wants to try to update the factorio saves folder by default moves from normal location to `factorio_mods\\saves\\Archipelago` in the ap folder so you need to move all your save to the new location\r\n",
       "download_url": "https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.3/factorio_bobs.apworld",
       "has_manifest": true,
       "hash_sha256": "502998c19d29a18db0cd90c1121735ae8d4daf585bf2ba6f2d20f943a889e384",
@@ -132,6 +132,48 @@
       "title": "V2.1.0 New logic",
       "version_simple": "2.1.0",
       "world_version": "2.1.0"
+    },
+    "V2.1.1": {
+      "created_at": "2026-02-25T23:31:38Z",
+      "description": "The is a smaller update with bugfixes, guide for creating facpack's (allowing custom modpacks) and some stuff @Enderdraak (discord: CosmicWolf) has done\r\n\r\n# Changelog:\r\n- Fixed `recipe_time` option\r\n- Added guide & specification of facpacks's [here](worlds/factorio_bobs/docs/facpack.md)\r\n- Hidden items are no longer an option to be put in science packs (bob's voids had this issue)\r\n- Added pack name to slot data for UT (this might be all thats needed but UT is untested currently)\r\n- Updated Bob's extraction\r\n- Added @Enderdraak's Irregular tech tree https://github.com/ArchipelagoMW/Archipelago/pull/5943\r\n- Added @Enderdraak's locale changes (nothing forward facing currently but adds the possibility for translations) https://github.com/ArchipelagoMW/Archipelago/pull/5908",
+      "download_url": "https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.1/factorio_bobs.apworld",
+      "has_manifest": true,
+      "hash_sha256": "cd9bb690546f37c0065fedbab202ca9e70a68430f1bfd83bd05c2fbaf55ad89d",
+      "html_url": "https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.1.1",
+      "size": 1032676,
+      "source_url": "https://api.github.com/repos/Osiris32-and-a-half/BobFactorioAP",
+      "tag": "V2.1.1",
+      "title": "V2.1.1 facpack guide and Irregular tech tree shape",
+      "version_simple": "2.1.0",
+      "world_version": "2.1.0"
+    },
+    "V2.1.2": {
+      "created_at": "2026-02-27T18:49:45Z",
+      "description": "Small update with another facpack from me (which still needs testing, but it generates)\r\nThis facpack is for Exfret's randomiser which randomises a **lot** more than ap normally but now ap modpacks can by just building off it\r\n(A new facpack needs to be created for each Exfret seed, with how Exfret does randomisation only the custom recipes and world setting's forced locations need changing)\r\n\r\nDid you know files starting with a full stop get ignored by the ap generator well I didn't until now but it\u2019s now a requirement (although really not enforced) for zipped facpacks to start with one so players is a valid search location for them.\r\nDid you also know that you can't add files starting with a full stop to a git release (well I don't really know what to do now)\r\n\r\n# Changelog:\r\n- the LP engine (\"Best\" logic) can now cheat in items\r\n  - I don't really know why this helps but it does so it's staying for now\r\n- Fixed an issue when the rocket silo technology:\r\n  - A. didn't exist\r\n  - B. wasn't needed for goal\r\n- The players folder is now a valid Facpack location\r\n  - This is meant for a quick and dirty way for hosts to install Facpacks, `factorio modpacks/packs` is still the recommended location\r\n  - This doesn't change when the yaml folder has been moved (blame host.yaml from not being accessible)\r\n  - This has also added a (soft) requirements for zipped facpacks to start with a full stop",
+      "download_url": "https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.2/factorio_bobs.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b6e04d345ab0fedb3e4bb4ef688f16b3bb013e0e6cb5c54aef219bf951d71a06",
+      "html_url": "https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.1.2",
+      "size": 1032890,
+      "source_url": "https://api.github.com/repos/Osiris32-and-a-half/BobFactorioAP",
+      "tag": "V2.1.2",
+      "title": "V2.1.2 Bug fixing for Exfret",
+      "version_simple": "2.1.2",
+      "world_version": "2.1.2"
+    },
+    "V2.1.3": {
+      "created_at": "2026-02-27T21:19:46Z",
+      "description": "Well thats annoying\r\n\r\n# Changelog\r\n- Updated precalcs for internal packs\r\n  - they should work again now\r\n- Calculations should never run on invalid items\r\n  - and the problem should be harder to reappear (+ adding bit of backwords compat)",
+      "download_url": "https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.3/factorio_bobs.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0b0ae01e7767945de1d72b70e4a402e509568dd584cd0c9e7c4e3cf5da31bdb9",
+      "html_url": "https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.1.3",
+      "size": 1033881,
+      "source_url": "https://api.github.com/repos/Osiris32-and-a-half/BobFactorioAP",
+      "tag": "V2.1.3",
+      "title": "V2.1.3 Fixed internal packs",
+      "version_simple": "2.1.3",
+      "world_version": "2.1.3"
     },
     "v1.0.0": {
       "created_at": "2025-10-11T00:38:03Z",

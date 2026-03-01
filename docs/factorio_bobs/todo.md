@@ -17,7 +17,7 @@ if you pick one up and then decide to do something else, add research notes here
 # add `pulp` library to internal apworld
 - `pulp` is the python library used for linear programming (LP)
 - this would remove the requirement for precalculating
-- caching on the system ontop of packs would need to be implemented
+- caching on the system ontop of packs would need to be implemented due to it being slow
 
 # rocket silo products
 - needs to be added to extractor
@@ -58,3 +58,7 @@ if you pick one up and then decide to do something else, add research notes here
 
 # ability to remove recipes/items
 - automatically remove all other science recipes?
+
+# add better error message when save file creation fails
+- this may be any complete failure to load factorio
+- https://discord.com/channels/731205301247803413/1426234278462750860/1471984620550492272
