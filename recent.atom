@@ -2,61 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-02T00:52:52.479336+00:00</updated>
+  <updated>2026-03-02T12:27:06.038365+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.0-beta</id>
-    <title>Dicey Dungeons v0.2.0b0</title>
-    <updated>2026-02-25T00:06:51+00:00</updated>
-    <author>
-      <name>Fylcoast</name>
-    </author>
-    <content>### Dicey Dungeons v0.2.0-beta&#13;
-&#13;
-Warning: This release comes with many new options. Because of this, multiworlds generated using previous releases will probably not play well with the new client. I HIGHLY recommend waiting to upgrade to this release until all multiworlds generated have been played through.&#13;
-&#13;
-Changes from v0.1.2.1-beta:&#13;
-- Option: Episode progression - Choose between 'vanilla' (like starting a new save file, later episodes are locked until earlier episodes are completed) and 'open_world' (relies on your Dicey Dungeons save, all episodes available from start)&#13;
-- Option: Floor 5 Shop Selection - Choose between 'vanilla' (floor 5 shops will have an upgrade, a heal, and an item, which might be a multiworld item) and 'items_only' (floor 5 shops will have 3 items, all of which may be multiworld items)&#13;
-- Option: Skip Cutscenes - Choose whether you want intro/outro cutscenes for episodes to be skipped&#13;
-- Option: Split dice - Choose if you'd like dice (gained from leveling up) to be locked behind receiving a certain number of Dice Shards first. Configurable both in required numbers of dice shards per die, and number of spare dice shards added to the pool, for safety&#13;
-- Flavor: Revamped filler items - There are now multiple filler items, all inspired by fighters in game (e.g. Rotten Apple's Pet Worm)&#13;
-- Graphics: A new title screen, featuring an Archipelago logo created using the Characters from the game (inspired by krunk on Discord) will now appear instead of the default title screen&#13;
-&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.1.2.1-beta...v0.2.0-beta&#13;
-&#13;
-</content>
-    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.0-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/APWorld_Dig_v0.0.6</id>
-    <title>Minecraft Dig v0.0.6</title>
-    <updated>2026-02-25T14:12:38+00:00</updated>
-    <content># What's changed: APWorld v0.0.6&#13;
-&#13;
-- Trap weights option slider (set 0 to disable)&#13;
-- Temporary Haste and Excavation boost&#13;
-- Added **Progressive Chunks** option to the Yaml (active by default)&#13;
-- Fixed a few minor bugs&#13;
-&#13;
-### Jar Changelogs&#13;
-- Broken blocks are now counted to the sidebar (its a bit buggy)&#13;
-- Sounds when a layer is dug&#13;
-- Particles when an item is received&#13;
-- The spawn platform is extended and is now cleared from sand and anvils&#13;
-- Block break progression is now persistent and shared, you can also mine the same block together and it will break much faster (coolest feature btw)&#13;
-- The current chunk number is now displayed on the hotbar&#13;
-- Automatic reconnection to the Archipelago server on server restart&#13;
-- Progressive Excavation tier 2 reworked&#13;
-- (I hope) Fixed scaffolding glitch&#13;
-- Fixed wrong chunk number generation</content>
-    <link href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/APWorld_Dig_v0.0.6"/>
-  </entry>
   <entry>
     <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.1-beta</id>
     <title>Dicey Dungeons v0.2.0</title>
@@ -1328,5 +1278,99 @@ For the setup guide, please go to https://github.com/cjmang/StS-AP-World/blob/st
     </author>
     <content/>
     <link href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.2.2/lingo2.apworld"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.2.1-beta</id>
+    <title>Dicey Dungeons v0.2.2.1b0</title>
+    <updated>2026-03-02T02:06:40+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>Patch for v0.2.2-beta, including bugfix for:&#13;
+&#13;
+- Replace "+" in AP items with star icons, to prevent crash</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.2.1-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Bartz24/ArchipelagoLR/releases/tag/0.4.0</id>
+    <title>Lightning Returns: Final Fantasy XIII v0.4.0</title>
+    <updated>2026-03-02T02:59:28+00:00</updated>
+    <author>
+      <name>Bartz24</name>
+    </author>
+    <content># Changelog&#13;
+- Fixed duplicate adornments in the pool&#13;
+- Fixed initial weapons and shields being in the pool, which could cause softlocks&#13;
+- Fixed logic issue with Radiance of Fragment check not required Main Quest 5 to be started&#13;
+- Fixed empty shops in Dead Dunes on Days 1-7&#13;
+- Added Archipelago 0.7.0 required JSON file to ensure future compatibility&#13;
+&#13;
+# Notes&#13;
+- If you are upgrading Nova Chrysalia mod manager from 1.X to 2.X, uninstall all mods from Nova 1.X first, extract Nova 2.X to a new location, and install all your previous mods in Nova 2.X.&#13;
+- EN Text is required. Text for other languages is not supported due to maintainability concerns with the duplicated data.&#13;
+&#13;
+# Known Issues/Limits&#13;
+- Items sent to you are retrieved by holding the sprint button on the field (L2/R2 or LT/RT). This is a workaround to avoid crashes when trying to add automatically with no input.&#13;
+- Game overs are removed so you can technically get to the final day without completing the 5 main quests. This is safer for AP, but obviously that would be out of logic by skipping everything.&#13;
+- Chests that cost 6 EP are not currently in logic and are considered excluded/missable&#13;
+- Recovery items received from AP while your recovery item bag is full will be lost&#13;
+&#13;
+# Troubleshooting&#13;
+- Do NOT use the File &gt; Reboot option in game, always close the game and relaunch through Nova&#13;
+- In Nova, always launch the game in Unpacked mode with "Voice Over Setting" set to the language you unpacked data for. &#13;
+&#13;
+If you still have issues without not seeing modded content:&#13;
+1. Delete unpacked game data in Nova&#13;
+2. Unpack game data again in Nova&#13;
+3. Regenerate the rando modpack&#13;
+4. Uninstall and remove the old modpack in Nova, and re-install the modpack&#13;
+5. Be sure to launch the game in Unpacked and in the same voice language as unpacked data (EN/JP)!&#13;
+&#13;
+# Setup Guide:&#13;
+&#13;
+Download the following:&#13;
+&#13;
+- lrff13.apworld&#13;
+- LRRandomizer#.#.#.#.7z&#13;
+- [Nova Chrysalia mod manager v2.0.3](https://mega.nz/file/24gyiB7b#nTIlktJb8ZCo8dXZDxCgwsdHAUDPURQhixSfucypIVg)&#13;
+&#13;
+### AP World and Seed Setup&#13;
+1. Double click the lrff13.apworld to install the custom world&#13;
+6. Run the Archipelago Launcher (ArchipelagoLauncher.exe)&#13;
+7. Click `Generate Template Options` to open the folder with the template yaml files&#13;
+8. Copy the `Lightning Returns Final Fantasy XIII.yaml` template to the `Players` folder&#13;
+9. Open your YAML file and edit the `name: Player{number}` to set your name.&#13;
+`{number}` is needed if there will others in the seed with a similar name, you can remove it otherwise.&#13;
+Modify any other options you want below.&#13;
+10. If hosting: Run the Archipelago Launcher (ArchipelagoLauncher.exe)&#13;
+11. Click `Generate`&#13;
+12. Go the `output` folder, and you will find your created `AP_#####.zip` file.&#13;
+13. To host the game, upload `AP_#####.zip` to: https://archipelago.gg/uploads&#13;
+&#13;
+### Randomizer Seed Setup&#13;
+&#13;
+1. Extract the Nova Chrysalia.7z to a folder of your choosing (using Windows, 7zip, etc).&#13;
+2. Run Nova Chrysalia for the first time and select under Global Installation: "Unpack Game Data (EN Audio)" or "Unpack Game Data (JP Audio)" for the language audio you prefer&#13;
+    - Note: You may need to launch LR normally from Steam first&#13;
+4. Once the AP room is created, click the "Download Patch File" link to download a .aplrff13 mod file.&#13;
+5. Extract `LRRandomizer#.#.#.#.7z` to a folder of your choosing.&#13;
+6. Open the extracted folder and run LRRando.exe&#13;
+7. On the `1. Setup` page and at the top, setup the paths to your Steam LR FFXIII folder and Nova.&#13;
+8. At the bottom of the `1. Setup` page, click `Load from ZIP/APLRFF13` and select your .aplrff13 file&#13;
+9. After you do this, the randomizer should switch to 'Archipelago Mode'&#13;
+14. On the `2. Flags` page, select any additional settings&#13;
+15. On the `3. Finish` page, click `Generate Modpack`&#13;
+16. Open Nova Chrysalia and install the generated .ncmp modpack. It will appear in the `packs` folder of LRRandomizer&#13;
+17. Launch the game from Nova Chrysalia in "Unpacked" mode with the "Voice Over Settings" matching the language you unpacked game data for.&#13;
+&#13;
+### AP LR FF13 Client&#13;
+&#13;
+1. Launch the game&#13;
+2. Run the Archipelago Launcher (ArchipelagoLauncher.exe)&#13;
+3. Click `Lightning Returns Final Fantasy XIII Client`&#13;
+4. Connect to your room with the correct port and player name&#13;
+&#13;
+**WARNING:** Loading any other saves while connected to the client may send some unexpected checks to the server. Be careful not load any other saves.</content>
+    <link href="https://github.com/Bartz24/ArchipelagoLR/releases/tag/0.4.0"/>
   </entry>
 </feed>

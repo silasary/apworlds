@@ -1,9 +1,12 @@
 # Lightning Returns: Final Fantasy XIII
 
 ## Latest
-- <a href="https://github.com/Bartz24/ArchipelagoLR/releases/download/0.3.1/lrff13.apworld">Latest Version (0.3.1)</a>
+- <a href="https://github.com/Bartz24/ArchipelagoLR/releases/download/0.4.0/lrff13.apworld">Latest Version (0.4.0)</a>
 
 ## All Versions
+
+#### v0.4.0
+- <a href="https://github.com/Bartz24/ArchipelagoLR/releases/download/0.4.0/lrff13.apworld">https://github.com/Bartz24/ArchipelagoLR/releases/download/0.4.0/lrff13.apworld</a>
 
 #### v0.3.1
 - <a href="https://github.com/Bartz24/ArchipelagoLR/releases/download/0.3.1/lrff13.apworld">https://github.com/Bartz24/ArchipelagoLR/releases/download/0.3.1/lrff13.apworld</a>
