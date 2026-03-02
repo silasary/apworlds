@@ -1,12 +1,16 @@
 {
+  "authors": [
+    "Platano Bailando",
+    "KonoTyran"
+  ],
   "description": "A deck-building roguelike where you must craft a unique deck, encounter bizarre creatures, discover relics of\nimmense power, and Slay the Spire!",
   "game": "Slay the Spire",
   "github": "https://github.com/cjmang/StS-AP-World",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "1.15.0-RC-1": {
@@ -193,6 +197,51 @@
       "title": "2.3.1 Patch Release",
       "version_simple": "2.3.1",
       "world_version": "2.3.1"
+    },
+    "2.3.2": {
+      "created_at": "2026-03-01T22:11:52Z",
+      "description": "2.3.2 patch release of the StS APWorld. This AP world requires a 2.x release of the mod from https://github.com/cjmang/Slay-The-Spire-Archipelago-Mod/releases.  \r\n\r\n### Changes\r\n1. Fixed a logic issue where on A20, you could be locked out of checks with ascension downs.  This could be especially bad if running with key sanity.  Reaching the Act 3 boss room now logically requires the keys.\r\n2. Floor 56 now only exists logically if running A20 with no ascension downs.\r\n3. Reordered some of the options in the yaml.  No impact to old YAMLs.\r\n\r\nFor all AP releases you will need to install the spire.apworld file into your Archipelago installation's custom_worlds folder. You can find said apworld in the assets of this release.\r\n\r\nFor the setup guide, please go to https://github.com/cjmang/StS-AP-World/blob/sts/worlds/spire/docs/slay-the-spire_en.md.",
+      "download_url": "https://github.com/cjmang/StS-AP-World/releases/download/2.3.2/spire.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f47a3acc2d4bf0314a9b7b8b210594852bb6b181f65fc62f3c0fe2fe74e44e79",
+      "html_url": "https://github.com/cjmang/StS-AP-World/releases/tag/2.3.2",
+      "minimum_ap_version": "0.6.2",
+      "size": 26101,
+      "source_url": "https://api.github.com/repos/cjmang/StS-AP-World",
+      "tag": "2.3.2",
+      "title": "2.3.2 Patch Release",
+      "version_simple": "2.3.2",
+      "world_version": "2.3.2"
+    },
+    "2.3.3": {
+      "created_at": "2026-03-01T23:32:32Z",
+      "description": "2.3.3 patch release of the StS APWorld. This AP world requires a 2.x release of the mod from https://github.com/cjmang/Slay-The-Spire-Archipelago-Mod/releases.  \r\n\r\n## What's Changed\r\n* Fix item/location count mismatch when ascension_down > 0 with ascension >= 20 by @Eijebong in https://github.com/cjmang/StS-AP-World/pull/3\r\n\r\n## New Contributors\r\n* @Eijebong made their first contribution in https://github.com/cjmang/StS-AP-World/pull/3\r\n\r\nFor all AP releases you will need to install the spire.apworld file into your Archipelago installation's custom_worlds folder. You can find said apworld in the assets of this release.\r\n\r\nFor the setup guide, please go to https://github.com/cjmang/StS-AP-World/blob/sts/worlds/spire/docs/slay-the-spire_en.md.",
+      "download_url": "https://github.com/cjmang/StS-AP-World/releases/download/2.3.3/spire.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d23c21c97cbdf4f16631223687e3f1b3bb28b3d7b238ca3c2a5db37a79287d1c",
+      "html_url": "https://github.com/cjmang/StS-AP-World/releases/tag/2.3.3",
+      "minimum_ap_version": "0.6.2",
+      "size": 26109,
+      "source_url": "https://api.github.com/repos/cjmang/StS-AP-World",
+      "tag": "2.3.3",
+      "title": "2.3.3 Patch Release",
+      "version_simple": "2.3.3",
+      "world_version": "2.3.3"
+    },
+    "2.3.4": {
+      "created_at": "2026-03-01T23:56:44Z",
+      "description": "2.3.4 patch release of the StS APWorld. This AP world requires a 2.x release of the mod from https://github.com/cjmang/Slay-The-Spire-Archipelago-Mod/releases.  \r\n\r\nThree releases in one day!\r\n\r\n## What's Changed\r\n* Fixed a UT bug, because someone didn't set the number of regular card slots from slot data.\r\n\r\nFor all AP releases you will need to install the spire.apworld file into your Archipelago installation's custom_worlds folder. You can find said apworld in the assets of this release.\r\n\r\nFor the setup guide, please go to https://github.com/cjmang/StS-AP-World/blob/sts/worlds/spire/docs/slay-the-spire_en.md.",
+      "download_url": "https://github.com/cjmang/StS-AP-World/releases/download/2.3.4/spire.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c4e2ed622c1ac7908e725532492a082155c8df659929c2f7687934035deda9fa",
+      "html_url": "https://github.com/cjmang/StS-AP-World/releases/tag/2.3.4",
+      "minimum_ap_version": "0.6.2",
+      "size": 26118,
+      "source_url": "https://api.github.com/repos/cjmang/StS-AP-World",
+      "tag": "2.3.4",
+      "title": "2.3.4 Patch Release",
+      "version_simple": "2.3.4",
+      "world_version": "2.3.4"
     }
   }
 }
