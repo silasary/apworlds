@@ -3,7 +3,10 @@
   "game": "Lightning Returns: Final Fantasy XIII",
   "github": "https://github.com/Bartz24/ArchipelagoLR",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.1.0": {
       "created_at": "2025-10-12T07:53:26Z",
@@ -99,6 +102,21 @@
       "title": "LR FFXIII AP Rando 0.3.1",
       "version_simple": "0.3.1",
       "world_version": "0.3.1"
+    },
+    "0.4.0": {
+      "created_at": "2026-03-02T02:59:28Z",
+      "description": "# Changelog\r\n- Fixed duplicate adornments in the pool\r\n- Fixed initial weapons and shields being in the pool, which could cause softlocks\r\n- Fixed logic issue with Radiance of Fragment check not required Main Quest 5 to be started\r\n- Fixed empty shops in Dead Dunes on Days 1-7\r\n- Added Archipelago 0.7.0 required JSON file to ensure future compatibility\r\n\r\n# Notes\r\n- If you are upgrading Nova Chrysalia mod manager from 1.X to 2.X, uninstall all mods from Nova 1.X first, extract Nova 2.X to a new location, and install all your previous mods in Nova 2.X.\r\n- EN Text is required. Text for other languages is not supported due to maintainability concerns with the duplicated data.\r\n\r\n# Known Issues/Limits\r\n- Items sent to you are retrieved by holding the sprint button on the field (L2/R2 or LT/RT). This is a workaround to avoid crashes when trying to add automatically with no input.\r\n- Game overs are removed so you can technically get to the final day without completing the 5 main quests. This is safer for AP, but obviously that would be out of logic by skipping everything.\r\n- Chests that cost 6 EP are not currently in logic and are considered excluded/missable\r\n- Recovery items received from AP while your recovery item bag is full will be lost\r\n\r\n# Troubleshooting\r\n- Do NOT use the File > Reboot option in game, always close the game and relaunch through Nova\r\n- In Nova, always launch the game in Unpacked mode with \"Voice Over Setting\" set to the language you unpacked data for. \r\n\r\nIf you still have issues without not seeing modded content:\r\n1. Delete unpacked game data in Nova\r\n2. Unpack game data again in Nova\r\n3. Regenerate the rando modpack\r\n4. Uninstall and remove the old modpack in Nova, and re-install the modpack\r\n5. Be sure to launch the game in Unpacked and in the same voice language as unpacked data (EN/JP)!\r\n\r\n# Setup Guide:\r\n\r\nDownload the following:\r\n\r\n- lrff13.apworld\r\n- LRRandomizer#.#.#.#.7z\r\n- [Nova Chrysalia mod manager v2.0.3](https://mega.nz/file/24gyiB7b#nTIlktJb8ZCo8dXZDxCgwsdHAUDPURQhixSfucypIVg)\r\n\r\n### AP World and Seed Setup\r\n1. Double click the lrff13.apworld to install the custom world\r\n6. Run the Archipelago Launcher (ArchipelagoLauncher.exe)\r\n7. Click `Generate Template Options` to open the folder with the template yaml files\r\n8. Copy the `Lightning Returns Final Fantasy XIII.yaml` template to the `Players` folder\r\n9. Open your YAML file and edit the `name: Player{number}` to set your name.\r\n`{number}` is needed if there will others in the seed with a similar name, you can remove it otherwise.\r\nModify any other options you want below.\r\n10. If hosting: Run the Archipelago Launcher (ArchipelagoLauncher.exe)\r\n11. Click `Generate`\r\n12. Go the `output` folder, and you will find your created `AP_#####.zip` file.\r\n13. To host the game, upload `AP_#####.zip` to: https://archipelago.gg/uploads\r\n\r\n### Randomizer Seed Setup\r\n\r\n1. Extract the Nova Chrysalia.7z to a folder of your choosing (using Windows, 7zip, etc).\r\n2. Run Nova Chrysalia for the first time and select under Global Installation: \"Unpack Game Data (EN Audio)\" or \"Unpack Game Data (JP Audio)\" for the language audio you prefer\r\n    - Note: You may need to launch LR normally from Steam first\r\n4. Once the AP room is created, click the \"Download Patch File\" link to download a .aplrff13 mod file.\r\n5. Extract `LRRandomizer#.#.#.#.7z` to a folder of your choosing.\r\n6. Open the extracted folder and run LRRando.exe\r\n7. On the `1. Setup` page and at the top, setup the paths to your Steam LR FFXIII folder and Nova.\r\n8. At the bottom of the `1. Setup` page, click `Load from ZIP/APLRFF13` and select your .aplrff13 file\r\n9. After you do this, the randomizer should switch to 'Archipelago Mode'\r\n14. On the `2. Flags` page, select any additional settings\r\n15. On the `3. Finish` page, click `Generate Modpack`\r\n16. Open Nova Chrysalia and install the generated .ncmp modpack. It will appear in the `packs` folder of LRRandomizer\r\n17. Launch the game from Nova Chrysalia in \"Unpacked\" mode with the \"Voice Over Settings\" matching the language you unpacked game data for.\r\n\r\n### AP LR FF13 Client\r\n\r\n1. Launch the game\r\n2. Run the Archipelago Launcher (ArchipelagoLauncher.exe)\r\n3. Click `Lightning Returns Final Fantasy XIII Client`\r\n4. Connect to your room with the correct port and player name\r\n\r\n**WARNING:** Loading any other saves while connected to the client may send some unexpected checks to the server. Be careful not load any other saves.",
+      "download_url": "https://github.com/Bartz24/ArchipelagoLR/releases/download/0.4.0/lrff13.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9aaa33fe5ada2b9a0550e37e6efdcf78a2e61342ab6d9730123c6b233a7d08a8",
+      "html_url": "https://github.com/Bartz24/ArchipelagoLR/releases/tag/0.4.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 53395,
+      "source_url": "https://api.github.com/repos/Bartz24/ArchipelagoLR",
+      "tag": "0.4.0",
+      "title": "0.4.0 Release",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
     }
   }
 }
