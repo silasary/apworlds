@@ -1,12 +1,16 @@
 {
+  "authors": [
+    "BlastSlimey",
+    "SparkyDaDoggo"
+  ],
   "description": "Pok\u00e9mon Black and White are the introduction to the fifth generation of the Pok\u00e9mon franchise.\nTravel through the Unova region, catch a variety of brand-new Pok\u00e9mon you have never seen before,\ncollect the eight gym badges, fight Team Plasma, who claim to be the saviors of all the Pok\u00e9mon,\nand become the champion of the region.\nThese games present themselves in 2.5D graphics,\nwhile still using the well-known grid-based movement mechanics and battle UI.",
   "game": "Pokemon Black and White",
   "github": "https://github.com/BlastSlimey/PokemonBWAP",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "0.1.0": {
@@ -319,6 +323,21 @@
       "title": "v0.3.17",
       "version_simple": "0.3.17",
       "world_version": "0.3.17"
+    },
+    "0.3.18": {
+      "created_at": "2026-03-02T14:23:07Z",
+      "description": "# Changelog\r\n\r\n- Features:\r\n  - Added \"Post-Ghetsis locations\" group\r\n  - Made `Randomize Wild Pokemon` (and similar options) automatically add `Randomize` if any other modifier is added\r\n  - Added `Rare encounters threshold` key to `Pok\u00e9mon Randomization Adjustments`, intended for the `Prevent rare encounters` modifier\r\n    - Also changed the default to 8, in order to prevent conflicts with the `Modify Encounter Rates` option\r\n  - Added an extended location hint for `Route 6 - Item from scientist for all Deerling forms`\r\n  - Added `Consider evolutions/static pokemon/trades/form change` to `Modify Logic`\r\n  - Added places of pre-evolutions and trade requests to extended hint information of Dexsanity checks\r\n\r\n- Fixes:\r\n  - Fixed the flag for beating Cynthia not being correctly sent to Poptracker\r\n  - Fixed multiple Dexsanity checks being rolled when not possible (or vice versa)\r\n    - This includes Pansage sometimes not having a check even if `Ensure all obtainable` is included\r\n  - Fixed `Pok\u00e9mon Randomization Adjustments` crashing when given an empty dictionary\r\n  - Fixed Marvelous Bridge being forgotten by the `Adjust levels` option\r\n  - Fixed incorrect entrance logic of Moor of Icirrus\r\n\r\n- Other stuff:\r\n  - Improved filler item generation performance\r\n  - Tweaked option descriptions to make them friendlier towards new players\r\n  - Made `Icirrus City - Item from Pok\u00e9mon Fan Club chairman for gaining 50 levels` logically require access to Ghetsis\r\n  - Added static and trade encounters to slot data for Poptracker\r\n  - Added patch version range accepting\r\n  - Tweaked error messages for incompatible base ROMs in the patching process\r\n  - Added the requirement to reach Shopping Mall Nine for stats based evolutions\r\n  - Removed `Prevent rare encounters` being forbidden with certain `Modify Encounter Rates` values\r\n    - Instead, an OptionError is now raised when a combination of options leads to not having enough wild \r\n      randomization slots for all guaranteed encounters\r\n  - Added `revert()` and `stack()` to `version.py`\r\n  - Made the Prof. Juniper Pok\u00e9dex seen count locations check the national Pok\u00e9dex instead of the regional one\r\n    - Also adjusted the apworld's logic to reflect that\r\n\r\n## Is this version compatible with older multiworld slots and save files?\r\nYes, back to 0.3.0, except the pre-release 0.3.99(9)\r\nHowever, tracking worlds generated before 0.3.18 might show incorrect Dexsanity logic in UT\r\n\r\n## Notes regarding the `pokemon_bw_without_maps.apworld` file\r\nThat version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.\r\nTo install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.\r\nIt's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.",
+      "download_url": "https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.18/pokemon_bw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a5d1a239602a0810a1bfc8b6c01de2c72619f5012971a658edc62d6c898e34e4",
+      "html_url": "https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.18",
+      "minimum_ap_version": "0.6.3",
+      "size": 37634312,
+      "source_url": "https://api.github.com/repos/BlastSlimey/PokemonBWAP",
+      "tag": "0.3.18",
+      "title": "v0.3.18: The \"But I did beat Cynthia...\" update",
+      "version_simple": "0.3.18",
+      "world_version": "0.3.18"
     },
     "0.3.2": {
       "created_at": "2025-08-11T21:01:25Z",

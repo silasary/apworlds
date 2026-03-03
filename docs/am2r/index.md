@@ -6,7 +6,7 @@ items from there as well.
 
 
 ## Downloads
-- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.2-M2/am2r.apworld">Latest Version (1.4.2)</a>
+- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.3-M2/am2r.apworld">Latest Version (1.4.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -14,4 +14,5 @@ items from there as well.
 
 ## Setup Guide
 - <a href="setup_en">English</a>
+- <a href="setup_en_mwgg">English</a>
 

@@ -346,6 +346,21 @@
       "title": "0.4.5",
       "version_simple": "0.4.5",
       "world_version": "0.4.5"
+    },
+    "0.4.6": {
+      "created_at": "2026-03-02T14:04:40Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- Fixed a huge 'seed bleed' bug. Before 0.4.5, loading a slot that had received Ledge Grab, Wall Climb or Grapple, then quitting to menu and loading a slot which had not received them, would cause those items to be mis-applied in the new slot. 0.4.5's item re-apply checks effectively extended this bug to all of the other key progression abilities (TCK, AD, CL, SMB, UC, and Nymph), after which we were finally able to pin it down and fix it properly.\r\n- Added a \"Batch Simultaneous Messages\" (default on) mod setting. Turns out some players want to turn off the batching added in 0.4.5 and opt-in to 'message floods'. Fortunately, it seems easy to display the individual messages instead of a summary, without losing the stability benefits of adding messages to the UI only so many times per second.",
+      "download_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/0.4.6/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a89bd720a12648d40c8d0e72a9e8ad6e69cba76b98f8c25913a94768e4fd5815",
+      "html_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.4.6",
+      "minimum_ap_version": "0.6.4",
+      "size": 2579580,
+      "source_url": "https://api.github.com/repos/Ixrec/NineSolsArchipelagoRandomizer",
+      "tag": "0.4.6",
+      "title": "0.4.6",
+      "version_simple": "0.4.6",
+      "world_version": "0.4.6"
     }
   }
 }

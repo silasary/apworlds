@@ -14,6 +14,9 @@
 #### v0.3.99
 - <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.99/pokemon_bw.apworld">https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.99/pokemon_bw.apworld</a>
 
+#### v0.3.18
+- <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.18/pokemon_bw.apworld">https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.18/pokemon_bw.apworld</a>
+
 #### v0.3.17
 - <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.17/pokemon_bw.apworld">https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.17/pokemon_bw.apworld</a>
 

@@ -1,9 +1,12 @@
 # Aquaria
 
 ## Latest
-- <a href="https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld">Latest Version (1.5.2.post4)</a>
+- <a href="https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld">Latest Version (1.5.2.post5)</a>
 
 ## All Versions
+
+#### v1.5.2.post5
+- <a href="https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld">https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld</a>
 
 #### v1.5.2.post4
 - <a href="https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld">https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld</a>

@@ -6,7 +6,11 @@
   "game": "Minecraft Dig",
   "github": "https://github.com/jacobmix/Minecraft_AP_Randomizer",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.0.5_dig": {
       "created_at": "2026-02-13T01:36:03Z",
@@ -38,6 +42,21 @@
       "title": "Dig apworld 0.0.7 (MC1.19.4)",
       "version_simple": "0.0.7",
       "world_version": "0.0.7"
+    },
+    "0.0.8_dig": {
+      "created_at": "2026-03-02T15:38:10Z",
+      "description": "Instructions:\r\nhttps://github.com/jacobmix/Minecraft_AP_Randomizer/blob/apworld_dig/README.md\r\n\r\n**Full Changelog**:\r\nhttps://github.com/jacobmix/Minecraft_AP_Randomizer/compare/0.0.7_dig...0.0.8_dig\r\n\r\n# What's changed: APWorld v0.0.8\r\n\r\n**Chunk Progression**\r\n  - Fixed: Chat message now correctly shows the actual number of accessible chunks (e.g., \"2/4 chunks\")\r\n  \r\n**Chunk Indicator**\r\n  - Fixed: Chunk index display in action bar was showing incorrect numbers due to formula mismatch\r\n  \r\n**Excavation & Mining**\r\n  - Fixed: Gold pickaxe now correctly loses durability\r\n  - Fixed: Insta-mining (breaking blocks instantly) now properly counts towards \"Blocks Broken\" scoreboard\r\n  - Fixed: Insta-mining now correctly triggers Excavation power on surrounding blocks\r\n\r\n  **Softlock Prevention**\r\n  - Fixed: Players falling into empty chunk areas are now teleported to a safe position instead of respawning in a death loop\r\n\r\n  **Offline Player Items**\r\n  - Added: Items received while a player is offline are now queued and given when they rejoin\r\n  - Players are registered on first join and receive any pending items on subsequent logins\r\n\r\n  # New Features\r\n\r\n  **Auto-Connect**\r\n  - Added: Server automatically attempts to connect to Archipelago using the address from archipelago.json\r\n  - Works when downloading .apmcdig from a remote Archipelago server\r\n  - Note: For locally hosted lobbies, the server address is not populated - use /connect localhost:38281 manually",
+      "download_url": "https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.0.8_dig/minecraft_dig.apworld",
+      "has_manifest": true,
+      "hash_sha256": "acfba685977242d9925ceb083aebe76ff8c087484fb17d331c6e181dacb2c06a",
+      "html_url": "https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/0.0.8_dig",
+      "minimum_ap_version": "0.5.0",
+      "size": 16624,
+      "source_url": "https://api.github.com/repos/jacobmix/Minecraft_AP_Randomizer",
+      "tag": "0.0.8_dig",
+      "title": "Dig apworld 0.0.8 (MC1.19.4)",
+      "version_simple": "0.0.8",
+      "world_version": "0.0.8"
     },
     "0.1.5_hotfix": {
       "created_at": "2025-12-08T16:32:43Z",
