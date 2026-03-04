@@ -1,14 +1,47 @@
 {
+  "authors": [
+    "Azuri Caelum"
+  ],
   "description": "Our Ascent is an incremental roguelite RPG with many layers of metaprogression.",
   "game": "Our Ascent",
   "github": "https://github.com/AzuriCaelum/OurAscentAPWorld",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
+    "0.1.2": {
+      "created_at": "2026-01-06T20:26:57Z",
+      "description": "# 0.1.2\r\n\r\n## Compatible With \r\n- Archipelago v0.6.5\r\n- Our Ascent vB.2.1\r\n- Our Ascent APworld v0.1.0\r\n\r\n## Features\r\n- Connection Information is now saved across sessions\r\n- The equipment obtained slider on the main menu now tracks equipment checks sent rather than equipment received.\r\n\r\n## Bug Fixes\r\n- A couple miscellaneous minor bugs, nothing that affects anything now but would create problems when future stories are added.\r\n\r\n## Known Bugs:\r\n- If you are sent items before you buy them, you will no longer be able to see how much they cost.\r\n- Enemies that drop items will drop them whenever defeated until you are sent the item (or with accessories, all copies of the item). \r\n- Similarly, enemies that drop an item you already have will not show the popup in the game (but will still send the check).\r\n- The enemy compendium will show loot still available to acquire incorrectly.\r\n- An extra copy of the starting character will be randomized in the multiworld.\r\n- Deleting the randomizer Json will permanently make the equipment obtained slider amount be 1 fewer than the true amount.",
+      "download_url": "https://github.com/AzuriCaelum/OurAscentAPWorld/releases/download/0.1.2/ourascent.apworld",
+      "has_manifest": true,
+      "hash_sha256": "064f183f1c55cca4791ffa9a56101b9fbb2aefa51c22da4fded31ce0a3ed0289",
+      "html_url": "https://github.com/AzuriCaelum/OurAscentAPWorld/releases/tag/0.1.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 30458,
+      "source_url": "https://api.github.com/repos/AzuriCaelum/OurAscentAPWorld",
+      "tag": "0.1.2",
+      "title": "Our Ascent Randomizer - 0.1.2",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "0.2.0": {
+      "created_at": "2026-01-06T20:26:57Z",
+      "description": "# 0.2.0\r\n\r\n## Compatible With \r\n- Archipelago v0.6.6\r\n- Our Ascent vB.2.1\r\n- Our Ascent APworld v0.2.0\r\n\r\n## Features\r\n- You can now randomize stat buffs into the multiworld. A new yaml option to have a percentage of filler checks be turned into stat boosts has been added. Be aware that the game will become significantly easier if this is set to a high number.\r\n- Equipment tooltips are much more robust now. They will consistently show the cost for equipment you have not sent yet, the exact enemy and zone that drops the item, and will hide this information if you have already sent the check(s) for the item. \r\n- If you haven't yet been sent a piece of equipment that you are selecting, it will tell you exactly which item you need more of in order to equip that item.\r\n\r\n## Bug Fixes\r\n- Enemy loot drops will now correctly show up when a check is sent, and will no longer show up when you have sent all checks of that specific item. Receiving all copies of that item will no longer affect this.\r\n\r\n## Known Bugs:\r\n- The enemy compendium will show loot still available to acquire incorrectly.\r\n- An extra copy of the starting character will be randomized in the multiworld.\r\n- Deleting the randomizer Json will permanently make the equipment obtained slider amount be 1 fewer than the true amount.\r\n- Accessory counts can be incorrect if you are in the menu when you receive one. Reloading the menu will fix this.",
+      "download_url": "https://github.com/AzuriCaelum/OurAscentAPWorld/releases/download/0.2.0/ourascent.apworld",
+      "has_manifest": true,
+      "hash_sha256": "064f183f1c55cca4791ffa9a56101b9fbb2aefa51c22da4fded31ce0a3ed0289",
+      "html_url": "https://github.com/AzuriCaelum/OurAscentAPWorld/releases/tag/0.2.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 30458,
+      "source_url": "https://api.github.com/repos/AzuriCaelum/OurAscentAPWorld",
+      "tag": "0.2.0",
+      "title": "Our Ascent Randomizer - 0.2.0",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
     "Release": {
       "created_at": "2026-01-06T20:26:57Z",
       "description": "# 0.1.0\r\n\r\n## Compatible With \r\n- Archipelago v0.6.5\r\n- Our Ascent vB.2.1\r\n\r\n## Features\r\n- Equipment and Augments can be acquired as items in the multiworld.\r\n- Unique enemy and boss kills, and Equipment purchases can be sent as checks to the multiworld.\r\n- Option to have a specified amount of random stories from the first five stories in the Glades.\r\n- Goaling is to defeat Fairy Fillia or Fairy Zephyria in every story present in your multiworld.\r\n- All equipment slots are unlocked immediately.\r\n- The ability to lock and automatically spend skill points is granted immediately (though it looks wrong in most stories right now)\r\n- Achievements, and therefore boss points and skill points, are disabled and unavailable. Augments simply are increased when they are received.\r\n- Augments will not take effect until their vanilla prerequisites are met (for chapter 1, this is exclusively having one copy of the prerequisite augment(s))\r\n- Checks will be saved when acquired while disconnected and sent when reconnecting.\r\n\r\n## Known Bugs:\r\n- Many equipment visual/clarity issues; namely that if you are sent items before you buy them, you will no longer be able to see how much they cost.\r\n- Enemies that drop items will drop them whenever defeated until you are sent the item (or with accessories, all copies of the item). \r\n- Similarly, enemies that drop an item you already have will not show the popup in the game (but will still send the check).\r\n- The enemy compendium will show loot still available to acquire incorrectly.\r\n- An extra copy of the starting character will be randomized in the multiworld.",
