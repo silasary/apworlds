@@ -2,38 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-04T00:52:29.111037+00:00</updated>
+  <updated>2026-03-04T12:27:05.579412+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.0</id>
-    <title>TOEM: A Photo Adventure v2.0.0</title>
-    <updated>2026-02-27T01:59:16+00:00</updated>
-    <author>
-      <name>DrTChops</name>
-    </author>
-    <author>
-      <name>0xDEAFC0DE</name>
-    </author>
-    <author>
-      <name>Shellshe</name>
-    </author>
-    <content>Changes:&#13;
-&#13;
-- Reimplments Cassettes with new ER logic&#13;
-- Added version checks for Client and UT&#13;
-- Adjust min connection window size for lower resolutions&#13;
-- Make ER data more memory efficient&#13;
-- Bugfix: Cassettes locations trigger properly if item is already received&#13;
-- Bugfix: Added logic for raft being fixed with electricity&#13;
-- Bugfix: Basto ticket now properly unlocks house exit&#13;
-&#13;
-Randomizer details: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/en_TOEM.md&#13;
-Setup guide: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/setup_en.md</content>
-    <link href="https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.0"/>
-  </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR</id>
     <title>The Grinch v1.5.0</title>
@@ -1148,5 +1121,51 @@ general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/
 setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
 source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
     <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.1</id>
+    <title>Everhood 2 v0.3.2</title>
+    <updated>2026-03-04T09:03:42+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content>&gt; [!IMPORTANT]&#13;
+&gt; **Doorsanity Off is BROKEN in Act 2**. It is missing some crucial changes like opening up Lab/Smega/Human City after defeating dragon, and allowing you to retry Everhood 1&#13;
+&#13;
+&gt; [!IMPORTANT]&#13;
+&gt; While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Red Route, many Hilbert Hotel rooms and Green Route 3. Please bring my attention to them in Discord if they occur.&#13;
+&#13;
+# Changes:&#13;
+- Tried to fix a case where saving could save on the main menu.&#13;
+- Fix the check update button checking Muse Dash instead.&#13;
+&#13;
+# Still to come:&#13;
+- Requiring multiple sources of a colour in act 2. (That is need 2 Red items to refect Red colours in Act 2.)&#13;
+- Fixing Doorsanity Off.&#13;
+- Double checking the unlock condition of Green Route 4. I believe it is actually available in Act 2 but currently not implemented.&#13;
+- Turning off the Elevator Code entry. Elevator Codes are to be locked behind Act 3.&#13;
+- Ensuring all cases of settings work without errors.&#13;
+&#13;
+# Installation&#13;
+### Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+1. Download MelonLoader.Installer.exe from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Choose the automated tab, click the select button and browse to `Everhood 2.exe`.&#13;
+    - You can find the folder in steam by finding the game in your library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+    - If you click the bar at the top telling you your current folder, this will give you a path you can copy. If you paste that into the window popped up by **MelonLoader**, it will automatically go to the same folder.&#13;
+3. The launcher will automatically default to the latest version. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.6.6.**&#13;
+4. Click install. Once finished run the game once.&#13;
+&#13;
+### Mod Install&#13;
+&#13;
+1.Download `ArchipelagoEverhood.zip`.&#13;
+2. Head to the Everhood folder and open up `/mods/`.&#13;
+3. Extract the contents of the .zip file into mods.&#13;
+   - Ensure that `ArchipelagoEverhood.dll` and `Archipelago.MultiClient.Net.dll` are under `/mods/` and not within a sub folder.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.1"/>
   </entry>
 </feed>
