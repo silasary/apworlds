@@ -1,9 +1,12 @@
 # plateup
 
 ## Latest
-- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.1/plateup.apworld">Latest Version (0.2.5.1)</a>
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.2/plateup.apworld">Latest Version (0.2.5.2)</a>
 
 ## All Versions
+
+#### v0.2.5.2
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.2/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.2/plateup.apworld</a>
 
 #### v0.2.5.1
 - <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.1/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.1/plateup.apworld</a>

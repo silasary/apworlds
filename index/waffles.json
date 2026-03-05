@@ -1,4 +1,8 @@
 {
+  "authors": [
+    "lx5",
+    "PoryGone"
+  ],
   "description": "Spicy Mycena Waffles (SMW) is an extension of the original Super Mario World Archipelago implementation\nthat features several core changes for better or for worse.",
   "game": "SMW: Spicy Mycena Waffles",
   "github": "https://github.com/TheLX5/Archipelago",
@@ -240,6 +244,21 @@
       "title": "Spicy Mycena Waffles v1.2.7",
       "version_simple": "1.2.7",
       "world_version": "1.2.7"
+    },
+    "waffles-v1.2.8": {
+      "created_at": "2026-03-05T01:26:53Z",
+      "description": "Logic fixes & adjusments (mostly Yoshi related logic lol)\r\n# Info \r\n* [Information](https://thelx5.github.io/smw/)\r\n* [Full Changelog](https://thelx5.github.io/smw/changelog/#1.2.7)\r\n* Probably not backwards compatible with already generated games\r\n# Changes\r\n* Prohibited Butter Bridge 2 to appear early when logic isn't set to `hard`\r\n* Generator now provides a fully vanilla map if it can't solve your current map transition and teleport settings after 10 attempts (10 swaps per attempt)\r\n* Logic for locations that required Yoshi has been updated so they can require any Yoshi color\r\n* Logic for obtaining a Red Yoshi in SW1 has been updated to require Spin Jump (not that this particular Yoshi color is very relevant in sessions)\r\n* Logic for Forest of Illusion 3 now expects the same rules for blocks, normal exit and room visits\r\n* Enemy Shuffle: Limited enemy variety in Sunken Ghost Ship\r\n* Enemy Shuffle: Banned Volcano Lotuses and most of the Chuck family at the end of Valley of Bowser 2\r\n* Level Shuffle off users are now bonked when trying to change their starting world (it's forced to Yoshi's Island)\r\n* Unbonk minimal accesibility users (Thanks Mysteryem)\r\n* Fixed missing indirect conditions (Thanks Eijebong)\r\n",
+      "download_url": "https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.2.8/waffles.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8489f4c049fcba1ca29ad25e9259715f43c9df68c7e7439cda92064a1a7b2c72",
+      "html_url": "https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.2.8",
+      "minimum_ap_version": "0.6.5",
+      "size": 221970,
+      "source_url": "https://api.github.com/repos/TheLX5/Archipelago",
+      "tag": "waffles-v1.2.8",
+      "title": "Spicy Mycena Waffles v1.2.8",
+      "version_simple": "1.2.8",
+      "world_version": "1.2.8"
     }
   }
 }
