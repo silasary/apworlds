@@ -2,67 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-04T12:27:05.579412+00:00</updated>
+  <updated>2026-03-05T00:52:37.968787+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR</id>
-    <title>The Grinch v1.5.0</title>
-    <updated>2026-02-27T03:04:38+00:00</updated>
-    <author>
-      <name>MarioSpore</name>
-    </author>
-    <author>
-      <name>SomeJakeGuy</name>
-    </author>
-    <content># Notice&#13;
-Keep in mind that this is a beta release and is not currently ready for a full release. Do not bring this into serious groups unless you know what you are doing. This is for testing purposes only to ensure everything is ready when this update gets a full release. Report bugs and check certain things to make sure everything works as intended.&#13;
-&#13;
-# Changes&#13;
-- Updated to require AP v0.6.6 to encourage people to update with security patch.&#13;
-- Deathlink! Keep in mind that every area you are able to die in except for Mount Crumpit, Clock Tower, Post Office, &amp; Sleigh Room due to ingame issues I encountered during testing.&#13;
-- Gadgets are now given to you sooner! No longer you are required to use the computer to get the gadget. Just reload/enter a new area to get the gadgets on demand!&#13;
-- Sleigh Parts are now items in the pool! Find them through out the multiworld and enter the sleigh ride with the Sleigh Room Key! Because of this, the sleigh part locations are temporarily removed for the time being.&#13;
-- Grass.&#13;
-- Presents are in the pool aswell. These are items that do nothing to the game if you decide to not want to add rotten eggs to the pool.&#13;
-- Mission completion for squashing all gifts should be removed if you exclude at least one subarea per area. For example if you have `giftsanity` enabled and you have excluded on of Whoville's subareas, the mission will be removed.&#13;
-- Added new `misc_checks` option. Adds various categorized locations in the multiworld. From platforms to killsanity, and other funny locations.&#13;
-- Few new item/location groups&#13;
-&#13;
-# Bug Fixes&#13;
-- Fixed bug regarding certain locations sending when they should not be.&#13;
-- Elevator in Mount Crumpit should hopefully be positioned in the right level when using the teleport multibind&#13;
-- Various small logic tweaks and fixes that went overlooked.&#13;
-&#13;
-# Things to do until full release&#13;
-- Fix Heart of Stone locations sometimes not sending&#13;
-- Support for incremental location checks&#13;
-- OR condition addresses for locations&#13;
-- ~~Fix fuzzer errors~~&#13;
-&#13;
-There are probably many more changes I missed. Look around and see what you can spot!</content>
-    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR"/>
-  </entry>
-  <entry>
-    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.0.1</id>
-    <title>factorio_space_age v1.0.1</title>
-    <updated>2026-02-27T03:43:15+00:00</updated>
-    <author>
-      <name>Berserker</name>
-    </author>
-    <author>
-      <name>Josh Wolfe</name>
-    </author>
-    <content># Factorio: Space Age apworld v1.0.1&#13;
-&#13;
-* Add logic option to require steel power poles on vulcanus and fulgora.&#13;
-* Fix Archipelago required version to address a settings related crash.&#13;
-* Fix typos in yaml option description.&#13;
-</content>
-    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.3.2</id>
     <title>ULTRAKILL v3.3.2</title>
@@ -1167,5 +1111,67 @@ source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/f
 4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
 </content>
     <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.1</id>
+    <title>plateup v0.2.5.1</title>
+    <updated>2026-03-04T19:00:20+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>### What's New?&#13;
+- Added new location checks based on in-game settings, expanding the &#13;
+  number of locations available in your randomizer seed by a maximum of 60!&#13;
+- Added logic surrounding setting checks, ensuring items and locations &#13;
+  are reachable in a valid and fair way&#13;
+- Added options to configure which setting checks are included in your game&#13;
+&#13;
+### Bug Fixes&#13;
+- Fixed the manifest having incorrect version info, which may have caused &#13;
+  issues with Archipelago recognizing the correct apworld version&#13;
+&#13;
+### New YAML Options&#13;
+&#13;
+**`setting_checks`** — Enables location checks for Country, City, and &#13;
+Alpine settings (cosmetic variants). Set your preferred option to `50` &#13;
+and the other to `0`.&#13;
+&#13;
+**`setting_check_mode`** — Controls which settings have checks:&#13;
+- `base_only` *(default)* — Only base settings have checks&#13;
+- `base_and_extras` — Base settings + any extras you define&#13;
+- `extras_only` — Only the extras you define&#13;
+&#13;
+**`setting_extra_checks`** — A list of extra settings to add checks for.&#13;
+Example: `[autumn, witch, turbo]` — generates 15 day checks for each.&#13;
+- Must be **lowercase**&#13;
+- Only active when `setting_check_mode` is `base_and_extras` or `extras_only`&#13;
+&#13;
+&gt; ⚠️ I'd recommend experimenting before using these in an actual multiworld &#13;
+&gt; seed — they can be tricky to configure!&#13;
+&#13;
+&#13;
+### Note&#13;
+This apworld update is directly tied to the mod update — make sure you &#13;
+update both together for everything to work correctly!&#13;
+[Mod Update 0.2.5.1](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.5.1)</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/pkolb-dev/Archipelago/releases/tag/1.3.0</id>
+    <title>The Legend of Dragoon v1.3.0</title>
+    <updated>2026-03-04T22:20:44+00:00</updated>
+    <author>
+      <name>pkolb-dev</name>
+    </author>
+    <content>## What's Changed&#13;
+* Feature: Add shop to generation by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/45&#13;
+* Legend of Dragoon: Feature/progressive additions by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/48&#13;
+* Feature/add law items by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/49&#13;
+* Send starting inventory for progressive adds by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/50&#13;
+* bump version by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/51&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/pkolb-dev/Archipelago/compare/0.1.2...1.3.0</content>
+    <link href="https://github.com/pkolb-dev/Archipelago/releases/tag/1.3.0"/>
   </entry>
 </feed>

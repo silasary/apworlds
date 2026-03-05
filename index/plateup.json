@@ -403,6 +403,20 @@
       "version_simple": "0.2.4.3",
       "world_version": "0.2.4.3"
     },
+    "0.2.5.1": {
+      "created_at": "2026-03-04T19:00:20Z",
+      "description": "### What's New?\r\n- Added new location checks based on in-game settings, expanding the \r\n  number of locations available in your randomizer seed by a maximum of 60!\r\n- Added logic surrounding setting checks, ensuring items and locations \r\n  are reachable in a valid and fair way\r\n- Added options to configure which setting checks are included in your game\r\n\r\n### Bug Fixes\r\n- Fixed the manifest having incorrect version info, which may have caused \r\n  issues with Archipelago recognizing the correct apworld version\r\n\r\n### New YAML Options\r\n\r\n**`setting_checks`** \u2014 Enables location checks for Country, City, and \r\nAlpine settings (cosmetic variants). Set your preferred option to `50` \r\nand the other to `0`.\r\n\r\n**`setting_check_mode`** \u2014 Controls which settings have checks:\r\n- `base_only` *(default)* \u2014 Only base settings have checks\r\n- `base_and_extras` \u2014 Base settings + any extras you define\r\n- `extras_only` \u2014 Only the extras you define\r\n\r\n**`setting_extra_checks`** \u2014 A list of extra settings to add checks for.\r\nExample: `[autumn, witch, turbo]` \u2014 generates 15 day checks for each.\r\n- Must be **lowercase**\r\n- Only active when `setting_check_mode` is `base_and_extras` or `extras_only`\r\n\r\n> \u26a0\ufe0f I'd recommend experimenting before using these in an actual multiworld \r\n> seed \u2014 they can be tricky to configure!\r\n\r\n\r\n### Note\r\nThis apworld update is directly tied to the mod update \u2014 make sure you \r\nupdate both together for everything to work correctly!\r\n[Mod Update 0.2.5.1](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.5.1)",
+      "download_url": "https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.1/plateup.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c34c8312dd5fb70acc32a731d51a269df7fc6d78caaeb21b97b6daf9b2bd317c",
+      "html_url": "https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.1",
+      "size": 18873,
+      "source_url": "https://api.github.com/repos/CazIsABoi/Archipelago",
+      "tag": "0.2.5.1",
+      "title": "PlateUpAP apworld v0.2.5-beta.1",
+      "version_simple": "0.2.5.1",
+      "world_version": "0.2.5.1"
+    },
     "v0.1.4.2": {
       "created_at": "2025-02-26T20:49:30Z",
       "description": "### This is directly correlated with the updates for the mod\r\nhttps://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.1.4.2\r\n\r\n### The apworld and attached yaml are what SHOULD be used when generating a world, generating template right now makes a faulty one which doesn't work so don't use it",
