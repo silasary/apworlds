@@ -298,6 +298,20 @@
       "title": "TTYD AP v0.8.0",
       "version_simple": "0.8.0",
       "world_version": "0.8.0"
+    },
+    "v0.9.0": {
+      "created_at": "2026-03-05T13:56:03Z",
+      "description": "# Changelog\r\n  - Add new yaml options: EnemyRandomizer, EncounterShuffleType, EnemyStatScaling, ShuffleChapterStats, BadgeBP, BadgeFP, PartnerFP\r\n  - EnemyRandomizer allows you to shuffle enemy encounters either within their own chapter or completely randomly across the entire game\r\n  - EncounterShuffleType determines how enemies are grouped when randomizing \u2014 either keeping vanilla encounter groups intact, or regrouping enemies individually into new encounters based on enemy count\r\n  - EnemyStatScaling scales enemy stats based on the chapter they appear in, independent of the enemy randomizer setting\r\n  - ShuffleChapterStats shuffles the stat scaling values between chapters, so chapter 1 enemies could use chapter 5 scaling, etc. Requires EnemyStatScaling to be enabled\r\n  - BadgeBP allows you to change the BP cost of all badges \u2014 keep them vanilla, shuffle costs among each other, or assign random costs between 0 and 6\r\n  - BadgeFP allows you to change the FP cost of all badges \u2014 keep them vanilla, shuffle costs among each other, or assign random costs between 0 and 6\r\n  - PartnerFP allows you to change the FP cost of all partner moves \u2014 keep them vanilla, shuffle costs among each other, or assign random costs between 0 and 6\r\n  - Seed playthroughs now check your required_stars only as opposed to any star when checking for goal.\r\n  - Some star piece locations will now be disabled if there are not enough star pieces randomized.\r\n\r\n# Bugfixes\r\n- Fixed tattles in the pit being in logic way too early.\r\n- Fixed a check in rogueport sewers that was in logic without paper made while blue pipes were disabled.\r\n- Fixed a few cutscenes that were skipped improperly\r\n- Fixed a few instances where some tattles did not show up in the trash can at the right time\r\n- Other small misc. tweaks to the mod and apworld\r\n",
+      "download_url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.9.0/ttyd.apworld",
+      "has_manifest": false,
+      "hash_sha256": "3cf0b9409fa0d1cf816c082f1b9aca0b6feb54567b3abf56eb2c72e922d571c4",
+      "html_url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.9.0",
+      "size": 766886,
+      "source_url": "https://api.github.com/repos/jamesbrq/ArchipelagoTTYD",
+      "tag": "v0.9.0",
+      "title": "TTYD AP v0.9.0",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0"
     }
   }
 }

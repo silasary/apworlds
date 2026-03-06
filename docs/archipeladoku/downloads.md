@@ -1,4 +1,4 @@
-# 
+# Archipeladoku
 
 ## Latest
 - <a href="https://github.com/galdiuz/archipeladoku/releases/download/v2026.03.03/archipeladoku.apworld">Latest Version (2026.3.3)</a>

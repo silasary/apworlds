@@ -1,6 +1,8 @@
-# 
+# YARGRockBand3
 
-
+YARG is an Open-Source plastic band rhythm game! 
+Play through the YARG Official Setlist for the crowd,
+and maybe get some free items from your fans!
 
 
 ## Downloads
