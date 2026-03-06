@@ -1,9 +1,12 @@
 # Kirby Super Star
 
 ## Latest
-- <a href="https://github.com/Silvris/Archipelago/releases/download/kss_0.1.7/kss.apworld">Latest Version (0.1.7)</a>
+- <a href="https://github.com/Silvris/Archipelago/releases/download/kss_0.1.8/kss.apworld">Latest Version (0.1.8)</a>
 
 ## All Versions
+
+#### v0.1.8
+- <a href="https://github.com/Silvris/Archipelago/releases/download/kss_0.1.8/kss.apworld">https://github.com/Silvris/Archipelago/releases/download/kss_0.1.8/kss.apworld</a>
 
 #### v0.1.7
 - <a href="https://github.com/Silvris/Archipelago/releases/download/kss_0.1.7/kss.apworld">https://github.com/Silvris/Archipelago/releases/download/kss_0.1.7/kss.apworld</a>

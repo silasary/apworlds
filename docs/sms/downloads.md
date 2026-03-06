@@ -1,9 +1,12 @@
 # Super Mario Sunshine
 
 ## Latest
-- <a href="https://github.com/Joshark/archipelago-sms/releases/download/0.5.2/sms.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/Joshark/archipelago-sms/releases/download/0.5.3/sms.apworld">Latest Version (0.5.3)</a>
 
 ## All Versions
+
+#### v0.5.3
+- <a href="https://github.com/Joshark/archipelago-sms/releases/download/0.5.3/sms.apworld">https://github.com/Joshark/archipelago-sms/releases/download/0.5.3/sms.apworld</a>
 
 #### v0.5.2
 - <a href="https://github.com/Joshark/archipelago-sms/releases/download/0.5.2/sms.apworld">https://github.com/Joshark/archipelago-sms/releases/download/0.5.2/sms.apworld</a>

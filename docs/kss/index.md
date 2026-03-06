@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Silvris/Archipelago/releases/download/kss_0.1.7/kss.apworld">Latest Version (0.1.7)</a>
+- <a href="https://github.com/Silvris/Archipelago/releases/download/kss_0.1.8/kss.apworld">Latest Version (0.1.8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
