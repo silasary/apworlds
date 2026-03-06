@@ -1,9 +1,12 @@
 # Manual_FireEmblemPathofRadiance_MercenaryGreil
 
 ## Latest
-- <a href="https://github.com/MercenaryGreil/Archipelago-FireEmblem-PathofRadiance/releases/download/v1.2.0/manual_fireemblempathofradiance_mercenarygreil.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/MercenaryGreil/Archipelago-FireEmblem-PathofRadiance/releases/download/v1.2.1/manual_fireemblempathofradiance_mercenarygreil.apworld">Latest Version (1.2.1)</a>
 
 ## All Versions
+
+#### v1.2.1
+- <a href="https://github.com/MercenaryGreil/Archipelago-FireEmblem-PathofRadiance/releases/download/v1.2.1/manual_fireemblempathofradiance_mercenarygreil.apworld">https://github.com/MercenaryGreil/Archipelago-FireEmblem-PathofRadiance/releases/download/v1.2.1/manual_fireemblempathofradiance_mercenarygreil.apworld</a>
 
 #### v1.2.0
 - <a href="https://github.com/MercenaryGreil/Archipelago-FireEmblem-PathofRadiance/releases/download/v1.2.0/manual_fireemblempathofradiance_mercenarygreil.apworld">https://github.com/MercenaryGreil/Archipelago-FireEmblem-PathofRadiance/releases/download/v1.2.0/manual_fireemblempathofradiance_mercenarygreil.apworld</a>
