@@ -8,7 +8,7 @@ and Yumi to save the world from the control of Specter.
 
 
 ## Downloads
-- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld">Latest Version (2.0.1.post2)</a>
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.2/ape_escape_3.apworld">Latest Version (2.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

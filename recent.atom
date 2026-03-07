@@ -2,159 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-07T00:16:05.238669+00:00</updated>
+  <updated>2026-03-07T06:11:55.956717+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.3.3</id>
-    <title>ULTRAKILL v3.3.3</title>
-    <updated>2026-03-01T00:01:44+00:00</updated>
-    <author>
-      <name>TRPG</name>
-    </author>
-    <content>- Updated logic for breaking glass, since marksman coins cannot break glass anymore.</content>
-    <link href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.4.48</id>
-    <title>Donkey Kong 64 v1.4.48</title>
-    <updated>2026-03-01T01:27:32+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 1.4.48
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.4.48"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.4.5</id>
-    <title>Nine Sols v0.4.5</title>
-    <updated>2026-03-01T02:43:25+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
-&#13;
-0.4.4 and 0.4.5 are both bugfix releases. Broadly speaking, 0.4.4 focused on "quick and easy" fixes (especially the long list of logic issue reports). 0.4.5 instead focuses on deeper, more fundamental improvements for long-term stability, which also come with more risk.&#13;
-&#13;
-- Stability &amp; Bug Mitigation&#13;
-	- The AP server connection will now be closed every time you quit to the main menu, which should resolve or mitigate a wide range of issues (e.g. sending death links from Battle Memories mode). In particular, this makes it easy to force a reconnect after a network outage, allowing the mod to recover by resending any locations and re-receiving any items that may have been missed during the outage.&#13;
-	- When the mod receives several messages "at the same time", it will no longer print every individual message to the screen. Instead you will see a single message like `Received 300 messages within 100 ms. Pause to read them.` Hopefully this will improve general game stability, because Unity doesn't seem to like it when I update the UI hundreds of times a second.&#13;
-	- If Yi is somehow missing a core movement ability that we've already received the AP item for (after loading a save file), the mod will now "re-apply" the missing ability and display a warning. This should mitigate various unreproducible glitches, but if you find a way to consistently trigger these warnings please report it so we can fix the underlying bug.&#13;
-	- Minimize the chances of 'seed bleed' bugs by making the code around slot_data application more consistent.&#13;
-	- Added explicit exception handling to all of the mod code that runs on level loads/transitions. This should prevent any future bugs in these codepaths from softlocking the entire game with "endless loading screens" (like the jade cost issue 0.4.4 fixed).&#13;
-- Logic issues&#13;
-	- Added more regions around GoS (West)'s "spike ball chase", partly to resolve some confusion around what the existing logic intended, but also to fix a logic bug where the GoS (West) spawn would expect you to reach the "Below Western Cliffs" location without the movement items to survive the spike ball chase.&#13;
-	- Since 0.4.3 added the `prevent_weakened_prison_state` option, "Prison: Lower Left Cell" has incorrectly been in logic without nymph. This has been fixed.&#13;
-	- The `ledge_storage` logic for "GoS (West): Above Elevator" was incorrectly marked as `medium`. This has been fixed.&#13;
-- Universal Tracker&#13;
-	- The "world_map" map page now uses a much cleaner background image (thanks XDrotkon).&#13;
-	- AP region names have been changed to use the same area prefixes as AP location names. For example: "EDLA - Opera Theater" is now "ED (Living Area) - Opera Theater", which makes it more consistent with the location name "ED (Living Area): Fuxi's Vital Sanctum". This mainly affects the output of the `/explain` and `/get_logical_path` commands.&#13;
-	- The Universal Tracker support now accounts for prevent_annoying_runbacks, shuffle_grapple, shuffle_wall_climb and shuffle_ledge_grab. The shuffle* options don't change logic, but their absence was causing `/next_progression` to never check these items.&#13;
-	- This won't affect most of you for a while yet, but on AP 0.6.7 (whenever that comes out), nine_sols.apworld will start using "rule builder" internally. This effectively upgrades UT's `/explain` command, replacing the usual `doesn't have a rule that supports explanation` part of its output with a proper color-coded explanation of the logic rule.&#13;
-- The example .yaml's minimum AP version is now 0.6.4. This has been the .apworld's minimum for a while; I just forgot to update the .yaml.</content>
-    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.4.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.1.1</id>
-    <title>Factorio: Space Age v1.1.1</title>
-    <updated>2026-03-01T05:07:26+00:00</updated>
-    <author>
-      <name>Berserker</name>
-    </author>
-    <author>
-      <name>Josh Wolfe</name>
-    </author>
-    <content>* removed debug print when building an energylink bridge (oops).&#13;
-* updated docs&#13;
-&#13;
-general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
-setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
-source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .&#13;
-</content>
-    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v1.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.0</id>
-    <title>Everhood 2 v0.3.2</title>
-    <updated>2026-03-01T10:37:05+00:00</updated>
-    <author>
-      <name>DeamonHunter</name>
-    </author>
-    <content>&gt; [!IMPORTANT]&#13;
-&gt; **Doorsanity Off is BROKEN in Act 2**. It is missing some crucial changes like opening up Lab/Smega/Human City after defeating dragon, and allowing you to retry Everhood 1&#13;
-&#13;
-&gt; [!IMPORTANT]&#13;
-&gt; While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Red Route, many Hilbert Hotel rooms and Green Route 3. Please bring my attention to them in Discord if they occur.&#13;
-&#13;
-# Changes:&#13;
-- Act 2 has been implemented. This is anything connected to the second hub.&#13;
-- Added Save after Battle. Any Battle that properly ends will now save as you get into the world.&#13;
-- Many cases where teleporting back to hub causing various errors have been fixed.&#13;
-&#13;
-# Still to come:&#13;
-- Requiring multiple sources of a colour in act 2. (That is need 2 Red items to refect Red colours in Act 2.)&#13;
-- Fixing Doorsanity Off.&#13;
-- Double checking the unlock condition of Green Route 4. I believe it is actually available in Act 2 but currently not implemented.&#13;
-- Turning off the Elevator Code entry. Elevator Codes are to be locked behind Act 3.&#13;
-- Ensuring all cases of settings work without errors.&#13;
-&#13;
-# Installation&#13;
-### Melonloader&#13;
-*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
-&#13;
-1. Download MelonLoader.Installer.exe from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
-2. Choose the automated tab, click the select button and browse to `Everhood 2.exe`.&#13;
-    - You can find the folder in steam by finding the game in your library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
-    - If you click the bar at the top telling you your current folder, this will give you a path you can copy. If you paste that into the window popped up by **MelonLoader**, it will automatically go to the same folder.&#13;
-3. The launcher will automatically default to the latest version. &#13;
-    - If the latest version is not working: **Untick Latest and select 0.6.6.**&#13;
-4. Click install. Once finished run the game once.&#13;
-&#13;
-### Mod Install&#13;
-&#13;
-1.Download `ArchipelagoEverhood.zip`.&#13;
-2. Head to the Muse Dash folder and open up `/mods/`.&#13;
-3. Extract the contents of the .zip file into mods.&#13;
-   - Ensure that `ArchipelagoEverhood.dll` and `Archipelago.MultiClient.Net.dll` are under `/mods/` and not within a sub folder.&#13;
-4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
-</content>
-    <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.01</id>
-    <title>Archipeladoku v2026.3.1</title>
-    <updated>2026-03-01T20:36:15+00:00</updated>
-    <author>
-      <name>Galdiuz</name>
-    </author>
-    <content>NOTE: This release is broken.</content>
-    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.01"/>
-  </entry>
   <entry>
     <id>https://github.com/cjmang/StS-AP-World/releases/tag/2.3.2</id>
     <title>Slay the Spire v2.3.2</title>
@@ -400,6 +252,20 @@ Bugfix:&#13;
 - Ensure area order is properly saved to file.&#13;
 - Add double check on coin totals.</content>
     <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.3</id>
+    <title>Flipwitch Forbidden Sex Hex v1.0.3</title>
+    <updated>2026-03-02T13:39:32+00:00</updated>
+    <author>
+      <name>Witchybun</name>
+    </author>
+    <content>Bugfix:&#13;
+- Shady Alley Crystal Teleport room was a one-way, meaning you could not logically use it to reach Spirit City proper; this has been fixed.&#13;
+&#13;
+&#13;
+Internally it will say the version is 1.0.2.  This is because I am lazy rn.</content>
+    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.3"/>
   </entry>
   <entry>
     <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.4.6</id>
@@ -810,6 +676,27 @@ This release contains the dk64.apworld file that can be used with the Archipelag
     <link href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.3.4"/>
   </entry>
   <entry>
+    <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.2</id>
+    <title>Ape Escape 3 v2.0.2</title>
+    <updated>2026-03-05T05:04:23+00:00</updated>
+    <author>
+      <name>aidanii</name>
+    </author>
+    <content># Changelog&#13;
+## Features&#13;
+- Client will now be detected when opening links from Webhost&#13;
+## Fixes&#13;
+### General&#13;
+- Fixed Cellphone and Camera Location Groups&#13;
+### Generation&#13;
+- Improved Handling of restrictive options (@Eijebong)&#13;
+- Improved Handling of Blacklisted Channels (@Eijebong )&#13;
+- General Improvement to Generation Success Rate, primarily concerning Shoppingsanity (@Eijebong )&#13;
+### Client&#13;
+- Cookies received from checks while in the Shopping Area is now applied properly</content>
+    <link href="https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/pkolb-dev/Archipelago/releases/tag/1.3.1</id>
     <title>The Legend of Dragoon v1.3.0</title>
     <updated>2026-03-05T05:22:36+00:00</updated>
@@ -1168,5 +1055,55 @@ None for now...&#13;
 # Changelog&#13;
 - **Forced the Superball, Ball, and Wooden Sword Items to always be found in Sphere 1, in order to truly fix the occasional generation failures problem.**</content>
     <link href="https://github.com/WolfBoi008/Block-Tales/releases/tag/4.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.11</id>
+    <title>Tevi v1.4.11</title>
+    <updated>2026-03-07T01:08:11+00:00</updated>
+    <author>
+      <name>BlackSoulKnight</name>
+    </author>
+    <content>+ Ulskan Village Area to Plague Forest Exit -&gt; logic fix&#13;
++ Hand exchange fixed&#13;
++ Item name fixed for Money blocks&#13;
++ Quickdrop dmg changed to -&gt;  ( base dmg * MATK Pot ) + Chain -&gt; removed potion scaling from Combo counter&#13;
+   increased 1 dmg per chain hit&#13;
++ Quickdrop have a internal cooldown of 0.08s</content>
+    <link href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.11"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR5</id>
+    <title>The Grinch v1.5.0</title>
+    <updated>2026-03-07T03:43:43+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content># Notice&#13;
+Keep in mind that this is a beta release and is not currently ready for a full release. Do not bring this into serious groups unless you know what you are doing. This is for testing purposes only to ensure everything is ready when this update gets a full release. Report bugs and check certain things to make sure everything works as intended.&#13;
+&#13;
+# Changes&#13;
+- Implement music rando&#13;
+- Added one single location for collecting the key after squashing all 5 crates in Mount Crumpit&#13;
+- Reworked Rat missionsanity mission to ensure you actually collect them if you intend on sending them in quick succession. (Note the rats are NOT going to be in order based on how you send them, unfortunately)&#13;
+- Submarine World can now be compatible when excluding the environment with giftsanity&#13;
+- Deathlink is now sorted in it's appropriate option group</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WolfBoi008/Block-Tales/releases/tag/4.2.2</id>
+    <title>Manual_BlockTales_WolfBoi008 v4.2.2</title>
+    <updated>2026-03-07T04:05:13+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+None for now...&#13;
+# Changelog&#13;
+- Added the Train Ticket to post-Train Chapter 3 logic.&#13;
+  - This was an accidental issue on my part. Apologies to those who were affected by it!</content>
+    <link href="https://github.com/WolfBoi008/Block-Tales/releases/tag/4.2.2"/>
   </entry>
 </feed>
