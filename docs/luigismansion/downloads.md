@@ -8,6 +8,9 @@
 #### v0.6.0
 - <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.0/luigismansion.apworld">https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.0/luigismansion.apworld</a>
 
+#### v0.6.0
+- <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.1/luigismansion.apworld">https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.1/luigismansion.apworld</a>
+
 #### v0.5.21
 - <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.5.21/luigismansion.apworld">https://github.com/BootsinSoots/Archipelago/releases/download/V0.5.21/luigismansion.apworld</a>
 
