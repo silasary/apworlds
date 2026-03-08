@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "Thedrummonger"
+  ],
   "description": "YARG (a.k.a. Yet Another Rhythm Game) is a free, open-source, plastic guitar game still in development.\nIt supports guitar (five fret), drums (plastic or e-kit), vocals, pro-guitar, and more!",
   "game": "YAYARG",
   "github": "https://github.com/Thedrummonger/YargArchipelagoPluginV2",
@@ -98,6 +101,21 @@
       "title": "V2.4.0",
       "version_simple": "2.4.0",
       "world_version": "2.4.0"
+    },
+    "V2.5.0": {
+      "created_at": "2026-03-07T15:31:10Z",
+      "description": "## Yet Another YARG AP V2.5.0\r\n### APWorld Changes\r\n- Removed 6-Fret Guitar and Bass as valid instruments (not currently supported by YARG).\r\n\r\n### Client Changes\r\n- Added a dedicated **Archipelago** button to the main menu to open the connection window.\r\n  - The Keybind can still be used as well.\r\n- The Goal song can now be affected by **Swap Song** and **Lower Difficulty** items.\r\n- Added a **Goal Info** section to the song list displaying all goal-related information.\r\n- Added a **Reveal Goal Song** button to the song list, allowing the goal song to be viewed at any time.\r\n- **Drums** instrument pools can now be completed with higher-tier drum instruments.\r\n  - Example: Pro Drums can complete songs in 4-Lane drum pools, but 4-Lane cannot complete songs in Pro drums pools.\r\n- **Five-Lane Drums** pools can now be completed with any drum chart, since YARG natively allows playing song with Five-Lane only charts with 4 lane drum instruments.\r\n\r\n### YAML Creator Changes\r\n- Added a standalone **Client/Tracker** to the YAML creator.\r\n  - Displays available locations, received items, and hints.\r\n  - Can also be used as a standard text client.\r\n- Updated the **Available YARG Songs** list to support advanced features such as multi-selection.\r\n- Songs included or excluded from a pool are now marked with `*`, allowing them to be filtered.\r\n- YAML can now be exported without removing unused songs by right clicking the Generate button.\r\n  - Not recommended, but allows safe manual editing of song pools after export.\r\n- Added an option to export YAML with the song list saved as a separate JSON file by right clicking the Generate button.\r\n  - The `{slotName}_song_export.json` file must be placed in the **\"YAYARG Song Data\"** folder located in the root Archipelago directory of the user generating the seed.\r\n\r\nTested against [YARG nightly b3564](https://github.com/YARC-Official/YARG-Bleedingedge/releases/tag/b3564)\r\n***Newer version may be incompatible.***\r\n\r\nThis version is **not compatible with older worlds.**\r\n\r\nSetup Guide:\r\nhttps://github.com/Thedrummonger/Archipelago/blob/YARGV2/worlds/yayarg/docs/guide_en.md",
+      "download_url": "https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.0/yayarg.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ded3851fbb7a6b1661117c4e2a07708cb06c4453b4ddff608c56b2993d3af342",
+      "html_url": "https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.5.0",
+      "minimum_ap_version": "0.6.1",
+      "size": 30210,
+      "source_url": "https://api.github.com/repos/Thedrummonger/YargArchipelagoPluginV2",
+      "tag": "V2.5.0",
+      "title": "V2.5.0",
+      "version_simple": "2.5.0",
+      "world_version": "2.5.0"
     }
   }
 }

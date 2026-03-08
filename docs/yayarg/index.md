@@ -5,7 +5,7 @@ It supports guitar (five fret), drums (plastic or e-kit), vocals, pro-guitar, an
 
 
 ## Downloads
-- <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.4.0/yayarg.apworld">Latest Version (2.4.0)</a>
+- <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.0/yayarg.apworld">Latest Version (2.5.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "DNVIC"
+  ],
   "description": "",
   "flags": [
     "unready"
@@ -8,8 +11,8 @@
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "v0.1.0": {
@@ -351,6 +354,21 @@
       "title": "v0.4.4.3",
       "version_simple": "0.4.4",
       "world_version": "0.4.4"
+    },
+    "v1.0": {
+      "created_at": "2026-03-07T19:48:59Z",
+      "description": "Oh boy, this is a big one. There's a reason I decided to bite the bullet on calling it v1.0, I think I spent more time on this update than I did on the whole first version (v0.1) of this project. I'll update all the guides soon, since most of the info is now out of date...\r\n# New Features\r\n## Move Randomization\r\nIf enabled, Mario's entire moveset is shuffled as items across the world! Now you need to relearn how to ground pound! Only some JSONs support move randomization right now.\r\n## Level Tickets\r\nIf enabled, you now need a ticket in order to enter a level! You will be killed upon entry if you do not have the ticket to enter. Only some JSONs support level tickets right now.\r\n## Sign Randomization\r\nIf enabled, new checks are created for each level for reading a sign inside the level. Designed to give extra item slots for the items created . by the above features. Only some JSONs support sign randomization right now.\r\n## SM64 Decades Later support\r\nSM64 Decades later is supported! The biggest SM64 Romhack to come to SM64 Romhack Archipelago, 157 yellow stars, plus 176 blue stars, for a total of 333 stars, are shuffled throughout the multiworld. There's even an option to start with the blue star mode enabled, in case you don't want to backtrack! With the other items in the game, that adds up to 367 total checks!\r\n\r\n# Major Updates\r\n## JSON format overhauled\r\nThe JSON format, and the associated JSON editor, have been massively overhauled, with a bunch of new features, too many to list here. All JSONs in the repository have been updated to the new format.\r\n## Logic settings\r\nSettings have been created to modify logic. There are base difficulty settings, settings if you want glitches enabled, and hack-specific settings (for example, if the hack has multiple versions, you can specify the version in a setting). These all require the JSON to support the setting, but it will allow for greater customization in how you play.\r\n## Star Bundles\r\nTo make room for added items, some stars will be turned into star bundles, worth 2 stars each. You can increase the amount of star bundles as well, if you want to free up room for filler items.\r\n## New filler items\r\nThere's now 3 categories of filler items, useful filler, junk filler, and trap filler. Useful filler is completely new, junk filler consists of coins and 1-up mushrooms (health refills in hacks without lives), and there may or may not be new traps in this version...\r\n## Wiki\r\nThere is now an [sm64romhacks archipelago wiki](https://wiki.dnvic.com), it contains information about hacks like which hacks support move/object rando, entrance tickets, and other miscellaneous information you might want to know before playing a hack\r\n## Ringlink\r\nImplemented by Awesome7285 \r\n\r\n# JSON Updates since last release\r\n## Major\r\n- Added Shining Stars 3 (with entrance tickets, and sign randomization supported)\r\n- Star Revenge 0, Star Revenge 1, Star Revenge 2 To The Moon, Star Revenge 6, Super Mario Star Road, Shining Stars Repainted, and Ztar Attack Rebooted now support entrance tickets and sign randomization\r\n- Star Revenge 0 now supports move randomization\r\n## Special\r\n- Added SM64 Decades Later (with entrance tickets + sign randomization)\r\n- Star Revenge 6.25, Star Revenge 8 now support entrance tickets and sign randomization\r\n- Star Revenge 8 now supports move randomization\r\n- Removed Star Revenge 8 Advanced as it is covered in the logic options of the SR8 JSON\r\n\r\nThere's probably some bugfixes and other stuff I've forgotten about in the past 4 months this update has been in development, this is just the major changes.",
+      "download_url": "https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.0/sm64hacks.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1bb02c44098c3145bbe059217fe74206bc1469ba54f42307169a7595ef148a2a",
+      "html_url": "https://github.com/DNVIC/archipelago-sm64hacks/releases/tag/v1.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 292131,
+      "source_url": "https://api.github.com/repos/DNVIC/archipelago-sm64hacks",
+      "tag": "v1.0",
+      "title": "v1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
     }
   }
 }
