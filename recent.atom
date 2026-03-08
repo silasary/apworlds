@@ -2,37 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-08T00:15:41.706612+00:00</updated>
+  <updated>2026-03-08T06:16:23.842011+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ElireFeltores/High-Roller/releases/tag/v1.0.1</id>
-    <title>High Roller v1.0.1</title>
-    <updated>2026-03-02T01:26:26+00:00</updated>
-    <author>
-      <name>ElireFeltores</name>
-    </author>
-    <content>**Client Update:**&#13;
-- Fixed an issue with client being unable to connect to gens on previous APWorld versions.&#13;
-&#13;
-**APWorld Changes:**&#13;
-- None. It is the same APWorld as v1.0.0.</content>
-    <link href="https://github.com/ElireFeltores/High-Roller/releases/tag/v1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.2.1-beta</id>
-    <title>Dicey Dungeons v0.2.2.1b0</title>
-    <updated>2026-03-02T02:06:40+00:00</updated>
-    <author>
-      <name>Fylcoast</name>
-    </author>
-    <content>Patch for v0.2.2-beta, including bugfix for:&#13;
-&#13;
-- Replace "+" in AP items with star icons, to prevent crash</content>
-    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.2.1-beta"/>
-  </entry>
   <entry>
     <id>https://github.com/Bartz24/ArchipelagoLR/releases/tag/0.4.0</id>
     <title>Lightning Returns: Final Fantasy XIII v0.4.0</title>
@@ -1137,5 +1111,55 @@ Packaged with `zDEV-UE4SS_v3.0.1-848-g91b70e5`, `hibiki-bootstrap-v0.2.0`&#13;
 &#13;
 - Fixed empty location checks being sent to the server constantly while playing.</content>
     <link href="https://github.com/TRPG0/HbkArchipelago/releases/tag/0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.5</id>
+    <title>plateup v0.2.5.5</title>
+    <updated>2026-03-08T00:58:23+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>## What's New?&#13;
+- Added a bunch of missing appliance unlock items that weren't showing up before&#13;
+- Added new filler items: Patience Increase, Less Customers, Minimum Group Size Decrease, Maximum Group Size Decrease, and Mess Reduction&#13;
+- Added new traps: Patience Decrease, More Customers, Minimum Group Size Increase, and Maximum Group Size Increase&#13;
+- Added two new progression items — Reduce Group Size and Global Patience Increase — tied to new unlock gates&#13;
+- Added achievement checks for most in-game achievements (dish-specific ones are excluded for now)&#13;
+&#13;
+## New YAML Options&#13;
+**`free_starter_dishes`** — Controls how many dishes you start with already unlocked when playing with locked dishes. Defaults to 1 (the classic single free starter). Set to 0 to unlock everything from scratch, or go higher to begin with more dishes ready to go.&#13;
+&#13;
+**`day_leases_enabled`** — Toggles Day Lease progression items on or off. When off, no lease items are placed and days are never gated by leases.&#13;
+&#13;
+**`starting_group_size`** — Sets the starting customer group size for your run (0–8). Higher values make things a lot harder. When enabled, it places Reduce Group Size progression items spread evenly across the run. Set to 0 to leave it vanilla.&#13;
+&#13;
+**`global_patience_enabled`** — Turns on Global Patience Increase progression items. When on, a set number of patience upgrades are required to reach later days, spread evenly across the run.&#13;
+&#13;
+**`global_patience_upgrade_count`** — How many Global Patience Increase items get placed (1–10). Only matters when `global_patience_enabled` is turned on.&#13;
+&#13;
+**`achievement_checks`** — Enables in-game achievements as location checks. Some are tied to specific goals or appliance unlocks, so keep that in mind when building your yaml.&#13;
+&#13;
+## Note&#13;
+This apworld update is directly tied to the mod update — make sure you&#13;
+update both together for everything to work correctly!&#13;
+[Mod Update 2.5.5](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.5.5)</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.6</id>
+    <title>Wargroove 2 v1.1.5</title>
+    <updated>2026-03-08T03:25:59+00:00</updated>
+    <author>
+      <name>Fly Hyping</name>
+    </author>
+    <author>
+      <name>Magnemania</name>
+    </author>
+    <author>
+      <name>Akblabla</name>
+    </author>
+    <content># Bugfixes:&#13;
+- Fixes Income Boosts not being placed in the item pool</content>
+    <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.6"/>
   </entry>
 </feed>
