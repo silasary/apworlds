@@ -326,6 +326,20 @@
       "title": "Toejam & Earl AP World v0.4.2b",
       "version_simple": "0.4.2",
       "world_version": "0.4.2b0"
+    },
+    "v0.5.0": {
+      "created_at": "2026-03-08T15:48:12Z",
+      "description": "## New features\r\n\r\n- Cause of death is now tracked and sent in deathlink messages\r\n- Items are now *always* forced to be received regardless of player state. This means items should no longer go missing for any reason. However, note that in some circumstances traps may fail to activate due to unintended interactions that are not possible in the vanilla game (e.g. reading a School Book while flying with Icarus Wings will fail).\r\n- Two unused present sprites left in the ROM have been restored and enabled by default. You can disable this feature by adding `unused_present_sprites: no` to your YAML.\r\n<div align=\"center\"><img width=\"72\" height=\"63\" alt=\"unused1\" src=\"https://github.com/user-attachments/assets/1f953e0e-6496-4017-9256-dd07a0d1e867\" />\r\n<img width=\"96\" height=\"63\" alt=\"unused2\" src=\"https://github.com/user-attachments/assets/dac92594-a8f2-4cb6-912b-eaef7014e0b4\" /></div>\r\n\r\n- `earthling_rando: nice_random` now takes into account custom `last_level`, and scales difficulty such that level 2 corresponds to vanilla level 2 while the chosen `last_level` corresponds to vanilla level 25.\r\n- Playing with `local_ship_pieces: vanilla` will now use vanilla ship piece sprites, hint sprites and related text.\r\n- Sound rando now randomizes 11 more sounds. This set of sounds includes the tomato splat, cupid firing an arrow, the shark danger musical sting and the rosebush sound.\r\n\r\n## Bugfixes\r\n\r\n- Dying to a received deathlink no longer sends a deathlink in return\r\n- Losing your last life with `game_overs: drop_down` no longer sends deathlink twice in quick succession\r\n- Fixed an off-by-one error that caused all custom dialogue to lose its first letter (whoops)\r\n\r\n## Internal only\r\n\r\n- Virtually all the assembly code has now been spun out into separate files, reorganized and commented for easier future modification and better bug resistance",
+      "download_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.0/tje.apworld",
+      "has_manifest": false,
+      "hash_sha256": "4dabcee1df801994fa0513e54fb984adfb1b120e18d5818ce10dd7d3d62f186f",
+      "html_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.0",
+      "size": 89521,
+      "source_url": "https://api.github.com/repos/IgnisUmbrae/TJE-Archipelago",
+      "tag": "v0.5.0",
+      "title": "Toejam & Earl AP World v0.5.0",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
     }
   }
 }

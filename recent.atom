@@ -2,39 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-08T12:10:43.392542+00:00</updated>
+  <updated>2026-03-08T18:08:36.820177+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.3</id>
-    <title>Flipwitch Forbidden Sex Hex v1.0.3</title>
-    <updated>2026-03-02T13:39:32+00:00</updated>
-    <author>
-      <name>Witchybun</name>
-    </author>
-    <content>Bugfix:&#13;
-- Shady Alley Crystal Teleport room was a one-way, meaning you could not logically use it to reach Spirit City proper; this has been fixed.&#13;
-- HOTFIX: Fix Slime Princess damage not being scaled.  Ouch!&#13;
-&#13;
-&#13;
-Internally it will say the version is 1.0.2.  This is because I am lazy rn.</content>
-    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.4.6</id>
-    <title>Nine Sols v0.4.6</title>
-    <updated>2026-03-02T14:04:40+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
-&#13;
-- Fixed a huge 'seed bleed' bug. Before 0.4.5, loading a slot that had received Ledge Grab, Wall Climb or Grapple, then quitting to menu and loading a slot which had not received them, would cause those items to be mis-applied in the new slot. 0.4.5's item re-apply checks effectively extended this bug to all of the other key progression abilities (TCK, AD, CL, SMB, UC, and Nymph), after which we were finally able to pin it down and fix it properly.&#13;
-- Added a "Batch Simultaneous Messages" (default on) mod setting. Turns out some players want to turn off the batching added in 0.4.5 and opt-in to 'message floods'. Fortunately, it seems easy to display the individual messages instead of a summary, without losing the stability benefits of adding messages to the UI only so many times per second.</content>
-    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.4.6"/>
-  </entry>
   <entry>
     <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.18</id>
     <title>Pokemon Black and White v0.3.18</title>
@@ -1093,7 +1065,9 @@ Some cutscenes play more than once.  If you wait a moment when you kill a boss, 
 &#13;
 Completing Backup for Brad may result in Brad staying in Entrance, Al Frezca, or the Food Court.  He can be ignored.&#13;
 &#13;
-Kent missions do not activate without the previous missions received and completed.  That means Kent day 2 requires day 1, day 3 requires day 2 and day 1 done.  Kent day 3 causes day 2 Kent to spawn, and he even helps you kill day 3 Kent.  </content>
+Kent missions do not activate without the previous missions received and completed.  That means Kent day 2 requires day 1, day 3 requires day 2 and day 1 done.  Kent day 3 causes day 2 Kent to spawn, and he even helps you kill day 3 Kent.  &#13;
+&#13;
+We are aware of a flag causing log spam when enabled for "The Woman in Despair".  Saving her stops the spamming.</content>
     <link href="https://github.com/Str8UpWHITE64/DRAP/releases/tag/0.2.0"/>
   </entry>
   <entry>
@@ -1105,5 +1079,78 @@ Kent missions do not activate without the previous missions received and complet
     </author>
     <content/>
     <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.08"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/tag/0.5.0</id>
+    <title>Metroid Zero Mission v0.5.0</title>
+    <updated>2026-03-08T14:03:35+00:00</updated>
+    <author>
+      <name>lil David</name>
+    </author>
+    <author>
+      <name>NoiseCrush</name>
+    </author>
+    <content>## Overall changes&#13;
+* The game's name was changed **Metroid: Zero Mission** (note the colon). You will need to adjust your options file to account for the change.&#13;
+&#13;
+## Options changes&#13;
+* Trick selection now has groups:&#13;
+  * Intended Sequence Breaks: Built-in shortcuts such as Ridley access without Speed Booster/Wave Beam (note all of these are included in normal logic)&#13;
+  * Tricky Shinesparks: Does the same as the yaml option&#13;
+  * Ludicrous Tricks: The harder-than-hard tricks that need to be opted into&#13;
+&#13;
+## Client changes&#13;
+* Added Universal Tracker integration&#13;
+  * Can now be used without an options yaml&#13;
+  * Can show tricks that aren't in logic. By default, these will show tricks a level above what they're set to in your settings (exceptions apply if your overall logic difficulty is basic)&#13;
+* Metroid DNA available is now sent to the tracker&#13;
+&#13;
+## Logic changes&#13;
+* _Kraid Quad Ball Cannon Crumble Grip_ was split into Hi-Jump and Space Jump versions, with the latter being moved to ludicrous tricks&#13;
+* Renamed _Kraid Left Shaft Access Space Jump Only_ to _Rising Midair Morph With Space Jump_ for a new use to access _Norfair Behind Super Door Left_&#13;
+* Added normal trick _Norfair Behind Lower Super Missile Door - Left Damage Boost_&#13;
+* Added _Tourian Acid Dive_ hazard run&#13;
+* Adjusted access rules for Norfair right shaft and Ridley ballcannon&#13;
+* Fixed access rules for:&#13;
+  * Chozodia entrances from Crateria being swapped&#13;
+  * Lower Norfair access from right shaft (hard mode)&#13;
+  * Ice Beam to top of Norfair traversal&#13;
+  * Chozodia tube to Mother Ship&#13;
+&#13;
+## Game changes&#13;
+* Fixed item banner appearing and overwriting the graphics for the green gerutos in Norfair&#13;
+&#13;
+**Full Changelog**: https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/compare/0.4.1...0.5.0</content>
+    <link href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/tag/0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.0</id>
+    <title>ToeJam and Earl v0.5.0</title>
+    <updated>2026-03-08T15:48:12+00:00</updated>
+    <author>
+      <name>IgnisUmbrae</name>
+    </author>
+    <content>## New features&#13;
+&#13;
+- Cause of death is now tracked and sent in deathlink messages&#13;
+- Items are now *always* forced to be received regardless of player state. This means items should no longer go missing for any reason. However, note that in some circumstances traps may fail to activate due to unintended interactions that are not possible in the vanilla game (e.g. reading a School Book while flying with Icarus Wings will fail).&#13;
+- Two unused present sprites left in the ROM have been restored and enabled by default. You can disable this feature by adding `unused_present_sprites: no` to your YAML.&#13;
+&lt;div align="center"&gt;&lt;img width="72" height="63" alt="unused1" src="https://github.com/user-attachments/assets/1f953e0e-6496-4017-9256-dd07a0d1e867" /&gt;&#13;
+&lt;img width="96" height="63" alt="unused2" src="https://github.com/user-attachments/assets/dac92594-a8f2-4cb6-912b-eaef7014e0b4" /&gt;&lt;/div&gt;&#13;
+&#13;
+- `earthling_rando: nice_random` now takes into account custom `last_level`, and scales difficulty such that level 2 corresponds to vanilla level 2 while the chosen `last_level` corresponds to vanilla level 25.&#13;
+- Playing with `local_ship_pieces: vanilla` will now use vanilla ship piece sprites, hint sprites and related text.&#13;
+- Sound rando now randomizes 11 more sounds. This set of sounds includes the tomato splat, cupid firing an arrow, the shark danger musical sting and the rosebush sound.&#13;
+&#13;
+## Bugfixes&#13;
+&#13;
+- Dying to a received deathlink no longer sends a deathlink in return&#13;
+- Losing your last life with `game_overs: drop_down` no longer sends deathlink twice in quick succession&#13;
+- Fixed an off-by-one error that caused all custom dialogue to lose its first letter (whoops)&#13;
+&#13;
+## Internal only&#13;
+&#13;
+- Virtually all the assembly code has now been spun out into separate files, reorganized and commented for easier future modification and better bug resistance</content>
+    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.0"/>
   </entry>
 </feed>

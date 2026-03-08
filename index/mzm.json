@@ -1,12 +1,16 @@
 {
+  "authors": [
+    "lil David",
+    "NoiseCrush"
+  ],
   "description": "Metroid: Zero Mission is a retelling of the first Metroid on NES. Relive Samus' first adventure on planet Zebes with\nnew areas, items, enemies, and story! Logic based on Metroid: Zero Mission Randomizer by Biosp4rk and Dragonfangs,\nused with permission.",
   "game": "Metroid Zero Mission",
   "github": "https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission",
   "license": "MIT",
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "0.1.0": {
@@ -342,6 +346,21 @@
       "title": "0.4.2",
       "version_simple": "0.4.2",
       "world_version": "0.4.2"
+    },
+    "0.5.0": {
+      "created_at": "2026-03-08T14:03:35Z",
+      "description": "## Overall changes\r\n* The game's name was changed **Metroid: Zero Mission** (note the colon). You will need to adjust your options file to account for the change.\r\n\r\n## Options changes\r\n* Trick selection now has groups:\r\n  * Intended Sequence Breaks: Built-in shortcuts such as Ridley access without Speed Booster/Wave Beam (note all of these are included in normal logic)\r\n  * Tricky Shinesparks: Does the same as the yaml option\r\n  * Ludicrous Tricks: The harder-than-hard tricks that need to be opted into\r\n\r\n## Client changes\r\n* Added Universal Tracker integration\r\n  * Can now be used without an options yaml\r\n  * Can show tricks that aren't in logic. By default, these will show tricks a level above what they're set to in your settings (exceptions apply if your overall logic difficulty is basic)\r\n* Metroid DNA available is now sent to the tracker\r\n\r\n## Logic changes\r\n* _Kraid Quad Ball Cannon Crumble Grip_ was split into Hi-Jump and Space Jump versions, with the latter being moved to ludicrous tricks\r\n* Renamed _Kraid Left Shaft Access Space Jump Only_ to _Rising Midair Morph With Space Jump_ for a new use to access _Norfair Behind Super Door Left_\r\n* Added normal trick _Norfair Behind Lower Super Missile Door - Left Damage Boost_\r\n* Added _Tourian Acid Dive_ hazard run\r\n* Adjusted access rules for Norfair right shaft and Ridley ballcannon\r\n* Fixed access rules for:\r\n  * Chozodia entrances from Crateria being swapped\r\n  * Lower Norfair access from right shaft (hard mode)\r\n  * Ice Beam to top of Norfair traversal\r\n  * Chozodia tube to Mother Ship\r\n\r\n## Game changes\r\n* Fixed item banner appearing and overwriting the graphics for the green gerutos in Norfair\r\n\r\n**Full Changelog**: https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/compare/0.4.1...0.5.0",
+      "download_url": "https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.0/mzm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "57e62d858831f7a0af6813581caa25d143e84c6d8f58f36a462c0d190dd8975d",
+      "html_url": "https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/tag/0.5.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 136873,
+      "source_url": "https://api.github.com/repos/lilDavid/Archipelago-Metroid-Zero-Mission",
+      "tag": "0.5.0",
+      "title": "0.5.0",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
     }
   }
 }
