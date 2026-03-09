@@ -2,57 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-09T06:24:58.601011+00:00</updated>
+  <updated>2026-03-09T12:14:04.322374+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.1</id>
-    <title>Everhood 2 v0.3.2</title>
-    <updated>2026-03-04T09:03:42+00:00</updated>
-    <author>
-      <name>DeamonHunter</name>
-    </author>
-    <content>&gt; [!IMPORTANT]&#13;
-&gt; **Doorsanity Off is BROKEN in Act 2**. It is missing some crucial changes like opening up Lab/Smega/Human City after defeating dragon, and allowing you to retry Everhood 1&#13;
-&#13;
-&gt; [!IMPORTANT]&#13;
-&gt; While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Red Route, many Hilbert Hotel rooms and Green Route 3. Please bring my attention to them in Discord if they occur.&#13;
-&#13;
-# Changes:&#13;
-- Tried to fix a case where saving could save on the main menu.&#13;
-- Fix the check update button checking Muse Dash instead.&#13;
-&#13;
-# Still to come:&#13;
-- Requiring multiple sources of a colour in act 2. (That is need 2 Red items to refect Red colours in Act 2.)&#13;
-- Fixing Doorsanity Off.&#13;
-- Double checking the unlock condition of Green Route 4. I believe it is actually available in Act 2 but currently not implemented.&#13;
-- Turning off the Elevator Code entry. Elevator Codes are to be locked behind Act 3.&#13;
-- Ensuring all cases of settings work without errors.&#13;
-&#13;
-# Installation&#13;
-### Melonloader&#13;
-*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
-&#13;
-1. Download MelonLoader.Installer.exe from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
-2. Choose the automated tab, click the select button and browse to `Everhood 2.exe`.&#13;
-    - You can find the folder in steam by finding the game in your library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
-    - If you click the bar at the top telling you your current folder, this will give you a path you can copy. If you paste that into the window popped up by **MelonLoader**, it will automatically go to the same folder.&#13;
-3. The launcher will automatically default to the latest version. &#13;
-    - If the latest version is not working: **Untick Latest and select 0.6.6.**&#13;
-4. Click install. Once finished run the game once.&#13;
-&#13;
-### Mod Install&#13;
-&#13;
-1.Download `ArchipelagoEverhood.zip`.&#13;
-2. Head to the Everhood folder and open up `/mods/`.&#13;
-3. Extract the contents of the .zip file into mods.&#13;
-   - Ensure that `ArchipelagoEverhood.dll` and `Archipelago.MultiClient.Net.dll` are under `/mods/` and not within a sub folder.&#13;
-4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
-</content>
-    <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.1"/>
-  </entry>
   <entry>
     <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.1</id>
     <title>plateup v0.2.5.1</title>
@@ -1134,5 +1088,35 @@ That version does not contain the submaps for UT auto-tabbing, other than that i
 To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
 It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
     <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.19"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.6</id>
+    <title>plateup v0.2.5.6</title>
+    <updated>2026-03-09T11:36:02+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>## What's New?&#13;
+- Added a toggleable money cap — when on, you can't hold more gold than your current cap allows until you find Money Cap Increase items&#13;
+- Added a new option to control how much gold each Money Cap Increase item adds&#13;
+- Added an option to choose whether finding an appliance unlock immediately hands you that appliance, or just adds it to future shops&#13;
+- Added new reroll cost checks tied to your money cap settings&#13;
+- Dining Table is now guaranteed to show up early so you're never stuck without one&#13;
+- Added several missing appliance unlock items that were blocking progression&#13;
+&#13;
+## New YAML Options&#13;
+**`money_cap_enabled`** — Turns on a gold cap mechanic. While active, you can't hold more than your current maximum, which only goes up when you find Money Cap Increase items in the multiworld.&#13;
+&#13;
+**`starting_money_cap`** — Sets your starting gold cap (10–40). You won't be able to hold more than this until you find increases.&#13;
+&#13;
+**`money_cap_increase_amount`** — How much gold each Money Cap Increase item adds to your cap (5–100).&#13;
+&#13;
+**`appliance_unlock_grants_appliance`** — When on, finding an appliance unlock item immediately gives you that appliance to use. When off, it only adds it to future shop rotations.&#13;
+&#13;
+## Note&#13;
+This apworld update is directly tied to the mod update — make sure you&#13;
+update both together for everything to work correctly!&#13;
+[Mod Update 0.2.5.6](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.5.6)</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.6"/>
   </entry>
 </feed>
