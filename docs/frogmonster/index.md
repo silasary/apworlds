@@ -4,7 +4,7 @@ Frogmonster.
 
 
 ## Downloads
-- <a href="https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v0.2.3/frogmonster.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/download/v0.2.4/frogmonster.apworld">Latest Version (0.2.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

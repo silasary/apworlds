@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2025.09.03/manual_watchashow_chakraa.apworld">Latest Version (2025.9.3)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2026.03.09/manual_watchashow_chakraa.apworld">Latest Version (2026.3.9)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

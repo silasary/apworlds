@@ -1,4 +1,10 @@
 {
+  "authors": [
+    "Cerabow",
+    "Toast",
+    "Jumza",
+    "Rosalie"
+  ],
   "description": "An open world mod for Final Fantasy Tactics for Archipelago.\nFind all the Zodiac Stones and make your way to Murond Death City to confront Altima!",
   "game": "Final Fantasy Tactics Ivalice Island",
   "github": "https://github.com/Rosalie-A/Archipelago",
@@ -63,6 +69,20 @@
       "title": "Final Fantasy Tactics APWorld v0.2.2",
       "version_simple": "0.2.2",
       "world_version": "0.2.2"
+    },
+    "FFT-v0.3.0": {
+      "created_at": "2026-02-12T19:27:17Z",
+      "description": "This release is not backwards compatible with v0.2.0. Please do not use this APWorld to connect to games generated on that version.\r\n\r\n- Changes\r\n  - Enemy Randomizer has been added as a set of options.\r\n    - Comes in two flavors: boss shuffle and full enemy randomizer.\r\n      - Boss Shuffle shuffles around unique enemy bosses, so you might have Zalmo at Fort Zeakden in place of Algus.\r\n      - Full enemy randomizer randomizes the jobs of enemies, so instead of Squires in Mandalia Plains, you might have Knights.\r\n      - Additional options include randomizing across generic/special jobs, across human/monster boundaries, and whether to include Lucavi and Altima.\r\n      - Care has been taken so that earlier battles will tend to have easier enemies, but the difficulty of battles with enemy randomizer on can still vary wildly.\r\n    - Poach locations are compatible with enemy randomizer and logic accounts for the new locations. However, due to how enemies are randomized, Mediator is logically required for poach locations as well.\r\n      - There is now a new `/poach_locations [monster name]` command in the client to allow you to see where a monster family is located when playing with poaches enabled on full enemy randomizer settings.\r\n    - There are some rare special loadouts that can appear with randomized enemies.\r\n  - Sidequests are now always accessible even when the locations themselves are disabled, for rare item and poach purposes.\r\n  - Initial client connection flow has been changed so you should no longer receive an Invalid Slot error when first attempting to connect while the game is still loading.\r\n- Bugfixes\r\n  - Mimes should no longer have additional abilities.\r\n  - Bariaus Valley Rare's player formation setup should now be identical to vanilla again.\r\n  - Various text errors have been fixed.\r\n  - Gained JP is now properly capped at 99 per action.",
+      "download_url": "https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.3.0/fftii.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ac584168b88429d81f466c16a961af238b158ec5d9ce988b313a1f83966b71a6",
+      "html_url": "https://github.com/Rosalie-A/Archipelago/releases/tag/FFT-v0.3.0",
+      "size": 395157,
+      "source_url": "https://api.github.com/repos/Rosalie-A/Archipelago",
+      "tag": "FFT-v0.3.0",
+      "title": "Final Fantasy Tactics APWorld v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

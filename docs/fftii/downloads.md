@@ -1,9 +1,12 @@
 # Final Fantasy Tactics Ivalice Island
 
 ## Latest
-- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.2.2/fftii.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.3.0/fftii.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.3.0/fftii.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.3.0/fftii.apworld</a>
 
 #### v0.2.2
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.2.2/fftii.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFT-v0.2.2/fftii.apworld</a>

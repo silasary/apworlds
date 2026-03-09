@@ -769,6 +769,22 @@
       "title": "StardewArchipelago Release 7.4.2",
       "version_simple": "7.4.0",
       "world_version": "7.4.0"
+    },
+    "7.4.3": {
+      "created_at": "2026-03-09T14:57:36Z",
+      "description": "- Inverted the order of the locker room key powers, so that they match the position of the doors in the world (Women on the left, Men on the right)\r\n- Fixed MultiplayerVision actors accidentally triggering Hatsanity checks\r\n- Significantly improved the MultiplayerVision algorithm\r\n  - Now Send packets every 0.2 seconds (instead of every 0.7 seconds)\r\n  - If immobile since last packet, send it every 2 seconds instead\r\n  - If too far to be visible to anyone else, send it every 10 seconds instead (or immediately upon switching maps)\r\n  - When drawing other players, let the sprite linger for longer if not receiving packets. From 60 ticks to 1440 ticks, so that they stay visible if they are sending packets at a lower rate (ex: when immobile), and hopefully so they stick around long enough to not blink out of existence on high refresh rate hardware. ",
+      "download_url": "https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.3/stardew_valley.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3e9609bab7f3da9a5cc8e4b829f7b0e4005160b3369e7cdf632e021b64924bfa",
+      "html_url": "https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.3",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 525161,
+      "source_url": "https://api.github.com/repos/agilbert1412/StardewArchipelago",
+      "tag": "7.4.3",
+      "title": "StardewArchipelago Release 7.4.3",
+      "version_simple": "7.4.0",
+      "world_version": "7.4.0"
     }
   }
 }
