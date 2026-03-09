@@ -2,123 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-08T18:08:36.820177+00:00</updated>
+  <updated>2026-03-09T00:19:26.627959+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.18</id>
-    <title>Pokemon Black and White v0.3.18</title>
-    <updated>2026-03-02T14:23:07+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <author>
-      <name>SparkyDaDoggo</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-- Features:&#13;
-  - Added "Post-Ghetsis locations" group&#13;
-  - Made `Randomize Wild Pokemon` (and similar options) automatically add `Randomize` if any other modifier is added&#13;
-  - Added `Rare encounters threshold` key to `Pokémon Randomization Adjustments`, intended for the `Prevent rare encounters` modifier&#13;
-    - Also changed the default to 8, in order to prevent conflicts with the `Modify Encounter Rates` option&#13;
-  - Added an extended location hint for `Route 6 - Item from scientist for all Deerling forms`&#13;
-  - Added `Consider evolutions/static pokemon/trades/form change` to `Modify Logic`&#13;
-  - Added places of pre-evolutions and trade requests to extended hint information of Dexsanity checks&#13;
-&#13;
-- Fixes:&#13;
-  - Fixed the flag for beating Cynthia not being correctly sent to Poptracker&#13;
-  - Fixed multiple Dexsanity checks being rolled when not possible (or vice versa)&#13;
-    - This includes Pansage sometimes not having a check even if `Ensure all obtainable` is included&#13;
-  - Fixed `Pokémon Randomization Adjustments` crashing when given an empty dictionary&#13;
-  - Fixed Marvelous Bridge being forgotten by the `Adjust levels` option&#13;
-  - Fixed incorrect entrance logic of Moor of Icirrus&#13;
-&#13;
-- Other stuff:&#13;
-  - Improved filler item generation performance&#13;
-  - Tweaked option descriptions to make them friendlier towards new players&#13;
-  - Made `Icirrus City - Item from Pokémon Fan Club chairman for gaining 50 levels` logically require access to Ghetsis&#13;
-  - Added static and trade encounters to slot data for Poptracker&#13;
-  - Added patch version range accepting&#13;
-  - Tweaked error messages for incompatible base ROMs in the patching process&#13;
-  - Added the requirement to reach Shopping Mall Nine for stats based evolutions&#13;
-  - Removed `Prevent rare encounters` being forbidden with certain `Modify Encounter Rates` values&#13;
-    - Instead, an OptionError is now raised when a combination of options leads to not having enough wild &#13;
-      randomization slots for all guaranteed encounters&#13;
-  - Added `revert()` and `stack()` to `version.py`&#13;
-  - Made the Prof. Juniper Pokédex seen count locations check the national Pokédex instead of the regional one&#13;
-    - Also adjusted the apworld's logic to reflect that&#13;
-&#13;
-## Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
-However, tracking worlds generated before 0.3.18 might show incorrect Dexsanity logic in UT&#13;
-&#13;
-## Notes regarding the `pokemon_bw_without_maps.apworld` file&#13;
-That version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.&#13;
-To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
-It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.18"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/0.0.8_dig</id>
-    <title>Minecraft Dig v0.0.8</title>
-    <updated>2026-03-02T15:38:10+00:00</updated>
-    <content>Instructions:&#13;
-https://github.com/jacobmix/Minecraft_AP_Randomizer/blob/apworld_dig/README.md&#13;
-&#13;
-**Full Changelog**:&#13;
-https://github.com/jacobmix/Minecraft_AP_Randomizer/compare/0.0.7_dig...0.0.8_dig&#13;
-&#13;
-# What's changed: APWorld v0.0.8&#13;
-&#13;
-**Chunk Progression**&#13;
-  - Fixed: Chat message now correctly shows the actual number of accessible chunks (e.g., "2/4 chunks")&#13;
-  &#13;
-**Chunk Indicator**&#13;
-  - Fixed: Chunk index display in action bar was showing incorrect numbers due to formula mismatch&#13;
-  &#13;
-**Excavation &amp; Mining**&#13;
-  - Fixed: Gold pickaxe now correctly loses durability&#13;
-  - Fixed: Insta-mining (breaking blocks instantly) now properly counts towards "Blocks Broken" scoreboard&#13;
-  - Fixed: Insta-mining now correctly triggers Excavation power on surrounding blocks&#13;
-&#13;
-  **Softlock Prevention**&#13;
-  - Fixed: Players falling into empty chunk areas are now teleported to a safe position instead of respawning in a death loop&#13;
-&#13;
-  **Offline Player Items**&#13;
-  - Added: Items received while a player is offline are now queued and given when they rejoin&#13;
-  - Players are registered on first join and receive any pending items on subsequent logins&#13;
-&#13;
-  # New Features&#13;
-&#13;
-  **Auto-Connect**&#13;
-  - Added: Server automatically attempts to connect to Archipelago using the address from archipelago.json&#13;
-  - Works when downloading .apmcdig from a remote Archipelago server&#13;
-  - Note: For locally hosted lobbies, the server address is not populated - use /connect localhost:38281 manually</content>
-    <link href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/0.0.8_dig"/>
-  </entry>
-  <entry>
-    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.02</id>
-    <title>Archipeladoku v2026.3.2</title>
-    <updated>2026-03-02T17:43:22+00:00</updated>
-    <author>
-      <name>Galdiuz</name>
-    </author>
-    <content/>
-    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.02"/>
-  </entry>
-  <entry>
-    <id>https://github.com/GraymonDgt/OperationOctoAP/releases/tag/v1.0.2</id>
-    <title>Operation Octo v1.0.2</title>
-    <updated>2026-03-02T20:19:00+00:00</updated>
-    <author>
-      <name>GraymonDgt</name>
-    </author>
-    <content>- now compatible with the speedrun update</content>
-    <link href="https://github.com/GraymonDgt/OperationOctoAP/releases/tag/v1.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.1.4</id>
     <title>Factorio Bob's v2.1.4</title>
@@ -558,6 +446,17 @@ update both together for everything to work correctly!&#13;
     <link href="https://github.com/Witchybun/Archipelago/releases/tag/MadouMonogatari104"/>
   </entry>
   <entry>
+    <id>https://github.com/Witchybun/Archipelago/releases/tag/MadouMonogatari105</id>
+    <title>Madou Monogatari Hanamaru Daiyouchienji v105</title>
+    <updated>2026-03-06T00:41:48+00:00</updated>
+    <author>
+      <name>Witchybun</name>
+    </author>
+    <content>Bugfixes:&#13;
+- Fix logic for Arachne and Leviathan not needing actual items to reach them.</content>
+    <link href="https://github.com/Witchybun/Archipelago/releases/tag/MadouMonogatari105"/>
+  </entry>
+  <entry>
     <id>https://github.com/Joshark/archipelago-sms/releases/tag/0.5.3</id>
     <title>Super Mario Sunshine v0.5.3</title>
     <updated>2026-03-06T05:02:55+00:00</updated>
@@ -656,6 +555,30 @@ update both together for everything to work correctly!&#13;
 &gt; The most recent item will be given to you again if it is a Filler/Trap item&#13;
 </content>
     <link href="https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/0.0.9_dig</id>
+    <title>Minecraft Dig v0.0.9</title>
+    <updated>2026-03-06T16:37:22+00:00</updated>
+    <content>Instructions:&#13;
+https://github.com/jacobmix/Minecraft_AP_Randomizer/blob/master/README.md&#13;
+&#13;
+**Full Changelog**:&#13;
+https://github.com/jacobmix/Minecraft_AP_Randomizer/compare/0.0.8_dig...0.0.9_dig&#13;
+&#13;
+# What's changed: APWorld v0.0.9&#13;
+&#13;
+- Fixed a glitch that allowed players to break bedrock.&#13;
+- Fixed a glitch that caused the server to forget players after a restart, resulting in the loss of all items obtained while they were offline.&#13;
+- Fossils have been introduced, discover them in game!&#13;
+- Added 2 new traps.&#13;
+- Reworked the progression system. It is now integrated with the shop.&#13;
+- Yes, we now have a shop now! Fossils can be spent to upgrade tools or to buy items (or traps) from other players.&#13;
+- Fixed a bug in the Excavation II rework.&#13;
+- Added an explosive bow, along with a new advancement.&#13;
+&#13;
+Special thanks to everyone who participated in the beta test! </content>
+    <link href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/0.0.9_dig"/>
   </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-64</id>
@@ -1152,5 +1075,34 @@ We are aware of a flag causing log spam when enabled for "The Woman in Despair".
 &#13;
 - Virtually all the assembly code has now been spun out into separate files, reorganized and commented for easier future modification and better bug resistance</content>
     <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wildham0/FF1PRAP/releases/tag/0.5.16</id>
+    <title>FF1 Pixel Remaster v0.5.12</title>
+    <updated>2026-03-08T22:22:36+00:00</updated>
+    <author>
+      <name>wildham</name>
+    </author>
+    <content>Fix Giant's Cavern entrances getting swapped in ow shuffle</content>
+    <link href="https://github.com/wildham0/FF1PRAP/releases/tag/0.5.16"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR6</id>
+    <title>The Grinch v1.5.0</title>
+    <updated>2026-03-08T23:23:06+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content># Notice&#13;
+Keep in mind that this is a beta release and is not currently ready for a full release. Do not bring this into serious groups unless you know what you are doing. This is for testing purposes only to ensure everything is ready when this update gets a full release. Report bugs and check certain things to make sure everything works as intended.&#13;
+&#13;
+# Bugfixes&#13;
+- Fixed rat missionsanity locations failing to generate&#13;
+- Deathlink no longer categorized due to "visibility"? Reverted until I figure this out. Should be able to generate template yaml now&#13;
+- Added another failsafe for music_rando when you exit out of client</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR6"/>
   </entry>
 </feed>

@@ -4,7 +4,7 @@ High Roller is a slot machine styled game, where you collect various buffs to in
 
 
 ## Downloads
-- <a href="https://github.com/ElireFeltores/High-Roller/releases/download/v1.1.0/high_roller.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/ElireFeltores/High-Roller/releases/download/v1.1.1/high_roller.apworld">Latest Version (1.1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
