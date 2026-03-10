@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.6/plateup.apworld">Latest Version (0.2.5.6.post2)</a>
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.7/plateup.apworld">Latest Version (0.2.5.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # FF1 Pixel Remaster
 
 ## Latest
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.12/ff1pr.apworld">Latest Version (0.5.12)</a>
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.17/ff1pr.apworld">Latest Version (0.5.16)</a>
 
 ## All Versions
+
+#### v0.5.16
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.17/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.17/ff1pr.apworld</a>
 
 #### v0.5.12
 - <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.12/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.12/ff1pr.apworld</a>
