@@ -23,6 +23,3 @@
 #### v1.5.2.post0
 - <a href="https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld">https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld</a>
 
-#### v1.5.1
-- <a href="https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.1TongueFix/aquaria.apworld">https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.1TongueFix/aquaria.apworld</a>
-

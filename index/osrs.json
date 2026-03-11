@@ -136,20 +136,6 @@
       "version_simple": "0.5.0",
       "world_version": "0.5.0b0"
     },
-    "osrs-v2.0.0": {
-      "created_at": "2025-01-25T20:15:29Z",
-      "description": "Plugin changes should apply to in-progress seeds, but compatibility is not guaranteed. Update in-progress runs at your own risk!\r\n\r\n# Changes in this version\r\n\r\nARPWorld Changes:\r\n- Many, _many_ new tasks. Some skill tasks, but tons of new \"World Location\" tasks\r\n- New options, `enable_duds`, `dud_count`, and `enable_carepacks` to control new features\r\n- Dud Checks - Items that provide no benefit to add more Tasks to the pool\r\n- Care Packs - Items meant to be traded over by a main account. Disabled by default, incompatible with Ironman mode. Requires another account to trade over the items. Recommended for advanced users to speed up the seed.\r\n- Various logic fixes, such as requiring Varrock for Pirate's Treasure\r\n\r\nRunelite Plugin Changes:\r\n- Updates Archipelago Java Client version so items are no longer displayed as \"Unknown Item\" or \"Unknown Location\"\r\n- Plugin now pulls data from [logic repository](https://github.com/digiholic/osrs-archipelago-logic) based on versions baked into AP Seed, allows for minor logic changes without requiring updates.\r\n- AP slot data stored in Runelite directory, for more consistent detection of player login and more safeguards against connecting with the wrong OSRS account\r\n- More consistent connectivity, no longer loses connection to AP server on world hops or loading, properly disconnects on logout\r\n- \"Tiered\" items no longer mismatch between what is displayed and what is actually unlocked\r\n- Adds new item categories for Duds, Care Packs, and Claimed Care Packs to item panel\r\n- _Every_ task should now be consistently auto-detected by Runelite. New methods of detecting completion have been devised that should be lag-proof.\r\n- Plugin now displays an overlay when you are in a locked region, regardless of whether region-locker is installed or enabled.\r\n- Many new types of Tasks, to auto-detect completion of new task types.",
-      "download_url": "https://github.com/digiholic/Archipelago/releases/download/osrs-v2.0.0/osrs.apworld",
-      "has_manifest": false,
-      "hash_sha256": "137405cc4f7d23d1f438ad16b678cb246319354727dc71599b99c9d485d76c72",
-      "html_url": "https://github.com/digiholic/Archipelago/releases/tag/osrs-v2.0.0",
-      "size": 158545,
-      "source_url": "https://api.github.com/repos/digiholic/Archipelago",
-      "tag": "osrs-v2.0.0",
-      "title": "OSRS APWorld V2.0",
-      "version_simple": "2.0.0",
-      "world_version": "2.0.0"
-    },
     "osrs-v2.0.1": {
       "created_at": "2025-03-27T16:27:10Z",
       "description": "# Changes in this version\r\n\r\n- Fixed logic issue causing Crandor Island to be deemed as accessible without having enough access to the Dragon Slayer quest  to actually reach it\r\n- Updated language in options and documentation pages to properly use the word \"Items\" instead of \"Checks\" when describing Duds",

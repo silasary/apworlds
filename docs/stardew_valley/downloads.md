@@ -155,12 +155,6 @@
 #### v0.6.0
 - <a href="https://github.com/agilbert1412/Archipelago/releases/download/0.6.0-stardew-6.8.2-tracker/stardew_valley.apworld">https://github.com/agilbert1412/Archipelago/releases/download/0.6.0-stardew-6.8.2-tracker/stardew_valley.apworld</a>
 
-#### v0.6.0
-- <a href="https://github.com/agilbert1412/Archipelago/releases/download/0.6.0-stardew-6.8.2-tracker/stardew_valley.apworld">https://github.com/agilbert1412/Archipelago/releases/download/0.6.0-stardew-6.8.2-tracker/stardew_valley.apworld</a>
-
-#### v0.5.1
-- <a href="https://github.com/agilbert1412/Archipelago/releases/download/0.5.1-stardew-6.8.2-tracker/stardew_valley.apworld">https://github.com/agilbert1412/Archipelago/releases/download/0.5.1-stardew-6.8.2-tracker/stardew_valley.apworld</a>
-
 #### v0.5.1
 - <a href="https://github.com/agilbert1412/Archipelago/releases/download/0.5.1-stardew-6.8.2-tracker/stardew_valley.apworld">https://github.com/agilbert1412/Archipelago/releases/download/0.5.1-stardew-6.8.2-tracker/stardew_valley.apworld</a>
 
