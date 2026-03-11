@@ -11,6 +11,9 @@
 #### v0.6.6
 - <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld">https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld</a>
 
+#### v0.6.6
+- <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut-map/messenger.apworld">https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut-map/messenger.apworld</a>
+
 #### v0.6.3
 - <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.3-messenger-ut/messenger.apworld">https://github.com/Jouramie/Archipelago/releases/download/0.6.3-messenger-ut/messenger.apworld</a>
 

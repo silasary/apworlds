@@ -1,9 +1,12 @@
 # Metroid Zero Mission
 
 ## Latest
-- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.0/mzm.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.1/mzm.apworld">Latest Version (0.5.1)</a>
 
 ## All Versions
+
+#### v0.5.1
+- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.1/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.1/mzm.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.0/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.0/mzm.apworld</a>
