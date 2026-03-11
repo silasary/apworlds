@@ -2,40 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-11T12:17:29.842399+00:00</updated>
+  <updated>2026-03-11T18:25:03.727442+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-64</id>
-    <title>Borderlands 2 v64</title>
-    <updated>2026-03-06T17:50:14+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-64"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.10</id>
-    <title>Tevi v1.4.10</title>
-    <updated>2026-03-06T18:12:57+00:00</updated>
-    <author>
-      <name>BlackSoulKnight</name>
-    </author>
-    <content>Fix:&#13;
-+ Removed CC Shop # 18&#13;
-+ Event location missing Logic&#13;
-+ Teleporter Name display correctly&#13;
-</content>
-    <link href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.10"/>
-  </entry>
   <entry>
     <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.3</id>
     <title>plateup v0.2.5.3</title>
@@ -1026,5 +997,72 @@ Compatible with games generated with [Archipelago 0.6.6](https://github.com/Arch
 If you'd like to help integrate this into the main Archipelago releases, drop a [comment](https://github.com/ArchipelagoMW/Archipelago/pull/6030)! :wink:&#13;
 Also, please mention in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel that you used it, and report any issue. This will help with the integration process if some player mention using the beta world! </content>
     <link href="https://github.com/Jouramie/Archipelago/releases/tag/0.6.6-messenger-ut-map"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mickemoose/peak-archipelago/releases/tag/0.5.8</id>
+    <title>PEAK v0.5.8</title>
+    <updated>2026-03-11T14:12:24+00:00</updated>
+    <author>
+      <name>ArchipelagoBrad</name>
+    </author>
+    <author>
+      <name>ManNamedGarbo</name>
+    </author>
+    <author>
+      <name>Mickemoose</name>
+    </author>
+    <content># FIXES IMPROVEMENTS U NAME IT&#13;
+&lt;ul&gt;&#13;
+    &lt;li&gt;Items are locked and won't spawn until they are first recieved through AP&lt;/li&gt;&#13;
+    &lt;li&gt;Some potential mitigation against crashing due to picking up items and releasing games&lt;/li&gt;&#13;
+    &lt;li&gt;Zoom Trap protections incase it gets stuck active&lt;/li&gt;&#13;
+    &lt;li&gt;AP Connection UI will now only show once hosting the game&lt;/li&gt;&#13;
+    &lt;li&gt;Campfires will show a hint to Progressive Mountain&lt;/li&gt;&#13;
+    &lt;li&gt;Potential fix for Daredevil Badge not triggering&lt;/li&gt;&#13;
+    &lt;li&gt;24 Karat Badge in logic fixed&lt;/li&gt;&#13;
+    &lt;li&gt;EnergyLink values rebalanced &amp; EnergyLink improved thanks to Jacks5&lt;/li&gt;&#13;
+    &lt;li&gt;All items have the same weight in the loot pools and all multiplayer only items skip the multiplayer check when spawning&lt;/li&gt;&#13;
+    &lt;li&gt;Afflictions will kill you with additional stamina bars enabled now&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&#13;
+Thanks Jack5 for the EnergyLink improvements :D</content>
+    <link href="https://github.com/Mickemoose/peak-archipelago/releases/tag/0.5.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.8</id>
+    <title>plateup v0.2.5.8</title>
+    <updated>2026-03-11T15:42:13+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>## What's New?&#13;
+- Fixed the game name capitalization to "PlateUp" (it's the little things)&#13;
+- Added `trap_chance` — control exactly what percentage of your filler slots become traps&#13;
+- Added filler percentage options for Patience Increase, Less Customers, Group Size Decrease, and Mess Reduction — tune your filler pool to your liking&#13;
+- Added `money_cap_activation` — choose whether your gold cap updates instantly or waits until the start of the next day&#13;
+- Added `global_patience_starting_debuff` — set how much patience is knocked off at the start of your run (it'll always recover to normal with all upgrades)&#13;
+- Clarified and cleaned up YAML option descriptions across the board&#13;
+- The Archipelago options page is now fully supported — you can build your YAML there instead of editing the file manually!&#13;
+&#13;
+## New YAML Options&#13;
+**`trap_chance`** — Sets what percentage of your remaining filler slots turn into traps. At 0 it falls back to the old auto-scaling behavior; at 100 it's wall-to-wall chaos&#13;
+&#13;
+**`patience_filler_percent`** — How much of your filler pool to fill with Patience Increase items, giving you temporary customer patience buffs throughout the run&#13;
+&#13;
+**`customer_filler_percent`** — How much of your filler pool to fill with Less Customers items, occasionally giving you a lighter service day&#13;
+&#13;
+**`group_size_filler_percent`** — How much of your filler pool to fill with Group Size Decrease items, reducing how many people show up per table&#13;
+&#13;
+**`mess_reduction_percent`** — How much of your filler pool to fill with Mess Reduction items, cutting down on cleanup burden during a day&#13;
+&#13;
+**`money_cap_activation`** — Controls when a gold cap increase kicks in: either the moment you receive it, or at the start of your next cooking day&#13;
+&#13;
+**`global_patience_starting_debuff`** — How much patience is shaved off at the very start of your run. Recovers to normal as you collect Global Patience Increase items&#13;
+&#13;
+## Note&#13;
+This apworld update is directly tied to the mod update — make sure you&#13;
+update both together for everything to work correctly!&#13;
+[Mod Update 0.2.5.8](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.5.8)</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.8"/>
   </entry>
 </feed>
