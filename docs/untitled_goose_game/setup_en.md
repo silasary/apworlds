@@ -1,49 +1,43 @@
 # Untitled Goose Game Archipelago Setup Guide
 
-## Required Software
-
-- Untitled Goose Game (Steam)
-- BepInEx 5.4.9.0 x 64 for Unity Mono
-- .NET 6.0 Runtime (for the proxy server)
-- Archipelago client files (from releases)
-- Archipelago server 0.6.4 or higher
-
 ## Installation
 
-### Step 1: Install BepInEx
+### Prerequisites
+1. **Untitled Goose Game** (Steam)
+2. **BepInEx 5.4.9.0 x64** - Unity mod loader
+3. **.NET 6.0 Runtime** (for the proxy server)
+4, Archipelago client files (from releases)
+- Archipelago server 0.6.4 or higher
 
+### Installing BepInEx (non-Linux)
 1. Download https://github.com/BepInEx/BepInEx/releases/tag/v5.4.9 x64
-2. Extract the contents into your Untitled Goose Game folder
-   - Steam: `C:\Program Files (x86)\Steam\steamapps\common\Untitled Goose Game\`
-3. Run the game once and close it - this creates the BepInEx folder structure
+2. Extract the contents to your game folder (`Untitled Goose Game/`)
+3. Run the game once to generate necesarry files and folder for Bepin
+4. Close the game
 
-### Step 2: Install .NET 6.0 Runtime
+### Installing BepInEx (Linux)
+1. Download https://github.com/BepInEx/BepInEx/releases/tag/v5.4.9 x64
+2. Extract the contents to your game folder (`Untitled Goose Game/`)
+3. Follow the instructions from https://docs.bepinex.dev/articles/advanced/proton_wine.html to setup a winecfg for Untitled Goose Game
+4. Download the ".NET Desktop Runtime" exe from https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+5. Open the exe from step 3 with `protontricks`, and select Untitled Goose Game
+Big thanks to Whizzlefern for providing these instructions!
 
-1. Download the [.NET 6.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) if you don't have it
-2. Run the installer
+### Installing the AP Mod and World
+1. Download the latest release files from the Releases page
+2. Copy `GooseGameAP.dll` to `BepInEx/plugins/`
+3. Copy `APProxy.exe` to `BepInEx/plugins/` 
+4. Copy `APProxy.runtimeconfig.json` to `BepInEx/plugins/` 
+5. Copy `APProxy.dll` to `BepInEx/plugins/`
+6. Double-click the APWorld file or drag it into custom worlds folder to install. 
 
-### Step 3: Install the Mod
-
-1. Download the following files from the releases page:
-   - `GooseGameAP.dll`
-   - `APProxy.exe`
-   - `APProxy.dll`
-   - `APProxy.runtimeconfig.json`
-2. Place all four of them in `Untitled Goose Game\BepInEx\plugins\`
-
-### Step 4: Install the APWorld
-
-1. Download `untitled_goose_game.apworld` from the releases page
-2. Place it in your Archipelago installation's `custom_worlds` folder
-   - Or double-click the .apworld file if you have Archipelago's file association set up
-
-### Step 5. Edit the YAML & Generate a Game
+### Edit the YAML & Generate a Game
 
 1. Create a YAML config file for your game (see template below)
 2. Hand your YAML to whoever is generating the game, or generate the game yourself using the Archipelago Launcher
 3. If you're the one generating the game, either host locally or on Archipelago.gg (`Get Started -> Host Game`)
 
-### Step 6. Play the Game
+### Play the Game
 
 1. Launch Untitled Goose Game
 2. Press `F1` to open the AP connection menu
