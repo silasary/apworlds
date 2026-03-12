@@ -2,115 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-12T12:13:24.341121+00:00</updated>
+  <updated>2026-03-12T18:20:17.185532+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.5.0</id>
-    <title>YAYARG v2.5.0</title>
-    <updated>2026-03-07T15:31:10+00:00</updated>
-    <author>
-      <name>Thedrummonger</name>
-    </author>
-    <content>## Yet Another YARG AP V2.5.0&#13;
-### APWorld Changes&#13;
-- Removed 6-Fret Guitar and Bass as valid instruments (not currently supported by YARG).&#13;
-&#13;
-### Client Changes&#13;
-- Added a dedicated **Archipelago** button to the main menu to open the connection window.&#13;
-  - The Keybind can still be used as well.&#13;
-- The Goal song can now be affected by **Swap Song** and **Lower Difficulty** items.&#13;
-- Added a **Goal Info** section to the song list displaying all goal-related information.&#13;
-- Added a **Reveal Goal Song** button to the song list, allowing the goal song to be viewed at any time.&#13;
-- **Drums** instrument pools can now be completed with higher-tier drum instruments.&#13;
-  - Example: Pro Drums can complete songs in 4-Lane drum pools, but 4-Lane cannot complete songs in Pro drums pools.&#13;
-- **Five-Lane Drums** pools can now be completed with any drum chart, since YARG natively allows playing song with Five-Lane only charts with 4 lane drum instruments.&#13;
-&#13;
-### YAML Creator Changes&#13;
-- Added a standalone **Client/Tracker** to the YAML creator.&#13;
-  - Displays available locations, received items, and hints.&#13;
-  - Can also be used as a standard text client.&#13;
-- Updated the **Available YARG Songs** list to support advanced features such as multi-selection.&#13;
-- Songs included or excluded from a pool are now marked with `*`, allowing them to be filtered.&#13;
-- YAML can now be exported without removing unused songs by right clicking the Generate button.&#13;
-  - Not recommended, but allows safe manual editing of song pools after export.&#13;
-- Added an option to export YAML with the song list saved as a separate JSON file by right clicking the Generate button.&#13;
-  - The `{slotName}_song_export.json` file must be placed in the **"YAYARG Song Data"** folder located in the root Archipelago directory of the user generating the seed.&#13;
-&#13;
-Tested against [YARG nightly b3564](https://github.com/YARC-Official/YARG-Bleedingedge/releases/tag/b3564)&#13;
-***Newer version may be incompatible.***&#13;
-&#13;
-This version is **not compatible with older worlds.**&#13;
-&#13;
-Setup Guide:&#13;
-https://github.com/Thedrummonger/Archipelago/blob/YARGV2/worlds/yayarg/docs/guide_en.md</content>
-    <link href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/c-ostic/Archipelago/releases/tag/v0.4.0</id>
-    <title>Ori and the Blind Forest v0.4.0</title>
-    <updated>2026-03-07T17:04:23+00:00</updated>
-    <author>
-      <name>c-ostic</name>
-    </author>
-    <content>Additions/Changes&#13;
-- Changed many of the toggleable logic options into a new logic modifiers group&#13;
-    - This includes Lure, Damage Boost, Double Bash, Grenade Jump, Air Dash, Charge Dash, Triple Jump, Charge Flame Burn, Rekindle, and Glitches&#13;
-- As evident in the above bullet, removed Glitches as a difficulty option and added it to logic modifiers. This allows it to be used with any difficulty option&#13;
-- Multiple goal modes. The option is now a list where any combination of the four goal modes can be added. If none are added to the list, this is equivalent to the None goal mode&#13;
-- No Final Escape option. Goal will be sent upon reaching the lower Horu door instead of at the end of the escape&#13;
-- Extra Keystones option. Adds extra keystones to the item pool&#13;
-- Extra Skills option. Adds a second copy of all skills to the item pool. Also adds an extra copy of Wind and Clean Water&#13;
-- Death Link Count option. Only send a death link every X deaths&#13;
-- Include Teleporters option. If false, teleporters will not be added to the item pool&#13;
-- Sein Logic&#13;
-    - When set to vanilla, Sein is placed at their normal location in game&#13;
-    - When set to start, Sein is given to the player at the start of the game. Sein's vanilla location is now a normally randomized AP location&#13;
-- Health and Energy Regen items. Base regen rate is 1 every 60 seconds multiplied by how many regen items have been received&#13;
-- The player now starts with their first Energy Cell. The first energy cell pickup is now a normally randomized AP location&#13;
-- Logic updates to match updates in the standalone randomizer (as best as I can match)&#13;
-&#13;
-Fixes&#13;
-- Warmth fragments have been fixed where randomized options caused more required than available. Now, in the case where this happens, more warmth fragments are added to the pool to match the amount required&#13;
-&#13;
-This version is meant to be used with any **v0.4.x** version of the client side mod.</content>
-    <link href="https://github.com/c-ostic/Archipelago/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.4.49</id>
-    <title>Donkey Kong 64 v1.4.49.post2</title>
-    <updated>2026-03-07T19:58:39+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 1.4.49
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.4.49"/>
-  </entry>
   <entry>
     <id>https://github.com/TRPG0/HbkArchipelago/releases/tag/0.2.2</id>
     <title>Hi-Fi RUSH v0.2.2</title>
@@ -174,6 +70,16 @@ update both together for everything to work correctly!&#13;
     <content># Bugfixes:&#13;
 - Fixes Income Boosts not being placed in the item pool</content>
     <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Str8UpWHITE64/DRAP/releases/tag/0.2.2</id>
+    <title>Dead Rising Deluxe Remaster v0.0.1</title>
+    <updated>2026-03-08T07:06:39+00:00</updated>
+    <author>
+      <name>Str8UpWHITE64</name>
+    </author>
+    <content>Update logic for main scoop missions for ScoopSanity.</content>
+    <link href="https://github.com/Str8UpWHITE64/DRAP/releases/tag/0.2.2"/>
   </entry>
   <entry>
     <id>https://github.com/Str8UpWHITE64/DRAP/releases/tag/0.2.0</id>
@@ -635,6 +541,42 @@ Hotfix for critical bugs in version 0.5&#13;
     <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.5.1"/>
   </entry>
   <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.9</id>
+    <title>plateup v0.2.5.9</title>
+    <updated>2026-03-10T10:38:02+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>## What's New?&#13;
+- Achievement checks are now configurable — choose between all checks, a filtered set that excludes Charcoal Factory and Safety Last when appliance unlocks are off, or none at all&#13;
+- Five new traps added to the pool: Random Dish Extra, Random Side Dish, Tip Jar Drain, Good Advertisement, and Card Swap&#13;
+- You can now control how many appliance unlock items appear in the pool (10–93), giving you flexibility over how much progression gating you want&#13;
+- Appliances without an unlock item in the pool can now be toggled on or off in the shop&#13;
+- Cleaned up WebWorld so the options page looks a bit cleaner&#13;
+&#13;
+## New YAML Options&#13;
+&#13;
+**`trap_weights`** — Set the weight for each individual trap, letting you control which ones show up and how often. Set a trap's weight to 0 to remove it from the pool entirely.&#13;
+&#13;
+**`money_cap_increase_count`** — Controls how many Money Cap Increase items the generator places into the item pool.&#13;
+&#13;
+**`coin_filler_percent`** — Sets what percentage of your filler items will be coin pickups.&#13;
+&#13;
+**`achievement_check_mode`** — Decides which achievement checks appear in your pool. `all` includes everything, `earned_only` filters out Charcoal Factory and Safety Last when appliance unlocks are disabled, and `none` removes achievement checks entirely.&#13;
+&#13;
+**`appliance_unlock_pool_size`** — Controls how many appliance unlock items are placed in the pool, from 10 up to 93. Useful for making sure all the appliances you need for progression can actually show up.&#13;
+&#13;
+**`unlocked_appliances_in_shop`** — Toggles whether appliances that don't have an unlock item in the pool are still available to buy in the shop.&#13;
+&#13;
+**`extra_starting_cards`** — Adds extra cards to your starting hand using the same rules as difficulty cards — they carry over between runs and are removed via the Remove Card mechanic.&#13;
+&#13;
+## Note&#13;
+This apworld update is directly tied to the mod update — make sure you&#13;
+update both together for everything to work correctly!&#13;
+[Mod Update 2.5.9](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/2.5.9)</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.9"/>
+  </entry>
+  <entry>
     <id>https://github.com/c-ostic/Archipelago/releases/tag/v0.4.1</id>
     <title>Ori and the Blind Forest v0.4.1</title>
     <updated>2026-03-10T17:41:26+00:00</updated>
@@ -1069,7 +1011,7 @@ Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
       <name>Exempt-Medic (Proofreading)</name>
     </author>
     <content>## Apworld&#13;
-- Fixed logic rule for Morel seasons [@Noa]&#13;
+- Fixed logic rule for Morel seasons [@itepastra]&#13;
 &#13;
 ## Mod&#13;
 - Introduced new TesterFeature to make the Traveling Cart stock unlimited. This should be generally considered a cheat, as it invalidates the related AP items and allows going heavily OoL&#13;
@@ -1080,5 +1022,32 @@ Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
 - Fixed the Jojapocalypse filters accidentally filtering the Kent C Bundle to meeting Kent&#13;
 - Added a bunch of name matching exceptions for tooltips</content>
     <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.18</id>
+    <title>Deep Rock Galactic v0.18.0</title>
+    <updated>2026-03-12T13:48:26+00:00</updated>
+    <author>
+      <name>SipcoGamingGuild</name>
+    </author>
+    <author>
+      <name>Taz</name>
+    </author>
+    <content>**Changes (Should be compatible with 0.16+ worlds, but may cause issues)**&#13;
+&#13;
+- Added Weapon Randomizer (Optional)&#13;
+- Added Class Randomizer (Optional)&#13;
+- Re-added Hints to the Game (Upgraded In game menu)&#13;
+- Re-added messages on send / receive items to the game&#13;
+- Properly Packaged apworld for version typing&#13;
+- Added starter item autofill based on YAML&#13;
+- Made Shop More Responsive on Item Purchasing&#13;
+- Added more Info to Info Console and renamed it to "Checks Console"&#13;
+&#13;
+**INFO FILES**&#13;
+ [INSTRUCTIONS](https://docs.google.com/document/d/16At-2kS_azJRf9PdUcZeA8Esfoh6kNm2dWVWy8u8wA0/edit?usp=sharing)&#13;
+ [MOD on MOD.IO](https://mod.io/g/drg/m/test-archipelago-integration#description)&#13;
+ [SIDELOADER for DRG Mods](https://github.com/trumank/mint)</content>
+    <link href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.18"/>
   </entry>
 </feed>
