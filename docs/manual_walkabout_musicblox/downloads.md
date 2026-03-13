@@ -1,9 +1,12 @@
 # Manual_Walkabout_MusicBlox
 
 ## Latest
-- <a href="https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/download/2.1.0/manual_walkabout_musicblox.apworld">Latest Version (2.1.0)</a>
+- <a href="https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/download/2.2.0/manual_walkabout_musicblox.apworld">Latest Version (2.2.0)</a>
 
 ## All Versions
+
+#### v2.2.0
+- <a href="https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/download/2.2.0/manual_walkabout_musicblox.apworld">https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/download/2.2.0/manual_walkabout_musicblox.apworld</a>
 
 #### v2.1.0
 - <a href="https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/download/2.1.0/manual_walkabout_musicblox.apworld">https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/download/2.1.0/manual_walkabout_musicblox.apworld</a>

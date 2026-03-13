@@ -2,64 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-13T06:19:08.964414+00:00</updated>
+  <updated>2026-03-13T12:14:17.096356+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.08</id>
-    <title>Archipeladoku v2026.3.8</title>
-    <updated>2026-03-08T11:07:17+00:00</updated>
-    <author>
-      <name>Galdiuz</name>
-    </author>
-    <content/>
-    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.08"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/tag/0.5.0</id>
-    <title>Metroid Zero Mission v0.5.0</title>
-    <updated>2026-03-08T14:03:35+00:00</updated>
-    <author>
-      <name>lil David</name>
-    </author>
-    <author>
-      <name>NoiseCrush</name>
-    </author>
-    <content>## Overall changes&#13;
-* The game's name was changed **Metroid: Zero Mission** (note the colon). You will need to adjust your options file to account for the change.&#13;
-&#13;
-## Options changes&#13;
-* Trick selection now has groups:&#13;
-  * Intended Sequence Breaks: Built-in shortcuts such as Ridley access without Speed Booster/Wave Beam (note all of these are included in normal logic)&#13;
-  * Tricky Shinesparks: Does the same as the yaml option&#13;
-  * Ludicrous Tricks: The harder-than-hard tricks that need to be opted into&#13;
-&#13;
-## Client changes&#13;
-* Added Universal Tracker integration&#13;
-  * Can now be used without an options yaml&#13;
-  * Can show tricks that aren't in logic. By default, these will show tricks a level above what they're set to in your settings (exceptions apply if your overall logic difficulty is basic)&#13;
-* Metroid DNA available is now sent to the tracker&#13;
-&#13;
-## Logic changes&#13;
-* _Kraid Quad Ball Cannon Crumble Grip_ was split into Hi-Jump and Space Jump versions, with the latter being moved to ludicrous tricks&#13;
-* Renamed _Kraid Left Shaft Access Space Jump Only_ to _Rising Midair Morph With Space Jump_ for a new use to access _Norfair Behind Super Door Left_&#13;
-* Added normal trick _Norfair Behind Lower Super Missile Door - Left Damage Boost_&#13;
-* Added _Tourian Acid Dive_ hazard run&#13;
-* Adjusted access rules for Norfair right shaft and Ridley ballcannon&#13;
-* Fixed access rules for:&#13;
-  * Chozodia entrances from Crateria being swapped&#13;
-  * Lower Norfair access from right shaft (hard mode)&#13;
-  * Ice Beam to top of Norfair traversal&#13;
-  * Chozodia tube to Mother Ship&#13;
-&#13;
-## Game changes&#13;
-* Fixed item banner appearing and overwriting the graphics for the green gerutos in Norfair&#13;
-&#13;
-**Full Changelog**: https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/compare/0.4.1...0.5.0</content>
-    <link href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/tag/0.5.0"/>
-  </entry>
   <entry>
     <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.0</id>
     <title>ToeJam and Earl v0.5.0</title>
@@ -1073,5 +1020,56 @@ Keypad door in sewer is now a check.&#13;
 Sewer Office property now an item when randomizing drug making properties&#13;
 Sewer key randomization blocks.</content>
     <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.1</id>
+    <title>CrossCode v0.8.1</title>
+    <updated>2026-03-13T07:37:42+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content>## Changes to Generation&#13;
+&#13;
+* Made changes to item groups (@CodeTriangle)&#13;
+  * Renamed certain item groups to be more user-friendly (i.e. `fillerCommonCons` -&gt; `Common Consumables`).&#13;
+  * Added several item groups to better classify common items.&#13;
+  * Removed the `required` item group, whose name is misleading and whose contents are varied and don't group together well.&#13;
+  * **PLEASE NOTE**: These changes will only be available in worlds generated using 0.8.1 of the APWorld or greater.&#13;
+* Raise `OptionError` if both consumable_weight and drop_weight are zero (@gerbiljames)&#13;
+  * Currently, doing this will result in an unhelpful generic python error.&#13;
+&#13;
+## Changes to Logic&#13;
+&#13;
+* Updated logic around the **Crocus Pocus** questline and associated locations (@CodeTriangle)&#13;
+  * Logic now actually tracks the number of plants the player is able to farm instead of trying to work around it using regions.&#13;
+&#13;
+## Fixes to Logic&#13;
+&#13;
+* **Gaia's Garden Collect** now requires access to the Grove and Infested areas of Gaia's Garden (@FuyumiSogeki)&#13;
+* Update logic surrounding Ascension Temple to no longer require Shock (@kumquat-ir)&#13;
+  * This is due to a change in CC-Open-World where the rocks in Wheel Passage were removed,.&#13;
+* Update logic surrounding the lower floors of Temple Mine (@kumquat-ir)&#13;
+  * Multiple doors can be reached upon acquiring heat but the randomizer assumes that one unlocks after the other.</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/tag/2.2.0</id>
+    <title>Manual_Walkabout_MusicBlox v2.2.0</title>
+    <updated>2026-03-13T10:13:10+00:00</updated>
+    <author>
+      <name>energymaster22</name>
+    </author>
+    <content>Updated to support the new Hollywood course!&#13;
+&#13;
+Bug Fix:&#13;
+- Non-linear logic was using the easy pars for logic on the hard courses. This has been fixed.&#13;
+&#13;
+## What's Changed&#13;
+* Added Hollywood by @energymaster22 in https://github.com/energymaster22/walkabout-mini-golf-ap-manual/pull/41&#13;
+* Set the correct index for hard course, non linear par logic by @energymaster22 in https://github.com/energymaster22/walkabout-mini-golf-ap-manual/pull/42&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/energymaster22/walkabout-mini-golf-ap-manual/compare/2.1.0...2.2.0</content>
+    <link href="https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/tag/2.2.0"/>
   </entry>
 </feed>

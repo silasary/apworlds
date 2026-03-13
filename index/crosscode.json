@@ -654,6 +654,20 @@
       "version_simple": "0.8.0",
       "world_version": "0.8.0rc3"
     },
+    "0.8.1": {
+      "created_at": "2026-03-13T07:37:42Z",
+      "description": "## Changes to Generation\r\n\r\n* Made changes to item groups (@CodeTriangle)\r\n  * Renamed certain item groups to be more user-friendly (i.e. `fillerCommonCons` -> `Common Consumables`).\r\n  * Added several item groups to better classify common items.\r\n  * Removed the `required` item group, whose name is misleading and whose contents are varied and don't group together well.\r\n  * **PLEASE NOTE**: These changes will only be available in worlds generated using 0.8.1 of the APWorld or greater.\r\n* Raise `OptionError` if both consumable_weight and drop_weight are zero (@gerbiljames)\r\n  * Currently, doing this will result in an unhelpful generic python error.\r\n\r\n## Changes to Logic\r\n\r\n* Updated logic around the **Crocus Pocus** questline and associated locations (@CodeTriangle)\r\n  * Logic now actually tracks the number of plants the player is able to farm instead of trying to work around it using regions.\r\n\r\n## Fixes to Logic\r\n\r\n* **Gaia's Garden Collect** now requires access to the Grove and Infested areas of Gaia's Garden (@FuyumiSogeki)\r\n* Update logic surrounding Ascension Temple to no longer require Shock (@kumquat-ir)\r\n  * This is due to a change in CC-Open-World where the rocks in Wheel Passage were removed,.\r\n* Update logic surrounding the lower floors of Temple Mine (@kumquat-ir)\r\n  * Multiple doors can be reached upon acquiring heat but the randomizer assumes that one unlocks after the other.",
+      "download_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.1/crosscode.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2bc84f409f2822f5549f57b7acf9075f9bc32df0a50da11781d87f1d05cf94e1",
+      "html_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.1",
+      "size": 128817,
+      "source_url": "https://api.github.com/repos/CodeTriangle/CCMultiworldRandomizer",
+      "tag": "0.8.1",
+      "title": "0.8.1",
+      "version_simple": "0.8.1",
+      "world_version": "0.8.1"
+    },
     "crosscode-0.2.0": {
       "created_at": "2023-09-06T05:39:45Z",
       "download_url": "https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.0/crosscode.apworld",
