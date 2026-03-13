@@ -449,6 +449,21 @@
       "version_simple": "1.3.1",
       "world_version": "1.3.1"
     },
+    "1.3.2": {
+      "created_at": "2026-03-12T18:55:00Z",
+      "description": "**Note that setup instructions have changed slightly in v1.3.0+. Within Duckstation, navigate to Settings > Game Properties > Console and select \"Interpreter\" under \"Execution Mode\".**\r\n\r\nThis release contains both Client (S3AP.Desktop.exe) and APWorld changes.\r\n\r\nNew Features\r\n- Implemented Received Items tab.\r\n- Implemented new client commands like !options, particularly useful for random settings.  Type !help to see the full list!\r\n\r\nChanges\r\n- Simplified option descriptions\r\n- Clarified World Key behavior in the client with messages on receiving keys and when locked from progressing.\r\n- Improved Options Creator user experience\r\n- Progressive client improvements\r\n\r\nBug Fixes:\r\n- Fixed a bug where gaining a life in Midnight Mountain Home could erroneously set your lives to 99.\r\n- Fixed an error in the logic of a gem in Sunny Villa.\r\n- (Hopefully) fixed a bug where goaling could freeze the client and not send out the goal.\r\n    - If you still encounter this issue, restart the client and reconnect to send the goal.",
+      "download_url": "https://github.com/Uroogla/S3AP/releases/download/1.3.2/spyro3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3d4a0287bc69bdb475312705ce49d489315b28f94fad031234be8d3c357fc524",
+      "html_url": "https://github.com/Uroogla/S3AP/releases/tag/1.3.2",
+      "minimum_ap_version": "0.6.1",
+      "size": 53317,
+      "source_url": "https://api.github.com/repos/Uroogla/S3AP",
+      "tag": "1.3.2",
+      "title": "v1.3.2",
+      "version_simple": "1.3.2",
+      "world_version": "1.3.2"
+    },
     "open_world_test": {
       "created_at": "2025-09-07T15:42:03Z",
       "description": "NOTE: This is a test build.  It very likely has bugs or errors.  Please be considerate of your fellow players when using this.  For the latest stable build, see https://github.com/Uroogla/S3AP/releases/tag/1.1.0\r\n\r\nNew feature:\r\n- Open World Option\r\n  - This opens up all 4 homeworlds from the start.\r\n  - The end of level egg for all 5 main levels of Sunrise, Midday, and Evening are pre-completed from the start of the seed.  Their items are all \"Filler\"\r\n  - Buzz, Spike, and Scorch do not need to be defeated.  Their eggs are pre-completed and their items are all \"Filler\".\r\n  - All levels that normally require eggs to unlock instead require a Level Unlock item.\r\n  - Players start with 1 egg because Spyro 3 portal unlocks are complicated.\r\n  - You may need to enter and exit a Sunrise level once for the rocket to behave properly.  Otherwise, it may be merged with the balloon.\r\n  - In Companionsanity or Moneybagssanity, players start with Sheila, Sgt. Byrd, and Bentley unlocked, due to potential logic issues.  The plan is to change this eventually.\r\n  - If you are in Sunrise when you unlock Molten or Seashell, you may need to enter another level and come back for the unlock to take effect.\r\n  - Not compatible with hwd's randomizer or world keys.\r\n  - Partially ignores Progressive Sparx Health Logic.  You are still guaranteed to have gold sparx in logic by the Sorceress, but unlocked levels like Fireworks do not account for this option.  You are encouraged to start with a higher sparx level than normal in this mode.",
