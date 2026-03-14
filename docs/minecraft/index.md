@@ -7,7 +7,7 @@ victory!
 
 
 ## Downloads
-- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.0/minecraft.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.0.0/minecraft.apworld">Latest Version (2.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

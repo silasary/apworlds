@@ -53,7 +53,6 @@ or after completing both conditions.
 * Campfire
     * Campfire
     * Soul Campfire
-* Saddle
 * Spyglass
 * Lead
 * Brush
@@ -61,26 +60,17 @@ or after completing both conditions.
     * Tier I
         * Stone Sword
         * Stone Axe
-        * Stone Spear
-        * Copper Sword
-        * Copper Axe
-        * Copper Spear
     * Tier II
         * Iron Sword
         * Iron Axe
-        * Iron Spear
     * Tier III
         * Diamond Sword
         * Diamond Axe
-        * Diamond Spear
 * Progessive Tools
     * Tier I
         * Stone Pickaxe
         * Stone Shovel
         * Stone Hoe
-        * Copper Pickaxe
-        * Copper Shovel
-        * Copper Hoe
     * Tier II
         * Iron Pickaxe
         * Iron Shovel
@@ -103,8 +93,6 @@ or after completing both conditions.
         * Diamond Boots
 * Progressive Resource Crafting
     * Tier I
-        * Copper Ingot from Nuggets
-        * Copper Nugget
         * Iron Ingot from Nuggets
         * Iron Nugget
         * Gold Ingot from Nuggets
@@ -126,7 +114,4 @@ or after completing both conditions.
         * Anvil
         * Emerald
         * Emerald Block
-        * Copper Ingot from Copper Block
         * Copper Block
-        * Resin Clump
-        * Resin Block
