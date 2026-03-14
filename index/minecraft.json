@@ -1,4 +1,9 @@
 {
+  "authors": [
+    "qixils",
+    "Seafo",
+    "cjmang"
+  ],
   "description": "Minecraft is a game about creativity. In a world made entirely of cubes, you explore, discover, mine,\ncraft, and try not to explode. Delve deep into the earth and discover abandoned mines, ancient\nstructures, and materials to create a portal to another world. Defeat the Ender Dragon, and claim\nvictory!",
   "game": "Minecraft",
   "github": [
@@ -8,7 +13,11 @@
     "https://github.com/qixils/NeoForgeAP"
   ],
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "tracker": "https://github.com/Cyb3RGER/minecraft_rando_tracker/releases/latest",
   "versions": {
     "0.1.0-MC": {
@@ -98,6 +107,51 @@
       "title": "Main apworld 0.1.7 (MC1.20.4) + Dig apworld 0.0.4 (MC1.19.4)",
       "version_simple": "0.1.7",
       "world_version": "0.1.7"
+    },
+    "v2.0.0": {
+      "created_at": "2025-12-30T17:34:47Z",
+      "description": "Symbolic release number to celebrate an apworld release :-)\r\n\r\nIncludes updates to the spawnjail",
+      "download_url": "https://github.com/qixils/NeoForgeAP/releases/download/v2.0.0/minecraft.apworld",
+      "has_manifest": true,
+      "hash_sha256": "13680ad263e81c9ad6ab0467e332e0a4fbf52a40b3fe4c4be27275d35b211ca9",
+      "html_url": "https://github.com/qixils/NeoForgeAP/releases/tag/v2.0.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 58587,
+      "source_url": "https://api.github.com/repos/qixils/NeoForgeAP",
+      "tag": "v2.0.0",
+      "title": "v2.0.0",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
+    },
+    "v2.0.1": {
+      "created_at": "2026-01-31T16:29:51Z",
+      "description": "Updated client & mod to use the new generated APMC zip format, allowing for server IP to be added dynamically without needing to use the client (thanks @coehlrich for reporting and @cjmang for helping fix)",
+      "download_url": "https://github.com/qixils/NeoForgeAP/releases/download/v2.0.1/minecraft.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1dcec7b64fc45e064491dafeac02d6cf948db79a0e19e6ebc384d8acbf62f0ae",
+      "html_url": "https://github.com/qixils/NeoForgeAP/releases/tag/v2.0.1",
+      "minimum_ap_version": "0.6.3",
+      "size": 58832,
+      "source_url": "https://api.github.com/repos/qixils/NeoForgeAP",
+      "tag": "v2.0.1",
+      "title": "v2.0.1",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
+    },
+    "v2.1.0": {
+      "created_at": "2026-03-13T20:34:54Z",
+      "description": "## What's Changed\r\n* Add Trial Chamber Structure Compasses + Misc. Fixes by @Seatori in https://github.com/qixils/Archipelago/pull/5\r\n* Add Shulker Boxes to Item Pool by @Seatori in https://github.com/qixils/Archipelago/pull/7\r\n* Add support for creating items with multiple classifications by @Seatori in https://github.com/qixils/Archipelago/pull/9\r\n* Logic & Documentation changes for 1.21.11+ by @Seatori in https://github.com/qixils/Archipelago/pull/10\r\n* Update Item+Location ID System by @MrRedstone54 in https://github.com/qixils/Archipelago/pull/8\r\n* Explicit Universal Tracker support for Minecraft by @Seatori in https://github.com/qixils/Archipelago/pull/11\r\n* Fix client save management by @qixils \r\n* Update mod to 1.21.11 by @MrRedstone54 \r\n* Lock recipes for Saddle, Copper Ingot, Resin Clump, Block of Resin by @Seatori in https://github.com/qixils/NeoForgeAP/pull/6\r\n\r\nGeneration version bumped to v10. The client UI remains compatible with previous versions of the mod (though any previous servers may no longer be listed in the UI as their metadata was broken; the .apmc just needs to be reimported).",
+      "download_url": "https://github.com/qixils/NeoForgeAP/releases/download/v2.1.0/minecraft.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1ce23b66b592ea1c7b21ba0b426c087d96c6a83d6870484eaa0140415e51c747",
+      "html_url": "https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 59453,
+      "source_url": "https://api.github.com/repos/qixils/NeoForgeAP",
+      "tag": "v2.1.0",
+      "title": "v2.1.0: Minecraft 1.21.11",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
     }
   }
 }

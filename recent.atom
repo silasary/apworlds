@@ -2,40 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-14T00:21:01.767396+00:00</updated>
+  <updated>2026-03-14T06:20:38.349871+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/wildham0/FF1PRAP/releases/tag/0.5.16</id>
-    <title>FF1 Pixel Remaster v0.5.12</title>
-    <updated>2026-03-08T22:22:36+00:00</updated>
-    <author>
-      <name>wildham</name>
-    </author>
-    <content>Fix Giant's Cavern entrances getting swapped in ow shuffle</content>
-    <link href="https://github.com/wildham0/FF1PRAP/releases/tag/0.5.16"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR6</id>
-    <title>The Grinch v1.5.0</title>
-    <updated>2026-03-08T23:23:06+00:00</updated>
-    <author>
-      <name>MarioSpore</name>
-    </author>
-    <author>
-      <name>SomeJakeGuy</name>
-    </author>
-    <content># Notice&#13;
-Keep in mind that this is a beta release and is not currently ready for a full release. Do not bring this into serious groups unless you know what you are doing. This is for testing purposes only to ensure everything is ready when this update gets a full release. Report bugs and check certain things to make sure everything works as intended.&#13;
-&#13;
-# Bugfixes&#13;
-- Fixed rat missionsanity locations failing to generate&#13;
-- Deathlink no longer categorized due to "visibility"? Reverted until I figure this out. Should be able to generate template yaml now&#13;
-- Added another failsafe for music_rando when you exit out of client</content>
-    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR6"/>
-  </entry>
   <entry>
     <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.3-beta</id>
     <title>Dicey Dungeons v0.2.3b0</title>
@@ -1083,5 +1054,59 @@ Bug Fix:&#13;
 &#13;
 The size of the AP world has ballooned because I am now vendoring [unidecode](https://github.com/avian2/unidecode), a Python package for intelligently flattening Unicode text to standard ASCII. This package is used to ensure the mailbox item names are always displayable using the game's limited ASCII subset.</content>
     <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.0</id>
+    <title>Minecraft v2.0.0</title>
+    <updated>2026-03-13T20:34:54+00:00</updated>
+    <author>
+      <name>qixils</name>
+    </author>
+    <author>
+      <name>Seafo</name>
+    </author>
+    <author>
+      <name>cjmang</name>
+    </author>
+    <content>## What's Changed&#13;
+* Add Trial Chamber Structure Compasses + Misc. Fixes by @Seatori in https://github.com/qixils/Archipelago/pull/5&#13;
+* Add Shulker Boxes to Item Pool by @Seatori in https://github.com/qixils/Archipelago/pull/7&#13;
+* Add support for creating items with multiple classifications by @Seatori in https://github.com/qixils/Archipelago/pull/9&#13;
+* Logic &amp; Documentation changes for 1.21.11+ by @Seatori in https://github.com/qixils/Archipelago/pull/10&#13;
+* Update Item+Location ID System by @MrRedstone54 in https://github.com/qixils/Archipelago/pull/8&#13;
+* Explicit Universal Tracker support for Minecraft by @Seatori in https://github.com/qixils/Archipelago/pull/11&#13;
+* Fix client save management by @qixils &#13;
+* Update mod to 1.21.11 by @MrRedstone54 &#13;
+* Lock recipes for Saddle, Copper Ingot, Resin Clump, Block of Resin by @Seatori in https://github.com/qixils/NeoForgeAP/pull/6&#13;
+&#13;
+Generation version bumped to v10. The client UI remains compatible with previous versions of the mod (though any previous servers may no longer be listed in the UI as their metadata was broken; the .apmc just needs to be reimported).</content>
+    <link href="https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/studkid/RiftArchipelago/releases/tag/v0.11.0</id>
+    <title>Rift of the Necrodancer v0.11.0</title>
+    <updated>2026-03-14T04:34:00+00:00</updated>
+    <author>
+      <name>studkid</name>
+    </author>
+    <content># Additions&#13;
+- [APWorld] Added VA-11 HALL-A and Spin Rhythm Songs&#13;
+&#13;
+# Changes&#13;
+- [APWorld] Added an "All" DLC to include all DLC songs&#13;
+- [APWorld] Rearranged item groups&#13;
+    - Free songs from paid DLC packs are now included with their respective DLC pack item group &#13;
+    - Shovel Knight songs now actually have an item group&#13;
+    - Rift Anniversary songs are now part of the "Anniversary" item group&#13;
+    - "Free Promo" item group now named "Free DLC".  Meat Boy and Anniversary songs are also grouped here&#13;
+&#13;
+# Bug Fixes&#13;
+- [Client + APWorld] Goal song now properly unlocks if goal song is set to a custom rift&#13;
+- [Client] Necrodancer and Deep Blues boss battles now send their locations properly&#13;
+- [APWorld] Now gives a more useful error if the custom song data is wrong https://github.com/studkid/Archipelago/pull/4&#13;
+- [APWorld] Fixed a state leak when playing with multiple RotN players https://github.com/studkid/Archipelago/pull/5&#13;
+&#13;
+</content>
+    <link href="https://github.com/studkid/RiftArchipelago/releases/tag/v0.11.0"/>
   </entry>
 </feed>

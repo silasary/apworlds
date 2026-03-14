@@ -50,7 +50,7 @@ que tout le monde est prêt utilisez la commande `/start`.
 ## Installation non Windows
 
 Le client Minecraft installera forge et le mod pour d'autres systèmes d'exploitation, mais Java doit être fourni par l'
-utilisateur. Rendez-vous sur [minecraft_versions.json sur le MC AP GitHub](https://raw.githubusercontent.com/KonoTyran/Minecraft_AP_Randomizer/master/versions/minecraft_versions.json)
+utilisateur. Rendez-vous sur [minecraft_versions.json sur le MC AP GitHub](https://raw.githubusercontent.com/qixils/NeoForgeAP/master/versions/minecraft_versions.json)
 pour voir quelle version de Java est requise. Les nouvelles installations utiliseront par défaut la version "release" la plus élevée.
 - Installez le JDK Amazon Corretto correspondant
      - voir les [Liens d'installation manuelle du logiciel](#manual-installation-software-links)
@@ -68,7 +68,7 @@ les liens suivants sont les versions des logiciels que nous utilisons.
 ### Liens d'installation manuelle du logiciel
 
 - [Page de téléchargement de Minecraft Forge] (https://files.minecraftforge.net/net/minecraftforge/forge/)
-- [Page des versions du mod Minecraft Archipelago Randomizer] (https://github.com/KonoTyran/Minecraft_AP_Randomizer/releases)
+- [Page des versions du mod Minecraft Archipelago Randomizer] (https://github.com/qixils/NeoForgeAP/releases)
      - **NE PAS INSTALLER CECI SUR VOTRE CLIENT**
 - [Amazon Corretto](https://docs.aws.amazon.com/corretto/)
      - choisissez la version correspondante et sélectionnez "Téléchargements" sur la gauche

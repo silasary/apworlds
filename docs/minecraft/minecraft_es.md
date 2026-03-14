@@ -123,7 +123,7 @@ Solo es requerido si quieres usar una instalacion de forge por ti mismo, recomen
 ### Software Requerido
 
 - [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)
-- [Minecraft Archipelago Randomizer Mod](https://github.com/KonoTyran/Minecraft_AP_Randomizer/releases)
+- [Minecraft Archipelago Randomizer Mod](https://github.com/qixils/NeoForgeAP/releases)
   **NO INSTALES ESTO EN TU CLIENTE MINECRAFT**
 
 ### Instalación de servidor dedicado
