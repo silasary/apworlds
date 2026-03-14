@@ -2,67 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-13T18:15:35.371274+00:00</updated>
+  <updated>2026-03-14T00:21:01.767396+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.0</id>
-    <title>ToeJam and Earl v0.5.0</title>
-    <updated>2026-03-08T15:48:12+00:00</updated>
-    <author>
-      <name>IgnisUmbrae</name>
-    </author>
-    <content>## New features&#13;
-&#13;
-- Cause of death is now tracked and sent in deathlink messages&#13;
-- Items are now *always* forced to be received regardless of player state. This means items should no longer go missing for any reason. However, note that in some circumstances traps may fail to activate due to unintended interactions that are not possible in the vanilla game (e.g. reading a School Book while flying with Icarus Wings will fail).&#13;
-- Two unused present sprites left in the ROM have been restored and enabled by default. You can disable this feature by adding `unused_present_sprites: no` to your YAML.&#13;
-&lt;div align="center"&gt;&lt;img width="72" height="63" alt="unused1" src="https://github.com/user-attachments/assets/1f953e0e-6496-4017-9256-dd07a0d1e867" /&gt;&#13;
-&lt;img width="96" height="63" alt="unused2" src="https://github.com/user-attachments/assets/dac92594-a8f2-4cb6-912b-eaef7014e0b4" /&gt;&lt;/div&gt;&#13;
-&#13;
-- `earthling_rando: nice_random` now takes into account custom `last_level`, and scales difficulty such that level 2 corresponds to vanilla level 2 while the chosen `last_level` corresponds to vanilla level 25.&#13;
-- Playing with `local_ship_pieces: vanilla` will now use vanilla ship piece sprites, hint sprites and related text.&#13;
-- Sound rando now randomizes 11 more sounds. This set of sounds includes the tomato splat, cupid firing an arrow, the shark danger musical sting and the rosebush sound.&#13;
-&#13;
-## Bugfixes&#13;
-&#13;
-- Dying to a received deathlink no longer sends a deathlink in return&#13;
-- Losing your last life with `game_overs: drop_down` no longer sends deathlink twice in quick succession&#13;
-- Fixed an off-by-one error that caused all custom dialogue to lose its first letter (whoops)&#13;
-&#13;
-## Internal only&#13;
-&#13;
-- Virtually all the assembly code has now been spun out into separate files, reorganized and commented for easier future modification and better bug resistance</content>
-    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/0.0.10_dig</id>
-    <title>Minecraft Dig v0.0.10</title>
-    <updated>2026-03-08T19:18:59+00:00</updated>
-    <content>Instructions:&#13;
-https://github.com/jacobmix/Minecraft_AP_Randomizer/blob/master/README.md&#13;
-&#13;
-**Full Changelog**:&#13;
-https://github.com/jacobmix/Minecraft_AP_Randomizer/compare/0.0.9_dig...0.0.10_dig&#13;
-&#13;
-# What's changed: APWorld v0.0.10&#13;
-&#13;
-- The Item Shop is now locked behind 3 Progressive Shop items. Each one unlocks a new row of 9 items. This improves multiworld balancing by spreading shop items across multiple logic spheres&#13;
-- Fossil generation now automatically scales based on chunk count and total shop costs, so there are always enough fossils to buy everything regardless of settings&#13;
-- When all layers are dug, a victory title and sound play on screen. After goal completion, no more Archipelago items are received&#13;
-- Explosive Bow now correctly lasts 16 shots instead of 8&#13;
-- Earthquake trap has been fully removed&#13;
-- Fixed gravity trap spamming chat multiple times per activation&#13;
-- Fake Wither now affects all online players instead of just one&#13;
-- True Golden Pick no longer triggers excavation on adjacent blocks&#13;
-- Fixed excavation cross pattern when mining from above&#13;
-- Fossils in blocks destroyed by fire or natural leaf dacay are now auto-collected&#13;
-- Increased delay between meteor spawns to reduce server load&#13;
-- Fixed filler item generation crashing when called without trap weights #3 </content>
-    <link href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/tag/0.0.10_dig"/>
-  </entry>
   <entry>
     <id>https://github.com/wildham0/FF1PRAP/releases/tag/0.5.16</id>
     <title>FF1 Pixel Remaster v0.5.12</title>
@@ -730,6 +674,38 @@ It's only a fraction of the size of the full apworld and intended for people who
     <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.20"/>
   </entry>
   <entry>
+    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.21</id>
+    <title>Pokemon Black and White v0.3.21</title>
+    <updated>2026-03-11T22:54:07+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <author>
+      <name>SparkyDaDoggo</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+- Added `Experience Multiplier` option&#13;
+  - Also added a menu to the PC in Pokémon Centers to adjust it ingame&#13;
+- Added `All Pokémon Seen` option&#13;
+- Fixed compatibility issues with AP 0.6.7 release candidates&#13;
+- Fixed player names with too many non-Ascii characters leading to a corrupted rom&#13;
+- Tweaked the menu structure of the PC in Pokémon Centers&#13;
+- Fixed backwards compatibility issues with old yamls&#13;
+- Tweaked option descriptions to make them a bit more Options Creator-friendly&#13;
+- Reworked `any_badge` and `any_tm_hm` once again&#13;
+&#13;
+## Is this version compatible with older multiworld slots and save files?&#13;
+Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
+However, tracking worlds generated before 0.3.21 might show incorrect Dexsanity logic in UT&#13;
+&#13;
+## Notes regarding the `pokemon_bw_without_maps.apworld` file&#13;
+That version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.&#13;
+To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
+It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
+    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.21"/>
+  </entry>
+  <entry>
     <id>https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.1.5</id>
     <title>Factorio Bob's v2.1.4</title>
     <updated>2026-03-11T23:20:03+00:00</updated>
@@ -1071,5 +1047,41 @@ Bug Fix:&#13;
 &#13;
 **Full Changelog**: https://github.com/energymaster22/walkabout-mini-golf-ap-manual/compare/2.1.0...2.2.0</content>
     <link href="https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/tag/2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.1</id>
+    <title>ToeJam and Earl v0.5.1</title>
+    <updated>2026-03-13T18:34:01+00:00</updated>
+    <author>
+      <name>IgnisUmbrae</name>
+    </author>
+    <content>## Big changes&#13;
+&#13;
+- Mailbox checks have been added! Set `mailbox_checks: yes` to enable. While the logic is not super-strict and has a buffer for "misspending", it assumes you won't spend any bucks at all on friendly Earthling services, so you may want to enable `free_earthling_services` to reduce the chance of accidentally bricking a seed.&#13;
+  - Moles will not steal Extra Buck or Jackpot presents if mailbox checks are enabled&#13;
+  - Mailbox purchase state is saved along with the rest of the save data&#13;
+- Extra Buck and Jackpot presents can now be made to auto-open on receipt (from other worlds only) by setting `auto_buck_presents: yes`.&#13;
+- Presentsanity has been added, which makes every present a Mystery Present. Set `presentsanity: yes` to enable.&#13;
+&#13;
+## Other changes&#13;
+&#13;
+- The custom item sprites have all been shrunk down to standard present size to allow rendering in mailboxes (thanks, DrKelexo!)&#13;
+- Rank logic has been redone. Generation with random YAMLs now fails at a rate of around 0.3%.&#13;
+- Added location groups for level reaches and mailboxes&#13;
+- Promotions can no longer be awarded for ranking up&#13;
+- The restored unused present sprites will no longer replace the Mystery Present or Bonus Hitops sprites&#13;
+- Randomizer presents are no longer factored into logic (i.e. it assumes you won't open them at all)&#13;
+&#13;
+## Bugfixes&#13;
+ &#13;
+- "Bacon'n eggs" now has the correct name&#13;
+- Fixed "denied" sound not randomizing in sound rando&#13;
+- Fixed an issue that sometimes stopped Big Item checks from awarding items&#13;
+- Fixed a logic issue with reach level checks&#13;
+&#13;
+## Note on filesize&#13;
+&#13;
+The size of the AP world has ballooned because I am now vendoring [unidecode](https://github.com/avian2/unidecode), a Python package for intelligently flattening Unicode text to standard ASCII. This package is used to ensure the mailbox item names are always displayable using the game's limited ASCII subset.</content>
+    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.1"/>
   </entry>
 </feed>

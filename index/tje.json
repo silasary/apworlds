@@ -340,6 +340,20 @@
       "title": "Toejam & Earl AP World v0.5.0",
       "version_simple": "0.5.0",
       "world_version": "0.5.0"
+    },
+    "v0.5.1": {
+      "created_at": "2026-03-13T18:34:01Z",
+      "description": "## Big changes\r\n\r\n- Mailbox checks have been added! Set `mailbox_checks: yes` to enable. While the logic is not super-strict and has a buffer for \"misspending\", it assumes you won't spend any bucks at all on friendly Earthling services, so you may want to enable `free_earthling_services` to reduce the chance of accidentally bricking a seed.\r\n  - Moles will not steal Extra Buck or Jackpot presents if mailbox checks are enabled\r\n  - Mailbox purchase state is saved along with the rest of the save data\r\n- Extra Buck and Jackpot presents can now be made to auto-open on receipt (from other worlds only) by setting `auto_buck_presents: yes`.\r\n- Presentsanity has been added, which makes every present a Mystery Present. Set `presentsanity: yes` to enable.\r\n\r\n## Other changes\r\n\r\n- The custom item sprites have all been shrunk down to standard present size to allow rendering in mailboxes (thanks, DrKelexo!)\r\n- Rank logic has been redone. Generation with random YAMLs now fails at a rate of around 0.3%.\r\n- Added location groups for level reaches and mailboxes\r\n- Promotions can no longer be awarded for ranking up\r\n- The restored unused present sprites will no longer replace the Mystery Present or Bonus Hitops sprites\r\n- Randomizer presents are no longer factored into logic (i.e. it assumes you won't open them at all)\r\n\r\n## Bugfixes\r\n \r\n- \"Bacon'n eggs\" now has the correct name\r\n- Fixed \"denied\" sound not randomizing in sound rando\r\n- Fixed an issue that sometimes stopped Big Item checks from awarding items\r\n- Fixed a logic issue with reach level checks\r\n\r\n## Note on filesize\r\n\r\nThe size of the AP world has ballooned because I am now vendoring [unidecode](https://github.com/avian2/unidecode), a Python package for intelligently flattening Unicode text to standard ASCII. This package is used to ensure the mailbox item names are always displayable using the game's limited ASCII subset.",
+      "download_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.1/tje.apworld",
+      "has_manifest": false,
+      "hash_sha256": "08497573991e0fe16805b80f47f2889846b7f3246af1cc0335f3a41925a5bc72",
+      "html_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.1",
+      "size": 302813,
+      "source_url": "https://api.github.com/repos/IgnisUmbrae/TJE-Archipelago",
+      "tag": "v0.5.1",
+      "title": "Toejam & Earl AP World v0.5.1",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1"
     }
   }
 }

@@ -1,15 +1,19 @@
-# This is an example YAML for ToeJam & Earl, intended as a quickstart.
+# This is an example YAML for ToeJam & Earl, intended as a quickstart using "typical" settings.
 #
 # For a full overview of all of the options, run "Generate Template Options"
 # in the Archipelago Launcher and check /Players/Templates/ToeJam and Earl.yaml.
 name: Bro
 game: ToeJam and Earl
 ToeJam and Earl:
-  game_overs: drop_down
+  # Basic Items/Locations
   islandless: yes
+  map_rando: full_random
+
+  # Auto/bad/trap options
   bad_food: yes
   bad_presents: yes
   auto_bad_presents: no_randomizer
+  auto_buck_presents: yes
   trap_weights:
     cupid: 2
     burp: 2
@@ -18,20 +22,24 @@ ToeJam and Earl:
     skates: 1
     randomizer: 0
   trap_percentage: 3
-  starting_presents: hitops
-  elevator_keys: yes
-  key_gap: 4
+
+  # Extra items/locations
   upwarp_present: yes
   map_reveals: yes
+  elevator_keys: yes
+  key_gap: 4
   max_rank_check: bro
-  rank_rescaling: funk_lord
-  sleep_when_idle: no
-  free_earthling_services: yes
-  present_timers: higher
-  walk_speed: higher
-  map_rando: full_random
-  fast_loads: yes
-  min_items: 12
-  max_items: 20
+  reach_level_checks: yes
+  mailbox_checks: yes
+
+  # Difficulty/QoL
   character: toejam
+  game_overs: drop_down
+  earthling_rando: nice_random
+  earthling_rando_niceness: 7
+  sleep_when_idle: no
+  fast_loads: yes
   expanded_inventory: yes
+
+  # Misc
+  unused_present_sprites: yes

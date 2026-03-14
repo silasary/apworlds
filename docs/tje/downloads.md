@@ -1,9 +1,12 @@
 # ToeJam and Earl
 
 ## Latest
-- <a href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.0/tje.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.1/tje.apworld">Latest Version (0.5.1)</a>
 
 ## All Versions
+
+#### v0.5.1
+- <a href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.1/tje.apworld">https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.1/tje.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.0/tje.apworld">https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.0/tje.apworld</a>
