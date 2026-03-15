@@ -2,165 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-14T18:15:00.177460+00:00</updated>
+  <updated>2026-03-15T00:18:41.042724+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.1.2</id>
-    <title>MetroCUBEvania v0.1.2</title>
-    <updated>2026-03-09T00:24:36+00:00</updated>
-    <author>
-      <name>ap-metrocubevania</name>
-    </author>
-    <content>## What's Changed&#13;
-* Add archipelago.json by @brev95 in https://github.com/ap-metrocubevania/ap-metrocubevania/pull/10&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/ap-metrocubevania/ap-metrocubevania/compare/v_0.1.1...v_0.1.2</content>
-    <link href="https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.2.0_beta.2</id>
-    <title>MetroCUBEvania v0.2.0b2</title>
-    <updated>2026-03-09T00:30:17+00:00</updated>
-    <author>
-      <name>ap-metrocubevania</name>
-    </author>
-    <content>Fix some outstanding bugs.&#13;
-- Client reconnecting when another player connects&#13;
-- Deathlink sending incorrect information&#13;
-- Unable to connect to localhost server&#13;
-- Entering new areas does not send checks&#13;
-&#13;
-## What's Changed&#13;
-* Add archipelago.json by @brev95 in https://github.com/ap-metrocubevania/ap-metrocubevania/pull/10&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/ap-metrocubevania/ap-metrocubevania/compare/v_0.2.0_beta...v_0.2.0_beta.2</content>
-    <link href="https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.2.0_beta.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.19</id>
-    <title>Pokemon Black and White v0.3.19</title>
-    <updated>2026-03-09T02:01:50+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <author>
-      <name>SparkyDaDoggo</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-- Features/QoL:&#13;
-  - Added support for unweighted/weighted lists, `random`, and `random-range-x-y` to `Pokemon Randomization Adjustments`&#13;
-  - Made the Pokémon Fan Club chairman also give the 25+ levels check if shown a pokémon with 50+ levels growth&#13;
-    - Also made the (not modified) 99 levels reward give both the 25+ levels and 50+ levels checks&#13;
-  - Made Running Shoes being enabled right from the start&#13;
-    - This is only temporary, as the Running Shoes will be added as an AP item in a later update&#13;
-  - Made some in-game text related to roadblock items more accessible to new players&#13;
-    - Also added extra dialog for the Dreamyard traffic cone&#13;
-  - Removed the once-per-day limitation of the massage lady in Castelia City&#13;
-&#13;
-- Fixes:&#13;
-  - Fixed using Dig outside of battles (with `season_control` being set to any other than `vanilla`) crashing the game&#13;
-  - Fixed `any_badge` and `any_tm_hm` choices potentially removing incorrect Item instances form the multiworld itempool&#13;
-  - Fixed `any_badge` and `any_tm_hm` choices ignoring local items of other players&#13;
-  - Fixed adding `Consider trades` to `Modify Logic` occasionally leading to generation failures&#13;
-  - Fixed `Route 6 - Item from scientist for all Deerling forms` not having the extended hint if `Dexsanity` is set to 0&#13;
-  - Fixed extended hints being inconsistent with evolutions and trades&#13;
-  - Fixed `Nacrene City - Item from waitress in Café Warehouse` also giving the vanilla item&#13;
-  - Fixed the Aha quiz price locations sometimes being swapped and sometimes also giving the vanilla item&#13;
-  - Fixed sage Ryoku being invisible in Relic Castle B1F castleside if entered before the events in Dragonspiral Tower&#13;
-  - Fixed hidden items (that are normally reappearing) being detected by the Dowsing Machine again immediately&#13;
-    - However, they will still reappear after some time, which won't be fixed in the foreseeable future&#13;
-  - Fixed the evolution items seller in Shopping Mall Nine ending abruptly after selecting "Cancel"&#13;
-&#13;
-- Other stuff:&#13;
-  - Made `Consider trades` require either `Consider evolutions` or wild pokémon being randomized&#13;
-  - Renamed `CasefoldOptionSet` to `ToggleSet` and added QoL stuff to it on the development side&#13;
-  - Renamed multiple modifiers of some OptionSet options (do note that old yamls do **not** break)&#13;
-  - Raised minimum required AP version to 0.6.4&#13;
-  - Added bitmaps of statics and trades for Poptracker&#13;
-&#13;
-## Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
-However, tracking worlds generated before 0.3.19 might show incorrect Dexsanity logic in UT&#13;
-&#13;
-## Notes regarding the `pokemon_bw_without_maps.apworld` file&#13;
-That version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.&#13;
-To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
-It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.19"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.6</id>
-    <title>plateup v0.2.5.6.post2</title>
-    <updated>2026-03-09T11:36:02+00:00</updated>
-    <author>
-      <name>CazIsABoi</name>
-    </author>
-    <content>## What's New?&#13;
-- Added a toggleable money cap — when on, you can't hold more gold than your current cap allows until you find Money Cap Increase items&#13;
-- Added a new option to control how much gold each Money Cap Increase item adds&#13;
-- Added an option to choose whether finding an appliance unlock immediately hands you that appliance, or just adds it to future shops&#13;
-- Added new reroll cost checks tied to your money cap settings&#13;
-- Dining Table is now guaranteed to show up early so you're never stuck without one&#13;
-- Added several missing appliance unlock items that were blocking progression&#13;
-&#13;
-## New YAML Options&#13;
-**`money_cap_enabled`** — Turns on a gold cap mechanic. While active, you can't hold more than your current maximum, which only goes up when you find Money Cap Increase items in the multiworld.&#13;
-&#13;
-**`starting_money_cap`** — Sets your starting gold cap (10–40). You won't be able to hold more than this until you find increases.&#13;
-&#13;
-**`money_cap_increase_amount`** — How much gold each Money Cap Increase item adds to your cap (5–100).&#13;
-&#13;
-**`appliance_unlock_grants_appliance`** — When on, finding an appliance unlock item immediately gives you that appliance to use. When off, it only adds it to future shop rotations.&#13;
-&#13;
-## Note&#13;
-This apworld update is directly tied to the mod update — make sure you&#13;
-update both together for everything to work correctly!&#13;
-[Mod Update 0.2.5.6](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.5.6)</content>
-    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.5.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/tag/2026.03.09</id>
-    <title>Manual_WatchAShow_Chakraa v2026.3.9</title>
-    <updated>2026-03-09T12:54:17+00:00</updated>
-    <author>
-      <name>ChakraaThePanda</name>
-    </author>
-    <content>* ADDED: Possibility to have up to 300 Episodes&#13;
-&#13;
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/compare/2025.09.03...2026.03.09</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/tag/2026.03.09"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.3</id>
-    <title>Stardew Valley v7.4.0</title>
-    <updated>2026-03-09T14:57:36+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Exempt-Medic (Proofreading)</name>
-    </author>
-    <content>- Inverted the order of the locker room key powers, so that they match the position of the doors in the world (Women on the left, Men on the right)&#13;
-- Fixed MultiplayerVision actors accidentally triggering Hatsanity checks&#13;
-- Significantly improved the MultiplayerVision algorithm&#13;
-  - Now Send packets every 0.2 seconds (instead of every 0.7 seconds)&#13;
-  - If immobile since last packet, send it every 2 seconds instead&#13;
-  - If too far to be visible to anyone else, send it every 10 seconds instead (or immediately upon switching maps)&#13;
-  - When drawing other players, let the sprite linger for longer if not receiving packets. From 60 ticks to 1440 ticks, so that they stay visible if they are sending packets at a lower rate (ex: when immobile), and hopefully so they stick around long enough to not blink out of existence on high refresh rate hardware. </content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.3"/>
-  </entry>
   <entry>
     <id>https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/tag/v0.2.4</id>
     <title>Frogmonster v0.2.4</title>
@@ -1083,7 +929,7 @@ Generation version bumped to v10. The client UI remains compatible with previous
   </entry>
   <entry>
     <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.12</id>
-    <title>Tevi v1.4.12</title>
+    <title>Tevi v1.4.12.post2</title>
     <updated>2026-03-14T12:53:18+00:00</updated>
     <author>
       <name>BlackSoulKnight</name>
@@ -1116,5 +962,109 @@ Generation version bumped to v10. The client UI remains compatible with previous
 - [mod] Fixed crash on killing wither skeleton&#13;
 - [apworld] Fixed missing ".apmc" file extension on generation</content>
     <link href="https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.14</id>
+    <title>Archipeladoku v2026.3.14</title>
+    <updated>2026-03-14T18:03:01+00:00</updated>
+    <author>
+      <name>Galdiuz</name>
+    </author>
+    <content/>
+    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.03.14"/>
+  </entry>
+  <entry>
+    <id>https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/tag/0.10.2</id>
+    <title>Pseudoregalia v0.10.2</title>
+    <updated>2026-03-14T18:23:41+00:00</updated>
+    <author>
+      <name>pseudoregalia-modding</name>
+    </author>
+    <content>**IMPORTANT: This release requires a fresh install, even if you have a previous version of the mod installed.**&#13;
+&#13;
+APWorld changes:&#13;
+* Wrote out docs for web host.&#13;
+* Added expert clause: entering tower with Slide and one Cling Shard.&#13;
+&#13;
+Client changes:&#13;
+* Updated the UE4SS dependency.&#13;
+&#13;
+For releases between 0.7.2 and this one, [click here](https://github.com/qwint/pseudoregalia-archipelago/releases).</content>
+    <link href="https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/tag/0.10.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.2</id>
+    <title>ToeJam and Earl v0.5.2</title>
+    <updated>2026-03-14T20:34:02+00:00</updated>
+    <author>
+      <name>IgnisUmbrae</name>
+    </author>
+    <content>## Big changes&#13;
+&#13;
+- New toggleable option: `flat_promotions`, which makes Promotions award a large number of points instead of bumping you up to the next rank. The exact number depends on rank scaling.&#13;
+- New toggleable option: `auto_flat_promotions`, which makes flat Promotions received from other worlds open automatically&#13;
+&#13;
+## Other changes&#13;
+&#13;
+- Presentsanity is now 100% Mystery Presents: it no longer adds extra Promotion presents to the pool, and the starting inventory is now forced to be Mystery Presents&#13;
+- Added aliases for various options for convenience (e.g. "vanilla" and "base" are now interchangeable in option names, amongst other things)&#13;
+- Small adjustments to the timing of the custom text for map reveals/elevator keys to reduce the chance of missing it&#13;
+&#13;
+## Bugfixes&#13;
+&#13;
+- Fixed a logic bug that caused Jackpot and Extra Buck presents to be considered permanently collected</content>
+    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.2</id>
+    <title>Minecraft v2.0.0</title>
+    <updated>2026-03-14T21:30:23+00:00</updated>
+    <author>
+      <name>qixils</name>
+    </author>
+    <author>
+      <name>Seafo</name>
+    </author>
+    <author>
+      <name>cjmang</name>
+    </author>
+    <content>### What's Changed&#13;
+&#13;
+- [mod] Fixed Dragon Egg Shards not being received&#13;
+- [apworld] Fixed client UI not opening</content>
+    <link href="https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.5.2</id>
+    <title>YAYARG v2.5.0</title>
+    <updated>2026-03-14T22:48:15+00:00</updated>
+    <author>
+      <name>Thedrummonger</name>
+    </author>
+    <content>## Yet Another YARG AP V2.5.2&#13;
+&#13;
+### Client Changes&#13;
+- Added a config option to automatically open the connection window on game launch.&#13;
+- Fix an occasional crash when receiving an item while in the Song Library (*hopefully*).&#13;
+&#13;
+### YAML Creator Changes&#13;
+- Added a new **YAML Settings** tab for additional options, including Progression Balancing and Accessibility.&#13;
+- Added a `worst case` value to seed stats. Shows the maximum possible playtime for each pool assuming the longest songs are selected.&#13;
+- Added new options to help trim large song lists to stay under the recommended limits:&#13;
+  - `Remove Unplaceable Songs` removes songs that don’t fit into any pool.&#13;
+  - `Pregenerate Selected Setlist` chooses the smallest random subset of songs needed to generate a seed with your settings.  &#13;
+    - If enabled, you must generate a new YAML for each seed or you will reuse the same setlist every time.  &#13;
+    - **Highly recommended for large multiworlds.**&#13;
+  - It is not recommended to manually edit the YAML after export if either of these options is enabled.&#13;
+- Fix DeathLink and EnergyLink settings not loading from cache.&#13;
+&#13;
+Tested against [YARG nightly b3564](https://github.com/YARC-Official/YARG-Bleedingedge/releases/tag/b3564)&#13;
+***Newer version may be incompatible.***&#13;
+&#13;
+This version is compatible with V2.5.0&#13;
+&#13;
+Setup Guide:&#13;
+https://github.com/Thedrummonger/Archipelago/blob/YARGV2/worlds/yayarg/docs/guide_en.md</content>
+    <link href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.5.2"/>
   </entry>
 </feed>

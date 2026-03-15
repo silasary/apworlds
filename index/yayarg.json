@@ -131,6 +131,21 @@
       "title": "V2.5.1",
       "version_simple": "2.5.0",
       "world_version": "2.5.0"
+    },
+    "V2.5.2": {
+      "created_at": "2026-03-14T22:48:15Z",
+      "description": "## Yet Another YARG AP V2.5.2\r\n\r\n### Client Changes\r\n- Added a config option to automatically open the connection window on game launch.\r\n- Fix an occasional crash when receiving an item while in the Song Library (*hopefully*).\r\n\r\n### YAML Creator Changes\r\n- Added a new **YAML Settings** tab for additional options, including Progression Balancing and Accessibility.\r\n- Added a `worst case` value to seed stats. Shows the maximum possible playtime for each pool assuming the longest songs are selected.\r\n- Added new options to help trim large song lists to stay under the recommended limits:\r\n  - `Remove Unplaceable Songs` removes songs that don\u2019t fit into any pool.\r\n  - `Pregenerate Selected Setlist` chooses the smallest random subset of songs needed to generate a seed with your settings.  \r\n    - If enabled, you must generate a new YAML for each seed or you will reuse the same setlist every time.  \r\n    - **Highly recommended for large multiworlds.**\r\n  - It is not recommended to manually edit the YAML after export if either of these options is enabled.\r\n- Fix DeathLink and EnergyLink settings not loading from cache.\r\n\r\nTested against [YARG nightly b3564](https://github.com/YARC-Official/YARG-Bleedingedge/releases/tag/b3564)\r\n***Newer version may be incompatible.***\r\n\r\nThis version is compatible with V2.5.0\r\n\r\nSetup Guide:\r\nhttps://github.com/Thedrummonger/Archipelago/blob/YARGV2/worlds/yayarg/docs/guide_en.md",
+      "download_url": "https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.2/yayarg.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ded3851fbb7a6b1661117c4e2a07708cb06c4453b4ddff608c56b2993d3af342",
+      "html_url": "https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.5.2",
+      "minimum_ap_version": "0.6.1",
+      "size": 30210,
+      "source_url": "https://api.github.com/repos/Thedrummonger/YargArchipelagoPluginV2",
+      "tag": "V2.5.2",
+      "title": "V2.5.2",
+      "version_simple": "2.5.0",
+      "world_version": "2.5.0"
     }
   }
 }
