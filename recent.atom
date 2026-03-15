@@ -2,31 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-15T06:22:59.079559+00:00</updated>
+  <updated>2026-03-15T12:11:09.770284+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.2.0_beta.3</id>
-    <title>MetroCUBEvania v0.2.0b3</title>
-    <updated>2026-03-10T02:43:29+00:00</updated>
-    <author>
-      <name>ap-metrocubevania</name>
-    </author>
-    <content>**Full Changelog**: https://github.com/ap-metrocubevania/ap-metrocubevania/compare/v_0.2.0_beta.2...v_0.2.0_beta.3</content>
-    <link href="https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.2.0_beta.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.1.3</id>
-    <title>MetroCUBEvania v0.1.3</title>
-    <updated>2026-03-10T02:44:05+00:00</updated>
-    <author>
-      <name>ap-metrocubevania</name>
-    </author>
-    <content>**Full Changelog**: https://github.com/ap-metrocubevania/ap-metrocubevania/compare/v_0.1.2...v_0.1.3</content>
-    <link href="https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.1.3"/>
-  </entry>
   <entry>
     <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.4.3</id>
     <title>Baldur's Gate 3 v0.4.2</title>
@@ -1171,5 +1151,57 @@ High Altitude Badge is currently disabled as a check until further notice</conte
 ## Technical Fixes&#13;
 - Event locations are now sorted before being added to pool, to pass determinism tests (4fd13362b77f94be4b3a0e0397e29c44bbef6d6a)</content>
     <link href="https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GlassToadstool/Archipelago/releases/tag/0.6.0</id>
+    <title>Portal 2 v0.6.0</title>
+    <updated>2026-03-15T08:14:47+00:00</updated>
+    <author>
+      <name>GlassToadstool</name>
+    </author>
+    <content>## Additions&#13;
+- Universal Tracker now yamlless (thanks to James)&#13;
+- Icons now on the individual maps to indicate completed checks of and within maps&#13;
+- Clicking Chapter titles now sends you to the latest incomplete map in the chapter&#13;
+- Added automated testing for future development ease&#13;
+&#13;
+## Bug Fixes&#13;
+- UT now working&#13;
+- Menu generation for empty chapters now works as intended&#13;
+&#13;
+## Note&#13;
+You must use the latest (v0.6.0) version of the [Portal 2 Archipelago Mod](https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.6.0) with this version of the apworld.</content>
+    <link href="https://github.com/GlassToadstool/Archipelago/releases/tag/0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.6.6</id>
+    <title>Casualties: Unknown v0.6.6</title>
+    <updated>2026-03-15T08:59:49+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.6.6&#13;
+This update is NOT compatible with worlds generated on previous versions!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+&#13;
+# Changes&#13;
+- Fixed the text client printing empty lines&#13;
+- Fixed a misspelling in `Moodlesanity - Stimulated` [APWorld Change]&#13;
+- Deathlink messages now add punctuation to the cause if it didn't come with it already&#13;
+- Changed the Depression Trap to say "Mood" instead of "Happiness"&#13;
+- Disfigured Trap is now more violent&#13;
+- Moved some item IDs around [APWorld Change]&#13;
+- Added fillers for each of the crystal shards [APWorld Change]&#13;
+- The APWorld will now fail early if there are more progression items than locations, instead of cascading to a generation fail [APWorld Change]&#13;
+- The APWorld now requires Archipelago 0.6.6 [APWorld Change]&#13;
+&#13;
+# Known Issues&#13;
+Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
+Recipes may sometimes wipe themselves upon reconnection. Getting another recipe item triggers a failsafe that should fix this&#13;
+Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.6.5...v0.6.6</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.6.6"/>
   </entry>
 </feed>
