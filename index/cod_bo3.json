@@ -4,9 +4,15 @@
     "after_dark"
   ],
   "game": "Black Ops 3 - Zombies",
-  "github": "https://github.com/Nyralo/Call-of-Duty-BO3-Zombies-Archipelago",
+  "github": [
+    "https://github.com/Nyralo/Call-of-Duty-BO3-Zombies-Archipelago",
+    "https://github.com/colin969/bo3_archipelago"
+  ],
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.0.1": {
       "created_at": "2024-02-08T16:31:13Z",
@@ -22,6 +28,126 @@
       "title": "0.0.1",
       "version_simple": "0.0.1",
       "world_version": "0.0.1"
+    },
+    "0.1.0": {
+      "created_at": "2026-03-01T22:16:03Z",
+      "description": "Initial release after about 6 weeks of work.\r\n\r\nSee readme for initial feature list and setup instructions",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.1.0/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "67b44e078605a92d10185ffe5e606d7f3361f258d8d43f73126848f845f3ec4e",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.1.0",
+      "minimum_ap_version": "0.6.5",
+      "size": 35801,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.1.0",
+      "title": "Black Ops 3 - Zombies Archipelago 0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "0.1.1": {
+      "created_at": "2026-03-04T23:05:52Z",
+      "description": "Fixes for apworld, no mod changes yet",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.1.1/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9ecb314de7ece754d872f9f42b164101e562fc2877364a25c246a7d0d940ddce",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.1.1",
+      "minimum_ap_version": "0.6.5",
+      "size": 36186,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.1.1",
+      "title": "Black Ops 3 - Zombies Archipelago 0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    },
+    "0.1.2": {
+      "created_at": "2026-03-04T23:05:52Z",
+      "description": "Apworld generator will now adjust round frequency down, round max and goal round upwards to make sure it always has enough locations to fill.\r\n\r\nThe Giant - Fly Trap Quest will be used as an easter egg location if there are no other maps enabled, just to prevent gen failing.\r\n\r\n- Camo and Reticle rando options\r\n- SoE Apothicon Servant can be pack-a-punched  \r\n- Reflex Reticle 39 is the AP logo\r\n- Starting weapon now gets updated with rando settings when map starts\r\n- WIP New ingame menu\r\n- Fix Fly Trap and Skull Room AP checks\r\n- Fix Revelations Apothicon Servant reverting to normal on reload\r\n- Fix Revelations Origins to MotD door not opening when power restored\r\n- Fix subsequent map loads incorrectly thinking data is loaded before it is\r\n- Revelations shard eating is now saved\r\n- Fix Zetsubou Skull Room restoration\r\n- Lots of changes to make the apworld generate with less issues",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.1.2/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "11eabed061d1d0faa81611e54f2a5b555da8e68aaca2951ac210c411a5da1689",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.1.2",
+      "minimum_ap_version": "0.6.5",
+      "size": 36925,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.1.2",
+      "title": "Black Ops 3 - Zombies Archipelago 0.1.2",
+      "version_simple": "0.1.2",
+      "world_version": "0.1.2"
+    },
+    "0.1.3": {
+      "created_at": "2026-03-08T23:11:58Z",
+      "description": "- Part AP items no longer delete the Part Pickup trigger, so pickup checks are now still required by the player\r\n- Part Pickup checks no longer trigger the UI flash or voice lines.\r\n- Prevent temporary perks being saved and restored, also fixes weird perk limit conditions after restoring\r\n- Fix 'Clear Save Data'\r\n- Clear Save Data now ends the game fully instead of doing a fast restart\r\n- Fix 'Reset Summoning Key' getting stuck in a loop until you restarted the game\r\n- Fix the Summoning Key being incorrectly saved to your hero weapon slot if you save during the summoning key step\r\n- After a Revelations restore where the summoning key step is complete, delete the extra pickup trigger to prevent you escaping the boss arena and causing a potential crash\r\n- Fix Zetsubou missing perk and wallbuy items during generation\r\n- WIP Archipelago Shop can be spawned with `/ap_spawn_shop 1`",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.1.3/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1987a1218edbcba3c1c864536995edd7d5d4ba60f211463c0e2bb186c94a3323",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.1.3",
+      "minimum_ap_version": "0.6.5",
+      "size": 36932,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.1.3",
+      "title": "Black Ops 3 - Zombies Archipelago 0.1.3",
+      "version_simple": "0.1.3",
+      "world_version": "0.1.3"
+    },
+    "0.2.0": {
+      "created_at": "2026-03-13T19:27:08Z",
+      "description": "- Archipelago Shop\r\n  - Placed near the starting area on each map, you can cash in tokens for random mega gobblegums\r\n- Shadows of Evil save improvements:\r\n  - Smashables\r\n  - Sword quest level 1 complete. Place egg into sword rock to retrieve\r\n  - Sword quest level 2 complete. After pap ritual, place egg into sword rock to retrieve\r\n  - Fumigator\r\n  - Sword weapon is no longer restored and must be retrieved via the routes described above, for technical reasons\r\n- Der Eisendrache save improvements:\r\n  - Storm and Wolf bows will save up until the arrow can be repaired\r\n  - Bow restoration is per-player, a connecting player will restore a quest they started previously\r\n  - Channelling stone step will not restore until all starting players have spawned, to make sure their bow requirements work\r\n- New AP items:\r\n  - Progressive - Starting Points - 5x 500 by default, awarded per player, per map. These will be awarded again if map save data is cleared\r\n  - Shop - Gum Tokens\r\n    - 3x Mega, 2x Rare and 1x Legendary by default. Same rules as starting points progressive above\r\n    - This will probably go through balance changes\r\n- Max Ammo now restores weapon clip (BO4 behaviour)\r\n- Carpenter now restores shield health when points are awarded (BO4 behaviour)\r\n- Stamin-Up now gives unlimited sprint\r\n- Gorod Dragonride parts can now be randomized (default off)\r\n- Non-randomized shield parts now lock their ap item to their ap location\r\n- Disconnected players are no longer cleared from save data\r\n- Reconnecting players will now resume from their last available save data\r\n- Fix craftables without an ap location not despawning their items on pickup\r\n- Shadows of Evil part pickups will no longer break the map state\r\n- Shadows of Evil ritual triggers will properly be blocked off\r\n- Prevent death machine from being saved to player loadouts\r\n\r\n**Co-op disclaimer:** Whilst efforts are being made to support co-op, it may still be unstable.",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.2.0/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "eca5ded2d1789019d6b4793393f657ce88af23bc2e24b99112e78075b8f46267",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.2.0",
+      "minimum_ap_version": "0.6.5",
+      "size": 38020,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.2.0",
+      "title": "Black Ops 3 - Zombies Archipelago 0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "0.2.1": {
+      "created_at": "2026-03-13T22:15:21Z",
+      "description": "Hotfix:\r\n- Fix crash to desktop when saving round and a player hasn't used a gobblegum\r\n- Fix bad name comparison when preventing saving with death machine\r\n- Fix error in waiting for elements to be processed before restoring channelling stone step",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.2.1/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "eca5ded2d1789019d6b4793393f657ce88af23bc2e24b99112e78075b8f46267",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.2.1",
+      "minimum_ap_version": "0.6.5",
+      "size": 38020,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.2.1",
+      "title": "Black Ops 3 - Zombies Archipelago 0.2.1",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "0.2.2": {
+      "created_at": "2026-03-14T15:23:28Z",
+      "description": "Hotfix 2\r\n- Reverted pickup changes from 0.1.3 due to map state issues. You'll now receive checks for AP awarded items again.\r\n- Gorod Dragonride Part Pickups now award both a check and the part again\r\n- Fix checkpoints failing to save if on a map that uses kvals in its save state\r\n- Fix an infinite loop after firing a projectile weapon after you've finished the storm bow quest when you've restored with the beacons already charged\r\n- Fix AP craftable parts not being awarded on some maps\r\n- Fix issue preventing host from restoring more than 1 bow\r\n- Fix beacons lit state not restoring on Der Eisendrache causing Storm Bow restore to stall\r\n- Fix server crash where 2 bows restore functions would act on the same frame\r\n- Fix disconnected player data not being checkpointed\r\n- Fix unsafe player states wiping existing player data when saving\r\n- Fix everyone except the host being given Anywhere But Here in ZNS\r\n\r\n**Note:** Gens on 0.2.0 and 0.2.1 using \"Randomized Gorod Dragonride Parts\" can prevent groph pod parts spawning. You must manually award all 3 items via the AP admin console instead.",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.2.2/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7a83eae6afe0d50fd1a109e6946055d186ba09159ebff2c08c64e41089d155c3",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.2.2",
+      "minimum_ap_version": "0.6.5",
+      "size": 38007,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.2.2",
+      "title": "Black Ops 3 - Zombies Archipelago 0.2.2",
+      "version_simple": "0.2.2",
+      "world_version": "0.2.2"
+    },
+    "0.2.3": {
+      "created_at": "2026-03-15T12:18:20Z",
+      "description": "Hotfix 3\r\n\r\n- Improve AP item processing speed by up to 10x\r\n- Fix location notifications showing more than once\r\n- Fix player data not being properly restored when loading a checkpoint\r\n- Fix universal player data polluting different AP seeds when changing seed without restarting the game first\r\n\r\nUnless anything major comes up, this will be the last hotfix until another map is added.",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.2.3/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1acc87553bc9f51dc9deb59d743557512ed772d4ff27a06a307e93a729609afe",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.2.3",
+      "minimum_ap_version": "0.6.5",
+      "size": 38007,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.2.3",
+      "title": "Black Ops 3 - Zombies Archipelago 0.2.3",
+      "version_simple": "0.2.3",
+      "world_version": "0.2.3"
     }
   }
 }

@@ -1,0 +1,29 @@
+{
+  "authors": [
+    "ToxicFrog"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "",
+  "github": "https://github.com/ToxicFrog/doom-mods",
+  "manifest_fields": [
+    "authors"
+  ],
+  "versions": {
+    "gzap-0.8.0": {
+      "created_at": "2026-03-01T19:50:01Z",
+      "description": "# 0.8.0\r\n\r\nPreviously GZArchipelago; the name change reflects the fact that all development and testing has moved to UZDoom, although GZDoom is expected to remain compatible for some time.\r\n\r\nThis is a feature release. (It was meant to be a bugfix release but it got away\r\nfrom me.) The focus is primarily on the out-of-the-box experience, with better\r\ndefault yaml options and better documentation.\r\n\r\n\u26a0\ufe0f YAML options have changed. You must regenerate your YAML templates.\r\n\r\n\ud83d\udec8 Secret locations are now off by default. If you enjoy secret hunting, remember\r\nto turn them back on in the yaml.\r\n\r\n\u26a0\ufe0f The apworld has been renamed from `gzdoom.apworld` to `uzdoom.apworld`, to\r\nreflect the fact that all development and testing has moved to UZDoom. Please\r\ndelete your old `gzdoom.apworld`.\r\n\r\n\ud83d\udec8 Existing logic and tuning remains compatible, but re-scanning your wads will\r\nadd new information to the logic file which is used to produce better item names\r\nin some cases.\r\n\r\n- New:\r\n  - New graphics for checks that still exist in the world but have no items in\r\n    them (e.g. because of quickload or `!collect`).\r\n  - `pink`, `gold`, and `silver` are now recognized key colours.\r\n  - The `GZAPRC` lump can now define tags (user-facing names) for actors that\r\n    don't have tags in the WAD. This is used to rename some builtin actors (e.g.\r\n    `RedCard` -> `Red Keycard`).\r\n  - Tuning for `Freedoom 2`, by ZAPaDASH04.\r\n- Changed:\r\n  - Complete overhaul of the setup documentation, including screenshotted\r\n    instructions for setting up DoomRunner and an updated support table.\r\n  - Level accesses are now named (e.g.) `MAP01: Entryway` in wads where map names\r\n    are available.\r\n  - New item categories `ap_progression`, `ap_useful`, `ap_trap`.\r\n  - Changes to default yaml settings:\r\n    - `included_levels` now defaults to all maps in the WAD.\r\n    - `starting_levels` contains all episode-start maps. Documentation includes\r\n      a wad-specific recommendation for alternate starting maps for solo play.\r\n    - `start_with_keys` is now off by default if the WAD has tuning data.\r\n    - `start_with_keys` is now forced off for WADs using hub logic, as turning it\r\n      on will start you with all the keys for the entire episode.\r\n    - `level_order_bias` is now properly ignored for WADs using hub logic.\r\n    - `included_item_categories` now excludes secrets and items in secrets by\r\n      default.\r\n    - `max_weapon_copies` is now automatically set based on how many maps are in\r\n      the wad.\r\n  - `win_conditions` setting split into `win_map_count` and `win_map_names`.\r\n  - `excluded_levels` setting removed. Delete entries from `included_levels` instead.\r\n  - `levels_per_weapon` setting removed. Adjust `max_weapon_copies` instead.\r\n  - WebWorld removed. If this ever gets merged into mainline AP it can be\r\n    reinstated with the new documentation.\r\n- Fixed:\r\n  - In-level check count could diverge significantly from the real check count.\r\n  - UT did not work properly with non-default `included_item_categories`.\r\n  - UT indicators in-game did not work reliably.\r\n  - Signed/unsigned comparison warning at load time.\r\n  - Documentation now correctly tells the player to start the game and connect\r\n    to the client *before* connecting to the host.\r\n  - WAD-specific apworlds with logic split across multiple files did not load\r\n    correctly.\r\n  - Errors in the logic for Faithless episode 2.\r\n  - Checks with a TID associated with them will now clear the TID on collect,\r\n    allowing scripts that check for the item disappearing (e.g. Adventures of\r\n    Square's fizzopop vendors) to function properly.\r\n  - Some maps in `Legacy of Rust` and `Space Cats Saga` were incorrectly marked\r\n    as starting maps.\r\n  - Errors loading the logic cache are now treated as cache misses rather than\r\n    crashing the apworld.\r\n  - MAP14 is excluded from `Legacy of Rust` due to functionality errors.\r\n  - The scanner is now better at guessing rank information for secret levels.\r\n    Logic for several wads has been updated accordingly.\r\n  - Unreachable checks are now dropped from generation before AP sees them, so\r\n    they don't count towards the world's total check count and thus don't\r\n    affect hint cost calculations.\r\n- For logic developers:\r\n  - Tuning files support `item` prerequisites, so you can say \"this is not in\r\n    logic until the player has found this specific item\". Unlike `key` this\r\n    works for any item in the game, and you can specify how many are needed.\r\n    Note however that this will only function correctly if at least one of the\r\n    item in question is randomized; if it's not in `included_item_categories`\r\n    generation will fail.\r\n  - New item categories `ap_skip_balancing`, `ap_deprioritized`.\r\n\r\n",
+      "download_url": "https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.8.0/uzdoom.apworld",
+      "has_manifest": true,
+      "hash_sha256": "67fcc8388fc6590c7f6ad4f963553c12e9455a1f87c59a45dc436478255036de",
+      "html_url": "https://github.com/ToxicFrog/doom-mods/releases/tag/gzap-0.8.0",
+      "size": 64203,
+      "source_url": "https://api.github.com/repos/ToxicFrog/doom-mods",
+      "tag": "gzap-0.8.0",
+      "title": "UZArchipelago 0.8.0",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0"
+    }
+  }
+}

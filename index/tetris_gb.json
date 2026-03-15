@@ -1,0 +1,52 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": "",
+  "github": "https://github.com/Alchav/Archipelago",
+  "manifest_fields": [],
+  "versions": {
+    "tetris-0.0.1": {
+      "created_at": "2026-03-01T01:47:13Z",
+      "description": "First release.\r\n\r\nSee game info and setup pages:\r\n\r\n- https://github.com/Alchav/Archipelago/blob/tetris-gb/worlds/tetris_gb/docs/en_Tetris.md\r\n- https://github.com/Alchav/Archipelago/blob/tetris-gb/worlds/tetris_gb/docs/setup_en.md\r\n\r\nNote in particular that no patch file is created, you will connect a vanilla Tetris ROM to Bizhawk Client.",
+      "download_url": "https://github.com/Alchav/Archipelago/releases/download/tetris-0.0.1/tetris_gb.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f0320457482a00ea144416747d73faa4bba309282abd050d2ba4c3c74318f8e6",
+      "html_url": "https://github.com/Alchav/Archipelago/releases/tag/tetris-0.0.1",
+      "size": 12345,
+      "source_url": "https://api.github.com/repos/Alchav/Archipelago",
+      "tag": "tetris-0.0.1",
+      "title": "Tetris (Gameboy) v0.0.1",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "tetris-0.1.0-real": {
+      "created_at": "2026-03-02T17:00:41Z",
+      "description": "- Clear Random Row renamed to Clear Random Line.\r\n- New options to control how many garbage lines and line clear items can trigger at once. Limit 4 for each. \r\n- Only up to 4 lines can clear at once. It is possible to have full lines fail to clear if you fill out lines in-game at the same time Clear Random Line items are triggering. They will clear next time you connect a piece. This fixes issues with getting strange score amounts when clearing more than 4 lines.\r\n  - Hopefully these changes prevent crashes I've seen when large amounts of items have been received at once when other players have released.\r\n- New option to have garbage lines and line clears cancel each other out if they are received and queued simultaneously.\r\n- Documentation updated to mention that garbage lines spawning also dispel illusions.\r\n- Score Multiplier cap raised to 250. If there is not room in the item pool for all Score Multiplier items, they may be condensed into new Score Multiplier x2 or Score Multiplier x3 items.\r\n\r\nSee game info and setup pages:\r\n- https://github.com/Alchav/Archipelago/blob/tetris-gb/worlds/tetris_gb/docs/en_Tetris.md\r\n- https://github.com/Alchav/Archipelago/blob/tetris-gb/worlds/tetris_gb/docs/setup_en.md",
+      "download_url": "https://github.com/Alchav/Archipelago/releases/download/tetris-0.1.0-real/tetris_gb.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9bc6b1d7c407e3ee914d515b5bfe62904a914f8d9eee3ea1d9c279bd7e1dfbe0",
+      "html_url": "https://github.com/Alchav/Archipelago/releases/tag/tetris-0.1.0-real",
+      "size": 13351,
+      "source_url": "https://api.github.com/repos/Alchav/Archipelago",
+      "tag": "tetris-0.1.0-real",
+      "title": "Tetris (Gameboy) v0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0.post0"
+    },
+    "tetris-0.1.1": {
+      "created_at": "2026-03-05T12:19:59Z",
+      "description": "- Scoring a Tetris once again actually gives you score!\r\n- Instantly Lock Active Piece trap actually works!\r\n- Score Multiplier will show a 0 for the middle digit instead of a blank space when you have between 100 and 109 multipliers!\r\n\r\nSee game info and setup pages:\r\n\r\n    https://github.com/Alchav/Archipelago/blob/tetris-gb/worlds/tetris_gb/docs/en_Tetris.md\r\n    https://github.com/Alchav/Archipelago/blob/tetris-gb/worlds/tetris_gb/docs/setup_en.md\r\n",
+      "download_url": "https://github.com/Alchav/Archipelago/releases/download/tetris-0.1.1/tetris_gb.apworld",
+      "has_manifest": true,
+      "hash_sha256": "64a654ddd14088f32e22e8107e06aa5c3f176ec980b5fe35a4e2b799ab0fe2ab",
+      "html_url": "https://github.com/Alchav/Archipelago/releases/tag/tetris-0.1.1",
+      "size": 13272,
+      "source_url": "https://api.github.com/repos/Alchav/Archipelago",
+      "tag": "tetris-0.1.1",
+      "title": "Tetris (Gameboy) v0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    }
+  }
+}
