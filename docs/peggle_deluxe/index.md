@@ -6,7 +6,7 @@ levels that reward precision and creative shot-making.
 
 
 ## Downloads
-- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.1.1/peggle_deluxe.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.1.2/peggle_deluxe.apworld">Latest Version (1.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

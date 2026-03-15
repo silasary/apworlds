@@ -1,9 +1,99 @@
 # Total War Warhammer 3
 
 ## Latest
-- <a href="https://github.com/SinthorasRage/Archipelago_TWW3/releases/download/Beta_0.1.5_new_options_and_fixes/tww3.apworld">Latest Version (0.1.5)</a>
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.9/tww3.apworld">Latest Version (0.8.9)</a>
 
 ## All Versions
+
+#### v0.8.9
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.9/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.9/tww3.apworld</a>
+
+#### v0.8.8
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.8/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.8/tww3.apworld</a>
+
+#### v0.8.7
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.7/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.7/tww3.apworld</a>
+
+#### v0.8.4
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.4/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.4/tww3.apworld</a>
+
+#### v0.8.4
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.5/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.5/tww3.apworld</a>
+
+#### v0.8.4
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.6/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.6/tww3.apworld</a>
+
+#### v0.8.3
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.3/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.3/tww3.apworld</a>
+
+#### v0.8.2
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.2/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.2/tww3.apworld</a>
+
+#### v0.8.1
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.1/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.1/tww3.apworld</a>
+
+#### v0.8.0
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.0/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.8.0/tww3.apworld</a>
+
+#### v0.7.0
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.7.0/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.7.0/tww3.apworld</a>
+
+#### v0.6.17
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.17/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.17/tww3.apworld</a>
+
+#### v0.6.16
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.16/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.16/tww3.apworld</a>
+
+#### v0.6.15
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.15/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.15/tww3.apworld</a>
+
+#### v0.6.14
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.14/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.14/tww3.apworld</a>
+
+#### v0.6.13
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.13/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.13/tww3.apworld</a>
+
+#### v0.6.12
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.12/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.12/tww3.apworld</a>
+
+#### v0.6.11
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.11/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.11/tww3.apworld</a>
+
+#### v0.6.8
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.10/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.10/tww3.apworld</a>
+
+#### v0.6.8
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.8/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.8/tww3.apworld</a>
+
+#### v0.6.8
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.9/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.9/tww3.apworld</a>
+
+#### v0.6.7
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.7/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.7/tww3.apworld</a>
+
+#### v0.6.6
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.6/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.6/tww3.apworld</a>
+
+#### v0.6.5
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.5/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.5/tww3.apworld</a>
+
+#### v0.6.4
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.4/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.4/tww3.apworld</a>
+
+#### v0.6.3
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.3/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.3/tww3.apworld</a>
+
+#### v0.6.2
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.2/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.2/tww3.apworld</a>
+
+#### v0.6.1
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.1/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.1/tww3.apworld</a>
+
+#### v0.6.0
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.0/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.6.0/tww3.apworld</a>
+
+#### v0.5.0
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.5.0/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.5.0/tww3.apworld</a>
 
 #### v0.1.5
 - <a href="https://github.com/SinthorasRage/Archipelago_TWW3/releases/download/Beta_0.1.5_new_options_and_fixes/tww3.apworld">https://github.com/SinthorasRage/Archipelago_TWW3/releases/download/Beta_0.1.5_new_options_and_fixes/tww3.apworld</a>

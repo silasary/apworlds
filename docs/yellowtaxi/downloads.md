@@ -1,0 +1,22 @@
+# 
+
+## Latest
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/v0.2.0/yellowtaxi.apworld">Latest Version (0.2.0)</a>
+
+## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/v0.2.0/yellowtaxi.apworld">https://github.com/soopercool101/Archipelago/releases/download/v0.2.0/yellowtaxi.apworld</a>
+
+#### v0.1.3
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/v0.1.3/yellowtaxi.apworld">https://github.com/soopercool101/Archipelago/releases/download/v0.1.3/yellowtaxi.apworld</a>
+
+#### v0.1.2
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/v0.1.2/yellowtaxi.apworld">https://github.com/soopercool101/Archipelago/releases/download/v0.1.2/yellowtaxi.apworld</a>
+
+#### v0.1.1
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/v0.1.1/yellowtaxi.apworld">https://github.com/soopercool101/Archipelago/releases/download/v0.1.1/yellowtaxi.apworld</a>
+
+#### v0.1.0
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/v0.1.0/yellowtaxi.apworld">https://github.com/soopercool101/Archipelago/releases/download/v0.1.0/yellowtaxi.apworld</a>
+
