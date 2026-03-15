@@ -18,10 +18,10 @@
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld</a>
 
 #### v2.0.0
-- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.2/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.2/minecraft.apworld</a>
+- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld</a>
 
 #### v2.0.0
-- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld</a>
+- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.2/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.2/minecraft.apworld</a>
 
 #### v0.1.7
 - <a href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.1.7_hotfix/minecraft.apworld">https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.1.7_hotfix/minecraft.apworld</a>

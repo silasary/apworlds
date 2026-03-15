@@ -4,7 +4,7 @@ PEAK is a multiplayer climbing game where you and your friends must reach the su
 
 
 ## Downloads
-- <a href="https://github.com/Mickemoose/peak-archipelago/releases/download/0.5.8/peak.apworld">Latest Version (0.5.8)</a>
+- <a href="https://github.com/Mickemoose/peak-archipelago/releases/download/0.5.9.rc-1/peak.apworld">Latest Version (0.5.9rc1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

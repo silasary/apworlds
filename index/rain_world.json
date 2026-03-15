@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "alphappy, SaltySyrup"
+  ],
   "description": "You are a nomadic slugcat, both predator and prey in a broken ecosystem. Grab your spear and brave the\nindustrial wastes, hunting enough food to survive, but be wary\u2014 other, bigger creatures have the same plan...\nand slugcats look delicious.",
   "game": "Rain World",
   "github": "https://github.com/alphappy/ArchipelagoRW",
@@ -189,6 +192,20 @@
       "title": "v1.5.0",
       "version_simple": "1.5.0",
       "world_version": "1.5.0.post2"
+    },
+    "v1.5.1": {
+      "created_at": "2026-03-15T04:33:42Z",
+      "description": "# See [the setup page](https://github.com/alphappy/ArchipelagoRW/blob/v1.5.0/worlds/rain_world/docs/setup_en.md) for instructions.\r\n# This release is intended to be used with [v1.5.3 of the client](https://github.com/SaltiestSyrup/RWRandomizer/releases/tag/v1.5.3).\r\n# Scroll down to Assets to find the player YAML templates and the .apworld.\r\n\r\n## Player YAML Settings\r\n- Added Pearl, Gooieduck, and Beehive filler items (4f4973a4d26d38b27a127e636ff172db3e947d8f)\r\n- Added Responsibility, Ripple Spawn, and Blizzard Lizard trap items (b776627c7813dba3962b9e7ea4d40e1766fde2e1)\r\n\r\n## Logic Changes / Fixes \r\n- Pomegranates are now considered a valid vegetarian food for Monk access calculations (33b49113c732e1a9b9b1a3962d5d80f5928c580e)\r\n- The Scholar passage will now check for access to three regions containing pearls (2edfe48f82f4d4dc605b881142e6df4f66f35f80)\r\n- It is now considered possible to travel backwards from Survivor spawn to Outskirts filtration as Saint or with any explosive jump (63ab7d25255456b3a8f7c4e3544f7371a5bef76b)\r\n- The flower in WSKD_B40 now requires some vertical mobility to be in logic (1c8533c09239bd443039a6c6f4a9731c12bea146)\r\n- Bitter Aerie checks will now generate for Saint (2a90d7f61ce9039b927338053c0b34643c2eaad6)\r\n- Inv is now considered able to achieve the Mother passage (35efd0994d5f89c5b15ac6f1197ca55531955f5e)\r\n\r\n## Generation Fixes\r\n- Fix inaccuracies in logic determining which regions are valid starts (bc81c9ceaeca2a4589d114e11036b6b4f1931003)\r\n- Fix area above LttM being in logic for Rivulet when Submerged Superstructure is disabled (d033b83a425b1016bc3b49bb4b73879d288d2ecb)\r\n- Survivor and Monk no longer expected to complete \"Red Centipede / Aquapede\" food quest when Submerged Superstructure is disabled, as the only normal spawn in these campaigns is the aquapede near the gate (d033b83a425b1016bc3b49bb4b73879d288d2ecb)\r\n- Watcher is no longer expected to complete \"Red Centipede / Aquapede\" food quest when rotted region checks are disabled, as the only normal spawn is in Infested Wastes (d033b83a425b1016bc3b49bb4b73879d288d2ecb)\r\n- Phony warp checks in Ancient Urban removed, added a Spinning Top location in their place (b418a9371cc64b2cabbeb1977fdebb5637861229)\r\n- `passage_priority` option was previously completely non-functional, it now works as described (6865adabef347570ebeba7d0d0aa779e67156b0d)\r\n- Saint's non-existing \"Exterior to Shoreline\" gate has had the item removed (2a90d7f61ce9039b927338053c0b34643c2eaad6)\r\n\r\n## Technical Fixes\r\n- Event locations are now sorted before being added to pool, to pass determinism tests (4fd13362b77f94be4b3a0e0397e29c44bbef6d6a)",
+      "download_url": "https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.1/rain_world.apworld",
+      "has_manifest": true,
+      "hash_sha256": "94af8493ce67724953aef5cb3b7916d221ac4a62f9fba9eb850aa2432a0eb868",
+      "html_url": "https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.5.1",
+      "size": 178536,
+      "source_url": "https://api.github.com/repos/alphappy/ArchipelagoRW",
+      "tag": "v1.5.1",
+      "title": "v1.5.1",
+      "version_simple": "1.5.1",
+      "world_version": "1.5.1"
     }
   }
 }
