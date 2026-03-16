@@ -1,6 +1,10 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 1.0.2
+
+- Fixed goal potentially not being sent if deconnected from the server at least once
+
 ## 1.0.1
 
 - Fixed goal only being sent after reconnecting the client to the server

@@ -32,6 +32,15 @@
 #### v15.2b2
 - <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta2/openttd.apworld">https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta2/openttd.apworld</a>
 
+#### v1.2.4
+- <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v1.2.4/openttd.apworld">https://github.com/solida1987/openttd-archipelago/releases/download/v1.2.4/openttd.apworld</a>
+
+#### v1.2.3
+- <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v1.2.3/openttd.apworld">https://github.com/solida1987/openttd-archipelago/releases/download/v1.2.3/openttd.apworld</a>
+
+#### v1.2.2
+- <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v1.2.2/openttd.apworld">https://github.com/solida1987/openttd-archipelago/releases/download/v1.2.2/openttd.apworld</a>
+
 #### v1.2.1
 - <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v1.2.1/openttd.apworld">https://github.com/solida1987/openttd-archipelago/releases/download/v1.2.1/openttd.apworld</a>
 
