@@ -23,6 +23,9 @@
 #### v1.5.0
 - <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.5.0-PR6/grinch.apworld">https://github.com/MarioSpore/Grinch-AP/releases/download/v1.5.0-PR6/grinch.apworld</a>
 
+#### v1.5.0
+- <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.5.0-PR7/grinch.apworld">https://github.com/MarioSpore/Grinch-AP/releases/download/v1.5.0-PR7/grinch.apworld</a>
+
 #### v1.4.0
 - <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.4.0/grinch.apworld">https://github.com/MarioSpore/Grinch-AP/releases/download/v1.4.0/grinch.apworld</a>
 

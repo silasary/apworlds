@@ -28,16 +28,18 @@ Your YAML file contains a set of configuration options which provide the generat
 generate your game. Each player of a multiworld will provide their own YAML file. This setup allows each player to enjoy
 an experience customized for their taste, and different players in the same multiworld can all have different options.
 
-### Where do I get a YAML file?
+[//]: # ()
+[//]: # (### Where do I get a YAML file?)
 
-You can generate a yaml or download a template by visiting the [Tetris Player Options Page](/games/Tetris/player-options)
+[//]: # ()
+[//]: # (You can generate a yaml or download a template by visiting the [Tetris Player Options Page]&#40;/games/Tetris/player-options&#41;)
 
 ## Joining a MultiWorld Game
 
 ### Generating a Game, Patching, andConnecting to the Multiserver
 
 1. Create your options file (YAML).
-2. Follow the general Archipelago instructions for [generating a game](/tutorial/Archipelago/setup_en#generating-a-game).
+2. Follow the general Archipelago instructions for [generating a game](https://archipelago.gg/tutorial/Archipelago/setup_en#generating-a-game).
 3. Tetris uses Archipelago's BizHawk Client. You can open `ArchipelagoBizhawkClient.exe` or launch it from the Launcher.
 4. Ensure EmuHawk is running the patched ROM.
 5. In EmuHawk, go to `Tools > Lua Console`. This window must stay open while playing.
