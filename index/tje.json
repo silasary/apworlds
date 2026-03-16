@@ -368,6 +368,20 @@
       "title": "Toejam & Earl AP World v0.5.2",
       "version_simple": "0.5.2",
       "world_version": "0.5.2"
+    },
+    "v0.5.3": {
+      "created_at": "2026-03-15T21:06:09Z",
+      "description": "## Small changes\r\n\r\n- Item links are now supported\r\n- Promotion logic has been simplified and now assumes the player will use every Promotion present in an \"average\" way. This greatly reduces generation failures while minimally affecting actual games.\r\n- Promotions are now twice as common if `flat_promotions` is enabled, to reflect their reduced point value\r\n- Extra Promotion presents are now only added to the item pool in the minimum quantity required to reach all rank checks\r\n- Balanced map exploration point assumptions based on Fixed World\r\n\r\n## Bugfixes\r\n\r\n- Fixed several overflow errors caused by having flat promotions in worlds with extremely low/high `max_level` and/or `max_rank_check`\r\n- Fixed division by zero error when rank checks were disabled with certain combinations of options\r\n- Removed nonexistent and unused \"Level 1 Mailbox\" locations from location groups\r\n- Actually fixed the error in logic which caused buck and point items to stay collected forever\r\n- Fixed a bug in multiworlds with multiple TJ&E instances that could cause Unfall presents to appear less frequently than they should\r\n- Various bits of AP testing compliance",
+      "download_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.3/tje.apworld",
+      "has_manifest": false,
+      "hash_sha256": "50f2d0eebd65491204b6511afe4cf592b2ae7aed1bf66181ae41dd585c38c8ea",
+      "html_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.3",
+      "size": 307939,
+      "source_url": "https://api.github.com/repos/IgnisUmbrae/TJE-Archipelago",
+      "tag": "v0.5.3",
+      "title": "Toejam & Earl AP World v0.5.3",
+      "version_simple": "0.5.3",
+      "world_version": "0.5.3"
     }
   }
 }

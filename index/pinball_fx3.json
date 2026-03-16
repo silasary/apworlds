@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "SerpentAI"
+  ],
   "description": "Pinball FX3 delivers fast, physics-driven pinball action with meticulously crafted tables inspired by iconic\nfranchises and original designs. With competitive modes, online tournaments, and razor-sharp controls, it turns\nclassic pinball into a modern skill-based challenge.",
   "flags": [],
   "game": "Pinball FX3",
@@ -68,6 +71,21 @@
       "title": "Pinball FX3 - 1.1.1",
       "version_simple": "1.1.1",
       "world_version": "1.1.1.post2"
+    },
+    "pinballfx3-v1.1.1r3": {
+      "created_at": "2026-02-10T11:31:11Z",
+      "description": "This is a minor bugfix / improvement release.\r\n\r\n**Improvement:** Removed the need to use the `/pinball` command. The client will now automatically detect the Pinball FX3 process as needed\r\n**Improvement:** Any further client or game controller crashes will now spam their tracebacks in the Archipelago tab of the client to make it simpler to report issues\r\n\r\n**Fix:** Addressed a silent client crash where it would try to act on an invalid challenge type value in memory\r\n**Fix:** Corrected the options YAML still stating 10 pinball tables being required, when the minimum has been changed to 6\r\n\r\n**Link to the previous release:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/pinballfx3-v1.1.0)\r\n**Link to the original release, with README:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/pinballfx3-v1.0.0)",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/pinballfx3-v1.1.1/pinball_fx3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2ab1379f0e43fa44e8c2af6117d17a94ddbeb7d55988a922844f09335afdc128",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/pinballfx3-v1.1.1",
+      "minimum_ap_version": "0.6.5",
+      "size": 1989320,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "pinballfx3-v1.1.1r3",
+      "title": "Pinball FX3 - 1.1.1",
+      "version_simple": "1.1.1",
+      "world_version": "1.1.1.post3"
     }
   }
 }

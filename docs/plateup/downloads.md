@@ -35,6 +35,9 @@
 #### v0.2.5.1
 - <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.1/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.2.5.1/plateup.apworld</a>
 
+#### v0.2.5
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.6.0/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.2.6.0/plateup.apworld</a>
+
 #### v0.2.4.3
 - <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.2.4.3/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.2.4.3/plateup.apworld</a>
 

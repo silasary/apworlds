@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "SerpentAI"
+  ],
   "description": "Peggle Nights expands the pachinko-inspired formula with a nocturnal theme, introducing new challenges that take\nplace within the dreamscapes of the Peggle Masters. Featuring a new Master, Marina, and her electricity-based\npower-up, the game offers additional levels and trials that demand refined skill and tactical shot-planning.",
   "flags": [],
   "game": "Peggle Nights",
@@ -53,6 +56,21 @@
       "title": "Peggle Nights - 1.0.1",
       "version_simple": "1.0.1",
       "world_version": "1.0.1.post2"
+    },
+    "peggle-nights-v1.0.2": {
+      "created_at": "2026-03-15T18:06:51Z",
+      "description": "This is a minor bugfix / improvement release that is likely to be the _final release_ for this game. I do not intend to work on it further.\r\n\r\n**This release is NOT compatible with games generated on prior versions since item / location names have been altered**\r\n\r\n**Fix:** Removed square bracket notation in item / location names referring to levels. While square brackets are not disallowed for these names, a handful of other Archipelago implementations do not handle them correctly, all the way to fully crashing / not working at all. Let's aim for maximum compatibility even if Peggle isn't in the wrong here.\r\n\r\n**WARNING: This change will INVALIDATE any existing YAML as the `level_selection` option used to contain those square brackets. You can either remove the square brackets manually or copy / paste the option from the new template YAML and set the values according to your preferences**\r\n\r\n**Tweak:** `Target Score (High)` can now be sent out-of-logic (i.e. without having 4 Progressive Fever Meter items)\r\n\r\n**Link to the previous release:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v1.0.1)\r\n**Link to the original release, with README:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v1.0.0)",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.0.2/peggle_nights.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0c5134ec822df03a959d8d0c10fd2302f9a5446c89c848d08ad0cc8333e30b36",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v1.0.2",
+      "minimum_ap_version": "0.6.5",
+      "size": 2371449,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "peggle-nights-v1.0.2",
+      "title": "Peggle Nights - 1.0.2",
+      "version_simple": "1.0.2",
+      "world_version": "1.0.2"
     }
   }
 }
