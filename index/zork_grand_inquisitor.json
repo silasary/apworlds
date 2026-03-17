@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "SerpentAI"
+  ],
   "description": "Zork: Grand Inquisitor is a 1997 point-and-click adventure game for PC.\nMagic has been banned from the great Underground Empire of Zork. By edict of the Grand Inquisitor Mir Yannick, the\nEmpire has been sealed off and the practice of mystic arts declared punishable by \"Totemization\" (a very bad thing).\nThe only way to restore magic to the kingdom is to find three hidden artifacts: The Coconut of Quendor, The Cube of\nFoundation, and The Skull of Yoruk.",
   "flags": [
     "tracker_included"
@@ -8,9 +11,9 @@
   "license": null,
   "manifest_fields": [
     "authors",
+    "flags",
     "minimum_ap_version",
-    "world_version",
-    "flags"
+    "world_version"
   ],
   "versions": {
     "zgi-v1.0.0": {
@@ -200,6 +203,21 @@
       "title": "Zork Grand Inquisitor - 2.0.7",
       "version_simple": "2.0.7",
       "world_version": "2.0.7"
+    },
+    "zgi-v2.0.7r2": {
+      "created_at": "2026-01-11T15:54:12Z",
+      "description": "This is a minor bugfix release.\r\n\r\n**Fix:** Addressed an issue where Wild VOXAM would sometimes fire even when disabled in the YAML\r\n**Fix:** Addressed an issue where Subway Entrances would not be properly reconnected for Universal Tracker when playing with the entrance randomizer with vanilla subway destinations, leading to the tracker not seeing certain region connections when playing under these conditions\r\n\r\n**Link to the previous release:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.0.6)\r\n**Link to the 2.0.5 release, with most exhaustive README for v2:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.0.5)\r\n",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.7/zork_grand_inquisitor.apworld",
+      "has_manifest": true,
+      "hash_sha256": "582be6c33d15a712d568cebc765ab9a8cd2ba90f983c53634c0e168ae86dd0fb",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.0.7",
+      "minimum_ap_version": "0.6.3",
+      "size": 1141460,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "zgi-v2.0.7r2",
+      "title": "Zork Grand Inquisitor - 2.0.7",
+      "version_simple": "2.0.7",
+      "world_version": "2.0.7.post2"
     }
   }
 }
