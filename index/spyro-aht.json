@@ -8,7 +8,11 @@
   ],
   "game": "",
   "github": "https://github.com/XuaTheGrate/spyro-aht-ap",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.0.1": {
       "created_at": "2026-02-26T01:39:37Z",
@@ -86,6 +90,22 @@
       "title": "GameCube Alpha 4",
       "version_simple": "0.2.1",
       "world_version": "0.2.1"
+    },
+    "0.3.0": {
+      "created_at": "2026-03-17T00:01:41Z",
+      "description": "- Added randomization of Moneybag's store\r\n  - This adds Shockwave, Butterfly Jar, Sparx HP Upgrade, Double Gems and 52 Lockpicks to the item pool\r\n  - Butterfly Jar will be re-added to the player on death\r\n  - Double Gems is now permanent\r\n- Added randomization of Boss Lair door requirement costs\r\n  - Your goal boss will always be the most expensive of the 4 doors\r\n  - Going up to the door will show how much it costs\r\n  - A notification will be dispatched when you acquire enough dark gems to open the door\r\n- Added randomization of the Light Gem door costs\r\n  - Going up to the door will show how much it costs\r\n  - A notification will be disatched when you acquire enough light gems to open the door\r\n- All locked chests now logically require 52 lockpicks to open\r\n  - They can still be opened without them, just they are less likely to have something useful inside\r\n- Added 3 of every bomb type to the filler item pool if shop randomization is enabled\r\n- Added YAML option to toggle mini game hinting\r\n- Notifications now appear in-game for received items or death links\r\n- Shop item costs now generate during generation instead of client-side\r\n- Fixed Hunter disappearing from Dragon Village after encountering the Mammoth\r\n- Renamed Lightning Breath to Electric Breath\r\n- Renamed Extra Health Unit to Health Unit+\r\n- Renamed Crocoville Swamp to Crocovile Swamp\r\n- Removed filling in Gem Packs for other games\r\n\r\nDownload the AR_Code.txt via https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v0.3",
+      "download_url": "https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.3.0/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "08caf979f2213f7df614bf1e38bc05455bf94cbe8d836c44c57ae957403fecee",
+      "html_url": "https://github.com/XuaTheGrate/spyro-aht-ap/releases/tag/0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 26095,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/spyro-aht-ap",
+      "tag": "0.3.0",
+      "title": "GameCube Alpha 5",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }
