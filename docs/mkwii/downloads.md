@@ -17,6 +17,9 @@
 #### v0.1.1
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h2/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h2/mkwii.apworld</a>
 
+#### v0.1.1
+- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h3/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h3/mkwii.apworld</a>
+
 #### v0.1.0
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.0/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.0/mkwii.apworld</a>
 

@@ -23,6 +23,8 @@ Location checks are in-game actions that send items to other players in the mult
 - Unlocking and playing specific dishes (if dish checks are enabled).
 - Triggering in-game achievements (if achievement checks are enabled).
 - Meeting setting-based objectives (if setting checks are enabled).
+- Rerolling
+- Buying checks from pedestals
 
 ## What items can I receive?
 

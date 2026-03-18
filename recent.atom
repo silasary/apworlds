@@ -2,78 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-17T18:24:30.969064+00:00</updated>
+  <updated>2026-03-18T00:22:24.331546+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/tag/v4.1</id>
-    <title>Hammerwatch v4.1</title>
-    <updated>2026-03-12T02:53:08+00:00</updated>
-    <author>
-      <name>Parcosmic</name>
-    </author>
-    <content>This update greatly decreases the size of the apworld (68 MB to 4.2 MB!) and renames some locations for clarity&#13;
-&#13;
-Get the latest client release here: https://github.com/Parcosmic/HammerwatchAPMod/releases</content>
-    <link href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/tag/v4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.2</id>
-    <title>Gauntlet Legends v2.1.2</title>
-    <updated>2026-03-12T03:15:39+00:00</updated>
-    <author>
-      <name>jamesbrq</name>
-    </author>
-    <content>REQUIRED: Archipelago -&gt; https://github.com/ArchipelagoMW/Archipelago/releases&#13;
-REQUIRED: Retroarch -&gt; https://www.retroarch.com/?page=platforms&#13;
-Drag and drop gl.apworld into your custom_worlds folder in your Archipelago install.&#13;
-&#13;
-You can launch the client from ArchipelagoLauncher, just click on the Gauntlet Legends Client button.&#13;
-&#13;
-To patch the game, you are required to have a US copy of Gauntlet Legends for the N64.&#13;
-Either drag the patch onto ArchipelagoLauncher.exe or Right click the patch and 'Open With...' ArchipelagoLauncher.exe&#13;
-The host does not need to have a copy of the game to generate.&#13;
-&#13;
-RETROARCH IS REQUIRED IT IS THE ONLY EMULATOR THAT WILL WORK.&#13;
-&#13;
-IN RETROARCH: You must go to Settings-&gt;User Interface and turn the Show Advanced Settings ON. Then in Settings-&gt; Network, you must also turn ON Network Commands. Leave the port the default.&#13;
-&#13;
-Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
-&#13;
-**Full Changelog**: https://github.com/jamesbrq/GauntletLegendsAP/compare/v2.1.0...v2.1.2</content>
-    <link href="https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.4</id>
-    <title>Stardew Valley v7.4.4</title>
-    <updated>2026-03-12T04:09:32+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Exempt-Medic (Proofreading)</name>
-    </author>
-    <content>## Apworld&#13;
-- Fixed logic rule for Morel seasons [@itepastra]&#13;
-&#13;
-## Mod&#13;
-- Introduced new TesterFeature to make the Traveling Cart stock unlimited. This should be generally considered a cheat, as it invalidates the related AP items and allows going heavily OoL&#13;
-- Removed some log from MultiplayerVision&#13;
-- Made MultiplayerVision default to true. If this causes trouble I'll revert it.&#13;
-- Introduced new config to automatically end the day after a certain number of failed reconnection attempts. Defaults to disabled (-1), but this would allow players who have encountered crashes to at least attempt to save their game before it happens.&#13;
-- Added 16 baby names. A lot of them should have been added a while ago, sorry! [New Names](https://github.com/agilbert1412/StardewArchipelago/compare/9eed7013553c8b30f29019c79dcdb8272c857fa5..ba0bb82a5e911083d95a0864898da50c8954eecf)&#13;
-- Fixed the Jojapocalypse filters accidentally filtering the Kent C Bundle to meeting Kent&#13;
-- Added a bunch of name matching exceptions for tooltips</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.18</id>
     <title>Deep Rock Galactic v0.18.0</title>
@@ -934,6 +867,43 @@ This apworld update is directly tied to the mod update — make sure you update 
     <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.3"/>
   </entry>
   <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.1</id>
+    <title>plateup v0.2.6.1</title>
+    <updated>2026-03-15T21:14:21+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>## What's New?&#13;
+- `trap_cards` has been removed — set `trap_chance` to 0 to disable traps instead&#13;
+- Dish-specific day leases are here — each dish now has its own lease items that&#13;
+  only gate progress on that dish specifically, leaving other dishes freely accessible&#13;
+- When using dish-specific leases with the franchise or complete days goals, overflow&#13;
+  days beyond what dish leases cover are gated by a new Overtime Day Lease item&#13;
+- Added `dish_lease_scope` for the reach day with dishes goal — choose whether all&#13;
+  selected dishes are lease-gated, or only the first few needed to hit your dish goal.&#13;
+  With this goal and dish-specific mode, no generic leases are generated at all&#13;
+- Blueprint and setting checks now generate correctly for all goals, not just the first two&#13;
+- "Lose a Run" is now a valid check for franchise and complete days goals&#13;
+- Fixed a bug where goal state could bleed between games and cause generation failures&#13;
+&#13;
+## New YAML Options&#13;
+**`day_lease_mode`** — Controls how Day Lease items are organised. `global` uses a&#13;
+single shared lease item that gates all day-based content as before. `dish_specific`&#13;
+gives each dish its own named lease items (e.g. Steak Day Lease) that only gate that&#13;
+dish's days — requires dish count to be greater than 0.&#13;
+&#13;
+**`dish_lease_scope`** — When using dish-specific leases with the reach day with dishes&#13;
+goal, controls which dishes get lease items. `all_dishes` gates every selected dish.&#13;
+`goal_count_only` only gates the first dish_goal_count dishes, leaving the rest freely&#13;
+accessible. Only relevant when day_lease_mode is dish_specific.&#13;
+&#13;
+## Note&#13;
+This apworld update is directly tied to the mod update — make sure you&#13;
+update both together for everything to work correctly!&#13;
+[Mod Update 0.2.6.1](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.6.1)</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.0</id>
     <title>Vampire Survivors v0.3.0</title>
     <updated>2026-03-16T04:00:57+00:00</updated>
@@ -1197,5 +1167,32 @@ High Altitude Badge is currently disabled as a check until further notice&#13;
 &lt;img width="1920" height="1080" alt="image_2026-03-17_000727904" src="https://github.com/user-attachments/assets/407ae1c6-2abf-4a8c-ac10-3b92a4039dfb" /&gt;&#13;
 </content>
     <link href="https://github.com/Mickemoose/peak-archipelago/releases/tag/0.5.9.rc-2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zakwiz/DiddyKongRacingAP/releases/tag/v1.1.4</id>
+    <title>Diddy Kong Racing v1.1.4</title>
+    <updated>2026-03-17T23:16:06+00:00</updated>
+    <author>
+      <name>zakwiz</name>
+    </author>
+    <author>
+      <name>jjjj12212</name>
+    </author>
+    <content>### Fixed&#13;
+- Multiple fixes for generation (done by https://github.com/Eijebong)&#13;
+- Lua no longer breaks on the BizHawk dev build (issue found and diagnosed by WonderJ)&#13;
+- Getting more than 8 regional balloons will no longer break the associated boss race (issue found and diagnosed by Hedonic)</content>
+    <link href="https://github.com/zakwiz/DiddyKongRacingAP/releases/tag/v1.1.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.5</id>
+    <title>Flipwitch Forbidden Sex Hex v1.0.5</title>
+    <updated>2026-03-17T23:22:22+00:00</updated>
+    <author>
+      <name>Witchybun</name>
+    </author>
+    <content>Bugfix:&#13;
+- Cat's first quest had a logic error (didn't require male when it does)</content>
+    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.5"/>
   </entry>
 </feed>

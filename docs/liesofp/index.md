@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Xtruh/LiesOfAP/releases/download/0.1.6/liesofp.apworld">Latest Version (0.1.6)</a>
+- <a href="https://github.com/Xtruh/LiesOfAP/releases/download/0.1.7/liesofp.apworld">Latest Version (0.1.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -7,7 +7,7 @@ As we are using BizHawk, this guide is only applicable to Windows and Linux syst
 ## Required Software/Files
 
 - BizHawk:  [BizHawk Releases from TASVideos](https://tasvideos.org/BizHawk/ReleaseHistory)
-  - Only version 2.10 is supported.
+  - Versions 2.10 and later are supported.
   - Detailed installation instructions for BizHawk can be found at the above link.
   - Windows users must run the prereq installer first, which can also be found at the above link.
 - Grab the latest release from https://github.com/zakwiz/DiddyKongRacingAP
