@@ -578,6 +578,20 @@
       "version_simple": "0.2.6.1",
       "world_version": "0.2.6.1"
     },
+    "0.2.6.1r2": {
+      "created_at": "2026-03-15T21:14:21Z",
+      "description": "## What's New?\r\n- `trap_cards` has been removed \u2014 set `trap_chance` to 0 to disable traps instead\r\n- Dish-specific day leases are here \u2014 each dish now has its own lease items that\r\n  only gate progress on that dish specifically, leaving other dishes freely accessible\r\n- When using dish-specific leases with the franchise or complete days goals, overflow\r\n  days beyond what dish leases cover are gated by a new Overtime Day Lease item\r\n- Added `dish_lease_scope` for the reach day with dishes goal \u2014 choose whether all\r\n  selected dishes are lease-gated, or only the first few needed to hit your dish goal.\r\n  With this goal and dish-specific mode, no generic leases are generated at all\r\n- Blueprint and setting checks now generate correctly for all goals, not just the first two\r\n- \"Lose a Run\" is now a valid check for franchise and complete days goals\r\n- Fixed a bug where goal state could bleed between games and cause generation failures\r\n- Fixed IDs being mismatched\r\n\r\n## New YAML Options\r\n**`day_lease_mode`** \u2014 Controls how Day Lease items are organised. `global` uses a\r\nsingle shared lease item that gates all day-based content as before. `dish_specific`\r\ngives each dish its own named lease items (e.g. Steak Day Lease) that only gate that\r\ndish's days \u2014 requires dish count to be greater than 0.\r\n\r\n**`dish_lease_scope`** \u2014 When using dish-specific leases with the reach day with dishes\r\ngoal, controls which dishes get lease items. `all_dishes` gates every selected dish.\r\n`goal_count_only` only gates the first dish_goal_count dishes, leaving the rest freely\r\naccessible. Only relevant when day_lease_mode is dish_specific.\r\n\r\n## Note\r\nThis apworld update is directly tied to the mod update \u2014 make sure you\r\nupdate both together for everything to work correctly!\r\n[Mod Update 0.2.6.1](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.6.1)",
+      "download_url": "https://github.com/CazIsABoi/Archipelago/releases/download/0.2.6.1/plateup.apworld",
+      "has_manifest": true,
+      "hash_sha256": "66eaf6df01292a12d6de64b7e7663f250782168d60bd6dbdce72e118f5d83868",
+      "html_url": "https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.1",
+      "size": 33134,
+      "source_url": "https://api.github.com/repos/CazIsABoi/Archipelago",
+      "tag": "0.2.6.1r2",
+      "title": "PlateupAP apworld v0.2.6-beta.1",
+      "version_simple": "0.2.6.1",
+      "world_version": "0.2.6.1.post2"
+    },
     "v0.1.4.2": {
       "created_at": "2025-02-26T20:49:30Z",
       "description": "### This is directly correlated with the updates for the mod\r\nhttps://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.1.4.2\r\n\r\n### The apworld and attached yaml are what SHOULD be used when generating a world, generating template right now makes a faulty one which doesn't work so don't use it",

@@ -3,8 +3,8 @@
 ## Required Software
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
-- [AP Evolve](https://github.com/the1stburb.github.io/Evolve)
-- [Evolve .apworld](https://github.com/the1stburb/EvolveAPWorld)
+- [AP Evolve](https://the1stburb.github.io/Evolve)
+- [Evolve .apworld Release](https://github.com/The1stBurb/EvolveAPWorld/releases)
 
 ## Setup
 

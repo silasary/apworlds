@@ -1,4 +1,4 @@
-# Evolve
+# Evolve Incremental for Archipelago
 
 ## What is this game?
 
@@ -12,7 +12,7 @@ The goal for this game is a Tier 1 Reset, or Mutually Assured Destruction.
 
 ## Where is the options page?
 
-The [player options page for this game](../player-options) contains all the options you need to configure and export a
+The player options page for this game contains all the options you need to configure and export a
 config file. This is only availible when you download the .apworld file and use the Archipelago Client options generator.
 
 ## What is randomized?
@@ -73,4 +73,4 @@ Filler items can appear often (and do) because there are not a lot of items, unf
 
 ## How to start?
 
-To play the Evolve in Archipelago, [go to the setup guide for this game](/tutorial/Evolve/setup_en)
+To play the Evolve in Archipelago, [go to the setup guide for this game](https://github.com/The1stBurb/EvolveAPWorld/blob/main/evolve/docs/setup_en.md)

@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "OpenTTD AP Team"
+  ],
   "description": "OpenTTD is an open-source transport simulation game.\nBuild transport networks using trains, road vehicles, aircraft and ships.\nAll vehicles are randomized \u2014 unlock them through Archipelago checks!",
   "flags": [
     "unready"
@@ -6,7 +9,11 @@
   "game": "OpenTTD",
   "github": "https://github.com/solida1987/openttd-archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "OpenTTD-Archipelago-V1.0.0": {
       "created_at": "2026-03-09T11:33:27Z",
@@ -119,6 +126,21 @@
       "title": "OpenTTD Archipelago v1.3.0",
       "version_simple": "1.3.0",
       "world_version": "1.3.0"
+    },
+    "v1.4.0": {
+      "created_at": "2026-03-18T13:23:14Z",
+      "description": "<h2>What's new in OpenTTD Archipelago 1.4.0</h2>\r\n<hr>\r\n\r\n<h3>Release Overview</h3>\r\n\r\n<p>\r\n<strong>OpenTTD Archipelago 1.4.0</strong> adds a brand new check type \u2014 Stars \u2014 scattered across the map for players to hunt down, plus dynamic item pool sizing, improved item distribution, and several bug fixes.\r\n</p>\r\n\r\n<ul>\r\n<li>New: <strong>Stars</strong> \u2014 collectible objects hidden across the map. Click to collect and receive a check. Includes a Star Tracker window with escalating reveal costs.</li>\r\n<li>New: <strong>Dynamic pool sizing</strong> \u2014 Stars and Shop pool sizes are now calculated automatically based on total item count. No more manual pool size settings.</li>\r\n<li>New: <strong>Star Tracker</strong> \u2014 buy location reveals at escalating prices to find remaining stars on the map.</li>\r\n<li>Changed: <strong>Item distribution rebalanced</strong> \u2014 Progression items split across all pools: 10% easy missions, 5% medium, 5% hard, 5% extreme, 10% ruins, 10% demigods, and the remainder split equally between stars and shop.</li>\r\n<li>Fix: <strong>Demigod window rendering</strong> \u2014 fixed broken visual appearance with missing background colours.</li>\r\n<li>Fix: <strong>Graphical glitch when demigod company spawns</strong> \u2014 screen now refreshes properly.</li>\r\n<li>Fix: <strong>FillError crash during world generation</strong> \u2014 replaced priority/excluded system with manual placement to prevent crashes on extreme settings.</li>\r\n<li>Fix: <strong>Paper Truck and wagons on wrong climate</strong> \u2014 added climate exclusion filtering at all check points.</li>\r\n<li>Fix: <strong>Speed Boost items trimmed from pool</strong> \u2014 speed boost count now included in reserved items.</li>\r\n<li>Fix: <strong>Service intervals</strong> \u2014 AP sessions now force percentage-based service intervals, preventing vehicles from running at 0% reliability indefinitely.</li>\r\n</ul>\r\n\r\n<hr>\r\n\r\n<h3>Compatibility</h3>\r\n\r\n<ul>\r\n<li>This version is <strong>compatible with multiworld sessions created using version 1.4.0+</strong>.</li>\r\n<li>This version is <strong>not compatible</strong> with multiworld sessions created using version 1.3.0 or earlier.</li>\r\n<li>The APWorld file remains <code>openttd.apworld</code> (stable) / <code>openttd_exp.apworld</code> (experimental).</li>\r\n</ul>\r\n\r\n<hr>\r\n\r\n<h3>Requirements</h3>\r\n\r\n<ul>\r\n<li>Windows 10 / 11 (64-bit) or Linux x64</li>\r\n<li>Archipelago 0.6.6+</li>\r\n<li>Python 3.10+ (for APWorld generation only)</li>\r\n</ul>\r\n",
+      "download_url": "https://github.com/solida1987/openttd-archipelago/releases/download/v1.4.0/openttd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "af0e17e01263a681b7e695d4b0f60d50bdac742558ab43185f6aff108a972ad8",
+      "html_url": "https://github.com/solida1987/openttd-archipelago/releases/tag/v1.4.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 57728,
+      "source_url": "https://api.github.com/repos/solida1987/openttd-archipelago",
+      "tag": "v1.4.0",
+      "title": "OpenTTD Archipelago v1.4.0",
+      "version_simple": "1.4.0",
+      "world_version": "1.4.0"
     },
     "v15.2-1.1.0": {
       "created_at": "2026-03-10T22:34:18Z",
