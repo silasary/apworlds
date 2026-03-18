@@ -1,4 +1,4 @@
-# 
+# Melatonin
 
 ## Latest
 - <a href="https://github.com/xMcacutt-Archipelago/Archipelago-Melatonin/releases/download/1.0.0/melatonin.apworld">Latest Version (1.0.0)</a>

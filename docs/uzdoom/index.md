@@ -1,6 +1,9 @@
-# 
+# UZDoom
 
+UZDoom is an open-source enhanced port of the Doom engine, supporting Doom 1/2, Hexen, Heretic, and Strife, along
+with thousands of fan-made maps and mission packs and even a few commercial games like Hedon Bloodrite and Selaco.
 
+This randomizer comes with an automated WAD scanner that makes it easy to add support for new WADs.
 
 
 ## Downloads

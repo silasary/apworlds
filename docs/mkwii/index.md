@@ -1,6 +1,7 @@
-# 
+# Mario Kart Wii
 
-
+Mario Kart Wii is a racing game for the Nintendo Wii. Race through cups across
+multiple engine classes, unlocking characters, vehicles, and new cups along the way.
 
 
 ## Downloads

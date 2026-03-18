@@ -1,6 +1,8 @@
-# 
+# Pokepelago
 
-
+Pokepelago: A collection-based world where you catch &#x27;em all by guessing their names.
+Each game region acts as a zone gated by a Region Pass item.
+Type Keys gate access to Pokemon of that type (creates cross-player dependencies).
 
 
 ## Downloads

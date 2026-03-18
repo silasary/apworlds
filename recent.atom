@@ -2,69 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-18T00:22:24.331546+00:00</updated>
+  <updated>2026-03-18T06:30:37.654924+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.18</id>
-    <title>Deep Rock Galactic v0.18.0</title>
-    <updated>2026-03-12T13:48:26+00:00</updated>
-    <author>
-      <name>SipcoGamingGuild</name>
-    </author>
-    <author>
-      <name>Taz</name>
-    </author>
-    <content>**Changes (Should be compatible with 0.16+ worlds, but may cause issues)**&#13;
-&#13;
-- Added Weapon Randomizer (Optional)&#13;
-- Added Class Randomizer (Optional)&#13;
-- Re-added Hints to the Game (Upgraded In game menu)&#13;
-- Re-added messages on send / receive items to the game&#13;
-- Properly Packaged apworld for version typing&#13;
-- Added starter item autofill based on YAML&#13;
-- Made Shop More Responsive on Item Purchasing&#13;
-- Added more Info to Info Console and renamed it to "Checks Console"&#13;
-&#13;
-**INFO FILES**&#13;
- [INSTRUCTIONS](https://docs.google.com/document/d/16At-2kS_azJRf9PdUcZeA8Esfoh6kNm2dWVWy8u8wA0/edit?usp=sharing)&#13;
- [MOD on MOD.IO](https://mod.io/g/drg/m/test-archipelago-integration#description)&#13;
- [SIDELOADER for DRG Mods](https://github.com/trumank/mint)</content>
-    <link href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.18"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Uroogla/S3AP/releases/tag/1.3.2</id>
-    <title>Spyro 3 v1.3.2</title>
-    <updated>2026-03-12T18:55:00+00:00</updated>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>**Note that setup instructions have changed slightly in v1.3.0+. Within Duckstation, navigate to Settings &gt; Game Properties &gt; Console and select "Interpreter" under "Execution Mode".**&#13;
-&#13;
-This release contains both Client (S3AP.Desktop.exe) and APWorld changes.&#13;
-&#13;
-New Features&#13;
-- Implemented Received Items tab.&#13;
-- Implemented new client commands like !options, particularly useful for random settings.  Type !help to see the full list!&#13;
-&#13;
-Changes&#13;
-- Simplified option descriptions&#13;
-- Clarified World Key behavior in the client with messages on receiving keys and when locked from progressing.&#13;
-- Improved Options Creator user experience&#13;
-- Progressive client improvements&#13;
-&#13;
-Bug Fixes:&#13;
-- Fixed a bug where gaining a life in Midnight Mountain Home could erroneously set your lives to 99.&#13;
-- Fixed an error in the logic of a gem in Sunny Villa.&#13;
-- (Hopefully) fixed a bug where goaling could freeze the client and not send out the goal.&#13;
-    - If you still encounter this issue, restart the client and reconnect to send the goal.</content>
-    <link href="https://github.com/Uroogla/S3AP/releases/tag/1.3.2"/>
-  </entry>
   <entry>
     <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.0</id>
     <title>Donkey Kong 64 v1.5.0</title>
@@ -1134,7 +1076,7 @@ POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
     <author>
       <name>Mickemoose</name>
     </author>
-    <content>## v0.5.9.rc-2&#13;
+    <content>## v0.5.9.rc-3&#13;
 &#13;
 **Not compatible with previously generated worlds**&#13;
 &#13;
@@ -1156,6 +1098,10 @@ POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
     &lt;li&gt;In Game Item tracker in the Archipelago section in the ESC/Pause menu&lt;/li&gt;&#13;
     &lt;li&gt;Item Unlocks able to be hinted in the tracker&lt;/li&gt;&#13;
     &lt;li&gt;Potential fixes for multiplayer issues with RingLink &amp; EnergyLink&lt;/li&gt;&#13;
+    &lt;li&gt;DeathLink Checkpoint will now check for a Checkpoint Flag first before falling back to the campfire&lt;li&gt;&#13;
+    &lt;li&gt;Scorchberry check and item unlock added&lt;/li&gt;&#13;
+    &lt;li&gt;Progressive Mountain wasn't syncing on receive, just on player joining, should be fixed&lt;/li&gt;&#13;
+    &lt;li&gt;Parasol check and unlock now considers both variants&lt;/li&gt;&#13;
 &lt;/ul&gt;&#13;
 &#13;
 ### Notes&#13;
@@ -1194,5 +1140,37 @@ High Altitude Badge is currently disabled as a check until further notice&#13;
     <content>Bugfix:&#13;
 - Cat's first quest had a logic error (didn't require male when it does)</content>
     <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.0</id>
+    <title>Mega Man Zero 3 v0.2.0</title>
+    <updated>2026-03-18T01:12:57+00:00</updated>
+    <author>
+      <name>brodieberger</name>
+    </author>
+    <content>[Utilizing the amazing in progress decompilation by akatsuki105](https://github.com/mmzret/rmz3), I was able to completely rewrite the back-end for this project, which should ease any issues regarding desyncs or locations unlocking when they shouldn't.&#13;
+&#13;
+# Changes&#13;
+- Back-end has been rewritten. Should be more stable and less prone to desyncs, especially when using save states.&#13;
+- All 180 disks are now supported, previously only disks found in levels themselves were counted as AP items and locations.&#13;
+- NPC dialogue disks are no longer missable. Talking to an NPC any time after their dialogue changes should give all previous disks that you missed out on.&#13;
+- You will now be alerted in game when an Archipelago item is collected. It will display as a message box at the bottom of the screen. This feature is optional, as of right now it is very slow and distracting. I will be improving this later, but the choice is there now if you want it. (or just have text client open).&#13;
+&#13;
+# Known Bugs&#13;
+- Certain rewards given by NPCs require you to make the correct dialogue choices. Right now these are broken, and you will always receive the disk regardless of what you say. This will be fixed later.&#13;
+- There's a chance that I may have missed out on a few dialogue related rewards. If there are any issues please ping me in the discord!</content>
+    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.0</id>
+    <title>BKSimulator v0.1.2</title>
+    <updated>2026-03-18T04:41:37+00:00</updated>
+    <author>
+      <name>EmilyV99</name>
+    </author>
+    <content>- New option (YAML and in-game): Death Link Groups!&#13;
+  - With Death Link on, only receive deaths from others in the same group. (BK Simulator still never sends DeathLinks)&#13;
+- APWorld rewritten to make use of Rule Builder. Logic should be unchanged.</content>
+    <link href="https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.0"/>
   </entry>
 </feed>

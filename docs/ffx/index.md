@@ -1,6 +1,6 @@
-# ffx
+# Final Fantasy X
 
-
+Final Fantasy X is a game
 
 
 ## Downloads
@@ -8,9 +8,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Final Fantasy X">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Final Fantasy X">en_Final Fantasy X</a>

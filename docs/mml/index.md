@@ -1,6 +1,8 @@
-# 
+# Mega Man Legends
 
-
+Mega Man Legends is a 1997 action-adventure game released by Capcom. It is the first game in the Mega Man Legends
+sub-series of Mega Man games from Capcom. Explore dungeons, fight pirates and save kattlelox island from its
+imminent demise.
 
 
 ## Downloads

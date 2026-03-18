@@ -1,6 +1,8 @@
-# 
+# OpenTTD
 
-
+OpenTTD is an open-source transport simulation game.
+Build transport networks using trains, road vehicles, aircraft and ships.
+All vehicles are randomized — unlock them through Archipelago checks!
 
 
 ## Downloads

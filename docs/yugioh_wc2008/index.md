@@ -1,4 +1,4 @@
-# 
+# Yu-Gi-Oh! World Championship 2008
 
 
 

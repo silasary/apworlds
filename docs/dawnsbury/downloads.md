@@ -1,4 +1,4 @@
-# 
+# Dawnsbury Days
 
 ## Latest
 - <a href="https://github.com/ordinary-magic/DawnsburyDaysArchipelago/releases/download/v1.1.1/dawnsbury.apworld">Latest Version (1.1.1)</a>

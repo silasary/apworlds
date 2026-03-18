@@ -1,4 +1,4 @@
-# 
+# AP Tombola
 
 ## Latest
 - <a href="https://github.com/Arenes214/APWorld-Tombola/releases/download/0.1/aptombola.apworld">Latest Version (0.1.0)</a>

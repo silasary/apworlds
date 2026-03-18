@@ -1,6 +1,7 @@
-# 
+# Undertale Yellow
 
-
+Undertale Yellow is a fangame based on Undertale where every choice you make matters. Join Clover on a trip throughout new parts
+ of the underground, joined by many new characters. Of course, all the routes present in Undertale are also present here.
 
 
 ## Downloads

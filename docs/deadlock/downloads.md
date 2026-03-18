@@ -1,4 +1,4 @@
-# 
+# Deadlock
 
 ## Latest
 - <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.2/deadlock.apworld">Latest Version (1.1.2)</a>

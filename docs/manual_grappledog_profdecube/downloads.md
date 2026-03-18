@@ -1,4 +1,4 @@
-# 
+# Manual_GrappleDog_ProfDeCube
 
 ## Latest
 - <a href="https://github.com/ProfDeCube/GrappleDog-Archipelago-Manual/releases/download/1.0.0/manual_grappledog_profdecube.apworld">Latest Version (1.0.0)</a>

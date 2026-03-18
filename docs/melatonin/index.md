@@ -1,6 +1,8 @@
-# 
+# Melatonin
 
-
+Melatonin is a rhythm game about dreams and reality merging together.
+It uses animations and sound cues to keep you on beat without any intimidating overlays or interfaces.
+Harmonize through a variety of dreamy levels containing surprising challenges, hand-drawn art, and vibrant music.
 
 
 ## Downloads

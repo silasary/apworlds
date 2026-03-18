@@ -1,4 +1,4 @@
-# 
+# Super Smash Bros. Brawl - The Subspace Emissary
 
 ## Latest
 - <a href="https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.1.1/ssbb_sse.apworld">Latest Version (0.1.1)</a>

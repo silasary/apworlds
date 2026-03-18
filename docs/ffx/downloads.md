@@ -1,4 +1,4 @@
-# ffx
+# Final Fantasy X
 
 ## Latest
 - <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.6.1/ffx.apworld">Latest Version (0.6.1)</a>

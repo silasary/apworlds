@@ -1,4 +1,4 @@
-# 
+# Pokemon Ranger (Quest)
 
 
 
@@ -8,6 +8,7 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Pokemon Ranger (Quest)">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
@@ -15,4 +16,3 @@
 ## Other Documentation files
 - <a href="TODO">TODO</a>
 - <a href="changelog">changelog</a>
-- <a href="en_Pokemon Ranger (Quest)">en_Pokemon Ranger (Quest)</a>

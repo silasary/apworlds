@@ -1,4 +1,4 @@
-# sonicriders
+# Sonic Riders
 
 ## Latest
 - <a href="https://github.com/Orangestar12/Archipelago-SR-J-SJ/releases/download/sr_v0.2.3/sonicriders.apworld">Latest Version (0.2.3)</a>

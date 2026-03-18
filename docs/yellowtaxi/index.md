@@ -1,6 +1,6 @@
-# 
+# Yellow Taxi Goes Vroom
 
-
+Yellow Taxi Goes Vroom is a trippy arcade platformer ready to take you on a crazy adventure!
 
 
 ## Downloads
@@ -8,9 +8,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Yellow Taxi Goes Vroom">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Yellow Taxi Goes Vroom">en_Yellow Taxi Goes Vroom</a>
