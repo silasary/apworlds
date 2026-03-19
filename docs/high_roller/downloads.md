@@ -1,9 +1,12 @@
 # High Roller
 
 ## Latest
-- <a href="https://github.com/ElireFeltores/High-Roller/releases/download/v1.1.1/high_roller.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/ElireFeltores/High-Roller/releases/download/v1.2.0/high_roller.apworld">Latest Version (1.2.0)</a>
 
 ## All Versions
+
+#### v1.2.0
+- <a href="https://github.com/ElireFeltores/High-Roller/releases/download/v1.2.0/high_roller.apworld">https://github.com/ElireFeltores/High-Roller/releases/download/v1.2.0/high_roller.apworld</a>
 
 #### v1.1.1
 - <a href="https://github.com/ElireFeltores/High-Roller/releases/download/v1.1.1/high_roller.apworld">https://github.com/ElireFeltores/High-Roller/releases/download/v1.1.1/high_roller.apworld</a>
