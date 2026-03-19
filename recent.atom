@@ -2,90 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-19T00:18:49.946254+00:00</updated>
+  <updated>2026-03-19T06:28:23.519882+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.0</id>
-    <title>Black Ops 3 - Zombies v0.2.0</title>
-    <updated>2026-03-13T19:27:08+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>- Archipelago Shop&#13;
-  - Placed near the starting area on each map, you can cash in tokens for random mega gobblegums&#13;
-- Shadows of Evil save improvements:&#13;
-  - Smashables&#13;
-  - Sword quest level 1 complete. Place egg into sword rock to retrieve&#13;
-  - Sword quest level 2 complete. After pap ritual, place egg into sword rock to retrieve&#13;
-  - Fumigator&#13;
-  - Sword weapon is no longer restored and must be retrieved via the routes described above, for technical reasons&#13;
-- Der Eisendrache save improvements:&#13;
-  - Storm and Wolf bows will save up until the arrow can be repaired&#13;
-  - Bow restoration is per-player, a connecting player will restore a quest they started previously&#13;
-  - Channelling stone step will not restore until all starting players have spawned, to make sure their bow requirements work&#13;
-- New AP items:&#13;
-  - Progressive - Starting Points - 5x 500 by default, awarded per player, per map. These will be awarded again if map save data is cleared&#13;
-  - Shop - Gum Tokens&#13;
-    - 3x Mega, 2x Rare and 1x Legendary by default. Same rules as starting points progressive above&#13;
-    - This will probably go through balance changes&#13;
-- Max Ammo now restores weapon clip (BO4 behaviour)&#13;
-- Carpenter now restores shield health when points are awarded (BO4 behaviour)&#13;
-- Stamin-Up now gives unlimited sprint&#13;
-- Gorod Dragonride parts can now be randomized (default off)&#13;
-- Non-randomized shield parts now lock their ap item to their ap location&#13;
-- Disconnected players are no longer cleared from save data&#13;
-- Reconnecting players will now resume from their last available save data&#13;
-- Fix craftables without an ap location not despawning their items on pickup&#13;
-- Shadows of Evil part pickups will no longer break the map state&#13;
-- Shadows of Evil ritual triggers will properly be blocked off&#13;
-- Prevent death machine from being saved to player loadouts&#13;
-&#13;
-**Co-op disclaimer:** Whilst efforts are being made to support co-op, it may still be unstable.</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.0</id>
-    <title>Minecraft v2.0.0</title>
-    <updated>2026-03-13T20:34:54+00:00</updated>
-    <author>
-      <name>qixils</name>
-    </author>
-    <author>
-      <name>Seafo</name>
-    </author>
-    <author>
-      <name>cjmang</name>
-    </author>
-    <content>## What's Changed&#13;
-* Add Trial Chamber Structure Compasses + Misc. Fixes by @Seatori in https://github.com/qixils/Archipelago/pull/5&#13;
-* Add Shulker Boxes to Item Pool by @Seatori in https://github.com/qixils/Archipelago/pull/7&#13;
-* Add support for creating items with multiple classifications by @Seatori in https://github.com/qixils/Archipelago/pull/9&#13;
-* Logic &amp; Documentation changes for 1.21.11+ by @Seatori in https://github.com/qixils/Archipelago/pull/10&#13;
-* Update Item+Location ID System by @MrRedstone54 in https://github.com/qixils/Archipelago/pull/8&#13;
-* Explicit Universal Tracker support for Minecraft by @Seatori in https://github.com/qixils/Archipelago/pull/11&#13;
-* Fix client save management by @qixils &#13;
-* Update mod to 1.21.11 by @MrRedstone54 &#13;
-* Lock recipes for Saddle, Copper Ingot, Resin Clump, Block of Resin by @Seatori in https://github.com/qixils/NeoForgeAP/pull/6&#13;
-&#13;
-Generation version bumped to v10. The client UI remains compatible with previous versions of the mod (though any previous servers may no longer be listed in the UI as their metadata was broken; the .apmc just needs to be reimported).</content>
-    <link href="https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.1</id>
-    <title>Black Ops 3 - Zombies v0.2.0</title>
-    <updated>2026-03-13T22:15:21+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>Hotfix:&#13;
-- Fix crash to desktop when saving round and a player hasn't used a gobblegum&#13;
-- Fix bad name comparison when preventing saving with death machine&#13;
-- Fix error in waiting for elements to be processed before restoring channelling stone step</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.2.1"/>
-  </entry>
   <entry>
     <id>https://github.com/studkid/RiftArchipelago/releases/tag/v0.11.0</id>
     <title>Rift of the Necrodancer v0.11.0</title>
@@ -861,7 +782,8 @@ It's only a fraction of the size of the full apworld and intended for people who
 - (Client) changed girl "loves/likes/unique gift type" options on the girl preferences screen to "see collection"&#13;
 - (Client) changed Traits store tab to show lv's instead of prices since you cant buy them&#13;
 - (PopTracker) updated PopTracker with working logic&#13;
-&#13;
+-----HOTFIX-----&#13;
+- fix getting players own deathlinks&#13;
 &#13;
 &#13;
 &lt;br&gt;&lt;/br&gt;&#13;
@@ -1157,5 +1079,50 @@ Again, if you're playing on RTX, the fancy new paused/menu GUI features are not 
 &#13;
 For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
     <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.1</id>
+    <title>BKSimulator v0.1.2</title>
+    <updated>2026-03-19T00:23:51+00:00</updated>
+    <author>
+      <name>EmilyV99</name>
+    </author>
+    <content>- Disconnection from server will now properly kick you back to the main menu, preventing time being wasted on progress that isn't actually being saved.&#13;
+- The message queue is now cleared on disconnection, so messages are no longer leftover from previous connections.</content>
+    <link href="https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.3</id>
+    <title>Minecraft v2.1.3</title>
+    <updated>2026-03-19T02:12:31+00:00</updated>
+    <author>
+      <name>qixils</name>
+    </author>
+    <author>
+      <name>Seafo</name>
+    </author>
+    <author>
+      <name>cjmang</name>
+    </author>
+    <content>### What's Changed&#13;
+&#13;
+- [mod] Crafters now abide by locked recipes&#13;
+- [mod] Re-added lore to Ender Pearl and Wither Skeleton Skull items to communicate goal requirements&#13;
+- [apworld] Improved handling of invalid apmc files</content>
+    <link href="https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.4.3</id>
+    <title>ULTRAKILL v3.4.3</title>
+    <updated>2026-03-19T03:15:25+00:00</updated>
+    <author>
+      <name>TRPG</name>
+    </author>
+    <content>- Fixed incorrect logic for 1-1: Secret Exit. (again)&#13;
+- Fixed incorrect logic for Boss: Mirror Reaper. [@gerbiljames] #42 &#13;
+- Fixed a generation failure during accessibility checks when all levels that an enemy can appear in are skipped. [@gerbiljames] #42&#13;
+- Fixed a generation failure if the goal level has a secret exit and too many levels are skipped. [@gerbiljames] #42 &#13;
+- Fixed a bug where secret missions would still logically require access to the levels you would normally enter them from, when unlocked by finding items instead of using secret exits.</content>
+    <link href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.4.3"/>
   </entry>
 </feed>
