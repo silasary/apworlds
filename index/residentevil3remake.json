@@ -6,7 +6,9 @@
   "game": "Resident Evil 3 Remake",
   "github": "https://github.com/TheRealSolidusSnake/RE3R_AP_World",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "world_version"
+  ],
   "versions": {
     "0.0.1": {
       "created_at": "2024-04-24T05:10:38Z",
@@ -237,6 +239,21 @@
       "title": "Small Bugfix/Core Change Release",
       "version_simple": "0.2.6",
       "world_version": "0.2.6"
+    },
+    "0.2.7.5": {
+      "created_at": "2026-03-18T19:36:14Z",
+      "description": "**Quick and dirty release for testing purposes, please report anything to the RE3R thread in Discord.**\r\n\r\n**RE2Randomizer features ported over:**\r\n------------------------------------------------------------------------------------------------------------------------------------------------------\r\n\r\nEnemy kills are now checks/locations, and they work on every difficulty.\r\n\r\nDouble Weapons / Local Weapons\r\n\r\nIn-game GUI tooltips when paused/in menu <- Note: Non-RTX only\r\n\r\nA more revamped GUI system overall <- Mod menu is a lot more pleasant to look at\r\n\r\nThe newer \"Safe\" function, which previously didn't clear the safes off the map when checked now behaves closer to RE2 (the map will clear but the item icon still shows even though it doesn't exist)\r\n\r\n\r\n**RE3Randomizer specific changes**\r\n------------------------------------------------------------------------------------------------------------------------------------------------------\r\n\r\n**Added \"Enemy Behavior\"**, which will allow zombies/Nemesis to chase you to the ends of the earth\r\n\r\n[SHOCKEEEEEEEEEEERRRRRR](https://www.youtube.com/watch?v=sMk-HPBF6Mw) - this embodies what will be happening (you're Shocker in this case btw)\r\n\r\n**Fixed a major bug with the Lock Pick/Battery Pack**\r\nThanks to everyone who reported this. \r\nPreviously, if you received the Lock Pick and then saved/quit/died before seeing the Lock Pick cutscene, it could disappear from your inventory. Coincidentally while testing the fix for the Lock Pick I discovered the Battery Pack does the same thing\r\nIf the game detects that it's missing, it will put a new copy into your ItemBox.\r\n\r\n**Jewels and the STARS ID Card are now always local**, these are also required before each area transition where the game would normally stop requiring them **(this prevents players from accidentally disposing of them too early and missing locations later on)**\r\n\r\n**And a bunch of smaller bug fixes, including:**\r\n\r\nLocker 109 no longer being static due to an item_object issue\r\n\r\nSupply Case now correctly giving Flame Rounds instead of Acid Rounds\r\n\r\nLocations not sending first time around, sometimes (this didn't occur for most of us, please report back if it happens to you)\r\n\r\nAgain, if you're playing on RTX, the fancy new paused/menu GUI features are not available. Those currently only work for non-RTX users.\r\n\r\n## What Fuzzy fixed for us behind the scenes because he's goated\r\n* Remove likely cause of ImGUI error in recent REF versions by @FuzzyGamesOn in https://github.com/TheRealSolidusSnake/RE3R_AP_Client/pull/7\r\n\r\n## What others contributed\r\n@RopeyRed - Enemy Kills on all difficulties\r\n@Grenier - Strip Scenario/Character out of the client/apworld so it no longer appends (JA) to each location for no reason, now we only append difficulty if not a \"Standard\" location.",
+      "download_url": "https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/download/0.2.7.5/residentevil3remake.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4535ebacdbb8b105d23e8837e4cd3a3322c669e4bf66bf76117d433c7d747cab",
+      "html_url": "https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.7.5",
+      "prerelease": true,
+      "size": 46564,
+      "source_url": "https://api.github.com/repos/TheRealSolidusSnake/RE3R_AP_World",
+      "tag": "0.2.7.5",
+      "title": "Version 3 Test Build",
+      "version_simple": "0.2.7",
+      "world_version": "0.2.7.5"
     }
   }
 }

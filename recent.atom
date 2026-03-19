@@ -2,98 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-18T18:24:19.366404+00:00</updated>
+  <updated>2026-03-19T00:18:49.946254+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.1</id>
-    <title>CrossCode v0.8.1</title>
-    <updated>2026-03-13T07:37:42+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Changes to Generation&#13;
-&#13;
-* Made changes to item groups (@CodeTriangle)&#13;
-  * Renamed certain item groups to be more user-friendly (i.e. `fillerCommonCons` -&gt; `Common Consumables`).&#13;
-  * Added several item groups to better classify common items.&#13;
-  * Removed the `required` item group, whose name is misleading and whose contents are varied and don't group together well.&#13;
-  * **PLEASE NOTE**: These changes will only be available in worlds generated using 0.8.1 of the APWorld or greater.&#13;
-* Raise `OptionError` if both consumable_weight and drop_weight are zero (@gerbiljames)&#13;
-  * Currently, doing this will result in an unhelpful generic python error.&#13;
-&#13;
-## Changes to Logic&#13;
-&#13;
-* Updated logic around the **Crocus Pocus** questline and associated locations (@CodeTriangle)&#13;
-  * Logic now actually tracks the number of plants the player is able to farm instead of trying to work around it using regions.&#13;
-&#13;
-## Fixes to Logic&#13;
-&#13;
-* **Gaia's Garden Collect** now requires access to the Grove and Infested areas of Gaia's Garden (@FuyumiSogeki)&#13;
-* Update logic surrounding Ascension Temple to no longer require Shock (@kumquat-ir)&#13;
-  * This is due to a change in CC-Open-World where the rocks in Wheel Passage were removed,.&#13;
-* Update logic surrounding the lower floors of Temple Mine (@kumquat-ir)&#13;
-  * Multiple doors can be reached upon acquiring heat but the randomizer assumes that one unlocks after the other.</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/tag/2.2.0</id>
-    <title>Manual_Walkabout_MusicBlox v2.2.0</title>
-    <updated>2026-03-13T10:13:10+00:00</updated>
-    <author>
-      <name>energymaster22</name>
-    </author>
-    <content>Updated to support the new Hollywood course!&#13;
-&#13;
-Bug Fix:&#13;
-- Non-linear logic was using the easy pars for logic on the hard courses. This has been fixed.&#13;
-&#13;
-## What's Changed&#13;
-* Added Hollywood by @energymaster22 in https://github.com/energymaster22/walkabout-mini-golf-ap-manual/pull/41&#13;
-* Set the correct index for hard course, non linear par logic by @energymaster22 in https://github.com/energymaster22/walkabout-mini-golf-ap-manual/pull/42&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/energymaster22/walkabout-mini-golf-ap-manual/compare/2.1.0...2.2.0</content>
-    <link href="https://github.com/energymaster22/walkabout-mini-golf-ap-manual/releases/tag/2.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.1</id>
-    <title>ToeJam and Earl v0.5.1</title>
-    <updated>2026-03-13T18:34:01+00:00</updated>
-    <author>
-      <name>IgnisUmbrae</name>
-    </author>
-    <content>## Big changes&#13;
-&#13;
-- Mailbox checks have been added! Set `mailbox_checks: yes` to enable. While the logic is not super-strict and has a buffer for "misspending", it assumes you won't spend any bucks at all on friendly Earthling services, so you may want to enable `free_earthling_services` to reduce the chance of accidentally bricking a seed.&#13;
-  - Moles will not steal Extra Buck or Jackpot presents if mailbox checks are enabled&#13;
-  - Mailbox purchase state is saved along with the rest of the save data&#13;
-- Extra Buck and Jackpot presents can now be made to auto-open on receipt (from other worlds only) by setting `auto_buck_presents: yes`.&#13;
-- Presentsanity has been added, which makes every present a Mystery Present. Set `presentsanity: yes` to enable. Note that the logic may still force-add a small number of Promotions to ensure the seed is beatable.&#13;
-&#13;
-## Other changes&#13;
-&#13;
-- The custom item sprites have all been shrunk down to standard present size to allow rendering in mailboxes (thanks, DrKelexo!)&#13;
-- Rank logic has been redone. Generation with random YAMLs now fails at a rate of around 0.3%.&#13;
-- Added location groups for level reaches and mailboxes&#13;
-- Promotions can no longer be awarded for ranking up&#13;
-- The restored unused present sprites will no longer replace the Mystery Present or Bonus Hitops sprites&#13;
-- Randomizer presents are no longer factored into logic (i.e. it assumes you won't open them at all)&#13;
-&#13;
-## Bugfixes&#13;
- &#13;
-- "Bacon'n eggs" now has the correct name&#13;
-- Fixed "denied" sound not randomizing in sound rando&#13;
-- Fixed an issue that sometimes stopped Big Item checks from awarding items&#13;
-- Fixed a logic issue with reach level checks&#13;
-&#13;
-## Note on filesize&#13;
-&#13;
-The size of the AP world has ballooned because I am now vendoring [unidecode](https://github.com/avian2/unidecode), a Python package for intelligently flattening Unicode text to standard ASCII. This package is used to ensure the mailbox item names are always displayable using the game's limited ASCII subset.</content>
-    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.1"/>
-  </entry>
   <entry>
     <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.0</id>
     <title>Black Ops 3 - Zombies v0.2.0</title>
@@ -1136,9 +1049,13 @@ Hotfix to change the way lock_prereqs option works&#13;
     <author>
       <name>The1stBurb</name>
     </author>
-    <content>### Evolve Incremental v0.1.4&#13;
+    <content># Evolve Incremental v0.1.4&#13;
 &#13;
 [client](&lt;https://github.com/the1stburb.github.io/Evolve&gt;) | [apworld](&lt;https://github.com/the1stburb/EvolveAPWorld&gt;)&#13;
+&#13;
+### Do I need to redownload the APWorld?&#13;
+&#13;
+Nope!&#13;
 &#13;
 ## APWorld&#13;
 - Changed simple file stuff, this shouldn't have any effect! - v0.1.3&#13;
@@ -1150,5 +1067,95 @@ Hotfix to change the way lock_prereqs option works&#13;
 - Fixed it so that you can't just buy an infinite amount of the AP buildings... - v0.1.2&#13;
 - Changed simple file stuff, this shouldn't have any effect! - v0.1.3</content>
     <link href="https://github.com/The1stBurb/EvolveAPWorld/releases/tag/v0.1.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dmwever/Ageipelago/releases/tag/0.1.2</id>
+    <title>Age Of Empires II: Definitive Edition v0.0.1</title>
+    <updated>2026-03-18T18:16:59+00:00</updated>
+    <author>
+      <name>dmwever</name>
+    </author>
+    <content>## What's Changed&#13;
+- Roman Camps no longer in logic before starting base on Attila 1 and 2.&#13;
+- Scythian Palisades removed after resolving Bleda storyline.&#13;
+- Fixed set_user_folder.&#13;
+- Messages are now resent if messages.xsdat is missing.&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/dmwever/Ageipelago/compare/0.1.1...0.1.2</content>
+    <link href="https://github.com/dmwever/Ageipelago/releases/tag/0.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.7.5</id>
+    <title>Resident Evil 3 Remake v0.2.7.5</title>
+    <updated>2026-03-18T19:36:14+00:00</updated>
+    <author>
+      <name>TheRealSolidusSnake</name>
+    </author>
+    <content>**Quick and dirty release for testing purposes, please report anything to the RE3R thread in Discord.**&#13;
+&#13;
+**RE2Randomizer features ported over:**&#13;
+------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
+&#13;
+Enemy kills are now checks/locations, and they work on every difficulty.&#13;
+&#13;
+Double Weapons / Local Weapons&#13;
+&#13;
+In-game GUI tooltips when paused/in menu &lt;- Note: Non-RTX only&#13;
+&#13;
+A more revamped GUI system overall &lt;- Mod menu is a lot more pleasant to look at&#13;
+&#13;
+The newer "Safe" function, which previously didn't clear the safes off the map when checked now behaves closer to RE2 (the map will clear but the item icon still shows even though it doesn't exist)&#13;
+&#13;
+&#13;
+**RE3Randomizer specific changes**&#13;
+------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
+&#13;
+**Added "Enemy Behavior"**, which will allow zombies/Nemesis to chase you to the ends of the earth&#13;
+&#13;
+[SHOCKEEEEEEEEEEERRRRRR](https://www.youtube.com/watch?v=sMk-HPBF6Mw) - this embodies what will be happening (you're Shocker in this case btw)&#13;
+&#13;
+**Fixed a major bug with the Lock Pick/Battery Pack**&#13;
+Thanks to everyone who reported this. &#13;
+Previously, if you received the Lock Pick and then saved/quit/died before seeing the Lock Pick cutscene, it could disappear from your inventory. Coincidentally while testing the fix for the Lock Pick I discovered the Battery Pack does the same thing&#13;
+If the game detects that it's missing, it will put a new copy into your ItemBox.&#13;
+&#13;
+**Jewels and the STARS ID Card are now always local**, these are also required before each area transition where the game would normally stop requiring them **(this prevents players from accidentally disposing of them too early and missing locations later on)**&#13;
+&#13;
+**And a bunch of smaller bug fixes, including:**&#13;
+&#13;
+Locker 109 no longer being static due to an item_object issue&#13;
+&#13;
+Supply Case now correctly giving Flame Rounds instead of Acid Rounds&#13;
+&#13;
+Locations not sending first time around, sometimes (this didn't occur for most of us, please report back if it happens to you)&#13;
+&#13;
+Again, if you're playing on RTX, the fancy new paused/menu GUI features are not available. Those currently only work for non-RTX users.&#13;
+&#13;
+## What Fuzzy fixed for us behind the scenes because he's goated&#13;
+* Remove likely cause of ImGUI error in recent REF versions by @FuzzyGamesOn in https://github.com/TheRealSolidusSnake/RE3R_AP_Client/pull/7&#13;
+&#13;
+## What others contributed&#13;
+@RopeyRed - Enemy Kills on all difficulties&#13;
+@Grenier - Strip Scenario/Character out of the client/apworld so it no longer appends (JA) to each location for no reason, now we only append difficulty if not a "Standard" location.</content>
+    <link href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.7.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.6.2</id>
+    <title>Plants vs. Zombies: Replanted v1.6.2</title>
+    <updated>2026-03-18T21:20:52+00:00</updated>
+    <author>
+      <name>dannybonz</name>
+    </author>
+    <content>- Fixes a problem where the level unlock key graphic could appear oversized.&#13;
+- Level clears and unlocks now display instantly again.&#13;
+- Custom graphics are now pre-loaded to prevent a lag spike when a check item appears.&#13;
+- Plant stat randomisation has been rebalanced based on feedback and my own experiences. Let me know how you get on with it!&#13;
+- Rewritten APWorld logic, especially where plant stat randomisation is involved. The randomised stats of plants will be more closely considered when creating logic, with plants even gaining or losing the progression classification based on their effectiveness and affordability.&#13;
+- Changes to how randomised conveyors are generated. This should hopefully make conveyor levels more balanced and less RNG-reliant... emphasis on the "hopefully", there.&#13;
+- Fixes to various generation errors.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.6.2"/>
   </entry>
 </feed>

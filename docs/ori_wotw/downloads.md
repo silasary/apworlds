@@ -1,9 +1,12 @@
 # Ori and the Will of the Wisps
 
 ## Latest
-- <a href="https://github.com/Satisha10/APwotw_release/releases/download/v0.5.2/ori_wotw.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/Satisha10/APwotw_release/releases/download/v0.5.3/ori_wotw.apworld">Latest Version (0.5.3)</a>
 
 ## All Versions
+
+#### v0.5.3
+- <a href="https://github.com/Satisha10/APwotw_release/releases/download/v0.5.3/ori_wotw.apworld">https://github.com/Satisha10/APwotw_release/releases/download/v0.5.3/ori_wotw.apworld</a>
 
 #### v0.5.2
 - <a href="https://github.com/Satisha10/APwotw_release/releases/download/v0.5.2/ori_wotw.apworld">https://github.com/Satisha10/APwotw_release/releases/download/v0.5.2/ori_wotw.apworld</a>
