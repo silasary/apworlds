@@ -2,34 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-20T00:17:59.652933+00:00</updated>
+  <updated>2026-03-20T06:21:41.784462+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.2</id>
-    <title>Black Ops 3 - Zombies v0.2.2</title>
-    <updated>2026-03-14T15:23:28+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>Hotfix 2&#13;
-- Reverted pickup changes from 0.1.3 due to map state issues. You'll now receive checks for AP awarded items again.&#13;
-- Gorod Dragonride Part Pickups now award both a check and the part again&#13;
-- Fix checkpoints failing to save if on a map that uses kvals in its save state&#13;
-- Fix an infinite loop after firing a projectile weapon after you've finished the storm bow quest when you've restored with the beacons already charged&#13;
-- Fix AP craftable parts not being awarded on some maps&#13;
-- Fix issue preventing host from restoring more than 1 bow&#13;
-- Fix beacons lit state not restoring on Der Eisendrache causing Storm Bow restore to stall&#13;
-- Fix server crash where 2 bows restore functions would act on the same frame&#13;
-- Fix disconnected player data not being checkpointed&#13;
-- Fix unsafe player states wiping existing player data when saving&#13;
-- Fix everyone except the host being given Anywhere But Here in ZNS&#13;
-&#13;
-**Note:** Gens on 0.2.0 and 0.2.1 using "Randomized Gorod Dragonride Parts" can prevent groph pod parts spawning. You must manually award all 3 items via the AP admin console instead.</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.1</id>
     <title>Minecraft v2.0.0</title>
@@ -1197,5 +1174,57 @@ For all AP releases you will need to install the spire.apworld file into your Ar
 &#13;
 For the setup guide, please go to https://github.com/cjmang/StS-AP-World/blob/sts/worlds/spire/docs/slay-the-spire_en.md.</content>
     <link href="https://github.com/cjmang/StS-AP-World/releases/tag/2.3.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.9.2.0</id>
+    <title>Void Stranger v0.9.2.0</title>
+    <updated>2026-03-20T01:03:53+00:00</updated>
+    <author>
+      <name>CriminalPancake</name>
+    </author>
+    <content>## What's Changed&#13;
+General:&#13;
+	Locusts are now obtained from chests just like vanilla&#13;
+	Numbered Brane locust chests are now always AP Checks&#13;
+	Max Locust Up's are included in the item pool and increase your maximum capacity for holding locusts&#13;
+	Mon Bank now deals with Bonus Locusts, which are filler items not factored into logic&#13;
+	&#13;
+Generation:&#13;
+	Locustsanity is now forced on&#13;
+	Generation shouldn't fail, probably&#13;
+	&#13;
+Yaml:&#13;
+	Removed Locustsanity option&#13;
+	New setting "Max Locust Up Size"&#13;
+	Greed Coin Amount range is now from 1-30&#13;
+&#13;
+Bugfixes:&#13;
+	Receiving multiple items in quick succession will no longer delete locusts, progressive brands, or greed coins&#13;
+	Burdens are now properly received from AP&#13;
+&#13;
+Misc:&#13;
+	AP Items are now saved to file and should not reset upon game close or reconnecting to AP&#13;
+	To properly reset between multiworlds, select End Run from the pause menu&#13;
+	Fixed typo on room name of Floor 196</content>
+    <link href="https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.9.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.1</id>
+    <title>Vampire Survivors v0.3.1</title>
+    <updated>2026-03-20T03:35:54+00:00</updated>
+    <author>
+      <name>SW_CreeperKing</name>
+    </author>
+    <content>- [ApWorld] Fixed Enemysanity always being enabled&#13;
+- [ApWorld] Fixed `allowunfaircharacters` host setting not being correctly named as `allow_unfair_characters`&#13;
+- [ApWorld] Removed a follower the snuck into the character list&#13;
+- [Client] Fixed some random shenanigans with not setting the correct EnemyType&#13;
+- [Client] Added compatibility layer for worlds made before v0.3&#13;
+  1. it will create a `Compatibility.txt` in `Mods/SW_CreeperKing.ArchipelagoSurvivors/Data`&#13;
+  2. inside it should have `incorrect name =`&#13;
+  3. just add the correct name after it&#13;
+  4. save&#13;
+  5. relaunch the game</content>
+    <link href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.1"/>
   </entry>
 </feed>
