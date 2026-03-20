@@ -1,9 +1,17 @@
 {
+  "authors": [
+    "Lenamphy"
+  ],
   "description": "",
   "game": "Phoenotopia: Awakening",
   "github": "https://github.com/Amphyros/Phoenotopia-Awakening-AP-client",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "maximum_ap_version",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0": {
       "created_at": "2025-11-14T11:14:53Z",
@@ -33,6 +41,22 @@
       "title": "v0.1.1",
       "version_simple": "0.1.1",
       "world_version": "0.1.1"
+    },
+    "v0.2.0": {
+      "created_at": "2026-03-20T14:28:16Z",
+      "description": "<h1>0.2 is here!</h1>\r\n\r\nWhile this release doesn't add any new areas to the game, it adds quite some features needed to expand to a healthy randomizer with all item locations included.\r\n\r\n<h2>New features:</h2>\r\n\r\n- **Story management & Timewarps**: Once you defeat the Slargummy boss, Panselo will turn into its post-abduction state. If you ever need to go back to pre-abduction Panselo to get some checks you've missed, You can talk to the Zophiel statue and temporarily go back in time.\r\n\r\n- **All items** that are needed to get you to the end of the game are now included in the item pool! That means all tools, upgraded tools and weapons. Even with the limited amount of checks, it makes for a more interesting randomizer experience.\r\n\r\n- **Complete logic overhaul**: Though less noticeable for you as a player, the entire logic model now includes all the possibly necessary items and on a technical level, it's way easier to expand to the entire game.\r\n\r\n- **Batless start**: You can now start the game without the wooden bat and have it randomized in the item pool. This includes an option to open the Panselo gates by default, which prevents you from possibly getting BKed early in a multiworld.\r\n\r\n- **Upgradable items**: Bats, tools and the spear now have separate options to be upgradable. This means that you will always find the Slingshot before the Treble shot. The Wooden bat always before the Composite bat. And for the spear, this means you will always find the Sonic spear before the Spear bomb.\r\n\r\n- **Options to exclude (almost) every possible check**: Locations for key items, heart rubies, energy gems and moonstones can now be excluded. If you do, you have a separate option to still include these items in the item pool and have these locations filled with a filler item (Excluded key item locations will always work like this), or to exclude the items from the item pool and have them stay at their \r\nvanilla location. For now, Anuri pearlstone locations can't be excluded yet due to a feature I wish to work on for the next release.\r\n\r\n-  **Infinite Lunar Artifacts**: A change some might wish to be in vanilla. Lunar artifacts will no longer take up a spot in the inventory and can't be discarded. They can still be recycled for now, but once Astrid's rewards are included, this will also be disabled.\r\n\r\n- **Several new checks**: Most notably the checks in post-abduction Panselo. Also some checks I missed in the previous release and checks that couldn't be reached with the item pool of the previous release.\r\n\r\nOnce again, the community will be my testing crew. If you encounter any issues during your run, please let me know through one of the following ways:\r\n1. File an issue at the repository on [GitHub](https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/issues).\r\n2. Describe your issue in the game thread on the official AP discord.\r\n3. Post it in the mwgg-support channel in the [Unofficial AP Discord](https://discord.multiworld.gg)",
+      "download_url": "https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.2.0/phoa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0831b01e3c2d314695b0d1d3216eaa0bb7ed2c57e554c10db93a3930a33f3d4a",
+      "html_url": "https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.2.0",
+      "maximum_ap_version": "0.6.6",
+      "minimum_ap_version": "0.6.1",
+      "size": 15495,
+      "source_url": "https://api.github.com/repos/Amphyros/Phoenotopia-Awakening-AP-client",
+      "tag": "v0.2.0",
+      "title": "v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }

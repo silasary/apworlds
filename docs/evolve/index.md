@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/The1stBurb/EvolveAPWorld/releases/download/v0.1.4/evolve.apworld">Latest Version (0.1.4)</a>
+- <a href="https://github.com/The1stBurb/EvolveAPWorld/releases/download/v0.2.6/evolve.apworld">Latest Version (0.2.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
