@@ -4,7 +4,7 @@ Plants vs. Zombies
 
 
 ## Downloads
-- <a href="https://github.com/dannybonz/replanted_archipelago/releases/download/v1.6.2/pvzr.apworld">Latest Version (1.6.2)</a>
+- <a href="https://github.com/dannybonz/replanted_archipelago/releases/download/v1.6.3/pvzr.apworld">Latest Version (1.6.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Plants vs. Zombies: Replanted
 
 ## Latest
-- <a href="https://github.com/dannybonz/replanted_archipelago/releases/download/v1.6.2/pvzr.apworld">Latest Version (1.6.2)</a>
+- <a href="https://github.com/dannybonz/replanted_archipelago/releases/download/v1.6.3/pvzr.apworld">Latest Version (1.6.3)</a>
 
 ## All Versions
+
+#### v1.6.3
+- <a href="https://github.com/dannybonz/replanted_archipelago/releases/download/v1.6.3/pvzr.apworld">https://github.com/dannybonz/replanted_archipelago/releases/download/v1.6.3/pvzr.apworld</a>
 
 #### v1.6.2
 - <a href="https://github.com/dannybonz/replanted_archipelago/releases/download/v1.6.2/pvzr.apworld">https://github.com/dannybonz/replanted_archipelago/releases/download/v1.6.2/pvzr.apworld</a>

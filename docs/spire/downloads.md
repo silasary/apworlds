@@ -1,9 +1,12 @@
 # Slay the Spire
 
 ## Latest
-- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.3.4/spire.apworld">Latest Version (2.3.4)</a>
+- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.3.5/spire.apworld">Latest Version (2.3.5)</a>
 
 ## All Versions
+
+#### v2.3.5
+- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.3.5/spire.apworld">https://github.com/cjmang/StS-AP-World/releases/download/2.3.5/spire.apworld</a>
 
 #### v2.3.4
 - <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.3.4/spire.apworld">https://github.com/cjmang/StS-AP-World/releases/download/2.3.4/spire.apworld</a>
