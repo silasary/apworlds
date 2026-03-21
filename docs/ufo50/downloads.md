@@ -1,9 +1,12 @@
 # UFO 50
 
 ## Latest
-- <a href="https://github.com/UFO-50-Archipelago/Archipelago/releases/download/0.1.8/ufo50.apworld">Latest Version (0.1.8)</a>
+- <a href="https://github.com/UFO-50-Archipelago/Archipelago/releases/download/0.1.9/ufo50.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/UFO-50-Archipelago/Archipelago/releases/download/0.1.9/ufo50.apworld">https://github.com/UFO-50-Archipelago/Archipelago/releases/download/0.1.9/ufo50.apworld</a>
 
 #### v0.1.8
 - <a href="https://github.com/UFO-50-Archipelago/Archipelago/releases/download/0.1.8/ufo50.apworld">https://github.com/UFO-50-Archipelago/Archipelago/releases/download/0.1.8/ufo50.apworld</a>

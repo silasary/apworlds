@@ -7,7 +7,7 @@ Our goal is to combine a familiar 8-bit aesthetic with new ideas and modern game
 
 
 ## Downloads
-- <a href="https://github.com/UFO-50-Archipelago/Archipelago/releases/download/0.1.8/ufo50.apworld">Latest Version (0.1.8)</a>
+- <a href="https://github.com/UFO-50-Archipelago/Archipelago/releases/download/0.1.9/ufo50.apworld">Latest Version (0.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

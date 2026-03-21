@@ -32,12 +32,20 @@ Steps:
 5. Apply the `ufo_50_basepatch.bsdiff4` patch using your patching software.
 6. To launch the game, run `ufo50.exe`.
 
-### Downpatching
+### Downpatching UFO 50
 
 As UFO 50 is a game that is still receiving updates, periods of time between new official patches and the mod being updated will exist.
-Therefore, the user may end up having to either wait for the mod to be updated or use an older version of the game in order to play.  You can check which version of UFO 50 the mod targets [in the patch releases page](https://github.com/UFO-50-Archipelago/Patch/releases).
+Therefore, the user may end up having to either wait for the mod to be updated or use an older version of the game in order to play. You can check which version of UFO 50 the mod targets [in the patch releases page](https://github.com/UFO-50-Archipelago/Patch/releases).
 
-You can download a version of UFO 50 published on a specific date by going to the UFO 50 SteamDB page (`download_depot 1147860 1147861 7193516691465454523`) and pressing on the "copy to clipboard" button of the release you want. Follow the instructions from there. If you launch it and it shows the wrong version, try deleting the two steam dlls from the depot folder.
+0. You may wish to make a backup of your save files before proceeding.
+1. Launch Steam in Online Mode.
+2. Open the Steam Console by entering `steam://open/console` on any file or internet browser.
+3. On the Steam Console, enter `download_depot 1147860 1147861 7193516691465454523`.
+4. Steam will now download the right version of the game, wait for the download to finish. There is no progress bar.
+5. Once the download is finished, a path to the contents will be displayed, note it down, as it may be required for installation.
+6. Enter the depot folder and delete `steam_api64.dll` and `Steamworks_x64.dll`, then launch to game.
+7. In the intro, look at the bottom left corner and verify that the version is the same version the mod targets.
+8. You can now proceed with the installation, using the depot folder if prompted to locate UFO 50.
 
 ## Joining a MultiWorld Game
 
