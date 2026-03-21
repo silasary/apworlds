@@ -47,6 +47,22 @@
       "title": "v0.1.1",
       "version_simple": "0.1.0",
       "world_version": "0.1.0"
+    },
+    "v0.2.0": {
+      "created_at": "2026-03-21T00:40:21Z",
+      "description": "# v0.2.0 Changelog\r\n\r\n## What to expect\r\n- A mostly playable experience with some (possibly game breaking) bugs\r\n- Incomplete hideout quest implementation\r\n- Post-Juno cutscene will not load if you skipped content\r\n\r\n## New Features\r\n- New locations / items are randomized into the location / item pools:\r\n  - Cardon Forest Sub-Gate key pickups / keys.\r\n  - Rescuing the junk shop man / Mine Parts Kit.\r\n  - Turning in the Bag to the Inspector / Arm Supporter.\r\n  - Adding Pick to the item pool (no location).\r\n\r\n## Quality of Life Updates\r\n- Prevent a soft-lock where you could enter the Old City warehouse but could not exit. The warehouse is not properly locked up tight before the surfacing the Sub-City entrances in the Main Gate.\r\n- Rename \"Balkon Ger\u00e4t defeated\" to \"Balkon Gerat defeated\" for easier hinting.\r\n- Add item name groups:\r\n  - \"Cardon Forest Sub-Gate Key\"\r\n  - \"Lake Jyun Sub-Gate Key\"\r\n  - \"Clozer Woods Sub-Gate Key\"\r\n  - \"Sub-City Key\"\r\n- Add ! prefix to client commands to be consistent with other randomizers (try !help).\r\n- Update README for clearer setup instructions.\r\n\r\n## Bug Fixes\r\n- Fixed an issue where defeating Juno would not release the goal.\r\n- Fixed an issue with some checks giving both the randomized and vanilla items.\r\n- Fixed an issue where a few garbage pail locations were unobtainable:\r\n  - The downtown pail containing the Saw was not obtainable if you already had the Saw\r\n  - The downtown pail containing the Bag was not obtainable if you already had the Bag\r\n  - The left pail behind the hospital was un-checkable\r\n- Fixed a couple cases where two chest locations would release simultaneously.\r\n- Fixed multiple issues with text boxes due to not re-writing overwritten text back. This was causing issues such as:\r\n  - Some chests would not show text boxes at all.\r\n  - Re-checking already checked containers would show the old message (without giving you the item).\r\n  - Some items were made unobtainable, such as the Flower and Hideout pickup items.\r\n- Fixed an issue where reloading a save would not recover lost progress, such as reloading after death. Now, upon loading a save, the default behavior is to:\r\n  1. Re-receive all previously received non-zenny items.\r\n  2. Open all chests, garbage pails, boxes, holes that were previously opened.\r\n- Fixed some spelling errors in location names.\r\n- Fixed an issue which was adding multiple duplicate items into the item pool unintentionally. \r\n\r\nThanks to Uroogla for the code contributions and to the community for all of the excellent bug reports and feedback so far. Stay tuned for more updates!",
+      "download_url": "https://github.com/functorial/MMLAP/releases/download/v0.2.0/mml.apworld",
+      "has_manifest": true,
+      "hash_sha256": "72444071fb1285863c9dc384d59ff89430bc1413754bcfb85b5a5db7b86452d1",
+      "html_url": "https://github.com/functorial/MMLAP/releases/tag/v0.2.0",
+      "minimum_ap_version": "0.6.3",
+      "prerelease": true,
+      "size": 34971,
+      "source_url": "https://api.github.com/repos/functorial/MMLAP",
+      "tag": "v0.2.0",
+      "title": "v0.2.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
     }
   }
 }

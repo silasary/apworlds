@@ -1,9 +1,12 @@
 # APWorld Manager
 
 ## Latest
-- <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.22/apworld_manager.apworld">Latest Version (0.0.22)</a>
+- <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.23/apworld_manager.apworld">Latest Version (0.0.23)</a>
 
 ## All Versions
+
+#### v0.0.23
+- <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.23/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.23/apworld_manager.apworld</a>
 
 #### v0.0.22
 - <a href="https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.22/apworld_manager.apworld">https://github.com/silasary/Archipelago/releases/download/apworld_manager-0.0.22/apworld_manager.apworld</a>

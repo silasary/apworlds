@@ -5,7 +5,7 @@ You&#x27;ll have to use your wits in this quirky adventure to seduce everyone ar
 
 
 ## Downloads
-- <a href="https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.5/flipwitch.apworld">Latest Version (1.0.5)</a>
+- <a href="https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.6-pre/flipwitch.apworld">Latest Version (1.0.6rc0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

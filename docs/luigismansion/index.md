@@ -7,7 +7,7 @@ before he can move in and save Mario!
 
 
 ## Downloads
-- <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.0/luigismansion.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.1/luigismansion.apworld">Latest Version (0.6.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
