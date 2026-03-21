@@ -464,6 +464,21 @@
       "version_simple": "1.3.2",
       "world_version": "1.3.2"
     },
+    "1.3.3": {
+      "created_at": "2026-03-20T19:09:27Z",
+      "description": "**Note that setup instructions have changed slightly in v1.3.0+. Within Duckstation, navigate to Settings > Game Properties > Console and select \"Interpreter\" under \"Execution Mode\".**\r\n\r\nThis release contains only Client (S3AP.Desktop.exe), but no APWorld changes.  For convenience, the APWorld is uploaded here with a bumped version number, but those on 1.3.2 will not need to update.\r\n\r\nChanges\r\n- Improved handling of disconnects from the Archipelago server and from Duckstation.\r\n  - Disconnect handling may not be immediate.\r\n  - Please report any strange behavior or missed edge cases.\r\n- Allow connecting even when host or slot incorrectly start or end with spaces.\r\n  - Passwords are permitted to start and end with spaces, so this is **not** changed.  Please double check that the spacing in your passwords are correct.\r\n\r\nBug Fixes:\r\n- Fixed a bug where receiving a DeathLink while early in a jump could trigger a DeathLink for falling.\r\n- Fixed a bug where !unlockedLevels did not always show any levels.",
+      "download_url": "https://github.com/Uroogla/S3AP/releases/download/1.3.3/spyro3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c2e82e45ced6d081d106ab3c2a54f000ba53376088729d997e162b47a6aeea0d",
+      "html_url": "https://github.com/Uroogla/S3AP/releases/tag/1.3.3",
+      "minimum_ap_version": "0.6.1",
+      "size": 53340,
+      "source_url": "https://api.github.com/repos/Uroogla/S3AP",
+      "tag": "1.3.3",
+      "title": "v1.3.3",
+      "version_simple": "1.3.3",
+      "world_version": "1.3.3"
+    },
     "open_world_test": {
       "created_at": "2025-09-07T15:42:03Z",
       "description": "NOTE: This is a test build.  It very likely has bugs or errors.  Please be considerate of your fellow players when using this.  For the latest stable build, see https://github.com/Uroogla/S3AP/releases/tag/1.1.0\r\n\r\nNew feature:\r\n- Open World Option\r\n  - This opens up all 4 homeworlds from the start.\r\n  - The end of level egg for all 5 main levels of Sunrise, Midday, and Evening are pre-completed from the start of the seed.  Their items are all \"Filler\"\r\n  - Buzz, Spike, and Scorch do not need to be defeated.  Their eggs are pre-completed and their items are all \"Filler\".\r\n  - All levels that normally require eggs to unlock instead require a Level Unlock item.\r\n  - Players start with 1 egg because Spyro 3 portal unlocks are complicated.\r\n  - You may need to enter and exit a Sunrise level once for the rocket to behave properly.  Otherwise, it may be merged with the balloon.\r\n  - In Companionsanity or Moneybagssanity, players start with Sheila, Sgt. Byrd, and Bentley unlocked, due to potential logic issues.  The plan is to change this eventually.\r\n  - If you are in Sunrise when you unlock Molten or Seashell, you may need to enter another level and come back for the unlock to take effect.\r\n  - Not compatible with hwd's randomizer or world keys.\r\n  - Partially ignores Progressive Sparx Health Logic.  You are still guaranteed to have gold sparx in logic by the Sorceress, but unlocked levels like Fireworks do not account for this option.  You are encouraged to start with a higher sparx level than normal in this mode.",

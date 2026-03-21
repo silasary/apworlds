@@ -1,9 +1,12 @@
 # Deep Rock Galactic
 
 ## Latest
-- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18/deep_rock_galactic.apworld">Latest Version (0.18.0)</a>
+- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18.2/deep_rock_galactic.apworld">Latest Version (0.18.2)</a>
 
 ## All Versions
+
+#### v0.18.2
+- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18.2/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18.2/deep_rock_galactic.apworld</a>
 
 #### v0.18.0
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18/deep_rock_galactic.apworld</a>

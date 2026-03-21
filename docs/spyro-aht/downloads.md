@@ -11,6 +11,9 @@
 #### v0.3.0
 - <a href="https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.3.1/spyro-aht.apworld">https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.3.1/spyro-aht.apworld</a>
 
+#### v0.3.0
+- <a href="https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.3.2/spyro-aht.apworld">https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.3.2/spyro-aht.apworld</a>
+
 #### v0.2.1
 - <a href="https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.2.1/spyro-aht.apworld">https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.2.1/spyro-aht.apworld</a>
 
