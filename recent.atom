@@ -2,47 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-21T06:19:22.618897+00:00</updated>
+  <updated>2026-03-21T08:53:57.627233+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.5.1</id>
-    <title>Rain World v1.5.1</title>
-    <updated>2026-03-15T04:33:42+00:00</updated>
-    <author>
-      <name>alphappy, SaltySyrup</name>
-    </author>
-    <content># See [the setup page](https://github.com/alphappy/ArchipelagoRW/blob/v1.5.0/worlds/rain_world/docs/setup_en.md) for instructions.&#13;
-# This release is intended to be used with [v1.5.3 of the client](https://github.com/SaltiestSyrup/RWRandomizer/releases/tag/v1.5.3).&#13;
-# Scroll down to Assets to find the player YAML templates and the .apworld.&#13;
-&#13;
-## Player YAML Settings&#13;
-- Added Pearl, Gooieduck, and Beehive filler items (4f4973a4d26d38b27a127e636ff172db3e947d8f)&#13;
-- Added Responsibility, Ripple Spawn, and Blizzard Lizard trap items (b776627c7813dba3962b9e7ea4d40e1766fde2e1)&#13;
-&#13;
-## Logic Changes / Fixes &#13;
-- Pomegranates are now considered a valid vegetarian food for Monk access calculations (33b49113c732e1a9b9b1a3962d5d80f5928c580e)&#13;
-- The Scholar passage will now check for access to three regions containing pearls (2edfe48f82f4d4dc605b881142e6df4f66f35f80)&#13;
-- It is now considered possible to travel backwards from Survivor spawn to Outskirts filtration as Saint or with any explosive jump (63ab7d25255456b3a8f7c4e3544f7371a5bef76b)&#13;
-- The flower in WSKD_B40 now requires some vertical mobility to be in logic (1c8533c09239bd443039a6c6f4a9731c12bea146)&#13;
-- Bitter Aerie checks will now generate for Saint (2a90d7f61ce9039b927338053c0b34643c2eaad6)&#13;
-- Inv is now considered able to achieve the Mother passage (35efd0994d5f89c5b15ac6f1197ca55531955f5e)&#13;
-&#13;
-## Generation Fixes&#13;
-- Fix inaccuracies in logic determining which regions are valid starts (bc81c9ceaeca2a4589d114e11036b6b4f1931003)&#13;
-- Fix area above LttM being in logic for Rivulet when Submerged Superstructure is disabled (d033b83a425b1016bc3b49bb4b73879d288d2ecb)&#13;
-- Survivor and Monk no longer expected to complete "Red Centipede / Aquapede" food quest when Submerged Superstructure is disabled, as the only normal spawn in these campaigns is the aquapede near the gate (d033b83a425b1016bc3b49bb4b73879d288d2ecb)&#13;
-- Watcher is no longer expected to complete "Red Centipede / Aquapede" food quest when rotted region checks are disabled, as the only normal spawn is in Infested Wastes (d033b83a425b1016bc3b49bb4b73879d288d2ecb)&#13;
-- Phony warp checks in Ancient Urban removed, added a Spinning Top location in their place (b418a9371cc64b2cabbeb1977fdebb5637861229)&#13;
-- `passage_priority` option was previously completely non-functional, it now works as described (6865adabef347570ebeba7d0d0aa779e67156b0d)&#13;
-- Saint's non-existing "Exterior to Shoreline" gate has had the item removed (2a90d7f61ce9039b927338053c0b34643c2eaad6)&#13;
-&#13;
-## Technical Fixes&#13;
-- Event locations are now sorted before being added to pool, to pass determinism tests (4fd13362b77f94be4b3a0e0397e29c44bbef6d6a)</content>
-    <link href="https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.5.1"/>
-  </entry>
   <entry>
     <id>https://github.com/GlassToadstool/Archipelago/releases/tag/0.6.0</id>
     <title>Portal 2 v0.6.0</title>
@@ -1202,5 +1166,18 @@ Changes:&#13;
 &#13;
 I have not tested this completely yet, but someone mentioned wanting to help, so feel free.  Just don't expect stability.</content>
     <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.6-pre"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/Archipelago/releases/tag/apworld_manager-0.0.24</id>
+    <title>APWorld Manager v0.0.24</title>
+    <updated>2026-03-21T08:44:39+00:00</updated>
+    <author>
+      <name>silasary</name>
+    </author>
+    <content>* Added support for --install command line argument.
+  * You can use this with `./Launcher worldman -- --install &lt;world name or world_id&gt;`.
+* Added a Launcher icon
+* Fixed bug with --nogui</content>
+    <link href="https://github.com/silasary/Archipelago/releases/tag/apworld_manager-0.0.24"/>
   </entry>
 </feed>
