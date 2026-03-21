@@ -34,5 +34,4 @@
 * **Smelter Wedge**: This group contains the `Smelter Wedge x11`
 * **Soul of a Giant**: This group contains the `Soul of a Giant x5`
 * **Progression**: This group contains all the items marked as progression (not necessarily all the items you need to finish the run)
-* **Useful**: This group contains all the items marked as useful
 * **Everything**

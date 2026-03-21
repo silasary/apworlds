@@ -1,9 +1,12 @@
 # Peggle Nights
 
 ## Latest
-- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.0.2/peggle_nights.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.0.2/peggle_nights.apworld">Latest Version (1.0.2.post2)</a>
 
 ## All Versions
+
+#### v1.0.2.post2
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.0.2/peggle_nights.apworld">https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.0.2/peggle_nights.apworld</a>
 
 #### v1.0.2
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.0.2/peggle_nights.apworld">https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.0.2/peggle_nights.apworld</a>

@@ -1,10 +1,10 @@
 # Dark Souls II
 
-
+PeakSouls2
 
 
 ## Downloads
-- <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.1/dark_souls_2.apworld">Latest Version (0.6.0a1)</a>
+- <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.2/dark_souls_2.apworld">Latest Version (0.6.0a2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

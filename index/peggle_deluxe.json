@@ -88,6 +88,21 @@
       "title": "Peggle Deluxe - 1.1.2",
       "version_simple": "1.1.2",
       "world_version": "1.1.2"
+    },
+    "peggle-deluxe-v1.1.2r2": {
+      "created_at": "2026-03-15T17:39:26Z",
+      "description": "This is a minor bugfix / improvement release that is likely to be the _final release_ for this game. I do not intend to work on it further.\r\n\r\n**This release is NOT compatible with games generated on prior versions since item / location names have been altered**\r\n\r\n**Fix:** Removed square bracket notation in item / location names referring to levels. While square brackets are not disallowed for these names, a handful of other Archipelago implementations do not handle them correctly, all the way to fully crashing / not working at all. Let's aim for maximum compatibility even if Peggle isn't in the wrong here.\r\n\r\n**WARNING: This change will INVALIDATE any existing YAML as the `level_selection` option used to contain those square brackets. You can either remove the square brackets manually or copy / paste the option from the new template YAML and set the values according to your preferences**\r\n\r\n**Tweak:** `Target Score (High)` can now be sent out-of-logic (i.e. without having 4 Progressive Fever Meter items)\r\n\r\n**Link to the previous release:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.1.1)\r\n**Link to the original release, with README:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.0.0)",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.1.2/peggle_deluxe.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6ca88e8e7285544e1f456ac985d0c354052cbbc12d113aa102e755afd5c7a9bf",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.1.2",
+      "minimum_ap_version": "0.6.5",
+      "size": 1834155,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "peggle-deluxe-v1.1.2r2",
+      "title": "Peggle Deluxe - 1.1.2",
+      "version_simple": "1.1.2",
+      "world_version": "1.1.2.post2"
     }
   }
 }

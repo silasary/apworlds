@@ -1,9 +1,12 @@
 # Dark Souls II
 
 ## Latest
-- <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.1/dark_souls_2.apworld">Latest Version (0.6.0a1)</a>
+- <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.2/dark_souls_2.apworld">Latest Version (0.6.0a2)</a>
 
 ## All Versions
+
+#### v0.6.0a2
+- <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.2/dark_souls_2.apworld">https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.2/dark_souls_2.apworld</a>
 
 #### v0.6.0a1
 - <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.1/dark_souls_2.apworld">https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.1/dark_souls_2.apworld</a>

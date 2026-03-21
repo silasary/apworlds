@@ -262,6 +262,20 @@
       "title": "Crypt of the NecroDancer Archipelago v0.4.2",
       "version_simple": "0.4.2",
       "world_version": "0.4.2"
+    },
+    "v0.5.0": {
+      "created_at": "2026-03-21T14:10:48Z",
+      "description": "### Changes\r\n- Refactors Items and Locations logic to not require CSVs, more workable structs for Client/Rules/Generation functionality\r\n- Adds Starting Inventory setting, permitting the user to select what percentage of starting items will populate their multiworld inventory upon starting the game. Default is 50%. (Might change to 25/33% in the future, still seems rather high).\r\n- Adds Character Unlocks settings, permitting characters to be locked behind acquiring their starting items\r\n - Soft: Only during generation, allowing you to play as a character without certain non-unique starting items (minus Dorian :( ). Unique starting items still lock a character from being accessible.\r\n - Hard: The mod will not allow you to play as a character until you acquire their starting items first, identified by a yellow question mark on the selector silhouette.\r\n- Adds Unique items setting, permitting _some_ characters' unique items to be locked behind checks. This is taken into account for the character unlocks setting above.\r\n - Unique items added: Dorian's Plate Armor, Klarinetta's Shiny Armor, Hatsune Miku's Virtual Armor, Shovel Knight's Shovel Blade, Melody's Golden Lute, Eli's Hand, Dove's Flower, Klarinetta's Zweihander, Chaunter's Lantern, Suzu's Lance of Courage, Hatsune Miku's Leek, Nocturna's Transform Spell\r\n- Adds Include Materials setting, locking weapon materials in progression. Collecting a weapon material will allow for all weapon shapes to have that material in a run. (Locks Tempo's Blood Dagger starting item when soft/hard character unlocks is enabled)\r\n- Adds Zone Access Keys setting, locking future zones behind progressive/separate zone access keys.\r\n - Completing Zone 1 will not unlock Zone 2 until the respective key is unlocked, whether progressive or specific to zone 2.\r\n- Adds LockCharacterRoom setting, which will lock the character room key behind an early sphere item, locking you to your starting character until it's unlocked.\r\n- Adds StartingZone setting, which only triggers when ZoneAccessKeys is not disabled.\r\n - Starting in Zone 3, for instance, will add either two progressive zone keys or the Zone 3 access key to your starting inventory in the multiworld\r\n - Changes `per_level_zone_clears` setting to `floor_clear_checks` for better readability. Adds `per_level_zone_clears` as an alias for now.\r\n\r\nPlease see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.\r\n\r\nPlease inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).",
+      "download_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.5.0/cotnd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fdb65ec6e1792391b2fd99ccab8b261dec6b6ca4b0f8a40f62f4557a75ddaf62",
+      "html_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.0",
+      "size": 21913277,
+      "source_url": "https://api.github.com/repos/lastingParadox/Archipelago-CotND",
+      "tag": "v0.5.0",
+      "title": "Crypt of the NecroDancer Archipelago v0.5.0",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
     }
   }
 }

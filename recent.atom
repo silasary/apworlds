@@ -2,101 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-21T12:10:27.793137+00:00</updated>
+  <updated>2026-03-21T18:09:37.277918+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.6.6</id>
-    <title>Casualties: Unknown v0.6.6.post2</title>
-    <updated>2026-03-15T08:59:49+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.6.6&#13;
-This update is NOT compatible with worlds generated on previous versions!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-&#13;
-# Changes&#13;
-- Fixed the text client printing empty lines&#13;
-- Fixed a misspelling in `Moodlesanity - Stimulated` [APWorld Change]&#13;
-- Deathlink messages now add punctuation to the cause if it didn't come with it already&#13;
-- Changed the Depression Trap to say "Mood" instead of "Happiness"&#13;
-- Disfigured Trap is now more violent&#13;
-- Moved some item IDs around [APWorld Change]&#13;
-- Added fillers for each of the crystal shards [APWorld Change]&#13;
-- The APWorld will now fail early if there are more progression items than locations, instead of cascading to a generation fail [APWorld Change]&#13;
-- The APWorld now requires Archipelago 0.6.6 [APWorld Change]&#13;
-&#13;
-# Known Issues&#13;
-Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
-Recipes may sometimes wipe themselves upon reconnection. Getting another recipe item triggers a failsafe that should fix this&#13;
-Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
-&#13;
-**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.6.5...v0.6.6</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.6.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.3</id>
-    <title>Black Ops 3 - Zombies v0.2.3</title>
-    <updated>2026-03-15T12:18:20+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>Hotfix 3&#13;
-&#13;
-- Improve AP item processing speed by up to 10x&#13;
-- Fix location notifications showing more than once&#13;
-- Fix player data not being properly restored when loading a checkpoint&#13;
-- Fix universal player data polluting different AP seeds when changing seed without restarting the game first&#13;
-&#13;
-Unless anything major comes up, this will be the last hotfix until another map is added.</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.1.2</id>
-    <title>Peggle Deluxe v1.1.2</title>
-    <updated>2026-03-15T17:39:26+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is a minor bugfix / improvement release that is likely to be the _final release_ for this game. I do not intend to work on it further.&#13;
-&#13;
-**This release is NOT compatible with games generated on prior versions since item / location names have been altered**&#13;
-&#13;
-**Fix:** Removed square bracket notation in item / location names referring to levels. While square brackets are not disallowed for these names, a handful of other Archipelago implementations do not handle them correctly, all the way to fully crashing / not working at all. Let's aim for maximum compatibility even if Peggle isn't in the wrong here.&#13;
-&#13;
-**WARNING: This change will INVALIDATE any existing YAML as the `level_selection` option used to contain those square brackets. You can either remove the square brackets manually or copy / paste the option from the new template YAML and set the values according to your preferences**&#13;
-&#13;
-**Tweak:** `Target Score (High)` can now be sent out-of-logic (i.e. without having 4 Progressive Fever Meter items)&#13;
-&#13;
-**Link to the previous release:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.1.1)&#13;
-**Link to the original release, with README:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.0.0)</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v1.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v1.0.2</id>
-    <title>Peggle Nights v1.0.2</title>
-    <updated>2026-03-15T18:06:51+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is a minor bugfix / improvement release that is likely to be the _final release_ for this game. I do not intend to work on it further.&#13;
-&#13;
-**This release is NOT compatible with games generated on prior versions since item / location names have been altered**&#13;
-&#13;
-**Fix:** Removed square bracket notation in item / location names referring to levels. While square brackets are not disallowed for these names, a handful of other Archipelago implementations do not handle them correctly, all the way to fully crashing / not working at all. Let's aim for maximum compatibility even if Peggle isn't in the wrong here.&#13;
-&#13;
-**WARNING: This change will INVALIDATE any existing YAML as the `level_selection` option used to contain those square brackets. You can either remove the square brackets manually or copy / paste the option from the new template YAML and set the values according to your preferences**&#13;
-&#13;
-**Tweak:** `Target Score (High)` can now be sent out-of-logic (i.e. without having 4 Progressive Fever Meter items)&#13;
-&#13;
-**Link to the previous release:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v1.0.1)&#13;
-**Link to the original release, with README:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v1.0.0)</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v1.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.0</id>
     <title>plateup v0.2.5</title>
@@ -1105,6 +1015,19 @@ https://github.com/Thedrummonger/Archipelago/blob/YARGV2/worlds/yayarg/docs/guid
     <link href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.18.2"/>
   </entry>
   <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v0.9.0</id>
+    <title>Refunct v0.9.0</title>
+    <updated>2026-03-20T23:36:37+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content># Version 0.9.0!&#13;
+- Added "Climb Minigames", three variants in which you need to climb up a huge stairs of generated blocks. Note that this is off in the default yaml because it can be challenging.&#13;
+- Added "Block Blub", collect underwater cubes in a messy block maze!&#13;
+- Renamed items and locations (`Trigger Cluster ..` is now just `Cluster ..`, and `Unlock ... Minigame` is now just `... Minigame`).</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v0.9.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/silasary/Archipelago/releases/tag/apworld_manager-0.0.23</id>
     <title>APWorld Manager v0.0.23</title>
     <updated>2026-03-21T01:36:04+00:00</updated>
@@ -1186,5 +1109,106 @@ I have not tested this completely yet, but someone mentioned wanting to help, so
     <content>- Allows Tarin's Gift to be a non-local item&#13;
 - Retroarch host can be configured in host.yaml</content>
     <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/tag/v0.6.0-alpha.2</id>
+    <title>Dark Souls II v0.6.0a2</title>
+    <updated>2026-03-21T13:21:43+00:00</updated>
+    <author>
+      <name>WildBunnie</name>
+    </author>
+    <content>## Changes and New Features&#13;
+&#13;
+### Fixes&#13;
+- Fixed crash that would happen sometimes when connecting through the client even though it would connect correctly before&#13;
+- Fixed crash when sending items to players with specific characters in their username&#13;
+- Fixed "mod could not initialize" error that would happen to some people&#13;
+- Max slot name in the input box in the client is now correct (16 characters)&#13;
+&#13;
+### Archipelago&#13;
+- `useful_items` YAML option that allows choosing what items will be marked as useful&#13;
+  - Now if you empty this list no item will be marked as useful&#13;
+- `include_items` YAML option that allows for adding extra items to the pool that might not be added by default&#13;
+- `include_locations` YAML option that excludes all locations NOT present inside it (inverse `exclude_locations`)&#13;
+- Added missing lockstone rules for some locations&#13;
+- Fix issue where you could have duplicate progression items&#13;
+- Fixed issue with some items that were marked as reachable in shaded woods even though they were after shrine of winter&#13;
+- Fixed `portcullis near ruined house below Cale, corpse` location being behind soldier key even though that is not the case&#13;
+- Fix one of the pursuer drops that was not marked as missable&#13;
+&#13;
+###  Game Modifications&#13;
+- Najka's tree can now be broken by hitting it&#13;
+&#13;
+### Technical Stuff&#13;
+- Added logging to a file to help with debugging crashes/issues&#13;
+- Messages in the overlay console now only have hours, minutes and seconds instead of having year, day, etc...&#13;
+- Add some extra info to slotdata to allow poptracker to check the enabled dlcs and combat logic&#13;
+&#13;
+## Links&#13;
+&#13;
+- `apworld` code: https://github.com/WildBunnie/Archipelago/commit/e0fa411e8c23ea5e7177b138a6f84a7b5f53275c&#13;
+&#13;
+- `ds2-modengine`: https://github.com/WildBunnie/ds2-modengine/commit/69531a8fbfac83fc93735d5eae56d68005b6ac1e&#13;
+&#13;
+- **Full Changelog**: https://github.com/WildBunnie/DarkSoulsII-Archipelago/compare/v0.6.0-alpha.1...v0.6.0-alpha.2 &#13;
+&#13;
+## Special Thanks&#13;
+Thank you to [iljoRSP](https://github.com/iljoRSP) for contributing to the apworld!</content>
+    <link href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/tag/v0.6.0-alpha.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.0</id>
+    <title>Crypt of the NecroDancer v0.5.0</title>
+    <updated>2026-03-21T14:10:48+00:00</updated>
+    <author>
+      <name>lastingParadox</name>
+    </author>
+    <content>### Changes&#13;
+- Refactors Items and Locations logic to not require CSVs, more workable structs for Client/Rules/Generation functionality&#13;
+- Adds Starting Inventory setting, permitting the user to select what percentage of starting items will populate their multiworld inventory upon starting the game. Default is 50%. (Might change to 25/33% in the future, still seems rather high).&#13;
+- Adds Character Unlocks settings, permitting characters to be locked behind acquiring their starting items&#13;
+ - Soft: Only during generation, allowing you to play as a character without certain non-unique starting items (minus Dorian :( ). Unique starting items still lock a character from being accessible.&#13;
+ - Hard: The mod will not allow you to play as a character until you acquire their starting items first, identified by a yellow question mark on the selector silhouette.&#13;
+- Adds Unique items setting, permitting _some_ characters' unique items to be locked behind checks. This is taken into account for the character unlocks setting above.&#13;
+ - Unique items added: Dorian's Plate Armor, Klarinetta's Shiny Armor, Hatsune Miku's Virtual Armor, Shovel Knight's Shovel Blade, Melody's Golden Lute, Eli's Hand, Dove's Flower, Klarinetta's Zweihander, Chaunter's Lantern, Suzu's Lance of Courage, Hatsune Miku's Leek, Nocturna's Transform Spell&#13;
+- Adds Include Materials setting, locking weapon materials in progression. Collecting a weapon material will allow for all weapon shapes to have that material in a run. (Locks Tempo's Blood Dagger starting item when soft/hard character unlocks is enabled)&#13;
+- Adds Zone Access Keys setting, locking future zones behind progressive/separate zone access keys.&#13;
+ - Completing Zone 1 will not unlock Zone 2 until the respective key is unlocked, whether progressive or specific to zone 2.&#13;
+- Adds LockCharacterRoom setting, which will lock the character room key behind an early sphere item, locking you to your starting character until it's unlocked.&#13;
+- Adds StartingZone setting, which only triggers when ZoneAccessKeys is not disabled.&#13;
+ - Starting in Zone 3, for instance, will add either two progressive zone keys or the Zone 3 access key to your starting inventory in the multiworld&#13;
+ - Changes `per_level_zone_clears` setting to `floor_clear_checks` for better readability. Adds `per_level_zone_clears` as an alias for now.&#13;
+&#13;
+Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
+&#13;
+Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
+    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.4</id>
+    <title>Black Ops 3 - Zombies v0.2.4</title>
+    <updated>2026-03-21T16:36:30+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>**Apworld:**&#13;
+- Added improved logic for round progression by @PIEisFANTASTIC&#13;
+- Round progression is now split up in groups of 5 per map.&#13;
+- Perks, Pack-a-Punch, and weapon count all apply towards what round can be logically reached.&#13;
+- Added round logic for some part sets that have a minimum round, like the Apothican Servant on SoE and the DG-4 on DE.&#13;
+- Added an option to set the number of maps you want to hit your goal round on, if doing rounds for goal.&#13;
+- You can exclude specific bows from the randomly selected elemental bow checks&#13;
+- You can select how many maps needed to goal on Goal Round, instead of always clearing every map&#13;
+- Goal round can be lower than maximum check round&#13;
+&#13;
+**Mod:**&#13;
+- Shadows of Evil changes&#13;
+  - Beastmode can now call trains to other stations. This should make the solo easter egg ending much safer.&#13;
+  - Swords no longer have to be collected from the sword rock when restoring a save. Tier 1 is awarded immediately, and Tier 2 is awarded after the Pack-A-Punch ritual is complete.&#13;
+- Wallbuy ammo refills now also fill your clip&#13;
+- Fix wallbuy ammo refills not awarding ammo for upgraded weapons&#13;
+- Fix bug preventing Revelations from restoring map state and doing round saves if Sophia hadn't materialized yet&#13;
+- (Workshop) Work in progress support for 'Wanted'. Expect issues if enabled.</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.2.4"/>
   </entry>
 </feed>
