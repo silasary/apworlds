@@ -1,9 +1,15 @@
 # Deadlock
 
 ## Latest
-- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.2/deadlock.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.4-unstable/deadlock.apworld">Latest Version (1.1.4)</a>
 
 ## All Versions
+
+#### v1.1.4
+- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.4-unstable/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.4-unstable/deadlock.apworld</a>
+
+#### v1.1.3
+- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.3/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.3/deadlock.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.2/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.2/deadlock.apworld</a>
