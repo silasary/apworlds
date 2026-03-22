@@ -2,64 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-22T06:20:50.013910+00:00</updated>
+  <updated>2026-03-22T12:14:59.491675+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.25</id>
-    <title>Pokemon Black and White v0.3.25</title>
-    <updated>2026-03-16T23:07:58+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <author>
-      <name>SparkyDaDoggo</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-- Fixed incorrect logic for getting access to the roamer&#13;
-- Fixed unit test failures on GitHub due to the `ndspy` library missing (next try)&#13;
-- Tweaked the option description for the `Stats leniency` parameter&#13;
-- Fixed the seen count locations not accounting for the `All Pokémon Seen` option&#13;
-- Made HM moves forgettable without the move deleter&#13;
-- Tweaked the `dump_patched_files` part of the patching process&#13;
-&#13;
-## Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
-However, tracking worlds generated before 0.3.25 might show incorrect Dexsanity logic in UT&#13;
-&#13;
-## Notes regarding the `pokemon_bw_without_maps.apworld` file&#13;
-That version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.&#13;
-To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
-It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.25"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.26</id>
-    <title>Pokemon Black and White v0.3.26</title>
-    <updated>2026-03-16T23:07:58+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <author>
-      <name>SparkyDaDoggo</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-- Removed HMs being forgettable due to game breaking bugs resulting from it&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
-However, tracking worlds generated before 0.3.25 might show incorrect Dexsanity logic in UT&#13;
-&#13;
-## Notes regarding the `pokemon_bw_without_maps.apworld` file&#13;
-That version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.&#13;
-To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
-It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.26"/>
-  </entry>
   <entry>
     <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.13</id>
     <title>Tevi v1.4.13</title>
@@ -1197,5 +1144,97 @@ Thank you Razgriz!</content>
 &#13;
 **Full Changelog**: https://github.com/stubobis1/Archipelago/compare/1.2.1...1.3.0</content>
     <link href="https://github.com/stubobis1/Archipelago/releases/tag/1.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.3</id>
+    <title>Ape Escape 3 v2.0.3</title>
+    <updated>2026-03-22T11:32:13+00:00</updated>
+    <author>
+      <name>aidanii</name>
+    </author>
+    <content># Ape Escape 3 Archipelago v2.0.3&#13;
+:warning:    **GENERATION CHANGES**&#13;
+:warning:    **host.yaml CHANGES**&#13;
+## Features&#13;
+### Logic&#13;
+- Added more uses for Boost Fly, Genie Dancer, Morph Infinite Jump, Clips and other tricks (@mrgamekiller, @bmanrulesyou21, @branch)&#13;
+### Options&#13;
+- `specters_goal_target_as_post` [default: true] Forces a corresponding Specter channel to PGC if a relevant Goal Target is selected. This is a shorthand to adding the desired Specter channel to `post_channel`&#13;
+- `blacklist_bosses` Forces boss channels to be excluded from the channel pool. This is a shorthand to adding the desired bosses to `blacklist_channel`&#13;
+  - Options: `disabled` [default], `enabled`, `keep_specters`&#13;
+- `emulator_preferred_slot` Determine the preferred Slot to connect to PCSX2 with on the Client.&#13;
+- `emulator_linux_preferred_platform` (Linux) Determine the preferred PCSX2 installation type to connect to by the Client.&#13;
+  - Options: `auto`, `standard` (appimage, or others), `flatpak`&#13;
+### Client&#13;
+- New Commands: `pine_slot`, `pine_platform`, `pine_connect`&#13;
+  - These commands allow players to change what PCSX2 instance to connect to during play by identifying the emulator instance by slot (and platform for linux as well).&#13;
+- Status now reports your PINE Slot/Platform&#13;
+### host.yaml&#13;
+- `pine_connect_offline` [default: true] Determine if the client should try to establish a connection with PCSX2 even if it has not yet connected to an Archipelago Room&#13;
+## Fixes&#13;
+### Logic&#13;
+- Fixed some erroneous entrance rules</content>
+    <link href="https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.7.0</id>
+    <title>Casualties: Unknown v0.7.0</title>
+    <updated>2026-03-22T11:32:55+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.7.0&#13;
+This update is NOT compatible with worlds generated on previous versions!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+&#13;
+This is a big one!&#13;
+# Additions&#13;
+- New UI for basic messages, such as players leaving, joining, chatting, and goaling.&#13;
+- New UI for displaying server countdown status.&#13;
+- New UI to pick the next layer after finishing one or starting a run.&#13;
+- Archipelago messages in the console now have an Archipelago prefix.&#13;
+- Two new traps. Temptation Trap and Trip Trap. [APWorld Change]&#13;
+- Instances of the word 'Archipelago' that were colored now rotate their colors.&#13;
+- There is now a (poorly made) custom logo on the main menu.&#13;
+- Archipelago Items and Randomize Recipes have received a complete rework.&#13;
+	- Randomize Recipes is back to being a toggle, where it only adds the recipes as items, and adds no checks.&#13;
+	- Archipelago Items are now a seperate option, where you can choose how many items there are in the world to check, up to 200.&#13;
+	- Archipelago Items now have dynamic sprites (using KaitoKid.ArchipelagoUtilities.Net).&#13;
+		- This does not work in trader inventories, but it's not worth the effort to make it work there.&#13;
+	- Crates, Chests, Traps, and other misc objects will now always drop an Archipelago Item when destroyed or opened.&#13;
+		- This also applies to Survivors, which are guarenteed to always sell a free Archipelago Item.&#13;
+	- To balance how common Archipelago items are, they now give 10 INT exp instead of 35.&#13;
+&#13;
+# Changes&#13;
+- Basegame debug and cheat commands are now disabled if the Archipelago server is in race mode.&#13;
+- Trap items will no longer trigger Experiment dialog.&#13;
+- Item receive and hint popups now have item coloring.&#13;
+- Experiment will now say messages typed into `apchat`.&#13;
+- Moodlesanity checks now show feedback when they are sent out.&#13;
+- The Archipelago UI now shares a font with the normal game's UI.&#13;
+- The Progressive STR dialog where Experiment says their current weight is now rounded to one decimal instead of six.&#13;
+- Archipelago Items are now weightless (down from 0.2u).&#13;
+&#13;
+# Fixes&#13;
+- Fixed Experiment dialog rarely throwing errors.&#13;
+- Getting enough experience to level up more than once will now properly send two Skillsanity checks.&#13;
+- Items received from the Cheat Console or !getitem will no longer show in the text client.&#13;
+- Fragile Items Trap should no longer completely lock up item receiving.&#13;
+- Items received while on the main menu will now display properly.&#13;
+- The game no longer crashes when using Archipelago commands after disconnecting.&#13;
+- The server version is no longer shown in the bottom left after disconnecting.&#13;
+- Fixed the persistent "Ensure Read/Write is enabled on the Particle System's Texture" error.&#13;
+- Generation isn't stopped early if the amount of items is the same as the amount of locations. [APWorld Change]&#13;
+- Fixed there being twice as many Limb items as there should have been.&#13;
+&#13;
+# Known Issues&#13;
+Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
+Recipes may sometimes wipe themselves upon reconnection. Getting another recipe item triggers a failsafe that should fix this&#13;
+Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
+A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with Harmony.&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.6.6...v0.7.0</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.7.0"/>
   </entry>
 </feed>

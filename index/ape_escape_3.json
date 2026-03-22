@@ -409,6 +409,21 @@
       "title": "v2.0.2",
       "version_simple": "2.0.2",
       "world_version": "2.0.2"
+    },
+    "v2.0.3": {
+      "created_at": "2026-03-22T11:32:13Z",
+      "description": "# Ape Escape 3 Archipelago v2.0.3\r\n:warning:    **GENERATION CHANGES**\r\n:warning:    **host.yaml CHANGES**\r\n## Features\r\n### Logic\r\n- Added more uses for Boost Fly, Genie Dancer, Morph Infinite Jump, Clips and other tricks (@mrgamekiller, @bmanrulesyou21, @branch)\r\n### Options\r\n- `specters_goal_target_as_post` [default: true] Forces a corresponding Specter channel to PGC if a relevant Goal Target is selected. This is a shorthand to adding the desired Specter channel to `post_channel`\r\n- `blacklist_bosses` Forces boss channels to be excluded from the channel pool. This is a shorthand to adding the desired bosses to `blacklist_channel`\r\n  - Options: `disabled` [default], `enabled`, `keep_specters`\r\n- `emulator_preferred_slot` Determine the preferred Slot to connect to PCSX2 with on the Client.\r\n- `emulator_linux_preferred_platform` (Linux) Determine the preferred PCSX2 installation type to connect to by the Client.\r\n  - Options: `auto`, `standard` (appimage, or others), `flatpak`\r\n### Client\r\n- New Commands: `pine_slot`, `pine_platform`, `pine_connect`\r\n  - These commands allow players to change what PCSX2 instance to connect to during play by identifying the emulator instance by slot (and platform for linux as well).\r\n- Status now reports your PINE Slot/Platform\r\n### host.yaml\r\n- `pine_connect_offline` [default: true] Determine if the client should try to establish a connection with PCSX2 even if it has not yet connected to an Archipelago Room\r\n## Fixes\r\n### Logic\r\n- Fixed some erroneous entrance rules",
+      "download_url": "https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.3/ape_escape_3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "07e5093eb416a67c3b544ba6f49bcd98e06710014745a2d5f99c71dea3dc9115",
+      "html_url": "https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.3",
+      "minimum_ap_version": "0.6.3",
+      "size": 142795,
+      "source_url": "https://api.github.com/repos/aidanii24/ae3-archipelago",
+      "tag": "v2.0.3",
+      "title": "v2.0.3",
+      "version_simple": "2.0.3",
+      "world_version": "2.0.3"
     }
   }
 }
