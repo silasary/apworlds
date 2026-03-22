@@ -4,7 +4,7 @@ Dicey Dungeons is a roguelike deck-building game where players navigate through 
 
 
 ## Downloads
-- <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.2.3-beta/diceydungeons.apworld">Latest Version (0.2.3b0)</a>
+- <a href="https://github.com/Fylcoast/AP_diceydungeons/releases/download/v0.2.4-beta/diceydungeons.apworld">Latest Version (0.2.4b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

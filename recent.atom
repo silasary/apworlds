@@ -2,146 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-21T18:09:37.277918+00:00</updated>
+  <updated>2026-03-22T00:16:03.419112+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.0</id>
-    <title>plateup v0.2.5</title>
-    <updated>2026-03-15T20:49:01+00:00</updated>
-    <author>
-      <name>CazIsABoi</name>
-    </author>
-    <content>## What's New?&#13;
-- Blueprint Check Pedestals are now in the game! Three pedestals spawn on the street outside your restaurant, each showing a check you can buy for a set price. The price and number of checks available are fully configurable in your YAML.&#13;
-- Item scouting is now done on connect, so each pedestal shows the actual name of the item it'll send, including the player it belongs to if it's for someone else in the multiworld.&#13;
-- Improved error messaging when your YAML settings result in too few locations for the item pool.&#13;
-- Default option values have been adjusted to better suit the integration out of the box.&#13;
-&#13;
-## New YAML Options&#13;
-**`blueprint_check_count`** — How many blueprint checks to add to the pool. Each one spawns a purchasable pedestal check over the course of your run.&#13;
-&#13;
-**`blueprint_base_price`** — The starting price for buying a blueprint check.&#13;
-&#13;
-**`blueprint_price_increase`** — How much the price goes up after each blueprint check is purchased.&#13;
-&#13;
-## Note&#13;
-This apworld update is directly tied to the mod update — make sure you update both together for everything to work correctly!&#13;
-[Mod Update 0.2.6.0](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/)</content>
-    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.3</id>
-    <title>ToeJam and Earl v0.5.3</title>
-    <updated>2026-03-15T21:06:09+00:00</updated>
-    <author>
-      <name>IgnisUmbrae</name>
-    </author>
-    <content>## Small changes&#13;
-&#13;
-- Item links are now supported&#13;
-- Promotion logic has been simplified and now assumes the player will use every Promotion present in an "average" way. This greatly reduces generation failures while minimally affecting actual games.&#13;
-- Promotions are now twice as common if `flat_promotions` is enabled, to reflect their reduced point value&#13;
-- Extra Promotion presents are now only added to the item pool in the minimum quantity required to reach all rank checks&#13;
-- Balanced map exploration point assumptions based on Fixed World&#13;
-&#13;
-## Bugfixes&#13;
-&#13;
-- Fixed several overflow errors caused by having flat promotions in worlds with extremely low/high `max_level` and/or `max_rank_check`&#13;
-- Fixed division by zero error when rank checks were disabled with certain combinations of options&#13;
-- Removed nonexistent and unused "Level 1 Mailbox" locations from location groups&#13;
-- Actually fixed the error in logic which caused buck and point items to stay collected forever&#13;
-- Fixed a bug in multiworlds with multiple TJ&amp;E instances that could cause Unfall presents to appear less frequently than they should&#13;
-- Various bits of AP testing compliance</content>
-    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.1</id>
-    <title>plateup v0.2.6.1.post2</title>
-    <updated>2026-03-15T21:14:21+00:00</updated>
-    <author>
-      <name>CazIsABoi</name>
-    </author>
-    <content>## What's New?&#13;
-- `trap_cards` has been removed — set `trap_chance` to 0 to disable traps instead&#13;
-- Dish-specific day leases are here — each dish now has its own lease items that&#13;
-  only gate progress on that dish specifically, leaving other dishes freely accessible&#13;
-- When using dish-specific leases with the franchise or complete days goals, overflow&#13;
-  days beyond what dish leases cover are gated by a new Overtime Day Lease item&#13;
-- Added `dish_lease_scope` for the reach day with dishes goal — choose whether all&#13;
-  selected dishes are lease-gated, or only the first few needed to hit your dish goal.&#13;
-  With this goal and dish-specific mode, no generic leases are generated at all&#13;
-- Blueprint and setting checks now generate correctly for all goals, not just the first two&#13;
-- "Lose a Run" is now a valid check for franchise and complete days goals&#13;
-- Fixed a bug where goal state could bleed between games and cause generation failures&#13;
-- Fixed IDs being mismatched&#13;
-&#13;
-## New YAML Options&#13;
-**`day_lease_mode`** — Controls how Day Lease items are organised. `global` uses a&#13;
-single shared lease item that gates all day-based content as before. `dish_specific`&#13;
-gives each dish its own named lease items (e.g. Steak Day Lease) that only gate that&#13;
-dish's days — requires dish count to be greater than 0.&#13;
-&#13;
-**`dish_lease_scope`** — When using dish-specific leases with the reach day with dishes&#13;
-goal, controls which dishes get lease items. `all_dishes` gates every selected dish.&#13;
-`goal_count_only` only gates the first dish_goal_count dishes, leaving the rest freely&#13;
-accessible. Only relevant when day_lease_mode is dish_specific.&#13;
-&#13;
-## Note&#13;
-This apworld update is directly tied to the mod update — make sure you&#13;
-update both together for everything to work correctly!&#13;
-[Mod Update 0.2.6.1](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.6.1)</content>
-    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.0</id>
-    <title>Vampire Survivors v0.3.0</title>
-    <updated>2026-03-16T04:00:57+00:00</updated>
-    <author>
-      <name>SW_CreeperKing</name>
-    </author>
-    <content>- [ApWorld] Rewrote apworld to be autogenerated&#13;
-- [ApWorld] Added Support for Balatro DLC&#13;
-- [ApWorld] Improved logic&#13;
-- [Client] Updated from MelonLoader 7.1 to 7.2&#13;
-- [Client] Updated to work with versions of VS after Balatro update&#13;
-  - Downpatching is no longer needed/required&#13;
-- [Client] Cleaned up alot of code&#13;
-- [Client] Server timeout increased to 1min&#13;
-&#13;
-### IF YOU PREVIOUSLY INSTALLED THE MOD YOU WILL NEED TO INSTALL IT DIFFERENTLY AND MAKE SURE TO UPDATE MELON LOADER TO 7.2&#13;
-&#13;
-## not backwards compatible with prev. apworld versions</content>
-    <link href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR7</id>
-    <title>The Grinch v1.5.0</title>
-    <updated>2026-03-16T04:57:12+00:00</updated>
-    <author>
-      <name>MarioSpore</name>
-    </author>
-    <author>
-      <name>SomeJakeGuy</name>
-    </author>
-    <content># Notice&#13;
-Keep in mind that this is a beta release and is not currently ready for a full release. Do not bring this into serious groups unless you know what you are doing. This is for testing purposes only to ensure everything is ready when this update gets a full release. Report bugs and check certain things to make sure everything works as intended.&#13;
-&#13;
-# Changes&#13;
-- Submarine World are now able to be added to exclude_environments&#13;
-  - As a result, Marine Mobile will now be start inventoried if you exclude the region.&#13;
-- Revert visitsanity location behavior to no longer check for cutscene address&#13;
-- Ingame checker slightly reworked to check for recently found addresses for more accuracy to check if in game&#13;
-- City Hall no longer sends/receives deathlink due to finding the ability to softlock the area&#13;
-&#13;
-# Bugfixes&#13;
-- Music rando now fixed, as bizhawk does not have an "exit_event" code like CommonClient does.&#13;
-- Heart of Stones check for a new address. This should no longer have a chance to not send locations.&#13;
-- Fixed Scout Clothes from giving you the mission item if you only exclude either North Shore or Mayor's Villa.</content>
-    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0-PR7"/>
-  </entry>
   <entry>
     <id>https://github.com/narramoment/Archipelago/releases/tag/0.1.0</id>
     <title>Jak II v0.1.0</title>
@@ -288,6 +153,30 @@ That version does not contain the submaps for UT auto-tabbing, other than that i
 To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
 It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
     <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.25"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.26</id>
+    <title>Pokemon Black and White v0.3.26</title>
+    <updated>2026-03-16T23:07:58+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <author>
+      <name>SparkyDaDoggo</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+- Removed HMs being forgettable due to game breaking bugs resulting from it&#13;
+&#13;
+### Is this version compatible with older multiworld slots and save files?&#13;
+Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
+However, tracking worlds generated before 0.3.25 might show incorrect Dexsanity logic in UT&#13;
+&#13;
+## Notes regarding the `pokemon_bw_without_maps.apworld` file&#13;
+That version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.&#13;
+To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
+It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
+    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.26"/>
   </entry>
   <entry>
     <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.13</id>
@@ -1117,7 +1006,9 @@ I have not tested this completely yet, but someone mentioned wanting to help, so
     <author>
       <name>WildBunnie</name>
     </author>
-    <content>## Changes and New Features&#13;
+    <content>Setup instructions for this release can be found [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/setup_en.md). Info about locations [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/location_en.md), and info about items [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/items_en.md).&#13;
+&#13;
+## Changes and New Features&#13;
 &#13;
 ### Fixes&#13;
 - Fixed crash that would happen sometimes when connecting through the client even though it would connect correctly before&#13;
@@ -1186,7 +1077,7 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
   </entry>
   <entry>
     <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.4</id>
-    <title>Black Ops 3 - Zombies v0.2.4</title>
+    <title>Black Ops 3 - Zombies v0.2.4.post2</title>
     <updated>2026-03-21T16:36:30+00:00</updated>
     <author>
       <name>colin969</name>
@@ -1210,5 +1101,89 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
 - Fix bug preventing Revelations from restoring map state and doing round saves if Sophia hadn't materialized yet&#13;
 - (Workshop) Work in progress support for 'Wanted'. Expect issues if enabled.</content>
     <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0</id>
+    <title>The Grinch v1.5.0</title>
+    <updated>2026-03-21T16:46:11+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>## Changes&#13;
+&#13;
+- Updated to require AP v0.6.6, don’t delay, security patches keep trouble away.&#13;
+- **DeathLink** arrives with a miserable cheer, most places can end you and spread it far and near!&#13;
+  - Except Mount Crumpit, Clock Tower, Post Office, City Hall, &amp; Sleigh Room, those places were spared from testing doom.&#13;
+- **Gadgets come sooner!** No computer demand, just reload an area, they’re placed in your hand.&#13;
+- **Sleigh Parts** now drift through the multiworld sea, gather them up for your sleigh ride with glee!&#13;
+  - Their original spots are removed for now, you see.&#13;
+- **Grass.**&#13;
+- **Presents** now fill up the pool with delight, do nothing at all, but they’re there if you might.&#13;
+- **Squashing all Gifts** may vanish from play, if one subarea’s excluded along the way.&#13;
+  - With `giftsanity` on, Whoville trimmed? That mission is gone, just like it was skimmed.&#13;
+- Added `misc_checks` for odd little finds  from platforms to killsanity, and other strange kinds.&#13;
+- Added new **item/location groups** to tidy the mess.&#13;
+- **Submarine World** can now be excluded with ease, and you’ll start with Marine Mobile, if you please.&#13;
+- `music_rando` arrives with a shuffle so grand, every tune mixed up across all the land!&#13;
+- Added a **Mount Crumpit check** after smashing five crates, a single reward for your smashing-filled fates.&#13;
+- **Sleigh Room Key** now skips balancing’s chore, straight to the goal, no waiting anymore!&#13;
+&#13;
+## Bug Fixes&#13;
+&#13;
+- Fixed rogue locations that sent checks astray, now only behave in the proper way.&#13;
+- Crumpit’s tall elevator, with teleports aligned, now lands where it should, no confusion to find.&#13;
+- Small logic tweaks that were missed in the past, now tightened and cleaned, they’re fixed at last.&#13;
+- Heart of Stones checks now send without fail, no more lost signals that quietly derail.&#13;
+- Scout Clothes no longer misfire their role, when regions are missing, they won’t break the goal.&#13;
+- Countdowns reset when teleports occur, no lingering timers to cause a blur.&#13;
+- Rat missions reworked for quicker dispatch, though order stays messy, they won’t always match.&#13;
+- Snowmen now “Smashing” their true name restored, no more “Squashing” confusion aboard.&#13;
+- Robot Parts feeding at Who Bris Shack’s door, now needs **Seize** in logic, as it should have before.</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.1</id>
+    <title>The Grinch v1.5.1</title>
+    <updated>2026-03-21T16:46:11+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>This is more of an internal change, since there was a meta change on how apworlds are built that I was not even aware of. This is still just v1.5.0 with no additional changes minus backend changes with the new meta. Thanks AP :)</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.4-beta</id>
+    <title>Dicey Dungeons v0.2.4b0</title>
+    <updated>2026-03-21T19:18:46+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>Changes from v0.2.3-beta:&#13;
+&#13;
+- New Option: Equipment Availability&#13;
+    - "vanilla" is current logic, only allows equipment to be in episodes/locations they could be in game. &#13;
+    - "open" is new logic, allows received equipment to generate anywhere&#13;
+&#13;
+NOTE: I learned what a rebase is, so if anything is horribly broken, that's why&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.2.3-beta...v0.2.4-beta</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.4-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MacH8s/Narcopelago/releases/tag/v3.5.1</id>
+    <title>Schedule I v3.5.1</title>
+    <updated>2026-03-21T20:52:18+00:00</updated>
+    <author>
+      <name>MacH8s</name>
+    </author>
+    <content>Updated Incorrect logic for Vibin' the Cybin quests and shrooms recipe checks.&#13;
+Updated logic for when randomize cartel influence true and randomize customers is false.</content>
+    <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.5.1"/>
   </entry>
 </feed>

@@ -5,7 +5,7 @@ Plays something like a simpler version of the Zelda games where Bomberman will c
 
 
 ## Downloads
-- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.1/bomberman_quest.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.2/bomberman_quest.apworld">Latest Version (0.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

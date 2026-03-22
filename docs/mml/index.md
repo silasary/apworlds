@@ -6,7 +6,7 @@ imminent demise.
 
 
 ## Downloads
-- <a href="https://github.com/functorial/MMLAP/releases/download/v0.1.0/mml.apworld">Latest Version (0.1.0)</a>
+- <a href="https://github.com/functorial/MMLAP/releases/download/v0.2.2/mml.apworld">Latest Version (0.2.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

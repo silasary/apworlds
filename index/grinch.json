@@ -272,6 +272,21 @@
       "version_simple": "1.4.0",
       "world_version": "1.4.0"
     },
+    "v1.5.0": {
+      "created_at": "2026-03-21T16:46:11Z",
+      "description": "## Changes\r\n\r\n- Updated to require AP v0.6.6, don\u2019t delay, security patches keep trouble away.\r\n- **DeathLink** arrives with a miserable cheer, most places can end you and spread it far and near!\r\n  - Except Mount Crumpit, Clock Tower, Post Office, City Hall, & Sleigh Room, those places were spared from testing doom.\r\n- **Gadgets come sooner!** No computer demand, just reload an area, they\u2019re placed in your hand.\r\n- **Sleigh Parts** now drift through the multiworld sea, gather them up for your sleigh ride with glee!\r\n  - Their original spots are removed for now, you see.\r\n- **Grass.**\r\n- **Presents** now fill up the pool with delight, do nothing at all, but they\u2019re there if you might.\r\n- **Squashing all Gifts** may vanish from play, if one subarea\u2019s excluded along the way.\r\n  - With `giftsanity` on, Whoville trimmed? That mission is gone, just like it was skimmed.\r\n- Added `misc_checks` for odd little finds  from platforms to killsanity, and other strange kinds.\r\n- Added new **item/location groups** to tidy the mess.\r\n- **Submarine World** can now be excluded with ease, and you\u2019ll start with Marine Mobile, if you please.\r\n- `music_rando` arrives with a shuffle so grand, every tune mixed up across all the land!\r\n- Added a **Mount Crumpit check** after smashing five crates, a single reward for your smashing-filled fates.\r\n- **Sleigh Room Key** now skips balancing\u2019s chore, straight to the goal, no waiting anymore!\r\n\r\n## Bug Fixes\r\n\r\n- Fixed rogue locations that sent checks astray, now only behave in the proper way.\r\n- Crumpit\u2019s tall elevator, with teleports aligned, now lands where it should, no confusion to find.\r\n- Small logic tweaks that were missed in the past, now tightened and cleaned, they\u2019re fixed at last.\r\n- Heart of Stones checks now send without fail, no more lost signals that quietly derail.\r\n- Scout Clothes no longer misfire their role, when regions are missing, they won\u2019t break the goal.\r\n- Countdowns reset when teleports occur, no lingering timers to cause a blur.\r\n- Rat missions reworked for quicker dispatch, though order stays messy, they won\u2019t always match.\r\n- Snowmen now \u201cSmashing\u201d their true name restored, no more \u201cSquashing\u201d confusion aboard.\r\n- Robot Parts feeding at Who Bris Shack\u2019s door, now needs **Seize** in logic, as it should have before.",
+      "download_url": "https://github.com/MarioSpore/Grinch-AP/releases/download/v1.5.0/grinch.apworld",
+      "has_manifest": true,
+      "hash_sha256": "473a2849028b065064c86cedc995fd03a9c31848b6390595be12953396c7310e",
+      "html_url": "https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 125607,
+      "source_url": "https://api.github.com/repos/MarioSpore/Grinch-AP",
+      "tag": "v1.5.0",
+      "title": "The Grinch (PS1) - v1.5.0",
+      "version_simple": "1.5.0",
+      "world_version": "1.5.0"
+    },
     "v1.5.0-PR": {
       "created_at": "2026-02-27T03:04:38Z",
       "description": "# Notice\r\nKeep in mind that this is a beta release and is not currently ready for a full release. Do not bring this into serious groups unless you know what you are doing. This is for testing purposes only to ensure everything is ready when this update gets a full release. Report bugs and check certain things to make sure everything works as intended.\r\n\r\n# Changes\r\n- Updated to require AP v0.6.6 to encourage people to update with security patch.\r\n- Deathlink! Keep in mind that every area you are able to die in except for Mount Crumpit, Clock Tower, Post Office, & Sleigh Room due to ingame issues I encountered during testing.\r\n- Gadgets are now given to you sooner! No longer you are required to use the computer to get the gadget. Just reload/enter a new area to get the gadgets on demand!\r\n- Sleigh Parts are now items in the pool! Find them through out the multiworld and enter the sleigh ride with the Sleigh Room Key! Because of this, the sleigh part locations are temporarily removed for the time being.\r\n- Grass.\r\n- Presents are in the pool aswell. These are items that do nothing to the game if you decide to not want to add rotten eggs to the pool.\r\n- Mission completion for squashing all gifts should be removed if you exclude at least one subarea per area. For example if you have `giftsanity` enabled and you have excluded on of Whoville's subareas, the mission will be removed.\r\n- Added new `misc_checks` option. Adds various categorized locations in the multiworld. From platforms to killsanity, and other funny locations.\r\n- Few new item/location groups\r\n\r\n# Bug Fixes\r\n- Fixed bug regarding certain locations sending when they should not be.\r\n- Elevator in Mount Crumpit should hopefully be positioned in the right level when using the teleport multibind\r\n- Various small logic tweaks and fixes that went overlooked.\r\n\r\n# Things to do until full release\r\n- Fix Heart of Stone locations sometimes not sending\r\n- Support for incremental location checks\r\n- OR condition addresses for locations\r\n- ~~Fix fuzzer errors~~\r\n\r\nThere are probably many more changes I missed. Look around and see what you can spot!",
@@ -383,6 +398,21 @@
       "title": "The Grinch (PS1) - v1.5.0 Pre Release 7",
       "version_simple": "1.5.0",
       "world_version": "1.5.0"
+    },
+    "v1.5.1": {
+      "created_at": "2026-03-21T16:46:11Z",
+      "description": "This is more of an internal change, since there was a meta change on how apworlds are built that I was not even aware of. This is still just v1.5.0 with no additional changes minus backend changes with the new meta. Thanks AP :)",
+      "download_url": "https://github.com/MarioSpore/Grinch-AP/releases/download/v1.5.1/grinch.apworld",
+      "has_manifest": true,
+      "hash_sha256": "056dd261f76cf7a711199e794703d2bc60960c78b5474ca1f592d5f3c2630e15",
+      "html_url": "https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.1",
+      "minimum_ap_version": "0.6.6",
+      "size": 45872,
+      "source_url": "https://api.github.com/repos/MarioSpore/Grinch-AP",
+      "tag": "v1.5.1",
+      "title": "The Grinch (PS1) - v1.5.1",
+      "version_simple": "1.5.1",
+      "world_version": "1.5.1"
     }
   }
 }
