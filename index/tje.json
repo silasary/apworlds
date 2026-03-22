@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "Ignis Umbrae"
+  ],
   "description": "ToeJam & Earl",
   "game": "ToeJam and Earl",
   "github": "https://github.com/IgnisUmbrae/TJE-Archipelago",
   "license": "GPL-2.0",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.2": {
       "created_at": "2024-09-04T19:55:19Z",
@@ -382,6 +389,21 @@
       "title": "Toejam & Earl AP World v0.5.3",
       "version_simple": "0.5.3",
       "world_version": "0.5.3"
+    },
+    "v0.5.4": {
+      "created_at": "2026-03-22T15:06:29Z",
+      "description": "## Big changes\r\n\r\n- New type of present: the Big Points present, which simply gives you a flat number of points (the exact number depends on your chosen rank options, but is roughly 'half an average promotion'). Add `point_presents: yes` to your YAML to enable.\r\n  - \u26a0\ufe0f This functionality supersedes the old `flat_promotions` option, which has been removed. Point presents exist alongside Promotions.\r\n  - `auto_flat_promotions` has been removed and replaced with `auto_point_presents`, which fulfils the same function.\r\n  - One of the unused present sprites will be automatically patched in for you if needed.\r\n  - Moles will not steal these presents if rank checks are enabled.\r\n- New priority check: drinking lemonade on level 0. Add `lemonade_check: yes` to your YAML to enable.\r\n  - `game_overs: drop_down` has been altered to account for these checks: if you game over on level 1 before completing the lemonade check, you will be poofed back to the starting island instead of falling down.\r\n- The `earthling_rando: nice_random` setting has been redone based on the subjective dangerousness of each earthling, constrained by the apparent difficulty of each level in the vanilla game.\r\n  - For now, dangerousness is based on my own subjective opinion. If you can, please rate the enemies [via this Google form](https://forms.gle/F6wECA91ZVifDAK99) so I can update the data in a future release.\r\n  - Fake mailboxes are now taken into account when considering the difficulty of levels.\r\n  - The value of `last_level` is now factored in when deciding how many friendly earthlings to add.\r\n  - This new method also fixes a rare bug that caused generation failure due to an extremely lopsided random earthling pool.\r\n\r\n## Smaller changes\r\n\r\n- Presentsanity may now add a small number of Promotions (and point presents, if enabled) in order to ensure gen success in smaller worlds.\r\n- Game overing with `game_overs: drop_down` will now gracefully poof you down to the level below instead of awkwardly making you fall there.\r\n- Items are no longer awarded while falling, or while in an elevator in any state. This addresses several issues with items failing to activate.\r\n- Many items have been deprioritized in various situations in order to make priority checks more rewarding.\r\n- Present wrapping is now preserved through save & reload.\r\n- Ranks and big items are now priority locations.\r\n- Renamed \"A Buck\" to just \"Buck\".\r\n\r\n## Small bugfixes\r\n\r\n- The 2 points for drinking the lemonade on level 0 have been added into logic (finally).\r\n- Sound rando now also randomizes the scream in the intro cutscene.\r\n- Fixed a bug that sometimes stopped presents from scooching up correctly with expanded inventory enabled.\r\n\r\n## Other\r\n\r\n- Added LICENSE for vendored unidecode (whoops).",
+      "download_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/download/v0.5.4/tje.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c1371590056eae96f2263f872cea3a50987ce9e5b482b549d337b8613bcb5a44",
+      "html_url": "https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.4",
+      "minimum_ap_version": "0.6.2",
+      "size": 330029,
+      "source_url": "https://api.github.com/repos/IgnisUmbrae/TJE-Archipelago",
+      "tag": "v0.5.4",
+      "title": "Toejam & Earl AP World v0.5.4",
+      "version_simple": "0.5.4",
+      "world_version": "0.5.4"
     }
   }
 }

@@ -1,9 +1,15 @@
 # Path of Exile
 
 ## Latest
-- <a href="https://github.com/stubobis1/Archipelago/releases/download/1.3.0/poe.apworld">Latest Version (1.3.0)</a>
+- <a href="https://github.com/stubobis1/Archipelago/releases/download/1.3.1/poe.apworld">Latest Version (1.3.1)</a>
 
 ## All Versions
+
+#### v1.3.1
+- <a href="https://github.com/stubobis1/Archipelago/releases/download/1.3.1/poe.apworld">https://github.com/stubobis1/Archipelago/releases/download/1.3.1/poe.apworld</a>
+
+#### v1.3.0.post2
+- <a href="https://github.com/stubobis1/Archipelago/releases/download/1.3.0/poe.apworld">https://github.com/stubobis1/Archipelago/releases/download/1.3.0/poe.apworld</a>
 
 #### v1.3.0
 - <a href="https://github.com/stubobis1/Archipelago/releases/download/1.3.0/poe.apworld">https://github.com/stubobis1/Archipelago/releases/download/1.3.0/poe.apworld</a>
