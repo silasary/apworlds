@@ -6,10 +6,12 @@ until you have enough to play and complete the goal song!
 
 
 ## Downloads
-- <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.4.4B/megamix.apworld">Latest Version (1.4.4b0)</a>
+- <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.4.4B/megamix.apworld">Latest Version (1.4.4.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Hatsune Miku Project Diva Mega Mix+">English</a>
 
 ## Setup Guide
+- <a href="setup_en">English</a>
 

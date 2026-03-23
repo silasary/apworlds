@@ -1,9 +1,17 @@
 {
+  "authors": [
+    "Cynichill",
+    "repod\u01dd\u0279"
+  ],
   "description": "Hatsune Miku: Project Diva Mega Mix+ is a rhythm game where you hit notes to the beat of one of 250+ songs.\nPlay through a selection of randomly chosen songs, collecting leeks\nuntil you have enough to play and complete the goal song!",
   "game": "Hatsune Miku Project Diva Mega Mix+",
   "github": "https://github.com/Cynichill/DivaAPworld",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "1.0.1B": {
       "created_at": "2024-08-03T15:38:42Z",
@@ -495,6 +503,21 @@
       "title": "1.4.4B",
       "version_simple": "1.4.4",
       "world_version": "1.4.4b0"
+    },
+    "1.4.4Br2": {
+      "created_at": "2026-03-22T23:26:06Z",
+      "description": "# Update Time!\r\n\r\n## World/Client Changes\r\n\r\n### Additions:\r\n- New option! Progressive HP! Start with drastically lower max HP and raise it via items (No tied-in logic for song difficulty, good luck!)\r\n- Universal Tracker Go Mode support\r\n- Generator conflict message is now more verbose\r\n- Generator support for New Classics\r\n- /restore_songs has been replaced with /safe_mode and is more flexible\r\n- Available Leek% max raised from 40 to 100 (Only recommended for Solo seeds)\r\n- Client now finds the AP mod folder (which can now be named anything)\r\n- Client now tracks result.json in a cleaner way\r\n- Updated option descriptions\r\n- Updated set up guide instructions\r\n- Improved determinism when generating with traps\r\n- Changed default outfits for BK song to represent AP logo\r\n\r\n### Fixes:\r\n- Fix for goaling on one slot, switching to another, and goaling\r\n- Fix for entering and leaving Freeplay\r\n- Fix cross-player generation state leak with multiple Diva players\r\n\r\n## Mod updates:\r\n\r\n### Additions:\r\n- Progressive HP, refreshes at 1s intervals if enabled\r\n- New suhidden toggle in config (sudden and hidden can overlap)\r\n- New skip_mainmenu toggle in config\r\n- New reload_delay option in config\r\n- Popup on first run informing of the reload key and config.toml\r\n- Config is reloaded on main menu (to apply changes without restarting)\r\n- Improved compatibility with Debug Mode, Mix Mode, and custom modifier mods\r\n- Improved option typing in config.toml\r\n- In-game song visibility toggling: 100% Accurate-Not-Our-Problem\u2122 tier\r\nNew Classics, lyric packs, Eden Project, F 2nd Pack, etc. It's your problem now!\r\n\r\n### Fixes:\r\n- Fixed trap_duration of 0 in config not lasting the entire attempt\r\n- Traps run at ~1/10th a second instead of every frame\r\n- The reload key is ignored during gameplay/results to avoid crashes\r\n- AP mod folder can now be named anything\r\n- Various small stability fixes\r\n",
+      "download_url": "https://github.com/Cynichill/DivaAPworld/releases/download/1.4.4B/megamix.apworld",
+      "has_manifest": true,
+      "hash_sha256": "10be08c91d7d396c9874c1447e3aa6a553c3d85d7722a843f22479d8a2948558",
+      "html_url": "https://github.com/Cynichill/DivaAPworld/releases/tag/1.4.4B",
+      "minimum_ap_version": "0.6.3",
+      "size": 45458,
+      "source_url": "https://api.github.com/repos/Cynichill/DivaAPworld",
+      "tag": "1.4.4Br2",
+      "title": "1.4.4B",
+      "version_simple": "1.4.4",
+      "world_version": "1.4.4.post2"
     },
     "Beta": {
       "created_at": "2024-07-03T21:21:03Z",

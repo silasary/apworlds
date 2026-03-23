@@ -2,40 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-23T12:20:05.896669+00:00</updated>
+  <updated>2026-03-23T18:23:43.331762+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.6.2</id>
-    <title>Plants vs. Zombies: Replanted v1.6.2</title>
-    <updated>2026-03-18T21:20:52+00:00</updated>
-    <author>
-      <name>dannybonz</name>
-    </author>
-    <content>- Fixes a problem where the level unlock key graphic could appear oversized.&#13;
-- Level clears and unlocks now display instantly again.&#13;
-- Custom graphics are now pre-loaded to prevent a lag spike when a check item appears.&#13;
-- Plant stat randomisation has been rebalanced based on feedback and my own experiences. Let me know how you get on with it!&#13;
-- Rewritten APWorld logic, especially where plant stat randomisation is involved. The randomised stats of plants will be more closely considered when creating logic, with plants even gaining or losing the progression classification based on their effectiveness and affordability.&#13;
-- Changes to how randomised conveyors are generated. This should hopefully make conveyor levels more balanced and less RNG-reliant... emphasis on the "hopefully", there.&#13;
-- Fixes to various generation errors.&#13;
-&#13;
-For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
-    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.1</id>
-    <title>BKSimulator v0.1.2</title>
-    <updated>2026-03-19T00:23:51+00:00</updated>
-    <author>
-      <name>EmilyV99</name>
-    </author>
-    <content>- Disconnection from server will now properly kick you back to the main menu, preventing time being wasted on progress that isn't actually being saved.&#13;
-- The message queue is now cleared on disconnection, so messages are no longer leftover from previous connections.</content>
-    <link href="https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.1.3</id>
     <title>Minecraft v2.1.3</title>
@@ -1079,10 +1050,13 @@ Setup guide: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/do
   </entry>
   <entry>
     <id>https://github.com/Cynichill/DivaAPworld/releases/tag/1.4.4B</id>
-    <title>Hatsune Miku Project Diva Mega Mix+ v1.4.4b0</title>
+    <title>Hatsune Miku Project Diva Mega Mix+ v1.4.4.post2</title>
     <updated>2026-03-22T23:26:06+00:00</updated>
     <author>
       <name>Cynichill</name>
+    </author>
+    <author>
+      <name>repodǝɹ</name>
     </author>
     <content># Update Time!&#13;
 &#13;
@@ -1233,5 +1207,50 @@ New Classics, lyric packs, Eden Project, F 2nd Pack, etc. It's your problem now!
 * Fixed dimitri clipping and respawning at the closed d4 entrance&#13;
 * Melting the red and blue ores, then leaving the room to come back no longer gives hard ore instead of the normal item</content>
     <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-19.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-19.0.2</id>
+    <title>The Legend of Zelda - Oracle of Seasons v19.0.1</title>
+    <updated>2026-03-23T15:21:23+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>### This apworld is a beta apworld, only compatible with Archipelago 0.6.7 (in RC as of the release of this release)&#13;
+&#13;
+## 🗳️ New Options&#13;
+* Puzzle and Minigames rando&#13;
+  * When randomized, the games are about as hard as vanilla, with 2 less screens for hide &amp; seek&#13;
+  * Owl-related puzzles are not affected&#13;
+  * No push block is added&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+* Used up gasha spots are now represented with the dug tile&#13;
+* The game now shows which item is being obtained when the item is from a different world&#13;
+* Generation is faster&#13;
+* Asking for `included essences` placed essences will set the placed essences to the number included&#13;
+&#13;
+## 🧠 Logic&#13;
+* Cane of somaria is now a in-logic way to kill golden beasts (it's decently hard)&#13;
+* Bomb/bombchu requirement is now more consistent, unless there is a consistent way to refill it&#13;
+  * 40 bombs are required to fight&#13;
+  * 20 bombs are required to destroy bombable tiles&#13;
+  * 20 bombs are required for bombjumps&#13;
+  * 20 bombchus are required to fight&#13;
+  * 40 bombchus are required to destroy tiles&#13;
+* Jumping the goron pits with just a cape has been upgraded from medium to hard logic&#13;
+* Some anti-softlocks have been removed, which affects some of the logic&#13;
+* Added a logic path to leave d2&#13;
+* Fixed a logic issue where the d8 spinner chest was reachable without magnet glove&#13;
+* Added a hell logic path from frypolar to d8 spinner chest without magnet glove &#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+* Made use of pre_output, unit tests now work on OoS&#13;
+* Fixed a text at random being broken each seed&#13;
+* Fixed dimitri clipping and respawning at the closed d4 entrance&#13;
+* Melting the red and blue ores, then leaving the room to come back no longer gives hard ore instead of the normal item</content>
+    <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-19.0.2"/>
   </entry>
 </feed>
