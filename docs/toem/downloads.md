@@ -8,6 +8,9 @@
 #### v2.0.2
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.2/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.2/toem.apworld</a>
 
+#### v2.0.2
+- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.3/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.3/toem.apworld</a>
+
 #### v2.0.0
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.0/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.0/toem.apworld</a>
 

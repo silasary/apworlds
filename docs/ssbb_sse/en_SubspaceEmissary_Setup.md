@@ -27,7 +27,7 @@ You can follow the [official instructions](https://archipelago.gg/tutorial/Archi
 
 # Playing
 
-Once the server is up, find the `Subspace Emissary Client` option in your Archipelago Launcher. Clicking on this will bring up a text client that will prompt you for the necessary server connection info. Once you're in, just boot up Dolphin with Super Smash Bros. Brawl, select The Subspace Emissary, and you're good to go!
+First, start up Dolphin; if Dolphin isn't open when you try to connect to the server, it'll boot you out. Once the multiworld server is up, find the `Subspace Emissary Client` option in your Archipelago Launcher. Clicking on this will bring up a text client that will prompt you for the necessary server connection info. Once you're in, you're good to go!
 
 *Note: The Subspace Emissary APWorld does not currently require a patched ROM.*
 

@@ -1,6 +1,6 @@
 # FAQ / Troubleshooting
 
-version: v0.1.0
+version: v0.1.1
 
 ### Is this safe to use in a multiworld?
 
@@ -8,7 +8,7 @@ Yes, the build is currently mostly stable, just very barebones. Due to the natur
 
 ### What are my checks / items?
 
-The APWorld is currently a proof of concept. The only checks at the moment are level completions, and the only items are level unlocks. The APWorld is thus very linear, and singleplayer especially just becomes doing everything in a different order.
+[See here](./en_SubspaceEmissary.md#what-gets-randomized)
 
 ### Where should I go to start playing?
 
@@ -35,6 +35,10 @@ The current version of the APWorld interacts directly with the vanilla version o
 ### I entered a level and it glitched out for a second and then let me in while playing Mario.
 
 This is a known bug that has something to do with how SSE stores character unlocks. Specifically, entering a level that doesn't have a starting cutscene without having the prerequisite characters available will cause it to do this and default to Mario. This is being investigated.
+
+### I defeated Charizard at the end of The Ruins and the screen went to black and won't progress.
+
+This is a known issue and has something to do with how Pokemon Trainer is handled. Specifically the game will freak out if you don't have Pokemon Trainer as a party member; because there is no starting cutscene to The Ruins, you have to have obtained Pokemon Trainer via a different level. This is a priority investigation
 
 ### I have an idea for what to add to the randomizer!
 
