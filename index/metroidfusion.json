@@ -1,7 +1,10 @@
 {
   "description": "Metroid Fusion, powered by MARS. The fourth Metroid game, known for its linearity, in randomized form!\nLocate the Infant Metroids to lure out the SA-X, set the self destruct, and escape the station.",
   "game": "Metroid Fusion",
-  "github": "https://github.com/Rosalie-A/Archipelago",
+  "github": [
+    "https://github.com/Rosalie-A/Archipelago",
+    "https://github.com/StalledStorm/ArchipelagoMine"
+  ],
   "license": null,
   "manifest_fields": [],
   "versions": {
@@ -253,6 +256,48 @@
       "title": "Metroid Fusion APWorld v9",
       "version_simple": "9",
       "world_version": "9"
+    },
+    "v18": {
+      "created_at": "2026-03-17T20:17:11Z",
+      "description": "## New\r\nAdded a new option 'Nerf Geron Weaknesses'. This option is set to false by default. When this option is enabled:\r\n- Stabilisers can only be defeated with Missiles, Charge Beam, or Speed Booster\r\n- Small Gerons can only be defeated with Missiles or Speed Booster\r\n- Medium Gerons can only be defeated with Super Missiles or Speed Booster\r\n- Large Gerons can only be defeated with Power Bombs or Speed Booster\r\n- All Gerons are immune to screw attack, and all except for Large are immune to power bombs.\r\n\r\n## Changes\r\n- Implemented various minor updates to logic, courtesy of JaggerG\r\n- Fixed a bug causing the game to be unpatchable, courtesy of Snowflav_\r\n- - This was caused by items from other worlds containing certain characters, such as square brackets [] (one common world for this was Peggle)\r\n- Updated logic to account for 'Nerf Geron Weaknesses' being enabled/disabled\r\n- Updated mars_patcher to 0.12.0, courtesy of miepee. This brings various room renames, the relevant ones are:\r\n- - Sector 1 (SRX) Ridley Arena -> Sector 1 Neo-Ridley Arena\r\n- - Sector 2 (TRO) Zoro Zig-Zag -> Sector 2 (TRO) Zig-Zag-Zone\r\n- - Sector 3 (PYR) Glass Tube to Sector 5 (ARC) -> Sector 3 (PYR) Westbound Glass Tube\r\n- - Sector 4 (AQA) Cargo Hold to Sector 5 (ARC) -> Sector 4 (AQA) Cargo Hold\r\n- - Sector 5 (ARC) Flooded Airlock to Sector 4 (AQA) -> Sector 5 (ARC) Flooded Airlock\r\n- The new mars_patcher version has also changed the hatch graphics, in order to be more accessible to color blind people. \r\n\r\nSetup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)",
+      "download_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/download/v18/metroidfusion.apworld",
+      "has_manifest": false,
+      "hash_sha256": "8c41a805dac214e66584c212156d1ed76323643f0e16177a443aeb35f2959f75",
+      "html_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v18",
+      "size": 726016,
+      "source_url": "https://api.github.com/repos/StalledStorm/ArchipelagoMine",
+      "tag": "v18",
+      "title": "Metroid Fusion APWorld v18",
+      "version_simple": "18",
+      "world_version": "18"
+    },
+    "v19": {
+      "created_at": "2026-02-08T17:39:49Z",
+      "description": "## Changes\r\n- Fixed a generation issue encountered when generating while using the 'custom' gamemode\r\n- Slightly altered S3 logic to fix a suspected mistake\r\n- Pass through 'NerfGeronWeakness' selection to PopTracker\r\n- Pass through current room to PopTracker\r\n\r\nSetup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)",
+      "download_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/download/v19/metroidfusion.apworld",
+      "has_manifest": true,
+      "hash_sha256": "80adde55dce64933f1f6f9c75175c570741175b8be726d6f6bfc5ef9d044c3a0",
+      "html_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v19",
+      "size": 443219,
+      "source_url": "https://api.github.com/repos/StalledStorm/ArchipelagoMine",
+      "tag": "v19",
+      "title": "Metroid Fusion APWorld v19",
+      "version_simple": "19",
+      "world_version": "19"
+    },
+    "v20": {
+      "created_at": "2026-03-21T07:34:43Z",
+      "description": "## Changes\r\n- Fixed an issue preventing the game from being patched\r\n- Updated a piece of Main Deck logic to correctly account for NerfGeronWeaknesses being enabled\r\n\r\nSetup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)",
+      "download_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/download/v20/metroidfusion.apworld",
+      "has_manifest": true,
+      "hash_sha256": "86d3bcce9ef8547a7fecf081832b5378f73b5ad4a96559b576e9b8be69b036ea",
+      "html_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v20",
+      "size": 443890,
+      "source_url": "https://api.github.com/repos/StalledStorm/ArchipelagoMine",
+      "tag": "v20",
+      "title": "Metroid Fusion APWorld v20",
+      "version_simple": "20",
+      "world_version": "20"
     }
   }
 }
