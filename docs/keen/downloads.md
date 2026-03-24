@@ -1,4 +1,4 @@
-# None
+# 
 
 ## Latest
 - <a href="https://github.com/kodbyte/Archipelago-Keen/releases/download/v0.0.2/keen.apworld">Latest Version (0.0.2)</a>
