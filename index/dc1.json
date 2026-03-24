@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "Lizardman175"
+  ],
   "description": "Dark Cloud 1",
   "game": "Dark Cloud 1",
   "github": "https://github.com/Lizardman175/DC1AP",
@@ -169,6 +172,21 @@
       "title": "DC1AP The Bug Fix test build",
       "version_simple": "0.4.2",
       "world_version": "0.4.2"
+    },
+    "v0.4.3": {
+      "created_at": "2026-03-24T16:17:32Z",
+      "description": "# Dark Cloud 1 AP Rando v0.4.3\r\n\r\n# Changes\r\n - Proper merge of the fix for the missing georama bug\r\n - Expanded the text box for the slot name error message to the current slot name is actually readable\r\n - Cleaned up server rule logic code to make maintenance easier.  Added a few more fruits to Osmond's requirements as well as pockets for consistency with Ungaga's requirements.  Mostly only affects the spheres around Osmond.\r\n - Limited how many items the client can give to max inventory - 10.  This does not include sundew, horned key, or pockets.  Attachments from the client are limited to 35 as well.\r\n - Added options to change default names for characters in the .yaml, so Ungaga can be renamed!\r\n   - Pay attention to the requirements or the world generation will fail\r\n   - If renaming Toan, you need to make sure to connect the client *before* starting a new game!\r\n   - Except for Ungaga, characters can still be renamed from the yaml names in the normal cutscenes\r\n - Added a DC1 icon so the app doesn't use the default avalonia one anymore\r\n - Fixed an issue that could cause the player to receive more items than expected, potentially clogging the inventory with unusable items\r\n - Improved handling of defense/fruit/gourd item limit.  Insignificant performance gain, and also fixes some bugs likely nobody encountered/noticed.\r\n - Added a Dark Genie location/item so that in an all bosses run, if the DG is killed before the other 5 bosses it will still be recognized by the client.\r\n - Handle the game state returning to the title screen after beating the Genie\r\n \r\n### Linux\r\n - Created a Linux build, but it doesn't want to talk with pcsx2 just yet.  Still trying to understand this one.\r\n\r\nWill not work with existing worlds",
+      "download_url": "https://github.com/Lizardman175/DC1AP/releases/download/v0.4.3/dc1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7c1b2cc029c375fc3f4c20d5734d85636f73a724a1a9790ccd8d425c2277483d",
+      "html_url": "https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.3",
+      "minimum_ap_version": "0.6.1",
+      "size": 81671,
+      "source_url": "https://api.github.com/repos/Lizardman175/DC1AP",
+      "tag": "v0.4.3",
+      "title": "DC1 AP v0.4 Patch #3",
+      "version_simple": "0.4.3",
+      "world_version": "0.4.3"
     }
   }
 }

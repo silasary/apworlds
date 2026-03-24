@@ -2,66 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-24T14:19:22.377694+00:00</updated>
+  <updated>2026-03-24T18:25:46.908652+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/cjmang/StS-AP-World/releases/tag/2.3.5</id>
-    <title>Slay the Spire v2.3.5</title>
-    <updated>2026-03-19T23:44:46+00:00</updated>
-    <author>
-      <name>Platano Bailando</name>
-    </author>
-    <author>
-      <name>KonoTyran</name>
-    </author>
-    <content>2.3.5 patch release of the StS APWorld. This AP world requires a 2.x release of the mod from https://github.com/cjmang/Slay-The-Spire-Archipelago-Mod/releases.  &#13;
-&#13;
-This game still exists?&#13;
-&#13;
-## What's Changed&#13;
-* Fixed an issue with the combination of `pick_num_characters` and `advanced_characters` where having more than 5 modded characters in `advanced_characters` with officially supported characters would randomly cause gen failures.&#13;
-&#13;
-For all AP releases you will need to install the spire.apworld file into your Archipelago installation's custom_worlds folder. You can find said apworld in the assets of this release.&#13;
-&#13;
-For the setup guide, please go to https://github.com/cjmang/StS-AP-World/blob/sts/worlds/spire/docs/slay-the-spire_en.md.</content>
-    <link href="https://github.com/cjmang/StS-AP-World/releases/tag/2.3.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.9.2.0</id>
-    <title>Void Stranger v0.9.2.0</title>
-    <updated>2026-03-20T01:03:53+00:00</updated>
-    <author>
-      <name>CriminalPancake</name>
-    </author>
-    <content>## What's Changed&#13;
-General:&#13;
-	Locusts are now obtained from chests just like vanilla&#13;
-	Numbered Brane locust chests are now always AP Checks&#13;
-	Max Locust Up's are included in the item pool and increase your maximum capacity for holding locusts&#13;
-	Mon Bank now deals with Bonus Locusts, which are filler items not factored into logic&#13;
-	&#13;
-Generation:&#13;
-	Locustsanity is now forced on&#13;
-	Generation shouldn't fail, probably&#13;
-	&#13;
-Yaml:&#13;
-	Removed Locustsanity option&#13;
-	New setting "Max Locust Up Size"&#13;
-	Greed Coin Amount range is now from 1-30&#13;
-&#13;
-Bugfixes:&#13;
-	Receiving multiple items in quick succession will no longer delete locusts, progressive brands, or greed coins&#13;
-	Burdens are now properly received from AP&#13;
-&#13;
-Misc:&#13;
-	AP Items are now saved to file and should not reset upon game close or reconnecting to AP&#13;
-	To properly reset between multiworlds, select End Run from the pause menu&#13;
-	Fixed typo on room name of Floor 196</content>
-    <link href="https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.9.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.1</id>
     <title>Vampire Survivors v0.3.1</title>
@@ -1302,5 +1247,62 @@ For instructions on how to set up and play this mod, check the [README](https://
 &#13;
 **Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.7.0...v0.7.1</content>
     <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.7.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.3</id>
+    <title>Dark Cloud 1 v0.4.3</title>
+    <updated>2026-03-24T16:17:32+00:00</updated>
+    <author>
+      <name>Lizardman175</name>
+    </author>
+    <content># Dark Cloud 1 AP Rando v0.4.3&#13;
+&#13;
+# Changes&#13;
+ - Proper merge of the fix for the missing georama bug&#13;
+ - Expanded the text box for the slot name error message to the current slot name is actually readable&#13;
+ - Cleaned up server rule logic code to make maintenance easier.  Added a few more fruits to Osmond's requirements as well as pockets for consistency with Ungaga's requirements.  Mostly only affects the spheres around Osmond.&#13;
+ - Limited how many items the client can give to max inventory - 10.  This does not include sundew, horned key, or pockets.  Attachments from the client are limited to 35 as well.&#13;
+ - Added options to change default names for characters in the .yaml, so Ungaga can be renamed!&#13;
+   - Pay attention to the requirements or the world generation will fail&#13;
+   - If renaming Toan, you need to make sure to connect the client *before* starting a new game!&#13;
+   - Except for Ungaga, characters can still be renamed from the yaml names in the normal cutscenes&#13;
+ - Added a DC1 icon so the app doesn't use the default avalonia one anymore&#13;
+ - Fixed an issue that could cause the player to receive more items than expected, potentially clogging the inventory with unusable items&#13;
+ - Improved handling of defense/fruit/gourd item limit.  Insignificant performance gain, and also fixes some bugs likely nobody encountered/noticed.&#13;
+ - Added a Dark Genie location/item so that in an all bosses run, if the DG is killed before the other 5 bosses it will still be recognized by the client.&#13;
+ - Handle the game state returning to the title screen after beating the Genie&#13;
+ &#13;
+### Linux&#13;
+ - Created a Linux build, but it doesn't want to talk with pcsx2 just yet.  Still trying to understand this one.&#13;
+&#13;
+Will not work with existing worlds</content>
+    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.5</id>
+    <title>Black Ops 3 - Zombies v0.2.5</title>
+    <updated>2026-03-24T17:58:26+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>**Apworld:**&#13;
+- Fire and Void bow checks are disabled by default. They will be default enabled after restoration is working well for them.&#13;
+- Starting points bonus default increased from 2500 to 3000&#13;
+- Map Specific items turned off by default again until there is better UI for them&#13;
+&#13;
+**Mod:**&#13;
+- Basic Gobblegums are now unlocked to use in gum loadouts&#13;
+- Der Eisendrache Bows:&#13;
+  - There is now a basic warning on-screen when bows are being restored&#13;
+  - Storm and Wolf bows restore up to the arrow being placed on the pedestals. Until it can be worked around enjoy the free max ammo&#13;
+  - Void bow restores up to needing to be fed 6 crawlers&#13;
+- Fix Storm and Wolf bow restoration not happening if you are wielding a Fire or Void bow&#13;
+- Fix rocket scene not running when restoring during the channelling stone step&#13;
+- Fix MPD not spawning when beating the keeper boss if restoring a save after the channelling stone step&#13;
+- Prevent player data saving when in beast mode&#13;
+- Fix crash when going down related to stamin-up and widow's wine&#13;
+&#13;
+Wanted workshop map is still broken for now.</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.2.5"/>
   </entry>
 </feed>
