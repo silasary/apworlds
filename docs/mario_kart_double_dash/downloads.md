@@ -1,9 +1,12 @@
 # Mario Kart Double Dash
 
 ## Latest
-- <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.2.3/mario_kart_double_dash.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.3.0/mario_kart_double_dash.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.3.0/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.3.0/mario_kart_double_dash.apworld</a>
 
 #### v0.2.3
 - <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.2.3/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.2.3/mario_kart_double_dash.apworld</a>
