@@ -2,33 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-24T06:26:00.405090+00:00</updated>
+  <updated>2026-03-24T12:23:23.431257+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.1.6</id>
-    <title>Cobalt Core v1.1.6</title>
-    <updated>2026-03-19T21:39:30+00:00</updated>
-    <author>
-      <name>Isaac-SOL</name>
-    </author>
-    <content>- Made memory counts / Timeline fix counts clearer when memories are shuffled&#13;
-- Cards and artifacts from other instances of Cobalt Core in the multiworld now show a detailed tooltip&#13;
-- The game no longer tracks Steam achievements while the mod is installed&#13;
-- Locked cards are now properly darkened while in hand&#13;
-- Locked cards are no longer darkened in tooltips&#13;
-- Tweaked some color values in the tracker and console for readability&#13;
-- Fixed desynchronization between client and host when locations are sent from the server (such as with `send_location` for example)&#13;
-- Fixed an issue preventing some characters from being chosen at the end of a run when memories are shuffled&#13;
-- Fixed a crash when players or items in the multiworld had curly braces in their name&#13;
-&#13;
-The YAML and APWorld are identical to version 1.1.5, and this version is compatible with currently running 1.1.5 multiworlds.&#13;
-&#13;
-I said I wouldn't come back before 1.2.0, but I wanted to tackle some easy to fix annoying bugs first. I have a lot on my plate at the moment so I don't know when I'll be starting work on 1.2.0, but it will happen!</content>
-    <link href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.1.6"/>
-  </entry>
   <entry>
     <id>https://github.com/cjmang/StS-AP-World/releases/tag/2.3.5</id>
     <title>Slay the Spire v2.3.5</title>
@@ -1297,5 +1275,32 @@ Everything from the original native version *should* be present in this one. If 
 44. Fix an oversight that caused messages to get repeatedly processed over and over again. This was most visible when telling the rat to do something: it would go into an infinite loop of acknowledging the request forever.&#13;
 45. Fix an oversight where a horizontal scroll bar could appear under normal conditions just because of how close certain locations are to the edge.</content>
     <link href="https://github.com/airbreather/Autopelago/releases/tag/v0.11.14"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.7.1</id>
+    <title>Casualties: Unknown v0.7.1</title>
+    <updated>2026-03-24T07:27:18+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.7.1&#13;
+This update is compatible with worlds generated on version 0.7.0 and above!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+&#13;
+# Changes&#13;
+- Updated Archipelago.Multiclient.Net to 6.7.1&#13;
+# Fixes&#13;
+- Praying that this time I actually fixed received recipes randomly being wiped after death and never coming back.&#13;
+- Archipelago Items will now properly update to a new sprite and description after collection if more than one exists.&#13;
+&#13;
+# Known Issues&#13;
+- Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
+- Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators.&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed.&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.7.0...v0.7.1</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.7.1"/>
   </entry>
 </feed>
