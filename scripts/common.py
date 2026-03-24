@@ -254,7 +254,7 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
             manifest["igdb_id"] = manifest_data["igdb_id"]
         if "authors" in manifest_data:
             manifest["authors"] = manifest_data["authors"]
-        if "game" in manifest_data and not manifest.get("game"):
+        if manifest_data.get("game") and not manifest.get("game"):
             manifest["game"] = manifest_data["game"]
         if isinstance(manifest.get("authors", []), str):  # Putting a string in this field is against spec, but when has that ever stopped anyone?
             manifest["authors"] = [manifest["authors"]]
