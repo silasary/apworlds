@@ -68,6 +68,20 @@
       "title": "UZArchipelago 0.8.3",
       "version_simple": "0.8.3",
       "world_version": "0.8.3"
+    },
+    "gzap-0.8.4": {
+      "created_at": "2026-03-25T12:44:01Z",
+      "description": "# 0.8.4\r\n\r\nThis is a bugfix release. The most notable changes are that it is now safe to\r\nrestart uzdoom and load a different wad and game without restarting the client,\r\nand that different items at the same location are now considered different\r\nchecks, a change that has added 10-15 checks to most wads.\r\n\r\nExisting logic and tuning data remains compatible; there is no need to re-scan\r\nyour wads, and tuning for existing checks will automatically apply to new checks\r\nat the same positions.\r\n\r\n- Fixed:\r\n  - Typenames in `GZAPRC` are no longer case sensitive.\r\n  - The `typename` directive in `GZAPRC` now properly affects category assignment.\r\n  - Items that the apworld treated as keys, but which were not derived from `Key`\r\n    or `PuzzleItem`, were not treated as keys by the runtime.\r\n  - Checks that replace floating items no longer fall to the floor.\r\n  - Logic menu now always opens scrolled to the top.\r\n  - Keybinding name for `open logic dashboard` wasn't properly displayed.\r\n  - If more progression items exist than free locations, it will skip filler\r\n    placement (rather than crashing), since generation may still succeed in\r\n    multiworld where the extra items can be displace filler from other worlds.\r\n  - Restarting uzdoom to load a different game while leaving the client open no\r\n    longer sends out checks from the previous game.\r\n  - When replacing items with checks, AP now tries to replace an actor of the\r\n    expected type, or failing that, the expected logic category, rather than\r\n    just picking anything vaguely plausible at the right coordinates.\r\n  - Multiple items placed at the same coordinates are now considered multiple\r\n    checks, *if* they are different actor types. (So, e.g., two backpacks are\r\n    one check, but a backpack and a megasphere are two checks.) This adds 10-15\r\n    locations to most wads.\r\n- For logic developers:\r\n  - `destroy-on-spawn` directive in `GZAPRC`.\r\n  - AP can now put multiple copies of a `key` in the pool and keep track of how\r\n    many the player has collected.\r\n  - `key/` prerequisites can now include a count, e.g. `key/PowerCore/3`.\r\n  - Defining a new subregion inserts a dependency on the subregion that was\r\n    activate when you defined it, rather than copying all of the prereqs from\r\n    that subregion.\r\n  - Subregions are now emitted in the log in the same order they were defined.\r\n  - Subregions are displayed in the menu most-recently-defined-first.\r\n  - You can now output either all regions in the game or just the current map.\r\n\r\n[Logic pack downloads](https://github.com/ToxicFrog/doom-mods/blob/gzap-0.8.4/gzap/doc/support-table.md)",
+      "download_url": "https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.8.4/uzdoom.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6d67d09d461d20ba4c22f386c0e70b02841cecba2fc308b1171ff9fc2072b7fa",
+      "html_url": "https://github.com/ToxicFrog/doom-mods/releases/tag/gzap-0.8.4",
+      "size": 62088,
+      "source_url": "https://api.github.com/repos/ToxicFrog/doom-mods",
+      "tag": "gzap-0.8.4",
+      "title": "UZArchipelago 0.8.4",
+      "version_simple": "0.8.4",
+      "world_version": "0.8.4"
     }
   }
 }
