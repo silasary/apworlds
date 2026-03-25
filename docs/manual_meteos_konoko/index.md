@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/Gameplushy/manual_Meteos_Konoko/releases/download/prod/manual_Meteos_Konoko.apworld">Latest Version (1)</a>
+- <a href="https://github.com/Gameplushy/manual_Meteos_Konoko/releases/download/v1.1/manual_Meteos_Konoko.apworld">Latest Version (1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
