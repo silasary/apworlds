@@ -8,6 +8,9 @@
 #### v7.4.4
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.4/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.4/stardew_valley.apworld</a>
 
+#### v7.4.4
+- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.5/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.5/stardew_valley.apworld</a>
+
 #### v7.4.0.post3
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.0/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.0/stardew_valley.apworld</a>
 
