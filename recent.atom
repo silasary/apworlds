@@ -2,41 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-25T06:31:07.356420+00:00</updated>
+  <updated>2026-03-25T12:19:25.295932+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/WolfBoi008/Block-Tales/releases/tag/4.2.2%2Ba</id>
-    <title>Manual_BlockTales_WolfBoi008 v4.2.2+a</title>
-    <updated>2026-03-21T03:49:54+00:00</updated>
-    <author>
-      <name>WolfBoi008</name>
-    </author>
-    <content># Known Issues&#13;
-None for now...&#13;
-# Changelog&#13;
-- Updated the Manual to the newest Stable version.</content>
-    <link href="https://github.com/WolfBoi008/Block-Tales/releases/tag/4.2.2%2Ba"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.6-pre</id>
-    <title>Flipwitch Forbidden Sex Hex v1.0.6rc0</title>
-    <updated>2026-03-21T06:10:05+00:00</updated>
-    <author>
-      <name>Witchybun</name>
-    </author>
-    <content>THIS IS NOT COMPATIBLE WITH CURRENT GAMES IF YOU USE IT I WILL HIT YOU WITH ROCK&#13;
-&#13;
-Changes:&#13;
-- Damage is now based on HP items received.  Lame, but avoids a weird order, and allows for every area with enemies to be documented.&#13;
-- Received items now check `AP_ItemReceived_X` where `X` is the item's index, and if its false, gives you the item.&#13;
-  - This is meant to try to fix a supposed bug where you die rapidly so quickly while in a sync that some items won't be given to you and you "skip" something. (It might not even fix it)&#13;
-&#13;
-I have not tested this completely yet, but someone mentioned wanting to help, so feel free.  Just don't expect stability.</content>
-    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.6-pre"/>
-  </entry>
   <entry>
     <id>https://github.com/silasary/Archipelago/releases/tag/apworld_manager-0.0.24</id>
     <title>APWorld Manager v0.0.24</title>
@@ -1302,5 +1272,43 @@ This version of the mod and apworld **should be safe** to upgrade to from 0.8.1,
 * There is a slight chance that some interactions break due to the generation change (but this can be fixed easily).&#13;
 * There is a small chance that a user interface may becomes unresponsive in a strange situation.</content>
     <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.2-pre.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.15</id>
+    <title>Tevi v1.4.15</title>
+    <updated>2026-03-25T11:09:52+00:00</updated>
+    <author>
+      <name>BlackSoulKnight</name>
+    </author>
+    <content>## Change log&#13;
+### All&#13;
++ Valhalla Breath West - Money Room X: 9 Y: 1 -&gt; missing Crossbomb + Extended&#13;
++ Overworld teleporter are now useable in a Memine race when teleporter mode is active&#13;
+&#13;
+### AP&#13;
++ Added Mananite- and Magitite-Amount options for Archipelago&#13;
++ Fixed upgrade able item count</content>
+    <link href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.15"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.6</id>
+    <title>Flipwitch Forbidden Sex Hex v1.0.6</title>
+    <updated>2026-03-25T11:38:15+00:00</updated>
+    <author>
+      <name>Witchybun</name>
+    </author>
+    <content>New Feature:&#13;
+- Most H scenes are skipped save game over scenes.  Includes gachapon.&#13;
+  - A little buggy.  Just button mash through the times you hear dialogue move but you can't move.  It'll get there.&#13;
+&#13;
+Changes:&#13;
+- Instead of relying on the index as a cutoff point, items are checked via a dictionary which checks if the item was received and if not send it.  This should hopefully resolve the problem where dying a lot makes you "skip" something.&#13;
+  - Receiving items seemed to work on my end, but needs further testing.&#13;
+- Instead of path order determining damage, its based on HP items received.  This should help make it so you don't feel like a late area will kill you instantly due to no HP upgrade items sent.&#13;
+- Removed the progression label from HP upgrades, since its not considered for logic anymore.&#13;
+&#13;
+Quick Hotfix:&#13;
+- I added a warning if the previous item wasn't sent but it wasn't very verbose and called itself if the index was 0, which would probably confuse someone and make people offer bad reports.</content>
+    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.6"/>
   </entry>
 </feed>

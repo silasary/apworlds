@@ -701,6 +701,20 @@
       "version_simple": "1.0.5",
       "world_version": "1.0.5"
     },
+    "1.0.6": {
+      "created_at": "2026-03-25T11:38:15Z",
+      "description": "New Feature:\r\n- Most H scenes are skipped save game over scenes.  Includes gachapon.\r\n  - A little buggy.  Just button mash through the times you hear dialogue move but you can't move.  It'll get there.\r\n\r\nChanges:\r\n- Instead of relying on the index as a cutoff point, items are checked via a dictionary which checks if the item was received and if not send it.  This should hopefully resolve the problem where dying a lot makes you \"skip\" something.\r\n  - Receiving items seemed to work on my end, but needs further testing.\r\n- Instead of path order determining damage, its based on HP items received.  This should help make it so you don't feel like a late area will kill you instantly due to no HP upgrade items sent.\r\n- Removed the progression label from HP upgrades, since its not considered for logic anymore.\r\n\r\nQuick Hotfix:\r\n- I added a warning if the previous item wasn't sent but it wasn't very verbose and called itself if the index was 0, which would probably confuse someone and make people offer bad reports.",
+      "download_url": "https://github.com/Witchybun/FlipwitchAPClient/releases/download/1.0.6/flipwitch.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0a2b08663ecf6e95d881720b48e5ea3e61335359b178fb25c46225cc87c3272f",
+      "html_url": "https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.6",
+      "size": 72316,
+      "source_url": "https://api.github.com/repos/Witchybun/FlipwitchAPClient",
+      "tag": "1.0.6",
+      "title": "Flipwitch Randomizer v1.0.6",
+      "version_simple": "1.0.6",
+      "world_version": "1.0.6"
+    },
     "1.0.6-pre": {
       "created_at": "2026-03-21T06:10:05Z",
       "description": "THIS IS NOT COMPATIBLE WITH CURRENT GAMES IF YOU USE IT I WILL HIT YOU WITH ROCK\r\n\r\nChanges:\r\n- Damage is now based on HP items received.  Lame, but avoids a weird order, and allows for every area with enemies to be documented.\r\n- Received items now check `AP_ItemReceived_X` where `X` is the item's index, and if its false, gives you the item.\r\n  - This is meant to try to fix a supposed bug where you die rapidly so quickly while in a sync that some items won't be given to you and you \"skip\" something. (It might not even fix it)\r\n\r\nI have not tested this completely yet, but someone mentioned wanting to help, so feel free.  Just don't expect stability.",
