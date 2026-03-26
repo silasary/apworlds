@@ -1,4 +1,4 @@
-# 
+# Spyro: A Hero&#x27;s Tail
 
 ## Latest
 - <a href="https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.3.0/spyro-aht.apworld">Latest Version (0.3.0)</a>

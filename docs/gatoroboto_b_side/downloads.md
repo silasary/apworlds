@@ -1,4 +1,4 @@
-# 
+# Gato Roboto B-Side
 
 ## Latest
 - <a href="https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.5.3/gatoroboto_b_side.apworld">Latest Version (0.5.3)</a>

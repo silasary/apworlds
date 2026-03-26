@@ -2,38 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-26T00:18:54.255289+00:00</updated>
+  <updated>2026-03-26T06:28:20.659727+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.4</id>
-    <title>Black Ops 3 - Zombies v0.2.4.post2</title>
-    <updated>2026-03-21T16:36:30+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>**Apworld:**&#13;
-- Added improved logic for round progression by @PIEisFANTASTIC&#13;
-- Round progression is now split up in groups of 5 per map.&#13;
-- Perks, Pack-a-Punch, and weapon count all apply towards what round can be logically reached.&#13;
-- Added round logic for some part sets that have a minimum round, like the Apothican Servant on SoE and the DG-4 on DE.&#13;
-- Added an option to set the number of maps you want to hit your goal round on, if doing rounds for goal.&#13;
-- You can exclude specific bows from the randomly selected elemental bow checks&#13;
-- You can select how many maps needed to goal on Goal Round, instead of always clearing every map&#13;
-- Goal round can be lower than maximum check round&#13;
-&#13;
-**Mod:**&#13;
-- Shadows of Evil changes&#13;
-  - Beastmode can now call trains to other stations. This should make the solo easter egg ending much safer.&#13;
-  - Swords no longer have to be collected from the sword rock when restoring a save. Tier 1 is awarded immediately, and Tier 2 is awarded after the Pack-A-Punch ritual is complete.&#13;
-- Wallbuy ammo refills now also fill your clip&#13;
-- Fix wallbuy ammo refills not awarding ammo for upgraded weapons&#13;
-- Fix bug preventing Revelations from restoring map state and doing round saves if Sophia hadn't materialized yet&#13;
-- (Workshop) Work in progress support for 'Wanted'. Expect issues if enabled.</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.2.4"/>
-  </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.0</id>
     <title>The Grinch v1.5.0</title>
@@ -546,7 +519,7 @@ New Classics, lyric packs, Eden Project, F 2nd Pack, etc. It's your problem now!
   </entry>
   <entry>
     <id>https://github.com/kodbyte/Archipelago-Keen/releases/tag/v0.0.2</id>
-    <title>keen v0.0.2</title>
+    <title>Commander Keen v0.0.2</title>
     <updated>2026-03-23T00:59:01+00:00</updated>
     <author>
       <name>kodbyte</name>
@@ -1315,5 +1288,98 @@ Honestly, I think I found most of the bugs. Any remaining unknown bugs are likel
 &#13;
 </content>
     <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.2</id>
+    <title>Ratchet &amp; Clank 2 v0.6.4.2</title>
+    <updated>2026-03-25T23:33:03+00:00</updated>
+    <author>
+      <name>Evilwb</name>
+    </author>
+    <author>
+      <name>JacobMIX</name>
+    </author>
+    <content>Testing Dynamic PINE ports for multi PCSX2 instance support.&#13;
+Also adds auto connection functionally to the client using patch data.&#13;
+Based on: https://github.com/evilwb/APRac2/releases/tag/v0.6.4&#13;
+v0.6.4.2: Now also has UT integrated, and yaml-less support. Works as long as UT is installed. Also fixed some first person logic issues.&#13;
+Planned: More UT features. "Glitch" logic. Internal or external map. Auto map tab switching. Community suggested logic changes.&#13;
+&#13;
+### Setup&#13;
+You need every RaC2 option in your `host.yaml` setup. That means:  &#13;
+`iso_file` to a valid vanilla iso in your Archipelago directory (should be already from normal setup)  &#13;
+`iso_start` to your PCSX2 exe (Make sure to use `/`)  &#13;
+`game_ini` to a game settings file in your PCSX2's gamesettings folder.  &#13;
+(Usually `%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini`)&#13;
+&#13;
+Example:&#13;
+```yaml&#13;
+rac2_options:&#13;
+  # File name of the Ratchet &amp; Clank 2 ISO&#13;
+  iso_file: "Ratchet &amp; Clank - Going Commando (USA) (v1.01).iso"&#13;
+  # Set this false to never autostart an iso (such as after patching),&#13;
+  # Set it to true to have the operating system default program open the iso&#13;
+  # Alternatively, set it to a path to a program to open the .iso file with (like PCSX2)&#13;
+  iso_start: "C:/Emulators/(PS2) PCSX2/pcsx2-qt.exe"&#13;
+  # Set to file path to an existing PCSX2 game setting INI file to have the patcher&#13;
+  # create an appropriately named INI with the rest of the patch output. This can be used to&#13;
+  # allow you to use you own custom PCSX2 setting with patched ISO.&#13;
+  game_ini: "%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini"&#13;
+```&#13;
+&#13;
+Game settings ini example:&#13;
+```ini&#13;
+[EmuCore]&#13;
+EnablePINE = true&#13;
+PINESlot = 28011&#13;
+&#13;
+[Achievements]&#13;
+Enabled = false&#13;
+&#13;
+[MemoryCards]&#13;
+Slot1_Enable = true&#13;
+Slot2_Enable = false&#13;
+Slot1_Filename = APgames.ps2&#13;
+```&#13;
+Recommended you use your settings for vanilla RaC2. But you can make a copy with specific edits.&#13;
+So you can set an AP specific memory card like in the example above. (You don't need to add PINE settings)&#13;
+&#13;
+For normal setup if you haven't already. Check [GitHub](&lt;https://github.com/evilwb/APRac2/blob/main/docs/setup_en.md&gt;), and [Discord](&lt;https://discord.com/channels/731205301247803413/1325015730218860554/1371288772548755466&gt;).&#13;
+&#13;
+### Start&#13;
+Simply run a `.aprac2` file with Archipelago. (Recommended to set to open `.aprac2` files with Archipelago by default)&#13;
+Or run the client, and use the `/start` command, and then select your desired `.aprac2` file. (Or drag `.aprac2` into the client)&#13;
+Note: You can rename `aprac2` and patched `iso` but they have to have the same name or it'll make another `iso`.&#13;
+(Same way you have to keep `.apsave`, and their `.zip` name the same if hosting locally)&#13;
+&#13;
+Changes: &lt;https://github.com/jacobmix/APRac2/compare/v0.6.4.1-PINE-pre...v0.6.4.2?w=1&gt;&#13;
+Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.2?w=1&gt;</content>
+    <link href="https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.3</id>
+    <title>Gauntlet Legends v2.1.3</title>
+    <updated>2026-03-26T02:52:39+00:00</updated>
+    <author>
+      <name>jamesbrq</name>
+    </author>
+    <content>REQUIRED: Archipelago -&gt; https://github.com/ArchipelagoMW/Archipelago/releases&#13;
+REQUIRED: Retroarch -&gt; https://www.retroarch.com/?page=platforms&#13;
+Drag and drop gl.apworld into your custom_worlds folder in your Archipelago install.&#13;
+&#13;
+You can launch the client from ArchipelagoLauncher, just click on the Gauntlet Legends Client button.&#13;
+&#13;
+To patch the game, you are required to have a US copy of Gauntlet Legends for the N64.&#13;
+Either drag the patch onto ArchipelagoLauncher.exe or Right click the patch and 'Open With...' ArchipelagoLauncher.exe&#13;
+The host does not need to have a copy of the game to generate.&#13;
+&#13;
+RETROARCH IS REQUIRED IT IS THE ONLY EMULATOR THAT WILL WORK.&#13;
+&#13;
+IN RETROARCH: You must go to Settings-&gt;User Interface and turn the Show Advanced Settings ON. Then in Settings-&gt; Network, you must also turn ON Network Commands. Leave the port the default.&#13;
+&#13;
+Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
+&#13;
+**Full Changelog**: https://github.com/jamesbrq/GauntletLegendsAP/compare/v2.1.2...main</content>
+    <link href="https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.3"/>
   </entry>
 </feed>

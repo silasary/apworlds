@@ -1,6 +1,6 @@
-# 
+# Spyro: A Hero&#x27;s Tail
 
-
+Spyro: A Hero&#x27;s Tail is a 3D platformer and collect-a-thon released in 2004 for the Xbox, Playstation 2 and GameCube.
 
 
 ## Downloads

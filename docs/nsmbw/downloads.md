@@ -1,4 +1,4 @@
-# 
+# NSMBW
 
 ## Latest
 - <a href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/download/v0.0.1/nsmbw.apworld">Latest Version (1.0.1)</a>

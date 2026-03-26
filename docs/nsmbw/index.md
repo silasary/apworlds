@@ -1,6 +1,7 @@
-# 
+# NSMBW
 
-
+NSMBW world
+copy past from ap-quest
 
 
 ## Downloads
@@ -8,6 +9,7 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_NSMBW">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
@@ -15,4 +17,3 @@
 ## Other Documentation files
 - <a href="TODO">TODO</a>
 - <a href="credit">credit</a>
-- <a href="en_NSMBW">en_NSMBW</a>

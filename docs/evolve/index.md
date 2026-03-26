@@ -1,6 +1,6 @@
-# 
+# Evolve
 
-
+Evolve is a incrimental game that already exists. Its pretty fun lol
 
 
 ## Downloads
@@ -8,12 +8,12 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Evolve">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
 ## Other Documentation files
-- <a href="en_Evolve">en_Evolve</a>
 - <a href="nextVersion">nextVersion</a>
 - <a href="v0_1_0">v0_1_0</a>
 - <a href="v0_1_4">v0_1_4</a>

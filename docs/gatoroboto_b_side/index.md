@@ -1,4 +1,4 @@
-# 
+# Gato Roboto B-Side
 
 
 
@@ -8,11 +8,11 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Gato Roboto B-Side">English</a>
 
 ## Setup Guide
 
 ## Other Documentation files
 - <a href="contributing">contributing</a>
-- <a href="en_Gato Roboto B-Side">en_Gato Roboto B-Side</a>
 - <a href="first_time_setup">first_time_setup</a>
 - <a href="guide_en">guide_en</a>
