@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "Spencer2585"
+  ],
   "description": "Elder Scrolls Online is a MMORPG Set in the world of The elder Scrolls. Journey across the reagons of Tamriel while fighting\nagainst various enemys",
   "game": "Elder Scrolls Online",
   "github": "https://github.com/spencer2585/APESO",
@@ -68,6 +71,22 @@
       "title": "APESO 0.2.2",
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
+    },
+    "0.3.0": {
+      "created_at": "2026-03-25T19:57:17Z",
+      "description": "As this is a prerelease, **there may be several bugs that could take from the experience or result in the creation of an unbeatable seed**, This release should only be used for those who want to test out the new features or want to help find bugs ~~or those who dont care and just want to play anyways~~\r\n\r\nHonestly, I think I found most of the bugs. Any remaining unknown bugs are likely located in the client or mod, which means that a hotfix should be able to fix them without the need to generate a new game. That being said, I cannot guarantee this is the case, so don't say I didn't warn you.\r\n\r\n## Whats New\r\n- Completely redone Mod and APWorld code\r\n- Added Delve access items and completion locations\r\n- New Goal: Dungeon Delver, complete every delve included in your seed\r\n- changed the wayshrine checks to activate when interacting with the wayshrine, not just first discovery. This is for those who want to use an existing character for the AP run\r\n- Added new system to prevent players from interacting with interactables that lead to locked zones\r\n- Added new system to block traveling to other zones via dialogue with an NPC\r\n- Added new system to limit how much gold the player can have on them\r\n- New Options\r\n  - Delves_per_region: How many delves to include from each zone, goes up to 18, set to 0 to disable zone locations and locking\r\n  - Enable Main Quests: to enable and disable locations for the main quest, must be enabled for the main quest goal or if coldharbour is your goal for zone quest goal\r\n  - enable Wayshine checks: to enable and disable checks for interacting with wayshrines\r\n  - base gold cap: what you want the gold cap to be without any wallet increase items, set to 0 to enable gold limiting\r\n- More that I can't remember off the top of my head\r\n\r\n## Known Bugs:\r\n- Leaving the client on for an extended period of time can result in the client wiping all items sent to the mod, meaning the game may tell you that you don't have something you should have. If this occurs, you should just be able to close and reopen the client, and upon reconnection, it should fix all items sent to the game. Ill be looking into what causes this but its likely a 0.4.0+ issue to fix for when I rewrite the client like I did with the apworld and mod in this one\r\n- Setting your goal region to random can cause it to pick a region inaccessible with a low zone count, causing generation errors. This error occurs at the beginning of generation, so you should know if there's a problem pretty quick. You can avoid this by manually choosing a goal zone or trying to regen so it picks a different zone until you get it to work. Note that the lower you set the zone count, the more likely this is to occur. I will be looking into fixing this before 0.3.0 proper.\r\n- Controller can break on reloads, Ill be looking into this fairly soon. Can be worked around by reloadUI until controller works\r\n\r\n",
+      "download_url": "https://github.com/spencer2585/APESO/releases/download/0.3.0/eso.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ed34a1710ca9f2001308b96cae30622919386e432ca76c6001ebfe83e8b4c5e5",
+      "html_url": "https://github.com/spencer2585/APESO/releases/tag/0.3.0",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 27842,
+      "source_url": "https://api.github.com/repos/spencer2585/APESO",
+      "tag": "0.3.0",
+      "title": "APESO 0.3.0 Pre-Release 1",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

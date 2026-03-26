@@ -7,6 +7,21 @@ events, quests and playing minigames are treated as locations.
 
 The story has been removed, and some changes were made to the game’s logic to support randomization.
 
+## Deathlink
+
+### Trigger
+
+Deathlink can be currently only triggered by Power Competition (except Quizzes).  
+Losing a Power Competition (Battle, Chase, Hide and Seek) sends Death.
+
+### Receiving Death
+
+Death can be received in:
+
+- Overworld (respawning at the last used Entrance, also during Power Competition)
+- Attraction (spawning back at the overworld)
+- Loading Screen (triggering a second loading screen)
+
 ## Other Pages
 
 - [Setup](https://github.com/Mekurushi/Archipelago_Pokepark/blob/main/worlds/pokepark/docs/setup_en.md)

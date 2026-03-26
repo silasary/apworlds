@@ -2,87 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-25T18:26:23.330882+00:00</updated>
+  <updated>2026-03-26T00:18:54.255289+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/tag/v0.6.0-alpha.2</id>
-    <title>Dark Souls II v0.6.0a2</title>
-    <updated>2026-03-21T13:21:43+00:00</updated>
-    <author>
-      <name>WildBunnie</name>
-    </author>
-    <content>Setup instructions for this release can be found [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/setup_en.md). Info about locations [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/location_en.md), and info about items [here](https://github.com/WildBunnie/Archipelago/blob/dark_souls_2/worlds/dark_souls_2/docs/items_en.md).&#13;
-&#13;
-## Changes and New Features&#13;
-&#13;
-### Fixes&#13;
-- Fixed crash that would happen sometimes when connecting through the client even though it would connect correctly before&#13;
-- Fixed crash when sending items to players with specific characters in their username&#13;
-- Fixed "mod could not initialize" error that would happen to some people&#13;
-- Max slot name in the input box in the client is now correct (16 characters)&#13;
-&#13;
-### Archipelago&#13;
-- `useful_items` YAML option that allows choosing what items will be marked as useful&#13;
-  - Now if you empty this list no item will be marked as useful&#13;
-- `include_items` YAML option that allows for adding extra items to the pool that might not be added by default&#13;
-- `include_locations` YAML option that excludes all locations NOT present inside it (inverse `exclude_locations`)&#13;
-- Added missing lockstone rules for some locations&#13;
-- Fix issue where you could have duplicate progression items&#13;
-- Fixed issue with some items that were marked as reachable in shaded woods even though they were after shrine of winter&#13;
-- Fixed `portcullis near ruined house below Cale, corpse` location being behind soldier key even though that is not the case&#13;
-- Fix one of the pursuer drops that was not marked as missable&#13;
-&#13;
-###  Game Modifications&#13;
-- Najka's tree can now be broken by hitting it&#13;
-&#13;
-### Technical Stuff&#13;
-- Added logging to a file to help with debugging crashes/issues&#13;
-- Messages in the overlay console now only have hours, minutes and seconds instead of having year, day, etc...&#13;
-- Add some extra info to slotdata to allow poptracker to check the enabled dlcs and combat logic&#13;
-&#13;
-## Links&#13;
-&#13;
-- `apworld` code: https://github.com/WildBunnie/Archipelago/commit/e0fa411e8c23ea5e7177b138a6f84a7b5f53275c&#13;
-&#13;
-- `ds2-modengine`: https://github.com/WildBunnie/ds2-modengine/commit/69531a8fbfac83fc93735d5eae56d68005b6ac1e&#13;
-&#13;
-- **Full Changelog**: https://github.com/WildBunnie/DarkSoulsII-Archipelago/compare/v0.6.0-alpha.1...v0.6.0-alpha.2 &#13;
-&#13;
-## Special Thanks&#13;
-Thank you to [iljoRSP](https://github.com/iljoRSP) for contributing to the apworld!</content>
-    <link href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/tag/v0.6.0-alpha.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.0</id>
-    <title>Crypt of the NecroDancer v0.5.0</title>
-    <updated>2026-03-21T14:10:48+00:00</updated>
-    <author>
-      <name>lastingParadox</name>
-    </author>
-    <content>### Changes&#13;
-- Refactors Items and Locations logic to not require CSVs, more workable structs for Client/Rules/Generation functionality&#13;
-- Adds Starting Inventory setting, permitting the user to select what percentage of starting items will populate their multiworld inventory upon starting the game. Default is 50%. (Might change to 25/33% in the future, still seems rather high).&#13;
-- Adds Character Unlocks settings, permitting characters to be locked behind acquiring their starting items&#13;
- - Soft: Only during generation, allowing you to play as a character without certain non-unique starting items (minus Dorian :( ). Unique starting items still lock a character from being accessible.&#13;
- - Hard: The mod will not allow you to play as a character until you acquire their starting items first, identified by a yellow question mark on the selector silhouette.&#13;
-- Adds Unique items setting, permitting _some_ characters' unique items to be locked behind checks. This is taken into account for the character unlocks setting above.&#13;
- - Unique items added: Dorian's Plate Armor, Klarinetta's Shiny Armor, Hatsune Miku's Virtual Armor, Shovel Knight's Shovel Blade, Melody's Golden Lute, Eli's Hand, Dove's Flower, Klarinetta's Zweihander, Chaunter's Lantern, Suzu's Lance of Courage, Hatsune Miku's Leek, Nocturna's Transform Spell&#13;
-- Adds Include Materials setting, locking weapon materials in progression. Collecting a weapon material will allow for all weapon shapes to have that material in a run. (Locks Tempo's Blood Dagger starting item when soft/hard character unlocks is enabled)&#13;
-- Adds Zone Access Keys setting, locking future zones behind progressive/separate zone access keys.&#13;
- - Completing Zone 1 will not unlock Zone 2 until the respective key is unlocked, whether progressive or specific to zone 2.&#13;
-- Adds LockCharacterRoom setting, which will lock the character room key behind an early sphere item, locking you to your starting character until it's unlocked.&#13;
-- Adds StartingZone setting, which only triggers when ZoneAccessKeys is not disabled.&#13;
- - Starting in Zone 3, for instance, will add either two progressive zone keys or the Zone 3 access key to your starting inventory in the multiworld&#13;
- - Changes `per_level_zone_clears` setting to `floor_clear_checks` for better readability. Adds `per_level_zone_clears` as an alias for now.&#13;
-&#13;
-Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
-&#13;
-Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
-    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.0"/>
-  </entry>
   <entry>
     <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.4</id>
     <title>Black Ops 3 - Zombies v0.2.4.post2</title>
@@ -1334,5 +1258,62 @@ VERY big thanks to the Glover community for finding and fixing many of these iss
 &#13;
 **Full Changelog**: https://github.com/Smg065/GloverArchipelago/commits/v1.0.1</content>
     <link href="https://github.com/Smg065/GloverArchipelago/releases/tag/v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.0</id>
+    <title>PokePark v1.2.0</title>
+    <updated>2026-03-25T19:31:03+00:00</updated>
+    <author>
+      <name>Joe Mama (Mekurushi)</name>
+    </author>
+    <content>## What's Changed&#13;
+* fixed Dolphin Cheat Incompatibility by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/76&#13;
+* improved deathlink to support Overworld and Attraction by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/78&#13;
+* added Ending trigger on goal completion by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/79&#13;
+* displaying client messages ingame by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/81&#13;
+* updated ap client to support new patcher system by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/94&#13;
+* 95 pokepark colorized in game client messages by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/99&#13;
+* fixed beach zone spearow flag by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/100&#13;
+* increased requirements for Arcanine, Jolteon and Flygon by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/101&#13;
+* 85 pokepark power randomize option customizable by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/102&#13;
+* 103 pokepark fps enhancement by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/104&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.1.3...1.2.0</content>
+    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0</id>
+    <title>Elder Scrolls Online v0.3.0</title>
+    <updated>2026-03-25T19:57:17+00:00</updated>
+    <author>
+      <name>Spencer2585</name>
+    </author>
+    <content>As this is a prerelease, **there may be several bugs that could take from the experience or result in the creation of an unbeatable seed**, This release should only be used for those who want to test out the new features or want to help find bugs ~~or those who dont care and just want to play anyways~~&#13;
+&#13;
+Honestly, I think I found most of the bugs. Any remaining unknown bugs are likely located in the client or mod, which means that a hotfix should be able to fix them without the need to generate a new game. That being said, I cannot guarantee this is the case, so don't say I didn't warn you.&#13;
+&#13;
+## Whats New&#13;
+- Completely redone Mod and APWorld code&#13;
+- Added Delve access items and completion locations&#13;
+- New Goal: Dungeon Delver, complete every delve included in your seed&#13;
+- changed the wayshrine checks to activate when interacting with the wayshrine, not just first discovery. This is for those who want to use an existing character for the AP run&#13;
+- Added new system to prevent players from interacting with interactables that lead to locked zones&#13;
+- Added new system to block traveling to other zones via dialogue with an NPC&#13;
+- Added new system to limit how much gold the player can have on them&#13;
+- New Options&#13;
+  - Delves_per_region: How many delves to include from each zone, goes up to 18, set to 0 to disable zone locations and locking&#13;
+  - Enable Main Quests: to enable and disable locations for the main quest, must be enabled for the main quest goal or if coldharbour is your goal for zone quest goal&#13;
+  - enable Wayshine checks: to enable and disable checks for interacting with wayshrines&#13;
+  - base gold cap: what you want the gold cap to be without any wallet increase items, set to 0 to enable gold limiting&#13;
+- More that I can't remember off the top of my head&#13;
+&#13;
+## Known Bugs:&#13;
+- Leaving the client on for an extended period of time can result in the client wiping all items sent to the mod, meaning the game may tell you that you don't have something you should have. If this occurs, you should just be able to close and reopen the client, and upon reconnection, it should fix all items sent to the game. Ill be looking into what causes this but its likely a 0.4.0+ issue to fix for when I rewrite the client like I did with the apworld and mod in this one&#13;
+- Setting your goal region to random can cause it to pick a region inaccessible with a low zone count, causing generation errors. This error occurs at the beginning of generation, so you should know if there's a problem pretty quick. You can avoid this by manually choosing a goal zone or trying to regen so it picks a different zone until you get it to work. Note that the lower you set the zone count, the more likely this is to occur. I will be looking into fixing this before 0.3.0 proper.&#13;
+- Controller can break on reloads, Ill be looking into this fairly soon. Can be worked around by reloadUI until controller works&#13;
+&#13;
+</content>
+    <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0"/>
   </entry>
 </feed>
