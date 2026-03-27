@@ -2,35 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-27T00:19:41.385318+00:00</updated>
+  <updated>2026-03-27T06:30:43.250068+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/stubobis1/Archipelago/releases/tag/1.3.0</id>
-    <title>Path of Exile v1.3.0.post2</title>
-    <updated>2026-03-22T05:50:50+00:00</updated>
-    <author>
-      <name>StuBob</name>
-    </author>
-    <content>## Patch notes:&#13;
-- Added support for Path of Exile 3.28&#13;
-- Changed Templar's starting gems&#13;
-- Added new gems, and the Reliquarian&#13;
-- Modified generation to support Reliquarian.&#13;
-- Added a manifest file, to support future archipelago releases.&#13;
-	&#13;
-## Bug fixes:&#13;
-- Added Wither&#13;
-&#13;
-## NOTES:&#13;
-- There may be need for more alternate gems with the exceptional gem system (or maybe a item that would unlock all of them 🤔)&#13;
-- New poptracker for this release, here: https://github.com/stubobis1/PathOfExilePoptracker/releases/tag/1.3.0&#13;
-&#13;
-**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/1.2.1...1.3.0</content>
-    <link href="https://github.com/stubobis1/Archipelago/releases/tag/1.3.0"/>
-  </entry>
   <entry>
     <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.3</id>
     <title>Ape Escape 3 v2.0.3.post2</title>
@@ -1302,17 +1278,6 @@ HOTFIX #28: &#13;
     <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.0"/>
   </entry>
   <entry>
-    <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR2</id>
-    <title>Elder Scrolls Online v0.3.0</title>
-    <updated>2026-03-26T20:38:48+00:00</updated>
-    <author>
-      <name>Spencer2585</name>
-    </author>
-    <content>## Bug Fixes&#13;
-- Fixed bug where mod would check access based on Glenumbra instead of the current zone, leading to zones that are never locked giving a locked zone warning</content>
-    <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR2"/>
-  </entry>
-  <entry>
     <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR3</id>
     <title>Elder Scrolls Online v0.3.0</title>
     <updated>2026-03-26T20:38:48+00:00</updated>
@@ -1322,6 +1287,17 @@ HOTFIX #28: &#13;
     <content>## Bug Fixes:&#13;
 - Fixed generation issue with tip of the spearhead and escape from bleakrock zone quests causing generation errors</content>
     <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR2</id>
+    <title>Elder Scrolls Online v0.3.0</title>
+    <updated>2026-03-26T20:38:48+00:00</updated>
+    <author>
+      <name>Spencer2585</name>
+    </author>
+    <content>## Bug Fixes&#13;
+- Fixed bug where mod would check access based on Glenumbra instead of the current zone, leading to zones that are never locked giving a locked zone warning</content>
+    <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR2"/>
   </entry>
   <entry>
     <id>https://github.com/FeluciaPS/Archipelago/releases/tag/v0.5.0-beta</id>
@@ -1345,5 +1321,80 @@ Full Changelog: https://github.com/FeluciaPS/Archipelago/compare/0.4.4-beta...v0
 &#13;
 </content>
     <link href="https://github.com/FeluciaPS/Archipelago/releases/tag/v0.5.0-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.5.1</id>
+    <title>Pokemon Stadium v0.5.1</title>
+    <updated>2026-03-27T02:16:00+00:00</updated>
+    <author>
+      <name>jciii91</name>
+    </author>
+    <content>Fixes a bug that was forcing the cursor back to the first Cup tier.</content>
+    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/spage-age-v2.0.0</id>
+    <title>Factorio: Space Age v1.1.2</title>
+    <updated>2026-03-27T05:08:57+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld v2.0.0&#13;
+&#13;
+Lots of major new changes! Please report bugs and/or balance nightmares. There are a lot of combinations of cool options and I may have overlooked something.&#13;
+&#13;
+### Gameplay changes&#13;
+&#13;
+Default options are now a significantly accelerated experience relative to vanilla.&#13;
+&#13;
+* Added `quick_start` option, enabled by default, that gives personal construction bots and a chunk of basic resources at the start.&#13;
+* Added `skip_starting_trigger_techs` option, disabled by default, that starts with electronics, steam-power, etc. unlocked from the start without needing to do the crafting to trigger them. Free samples are given for skipped trigger techs.&#13;
+* Added `starting_planet` option, disabled by default, that integrates with CodeGreen's Any Planet Start mod: https://mods.factorio.com/mod/any-planet-start . Interacts with `skip_starting_trigger_techs` and `free_samples` in fun ways.&#13;
+* Added `space_technology_level` option to enable space flight with early or mid game technology, effectively downgrading all the ingredients for rocket silo, space platform, thruster, etc. to more primitive items. Puts the Space in Factorio: Space Age sooner rather than near the end of the game. (This could someday be obsoleted by recipe randomization.)&#13;
+* Added `progressive_technologies: large_groups` option, enabled by default, which puts critical technologies, such as advanced circuit, early in large progressive chains with non-critical bonuses later in the chains. This makes it less likely to get stuck waiting for someone to find a specific item. Details here: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/data/ap_data.py&#13;
+* You can Ctrl+F search for vanilla technologies in the technology GUI, and the description tells you which progressive chain it's a part of, if any. (The technologies are impossible to queue up; they only serve to give information to the player about how to !hint for them.)&#13;
+* `goal: any_other_planet_science` is now the default goal, and creates victory technologies to research instead of the mod reacting to researching anything that matches the condition. Includes low-effort art I drew of a trophy. Fixes #5.&#13;
+* `goal: space_platform` replaced by `goal: space_science`, which requires researching a victory technology with 4 science packs including space science (red, green, blue, white).&#13;
+* Managing enemies on Vulcanus and Gleba is now in logic, which is particularly important when starting on those planets. See options `demolisher_killers`, `pentapod_killers`, `vulcanus_rocks`, and `gleba_coal` for more details. Still no logic for Nauvis enemies.&#13;
+* Added `tech_cost_max_count`, default 200, which limits the cost of technology research. Additionally `tech_cost_divisor` defaults to 4 now, so all research objectives are dramatically cheaper by default.&#13;
+&#13;
+Minor adjustments:&#13;
+&#13;
+* Energy Link is now enabled by default and the recipe is unlocked by a multiworld item.&#13;
+* Furnaces, electric poles, and `military` through `military-4` recipe technologies are no longer progressive (with `progressive_technologies: only_related`). Getting the recipes out of order is interesting in a randomizer, because there are almost no crafting dependencies between them.&#13;
+* `rocket-silo` research enables ghost entities on death (which normally requires `construction-robotics`). Fixes https://github.com/thejoshwolfe/Archipelago/issues/9 .&#13;
+&#13;
+### Breaking changes to options&#13;
+&#13;
+These changes may require updates to your player yaml configuration from v1.&#13;
+&#13;
+* `progressive_technologies` has been completely overhauled. The old `bonuses` option is gone. The old `recipes` option is very similar to `only_related`. The default has changed to the new `large_groups` option.&#13;
+* `goal: space_platform` removed. Try `goal: space_science` instead.&#13;
+* `shuffle_final_technology` is now merged into `goal` with the addition of `aquilo_orbit_10_science` and `solar_system_edge_11_science`.&#13;
+* The speedups `rocket_parts_per_rocket` and `ingredients_per_space_platform_foundation` are removed because they're now included in `space_technology_level`.&#13;
+* `require_electric_furnace` has been renamed to `require_self_sufficient_space_platform`.&#13;
+* `automation` (the first assembling machine technology) is no longer part of any progressive chain because it is never randomized.&#13;
+* With some `progressive_technologies` settings, several progressive pseudo item names have been simplified to remove the `progressive-` prefix. E.g. `progressive-steel-plate-productivity` is now just called `steel-plate-productivity`, and `worker-robot-speed-1` through `worker-robot-speed-7` are part of a progressive group called simply `worker-robot-speed`. The rough generalization is that recipe unlock chains still say `progressive-` but bonus unlock chains don't.&#13;
+* With `progressive_technologies: large_groups`, if you want to give yourself levels of an infinite tech that's part of a progressive group, name the last item in the chain rather than the chain itself. e.g. `!getitem worker-robot-speed-7` or `start_inventory_from_pool: {mining-productivity-3: 5}`.&#13;
+&#13;
+### Internal changes&#13;
+&#13;
+* Overhauled the logic pipeline to support configurable progressive groups, swappable recipes, and other hypothetical future flexibility. The data pipeline starts with Factorio's "prototype" data instead of "runtime" data, and we ship a pruned-down json file instead of generated python code. This change should make this apworld more friendly to contributors by being less confusing/clever/innovative/messy/etc. We do lose the git-controlled representation of the logic graph, which is a little disappointing, but necessary to make it more flexible.&#13;
+* Fixed subtle bug with `on_entity_died` event handler clobbering found by @CosmicWolf. No observable change for the player. TODO: investigate using `on_player_died` instead.&#13;
+* Fixed `/collect` on your own world printing `Unknown Item` warnings related to infinite technologies.&#13;
+* Migrated the data exporter into this repo. Previously located here: https://github.com/thejoshwolfe/FactorioInformationExtractor&#13;
+* The logic graph optimizer does more inlining, which results in fewer pedantic steps in the spoiler log for automating and accessing individual items. This could potentially influence progression balancing, but I really don't know if that's how the fill algorithm works.&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/spage-age-v2.0.0"/>
   </entry>
 </feed>
