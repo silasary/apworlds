@@ -2,42 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-27T06:30:43.250068+00:00</updated>
+  <updated>2026-03-27T12:26:43.315192+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.3</id>
-    <title>Ape Escape 3 v2.0.3.post2</title>
-    <updated>2026-03-22T11:32:13+00:00</updated>
-    <author>
-      <name>aidanii</name>
-    </author>
-    <content># Ape Escape 3 Archipelago v2.0.3&#13;
-:warning:    **GENERATION CHANGES**&#13;
-:warning:    **host.yaml CHANGES**&#13;
-## Features&#13;
-### Logic&#13;
-- Added more uses for Boost Fly, Genie Dancer, Morph Infinite Jump, Clips and other tricks (@mrgamekiller, @bmanrulesyou21, @branch)&#13;
-### Options&#13;
-- `specters_goal_target_as_post` [default: `true`] Forces a corresponding Specter channel to PGC if a relevant Goal Target is selected. This is a shorthand to adding the desired Specter channel to `post_channel`&#13;
-- `blacklist_bosses` Forces boss channels to be excluded from the channel pool. This is a shorthand to adding the desired bosses to `blacklist_channel`&#13;
-  - Options: `disabled` [default], `enabled`, `keep_specters`&#13;
-- `emulator_preferred_slot` Determine the preferred Slot to connect to PCSX2 with on the Client.&#13;
-- `emulator_linux_preferred_platform` (Linux) Determine the preferred PCSX2 installation type to connect to by the Client.&#13;
-  - Options: `auto`, `standard` (appimage, or others), `flatpak`&#13;
-### Client&#13;
-- New Commands: `pine_slot`, `pine_platform`, `pine_connect`&#13;
-  - These commands allow players to change what PCSX2 instance to connect to during play by identifying the emulator instance by slot (and platform for linux as well).&#13;
-- Status now reports your PINE Slot/Platform&#13;
-### host.yaml&#13;
-- `pine_connect_offline` [default: `false`] Determine if the client should try to establish a connection with PCSX2 even if it has not yet connected to an Archipelago Room&#13;
-## Fixes&#13;
-### Logic&#13;
-- Fixed some erroneous entrance rules</content>
-    <link href="https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.3"/>
-  </entry>
   <entry>
     <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.7.0</id>
     <title>Casualties: Unknown v0.7.0</title>
@@ -1396,5 +1365,67 @@ general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/
 setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
 source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
     <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/spage-age-v2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.30</id>
+    <title>Muse Dash v1.5.30</title>
+    <updated>2026-03-27T10:50:03+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content># Changes&#13;
+- Adds support for Wuthering Waves Pioneer Podcast and Ay-Aye Horse&#13;
+- Fixed Master Bancho's Sushi Class not showing up.&#13;
+&#13;
+# Installation&#13;
+### Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+1. Download MelonLoader.Installer.exe from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Choose the automated tab, click the select button and browse to `MuseDash.exe`.&#13;
+    - You can find the folder in steam by finding the game in your library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+    - If you click the bar at the top telling you your current folder, this will give you a path you can copy. If you paste that into the window popped up by **MelonLoader**, it will automatically go to the same folder.&#13;
+3. The launcher will automatically default to the latest version. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.6.6.**&#13;
+4. Click install. Once finished run the game once.&#13;
+&#13;
+### Mod Install&#13;
+&#13;
+1.Download `ArchipelagoMuseDash.zip`.&#13;
+2. Head to the Muse Dash folder and open up `/mods/`.&#13;
+3. Extract the contents of the .zip file into mods.&#13;
+   - Ensure that `ArchipelagoMuseDash.dll` and `Archipelago.MultiClient.Net.dll` are under `/mods/` and not within a sub folder.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.30"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.1</id>
+    <title>The Legend of Zelda - Spirit Tracks v0.7.1</title>
+    <updated>2026-03-27T11:11:10+00:00</updated>
+    <author>
+      <name>DayKat</name>
+    </author>
+    <author>
+      <name>1313e</name>
+    </author>
+    <author>
+      <name>Carrotinator</name>
+    </author>
+    <author>
+      <name>TriforceDrummer</name>
+    </author>
+    <author>
+      <name>Nepecute</name>
+    </author>
+    <content>[Setup guide and useful info](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/setup.md)&#13;
+- fixed bug where your first rabbit caught would crash if caught the first time you entered the overworld&#13;
+- fixed bug where picking up the boss key in ToS 10F would crash due to faulty keyrings&#13;
+- tweaked some yaml wording&#13;
+- prevented Wadatsumi from being in pirate minigame while playing for the gorons&#13;
+- removed HC and Quiver from pirate hideout rewards for more minigame settings where they don't belong&#13;
+- fixed UT randomizing the bypass for ToS 5&#13;
+- fixed train hiding in garage after getting Niko Stamp Book location</content>
+    <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.1"/>
   </entry>
 </feed>
