@@ -6,7 +6,7 @@ orchestrated by the shadowy MegaCorp.
 
 
 ## Downloads
-- <a href="https://github.com/jacobmix/APRac2/releases/download/v0.6.4.2/rac2.apworld">Latest Version (0.6.4.2)</a>
+- <a href="https://github.com/jacobmix/APRac2/releases/download/v0.6.4.3/rac2.apworld">Latest Version (0.6.4.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

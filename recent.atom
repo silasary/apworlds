@@ -2,180 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-27T12:26:43.315192+00:00</updated>
+  <updated>2026-03-27T18:23:45.195534+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.7.0</id>
-    <title>Casualties: Unknown v0.7.0</title>
-    <updated>2026-03-22T11:32:55+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.7.0&#13;
-This update is NOT compatible with worlds generated on previous versions!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-&#13;
-This is a big one!&#13;
-# Additions&#13;
-- New UI for basic messages, such as players leaving, joining, chatting, and goaling.&#13;
-- New UI for displaying server countdown status.&#13;
-- New UI to pick the next layer after finishing one or starting a run.&#13;
-- Archipelago messages in the console now have an Archipelago prefix.&#13;
-- Two new traps. Temptation Trap and Trip Trap. [APWorld Change]&#13;
-- Instances of the word 'Archipelago' that were colored now rotate their colors.&#13;
-- There is now a (poorly made) custom logo on the main menu.&#13;
-- Archipelago Items and Randomize Recipes have received a complete rework.&#13;
-	- Randomize Recipes is back to being a toggle, where it only adds the recipes as items, and adds no checks.&#13;
-	- Archipelago Items are now a seperate option, where you can choose how many items there are in the world to check, up to 200.&#13;
-	- Archipelago Items now have dynamic sprites (using KaitoKid.ArchipelagoUtilities.Net).&#13;
-		- This does not work in trader inventories, but it's not worth the effort to make it work there.&#13;
-	- Crates, Chests, Traps, and other misc objects will now always drop an Archipelago Item when destroyed or opened.&#13;
-		- This also applies to Survivors, which are guarenteed to always sell a free Archipelago Item.&#13;
-	- To balance how common Archipelago items are, they now give 10 INT exp instead of 35.&#13;
-&#13;
-# Changes&#13;
-- Basegame debug and cheat commands are now disabled if the Archipelago server is in race mode.&#13;
-- Trap items will no longer trigger Experiment dialog.&#13;
-- Item receive and hint popups now have item coloring.&#13;
-- Experiment will now say messages typed into `apchat`.&#13;
-- Moodlesanity checks now show feedback when they are sent out.&#13;
-- The Archipelago UI now shares a font with the normal game's UI.&#13;
-- The Progressive STR dialog where Experiment says their current weight is now rounded to one decimal instead of six.&#13;
-- Archipelago Items are now weightless (down from 0.2u).&#13;
-&#13;
-# Fixes&#13;
-- Fixed Experiment dialog rarely throwing errors.&#13;
-- Getting enough experience to level up more than once will now properly send two Skillsanity checks.&#13;
-- Items received from the Cheat Console or !getitem will no longer show in the text client.&#13;
-- Fragile Items Trap should no longer completely lock up item receiving.&#13;
-- Items received while on the main menu will now display properly.&#13;
-- The game no longer crashes when using Archipelago commands after disconnecting.&#13;
-- The server version is no longer shown in the bottom left after disconnecting.&#13;
-- Fixed the persistent "Ensure Read/Write is enabled on the Particle System's Texture" error.&#13;
-- Generation isn't stopped early if the amount of items is the same as the amount of locations. [APWorld Change]&#13;
-- Fixed there being twice as many Limb items as there should have been.&#13;
-&#13;
-# Known Issues&#13;
-Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
-Recipes may sometimes wipe themselves upon reconnection. Getting another recipe item triggers a failsafe that should fix this&#13;
-Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
-A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with Harmony.&#13;
-&#13;
-**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.6.6...v0.7.0</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.2.1</id>
-    <title>Phoenotopia: Awakening v0.2.0</title>
-    <updated>2026-03-22T12:56:13+00:00</updated>
-    <author>
-      <name>Lenamphy</name>
-    </author>
-    <content>&lt;h1&gt;Minor release - 0.2.1&lt;/h1&gt;&#13;
-Minor patch to fix several generation errors and some bugs.&#13;
-&#13;
-&lt;h2&gt;Changes:&lt;/h2&gt;&#13;
-&#13;
-- **Several generation errors fixed**: Some yaml setting combinations caused generation to fail. These are now fixed. If you find more, please report them to me!&#13;
-- **New fishing check**: Added the fish in the Anuri Temple pond as a location under 'Fishing spots'.&#13;
-- **Prelude of Panselo is now correctly handled when its location is excluded**: With NPC gifts disabled and 'keep key items in item pool' enabled, it was possible to get the item twice. Once from the item pool and once at its vanilla location. Now you can only get it from the item pool.&#13;
-- **Logic refinement**: Some checks within non-liftable breakable objects now require you to have something to break them.&#13;
-&#13;
-Full patch notes of 0.2.0 can be found [here](https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.2.0).&#13;
-If you encounter any issues while playing, please let me know!</content>
-    <link href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.4</id>
-    <title>ToeJam and Earl v0.5.4</title>
-    <updated>2026-03-22T15:06:29+00:00</updated>
-    <author>
-      <name>Ignis Umbrae</name>
-    </author>
-    <content>## Big changes&#13;
-&#13;
-- New type of present: the Big Points present, which simply gives you a flat number of points (the exact number depends on your chosen rank options, but is roughly 'half an average promotion'). Add `point_presents: yes` to your YAML to enable.&#13;
-  - ⚠️ This functionality supersedes the old `flat_promotions` option, which has been removed. Point presents exist alongside Promotions.&#13;
-  - `auto_flat_promotions` has been removed and replaced with `auto_point_presents`, which fulfils the same function.&#13;
-  - One of the unused present sprites will be automatically patched in for you if needed.&#13;
-  - Moles will not steal these presents if rank checks are enabled.&#13;
-- New priority check: drinking lemonade on level 0. Add `lemonade_check: yes` to your YAML to enable.&#13;
-  - `game_overs: drop_down` has been altered to account for these checks: if you game over on level 1 before completing the lemonade check, you will be poofed back to the starting island instead of falling down.&#13;
-- The `earthling_rando: nice_random` setting has been redone based on the subjective dangerousness of each earthling, constrained by the apparent difficulty of each level in the vanilla game.&#13;
-  - For now, dangerousness is based on my own subjective opinion. If you can, please rate the enemies [via this Google form](https://forms.gle/F6wECA91ZVifDAK99) so I can update the data in a future release.&#13;
-  - Fake mailboxes are now taken into account when considering the difficulty of levels.&#13;
-  - The value of `last_level` is now factored in when deciding how many friendly earthlings to add.&#13;
-  - This new method also fixes a rare bug that caused generation failure due to an extremely lopsided random earthling pool.&#13;
-&#13;
-## Smaller changes&#13;
-&#13;
-- Presentsanity may now add a small number of Promotions (and point presents, if enabled) in order to ensure gen success in smaller worlds.&#13;
-- Game overing with `game_overs: drop_down` will now gracefully poof you down to the level below instead of awkwardly making you fall there.&#13;
-- Items are no longer awarded while falling, or while in an elevator in any state. This addresses several issues with items failing to activate.&#13;
-- Many items have been deprioritized in various situations in order to make priority checks more rewarding.&#13;
-- Present wrapping is now preserved through save &amp; reload.&#13;
-- Ranks and big items are now priority locations.&#13;
-- Renamed "A Buck" to just "Buck".&#13;
-&#13;
-## Small bugfixes&#13;
-&#13;
-- The 2 points for drinking the lemonade on level 0 have been added into logic (finally).&#13;
-- Sound rando now also randomizes the scream in the intro cutscene.&#13;
-- Fixed a bug that sometimes stopped presents from scooching up correctly with expanded inventory enabled.&#13;
-&#13;
-## Other&#13;
-&#13;
-- Added LICENSE for vendored unidecode (whoops).</content>
-    <link href="https://github.com/IgnisUmbrae/TJE-Archipelago/releases/tag/v0.5.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/stubobis1/Archipelago/releases/tag/1.3.1</id>
-    <title>Path of Exile v1.3.1</title>
-    <updated>2026-03-22T17:03:21+00:00</updated>
-    <author>
-      <name>StuBob</name>
-    </author>
-    <content>## There was a trailing comma in 1.3.0 that broke everything, this version fixes that.&#13;
-&#13;
-# 1.3.0 patch notes:&#13;
-&#13;
-## Patch notes:&#13;
-- Added support for Path of Exile 3.28&#13;
-- Changed Templar's starting gems&#13;
-- Added new gems, and the Reliquarian&#13;
-- Modified generation to support Reliquarian.&#13;
-- Added a manifest file, to support future archipelago releases.&#13;
-	&#13;
-## Bug fixes:&#13;
-- Added Wither&#13;
-&#13;
-## NOTES:&#13;
-- There may be need for more alternate gems with the exceptional gem system (or maybe a item that would unlock all of them 🤔)&#13;
-- New poptracker for this release, here: https://github.com/stubobis1/PathOfExilePoptracker/releases/tag/1.3.0&#13;
-&#13;
-**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/1.2.1...1.3.0</content>
-    <link href="https://github.com/stubobis1/Archipelago/releases/tag/1.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.2</id>
-    <title>Crypt of the NecroDancer v0.5.2</title>
-    <updated>2026-03-22T18:51:52+00:00</updated>
-    <author>
-      <name>lastingParadox</name>
-    </author>
-    <content>### Changes&#13;
-- Fix DeathLink tag not being initialized properly on connecting to the Archipelago Server&#13;
-- Make SetDeathLink asynchronous to actually send SetDeathLink packet to the mod&#13;
-&#13;
-Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
-&#13;
-Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
-    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.2"/>
-  </entry>
   <entry>
     <id>https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.3</id>
     <title>TOEM: A Photo Adventure v2.0.2</title>
@@ -633,6 +464,31 @@ For instructions on how to set up and play this mod, check the [README](https://
 &#13;
 **Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.7.0...v0.7.1</content>
     <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.7.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.0</id>
+    <title>Anodyne v0.6.0</title>
+    <updated>2026-03-24T13:59:38+00:00</updated>
+    <author>
+      <name>SephDB</name>
+    </author>
+    <author>
+      <name>PixieCatSupreme</name>
+    </author>
+    <content>- Added new traps&#13;
+  - Pixelate Trap (Pixelates the screen)&#13;
+  - Stun Trap (Stuns Young for a while)&#13;
+  - Damage Trap (Young takes 1 hit of damage)&#13;
+  - One Hit KO Trap (Young's health gets set to 1)&#13;
+  - Invisible Trap (Young becomes invisible)&#13;
+  - Flip Horizontal Trap and Flip Vertical Trap (Flips the screen for a while)&#13;
+  - Disarm Trap (Unequips the current broom, if any)&#13;
+  - Tool Swap Trap (Changes the current broom to another one, if any)&#13;
+  - Home Trap (Sends Young back to the Nexus)&#13;
+- Added Trap Link Setting&#13;
+- Fixed UT player tracking in Windmill&#13;
+- Fixed Windmill UT Rock locations</content>
+    <link href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.0"/>
   </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.3</id>
@@ -1302,6 +1158,71 @@ Full Changelog: https://github.com/FeluciaPS/Archipelago/compare/0.4.4-beta...v0
     <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.5.1"/>
   </entry>
   <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.0.0</id>
+    <title>Factorio: Space Age v1.1.2</title>
+    <updated>2026-03-27T05:08:57+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld v2.0.0&#13;
+&#13;
+Lots of major new changes! Please report bugs and/or balance nightmares. There are a lot of combinations of cool options and I may have overlooked something.&#13;
+&#13;
+### Gameplay changes&#13;
+&#13;
+Default options are now a significantly accelerated experience relative to vanilla.&#13;
+&#13;
+* Added `quick_start` option, enabled by default, that gives personal construction bots and a chunk of basic resources at the start.&#13;
+* Added `skip_starting_trigger_techs` option, disabled by default, that starts with electronics, steam-power, etc. unlocked from the start without needing to do the crafting to trigger them. Free samples are given for skipped trigger techs.&#13;
+* Added `starting_planet` option, disabled by default, that integrates with CodeGreen's Any Planet Start mod: https://mods.factorio.com/mod/any-planet-start . Interacts with `skip_starting_trigger_techs` and `free_samples` in fun ways.&#13;
+* Added `space_technology_level` option to enable space flight with early or mid game technology, effectively downgrading all the ingredients for rocket silo, space platform, thruster, etc. to more primitive items. Puts the Space in Factorio: Space Age sooner rather than near the end of the game. (This could someday be obsoleted by recipe randomization.)&#13;
+* Added `progressive_technologies: large_groups` option, enabled by default, which puts critical technologies, such as advanced circuit, early in large progressive chains with non-critical bonuses later in the chains. This makes it less likely to get stuck waiting for someone to find a specific item. Details here: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/data/ap_data.py&#13;
+* You can Ctrl+F search for vanilla technologies in the technology GUI, and the description tells you which progressive chain it's a part of, if any. (The technologies are impossible to queue up; they only serve to give information to the player about how to !hint for them.)&#13;
+* `goal: any_other_planet_science` is now the default goal, and creates victory technologies to research instead of the mod reacting to researching anything that matches the condition. Includes low-effort art I drew of a trophy. Fixes #5.&#13;
+* `goal: space_platform` replaced by `goal: space_science`, which requires researching a victory technology with 4 science packs including space science (red, green, blue, white).&#13;
+* Managing enemies on Vulcanus and Gleba is now in logic, which is particularly important when starting on those planets. See options `demolisher_killers`, `pentapod_killers`, `vulcanus_rocks`, and `gleba_coal` for more details. Still no logic for Nauvis enemies.&#13;
+* Added `tech_cost_max_count`, default 200, which limits the cost of technology research. Additionally `tech_cost_divisor` defaults to 4 now, so all research objectives are dramatically cheaper by default.&#13;
+&#13;
+Minor adjustments:&#13;
+&#13;
+* Energy Link is now enabled by default and the recipe is unlocked by a multiworld item.&#13;
+* Furnaces, electric poles, and `military` through `military-4` recipe technologies are no longer progressive (with `progressive_technologies: only_related`). Getting the recipes out of order is interesting in a randomizer, because there are almost no crafting dependencies between them.&#13;
+* `rocket-silo` research enables ghost entities on death (which normally requires `construction-robotics`). Fixes https://github.com/thejoshwolfe/Archipelago/issues/9 .&#13;
+&#13;
+### Breaking changes to options&#13;
+&#13;
+These changes may require updates to your player yaml configuration from v1.&#13;
+&#13;
+* `progressive_technologies` has been completely overhauled. The old `bonuses` option is gone. The old `recipes` option is very similar to `only_related`. The default has changed to the new `large_groups` option.&#13;
+* `goal: space_platform` removed. Try `goal: space_science` instead.&#13;
+* `shuffle_final_technology` is now merged into `goal` with the addition of `aquilo_orbit_10_science` and `solar_system_edge_11_science`.&#13;
+* The speedups `rocket_parts_per_rocket` and `ingredients_per_space_platform_foundation` are removed because they're now included in `space_technology_level`.&#13;
+* `require_electric_furnace` has been renamed to `require_self_sufficient_space_platform`.&#13;
+* `automation` (the first assembling machine technology) is no longer part of any progressive chain because it is never randomized.&#13;
+* With some `progressive_technologies` settings, several progressive pseudo item names have been simplified to remove the `progressive-` prefix. E.g. `progressive-steel-plate-productivity` is now just called `steel-plate-productivity`, and `worker-robot-speed-1` through `worker-robot-speed-7` are part of a progressive group called simply `worker-robot-speed`. The rough generalization is that recipe unlock chains still say `progressive-` but bonus unlock chains don't.&#13;
+* With `progressive_technologies: large_groups`, if you want to give yourself levels of an infinite tech that's part of a progressive group, name the last item in the chain rather than the chain itself. e.g. `!getitem worker-robot-speed-7` or `start_inventory_from_pool: {mining-productivity-3: 5}`.&#13;
+&#13;
+### Internal changes&#13;
+&#13;
+* Overhauled the logic pipeline to support configurable progressive groups, swappable recipes, and other hypothetical future flexibility. The data pipeline starts with Factorio's "prototype" data instead of "runtime" data, and we ship a pruned-down json file instead of generated python code. This change should make this apworld more friendly to contributors by being less confusing/clever/innovative/messy/etc. We do lose the git-controlled representation of the logic graph, which is a little disappointing, but necessary to make it more flexible.&#13;
+* Fixed subtle bug with `on_entity_died` event handler clobbering found by @CosmicWolf. No observable change for the player. TODO: investigate using `on_player_died` instead.&#13;
+* Fixed `/collect` on your own world printing `Unknown Item` warnings related to infinite technologies.&#13;
+* Migrated the data exporter into this repo. Previously located here: https://github.com/thejoshwolfe/FactorioInformationExtractor&#13;
+* The logic graph optimizer does more inlining, which results in fewer pedantic steps in the spoiler log for automating and accessing individual items. This could potentially influence progression balancing, but I really don't know if that's how the fill algorithm works.&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.0.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/spage-age-v2.0.0</id>
     <title>Factorio: Space Age v1.1.2</title>
     <updated>2026-03-27T05:08:57+00:00</updated>
@@ -1418,7 +1339,8 @@ source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/f
     <author>
       <name>Nepecute</name>
     </author>
-    <content>[Setup guide and useful info](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/setup.md)&#13;
+    <content>Works with seeds generated in v0.7.0&#13;
+[Setup guide and useful info](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/setup.md)&#13;
 - fixed bug where your first rabbit caught would crash if caught the first time you entered the overworld&#13;
 - fixed bug where picking up the boss key in ToS 10F would crash due to faulty keyrings&#13;
 - tweaked some yaml wording&#13;
@@ -1427,5 +1349,109 @@ source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/f
 - fixed UT randomizing the bypass for ToS 5&#13;
 - fixed train hiding in garage after getting Niko Stamp Book location</content>
     <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.0.1</id>
+    <title>Factorio: Space Age v2.0.1</title>
+    <updated>2026-03-27T13:09:12+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld v2.0.1&#13;
+&#13;
+* Fix corrupted apworld missing critical files.&#13;
+* Actually bump the version number in the apworld and mod.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.4.1</id>
+    <title>Links Awakening DX Beta v13.4.1</title>
+    <updated>2026-03-27T16:33:27+00:00</updated>
+    <author>
+      <name>zig</name>
+    </author>
+    <author>
+      <name>threeandthree</name>
+    </author>
+    <content>- Fix `--no-magpie` flag in client&#13;
+- Fix `improved_additional` warps setting&#13;
+- Fix follower setting</content>
+    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.3</id>
+    <title>Ratchet &amp; Clank 2 v0.6.4.3</title>
+    <updated>2026-03-27T18:06:32+00:00</updated>
+    <author>
+      <name>Evilwb</name>
+    </author>
+    <author>
+      <name>JacobMIX</name>
+    </author>
+    <content>Testing Dynamic PINE ports for multi PCSX2 instance support.&#13;
+Also adds auto connection functionally to the client using patch data, and added the manifest json.&#13;
+Based on: https://github.com/evilwb/APRac2/releases/tag/v0.6.4&#13;
+v0.6.4.2: Now also has UT integrated, and yaml-less support. Works as long as UT is installed. Also fixed some first person logic issues.&#13;
+Planned: More UT features. "Glitch" logic. Internal or external map. Auto map tab switching. Community suggested logic changes.&#13;
+v0.6.4.3 Actually made UT work, and added world version to slot data so can see if client isn't matching multiworld.&#13;
+&#13;
+### Setup&#13;
+You need every RaC2 option in your `host.yaml` setup. That means:  &#13;
+`iso_file` to a valid vanilla iso in your Archipelago directory (should be already from normal setup)  &#13;
+`iso_start` to your PCSX2 exe (Make sure to use `/`)  &#13;
+`game_ini` to a game settings file in your PCSX2's gamesettings folder.  &#13;
+(Usually `%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini`)&#13;
+&#13;
+Example:&#13;
+```yaml&#13;
+rac2_options:&#13;
+  # File name of the Ratchet &amp; Clank 2 ISO&#13;
+  iso_file: "Ratchet &amp; Clank - Going Commando (USA) (v1.01).iso"&#13;
+  # Set this false to never autostart an iso (such as after patching),&#13;
+  # Set it to true to have the operating system default program open the iso&#13;
+  # Alternatively, set it to a path to a program to open the .iso file with (like PCSX2)&#13;
+  iso_start: "C:/Emulators/(PS2) PCSX2/pcsx2-qt.exe"&#13;
+  # Set to file path to an existing PCSX2 game setting INI file to have the patcher&#13;
+  # create an appropriately named INI with the rest of the patch output. This can be used to&#13;
+  # allow you to use you own custom PCSX2 setting with patched ISO.&#13;
+  game_ini: "%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini"&#13;
+```&#13;
+&#13;
+Game settings ini example:&#13;
+```ini&#13;
+[EmuCore]&#13;
+EnablePINE = true&#13;
+PINESlot = 28011&#13;
+&#13;
+[Achievements]&#13;
+Enabled = false&#13;
+&#13;
+[MemoryCards]&#13;
+Slot1_Enable = true&#13;
+Slot2_Enable = false&#13;
+Slot1_Filename = APgames.ps2&#13;
+```&#13;
+Recommended you use your settings for vanilla RaC2. But you can make a copy with specific edits.&#13;
+So you can set an AP specific memory card like in the example above. (You don't need to add PINE settings)&#13;
+&#13;
+For normal setup if you haven't already. Check [GitHub](&lt;https://github.com/evilwb/APRac2/blob/main/docs/setup_en.md&gt;), and [Discord](&lt;https://discord.com/channels/731205301247803413/1325015730218860554/1371288772548755466&gt;).&#13;
+&#13;
+### Start&#13;
+Simply run a `.aprac2` file with Archipelago. (Recommended to set to open `.aprac2` files with Archipelago by default)&#13;
+Or run the client, and use the `/start` command, and then select your desired `.aprac2` file. (Or drag `.aprac2` into the client)&#13;
+Note: You can rename `aprac2` and patched `iso` but they have to have the same name or it'll make another `iso`.&#13;
+(Same way you have to keep `.apsave`, and their `.zip` name the same if hosting locally)&#13;
+&#13;
+Changes: &lt;https://github.com/jacobmix/APRac2/compare/v0.6.4.2...v0.6.4.3?w=1&gt;&#13;
+Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.3?w=1&gt;</content>
+    <link href="https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.3"/>
   </entry>
 </feed>

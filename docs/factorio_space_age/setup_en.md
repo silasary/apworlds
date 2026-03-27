@@ -18,6 +18,7 @@ For the Factorio Player(s):
 - [Factorio](https://factorio.com) with the Space Age expansion.
     - Obtained via: factorio.com, Steam, GOG
 - Recommended: Respawn to Any Planet mod: https://mods.factorio.com/mod/respawn-to-any-planet
+- Sometimes required: Any Planet Start mod: https://mods.factorio.com/mod/any-planet-start
 - (Later in the process) a custom built Factorio mod generated for the multiworld.
 
 For the Factorio Host:
@@ -27,6 +28,7 @@ For the Factorio Host:
     - *Not* the Demo version. You must login to factorio.com to get the correct download links.
     - The special Headless Linux build will work for this if the Host is a Linux machine.
 - Recommended: Respawn to Any Planet mod: https://mods.factorio.com/mod/respawn-to-any-planet
+- Sometimes required: Any Planet Start mod: https://mods.factorio.com/mod/any-planet-start
 - The [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) software suite.
 - This `factorio_space_age.apworld` installed into the Archipelago installation.
 - (Later in the process) the same custom built Factorio mod mentioned above.
@@ -66,6 +68,7 @@ Factorio product code. This will allow you to download the game directly from th
 
 Download the installer by clicking on the button appropriate to your operating system, and extract the folder to a convenient location.
 The best place to do this for Archipelago is to place the extracted game folder into the `Archipelago` directory and rename it to just be "Factorio".
+(Note that the default Windows installer may create shortcuts that complicate the setup, so the ZIP package is recommended instead.)
 
 ![Factorio Download Options](factorio-download.png)
 
