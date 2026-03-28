@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "Pink Switch"
+  ],
   "description": "Bottom text",
   "game": "Castlevania: Dawn of Sorrow",
   "github": "https://github.com/PinkSwitch/Archipelago",
@@ -113,6 +116,21 @@
       "title": "Castlevania: Dawn of Sorrow Archipelago v1.4",
       "version_simple": "1.4.0",
       "world_version": "1.4.0"
+    },
+    "cvdos2.0": {
+      "created_at": "2026-03-09T21:48:16Z",
+      "description": "# Castlevania: Dawn of Sorrow Archipelago Version 2.0 #\r\n## New Settings ##\r\n* ``Boss Randomizer``: Randomizes boss encounters. Bosses will drop the Soul corresponding to the boss that was ORIGINALLY at that spot, so that logic/locations don't change.\r\n* `` Shuffle Magic Seals``: Swaps which Magic Seal belongs to which boss. This also changes the doors, and also the logic for reaching them.\r\n     Early Seal 1 will guarantee that Flying Armor still uses Seal 1.\r\n* ``Randomize Seal Patterns``: Randomizes the rotation and drawing patterns for each Magic Seal.\r\n* Goal settings have been COMPLETELY overhauled.\r\n  * ``Garden Condition``: Sets the condition required to trigger the Garden of Madness/bad ending event\r\n  * ``Menace Condition``: Sets the condition required to fight the final boss\r\n  * ``Mine Coniditon``: Sets the condition required to enter the Mine of Judgment\r\nCurrent conditions available are: ``None``: No additional condition, always available\r\n``Throne Room``: Defeat the boss of the Pinnacle\r\n`` Garden``: Survive the bad ending in the Garden of Madness\r\n``Bosses``: Defeat ALL bosses\r\nMore conditions will likely be added in the future. If the goal is ``Throne Room``, the Throne Room condition will be set to None for Menace, and the other Conditions will be considered impossible to complete, accordingly.\r\n## Changes ##\r\n* Removed the ice blocks that spawn after defeating Balore\r\n* Zephyr's left boss door has been moved in front of the actual door\r\n* There is now a button near the Condemned Tower that will repair (and re-break) the tower floors after defeating Gergoth. Because of this, Condemned Tower is now in logic without needing extra mobility to cross the broken floors\r\n* Random Starting Warp Room can now roll Condemned Tower\r\n* Seal Doors now tell you which seal opens them\r\n* Seals which do not have any doors that open them (only used in Seal Shuffle) are no longer placed in the item pool.\r\n* Menace now logically requires a high movement ability if not changed to Soma\r\n* Abyss Plus goal has been **REMOVED** in favor of setting individual Goal Conditions.\r\n   To restore the previous Abyss Plus behavior, set Goal to Abyss, Mine Condition to ``garden``, and ``Garden Condition`` to ``Throne Room``\r\n* Dark Chapel Bell Room Right can now be gotten with Black Panther\r\n## Fixes ##\r\n* Fixed Gergoth's upper boss doors despawning before the Soul was collected\r\n* Fixed the in-game Soul Check tracker sometimes showing Souls that aren't in the location pool\r\n* Fixed a bug where the One-Screen Mode map coordinates would be incorrect if you saved and reloaded in the Abyss\r\n * Fixed the game not generating a 1:1 soul count for Rare soulsanity\r\n## Known Issues ##\r\n* None so Far",
+      "download_url": "https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0/cv_dos.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ec8dc72b52f1923389bcd9ec5b63a2cdbdb732cecffc4ea8b866928c5b7c91ab",
+      "html_url": "https://github.com/PinkSwitch/Archipelago/releases/tag/cvdos2.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 90051,
+      "source_url": "https://api.github.com/repos/PinkSwitch/Archipelago",
+      "tag": "cvdos2.0",
+      "title": "Castlevania: Dawn of Sorrow Archipelago v2.0",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
     }
   }
 }

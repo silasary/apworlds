@@ -473,6 +473,21 @@
       "version_simple": "0.3.26",
       "world_version": "0.3.26"
     },
+    "0.3.27": {
+      "created_at": "2026-03-28T00:41:53Z",
+      "description": "# Changelog\r\n\r\n- Fixed `Experience Multiplier` not automatically being set to the value specified in the yaml\r\n- Fixed `All Pok\u00e9mon Seen` not being applied to the save file\r\n- Tried fixing a rare bug regarding the PopTracker pack and data storage\r\n- Removed `any_badge`/`any_tm_hm` from `Shuffle Badge Rewards`/`Shuffle TM Rewards`\r\n  - Old yamls with these choices will instead interpret them as `shuffled`\r\n- Removed `Prioritize key item locations` from `Modify Logic`\r\n  - Old yamls with this modifier will just ignore it\r\n\r\n### Is this version compatible with older multiworld slots and save files?\r\nYes, back to 0.3.0, except the pre-release 0.3.99(9)\r\nHowever, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT\r\n\r\n### Notes regarding the `pokemon_bw_without_maps.apworld` file\r\nThat version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.\r\nTo install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.\r\nIt's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.",
+      "download_url": "https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.27/pokemon_bw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8094956630f6bfd890e38e35f2831f4870a7ab96f146b1ab79fbf3d01d84fb55",
+      "html_url": "https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.27",
+      "minimum_ap_version": "0.6.4",
+      "size": 37643140,
+      "source_url": "https://api.github.com/repos/BlastSlimey/PokemonBWAP",
+      "tag": "0.3.27",
+      "title": "v0.3.27",
+      "version_simple": "0.3.27",
+      "world_version": "0.3.27"
+    },
     "0.3.3": {
       "created_at": "2025-08-11T21:01:25Z",
       "description": "# Changelog\r\n\r\nThis update only ports over the fixes from the 0.2.2 update, which was released right before this:\r\n- Fixed fossils not being revivable after the Plasma grunts stole the Dragon Skull\r\n- Fixed Professor Juniper ignoring the national dex for her TM rewards\r\n- Fixed Professor Juniper not always being in the lab\r\n- Fixed Champion goal triggering after fighting Ghetsis\r\n\r\n## Is this version compatible with older multiworld slots and save files?\r\nYes, back to 0.3.0\r\nHowever, worlds from 0.3.0 and 0.3.1 with certain wild Pok\u00e9mon randomization modifiers will have wrong Dexsanity logic in UT, which is not fixable.",

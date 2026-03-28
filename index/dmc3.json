@@ -1,12 +1,15 @@
 {
+  "authors": [
+    "AshIndigo"
+  ],
   "description": "Devil May Cry 3 originally released in 2005 is the hit sequel to Devil May Cry 2. Featuring all new weapons, fights and the newly added style mechanic.",
   "game": "Devil May Cry 3",
   "github": "https://github.com/AshIndigo/Archipelago",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "v0.4.0": {
@@ -23,6 +26,21 @@
       "title": "Devil May Cry 3 0.4.0",
       "version_simple": "0.4.0",
       "world_version": "0.4.0"
+    },
+    "v0.5.0": {
+      "created_at": "2026-03-28T03:16:31Z",
+      "description": "- Now uses the new and improved rewrite for archipelago_rs (Big kudos to @nex3)\r\n- Universal Tracker support, UT can work without the yaml. This also makes it so UT is aware of the random mission order\r\n- New Hint Game mode (This will appear as a separate client in the AP Launcher). Do Bloody Palace floors to generate hints! Number of floors needed per hint can be adjusted in the `host.yaml`\r\n- Purchasing blue/purple orbs can be checks. (Purchasing gun levels and skills checks will most likely come in a later update)\r\n- Red Orb Filler has been added (1000/2500/5000) to alleviate some grinding\r\n- Say goodbye to the bank system. Item Syncing has been re-written and is now based off of the currently loaded save slot\r\n- Skills are now properly given mid mission (and overall behave better)\r\n- Crystal skull location now works, oops\r\n- Re-organized where saves and sync data are. Files are now under `game_install/archipelago/(seed_{slot_name})/`\r\n\r\nAPWorld Specific:\r\n- SS Rank Checks can be entirely removed\r\n- There are a whole lot less generation failures now! \r\n- Gun upgrades are now classified as useful.",
+      "download_url": "https://github.com/AshIndigo/Archipelago/releases/download/v0.5.0/dmc3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "418a1ae6538b74311d8cf90534c01c5c9015396fb3adacb4898e5c1a0fdc01c2",
+      "html_url": "https://github.com/AshIndigo/Archipelago/releases/tag/v0.5.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 27959,
+      "source_url": "https://api.github.com/repos/AshIndigo/Archipelago",
+      "tag": "v0.5.0",
+      "title": "Devil May Cry 3 0.5.0",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
     }
   }
 }

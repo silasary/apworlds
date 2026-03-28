@@ -4,7 +4,7 @@ Devil May Cry 3 originally released in 2005 is the hit sequel to Devil May Cry 2
 
 
 ## Downloads
-- <a href="https://github.com/AshIndigo/Archipelago/releases/download/v0.4.0/dmc3.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/AshIndigo/Archipelago/releases/download/v0.5.0/dmc3.apworld">Latest Version (0.5.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

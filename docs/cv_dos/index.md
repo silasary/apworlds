@@ -4,7 +4,7 @@ Bottom text
 
 
 ## Downloads
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos1.4/cv_dos.apworld">Latest Version (1.4.0)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0/cv_dos.apworld">Latest Version (2.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
