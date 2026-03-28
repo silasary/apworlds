@@ -1,9 +1,12 @@
 # UZDoom
 
 ## Latest
-- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.8.4/uzdoom.apworld">Latest Version (0.8.4)</a>
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.8.5/uzdoom.apworld">Latest Version (0.8.5)</a>
 
 ## All Versions
+
+#### v0.8.5
+- <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.8.5/uzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.8.5/uzdoom.apworld</a>
 
 #### v0.8.4
 - <a href="https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.8.4/uzdoom.apworld">https://github.com/ToxicFrog/doom-mods/releases/download/gzap-0.8.4/uzdoom.apworld</a>
