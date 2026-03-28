@@ -27,13 +27,7 @@ BEFORE MODDING, PLEASE INSTALL AND RUN KHDDD AT LEAST ONCE.
 14. Run ArchipelagoGenerate.exe or click "Open" under the Generate option in the Archipelago Launcher
 15. Take the newly created AP_XXX.zip file in /output/ in upload it here: https://archipelago.gg/uploads
 16. Open ArchipelagoLauncher.exe
-17. Click "KHDDD Client". Once the client launches, you will see a message in the console stating "Searching for KHDDD Client...Please load your save file before connecting."
+17. Click "KHDDD Client". In the new window that appears, Connect to your Archipelago server.
 18. In OpenKH, click "Mod Loader", then "Build and Run"
 19. Once the game launches, start a New Game (or load a save file if applicable)
-20. After starting the game, a new message will appear in the Archipelago client stating "KHDDD Game Client Found". Once this message appears, you can connect to the server hosted on archipelago.gg
-21. Play
-
-### Additional Notes
-- The save file in-game should be loaded before attempting to connect to the server in the AP client. Otherwise, you will get an error message when pressing "Connect".
-- Conversely, the game will stutter trying to find the AP client if the save file is loaded before the AP client is launched. So the ideal setup is to: Launch AP client -> Load save file -> Connect to AP server. Future updates will aim to streamline this process.
-- If either the game or the AP client have to be closed for any reason, it is recommended to completely close out of both clients to ensure stability.
+20. Play

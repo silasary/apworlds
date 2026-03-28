@@ -4,7 +4,7 @@ KHDDD is a cool KH game
 
 
 ## Downloads
-- <a href="https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.5/khddd.apworld">Latest Version (0.0.5)</a>
+- <a href="https://github.com/LuxMake/Archipelago-KHDDD/releases/download/0.0.6/khddd.apworld">Latest Version (0.0.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

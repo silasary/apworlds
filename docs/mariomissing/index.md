@@ -4,7 +4,7 @@ Mario is Missing is a 2D edutainment game. As Luigi, save cities of the world fr
 
 
 ## Downloads
-- <a href="https://github.com/TheRealSolidusSnake/Mario-Is-Missing/releases/download/0.0.1/mariomissing.apworld">Latest Version (0.0.1.post2)</a>
+- <a href="https://github.com/TheRealSolidusSnake/Mario-Is-Missing/releases/download/0.0.2/mariomissing.apworld">Latest Version (0.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
