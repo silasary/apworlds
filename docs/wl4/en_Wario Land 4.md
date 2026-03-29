@@ -85,6 +85,8 @@ expect you to use those strategies.
 
 A full list of these strategies is as follows:
 
+- In Monsoon Jungle, you can reach the CD box by throwing an enemy into the brown block and floating
+in as Puffy Wario.
 - In 40 Below Fridge, you can ground pound the switches in the maze puzzle room by getting a running
 start and stomp jumping on the glass ball right after the glass bird spits it out.
 - In The Toxic Landfill, you can lure the Ringosuki toward the water and grab the apple in midair to

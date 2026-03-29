@@ -1,9 +1,12 @@
 # Wario Land 4
 
 ## Latest
-- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.3.2/wl4.apworld">Latest Version (3.3.2)</a>
+- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.3.3/wl4.apworld">Latest Version (3.3.3)</a>
 
 ## All Versions
+
+#### v3.3.3
+- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.3.3/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.3.3/wl4.apworld</a>
 
 #### v3.3.2
 - <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.3.2/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.3.2/wl4.apworld</a>
