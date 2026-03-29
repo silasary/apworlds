@@ -5,7 +5,7 @@ two Kiwis tasked with manning the stations at a post office.
 
 
 ## Downloads
-- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-KeyWe/releases/download/1.0.3/keywe.apworld">Latest Version (1.0.3)</a>
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-KeyWe/releases/download/1.1.0/keywe.apworld">Latest Version (1.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

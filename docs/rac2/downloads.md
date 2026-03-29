@@ -1,9 +1,12 @@
 # Ratchet &amp; Clank 2
 
 ## Latest
-- <a href="https://github.com/jacobmix/APRac2/releases/download/v0.6.4.3/rac2.apworld">Latest Version (0.6.4.3)</a>
+- <a href="https://github.com/jacobmix/APRac2/releases/download/v0.6.4.4/rac2.apworld">Latest Version (0.6.4.4)</a>
 
 ## All Versions
+
+#### v0.6.4.4
+- <a href="https://github.com/jacobmix/APRac2/releases/download/v0.6.4.4/rac2.apworld">https://github.com/jacobmix/APRac2/releases/download/v0.6.4.4/rac2.apworld</a>
 
 #### v0.6.4.3
 - <a href="https://github.com/jacobmix/APRac2/releases/download/v0.6.4.3/rac2.apworld">https://github.com/jacobmix/APRac2/releases/download/v0.6.4.3/rac2.apworld</a>

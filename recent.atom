@@ -2,176 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-28T18:13:05.513910+00:00</updated>
+  <updated>2026-03-29T00:18:27.826077+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/airbreather/Autopelago/releases/tag/v0.11.14</id>
-    <title>Autopelago v0.11.0</title>
-    <updated>2026-03-24T01:34:58+00:00</updated>
-    <author>
-      <name>airbreather</name>
-    </author>
-    <author>
-      <name>skidznet</name>
-    </author>
-    <content># https://autopelago.app&#13;
-&#13;
-The game client has been completely rewritten from scratch. It runs in the browser now.&#13;
-&#13;
-The .apworld now has a manifest, but has otherwise not changed since 0.10.3.&#13;
-&#13;
-# Changes since 0.11.13&#13;
-1. Set the base URL to allow self-hosting it somewhere other than the site root (e.g., if I were to make subpaths like `https://old.autopelago.app/0.11.13` to run that older version).&#13;
-2. Start looking for the bits that version 1.0.0 of the APWorld will (later!) start to send us to support more flavor items with only Archipelago-side updates.&#13;
-3. For games with passwords, start encrypting what shows up in the URL bar. There's a lot more to it than that sounds: the encrypted password uses `&amp;W=EncryptedPassword`, but you can still manually plug in `&amp;w=OriginalPassword`. The encryption is there so that you can reload / bookmark the page and still connect to the game just fine, as long as you do so within the same browser profile (i.e., you can't paste your URL from Firefox to Chrome or to someone else's computer, the key is only stored locally).&#13;
-&#13;
-Everything from the original native version *should* be present in this one. If not, then that's a bug. Please report it.&#13;
-&#13;
-# Other changes since 0.10.4&#13;
-&#13;
-1. You no longer need to run any native executable files. It's a web app now, so just go to that URL.&#13;
-   - If you want to self-host it, it's all static files - this release should have a  "dist.zip" asset that you can just drop into any reasonable static web server.&#13;
-   - You will **need** to self-host if you want it to work with an Archipelago server that doesn't use HTTPS.&#13;
-2. You can now launch directly to the game if you know all the magical things to type into the URL fragment. This is mostly provided so you can refresh the page without having to click through the menu again.&#13;
-3. As is web tradition, most errors that happen when the game is running will not automatically take you out of the game screen. Instead, they will just create banners along the top that you have to click to dismiss. Hopefully, this will never happen to you (of course, it happened to me constantly while developing this).&#13;
-4. Not only is this a web app (and so it finally runs on Mac and Android), but it's a **progressive** web app. This means that you can "install" it as a native app on Android, even.&#13;
-5. Interval between "when STILL blocked" messages is now configurable (though it's still got a minimum of 15 minutes so that you don't spam everyone).&#13;
-6. There's now a separate "Connecting..." screen between the settings page and the main game screen, instead of showing a version of the game screen instantly and then modifying it once you're finally connected.&#13;
-7. When you get disconnected for any reason (other than clicking the button to go back to the menu), you now get spat back to the same "Connecting..." screen (with a different message) and it will try to reconnect you automatically, at least once every 30 seconds.&#13;
-8. The game version is now visible in the title bar and on the game screen. This is more relevant here because browsers like to cache way too much stuff.&#13;
-9. Somewhat redesigned the layout of the game screen to be a bit clearer. Instead of shorthand "RAT" / "NOM" / etc., we have a "RATS: ##" expander, and then all the active buffs / debuffs are visible with their full names under it. This takes up a lot of screen space, so you can collapse it to just show the rat count.&#13;
-10. The left panel can also shrink MUCH more than before.&#13;
-11. The position of the grid separator is now saved between runs.&#13;
-12. If your slot has an alias, we now show that (without the parenthetical slot name) instead of always just showing the official slot name.&#13;
-13. Chat commands can now be addressed to the rat's alias (with or without the parenthetical slot name) instead of always having to be its slot name, provided that nobody else in the room has picked the same alias.&#13;
-14. Added a simple chat tab to just send / receive messages in the room, so that you don't HAVE to flip back and forth. It's not quite as fancy as the standard text client, but it should be good enough.&#13;
-15. Elements that you can interact with all support tab-focusing, and the tooltips as well.&#13;
-16. When a lot of things happen all at once that the game hasn't animated yet, the app will try to play back everything that happened. This was important when moving to a web app, because browsers don't render things when the tab is in the background or minimized, so when you come back, a LOT of things could have changed. In fact, when LOTS of things changed, it speeds up the playback up to 5x so that you can "catch up" to the current state more quickly.&#13;
-17. When clicking on an item in the panel to request a hint, the confirmation box now shows up right next to it instead of in the middle of the screen.&#13;
-18. The "u win." screen now just covers a *part* of the map instead of taking you all the way out.&#13;
-19. Fix an oversight where the self-host bundle was still expecting to run on `https://autopelago.app`&#13;
-20. Add a discriminator to the beginning of the title for the benefit of those with multiple tabs&#13;
-21. #129: Bring back the ability to show the path to the target by clicking on the rat.&#13;
-22. Fix a minor issue where the rat would face its ultimate target instead of the next location along the route to it.&#13;
-23. Fix an issue where the rat would go to the nearest user-requested location instead of going in order of when they were requested.&#13;
-24. (After the failed v0.11.2) probably fix a calculation error in the "show path" calculation?&#13;
-25. #130: Bring back the ability to personalize your rat.&#13;
-26. Replace Pixi.js with native elements, which should unblock those getting the error "`CanvasRenderer` is not yet implemented". This also probably brings with it a mixed bag of performance penalties and performance improvements.&#13;
-27. Fix several ways in which the page could look self-inconsistent while the rat is still catching up to where the server is.&#13;
-28. Correct the size of the "Personalize Your Rat!" button on the main page for non-Firefox browsers.&#13;
-29. Remove a brief flicker of the "Personalize Your Rat!" window's header text. It might still sometimes shift, but generally shouldn't have any frames where the text goes outside the window like it did.&#13;
-30. Add tooltips for the filler squares to show their names, exactly the same as tooltips for landmarks.&#13;
-31. Add information about known hints onto these tooltips.&#13;
-32. Move some quest markers out of the way so that they no longer overlap filler squares.&#13;
-33. Shrink landmark images so that they don't crowd their filler squares.&#13;
-34. Extra-shrink the hitboxes around the quest markers to make their nearby filler squares easier to get to.&#13;
-35. Add the ability to "hyper-focus" a location by clicking on it (or pressing Enter on it if you are tabbing through with your keyboard). This "hyper-focus" can only be adjusted by interacting with it in the browser (no chat commands supported, by design) for multiple reasons.&#13;
-36. #134: Fix an issue where the rat's focused location(s) would get cleared — even if the location wasn't checked — if it happened to land on the location without any actions remaining to make an attempt at checking it.&#13;
-37. Fix an oversight from 0.11.5 where the animation checkboxes did nothing.&#13;
-    - In addition to restoring the original few things that these checkboxes control:&#13;
-        1. Transitions on Food/Energy/Luck bars will be animated (or not) according to the player animation checkbox.&#13;
-        2. Tile examples in the tooltips and the "u win." dialog will be animated (or not) along with the tiles, synchronized to the same frame.&#13;
-        3. The dashed line showing the path from the rat to its target location will be animated (or not) according to the player animation checkbox.&#13;
-        4. The rat token will animate its movement from one location to the next (or not) according to the player animation checkbox.&#13;
-        5. On systems where the user has indicated a [preference for "reduced motion"](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion#user_preferences), the two checkboxes will be unchecked by default.&#13;
-38. #143: Stop automatically reconnecting after getting disconnected. This has been resurrecting rooms that had previously timed out, which is rude. Some version of this MAY come back in the future, if I can find a way to detect when it would be OK.&#13;
-39. #142: The dashed path to the rat's current target will no longer get misaligned and shrunk on games that don't go all the way to Snakes on a Planet.&#13;
-40. #138: The sidebar now has an extra spot at the beginning that shows the number of all rats. This lets you do the same stuff that the other icons in this panel let you do: click to hint for any rat (i.e., any item in the "Rats" item group) and hover over it to see a tooltip with all the hinted rat locations.&#13;
-41. Because I kept getting annoyed while testing the previous one, tooltips now stay around when the cursor goes inside them instead of needing the cursor to stay inside the original trigger box. This means that you can now highlight text from these tooltips with your mouse and copy-paste.&#13;
-42. I might have fixed a bug where sometimes the rat wouldn't send its chat messages immediately, but would wait for some arbitrary event to happen in the future. I have no idea why I wrote it the way I did at first...&#13;
-43. Whenever we see `{RANDOM_PLAYER}` in any message from your YAML file, we'll replace that with the current alias of a random player. I tried to make this as useful and sensible as I could:&#13;
-   - If you are the only player (on your team), it will always just pick you. Otherwise, it will never pick you, but instead:&#13;
-   - If any other players (on your team) are connected and haven't completed their goal yet, then it will pick a random one of them. Otherwise, it will pick a random other player (on your team).&#13;
-   - If there are multiple `{RANDOM_PLAYER}` placeholders in a single message, then we'll try to pick as many **different** players as possible (in random order still), only repeating a player if there are more placeholders than the number of players allowed by the above rules. To be precise, we sample randomly without replacement from the list until the list is empty, then we refill it and repeat the process until all placeholders have been filled.&#13;
-44. Fix an oversight that caused messages to get repeatedly processed over and over again. This was most visible when telling the rat to do something: it would go into an infinite loop of acknowledging the request forever.&#13;
-45. Fix an oversight where a horizontal scroll bar could appear under normal conditions just because of how close certain locations are to the edge.</content>
-    <link href="https://github.com/airbreather/Autopelago/releases/tag/v0.11.14"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.7.1</id>
-    <title>Casualties: Unknown v0.7.1</title>
-    <updated>2026-03-24T07:27:18+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.7.1&#13;
-This update is compatible with worlds generated on version 0.7.0 and above!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-&#13;
-# Changes&#13;
-- Updated Archipelago.Multiclient.Net to 6.7.1&#13;
-# Fixes&#13;
-- Praying that this time I actually fixed received recipes randomly being wiped after death and never coming back.&#13;
-- Archipelago Items will now properly update to a new sprite and description after collection if more than one exists.&#13;
-&#13;
-# Known Issues&#13;
-- Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
-- Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators.&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed.&#13;
-&#13;
-**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.7.0...v0.7.1</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.7.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.0</id>
-    <title>Anodyne v0.6.0</title>
-    <updated>2026-03-24T13:59:38+00:00</updated>
-    <author>
-      <name>SephDB</name>
-    </author>
-    <author>
-      <name>PixieCatSupreme</name>
-    </author>
-    <content>- Added new traps&#13;
-  - Pixelate Trap (Pixelates the screen)&#13;
-  - Stun Trap (Stuns Young for a while)&#13;
-  - Damage Trap (Young takes 1 hit of damage)&#13;
-  - One Hit KO Trap (Young's health gets set to 1)&#13;
-  - Invisible Trap (Young becomes invisible)&#13;
-  - Flip Horizontal Trap and Flip Vertical Trap (Flips the screen for a while)&#13;
-  - Disarm Trap (Unequips the current broom, if any)&#13;
-  - Tool Swap Trap (Changes the current broom to another one, if any)&#13;
-  - Home Trap (Sends Young back to the Nexus)&#13;
-- Added Trap Link Setting&#13;
-- Fixed UT player tracking in Windmill&#13;
-- Fixed Windmill UT Rock locations</content>
-    <link href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.3</id>
-    <title>Dark Cloud 1 v0.4.3</title>
-    <updated>2026-03-24T16:17:32+00:00</updated>
-    <author>
-      <name>Lizardman175</name>
-    </author>
-    <content># Dark Cloud 1 AP Rando v0.4.3&#13;
-&#13;
-# Changes&#13;
- - Proper merge of the fix for the missing georama bug&#13;
- - Expanded the text box for the slot name error message to the current slot name is actually readable&#13;
- - Cleaned up server rule logic code to make maintenance easier.  Added a few more fruits to Osmond's requirements as well as pockets for consistency with Ungaga's requirements.  Mostly only affects the spheres around Osmond.&#13;
- - Limited how many items the client can give to max inventory - 10.  This does not include sundew, horned key, or pockets.  Attachments from the client are limited to 35 as well.&#13;
- - Added options to change default names for characters in the .yaml, so Ungaga can be renamed!&#13;
-   - Pay attention to the requirements or the world generation will fail&#13;
-   - If renaming Toan, you need to make sure to connect the client *before* starting a new game!&#13;
-   - Except for Ungaga, characters can still be renamed from the yaml names in the normal cutscenes&#13;
- - Added a DC1 icon so the app doesn't use the default avalonia one anymore&#13;
- - Fixed an issue that could cause the player to receive more items than expected, potentially clogging the inventory with unusable items&#13;
- - Improved handling of defense/fruit/gourd item limit.  Insignificant performance gain, and also fixes some bugs likely nobody encountered/noticed.&#13;
- - Added a Dark Genie location/item so that in an all bosses run, if the DG is killed before the other 5 bosses it will still be recognized by the client.&#13;
- - Handle the game state returning to the title screen after beating the Genie&#13;
- &#13;
-### Linux&#13;
- - Created a Linux build, but it doesn't want to talk with pcsx2 just yet.  Still trying to understand this one.&#13;
-&#13;
-Will not work with existing worlds</content>
-    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.3"/>
-  </entry>
   <entry>
     <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.2.5</id>
     <title>Black Ops 3 - Zombies v0.2.5</title>
@@ -612,7 +447,7 @@ Honestly, I think I found most of the bugs. Any remaining unknown bugs are likel
   </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/V0.9.0</id>
-    <title>Total War Warhammer 3 v0.9.0</title>
+    <title>Total War Warhammer 3 v0.9.0.post2</title>
     <updated>2026-03-25T21:46:55+00:00</updated>
     <author>
       <name>jordansds</name>
@@ -622,6 +457,8 @@ https://github.com/ArchipelagoMW/Archipelago/releases/tag/0.6.7-rc1&#13;
 &#13;
 Added more traps.&#13;
 Added blacklist for traps that you don't want.&#13;
+Fixed crabs not working&#13;
+Corrected default yaml settings.&#13;
 &#13;
 Main settlement buildings are no longer locked&#13;
 &#13;
@@ -630,7 +467,8 @@ Added "Sanity" and "Ritualsanity" locations, enable in the yaml (not all faction
 Deathlink should no longer break games when played over multiple sessions.&#13;
 &#13;
 Ritualsanity factions:&#13;
-High Elves, Dark Elves, Empire, Skaven, Tomb Kings&#13;
+High Elves, Dark Elves, Empire, Skaven, Tomb Kings, Greenskins (They only have one ritual), Beastmen&#13;
+Some rituals locations might not trigger when unlocked, depending on if the game actually treats them as rituals, let me know on discord if a ritual location does not send.&#13;
 &#13;
 Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
 &#13;
@@ -1424,5 +1262,132 @@ Everything from the original native version *should* be present in this one. If 
 47. Start looking for the bits that version 1.0.0 of the APWorld will (later!) start to send us to support more flavor items with only Archipelago-side updates.&#13;
 48. For games with passwords, start encrypting what shows up in the URL bar. There's a lot more to it than that sounds: the encrypted password uses `&amp;W=EncryptedPassword`, but you can still manually plug in `&amp;w=OriginalPassword`. The encryption is there so that you can reload / bookmark the page and still connect to the game just fine, as long as you do so within the same browser profile (i.e., you can't paste your URL from Firefox to Chrome or to someone else's computer, the key is only stored locally).</content>
     <link href="https://github.com/airbreather/Autopelago/releases/tag/v0.11.15"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.4</id>
+    <title>Ratchet &amp; Clank 2 v0.6.4.4</title>
+    <updated>2026-03-28T20:25:37+00:00</updated>
+    <author>
+      <name>Evilwb</name>
+    </author>
+    <author>
+      <name>JacobMIX</name>
+    </author>
+    <content>Testing Dynamic PINE ports for multi PCSX2 instance support.&#13;
+Also adds auto connection functionally to the client using patch data, and added the manifest json.&#13;
+Based on: https://github.com/evilwb/APRac2/releases/tag/v0.6.4&#13;
+v0.6.4.4: Now has UT integrated, and yaml-less support. Works as long as UT is installed. Also fixed some first person logic issues.&#13;
+Thanks to @AmondoVagyok&#13;
+Also added world version to slot data so can see if client isn't matching multiworld gen.&#13;
+Planned: More UT features. "Glitch" logic. Internal or external map. Auto map tab switching. Community suggested logic changes.&#13;
+&#13;
+### Setup&#13;
+You need every RaC2 option in your `host.yaml` setup. That means:  &#13;
+`iso_file` to a valid vanilla iso in your Archipelago directory (should be already from normal setup)  &#13;
+`iso_start` to your PCSX2 exe (Make sure to use `/`)  &#13;
+`game_ini` to a game settings file in your PCSX2's gamesettings folder.  &#13;
+(Usually `%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini`)&#13;
+&#13;
+Example:&#13;
+```yaml&#13;
+rac2_options:&#13;
+  # File name of the Ratchet &amp; Clank 2 ISO&#13;
+  iso_file: "Ratchet &amp; Clank - Going Commando (USA) (v1.01).iso"&#13;
+  # Set this false to never autostart an iso (such as after patching),&#13;
+  # Set it to true to have the operating system default program open the iso&#13;
+  # Alternatively, set it to a path to a program to open the .iso file with (like PCSX2)&#13;
+  iso_start: "C:/Emulators/(PS2) PCSX2/pcsx2-qt.exe"&#13;
+  # Set to file path to an existing PCSX2 game setting INI file to have the patcher&#13;
+  # create an appropriately named INI with the rest of the patch output. This can be used to&#13;
+  # allow you to use you own custom PCSX2 setting with patched ISO.&#13;
+  game_ini: "%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini"&#13;
+```&#13;
+&#13;
+Game settings ini example:&#13;
+```ini&#13;
+[EmuCore]&#13;
+EnablePINE = true&#13;
+PINESlot = 28011&#13;
+&#13;
+[Achievements]&#13;
+Enabled = false&#13;
+&#13;
+[MemoryCards]&#13;
+Slot1_Enable = true&#13;
+Slot2_Enable = false&#13;
+Slot1_Filename = APgames.ps2&#13;
+```&#13;
+Recommended you use your settings for vanilla RaC2. But you can make a copy with specific edits.&#13;
+So you can set an AP specific memory card like in the example above. (You don't need to add PINE settings)&#13;
+&#13;
+For normal setup if you haven't already. Check [GitHub](&lt;https://github.com/evilwb/APRac2/blob/main/docs/setup_en.md&gt;), and [Discord](&lt;https://discord.com/channels/731205301247803413/1325015730218860554/1371288772548755466&gt;).&#13;
+&#13;
+### Start&#13;
+Simply run a `.aprac2` file with Archipelago. (Recommended to set to open `.aprac2` files with Archipelago by default)&#13;
+Or run the client, and use the `/start` command, and then select your desired `.aprac2` file. (Or drag `.aprac2` into the client)&#13;
+Note: You can rename `aprac2` and patched `iso` but they have to have the same name or it'll make another `iso`.&#13;
+(Same way you have to keep `.apsave`, and their `.zip` name the same if hosting locally)&#13;
+&#13;
+Changes: &lt;https://github.com/jacobmix/APRac2/compare/v0.6.4.1-PINE-pre...v0.6.4.4?w=1&gt;&#13;
+Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.3?w=1&gt;</content>
+    <link href="https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.0.0</id>
+    <title>The Legend of Zelda - Oracle of Seasons v20.0.0</title>
+    <updated>2026-03-28T22:55:57+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>### This apworld is a beta apworld, only compatible with Archipelago 0.6.7 (in RC as of the release of this release)&#13;
+&#13;
+## 🗳️ New Options&#13;
+* Puzzle and Minigames rando&#13;
+  * When randomized, the games are about as hard as vanilla, with 2 less screens for hide &amp; seek&#13;
+  * Owl-related puzzles are not affected&#13;
+  * No push block is added&#13;
+* Linked Hero's cave can now be made reachable from a warp in the regular hero's cave&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+* Used up gasha spots are now represented with the dug tile&#13;
+* The game now shows which item is being obtained when the item is from a different world&#13;
+* Generation is faster&#13;
+* Asking for `included essences` placed essences will set the placed essences to the number included&#13;
+&#13;
+## 🧠 Logic&#13;
+* Cane of somaria is now a in-logic way to kill golden beasts (it's decently hard)&#13;
+* Bomb/bombchu requirement is now more consistent, unless there is a consistent way to refill it&#13;
+  * 40 bombs are required to fight&#13;
+  * 20 bombs are required to destroy bombable tiles&#13;
+  * 20 bombs are required for bombjumps&#13;
+  * 20 bombchus are required to fight&#13;
+  * 40 bombchus are required to destroy tiles&#13;
+* Jumping the goron pits with just a cape has been upgraded from medium to hard logic&#13;
+* Some anti-softlocks have been removed, which affects some of the logic&#13;
+* Added a logic path to leave d2&#13;
+* Fixed a logic issue where the d8 spinner chest was reachable without magnet glove&#13;
+* Added a hell logic path from frypolar to d8 spinner chest without magnet glove &#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+* Made use of pre_output, unit tests now work on OoS&#13;
+* Fixed a text at random being broken each seed&#13;
+* Fixed dimitri clipping and respawning at the closed d4 entrance&#13;
+* Melting the red and blue ores, then leaving the room to come back no longer gives hard ore instead of the normal item</content>
+    <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/xMcacutt-Archipelago/Archipelago-KeyWe/releases/tag/1.1.0</id>
+    <title>KeyWe v1.1.0</title>
+    <updated>2026-03-28T23:58:27+00:00</updated>
+    <author>
+      <name>xMcacutt</name>
+    </author>
+    <content>- Fix for new game update&#13;
+&#13;
+[Client App](https://github.com/xMcacutt-Archipelago/KeyWe-AP-Client)</content>
+    <link href="https://github.com/xMcacutt-Archipelago/Archipelago-KeyWe/releases/tag/1.1.0"/>
   </entry>
 </feed>
