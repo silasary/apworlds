@@ -6,7 +6,7 @@ It&#x27;s time to buckle up and become a Very Very Valet!
 
 
 ## Downloads
-- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-VeryVeryValet/releases/download/1.0.0/very_very_valet.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/xMcacutt-Archipelago/Archipelago-VeryVeryValet/releases/download/1.0.1/very_very_valet.apworld">Latest Version (1.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
