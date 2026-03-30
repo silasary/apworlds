@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 import pathlib
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -34,6 +35,8 @@ skip_config = yaml.safe_load(pathlib.Path("scripts", "skipped_filenames.yaml").r
 bad_names = skip_config.get("skipped_filenames", [])
 bad_repos = skip_config.get("skipped_repos", [])
 
+filtered_url = re.compile(r"(.*?)(?:\[(.*)\])$")
+
 
 class NoWorldsFound(Exception):
     pass
@@ -47,12 +50,17 @@ def latest_ap_release() -> datetime.datetime:
 
 
 def update_index_from_github(file_path: Path | None, manifest: dict, github_url: str | list, default_flags: dict | None = None) -> dict[str, dict]:
+    game_name_filter = None
     world_id = ""
     manifests: dict[str, dict] = {}
     if isinstance(github_url, list):
         for url in github_url:
             manifests.update(update_index_from_github(file_path, manifest, url, default_flags))
         return manifests
+
+    if m := filtered_url.match(github_url):
+        github_url, game_name_filter = m.groups()
+        print(f"Filtering {github_url} for game {game_name_filter}")
 
     if github_url in bad_repos:
         print(f"Skipping known bad repo: {github_url}")
@@ -103,6 +111,10 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                 if release.world_version in manifest.get("versions", {}):
                     del manifest["versions"][release.world_version]
                 continue
+        if manifest.get("game") and game_name_filter and manifest["game"] != game_name_filter:
+            # print(f"Skipping {release.id} in {github_url} due to game filter {game_name_filter}")
+            continue
+
         version_info: dict = manifest.setdefault("versions", {}).setdefault(release.world_version, {})
         revision = 1
         raw_version = release.world_version

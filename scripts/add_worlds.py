@@ -67,7 +67,9 @@ if args.spreadsheet:
             row.get("APWorld Link", "").strip()
         ):
             repolinks = re.findall(REPO_REGEX, wheretofind)
-            queue.extend(repolinks)
+            for link in repolinks:
+                queue.append(link + f"[{row['Game'].strip()}]")
+            # queue.extend(repolinks)
 
         if "After Dark" in row.get("Notes", "") and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
             ad_games.append(row["Game"].strip())
