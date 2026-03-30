@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "SW_CreeperKing"
+  ],
   "description": "Slime Rancher",
   "game": "Slime Rancher",
   "github": "https://github.com/SWCreeperKing/Slimipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1": {
       "created_at": "2025-12-19T07:58:44Z",
@@ -60,6 +67,21 @@
       "title": "v0.2.2",
       "version_simple": "0.2.2",
       "world_version": "0.2.2"
+    },
+    "v0.2.3": {
+      "created_at": "2026-03-29T18:59:13Z",
+      "description": "- [ApWorld] Minor fixes to logic and location names, there are 2 *possible* incompatible locations from worlds generated\r\n  with v0.2.2 due to them previously having an extra space\r\n    - Treasure Pod - Glass Desert Western Ruins\r\n    - Treasure Pod - Glass Desert Leftside Isle\r\n- [Client] (HOPEFULLY) Fixed save errors\r\n- [Client] Extended timeout timer from 4s to 60s\r\n- [Client] Extended the trap delay range from 30s-60s to 12s-60s\r\n- [Client] Fixed a bug where reaching 7Zee lvl 28 would goal regardless of goal type\r\n- [Client] Added version number\r\n- [Client] Fixed Note Goal being susceptible to collect\r\n- [Client] Custom Assets now loads on connect\r\n- [Client] Traplink, added support for the following traps:\r\n    - Banner, Chaser, Clear Image, Disarm, Explosion, Flip Horizontal, Flip Vertical, Frost, Gas, Help, Hey!, Inverted\r\n      Mouse, Mana Drain, Ninja, Person, Reverse Controls, Sandstorm, Teleport, TNT, Tool Swap, Undo, Whirlpool, Zoom In,\r\n      Zoom Out\r\n- [Client] Forgot to implement the functionality of `Give random traps for unknown traps`\r\n- [Client] Made the game tell you when trap linked, and if you have entered an area without an unlock\r\n- [Client] Changed how the mod is structured slightly (in preparation for updating to melon 7.2)\r\n    - IF YOU ARE UPDATING before running the game delete the `Slimipelago.dll` in the\r\n      `Slime Rancher/Mods/SW_CreeperKing.Slimipelago` folder",
+      "download_url": "https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.2.3/slime_rancher.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7d8b872bd0232fc31efcfb0eceb63b19d60bb7dda1e8e11e2869851d00ceb01f",
+      "html_url": "https://github.com/SWCreeperKing/Slimipelago/releases/tag/v0.2.3",
+      "minimum_ap_version": "0.6.5",
+      "size": 10742,
+      "source_url": "https://api.github.com/repos/SWCreeperKing/Slimipelago",
+      "tag": "v0.2.3",
+      "title": "v0.2.3",
+      "version_simple": "0.2.3",
+      "world_version": "0.2.3"
     }
   }
 }
