@@ -1,9 +1,12 @@
 # YARGAllSetlists
 
 ## Latest
-- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGAllSetlists.apworld">Latest Version (26.2.21.1)</a>
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.03.29/YARGAllSetlists.apworld">Latest Version (26.3.29)</a>
 
 ## All Versions
+
+#### v26.3.29
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.03.29/YARGAllSetlists.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.03.29/YARGAllSetlists.apworld</a>
 
 #### v26.2.21.1
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGAllSetlists.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.02.21.1/YARGAllSetlists.apworld</a>

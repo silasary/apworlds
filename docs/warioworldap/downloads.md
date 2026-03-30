@@ -1,9 +1,12 @@
 # Warioworld
 
 ## Latest
-- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld">Latest Version (0.1.9.post3)</a>
+- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld">Latest Version (0.1.9.post4)</a>
 
 ## All Versions
+
+#### v0.1.9.post4
+- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld</a>
 
 #### v0.1.9.post3
 - <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld</a>

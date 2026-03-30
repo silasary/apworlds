@@ -2,364 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-29T18:12:04.822006+00:00</updated>
+  <updated>2026-03-30T06:43:25.448674+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.7.2</id>
-    <title>Casualties: Unknown v0.7.2</title>
-    <updated>2026-03-25T02:34:45+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.7.2&#13;
-This update is compatible with worlds generated on version 0.7.0 and above!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-&#13;
-# Additions&#13;
-- New UI that shows how many Archipelago Items are left to collect.&#13;
-# Changes&#13;
-- Ceiling Rye and Skullcrushers now drop Archipelago Items when broken.&#13;
-- Archipelago Items now show the owning player's name and game in their name.&#13;
-- Increased the size of the Layer Selector.&#13;
-- The Skillsanity Tracker is now hidden while Unchipped mode is active. (will probably make this a YAML option later)&#13;
-# Fixes&#13;
-- Earning extra skill experience at Skillsanity level 14 should no longer cause an IndexOutOfRange error.&#13;
-- The game now pauses while selecting the next layer, instead of silently running in the background.&#13;
-&#13;
-# Known Issues&#13;
-- Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
-- Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators.&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed.&#13;
-&#13;
-**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.7.1...v0.7.2</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.7.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.2-pre.1</id>
-    <title>CrossCode v0.8.2rc1</title>
-    <updated>2026-03-25T05:10:44+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Changes to Generation&#13;
-&#13;
-* Replaced the check **Vagabond Dojo Key** with **Trials of the Golden Bugs** (@CodeTriangle).&#13;
-  * This change turns the check that gives the Dojo Key in vanilla into a quest reward so that the item hidden behind it can be previewed.&#13;
-  * This new location has the same ID as the previous one, so this change only affects where in the cutscene the item is acquired.&#13;
-&#13;
-## Changes to Mod&#13;
-&#13;
-* Applied a series of changes to the Archipelago menus to make creating and playing games more intuitive (@CodeTriangle):&#13;
-  - Allow any NG+ options to be selected regardless of previous save file completion.&#13;
-  - No longer load into a game without NG+ enabled when exiting the text client menu using cancel button.&#13;
-  - Add a clearer indication that NG+ options can be edited from the New Game Plus menu found in the Archipelago menu.&#13;
-  - Block out "carry over" section of NG+ when editing options to indicate that they cannot be modified after save file creation.&#13;
-  - Stop the game from blocking infinitely when entering new login information after previously entering login information and disconnecting.&#13;
-&#13;
-## Migration Guide&#13;
-&#13;
-This version of the mod and apworld **should be safe** to upgrade to from 0.8.1, 0.8.0, or 0.7.x. There is **some slight risk** involved in both of the changes made. You should not be in any serious danger.&#13;
-* There is a slight chance that some interactions break due to the generation change (but this can be fixed easily).&#13;
-* There is a small chance that a user interface may becomes unresponsive in a strange situation.</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.2-pre.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.15</id>
-    <title>Tevi v1.4.15</title>
-    <updated>2026-03-25T11:09:52+00:00</updated>
-    <author>
-      <name>BlackSoulKnight</name>
-    </author>
-    <content>## Change log&#13;
-### All&#13;
-+ Valhalla Breath West - Money Room X: 9 Y: 1 -&gt; missing Crossbomb + Extended&#13;
-+ Overworld teleporter are now useable in a Memine race when teleporter mode is active&#13;
-&#13;
-### AP&#13;
-+ Added Mananite- and Magitite-Amount options for Archipelago&#13;
-+ Fixed upgrade able item count</content>
-    <link href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.15"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.6</id>
-    <title>Flipwitch Forbidden Sex Hex v1.0.6</title>
-    <updated>2026-03-25T11:38:15+00:00</updated>
-    <author>
-      <name>Witchybun</name>
-    </author>
-    <content>New Feature:&#13;
-- Most H scenes are skipped save game over scenes.  Includes gachapon.&#13;
-  - A little buggy.  Just button mash through the times you hear dialogue move but you can't move.  It'll get there.&#13;
-&#13;
-Changes:&#13;
-- Instead of relying on the index as a cutoff point, items are checked via a dictionary which checks if the item was received and if not send it.  This should hopefully resolve the problem where dying a lot makes you "skip" something.&#13;
-  - Receiving items seemed to work on my end, but needs further testing.&#13;
-- Instead of path order determining damage, its based on HP items received.  This should help make it so you don't feel like a late area will kill you instantly due to no HP upgrade items sent.&#13;
-- Removed the progression label from HP upgrades, since its not considered for logic anymore.&#13;
-&#13;
-Quick Hotfix:&#13;
-- I added a warning if the previous item wasn't sent but it wasn't very verbose and called itself if the index was 0, which would probably confuse someone and make people offer bad reports.</content>
-    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.7</id>
-    <title>Flipwitch Forbidden Sex Hex v1.0.7</title>
-    <updated>2026-03-25T11:53:39+00:00</updated>
-    <author>
-      <name>Witchybun</name>
-    </author>
-    <content>Bugfix:&#13;
-- Events for MonoBot and Bunny Club NPCs had no logic (not the actual locations, but events if Quests were on)</content>
-    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.0.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.1</id>
-    <title>Borderlands 2 v0.5.1</title>
-    <updated>2026-03-25T16:18:03+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>- updated jump heights&#13;
-- new ramps to make areas navigable without jump: arid nexus boneyard and gluttony gulch&#13;
-- buncha logic fixes, many around prerequisite missions, moving challenges to later&#13;
-- remove leviathan check for now&#13;
-- add enemy checks: FaceMcShooty and Jacques O'Lantern&#13;
-- travel chat commands are now case/symbol insensitive</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Smg065/GloverArchipelago/releases/tag/v1.0.1</id>
-    <title>Glover v1.0.1</title>
-    <updated>2026-03-25T16:46:10+00:00</updated>
-    <author>
-      <name>Smg065</name>
-    </author>
-    <content>Changelog:&#13;
-- UT Support by [Ars-Ignis](https://github.com/Ars-Ignis)&#13;
-- Minor changes to support Poptracker's Exporting with [AP Logic Builder](https://github.com/Smg065/GloverAPLogicBuilder/releases/tag/1.0.0)&#13;
-- Minor changes to support [RunInAWeek's Poptracker](https://github.com/RunInAWeek/Glover-Ap-Tracker/releases)&#13;
-- Experimental change to Checkpoints in Crn3 in an attempt to solve checkpoint bugs.&#13;
-&#13;
-Fixes:&#13;
-- More trap compatibility in TrapLink&#13;
-- Added the Lighthouse Life on Hard Logic&#13;
-- Option errors are no longer declared but not raised when entering scores.&#13;
-- Dribble for Starting Life in Prehistoric Bonus&#13;
-- Stairs flagged as needed for Training Goal&#13;
-- Chest Access and Chest Life in Prt1 work as expected&#13;
-- Prt3 Trampoline Lobster is no longer an open check&#13;
-- Trap/Filler Percentage being set to 0 no longer bypasses trap/filler weighting&#13;
-- Deathlink sends a message&#13;
-- Deathlink packages are no longer eaten when TrapLink is expecting a death trap&#13;
-- Links send the context when override is toggled&#13;
-- Prt2: Switch Garibs are considered part of the Switch Platform instead of poolside&#13;
-- Otw3's end w/ball requires your final walkway access instead of your lights platform access.&#13;
-- Bonus Level All Garib checks work as expected&#13;
-- Fixed Lower Monolith overflowing when getting more than 4 items&#13;
-- Custom Mr. Tip text when playing with The Grinch AP&#13;
-&#13;
-VERY big thanks to the Glover community for finding and fixing many of these issues, along with adding all the nice tools and features outside of the direct .apworld implementation.&#13;
-&#13;
-**Full Changelog**: https://github.com/Smg065/GloverArchipelago/commits/v1.0.1</content>
-    <link href="https://github.com/Smg065/GloverArchipelago/releases/tag/v1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.0</id>
-    <title>PokePark v1.2.0</title>
-    <updated>2026-03-25T19:31:03+00:00</updated>
-    <author>
-      <name>Joe Mama (Mekurushi)</name>
-    </author>
-    <content>## What's Changed&#13;
-* fixed Dolphin Cheat Incompatibility by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/76&#13;
-* improved deathlink to support Overworld and Attraction by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/78&#13;
-* added Ending trigger on goal completion by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/79&#13;
-* displaying client messages ingame by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/81&#13;
-* updated ap client to support new patcher system by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/94&#13;
-* 95 pokepark colorized in game client messages by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/99&#13;
-* fixed beach zone spearow flag by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/100&#13;
-* increased requirements for Arcanine, Jolteon and Flygon by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/101&#13;
-* 85 pokepark power randomize option customizable by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/102&#13;
-* 103 pokepark fps enhancement by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/104&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.1.3...1.2.0</content>
-    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0</id>
-    <title>Elder Scrolls Online v0.3.0</title>
-    <updated>2026-03-25T19:57:17+00:00</updated>
-    <author>
-      <name>Spencer2585</name>
-    </author>
-    <content>As this is a prerelease, **there may be several bugs that could take from the experience or result in the creation of an unbeatable seed**, This release should only be used for those who want to test out the new features or want to help find bugs ~~or those who dont care and just want to play anyways~~&#13;
-&#13;
-Honestly, I think I found most of the bugs. Any remaining unknown bugs are likely located in the client or mod, which means that a hotfix should be able to fix them without the need to generate a new game. That being said, I cannot guarantee this is the case, so don't say I didn't warn you.&#13;
-&#13;
-## Whats New&#13;
-- Completely redone Mod and APWorld code&#13;
-- Added Delve access items and completion locations&#13;
-- New Goal: Dungeon Delver, complete every delve included in your seed&#13;
-- changed the wayshrine checks to activate when interacting with the wayshrine, not just first discovery. This is for those who want to use an existing character for the AP run&#13;
-- Added new system to prevent players from interacting with interactables that lead to locked zones&#13;
-- Added new system to block traveling to other zones via dialogue with an NPC&#13;
-- Added new system to limit how much gold the player can have on them&#13;
-- New Options&#13;
-  - Delves_per_region: How many delves to include from each zone, goes up to 18, set to 0 to disable zone locations and locking&#13;
-  - Enable Main Quests: to enable and disable locations for the main quest, must be enabled for the main quest goal or if coldharbour is your goal for zone quest goal&#13;
-  - enable Wayshine checks: to enable and disable checks for interacting with wayshrines&#13;
-  - base gold cap: what you want the gold cap to be without any wallet increase items, set to 0 to enable gold limiting&#13;
-- More that I can't remember off the top of my head&#13;
-&#13;
-## Known Bugs:&#13;
-- Leaving the client on for an extended period of time can result in the client wiping all items sent to the mod, meaning the game may tell you that you don't have something you should have. If this occurs, you should just be able to close and reopen the client, and upon reconnection, it should fix all items sent to the game. Ill be looking into what causes this but its likely a 0.4.0+ issue to fix for when I rewrite the client like I did with the apworld and mod in this one&#13;
-- Setting your goal region to random can cause it to pick a region inaccessible with a low zone count, causing generation errors. This error occurs at the beginning of generation, so you should know if there's a problem pretty quick. You can avoid this by manually choosing a goal zone or trying to regen so it picks a different zone until you get it to work. Note that the lower you set the zone count, the more likely this is to occur. I will be looking into fixing this before 0.3.0 proper.&#13;
-- Controller can break on reloads, Ill be looking into this fairly soon. Can be worked around by reloadUI until controller works&#13;
-&#13;
-</content>
-    <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/V0.9.0</id>
-    <title>Total War Warhammer 3 v0.9.0.post3</title>
-    <updated>2026-03-25T21:46:55+00:00</updated>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>REQUIRES 0.6.7-rc1 BETA BUILD OF ARCHIPELAGO OR BUILD FROM SOURCE&#13;
-https://github.com/ArchipelagoMW/Archipelago/releases/tag/0.6.7-rc1&#13;
-&#13;
-Added more traps.&#13;
-Added blacklist for traps that you don't want.&#13;
-Fixed crabs not working&#13;
-Corrected default yaml settings.&#13;
-Fixed crabs&#13;
-&#13;
-Main settlement buildings are no longer locked&#13;
-&#13;
-Only for conquest mode at the moment:&#13;
-Added "Sanity" and "Ritualsanity" locations, enable in the yaml (not all factions implemented for ritualsanity at this time).&#13;
-Deathlink should no longer break games when played over multiple sessions.&#13;
-&#13;
-Ritualsanity factions:&#13;
-High Elves, Dark Elves, Empire, Skaven, Tomb Kings, Greenskins (They only have one ritual), Beastmen&#13;
-Some rituals locations might not trigger when unlocked, depending on if the game actually treats them as rituals, let me know on discord if a ritual location does not send.&#13;
-&#13;
-Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
-&#13;
-**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.8.8...v0.8.9</content>
-    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/V0.9.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.2</id>
-    <title>Ratchet &amp; Clank 2 v0.6.4.2</title>
-    <updated>2026-03-25T23:33:03+00:00</updated>
-    <author>
-      <name>Evilwb</name>
-    </author>
-    <author>
-      <name>JacobMIX</name>
-    </author>
-    <content>Testing Dynamic PINE ports for multi PCSX2 instance support.&#13;
-Also adds auto connection functionally to the client using patch data.&#13;
-Based on: https://github.com/evilwb/APRac2/releases/tag/v0.6.4&#13;
-v0.6.4.2: Now also has UT integrated, and yaml-less support. Works as long as UT is installed. Also fixed some first person logic issues.&#13;
-Planned: More UT features. "Glitch" logic. Internal or external map. Auto map tab switching. Community suggested logic changes.&#13;
-&#13;
-### Setup&#13;
-You need every RaC2 option in your `host.yaml` setup. That means:  &#13;
-`iso_file` to a valid vanilla iso in your Archipelago directory (should be already from normal setup)  &#13;
-`iso_start` to your PCSX2 exe (Make sure to use `/`)  &#13;
-`game_ini` to a game settings file in your PCSX2's gamesettings folder.  &#13;
-(Usually `%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini`)&#13;
-&#13;
-Example:&#13;
-```yaml&#13;
-rac2_options:&#13;
-  # File name of the Ratchet &amp; Clank 2 ISO&#13;
-  iso_file: "Ratchet &amp; Clank - Going Commando (USA) (v1.01).iso"&#13;
-  # Set this false to never autostart an iso (such as after patching),&#13;
-  # Set it to true to have the operating system default program open the iso&#13;
-  # Alternatively, set it to a path to a program to open the .iso file with (like PCSX2)&#13;
-  iso_start: "C:/Emulators/(PS2) PCSX2/pcsx2-qt.exe"&#13;
-  # Set to file path to an existing PCSX2 game setting INI file to have the patcher&#13;
-  # create an appropriately named INI with the rest of the patch output. This can be used to&#13;
-  # allow you to use you own custom PCSX2 setting with patched ISO.&#13;
-  game_ini: "%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini"&#13;
-```&#13;
-&#13;
-Game settings ini example:&#13;
-```ini&#13;
-[EmuCore]&#13;
-EnablePINE = true&#13;
-PINESlot = 28011&#13;
-&#13;
-[Achievements]&#13;
-Enabled = false&#13;
-&#13;
-[MemoryCards]&#13;
-Slot1_Enable = true&#13;
-Slot2_Enable = false&#13;
-Slot1_Filename = APgames.ps2&#13;
-```&#13;
-Recommended you use your settings for vanilla RaC2. But you can make a copy with specific edits.&#13;
-So you can set an AP specific memory card like in the example above. (You don't need to add PINE settings)&#13;
-&#13;
-For normal setup if you haven't already. Check [GitHub](&lt;https://github.com/evilwb/APRac2/blob/main/docs/setup_en.md&gt;), and [Discord](&lt;https://discord.com/channels/731205301247803413/1325015730218860554/1371288772548755466&gt;).&#13;
-&#13;
-### Start&#13;
-Simply run a `.aprac2` file with Archipelago. (Recommended to set to open `.aprac2` files with Archipelago by default)&#13;
-Or run the client, and use the `/start` command, and then select your desired `.aprac2` file. (Or drag `.aprac2` into the client)&#13;
-Note: You can rename `aprac2` and patched `iso` but they have to have the same name or it'll make another `iso`.&#13;
-(Same way you have to keep `.apsave`, and their `.zip` name the same if hosting locally)&#13;
-&#13;
-Changes: &lt;https://github.com/jacobmix/APRac2/compare/v0.6.4.1-PINE-pre...v0.6.4.2?w=1&gt;&#13;
-Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.2?w=1&gt;</content>
-    <link href="https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.3</id>
-    <title>Gauntlet Legends v2.1.3</title>
-    <updated>2026-03-26T02:52:39+00:00</updated>
-    <author>
-      <name>jamesbrq</name>
-    </author>
-    <content>REQUIRED: Archipelago -&gt; https://github.com/ArchipelagoMW/Archipelago/releases&#13;
-REQUIRED: Retroarch -&gt; https://www.retroarch.com/?page=platforms&#13;
-Drag and drop gl.apworld into your custom_worlds folder in your Archipelago install.&#13;
-&#13;
-You can launch the client from ArchipelagoLauncher, just click on the Gauntlet Legends Client button.&#13;
-&#13;
-To patch the game, you are required to have a US copy of Gauntlet Legends for the N64.&#13;
-Either drag the patch onto ArchipelagoLauncher.exe or Right click the patch and 'Open With...' ArchipelagoLauncher.exe&#13;
-The host does not need to have a copy of the game to generate.&#13;
-&#13;
-RETROARCH IS REQUIRED IT IS THE ONLY EMULATOR THAT WILL WORK.&#13;
-&#13;
-IN RETROARCH: You must go to Settings-&gt;User Interface and turn the Show Advanced Settings ON. Then in Settings-&gt; Network, you must also turn ON Network Commands. Leave the port the default.&#13;
-&#13;
-Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
-&#13;
-**Full Changelog**: https://github.com/jamesbrq/GauntletLegendsAP/compare/v2.1.2...main</content>
-    <link href="https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Str8UpWHITE64/DRAP/releases/tag/0.2.3</id>
-    <title>Dead Rising Deluxe Remaster v0.2.3</title>
-    <updated>2026-03-26T13:32:10+00:00</updated>
-    <author>
-      <name>Str8UpWHITE64</name>
-    </author>
-    <content>Added shutters being opened in Entrance Plaza once you talk to Jessie in the Service Hallway&#13;
-Removed Per-Slot random in generation.</content>
-    <link href="https://github.com/Str8UpWHITE64/DRAP/releases/tag/0.2.3"/>
-  </entry>
   <entry>
     <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.0</id>
     <title>The Legend of Zelda - Spirit Tracks v0.7.0</title>
@@ -838,7 +485,7 @@ Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.3?w=1
   </entry>
   <entry>
     <id>https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9</id>
-    <title>Warioworld v0.1.9.post3</title>
+    <title>Warioworld v0.1.9.post4</title>
     <updated>2026-03-27T23:00:30+00:00</updated>
     <author>
       <name>moester_</name>
@@ -1422,5 +1069,349 @@ general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/
 setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
 source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
     <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SWCreeperKing/Slimipelago/releases/tag/v0.2.3</id>
+    <title>Slime Rancher v0.2.3</title>
+    <updated>2026-03-29T18:59:13+00:00</updated>
+    <author>
+      <name>SW_CreeperKing</name>
+    </author>
+    <content>- [ApWorld] Minor fixes to logic and location names, there are 2 *possible* incompatible locations from worlds generated&#13;
+  with v0.2.2 due to them previously having an extra space&#13;
+    - Treasure Pod - Glass Desert Western Ruins&#13;
+    - Treasure Pod - Glass Desert Leftside Isle&#13;
+- [Client] (HOPEFULLY) Fixed save errors&#13;
+- [Client] Extended timeout timer from 4s to 60s&#13;
+- [Client] Extended the trap delay range from 30s-60s to 12s-60s&#13;
+- [Client] Fixed a bug where reaching 7Zee lvl 28 would goal regardless of goal type&#13;
+- [Client] Added version number&#13;
+- [Client] Fixed Note Goal being susceptible to collect&#13;
+- [Client] Custom Assets now loads on connect&#13;
+- [Client] Traplink, added support for the following traps:&#13;
+    - Banner, Chaser, Clear Image, Disarm, Explosion, Flip Horizontal, Flip Vertical, Frost, Gas, Help, Hey!, Inverted&#13;
+      Mouse, Mana Drain, Ninja, Person, Reverse Controls, Sandstorm, Teleport, TNT, Tool Swap, Undo, Whirlpool, Zoom In,&#13;
+      Zoom Out&#13;
+- [Client] Forgot to implement the functionality of `Give random traps for unknown traps`&#13;
+- [Client] Made the game tell you when trap linked, and if you have entered an area without an unlock&#13;
+- [Client] Changed how the mod is structured slightly (in preparation for updating to melon 7.2)&#13;
+    - IF YOU ARE UPDATING before running the game delete the `Slimipelago.dll` in the&#13;
+      `Slime Rancher/Mods/SW_CreeperKing.Slimipelago` folder</content>
+    <link href="https://github.com/SWCreeperKing/Slimipelago/releases/tag/v0.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.5-beta</id>
+    <title>Dicey Dungeons v0.2.5b0</title>
+    <updated>2026-03-29T19:12:23+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>## What's Changed&#13;
+* Character replacements for "~", "[", "]", "|", and "@" to prevent breakage.&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.2.4-beta...v0.2.5-beta</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.2.5-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.6</id>
+    <title>Stardew Valley v7.4.4</title>
+    <updated>2026-03-29T19:21:18+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Exempt-Medic (Proofreading)</name>
+    </author>
+    <content>- Fixed sorting on the Dr Seuss Bundle&#13;
+- Fixed an issue where multiplayervision tags could double up&#13;
+- Updated dependencies</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.0</id>
+    <title>Pokemon Crystal v5.4.0</title>
+    <updated>2026-03-29T20:40:38+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+## New Logic Options&#13;
+- **Route 30 Access**: Sets whether the battle on Route 30 ends when talking to Mr. Pokémon or giving the Mystery Egg to Prof. Elm.&#13;
+- **South Kanto Access**: Sets the position of the landslide blocking access to southern Kanto, either Route 19 or Route 21.&#13;
+- **South Kanto Condition**: Sets the condition to remove the landslide, either entering southern Kanto from the unblocked side or restoring power.&#13;
+- **Randomize Pokédex**: Sets whether to include the Pokédex in the randomized item pool, keep it vanilla, or start with it. The Pokédex is required for Dex(count)sanity checks, Pokémon requests and Pokémon trades.&#13;
+&#13;
+## Co-op&#13;
+- **Event Sync**: Certain events which gate progress in the game will now sync between players on the same slot when Remote Items is enabled. These are:&#13;
+  - Number of gyms beaten.&#13;
+  - Elms aide being in Violet Pokécenter after beating Falkner.&#13;
+  - Access to Azalea gym after clearing Slowpoke well.&#13;
+  - Access to Ecruteak gym after releasing the beasts.&#13;
+  - Jasmine being in Olivine gym.&#13;
+  - Access to Mahogany gym after clearing Rocket Base.&#13;
+  - Access to Blackthorn gym after clearing Radio Tower.&#13;
+  - Access to Dragon's Den after beating Clair.&#13;
+  - Blue being in Viridian gym.&#13;
+  - The NPCs returning to the Charcoal Kiln in Azalea after herding Farfetch'd.&#13;
+  - Bill being in Goldenrod after meeting him in Ecruteak.&#13;
+  - Suicune appearing in the overworld, and being able to receive the Eon Mail from Eusine.&#13;
+  - Access to the gift shop in Mahogany Town after clearing Radio Tower.&#13;
+  - Restoring power to Kanto.&#13;
+  - Which Unown letters you can encounter.&#13;
+- **Tracker Slots**: You can now set a "Tracker Slot" in the game options, setting the equivalent option in the tracker will allow you to autotrack only your own map changes when playing a co-op seed.&#13;
+- Fly unlocks are now Plando'd to their original locations when Randomize Fly Unlocks is off and Remote Items is on, so they are shared between slots.&#13;
+&#13;
+## New Traps&#13;
+- **Tutorial Trap**: Triggers the catch tutorial.&#13;
+- **Teleport Trap**: Overworld: Teleports to you to your current spawn point. Battle: Uses Teleport as your next move, this works in trainer battles and will force you to switch out.&#13;
+- **Whirlpool Trap**: Overworld: Spins you around and plays soothing Whirlpool sounds. Battle: Traps you in Whirlpool for 99 turns.&#13;
+- **Explosion Trap**: Overworld: Your first party member faints. Battle: Uses Explosion as your next move.&#13;
+- **Sandstorm Trap**: Overworld: Slows you down for a short time. Battle: Creates a Sandstorm which lasts 99 turns.&#13;
+- **Metronome Trap**: Overworld: Triggers a random move-based trap. Battle: Uses Metronome as your next move.&#13;
+- **Ice Trap**: Makes the floor icy for a short time.&#13;
+&#13;
+## Quality of Life&#13;
+- **Fast Surf**: An in-game option to Surf at Bicycle speed.&#13;
+- **HM Compatibility Override**: An option to override compatibility for specific HMs, for example you can make Fly 100% compatible while all other HMs are 0% compatible (meaning a single species can learn them).&#13;
+- **Move Modernisation**: Allows you to modernise moves to a specific generation from 3-9, choosing buffs only, nerfs only or both.&#13;
+- **Maximum Evolution Level**: Allows specifying the maximum level at which evolutions will start to trigger.&#13;
+- **Base Stats Multiples of 5**: When enabled, attempts to ensure all base stats are multiples of 5 if they are randomized.&#13;
+- **Custom Level Curves**: A set of options which allows defining custom level curves for level scaling to use.&#13;
+- Talking to or calling Prof. Elm will now tell you your goal.&#13;
+- A new page when viewing Pokémon data which shows their base stats and Hidden Power info.&#13;
+- The MORE page in the Pokédex now shows if a Pokémon can be found in the bug catching contest.&#13;
+- Running from the Pokécenter 2F battle will now always succeed.&#13;
+- Blackbelt Kenji on Route 45 will now always be on break when you call him, this was previously random.&#13;
+&#13;
+## Other Option Changes&#13;
+- **Randomize Item Values**: Randomizes the base cost of items, which can affect their buy price and always affects their sell price.&#13;
+- **Enforce Breeding Methods Logic**: Sets whether the game will only allow you to breed according to your Breeding Methods Required setting.&#13;
+- Weights can now be used in TM Plando.&#13;
+- Trap weights have been combined into a single option, the old options are still accepted for backwards compatibility.&#13;
+- Options which accept lists of Pokémon can now accept types, these will resolve dynamically with type randomization.&#13;
+- Options which accept lists of Pokémon can now accept `_Non-legendaries` which resolves to all non-legendary Pokémon.&#13;
+- Move randomization options have been decoupled so they can now all be provided individually.&#13;
+- All Pokédex locations are now in a location group that is just the Pokémon name, for ease of hinting (thanks @Darvitz).&#13;
+- Lock Kanto Gyms is now disabled when level scaling is enabled.&#13;
+&#13;
+## Bug Fixes&#13;
+- Fix all exp calculations being slightly incorrect, this was previously causing some split exp to round to 1 for Pokémon with small exp yield.&#13;
+- Fix battling CAL in Viridian City while never having saved instantly ending the battle and causing weird side effects.&#13;
+- Fix level scaling considering the trainers east of Mount Moon in the same sphere as those in Cerulean and on Route 25.&#13;
+- Fix level scaling not considering restoring power to Kanto as a break in spheres.&#13;
+- Prevent invalid items from being used in YAML options.&#13;
+- Prevent Unown from appearing in the wild if you have goal to set to Unown hunt and you priority the Unown dexsanity location.&#13;
+- Fix not being able to wake Snorlax from the two tiles north of it.&#13;
+- Currency symbols in multiworld item names will now map to the Pokédollar symbol.&#13;
+- Fix a generation failure when forcing sphere 1 starters in combination with the Slotlock APWorld.&#13;
+- Only queue a single deathlink when receiving multiple.&#13;
+- The Pokécenter 2F battle will no longer interact with deathlink.&#13;
+- Map `É` in item and player names to `é` ingame, instead of `?`.&#13;
+- Fix fishing encounters on Routes 12, 13 and 32 not appearing in the MORE pages of the Pokédex.&#13;
+- Fix music being inconsistent between loading a save while on the bicycle and getting on the bicycle when music was completely random.&#13;
+- Fix a softlock when receiving a trainer phone call immediately after using Surf in the overworld.&#13;
+- Prevent shop items from being purchasable for below their sell price when set to `item_price`.&#13;
+- Fix Pokédex search returning incorrect results if left or right were input while the cursor was on Search.&#13;
+- Pressing A in Pokédex search while selecting a move now moves the cursor to Search instead of changing the selected move.&#13;
+- Fix Suicune in Cianwood transforming into the player sprite when exiting the building near it.&#13;
+&#13;
+## Miscellaneous&#13;
+- The Everstone given by Professor Elm after hatching the Togepi egg is now a check, it requires you to show him the species that hatched from the egg, or anything that evolves from it (thanks @snowflav-goob).&#13;
+- Cal in Viridian Trainer House is now a trainersanity check, he is logically locked in the same way as Kanto gyms.&#13;
+- Enabling Apricorns for Shopsanity but not randomizing berry trees will not add the Apricorns to the item pool, their logical source is now their original trees.&#13;
+- New phone traps.&#13;
+- Fiore is now a possible region for hint phone traps (thanks @snowflav-goob).&#13;
+- HM Compatibility is now printed to the spoiler log for HMs that fewer than 20% of Pokémon can learn.&#13;
+- :3</content>
+    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.17</id>
+    <title>Tevi v1.4.17</title>
+    <updated>2026-03-29T21:37:05+00:00</updated>
+    <author>
+      <name>BlackSoulKnight</name>
+    </author>
+    <content>## Changelog&#13;
++ Plando fix for locations that required Orb 3&#13;
++ Start inventory + non randomized upgrades location count fixed</content>
+    <link href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.4.17"/>
+  </entry>
+  <entry>
+    <id>https://github.com/The1stBurb/EvolveAPWorld/releases/tag/v0.3.14</id>
+    <title>evolve_v0.3.14 v0.3.14</title>
+    <updated>2026-03-29T21:42:15+00:00</updated>
+    <author>
+      <name>The1stBurb</name>
+    </author>
+    <content># Evolve Incremental v0.3.14&#13;
+&#13;
+Free - Unstable - APWorld Only&#13;
+&#13;
+[client](&lt;https://the1stburb.github.io/Evolve&gt;) | [apworld](&lt;https://github.com/the1stburb/EvolveAPWorld&gt;)&#13;
+&#13;
+# Warning&#13;
+&#13;
+This release may be bugged, because of the extent of the changes. Mostly, each genus needs to be gone through, but... that is time consuming.&#13;
+&#13;
+Also i just realized that i completely forgot to make the new options do things on the client...&#13;
+&#13;
+### Do I need to redownload the APWold?&#13;
+&#13;
+Yes, but it might be bugged.&#13;
+&#13;
+## APWorld&#13;
+- Added a new option for choosing your genus, and&#13;
+- Changed the way locations are added, so that genuses with different tech trees dont have impossible locations. - v0.3.12&#13;
+- Fixed Location: Gantry Cranes not triggering - v0.3.13&#13;
+&#13;
+&#13;
+## Client&#13;
+- Fixed Power Bonus and Malus not having an effect. - v0.2.7&#13;
+- Resource Bonus giving NaN amount for Crafting Materials (twice) - v0.2.8&#13;
+- Fanaticism not working when no previous race selected. - v0.2.9&#13;
+- Chat Message showing the wrong player (yourself) giving you items, and then duplicating the message - v0.2.11&#13;
+- Unlocking (most) species, so they can be selected - v0.2.12</content>
+    <link href="https://github.com/The1stBurb/EvolveAPWorld/releases/tag/v0.3.14"/>
+  </entry>
+  <entry>
+    <id>https://github.com/AllPoland/unbeatAP/releases/tag/v0.3.0-alpha</id>
+    <title>UNBEATABLE Arcade v0.3.0a0</title>
+    <updated>2026-03-29T22:31:42+00:00</updated>
+    <author>
+      <name>AllPoland</name>
+    </author>
+    <content>This update brings compatibility with UNBEATABLE version 1.8.2, which broke the mod due to a Unity Engine update.&#13;
+&#13;
+Additionally, some new stuff was added:&#13;
+- Stages are now included in the randomizer, and are filler items just like characters.&#13;
+- Added an in-game console! Use it to send commands, get hints, or chat with your friends while you can't decide which song to play next.&#13;
+- Upgraded to a newer version of MultiClient.Net which should improve stability when connecting to large multiworlds.&#13;
+&#13;
+The client is **compatible** with v0.2.x apworlds! You can update even if you have an ongoing async!&#13;
+The **apworld** is **NOT compatible** with v0.2.x clients!&#13;
+&#13;
+Check [the README](https://github.com/AllPoland/unbeatAP/blob/main/README.md) for installation instructions.&#13;
+&#13;
+The mod and apworld are both still early in development, and are not feature complete nor are there guarantees about stability.&#13;
+&#13;
+**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.&#13;
+&#13;
+Any feedback or ideas are welcome in the "UNBEATABLE (PC)" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!</content>
+    <link href="https://github.com/AllPoland/unbeatAP/releases/tag/v0.3.0-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.03.29</id>
+    <title>YARGAllSetlists v26.3.29</title>
+    <updated>2026-03-29T23:04:33+00:00</updated>
+    <author>
+      <name>GirlWithoutAFairy</name>
+    </author>
+    <content>This release includes version 1.0 of the Guitar Hero World Tour apworld as well as some changes made to every other apworld in this branch.&#13;
+&#13;
+There is now a provided .zip file containing all of the metadata you need to make your songs work. No more manually editing the text files. I have adjusted the metadata in all of the games I have setup thus far. Your existing metadata may not match the new version and you may need to update some of your songs. Refer to the readme file if you get confused. You will NOT need to create new rips.&#13;
+&#13;
+# Guitar Hero World Tour Release&#13;
+&#13;
+Includes the 86 songs found on the retail disc, with an option to enable the Guitar Battles. Toggle "GHWT Guitar Battles" in the "Enabled Setlists" option.&#13;
+&#13;
+# Guitar Hero 1 version 1.2&#13;
+&#13;
+Significant metadata changes were made to most of the setlist. You may need to download the metadata zip file. &#13;
+&#13;
+The "Guitar Hero 1 Hidden Songs" setlist has been renamed to "GH1 Hidden Songs"&#13;
+&#13;
+# Rock Band 3 version 1.1&#13;
+&#13;
+Only a couple songs had changes made to their metadata. You will likely be able to get by with just download the individual files directly from the repo.&#13;
+&#13;
+"Oye Mi Amor" has been made optional due to some versions of the retail disc not ripping the song properly. It is now toggleable within the "Enabled Setlists" option as "RB3 Oye Mi Amor"&#13;
+&#13;
+# All Setlists version 1.1&#13;
+&#13;
+- Added YARN Request Pack 1&#13;
+- Added Guitar Hero World Tour&#13;
+- Added GHWT Guitar Battles&#13;
+- Added the changes made in the other apworlds</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.03.29"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.2</id>
+    <title>Vampire Survivors v0.3.2</title>
+    <updated>2026-03-29T23:42:38+00:00</updated>
+    <author>
+      <name>SW_CreeperKing</name>
+    </author>
+    <content>- [ApWorld] Added Yaml option: Include Arcana Enemies in Enemy Sanity, `enemysanity_arcana_enemies`&#13;
+- [ApWorld] Added Yaml option: Character Limiter, `character_pool_size`&#13;
+- [ApWorld] Added Yaml option: Stage Limiter, `stage_pool_size`&#13;
+- [ApWorld] Fixed Genya being listed as a base character&#13;
+- [ApWorld] Fixed Stage Hunt requiring 1 less stage than what you had to goal&#13;
+- [Client] Extended the deathlink grace period to be 10s&#13;
+  - if you want it extended, turn off deathlink until you get better at the game&#13;
+- [Client] Fixed beating Eudai not registering</content>
+    <link href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.2.0</id>
+    <title>MetroCUBEvania v0.2.0</title>
+    <updated>2026-03-29T23:52:23+00:00</updated>
+    <author>
+      <name>ap-metrocubevania</name>
+    </author>
+    <content>## What's Changed&#13;
+* Convert Inline JS to typescript by @brev95 in https://github.com/ap-metrocubevania/ap-metrocubevania/pull/6&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/ap-metrocubevania/ap-metrocubevania/compare/v_0.1.3...v_0.2.0</content>
+    <link href="https://github.com/ap-metrocubevania/ap-metrocubevania/releases/tag/v_0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-2</id>
+    <title>Sonic Adventure DX v1.2.1rc0.post0</title>
+    <updated>2026-03-30T02:37:16+00:00</updated>
+    <author>
+      <name>ClassicSpeed</name>
+    </author>
+    <content>## [v1.2.1 pre-release 2] - 2026-03-29&#13;
+&#13;
+### Changed:&#13;
+&#13;
+- Updated APCpp to the latest version to improve connection speed and stability.&#13;
+- Entrances used are now written to data storage in bulk and no longer increase loading times.&#13;
+&#13;
+### Fixed:&#13;
+&#13;
+- Fixed crash when exiting the Chao Garden from the pause menu.&#13;
+- Fixed crash when using the Surge the Tenrec mod.&#13;
+- Added EC Deck and EC Bridge as starting locations.&#13;
+- Fixed some entrances being revealed early.&#13;
+- Fixed inconsistent emblem requirements between Deck and EC Inside.</content>
+    <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MacH8s/Narcopelago/releases/tag/v3.5.4</id>
+    <title>Schedule I v3.5.4</title>
+    <updated>2026-03-30T03:36:19+00:00</updated>
+    <author>
+      <name>MacH8s</name>
+    </author>
+    <content>Rank Bagman III&#13;
+Rank Shot Caller I&#13;
+&#13;
+Items added:&#13;
+Golden m1911&#13;
+Golden m1911 unlock&#13;
+big sprinkler&#13;
+big sprinkler unlock</content>
+    <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.5.4"/>
   </entry>
 </feed>
