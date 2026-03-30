@@ -183,7 +183,7 @@ fg.author({"name": "Silasary"})
 fg.updated(datetime.datetime.now(tz=datetime.UTC))
 for w in recent_worlds:
     stem = os.path.splitext(os.path.basename(w["download_url"]))[0]
-    title = f"{meta[stem]['game'] or stem} v{w['world_version']}"
+    title = f"{meta[stem].get('game', stem) or stem} v{w['world_version']}"
     link = w.get("html_url", w["download_url"])
     description = w.get("description", "")
     # description = description.replace('\n', '<br/>\n')
@@ -196,7 +196,7 @@ for w in recent_worlds:
     fe.link(href=link)
     fe.content(description)
     fe.updated(w["created_at"])
-    if meta[stem]["authors"]:
+    if meta[stem].get("authors"):
         fe.author([{"name": author} for author in meta[stem]["authors"]], replace=True)
     else:
         org = urllib.parse.urlparse(link).path.split("/")[1]
