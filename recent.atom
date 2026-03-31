@@ -2,47 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-31T06:36:18.055036+00:00</updated>
+  <updated>2026-03-31T12:20:43.968783+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/LuxMake/Archipelago-KHDDD/releases/tag/0.0.6</id>
-    <title>Kingdom Hearts Dream Drop Distance v0.0.6</title>
-    <updated>2026-03-27T21:38:22+00:00</updated>
-    <author>
-      <name>LuxMake</name>
-    </author>
-    <content># Kingdom Hearts Dream Drop Distance Archipelago 0.0.6&#13;
-&#13;
-*This version has **breaking** changes. Please do not update to this version if you have a run ongoing.*&#13;
-### APWorld Changes&#13;
-- Fixed several logic issues in Traverse Town&#13;
-- Made socket non-blocking for better Linux compatibility&#13;
-- Defeating Ansem II now awards 3 checks (one for each boss in the gauntlet)&#13;
-&#13;
-### AP Companion Changes&#13;
-- New AP Item Icon (Thanks Halrondo!)&#13;
-***NEW QOL***&#13;
-- Added a Report that details your Go Mode conditions and whether you have achieved them (can be found in Reports -&gt; Glossaries)&#13;
-- All save points in a world will unlock after clearing that world&#13;
-- Available Flowmotion is now accurately reflected in action command inventory&#13;
-- A world item for TT2 now appears in inventory when it's accessible&#13;
-- Active Spirits are now affected by the EXP Multiplier&#13;
-- Spirit Rank now randomized when auto-crafting&#13;
-- Obtained Exp now restored after death&#13;
-*** BUG FIXES***&#13;
-- Reworked some under-the-hood stuff for stability and performance (this involves making certain checks much less frequent, so please report if you encounter any oddities!)&#13;
-- Reworked EXP Multiplier to prevent early level up checks&#13;
-- Removed purgatory (maybe finally?)&#13;
-- Flick Rush option no longer sends the player to Traverse Town&#13;
-- Fixed a bug where certain rooms became inaccessible&#13;
-- Fixed a bug where action commands could not be equipped&#13;
-- Fixed an issue where spirits sent several level up prompts&#13;
-- Other minor fixes</content>
-    <link href="https://github.com/LuxMake/Archipelago-KHDDD/releases/tag/0.0.6"/>
-  </entry>
   <entry>
     <id>https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9</id>
     <title>Warioworld v0.1.9.post4</title>
@@ -1216,5 +1180,40 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
     </author>
     <content>* Fixed some Fishsanity bugs</content>
     <link href="https://github.com/silasary/APxiv/releases/tag/0.27.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/tag/V0.3.2</id>
+    <title>Hunie Cam Studio v0.3.2</title>
+    <updated>2026-03-31T07:53:25+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- fixed error with archipelago seeds starting with 0&#13;
+- made tutorials auto skip after collecting initial girl&#13;
+- fixed APWorld version not displaying correctly&#13;
+&#13;
+V0.3.1 changelog&#13;
+- (Client) Added a check to see if your connecting from the same server as the last connection to allow for continuing a save (NOTE will only work on saves started after updating)&#13;
+&#13;
+V0.3.0 changelog&#13;
+- fixed client not sending completion to server&#13;
+- fixed "$goal" working before reaching day 22 and not working afterwards&#13;
+&#13;
+&#13;
+&#13;
+INSTALLATION INSTRUCTIONS:&#13;
+&#13;
+CLIENT:&#13;
+- Have Hunie Cam Studio Installed&#13;
+- Download Hunie Cam Studio Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Hunie Cam Studio Archipelago Client v#.#.#.zip" to the directory where "HunieCamStudio.exe" is&#13;
+&#13;
+APWORLD (needed for generating archieplago game):&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Spirit Valley APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Hunie Cam Studio APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recomended)Select "Generate Template Options" to generate default Hunie Cam Studio YMAL</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/tag/V0.3.2"/>
   </entry>
 </feed>
