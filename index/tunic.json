@@ -6,48 +6,6 @@
   "manifest_fields": [],
   "supported": true,
   "versions": {
-    "4.2.0": {
-      "created_at": "2025-03-14T22:48:38Z",
-      "description": "# The latest bells and ~~whistles~~ fuses\r\n\r\n### Backwards compatibility with existing seeds: \r\n- Archipelago: \u2705\r\n- Single player: \u274c\r\n\r\n## Shuffle Fuses\r\n- Turns all of the fuses into items that, when found, will restore power to that particular fuse/power line.\r\n  - Finding a fuse item will immediately register that fuse as having power, regardless of if the physical fuse itself has been activated/prayed to.\r\n    - If the fuse is part of a series of fuses, all previous fuses on the path must also be found for it to be fully powered. (Ex. Finding the fuse outside of the Cathedral will not immediately open the Cathedral unless the other two Swamp fuses have also been found)\r\n  - Praying at a fuse will instead count as a check, and does not affect the power. Fuses that are not the first in a sequence of fuses still require power from finding the fuse items in order to activate their checks,\r\n- With this mode, certain areas can become logically accessible in ways they couldn't before, such as entering Ziggurat or Library via the teleporters, or entering Cathedral without Laurels or Prayer.\r\n\r\n## Shuffle Bells\r\n- Turns the East and West Bells into items that must be found in order to open the Sealed Temple. Ringing the bells counts as checks.\r\n\r\n## Archipelago Updates\r\n### Trap Link (by @ScipioWright)\r\n- Send a trap back to other players when you receive a Fool Trap. Anyone else that is playing at the same time with Trap Link enabled will receive the same trap as the player who sent it (or a similar trap where applicable if not playing Tunic).\r\n\r\n### tunic.apworld changes\r\n- Added the options for shuffled fuses and shuffled bells to the apworld/yaml.\r\n- Various logic bugfixes.\r\n\r\n### Archipelago-specific fixes\r\n- Coin toss checks done while disconnected from Archipelago will now be marked to send on next reconnect.\r\n- Fixed a bug where siege engine would get stuck during the death cutscene if the item on his head was already collected.\r\n- Previously processed items are now skipped instantly when re-connecting to an in progress Archipelago save.\r\n  - This was mostly only noticeable with grass rando, where it would sometimes take a long time to start receiving items again after loading into the game.\r\n- Updated Archipelago.MultiClient.Net to 6.6.0\r\n \r\n## Enemy Randomizer Updates\r\n### Random Enemy Sizes\r\n- Randomly scales enemy size up or down (from 0.25x to 1.75x).\r\n- This option is global and works regardless of if the enemy rando is enabled or not.\r\n\r\n### Extra Enemies\r\n- The \"Extra Enemies\" option is now global and works even if randomized enemies are disabled. If enemies aren't randomized it will enable NG+ and nighttime enemies that appear throughout the game.\r\n\r\n## Misc Changes\r\n- Interacting with The Heir for the first time with all pages will now prompt you to choose an ending, instead of forcing the good ending.\r\n- Added a new fool trap type \ud83d\udd04\r\n- Gave Terry a hat on his birthday \ud83c\udf89\r\n- Another thing in a place somewhere probably\r\n\r\n## Known Issues\r\n- The game may sometimes crash immediately upon defeating The Heir. There currently isn't a known cause or fix for this.\r\n- Single Player Entrance Randomizer may produce unbeatable seeds",
-      "download_url": "https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.0/tunic.apworld",
-      "has_manifest": false,
-      "hash_sha256": "de1f775f102c98c487473cb0ecbe5c908715264b59f6d665533baf14ecd0b411",
-      "html_url": "https://github.com/silent-destroyer/tunic-randomizer/releases/tag/4.2.0",
-      "size": 555784,
-      "source_url": "https://api.github.com/repos/silent-destroyer/tunic-randomizer",
-      "tag": "4.2.0",
-      "title": "Tunic Randomizer 4.2.0",
-      "version_simple": "4.2.0",
-      "world_version": "4.2.0"
-    },
-    "4.2.1": {
-      "created_at": "2025-03-15T22:06:11Z",
-      "description": "# Entrance Rando Bugfix\r\n### Backwards compatibility with existing seeds: \r\n- Archipelago: \u2705\r\n- Single player: \u274c\r\n\r\n# Changes\r\n- Fixed a bug with Entrance Rando in the Single Player randomizer that could cause unbeatable seeds.\r\n- Added new ghost fox spawns in Quarry and Lower Ziggurat (entrance rando). (by @ScipioWright)",
-      "download_url": "https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.1/tunic.apworld",
-      "has_manifest": false,
-      "hash_sha256": "de1f775f102c98c487473cb0ecbe5c908715264b59f6d665533baf14ecd0b411",
-      "html_url": "https://github.com/silent-destroyer/tunic-randomizer/releases/tag/4.2.1",
-      "size": 555784,
-      "source_url": "https://api.github.com/repos/silent-destroyer/tunic-randomizer",
-      "tag": "4.2.1",
-      "title": "Tunic Randomizer 4.2.1",
-      "version_simple": "4.2.1",
-      "world_version": "4.2.1"
-    },
-    "4.2.2": {
-      "created_at": "2025-03-18T21:52:52Z",
-      "description": "### Backwards compatibility with existing seeds: \r\n- Archipelago: \u2705\r\n- Single player: \u274c\r\n\r\n# Changes\r\n- Fixed a bug with the fairy seeking spell that was accidentally introduced in Version 4.2.0. (@ScipioWright)\r\n- Single Player Randomizer: Fixed a bug that could cause inaccurate logic if a non-hexagon quest seed was played after a hexagon quest seed in the same session.\r\n- Archipelago: Added Trap Link conversions for more non-Tunic trap types. (@ScipioWright)",
-      "download_url": "https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.2/tunic.apworld",
-      "has_manifest": false,
-      "hash_sha256": "de1f775f102c98c487473cb0ecbe5c908715264b59f6d665533baf14ecd0b411",
-      "html_url": "https://github.com/silent-destroyer/tunic-randomizer/releases/tag/4.2.2",
-      "size": 555784,
-      "source_url": "https://api.github.com/repos/silent-destroyer/tunic-randomizer",
-      "tag": "4.2.2",
-      "title": "Tunic Randomizer 4.2.2",
-      "version_simple": "4.2.2",
-      "world_version": "4.2.2"
-    },
     "4.2.3": {
       "created_at": "2025-04-01T22:58:17Z",
       "description": "### Backwards compatibility with existing seeds: \r\n- Archipelago: \u2705\r\n  - The tunic.apworld file was updated in this version.\r\n- Single player: \u2705(4.2.2 only)\r\n\r\n## Changes\r\n- Removed the softlock-escape teleporters in ziggurat/library with shuffled fuses. Players will simply be given the Torch instead.\r\n  - These ended up just being more confusing than they were helpful and with too many edge cases to make them worth maintaining.\r\n\r\n## tunic.apworld changes\r\n- Fuse shuffle: Cathedral Elevator fuse no longer marked as progression if entrance rando is on.\r\n- Adjusted rules for being able to pray at Atoll/Swamp fuses to match between fuse shuffle and non-fuse shuffle\r\n\r\n## Known Issues\r\n- Entrance rando might not guarantee all rooms to be accessible in the single player rando, and in rare cases the heir might not be reachable. It is recommended to use Archipelago for entrance rando until the next release.",

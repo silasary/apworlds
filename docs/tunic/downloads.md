@@ -20,12 +20,3 @@
 #### v4.2.3
 - <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.3/tunic.apworld">https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.3/tunic.apworld</a>
 
-#### v4.2.2
-- <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.2/tunic.apworld">https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.2/tunic.apworld</a>
-
-#### v4.2.1
-- <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.1/tunic.apworld">https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.1/tunic.apworld</a>
-
-#### v4.2.0
-- <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.0/tunic.apworld">https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.0/tunic.apworld</a>
-
