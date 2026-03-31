@@ -1,9 +1,12 @@
 # Gato Roboto B-Side
 
 ## Latest
-- <a href="https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.6.0/gatoroboto_b_side.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.6.1/gatoroboto_b_side.apworld">Latest Version (0.6.1)</a>
 
 ## All Versions
+
+#### v0.6.1
+- <a href="https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.6.1/gatoroboto_b_side.apworld">https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.6.1/gatoroboto_b_side.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.6.0/gatoroboto_b_side.apworld">https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.6.0/gatoroboto_b_side.apworld</a>
