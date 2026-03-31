@@ -21,3 +21,9 @@ Yes, but it might be bugged.
 - Fanaticism not working when no previous race selected. - v0.2.9
 - Chat Message showing the wrong player (yourself) giving you items, and then duplicating the message - v0.2.11
 - Unlocking (most) species, so they can be selected - v0.2.12
+
+### Checklist
+- Made sure the APWorld Loads - No
+- Made sure the APWorld tests pass - Yes
+- Made sure the Client works - Yes
+- Made sure all APWorld features are added to the Client - No

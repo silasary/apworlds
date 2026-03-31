@@ -12,7 +12,7 @@
 - Extract it into the root of your game directory. Your folder should look something like this:
 ![img.png](files.png)
 - ***Linux only, including Steam Deck:*** Add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your launch options, like so:
-![img.jpg](steamdeckinstallation.png)
+![img.jpg](steamdeckinstallation.jpg)
 
 ## How to play
 On the game's main menu, it should prompt you for slot details, add the player name and room link and click "connect".

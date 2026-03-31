@@ -4,7 +4,7 @@ Yellow Taxi Goes Vroom is a trippy arcade platformer ready to take you on a craz
 
 
 ## Downloads
-- <a href="https://github.com/soopercool101/Archipelago/releases/download/v0.2.0/yellowtaxi.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/YTGV.v0.3.0/yellowtaxi.apworld">Latest Version (0.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -258,6 +258,34 @@
       "title": "AP XIV v0.26.2",
       "version_simple": "0.26.2",
       "world_version": "0.26.2"
+    },
+    "0.27.0": {
+      "created_at": "2026-03-31T01:06:05Z",
+      "description": "* Added The Merchant's Tale\r\n* Changed mcguffin count to be dynamic.  The yaml setting is now a percentage.\r\n* Changed Dzemael Darkhold and The Howling Eye to be Level 44 instead of 46 (The minimum level to enter, rather than the level you get synced down to).  This puts them in the lvl45 bracket instead of the already crowded lvl50 bracket.\r\n\r\n* A whole lot of optimizations\r\n* Unused progression items are now removed from the pool.  No raid keys if you're not doing raids, no zone access if there's no reason to go there.  This was a huge amount of work under the hood, but should lead to a better experience.\r\n* Removed some redundant yaml settings\r\n* Updated to use RuleBuilder if you're on 0.6.7 or later (This is very good for generation speed)\r\n* If you generate a particularly small world, the generator can now choose less than 5 progression jobs.\r\n* Better error messages when you make a yaml that is physically unplayable (The fuzzer figured out that you can submit a yaml where your first check is in Bozja)",
+      "download_url": "https://github.com/silasary/APxiv/releases/download/0.27.0/ffxiv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "08184379fc358f99eab5194d6b96b62b6e8124e85c6064af9e31cbbffa6d0f33",
+      "html_url": "https://github.com/silasary/APxiv/releases/tag/0.27.0",
+      "size": 130731,
+      "source_url": "https://api.github.com/repos/silasary/APxiv",
+      "tag": "0.27.0",
+      "title": "AP XIV v0.27.0",
+      "version_simple": "0.27.0",
+      "world_version": "0.27.0"
+    },
+    "0.27.1": {
+      "created_at": "2026-03-31T04:44:16Z",
+      "description": "* Fixed some Fishsanity bugs",
+      "download_url": "https://github.com/silasary/APxiv/releases/download/0.27.1/ffxiv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ee6c6e412c6708c22077e91552b0a868b8db29b0ad0d5e2ad23e88eb85780cb7",
+      "html_url": "https://github.com/silasary/APxiv/releases/tag/0.27.1",
+      "size": 136980,
+      "source_url": "https://api.github.com/repos/silasary/APxiv",
+      "tag": "0.27.1",
+      "title": "AP XIV v0.27.1",
+      "version_simple": "0.27.1",
+      "world_version": "0.27.1"
     }
   }
 }

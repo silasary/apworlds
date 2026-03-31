@@ -2,105 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-31T00:19:52.877911+00:00</updated>
+  <updated>2026-03-31T06:36:18.055036+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.3</id>
-    <title>Ratchet &amp; Clank 2 v0.6.4.3</title>
-    <updated>2026-03-27T18:06:32+00:00</updated>
-    <author>
-      <name>Evilwb</name>
-    </author>
-    <author>
-      <name>JacobMIX</name>
-    </author>
-    <content>Testing Dynamic PINE ports for multi PCSX2 instance support.&#13;
-Also adds auto connection functionally to the client using patch data, and added the manifest json.&#13;
-Based on: https://github.com/evilwb/APRac2/releases/tag/v0.6.4&#13;
-v0.6.4.2: Now also has UT integrated, and yaml-less support. Works as long as UT is installed. Also fixed some first person logic issues.&#13;
-Planned: More UT features. "Glitch" logic. Internal or external map. Auto map tab switching. Community suggested logic changes.&#13;
-v0.6.4.3 Actually made UT work, and added world version to slot data so can see if client isn't matching multiworld.&#13;
-&#13;
-### Setup&#13;
-You need every RaC2 option in your `host.yaml` setup. That means:  &#13;
-`iso_file` to a valid vanilla iso in your Archipelago directory (should be already from normal setup)  &#13;
-`iso_start` to your PCSX2 exe (Make sure to use `/`)  &#13;
-`game_ini` to a game settings file in your PCSX2's gamesettings folder.  &#13;
-(Usually `%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini`)&#13;
-&#13;
-Example:&#13;
-```yaml&#13;
-rac2_options:&#13;
-  # File name of the Ratchet &amp; Clank 2 ISO&#13;
-  iso_file: "Ratchet &amp; Clank - Going Commando (USA) (v1.01).iso"&#13;
-  # Set this false to never autostart an iso (such as after patching),&#13;
-  # Set it to true to have the operating system default program open the iso&#13;
-  # Alternatively, set it to a path to a program to open the .iso file with (like PCSX2)&#13;
-  iso_start: "C:/Emulators/(PS2) PCSX2/pcsx2-qt.exe"&#13;
-  # Set to file path to an existing PCSX2 game setting INI file to have the patcher&#13;
-  # create an appropriately named INI with the rest of the patch output. This can be used to&#13;
-  # allow you to use you own custom PCSX2 setting with patched ISO.&#13;
-  game_ini: "%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini"&#13;
-```&#13;
-&#13;
-Game settings ini example:&#13;
-```ini&#13;
-[EmuCore]&#13;
-EnablePINE = true&#13;
-PINESlot = 28011&#13;
-&#13;
-[Achievements]&#13;
-Enabled = false&#13;
-&#13;
-[MemoryCards]&#13;
-Slot1_Enable = true&#13;
-Slot2_Enable = false&#13;
-Slot1_Filename = APgames.ps2&#13;
-```&#13;
-Recommended you use your settings for vanilla RaC2. But you can make a copy with specific edits.&#13;
-So you can set an AP specific memory card like in the example above. (You don't need to add PINE settings)&#13;
-&#13;
-For normal setup if you haven't already. Check [GitHub](&lt;https://github.com/evilwb/APRac2/blob/main/docs/setup_en.md&gt;), and [Discord](&lt;https://discord.com/channels/731205301247803413/1325015730218860554/1371288772548755466&gt;).&#13;
-&#13;
-### Start&#13;
-Simply run a `.aprac2` file with Archipelago. (Recommended to set to open `.aprac2` files with Archipelago by default)&#13;
-Or run the client, and use the `/start` command, and then select your desired `.aprac2` file. (Or drag `.aprac2` into the client)&#13;
-Note: You can rename `aprac2` and patched `iso` but they have to have the same name or it'll make another `iso`.&#13;
-(Same way you have to keep `.apsave`, and their `.zip` name the same if hosting locally)&#13;
-&#13;
-Changes: &lt;https://github.com/jacobmix/APRac2/compare/v0.6.4.2...v0.6.4.3?w=1&gt;&#13;
-Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.3?w=1&gt;</content>
-    <link href="https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR4</id>
-    <title>Elder Scrolls Online v0.3.0</title>
-    <updated>2026-03-27T18:54:12+00:00</updated>
-    <author>
-      <name>Spencer2585</name>
-    </author>
-    <content>## Bug Fixes:&#13;
-- Fixed issue with unlocked delves being treated as locked</content>
-    <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.2</id>
-    <title>Mega Man Zero 3 v0.2.2</title>
-    <updated>2026-03-27T19:22:45+00:00</updated>
-    <author>
-      <name>brodieberger</name>
-    </author>
-    <content>Sub Tanks have been implemented!&#13;
-&#13;
-# Changes&#13;
-- Sub Tanks have been implemented as location checks and randomized items.&#13;
-- This update should have performance increases. It turns out you can read multiple slots of memory in one Bizhawk read/write statement. Very cool.&#13;
-- Fixed a bug where having multiple clients running on the same computer could cause the two games to incorrectly share inventory.</content>
-    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/LuxMake/Archipelago-KHDDD/releases/tag/0.0.6</id>
     <title>Kingdom Hearts Dream Drop Distance v0.0.6</title>
@@ -1005,6 +911,52 @@ Yes, but it might be bugged.&#13;
     <link href="https://github.com/The1stBurb/EvolveAPWorld/releases/tag/v0.3.14"/>
   </entry>
   <entry>
+    <id>https://github.com/The1stBurb/EvolveAPWorld/releases/tag/v0.3.15</id>
+    <title>evolve_v0.3.15 v0.3.15</title>
+    <updated>2026-03-29T21:42:15+00:00</updated>
+    <author>
+      <name>The1stBurb</name>
+    </author>
+    <content># Evolve Incremental v0.3.15&#13;
+&#13;
+Free - Unstable - APWorld Only&#13;
+&#13;
+[client](&lt;https://the1stburb.github.io/Evolve&gt;) | [apworld](&lt;https://github.com/the1stburb/EvolveAPWorld&gt;)&#13;
+&#13;
+# Warning&#13;
+&#13;
+This release may be bugged, because of the extent of the changes. Mostly, each genus needs to be gone through, but... that is time consuming.&#13;
+&#13;
+&#13;
+### Do I need to redownload the APWold?&#13;
+&#13;
+Yes, but it might be bugged.&#13;
+&#13;
+## APWorld&#13;
+- Added a new option for choosing your genus, and&#13;
+- Changed the way locations are added, so that genuses with different tech trees dont have impossible locations; and&#13;
+- Added new Options: Death Percent, Genus and Universe; and&#13;
+- Removed Option: planet - v0.3.12&#13;
+- Fixed Location: Gantry Cranes not triggering - v0.3.13&#13;
+&#13;
+&#13;
+## Client&#13;
+- Fixed Power Bonus and Malus not having an effect. - v0.2.7&#13;
+- Resource Bonus giving NaN amount for Crafting Materials (twice) - v0.2.8&#13;
+- Fanaticism not working when no previous race selected. - v0.2.9&#13;
+- Chat Message showing the wrong player (yourself) giving you items, and then duplicating the message - v0.2.11&#13;
+- Unlocking (most) species, so they can be selected - v0.2.12&#13;
+- Added all the new options - v0.3.14&#13;
+- Added a Stats page when you win because why not - v0.3.15&#13;
+&#13;
+### Checklist&#13;
+- Made sure the APWorld Loads - Yes&#13;
+- Made sure the APWorld tests pass - Yes&#13;
+- Made sure the Client works - Yes&#13;
+- Made sure all APWorld features are added to the Client - Yes</content>
+    <link href="https://github.com/The1stBurb/EvolveAPWorld/releases/tag/v0.3.15"/>
+  </entry>
+  <entry>
     <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.0.4</id>
     <title>NSMBW v0.0.4</title>
     <updated>2026-03-29T22:12:17+00:00</updated>
@@ -1235,5 +1187,34 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
 - [Client] Fixed a bug with 2 missing note locations&#13;
 - [Client] Support for DeathLink Groups</content>
     <link href="https://github.com/SWCreeperKing/Slimipelago/releases/tag/v0.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/APxiv/releases/tag/0.27.0</id>
+    <title>Final Fantasy XIV v0.27.0</title>
+    <updated>2026-03-31T01:06:05+00:00</updated>
+    <author>
+      <name>silasary</name>
+    </author>
+    <content>* Added The Merchant's Tale&#13;
+* Changed mcguffin count to be dynamic.  The yaml setting is now a percentage.&#13;
+* Changed Dzemael Darkhold and The Howling Eye to be Level 44 instead of 46 (The minimum level to enter, rather than the level you get synced down to).  This puts them in the lvl45 bracket instead of the already crowded lvl50 bracket.&#13;
+&#13;
+* A whole lot of optimizations&#13;
+* Unused progression items are now removed from the pool.  No raid keys if you're not doing raids, no zone access if there's no reason to go there.  This was a huge amount of work under the hood, but should lead to a better experience.&#13;
+* Removed some redundant yaml settings&#13;
+* Updated to use RuleBuilder if you're on 0.6.7 or later (This is very good for generation speed)&#13;
+* If you generate a particularly small world, the generator can now choose less than 5 progression jobs.&#13;
+* Better error messages when you make a yaml that is physically unplayable (The fuzzer figured out that you can submit a yaml where your first check is in Bozja)</content>
+    <link href="https://github.com/silasary/APxiv/releases/tag/0.27.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/APxiv/releases/tag/0.27.1</id>
+    <title>Final Fantasy XIV v0.27.1</title>
+    <updated>2026-03-31T04:44:16+00:00</updated>
+    <author>
+      <name>silasary</name>
+    </author>
+    <content>* Fixed some Fishsanity bugs</content>
+    <link href="https://github.com/silasary/APxiv/releases/tag/0.27.1"/>
   </entry>
 </feed>
