@@ -1,9 +1,12 @@
 # Evolve
 
 ## Latest
-- <a href="https://github.com/The1stBurb/EvolveAPWorld/releases/download/v0.3.15/evolve_v0.3.15.apworld">Latest Version (0.3.15)</a>
+- <a href="https://github.com/The1stBurb/EvolveAPWorld/releases/download/v0.3.16/evolve_v0.3.16.apworld">Latest Version (0.3.16)</a>
 
 ## All Versions
+
+#### v0.3.16
+- <a href="https://github.com/The1stBurb/EvolveAPWorld/releases/download/v0.3.16/evolve_v0.3.16.apworld">https://github.com/The1stBurb/EvolveAPWorld/releases/download/v0.3.16/evolve_v0.3.16.apworld</a>
 
 #### v0.3.15
 - <a href="https://github.com/The1stBurb/EvolveAPWorld/releases/download/v0.3.15/evolve_v0.3.15.apworld">https://github.com/The1stBurb/EvolveAPWorld/releases/download/v0.3.15/evolve_v0.3.15.apworld</a>

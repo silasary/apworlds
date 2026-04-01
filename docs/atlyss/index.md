@@ -1,6 +1,8 @@
-# 
+# ATLYSS
 
-
+ATLYSS is a 3D action RPG where you explore dungeons, complete quests, defeat bosses,
+and grow stronger. In Archipelago multiworld, items are scattered across all players&#x27;
+worlds, requiring cooperation to complete everyone&#x27;s goals.
 
 
 ## Downloads
