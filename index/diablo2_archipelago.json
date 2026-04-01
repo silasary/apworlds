@@ -1,0 +1,108 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": "",
+  "github": "https://github.com/solida1987/Diablo-II-Archipelago",
+  "manifest_fields": [],
+  "versions": {
+    "beta-1.0.0": {
+      "created_at": "2026-03-26T12:04:20Z",
+      "description": "# Diablo II Archipelago\r\n\r\nA randomizer mod for Diablo II: Lord of Destruction (1.10f) with [Archipelago](https://archipelago.gg/) multiworld support.\r\n\r\nRandomizes skill unlocks across a quest system spanning all 5 Acts. Complete quests to earn skills from any of the 7 character classes. Play solo with custom settings or connect to an Archipelago multiworld server for cross-game randomization.\r\n\r\n---\r\n\r\n## Features\r\n\r\n- **210 Skills** from all 7 classes (Amazon, Sorceress, Necromancer, Paladin, Barbarian, Druid, Assassin) randomized into a quest reward pool\r\n- **231 Quests** across 5 Acts: Story, Super Unique Hunting, Zone Clears, Exploration, Waypoints, Level Milestones\r\n- **Skill Editor** (F1): Assign unlocked skills to your build with 3 tabs and 10 slots per tab\r\n- **Quest Log** (F2): Track progress with Main/Side quest tabs, scrollbar, and per-difficulty tracking\r\n- **Quest Tracker HUD** (F3): Shows current objectives and goal progress\r\n- **Trap System**: Certain quests spawn dangerous Super Unique monsters near you\r\n- **Reset Points**: Earned from quests, used to reassign skills\r\n- **Tier System**: T1 (Level 1+), T2 (Level 20+), T3 (Level 40+) skill gating\r\n- **Archipelago Integration**: Full multiworld support with item sending/receiving, DeathLink, and goal tracking\r\n- **Configurable Settings**: Quest types, skill pool size, filler distribution, and more\r\n\r\n---\r\n\r\n## Installation\r\n\r\n### Requirements\r\n- Diablo II + Lord of Destruction (original installation required)\r\n- Windows 10 or later\r\n\r\n### Steps\r\n1. Download the latest release ZIP from [Releases](https://github.com/solida1987/Diablo-II-Archipelago/releases)\r\n2. Extract the ZIP anywhere on your computer\r\n3. Run **D2ArchSetup.exe**\r\n4. Click Browse and select your Diablo II installation folder\r\n5. Click Install\r\n6. Launch with **Play Archipelago.exe**\r\n\r\nThe installer copies required files from your Diablo II installation. Your original game is not modified.\r\n\r\n---\r\n\r\n## How to Play\r\n\r\n### Singleplayer\r\n1. Run **Play Archipelago.exe**\r\n2. Select **Singleplayer**\r\n3. Configure game settings (goal scope, quest types, skill pool, filler distribution)\r\n4. Click **Play**\r\n5. Create a new character or continue an existing one\r\n\r\n### Archipelago Multiworld\r\n1. Install the **.apworld** file (found in files/Archipelago/) into your Archipelago installation\r\n2. Generate a multiworld with your YAML settings\r\n3. Host or connect to an AP server\r\n4. Run **Play Archipelago.exe**\r\n5. Select **Archipelago**\r\n6. Enter server address, slot name, and password\r\n7. Click **Play**\r\n\r\nThe console window shows AP connection status and events in real-time.\r\n\r\n---\r\n\r\n## Controls\r\n\r\n| Key | Action |\r\n|-----|--------|\r\n| F1 | Open/Close Skill Editor |\r\n| F2 | Open/Close Quest Log |\r\n| F3 | Toggle Quest Tracker HUD |\r\n| ESC | Close any open panel |\r\n\r\n---\r\n\r\n## AP World Options (YAML)\r\n\r\n| Option | Type | Default | Description |\r\n|--------|------|---------|-------------|\r\n| goal_scope | Choice | full_game | Act 1 only / Acts 1-2 / Acts 1-3 / Acts 1-4 / Full Game |\r\n| difficulty_scope | Choice | normal_only | Normal / Normal+Nightmare / All Three |\r\n| quest_story | Toggle | true | Include story quests |\r\n| quest_hunting | Toggle | true | Include Super Unique hunting quests |\r\n| quest_kill_zones | Toggle | true | Include zone clear quests |\r\n| quest_exploration | Toggle | true | Include area entry quests |\r\n| quest_waypoints | Toggle | true | Include waypoint quests |\r\n| quest_level_milestones | Toggle | true | Include level milestone quests |\r\n| skill_pool_size | 20-210 | 210 | Number of skills in the item pool |\r\n| starting_skills | 1-20 | 6 | Skills unlocked at start |\r\n| filler_gold_pct | 0-100 | 30 | Gold filler weight |\r\n| filler_stat_pts_pct | 0-100 | 15 | Stat point filler weight |\r\n| filler_skill_pts_pct | 0-100 | 15 | Skill point filler weight |\r\n| filler_trap_pct | 0-100 | 15 | Trap filler weight |\r\n| filler_reset_pts_pct | 0-100 | 25 | Reset point filler weight |\r\n| starting_gold | 0-50000 | 0 | Starting gold amount |\r\n| death_link | Toggle | false | Enable DeathLink |\r\n\r\n---\r\n\r\n## Built With\r\n\r\n- [D2MOO](https://github.com/nicodoctor/D2MOO) - Diablo II open-source reimplementation for D2Common, D2Game, and Fog DLLs\r\n- [D2.Detours](https://github.com/nicodoctor/D2.Detours) - DLL patching and injection framework\r\n- [cnc-ddraw](https://github.com/FunkyFr3sh/cnc-ddraw) - Graphics wrapper for windowed mode on modern Windows\r\n- [Archipelago](https://archipelago.gg/) - Cross-game multiworld randomizer framework\r\n\r\n## Credits\r\n\r\n- **solida** - Project lead, game systems, quest design, AP integration\r\n- **D2MOO Team** - Open-source Diablo II reimplementation\r\n- **Archipelago Community** - Multiworld framework and support\r\n- **Diablo II Modding Community** - Research, tools, and documentation\r\n\r\n## License\r\n\r\nThis project is a modification for Diablo II: Lord of Destruction. A legal copy of the original game is required to play.\r\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.0.0/diablo2_archipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "71254d516ec2c8157d34163f346fd30a279e43eff45846ecd8841337355c6b47",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/beta-1.0.0",
+      "size": 14155,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "beta-1.0.0",
+      "title": "beta-1.0.0 - Diablo II Archipelago",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "beta-1.1.0": {
+      "created_at": "2026-03-26T15:59:28Z",
+      "description": "# Diablo II Archipelago\r\n\r\nA randomizer mod for Diablo II: Lord of Destruction (1.10f) with [Archipelago](https://archipelago.gg/) multiworld support.\r\n\r\nRandomizes skill unlocks across a quest system spanning all 5 Acts. Complete quests to earn skills from any of the 7 character classes. Play solo with custom settings or connect to an Archipelago multiworld server for cross-game randomization.\r\n\r\n---\r\n\r\n## Features\r\n\r\n- **210 Skills** from all 7 classes (Amazon, Sorceress, Necromancer, Paladin, Barbarian, Druid, Assassin) randomized into a quest reward pool\r\n- **231 Quests** across 5 Acts: Story, Super Unique Hunting, Zone Clears, Exploration, Waypoints, Level Milestones\r\n- **Skill Editor** (F1): Assign unlocked skills to your build with 3 tabs and 10 slots per tab\r\n- **Quest Log** (F2): Track progress with Main/Side quest tabs, scrollbar, and per-difficulty tracking\r\n- **Quest Tracker HUD** (F3): Shows current objectives and goal progress\r\n- **Trap System**: Certain quests spawn dangerous Super Unique monsters near you\r\n- **Reset Points**: Earned from quests, used to reassign skills\r\n- **Tier System**: T1 (Level 1+), T2 (Level 20+), T3 (Level 40+) skill gating\r\n- **Archipelago Integration**: Full multiworld support with item sending/receiving, DeathLink, and goal tracking\r\n- **Configurable Settings**: Quest types, skill pool size, filler distribution, and more\r\n\r\n---\r\n\r\n## Installation\r\n\r\n### Requirements\r\n- Diablo II + Lord of Destruction (original installation required)\r\n- Windows 10 or later\r\n\r\n### Steps\r\n1. Download the latest release ZIP from [Releases](https://github.com/solida1987/Diablo-II-Archipelago/releases)\r\n2. Extract the ZIP anywhere on your computer\r\n3. Run **D2ArchSetup.exe**\r\n4. Click Browse and select your Diablo II installation folder\r\n5. Click Install\r\n6. Launch with **Play Archipelago.exe**\r\n\r\nThe installer copies required files from your Diablo II installation. Your original game is not modified.\r\n\r\n---\r\n\r\n## How to Play\r\n\r\n### Singleplayer\r\n1. Run **Play Archipelago.exe**\r\n2. Select **Singleplayer**\r\n3. Configure game settings (goal scope, quest types, skill pool, filler distribution)\r\n4. Click **Play**\r\n5. Create a new character or continue an existing one\r\n\r\n### Archipelago Multiworld\r\n1. Install the **.apworld** file (found in files/Archipelago/) into your Archipelago installation\r\n2. Generate a multiworld with your YAML settings\r\n3. Host or connect to an AP server\r\n4. Run **Play Archipelago.exe**\r\n5. Select **Archipelago**\r\n6. Enter server address, slot name, and password\r\n7. Click **Play**\r\n\r\nThe console window shows AP connection status and events in real-time.\r\n\r\n---\r\n\r\n## Controls\r\n\r\n| Key | Action |\r\n|-----|--------|\r\n| F1 | Open/Close Skill Editor |\r\n| F2 | Open/Close Quest Log |\r\n| F3 | Toggle Quest Tracker HUD |\r\n| ESC | Close any open panel |\r\n\r\n---\r\n\r\n## AP World Options (YAML)\r\n\r\n| Option | Type | Default | Description |\r\n|--------|------|---------|-------------|\r\n| goal_scope | Choice | full_game | Act 1 only / Acts 1-2 / Acts 1-3 / Acts 1-4 / Full Game |\r\n| difficulty_scope | Choice | normal_only | Normal / Normal+Nightmare / All Three |\r\n| quest_story | Toggle | true | Include story quests |\r\n| quest_hunting | Toggle | true | Include Super Unique hunting quests |\r\n| quest_kill_zones | Toggle | true | Include zone clear quests |\r\n| quest_exploration | Toggle | true | Include area entry quests |\r\n| quest_waypoints | Toggle | true | Include waypoint quests |\r\n| quest_level_milestones | Toggle | true | Include level milestone quests |\r\n| skill_pool_size | 20-210 | 210 | Number of skills in the item pool |\r\n| starting_skills | 1-20 | 6 | Skills unlocked at start |\r\n| filler_gold_pct | 0-100 | 30 | Gold filler weight |\r\n| filler_stat_pts_pct | 0-100 | 15 | Stat point filler weight |\r\n| filler_skill_pts_pct | 0-100 | 15 | Skill point filler weight |\r\n| filler_trap_pct | 0-100 | 15 | Trap filler weight |\r\n| filler_reset_pts_pct | 0-100 | 25 | Reset point filler weight |\r\n| starting_gold | 0-50000 | 0 | Starting gold amount |\r\n| death_link | Toggle | false | Enable DeathLink |\r\n\r\n---\r\n\r\n## Built With\r\n\r\n- [D2MOO](https://github.com/nicodoctor/D2MOO) - Diablo II open-source reimplementation for D2Common, D2Game, and Fog DLLs\r\n- [D2.Detours](https://github.com/nicodoctor/D2.Detours) - DLL patching and injection framework\r\n- [cnc-ddraw](https://github.com/FunkyFr3sh/cnc-ddraw) - Graphics wrapper for windowed mode on modern Windows\r\n- [Archipelago](https://archipelago.gg/) - Cross-game multiworld randomizer framework\r\n\r\n## Credits\r\n\r\n- **solida** - Project lead, game systems, quest design, AP integration\r\n- **D2MOO Team** - Open-source Diablo II reimplementation\r\n- **Archipelago Community** - Multiworld framework and support\r\n- **Diablo II Modding Community** - Research, tools, and documentation\r\n\r\n## License\r\n\r\nThis project is a modification for Diablo II: Lord of Destruction. A legal copy of the original game is required to play.\r\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.1.0/diablo2_archipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "8ede6836de75d11c086ee0f8b46358b5bc51b93bdfc0f5d1f3f290b58c2f7d63",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/beta-1.1.0",
+      "size": 59031,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "beta-1.1.0",
+      "title": "beta-1.1.0 - Diablo II Archipelago",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
+    },
+    "beta-1.2.0": {
+      "created_at": "2026-03-27T18:05:00Z",
+      "description": "## Diablo II Archipelago beta-1.2.0",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.2.0/diablo2_archipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "41911cdf28c06223085c4ccd161daaf5b84276dc01af0bf8dd806ec69d12226c",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/beta-1.2.0",
+      "size": 29197,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "beta-1.2.0",
+      "title": "beta-1.2.0 - Diablo II Archipelago",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0"
+    },
+    "beta-1.3.0": {
+      "created_at": "2026-03-28T13:13:38Z",
+      "description": "## Diablo II Archipelago beta-1.3.0",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.3.0/diablo2_archipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "4f03cdd055f7ee66d191730fcf1dfc890c5c7c1dbe6d0c6598eadf2f43f6f128",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/beta-1.3.0",
+      "size": 36035,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "beta-1.3.0",
+      "title": "beta-1.3.0 - Diablo II Archipelago",
+      "version_simple": "1.3.0",
+      "world_version": "1.3.0"
+    },
+    "beta-1.4.0": {
+      "created_at": "2026-03-28T20:40:55Z",
+      "description": "## Diablo II Archipelago beta-1.4.0\r\n\r\n### Custom Monsters\r\n- **Treasure Cow**: Custom monster with loot\r\n- Spawns rarely across 36 areas in all 5 acts\r\n- Custom name via patchstring.tbl string table system\r\n- Drops 7 items per kill ???????????\r\n\r\n### XP Multiplier\r\n- **1x to 5x XP slider** in launcher settings\r\n- Divides XP requirements AND increases ExpRatio\r\n\r\n### Shop Shuffle\r\n- **Randomize vendor inventories** across all acts\r\n\r\n### Antivirus Fix\r\n- **Monster shuffle rewritten in C** - no more false positives\r\n\r\n### Bugfixes\r\n- Flamespike hunt removed - does not exist in LoD\r\n- Missing quests added: Cave L2, UG Passage L2, Hole L1/L2\r\n- Menu button repositioned - no longer covers HP bar\r\n- Quickcast crash fix\r\n- Controller skill assignment fix\r\n- Monster shuffle default behavior fix\r\n- .bin cache clearing on every launch\r\n- XP multiplier now divides XP requirements\r\n\r\n### Previous Features\r\n- Zone Explorer game mode with 35 zone keys\r\n- Combined Goal + Difficulty - 15 options\r\n- Customizable keybindings - 18 keys\r\n- Controller support - XInput gamepad\r\n- Per-character settings persistence\r\n- Boss shuffle, monster shuffle, shop shuffle\r\n\r\n### Installation\r\n1. Download and extract the ZIP below\r\n2. **Run D2ArchSetup.exe as Administrator**\r\n3. Browse to your Diablo II folder and click Install\r\n4. Launch with **Play Archipelago.exe**\r\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.4.0/diablo2_archipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "0d9fbb86289207e165b06dfb621bebbb8e1c71030f57e23e5b4f3f2e4cf7250e",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/beta-1.4.0",
+      "size": 39002,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "beta-1.4.0",
+      "title": "beta-1.4.0 - Diablo II Archipelago",
+      "version_simple": "1.4.0",
+      "world_version": "1.4.0"
+    },
+    "beta-1.5.0": {
+      "created_at": "2026-03-29T16:28:27Z",
+      "description": "## Diablo II Archipelago beta-1.5.0\r\n\r\n### Treasure Cows - 28 SuperUnique Bosses\r\n- **28 Treasure Cows** placed across all 5 Acts as SuperUnique bosses with gold names\r\n- Toggle on/off via Treasure Cows checkbox in launcher\r\n- Excluded from Boss Shuffle - always appear as Treasure Cows\r\n- AP option: treasure_cows toggle in YAML\r\n\r\n### SuperUnique Limit Expanded\r\n- D2MOO rebuilt with **2048 SuperUnique slots** (was 66)\r\n- Supports unlimited custom bosses for future content\r\n\r\n### Zone Explorer Fix\r\n- Fixed circular dependency in zone gating logic\r\n- All 6 test configurations generate successfully\r\n- Boss kills no longer placed behind zone keys\r\n\r\n### Quickcast Removed\r\n- Removed entire quickcast system (caused crashes)\r\n- Zone Map moved to F4 (was F5)\r\n\r\n### Bugfixes\r\n- Buffer overflow fixes in d2arch.c\r\n- Flamespike hunt removed (does not exist in LoD)\r\n- Ancients excluded from boss shuffle\r\n- AP bridge: fsync, death link race condition fix\r\n- Monster shuffle restore uses correct CRLF\r\n- patchstring.tbl generated via d2tbl (correct CRC)\r\n\r\n### Previous Features\r\n- Zone Explorer game mode with 35 zone keys\r\n- 210 skills from all 7 classes\r\n- 224+ quests across 5 Acts\r\n- Boss shuffle, monster shuffle, shop shuffle\r\n- XP multiplier 1x-5x\r\n- Controller support\r\n- Expanded inventory/stash/cube\r\n\r\n### Installation\r\n1. Download and extract the ZIP below\r\n2. **Run D2ArchSetup.exe as Administrator**\r\n3. Browse to your Diablo II folder and click Install\r\n4. Launch with **Play Archipelago.exe**\r\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.5.0/diablo2_archipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "5b2965477dc36dd59ad54ecd8cab7802ef68aa8f26d4186fb2ec4f21d627309b",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/beta-1.5.0",
+      "size": 52789,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "beta-1.5.0",
+      "title": "beta-1.5.0 - Diablo II Archipelago",
+      "version_simple": "1.5.0",
+      "world_version": "1.5.0"
+    },
+    "beta-1.5.1": {
+      "created_at": "2026-03-30T09:30:28Z",
+      "description": "## Diablo II Archipelago beta-1.5.1\r\n\r\nBugfix release based on full codebase audit. 12 bugs fixed.\r\n\r\n### Critical Fixes\r\n- **AP Bridge**: Fixed WebSocket dependency missing in packaged build (No module named websockets.asyncio)\r\n- **Save Path**: Fixed save directory detection failing silently - now has 4-level fallback chain with logging\r\n- **SuperUnique Hunts**: Fixed Corpsefire and other hunt kills not registering - added UNITFLAG_ISDEAD check\r\n- **AP Reconnect**: Fixed filler items (gold, stat points, traps) duplicating on reconnect\r\n- **Quest ID Collision**: Fixed duplicate quest ID 57 (Hole Level 1 vs Catacombs Waypoint) - 4 missing locations added\r\n\r\n### Gameplay Fixes\r\n- **Singleplayer Sync**: Gold, stat points, and skill points now show immediately instead of requiring save-exit\r\n- **XP Multiplier**: Fixed counterproductive ExpRatio modification - now correctly divides level thresholds only\r\n- **Assassin Weapons**: Katars (h2h) removed from shops to prevent crash when equipped by non-Assassin classes\r\n- **Skill Points**: Fixed skill points jumping to wrong skills after reload - reinvest now validates against current tree\r\n- **Boss Shuffle**: Improved randomization - retry mechanism ensures 75%+ of bosses actually change position\r\n\r\n### Technical\r\n- Dead monster tracking: circular buffer instead of full reset on overflow\r\n- AP items_received_index: persistent to disk, prevents item loss on bridge restart\r\n- Forward declaration fix for Log() function (compile error prevention)\r\n- Full codebase audit documentation in Research/FULL_CODEBASE_MAP.md\r\n\r\n### Installation\r\n1. Download and extract the ZIP below\r\n2. **Run D2ArchSetup.exe as Administrator**\r\n3. Browse to your Diablo II folder and click Install\r\n4. Launch with **Play Archipelago.exe**\r\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.5.1/diablo2_archipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "b7fdebe3fd5691495ead2dc709cd224b856dcbb6e28d2490af8f129d943ef060",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/beta-1.5.1",
+      "size": 52337,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "beta-1.5.1",
+      "title": "beta-1.5.1 - Diablo II Archipelago",
+      "version_simple": "1.5.1",
+      "world_version": "1.5.1"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": "Salt and Sanctuary",
+  "github": "https://github.com/PixelShake92/Salt-and-Sanctuary-AP",
+  "manifest_fields": [
+    "maximum_ap_version",
+    "minimum_ap_version"
+  ],
+  "versions": {
+    "Alpha_1,1": {
+      "created_at": "2026-03-24T10:44:18Z",
+      "description": "There are no new major features in this release it has a focus on bugfixes from the last 2 weeks. \r\n\r\nBiggest fixes \r\n## Salt Bat should spawn upon player deaths that are not caused by an enemy. \r\nI messed this up when I was adding the new double jump rune code and had to do some very annoying IL edits to fix it up. Basically I track the players last safe location when the game detects a death and spawn a Salt Bat there. \r\n\r\n## Skill Tree vanilla setting functioning correctly. \r\nIf you select to have the skill tree as vanilla it should now let you get your stats and poultice pouches (I missed them in the external considerations). \r\n\r\n## Levers not staying open. \r\nI got several reports of levers closing after being received. That should no longer be the case. The levers that the server has inside its slot data should all initialise upon connecting to the room. \r\n\r\n## ONE NEW FEATURE. \r\nThe Luck Ring (HURRRRD Ring) is an unused item in the game. It does nothing. Well, now when you have it in your inventory pressing F7 will warp to the Cat Merchant shop that has only been accessible with glitches \ud83d\ude24 This shop is incredible having almost every weapon and armour piece available in the game. They are hella expensive so get ready to save up, but it is a way to get the weapons/armour you want each playthrough. \r\n\r\nANY f**K ups lemme know on the Salt and Sanctuary thread in the AP server or open an issue here on git. \r\n\r\n(I know Kismet stone is showing in the wrong location, will fix next release)\r\n\r\n\r\n## GOOD FUN, STAY SALTY EVERYONE!\r\n\r\n",
+      "download_url": "https://github.com/PixelShake92/Salt-and-Sanctuary-AP/releases/download/Alpha_1%2C1/salt_and_sanctuary.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6175bb442267eee013b4f1f5fda43d0e28d84b0fc8555cc3c231b4624532fa1a",
+      "html_url": "https://github.com/PixelShake92/Salt-and-Sanctuary-AP/releases/tag/Alpha_1%2C1",
+      "maximum_ap_version": "0.6.6",
+      "minimum_ap_version": "0.6.6",
+      "size": 69300,
+      "source_url": "https://api.github.com/repos/PixelShake92/Salt-and-Sanctuary-AP",
+      "tag": "Alpha_1,1",
+      "title": "Alpha_1.1 _Release",
+      "version_simple": "1",
+      "world_version": "1"
+    },
+    "First-release": {
+      "created_at": "2026-03-07T23:36:26Z",
+      "description": "First public release. Expect rough edges \u2014 this is an active development build and logic is still being validated through playtesting.\r\n\r\n## What's Randomized\r\n\r\n- **Item pickups** \u2014 all standard item pickups across the world\r\n- **Boss drops** \u2014 items dropped on boss kill\r\n- **Boss locations** \u2014 defeating a boss sends a check\r\n- **Skill tree nodes** \u2014 equipment class unlocks and skill nodes (optional, configurable)\r\n- **Multi-item pickups** \u2014 armor sets and paired items can be split into individual checks (optional)\r\n- **Levers** \u2014 lever pulls are checks; the corresponding lever event is an item in the pool\r\n- **Level-ups** \u2014 levels 1 through 549 can be added as checks in configurable tiers (optional) and this requires extensive game knowledge and grinding. Do not recommend going above 150 at the moment. \r\n- **Kill sanity** \u2014 first kill of each bestiary enemy type is a check (optional)\r\n\r\n## Options\r\n\r\n| Option | Description |\r\n|---|---|\r\n| `skill_tree_randomized` | Off / Skills Only / Full Shuffle |\r\n| `skill_tree_logic_strictness` | Lenient / Normal / Strict |\r\n| `skill_tree_logic_method` | Brands / Boss Count |\r\n| `skill_tree_require_parents` | Require parent nodes to be collected before children unlock |\r\n| `level_sanity` | Off / 50 / 150 / 250 / All 549 |\r\n| `split_multi_item_locations` | Split multi-item pickups into separate checks |\r\n| `kill_sanity` | First-kill checks for all 71 bestiary enemies |\r\n| `include_unspeakable_deep` | Include the one-attempt intro boss (off by default \u2014 read the warning) |\r\n| `fall_damage_reduction` | Normal / Half / None |\r\n\r\n## Known Limitations\r\n- *If an enemy has 2 parts to it (saltnight on horseback for example) then the kill sanity check for the salt knight will trigger upon both dying. The horse takes the initial enemy spawn and the game doesn't know what to do with 2nd so defaults to the enemy bestiary entry.\r\n\r\nWeapons and armour have the internal names on the skill tree. I know about this and will eventually make it share the item names. Just not right now. Its a bit of a pain.  \r\n\r\n*NG+ not implemented.** Level sanity checks above level 80 are gated by The Nameless God and will only be in logic after the final boss. Full NG+ support is planned for a future release.\r\n- **Creed items** are not yet randomized.\r\n- **Shop sanity** is not yet implemented.\r\n- **Logic is still being validated.** Around 75% of the game has been playtested for location and region accuracy. Corrections are ongoing \u2014 if you find a location in the wrong region or an inaccessible check, please open an issue with your seed and spoiler log.\r\n\r\n## Installation\r\n\r\n\r\nSee the setup.md https://github.com/PixelShake92/Salt-and-Sanctuary-AP/blob/main/setup.md \r\n\r\n## Compatibility\r\n\r\n- Salt and Sanctuary PC (Steam) latest update\r\n- Archipelago 0.6.6+\r\n- APWorld version must match the client mod version used to generate your room \u2014 do not mix releases\r\n\r\n\r\n",
+      "download_url": "https://github.com/PixelShake92/Salt-and-Sanctuary-AP/releases/download/First-release/salt_and_sanctuary.apworld",
+      "has_manifest": true,
+      "hash_sha256": "592a1870fba533fff684dcd0802f8cc1ca415191b105a1f8f1f9e92dd53d261c",
+      "html_url": "https://github.com/PixelShake92/Salt-and-Sanctuary-AP/releases/tag/First-release",
+      "maximum_ap_version": "0.6.6",
+      "minimum_ap_version": "0.6.6",
+      "size": 55187,
+      "source_url": "https://api.github.com/repos/PixelShake92/Salt-and-Sanctuary-AP",
+      "tag": "First-release",
+      "title": "Alpha 1.0 release",
+      "version_simple": "1.0",
+      "world_version": "1.0"
+    }
+  }
+}
