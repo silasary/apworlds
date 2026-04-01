@@ -25,6 +25,7 @@ parser.add_argument("--unready", default=False, action="store_true", help="Add w
 parser.add_argument("--ready", default=False, action="store_true", help="Unflag things as Unready")
 parser.add_argument("--scan-forks", default=False, action="store_true", help="Scan forks for worlds")
 parser.add_argument("--spreadsheet", default=False, action="store_true", help="Add worlds from the spreadsheet")
+parser.add_argument("--awesomes-spreadsheet", default=False, action="store_true", help="Add worlds from the spreadsheet")
 parser.add_argument("--allow-uppercase", default=False, action="store_true", help="Allow uppercase letters in filenames")
 parser.add_argument("url", nargs="*", help="URL to add to the index")
 args = parser.parse_args()
@@ -50,11 +51,19 @@ if args.scan_forks:
             page += 1
             forks = repo.fetch(repo.url + "/forks?per_page=100&page=" + str(page))
 
+spreadsheet = None
 if args.spreadsheet:
-    all_rows = []
     tabs = [58422002, 857819707]
+    spreadsheet = "1iuzDTOAvdoNe8Ne8i461qGNucg5OuEoF-Ikqs8aUQZw"
+elif args.awesomes_spreadsheet:
+    # A sheet with a lot more games, but a much lower bar for inclusion.  Many worlds that are probably not playable enough to be discoverable
+    tabs = [0]
+    spreadsheet = "11rQWNdF4dAuVq-bfsECvZnONyJujcp5O6Q_2Strish0"
+
+if spreadsheet:
+    all_rows = []
     for gid in tabs:
-        SPREADSHEET_URL = f"https://docs.google.com/spreadsheets/d/1iuzDTOAvdoNe8Ne8i461qGNucg5OuEoF-Ikqs8aUQZw/export?gid={gid}&format=csv"
+        SPREADSHEET_URL = f"https://docs.google.com/spreadsheets/d/{spreadsheet}/export?gid={gid}&format=csv"
         response = requests.get(SPREADSHEET_URL)
         response.raise_for_status()
         rows = response.text.splitlines()
