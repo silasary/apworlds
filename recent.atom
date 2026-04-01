@@ -2,86 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-03-31T18:22:33.662332+00:00</updated>
+  <updated>2026-04-01T00:19:57.823732+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9</id>
-    <title>Warioworld v0.1.9.post4</title>
-    <updated>2026-03-27T23:00:30+00:00</updated>
-    <author>
-      <name>moester_</name>
-    </author>
-    <content>#  Warioworld Archipelago v0.1.9&#13;
-### Additions&#13;
-&gt; Added RingLink (all coins will count as 1 for balance purposes, you still lose the same amount of coins however)&#13;
-&gt; Added SFX functionality for RingLink&#13;
-&gt; Added PAL support (the Client will also apply a different patch depending on PAL or NTSC)&#13;
-# Fixes&#13;
-&gt; Fixed going into/out of a Sublevel sending a DeathLink to other players&#13;
-&gt; Fixed DeathLink not being received by Wario (no more favourable exchange rates for you sir!)&#13;
-&gt; Fixed miscellaneous checks being given to you when they shouldn't&#13;
-&gt; Fixed Chests randomly spawning without you hitting the Button&#13;
-&gt; Fixed the logic for Clown-a-Round being incorrect (leading to the game thinking you had access when you did not)&#13;
-&gt; Closing the game before the Client can sometimes send random checks and crash the Client&#13;
-&gt; Fixed Client disconnecting when your Coin count goes below 0 &#13;
-# Known Bugs&#13;
-&gt; The most recent item will be given to you again if it is a Filler/Trap item on reloading the savefile (this can softlock you if you have been given the Death Trap last, being sent another item will fix this)&#13;
-&gt; Some checks need to be collected twice to register (this is random and inconsistent, even across savestates)&#13;
-</content>
-    <link href="https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.27</id>
-    <title>Pokemon Black and White v0.3.27</title>
-    <updated>2026-03-28T00:41:53+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <author>
-      <name>SparkyDaDoggo</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-- Fixed `Experience Multiplier` not automatically being set to the value specified in the yaml&#13;
-- Fixed `All Pokémon Seen` not being applied to the save file&#13;
-- Tried fixing a rare bug regarding the PopTracker pack and data storage&#13;
-- Removed `any_badge`/`any_tm_hm` from `Shuffle Badge Rewards`/`Shuffle TM Rewards`&#13;
-  - Old yamls with these choices will instead interpret them as `shuffled`&#13;
-- Removed `Prioritize key item locations` from `Modify Logic`&#13;
-  - Old yamls with this modifier will just ignore it&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
-However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT&#13;
-&#13;
-### Notes regarding the `pokemon_bw_without_maps.apworld` file&#13;
-That version does not contain the submaps for UT auto-tabbing, other than that it's identical to the full apworld.&#13;
-To install it, you have to either double klick it to install or manually rename it to `pokemon_bw.apworld`.&#13;
-It's only a fraction of the size of the full apworld and intended for people who don't use UT, which includes multiworld hosts.</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.27"/>
-  </entry>
-  <entry>
-    <id>https://github.com/functorial/MMLAP/releases/tag/v0.2.5</id>
-    <title>Mega Man Legends v0.2.5</title>
-    <updated>2026-03-28T01:04:46+00:00</updated>
-    <author>
-      <name>functorial</name>
-    </author>
-    <author>
-      <name>aztro</name>
-    </author>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## Bug Fixes&#13;
-- Fixed an issue with 'Rescue shop owners husband' location not releasing when the item was not on the player's slot</content>
-    <link href="https://github.com/functorial/MMLAP/releases/tag/v0.2.5"/>
-  </entry>
   <entry>
     <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.11</id>
     <title>YARG v0.0.11</title>
@@ -1097,7 +1022,7 @@ big sprinkler unlock</content>
   </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.1</id>
-    <title>Total War Warhammer 3 v0.9.1.post2</title>
+    <title>Total War Warhammer 3 v0.9.1.post3</title>
     <updated>2026-03-30T17:14:04+00:00</updated>
     <author>
       <name>jordansds</name>
@@ -1111,6 +1036,8 @@ Added Universal Tracker integration.&#13;
 Added BattleSanity option [Experimental].&#13;
 Added DespoilerSanity option [Experimental].&#13;
 Added missing lizardmen buildings.&#13;
+&#13;
+Exceeding admin capacity now provides increasing debuffs to the economy rather than an instant crippling debuff.&#13;
 &#13;
 Traps/Filler that trade settlements now move the camera to the new settlement so the player knows it's happened.&#13;
 &#13;
@@ -1515,5 +1442,36 @@ _This release is backwards compatible with seeds generated on 5.4.0_</content>
 &#13;
 This list of changes was [auto generated](https://dev.azure.com/arsonassassin/DSAP/_build/results?buildId=150&amp;view=logs).&lt;/details&gt;</content>
     <link href="https://github.com/ArsonAssassin/DSAP/releases/tag/0.1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/tag/v0.2.5</id>
+    <title>Frogmonster v0.2.5</title>
+    <updated>2026-03-31T22:31:49+00:00</updated>
+    <author>
+      <name>RoobyRoo</name>
+    </author>
+    <content>_APWorld version 0.2.5, generated from commit [7871b3a](https://github.com/Rooby-Roo/Archipelago/commit/7871b3a936294a9c745c97f6a14aabc4a6feb9cb)_.&#13;
+&#13;
+A quick fix to Universal Tracker.&#13;
+&#13;
+- Universal Tracker now accounts for the death_link setting set at generation. Yeah, death_link has logical implications in this world. I'm not apologizing for that.</content>
+    <link href="https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/tag/v0.2.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/stubobis1/Archipelago/releases/tag/1.3.2</id>
+    <title>Path of Exile v1.3.2</title>
+    <updated>2026-03-31T23:30:47+00:00</updated>
+    <author>
+      <name>StuBob</name>
+    </author>
+    <content># 1.3.2 patch notes:&#13;
+&#13;
+	&#13;
+## Bug fixes:&#13;
+- Fixed a generation bug where it would only assign one version of your starting weapon.&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/1.3.2...1.3.1</content>
+    <link href="https://github.com/stubobis1/Archipelago/releases/tag/1.3.2"/>
   </entry>
 </feed>
