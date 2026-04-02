@@ -1,9 +1,15 @@
 # Manual_ResidentEvil4_VincentsSin
 
 ## Latest
-- <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.10/manual_residentevil4_vincentssin.apworld">Latest Version (2.0.10)</a>
+- <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.11/manual_residentevil4_vincentssin.apworld">Latest Version (2.0.11)</a>
 
 ## All Versions
+
+#### v2.0.11
+- <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.11/manual_residentevil4_vincentssin.apworld">https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.11/manual_residentevil4_vincentssin.apworld</a>
+
+#### v2.0.10+hotfix1
+- <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.10%2Bhotfix1/manual_residentevil4_vincentssin.apworld">https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.10%2Bhotfix1/manual_residentevil4_vincentssin.apworld</a>
 
 #### v2.0.10
 - <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.10/manual_residentevil4_vincentssin.apworld">https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.10/manual_residentevil4_vincentssin.apworld</a>

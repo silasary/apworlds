@@ -1,9 +1,12 @@
 # Astalon
 
 ## Latest
-- <a href="https://github.com/drtchops/Archipelago-Astalon/releases/download/v0.27.1/astalon.apworld">Latest Version (0.27.1)</a>
+- <a href="https://github.com/drtchops/Archipelago-Astalon/releases/download/v1.0.0-rc1/astalon.apworld">Latest Version (0.99.0)</a>
 
 ## All Versions
+
+#### v0.99.0
+- <a href="https://github.com/drtchops/Archipelago-Astalon/releases/download/v1.0.0-rc1/astalon.apworld">https://github.com/drtchops/Archipelago-Astalon/releases/download/v1.0.0-rc1/astalon.apworld</a>
 
 #### v0.27.1
 - <a href="https://github.com/drtchops/Archipelago-Astalon/releases/download/v0.27.1/astalon.apworld">https://github.com/drtchops/Archipelago-Astalon/releases/download/v0.27.1/astalon.apworld</a>

@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.10/manual_residentevil4_vincentssin.apworld">Latest Version (2.0.10)</a>
+- <a href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.0.11/manual_residentevil4_vincentssin.apworld">Latest Version (2.0.11)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
