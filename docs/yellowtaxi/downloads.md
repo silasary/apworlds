@@ -1,9 +1,12 @@
 # Yellow Taxi Goes Vroom
 
 ## Latest
-- <a href="https://github.com/soopercool101/Archipelago/releases/download/YTGV.v0.3.0/yellowtaxi.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/YTGV.v0.3.1/yellowtaxi.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/soopercool101/Archipelago/releases/download/YTGV.v0.3.1/yellowtaxi.apworld">https://github.com/soopercool101/Archipelago/releases/download/YTGV.v0.3.1/yellowtaxi.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/soopercool101/Archipelago/releases/download/YTGV.v0.3.0/yellowtaxi.apworld">https://github.com/soopercool101/Archipelago/releases/download/YTGV.v0.3.0/yellowtaxi.apworld</a>

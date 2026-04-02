@@ -6,7 +6,7 @@ power-up, the game offers additional levels and trials that demand refined skill
 
 
 ## Downloads
-- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.0.2/peggle_nights.apworld">Latest Version (1.0.2.post2)</a>
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v1.1.0/peggle_nights.apworld">Latest Version (1.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Pinball FX3
 
 ## Latest
-- <a href="https://github.com/SerpentAI/Archipelago/releases/download/pinballfx3-v1.1.1/pinball_fx3.apworld">Latest Version (1.1.1.post3)</a>
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/pinballfx3-v1.2.0/pinball_fx3.apworld">Latest Version (1.2.0)</a>
 
 ## All Versions
+
+#### v1.2.0
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/pinballfx3-v1.2.0/pinball_fx3.apworld">https://github.com/SerpentAI/Archipelago/releases/download/pinballfx3-v1.2.0/pinball_fx3.apworld</a>
 
 #### v1.1.1.post3
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/pinballfx3-v1.1.1/pinball_fx3.apworld">https://github.com/SerpentAI/Archipelago/releases/download/pinballfx3-v1.1.1/pinball_fx3.apworld</a>
