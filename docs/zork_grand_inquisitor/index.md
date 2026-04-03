@@ -8,7 +8,7 @@ Foundation, and The Skull of Yoruk.
 
 
 ## Downloads
-- <a href="https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.1.0/zork_grand_inquisitor.apworld">Latest Version (2.1.0)</a>
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.1.1/zork_grand_inquisitor.apworld">Latest Version (2.1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

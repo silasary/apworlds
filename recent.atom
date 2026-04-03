@@ -2,46 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-03T12:14:58.698133+00:00</updated>
+  <updated>2026-04-03T18:18:01.305530+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.03.29</id>
-    <title>YARGAllSetlists v26.3.29</title>
-    <updated>2026-03-29T23:04:33+00:00</updated>
-    <author>
-      <name>GirlWithoutAFairy</name>
-    </author>
-    <content>This release includes version 1.0 of the Guitar Hero World Tour apworld as well as some changes made to every other apworld in this branch.&#13;
-&#13;
-There is now a provided .zip file containing all of the metadata you need to make your songs work. No more manually editing the text files. I have adjusted the metadata in all of the games I have setup thus far. Your existing metadata may not match the new version and you may need to update some of your songs. Refer to the readme file if you get confused. You will NOT need to create new rips.&#13;
-&#13;
-# Guitar Hero World Tour Release&#13;
-&#13;
-Includes the 86 songs found on the retail disc, with an option to enable the Guitar Battles. Toggle "GHWT Guitar Battles" in the "Enabled Setlists" option.&#13;
-&#13;
-# Guitar Hero 1 version 1.2&#13;
-&#13;
-Significant metadata changes were made to most of the setlist. You may need to download the metadata zip file. &#13;
-&#13;
-The "Guitar Hero 1 Hidden Songs" setlist has been renamed to "GH1 Hidden Songs"&#13;
-&#13;
-# Rock Band 3 version 1.1&#13;
-&#13;
-Only a couple songs had changes made to their metadata. You will likely be able to get by with just download the individual files directly from the repo.&#13;
-&#13;
-"Oye Mi Amor" has been made optional due to some versions of the retail disc not ripping the song properly. It is now toggleable within the "Enabled Setlists" option as "RB3 Oye Mi Amor"&#13;
-&#13;
-# All Setlists version 1.1&#13;
-&#13;
-- Added YARN Request Pack 1&#13;
-- Added Guitar Hero World Tour&#13;
-- Added GHWT Guitar Battles&#13;
-- Added the changes made in the other apworlds</content>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.03.29"/>
-  </entry>
   <entry>
     <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.04.02</id>
     <title>YARGAllSetlists v26.4.2</title>
@@ -168,7 +133,7 @@ big sprinkler unlock</content>
   </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.1</id>
-    <title>Total War Warhammer 3 v0.9.1.post4</title>
+    <title>Total War Warhammer 3 v0.9.2</title>
     <updated>2026-03-30T17:14:04+00:00</updated>
     <author>
       <name>jordansds</name>
@@ -179,7 +144,7 @@ Pre-release updates do not change spheres gamemode.&#13;
 &#13;
 Added Universal Tracker integration.&#13;
 Added BattleSanity option [Experimental].&#13;
-Added DespoilerSanity option [Experimental - do not use at this time].&#13;
+Added DespoilerSanity option [Experimental].&#13;
 Added missing lizardmen buildings.&#13;
 &#13;
 Exceeding admin capacity now provides increasing debuffs to the economy rather than an instant crippling debuff.&#13;
@@ -925,9 +890,7 @@ New:&#13;
     </author>
     <content>This is an important release to make sure the implementation keeps working in the wake of Zen Studio's decision to rebrand of Pinball FX3 to Pinball FX Classic. The executable was modified and renamed (Pinball FX3.exe -&gt; Pinball FX Classic.exe), which could have spelled disaster, but thankfully the pointer chains are still working, so the APWorld just needed to look for the new executable.&#13;
 &#13;
-Note: I will NOT be renaming everything to accommodate said rebrand. It shall remain Pinball FX3 in our hearts forever&#13;
-&#13;
-**Full Changelog**: https://github.com/SerpentAI/Archipelago/compare/thps12-v1.0.0...pinballfx3-v1.3.0</content>
+Note: I will NOT be renaming everything to accommodate said rebrand. It shall remain Pinball FX3 in our hearts forever</content>
     <link href="https://github.com/SerpentAI/Archipelago/releases/tag/pinballfx3-v1.3.0"/>
   </entry>
   <entry>
@@ -1148,5 +1111,36 @@ APWORLD (needed for generating archieplago game):&#13;
 - Restart launcher for APWorld to properly install&#13;
 - (Optional but Recomended)Select "Generate Template Options" to generate default spirit valley YMAL</content>
     <link href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.1</id>
+    <title>Nine Sols v0.5.1</title>
+    <updated>2026-04-03T16:00:54+00:00</updated>
+    <author>
+      <name>Ixrec</name>
+    </author>
+    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
+&#13;
+- The .apworld now works on AP 0.6.4 - 0.6.6 again (that includes generation, options creator, template yaml gen, etc). v0.5.0 imported some core AP stuff that I did not realize was exclusive to AP 0.6.7, and I don't want to raise my minimum AP version just yet, so those imports have been removed.&#13;
+- Fixed shop icons for games which happen to use the same item ids as Nine Sols, so e.g. Pokemon Crystal's "Ultra Ball" will no longer show the Seal of Goumang icon just because both items happen to use id 2.&#13;
+- Jades *for the current slot* now shown their cost in shops.&#13;
+- The shop rando option is now in an option group. This only affects Options Creator and template yamls.&#13;
+- (unrelated to shop rando) The medium logic for "CTH: Large Elevator Shaft" now allows Charged Strike.&#13;
+</content>
+    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.1</id>
+    <title>Zork Grand Inquisitor v2.1.1</title>
+    <updated>2026-04-03T16:01:19+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is an important release to fix a client crash affecting everyone that tries to connect on 2.1.0&#13;
+&#13;
+The in-client location tracker's ability to track what is in logic at a given moment has been removed. That feature was fundamentally incompatible with the switch to Rule Builder. Universal Tracker has always been the superior tracking solution for Zork Grand Inquisitor anyway. I doubt many people were relying on the in-client tracker.&#13;
+&#13;
+That said, the Tracker tab is still present. It will still mark off what is checked correctly. It will also not activate a game region's set of location checks until you travel to that location in-game. The ? buttons describing how to check each location remain.</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.1"/>
   </entry>
 </feed>
