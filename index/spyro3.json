@@ -479,6 +479,21 @@
       "version_simple": "1.3.3",
       "world_version": "1.3.3"
     },
+    "1.3.4": {
+      "created_at": "2026-04-02T19:00:21Z",
+      "description": "This release contains both Client (S3AP.Desktop.exe) and APWorld changes.  The new client is compatible with in progress seeds generated on version 1.3.0+.\r\n\r\nNew Features\r\n- [Archipelago version 0.6.7 only] ArchipelagoLauncher's Generate Template Options will create a preset YAML options file intended for new players who want a streamlined introduction to S3AP.\r\n  - Preset includes Sorceress 1 Goal, 25% Gem Checks, 13 Zoe Hints, Easy Boxing, and all non-trap filler on.\r\n- Client now saves and pre-populates the most recent successful connection details.\r\n  - Details are saved in `connection.json`, which may be moved to the folder for new client versions as updates are released.\r\n\r\nBug Fixes:\r\n- Fixed logic for Cloud Spires Gems 107 and 109.\r\n- Fixed Universal Tracker integration issues with Zoe Hints and Speedway access under certain setting combinations.\r\n- Fixed an additional case where gaining a life in Midnight Mountain Home could increase life count to 99.\r\n- Fixed a potential client crash when trying to connect after a server disconnect.\r\n- Fixed an issue where Moneybags unlocks could desync under rare circumstances.\r\n- Fixed an issue where Open World mode could fail to set up under rare circumstances.",
+      "download_url": "https://github.com/Uroogla/S3AP/releases/download/1.3.4/spyro3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "54135e720900e7077ef4a62fa049bd6238a36a34ff2c576315f5d73e91571078",
+      "html_url": "https://github.com/Uroogla/S3AP/releases/tag/1.3.4",
+      "minimum_ap_version": "0.6.1",
+      "size": 49847,
+      "source_url": "https://api.github.com/repos/Uroogla/S3AP",
+      "tag": "1.3.4",
+      "title": "v1.3.4",
+      "version_simple": "1.3.4",
+      "world_version": "1.3.4"
+    },
     "open_world_test": {
       "created_at": "2025-09-07T15:42:03Z",
       "description": "NOTE: This is a test build.  It very likely has bugs or errors.  Please be considerate of your fellow players when using this.  For the latest stable build, see https://github.com/Uroogla/S3AP/releases/tag/1.1.0\r\n\r\nNew feature:\r\n- Open World Option\r\n  - This opens up all 4 homeworlds from the start.\r\n  - The end of level egg for all 5 main levels of Sunrise, Midday, and Evening are pre-completed from the start of the seed.  Their items are all \"Filler\"\r\n  - Buzz, Spike, and Scorch do not need to be defeated.  Their eggs are pre-completed and their items are all \"Filler\".\r\n  - All levels that normally require eggs to unlock instead require a Level Unlock item.\r\n  - Players start with 1 egg because Spyro 3 portal unlocks are complicated.\r\n  - You may need to enter and exit a Sunrise level once for the rocket to behave properly.  Otherwise, it may be merged with the balloon.\r\n  - In Companionsanity or Moneybagssanity, players start with Sheila, Sgt. Byrd, and Bentley unlocked, due to potential logic issues.  The plan is to change this eventually.\r\n  - If you are in Sunrise when you unlock Molten or Seashell, you may need to enter another level and come back for the unlock to take effect.\r\n  - Not compatible with hwd's randomizer or world keys.\r\n  - Partially ignores Progressive Sparx Health Logic.  You are still guaranteed to have gold sparx in logic by the Sorceress, but unlocked levels like Fireworks do not account for this option.  You are encouraged to start with a higher sparx level than normal in this mode.",
