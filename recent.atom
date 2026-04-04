@@ -2,43 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-04T06:25:36.974290+00:00</updated>
+  <updated>2026-04-04T12:11:56.929983+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.2</id>
-    <title>CrossCode v0.8.2</title>
-    <updated>2026-03-30T07:18:28+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content># Changes from 0.8.1&#13;
-&#13;
-## Changes to Generation&#13;
-&#13;
-* Replaced the check **Vagabond Dojo Key** with **Trials of the Golden Bugs** (@CodeTriangle).&#13;
-  * This change turns the check that gives the Dojo Key in vanilla into a quest reward so that the item hidden behind it can be previewed.&#13;
-  * This new location has the same ID as the previous one, so this change only affects where in the cutscene the item is acquired.&#13;
-&#13;
-## Changes to Mod&#13;
-&#13;
-* Applied a series of changes to the Archipelago menus to make creating and playing games more intuitive (@CodeTriangle):&#13;
-  - Allow any NG+ options to be selected regardless of previous save file completion.&#13;
-  - No longer load into a game without NG+ enabled when exiting the text client menu using cancel button.&#13;
-  - Add a clearer indication that NG+ options can be edited from the New Game Plus menu found in the Archipelago menu.&#13;
-  - Block out "carry over" section of NG+ when editing options to indicate that they cannot be modified after save file creation.&#13;
-  - Stop the game from blocking infinitely when entering new login information after previously entering login information and disconnecting.&#13;
-&#13;
-# Changes from 0.8.2-pre.1&#13;
-&#13;
-## Changes to Logic&#13;
-&#13;
-* **Steamy Booze** now requires access to Bergen Trail so that Bergen Ice can be acquired (@CodeTriangle).&#13;
-* **Gaia's Garden Defeat** now requires access to East Gaia in Closed Gaia mode since enemies native to that area are necessary to the quest's completion (@CodeTriangle).</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.2"/>
-  </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.1</id>
     <title>Total War Warhammer 3 v0.9.2</title>
@@ -1064,5 +1032,78 @@ This bugfix does not prevent duplicate songs from appearing in seeds but rather 
 &#13;
 Only the All Setlists world was changed. No other worlds were affected by this bug.</content>
     <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.04.04"/>
+  </entry>
+  <entry>
+    <id>https://github.com/asdfwyay/APBuckshot/releases/tag/v0.3.0</id>
+    <title>Buckshot Roulette v0.3.0</title>
+    <updated>2026-04-04T08:05:22+00:00</updated>
+    <author>
+      <name>asdfwyay</name>
+    </author>
+    <content>## Features&#13;
+- **Consumable Item Randomization**&#13;
+    - Item unlocks are shuffled randomly&#13;
+- **Steam Achievements**&#13;
+    - Obtain items from completing achievements&#13;
+- **Shotsanity**&#13;
+    - Obtain items from successful shots&#13;
+- **Streaksanity**&#13;
+    - Obtain items from successful shots on the dealer in a row without being shot yourself&#13;
+- **Customizable Goal**&#13;
+    - Choose from one of the following goals:&#13;
+        - **70K**: Beat the game&#13;
+        - **140K**: Beat 6 Double or Nothing rounds in a row&#13;
+        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million&#13;
+        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score&#13;
+- **Consumable Item Logic**&#13;
+    - Customize how many consumable are expected to beat a certain number of rounds&#13;
+- **Custom Mechanics**&#13;
+    - Unique gameplay features specific to the Archipelago world&#13;
+- **Hint Mode**&#13;
+    - Complete rounds and achievements to get hints for locations in other slots in an Archipelago game&#13;
+## Changelog&#13;
+### World&#13;
+#### Item Buffs and Debuffs&#13;
+- **Item Buffs**: Finding "Item Buff" items in the multiworld will apply a permanent buff to your consumable items.&#13;
+- **Item Debuffs**: Start with a selection of consumable item debuffed. Finding an item's respective "Clear Debuff"&#13;
+    in the multiworld will remove its debuff.&#13;
+&#13;
+| Item             | Buff Description                                                                | Debuff Description                                                       |&#13;
+|------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------|&#13;
+| Hand Saw         | Deals an extra point of damage (2 &amp;rarr; 3)                                     | 25% chance to also deal 1 damage to the player *Not implemented*         |&#13;
+| Magnifying Glass | Gains the ability to convert the current shell to either live or blank          | 40% chance to gain no information when viewing the current shell         |&#13;
+| Beer             | Gains the ability to clear the shotgun, immediately moving on to the next batch | Adds 15 to the poison gauge *(see below)*                                |&#13;
+| Cigarette Pack   | 50% chance to heal 2 charges instead of 1                                       | Adds 30 to the poison gauge *(see below)*                                |&#13;
+| Handcuffs        | Dealer skips one extra turn (1 &amp;rarr; 2)                                        | 25% chance for the dealer to immediately break free                      |&#13;
+| Expired Medicine | Buffs chance of healing (1 in 2 &amp;rarr; 5 in 6)                                  | Failing the coin flip will also add 20 to the poison gauge *(see below)* |&#13;
+| Burner Phone     | Gains the ability to select which shell to get info about (2nd - 7th)           | 25% chance to get no information                                         |&#13;
+| Adrenaline       | Gains the ability to steal the dealer's adrenaline                              | Adds 50 to the poison gauge *(see below)*                                |&#13;
+| Inverter         | Applies a Schrodinger's Bullet Trap to the dealer                               | 25% chance to not invert the current shell                               |&#13;
+#### Poison Gauge&#13;
+- Certain item debuffs will affect a new mechanic known as the poison gauge. At the beginning of every turn, you will take damage according to the value of your poison gauge as follows:&#13;
+&#13;
+| Poison Gauge | Guaranteed Damage Every Turn | Chance of Losing One Extra Charge |&#13;
+|:------------:|:----------------------------:|:---------------------------------:|&#13;
+|       p      |   d = p / 100 rounded down   |            p / 100 - d            |&#13;
+#### Other&#13;
+- Updated item and location IDs for most items and locations&#13;
+    - Therefore, this release is **NOT** backwards compatible with previous releases.&#13;
+### Client&#13;
+#### Item Buffs and Debuffs&#13;
+- Implemented all item buffs and most item debuffs&#13;
+- Added a display for the poison gauge&#13;
+#### Hint Mode&#13;
+- Made Double or Nothing mode immediately available from the start when playing in hint mode&#13;
+#### Other&#13;
+- Added in-game notifications when sending items&#13;
+- Added a display for your current streak&#13;
+- Fixed a bug where game would attempt to spawn a null instance of an item when the player's grid is full&#13;
+    - Crashes should be much less common as a result&#13;
+- Fixed a bug where shotsanity count would not sync among players playing on the same slot&#13;
+- Fixed a bug where selecting the **Free** setting for the **Double or Nothing Requirements** would lock Double or Nothing mode behind the vanilla requirements&#13;
+## Guides&#13;
+- [Info](&lt;https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md&gt;)&#13;
+- [Setup &amp; Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)</content>
+    <link href="https://github.com/asdfwyay/APBuckshot/releases/tag/v0.3.0"/>
   </entry>
 </feed>
