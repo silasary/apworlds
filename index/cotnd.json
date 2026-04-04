@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "lastingParadox"
+  ],
   "description": "Crypt of the NecroDancer is a roguelike rhythm game. Move to the beat in an ever-changing dungeon while fighting\nskeletons, dragons, and rapping moles. Descend into the crypt to defeat the NecroDancer and claim the Golden Lute!",
   "game": "Crypt of the NecroDancer",
   "github": "https://github.com/lastingParadox/Archipelago-CotND",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "1.0.0": {
       "created_at": "2025-08-19T00:49:14Z",
@@ -304,6 +311,36 @@
       "title": "Crypt of the NecroDancer Archipelago v0.5.2",
       "version_simple": "0.5.2",
       "world_version": "0.5.2"
+    },
+    "v0.5.3": {
+      "created_at": "2026-04-04T14:14:15Z",
+      "description": "### Changes\r\n- Add DeathLinkType setting, along with two options: Tempo and Marv\r\n - Tempo: On Deathlink, trigger a countdown for 24 beats. If you can't escape the level in that timeframe, you die\r\n - Marv: Spawns a Marv familiar for the rest of the level. If Marv dies, you'll take 20% of your max hp in damage every beat and will likely die. Marv familiars despawn on escaping the level.\r\n- Add weapon materials always being precollected when `include_materials` is false, make them never precollected when `include_materials` setting is true.\r\n- Add unique items never being precollected when `include_unique_items` is true, aside from starting character requirements when `character_unlocks` is set to `soft` or `hard`.\r\n- Fix running Archipelago through appimage causing the client to not be able to find the apworld (thanks [studkid](https://github.com/studkid) for finding this)\r\n- Add rudimentary test suite for generation\r\n- Fix Pylance type issues\r\n\r\nPlease see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.\r\n\r\nPlease inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).",
+      "download_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.5.3/cotnd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2b19530bf609418b98c86f9ec1d50b0b105cb96e46e61309a5d3b26c6afb8261",
+      "html_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 21924080,
+      "source_url": "https://api.github.com/repos/lastingParadox/Archipelago-CotND",
+      "tag": "v0.5.3",
+      "title": "Crypt of the NecroDancer Archipelago v0.5.3",
+      "version_simple": "0.5.3",
+      "world_version": "0.5.3"
+    },
+    "v0.5.4": {
+      "created_at": "2026-04-04T14:14:15Z",
+      "description": "### Changes\r\n- Add Sing Spell item as a unique item to generation, make Hatsune Miku require it for `soft` and `hard` `character_unlocks` setting\r\n\r\nPlease see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.\r\n\r\nPlease inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).",
+      "download_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.5.4/cotnd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "634a3fffca927301671c7c5b9632c967f135ab0b99581a2577e82607d775bfa8",
+      "html_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 21924103,
+      "source_url": "https://api.github.com/repos/lastingParadox/Archipelago-CotND",
+      "tag": "v0.5.4",
+      "title": "Crypt of the NecroDancer Archipelago v0.5.4",
+      "version_simple": "0.5.3",
+      "world_version": "0.5.3"
     }
   }
 }

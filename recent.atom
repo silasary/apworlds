@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-04T12:11:56.929983+00:00</updated>
+  <updated>2026-04-04T18:14:52.343461+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
@@ -1105,5 +1105,58 @@ Only the All Setlists world was changed. No other worlds were affected by this b
 - [Info](&lt;https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md&gt;)&#13;
 - [Setup &amp; Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)</content>
     <link href="https://github.com/asdfwyay/APBuckshot/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.3</id>
+    <title>Crypt of the NecroDancer v0.5.3</title>
+    <updated>2026-04-04T14:14:15+00:00</updated>
+    <author>
+      <name>lastingParadox</name>
+    </author>
+    <content>### Changes&#13;
+- Add DeathLinkType setting, along with two options: Tempo and Marv&#13;
+ - Tempo: On Deathlink, trigger a countdown for 24 beats. If you can't escape the level in that timeframe, you die&#13;
+ - Marv: Spawns a Marv familiar for the rest of the level. If Marv dies, you'll take 20% of your max hp in damage every beat and will likely die. Marv familiars despawn on escaping the level.&#13;
+- Add weapon materials always being precollected when `include_materials` is false, make them never precollected when `include_materials` setting is true.&#13;
+- Add unique items never being precollected when `include_unique_items` is true, aside from starting character requirements when `character_unlocks` is set to `soft` or `hard`.&#13;
+- Fix running Archipelago through appimage causing the client to not be able to find the apworld (thanks [studkid](https://github.com/studkid) for finding this)&#13;
+- Add rudimentary test suite for generation&#13;
+- Fix Pylance type issues&#13;
+&#13;
+Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
+&#13;
+Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
+    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.4</id>
+    <title>Crypt of the NecroDancer v0.5.3</title>
+    <updated>2026-04-04T14:14:15+00:00</updated>
+    <author>
+      <name>lastingParadox</name>
+    </author>
+    <content>### Changes&#13;
+- Add Sing Spell item as a unique item to generation, make Hatsune Miku require it for `soft` and `hard` `character_unlocks` setting&#13;
+&#13;
+Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
+&#13;
+Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
+    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.4</id>
+    <title>Dark Cloud 1 v0.4.4</title>
+    <updated>2026-04-04T16:05:01+00:00</updated>
+    <author>
+      <name>Lizardman175</name>
+    </author>
+    <content># Dark Cloud 1 AP Rando v0.4.4&#13;
+&#13;
+## Changes&#13;
+Temporarily replaced Alnet's Llama with a Garnet at generation to prevent the player from getting the fishing rod until a cleaner client side fix can be implemented.&#13;
+Small update to the client to support the change as well.&#13;
+&#13;
+No change to the .pnach file</content>
+    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.4"/>
   </entry>
 </feed>

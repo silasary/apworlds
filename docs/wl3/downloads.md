@@ -1,9 +1,12 @@
 # 
 
 ## Latest
-- <a href="https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v0.0.11.3/wl3.apworld">Latest Version (0.0.11.3)</a>
+- <a href="https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v.0.1.0/wl3.apworld">Latest Version (0.1.0)</a>
 
 ## All Versions
+
+#### v0.1.0
+- <a href="https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v.0.1.0/wl3.apworld">https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v.0.1.0/wl3.apworld</a>
 
 #### v0.0.11.3
 - <a href="https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v0.0.11.3/wl3.apworld">https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v0.0.11.3/wl3.apworld</a>

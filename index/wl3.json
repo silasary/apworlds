@@ -6,6 +6,21 @@
   "github": "https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago",
   "manifest_fields": [],
   "versions": {
+    "v.0.1.0": {
+      "created_at": "2026-04-04T16:40:46Z",
+      "description": "# Update Notes\r\n\r\n> **Important:** This build is extremely experimental and requires heavy testing.\r\n> Do not bring this to public syncs yet. This will be the build used exclusively for stability work going forward.\r\n\r\nMany of these settings require an active client connection to function, particularly with keysanity.\r\nA more offline-friendly version may come in the future, but for now the client must be connected.\r\n\r\n---\r\n\r\n## Keysanity\r\n\r\nKeys and treasures can now be shuffled amongst each other! This means you can find your Overalls\r\non your Out of the Woods Grey Key, and any key can appear in a chest. Due to GBC limitations,\r\nthe palettes of treasures on keys will differ from their intended colors.\r\n\r\n**Please report any bugs you encounter.**\r\n\r\nUse the `/keys` command to see your current keys.\r\n\r\n### Available Settings\r\n\r\n| Setting | Description |\r\n|---------|-------------|\r\n| **Vanilla** | Standard key behavior |\r\n| **Full** | Full keysanity \u2014 keys and treasures shuffled together |\r\n\r\n> A **Simple** keysanity mode (keys shuffled with keys only) is in progress, but seed generation\r\n> is not yet reliable enough to release.\r\n\r\n### Known Issues\r\n\r\n- Picking up a key may not register on the first attempt \u2014 this appears to be fixed, but monitor for it.\r\n- Treasures on keys may occasionally. Re-entering the level resolves this. (I believe I fixed this too, but let me know if it persists)\r\n\r\n---\r\n\r\n## Keys Persistence\r\n\r\nKeys now persist when leaving a level. This has minimal impact on the vanilla keys setting,\r\nbut some levels are notably affected (I'm looking at you Above the Clouds Grey).\r\n---\r\n\r\n## Quality of Life Updates\r\n\r\n- **Combined items** now display in purple when pulled from chests, making them easier to identify.\r\n  Note: they will not appear purple on \"treasure on keys\" spots.\r\n- **Action menu replaced with Treasure menu** \u2014 No more broken Action Menu! You can now view your collected treasures from within a level by choosing the \"Action Menu\" button.\r\n- **In-game item messages** \u2014 you will now see a message when items are received or sent.\r\n  - Supports up to 3 lines of text\r\n  - Some background text bleed may occur due to hardware limitations; leaving and re-entering the room resets tiles\r\n  - **Known bug:** Re-opening the BizHawk client will re-send all item messages. Use `/skip` to bypass this.\r\n    `/skip` can also be used at any time to suppress received item history (e.g. after a release).\r\n- **Wario palettes** have been split into separate **Overalls** and **Shirt** options.\r\n- Various logic fixes applied; keys and chests now use separate logic tables.\r\n",
+      "download_url": "https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v.0.1.0/wl3.apworld",
+      "has_manifest": false,
+      "hash_sha256": "2ceba75730f56ebae969e874d8005ceb070c482ee891fec101201b6a6a598e59",
+      "html_url": "https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/tag/v.0.1.0",
+      "prerelease": true,
+      "size": 84951,
+      "source_url": "https://api.github.com/repos/RvPA-Roopa/Wario-Land-3-Archipelago",
+      "tag": "v.0.1.0",
+      "title": "The BIG One (Keysanity and so much more)",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
     "v0.0.1": {
       "created_at": "2026-03-14T00:16:54Z",
       "description": "First release! Please post any issues in the \"issues\" section (ideally), or let me know in the discord!",
