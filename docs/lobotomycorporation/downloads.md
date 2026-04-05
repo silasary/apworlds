@@ -1,9 +1,12 @@
 # Lobotomy Corporation
 
 ## Latest
-- <a href="https://github.com/Kli333/LobCorp-AP/releases/download/v.1.3.0.0/lobotomycorporation.apworld">Latest Version (1.3.0.0.post3)</a>
+- <a href="https://github.com/Kli333/LobCorp-AP/releases/download/1.3.1.0/lobotomycorporation.apworld">Latest Version (1.3.1.0)</a>
 
 ## All Versions
+
+#### v1.3.1.0
+- <a href="https://github.com/Kli333/LobCorp-AP/releases/download/1.3.1.0/lobotomycorporation.apworld">https://github.com/Kli333/LobCorp-AP/releases/download/1.3.1.0/lobotomycorporation.apworld</a>
 
 #### v1.3.0.0.post3
 - <a href="https://github.com/Kli333/LobCorp-AP/releases/download/v.1.3.0.0/lobotomycorporation.apworld">https://github.com/Kli333/LobCorp-AP/releases/download/v.1.3.0.0/lobotomycorporation.apworld</a>

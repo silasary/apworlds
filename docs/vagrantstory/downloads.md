@@ -68,3 +68,6 @@
 #### v0.0.1
 - <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.0/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.0/vagrantstory.apworld</a>
 
+#### v0.0.1
+- <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.1/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.1/vagrantstory.apworld</a>
+
