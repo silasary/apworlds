@@ -2,323 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-05T06:29:11.909789+00:00</updated>
+  <updated>2026-04-05T12:14:58.584495+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.2</id>
-    <title>BKSimulator v1.0.2</title>
-    <updated>2026-03-31T15:16:10+00:00</updated>
-    <author>
-      <name>EmilyV99</name>
-    </author>
-    <content>- Fixed the datastorage not properly supporting Teams. (This means any partial-walking-progress will be lost when loading an old game; i.e. you will be teleported back to home when you load an old game, regardless of if you were out on a walk or not, as the datastorage key has changed)&#13;
-- Updated apworld manifest (now properly reports world_version + minimum_ap_version)</content>
-    <link href="https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ArsonAssassin/DSAP/releases/tag/0.1.0.0</id>
-    <title>Dark Souls Remastered v0.1.0.0</title>
-    <updated>2026-03-31T17:19:33+00:00</updated>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <author>
-      <name>Noka</name>
-    </author>
-    <content>Release version 0.1.0.0&#13;
-&#13;
-## Changes:&#13;
-&#13;
-* 8348b230bdf186c0d7f40e3826ab59877babf226 Merge pull request #98 from tathxo/v0.1.0-final-testing&#13;
-* 546899b88753d5ac3e357b3a7484bf887e07883e final v0.1 bits&#13;
-* d10bbfee0c6bdc52e85b6c48857081fab192ec93 Merge pull request #97 from tathxo/v0.1-lordvesselless&#13;
-* 147c3e7ff23d8f09cf64a46982cba1eb8711bd79 Update README.md&#13;
-* 8ac2df1d839f767b04964e28dfa402ca3de29612 Add CanWarpWithoutLordvessel&#13;
-* ff3401deaeb944af26f7c9bd95fead5b092eeeb0 Merge pull request #96 from tathxo/v0.1-updates&#13;
-* 7f710c0520a5101ca5ee9f7af5c3b61c26afa390 Update setup_en.md&#13;
-* 04e097efc10cb1ecdd1db3b9c51dc16570a1760f Merge branch 'v0.1-updates' of https://github.com/tathxo/DSAP into v0.1-updates&#13;
-* e99acd5eb05110d7e5a9cebc0ee4306f4bf51f66 Update setup_en.md&#13;
-* ab9bf07ae7c4fe92459a0d08b18d457ed79d7805 Fix typo&#13;
-&lt;details&gt;&lt;summary&gt;&lt;b&gt;See More&lt;/b&gt;&lt;/summary&gt;&#13;
-&#13;
-* bc7ba45fc6a6088f6d70ea715be3c28cbeb30090 Move game info into Game Page&#13;
-* 5a7d7c4600f6c941805c4e750ac1c5d68dd0a401 Fix typo&#13;
-* 3d77c065ae6bf0fad4d8e30a5d51bc7ebcae15eb Move game info into Game Page&#13;
-* 35d583a7d7a6fa59a317f48fec8dc00088764d66 Move setup to Setup Guide&#13;
-* f56be31d8e531534bf9dda44e018a6e06ffa100c Add Contributors&#13;
-* e1c04bc28b95d39f5b756ba6f0badb31df7762ad Merge pull request #95 from tathxo/v0.1-updates&#13;
-* fe9acdf52295be903ca879b4ba2e01c11bd5ccf7 Feature: Bonfire Warp Unlocks shared to co-op, new slots&#13;
-* 73bb1f7689f875dde5fcd275ae5137d13d5a4972 Merge pull request #94 from tathxo/v0.1-updates&#13;
-* 7f4b233849e9db4405570fce70afea4c216e5228 Update README.md&#13;
-* a04bfb8c816b3fb6f25d859c463c8cb774775059 Move Thief Items to Json File&#13;
-* 2d21455de241617ebabcdcf7ac5ad0f1d5efcfd9 Fix Param OoB issue&#13;
-* 63b629f1fdc7abe17ac2ef1dd0f2eed9a2fb659f Move Gifts to Json file&#13;
-* a670ec3045eb1018ff6790763fd6271b82d82ec3 Fix: Hellkite Bridge connection&#13;
-* c1b8efe97fd76e28184d66c212f6a4e43cd81a59 Fix: DA Logic - split Getting out of Cell region&#13;
-* a5ee688de45df7854b57b72d2a264b05dfbfc6ef Merge pull request #92 from Edgarra1619/main&#13;
-* 3927b0217a97e01df991badae0b2c97122566388 Merge pull request #93 from tathxo/v0.1-updates&#13;
-* ae25292801b5dbce21ae74cadb93293c002d371c Fix compatibility code for "beta"&#13;
-* b7c8b70ddb9d08b054ef3774dcbc4ffb65d19e2c Update README with Linux info&#13;
-* 201428de06fad8864a142d855f6c91ae68f7b71f Update README for v0.1.0&#13;
-* fc5c26b47f9fa796c27b34f50d9ab27da8c80cb3 Add /lordvessel command&#13;
-* e399cb54f6814a028b92a3c302ac800ed71d49be Prevent Loop when using Save from previous room&#13;
-* 34a75725a189d2c0936251284b72286e4aa5d257 Update App.axaml.cs&#13;
-* 511c1b4ea441b552089e67c4af6045b382d0c126 Fix Basement Door Logic&#13;
-* 088e81f661d326c9f0cb1f041f20b4163478bd13 Update Compatibility code &amp; apworld version&#13;
-* f8b2105753f11ca8feba0cbf4262fd8fe3cd66fe Create Controls window, Add popup options&#13;
-* 2a92f59ede176cf6a973d8c0961532ca75491bf2 Fix All DLC regions not containing boss fog walls&#13;
-* 894f21fe6741bb7e257792b838e14a78b61d9a05 Fix Duke's Archives logic bug&#13;
-* 68368046860d00727777bd6af1d24696f19ecb9a Fix Duke's Archives Giant Door logic bug&#13;
-* 719774cd572a8d46a755e927e3ac971c655bab1e Merge pull request #91 from tathxo/v0.1&#13;
-* 35f4f6ec43f5bd25411c17c608bcad42b01a76f2 Make Server Deliver "Local" Items&#13;
-* f35560a2524ba5d04a311fc0e65671a7e9fb3515 Merge pull request #90 from tathxo/v0.0.22.1-hotfix&#13;
-* f24eaea2bf91f61abeaf3d7fdcf47bff78b1d03e Use Item Lot Param Ids for item lot replacement&#13;
-* 0406ad1267a65b1a8ffec9073b4d7d63213616d8 Refactor item lots&#13;
-* 79029992054459d8121bfb2388c755ee4c00cbea Refactor pt3&#13;
-* d758559f5a0264f1c4e31d9add6917f60883f48b Refactoring pt2&#13;
-* 0e243f0e29acdae1b3368b6c6d8006bda6563f8a refactoring pt1&#13;
-* d7b470b59dfd7b74254d20f8191681caa4ea05a0 Sanctus fix&#13;
-* f35b148008e9044763e73df4fceab5c5788df529 Use Starting Loadout Rando options in client&#13;
-* 23d070288d00ac2dbeb864db657315946c8eb9e2 Add Starting Loadout Rando Options to Apworld&#13;
-* 29fbcd149e48d6db0238ba8edd57f6372a34f25e Randomize Equipment/Armor&#13;
-* 765fe1786120fa178b453924c35ef96f2f8e0389 Starting Loadout &amp; Gift Descriptions&#13;
-* 51c6e039aba4a2d8d19db8dd3d06ec34d04bfce9 Randomize Starting Gifts&#13;
-* 0b724b566d70e0507b5c4261b91d66b629501984 Hunter ranged weapon -&gt; 1.5x str req&#13;
-* e646ae74bf9049f91a6feadd75cb5e3b2e3061ef Thief item randomization&#13;
-* 31b06755a5c1efa7393808d8043c9eea522a338f Use Weapon Stat Reqs&#13;
-* f54f9f2ce226a5ec1b6a290b30dcb63c5361e4c4 Simplify client log strings&#13;
-* 197e32b5073b686562661f17e198804f28780639 Add Stat Requirements for All Weapon Types&#13;
-* 48e962ca977166f6fdbf1811ae1596bb883ad1c5 Add spell categories and Reqs, and Reqs removals&#13;
-* 4e3459cfb30f7da7f6f7cc72da423e60e9ea338d Dark Hand -&gt; Shields&#13;
-* 4317925bca44ca9f271cc7420083cbb3bb18629c Don't Loop Forever for Bad Items&#13;
-* 67f0fd95b88670decfc11ddb5ac4a97bd0f45780 Add Spell Randomization, Ensure Arrow matches Bow Type&#13;
-* 5a7a4453b8945374d2b3412e51b2a97fef801623 Add loadout item lots, Remove weapon stat reqs&#13;
-* a184a99ed9da6d38f6bbde94260e36bb4a57b7e3 Test itemlotparam addition + More Param Refactoring&#13;
-* 205842a7a5dc0a5fc587f43a47e6f376cf9e764b Refactor DSR Param Replacement&#13;
-* daeb174b97f7ff6560db6945e8f9216fe1860e9c Add v0.0.22.1 hotfix info to readme&#13;
-* a46efc269f82b425eccca167271c8cb317876364 Bump version to 0.0.22.1 [skip ci]&#13;
-* 147b896afec0f92f54acaea7570f5ff011edfa9c Merge pull request #89 from tathxo/v0.0.22.1-hotfix&#13;
-* 0a4ea5448ab00597f5cb712bd70967d33ecb5030 Too many non-local items in DSR cause crash/bad item params&#13;
-* 6d9a1541d1f0f390b89f05d6df315f402a511262 Merge pull request #88 from ArsonAssassin/tathxo-patch-1&#13;
-* 43a444066f051776df343f451782ee689e7a7aa2 Update README.md&#13;
-* 1cf62da4952093865ffefce6f2fd7978869a9e92 Update README.md&#13;
-* 42e95562811d14f4b2b854d4665e4ce561bcba98 Update README.md&#13;
-* 2ae675f53e944fcf4e4bd5a08abc798400a799f5 Update azure-pipelines.yml for Azure Pipelines&#13;
-* 2af25afb3d321d5dd0604eb998b1faff620c7346 Bump version to 0.0.22.0 [skip ci]&#13;
-* 06fe0976b184a97ce9b6806a664a99771e8a4a76 Merge pull request #87 from ArsonAssassin/azure-pipelines&#13;
-* 4cf4f914892c31c3347e18ccabd700aa4d7e2d3e Update azure-pipelines.yml for Azure Pipelines&#13;
-* e3f30001db972f64e93f2a810449180cb56fffbf Merge pull request #86 from tathxo/22.0.5-pr-fixes-qol&#13;
-* 04238595d5723a98f89eac6c431120c8f7925f6f Fix typos, missing items in README&#13;
-* 16759ccde36fa999072c0e69647ea5d667d7571a README cleanup&#13;
-* aea1710335e22e513463972c4350306f757cc887 Update Dependencies, ready for v0.0.22.0&#13;
-* 1bd1feb2528b2816f8098c058b080308cc61438c Merge pull request #85 from tathxo/22.0.5-pr-fixes-qol&#13;
-* 40c90ce862aca1148006db3d8f33e5d01c00b7b1 Cleanup Emk zero handling&#13;
-* 57f2be313ecfcfdffb328e7427c53ad88a0e7835 Merge pull request #84 from tathxo/22.0.5-pr-fixes-qol&#13;
-* 2574ac4011f5d1d8b7f5eeac4309fee8c497da60 README ToC fix pt2&#13;
-* 477df0e654a3ea405888b37d148a3e765243faed README Table of Contents format fix&#13;
-* a9efc75364536c39be1a6a63a2d993d0ff44d5a7 Fix 2 DR location names pt 2&#13;
-* 071fd402e13b5f2090958713c60ec91f85b95020 Big Update to README&#13;
-* 205703c29ebeaf5b09459e76bf84fe326210e9f7 Reduce messaging&#13;
-* bd81d8c059d4397f5bc59896d8a1c6c32a8136e8 Update Demon Ruins confusing names&#13;
-* 167635cb00f87697011b9c99e94dff1acc63df9b Add Yaml-less UT support and Cleanup Generate Prints&#13;
-* 7efbbde6119507aff4e9c9d9c0d64d330fdb32f0 Merge pull request #83 from tathxo/22.0.5-pr-fixes-qol&#13;
-* 97f11b88a1e69306fd9686e5455aec1fa3e08603 Fix 9000 extra items msgs, buffer overrun&#13;
-* a5ba221114fff00ee4c7440df6ff201491f6a5a1 Add /connect and /unstuck text commands&#13;
-* 1aec42a4a13dcb86b9e411f455b4db1991b8b188 Add Yaml Option for Catacombs Logic&#13;
-* 4e324197d3472412c97c7cb3df8e047e8648432b Add /warp Commands for Persistent Reachability&#13;
-* 6b14ef194b6b8305361afb4cde402ef15e522c9b Linux support work&#13;
-* ed8498babf278f571e22d1e3b622ba423762b7af Fix: Require Placeable Lordvessel to pass Gold Fog&#13;
-* 2e1107c1ef01edfafcfb55f521408945743a441f Merge pull request #81 from tathxo/22.0.4-helpersplit&#13;
-* 007966d84731d46938b97b36b9f5608f57651b56 Refactor Helpers.cs&#13;
-* 37b32628e87b8fa725e318f3af78c7509243cc59 Merge pull request #80 from tathxo/22.0-3-deps+apitems&#13;
-* fc99697e64a48fd1ec70917986c3708115df4816 Cleanup + Improve Messages&#13;
-* 4c4c24cdf70957a8edbc33640df165ffda9b9cb5 Improve Reconnection Handling somewhat&#13;
-* add0e923979b028161023200445849955350977d Filter DSR AP items -&gt; unclutter inventory&#13;
-* 0ca7f89d2b5d463af3a06160a6ebb2a6ba5a6045 Improve Reconnect Detection and AP item handling&#13;
-* ad754309f18a71a811f639aa0d54fd99f0b71b90 Add item popup Filter &amp; Refactor/Cleanup&#13;
-* f160b5606a62fee0c655bb8efc99f75b49f53d4c Only Popup Progression Items, add return values for asm&#13;
-* 53447913134d015eb982deed09dc603c8f67f6ad Item popup batching + avoid popup-based crashes&#13;
-* d7219d0734a0835759e4120e0a041667523a8be7 Item Popup - Don't Crash on load&#13;
-* dd8c5eb5044d7b3ace38b4ba964edf7d8acd99a4 Add popups for received items&#13;
-* d41885549627b052f5a81f33942895db5f4457ee Add Fogwall DSR items, remove old "condition reward" code&#13;
-* 5634149511b4037ad132a00364b486e9003a6619 Order events alphabetically&#13;
-* 3ad84d6f8b06c39f47e48a57de5968dcd4672ec8 Replace remote items with DSRAP items&#13;
-* 042e8e7e5a8acff7c431e4851b9f017e547fe075 Add all scouted AP items to DSR with full text&#13;
-* 6a931162bcf646b2af7e1d4b900611f75a45ecbe Proof of Concept - Add an item and update its name&#13;
-* 3c8aebcb4893a86ee84eaf47ad95f0ca706f1582 AP items as DSR items step 1&#13;
-* 4fbaeef5e1397903028d15db45e98a4db8cf6409 Use ScoutLocations instead of Game Data Storage/Slot Data&#13;
-* ec828bc35106b3a84104b56a1aaa924dd6ded16e Update to 0.6.1&#13;
-* 0b9a11b39b3c1d2990a7f86d78843ea186795063 Fix DLC boss fog walls&#13;
-* c526aa02bc387f7527069e6cd1e89f09c10cf4ae Merge pull request #79 from tathxo/22.0-itempool-merge&#13;
-* 628309ca1630a07135555460704df8d571938f8b Update README.md&#13;
-* 77e24c03f76488dd89ee3c79bcc53f3f522db423 Bump Version -&gt; 0.0.22.0&#13;
-* 2491c6efcaebc5997e534d0c3d5c2b2732f5b4a4 Add upgraded weapons &amp; Quantity &gt; 1 items handling to client&#13;
-* 8b39ed64f1393e183edbc6006a0a3395ae666424 Feature: Improved Item Pool generation + simplified options&#13;
-* caa08527fd96254d19157aa2163b0efa5de2133e Research Tools&#13;
-* 04bd61955bf1ba0fcaf3e95426806a6020bbc20b v0.0.21.1 beta&#13;
-* e39b909db14785a8a5efc1e9ac4e2ad6d8cbb9be Update azure-pipelines.yml for Azure Pipelines&#13;
-* cf9c0ee3924da7a8530e50987be7bec9680b9bf5 Add known issue to README.md&#13;
-* 12ca26da78aa3162e8482c1c917388f2cb9d15cd Merge pull request #78 from tathxo/22.0-item-stability&#13;
-* d9440a72ff38a04bf9ef5696570d2366ff65c0c6 Reduce Error Messages&#13;
-* 1f0bd2e00f865dd195e76bf09e765c5d5913f8fa Save and Validate Slot # from AP&#13;
-* 4da167dd99edf2c6d05b12558a92d4408c9c6d4a More co-op support&#13;
-* 54150822c2c6e3652a4bb976d90dcb85ca8cb1dd Merge pull request #77 from tathxo/22.0-item-stability&#13;
-* 570a3ecc08b410614727542a0c3f1f351dae94b0 Fix fogwall keys not getting processed&#13;
-* a7500d110e419d234f33bce8c8e49f4100a0e686 Item safety / multi-saves for items&#13;
-* f17502e89ba71c8214bf59d0ff89e28d3d9aa30d Switch item mode -&gt; Receive All Items&#13;
-* a185607b5a6d761a6aabdd427ab0a654bbcd7b5e Add some known issues to README&#13;
-* db96a24d562c90eda4f630b1b81efe17fdeefe0e Update README.md&#13;
-* 0902675ef92914a7a82d2c00fe86894bce82f377 Update README.md&#13;
-* 16347896986161185a626418a51d83e2863d24a5 undo bad version change&#13;
-* 84f49593b60c48a58ded5816d86ef489774da139 Bump version to 0.1.0.0 [skip ci]&#13;
-* 3293a7c65d9f4d530d91df4a68af319f740abd0b Merge pull request #76 from tathxo/21.0-fixes+fogwalls+&#13;
-* f11a90dbf0a41d18c45bb85403e16bc369b490d2 Improve handling of invalid options&#13;
-* 4b6f46e15248610cf1ed3b9615e4e36784e43cdd Merge pull request #75 from tathxo/21.0-fixes+fogwalls+&#13;
-* 6acbb782343799f048c09fb5174de5cad317bb08 Feature: Add Fog Wall item and loc groups&#13;
-* 60856f7632606e349bea6294206a4e4dd9cf0732 Feature: Add Overlay Toggle&#13;
-* 07bfc2e5234f0286e03e761a8c3367b896cbacd5 Print Upgrade information to spoiler log&#13;
-* 61862940372af20b663712106c18a650b18d1644 Fixes for fuzzer + gen failures&#13;
-* a6943009fa305b7bbca8373f60b4dedc212b78cd Merge pull request #74 from tathxo/21.0-fixes+fogwalls&#13;
-* 93f86e967e4695bcfdd26eb6e1cfd4110f49ca92 Update /diag to also work if user isn't connected&#13;
-* be336185a729013004146bdf2235810b25677cf4 PR #74 feedback&#13;
-* 068b7330efc1aa5f1a67117eb61cc22833a06dba Fix some logic and add new /lock command&#13;
-* 842df324225db80412de876f10ade8f0f803045b v0.0.20.2 -&gt; v0.0.21.0, + compatibility for v0.0.20.*&#13;
-* ecfc9905695d7022dad6f1d27d180065ab11f715 Various Logic fixes&#13;
-* 41d00601683b39b65128fa1268fac4e674837528 Separate Fogwall Location and Item names, improve boss fog wall names&#13;
-* 4ba566656be15a517e49c3aee805f3f55f12bd29 Update versions to 0.0.20.2, compatibility, versioning fixes+messages&#13;
-* 26806bfd6e8bb6fe7e69c7f5ced9aa9df4357274 Add useful debugging commands&#13;
-* c44a8fa2e12935165a47b2bf8f86a326fc3c44be Add changelog information &amp; improve options documentation&#13;
-* 6222c20ad03fd5b4427e22c2ee47733edc6d0212 Make Artificial logic only apply without fogwall locking&#13;
-* 6ba577926d8080b67d934857d5f294e3c7f26ffb FIX: logic for NL Key to the Seal, remove uub -&gt; db&#13;
-* eee688cfe3f6966ed039b94b7af16554c3fc8adc Add 2-way Entrance Logic for Backward-Traversable Regions&#13;
-* 0a02feb4fcdbd79a4518191ef5f7943f1162c54f Make SendGoal put its work on the scheduler to avoid deadlock&#13;
-* 32c8ac7580d6fe43f89e6d68c5b7cae697ab22c6 Switch Wait()s to async awaits&#13;
-* e404890238359386fc7ec308b7444e6c7e6523bc Slightly improve messaging for /goalcheck and /diag&#13;
-* 10200b6b1b873dea91c9372c2f9b3da98d37ded0 Add fog wall logic less verbosely&#13;
-* b8396d92231d4b9c51ec466e22b708da7338306d Feature: Fogwall sanity&#13;
-* 4a67dd976aa42ec0db3e0ba10a52111de594787c Feature: Fog Wall Locking&#13;
-* 62b0c4d87483977e86fdfba2229259ec581c4fdb Add UT-&gt;poptracker map support&#13;
-* 9e7668bca10af6e30ad738f328f9be7b95d39bcd More diag info for #73&#13;
-* 31e26ad9f88bc9f5d38cc43c6dee2a12db261e61 Fix multiple SendGoalCompletion() calls happening at once&#13;
-* 411cc4eece8d8f153b2346512092e3b649e0cdbf PR review result&#13;
-* b157f53ccc8dbe0c097a6056a01f83ce6b6af0de Update client display version&#13;
-* 380e28373ba9f203dd1840730cc748e5040fad94 Add logging of goal send, Add /goalcheck and /diag&#13;
-* 029fdeb6fbad7bf87cdbacdba2665e29fbeaa711 Fix: Task.Delay() with no Wait() or await&#13;
-* b32ce46fdff2e94beb3b0a90e9402a7e7bd09ec5 Add location groups to readme&#13;
-* c93974c04974b8aa2a80d0b20b47f2175405d03a Update README.md&#13;
-* 831aed7c7f8c7c47c69f32525970eb55ae42e0ad Bump version to 0.0.20.0 [skip ci]&#13;
-* 39f92558a03a0c462a5ca4bcc50dfbac211d931c Merge pull request #72 from tathxo/20.2.1&#13;
-* fbce35b3352485f0a70614b9edc8c301dd0d3743 Fix invalid "Weapon Upgrades" to Shields&#13;
-* 6db8c2792fc808686791b8f825d0f0d70d634eda Update README.md&#13;
-* fa4eed0da00f040e5d7887ac47ac2ed763247d9c Update README.md&#13;
-* 59d30c512af27fe08e9cb4c035e1f6db1b407d3e Update README.md&#13;
-* 896bbd97c8d29a2e505aa9d0b42ed45e5c32ad08 Update dependencies&#13;
-* 3467c954d4bba6b2876012f5e77cbc458ba1ce05 Merge pull request #71 from tathxo/20.2.1&#13;
-* e54e94631a31428e0da01dd3f7952df3bd00f91e Fix: Handle Failed-Received Items&#13;
-* 7582050a10268536f1386f5aafe0b9c236591136 Merge pull request #70 from tathxo/20.2.1&#13;
-* 36ac1c759c375fe49430e490f2b0118658a9294c Fix: Spells with "Soul" in Name Wrongly Added to Item Pool Instead of Soul Items&#13;
-* 9db921050bac0586525ef279eca60327b8276d03 Merge pull request #69 from tathxo/20.2.1&#13;
-* 2b17868e7d99d76fa15d44853003ab31e3bae7a5 Add Changelog and Roadmap to README&#13;
-* f8e7edc56b28d8ce517e5255772c0f977cc3f6e7 Merge pull request #68 from tathxo/20.2.1&#13;
-* 15217ec6d441d01d6f8b8a89982a0c9756c5994d Add /deathlink command for toggling it after yaml creation&#13;
-* 0e61dbd154e2a089177123ed70a0267c733e366d Fix typo in warning message&#13;
-* a6e83cee82e8512c21e17351729bde9c283be6cd Add DLC location OT: Soul of a Hero behind Stairs&#13;
-* 1fd5b0771ec6694391dedfc376cd70d385a17aff Fix spam of Debug Log level&#13;
-* 4d9e88172a1b356f31041d3f2bffd0516daf5bed Merge pull request #67 from tathxo/20.2.1&#13;
-* 0d773fd7957e7713f70959b41f43ecd79634f7cc Improve AoB Helper&#13;
-* 0126186951499a5b95f378de197454b2d0a896f1 Merge pull request #66 from tathxo/20.2.1&#13;
-* f007560b54cf159482c903dc258e6bdc7808f7af Fix deathlink, add AoB Helper class, some cleanup&#13;
-* 64ff417abd2b20991ab72b9e52f504a01344bbcb Update README.md&#13;
-* a1dd8ed1481fe186ab17709e64e4f37823e3d2fd Merge pull request #65 from tathxo/20.2.1&#13;
-* 997e03d23c0d1caba3b69b67008350b30059ab54 Update logic and hint text on a PW check&#13;
-* b378e8a1e72ca237a728d8a19d1f8a25ea0f8d93 Limit number of "discrepancy" warnings, put an error message out&#13;
-* f7d7f23eba58f8d04d2b5c56d305f7537a5d6862 Fix: Locations Names Consistency ("Caverns" -&gt; "Cave")&#13;
-* 3b7c3bc8c43fe5d85426957f6d09161b358fe83b Add an apworld "api version" to the slotdata&#13;
-* a3c1db5cb31fa22722f2759172cc1b8e88898308 Merge pull request #64 from tathxo/20.2.1&#13;
-* 0df72ffcd35516f8cd4567bf0772669a64097de1 Feature: Unstuck Button Support&#13;
-* 0671fbfca325c26aba6449274766b222c978c918 Feature: Prevent Firelink Chest behind Frampt from Breaking Logic&#13;
-* d54ad7512824c946c2efb78d17b5ca5e9691bbad Merge pull request #62 from tathxo/20.1-candidate&#13;
-* 793a1880a6a15ac04d728b0ca1f3ed17f8611a67 Add Item Name Groups&#13;
-* 46b22557242679f069f60a0e5b2efe0828a0ff59 Merge pull request #61 from tathxo/19.4-fixes&#13;
-* c08d3eaec65a0a99f39800dbe8f64fdcf85969f0 Split Blighttown region into a Lower and Two Upper regions&#13;
-* a662b4502e49f903db56ae7fa2f3eedbae9456ff Add location groups (including DLC group), remove enable_dlc yaml option&#13;
-* d4131613b628ff1114be5174ede7089f71144f24 Standardize Region Names&#13;
-* 2ff8ce1a2dd2e82c563fca6ea64d8766e23cdd31 Fix up Post-Seath Arena entrance logic&#13;
-* c03a913830557433befda90fc2d1513923e4ab84 Merge pull request #54 from tathxo/19.4-fixes&#13;
-* 1634755085f2a71a9548380211689a6b1ad26ea1 Fix: PW Gold Coin -&gt; Before Annex Key&#13;
-* dc7da04cd5dfd7767f157b826c8a6951fb3baf14 Merge pull request #52 from tathxo/19.4-fixes&#13;
-* 286541ce87d2acee4a6204e8aee81016b46f4b84 Fix: Make Goal a normally Monitored Location&#13;
-* 8d1c3d7ef00534084c56f977f5b99da8bd50c896 Update README.md&#13;
-* 956641198d48d566ee941b8d0d5eb677df12c83e Merge pull request #50 from tathxo/19.3-dlc+&#13;
-* c5b7db156d7b211e6d72e6a3ec5de2fa0bcb1b06 Send Error message if no items were overwritten, Add overlay messages&#13;
-* a705814c46afd5926d7178027a137454390e7189 Feature - Enable DLC (via yaml option)&#13;
-* 654aa34c9c9e4d1abb1b6fdcab74eb8fde4a2fa3 Merge pull request #49 from tathxo/19.2+&#13;
-* e2f31df919d0e3d8af8f852bb2c0ac77133f70bb Fix 1 incorrect item lot flag &amp; 2 bad logic locations in Painted World&#13;
-* d55c477dc79be99fae58764c1e42a0f86a651f97 Merge pull request #48 from tathxo/19.2+&#13;
-* 65730d2133be786a99387cecde145104f3980166 Feature: Weapon Upgrades Yaml Option&#13;
-* c6072af9dcd3dc8013e05163a097dda61c814b59 Update README.md&#13;
-* 3e4a43945213fd971739c306d2cab495bd65eb7c Merge pull request #47 from tathxo/19.2+&#13;
-* 67414529f2cb7334bcdc1cd07e31d10b43483e1b Move Embers to their own resource file&#13;
-* a8f2b16f1b1dde65b44c234cd679664da96486a8 Update README.md&#13;
-* 9a7acd9d4b564a618e9cda3d84072cd6ca846f07 Make Embers useful - and Require them to be in the Item Pool&#13;
-* b37fdd98c0e485edbba2a39c823d079bf2675ff9 Add Elite Cleric Armor Set to Armor.json&#13;
-* 69b2a6d9674f2f6781b140c06eac132a00eb783d Remove nonexistent location&#13;
-* 0d65f6b943a597a87804f38d79554687ced438d4 Stop Replacing Every Single item lot&#13;
-* b462619846ef670f02c2814dbc336e7e238da232 Update README.md&#13;
-* 01f766f85b8e7442378f6f3aef49c47615f4dd05 Merge pull request #46 from tathxo/main&#13;
-* 31696f3477f2e691115fec4cff5657522cf9f3e5 Document Known Issues: Firelink Shrine chest and some npc/enemy drops erroneously replaced&#13;
-* c0d94a57f97e8a87e70b16d746bf48c1f9781a28 Update azure-pipelines.yml for Azure Pipelines&#13;
-* e6e6d18048daee395d3de9bce6ef88569714caac Update azure-pipelines.yml for Azure Pipelines&#13;
-* 438c9b8c4e6c63362d7c6976dc3421d76cba74ca Update azure-pipelines.yml for Azure Pipelines&#13;
-* ce3b2af505486109ceed098ab6a38fcc7a98e2bc Update azure-pipelines.yml for Azure Pipelines&#13;
-* 619a6bbb5de2e7d1dac8a312aaf8f50eadd44ddc Merge branch 'main' of https://github.com/ArsonAssassin/DSAP&#13;
-* 867f4b47e44afbb3bca20aaace105b5468ece0f9 Update avalonia package&#13;
-* 74af9a440531da2d438753345385bcc0f50d9ed9 Merge pull request #45 from tathxo/0.0.18.4c&#13;
-* b8827d7507cf37453c6729a69a215e889645b864 Add Overlay messages and Offset Overlay messages below hp + status bar&#13;
-* 13dfe3af9919d319391eab241dd26c31eecd0ac4 Update to latest AvaloniaGUI package&#13;
-* e7dc93dce96e93a2f818e9b3c3971cffd4a654f9 Merge pull request #44 from tathxo/0.0.18.4c&#13;
-* 19cf20aec75d63cefde0c7d5c496af2dd58df5f8 Updated README.md&#13;
-* c1469f32874a47684239a6b896a9a7bd1d90a07c More README enhancements&#13;
-* f07df8c51610730247f61804be2bff0ab67f0c56 Minor updates for PR #44&#13;
-* 7da0941ed64f3536e01ed546c514c89c1b2d66c4 Merge pull request #43 from tathxo/0.0.18.4&#13;
-&#13;
-This list of changes was [auto generated](https://dev.azure.com/arsonassassin/DSAP/_build/results?buildId=150&amp;view=logs).&lt;/details&gt;</content>
-    <link href="https://github.com/ArsonAssassin/DSAP/releases/tag/0.1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/tag/v0.2.5</id>
-    <title>Frogmonster v0.2.5</title>
-    <updated>2026-03-31T22:31:49+00:00</updated>
-    <author>
-      <name>RoobyRoo</name>
-    </author>
-    <content>_APWorld version 0.2.5, generated from commit [7871b3a](https://github.com/Rooby-Roo/Archipelago/commit/7871b3a936294a9c745c97f6a14aabc4a6feb9cb)_.&#13;
-&#13;
-A quick fix to Universal Tracker.&#13;
-&#13;
-- Universal Tracker now accounts for the death_link setting set at generation. Yeah, death_link has logical implications in this world. I'm not apologizing for that.</content>
-    <link href="https://github.com/Rooby-Roo/FrogmonsterAPWorld/releases/tag/v0.2.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/stubobis1/Archipelago/releases/tag/1.3.2</id>
-    <title>Path of Exile v1.3.2</title>
-    <updated>2026-03-31T23:30:47+00:00</updated>
-    <author>
-      <name>StuBob</name>
-    </author>
-    <content># 1.3.2 patch notes:&#13;
-&#13;
-	&#13;
-## Bug fixes:&#13;
-- Fixed a generation bug where it would only assign one version of your starting weapon.&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/1.3.2...1.3.1</content>
-    <link href="https://github.com/stubobis1/Archipelago/releases/tag/1.3.2"/>
-  </entry>
   <entry>
     <id>https://github.com/The1stBurb/EvolveAPWorld/releases/tag/v0.3.16</id>
     <title>evolve_v0.3.16 v0.3.16.post2</title>
@@ -1155,5 +843,131 @@ Also big thanks to everyone in both discords for feedback and reactions!! And to
 - Fixed starting character option being ignored.&#13;
 - Fixed incorrect logic for emblem requirements around the Egg Carrier.</content>
     <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v0.6</id>
+    <title>Taskipelago v0.6</title>
+    <updated>2026-04-05T07:40:48+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content># Version 0.6&#13;
+Major version update refactoring the apworld to use the new Rule Builder for cleaner code and maintainability, as well as some feature additions. Requires Archipelago version 0.6.7+ for generation.&#13;
+&#13;
+## Features, Improvements, and Changes&#13;
+* Goal task can now be selected&#13;
+* Refactor apworld to use new Rule Builder API&#13;
+* Refactor apworld into several files to conform to standard practice better&#13;
+* QOL: empty rewards now automatically populate as filler items on YAML export&#13;
+* QOL: Item names actually reflect the reward names in the multiworld&#13;
+&#13;
+## Bug fixes&#13;
+* Checklist no longer marks tasks completed just because their reward has been collected by the multiworld.</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.27</id>
+    <title>Universal Tracker v0.2.27</title>
+    <updated>2026-04-05T07:50:16+00:00</updated>
+    <author>
+      <name>FarisTheAncient</name>
+    </author>
+    <content>## What's Changed&#13;
+* clean up commands when we aren't using them to not crash /help by @qwint in https://github.com/FarisTheAncient/Archipelago/pull/122&#13;
+* Use the size from the `map_locations` when specified, otherwise fallback on map size. by @Jouramie in https://github.com/FarisTheAncient/Archipelago/pull/125&#13;
+* Improve item creation error logging by @Ars-Ignis in https://github.com/FarisTheAncient/Archipelago/pull/127&#13;
+* we broke nogui again by @qwint in https://github.com/FarisTheAncient/Archipelago/pull/129&#13;
+* Document map integration missing features by @Jouramie in https://github.com/FarisTheAncient/Archipelago/pull/128&#13;
+* Finally Document the powershell script from digiholic &#13;
+* fully rebuilt the rendering for get_logical_path, we now use rule builder for each entrance and give worlds the ability to override entrance rending with the new override `explain_path`&#13;
+&#13;
+## New Contributors&#13;
+* @Jouramie made their first contribution in https://github.com/FarisTheAncient/Archipelago/pull/125&#13;
+* @Ars-Ignis made their first contribution in https://github.com/FarisTheAncient/Archipelago/pull/127&#13;
+&#13;
+**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.2.26...Tracker_v0.2.27</content>
+    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.27"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v0.7-beta</id>
+    <title>Taskipelago v0.7b0</title>
+    <updated>2026-04-05T08:00:29+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content># Version 0.7 Beta&#13;
+Support for boolean logic implemented, but needs heavy testing&#13;
+&#13;
+## Features, Improvements, and Changes&#13;
+* Boolean logic now added! You can now enter strings like 1, 2 &amp;&amp; (3, 4 || 5, 6) into any field that accepts a list of tasks or rewards (goal tasks included!)&#13;
+&#13;
+&#13;
+hotfix: oops i messed up one of the goal checking variables, fixed now</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.7-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.2</id>
+    <title>Everhood 2 v0.4.2</title>
+    <updated>2026-04-05T11:03:07+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content>&gt; [!IMPORTANT]&#13;
+&gt; While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Green Route 3 and many Hilbert Hotel rooms. Please bring my attention to them in Discord if they occur.&#13;
+&#13;
+&gt; [!NOTE]&#13;
+&gt; Minimum version of the APWorld is now 0.6.7.&#13;
+&#13;
+## New Features:&#13;
+- Colorsanity (Display name Randomise Color Reflects now) now has a new modes&#13;
+  - Off: Can Reflect All Colors&#13;
+  - Single Soul Piece: Only need 1 Soul Piece to reflect a colour&#13;
+  - Multiple Soul Pieces: Need Multiple Soul Pieces to reflect colours for any enemy tied to an Time Hub area.&#13;
+ - APWorld now written with Rule Builder. Should also now **partially** support Universal Tracker now? Needs more work anyway.&#13;
+ - Colours are now "X Soul Piece". To make them stand out more.&#13;
+&#13;
+## Client Fixes&#13;
+- Fixed Main Screen Button layout. Settings are now selectable again.&#13;
+- Fixed Auto-unlocking Everhood 1 and Bird Island in Door Key mode.&#13;
+- Death Coin from completing Bird Island should now correctly collect.&#13;
+- Updated Multiclient.net to 6.7.1. (Now more stable in larger syncs/asyncs)&#13;
+- Door Key Off fixes:&#13;
+  - Home Town door now correctly spawns after defeating dragon.&#13;
+  - Everhood 1 door will now spawn after entering Everhood 1 once.&#13;
+  - No longer can activate the final sequence without having completed Everhood 1. (Could teleport back after defeating Dmitri)&#13;
+- Softlock fixes:&#13;
+  - Force open the East Gate in the Mining Base Tunnels if you have defeated Gorilla once.&#13;
+  - Can now trigger the briefing cutscene to get to the castle again in the Veggie War.&#13;
+  - No longer get stuck trying to start the final Mushroom Bureau cutscene if you did not complete either side.&#13;
+  - Fixed loading into Tutorial Spaceship no longer allowing you to interact with Boatman.&#13;
+&#13;
+## AP World fixes&#13;
+- Fixed Hilbert Hotel and VIP Ticket not requiring its keys logically in non-door key options.&#13;
+- Actually add Bird Island and Everhood keys.&#13;
+- Fixed multiple issues with additional hub 1 areas and act 2 settings, when not doing door keys.&#13;
+- Actually made Irvine Pocket Dimension reliant on finishing Mushroom Bureau when not doing door keys.&#13;
+- A number of minor logic errors that were caught in the rewrite.&#13;
+&#13;
+# Installation&#13;
+### Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+1. Download MelonLoader.Installer.exe from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Choose the automated tab, click the select button and browse to `Everhood 2.exe`.&#13;
+    - You can find the folder in steam by finding the game in your library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+    - If you click the bar at the top telling you your current folder, this will give you a path you can copy. If you paste that into the window popped up by **MelonLoader**, it will automatically go to the same folder.&#13;
+3. The launcher will automatically default to the latest version. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.6.6.**&#13;
+4. Click install. Once finished run the game once.&#13;
+&#13;
+### Mod Install&#13;
+&#13;
+1.Download `ArchipelagoEverhood.zip`.&#13;
+2. Head to the Everhood folder and open up `/mods/`.&#13;
+3. Extract the contents of the .zip file into mods.&#13;
+   - Ensure that `ArchipelagoEverhood.dll` and `Archipelago.MultiClient.Net.dll` are under `/mods/` and not within a sub folder.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.2"/>
   </entry>
 </feed>
