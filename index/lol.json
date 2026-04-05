@@ -1,7 +1,10 @@
 {
   "description": "League of Legends (LoL), commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games.",
   "game": "League of Legends",
-  "github": "https://github.com/gaithernOrg/LoLAP",
+  "github": [
+    "https://github.com/gaithernOrg/LoLAP",
+    "https://github.com/kbab13reel/Archipelago"
+  ],
   "license": null,
   "manifest_fields": [],
   "versions": {
@@ -242,6 +245,34 @@
       "title": "LOL_AP v0.1.5",
       "version_simple": "0.1.5",
       "world_version": "0.1.5"
+    },
+    "lol_0.2.0": {
+      "created_at": "2026-03-18T23:02:06Z",
+      "description": "- ARAM mode: only enables Tower, Inhibitor, Assists, and Kills checks\r\n- Added champion-specific Enemy Nexus Destroyed locations\r\n- Added filler items to the LoL world item pool, Option to set the number of LP in the item pool\r\n- Added co-op mode support in the connector: can count selected teammates actions toward checks\r\n- Increased the maximum starting champion count\r\n- Added yaml-less Universal Tracker support",
+      "download_url": "https://github.com/kbab13reel/Archipelago/releases/download/lol_0.2.0/lol.apworld",
+      "has_manifest": false,
+      "hash_sha256": "f6f87c868bcb867999e794ab6fb65cbfe2f8527d1c527b9076345d29a0d15871",
+      "html_url": "https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.0",
+      "size": 9237,
+      "source_url": "https://api.github.com/repos/kbab13reel/Archipelago",
+      "tag": "lol_0.2.0",
+      "title": "LoL_AP v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "lol_0.2.1": {
+      "created_at": "2026-04-04T13:52:32Z",
+      "description": "- Enabled Checks option: You can decide which checks to enable, no more ARAM mode or \"everything\", tune it however you want.\r\n  - _ARAM mode option **removed, MAKE SURE TO REDO YOUR YAMLS** (check the enabled_checks option description)_\r\n- Win Completes Champion option: Makes a game win trigger the remaining checks for the played champion.\r\n- Disable special treatment for support champions (they\u2019ll have the \u201ckill X champions\u201d check instead of vision score).\r\n- Connector improvements: Displays remaining checks for each character, champion table is sortable by columns.\r\n",
+      "download_url": "https://github.com/kbab13reel/Archipelago/releases/download/lol_0.2.1/lol.apworld",
+      "has_manifest": false,
+      "hash_sha256": "b06aab52a6df2e808fdfb563dbe94c2fc75b4c9650a033aa43b90d942ac662d0",
+      "html_url": "https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.1",
+      "size": 11432,
+      "source_url": "https://api.github.com/repos/kbab13reel/Archipelago",
+      "tag": "lol_0.2.1",
+      "title": "LoL_AP v0.2.1",
+      "version_simple": "0.2.1",
+      "world_version": "0.2.1"
     }
   }
 }
