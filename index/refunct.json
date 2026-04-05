@@ -436,6 +436,21 @@
       "title": "Refunct for Archipelago v0.9.0",
       "version_simple": "0.9.0",
       "world_version": "0.9.0"
+    },
+    "v1.0.0": {
+      "created_at": "2026-04-04T20:26:38Z",
+      "description": "# Version 1.0.0 of Refunct for Archipelago! \ud83e\udd73 \ud83c\udf86 \r\n\r\nThe first version I consider \"feature-complete\" so it deserves the version 1.0.0 name! More to come though \ud83d\ude03 \r\nAll of this wouldn't have been possible without the help of Oberien and Luke Saward from the Refunct Community and Nielrenned and Nepcore from the Archipelago Discord! \u2764\ufe0f \r\nAlso big thanks to everyone in both discords for feedback and reactions!! And to 360chrism for spreading this game far and wide!\r\n\r\n\u26a0\ufe0f You will need a new yaml :)\r\n\r\n## Changes\r\n### Gameplay\r\n- Buttons (and platforms below buttons) in the main mode are now also proper checks. (thanks @nielrenned)\r\n- The final cluster, `Cluster 31`, is now part of the main mode and has several platform checks and a button check. (thanks @nielrenned)\r\n- You can now select a button to be the victory condition. The option is now called `Goal` instead of `Final Platform`.\r\n- Added a new minigame: Refunct Mountain, in which you play the vanilla game with just jump, jump pads, and... DASH??? Press E to use the dash. _This minigame is off by default because you can't rebind the controls in-game (yet)._\r\n### Smaller gameplay changes\r\n- Pressing a button in the main game mode also automatically pressed the platform below it (because it can be hard to touch the platform).\r\n- Reworked how \"unknown\" goals work, especially with a button as a goal (it shows a yellow beam but only after you've found it).\r\n- Extra cubes in the main mode are now spawned directly after clicking new game, which reduces lag when starting the main game mode.\r\n- Seeker minigame locations work different now, first it was platform `#1`, `#2`, `#3` etc, now locations are called `Seeker Minigame: Platform 28-20` for example.\r\n- Added 1 more block to Climb Minigames so we know for sure 100m is reachable without jumping.\r\n- Some minor logic optimizations.\r\n- The `debug.bat` now prints the full error trace which might help with troubleshooting.\r\n### UI\r\n- The menu top-left also has a background now which should make it much easier to read.\r\n- The UI now shows in the main game mode if you can collect cubes and extra cubes. It doesn't show this line if cubes are fully disabled.\r\n### Apworld\r\n- The Climb Minigames are now separated into three minigames in the options.\r\n- Added `Clusters`, `Minigames` and `Abilities` item groups.\r\n- Increased the max minigame limit to 9.\r\n- Renamed \"Final Platform\" to \"Goal Location\".\r\n### Misc changes\r\n- The log now shows if you are on the latest version.\r\n- Fixed the issue that the game would crash with the wrong login info.\r\n- Updated the README with more troubleshooting. (thanks @nepcore for all the people you've helped setting up the game)\r\n### Map editor\r\n- Maybe in the future it will be possible to add custom levels as AP levels. Press CTRL+SHIFT+M to open the Map Editor mode (this already existed in the original mod). More info about custom level submissions for this project is pinned in the AP discord (I'm picky \ud83d\ude04).",
+      "download_url": "https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.0.0/refunct.apworld",
+      "has_manifest": true,
+      "hash_sha256": "966c3325e87ebd135ecb5e12455c7d5c2206e2ff087efbc1636bed8b693c8ba3",
+      "html_url": "https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.0.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 16352,
+      "source_url": "https://api.github.com/repos/spinerak/refunct-tas-archipelago",
+      "tag": "v1.0.0",
+      "title": "Refunct for Archipelago v1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
     }
   }
 }
