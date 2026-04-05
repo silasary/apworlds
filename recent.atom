@@ -2,145 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-05T00:23:31.647357+00:00</updated>
+  <updated>2026-04-05T06:29:11.909789+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/SWCreeperKing/Slimipelago/releases/tag/v0.2.4</id>
-    <title>Slime Rancher v0.2.3</title>
-    <updated>2026-03-30T22:09:30+00:00</updated>
-    <author>
-      <name>SW_CreeperKing</name>
-    </author>
-    <content>- [Client] Fixed a bug with DeathLink having delayed deaths&#13;
-- [Client] Buffed Progressive Market Stonks from +5% to +20%&#13;
-- [Client] Fixed a bug with 2 missing note locations&#13;
-- [Client] Support for DeathLink Groups</content>
-    <link href="https://github.com/SWCreeperKing/Slimipelago/releases/tag/v0.2.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/silasary/APxiv/releases/tag/0.27.0</id>
-    <title>Final Fantasy XIV v0.27.0</title>
-    <updated>2026-03-31T01:06:05+00:00</updated>
-    <author>
-      <name>silasary</name>
-    </author>
-    <content>* Added The Merchant's Tale&#13;
-* Changed mcguffin count to be dynamic.  The yaml setting is now a percentage.&#13;
-* Changed Dzemael Darkhold and The Howling Eye to be Level 44 instead of 46 (The minimum level to enter, rather than the level you get synced down to).  This puts them in the lvl45 bracket instead of the already crowded lvl50 bracket.&#13;
-&#13;
-* A whole lot of optimizations&#13;
-* Unused progression items are now removed from the pool.  No raid keys if you're not doing raids, no zone access if there's no reason to go there.  This was a huge amount of work under the hood, but should lead to a better experience.&#13;
-* Removed some redundant yaml settings&#13;
-* Updated to use RuleBuilder if you're on 0.6.7 or later (This is very good for generation speed)&#13;
-* If you generate a particularly small world, the generator can now choose less than 5 progression jobs.&#13;
-* Better error messages when you make a yaml that is physically unplayable (The fuzzer figured out that you can submit a yaml where your first check is in Bozja)</content>
-    <link href="https://github.com/silasary/APxiv/releases/tag/0.27.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/silasary/APxiv/releases/tag/0.27.1</id>
-    <title>Final Fantasy XIV v0.27.1</title>
-    <updated>2026-03-31T04:44:16+00:00</updated>
-    <author>
-      <name>silasary</name>
-    </author>
-    <content>* Fixed some Fishsanity bugs</content>
-    <link href="https://github.com/silasary/APxiv/releases/tag/0.27.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.0</id>
-    <title>Donkey Kong Country 2 v3.1.0</title>
-    <updated>2026-03-31T05:35:46+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>### Final content update!&#13;
-### Download trivia here (mandatory to play, not to generate): &lt;https://github.com/TheLX5/DKC2-Trivia/releases/latest&gt;&#13;
-# Info&#13;
-* Only the US 1.1/Rev 1 version is supported&#13;
-  * MD5 US 1.1: `d323e6bb4ccc85fd7b416f58350bc1a2`&#13;
-* Universal Tracker support&#13;
-# Changes&#13;
-* FxPak: Ensures everything works properly (Mainly for QUsb2Snes users)&#13;
-* Implemented Rule Builder (bumps AP version to 0.6.7 minimum)&#13;
-  * ~~Stolen from Astalon~~ tl;dr better UT `/explain` and `/get_logical_path` support&#13;
-* KONG letter progress is saved between levels loads&#13;
-* Added an Adjuster/Manager tool&#13;
-  * The UX is very questionable, but it should work mostly fine&#13;
-* Added an adjuster option that allows you to guarantee DK Coins and G Letters in goals (Global)&#13;
-* Added an adjuster option that allows you to fully randomize which rewards are available at goals (Global)&#13;
-* Added a counter in each world that tells you how many level clears or McMuffins are required&#13;
-* Moved all of the Swanky Trivia options to the adjuster, they work in a global basis instead per YAML&#13;
-* Moved the trivia database to an independent APWorld&#13;
-* Removed custom trivia support from the APWorld (sorry if anyone was actually using this)&#13;
-* DeathLink: Deaths should no longer be sent when dying in a level and proceed to get into a "shop" level immediately after&#13;
-* Client: It's now possible to request several barrels at once with `/request`&#13;
-* Squawks now allows using backup barrels&#13;
-* Some changes to the death/hurt table, players can now die in several new kong states&#13;
-* Disabled being able to select Files 2 and 3 in the File Select menu&#13;
-* Cranky hints no longer consider events&#13;
-* Fixed a Cranky text variation that ended up displaying part of the next hint on the last line&#13;
-* Fixed Kongs phasing through Air Balloons when hit with an extra hit active&#13;
-* Fixed Kackle stopping when hitting the player when they only have one Kong unlocked and they have an extra hit active&#13;
-* Fixed K. Rool ignoring extra hits when hitting with his blunderbuss</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/tag/V0.3.2</id>
-    <title>Hunie Cam Studio v0.3.2</title>
-    <updated>2026-03-31T07:53:25+00:00</updated>
-    <author>
-      <name>Dotsofdarkness</name>
-    </author>
-    <content>- fixed error with archipelago seeds starting with 0&#13;
-- made tutorials auto skip after collecting initial girl&#13;
-- fixed APWorld version not displaying correctly&#13;
-&#13;
-V0.3.1 changelog&#13;
-- (Client) Added a check to see if your connecting from the same server as the last connection to allow for continuing a save (NOTE will only work on saves started after updating)&#13;
-&#13;
-V0.3.0 changelog&#13;
-- fixed client not sending completion to server&#13;
-- fixed "$goal" working before reaching day 22 and not working afterwards&#13;
-&#13;
-&#13;
-&#13;
-INSTALLATION INSTRUCTIONS:&#13;
-&#13;
-CLIENT:&#13;
-- Have Hunie Cam Studio Installed&#13;
-- Download Hunie Cam Studio Archipelago plugin (See Releases for latest version)&#13;
-- Extract and copy the contents of "Hunie Cam Studio Archipelago Client v#.#.#.zip" to the directory where "HunieCamStudio.exe" is&#13;
-&#13;
-APWORLD (needed for generating archieplago game):&#13;
-- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
-- Download Spirit Valley APWorld (See Releases for latest version)&#13;
-- Select "Install APWorld" in launcher and select Hunie Cam Studio APWorld you downloaded&#13;
-- Restart launcher for APWorld to properly install&#13;
-- (Optional but Recomended)Select "Generate Template Options" to generate default Hunie Cam Studio YMAL</content>
-    <link href="https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/tag/V0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.1</id>
-    <title>Pokemon Crystal v5.4.1</title>
-    <updated>2026-03-31T14:02:16+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## Features&#13;
-- Pokegear parts and berry trees are now plando'd to their original locations when they are not randomized and remote items is on.&#13;
-- :3&#13;
-&#13;
-## Bug Fixes&#13;
-- Better marts now only affects the Pokecenter 2F mart, instead of overwriting all standard marts.&#13;
-&#13;
-_This release is backwards compatible with seeds generated on 5.4.0_</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.1"/>
-  </entry>
   <entry>
     <id>https://github.com/BK-Simulator/BK-Simulator/releases/tag/1.0.2</id>
     <title>BKSimulator v1.0.2</title>
@@ -497,6 +363,19 @@ Basically all it does is makes lets you choose the options and then downloads th
     <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.4.2"/>
   </entry>
   <entry>
+    <id>https://github.com/Silvris/Archipelago/releases/tag/mhfu_0.0.1</id>
+    <title>Monster Hunter Freedom Unite v0.0.1</title>
+    <updated>2026-04-01T04:29:12+00:00</updated>
+    <author>
+      <name>Silvris</name>
+    </author>
+    <author>
+      <name>IncognitoMan</name>
+    </author>
+    <content>* Initial release.</content>
+    <link href="https://github.com/Silvris/Archipelago/releases/tag/mhfu_0.0.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/barretg/Taskipelago/releases/tag/v0.5.3</id>
     <title>Taskipelago v0.5.3</title>
     <updated>2026-04-01T06:37:50+00:00</updated>
@@ -607,6 +486,16 @@ Download a new apworld and options template below and have a good one! If this i
 &#13;
 **Full Changelog**: https://github.com/aXu-AP/archipelago-double-dash/compare/v0.3.0...v0.3.1</content>
     <link href="https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.0.1</id>
+    <title>Pokemon Pinball Ruby &amp; Sapphire v0.0.1</title>
+    <updated>2026-04-01T18:43:09+00:00</updated>
+    <author>
+      <name>Silvris</name>
+    </author>
+    <content>* Initial release.</content>
+    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.0.1"/>
   </entry>
   <entry>
     <id>https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/tag/v2.0.10</id>
@@ -874,6 +763,19 @@ Bug Fixes:&#13;
     <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR5"/>
   </entry>
   <entry>
+    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.0.2</id>
+    <title>Pokemon Pinball Ruby &amp; Sapphire v0.0.2</title>
+    <updated>2026-04-03T00:41:44+00:00</updated>
+    <author>
+      <name>Silvris</name>
+    </author>
+    <content># Bug Fixes&#13;
+* Fix Pichu not being implemented in the client&#13;
+* Fix Sapphire Ocean and Wilderness being swapped&#13;
+* Fix being unable to activate the Special Guests card.</content>
+    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.0.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.1.0</id>
     <title>Factorio: Space Age v2.1.0</title>
     <updated>2026-04-03T01:17:29+00:00</updated>
@@ -941,6 +843,29 @@ APWORLD (needed for generating archieplago game):&#13;
 - Restart launcher for APWorld to properly install&#13;
 - (Optional but Recomended)Select "Generate Template Options" to generate default spirit valley YMAL</content>
     <link href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.7.0</id>
+    <title>Final Fantasy X v0.7.0</title>
+    <updated>2026-04-03T13:22:59+00:00</updated>
+    <author>
+      <name>Rurusachi</name>
+    </author>
+    <author>
+      <name>Andrewki</name>
+    </author>
+    <content>## FFX Apworld v0.7.0&#13;
+&#13;
+### Feature&#13;
+- Overdrive Items &amp; Locations (@Andrewki44)&#13;
+- Encounter weights for capturing (@EvelynTSMG)&#13;
+&#13;
+### Maintenance&#13;
+- Logic refactor for RuleBuilder (@Andrewki44)&#13;
+&#13;
+### Bug Fixes&#13;
+- Remiem Chocobo Race chests not being excluded properly (@Andrewki44)</content>
+    <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.7.0"/>
   </entry>
   <entry>
     <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.1</id>
@@ -1059,6 +984,21 @@ Only the All Setlists world was changed. No other worlds were affected by this b
 - [Info](&lt;https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md&gt;)&#13;
 - [Setup &amp; Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)</content>
     <link href="https://github.com/asdfwyay/APBuckshot/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.1</id>
+    <title>League of Legends v0.2.1</title>
+    <updated>2026-04-04T13:52:32+00:00</updated>
+    <author>
+      <name>kbab13reel</name>
+    </author>
+    <content>- Enabled Checks option: You can decide which checks to enable, no more ARAM mode or "everything", tune it however you want.&#13;
+  - _ARAM mode option **removed, MAKE SURE TO REDO YOUR YAMLS** (check the enabled_checks option description)_&#13;
+- Win Completes Champion option: Makes a game win trigger the remaining checks for the played champion.&#13;
+- Disable special treatment for support champions (they’ll have the “kill X champions” check instead of vision score).&#13;
+- Connector improvements: Displays remaining checks for each character, champion table is sortable by columns.&#13;
+</content>
+    <link href="https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.1"/>
   </entry>
   <entry>
     <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.5.4</id>
@@ -1196,5 +1136,24 @@ Also big thanks to everyone in both discords for feedback and reactions!! And to
     </author>
     <content/>
     <link href="https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-3</id>
+    <title>Sonic Adventure DX v1.2.1rc0.post0</title>
+    <updated>2026-04-05T01:47:07+00:00</updated>
+    <author>
+      <name>ClassicSpeed</name>
+    </author>
+    <content>## [v1.2.1 pre-release 3] - 2026-04-04&#13;
+&#13;
+### Changed:&#13;
+&#13;
+- Water Tank is now always drained regardless of the Egg Carrier's transformation state.&#13;
+&#13;
+### Fixed:&#13;
+&#13;
+- Fixed starting character option being ignored.&#13;
+- Fixed incorrect logic for emblem requirements around the Egg Carrier.</content>
+    <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-3"/>
   </entry>
 </feed>

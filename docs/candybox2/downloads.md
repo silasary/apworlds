@@ -1,48 +1,9 @@
 # Candy Box 2
 
 ## Latest
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20251006-1/candybox2.apworld">Latest Version (20251006.post1)</a>
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20260210-1/candybox2.apworld">Latest Version (1.20260210.1)</a>
 
 ## All Versions
-
-#### v20251006.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20251006-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20251006-1/candybox2.apworld</a>
-
-#### v20250923.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250923-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250923-1/candybox2.apworld</a>
-
-#### v20250912.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250912-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250912-1/candybox2.apworld</a>
-
-#### v20250831.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250831-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250831-1/candybox2.apworld</a>
-
-#### v20250806.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250806-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250806-1/candybox2.apworld</a>
-
-#### v20250525.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250525-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250525-1/candybox2.apworld</a>
-
-#### v20250524.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250524-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250524-1/candybox2.apworld</a>
-
-#### v20250430.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250430-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250430-1/candybox2.apworld</a>
-
-#### v20250428.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250428-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250428-1/candybox2.apworld</a>
-
-#### v20250426.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250426-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250426-1/candybox2.apworld</a>
-
-#### v20250409.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250409-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250409-1/candybox2.apworld</a>
-
-#### v20250331.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250331-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250331-1/candybox2.apworld</a>
-
-#### v20250326.post1
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20250326-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250326-1/candybox2.apworld</a>
 
 #### v1.20260210.1
 - <a href="https://github.com/vicr123/Archipelago/releases/download/20260210-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20260210-1/candybox2.apworld</a>
@@ -58,6 +19,45 @@
 
 #### v1.20251022.1
 - <a href="https://github.com/vicr123/Archipelago/releases/download/20251022-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20251022-1/candybox2.apworld</a>
+
+#### v0.20251006.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20251006-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20251006-1/candybox2.apworld</a>
+
+#### v0.20250923.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250923-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250923-1/candybox2.apworld</a>
+
+#### v0.20250912.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250912-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250912-1/candybox2.apworld</a>
+
+#### v0.20250831.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250831-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250831-1/candybox2.apworld</a>
+
+#### v0.20250806.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250806-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250806-1/candybox2.apworld</a>
+
+#### v0.20250525.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250525-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250525-1/candybox2.apworld</a>
+
+#### v0.20250524.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250524-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250524-1/candybox2.apworld</a>
+
+#### v0.20250430.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250430-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250430-1/candybox2.apworld</a>
+
+#### v0.20250428.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250428-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250428-1/candybox2.apworld</a>
+
+#### v0.20250426.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250426-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250426-1/candybox2.apworld</a>
+
+#### v0.20250409.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250409-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250409-1/candybox2.apworld</a>
+
+#### v0.20250331.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250331-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250331-1/candybox2.apworld</a>
+
+#### v0.20250326.post1
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20250326-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20250326-1/candybox2.apworld</a>
 
 #### v0.0.0.post33
 - <a href="https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld</a>

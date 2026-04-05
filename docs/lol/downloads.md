@@ -1,9 +1,15 @@
 # League of Legends
 
 ## Latest
-- <a href="https://github.com/gaithernOrg/LoLAP/releases/download/0.1.5/lol.apworld">Latest Version (0.1.5)</a>
+- <a href="https://github.com/kbab13reel/Archipelago/releases/download/lol_0.2.1/lol.apworld">Latest Version (0.2.1)</a>
 
 ## All Versions
+
+#### v0.2.1
+- <a href="https://github.com/kbab13reel/Archipelago/releases/download/lol_0.2.1/lol.apworld">https://github.com/kbab13reel/Archipelago/releases/download/lol_0.2.1/lol.apworld</a>
+
+#### v0.2.0
+- <a href="https://github.com/kbab13reel/Archipelago/releases/download/lol_0.2.0/lol.apworld">https://github.com/kbab13reel/Archipelago/releases/download/lol_0.2.0/lol.apworld</a>
 
 #### v0.1.5
 - <a href="https://github.com/gaithernOrg/LoLAP/releases/download/0.1.5/lol.apworld">https://github.com/gaithernOrg/LoLAP/releases/download/0.1.5/lol.apworld</a>
