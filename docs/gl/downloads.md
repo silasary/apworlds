@@ -1,9 +1,12 @@
 # Gauntlet Legends
 
 ## Latest
-- <a href="https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v2.1.3/gl.apworld">Latest Version (2.1.3)</a>
+- <a href="https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v2.1.4/gl.apworld">Latest Version (2.1.4)</a>
 
 ## All Versions
+
+#### v2.1.4
+- <a href="https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v2.1.4/gl.apworld">https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v2.1.4/gl.apworld</a>
 
 #### v2.1.3
 - <a href="https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v2.1.3/gl.apworld">https://github.com/jamesbrq/GauntletLegendsAP/releases/download/v2.1.3/gl.apworld</a>

@@ -6,7 +6,7 @@ on a mission to save their village from impending doom!
 
 
 ## Downloads
-- <a href="https://github.com/drtchops/Archipelago-Astalon/releases/download/v1.0.0-rc1/astalon.apworld">Latest Version (0.99.1)</a>
+- <a href="https://github.com/drtchops/Archipelago-Astalon/releases/download/v1.0.0-rc2/astalon.apworld">Latest Version (0.99.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
