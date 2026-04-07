@@ -14,6 +14,9 @@
 #### v1.2.1rc0.post0
 - <a href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.1-pre-release-3/sadx.apworld">https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.1-pre-release-3/sadx.apworld</a>
 
+#### v1.2.1rc0.post0
+- <a href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.1-pre-release-4/sadx.apworld">https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.1-pre-release-4/sadx.apworld</a>
+
 #### v1.2.0
 - <a href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.0/sadx.apworld">https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/download/v1.2.0/sadx.apworld</a>
 

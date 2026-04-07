@@ -17,6 +17,9 @@
 #### v1.0.1rc0.post0
 - <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.1-PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.1-PreRelease/Atlyss.apworld</a>
 
+#### v0.1.0
+- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.5-PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.5-PreRelease/Atlyss.apworld</a>
+
 #### v0.0.0+testbuild
 - <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/TestBuild/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/TestBuild/Atlyss.apworld</a>
 

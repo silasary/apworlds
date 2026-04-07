@@ -32,3 +32,6 @@
 #### v0.3.0
 - <a href="https://github.com/spencer2585/APESO/releases/download/0.3.0_PR5/eso.apworld">https://github.com/spencer2585/APESO/releases/download/0.3.0_PR5/eso.apworld</a>
 
+#### v0.3.0
+- <a href="https://github.com/spencer2585/APESO/releases/download/0.3.0_PR6/eso.apworld">https://github.com/spencer2585/APESO/releases/download/0.3.0_PR6/eso.apworld</a>
+

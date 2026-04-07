@@ -2,56 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-06T18:22:00.856720+00:00</updated>
+  <updated>2026-04-07T00:24:40.897226+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/tag/v2.0.11</id>
-    <title>Manual_ResidentEvil4_VincentsSin v2.0.11</title>
-    <updated>2026-04-02T06:18:30+00:00</updated>
-    <author>
-      <name>VincentsSin</name>
-    </author>
-    <content>- Adjusted item categories for SW chapter completion items and weapon exclusive upgrade to prevent them from being generated in the item pool if their relative option is disabled.</content>
-    <link href="https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/tag/v2.0.11"/>
-  </entry>
-  <entry>
-    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.12</id>
-    <title>YARG v0.0.12</title>
-    <updated>2026-04-02T06:32:08+00:00</updated>
-    <author>
-      <name>energymaster22</name>
-    </author>
-    <content># Use Client Version 0.0.5+. No Client Update Required!&#13;
-&#13;
-New:&#13;
-- Support for YARG Setlist 0&#13;
-- "Exclude Songs" option&#13;
-&#13;
-## What's Changed&#13;
-* Add an "Excluded Songs" option to define a list of songs that shouldn't be included as a location. by @Thedrummonger in https://github.com/energymaster22/YARGArchipelago/pull/23&#13;
-* Add YARG Setlist 0 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/25&#13;
-&#13;
-## New Contributors&#13;
-* @Thedrummonger made their first contribution in https://github.com/energymaster22/YARGArchipelago/pull/23&#13;
-&#13;
-**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.11...0.0.12</content>
-    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.12"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/pinballfx3-v1.3.0</id>
-    <title>Pinball FX3 v1.3.0</title>
-    <updated>2026-04-02T13:57:58+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is an important release to make sure the implementation keeps working in the wake of Zen Studio's decision to rebrand of Pinball FX3 to Pinball FX Classic. The executable was modified and renamed (Pinball FX3.exe -&gt; Pinball FX Classic.exe), which could have spelled disaster, but thankfully the pointer chains are still working, so the APWorld just needed to look for the new executable.&#13;
-&#13;
-Note: I will NOT be renaming everything to accommodate said rebrand. It shall remain Pinball FX3 in our hearts forever</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/pinballfx3-v1.3.0"/>
-  </entry>
   <entry>
     <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.4</id>
     <title>Ape Escape 3 v2.0.4</title>
@@ -1007,5 +962,63 @@ Potentially updated spheres gamemode to work (It's gone 1am, I haven't tested th
 - Fixed some restrictive start issues by force disabling 2 option combos.&#13;
 - Removed a redundant item rule</content>
     <link href="https://github.com/FeluciaPS/Archipelago/releases/tag/0.5.2-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-4</id>
+    <title>Sonic Adventure DX v1.2.1rc0.post0</title>
+    <updated>2026-04-06T18:45:43+00:00</updated>
+    <author>
+      <name>ClassicSpeed</name>
+    </author>
+    <content>## [v1.2.1 pre-release 4] - 2026-04-06&#13;
+&#13;
+### Changed:&#13;
+&#13;
+- Added springs to reach the Captain Room door from the Egg Carrier Deck.&#13;
+    - These connections are now in logic for all characters in every logic level.&#13;
+- Adjusted the positions of the two Private Room entrances on the Egg Carrier Deck map for clarity.&#13;
+&#13;
+### Fixed:&#13;
+&#13;
+- Fixed logic issues when starting with the Egg Carrier untransformed.</content>
+    <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR6</id>
+    <title>Elder Scrolls Online v0.3.0</title>
+    <updated>2026-04-06T19:11:54+00:00</updated>
+    <author>
+      <name>Spencer2585</name>
+    </author>
+    <content>This release aims to provide a few features to make the play experience simpler and more streamlined&#13;
+## Whats new&#13;
+&#13;
+- New APESO menu which can currently only be toggled by running the command /showapmenu. The AP menu currently only consists of an options page but future UI features and options will be placed inside this menu.&#13;
+  - Added toggle in Options Menu for debug mode&#13;
+  - added toggle in Options menu for auto running reloadUI when a location is checked&#13;
+&#13;
+- The mod will now automatically run reloadUI when you check a location. This will not happen if you are in combat. If that happens text will appear in chat telling you it could not run reloadUI and you will have to manually run it. If you get an item sent to you that you want immediately, you will still have to run reloadUI manually. If you do not want this feature enabled you can disable it in the previously mentioned AP menu.&#13;
+&#13;
+## Misc&#13;
+- Updated API Version to 101049&#13;
+- Changed  /eso_goal client command to /eso_info to better reflect its function&#13;
+&#13;
+</content>
+    <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-67</id>
+    <title>Borderlands 2 v67</title>
+    <updated>2026-04-06T21:14:40+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-67"/>
   </entry>
 </feed>
