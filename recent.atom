@@ -2,88 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-07T00:24:40.897226+00:00</updated>
+  <updated>2026-04-07T06:37:24.106200+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.4</id>
-    <title>Ape Escape 3 v2.0.4</title>
-    <updated>2026-04-02T14:06:19+00:00</updated>
-    <author>
-      <name>aidanii</name>
-    </author>
-    <content># Ape Escape 3 Archipelago v2.0.4&#13;
-:warning:    **GENERATION CHANGES**&#13;
-## Changes&#13;
-- Added and adjusted some logic for all Logic Difficulties&#13;
-- Added various new tricks for Expert Logic Difficulty (@MrGamerKiller)&#13;
-## Fixes&#13;
-- Fixed erroneous cellphone entries in channel-based Location Groups&#13;
-- Fixed some Options docstrings</content>
-    <link href="https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.3.1</id>
-    <title>Dark Cloud 1 v0.4.3.1</title>
-    <updated>2026-04-02T14:59:22+00:00</updated>
-    <author>
-      <name>Lizardman175</name>
-    </author>
-    <content># Dark Cloud 1 AP Rando v0.4.3.1&#13;
-&#13;
-## Change&#13;
-Quick patch to the client for a rare bug preventing progress on character recruitment.  Will not work with old save files but will work with old worlds on a new save file.&#13;
-&#13;
-No change to the .apworld or .pnach files</content>
-    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.0</id>
-    <title>SMW: Spicy Mycena Waffles v1.3.0</title>
-    <updated>2026-04-02T18:24:14+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <content>THE Poptracker update... sorta? Also Rule Builder™️ support&#13;
-## Info &#13;
-* [Information](https://thelx5.github.io/smw/)&#13;
-* [Full Changelog](https://thelx5.github.io/smw/changelog/#1.3.0)&#13;
-* Probably not backwards compatible with already generated games&#13;
-## Changes&#13;
-* Implemented Rule Builder™️ (bumps AP requirement to 0.6.7)&#13;
-* Added a new option that allows people to run very specific alternate logic&#13;
-* Added PopTracker pack support to Universal Tracker&#13;
-* Universal Tracker now properly tracks levels completed out of logic, showing them with Glitched Logic™️&#13;
-* UT's deferred entrances behavior changed:&#13;
-	* `"off"` will not track anything as expected&#13;
-	* `"default"` will only track levels completed out of logic&#13;
-	* `"on"` will hide future levels, avoiding spoiling level shuffle and will also track levels completed out of logic&#13;
-* Prog+Useful fillers should no longer show up as Filler on Blocks&#13;
-* Client is now forced to wait for server connection before attempting to send any data to the server&#13;
-* Switch Palaces are no longer collect-able&#13;
-* Logic updates:&#13;
-	* CI1 now considers Yoshi to pass the Muncher obstacle&#13;
-	* CSA no longer requires run to be completed&#13;
-	* Outrageous now has proper logic its locations other than the goal&#13;
-	* Outrageous is no longer considered a valid level to get a Yoshi&#13;
-	* VD4 now has proper logic for coin block #8&#13;
-	* Funky now has proper logic for getting a Yoshi&#13;
-	* Funky now has proper logic for getting the flying question block&#13;
-	* FoI4 requires Yoshi or Run to reach the secret exit room&#13;
-	* CI5 added carry | feather requirement to the 1up mushroom block&#13;
-	* DP2 secret exit no longer considers a lone Yoshi to be enough to reach it&#13;
-	* SW5 vine block requires flying to reach it&#13;
-	* BB1 is now considered in logic without Red Switch Palace if Enemy Shuffle is off&#13;
-	* FoI2 is now considered in logic without Stars if Enemy Shuffle is off&#13;
-* Enemy shuffle adjustments:&#13;
-	* VoB2: Removed Spike Tops and Rip Van Fish from the last room</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Uroogla/S3AP/releases/tag/1.3.4</id>
     <title>Spyro 3 v1.3.4</title>
@@ -531,6 +454,30 @@ Also big thanks to everyone in both discords for feedback and reactions!! And to
     </author>
     <content/>
     <link href="https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.5.2</id>
+    <title>Rain World v1.5.2</title>
+    <updated>2026-04-05T00:58:24+00:00</updated>
+    <author>
+      <name>alphappy, SaltySyrup</name>
+    </author>
+    <content># See [the setup page](https://github.com/alphappy/ArchipelagoRW/blob/v1.5.0/worlds/rain_world/docs/setup_en.md) for instructions.&#13;
+# This release is intended to be used with [v1.5.4 of the client](https://github.com/SaltiestSyrup/RWRandomizer/releases/tag/v1.5.4).&#13;
+# Scroll down to Assets to find the player YAML templates and the .apworld.&#13;
+&#13;
+## Player YAML Options&#13;
+- New `use_watcher_passages` option that will enable passage tokens in the Watcher campaign. Utilizing this in-game will require an external mod. (285b16cfa30c5272bc3c1467835e14938ba2e62c)&#13;
+- Submerged Superstructure is now select-able as a starting region (0a3c05b42f4a68d3367e02ddad656b8ec688669f)&#13;
+- Added Fire Egg to Saint's expanded food quest (d105adeb9c1dccdc6d52070e7ac4035d5b336997)&#13;
+&#13;
+## Generation Fixes&#13;
+- Meeting Five Pebbles no longer logically requires The Mark (edc012f627b782f1072c241371c8b0525ab6186f)&#13;
+- Meeting Looks to the Moon as Hunter now logically requires the green neuron (edc012f627b782f1072c241371c8b0525ab6186f)&#13;
+- Wanderer pips once again only count story regions as progress (7098e43da6775612ab47bd1f5156a4bcfefa647d)&#13;
+- Fix Universal Tracker logic failing to account for having Expedition Perks, as well as other issues (e14db699995a36e1c320995b25f12688ea57e36c)&#13;
+- World information has been updated to match the changes made in game version 1.11.7b (e426e2aed4a34d3eb5159ff1253c6489e37fbcc2)</content>
+    <link href="https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.5.2"/>
   </entry>
   <entry>
     <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-3</id>
@@ -1020,5 +967,59 @@ setup instructions on the home page and [readme](https://github.com/EdricY/Bounc
 &#13;
 [sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)</content>
     <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-67"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.5.4</id>
+    <title>Pokemon Stadium v0.5.4</title>
+    <updated>2026-04-07T01:12:58+00:00</updated>
+    <author>
+      <name>jciii91</name>
+    </author>
+    <content>VictoryCondition option should work now. Introduced a fix for the ValueError bug seen in the client sometimes.</content>
+    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.5.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.8.0</id>
+    <title>Casualties: Unknown v0.8.0</title>
+    <updated>2026-04-07T04:04:35+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.8.0&#13;
+This update is NOT compatible with worlds generated on previous versions!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+&#13;
+# Additions&#13;
+- Custom Translation Support&#13;
+	- This is currently only half supported. Text that dynamically changes at runtime and all error messages are translateable. Hardcoded lines of text are not translateable, but will be eventually.&#13;
+	- To create a custom translation, make a copy of the EN.json text file inside the new `lang` folder. Make sure that text inside \&lt;angled brackets\&gt; is left untouched, else things can break.&#13;
+	- To load custom translations, use the newly created `aplang` command *on the main menu*. Using it ingame will ***reset your current run***!&#13;
+- Craftsanity (#38) [APWorld Change]&#13;
+	- Crafting each recipe in the game sends a check. Should be paired with Randomize Recipes and Skillsanity&#13;
+- Minigame Randomization [APWorld Change]&#13;
+	- Start without minigames, and receive them through Archipelago. YAML option for one item for each minigame, or one item for all minigames&#13;
+	- Suicide and Self Harm are unrandomized, as I don't want to make sensitive players uncomfortable with an item name referencing suicide&#13;
+# Changes&#13;
+- Update to Archipelago 0.6.7 [APWorld Change]&#13;
+- Archipelago Item names are now generic, though the descriptions are still the same&#13;
+- Skillsanity has been moved to the Recipes option group [APWorld Change]&#13;
+- The Experiment dialog system has been removed entirely.&#13;
+	- It was heavily outdated, influenced by basegame mechanics, and would have required a complete rewrite for language support. It may return eventually, but do not count on it.&#13;
+# Fixes&#13;
+- Archipelago Items in Survivor inventories will no longer inherit the name of the last Archipelago Item&#13;
+- Fixed "Material pouch" being named "Material bag" [APWorld Change]&#13;
+- Fixed the Moodlesanity Questboard reroll cooldown not showing for the first second&#13;
+- Fixed the mood increase sound being played when receiving "Despair"&#13;
+- Fixed the main menu being a black screen after disconnecting under rare conditions&#13;
+# Known Issues&#13;
+- Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
+- Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.7.2...v0.8.0</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.8.0"/>
   </entry>
 </feed>
