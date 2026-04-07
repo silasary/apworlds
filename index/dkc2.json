@@ -241,6 +241,21 @@
       "title": "Donkey Kong Country 2 v3.1.0",
       "version_simple": "3.1.0",
       "world_version": "3.1.0"
+    },
+    "dkc2-v3.1.0r2": {
+      "created_at": "2026-03-31T05:35:46Z",
+      "description": "### Final content update!\r\n### Download trivia here (mandatory to play, not to generate): <https://github.com/TheLX5/DKC2-Trivia/releases/latest>\r\n# Info\r\n* Only the US 1.1/Rev 1 version is supported\r\n  * MD5 US 1.1: `d323e6bb4ccc85fd7b416f58350bc1a2`\r\n* Universal Tracker support\r\n# Changes\r\n* FxPak: Ensures everything works properly (Mainly for QUsb2Snes users)\r\n* Implemented Rule Builder (bumps AP version to 0.6.7 minimum)\r\n  * ~~Stolen from Astalon~~ tl;dr better UT `/explain` and `/get_logical_path` support\r\n* KONG letter progress is saved between levels loads\r\n* Added an Adjuster/Manager tool\r\n  * The UX is very questionable, but it should work mostly fine\r\n* Added an adjuster option that allows you to guarantee DK Coins and G Letters in goals (Global)\r\n* Added an adjuster option that allows you to fully randomize which rewards are available at goals (Global)\r\n* Added a counter in each world that tells you how many level clears or McMuffins are required\r\n* Moved all of the Swanky Trivia options to the adjuster, they work in a global basis instead per YAML\r\n* Moved the trivia database to an independent APWorld\r\n* Removed custom trivia support from the APWorld (sorry if anyone was actually using this)\r\n* DeathLink: Deaths should no longer be sent when dying in a level and proceed to get into a \"shop\" level immediately after\r\n* Client: It's now possible to request several barrels at once with `/request`\r\n* Squawks now allows using backup barrels\r\n* Some changes to the death/hurt table, players can now die in several new kong states\r\n* Disabled being able to select Files 2 and 3 in the File Select menu\r\n* Cranky hints no longer consider events\r\n* Fixed a Cranky text variation that ended up displaying part of the next hint on the last line\r\n* Fixed Kongs phasing through Air Balloons when hit with an extra hit active\r\n* Fixed Kackle stopping when hitting the player when they only have one Kong unlocked and they have an extra hit active\r\n* Fixed K. Rool ignoring extra hits when hitting with his blunderbuss",
+      "download_url": "https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.0/dkc2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1d83578d1db1775ccb38d24e8fcb72731e597c5a572497d28616456aff334c72",
+      "html_url": "https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 147306,
+      "source_url": "https://api.github.com/repos/TheLX5/Archipelago",
+      "tag": "dkc2-v3.1.0r2",
+      "title": "Donkey Kong Country 2 v3.1.0",
+      "version_simple": "3.1.0",
+      "world_version": "3.1.0.post2"
     }
   }
 }
