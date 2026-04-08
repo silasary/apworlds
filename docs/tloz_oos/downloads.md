@@ -8,6 +8,9 @@
 #### v20.1.6
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.6/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.6/tloz_oos.apworld</a>
 
+#### v20.1.6
+- <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.7/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.7/tloz_oos.apworld</a>
+
 #### v20.1.5
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.5/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.5/tloz_oos.apworld</a>
 
