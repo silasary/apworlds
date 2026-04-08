@@ -2,25 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-08T06:39:12.260626+00:00</updated>
+  <updated>2026-04-08T12:22:16.450830+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.1</id>
-    <title>Zork Grand Inquisitor v2.1.1</title>
-    <updated>2026-04-03T16:01:19+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is an important release to fix a client crash affecting everyone that tries to connect on 2.1.0&#13;
-&#13;
-The in-client location tracker's ability to track what is in logic at a given moment has been removed. That feature was fundamentally incompatible with the switch to Rule Builder. Universal Tracker has always been the superior tracking solution for Zork Grand Inquisitor anyway. I doubt many people were relying on the in-client tracker.&#13;
-&#13;
-That said, the Tracker tab is still present. It will still mark off what is checked correctly. It will also not activate a game region's set of location checks until you travel to that location in-game. The ? buttons describing how to check each location remain.</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.1"/>
-  </entry>
   <entry>
     <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.04.04</id>
     <title>YARGAllSetlists v26.4.4</title>
@@ -1102,5 +1088,29 @@ Everything from the original native version *should* be present in this one. If 
     </author>
     <content>Fixed warp to start which was set in natzu for debug purposes</content>
     <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.2</id>
+    <title>Pokemon Crystal v5.4.2</title>
+    <updated>2026-04-08T11:35:01+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+Since [5.4.1](https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.1)&#13;
+&#13;
+## Bug Fixes&#13;
+- The Options Creator once again accepts `_All` and `_Random` for options which support it.&#13;
+- Fix a possible game crash when viewing the MORE Pokedex page for a species found on Routes 12, 13 and 32 fishing.&#13;
+- Pokemon revived after being fainted from an Explosion Trap in the overworld will no longer keep any status they had.&#13;
+- Fix running from the Pokecenter 2F battle not always succeeding.&#13;
+- Fix Bug Catching Contest encounters not respecting the more uncaught encounters setting.&#13;
+- `randomize_moves` now accepts `_All` and `_Random`.&#13;
+&#13;
+**This release uses a new patching system which can apply ROM-side fixes to an already generated seed. Simply re-patch your ROM to do this.**&#13;
+&#13;
+_This release is backwards compatible with seeds generated on 5.4.0 or later._</content>
+    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.2"/>
   </entry>
 </feed>
