@@ -4,6 +4,7 @@
   ],
   "game": "",
   "github": "https://github.com/solida1987/Diablo-II-Archipelago",
+  "license": null,
   "manifest_fields": [],
   "versions": {
     "Test-Beta-1.6.0": {
@@ -108,6 +109,7 @@
       "created_at": "2026-03-30T09:30:28Z",
       "description": "## Diablo II Archipelago beta-1.5.1\r\n\r\nBugfix release based on full codebase audit. 12 bugs fixed.\r\n\r\n### Critical Fixes\r\n- **AP Bridge**: Fixed WebSocket dependency missing in packaged build (No module named websockets.asyncio)\r\n- **Save Path**: Fixed save directory detection failing silently - now has 4-level fallback chain with logging\r\n- **SuperUnique Hunts**: Fixed Corpsefire and other hunt kills not registering - added UNITFLAG_ISDEAD check\r\n- **AP Reconnect**: Fixed filler items (gold, stat points, traps) duplicating on reconnect\r\n- **Quest ID Collision**: Fixed duplicate quest ID 57 (Hole Level 1 vs Catacombs Waypoint) - 4 missing locations added\r\n\r\n### Gameplay Fixes\r\n- **Singleplayer Sync**: Gold, stat points, and skill points now show immediately instead of requiring save-exit\r\n- **XP Multiplier**: Fixed counterproductive ExpRatio modification - now correctly divides level thresholds only\r\n- **Assassin Weapons**: Katars (h2h) removed from shops to prevent crash when equipped by non-Assassin classes\r\n- **Skill Points**: Fixed skill points jumping to wrong skills after reload - reinvest now validates against current tree\r\n- **Boss Shuffle**: Improved randomization - retry mechanism ensures 75%+ of bosses actually change position\r\n\r\n### Technical\r\n- Dead monster tracking: circular buffer instead of full reset on overflow\r\n- AP items_received_index: persistent to disk, prevents item loss on bridge restart\r\n- Forward declaration fix for Log() function (compile error prevention)\r\n- Full codebase audit documentation in Research/FULL_CODEBASE_MAP.md\r\n\r\n### Installation\r\n1. Download and extract the ZIP below\r\n2. **Run D2ArchSetup.exe as Administrator**\r\n3. Browse to your Diablo II folder and click Install\r\n4. Launch with **Play Archipelago.exe**\r\n",
       "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.5.1/diablo2_archipelago.apworld",
+      "failed_to_load": "/home/runner/.cache/Archipelago/apworlds/diablo2_archipelago-beta-1.5.1.apworld is not a loadable module",
       "has_manifest": false,
       "hash_sha256": "b7fdebe3fd5691495ead2dc709cd224b856dcbb6e28d2490af8f129d943ef060",
       "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/beta-1.5.1",
