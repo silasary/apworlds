@@ -1,9 +1,12 @@
 # 
 
 ## Latest
-- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.5.1/diablo2_archipelago.apworld">Latest Version (1.5.1)</a>
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Test-Beta-1.6.0/diablo2_archipelago.apworld">Latest Version (1.6.0)</a>
 
 ## All Versions
+
+#### v1.6.0
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Test-Beta-1.6.0/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Test-Beta-1.6.0/diablo2_archipelago.apworld</a>
 
 #### v1.5.1
 - <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.5.1/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/beta-1.5.1/diablo2_archipelago.apworld</a>

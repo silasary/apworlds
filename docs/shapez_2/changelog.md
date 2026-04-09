@@ -1,6 +1,14 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 0.99.6
+
+- Fixed generation failures on AP 0.6.7
+
+## Is this version compatible with older multiworld slots?
+Manual-like client yes, back to 0.99.0
+UT will probably be inaccurate for worlds generated prior to 0.99.5
+
 ## 0.99.5 (Hexagonal update)
 
 - Added the hexagonal shape configuration

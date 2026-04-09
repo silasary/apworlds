@@ -230,6 +230,21 @@
       "title": "Wario palette swap! (Above the Clouds Blue forced filler)",
       "version_simple": "0.0.9",
       "world_version": "0.0.9"
+    },
+    "v0.2.0": {
+      "created_at": "2026-04-08T22:17:47Z",
+      "description": "## Changelog\r\n\r\n### Bug Fixes\r\n\r\n**Omodon graphical glitch**\r\nFixed the weird Omodon enemy issue, where when he was lifted his sprite exploded. He is now back to normal.\r\n\r\n**Restored Bird in N1**\r\nBird has been reinstated in N1. Say goodbye to the Hammerbot in N1, they'll be back in enemizer!\r\n\r\n**Grab + jumping bug**\r\nJumping while grabbing was automatically acting as if you had high jump boots. This has now been restored to normal jump if high jump boots aren't acquired.\r\n\r\n**Magnifying glass offset**\r\nStarting with mag glass offset was changed and not working. It's now working.\r\n\r\n**Start with Axe offset**\r\nSame class of issue as above, corrected offset (this was working, but still needed to be adjusted regardless). \r\n\r\n**Golf out-of-bounds fix**\r\nFixed the out of bounds glitch in Golf where the paragoomba would get stuck. Now floats back to your last position.\r\n\r\n**Garlic + uncracked block**\r\nTier 1 overalls can no longer break uncracked blocks from above when you have Overalls 1 + Garlic. This was an unintended bug.\r\n\r\n**Lead overalls landing**\r\nThis has been corrected. Overalls 1 & 2 both have the correct sound associated with them now.\r\n\r\n**Potential bug fix for disappearing treasures**\r\nHopefully fixed this bug. Needs more testing to confirm, but did not see anything missing. I believe this issue was either due to no safeguard in place, or potentially related to the Omodon graphical issue as well (framesets were accidentally moved when key as treasures was implemented). Please let me know if you run into this bug!\r\n\r\n---\r\n\r\n### New Apworld Options\r\n\r\n**I Hate Golf**\r\nAuto-wins the golf mini-game on entry. You're welcome. DO NOT USE THIS IN THE GOLF BUILDING. IT IS BUGGED.\r\n\r\n**Reduce Flashing**\r\nDisables palette cycling in flashing rooms for those with photosensitivity . Enabled automatically when background palette shuffles are active.\r\n\r\n**New Palette Options**\r\nYou can now change your background palette. Simple is a little less aggressive with the hue shift, full will show a stronger difference. Both can be a bit jarring in some levels. The flashing rooms are automatically off with this setting due to how jarring it can be.\r\n\r\n---\r\n\r\nThis is an unstable build that needs to be tested. Once this has been more thoroughly tested, I will update this message (as stable). \r\n\r\nPlease report any bugs you see!\r\n\r\n###",
+      "download_url": "https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v0.2.0/wl3.apworld",
+      "has_manifest": false,
+      "hash_sha256": "bf6fedc8a6701350e9b007a54f3947a18f4465e681ae8aace905b07663c9dd57",
+      "html_url": "https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/tag/v0.2.0",
+      "prerelease": true,
+      "size": 75351,
+      "source_url": "https://api.github.com/repos/RvPA-Roopa/Wario-Land-3-Archipelago",
+      "tag": "v0.2.0",
+      "title": "LOTS of bugfixes, and some new QoL cosmetics settings",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }

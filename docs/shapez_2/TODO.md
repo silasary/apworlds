@@ -17,6 +17,7 @@ item descriptions
 datapackage settings
 shape upgrader as alternative to downgrader, with option to toggle between both algorithms
 secret code option, effect TBD
+item descriptions
 
 ### Technical stuff
 

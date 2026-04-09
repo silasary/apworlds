@@ -1,9 +1,19 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 1.0.3
+
+- Fixed Vaporeon, Flareon, and Jolteon not being flagged as missions-only
+
+### Is this version compatible with older multiworld slots?
+Back to 1.0.1 yes, further back maybe but probably no (the client will tell you whether you have to downgrade)
+
 ## 1.0.2
 
 - Fixed goal potentially not being sent if deconnected from the server at least once
+
+### Is this version compatible with older multiworld slots?
+Back to 1.0.1 yes, further back maybe but probably no (the client will tell you whether you have to downgrade)
 
 ## 1.0.1
 
