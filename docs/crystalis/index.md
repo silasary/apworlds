@@ -10,8 +10,6 @@ to find himself in a strange, post-apocalyptic world. Explore the land and fight
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Crystalis">English</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 

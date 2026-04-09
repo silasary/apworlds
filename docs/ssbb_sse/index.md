@@ -4,7 +4,7 @@ the subspace emissary
 
 
 ## Downloads
-- <a href="https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.1.2/ssbb_sse.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.1.3/ssbb_sse.apworld">Latest Version (0.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

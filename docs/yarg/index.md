@@ -6,7 +6,7 @@ and maybe get some free items from your fans!
 
 
 ## Downloads
-- <a href="https://github.com/energymaster22/YARGArchipelago/releases/download/0.0.12/yarg.apworld">Latest Version (0.0.12)</a>
+- <a href="https://github.com/energymaster22/YARGArchipelago/releases/download/0.0.13/yarg.apworld">Latest Version (0.0.13)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
