@@ -6,7 +6,7 @@ and maybe get some free items from your fans!
 
 
 ## Downloads
-- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.04.04/YARGGuitarHero1.apworld">Latest Version (26.4.4)</a>
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.04.09/YARGGuitarHero1.apworld">Latest Version (26.4.9)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
