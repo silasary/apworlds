@@ -1,4 +1,4 @@
-# 
+# OpenTTD Cargolock
 
 ## Latest
 - <a href="https://github.com/kbab13reel/openttd-archipelago/releases/download/0.1.1/openttd_cargolock.apworld">Latest Version (0.1.1)</a>

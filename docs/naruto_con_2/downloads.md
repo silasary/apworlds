@@ -1,4 +1,4 @@
-# 
+# Naruto Clash of Ninja 2
 
 ## Latest
 - <a href="https://github.com/richarm4/Archipelago/releases/download/ncon2-0.1.0/naruto_con_2.apworld">Latest Version (2.post0)</a>

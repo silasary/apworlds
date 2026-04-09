@@ -1,6 +1,7 @@
-# 
+# Naruto Clash of Ninja 2
 
-
+Naruto Clash of Ninja 2 is a 3D fighting game where you dunk on people as ninjas.
+Or something like that.
 
 
 ## Downloads
