@@ -2,55 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-10T12:19:02.465487+00:00</updated>
+  <updated>2026-04-10T18:23:09.423264+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/barretg/Taskipelago/releases/tag/v0.6</id>
-    <title>Taskipelago v0.6</title>
-    <updated>2026-04-05T07:40:48+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content># Version 0.6&#13;
-Major version update refactoring the apworld to use the new Rule Builder for cleaner code and maintainability, as well as some feature additions. Requires Archipelago version 0.6.7+ for generation.&#13;
-&#13;
-## Features, Improvements, and Changes&#13;
-* Goal task can now be selected&#13;
-* Refactor apworld to use new Rule Builder API&#13;
-* Refactor apworld into several files to conform to standard practice better&#13;
-* QOL: empty rewards now automatically populate as filler items on YAML export&#13;
-* QOL: Item names actually reflect the reward names in the multiworld&#13;
-&#13;
-## Bug fixes&#13;
-* Checklist no longer marks tasks completed just because their reward has been collected by the multiworld.</content>
-    <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.27</id>
-    <title>Universal Tracker v0.2.27</title>
-    <updated>2026-04-05T07:50:16+00:00</updated>
-    <author>
-      <name>FarisTheAncient</name>
-    </author>
-    <content>## What's Changed&#13;
-* clean up commands when we aren't using them to not crash /help by @qwint in https://github.com/FarisTheAncient/Archipelago/pull/122&#13;
-* Use the size from the `map_locations` when specified, otherwise fallback on map size. by @Jouramie in https://github.com/FarisTheAncient/Archipelago/pull/125&#13;
-* Improve item creation error logging by @Ars-Ignis in https://github.com/FarisTheAncient/Archipelago/pull/127&#13;
-* we broke nogui again by @qwint in https://github.com/FarisTheAncient/Archipelago/pull/129&#13;
-* Document map integration missing features by @Jouramie in https://github.com/FarisTheAncient/Archipelago/pull/128&#13;
-* Finally Document the powershell script from digiholic &#13;
-* fully rebuilt the rendering for get_logical_path, we now use rule builder for each entrance and give worlds the ability to override entrance rending with the new override `explain_path`&#13;
-&#13;
-## New Contributors&#13;
-* @Jouramie made their first contribution in https://github.com/FarisTheAncient/Archipelago/pull/125&#13;
-* @Ars-Ignis made their first contribution in https://github.com/FarisTheAncient/Archipelago/pull/127&#13;
-&#13;
-**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.2.26...Tracker_v0.2.27</content>
-    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.27"/>
-  </entry>
   <entry>
     <id>https://github.com/barretg/Taskipelago/releases/tag/v0.7-beta</id>
     <title>Taskipelago v0.7b0</title>
@@ -1073,5 +1029,59 @@ Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
 - Max Advancement Count set to Amount of Advancements in Archipelago Mod, will increase when modded advancements are properly added&#13;
 - Added new goal option for collecting unique items as a goal (It's recommended that the count is set to a high number when using this). This Option can be used on its own, or in addition to other Goals</content>
     <link href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.0.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.1</id>
+    <title>Anodyne v0.6.1</title>
+    <updated>2026-04-10T13:37:44+00:00</updated>
+    <author>
+      <name>SephDB</name>
+    </author>
+    <author>
+      <name>PixieCatSupreme</name>
+    </author>
+    <content>- Fixed some logic errors in Apartment, Mountain Cavern and at the Final Gate.</content>
+    <link href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.3</id>
+    <title>The Legend of Zelda - Spirit Tracks v0.7.3</title>
+    <updated>2026-04-10T18:00:29+00:00</updated>
+    <author>
+      <name>DayKat</name>
+    </author>
+    <author>
+      <name>1313e</name>
+    </author>
+    <author>
+      <name>Carrotinator</name>
+    </author>
+    <author>
+      <name>TriforceDrummer</name>
+    </author>
+    <author>
+      <name>Nepecute</name>
+    </author>
+    <content>Compatible with seeds generated in v0.7.x&#13;
+[Setup guide and useful info](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/setup.md)&#13;
+&#13;
+## Bugfixes&#13;
+- Add an attribute to items for “don’t immediately receive that item in theses rooms”, to prevent song statue crashes and more. Some cases were previously hard coded.&#13;
+- added client implementation of goal location in dungeon cause apparently i forgot that.&#13;
+- made sure carben restoration song logic didn't bypass boomerang requirements&#13;
+- fixed typos on buried chests&#13;
+- fixed typo on floor number for zelda's spirit flute location&#13;
+- really worked through papuzia flags and crash states, and fixed the case family that was probably causing the crashes&#13;
+- fixed invisible carben crash&#13;
+- added north island sanctuary with song of birds to hard logic&#13;
+- fixed ToS 4 missing whip in logic to reach 15F&#13;
+- fixed some faulty logic in ToS 5&#13;
+- added entering moutain temple from fire source to logic&#13;
+- fixed the hitbox for mountain temple 2f left chest&#13;
+- fixed goron village to se cave portal checking the wrong track for access&#13;
+- fixed some faulty flags in goron village&#13;
+- fixed anouki song of discovery chest sometimes not working (was not checking potion slot 2)&#13;
+- tweaked some kenzo av flags</content>
+    <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.3"/>
   </entry>
 </feed>
