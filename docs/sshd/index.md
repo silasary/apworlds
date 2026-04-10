@@ -1,6 +1,10 @@
 # Skyward Sword HD
 
+The Legend of Zelda: Skyward Sword HD for Ryujinx
 
+An epic adventure where Link must rescue Zelda and stop the Demon King Ghirahim.
+Travel between the Surface and Sky, explore dungeons, and collect items across
+a vast interconnected world.
 
 
 ## Downloads
