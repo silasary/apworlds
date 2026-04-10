@@ -5,7 +5,7 @@ Play a random assortment of maps to collect medals until you can complete the go
 
 
 ## Downloads
-- <a href="https://github.com/Matt41321/Archipelago/releases/download/v0.5.2/bloonstd6.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/Matt41321/Archipelago/releases/download/v0.5.3/bloonstd6.apworld">Latest Version (0.5.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

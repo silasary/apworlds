@@ -2,109 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-10T06:38:57.547488+00:00</updated>
+  <updated>2026-04-10T12:19:02.465487+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.0.0</id>
-    <title>Refunct v1.0.0</title>
-    <updated>2026-04-04T20:26:38+00:00</updated>
-    <author>
-      <name>Spineraks</name>
-    </author>
-    <content># Version 1.0.0 of Refunct for Archipelago! 🥳 🎆 &#13;
-&#13;
-The first version I consider "feature-complete" so it deserves the version 1.0.0 name! More to come though 😃 &#13;
-All of this wouldn't have been possible without the help of Oberien and Luke Saward from the Refunct Community and Nielrenned and Nepcore from the Archipelago Discord! ❤️ &#13;
-Also big thanks to everyone in both discords for feedback and reactions!! And to 360chrism for spreading this game far and wide!&#13;
-&#13;
-⚠️ You will need a new yaml :)&#13;
-&#13;
-## Changes&#13;
-### Gameplay&#13;
-- Buttons (and platforms below buttons) in the main mode are now also proper checks. (thanks @nielrenned)&#13;
-- The final cluster, `Cluster 31`, is now part of the main mode and has several platform checks and a button check. (thanks @nielrenned)&#13;
-- You can now select a button to be the victory condition. The option is now called `Goal` instead of `Final Platform`.&#13;
-- Added a new minigame: Refunct Mountain, in which you play the vanilla game with just jump, jump pads, and... DASH??? Press E to use the dash. _This minigame is off by default because you can't rebind the controls in-game (yet)._&#13;
-### Smaller gameplay changes&#13;
-- Pressing a button in the main game mode also automatically pressed the platform below it (because it can be hard to touch the platform).&#13;
-- Reworked how "unknown" goals work, especially with a button as a goal (it shows a yellow beam but only after you've found it).&#13;
-- Extra cubes in the main mode are now spawned directly after clicking new game, which reduces lag when starting the main game mode.&#13;
-- Seeker minigame locations work different now, first it was platform `#1`, `#2`, `#3` etc, now locations are called `Seeker Minigame: Platform 28-20` for example.&#13;
-- Added 1 more block to Climb Minigames so we know for sure 100m is reachable without jumping.&#13;
-- Some minor logic optimizations.&#13;
-- The `debug.bat` now prints the full error trace which might help with troubleshooting.&#13;
-### UI&#13;
-- The menu top-left also has a background now which should make it much easier to read.&#13;
-- The UI now shows in the main game mode if you can collect cubes and extra cubes. It doesn't show this line if cubes are fully disabled.&#13;
-### Apworld&#13;
-- The Climb Minigames are now separated into three minigames in the options.&#13;
-- Added `Clusters`, `Minigames` and `Abilities` item groups.&#13;
-- Increased the max minigame limit to 9.&#13;
-- Renamed "Final Platform" to "Goal Location".&#13;
-### Misc changes&#13;
-- The log now shows if you are on the latest version.&#13;
-- Fixed the issue that the game would crash with the wrong login info.&#13;
-- Updated the README with more troubleshooting. (thanks @nepcore for all the people you've helped setting up the game)&#13;
-### Map editor&#13;
-- Maybe in the future it will be possible to add custom levels as AP levels. Press CTRL+SHIFT+M to open the Map Editor mode (this already existed in the original mod). More info about custom level submissions for this project is pinned in the AP discord (I'm picky 😄).</content>
-    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.1.5</id>
-    <title>Medievil 2 v0.1.5</title>
-    <updated>2026-04-04T22:19:09+00:00</updated>
-    <author>
-      <name>riezahughes</name>
-    </author>
-    <content/>
-    <link href="https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.5.2</id>
-    <title>Rain World v1.5.2</title>
-    <updated>2026-04-05T00:58:24+00:00</updated>
-    <author>
-      <name>alphappy, SaltySyrup</name>
-    </author>
-    <content># See [the setup page](https://github.com/alphappy/ArchipelagoRW/blob/v1.5.0/worlds/rain_world/docs/setup_en.md) for instructions.&#13;
-# This release is intended to be used with [v1.5.4 of the client](https://github.com/SaltiestSyrup/RWRandomizer/releases/tag/v1.5.4).&#13;
-# Scroll down to Assets to find the player YAML templates and the .apworld.&#13;
-&#13;
-## Player YAML Options&#13;
-- New `use_watcher_passages` option that will enable passage tokens in the Watcher campaign. Utilizing this in-game will require an external mod. (285b16cfa30c5272bc3c1467835e14938ba2e62c)&#13;
-- Submerged Superstructure is now select-able as a starting region (0a3c05b42f4a68d3367e02ddad656b8ec688669f)&#13;
-- Added Fire Egg to Saint's expanded food quest (d105adeb9c1dccdc6d52070e7ac4035d5b336997)&#13;
-&#13;
-## Generation Fixes&#13;
-- Meeting Five Pebbles no longer logically requires The Mark (edc012f627b782f1072c241371c8b0525ab6186f)&#13;
-- Meeting Looks to the Moon as Hunter now logically requires the green neuron (edc012f627b782f1072c241371c8b0525ab6186f)&#13;
-- Wanderer pips once again only count story regions as progress (7098e43da6775612ab47bd1f5156a4bcfefa647d)&#13;
-- Fix Universal Tracker logic failing to account for having Expedition Perks, as well as other issues (e14db699995a36e1c320995b25f12688ea57e36c)&#13;
-- World information has been updated to match the changes made in game version 1.11.7b (e426e2aed4a34d3eb5159ff1253c6489e37fbcc2)</content>
-    <link href="https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.5.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-3</id>
-    <title>Sonic Adventure DX v1.2.1rc0.post0</title>
-    <updated>2026-04-05T01:47:07+00:00</updated>
-    <author>
-      <name>ClassicSpeed</name>
-    </author>
-    <content>## [v1.2.1 pre-release 3] - 2026-04-04&#13;
-&#13;
-### Changed:&#13;
-&#13;
-- Water Tank is now always drained regardless of the Egg Carrier's transformation state.&#13;
-&#13;
-### Fixed:&#13;
-&#13;
-- Fixed starting character option being ignored.&#13;
-- Fixed incorrect logic for emblem requirements around the Egg Carrier.</content>
-    <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1-pre-release-3"/>
-  </entry>
   <entry>
     <id>https://github.com/barretg/Taskipelago/releases/tag/v0.6</id>
     <title>Taskipelago v0.6</title>
@@ -1069,5 +971,107 @@ This version contains only the minimum changes to make the mod and apworld compa
 &#13;
 **Not compatible with previously generated worlds.**</content>
     <link href="https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-pre-1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.0</id>
+    <title>Deltarune v1.2.0</title>
+    <updated>2026-04-10T05:50:12+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <content>(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
+&#13;
+**This version is not compatible with previous versions. If you're in the middle of a game, refrain from updating until you're finished.**&#13;
+&#13;
+**Changelog:**&#13;
+- Added ways to return to Castle Town mid-run in Chapters 2 and 4&#13;
+- Added /receive_type to change receiving items between whenever possible and only at the start of the room.&#13;
+- Added /deathlink command to change deathlink during the run&#13;
+- Added /auto_patch steamdepot to look for a steam depot&#13;
+- Added support for no macguffin items&#13;
+- Added Option groups&#13;
+- Customizing filler weights is now possible&#13;
+- Yamlless and out of logic UT Support (no more death on bagel overflow)&#13;
+- Web URI Support&#13;
+- APWorld version displayed in the client window and logs&#13;
+- Added Retry and Quit to the "Please connect to the Multiworld" screen&#13;
+- Removed Randomize Warp Doors&#13;
+- Ralsei no longer telepathically communicates you if you drop the manual while he's absent in Chapter 1&#13;
+- Fixed the egg notice not working in Chapter 2&#13;
+- Remote Batteries are no longer called "KeyGen2Segmnt" in Chapter 3&#13;
+- Having "Starwalker" while recruiting "Elnina" and "Lanino" no longer prevents the checks from sending&#13;
+- "CH3: TV World - Man" is no longer in logic without the TripTicket&#13;
+- Golden Prizes are now properly randomized with "include_hidden_items"&#13;
+&#13;
+LINUX: If you experience lag, use `/receive_type` to set the receiving items type to "Start of the room". Your lag should decrease next time you enter a room. &#13;
+&#13;
+**Before starting, use /savereset to reset all AP and save data for this mod. Don't worry; your original DELTARUNE saves won't be affected!**&#13;
+&#13;
+Feel free to give feedback, and make sure to report any bugs!&#13;
+&#13;
+**You will only give/receive checks in the Dark World.**</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.3</id>
+    <title>Bloons TD6 v0.5.3</title>
+    <updated>2026-04-10T07:57:21+00:00</updated>
+    <author>
+      <name>Matt41321</name>
+    </author>
+    <content>- Ancient Portal moved from Advanced to Intermediate</content>
+    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.5</id>
+    <title>Gauntlet Legends v2.1.5</title>
+    <updated>2026-04-10T08:03:45+00:00</updated>
+    <author>
+      <name>jamesbrq</name>
+    </author>
+    <content>REQUIRED: Archipelago -&gt; https://github.com/ArchipelagoMW/Archipelago/releases&#13;
+REQUIRED: Retroarch -&gt; https://www.retroarch.com/?page=platforms&#13;
+Drag and drop gl.apworld into your custom_worlds folder in your Archipelago install.&#13;
+&#13;
+You can launch the client from ArchipelagoLauncher, just click on the Gauntlet Legends Client button.&#13;
+&#13;
+To patch the game, you are required to have a US copy of Gauntlet Legends for the N64.&#13;
+Either drag the patch onto ArchipelagoLauncher.exe or Right click the patch and 'Open With...' ArchipelagoLauncher.exe&#13;
+The host does not need to have a copy of the game to generate.&#13;
+&#13;
+RETROARCH IS REQUIRED IT IS THE ONLY EMULATOR THAT WILL WORK.&#13;
+&#13;
+IN RETROARCH: You must go to Settings-&gt;User Interface and turn the Show Advanced Settings ON. Then in Settings-&gt; Network, you must also turn ON Network Commands. Leave the port the default.&#13;
+&#13;
+Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
+&#13;
+**Full Changelog**: https://github.com/jamesbrq/GauntletLegendsAP/compare/v2.1.3...v2.1.5</content>
+    <link href="https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.0.7</id>
+    <title>Minecraft Fabric v1.0.7</title>
+    <updated>2026-04-10T09:37:41+00:00</updated>
+    <author>
+      <name>Deadlydiamond98</name>
+    </author>
+    <content>Changelog&#13;
+&#13;
+- Removed Unused “Speedrunner Mode” Setting (doesn't do anything, and was replaced by “ShouldHaveBeforeWitherOrDragon” Setting last version)&#13;
+- Smooth Red Sandstone Blocks are now under Exploration option&#13;
+- Modified Some of the default settings to prevent the Archipelago Options Creator from creating the incorrect data type&#13;
+- Dyed Items are now an option for "ExcludedFromItemsanity"&#13;
+- Updated Koala Lib Version (Fixed Crash with Siyntra Connector in Library, so mod can now run on Forge when using Siyntra Connector!)&#13;
+- The Mod Will now check the AP World Version when connecting and inform the player if there's a version mismatch and disconnect rather than crash&#13;
+- Fixed a Crash that could occur when resyncing advancements&#13;
+- Max Advancement Count set to Amount of Advancements in Archipelago Mod, will increase when modded advancements are properly added&#13;
+- Added new goal option for collecting unique items as a goal (It's recommended that the count is set to a high number when using this). This Option can be used on its own, or in addition to other Goals</content>
+    <link href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.0.7"/>
   </entry>
 </feed>
