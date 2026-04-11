@@ -14,6 +14,9 @@
 #### v0.2.7.5
 - <a href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/download/0.2.7.5/residentevil3remake.apworld">https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/download/0.2.7.5/residentevil3remake.apworld</a>
 
+#### v0.2.7
+- <a href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/download/0.2.9/residentevil3remake.apworld">https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/download/0.2.9/residentevil3remake.apworld</a>
+
 #### v0.2.6
 - <a href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/download/0.2.6/residentevil3remake.apworld">https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/download/0.2.6/residentevil3remake.apworld</a>
 

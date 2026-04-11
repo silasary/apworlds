@@ -2,93 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-10T18:23:09.423264+00:00</updated>
+  <updated>2026-04-11T00:19:04.662774+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/barretg/Taskipelago/releases/tag/v0.7-beta</id>
-    <title>Taskipelago v0.7b0</title>
-    <updated>2026-04-05T08:00:29+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content># Version 0.7 Beta&#13;
-Support for boolean logic implemented, but needs heavy testing&#13;
-&#13;
-## Features, Improvements, and Changes&#13;
-* Boolean logic now added! You can now enter strings like 1, 2 &amp;&amp; (3, 4 || 5, 6) into any field that accepts a list of tasks or rewards (goal tasks included!)&#13;
-&#13;
-&#13;
-hotfix: oops i messed up one of the goal checking variables, fixed now</content>
-    <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.7-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.2</id>
-    <title>Everhood 2 v0.4.2</title>
-    <updated>2026-04-05T11:03:07+00:00</updated>
-    <author>
-      <name>DeamonHunter</name>
-    </author>
-    <content>&gt; [!IMPORTANT]&#13;
-&gt; While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Green Route 3 and many Hilbert Hotel rooms. Please bring my attention to them in Discord if they occur.&#13;
-&#13;
-&gt; [!NOTE]&#13;
-&gt; Minimum version of the APWorld is now 0.6.7.&#13;
-&#13;
-## New Features:&#13;
-- Colorsanity (Display name Randomise Color Reflects now) now has a new modes&#13;
-  - Off: Can Reflect All Colors&#13;
-  - Single Soul Piece: Only need 1 Soul Piece to reflect a colour&#13;
-  - Multiple Soul Pieces: Need Multiple Soul Pieces to reflect colours for any enemy tied to an Time Hub area.&#13;
- - APWorld now written with Rule Builder. Should also now **partially** support Universal Tracker now? Needs more work anyway.&#13;
- - Colours are now "X Soul Piece". To make them stand out more.&#13;
-&#13;
-## Client Fixes&#13;
-- Fixed Main Screen Button layout. Settings are now selectable again.&#13;
-- Fixed Auto-unlocking Everhood 1 and Bird Island in Door Key mode.&#13;
-- Death Coin from completing Bird Island should now correctly collect.&#13;
-- Updated Multiclient.net to 6.7.1. (Now more stable in larger syncs/asyncs)&#13;
-- Door Key Off fixes:&#13;
-  - Home Town door now correctly spawns after defeating dragon.&#13;
-  - Everhood 1 door will now spawn after entering Everhood 1 once.&#13;
-  - No longer can activate the final sequence without having completed Everhood 1. (Could teleport back after defeating Dmitri)&#13;
-- Softlock fixes:&#13;
-  - Force open the East Gate in the Mining Base Tunnels if you have defeated Gorilla once.&#13;
-  - Can now trigger the briefing cutscene to get to the castle again in the Veggie War.&#13;
-  - No longer get stuck trying to start the final Mushroom Bureau cutscene if you did not complete either side.&#13;
-  - Fixed loading into Tutorial Spaceship no longer allowing you to interact with Boatman.&#13;
-&#13;
-## AP World fixes&#13;
-- Fixed Hilbert Hotel and VIP Ticket not requiring its keys logically in non-door key options.&#13;
-- Actually add Bird Island and Everhood keys.&#13;
-- Fixed multiple issues with additional hub 1 areas and act 2 settings, when not doing door keys.&#13;
-- Actually made Irvine Pocket Dimension reliant on finishing Mushroom Bureau when not doing door keys.&#13;
-- A number of minor logic errors that were caught in the rewrite.&#13;
-&#13;
-# Installation&#13;
-### Melonloader&#13;
-*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
-&#13;
-1. Download MelonLoader.Installer.exe from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
-2. Choose the automated tab, click the select button and browse to `Everhood 2.exe`.&#13;
-    - You can find the folder in steam by finding the game in your library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
-    - If you click the bar at the top telling you your current folder, this will give you a path you can copy. If you paste that into the window popped up by **MelonLoader**, it will automatically go to the same folder.&#13;
-3. The launcher will automatically default to the latest version. &#13;
-    - If the latest version is not working: **Untick Latest and select 0.6.6.**&#13;
-4. Click install. Once finished run the game once.&#13;
-&#13;
-### Mod Install&#13;
-&#13;
-1.Download `ArchipelagoEverhood.zip`.&#13;
-2. Head to the Everhood folder and open up `/mods/`.&#13;
-3. Extract the contents of the .zip file into mods.&#13;
-   - Ensure that `ArchipelagoEverhood.dll` and `Archipelago.MultiClient.Net.dll` are under `/mods/` and not within a sub folder.&#13;
-4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
-</content>
-    <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.2"/>
-  </entry>
   <entry>
     <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.3</id>
     <title>Everhood 2 v0.4.3</title>
@@ -1067,21 +985,85 @@ Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
 &#13;
 ## Bugfixes&#13;
 - Add an attribute to items for “don’t immediately receive that item in theses rooms”, to prevent song statue crashes and more. Some cases were previously hard coded.&#13;
-- added client implementation of goal location in dungeon cause apparently i forgot that.&#13;
-- made sure carben restoration song logic didn't bypass boomerang requirements&#13;
+- added client implementation of goal locations in dungeons cause apparently i forgot that.&#13;
+- made sure Carben restoration song logic didn't bypass boomerang requirement&#13;
 - fixed typos on buried chests&#13;
-- fixed typo on floor number for zelda's spirit flute location&#13;
-- really worked through papuzia flags and crash states, and fixed the case family that was probably causing the crashes&#13;
-- fixed invisible carben crash&#13;
+- fixed typo on floor number for &gt;elda's spirit flute location&#13;
+- flowcharted Papuzia flags and crash states, and fixed the case family that was probably causing the crashes&#13;
+- fixed invisible Carben crash&#13;
 - added north island sanctuary with song of birds to hard logic&#13;
 - fixed ToS 4 missing whip in logic to reach 15F&#13;
 - fixed some faulty logic in ToS 5&#13;
-- added entering moutain temple from fire source to logic&#13;
+- added entering Mountain Temple from fire source to logic&#13;
 - fixed the hitbox for mountain temple 2f left chest&#13;
-- fixed goron village to se cave portal checking the wrong track for access&#13;
-- fixed some faulty flags in goron village&#13;
-- fixed anouki song of discovery chest sometimes not working (was not checking potion slot 2)&#13;
-- tweaked some kenzo av flags</content>
+- fixed Goron Village to se cave portal checking the wrong track for access&#13;
+- fixed some faulty flags in Goron Village&#13;
+- fixed Anouki song of discovery chest sometimes not working (was not checking potion slot 2)&#13;
+- tweaked some Kenzo Anouki Village flags</content>
     <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.04.10</id>
+    <title>Archipeladoku v2026.4.10</title>
+    <updated>2026-04-10T19:29:05+00:00</updated>
+    <author>
+      <name>Galdiuz</name>
+    </author>
+    <content/>
+    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.04.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.9</id>
+    <title>Resident Evil 3 Remake v0.2.7</title>
+    <updated>2026-04-10T23:36:26+00:00</updated>
+    <author>
+      <name>TheRealSolidusSnake</name>
+    </author>
+    <content>**Quick and dirty release for testing purposes, please report anything to the RE3R thread in Discord.**&#13;
+&#13;
+**RE2Randomizer features ported over:**&#13;
+------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
+&#13;
+Enemy kills are now checks/locations, and they work on every difficulty.&#13;
+&#13;
+Double Weapons / Local Weapons&#13;
+&#13;
+In-game GUI tooltips when paused/in menu &lt;- Note: Non-RTX only&#13;
+&#13;
+A more revamped GUI system overall &lt;- Mod menu is a lot more pleasant to look at&#13;
+&#13;
+The newer "Safe" function, which previously didn't clear the safes off the map when checked now behaves closer to RE2 (the map will clear but the item icon still shows even though it doesn't exist)&#13;
+&#13;
+&#13;
+**RE3Randomizer specific changes**&#13;
+------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
+&#13;
+**Added "Enemy Behavior"**, which will allow zombies/Nemesis to chase you to the ends of the earth&#13;
+&#13;
+[SHOCKEEEEEEEEEEERRRRRR](https://www.youtube.com/watch?v=sMk-HPBF6Mw) - this embodies what will be happening (you're Shocker in this case btw)&#13;
+&#13;
+No longer requires EMV-Engine/Console, which makes the client much lighter and hopefully less jarring for the end user.&#13;
+&#13;
+**Fixed a major bug with the Lock Pick**&#13;
+Thanks to everyone who reported this. &#13;
+Previously, if you received the Lock Pick and then saved/quit/died before seeing the Lock Pick cutscene, it could disappear from your inventory. If the game detects that it's missing, it will put a new copy into your ItemBox.&#13;
+&#13;
+**Jewels and the STARS ID Card are now always local**, these are also required before each area transition where the game would normally stop requiring them **(this prevents players from accidentally disposing of them too early and missing locations later on)**&#13;
+&#13;
+**And a bunch of smaller bug fixes, including:**&#13;
+&#13;
+Locker 109 no longer being static due to an item_object issue.&#13;
+&#13;
+Supply Case now correctly giving Flame Rounds instead of Acid Rounds.&#13;
+&#13;
+Again, if you're playing on RTX, the fancy new paused/menu GUI features are not available. Those currently only work for non-RTX users.&#13;
+&#13;
+## What Fuzzy fixed for us behind the scenes because he's goated&#13;
+* Remove likely cause of ImGUI error in recent REF versions by @FuzzyGamesOn in https://github.com/TheRealSolidusSnake/RE3R_AP_Client/pull/7&#13;
+&#13;
+## What others contributed&#13;
+@RopeyRed - Enemy Kills on all difficulties&#13;
+@Grenier - Strip Scenario/Character out of the client/apworld so it no longer appends (JA) to each location for no reason, now we only append difficulty if not a "Standard" location.</content>
+    <link href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.9"/>
   </entry>
 </feed>
