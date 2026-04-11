@@ -4,7 +4,7 @@ A Computer Game by Mike Klubnika
 
 
 ## Downloads
-- <a href="https://github.com/asdfwyay/APBuckshot/releases/download/v0.3.0/buckshot.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/asdfwyay/APBuckshot/releases/download/v0.3.1/buckshot.apworld">Latest Version (0.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

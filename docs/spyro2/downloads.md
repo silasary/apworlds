@@ -1,9 +1,12 @@
 # Spyro 2
 
 ## Latest
-- <a href="https://github.com/Uroogla/S2AP/releases/download/1.1.1/spyro2.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/Uroogla/S2AP/releases/download/1.2.0-rc/spyro2.apworld">Latest Version (1.1.3)</a>
 
 ## All Versions
+
+#### v1.1.3
+- <a href="https://github.com/Uroogla/S2AP/releases/download/1.2.0-rc/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/1.2.0-rc/spyro2.apworld</a>
 
 #### v1.1.1
 - <a href="https://github.com/Uroogla/S2AP/releases/download/1.1.1/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/1.1.1/spyro2.apworld</a>

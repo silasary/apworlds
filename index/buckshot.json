@@ -146,6 +146,21 @@
       "title": "APBuckshot 0.3.0",
       "version_simple": "0.3.0",
       "world_version": "0.3.0"
+    },
+    "v0.3.1": {
+      "created_at": "2026-04-11T04:19:05Z",
+      "description": "## Features\r\n- **Consumable Item Randomization**\r\n    - Item unlocks are shuffled randomly\r\n- **Steam Achievements**\r\n    - Obtain items from completing achievements\r\n- **Shotsanity**\r\n    - Obtain items from successful shots\r\n- **Streaksanity**\r\n    - Obtain items from successful shots on the dealer in a row without being shot yourself\r\n- **Customizable Goal**\r\n    - Choose from one of the following goals:\r\n        - **70K**: Beat the game\r\n        - **140K**: Beat 6 Double or Nothing rounds in a row\r\n        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million\r\n        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score\r\n- **Consumable Item Logic**\r\n    - Customize how many consumable are expected to beat a certain number of rounds\r\n- **Custom Mechanics**\r\n    - Unique gameplay features specific to the Archipelago world\r\n- **Hint Mode**\r\n    - Complete rounds and achievements to get hints for locations in other slots in an Archipelago game\r\n## Changelog\r\n### World\r\n- Increased the upper point limit for custom goals to one billion\r\n### Client\r\n- Fixed bug where the client failed to ignore item debuffs when not included in the player's YAML settings\r\n- Fixed the chat log displaying significantly fewer messages than expected during a release/collect\r\n- Fixed death link and poison damaging during the final round of the main game\r\n- Altered item buffs/debuffs for certain items\r\n\r\n| Item     | Buff                                 | Debuff                                                                                                                                                      |\r\n|----------|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|\r\n| Hand Saw | -                                    | Reworked entirely. Now, after firing a shot with the barrel sawed off, all shots the dealer make during their next turn will deal an extra point of damage. |\r\n| Beer     | Can now only be used once per round. | Additional poison is added when using the buff. The amount of poison depends on the amount of loaded shells when the buff is used.                          |\r\n\r\n## Guides\r\n- [Info](<https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md>)\r\n- [Setup & Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)",
+      "download_url": "https://github.com/asdfwyay/APBuckshot/releases/download/v0.3.1/buckshot.apworld",
+      "has_manifest": true,
+      "hash_sha256": "42493fad79a2508a8ba5f83f3feb6e829d4ca1c294b7096dedcea81108700ce3",
+      "html_url": "https://github.com/asdfwyay/APBuckshot/releases/tag/v0.3.1",
+      "minimum_ap_version": "0.6.4",
+      "size": 22033,
+      "source_url": "https://api.github.com/repos/asdfwyay/APBuckshot",
+      "tag": "v0.3.1",
+      "title": "APBuckshot 0.3.1",
+      "version_simple": "0.3.1",
+      "world_version": "0.3.1"
     }
   }
 }
