@@ -1,9 +1,12 @@
 # Tevi
 
 ## Latest
-- <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.4.19/tevi.apworld">Latest Version (1.4.19)</a>
+- <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.4.20/tevi.apworld">Latest Version (1.4.20)</a>
 
 ## All Versions
+
+#### v1.4.20
+- <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.4.20/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.4.20/tevi.apworld</a>
 
 #### v1.4.19
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.4.19/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.4.19/tevi.apworld</a>
