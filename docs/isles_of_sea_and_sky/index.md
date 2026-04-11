@@ -6,7 +6,7 @@ until they reach the Sanctum, and learn just what all these Stars are for.
 
 
 ## Downloads
-- <a href="https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases/download/v0_0_14/isles_of_sea_and_sky.apworld">Latest Version (14)</a>
+- <a href="https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases/download/v0_0_14/isles_of_sea_and_sky.apworld">Latest Version (14.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
