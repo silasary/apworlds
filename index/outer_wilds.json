@@ -588,6 +588,21 @@
       "title": "v1.2.0",
       "version_simple": "1.2.0",
       "world_version": "1.2.0"
+    },
+    "v1.2.1": {
+      "created_at": "2026-04-11T20:36:58Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).\r\n\r\n- [Updated the Archipelago.MultiClient.Net library to v6.7.1](https://discord.com/channels/731205301247803413/1043855558303821844/1484975530968354966). The change most likely to affect players is Berserker's \"[Request Datapackage as individual responses](https://github.com/ArchipelagoMW/Archipelago.MultiClient.Net/pull/135)\", which should help prevent timeout errors when connecting to large multiworlds.\r\n- Forgotten Castaways logic fixes from @msyverw:\r\n\t- The \"Deep Bramble via Warp Drive\" region now logically connects to the (shipless) \"Deep Bramble\" region, which fixes some cases where the early parts of FC were incorrectly out of logic\r\n\t- Tweaked the regions of \"DB Ship Log: Stranded Nomai 5 - Warp\" and \"FC Ship Log: Bramble's Doorstep 2 - Nomai\" so that they won't be in logic until you have logical access to *both* systems, since you can't get a ship log fact for the system you aren't in\r\n\t- In-game tracker now uses the correct logic region for Deep Bramble spawns\r\n\t- The connection from a Deep Bramble spawn to the \"Deep Bramble via Warp Drive\" region now logically requires only Launch Codes, not Deep Bramble Coordinates as it accidentally used to\r\n\t- \"FC Ship Log: Pillar Town 2 - Gift\" now logically requires the Expanded Dictionary\r\n- Fixed suitless logic by making Nomai shuttle locations require Spacesuit to reach via gravity cannon recalls. Some time ago a base game patch made it no longer possible to move Nomai orbs from inside the ship, which is a problem for suitless players. The only logic this actually broke was entering a Nomai shuttle by recalling it to the corresponding gravity cannon, since you would suffocate while moving the orb to recall it.\r\n",
+      "download_url": "https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v1.2.1/outer_wilds.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4109418091ca4805e72372a23f87f412e41706878ad62eab67205d4f19ce3090",
+      "html_url": "https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.1",
+      "minimum_ap_version": "0.5.0",
+      "size": 86353,
+      "source_url": "https://api.github.com/repos/Ixrec/OuterWildsArchipelagoRandomizer",
+      "tag": "v1.2.1",
+      "title": "v1.2.1",
+      "version_simple": "1.2.1",
+      "world_version": "1.2.1"
     }
   }
 }

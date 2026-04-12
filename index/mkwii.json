@@ -190,6 +190,20 @@
       "title": "MKWii AP Release Version 0.1.1 Hotfix 3",
       "version_simple": "0.1.1",
       "world_version": "0.1.1"
+    },
+    "v0.2.0": {
+      "created_at": "2026-04-11T21:08:54Z",
+      "description": "## Release Version 0.2.0: Base Track Locking/Unlocks!\r\nYup that's it, after quite a while I crunched a big update out today, it was worth it though. I have one of the most requested features added, **base cup/track unlocks!** there is even more exiting stuff in this update, such as a clear condition rework and several bug fixes.\r\n\r\n### How it works\r\n**Let me explain how it works**, as it is not perfect yet. I can't visually and functionally block base unlocked cups from being started without patching the rom (which I want to try to avoid as long as possible). So if you try to start a cup you haven't unlocked yet, you'll be sent to a cup in the same Engine Class (cc/mirror) that you DO have unlocked, the cup you're sent to is always the one that has the most possible check completions still available. If there is no cup unlocked in the selected Engine Class you will be sent to the cup, however you will not be able to complete laps and thus will not be able to complete the race. For VS Race, you have the tracks unlocked for the cup (per cc) you have unlocked, trying to launch a VS Race will send you into the race without being able to complete laps.\r\nWhen starting an Archipelago of this game you will by default start with 2 unlocked cups, I heavily recommend using the included tracker to see this, the cups page will now also show what cups are unlocked. One cup will be in 50cc and the other 100cc so you need to use both karts and bikes, if you have either 50cc or/and 100cc disabled, your 2 cups will be unlocked for the lowest available Engine Class.\r\n\r\n### Changelog:\r\n- Added base cup/track unlocks.\r\n- Added cup unlock tracking in cups page in tracker.\r\n- Reworked clear condition/completion system: each goal cup will now award a 'Victory Trophy' when you have as many Victory Trophies as assigned in your YAML you will complete your AP.\r\n- Added option to hide your AP ip and port in the tracker.\r\n- Removed Dolphin Auto Launch as it was causing too many issues.\r\n\r\n**REQUIRES A NEW APWORLD, ANY PREVIOUS APWORLD VERSION WILL NOT WORK!**\r\n\r\n_Linux users, download the source code here to run the client._\r\n\r\n**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.1.1-h3...v0.2.0",
+      "download_url": "https://github.com/toent/Archipelago-MKWii/releases/download/v0.2.0/mkwii.apworld",
+      "has_manifest": false,
+      "hash_sha256": "7bcf57a383e7fdace5f255af8ec1648682eb64e704c9e79548d9794b00041f14",
+      "html_url": "https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.0",
+      "size": 12369,
+      "source_url": "https://api.github.com/repos/toent/Archipelago-MKWii",
+      "tag": "v0.2.0",
+      "title": "MKWii AP Release Version 0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }
