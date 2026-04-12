@@ -1,9 +1,12 @@
 # The Messenger
 
 ## Latest
-- <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld">Latest Version (0.6.6.post2)</a>
+- <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.7-messenger-ut-beta/messenger.apworld">Latest Version (0.6.7)</a>
 
 ## All Versions
+
+#### v0.6.7
+- <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.7-messenger-ut-beta/messenger.apworld">https://github.com/Jouramie/Archipelago/releases/download/0.6.7-messenger-ut-beta/messenger.apworld</a>
 
 #### v0.6.6.post2
 - <a href="https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld">https://github.com/Jouramie/Archipelago/releases/download/0.6.6-messenger-ut/messenger.apworld</a>

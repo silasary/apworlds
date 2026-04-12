@@ -1,9 +1,12 @@
 # Pokemon Stadium
 
 ## Latest
-- <a href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v0.5.5/PokemonStadium.apworld">Latest Version (0.5.5)</a>
+- <a href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v0.5.6/PokemonStadium.apworld">Latest Version (0.5.6)</a>
 
 ## All Versions
+
+#### v0.5.6
+- <a href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v0.5.6/PokemonStadium.apworld">https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v0.5.6/PokemonStadium.apworld</a>
 
 #### v0.5.5
 - <a href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v0.5.5/PokemonStadium.apworld">https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v0.5.5/PokemonStadium.apworld</a>

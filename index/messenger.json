@@ -1,9 +1,14 @@
 {
+  "authors": [
+    "alwaysintreble"
+  ],
   "description": "As a demon army besieges his village, a young ninja ventures through a cursed world, to deliver a scroll paramount\nto his clan\u2019s survival. What begins as a classic action platformer soon unravels into an expansive time-traveling\nadventure full of thrills, surprises, and humor.",
   "game": "The Messenger",
   "github": "https://github.com/Jouramie/Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors"
+  ],
   "versions": {
     "0.6.0-RC3-messenger-ut": {
       "created_at": "2025-03-26T01:23:40Z",
@@ -77,6 +82,21 @@
       "title": "The Messenger x Universal Tracker - Archipelago 0.6.6",
       "version_simple": "0.6.6",
       "world_version": "0.6.6.post2"
+    },
+    "0.6.7-messenger-ut-beta": {
+      "created_at": "2026-04-12T03:59:58Z",
+      "description": "This alternate version of the The Messenger apworld has integration for portal and transition shuffle with [Universal Tracker](https://discord.com/channels/731205301247803413/1367270230635839539). In bonus, it tracks glitched logic and has a PopTracker integration, to follow where you are and which checks are available on your second monitor! \r\n\r\n## Changelog\r\n- Support PopTracker map support to the UT integration\r\n- Add glitched logic to the UT integration\r\n- Fix UT not loading when portal shuffle is disabled\r\n- Fix UT not loading when transition shuffle are decoupled\r\n- Fix connection plando not modifying the connections (only for seeds generated with this apworld)\r\n\r\nCompatible with games generated with [Archipelago 0.6.7](https://github.com/ArchipelagoMW/Archipelago/releases/tag/0.6.7)\r\n\r\n## Installation Instructions (for Windows, but likely compatible with other systems)\r\n- Install Archipelago (link below) with the generator enabled.\r\n- Place the new `messenger.apworld` file in your custom world folder.\r\n- Remove the old `messenger.apworld` file from your `lib/worlds` folder.\r\n- When connecting to a _The Messenger_ seed with UT, you will be prompted to locate a The Messenger Track Pack (downloadable [here](https://github.com/alwaysintreble/TheMessengerTrackPack/releases)). Dismiss the prompt if you do not wish to use the map. If needed, you can change the location in your `host.yaml` in your Archipelago installation.\r\n\r\n<img width=\"1200\" height=\"774\" alt=\"image\" src=\"https://github.com/user-attachments/assets/309256b0-df7b-4d43-9bfe-9d2ef3cb4d7c\" />\r\n\r\n<img width=\"1197\" height=\"777\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0d2bc269-4113-4b76-a0e3-88903ecfe8cb\" />\r\n\r\n## Troubleshooting\r\n- Make sure you removed your `messenger.apworld` from `lib/worlds` and added the new apworld in `custom_worlds`\r\n- Report any issue in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel in the Archipelago discord. Make sure to ping @jouramie otherwise I won't read. \r\n\r\n## We Need Your Help! \r\nIf you'd like to help integrate this into the main Archipelago releases, drop a comment on one of the pull requests. https://github.com/ArchipelagoMW/Archipelago/pull/6030 https://github.com/ArchipelagoMW/Archipelago/pull/6132! :wink:\r\nAlso, please mention in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel that you used it, and report any issue. This will help with the integration process if some player mention using the beta world! ",
+      "download_url": "https://github.com/Jouramie/Archipelago/releases/download/0.6.7-messenger-ut-beta/messenger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2cd109be33356ee37008b033ec25828693ab2c0d118b2a967874914fa47de2f1",
+      "html_url": "https://github.com/Jouramie/Archipelago/releases/tag/0.6.7-messenger-ut-beta",
+      "prerelease": true,
+      "size": 78005,
+      "source_url": "https://api.github.com/repos/Jouramie/Archipelago",
+      "tag": "0.6.7-messenger-ut-beta",
+      "title": "The Messenger x Universal Tracker w/ PopTracker - Archipelago 0.6.7",
+      "version_simple": "0.6.7",
+      "world_version": "0.6.7"
     }
   }
 }
