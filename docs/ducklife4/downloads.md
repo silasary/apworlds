@@ -8,3 +8,6 @@
 #### v1.0.0
 - <a href="https://github.com/spencer2585/Duck-Life-4-Archipelago/releases/download/1.0.0/DuckLife4.apworld">https://github.com/spencer2585/Duck-Life-4-Archipelago/releases/download/1.0.0/DuckLife4.apworld</a>
 
+#### v1.0.0
+- <a href="https://github.com/spencer2585/Duck-Life-4-Archipelago/releases/download/1.0.0_HF1/DuckLife4.apworld">https://github.com/spencer2585/Duck-Life-4-Archipelago/releases/download/1.0.0_HF1/DuckLife4.apworld</a>
+

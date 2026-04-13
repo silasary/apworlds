@@ -2,208 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-12T18:18:25.014680+00:00</updated>
+  <updated>2026-04-13T00:21:26.927060+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.9.2.1</id>
-    <title>Void Stranger v0.9.2.1</title>
-    <updated>2026-04-07T14:46:01+00:00</updated>
-    <author>
-      <name>CriminalPancake</name>
-    </author>
-    <content>## What's Changed&#13;
-Fixed a logic error in the rule for reaching the "Mural of Pride" location.</content>
-    <link href="https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.9.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.1</id>
-    <title>Bloons TD6 v0.5.1</title>
-    <updated>2026-04-07T15:08:39+00:00</updated>
-    <author>
-      <name>Matt41321</name>
-    </author>
-    <content>- Added option to set maximum Medals</content>
-    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/airbreather/Autopelago/releases/tag/v0.11.17</id>
-    <title>Autopelago v0.11.0</title>
-    <updated>2026-04-07T22:09:24+00:00</updated>
-    <author>
-      <name>airbreather</name>
-    </author>
-    <author>
-      <name>skidznet</name>
-    </author>
-    <content># https://autopelago.app&#13;
-&#13;
-The game client has been completely rewritten from scratch. It runs in the browser now.&#13;
-&#13;
-The .apworld now has a manifest, but has otherwise not changed since 0.10.3.&#13;
-&#13;
-# Changes since 0.11.15&#13;
-&#13;
-1. "Back to Main Menu" button now uses the parameters from the current game instead of the last thing you typed in on any Connect screen. This mostly matters when you have multiple tabs open at once.&#13;
-2. Fix rendering of objects on the map, mainly quest markers (especially the rotated ones), so they look more correct at more map sizes.&#13;
-3. Go back to auto-reconnecting after #143 reverted it. It seems likely that the cause of room resurrections was misattributed to Autopelago.&#13;
-4. Fix an oversight from 0.11.16 that caused filler squares to stay yellow even after being checked.&#13;
-&#13;
-Everything from the original native version *should* be present in this one. If not, then that's a bug. Please report it: the native version will stop working in APWorld versions 1.x and above.&#13;
-&#13;
-# Other changes since 0.10.4&#13;
-&#13;
-1. You no longer need to run any native executable files. It's a web app now, so just go to that URL.&#13;
-   - If you want to self-host it, it's all static files - this release should have a  "dist.zip" asset that you can just drop into any reasonable static web server.&#13;
-   - You will **need** to self-host if you want it to work with an Archipelago server that doesn't use HTTPS.&#13;
-2. You can now launch directly to the game if you know all the magical things to type into the URL fragment. This is mostly provided so you can refresh the page without having to click through the menu again.&#13;
-3. As is web tradition, most errors that happen when the game is running will not automatically take you out of the game screen. Instead, they will just create banners along the top that you have to click to dismiss. Hopefully, this will never happen to you (of course, it happened to me constantly while developing this).&#13;
-4. Not only is this a web app (and so it finally runs on Mac and Android), but it's a **progressive** web app. This means that you can "install" it as a native app on Android, even.&#13;
-5. Interval between "when STILL blocked" messages is now configurable (though it's still got a minimum of 15 minutes so that you don't spam everyone).&#13;
-6. There's now a separate "Connecting..." screen between the settings page and the main game screen, instead of showing a version of the game screen instantly and then modifying it once you're finally connected.&#13;
-7. When you get disconnected for any reason (other than clicking the button to go back to the menu), you now get spat back to the same "Connecting..." screen (with a different message) and it will try to reconnect you automatically, at least once every 30 seconds.&#13;
-8. The game version is now visible in the title bar and on the game screen. This is more relevant here because browsers like to cache way too much stuff.&#13;
-9. Somewhat redesigned the layout of the game screen to be a bit clearer. Instead of shorthand "RAT" / "NOM" / etc., we have a "RATS: ##" expander, and then all the active buffs / debuffs are visible with their full names under it. This takes up a lot of screen space, so you can collapse it to just show the rat count.&#13;
-10. The left panel can also shrink MUCH more than before.&#13;
-11. The position of the grid separator is now saved between runs.&#13;
-12. If your slot has an alias, we now show that (without the parenthetical slot name) instead of always just showing the official slot name.&#13;
-13. Chat commands can now be addressed to the rat's alias (with or without the parenthetical slot name) instead of always having to be its slot name, provided that nobody else in the room has picked the same alias.&#13;
-14. Added a simple chat tab to just send / receive messages in the room, so that you don't HAVE to flip back and forth. It's not quite as fancy as the standard text client, but it should be good enough.&#13;
-15. Elements that you can interact with all support tab-focusing, and the tooltips as well.&#13;
-16. When a lot of things happen all at once that the game hasn't animated yet, the app will try to play back everything that happened. This was important when moving to a web app, because browsers don't render things when the tab is in the background or minimized, so when you come back, a LOT of things could have changed. In fact, when LOTS of things changed, it speeds up the playback up to 5x so that you can "catch up" to the current state more quickly.&#13;
-17. When clicking on an item in the panel to request a hint, the confirmation box now shows up right next to it instead of in the middle of the screen.&#13;
-18. The "u win." screen now just covers a *part* of the map instead of taking you all the way out.&#13;
-19. Fix an oversight where the self-host bundle was still expecting to run on `https://autopelago.app`&#13;
-20. Add a discriminator to the beginning of the title for the benefit of those with multiple tabs&#13;
-21. #129: Bring back the ability to show the path to the target by clicking on the rat.&#13;
-22. Fix a minor issue where the rat would face its ultimate target instead of the next location along the route to it.&#13;
-23. Fix an issue where the rat would go to the nearest user-requested location instead of going in order of when they were requested.&#13;
-24. (After the failed v0.11.2) probably fix a calculation error in the "show path" calculation?&#13;
-25. #130: Bring back the ability to personalize your rat.&#13;
-26. Replace Pixi.js with native elements, which should unblock those getting the error "`CanvasRenderer` is not yet implemented". This also probably brings with it a mixed bag of performance penalties and performance improvements.&#13;
-27. Fix several ways in which the page could look self-inconsistent while the rat is still catching up to where the server is.&#13;
-28. Correct the size of the "Personalize Your Rat!" button on the main page for non-Firefox browsers.&#13;
-29. Remove a brief flicker of the "Personalize Your Rat!" window's header text. It might still sometimes shift, but generally shouldn't have any frames where the text goes outside the window like it did.&#13;
-30. Add tooltips for the filler squares to show their names, exactly the same as tooltips for landmarks.&#13;
-31. Add information about known hints onto these tooltips.&#13;
-32. Move some quest markers out of the way so that they no longer overlap filler squares.&#13;
-33. Shrink landmark images so that they don't crowd their filler squares.&#13;
-34. Extra-shrink the hitboxes around the quest markers to make their nearby filler squares easier to get to.&#13;
-35. Add the ability to "hyper-focus" a location by clicking on it (or pressing Enter on it if you are tabbing through with your keyboard). This "hyper-focus" can only be adjusted by interacting with it in the browser (no chat commands supported, by design) for multiple reasons.&#13;
-36. #134: Fix an issue where the rat's focused location(s) would get cleared — even if the location wasn't checked — if it happened to land on the location without any actions remaining to make an attempt at checking it.&#13;
-37. Fix an oversight from 0.11.5 where the animation checkboxes did nothing.&#13;
-    - In addition to restoring the original few things that these checkboxes control:&#13;
-        1. Transitions on Food/Energy/Luck bars will be animated (or not) according to the player animation checkbox.&#13;
-        2. Tile examples in the tooltips and the "u win." dialog will be animated (or not) along with the tiles, synchronized to the same frame.&#13;
-        3. The dashed line showing the path from the rat to its target location will be animated (or not) according to the player animation checkbox.&#13;
-        4. The rat token will animate its movement from one location to the next (or not) according to the player animation checkbox.&#13;
-        5. On systems where the user has indicated a [preference for "reduced motion"](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion#user_preferences), the two checkboxes will be unchecked by default.&#13;
-38. #143: Stop automatically reconnecting after getting disconnected. This has been resurrecting rooms that had previously timed out, which is rude. Some version of this MAY come back in the future, if I can find a way to detect when it would be OK.&#13;
-39. #142: The dashed path to the rat's current target will no longer get misaligned and shrunk on games that don't go all the way to Snakes on a Planet.&#13;
-40. #138: The sidebar now has an extra spot at the beginning that shows the number of all rats. This lets you do the same stuff that the other icons in this panel let you do: click to hint for any rat (i.e., any item in the "Rats" item group) and hover over it to see a tooltip with all the hinted rat locations.&#13;
-41. Because I kept getting annoyed while testing the previous one, tooltips now stay around when the cursor goes inside them instead of needing the cursor to stay inside the original trigger box. This means that you can now highlight text from these tooltips with your mouse and copy-paste.&#13;
-42. I might have fixed a bug where sometimes the rat wouldn't send its chat messages immediately, but would wait for some arbitrary event to happen in the future. I have no idea why I wrote it the way I did at first...&#13;
-43. Whenever we see `{RANDOM_PLAYER}` in any message from your YAML file, we'll replace that with the current alias of a random player. I tried to make this as useful and sensible as I could:&#13;
-   - If you are the only player (on your team), it will always just pick you. Otherwise, it will never pick you, but instead:&#13;
-   - If any other players (on your team) are connected and haven't completed their goal yet, then it will pick a random one of them. Otherwise, it will pick a random other player (on your team).&#13;
-   - If there are multiple `{RANDOM_PLAYER}` placeholders in a single message, then we'll try to pick as many **different** players as possible (in random order still), only repeating a player if there are more placeholders than the number of players allowed by the above rules. To be precise, we sample randomly without replacement from the list until the list is empty, then we refill it and repeat the process until all placeholders have been filled.&#13;
-44. Fix an oversight that caused messages to get repeatedly processed over and over again. This was most visible when telling the rat to do something: it would go into an infinite loop of acknowledging the request forever.&#13;
-45. Fix an oversight where a horizontal scroll bar could appear under normal conditions just because of how close certain locations are to the edge.&#13;
-46. Set the base URL to allow self-hosting it somewhere other than the site root (e.g., if I were to make subpaths like `https://old.autopelago.app/0.11.13` to run that older version).&#13;
-47. Start looking for the bits that version 1.0.0 of the APWorld will (later!) start to send us to support more flavor items with only Archipelago-side updates.&#13;
-48. For games with passwords, start encrypting what shows up in the URL bar. There's a lot more to it than that sounds: the encrypted password uses `&amp;W=EncryptedPassword`, but you can still manually plug in `&amp;w=OriginalPassword`. The encryption is there so that you can reload / bookmark the page and still connect to the game just fine, as long as you do so within the same browser profile (i.e., you can't paste your URL from Firefox to Chrome or to someone else's computer, the key is only stored locally).&#13;
-49. Fix an unnecessary error when connecting to multiworlds generated from APWorld files predating April 1, 2025. Ongoing support for multiworlds generated from old 0.x APWorld files is not guaranteed, but if the only thing I need to do is slightly tweak a version number check, then that's no big deal.</content>
-    <link href="https://github.com/airbreather/Autopelago/releases/tag/v0.11.17"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.3.0-pre2-1</id>
-    <title>Crash2 v0.3.0rc2.post1</title>
-    <updated>2026-04-07T23:50:58+00:00</updated>
-    <author>
-      <name>Sim10XXX</name>
-    </author>
-    <author>
-      <name>alexdass</name>
-    </author>
-    <content>Note: still pre release because warp rando could still be broken (and I don't want to test anymore rn)&#13;
-&#13;
-## Additions:&#13;
-- Updated some option descriptions to be more detailed and added option groups&#13;
-- New Option to fill wumpa checks locally&#13;
-  - This is to prevent other worlds from getting clogged with Crash 2 filler when playing fruitsanity&#13;
-- New Option to exclude difficult wumpa checks&#13;
-  - This will prevent wumpas in difficult/annoying spots from containing useful items (affected locations have a "*" in their name)&#13;
-- Added the two wumpas from Cold Hard Crash that I previously thought were unobtainable as actual checks&#13;
-- Warp randomizer now has Universal Tracker support&#13;
-&#13;
-## Bug Fixes:&#13;
-- Letting the demo run will no longer collect wumpa fruit checks&#13;
-- A gameover during a no lives trap will no longer give extra lives&#13;
-- Made Small Crash a bit bigger (default scale mult changed from 20% -&gt; 33%), to try preventing Crash from often getting stuck in the floor when crouching/sliding&#13;
-  - This was the smallest I could make Crash while not getting stuck on the grated floor in Hangin' Out&#13;
-- Small Crash trap will now be disabled for levels that have Polar (the white bear) &#13;
-  - Shrinking Crash's scale had the effect of limiting how far from the center of the path you could go, making it quite unplayable&#13;
-- Small Crash now moves Crash up when activating, so that you won't fall while hanging&#13;
-- Fixed typo in trap_duration's display name&#13;
-&#13;
-## Issues:&#13;
-- Warp randomizer is not fixed</content>
-    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.3.0-pre2-1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.5</id>
-    <title>The Legend of Zelda - Oracle of Seasons v20.1.5</title>
-    <updated>2026-04-08T00:11:20+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>## 🛠️ Bugfixes&#13;
-- Fixed the natzu bridge&#13;
-- Added more space for text used to display other people's items</content>
-    <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.6</id>
-    <title>The Legend of Zelda - Oracle of Seasons v20.1.6</title>
-    <updated>2026-04-08T01:06:54+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>Fixed warp to start which was set in natzu for debug purposes</content>
-    <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.2</id>
-    <title>Pokemon Crystal v5.4.2</title>
-    <updated>2026-04-08T11:35:01+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-Since [5.4.1](https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.1)&#13;
-&#13;
-## Bug Fixes&#13;
-- The Options Creator once again accepts `_All` and `_Random` for options which support it.&#13;
-- Fix a possible game crash when viewing the MORE Pokedex page for a species found on Routes 12, 13 and 32 fishing.&#13;
-- Pokemon revived after being fainted from an Explosion Trap in the overworld will no longer keep any status they had.&#13;
-- Fix running from the Pokecenter 2F battle not always succeeding.&#13;
-- Fix Bug Catching Contest encounters not respecting the more uncaught encounters setting.&#13;
-- `randomize_moves` now accepts `_All` and `_Random`.&#13;
-&#13;
-**This release uses a new patching system which can apply ROM-side fixes to an already generated seed. Simply re-patch your ROM to do this.**&#13;
-&#13;
-_This release is backwards compatible with seeds generated on 5.4.0 or later._</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.7</id>
     <title>The Legend of Zelda - Oracle of Seasons v20.1.6</title>
@@ -1046,5 +849,138 @@ Also, please mention in the [_#messenger_](https://discord.com/channels/73120530
 - Fixed controller navigation on the Checks tab&#13;
 - Archipelago Shop added to Kino der Toten</content>
     <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/fdelduque/Archipelago/releases/tag/b0816</id>
+    <title>Symphony of the Night v0.8.16</title>
+    <updated>2026-04-12T15:26:10+00:00</updated>
+    <author>
+      <name>fdelduque</name>
+    </author>
+    <content/>
+    <link href="https://github.com/fdelduque/Archipelago/releases/tag/b0816"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Joshark/archipelago-sms/releases/tag/0.6.1</id>
+    <title>Super Mario Sunshine v0.6.1</title>
+    <updated>2026-04-12T18:10:43+00:00</updated>
+    <author>
+      <name>MrsMarinaRose</name>
+    </author>
+    <author>
+      <name>Joshark</name>
+    </author>
+    <content>* Changed client to properly recognize ticket mode and apply the correct flags&#13;
+* Changed some logic rules for entrances to account for different difficulties</content>
+    <link href="https://github.com/Joshark/archipelago-sms/releases/tag/0.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.1</id>
+    <title>Deltarune v1.2.1</title>
+    <updated>2026-04-12T18:17:19+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <content>(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
+&#13;
+**Changelog:**&#13;
+- Fixed bug where the glitch used to obtain the ThornRing check early was disabled&#13;
+- Fixed bug where setting "include_t_rank" to "excluded from logic" would still remove the location&#13;
+- Fixed bug where the /recieve_type would crash the client if you weren't already connected&#13;
+- Added a notice if your save folder path doesn't exist&#13;
+&#13;
+LINUX: If you experience lag, use `/receive_type` to set the receiving items type to "Start of the room". Your lag should decrease next time you enter a room. Also, for right now you do have to set the savepath every time the client is restarted. Hopefully next update will change this.&#13;
+&#13;
+**Before starting, use /savereset to reset all AP and save data for this mod. Don't worry; your original DELTARUNE saves won't be affected!**&#13;
+&#13;
+Feel free to give feedback, and make sure to report any bugs!&#13;
+&#13;
+**You will only give/receive checks in the Dark World.**</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.3</id>
+    <title>Donkey Kong 64 v1.5.3</title>
+    <updated>2026-04-12T19:18:25+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 1.5.3
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.3.1</id>
+    <title>Resident Evil 7 v1.0.0</title>
+    <updated>2026-04-12T19:45:06+00:00</updated>
+    <author>
+      <name>ElGrenier</name>
+    </author>
+    <content>Added Regions connection (the apworld should gen now? For testing purpose)</content>
+    <link href="https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.3.3</id>
+    <title>Resident Evil 7 v1.0.0</title>
+    <updated>2026-04-12T21:19:13+00:00</updated>
+    <author>
+      <name>ElGrenier</name>
+    </author>
+    <content># The Shipwreck Update !&#13;
+&#13;
+The Shipwreck has been added, with it, the actual ending of the game is now randomized ! Hooray ! &#13;
+Only the "present" part is randomized, the "past" one isn't.&#13;
+&#13;
+## Bugs : &#13;
+Fixed the issue were the first chapters item were not sending correctly&#13;
+Fixed some item location naming that were unclear (still in progress, if you have better name i'm all ears)&#13;
+&#13;
+## Warning : This is the first step for an possible 1.0, there will still be possible issue with the game softlocking itself if you go out of logic, and other issue that could occure&#13;
+&#13;
+Please send any bugs you find on the channel, that really helps 👍 &#13;
+&#13;
+</content>
+    <link href="https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Joshark/archipelago-sms/releases/tag/0.6.2</id>
+    <title>Super Mario Sunshine v0.6.2</title>
+    <updated>2026-04-12T21:45:23+00:00</updated>
+    <author>
+      <name>MrsMarinaRose</name>
+    </author>
+    <author>
+      <name>Joshark</name>
+    </author>
+    <content>Quick fix for logic bug that considered game beatable right off the bat</content>
+    <link href="https://github.com/Joshark/archipelago-sms/releases/tag/0.6.2"/>
   </entry>
 </feed>
