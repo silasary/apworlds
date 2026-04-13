@@ -1,9 +1,12 @@
 # Backlog Expedition
 
 ## Latest
-- <a href="https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/download/v1.1.2/backlog_expedition.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/download/v1.2.0/backlog_expedition.apworld">Latest Version (1.2.0)</a>
 
 ## All Versions
+
+#### v1.2.0
+- <a href="https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/download/v1.2.0/backlog_expedition.apworld">https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/download/v1.2.0/backlog_expedition.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/download/v1.1.2/backlog_expedition.apworld">https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/download/v1.1.2/backlog_expedition.apworld</a>
