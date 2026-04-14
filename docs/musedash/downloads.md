@@ -8,6 +8,9 @@
 #### v1.5.30
 - <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.30/musedash.apworld">https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.30/musedash.apworld</a>
 
+#### v1.5.30
+- <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.31/musedash.apworld">https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.31/musedash.apworld</a>
+
 #### v1.5.29
 - <a href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.29/musedash.apworld">https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/download/v1.5.29/musedash.apworld</a>
 
