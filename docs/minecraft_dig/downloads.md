@@ -1,9 +1,12 @@
 # Minecraft Dig
 
 ## Latest
-- <a href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.0.10_dig/minecraft_dig.apworld">Latest Version (0.0.10)</a>
+- <a href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.0.11_dig/minecraft_dig.apworld">Latest Version (0.0.11)</a>
 
 ## All Versions
+
+#### v0.0.11
+- <a href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.0.11_dig/minecraft_dig.apworld">https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.0.11_dig/minecraft_dig.apworld</a>
 
 #### v0.0.10
 - <a href="https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.0.10_dig/minecraft_dig.apworld">https://github.com/jacobmix/Minecraft_AP_Randomizer/releases/download/0.0.10_dig/minecraft_dig.apworld</a>
