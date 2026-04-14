@@ -5,48 +5,95 @@ It covers configuration, item handling, scenarios, and how cross-game interactio
 
 ---
 
-## ⚙️ Where is the Options Page?
-
-You can find the **Parkitect Options Page** in your **Archipelago Client** under [here](../player-options)
-
-This page contains all configuration fields necessary to generate your Parkitect world and export the appropriate `.apworld` or slot data file.
-
-If everything looks correct, no special adjustments are required — the defaults work for most players.  
-(You only need to modify this if you want to customize difficulty or behavior.)
-
----
-
 ## 🎲 What Does Randomization Affect?
 
 The randomizer can affect almost every system inside Parkitect, bringing chaos and fun to your park management experience! 🎡
 
 ### Randomized Categories
 
-#### 🧍 Player
-- Starting **money**
-- Attraction **speed modifiers** (4x, 5x, 6x, 7x, 8x, 9x)
+### 🎢 Player
+- Adjust **Game Speed** (adds new options: `4x`, `5x`, `6x`, `7x`, `7x, `9x`)
+- Add **Money**
 
-#### 🎢 Attractions
-- **Breakdowns**
-- **Vouchers** that boost performance or guest appeal
+### 🧍 Guests
+- Spawn guests
+- Modify their money (+/-)
+- Kill (remove) them
+- Change their needs (hungry, thirsty, happy, tired, bathroom)
+- Cause **vomiting**/**nausea**
+- Turn them into **vandals**
 
-#### 🍔 Stalls / Shops
-- **Re-delivery of ingredients**
-- **Cleaning jobs**
-- **Vouchers**
+### 🧑‍🔧 Employees
+- Hire automatically
+- Set **tired** state
+- Send for **training**
 
-#### 👷 Employees
-- Can be **hired**, **trained**, or **made tired**
+### ☁️ Weather
+- Set to **Rainy**, **Cloudy**, **Sunny** or **Stormy**
 
-#### ☁️ Weather
-- **Rainy**, **Cloudy**, **Sunny**, or **Stormy**  
+### 🎠 Attractions
+- Trigger **breakdowns**
+- Apply **vouchers**
 
-#### 🧍‍♂️ Guests
-- Can **spawn**, **lose money**, **gain money**, **vomit**, **vandalize**, or **leave unhappy**
-- Their hunger, thirst, and tiredness levels may also change
+### 🍔 Stalls / Shops
+- Re-deliver ingredients
+- Set **cleaning tasks**
+- Apply **vouchers**
 
-#### 🗺️ Scenario
-- Randomly adds **Park goals**
+### 🗺️ Scenario
+- Add any **goal** with any **reward**
+
+---
+
+## 🎯 Goals
+You can configure multiple win conditions for your scenario. Each goal can be adjusted individually:
+
+### 👥 Guest Goal
+Defines how many guests must be in your park to win.  
+- **Range:** 1 – 2500  
+- **Default:** 1000  
+
+### 💰 Money Goal
+Requires reaching a certain amount of money.  
+- **Range:** 50,000 – 500,000  
+- **Default:** 100,000  
+
+### 🎢 Roller Coaster Goal
+Number of roller coasters required.  
+- **Range:** 0 – 12  
+- **Default:** 4  
+
+### 😀 Excitement Rating
+Minimum excitement required for a coaster to count.  
+Set to **0** to disable this requirement.  
+- **Range:** 0 – 80  
+- **Default:** 50  
+
+### 😬 Intensity Rating
+Minimum intensity required for a coaster to count.  
+Set to **0** to disable this requirement.  
+- **Range:** 0 – 80  
+- **Default:** 50  
+
+### 📈 Ride Profit Goal
+Total profit required from all rides.  
+- **Range:** 0 – 10,000  
+- **Default:** 1500  
+
+### 🎟️ Park Tickets Goal
+Number of park tickets that must be sold.  
+- **Range:** 0 – 20,000  
+- **Default:** 0  
+
+### 🏪 Shops Goal
+Number of shops required in the park.  
+- **Range:** 0 – 100  
+- **Default:** 30  
+
+### 💵 Shop Profit Goal
+Total profit required from shops.  
+- **Range:** 0 – 3,000  
+- **Default:** 500  
 
 ---
 
@@ -105,31 +152,12 @@ Currently included scenarios:
 
 ---
 
-## 🧭 Scenario Rules (for Contributors)
-
-If you want to submit your own Parkitect scenario for the AP World:
-
-- Must include **all attraction and shop types**
-- **Decorations** are optional (not randomized)
-- Must have **one mandatory goal** (e.g., 95% happiness)
-- Guests must **enter without pathfinding issues**
-- Must be **balanced** and **fun**
-- Should have **enough space** for building expansions
-- The Park **must** work in vanilla
+## 🧭 [Scenario Rules (for Contributors)](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-scenario-rules-for-contributors)
 
 ---
 
-## 🧪 Testing & Compatibility
 
-| Category | Status | Notes |
-|-----------|---------|-------|
-| **Operating Systems** | ✅ Tested on **Windows 10** and **MacOS Sequoia 15.6** | Not tested on **Linux** yet |
-| **Multiplayer** | ⚠️ Not Tested / Likely Unsupported | The mod was designed for single-player mode — multiplayer may cause sync issues |
-| **Game Version** | ✅ Steam release (1.12c) | Earlier versions before Steam release (1.12b2) won’t work |
-| **Other Mods** | ⚙️ Attraction/Shop Mods are Supported | [Steam Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3647109901) |
-| **Performance** | ✅ Stable | No major FPS drops or memory issues during extended play |
-| **Archipelago Connection** | ✅ Tested with local and remote servers | No known connection issues |
-| **Archipelago Multigame** | ✅ Stable ||
+## 🧭 [Testing & Compatibility](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-testing--compatibility)
 
 ---
 
