@@ -2,44 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-13T18:28:41.749149+00:00</updated>
+  <updated>2026-04-14T00:25:47.984565+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.13</id>
-    <title>YARG v0.0.13</title>
-    <updated>2026-04-09T05:35:01+00:00</updated>
-    <author>
-      <name>energymaster22</name>
-    </author>
-    <content># Use Client Version 0.0.5+. No Client Update Required!&#13;
-&#13;
-New:&#13;
-&#13;
-- Support for the Walter Ralts 01 setlist&#13;
-&#13;
-## What's Changed&#13;
-* Added Walter Ralts 01 setlist by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/28&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.12...0.0.13</content>
-    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.13"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.4.4</id>
-    <title>Baldur's Gate 3 v0.4.4</title>
-    <updated>2026-04-09T06:02:55+00:00</updated>
-    <author>
-      <name>Broney</name>
-    </author>
-    <content>Fixes:&#13;
-* Compatibility with AP 0.6.7&#13;
-* The "BUG: X was a typo" messages for the locations removed in 0.4.3&#13;
-* The actual typo in the killsanity location in act 2</content>
-    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.4.4"/>
-  </entry>
   <entry>
     <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.04.09</id>
     <title>YARGAllSetlists v26.4.9</title>
@@ -970,5 +937,67 @@ _This release is backwards compatible with seeds generated on 5.4.0 or later. So
 - [Setup guide](https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/blob/main/docs/setup_en.md)&#13;
 - [Info](https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/blob/main/docs/en_Backlog%20Expedition.md)</content>
     <link href="https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/tag/v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.2</id>
+    <title>Parkitect v1.3.2</title>
+    <updated>2026-04-13T18:25:58+00:00</updated>
+    <author>
+      <name>CrusherRL</name>
+    </author>
+    <content>Installation can be found [here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)&#13;
+&#13;
+Enjoy!&#13;
+&#13;
+NOTE:&#13;
+This release is not backwards compatible with seeds generated **before **1.2.1&#13;
+&#13;
+# Parkitect Archipelago — Release Notes&#13;
+## Fix&#13;
+- Fixed "Corkscrew Coaster" typo. This mod Item was not recognized as a mod Item and cause exceptions</content>
+    <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.2</id>
+    <title>Nine Sols v0.5.2</title>
+    <updated>2026-04-13T21:44:33+00:00</updated>
+    <author>
+      <name>Ixrec</name>
+    </author>
+    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
+&#13;
+- **Auto-hinting** shop locations with progression and/or useful items&#13;
+- Shop UI tweaks (when shop rando is on):&#13;
+	- The yellow text in the top right of the shop UI has been changed from the item flag (Progression, Useful, Trap, Filler) to the AP location name (e.g. "3D Printer: 2nd High Cost Purchase"). The item flag text has been moved down to the description.&#13;
+	- Shop purchases that require a Dark Steel or Herb Catalyst will now display `&amp; DS` or `&amp; HC` underneath the jin price, making it easy to see at a glance the DS, HC and just-jin parts of Kuafu's shop.&#13;
+	- Any shop location the AP server says is checked will now be grayed out, so e.g. you can't waste your money "re-buying" `!collect`ed locations, and the description will be edited to explain this corner case.&#13;
+	- Removed the "Modified"/"Upgraded"/"Purchased" text on already purchased entries, since it would incorrectly overlap with the e.g. "Required: Dark Steel" text, and the vanilla word choices don't make sense in shop rando.&#13;
+		- Previous versions tried to remove the "Required: ..." text instead, but it turns out that didn't always work (in particular, the moment immediately after making a purchase had obvious overlapping text). This new approach should consistently prevent overlaps.&#13;
+	- When you only have exactly enough Dark Steels or Herb Catalysts to buy the in-logic progression shop purchases, the randomizer forces you not to spend your DSs/HCs elsewhere (since that would risk bricking the multiworld), and adds an explanation about this to the forbidden purchase descriptions. What's new in 0.5.2 is that this explanation has been slightly reworded, and now includes an explicit list of the in-logic purchases you're being forced to make instead.&#13;
+- Other shop rando tweaks:&#13;
+	- Added shop location name groups: "Kuafu's Shop", "Kuafu's Extra Inventory", "Chiyou's Shop", "3D Printer" and "All Shops"&#13;
+	- Updated randomize_shops option description to suggest my new JinMultiplier mod and nozwock's NoDeathPenalty mod, for obvious reasons.&#13;
+	- The notification in the top right when you collect a Pipe Upgrade now starts with the word "Collected", like all the other notifications. I'm counting this as a shop rando fix since the Pipe Upgrade item only exists in shop rando, and it doesn't go anywhere else.&#13;
+- Death link tweaks:&#13;
+	- Death link is no longer broken by quitting to menu and reloading&#13;
+	- Improved handling of the "DeathLink" AP connection tag, so it's now applied during connection instead of just after connection, and the tag is immediately added or removed whenever you toggle the mod's DL setting.&#13;
+- Boss Scaling tweaks:&#13;
+	- Boss Scaling is now true by default for new randomizer players&#13;
+	- Added separate "Scale Down Early Bosses" and "Scale Up Late Bosses" settings (default true) since some players have asked for more customization&#13;
+- `medium` logic was missing multiple bow hovers:&#13;
+	- The "CTH: Large Elevator Shaft" location&#13;
+	- For the "PR (Central): Hack Statue" location, you can reach the statue with a bow hover from "Guarded By Beetle"&#13;
+	- Getting from "Factory (U) - Broken Shanhai" to "Middle Right Exit"&#13;
+	- Getting from "Factory (GH) - Hammer Brothers Roof" to the "Above Root Node" roof is now in logic with bow hover and Grapple&#13;
+		- ...as well as Air Dash &amp; T-dash, and on `ledge_storage` Grapple &amp; T-dash setup into parry hover. I was trying to make this just about bow hovers but that didn't quite pan out.&#13;
+	- Going from GoS (Entry)'s root node to "Greenhouse Between Elevators" (a.k.a. "the randomizer version of Elevator Skip") now allows bow hover &amp; CL &amp; LG&#13;
+- `ledge_storage` logic was missing multiple "triple jumps" (Cloud Leap + ledge storage vault + another Cloud Leap):&#13;
+	- The connection to "Greenhouse Between Elevators" now also allows CL &amp; LG / a triple jump&#13;
+	- The FSP tree-growing chests can now be reached with CL &amp; LG / triple jumps&#13;
+	- "PR (East): Top Platform in Upper Right Shaft" now also allows CL &amp; LG / a triple jump&#13;
+	- Luyan's Tomb in GoS (West) can now be reached with CL &amp; LG / a triple jump&#13;
+	- The caves in the upper left of AF (Depths) can now be reached from the AF(D) root node using CL &amp; LG / a triple jump from the Shangui Arena entrance&#13;
+</content>
+    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.2"/>
   </entry>
 </feed>
