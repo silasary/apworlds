@@ -2,31 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-15T06:41:30.854154+00:00</updated>
+  <updated>2026-04-15T12:22:49.993364+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-pre-1</id>
-    <title>Lethal Company v0.8.0rc1</title>
-    <updated>2026-04-10T00:14:17+00:00</updated>
-    <author>
-      <name>T0r1nn</name>
-    </author>
-    <content>Mod and apworld:&#13;
-* updated logic for v81&#13;
-&#13;
-To use this version, navigate to wherever you have this mod installed, delete the old APLC.dll, and replace it with the version attached in this release. r2modman users can find their profile folder by clicking Settings -&gt; Browse profile folder, and Gale users can find it under File -&gt; Open profile folder. From there, navigate to BepInEx/plugins/APLC-APLC and you should see APLC.dll. For users of Gale Mod Manager, it is especially important to DELETE the old dll FIRST to avoid overwriting the mod in other profiles.&#13;
-&#13;
-This version contains only the minimum changes to make the mod and apworld compatible with Lethal Company v81. The full changes will release at a later date.&#13;
-&#13;
-Pre-2:&#13;
-* fixed item grabbing and utility slot&#13;
-&#13;
-**Not compatible with previously generated worlds.**</content>
-    <link href="https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-pre-1"/>
-  </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.0</id>
     <title>Deltarune v1.2.0</title>
@@ -1098,5 +1078,47 @@ Please report any bugs/issues either on [Github](https://github.com/nicopop/Manu
 &#13;
 **Full Changelog**: https://github.com/nicopop/ManualApworlds/compare/6.5.1...OW7.0.0</content>
     <link href="https://github.com/nicopop/ManualApworlds/releases/tag/OW7.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.4.2</id>
+    <title>Black Ops 3 - Zombies v0.4.2</title>
+    <updated>2026-04-15T11:14:18+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>**It is heavily recommend you use t7patch**&#13;
+&#13;
+- **(New)** PhD Flopper&#13;
+  - Added to Wunderfizz&#13;
+  - (Moon) Widow's Wine has been moved to Tunnel 6&#13;
+  - Not available on Shadows of Evil&#13;
+  - Explosive weapons are considered stronger in logic if PhD Flopper is also unlocked (Raygun, XM-53 etc)&#13;
+- **(New)** Moon Support:&#13;
+  - Save System:&#13;
+    - The usual (doors, power, rounds, loadouts)&#13;
+    - Easter Egg steps up until picking up the charged Vril Generator to start the final MPD soul fill sequence&#13;
+      - Vril Sphere reaching the MPD will only save if the buttons in the lab are done&#13;
+    - Each of the 3 Space Dog toys shot with the wave gun&#13;
+    - Breaches are **not** saved and restored, however the Vril Sphere being spawned by tunnel 6 breach is&#13;
+  - Patch broken official script for No Man's Land to switch to Supersprinters after 2 minutes&#13;
+  - RNG Adjustment - Digger RNG (default on) - Makes the digger for tunnel 6 activate soon after round 16&#13;
+  - RNG Adjustment - Mystery Box RNG (default on) - Uses Revelations style custom weights to increase odds of required weapons appearing&#13;
+    - After the box moves, starts counting box spins&#13;
+    - 8 spins without doubles the odds&#13;
+    - 16 spins without triple the odds&#13;
+  - Checks:&#13;
+    - Turn on the Power&#13;
+    - Main Easter Egg (11 checks)&#13;
+    - Skill check - Land safely on a cushion&#13;
+    - Hacker (4 checks) - Excavator, Window, Mystery Box and Pack-A-Punch &#13;
+    - Space Dog Easter Egg (5 checks)&#13;
+    - 4 Music Easter Eggs&#13;
+- Round checks and round saves are now done during 'between round over'. This should fix issues with the wrong round number being used on some maps.&#13;
+- If max round with check has to be increased for gen to succeed, goal round will no longer be increased with it&#13;
+- New Checks:&#13;
+  - `Turn on the Power` for The Giant and Gorod Krovi&#13;
+  - `Masamune - Build the Wonder Weapon` for Zetsubou No Shima&#13;
+- Disabled partial Void Bow restoration on Der Eisendrache temporarily</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.4.2"/>
   </entry>
 </feed>
