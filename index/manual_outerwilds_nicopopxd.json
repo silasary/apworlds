@@ -6,7 +6,9 @@
     "https://github.com/nicopop/ManualApworlds"
   ],
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "world_version"
+  ],
   "versions": {
     "6.4.0": {
       "created_at": "2025-11-26T00:30:42Z",
@@ -49,6 +51,20 @@
       "title": "Manual_OuterWilds_Nicopopxd - 6.5.1",
       "version_simple": "6.5.1",
       "world_version": "6.5.1"
+    },
+    "OW7.0.0": {
+      "created_at": "2026-04-15T01:30:37Z",
+      "description": "## What's Changed\r\n\r\nAll the changes were done in PR #2 and documentation changes do in #6 \r\n\r\nBut you can find a more detailed changelog below\r\n\r\n### Options changes:\r\n\r\n- Every options now track if they are randomized or not that mean a full `random`/`randomized` yaml is possible and should always work\r\n  - it does mean that on the webhost you have both random and randomized option but that was the Price to pay to have it work on the Option Creator\r\n- Some Advanced options were added that let you completly remove most items/location from generation but they can make generation fail so they are hidden into the weighted option page\r\n\r\n### Client changes\r\n\r\nTo include support for multiple feature in open PRs on the main Manual repo, I decided to temporarily force my version of the client in the launcher.\r\nIn the launcher you'll be able to search for `Manual Client Nico's Experiment` to find it\r\nits compatible with everything the normal client supports and even more feature that will probably get merged sooner or later\r\nHere's a short list of things added that have not yet been merged (if checked mean merged)\r\n\r\n- [ ] Item and location alias to protect against spoiler and to help remind you if you chose to require Solanum and/or the Prisoner\r\n- [x] The possibility to scout some locations directly in the client\r\n- [ ] Unused in this apworld is the code to support UT Glitched logic\r\n\r\n### Logic changes\r\n\r\n- Almost every location were renamed to be spoiler free\r\n  - Those that weren't, were already safe\r\n- Some of the items were also renamed to be safe\r\n- Some DLC items were fused together to simplify logic a bit\r\n  - \"DreamWorld Fake Fireplace\", \"DreamWorld Fake Wall\" ->\"Ghost Wall Patch\"\r\n  - \"DreamWorld Grabbing Hands\", \"DreamWorld Hidden Hand\" -> \"Totem Hands Patch\"\r\n- In the past there were copies of location that would give you an item called something like \"visited X\", they were all replaced with events\r\n- Technical: This apworld now uses the lastest Manual source as of this release which include conversion to use Rule builder which  let you whats just below this list:\r\n\r\n**In doubt of a location's requirement, you can do /explain [Location] in the client and it will tell you what you need for said location**\r\n\r\nPlease report any bugs/issues either on [Github](https://github.com/nicopop/ManualApworlds/issues) or on Discord\r\n\r\n**Full Changelog**: https://github.com/nicopop/ManualApworlds/compare/6.5.1...OW7.0.0",
+      "download_url": "https://github.com/nicopop/ManualApworlds/releases/download/OW7.0.0/manual_outerwilds_nicopopxd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ed49000be13a6ae2f0357b4c865d84bc0e337f7ac99d31d4552dd9b38bc279ca",
+      "html_url": "https://github.com/nicopop/ManualApworlds/releases/tag/OW7.0.0",
+      "size": 85887,
+      "source_url": "https://api.github.com/repos/nicopop/ManualApworlds",
+      "tag": "OW7.0.0",
+      "title": "Manual_OuterWilds_Nicopopxd - 7.0.0",
+      "version_simple": "7.0.0",
+      "world_version": "7.0.0"
     },
     "v3.0.0": {
       "created_at": "2023-05-25T21:47:53Z",

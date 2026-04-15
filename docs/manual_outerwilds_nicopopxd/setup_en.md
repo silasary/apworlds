@@ -2,13 +2,13 @@
 
 <p align="center">
     <img alt="OuterWilds Logo"
-     src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/dc/Outer_Wilds_Logo.png/800px-Outer_Wilds_Logo.png?20190112131250"
+     src="https://www.pngkey.com/png/full/717-7172218_outer-wilds-logo.png"
     >
     <h1 align="center">Base Game + DLC Customizable Edition</h1>
-    <p align="center">v6.2.0</p>
+    <p align="center">v7.0.0</p>
 </p>
 
-Last-Updated 2024-04-23 (yyyy-mm-dd)
+Last-Updated 2026-04-14 (yyyy-mm-dd)
 
 ***A star/asterisk (\*) next to a line mean recommended.***
 
@@ -21,6 +21,8 @@ Last-Updated 2024-04-23 (yyyy-mm-dd)
  / [Switch](https://www.nintendo.com/en-ca/store/products/outer-wilds-switch/))
 
 - The latest stable [Archipelago Launcher](https://archipelago.gg/)
+- [Universal Tracker](https://discord.com/channels/731205301247803413/1367270230635839539)*
+  - An apworld that shows you what location you can go to in real time
 
 ## Optional Software
 
@@ -32,8 +34,6 @@ Last-Updated 2024-04-23 (yyyy-mm-dd)
 
 - [OuterWilds Mod Manager](https://outerwildsmods.com/mod-manager/)*
   - PC versions only (Steam or Epic Games)
-- [Universal Tracker](https://discord.com/channels/731205301247803413/1170094879142051912)*
-  - An WIP apworld that shows you what location you can go to in real time
 
 ## ↑ Recommended* and Optional mods from manager↑
 
@@ -49,14 +49,15 @@ Install those from the Mod Manager:
   - Add popup when you would get an achievement on new save even if you already have that steam achievement.
 - [Enable Meditation](https://outerwildsmods.com/mods/enablemeditation/)*
   - Like the name might suggest you always have the "meditate until next loop button" in the pause menu.
+- [Traveler's Pack](https://outerwildsmods.com/mods/travelerspack/)*
+  - Gives you a placeable backpack to store items in
 - [Suit Log](https://outerwildsmods.com/mods/suitlog/)
   - Allows you to open your ship log from anywhere.
-- [Trajectory Prediction](https://outerwildsmods.com/mods/trajectoryprediction/)
-  - Shows where your shipscout/player is going vs selected planet.
-  - Require you enabling "Use Incremental GC" in the modmanager settings.
 - [Resource Management](https://outerwildsmods.com/mods/resourcemanagement/)
   - A mod that makes the oxygen and fuel in your ship matter.
   - Oxygen regen when in area with oxygen and fuel regenerate while the ship is landed.
+- [Ship Enhancements](https://outerwildsmods.com/mods/shipenhancements/)
+  - Ship Enhancements adds way too much stuff to the ship, all of which you can find in the mod settings menu. Any changes to the ship will be applied on the next loop. Experiment and have fun!
 
 #### DLC Mods
 
@@ -90,9 +91,9 @@ you installed and after that you'll only need to start from the Mod Manager when
 
 #### Universal Tracker install
 
-1. Open the link in [Optional Software](#optional-software) or using this [direct link](https://discord.com/channels/731205301247803413/1170094879142051912)
+1. Open the link in [Required Software](#required-software) or using this [direct link](https://discord.com/channels/731205301247803413/1367270230635839539)
 2. Check the pins for the download of the version of archipelago you use, at the time of writing its 0.4.3. (nov 18)
-3. Place the tracker.apworld in the *worlds* folder of your archipelago install.
+3. Place the tracker.apworld in the *custom_worlds* folder of your archipelago install.
     - ([ArchipellagoFolder]\lib\worlds or \worlds if using dev version of archipelago)
 4. Also place the manual_outerwilds_nicopopxd.apworld in the world folder if its not there already.
 5. Make sure a copy of your current player.yaml is in the *Players* folder of your archipelago install.
@@ -115,9 +116,7 @@ you installed and after that you'll only need to start from the Mod Manager when
 ## Manual Client
 
 In the "Tracker and Locations" tab you'll find buttons corresponding with all the available locations in the Randomizer.  
-Since this is a manual game its built on trust™ you press the locations when you get to them,  
-hopefully in the future only what you can access will be visible but at the moment  
-you could press victory and it would accept it.
+Since this is a manual game its built on trust™ and Universal Tracker Magic you press the locations when you get to them (Marked in Green in the client)
 
 ## Main Game
 

@@ -2,21 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-15T00:27:50.625154+00:00</updated>
+  <updated>2026-04-15T06:41:30.854154+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.2</id>
-    <title>Bloons TD6 v0.5.2</title>
-    <updated>2026-04-09T10:45:52+00:00</updated>
-    <author>
-      <name>Matt41321</name>
-    </author>
-    <content>- Added new Mushroom Grotto map</content>
-    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.2"/>
-  </entry>
   <entry>
     <id>https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-pre-1</id>
     <title>Lethal Company v0.8.0rc1</title>
@@ -1060,5 +1050,53 @@ This release is not backwards compatible with seeds generated **before **1.2.1&#
 &#13;
 **Full Changelog**: https://github.com/kodbyte/Archipelago-Keen/compare/v0.0.3...v.0.0.4</content>
     <link href="https://github.com/kodbyte/Archipelago-Keen/releases/tag/v.0.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nicopop/ManualApworlds/releases/tag/OW7.0.0</id>
+    <title>Manual_OuterWilds_Nicopopxd v7.0.0</title>
+    <updated>2026-04-15T01:30:37+00:00</updated>
+    <author>
+      <name>nicopop</name>
+    </author>
+    <content>## What's Changed&#13;
+&#13;
+All the changes were done in PR #2 and documentation changes do in #6 &#13;
+&#13;
+But you can find a more detailed changelog below&#13;
+&#13;
+### Options changes:&#13;
+&#13;
+- Every options now track if they are randomized or not that mean a full `random`/`randomized` yaml is possible and should always work&#13;
+  - it does mean that on the webhost you have both random and randomized option but that was the Price to pay to have it work on the Option Creator&#13;
+- Some Advanced options were added that let you completly remove most items/location from generation but they can make generation fail so they are hidden into the weighted option page&#13;
+&#13;
+### Client changes&#13;
+&#13;
+To include support for multiple feature in open PRs on the main Manual repo, I decided to temporarily force my version of the client in the launcher.&#13;
+In the launcher you'll be able to search for `Manual Client Nico's Experiment` to find it&#13;
+its compatible with everything the normal client supports and even more feature that will probably get merged sooner or later&#13;
+Here's a short list of things added that have not yet been merged (if checked mean merged)&#13;
+&#13;
+- [ ] Item and location alias to protect against spoiler and to help remind you if you chose to require Solanum and/or the Prisoner&#13;
+- [x] The possibility to scout some locations directly in the client&#13;
+- [ ] Unused in this apworld is the code to support UT Glitched logic&#13;
+&#13;
+### Logic changes&#13;
+&#13;
+- Almost every location were renamed to be spoiler free&#13;
+  - Those that weren't, were already safe&#13;
+- Some of the items were also renamed to be safe&#13;
+- Some DLC items were fused together to simplify logic a bit&#13;
+  - "DreamWorld Fake Fireplace", "DreamWorld Fake Wall" -&gt;"Ghost Wall Patch"&#13;
+  - "DreamWorld Grabbing Hands", "DreamWorld Hidden Hand" -&gt; "Totem Hands Patch"&#13;
+- In the past there were copies of location that would give you an item called something like "visited X", they were all replaced with events&#13;
+- Technical: This apworld now uses the lastest Manual source as of this release which include conversion to use Rule builder which  let you whats just below this list:&#13;
+&#13;
+**In doubt of a location's requirement, you can do /explain [Location] in the client and it will tell you what you need for said location**&#13;
+&#13;
+Please report any bugs/issues either on [Github](https://github.com/nicopop/ManualApworlds/issues) or on Discord&#13;
+&#13;
+**Full Changelog**: https://github.com/nicopop/ManualApworlds/compare/6.5.1...OW7.0.0</content>
+    <link href="https://github.com/nicopop/ManualApworlds/releases/tag/OW7.0.0"/>
   </entry>
 </feed>

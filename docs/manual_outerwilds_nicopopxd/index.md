@@ -4,7 +4,7 @@ Outer Wilds is a critically-acclaimed and award-winning open world mystery about
 
 
 ## Downloads
-- <a href="https://github.com/nicopop/ManualApworlds/releases/download/6.5.1/manual_outerwilds_nicopopxd.apworld">Latest Version (6.5.1)</a>
+- <a href="https://github.com/nicopop/ManualApworlds/releases/download/OW7.0.0/manual_outerwilds_nicopopxd.apworld">Latest Version (7.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

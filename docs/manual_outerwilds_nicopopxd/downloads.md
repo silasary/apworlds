@@ -1,9 +1,12 @@
 # Manual_OuterWilds_Nicopopxd
 
 ## Latest
-- <a href="https://github.com/nicopop/ManualApworlds/releases/download/6.5.1/manual_outerwilds_nicopopxd.apworld">Latest Version (6.5.1)</a>
+- <a href="https://github.com/nicopop/ManualApworlds/releases/download/OW7.0.0/manual_outerwilds_nicopopxd.apworld">Latest Version (7.0.0)</a>
 
 ## All Versions
+
+#### v7.0.0
+- <a href="https://github.com/nicopop/ManualApworlds/releases/download/OW7.0.0/manual_outerwilds_nicopopxd.apworld">https://github.com/nicopop/ManualApworlds/releases/download/OW7.0.0/manual_outerwilds_nicopopxd.apworld</a>
 
 #### v6.5.1
 - <a href="https://github.com/nicopop/ManualApworlds/releases/download/6.5.1/manual_outerwilds_nicopopxd.apworld">https://github.com/nicopop/ManualApworlds/releases/download/6.5.1/manual_outerwilds_nicopopxd.apworld</a>
