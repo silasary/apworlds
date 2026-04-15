@@ -1,9 +1,12 @@
 # Ratchet &amp; Clank 3
 
 ## Latest
-- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.1/rac3.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.5.0/rac3.apworld">Latest Version (0.5.0)</a>
 
 ## All Versions
+
+#### v0.5.0
+- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.5.0/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.5.0/rac3.apworld</a>
 
 #### v0.4.1
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.1/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.1/rac3.apworld</a>

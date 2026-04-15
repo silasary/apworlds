@@ -2,67 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-15T12:22:49.993364+00:00</updated>
+  <updated>2026-04-15T18:28:03.863021+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.0</id>
-    <title>Deltarune v1.2.0</title>
-    <updated>2026-04-10T05:50:12+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <author>
-      <name>theemeraldsword85</name>
-    </author>
-    <author>
-      <name>Tenebrosful</name>
-    </author>
-    <content>(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
-&#13;
-**This version is not compatible with previous versions. If you're in the middle of a game, refrain from updating until you're finished.**&#13;
-&#13;
-**Changelog:**&#13;
-- Added ways to return to Castle Town mid-run in Chapters 2 and 4&#13;
-- Added /receive_type to change receiving items between whenever possible and only at the start of the room.&#13;
-- Added /deathlink command to change deathlink during the run&#13;
-- Added /auto_patch steamdepot to look for a steam depot&#13;
-- Added support for no macguffin items&#13;
-- Added Option groups&#13;
-- Customizing filler weights is now possible&#13;
-- Yamlless and out of logic UT Support (no more death on bagel overflow)&#13;
-- Web URI Support&#13;
-- APWorld version displayed in the client window and logs&#13;
-- Added Retry and Quit to the "Please connect to the Multiworld" screen&#13;
-- Removed Randomize Warp Doors&#13;
-- Ralsei no longer telepathically communicates you if you drop the manual while he's absent in Chapter 1&#13;
-- Fixed the egg notice not working in Chapter 2&#13;
-- Remote Batteries are no longer called "KeyGen2Segmnt" in Chapter 3&#13;
-- Having "Starwalker" while recruiting "Elnina" and "Lanino" no longer prevents the checks from sending&#13;
-- "CH3: TV World - Man" is no longer in logic without the TripTicket&#13;
-- Golden Prizes are now properly randomized with "include_hidden_items"&#13;
-&#13;
-LINUX: If you experience lag, use `/receive_type` to set the receiving items type to "Start of the room". Your lag should decrease next time you enter a room. &#13;
-&#13;
-**Before starting, use /savereset to reset all AP and save data for this mod. Don't worry; your original DELTARUNE saves won't be affected!**&#13;
-&#13;
-Feel free to give feedback, and make sure to report any bugs!&#13;
-&#13;
-**You will only give/receive checks in the Dark World.**</content>
-    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.3</id>
-    <title>Bloons TD6 v0.5.3</title>
-    <updated>2026-04-10T07:57:21+00:00</updated>
-    <author>
-      <name>Matt41321</name>
-    </author>
-    <content>- Ancient Portal moved from Advanced to Intermediate</content>
-    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.3"/>
-  </entry>
   <entry>
     <id>https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.5</id>
     <title>Gauntlet Legends v2.1.5</title>
@@ -486,13 +430,12 @@ POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
   </entry>
   <entry>
     <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1</id>
-    <title>Sonic Adventure DX v1.2.1</title>
+    <title>Sonic Adventure DX v1.2.1.post2</title>
     <updated>2026-04-11T18:32:06+00:00</updated>
     <author>
       <name>ClassicSpeed</name>
     </author>
-    <content>&#13;
-## [v1.2.1] - 2026-04-11&#13;
+    <content>## [v1.2.1] - 2026-04-11&#13;
 &#13;
 ### Fixed:&#13;
 &#13;
@@ -1120,5 +1063,188 @@ Please report any bugs/issues either on [Github](https://github.com/nicopop/Manu
   - `Masamune - Build the Wonder Weapon` for Zetsubou No Shima&#13;
 - Disabled partial Void Bow restoration on Der Eisendrache temporarily</content>
     <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.0</id>
+    <title>Ratchet &amp; Clank 3 v0.5.0</title>
+    <updated>2026-04-15T16:48:40+00:00</updated>
+    <author>
+      <name>AmondoVagyok</name>
+    </author>
+    <author>
+      <name>Myth197</name>
+    </author>
+    <author>
+      <name>Taoshi</name>
+    </author>
+    <author>
+      <name>Yuxia228</name>
+    </author>
+    <author>
+      <name>1theory</name>
+    </author>
+    <content>## RaC3 APWorld v0.5.0&#13;
+&#13;
+**Branch:** main  &#13;
+**Date:** 2026-04-15 17:16 UTC&#13;
+&#13;
+&lt;details&gt;&#13;
+&lt;summary&gt;&lt;strong&gt;📜 Summary (833 changes since v0.4.1)&lt;/strong&gt;&lt;/summary&gt;&#13;
+&#13;
+- RAC3: Clarify vendor options to say that disabling them wont make them vanilla apart from ship vendor. (f574e15c)&#13;
+- RAC3: Only attempt to restore vendor item names if they have been modified (85695479)&#13;
+- RAC3: Use a dict for blackscreen original values (e5ea4c12)&#13;
+- RAC3: Fix blackscreen trap on PAL (d4a0cc9a)&#13;
+- RAC3: Add missing mode parameter to linux pine socket (965f7c78)&#13;
+- RAC3: Update pine library to latest pypine (83c3b09d)&#13;
+- RAC3: Adjust early nanotech logic to closer match vanilla (407da211)&#13;
+- RAC3: Fix ship vendor saying "(null)" when no items are available (3dfde35a)&#13;
+- RAC3: Apply same fix to overwrite vendor item names (792e5425)&#13;
+- RAC3: Fix potential KeyError in restore vendor item names (143c30f8)&#13;
+- RAC3: Move nanotech and ngplus region connections from menu to phoenix (1a09e76e)&#13;
+- RAC: Run Ruff on more files (b50029de)&#13;
+- RAC3: Rework Scout Vendors to OptionCounter, add Ship Vendor hints (4f85d17b)&#13;
+- RAC3: Remove vid comics from the item pool if disabled (117ddf8d)&#13;
+- RAC3: Address pda vendor bolt difference edge case (01be92f4)&#13;
+- RAC3: Clarify skin vendor and its effect on rando cosmetics (6c541522)&#13;
+- RAC3: Fix PDA vendor stealing your bolts and not granting you the check in some instances (130c09f7)&#13;
+- RAC3: Run Ruff Formatter (d9e405c9)&#13;
+- RAC3: Use Enum constant instead of hardcoded magic number (9edec31f)&#13;
+- RAC3: Only attempt to add vendor locations to code cave if their associated yaml options are enabled (cde910c0)&#13;
+- RAC3: Add TODO about vendor scouting (c57783e1)&#13;
+- RAC3: Add Scout Vendors yaml option (0072615c)&#13;
+- RAC3: Typo fix in FAQ (5b1d9f21)&#13;
+- RAC3: Add extra safeguards to version checking (3f682313)&#13;
+- RAC3: Minor cleanup of self.vehicle conditions (cae23c13)&#13;
+- RAC3: Make 1 Hit KO trap also set vehicle health to 1 (fa210465)&#13;
+- RAC3: Add armor vendor to suggested yaml option changes if not enough locations (2260eaf9)&#13;
+- RAC3: Fix item name restoration on PAL (ae51ac52)&#13;
+- RAC3: Fix wrong offsets on Armor strings (368edb37)&#13;
+- RAC3: Fix wrong offsets on some megacorp weapons (79cf7bd4)&#13;
+- RAC3: Fix KeyError when opening the vendor (49756729)&#13;
+- RAC3: Show AP item name directly in the weapon and armor vendors (76283513)&#13;
+- Write weapon vendor and armor vendor locations to code cave too (dab82088)&#13;
+- RAC3: For real this time (7acc800e)&#13;
+- RAC3: Fix all the issues with who receives what and when in the hint notifications (6b9a0688)&#13;
+- RAC3: Fix other player's name not showing up in game (bc6337bc)&#13;
+- RAC3: Fix unknown item for hint for other players (e6916f88)&#13;
+- RAC3: Fix newline typo in hint notification (3d8e00ad)&#13;
+- RAC3: Specify other player's name if not self hint (28928463)&#13;
+- RAC3: Change other player's name color to green instead of white in the hint notifications (fe16e17c)&#13;
+- RAC3: Display hints in game (7a574ab5)&#13;
+- RAC3: Fix Blackscreen Trap not working in the sewers (c527e703)&#13;
+- RAC3: Use the DeathLink class from Archipelago rather than our own (50fc2f1f)&#13;
+- RAC3: Fix No Ammo Trap not clearing N60 storm ammo (b954a310)&#13;
+- RAC3: Fix N60 getting 406 ammo on reconnect (9f3f6378)&#13;
+- RAC3: Fix Blackscreen Trap and readd it (a3c507d7)&#13;
+- RAC3: Auto Equip lightsaber wrench when received (0ed0f1c9)&#13;
+- RAC3: Refactor how patches are handled (11ffeda1)&#13;
+- RAC3: Fix Hypershot getting removed from quick select when travelling to the phoenix (8998a0bb)&#13;
+- RAC3: Make the lightsaber wrench replacement an AP item (b47bc0fa)&#13;
+- RAC3: Make numbers slightly wider (90dd00b5)&#13;
+- RAC3: Update Documentation (c65078cd)&#13;
+- RAC3: rework text width calculation for messagebox (235ab71f)&#13;
+- RAC3: Change default version number and display dev build warning if "dev" is in the version number (1061c2d7)&#13;
+- RAC3: Add RY3NO to Phoenix vendor on UT map (c684a6d7)&#13;
+- RAC3: Add ship vendor locations to UT map (db4f25d3)&#13;
+- RAC3: Buff player exp filler slightly (cd59251a)&#13;
+- RAC3: Use game interface's vendortype in handle_vendors (6a043fe0)&#13;
+- RAC3: return None if vendortype cannot be resolved in vendor_check (609ce2cb)&#13;
+- RAC3: Check if vendors are enabled before trying to hint any locations (132a87c2)&#13;
+- RAC3: Make PAL version warning say that PAL support is in beta (344d4f8d)&#13;
+- RAC3: Update FAQ to say that PAL is mostly supported now (705c1bbd)&#13;
+- RAC3: Update FAQ and Setup guide with version differences (5c6a871a)&#13;
+- RAC3: PAL Support: Make PDA Vendor work on PAL (6e34740c)&#13;
+- RAC3: Experimental PAL support (7d4acd92)&#13;
+- RAC3: Add more info to rac3_info (9ba8b193)&#13;
+- RAC3: Make one hp challenge toggle message more user friendly (d6eca342)&#13;
+- RAC3: Development build warning grammar fixes (e05d4071)&#13;
+- RAC3: Tell the user to launch RaC3 rather than checking PINE if emulator is connected but game not connected (e3e41d88)&#13;
+- RAC3: Normailze notification time if overwritten with less than 1.5 seconds remaining (b84209c5)&#13;
+- RAC3: Pause notifications when paused + remove reduntant gadget removal function (9e179e09)&#13;
+- RAC3: minor cleanup in notification cycler (638c0b06)&#13;
+- RAC3: Only remove gadgets during cutscenes if you havent checked their associated location (4d620424)&#13;
+- RAC3: Dont try to display notifications when paused (e44a3d03)&#13;
+- RAC3: Use self.vendortype in vendor update instead of reading it again (8572081b)&#13;
+- RAC3: Remove unnecessary whitespace(s) (d3b2bf86)&#13;
+- RAC3: Fix weapon level up item leveling up the temporarily deleveled weapons (5a69f198)&#13;
+- RAC3: Fix nano-pak flickering among other things (0f4717ad)&#13;
+- RAC3: Fix gadgets disappearing after a cutscene (8a853d12)&#13;
+- RAC3: Add the remaining 101st sewer crystal (b25377a9)&#13;
+- RAC3: Fix Hit the motherload location getting skipped when it shouldn't (c40d9892)&#13;
+- RAC3: Fix not being able to buy weaker armor and add memory cards back into the vendor (6ed64f6e)&#13;
+- RAC3: Replace unsupported characters in notifications with a question mark (412a02b3)&#13;
+- RAC3: Add skin vendor reading support (ceb6722b)&#13;
+- RAC3: Only reset notification time if the notifications expired (c131df1f)&#13;
+- RAC3: Cap the bolt filler at 200k (9f46cecc)&#13;
+- RAC3: Fix armor vendor yaml option description (2915eb3d)&#13;
+- RAC3: Rework the bolt filler (378c2534)&#13;
+- RAC3: Add Armor Vendor Locations (8ba03ba0)&#13;
+- RAC3: Make progress on removing dead planets (aec019aa)&#13;
+- RAC3: minor optimization (36c6d09c)&#13;
+- RAC3: Add a dead seed checker to generation (cb09fccf)&#13;
+- RAC3: Make excluded count only matter if solo seed (dd2651a7)&#13;
+- RAC3: Subtract excluded count from location count (c2933a10)&#13;
+- RAC3: Reset code cave on reconnect (02893d34)&#13;
+- RAC3: Adjust ship vendor item costs (b0176119)&#13;
+- RAC3: Make /force_update trigger a reset of the code cave (92701eaf)&#13;
+- RAC3: Make code cave setup more reliable (82226d8e)&#13;
+- RAC3: Account for infobot: veldin counting in the list of unlocked planets (97905374)&#13;
+- RAC3: Make the ship vendor option description up to date (8e7d311e)&#13;
+- RAC3: Put AP item names into the ship vendor (f3d40cb2)&#13;
+- RAC3: Add ship vendor locations (f6243ae5)&#13;
+- RAC3: Fix v2-v5 weapons showing up in the vendor (7af95d2c)&#13;
+- RAC3: Fix progressive weapons causing v2-v5 showing up in the vendor (ebadd3f2)&#13;
+- RAC3: Hint vendor items when the weapon vendor opens (dc321488)&#13;
+- RAC3: Make the holo shield glove available in the vendor after momma tyhrranoid has been defeated rather than immediately (819792dc)&#13;
+- RAC3: Aquatos vendor location name changes (a877586a)&#13;
+- RAC3: Vendor checks naming rework (88be8180)&#13;
+- RAC3: Seperate Gadgetron and Megacorp weapons (e15eb56a)&#13;
+- RAC3: Fix max ammo not working for weapons both in your inventory and the vendor (fd1c11d2)&#13;
+- RAC3: Exclude the PDA from vendor update (f180a2d4)&#13;
+- RAC3: Allow updates on empty vendors (620df1e8)&#13;
+- RAC3: Make it pretty again (ce72efbd)&#13;
+- RAC3: Fix runtime errors and make it work again (d172fd05)&#13;
+- RAC3: Refactor: Vendor Handler (a76f665e)&#13;
+- RAC3: Cleanup Vendor implementation (bc8ea236)&#13;
+- RAC3: Make RY3N0 available from the start, but keep the logic requirement (ab300d61)&#13;
+- RAC3: Fix RY3N0 unlocked earlier than it was supposed to (21a0fab1)&#13;
+- RAC3: Add logic to the RY3N0 vendor location (689ccfe0)&#13;
+- RAC3: Fix slim cognito (aa672cfb)&#13;
+- RAC3: Minor cleanup (904d656a)&#13;
+- RAC3: Fix cursor landing out of bounds when buying the item in the way (2f76fdd6)&#13;
+- RAC3: Add RY3NO as a vendor location check (683d9f9a)&#13;
+- RAC3: Move visited planets and weapon vendor items to early update and reuse references (93f9cdb7)&#13;
+- RAC3: Only remove weapons in the vendor from inventory (9222bd6d)&#13;
+- RAC3: Dont cycle vendors if weapon vendors are off in the yaml (5f64b5b6)&#13;
+- RAC3: Make working weapon vendors (d750eeeb)&#13;
+- RAC3: Split bigger vendor functions into multiple functions (a7267c69)&#13;
+- RAC3: Basic Vendor cycling (3b5d7098)&#13;
+- RAC3: Add functionality to add items to the vendor (e2c7d92e)&#13;
+- RAC3: Propose Vendor Class Structure (9296c14f)&#13;
+- RAC3: Make Vendor Classes (75aa7e5f)&#13;
+- RAC3: Add a tiny bit about how to continue a previous session (ffe48a87)&#13;
+- RAC3: Stop recommending Archipelago version 0.5.0 as the minimum (74b48c04)&#13;
+- RAC3: Address feedback in setup guide (6f3545e6)&#13;
+- RAC3: Fix minor grammatical inconsistencies (daa02af9)&#13;
+- RAC3: Add section about hosting a MultiWorld (d8b4e042)&#13;
+- RAC3: Address setup doc feedback (b3596073)&#13;
+- RAC3: Docs: Clarify how to connect to the MultiServer (7f07906f)\n- ...and 633 more commits.&#13;
+&#13;
+&lt;/details&gt;&#13;
+&#13;
+**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.4.1...v0.5.0&#13;
+&#13;
+### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)&#13;
+&#13;
+### Notes&#13;
+This release was automatically generated from the **main** branch.  &#13;
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
+&#13;
+### If a location is broken and does not get sent out&#13;
+Go to the server console (locally or via the Archipelago room page) and run:  &#13;
+`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
+</content>
+    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.0"/>
   </entry>
 </feed>
