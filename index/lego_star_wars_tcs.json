@@ -1,12 +1,15 @@
 {
+  "authors": [
+    "Mysteryem"
+  ],
   "description": "Lego Star Wars: The Complete Saga",
   "game": "Lego Star Wars: The Complete Saga",
   "github": "https://github.com/Mysteryem/Archipelago-TCS",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "v0.1.0": {
@@ -161,6 +164,21 @@
       "title": "v1.3.0 Chapter Unlock Items, Item names in Shops, Universal Tracker client integration, misc. logic fixes",
       "version_simple": "1.3.0",
       "world_version": "1.3.0"
+    },
+    "v1.4.0": {
+      "created_at": "2026-04-16T19:13:00Z",
+      "description": "# New\r\n- Standing in front of a locked Chapter Door will tell you the missing items to unlock that Chapter, or that the Chapter is not enabled\r\n- Episode Doors in the Cantina are forcefully opened if they contain any enabled Chapters\r\n- When locking Chapters by Vanilla Characters (previously called Story Characters), the requirements to unlock each Chapter can now alternatively use the Purchase Characters, the characters that would, in vanilla, become available for purchase after completing the Chapter. There are `{episode}-{chapter} Purchase Unlock Characters` item groups for these Purchase Characters\r\n- When locking Chapters by Vanilla Characters (previously called Story Characters), there is a new option to remove any combination of `R2-D2`, `C-3PO` and `Chewbacca` from being included in chapter unlock requirements due to the large number of chapters they can each individually lock access to\r\n- Chapters can now optionally be locked by entirely Random Characters, with options to determine the size of the pool of characters to use in unlock requirements (a smaller pool means characters will more often be required by multiple chapters), and options to specify how many additional characters above the required number are present in the requirements, e.g. needing 4/5 (1 extra) or 4/6 (2 extra) characters instead of needing exactly 4/4\r\n- Save and Exit to Cantina is now available without having completed the current Chapter\r\n- A `Chapter Unlocks` item group has been added for Chapter Unlock items, which can be used to `!hint Chapter Unlocks` to hint for the logically earliest, unfound Chapter Unlock item\r\n- Universal Tracker will now show available purchase locations, that are not logically expected until you have a higher Score Multiplier, as 'Glitched'\r\n\r\n# Changes\r\n- The Story Characters Chapter Unlock Requirement has been renamed to Vanilla Characters, the `story_characters` value in old yamls will be interpreted as `vanilla_characters`\r\n- The game will now automatically pick IG-88 and 4-LOM in your Free Play selection to fulfil the role of Protocol Droids\r\n- When running the client from a command line/script, the client will now accept server address and password arguments\r\n- When Chapters are locked by needing Characters, there are now options to specify the min and max required counts of those characters, with options to bias the required counts towards the min, the max, and the middle, or pick uniformly between the min and max.\r\n- The `{episode}-{chapter} Unlock Characters` item groups have been renamed to `{episode}-{chapter} Story Unlock Characters`\r\n\r\n# Removed\r\n- The `Chapter Unlock Characters` item group has been removed\r\n\r\n# Fixes\r\n- Restored the ability to connect to older, compatible seeds when Universal Tracker is installed (Universal Tracker integration will be disabled when your local APWorld does not match close enough to the APWorld version used to generate the multiworld)\r\n- Death Link support has been internally reorganised to hopefully avoid cases where receiving a Death Link could send a new Death Link if the game was alt-tabbed\r\n- Added the missing `Ride B'omarr Monk` in 6-1 to Ridesanity\r\n- Riding a normally un-killable character when receiving a Death Link now forcefully sets the respawn timer in-case the un-killable character does not normally respawn\r\n- Death Link will try to avoid killing players that are currently using a vent/chute as a Shortie character\r\n- `Luke Skywalker (Dagobah)` can now lift the X-Wing at the end of 5-4\r\n- `Yoda` and `Yoda (Ghost)` have slightly increased movement speed in the beginning section of 3-6 so that the AI controlled player no longer dies repeatedly and prevents continuing with the level\r\n- Fixed a few issues causing the items added to the item pool to be in a non-deterministic order (possible to result in non-deterministic generation only if another apworld is doing rogue behaviour things)\r\n\r\n# Logic\r\n- The Imperial ability is no longer logically required to complete 3-3 or 6-5\r\n- Removed the Sith ability requirement from LEGO City completion\r\n- Added missing Protocol Droid requirement to 2-2 Minikits\r\n- Added missing Astromech Panel requirement to 5-2 Power Brick\r\n\r\n# Known issues\r\n- Logic expects you to not be able to enter levels until you can complete them, but now that is it possible to Save and Exit without completing a level, it is possible to get Power Bricks out-of-logic. This will not be fixed until the logic is rewritten",
+      "download_url": "https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.4.0/lego_star_wars_tcs.apworld",
+      "has_manifest": true,
+      "hash_sha256": "171e091de5853fa876a5d7e75844e56e59fd96130568cd4d95b373f34780a762",
+      "html_url": "https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v1.4.0",
+      "minimum_ap_version": "0.6.1",
+      "size": 215171,
+      "source_url": "https://api.github.com/repos/Mysteryem/Archipelago-TCS",
+      "tag": "v1.4.0",
+      "title": "1.4.0 In-game chapter requirements display + Randomized character requirements",
+      "version_simple": "1.4.0",
+      "world_version": "1.4.0"
     }
   }
 }

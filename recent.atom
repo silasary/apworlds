@@ -2,120 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-16T18:30:06.863306+00:00</updated>
+  <updated>2026-04-17T00:23:43.262652+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.9</id>
-    <title>Resident Evil 3 Remake v0.2.7</title>
-    <updated>2026-04-10T23:36:26+00:00</updated>
-    <author>
-      <name>TheRealSolidusSnake</name>
-    </author>
-    <content>**Quick and dirty release for testing purposes, please report anything to the RE3R thread in Discord.**&#13;
-&#13;
-**RE2Randomizer features ported over:**&#13;
-------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
-&#13;
-Enemy kills are now checks/locations, and they work on every difficulty.&#13;
-&#13;
-Double Weapons / Local Weapons&#13;
-&#13;
-In-game GUI tooltips when paused/in menu &lt;- Note: Non-RTX only&#13;
-&#13;
-A more revamped GUI system overall &lt;- Mod menu is a lot more pleasant to look at&#13;
-&#13;
-The newer "Safe" function, which previously didn't clear the safes off the map when checked now behaves closer to RE2 (the map will clear but the item icon still shows even though it doesn't exist)&#13;
-&#13;
-&#13;
-**RE3Randomizer specific changes**&#13;
-------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
-&#13;
-**Added "Enemy Behavior"**, which will allow zombies/Nemesis to chase you to the ends of the earth&#13;
-&#13;
-[SHOCKEEEEEEEEEEERRRRRR](https://www.youtube.com/watch?v=sMk-HPBF6Mw) - this embodies what will be happening (you're Shocker in this case btw)&#13;
-&#13;
-No longer requires EMV-Engine/Console, which makes the client much lighter and hopefully less jarring for the end user.&#13;
-&#13;
-**Fixed a major bug with the Lock Pick**&#13;
-Thanks to everyone who reported this. &#13;
-Previously, if you received the Lock Pick and then saved/quit/died before seeing the Lock Pick cutscene, it could disappear from your inventory. If the game detects that it's missing, it will put a new copy into your ItemBox.&#13;
-&#13;
-**Jewels and the STARS ID Card are now always local**, these are also required before each area transition where the game would normally stop requiring them **(this prevents players from accidentally disposing of them too early and missing locations later on)**&#13;
-&#13;
-**And a bunch of smaller bug fixes, including:**&#13;
-&#13;
-Locker 109 no longer being static due to an item_object issue.&#13;
-&#13;
-Supply Case now correctly giving Flame Rounds instead of Acid Rounds.&#13;
-&#13;
-Again, if you're playing on RTX, the fancy new paused/menu GUI features are not available. Those currently only work for non-RTX users.&#13;
-&#13;
-## What Fuzzy fixed for us behind the scenes because he's goated&#13;
-* Remove likely cause of ImGUI error in recent REF versions by @FuzzyGamesOn in https://github.com/TheRealSolidusSnake/RE3R_AP_Client/pull/7&#13;
-&#13;
-## What others contributed&#13;
-@RopeyRed - Enemy Kills on all difficulties&#13;
-@Grenier - Strip Scenario/Character out of the client/apworld so it no longer appends (JA) to each location for no reason, now we only append difficulty if not a "Standard" location.</content>
-    <link href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Uroogla/S2AP/releases/tag/1.2.0-rc</id>
-    <title>Spyro 2 v1.1.3</title>
-    <updated>2026-04-11T02:27:52+00:00</updated>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>This release candidate modifies both the client (S2AP.Desktop.exe) and the APWorld.  You must update both to use this version.&#13;
-&#13;
-Please note that this is a test build.  It is likely that there are bugs.  Please be considerate of the host and your fellow players when using it.  For the latest stable build, see https://github.com/Uroogla/S2AP/releases/tag/1.1.1.&#13;
-&#13;
-New Features:&#13;
-- Trick Logic&#13;
-  - Using either presets or by specifying individual tricks, players may tweak game logic to include things like proxies, double jumps, and swimming in air to access areas early.&#13;
-  - For the full list of available options, see https://github.com/Uroogla/S2AP/wiki/Tricks-and-Presets&#13;
-- Generic Quality of Life Patch&#13;
-  - The client is now capable of producing a modified .cue/.bin that fixes a couple of bugs.&#13;
-  - This is not required, and the fixed bugs are very minor (e.g., removes undesirable Elora warps based on talisman count).&#13;
-  - This works only from a .cue/.bin dump.&#13;
-- Option to reroute warps to Winter Tundra&#13;
-  - When this option is enabled, either opening the door in Winter Tundra or collecting the orb along the wall will change the game such that warps from Crush or Gulp to Winter Tundra redirect to outside Ripto.&#13;
-  - This is content cut from the vanilla release.&#13;
-- Add Item Groups (Moneybags Unlocks, Level Unlocks, Gems) and Location Groups (Speedways, Speedway Orbs)&#13;
-&#13;
-Changes&#13;
-- Split Abilities and Warps option into 2 options&#13;
-- Split Gemsanity Option into 3 (type of checks, location of items, type of items)&#13;
-- Rename "Moneybags Unlock - Door to Aquaria Towers" to "Moneybags Unlock - Wall by Aquaria Towers"&#13;
-- Improve Options Creator user experience&#13;
-- Swim is no longer automatically forced to sphere 1.  Some way to leave early Summer Forest will be in logic early based on tricks and settings.&#13;
-- Client Improvements&#13;
-  - Save latest successful connect&#13;
-  - Inform user on disconnect&#13;
-  - Improve readability&#13;
-  - Improve command system - use !help to see commands&#13;
-  - Implement Received Items tab&#13;
-  - Remove spaces around host and slot name (not password!)&#13;
-&#13;
-Bug Fixes&#13;
-- Fix bug where client could freeze when sending goal&#13;
-- Fix bug where orb and gem requirement for 10 Tokens goal was not enforced&#13;
-- Fix bug where Moneybags items or full gemsanity gems could desync&#13;
-- Fix bug with Easy Bombo where 3 copies appeared at once</content>
-    <link href="https://github.com/Uroogla/S2AP/releases/tag/1.2.0-rc"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.5.5</id>
-    <title>Pokemon Stadium v0.5.5</title>
-    <updated>2026-04-11T03:15:59+00:00</updated>
-    <author>
-      <name>jciii91</name>
-    </author>
-    <content>Bugfix. Set was not being initialized with an iterable.</content>
-    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.5.5"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-68</id>
     <title>Borderlands 2 v68</title>
@@ -1150,6 +1041,16 @@ Go to the server console (locally or via the Archipelago room page) and run:  &#
     <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.0"/>
   </entry>
   <entry>
+    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.04.16</id>
+    <title>Archipeladoku v2026.4.16</title>
+    <updated>2026-04-15T19:48:55+00:00</updated>
+    <author>
+      <name>Galdiuz</name>
+    </author>
+    <content/>
+    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.04.16"/>
+  </entry>
+  <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.4</id>
     <title>Total War Warhammer 3 v0.9.4</title>
     <updated>2026-04-15T22:08:37+00:00</updated>
@@ -1257,5 +1158,100 @@ APWORLD INSTALLATION INSTRUCTIONS:&#13;
 POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
 -  copy contents of "Hunie Pop 2 Archipelago PopTracker.zip" into the packs folder in the poptracker install directory</content>
     <link href="https://github.com/DotsofdarknessArchipelago/HuniePop2Archipelago/releases/tag/v3.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v1.4.0</id>
+    <title>Lego Star Wars: The Complete Saga v1.4.0</title>
+    <updated>2026-04-16T19:13:00+00:00</updated>
+    <author>
+      <name>Mysteryem</name>
+    </author>
+    <content># New&#13;
+- Standing in front of a locked Chapter Door will tell you the missing items to unlock that Chapter, or that the Chapter is not enabled&#13;
+- Episode Doors in the Cantina are forcefully opened if they contain any enabled Chapters&#13;
+- When locking Chapters by Vanilla Characters (previously called Story Characters), the requirements to unlock each Chapter can now alternatively use the Purchase Characters, the characters that would, in vanilla, become available for purchase after completing the Chapter. There are `{episode}-{chapter} Purchase Unlock Characters` item groups for these Purchase Characters&#13;
+- When locking Chapters by Vanilla Characters (previously called Story Characters), there is a new option to remove any combination of `R2-D2`, `C-3PO` and `Chewbacca` from being included in chapter unlock requirements due to the large number of chapters they can each individually lock access to&#13;
+- Chapters can now optionally be locked by entirely Random Characters, with options to determine the size of the pool of characters to use in unlock requirements (a smaller pool means characters will more often be required by multiple chapters), and options to specify how many additional characters above the required number are present in the requirements, e.g. needing 4/5 (1 extra) or 4/6 (2 extra) characters instead of needing exactly 4/4&#13;
+- Save and Exit to Cantina is now available without having completed the current Chapter&#13;
+- A `Chapter Unlocks` item group has been added for Chapter Unlock items, which can be used to `!hint Chapter Unlocks` to hint for the logically earliest, unfound Chapter Unlock item&#13;
+- Universal Tracker will now show available purchase locations, that are not logically expected until you have a higher Score Multiplier, as 'Glitched'&#13;
+&#13;
+# Changes&#13;
+- The Story Characters Chapter Unlock Requirement has been renamed to Vanilla Characters, the `story_characters` value in old yamls will be interpreted as `vanilla_characters`&#13;
+- The game will now automatically pick IG-88 and 4-LOM in your Free Play selection to fulfil the role of Protocol Droids&#13;
+- When running the client from a command line/script, the client will now accept server address and password arguments&#13;
+- When Chapters are locked by needing Characters, there are now options to specify the min and max required counts of those characters, with options to bias the required counts towards the min, the max, and the middle, or pick uniformly between the min and max.&#13;
+- The `{episode}-{chapter} Unlock Characters` item groups have been renamed to `{episode}-{chapter} Story Unlock Characters`&#13;
+&#13;
+# Removed&#13;
+- The `Chapter Unlock Characters` item group has been removed&#13;
+&#13;
+# Fixes&#13;
+- Restored the ability to connect to older, compatible seeds when Universal Tracker is installed (Universal Tracker integration will be disabled when your local APWorld does not match close enough to the APWorld version used to generate the multiworld)&#13;
+- Death Link support has been internally reorganised to hopefully avoid cases where receiving a Death Link could send a new Death Link if the game was alt-tabbed&#13;
+- Added the missing `Ride B'omarr Monk` in 6-1 to Ridesanity&#13;
+- Riding a normally un-killable character when receiving a Death Link now forcefully sets the respawn timer in-case the un-killable character does not normally respawn&#13;
+- Death Link will try to avoid killing players that are currently using a vent/chute as a Shortie character&#13;
+- `Luke Skywalker (Dagobah)` can now lift the X-Wing at the end of 5-4&#13;
+- `Yoda` and `Yoda (Ghost)` have slightly increased movement speed in the beginning section of 3-6 so that the AI controlled player no longer dies repeatedly and prevents continuing with the level&#13;
+- Fixed a few issues causing the items added to the item pool to be in a non-deterministic order (possible to result in non-deterministic generation only if another apworld is doing rogue behaviour things)&#13;
+&#13;
+# Logic&#13;
+- The Imperial ability is no longer logically required to complete 3-3 or 6-5&#13;
+- Removed the Sith ability requirement from LEGO City completion&#13;
+- Added missing Protocol Droid requirement to 2-2 Minikits&#13;
+- Added missing Astromech Panel requirement to 5-2 Power Brick&#13;
+&#13;
+# Known issues&#13;
+- Logic expects you to not be able to enter levels until you can complete them, but now that is it possible to Save and Exit without completing a level, it is possible to get Power Bricks out-of-logic. This will not be fixed until the logic is rewritten</content>
+    <link href="https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v1.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DragonWolfLeo/DracominoAPWorld/releases/tag/v0.3.0</id>
+    <title>Dracomino v0.3.0</title>
+    <updated>2026-04-16T22:05:14+00:00</updated>
+    <author>
+      <name>Dragon Wolf Leo</name>
+    </author>
+    <author>
+      <name>VAdaPEGA</name>
+    </author>
+    <content># Version 0.3.0&#13;
+*Compatible with game version 0.3.0 and up*&#13;
+## New Items&#13;
+ - Add Kick ability&#13;
+ - Add Lock Delay&#13;
+ - Add Tutorial and Logic Tutorial&#13;
+ - Add Time for Fishing!&#13;
+ - Add Pixellation Trap&#13;
+ - Add Crystal Trap&#13;
+ - Add Fracture Trap&#13;
+ - Add Water Trap&#13;
+ - Add Invert Colors Trap&#13;
+ - Add Well Done!&#13;
+ - Add Zoom Trap&#13;
+ - Add Impatience Trap&#13;
+ - Add In Space!&#13;
+ - Add Enchantments&#13;
+ - Add Curses&#13;
+ - Add Egg&#13;
+## Options&#13;
+ - Add Trap Link Option&#13;
+ - Add Energy Link Option</content>
+    <link href="https://github.com/DragonWolfLeo/DracominoAPWorld/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.5</id>
+    <title>Bloons TD6 v0.5.5</title>
+    <updated>2026-04-16T23:45:55+00:00</updated>
+    <author>
+      <name>Matt41321</name>
+    </author>
+    <content>## Added&#13;
+- Death link option&#13;
+&#13;
+## Bug Fix&#13;
+- Monkey village pop-tier checks no longer generate</content>
+    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.5"/>
   </entry>
 </feed>
