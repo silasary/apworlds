@@ -1,9 +1,12 @@
 # Archipeladoku
 
 ## Latest
-- <a href="https://github.com/galdiuz/archipeladoku/releases/download/v2026.04.16/archipeladoku.apworld">Latest Version (2026.4.16)</a>
+- <a href="https://github.com/galdiuz/archipeladoku/releases/download/v2026.04.18/archipeladoku.apworld">Latest Version (2026.4.18)</a>
 
 ## All Versions
+
+#### v2026.4.18
+- <a href="https://github.com/galdiuz/archipeladoku/releases/download/v2026.04.18/archipeladoku.apworld">https://github.com/galdiuz/archipeladoku/releases/download/v2026.04.18/archipeladoku.apworld</a>
 
 #### v2026.4.16
 - <a href="https://github.com/galdiuz/archipeladoku/releases/download/v2026.04.16/archipeladoku.apworld">https://github.com/galdiuz/archipeladoku/releases/download/v2026.04.16/archipeladoku.apworld</a>

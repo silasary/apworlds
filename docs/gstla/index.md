@@ -7,7 +7,7 @@ and find elemental Djinn which augment the character&#x27;s powers.
 
 
 ## Downloads
-- <a href="https://github.com/cjmang/Archipelago/releases/download/0.2.2-beta/gstla.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/cjmang/Archipelago/releases/download/0.2.3-beta/gstla.apworld">Latest Version (0.2.3b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

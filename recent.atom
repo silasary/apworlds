@@ -2,112 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-18T06:28:37.043243+00:00</updated>
+  <updated>2026-04-18T12:13:45.549408+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DotsofdarknessArchipelago/HuniePop2Archipelago/releases/tag/v3.0.2</id>
-    <title>Hunie Pop 2 v3.0.2</title>
-    <updated>2026-04-11T10:21:00+00:00</updated>
-    <author>
-      <name>Dotsofdarkness</name>
-    </author>
-    <content>- (Client) update Archipelago.MultiClient.Net to fix problem when connecting&#13;
-&#13;
-V3.0.1 Changelog&#13;
-- (Client) fixed processing of "Fruit Seeds" items&#13;
-- (Client) added bunch of debug stuff&#13;
-- (GitHub) added PopTracker to repo and releases&#13;
-&#13;
-V3.0.0 Changelog&#13;
-- (repo) Merged APWorld and Client to one git repository&#13;
-- (APWorld/Client) Added option/logic to randomise girl like/disliked tokens, baggage, unique/shoe gifts&#13;
-- (APWorld) Rebuilt APWorld&#13;
-- (APWorld) Added archipelago.json to APWorld for archipelago 0.7.0 compatibility&#13;
-- (Client) Added BepInEx to zip file for easier installing&#13;
-- (Client) Made arch items in the shop have the archipelago logo&#13;
-- (Client) Removed temp baggage&#13;
-- (Client) Made girl detail screen show what unique/shoe gifts you haven't given yet&#13;
-&#13;
-&lt;br&gt;&#13;
-&#13;
-BACKUP YOU ORIGINAL SAVE CANT GUARANTEE THAT IT WONT GET CORRUPTED&#13;
-&#13;
-Windows save location: "C:/Users/{YOUR USERNAME}/AppData/LocalLow/HuniePot/HuniePop 2 - Double Date/"&#13;
-Mac save location: "/Users/{YOUR USERNAME}/Library/Application Support/com.HuniePot.HuniePop2-DoubleDate/"&#13;
-&#13;
-CLIENT INSTALLATION INSTRUCTIONS:&#13;
-&#13;
-- Have Hunie Pop 2 Installed&#13;
-- Download Hunie Pop 2 Archipelago plugin (See Releases for latest version)&#13;
-- Extract and copy the contents of "Hunie Pop 2 Archipelago plugin.zip" to the directory where "HuniePop 2 - Double Date.exe" is&#13;
-- play and connect to a Archipelago server&#13;
-&#13;
-&#13;
-APWORLD INSTALLATION INSTRUCTIONS:&#13;
-- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
-- Download Huniepop 2 APWorld (See Releases for latest version)&#13;
-- Select "Install APWorld" in launcher and select Huniepop 2 APWorld you downloaded&#13;
-- Restart launcher for APWorld to properly install&#13;
-- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop 2 YMAL&#13;
-&#13;
-&#13;
-POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
--  copy contents of "Hunie Pop 2 Archipelago PopTracker.zip" into the packs folder in the poptracker install directory</content>
-    <link href="https://github.com/DotsofdarknessArchipelago/HuniePop2Archipelago/releases/tag/v3.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.4.0</id>
-    <title>Black Ops 3 - Zombies v0.4.0</title>
-    <updated>2026-04-11T18:31:09+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>- **Archipelago 0.6.7 is now required**&#13;
-- Weapon Shuffling:&#13;
-  - `Wallbuy -` and `Mystery Box -` weapons have now been condensed into a singular `Weapon -` item&#13;
-  - The entire Mystery Box contents is used when creating AP items&#13;
-  - You can set a certain number of weapons to start unlocked on each map, by strength (Weak to Wonder)&#13;
-    - Default is 3 Weak, 2 Decent and 1 Strong weapon per enabled map&#13;
-    - This is true for all enabled maps not just your starting map, so you may get more starting unlocks than this if you roll a weapon not available on other enabled maps&#13;
-  - New Option `Mystery Box - Expanded Selection` - This will include most non-box weapons on a map into the mystery box rotation&#13;
-    - This includes starter pistols, bowie knife, trip mines, special melee weapons from Gorod and Rev etc&#13;
-    - Default off&#13;
-   - If more than 32 weapons are in the mystery box item pool, you may see some missing weapon visuals when spinning the box without specific weapons unlocked. This is an engine limitation.&#13;
-   - Map specific wallbuys has been removed as an option&#13;
-   - Apothicon Servant (SoE) and KT-4 (Zetsubou) have been removed as weapon unlocks&#13;
-- At least 1x Perk and 30% of weapons should now appear reliably early in progression&#13;
-- Juggernog should now appear reliably early in progression&#13;
-- Significant changes to most locations access rules / logic&#13;
-- (Modded) Wanted is now fixed. Support is still early but it is playable.&#13;
-- **(New)** Kino der Toten Map Support&#13;
-  - Map Checks:&#13;
-    - Turn on the Power&#13;
-    - Watch a Movie&#13;
-    - Launch the Toy Rocket&#13;
-    - Music EE - 115&#13;
-- Der Eisendrache:&#13;
-  - Renamed "Map Unlock - Castle" to "Map Unlock - Der Eisendrache"&#13;
-  - Gramophone Music EE triggers made slightly larger so they're easier to press&#13;
-  - Fix safe code input still being active when restoring after the safe is open&#13;
-  - Fix visiting the wrong time travel state when restoring after the safe is open&#13;
-- Zetsubou No Shima:&#13;
-  - Basic bucket held is saved and restored (not golden)&#13;
-  - Bucket's water level and water type are saved and restored&#13;
-  - Make sure Masamune parts require Shield in logic&#13;
-  - Gas Mask is logically required for the Easter Egg locations&#13;
-- Revelations:&#13;
-  - Fury deaths count towards the mask even when power is not fully restored&#13;
-  - Apothigod kills count when the gas is not on&#13;
-  - Apothigod and Fury masks are disabled by default due to very significant time requirements&#13;
-- Fix Mask locations not showing properly in Universal Tracker&#13;
-- Deathlink no longer triggers from a delayed Deathlink death. (e.g poor network conditions or the game pausing the script)&#13;
-- Deathlink no longer triggers when exiting via main menu&#13;
-</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.4.0"/>
-  </entry>
   <entry>
     <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1</id>
     <title>Sonic Adventure DX v1.2.1.post2</title>
@@ -1220,7 +1119,7 @@ Go to the server console (locally or via the Archipelago room page) and run:  &#
   </entry>
   <entry>
     <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.0</id>
-    <title>Flipwitch Forbidden Sex Hex v1.1.0</title>
+    <title>Flipwitch Forbidden Sex Hex v1.1.0.post2</title>
     <updated>2026-04-18T00:55:04+00:00</updated>
     <author>
       <name>Witchybun</name>
@@ -1283,5 +1182,48 @@ Bugfixes:&#13;
 - Kinda nothing&#13;
 - Also use [GitHub issues](https://github.com/Sim10XXX/C2AP/issues) or the [Crash 2 AP thread](https://discord.com/channels/731205301247803413/1371461990794657863) to report bugs or suggest stuff</content>
     <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.04.18</id>
+    <title>Archipeladoku v2026.4.18</title>
+    <updated>2026-04-18T09:53:23+00:00</updated>
+    <author>
+      <name>Galdiuz</name>
+    </author>
+    <content/>
+    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.04.18"/>
+  </entry>
+  <entry>
+    <id>https://github.com/cjmang/Archipelago/releases/tag/0.2.3-beta</id>
+    <title>Golden Sun The Lost Age v0.2.3b0</title>
+    <updated>2026-04-18T11:59:59+00:00</updated>
+    <author>
+      <name>Dragion</name>
+    </author>
+    <author>
+      <name>Platano Bailando</name>
+    </author>
+    <author>
+      <name>Karanum</name>
+    </author>
+    <content>Game description is [here](https://github.com/cjmang/Archipelago/blob/gstla/worlds/gstla/docs/en_Golden%20Sun%20The%20Lost%20Age.md).&#13;
+(Don't expect the link to the options page to work.)&#13;
+&#13;
+Game setup guide is [here](https://github.com/cjmang/Archipelago/blob/gstla/worlds/gstla/docs/setup_en.md).&#13;
+&#13;
+To install the AP World, use the Archipelago Launcher's Install APWorld button, or just copy and paste gstla.apworld into your custom_worlds folder.&#13;
+Once the apworld is installed you can find a yaml after running Generate Template Options in the AP Launcher, or by using the Options Creator.&#13;
+&#13;
+In general this AP World implementation relies heavily on the existing randomizer, which you can find here: https://gs2randomiser.com/en/index.html&#13;
+&#13;
+Please reach out in the [GSTLA Post in Future Game Design on the AP discord if you find issues.](https://discord.com/channels/731205301247803413/1055515261270241320).&#13;
+&#13;
+Changes in this release:&#13;
+- Moved sphere scaling from `generate_output` to `stage_finalize_multiworld`.  This does two things: (1) no more race conditions (2) sphere calculations are done once for all GSTLA slots.&#13;
+- Fixed an issue with mimic scaling that didn't properly place items.&#13;
+- Fixed a typo with Taopo&#13;
+&#13;
+Note: Archipelago version 0.6.7+ is required. It will not work on 0.6.6 or earlier versions.</content>
+    <link href="https://github.com/cjmang/Archipelago/releases/tag/0.2.3-beta"/>
   </entry>
 </feed>
