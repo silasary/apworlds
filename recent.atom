@@ -2,50 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-18T00:21:07.775638+00:00</updated>
+  <updated>2026-04-18T06:28:37.043243+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v0.3.2</id>
-    <title>Mario Kart Double Dash v0.3.2</title>
-    <updated>2026-04-11T05:37:48+00:00</updated>
-    <author>
-      <name>aXu_AP</name>
-    </author>
-    <content>A few qol improvements including the ability to launch the game directly from the client! The client is compatible with v0.3.x generated worlds.&#13;
-&#13;
-Download a new apworld and options template below and have a good one! If this is your first time playing MKDD AP, here's the [setup guide](docs/en_Setup.md) and [readme](https://github.com/aXu-AP/archipelago-double-dash).&#13;
-&#13;
-## New Features&#13;
-* Launch from uri: click your slot name on archipelago.gg to open the client directly.&#13;
-* Add button to launch the game&#13;
-  * Also usable as a command `/launch`&#13;
-  * `/reset_paths` if you want to remove current paths (the client will ask you to locate the files next time launching the game).&#13;
-* Add karts and speed upgrades to status bar&#13;
-* Add icon to the client&#13;
-&#13;
-## Fixes&#13;
-* Fix typo in difficulty option display name&#13;
-* Improve item box check performance&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/aXu-AP/archipelago-double-dash/compare/v0.3.1...v0.3.2</content>
-    <link href="https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.5</id>
-    <title>Ape Escape 3 v2.0.5</title>
-    <updated>2026-04-11T07:42:56+00:00</updated>
-    <author>
-      <name>aidanii</name>
-    </author>
-    <content>## Changelog&#13;
-### Client&#13;
-- Fixed malformation of socket url on Windows when using a non-default port</content>
-    <link href="https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.5"/>
-  </entry>
   <entry>
     <id>https://github.com/DotsofdarknessArchipelago/HuniePop2Archipelago/releases/tag/v3.0.2</id>
     <title>Hunie Pop 2 v3.0.2</title>
@@ -1256,5 +1217,71 @@ Go to the server console (locally or via the Archipelago room page) and run:  &#
 `/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
 </content>
     <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.0</id>
+    <title>Flipwitch Forbidden Sex Hex v1.1.0</title>
+    <updated>2026-04-18T00:55:04+00:00</updated>
+    <author>
+      <name>Witchybun</name>
+    </author>
+    <content>Changes:&#13;
+- Complete port to rules builder.&#13;
+  - This *should* allow /explain and the like in Universal Tracker to work.&#13;
+  -  Some rules are still a bit archaic (some option oriented things), can be cleaned up later.&#13;
+&#13;
+Bugfixes:&#13;
+- Fixed rules for some experience quests, which were missing some potential rules.&#13;
+- Removed Pot 2 from Tengoku Gardens so it cannot be missed&#13;
+  - This is temporary; the check has not been sending and needs to be properly fixed but I'm a bit spread thin.</content>
+    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.3.0</id>
+    <title>Crash2 v0.3.0</title>
+    <updated>2026-04-18T02:32:19+00:00</updated>
+    <author>
+      <name>Sim10XXX</name>
+    </author>
+    <author>
+      <name>alexdass</name>
+    </author>
+    <content>Big update, here's everything new since v0.2.0&#13;
+&#13;
+### Warp Randomizer:&#13;
+- Option to randomize the warp room portals to lead to different levels&#13;
+  - Collected gem/crystal locations will show up in their vanilla location&#13;
+  - Secret warp room portals are not currently randomized due to some bugs&#13;
+  - Supports Universal Tracker&#13;
+&#13;
+### Traps:&#13;
+- Customizable chance to replace filler life/wumpa items with traps with a customizable duration&#13;
+- Small Crash Trap &amp; Big Crash Trap&#13;
+  - Scales Crash's size accordingly&#13;
+  - Small Crash is disabled in levels that feature Polar due to a buggy interaction&#13;
+- No Lives Trap&#13;
+  - Temporarily lose all your lives&#13;
+- Jetpack Controls&#13;
+  - 😵&#13;
+&#13;
+### Options:&#13;
+- New Option to fill wumpa checks locally&#13;
+  - This is to prevent other worlds from getting clogged with Crash 2 filler when playing fruitsanity&#13;
+- New Option to exclude difficult wumpa checks&#13;
+  - This will prevent wumpas in difficult/annoying spots from containing useful items (affected locations have a "*" in their name)&#13;
+- Updated some option descriptions to be more detailed and added option groups&#13;
+&#13;
+### Other Additions:&#13;
+- When playing fruitsanity, wumpa fruit are now collected permanently&#13;
+  - This is true even after restarting / reconnecting the client&#13;
+- Added the two wumpas from Cold Hard Crash that I previously thought were unobtainable as actual checks&#13;
+&#13;
+### Bug Fixes:&#13;
+- Letting the demo run will no longer collect wumpa fruit checks&#13;
+&#13;
+### Known Issues:&#13;
+- Kinda nothing&#13;
+- Also use [GitHub issues](https://github.com/Sim10XXX/C2AP/issues) or the [Crash 2 AP thread](https://discord.com/channels/731205301247803413/1371461990794657863) to report bugs or suggest stuff</content>
+    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.3.0"/>
   </entry>
 </feed>

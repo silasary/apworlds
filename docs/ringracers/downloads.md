@@ -1,4 +1,4 @@
-# 
+# Dr. Robotnik&#x27;s Ring Racers
 
 ## Latest
 - <a href="https://github.com/TehRealSalt/RingRacersAP/releases/download/v0.1.2/ringracers.apworld">Latest Version (0.1.2)</a>
