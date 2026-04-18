@@ -4,7 +4,7 @@ The Legend of Zelda: Spirit Tracks is the train bound handheld sequel to Phantom
 
 
 ## Downloads
-- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.3/tloz_st.apworld">Latest Version (0.7.3)</a>
+- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.4/tloz_st.apworld">Latest Version (0.7.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -14,3 +14,4 @@ The Legend of Zelda: Spirit Tracks is the train bound handheld sequel to Phantom
 ## Other Documentation files
 - <a href="en_Spirit Tracks">en_Spirit Tracks</a>
 - <a href="setup">setup</a>
+- <a href="tricks_and_skips">tricks_and_skips</a>

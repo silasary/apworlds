@@ -2,84 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-18T12:13:45.549408+00:00</updated>
+  <updated>2026-04-18T18:18:02.333742+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1</id>
-    <title>Sonic Adventure DX v1.2.1.post2</title>
-    <updated>2026-04-11T18:32:06+00:00</updated>
-    <author>
-      <name>ClassicSpeed</name>
-    </author>
-    <content>## [v1.2.1] - 2026-04-11&#13;
-&#13;
-### Fixed:&#13;
-&#13;
-- Fixed logic problem with requirements with multiple SADX players.</content>
-    <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.4</id>
-    <title>Vampire Survivors v0.3.2</title>
-    <updated>2026-04-11T20:23:12+00:00</updated>
-    <author>
-      <name>SW_CreeperKing</name>
-    </author>
-    <content>- [ApWorld] Fixed UT variables being swapped (sorry about that)&#13;
-- [ApWorld] Fixed bug with Director goal and being able to 'beat' eudai before you can reach eudai </content>
-    <link href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/tag/v0.3.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.1</id>
-    <title>Outer Wilds v1.2.1</title>
-    <updated>2026-04-11T20:36:58+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
-&#13;
-- [Updated the Archipelago.MultiClient.Net library to v6.7.1](https://discord.com/channels/731205301247803413/1043855558303821844/1484975530968354966). The change most likely to affect players is Berserker's "[Request Datapackage as individual responses](https://github.com/ArchipelagoMW/Archipelago.MultiClient.Net/pull/135)", which should help prevent timeout errors when connecting to large multiworlds.&#13;
-- Forgotten Castaways logic fixes from @msyverw:&#13;
-	- The "Deep Bramble via Warp Drive" region now logically connects to the (shipless) "Deep Bramble" region, which fixes some cases where the early parts of FC were incorrectly out of logic&#13;
-	- Tweaked the regions of "DB Ship Log: Stranded Nomai 5 - Warp" and "FC Ship Log: Bramble's Doorstep 2 - Nomai" so that they won't be in logic until you have logical access to *both* systems, since you can't get a ship log fact for the system you aren't in&#13;
-	- In-game tracker now uses the correct logic region for Deep Bramble spawns&#13;
-	- The connection from a Deep Bramble spawn to the "Deep Bramble via Warp Drive" region now logically requires only Launch Codes, not Deep Bramble Coordinates as it accidentally used to&#13;
-	- "FC Ship Log: Pillar Town 2 - Gift" now logically requires the Expanded Dictionary&#13;
-- Fixed suitless logic by making Nomai shuttle locations require Spacesuit to reach via gravity cannon recalls. Some time ago a base game patch made it no longer possible to move Nomai orbs from inside the ship, which is a problem for suitless players. The only logic this actually broke was entering a Nomai shuttle by recalling it to the corresponding gravity cannon, since you would suffocate while moving the orb to recall it.&#13;
-</content>
-    <link href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.0</id>
-    <title>Mario Kart Wii v0.2.0</title>
-    <updated>2026-04-11T21:08:54+00:00</updated>
-    <author>
-      <name>toent</name>
-    </author>
-    <content>## Release Version 0.2.0: Base Track Locking/Unlocks!&#13;
-Yup that's it, after quite a while I crunched a big update out today, it was worth it though. I have one of the most requested features added, **base cup/track unlocks!** there is even more exiting stuff in this update, such as a clear condition rework and several bug fixes.&#13;
-&#13;
-### How it works&#13;
-**Let me explain how it works**, as it is not perfect yet. I can't visually and functionally block base unlocked cups from being started without patching the rom (which I want to try to avoid as long as possible). So if you try to start a cup you haven't unlocked yet, you'll be sent to a cup in the same Engine Class (cc/mirror) that you DO have unlocked, the cup you're sent to is always the one that has the most possible check completions still available. If there is no cup unlocked in the selected Engine Class you will be sent to the cup, however you will not be able to complete laps and thus will not be able to complete the race. For VS Race, you have the tracks unlocked for the cup (per cc) you have unlocked, trying to launch a VS Race will send you into the race without being able to complete laps.&#13;
-When starting an Archipelago of this game you will by default start with 2 unlocked cups, I heavily recommend using the included tracker to see this, the cups page will now also show what cups are unlocked. One cup will be in 50cc and the other 100cc so you need to use both karts and bikes, if you have either 50cc or/and 100cc disabled, your 2 cups will be unlocked for the lowest available Engine Class.&#13;
-&#13;
-### Changelog:&#13;
-- Added base cup/track unlocks.&#13;
-- Added cup unlock tracking in cups page in tracker.&#13;
-- Reworked clear condition/completion system: each goal cup will now award a 'Victory Trophy' when you have as many Victory Trophies as assigned in your YAML you will complete your AP.&#13;
-- Added option to hide your AP ip and port in the tracker.&#13;
-- Removed Dolphin Auto Launch as it was causing too many issues.&#13;
-&#13;
-**REQUIRES A NEW APWORLD, ANY PREVIOUS APWORLD VERSION WILL NOT WORK!**&#13;
-&#13;
-_Linux users, download the source code here to run the client._&#13;
-&#13;
-**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.1.1-h3...v0.2.0</content>
-    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-69</id>
     <title>Borderlands 2 v69</title>
@@ -1053,6 +980,25 @@ POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
     <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.5"/>
   </entry>
   <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.4.3</id>
+    <title>Black Ops 3 - Zombies v0.4.2</title>
+    <updated>2026-04-17T07:33:22+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>Mod update only, no apworld update&#13;
+&#13;
+- Support for both the New (Feb 2026) BO3 client and the Old BO3 client, thanks to @Scroptss for helping update the offsets&#13;
+  - Separate downloads&#13;
+- Moon:&#13;
+  - Fix Space Dog toy checks having the wrong name @eah1759&#13;
+- Fix Electric Cherry incorrectly awarding Widow's Wine&#13;
+- Fix PhD Flopper being available on Shadows of Evil via random perk powerup&#13;
+- Fix Moon round saving not working&#13;
+- Restructure round end saving to not risk conflicting with checkpointing</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.4.3"/>
+  </entry>
+  <entry>
     <id>https://github.com/Uroogla/S3AP/releases/tag/1.3.5</id>
     <title>Spyro 3 v1.3.5</title>
     <updated>2026-04-17T15:14:03+00:00</updated>
@@ -1225,5 +1171,95 @@ Changes in this release:&#13;
 &#13;
 Note: Archipelago version 0.6.7+ is required. It will not work on 0.6.6 or earlier versions.</content>
     <link href="https://github.com/cjmang/Archipelago/releases/tag/0.2.3-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.3.0-beta</id>
+    <title>Dicey Dungeons v0.3.0b0</title>
+    <updated>2026-04-18T16:00:53+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>## What's Changed&#13;
+&#13;
+- Thief is now a playable character. When you select the Thief, you will have access to their episodes and equipment, and will need to beat their 6 episodes to win.&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.2.5-beta...v0.3.0-beta&#13;
+&#13;
+PLEASE NOTE: This is the single largest update since v0.1.0-beta, so it is the most likely to have bugs and be unstable. A lot of changes had to be made to support a second character. I do not recommend this version for large syncs.</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.3.0-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.5.3</id>
+    <title>Donkey Kong 64 v1.5.3.post2</title>
+    <updated>2026-04-18T16:03:45+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 1.5.3
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.4</id>
+    <title>The Legend of Zelda - Spirit Tracks v0.7.4</title>
+    <updated>2026-04-18T17:38:03+00:00</updated>
+    <author>
+      <name>DayKat</name>
+    </author>
+    <author>
+      <name>1313e</name>
+    </author>
+    <author>
+      <name>Carrotinator</name>
+    </author>
+    <author>
+      <name>TriforceDrummer</name>
+    </author>
+    <author>
+      <name>Nepecute</name>
+    </author>
+    <content>Compatible with seeds generated in v0.7.x&#13;
+[Setup guide and useful info](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/setup.md)&#13;
+&#13;
+- added a [tricks and skips doc](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/tricks_and_skips.md)&#13;
+- fixed some unimplemented glitched logic in mountain temple&#13;
+- fixed vanilla tears of light option still creating locations&#13;
+- generalized reloading of dynamic entrances based on scene on getting items that change that, allowing immediate entry into previously blocked scenes without reloading.&#13;
+- fixed blocked entrance text still showing after reloading dynamic entrances&#13;
+- fixed buggy behaviour with tears from vanilla locations in ToS 3+&#13;
+- changed itemclassification for stamps to progressive_deprioritized&#13;
+- added a yaml option to toggle swapping models of other Zelda game's items.&#13;
+- added ph to model swaps (requires ph ap v8.7+)&#13;
+- locked item ids&#13;
+- removed mountain temple b1 heatoise arena warp cause it risked locations becoming permanently missable&#13;
+- Prevented random stalfos skull drops from triggering mountain temple 2F NW Chest&#13;
+- Filled in invisible staircases in ToS with source unlock option&#13;
+- added coordinate support for dynamic requirements and loading of address read locations&#13;
+- added coordinate check for opening the desert realm portals when coming from fire realm&#13;
+- fixed snuglar locations not properly resetting&#13;
+- made giving ice to kagoron connect the regions in UT even if out of logic</content>
+    <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.4"/>
   </entry>
 </feed>

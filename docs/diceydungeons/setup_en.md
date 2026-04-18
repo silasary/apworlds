@@ -7,6 +7,9 @@
 - [The Dicey Dungeons apworld](https://github.com/Fylcoast/AP_diceydungeons/releases), 
   if not bundled with your version of Archipelago
 
+## Optional Software
+- [Dicey Dungeons PopTracker](https://github.com/Fylcoast/Dicey-Dungeons-AP-Tracker/releases)
+
 ## How to play
 
 First, you need a room to connect to. For this, you or someone you know has to generate a game.  

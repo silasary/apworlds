@@ -11,11 +11,11 @@ Your pool of items (equipment) which you can acquire throughout your runs has be
 
 ## What characters are supported?
 
-The Warrior is the only character supported by this mod. Other characters are present, but playing their Episodes will not benefit you.
+The Warrior and the Thief are the only characters supported by this mod. Other characters may be present based on your settings, but playing their Episodes will not benefit you.
 
 ## What is the goal of Dicey Dungeons when randomized?
 
-The game is Completed once you have beaten all 6 episodes for the Warrior.
+The game is Completed once you have beaten all 6 episodes for the Warrior or the Thief.
 
 ## What items and locations get shuffled?
 
