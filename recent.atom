@@ -2,64 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-19T06:36:54.504680+00:00</updated>
+  <updated>2026-04-19T12:14:06.505629+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Jouramie/Archipelago/releases/tag/0.6.7-messenger-ut-beta</id>
-    <title>The Messenger v0.6.7</title>
-    <updated>2026-04-12T03:59:58+00:00</updated>
-    <author>
-      <name>alwaysintreble</name>
-    </author>
-    <content>This alternate version of the The Messenger apworld has integration for portal and transition shuffle with [Universal Tracker](https://discord.com/channels/731205301247803413/1367270230635839539). In bonus, it tracks glitched logic and has a PopTracker integration, to follow where you are and which checks are available on your second monitor! &#13;
-&#13;
-## Changelog&#13;
-- Support PopTracker map support to the UT integration&#13;
-- Add glitched logic to the UT integration&#13;
-- Fix UT not loading when portal shuffle is disabled&#13;
-- Fix UT not loading when transition shuffle are decoupled&#13;
-- Fix connection plando not modifying the connections (only for seeds generated with this apworld)&#13;
-&#13;
-Compatible with games generated with [Archipelago 0.6.7](https://github.com/ArchipelagoMW/Archipelago/releases/tag/0.6.7)&#13;
-&#13;
-## Installation Instructions (for Windows, but likely compatible with other systems)&#13;
-- Install Archipelago (link below) with the generator enabled.&#13;
-- Place the new `messenger.apworld` file in your custom world folder.&#13;
-- Remove the old `messenger.apworld` file from your `lib/worlds` folder.&#13;
-- When connecting to a _The Messenger_ seed with UT, you will be prompted to locate a The Messenger Track Pack (downloadable [here](https://github.com/alwaysintreble/TheMessengerTrackPack/releases)). Dismiss the prompt if you do not wish to use the map. If needed, you can change the location in your `host.yaml` in your Archipelago installation.&#13;
-&#13;
-&lt;img width="1200" height="774" alt="image" src="https://github.com/user-attachments/assets/309256b0-df7b-4d43-9bfe-9d2ef3cb4d7c" /&gt;&#13;
-&#13;
-&lt;img width="1197" height="777" alt="image" src="https://github.com/user-attachments/assets/0d2bc269-4113-4b76-a0e3-88903ecfe8cb" /&gt;&#13;
-&#13;
-## Troubleshooting&#13;
-- Make sure you removed your `messenger.apworld` from `lib/worlds` and added the new apworld in `custom_worlds`&#13;
-- Report any issue in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel in the Archipelago discord. Make sure to ping @jouramie otherwise I won't read. &#13;
-&#13;
-## We Need Your Help! &#13;
-If you'd like to help integrate this into the main Archipelago releases, drop a comment on one of the pull requests. https://github.com/ArchipelagoMW/Archipelago/pull/6030 https://github.com/ArchipelagoMW/Archipelago/pull/6132! :wink:&#13;
-Also, please mention in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel that you used it, and report any issue. This will help with the integration process if some player mention using the beta world! </content>
-    <link href="https://github.com/Jouramie/Archipelago/releases/tag/0.6.7-messenger-ut-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.28</id>
-    <title>Universal Tracker v0.2.28</title>
-    <updated>2026-04-12T05:47:33+00:00</updated>
-    <author>
-      <name>FarisTheAncient</name>
-    </author>
-    <content>## What's Changed&#13;
-* Persist ignore and manually collect commands by @drtchops in https://github.com/FarisTheAncient/Archipelago/pull/118&#13;
-* Adds glitched logic to get_logical_path and the explain and get_logical_path overrides (forgot about explain more, if anybody is actually using it i'll add it later)&#13;
-* fixed the bug qwint added that broke back compat, so we should work back all the way to kivyMD again&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.2.27...Tracker_v0.2.28</content>
-    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.28"/>
-  </entry>
   <entry>
     <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.04.12</id>
     <title>YARGAllSetlists v26.4.12</title>
@@ -1254,6 +1201,51 @@ Note: Compatible with mod version 1.5.0</content>
     <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.0"/>
   </entry>
   <entry>
+    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.2</id>
+    <title>Ratchet &amp; Clank 3 v0.5.2</title>
+    <updated>2026-04-18T21:03:14+00:00</updated>
+    <author>
+      <name>AmondoVagyok</name>
+    </author>
+    <author>
+      <name>Myth197</name>
+    </author>
+    <author>
+      <name>Taoshi</name>
+    </author>
+    <author>
+      <name>Yuxia228</name>
+    </author>
+    <author>
+      <name>1theory</name>
+    </author>
+    <content>## RaC3 APWorld v0.5.2
+
+**Branch:** staging  
+**Date:** 2026-04-19 09:48 UTC
+
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;📜 Summary (17 changes since v0.5.1)&lt;/strong&gt;&lt;/summary&gt;
+
+- RAC3: Fix main RaC3 markdown file name (12ccaeca)
+- RAC3: Adjusted the rescue warning duration since it isn't as important as the holostar one (300523f8)
+- RAC3: Fix some messages getting eaten (aa92233c)
+
+&lt;/details&gt;
+
+**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.5.1...v0.5.2
+
+### Notes
+This release was automatically generated from the **staging** branch.  
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
+
+### If a location is broken and does not get sent out
+Go to the server console (locally or via the Archipelago room page) and run:  
+`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`
+</content>
+    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.8</id>
     <title>The Legend of Zelda - Oracle of Seasons v20.1.8</title>
     <updated>2026-04-18T23:38:51+00:00</updated>
@@ -1268,7 +1260,7 @@ Note: Compatible with mod version 1.5.0</content>
   </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.2</id>
-    <title>Deltarune v1.2.2</title>
+    <title>Deltarune v1.2.2.post2</title>
     <updated>2026-04-19T03:47:01+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -1302,5 +1294,15 @@ Feel free to give feedback, and make sure to report any bugs!&#13;
 &#13;
 You will only give/receive checks in the Dark World.</content>
     <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.4.4</id>
+    <title>Black Ops 3 - Zombies v0.4.2</title>
+    <updated>2026-04-19T08:12:27+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>- Fix clientfield mismatch for Shadows of Evil</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.4.4"/>
   </entry>
 </feed>

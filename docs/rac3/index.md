@@ -5,7 +5,7 @@ Blast your enemies with over the top weaponry and save the galaxy from total dis
 
 
 ## Downloads
-- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.5.1/rac3.apworld">Latest Version (0.5.1)</a>
+- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.5.2/rac3.apworld">Latest Version (0.5.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -14,5 +14,5 @@ Blast your enemies with over the top weaponry and save the galaxy from total dis
 - <a href="setup_en">English</a>
 
 ## Other Documentation files
-- <a href="en_Ratchet_and_Clank_3">en_Ratchet_and_Clank_3</a>
+- <a href="en_Ratchet and Clank 3">en_Ratchet and Clank 3</a>
 - <a href="frequently_asked_questions_Rac3_en">frequently_asked_questions_Rac3_en</a>
