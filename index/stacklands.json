@@ -1,9 +1,17 @@
 {
+  "authors": [
+    "chandler05",
+    "JammyGeeza"
+  ],
   "description": "Stacklands - Description here",
   "game": "Stacklands",
   "github": "https://github.com/JammyGeeza/Stacklands-Randomizer",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.0.10-preview": {
       "created_at": "2025-03-07T17:05:19Z",
@@ -398,6 +406,21 @@
       "title": "v0.2.4-alpha",
       "version_simple": "0.2.4",
       "world_version": "0.2.4a0"
+    },
+    "v0.2.5": {
+      "created_at": "2026-04-15T17:51:49Z",
+      "description": "# Information\r\nThis mod is still in development, so it is possible that it may contain bugs or issues - please familiarise yourself with the [known issues list](https://github.com/JammyGeeza/Stacklands-Randomizer/issues?q=is%3Aissue%20state%3Aopen) before using this mod to see how your experience may be affected.\r\n\r\nIf you experience a bug/issue that is _not_ in the list, please raise a new github issue or post it in the [Stacklands Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1151149079238299719)\r\n\r\n**PLEASE NOTE:** This version _**is not compatible**_ with worlds generated using APWorld v0.2.4 or earlier.\r\n\r\n## How to Install / Use the Mod\r\nAll instructions for how to install and use the mod are in the [README.md](https://github.com/JammyGeeza/Stacklands-Randomizer?tab=readme-ov-file#how-to-install-the-mod-to-stacklands)\r\n\r\n# Patch Notes\r\n## APWorld\r\n- Fixed #94 causing goal bosses to be selected incorrectly for `all_bosses` when multiple boards selected.\r\n- Fixed a recently discovered issue causing worlds with more than one Stacklands player to accidentally share boss selection and filler/trap weightings.\r\n\r\n## Mod Client\r\n- Replaced `\"Complete X quests to unlock\"` text when hovering over locked booster packs and will now display which AP item is required.\r\n- Added a `Research at University` check _(give 50 gold to University structure)_\r\n- Updated game save naming to allow playing multiple slots in a single multiworld.\r\n- Re-worked quest/location syncing in an attempt to further fix #93 causing checks to only send on restart.\r\n- Fixed #96 causing `University` to behave as per vanilla\r\n- Updated `Archipelago.MultiClient.Net` version to `6.7.1`\r\n- `archipelago.json` file provided to meet future `v0.7.0` manifest requirements.",
+      "download_url": "https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.5/stacklands.apworld",
+      "has_manifest": true,
+      "hash_sha256": "aaf202c172d080121577d7761e18b1ca7ab88efb65712184a78ba374d9a9c22d",
+      "html_url": "https://github.com/JammyGeeza/Stacklands-Randomizer/releases/tag/v0.2.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 32974,
+      "source_url": "https://api.github.com/repos/JammyGeeza/Stacklands-Randomizer",
+      "tag": "v0.2.5",
+      "title": "v0.2.5",
+      "version_simple": "0.2.5",
+      "world_version": "0.2.5"
     }
   }
 }
