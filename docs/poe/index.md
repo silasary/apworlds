@@ -6,7 +6,7 @@ tree, thousands of items, and a huge endgame full of challenging bosses, and a w
 
 
 ## Downloads
-- <a href="https://github.com/stubobis1/Archipelago/releases/download/1.3.2/poe.apworld">Latest Version (1.3.2)</a>
+- <a href="https://github.com/stubobis1/Archipelago/releases/download/1.3.3/poe.apworld">Latest Version (1.3.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
