@@ -1,9 +1,12 @@
 # Brave Fencer Musashi
 
 ## Latest
-- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.5/bfm.apworld">Latest Version (0.2.5)</a>
+- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.5.0/bfm.apworld">Latest Version (0.5.0)</a>
 
 ## All Versions
+
+#### v0.5.0
+- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.5.0/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.5.0/bfm.apworld</a>
 
 #### v0.2.5
 - <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.5/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.5/bfm.apworld</a>

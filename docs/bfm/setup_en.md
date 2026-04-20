@@ -1,33 +1,24 @@
 # Brave Fencer Musashi Setup Guide
 
 ## Required Software
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). Please use version 0.4.4 or later for integrated
-BizHawk support.
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). Please use the latest version. Versions below 0.4.4 are not supported.
 - Brave Fencer Musashi NTSC: BIN(s)/CUE. 
-- Delta Patcher program that handles xdelta [Releases page](https://github.com/marco-calautti/DeltaPatcher/releases/latest). 
-Alternatively if on Linux download the `Delta Patcher` on flatpak
 - [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) 2.7 or later. Other emulators are not supported.
 - The latest `bfm.apworld` file. You can find this on the [Releases page](https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases). Put this in your `Archipelago/custom_worlds` folder, if on windows and archipelago is installed double clicking on bfm.apworld should do this for you.
-- Brave Fencer Musashi AP Randomizer xdelta patch file [Releases page](https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases)
+- ~~Delta Patcher program that handles xdelta [Releases page](https://github.com/marco-calautti/DeltaPatcher/releases/latest). 
+Alternatively if on Linux download the `Delta Patcher` on flatpak~~ No longer needed (only needed for `<v0.3.0` of bfm apworld)
+- ~~Brave Fencer Musashi AP Randomizer xdelta patch file [Releases page](https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases)~~ No longer needed (only needed for `<v0.3.0` of bfm apworld)
 
 ## Configuring BizHawk
 
 Once you have installed BizHawk, open `EmuHawk.exe` and change the following settings:
 
 - If you're using BizHawk 2.7 or 2.8, go to `Config > Customize`. On the Advanced tab, switch the Lua Core from
-`NLua+KopiLua` to `Lua+LuaInterface`, then restart EmuHawk. (If you're using BizHawk 2.9, you can skip this step.)
+`NLua+KopiLua` to `Lua+LuaInterface`, then restart EmuHawk. (If you're using BizHawk >=2.9, you can skip this step.)
 - Under `Config > Customize`, check the "Run in background" option to prevent disconnecting from the client while you're tabbed out of EmuHawk.
 - Open any PlayStation game in EmuHawk and go to `Config > Controllers…` to configure your inputs. If you can't click `Controllers…`, it's because you need to load a game first (depending on version may not be needed).
 - Consider clearing keybinds in `Config > Hotkeys…` if you don't intend to use them. Select the keybind and press Esc to clear it.
 - Under `Tools > Lua Console` and on the new Lua Console window `Settings > check Autoload with EmuHawk`
-
-## Patching the BIN file
-
-1. launch `Delta Patcher`
-2. For original file select an unmodified `Brave Fencer Musashi (USA) (Track 1).bin`
-3. For xDelta patch select the downloaded xdelta patch linked above.
-4. `Apply patch`
-5. A patched bin can be used for multiple games just keep careful track of save files and memory cards. It is also suggested to update the folder name to denote a patched file
 
 ## Generating a Game
 
@@ -46,10 +37,19 @@ Once you have installed BizHawk, open `EmuHawk.exe` and change the following set
 7. To connect the client to the server, enter your room's address and port (e.g. `archipelago.gg:38281`) into the top text field of the client and click Connect.
 8. The client will ask for a `slot name`. This is the text after "name: " in the YAML file (Defaults to "Player1")
 
-You should now be able to receive and send items. You'll need to do these steps every time you want to reconnect. After selecting the script once you can instead use `File > Recent Scripts`. It is safe to do most things if the client is not connected but it is expected that the client is connected to make progress and prevent some soft locks. If client gets disconnected try reconnecting/reloading as soon as able. It will be needed to be connected to receive items and for shop randomization; everything will re-sync when you reconnect.
+You should now be able to receive and send items. You'll need to do these steps every time you want to reconnect. After selecting the script once you can instead use `File > Recent Scripts`. It is safe to do most things if the client is not connected (if manually patched) but it is expected that the client is connected to make progress and prevent some soft locks. If client gets disconnected try reconnecting/reloading as soon as able. It will be needed to be connected to receive items and for shop randomization; everything will re-sync when you reconnect.
 
 ## A Note to New Players of Brave Fencer Musashi
 
 A speedrun of the game may take 2-4 hours depending on catagory, a first time casual run may take 12-20 hours. Consider playing this game with quicker goal settings (either rescue fewer NPCs/kill an earlier boss) or playing this game in an async.
 
 ## Notes and Limitations
+
+
+## Patching the BIN file (no longer needed) (Only for compatibility with bfm apworld `<v0.3.0`)
+
+1. launch `Delta Patcher`
+2. For original file select an unmodified `Brave Fencer Musashi (USA) (Track 1).bin`
+3. For xDelta patch select the downloaded xdelta patch linked above.
+4. `Apply patch`
+5. A patched bin can be used for multiple games just keep careful track of save files and memory cards. It is also suggested to update the folder name to denote a patched file
