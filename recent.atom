@@ -2,43 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-21T06:43:30.917150+00:00</updated>
+  <updated>2026-04-21T12:28:33.404807+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.31</id>
-    <title>Muse Dash v1.5.30</title>
-    <updated>2026-04-14T08:44:50+00:00</updated>
-    <author>
-      <name>DeamonHunter</name>
-    </author>
-    <content># Changes&#13;
-- Fixed Master Bancho's Sushi Class not awarding items.&#13;
-&#13;
-# Installation&#13;
-### Melonloader&#13;
-*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
-&#13;
-1. Download MelonLoader.Installer.exe from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
-2. Choose the automated tab, click the select button and browse to `MuseDash.exe`.&#13;
-    - You can find the folder in steam by finding the game in your library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
-    - If you click the bar at the top telling you your current folder, this will give you a path you can copy. If you paste that into the window popped up by **MelonLoader**, it will automatically go to the same folder.&#13;
-3. The launcher will automatically default to the latest version. &#13;
-    - If the latest version is not working: **Untick Latest and select 0.6.6.**&#13;
-4. Click install. Once finished run the game once.&#13;
-&#13;
-### Mod Install&#13;
-&#13;
-1.Download `ArchipelagoMuseDash.zip`.&#13;
-2. Head to the Muse Dash folder and open up `/mods/`.&#13;
-3. Extract the contents of the .zip file into mods.&#13;
-   - Ensure that `ArchipelagoMuseDash.dll` and `Archipelago.MultiClient.Net.dll` are under `/mods/` and not within a sub folder.&#13;
-4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
-</content>
-    <link href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.31"/>
-  </entry>
   <entry>
     <id>https://github.com/CrusherRL/AP_Parkitect_World/releases/tag/1.3.3</id>
     <title>Parkitect v1.3.3</title>
@@ -1388,5 +1356,35 @@ APWORLD INSTALLATION INSTRUCTIONS:&#13;
 POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
 -  copy contents of "Hunie Pop 2 Archipelago PopTracker.zip" into the packs folder in the poptracker install directory</content>
     <link href="https://github.com/DotsofdarknessArchipelago/HuniePop2Archipelago/releases/tag/v3.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.9.1</id>
+    <title>Paper Mario The Thousand Year Door v0.9.1</title>
+    <updated>2026-04-21T08:18:22+00:00</updated>
+    <author>
+      <name>jamesbrq</name>
+    </author>
+    <content># Changelog&#13;
+- Removed multiple random enemy formations from the random pool. These include encounters that were inaccessible in a vanilla playthrough and encounters that only showed up in rogueport sewers after chapter 5&#13;
+- Tweaked logic for some tattlesanity locations with random enemies in the sewers.&#13;
+- With enemy rando on, the changed fights in the sewers after beating ch.5 are now permanently inaccessible and not randomized&#13;
+- Some HP values have been tweaked for enemy scaling to better match the vanilla game&#13;
+- Randomized FP and BP is now weighted towards 3, making 0 and 6 less common.&#13;
+- Any badges or moves that cost 0 FP/BP respectively now stay at 0 BP/FP and are not included in the shuffle&#13;
+- Jolene can now be bribed. Setting names will change starting in v0.10.0 to not specify grubba&#13;
+- Apworld now has a proper manifest&#13;
+&#13;
+# Bug Fixes&#13;
+- Fix a logic issue in ch.8 regarding the cog location not requiring yoshi or koops to access&#13;
+- Fix for crashes in chapter 3 related to enemy randomizer&#13;
+- Fix for nondescript crash on ROM boot related to shop item descriptions&#13;
+- Fix for yoshi egg continuing to follow you after getting the yoshi check in ch.3&#13;
+- Fix for starting at rank 0 post-ch3, you will now start at 20 again after beating the chapter&#13;
+- Related to starting at rank 20 again after ch.3, the guard will now properly move out of the way for the minor league locker room&#13;
+- Fix for every encounter in ch.3 first striking you with enemy rando on&#13;
+- Fix for certain areas not having properly scaled stats, this could also crash your game on occasion&#13;
+&#13;
+**Full Changelog**: https://github.com/jamesbrq/ArchipelagoTTYD/compare/v0.9.0...v0.9.1</content>
+    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.9.1"/>
   </entry>
 </feed>

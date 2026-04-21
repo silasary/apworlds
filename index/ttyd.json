@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "jamesbrq"
+  ],
   "description": "Paper Mario: The Thousand-Year Door is a quirky, turn-based RPG with a paper-craft twist.\nMario teams up with oddball allies to stop an ancient evil sealed behind a magical door.\nSet in Rogueport, the game mixes platforming, puzzles, and witty, self-aware dialogue.\nBattles play out on a stage with timed button presses and a live audience cheering you on.",
   "game": "Paper Mario The Thousand Year Door",
   "github": "https://github.com/jamesbrq/ArchipelagoTTYD",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0": {
       "created_at": "2025-04-17T21:24:23Z",
@@ -312,6 +319,21 @@
       "title": "TTYD AP v0.9.0",
       "version_simple": "0.9.0",
       "world_version": "0.9.0"
+    },
+    "v0.9.1": {
+      "created_at": "2026-04-21T08:18:22Z",
+      "description": "# Changelog\r\n- Removed multiple random enemy formations from the random pool. These include encounters that were inaccessible in a vanilla playthrough and encounters that only showed up in rogueport sewers after chapter 5\r\n- Tweaked logic for some tattlesanity locations with random enemies in the sewers.\r\n- With enemy rando on, the changed fights in the sewers after beating ch.5 are now permanently inaccessible and not randomized\r\n- Some HP values have been tweaked for enemy scaling to better match the vanilla game\r\n- Randomized FP and BP is now weighted towards 3, making 0 and 6 less common.\r\n- Any badges or moves that cost 0 FP/BP respectively now stay at 0 BP/FP and are not included in the shuffle\r\n- Jolene can now be bribed. Setting names will change starting in v0.10.0 to not specify grubba\r\n- Apworld now has a proper manifest\r\n\r\n# Bug Fixes\r\n- Fix a logic issue in ch.8 regarding the cog location not requiring yoshi or koops to access\r\n- Fix for crashes in chapter 3 related to enemy randomizer\r\n- Fix for nondescript crash on ROM boot related to shop item descriptions\r\n- Fix for yoshi egg continuing to follow you after getting the yoshi check in ch.3\r\n- Fix for starting at rank 0 post-ch3, you will now start at 20 again after beating the chapter\r\n- Related to starting at rank 20 again after ch.3, the guard will now properly move out of the way for the minor league locker room\r\n- Fix for every encounter in ch.3 first striking you with enemy rando on\r\n- Fix for certain areas not having properly scaled stats, this could also crash your game on occasion\r\n\r\n**Full Changelog**: https://github.com/jamesbrq/ArchipelagoTTYD/compare/v0.9.0...v0.9.1",
+      "download_url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.9.1/ttyd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7f332862847021a05df07897f2f4140fd0f626a25b5e244da3313c332e92b33e",
+      "html_url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.9.1",
+      "minimum_ap_version": "0.6.3",
+      "size": 430806,
+      "source_url": "https://api.github.com/repos/jamesbrq/ArchipelagoTTYD",
+      "tag": "v0.9.1",
+      "title": "TTYD AP v0.9.1",
+      "version_simple": "0.9.1",
+      "world_version": "0.9.1"
     }
   }
 }
