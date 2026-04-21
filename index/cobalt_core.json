@@ -160,6 +160,21 @@
       "title": "1.1.6",
       "version_simple": "1.1.6",
       "world_version": "1.1.6"
+    },
+    "release/1.2.0-rc1": {
+      "created_at": "2026-04-20T21:34:29Z",
+      "description": "Biggest update so far!\r\nSetting it as a pre-release for now because many changes bring many bugs. Feedback and suggestions are also welcome!\r\n\r\nAfter discussing with some people using the mod, I've decided to postpone the progression overhaul indefinitely as it seems to be no longer relevant and the fixes that I had imagined seem to cause more issues than it solves.\r\n\r\nThis update was therefore focused on adding daily modifiers as well as the ability to do solo and duo runs with Custom Run Options, but there are a lot of extra features that ended up being bundled with it as well!\r\n\r\n## Major new features\r\n\r\n- CAT will now announce when you receive items from Archipelago! (Thanks a lot to Mufflebuns who wrote a lot of dialogue for it!)\r\n- If Custom Run Options is installed, you will now be able to start with less than 3 characters.\r\n  - The new `starting_characters_amount` and `cro_is_installed` YAML options control this\r\n  - You still have only 2 starting cards per characters, so you may start with copies of the same cards to fill out your starting deck\r\n- Added the option to shuffle daily modifiers into the pool.\r\n  - Depending on options, these will apply immediately, apply randomly on your next runs, or both\r\n- Added the `swap_character_node` option. If active, it will add a node near the middle of every zone allowing you to switch one of your characters with an unlocked character. Meaning each run is less of a commitment to specific rewards\r\n- Added the `immediate_rewards_blacklist` to the YAML, preventing items of your choice from being received immediately when unlocked\r\n- Improved controller support across the board. Controllers are now officially supported and I invite you to report bugs involving them.\r\n  - You still need keyboard input for connection info and the server console\r\n\r\n## Other changes\r\n\r\n- Updated the AP card's border art, the should now represent the character that gave you access to them\r\n- Just like cards, you can now pick one unlocked artifact at the start of a run, and one AP artifact at cleo's shop\r\n- `shuffle_ship_parts` and `randomize_starting_cards` can now be applied on every run, instead of once at the beginning\r\n- The connection menu now has paste buttons if you want to copy/paste URLs and stuff\r\n- Some of the other players are now displayed in the main menu\r\n- Added the `fillers_can_be_traps` option\r\n  - At the moment this is only relevant in some rare instances, mostly if you use `start_inventory_from_pool`\r\n- Added the `pick_missed_items_from_every_run` option, to restrict the ability to get AP items from cleo's shop to items seen this run\r\n- Removed the `rarer_checks_later` option\r\n- Added character tooltips to AP items that unlock new characters\r\n- A secret special card has been tweaked, and a new one has been added\r\n\r\n## Fixes and tweaks\r\n\r\n- Dialogue boxes will resize if there are too many choices (particulary relevant in shops and boot option)\r\n- Cards shown in tooltips no longer appear as unplayable\r\n- Connecting to a multiworld with an incompatible installation will now give a clearer error message\r\n\r\nThe APWorld and YAML options must both be updated.",
+      "download_url": "https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.2.0-rc1/cobalt_core.apworld",
+      "has_manifest": true,
+      "hash_sha256": "db83f5bbefd7051dc257451b90a5dca9bd192ce02d98c2653e46ef06048c08a2",
+      "html_url": "https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.0-rc1",
+      "prerelease": true,
+      "size": 21898,
+      "source_url": "https://api.github.com/repos/Isaac-SOL/CobaltCoreArchipelagoMod",
+      "tag": "release/1.2.0-rc1",
+      "title": "1.2.0-rc1",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0rc1"
     }
   }
 }

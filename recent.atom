@@ -2,58 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-20T18:23:35.216727+00:00</updated>
+  <updated>2026-04-21T00:25:23.377429+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Joshark/archipelago-sms/releases/tag/0.6.2</id>
-    <title>Super Mario Sunshine v0.6.2</title>
-    <updated>2026-04-12T21:45:23+00:00</updated>
-    <author>
-      <name>MrsMarinaRose</name>
-    </author>
-    <author>
-      <name>Joshark</name>
-    </author>
-    <content>Quick fix for logic bug that considered game beatable right off the bat</content>
-    <link href="https://github.com/Joshark/archipelago-sms/releases/tag/0.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.3</id>
-    <title>Pokemon Crystal v5.4.3</title>
-    <updated>2026-04-13T11:33:07+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-Since [5.4.2](https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.2)&#13;
-&#13;
-## Bug Fixes&#13;
-- Fix the rivals starter having its vanilla moveset if starters were random but not learnsets or trainer Pokemon.&#13;
-- Fix gym clears sometimes being double counted if remote items were on.&#13;
-- Ice Path B3F no longer logically provides Rock Smash encounters.&#13;
-- Trainer Pokemon can no longer have duplicate moves.&#13;
-&#13;
-_This release is backwards compatible with seeds generated on 5.4.0 or later. Some fixes are retroactive, re-patch your ROM to benefit from them._</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.4</id>
-    <title>Bloons TD6 v0.5.4</title>
-    <updated>2026-04-13T14:04:58+00:00</updated>
-    <author>
-      <name>Matt41321</name>
-    </author>
-    <content># Changes&#13;
-- Map Logic: Different requirements to be able to beat certain modes on different difficulties&#13;
-- Added Universal Tracker Support&#13;
-- Max maps increased to 85&#13;
-- Minimum level changed to 0</content>
-    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/tag/v1.2.0</id>
     <title>Backlog Expedition v1.2.0</title>
@@ -1338,5 +1291,101 @@ This release may have some other gotchas with the websites, I'm real tired and h
     </author>
     <content>Fixed compatibility with 32 bits bmps</content>
     <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.11"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.9.0</id>
+    <title>Casualties: Unknown v0.9.0</title>
+    <updated>2026-04-20T21:13:41+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.9.0&#13;
+This update is NOT compatible with worlds generated on previous versions!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+&#13;
+With the change of the game's development to Steam instead, development on the Itch.io version has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
+&#13;
+# Additions&#13;
+- Support for the new Steam version of Casualties: Unknown (V6)&#13;
+	- New V6 Moodles are included in Moodlesanity, and the new recipe is included in Craftsanity [APWorld Change]&#13;
+# Changes&#13;
+- Slightly changed the popup of the Reverse Controls Trap to better fit the new way reversed controls works&#13;
+- Update to BepInEx v5.4.23.5 / latest v5 version&#13;
+# Fixes&#13;
+- If the first Archipelago item encountered in a session is inside a Survivor inventory, it will no longer have the incorrect description&#13;
+- Liquids that don't have an item counterpart will no longer throw an error when obtained through Free Samples&#13;
+# Known Issues&#13;
+- Getting two traps in quick succession can cause the incorrect slot name inside the trap Moodle&#13;
+- Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.8.0...v0.9.0</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.9.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.0-rc1</id>
+    <title>Cobalt Core v1.2.0rc1</title>
+    <updated>2026-04-20T21:34:29+00:00</updated>
+    <author>
+      <name>Isaac-SOL</name>
+    </author>
+    <content>Biggest update so far!&#13;
+Setting it as a pre-release for now because many changes bring many bugs. Feedback and suggestions are also welcome!&#13;
+&#13;
+After discussing with some people using the mod, I've decided to postpone the progression overhaul indefinitely as it seems to be no longer relevant and the fixes that I had imagined seem to cause more issues than it solves.&#13;
+&#13;
+This update was therefore focused on adding daily modifiers as well as the ability to do solo and duo runs with Custom Run Options, but there are a lot of extra features that ended up being bundled with it as well!&#13;
+&#13;
+## Major new features&#13;
+&#13;
+- CAT will now announce when you receive items from Archipelago! (Thanks a lot to Mufflebuns who wrote a lot of dialogue for it!)&#13;
+- If Custom Run Options is installed, you will now be able to start with less than 3 characters.&#13;
+  - The new `starting_characters_amount` and `cro_is_installed` YAML options control this&#13;
+  - You still have only 2 starting cards per characters, so you may start with copies of the same cards to fill out your starting deck&#13;
+- Added the option to shuffle daily modifiers into the pool.&#13;
+  - Depending on options, these will apply immediately, apply randomly on your next runs, or both&#13;
+- Added the `swap_character_node` option. If active, it will add a node near the middle of every zone allowing you to switch one of your characters with an unlocked character. Meaning each run is less of a commitment to specific rewards&#13;
+- Added the `immediate_rewards_blacklist` to the YAML, preventing items of your choice from being received immediately when unlocked&#13;
+- Improved controller support across the board. Controllers are now officially supported and I invite you to report bugs involving them.&#13;
+  - You still need keyboard input for connection info and the server console&#13;
+&#13;
+## Other changes&#13;
+&#13;
+- Updated the AP card's border art, the should now represent the character that gave you access to them&#13;
+- Just like cards, you can now pick one unlocked artifact at the start of a run, and one AP artifact at cleo's shop&#13;
+- `shuffle_ship_parts` and `randomize_starting_cards` can now be applied on every run, instead of once at the beginning&#13;
+- The connection menu now has paste buttons if you want to copy/paste URLs and stuff&#13;
+- Some of the other players are now displayed in the main menu&#13;
+- Added the `fillers_can_be_traps` option&#13;
+  - At the moment this is only relevant in some rare instances, mostly if you use `start_inventory_from_pool`&#13;
+- Added the `pick_missed_items_from_every_run` option, to restrict the ability to get AP items from cleo's shop to items seen this run&#13;
+- Removed the `rarer_checks_later` option&#13;
+- Added character tooltips to AP items that unlock new characters&#13;
+- A secret special card has been tweaked, and a new one has been added&#13;
+&#13;
+## Fixes and tweaks&#13;
+&#13;
+- Dialogue boxes will resize if there are too many choices (particulary relevant in shops and boot option)&#13;
+- Cards shown in tooltips no longer appear as unplayable&#13;
+- Connecting to a multiworld with an incompatible installation will now give a clearer error message&#13;
+&#13;
+The APWorld and YAML options must both be updated.</content>
+    <link href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.0-rc1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.12</id>
+    <title>The Legend of Zelda - Oracle of Seasons v20.1.12</title>
+    <updated>2026-04-20T22:07:06+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>Added the ability to select which game to select the sprite for</content>
+    <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.12"/>
   </entry>
 </feed>
