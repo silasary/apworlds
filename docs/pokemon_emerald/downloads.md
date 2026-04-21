@@ -1,9 +1,12 @@
 # Pokemon Emerald
 
 ## Latest
-- <a href="https://github.com/Zunawe/Archipelago/releases/download/emerald/2.2.0/pokemon_emerald.apworld">Latest Version (2.2.0)</a>
+- <a href="https://github.com/Zunawe/Archipelago/releases/download/emerald/2.5.1/pokemon_emerald.apworld">Latest Version (2.5.1)</a>
 
 ## All Versions
+
+#### v2.5.1
+- <a href="https://github.com/Zunawe/Archipelago/releases/download/emerald/2.5.1/pokemon_emerald.apworld">https://github.com/Zunawe/Archipelago/releases/download/emerald/2.5.1/pokemon_emerald.apworld</a>
 
 #### v2.2.0
 - <a href="https://github.com/Zunawe/Archipelago/releases/download/emerald/2.2.0/pokemon_emerald.apworld">https://github.com/Zunawe/Archipelago/releases/download/emerald/2.2.0/pokemon_emerald.apworld</a>

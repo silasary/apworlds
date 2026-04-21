@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "Zunawe"
+  ],
   "description": "Pok\u00e9mon Emerald is the definitive Gen III Pok\u00e9mon game and one of the most beloved in the franchise.\nCatch, train, and battle Pok\u00e9mon, explore the Hoenn region, thwart the plots\nof Team Magma and Team Aqua, challenge gyms, and become the Pok\u00e9mon champion!",
   "flags": [
     "unready"
@@ -6,7 +9,11 @@
   "game": "Pokemon Emerald",
   "github": "https://github.com/Zunawe/Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "tracker": "https://github.com/seto10987/Archipelago-Emerald-AP-Tracker/releases/latest",
   "versions": {
     "emerald/1.0.0": {
@@ -208,6 +215,21 @@
       "title": "Pokemon Emerald 2.2.0",
       "version_simple": "2.2.0",
       "world_version": "2.2.0"
+    },
+    "emerald/2.5.1": {
+      "created_at": "2026-04-21T03:58:23Z",
+      "description": "### Fixes\r\n\r\n- Fixed dexsanity logic to correctly account only for catching species in their enabled encounter types, even if they\r\ncan be found elsewhere.",
+      "download_url": "https://github.com/Zunawe/Archipelago/releases/download/emerald/2.5.1/pokemon_emerald.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e72fcea6091ff946ea8466b5b91e15a88ed2163accf4e6febf6fb29b38a62bff",
+      "html_url": "https://github.com/Zunawe/Archipelago/releases/tag/emerald/2.5.1",
+      "minimum_ap_version": "0.6.1",
+      "size": 532611,
+      "source_url": "https://api.github.com/repos/Zunawe/Archipelago",
+      "tag": "emerald/2.5.1",
+      "title": "Pokemon Emerald 2.5.1",
+      "version_simple": "2.5.1",
+      "world_version": "2.5.1"
     }
   }
 }

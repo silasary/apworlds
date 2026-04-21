@@ -5,7 +5,7 @@ that features several core changes for better or for worse.
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.1/waffles.apworld">Latest Version (1.3.1)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.2/waffles.apworld">Latest Version (1.3.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

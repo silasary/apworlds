@@ -1,9 +1,12 @@
 # Casualties: Unknown
 
 ## Latest
-- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.9.0/casualtiesunknown.apworld">Latest Version (0.9.0)</a>
+- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.9.0/casualtiesunknown.apworld">Latest Version (0.9.0.post2)</a>
 
 ## All Versions
+
+#### v0.9.0.post2
+- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.9.0/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.9.0/casualtiesunknown.apworld</a>
 
 #### v0.9.0
 - <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.9.0/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.9.0/casualtiesunknown.apworld</a>

@@ -2,91 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-21T00:25:23.377429+00:00</updated>
+  <updated>2026-04-21T06:43:30.917150+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/tag/v1.2.0</id>
-    <title>Backlog Expedition v1.2.0</title>
-    <updated>2026-04-13T17:31:33+00:00</updated>
-    <author>
-      <name>Nikkilites</name>
-    </author>
-    <content>## New in this version&#13;
-- Added support for having multiple runes per island&#13;
-&#13;
-## Notes about this version&#13;
-- Compatible with v.2.0.0 of the game&#13;
-&#13;
-## Learn more about this AP-world&#13;
-- [Setup guide](https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/blob/main/docs/setup_en.md)&#13;
-- [Info](https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/blob/main/docs/en_Backlog%20Expedition.md)</content>
-    <link href="https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/tag/v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.2</id>
-    <title>Parkitect v1.3.2</title>
-    <updated>2026-04-13T18:25:58+00:00</updated>
-    <author>
-      <name>CrusherRL</name>
-    </author>
-    <content>Installation can be found [here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)&#13;
-&#13;
-Enjoy!&#13;
-&#13;
-NOTE:&#13;
-This release is not backwards compatible with seeds generated **before **1.2.1&#13;
-&#13;
-# Parkitect Archipelago — Release Notes&#13;
-## Fix&#13;
-- Fixed "Corkscrew Coaster" typo. This mod Item was not recognized as a mod Item and cause exceptions</content>
-    <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.2</id>
-    <title>Nine Sols v0.5.2</title>
-    <updated>2026-04-13T21:44:33+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
-&#13;
-- **Auto-hinting** shop locations with progression and/or useful items&#13;
-- Shop UI tweaks (when shop rando is on):&#13;
-	- The yellow text in the top right of the shop UI has been changed from the item flag (Progression, Useful, Trap, Filler) to the AP location name (e.g. "3D Printer: 2nd High Cost Purchase"). The item flag text has been moved down to the description.&#13;
-	- Shop purchases that require a Dark Steel or Herb Catalyst will now display `&amp; DS` or `&amp; HC` underneath the jin price, making it easy to see at a glance the DS, HC and just-jin parts of Kuafu's shop.&#13;
-	- Any shop location the AP server says is checked will now be grayed out, so e.g. you can't waste your money "re-buying" `!collect`ed locations, and the description will be edited to explain this corner case.&#13;
-	- Removed the "Modified"/"Upgraded"/"Purchased" text on already purchased entries, since it would incorrectly overlap with the e.g. "Required: Dark Steel" text, and the vanilla word choices don't make sense in shop rando.&#13;
-		- Previous versions tried to remove the "Required: ..." text instead, but it turns out that didn't always work (in particular, the moment immediately after making a purchase had obvious overlapping text). This new approach should consistently prevent overlaps.&#13;
-	- When you only have exactly enough Dark Steels or Herb Catalysts to buy the in-logic progression shop purchases, the randomizer forces you not to spend your DSs/HCs elsewhere (since that would risk bricking the multiworld), and adds an explanation about this to the forbidden purchase descriptions. What's new in 0.5.2 is that this explanation has been slightly reworded, and now includes an explicit list of the in-logic purchases you're being forced to make instead.&#13;
-- Other shop rando tweaks:&#13;
-	- Added shop location name groups: "Kuafu's Shop", "Kuafu's Extra Inventory", "Chiyou's Shop", "3D Printer" and "All Shops"&#13;
-	- Updated randomize_shops option description to suggest my new JinMultiplier mod and nozwock's NoDeathPenalty mod, for obvious reasons.&#13;
-	- The notification in the top right when you collect a Pipe Upgrade now starts with the word "Collected", like all the other notifications. I'm counting this as a shop rando fix since the Pipe Upgrade item only exists in shop rando, and it doesn't go anywhere else.&#13;
-- Death link tweaks:&#13;
-	- Death link is no longer broken by quitting to menu and reloading&#13;
-	- Improved handling of the "DeathLink" AP connection tag, so it's now applied during connection instead of just after connection, and the tag is immediately added or removed whenever you toggle the mod's DL setting.&#13;
-- Boss Scaling tweaks:&#13;
-	- Boss Scaling is now true by default for new randomizer players&#13;
-	- Added separate "Scale Down Early Bosses" and "Scale Up Late Bosses" settings (default true) since some players have asked for more customization&#13;
-- `medium` logic was missing multiple bow hovers:&#13;
-	- The "CTH: Large Elevator Shaft" location&#13;
-	- For the "PR (Central): Hack Statue" location, you can reach the statue with a bow hover from "Guarded By Beetle"&#13;
-	- Getting from "Factory (U) - Broken Shanhai" to "Middle Right Exit"&#13;
-	- Getting from "Factory (GH) - Hammer Brothers Roof" to the "Above Root Node" roof is now in logic with bow hover and Grapple&#13;
-		- ...as well as Air Dash &amp; T-dash, and on `ledge_storage` Grapple &amp; T-dash setup into parry hover. I was trying to make this just about bow hovers but that didn't quite pan out.&#13;
-	- Going from GoS (Entry)'s root node to "Greenhouse Between Elevators" (a.k.a. "the randomizer version of Elevator Skip") now allows bow hover &amp; CL &amp; LG&#13;
-- `ledge_storage` logic was missing multiple "triple jumps" (Cloud Leap + ledge storage vault + another Cloud Leap):&#13;
-	- The connection to "Greenhouse Between Elevators" now also allows CL &amp; LG / a triple jump&#13;
-	- The FSP tree-growing chests can now be reached with CL &amp; LG / triple jumps&#13;
-	- "PR (East): Top Platform in Upper Right Shaft" now also allows CL &amp; LG / a triple jump&#13;
-	- Luyan's Tomb in GoS (West) can now be reached with CL &amp; LG / a triple jump&#13;
-	- The caves in the upper left of AF (Depths) can now be reached from the AF(D) root node using CL &amp; LG / a triple jump from the Shangui Arena entrance&#13;
-</content>
-    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.2"/>
-  </entry>
   <entry>
     <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.31</id>
     <title>Muse Dash v1.5.30</title>
@@ -1117,6 +1037,8 @@ Go to the server console (locally or via the Archipelago room page) and run:  &#
     </author>
     <content>(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
 &#13;
+**&gt;&gt;&gt; This is a pre-release. For the least issues, it's recommended to use version 1.2.1 instead. &lt;&lt;&lt;**&#13;
+&#13;
 Changelog:&#13;
 - Added an option to include unused items to itempool (can exclude Everybodyweapon)&#13;
 - [CH3] Lost Pippins, Zapper, Watercooler, Shuttah and shadowguy are now in logic only in tv world if you are playing all routes (so you can recruit them before losing them without the need to reload save. They are marked out of logic on UT if you want to reload your save)&#13;
@@ -1294,7 +1216,7 @@ This release may have some other gotchas with the websites, I'm real tired and h
   </entry>
   <entry>
     <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.9.0</id>
-    <title>Casualties: Unknown v0.9.0</title>
+    <title>Casualties: Unknown v0.9.0.post2</title>
     <updated>2026-04-20T21:13:41+00:00</updated>
     <author>
       <name>Nichologeam</name>
@@ -1387,5 +1309,84 @@ The APWorld and YAML options must both be updated.</content>
     </author>
     <content>Added the ability to select which game to select the sprite for</content>
     <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.12"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.2</id>
+    <title>SMW: Spicy Mycena Waffles v1.3.2</title>
+    <updated>2026-04-21T00:32:44+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <content>### Woohoo! Just what I needed!&#13;
+## Info &#13;
+* [Information](https://thelx5.github.io/smw/)&#13;
+* [Full Changelog](https://thelx5.github.io/smw/changelog/#1.3.2)&#13;
+* Probably not compatible with ongoing games&#13;
+## Changes&#13;
+* Implemented DeathLink&#13;
+	* Stars can nullify one death signal at a time&#13;
+	* Hearts can also nullify one death signal if desired&#13;
+* DeathLink, EnergyLink and TrapLink can now be toggled in the Manager at any time&#13;
+* Potentially fixes Yoshi House's goal forcing a ton of eggs being panic swap targeted&#13;
+* Fixes alternate logic being all messed up in Universal Tracker&#13;
+* Fixes some unusual cases where exits will be reported as reachable out of logic in UT &#13;
+* Fixes boos hurting Mario while ducking or when having an active star and riding Yoshi&#13;
+* Fixes locations other than exits having wrong classifications on levels with swapped exits&#13;
+* Run no longer displays an A in the in-game tracker&#13;
+* Goal location is now an event&#13;
+* Removed `swap_level_exits` option, it stopped mattering a long time ago&#13;
+* Alternate Logic no longer has every setting on by default&#13;
+* Enemy Shuffle updates:&#13;
+	* FoI4 now guarantees a bouncing koopa after the midway point&#13;
+	* VoB2 no longer has Dino Rhinos on the first room&#13;
+	* VoB2 no longer has bouncing american footballs in the third room&#13;
+	* DS1 now has fishes after exiting the secondary room&#13;
+* Several logic updates I forgot to document</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/HuniePop2Archipelago/releases/tag/v3.1.0</id>
+    <title>Hunie Pop 2 v3.1.0</title>
+    <updated>2026-04-21T01:29:23+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- (APWorld) Added options to set the min/max value for Food, Date Gifts, Girl Gifts and Arch Items in shop&#13;
+- (APWorld) Changed YMAL option "filler_item" from a number range to specific option choices&#13;
+- (APWorld) Changed Default Template option order so that relevant options are grouped together&#13;
+- (Client) Made Number of Items gotten on start screen properly reflect amount received&#13;
+- (Client) Fixed the last Arch Item in shop not being generated properly&#13;
+- (Client) Made Arch Items disappear from inventory after moving locations&#13;
+- (Client) Fixed random error in console on client start&#13;
+&#13;
+&lt;br&gt;&#13;
+&#13;
+BACKUP YOU ORIGINAL SAVE CANT GUARANTEE THAT IT WONT GET CORRUPTED&#13;
+&#13;
+Windows save location: "C:/Users/{YOUR USERNAME}/AppData/LocalLow/HuniePot/HuniePop 2 - Double Date/"&#13;
+Mac save location: "/Users/{YOUR USERNAME}/Library/Application Support/com.HuniePot.HuniePop2-DoubleDate/"&#13;
+&#13;
+CLIENT INSTALLATION INSTRUCTIONS:&#13;
+&#13;
+- Have Hunie Pop 2 Installed&#13;
+- Download Hunie Pop 2 Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Hunie Pop 2 Archipelago plugin.zip" to the directory where "HuniePop 2 - Double Date.exe" is&#13;
+- play and connect to a Archipelago server&#13;
+&#13;
+&#13;
+APWORLD INSTALLATION INSTRUCTIONS:&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Huniepop 2 APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Huniepop 2 APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop 2 YMAL&#13;
+&#13;
+&#13;
+POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
+-  copy contents of "Hunie Pop 2 Archipelago PopTracker.zip" into the packs folder in the poptracker install directory</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/HuniePop2Archipelago/releases/tag/v3.1.0"/>
   </entry>
 </feed>
