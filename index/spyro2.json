@@ -272,6 +272,22 @@
       "version_simple": "31",
       "world_version": "0.3.2"
     },
+    "linux-rc": {
+      "created_at": "2026-04-21T15:40:42Z",
+      "description": "This is the alpha version of a Bizhawk client, intended to work on both Windows and Linux.\r\n\r\nThis is not a fully complete implementation, and the following issues are known:\r\n- The following options are not yet implemented and so do not yet work:\r\n  - Winter Tundra Warp Options\r\n  - Death Link (soon, I promise)\r\n  - Progressive Sparx Health Upgrades\r\n  - Destructive Spyro filler\r\n  - Invisible Spyro filler\r\n- Client commands are not yet implemented\r\n- When connecting to a seed in progress, you will receive all filler/trap items again, from the seed's start.\r\n- In the Duckstation client, items that heal or hurt Sparx work with a delay, to ensure that life bottles don't overwrite the effect. The effects are currently instant for Bizhawk.\r\n- In the Duckstation client during closed world mode, Elora tells you how many talismans you have.  This is not yet implemented.\r\n- If you save or auto-save in Winter Tundra, exit to the main menu, and try to load a save, the game will crash.  This is *not* savefile corruption, and a hard reset before trying to load the save should work instead.\r\n- There's incorrect logic on the 5 swim gems in Autumn Plains.\r\n\r\nSetup Notes:\r\n- This has been tested on Bizhawk 2.9.1.  It was based off of the Ape Escape client, so https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_en.md is likely accurate.\r\n- Connect with the generic bizhawk lua connector and the bizhawk client.\r\n- While there shouldn't be any game breaking effects from connecting early, it is preferred that you do so after the \"Insomniac\" sign appears in the main menu.\r\n\r\nPlease report any issues you run across!",
+      "download_url": "https://github.com/Uroogla/S2AP/releases/download/linux-rc/spyro2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "005a3c5f7d97676502067acb9201290abd94c04acc3af6627730371ec6926791",
+      "html_url": "https://github.com/Uroogla/S2AP/releases/tag/linux-rc",
+      "minimum_ap_version": "0.6.1",
+      "prerelease": true,
+      "size": 62105,
+      "source_url": "https://api.github.com/repos/Uroogla/S2AP",
+      "tag": "linux-rc",
+      "title": "Test Client - Linux",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
+    },
     "linux_test": {
       "created_at": "2026-01-29T21:17:29Z",
       "description": "Test Linux build - this does not work",

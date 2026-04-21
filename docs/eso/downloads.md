@@ -17,6 +17,9 @@
 #### v1.0.0
 - <a href="https://github.com/spencer2585/APESO/releases/download/0.2.2/eso.apworld">https://github.com/spencer2585/APESO/releases/download/0.2.2/eso.apworld</a>
 
+#### v0.3.0.post2
+- <a href="https://github.com/spencer2585/APESO/releases/download/0.3.0/eso.apworld">https://github.com/spencer2585/APESO/releases/download/0.3.0/eso.apworld</a>
+
 #### v0.3.0
 - <a href="https://github.com/spencer2585/APESO/releases/download/0.3.0/eso.apworld">https://github.com/spencer2585/APESO/releases/download/0.3.0/eso.apworld</a>
 
@@ -37,4 +40,7 @@
 
 #### v0.3.0
 - <a href="https://github.com/spencer2585/APESO/releases/download/0.3.0_PR7/eso.apworld">https://github.com/spencer2585/APESO/releases/download/0.3.0_PR7/eso.apworld</a>
+
+#### v0.3.0
+- <a href="https://github.com/spencer2585/APESO/releases/download/0.3.0_PR1/eso.apworld">https://github.com/spencer2585/APESO/releases/download/0.3.0_PR1/eso.apworld</a>
 

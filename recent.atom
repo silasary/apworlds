@@ -2,49 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-21T12:28:33.404807+00:00</updated>
+  <updated>2026-04-21T18:27:39.506546+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CrusherRL/AP_Parkitect_World/releases/tag/1.3.3</id>
-    <title>Parkitect v1.3.3</title>
-    <updated>2026-04-14T16:17:34+00:00</updated>
-    <author>
-      <name>CrusherRL</name>
-    </author>
-    <content>Well as usual you find all information at the [mod](https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.3)!&#13;
-&#13;
-# Parkitect Archipelago — Release Notes&#13;
-## Fix&#13;
-- Moved "Fish in a Barrel" Option to its appropriated spot (Mod Items)&#13;
-- All Mods are now excluded per default but marked as recommended&#13;
-- Updated Goal options to be more achieveable</content>
-    <link href="https://github.com/CrusherRL/AP_Parkitect_World/releases/tag/1.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Gameplushy/manual_Meteos_Konoko/releases/tag/v1.2</id>
-    <title>Manual_Meteos_Konoko v1.2</title>
-    <updated>2026-04-14T19:30:08+00:00</updated>
-    <author>
-      <name>Gameplushy</name>
-    </author>
-    <content>Just updated the apworld</content>
-    <link href="https://github.com/Gameplushy/manual_Meteos_Konoko/releases/tag/v1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.0.2</id>
-    <title>Refunct v1.0.2</title>
-    <updated>2026-04-14T19:55:32+00:00</updated>
-    <author>
-      <name>Spineraks</name>
-    </author>
-    <content>Two small fixes, no need to update your yaml.&#13;
-- Fixed apworld, it no longer crashes with Climb Minigame + nerf minigames.&#13;
-- Changed the mod for windows, it might crash less on startup?</content>
-    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/kodbyte/Archipelago-Keen/releases/tag/v.0.0.4</id>
     <title>Commander Keen v0.0.4</title>
@@ -686,6 +648,40 @@ Go to the server console (locally or via the Archipelago room page) and run:  &#
 `/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
 </content>
     <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR1</id>
+    <title>Elder Scrolls Online v0.3.0</title>
+    <updated>2026-04-17T19:07:37+00:00</updated>
+    <author>
+      <name>Spencer2585</name>
+    </author>
+    <content>As this is a prerelease, **there may be several bugs that could take from the experience or result in the creation of an unbeatable seed**, This release should only be used for those who want to test out the new features or want to help find bugs ~~or those who dont care and just want to play anyways~~&#13;
+&#13;
+Honestly, I think I found most of the bugs. Any remaining unknown bugs are likely located in the client or mod, which means that a hotfix should be able to fix them without the need to generate a new game. That being said, I cannot guarantee this is the case, so don't say I didn't warn you.&#13;
+&#13;
+## Whats New&#13;
+- Completely redone Mod and APWorld code&#13;
+- Added Delve access items and completion locations&#13;
+- New Goal: Dungeon Delver, complete every delve included in your seed&#13;
+- changed the wayshrine checks to activate when interacting with the wayshrine, not just first discovery. This is for those who want to use an existing character for the AP run&#13;
+- Added new system to prevent players from interacting with interactables that lead to locked zones&#13;
+- Added new system to block traveling to other zones via dialogue with an NPC&#13;
+- Added new system to limit how much gold the player can have on them&#13;
+- New Options&#13;
+  - Delves_per_region: How many delves to include from each zone, goes up to 18, set to 0 to disable zone locations and locking&#13;
+  - Enable Main Quests: to enable and disable locations for the main quest, must be enabled for the main quest goal or if coldharbour is your goal for zone quest goal&#13;
+  - enable Wayshine checks: to enable and disable checks for interacting with wayshrines&#13;
+  - base gold cap: what you want the gold cap to be without any wallet increase items, set to 0 to enable gold limiting&#13;
+- More that I can't remember off the top of my head&#13;
+&#13;
+## Known Bugs:&#13;
+- Leaving the client on for an extended period of time can result in the client wiping all items sent to the mod, meaning the game may tell you that you don't have something you should have. If this occurs, you should just be able to close and reopen the client, and upon reconnection, it should fix all items sent to the game. Ill be looking into what causes this but its likely a 0.4.0+ issue to fix for when I rewrite the client like I did with the apworld and mod in this one&#13;
+- Setting your goal region to random can cause it to pick a region inaccessible with a low zone count, causing generation errors. This error occurs at the beginning of generation, so you should know if there's a problem pretty quick. You can avoid this by manually choosing a goal zone or trying to regen so it picks a different zone until you get it to work. Note that the lower you set the zone count, the more likely this is to occur. I will be looking into fixing this before 0.3.0 proper.&#13;
+- Controller can break on reloads, Ill be looking into this fairly soon. Can be worked around by reloadUI until controller works&#13;
+&#13;
+</content>
+    <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR1"/>
   </entry>
   <entry>
     <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.0</id>
@@ -1386,5 +1382,46 @@ POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
 &#13;
 **Full Changelog**: https://github.com/jamesbrq/ArchipelagoTTYD/compare/v0.9.0...v0.9.1</content>
     <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.9.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Uroogla/S2AP/releases/tag/linux-rc</id>
+    <title>Spyro 2 v2.0.0</title>
+    <updated>2026-04-21T15:40:42+00:00</updated>
+    <author>
+      <name>Uroogla</name>
+    </author>
+    <content>This is the alpha version of a Bizhawk client, intended to work on both Windows and Linux.&#13;
+&#13;
+This is not a fully complete implementation, and the following issues are known:&#13;
+- The following options are not yet implemented and so do not yet work:&#13;
+  - Winter Tundra Warp Options&#13;
+  - Death Link (soon, I promise)&#13;
+  - Progressive Sparx Health Upgrades&#13;
+  - Destructive Spyro filler&#13;
+  - Invisible Spyro filler&#13;
+- Client commands are not yet implemented&#13;
+- When connecting to a seed in progress, you will receive all filler/trap items again, from the seed's start.&#13;
+- In the Duckstation client, items that heal or hurt Sparx work with a delay, to ensure that life bottles don't overwrite the effect. The effects are currently instant for Bizhawk.&#13;
+- In the Duckstation client during closed world mode, Elora tells you how many talismans you have.  This is not yet implemented.&#13;
+- If you save or auto-save in Winter Tundra, exit to the main menu, and try to load a save, the game will crash.  This is *not* savefile corruption, and a hard reset before trying to load the save should work instead.&#13;
+- There's incorrect logic on the 5 swim gems in Autumn Plains.&#13;
+&#13;
+Setup Notes:&#13;
+- This has been tested on Bizhawk 2.9.1.  It was based off of the Ape Escape client, so https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_en.md is likely accurate.&#13;
+- Connect with the generic bizhawk lua connector and the bizhawk client.&#13;
+- While there shouldn't be any game breaking effects from connecting early, it is preferred that you do so after the "Insomniac" sign appears in the main menu.&#13;
+&#13;
+Please report any issues you run across!</content>
+    <link href="https://github.com/Uroogla/S2AP/releases/tag/linux-rc"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.7</id>
+    <title>Bloons TD6 v0.5.7</title>
+    <updated>2026-04-21T16:29:49+00:00</updated>
+    <author>
+      <name>Matt41321</name>
+    </author>
+    <content>- Fixed trap weights not working in options creator</content>
+    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.7"/>
   </entry>
 </feed>
