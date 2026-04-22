@@ -182,6 +182,21 @@
       "title": "v0.4.0-alpha",
       "version_simple": "0.4.0",
       "world_version": "0.4.0a0"
+    },
+    "v0.4.1-alpha": {
+      "created_at": "2026-04-22T02:56:47Z",
+      "description": "> [!WARNING]\r\n> Both Slay the Spire II and this Archipelago Mod are in active development. As such, while this _is_ playable, expect there to be bugs and limited features. We appreciate your playtesting!\r\n\r\n# Changelist\r\n\r\n* Updated how Notifications are handled in the Client\r\n* The in-game terminal can now send Archipelago commands\r\n* The in-game terminal has AP messages now\r\n* UI now has Archipelago Progress information\r\n* Various bug fixes, including a fix for the issue where the game would not release upon achieving the goal\r\n\r\n# Mod Information\r\n\r\n## Pre-Requisites\r\n\r\n- **Your Slay the Spire II client must be running on Windows**. The debug terminal we use uses Win32 APIs.\r\n  - This will not be a requirement long-term, but for early Alpha development it's necessary.\r\n- **Your host MUST use Archipelago Client v0.6.7+**.\r\n- This version of the mod is intended to be used for **v0.103.2** of Slay the Spire II\r\n  - **You must be on the \"Default Public Version\" of the game, _NOT_ the public beta branch**\r\n  - If your installation of Slay the Spire II is higher or lower than this, the mod _may_ not work.\r\n  - We will do our best to keep up with game updates as they release, so please be patient.\r\n\r\n## Installing the Mod\r\n\r\n1. Download the \"sts2-client.zip\" from the [Releases](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/latest) section of the Repo\r\n2. Go to your Slay the Spire II directory (In Steam, click \"Browse Local Files\")\r\n3. If a folder called `mods` does not exist, create it\r\n4. Unzip the **contents** of `sts2-client.zip` into `mods`\r\n\r\n- If you've done this step correctly, your directory structure should look like this: `/<slay-the-spire-2-local-files>/mods/Archipelago/` and the contents of that folder should be a bunch of `.dll` files and a `.pck` file (there may be more files too, please don't touch anything in this folder)\r\n\r\n5. Start the game\r\n\r\n### Additional Steps for **Hosts**\r\n\r\n6. Download `spire2.apworld`\r\n7. Open your Archipelago Launcher\r\n8. Click \"Install APWorld\"\r\n9. Select `spire2.apworld` in the file dialog that pops up\r\n10. **Restart the Archipelago Launcher**\r\n11. Now you should be able to properly host/generate an Archipelago Session with StS 2\r\n  - If you want to use `archipelago.gg` to host the game, generate it locally first following the steps above, then upload the `.zip` file from the `output` folder in your Archipelago installation\r\n\r\n> [!IMPORTANT]\r\n> You need to use Archipelago Version 0.6.7+ and CANNOT use earlier versions of Archipelago with this mod!\r\n\r\n## Known Issues/Limitations\r\n\r\n- If you receive a Character Unlock while you're on the Character Select screen, they won't unlock until you revisit that screen after doing a run (likely an edge case for most)\r\n\r\n## Common Q&A\r\n\r\n### Will this mess with my unmodded Save File?\r\n\r\nNo.\r\n\r\n### I installed the AP World but it's not working\r\n\r\nIs your Archipelago Launcher v0.6.7 or later? If not it **won't work**.\r\n\r\n### (Your-Feature-Here) looks really ugly or isn't polished\r\n\r\nWe probably know and are going to work on it, but if it's egregious or an edge case, please reach out and let us know more about it so we can look into it!",
+      "download_url": "https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/v0.4.1-alpha/spire2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1ad55c03c287869933776bf359aa07e1b0197cf5cc81a35500a664ed68221e4f",
+      "html_url": "https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/v0.4.1-alpha",
+      "minimum_ap_version": "0.6.7",
+      "size": 19554,
+      "source_url": "https://api.github.com/repos/dlueben1/Slay-the-Spire-2-Archipelago",
+      "tag": "v0.4.1-alpha",
+      "title": "v0.4.1-alpha",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1a0"
     }
   }
 }

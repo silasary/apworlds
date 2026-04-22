@@ -6,7 +6,7 @@ of Team Magma and Team Aqua, challenge gyms, and become the Pokémon champion!
 
 
 ## Downloads
-- <a href="https://github.com/Zunawe/Archipelago/releases/download/emerald/2.5.1/pokemon_emerald.apworld">Latest Version (2.5.1)</a>
+- <a href="https://github.com/Zunawe/Archipelago/releases/download/emerald/2.6.0/pokemon_emerald.apworld">Latest Version (2.6.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

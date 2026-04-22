@@ -1,9 +1,12 @@
 # Slime Rancher
 
 ## Latest
-- <a href="https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.2.3/slime_rancher.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.3.0/slime_rancher.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.3.0/slime_rancher.apworld">https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.3.0/slime_rancher.apworld</a>
 
 #### v0.2.3
 - <a href="https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.2.3/slime_rancher.apworld">https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.2.3/slime_rancher.apworld</a>

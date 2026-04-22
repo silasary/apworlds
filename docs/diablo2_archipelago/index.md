@@ -1,6 +1,8 @@
-# 
+# Diablo II Archipelago
 
-
+Diablo II Archipelago randomizes skill unlocks across the quest system.
+Complete quests to receive skills from any of the 7 character classes.
+Defeat the act boss specified by your Goal Scope option to achieve victory.
 
 
 ## Downloads

@@ -1,4 +1,4 @@
-# 
+# Diablo II Archipelago
 
 ## Latest
 - <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Beta-1.7.1/diablo2_archipelago.apworld">Latest Version (1.7.1)</a>

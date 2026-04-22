@@ -2,319 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-22T00:21:59.806694+00:00</updated>
+  <updated>2026-04-22T06:43:54.827982+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/nicopop/ManualApworlds/releases/tag/OW7.0.0</id>
-    <title>Manual_OuterWilds_Nicopopxd v7.0.0</title>
-    <updated>2026-04-15T01:30:37+00:00</updated>
-    <author>
-      <name>nicopop</name>
-    </author>
-    <content>## What's Changed&#13;
-&#13;
-All the changes were done in PR #2 and documentation changes do in #6 &#13;
-&#13;
-But you can find a more detailed changelog below&#13;
-&#13;
-### Options changes:&#13;
-&#13;
-- Every options now track if they are randomized or not that mean a full `random`/`randomized` yaml is possible and should always work&#13;
-  - it does mean that on the webhost you have both random and randomized option but that was the Price to pay to have it work on the Option Creator&#13;
-- Some Advanced options were added that let you completly remove most items/location from generation but they can make generation fail so they are hidden into the weighted option page&#13;
-&#13;
-### Client changes&#13;
-&#13;
-To include support for multiple feature in open PRs on the main Manual repo, I decided to temporarily force my version of the client in the launcher.&#13;
-In the launcher you'll be able to search for `Manual Client Nico's Experiment` to find it&#13;
-its compatible with everything the normal client supports and even more feature that will probably get merged sooner or later&#13;
-Here's a short list of things added that have not yet been merged (if checked mean merged)&#13;
-&#13;
-- [ ] Item and location alias to protect against spoiler and to help remind you if you chose to require Solanum and/or the Prisoner&#13;
-- [x] The possibility to scout some locations directly in the client&#13;
-- [ ] Unused in this apworld is the code to support UT Glitched logic&#13;
-&#13;
-### Logic changes&#13;
-&#13;
-- Almost every location were renamed to be spoiler free&#13;
-  - Those that weren't, were already safe&#13;
-- Some of the items were also renamed to be safe&#13;
-- Some DLC items were fused together to simplify logic a bit&#13;
-  - "DreamWorld Fake Fireplace", "DreamWorld Fake Wall" -&gt;"Ghost Wall Patch"&#13;
-  - "DreamWorld Grabbing Hands", "DreamWorld Hidden Hand" -&gt; "Totem Hands Patch"&#13;
-- In the past there were copies of location that would give you an item called something like "visited X", they were all replaced with events&#13;
-- Technical: This apworld now uses the lastest Manual source as of this release which include conversion to use Rule builder which  let you whats just below this list:&#13;
-&#13;
-**In doubt of a location's requirement, you can do /explain [Location] in the client and it will tell you what you need for said location**&#13;
-&#13;
-Please report any bugs/issues either on [Github](https://github.com/nicopop/ManualApworlds/issues) or on Discord&#13;
-&#13;
-**Full Changelog**: https://github.com/nicopop/ManualApworlds/compare/6.5.1...OW7.0.0</content>
-    <link href="https://github.com/nicopop/ManualApworlds/releases/tag/OW7.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.4.2</id>
-    <title>Black Ops 3 - Zombies v0.4.2</title>
-    <updated>2026-04-15T11:14:18+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>**It is heavily recommend you use t7patch**&#13;
-&#13;
-- **(New)** PhD Flopper&#13;
-  - Added to Wunderfizz&#13;
-  - (Moon) Widow's Wine has been moved to Tunnel 6&#13;
-  - Not available on Shadows of Evil&#13;
-  - Explosive weapons are considered stronger in logic if PhD Flopper is also unlocked (Raygun, XM-53 etc)&#13;
-- **(New)** Moon Support:&#13;
-  - Save System:&#13;
-    - The usual (doors, power, rounds, loadouts)&#13;
-    - Easter Egg steps up until picking up the charged Vril Generator to start the final MPD soul fill sequence&#13;
-      - Vril Sphere reaching the MPD will only save if the buttons in the lab are done&#13;
-    - Each of the 3 Space Dog toys shot with the wave gun&#13;
-    - Breaches are **not** saved and restored, however the Vril Sphere being spawned by tunnel 6 breach is&#13;
-  - Patch broken official script for No Man's Land to switch to Supersprinters after 2 minutes&#13;
-  - RNG Adjustment - Digger RNG (default on) - Makes the digger for tunnel 6 activate soon after round 16&#13;
-  - RNG Adjustment - Mystery Box RNG (default on) - Uses Revelations style custom weights to increase odds of required weapons appearing&#13;
-    - After the box moves, starts counting box spins&#13;
-    - 8 spins without doubles the odds&#13;
-    - 16 spins without triple the odds&#13;
-  - Checks:&#13;
-    - Turn on the Power&#13;
-    - Main Easter Egg (11 checks)&#13;
-    - Skill check - Land safely on a cushion&#13;
-    - Hacker (4 checks) - Excavator, Window, Mystery Box and Pack-A-Punch &#13;
-    - Space Dog Easter Egg (5 checks)&#13;
-    - 4 Music Easter Eggs&#13;
-- Round checks and round saves are now done during 'between round over'. This should fix issues with the wrong round number being used on some maps.&#13;
-- If max round with check has to be increased for gen to succeed, goal round will no longer be increased with it&#13;
-- New Checks:&#13;
-  - `Turn on the Power` for The Giant and Gorod Krovi&#13;
-  - `Masamune - Build the Wonder Weapon` for Zetsubou No Shima&#13;
-- Disabled partial Void Bow restoration on Der Eisendrache temporarily</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.0</id>
-    <title>Ratchet &amp; Clank 3 v0.5.0</title>
-    <updated>2026-04-15T16:48:40+00:00</updated>
-    <author>
-      <name>AmondoVagyok</name>
-    </author>
-    <author>
-      <name>Myth197</name>
-    </author>
-    <author>
-      <name>Taoshi</name>
-    </author>
-    <author>
-      <name>Yuxia228</name>
-    </author>
-    <author>
-      <name>1theory</name>
-    </author>
-    <content>## RaC3 APWorld v0.5.0&#13;
-&#13;
-**Branch:** main  &#13;
-**Date:** 2026-04-15 17:16 UTC&#13;
-&#13;
-&lt;details&gt;&#13;
-&lt;summary&gt;&lt;strong&gt;📜 Summary (833 changes since v0.4.1)&lt;/strong&gt;&lt;/summary&gt;&#13;
-&#13;
-- RAC3: Clarify vendor options to say that disabling them wont make them vanilla apart from ship vendor. (f574e15c)&#13;
-- RAC3: Only attempt to restore vendor item names if they have been modified (85695479)&#13;
-- RAC3: Use a dict for blackscreen original values (e5ea4c12)&#13;
-- RAC3: Fix blackscreen trap on PAL (d4a0cc9a)&#13;
-- RAC3: Add missing mode parameter to linux pine socket (965f7c78)&#13;
-- RAC3: Update pine library to latest pypine (83c3b09d)&#13;
-- RAC3: Adjust early nanotech logic to closer match vanilla (407da211)&#13;
-- RAC3: Fix ship vendor saying "(null)" when no items are available (3dfde35a)&#13;
-- RAC3: Apply same fix to overwrite vendor item names (792e5425)&#13;
-- RAC3: Fix potential KeyError in restore vendor item names (143c30f8)&#13;
-- RAC3: Move nanotech and ngplus region connections from menu to phoenix (1a09e76e)&#13;
-- RAC: Run Ruff on more files (b50029de)&#13;
-- RAC3: Rework Scout Vendors to OptionCounter, add Ship Vendor hints (4f85d17b)&#13;
-- RAC3: Remove vid comics from the item pool if disabled (117ddf8d)&#13;
-- RAC3: Address pda vendor bolt difference edge case (01be92f4)&#13;
-- RAC3: Clarify skin vendor and its effect on rando cosmetics (6c541522)&#13;
-- RAC3: Fix PDA vendor stealing your bolts and not granting you the check in some instances (130c09f7)&#13;
-- RAC3: Run Ruff Formatter (d9e405c9)&#13;
-- RAC3: Use Enum constant instead of hardcoded magic number (9edec31f)&#13;
-- RAC3: Only attempt to add vendor locations to code cave if their associated yaml options are enabled (cde910c0)&#13;
-- RAC3: Add TODO about vendor scouting (c57783e1)&#13;
-- RAC3: Add Scout Vendors yaml option (0072615c)&#13;
-- RAC3: Typo fix in FAQ (5b1d9f21)&#13;
-- RAC3: Add extra safeguards to version checking (3f682313)&#13;
-- RAC3: Minor cleanup of self.vehicle conditions (cae23c13)&#13;
-- RAC3: Make 1 Hit KO trap also set vehicle health to 1 (fa210465)&#13;
-- RAC3: Add armor vendor to suggested yaml option changes if not enough locations (2260eaf9)&#13;
-- RAC3: Fix item name restoration on PAL (ae51ac52)&#13;
-- RAC3: Fix wrong offsets on Armor strings (368edb37)&#13;
-- RAC3: Fix wrong offsets on some megacorp weapons (79cf7bd4)&#13;
-- RAC3: Fix KeyError when opening the vendor (49756729)&#13;
-- RAC3: Show AP item name directly in the weapon and armor vendors (76283513)&#13;
-- Write weapon vendor and armor vendor locations to code cave too (dab82088)&#13;
-- RAC3: For real this time (7acc800e)&#13;
-- RAC3: Fix all the issues with who receives what and when in the hint notifications (6b9a0688)&#13;
-- RAC3: Fix other player's name not showing up in game (bc6337bc)&#13;
-- RAC3: Fix unknown item for hint for other players (e6916f88)&#13;
-- RAC3: Fix newline typo in hint notification (3d8e00ad)&#13;
-- RAC3: Specify other player's name if not self hint (28928463)&#13;
-- RAC3: Change other player's name color to green instead of white in the hint notifications (fe16e17c)&#13;
-- RAC3: Display hints in game (7a574ab5)&#13;
-- RAC3: Fix Blackscreen Trap not working in the sewers (c527e703)&#13;
-- RAC3: Use the DeathLink class from Archipelago rather than our own (50fc2f1f)&#13;
-- RAC3: Fix No Ammo Trap not clearing N60 storm ammo (b954a310)&#13;
-- RAC3: Fix N60 getting 406 ammo on reconnect (9f3f6378)&#13;
-- RAC3: Fix Blackscreen Trap and readd it (a3c507d7)&#13;
-- RAC3: Auto Equip lightsaber wrench when received (0ed0f1c9)&#13;
-- RAC3: Refactor how patches are handled (11ffeda1)&#13;
-- RAC3: Fix Hypershot getting removed from quick select when travelling to the phoenix (8998a0bb)&#13;
-- RAC3: Make the lightsaber wrench replacement an AP item (b47bc0fa)&#13;
-- RAC3: Make numbers slightly wider (90dd00b5)&#13;
-- RAC3: Update Documentation (c65078cd)&#13;
-- RAC3: rework text width calculation for messagebox (235ab71f)&#13;
-- RAC3: Change default version number and display dev build warning if "dev" is in the version number (1061c2d7)&#13;
-- RAC3: Add RY3NO to Phoenix vendor on UT map (c684a6d7)&#13;
-- RAC3: Add ship vendor locations to UT map (db4f25d3)&#13;
-- RAC3: Buff player exp filler slightly (cd59251a)&#13;
-- RAC3: Use game interface's vendortype in handle_vendors (6a043fe0)&#13;
-- RAC3: return None if vendortype cannot be resolved in vendor_check (609ce2cb)&#13;
-- RAC3: Check if vendors are enabled before trying to hint any locations (132a87c2)&#13;
-- RAC3: Make PAL version warning say that PAL support is in beta (344d4f8d)&#13;
-- RAC3: Update FAQ to say that PAL is mostly supported now (705c1bbd)&#13;
-- RAC3: Update FAQ and Setup guide with version differences (5c6a871a)&#13;
-- RAC3: PAL Support: Make PDA Vendor work on PAL (6e34740c)&#13;
-- RAC3: Experimental PAL support (7d4acd92)&#13;
-- RAC3: Add more info to rac3_info (9ba8b193)&#13;
-- RAC3: Make one hp challenge toggle message more user friendly (d6eca342)&#13;
-- RAC3: Development build warning grammar fixes (e05d4071)&#13;
-- RAC3: Tell the user to launch RaC3 rather than checking PINE if emulator is connected but game not connected (e3e41d88)&#13;
-- RAC3: Normailze notification time if overwritten with less than 1.5 seconds remaining (b84209c5)&#13;
-- RAC3: Pause notifications when paused + remove reduntant gadget removal function (9e179e09)&#13;
-- RAC3: minor cleanup in notification cycler (638c0b06)&#13;
-- RAC3: Only remove gadgets during cutscenes if you havent checked their associated location (4d620424)&#13;
-- RAC3: Dont try to display notifications when paused (e44a3d03)&#13;
-- RAC3: Use self.vendortype in vendor update instead of reading it again (8572081b)&#13;
-- RAC3: Remove unnecessary whitespace(s) (d3b2bf86)&#13;
-- RAC3: Fix weapon level up item leveling up the temporarily deleveled weapons (5a69f198)&#13;
-- RAC3: Fix nano-pak flickering among other things (0f4717ad)&#13;
-- RAC3: Fix gadgets disappearing after a cutscene (8a853d12)&#13;
-- RAC3: Add the remaining 101st sewer crystal (b25377a9)&#13;
-- RAC3: Fix Hit the motherload location getting skipped when it shouldn't (c40d9892)&#13;
-- RAC3: Fix not being able to buy weaker armor and add memory cards back into the vendor (6ed64f6e)&#13;
-- RAC3: Replace unsupported characters in notifications with a question mark (412a02b3)&#13;
-- RAC3: Add skin vendor reading support (ceb6722b)&#13;
-- RAC3: Only reset notification time if the notifications expired (c131df1f)&#13;
-- RAC3: Cap the bolt filler at 200k (9f46cecc)&#13;
-- RAC3: Fix armor vendor yaml option description (2915eb3d)&#13;
-- RAC3: Rework the bolt filler (378c2534)&#13;
-- RAC3: Add Armor Vendor Locations (8ba03ba0)&#13;
-- RAC3: Make progress on removing dead planets (aec019aa)&#13;
-- RAC3: minor optimization (36c6d09c)&#13;
-- RAC3: Add a dead seed checker to generation (cb09fccf)&#13;
-- RAC3: Make excluded count only matter if solo seed (dd2651a7)&#13;
-- RAC3: Subtract excluded count from location count (c2933a10)&#13;
-- RAC3: Reset code cave on reconnect (02893d34)&#13;
-- RAC3: Adjust ship vendor item costs (b0176119)&#13;
-- RAC3: Make /force_update trigger a reset of the code cave (92701eaf)&#13;
-- RAC3: Make code cave setup more reliable (82226d8e)&#13;
-- RAC3: Account for infobot: veldin counting in the list of unlocked planets (97905374)&#13;
-- RAC3: Make the ship vendor option description up to date (8e7d311e)&#13;
-- RAC3: Put AP item names into the ship vendor (f3d40cb2)&#13;
-- RAC3: Add ship vendor locations (f6243ae5)&#13;
-- RAC3: Fix v2-v5 weapons showing up in the vendor (7af95d2c)&#13;
-- RAC3: Fix progressive weapons causing v2-v5 showing up in the vendor (ebadd3f2)&#13;
-- RAC3: Hint vendor items when the weapon vendor opens (dc321488)&#13;
-- RAC3: Make the holo shield glove available in the vendor after momma tyhrranoid has been defeated rather than immediately (819792dc)&#13;
-- RAC3: Aquatos vendor location name changes (a877586a)&#13;
-- RAC3: Vendor checks naming rework (88be8180)&#13;
-- RAC3: Seperate Gadgetron and Megacorp weapons (e15eb56a)&#13;
-- RAC3: Fix max ammo not working for weapons both in your inventory and the vendor (fd1c11d2)&#13;
-- RAC3: Exclude the PDA from vendor update (f180a2d4)&#13;
-- RAC3: Allow updates on empty vendors (620df1e8)&#13;
-- RAC3: Make it pretty again (ce72efbd)&#13;
-- RAC3: Fix runtime errors and make it work again (d172fd05)&#13;
-- RAC3: Refactor: Vendor Handler (a76f665e)&#13;
-- RAC3: Cleanup Vendor implementation (bc8ea236)&#13;
-- RAC3: Make RY3N0 available from the start, but keep the logic requirement (ab300d61)&#13;
-- RAC3: Fix RY3N0 unlocked earlier than it was supposed to (21a0fab1)&#13;
-- RAC3: Add logic to the RY3N0 vendor location (689ccfe0)&#13;
-- RAC3: Fix slim cognito (aa672cfb)&#13;
-- RAC3: Minor cleanup (904d656a)&#13;
-- RAC3: Fix cursor landing out of bounds when buying the item in the way (2f76fdd6)&#13;
-- RAC3: Add RY3NO as a vendor location check (683d9f9a)&#13;
-- RAC3: Move visited planets and weapon vendor items to early update and reuse references (93f9cdb7)&#13;
-- RAC3: Only remove weapons in the vendor from inventory (9222bd6d)&#13;
-- RAC3: Dont cycle vendors if weapon vendors are off in the yaml (5f64b5b6)&#13;
-- RAC3: Make working weapon vendors (d750eeeb)&#13;
-- RAC3: Split bigger vendor functions into multiple functions (a7267c69)&#13;
-- RAC3: Basic Vendor cycling (3b5d7098)&#13;
-- RAC3: Add functionality to add items to the vendor (e2c7d92e)&#13;
-- RAC3: Propose Vendor Class Structure (9296c14f)&#13;
-- RAC3: Make Vendor Classes (75aa7e5f)&#13;
-- RAC3: Add a tiny bit about how to continue a previous session (ffe48a87)&#13;
-- RAC3: Stop recommending Archipelago version 0.5.0 as the minimum (74b48c04)&#13;
-- RAC3: Address feedback in setup guide (6f3545e6)&#13;
-- RAC3: Fix minor grammatical inconsistencies (daa02af9)&#13;
-- RAC3: Add section about hosting a MultiWorld (d8b4e042)&#13;
-- RAC3: Address setup doc feedback (b3596073)&#13;
-- RAC3: Docs: Clarify how to connect to the MultiServer (7f07906f)\n- ...and 633 more commits.&#13;
-&#13;
-&lt;/details&gt;&#13;
-&#13;
-**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.4.1...v0.5.0&#13;
-&#13;
-### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)&#13;
-&#13;
-### Notes&#13;
-This release was automatically generated from the **main** branch.  &#13;
-Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
-&#13;
-### If a location is broken and does not get sent out&#13;
-Go to the server console (locally or via the Archipelago room page) and run:  &#13;
-`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
-</content>
-    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JammyGeeza/Stacklands-Randomizer/releases/tag/v0.2.5</id>
-    <title>Stacklands v0.2.5</title>
-    <updated>2026-04-15T17:51:49+00:00</updated>
-    <author>
-      <name>chandler05</name>
-    </author>
-    <author>
-      <name>JammyGeeza</name>
-    </author>
-    <content># Information&#13;
-This mod is still in development, so it is possible that it may contain bugs or issues - please familiarise yourself with the [known issues list](https://github.com/JammyGeeza/Stacklands-Randomizer/issues?q=is%3Aissue%20state%3Aopen) before using this mod to see how your experience may be affected.&#13;
-&#13;
-If you experience a bug/issue that is _not_ in the list, please raise a new github issue or post it in the [Stacklands Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1151149079238299719)&#13;
-&#13;
-**PLEASE NOTE:** This version _**is not compatible**_ with worlds generated using APWorld v0.2.4 or earlier.&#13;
-&#13;
-## How to Install / Use the Mod&#13;
-All instructions for how to install and use the mod are in the [README.md](https://github.com/JammyGeeza/Stacklands-Randomizer?tab=readme-ov-file#how-to-install-the-mod-to-stacklands)&#13;
-&#13;
-# Patch Notes&#13;
-## APWorld&#13;
-- Fixed #94 causing goal bosses to be selected incorrectly for `all_bosses` when multiple boards selected.&#13;
-- Fixed a recently discovered issue causing worlds with more than one Stacklands player to accidentally share boss selection and filler/trap weightings.&#13;
-&#13;
-## Mod Client&#13;
-- Replaced `"Complete X quests to unlock"` text when hovering over locked booster packs and will now display which AP item is required.&#13;
-- Added a `Research at University` check _(give 50 gold to University structure)_&#13;
-- Updated game save naming to allow playing multiple slots in a single multiworld.&#13;
-- Re-worked quest/location syncing in an attempt to further fix #93 causing checks to only send on restart.&#13;
-- Fixed #96 causing `University` to behave as per vanilla&#13;
-- Updated `Archipelago.MultiClient.Net` version to `6.7.1`&#13;
-- `archipelago.json` file provided to meet future `v0.7.0` manifest requirements.</content>
-    <link href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/tag/v0.2.5"/>
-  </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.4.4.1</id>
     <title>Dark Cloud 1 v0.4.4.1</title>
@@ -1433,5 +1125,103 @@ Development on the Itch.io version of Casualties: Unknown has stopped. To play t
 &#13;
 **Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.9.0...v0.9.1</content>
     <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.9.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/stubobis1/Archipelago/releases/tag/1.3.4</id>
+    <title>Path of Exile v1.3.4</title>
+    <updated>2026-04-22T02:15:31+00:00</updated>
+    <author>
+      <name>StuBob</name>
+    </author>
+    <content>## Major bugfix&#13;
+&#13;
+There was an issue where the response page for oauth was not rendering when zipping up into a `.apworld` "It worked on my machine!&#13;
+&#13;
+**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/1.3.3...1.3.4</content>
+    <link href="https://github.com/stubobis1/Archipelago/releases/tag/1.3.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.4</id>
+    <title>Donkey Kong 64 v1.5.4</title>
+    <updated>2026-04-22T02:30:42+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 1.5.4
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/APxiv/releases/tag/0.27.3</id>
+    <title>Final Fantasy XIV v0.27.3</title>
+    <updated>2026-04-22T02:44:49+00:00</updated>
+    <author>
+      <name>silasary</name>
+    </author>
+    <content>* Fixed bug with Shadowbringers Alliance Raids.
+* Fixed rare generation bug when genning on source.</content>
+    <link href="https://github.com/silasary/APxiv/releases/tag/0.27.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SWCreeperKing/Slimipelago/releases/tag/v0.3.0</id>
+    <title>Slime Rancher v0.3.0</title>
+    <updated>2026-04-22T04:47:12+00:00</updated>
+    <author>
+      <name>SW_CreeperKing</name>
+    </author>
+    <content>- [ApWorld] Reworked the entirety of the logic (thank sterlia for logic 2.0)&#13;
+- [ApWorld] Added Yaml option `plortsanity`&#13;
+  - Selling a plort for the first time will send a check&#13;
+- [ApWorld] Added Yaml option `include_ogden`&#13;
+  - Include Ogden's Retreat&#13;
+- [ApWorld] Added Yaml option `include_mochi`&#13;
+  - Include Mochi's Manor&#13;
+- [ApWorld] Added Yaml option `include_viktor`&#13;
+  - Include Viktor's Workshop&#13;
+- [ApWorld] Added Yaml option `postgame`&#13;
+  - Include Post-Credit Locations, i.e. Item Vaults&#13;
+- [ApWorld] Added Yaml option `easy_skips`&#13;
+  - Enable Skips that many new players end up finding on their first playthrough&#13;
+- [ApWorld] Added Yaml option `precise_movement`&#13;
+  - Enable Skips that require tighter movement than average&#13;
+- [ApWorld] Added Yaml option `dangerous_skips`&#13;
+  - Enable Skips that have a high chance of taking damage or getting killed&#13;
+- [ApWorld] Added Yaml option `obscure_locations`&#13;
+  - Enable Skips that abuse the terrain, usually in unintuitive ways&#13;
+- [ApWorld] Added Yaml option `largo_jumps`&#13;
+  - EnableSkips where you jump off a largo midair&#13;
+- [ApWorld] Added Yaml option `jetpack_boosts`&#13;
+  - Enable Skips where you use the ability to get rid of jetpack's startup times through careful jumping, allowing for more energy conservation&#13;
+- [ApWorld] Changed how `treasure_cracker_checks` was checked&#13;
+- [Client] Added 2 missing note locations&#13;
+- [Client] You can no longer deposit quantum plorts for the Glass Desert teleporter if you don't have Glass Desert&#13;
+  - Same goes for the ruins transition door: for honey plorts needing moss blanket, and for rad plorts needing indigo quarry&#13;
+- [Client] Cleaned up jetpack patch&#13;
+- [Client] Purchasing Newbucks will no longer cost Newbucks&#13;
+- [Client] Added a Note Tracker to the UI if you have the Note Goal&#13;
+- [Client] Made DeathLink/TrapLink check another thing to make sure it doesn't send when its not supposed to </content>
+    <link href="https://github.com/SWCreeperKing/Slimipelago/releases/tag/v0.3.0"/>
   </entry>
 </feed>
