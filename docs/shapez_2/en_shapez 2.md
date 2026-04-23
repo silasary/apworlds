@@ -53,11 +53,6 @@ The amounts of milestones and operator level checks in your world can be adjuste
   <br>If you're reading this before the 1.0 update for shapez 2 is released, then you can literally not use the mod, 
       which means that more features are just not possible at the moment. I'm also not planning on adding more features 
       even when version 1.0 releases (except for adding the new upcoming game mode later down the road).
-- ***How can I even play this if there is no mod?***
-  <br>If you play this in a singleplayer multiworld (i.e. there is only one player), then after setting it up, it will 
-      just work (without connecting to a server). If not, then you can play it in a manual-like way where you send 
-      location checks using a client window and receive items by enabling them in the debug console. More details 
-      can be found in the [setup page](setup_en.md).
 - ***Is there a tracker?***
   <br>You can use the Universal Tracker, which is fully compatible with this game. See the 
       `#universal-tracker` channel on the Discord server for more information.

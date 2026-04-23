@@ -1,9 +1,12 @@
 # Voltorb Flip
 
 ## Latest
-- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/voltorb_flip_1.1.0/voltorb_flip.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/voltorb_flip_1.1.1/voltorb_flip.apworld">Latest Version (1.1.1)</a>
 
 ## All Versions
+
+#### v1.1.1
+- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/voltorb_flip_1.1.1/voltorb_flip.apworld">https://github.com/BlastSlimey/Archipelago/releases/download/voltorb_flip_1.1.1/voltorb_flip.apworld</a>
 
 #### v1.1.0
 - <a href="https://github.com/BlastSlimey/Archipelago/releases/download/voltorb_flip_1.1.0/voltorb_flip.apworld">https://github.com/BlastSlimey/Archipelago/releases/download/voltorb_flip_1.1.0/voltorb_flip.apworld</a>

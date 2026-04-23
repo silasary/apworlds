@@ -1,13 +1,26 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 1.0.0
+
+APWorld:
+- Made the apworld compatible with shapez 2 1.0
+- Fixed the first 3 task lines sometimes having a (logically) impossible shape
+Client:
+- First public version
+- Will be updated independently
+
+## Is this version compatible with older multiworld slots?
+Manual-like client yes, back to 0.99.0 (will be deprecated soon though)
+<br>UT will probably be inaccurate for worlds generated prior to 1.0.0
+
 ## 0.99.6
 
 - Fixed generation failures on AP 0.6.7
 
 ## Is this version compatible with older multiworld slots?
 Manual-like client yes, back to 0.99.0
-UT will probably be inaccurate for worlds generated prior to 0.99.5
+<br>UT will probably be inaccurate for worlds generated prior to 0.99.5
 
 ## 0.99.5 (Hexagonal update)
 

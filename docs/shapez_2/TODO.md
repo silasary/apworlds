@@ -1,7 +1,6 @@
 
 ### Important
 
-operator levels don't give some important items???
 
 ### Features
 
@@ -18,6 +17,9 @@ datapackage settings
 shape upgrader as alternative to downgrader, with option to toggle between both algorithms
 secret code option, effect TBD
 item descriptions
+refactor item names (1.0 changes)
+add new 1.0 stuff
+add manufacturer mode
 
 ### Technical stuff
 

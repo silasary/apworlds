@@ -450,6 +450,21 @@
       "version_simple": "69",
       "world_version": "69"
     },
+    "be-70": {
+      "created_at": "2026-04-23T15:20:39Z",
+      "description": "Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.\r\nGood luck out there, Slab!\r\n\r\nsetup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)\r\n\r\n[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)\r\n\r\nnew stuff (since 0.5.2):\r\n* reorder headhunters for progressive order\r\n* new oasis ramp\r\n* option to remove locations: story quests or side quests\r\n* option to remove easily missable locations\r\n* 30% Omnd-Omnd-Ohk spawn rate in hunters grotto and scyllas grove\r\n* get talon of god check to send\r\n* allow selection of multiple goals\r\n* BAR Challenge checks toggleable by type (region-based or general)\r\n* include_locations option\r\n* in-game option to disable loot collision\r\n* assassinate the assassins always repeatable (easier to do Compl33tionist)\r\n* spawn more enemies in windshear waste (easier to do a bunch of combat challenges)",
+      "download_url": "https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-70/borderlands2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "27aa431723aec5570cb5164ff142b752a2083597494ac5494b38225e35c47524",
+      "html_url": "https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-70",
+      "prerelease": true,
+      "size": 55942,
+      "source_url": "https://api.github.com/repos/EdricY/Bouncy-Loot-God",
+      "tag": "be-70",
+      "title": "bleeding edge",
+      "version_simple": "70",
+      "world_version": "70"
+    },
     "v0.0": {
       "created_at": "2025-11-22T21:38:08Z",
       "description": "Please back up your BL2 saves before trying this (Documents/my games/Borderlands 2/WillowGame/SaveData/...)\r\n\r\nthe main thing is item kind and rarity. So the \"Uncommon Pistol\" location is checked off the first time you pick up a green pistol. And when you've received the \"Uncommon Pistol\" item, you can now equip green pistols.\r\n\r\nfor now, W4R-D3N is the victory condition (in theory, untested). Many Unique enemies up to that point drop a pizza, grab it to check off the location.\r\n\r\nmany of your controls start disabled: Jump, Sprint, Melee, Crouch, and Vehicle Fire. Find them in the multiworld. There are a lot of checks available to grab at the beginning, but if you get stuck, I'd recommend cheating in Melee or Common Pistol from the server `/send blsample melee`\r\n\r\nKnown Issues:\r\n- Gaining multiple levels at the same time doesn't work (ex. Digi Peak quest will often jump you from level 1 to 3)\r\n- ability to sprint is actually granted by the \"Crouch\" item\r\n- your action skill is not unlockable until level 5\r\n- save quit and reloading into an area will result in enemies in that area not dropping their pizza (you need to travel to a different area and come back)\r\n- missing textures appear in random places (often blood and elemental particles)\r\n- There are many guns/gear where we're not sure if the mod identifies the rarity/kind correctly. An exhaustive test still needs to be done. \"Unique\" rarity currently can only be associated to Blue and Purple Guns (not grenade mods, etc.)\r\n\r\nWith the goal being W4R-D3N, this world version can be completed in about 2 hours.  \r\nThere is also no region/location check logic. The world generation may expect you to reach your goal in sphere one.\r\nIn these early versions, you should ensure that you are able to cheat items if you get stuck. ",
@@ -573,6 +588,20 @@
       "title": "v0.5.1",
       "version_simple": "0.5.1",
       "world_version": "0.5.1"
+    },
+    "v0.5.2": {
+      "created_at": "2026-04-11T21:57:56Z",
+      "description": "bleeding edge has been sitting on these changes for a while, so let's call it stable...\r\n## new stuff:\r\n* some logic fixes\r\n* remove_locations yaml option\r\n* filler_item_rotation yaml option\r\n* spawn_traps yaml option accepts numbers 1-10\r\n* named enemies in other languages should now mostly work\r\n* gear leveler does skips contraband skyrocket\r\n* progressive travel\r\n* in-game resend buttons\r\n* seraph crystals drop from Earl's shop",
+      "download_url": "https://github.com/EdricY/Bouncy-Loot-God/releases/download/v0.5.2/borderlands2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "9f6b4102b46ad9b4700bdc63f5c3188043fe99f6a33d6f8c122173e45062206c",
+      "html_url": "https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.2",
+      "size": 54435,
+      "source_url": "https://api.github.com/repos/EdricY/Bouncy-Loot-God",
+      "tag": "v0.5.2",
+      "title": "v0.5.2",
+      "version_simple": "0.5.2",
+      "world_version": "0.5.2"
     }
   }
 }

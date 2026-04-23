@@ -1,9 +1,12 @@
 # Pokepelago
 
 ## Latest
-- <a href="https://github.com/dowlle/PokepelagoClient/releases/download/v0.5.1/pokepelago.apworld">Latest Version (0.5.1)</a>
+- <a href="https://github.com/dowlle/PokepelagoClient/releases/download/v0.6.1/pokepelago.apworld">Latest Version (0.6.1)</a>
 
 ## All Versions
+
+#### v0.6.1
+- <a href="https://github.com/dowlle/PokepelagoClient/releases/download/v0.6.1/pokepelago.apworld">https://github.com/dowlle/PokepelagoClient/releases/download/v0.6.1/pokepelago.apworld</a>
 
 #### v0.5.1
 - <a href="https://github.com/dowlle/PokepelagoClient/releases/download/v0.5.1/pokepelago.apworld">https://github.com/dowlle/PokepelagoClient/releases/download/v0.5.1/pokepelago.apworld</a>
