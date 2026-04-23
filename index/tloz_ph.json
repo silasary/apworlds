@@ -91,6 +91,21 @@
       "version_simple": "0.8.6",
       "world_version": "0.8.6a0"
     },
+    "ph-v0.9.0-alpha": {
+      "created_at": "2026-04-23T10:24:07Z",
+      "description": "\ud83d\udea8Technically compatible with seeds generated in 0.8.3+, but all item models turn into the generic archipelago item model, the blue force gem.\ud83d\udea8\r\n\r\n- [Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)\r\n- [FAQ and Credits](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/faq_and_credits.md)\r\n- [Tricks and Skips](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/tricks_and_skips.md)\r\n\r\n## New Features\r\n- Swapped items from chests, NPC gifts and shops to actual items, with their models and text. \r\n  - Some textboxes don't load in some rooms, and it's not implemented for freestanding items, buried items or salvage.\r\n  - Multiworld items are represented by blue force gems when useful or progressive, and red force gems when filler or traps\r\n  - Shop displays show their vanilla models, but you see the actual item after you buy them.\r\n- Changed Bellumbeck goal to be sent on final hit rather than credits\r\n- Added the following tricks glitched logic, found by Sweet:\r\n  - Goron temple shovel skip\r\n  - ToF 3F out of bounds\r\n  - Gust South NW Chest with BCL and grapple\r\n- Added swordless Goron Temple to hard logic\r\n\r\n## Bugfixes \ud83d\udc1b\r\n- Boss doors no longer require room reloads to open.\r\n- Doors, spikes and flames toggled by crystals no longer repeat their cutscenes on room reload.\r\n  - The big doors in TotOK still play their cutscenes, and the chest spawn on TotOK B8 also triggers repeated cutscenes until opened.\r\n- Prevented map warping while entering TotOK, which crashes\r\n- Fixed a goron chief post dungeon reward flag\r\n- Changed conflicting chests to reads on chest object open states\r\n- Prevented backwards mountain passage with cave rando from being in logic with less than 3 keys\r\n- Added Brant's Chamber Staircase to map tracker for IotD if houses are not randomized\r\n- Set a flag to prevent Jolene spawn when exiting ghost ship, or when in NW quadrant without ghost ship access\r\n- Figured out exactly what flags spawn/respawn multiple Oshus', and made sure exactly 1 always spawns\r\n- Prevented softlock on exiting fire temple without opening the door\r\n- Fixed client crash from faulty entrance data\r\n- Receiving items in rooms that use that item for location detection no longer sends that location for a bunch more locations.\r\n\r\n## Behind the scenes\r\n- Updated to ap v0.6.7\r\n- Updated to most recent shared client\r\n  - Added flag filter for slot data at start\r\n  - Switched to fast/slow processing in game methods\r\n- Added host game to multiworld item object data, allowing Spirit Tracks to model swap them\r\n- Some work has been done with rule builder, but not implemented yet",
+      "download_url": "https://github.com/carrotinator/Archipelago/releases/download/ph-v0.9.0-alpha/tloz_ph.apworld",
+      "has_manifest": true,
+      "hash_sha256": "755174188513f67dd549187b3f23c10ca0a98032a9fa44ce6ec1a85bfc9ef850",
+      "html_url": "https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.0-alpha",
+      "minimum_ap_version": "0.6.0",
+      "size": 2582265,
+      "source_url": "https://api.github.com/repos/carrotinator/Archipelago",
+      "tag": "ph-v0.9.0-alpha",
+      "title": "tloz_ph AP v0.9.0-alpha",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0a0"
+    },
     "tloz_ph-v0.8.2-alpha": {
       "created_at": "2026-01-31T10:54:58Z",
       "description": "\u26a0\ufe0fnot compatible with seeds generated in previous versions\u26a0\ufe0f\r\n\r\n- fixed crash on getting vanilla potion location with full potions\r\n- fixed crash on getting TotOK key from vanilla location\r\n- UT Events now work again\r\n- apparently location groups were not enabled lol\r\n- fixed crash on vanilla Oshus' sword chest\r\n- removed Eddo's door event when not shuffling houses\r\n- removed gust windmills event if not shuffling overworld",
