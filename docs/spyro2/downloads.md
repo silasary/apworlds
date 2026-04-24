@@ -8,6 +8,9 @@
 #### v2.0.0
 - <a href="https://github.com/Uroogla/S2AP/releases/download/linux-rc/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/linux-rc/spyro2.apworld</a>
 
+#### v2.0.0
+- <a href="https://github.com/Uroogla/S2AP/releases/download/2.0.0/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/2.0.0/spyro2.apworld</a>
+
 #### v1.1.3
 - <a href="https://github.com/Uroogla/S2AP/releases/download/1.2.0-rc/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/1.2.0-rc/spyro2.apworld</a>
 
