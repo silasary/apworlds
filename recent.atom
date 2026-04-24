@@ -2,93 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-24T12:26:11.774549+00:00</updated>
+  <updated>2026-04-24T18:21:45.389240+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/cjmang/Archipelago/releases/tag/0.2.3-beta</id>
-    <title>Golden Sun The Lost Age v0.2.3b0</title>
-    <updated>2026-04-18T11:59:59+00:00</updated>
-    <author>
-      <name>Dragion</name>
-    </author>
-    <author>
-      <name>Platano Bailando</name>
-    </author>
-    <author>
-      <name>Karanum</name>
-    </author>
-    <content>Game description is [here](https://github.com/cjmang/Archipelago/blob/gstla/worlds/gstla/docs/en_Golden%20Sun%20The%20Lost%20Age.md).&#13;
-(Don't expect the link to the options page to work.)&#13;
-&#13;
-Game setup guide is [here](https://github.com/cjmang/Archipelago/blob/gstla/worlds/gstla/docs/setup_en.md).&#13;
-&#13;
-To install the AP World, use the Archipelago Launcher's Install APWorld button, or just copy and paste gstla.apworld into your custom_worlds folder.&#13;
-Once the apworld is installed you can find a yaml after running Generate Template Options in the AP Launcher, or by using the Options Creator.&#13;
-&#13;
-In general this AP World implementation relies heavily on the existing randomizer, which you can find here: https://gs2randomiser.com/en/index.html&#13;
-&#13;
-Please reach out in the [GSTLA Post in Future Game Design on the AP discord if you find issues.](https://discord.com/channels/731205301247803413/1055515261270241320).&#13;
-&#13;
-Changes in this release:&#13;
-- Moved sphere scaling from `generate_output` to `stage_finalize_multiworld`.  This does two things: (1) no more race conditions (2) sphere calculations are done once for all GSTLA slots.&#13;
-- Fixed an issue with mimic scaling that didn't properly place items.&#13;
-- Fixed a typo with Taopo&#13;
-&#13;
-Note: Archipelago version 0.6.7+ is required. It will not work on 0.6.6 or earlier versions.</content>
-    <link href="https://github.com/cjmang/Archipelago/releases/tag/0.2.3-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.3.0-beta</id>
-    <title>Dicey Dungeons v0.3.0b0</title>
-    <updated>2026-04-18T16:00:53+00:00</updated>
-    <author>
-      <name>Fylcoast</name>
-    </author>
-    <content>## What's Changed&#13;
-&#13;
-- Thief is now a playable character. When you select the Thief, you will have access to their episodes and equipment, and will need to beat their 6 episodes to win.&#13;
-&#13;
-**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.2.5-beta...v0.3.0-beta&#13;
-&#13;
-PLEASE NOTE: This is the single largest update since v0.1.0-beta, so it is the most likely to have bugs and be unstable. A lot of changes had to be made to support a second character. I do not recommend this version for large syncs.</content>
-    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.3.0-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.5.3</id>
-    <title>Donkey Kong 64 v1.5.3.post2</title>
-    <updated>2026-04-18T16:03:45+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 1.5.3
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.5.3"/>
-  </entry>
   <entry>
     <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.4</id>
     <title>The Legend of Zelda - Spirit Tracks v0.7.4</title>
@@ -1201,5 +1119,99 @@ Bug Fixes&#13;
 &#13;
 For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
     <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.32</id>
+    <title>Muse Dash v1.5.32</title>
+    <updated>2026-04-24T13:25:16+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content># Changes&#13;
+- Fixed updating song select songs during gameplay, if a location was collected out.&#13;
+  - This happened during another person's collect usually. Common in the big async.&#13;
+- Update songs to DASH AND SHOOT. (Ongeki Collab)&#13;
+&#13;
+# Installation&#13;
+## Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+&gt; You can find Muse Dash's folder by finding the game in your steam library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+&#13;
+### Windows&#13;
+1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Select Muse Dash in the list of games.&#13;
+   - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+3. Click install. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+### Linux&#13;
+1. Navigate to Muse Dash on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES="version=n,b" %command%`&#13;
+2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+   - You may need to give it permissions to execute.&#13;
+3. Select Muse Dash in the list of games.&#13;
+    - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+4. Click install. On first run, melonloader may install dotnet 6 in order to run.&#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+    &#13;
+### Mod Install&#13;
+1.Download `ArchipelagoMuseDash.zip`.&#13;
+2. Head to the Muse Dash folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.&#13;
+3. Extract the contents of the .zip file into mods. (As of later versions, it does not matter if it is in a subfolder anymore.)&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.32"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-73</id>
+    <title>Borderlands 2 v73</title>
+    <updated>2026-04-24T15:26:24+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.2):&#13;
+* reorder headhunters for progressive order&#13;
+* new oasis ramp&#13;
+* option to remove locations: story quests or side quests&#13;
+* option to remove easily missable locations&#13;
+* 30% Omnd-Omnd-Ohk spawn rate in hunters grotto and scyllas grove&#13;
+* get talon of god check to send&#13;
+* allow selection of multiple goals&#13;
+* BAR Challenge checks toggleable by type (region-based or general)&#13;
+* include_locations option&#13;
+* in-game option to disable loot collision&#13;
+* assassinate the assassins always repeatable (easier to do Compl33tionist)&#13;
+* spawn more enemies in windshear waste (easier to do a bunch of combat challenges)&#13;
+* gear items/locations renamed: `VeryRare SMG` -&gt; `License: VeryRare SMG` and `VeryRare SMG Found`</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-73"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v1.4.1</id>
+    <title>Lego Star Wars: The Complete Saga v1.4.1</title>
+    <updated>2026-04-24T15:59:16+00:00</updated>
+    <author>
+      <name>Mysteryem</name>
+    </author>
+    <content>This release is fully compatible with seeds generated by v1.4.0.&#13;
+&#13;
+# Fixes&#13;
+&#13;
+When reloading the Cantina to change Qui-Gon/Obi-Wan to unlocked characters, fix being able to pick Qui-Gon/Obi-Wan for both characters.&#13;
+&#13;
+Fix Chapter Requirements Display not working when starting a session for an in-progress multiworld from the existing save file.&#13;
+&#13;
+Fix entering a Chapter door, cancelling, and then re-entering causing "Story" to be selected instead of Free Play.&#13;
+&#13;
+# Changes&#13;
+&#13;
+Small updates to the documentation that were missed in v1.4.0.</content>
+    <link href="https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v1.4.1"/>
   </entry>
 </feed>
