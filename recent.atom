@@ -2,111 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-23T18:29:03.254265+00:00</updated>
+  <updated>2026-04-24T00:27:18.272620+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.1</id>
-    <title>Ratchet &amp; Clank 3 v0.5.1</title>
-    <updated>2026-04-17T16:12:53+00:00</updated>
-    <author>
-      <name>AmondoVagyok</name>
-    </author>
-    <author>
-      <name>Myth197</name>
-    </author>
-    <author>
-      <name>Taoshi</name>
-    </author>
-    <author>
-      <name>Yuxia228</name>
-    </author>
-    <author>
-      <name>1theory</name>
-    </author>
-    <content>## RaC3 APWorld v0.5.1&#13;
-&#13;
-**Branch:** staging  &#13;
-**Date:** 2026-04-17 16:59 UTC&#13;
-&#13;
-&lt;details&gt;&#13;
-&lt;summary&gt;&lt;strong&gt;📜 Summary (23 changes since v0.5.0)&lt;/strong&gt;&lt;/summary&gt;&#13;
-&#13;
-- RAC3: fix some formatting (2a5330b5)&#13;
-- RAC3: Add helper function for enqueing and dequeing notifications (186a627a)&#13;
-- RAC3: Refactor: Notification Message Data Structure (eed52887)&#13;
-- RAC3: Fix scout_vendors file naming and clarify scout vendors effect on item names inside vendors (9a18d076)&#13;
-&#13;
-&lt;/details&gt;&#13;
-&#13;
-**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.5.0...v0.5.1&#13;
-&#13;
-### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)&#13;
-&#13;
-### Notes&#13;
-This release was automatically generated from the **staging** branch.  &#13;
-Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
-&#13;
-### If a location is broken and does not get sent out&#13;
-Go to the server console (locally or via the Archipelago room page) and run:  &#13;
-`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
-</content>
-    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR1</id>
-    <title>Elder Scrolls Online v0.3.0</title>
-    <updated>2026-04-17T19:07:37+00:00</updated>
-    <author>
-      <name>Spencer2585</name>
-    </author>
-    <content>As this is a prerelease, **there may be several bugs that could take from the experience or result in the creation of an unbeatable seed**, This release should only be used for those who want to test out the new features or want to help find bugs ~~or those who dont care and just want to play anyways~~&#13;
-&#13;
-Honestly, I think I found most of the bugs. Any remaining unknown bugs are likely located in the client or mod, which means that a hotfix should be able to fix them without the need to generate a new game. That being said, I cannot guarantee this is the case, so don't say I didn't warn you.&#13;
-&#13;
-## Whats New&#13;
-- Completely redone Mod and APWorld code&#13;
-- Added Delve access items and completion locations&#13;
-- New Goal: Dungeon Delver, complete every delve included in your seed&#13;
-- changed the wayshrine checks to activate when interacting with the wayshrine, not just first discovery. This is for those who want to use an existing character for the AP run&#13;
-- Added new system to prevent players from interacting with interactables that lead to locked zones&#13;
-- Added new system to block traveling to other zones via dialogue with an NPC&#13;
-- Added new system to limit how much gold the player can have on them&#13;
-- New Options&#13;
-  - Delves_per_region: How many delves to include from each zone, goes up to 18, set to 0 to disable zone locations and locking&#13;
-  - Enable Main Quests: to enable and disable locations for the main quest, must be enabled for the main quest goal or if coldharbour is your goal for zone quest goal&#13;
-  - enable Wayshine checks: to enable and disable checks for interacting with wayshrines&#13;
-  - base gold cap: what you want the gold cap to be without any wallet increase items, set to 0 to enable gold limiting&#13;
-- More that I can't remember off the top of my head&#13;
-&#13;
-## Known Bugs:&#13;
-- Leaving the client on for an extended period of time can result in the client wiping all items sent to the mod, meaning the game may tell you that you don't have something you should have. If this occurs, you should just be able to close and reopen the client, and upon reconnection, it should fix all items sent to the game. Ill be looking into what causes this but its likely a 0.4.0+ issue to fix for when I rewrite the client like I did with the apworld and mod in this one&#13;
-- Setting your goal region to random can cause it to pick a region inaccessible with a low zone count, causing generation errors. This error occurs at the beginning of generation, so you should know if there's a problem pretty quick. You can avoid this by manually choosing a goal zone or trying to regen so it picks a different zone until you get it to work. Note that the lower you set the zone count, the more likely this is to occur. I will be looking into fixing this before 0.3.0 proper.&#13;
-- Controller can break on reloads, Ill be looking into this fairly soon. Can be worked around by reloadUI until controller works&#13;
-&#13;
-</content>
-    <link href="https://github.com/spencer2585/APESO/releases/tag/0.3.0_PR1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.0</id>
-    <title>Flipwitch Forbidden Sex Hex v1.1.0.post2</title>
-    <updated>2026-04-18T00:55:04+00:00</updated>
-    <author>
-      <name>Witchybun</name>
-    </author>
-    <content>Changes:&#13;
-- Complete port to rules builder.&#13;
-  - This *should* allow /explain and the like in Universal Tracker to work.&#13;
-  -  Some rules are still a bit archaic (some option oriented things), can be cleaned up later.&#13;
-&#13;
-Bugfixes:&#13;
-- Fixed rules for some experience quests, which were missing some potential rules.&#13;
-- Removed Pot 2 from Tengoku Gardens so it cannot be missed&#13;
-  - This is temporary; the check has not been sending and needs to be properly fixed but I'm a bit spread thin.</content>
-    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.1</id>
     <title>Flipwitch Forbidden Sex Hex v1.1.1</title>
@@ -1159,7 +1059,7 @@ new stuff (since 0.5.2):&#13;
   </entry>
   <entry>
     <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.0</id>
-    <title>Black Ops 3 - Zombies v0.5.0</title>
+    <title>Black Ops 3 - Zombies v0.5.0.post2</title>
     <updated>2026-04-23T16:00:27+00:00</updated>
     <author>
       <name>colin969</name>
@@ -1202,6 +1102,19 @@ new stuff (since 0.5.2):&#13;
     <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.0"/>
   </entry>
   <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.1</id>
+    <title>Black Ops 3 - Zombies v0.5.1</title>
+    <updated>2026-04-23T16:00:27+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>Apworld bugfix only.&#13;
+&#13;
+- Fix Gorod dragon wings check only being added when starting dragon wings is enabled&#13;
+- Fix lambda capture issue with kill / headshot logic rules</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/barretg/Taskipelago/releases/tag/v0.7</id>
     <title>Taskipelago v0.7</title>
     <updated>2026-04-23T17:18:20+00:00</updated>
@@ -1231,5 +1144,46 @@ Support for boolean logic implemented&#13;
 # Is this version compatible with older multiworld slots?&#13;
 Yes, back to 1.0.0</content>
     <link href="https://github.com/BlastSlimey/Archipelago/releases/tag/voltorb_flip_1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.9.2</id>
+    <title>Casualties: Unknown v0.9.2</title>
+    <updated>2026-04-23T19:35:51+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.9.2&#13;
+This update is compatible with worlds generated on versions v0.9.0 and above!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
+&#13;
+# Additions&#13;
+- Support Casualties: Unknown V6.1&#13;
+# Fixes&#13;
+- Elder Thornback Trap now properly times the Moodle change like before&#13;
+- Elder Thornback Trap now restores mood after the trap ends&#13;
+- Fixed Foliage, Water, and Climbing rope recipes expecting the wrong INT level to craft [APWorld Change]&#13;
+# Known Issues&#13;
+- Universal Tracker shows the wrong Moodles being in logic when Moodlesanity is set to Questboard&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.9.1...v0.9.2</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.9.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.0.2a</id>
+    <title>Refunct v1.0.2a0</title>
+    <updated>2026-04-23T23:12:52+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content>## Version 1.0.2a - Mod update only, apworld&amp;yaml are the same.&#13;
+- Fixed version mismatch issue.&#13;
+- Fixed game bug where all platforms are up after resetting at a specific.&#13;
+- Worked on the start-up crash, fixed now? (if not please send over the log right after it crashed! :D `Users\user\AppData\Local\Temp\refunct-tas.log`)</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.0.2a"/>
   </entry>
 </feed>
