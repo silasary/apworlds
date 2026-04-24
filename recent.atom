@@ -2,21 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-24T06:44:05.213788+00:00</updated>
+  <updated>2026-04-24T12:26:11.774549+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.04.18</id>
-    <title>Archipeladoku v2026.4.18</title>
-    <updated>2026-04-18T09:53:23+00:00</updated>
-    <author>
-      <name>Galdiuz</name>
-    </author>
-    <content/>
-    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.04.18"/>
-  </entry>
   <entry>
     <id>https://github.com/cjmang/Archipelago/releases/tag/0.2.3-beta</id>
     <title>Golden Sun The Lost Age v0.2.3b0</title>
@@ -655,37 +645,6 @@ POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
     <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.9.1"/>
   </entry>
   <entry>
-    <id>https://github.com/Uroogla/S2AP/releases/tag/linux-rc</id>
-    <title>Spyro 2 v2.0.0</title>
-    <updated>2026-04-21T15:40:42+00:00</updated>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>This is the alpha version of a Bizhawk client, intended to work on both Windows and Linux.&#13;
-&#13;
-This is not a fully complete implementation, and the following issues are known:&#13;
-- The following options are not yet implemented and so do not yet work:&#13;
-  - Winter Tundra Warp Options&#13;
-  - Death Link (soon, I promise)&#13;
-  - Progressive Sparx Health Upgrades&#13;
-  - Destructive Spyro filler&#13;
-  - Invisible Spyro filler&#13;
-- Client commands are not yet implemented&#13;
-- When connecting to a seed in progress, you will receive all filler/trap items again, from the seed's start.&#13;
-- In the Duckstation client, items that heal or hurt Sparx work with a delay, to ensure that life bottles don't overwrite the effect. The effects are currently instant for Bizhawk.&#13;
-- In the Duckstation client during closed world mode, Elora tells you how many talismans you have.  This is not yet implemented.&#13;
-- If you save or auto-save in Winter Tundra, exit to the main menu, and try to load a save, the game will crash.  This is *not* savefile corruption, and a hard reset before trying to load the save should work instead.&#13;
-- There's incorrect logic on the 5 swim gems in Autumn Plains.&#13;
-&#13;
-Setup Notes:&#13;
-- This has been tested on Bizhawk 2.9.1.  It was based off of the Ape Escape client, so https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_en.md is likely accurate.&#13;
-- Connect with the generic bizhawk lua connector and the bizhawk client.&#13;
-- While there shouldn't be any game breaking effects from connecting early, it is preferred that you do so after the "Insomniac" sign appears in the main menu.&#13;
-&#13;
-Please report any issues you run across!</content>
-    <link href="https://github.com/Uroogla/S2AP/releases/tag/linux-rc"/>
-  </entry>
-  <entry>
     <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.7</id>
     <title>Bloons TD6 v0.5.7</title>
     <updated>2026-04-21T16:29:49+00:00</updated>
@@ -1041,6 +1000,21 @@ new stuff (since 0.5.2):&#13;
     <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.0"/>
   </entry>
   <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.2</id>
+    <title>Black Ops 3 - Zombies v0.5.1</title>
+    <updated>2026-04-23T16:00:27+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>Mod update only, no apworld update&#13;
+&#13;
+- Origins is now available on the Checks tab&#13;
+- Checks tab now only shows checks which are enabled on the seed&#13;
+- Fix extra check notifications showing for collected checks which weren't collected on your client, or were collected before a crash&#13;
+- Fix Origins Elemental Discs not being taken away properly after pickup</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.1</id>
     <title>Black Ops 3 - Zombies v0.5.1</title>
     <updated>2026-04-23T16:00:27+00:00</updated>
@@ -1199,5 +1173,33 @@ Bug Fixes&#13;
 - Fix bug where Moneybags items or full gemsanity gems could desync&#13;
 - Fix bug with Easy Bombo where 3 copies appeared at once</content>
     <link href="https://github.com/Uroogla/S2AP/releases/tag/2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.7.0</id>
+    <title>Plants vs. Zombies: Replanted v1.7.0</title>
+    <updated>2026-04-24T11:18:03+00:00</updated>
+    <author>
+      <name>dannybonz</name>
+    </author>
+    <content>- **Adds the fantastic Archipelago plant graphic by groundpork!**&#13;
+- Adds optional **"Tile Unlock"** items - if enabled, you must receive each individual tile on the lawn as an item before you can plant on it. You'll have to modify your strategy to accommodate for what tiles you have available! As this feature is not yet heavily tested, it's recommended you enable it with caution.&#13;
+- Adds optional **"Progressive Sun Capacity"** items. If enabled, the amount of sun that you can carry at once will be restricted based on the number of these items that you have received. You will start with the ability to only carry a maximum of 150 sun at once.&#13;
+- Adds **zombie weight randomisation**. This affects how frequently different zombie types will be selected to spawn during a level's waves.&#13;
+- Adds **Ring Link support** for sun.&#13;
+- Adds a **"Zombie Shuffle"** trap - when received, all zombies on the lawn change lanes.&#13;
+- Adds an optional **"Mass Zombie Freeze"** filler item - when received, all zombies on the lawn are instantly frozen.&#13;
+- Adds a **"Zen Garden Sprout"** filler item that can appear if Zen Garden is enabled.&#13;
+- Adds an option to replace the "Crazy Dave's Car Keys" and "Twiddydinkies Restock" items with a unified **"Progressive Twiddydinkies"** item.&#13;
+- Increased the maximum number of shop items that can be enabled from 64 to 96.&#13;
+- Generating a world with more items than locations will now result in additional wave locations being created, instead of causing an error.&#13;
+- Fixed a bug where Imitater was left out of item generation.&#13;
+- Fixed a bug where Peashooters, unlike other pea plants, did not have their projectiles correctly randomised.&#13;
+- Fixed a bug where Zen Garden sprouts dropped by zombies could display incorrectly.&#13;
+- Fixed a bug where the option to sell plants in Zen Garden wouldn't appear.&#13;
+- Fixed a bug where per-level music randomisation wouldn't apply correctly if certain level types were disabled.&#13;
+- Fixed non-determinism in generation. (Thanks gerbiljames!)&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.7.0"/>
   </entry>
 </feed>
