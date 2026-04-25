@@ -2,40 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-25T12:15:33.058795+00:00</updated>
+  <updated>2026-04-25T18:16:48.833670+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/SerialBoxes/ArchipelagoTrackmania/releases/tag/v1.3.2</id>
-    <title>Trackmania v1.3.2</title>
-    <updated>2026-04-19T17:45:36+00:00</updated>
-    <author>
-      <name>SerialBoxes</name>
-    </author>
-    <author>
-      <name>Kaito Sinclaire</name>
-    </author>
-    <author>
-      <name>BREZ</name>
-    </author>
-    <content># Changes&#13;
-- Added filter option for a track being a Track of the Day (Thank you BREZ!)</content>
-    <link href="https://github.com/SerialBoxes/ArchipelagoTrackmania/releases/tag/v1.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/ffmq-1.7.b5</id>
-    <title>Final Fantasy Mystic Quest v1.7b5</title>
-    <updated>2026-04-19T19:49:37+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>- No longer relies on an external API for map shuffle, overworld shuffle, crest shuffle, battlefield shuffle, etc., all of these are handled by Archipelago itself.&#13;
-- No longer stores map shuffle data in slot data. Universal Tracker support is achieved by storing relevant yaml options and a set random seed.&#13;
-- Fixes an issue with the Doom Castle Access option.</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/ffmq-1.7.b5"/>
-  </entry>
   <entry>
     <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.6</id>
     <title>Bloons TD6 v0.5.6</title>
@@ -1192,5 +1163,122 @@ New:&#13;
 &#13;
 I **do not** recommend migrating to this release if you started your save file on 0.8.x or earlier. All of t</content>
     <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.3</id>
+    <title>Ratchet &amp; Clank 3 v0.5.3</title>
+    <updated>2026-04-25T12:19:25+00:00</updated>
+    <author>
+      <name>AmondoVagyok</name>
+    </author>
+    <author>
+      <name>Myth197</name>
+    </author>
+    <author>
+      <name>Taoshi</name>
+    </author>
+    <author>
+      <name>Yuxia228</name>
+    </author>
+    <author>
+      <name>1theory</name>
+    </author>
+    <content>## RaC3 APWorld v0.5.3
+
+**Branch:** staging  
+**Date:** 2026-04-25 15:02 UTC
+
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;📜 Summary (269 changes since v0.5.2)&lt;/strong&gt;&lt;/summary&gt;
+
+- RAC3: Make nanotech exp filler scale with your current nanotech exp rather than being random (05d09171d)
+- RAC3: Make vendor messages less likely to get eaten (b0ed043e0)
+- RAC3: Add min/avg/max in cycle benchmark in rac3_info (0f303800e)
+- RAC3: Added Arena tag to Phoenix: Return after winning Grand Prize Bout check (e722215a3)
+- RAC3: Adjust the default filler and trap weights to more closely fitting with the needs of the vendor update (2b617f70d)
+- RAC3: Rename skin to player skin (7eba16f70)
+- RAC3: Rename Player EXP to Nanotech EXP, yaml cleanup. (d2f5bcd31)
+- RAC3: Add a 1 second grace period to deathlink (c88c837b1)
+- RAC3: Let the user know that death link is off if it is off when using /kill (5a24572f8)
+- RAC3: Fix Pulsing Purple and Obani Orange being swapped (407e29ac8)
+- RAC3: Allow US GH version to use NTSC patches (55f674d1b)
+- RAC3: Remove most debug logs that run every cycle (202fcae3c)
+- RAC3: Remove spammy debug log statements (8af7ad8c7)
+- RAC3: Run Ruff Formatter (57ecff777)
+- RAC3: Remove the no tyhrraguise phoenix thing (a7e2d231e)
+- RAC3: Adjust Sasha Pos and Range failsafe (d18c5bf0e)
+- RAC3: Add failsafe for Meet Sasha Bridge (34c5c75f0)
+- RAC3: Make deathlink kill rules more strict (4054285f2)
+- RAC3: Make deathlink toggle message white (f89d6bd03)
+- RAC3: Add the number 38 to all items purchased message (fb38e5866)
+- RAC3: Fix deathlink on/off message using default theme (846a58bcd)
+- RAC3: Add softlocked as a death reason to deathlink (b379231a8)
+- RAC3: Add average cycle time to /rac3_info (aaaacbe16)
+- RAC3: Add /ryno output to ingame notifications (19fc0b01d)
+- RAC3: Remove potential confusion about all items purchased (6eb43ca97)
+- RAC3: Use RAC3POSITIONDATA for distance checks (4078ca5fd)
+- RAC3: Don't even attempt to apply PAL patches on NTSC and vice versa (44eb1fe94)
+- RAC3: Refactor patches again (f4a884000)
+- RAC3: Cleanup no longer used status constants (bb3232c45)
+- RAC3: Formatting (6bfbe0d28)
+- RAC3: Added Active Patches to rac3_info (18b2db834)
+- RAC3: Normalize hurt/damaged state names (1bf3880e6)
+- RAC3: Use constant from version rather than hard coded magic number (de9613ca9)
+- RAC3: Let the user know that they have purchased all items in the ship vendor if they have done so (c4a99002d)
+- RAC3: Fix type hinting on scout_vendors (d9b151aa5)
+- RAC3: Clean up new AN Vidcomic 2 fix (d833b49a9)
+- RAC3: Refactor: Player Action and Action Type (e1b0d371a)
+- RAC3: Fix holostar warning causing next notification to also be 8 seconds (d117c4de8)
+- RAC3: Hide the vid comic when paused (f653c1d83)
+- RAC3: Use is_location_checked to ensure it still works even with AN off (d7f7d3e62)
+- RAC3: Give the player vid comic 2 while on AN if they have completed first challenge (5c7297a6c)
+- RAC3: Implement logic fixes and suggestions (255377320)
+- RAC3: Update location names to match new price curve (8115a99f8)
+- RAC3: Made ship skins start price 14k instead of 10k (28707c927)
+- RAC3: Mention PAL in the setup guide and add a section for charge boots in the FAQ (eac523a50)\n- ...and 69 more commits.
+
+&lt;/details&gt;
+
+**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.5.2...v0.5.3
+
+### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)
+
+### Notes
+This release was automatically generated from the **staging** branch.  
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
+
+### If a location is broken and does not get sent out
+Go to the server console (locally or via the Archipelago room page) and run:  
+`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`
+</content>
+    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.0</id>
+    <title>Factorio Bob's v2.1.5</title>
+    <updated>2026-04-25T14:21:41+00:00</updated>
+    <author>
+      <name>Osiris32-and-a-half</name>
+    </author>
+    <content>Big thanks to @Enderdraak (CosmicWolf) most of this update (and discovering the bugs that I also fixed in this update)&#13;
+They have not only managed to refactor the whole of the factorio ap mod produced by the world (for future adaptability and hopefully debuggability) they have implement Technology Obscurity, local item handling and obtained new icons made by Ruby3440 and then modified further by myself and CosmicWolf to replace the generic archipelago ones.&#13;
+&#13;
+I'm still working on the apworld I've just been busy recently and getting burned out working on the 3rd recipe engine.&#13;
+&#13;
+# Changelog:&#13;
+- Refactored the mod done by @Enderdraak &#13;
+- Added Technology Obscurity by @Enderdraak &#13;
+  - Makes it so only next technologies are visible and hinted if tech tree information is enabled with configurable depth&#13;
+- Added local item handling by @Enderdraak &#13;
+  - Enables easier solo games&#13;
+- Changed the uses of the AP logo to a factorio styled version&#13;
+  - Implemented by @Enderdraak and designed by Ruby3440&#13;
+- Added an Icon to all progressive items by @Enderdraak &#13;
+- Technology tree shapes now use seeded random&#13;
+  - Is it UT compatible now?&#13;
+- Readded grenade trap item preventing a generator crash with option&#13;
+  - Gets used so little CosmicWolf only recently noticed I forgot to add the item&#13;
+- `is_valid_first_pool` option in facpacks are now actually used again</content>
+    <link href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.0"/>
   </entry>
 </feed>

@@ -5,7 +5,7 @@ Blast your enemies with over the top weaponry and save the galaxy from total dis
 
 
 ## Downloads
-- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.5.2/rac3.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.5.3/rac3.apworld">Latest Version (0.5.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
