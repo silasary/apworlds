@@ -6,7 +6,7 @@ building your factories.
 
 
 ## Downloads
-- <a href="https://github.com/BlastSlimey/2hapezipelago/releases/download/1.0.0/shapez_2.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/BlastSlimey/2hapezipelago/releases/download/1.0.1/shapez_2.apworld">Latest Version (1.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

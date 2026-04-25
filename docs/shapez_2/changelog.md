@@ -1,6 +1,14 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 1.0.1
+
+- Fixed UT rejecting any slot
+
+## Is this version compatible with older multiworld slots?
+Manual-like client yes, back to 0.99.0 (will be deprecated soon though)
+<br>UT will probably be inaccurate for worlds generated prior to 1.0.0
+
 ## 1.0.0
 
 APWorld:
@@ -12,6 +20,7 @@ Client:
 
 ## Is this version compatible with older multiworld slots?
 Manual-like client yes, back to 0.99.0 (will be deprecated soon though)
+<br>First release of the client mod, so no backwards compatibility with that
 <br>UT will probably be inaccurate for worlds generated prior to 1.0.0
 
 ## 0.99.6
