@@ -5,7 +5,7 @@ skeletons, dragons, and rapping moles. Descend into the crypt to defeat the Necr
 
 
 ## Downloads
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.5.3/cotnd.apworld">Latest Version (0.5.3)</a>
+- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.6.0/cotnd.apworld">Latest Version (0.6.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -15,3 +15,4 @@ skeletons, dragons, and rapping moles. Descend into the crypt to defeat the Necr
 
 ## Other Documentation files
 - <a href="en_Crypt_of_the_Necrodancer">en_Crypt_of_the_Necrodancer</a>
+- <a href="traps">traps</a>
