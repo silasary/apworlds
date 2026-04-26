@@ -2,108 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-25T18:16:48.833670+00:00</updated>
+  <updated>2026-04-26T00:25:57.300599+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.5.6</id>
-    <title>Bloons TD6 v0.5.6</title>
-    <updated>2026-04-19T21:48:14+00:00</updated>
-    <author>
-      <name>Matt41321</name>
-    </author>
-    <content>## Changes&#13;
-- Added Blacklist and whitelist to force maps in/out the generation&#13;
-- Updated yaml to be cleaner</content>
-    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.5.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.10</id>
-    <title>The Legend of Zelda - Oracle of Seasons v20.1.10</title>
-    <updated>2026-04-20T00:31:40+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>Added compatibility to more sprite editors</content>
-    <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.10"/>
-  </entry>
-  <entry>
-    <id>https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.5.0</id>
-    <title>Brave Fencer Musashi v0.5.0</title>
-    <updated>2026-04-20T04:02:13+00:00</updated>
-    <author>
-      <name>AegeusEvander</name>
-    </author>
-    <content>Added:&#13;
--Open World options&#13;
--quest item sanity&#13;
--bizhawk client commands&#13;
--additional map for Universal Tracker https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.28&#13;
-&#13;
-Note:&#13;
--Not compatible with XDelta Patches, must run unmodified game&#13;
--not compatible with prior apworld generations&#13;
--setup guide:https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/blob/main/docs/setup_en.md&#13;
--Follow development and report bugs on the Archipelago gg Discord, -&gt; Future-game-design -&gt; Brave Fencer Musashi</content>
-    <link href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/stubobis1/Archipelago/releases/tag/1.3.3</id>
-    <title>Path of Exile v1.3.3</title>
-    <updated>2026-04-20T06:42:57+00:00</updated>
-    <author>
-      <name>StuBob</name>
-    </author>
-    <content># Path of Exile apworld 1.3.3 -- The one with QoL&#13;
-&#13;
-## Patch notes:&#13;
-- Moving away from poptracker.&#13;
-- Made a new icon&#13;
-- Migrated tracker to GitHub Pages under https://stubobis1.github.io/pathofexile_ap/, (URL subject to change) enabling static hosting.&#13;
-  - Should be mobile friendly!&#13;
-- Items page;&#13;
-  - This page contains all of your unlocked gems, classes, passive points, and other items.&#13;
-    - Interactive gem tooltips like the wiki are working (\^.\^)&#13;
-- Locations page;&#13;
-  - Shows you what acts items first show up at, and which base items are locations in the multiworld&#13;
-- Hints page;&#13;
-  - Shows your hints.&#13;
-- Equipment page;&#13;
-  - This page contains information about what you can equip - links, rarity and types of weapons.&#13;
-  - Added flask slots to the equipment page, expanding the gear grid with 5 new slots positioned below the belt/boots row&#13;
-  - Flask system supports Normal, Magic, and Unique tiers (Rare excluded), with progression-based unlock logic and fallback checks for each tier ( this should mirror the python logic for unlocking flasks)&#13;
-  - Flask slots now dynamically stretch across the equipment row using a flex layout for consistent spacing&#13;
-- Implemented tooltip caching for instant repeat hovers (and to not overload the poewiki servers) and improved positioning logic to prevent screen overflow&#13;
-- Yoinked assets from poptracker&#13;
-- Introduced a dedicated Setup &amp; Guide page (https://stubobis1.github.io/pathofexile_ap/guide.html) this should be a nice looking introduction to setting this up&#13;
-- Added full Fontin font family support (Regular, Bold, Italic, SmallCaps) across tracker and guide pages&#13;
-- Remade the oauth sucess / failure pages.&#13;
-  - Should also now redirect you to the tracker, with the slot data so you don't have to enter it in twice.&#13;
-- Created an options page, so manual editing of YAMLs is not needed as much (https://stubobis1.github.io/pathofexile_ap/options.html)&#13;
-  - boss options hide if you aren't doing a boss run.&#13;
-&#13;
-## Bug fixes:&#13;
-- Fixed a multiworld generation crash because of generating output.&#13;
-- Fixed an issue with random rarity flasks (someone please yell at me if your flasks aren't working right)&#13;
-- Fixed Offhands having 4 links, the maximum is 3.&#13;
-## NOTES:&#13;
-- Tracker assets have been fully decoupled from worlds/poe/poeClient/static/ and are now hosted via GitHub Pages&#13;
-- Game data (_DATA_BASE) continues to load from remote GitHub raw URLs — no local JSON dependency required&#13;
-- CSS has been extracted from the tracker index.html into a reusable tracker.css file for improved maintainability&#13;
-- Guide page includes advanced tips, troubleshooting (e.g., OneDrive filtering issues), and command references&#13;
-## As with any release of this scope, additional edge cases may exist—report any issues you encounter&#13;
-This release may have some other gotchas with the websites, I'm real tired and haven't tested all of the edgecases.&#13;
-**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/1.3.2...1.3.3&#13;
-&#13;
-&#13;
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K41PE6IX)</content>
-    <link href="https://github.com/stubobis1/Archipelago/releases/tag/1.3.3"/>
-  </entry>
   <entry>
     <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-20.1.11</id>
     <title>The Legend of Zelda - Oracle of Seasons v20.1.11</title>
@@ -1161,7 +1064,7 @@ New:&#13;
 &#13;
 ## Migration Guide&#13;
 &#13;
-I **do not** recommend migrating to this release if you started your save file on 0.8.x or earlier. All of t</content>
+I **do not** recommend migrating to this release if you started your save file on 0.8.x or earlier.</content>
     <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.1"/>
   </entry>
   <entry>
@@ -1280,5 +1183,77 @@ I'm still working on the apworld I've just been busy recently and getting burned
   - Gets used so little CosmicWolf only recently noticed I forgot to add the item&#13;
 - `is_valid_first_pool` option in facpacks are now actually used again</content>
     <link href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Cyb3RGER/cornkidz64_apworld/releases/tag/v0.0.6</id>
+    <title>Corn Kidz 64 v0.0.6</title>
+    <updated>2026-04-25T18:10:36+00:00</updated>
+    <author>
+      <name>Cyb3R</name>
+    </author>
+    <content>- Added Ally Picture Check&#13;
+- **Multiple Goals** can now be selected&#13;
+  - Note: the option was also renamed from `goal` to `goal_selection`&#13;
+- Added new option **Switchsanity**&#13;
+  - This adds the 4 Switches for the door to Dog God in Some Other Place to item/location pool&#13;
+- Added new option **Test Cubesanity**&#13;
+  - This adds the 25 Test Cube from the Test Zone to item/location pool&#13;
+- Div. logic fixes:&#13;
+  - Fixed zoo rat 2 requirements&#13;
+  - Fixed VoidScrewHollowSky missing Slam requirement&#13;
+  - Fixed MirrorHollowZooSideCrank requirement&#13;
+  - Fixed CubeParkSlide requirement&#13;
+  - Fixed MonsterParkHouseFoyer access requirements&#13;
+- Fix some UT issues&#13;
+- Added archipelago.json&#13;
+- Switched to Rule Builder&#13;
+&#13;
+**Full Changelog**: https://github.com/Cyb3RGER/cornkidz64_apworld/compare/v0.0.5...v0.0.6</content>
+    <link href="https://github.com/Cyb3RGER/cornkidz64_apworld/releases/tag/v0.0.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.6.0</id>
+    <title>Bloons TD6 v0.6.0</title>
+    <updated>2026-04-25T20:46:26+00:00</updated>
+    <author>
+      <name>Matt41321</name>
+    </author>
+    <content>- Added Upgrade Sanity Option&#13;
+- Logic for pop tier checks behind locked upgrades added</content>
+    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_6</id>
+    <title>Scooby-Doo! Night of 100 Frights v1</title>
+    <updated>2026-04-25T21:58:56+00:00</updated>
+    <author>
+      <name>vgm5</name>
+    </author>
+    <content># QOL Fix Release&#13;
+&#13;
+- Fixes some logic issues in DaSK regarding backtracking without springs&#13;
+- Fixes Memory Reads in Cower in the Tower causing level to lock up&#13;
+</content>
+    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.3</id>
+    <title>Black Ops 3 - Zombies v0.5.1</title>
+    <updated>2026-04-25T22:29:40+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>Mod update only, no apworld update&#13;
+&#13;
+- Origins:&#13;
+  - Exit teleporters are now restored&#13;
+  - QoL: After all staffs are placed, all 3 giants will have a hatch until the g-strike hole is blown open&#13;
+  - Player Save Additions:&#13;
+    - Has Shovel / Golden Shovel / Golden Helmet&#13;
+    - Number of spots dug&#13;
+    - Streak of bad dig rewards (3 losses means next dig spot is 100% a win)&#13;
+    - **Note:** Zombie Blood Dig Spots with Golden Shovel will currently not be restored&#13;
+- Locked wallbuys now show a neon red padlock symbol over them</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.3"/>
   </entry>
 </feed>

@@ -38,3 +38,6 @@
 #### v1.3.0
 - <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_0/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_0/no100f.apworld</a>
 
+#### v1
+- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_6/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_6/no100f.apworld</a>
+

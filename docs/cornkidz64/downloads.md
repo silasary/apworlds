@@ -1,9 +1,12 @@
 # Corn Kidz 64
 
 ## Latest
-- <a href="https://github.com/Cyb3RGER/cornkidz64_apworld/releases/download/v0.0.5/cornkidz64.apworld">Latest Version (0.0.5)</a>
+- <a href="https://github.com/Cyb3RGER/cornkidz64_apworld/releases/download/v0.0.6/cornkidz64.apworld">Latest Version (0.0.6)</a>
 
 ## All Versions
+
+#### v0.0.6
+- <a href="https://github.com/Cyb3RGER/cornkidz64_apworld/releases/download/v0.0.6/cornkidz64.apworld">https://github.com/Cyb3RGER/cornkidz64_apworld/releases/download/v0.0.6/cornkidz64.apworld</a>
 
 #### v0.0.5
 - <a href="https://github.com/Cyb3RGER/cornkidz64_apworld/releases/download/v0.0.5/cornkidz64.apworld">https://github.com/Cyb3RGER/cornkidz64_apworld/releases/download/v0.0.5/cornkidz64.apworld</a>
