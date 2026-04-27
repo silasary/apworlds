@@ -1,9 +1,12 @@
 # TOEM: A Photo Adventure
 
 ## Latest
-- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.5/toem.apworld">Latest Version (2.0.5)</a>
+- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.6/toem.apworld">Latest Version (2.0.6)</a>
 
 ## All Versions
+
+#### v2.0.6
+- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.6/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.6/toem.apworld</a>
 
 #### v2.0.5
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.5/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.5/toem.apworld</a>
