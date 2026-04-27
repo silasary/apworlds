@@ -6,7 +6,7 @@ used with permission.
 
 
 ## Downloads
-- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.2/mzm.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.5.3/mzm.apworld">Latest Version (0.5.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
