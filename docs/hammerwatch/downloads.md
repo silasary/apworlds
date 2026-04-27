@@ -18,7 +18,7 @@
 - <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.2/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2.2/hammerwatch.apworld</a>
 
 #### v1.2
-- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.2/hammerwatch.apworld</a>
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.2/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago-Mod-Installer/releases/download/v1.2/hammerwatch.apworld</a>
 
 #### v1.1.13
 - <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.1.13/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v1.1.13/hammerwatch.apworld</a>
