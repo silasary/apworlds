@@ -596,6 +596,21 @@
       "title": "",
       "version_simple": "0.9.2",
       "world_version": "0.9.2"
+    },
+    "v0.9.3": {
+      "created_at": "2026-04-27T03:07:23Z",
+      "description": "### Casualties: Unknown Archipelago v0.9.3\r\nThis update is compatible with worlds generated on versions v0.9.0 and above!\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).\r\nDevelopment on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.\r\n\r\n# Additions\r\n- Universal Tracker support! Moodlesanity Questboard will no longer show incorrect moodles inside of UT [APWorld Change]\r\n# Changes\r\n- Archipelago Item descriptions now show an item's classification color\r\n- The \"Moodlesanity Questboard Cooldown Time\" YAML option can now be disabled entierly [APWorld Change]\r\n- The \"Moodlesanity Exclusions\" presets now must be in uppercase. This might break some pre-existing YAMLs! [APWorld Change]\r\n# Fixes\r\n- Fixed a missing space in the minigame locked popups\r\n- Actually fixed `Moodlesanity - Internal bleeding` this time\r\n- Optomised Archipelago Items code to cause less lag on lower end devices\r\n- Fixed the game mod thinking there was one more Archipelago Item than was set in the YAML, causing an empty item to spawn\r\n- Fixed Archipelago Items retaining their name and description after running out of locations instead of reverting to INT Experience Bundle items\r\n- Fixed Archipelago Items turning themselves back on after returning to the main menu\r\n# Known Issues\r\n- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators\r\n- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed\r\n- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed\r\n\r\n**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.9.2...v0.9.3",
+      "download_url": "https://github.com/Nichologeam/CUAP/releases/download/v0.9.3/casualtiesunknown.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e95ad05bfca8dde9e0ff3cf5237cb751b3c42d547838b61393f862324e6b73b5",
+      "html_url": "https://github.com/Nichologeam/CUAP/releases/tag/v0.9.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 95461,
+      "source_url": "https://api.github.com/repos/Nichologeam/CUAP",
+      "tag": "v0.9.3",
+      "title": "",
+      "version_simple": "0.9.3",
+      "world_version": "0.9.3"
     }
   }
 }

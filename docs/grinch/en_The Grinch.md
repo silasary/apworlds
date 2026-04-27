@@ -26,12 +26,3 @@ Locations that are shuffled are as follows:
 
 The player must obtain the Skis, Twin-End Tuba, Exhaust Pipes, and the Tires to be able to build the sleigh and to finally
 stop Christmas from coming once and for all by neutralizing Santa Claus!
-
-## Which items can be in another player's world?
-
-- All gadgets such as the binoculars, Rotten Egg Launcher, Rocket Spring, Slime Shooter, Octopus Climbing Device, Marine 
-Mobile, and the Grinch Copter.
-- 4 Heart of Stones that increases the player's max health by one.
-- Useful items, or mission specific items, that allow the player to access certain subareas or complete missions that 
-require that specific item.
-- Vacuum accesses that give the player access to Who Forest, Who Dump, and Who Lake respectively.

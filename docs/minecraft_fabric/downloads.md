@@ -1,9 +1,12 @@
 # Minecraft Fabric
 
 ## Latest
-- <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v.1.0.7/minecraft_fabric.apworld">Latest Version (1.0.7)</a>
+- <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v.1.1.0/minecraft_fabric.apworld">Latest Version (1.1.0)</a>
 
 ## All Versions
+
+#### v1.1.0
+- <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v.1.1.0/minecraft_fabric.apworld">https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v.1.1.0/minecraft_fabric.apworld</a>
 
 #### v1.0.7
 - <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v.1.0.7/minecraft_fabric.apworld">https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v.1.0.7/minecraft_fabric.apworld</a>
