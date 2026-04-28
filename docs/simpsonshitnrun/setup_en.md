@@ -1,7 +1,7 @@
 # Required Software
 
 - Simpsons Hit And Run PC release
-- [Lucas' Mod Manager](https://modbakery.donutteam.com/releases/view/6)
+- [Lucas' Mod Launcher](https://modbakery.donutteam.com/releases/view/6)
 - [Archipelago](https://archipelago.gg/) (Latest release [here](https://github.com/ArchipelagoMW/Archipelago/releases/latest).)
 - The latest release of the [client/memory manager and the lmlm mod](https://github.com/nmize1/AP-SHARRandomizer/releases/latest)
 - The latest release of the [apworld](https://github.com/nmize1/Archipelago/releases/latest).
@@ -42,16 +42,11 @@ Note: You can also self host an Archipelago game server, but that's outside the 
 - Finally, extract SHARRandomizer.zip where ever you'd like.
 
 # Connecting and Playing
-- Download the Config file by going to the Archipelago Room and clicking "Download Patch File"
-- Extract the "SHAR.ini" file from the downloaded .zip and place it in "Documents\My Games\Lucas' Simpsons Hit & Run Mod Launcher\Saved Games\APSHARRandomizer" If that folder doesn't exist, create it. You can also reach the folder by clicking Open in the mod launcher and choosing Saved Games if the mod is enabled.
-
-- Run SHARRandomizer.exe
-- First it'll ask for the connection string. If you're hosting on the AP website as described earlier, then you can just enter the port
-- Then it'll ask for the slot name, this is what you put as Name in the yaml and also shows in the room on the website
-- Then it'll ask for a password. By default this is blank.
-
-- Launch the game via Lucas' Mod Launcher ensuring the above steps have been completed.
-
+- Download the patch file from your room.
+- Open the SHAR Client in the AP launcher
+  - On first launch, 3 file select prompts will open asking for the patch file, SHARRandomizer.exe, and Lucas' Mod Launcher 
+  - On subsequent launches, it will just ask for the patch file. If you need to change the paths to the executables, you can do so in your host.yaml in the root of your AP install.
+- Enter your connection info in SHARRandomizer.exe
 - Enjoy!
 
 # Optional Extra Steps

@@ -3,7 +3,10 @@
   "game": "The Simpsons Hit And Run",
   "github": "https://github.com/nmize1/Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0a": {
       "created_at": "2025-03-18T02:07:04Z",
@@ -435,6 +438,21 @@
       "title": "Beta 0.4.3",
       "version_simple": "0.4.3",
       "world_version": "0.4.3b0"
+    },
+    "v0.5.0-b": {
+      "created_at": "2026-04-28T04:57:41Z",
+      "description": "APWorld entirely rewritten. Lots of bug, logic, and efficiency improvements. \r\n\r\nNew stuff:\r\n\r\n- Goal yaml option is now titled \"Itchy_And_Scratchy_Ticket_Requirement\"\r\n- Added new goal option \"Cars Collected\" where cars act as a macguffin\r\n- Wasps and Cards goal removed - can now be paired with other goals separately (can choose exact amount instead of percent)\r\n- Reworked shop scale modifier (purchases scale higher in-game)\r\n- Added \"Required_Mission_Levels\" yaml option to make story goal requirements only require certain levels\r\n- Added \"Lock_Levels\" yaml option to make Free Roam inaccessible in levels you haven't received yet.\r\n- Added \"Early_Level\" yaml option to try to place at least one level item early.\r\n- Added \"Mission_Timers\" yaml option to adjust timers in missions up or down.\r\n- Added \"Filler_Wrench_Efficiency\" and \"Filler_HitNRun_Reset_Efficiency\" yaml options. These set the percent of the car hp/hnr gauge they restore.\r\n- Added \"Traffic_Blacklist\" to set certain cars to never show in randomized traffic\r\n- Fixed trap enabling options to only add traps if they're enabled\r\n- Fixed UT issues showing incorrect missions/wasps/cards\r\n- Greatly improved generation times\r\n",
+      "download_url": "https://github.com/nmize1/Archipelago/releases/download/v0.5.0-b/simpsonshitnrun.apworld",
+      "has_manifest": true,
+      "hash_sha256": "962c3fc1185cde6c92aa1738f238d59afada52d6937d1e43abdcb7233c5bc584",
+      "html_url": "https://github.com/nmize1/Archipelago/releases/tag/v0.5.0-b",
+      "minimum_ap_version": "0.6.0",
+      "size": 588930,
+      "source_url": "https://api.github.com/repos/nmize1/Archipelago",
+      "tag": "v0.5.0-b",
+      "title": "Beta 0.5.0",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0b0"
     }
   }
 }

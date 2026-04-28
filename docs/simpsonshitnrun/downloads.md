@@ -1,9 +1,12 @@
 # The Simpsons Hit And Run
 
 ## Latest
-- <a href="https://github.com/nmize1/Archipelago/releases/download/v0.4.3-b/simpsonshitnrun.apworld">Latest Version (0.4.3b0)</a>
+- <a href="https://github.com/nmize1/Archipelago/releases/download/v0.5.0-b/simpsonshitnrun.apworld">Latest Version (0.5.0b0)</a>
 
 ## All Versions
+
+#### v0.5.0b0
+- <a href="https://github.com/nmize1/Archipelago/releases/download/v0.5.0-b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.5.0-b/simpsonshitnrun.apworld</a>
 
 #### v0.4.3b0
 - <a href="https://github.com/nmize1/Archipelago/releases/download/v0.4.3-b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.4.3-b/simpsonshitnrun.apworld</a>
