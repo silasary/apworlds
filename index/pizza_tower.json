@@ -1,9 +1,18 @@
 {
+  "authors": [
+    "Skizzers",
+    "Mitchell",
+    "Whimsidayo"
+  ],
   "description": "Down-on-his-luck pizza chef Peppino Spaghetti and his restaurant are threatened by a sentient floating pizza... and this time\nall of his abilities are gone, too! Climb up and bring down the Pizza Tower to save your restaurant in this cheesy, saucy,\nWario Land 4-inspired platformer!",
   "game": "Pizza Tower",
   "github": "https://github.com/unsafetyskizzers/Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "tracker": "https://github.com/Fairweather-Furry/pt-fair/releases/latest",
   "versions": {
     "1.0.1": {
@@ -131,6 +140,21 @@
       "title": "v1.2.5a",
       "version_simple": "1.2.5",
       "world_version": "1.2.5post1"
+    },
+    "1.3.0": {
+      "created_at": "2026-04-27T10:35:18Z",
+      "description": "# Pizza Tower Archipelago v1.3.0\r\n[Setup](https://github.com/unsafetyskizzers/Archipelago/blob/pizza_ap/worlds/pizza_tower/docs/setup_en.md) | [Mod Page](https://gamebanana.com/mods/598236)\r\n\r\nIt's been quite a bit but we've got a new update ready! This is an update for both the game mod and APWorld, so check that both are up-to-date, and don't forget to update your YAML as well.\r\n\r\nHere are all the changes and bugfixes:\r\n\r\nChanges:\r\n- Added Kill Snotty as a new completion goal\r\n- Added an optional Enemy Randomizer setting\r\n- The title screen now shows how many Archipelago saves you have and will allow you to clean the folder from within the game\r\n- Updated the granny sign to show all checked locations for each level on the floor\r\n- Rank locations checked by a collect won't trigger other location checks\r\n- Credits can now be skipped earlier\r\n- The jumpscare trap is now part of the trap weights instead of being a separate option. It's set to 0 by default\r\n- The Pizza Tower text client now shows a tab for Universal Tracker if you have it installed\r\n- Pizzaface now speeds up when you receive another deathlink while he's active\r\n- The game will now fully resync your items with the server state on connect\r\n- Toppins and Pumpkins are now tagged as \"deprioritized\"\r\n\r\nFixes:\r\n- Fix softlock on Pizzaface if you're playing swap mode and don't have Noise's bomb\r\n- Fix issue where the game wasn't notified that Deathlink and Ringlink are enabled under certain circumstances\r\n- Fix issue where generation would fail if the toppin or pumpkin amount was set to 0\r\n- Fix issue where packets sent in very close proximity would sometimes not process\r\n- Fix issue where the location group names for DMAS and WAR's chef tasks didn't match the actual location names\r\n- Lots of logic fixes and other minor bugfixes",
+      "download_url": "https://github.com/unsafetyskizzers/Archipelago/releases/download/1.3.0/pizza_tower.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ceff33c2029ed44da16e349e390e715fbcfe6dfeca98f5efc5bad9305dd6c616",
+      "html_url": "https://github.com/unsafetyskizzers/Archipelago/releases/tag/1.3.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 87293,
+      "source_url": "https://api.github.com/repos/unsafetyskizzers/Archipelago",
+      "tag": "1.3.0",
+      "title": "v1.3.0",
+      "version_simple": "1.3.0",
+      "world_version": "1.3.0"
     },
     "release": {
       "created_at": "2025-06-02T18:27:59Z",

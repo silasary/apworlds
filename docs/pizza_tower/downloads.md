@@ -1,9 +1,12 @@
 # Pizza Tower
 
 ## Latest
-- <a href="https://github.com/unsafetyskizzers/Archipelago/releases/download/1.2.5a/pizza_tower.apworld">Latest Version (1.2.5post1)</a>
+- <a href="https://github.com/unsafetyskizzers/Archipelago/releases/download/1.3.0/pizza_tower.apworld">Latest Version (1.3.0)</a>
 
 ## All Versions
+
+#### v1.3.0
+- <a href="https://github.com/unsafetyskizzers/Archipelago/releases/download/1.3.0/pizza_tower.apworld">https://github.com/unsafetyskizzers/Archipelago/releases/download/1.3.0/pizza_tower.apworld</a>
 
 #### v1.2.5post1
 - <a href="https://github.com/unsafetyskizzers/Archipelago/releases/download/1.2.5a/pizza_tower.apworld">https://github.com/unsafetyskizzers/Archipelago/releases/download/1.2.5a/pizza_tower.apworld</a>
