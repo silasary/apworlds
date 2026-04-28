@@ -11,6 +11,9 @@
 #### v0.0.5
 - <a href="https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.5/burnout3.apworld">https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.5/burnout3.apworld</a>
 
+#### v0.0.4
+- <a href="https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.4/burnout3.apworld">https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.4/burnout3.apworld</a>
+
 #### v0.0.3
 - <a href="https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.3/burnout3.apworld">https://github.com/Metasura/Burnout3Archipelago/releases/download/0.0.3/burnout3.apworld</a>
 

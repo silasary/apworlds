@@ -23,6 +23,9 @@
 #### v0.2.3
 - <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.2.3/th185.apworld">https://github.com/furret78/Archipelago/releases/download/unstable-0.2.3/th185.apworld</a>
 
+#### v0.2.2
+- <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.2.2/th185.apworld">https://github.com/furret78/Archipelago/releases/download/unstable-0.2.2/th185.apworld</a>
+
 #### v0.2.1
 - <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.2.1/th185.apworld">https://github.com/furret78/Archipelago/releases/download/unstable-0.2.1/th185.apworld</a>
 

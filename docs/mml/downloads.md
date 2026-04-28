@@ -11,6 +11,9 @@
 #### v0.2.5
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.2.5/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.2.5/mml.apworld</a>
 
+#### v0.2.4
+- <a href="https://github.com/functorial/MMLAP/releases/download/v0.2.4/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.2.4/mml.apworld</a>
+
 #### v0.2.3
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.2.3/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.2.3/mml.apworld</a>
 
