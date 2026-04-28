@@ -6,7 +6,7 @@ and slugcats look delicious.
 
 
 ## Downloads
-- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.2/rain_world.apworld">Latest Version (2.0rc2)</a>
+- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.2/rain_world.apworld">Latest Version (1.5.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

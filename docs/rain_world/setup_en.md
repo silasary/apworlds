@@ -28,14 +28,19 @@ A player YAML settings file is required to generate a world,
 even if you choose to leave all settings at their defaults.
 
 You can get a player YAML settings file by doing one of the following:
-- Download a template from a release page.
-  1. If you downloaded an `.apworld` from [the releases page](https://github.com/alphappy/ArchipelagoRW/releases),
+- Download a template from the release page.
+  1. If you downloaded an `.apworld` from [the releases page](https://github.com/alphappy/ArchipelagoRW/releases), 
   that page will also contain template YAMLs that can be manually edited.
+- Choose options with the local yaml creator.
+  1. Open the Archipelago Launcher and select `Options Creator`.
+  2. Select Rain World from the games list and customize your options.
+  3. Press `Export Options` to save your newly created yaml.
 - Generate the template file.
   1. Open the Archipelago Launcher and select `Generate Template Options`.
   2. Navigate to `Players/Templates` folder in your AP folder (which may open automatically).
   3. Copy and edit `Rain World.yaml` to change settings.
-- Run the WebHost.
+- Run the WebHost. (Only do this if you really want to edit options like you would on the website 
+for core supported games)
   1. Run `WebHost.py` in your AP folder to start the WebHost locally.
   If you haven't done this before, several Python packages will need to install first.
   2. Once the WebHost is running (which may take a minute), navigate to `localhost` in a browser.
@@ -64,33 +69,26 @@ Install the Randomizer mod by doing one of the following:
 
 If you are subscribed to the mod on the Workshop and have a non-Workshop version in the `mods` folder,
 do not activate both versions at the same time.
-Note also that each version keeps its own save data.
+Note also that each version keeps its own save data. If you are manually updating from an older client 
+version you may want to manually transfer the save data in the mod files.
 
 ## 5. Configure mods and game
 
 Configure Rain World and your mods by doing the following:
-1. Make sure that your version of Rain World matches your player YAML settings.
-   1. You can find the current version you are using on the Options menu in-game,
-      or by opening `Rain World\RainWorld_Data\StreamingAssets\GameVersion.txt` in your RW folder.
-   2. To change game version on Steam:
-      1. Right-click on Rain World in the library and select *Properties...*
-      2. Open the *Betas* tab.
-      3. Select the desired version in the `Beta Participation` dropdown.
-         Select `None` to use the most recent version.
-2. If you are running Linux (which includes Steam Deck) and have not used Remix mods before:
+1. If you are running Linux (which includes Steam Deck) and have not used Remix mods before:
    1. Right-click on Rain World in the library and select *Properties...*
    2. Open the *General* tab.
    3. In the `LAUNCH OPTIONS` box, add `WINEDLLOVERRIDES="winhttp=n,b" %command%`.
-3. (Re)start Rain World.
-4. Go to the Remix menu and enable the following:
+2. (Re)start Rain World.
+3. Go to the Remix menu and enable the following:
    1. Rain World Remix
-   2. Check Randomizer
+   2. Randomizer (+ Archipelago)
    3. More Slugcats Expansion, if and only if you enabled it in your player YAML settings
    4. The Watcher, if and only if you enabled it in your player YAML settings
    5. For other mods, see [the compatibility subpage](/tutorial/Rain%20World/compatibility/en).
-5. Restart Rain World.
-6. Go to the Remix menu and verify that the mod has loaded correctly
-by clicking on the `Check Randomizer` to open its Remix interface.
+4. Restart Rain World.
+5. Go to the Remix menu and verify that the mod has loaded correctly
+by clicking on the `Randomizer (+ Archipelago)` to open its Remix interface.
 You should see an `Archipelago` tab in this interface.
 
 For recommended Rain World Remix settings, see [the Remix subpage](/tutorial/Rain%20World/remix/en).
@@ -98,7 +96,7 @@ For recommended Rain World Remix settings, see [the Remix subpage](/tutorial/Rai
 ## 6. Join an Archipelago room
 
 Once the Archipelago room is open,
-connect to it by opening the `Archipelago` tab in Check Randomizer's Remix menu.
+connect to it by opening the `Archipelago` tab in the Randomizer's Remix menu.
 Enter the host name, port number, room password (if there is one),
 and player name (which must exactly match the name specified in your player YAML settings),
 then click Connect.
@@ -107,11 +105,10 @@ and including key pieces of information from your player YAML settings.
 
 ## 7. Start the game
 
-Once you are connected to a room, the matching Story campaign may be started
-as long as your version and enabled content mods match your player YAML settings.
+Once you are connected to a room, the matching Story campaign may be started.
 A fresh campaign should be used when connecting to a new room.
 It does not necessarily need to be an entirely fresh save file,
-though using a seprate save file (or backup) is encoruaged.
+though using a separate save file (or backup) is encouraged.
 A Randomizer campaign should never be loaded without Randomizer enabled and connected - 
 doing so may irreversibly break the campaign's save data.
 

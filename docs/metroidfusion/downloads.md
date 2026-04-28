@@ -1,9 +1,21 @@
 # Metroid Fusion
 
 ## Latest
-- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/MF-v17/metroidfusion.apworld">Latest Version (17)</a>
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v21/metroidfusion.apworld">Latest Version (21)</a>
 
 ## All Versions
+
+#### v21
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v21/metroidfusion.apworld">https://github.com/StalledStorm/ArchipelagoMine/releases/download/v21/metroidfusion.apworld</a>
+
+#### v20
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v20/metroidfusion.apworld">https://github.com/StalledStorm/ArchipelagoMine/releases/download/v20/metroidfusion.apworld</a>
+
+#### v19
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v19/metroidfusion.apworld">https://github.com/StalledStorm/ArchipelagoMine/releases/download/v19/metroidfusion.apworld</a>
+
+#### v18
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v18/metroidfusion.apworld">https://github.com/StalledStorm/ArchipelagoMine/releases/download/v18/metroidfusion.apworld</a>
 
 #### v17
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/MF-v17/metroidfusion.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/MF-v17/metroidfusion.apworld</a>

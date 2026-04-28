@@ -23,10 +23,6 @@ they are not considered two separate checks.
 `Misc2` pearls, such as the one in Subterranean,
 though they appear on the interactive map, are not unique and are not checks.
 
-## Karma flowers
-If `checks_flowersanity` is enabled, eating a fixed karma flower spawn is a check.
-If two karma flowers exist in the same room, they are not two separate checks.
-
 ## Echoes
 Visiting an echo is a check, and the karma cap increases they would normally give are placed in the item pool.
 Whether an echo appears depends on some combination of 
@@ -78,12 +74,12 @@ and also depends on the `Passage progress without Survivor` setting in the playe
 
 There are four passages that may always be earned before The Survivor is earned, regardless of settings:
 
-| Passage           | Eligibility                                 | Requirements                                    |
-|-------------------|---------------------------------------------|-------------------------------------------------|
-| The Martyr        | Any; MSC enabled                            | None                                            |
-| The Mother        | Survivor, Hunter, or Gourmand; MSC enabled  | Access to HI, DS, GW, SH, CC, SI, LF, SB, or VS |
-| The Pilgrim       | Any; MSC enabled                            | Access to all eligible echoes                   |
-| The Survivor      | Any                                         | Max karma at least 5                            |
+| Passage      | Eligibility                                            | Requirements                                    |
+|--------------|--------------------------------------------------------|-------------------------------------------------|
+| The Martyr   | Any; MSC enabled                                       | None                                            |
+| The Mother   | Survivor, Hunter, Gourmand, or Sofanthiel; MSC enabled | Access to HI, DS, GW, SH, CC, SI, LF, SB, or VS |
+| The Pilgrim  | Not Watcher; MSC enabled                               | Access to all eligible echoes                   |
+| The Survivor | Any                                                    | Max karma at least 5                            |
 
 There are three passages that may be earned before The Survivor,
 but only if the `Passage progress without Survivor` setting is either `enabled` or `bypassed`:
@@ -92,7 +88,7 @@ but only if the `Passage progress without Survivor` setting is either `enabled` 
 |-------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | The Dragon Slayer | Not Saint   | - Vanilla: Access to Blue, Pink, Green, Yellow, Black, and White Lizards<br/>- MSC: Red, Cyan, Strawberry, and Caramel Lizards also count |
 | The Friend        | Any         | Access to one lizard                                                                                                                      |
-| The Wanderer      | Any         | Access to every story region for the given slugcat; each individual pip is also a check                                                   |
+| The Wanderer      | Not Watcher | Access to every story region for the given slugcat; each individual pip is also a check                                                   |
 
 The remaining seven passages require The Survivor unless
 `Passage progress without Survivor` is `bypassed`:
@@ -102,7 +98,7 @@ The remaining seven passages require The Survivor unless
 | The Chieftain | Not Artificer                                           | Access to a Scavenger (or Scavenger Toll if `The Chieftain requires toll` is set)                                                                                                           |
 | The Hunter    | Not Saint                                               | Access to several types of meat (number depends on `The Hunter difficulty` setting)                                                                                                         |
 | The Monk      | Any                                                     | - For Hunter, Artificer, and Spearmaster: Access to SI, LF, SS, or DM<br/>- For other slugcats: Access to several types of non-meat foods (number depends on `The Monk difficulty` setting) |
-| The Nomad     | Any; MSC enabled                                        | Access to several regions (number depends on `The Nomad difficulty` setting)                                                                                                                |  
+| The Nomad     | Not Watcher; MSC enabled                                | Access to several regions (number depends on `The Nomad difficulty` setting)                                                                                                                |  
 | The Outlaw    | Not Saint                                               | Access to several eligible creatures (number depends on `The Outlaw difficulty` setting)                                                                                                    |
 | The Saint     | Any                                                     | - For Hunter, Artificer, and Spearmaster: Access to SI, LF, SS, or DM<br/>- For other slugcats: No requirements                                                                             |
 | The Scholar   | Not Monk unless MSC is enabled; Not Saint or Sofanthiel | - The Mark of Communication<br/>- Access to three colored pearls<br/>- For Monk, Survivor, and Gourmand: access to Looks to the Moon                                                        |
@@ -113,15 +109,15 @@ each item of the food quest is a check when completed.
 Like the passages, food quest checks are awarded upon successful hibernation.
 Each slugcat has the ability to fulfill at least some part of the food quest.
 
-| Food                                                                                                                           | Monk<br/>Survivor<br/>Rivulet | Hunter<br/>Gourmand | Artificer    | Spearmaster | Saint |
-|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------|--------------|-------------|-------|
-| Neuron Fly<br/>Mushroom                                                                                                        | ✔                             | ✔                   | ✔            | ✔           | ✔     |
-| Glow Weed                                                                                                                      | ✔                             | ✔                   | <sup>a</sup> |             | ✔     |
-| Blue Fruit<br/>Bubble Fruit<br/>Dandelion Peach<br/>Gooieduck<br/>Lilypuck<br/>Slime Mold                                      | ✔                             | ✔                   | ✔            |             | ✔     |
-| Batfly<br/>Hazer                                                                                                               | ✔                             | ✔                   | ✔            | ✔           |       |
-| Black Lizard<br/>Salamander / Eel Lizard<br/>Yellow Lizard<br/>Cyan Lizard<br/>Jetfish<br/>Snail<br/>Eggbug<br/>Grappling Worm |                               | ✔                   | ✔            | ✔           |       |
-| Aquapede / Red Centipede<sup>b</sup><br/>Centiwing                                                                             | ✔<sup>c</sup>                 | ✔                   | ✔            | ✔           |       |
-| Jellyfish                                                                                                                      | ✔                             | ✔                   | ✔            |             |       |
+| Food                                                                                                                           | Monk<br/>Survivor<br/>Rivulet | Hunter<br/>Gourmand | Artificer    | Spearmaster | Saint | Sofanthiel |
+|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------|--------------|-------------|-------|------------|
+| Neuron Fly<br/>Mushroom                                                                                                        | ✔                             | ✔                   | ✔            | ✔           | ✔     | ✔          |
+| Glow Weed                                                                                                                      | ✔                             | ✔                   | <sup>a</sup> |             | ✔     | ✔          |
+| Blue Fruit<br/>Bubble Fruit<br/>Dandelion Peach<br/>Gooieduck<br/>Lilypuck<br/>Slime Mold                                      | ✔                             | ✔                   | ✔            |             | ✔     | ✔          |
+| Batfly<br/>Hazer                                                                                                               | ✔                             | ✔                   | ✔            | ✔           |       | ✔          |
+| Black Lizard<br/>Salamander / Eel Lizard<br/>Yellow Lizard<br/>Cyan Lizard<br/>Jetfish<br/>Snail<br/>Eggbug<br/>Grappling Worm |                               | ✔                   | ✔            | ✔           |       | ✔          |
+| Aquapede / Red Centipede<sup>b</sup><br/>Centiwing                                                                             | ✔<sup>c</sup>                 | ✔                   | ✔            | ✔           |       | ✔          |
+| Jellyfish                                                                                                                      | ✔                             | ✔                   | ✔            |             |       | ✔          |
 
 - <sup>a</sup> Artificer can eat Glow Weed, but does not find any in their worldstate.
 - <sup>b</sup> This check is not generated unless the `Extreme threats` setting is enabled.
@@ -175,6 +171,10 @@ Shelters which do not function in a given worldstate are not counted.
 | Submerged Superstructure |                       | 10                | 1 is broken for all slugcats except Monk.<br/>3 others are only accessible for Rivulet.                                |
 | Undergrowth              |                       | 4                 |                                                                                                                        |
 | Waterfront Facility      |                       | 10                | 1 is only accessible for Spearmaster.                                                                                  |
+
+## Karma flowers
+If `checks_flowersanity` is enabled, eating a fixed karma flower spawn is a check.
+If two karma flowers exist in the same room, they are not two separate checks.
 
 ## Notes
 

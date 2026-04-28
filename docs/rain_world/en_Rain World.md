@@ -7,11 +7,16 @@ contains all the options you need to configure and export a config file.
 
 ## What is the win condition?
 
-The default goal is ascension.
-Logically, this requires raising max karma to 10 and gain access to Subterranean.
-The win condition is met upon entering the Void Sea itself.
-If More Slugcats Expansion is enabled,
-the option for alternate victory conditions is available for most Slugcats.
+There are 4 possible win conditions you can select.
+- Ascension: The default condition, requiring you to get to 
+10 karma and ascend in the Void Sea in Subterranean.
+- Echoes: Requires you to meet every echo in the campaign. 
+Saint only has to encounter 7 echoes, so one may be skipped.
+- (MSC Required) Story: Complete the slugcat's alternate ending.
+Requirements are different for each slugcat.
+- (MSC Required) Food Quest: Eat every food in the food quest tracker. 
+Which foods are required is based on slugcat and whether the expanded food quest option was chosen.
+Food quest checks must be enabled to choose this ending.
 
 ## What does randomization do to Rain World?
 

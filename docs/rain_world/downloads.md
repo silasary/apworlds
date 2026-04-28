@@ -1,12 +1,9 @@
 # Rain World
 
 ## Latest
-- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.2/rain_world.apworld">Latest Version (2.0rc2)</a>
+- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.2/rain_world.apworld">Latest Version (1.5.2)</a>
 
 ## All Versions
-
-#### v2.0rc2
-- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.2/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.2/rain_world.apworld</a>
 
 #### v1.5.2
 - <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.2/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.5.2/rain_world.apworld</a>
@@ -22,6 +19,9 @@
 
 #### v1.4.0
 - <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.4.0/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.4.0/rain_world.apworld</a>
+
+#### v1.3.2
+- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.2/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.2/rain_world.apworld</a>
 
 #### v1.3.1
 - <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.1/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.3.1/rain_world.apworld</a>

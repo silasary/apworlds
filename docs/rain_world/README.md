@@ -12,6 +12,7 @@ by navigating directly to the `.md` files in this folder.
 - [Remix](remix_en.md)
 - [Settings](settings_en.md)
 - [Tracking](tracking_en.md)
+- [Watcher](watcher_en.md)
 
 Note that the links on _this_ page only work if accessed directly (such as through GitHub),
 and the links on the linked pages only work if you use them through the WebHost.
