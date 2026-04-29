@@ -10,7 +10,4 @@ Deltarune is an RPG.
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_DELTARUNE">en_DELTARUNE</a>

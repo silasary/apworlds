@@ -12,7 +12,10 @@
     "https://github.com/theemeraldsword85/DELTARUNEAP"
   ],
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "world_version"
+  ],
   "versions": {
     "deltarune-0.0.2": {
       "created_at": "2025-06-16T23:46:00Z",
@@ -21,6 +24,7 @@
       "has_manifest": false,
       "hash_sha256": "53a52948f291f75d4d86fded854629e12be684c9483e9b255556cd2f3e8a65e3",
       "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/deltarune-0.0.2",
+      "maximum_ap_version": "0.6.99",
       "prerelease": true,
       "size": 288703,
       "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
@@ -36,6 +40,7 @@
       "has_manifest": false,
       "hash_sha256": "f8df9c7636db310ba1207ae3adbca2c5364fad6f43c911b4892c1ef02a8541d5",
       "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/deltarune-0.0.3",
+      "maximum_ap_version": "0.6.99",
       "prerelease": true,
       "size": 291213,
       "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
@@ -51,6 +56,7 @@
       "has_manifest": false,
       "hash_sha256": "54a406db90b0057909927b74a4608152a453ead216cfc428e711b5a8d4a85165",
       "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/deltarune-0.0.4",
+      "maximum_ap_version": "0.6.99",
       "prerelease": true,
       "size": 291466,
       "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
@@ -66,6 +72,7 @@
       "has_manifest": false,
       "hash_sha256": "cf7604fae3667574d9c4e218316c8ab2a3a50b0bd400617677d77af350d0fdac",
       "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/deltarune-0.0.5",
+      "maximum_ap_version": "0.6.99",
       "prerelease": true,
       "size": 292469,
       "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
@@ -81,6 +88,7 @@
       "has_manifest": false,
       "hash_sha256": "a4f42c35ef54770756b3b3eb8d8ef167f552260672fae5c2bd91e9cf9852b993",
       "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/deltarune-0.0.5.1",
+      "maximum_ap_version": "0.6.99",
       "prerelease": true,
       "size": 293766,
       "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
@@ -96,6 +104,7 @@
       "has_manifest": false,
       "hash_sha256": "8c508dcb22e4f84310db054c249c30947ff165875b1b4fe0204b3ef47bdc092d",
       "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/deltarune-0.0.5.2",
+      "maximum_ap_version": "0.6.99",
       "prerelease": true,
       "size": 292789,
       "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
@@ -396,6 +405,7 @@
       "has_manifest": false,
       "hash_sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
       "html_url": "https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.2",
+      "maximum_ap_version": "0.6.99",
       "prerelease": true,
       "size": 22,
       "source_url": "https://api.github.com/repos/theemeraldsword85/DELTARUNEAP",
@@ -411,6 +421,7 @@
       "has_manifest": false,
       "hash_sha256": "3693df7b2e2dce96dfbdb8a83f8e40194b3505ba6e896b5c1d234a718e1ee38e",
       "html_url": "https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.2",
+      "maximum_ap_version": "0.6.99",
       "prerelease": true,
       "size": 1943691,
       "source_url": "https://api.github.com/repos/theemeraldsword85/DELTARUNEAP",
@@ -419,20 +430,20 @@
       "version_simple": "1.2.2",
       "world_version": "1.2.2.post2"
     },
-    "v1.2.2r3": {
-      "created_at": "2026-04-19T03:47:01Z",
-      "description": "(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)\r\n\r\n**>>> This is a pre-release. For the least issues, it's recommended to use version 1.2.1 instead. <<<**\r\n\r\nChangelog:\r\n- Added an option to include unused items to itempool (can exclude Everybodyweapon)\r\n- [CH3] Lost Pippins, Zapper, Watercooler, Shuttah and shadowguy are now in logic only in tv world if you are playing all routes (so you can recruit them before losing them without the need to reload save. They are marked out of logic on UT if you want to reload your save)\r\n- Begin of porting game mod to a patching framework to making it open source, only chapter 1 and chapter select are currently done\r\n- [CH1] Now display location item name reward in game and in shops (some places may be missing)\r\n- [CH1] BakeSale save point have been moved to be before the story blocker\r\n- [CH1] Leaving Man's room now go to the same room before entering\r\n- [CH1] Re-did Castle Key NPC blocker\r\n- [CH1] Added some easter eggs to Kris Room (Thanks Charaster for the Archipelago trophy and keucher-mod for the flags)\r\n- [CH1] Weapons storage is now up to 48\r\n- [CH1] Armor storage is now up to 60\r\n- [Hotfix] Fixed CH1 warps being all selectable\r\n- [Hotfix] Fixed using cell phone crashing the game\r\n- [Hotfix] Fixed Susie having an invalid spell\r\n- [Hotfix] Leaving man room now start again forest music\r\n- [Hotfix] Using Blackshard no longer crash the game\r\n\r\n**Because of the porting of chapter 1 only done, you can't start chapter 2 with chapter 1 completion data for now.**\r\n\r\nBefore starting, use /savereset to reset all AP and save data for this mod. Don't worry; your original DELTARUNE saves won't be affected!\r\n\r\nFeel free to give feedback, and make sure to report any bugs!\r\n\r\nYou will only give/receive checks in the Dark World.",
-      "download_url": "https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.2.2/deltarune.apworld",
-      "has_manifest": false,
-      "hash_sha256": "57f1562eb6f59fa9c0795366321eec779139381f420a91fb9225884e8f720437",
-      "html_url": "https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v1.2.2",
+    "v2.0.0+beta-1": {
+      "created_at": "2026-04-29T15:26:56Z",
+      "description": "# DELTARUNEAP v2.0.0+beta-1 (Pre-release)\r\n\r\n**Only Chapter 1 and 2 are available for now**\r\n\r\n(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)\r\n\r\nChangelog:\r\n\r\n- In-game client\r\n- Probably other things i forgot\r\n- Egg, moss, shadowcrystal are now filler\r\n- Added an option to include unused items to itempool (can exclude Everybodyweapon)\r\n- [CH3] Lost Pippins, Zapper, Watercooler, Shuttah and shadowguy are now in logic only in tv world if you are playing all routes (so you can recruit them before losing them without the need to reload save. They are marked out of logic on UT if you want to reload your save)\r\n- Begin of porting game mod to a patching framework to making it open source, only chapter 1 and chapter select are currently done\r\n- Now display location item name reward in game and in shops (some places may be missing)\r\n- [CH1] BakeSale save point have been moved to be before the story blocker\r\n- [CH1] Leaving Man's room now go to the same room before entering\r\n- [CH1] Re-did Castle Key NPC blocker\r\n- [CH1] Added some easter eggs to Kris Room (Thanks @Charaster-Official for the Archipelago trophy and keucher-mod for the flags)\r\n- [CH1] Weapons storage is now up to 48\r\n- [CH1] Armor storage is now up to 60\r\n- [CH2] Moved back to castle town to be closer to a warp\r\n- [CH2] Add new savepoints",
+      "download_url": "https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta-1/deltarune.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f03acbd9e1cefcf6ae7de68ad562d9cbe3aef8db3afae6efe234e25bd0d66646",
+      "html_url": "https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.0%2Bbeta-1",
       "prerelease": true,
-      "size": 1838164,
+      "size": 2494327,
       "source_url": "https://api.github.com/repos/theemeraldsword85/DELTARUNEAP",
-      "tag": "v1.2.2r3",
-      "title": "DELTARUNEAP v1.2.2b",
+      "tag": "v2.0.0+beta-1",
+      "title": "DELTARUNEAP v2.0.0+beta-1",
       "version_simple": "1.2.2",
-      "world_version": "1.2.2.post3"
+      "world_version": "1.2.2"
     }
   }
 }
