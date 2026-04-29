@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "Rampaging Hippy"
+  ],
   "description": "Brotato is a top-down arena shooter roguelite where you play a potato wielding up to\n6 weapons at a time to fight off hordes of aliens. Choose from a variety of traits\nand items to create unique builds and survive until help arrives.",
   "game": "Brotato",
   "github": "https://github.com/SpenserHaddad/Brotato-ArchipelagoClient",
@@ -233,6 +236,20 @@
       "title": "v0.14.0",
       "version_simple": "0.14.0",
       "world_version": "0.14.0"
+    },
+    "v0.14.1": {
+      "created_at": "2026-04-29T01:08:23Z",
+      "description": "This is a GUI update to present additional information to the player and clean up a few graphical oddities caused by the mod.\r\n\r\n## Added\r\n\r\n- The \"Connect\" menu has been renamed to the \"AP\" menu and additional information has\r\n  been added to it.\r\n  - The Progress panel previously shown on the character select screen has been moved\r\n    here.\r\n- A new Slot Data panel now shows the slot data when connected.\r\n- A new Options panel has been added for mod-specific configuration.\r\n- Deathlink can now be set from the Options page to one of three modes:\r\n  - Use the value set in the slot data/player options.\r\n  - Force Deathlink on.\r\n  - Force Deathlink off.\r\n- Added a section to the Options panel to help with bug reporting:\r\n  - Instructions on the best way to report feedback (in the Archipelago Discord).\r\n  - A button to open the log file's location.\r\n    - This is especially relevant now that Brotato has cross-platform builds.\r\n  - A button to open the Brotato game development channel on the Archipelago Discord.\r\n\r\n## Changed\r\n\r\n- Disable the address, olayer, and password edit boxes in the connect UI when\r\n  connecting/connected to an AP server.\r\n\r\n## Fixed\r\n\r\n- Fixed the main menu not initializing properly when the Archipelago mod was enabled.\r\n- Fixed the character select screen constantly changing size when mousing over\r\n  characters.\r\n  - Unfortunately, the fix for this was to remove the Progress panel from the UI. The\r\n    base game's UI is wider now due to the animated character portraits, and there's not\r\n    enough horizontal space for the AP data. I may add this back in at some point if I\r\n    think of a better way to handle it.\r\n",
+      "download_url": "https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.14.1/brotato.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8133a93a3f9b698fbbf9dfb150537edff9631730574156b4d7ef280795f513dc",
+      "html_url": "https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.14.1",
+      "size": 43689,
+      "source_url": "https://api.github.com/repos/SpenserHaddad/Brotato-ArchipelagoClient",
+      "tag": "v0.14.1",
+      "title": "v0.14.1",
+      "version_simple": "0.14.1",
+      "world_version": "0.14.1"
     },
     "v0.2.0": {
       "created_at": "2024-07-18T06:03:42Z",
