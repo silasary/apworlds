@@ -1,9 +1,12 @@
-# lingo2
+# Lingo 2
 
 ## Latest
-- <a href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.2.2/lingo2.apworld">Latest Version (9.2.2)</a>
+- <a href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.3.0/lingo2.apworld">Latest Version (9.3.0)</a>
 
 ## All Versions
+
+#### v9.3.0
+- <a href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.3.0/lingo2.apworld">https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.3.0/lingo2.apworld</a>
 
 #### v9.2.2
 - <a href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.2.2/lingo2.apworld">https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.2.2/lingo2.apworld</a>
