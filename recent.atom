@@ -2,39 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-04-30T06:56:56.417164+00:00</updated>
+  <updated>2026-04-30T12:38:09.526471+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.7.0</id>
-    <title>Plants vs. Zombies: Replanted v1.7.0</title>
-    <updated>2026-04-24T11:18:03+00:00</updated>
-    <author>
-      <name>dannybonz</name>
-    </author>
-    <content>- **Adds the fantastic Archipelago plant graphic by groundpork!**&#13;
-- Adds optional **"Tile Unlock"** items - if enabled, you must receive each individual tile on the lawn as an item before you can plant on it. You'll have to modify your strategy to accommodate for what tiles you have available! As this feature is not yet heavily tested, it's recommended you enable it with caution.&#13;
-- Adds optional **"Progressive Sun Capacity"** items. If enabled, the amount of sun that you can carry at once will be restricted based on the number of these items that you have received. You will start with the ability to only carry a maximum of 150 sun at once.&#13;
-- Adds **zombie weight randomisation**. This affects how frequently different zombie types will be selected to spawn during a level's waves.&#13;
-- Adds **Ring Link support** for sun.&#13;
-- Adds a **"Zombie Shuffle"** trap - when received, all zombies on the lawn change lanes.&#13;
-- Adds an optional **"Mass Zombie Freeze"** filler item - when received, all zombies on the lawn are instantly frozen.&#13;
-- Adds a **"Zen Garden Sprout"** filler item that can appear if Zen Garden is enabled.&#13;
-- Adds an option to replace the "Crazy Dave's Car Keys" and "Twiddydinkies Restock" items with a unified **"Progressive Twiddydinkies"** item.&#13;
-- Increased the maximum number of shop items that can be enabled from 64 to 96.&#13;
-- Generating a world with more items than locations will now result in additional wave locations being created, instead of causing an error.&#13;
-- Fixed a bug where Imitater was left out of item generation.&#13;
-- Fixed a bug where Peashooters, unlike other pea plants, did not have their projectiles correctly randomised.&#13;
-- Fixed a bug where Zen Garden sprouts dropped by zombies could display incorrectly.&#13;
-- Fixed a bug where the option to sell plants in Zen Garden wouldn't appear.&#13;
-- Fixed a bug where per-level music randomisation wouldn't apply correctly if certain level types were disabled.&#13;
-- Fixed non-determinism in generation. (Thanks gerbiljames!)&#13;
-&#13;
-For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
-    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.7.0"/>
-  </entry>
   <entry>
     <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.32</id>
     <title>Muse Dash v1.5.32</title>
@@ -1183,5 +1155,63 @@ This revision also fixes some issues with level_placements.&#13;
     </author>
     <content/>
     <link href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.3.0/lingo2.apworld"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.3</id>
+    <title>plateup v0.2.6.3</title>
+    <updated>2026-04-30T10:04:34+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>## What's New?&#13;
+- Added `random_research` — research desk randomisation can now be enabled from the YAML. This is off by default&#13;
+- Added progressive day leases — when enabled, the first Day Lease for each food is required from Day 1, effectively making it act like a food unlock and helping prevent players from being locked out of foods after franchising&#13;
+- Day and franchise logic now has softer progression gates. A day block can now be considered in logic if you have any of the following:&#13;
+  - enough relevant Day Leases&#13;
+  - any speed upgrade&#13;
+  - at least 3 named appliance unlocks, when appliance unlocks are enabled&#13;
+- Dish-day and franchise-day gates now both use the new block logic&#13;
+- "Lose a Run" is now excluded from progression placement for both franchise and complete-days goals, keeping it filler-only&#13;
+- Added slot data support for `random_research` and `day_leases_progressive` so the client can correctly receive both settings&#13;
+&#13;
+## New YAML Options&#13;
+&#13;
+**`random_research`** — Enables random research mode. When enabled, the research desk randomly researches into any appliance in the pool instead of following the fixed progression path. When disabled, the research desk works as in vanilla. Defaults to `false`.&#13;
+&#13;
+```yaml&#13;
+random_research:&#13;
+  # Enable random research mode.&#13;
+  # When enabled, the research desk randomly researches into any appliance in the pool instead of the fixed progression path.&#13;
+  # When disabled, the research desk works as in vanilla.&#13;
+  'false': 50&#13;
+  'true': 0&#13;
+```&#13;
+&#13;
+**day_leases_progressive** — Makes day leases act as progressive items. When enabled, the first lease for each food or dish is required to play even Day 1. This makes the first lease act as an unlock, helping prevent players from starting a food freely and then becoming gated mid-run after franchising elsewhere. Only relevant when **day_leases_enabled** is on. Defaults to **false**.&#13;
+&#13;
+```yaml&#13;
+day_leases_progressive:&#13;
+  # Make day leases act as progressive items: the first lease for each food/dish is required to play even Day 1.&#13;
+  # When enabled, leases_required = ceil(day / interval) — every day block requires at least one lease, so the&#13;
+  # first lease acts as an unlock, preventing players from starting a food freely and then being gated mid-run.&#13;
+  # When disabled (default), the first block of days (1 to interval) is free, and leases gate subsequent blocks.&#13;
+  # This can help prevent players from being locked out of foods after franchising elsewhere.&#13;
+  # Only relevant when day_leases_enabled is on.&#13;
+  'false': 50&#13;
+  'true': 0&#13;
+```&#13;
+&#13;
+## Logic Changes&#13;
+&#13;
+Day blocks now have more flexible access rules. Instead of only checking for the required number of leases, a block may be in logic if the player has one of several forms of progression:&#13;
+&#13;
+- enough Day Leases for that block&#13;
+- any speed upgrade&#13;
+- enough named appliance unlocks, capped at min(3, day_lease_interval)&#13;
+&#13;
+This should make progression feel less brittle, especially when appliance unlocks are enabled or when players receive useful speed upgrades early.&#13;
+&#13;
+[Mod Update 0.2.6.3](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.6.3)</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.3"/>
   </entry>
 </feed>
