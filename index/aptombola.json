@@ -59,6 +59,21 @@
       "title": "v0.1.2 - The \"I uploaded the wrong apworld\" Update",
       "version_simple": "0.1.2",
       "world_version": "0.1.2"
+    },
+    "0.2": {
+      "created_at": "2026-04-30T13:53:18Z",
+      "description": "##  New Additions:\r\n- **Milestones**\r\nA new category of locations that exist alongside the Cards and require objectives that are \"Card-agnostic\" such as \"Score 4 Terno\" or \"Obtain 7 even numbers\".\r\n18 Milestones will be chosen at random and added to your slot.\r\nWhen completing a Milestone, you may click on it to send the respective location.\r\nCompleting an amount of Milestones (configurable in yaml) is now required to GOAL, alongside the usual Tombola requirement.\r\n\r\n- **Rowsanity**\r\nA new sanity option that creates, for each card and for each score other than Tombola, a location that will require *that specific row's numbers* to be checked\r\n\r\n- **Useful Items**\r\n- - *Free Mark!!!*: When used, a `Free Mark!!!` allows you to mark a number *that you have not received yet*, potentially getting a particular score out-of-logic!\r\n- - *Free Location Hint*: When used, a hint will be created, free of charge, for a location in your world that contains a progression item!\r\n(If all of the slot's unchecked locations do not have a progression item, no hint will be created and the player will be notified)\r\n- - *Anti Trap Shield*: When received, the next Trap received will be blocked! Additionally, if a trap is in effect when receiving the `Anti Trap Shield`, the current trap will also be immediately stopped!\r\n\r\n- **Traps**\r\n- - *Blindness Trap*: When received, for the next 60 seconds, all numbers will be hidden. if markable, a number may still be marked by manually clicking on it.\r\n- - *Lock Trap*: When received, for the next 30 seconds, numbers may not be marked.\r\n(note: during a trap's effect, Automatic Marking does not work)\r\n\r\n- **Save Slots and QoL**\r\n- - Connection information for all of your slots may now be saved in-game!\r\n- - All numbers marked are now saved! No need to mark them again when reconnecting!\r\n\r\n\r\n## Changes:\r\n- When starting the game, now *all* cards are locked but `Card x Unlock`s are given in starting inventory.\r\nThis change gives the game some locations that can be checked from the start of the game.\r\nIf Cardsanity is set, then the unlocks for the number of cards chosen in the yaml will not have their Unlocks in the starting inventory, but must be obtained normally.\r\n\r\n- The client now shows information when connection is not successful\r\n\r\n- The client now has a separate tab for Cards, Milestones and Goal Requirements\r\n\r\n- AP Tombola Locations now only prevent *progression* items from AP Tombola Slots\r\n(No functional changes since the older versions only had progression items)\r\n\r\n## Bugfixes:\r\n- Fixed an issue where the amount of tombola scored for the purposes of calculating goal may be incorrectly counted\r\n- Fixed Game Logo having a rogue black pixel\r\n\r\n## Download and How to Play:\r\n- **APWorld**\r\n- - The APWorld is available here: https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.2\r\n\r\n- **Client**\r\n- - Client Download for Windows and Linux is available here: https://github.com/Arenes214/AP-Tombola/releases/tag/0.2\r\n- - Client is also available as a website here: https://arenes214.itch.io/ap-tombola\r\n-# Android Version Download will be available soon\u2122\r\n- ** Client is backwards compatible with worlds generated on 0.1.x**\r\n- ** Some features, like numbers marked being saved, will also work on 0.1.x worlds**",
+      "download_url": "https://github.com/Arenes214/APWorld-Tombola/releases/download/0.2/aptombola.apworld",
+      "has_manifest": true,
+      "hash_sha256": "599776f913afc2c7efccd7da90c9a842385ee29c6574274cfb3626096e99b1ba",
+      "html_url": "https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.2",
+      "minimum_ap_version": "0.6.6",
+      "size": 15730,
+      "source_url": "https://api.github.com/repos/Arenes214/APWorld-Tombola",
+      "tag": "0.2",
+      "title": "v0.2 - The Milestone Update",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }
