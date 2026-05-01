@@ -5,7 +5,7 @@
 - [Archipelago](https://archipelago.gg/) (Latest release [here](https://github.com/ArchipelagoMW/Archipelago/releases/latest).)
 - The latest release of the [client/memory manager and the lmlm mod](https://github.com/nmize1/AP-SHARRandomizer/releases/latest)
 - The latest release of the [apworld](https://github.com/nmize1/Archipelago/releases/latest).
-- [.NET 8 (x86)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (**NOT x64**)
+- [.NET 10 (x86)](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) (**NOT x64**)
 
 # AP Setup 
 
@@ -16,7 +16,7 @@
 
 - Open ArchipelagoLauncher.exe in the Archipelago folder created when you ran the AP setup
 - Search for and click Generate Template Yamls which will open a folder full of yamls
-- Find The Simpsons Hit and Run.yaml and edit it to your liking.
+- Find Simpsons Hit and Run.yaml and edit it to your liking.
 - Save your edited .yaml in Archipelago/Players which is 1 folder up from the template yaml folder that opened.
 - Optionally add more yamls for other players or other games you want to play. The multiworld will have 1 slot per yaml included here.
 - In the AP Launcher again, search for and click Generate
@@ -37,23 +37,20 @@ Note: You can also self host an Archipelago game server, but that's outside the 
 - Check [here](https://docs.donutteam.com/docs/lucasmodlauncher/mods/installing-mods) for more help installing mods.
   
 - Under the "Settings" tab of the mod launcher, there are several optional mods. Don't enable anything that changes gameplay, but graphical changes or setting changes are fine.
-- Install .NET 8 from the link above. Make sure to install the **x86** version. The site will default to x64 as that's more modern, but SHAR needs x86.
+  Logic expects you to play between 60 and 150 fps.
+- Install .NET 10 from the link above. Make sure to install the **x86** version. The site will default to x64 as that's more modern, but SHAR needs x86.
 
 - Finally, extract SHARRandomizer.zip where ever you'd like.
 
 # Connecting and Playing
-- Download the patch file from your room.
+- Download the .apshar patch file from your room.
 - Open the SHAR Client in the AP launcher
-  - On first launch, 3 file select prompts will open asking for the patch file, SHARRandomizer.exe, and Lucas' Mod Launcher 
+  - On first launch, 3 file select prompts will open asking for SHARRandomizerFrontend.exe, Lucas' Mod Launcher, and the patch file 
   - On subsequent launches, it will just ask for the patch file. If you need to change the paths to the executables, you can do so in your host.yaml in the root of your AP install.
-- Enter your connection info in SHARRandomizer.exe
+- Enter your connection info in SHARRandomizerFrontend.exe
 - Enjoy!
 
 # Optional Extra Steps
-- Use the Text Client in the Archipelago launcher and connect with the same info used to connect in SHARRandomizer.exe. This will give you a better list of all items sent/received, an optional chat with other players in the multiworld, and an interface to use for hints.
-
-OR
-
 - Use Universal Tracker as a Text Client and a tracker to help identify in logic checks.
   - Download tracker.apworld from the pins in this [channel](https://discord.com/channels/731205301247803413/1367270230635839539).
   - Double click it and restart Archipelago Launcher (the same as when you installed simpsonshitnrun.apworld)

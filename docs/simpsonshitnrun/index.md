@@ -4,7 +4,7 @@ A 2003 Action Adventure game similar to the GTA series starring the Simpsons
 
 
 ## Downloads
-- <a href="https://github.com/nmize1/Archipelago/releases/download/v0.5.1-b/simpsonshitnrun.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/nmize1/Archipelago/releases/download/v0.5.3-b/simpsonshitnrun.apworld">Latest Version (0.5.3b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
