@@ -711,6 +711,20 @@
       "version_simple": "0.8.2",
       "world_version": "0.8.2"
     },
+    "0.8.4": {
+      "created_at": "2026-05-01T08:03:07Z",
+      "description": "## Changes to Mod\r\n\r\n* Correctly reference internal buffer of checks to send on reconnection (@CodeTriangle, #56).\r\n* Resend chests that are open upon reconnection to the server (@CodeTriangle, #56).\r\n\r\n## Changes to Generation\r\n\r\n* Add Mine Detector to the pool and make it required to complete **Digging Up the Past** (@CodeTriangle, #57).\r\n* Added the option **Circuit Overrides**, adds a number of **Circuit Override** items to the pool (@CodeTriangle, CodeTriangle/Archipelago#17)\r\n\r\n## Fixes to Logic\r\n\r\n* **Calzone Shop** is now considered in logic after acquiring **Pond Slums Pass** (@buanjautista, #60).\r\n* Fix an issue where the final boss room of **Grand Krys'kajo** erroneously expected two **Krys'kajo Key** items (@CodeTriangle, #58).",
+      "download_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.4/crosscode.apworld",
+      "has_manifest": true,
+      "hash_sha256": "38ee11ad4330e53c69b30e29cb8a826cbbf52a0b8a3cf8b5efe699b6448847d8",
+      "html_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.4",
+      "size": 129022,
+      "source_url": "https://api.github.com/repos/CodeTriangle/CCMultiworldRandomizer",
+      "tag": "0.8.4",
+      "title": "0.8.4",
+      "version_simple": "0.8.4",
+      "world_version": "0.8.4"
+    },
     "0.9.0-pre.1": {
       "created_at": "2026-04-25T09:19:25Z",
       "description": "## Additions\r\n\r\n* Added support for **Botanics** (@CodeTriangle):\r\n  * If enabled, acquiring all the information about each plant by collecting drops is a location.\r\n  * Enable the `botanity` option to use this feature.\r\n  * Along with this, you can also change how many plants are required to complete **Crocus Pocus** and the three intermediary locations.\r\n* Added support for the **A New Home** expansion (@kumquat-ir):\r\n  * Chests, quests, cutscenes, and shops added by the DLC are all now available as potential locations.\r\n  * Enable the `enable_dlc` option to use this feature.\r\n  * A new goal has been added (`diorbis`) that requires the player to descend Ku'lero Temple.\r\n\r\n## Migration Guide\r\n\r\nI **do not** recommend migrating to this release if you started your save file on 0.8.x or earlier.",
@@ -725,6 +739,21 @@
       "title": "0.9.0 Prerelease 1",
       "version_simple": "0.9.0",
       "world_version": "0.9.0rc1"
+    },
+    "0.9.0-pre.2": {
+      "created_at": "2026-05-01T08:51:45Z",
+      "description": "## Note\r\n\r\nThis release includes everything changed in release 0.8.4 (@CodeTriangle, @buanjautista).\r\n\r\n## Fixes to Logic\r\n\r\n* Changed the region where **Vivid Puff Plants** are found to East Gaia (@CodeTriangle, #59).\r\n* Fixed an issue where, regardless of the value set by **Botanics Completion Amount**, logic would still assume that 77 plants were required for botanics completion (@CodeTriangle, CodeTriangle/Archipelago#18).",
+      "download_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0-pre.2/crosscode.apworld",
+      "has_manifest": true,
+      "hash_sha256": "92679d8d75e464d2d39502c549165926fd12672d79b340e93338ef7945c85333",
+      "html_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.2",
+      "prerelease": true,
+      "size": 146469,
+      "source_url": "https://api.github.com/repos/CodeTriangle/CCMultiworldRandomizer",
+      "tag": "0.9.0-pre.2",
+      "title": "0.9.0 Prerelease 2",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0rc2"
     },
     "crosscode-0.2.0": {
       "created_at": "2023-09-06T05:39:45Z",
