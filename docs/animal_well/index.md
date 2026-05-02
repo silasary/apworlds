@@ -6,7 +6,7 @@ helpful and ominous as you discover unconventional upgrades and unravel the well
 
 
 ## Downloads
-- <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.3/animal_well.apworld">Latest Version (0.5.3)</a>
+- <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld">Latest Version (0.5.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

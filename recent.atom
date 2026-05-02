@@ -2,56 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-02T12:22:59.494294+00:00</updated>
+  <updated>2026-05-02T18:20:54.384235+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.6.0</id>
-    <title>Bloons TD6 v0.6.0</title>
-    <updated>2026-04-25T20:46:26+00:00</updated>
-    <author>
-      <name>Matt41321</name>
-    </author>
-    <content>- Added Upgrade Sanity Option&#13;
-- Logic for pop tier checks behind locked upgrades added</content>
-    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_6</id>
-    <title>Scooby-Doo! Night of 100 Frights v1</title>
-    <updated>2026-04-25T21:58:56+00:00</updated>
-    <author>
-      <name>vgm5</name>
-    </author>
-    <content># QOL Fix Release&#13;
-&#13;
-- Fixes some logic issues in DaSK regarding backtracking without springs&#13;
-- Fixes Memory Reads in Cower in the Tower causing level to lock up&#13;
-</content>
-    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.3</id>
-    <title>Black Ops 3 - Zombies v0.5.1</title>
-    <updated>2026-04-25T22:29:40+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>Mod update only, no apworld update&#13;
-&#13;
-- Origins:&#13;
-  - Exit teleporters are now restored&#13;
-  - QoL: After all staffs are placed, all 3 giants will have a hatch until the g-strike hole is blown open&#13;
-  - Player Save Additions:&#13;
-    - Has Shovel / Golden Shovel / Golden Helmet&#13;
-    - Number of spots dug&#13;
-    - Streak of bad dig rewards (3 losses means next dig spot is 100% a win)&#13;
-    - **Note:** Zombie Blood Dig Spots with Golden Shovel will currently not be restored&#13;
-- Locked wallbuys now show a neon red padlock symbol over them</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.3"/>
-  </entry>
   <entry>
     <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.6.0</id>
     <title>Crypt of the NecroDancer v0.6.0</title>
@@ -448,7 +403,7 @@ Setup guide: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/do
 &#13;
 Reworked backend rules generation.&#13;
 Reworked options to simplify generation.&#13;
-Changeling might work in conquest mode now.&#13;
+Changeling might work in conquest mode now (Buildings not randomised yet).&#13;
 &#13;
 Merged Mechanic Debuffs and Tech Requirements into a single QOL .pack for convenience.&#13;
 &#13;
@@ -982,6 +937,7 @@ None for now...&#13;
   - Why were like 20+ NPCs nuked from Pre-Prologue???&#13;
 - Moved the Loyal Knight to the Roadtown Region since they now appear there first.&#13;
 - A few more Checks related to other Options were added.&#13;
+&#13;
 I think that's all I did in this pre-release...</content>
     <link href="https://github.com/WolfBoi008/Block-Tales/releases/tag/pre-5.0.0-2"/>
   </entry>
@@ -1126,32 +1082,65 @@ This release includes everything changed in release 0.8.4 (@CodeTriangle, @buanj
     <author>
       <name>Silasary</name>
     </author>
-    <content>## 0.8.6
-Minor bug fixes, and Universal Tracker support.
-
-## 0.8.5
-* Fixed rare divide by zero error when calculating ingredient costs.
-
-## 0.8.4
-* Fixed crash when the satellite recipe had a byproduct of hot fluoroketone.
-* Adjusted apconfig.ini to account for weird linux installs where __PATH__system-read-data__ is not valid.
-
-## 0.8.3
-* Fixed compatibility with SpaceAgeWithoutSpace 0.0.17
-
-
-## 0.8.2
-* Added a `configure_server` script to the SAWS folder to help easily set up mod settings for the server.
-
-
-## 0.8.1
-* Prevented webhost from serving an incorrectly renamed mod file.
-
-
-## 0.8.0
-* Updated SAWS Client to use an isolated config folder.  This allows you to use the same Factorio executable for both server and client.
-  * Saves and Mods now go in the `factorio_saws` folder in your archipelago folder.
-  * This is a port of my PR for vanilla Factorio at https://github.com/ArchipelagoMW/Archipelago/pull/4221, hopefully it merges there in time for AP 0.6.4 🙂</content>
+    <content>## 0.8.6&#13;
+Minor bug fixes, and Universal Tracker support.&#13;
+</content>
     <link href="https://github.com/silasary/Archipelago/releases/tag/factorio_saws-0.8.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GlassToadstool/Archipelago/releases/tag/0.7.0</id>
+    <title>Portal 2 v0.7.0</title>
+    <updated>2026-05-02T14:02:49+00:00</updated>
+    <author>
+      <name>GlassToadstool</name>
+    </author>
+    <content>## Additions&#13;
+See the [mod page](https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.7.0) for additions.&#13;
+&#13;
+## Note&#13;
+You must use the latest (v0.7.0) version of the [Portal 2 Archipelago Mod](https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.7.0) with this version of the apworld.</content>
+    <link href="https://github.com/GlassToadstool/Archipelago/releases/tag/0.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ScipioWright/Archipelago-SW/releases/tag/0.5.4</id>
+    <title>ANIMAL WELL v0.5.4</title>
+    <updated>2026-05-02T15:01:11+00:00</updated>
+    <author>
+      <name>ScipioWright</name>
+    </author>
+    <content>First update after a long time. It's got the manifest file in it now, and a bunch of various bug fixes.&#13;
+&#13;
+This is marked as pre-release because I haven't tested it. If you test it and find that you're not having issues, please let us know in the Discord so I can get this marked as not a pre-release.&#13;
+&#13;
+## What's Changed&#13;
+* fix bobcat connector + more dazzle egg tricks by @Rooby-Roo in https://github.com/ScipioWright/Archipelago-SW/pull/89&#13;
+* Discord Logic Updates as of 7/31/25 by @Rooby-Roo in https://github.com/ScipioWright/Archipelago-SW/pull/92&#13;
+* Connection from truth egg spot to top of well via long bubble by @ScipioWright in https://github.com/ScipioWright/Archipelago-SW/pull/93&#13;
+* berry above frog kangaroo now accessible from lower by @Rooby-Roo in https://github.com/ScipioWright/Archipelago-SW/pull/94&#13;
+* Fix two logic issues from the Discord pins by @Rooby-Roo in https://github.com/ScipioWright/Archipelago-SW/pull/96&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/ScipioWright/Archipelago-SW/compare/0.5.3...0.5.4</content>
+    <link href="https://github.com/ScipioWright/Archipelago-SW/releases/tag/0.5.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.1</id>
+    <title>Factorio: Space Age v2.2.1</title>
+    <updated>2026-05-02T17:31:15+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 2.2.1&#13;
+&#13;
+* Fix crash when your slot names contains a space. Thanks `@Silasary` for reporting this on Discord.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.1"/>
   </entry>
 </feed>

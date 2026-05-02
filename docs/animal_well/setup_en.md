@@ -19,9 +19,17 @@
 - Upload your generated game (in you `Archipelago/output` folder) at the [Archipelago Uploads page](https://archipelago.gg/uploads), or host locally.
 
 ## Play the Randomized Game
-1. Launch ANIMAL WELL, and leave it on the title screen.
+1. Launch Animal Well, and leave it on the title screen.
 2. Open up the Archipelago Launcher, and click on ANIMAL WELL Client.
 3. Connect the client to the server. You should see it show the version number on the title screen if done correctly.
+
+## Linux extra setup
+1. Install Wine.
+2. Open Animal Well directory in a terminal (likely in ~/.local/share/Steam/steamapps/common/Animal Well).
+3. `wine Animal\ Well.exe`
+4. Download the Windows Archipelago installer, and use `wine NAME_OF_INSTALLER.exe` to install the Windows version of Archipelago.
+5. Install the APWorld for Animal Well.
+6. Launch the Animal Well and also the client.
 
 ## Notes
 - There are some options missing. This is known, and they will be made available as we get them to function.
