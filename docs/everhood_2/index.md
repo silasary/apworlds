@@ -4,7 +4,7 @@ Everhood 2 is a psychedelic rpg cross a rhythm game. Dodge notes sent by enemies
 
 
 ## Downloads
-- <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.4/everhood_2.apworld">Latest Version (0.4.4)</a>
+- <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.5/everhood_2.apworld">Latest Version (0.4.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
