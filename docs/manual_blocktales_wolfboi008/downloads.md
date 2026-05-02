@@ -1,9 +1,12 @@
 # Manual_BlockTales_WolfBoi008
 
 ## Latest
-- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-1/manual_blocktales_wolfboi008.apworld">Latest Version (5.0.0.post1)</a>
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-2/manual_blocktales_wolfboi008.apworld">Latest Version (5.0.0.post2)</a>
 
 ## All Versions
+
+#### v5.0.0.post2
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-2/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-2/manual_blocktales_wolfboi008.apworld</a>
 
 #### v5.0.0.post1
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-1/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-1/manual_blocktales_wolfboi008.apworld</a>
