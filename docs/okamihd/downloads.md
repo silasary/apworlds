@@ -1,9 +1,12 @@
 # Okami HD
 
 ## Latest
-- <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.3.4/okamihd.apworld">Latest Version (0.3.4)</a>
+- <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.4.0/okamihd.apworld">Latest Version (0.4.0)</a>
 
 ## All Versions
+
+#### v0.4.0
+- <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.4.0/okamihd.apworld">https://github.com/Ragmoa/Archipelago/releases/download/0.4.0/okamihd.apworld</a>
 
 #### v0.3.4
 - <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.3.4/okamihd.apworld">https://github.com/Ragmoa/Archipelago/releases/download/0.3.4/okamihd.apworld</a>

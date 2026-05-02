@@ -6,10 +6,10 @@ The [player options page for this game](../player-options) contains all the opti
 config file.
 
 ## What is randomized
-Moves, powerups(unlocked), collecting starcoins, unlocking worlds, buying hintmovies
+Moves, powerups (unlocked), collecting starcoins, unlocking worlds, buying hintmovies
 
 ## What is not randomized currently
-Levels(order), level completion, enemize, powerups (inside levels), pipes
+Levels (order), level completion, enemies, powerups (inside levels), pipes
 
 
 ## What is goal
@@ -68,8 +68,8 @@ In its current state the client doesnt modify the gamefile in any way (just edit
 
 
 ## Known bugs
- - At start of game and after completing a world the game moves you to the next without you having unlocked it, which breaks logic.
-   - The current solution is for you to manualy move to a world you have unlocked.
- - Saving the game is currently difficult depending on location. Do not close game or client when in peach castle or world 9.
+ - The game doesn't set your starting world correctly
+   - Go into a level and it will correct it by killing mario
+ - Saving the game is currently difficult depending on location. Do not close game or client when in peach's castle or world 9.
  - Report a bug either at the [github](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/issues) or in the NSMBW thread in the [AP discord](https://discord.com/channels/731205301247803413/1327187652864380948).
 
