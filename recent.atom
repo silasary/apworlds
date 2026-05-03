@@ -2,69 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-03T00:27:03.983681+00:00</updated>
+  <updated>2026-05-03T06:53:30.084617+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a</id>
-    <title>Cuphead v0.2.16908543</title>
-    <updated>2026-04-26T01:19:56+00:00</updated>
-    <author>
-      <name>JKLeckr</name>
-    </author>
-    <content>### Requires Archipelago 0.6.7!&#13;
-#### This is a prerelease which means that bugs have probably made a home in this build!&#13;
-&#13;
-Hot Dog! Another big update!&#13;
-&#13;
-See more information about this mod (bugs, workarounds, configs, etc) in the [Cuphead channel](https://discord.com/channels/731205301247803413/1497318235438186566) in the Archipelago Discord.&#13;
-&#13;
-*Note: Some YAML settings have changed format, check your yaml!*&#13;
-&#13;
-WARNING: This is in alpha, just be aware that bugs do live in things that are in alpha!&#13;
-&#13;
-**NOTE: This is not compatible with any apworld version older than alpha03 including prelease versions of alpha03!**&#13;
-&#13;
-### What's new in alpha03?&#13;
-&#13;
-- Rewritten logic!&#13;
-- Better Logic!&#13;
-- Chalice logic with double jump is implemented!&#13;
-- Partial hard logic (it works, but only a handful of stuffs has harder logic. More to come!)&#13;
-- Yet Another Project Restructure with cleaner logic code and better maintainability. (geek stuffs)&#13;
-- Universal tracker support!&#13;
-- Support for not starting with a weapon.&#13;
-- Lots of Logic and APWorld bugs fixed!&#13;
-- Even more!&#13;
-&#13;
-Have fun, and take care!&#13;
-</content>
-    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a"/>
-  </entry>
-  <entry>
-    <id>https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.5</id>
-    <title>TOEM: A Photo Adventure v2.0.5</title>
-    <updated>2026-04-26T02:33:32+00:00</updated>
-    <author>
-      <name>DrTChops</name>
-    </author>
-    <author>
-      <name>0xDEAFC0DE</name>
-    </author>
-    <author>
-      <name>Shellshe</name>
-    </author>
-    <content>Changes:&#13;
-&#13;
-- No client mod change from 2.0.4&#13;
-- Bugfix: Prevent occasionally generating an impossible Basto ER&#13;
-&#13;
-Randomizer details: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/en_TOEM.md&#13;
-Setup guide: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/setup_en.md</content>
-    <link href="https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.5"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-75</id>
     <title>Borderlands 2 v75</title>
@@ -1144,5 +1086,46 @@ Additionally, the logic assumes that the player knows of hidden paths throughout
 &#13;
 **Full Changelog**: https://github.com/tdkollins/Archipelago-Rabi-Ribi/compare/1.4.6...1.4.7</content>
     <link href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.4.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_8</id>
+    <title>Scooby-Doo! Night of 100 Frights v1</title>
+    <updated>2026-05-03T00:53:31+00:00</updated>
+    <author>
+      <name>vgm5</name>
+    </author>
+    <content># QOL Fix Release&#13;
+&#13;
+- Fixes some logic issues in Clamor 1 where the snacks behind the bookcase would not use the proper logic when not playing with keysanity on</content>
+    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/stubobis1/Archipelago/releases/tag/2.0.0</id>
+    <title>Path of Exile v2.0.0</title>
+    <updated>2026-05-03T03:06:23+00:00</updated>
+    <author>
+      <name>StuBob</name>
+    </author>
+    <content>## The built in python client is now deprecated. &#13;
+# Use the client here: https://github.com/stubobis1/Path-of-Exile-Archipelago-Client/releases/tag/2.0.0&#13;
+&#13;
+### New Feature: Area Locations&#13;
+- New option **Area visits as location checks** (`add_area_locations_to_location_pool`, default: on) — reaching zones counts as location checks&#13;
+- 612 area entries added; towns/encampments skipped&#13;
+- Area location IDs start at 42000 to avoid conflicts with base-item, level, and boss ID ranges&#13;
+- Only areas in acts ≤ goal act are included&#13;
+- `existing_char` preset has area locations disabled by default&#13;
+&#13;
+### Client&#13;
+- Electron frontend extracted to separate repository: [Path-of-Exile-Archipelago-Client](https://github.com/stubob/Path-of-Exile-Archipelago-Client)&#13;
+- Added as git submodule alongside `pathofexile_ap`&#13;
+- Fixed Linux&#13;
+&#13;
+### Internal&#13;
+- `total_gear_upgrades` added to slot data&#13;
+- `areaLocationsAsLocations` flag added to slot data&#13;
+- `scrape_act_areas.py` added (scraper used to generate area location data)&#13;
+</content>
+    <link href="https://github.com/stubobis1/Archipelago/releases/tag/2.0.0"/>
   </entry>
 </feed>
