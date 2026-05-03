@@ -2,49 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-02T18:20:54.384235+00:00</updated>
+  <updated>2026-05-03T00:27:03.983681+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.6.0</id>
-    <title>Crypt of the NecroDancer v0.6.0</title>
-    <updated>2026-04-26T00:22:57+00:00</updated>
-    <author>
-      <name>lastingParadox</name>
-    </author>
-    <content>### Changes&#13;
-- Add Traplink support to the AP World&#13;
-  - Add in 61 new traps, totalling traps to 71. Considering reducing/genericizing traps in the future, as many traps are similar in scope (summoning enemies, changing tempo, etc.)&#13;
-- Add in sending apworld version number to the mod for easy reference when connected (mod now shows this in the bottom left instead of "AP Connected".&#13;
-- Support sending server commands from the Redux mod (used to just support plaintext messaging)&#13;
-- Store CotND goal completion data in data storage as opposed to allowing the mod to consider goal progression on location checks&#13;
-- Multiply default TrapWeights weights by 10 for decimal weight support&#13;
-&#13;
-Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
-&#13;
-Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
-    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.1.0</id>
-    <title>Minecraft Fabric v1.1.0</title>
-    <updated>2026-04-26T00:56:33+00:00</updated>
-    <author>
-      <name>Deadlydiamond98</name>
-    </author>
-    <content>Modded is still very early expect the possibility of &#13;
-&#13;
-- Cyan, Lime, Green, and Brown dyes now exclude when either Dyed Items or Exploration Items are excluded rather than both&#13;
-- Fixed Logic Error for Gold and Iron Weapons&#13;
-- Changed Logic for a few golden items to account for Nether Gold Ore&#13;
-- Added Mod support for the following mods:&#13;
-	- Create&#13;
-	- Healing Pretty Good&#13;
-	- Iron Chests: Restocked</content>
-    <link href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a</id>
     <title>Cuphead v0.2.16908543</title>
@@ -1142,5 +1104,45 @@ general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/
 setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
 source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
     <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.2</id>
+    <title>Factorio Bob's v2.2.2</title>
+    <updated>2026-05-02T19:01:32+00:00</updated>
+    <author>
+      <name>Osiris32-and-a-half</name>
+    </author>
+    <content>Fixed crash that occurred when trying to load the Icon for unknown useful items (basically useful items from any other game in a MW)&#13;
+Some spelling fixes and optimizations as well&#13;
+Issues caused, found and fixed by @Enderdraak (CosmicWolf)</content>
+    <link href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.4.7</id>
+    <title>Rabi-Ribi v1.4.7</title>
+    <updated>2026-05-02T19:37:13+00:00</updated>
+    <author>
+      <name>PsyMarth</name>
+    </author>
+    <author>
+      <name>Phie</name>
+    </author>
+    <content>## Quick Links&#13;
+- [Game Info Page](https://github.com/tdkollins/Archipelago-Rabi-Ribi/blob/main/worlds/rabi_ribi/docs/en_Rabi-Ribi.md)&#13;
+- [Setup Guide](https://github.com/tdkollins/Archipelago-Rabi-Ribi/blob/main/worlds/rabi_ribi/docs/setup_beta_en.md)&#13;
+- [Known Issues](https://github.com/tdkollins/Archipelago-Rabi-Ribi/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)&#13;
+&#13;
+## Before Playing&#13;
+This randomizer assumes the player is aware of hidden techniques that allow the game to be beaten without items, even at the lowest settings. It is HIGHLY recommended to play through the Basic section of the [Platforming Tricks Tutorial](https://steamcommunity.com/sharedfiles/filedetails/?id=1706422414) before starting your first seed!&#13;
+&#13;
+Additionally, the logic assumes that the player knows of hidden paths throughout the game, revealed with Ribbon, Fire Orb, or Carrot Bombs. A patch is available to expose these paths, alongside other useful features! It can be enabled by setting "Apply Beginner Mod" to `true`.&#13;
+&#13;
+## What's Changed&#13;
+* Fix location sending for areas with items next to each other by @dclaganiere in https://github.com/tdkollins/Archipelago-Rabi-Ribi/pull/84&#13;
+* Remove redundant version constant by @dclaganiere in https://github.com/tdkollins/Archipelago-Rabi-Ribi/pull/85&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/tdkollins/Archipelago-Rabi-Ribi/compare/1.4.6...1.4.7</content>
+    <link href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.4.7"/>
   </entry>
 </feed>
