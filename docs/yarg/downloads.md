@@ -1,9 +1,12 @@
 # YARG
 
 ## Latest
-- <a href="https://github.com/energymaster22/YARGArchipelago/releases/download/0.0.14/yarg.apworld">Latest Version (0.0.14)</a>
+- <a href="https://github.com/energymaster22/YARGArchipelago/releases/download/0.0.15/yarg.apworld">Latest Version (0.0.15)</a>
 
 ## All Versions
+
+#### v0.0.15
+- <a href="https://github.com/energymaster22/YARGArchipelago/releases/download/0.0.15/yarg.apworld">https://github.com/energymaster22/YARGArchipelago/releases/download/0.0.15/yarg.apworld</a>
 
 #### v0.0.14
 - <a href="https://github.com/energymaster22/YARGArchipelago/releases/download/0.0.14/yarg.apworld">https://github.com/energymaster22/YARGArchipelago/releases/download/0.0.14/yarg.apworld</a>

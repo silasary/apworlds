@@ -4,7 +4,7 @@
 
 - Minecraft Java Edition
 - Minecraft Mod Loader
-  - Currently only fabric supported
+  - Currently NeoForge and Forge supported
 - [Archipelago mod for Minecraft](https://github.com/Stuff691734/Archipelago)
 
 ## Joining a Multiworld Game
@@ -19,7 +19,7 @@
 2. Run `/archipelago generate`
 3. A file will have been created in your .minecraft folder named output/archipelago_data.json
 4. Copy the json in that file (ctrl+a, ctrl+c) 
-5. in the automatically generated Modded Minecraft.yaml replace the curly brackets under checks with the copied json.
+5. in the yaml gotten from running `Generate Template Options` replace the curly brackets under checks with the copied json.
 
 ## Hosting A Game
 
@@ -29,4 +29,4 @@
 
 ## Issues
 - This apworld does not have any available checks at start.
-  - Add `{"minecraft:story/root":1}` to starting items.
+  - Add `{"adv minecraft:story/root":1}` to starting items.

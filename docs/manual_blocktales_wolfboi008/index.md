@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-2/manual_blocktales_wolfboi008.apworld">Latest Version (5.0.0.post2)</a>
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-3/manual_blocktales_wolfboi008.apworld">Latest Version (5.0.0.post3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

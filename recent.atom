@@ -2,142 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-04T00:30:40.966419+00:00</updated>
+  <updated>2026-05-04T07:04:21.799404+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.9.3</id>
-    <title>Casualties: Unknown v0.9.3</title>
-    <updated>2026-04-27T03:07:23+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.9.3&#13;
-This update is compatible with worlds generated on versions v0.9.0 and above!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
-&#13;
-# Additions&#13;
-- Universal Tracker support! Moodlesanity Questboard will no longer show incorrect moodles inside of UT [APWorld Change]&#13;
-# Changes&#13;
-- Archipelago Item descriptions now show an item's classification color&#13;
-- The "Moodlesanity Questboard Cooldown Time" YAML option can now be disabled entierly [APWorld Change]&#13;
-- The "Moodlesanity Exclusions" presets now must be in uppercase. This might break some pre-existing YAMLs! [APWorld Change]&#13;
-# Fixes&#13;
-- Fixed a missing space in the minigame locked popups&#13;
-- Actually fixed `Moodlesanity - Internal bleeding` this time&#13;
-- Optomised Archipelago Items code to cause less lag on lower end devices&#13;
-- Fixed the game mod thinking there was one more Archipelago Item than was set in the YAML, causing an empty item to spawn&#13;
-- Fixed Archipelago Items retaining their name and description after running out of locations instead of reverting to INT Experience Bundle items&#13;
-- Fixed Archipelago Items turning themselves back on after returning to the main menu&#13;
-# Known Issues&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed&#13;
-- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed&#13;
-&#13;
-**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.9.2...v0.9.3</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.9.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.4</id>
-    <title>Black Ops 3 - Zombies v0.5.4</title>
-    <updated>2026-04-27T10:07:11+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>This version of the mod is also compatible with lower 0.5 releases.&#13;
-&#13;
-Reminder that Moon and Origins do not currently have Easter Egg Checkpoints. You must use round or token checkpoints.&#13;
-&#13;
-**Apworld:**&#13;
-- New Option - Start with Super EE Reward - Starting RK5&#13;
-  - *Starting Pistol Max Ammo is not implemented yet*&#13;
-- Decreased number of rounds in logic given by weapon unlocks by 33%&#13;
-- Added 3 perk requirement to logically access round 18 on maps with more than 5 perks&#13;
-&#13;
-**Mod:**&#13;
-- Prevent Mystery Box being spun and giving a random map weapon when no more unlocked weapons are available&#13;
-  - *This behaviour does not work on Origins*&#13;
-- Solo Quick Revive no longer turns off after 3 uses&#13;
-- Remove perk weighting for Wunderfizz on Der Eisendrache, Gorod Krovi, Revelations and Origins&#13;
-- Der Eisendrache&#13;
-  - Dr Groph should no longer have repeating story or round based voiceover during late game restoration&#13;
-- Zetsubou No Shima&#13;
-  - If not brought in gobblegum pack, Anywhere But Here is added to an invisible 6th slot instead of overwriting the 5th slot&#13;
-- Archipelago Shop added to Moon and Origins&#13;
-&#13;
-**Known Issues:**&#13;
-- Shop Token count can show incorrectly on the client. You can still purchase the item if you have a token, even if the shop visually says otherwise.&#13;
-- Weapons restore with max ammo.</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/unsafetyskizzers/Archipelago/releases/tag/1.3.0</id>
-    <title>Pizza Tower v1.3.0</title>
-    <updated>2026-04-27T10:35:18+00:00</updated>
-    <author>
-      <name>Skizzers</name>
-    </author>
-    <author>
-      <name>Mitchell</name>
-    </author>
-    <author>
-      <name>Whimsidayo</name>
-    </author>
-    <content># Pizza Tower Archipelago v1.3.0&#13;
-[Setup](https://github.com/unsafetyskizzers/Archipelago/blob/pizza_ap/worlds/pizza_tower/docs/setup_en.md) | [Mod Page](https://gamebanana.com/mods/598236)&#13;
-&#13;
-It's been quite a bit but we've got a new update ready! This is an update for both the game mod and APWorld, so check that both are up-to-date, and don't forget to update your YAML as well.&#13;
-&#13;
-Here are all the changes and bugfixes:&#13;
-&#13;
-Changes:&#13;
-- Added Kill Snotty as a new completion goal&#13;
-- Added an optional Enemy Randomizer setting&#13;
-- The title screen now shows how many Archipelago saves you have and will allow you to clean the folder from within the game&#13;
-- Updated the granny sign to show all checked locations for each level on the floor&#13;
-- Rank locations checked by a collect won't trigger other location checks&#13;
-- Credits can now be skipped earlier&#13;
-- The jumpscare trap is now part of the trap weights instead of being a separate option. It's set to 0 by default&#13;
-- The Pizza Tower text client now shows a tab for Universal Tracker if you have it installed&#13;
-- Pizzaface now speeds up when you receive another deathlink while he's active&#13;
-- The game will now fully resync your items with the server state on connect&#13;
-- Toppins and Pumpkins are now tagged as "deprioritized"&#13;
-&#13;
-Fixes:&#13;
-- Fix softlock on Pizzaface if you're playing swap mode and don't have Noise's bomb&#13;
-- Fix issue where the game wasn't notified that Deathlink and Ringlink are enabled under certain circumstances&#13;
-- Fix issue where generation would fail if the toppin or pumpkin amount was set to 0&#13;
-- Fix issue where packets sent in very close proximity would sometimes not process&#13;
-- Fix issue where the location group names for DMAS and WAR's chef tasks didn't match the actual location names&#13;
-- Lots of logic fixes and other minor bugfixes</content>
-    <link href="https://github.com/unsafetyskizzers/Archipelago/releases/tag/1.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.6</id>
-    <title>TOEM: A Photo Adventure v2.0.6</title>
-    <updated>2026-04-27T11:20:48+00:00</updated>
-    <author>
-      <name>DrTChops</name>
-    </author>
-    <author>
-      <name>0xDEAFC0DE</name>
-    </author>
-    <author>
-      <name>Shellshe</name>
-    </author>
-    <content>Changes:&#13;
-&#13;
-- No client mod change from 2.0.4&#13;
-- Bugfix: Fix bad new version usage preventing connect&#13;
-&#13;
-Randomizer details: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/en_TOEM.md&#13;
-Setup guide: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/setup_en.md</content>
-    <link href="https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.0.6"/>
-  </entry>
   <entry>
     <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.5</id>
     <title>The Legend of Zelda - Spirit Tracks v0.7.5</title>
@@ -449,6 +318,58 @@ This revision overhauls weapon setup in the item pool, which fixes several issue
 This revision also fixes some issues with level_placements.&#13;
 </content>
     <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03b"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PinkSwitch/Archipelago/releases/tag/cvpor1.0</id>
+    <title>Castlevania: Portrait of Ruin v1.0.0</title>
+    <updated>2026-04-29T20:29:41+00:00</updated>
+    <author>
+      <name>Pink Switch</name>
+    </author>
+    <content># Castlevania: Portrait of Ruin Archipelago Version 1.0 #&#13;
+* Initial Release&#13;
+## Base Game Changes ##&#13;
+  - Fixed the bug where skipping Death's cutscene softlocks you&#13;
+  - Pre-game logos are skipped&#13;
+  - Items and skills over 9 can be picked up&#13;
+  - The drawbridge is always lowered&#13;
+  - You start with and have infinite use Magical Tickets that can be used to warp to the shop.&#13;
+  - The Forest of Doom portrait requires you to have Stella's Locket instead of showing it to Wind&#13;
+  - The MP Max up check in Forest of Doom now has a unique flag and can be collected properly&#13;
+  - Removed duplicate shoes in Sandy Grave&#13;
+  - Patched the glitch menu memory corruption bug&#13;
+  - Patched the suspend glitch&#13;
+  - The passage leading to the Nest of Evil now checks X portraits clear instead of some quest flag&#13;
+  - Added a platform below the elevator room check&#13;
+&#13;
+## Known Issues ##&#13;
+* Receiving numerous items may cause a glitchy popup to stay on screen. I have been unable to replicate this, please let me know if you have any information</content>
+    <link href="https://github.com/PinkSwitch/Archipelago/releases/tag/cvpor1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PinkSwitch/Archipelago/releases/tag/cvpor1.0.1</id>
+    <title>Castlevania: Portrait of Ruin v1.0.1</title>
+    <updated>2026-04-29T20:29:41+00:00</updated>
+    <author>
+      <name>Pink Switch</name>
+    </author>
+    <content># Castlevania: Portrait of Ruin Archipelago Version 1.0.1 #&#13;
+## New Settings ##&#13;
+N/A&#13;
+## Changes ##&#13;
+* Defeating Astarte after getting hit with Temptation now switches you back to Jonathan if you didn't have Change Cube&#13;
+* The Knife in the shop has been replaced with a Claymore (for breaking walls)&#13;
+* Charlotte will be dismissed after the cutscene in City of Haze unless you have Call Cube&#13;
+* Changed Headguard to Head Guard&#13;
+## Fixes ##&#13;
+* Fixed the items in the Dark Academy west building not being properly placed&#13;
+* Fixed spell logic expecting you to have Call instead of Skill&#13;
+* Fixed Tower of Death connecting to the top of the tower without highjump&#13;
+* Fixed corruption that happens when you get an item while having 9 of that item&#13;
+* You can no longer sell Magical Tickets&#13;
+## Known Issues ##&#13;
+* None so Far</content>
+    <link href="https://github.com/PinkSwitch/Archipelago/releases/tag/cvpor1.0.1"/>
   </entry>
   <entry>
     <id>https://github.com/Ragmoa/Archipelago/releases/tag/0.3.4</id>
@@ -906,6 +827,28 @@ This is marked as pre-release because I haven't tested it. If you test it and fi
     <link href="https://github.com/ScipioWright/Archipelago-SW/releases/tag/0.5.4"/>
   </entry>
   <entry>
+    <id>https://github.com/WolfBoi008/Block-Tales/releases/tag/pre-5.0.0-3</id>
+    <title>Manual_BlockTales_WolfBoi008 v5.0.0.post3</title>
+    <updated>2026-05-02T16:48:05+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+None for now...&#13;
+# Changelog&#13;
+- Removed the Chatsanity Checks for the Snowmen in Roadtown.&#13;
+  - They don't really directly talk to you, so it didn't feel necessary.&#13;
+- Added a Chatsanity Check for one of the Cottage Doors in Roadtown, since one of the people there speak to you from behind the door.&#13;
+- Removed some other Chatsanity Checks in the Blackrock Mountains and Blackrock Castle areas that no longer exist.&#13;
+- Added and removed some more various Chatsanity and Cutscenesanity Checks.&#13;
+- Added a new Option: Optional Bosses.&#13;
+  - Currently, the Cruel King DX and Supreme Mosquito content are the only things toggled by this Option.&#13;
+    - Adding to this, Cruel King DX's fight logically expects you to be able to finish Chapter 3. **This is not the final logic**, it's only temporary due to Chapters 4 and 5 not being implemented into the Manual yet.&#13;
+&#13;
+My current point in progress is the **beginning of Chapter 2**, so Prologue and Chapter 1 Goals should reflect the new changes in Demo 5. Anything past that will have changes that have not yet been reflected in the Manual quite yet.</content>
+    <link href="https://github.com/WolfBoi008/Block-Tales/releases/tag/pre-5.0.0-3"/>
+  </entry>
+  <entry>
     <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.1</id>
     <title>Factorio: Space Age v2.2.1</title>
     <updated>2026-05-02T17:31:15+00:00</updated>
@@ -1109,5 +1052,24 @@ Note:&#13;
 &#13;
 **Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.3.0-beta...v0.3.1-beta</content>
     <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.3.1-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.15</id>
+    <title>YARG v0.0.15</title>
+    <updated>2026-05-04T04:39:14+00:00</updated>
+    <author>
+      <name>energymaster22</name>
+    </author>
+    <content># Use Client Version 0.0.5+. No Client Update Required!&#13;
+&#13;
+New:&#13;
+- Support for the Creative Commons Hero Setlist&#13;
+&#13;
+## What's Changed&#13;
+* Added Creative Commons Hero Setlist by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/33&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.14...0.0.15</content>
+    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.15"/>
   </entry>
 </feed>

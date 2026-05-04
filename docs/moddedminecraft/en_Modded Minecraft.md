@@ -8,23 +8,9 @@ To do so the randomizer prevents you from getting advancements until you unlock 
 
 End goal is by default unlocking `minecraft:end/root` and killing the dragon. (can be changed to any other advancement)
 
-By default:
-
-- All advancements tabs
-
-Can be configured to:
-
-- All advancements not at the end of the advancement tree
-
-remaining unfilled items give 1 iron ingot
+items that get shuffled give you access to more advancements/quests and gives you items based on the advancement/quest (advancement icon/quest reward)
 
 ## What locations get shuffled?
 
-By default:
-
-- all advancements
-
-Can be configured to:
-
-- remove goal/challenge advancements (longer and/or harder advancements)
+locations are advancements and/or quests from ftb quests
 
