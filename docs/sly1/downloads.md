@@ -1,9 +1,12 @@
 # Sly Cooper and the Thievius Raccoonus
 
 ## Latest
-- <a href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v0.3.3-alpha/sly1.apworld">Latest Version (0.3.3a0)</a>
+- <a href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v0.3.4-alpha/sly1.apworld">Latest Version (0.3.4a0)</a>
 
 ## All Versions
+
+#### v0.3.4a0
+- <a href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v0.3.4-alpha/sly1.apworld">https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v0.3.4-alpha/sly1.apworld</a>
 
 #### v0.3.3a0
 - <a href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v0.3.3-alpha/sly1.apworld">https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v0.3.3-alpha/sly1.apworld</a>

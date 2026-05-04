@@ -5,7 +5,7 @@ Avenge your father and take back the pages of the Thievius Raccoonus from the Fi
 
 
 ## Downloads
-- <a href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v0.3.3-alpha/sly1.apworld">Latest Version (0.3.3a0)</a>
+- <a href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/download/v0.3.4-alpha/sly1.apworld">Latest Version (0.3.4a0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

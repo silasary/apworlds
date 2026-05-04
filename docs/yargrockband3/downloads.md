@@ -1,9 +1,12 @@
 # YARGRockBand3
 
 ## Latest
-- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.04.12/YARGRockBand3.apworld">Latest Version (26.4.12)</a>
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.04/YARGRockBand3.apworld">Latest Version (26.5.4)</a>
 
 ## All Versions
+
+#### v26.5.4
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.04/YARGRockBand3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.04/YARGRockBand3.apworld</a>
 
 #### v26.4.12
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.04.12/YARGRockBand3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.04.12/YARGRockBand3.apworld</a>
