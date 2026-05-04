@@ -4,7 +4,7 @@ Brave Fencer Musashi is a PlayStation RPG where you must rescue the Allucaneat K
 
 
 ## Downloads
-- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.5.0/bfm.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.5.1/bfm.apworld">Latest Version (0.5.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
