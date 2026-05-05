@@ -6,7 +6,7 @@ research new technologies, and become more efficient in your quest to build a ro
 
 
 ## Downloads
-- <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.8.6/factorio_saws.apworld">Latest Version (0.8.6)</a>
+- <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.9.0/factorio_saws.apworld">Latest Version (0.9.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
