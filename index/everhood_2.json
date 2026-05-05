@@ -291,6 +291,21 @@
       "title": "v0.4.6",
       "version_simple": "0.4.6",
       "world_version": "0.4.6"
+    },
+    "v0.4.7": {
+      "created_at": "2026-05-05T11:10:29Z",
+      "description": "> [!IMPORTANT]\r\n> While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Green Route 3 and many Hilbert Hotel rooms. Please bring my attention to them in Discord if they occur.\r\n\r\n> [!NOTE]\r\n> Minimum version of the APWorld is now 0.6.7.\r\n> THE APWORLD HAS NO UPDATE FOR THIS RELEASE, IT DOES NOT NEED TO BE UPDATED.\r\n\r\nSee 0.4.2 patch notes for the main changes: https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.2\r\n\r\n## AP World fixes\r\n- Fixed several soft locks that could occur if a location was collected: (Thanks DJN for providing files to diagnose this issue)\r\n  - `Yellow Mask` (Softlock fix was added)\r\n  - `V.I.P. Ticket` (Softlock fix was added)\r\n  - `Death Mountain King Gordo Reward` (No Fix added. Was unsure if it did softlock.)\r\n  - `Dragon Soul Weapon` (No Fix added. Was unsure if it did softlock.)\r\n- Prevented the following items being given by default (If the location was done already):\r\n  - V.I.P Ticket\r\n  - Yellow Mask\r\n  - All Weapons \r\n\r\nThere may be more cases of these issues that need to be fixed.\r\n\r\n\r\n# Installation\r\n## Melonloader\r\n*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*\r\n\r\n> You can find Everhood 2's folder by finding the game in your steam library, right clicking it and choosing *Manage\u2192Browse Local Files*.\r\n\r\n### Windows\r\n1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.\r\n2. Select Everhood 2 in the list of games.\r\n   - If Everhood 2 does not appear, click add game manually then browse to `Everhood 2 .exe`.\r\n3. Click install. \r\n    - If the latest version is not working: **Untick Latest and select 0.7.2**\r\n\r\n### Linux\r\n1. Navigate to Everhood 2 on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES=\"version=n,b\" %command%`\r\n2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.\r\n   - You may need to give it permissions to execute.\r\n3. Select Everhood 2 in the list of games.\r\n    - If Everhood 2 does not appear, click add game manually then browse to `Everhood 2.exe`.\r\n4. Click install.\r\n    - If the latest version is not working: **Untick Latest and select 0.7.2**\r\n\r\n## Mod Install\r\n\r\n1.Download `ArchipelagoEverhood.zip`.\r\n2. Head to the Everhood 2 folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.\r\n3. Extract the contents of the .zip file into mods. Ensure the files are not in a subfolder, this mod is not setup for that yet.\r\n4. Run the game. If a new button appears on the start screen the mod was installed correctly.\r\n",
+      "download_url": "https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.7/everhood_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3ffb6049d5c1b2e965a6fd02afac04027963859a3bf08f78a6713b669d505642",
+      "html_url": "https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.7",
+      "minimum_ap_version": "0.6.7",
+      "size": 20455,
+      "source_url": "https://api.github.com/repos/DeamonHunter/ArchipelagoEverhood2",
+      "tag": "v0.4.7",
+      "title": "v0.4.7",
+      "version_simple": "0.4.6",
+      "world_version": "0.4.6"
     }
   }
 }

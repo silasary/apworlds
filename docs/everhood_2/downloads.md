@@ -8,6 +8,9 @@
 #### v0.4.6
 - <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.6/everhood_2.apworld">https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.6/everhood_2.apworld</a>
 
+#### v0.4.6
+- <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.7/everhood_2.apworld">https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.7/everhood_2.apworld</a>
+
 #### v0.4.5
 - <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.5/everhood_2.apworld">https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.5/everhood_2.apworld</a>
 

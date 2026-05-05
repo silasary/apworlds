@@ -2,21 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-05T06:49:30.614363+00:00</updated>
+  <updated>2026-05-05T12:32:31.955569+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.3.0/lingo2.apworld</id>
-    <title>Lingo 2 v9.3.0</title>
-    <updated>2026-04-30T00:25:45.208105+00:00</updated>
-    <author>
-      <name>hatkirby</name>
-    </author>
-    <content/>
-    <link href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.3.0/lingo2.apworld"/>
-  </entry>
   <entry>
     <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.3</id>
     <title>plateup v0.2.6.3</title>
@@ -1020,5 +1010,66 @@ https://docs.google.com/spreadsheets/d/1l2KPbde1qFznVFmOZbg8Ee7_sfi5h65sCRZXVndf
 * Apparently the *Link options in the manager did absolutely nothing, that's now fixed&#13;
 * Replaced bundled docs' text with links to my WIP webpage.</content>
     <link href="https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.7</id>
+    <title>Everhood 2 v0.4.6</title>
+    <updated>2026-05-05T11:10:29+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content>&gt; [!IMPORTANT]&#13;
+&gt; While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Green Route 3 and many Hilbert Hotel rooms. Please bring my attention to them in Discord if they occur.&#13;
+&#13;
+&gt; [!NOTE]&#13;
+&gt; Minimum version of the APWorld is now 0.6.7.&#13;
+&gt; THE APWORLD HAS NO UPDATE FOR THIS RELEASE, IT DOES NOT NEED TO BE UPDATED.&#13;
+&#13;
+See 0.4.2 patch notes for the main changes: https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.2&#13;
+&#13;
+## AP World fixes&#13;
+- Fixed several soft locks that could occur if a location was collected: (Thanks DJN for providing files to diagnose this issue)&#13;
+  - `Yellow Mask` (Softlock fix was added)&#13;
+  - `V.I.P. Ticket` (Softlock fix was added)&#13;
+  - `Death Mountain King Gordo Reward` (No Fix added. Was unsure if it did softlock.)&#13;
+  - `Dragon Soul Weapon` (No Fix added. Was unsure if it did softlock.)&#13;
+- Prevented the following items being given by default (If the location was done already):&#13;
+  - V.I.P Ticket&#13;
+  - Yellow Mask&#13;
+  - All Weapons &#13;
+&#13;
+There may be more cases of these issues that need to be fixed.&#13;
+&#13;
+&#13;
+# Installation&#13;
+## Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+&gt; You can find Everhood 2's folder by finding the game in your steam library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+&#13;
+### Windows&#13;
+1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Select Everhood 2 in the list of games.&#13;
+   - If Everhood 2 does not appear, click add game manually then browse to `Everhood 2 .exe`.&#13;
+3. Click install. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+### Linux&#13;
+1. Navigate to Everhood 2 on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES="version=n,b" %command%`&#13;
+2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+   - You may need to give it permissions to execute.&#13;
+3. Select Everhood 2 in the list of games.&#13;
+    - If Everhood 2 does not appear, click add game manually then browse to `Everhood 2.exe`.&#13;
+4. Click install.&#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+## Mod Install&#13;
+&#13;
+1.Download `ArchipelagoEverhood.zip`.&#13;
+2. Head to the Everhood 2 folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.&#13;
+3. Extract the contents of the .zip file into mods. Ensure the files are not in a subfolder, this mod is not setup for that yet.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.7"/>
   </entry>
 </feed>
