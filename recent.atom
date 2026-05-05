@@ -2,151 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-05T12:32:31.955569+00:00</updated>
+  <updated>2026-05-05T18:38:19.038108+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.3</id>
-    <title>plateup v0.2.6.3</title>
-    <updated>2026-04-30T10:04:34+00:00</updated>
-    <author>
-      <name>CazIsABoi</name>
-    </author>
-    <content>## What's New?&#13;
-- Added `random_research` — research desk randomisation can now be enabled from the YAML. This is off by default&#13;
-- Added progressive day leases — when enabled, the first Day Lease for each food is required from Day 1, effectively making it act like a food unlock and helping prevent players from being locked out of foods after franchising&#13;
-- Day and franchise logic now has softer progression gates. A day block can now be considered in logic if you have any of the following:&#13;
-  - enough relevant Day Leases&#13;
-  - any speed upgrade&#13;
-  - at least 3 named appliance unlocks, when appliance unlocks are enabled&#13;
-- Dish-day and franchise-day gates now both use the new block logic&#13;
-- "Lose a Run" is now excluded from progression placement for both franchise and complete-days goals, keeping it filler-only&#13;
-- Added slot data support for `random_research` and `day_leases_progressive` so the client can correctly receive both settings&#13;
-&#13;
-## New YAML Options&#13;
-&#13;
-**`random_research`** — Enables random research mode. When enabled, the research desk randomly researches into any appliance in the pool instead of following the fixed progression path. When disabled, the research desk works as in vanilla. Defaults to `false`.&#13;
-&#13;
-```yaml&#13;
-random_research:&#13;
-  # Enable random research mode.&#13;
-  # When enabled, the research desk randomly researches into any appliance in the pool instead of the fixed progression path.&#13;
-  # When disabled, the research desk works as in vanilla.&#13;
-  'false': 50&#13;
-  'true': 0&#13;
-```&#13;
-&#13;
-**day_leases_progressive** — Makes day leases act as progressive items. When enabled, the first lease for each food or dish is required to play even Day 1. This makes the first lease act as an unlock, helping prevent players from starting a food freely and then becoming gated mid-run after franchising elsewhere. Only relevant when **day_leases_enabled** is on. Defaults to **false**.&#13;
-&#13;
-```yaml&#13;
-day_leases_progressive:&#13;
-  # Make day leases act as progressive items: the first lease for each food/dish is required to play even Day 1.&#13;
-  # When enabled, leases_required = ceil(day / interval) — every day block requires at least one lease, so the&#13;
-  # first lease acts as an unlock, preventing players from starting a food freely and then being gated mid-run.&#13;
-  # When disabled (default), the first block of days (1 to interval) is free, and leases gate subsequent blocks.&#13;
-  # This can help prevent players from being locked out of foods after franchising elsewhere.&#13;
-  # Only relevant when day_leases_enabled is on.&#13;
-  'false': 50&#13;
-  'true': 0&#13;
-```&#13;
-&#13;
-## Logic Changes&#13;
-&#13;
-Day blocks now have more flexible access rules. Instead of only checking for the required number of leases, a block may be in logic if the player has one of several forms of progression:&#13;
-&#13;
-- enough Day Leases for that block&#13;
-- any speed upgrade&#13;
-- enough named appliance unlocks, capped at min(3, day_lease_interval)&#13;
-&#13;
-This should make progression feel less brittle, especially when appliance unlocks are enabled or when players receive useful speed upgrades early.&#13;
-&#13;
-[Mod Update 0.2.6.3](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.6.3)</content>
-    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.1.1</id>
-    <title>Minecraft Fabric v1.1.1</title>
-    <updated>2026-04-30T20:37:42+00:00</updated>
-    <author>
-      <name>Deadlydiamond98</name>
-    </author>
-    <content>- Fixed Oversight with Healing Pretty Good Advancements that made the mod not work in syncs&#13;
-- Fixed Cogs still being craftable when Cogwheels are locked (Create Mod)&#13;
-- Updated Logic for Red Sand Items when Create is present&#13;
-- Music Disc Heartstep (Healing Pretty Good) is now excluded with other music discs&#13;
-- Relocked a debug command that was accidentally left enabled&#13;
-- Fishing Rod Recipes now also locks carrot on a stick and warped fungus on a stick&#13;
-- Fixed Logic Error for Netherite Block&#13;
-- Added TNT recipes as a progression item&#13;
-- All Netherite Items now require TNT to be considered in Logic&#13;
-- Added two new progression Items for Create:&#13;
-   - Sand Paper Recipes&#13;
-   - Blaze Burners&#13;
-- Added two new junk items for Minecraft:&#13;
-   - Copper Ore Vein&#13;
-   - Large Copper Ore Vein&#13;
-- The following blocks now can’t be broken without their proper check:&#13;
-   - Brewing Stand&#13;
-   - Grindstone&#13;
-   - Stonecutter&#13;
-   - Loom&#13;
-   - Cartography Table&#13;
-   - Smithing Table&#13;
-   - Beds&#13;
-   - Respawn Anchor&#13;
-   - Anvil&#13;
-   - Enchanting Table&#13;
-- Added additional Itemsanity Exclusion Options for the following:&#13;
-   - Flowers&#13;
-   - Slabs&#13;
-   - Stairs&#13;
-   - Walls / Fences / Fence Gates</content>
-    <link href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.1.1.1</id>
-    <title>Minecraft Fabric v1.1.1.1</title>
-    <updated>2026-04-30T20:37:42+00:00</updated>
-    <author>
-      <name>Deadlydiamond98</name>
-    </author>
-    <content># Minecraft Fabric (1.1.1.1)&#13;
-&#13;
-Mod Link: https://modrinth.com/mod/archipelago-mod&#13;
-AP World Link: https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases&#13;
-Wiki: https://modded.wiki/w/Fabric_Archipelago_Mod&#13;
-&#13;
-Changelog:&#13;
-Minecraft&#13;
-&#13;
-- Fixed error with yaml options where Flowers and Rare Ores were merged on template&#13;
-- Fixed Logic Error with Carved Pumpkin being in sphere 1&#13;
-- "You've Got a Friend in Me" is now considered an exploration advancement&#13;
-- Scaffolding, Spore Blossom, Leads, and Drip Leaf are now Exploration Items&#13;
-- Updated Logic for Netherite Mining to account for beds&#13;
-&#13;
-Create&#13;
-&#13;
-- Scoria now no longer requires Nether Access to be considered in Logic&#13;
-- Updated Logic for Scorchia to require either Nether Access or Black Dye&#13;
-- Decorative Deepslate Blocks from the Create mod now require smelting to be considered in logic&#13;
-- Red Sandpaper is no longer considered an Exploration Item (as Create has ways to obtain it without finding a Mesa)</content>
-    <link href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/tag/v.1.1.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_7</id>
-    <title>Scooby-Doo! Night of 100 Frights v1</title>
-    <updated>2026-04-30T23:17:46+00:00</updated>
-    <author>
-      <name>vgm5</name>
-    </author>
-    <content># QOL Fix Release&#13;
-&#13;
-- Fixes some logic issues in Cellar 4 for both entry from Cellar 3 and for the High Up Snackbox in snacksanity not requiring Springs</content>
-    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_7"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-76</id>
     <title>Borderlands 2 v76</title>
@@ -934,7 +794,7 @@ https://docs.google.com/spreadsheets/d/1l2KPbde1qFznVFmOZbg8Ee7_sfi5h65sCRZXVndf
   </entry>
   <entry>
     <id>https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.5</id>
-    <title>SMW: Spicy Mycena Waffles v1.3.5</title>
+    <title>SMW: Spicy Mycena Waffles v1.3.5.post2</title>
     <updated>2026-05-05T06:09:54+00:00</updated>
     <author>
       <name>lx5</name>
@@ -961,7 +821,7 @@ https://docs.google.com/spreadsheets/d/1l2KPbde1qFznVFmOZbg8Ee7_sfi5h65sCRZXVndf
   </entry>
   <entry>
     <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx-v1.6.1</id>
-    <title>Mega Man X v1.6.1</title>
+    <title>Mega Man X v1.6.1.post2</title>
     <updated>2026-05-05T06:11:40+00:00</updated>
     <author>
       <name>lx5</name>
@@ -990,7 +850,7 @@ https://docs.google.com/spreadsheets/d/1l2KPbde1qFznVFmOZbg8Ee7_sfi5h65sCRZXVndf
   </entry>
   <entry>
     <id>https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.1</id>
-    <title>Donkey Kong Country 2 v3.1.1</title>
+    <title>Donkey Kong Country 2 v3.1.1.post2</title>
     <updated>2026-05-05T06:12:08+00:00</updated>
     <author>
       <name>lx5</name>
@@ -1071,5 +931,31 @@ There may be more cases of these issues that need to be fixed.&#13;
 4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
 </content>
     <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.2.0</id>
+    <title>A Link Between Worlds v0.2.0</title>
+    <updated>2026-05-05T18:11:50+00:00</updated>
+    <author>
+      <name>randomsalience</name>
+    </author>
+    <content>## New Features&#13;
+- Mother Maiamai may now give 9 checks. Each requires a Ravio item and also has a maiamai threshold that must be reached before the item can be obtained. Use option `shuffle_maiamai_rewards` to control whether Mother Maiamai checks are included, and use option `maiamai_limit` to set the maximum possible number of required maiamai.&#13;
+- Hint ghosts now provide hints. Set `hint_ghosts` to `always` to enable them, or set to `glasses` to enable them once you have received the Hint Glasses.&#13;
+- Death Link is now an available option. (@Bloonie)&#13;
+- New `initial_crack_state` option `progressive` replaces the bracelets with two Progressive Merge items. The first one you get gives you the activated bracelet, and the second one gives you the quake that opens the cracks.&#13;
+- Option `priority_bosses` makes all boss heart containers into priority locations.&#13;
+- Setting `mod_path` in `host.yaml` to the path to your Azahar `load/mods` folder or your `luma/titles` folder allows the patcher to install the mod automatically (optional).&#13;
+&#13;
+## Changes&#13;
+- Accessing the Eastern Palace boss without both small keys is moved to Hard logic.&#13;
+- Option `minigames_excluded` now removes minigame locations from the pool.&#13;
+- Desert Palace logic changed to prevent a self-locking key.&#13;
+- Region hint names changed to match standalone randomizer hints.&#13;
+&#13;
+## Fixes&#13;
+- Fixed an error when running from WebHost.&#13;
+- Improved speed of pre_fill step.</content>
+    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.2.0"/>
   </entry>
 </feed>

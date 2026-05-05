@@ -216,6 +216,21 @@
       "title": "Mega Man X1 v1.6.1",
       "version_simple": "1.6.1",
       "world_version": "1.6.1"
+    },
+    "mmx-v1.6.1r2": {
+      "created_at": "2026-05-05T06:11:40Z",
+      "description": "This was an absolute nightmare to playtest in a group session. I'd do it again tho.\r\n## Info\r\n* [General info](https://thelx5.github.io/mmx/index.html)\r\n* [Setup](https://thelx5.github.io/mmx/setup.html)\r\n* Additional client commands are implemented, use `/help` to see which commands are available\r\n## Changes\r\n* Implemented DamageLink (named SharedDamage for tagging purposes)\r\n\t* Whenever players take a hit they send a Damage signal to others\r\n\t* Currently MMX handles it like this:\r\n\t\t* Other MMX players get hurt when the cumulative damage gets to 10\r\n    * Can receive up to 12 HP worth of damage at once\r\n    * Respects `Body Upgrade` added defense\r\n    * Sends 10 damage to players per HP lost\r\n* Players no longer receive items or DeathLinks during the level intro (falling from the sky)\r\n* Players now go directly to the Game Clear screen once Sigma is defeated (removes credits sequence)\r\n* Optimized Sigma Opening logic code from the ROM side (should experience slightly less lag overall)\r\n  * This forces you to watch the Progress Screen in order to process Sigma's Fortress unlocking criteria\r\n* Made the intro sequence skip directly to the main menu after the CAPCOM logo\r\n* Dashed lemons now appear green instead of yellow/orange\r\n* ~~Stole~~ Copied Mega Man 1/2/3's way to extract ROMs from the X Legacy Collection executable file",
+      "download_url": "https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.1/mmx.apworld",
+      "has_manifest": true,
+      "hash_sha256": "788f4761438b60533257fa56bc1c6ae9b4e37bd4d7cb7a51ef7ea551f714535b",
+      "html_url": "https://github.com/TheLX5/Archipelago/releases/tag/mmx-v1.6.1",
+      "minimum_ap_version": "0.6.5",
+      "size": 53595,
+      "source_url": "https://api.github.com/repos/TheLX5/Archipelago",
+      "tag": "mmx-v1.6.1r2",
+      "title": "Mega Man X1 v1.6.1",
+      "version_simple": "1.6.1",
+      "world_version": "1.6.1.post2"
     }
   }
 }
