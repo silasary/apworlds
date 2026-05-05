@@ -1,9 +1,12 @@
 # Fez
 
 ## Latest
-- <a href="https://github.com/nhyldmar/fez-ap/releases/download/v0.4.0/fez.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/nhyldmar/fez-ap/releases/download/v0.5.0/fez.apworld">Latest Version (0.5.0)</a>
 
 ## All Versions
+
+#### v0.5.0
+- <a href="https://github.com/nhyldmar/fez-ap/releases/download/v0.5.0/fez.apworld">https://github.com/nhyldmar/fez-ap/releases/download/v0.5.0/fez.apworld</a>
 
 #### v0.4.0
 - <a href="https://github.com/nhyldmar/fez-ap/releases/download/v0.4.0/fez.apworld">https://github.com/nhyldmar/fez-ap/releases/download/v0.4.0/fez.apworld</a>

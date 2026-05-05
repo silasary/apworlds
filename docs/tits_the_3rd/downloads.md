@@ -1,9 +1,12 @@
 # Trails in the Sky the 3rd
 
 ## Latest
-- <a href="https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/0.1.6/tits_the_3rd.apworld">Latest Version (0.1.6)</a>
+- <a href="https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/0.1.7/tits_the_3rd.apworld">Latest Version (0.1.7)</a>
 
 ## All Versions
+
+#### v0.1.7
+- <a href="https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/0.1.7/tits_the_3rd.apworld">https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/0.1.7/tits_the_3rd.apworld</a>
 
 #### v0.1.6
 - <a href="https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/0.1.6/tits_the_3rd.apworld">https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/0.1.6/tits_the_3rd.apworld</a>
