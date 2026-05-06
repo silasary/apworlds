@@ -1,4 +1,4 @@
-# 
+# YARGLEGORockBand
 
 ## Latest
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.04/YARGLEGORockBand.apworld">Latest Version (26.5.4)</a>

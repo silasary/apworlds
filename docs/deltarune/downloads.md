@@ -8,6 +8,9 @@
 #### v1.2.99
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2/deltarune.apworld</a>
 
+#### v1.2.99
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2a/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2a/deltarune.apworld</a>
+
 #### v1.2.2
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta-1/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta-1/deltarune.apworld</a>
 
