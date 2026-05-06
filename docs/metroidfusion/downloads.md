@@ -68,6 +68,9 @@
 #### v2
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/MF-v2/metroidfusion.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/MF-v2/metroidfusion.apworld</a>
 
+#### v1.22.0
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.22.0/metroidfusion.apworld">https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.22.0/metroidfusion.apworld</a>
+
 #### v1
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/MF-v1/metroidfusion.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/MF-v1/metroidfusion.apworld</a>
 
