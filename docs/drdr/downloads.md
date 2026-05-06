@@ -11,6 +11,9 @@
 #### v0.2.3
 - <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/1.0.0/drdr.apworld">https://github.com/Str8UpWHITE64/DRAP/releases/download/1.0.0/drdr.apworld</a>
 
+#### v0.2.3
+- <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/1.0.1/drdr.apworld">https://github.com/Str8UpWHITE64/DRAP/releases/download/1.0.1/drdr.apworld</a>
+
 #### v0.0.1
 - <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/0.0.10/drdr.apworld">https://github.com/Str8UpWHITE64/DRAP/releases/download/0.0.10/drdr.apworld</a>
 
