@@ -1,22 +1,18 @@
-# Clique Start Guide
+# Bomberman Hero Setup Guide
 
-After rolling your seed, go to the [Clique Game](http://clique.pharware.com/) site and enter the server details, your 
-slot name, and a room password if one is required. Then click "Connect".
-
-If you're playing on "easy mode", just click the button and receive "Satisfaction".
-
-If you're playing on "hard mode", you may need to wait for activation before you can complete your objective. Luckily, 
-Clique runs in most major browsers that support HTML5, so you can load Clique on your phone and be productive while 
-you wait!
-
-If you need some ideas for what to do while waiting for button activation, give the following a try:
-
-- Clean your room.
-- Wash the dishes.
-- Get some food from a non-descript fast food restaurant.
-- Do the daily Wordle.
-- ~~Sell your soul to Phar.~~
-- Do your school work.
+## What you need
+- Bizhawk https://tasvideos.org/BizHawk/ReleaseHistory#Bizhawk210
+- The latest Bomberman Hero .apworld provided in the latest release post
+https://discord.com/channels/731205301247803413/1330612852867858505/1330734687798300764
 
 
-~~If you run into any issues with this game, definitely do not contact **thephar** on discord. *wink* *wink*~~
+## Installation
+Same as every other unsupported N64 apworld, 
+- simply move bomberman_hero.apworld into the custom_worlds directory in your Archipelago install server
+(default path: C:\ProgramData\Archipelago\custom_worlds)
+- or simply double click the apworld and it should install itself (Archipelago version 0.5.0 and later)
+
+## Running
+1. In the Archipelago launcher push the 'Generate Template Options' button to generate a yaml for your options
+2. Like every other apworld, fill out your yaml options and have the host generate the multiworld, the produced zip file should contain a .apbombh patch file. Recieve this .apbombh patch from the multiworld host.
+3. Push the 'Open Patch' button in the launcher and it should ask for a 'Bomberman Hero (US)' legal ROM dump (MD5 Hash: ef2453bff7ad0c4bfa9ab0bd6324ebf3), then select the generated  .apbombh patch file to produce a .z64 ROM which should auto launch in a bizhawk instance. You should be set otherwise from here just follow the same instructions as any other supported N64 apworld.
