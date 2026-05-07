@@ -2,40 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-07T07:06:17.849717+00:00</updated>
+  <updated>2026-05-07T12:41:51.199201+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/stubobis1/Archipelago/releases/tag/2.0.0</id>
-    <title>Path of Exile v2.0.0</title>
-    <updated>2026-05-03T03:06:23+00:00</updated>
-    <author>
-      <name>StuBob</name>
-    </author>
-    <content>## The built in python client is now deprecated. &#13;
-# Use the client here: https://github.com/stubobis1/Path-of-Exile-Archipelago-Client/releases/tag/2.0.0&#13;
-&#13;
-### New Feature: Area Locations&#13;
-- New option **Area visits as location checks** (`add_area_locations_to_location_pool`, default: on) — reaching zones counts as location checks&#13;
-- 612 area entries added; towns/encampments skipped&#13;
-- Area location IDs start at 42000 to avoid conflicts with base-item, level, and boss ID ranges&#13;
-- Only areas in acts ≤ goal act are included&#13;
-- `existing_char` preset has area locations disabled by default&#13;
-&#13;
-### Client&#13;
-- Electron frontend extracted to separate repository: [Path-of-Exile-Archipelago-Client](https://github.com/stubob/Path-of-Exile-Archipelago-Client)&#13;
-- Added as git submodule alongside `pathofexile_ap`&#13;
-- Fixed Linux&#13;
-&#13;
-### Internal&#13;
-- `total_gear_upgrades` added to slot data&#13;
-- `areaLocationsAsLocations` flag added to slot data&#13;
-- `scrape_act_areas.py` added (scraper used to generate area location data)&#13;
-</content>
-    <link href="https://github.com/stubobis1/Archipelago/releases/tag/2.0.0"/>
-  </entry>
   <entry>
     <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.7.2</id>
     <title>Plants vs. Zombies: Replanted v1.7.2</title>
@@ -997,5 +968,27 @@ new stuff (since 0.5.2):&#13;
 * skip over progressive travels when regions are in remove_specific option&#13;
 * rework generics and add loader, crystalisk, surveyor</content>
     <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-77"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ragmoa/Archipelago/releases/tag/0.4.1</id>
+    <title>Okami HD v0.4.1</title>
+    <updated>2026-05-07T11:00:53+00:00</updated>
+    <author>
+      <name>Ragmoa</name>
+    </author>
+    <content># Okami HD APWorld 0.4.1&#13;
+**Important: This version requires Archipelago 0.6.7+**&#13;
+&#13;
+# What's Changed&#13;
+* Add missing act 1 merchants  by @Ragmoa in https://github.com/Ragmoa/Archipelago/pull/46&#13;
+* Better handling Divine Retribution as a starting item by @Ragmoa in https://github.com/Ragmoa/Archipelago/pull/47&#13;
+* Add Okami HD game info by @Ragmoa in https://github.com/Ragmoa/Archipelago/pull/48&#13;
+* Test fix region name type issue by @Ragmoa in https://github.com/Ragmoa/Archipelago/pull/52&#13;
+* fix somes locations names and logic by @Ragmoa in https://github.com/Ragmoa/Archipelago/pull/45&#13;
+* Use rule builder to write logic by @Ragmoa in https://github.com/Ragmoa/Archipelago/pull/53&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Ragmoa/Archipelago/compare/0.4.0...0.4.1</content>
+    <link href="https://github.com/Ragmoa/Archipelago/releases/tag/0.4.1"/>
   </entry>
 </feed>
