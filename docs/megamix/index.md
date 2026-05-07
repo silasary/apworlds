@@ -6,7 +6,7 @@ until you have enough to play and complete the goal song!
 
 
 ## Downloads
-- <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.4.4B/megamix.apworld">Latest Version (1.4.4.post2)</a>
+- <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.5.0B/megamix.apworld">Latest Version (1.5.0b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

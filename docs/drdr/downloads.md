@@ -1,9 +1,12 @@
 # Dead Rising Deluxe Remaster
 
 ## Latest
-- <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/0.2.3/drdr.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/1.0.1/drdr.apworld">Latest Version (1.0.1.post2)</a>
 
 ## All Versions
+
+#### v1.0.1.post2
+- <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/1.0.1/drdr.apworld">https://github.com/Str8UpWHITE64/DRAP/releases/download/1.0.1/drdr.apworld</a>
 
 #### v0.2.3
 - <a href="https://github.com/Str8UpWHITE64/DRAP/releases/download/0.2.3/drdr.apworld">https://github.com/Str8UpWHITE64/DRAP/releases/download/0.2.3/drdr.apworld</a>

@@ -17,12 +17,14 @@ Optionally, the following could also be location checks:
 They may contain items for different games as well as different items from within 100th Black Market.
 
 ## What is the goal of 100th Black Market when randomized?
-You may choose 1 out of 5 goals to reach for in this implementation.
+You may choose 1 out of 7 goals to reach for in this implementation.
 - Complete the **full story line**. This means defeating not just the boss of End of Market, but also the hidden bosses of the 4th and 6th Market.
 - Complete the **minimum story line**. This means only defeating the hidden boss of the 6th Market is necessary.
 - Collect **all Ability Cards**.
 - Defeat **all bosses**. Challenge Market does not count.
-- And both of the above, shown as **Full Clear** in the options page.
+- Both of the above, shown as **Full Clear** in the options page.
+- Clear **Challenge Market - Lunar Rainbow Black Market**.
+- All of the above.
 
 ## Which items can be in another player's world?
 ### Stage Unlocks (Progression)
@@ -51,6 +53,7 @@ All cards except two of Nazrin's "Money Comes and Goes On Its Own" cards are shu
 - Reduced Equipment Cost Limit
 - Various Magic Circle stat changes
 - Hyper Movement Speed
+- Freeze Trap
 - Instant Invincibility Cancel
 
 Certain items received only take effect in a stage. If the player is not in a stage, the game will wait until they are in a stage before processing said items. These items last only during the current run of a stage and will disappear upon the start of a new run, except for items related to **Funds**, **Bullet Money**, and **Equipment Cost Limit**.
@@ -64,4 +67,5 @@ When you receive an item, the client will inform you of what you received. Chang
 ## Credits
 - **Nepley**: AP implementations for Embodiment of Scarlet Devil, Perfect Cherry Blossom, and Imperishable Night borrowed as a framework for 100th Black Market AP. Anticheat disabling as well.
 - **CodeGorilla**: Nicer-looking names in Options.
-- **Doremy/Iesua Inane** of Mirage Creators: Playtesting, writing several Death Link messages.
+- **Doremy/Iesua Inane**, Mirage Creators: Playtesting, writing several Death Link messages.
+- **lvcoloredmagic**: Playtesting.
