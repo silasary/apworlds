@@ -1,9 +1,12 @@
 # Actraiser
 
 ## Latest
-- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/apraiser_v133/actraiser.apworld">Latest Version (1.3.3)</a>
+- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/apraiser_v134/actraiser.apworld">Latest Version (1.3.4)</a>
 
 ## All Versions
+
+#### v1.3.4
+- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/apraiser_v134/actraiser.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/apraiser_v134/actraiser.apworld</a>
 
 #### v1.3.3
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/apraiser_v133/actraiser.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/apraiser_v133/actraiser.apworld</a>
