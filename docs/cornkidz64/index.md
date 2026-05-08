@@ -6,7 +6,7 @@ The unique aura of bygone 64-bit worlds resurrected in this
 
 
 ## Downloads
-- <a href="https://github.com/Cyb3RGER/cornkidz64_apworld/releases/download/v0.0.6/cornkidz64.apworld">Latest Version (0.0.6)</a>
+- <a href="https://github.com/Cyb3RGER/cornkidz64_apworld/releases/download/v0.0.7/cornkidz64.apworld">Latest Version (0.0.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
