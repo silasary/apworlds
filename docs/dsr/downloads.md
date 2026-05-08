@@ -1,9 +1,12 @@
 # Dark Souls Remastered
 
 ## Latest
-- <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.1.0.2/dsr.apworld">Latest Version (0.1.0.2)</a>
+- <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.1.1.0/dsr.apworld">Latest Version (0.1.1.0)</a>
 
 ## All Versions
+
+#### v0.1.1.0
+- <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.1.1.0/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.1.1.0/dsr.apworld</a>
 
 #### v0.1.0.2
 - <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.1.0.2/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.1.0.2/dsr.apworld</a>

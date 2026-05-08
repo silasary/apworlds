@@ -10,7 +10,4 @@
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_LOR">en_LOR</a>

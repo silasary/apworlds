@@ -24,8 +24,8 @@
 - <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.3/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.3/bg3tot.apworld</a>
 
 #### v1.1.2
-- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.2/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.2/bg3tot.apworld</a>
+- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.1/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.1/bg3tot.apworld</a>
 
 #### v1.1.2
-- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.1/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.1/bg3tot.apworld</a>
+- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.2/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.2/bg3tot.apworld</a>
 
