@@ -1,0 +1,93 @@
+{
+  "authors": [
+    "mjousse"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Running with Rifles",
+  "github": "https://github.com/mjousse72/archipelago_rwr",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.1.0": {
+      "created_at": "2026-03-16T11:32:22Z",
+      "description": "First public release of the RWR Archipelago multiworld mod.\r\n\r\n## Downloads\r\n- **rwr.apworld** \u2014 Place in `%APPDATA%/Archipelago/custom_worlds/`\r\n- **rwr_archipelago_mod.zip** \u2014 Extract into `RunningWithRifles/media/packages/`\r\n\r\nSee the README for full setup instructions.\r\n",
+      "download_url": "https://github.com/mjousse72/archipelago_rwr/releases/download/v0.1.0/rwr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "499d82892026f0164f931b7f75252ec499090b9274d1f55dbc34fcbdaade70a5",
+      "html_url": "https://github.com/mjousse72/archipelago_rwr/releases/tag/v0.1.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 51605,
+      "source_url": "https://api.github.com/repos/mjousse72/archipelago_rwr",
+      "tag": "v0.1.0",
+      "title": "v0.1.0 \u2014 Initial Release",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v0.2.0": {
+      "created_at": "2026-03-16T19:26:24Z",
+      "description": "Fix item/location balance\r\n\r\n- Squad slots now scale to available locations instead of always adding 9\r\n- Precollect 1 squad slot so the starting map is reachable\r\n- Starting map (Keepsake Bay) no longer requires rank >= 1\r\n",
+      "download_url": "https://github.com/mjousse72/archipelago_rwr/releases/download/v0.2.0/rwr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5a5fdb1d931c29e4dd1479cf91be68761cb2a279616979ef68029cf7b7052ed9",
+      "html_url": "https://github.com/mjousse72/archipelago_rwr/releases/tag/v0.2.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 51668,
+      "source_url": "https://api.github.com/repos/mjousse72/archipelago_rwr",
+      "tag": "v0.2.0",
+      "title": "v0.2.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v0.3.0": {
+      "created_at": "2026-03-18T18:46:38Z",
+      "description": "## New Features\r\n\r\n**RP Shop** \u2014 Players can now spend in-game RP to purchase Archipelago checks using the `/apbuy` command. Each map has a configurable number of purchasable checks.\r\n\r\n- `rp_shop` \u2014 Enable/disable the RP Shop\r\n- `rp_shop_per_map` \u2014 Checks per map (1-5, default 3)\r\n- `rp_shop_cost` \u2014 RP cost per purchase (200-5000, default 1000)\r\n- `/apshop` command shows remaining checks and current RP\r\n\r\n**Death Link Mode** \u2014 New option `death_link_mode` to choose what happens when receiving a death link:\r\n\r\n- `kill` \u2014 Instant death (default, same as before)\r\n- `random_trap` \u2014 Apply a random trap instead of killing you\r\n\r\n## Bug Fixes\r\n\r\n**Weapon delivery checks broken for AP-unlocked weapons** \u2014 Delivering 5 of a weapon (e.g. G36, M16A4) no longer fails to trigger the check when that weapon was already received as an AP item. The vanilla delivery system was filtering out weapons already in faction resources, preventing the delivery objective from being created.\r\n\r\n## Presets\r\n\r\n\"Maximum Checks\" and \"Completionist\" presets now include RP Shop (5 per map).\r\n",
+      "download_url": "https://github.com/mjousse72/archipelago_rwr/releases/download/v0.3.0/rwr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bfb0979a2f8e0ad67c731c24db90b2b62a679b56afed60a3b86198b55be676cc",
+      "html_url": "https://github.com/mjousse72/archipelago_rwr/releases/tag/v0.3.0",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 52861,
+      "source_url": "https://api.github.com/repos/mjousse72/archipelago_rwr",
+      "tag": "v0.3.0",
+      "title": "v0.3.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v0.4.0": {
+      "created_at": "2026-03-23T16:38:38Z",
+      "description": "## New Features\r\n\r\n**196 individual weapons** \u2014 All 9 weapon categories expanded from 76 to 196 weapons. A budget system ensures weapons fit within available location slots, with random selection each seed.\r\n\r\n**Companion weapons** \u2014 Guns with integrated grenade launchers (M16+M203, SCAR+EGLM, etc.) now unlock together automatically.\r\n\r\n**C4 always precollected** \u2014 C4 is now given at the start of every game, ensuring side missions are always accessible.\r\n\r\n## Bug Fixes\r\n\r\n**XP system overhaul** \u2014 Fixed a bug where XP would spiral to 100K+ and give 97 squad members. The mod now forces `initial_xp=0` and `xp_factor=1.0`, then clamps XP regularly via positive `xp_reward` with cooldown. Target: 200 base XP + 1000 per Squadmate Slot.\r\n\r\n**Delivery locations block progression** \u2014 Map keys, Squadmate Slots and other progression items can no longer be placed on delivery locations (weapon deliveries, briefcases, laptops), which are long and RNG-dependent.\r\n\r\n## Removed\r\n\r\n**Squad Desertion trap** \u2014 Removed (broken and unfun). 3 traps remain: Demotion, Radio Jammer, Friendly Fire.\r\n\r\n**`base_capture_mode: none`** \u2014 Removed. Minimum capture mode is now `progressive`.\r\n\r\n## Other\r\n\r\n- Death Link `random_trap` now picks from 3 traps instead of 4\r\n- XP tracking persisted in mod state for reconnect recovery\r\n- Simplified access rules (C4 always available)\r\n- 141 client tests passing\r\n",
+      "download_url": "https://github.com/mjousse72/archipelago_rwr/releases/download/v0.4.0/rwr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1a943195ce812f0de5b26a3a1a4b24636965b5ff2b6330b279f2e67c1aca889a",
+      "html_url": "https://github.com/mjousse72/archipelago_rwr/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 34969,
+      "source_url": "https://api.github.com/repos/mjousse72/archipelago_rwr",
+      "tag": "v0.4.0",
+      "title": "v0.4.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v0.5.0": {
+      "created_at": "2026-05-03T13:04:52Z",
+      "description": "## What's new\r\n- **Starting Map option** \u2014 choose between Moorland Trenches, Keepsake Bay (default), or Old Fort Creek\r\n- **Co-op support** \u2014 2 players sharing the same AP slot via RWR's native LAN/Internet co-op. Guest character is auto-synced to the current AP rank on join\r\n- **Periodic rank sync** \u2014 clamps XP to the AP rank threshold every 15s (prevents drift from kills or natural XP gain)\r\n- **Lower RP Shop default cost** \u2014 1000 \u2192 500 RP per check",
+      "download_url": "https://github.com/mjousse72/archipelago_rwr/releases/download/v0.5.0/rwr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6d4749c2a4bf93db9a8ba65219e249a33f2e7a7e528d14eaa490e425c579770d",
+      "html_url": "https://github.com/mjousse72/archipelago_rwr/releases/tag/v0.5.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 59330,
+      "source_url": "https://api.github.com/repos/mjousse72/archipelago_rwr",
+      "tag": "v0.5.0",
+      "title": "v0.5.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}

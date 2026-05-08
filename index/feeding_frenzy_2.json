@@ -1,0 +1,66 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/barretg/feeding-frenzy-2-archipelago",
+  "manifest_fields": [],
+  "versions": {
+    "v0.1": {
+      "created_at": "2026-04-08T08:37:33Z",
+      "description": "# Release v0.1\r\n\r\nFirst working apworld! \r\nNote: Only windows is supported at present.\r\n\r\n## Items\r\n* Progressive Fish (allows  access to next area)\r\n* 1-up\r\n\r\n## Locations\r\n* Level completion\r\n* Growth stages (2 per non-bonus level)\r\n\r\n## Setup\r\nJust install as you would any other apworld (put in custom_worlds, or double click to install automatically), generate template yamls to get the yaml file if needed, have your host generate/host the game, and then do the following:\r\n\r\n1. Open FF2 to the title screen\r\n2. Create a new user. **This is very important:** The game will write over your save if you do not do this!\r\n3. Launch the feeding frenzy 2 client via the archipelago launcher (DO NOT start playing the game until you have connected. If you ever get disconnected, return to the title screen to reconnect, as important data is captured on initial loading).\r\n4. Connect to the server, and begin playing!\r\n\r\nContact xLander on discord (see: #future-game-design Feeding Frenzy 2 thread) if you run into any issues, and feel free to open an issue or submit pull requests.\r\n\r\n## Current next steps:\r\nAt present, the game is playable. However, I have several things in mind already for the next update. For one, I want receiving a deathlink to trigger the routine that runs when you're eaten, rather than just decrementing the amount of lives you have as it does now. This will require tracing back the execution flow at runtime and mapping memory addresses, which is a process I'm currently in the middle of doing. \r\n",
+      "download_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.1/feeding_frenzy_2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "2b08f0ac7b4a4fddb13152e96bd98dea3d77e7e7c4484a0ac169a6924f56d616",
+      "html_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.1",
+      "size": 10711,
+      "source_url": "https://api.github.com/repos/barretg/feeding-frenzy-2-archipelago",
+      "tag": "v0.1",
+      "title": "v0.1",
+      "version_simple": "0.1",
+      "world_version": "0.1"
+    },
+    "v0.2": {
+      "created_at": "2026-04-09T19:22:19Z",
+      "description": "# Release v0.2\r\nDeathlink actually makes you die now instead of just decrementing lives >:)",
+      "download_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.2/feeding_frenzy_2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "1acf5d172e7603c4501a6fb734fec7e7220c9edd8c0da12a61b16fd867ccaece",
+      "html_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.2",
+      "size": 11510,
+      "source_url": "https://api.github.com/repos/barretg/feeding-frenzy-2-archipelago",
+      "tag": "v0.2",
+      "title": "v0.2",
+      "version_simple": "0.2",
+      "world_version": "0.2"
+    },
+    "v0.3": {
+      "created_at": "2026-04-24T22:29:53Z",
+      "description": "# Release v0.3\r\nDeathlink now properly gated to only trigger while a level is in progress, and properly reference the current level's player object instead of the stale one, preventing most crashes.",
+      "download_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.3/feeding_frenzy_2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "bcec529e8a0cf53f4c2b70a2b62001f8fa8e482fcce66d9b4fbbab306178ec53",
+      "html_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.3",
+      "size": 11787,
+      "source_url": "https://api.github.com/repos/barretg/feeding-frenzy-2-archipelago",
+      "tag": "v0.3",
+      "title": "v0.3",
+      "version_simple": "0.3",
+      "world_version": "0.3"
+    },
+    "v0.4": {
+      "created_at": "2026-05-02T14:54:10Z",
+      "description": "# Feeding Frenzy 2 AP - Release v0.4\r\nFixed some bugs relating to logic and stability\r\n\r\n## Bug fixes:\r\n* Fixed the first of the \"chase\" zones being included within shark levels.\r\n* Fixed progressive fish and other items being re-applied on disconnect.\r\n* Fixed goal not being sent at the end of level 60.",
+      "download_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.4/feeding_frenzy_2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "657a6df30492c44dce9e5e4c093ca39b72242ce4b2ce5cb6f549616831fa5165",
+      "html_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.4",
+      "size": 12158,
+      "source_url": "https://api.github.com/repos/barretg/feeding-frenzy-2-archipelago",
+      "tag": "v0.4",
+      "title": "v0.4",
+      "version_simple": "0.4",
+      "world_version": "0.4"
+    }
+  }
+}

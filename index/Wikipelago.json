@@ -1,0 +1,52 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/Skrumptily69/Wikipelago",
+  "manifest_fields": [],
+  "versions": {
+    "release-2": {
+      "created_at": "2026-03-12T17:18:36Z",
+      "description": "## Wikipelago v0.1.1\r\n\r\nBeta update for Wikipelago.\r\n\r\n### Changes\r\n- Expanded article pools across all supported categories\r\n- Added many more titles, so category-restricted seeds are less likely to fail\r\n- Tightened category filtering so disabled categories do not leak into seeds\r\n- Removed the web client search bar to prevent direct target skipping\r\n- Updated web client cache versioning for cleaner deploys\r\n- Improved reconnect behavior so the web client can preserve progress after disconnects (recovery may still not be fully reliable)\r\n\r\n### Included Categories\r\n- Video Games\r\n- Board Games\r\n- Movies\r\n- TV Shows\r\n- Anime/Manga\r\n- Sports\r\n- Science/Space\r\n- Technology/Internet\r\n- History\r\n- Geography/Landmarks\r\n- Food/Cuisine\r\n- Art/Literature\r\n- Mythology/Folklore\r\n\r\n### Notes\r\n- Recommended Archipelago version: `0.6.6`\r\n- Reconnect progress restoration is still not fully reliable in all cases\r\n- If using a narrow category setup with very high round counts, generation may still require enabling more categories or lowering `check_count`\r\n\r\n### Files\r\nThis release should be used with:\r\n- `Wikipelago.apworld`\r\n- updated Wikipelago YAML template\r\n- latest deployed web client\r\n\r\n### Thanks\r\nThanks to everyone for testing and sending feedback. The reports directly helped improve seed quality and category behavior.\r\n",
+      "download_url": "https://github.com/Skrumptily69/Wikipelago/releases/download/release-2/Wikipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "54b45a58e4dd7d5076d51d95accb1bb70cd7850bafa46839c908100d9bc0de82",
+      "html_url": "https://github.com/Skrumptily69/Wikipelago/releases/tag/release-2",
+      "size": 171941,
+      "source_url": "https://api.github.com/repos/Skrumptily69/Wikipelago",
+      "tag": "release-2",
+      "title": "Wikipelago 1.1",
+      "version_simple": "2",
+      "world_version": "2"
+    },
+    "releases": {
+      "created_at": "2026-03-09T20:30:39Z",
+      "description": "## Wikipelago v0.1.0 (Public Beta)\r\n\r\nFirst public release of Wikipelago for Archipelago.\r\n\r\n### Included\r\n- Custom `Wikipelago.apworld` for Archipelago 0.6.6\r\n- Web client + bridge deployment support\r\n- Reconnect/session progress restoration support\r\n- Expanded article system with category toggles in YAML\r\n- No-repeat round generation logic\r\n- Goal completion + fragment-based progression flow\r\n- Updated YAML template and setup docs\r\n\r\n### Notes\r\n- Recommended Archipelago version: 0.6.6\r\n- If hosting on free Render, cold starts may occur after inactivity.\r\n- Players should use the included YAML template and the same APWorld version used for generation.\r\n\r\n### Known Limitations\r\n- Hosting uptime depends on your deployment provider/tier.\r\n- Category/topic classification is keyword-based and may still classify edge-case pages imperfectly.\r\n",
+      "download_url": "https://github.com/Skrumptily69/Wikipelago/releases/download/releases/Wikipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "b764eeda7eda7bd51dbf1fa951055459e0d66a05fa4b307977cd95e6d0d25285",
+      "html_url": "https://github.com/Skrumptily69/Wikipelago/releases/tag/releases",
+      "size": 166313,
+      "source_url": "https://api.github.com/repos/Skrumptily69/Wikipelago",
+      "tag": "releases",
+      "title": "Wikipelago 1.0",
+      "version_simple": "1.0",
+      "world_version": "1.0"
+    },
+    "v0.2.0": {
+      "created_at": "2026-04-01T21:30:03Z",
+      "description": "## Wikipelago v0.2.0\r\n\r\n\r\n### Major Changes\r\n- Grand Goal logic now correctly requires only the configured Knowledge Fragment count\r\n- Improved default settings to reduce early BK risk in asyncs and community games\r\n- Added clearer YAML guidance for safer setting combinations\r\n- Added Searchsanity and Scrollsanity support (optional, disabled by default)\r\n- Improved reconnect/resume behavior in the web client\r\n- Expanded validation and fuzz testing tools for safer updates\r\n\r\n### Recommended Defaults\r\nThe included YAML template now uses a safer baseline for play:\r\n- `check_count: 25`\r\n- `required_fragments: 5`\r\n- `start_rounds_unlocked: 10`\r\n- `rounds_per_unlock: 5`\r\n- `random_goal_article: true`\r\n\r\n### Notes\r\n- Recommended Archipelago version: `0.6.6`\r\n- Searchsanity and Scrollsanity are currently optional and off by default\r\n- Reconnect behavior is improved, but continued real-world testing is still encouraged\r\n\r\n### Included\r\n- Updated `Wikipelago.apworld`\r\n- Updated YAML template\r\n- Updated web client / bridge source\r\n- Netlify config for frontend hosting with backend proxying\r\n\r\n### Thanks\r\nThanks to everyone who tested seeds, reported broken targets, and gave sync pacing feedback. Those reports directly shaped this update.\r\n",
+      "download_url": "https://github.com/Skrumptily69/Wikipelago/releases/download/v0.2.0/Wikipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "a4394382d43281a33ecce1dfda30cf60edb0de608c5a1cb1b53147c9797ebb29",
+      "html_url": "https://github.com/Skrumptily69/Wikipelago/releases/tag/v0.2.0",
+      "size": 173110,
+      "source_url": "https://api.github.com/repos/Skrumptily69/Wikipelago",
+      "tag": "v0.2.0",
+      "title": "Wikipelago v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    }
+  }
+}

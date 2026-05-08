@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "SilicDev"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Sonic Colours (DS)",
+  "github": "https://github.com/SilicDev/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "scds-v0.2.1": {
+      "created_at": "2026-04-16T12:56:19Z",
+      "description": "# v0.2.1 Bug fixes and poptracker integration\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/scds-v0.2.0...scds-v0.2.1\r\n\r\n**Important**: Currently only a EU ROM with the md5 hash `406514E483EE092A89F4298F59FD53A9` is supported\r\nAdditionally as the game is unpatched, it is required to wipe your save file beforehand\r\nThis game is played via the BizhawkClient using the `connector_bizhawk_generic.lua`\r\n\r\n## Changes\r\n- the client will now sent bounce packets to update the tab in poptracker\r\n- The check for the Nega-Wisp Armor should now be sent out as soon as the result screen faded out (the old check still exists as a fallback)\r\n\r\n## Bug fixes\r\n- Extra Life items now correctly increment the life counter\r\n- The client should no longer crash when items are collected from other games while checking locations\r\n- Colour Wisps should *mostly* be disabled in boss fights now when the respective translator hasn't been collected yet",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.1/sonic_colours_ds.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5655e7313fa8fc986d05eb9a4965f3f9582b7d3cbc119d44bb299f38399aa563",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/scds-v0.2.1",
+      "minimum_ap_version": "0.6.6",
+      "size": 20454,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "scds-v0.2.1",
+      "title": "Sonic Colours (DS) v0.2.1",
+      "version_simple": "0.2.1",
+      "world_version": "0.2.1"
+    }
+  }
+}

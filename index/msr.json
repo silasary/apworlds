@@ -1,0 +1,47 @@
+{
+  "authors": [
+    "lil David"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Metroid: Samus Returns",
+  "github": "https://github.com/lilDavid/AP-SamusReturns",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "0.1.0": {
+      "created_at": "2026-04-25T22:38:46Z",
+      "description": "# Metroid: Samus Returns 0.1.0\r\n\r\nFinally time to make an initial release.\r\n\r\nConsider this AP world an unstable beta. Until we've had enough experience with it to reasonably say otherwise, **do not take this AP world into stable games.** Make sure the host knows what they're getting into and what technical difficulties can arise.\r\n\r\nBefore I talk about what features the world has at the moment, here are some known issues:\r\n* The client is extremely temperamental. SNI client can have connection issues, this client has *connection issues*. It'll generally work once you're connected (until it stops which I've seen a little bit of), but expect to have some difficulty getting it to talk to your game.\r\n* Save often because the game can freeze. It's rare - I've only seen it once since March - but it can happen.\r\n  * Be careful connecting the client around the same time you load into the game. A fairly consistent freeze seems to be caused by the client connecting while the game is loading.\r\n  * If this happens, be sure to restart both your game and the client. That means closing and reopening the emulator because I haven't had much luck getting the connection working again otherwise.\r\n* I know of a patching issue where some pickups can fail to exist. I suspect was caused by version mismatches in Open Samus Returns Rando while I was testing, but I haven't played quite enough to comfortably say it shouldn't happen to you.\r\n  * I know of a crash on 3DS hardware that has coincided with this issue so far. I'm pretty sure this patching issue was the cause but I've only done cursory testing on my own 3DS up to this point.\r\n* There are some concessions in the randomizer logic as well.\r\n  * There is effectively no combat logic. Expect the first portion of the seed to be really tough.\r\n  * Ammo for Metroids can be a problem early in multiworlds.\r\n    * In case you need to know, an Alpha Metroid takes 15 missiles.\r\n    * Evolved Alpha Metroids and Gamma Metroids take 20.\r\n  * I do not recommend turning on damage boosts in logic.\r\n* Do not use Randovania's autotracker with this. It and the AP world write incompatible data into the game, so one or both will break.\r\n\r\nNow we can talk features:\r\n* 211 item locations - major items, tanks, Metroids, and the hatchling are all shuffled\r\n* You can also shuffle in the amiibo reserve tanks\r\n* A few logic options are available\r\n* You can play on emulator or a real 3DS\r\n* You can patch both the cartridge and eShop versions of the game (NA version only though)\r\n* The AP world can be configured to automatically install the rando mod files\r\n* Universal Tracker support, options yaml not needed, with out-of-logic tricks available\r\n* Currently uses fully remote items, so you do need to be connected to an AP server.\r\n\r\nOne more thing to look out for: the goal for logic is to never require you to softlock for an item. If logic does expect you to get an item and you can't get back to where you were after picking it up, report it to me.",
+      "download_url": "https://github.com/lilDavid/AP-SamusReturns/releases/download/0.1.0/msr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7f2da23e65d38f0200ee87916c59b1c3e6ff329c404181c75630790afbcb1aff",
+      "html_url": "https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 33636340,
+      "source_url": "https://api.github.com/repos/lilDavid/AP-SamusReturns",
+      "tag": "0.1.0",
+      "title": "0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "0.1.1": {
+      "created_at": "2026-05-03T20:14:54Z",
+      "description": "## Patcher changes\r\n* Fixed an issue causing pickups to not exist\r\n* You can now patch over RDV seeds if one is currently installed\r\n\r\n## Logic changes\r\n* Fixed swapped doors in A5 Tower Exterior\r\n* Fixed logical points of no return for:\r\n  * A2 Interior Intersection Terminal to Gamma Arena\r\n  * A3 Grapple Beam Chamber\r\n  * A3 Beam Burst Chamber via grapple block\r\n* Fixed swapped pickup access rules in A2 Transport to A1 and A3\r\n* Fixes for A2 Metroid Caverns pickup:\r\n  * Bombs/PBs now required\r\n  * Changed a space jump requirement to spider ball, phase drift, or a movement trick\r\n* Fixed A3 Gamma+ Arena North not requiring varia suit\r\n* Fixes for A8 Hatchling Room:\r\n  * Fixed reversed one-way access rule from Queen Arena\r\n  * Hatchling pickup now requires Queen be defeated\r\n* A2 Dam Exterior pickup with IBJ now requires lightning armor\r\n* A1 Destroyed Armory pickup with spider now requires bombs/PBs or movement trick\r\n* Added climbing A3 Caverns Teleporter East using wall jumps with HJB\r\n* Added climbing A7 Lab Teleporter West using wall jumps with HJB\r\n* Added climbing A8 Nest Vestibule using wall jumps with HJB and spider ball or IBJ\r\n* Added A3 Exterior Maze pickup with PB and spider ball or flight\r\n* Added A3 Ramulken Rollway pickup with Power Bomb\r\n\r\n## Client changes\r\n* Fixed the client choking when you get in-game without connecting to an AP server\r\n* Fixed the client repeatedly indicating that it's connected to the game\r\n* Client should now close faster\r\n\r\n**Full Changelog**: https://github.com/lilDavid/AP-SamusReturns/compare/0.1.0...0.1.1",
+      "download_url": "https://github.com/lilDavid/AP-SamusReturns/releases/download/0.1.1/msr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ffc5c9e7f6035a59355ea2708875304b99525a6743e17a08b17d526ad998f9a8",
+      "html_url": "https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 33637025,
+      "source_url": "https://api.github.com/repos/lilDavid/AP-SamusReturns",
+      "tag": "0.1.1",
+      "title": "0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    }
+  }
+}

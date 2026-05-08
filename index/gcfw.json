@@ -1,0 +1,69 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath",
+  "manifest_fields": [],
+  "versions": {
+    "v.0.02-pre-alpha": {
+      "created_at": "2026-03-27T16:21:28Z",
+      "description": "Fixed a bug where the yaml generation would not properly take into account previous requirements.\r\nMade W1-W4 free from start (required due to fill algorythm).\r\nGame no longer forces a play in W1",
+      "download_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v.0.02-pre-alpha/gcfw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "97ef18ce3d8d9d0ef1bd179db7c45503cf01b77f2f664192a71b6b8f5df93420",
+      "html_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v.0.02-pre-alpha",
+      "prerelease": true,
+      "size": 13662,
+      "source_url": "https://api.github.com/repos/Levisaxos/Archipelago_GemcraftFrostbornWrath",
+      "tag": "v.0.02-pre-alpha",
+      "title": "v0.02-pre-alpha",
+      "version_simple": "0.2",
+      "world_version": "0.2rc0"
+    },
+    "v0.0.1-pre-alpha": {
+      "created_at": "2026-03-25T20:17:01Z",
+      "description": "GemCraft: Frostborn Wrath \u2014 Archipelago Mod v0.1.0-pre-alpha\r\nFirst pre-alpha release. Expect bugs, please report them using the ingame button (will link to github)!\r\n\r\nWhat's in the multiworld\r\nField Tokens \u2014 stages no longer auto-unlock, you receive tokens from the multiworld\r\nSkills \u2014 all 24 wizard skills shuffled in\r\nBattle Traits \u2014 all 15 traits shuffled in\r\nXP Items \u2014 Scrolls, Tomes and Grimoires grant bonus wizard levels when received\r\nWizard stashes are still in the game but cannot grant skills or traits \u2014 Archipelago handles that.\r\n\r\nChecks\r\nEach stage has a Journey and a Bonus check. Play in Journey mode to send them.\r\nEndurance and Trial modes are optional \u2014 use them if you need more XP.\r\n\r\nGoal\r\nBeat A4 with all 24 skills collected.\r\n\r\nOptions\r\nskill_placement \u2014 per_zone puts one skill in each zone (recommended), spread is fully random\r\ndeath_link \u2014 you know what this does\r\nA bunch of DeathLink tuning options (gem loss, wave surges, grace period, cooldown)\r\nKnown issues\r\nWizard level gates are not enforced yet \u2014 XP items are there but don't block anything for now\r\nNo tracker or hint support yet",
+      "download_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.1-pre-alpha/gcfw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "e4ebb8dbdb768bf6546e8d971c777874b4cb9d70347a7a042b45c6fcf78ace37",
+      "html_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.1-pre-alpha",
+      "prerelease": true,
+      "size": 13935,
+      "source_url": "https://api.github.com/repos/Levisaxos/Archipelago_GemcraftFrostbornWrath",
+      "tag": "v0.0.1-pre-alpha",
+      "title": "V0.0.1 - Pre Alpha",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1rc0"
+    },
+    "v0.0.3-pre-alpha": {
+      "created_at": "2026-04-07T09:57:20Z",
+      "description": "New Features: \r\nAdded option to force field tokens into different worlds\r\nAdded talisman fragment and shadow core unlocks from wizard stashes\r\nAdded disconnect panel with reconnect button\r\nAdded earlier skill distribution option\r\nMoved wizard stashes to journey mode only\r\n\r\nImprovements:\r\nTier requirements are now a percentage of fields per tier, with a configurable option\r\nImproved generation: added P5 requirements and better skill spreading across tiers\r\nImproved XP and SP collection to count up properly in the result screen\r\nUpdated message log: messages are stored when leaving and restored on return\r\nImproved toast system: item and system messages are now split\r\nAdded click-lock on the connect button\r\nCode refactoring and better internal game structure\r\n\r\nBugfixes: \r\nFixed bug where XP tomes were not granting wizard levels\r\nFixed bug where different_world option caused a generation error\r\nFixed XP bar mismatch\r\nFixed level popup not showing AP bonus levels\r\nFixed soft-logic for skills; improved skill category accuracy\r\nFixed port number display in connection messages\r\n",
+      "download_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.3-pre-alpha/gcfw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "fc33a1ab4019d50b86770d4abf2ef4065f086dd222ad183e5117c38e679eeadf",
+      "html_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.3-pre-alpha",
+      "prerelease": true,
+      "size": 21547,
+      "source_url": "https://api.github.com/repos/Levisaxos/Archipelago_GemcraftFrostbornWrath",
+      "tag": "v0.0.3-pre-alpha",
+      "title": "",
+      "version_simple": "0.0.3",
+      "world_version": "0.0.3rc0"
+    },
+    "v0.0.4-alpha": {
+      "created_at": "2026-04-10T11:50:52Z",
+      "description": "Added:\r\nAdded Swarm Queen (K4) as an alternative goal\r\nAdded field completion as a goal (by field count or percentage)\r\nAdded ingame logic tracker showing which fields are in logic\r\nAdded visual options (stage tinting based on logic state)\r\nAdded a logic button on the map that pans to fields when clicked\r\nAdded enforce logic option\r\nAdded wave manipulation options (start wave, wave count, enemy hp, armour & shield)\r\nAdded ingame changelog viewer and version display\r\n\r\nBugfixes:\r\nFixed bug where talisman fragment would be rewarded multiple times after reload\r\nFixed bug where restarting a level caused unlocked skills and traits to be lost\r\nFixed non-scrollable settings panel\r\nFixed generation error in solo worlds with own_world option",
+      "download_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.4-alpha/gcfw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "8f522624e7f45549e8eeda47a83f7ceca70771d2e9f964d2d91222bba4d3c259",
+      "html_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.4-alpha",
+      "size": 24971,
+      "source_url": "https://api.github.com/repos/Levisaxos/Archipelago_GemcraftFrostbornWrath",
+      "tag": "v0.0.4-alpha",
+      "title": "v0.0.4-alpha",
+      "version_simple": "0.0.4",
+      "world_version": "0.0.4a0"
+    }
+  }
+}

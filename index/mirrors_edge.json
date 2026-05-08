@@ -1,0 +1,46 @@
+{
+  "authors": [
+    "SerpentAI"
+  ],
+  "flags": [],
+  "game": "Mirror's Edge",
+  "github": "https://github.com/SerpentAI/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "flags",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "mirrors-edge-v1.0.0": {
+      "created_at": "2026-04-19T06:18:15Z",
+      "description": "_A first-person movement and momentum-based parkour game by DICE_\r\n\r\n**Randomizer Features**\r\n- All 23 time trial levels are supported\r\n- 2 logic levels:\r\n  - Regular: Requirements are aligned with the skills and knowledge of a more casual Mirror's Edge player\r\n  - Advanced: Requirements can require tighter execution, more creative routes, and performing moves off of unintended objects to progress.\r\n- Option to play in Open World mode (All time trials start unlocked)\r\n- Option to start with N random abilities\r\n- Option to disable 2 and 3-star rating locations\r\n- Ability to globally adjust star rating target times upwards (or downwards, slightly)\r\n- Ability to convert a percentage of filler items to level-specific time bonuses\r\n- 4 unique traps to experience!\r\n  - Injury Trap: HP is set to 1 with slower regeneration than usual\r\n  - Slippery Trap: Ground friction is nullified. Any movement in a direction will keep going in that direction until countered\r\n  - Slow Trap: Movement speed is greatly reduced\r\n  - Wide FOV Trap: Camera field-of-value is greatly increased\r\n- Scales well for all types of multiworlds: Short / Long Syncs, Asyncs; ~250 checks\r\n- Ultra-rare variants of schematic filler items (that do nothing) to collect and brag about\r\n- Ability to set a desired in-game FOV through Archipelago options\r\n- Custom client UI that displays important information and updates in real-time\r\n- Zero-configuration setup! The Archipelago client mods the game in real-time. No need to download / install / configure anything else\r\n- Feature-complete and expected to be very stable\r\n\r\n**How it works and what to expect**\r\n- Faith has forgotten how to parkour and sprint! She must relearn her abilities by receiving items from the multiworld\r\n- You are granted 5 starting time trial levels (or all of them in Open World mode) in which you can complete your first location checks\r\n- You progress by receiving level unlocks, as well as Faith's abilities\r\n- You will also gather some runner bags along the way. These are needed for both goal types. Either:\r\n  - Collect N runner bags to help gain access to a goal level, where you must cross the finish line to win\r\n  - Collect N runner bags to win\r\n- Progression is both horizontal and vertical, creating a dynamic where you must decide which level to prioritize for efficiency\r\n\r\n**Locations**\r\n- Time Trial Checkpoints\r\n- Time Trial Level Clears\r\n- Time Trial Star Ratings (2 / 3 Stars Optional)\r\n\r\n**Items**\r\n- Level Unlocks\r\n- Ability Unlocks: \r\n  - 180 Turn\r\n  - Airborne 180 Turn\r\n  - Balance\r\n  - Barge\r\n  - Climb\r\n  - Coil\r\n  - Dodge Jump\r\n  - Grab -> Grab Jump\r\n  - Melee Attack\r\n  - Springboard\r\n  - Sprint\r\n  - Swing\r\n  - Vault\r\n  - Wall Climb -> Wall Climb 180 Turn Jump\r\n  - Wall Run -> Wall Run Jump / Kick\r\n  - Zipline\r\n- Level-Specific Time Bonuses\r\n\r\n**Setup Guide:** [Here](https://github.com/SerpentAI/Archipelago/blob/mirrors_edge/worlds/mirrors_edge/docs/setup_en.md)\r\n\r\n<img width=\"794\" height=\"1029\" alt=\"Screenshot 2026-04-19 012030\" src=\"https://github.com/user-attachments/assets/b6b6d95c-15b1-42c5-97aa-df69981b5984\" />",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/mirrors-edge-v1.0.0/mirrors_edge.apworld",
+      "has_manifest": true,
+      "hash_sha256": "33ede4d7236471fb0c699b0070876b2f6ad5d318bafb56b8b6126e9903677053",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/mirrors-edge-v1.0.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 201388,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "mirrors-edge-v1.0.0",
+      "title": "Mirror's Edge - 1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "mirrors-edge-v1.1.0": {
+      "created_at": "2026-04-23T19:17:40Z",
+      "description": "This is a feature release that also includes tweaks and fixes.\r\n\r\n**This release is NOT compatible with games generated on 1.0.0 since item and location IDs have shifted**\r\n\r\n**Feature:** Added support for the `Pure Time Trial Pack DLC` levels. Optional. _Quirk: The 10 DLC levels use the same index as Playground One. Unlocking any DLC Level or Playground One will unlock the rest that share the index in the menu. There is no way around that. You still cannot send checks in levels you haven't truly unlocked_\r\n\r\n**Tweak:** Wall Run Kick (previously untouched) is now locked alongside Wall Run Jump. The item has been renamed to `Ability Extension Unlock: Wall Run Jump / Kick`\r\n**Tweak:** Runner Bags range maximum has been lowered to 25\r\n\r\n**Fix:** Actually put the total amount of Runner Bags in the pool and not the required amount.\r\n**Fix:** Addressed an issue where the goal level wouldn't light up in the custom client tab, even when unlocked and meeting the requirements\r\n\r\n**Tentative Fix:** Attempted to make level locking / unlocking in the menu more robust. These measures are based on my best understanding of the situation, but there's no guarantee it will fix it 100% for people that encounter the issue\r\n\r\n**Link to the original release, with README:** [Here](https://github.com/SerpentAI/Archipelago/releases/tag/mirrors-edge-v1.0.0)",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/mirrors-edge-v1.1.0/mirrors_edge.apworld",
+      "has_manifest": true,
+      "hash_sha256": "323d6d6faaba88ee93f15537c68e016834aca3cbf523db3af212123bbb8755a6",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/mirrors-edge-v1.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 251011,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "mirrors-edge-v1.1.0",
+      "title": "Mirror's Edge - 1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
+    }
+  }
+}

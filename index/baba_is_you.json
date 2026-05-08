@@ -1,0 +1,111 @@
+{
+  "authors": [
+    "EmilyEmmi"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Baba Is You",
+  "github": "https://github.com/EmilyEmmi/Babapelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "b1.0": {
+      "created_at": "2026-02-13T03:53:54Z",
+      "description": "Hello! This contains both the Baba Is You APWorld and the Babapelago levelpack. Both are required to play, but the host of the multiworld only needs the APWorld.\r\n\r\nFor installation instruction, PLEASE check out the [readme](https://github.com/EmilyEmmi/Babapelago/blob/main/worlds/baba_is_you/BABAPELAGO_README.md). Very important!\r\n\r\nKNOWN ISSUE: Rarely, the client will seem to stop sending checks. Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.",
+      "download_url": "https://github.com/EmilyEmmi/Babapelago/releases/download/b1.0/baba_is_you.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3d8c4afbff27371e347ab629dc53b0251c403f162f5adb67042423086682ae2f",
+      "html_url": "https://github.com/EmilyEmmi/Babapelago/releases/tag/b1.0",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 29574,
+      "source_url": "https://api.github.com/repos/EmilyEmmi/Babapelago",
+      "tag": "b1.0",
+      "title": "Beta v1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "b1.1": {
+      "created_at": "2026-02-14T06:07:49Z",
+      "description": "Game breaking bug found, so I had to fix it immediately. I forgot to update the version of the world internally, but this changes barely anything, so it's probably fine...\r\n\r\nFixes:\r\n- (Client) Fixed receiving an item with the character \"#\" in its name causing script errors\r\n- (Levelpack) Fixed receiving an item with the character \"#\" in its name causing script errors (just to be safe)\r\n- (Levelpack) Fixed not being able to use Escape to exit the Items menu\r\n- (Levelpack) The I and M hotkeys no longer activate while in the editor\r\n- (AP World) Changed logic for Volcano to not require \"Flag\" or \"Win\"\r\n\r\nThis contains both the Baba Is You APWorld and the Babapelago levelpack. Both are required to play, but the host of the multiworld only needs the APWorld.\r\n\r\nFor installation instruction, PLEASE check out the [readme](https://github.com/EmilyEmmi/Babapelago/blob/main/worlds/baba_is_you/BABAPELAGO_README.md). Very important!\r\n\r\nKNOWN ISSUE: Sometimes, the client will seem to stop sending checks. Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.",
+      "download_url": "https://github.com/EmilyEmmi/Babapelago/releases/download/b1.1/baba_is_you.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0ca83953e8a9b09bc5ac866a483232cb46bdd2203f36e8a504af8ba0951b8b4b",
+      "html_url": "https://github.com/EmilyEmmi/Babapelago/releases/tag/b1.1",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 38723,
+      "source_url": "https://api.github.com/repos/EmilyEmmi/Babapelago",
+      "tag": "b1.1",
+      "title": "beta v1.1",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "b1.2": {
+      "created_at": "2026-02-19T04:11:56Z",
+      "description": "Minor fixes and updates. I finally remembered to update the world version, so make sure you update your template version! Nothing was added to the template, so you could just change the version number directly.\r\n\r\nFixes:\r\n\r\n(All) Renamed the \"Bonus\" item to \"Bonus Orb\" to prevent overlap with the word \"Bonus\" in the future\r\n(Levelpack) Added Fruit, Orb, Hedge, and Cliff to the list of nouns (Fruit was the only one that was unintentionally left out in the past, oops)\r\n(Levelpack) All gates now open by default in Manual mode\r\n(Levelpack) Fixed received messages being blocked by the level boundary\r\n(Levelpack) The TEST_NAMES file is no longer created when Level Shuffle is enabled\r\n(Levelpack) Level Shuffle no longer applies in the editor to prevent level data getting messed up on maps. If you've already opened the editor on a map while Level Shuffle was enabled, you may need to replace your level files.\r\n(AP World) Updated version to v0.1.2. I forgot last update.\r\n(AP World) Complete checks are now disabled by default\r\n(AP World) Level shuffle works a bit different, so that the Map levels should always be clearable with the default words if they are enabled, as well as early worlds\r\n(AP World) Fixed clear requirements for worlds being ignored if \"Open Map\" was disabled\r\n(Misc) Changed installation instructions to involve copying the \"baba\" world first, and THEN adding the files from babapelago.zip. This doesn't change the final result.\r\n(Misc) Added a note to the readme on updating the level pack.\r\nThis contains both the Baba Is You APWorld and the Babapelago levelpack. Both are required to play, but the host of the multiworld only needs the APWorld.\r\n\r\nFor installation instructions, PLEASE check out the [readme](worlds/baba_is_you/BABAPELAGO_README.md). Very important!\r\n\r\nKNOWN ISSUES:\r\n- Sometimes, the client will seem to stop sending checks. Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.\r\n- Apparently, clearing the level \"Walls of Gold\" causes a game crash on Steam Deck/Linux. No idea what could possibly be causing that, but it DOES still send the check, so just relaunch the game for now, I guess?",
+      "download_url": "https://github.com/EmilyEmmi/Babapelago/releases/download/b1.2/baba_is_you.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4fc35c482490f6d56f8858286261816e8a6f36c894ad3b133d4f47741fabe088",
+      "html_url": "https://github.com/EmilyEmmi/Babapelago/releases/tag/b1.2",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 39528,
+      "source_url": "https://api.github.com/repos/EmilyEmmi/Babapelago",
+      "tag": "b1.2",
+      "title": "beta v1.2",
+      "version_simple": "0.1.2",
+      "world_version": "0.1.2"
+    },
+    "b1.2h": {
+      "created_at": "2026-03-03T15:28:19Z",
+      "description": "Fixes some issues with the level pack, most notably being an OS-specific crash. The AP World has not been updated, so only the level pack needs to be updated.\r\n\r\nChanges:\r\n\r\n(Levelpack) Added Cake to the list of nouns (Should be the last one)\r\n(Levelpack) Added letters from Gallery to the list of letters (F, U, and X)\r\n(Levelpack) Fixed a crash on Linux if many Win objects were interacted with at once (most commonly seen in Walls Of Gold)\r\n(Levelpack) Whoa is now labeled as Meta-Secret 2, since A Prize Well Earned was already labeled as Meta-Secret (but this doesn't actually do anything since neither of these levels are available yet anyway)\r\n\r\nThis contains both the Baba Is You APWorld and the Babapelago levelpack. Both are required to play, but the host of the multiworld only needs the APWorld.\r\n\r\nFor installation instructions, PLEASE check out the [readme](worlds/baba_is_you/BABAPELAGO_README.md). Very important!\r\n\r\nKNOWN ISSUES:\r\n\r\n- Sometimes, the client will seem to stop sending checks. Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should be sent again next time you complete a level (May have also been fixed?).",
+      "download_url": "https://github.com/EmilyEmmi/Babapelago/releases/download/b1.2h/baba_is_you.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4fc35c482490f6d56f8858286261816e8a6f36c894ad3b133d4f47741fabe088",
+      "html_url": "https://github.com/EmilyEmmi/Babapelago/releases/tag/b1.2h",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 39528,
+      "source_url": "https://api.github.com/repos/EmilyEmmi/Babapelago",
+      "tag": "b1.2h",
+      "title": "beta v1.2-hotfix",
+      "version_simple": "0.1.2",
+      "world_version": "0.1.2"
+    },
+    "b2.0": {
+      "created_at": "2026-04-29T20:32:42Z",
+      "description": "Big update! Despite this, the entire game has still not been implemented yet. Most of my time was spent on creating the new Logic Difficulty feature, as well as implementing systems to prepare for the remaining late-game levels. I'd like to thank RoobyRoo, dennisw100, kl3cks7r, and asimov.io for helping to implement some new features, as well as everyone who worked together to create the logic for every single level in the game!\r\n\r\nNOTE: v0.6.7 of Archipelago is now required due to the use of Rule Builder.\r\n\r\n## New features:\r\n- (All) Implemented these features:\r\n  - Logic Difficulty: Controls which words are considered necessary to complete levels\r\n    - Easy: Expects every interactable word (Like in the previous version)\r\n    - Normal: Minimum logic (mostly), may require the use of unintended solutions (Default)\r\n    - Hard: True minimum logic, includes some obtuse solutions that may require deep game knowledge or advanced techniques\r\n  - Area Access: Controls which levels are accessible. \"map\" was implemented, which allows access to new levels Slideshow, Fragile Existence, Hostile Environment, \"?\", and \"???\".\r\n    - The goal for reaching ??? was also implemented, as well as \"limited\" level shuffle\r\n  - Transformsanity: Adds locations for every possible transform. Not applicable if area access is \"early\". Only relevant for Fragile Existence and Hostile Environment right now, which have 4 and 2 transformations respectively.\r\n- (Client) Added an icon for the client (kl3cks7r)\r\n- (Client) Several new client commands!\r\n  - /install_pack: Installs the Babapelago levelpack automatically! It automatically runs if you don't have the pack installed, and also updates the lua file if you're using a different version than before. No more manual installation problems!\r\n  - /save_slot: Switch the save slot that the client reads (it uses the first by default). Makes it much easier to play multiple slots at once. extraslot.lua is included if you need more than 3.\r\n  - /filepath: Change the filepath to the Baba Is You installation. Not very useful unless you picked the wrong one the first time?\r\n- (APWorld) Added item and location groups (RoobyRoo, EmilyEmmi)\r\n- (APWorld) Added/fixed support for Universal Tracker, and implemented a map view (kl3cks7r)\r\n  - Note that the map view only includes Win checks at this time, and does not include clear/complete checks, bonus checks, level transform checks, or Win checks for world maps.\r\n\r\n## Adjustments/fixes:\r\n- (All) The world should now be playable on Mac (thanks to asimov.io for helping me test this)\r\n- (All) Depths, Meta, and Center now have world keys (but since they aren't implemented yet, this isn't really relevant)\r\n- (All) All words used in the base game are now available as items\r\n  - Words will be set as progression or filler based on the levels available\r\n- (APWorld) Adjusted easy logic on some levels\r\n- (APWorld) Fixed world keys also logically locking access to connected worlds even if Open Map was enabled\r\n- (APWorld) \"Exclude Write Levels\" was changed to \"Exclude Ultimate Maze Transform\", since there is actually a way to access those levels (but also, that area isn't implemented yet anyway)\r\n- (APWorld) The world will now refuse to generate with easy logic, no default words, and no level shuffle, since it's not possible\r\n- (Client) Fixed a bunch of errors with erasing the progress files\r\n- (Client) The client can now location the Steam installation more effectively and on OSes other than Windows (dennisw100, asimov.io, EmilyEmmi)\r\n- (Levelpack) Fixed letters not functioning\r\n- (Levelpack) You can now see how many blossoms petals you have until receiving another blossom in the items menu\r\n- (Levelpack) Receive messages no longer go off of the screen\r\n- (Levelpack) Fixed parent worlds being set incorrectly in some cases\r\n\r\nThis contains the Baba Is You APWorld, the Babapelago levelpack, and extraslot.lua. ONLY THE APWORLD IS REQUIRED! It contains the levelpack as well and will automatically install the pack when starting. The levelpack is included in case this feature doesn't work for whatever reason, and extraslot.lua is a global mod needed to play more than three slots at once, if you wish to do so. The host only needs the APWorld no matter what.\r\n\r\nFor installation instructions, PLEASE check out the [readme](worlds/baba_is_you/BABAPELAGO_README.md). Very important!\r\n\r\nKNOWN ISSUES:\r\n- Sometimes, the client will seem to stop sending checks (just like before- I can't seem to get rid of this one!). Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.\r\n- Linux has not been tested. I don't see any reason why it wouldn't work, but please report any issues you experience.\r\n- Medium logic may have mistakes. It was not feasible to test every possible combination of items. Please report any issues.",
+      "download_url": "https://github.com/EmilyEmmi/Babapelago/releases/download/b2.0/baba_is_you.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7b9b889f4ae5a36cc6c775c0c4942115963389d761eaa1298274729972816b73",
+      "html_url": "https://github.com/EmilyEmmi/Babapelago/releases/tag/b2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 655062,
+      "source_url": "https://api.github.com/repos/EmilyEmmi/Babapelago",
+      "tag": "b2.0",
+      "title": "beta v2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "b2.0h": {
+      "created_at": "2026-04-29T22:35:20Z",
+      "description": "Hey, remember how I said that Linux wasn't tested? Within like 10 minutes, I found out that the client wouldn't open on Linux. So here's a hotfix, one hour later!\r\n\r\nNOTE: v0.6.7 of Archipelago is now required due to the use of Rule Builder..\r\n\r\n## Adjustments/fixes:\r\n- (Client) Fixed the client not opening on Linux\r\n\r\nThis contains the Baba Is You APWorld, the Babapelago levelpack, and extraslot.lua. ONLY THE APWORLD IS REQUIRED! It contains the levelpack as well and will automatically install the pack when starting. The levelpack is included in case this feature doesn't work for whatever reason, and extraslot.lua is a global mod needed to play more than three slots at once, if you wish to do so. The host only needs the APWorld no matter what.\r\n\r\nFor installation instructions, PLEASE check out the [readme](worlds/baba_is_you/BABAPELAGO_README.md). Very important!\r\n\r\nKNOWN ISSUES:\r\n- Sometimes, the client will seem to stop sending checks (just like before- I can't seem to get rid of this one!). Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.\r\n- Linux has not been tested very thoroughly, clearly (also, the Steam installation auto-selection probably doesn't work, so you'll need to select the directory manually when opening the client). Please report any other issues you experience.\r\n- Medium logic may have mistakes. It was not feasible to test every possible combination of items. Please report any issues.",
+      "download_url": "https://github.com/EmilyEmmi/Babapelago/releases/download/b2.0h/baba_is_you.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e654308911d183d9f91a2cb00abeee2865216448f2450e1efb7c893f18f04d67",
+      "html_url": "https://github.com/EmilyEmmi/Babapelago/releases/tag/b2.0h",
+      "minimum_ap_version": "0.6.7",
+      "size": 655119,
+      "source_url": "https://api.github.com/repos/EmilyEmmi/Babapelago",
+      "tag": "b2.0h",
+      "title": "beta v2.0 hotfix",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    }
+  }
+}

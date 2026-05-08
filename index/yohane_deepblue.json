@@ -1,0 +1,125 @@
+{
+  "authors": [
+    "SilicDev"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE-",
+  "github": "https://github.com/SilicDev/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "yohane_bitdb-v0.0.1": {
+      "created_at": "2026-04-19T16:58:04Z",
+      "description": "# v0.0.1 Initial Alpha release\r\n**Important**: As this is an alpha release, expect logic bugs and occasional softlocks\r\n\r\n## Randomized Items\r\n- Ally Unlocks & Upgrades\r\n- Rare crafting materials\r\n- Movement upgrades\r\n\r\n## Locations\r\n- Chests\r\n- Boss defeats\r\n- Ally rescues\r\n\r\n## Goals\r\n- Defeat all bosses to open the Infernal Altar and beat the final boss\r\n\r\n## Other Features\r\n- DeathLink\r\n\r\n## Development Notes\r\n- Non Progression items are not yet removed from chests\r\n- Chest Logic is not finalized\r\n- No notification in-game for found or received items \r\n- While close to a vanilla upgrade location, the associated upgrade is revoked to always enable collection of the respective item\r\n- I don't own the game, this was only possible thanks to the massive library of pointers already collected by the community",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.0.1/yohane_deepblue.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d519f04a68cf5140a84f85c04755f7a39deb13fb42595afc5fc135a9d7552a7c",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.0.1",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 24845,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "yohane_bitdb-v0.0.1",
+      "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.0.1",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "yohane_bitdb-v0.0.2": {
+      "created_at": "2026-04-20T19:39:25Z",
+      "description": "# v0.0.2 Chest logic and removing vanilla items\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.0.1...yohane_bitdb-v0.0.2\r\n**Important**: As this is an alpha release, expect logic bugs and occasional softlocks\r\n\r\n## Changes\r\n- Vanilla Items now are taken from your inventory when obtained\r\n- Chest logic is now mostly final\r\n- Logic regions have been adjusted",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.0.2/yohane_deepblue.apworld",
+      "has_manifest": true,
+      "hash_sha256": "64840120ee9d051db15a4b6f1a3cbe3f5bf22fab9ff570a7330e1259ef12fe18",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.0.2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 25587,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "yohane_bitdb-v0.0.2",
+      "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.0.2",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2"
+    },
+    "yohane_bitdb-v0.0.3": {
+      "created_at": "2026-04-22T16:17:59Z",
+      "description": "# v0.0.3 Logic fixes, reworked game start, client stability\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.0.2...yohane_bitdb-v0.0.3\r\n**Important**: As this is an alpha release, expect logic bugs and occasional softlocks\r\n\r\n## Changes\r\n- Common materials have been removed from the junk pool, yen bundles have been added\r\n- A Katar and Lailaps have been added to the starting inventory to ensure the player has a weapon to get through the Cast Tutorial Room\r\n- Rare materials have been added to the itempool, enough to craft every item in the game once\r\n- The client now waits until a game has been loaded to send items\r\n- `/gamestatus` command has been added to allow inspecting the client and game state\r\n- The client should now recover gracefully if the game disconnects during a session\r\n- Lots of small logic adjustments, Shipwreck in particular had some bigger reworks\r\n\r\n## Bug fixes\r\n- Removing items now always ensures the value is `>= 0`, preventing underflows\r\n- A crash when viewing the cutscene after freeing all allies has been fixed\r\n\r\n## Internal\r\n- Regions have been split further, and completely translated to RuleBuilder",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.0.3/yohane_deepblue.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f411821d4078d5b2cb6074d25ca039a4ff1e65697f4c734a782f376ff35bae2b",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.0.3",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 26427,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "yohane_bitdb-v0.0.3",
+      "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.0.3",
+      "version_simple": "0.0.3",
+      "world_version": "0.0.3"
+    },
+    "yohane_bitdb-v0.0.4": {
+      "created_at": "2026-04-24T12:20:01Z",
+      "description": "# v0.0.4 logic fixes and QoL\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.0.3...yohane_bitdb-v0.0.4\r\n\r\n## Changes\r\n- Musical Scores are now buffered if received while one has already been obtained. Only one can be used per death\r\n- A lot of randomized rooms are now taken into account for logic to prevent having to warp back to reroll them (this primarily affects Crystalline Grotto)\r\n- Boss requirements for Infernal Altar and Sea of Trees have been adjusted, previously there was a small chance of Riko being in Infernal Altar blocking the way to the Sea of Trees boss\r\n\r\n## Bug fixes\r\n- EarlyChikaBlocksMoved is no longer inverted for logic\r\n- Vanilla Cute Pochette location has been fixed in the dictionary checking if the character quests need to take the upgrade item away to open the chest",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.0.4/yohane_deepblue.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8b79d430959a206dbb280847c7cc696ef5c4117b737b960cb06ea683ba408e55",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.0.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 26841,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "yohane_bitdb-v0.0.4",
+      "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.0.4",
+      "version_simple": "0.0.4",
+      "world_version": "0.0.4"
+    },
+    "yohane_bitdb-v0.0.5": {
+      "created_at": "2026-04-25T00:01:00Z",
+      "description": "# v0.0.5 Item handling hotfix\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.0.4...yohane_bitdb-v0.0.5\r\n\r\n## Bug Fixes:\r\n- Due to an oversight already collected items would no longer be received after a reconnect\r\n\r\n## Internal\r\n- Rule caching has been enabled",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.0.5/yohane_deepblue.apworld",
+      "has_manifest": true,
+      "hash_sha256": "860cb572c9ba0a0584fa4fc9274e004ce26be897f1cb5a8edd3f379a12e3b02b",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.0.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 27022,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "yohane_bitdb-v0.0.5",
+      "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.0.5",
+      "version_simple": "0.0.5",
+      "world_version": "0.0.5"
+    },
+    "yohane_bitdb-v0.0.6": {
+      "created_at": "2026-05-02T00:14:18Z",
+      "description": "# v0.0.6 New options and logic fixes\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.0.5...yohane_bitdb-v0.0.6\r\n***Important*** As options have changed names, it is recommended to regenerate your YAMLs\r\nApart from a logic rework happening right now this is essentially v0.1.0\r\n\r\n# New features\r\n- Hints can be toggled for Vanilla and AP locations of the upgrade items\r\n- DeathLink Groups allow death link to be limited to only certain players\r\n- Characters and Upgrades can now be placed as progressive items instead\r\n\r\n# Changes\r\n- If no item is equipped the client will attempt to auto equip received weapons and accessories\r\n- Turning in the character upgrades is now a location\r\n- A lot of small logic changes for specific chests\r\n- More ways of getting past gold snails have been added, and they are now properly taken into account between regions\r\n- Consumables are no longer considered \"useful\". While they are helpful, this ended up making most of the \"junk\" pool useful in a default run. They are now in line with other items that allow you to get health/dp/status recovery (like currency)\r\n\r\n# Bug Fixes\r\n- the client will no longer send `CreateHints` packets every time the respective flags are checked (I believed the flags would be set false correctly again)\r\n- the Fashion for Dummies chest in Shipwreck no longer unlocks the second accessory slot if none had been obtained yet",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.0.6/yohane_deepblue.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ea916638072e52b0b3e56dc59f3730441ed2182069ac46c2666d175e5da78a9f",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.0.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 30025,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "yohane_bitdb-v0.0.6",
+      "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.0.6",
+      "version_simple": "0.0.6",
+      "world_version": "0.0.6"
+    },
+    "yohane_bitdb-v0.1.0": {
+      "created_at": "2026-05-04T00:14:22Z",
+      "description": "# v0.1.0 Region logic rework\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.0.6...yohane_bitdb-v0.1.0\r\nThis is mostly an internal change on top of 0.0.6\r\n\r\n# Changes\r\n- Debug logging is no longer enabled by default\r\n- Unexpected client errors now print an additional message and always write to the client interface\r\n\r\n# Bug fixes\r\n- Hints no longer crash the client with Progressive Upgrades enabled, instead no hint is created for the AP Location\r\n\r\n# Internal\r\n- All areas of the game have been split further into smaller regions, simplifying direct chest logic and preparing for options that would change the normal progression\r\n\r\n# Dev notes\r\n- I finally own the game :D (technically already since 0.0.6 but nothing in that update would have required it)",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.1.0/yohane_deepblue.apworld",
+      "has_manifest": true,
+      "hash_sha256": "554713c31597cffdf728f2899c60cb49fde0511084e449880d7832363cc26c56",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 33648,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "yohane_bitdb-v0.1.0",
+      "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}

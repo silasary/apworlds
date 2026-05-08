@@ -1,0 +1,24 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/PixelShake92/Super-Meat-Boy-AP",
+  "manifest_fields": [],
+  "versions": {
+    "Alpha_1": {
+      "created_at": "2026-02-10T08:53:43Z",
+      "description": "# Super Meat Boy Archipelago Alpha 1\r\n\r\n## What's New\r\n\r\nClient is completely reworked to work with Zuils AP world. Cheers to Zuils for converting their manual into a functional APworld. You created so much more work but the end result should hopefully pay off. \r\n\r\n## Bug Fixes\r\n\r\n### Par Times \u2014 All of Them\r\nTurns out **97% of par times were wrong.** Nearly every A+ detection was either too strict (blocking legitimate A+ grades) or too lenient (gifting fake ones). I went back to scouring the games code and replaced all 250 par times with the real values. If your A+ checks weren't sending before, they should now.\r\n\r\n### Warp Zones Actually Work Now\r\nWarp zone completion data was being read from incorrect addresses. I dove deeper and found more consistent save flags. \r\n\r\n### Boss Fights No Longer Psychic\r\nTwo fixes here:\r\n- **Quitting a boss fight** no longer counts as beating it. Previously, just *leaving* the boss level would trigger a victory. Now the client checks the actual boss defeat flag in memory.\r\n- **Beating a boss actually registers.** The client was reading the wrong byte \r\n\r\n### No More Check Flood on Connect\r\nConnecting to a server would sometimes fire off dozens of false location checks at once \u2014 bandages you never collected, milestones you never reached. This happened because the client was scanning memory *after* writing its own data into it, then detecting its own writes as player progress. \r\n\r\n### Warp Zones Don't Impersonate Light Levels\r\nCompleting a warp zone sub-level used to send a false completion check for the light world level with the same number (e.g., beating The Guy sub-level 1 would also send \"5-1 The Witness\").\r\n\r\n### Things I know are not quite right\r\nThe bandage counter can be a bit weird. Luckily the clients internal counter tracks for the bandage milestones better than the game does due to me modifying how characters unlock etc. \r\n\r\n###\r\nI have not completed the data on Xmas levels. Avoid that setting for now.\r\n\r\n### Quirks\r\nChapter 7 requires unlocking both the chapter key and bandage girl as a character. \r\nI never got the time to fully test a dark world Dr Fetus goal so be wary of that option. \r\n\r\n\r\n*\"I don't want to be the guy who has to test all of this again.\" \u2014 The Guy, probably*",
+      "download_url": "https://github.com/PixelShake92/Super-Meat-Boy-AP/releases/download/Alpha_1/super_meat_boy.apworld",
+      "has_manifest": false,
+      "hash_sha256": "0f4cf5f8ba1c545041f8cb320ec4e6246cb490b94086c7af426ed7f5ed3088e5",
+      "html_url": "https://github.com/PixelShake92/Super-Meat-Boy-AP/releases/tag/Alpha_1",
+      "size": 184620,
+      "source_url": "https://api.github.com/repos/PixelShake92/Super-Meat-Boy-AP",
+      "tag": "Alpha_1",
+      "title": "Alpha 1",
+      "version_simple": "1",
+      "world_version": "1"
+    }
+  }
+}
