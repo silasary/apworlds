@@ -258,6 +258,8 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
                 else:
                     version_info[key] = manifest_data[key]
 
+        if "game" in manifest_data and not manifest.get("game"):
+            manifest["game"] = manifest_data["game"]
         if "tracker" in manifest_data:
             manifest["tracker"] = manifest_data["tracker"]
         if "flags" in manifest_data:
