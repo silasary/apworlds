@@ -13,6 +13,51 @@
     "world_version"
   ],
   "versions": {
+    "v1.0.0": {
+      "created_at": "2026-04-18T19:28:38Z",
+      "description": "Initial release of the new APWorld for The Legend of Zelda: A Link to the Past, based on the Overworld Randomizer.\r\n\r\nFeatures:\r\n- Goal options: Crystals, Ganon, All Dungeons, Pedestal, Triforce Hunt, Ganon Hunt, Trinity, Completionist\r\n- Standard and Inverted game modes\r\n- Set the number of crystals required for GT/Ganon, and number of Triforce pieces\r\n- Any variety of keysanity, including key drop shuffle\r\n- Enemy and boss shuffle, including logical enemy shuffle\r\n- Crossed entrance shuffle, with an option for Zelgawoods\r\n- Options for Pseudoboots and Mirror Scroll\r\n- FastROM\r\n- AP items are visually distinct: progressive items appear as green clocks, useful items as blue clocks, and filler/trap items as red clocks\r\n- Can be generated without a ROM file\r\n\r\nKnown Bugs:\r\n- Some items don't send until you leave the room they're picked up in\r\n- Triforce Pieces and Small Keys can't be in the starting inventory\r\n- The spoiler log shows a lot of events that should be hidden",
+      "download_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.0.0/alttpr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d6ba9c30f7a2d012abf755d7d2144321dc48f9cb77d323578fff98711ce59366",
+      "html_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.0.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 2225391,
+      "source_url": "https://api.github.com/repos/aurabot24/Archipelago-ALttPR",
+      "tag": "v1.0.0",
+      "title": "v1.0.0",
+      "version_simple": "0.0.0",
+      "world_version": "0.0.0"
+    },
+    "v1.1.0": {
+      "created_at": "2026-04-22T22:41:58Z",
+      "description": "New options:\r\n\r\n* Custom sprites for Link\r\n    * This takes the exact name of any sprite listed at https://alttpr.com/en/sprite_preview, and sets it as Link's sprite\r\n    * If the person generating the seed does not have ALttP sprites downloaded, the selected sprite will be downloaded and saved to their Archipelago installation\r\n    * If any errors occur while downloading or reading the sprite file, generation will continue with the vanilla Link sprite\r\n    * This feature will likely have more changes and improvements in the future, so please let me know if you have any feedback\r\n* Heart beeping rate\r\n* Heart color\r\n* Menu speed\r\n* Disable music\r\n* MSU resume\r\n\r\nBug fixes:\r\n* Fixed a bug where if multiple ALttP players were in the same multiworld, only one of them could connect\r\n* Fixed a bug where player names weren't displayed correctly when receiving items ",
+      "download_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.1.0/alttpr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c5f6ed29f74f55d6afd8ef36435ce5525b75a6a8e17bc422b23cb5d2be434645",
+      "html_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.1.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 2519175,
+      "source_url": "https://api.github.com/repos/aurabot24/Archipelago-ALttPR",
+      "tag": "v1.1.0",
+      "title": "v1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
+    },
+    "v1.2.0": {
+      "created_at": "2026-05-01T22:31:47Z",
+      "description": "New Options:\r\n* Shopsanity\r\n  * Random items now appear in all shop slots, including the potion shop and capacity upgrade fairy\r\n  * 32 items are added to the item pool\r\n  * 5 of the shop items will always be red/green/blue potions and arrow/bomb capacity upgrades, which can be bought repeatedly\r\n* Prize Shuffle: adds Pendants and Crystals to the item pool.\r\n   * Each dungeon is associated with a random Pendant or Crystal. After beating a dungeon, its matching prize's location will appear on the map screen, if it's in your world.\r\n   * Saha and the Bomb Shop owner will tell you the location of the Green Pendant and Red Crystals, respectively.\r\n* Random Flute spots\r\n* Pre-activated Flute\r\n\r\nOther Improvements:\r\n* When reading a tablet or pedestal that has an AP item, it now says the item's name and owner\r\n* Reaching Ganon's final phase with a bow will now tell you the location of silver arrows located in another player's world\r\n* AP item names are now displayed in the credits where appropriate, if their name fits on screen\r\n* Fixed a bug where minimal accessibility may require killing Ganon without silvers\r\n* Removed some unneeded files from the APWorld",
+      "download_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.0/alttpr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d60d235c1e754772b6d9c8376a3f46f8459078acd8764026ab7ede202d7a9f61",
+      "html_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.2.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 2485936,
+      "source_url": "https://api.github.com/repos/aurabot24/Archipelago-ALttPR",
+      "tag": "v1.2.0",
+      "title": "v1.2.0",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0"
+    },
     "v1.2.1": {
       "created_at": "2026-05-02T04:28:32Z",
       "description": "Fixed a bug where boss prizes weren't getting sent in prize shuffle.",

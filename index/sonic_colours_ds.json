@@ -13,6 +13,36 @@
     "world_version"
   ],
   "versions": {
+    "scds-v0.1.0": {
+      "created_at": "2026-04-07T14:14:05Z",
+      "description": "# v0.1.0 First Functional Release of Sonic Colours (DS) APWorld\r\n**Important**: Currently only a EU ROM with the md5 hash `406514E483EE092A89F4298F59FD53A9` is supported\r\nAdditionally as the game is unpatched, it is required to wipe your save file beforehand\r\nThis game is played via the BizhawkClient using the `connector_bizhawk_generic.lua`\r\n\r\n## Randomized Items\r\n\r\n- Wisp Abilities (named Translators)\r\n- Planet Access (named Shuttles)\r\n- Chaos Emeralds\r\n\r\n## Locations\r\n- Level Clears (with optional rank requirement)\r\n- Tutorial Clears\r\n- Special Stage Clears\r\n- Red Star Rings (optional)\r\n\r\n## Goals\r\n- Collect all Wisp Translators and beat the Nega-Wisp Armor\r\n- Collect all the Chaos Emeralds and beat the Nega-Mother Wisp (Nega-Wisp Armor is still required)\r\n\r\n## Development Notes\r\n- Junk items are not send to the game yet\r\n- Red Star Ring logic is still missing a few locations\r\n- Level Select is available, while it will be removed eventually, it is useful to \"unstuck\" yourself if it comes to it (see above)\r\n\r\nThe main purpose of this release is to get people testing it already, however if no major issues arise this can fairly quickly become a full release.",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/scds-v0.1.0/sonic_colours_ds.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3c980c176366fc4e3fac940763a5cc8301b8aeb69905ffc743bb764f0008e1be",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/scds-v0.1.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 18314,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "scds-v0.1.0",
+      "title": "Sonic Colours (DS) v0.1.0",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "scds-v0.2.0": {
+      "created_at": "2026-04-10T19:43:23Z",
+      "description": "# v0.2.0 Full Red Star Ring logic and junk items\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/scds-v0.1.0...scds-v0.2.0\r\n\r\n**Important**: Currently only a EU ROM with the md5 hash `406514E483EE092A89F4298F59FD53A9` is supported\r\nAdditionally as the game is unpatched, it is required to wipe your save file beforehand\r\nThis game is played via the BizhawkClient using the `connector_bizhawk_generic.lua`\r\n\r\n## Changes\r\n- Due to unpredictable behaviour of Special Stage assignment, Special Stages progression has been completely reworked, locking the stages to the planets in default order Tropical Resort > Sweet Mountain > Starlight Carnival > Planet Wisp > Aquarium Park > Asteroid Coaster > Game Land\r\nThis means only Special Stage 7 is always accessible\r\n- Junk items now actually get send to the game, immediately changing your ring count or life count\r\n- Red Star Ring rules are now fully implemented, please report any issues with finding them.\r\n- As the game remains unpatched for now, the requirement for the ROM when generating the seed has been dropped\r\n- BizHawk versions <2.10 are now useable with this rando. The previous check reading the ROM directly was excessive and has been replaced with a simple MD5 check. This also means the client will report if a US ROM has been detected.\r\n\r\n## Bug fixes\r\n- The game no longer clears itself on hard reset (oops)",
+      "download_url": "https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.0/sonic_colours_ds.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d53fc91d2b1e250e5910c1b578be0db72f81d14beccb3de6aecd2691b11ec278",
+      "html_url": "https://github.com/SilicDev/Archipelago/releases/tag/scds-v0.2.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 20185,
+      "source_url": "https://api.github.com/repos/SilicDev/Archipelago",
+      "tag": "scds-v0.2.0",
+      "title": "Sonic Colours (DS) v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
     "scds-v0.2.1": {
       "created_at": "2026-04-16T12:56:19Z",
       "description": "# v0.2.1 Bug fixes and poptracker integration\r\n**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/scds-v0.2.0...scds-v0.2.1\r\n\r\n**Important**: Currently only a EU ROM with the md5 hash `406514E483EE092A89F4298F59FD53A9` is supported\r\nAdditionally as the game is unpatched, it is required to wipe your save file beforehand\r\nThis game is played via the BizhawkClient using the `connector_bizhawk_generic.lua`\r\n\r\n## Changes\r\n- the client will now sent bounce packets to update the tab in poptracker\r\n- The check for the Nega-Wisp Armor should now be sent out as soon as the result screen faded out (the old check still exists as a fallback)\r\n\r\n## Bug fixes\r\n- Extra Life items now correctly increment the life counter\r\n- The client should no longer crash when items are collected from other games while checking locations\r\n- Colour Wisps should *mostly* be disabled in boss fights now when the respective translator hasn't been collected yet",

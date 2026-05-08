@@ -20,3 +20,6 @@
 #### v0.0.1
 - <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.3/cyberpunk2077.apworld">https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.3/cyberpunk2077.apworld</a>
 
+#### v0.0.1
+- <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.4/cyberpunk2077-hotfix-3.apworld">https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.4/cyberpunk2077-hotfix-3.apworld</a>
+
