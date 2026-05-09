@@ -2,65 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-09T00:30:28.150476+00:00</updated>
+  <updated>2026-05-09T06:48:40.667933+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/hoppel16/ArchipelagoBranchSly1/releases/tag/v0.3.4-alpha</id>
-    <title>Sly Cooper and the Thievius Raccoonus v0.3.4a0</title>
-    <updated>2026-05-04T18:25:30+00:00</updated>
-    <author>
-      <name>hoppel16</name>
-    </author>
-    <content>Various bugfixes and other QoL content, much of it courtesy of @amondovagyok.&#13;
-&#13;
-- The Sly 1 Client now has a proper title, as well as in-built Universal Tracker support.&#13;
-- Reduced frequency of various read-write operations, to hopefully address various crashes.&#13;
-- Added a new option to host.yaml, "Auto Fill Locations". Enabled by default.&#13;
--  When enabled, if a Sly 1 player has more items than locations, the apworld will create bonus "Cache" locations when collecting Keys to address this. This will prevent errors caused by excessive items.&#13;
-- If disabled, generation will give an OptionsError.&#13;
-- Added a manifest file for compatibility with Archipelago 0.7.0 and onward.</content>
-    <link href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/tag/v0.3.4-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.1</id>
-    <title>Schedule I v3.6.1</title>
-    <updated>2026-05-04T19:20:49+00:00</updated>
-    <author>
-      <name>MacH8s</name>
-    </author>
-    <content>## Meth Related&#13;
-Removed Acid, phosphorus, chemistry station and lab oven from level reward unlocks. They have been removed from level up rewards in the latest Schedule-1 update&#13;
-&#13;
-## Bug Fixes&#13;
-Fixed banning progression items not working properly</content>
-    <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/AllPoland/unbeatAP/releases/tag/v0.4.0-alpha</id>
-    <title>UNBEATABLE Arcade v0.4.0a0</title>
-    <updated>2026-05-04T21:23:35+00:00</updated>
-    <author>
-      <name>AllPoland</name>
-    </author>
-    <content>This ~~overdue~~ update catches up to some additions to the game and adds a couple QOL features and bug fixes.&#13;
-Contributions thanks to @estradiol-valerate and @LeftoverHotdish!&#13;
-&#13;
-- Added new songs: `do no harm` and `it's time to do crimes`&#13;
-- Replaced the advanced "Allow PFC" YAML option with a more customizable cap to expected accuracy for logic&#13;
-- Scrolling the AP console will no longer scroll the song list at the same time&#13;
-- Fixed a bug when using certain unique stages&#13;
-- Fixed a bug that broke UI after getting &gt;100 rating&#13;
-&#13;
-Check [the README](https://github.com/AllPoland/unbeatAP/blob/main/README.md) for installation instructions.&#13;
-&#13;
-**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.&#13;
-&#13;
-Any feedback or ideas are welcome in the "UNBEATABLE (PC)" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!</content>
-    <link href="https://github.com/AllPoland/unbeatAP/releases/tag/v0.4.0-alpha"/>
-  </entry>
   <entry>
     <id>https://github.com/nhyldmar/fez-ap/releases/tag/v0.5.0</id>
     <title>Fez v0.5.0</title>
@@ -647,7 +593,8 @@ None for now...&#13;
 - Add a Check for the Hitmarker Card in Banished Knight's Shop.&#13;
 - Rename the Resurrect in Witch's Shop to Snowball.&#13;
 - Remove a Check from the Fridge Raider Shop.&#13;
-- Slightly tweak the names of the Checks where the Blackrock Chef gives you Shark Fin Soups.</content>
+- Slightly tweak the names of the Checks where the Blackrock Chef gives you Shark Fin Soups.&#13;
+- Make the Manor Basement BUX not require I Spy, since it's pretty out in the open.</content>
     <link href="https://github.com/WolfBoi008/Block-Tales/releases/tag/5.0.0-RC2"/>
   </entry>
   <entry>
@@ -819,6 +766,32 @@ new stuff (since 0.5.2):&#13;
 * skip over progressive travels when regions are in remove_specific option&#13;
 * rework generics and add loader, crystalisk, surveyor</content>
     <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-77"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.1</id>
+    <title>Laika: Aged Through Blood v0.1.0</title>
+    <updated>2026-05-07T07:19:00+00:00</updated>
+    <author>
+      <name>Seras</name>
+    </author>
+    <content>Massive improvements over the previous release. Too many to list, however I will name the most relevant ones.&#13;
+&#13;
+- UI fixes. The UI now properly scales accordingly based on the user's resolution. (Thank you ndubs103 for discovering this!)&#13;
+- Map and Cassettes have been overhauled completely. Both will consistently function as intended and function even when received as an item.&#13;
+- The scene after the completion of _Quest: Rage and Sorrow_ now is completely skipped. This fix will be applied to other long cutscenes (Such as the one in The Big Tree after defeating the boss), as well as other potential candidates in the future.&#13;
+- _Quest: Radio Silence_ is significantly refined to have reconciliation in case the player acquires _Dash: Bike Upgrade_ . It also now updates accordingly depending on if the player is lacking (or has) the harpoon AP items at any point.&#13;
+- Both quests _Radio Silence_ and _The Big Tree_ now have additional locations to check. Radio Silence now have the antennas as checkable locations while The Big Tree now has floors destroyed. This should alleviate long downtime in those areas where checks aren't as plentiful.&#13;
+- Maya's Pendant no longer spams the player when acquired. Previously, it would constantly pop up informing the player that it has been found.&#13;
+- Tons, and I mean _tons_ of improvements to the logic. It is far from perfect, but this should prevent key items from being in locations that were previously inaccessible.&#13;
+- Key item locations now automatically are claimed if you manage to complete the quest before visiting that key item's location. Example: Acquiring If the player acquires _Key Item: Petey's Letter_  from an AP item received and turns in _Quest: The Prophecy_ before checking the location, it will instead automatically send out both checks instantaneously instead of requiring the player to go pickup Petey's Letter in its vanilla spot.&#13;
+&#13;
+That's all for now! Tons of more improvements are on the way, and this should be one step closer to having a fully functional/stable Laika: Aged Through Blood archipelago. :)&#13;
+&#13;
+Stay safe out there bikers, and hope to see you in the wasteland!&#13;
+&#13;
+&lt;img width="720" height="640" alt="Blacksmith_talk_4" src="https://github.com/user-attachments/assets/d877e134-8192-4798-87ff-3667e5a0f98f" /&gt;&#13;
+</content>
+    <link href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.1"/>
   </entry>
   <entry>
     <id>https://github.com/Ragmoa/Archipelago/releases/tag/0.4.1</id>
@@ -1826,5 +1799,64 @@ This list of changes was [auto generated](https://dev.azure.com/arsonassassin/DS
 &#13;
 - A second Sleigh Room Key snuck in with a wink and a whirl, now fixed in the multiworld, just one key to twirl!</content>
     <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.3</id>
+    <title>Mega Man Zero 3 v0.2.3</title>
+    <updated>2026-05-09T00:31:48+00:00</updated>
+    <author>
+      <name>brodieberger</name>
+    </author>
+    <content>Fixed some issues regarding ASyncs and other bugs.&#13;
+&#13;
+# Bug Fixes&#13;
+- Game now keeps track of previously sent items using RAM. Should help with async games.&#13;
+- No longer checks any state when in Title Screen.&#13;
+- Various backend improvements.&#13;
+- Fixed a missing secret disk location.&#13;
+- Fixed NG+ bug in Sunken Library.</content>
+    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/tag/v0.9.7</id>
+    <title>Ape Escape v0.9.7</title>
+    <updated>2026-05-09T02:21:24+00:00</updated>
+    <author>
+      <name>Thedragon005</name>
+    </author>
+    <author>
+      <name>IHNN</name>
+    </author>
+    <content>## Version 0.9.7 - New Locations and some fixes!&#13;
+Please read the setup guides for information on how to setup this game for Archipelago :&#13;
+[English](https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_en.md) / [French](https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_fr.md) &#13;
+&#13;
+## Changelog&#13;
+&#13;
+* **Client and logic fixes**   &#13;
+  - Fixed loading a main menu savestate breaking the client&#13;
+  - Fixed MM bug that collected some monkeys wrongly when changing rooms&#13;
+  - Fixed WSW Gong Room not allowing traversal when RandomStartingRoom is on&#13;
+  - Removed PPM entry Specter Coin indicator on Level Select, it caused some issues&#13;
+  - Fixed goal not sending sometimes&#13;
+&#13;
+* **Options**  &#13;
+   - [New] Jackets : Choose if static jackets should act as locations&#13;
+   - [New] Training Rooms : Choose if locations inside training rooms should be included as checks (Completion or Mailboxes)&#13;
+  &#13;
+* **Changes**&#13;
+   - FastTokenWarp is now moved to the LevelSelect. On token related goals and when having collected enough tokens, press and hold start for about a second to instantly warp to your goal, skipping the other requirements. (Now with correct music !)&#13;
+&#13;
+## Known bugs&#13;
+* Stadium Attack and Gladiator Attack will sometime play the "entering level" music instead of their intended track.&#13;
+&#13;
+&#13;
+**\*Don't forget to do "Generate Template Options" after installing the ``apworld`` if you want the new options in the YAML\***&#13;
+&#13;
+Tracker for this apworld version : [Ape Escape Tracker 0.6.2](https://github.com/lurch9229/Ape-Escape-Tracker/releases/tag/0.6.2)&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Thedragon005/Archipelago-Ape-Escape/compare/v0.9.6....v0.9.7</content>
+    <link href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/tag/v0.9.7"/>
   </entry>
 </feed>

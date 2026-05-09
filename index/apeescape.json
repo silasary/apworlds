@@ -1,12 +1,16 @@
 {
+  "authors": [
+    "Thedragon005",
+    "IHNN"
+  ],
   "description": "Ape Escape is a platform game published and developed by Sony for the PlayStation, released in 1999.\nThe story revolves around the main protagonist, Spike, who has to prevent history from being changed\nby an army of monkeys led by Specter, the main antagonist.",
   "game": "Ape Escape",
   "github": "https://github.com/Thedragon005/Archipelago-Ape-Escape",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "tracker": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/latest",
   "versions": {
@@ -584,6 +588,21 @@
       "title": "Ape Escape apworld v0.9.6",
       "version_simple": "0.9.6",
       "world_version": "0.9.6"
+    },
+    "v0.9.7": {
+      "created_at": "2026-05-09T02:21:24Z",
+      "description": "## Version 0.9.7 - New Locations and some fixes!\r\nPlease read the setup guides for information on how to setup this game for Archipelago :\r\n[English](https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_en.md) / [French](https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_fr.md) \r\n\r\n## Changelog\r\n\r\n* **Client and logic fixes**   \r\n  - Fixed loading a main menu savestate breaking the client\r\n  - Fixed MM bug that collected some monkeys wrongly when changing rooms\r\n  - Fixed WSW Gong Room not allowing traversal when RandomStartingRoom is on\r\n  - Removed PPM entry Specter Coin indicator on Level Select, it caused some issues\r\n  - Fixed goal not sending sometimes\r\n\r\n* **Options**  \r\n   - [New] Jackets : Choose if static jackets should act as locations\r\n   - [New] Training Rooms : Choose if locations inside training rooms should be included as checks (Completion or Mailboxes)\r\n  \r\n* **Changes**\r\n   - FastTokenWarp is now moved to the LevelSelect. On token related goals and when having collected enough tokens, press and hold start for about a second to instantly warp to your goal, skipping the other requirements. (Now with correct music !)\r\n\r\n## Known bugs\r\n* Stadium Attack and Gladiator Attack will sometime play the \"entering level\" music instead of their intended track.\r\n\r\n\r\n**\\*Don't forget to do \"Generate Template Options\" after installing the ``apworld`` if you want the new options in the YAML\\***\r\n\r\nTracker for this apworld version : [Ape Escape Tracker 0.6.2](https://github.com/lurch9229/Ape-Escape-Tracker/releases/tag/0.6.2)\r\n\r\n\r\n**Full Changelog**: https://github.com/Thedragon005/Archipelago-Ape-Escape/compare/v0.9.6....v0.9.7",
+      "download_url": "https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.7/apeescape.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a38de3a3bf15de6f009b17fa6ca74c08ab079e20a000849e0e4d6b69c6affa2e",
+      "html_url": "https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/tag/v0.9.7",
+      "minimum_ap_version": "0.6.4",
+      "size": 708774,
+      "source_url": "https://api.github.com/repos/Thedragon005/Archipelago-Ape-Escape",
+      "tag": "v0.9.7",
+      "title": "Ape Escape apworld v0.9.7",
+      "version_simple": "0.9.7",
+      "world_version": "0.9.7"
     }
   }
 }
