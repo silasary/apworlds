@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "BenDipp"
+  ],
   "description": "Hitman: World of Assassination is a stealth action game developed by IO Interactive.\nPlay as Agent 47, a genetically engineered assassin, and travel the globe to eliminate high-profile targets with creativity and precision.",
   "flags": [
     "after_dark"
@@ -8,8 +11,8 @@
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "0.3.0": {
@@ -161,6 +164,21 @@
       "title": "0.7.2",
       "version_simple": "0.7.2",
       "world_version": "0.7.2"
+    },
+    "0.8.0": {
+      "created_at": "2026-05-08T22:23:57Z",
+      "description": " - Added support for HITMAN (2016) and HITMAN 2 (2018)\r\n - Added new items from Game version v.3.260.0 and the Patient Zero Requiem Pack DLC\r\n - Added Full Logic for all complications\r\n    - \"No Disguise\" and \"One Disguise Change\": Removes all Disguisesanity-locations for this specific level\r\n    - \"No Pacifications\", \"One Pacification\" and \"No Non-Target Civilian Kills or Pacifications\": Removes all Disguisesanity locations that are not lieing on the ground and all Itemsanity locations that are carried by NPCs\r\n    - \"No Agility\": All Dubai checks require a starting Location and Chongqing Completion with vanilla targets need a Starting Location that skips the datacore\r\n - Added VR support\r\n - Added Sniper Assassin checks\r\n    - Logically Sniper Assassin checks require \"Any Sniper + Any Suitcase\" or \"Any Sniper + Any Agency Pickup\", except on Dubai where the former needs \"Starting Location - Dubai - Atrium\" too\r\n    - Sniper Assassin cannot be added to Carpathian Mountains\r\n - Added the option to add Heavy Snipers into the itempool\r\n    - These are the Snipers used by 47, Knight and Stone in the Sniper Assassin game mode\r\n    - They come with their usual amount of Body-Piercing Ammo, Wall-Piercing Ammo and Shockwave Ammo (cycled by pressing [X])\r\n - Added Prioritized Filler Option\r\n    - Listed Items will be guaranteed to be included in the seed\r\n - Added option to disable annoying locations\r\n    - This is split into the following sub-options: \"skip_locations_with_wait_time\", \"skip_locations_with_extra_step\", \"skip_locations_carried_by_npcs, \"skip_locations_requiring_other_items\", \"skip_buried_locations\"\r\n    - A full list of which checks fall under which category can be found in the [FAQ](https://github.com/BenDipp/Archipelago/blob/hitman_woa/worlds/hitman_woa/docs/en_hitman_woa.md)\r\n - Add options to remove all checks from the goal level or mark them as excluded\r\n - Added option to limit the amount of sanity-checks per level\r\n    - When enabled, a random subset of all available Itemsanity and Disguisesanity checks on each level will chosen\r\n    - When used with non-split Itemsanity, making sure all Levels remain under the threshold takes priorty over filling the threshold, so you might end up with less items than expected\r\n - Added ingame debug options to disable all complications and the forced difficulty selection.\r\n    - They can be found in the main menu under: Options -> Peacock -> Archipelago\r\n - Deprecated PopTracker pack in favour of [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker)\r\n    - If you have Universal Tracker installed, a tab with a map-tracker will automatically be added to the HITMAN-Client\r\n    - Note that when using the Universal Tracker Client, some Itemsanity-locatiins can be checked off prematurely on the map. Please use the Tracker Page or switch to the HITMAN Client in that case.\r\n - Fixed targets that are missing on master difficulty being chosen as random targets.\r\n - Fixed Arthur Edwards not getting a Target Check with Random Targets enabled\r\n - Reduced the chance of the Goal Level beeing in an early sphere when playing with level_completion goal mode\r\n - Changed minimum number of Complications to 0\r\n - Improved Fuzzer score (7 Failures in 10000 Runs) and seeds are now actually deterministic\r\n - Fixed Itempackages having no icons in the loadout screen\r\n - Fixed two-handed MEDIUM-items appearing in Itempackages with SMALL-item\r\n    - You should no-longer spawn with illegal-items in your hand if you have Itempackages equipped\r\n - Fixed swapping slots without restarting peacock would cause checks to be uncompletable\r\n - Added get_filler_item_name \r\n - Fixed various typos",
+      "download_url": "https://github.com/BenDipp/Archipelago/releases/download/0.8.0/hitman_woa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b435b425159a102407174a331b471b4a681701aa378b858bc5992b13a111bf97",
+      "html_url": "https://github.com/BenDipp/Archipelago/releases/tag/0.8.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 7712351,
+      "source_url": "https://api.github.com/repos/BenDipp/Archipelago",
+      "tag": "0.8.0",
+      "title": "0.8.0",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0"
     },
     "v0.1": {
       "created_at": "2025-07-02T12:14:35Z",

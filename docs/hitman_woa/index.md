@@ -5,7 +5,7 @@ Play as Agent 47, a genetically engineered assassin, and travel the globe to eli
 
 
 ## Downloads
-- <a href="https://github.com/BenDipp/Archipelago/releases/download/0.7.2/hitman_woa.apworld">Latest Version (0.7.2)</a>
+- <a href="https://github.com/BenDipp/Archipelago/releases/download/0.8.0/hitman_woa.apworld">Latest Version (0.8.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
