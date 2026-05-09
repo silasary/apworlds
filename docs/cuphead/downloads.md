@@ -1,9 +1,12 @@
 # Cuphead
 
 ## Latest
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02d/cuphead.apworld">Latest Version (2)</a>
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview03f/cuphead.apworld">Latest Version (3)</a>
 
 ## All Versions
+
+#### v3
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview03f/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview03f/cuphead.apworld</a>
 
 #### v2
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02d/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02d/cuphead.apworld</a>
@@ -28,6 +31,9 @@
 
 #### v2
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i.1/cuphead.apworld</a>
+
+#### v2
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview02j/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview02j/cuphead.apworld</a>
 
 #### v2rc0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02c/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02c/cuphead.apworld</a>
@@ -58,6 +64,9 @@
 
 #### v1a0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview01a/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview01a/cuphead.apworld</a>
+
+#### v1a0
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview01a/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview01a/cuphead.apworld</a>
 
 #### v0.3
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03d/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03d/cuphead.apworld</a>
