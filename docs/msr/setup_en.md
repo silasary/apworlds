@@ -7,7 +7,7 @@ The following are required to play *Metroid: Samus Returns* in Archipelago:
 * [Archipelago](https://github.com/ArchipelagoMW/Archipelago)
 * [Azahar Emulator](https://azahar-emu.org/) or a
 [modified 3DS with Luma3DS](https://3ds.hacks.guide/).
-* A North American *Metroid: Samus Returns* ROM file.
+* A North American or European *Metroid: Samus Returns* ROM file.
   * You can use [GodMode9](https://3ds.hacks.guide/dumping-titles-and-game-cartridges.html) to dump
   your copy of the game.
   * Only decrypted formats are supported.
@@ -55,8 +55,8 @@ Once you do, follow these steps to connect to the room:
 *Metroid: Samus Returns* ROM file.
 3. The client will open and show a black screen for a little while.
 4. When the patching process finishes, a folder with the same name as your patch will appear, and
-in it will be a folder called `00040000001BB200`. Copy this to the mods folder for your emulator or
-3DS, replacing the folder that's already there if one exists.
+in it will be a folder called `00040000001BB200` or `00040000001BFB00`. Copy this to the mods
+folder for your emulator or 3DS, replacing the folder that's already there if one exists.
    * If you're playing on Azahar, you can open the location to copy to by right clicking the ROM in
   the menu, then hovering "Open" and selecting "Mods Location."
    * If you're playing on a 3DS, copy this to your SD card > `luma` > `titles`.
