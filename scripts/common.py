@@ -264,6 +264,8 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
             manifest["tracker"] = manifest_data["tracker"]
         if "flags" in manifest_data:
             manifest["flags"] = manifest_data["flags"]
+        if "tracker_included" in manifest_data:
+            manifest.setdefault("flags", []).append("tracker_included")
         if "igdb_id" in manifest_data:
             manifest["igdb_id"] = manifest_data["igdb_id"]
         if "authors" in manifest_data:

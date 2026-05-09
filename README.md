@@ -23,6 +23,8 @@ Currently the following flags are supported:
 * `unready` This game is still in early development.  The Updater won't show this game unless you already have it installed.
 * `tracker_included` This game has an integrated tracker, and doesn't need an external tracker.
 
+See also: [World Manager extensions to `archipelago.json`](./MANIFEST_EXTENSIONS.md)
+
 
 ## FAQ: Why do we use Version Numbers over Release Dates?
 Version numbers are more intentional, more reliable, and allow for more use-cases than simply saying "The newest release is the latest".
