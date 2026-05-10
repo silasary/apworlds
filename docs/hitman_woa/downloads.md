@@ -1,9 +1,12 @@
 # HITMAN World of Assasination
 
 ## Latest
-- <a href="https://github.com/BenDipp/Archipelago/releases/download/0.8.0/hitman_woa.apworld">Latest Version (0.8.0)</a>
+- <a href="https://github.com/BenDipp/Archipelago/releases/download/0.8.1/hitman_woa.apworld">Latest Version (0.8.1)</a>
 
 ## All Versions
+
+#### v0.8.1
+- <a href="https://github.com/BenDipp/Archipelago/releases/download/0.8.1/hitman_woa.apworld">https://github.com/BenDipp/Archipelago/releases/download/0.8.1/hitman_woa.apworld</a>
 
 #### v0.8.0
 - <a href="https://github.com/BenDipp/Archipelago/releases/download/0.8.0/hitman_woa.apworld">https://github.com/BenDipp/Archipelago/releases/download/0.8.0/hitman_woa.apworld</a>

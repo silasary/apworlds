@@ -7,7 +7,7 @@ Funi Raccoon Game is a silly 3D collectathon about a Raccoon stealing things and
 ## What does randomization do to this game?
 
 - All collectible types, including: Gems, Cats, Hats, Mystical Dumbbells, Euros (if enabled) and purchaseable upgrades for the Kei Truck are randomized and send checks.
-- Getting specific amounts of points sends checks
+- Getting specific amounts of points with the Kei Truck in the air sends checks
 - Throwing items into the dumpster will send a check.
 
 ## What Funi Raccoon Game items can appear in other players' worlds?

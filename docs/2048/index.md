@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Ishigh1/Archipelago/releases/download/2048-1.1.1/2048.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/Ishigh1/Archipelago/releases/download/2048-1.1.2/2048.apworld">Latest Version (1.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

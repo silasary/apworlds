@@ -2,88 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-09T18:24:29.639932+00:00</updated>
+  <updated>2026-05-10T00:34:20.567598+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.1.0</id>
-    <title>Pokemon Pinball Ruby &amp; Sapphire v0.1.0</title>
-    <updated>2026-05-05T05:06:58+00:00</updated>
-    <author>
-      <name>Silvris</name>
-    </author>
-    <content># New Features&#13;
-* DexNav&#13;
-  * Spend 30+ coins to guarantee a specific Pokémon that can be found in a location&#13;
-* Single Board Option&#13;
-  * Reduces the game to only your starting board, removing &#13;
-* Evo Mode Option&#13;
-  * Evo Mode can now be 3 arrows in the pool, 1 singular item in the pool, or started with. These apply alongside evolution items.&#13;
-* Difficulty Option&#13;
-  * When set, certain "soft" logic requirements are relaxed&#13;
-* Collect Pokédex Option&#13;
-  * When enabled, Pokédex locations will be affected by collect. This can allow goaling from collects if all goals are Pokédex-related.&#13;
-* Same Slot Co-op&#13;
-  * Pokédex catches are saved to data storage and will sync across concurrent players on the same slot&#13;
-* RingLink&#13;
-  * Send and receive coins from other players playing RingLink-compatible games such as SMW or SA2B&#13;
-* New Items&#13;
-  * Evolution Items&#13;
-    * Evolution is now locked by individual items based on the Pokémon's evolution method&#13;
-  * Helper Pokémon&#13;
-    * Makuhita, Whiscash, Zigzagoon, and Pelipper have all been added to the item pool&#13;
-  * Coin Arrows&#13;
-    * Coin arrows are now added to the item pool.&#13;
-  * Double Coin Modifier&#13;
-    * Doubles coins received from coin arrows.&#13;
-&#13;
-# Bug Fixes&#13;
-* Fixed Latios and Latias logically being considered for the opposite board&#13;
-* Fixed score goaling being just, completely broken&#13;
-* Fixed score items resetting current score in certain cases&#13;
-* Fixed an issue where one could travel to Ruins via normal travel on the Ruby Board&#13;
-* Fixed Ruins Area Card giving access to the Ruins before it is unlocked&#13;
-* Fixed Ruins Area Card giving access to Forest and Volcano/Lake before they are unlocked&#13;
-* Fixed an issue where most egg Pokémon would be uncatchable on the Ruby Board&#13;
-* Fixed an edge case where having the opposite board's egg bunch would guarantee Pichu to hatch&#13;
-* Fixed an issue where Clamperl would not consider its evolutions in its spawn rate until you have 3 starting balls&#13;
-&#13;
-# Other Changes&#13;
-* Changed evolutions to only require BasicPinball&#13;
-* Rayquaza bonus stage/capture can be considered logical early with Ruins Area Card&#13;
-* Rare encounters can now be considered in logic if Rayquaza capture is in logic&#13;
-* Client commands now check for equality using title casing</content>
-    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.5</id>
-    <title>SMW: Spicy Mycena Waffles v1.3.5.post2</title>
-    <updated>2026-05-05T06:09:54+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <content>Experimental feature! It's kinda terrible to play with in big sessions lol&#13;
-## Info &#13;
-* [Information](https://thelx5.github.io/smw/)&#13;
-* [Full Changelog](https://thelx5.github.io/smw/changelog/#1.3.5)&#13;
-* Requires a new seed to be generated&#13;
-## Changes&#13;
-* Implemented DamageLink (named SharedDamage for tagging purposes)&#13;
-	* Whenever players take a hit they send a Damage signal to others&#13;
-	* Can be toggled in the Manager&#13;
-	* Currently Waffles handles it like this:&#13;
-		* Other Waffles players get hurt when the cumulative damage gets to 80&#13;
-		* Sends a 80 damage signal when the player loses a powerup, loses a heart or dies&#13;
-		* Sends a 20 damage signal when the player loses Yoshi&#13;
-* Removed RingLink handling from the code (didn't work on Waffles)&#13;
-* Made Universal Tracker aware of the Decoupled options</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.5"/>
-  </entry>
   <entry>
     <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx-v1.6.1</id>
     <title>Mega Man X v1.6.1.post2</title>
@@ -1910,5 +1833,50 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
 * Fixed DamageLink handling causing incoming DeathLink and TrapLink signals crash the client&#13;
 * DeathLink signals are now ignored if you're not controlling the player</content>
     <link href="https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.1.0</id>
+    <title>Refunct v1.1.0</title>
+    <updated>2026-05-09T18:19:08+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content># Version 1.1.0 - _the biology update_&#13;
+## New YAML options&#13;
+- Added the Climb Narrow minigame (off by default).&#13;
+- Added the Rando Mountain minigame (off by default because you need the E key to dash (hint: you can use Steam to remap controls)). It's the Refunct Mountain minigame but with buttons in a random order. You also only have jump and **dash**, nothing else! (Except you can temporarily swim to get the underwater button).&#13;
+- Added the possibility to replace all flowers by traps.&#13;
+- 🌹 Someone asked: you can now rename Grass and Flowers to more than 30 actual grasses and flowers, like `Little bluestem` and `Chrysanthemum`. 🌷  You can even go for Latin names like `Hydrangea macrophylla` and `Schizachyrium scoparium` 💮 &#13;
+## Fixes&#13;
+- Fixed small issue where jumping on jump pads would grassify a platform but wouldn't send a check in main rando and seeker minigame.&#13;
+&#13;
+(Readme and instructions: https://github.com/spinerak/refunct-tas-archipelago/blob/master/README.md)</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BenDipp/Archipelago/releases/tag/0.8.1</id>
+    <title>HITMAN World of Assasination v0.8.1</title>
+    <updated>2026-05-09T20:56:05+00:00</updated>
+    <author>
+      <name>BenDipp</name>
+    </author>
+    <content>- Fixed generation error when max_sanity_checks_per_level is set to 0&#13;
+- Fixed Peacock always using vanilla contracts, even when random targets is enabled</content>
+    <link href="https://github.com/BenDipp/Archipelago/releases/tag/0.8.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TRPG0/HbkArchipelago/releases/tag/0.2.3</id>
+    <title>Hi-Fi RUSH v0.2.3</title>
+    <updated>2026-05-09T22:21:43+00:00</updated>
+    <author>
+      <name>TRPG</name>
+    </author>
+    <content>See [README](https://github.com/TRPG0/HbkArchipelago/blob/main/README.md) for install instructions.&#13;
+&#13;
+Packaged with `zDEV-UE4SS_v3.0.1-947-g06474186`, `hibiki-bootstrap-v0.2.0`&#13;
+&#13;
+- Fixed completed levels sometimes not saving properly.&#13;
+- Added a backup save system in case of corrupted save data due to crashes.</content>
+    <link href="https://github.com/TRPG0/HbkArchipelago/releases/tag/0.2.3"/>
   </entry>
 </feed>

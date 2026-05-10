@@ -12,7 +12,7 @@
 - The [Archipelago Plugin for Peacock](https://github.com/BenDipp/Archipelago/releases/latest) and the [Hitman APworld](https://github.com/BenDipp/Archipelago/releases/latest)
 
 ### Optional software
-- [Hitman AP Tracker](https://github.com/BenDipp/HitmanPopTracker/releases/latest), for use with [PopTracker](https://github.com/black-sliver/PopTracker/releases)
+- [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) for a map tracking
 
 ## Installation
 
