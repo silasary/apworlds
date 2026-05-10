@@ -2,124 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-10T06:58:52.977157+00:00</updated>
+  <updated>2026-05-10T12:21:43.900465+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx-v1.6.1</id>
-    <title>Mega Man X v1.6.1.post2</title>
-    <updated>2026-05-05T06:11:40+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>This was an absolute nightmare to playtest in a group session. I'd do it again tho.&#13;
-## Info&#13;
-* [General info](https://thelx5.github.io/mmx/index.html)&#13;
-* [Setup](https://thelx5.github.io/mmx/setup.html)&#13;
-* Additional client commands are implemented, use `/help` to see which commands are available&#13;
-## Changes&#13;
-* Implemented DamageLink (named SharedDamage for tagging purposes)&#13;
-	* Whenever players take a hit they send a Damage signal to others&#13;
-	* Currently MMX handles it like this:&#13;
-		* Other MMX players get hurt when the cumulative damage gets to 10&#13;
-    * Can receive up to 12 HP worth of damage at once&#13;
-    * Respects `Body Upgrade` added defense&#13;
-    * Sends 10 damage to players per HP lost&#13;
-* Players no longer receive items or DeathLinks during the level intro (falling from the sky)&#13;
-* Players now go directly to the Game Clear screen once Sigma is defeated (removes credits sequence)&#13;
-* Optimized Sigma Opening logic code from the ROM side (should experience slightly less lag overall)&#13;
-  * This forces you to watch the Progress Screen in order to process Sigma's Fortress unlocking criteria&#13;
-* Made the intro sequence skip directly to the main menu after the CAPCOM logo&#13;
-* Dashed lemons now appear green instead of yellow/orange&#13;
-* ~~Stole~~ Copied Mega Man 1/2/3's way to extract ROMs from the X Legacy Collection executable file</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx-v1.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.1</id>
-    <title>Donkey Kong Country 2 v3.1.1.post2</title>
-    <updated>2026-05-05T06:12:08+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>New experimental thing 👁️ &#13;
-### Download trivia here (mandatory to play, not to generate): &lt;https://github.com/TheLX5/DKC2-Trivia/releases/latest&gt;&#13;
-# Info&#13;
-* [Information](https://thelx5.github.io/dkc2/)&#13;
-* [Full Changelog](https://thelx5.github.io/dkc2/changelog/#3.1.1)&#13;
-# Changes&#13;
-* Implemented DamageLink (named SharedDamage for tagging purposes)&#13;
-	* Whenever players take a hit they send a Damage signal to others&#13;
-	* Can be toggled in the Manager&#13;
-	* Currently DKC2 handles it like this:&#13;
-		* Other DKC2 players get hurt when the cumulative damage gets to 80&#13;
-		* Sends a 80 damage signal when the player gets hurt in any way, including extra hits&#13;
-* Apparently the *Link options in the manager did absolutely nothing, that's now fixed&#13;
-* Replaced bundled docs' text with links to my WIP webpage.</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.7</id>
-    <title>Everhood 2 v0.4.6</title>
-    <updated>2026-05-05T11:10:29+00:00</updated>
-    <author>
-      <name>DeamonHunter</name>
-    </author>
-    <content>&gt; [!IMPORTANT]&#13;
-&gt; While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Green Route 3 and many Hilbert Hotel rooms. Please bring my attention to them in Discord if they occur.&#13;
-&#13;
-&gt; [!NOTE]&#13;
-&gt; Minimum version of the APWorld is now 0.6.7.&#13;
-&gt; THE APWORLD HAS NO UPDATE FOR THIS RELEASE, IT DOES NOT NEED TO BE UPDATED.&#13;
-&#13;
-See 0.4.2 patch notes for the main changes: https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.2&#13;
-&#13;
-## AP World fixes&#13;
-- Fixed several soft locks that could occur if a location was collected: (Thanks DJN for providing files to diagnose this issue)&#13;
-  - `Yellow Mask` (Softlock fix was added)&#13;
-  - `V.I.P. Ticket` (Softlock fix was added)&#13;
-  - `Death Mountain King Gordo Reward` (No Fix added. Was unsure if it did softlock.)&#13;
-  - `Dragon Soul Weapon` (No Fix added. Was unsure if it did softlock.)&#13;
-- Prevented the following items being given by default (If the location was done already):&#13;
-  - V.I.P Ticket&#13;
-  - Yellow Mask&#13;
-  - All Weapons &#13;
-&#13;
-There may be more cases of these issues that need to be fixed.&#13;
-&#13;
-&#13;
-# Installation&#13;
-## Melonloader&#13;
-*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
-&#13;
-&gt; You can find Everhood 2's folder by finding the game in your steam library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
-&#13;
-### Windows&#13;
-1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
-2. Select Everhood 2 in the list of games.&#13;
-   - If Everhood 2 does not appear, click add game manually then browse to `Everhood 2 .exe`.&#13;
-3. Click install. &#13;
-    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
-&#13;
-### Linux&#13;
-1. Navigate to Everhood 2 on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES="version=n,b" %command%`&#13;
-2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
-   - You may need to give it permissions to execute.&#13;
-3. Select Everhood 2 in the list of games.&#13;
-    - If Everhood 2 does not appear, click add game manually then browse to `Everhood 2.exe`.&#13;
-4. Click install.&#13;
-    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
-&#13;
-## Mod Install&#13;
-&#13;
-1.Download `ArchipelagoEverhood.zip`.&#13;
-2. Head to the Everhood 2 folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.&#13;
-3. Extract the contents of the .zip file into mods. Ensure the files are not in a subfolder, this mod is not setup for that yet.&#13;
-4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
-</content>
-    <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.7"/>
-  </entry>
   <entry>
     <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.2.0</id>
     <title>A Link Between Worlds v0.2.0</title>
@@ -1779,14 +1666,17 @@ New to the game? Check out the [FAQ](https://discord.com/channels/73120530124780
   </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.6</id>
-    <title>Total War Warhammer 3 v0.9.6</title>
+    <title>Total War Warhammer 3 v0.9.6.post2</title>
     <updated>2026-05-09T17:06:31+00:00</updated>
     <author>
       <name>jordansds</name>
     </author>
-    <content>Changeling is currently missing it's buildings and techs (do not enable sanity on changeling).&#13;
+    <content>Requires Archipelago 0.6.7+&#13;
+&#13;
+Changeling is currently missing it's buildings and techs (do not enable sanity on changeling).&#13;
 Changeling may not work on Spheres.&#13;
 Altered logic for spheres mode to reduce softlocking with sanity/ritualsanity enabled.&#13;
+Fixed battlesanity generation error in conquest.&#13;
 &#13;
 Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
 [FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
@@ -1897,5 +1787,77 @@ New:&#13;
 &#13;
 **Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.15...0.0.16</content>
     <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.16"/>
+  </entry>
+  <entry>
+    <id>https://github.com/choatix/Archipelago/releases/tag/shadow-0.4.5</id>
+    <title>Shadow The Hedgehog v0.4.4</title>
+    <updated>2026-05-10T10:07:25+00:00</updated>
+    <author>
+      <name>choatix</name>
+    </author>
+    <content>**Item Box Sanity**&#13;
+Capsules, boxes containing capsules are added as optional sanity.&#13;
+&#13;
+**Checkpoint Shuffle**&#13;
+Random starting checkpoint for levels and unlockable checkpoints as items in game.&#13;
+&#13;
+**Checkpoint Convenience**&#13;
+Option available to be able to go back to any previous activated checkpoint when playing with checkpoint sanity on.&#13;
+&#13;
+**Improved Logic Handling**&#13;
+Reworked logic for all enemies, items, weapons, etc to improve seeds.&#13;
+&#13;
+**Key Shuffle**&#13;
+Options related to key items and key doors allowing for more varied routes through stages.&#13;
+&#13;
+**Last Way Early**&#13;
+Previous Last Way was only included in story shuffle with the option, but now available by selecting Last Story even when playing select, preventing Devil Doom.&#13;
+&#13;
+**Select Gates**&#13;
+Gates added so stage accessibility is not locked to single stage unlocks.&#13;
+&#13;
+**Traps**&#13;
+Small assortment of traps added - Checkpoint, Ammo and Poison.</content>
+    <link href="https://github.com/choatix/Archipelago/releases/tag/shadow-0.4.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.1</id>
+    <title>Phantasy Star II v0.1.1</title>
+    <updated>2026-05-10T10:09:24+00:00</updated>
+    <author>
+      <name>lagdotcom</name>
+    </author>
+    <content>Some bugfixes and a small new feature:&#13;
+- Receiving lots of items at once should no longer make the items at the back of the queue disappear forever.&#13;
+- Climatrol should no longer have progression items in its chests, because you can't re-enter once you beat Neifirst.&#13;
+- `start_inventory_from_pool` option now supported.</content>
+    <link href="https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.4</id>
+    <title>Parkitect v1.3.4</title>
+    <updated>2026-05-10T10:11:08+00:00</updated>
+    <author>
+      <name>CrusherRL</name>
+    </author>
+    <content>Installation can be found [here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)&#13;
+&#13;
+Enjoy!&#13;
+&#13;
+NOTE:&#13;
+This release is not backwards compatible with seeds generated **before **1.2.1&#13;
+AP World is unchanged! (1.3.3)&#13;
+&#13;
+# Parkitect Archipelago — Release Notes&#13;
+## Fix&#13;
+- Fixed supported version output. (was non readable)&#13;
+- Fixed broken Readme pieces&#13;
+&#13;
+# QOL&#13;
+Added AP Settings to options/mods. It Also displays the Version, the supported AP World version and the config path.&#13;
+&#13;
+# QOL for Dev :D&#13;
+Park Data now format in json.</content>
+    <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.4"/>
   </entry>
 </feed>
