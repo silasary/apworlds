@@ -1,9 +1,12 @@
 # YARGGuitarHeroWorldTour
 
 ## Latest
-- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.04/YARGGuitarHeroWorldTour.apworld">Latest Version (26.5.4)</a>
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.10/YARGGuitarHeroWorldTour.apworld">Latest Version (26.5.10)</a>
 
 ## All Versions
+
+#### v26.5.10
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.10/YARGGuitarHeroWorldTour.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.10/YARGGuitarHeroWorldTour.apworld</a>
 
 #### v26.5.4
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.04/YARGGuitarHeroWorldTour.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.04/YARGGuitarHeroWorldTour.apworld</a>
