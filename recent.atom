@@ -2,66 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-11T13:02:59.941760+00:00</updated>
+  <updated>2026-05-11T18:41:37.262036+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Str8UpWHITE64/DRAP/releases/tag/1.0.1</id>
-    <title>Dead Rising Deluxe Remaster v1.0.1.post2</title>
-    <updated>2026-05-06T15:22:29+00:00</updated>
-    <author>
-      <name>Str8UpWHITE64</name>
-    </author>
-    <content># DRAP — v1.0.1&#13;
-&#13;
-Small update: fixed Entrance Plaza Shutters in ScoopSanity and reverted Hideout scoop name change.&#13;
-&#13;
-## Breaking — regenerate your YAMLs&#13;
-&#13;
-## Fixes&#13;
-&#13;
-- **Entrance Plaza Shutters** — fixed an issue where if you triggered the Entrance Plaza Shutters cutscene before Backup for Brad, you wouldnt be able to complete the Escort Brad to Barneby mission.</content>
-    <link href="https://github.com/Str8UpWHITE64/DRAP/releases/tag/1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WolfBoi008/Block-Tales/releases/tag/5.0.0-RC2</id>
-    <title>Manual_BlockTales_WolfBoi008 v5.0.0rc2</title>
-    <updated>2026-05-06T23:07:50+00:00</updated>
-    <author>
-      <name>WolfBoi008</name>
-    </author>
-    <content># Known Issues&#13;
-None for now...&#13;
-# Changelog&#13;
-- Reorganized some of the Checks internally so that the Beat the Pit Goal appears below Beat Chapter 4 in the YAML. It just looks nicer that way.&#13;
-- Added the missing post-Chapter 4 Cutscene.&#13;
-- Changed Cruel King DX's logic to completing Chapter 4.&#13;
-- Added Pit Floors 41 - 50, which represent the Chapter 4 part of The Pit.&#13;
-  - Also updated the Beat The Pit Goal to now require clearing Chapter 4.&#13;
-- Added a Check for acquiring the Call: Brad Thaniyel Card. Forgot to add it when adding the cutscene, my mistake.&#13;
-# Change for Next RC&#13;
-- Rename the Pain Shop Category to Bizville Pain Shop so it's alphabetically organized with the rest of the Bizville areas.&#13;
-- Rename the Meadows Category to Meadows [3].&#13;
-- Move the Loyal Knight to Roadtown since they appear there first.&#13;
-  - I thought I already did this, but I guess not...&#13;
-- Add a 4th Item to the Roadtown Item Shop.&#13;
-- Rename the Ye Olde Inn Category to Roadtown Inn.&#13;
-- Add a Check for the Feel Fine Card in the Turitopulis Cards &amp; Weapons Shop. &#13;
-- Add 6 more Mango Checks from the Mango Tree.&#13;
-- Remove a Check from the Spooky Fruit Stand Shop. &#13;
-- Rename Spiked Zombie to Sharp Zombie.&#13;
-- Add a Check for the Hitmarker Card in Banished Knight's Shop.&#13;
-- Rename the Resurrect in Witch's Shop to Snowball.&#13;
-- Remove a Check from the Fridge Raider Shop.&#13;
-- Slightly tweak the names of the Checks where the Blackrock Chef gives you Shark Fin Soups.&#13;
-- Make the Manor Basement BUX not require I Spy, since it's pretty out in the open.&#13;
-- Re-Rename the Sorrow-related Checks back to Solitude again.&#13;
-  - Devs cannot make up their minds on this thing...&#13;
-- Rename the Checks that say they're within Terror to say they're within Fear.</content>
-    <link href="https://github.com/WolfBoi008/Block-Tales/releases/tag/5.0.0-RC2"/>
-  </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.4</id>
     <title>The Grinch v1.5.4</title>
@@ -1846,5 +1791,74 @@ _Linux users, download the source code here to run the client._&#13;
 &#13;
 **Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.2.0...v0.2.1</content>
     <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/tag/V4.11.6</id>
+    <title>Banjo Tooie v4.11.6</title>
+    <updated>2026-05-11T14:05:19+00:00</updated>
+    <author>
+      <name>jjjj12212</name>
+    </author>
+    <author>
+      <name>g0goTBC</name>
+    </author>
+    <author>
+      <name>Austin</name>
+    </author>
+    <content># 4.11.6&#13;
+  - This is update featuring changes based on Mysteryem's comments on the PR into core. Thanks Mysteryem!&#13;
+  - Generations are now 2-5% faster, since rules no longer check for the Universal Tracker Glitched Logic Item during a normal generation.&#13;
+  - There is now an option validation for skip puzzles if you accidentally selected to play with randomize_worlds.&#13;
+  - Fixed a bug with the yaml validation where it let you have bass clefs or extra treble clefs without randomizing notes.&#13;
+  - Added some missing indirect conditions, which should patch some strange bugs with the logic evaluation.&#13;
+  - There is now a check to make a generation fail early, if you end up with an unbeatable seed.&#13;
+  - Cryptic hint generation has been optimized for large multiworlds with a lot of cryptic hints, by a factor of 2.</content>
+    <link href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/tag/V4.11.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.2</id>
+    <title>Anodyne v0.6.2</title>
+    <updated>2026-05-11T15:11:52+00:00</updated>
+    <author>
+      <name>SephDB</name>
+    </author>
+    <author>
+      <name>PixieCatSupreme</name>
+    </author>
+    <content>- Fixed logic errors in Debug when accessed without broom</content>
+    <link href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.5</id>
+    <title>Donkey Kong 64 v1.5.5</title>
+    <updated>2026-05-11T18:14:40+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 1.5.5
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.5"/>
   </entry>
 </feed>

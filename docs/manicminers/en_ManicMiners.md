@@ -37,6 +37,10 @@ Each level is initially locked, with Level Access items available to find. There
 
 Additionally, you can configure Buildings, Items, and/or Vehicles to be locked until discoverable. 
 
+#### Filler items
+
+Depending on your chosen settings, you may have many more locations than items. In these cases, filler items are added to the pool, which take the form of motivational messages like "Good work, Cadet!" or "An Energy Crystal Has Been Found!". These items do absolutely nothing. 
+
 ### Where can I find items in Manic Miners? 
 
 Clearing a level is always worth an item. 
@@ -87,14 +91,14 @@ I'm sure there's issues hiding just out of sight, like Slimy Slugs waiting to st
 
 Manic Miners created by:
 
-Baraklava
+- Baraklava
 
 AP Mod created and maintained by:
 
-fogmike
+- fogmike
 
 The following users have been of particular help with this mod, via various playtesting/suggestions/research/feedback:
 
-jurjen909
-Nixill
-Ruinae Retroque Rursus
+- jurjen909
+- Nixill
+- Ruinae Retroque Rursus
