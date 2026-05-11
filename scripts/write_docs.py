@@ -85,6 +85,9 @@ def copy_documentation(world_stem: str, versions: list[dict[str, Any]], manifest
     filenames = []
     with zipfile.ZipFile(path, "r") as zf:
         directories = [f for f in zipfile.Path(zf).iterdir() if f.is_dir()]
+        if not directories:
+            print(f"No directories found in zip for {world_stem}")
+            return []
         directories = [f for f in directories[0].iterdir() if f.is_dir()]
         docs = next((d for d in directories if d.stem == "docs"), None)
         if docs:
