@@ -27,15 +27,15 @@ The current options are:
 
 ### What campaigns are supported?
 
-The 'Standard' campaign from Manic Miners is supported today. Support for the 'Remastered', 'Classic', and 'Baz's Mod' campaigns is planned for future updates. 
+Three campaigns from Manic Miners are supported: Standard, Remastered, Classic. Support for Baz's Mod is planned. 
 
-Each campaign has 25 levels. 
+The first three campaigns each have 25 levels, while Baz's Mod has 33. 
 
 ### What items from Manic Miners are randomized? 
 
 Each level is initially locked, with Level Access items available to find. Therefore levels will also become available in a random order. 
 
-Additionally, you can configure Buildings, Items, and Vehicles to be locked until discoverable. 
+Additionally, you can configure Buildings, Items, and/or Vehicles to be locked until discoverable. 
 
 ### Where can I find items in Manic Miners? 
 
@@ -59,13 +59,17 @@ A necessary first step to a fresh Archipelago run, this wipes and refreshes all 
 
 This command will wipe all Archipelago data from the Manic Miners installation, should you wish for a simple uninstall. 
 
-#### `/mining_report`
+#### `/chiefs_report`
 
-Shows Manic Miners specific information about your current progress, such as how many things you've unlocked or how many levels you've cleared. 
+Shows overall game information about your current progress, such as how many things you've unlocked or how many levels you've cleared. 
+
+#### `/mining_map`
+
+Shows specific game information about which levels are accessible, but not yet cleared. It _only_ considers the level unlock items, and does not factor if you have all other prerequisites. 
 
 #### `/check_watch`
 
-Shows current target times, if applicable. 
+Shows specific game information about which target times are accessible, but not yet cleared. It _only_ considers the level unlock items, and does not factor if you have all other prerequisites.
 
 ## Under the hood
 
@@ -78,3 +82,19 @@ Secondly, it scans the Archipelago-specific save file for level data, to determi
 ## Problems? 
 
 I'm sure there's issues hiding just out of sight, like Slimy Slugs waiting to strike. Please reach out on our channel in the [Archipelago Discord](https://discord.com/channels/731205301247803413/1170769670350045284) if you have any issues or feedback! 
+
+## Contributors
+
+Manic Miners created by:
+
+Baraklava
+
+AP Mod created and maintained by:
+
+fogmike
+
+The following users have been of particular help with this mod, via various playtesting/suggestions/research/feedback:
+
+jurjen909
+Nixill
+Ruinae Retroque Rursus
