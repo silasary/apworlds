@@ -5,6 +5,8 @@ import re
 from time import sleep
 import requests
 import csv
+import gspread
+
 
 import common
 import yaml
@@ -52,16 +54,38 @@ if args.scan_forks:
             forks = repo.fetch(repo.url + "/forks?per_page=100&page=" + str(page))
 
 spreadsheet = None
+tabs = [0]
 if args.spreadsheet:
     tabs = [58422002, 857819707]
     spreadsheet = "1iuzDTOAvdoNe8Ne8i461qGNucg5OuEoF-Ikqs8aUQZw"
 elif args.awesomes_spreadsheet:
     # A sheet with a lot more games, but a much lower bar for inclusion.  Many worlds that are probably not playable enough to be discoverable
-    tabs = [0]
     spreadsheet = "11rQWNdF4dAuVq-bfsECvZnONyJujcp5O6Q_2Strish0"
 
-if spreadsheet:
-    all_rows = []
+
+def fetch_spreadsheet_rows_api(spreadsheet: str, tabs: list[int]) -> list[dict[str, str]]:
+    API_KEY = os.getenv("SHEETS_API_KEY")
+    if not API_KEY:
+        print("No API key found for Google Sheets API")
+        return []
+    gc = gspread.api_key(API_KEY)
+
+    sheet = gc.open_by_key(spreadsheet)
+
+    all_rows: list[dict[str, str]] = []
+    for ws in sheet.worksheets():
+        if ws.id in tabs:
+            rows = ws.get()
+
+            while rows[0].split(",")[0] != "Game":
+                rows.pop(0)
+            parsed = csv.DictReader(rows)
+            all_rows.extend(parsed)
+    return all_rows
+
+
+def fetch_spreadsheet_rows_csv(spreadsheet: str, tabs: list[int]) -> list[dict[str, str]]:
+    all_rows: list[dict[str, str]] = []
     for gid in tabs:
         SPREADSHEET_URL = f"https://docs.google.com/spreadsheets/d/{spreadsheet}/export?gid={gid}&format=csv"
         response = requests.get(SPREADSHEET_URL)
@@ -71,6 +95,15 @@ if spreadsheet:
             rows.pop(0)
         parsed = csv.DictReader(rows)
         all_rows.extend(parsed)
+    return all_rows
+
+
+if spreadsheet:
+    all_rows = fetch_spreadsheet_rows_api(spreadsheet, tabs)
+    if not all_rows:
+        print("Failed to fetch spreadsheet with API, falling back to csv download")
+        all_rows = fetch_spreadsheet_rows_csv(spreadsheet, tabs)
+
     for row in all_rows:
         if wheretofind := (row.get("Where can you get the APWorld and Client?", "").strip() or row.get("Where can you get the APWorld or program?", "").strip()) or (
             row.get("APWorld Link", "").strip()

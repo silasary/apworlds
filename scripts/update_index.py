@@ -66,7 +66,7 @@ for world in files:
 
             versions = list(manifest.get("versions", {}).values())
             versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)
-            meta[world.stem]["game"] = manifest.get("game", "")
+            meta[world.stem]["game"] = manifest.get("game", None) or ""
             meta[world.stem]["description"] = manifest.get("description", "")
             meta[world.stem]["authors"] = manifest.get("authors", [])
             manifest_ready[world.stem] = any(v.get("has_manifest", False) for v in versions)
