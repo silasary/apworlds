@@ -5,7 +5,7 @@ and release for Sony Playstation and Sega Saturn in (add year after googling)
 
 
 ## Downloads
-- <a href="https://github.com/fdelduque/Archipelago/releases/download/a08141/sotn.apworld">Latest Version (0.81411)</a>
+- <a href="https://github.com/fdelduque/Archipelago/releases/download/a08142/sotn.apworld">Latest Version (0.8142)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

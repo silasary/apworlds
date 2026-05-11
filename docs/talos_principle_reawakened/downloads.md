@@ -1,9 +1,12 @@
 # The Talos Principle Reawakened
 
 ## Latest
-- <a href="https://github.com/johnso48/TalosPrincipleArchipelago/releases/download/v1.3.0-BETA/talos_principle_reawakened.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/johnso48/TalosPrincipleArchipelago/releases/download/v1.3.0-BETA.2/talos_principle_reawakened.apworld">Latest Version (1.3.0b2)</a>
 
 ## All Versions
+
+#### v1.3.0b2
+- <a href="https://github.com/johnso48/TalosPrincipleArchipelago/releases/download/v1.3.0-BETA.2/talos_principle_reawakened.apworld">https://github.com/johnso48/TalosPrincipleArchipelago/releases/download/v1.3.0-BETA.2/talos_principle_reawakened.apworld</a>
 
 #### v1.1.0
 - <a href="https://github.com/johnso48/TalosPrincipleArchipelago/releases/download/v1.3.0-BETA/talos_principle_reawakened.apworld">https://github.com/johnso48/TalosPrincipleArchipelago/releases/download/v1.3.0-BETA/talos_principle_reawakened.apworld</a>

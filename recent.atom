@@ -2,81 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-11T00:29:57.129700+00:00</updated>
+  <updated>2026-05-11T07:13:17.226617+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Str8UpWHITE64/DRAP/releases/tag/1.0.0</id>
-    <title>Dead Rising Deluxe Remaster v0.2.3</title>
-    <updated>2026-05-05T23:03:39+00:00</updated>
-    <author>
-      <name>Str8UpWHITE64</name>
-    </author>
-    <content># DRAP — v1.0.0&#13;
-&#13;
-Big update: new goals, new YAML options, area-name corrections, and quality-of-life improvements.&#13;
-&#13;
-## Breaking — regenerate your YAMLs&#13;
-&#13;
-Several areas were renamed to match their in-game canonical names. This changes location IDs, item IDs, and region names — **previously generated seeds will not work**.&#13;
-&#13;
-- Grocery Store → **Seon's Food and Stuff**&#13;
-- Crislip's Hardware Store → **Crislip's Home Saloon**&#13;
-- Colby's Movie Theater → **Colby's Movieland**&#13;
-- Safe Room → **Security Room**&#13;
-- Service Hallway → **Warehouse**&#13;
-- Helipad → **Heliport**&#13;
-- Hideout → **Carlito's Hideout**&#13;
-&#13;
-## New goal&#13;
-&#13;
-- **Savior** — win by rescuing a configurable number of survivors (1–48). Pairs with or without ScoopSanity (when paired, main story scoops are excluded from the pool).&#13;
-&#13;
-## New YAML options&#13;
-&#13;
-- **Player skills as items** — 21 abilities (Zombie Ride, Power Throw, Item Toss, etc.) become AP items.&#13;
-- **Stat upgrades as items** — Progressive Health, Attack, Throw, Item Slot, Run, Speed.&#13;
-- **PP-bonus locations** — ~57 extra checks tied to PP-bonus events (microwave items, treadmills, wall plates, sandbags, display racks, etc.).&#13;
-- **Costume Randomizer** — three toggles: random starting outfit / re-randomize on every area transition / include DLC outfits.&#13;
-- **Zombie difficulty** — Night Mode + Hardcore Zombies (3× bite damage, longer aggro radius).&#13;
-- **Hostile Survivor Trap** — trap items that spawn 1–3 hostile NPCs at your location.&#13;
-&#13;
-## Gameplay&#13;
-&#13;
-- **Received Books are always-on** — book items received from AP activate their effect without consuming an inventory slot.&#13;
-- **EP shutter auto-trigger in ScoopSanity** — walk to a specific spot in Entrance Plaza and the shutters open on their own (no longer need to complete Backup for Brad first).&#13;
-- **Native in-game notifications** for AP item receives, item sends, trap triggers, and door-overlay hints — banners instead of modal popups.&#13;
-&#13;
-## Fixes&#13;
-&#13;
-- **ScoopSanity scoop chain** — fixed cases where critical items (e.g. Carlito's Hideout key) could be placed inside multi-event scoops the player couldn't yet reach.&#13;
-- **Stat upgrades on load** — speed / health / etc. now apply immediately on connect/load instead of waiting for the next level-up.&#13;
-- **Yellow main-scoop GUI status** — replaced with red for "next scoop, item not received."&#13;
-- **Beat Drivin' Carlito** marked excluded-from-progression in ScoopSanity so fill stops placing useful items there.</content>
-    <link href="https://github.com/Str8UpWHITE64/DRAP/releases/tag/1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.5.2</id>
-    <title>Brave Fencer Musashi v0.5.2</title>
-    <updated>2026-05-06T01:00:11+00:00</updated>
-    <author>
-      <name>AegeusEvander</name>
-    </author>
-    <content>Added:&#13;
--Color options for scalp&#13;
--high contrast option for steamwood&#13;
--fix for client crash while playing jp version when displaying items with B or P&#13;
-&#13;
-Note:&#13;
--Not compatible with XDelta Patches, must run unmodified game&#13;
--not compatible with prior apworld generations&#13;
--map tracker with Universal Tracker https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.30&#13;
--setup guide:https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/blob/main/docs/setup_en.md&#13;
--Follow development and report bugs on the Archipelago gg Discord, -&gt; Future-game-design -&gt; Brave Fencer Musashi</content>
-    <link href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.5.2"/>
-  </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.0%2Bbeta2a</id>
     <title>Deltarune v1.2.99</title>
@@ -1786,6 +1716,41 @@ Park Data now format in json.</content>
     <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.1.1"/>
   </entry>
   <entry>
+    <id>https://github.com/routhken/Archipelago/releases/tag/v0.4.0</id>
+    <title>Grim Dawn v0.4.0</title>
+    <updated>2026-05-10T18:37:20+00:00</updated>
+    <author>
+      <name>DaKennyMan22</name>
+    </author>
+    <content>### What's New:&#13;
+* Option to block flooded passage exit, requiring wightmire bridge to proceed&#13;
+* QoL notifications onscreen for when you receive a progression item&#13;
+* 1 new Trap: literature&#13;
+* Devotion shrines previously exclusive to elite or ultimate difficulty are now in normal and also are locations&#13;
+* Option to force devotion shrine offerings to always be aether crystals&#13;
+* Option "Ultra Rapid Fire" to make mana costs and cooldowns 85% less, affects both players and enemies&#13;
+* Option to make pets live forever&#13;
+* Option to change quality of generic gear loot&#13;
+* Option to change the camera to third person pov&#13;
+### What's Changed:&#13;
+* Client says to wait for message instead of 30 seconds&#13;
+* Client checks for apworld version and dlc files if dlc is enabled&#13;
+* Included Altener's instructions for Linux in the installation instructions&#13;
+### Bug Fixes:&#13;
+* Fixed connect on world load script not triggering when playing a female character&#13;
+* Fixed Lancel missing dialog for Korvaak goal&#13;
+* Fixed reinforced shell renamed to serrated shell&#13;
+* Fixed making a deal being in logic without homestead revered&#13;
+* Fixed summoners summoning summoners in enemy rando&#13;
+* Fixed enemy on-death summons causing infinite loop game crash&#13;
+* Fixed enemy rando causing widespread enemy in-fighting&#13;
+&#13;
+Get the poptracker at https://github.com/routhken/Grim_Dawn_tracker/releases/&#13;
+Get the mod at https://www.nexusmods.com/grimdawn/mods/167&#13;
+Installation Instructions at https://github.com/routhken/Archipelago/blob/Grim_Dawn/worlds/grim_dawn/docs/guide_en.md</content>
+    <link href="https://github.com/routhken/Archipelago/releases/tag/v0.4.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03c</id>
     <title>Cuphead v0.2.16909055</title>
     <updated>2026-05-10T20:42:59+00:00</updated>
@@ -1814,5 +1779,43 @@ This revision fixes the missing cookie requirement in the "Double Jump or Dash" 
 This revision updates the built in docs.&#13;
 </content>
     <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03d"/>
+  </entry>
+  <entry>
+    <id>https://github.com/asdfwyay/APBuckshot/releases/tag/v0.4.1</id>
+    <title>Buckshot Roulette v0.4.1</title>
+    <updated>2026-05-11T00:28:40+00:00</updated>
+    <author>
+      <name>asdfwyay</name>
+    </author>
+    <content>## Features&#13;
+- **Consumable Item Randomization**&#13;
+    - Item unlocks are shuffled randomly&#13;
+- **Steam Achievements**&#13;
+    - Obtain items from completing achievements&#13;
+- **Shotsanity**&#13;
+    - Obtain items from successful shots&#13;
+- **Streaksanity**&#13;
+    - Obtain items from successful shots on the dealer in a row without being shot yourself&#13;
+- **Customizable Goal**&#13;
+    - Choose from one of the following goals:&#13;
+        - **70K**: Beat the game&#13;
+        - **140K**: Beat 6 Double or Nothing rounds in a row&#13;
+        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million&#13;
+        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score&#13;
+- **Customizable Item Logic**&#13;
+    - Customize how many consumable items are expected to beat a certain number of rounds&#13;
+- **Custom Mechanics**&#13;
+    - Unique gameplay features specific to the Archipelago world&#13;
+- **Hint Mode**&#13;
+    - Complete rounds and achievements to get hints for locations in other slots in an Archipelago game&#13;
+## Changelog&#13;
+### World&#13;
+- Modified generation of point increase items to be slightly more generous (more likely to have higher point increases)&#13;
+### Client&#13;
+- Fixed fatal crash which could occur when drawing an item&#13;
+## Guides&#13;
+- [Info](&lt;https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md&gt;)&#13;
+- [Setup &amp; Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)</content>
+    <link href="https://github.com/asdfwyay/APBuckshot/releases/tag/v0.4.1"/>
   </entry>
 </feed>

@@ -1,17 +1,17 @@
 # Symphony of the Night
 
 ## Latest
-- <a href="https://github.com/fdelduque/Archipelago/releases/download/a08141/sotn.apworld">Latest Version (0.81411)</a>
+- <a href="https://github.com/fdelduque/Archipelago/releases/download/a08142/sotn.apworld">Latest Version (0.8142)</a>
 
 ## All Versions
-
-#### v0.81411
-- <a href="https://github.com/fdelduque/Archipelago/releases/download/a08141/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/a08141/sotn.apworld</a>
 
 #### v0.8142
 - <a href="https://github.com/fdelduque/Archipelago/releases/download/a08142/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/a08142/sotn.apworld</a>
 
 #### v0.8141.post2
+- <a href="https://github.com/fdelduque/Archipelago/releases/download/a08141/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/a08141/sotn.apworld</a>
+
+#### v0.814.11
 - <a href="https://github.com/fdelduque/Archipelago/releases/download/a08141/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/a08141/sotn.apworld</a>
 
 #### v0.814.post3
