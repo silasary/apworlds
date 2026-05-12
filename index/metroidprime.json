@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "UltiNaruto"
+  ],
   "description": "Metroid Prime is a first-person action-adventure game originally for the Gamecube. Play as\nthe bounty hunter Samus Aran as she traverses the planet Tallon IV and uncovers the plans\nof the Space Pirates.",
   "game": "Metroid Prime",
-  "github": "https://github.com/Electro1512/MetroidAPrime",
+  "github": "https://github.com/UltiNaruto/MetroidAPrime",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.5.0": {
       "created_at": "2025-03-06T03:04:43Z",
@@ -18,6 +25,51 @@
       "title": "v0.5.0",
       "version_simple": "0.5.0",
       "world_version": "0.5.0"
+    },
+    "v0.5.2": {
+      "created_at": "2026-03-16T19:55:23Z",
+      "description": "**/!\\ if you downloaded this earlier, redownload the apworld because I brainfarted severely..**\r\n\r\n## What's Changed:\r\n- Fix crash when using plando_items (Thanks @ProfBytes)\r\n- Temp folder is no more needed and was completely removed*\r\n- Energy tank capacity can now be set up to 1000 HP logically (with a step of 100)\r\n\r\n*: Now you are required to extract libs-`your OS`-`3.11 or 3.12`.zip to your `lib` folder in `Archipelago` folder. If you played Luigi's Mansion, this is similar.\r\n\r\n**Full Changelog**: https://github.com/UltiNaruto/MetroidAPrime/compare/v0.5.1...v0.5.2\r\n\r\n## New Contributors\r\n* @ProfBytes made their first contribution in https://github.com/UltiNaruto/MetroidAPrime/pull/3\r\n\r\n**As per usual, I remind you that you need to dump your copy of Metroid Prime and not download it.**",
+      "download_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.2/metroidprime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3e90a59afd6dcd1a61b77317cfd7c450112350fcdaa0514f176847f427433e3f",
+      "html_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/tag/v0.5.2",
+      "minimum_ap_version": "0.6.3",
+      "size": 106196,
+      "source_url": "https://api.github.com/repos/UltiNaruto/MetroidAPrime",
+      "tag": "v0.5.2",
+      "title": "v0.5.2",
+      "version_simple": "0.5.2",
+      "world_version": "0.5.2"
+    },
+    "v0.5.3": {
+      "created_at": "2026-04-15T09:49:10Z",
+      "description": "/!\\ This release is not back compatible with earlier versions\r\n\r\n# Apworld changes :\r\n  - Starting inventory is now fully local\r\n  - Door shields now match their blast shields if it's a beam combo or bomb blast shield\r\n  - Added warning for randomized beam that can force Remove Hive Mecha on\r\n  - Show starting items in credits\r\n\r\n# Library changes :\r\n  - Updated to latest randomprime patcher\r\n  - Libs are now auto installed in lib folder\r\n\r\n# Bug fixes :\r\n  - Now supports again Metroid Zero Mission offworld models\r\n  - Progressive items doesn't send multiple times anymore\r\n  - Fix scan for mission objectives when genning with multiple Metroid Prime players\r\n\r\n# Logic has been updated :\r\n  - Added new trick Research Lab Aether Upper Item with DBJ\r\n  - Added Power Bomb logic for Sandstone blocks\r\n  - Furnace Upper Item now requires Bombs or Spring Ball\r\n  - Phazon Mining Tunnel now requires Boost to traverse both directions\r\n  - Frost Cave Access doesn't require Bombs or Spring Ball anymore\r\n\r\n# New features :\r\n  - Shuffle Unlimited Missiles\r\n  - Shuffle Unlimited Power Bombs\r\n  - Spring Ball can now be its own item (has logic now + can be progressive aka Spring Ball then Bombs)\r\n\r\n## New Contributors\r\n* @NPCPotPie made their first contribution in https://github.com/UltiNaruto/MetroidAPrime/pull/4\r\n* @Aureooo-0 made their first contribution in https://github.com/UltiNaruto/MetroidAPrime/pull/5\r\n* OniHelix for creating the icon of the apworld\r\n* Nova for editing the icon of the apworld to add transparency to the background\r\n\r\n**Full Changelog**: https://github.com/UltiNaruto/MetroidAPrime/compare/v0.5.2...v0.5.3",
+      "download_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.3/metroidprime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "be88a135b29b1ee04d848d34a30ca8b7b94bbfc325d40cc7b5efa77e7d0df869",
+      "html_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/tag/v0.5.3",
+      "minimum_ap_version": "0.6.3",
+      "size": 130816,
+      "source_url": "https://api.github.com/repos/UltiNaruto/MetroidAPrime",
+      "tag": "v0.5.3",
+      "title": "v0.5.3",
+      "version_simple": "0.5.3",
+      "world_version": "0.5.3"
+    },
+    "v0.5.3-h1": {
+      "created_at": "2026-04-18T18:05:37Z",
+      "description": "# APWorld Changes\r\nFirst non starting item index now defaults to 0 if not present\r\n\r\n# Library Changes\r\nMoved auto installing libs to on client launch\r\n\r\n**Full Changelog**: https://github.com/UltiNaruto/MetroidAPrime/compare/v0.5.3...v0.5.3-h1",
+      "download_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.3-h1/metroidprime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fbc292b40df89cf7e55c827ac8eeb840adfeedb245e8383e054ce1a632b1ce44",
+      "html_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/tag/v0.5.3-h1",
+      "minimum_ap_version": "0.6.3",
+      "size": 130268,
+      "source_url": "https://api.github.com/repos/UltiNaruto/MetroidAPrime",
+      "tag": "v0.5.3-h1",
+      "title": "v0.5.3-h1",
+      "version_simple": "0.5.3",
+      "world_version": "0.5.3"
     }
   }
 }
