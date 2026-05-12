@@ -6,7 +6,7 @@ Defeat the act boss specified by your Goal Scope option to achieve victory.
 
 
 ## Downloads
-- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Beta-1.9.5/diablo2_archipelago.apworld">Latest Version (1.9.5)</a>
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Beta-1.9.6/diablo2_archipelago.apworld">Latest Version (1.9.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
