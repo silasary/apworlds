@@ -1,4 +1,4 @@
-# None
+# YARGGuitarHero2
 
 ## Latest
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.05.10/YARGGuitarHero2.apworld">Latest Version (26.5.10)</a>

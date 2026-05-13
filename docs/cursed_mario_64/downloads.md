@@ -1,4 +1,4 @@
-# None
+# Cursed Mario 64
 
 ## Latest
 - <a href="https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/Climbsanity/Cursed_Mario_64.apworld">Latest Version (0.2.3)</a>

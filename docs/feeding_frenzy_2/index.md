@@ -1,6 +1,8 @@
-# None
+# Feeding Frenzy 2
 
-
+Feeding Frenzy 2: Shipwreck Showdown is a casual arcade game where you
+play as a fish eating smaller fish to grow bigger. Collect Progressive Fish
+items to unlock new zones, and reach the final boss to win!
 
 
 ## Downloads

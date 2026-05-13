@@ -1,4 +1,4 @@
-# None
+# Super Meat Boy
 
 ## Latest
 - <a href="https://github.com/PixelShake92/Super-Meat-Boy-AP/releases/download/Alpha_1/super_meat_boy.apworld">Latest Version (1)</a>
