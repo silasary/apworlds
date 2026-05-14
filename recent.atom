@@ -2,75 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-14T12:40:15.289269+00:00</updated>
+  <updated>2026-05-14T18:42:48.241771+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BenDipp/Archipelago/releases/tag/0.8.0</id>
-    <title>HITMAN World of Assasination v0.8.0</title>
-    <updated>2026-05-08T22:23:57+00:00</updated>
-    <author>
-      <name>BenDipp</name>
-    </author>
-    <content> - Added support for HITMAN (2016) and HITMAN 2 (2018)&#13;
- - Added new items from Game version v.3.260.0 and the Patient Zero Requiem Pack DLC&#13;
- - Added Full Logic for all complications&#13;
-    - "No Disguise" and "One Disguise Change": Removes all Disguisesanity-locations for this specific level&#13;
-    - "No Pacifications", "One Pacification" and "No Non-Target Civilian Kills or Pacifications": Removes all Disguisesanity locations that are not lieing on the ground and all Itemsanity locations that are carried by NPCs&#13;
-    - "No Agility": All Dubai checks require a starting Location and Chongqing Completion with vanilla targets need a Starting Location that skips the datacore&#13;
- - Added VR support&#13;
- - Added Sniper Assassin checks&#13;
-    - Logically Sniper Assassin checks require "Any Sniper + Any Suitcase" or "Any Sniper + Any Agency Pickup", except on Dubai where the former needs "Starting Location - Dubai - Atrium" too&#13;
-    - Sniper Assassin cannot be added to Carpathian Mountains&#13;
- - Added the option to add Heavy Snipers into the itempool&#13;
-    - These are the Snipers used by 47, Knight and Stone in the Sniper Assassin game mode&#13;
-    - They come with their usual amount of Body-Piercing Ammo, Wall-Piercing Ammo and Shockwave Ammo (cycled by pressing [X])&#13;
- - Added Prioritized Filler Option&#13;
-    - Listed Items will be guaranteed to be included in the seed&#13;
- - Added option to disable annoying locations&#13;
-    - This is split into the following sub-options: "skip_locations_with_wait_time", "skip_locations_with_extra_step", "skip_locations_carried_by_npcs, "skip_locations_requiring_other_items", "skip_buried_locations"&#13;
-    - A full list of which checks fall under which category can be found in the [FAQ](https://github.com/BenDipp/Archipelago/blob/hitman_woa/worlds/hitman_woa/docs/en_hitman_woa.md)&#13;
- - Add options to remove all checks from the goal level or mark them as excluded&#13;
- - Added option to limit the amount of sanity-checks per level&#13;
-    - When enabled, a random subset of all available Itemsanity and Disguisesanity checks on each level will chosen&#13;
-    - When used with non-split Itemsanity, making sure all Levels remain under the threshold takes priorty over filling the threshold, so you might end up with less items than expected&#13;
- - Added ingame debug options to disable all complications and the forced difficulty selection.&#13;
-    - They can be found in the main menu under: Options -&gt; Peacock -&gt; Archipelago&#13;
- - Deprecated PopTracker pack in favour of [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker)&#13;
-    - If you have Universal Tracker installed, a tab with a map-tracker will automatically be added to the HITMAN-Client&#13;
-    - Note that when using the Universal Tracker Client, some Itemsanity-locatiins can be checked off prematurely on the map. Please use the Tracker Page or switch to the HITMAN Client in that case.&#13;
- - Fixed targets that are missing on master difficulty being chosen as random targets.&#13;
- - Fixed Arthur Edwards not getting a Target Check with Random Targets enabled&#13;
- - Reduced the chance of the Goal Level beeing in an early sphere when playing with level_completion goal mode&#13;
- - Changed minimum number of Complications to 0&#13;
- - Improved Fuzzer score (7 Failures in 10000 Runs) and seeds are now actually deterministic&#13;
- - Fixed Itempackages having no icons in the loadout screen&#13;
- - Fixed two-handed MEDIUM-items appearing in Itempackages with SMALL-item&#13;
-    - You should no-longer spawn with illegal-items in your hand if you have Itempackages equipped&#13;
- - Fixed swapping slots without restarting peacock would cause checks to be uncompletable&#13;
- - Added get_filler_item_name &#13;
- - Fixed various typos</content>
-    <link href="https://github.com/BenDipp/Archipelago/releases/tag/0.8.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.3</id>
-    <title>Mega Man Zero 3 v0.2.3</title>
-    <updated>2026-05-09T00:31:48+00:00</updated>
-    <author>
-      <name>brodieberger</name>
-    </author>
-    <content>Fixed some issues regarding ASyncs and other bugs.&#13;
-&#13;
-# Bug Fixes&#13;
-- Game now keeps track of previously sent items using RAM. Should help with async games.&#13;
-- No longer checks any state when in Title Screen.&#13;
-- Various backend improvements.&#13;
-- Fixed a missing secret disk location.&#13;
-- Fixed NG+ bug in Sunken Library.</content>
-    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.3"/>
-  </entry>
   <entry>
     <id>https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/tag/v0.9.7</id>
     <title>Ape Escape v0.9.7</title>
@@ -1054,5 +990,48 @@ This is for testing only. generation problems and more beware. UT is now support
 &#13;
 **Full Changelog**: https://github.com/niieli/Niko-Archipelago/compare/0.8.1...0.8.2</content>
     <link href="https://github.com/niieli/Niko-Archipelago/releases/tag/0.8.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.5</id>
+    <title>Parkitect v1.3.5</title>
+    <updated>2026-05-14T15:27:11+00:00</updated>
+    <author>
+      <name>CrusherRL</name>
+    </author>
+    <content>Installation can be found [here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)&#13;
+&#13;
+Enjoy!&#13;
+&#13;
+NOTE:&#13;
+This release is not backwards compatible with seeds generated **before **1.2.1&#13;
+AP World is unchanged! (1.3.3)&#13;
+&#13;
+# Parkitect Archipelago — Release Notes&#13;
+## Fix&#13;
+- Fixed Issue on Reconnecting several times by changing settings on options -&gt; Mods&#13;
+- Fixed added AP Version on check&#13;
+&#13;
+## Upcoming&#13;
+I decided to add a few more items. The Utility Buildings, the Deco - Deco and Deco - Path Attachments items.&#13;
+In Addition to that i will add a new Trap called "Research Trap". This trap will put at least 1 Attraction or Shop into the research pool. A Notification will appear to say which items is where to find.</content>
+    <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.3.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.7</id>
+    <title>Total War Warhammer 3 v0.9.7</title>
+    <updated>2026-05-14T18:33:04+00:00</updated>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>(Changeling still missing buildings/Techs and may not work in Spheres)&#13;
+&#13;
+Fixed broken Norsca techs.&#13;
+Added missing Norsca Buildings.&#13;
+&#13;
+Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
+[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
+&#13;
+**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.9.6...v0.9.7</content>
+    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.7"/>
   </entry>
 </feed>
