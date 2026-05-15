@@ -11,6 +11,9 @@
 #### v0.1.3
 - <a href="https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.1.3/ssbb_sse.apworld">https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.1.3/ssbb_sse.apworld</a>
 
+#### v0.1.3
+- <a href="https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.2.0/ssbb_sse.apworld">https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.2.0/ssbb_sse.apworld</a>
+
 #### v0.1.2
 - <a href="https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.1.2/ssbb_sse.apworld">https://github.com/kenniky/ArchipelagoSSE/releases/download/v0.1.2/ssbb_sse.apworld</a>
 
