@@ -1,9 +1,12 @@
 # Rabi-Ribi
 
 ## Latest
-- <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.7/rabi_ribi.apworld">Latest Version (1.4.7)</a>
+- <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.5.0/rabi_ribi.apworld">Latest Version (1.5.0)</a>
 
 ## All Versions
+
+#### v1.5.0
+- <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.5.0/rabi_ribi.apworld">https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.5.0/rabi_ribi.apworld</a>
 
 #### v1.4.7
 - <a href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.7/rabi_ribi.apworld">https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/download/1.4.7/rabi_ribi.apworld</a>

@@ -1,9 +1,12 @@
 # Spark the Electric Jester 3
 
 ## Latest
-- <a href="https://github.com/Kylogias/Spark3-Archipelago/releases/download/v0.4.1-alpha/spark3.apworld">Latest Version (0.4.1a0)</a>
+- <a href="https://github.com/Kylogias/Spark3-Archipelago/releases/download/v0.5.0-alpha/spark3.apworld">Latest Version (0.5.0a0)</a>
 
 ## All Versions
+
+#### v0.5.0a0
+- <a href="https://github.com/Kylogias/Spark3-Archipelago/releases/download/v0.5.0-alpha/spark3.apworld">https://github.com/Kylogias/Spark3-Archipelago/releases/download/v0.5.0-alpha/spark3.apworld</a>
 
 #### v0.4.1a0
 - <a href="https://github.com/Kylogias/Spark3-Archipelago/releases/download/v0.4.1-alpha/spark3.apworld">https://github.com/Kylogias/Spark3-Archipelago/releases/download/v0.4.1-alpha/spark3.apworld</a>

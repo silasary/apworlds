@@ -1,9 +1,12 @@
 # Borderlands 2
 
 ## Latest
-- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-80/borderlands2.apworld">Latest Version (80)</a>
+- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-81/borderlands2.apworld">Latest Version (81)</a>
 
 ## All Versions
+
+#### v81
+- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-81/borderlands2.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-81/borderlands2.apworld</a>
 
 #### v80
 - <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-80/borderlands2.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-80/borderlands2.apworld</a>

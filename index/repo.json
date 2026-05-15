@@ -1,12 +1,15 @@
 {
   "authors": [
-    "Automagic, ThisGuyHere"
+    "Automagic"
   ],
   "description": "R.E.P.O. is an online co-op horror game where you are tasked with extracting valuables from monster-filled locations.",
   "game": "R.E.P.O",
   "github": "https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "world_version"
+  ],
   "versions": {
     "0.0.1": {
       "created_at": "2025-05-02T04:42:54Z",
@@ -245,6 +248,21 @@
       "title": "REPO Update 0.4.0",
       "version_simple": "0.4.0",
       "world_version": "0.4.0"
+    },
+    "0.4.1-rc1": {
+      "created_at": "2026-04-20T22:40:50Z",
+      "description": "Mod:\r\n* fixed several issues caused by code changes in REPO 0.4.0\r\n* fixed re-rolled ap items not displaying their name for clients\r\n* fixed extra upgrade spawn positions and cosmetic box display name\r\n* added all new items from the Cosmetic Update to logic\r\n\r\nThis version **should** be compatible with previous multiworlds, but store items added in the Cosmetic Update will not spawn when connected to an old multiworld.\r\n\r\nSince this is a pre-release meant for testing, it will not be uploaded to Thunderstore and must be installed manually.\r\nTo use this version, navigate to wherever you have this mod installed and replace it with the version in the .zip attached in this release. r2modman users can find their profile folder by clicking Settings -> Browse profile folder, and Gale users can find it under File -> Open profile folder. From there, navigate to BepInEx/plugins/Automagic-Archipelago_Randomizer_for_REPO and you should see RepoAP.dll. For users of Gale Mod Manager, it is especially important to **DELETE** the old dll FIRST to avoid overwriting the mod in other profiles.",
+      "download_url": "https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1-rc1/repo.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fab2cb4368d040121ffa18847f28fb810408999d3bcbfaaef174acfd6094794e",
+      "html_url": "https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.1-rc1",
+      "prerelease": true,
+      "size": 19026,
+      "source_url": "https://api.github.com/repos/Automagic00/R.E.P.O.-Archipelago-Client-Mod",
+      "tag": "0.4.1-rc1",
+      "title": "0.4.1-rc1",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1rc1"
     }
   }
 }
