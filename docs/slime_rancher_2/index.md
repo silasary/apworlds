@@ -1,6 +1,11 @@
 # Slime Rancher 2
 
+Slime Rancher 2 — Archipelago multiworld randomizer.
 
+As Beatrix LeBeau you explore the Far, Far Range, collecting slimes and
+opening new zones.  In AP mode, treasure pods, gordos, map nodes, drones
+and fabricator upgrades become location checks, and your vacpack upgrades
+arrive as items from across the multiworld.
 
 
 ## Downloads

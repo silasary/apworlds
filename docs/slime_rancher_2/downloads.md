@@ -8,6 +8,9 @@
 #### v0.4.3
 - <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.4.3/slime_rancher_2.apworld">https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.4.3/slime_rancher_2.apworld</a>
 
+#### v0.4.3
+- <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.5.0/slime_rancher_2.apworld">https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.5.0/slime_rancher_2.apworld</a>
+
 #### v0.4.2
 - <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.4.2/slime_rancher_2.apworld">https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.4.2/slime_rancher_2.apworld</a>
 
