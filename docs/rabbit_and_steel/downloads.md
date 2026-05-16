@@ -1,9 +1,12 @@
 # Rabbit and Steel
 
 ## Latest
-- <a href="https://github.com/tjwombo/RNSArchipelago/releases/download/v0.2.9-fix/rabbit_and_steel.apworld">Latest Version (0.2.9)</a>
+- <a href="https://github.com/tjwombo/RNSArchipelago/releases/download/v0.3.0/rabbit_and_steel.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/tjwombo/RNSArchipelago/releases/download/v0.3.0/rabbit_and_steel.apworld">https://github.com/tjwombo/RNSArchipelago/releases/download/v0.3.0/rabbit_and_steel.apworld</a>
 
 #### v0.2.9
 - <a href="https://github.com/tjwombo/RNSArchipelago/releases/download/v0.2.9-fix/rabbit_and_steel.apworld">https://github.com/tjwombo/RNSArchipelago/releases/download/v0.2.9-fix/rabbit_and_steel.apworld</a>

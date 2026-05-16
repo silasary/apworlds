@@ -6,7 +6,7 @@ castle and Brauner&#x27;s magical portraits with two characters and put a stop t
 
 
 ## Downloads
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.1/cv_por.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.1.1/cv_por.apworld">Latest Version (1.1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
