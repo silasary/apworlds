@@ -1,9 +1,12 @@
 # TCG Card Shop Simulator
 
 ## Latest
-- <a href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre1/tcg_card_shop_simulator.apworld">Latest Version (1.0.0rc1)</a>
+- <a href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre2/tcg_card_shop_simulator.apworld">Latest Version (1.0.0rc2)</a>
 
 ## All Versions
+
+#### v1.0.0rc2
+- <a href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre2/tcg_card_shop_simulator.apworld">https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre2/tcg_card_shop_simulator.apworld</a>
 
 #### v1.0.0rc1
 - <a href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre1/tcg_card_shop_simulator.apworld">https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre1/tcg_card_shop_simulator.apworld</a>
