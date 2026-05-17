@@ -1,7 +1,8 @@
 {
   "authors": [
     "Max_lamenace572",
-    "OnlyLeafeon"
+    "OnlyLeafeon",
+    "Rayze"
   ],
   "flags": [
     "unready"
@@ -9,7 +10,11 @@
   "game": "Dead Cells",
   "github": "https://github.com/Maxlamenace572/DeadCellsArchipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.0.10": {
       "created_at": "2026-04-19T21:18:38Z",
@@ -141,6 +146,21 @@
       "title": "0.0.9",
       "version_simple": "0.0.9",
       "world_version": "0.0.9"
+    },
+    "0.1.0": {
+      "created_at": "2026-05-17T02:40:37Z",
+      "description": "New Quality of Life:\r\n   - New menu for archipelago leading to the next features\r\n   - History of the items you received since you launched the game\r\n   - Filler inventory, so now you choose when the item should be dropped\r\n   - New colorless shop, you can buy for 400 cells a colorless affix for any weapon/skill\r\n   - Biome tracker, you can see which biomes you have access to, and what checks can still be retrieved there. For now, it's only based on your yaml options; it doesn't calculate if you have the required items. So see it more as a global to-do list\r\n\r\nGameplay Change:\r\n   - Now interacting with a biome's end door sends the check even if you don't have the key\r\n   - Disable traps between an end boss killed and your return to the prison, to avoid exploits\r\n\r\nBug Fixes:\r\n   - Master's Keep biome check not being sent\r\n   - Biome checks that could be sent using the training room\r\n   - Not unlocking weapons after sending their check\r\n   - Heads never being given\r\n   - Cultist Outfit working like vanilla when disabling cosmetics\r\n   - Items like the shipwreck key or scrolls given again when changing the difficulty\r\n\r\nOther:\r\n   - Adaptation of the mod for the apworld changes\r\n\r\nApworld Changes, mostly done by Rayze:\r\n   - Fixed all misnamed item/location names\r\n   - Distinguished Biome items by appending \"Unlock\" onto them (\"Stilt Village Unlock\", \"Lighthouse Unlock\", etc)\r\n   - Fixed several regions either missing relevant connections, or having irrelevant connections\r\n   - Customization Rune location should now generate again\r\n   - Boss Heads all now require Boss Rush access logically\r\n   - Undying Shores no longer logically counts enemies you need to encounter beforehand\r\n   - Royal Gardener's Outfit logic missing Teleport rune rule\r\n   - Observatory and Astrolab unlocks no longer generate items in sub-5BSC settings\r\n   - Universal Tracker should no longer break upon receiving more than 5 boss cells\r\n   - Items required for specific checks (Face Flask for Pentinent's Outfit, etc) now properly marked as progressive\r\n   - Added Item Groups covering a few alternative names and all general item classifications (\"Melee Weapons\", \"Grenades\", etc)\r\n   - Added Location Groups for locations likely to be excluded (\"Boss Heads\", \"Flawless Cosmetics\", \"Respawn Checks\")\r\n\r\n",
+      "download_url": "https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.0/dead_cells.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d0c3fe43a23933db26ae2d2261ba74290c98a69dc326b66045a928f879d5d0ba",
+      "html_url": "https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 47510,
+      "source_url": "https://api.github.com/repos/Maxlamenace572/DeadCellsArchipelago",
+      "tag": "0.1.0",
+      "title": "0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
     },
     "BugFix": {
       "created_at": "2026-03-22T05:55:27Z",

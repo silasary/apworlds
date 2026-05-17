@@ -2,24 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-17T00:35:44.129396+00:00</updated>
+  <updated>2026-05-17T07:01:53.666388+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/dannybonz/k-on_archipelago/releases/tag/v1.1.4</id>
-    <title>K-On! After School Live!! v1.1.4</title>
-    <updated>2026-05-11T18:42:42+00:00</updated>
-    <author>
-      <name>dannybonz</name>
-    </author>
-    <content>- Fixes a bug where the game could freeze when unexpected story events were triggered. This could only happen if you continued playing after already achieving your goal.&#13;
-- Fixes a bug where placing items into your start inventory could result in generation failures.&#13;
-&#13;
-For instructions, see the [Setup Guide.](https://github.com/dannybonz/k-on_archipelago/blob/main/docs/setup.md)</content>
-    <link href="https://github.com/dannybonz/k-on_archipelago/releases/tag/v1.1.4"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-79</id>
     <title>Borderlands 2 v79</title>
@@ -931,7 +918,7 @@ Unreplicable Bug:&#13;
   </entry>
   <entry>
     <id>https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/tag/v0.9.9</id>
-    <title>Ape Escape v0.9.9</title>
+    <title>Ape Escape v0.9.9.post2</title>
     <updated>2026-05-16T22:17:41+00:00</updated>
     <author>
       <name>Thedragon005</name>
@@ -944,17 +931,17 @@ Please read the setup guides for information on how to setup this game for Archi
 [English](https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_en.md) / [French](https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_fr.md) &#13;
 &#13;
 * **Client and logic fixes**&#13;
+  - Changed behavior of having 1x Progressive Water Net (Swim) : It will now more accurately set the oxygen level using vanilla behavior&#13;
   - Entering Water Net training equips Stun Club (while in that training)&#13;
-  - Changed behavior of having 1x Progressive Water Net (Swim) : It will now more accuratly set the oxygen level&#13;
-  - Fixed Oxygen staying depleted when exiting a level underwater&#13;
-  - Fixed FastWarp not working sometimes&#13;
-  - Gladiator Attack was marked as 100% complete on the level select wrongly&#13;
-  - Fixed oxygen handling not resetting to limited value correctly in Boats and other situations&#13;
-  - Prevented Jackets to send while in transition and while dying&#13;
-  - Fixed MM Specter Room Jacket to immediately send when using FastWarp&#13;
-  - Fixed Training Rooms not setting the Gadget selection to the correct layout&#13;
-  - Fixed a crash happening using Hoop while exiting Hoop Training&#13;
-  - EntrancePlando option nows show WORLD-LEVEL notation to stay in order when generating YAML&#13;
+  - Training Rooms not setting the Gadget selection to the correct layout when exiting&#13;
+  - Oxygen staying depleted when exiting a level while underwater or being in a boat&#13;
+  - Fixed Gladiator Attack not being registered as 100% Complete correctly in Level Select&#13;
+  - Races not getting affected correctly by `allowcollect` function for Level Select&#13;
+  - Jackets were sometime sending when going through a transition&#13;
+  - FastWarp not working sometimes&#13;
+  - MM Specter Room Jacket sent immediately when using the FastWarp for mmtoken goal&#13;
+  - Fixed a crash happening using the Hoop while exiting Hoop Training&#13;
+  - EntrancePlando option now shows WORLD-LEVEL notation to stay in the correct order when generating YAML&#13;
   - Fixed 7-3 Crumbling Castle Jacket - Flooded Basement and 8-1 City Park Jacket - Barrel Room being inverted in the region creation&#13;
   &#13;
   ## Known bugs&#13;
