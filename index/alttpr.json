@@ -74,6 +74,21 @@
       "title": "v1.2.1",
       "version_simple": "1.2.1",
       "world_version": "1.2.1"
+    },
+    "v1.2.2": {
+      "created_at": "2026-05-16T23:12:31Z",
+      "description": "## Improvements\r\n* (Beta) Universal Tracker support\r\n  * Does not work with logical enemizer\r\n  * Very barebones for now; no maps, yamlless tracking, /explain, or deferred entrances\r\n* Generation is now deterministic per-seed\r\n* Invalid YAML options now throw an error on generation\r\n* Logical enemizer + standard start can no longer get BK'd in the Escape sequence\r\n\r\n## Bug Fixes\r\n* Shopkeepers have embraced capitalism and stopped giving their wares away for free\r\n* Fixed a bug where locations locked behind blue crystal blocks in Swamp/Ice/Mire were wrongly considered in logic\r\n* Fixed a bug where one-way doors were logically considered two-way, which could incorrectly treat Hyrule Castle, left side Mire, or Turtle Rock big chest room as accessible\r\n* Fixed a bug in crossed entrances where if a cave/dungeon connected the light and dark worlds, any locations inside it logically required Moon Pearl\r\n* Fixed a bug in crossed entrances where Hyrule Castle didn't logically require Moon Pearl if every entrance was in the dark world",
+      "download_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.2/alttpr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7ca894c976358a10a52e2c3ead7b0f5d1e1598cbe2a0a47444f8578eef05ed68",
+      "html_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.2.2",
+      "minimum_ap_version": "0.6.6",
+      "size": 2488504,
+      "source_url": "https://api.github.com/repos/aurabot24/Archipelago-ALttPR",
+      "tag": "v1.2.2",
+      "title": "v1.2.2",
+      "version_simple": "1.2.2",
+      "world_version": "1.2.2"
     }
   }
 }

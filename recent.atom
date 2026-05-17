@@ -2,158 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-16T18:23:31.020217+00:00</updated>
+  <updated>2026-05-17T00:35:44.129396+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/RealMelwei/hyperrogue_archipelago/releases/tag/v0.1.3</id>
-    <title>HyperRogue v0.1.3</title>
-    <updated>2026-05-10T22:48:06+00:00</updated>
-    <author>
-      <name>RealMelwei</name>
-    </author>
-    <content>Updated the games' rules to use rule builder instead of lambda expressions, allegedly making generation run way faster.&#13;
-&#13;
-Linux build soon to follow.</content>
-    <link href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/tag/v0.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/asdfwyay/APBuckshot/releases/tag/v0.4.1</id>
-    <title>Buckshot Roulette v0.4.1</title>
-    <updated>2026-05-11T00:28:40+00:00</updated>
-    <author>
-      <name>asdfwyay</name>
-    </author>
-    <content>**Hotfix 1 (5/12/2026):** Fixed another crash which would occur when attempting to draw a hand saw under specific circumstances. &#13;
-&#13;
-## Features&#13;
-- **Consumable Item Randomization**&#13;
-    - Item unlocks are shuffled randomly&#13;
-- **Steam Achievements**&#13;
-    - Obtain items from completing achievements&#13;
-- **Shotsanity**&#13;
-    - Obtain items from successful shots&#13;
-- **Streaksanity**&#13;
-    - Obtain items from successful shots on the dealer in a row without being shot yourself&#13;
-- **Customizable Goal**&#13;
-    - Choose from one of the following goals:&#13;
-        - **70K**: Beat the game&#13;
-        - **140K**: Beat 6 Double or Nothing rounds in a row&#13;
-        - **1000K**: Cash out in Double or Nothing mode with a score of at least 1 million&#13;
-        - **Custom**: Cash out in Double or Nothing mode with a user-specified minimum score&#13;
-- **Customizable Item Logic**&#13;
-    - Customize how many consumable items are expected to beat a certain number of rounds&#13;
-- **Custom Mechanics**&#13;
-    - Unique gameplay features specific to the Archipelago world&#13;
-- **Hint Mode**&#13;
-    - Complete rounds and achievements to get hints for locations in other slots in an Archipelago game&#13;
-## Changelog&#13;
-### World&#13;
-- Modified generation of point increase items to be slightly more generous (more likely to have higher point increases)&#13;
-### Client&#13;
-- Fixed fatal crash which could occur when drawing an item&#13;
-## Guides&#13;
-- [Info](&lt;https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/en_Buckshot Roulette.md&gt;)&#13;
-- [Setup &amp; Updating](https://github.com/asdfwyay/APBuckshot/blob/dev/worlds/buckshot/docs/setup_en.md)</content>
-    <link href="https://github.com/asdfwyay/APBuckshot/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.1</id>
-    <title>Mario Kart Wii v0.2.1</title>
-    <updated>2026-05-11T11:03:04+00:00</updated>
-    <author>
-      <name>toent</name>
-    </author>
-    <content>## Release Version 0.2.1: Bug fixes and tracker improvements&#13;
-Just a small release fixing a bunch of small issues people have experienced. Thank you all for reporting them in the [Discord](https://discord.gg/archipelago).&#13;
-&#13;
-### Changelog:&#13;
-- Added individual track locking visual to tracker.&#13;
-- Fixed connection issues when trying to connect new client with old seed.&#13;
-- Fixed complete goal on connection issue.&#13;
-- Fixed receiving item during roulette bug.&#13;
-- Fixed program not closing when saying continue? no. in license select prompt.&#13;
-- Fixed golden mushroom timer issue.&#13;
-- Fixed oversight in item distribution to now use the standing when grabbing the box, rather than the standing at the end of roulette.&#13;
-&#13;
-**REQUIRES VERSION 0.2.0 (or 0.2.1, they are the same) APWORLD**&#13;
-&#13;
-_Linux users, download the source code here to run the client._&#13;
-&#13;
-**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.2.0...v0.2.1</content>
-    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/tag/V4.11.6</id>
-    <title>Banjo Tooie v4.11.6</title>
-    <updated>2026-05-11T14:05:19+00:00</updated>
-    <author>
-      <name>jjjj12212</name>
-    </author>
-    <author>
-      <name>g0goTBC</name>
-    </author>
-    <author>
-      <name>Austin</name>
-    </author>
-    <content># 4.11.6&#13;
-  - This is update featuring changes based on Mysteryem's comments on the PR into core. Thanks Mysteryem!&#13;
-  - Generations are now 2-5% faster, since rules no longer check for the Universal Tracker Glitched Logic Item during a normal generation.&#13;
-  - There is now an option validation for skip puzzles if you accidentally selected to play with randomize_worlds.&#13;
-  - Fixed a bug with the yaml validation where it let you have bass clefs or extra treble clefs without randomizing notes.&#13;
-  - Added some missing indirect conditions, which should patch some strange bugs with the logic evaluation.&#13;
-  - There is now a check to make a generation fail early, if you end up with an unbeatable seed.&#13;
-  - Cryptic hint generation has been optimized for large multiworlds with a lot of cryptic hints, by a factor of 2.</content>
-    <link href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/tag/V4.11.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.2</id>
-    <title>Anodyne v0.6.2</title>
-    <updated>2026-05-11T15:11:52+00:00</updated>
-    <author>
-      <name>SephDB</name>
-    </author>
-    <author>
-      <name>PixieCatSupreme</name>
-    </author>
-    <content>- Fixed logic errors in Debug when accessed without broom</content>
-    <link href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.5</id>
-    <title>Donkey Kong 64 v1.5.5</title>
-    <updated>2026-05-11T18:14:40+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 1.5.5
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.5"/>
-  </entry>
   <entry>
     <id>https://github.com/dannybonz/k-on_archipelago/releases/tag/v1.1.4</id>
     <title>K-On! After School Live!! v1.1.4</title>
@@ -802,13 +655,14 @@ new stuff (since 0.5.3):&#13;
   </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.8</id>
-    <title>Total War Warhammer 3 v0.9.8</title>
+    <title>Total War Warhammer 3 v0.9.8.post2</title>
     <updated>2026-05-15T17:12:59+00:00</updated>
     <author>
       <name>jordansds</name>
     </author>
     <content>Added yaml-less generation for Universal Tracker.&#13;
 Added missing Ostyanka buildings.&#13;
+Added missing Wurzagg buildings.&#13;
 &#13;
 Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
 [FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
@@ -915,12 +769,13 @@ Updated Yaml descriptions</content>
     </author>
     <content>Weapons have been added to the item pool! This is currently slightly buggy so it is optional for now. &#13;
 &#13;
-Note that if you only have one weapon selected from the start, you will still have access to the buster. This is hard coded by the game and will be fixed at a later date.&#13;
-&#13;
 # Changes&#13;
-- Added Zero's four weapons as optional location checks.&#13;
+- Added Zero's four weapons as optional obtainable items.&#13;
 - Added EX Skill location checks for the three levels that didn't have them.&#13;
-- Fixed issue regarding the client running on mGBA emulator</content>
+- Fixed issue regarding the client running on mGBA emulator&#13;
+&#13;
+# Known Bugs&#13;
+- If you only have one weapon selected from the start, you will still have access to the buster. This is hard coded by the game and will be fixed at a later date.</content>
     <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.5"/>
   </entry>
   <entry>
@@ -957,6 +812,52 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - DLC update + some bug fixes [`8861907`](https://github.com/tjwombo/RNSArchipelago/commit/8861907a6a6c833b61a2b8a3e1b1b254d184149d)&#13;
 </content>
     <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.1.0-backup</id>
+    <title>Dark Souls Remastered v0.1.0b0</title>
+    <updated>2026-05-16T04:59:20+00:00</updated>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <author>
+      <name>Noka</name>
+    </author>
+    <content>Backup of v0.1.0 from Arson's repo</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.1.0-backup"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.1.1-backup</id>
+    <title>Dark Souls Remastered v0.1.1b0</title>
+    <updated>2026-05-16T04:59:20+00:00</updated>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <author>
+      <name>Noka</name>
+    </author>
+    <content>v0.1.1 backup from arson's repo</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.1.1-backup"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.1.2</id>
+    <title>Dark Souls Remastered v0.1.2</title>
+    <updated>2026-05-16T06:06:42+00:00</updated>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <author>
+      <name>Noka</name>
+    </author>
+    <content>## New features:&#13;
+Add "warp_to_all_bonfires" option - on by default. This has a side effect where the target of the warp becomes your new respawn point upon death/homeward/dark sign.&#13;
+Added to client "custom controls" the ability to change bonfire warp menu sort types (alphabetical, vanilla, progression), and to optionally use changed/enhanced names instead of "vanilla" ones.&#13;
+Added connection details and custom control options persisting between client sessions.&#13;
+&#13;
+## Changes:&#13;
+Removed "bonfire warp unlock" checks. Syncing is now done via AP data storage.&#13;
+</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.1.2"/>
   </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.0</id>
@@ -1016,5 +917,56 @@ Bugfix:&#13;
 Unreplicable Bug:&#13;
 - Some bosses don't fight you.  If someone can give me more details let me know but it doesn't happen to me.</content>
     <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SWCreeperKing/Conbunnipelago/releases/tag/v0.1.3</id>
+    <title>Conbunn Cardboard v0.1.3</title>
+    <updated>2026-05-16T21:49:30+00:00</updated>
+    <author>
+      <name>SW_CreeperKing</name>
+    </author>
+    <content>- [ApWorld] Fixed Museum Book Check not existing&#13;
+- [Client] Fixed Subzone doors not appearing despite having the transition for them (visual glitch)</content>
+    <link href="https://github.com/SWCreeperKing/Conbunnipelago/releases/tag/v0.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/tag/v0.9.9</id>
+    <title>Ape Escape v0.9.9</title>
+    <updated>2026-05-16T22:17:41+00:00</updated>
+    <author>
+      <name>Thedragon005</name>
+    </author>
+    <author>
+      <name>IHNN</name>
+    </author>
+    <content>## Version 0.9.9 - Fixes again!&#13;
+Please read the setup guides for information on how to setup this game for Archipelago :&#13;
+[English](https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_en.md) / [French](https://github.com/Thedragon005/Archipelago-Ape-Escape/blob/apeescape/worlds/apeescape/docs/setup_fr.md) &#13;
+&#13;
+* **Client and logic fixes**&#13;
+  - Entering Water Net training equips Stun Club (while in that training)&#13;
+  - Changed behavior of having 1x Progressive Water Net (Swim) : It will now more accuratly set the oxygen level&#13;
+  - Fixed Oxygen staying depleted when exiting a level underwater&#13;
+  - Fixed FastWarp not working sometimes&#13;
+  - Gladiator Attack was marked as 100% complete on the level select wrongly&#13;
+  - Fixed oxygen handling not resetting to limited value correctly in Boats and other situations&#13;
+  - Prevented Jackets to send while in transition and while dying&#13;
+  - Fixed MM Specter Room Jacket to immediately send when using FastWarp&#13;
+  - Fixed Training Rooms not setting the Gadget selection to the correct layout&#13;
+  - Fixed a crash happening using Hoop while exiting Hoop Training&#13;
+  - EntrancePlando option nows show WORLD-LEVEL notation to stay in order when generating YAML&#13;
+  - Fixed 7-3 Crumbling Castle Jacket - Flooded Basement and 8-1 City Park Jacket - Barrel Room being inverted in the region creation&#13;
+  &#13;
+  ## Known bugs&#13;
+* Stadium Attack and Gladiator Attack will sometime play the "entering level" music instead of their intended track.&#13;
+&#13;
+&#13;
+**\*Don't forget to do "Generate Template Options" after installing the ``apworld`` if you want the new options in the YAML\***&#13;
+&#13;
+Tracker for this apworld version : [Ape Escape Tracker 0.6.2](https://github.com/lurch9229/Ape-Escape-Tracker/releases/tag/0.6.2)&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Thedragon005/Archipelago-Ape-Escape/compare/v0.9.8....v0.9.9</content>
+    <link href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/tag/v0.9.9"/>
   </entry>
 </feed>

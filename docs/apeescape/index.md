@@ -6,7 +6,7 @@ by an army of monkeys led by Specter, the main antagonist.
 
 
 ## Downloads
-- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.8/apeescape.apworld">Latest Version (0.9.8)</a>
+- <a href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/download/v0.9.9/apeescape.apworld">Latest Version (0.9.9)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
