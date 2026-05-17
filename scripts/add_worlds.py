@@ -77,8 +77,12 @@ def fetch_spreadsheet_rows_api(spreadsheet: str, tabs: list[int]) -> list[dict[s
         if ws.id in tabs:
             rows = ws.get()
 
-            while rows[0].split(",")[0] != "Game":
+            while rows[0][0] != "Game":
                 rows.pop(0)
+
+            return []
+            # still WIP
+
             parsed = csv.DictReader(rows)
             all_rows.extend(parsed)
     return all_rows
@@ -98,6 +102,7 @@ def fetch_spreadsheet_rows_csv(spreadsheet: str, tabs: list[int]) -> list[dict[s
     return all_rows
 
 
+games_without_links = set()
 if spreadsheet:
     all_rows = fetch_spreadsheet_rows_api(spreadsheet, tabs)
     if not all_rows:
@@ -106,11 +111,14 @@ if spreadsheet:
 
     for row in all_rows:
         if wheretofind := (row.get("Where can you get the APWorld and Client?", "").strip() or row.get("Where can you get the APWorld or program?", "").strip()) or (
-            row.get("APWorld Link", "").strip()
+            row.get("APWorld Link", "").strip() or row.get("Links & Downloads", "").strip()
         ):
             repolinks = re.findall(REPO_REGEX, wheretofind)
             for link in repolinks:
                 queue.append(link + f"[{row['Game'].strip()}]")
+            if not repolinks:
+                games_without_links.add(row["Game"].strip())
+
             # queue.extend(repolinks)
 
         if "After Dark" in row.get("Notes", "") and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
@@ -172,3 +180,19 @@ for world in pathlib.Path("Archipelago", "worlds").iterdir():
                 manifest["supported"] = True
                 with open(file, "w") as f:
                     yaml.safe_dump(manifest, f)
+
+for world in pathlib.Path("index").iterdir():
+    if world.is_dir():
+        pass
+    else:
+        manifest = common.load_manifest(world)
+        if not manifest:
+            print(f"Failed to load manifest for {world}")
+            continue
+        if manifest.get("game") in games_without_links:
+            games_without_links.remove(manifest["game"])
+            if args.ready and "unready" in manifest.get("flags", []):
+                manifest["flags"].remove("unready")
+
+for game in games_without_links:
+    print(f"{game} is in the spreadsheet, but was not found in the index and did not have a link to a repo")
