@@ -1,5 +1,7 @@
 {
   "authors": [
+    "hesto2",
+    "Electro15",
     "UltiNaruto"
   ],
   "description": "Metroid Prime is a first-person action-adventure game originally for the Gamecube. Play as\nthe bounty hunter Samus Aran as she traverses the planet Tallon IV and uncovers the plans\nof the Space Pirates.",
@@ -70,6 +72,21 @@
       "title": "v0.5.3-h1",
       "version_simple": "0.5.3",
       "world_version": "0.5.3"
+    },
+    "v0.5.4": {
+      "created_at": "2026-05-17T12:56:10Z",
+      "description": "# Apworld changes :\r\n- Prefill is now done when creating locations\r\n- Removed Missile Launcher from pool if mains aren't required\r\n- Removed Main Power Bomb from pool if mains aren't required\r\n- Vanilla ROM detected is its own status and can be seen in /status\r\n- Client can now process arguments from command line\r\n- Client Tracker is now a thing\r\n- UT integration has been added\r\n- Non local items now override starting room loadout\r\n- Added mp1_iso argument to override iso path of host.yaml\r\n- Moved cosmetic options (suit and hud) to host.yaml\r\n- Can now customize default options in host.yaml\r\n- Improved emulator settings in host.yaml\r\n- Improves support for tooltips in Options Creator and for template yaml\r\n- Added Metroid: Samus Returns offworld models support\r\n\r\n# Bug fixes :\r\n- Fixed Progressive Bomb being always on when only Progressive Beams are on\r\n- Fixed first Power Bomb not giving the correct amount of ammo\r\n- Fixed locked door type being unusable\r\n- Added cutscene and IGT check before allowing receiving items\r\n- Fixed credits not adjusting properly to options\r\n\r\n# Logic has been updated :\r\n- Fixed logic bug with Chozo Ice Temple not requiring bombs\r\n- Added missing Scan Visor check for climbing Sun Tower\r\n- Added option check for beating Flaahgra with PBs\r\n- Removing unneeded duplicate check for Main Quarry item\r\n- Mine Security Station wouldn't check for Wave Beam pirates\r\n- Added Wave Beam pirates as a check to go the top of Elite Research\r\n- Ore Processing to Elevator Access A was wrongly checking for PB and Grapple\r\n- Ore Processing tricks required bombs when it wasn't needed\r\n- Fixed Chozo Ruins - Sun Tower, you cannot climb it with Spring Ball from bottom\r\n\r\n# Library changes :\r\n- Updated ppc-asm to 1.6.1\r\n\r\n**Full Changelog**: https://github.com/UltiNaruto/MetroidAPrime/compare/v0.5.3...v0.5.4",
+      "download_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4/metroidprime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c8defaade3716d32e6cf5a8c79ffe60bb64cde75e7dc3729929e1f76e1696b49",
+      "html_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/tag/v0.5.4",
+      "minimum_ap_version": "0.6.3",
+      "size": 253619,
+      "source_url": "https://api.github.com/repos/UltiNaruto/MetroidAPrime",
+      "tag": "v0.5.4",
+      "title": "v0.5.4",
+      "version_simple": "0.5.4",
+      "world_version": "0.5.4"
     }
   }
 }

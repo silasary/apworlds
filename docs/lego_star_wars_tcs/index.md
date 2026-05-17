@@ -4,7 +4,7 @@ Lego Star Wars: The Complete Saga
 
 
 ## Downloads
-- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.4.3/lego_star_wars_tcs.apworld">Latest Version (1.4.3)</a>
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v1.4.4/lego_star_wars_tcs.apworld">Latest Version (1.4.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

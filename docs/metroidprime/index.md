@@ -6,7 +6,7 @@ of the Space Pirates.
 
 
 ## Downloads
-- <a href="https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.3/metroidprime.apworld">Latest Version (0.5.3)</a>
+- <a href="https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4/metroidprime.apworld">Latest Version (0.5.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
