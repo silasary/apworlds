@@ -23,6 +23,9 @@
 #### v5.0.0.post1
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-1/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-5.0.0-1/manual_blocktales_wolfboi008.apworld</a>
 
+#### v5.0.0rc3
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/5.0.0-RC3/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/5.0.0-RC3/manual_blocktales_wolfboi008.apworld</a>
+
 #### v5.0.0rc2
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/5.0.0-RC2/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/5.0.0-RC2/manual_blocktales_wolfboi008.apworld</a>
 

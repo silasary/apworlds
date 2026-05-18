@@ -1,0 +1,79 @@
+# Setup Guide for Ocarina of Time Archipelago
+
+## Required Software
+
+- An Emulator of choice
+  - [BizHawk] (https://tasvideos.org/BizHawk/ReleaseHistory) (v2.10+)
+  - [Project 64](https://www.pj64-emu.com/windows-downloads)
+  - [simple64](https://simple64.github.io/)
+  - [Rosalie's Mupen GUI](https://github.com/Rosalie241/RMG)
+  - [Gopher64](https://github.com/gopher64/gopher64) (Windows/Linux)
+  - [ares](https://ares-emu.net/) (Windows/Linux)
+  - [RetroArch](https://www.retroarch.com/?page=platforms) (works on MacOS) 
+- The built-in Archipelago OoT client, which can be installed [here](https://github.com/ArchipelagoMW/Archipelago/releases).
+- An Ocarina of Time v1.0 ROM.
+
+## Configuring BizHawk
+
+Once BizHawk has been installed, open EmuHawk and change the following settings:
+
+- Under Config > Customize > Advanced, make sure the box for AutoSaveRAM is checked, and click the 5s button.
+  This reduces the possibility of losing save data in emulator crashes.
+- Under Config > Customize, check the "Run in background" and "Accept background input" boxes. This will allow you to
+  continue playing in the background, even if another window is selected.
+- Under Config > Hotkeys, many hotkeys are listed, with many bound to common keys on the keyboard. You will likely want
+  to disable most of these, which you can do quickly using `Esc`.
+- If playing with a controller, when you bind controls, disable "P1 A Up", "P1 A Down", "P1 A Left", and "P1 A Right"
+  as these interfere with aiming if bound. Set directional input using the Analog tab instead.
+- Under N64 enable "Use Expansion Slot". This is required for savestates to work.
+  (The N64 menu only appears after loading a ROM.)
+
+It is strongly recommended to associate N64 rom extensions (\*.n64, \*.z64) to the EmuHawk we've just installed.
+To do so, we simply have to search any N64 rom we happened to own, right click and select "Open with...", unfold
+the list that appears and select the bottom option "Look for another application", then browse to the BizHawk folder
+and select EmuHawk.exe.
+
+An alternative BizHawk setup guide as well as various pieces of troubleshooting advice can be found
+[here](https://wiki.ootrandomizer.com/index.php?title=Bizhawk).
+
+## Create a Config (.yaml) File
+
+### What is a config file and why do I need one?
+
+See the guide on setting up a basic YAML at the Archipelago setup
+guide: [Basic Multiworld Setup Guide](/tutorial/Archipelago/setup/en)
+
+### Where do I get a config file?
+
+The Player Options page on the website allows you to configure your personal options and export a config file from
+them. Player options page: [Ocarina of Time Player Options Page](/games/Ocarina%20of%20Time/player-options)
+
+### Verifying your config file
+
+If you would like to validate your config file to make sure it works, you may do so on the YAML Validator page. YAML
+validator page: [YAML Validation page](/mysterycheck)
+
+## Joining a MultiWorld Game
+
+### Obtain your OOT patch file
+
+When you join a multiworld game, you will be asked to provide your YAML file to whoever is hosting. Once that is done,
+the host will provide you with either a link to download your data file, or with a zip file containing everyone's data
+files. Your data file should have a `.apz5` extension.
+
+Double-click on your `.apz5` file to start your client and start the ROM patch process. Once the process is finished
+(this can take a while), the client and the emulator will be started automatically.
+To choose a specific emulator for auto-launch, set `oot_options.emulator_path` in your `host.yaml` to your emulator
+executable. If it is blank, the patching process will ask you to select an emulator executable before auto-launching.
+
+### Connect to the Multiserver
+
+Once both the client and the emulator are started, the OoT Client will connect to the loaded ROM automatically. You do
+not need to open the BizHawk Lua console or drag in a connector script. If the client is not connecting, make sure the
+patched ROM is loaded in a supported emulator and use `/n64` in the client to check the emulator connection status.
+For RetroArch, enable `Settings > Network > Network Commands` and leave the Network Command Port at `55355`.
+
+To connect the client to the multiserver simply put `<address>:<port>` on the textfield on top and press enter (if the
+server uses password, type in the bottom textfield `/connect <address>:<port> [password]`)
+
+Now you are ready to start your adventure in Hyrule.

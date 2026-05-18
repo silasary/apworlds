@@ -6,6 +6,20 @@
   "github": "https://github.com/ChrisCj8/ap_adventure",
   "manifest_fields": [],
   "versions": {
+    "Main": {
+      "created_at": "2026-04-11T12:43:43Z",
+      "description": "Uses [Inititial Release Version of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/Main)\r\n\r\nInitial Release\r\n\r\nIf you don't know what the .fgd file is for you don't need it.",
+      "download_url": "https://github.com/ChrisCj8/ap_adventure/releases/download/Main/gmod_apadv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "905426fce2d6ec5437f6f03fea505286271cb4f2b78eb0a45b71e7dd995231a9",
+      "html_url": "https://github.com/ChrisCj8/ap_adventure/releases/tag/Main",
+      "size": 39141,
+      "source_url": "https://api.github.com/repos/ChrisCj8/ap_adventure",
+      "tag": "Main",
+      "title": "Initial Release",
+      "version_simple": "0.0.0",
+      "world_version": "0.0.0+main"
+    },
     "v0.1.2": {
       "created_at": "2026-04-15T17:42:44Z",
       "description": "Uses [Version 0.1.1 of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/v0.1.1)\r\n\r\n- adopted a new versioning scheme\r\n- gmod path is now set in a text file separate from host.yaml since accessing that during datapackage creation is too unreliable\r\n    - if the path was set in host.yaml beforehand it will be migrated automatically for now\r\n- edit mode tools will now stop you from creating locations, exits, entrances and start point with invalid settings\r\n- added movement values from Half-Life: Source to the editor presets\r\n- users are now prevented from saving over built-in configs unless the convar `apadventure_editor_allow_static_overwrite` is set to 1 to prevent people from accidentally overwriting stuff they shouldn't\r\n- issues encountered by the apworld when processing configs will now be logged into a file in the gmod_apadv folder\r\n- starts and entrances now have player-sized bounding boxes drawn around them in edit mode\r\n- fixed the start tool not creating toolgun effects when used\r\n- fixed a bunch of ui files not being addcsluafile'd\r\n- made some minor changes to the documentation\r\n\r\nif you don't know what the .fgd file is for you don't need it",
@@ -19,6 +33,20 @@
       "title": "Version 0.1.2",
       "version_simple": "0.1.2",
       "world_version": "0.1.2"
+    },
+    "v1_1": {
+      "created_at": "2026-04-11T21:08:52Z",
+      "description": "Uses [Inititial Release Version of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/Main)\r\n\r\nFixed the apworld throwing errors on new installs because the host.yaml section and logic folders haven't been created yet.\r\n\r\nThis flew under my radar because I did not test the apworld on a new install, apologies.\r\n\r\nIf you don't know what the .fgd file is for you don't need it.",
+      "download_url": "https://github.com/ChrisCj8/ap_adventure/releases/download/v1_1/gmod_apadv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "50428373709b81e649109a854e9f23c1c4d6a7888d44e16b84b7159e1460e409",
+      "html_url": "https://github.com/ChrisCj8/ap_adventure/releases/tag/v1_1",
+      "size": 39217,
+      "source_url": "https://api.github.com/repos/ChrisCj8/ap_adventure",
+      "tag": "v1_1",
+      "title": "Version 1 Patch 1",
+      "version_simple": "1",
+      "world_version": "1"
     }
   }
 }
