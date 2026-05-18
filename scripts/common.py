@@ -111,7 +111,7 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
                 if release.world_version in manifest.get("versions", {}):
                     del manifest["versions"][release.world_version]
                 continue
-        if manifest.get("game") and game_name_filter and manifest["game"] != game_name_filter:
+        if manifest.get("game") and game_name_filter and manifest["game"].lower() != game_name_filter.lower():
             # print(f"Skipping {release.id} in {github_url} due to game filter {game_name_filter}")
             continue
 

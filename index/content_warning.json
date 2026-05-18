@@ -1,0 +1,44 @@
+{
+  "authors": [
+    "Jakeodude"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Content Warning",
+  "github": "https://github.com/Jakeodude/cw-apworld",
+  "manifest_fields": [
+    "authors",
+    "world_version"
+  ],
+  "versions": {
+    "1.0.0": {
+      "created_at": "2026-05-07T16:38:26Z",
+      "description": "# Content Warning Archipelago Integration\r\n\r\nThis repository contains the Archipelago Multiworld Randomizer integration for *Content Warning*. \r\n\r\n## \ud83d\udce5 APWorld Installation\r\n1. **Download** the `content_warning.apworld` file.\r\n2. **Move** the file into your local Archipelago custom worlds folder:\r\n\r\n3. **Restart** your Archipelago launcher to ensure the game appears in the generation list.\r\n\r\n## \u2699\ufe0f YAML Options Breakdown\r\nYour YAML file allows you to customize the difficulty and settings of your world.\r\n\r\n### Victory Conditions (Goal)\r\n* **viral_sensation:** Reach the ultimate milestone of 1,000,000 views in one quota.\r\n* **views_goal:** Reach a custom amount of total views over multiple runs. \r\n* **quota_goal:** Reach a set number of quotas to win.\r\n* **monster_hunter:** Win by filming a specific number of unique monsters.\r\n* **hat_collector:** Purchase a configurable number of hats.\r\n\r\n\r\n### Check Options\r\n* **views_checks:** When enabled, lifetime-view milestone locations are part of the pool. If disabled, all view threshold locations are removed from generation and the Views Goal becomes invalid.\r\n* **views_goal_target:** Sets the lifetime view total required to win if the Views Goal is enabled, up to a maximum of 33,739,000 views.\r\n* **quota_requirement:** Includes quota checks in the location pool. If disabled, all quota-related checks are removed and the Quota Goal becomes invalid.\r\n* **quota_count:** Determines the number of quotas to play through, ranging from 1 to 21. This setting drives the active count of Quota, Extracted on Day X, and Sponsorship locations.\r\n* **monster_hunter_count:** Sets the required number of distinct monsters that must be filmed to achieve the Monster Hunter Goal, ranging from 5 to 33.\r\n* **monster_tiers:** Gives each non-difficult filmable monster two additional filming location checks for their 2nd and 3rd sightings. This adds up to 42 extra location checks to your world.\r\n* **filler_multi_sightings:** When enabled alongside Monster Tiers, all 2nd and 3rd sighting locations will only hold filler items, preventing progression items from spawning there.\r\n* **difficult_monsters:** Allows difficult or rare monsters (such as the Flicker, Cam Creep, Infiltrator, Black Hole Bot, Ear, Snail Spawner, Big Slap, Ultra Knifo, and Weeping) to have real, non-filler items hidden behind their base filming checks.\r\n* **hat_collector_count:** Sets the number of hats that must be purchased to achieve the Hat Collector Goal, ranging from 5 to 31.\r\n* **include_sponsorships:** Adds sponsorship checks into the location pool. Each completed sponsorship grants the next check in order, capped at 20 total based on quota count.\r\n* **sponsor_filler:** Forces all sponsor locations to contain only filler items, keeping progression items away from RNG-dependent sponsorships.\r\n* **multiplayer_mode:** Adds multiplayer-only monster locations, such as the Weeping, into the world generation pool so they can receive items. If playing solo, leave this disabled so those locations are completely omitted from generation.\r\n\r\n\r\n## \ud83d\ude80 How to Generate\r\n1. Open your `Content Warning.yaml` and set your `name`.\r\n2. Adjust your preferred goals and settings.\r\n3. Place the YAML in your Archipelago `Players` folder along with other player's YAML files.\r\n4. Run the generate command on the Archipelago launcher\r\n5. The output file will be in your outputs folder.\r\n",
+      "download_url": "https://github.com/Jakeodude/cw-apworld/releases/download/1.0.0/content_warning.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c160b67896088216e890a1ba779103d67ece7bafe0376b3d9eda6859c7ab66d1",
+      "html_url": "https://github.com/Jakeodude/cw-apworld/releases/tag/1.0.0",
+      "size": 25515,
+      "source_url": "https://api.github.com/repos/Jakeodude/cw-apworld",
+      "tag": "1.0.0",
+      "title": "Content Warning Ap World 1.0.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "1.0.1": {
+      "created_at": "2026-05-17T04:37:44Z",
+      "description": "* Added death link functionality",
+      "download_url": "https://github.com/Jakeodude/cw-apworld/releases/download/1.0.1/content_warning.apworld",
+      "has_manifest": true,
+      "hash_sha256": "30f7c71afdd05db8fbb07ff2224de258ef8c9f5b2a5d6f37a5b4106a1e8c4a48",
+      "html_url": "https://github.com/Jakeodude/cw-apworld/releases/tag/1.0.1",
+      "size": 25691,
+      "source_url": "https://api.github.com/repos/Jakeodude/cw-apworld",
+      "tag": "1.0.1",
+      "title": "Content Warning Ap World 1.0.1",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}

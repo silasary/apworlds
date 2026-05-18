@@ -1,0 +1,52 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/mattthewaz/RtRAPWorld",
+  "manifest_fields": [],
+  "versions": {
+    "v0.1": {
+      "created_at": "2026-04-16T18:17:34Z",
+      "description": "Initial Release. Should be fully functional. Needs testing (works on my machine~). ",
+      "download_url": "https://github.com/mattthewaz/RtRAPWorld/releases/download/v0.1/RiseToRuins.apworld",
+      "has_manifest": false,
+      "hash_sha256": "82e898ac670be9ccdc32941d8096c774a390d15d089061ffe8dc2bb8348b5694",
+      "html_url": "https://github.com/mattthewaz/RtRAPWorld/releases/tag/v0.1",
+      "size": 11825,
+      "source_url": "https://api.github.com/repos/mattthewaz/RtRAPWorld",
+      "tag": "v0.1",
+      "title": "apworld v0.1",
+      "version_simple": "0.1",
+      "world_version": "0.1"
+    },
+    "v0.2": {
+      "created_at": "2026-04-30T05:49:04Z",
+      "description": "Add new goal locations, location dependency logic, and slot data improvements\r\n\r\nNew location checks (10 goals):\r\n- DOOOOMED, GOD_DAMMIT (1 tier each)\r\n- WEAKEST_LINKS, CRUMBLING_DEFENSES (4 tiers each)\r\n- TWENTY_EIGHT_SECONDS_LATER (1 tier)\r\n- ANIMAL_RIGHTS_VIOLATIONS (4 tiers)\r\n- CATJEETASTROPHIC (2 tiers, chains off MIGRANT_WORKERS)\r\n- HOARDER (4 tiers), WHATS_THAT_SMELL (2 tiers)\r\n- MIGRANT_WORKERS (4 tiers)\r\n\r\nGoal adjustments:\r\n- YOU_ALREADY_LOST: 5 tiers \u2192 1 tier\r\n- RISE_TO_RICHES: remove MARKETPLACE requirement, keep FORGE only\r\n- LITERAL_DUMPSTER_FIRE: add goal_requires=HOARDER to match in-game goal web\r\n\r\nLocation logic (regions.py rewrite):\r\n- Tier N > 1: requires can_reach(same goal tier N-1)\r\n- Tier 1 with goal_requires: requires can_reach(prerequisite goal last tier)\r\n- Item requirements use non-transitive direct deps only\r\n\r\nSlot data:\r\n- Add location_id_to_item to fill_slot_data() so the Java client can\r\n  display which item was at a checked location",
+      "download_url": "https://github.com/mattthewaz/RtRAPWorld/releases/download/v0.2/RiseToRuins.apworld",
+      "has_manifest": false,
+      "hash_sha256": "6ff158157c1bce456b1fc797336141b6be07bf3a9750cc00f1281a2e5ba6a80e",
+      "html_url": "https://github.com/mattthewaz/RtRAPWorld/releases/tag/v0.2",
+      "size": 12717,
+      "source_url": "https://api.github.com/repos/mattthewaz/RtRAPWorld",
+      "tag": "v0.2",
+      "title": "apworld v0.2",
+      "version_simple": "0.2",
+      "world_version": "0.2"
+    },
+    "v0.3": {
+      "created_at": "2026-05-12T03:56:48Z",
+      "description": "## Commit: \"Some logic fixes\"\r\n\r\n### `regions.py`\r\n- Wired up the new `requires_any` condition into the access rule builder \u2014 adds an `any(state.has(...))` lambda when a goal has a `requires_any` list.\r\n\r\n### `locations.py`\r\n\r\n#### Data model changes\r\n- Added `requires_any` field to `GoalDef` and `_g()` helper \u2014 for goals that need **at least one** of a list of items (vs. `requires` which needs **all** of them).\r\n\r\n#### New item requirements added to previously unrestricted goals\r\n\r\n| Goal | Change |\r\n|---|---|\r\n| `DEFORESTATION` | requires `LUMBER_SHACK` |\r\n| `QUARRY` | requires `MINING_FACILITY` |\r\n| `KYLE_POWERED` | requires `CRYSTAL_HARVESTRY` |\r\n| `INDUSTRY` | requires_any `LUMBER_MILL` or `STONE_CUTTERY` |\r\n| `DIGGY_DIGGY_HOLE` | requires `WAY_MAKER_SHACK` |\r\n| `PORTER` | added `ESSENCE_COLLECTOR` (alongside existing `MIGRATION_WAY_STATION`) |\r\n| `POWER_OVERWHELMING` | requires `ESSENCE_COLLECTOR` |\r\n| `PRODIGIOUS_PLANNER` | requires_any any storage building |\r\n| `TOWER_DEFENSE` | requires_any any tower (including `GOD_TOWER`) |\r\n| `RETROFIT` | requires `FORGE`, `LUMBER_MILL`, `STONE_CUTTERY`, `CRYSTILLERY` |\r\n| `CRUMBLING_DEFENSES` | requires_any any wall type |\r\n| `NEVER_GONNA_GIVE_YOU_UP` | requires `RECALL` |\r\n| `WILD_GROWTH` | requires `MOTIVATE_LAND` |",
+      "download_url": "https://github.com/mattthewaz/RtRAPWorld/releases/download/v0.3/RiseToRuins.apworld",
+      "has_manifest": false,
+      "hash_sha256": "948ef0e19decc3a2c196f243c59614027a29a49cc7481e5e4e28a17eff6a22b0",
+      "html_url": "https://github.com/mattthewaz/RtRAPWorld/releases/tag/v0.3",
+      "size": 13067,
+      "source_url": "https://api.github.com/repos/mattthewaz/RtRAPWorld",
+      "tag": "v0.3",
+      "title": "apworld v0.3",
+      "version_simple": "0.3",
+      "world_version": "0.3"
+    }
+  }
+}

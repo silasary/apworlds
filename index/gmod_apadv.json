@@ -1,0 +1,24 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": "GMod - apAdventure",
+  "github": "https://github.com/ChrisCj8/ap_adventure",
+  "manifest_fields": [],
+  "versions": {
+    "v0.1.2": {
+      "created_at": "2026-04-15T17:42:44Z",
+      "description": "Uses [Version 0.1.1 of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/v0.1.1)\r\n\r\n- adopted a new versioning scheme\r\n- gmod path is now set in a text file separate from host.yaml since accessing that during datapackage creation is too unreliable\r\n    - if the path was set in host.yaml beforehand it will be migrated automatically for now\r\n- edit mode tools will now stop you from creating locations, exits, entrances and start point with invalid settings\r\n- added movement values from Half-Life: Source to the editor presets\r\n- users are now prevented from saving over built-in configs unless the convar `apadventure_editor_allow_static_overwrite` is set to 1 to prevent people from accidentally overwriting stuff they shouldn't\r\n- issues encountered by the apworld when processing configs will now be logged into a file in the gmod_apadv folder\r\n- starts and entrances now have player-sized bounding boxes drawn around them in edit mode\r\n- fixed the start tool not creating toolgun effects when used\r\n- fixed a bunch of ui files not being addcsluafile'd\r\n- made some minor changes to the documentation\r\n\r\nif you don't know what the .fgd file is for you don't need it",
+      "download_url": "https://github.com/ChrisCj8/ap_adventure/releases/download/v0.1.2/gmod_apadv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c51354e1cff100248cd83d725441202a12dd2162ba1a4c8ffc5d746fd3df6b8b",
+      "html_url": "https://github.com/ChrisCj8/ap_adventure/releases/tag/v0.1.2",
+      "size": 39424,
+      "source_url": "https://api.github.com/repos/ChrisCj8/ap_adventure",
+      "tag": "v0.1.2",
+      "title": "Version 0.1.2",
+      "version_simple": "0.1.2",
+      "world_version": "0.1.2"
+    }
+  }
+}

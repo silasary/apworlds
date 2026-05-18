@@ -1,0 +1,25 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/Spriddles/crazy-taxi-apworld",
+  "manifest_fields": [],
+  "versions": {
+    "v0.6.0-beta.1": {
+      "created_at": "2026-05-15T05:43:57Z",
+      "description": "# Crazy Taxi GameCube/Dolphin APWorld Beta v0.6.0\r\n\r\nFirst public beta release for Crazy Taxi GameCube on Dolphin Emulator.\r\n\r\n## Target\r\n\r\n- Crazy Taxi GameCube\r\n- Dolphin Emulator\r\n- Archipelago 0.6.7\r\n\r\n## Features\r\n\r\n- Fare checks\r\n- Crazy Box checks through Dolphin GCI save detection\r\n- Crazy Box AP-unlock send gate\r\n- Scalable fare block count\r\n- Scalable Crazy Box goal requirement\r\n- Direct Fare License items\r\n- Progressive and non-progressive Fare License modes\r\n- Manual fare range switching with `/ct_switch` and `/ct_range`\r\n- Automatic jump to the next unlocked incomplete fare range\r\n- Timer extension/reduction items\r\n\r\n## Required dependency\r\n\r\nInstall the Dolphin memory dependency before playing.\r\n\r\n### Windows\r\n\r\n```powershell\r\npy -m pip install dolphin-memory-engine\r\n\r\n### Ubuntu/Linux\r\n\r\npython3 -m pip install --user --break-system-packages dolphin-memory-engine\r\n\r\n### GCI Save Path\r\n\r\nWindows example:\r\n$env:CRAZY_TAXI_GCI_PATH=\"C:\\Users\\<YourName>\\AppData\\Roaming\\Dolphin Emulator\\GC\\USA\\Card A\"\r\n\r\nUbuntu Flatpak Dolphin Example:\r\nexport CRAZY_TAXI_GCI_PATH=\"$HOME/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/GC/USA/Card A\"\r\n\r\n###Important Client Commands\r\n/ct_attach\r\n/ct_status\r\n/ct_gci\r\n/ct_mode crazybox\r\n/ct_mode arcade\r\n/ct_switch 4\r\n/ct_range 4\r\n\r\nUse /ct_mode crazybox before playing Crazy Box stages\r\nUse /ct_mode arcade when returning to Arcade fare checks\r\n\r\nKnown beta limitations\r\nCrazy Box stage lockout is not enforced in-game yet.\r\nThe client prevents early Crazy Box check sends by requiring the AP unlock first.\r\nManual /ct_mode crazybox and /ct_mode arcade are currently required.\r\nFailed fare / DeathLink behavior is currently disabled or experimental.\r\nWider testing across Dolphin versions is still needed.",
+      "download_url": "https://github.com/Spriddles/crazy-taxi-apworld/releases/download/v0.6.0-beta.1/crazy_taxi_v0_6.apworld",
+      "has_manifest": false,
+      "hash_sha256": "3dc0b250fe1453fabb298e49caf0b71f5096e3df02273286d3661125c0cb4ab2",
+      "html_url": "https://github.com/Spriddles/crazy-taxi-apworld/releases/tag/v0.6.0-beta.1",
+      "prerelease": true,
+      "size": 19311,
+      "source_url": "https://api.github.com/repos/Spriddles/crazy-taxi-apworld",
+      "tag": "v0.6.0-beta.1",
+      "title": "Crazy Taxi GameCube/Dolphin Beta v0.6.0",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0b1"
+    }
+  }
+}

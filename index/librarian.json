@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "Str8UpWHITE64"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Librarian Tidy Up the Arcane Library",
+  "github": "https://github.com/Str8UpWHITE64/Librarian-AP",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "1.0.3": {
+      "created_at": "2026-05-16T03:27:42Z",
+      "description": "# Librarian-AP v1.0.3: bug-fix slice\r\n\r\nFive bug fixes, a unified warding rule, and a more uniform location-pool shape. Existing seeds keep working; most affected runs **self-recover on next reconnect**, no regeneration required.\r\n\r\n## Highlights\r\n\r\n- **Section Complete checks now fire.** They were defined apworld-side but never wired up on the Lua client, so players were finishing entire sections with zero credit. Now they fire on the row that completes the section, with cross-session catch-up on reconnect.\r\n- **Reconnect during gameplay no longer flickers.** Item re-dumps used to flash every bookcase to hidden as `shelves_open` rebuilt from zero; the client now defers the world-apply until items quiet and fires a single rebuild at the end.\r\n- **Level-up checks no longer get stranded after a reload.** The internal `_levels_reached` counter resets to 0 on each connect; previously the first OnLevelUp would re-send Level 1 (silently dropped by the server) instead of the level you just earned. Catch-up is now self-healing across baseline sync, on-level-up, and the periodic poll, each via a `_sent_checks`-floor plus XP-curve max.\r\n- **Skill applies don't over-grant on reconnect anymore.** The first attempt at a skill-resync compared against the game's lagged save state and re-applied every skill on every tick; replaced with a Lua-side applied-counter that's the truth source.\r\n\r\n## Warding rule (default mode)\r\n\r\nUnified to a single formula: `unward iff shelf_req <= max(1, cases_open)`.\r\n\r\nPractically: every section's first-tier \"natural bookcase 1\" series becomes pickable as soon as you receive its series unlock, even with zero shelf unlocks in that section. Higher-tier series stay warded until you open enough bookcases to reach their home shelf. `only_unward_shelfable_books: true` keeps the stricter behavior (no floor of 1).\r\n\r\nVersion-gated via `slot_data.version`, so seeds generated before v1.0.3 keep their original behavior and existing mid-run saves don't suddenly re-ward placed books.\r\n\r\n## Location pool\r\n\r\n- `Milestone: N Books Placed` locations (22 entries) removed. Closure-based \"in logic\" leakage and swap-exploit problems made them unreliable for fill.\r\n- Replaced 1-for-1 with finer `Complete N Rows` thresholds (50 grew to 72 entries: every row 1-20, then every 5 through 100, plus the existing late-game spread). Same total location count, more deterministic fill behavior.\r\n\r\n## Bug fixes\r\n\r\n1. **Mid-gameplay reconnect flicker.** `apply_item` now defers `flush_apply` while a reconnect re-dump is in progress; main.lua's reconnect-settle watcher fires one rebuild after items quiet.\r\n2. **Closure-leakage spurious milestone fires at title.** `sync_progress_state` now gates on `_gameplay_active`, `_apply_safe`, and verifies the active save slot starts with `Sav_AP_` before trusting GameSaveData.\r\n3. **Over-application of skills on reconnect.** Skill resync now trusts a Lua-side applied counter incremented only on successful `UpgradePlayer` calls, not the lagged `PlayerExtraData.SkillData`.\r\n4. **Level-up locations stranded after disconnect.** Three-site self-healing catch-up via `APClient._sent_checks` floor plus XP-curve max, with `send_check` actually fired for every level in the catch-up range (not just the counter bumped).\r\n5. **Section Complete checks.** Added `section_location_map` to slot_data, `fire_section_completions()` Lua-side, hooked into FinishRow + 3s poll + baseline sync. Existing v1.0.x seeds without `section_location_map` fall back to a Lua-side `SECTION_IDX` constant.\r\n\r\n## Recovery for affected runs\r\n\r\nIf you were stuck on a v1.0.2 seed, **just install the update and reconnect**:\r\n- Missing **Section Complete** checks fire on next baseline sync (after first movement post-load).\r\n- Missing **level-up** checks fire on the same baseline sync. `_sent_checks` is hydrated from the server, the XP curve is walked against your current row count, and every level you actually reached gets a `send_check`. Already-sent ones silently dedupe, missing ones transmit.\r\n- Missing **row-completion thresholds** fire the same way.\r\n\r\nNo regeneration is needed unless you want the new threshold distribution and the unified warding rule.\r\n\r\n## Installation\r\n\r\n1. Open the game's folder. (Usually at `C:\\Program Files (x86)\\Steam\\steamapps\\common\\Librarian Tidy Up the Arcane Library!`)\r\n2. Extract and copy the Librarian folder from the Librarian-AP zip into the game's folder and overwrite.",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.0.3/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2c4eaabaaa140c7ab23945af09ad8c6e4a36fe63d4331d1536e518648d57f8cb",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.0.3",
+      "minimum_ap_version": "0.6.4",
+      "size": 158128,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.0.3",
+      "title": "1.0.3 Release",
+      "version_simple": "1.0.3",
+      "world_version": "1.0.3"
+    }
+  }
+}
