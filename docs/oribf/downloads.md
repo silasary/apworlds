@@ -1,9 +1,12 @@
 # Ori and the Blind Forest
 
 ## Latest
-- <a href="https://github.com/c-ostic/Archipelago/releases/download/v0.4.1/oribf.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/c-ostic/Archipelago/releases/download/v0.4.2/oribf.apworld">Latest Version (0.4.2)</a>
 
 ## All Versions
+
+#### v0.4.2
+- <a href="https://github.com/c-ostic/Archipelago/releases/download/v0.4.2/oribf.apworld">https://github.com/c-ostic/Archipelago/releases/download/v0.4.2/oribf.apworld</a>
 
 #### v0.4.1
 - <a href="https://github.com/c-ostic/Archipelago/releases/download/v0.4.1/oribf.apworld">https://github.com/c-ostic/Archipelago/releases/download/v0.4.1/oribf.apworld</a>
