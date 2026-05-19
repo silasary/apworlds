@@ -4,7 +4,7 @@ The fourth entry in Mario Kart series, Double Dash shakes up the gameplay by int
 
 
 ## Downloads
-- <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc1/mario_kart_double_dash.apworld">Latest Version (1.0.0rc1)</a>
+- <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc2/mario_kart_double_dash.apworld">Latest Version (1.0.0rc2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

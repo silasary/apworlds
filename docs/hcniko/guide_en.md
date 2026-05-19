@@ -14,7 +14,7 @@
 2. Extract the contents of the BepInEx .zip file into your Here Comes Niko! game directory:
    - Default Steam path: `C:\Program Files (x86)\Steam\steamapps\common\Here Comes Niko`
    - Otherwise, right click Here Comes Niko! in your Steam Library, then Manage and Browse local files
-3. If you are playing on Linux add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your Steam launch options
+3. If you are playing on Linux add `./run_bepinex.sh %command%`, run the game and after that add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to your Steam launch options
 4. Run the game once to allow BepInEx to create necessary folders.
 
 ### Install The Here Comes Niko! Randomizer Mod
@@ -33,4 +33,4 @@
    - If a save with the same **name, seed, and slot number** exists, it will load that save instead.
 4. To delete Archipelago saves, go to:
    - **Windows** `%userprofile%\AppData\LocalLow\Frog Vibes\Here Comes Niko!\Archipelago`
-   - **Linux** `(SteamLibrary folder)/steamapps/compatdata/925950/pfx/` (not sure)
+   - **Linux** `(SteamLibrary folder)/steamapps/compatdata/925950/pfx/drive_c/users/steamuser/AppData/LocalLow/Frog Vibes/Here Comes Niko!/Archipelago/`

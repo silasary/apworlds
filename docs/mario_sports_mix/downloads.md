@@ -18,11 +18,14 @@
 - <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.0.1-h3/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.0.1-h3/mario_sports_mix.apworld</a>
 
 #### v0.0.1
-- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta3/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta3/mario_sports_mix.apworld</a>
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta/mario_sports_mix.apworld</a>
 
 #### v0.0.1
 - <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta2/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta2/mario_sports_mix.apworld</a>
 
 #### v0.0.1
-- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta/mario_sports_mix.apworld</a>
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta3/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta3/mario_sports_mix.apworld</a>
+
+#### v0.0.1
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta4/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.0-beta4/mario_sports_mix.apworld</a>
 

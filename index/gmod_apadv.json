@@ -34,6 +34,20 @@
       "version_simple": "0.1.2",
       "world_version": "0.1.2"
     },
+    "v0.2.0": {
+      "created_at": "2026-05-18T19:41:40Z",
+      "description": "Uses [Version 0.1.1 of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/v0.1.1)\r\n\r\nnew features/changes:\r\n- added two new launcher options that can generate text files containing information about all loaded item sets and map configs\r\n- added a new requirement system that tells players what content they need to have installed/enabled for their run and lets them create a preset to help automatically download missing workshop addons\r\n- added map configs for the Half-Life: Source version of Unforeseen Consequences (no HL1 weapons are included atm because the ones GMod includes by default are very broken)\r\n- players will now always start their runs with a melee weapon if their chosen item sets contain a weapon marked as a starting melee\r\n- added a yaml option that lets players choose to get additional starting items from other starting item pools\r\n- added yaml options that let players choose which starting point they want to use for their runs\r\n- entrance and start point entities in map config edit mode now have their own models\r\n- the gamemode will now show a warning to the player if they try to enter a map that is not mounted\r\n- trying to save a config with no entrances or a start point but no exits will now send a warning to the player\r\n- the error thrown if the generator cannot place all entrance will now display additional information\r\n- added new implied capabilities\r\n- adjusted capabilities for most hl2 weapons\r\n\r\nfixes:\r\n- fixed item definitions from the gmod folder not being loaded properly if there are conflicts\r\n- map items for maps that could not be added to the run because they would've been inaccessible with the current yaml setting will no longer be added to the run\r\n- stopped the permission hook system from throwing errors if the permission function is undefined in sandbox\r\n- cfg processor now only processes files in the item folders if they end in .json\r\n- reworked the map and group tabs in the editor to use the dock system instead of PerformLayout to place the elements for different options since that was a little broken + other minor ui code improvements\r\n- fixed configs with too many entrances potentially causing an endless loop during entrance randomization\r\n- fixed one-way entrances not having access rules applied to them\r\n- improved preprocessing for access rules, which should make generation faster and also prevent locations/region that could never be accessed with the current yaml settings from being added to the run\r\n\r\nif you don't know what the .fgd file is for, you don't need it",
+      "download_url": "https://github.com/ChrisCj8/ap_adventure/releases/download/v0.2.0/gmod_apadv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a8dc662c5ef28cb070127df7a7ec0c9953930e13cc4de088556eda639d390c6d",
+      "html_url": "https://github.com/ChrisCj8/ap_adventure/releases/tag/v0.2.0",
+      "size": 48332,
+      "source_url": "https://api.github.com/repos/ChrisCj8/ap_adventure",
+      "tag": "v0.2.0",
+      "title": "Version 0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
     "v1_1": {
       "created_at": "2026-04-11T21:08:52Z",
       "description": "Uses [Inititial Release Version of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/Main)\r\n\r\nFixed the apworld throwing errors on new installs because the host.yaml section and logic folders haven't been created yet.\r\n\r\nThis flew under my radar because I did not test the apworld on a new install, apologies.\r\n\r\nIf you don't know what the .fgd file is for you don't need it.",
