@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-alpha1/oot.apworld">Latest Version (9.1.0a1)</a>
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-alpha2/oot.apworld">Latest Version (9.1.0a2)</a>
 
 ## All Versions
+
+#### v9.1.0a2
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-alpha2/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-alpha2/oot.apworld</a>
 
 #### v9.1.0a1
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-alpha1/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-alpha1/oot.apworld</a>

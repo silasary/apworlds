@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-alpha1/oot.apworld">Latest Version (9.1.0a1)</a>
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-alpha2/oot.apworld">Latest Version (9.1.0a2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

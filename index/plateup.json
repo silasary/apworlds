@@ -620,6 +620,20 @@
       "version_simple": "0.2.6.3",
       "world_version": "0.2.6.3"
     },
+    "0.2.6.4": {
+      "created_at": "2026-05-19T09:09:02Z",
+      "description": "## What's New?\r\n\r\n* Added functionality for `allow_save_file_editing` as it now directly modifies the garage system\r\n* Trap cards are now capped at 20 total\r\n* Trap card generation now enforces that enough removal items exist to reasonably deal with them\r\n\r\n## New YAML Option\r\n\r\n**allow_save_file_editing** \u2014 Allows the client to directly modify parts of the PlateUp save file. This is primarily used for garage handling and setting the required player level automatically. Defaults to **false**.\r\n\r\n```yaml\r\nallow_save_file_editing:\r\n  # Allow the client to make direct edits to your PlateUp save file.\r\n  # Modifying player level (set to level 17), modifying garage.\r\n  # When enabled, the client may write to your save file to apply these changes.\r\n  # When disabled, no save file modifications are made.\r\n  # Note: enabling this disables the appliances_kept option \u2014\r\n  # items_kept will be sent as 0 and appliance retention will be handled\r\n  # via save file edits instead.\r\n  'false': 50\r\n  'true': 0\r\n```\r\n\r\n## Balance Changes\r\n\r\n* Trap card progression should now be significantly less likely to spiral into completely unmanageable runs\r\n* Removal items are now guaranteed to exist in sufficient quantity relative to the amount of trap cards generated\r\n* The trap card cap of 20 is intended to stop seeds from becoming excessively cluttered with unavoidable negatives\r\n\r\n\r\n\r\n[Mod Update 0.2.6.4](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.6.4)",
+      "download_url": "https://github.com/CazIsABoi/Archipelago/releases/download/0.2.6.4/plateup.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b6aa818019f92f7793a943579bc67878ef5e16231fc54724d773c5b15d4d92b1",
+      "html_url": "https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.4",
+      "size": 34694,
+      "source_url": "https://api.github.com/repos/CazIsABoi/Archipelago",
+      "tag": "0.2.6.4",
+      "title": "PlateupAP apworld v0.2.6-beta.4",
+      "version_simple": "0.2.6.4",
+      "world_version": "0.2.6.4"
+    },
     "v0.1.4.2": {
       "created_at": "2025-02-26T20:49:30Z",
       "description": "### This is directly correlated with the updates for the mod\r\nhttps://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.1.4.2\r\n\r\n### The apworld and attached yaml are what SHOULD be used when generating a world, generating template right now makes a faulty one which doesn't work so don't use it",

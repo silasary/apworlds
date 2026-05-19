@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.2.1/VHAP.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.2.2/VHAP.apworld">Latest Version (1.2.2)</a>
 
 ## All Versions
+
+#### v1.2.2
+- <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.2.2/VHAP.apworld">https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.2.2/VHAP.apworld</a>
 
 #### v1.2.1
 - <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.2.1/VHAP.apworld">https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.2.1/VHAP.apworld</a>

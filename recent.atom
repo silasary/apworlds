@@ -2,63 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-19T07:21:06.135199+00:00</updated>
+  <updated>2026-05-19T13:10:25.099204+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/barretg/Taskipelago/releases/tag/v0.8</id>
-    <title>Taskipelago v0.8</title>
-    <updated>2026-05-14T19:06:26+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content># Taskipelago Version 0.8&#13;
-### Now with 100% more progressive items!&#13;
-This release is fully backwards compatible with v0.7 multiworlds.&#13;
-&#13;
-## Features, Improvements, and Changes&#13;
-* Added the abillity to define "progressive groups" which denote progressive items. These can be listed in the reward pre-reqs.&#13;
-* Added option to hide inaccessible tasks (I think it was missed last release because I forgot to rebuild the apworld after merging it, lol). Thanks again to [@Dinknumberone](https://www.github.com/Dinknumberone).&#13;
-* Added some tooltips to YAML generator.&#13;
-* Added toggle to enforce progression locally after connecting even when "In logic only" (lock_prereqs in YAML) is marked as false&#13;
-* Added toggle to show hidden tasks, spoiler free (Displays as just "Locked Task")&#13;
-&#13;
-## Looking forward: Planned features for v1.0&#13;
-As we are approaching the point where I feel comfortable moving out of beta and calling it a stable 1.0 build, I want to include my future plans here, partially for my own organization, but also with the intent of receiving feedback on the ideas and suggestions for things not listed. Please provide feedback in the discussion for this release, or in the Taskipelago thread in the Archipelago discord server's future-game-design forum. Feel free to @xlander36 on that to ensure I see it in a timely manner. More information on these can be found in the TODO.md file.&#13;
-&#13;
-* Region-based logic: the user should have the ability to define regions for their locations and items and factor those regions into the game's logic (as in X% of this region required as pre-req for next region). This was suggested [here](https://discord.com/channels/731205301247803413/1459523644693676160/1493368125142470717) and will be my primary focus for v0.9.&#13;
-* Full tutorial/setup guide for first-time users&#13;
-* Notification history tab&#13;
-* Import from csv/xls option&#13;
-* Separate sections for tasks and rewards in the YAML generator&#13;
-* Text client tab or expandable drawer&#13;
-* Pomodoro-sanity mode where all tasks are given a pomodoro rating, and pomodoro completions become locations. This will include a built-in pomodoro timer.&#13;
-* Lower prio: facelift on some of the UI to make it look cleaner</content>
-    <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-81</id>
-    <title>Borderlands 2 v81</title>
-    <updated>2026-05-14T21:07:45+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
-&#13;
-new stuff (since 0.5.3):&#13;
-- "alternates" for logic&#13;
-- other changes to logic: locations are removed if any required region is excluded, levels detected differently, gear licenses not required if the setting is off&#13;
-- integrate always on level&#13;
-- The Pre-Sequel initial integration</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-81"/>
-  </entry>
   <entry>
     <id>https://github.com/UFO-50-Archipelago/Archipelago/releases/tag/0.2.1</id>
     <title>UFO 50 v0.2.1</title>
@@ -1011,5 +959,59 @@ Apworld&#13;
 &#13;
 This version of the mod **is** compatible with previous multiworlds, but store items added in the Cosmetic Update will not spawn when connected to an old multiworld.</content>
     <link href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.4</id>
+    <title>plateup v0.2.6.4</title>
+    <updated>2026-05-19T09:09:02+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>## What's New?&#13;
+&#13;
+* Added functionality for `allow_save_file_editing` as it now directly modifies the garage system&#13;
+* Trap cards are now capped at 20 total&#13;
+* Trap card generation now enforces that enough removal items exist to reasonably deal with them&#13;
+&#13;
+## New YAML Option&#13;
+&#13;
+**allow_save_file_editing** — Allows the client to directly modify parts of the PlateUp save file. This is primarily used for garage handling and setting the required player level automatically. Defaults to **false**.&#13;
+&#13;
+```yaml&#13;
+allow_save_file_editing:&#13;
+  # Allow the client to make direct edits to your PlateUp save file.&#13;
+  # Modifying player level (set to level 17), modifying garage.&#13;
+  # When enabled, the client may write to your save file to apply these changes.&#13;
+  # When disabled, no save file modifications are made.&#13;
+  # Note: enabling this disables the appliances_kept option —&#13;
+  # items_kept will be sent as 0 and appliance retention will be handled&#13;
+  # via save file edits instead.&#13;
+  'false': 50&#13;
+  'true': 0&#13;
+```&#13;
+&#13;
+## Balance Changes&#13;
+&#13;
+* Trap card progression should now be significantly less likely to spiral into completely unmanageable runs&#13;
+* Removal items are now guaranteed to exist in sufficient quantity relative to the amount of trap cards generated&#13;
+* The trap card cap of 20 is intended to stop seeds from becoming excessively cluttered with unavoidable negatives&#13;
+&#13;
+&#13;
+&#13;
+[Mod Update 0.2.6.4](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.6.4)</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BenDipp/Archipelago/releases/tag/0.8.2</id>
+    <title>HITMAN World of Assasination v0.8.2</title>
+    <updated>2026-05-19T12:24:10+00:00</updated>
+    <author>
+      <name>BenDipp</name>
+    </author>
+    <content>* Fixed UT crash when connecting to a slot with more than 22 required contract pieces&#13;
+* Fixed Heavy Snipers appearing in Everything-Package&#13;
+* Fixed Logic Errors for Sniper Assassin Locations, which wrongly assumed a Briefcase can be brought into Berlin and Mendoza using the default Starting Location&#13;
+* Fixed Location "Elimination - Erich Soders" being unobtainable</content>
+    <link href="https://github.com/BenDipp/Archipelago/releases/tag/0.8.2"/>
   </entry>
 </feed>
