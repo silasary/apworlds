@@ -10,31 +10,13 @@
   - [Gopher64](https://github.com/gopher64/gopher64) (Windows/Linux)
   - [ares](https://ares-emu.net/) (Windows/Linux)
   - [RetroArch](https://www.retroarch.com/?page=platforms) (works on MacOS) 
-- The built-in Archipelago OoT client, which can be installed [here](https://github.com/ArchipelagoMW/Archipelago/releases).
-- An Ocarina of Time v1.0 ROM.
+- The built-in Archipelago Ocarina of Time client, which gets installed alongside [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases).
+- An Ocarina of Time v1.0 NTSC-U or NTSC-J ROM.
 
-## Configuring BizHawk
+## Configuring the Emulator
 
-Once BizHawk has been installed, open EmuHawk and change the following settings:
-
-- Under Config > Customize > Advanced, make sure the box for AutoSaveRAM is checked, and click the 5s button.
-  This reduces the possibility of losing save data in emulator crashes.
-- Under Config > Customize, check the "Run in background" and "Accept background input" boxes. This will allow you to
-  continue playing in the background, even if another window is selected.
-- Under Config > Hotkeys, many hotkeys are listed, with many bound to common keys on the keyboard. You will likely want
-  to disable most of these, which you can do quickly using `Esc`.
-- If playing with a controller, when you bind controls, disable "P1 A Up", "P1 A Down", "P1 A Left", and "P1 A Right"
-  as these interfere with aiming if bound. Set directional input using the Analog tab instead.
-- Under N64 enable "Use Expansion Slot". This is required for savestates to work.
-  (The N64 menu only appears after loading a ROM.)
-
-It is strongly recommended to associate N64 rom extensions (\*.n64, \*.z64) to the EmuHawk we've just installed.
-To do so, we simply have to search any N64 rom we happened to own, right click and select "Open with...", unfold
-the list that appears and select the bottom option "Look for another application", then browse to the BizHawk folder
-and select EmuHawk.exe.
-
-An alternative BizHawk setup guide as well as various pieces of troubleshooting advice can be found
-[here](https://wiki.ootrandomizer.com/index.php?title=Bizhawk).
+- Good guides to set up your emulator for choice for OoT Randomizer can be found in the official [OoTR wiki](https://wiki.ootrandomizer.com/index.php?title=Setup#Emulators)
+  - Please note that Dolphin is currently not supported.
 
 ## Create a Config (.yaml) File
 
@@ -68,7 +50,7 @@ executable. If it is blank, the patching process will ask you to select an emula
 
 ### Connect to the Multiserver
 
-Once both the client and the emulator are started, the OoT Client will connect to the loaded ROM automatically. You do
+Once both the client and the emulator are started, the Ocarina of Time Client will connect to the loaded ROM automatically. You do
 not need to open the BizHawk Lua console or drag in a connector script. If the client is not connecting, make sure the
 patched ROM is loaded in a supported emulator and use `/n64` in the client to check the emulator connection status.
 For RetroArch, enable `Settings > Network > Network Commands` and leave the Network Command Port at `55355`.

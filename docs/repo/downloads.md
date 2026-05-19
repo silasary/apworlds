@@ -8,6 +8,9 @@
 #### v0.4.1
 - <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld</a>
 
+#### v0.4.1
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.2/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.2/repo.apworld</a>
+
 #### v0.4.1rc1
 - <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1-rc1/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1-rc1/repo.apworld</a>
 
