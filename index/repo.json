@@ -249,6 +249,20 @@
       "version_simple": "0.4.0",
       "world_version": "0.4.0"
     },
+    "0.4.1": {
+      "created_at": "2026-05-19T04:50:14Z",
+      "description": "Mod\r\n* Fixed several issues caused by code changes in REPO 0.4.0\r\n* Fixed re-rolled ap items not displaying their name for clients\r\n* Fixed extra upgrade spawn positions and cosmetic box display name\r\n* Added all new items from the Cosmetic Update to logic\r\n* Undid shop rework from 0.4.0\r\n  * The old rework happened when the secret shop was much harder to reach, meaning that a player could be soft-locked if they needed secret items but could not reach the shop itself. With the new shop layouts added in the cosmetic update, this change made the secret shop way too powerful.\r\n* Several more re-roll fixes\r\n  * Ensured that non-ap upgrades are properly replaced when initially spawning upgrades\r\n  * Prevented blank ap items from spawning after a re-roll\r\n  * Gave ap items a 50% chance to be selected when rerolling upgrades\r\n  * Fixed an edge case that resulted in duplicate ap items if some ap items were taken out of the machine before re-rolling\r\n\r\nApworld\r\n* Added Cosmetic Update store items to logic\r\n* Changed several item classifications and required energy crystals for victory\r\n* Changed soul logic\r\n  * Souls now accounts for stunned strength breakpoints\r\n  * Since some monsters take 13 strength to kill, we have to have 13 strength upgrades minimum. To balance that, there are now at least 3 of all other upgrades.\r\n* updated option descriptions\r\n\r\nThis version of the mod **is** compatible with previous multiworlds, but store items added in the Cosmetic Update will not spawn when connected to an old multiworld.",
+      "download_url": "https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4013d76c8cdc281fcf6380aea644e1e305cc87b3978fd8ddb935dfe4d0595231",
+      "html_url": "https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.1",
+      "size": 19416,
+      "source_url": "https://api.github.com/repos/Automagic00/R.E.P.O.-Archipelago-Client-Mod",
+      "tag": "0.4.1",
+      "title": "REPO Update 0.4.1",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1"
+    },
     "0.4.1-rc1": {
       "created_at": "2026-04-20T22:40:50Z",
       "description": "Mod:\r\n* fixed several issues caused by code changes in REPO 0.4.0\r\n* fixed re-rolled ap items not displaying their name for clients\r\n* fixed extra upgrade spawn positions and cosmetic box display name\r\n* added all new items from the Cosmetic Update to logic\r\n\r\nThis version **should** be compatible with previous multiworlds, but store items added in the Cosmetic Update will not spawn when connected to an old multiworld.\r\n\r\nSince this is a pre-release meant for testing, it will not be uploaded to Thunderstore and must be installed manually.\r\nTo use this version, navigate to wherever you have this mod installed and replace it with the version in the .zip attached in this release. r2modman users can find their profile folder by clicking Settings -> Browse profile folder, and Gale users can find it under File -> Open profile folder. From there, navigate to BepInEx/plugins/Automagic-Archipelago_Randomizer_for_REPO and you should see RepoAP.dll. For users of Gale Mod Manager, it is especially important to **DELETE** the old dll FIRST to avoid overwriting the mod in other profiles.",

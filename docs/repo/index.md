@@ -4,7 +4,7 @@ R.E.P.O. is an online co-op horror game where you are tasked with extracting val
 
 
 ## Downloads
-- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1-rc1/repo.apworld">Latest Version (0.4.1rc1)</a>
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld">Latest Version (0.4.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

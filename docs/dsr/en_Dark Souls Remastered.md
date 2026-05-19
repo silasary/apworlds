@@ -71,12 +71,11 @@ Besides excluding individual locations, you can exclude whole regions via the [L
 For example, the following configuration will not require you to do the DLC, The Great Hollow, or Ash Lake:
 
 ```yaml
-Dark Souls Remastered:
+  # Exclude DLC and out-of-the-way regions
   exclude_locations:
-    # Exclude DLC and out-of-the-way regions
-    - All DLC regions
-    - The Great Hollow
-    - Ash Lake
+    - "All DLC regions"
+    - "The Great Hollow"
+    - "Ash Lake"
 ```
 
 ## Artificial Logic Without Fogwall Locking

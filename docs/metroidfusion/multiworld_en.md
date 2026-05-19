@@ -10,7 +10,7 @@ As we are using Bizhawk, this guide is only applicable to Windows and Linux syst
   - Detailed installation instructions for Bizhawk can be found at the above link.
   - Windows users must run the prerequisite installer first, which can also be found at the above link.
 - The built-in Bizhawk client, which can be installed [here](https://github.com/ArchipelagoMW/Archipelago/releases)
-- A US copy of Mario & Luigi: Superstar Saga
+- A legal US copy of Metroid Fusion
 
 ## Optional Software
 
@@ -38,15 +38,22 @@ When you join a multiworld game, you will be asked to provide your YAML file to 
 the host will provide you with either a link to download your data file, or with a zip file containing everyone's data
 files. Your data file should have a `.apmetfus` extension.
 
-Double-click on your `.apmetfus` file to start your client and start the ROM patch process. Once the process is finished, the client and the emulator will be started automatically (if you associated the extension
-to the emulator as recommended).
+Double-click on your `.apmetfus` file (or alternatively, click "Open Patch" in the AP Launcher and use this file) to 
+start your client and start the ROM patch process. Once the process is finished, the client and the emulator will be 
+started automatically (if you associated the extension to the emulator as recommended).
 
 ### Connect to the Multiserver
+
+To connect the client to the multiserver simply put `<address>:<port>` in the textfield on top and press enter (if the
+server uses a password, type in the bottom textfield `/connect <address>:<port> [password]`)
+
+When the emulator starts up with your patch file, it should load the patched game and connect a "Lua Console" 
+automatically to the AP client. If the "Lua Console" is not connecting to your client, close it and continue with the 
+steps below.
 
 Once both the client and the emulator are started, you must connect them. Within the emulator click on the "Tools"
 menu and select "Lua Console". Click the folder button or press Ctrl+O to open a Lua script.
 
 Navigate to your Archipelago install folder and open `data/lua/connector_bizhawk_generic.lua`.
 
-To connect the client to the multiserver simply put `<address>:<port>` on the textfield on top and press enter (if the
-server uses password, type in the bottom textfield `/connect <address>:<port> [password]`)
+Once connected, enjoy playing your randomized game of Metroid Fusion!

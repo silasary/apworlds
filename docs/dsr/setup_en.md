@@ -9,7 +9,7 @@
 
 ## Optional Software
 
-- [Poptracker pack with maps](https://github.com/routhken/Dark_Souls_Remastered_tracker/releases/tag/v1.0.22)
+- [Poptracker pack with maps](https://github.com/routhken/Dark_Souls_Remastered_tracker/releases)
 
 ## Setting Up
 
@@ -76,9 +76,14 @@ See [the Game Page](./en_Dark%20Souls%20Remastered.md).
 
 ### Does this work on Linux?
 
-Linux has preliminary support via Proton as of release v0.1.0 of the Client. You should be able to add `PROTON_REMOTE_DEBUG_CMD="/full/path/to/DSAP.Desktop.exe" %command%` to your steam Launch Options (tested with compatibility settings = Proton Hotfix branch on 2026-03-27) to run both DSAP and DS:R in the same environment.
+Linux has preliminary support via Proton as of release v0.1.0 of the Client.
+There are two primary ways of running under Linux. 
+1. First method: Add `PROTON_REMOTE_DEBUG_CMD="/full/path/to/DSAP.Desktop.exe" %command%` to your steam Launch Options to run both DSAP and DS:R in the same environment.
 * The path should include `\` (backslash) escape character before any spaces.
-* Test before running this in a public or group multiworld! Some players have had success with it, and some have not; it is not clear why - it may depend on your Steam installation.
+2. Second method: Download the `launch_dsr.sh` batch file from the main directory of the repo. Put it and `DSAP.Desktop.exe` into the same folder as the `DarkSoulsRemastered.exe`. Then, add it to steam as a non-steam game, using `Proton GE Latest`, and run it.
+**Whichever method you use, please test before running this in a public or group multiworld!**
+* For unknown reasons, for some players the first method does not work, but the second does.
+* The overlay probably will not work, and instead show a solid black box. It is recommended to toggle it off before connecting.
 * Because the support has not been thoroughly tested, you should 1) consider it unstable, 2) let us know how it plays/runs (whether well or badly), and 3) Please report any issues.
 
 ### Does this work with _Prepare to Die Edition_?
