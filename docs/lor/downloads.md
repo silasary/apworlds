@@ -14,6 +14,9 @@
 #### v1.0.0
 - <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-gamma/lor.apworld">https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-gamma/lor.apworld</a>
 
+#### v1.0.0
+- <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-delta/lor.apworld">https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-delta/lor.apworld</a>
+
 #### v1.0.0b0
 - <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-beta/lor.apworld">https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-beta/lor.apworld</a>
 

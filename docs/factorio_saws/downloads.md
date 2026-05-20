@@ -1,9 +1,12 @@
 # Factorio - Space Age Without Space
 
 ## Latest
-- <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.9.0/factorio_saws.apworld">Latest Version (0.9.0)</a>
+- <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.9.1/factorio_saws.apworld">Latest Version (0.9.1)</a>
 
 ## All Versions
+
+#### v0.9.1
+- <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.9.1/factorio_saws.apworld">https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.9.1/factorio_saws.apworld</a>
 
 #### v0.9.0
 - <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.9.0/factorio_saws.apworld">https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.9.0/factorio_saws.apworld</a>
