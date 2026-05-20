@@ -8,6 +8,9 @@
 #### v1.3.2
 - <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.3.2/funi_raccoon.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.3.2/funi_raccoon.apworld</a>
 
+#### v1.3.2
+- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.4.0/funi_raccoon.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.4.0/funi_raccoon.apworld</a>
+
 #### v1.3.1
 - <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.3.1/funi_raccoon.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.3.1/funi_raccoon.apworld</a>
 

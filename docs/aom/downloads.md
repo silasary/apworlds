@@ -1,4 +1,4 @@
-# None
+# Age Of Mythology Retold
 
 ## Latest
 - <a href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.1.1/aom.apworld">Latest Version (1.1.1)</a>

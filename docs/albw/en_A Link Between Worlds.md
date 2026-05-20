@@ -10,7 +10,7 @@ You must defeat dungeon bosses to rescue the required number of sages (by defaul
 
 ## What items and locations get shuffled?
 
-Items that are shuffled include all key items, heart pieces, dungeon items, rupees, and monster parts. These items may be obtained from chests, freestanding items, or NPCs. Optionally, Maiamai may be included in the randomized item pool, and Maiamai locations may have randomized items. Another optional setting creates an additional item called Quake which is necessary to open all the cracks except the one in Hyrule Castle.
+Items that are shuffled include all key items, heart pieces, dungeon items, rupees, and monster parts. These items may be obtained from chests, freestanding items, or NPCs. Optionally, Maiamai may be included in the randomized item pool, and Maiamai and their Mother locations may have randomized items. Another optional setting creates an additional item called Quake which is necessary to open all the cracks except the one in Hyrule Castle.
 
 ## What does another world's item look like?
 

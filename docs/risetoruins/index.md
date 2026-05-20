@@ -1,6 +1,8 @@
-# None
+# Rise to Ruins
 
-
+Rise to Ruins is a real-time village/god simulator. Build and protect your
+settlement across multiple regions, unlock buildings and spells, and complete
+goals to send checks to the multiworld.
 
 
 ## Downloads

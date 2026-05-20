@@ -1,4 +1,4 @@
-# None
+# Undertale 2
 
 ## Latest
 - <a href="https://github.com/studkid/Undertale2-AP/releases/download/v0.2.7/undertale2.apworld">Latest Version (0.2.7)</a>

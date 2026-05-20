@@ -1,4 +1,4 @@
-# None
+# Kerbal Space Program 1
 
 ## Latest
 - <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.3.1/ksp1.apworld">Latest Version (0.3.1)</a>

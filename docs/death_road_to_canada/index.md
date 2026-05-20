@@ -1,6 +1,8 @@
-# None
+# Death Road to Canada
 
-
+Death Road to Canada is a randomly generated road trip action-roguelike. 
+You manage a group of survivors as they travel across the USA to reach the 
+safety of Canada, facing zombies, bandits, and difficult choices along the way.
 
 
 ## Downloads

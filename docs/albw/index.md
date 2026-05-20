@@ -6,7 +6,7 @@ discover magical items, and save the worlds of Hyrule and Lorule!
 
 
 ## Downloads
-- <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.2.1/albw.apworld">Latest Version (0.2.1)</a>
+- <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.2.3/albw.apworld">Latest Version (0.2.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -14,6 +14,6 @@ discover magical items, and save the worlds of Hyrule and Lorule!
 - <a href="fr_A Link Between Worlds">French</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 - <a href="setup_fr">French</a>
+- <a href="setup_en">English</a>
 

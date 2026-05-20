@@ -1,4 +1,4 @@
-# None
+# Monster Hunter Rise
 
 ## Latest
 - <a href="https://github.com/HillbillyDroid/MHRise-APWorld/releases/download/v0.0.4/mhrise.apworld">Latest Version (0.0.4)</a>

@@ -1,4 +1,4 @@
-# None
+# Mini Metro
 
 ## Latest
 - <a href="https://github.com/Slimm160/Mini-Metro-Archipelago/releases/download/alpha/mini_metro.apworld">Latest Version (0.1.0a0)</a>
