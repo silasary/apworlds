@@ -346,6 +346,21 @@
       "version_simple": "0.6.0",
       "world_version": "0.6.0"
     },
+    "v0.6.10": {
+      "created_at": "2026-05-19T21:35:30Z",
+      "description": "This update brings some pretty big improvements to upgrade generation behind the scenes, and fixes a bug that has existed ever since the mod was released (enabling some perks that have never been accessible)!\r\n\r\n### Mod changes:\r\n- Altered the upgrade selection process, replacing upgrade categories with rarities instead. This means the stronger upgrades should now be a little less common, and the upgrade pools should be a bit more random.\r\n  - Each upgrade has an assigned rarity which currently is not visible in-game (not sure how to display rarity without it being cluttered). The chances are 10% for a rare upgrade, 25% for an uncommon upgrade, and 65% for a common upgrade.\r\n- Finally caught and squished a long standing bug that made upgrade-upgrades never generate. This primarily affects the consumable perks, where previously you could receive the item but the game would never attempt to generate the upgrades associated with it, like healing/dodge for the pocket ECM or Stoic's armour-to-health conversion.\r\n- Getting a consumable perk (leech ampule, kingpin injector, stoic flask, etc) will now disable all other consumable perks.\r\n- The captain spawning on Alaskan Deal is now affected by Objectivity, so you don't have to sit around for 30 seconds waiting for him to pop into existence.\r\n- Fixed multiplayer timer crash.\r\n\r\nNo APWorld changes since v0.6.8.",
+      "download_url": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.6.10/pd2_crimdawn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f9e2e8ac45726f6040390c4de6b0194d5e94c77b598bfeebab4cf9a5c05b97c2",
+      "html_url": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v0.6.10",
+      "minimum_ap_version": "0.6.7",
+      "size": 17105,
+      "source_url": "https://api.github.com/repos/CATEM1NAL/PD2-Criminal-Dawn",
+      "tag": "v0.6.10",
+      "title": "Criminal Dawn v0.6.10",
+      "version_simple": "0.6.8",
+      "world_version": "0.6.8"
+    },
     "v0.6.2": {
       "created_at": "2026-04-29T00:28:23Z",
       "description": "### Mod changes:\r\n- First saw is no longer given immediately upon launching the game.\r\n- Fixed game crash when launching before connecting to a multiworld for the first time.\r\n- Removed some debug log text that was (potentially) causing performance issues.\r\n- Thermite in Big Bank and First World Bank are affected by speed upgrades.\r\n- Fuel on Alaskan Deal is affected by speed upgrades.\r\n- Meth cooking on heists where it's required is affected by speed upgrades.\r\n- Circle cutter on Brooklyn Bank is affected by speed upgrades.\r\n- Plane on GO Bank is affected by speed upgrades.\r\n- Refuelling the helicopter in Beneath the Mountain is affected by speed upgrades.\r\n- White House is no longer affected by speed upgrades to bring the amount of time it takes more in line with Crude Awakening (plus it's kinda lame to just skip every objective in the final heist, you wanna actually *play* it right?).\r\n  - With hindsight this may be impossible with current timer values?? If it isn't doable, let me know and I'll tweak some more values.\r\n  - Speed upgrades *will* apply to White House when playing the score goal or after finishing a run.\r\n- Safehouse prompt will no longer appear after going infamous.\r\n\r\nThe elements now being affected by speed upgrades haven't been tested super thoroughly - I know that it definitely *works* (at least for some of them), but I can't say for sure how it might affect the objective progression. Things may break!\r\n\r\nNo APWorld changes.",
