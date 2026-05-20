@@ -141,6 +141,8 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
         )
         if "prerelease" in release.data["metadata"]:
             version_info["prerelease"] = release.data["metadata"]["prerelease"]
+        elif version_info.get("prerelease"):
+            version_info["prerelease"] = False
         data = {  # only update these if they are not already set
             "size": release.data.get("size", 0),
             "tag": release.world_version,
