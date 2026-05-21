@@ -3,7 +3,7 @@
 ## Required Software
 
 - An Emulator of choice
-  - [BizHawk] (https://tasvideos.org/BizHawk/ReleaseHistory) (v2.10+)
+  - [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) (v2.10+)
   - [Project 64](https://www.pj64-emu.com/windows-downloads)
   - [simple64](https://simple64.github.io/)
   - [Rosalie's Mupen GUI](https://github.com/Rosalie241/RMG)
@@ -12,6 +12,16 @@
   - [RetroArch](https://www.retroarch.com/?page=platforms) (works on MacOS) 
 - The built-in Archipelago Ocarina of Time client, which gets installed alongside [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases).
 - An Ocarina of Time v1.0 NTSC-U or NTSC-J ROM.
+
+## Install the APworld
+
+Since OoT currently ships with AP in a non-standard way, the old apworld will collide with the new one. Before installing this apworld, make sure to delete the `oot` folder in `lib/worlds` in your Archipelago folder. Afterwards, to install the APworld, simply double click it or drag and drop it into the running Archipelago Launcher. Alternatively, you can choose the option `Install APWorld` in the Archipelago Launcher or drop the `.apworld` file into the `custom_world`-folder in your Archipelago install.
+
+After installing, restart the Launcher.
+
+### Important Note
+
+Archipelago current hardcodes the OoT Client and OoT Adjuster independently of the apworld, so they will stick around either way. For this new apworld, you NEED to use the new clients, named `Ocarina of Time Client` and `Ocarina of Time Adjuster`, both featuring a description clearly outlining the new apworld version.
 
 ## Configuring the Emulator
 

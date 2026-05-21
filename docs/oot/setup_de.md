@@ -4,7 +4,7 @@
 ## Benötigte Software
 
 - Ein Emulator der Wahl
-  - [BizHawk] (https://tasvideos.org/BizHawk/ReleaseHistory) (v2.10+)
+  - [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) (v2.10+)
   - [Project 64](https://www.pj64-emu.com/windows-downloads)
   - [simple64](https://simple64.github.io/)
   - [Rosalie's Mupen GUI](https://github.com/Rosalie241/RMG)
@@ -13,7 +13,18 @@
   - [RetroArch](https://www.retroarch.com/?page=platforms) (funktioniert auch auf MacOS) 
 - Der integrierte Archipelago Ocarina of Time Client, welcher [hier](https://github.com/ArchipelagoMW/Archipelago/releases) installiert
   werden kann.
+- Die neueste Version der APWorld von [hier](https://github.com/TreZc0/OoTR-APWorld/releases)
 - Eine `Ocarina of Time v1.0 NTSC-U oder NTSC-J ROM`. (Nicht aus Europa und keine Master-Quest oder Debug-Rom!)
+
+## APWorld installieren
+
+Da OoT aktuell auf nicht standardmäßige Weise mit AP ausgeliefert wird, kollidiert die alte APWorld mit der neuen. Lösche vor der Installation dieser APWorld den Ordner `oot` in `lib/worlds` in deinem Archipelago-Ordner. Anschließend kannst du die APWorld installieren, indem du sie doppelt anklickst oder per Drag-and-drop in den laufenden Archipelago Launcher ziehst. Alternativ kannst du im Archipelago Launcher die Option `Install APWorld` wählen oder die `.apworld`-Datei in den Ordner `custom_world` deiner Archipelago-Installation legen.
+
+Starte den Launcher nach der Installation neu.
+
+### Wichtiger Hinweis
+
+Archipelago bindet den OoT Client und den OoT Adjuster derzeit unabhängig von der APWorld fest ein, daher bleiben beide in jedem Fall vorhanden. Für diese neue APWorld MUSST du die neuen Clients verwenden: `Ocarina of Time Client` und `Ocarina of Time Adjuster`. Beide haben eine Beschreibung, die eindeutig auf die neue APWorld-Version hinweist.
 
 ## Konfigurieren des Emulators
 
@@ -24,7 +35,7 @@
 
 ### Was ist eine YAML-Datei und Warum brauch ich eine?
 
-Eine YAML-Datie enthält einen Satz an einstellbaren Optionen, die dem Generator mitteilen, wie
+Eine YAML-Datei enthält einen Satz an einstellbaren Optionen, die dem Generator mitteilen, wie
 dein Spiel generiert werden soll. In einer Multiworld stellt jeder Spieler eine eigene YAML-Datei zur Verfügung. Dies
 erlaubt jeden Spieler eine personalisierte Erfahrung nach derem Geschmack. Damit kann auch jeder Spieler in einer
 Multiworld (des gleichen Spiels) völlig unterschiedliche Einstellungen haben.
@@ -54,7 +65,7 @@ YAML-Überprüfungsseite: [YAML-Überprüfungsseite](/check)
 Wenn du einer Multiworld beitrittst, wirst du gefordert eine YAML-Datei bei dem Host abzugeben. Ist dies getan,
 erhälst du (in der Regel) einen Link vom Host der Multiworld. Dieser führt dich zu einem Raum, in dem alle
 teilnehmenden Spieler (bzw. Welten) aufgelistet sind. Du solltest dich dann auf **deine** Welt konzentrieren
-und klicke dann auf `Download APZ5 File...`.
+und klicke dann auf `Download Patch File...`.
 ![Screenshot of a Multiworld Room with an Ocarina of Time Player](MultiWorld-Room_oot.png)
 
 Führe die `.apz5`-Datei mit einem Doppelklick aus, um deinen Ocarina Of Time-Client zu starten, sowie das patchen
