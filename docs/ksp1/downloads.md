@@ -32,6 +32,9 @@
 #### v0.1.0
 - <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.1.0/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/v0.1.0/ksp1.apworld</a>
 
+#### v0.0.0.post3
+- <a href="https://github.com/nickdavies/Archipelago/releases/download/experimental/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/experimental/ksp1.apworld</a>
+
 #### v0.0.0.post2
 - <a href="https://github.com/nickdavies/Archipelago/releases/download/experimental/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/experimental/ksp1.apworld</a>
 

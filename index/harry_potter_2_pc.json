@@ -2,7 +2,7 @@
   "flags": [
     "unready"
   ],
-  "game": null,
+  "game": "Harry Potter 2 PC",
   "github": "https://github.com/Kryen112/HP2PC_AP",
   "license": null,
   "manifest_fields": [],
@@ -35,6 +35,20 @@
       "title": "v1.1.0",
       "version_simple": "1.1.0",
       "world_version": "1.1.0"
+    },
+    "v2.0.0": {
+      "created_at": "2026-05-22T05:19:43Z",
+      "description": "# HP2PC_AP v2.0.0\r\n\r\nBiggest release since v1.1.0: a second game mode, three new check categories worth of options, link protocols, traps, and an item-appearance overhaul.\r\n\r\n## Highlights\r\n\r\n- **Open castle mode (`game_mode: open_castle`). AKA Bingo** Full support for the HP2 Bingo community distribution: every level open from spawn, no precollected spells (all 7 spells enter the item pool). The mod auto-detects which install you launched, and pops a \"WRONG INSTALL\" warning toast every level if the running game does not match the seed's `game_mode`. `vanilla` remains the default.\r\n- **Configurable open-castle goal.** Instead of the Basilisk fight, open castle completes by opening the Great Hall once you satisfy your goal clauses: `open_castle_goal_cards` (default 50), `open_castle_goal_spells` (7), `open_castle_goal_levels` (12), `open_castle_goal_duels` (off), `open_castle_goal_quidditch` (off). Clauses are AND'd; any left at 0/off drop out, with a fallback to \"all 7 spells\" so there is always a gate.\r\n- **Item appearance overhaul.** Check markers now morph to look like the real item they hold (correct card/spell mesh and skin). Items belonging to other games in a multiworld show an AP-logo plate, with an arrow variant marking progression items.\r\n\r\n## New options\r\n\r\n- **`enable_spell_challenge_times`** (off): beating the replay par time (\"Mastered\") on each of the 4 spell challenges becomes a check.\r\n- **`tradersanity`** (off): each non-Weasley card/ingredient vendor's first sale becomes an AP check, then reverts to selling normally. `price_vanilla` / `price_random` / `price_low` only change what that check costs.\r\n- **`enable_traps`** (off) + **`trap_fill_percent`** (5-50, default 5): adds Bean Thief, Goyle Transformation, and Forgetfulness traps to the pool, replacing a slice of filler.\r\n- **`ring_link`** (off): mirrors organic Bertie Bott's bean changes (pickups and vendor spending) to and from other RingLink slots in the room. AP-granted bean filler and the Bean Thief trap are not mirrored. Compatible with Sonic-style RingLink games.\r\n- **`death_link`** (off): standard Archipelago DeathLink.\r\n- **`vanilla_gate_levels`** (on): choose between vanilla's bookcase key-gating (story-order chain) and an everything-open layout. No effect in open castle.\r\n\r\n## Improvements\r\n\r\n- **All items are now durable.** Every item type (cards, spells, equipment, every bean tier, all other filler, and traps) survives a client crash, reconnect, or save-load, backed by a per-slot consumed-item ledger in Archipelago server storage. In v1.1.0 the Small/Medium/Large bean piles could be lost across a crash; that gap is closed. The only remaining way to lose an item is to receive it in-game and then reload an older save without saving first.\r\n- Lots and lots of small things and improvements.\r\n\r\n## Upgrade notes\r\n\r\n- The same `HPArchipelago.u` works for both vanilla and HP2 Bingo installs; see the updated \"Optional: install the HP2 Bingo distribution too\" section in `PLAYER_SETUP.md`.\r\n- Set `game_mode` to match the install you launch, or you will get the per-level warning toast and an uncompletable seed.\r\n- Regenerate your YAML template (ArchipelagoLauncher to Generate Template Options) to pick up the new options.\r\n\r\n## Release files\r\n\r\n`HPArchipelago.u`, `Default.ini`, `harry_potter_2_pc.apworld`, `PLAYER_SETUP.md`. The Python client is bundled inside the apworld; there is no separate exe.\r\n",
+      "download_url": "https://github.com/Kryen112/HP2PC_AP/releases/download/v2.0.0/harry_potter_2_pc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "38d330e312eeaa1cbef9c3fa8eff278fea2e16476eb314e368a80e19b6c0d237",
+      "html_url": "https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.0.0",
+      "size": 51211,
+      "source_url": "https://api.github.com/repos/Kryen112/HP2PC_AP",
+      "tag": "v2.0.0",
+      "title": "v2.0.0",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
     }
   }
 }

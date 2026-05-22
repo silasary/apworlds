@@ -52,15 +52,15 @@ Once you do, follow these steps to connect to the room:
 
 1. In the Archipelago Launcher, select "Open Patch File," then select the `.apmsr` patch file.
 2. If this is your first time, you will be prompted for an input `.3ds/.cci` file. Select your
-*Metroid: Samus Returns* ROM file.
-3. The client will open and show a black screen for a little while.
-4. When the patching process finishes, a folder with the same name as your patch will appear, and
-in it will be a folder called `00040000001BB200` or `00040000001BFB00`. Copy this to the mods
-folder for your emulator or 3DS, replacing the folder that's already there if one exists.
+*Metroid: Samus Returns* ROM file. The client will open immediately, but patching will take some
+time.
+3. When the patching process finishes, the client will notify you about the patch folder that was
+created. In it will be a folder called `00040000001BB200` or `00040000001BFB00`. Copy this to the
+mods folder for your emulator or 3DS, replacing the folder that's already there if one exists.
    * If you're playing on Azahar, you can open the location to copy to by right clicking the ROM in
   the menu, then hovering "Open" and selecting "Mods Location."
    * If you're playing on a 3DS, copy this to your SD card > `luma` > `titles`.
-6. Launch the game.
+4. Launch the game.
    * On Azahar, this will just work. It will run the patched game out of the box.
    * On a 3DS, you have to enable game patching:
      1. Turn the console on while holding Select to open the Luma configuration menu.
@@ -72,7 +72,7 @@ folder for your emulator or 3DS, replacing the folder that's already there if on
      5. Once you know your 3DS's IP address, you can launch *Metroid: Samus Returns* from the Home
      menu.
      6. Then type `/console_ip <ip>` into the Samus Returns Client to set your 3DS's IP address
-7. Once the game is running, connect the Samus Returns Client to the room by entering the server
+5. Once the game is running, connect the Samus Returns Client to the room by entering the server
 name and port number at the top and pressing "Connect." For rooms hosted on the website, this will
 be `archipelago.gg:<port>` where `<port>` is the port number. If a game is hosted from the
 ArchipelagoServer program or the "Host" option in the Launcher, the port will default to 38281 but
