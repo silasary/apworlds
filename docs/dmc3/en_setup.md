@@ -6,6 +6,8 @@ DMC HD Collection on Steam
 GOG Version is untested and most likely will not work (Please do reach out if you have it on GOG though, I would be happy to add support)
 
 Pirated/Cracked copies are not supported, buy the game.
+
+APWorld Download: https://github.com/AshIndigo/Archipelago/releases/
 ## 0. Backup Save File
 While the randomizer does use its own save folder separate from Steam's. It is still recommended that you make a backup of your save file.
 The file can be found at
