@@ -34,3 +34,15 @@ files. Your patch file should have a .appkprk extension.
 2. Launch the patched Pokepark ISO (which will be named after the patch file) with Dolphin.
 3. Start a new save slot. You should spawn in the Treehouse (Meeting Place).
 4. Launch the Pokepark Archipelago Client and connect to the hosted server.
+
+## Using Universal Tracker
+
+Pokepark has full UT support, including yamlless and maps. There is one thing you need for the map integration, and
+that is to download the poptracker pack (starting from v1.2.1) and select it when UT/Pokepark Client asks for the
+pack. A compatibility list is maintained on the poptracker side.
+
+### Good to know
+
+There is currently a workaround to display locations that are in multiple regions as checkable only in the region
+you can check them. The only possibility to do this in UT Maps right now is
+to use Events, which can only be displayed with the entrances icon.
