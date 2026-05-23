@@ -8,6 +8,9 @@
 #### v0.3.0
 - <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.3.0/crash2.apworld">https://github.com/Sim10XXX/C2AP/releases/download/v0.3.0/crash2.apworld</a>
 
+#### v0.3.0
+- <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.4.0-pre/crash2.apworld">https://github.com/Sim10XXX/C2AP/releases/download/v0.4.0-pre/crash2.apworld</a>
+
 #### v0.3.0rc2.post1
 - <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.3.0-pre2-1/crash2.apworld">https://github.com/Sim10XXX/C2AP/releases/download/v0.3.0-pre2-1/crash2.apworld</a>
 

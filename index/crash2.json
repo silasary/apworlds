@@ -120,6 +120,22 @@
       "title": "v0.3.0 Pre Release 2-1",
       "version_simple": "0.3.0",
       "world_version": "0.3.0rc2.post1"
+    },
+    "v0.4.0-pre": {
+      "created_at": "2026-05-23T01:07:44Z",
+      "description": "## Death Link\r\n- Option to enable sending/receiving death links\r\n  - When one person with death link dies, everyone with death link dies\r\n\r\n### Note\r\nSince this is a pre-release, I am leaving in some debug commands (to be used RESPONSIBLY) if you want to test some things out yourself. You will type these in the client:\r\n- debug_openwarproom\r\n  - Fully opens the warp room and all secret entrances (**and sends checks**)\r\n- exec\r\n  - Simulates receiving a death link (if death link ever fails or crashes the game, then please report the bug with a description of what you were doing in game and the printed crash state # from the console)\r\n- exec \\<event id\\> [event parameter 1] [event parameter 2] ...\r\n  - For if you want to experiment with the game's internal event system. This will send an event of id \\<event id\\> to crash, and you can optionally pass some parameters along with the event\r\n  - This is VERY prone to crashing the game\r\n  - Make sure you use save states taken from **after** you connected with this version of the client\r\n\r\n### Known Issues:\r\n- The client seems to have a small chance to freeze the game on connection (just try again and it'll be fine)",
+      "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.4.0-pre/crash2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a5b90e1540393d936d37a370a9303e116b019c1b15cd380117eb019b4c06dc86",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0-pre",
+      "minimum_ap_version": "0.6.5",
+      "prerelease": true,
+      "size": 42298,
+      "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
+      "tag": "v0.4.0-pre",
+      "title": "v0.4.0 Pre Release",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }
