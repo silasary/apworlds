@@ -1,9 +1,12 @@
 # Slime Rancher 2
 
 ## Latest
-- <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.4.3/slime_rancher_2.apworld">Latest Version (0.4.3)</a>
+- <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.5.2/slime_rancher_2.apworld">Latest Version (0.5.2)</a>
 
 ## All Versions
+
+#### v0.5.2
+- <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.5.2/slime_rancher_2.apworld">https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.5.2/slime_rancher_2.apworld</a>
 
 #### v0.4.3
 - <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.4.3/slime_rancher_2.apworld">https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.4.3/slime_rancher_2.apworld</a>

@@ -229,6 +229,21 @@
       "title": "v0.5.1 (Experimental)",
       "version_simple": "0.4.3",
       "world_version": "0.4.3"
+    },
+    "v0.5.2": {
+      "created_at": "2026-05-23T07:12:03Z",
+      "description": "New Additions\r\n* Option added to start with the Resource Harvester rather than having players need to set it as a starting item\r\n\r\n_Not having the Resource Harvester locks you out of most Fabricator checks and quite a few Slimepedia checks for a gadget that's typically the game's first expected upgrade. Having this now available as a setting will give players the option to speed up the early game check options a bit._\r\n\r\nBalance Adjustments\r\n* Tarr Rain trap now lasts 60 seconds (down from 180 seconds)\r\n\r\n_Tarr Rain can be really oppressive even for shorter periods of time. The duration may be dropped even further (30-45 seconds) after additional testing/feedback._\r\n\r\nOther Adjustments\r\n* Reworked the trap queuing system\r\n  * Traps now respect zone loading and pause until the player has fully loaded in\r\n  * Queue timing before: Traps were all queued and fired with a 30 second delay between traps\r\n  * Queue timing after: 3 separate trap queues depending on the type of trap, each with their own delay timer\r\n    * Spawner traps (Tarr/Slime Ring): 1 second delay\r\n    * Teleport traps: 5 second delay \r\n    * Weather traps: 30 second delay (unchanged)\r\n\r\n_It felt weird for traps to release over a long period of time when someone releases a large number of items, so this should hopefully fix some of that experience and clear out the incoming traps more quickly._",
+      "download_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.5.2/slime_rancher_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c33caeb83f45a48d9bfc2e624be9db56fe27ef0b38d0c84ef4ba674021212b01",
+      "html_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.5.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 36317,
+      "source_url": "https://api.github.com/repos/Rhelys/SlimeRancher2-AP",
+      "tag": "v0.5.2",
+      "title": "v0.5.2",
+      "version_simple": "0.5.2",
+      "world_version": "0.5.2"
     }
   }
 }
