@@ -45,11 +45,17 @@ Depending on your chosen settings, you may have many more locations than items. 
 
 Clearing a level is always worth an item. 
 
-Additionally, you can configure clearing a level's par time to be an item, regardless of whether you need to for your chosen goal condition. 
+Optionally, based on your chosen settings:
+ - Clearing a level is worth more than one item. The harder the level, the more items. 
+ - Clearing a level's par time earns an item.  
 
 ### Any recommended settings? 
 
 The default settings are to clear all 25 levels in the Standard campaign, with all possible items locked, par time targets, and target times set to Medium. 
+
+#### What are the target times?
+
+The target times for all levels can be viewed [here](./level_properties_en.md).
 
 ## Additional commands
 

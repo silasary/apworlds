@@ -2,41 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-23T12:24:46.307973+00:00</updated>
+  <updated>2026-05-23T18:30:43.403910+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/fdelduque/Archipelago/releases/tag/b08161</id>
-    <title>Symphony of the Night v0.8.16</title>
-    <updated>2026-05-17T21:25:29+00:00</updated>
-    <author>
-      <name>fdelduque</name>
-    </author>
-    <content>Fixed typo on randomize_candles</content>
-    <link href="https://github.com/fdelduque/Archipelago/releases/tag/b08161"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.1</id>
-    <title>Dark Cloud 1 v0.5.0</title>
-    <updated>2026-05-17T22:23:42+00:00</updated>
-    <author>
-      <name>Lizardman175</name>
-    </author>
-    <content># Dark Cloud 1 AP Rando v0.5.1&#13;
-&#13;
- - NOTE: removed client from this patch due to a bug.  Use 0.5.2 &#13;
-&#13;
-## Changes&#13;
- - Fixed an item duplication bug with the new Progressive Char Building item&#13;
- - Added `progressive_chars` to the slot data for poptracker use&#13;
- - Added `extra_char_buildings` that will give another part for each char building + another river piece. Works with `progressive_chars`.  Parts of Well 3 are removed to balance item/location counts.  No impact on logic/tracker from this.&#13;
- - Similarily, made a server change that will allow starting with individual char building items (King's Hideout, etc.) even with `progressive_chars` on&#13;
-&#13;
-Client should work with older worlds</content>
-    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.1"/>
-  </entry>
   <entry>
     <id>https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.10.0</id>
     <title>Void Stranger v0.10.0</title>
@@ -1057,5 +1027,73 @@ Otherwise, see you in the Wasteland! Please enjoy this new and improved patch!&#
 &lt;img width="300" height="228" alt="motelclerkidle1" src="https://github.com/user-attachments/assets/5fe65341-2a2b-41bd-9111-1d539ed29cc1" /&gt;&#13;
 </content>
     <link href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/niieli/Niko-Archipelago/releases/tag/0.8.4</id>
+    <title>Here Comes Niko! v0.8.4</title>
+    <updated>2026-05-23T12:51:31+00:00</updated>
+    <author>
+      <name>nieli</name>
+    </author>
+    <content>## Logic&#13;
+- Added 'Swim Course' to "Public Pool - Clint (Chatsanity)"&#13;
+- Added 'AC Repair' to "Bathhouse - Moomy"&#13;
+- Added Textbox requirement for "Tadpole HQ - Ledge Above Elevator"&#13;
+- Added Textbox requirement for `Goal: hired`&#13;
+- Added Textbox requirement for "Chatsanity - Pepper" (didn't have one because of region changes)&#13;
+- Added Textbox requirement for "Chatsanity - Dispatcher" (didn't have one because of region changes)&#13;
+- Added 'Parasol Repair' to "Achievement - Bottled Up"&#13;
+- Changed "Achievement - Frog Fan" region from Tadpole HQ to Home&#13;
+- Fixed a few locations not respecting rules when `progressive_contact_list: false`&#13;
+## Installation&#13;
+1. Double click the apworld or open ArchipelagoLauncher and `Install APWorld`&#13;
+2. Open ArchipelagoLauncher &#13;
+3. `Generate Template Options` to get the yaml or use the one under the release&#13;
+&#13;
+## Playing&#13;
+1. Setup your yaml and put it in `...\Archipelago\Players`&#13;
+2. Click `Generate` on the ArchipelagoLauncher&#13;
+3. `...\Archipelago\output` should have a AP_XXX.zip&#13;
+4. Host locally via `Host` on the ArchipelagoLauncher OR Upload the zip to the [website](https://archipelago.gg/uploads)&#13;
+5. Follow the Install instructions for the [Mod](https://github.com/niieli/NikoArchipelagoMod?tab=readme-ov-file#installation)&#13;
+&#13;
+**Full Changelog**: https://github.com/niieli/Niko-Archipelago/compare/0.8.3...0.8.4</content>
+    <link href="https://github.com/niieli/Niko-Archipelago/releases/tag/0.8.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.2-fix3</id>
+    <title>Rabbit and Steel v0.3.2</title>
+    <updated>2026-05-23T18:15:04+00:00</updated>
+    <author>
+      <name>tjwombo</name>
+    </author>
+    <content>fixed:&#13;
+* Fix route selection when kingdom order not used&#13;
+* Fix being able to go to other starting kingdom (there still is a cosmetic bug related to this where the stage name will be wrong if you load into the lobby under the wrong type and never correct it in the map)&#13;
+* Fix class sanity mouse clicks being able to go through&#13;
+* Fixed altair dagger typo&#13;
+* _ALL will now remove excluded classes automatically&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.3.1](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.1-fix...v0.3.1) - 2026-05-23&#13;
+&#13;
+## [v0.3.1-fix](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.0...v0.3.1-fix) - 2026-05-23&#13;
+&#13;
+### Commits&#13;
+&#13;
+- Fix route selection when kingdom order not used [`7d5a36e`](https://github.com/tjwombo/RNSArchipelago/commit/7d5a36efdb43cd57b2b0a46e314128bf308dc3e3)&#13;
+- Fix being able to go to other starting kingdom [`1ae0615`](https://github.com/tjwombo/RNSArchipelago/commit/1ae0615edafb64c16d3da2839d80597e19617853)&#13;
+- formatting [`b7cdca3`](https://github.com/tjwombo/RNSArchipelago/commit/b7cdca31d29dfa0582784362c07f107a96d9d451)&#13;
+- Fix class sanity mouse clicks [`0d62569`](https://github.com/tjwombo/RNSArchipelago/commit/0d625696cecefaf284a7009ff7264f54531487c9)&#13;
+- Removed formatter as there was github actions build errors [`de85a85`](https://github.com/tjwombo/RNSArchipelago/commit/de85a856e0fe394b1afe0f2472565ee412665e41)&#13;
+- version update [`736b07b`](https://github.com/tjwombo/RNSArchipelago/commit/736b07b6d06dc15ce2bbc23281b2623e61a1c804)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.2-fix3"/>
   </entry>
 </feed>

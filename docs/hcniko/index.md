@@ -4,7 +4,7 @@ A cozy little game, about frogs and being a good friend
 
 
 ## Downloads
-- <a href="https://github.com/niieli/Niko-Archipelago/releases/download/0.8.3/hcniko.apworld">Latest Version (0.8.3)</a>
+- <a href="https://github.com/niieli/Niko-Archipelago/releases/download/0.8.4/hcniko.apworld">Latest Version (0.8.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

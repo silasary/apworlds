@@ -6,7 +6,7 @@ to rescue the Seven Sages, and then confront Ganondorf to save Hyrule!
 
 
 ## Downloads
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta1/oot.apworld">Latest Version (9.1.0b1)</a>
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta2/oot.apworld">Latest Version (9.1.0b2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
