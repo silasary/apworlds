@@ -1,9 +1,12 @@
 # Reventure
 
 ## Latest
-- <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.19.1/reventure.apworld">Latest Version (0.19.1)</a>
+- <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.20.0/reventure.apworld">Latest Version (0.20.0)</a>
 
 ## All Versions
+
+#### v0.20.0
+- <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.20.0/reventure.apworld">https://github.com/Droppel/ReventureEndingRando/releases/download/0.20.0/reventure.apworld</a>
 
 #### v0.19.1
 - <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.19.1/reventure.apworld">https://github.com/Droppel/ReventureEndingRando/releases/download/0.19.1/reventure.apworld</a>

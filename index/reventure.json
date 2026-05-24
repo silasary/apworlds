@@ -320,6 +320,21 @@
       "version_simple": "0.19.1",
       "world_version": "0.19.1"
     },
+    "0.20.0": {
+      "created_at": "2026-05-24T15:28:45Z",
+      "description": "THIS RELEASE IS PRE ALPHA. DO NOT USE IT OUTSIDE OF MULTIWORLDS SPECIFICALLY GENERATED TO TEST THIS. I'LL GET MAD IF YOU RUIN SOME MULTIWORLD WITH THIS BY ACCIDENT!\r\n\r\nAlright folks, I sort of did it. The Graph Update kinda works. This means:\r\n- Random Spawns!\r\n- Random Item Locations!\r\n- Reduced starting jump height!\r\n- Many more things we could do now!\r\n\r\n## How this works\r\nFor various reasons (That I'd be happy to explain if anyone wants to know them), the only way I found to make the above possible, is by literally generating the logic based on randomized item locations. For this I built the [reventureregions](https://github.com/Droppel/reventurerust) tool. Given a YAML file, this tool then generates random spawn and item locations and then generates the corresponding logic. This logic is then appended to the yaml, allowing AP to create a valid world.\r\n\r\n## Step by Step\r\n1. Create your YAML, setting experimentalRegionGraph to true\r\n2. Run the reventureregions tool to generate the logic for your slot (This takes ~1 minute on my PC)\r\n3. The tool outputs the possible item locations (Due to the random item placement, some locations might be impossible). If this number is to low, you should remove the logic from your yaml and try again. Most of the time everything is possible.\r\n4. Give your yaml to the host\r\n5. The host needs to set reventure_options => allow_experimental to true in their host.yaml\r\n6. Generate your world\r\n7. Have fun\r\n\r\nThis build likely contains various issues (Broken logic, or other bugs) still please report any that happen! And if anyone wants to take a look at the rust code please do! I'd love to discuss any improvements.",
+      "download_url": "https://github.com/Droppel/ReventureEndingRando/releases/download/0.20.0/reventure.apworld",
+      "has_manifest": false,
+      "hash_sha256": "3745d336f03d97f5d6e121cf12ecf167e774a35aabf3b232fdec4a9920039b93",
+      "html_url": "https://github.com/Droppel/ReventureEndingRando/releases/tag/0.20.0",
+      "prerelease": true,
+      "size": 162089,
+      "source_url": "https://api.github.com/repos/Droppel/ReventureEndingRando",
+      "tag": "0.20.0",
+      "title": "Version 0.20.0 - The Graph Update",
+      "version_simple": "0.20.0",
+      "world_version": "0.20.0"
+    },
     "0.4.0": {
       "created_at": "2024-01-26T21:50:57Z",
       "description": "Bunch of stuff",
