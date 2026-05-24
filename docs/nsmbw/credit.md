@@ -3,17 +3,16 @@ Coded by and main developer
 
 \
 Others that helped
+- React / jacob_x_x (Done most of logic)
 - Matgamer2575 (started project and found some memory addresses)
 - techmuse (helped with locating addresses)
-- React / jacob_x_x (helped with developing logic)
 - LuigiXRules (Fixed typos in documentation)
-
 
 \
 Communities that helped
-- NSMBW thread in Archipelago dc server
-- Archipelgo dc server worlddev help and documentation
-- Horizo discord server (for knowledge about the game)
+- NSMBW thread in Archipelago dc server (for feature requests and playtesting)
+- Archipelago dc server (worlddev help and documentation)
+- Horizon & NSMBW Hacking Depo discord servers (for knowledge about the game)
 
 
 \
@@ -21,11 +20,11 @@ Community projects used
 - Archipelago
 - Dolphin emulator
 - Dolphin memory engine
-- retroachievements.org/codenotes.php?g=95
+- [retroachievements](retroachievements.org/codenotes.php?g=95)
 - Archipelago fuzzer (by Eijebong)
-- Universal tracker 
-- mariowiki.com
-- NSMBW decompiler
+- Universal tracker
+- [mariowiki.com](https://www.mariowiki.com/New_Super_Mario_Bros._Wii)
+- NSMBW decompiler, memory map, symbol map
 
 
 \
@@ -48,6 +47,8 @@ Original game
 - Nintendo
 
 \
-AI (for decoding assembly and reading address maps)
-- Gemini
-- ChatGPT
+Other
+- AI (for decoding assembly and reading address maps)
+  - Gemini
+  - ChatGPT
+- Keyboard (Python library)

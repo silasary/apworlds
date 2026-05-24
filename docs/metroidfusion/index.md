@@ -5,7 +5,7 @@ Locate the Infant Metroids to lure out the SA-X, set the self destruct, and esca
 
 
 ## Downloads
-- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.22.1/metroidfusion.apworld">Latest Version (1.22.1)</a>
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.22.2/metroidfusion.apworld">Latest Version (1.22.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
