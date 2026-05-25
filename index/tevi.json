@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "BlackSoulKnight"
+  ],
   "description": "Description of TEVI",
   "game": "Tevi",
   "github": "https://github.com/BlackSoulKnight/Tevi_Randomizer",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "AP.2": {
       "created_at": "2024-09-28T21:10:05Z",
@@ -463,6 +470,21 @@
       "title": "Version 1.4.9 Trap Test  (AP v0.6.8)",
       "version_simple": "1.4.9",
       "world_version": "1.4.9"
+    },
+    "v1.5.0": {
+      "created_at": "2026-05-12T11:32:59Z",
+      "description": "## Changelog v1.4.8 -> 1.5.0\r\n\r\n+ Traps\r\n-- Reverse Camera\r\n-- Yeet\r\n-- Double Time\r\n-- Low Jump Height\r\n-- Debuff\r\n-- Invisible Tevi\r\n\r\n+ New Display option for Itempop ups\r\n+ removed Money locations from pool when not needed\r\n+ Automatic Hint system that display priority hints from AP\r\n+ Quickdrops gain 1 additional charge when hitting \r\n+ Disabled Keyboard / Gamepad inputs when a Textfield is selected in the Randomizer Menu\r\n+ Fixed randomized background / music / bosses(?)\r\n+ Quickdrop dmg changed to ->  ( base dmg * MATK Pot ) + Chain -> removed potion scaling from Combo counter\r\n   increased 1 dmg per chain hit\r\n+ Quickdrop have a internal cooldown of 0.08s\r\n\r\n### Logic\r\n\r\n+ Removed CC Shop # 18\r\n+ Event location missing Logic\r\n+ Teleporter Name display correctly\r\n+ Ulskan Village Area to Plague Forest Exit -> logic fix\r\n+ Hand exchange fixed\r\n+ Item name fixed for Money blocks\r\n+ DreamKeeper - Money Room X: 24 Y: 21 -> removed unreachable condition (Clusterbomb)\r\n\r\n### ApWorld\r\n+ Location and Item IDs are now hard coded and reduce to a lower number\r\n+ Potions move to Client `Bonus Start` tab\r\n+ Ensure that at least 16 potion each are available at all times, except rainbow bunny potion",
+      "download_url": "https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.5.0/tevi.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b4f1ab7611e2e126ab6d56eba1eaca5180747694f47d237b77327720c628690e",
+      "html_url": "https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.5.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 84012,
+      "source_url": "https://api.github.com/repos/BlackSoulKnight/Tevi_Randomizer",
+      "tag": "v1.5.0",
+      "title": "Version 1.5.0 Traps (AP v0.7.0) ",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0"
     }
   }
 }

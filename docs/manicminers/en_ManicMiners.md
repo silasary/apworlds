@@ -39,7 +39,7 @@ Additionally, you can configure Buildings, Items, and/or Vehicles to be locked u
 
 #### Filler items
 
-Depending on your chosen settings, you may have many more locations than items. In these cases, filler items are added to the pool, which take the form of motivational messages like "Good work, Cadet!" or "An Energy Crystal Has Been Found!". These items do absolutely nothing. 
+Depending on your chosen settings, you may have many more locations than items. In these cases, filler items are added to the pool, which take the form of motivational messages like "Good work, Cadet!" or "An Energy Crystal Has Been Found!". Any items ending in "!" do absolutely nothing. You may also get marginal bonuses to your starting ore. 
 
 ### Where can I find items in Manic Miners? 
 
@@ -52,6 +52,10 @@ Optionally, based on your chosen settings:
 ### Any recommended settings? 
 
 The default settings are to clear all 25 levels in the Standard campaign, with all possible items locked, par time targets, and target times set to Medium. 
+
+Players familiar with Manic Miners may prefer to enable all campaigns and the No Duplicate Levels setting, which will still do a full run of 25 levels, but will randomly select each one.
+
+Running every campaign fully selected, if the goal is set high to match, can take a long time. 
 
 #### What are the target times?
 

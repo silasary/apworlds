@@ -6,7 +6,7 @@ This APWorld allows Manic Miners to be combined with the Archipelago multiworld 
 
 
 ## Downloads
-- <a href="https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.2.0/manicminers.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.3.0/manicminers.apworld">Latest Version (1.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
