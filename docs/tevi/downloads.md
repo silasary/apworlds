@@ -92,6 +92,9 @@
 #### v1.2.1
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.2.1/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.2.1/tevi.apworld</a>
 
+#### v0.7.1
+- <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.5.1/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.5.1/tevi.apworld</a>
+
 #### v0.7.0
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.5.0/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.5.0/tevi.apworld</a>
 
