@@ -1,10 +1,12 @@
 # Mario Sports Mix
 
-
+Mario Sports Mix is a fast-paced Wii sports game that includes basketball, volleyball, dodgeball, and hockey.
+Play as characters from the Mario, Final Fantasy and Dragon Quest franchise in order to defeat the evil in this
+land and conquer all the sports!
 
 
 ## Downloads
-- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.0.1/mario_sports_mix.apworld">Latest Version (0.0.1)</a>
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.1.1/mario_sports_mix.apworld">Latest Version (0.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

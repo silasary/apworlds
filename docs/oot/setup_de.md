@@ -71,8 +71,13 @@ und klicke dann auf `Download Patch File...`.
 Führe die `.apz5`-Datei mit einem Doppelklick aus, um deinen Ocarina Of Time-Client zu starten, sowie das patchen
 deiner ROM. Ist dieser Prozess fertig (kann etwas dauern), startet sich der Client und der Emulator automatisch
 (sofern das "Öffnen mit..." ausgewählt wurde).
+Alternativ kannst du den `Ocarina of Time Adjuster` vom Launcher aus nutzen, um viele Visuals und Soundeinstellungen anzupassen, wie eigene Musik, Models, Farben, usw.
+Nach dem Patch Vorgang im Adjuster wird der Client automatisch gestartet.
+
 Wenn du einen bestimmten Emulator automatisch starten möchtest, setze `oot_options.emulator_path` in deiner `host.yaml`
 auf die Emulator-Anwendung. Lasse den Wert leer, um beim ersten Aufruf nach einem Pfad gefragt zu werden.
+
+
 ### Verbinde zum Multiserver
 
 Sind einmal der Client und der Emulator gestartet, verbindet sich der OoT-Client automatisch mit der geladenen ROM.

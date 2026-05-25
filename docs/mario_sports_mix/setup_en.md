@@ -3,9 +3,8 @@
 ## Required Software
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) (0.6.7 or newer)
 - [Latest version of this APWorld](https://github.com/ElectroStarz/ArchipelagoMSM/releases)
-- [AP Gecko Codes](https://github.com/ElectroStarz/ArchipelagoMSM/releases)
 - [Dolphin Emulator](https://dolphin-emu.org/download/?ref=btn)
-- Your **PAL (European) ROM of Mario Sports Mix** (NTSC-U will be supported in later updates, _maybe_ NTSC-J)
+- Your ROM of Mario Sports Mix (NTSC-J isn't supported)
 
 
 ## How to install
@@ -17,10 +16,6 @@ your custom_worlds folder, or click Install APWorld in the Archipelago Launcher.
 ### Dolphin
 1) Dump your PAL version of Mario Sports Mix
 2) Put the dump into a folder and set it as a game folder in Dolphin (Config → Paths)
-3) Click 'Config' and click 'Enable Cheats'
-4) Right click Mario Sports Mix and click 'Properties', then 'Gecko Codes' and click 'Add New Code...'. Name it 'AP
-Codes' and put the creator as Saulf, and in the code box copy as paste the code in the AP Gecko Codes.txt file into the
-box.
 
 ## Read both!
 ### Archipelago Notes
@@ -28,9 +23,7 @@ box.
 
 ### Dolphin notes
 - <ins>**BACK UP YOUR SAVE DATA**</ins>
-- **Remember to use the gecko codes or else things will not work!**
-- When playing, use **save file 1!** (Support for other save files may come in a later update but is highly unlikely due to
-the amount of research I'll need to do :[ )
+- When playing, use **save file 1!**
 
 ## Creating a yaml file
 ### What is a yaml and why do I need one?

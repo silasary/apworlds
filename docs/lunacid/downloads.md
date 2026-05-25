@@ -1,9 +1,12 @@
 # Lunacid
 
 ## Latest
-- <a href="https://github.com/Witchybun/LunacidAPClient/releases/download/1.1.1/lunacid.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/Witchybun/LunacidAPClient/releases/download/1.1.2/lunacid.apworld">Latest Version (1.1.2)</a>
 
 ## All Versions
+
+#### v1.1.2
+- <a href="https://github.com/Witchybun/LunacidAPClient/releases/download/1.1.2/lunacid.apworld">https://github.com/Witchybun/LunacidAPClient/releases/download/1.1.2/lunacid.apworld</a>
 
 #### v1.1.1
 - <a href="https://github.com/Witchybun/LunacidAPClient/releases/download/1.1.1/lunacid.apworld">https://github.com/Witchybun/LunacidAPClient/releases/download/1.1.1/lunacid.apworld</a>

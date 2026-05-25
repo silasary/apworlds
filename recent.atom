@@ -2,60 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-24T18:26:07.202277+00:00</updated>
+  <updated>2026-05-25T00:36:12.993185+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.2</id>
-    <title>Donkey Kong Country 2 v3.1.2</title>
-    <updated>2026-05-19T02:41:47+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>Small round of fixes&#13;
-## Info&#13;
-* [Info](https://thelx5.github.io/dkc2/index.html)&#13;
-* [Download](https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.2)&#13;
-* [Trivia (REQUIRED TO PLAY)](https://github.com/TheLX5/DKC2-Trivia/releases/latest)&#13;
-## Changes&#13;
-* Fixed KONG checks being sent in levels with uninitialized SRAM&#13;
-* Fixed DamageLink handling causing incoming DeathLink and TrapLink signals crash the client&#13;
-* Adjusted Windy Well logic (Loose)</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.1</id>
-    <title>R.E.P.O v0.4.1</title>
-    <updated>2026-05-19T04:50:14+00:00</updated>
-    <author>
-      <name>Automagic</name>
-    </author>
-    <content>Mod&#13;
-* Fixed several issues caused by code changes in REPO 0.4.0&#13;
-* Fixed re-rolled ap items not displaying their name for clients&#13;
-* Fixed extra upgrade spawn positions and cosmetic box display name&#13;
-* Added all new items from the Cosmetic Update to logic&#13;
-* Undid shop rework from 0.4.0&#13;
-  * The old rework happened when the secret shop was much harder to reach, meaning that a player could be soft-locked if they needed secret items but could not reach the shop itself. With the new shop layouts added in the cosmetic update, this change made the secret shop way too powerful.&#13;
-* Several more re-roll fixes&#13;
-  * Ensured that non-ap upgrades are properly replaced when initially spawning upgrades&#13;
-  * Prevented blank ap items from spawning after a re-roll&#13;
-  * Gave ap items a 50% chance to be selected when rerolling upgrades&#13;
-  * Fixed an edge case that resulted in duplicate ap items if some ap items were taken out of the machine before re-rolling&#13;
-&#13;
-Apworld&#13;
-* Added Cosmetic Update store items to logic&#13;
-* Changed several item classifications and required energy crystals for victory&#13;
-* Changed soul logic&#13;
-  * Souls now accounts for stunned strength breakpoints&#13;
-  * Since some monsters take 13 strength to kill, we have to have 13 strength upgrades minimum. To balance that, there are now at least 3 of all other upgrades.&#13;
-* updated option descriptions&#13;
-&#13;
-This version of the mod **is** compatible with previous multiworlds, but store items added in the Cosmetic Update will not spawn when connected to an old multiworld.</content>
-    <link href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.1"/>
-  </entry>
   <entry>
     <id>https://github.com/AshIndigo/Archipelago/releases/tag/v0.5.1</id>
     <title>Devil May Cry 3 v0.5.1.post2</title>
@@ -1066,5 +1017,52 @@ _This release is backwards compatible with seeds generated on 5.4.0 or later. So
 
 This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
     <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.4.0</id>
+    <title>Resident Evil 7 v0.4.0</title>
+    <updated>2026-05-24T18:59:52+00:00</updated>
+    <author>
+      <name>ElGrenier</name>
+    </author>
+    <content># The bug fix version ! &#13;
+&#13;
+This releases changes a few things :&#13;
+1. You don't get 40 millions copies of any items when you die ! Hooray, lets suffer together against Jacks !&#13;
+2. You now automatically skip to the chapter 2 if the option is enable ! Furthemore, no chapter 1 items locations are created !&#13;
+</content>
+    <link href="https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TRPG0/HbkArchipelago/releases/tag/0.3.0</id>
+    <title>Hi-Fi RUSH v0.3.0</title>
+    <updated>2026-05-24T23:20:56+00:00</updated>
+    <author>
+      <name>TRPG</name>
+    </author>
+    <content>See [README](https://github.com/TRPG0/HbkArchipelago/blob/main/README.md) for install instructions.&#13;
+&#13;
+Packaged with `zDEV-UE4SS_v3.0.1-947-g06474186`, `hibiki-bootstrap-v0.2.0`&#13;
+&#13;
+- Added an in game message system, to be used to display messages when attempting to connect to a server, checking locations, receiving items from other players, and more.&#13;
+- VLogs can now be randomized.&#13;
+- Added an option to shuffle every store item except the Special Attack Slot Upgrade.&#13;
+- If there is only one player in the multiworld, player names will not be displayed in the store.&#13;
+- Chip upgrades will not show the item you can get if the upgrade isn't available to be purchased yet.</content>
+    <link href="https://github.com/TRPG0/HbkArchipelago/releases/tag/0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.3</id>
+    <title>Metroid Fusion v1.22.3</title>
+    <updated>2026-05-24T23:54:37+00:00</updated>
+    <author>
+      <name>StalledStorm</name>
+    </author>
+    <content>## Changes&#13;
+&#13;
+* PONR Checks should be fixed (@NPCPotPie)&#13;
+&#13;
+Setup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)</content>
+    <link href="https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.3"/>
   </entry>
 </feed>
