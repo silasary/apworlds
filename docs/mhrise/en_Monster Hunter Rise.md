@@ -17,11 +17,17 @@ monster, but the check only sends when the player holds the
 corresponding license. Hunting an unlicensed monster simply does
 nothing from Archipelago's perspective.
 
+> **A second mode — Quest Randomizer — is upcoming.** It will
+> hard-gate the village questboard with per-quest unlock items and
+> swap the boss monster of every village quest (with Comeuppance as
+> the fixed goal). Not in the current release; the per-monster
+> license model above is the only shipping mode for now.
+
 ## What monsters are randomized?
 
 A random subset of large monsters is drawn into the world at generation
 time. The size of this subset is set by the `MonsterCount` option
-(default 15, range 2–72). Two option toggles control which monsters are
+(default 15, range 3–72). Two option toggles control which monsters are
 eligible:
 
 - `IncludeSunbreak` (default **on**) — adds the Sunbreak roster.

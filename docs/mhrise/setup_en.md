@@ -38,8 +38,12 @@ Both are published on this project's releases page.
 - **[REFramework](https://github.com/praydog/REFramework)** — the
   modding framework the client runs inside. Required for every player.
 - **[Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)**
-  — required only for the person generating the seed. Players
-  connecting to an existing room don't need it.
+  **0.6.7 or higher** — required only for the person generating the
+  seed. Players connecting to an existing room don't need it.
+
+> **Archipelago 0.6.7+ is required for seed generation.** The apworld
+> uses the rule builder API introduced in 0.6.7. Generating with an
+> older version will fail.
 
 ## For everyone: installing the client
 
@@ -101,12 +105,20 @@ Rise" YAML. The available options are:
 - `IncludeRisen` (default off) — include the five Risen elder dragons.
 - `IncludeWeapons` (default on) — add weapon-type licenses to the pool
   and require the current weapon's license to land checks.
-- `MonsterCount` (range 2–72, default 15) — number of monsters drawn
+- `WeaponPool` — subset of weapons allowed when `IncludeWeapons` is on.
+- `MonsterCount` (range 3–72, default 15) — number of monsters drawn
   into the world.
 
 Drop the YAML into `<Archipelago install>/Players/`, run
 `ArchipelagoGenerate`, then host the resulting room (or upload the
 output zip to [archipelago.gg](https://archipelago.gg/) for hosting).
+
+> **Quest Randomizer mode is upcoming.** A second game mode that
+> hard-gates the village questboard with per-quest unlock items and
+> swaps the boss monster of every village quest is in development
+> (see `Mode` option). It will land in a future release; until then,
+> the only shipping mode is the per-monster license hunt-a-thon
+> described above.
 
 ## Connecting in-game
 
