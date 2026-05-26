@@ -1,9 +1,12 @@
 # Cookie Clicker
 
 ## Latest
-- <a href="https://github.com/Charlignon/AP_CookieClicker/releases/download/0.8.1/cookieclicker.apworld">Latest Version (0.8.1)</a>
+- <a href="https://github.com/Charlignon/AP_CookieClicker/releases/download/0.8.2/cookieclicker.apworld">Latest Version (0.8.2)</a>
 
 ## All Versions
+
+#### v0.8.2
+- <a href="https://github.com/Charlignon/AP_CookieClicker/releases/download/0.8.2/cookieclicker.apworld">https://github.com/Charlignon/AP_CookieClicker/releases/download/0.8.2/cookieclicker.apworld</a>
 
 #### v0.8.1
 - <a href="https://github.com/Charlignon/AP_CookieClicker/releases/download/0.8.1/cookieclicker.apworld">https://github.com/Charlignon/AP_CookieClicker/releases/download/0.8.1/cookieclicker.apworld</a>
