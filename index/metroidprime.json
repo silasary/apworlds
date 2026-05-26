@@ -28,6 +28,21 @@
       "version_simple": "0.5.0",
       "world_version": "0.5.0"
     },
+    "v0.5.1": {
+      "created_at": "2026-03-12T15:17:08Z",
+      "description": "## What's Changed:\r\n- Added offworld models support (none, match game, match series)\r\n- No more using Utils.get_option() as it's deprecated now\r\n- Fixed patch file extension when downloading patch file from room\r\n- Added detection of non-ISO formats*\r\n- Added detection of vanilla ISO, it will disconnect you if you don't use the patched ISO\r\n- Added manifest file for AP 0.7.0+ support\r\n- Implemented credits spoiler (Thanks @lilDavid)\r\n- Now you can choose between precollected and on scanned for artifact hints (Thanks @lilDavid)\r\n\r\nFor mac users it's 3.11 release that you need**\r\nFor windows and linux users it's 3.12 release that you need\r\n\r\n**Full changelog**: https://github.com/Electro1512/MetroidAPrime/compare/main...UltiNaruto:MetroidAPrime:main\r\n\r\n*: Remember you need to dump your copy of Metroid Prime, not download it.\r\n**: But I didn't include the correct libs yet, please be patient and wait until 0.5.2",
+      "download_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.1/metroidprime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3b7351a74499cd5f949143d65cb386a2ff1dc0661b7b22cd5e9e6b8e0c82290d",
+      "html_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/tag/v0.5.1",
+      "minimum_ap_version": "0.6.3",
+      "size": 6727989,
+      "source_url": "https://api.github.com/repos/UltiNaruto/MetroidAPrime",
+      "tag": "v0.5.1",
+      "title": "v0.5.1",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1"
+    },
     "v0.5.2": {
       "created_at": "2026-03-16T19:55:23Z",
       "description": "**/!\\ if you downloaded this earlier, redownload the apworld because I brainfarted severely..**\r\n\r\n## What's Changed:\r\n- Fix crash when using plando_items (Thanks @ProfBytes)\r\n- Temp folder is no more needed and was completely removed*\r\n- Energy tank capacity can now be set up to 1000 HP logically (with a step of 100)\r\n\r\n*: Now you are required to extract libs-`your OS`-`3.11 or 3.12`.zip to your `lib` folder in `Archipelago` folder. If you played Luigi's Mansion, this is similar.\r\n\r\n**Full Changelog**: https://github.com/UltiNaruto/MetroidAPrime/compare/v0.5.1...v0.5.2\r\n\r\n## New Contributors\r\n* @ProfBytes made their first contribution in https://github.com/UltiNaruto/MetroidAPrime/pull/3\r\n\r\n**As per usual, I remind you that you need to dump your copy of Metroid Prime and not download it.**",
@@ -85,6 +100,21 @@
       "source_url": "https://api.github.com/repos/UltiNaruto/MetroidAPrime",
       "tag": "v0.5.4",
       "title": "v0.5.4",
+      "version_simple": "0.5.4",
+      "world_version": "0.5.4"
+    },
+    "v0.5.4-h1": {
+      "created_at": "2026-05-26T11:04:21Z",
+      "description": "# Apworld changes :\r\n- Added new command `/export_iso` which allows the user to reexport their iso if they started the client from the apmp1 file\r\n- Made the zip build optional for releases\r\n- Now the update lib function will clear properly old versions\r\n\r\n# Logic has been updated :\r\n- Fixed a bug where Ruined Courtyard to Quarantine Access would bypass the door requirement if the trick for climbing there was set.\r\n- Fixed a bug where Ruined Nursery would expect Power Bombs to break crates when it's completely impossible\r\n\r\n# Library changes :\r\n- Updated py-randomprime to 1.31.1\r\n- Updated ppc-asm to 1.9.0\r\n\r\n**Full Changelog**: https://github.com/UltiNaruto/MetroidAPrime/compare/v0.5.4...v0.5.4-h1",
+      "download_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4-h1/metroidprime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1113758c418fe22557816bf3ddde3e9e51b5a7b2501f5d1abe53e34234e219e5",
+      "html_url": "https://github.com/UltiNaruto/MetroidAPrime/releases/tag/v0.5.4-h1",
+      "minimum_ap_version": "0.6.3",
+      "size": 254555,
+      "source_url": "https://api.github.com/repos/UltiNaruto/MetroidAPrime",
+      "tag": "v0.5.4-h1",
+      "title": "v0.5.4-h1",
       "version_simple": "0.5.4",
       "world_version": "0.5.4"
     }
