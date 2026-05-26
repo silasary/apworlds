@@ -14,6 +14,9 @@
 #### v2
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/OSRS-v0.1.5/osrs.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/OSRS-v0.1.5/osrs.apworld</a>
 
+#### v1
+- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/osrs-bingo-RC1/osrs.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/osrs-bingo-RC1/osrs.apworld</a>
+
 #### v0.5.0b0
 - <a href="https://github.com/digiholic/Archipelago/releases/download/osrs-members-0.5.0b/osrs.apworld">https://github.com/digiholic/Archipelago/releases/download/osrs-members-0.5.0b/osrs.apworld</a>
 

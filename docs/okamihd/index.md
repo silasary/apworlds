@@ -4,7 +4,7 @@ Okami HD
 
 
 ## Downloads
-- <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.4.4/okamihd.apworld">Latest Version (0.4.4)</a>
+- <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.5.0-preview-1/okamihd.apworld">Latest Version (0.5.0rc1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
