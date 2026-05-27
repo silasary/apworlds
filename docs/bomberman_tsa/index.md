@@ -4,7 +4,7 @@ The greatest game of all time.
 
 
 ## Downloads
-- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombtsa_v0.1.2/bomberman_tsa.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.0/bomberman_tsa.apworld">Latest Version (1.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

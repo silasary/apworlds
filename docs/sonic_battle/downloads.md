@@ -1,9 +1,12 @@
 # Sonic Battle
 
 ## Latest
-- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/sonic_battle_v0.1.3/sonic_battle.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/Happyhappyism/Sonic-Battle-Archipelago/releases/download/sonic_battle_v0.1.4/sonic_battle.apworld">Latest Version (0.1.4)</a>
 
 ## All Versions
+
+#### v0.1.4
+- <a href="https://github.com/Happyhappyism/Sonic-Battle-Archipelago/releases/download/sonic_battle_v0.1.4/sonic_battle.apworld">https://github.com/Happyhappyism/Sonic-Battle-Archipelago/releases/download/sonic_battle_v0.1.4/sonic_battle.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/sonic_battle_v0.1.3/sonic_battle.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/sonic_battle_v0.1.3/sonic_battle.apworld</a>
