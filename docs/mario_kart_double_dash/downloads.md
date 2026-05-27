@@ -8,6 +8,9 @@
 #### v1.0.0.post2
 - <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc3/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc3/mario_kart_double_dash.apworld</a>
 
+#### v1.0.0rc4
+- <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc4/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc4/mario_kart_double_dash.apworld</a>
+
 #### v1.0.0rc3
 - <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc3/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc3/mario_kart_double_dash.apworld</a>
 

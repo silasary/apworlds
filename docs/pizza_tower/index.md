@@ -6,7 +6,7 @@ Wario Land 4-inspired platformer!
 
 
 ## Downloads
-- <a href="https://github.com/unsafetyskizzers/Archipelago/releases/download/1.3.2/pizza_tower.apworld">Latest Version (1.3.2)</a>
+- <a href="https://github.com/unsafetyskizzers/Archipelago/releases/download/1.3.3/pizza_tower.apworld">Latest Version (1.3.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
