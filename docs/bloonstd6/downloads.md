@@ -1,9 +1,12 @@
 # Bloons TD6
 
 ## Latest
-- <a href="https://github.com/Matt41321/Archipelago/releases/download/v0.6.2/bloonstd6.apworld">Latest Version (0.6.2)</a>
+- <a href="https://github.com/Matt41321/Archipelago/releases/download/v0.6.2/bloonstd6.apworld">Latest Version (0.6.2.post2)</a>
 
 ## All Versions
+
+#### v0.6.2.post2
+- <a href="https://github.com/Matt41321/Archipelago/releases/download/v0.6.2/bloonstd6.apworld">https://github.com/Matt41321/Archipelago/releases/download/v0.6.2/bloonstd6.apworld</a>
 
 #### v0.6.2
 - <a href="https://github.com/Matt41321/Archipelago/releases/download/v0.6.2/bloonstd6.apworld">https://github.com/Matt41321/Archipelago/releases/download/v0.6.2/bloonstd6.apworld</a>

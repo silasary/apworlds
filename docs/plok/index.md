@@ -5,7 +5,7 @@ Get ready to enjoy the classic SNES platformer and its iconic soundtrack. Plok i
 
 
 ## Downloads
-- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/plok_v011/plok.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/Happyhappyism/Plok-Archipelago/releases/download/plok_v0.1.3/plok.apworld">Latest Version (0.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
