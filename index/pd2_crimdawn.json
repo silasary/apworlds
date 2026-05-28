@@ -376,6 +376,21 @@
       "version_simple": "0.6.11",
       "world_version": "0.6.11"
     },
+    "v0.6.12": {
+      "created_at": "2026-05-28T14:49:42Z",
+      "description": "ERROR: crimdawn_v0_6_12_desc\r\n\r\n### Mod changes:\r\n- Bomb: Dockyard is now sped up (and fixed the broken computer hack (hopefully)).\r\n- Completely restructured the base localisation file. Instead of being multiple files, it's now one big file - while this might sound worse due to how much text this mod adds, it's actually a lot better because I also swapped from using a JSON to a YAML so I can actually structure the file in a sane way. On the surface this shouldn't change anything, but it fixes an issue where non-localised languages (any non-English language right now) would fail to fallback to English for most text. As simply as possible, **you can play in your native language and you won't see errors now**.\r\n\r\nNo functional APWorld changes since v0.6.8.",
+      "download_url": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.6.12/pd2_crimdawn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b79c4058d9aab3ef3225f8c5886034e94f05198819f6ab09f1d41426e5b3e68f",
+      "html_url": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v0.6.12",
+      "minimum_ap_version": "0.6.7",
+      "size": 17120,
+      "source_url": "https://api.github.com/repos/CATEM1NAL/PD2-Criminal-Dawn",
+      "tag": "v0.6.12",
+      "title": "Criminal Dawn v0.6.12",
+      "version_simple": "0.6.11",
+      "world_version": "0.6.11"
+    },
     "v0.6.2": {
       "created_at": "2026-04-29T00:28:23Z",
       "description": "### Mod changes:\r\n- First saw is no longer given immediately upon launching the game.\r\n- Fixed game crash when launching before connecting to a multiworld for the first time.\r\n- Removed some debug log text that was (potentially) causing performance issues.\r\n- Thermite in Big Bank and First World Bank are affected by speed upgrades.\r\n- Fuel on Alaskan Deal is affected by speed upgrades.\r\n- Meth cooking on heists where it's required is affected by speed upgrades.\r\n- Circle cutter on Brooklyn Bank is affected by speed upgrades.\r\n- Plane on GO Bank is affected by speed upgrades.\r\n- Refuelling the helicopter in Beneath the Mountain is affected by speed upgrades.\r\n- White House is no longer affected by speed upgrades to bring the amount of time it takes more in line with Crude Awakening (plus it's kinda lame to just skip every objective in the final heist, you wanna actually *play* it right?).\r\n  - With hindsight this may be impossible with current timer values?? If it isn't doable, let me know and I'll tweak some more values.\r\n  - Speed upgrades *will* apply to White House when playing the score goal or after finishing a run.\r\n- Safehouse prompt will no longer appear after going infamous.\r\n\r\nThe elements now being affected by speed upgrades haven't been tested super thoroughly - I know that it definitely *works* (at least for some of them), but I can't say for sure how it might affect the objective progression. Things may break!\r\n\r\nNo APWorld changes.",

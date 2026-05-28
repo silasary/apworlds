@@ -2,40 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-28T13:19:10.803654+00:00</updated>
+  <updated>2026-05-28T18:57:05.787145+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0-pre</id>
-    <title>Crash2 v0.3.0</title>
-    <updated>2026-05-23T01:07:44+00:00</updated>
-    <author>
-      <name>Sim10XXX</name>
-    </author>
-    <author>
-      <name>alexdass</name>
-    </author>
-    <content>## Death Link&#13;
-- Option to enable sending/receiving death links&#13;
-  - When one person with death link dies, everyone with death link dies&#13;
-&#13;
-### Note&#13;
-Since this is a pre-release, I am leaving in some debug commands (to be used RESPONSIBLY) if you want to test some things out yourself. You will type these in the client:&#13;
-- debug_openwarproom&#13;
-  - Fully opens the warp room and all secret entrances (**and sends checks**)&#13;
-- exec&#13;
-  - Simulates receiving a death link (if death link ever fails or crashes the game, then please report the bug with a description of what you were doing in game and the printed crash state # from the console)&#13;
-- exec \&lt;event id\&gt; [event parameter 1] [event parameter 2] ...&#13;
-  - For if you want to experiment with the game's internal event system. This will send an event of id \&lt;event id\&gt; to crash, and you can optionally pass some parameters along with the event&#13;
-  - This is VERY prone to crashing the game&#13;
-  - Make sure you use save states taken from **after** you connected with this version of the client&#13;
-&#13;
-### Known Issues:&#13;
-- The client seems to have a small chance to freeze the game on connection (just try again and it'll be fine)</content>
-    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0-pre"/>
-  </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.2</id>
     <title>Dark Cloud 1 v0.5.0</title>
@@ -1225,5 +1196,66 @@ Shirley watts if randomized suppliers&#13;
 &#13;
 Locations for chemist now all only require warehouse access because chem station is no longer locked behind rank restriction.</content>
     <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JBtheShadow/APManuals/releases/tag/v1.0.0</id>
+    <title>Manual_FantasyLife_JBtheShadow v1.0.0</title>
+    <updated>2026-05-28T16:26:02+00:00</updated>
+    <author>
+      <name>JBtheShadow</name>
+    </author>
+    <content>After almost an entire year I finally got around to updating this manual! Unfortunately it has some changes that aren't backwards compatible, so you'll have to update your yamls. Here's what changed:&#13;
+&#13;
+* Wish Hunt and Life Mastery are no longer separate goals;&#13;
+  * You can toggle them as required for goaling much like you could with main story and DLC;&#13;
+* Story locations no longer split between chapters and intermissions;&#13;
+  * Now all intermissions are grouped with their preceeding chapters;&#13;
+* Story locations, both vanilla and DLC, can be toggled off;&#13;
+  * Maybe you don't want the freebies from things you're forced to do anyway?&#13;
+  * Maybe you found a way to use the manual with an existing save instead?&#13;
+  * Whichever the case, it's an option now!&#13;
+* You can toggle if progressive chapters get included in the multiworld pool rather than being fixed placements;&#13;
+* Wish Hunt cap has been increased to 1000;&#13;
+* Wish Hunt has an option of forcing lost wishes to be local;&#13;
+* The Demi-Creator rank has been logically merged with the Creator rank;&#13;
+* Fast progressive licenses have been removed;&#13;
+* You can customize which licenses will be tracked and available;&#13;
+  * Good for those solo life playthroughs;&#13;
+  * Logic will account for unavailable lives as follows:&#13;
+    * If it's a challenge or crafting location where the main life is included but the additional requirement life is not, the location will still be included;&#13;
+      * You will be free to switch to the unavailable life for the purposes of requirements;&#13;
+    * Otherwise, the location shouldn't show up;&#13;
+* Life challenges and crafting were added as locations;&#13;
+* Settings for other requests were altered slightly but function similarly to before;&#13;
+* You can further customize which bliss bonuses will be available;&#13;
+* Locations for "reach level 15 in X skills" have been removed;&#13;
+* Other locations based on tracked bliss have been added or altered;&#13;
+* You can now add level packs when including level up and skill level up locations;&#13;
+  * Level packs introduce logical gating to reduce the odds of, for example, you having to increase your Longsword skill all the way up to level 15 because of a hinted item as if it were a sphere 1 location;&#13;
+* Item restrictions were reworked to be based on progressive item rarity;&#13;
+  * 0 star items are free, anything higher needs their star ranking in progressive items;&#13;
+  * All forms of consumable items have been condensed into one category, consumables, rather than split among their various effects;&#13;
+    * Easier to track this way, especially for items that did more than one thing;&#13;
+* Shops and shop keys have been included;&#13;
+* Red chest loot has been included;&#13;
+  * Since red chests have drop tables per area, each entry on each table has been made a location;&#13;
+  * Ability to exclude DLC chests, or just to exclude Ancient Tower ones;&#13;
+* Cave passes have been included;&#13;
+  * It's a prototype of map access randomization, similar to OSRS's AP and its chunk randomization;&#13;
+  * Currently only restricts access to general caves, grottos and underground locations;&#13;
+* A handful of DLC features now have an extra toggle to allow for more fine tuning;&#13;
+  * For example, wanna include every bliss bonus in the pool but not deal with anything else DLC-wise? You can!&#13;
+ &#13;
+With the amount of changes I thought it warranted a bump in the major version. There's more I would have liked to add but given how long it's been since the last update, and also the fact I'm not sure how much longer I would have needed for those things, maybe it's time I at least upload something that's "working". Hopefully working, ha...&#13;
+&#13;
+Some of the things I still want to do are:&#13;
+* Include other types of chests (purple, invisible, master)&#13;
+* Include an alternative to challenges or crafting locations in the form of tasks&#13;
+  * Similar scope, collect X items or fight X enemies and the like;&#13;
+* Add more goal requirements;&#13;
+* Add template yamls for different setups, like different game modes;&#13;
+* Look into other ways to allow a playthrough from an existing save;&#13;
+* Look into other improvements;</content>
+    <link href="https://github.com/JBtheShadow/APManuals/releases/tag/v1.0.0"/>
   </entry>
 </feed>
