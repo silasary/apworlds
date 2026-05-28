@@ -6,7 +6,7 @@ multiworld, and mission completions are the location checks.
 
 
 ## Downloads
-- <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.3.6/ksp1.apworld">Latest Version (0.3.6)</a>
+- <a href="https://github.com/nickdavies/Archipelago/releases/download/v999.0.1-experimental/ksp1.apworld">Latest Version (999.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
