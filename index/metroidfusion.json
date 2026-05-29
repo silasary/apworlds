@@ -313,6 +313,20 @@
       "version_simple": "1.22.3",
       "world_version": "1.22.3"
     },
+    "v1.22.4": {
+      "created_at": "2026-05-29T11:32:33Z",
+      "description": "## Changes\r\n\r\n* Fix another longstanding logic issue expecting you to descend s2 without hi/space jump in a non-ponr yaml\r\n* Fix expected reverse access to charge core arena without morph (to kill the stabiliser)\r\n* Open the issues section on GitHub, set up two templates, and remove the three default templates\r\n* Fix a logic bug with boss immunity handling, mainly known to affect Nettori (@NPCPotPie)\r\n* Actually upload the right version this time \ud83d\ude05 \r\n\r\nSetup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)",
+      "download_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.22.4/metroidfusion.apworld",
+      "has_manifest": true,
+      "hash_sha256": "393543f0af048962a6444f5bb3c06d655e1baf4933b16d861eab3b2a15ac66e2",
+      "html_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.4",
+      "size": 394204,
+      "source_url": "https://api.github.com/repos/StalledStorm/ArchipelagoMine",
+      "tag": "v1.22.4",
+      "title": "Metroid Fusion APWorld v1.22.4",
+      "version_simple": "1.22.4",
+      "world_version": "1.22.4"
+    },
     "v18": {
       "created_at": "2026-03-17T20:17:11Z",
       "description": "## New\r\nAdded a new option 'Nerf Geron Weaknesses'. This option is set to false by default. When this option is enabled:\r\n- Stabilisers can only be defeated with Missiles, Charge Beam, or Speed Booster\r\n- Small Gerons can only be defeated with Missiles or Speed Booster\r\n- Medium Gerons can only be defeated with Super Missiles or Speed Booster\r\n- Large Gerons can only be defeated with Power Bombs or Speed Booster\r\n- All Gerons are immune to screw attack, and all except for Large are immune to power bombs.\r\n\r\n## Changes\r\n- Implemented various minor updates to logic, courtesy of JaggerG\r\n- Fixed a bug causing the game to be unpatchable, courtesy of Snowflav_\r\n- - This was caused by items from other worlds containing certain characters, such as square brackets [] (one common world for this was Peggle)\r\n- Updated logic to account for 'Nerf Geron Weaknesses' being enabled/disabled\r\n- Updated mars_patcher to 0.12.0, courtesy of miepee. This brings various room renames, the relevant ones are:\r\n- - Sector 1 (SRX) Ridley Arena -> Sector 1 Neo-Ridley Arena\r\n- - Sector 2 (TRO) Zoro Zig-Zag -> Sector 2 (TRO) Zig-Zag-Zone\r\n- - Sector 3 (PYR) Glass Tube to Sector 5 (ARC) -> Sector 3 (PYR) Westbound Glass Tube\r\n- - Sector 4 (AQA) Cargo Hold to Sector 5 (ARC) -> Sector 4 (AQA) Cargo Hold\r\n- - Sector 5 (ARC) Flooded Airlock to Sector 4 (AQA) -> Sector 5 (ARC) Flooded Airlock\r\n- The new mars_patcher version has also changed the hatch graphics, in order to be more accessible to color blind people. \r\n\r\nSetup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)",

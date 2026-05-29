@@ -2,185 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-29T07:27:58.816302+00:00</updated>
+  <updated>2026-05-29T13:11:21.349842+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.2</id>
-    <title>Laika: Aged Through Blood v0.1.0</title>
-    <updated>2026-05-23T09:32:36+00:00</updated>
-    <author>
-      <name>Seras</name>
-    </author>
-    <content># Laika: Aged Through Blood Archipelago v1.2 Update Notes&#13;
-&#13;
-The wasteland has grown a little stranger, a little cleaner, and a lot more connected.&#13;
-&#13;
-This update is a major support, polish, and stability pass for the Laika Archipelago randomizer. It adds Universal Tracker support, improves item and quest logic, cleans up the client, and fixes several edge cases that could make the road rougher than intended.&#13;
-&#13;
-# Universal Tracker Support!&#13;
-Universal Tracker support is now included.&#13;
-&#13;
-Players can now use Universal Tracker to view Laika’s world map, see randomized check locations, and follow their current area as they travel across the wasteland. The tracker includes maps for all major regions, including Where We Live, Where Birds Lurk, Where All Was Lost, The Big Tree, Floating City, and more.&#13;
-&#13;
-The tracker now updates based on the player’s current in-game region. The opening tutorial route is also handled separately, so the tracker should stay on the tutorial map at the start of the game and then switch to normal areas after Rage and Sorrow.&#13;
-&#13;
-Universal Tracker’s `/explain` command is also supported for Laika locations, giving players a clearer breakdown of what they still need for quests, bosses, key items, map pieces, and other checks.&#13;
-&#13;
-# New and Expanded Location Support&#13;
-Several missing or previously untracked checks have been added to the randomizer.&#13;
-&#13;
-Newly supported checks include things like:&#13;
-```Key Item: Radio Transmitter&#13;
-Key Item: Iris&#13;
-Key Item: Large Seed&#13;
-Key Item: Moon Blossom&#13;
-Key Item: Pads&#13;
-Blueprint: Rocket Launcher&#13;
-Additional cassette rewards&#13;
-Additional weapon crafting materials&#13;
-```&#13;
-&#13;
-Radio Transmitter is now properly treated as a Where Birds Lurk pickup and is required for the final progression path.&#13;
-&#13;
-Several cassette tapes that were previously bundled or missing from tracker logic are now represented as proper Archipelago checks.&#13;
-&#13;
-# Improved Logic and Progression&#13;
-Progression logic has been tightened across the world so the randomizer better matches what Laika can actually do.&#13;
-&#13;
-Notable logic updates include:&#13;
-```Diplomacy now requires all three Pit Keys and the Mountainheart Card.&#13;
-A Caterpillar Made of Sadness now also requires the Mountainheart Card and all three Pit Keys.&#13;
-Clean Your Beak and Flute Cleaning Brush have stricter quest requirements.&#13;
-Radio Transmitter is now part of the late-game progression chain.&#13;
-Two-Beak God now requires the Radio Transmitter.&#13;
-Several cassette, key item, and quest checks were moved to more accurate requirements.&#13;
-```&#13;
-&#13;
-This should reduce cases where the tracker or server thinks something is in logic before the player can actually do it.&#13;
-&#13;
-# Better Quest Item Handling&#13;
-Quest items should behave more reliably when received from Archipelago.&#13;
-&#13;
-This update improves handling for AP-granted quest items that are later turned in to NPCs, including extra protection for quest chains involving:&#13;
-```Iris&#13;
-Rainbow Pebble&#13;
-Birthday Invitation&#13;
-Jar Filled With Bugs&#13;
-Pads&#13;
-Moon Blossom&#13;
-Heartglaze Flower&#13;
-Jakob’s Ashes&#13;
-```&#13;
-&#13;
-The goal is to let vanilla quest logic still run correctly while preventing randomized quest items from being permanently lost, duplicated, or missed as checks.&#13;
-&#13;
-Heartglaze Flower still has special handling because the game expects the physical flower pickup to happen in a specific boss-room sequence.&#13;
-&#13;
-# Final Goal / Release Fix&#13;
-Goal completion should now be reported at the actual final ending sequence.&#13;
-&#13;
-Previously, defeating the final boss could send the location check, but the Archipelago game might not properly mark the slot as complete for release/goal purposes. v1.2 now reports completion during the final bomb/ending sequence, around the point where the credits are reached.&#13;
-&#13;
-This should fix cases where a player finished the game but the server did not release them.&#13;
-&#13;
-# Recent Activity and Hint Improvements&#13;
-The in-game Archipelago activity log has been improved.&#13;
-&#13;
-Hints should now display more cleanly, and duplicate bad hint messages like:&#13;
-`Item -1 at Location -1`&#13;
-&#13;
-should be suppressed when they come from tracker/text-client chat echoes.&#13;
-&#13;
-Item coloring has also been updated so newer key items, including Radio Transmitter, display with the correct category color.&#13;
-&#13;
-# Title Screen and Connection Polish&#13;
-The title screen Archipelago setup has received more polish.&#13;
-&#13;
-The AP connection panel, save-slot behavior, connection status text, DeathLink settings, Death Amnesty settings, and per-slot AP state handling have all been cleaned up.&#13;
-&#13;
-The mod now does a better job of binding AP settings to the correct save slot, reconnecting cleanly, and disconnecting when appropriate.&#13;
-&#13;
-# Weapon Mode and YAML Improvements&#13;
-The player YAML has been cleaned up to feel more release-ready and less prototype-like.&#13;
-&#13;
-Weapon Mode is now explained more clearly:&#13;
-```direct: weapons are sent as complete weapons&#13;
-crafting: most weapons are split into blueprint + unique material&#13;
-```&#13;
-&#13;
-DeathLink and Death Amnesty options are also documented more clearly, including the Death Amnesty count range.&#13;
-&#13;
-The old “Coco” item name has also been cleaned up to the more player-friendly:&#13;
-`Ingredient: Coconut Milk`&#13;
-&#13;
-# Code Refactor and Stability Work&#13;
-A large internal cleanup was done on the C# mod and APWorld.&#13;
-&#13;
-The C# client was split into cleaner files for:&#13;
-```Connection handling&#13;
-Packet handling&#13;
-Item grants&#13;
-Location checks&#13;
-DeathLink&#13;
-Universal Tracker&#13;
-Reconciliation&#13;
-Overlay display&#13;
-Title screen patches&#13;
-Quest patches&#13;
-Inventory patches&#13;
-Boss patches&#13;
-Cassette patches&#13;
-Map patches&#13;
-```&#13;
-&#13;
-The APWorld was also split and cleaned up with separate files for item pools, Universal Tracker setup, and logic explanations.&#13;
-&#13;
-This should make future fixes and features much easier to maintain.&#13;
-&#13;
-Phew! I believe that's everything? I'll try to make patches have less buffer in between to ensure the game has proper functionality after issues are discovered.&#13;
-&#13;
-There are still issues which are listed in the pins of the current issues on the Archipelago Discord. Please check there and ensure your issue isn't already reported.&#13;
-&#13;
-Otherwise, see you in the Wasteland! Please enjoy this new and improved patch!&#13;
-&lt;img width="300" height="228" alt="motelclerkidle1" src="https://github.com/user-attachments/assets/5fe65341-2a2b-41bd-9111-1d539ed29cc1" /&gt;&#13;
-</content>
-    <link href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/niieli/Niko-Archipelago/releases/tag/0.8.4</id>
-    <title>Here Comes Niko! v0.8.4</title>
-    <updated>2026-05-23T12:51:31+00:00</updated>
-    <author>
-      <name>nieli</name>
-    </author>
-    <content>## Logic&#13;
-- Added 'Swim Course' to "Public Pool - Clint (Chatsanity)"&#13;
-- Added 'AC Repair' to "Bathhouse - Moomy"&#13;
-- Added Textbox requirement for "Tadpole HQ - Ledge Above Elevator"&#13;
-- Added Textbox requirement for `Goal: hired`&#13;
-- Added Textbox requirement for "Chatsanity - Pepper" (didn't have one because of region changes)&#13;
-- Added Textbox requirement for "Chatsanity - Dispatcher" (didn't have one because of region changes)&#13;
-- Added 'Parasol Repair' to "Achievement - Bottled Up"&#13;
-- Changed "Achievement - Frog Fan" region from Tadpole HQ to Home&#13;
-- Fixed a few locations not respecting rules when `progressive_contact_list: false`&#13;
-## Installation&#13;
-1. Double click the apworld or open ArchipelagoLauncher and `Install APWorld`&#13;
-2. Open ArchipelagoLauncher &#13;
-3. `Generate Template Options` to get the yaml or use the one under the release&#13;
-&#13;
-## Playing&#13;
-1. Setup your yaml and put it in `...\Archipelago\Players`&#13;
-2. Click `Generate` on the ArchipelagoLauncher&#13;
-3. `...\Archipelago\output` should have a AP_XXX.zip&#13;
-4. Host locally via `Host` on the ArchipelagoLauncher OR Upload the zip to the [website](https://archipelago.gg/uploads)&#13;
-5. Follow the Install instructions for the [Mod](https://github.com/niieli/NikoArchipelagoMod?tab=readme-ov-file#installation)&#13;
-&#13;
-**Full Changelog**: https://github.com/niieli/Niko-Archipelago/compare/0.8.3...0.8.4</content>
-    <link href="https://github.com/niieli/Niko-Archipelago/releases/tag/0.8.4"/>
-  </entry>
   <entry>
     <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.2-fix3</id>
     <title>Rabbit and Steel v0.3.2</title>
@@ -1259,5 +1085,63 @@ This is for testing only. generation problems and more beware. UT is now support
 - ordered options&#13;
 - small logic updates</content>
     <link href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.0.0-Pre5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.4</id>
+    <title>Metroid Fusion v1.22.4</title>
+    <updated>2026-05-29T11:32:33+00:00</updated>
+    <author>
+      <name>StalledStorm</name>
+    </author>
+    <content>## Changes&#13;
+&#13;
+* Fix another longstanding logic issue expecting you to descend s2 without hi/space jump in a non-ponr yaml&#13;
+* Fix expected reverse access to charge core arena without morph (to kill the stabiliser)&#13;
+* Open the issues section on GitHub, set up two templates, and remove the three default templates&#13;
+* Fix a logic bug with boss immunity handling, mainly known to affect Nettori (@NPCPotPie)&#13;
+* Actually upload the right version this time 😅 &#13;
+&#13;
+Setup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)</content>
+    <link href="https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.33</id>
+    <title>Muse Dash v1.5.33</title>
+    <updated>2026-05-29T12:15:21+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content># Changes&#13;
+- Update songs to Touhou Mugakudan -V-&#13;
+&#13;
+# Installation&#13;
+## Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+&gt; You can find Muse Dash's folder by finding the game in your steam library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+&#13;
+### Windows&#13;
+1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Select Muse Dash in the list of games.&#13;
+   - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+3. Click install. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+### Linux&#13;
+1. Navigate to Muse Dash on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES="version=n,b" %command%`&#13;
+2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+   - You may need to give it permissions to execute.&#13;
+3. Select Muse Dash in the list of games.&#13;
+    - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+4. Click install. On first run, melonloader may install dotnet 6 in order to run.&#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+    &#13;
+### Mod Install&#13;
+1.Download `ArchipelagoMuseDash.zip`.&#13;
+2. Head to the Muse Dash folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.&#13;
+3. Extract the contents of the .zip file into mods. Ensure the files are not in a subfolder, this mod is not setup for that yet.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.33"/>
   </entry>
 </feed>
