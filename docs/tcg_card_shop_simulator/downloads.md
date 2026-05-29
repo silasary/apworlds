@@ -8,6 +8,9 @@
 #### v1.0.0.post2
 - <a href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre2/tcg_card_shop_simulator.apworld">https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre2/tcg_card_shop_simulator.apworld</a>
 
+#### v1.0.0rc5
+- <a href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre5/tcg_card_shop_simulator.apworld">https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre5/tcg_card_shop_simulator.apworld</a>
+
 #### v1.0.0rc4
 - <a href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre4/tcg_card_shop_simulator.apworld">https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/download/v1.0.0-Pre4/tcg_card_shop_simulator.apworld</a>
 
