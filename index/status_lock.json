@@ -1,11 +1,19 @@
 {
+  "authors": [
+    "Guigui0246",
+    "Elire, Astra, Vei (idea)"
+  ],
   "flags": [
     "unready"
   ],
-  "game": "",
+  "game": "Status Lock",
   "github": "https://github.com/guigui0246/StatusLock",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.0.1": {
       "created_at": "2025-11-24T00:28:37Z",
@@ -21,6 +29,21 @@
       "title": "Generation apworld (no client yet)",
       "version_simple": "0.0.1",
       "world_version": "0.0.1"
+    },
+    "v0.2.0": {
+      "created_at": "2026-05-29T14:27:35Z",
+      "description": "## Changes\r\n- Added gen checks (max 1 status lock per multiworld + user confirmation)\r\n- Added client (NOT AUTOMATIC _yet_, you need to do /copy_lines and paste that in the host console)\r\n- Disabled all filler goal, no filler/traps are generated at the moment to prevent overflowing the item pool\r\n",
+      "download_url": "https://github.com/guigui0246/StatusLock/releases/download/v0.2.0/status_lock.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c3acd7e912c0adb9f8b5bb9c4b6a03288db6a6d09ca98ab584421da3e6252644",
+      "html_url": "https://github.com/guigui0246/StatusLock/releases/tag/v0.2.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 14970314,
+      "source_url": "https://api.github.com/repos/guigui0246/StatusLock",
+      "tag": "v0.2.0",
+      "title": "Full client release",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }

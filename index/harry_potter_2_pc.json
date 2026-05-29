@@ -63,6 +63,20 @@
       "title": "v2.1.0",
       "version_simple": "2.1.0",
       "world_version": "2.1.0"
+    },
+    "v2.2.0": {
+      "created_at": "2026-05-29T15:12:10Z",
+      "description": "## v2.2.0\r\n\r\n### **New**\r\n- Sound randomizer: per-seed shuffle of in-game sound effects, with an optional no_footsteps mode that leaves Harry's footsteps unshuffled. Feedback cues (found-secret jingle, card pickups, AP toasts) are never randomized. Commands: /reroll_sounds, /restore_sounds.\r\n- Music randomizer: per-seed shuffle of music and jingles via on-disk file swap, now covering cutscene and menu music. Jingles only swap with jingles. Commands: /reroll_music, /restore_music.\r\n- Dialogue randomizer: shuffles voice lines within a single character or across all, with subtitles re-matched so captions read what you actually hear. Commands: /reroll_dialogue, /restore_dialogue.\r\n\r\n### Changes\r\n- Fred & George purchases now morph in place like the ingredient traders; the thrown Nimbus and Quidditch Armour keep their vanilla throw arc, so they no longer drop straight down and go missing (gated on quidditch upgrades).\r\n- Recurring in-game toast while the mod is disconnected from the client.\r\n- Client window now shows game connect/disconnect, and logs a loud error if the IPC listener port can't bind.\r\n- Moved the game IPC port to 42779 so a local Archipelago server no longer blocks the listener.\r\n\r\n### Fixes\r\n- Vanilla seeds now force Lumos and Flipendo into starting spells, fixing frequent generation failures (~22% -> <1%).\r\n- Fixed two open-castle logic bugs involving Flipendo.\r\n- Inbound DeathLink now waits out a settle window so it can no longer fire mid-cutscene and break movement.\r\n- Stuck ectoplasm is released so phase-through damage no longer persists.\r\n- \"Return to Entry Hall\" button is hidden during cutscenes and the vanilla intro.\r\n- Disconnect button now correctly reverts to Connect.",
+      "download_url": "https://github.com/Kryen112/HP2PC_AP/releases/download/v2.2.0/harry_potter_2_pc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8dbdd58812adbb181ea381aaaaae58bdf8cdb57fad5d60633f922d93961c221a",
+      "html_url": "https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.2.0",
+      "size": 97780,
+      "source_url": "https://api.github.com/repos/Kryen112/HP2PC_AP",
+      "tag": "v2.2.0",
+      "title": "v2.2.0",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0"
     }
   }
 }

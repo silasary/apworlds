@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Kryen112/HP2PC_AP/releases/download/v2.1.0/harry_potter_2_pc.apworld">Latest Version (2.1.0)</a>
+- <a href="https://github.com/Kryen112/HP2PC_AP/releases/download/v2.2.0/harry_potter_2_pc.apworld">Latest Version (2.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
