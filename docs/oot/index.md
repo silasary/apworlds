@@ -6,12 +6,12 @@ to rescue the Seven Sages, and then confront Ganondorf to save Hyrule!
 
 
 ## Downloads
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta4/oot.apworld">Latest Version (9.1.0b4)</a>
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta5/oot.apworld">Latest Version (9.1.0b5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Ocarina of Time">English</a>
 - <a href="de_Ocarina of Time">German</a>
+- <a href="en_Ocarina of Time">English</a>
 
 ## Setup Guide
 - <a href="setup_de">German</a>
