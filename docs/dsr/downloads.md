@@ -1,9 +1,12 @@
 # Dark Souls Remastered
 
 ## Latest
-- <a href="https://github.com/tathxo/DSAP/releases/download/v0.1.3/dsr.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/tathxo/DSAP/releases/download/v0.1.4/dsr.apworld">Latest Version (0.1.4)</a>
 
 ## All Versions
+
+#### v0.1.4
+- <a href="https://github.com/tathxo/DSAP/releases/download/v0.1.4/dsr.apworld">https://github.com/tathxo/DSAP/releases/download/v0.1.4/dsr.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/tathxo/DSAP/releases/download/v0.1.3/dsr.apworld">https://github.com/tathxo/DSAP/releases/download/v0.1.3/dsr.apworld</a>

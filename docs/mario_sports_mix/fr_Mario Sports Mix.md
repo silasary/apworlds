@@ -38,7 +38,7 @@ difficulté expert sur le terrain Stade Mario à la balle au prisonnier)
 Étant aux premiers stades du développement d'Archipelago pour Mario Sports Mix, de nombreuses options ajoutant des
 checks sont prévues à l'avenir, tel que :
 
-- Teamsanity
+- Charactersanity
 - Scoresanity
 - Stagesanity (terrains de jeu)
 - Les chemins annexes des tournois

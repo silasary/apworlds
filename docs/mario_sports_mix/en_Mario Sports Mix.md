@@ -45,7 +45,7 @@ Negative items include:
 - Alternate Paths
 - Scoresanity
 - Stagesanity
-- Teamsanity
+- Charactersanity
 - Party Mode
 
 

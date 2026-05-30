@@ -2,38 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-30T07:04:00.109552+00:00</updated>
+  <updated>2026-05-30T12:28:46.139362+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.5</id>
-    <title>CrossCode v0.8.5</title>
-    <updated>2026-05-24T09:10:34+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Changes to Mod&#13;
-&#13;
-* Added information about the following options to the Archipelago Info Menu: (@CodeTriangle, #69)&#13;
-  * **Shop Receive Mode**&#13;
-  * **Progressive Equipment**&#13;
-&#13;
-## Changes to Logic&#13;
-&#13;
-* Moved **Grand Krys'kajo** to the end of Gaia's Garden rather than the beginning. (@CodeTriangle, #66)&#13;
-* Made the quest **Gaia Defeat** require **East Gaia Pass** in addition to its current requirements. (@CodeTriangle, #66)&#13;
-* Made the quest **Raising the Steaks** require access to **Autumn's Fall** in addition to its current requirements. (@CodeTriangle, #66)&#13;
-* Made the quest **The Observatory** require **Guild Pass** instead of **Mine Pass**. (@CodeTriangle, #66).&#13;
-&#13;
-## Fixes to Mod&#13;
-&#13;
-* Fixed an issue where, when connecting to a world after having previously been connected to another world in the same play session, all of the locations from the previous world would be sent to the next world. (@CodeTriangle, #70)&#13;
-* Fixed an issue where, when selecting New Game+ options, the begin game button was disabled by default (@CodeTriangle, #69)&#13;
-* Fixed an issue where, when entering a shop with **Shop Receive Mode** set to **None**, no shop slots would be purchaseable. (@CodeTriangle, #69)</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.5"/>
-  </entry>
   <entry>
     <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.3</id>
     <title>CrossCode v0.9.0.post2</title>
@@ -1164,5 +1137,49 @@ Bug Fixes&#13;
   - Dpad-Up Banjo TipToe feature is now a ROM feature.&#13;
   - Review our [setup documentation](https://github.com/jjjj12212/Archipelago-BanjoTooie/blob/main/worlds/banjo_tooie/docs/setup_en.md) for recommended settings for the tested emulators.</content>
     <link href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/tag/V4.12.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.1.4</id>
+    <title>Dark Souls Remastered v0.1.4</title>
+    <updated>2026-05-30T10:42:45+00:00</updated>
+    <author>
+      <name>Noka</name>
+    </author>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <content># **Dark Souls Remastered Apworld &amp; Client v0.1.4**&#13;
+&#13;
+## More Goals, Multipliers, and Map Tracking&#13;
+&#13;
+### Version update -&gt; 0.1.4. Both apworld and client have updated. Client should be compatible with all 0.1.x generated apworlds.&#13;
+&#13;
+## New features:&#13;
+* More `goal_condition`s! Ornstein &amp; Smough, Manus. Added along with `After O+S` location group - to exclude if you're using the O+S goal; this will exclude all normally Post-Lordvessel checks. `/goalcheck` will tell you what your goal is.&#13;
+* Add `Soul Multiplier` and `Weight Multiplier` options - configurable via yaml option to be either be a static multiplier or require an option-defined number of "progressive" items to increase souls or reduce weight. Min/Max soul multipler is 20% to 500%, weight multiplier is 300% to 0%. Defaults are 100% for both and no such "progressive items". Soul multiplier changes via progressive item may not take effect until enemies are reloaded.&#13;
+* Tracker Map Auto Tabbing is available (and immediately available via Universal Tracker, using the Poptracker map pack). Controls also added to turn off sending this information from the client (e.g. for co-op).&#13;
+* Added `Item Lot Param` consistency check - should help catch issues if players didn't clean up their install after using a randomizer or other Param modifier (if they read the red error messages upon connect!)&#13;
+&#13;
+## Fixes:&#13;
+* Send boss fogwall checks if their respective boss is killed without passing through it. You can now safely cheese the bosses (or try weird fog wall skips)&#13;
+* Bonfire warp items (mainly used for debugging) weren't working, and Catacombs and Chasm of the Abyss were swapped. Warning: these items are still not normally placed, nor considered for logic.&#13;
+</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.1.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/RealMelwei/hyperrogue_archipelago/releases/tag/v0.2.0</id>
+    <title>HyperRogue v0.2.0</title>
+    <updated>2026-05-30T11:49:33+00:00</updated>
+    <author>
+      <name>RealMelwei</name>
+    </author>
+    <content>Version 0.2 is here!&#13;
+&#13;
+You can now add extra locations for 10, 25 and 50 treasures in each land. To make up for these, filler items were introduced:&#13;
+Currently, an adjustable percentage of filler items are replaced by Orbs in your starting inventory.&#13;
+More Filler items hopefully soon to follow.&#13;
+&#13;
+Also fixed two logic errors.</content>
+    <link href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/tag/v0.2.0"/>
   </entry>
 </feed>

@@ -1,9 +1,12 @@
 # HyperRogue
 
 ## Latest
-- <a href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/download/v0.1.3/hyperrogue.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/download/v0.2.0/hyperrogue.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/download/v0.2.0/hyperrogue.apworld">https://github.com/RealMelwei/hyperrogue_archipelago/releases/download/v0.2.0/hyperrogue.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/download/v0.1.3/hyperrogue.apworld">https://github.com/RealMelwei/hyperrogue_archipelago/releases/download/v0.1.3/hyperrogue.apworld</a>
