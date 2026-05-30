@@ -2,114 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-05-30T12:28:46.139362+00:00</updated>
+  <updated>2026-05-30T18:32:24.766686+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.3</id>
-    <title>CrossCode v0.9.0.post2</title>
-    <updated>2026-05-24T09:33:10+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Note&#13;
-&#13;
-This release includes everything from 0.8.5 (@CodeTriangle)&#13;
-&#13;
-## Fixes to Logic&#13;
-&#13;
-* Changed the requirement of the quest **Salty Detox** from **Lakeside Escort** to **Rooting for Power**. (@CodeTriangle, #67)&#13;
-* Made **Beach Fight** require access to the first fight against Son of the East in Grand Krys'kajo. (@CodeTriangle, #67)&#13;
-* Added a requirement on **Azure Archipelago Pass** to: (@kumquat-ir, #62)&#13;
-  * **Beach Fight**&#13;
-  * **Trial of Ascension**&#13;
-  * **Spiritual Drinks**&#13;
-  * **Salty Detox**&#13;
-  * **Wrath of Goat**&#13;
-  * **In Cawhoofs**&#13;
-  * **Riches with Fridges**&#13;
-  * **Lost and On the Run**&#13;
-  * **Trouble on the Highway**&#13;
-  * **Tremors of the Past**&#13;
-  * **Wetter Work**</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.0%2Bpre-release-1</id>
-    <title>Deltarune v2.0.0+pre.release.1</title>
-    <updated>2026-05-24T13:33:42+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <author>
-      <name>theemeraldsword85</name>
-    </author>
-    <author>
-      <name>Tenebrosful</name>
-    </author>
-    <author>
-      <name>Vintagix</name>
-    </author>
-    <author>
-      <name>Deadzi</name>
-    </author>
-    <author>
-      <name>Charaster</name>
-    </author>
-    <content>(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
-&#13;
-**&gt;&gt;&gt; This is an unstable pre-release. Unless you're testing, we recommend using version v1.2.1 instead. &lt;&lt;&lt;**</content>
-    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.0%2Bpre-release-1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Droppel/ReventureEndingRando/releases/tag/0.20.0</id>
-    <title>Reventure v0.20.0</title>
-    <updated>2026-05-24T15:28:45+00:00</updated>
-    <author>
-      <name>Droppel</name>
-    </author>
-    <content>THIS RELEASE IS PRE ALPHA. DO NOT USE IT OUTSIDE OF MULTIWORLDS SPECIFICALLY GENERATED TO TEST THIS. I'LL GET MAD IF YOU RUIN SOME MULTIWORLD WITH THIS BY ACCIDENT!&#13;
-&#13;
-Alright folks, I sort of did it. The Graph Update kinda works. This means:&#13;
-- Random Spawns!&#13;
-- Random Item Locations!&#13;
-- Reduced starting jump height!&#13;
-- Many more things we could do now!&#13;
-&#13;
-## How this works&#13;
-For various reasons (That I'd be happy to explain if anyone wants to know them), the only way I found to make the above possible, is by literally generating the logic based on randomized item locations. For this I built the [reventureregions](https://github.com/Droppel/reventurerust) tool. Given a YAML file, this tool then generates random spawn and item locations and then generates the corresponding logic. This logic is then appended to the yaml, allowing AP to create a valid world.&#13;
-&#13;
-## Step by Step&#13;
-1. Create your YAML, setting experimentalRegionGraph to true&#13;
-2. Run the reventureregions tool to generate the logic for your slot (This takes ~1 minute on my PC)&#13;
-3. The tool outputs the possible item locations (Due to the random item placement, some locations might be impossible). If this number is to low, you should remove the logic from your yaml and try again. Most of the time everything is possible.&#13;
-4. Give your yaml to the host&#13;
-5. The host needs to set reventure_options =&gt; allow_experimental to true in their host.yaml&#13;
-6. Generate your world&#13;
-7. Have fun&#13;
-&#13;
-This build likely contains various issues (Broken logic, or other bugs) still please report any that happen! And if anyone wants to take a look at the rust code please do! I'd love to discuss any improvements.</content>
-    <link href="https://github.com/Droppel/ReventureEndingRando/releases/tag/0.20.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.5</id>
-    <title>Pokemon Crystal v5.4.5</title>
-    <updated>2026-05-24T16:11:53+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-Since [5.4.4](https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.4)&#13;
-&#13;
-## Bug Fixes&#13;
-- Stop all player movement when triggering an event, preventing softlocks when an Ice Trap was active.&#13;
-&#13;
-_This release is backwards compatible with seeds generated on 5.4.0 or later. Some fixes are retroactive, re-patch your ROM to benefit from them._</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.5"/>
-  </entry>
   <entry>
     <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.6</id>
     <title>Donkey Kong 64 v1.5.6</title>
@@ -1181,5 +1078,104 @@ More Filler items hopefully soon to follow.&#13;
 &#13;
 Also fixed two logic errors.</content>
     <link href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WolfBoi008/Block-Tales/releases/tag/6.0.0</id>
+    <title>Manual_BlockTales_WolfBoi008 v6.0.0</title>
+    <updated>2026-05-30T13:32:29+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content>Here we go, finally caught up to the present day!&#13;
+# Known Issues&#13;
+None for now...&#13;
+# Changelog&#13;
+- **Added Chapter 5 Content.**&#13;
+  - This also includes increasing the counts of some Cards since some have additional copies in Chapter 5.&#13;
+- Fixed some BUX not having I Spy Logic when they should've, mainly within Chapter 4.&#13;
+- **Tweaked the logic of some Checks to remove all instances of `{CanReachLocation()}`, to minimize gen time as much as possible.**&#13;
+- Added a Check for the Ankh Item that's in the Temple of the Red Sun. (@FNatFmaster)&#13;
+- There are now 60 BUX in the Item pool instead of 50, since the game now has that many as of DEMO 5.&#13;
+- Added a Check for the Pirate Spirit enemy that Trotter summons in his boss battle.&#13;
+- Added some missing Cutscenes and other Checks regarding Cruel King DX.&#13;
+- Added Levelsanity for Chapters 4 and 5 and adjusted the existing Levelsanity following FNaF's documentation.&#13;
+  - This is subject to change depending on player feedback.&#13;
+- Actually fixed the Loyal Knight Check _for real_ this time.&#13;
+  - I accidentally changed the Category but not the Region.&#13;
+- Added Finn McCool Content. (@FNatFmaster)&#13;
+  - Related note: I finally beat him solo! Windforce is so good for him when you're alone, my god.&#13;
+- **Changed the logic of the Bizville BUX Shop. It now requires Chapter 4 to be completed along with the usual 50 BUX.**&#13;
+  - As a result, the BUX Shop will not be part of the Multiworld unless PostGoal Content is active or Chapter 5/The Pit is your Goal.&#13;
+- Potentially a few other miscellaneous changes.&#13;
+# What's Still Missing?&#13;
+- Some of Chapter 4 and 5's Chatsanity.&#13;
+  - Will likely add this in a patch when I have some more free time on my hands.&#13;
+- The BUX Shop in Chapter 5.&#13;
+  - This won't be added until more updates to the game come out. May try to add it in DEMO 6, depending on how many BUX get added by then.&#13;
+&#13;
+Thank you all for waiting for these last two major updates. It means a lot to me! I'm gonna go start my new job now and then take a nap, hope you all enjoy!</content>
+    <link href="https://github.com/WolfBoi008/Block-Tales/releases/tag/6.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/KScl/TyrianArchipelago/releases/tag/v1.0.5</id>
+    <title>Tyrian v1.0.5</title>
+    <updated>2026-05-30T14:17:34+00:00</updated>
+    <author>
+      <name>Kaito Sinclaire</name>
+    </author>
+    <content>This is a hotfix release, compatible with games generated with previous 1.0.x versions.&#13;
+&#13;
+## Changelog&#13;
+&#13;
+- Fixed not being able to connect to a game that was generated with shops disabled.&#13;
+- Fixed the world's smallest typo. (The C in "Zica SuperCharger" is actually supposed to be capitalized.)</content>
+    <link href="https://github.com/KScl/TyrianArchipelago/releases/tag/v1.0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.2.0</id>
+    <title>Refunct v1.2.0</title>
+    <updated>2026-05-30T14:44:58+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content># Version 1.2.0 - Memes and Fixes!&#13;
+Don't believe what the title says, there are no memes whatsoever.&#13;
+## Additions&#13;
+- Funny Bridge Game Minigame: inspired by Squid Game, can you pick the correct tiles and survive the RNG bridge? The prize: 1 check!&#13;
+- Clique Minigame: you know Clique? An Archipelago game all about pressing a button! There is one free item on the ~~desk~~ platform, and then another item for pressing the button. But the button activation item needs to be found first!&#13;
+- Just Clique: tired of Refunct? Enable this option and the *entire* game will *just* be Clique! &#13;
+- Two "testing" levels are added: one "frogger" and one "beat block". You can find them when you are connected to any Refunct game. Check them out if you have time and let me know what you think and if you have ideas :3&#13;
+## Fixes&#13;
+- Deathlinks are only sent when the last one was at least 3 seconds ago.&#13;
+- Flowers that are forced into minigames are now correctly replaced by traps or english/latin names.&#13;
+- Incremented max number of minigames to 14.&#13;
+&#13;
+Readme: https://github.com/spinerak/refunct-tas-archipelago/blob/master/README.md</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.2.1</id>
+    <title>Refunct v1.2.1</title>
+    <updated>2026-05-30T14:44:58+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content>### v1.2.0 -&gt; v1.2.1&#13;
+- Made flowers filler again (whoops)&#13;
+&#13;
+# Version 1.1.x-&gt;1.2.0 - Memes and Fixes!&#13;
+Don't believe what the title says, there are no memes whatsoever.&#13;
+## Additions&#13;
+- Funny Bridge Game Minigame: inspired by Squid Game, can you pick the correct tiles and survive the RNG bridge? The prize: 1 check!&#13;
+- Clique Minigame: you know Clique? An Archipelago game all about pressing a button! There is one free item on the ~~desk~~ platform, and then another item for pressing the button. But the button activation item needs to be found first!&#13;
+- Just Clique: tired of Refunct? Enable this option and the *entire* game will *just* be Clique! &#13;
+- Two "testing" levels are added: one "frogger" and one "beat block". You can find them when you are connected to any Refunct game. Check them out if you have time and let me know what you think and if you have ideas :3&#13;
+## Fixes&#13;
+- Deathlinks are only sent when the last one was at least 3 seconds ago.&#13;
+- Flowers that are forced into minigames are now correctly replaced by traps or english/latin names.&#13;
+- Incremented max number of minigames to 14.&#13;
+&#13;
+Readme: https://github.com/spinerak/refunct-tas-archipelago/blob/master/README.md</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.2.1"/>
   </entry>
 </feed>

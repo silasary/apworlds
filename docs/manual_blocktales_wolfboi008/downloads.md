@@ -11,6 +11,9 @@
 #### v6.0.0.post1
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-6.0.0-1/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-6.0.0-1/manual_blocktales_wolfboi008.apworld</a>
 
+#### v6.0.0
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/6.0.0/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/6.0.0/manual_blocktales_wolfboi008.apworld</a>
+
 #### v6.0.0rc2
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/6.0.0-RC2/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/6.0.0-RC2/manual_blocktales_wolfboi008.apworld</a>
 
