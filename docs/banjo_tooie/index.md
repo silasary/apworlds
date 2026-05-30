@@ -7,7 +7,7 @@ increased focus on puzzle-solving over the worlds of Banjo-Kazooie.
 
 
 ## Downloads
-- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.6/banjo_tooie.apworld">Latest Version (4.11.6)</a>
+- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.12.0/banjo_tooie.apworld">Latest Version (4.12.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

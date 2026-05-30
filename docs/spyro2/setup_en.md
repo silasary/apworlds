@@ -50,12 +50,13 @@ Please follow the options below corresponding to your choice of emulator. Linux 
 3. Extract the S2AP .zip file and note where S2AP.Desktop.exe is.
 4. Open Duckstation and load into Spyro 2: Ripto's Rage.
 5. In Duckstation, navigate to Settings > Game Properties > Console and select "Interpreter" under "Execution Mode".
-6. Start a new game (or if continuing an existing seed, load into that save file).
-7. Open S2AP.Desktop.exe, the Spyro 2 client.  You will likely want to do so as an administrator.
-8. In the top left of the Spyro 2 client, click the "burger" menu to open the settings page.
-9. Enter your host, slot, and optionally your password.
-10. Click Connect.
-11. Start playing!
+6. (Recommended) In Duckstation, navigate to Settings > Game Properties > Emulation and set Runahead to "Disabled". Filler items may not apply correctly if this is enabled.
+7. Start a new game (or if continuing an existing seed, load into that save file).
+8. Open S2AP.Desktop.exe, the Spyro 2 client.  You will likely want to do so as an administrator.
+9. In the top left of the Spyro 2 client, click the "burger" menu to open the settings page.
+10. Enter your host, slot, and optionally your password.
+11. Click Connect.
+12. Start playing!
 
 #### For BizHawk:
 
