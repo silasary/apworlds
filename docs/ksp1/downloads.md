@@ -8,6 +8,12 @@
 #### v999.0.1
 - <a href="https://github.com/nickdavies/Archipelago/releases/download/v999.0.1-experimental/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/v999.0.1-experimental/ksp1.apworld</a>
 
+#### v0.4.3
+- <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.4.3/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/v0.4.3/ksp1.apworld</a>
+
+#### v0.4.1
+- <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.4.1/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/v0.4.1/ksp1.apworld</a>
+
 #### v0.4.0
 - <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.4.0/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/v0.4.0/ksp1.apworld</a>
 
