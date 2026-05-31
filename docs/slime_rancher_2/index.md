@@ -9,7 +9,7 @@ arrive as items from across the multiworld.
 
 
 ## Downloads
-- <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.5.2/slime_rancher_2.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.6.0/slime_rancher_2.apworld">Latest Version (0.6.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
