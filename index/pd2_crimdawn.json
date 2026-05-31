@@ -510,6 +510,36 @@
       "title": "Criminal Dawn v0.7.0",
       "version_simple": "0.7.0",
       "world_version": "0.7.0"
+    },
+    "v0.7.0r2": {
+      "created_at": "2026-05-30T16:32:19Z",
+      "description": "The primary change for this update was moving more gameplay options out of the YAML and into the mod options, for easier tweaking and mid-game customisation (if needed). Updating to this version _should_ be safe for existing multiworlds (if you run into any issues it's pretty easy to downgrade!), but any worlds generated on v0.7.x **will not** be backwards compatible with clients and mods running v0.6.x.\r\n\r\n### Mod changes:\r\n- Reworked **Lethal Death Link** option into a proper death link toggle. You can now turn death link on, off, or swap to and from lethal mode in-game.\r\n  - Fixed bug where all players in a lobby could send death links simultaneously instead of just the host.\r\n  - Fixed lethal death link so it actually works as intended.\r\n- Added **Infinite Time** toggle to mod options, so you can enable or disable it depending on how you're feeling. Back in the Mesozoic era this used to add an additional Extra Time item, so the generator needed to be aware of it - that's not the case anymore.\r\n- Stealth only heists are now **disabled** by default. If you already disabled these heists, nothing will have changed. If you're a psychopath that actually enjoys getting Shadow Raid in the middle of a run, you will have to re-enable the stealth only heists.\r\n- *Very* minor tweaks to time gained per item for run lengths 3/4/6.\r\n- Score goal now gains 100 seconds per item instead of the _very specific_ 106 (max time reduced by 5 minutes).\r\n- Added Death Of Democracy campaign, featuring Elephant heists.\r\n  - Framing Frame day 3, Election Day bank, Big Oil day 2.\r\n- Added Gun Runners campaign, containing various heists with lootable weapons.\r\n  - Firestarter day 1, Aftershock, Brooklyn 10-10, Bomb: Dockyard, Midland Ranch, Border Crossing.\r\n- Added Stealth Mission campaign. Wh... why???\r\n  - Breakin' Feds, Yacht Heist, Murky Station, Shadow Raid, Car Shop.\r\n  - **This campaign is probably complete agony to play and will likely take many, MANY hours to complete.**\r\n- So, what's the deal with the Ace of Spades? I mean, you get 21 of them. That's not how many should be in a standard deck. This has been corrected.\r\n\r\n### APWorld changes:\r\n- Removed death link and infinite time options from the YAML.",
+      "download_url": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.7.0/pd2_crimdawn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5b9f0d7d0722ab8488184f211ba4dbb3d94edd4569762eff61ac7b34f4924a27",
+      "html_url": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v0.7.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 17323,
+      "source_url": "https://api.github.com/repos/CATEM1NAL/PD2-Criminal-Dawn",
+      "tag": "v0.7.0r2",
+      "title": "Criminal Dawn v0.7.0",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0.post2"
+    },
+    "v0.7.1": {
+      "created_at": "2026-05-30T22:13:39Z",
+      "description": "### Mod changes:\r\n- Fixed an issue with disabling heists that, in combination with the stealth heists now being disabled by default, caused the new stealth campaign to fail to validate ownership.\r\n\r\nNo APWorld changes since v0.7.0.",
+      "download_url": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.7.1/pd2_crimdawn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5b9f0d7d0722ab8488184f211ba4dbb3d94edd4569762eff61ac7b34f4924a27",
+      "html_url": "https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v0.7.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 17323,
+      "source_url": "https://api.github.com/repos/CATEM1NAL/PD2-Criminal-Dawn",
+      "tag": "v0.7.1",
+      "title": "Criminal Dawn v0.7.1",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0"
     }
   }
 }

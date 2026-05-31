@@ -4,7 +4,7 @@ Insert description of the world/game here.
 
 
 ## Downloads
-- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.9.11/tww3.apworld">Latest Version (0.9.11.post2)</a>
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.9.12/tww3.apworld">Latest Version (0.9.12)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
