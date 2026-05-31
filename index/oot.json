@@ -14,7 +14,8 @@
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
-    "world_version"
+    "world_version",
+    "world_version_full"
   ],
   "versions": {
     "9.0.0-alpha1": {
@@ -179,6 +180,21 @@
       "title": "v9.1.0-beta5",
       "version_simple": "9.1.0",
       "world_version": "9.1.0b5"
+    },
+    "v9.1.0-beta6": {
+      "created_at": "2026-05-31T13:00:03Z",
+      "description": "Updated OoT Randomizer APWorld, based on the original OoTR randomizer at https://github.com/OoTRandomizer/OoT-Randomizer, on par with the latest update v9.1.0.\r\n\r\nThis is a beta build and might still include bugs, please test it thoroughly before trusting it in your multiworlds.\r\n\r\nCompatible with beta 4 and 5.\r\n\r\n## Changes:\r\n\r\n### Chore:\r\n- File Menu now shows proper version (including beta tag) for easier identification\r\n\r\n### Fix:\r\n- Duplicated Key Rings\r\n- Missing Item IDs for Child Masks with precompleted mask quest\r\n- Skulltula Hints were not properly populated\r\n- Randomized Spawns in problematic locations\r\n\r\nPlease note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.\r\n\r\nNote: Still plenty of generation fails....i am working on it.",
+      "download_url": "https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta6/oot.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1990cbd278f89e3de3984685117a9b7c264098148c05d6b6e0b96ba9d9c8df46",
+      "html_url": "https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-beta6",
+      "minimum_ap_version": "0.6.4",
+      "size": 3173958,
+      "source_url": "https://api.github.com/repos/TreZc0/OoTR-APWorld",
+      "tag": "v9.1.0-beta6",
+      "title": "v9.1.0-beta6",
+      "version_simple": "9.1.0",
+      "world_version": "9.1.0b6"
     }
   }
 }
