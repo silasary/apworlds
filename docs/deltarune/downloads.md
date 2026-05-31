@@ -11,6 +11,9 @@
 #### v2.0.0+pre.release.1
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bpre-release-1/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bpre-release-1/deltarune.apworld</a>
 
+#### v2.0.0+pre.release.2a
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bpre-release-2a/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bpre-release-2a/deltarune.apworld</a>
+
 #### v2.0.0+pre.release.1c
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bpre-release-1c/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bpre-release-1c/deltarune.apworld</a>
 
