@@ -8,6 +8,9 @@
 #### v0.6.11
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.11/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.11/minit.apworld</a>
 
+#### v0.6.11
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld</a>
+
 #### v0.6.10
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.10/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.10/minit.apworld</a>
 

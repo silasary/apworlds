@@ -7,12 +7,10 @@ on a quest to vanquish the Dragonlord, and save the land from darkness!
 
 
 ## Downloads
-- <a href="https://github.com/Serpikmin/Archipelago-DragonWarrior/releases/download/V1.0.4/dragon_warrior.apworld">Latest Version (1.0.4)</a>
+- <a href="https://github.com/Serpikmin/Archipelago-DragonWarrior/releases/download/V1.0.5/dragon_warrior.apworld">Latest Version (1.0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Dragon Warrior">English</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 

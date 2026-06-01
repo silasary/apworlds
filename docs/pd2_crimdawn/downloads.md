@@ -14,6 +14,9 @@
 #### v0.7.0
 - <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.7.1/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.7.1/pd2_crimdawn.apworld</a>
 
+#### v0.7.0
+- <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.7.2/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.7.2/pd2_crimdawn.apworld</a>
+
 #### v0.6.11
 - <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.6.11/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v0.6.11/pd2_crimdawn.apworld</a>
 
