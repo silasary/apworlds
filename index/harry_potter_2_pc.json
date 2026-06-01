@@ -91,6 +91,20 @@
       "title": "v2.3.0",
       "version_simple": "2.3.0",
       "world_version": "2.3.0"
+    },
+    "v2.4.0": {
+      "created_at": "2026-06-01T11:46:55Z",
+      "description": "# HP2PC_AP v2.4.0\r\n\r\nReliability and correctness pass on top of v2.3.0.\r\n\r\n## Highlights\r\n- **Checks and the goal survive an AP outage.** The client re-sends unconfirmed checks and the mod replays its local ones on reconnect, all through the framework resend path. Goal completion replays too, and the item ledger merges on load instead of overwriting.\r\n- **The Drowsiness Draught Trap can't be cheesed with Shift.** Sprint is disabled while the trap is active, so the slow sticks. Also covers the ectoplasm and spider-web slows.\r\n- **The open-castle Great Hall endpoint is signposted once the goal unlocks.** A per-level toast points to it, and the goal panel and `/progress` then name it.\r\n\r\n## Improvements\r\n- Shift-to-run keeps its momentum through jumps, casts, and aiming, and a mid-air cast no longer cancels a fall.\r\n- The Quidditch shop gains a Duelling Club logic path. Open castle needs the Duelling Key; vanilla needs the full duel chain.\r\n\r\n## Fixes\r\n- Beat Par Time no longer credits sub-par spell-challenge runs. The real end score is captured at final-star pickup, so the check and Report Card both read true.\r\n- The duels and Quidditch goal rows show the full set size, not 1, so they no longer go green after one win.\r\n- Open-castle logic corrections, including Rictusempra now required on Bicorn routes that need it.\r\n\r\n## Upgrade notes\r\n- No new yaml options, so existing yaml files keep working unchanged.",
+      "download_url": "https://github.com/Kryen112/HP2PC_AP/releases/download/v2.4.0/harry_potter_2_pc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f28aa8bf688b7af2ec6c8bbbd6e7995c49bb08a662dfeb646d7d56a056a0060c",
+      "html_url": "https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.4.0",
+      "size": 103041,
+      "source_url": "https://api.github.com/repos/Kryen112/HP2PC_AP",
+      "tag": "v2.4.0",
+      "title": "v2.4.0",
+      "version_simple": "2.4.0",
+      "world_version": "2.4.0"
     }
   }
 }
