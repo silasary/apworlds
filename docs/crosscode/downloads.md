@@ -8,6 +8,9 @@
 #### v0.9.0.post2
 - <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0-pre.3/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0-pre.3/crosscode.apworld</a>
 
+#### v0.9.0
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0/crosscode.apworld</a>
+
 #### v0.9.0rc2
 - <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0-pre.2/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0-pre.2/crosscode.apworld</a>
 
