@@ -1,9 +1,12 @@
 # Paper Mario
 
 ## Latest
-- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld">Latest Version (0.6.4)</a>
+- <a href="https://github.com/icebound777/PMR_APWorld/releases/download/0.6.5/papermario.apworld">Latest Version (0.6.5)</a>
 
 ## All Versions
+
+#### v0.6.5
+- <a href="https://github.com/icebound777/PMR_APWorld/releases/download/0.6.5/papermario.apworld">https://github.com/icebound777/PMR_APWorld/releases/download/0.6.5/papermario.apworld</a>
 
 #### v0.6.4
 - <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld">https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld</a>

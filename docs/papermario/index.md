@@ -7,7 +7,7 @@ and venture through dangerous lands with the help of partners you meet along the
 
 
 ## Downloads
-- <a href="https://github.com/JKBSunshine/PMR_APWorld/releases/download/v0.6.4/papermario.apworld">Latest Version (0.6.4)</a>
+- <a href="https://github.com/icebound777/PMR_APWorld/releases/download/0.6.5/papermario.apworld">Latest Version (0.6.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
