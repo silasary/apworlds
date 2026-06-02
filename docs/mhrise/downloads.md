@@ -1,9 +1,12 @@
 # Monster Hunter Rise
 
 ## Latest
-- <a href="https://github.com/HillbillyDroid/MHRise-APWorld/releases/download/v0.1.0/mhrise.apworld">Latest Version (0.1.0)</a>
+- <a href="https://github.com/HillbillyDroid/MHRise-APWorld/releases/download/v0.1.1/mhrise.apworld">Latest Version (0.1.1)</a>
 
 ## All Versions
+
+#### v0.1.1
+- <a href="https://github.com/HillbillyDroid/MHRise-APWorld/releases/download/v0.1.1/mhrise.apworld">https://github.com/HillbillyDroid/MHRise-APWorld/releases/download/v0.1.1/mhrise.apworld</a>
 
 #### v0.1.0
 - <a href="https://github.com/HillbillyDroid/MHRise-APWorld/releases/download/v0.1.0/mhrise.apworld">https://github.com/HillbillyDroid/MHRise-APWorld/releases/download/v0.1.0/mhrise.apworld</a>

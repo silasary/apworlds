@@ -2,7 +2,7 @@
 
 - card sanity collection UI total not correct
 - achievement UI not checking if your at the level
-- Scanner Ids not synced
+- Scanner not working when recieved when screen open?????
 
 1.1 release
 

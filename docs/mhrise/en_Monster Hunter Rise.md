@@ -7,6 +7,18 @@ the options you need to configure and export a config file.
 
 ## What does randomization do to this game?
 
+There are **two game modes**, selected by the `Mode` option. They are
+mutually exclusive — a seed is one or the other. The Hunt-a-Thon mode is 
+intended for **existing nearly complete saves** while the Quest Randomizer
+is for **fresh saves** with nothing unlocked.
+
+### Hunt-A-Thon (`hunt_a_thon`, default)
+
+> **Play Hunt-A-Thon on an existing save.** The randomizer will
+> assign you targets based on your options and they could come from
+> end game. This mode can be made short and sync viable using the 
+> MonsterCount option.
+
 Hunting a large monster requires its **license**. Licenses are scattered
 across the multiworld as Archipelago items. Hunting a licensed monster
 sends a check to the AP server, which causes the multiworld to release
@@ -15,13 +27,35 @@ more items — including more licenses.
 The license requirement is a **soft gate**: the player can fight any
 monster, but the check only sends when the player holds the
 corresponding license. Hunting an unlicensed monster simply does
-nothing from Archipelago's perspective.
+nothing from Archipelago's perspective. Goal: hunt the goal elder
+dragon.
 
-> **A second mode — Quest Randomizer — is upcoming.** It will
-> hard-gate the village questboard with per-quest unlock items and
-> swap the boss monster of every village quest (with Comeuppance as
-> the fixed goal). Not in the current release; the per-monster
-> license model above is the only shipping mode for now.
+### Quest Randomizer (`quest_rando`)
+
+> **Play Quest Randomizer on a fresh save.** Clears are recorded
+> at the moment a quest is cleared, so a save that has already 
+> cleared quests will need to redo them.
+
+Every village quest in the pool has its **boss monster swapped** to a
+random other monster (chosen at generation time, applied in-game when
+you connect). So you might fight a Magnamalo quest and a Rathalos shows up
+instead.
+
+Each quest also gets an `Unlock: <quest>` Archipelago item. Clearing a
+quest sends **two AP checks**, but only when you hold that quest's
+`Unlock:` item (and, when weapons are enabled, the license for your
+equipped weapon type). This is a **soft gate** like Hunt-A-Thon: the
+game's own progression decides which quests are visible and clearable;
+Archipelago only registers the checks once you hold the correct items.
+
+The **goal** is clearing the village urgent quest,
+**Comeuppance** (vanilla Magnamalo) — its boss is randomized too when
+quest-monster swapping is on.
+
+The `RandomizeQuestMonsters` option (default **on**) controls the swap.
+Turn it off and the quests keep their vanilla bosses — the mode reduces
+to gating clear-checks on the `Unlock:` items without changing any
+fight. `MonsterCount` is ignored in this mode.
 
 ## What monsters are randomized?
 
@@ -70,7 +104,11 @@ tracker overlay.
 
 ## What is considered a "check"?
 
-Slaying or capturing a large monster in **single-player** while the
-player holds the relevant licenses (the monster's license, plus the
-current weapon's license when `IncludeWeapons` is on). Additional
-checks may be added in the future.
+- **Hunt-A-Thon:** slaying or capturing a large monster
+  while holding the relevant licenses (the monster's
+  license, plus the current weapon's license when `IncludeWeapons` is
+  on).
+- **Quest Randomizer:** clearing a pool village quest
+  while holding that quest's `Unlock:` item (plus the
+  current weapon's license when `IncludeWeapons` is on). Each clear
+  sends two checks.
