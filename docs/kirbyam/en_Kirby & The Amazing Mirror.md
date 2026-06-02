@@ -16,13 +16,12 @@
 
 
 - Progression & useful items which the player would normally acquire throughout the game have been moved around. (Mirror Shards, Maps, Vitality, Sound Player)
-- Normal copy ability enemies can be randomized to give a different copy ability.
+- Normal copy ability enemies can be randomized to give a different copy ability. When using `shuffled` mode, a spoiler log includes the enemy to ability assignments.
 - Enemies which typically do not give abilities can be randomized to give abilities.
 - Minny can be kept vanilla with the `ability_randomization_minny` toggle while still randomizing other enemy ability sources.
 - Enemies that cannot be swallowed are excluded from the enemy copy-ability randomization pool.
 - The chance for an enemy to not have a copy ability can be controlled via the `ability_randomization_no_ability_weight`
-- Ability statues (sometimes called ability trophies or ability stands) have a dedicated boolean toggle (`ability_randomization_statues`) that controls inclusion only. When enabled, included statues inherit the selected `ability_randomization_mode` (`off`, `shuffled`, or `completely_random`).
-- Randomized ability statues always grant an ability. They are not affected by `ability_randomization_no_ability_weight` or `ability_randomization_passive_enemies`, but they do respect `ability_randomization_minny`.
+- Ability statues (sometimes called ability trophies or ability stands) have a dedicated boolean toggle (`ability_randomization_statues`) that controls inclusion only; when enabled, included statues inherit the selected `ability_randomization_mode` (`off`, `shuffled`, or `completely_random`). They will always grant an ability and are not affected by `ability_randomization_no_ability_weight` or `ability_randomization_passive_enemies`. They do respect `ability_randomization_minny`. When using `shuffled` mode, a spoiler log includes the statue to ability assignments.
 
 
 
@@ -71,6 +70,7 @@ Use exact item/location names from this world (or the item groups listed above) 
   - `dark_mind`: Defeat Dark Mind to complete the seed.
   - `defeat_any_area_boss`: Defeat any one `* - Boss Defeat` location (Mustard Mountain, Moonlight Mansion, Candy Constellation, Olive Ocean, Peppermint Palace, Cabbage Cavern, Carrot Castle, or Radish Ruins). In this mode, collecting all Mirror Shards is not required by the goal mode itself.
     - Candy Constellation's Master Hand + Crazy Hand fight is treated as one pooled boss target (`BOSS_DEFEAT_3`).
+  - `defeat_random_hidden_area_boss`: Defeat one seed-selected hidden area boss. The selected target is carried in slot data as an internal boss-defeat key; normal player-facing output does not reveal the boss name, but spoiler output may.
 
 
 
@@ -94,7 +94,7 @@ You will not see an indicator in the game, instead you'll see you received an it
 
 
 
-Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, or defeat any one area boss in `defeat_any_area_boss` mode.
+Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, or defeat the seed-selected hidden area boss in `defeat_random_hidden_area_boss` mode.
 
 
 
