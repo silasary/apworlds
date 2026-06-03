@@ -1,9 +1,12 @@
 # Mario Kart 64
 
 ## Latest
-- <a href="https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.5/mk64.apworld">Latest Version (0.2.5)</a>
+- <a href="https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.6/mk64.apworld">Latest Version (0.2.6)</a>
 
 ## All Versions
+
+#### v0.2.6
+- <a href="https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.6/mk64.apworld">https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.6/mk64.apworld</a>
 
 #### v0.2.5
 - <a href="https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.5/mk64.apworld">https://github.com/Edsploration/MK64-Archipelago/releases/download/mk64/0.2.5/mk64.apworld</a>

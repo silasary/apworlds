@@ -2,41 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-02T19:18:48.644171+00:00</updated>
+  <updated>2026-06-03T00:45:56.891006+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.0rc4</id>
-    <title>Mario Kart Double Dash v1.0.0rc4</title>
-    <updated>2026-05-26T21:42:49+00:00</updated>
-    <author>
-      <name>aXu_AP</name>
-    </author>
-    <content>One more release candidate for the upcoming 1.0.0 update. Amount of bug reports has been getting low, so this might very well be the one!&#13;
-**NOTE**: This is prerelease version, there might be bugs!&#13;
-&#13;
-Known problems: incompatible with gecko codes.&#13;
-&#13;
-Download a new apworld and options template below and have a good one! If this is your first time playing MKDD AP, here's the [setup guide](docs/en_Setup.md) and [readme](https://github.com/aXu-AP/archipelago-double-dash).&#13;
-&#13;
-## New Features&#13;
-* See [v1.0.0rc1](https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.0rc1) for things new for v1.0.0&#13;
-## Fixes&#13;
-* Fix Dolphin cache problems&#13;
-  * This has been the biggest headache for the longest time, but I think now I have found a good solution. The client tries to invalidate the cache in 3 places: when entering the main menu, when entering character menu and as a last resort when pausing the game.&#13;
-* Fix item limit code not working&#13;
-  * Fix for fireball glitch wasn't complete due to an oversight!&#13;
-* Prevent checks in invalid state&#13;
-  * The client won't give you checks for doing time trials when time trials are disabled, or other bad states like opening the client during a race.&#13;
-* Fix TT pause menu times formatting&#13;
-* Adjust Mushroom City shortcut time limit&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/aXu-AP/archipelago-double-dash/compare/v1.0.0rc3...v1.0.0rc4</content>
-    <link href="https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.0rc4"/>
-  </entry>
   <entry>
     <id>https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.3</id>
     <title>R.E.P.O v0.4.1</title>
@@ -858,6 +828,7 @@ Docs here: https://github.com/jm771/ap_crossword/blob/main/README.md</content>
     </author>
     <content>Completely rewrote the .pack mod side of the archipelago and merged all 3 .packs together for ease of use.&#13;
 Fixed bug where checks only sent on connect and sanity checks didn't send.&#13;
+Fixed crash when loading a campaign.&#13;
 &#13;
 Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
 [FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
@@ -1048,5 +1019,56 @@ No .apworld changes made; works with older worlds/saves</content>
     <content>## Change log&#13;
 + Fix Memine completion</content>
     <link href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SWCreeperKing/PPDSArchipelago/releases/tag/v0.3.1</id>
+    <title>Placid Plastic Duck Simulator v0.3.0</title>
+    <updated>2026-06-02T19:19:35+00:00</updated>
+    <author>
+      <name>SW_CreeperKing</name>
+    </author>
+    <content>- [Client] Fixed a bug that snuck passed preventing connection</content>
+    <link href="https://github.com/SWCreeperKing/PPDSArchipelago/releases/tag/v0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0-pre2</id>
+    <title>Crash2 v0.4.0rc2</title>
+    <updated>2026-06-02T23:31:06+00:00</updated>
+    <author>
+      <name>Sim10XXX</name>
+    </author>
+    <author>
+      <name>alexdass</name>
+    </author>
+    <content>I was thinking if this should be a full release, but ya whatever. It took an absurd amount of effort to get this to its current state.&#13;
+&#13;
+Also make sure Emulation Settings &gt; Runahead is disabled&#13;
+&#13;
+## Gimmick Lock:&#13;
+- Option to lock certain level gimmicks behind an AP item, this includes:&#13;
+  - Jetpack&#13;
+  - Jetboard&#13;
+  - Polar&#13;
+  - Fireflies&#13;
+- Comes with customizable logic options&#13;
+&#13;
+## Location Groups:&#13;
+- Credit: @seanstan95 &#13;
+- 56 location groups, which includes groups for each level, each warp room, each location type (crystal, clear gem, etc.)&#13;
+- 4 item groups&#13;
+- Not yet compatible with fruitsanity locations&#13;
+&#13;
+## Bug Fixes:&#13;
+- Fixed many issues with deathlink&#13;
+- Fixed a logic bug where secret exits put the wrong secret entrance in logic&#13;
+- Fixed the client sending many warnings and sometimes crashing on connect&#13;
+&#13;
+## Known Issues:&#13;
+- Respawning at the last checkpoint without Polar in each Polar level can result in a double-death&#13;
+- Going through a Polar/Jetpack level without Polar/Jetpack unlocked can sometimes just randomly crash the game for some reason (game doesn't like you or something)&#13;
+&#13;
+### Note:&#13;
+- This version still has the same debug commands available from v0.4.0-pre</content>
+    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0-pre2"/>
   </entry>
 </feed>

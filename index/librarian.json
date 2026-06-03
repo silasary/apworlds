@@ -130,6 +130,21 @@
       "title": "1.1.0-beta3",
       "version_simple": "1.1.0",
       "world_version": "1.1.0b3"
+    },
+    "1.1.0-beta4": {
+      "created_at": "2026-06-02T23:25:45Z",
+      "description": "## Librarian-AP v1.1.0-beta4\r\n\r\nA stability beta, built on beta3. Drop-in install \u2014 see `INSTALL.txt` in the zip. Server host: use\r\nthe updated `librarian.apworld`.\r\n\r\n### Fixed\r\n- **The recurring crash \u2014 candidate fix.** I traced the long-standing random crash to the mod\r\n  re-applying shelf warding to *every* bookcase several times a second, which raced the game's\r\n  rendering of the book pile. This build only touches a shelf when its state actually changes,\r\n  removing that race (per-session shelf writes dropped from ~10,000 to a few dozen). I believe this\r\n  fixes it, but can't be sure until it has real playtime \u2014 **if the game still crashes, please send\r\n  the new `crash_trace.log` (see below) with your report.**\r\n- **Shelves stuck un-placeable until reload (e.g. 1M / 1N).** A shelf that should be unlocked could\r\n  stay un-placeable \u2014 you'd see it but couldn't place books on it \u2014 until you reloaded from the menu.\r\n  This was most likely when several shelves unlocked at once (e.g. a force-release). Fixed.\r\n\r\n### New\r\n- **Crash logging.** This build writes `Mods/Librarian-AP/crash_trace.log` while you play.\r\n  **If the game crashes, please send that file** along with the crash dump and `UE4SS.log` \u2014 it\r\n  records what the mod was doing right before the crash and is the key to confirming the fix.\r\n\r\n### Known issue\r\n- **A warded series can still occasionally show in the pile but not be pickable.** The book-pile\r\n  hiding can briefly disagree with which series are unlocked, leaving a series visible but not\r\n  grabbable. I'm working on this separately \u2014 if you see it, please report which **section** it's in.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta4/librarian.apworld",
+      "has_manifest": false,
+      "hash_sha256": "adddf8e8b9b9d041f57d5583752f6d179686590214752cfb65e40fa0b05124bf",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-beta4",
+      "prerelease": true,
+      "size": 50623,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-beta4",
+      "title": "1.1.0-beta4",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0b4"
     }
   }
 }
