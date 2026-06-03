@@ -4,7 +4,7 @@
 
 ### Required Software
 
-- Backlog Expedition [Webpage](https://archipelago-backlogexpedition-game.onrender.com/)
+- Backlog Expedition [Webpage](https://www.bex-ap.com/)
 - Backlog Expedition AP World from: [GitHub](https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases)
 
 ### Installation and Connecting

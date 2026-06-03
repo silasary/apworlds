@@ -6,7 +6,7 @@ the player has to complete objectives in their backlog of games/movies/series et
 
 
 ## Downloads
-- <a href="https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/download/v1.2.1/backlog_expedition.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/Nikkilites/Archipelago-BacklogExpedition-APWorld/releases/download/v3.0.0/backlog_expedition.apworld">Latest Version (3.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

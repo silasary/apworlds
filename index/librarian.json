@@ -160,6 +160,36 @@
       "title": "1.1.0-beta5",
       "version_simple": "1.1.0",
       "world_version": "1.1.0b5"
+    },
+    "1.1.0-beta6": {
+      "created_at": "2026-06-03T15:07:57Z",
+      "description": "## Librarian-AP v1.1.0-beta6\r\n\r\nBuilt on beta5 (the crash fix). Drop-in install \u2014 see `INSTALL.txt` in the zip. Server host: use the\r\nupdated `librarian.apworld`.\r\n\r\n### Fixed\r\n- **The rare book glitches.** A small number of books (a tester saw ~3 over a full 1\u20134 hour playthrough)\r\n  could briefly end up in a wrong state \u2014 **visible but not grabbable**, or **vanishing** when you\r\n  looked at / picked them up. This build hooks the game's own \"show this book\" moment and applies the\r\n  correct locked/unlocked state right then, so the two systems that manage books can't disagree. One\r\n  hook keeps a locked book hidden if the game tries to show it; the other re-shows an unlocked book if\r\n  it ever gets stuck invisible. The common case was already fine \u2014 this targets those rare edge cases.\r\n\r\n### Notes\r\n- All crash fixes from beta5 are unchanged.\r\n- New diagnostic switches (`BOOK_EVENT_HOOKS` / `BOOK_EVENT_ENFORCE` / `BOOK_EVENT_REVEAL`) in\r\n  `Mods/Librarian-AP/Scripts/diag_flags.lua`, default on. Leave them unless I ask.\r\n- These glitches are rare, so this is a **\"play and watch\"** build: if you still hit a\r\n  visible-but-not-grabbable book or a vanishing book, please report it (and which **series**) \u2014 the\r\n  build now logs every time it catches one, which is how we confirm the fix is working.",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta6/librarian.apworld",
+      "has_manifest": false,
+      "hash_sha256": "beb91848f7e74130b985607d36ffccc4c0e1d90bdd07cfb3e5a0302445b58acb",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-beta6",
+      "prerelease": true,
+      "size": 50624,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-beta6",
+      "title": "1.1.0-beta6",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0b6"
+    },
+    "1.1.0-beta6.1": {
+      "created_at": "2026-06-03T16:50:22Z",
+      "description": "## Librarian-AP v1.1.0-beta6.1\r\n\r\nA small follow-up to beta6. Drop-in install \u2014 see `INSTALL.txt` in the zip. Server host: use the updated\r\n`librarian.apworld`.\r\n\r\n### Improving\r\n- **The \"pickable book turns invisible\" glitch.** beta6's fix for this targeted the wrong moment\r\n  (confirmed from a real beta6 log). This build hooks the actual grab, so it (a) records exactly what's\r\n  making the book invisible \u2014 so we can nail the cause \u2014 and (b) restores a book that's wrongly hidden\r\n  when you grab it. If you still see an invisible book you can pick up, please report it; the log now\r\n  captures the cause every time.\r\n\r\n### Notes\r\n- Crash fixes and the rest of beta6 are unchanged.\r\n- **Please confirm your title screen shows `v1.1.0-beta6.1`** so we know you're testing this build \u2014 a\r\n  couple of recent reports turned out to be older installs that didn't overwrite.",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta6.1/librarian.apworld",
+      "has_manifest": false,
+      "hash_sha256": "cfc3ee80a19b656fb1697b5a5d1e4a31227fd39da263536422d785644fbd3b78",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-beta6.1",
+      "prerelease": true,
+      "size": 50755,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-beta6.1",
+      "title": "1.1.0-beta6.1",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0b6"
     }
   }
 }
