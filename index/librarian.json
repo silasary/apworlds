@@ -145,6 +145,21 @@
       "title": "1.1.0-beta4",
       "version_simple": "1.1.0",
       "world_version": "1.1.0b4"
+    },
+    "1.1.0-beta5": {
+      "created_at": "2026-06-03T04:24:17Z",
+      "description": "## Librarian-AP v1.1.0-beta5\r\n\r\nA stability beta, built on beta4. Drop-in install \u2014 see `INSTALL.txt` in the zip. Server host: use the\r\nupdated `librarian.apworld`.\r\n\r\n### Fixed\r\n- **The recurring crash, on the book-pile side.** beta4 fixed the *shelf*-warding half of the crash;\r\n  this build fixes the **book-pile** half. The mod was hiding/revealing warded books from a background\r\n  thread, which could collide with the game drawing the pile. That work now runs on the game's own\r\n  thread, where it can't collide. If the game still crashes, please send your `crash_trace.log` (see\r\n  below) \u2014 that's what confirms it.\r\n- **Crash when returning to the main menu.** Going to the menu reloads the world, and the pile-hiding\r\n  could briefly touch the old (already-freed) world mid-reload. Fixed with a guard that detects the\r\n  reload and skips that pass. Verified live.\r\n\r\n### New\r\n- Diagnostic switches `BOOK_ACTOR_GAMETHREAD` / `CASE_WARD_GAMETHREAD` in\r\n  `Mods/Librarian-AP/Scripts/diag_flags.lua` (default off). Leave them alone unless we ask \u2014 they\r\n  stage the next round of crash work.\r\n\r\n### Still being worked on\r\n- The **shelf and book-actor warding** still run on the background thread (their version of the race\r\n  is rarer, and beta4 already reduced it). A later build moves them over safely. If you hit a crash,\r\n  the `crash_trace.log` + crash dump + `UE4SS.log` together are the key \u2014 please send all three.\r\n- The beta4 known issue (a warded series occasionally **visible in the pile but not pickable**) may\r\n  still occur; please report which **section** if you see it.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta5/librarian.apworld",
+      "has_manifest": false,
+      "hash_sha256": "dd8a3b3b15f4517401f2759812e43904f2f4a240a9ff3417e16164cf549d8b14",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-beta5",
+      "prerelease": true,
+      "size": 50625,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-beta5",
+      "title": "1.1.0-beta5",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0b5"
     }
   }
 }
