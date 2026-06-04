@@ -1,9 +1,12 @@
 # Parkitect
 
 ## Latest
-- <a href="https://github.com/CrusherRL/AP_Parkitect/releases/download/1.3.5/parkitect.apworld">Latest Version (1.3.5)</a>
+- <a href="https://github.com/CrusherRL/AP_Parkitect_World/releases/download/1.4.0/parkitect.apworld">Latest Version (1.4.0)</a>
 
 ## All Versions
+
+#### v1.4.0
+- <a href="https://github.com/CrusherRL/AP_Parkitect_World/releases/download/1.4.0/parkitect.apworld">https://github.com/CrusherRL/AP_Parkitect_World/releases/download/1.4.0/parkitect.apworld</a>
 
 #### v1.3.5
 - <a href="https://github.com/CrusherRL/AP_Parkitect/releases/download/1.3.5/parkitect.apworld">https://github.com/CrusherRL/AP_Parkitect/releases/download/1.3.5/parkitect.apworld</a>

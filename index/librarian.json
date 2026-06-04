@@ -190,6 +190,21 @@
       "title": "1.1.0-beta6.1",
       "version_simple": "1.1.0",
       "world_version": "1.1.0b6"
+    },
+    "1.1.0-beta6.2": {
+      "created_at": "2026-06-04T13:31:51Z",
+      "description": "## Librarian-AP v1.1.0-beta6.2\r\n\r\nDrop-in install \u2014 see `INSTALL.txt` in the zip. Server host: use the updated `librarian.apworld`.\r\n\r\n### Improving\r\n- **The rare \"unlocked book is invisible (but you can still grab it)\" glitch.** We traced it to a book\r\n  whose data is correct but whose *appearance* got scrambled. This build continuously, quietly **redraws\r\n  your unlocked books** using the game's own redraw \u2014 so a book that goes invisible **fixes itself within a\r\n  second or two as you move around, with no need to find it or pick it up.** Redrawing a normal book does\r\n  nothing visible, so you shouldn't notice anything except fewer (ideally zero) invisible books.\r\n  - It's a *candidate* fix \u2014 if you still hit an invisible book, please report it. The build logs the\r\n    details automatically so we can pin it down.\r\n- **Clearer section signs.** A section's sign now glows **red** when none of its shelves are open,\r\n  **yellow** when some are, and turns **off** once it's fully open.\r\n\r\n### Notes\r\n- Crash fixes and the rest of beta6 are unchanged.\r\n- **Please confirm your title screen shows `v1.1.0-beta6.2`** so we know you're on this build.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta6.2/librarian.apworld",
+      "has_manifest": false,
+      "hash_sha256": "092d881ce5e9a6f9e3b2b8e6ee78519fcdf87b32ef4cca59898a5e9598718b97",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-beta6.2",
+      "prerelease": true,
+      "size": 50755,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-beta6.2",
+      "title": "1.1.0-beta6.2",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0b6"
     }
   }
 }

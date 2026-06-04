@@ -5,95 +5,11 @@ It covers configuration, item handling, scenarios, and how cross-game interactio
 
 ---
 
-## 🎲 What Does Randomization Affect?
-
-The randomizer can affect almost every system inside Parkitect, bringing chaos and fun to your park management experience! 🎡
-
-### Randomized Categories
-
-### 🎢 Player
-- Adjust **Game Speed** (adds new options: `4x`, `5x`, `6x`, `7x`, `7x, `9x`)
-- Add **Money**
-
-### 🧍 Guests
-- Spawn guests
-- Modify their money (+/-)
-- Kill (remove) them
-- Change their needs (hungry, thirsty, happy, tired, bathroom)
-- Cause **vomiting**/**nausea**
-- Turn them into **vandals**
-
-### 🧑‍🔧 Employees
-- Hire automatically
-- Set **tired** state
-- Send for **training**
-
-### ☁️ Weather
-- Set to **Rainy**, **Cloudy**, **Sunny** or **Stormy**
-
-### 🎠 Attractions
-- Trigger **breakdowns**
-- Apply **vouchers**
-
-### 🍔 Stalls / Shops
-- Re-deliver ingredients
-- Set **cleaning tasks**
-- Apply **vouchers**
-
-### 🗺️ Scenario
-- Add any **goal** with any **reward**
+## 🎲 [What Does Randomization Affect?](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-what-can-the-randomizer-change)
 
 ---
 
-## 🎯 Goals
-You can configure multiple win conditions for your scenario. Each goal can be adjusted individually:
-
-### 👥 Guest Goal
-Defines how many guests must be in your park to win.  
-- **Range:** 1 – 2500  
-- **Default:** 1000  
-
-### 💰 Money Goal
-Requires reaching a certain amount of money.  
-- **Range:** 50,000 – 500,000  
-- **Default:** 100,000  
-
-### 🎢 Roller Coaster Goal
-Number of roller coasters required.  
-- **Range:** 0 – 12  
-- **Default:** 4  
-
-### 😀 Excitement Rating
-Minimum excitement required for a coaster to count.  
-Set to **0** to disable this requirement.  
-- **Range:** 0 – 80  
-- **Default:** 50  
-
-### 😬 Intensity Rating
-Minimum intensity required for a coaster to count.  
-Set to **0** to disable this requirement.  
-- **Range:** 0 – 80  
-- **Default:** 50  
-
-### 📈 Ride Profit Goal
-Total profit required from all rides.  
-- **Range:** 0 – 10,000  
-- **Default:** 1500  
-
-### 🎟️ Park Tickets Goal
-Number of park tickets that must be sold.  
-- **Range:** 0 – 20,000  
-- **Default:** 0  
-
-### 🏪 Shops Goal
-Number of shops required in the park.  
-- **Range:** 0 – 100  
-- **Default:** 30  
-
-### 💵 Shop Profit Goal
-Total profit required from shops.  
-- **Range:** 0 – 3,000  
-- **Default:** 500  
+## 🎯 [Goals](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-goals)
 
 ---
 
@@ -102,20 +18,23 @@ Total profit required from shops.
 Certain Parkitect items can be sent across the network and affect other players’ parks.  
 Here’s what can appear in **other players’ worlds**:
 
-| Category | Item | Description |
-|-----------|------|-------------|
-| **Player** | 💰 Money (+/-) | Changes player’s park funds |
-| **Attractions** | 🎠 Attractions |
-| | ⚙️ Breakdowns | Random attraction malfunctions (excluding crashes & lightning strikes) |
-| | 🎟️ Vouchers ||
-| **Shops / Stalls** | 🍔 Stall/Shop ||
-| | 📦 Ingredient Re-Delivery | Triggers restocking |
-| | 🧹 Cleaning Job | Assigns janitors |
-| | 🎟️ Vouchers ||
-| **Employees (Traps)** | 💤 Tired, 🧠 Training, 🧑‍🔧 Hiring | Modifies employee states |
-| **Weather (Traps)** | 🌧️ Rainy / Stormy / Cloudy / Sunny | Alters weather conditions |
-| **Guests (Traps)** | 🧍 Spawning, 💀 Kill, 💸 Money (+/-), 🍔 Hungry, 🥤 Thirsty, 🚽 Toilet, 🤢 Vomit, 😡 Happiness, 😴 Tiredness, 🧨 Vandal | Alters guest states or spawns effects |
-| **Parkitect Mods** | Only from Collection | [Steam Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3647109901) |
+| Category              | Item                                                                                                                    | Description                                                                           |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| **Player**            | 💰 Money                                                                                                                | Adding player’s park funds                                                            |
+| **Attractions**       | 🎠 Itself                                                                                                               |
+|                       | ⚙️ Breakdowns                                                                                                           | Random attraction malfunctions (excluding crashes & lightning strikes)                |
+|                       | 🎟️ Vouchers                                                                                                            | Vouchers for a free ride                                                              |
+| **Shops / Stalls**    | 🍔 Itself                                                                                                               |                                                                                       |
+|                       | 📦 Ingredient Re-Delivery                                                                                               | Triggers restocking                                                                   |
+|                       | 🧹 Cleaning Job                                                                                                         | Assigns janitors to clean a Stall/Shop                                                |
+|                       | 🎟️ Vouchers                                                                                                            | Vouchers for a free drink/food                                                        |
+| **Utility Buidlings** | 🏭 Itself                                                                                                               |
+| **Employees (Traps)** | 💤 Tired, 🧠 Training, 🧑‍🔧 Hiring                                                                                     | Modifies employee states                                                              |
+| **Weather (Traps)**   | 🌧️ Rainy / Stormy / Cloudy / Sunny                                                                                     | Alters weather conditions                                                             |
+| **Guests (Traps)**    | 🧍 Spawning, 💀 Kill, 💸 Money (+/-), 🍔 Hungry, 🥤 Thirsty, 🚽 Toilet, 🤢 Vomit, 😡 Happiness, 😴 Tiredness, 🧨 Vandal | Alters guest states or spawns effects                                                 |
+| **Research (Traps)**  | Attraction/Shop/Decoration Theme                                                                                        | Put it into the research Pool                                                         |
+| **Statistics**        | All type of Statistics                                                                                                  |                                                                                       |
+| **Parkitect Mods**    | Only from Collection                                                                                                    | [Steam Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3647109901) |
 
 ---
 

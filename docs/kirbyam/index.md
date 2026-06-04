@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.2.0-rc6/kirbyam.apworld">Latest Version (0.2.0rc6)</a>
+- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.2.0-rc7/kirbyam.apworld">Latest Version (0.2.0rc7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

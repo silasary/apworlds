@@ -2,61 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-04T13:06:23.542466+00:00</updated>
+  <updated>2026-06-04T18:50:38.830608+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.4</id>
-    <title>Dark Cloud 1 v0.5.0</title>
-    <updated>2026-05-27T23:10:58+00:00</updated>
-    <author>
-      <name>Lizardman175</name>
-    </author>
-    <content># Dark Cloud 1 AP Rando v0.5.4&#13;
-&#13;
-## Changes&#13;
- - Further small improvements to generation time; doesn't impact tracker logic but likely results in different item placement so trackers may get confused for old worlds but should still work.&#13;
- - Fixed a rare client side bug preventing sending goal.&#13;
- - Fixed a bug preventing the final floor of the final dungeon from sending atla locations.&#13;
- &#13;
-Should work with old worlds. Games started on 0.5.2 will likely need to restart to continue, or have the server send the amount that were already received again with /send_multiple.</content>
-    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.3</id>
-    <title>Schedule I v3.6.3</title>
-    <updated>2026-05-28T03:24:25+00:00</updated>
-    <author>
-      <name>MacH8s</name>
-    </author>
-    <content>Non-breaking logic changes made: &#13;
-We need to cook is now 1 region and requires:&#13;
-Warehouse access when randomized level unlocks,&#13;
-Meg Cooley or Jerry Montero if randomized customers and NOT randomized suppliers,&#13;
-Shirley watts if randomized suppliers&#13;
-&#13;
-Locations for chemist now all only require warehouse access because chem station is no longer locked behind rank restriction.</content>
-    <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Starwort/suikapelago/releases/tag/1.1.0</id>
-    <title>Suikapelago v1.1.0</title>
-    <updated>2026-05-28T11:54:30+00:00</updated>
-    <author>
-      <name>Starwort</name>
-    </author>
-    <content>New features:&#13;
-- Extra scoresanity checks, inserted between original scoresanity checks; 5-10 get one extra score check each (5-1 to 9-1), 10-15 get two each (10-1 to 14-2), and 15-20 get 3 extra each, for a total of 30 additional checks&#13;
-- Deep link support for the client (so you should be able to click the link on the webhost and be sent straight to the game)&#13;
-- A setting for initial cooldown&#13;
-- `shuffle_fruit_order` now also shuffles the fruit sizes by default&#13;
-&#13;
-Bug fixes&#13;
-- Fixed a logic bug where Score threshold 20 would be considered sphere 1 by default</content>
-    <link href="https://github.com/Starwort/suikapelago/releases/tag/1.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/JBtheShadow/APManuals/releases/tag/v1.0.0</id>
     <title>Manual_FantasyLife_JBtheShadow v1.0.0</title>
@@ -549,6 +499,7 @@ reminder: UT is now supported.&#13;
     </author>
     <content>Fixed black arks buildings not registering in sanity.&#13;
 Added new in-game hinting for sanity (have not tested in spheres mode).&#13;
+Added missing Dark Elf buildings.&#13;
 &#13;
 Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
 [FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
@@ -687,13 +638,14 @@ Docs here: https://github.com/jm771/ap_crossword/blob/main/README.md</content>
   </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.13</id>
-    <title>Total War Warhammer 3 v0.9.13.post3</title>
+    <title>Total War Warhammer 3 v0.9.13.post4</title>
     <updated>2026-05-31T18:57:07+00:00</updated>
     <author>
       <name>jordansds</name>
     </author>
     <content>Completely rewrote the .pack mod side of the archipelago and merged all 3 .packs together for ease of use.&#13;
 Fixed bug where checks only sent on connect and sanity checks didn't send.&#13;
+Fixed ancillaries not sending.&#13;
 Fixed crash when loading a campaign.&#13;
 &#13;
 Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
@@ -1091,5 +1043,37 @@ Bug Fixes&#13;
 - Fixed a bug where in gemsanity, 400/400 could flash on screen many times&#13;
 - Fixed a typo in a gemsanity option (thanks to Slumpymaster!)</content>
     <link href="https://github.com/Uroogla/S2AP/releases/tag/2.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CrusherRL/AP_Parkitect_World/releases/tag/1.4.0</id>
+    <title>Parkitect v1.4.0</title>
+    <updated>2026-06-04T14:13:17+00:00</updated>
+    <author>
+      <name>CrusherRL</name>
+    </author>
+    <content>Well as usual you find all information at the [mod](https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.4.0)!&#13;
+</content>
+    <link href="https://github.com/CrusherRL/AP_Parkitect_World/releases/tag/1.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0-pre3</id>
+    <title>Crash2 v0.4.0rc3</title>
+    <updated>2026-06-04T15:28:44+00:00</updated>
+    <author>
+      <name>Sim10XXX</name>
+    </author>
+    <author>
+      <name>alexdass</name>
+    </author>
+    <content>Quick bug fixes&#13;
+&#13;
+## Bug Fixes:&#13;
+- Fixed warp randomizer not initializing properly&#13;
+- Defeating Komodo Bros and open secret entrances will now correctly sync when connecting on a new save file&#13;
+- Small optimization in the speedrun trick logic rules&#13;
+&#13;
+### Note:&#13;
+- This version still has the same debug commands available from v0.4.0-pre</content>
+    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0-pre3"/>
   </entry>
 </feed>
