@@ -1,9 +1,12 @@
 # Placid Plastic Duck Simulator
 
 ## Latest
-- <a href="https://github.com/SWCreeperKing/PPDSArchipelago/releases/download/v0.3.0/placidplasticducksim.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/SWCreeperKing/PPDSArchipelago/releases/download/v0.3.2/placidplasticducksim.apworld">Latest Version (0.3.2)</a>
 
 ## All Versions
+
+#### v0.3.2
+- <a href="https://github.com/SWCreeperKing/PPDSArchipelago/releases/download/v0.3.2/placidplasticducksim.apworld">https://github.com/SWCreeperKing/PPDSArchipelago/releases/download/v0.3.2/placidplasticducksim.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/SWCreeperKing/PPDSArchipelago/releases/download/v0.3.0/placidplasticducksim.apworld">https://github.com/SWCreeperKing/PPDSArchipelago/releases/download/v0.3.0/placidplasticducksim.apworld</a>
