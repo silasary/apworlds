@@ -304,6 +304,21 @@
       "version_simple": "2.0.1",
       "world_version": "2.0.1rc1"
     },
+    "2.1.0": {
+      "created_at": "2026-06-04T03:17:47Z",
+      "description": "This release modifies both the Duckstation client (S2AP.Desktop.exe) and the APWorld (including the Bizhawk client). This version is fully compatible with any seeds created using v2.0.1 - Release Candidate.\r\n\r\nNew Features:\r\n- Music Shuffle option\r\n- Streamer Music Mode - removes 2 songs that Youtube and Twitch incorrectly flag as matching other songs\r\n- A set of improvements programmed by Phoenix\r\n  - Logic Changes around world warps\r\n  - An option to remove the Professor\u2019s door lock in Autumn Plains\r\n  - A new trick to get on the Autumn Plains wall with nothing (\u201cAutumn Plains Wall with Hover\u201d/`logic_ap_wall_hover`, added to easy difficulty and above)\r\n- Added ability to shuffle any or all of an extra hit point (not used for progressive health logic), gem finder, and extended Sparx range into the item pool\r\n- Lazy Sparx Trap, which prevents Sparx from collecting gems for 30 seconds\r\n- New template preset options, programmed by Sonofkrom\r\n  - Using Generate Template Options and entering the Presets folder will produce a number of premade templates that serve as a good starting point for different play styles\r\n\r\nChanges\r\n- When trap chance > 0 but no traps are enabled, generation now proceeds with trap chance = 0\r\n- [Duckstation] Added setup warning to disable runahead, which could overwrite cosmetic changes\r\n\r\nBug Fixes\r\n- Fixed a bug where Sparx health upgrades obtained while not connected to the server could desync max Sparx health\r\n- [Bizhawk] Fixed a bug where dragon shores token locations did not send when they were not required for the goal\r\n- Fixed a bug that could corrupt cutscenes in a couple levels\r\n- Fixed a bug where Aquaria Tower sharks did not trigger deathlink\r\n- Fixed a bug where in gemsanity, 400/400 could flash on screen many times\r\n- Fixed a typo in a gemsanity option (thanks to Slumpymaster!)",
+      "download_url": "https://github.com/Uroogla/S2AP/releases/download/2.1.0/spyro2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "4f5379c99c47bffff94734a4674dbfa12e92ed07f393da65fd502d2a3d2bda2b",
+      "html_url": "https://github.com/Uroogla/S2AP/releases/tag/2.1.0",
+      "minimum_ap_version": "0.6.1",
+      "size": 73281,
+      "source_url": "https://api.github.com/repos/Uroogla/S2AP",
+      "tag": "2.1.0",
+      "title": "v2.1.0",
+      "version_simple": "2.1.0",
+      "world_version": "2.1.0"
+    },
     "full_gemsanity_31_10_25": {
       "created_at": "2025-10-11T17:37:59Z",
       "download_url": "https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld",
