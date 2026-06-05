@@ -1,12 +1,15 @@
 {
+  "authors": [
+    "Silvris"
+  ],
   "flags": [],
   "game": "Mega Man",
   "github": "https://github.com/Silvris/Archipelago",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "mm1_0.1.1": {
@@ -23,6 +26,21 @@
       "title": "Mega Man 1 APWorld v0.1.1",
       "version_simple": "0.1.1",
       "world_version": "0.1.1"
+    },
+    "mm1_0.1.2": {
+      "created_at": "2026-04-13T09:19:23Z",
+      "description": "# New Features\r\n* Enhanced Super Arm\r\n  * When enabled, Super Arm can be used without needing to remove a block. This can allow weakness randomization to use Super Arm damage logically.\r\n* Enhanced Hyper Bomb\r\n  * When enabled, a second A press will detonate an active Hyper Bomb.\r\n\r\n# Other Changes\r\n* Moved rules to Rule Builder.\r\n* Client is more resilient to collecting multiple consumable checks at once.\r\n\r\n# Bug Fixes\r\n* Fixed an issue where stage clear would not be set if the player did not collect any Bonus Balls.\r\n* Fixed an issue where consumables did not have rules placed on them, at all.\r\n* Fixed color compatibility with MM2 and MM3 (no longer reliant on load order).\r\n* Fixed an issue where setting Fire Man's palette via palette_shuffle would corrupt the graphics of the fire in his stage.\r\n* Fixed an issue where EnergyLink, despite being completely functional, did not appear in the template yaml or option creator.\r\n* Fixed an issue where your last saved Wily stage would be the one you just completed.",
+      "download_url": "https://github.com/Silvris/Archipelago/releases/download/mm1_0.1.2/mm1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0e0436b32210008070f985cb1dfbb74627061e090efb5f679e614e9a229dcca6",
+      "html_url": "https://github.com/Silvris/Archipelago/releases/tag/mm1_0.1.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 29011,
+      "source_url": "https://api.github.com/repos/Silvris/Archipelago",
+      "tag": "mm1_0.1.2",
+      "title": "Mega Man 1 APWorld v0.1.2",
+      "version_simple": "0.1.2",
+      "world_version": "0.1.2"
     }
   }
 }

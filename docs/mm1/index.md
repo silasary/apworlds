@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Silvris/Archipelago/releases/download/mm1_0.1.1/mm1.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/Silvris/Archipelago/releases/download/mm1_0.1.2/mm1.apworld">Latest Version (0.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
