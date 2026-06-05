@@ -2,55 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-05T07:34:09.525964+00:00</updated>
+  <updated>2026-06-05T13:03:28.708135+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Uroogla/S2AP/releases/tag/2.0.1-rc1</id>
-    <title>Spyro 2 v2.0.1rc1</title>
-    <updated>2026-05-29T20:28:26+00:00</updated>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>This release modifies both the Duckstation client (S2AP.Desktop.exe) and the APWorld. You must update both to use this version.&#13;
-&#13;
-This is a release candidate; it has been tested less than a full release, and feature are subject to change before the final release, which is expected in the near future.&#13;
-&#13;
-New Features:&#13;
-- Music Shuffle option&#13;
-- Logic Changes around world warps, an option to remove the Professor’s door lock in Autumn Plains, and a new trick to get on the Autumn Plains wall with nothing (“Autumn Plains Wall with Hover”/`logic_ap_wall_hover`, added to easy difficulty and above), programmed by Phoenix&#13;
-- New options around Sparx powers&#13;
-- Lazy Sparx Trap&#13;
-&#13;
-Changes&#13;
-- When trap chance &gt; 0 but no traps are enabled, generation now proceeds with trap chance = 0&#13;
-- [Duckstation] Added setup warning to disable runahead, which could overwrite cosmetic changes.&#13;
-&#13;
-Bug Fixes&#13;
-- Fixed a bug where Sparx health upgrades obtained while not connected could desync max Sparx health&#13;
-- [Bizhawk] Fixed a bug where dragon shores token locations did not send when they were not required for the goal.&#13;
-- Fixed a bug that could corrupt cutscenes in a couple levels&#13;
-- Fixed a bug where Aquaria Tower sharks did not trigger deathlink&#13;
-- Fixed a bug where in gemsanity, 400/400 could flash on screen many times&#13;
-- Fixed a typo in a gemsanity option (thanks to Slumpymaster!)</content>
-    <link href="https://github.com/Uroogla/S2AP/releases/tag/2.0.1-rc1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.4.0-beta</id>
-    <title>Dicey Dungeons v0.4.0b0</title>
-    <updated>2026-05-29T23:24:13+00:00</updated>
-    <author>
-      <name>Fylcoast</name>
-    </author>
-    <content>## What's Changed&#13;
-* Robot by @Fylcoast in https://github.com/Fylcoast/AP_diceydungeons/pull/84&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.3.2-beta...v0.4.0-beta</content>
-    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.4.0-beta"/>
-  </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.0%2Bpre-release-2</id>
     <title>Deltarune v2.0.0+pre.release.2</title>
@@ -985,5 +941,61 @@ APWORLD INSTALLATION INSTRUCTIONS:&#13;
 POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
 - copy "Hunie Pop Archipelago poptracker.zip" to your poptracker "packs" folder</content>
     <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V2.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DrNjitram/ArchipelagoSupra/releases/tag/V0.3.0</id>
+    <title>Supraland v0.1.0</title>
+    <updated>2026-06-05T07:54:27+00:00</updated>
+    <author>
+      <name>Dr. Njitram</name>
+    </author>
+    <author>
+      <name>Gummy</name>
+    </author>
+    <content>Removed support for Blue ville theft.&#13;
+Bump required AP to 0.6.7</content>
+    <link href="https://github.com/DrNjitram/ArchipelagoSupra/releases/tag/V0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.10.0</id>
+    <title>Casualties: Unknown v0.10.0</title>
+    <updated>2026-06-05T09:31:34+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.10.0&#13;
+This update is NOT compatible with worlds generated on previous versions!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
+&#13;
+## Additions&#13;
+- Update to Casualties: Unknown V7.0.1&#13;
+- EnergyLink and RingLink support [APWorld Change]&#13;
+	- You can sell items to traders and deposit the trade value into either EnergyLink or RingLink currency&#13;
+	- You can also withdrawl from either currency pool to buy something from a trader&#13;
+- SleepLink support [APWorld Change]&#13;
+	- Originally a joke from the Stardew Valley thread, this is the first game to actually impliment this dumb idea&#13;
+	- Yes, it is exactly what it sounds like&#13;
+- The AED and Manual Defibrilator minigames now have items when Randomize Minigames is set to Individual&#13;
+## Changes&#13;
+- The Goal Depth must now be over 1500m for the five extra padding Depth Extenders to be added to the itempool [APWorld Change]&#13;
+- The default amount of Archipelago Items in the template YAML is now 40 [APWorld Change]&#13;
+- Archipelago Items now have logical requirements when Randomize Minigames is on [APWorld Change]&#13;
+	- The first 20% or 15 Archipelago Items are free, whichever is higher&#13;
+	- The next 40% of Archipelago Items require EITHER Lockpicking or Keypad Minigames&#13;
+	- The last 40% requires BOTH Lockpicking or Keypad Minigames&#13;
+	- If Randomize Minigames is set to As One, the last 80% is locked behind the Minigames item&#13;
+	- These changes are purely logical to help getting these minigames sooner in seeds, nothing stops you from going out of logic in-game&#13;
+## Fixes&#13;
+- Having Deathlink set to limbdamage no longer causes a lang error when getting Deathlinked&#13;
+- Fixed Starting Inventory from Pool doing nothing (#45) [APWorld Change]&#13;
+- Fixed unique Layer Unlocks still existing when the goal is Escape Overgrown Depths [APWorld Change]&#13;
+## Known Issues&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed&#13;
+- The "Saline Bottle Recipe" item unlocks the Saline liquid recipe, not the container recipe</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.10.0"/>
   </entry>
 </feed>
