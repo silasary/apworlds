@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/JBtheShadow/APManuals/releases/download/v1.0.0/manual_fantasylife_jbtheshadow.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/JBtheShadow/APManuals/releases/download/v1.0.1/manual_fantasylife_jbtheshadow.apworld">Latest Version (1.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
