@@ -21,9 +21,10 @@ This APWorld allows Manic Miners to be played in the Archipelago environment, ei
 ### What is the goal of a randomized run of Manic Miners? 
 
 The current options are:
-- Total Levels Cleared: Complete X of the available levels. 
-- Individual Target Time: Complete X available levels under the par time. Different difficulties of par time are available. 
-- Total Target Time: Complete all available levels, and achieve a total time under par. 
+- Clear Levels: Complete X of the available levels. 
+- Beat Par Times: Complete X available levels under the par time. Different difficulties of par time are available. 
+- Beat Crystal Targets: Complete X available levels with at least a certain number of crystals. Different percentages of crystal completions are configurable. 
+- Coordinate Hunt: Unlock and clear the final level. To unlock it, find X copies of the "Transporter Coordinates", either by clearing other levels or loose in the multiworld.
 
 ### What campaigns are supported?
 
@@ -35,7 +36,9 @@ The first three campaigns each have 25 levels, while Baz's Mod has 33.
 
 Each level is initially locked, with Level Access items available to find. Therefore levels will also become available in a random order. 
 
-Additionally, you can configure Buildings, Items, and/or Vehicles to be locked until discoverable. 
+You can configure Buildings, Items, and/or Vehicles to be locked until discoverable. This is the recommended way to play.
+
+You can optionally add one bonus starting Small Transport Truck to the pool. 
 
 #### Filler items
 
@@ -48,6 +51,13 @@ Clearing a level is always worth an item.
 Optionally, based on your chosen settings:
  - Clearing a level is worth more than one item. The harder the level, the more items. 
  - Clearing a level's par time earns an item.  
+ - Getting a sufficient percentage of the total possible crystals in a level earns an item. 
+
+Notes:
+ - A level's clear time is fixed upon objective completion, while crystal counts are fixed on level exit. This means you can use the 'Keep Playing' button to continue in your crystal hunts, and use the 'Exit mission' button in the objectives bar to finish when ready. Save file data is not written, and thus locations not sent to the server, until the mission is closed. 
+ - Crystals inside vehicles or buildings are already counted - no need to teleport up things at the end to 'regain' their crystals. You can view the total crystal count in-game by toggling the view in the resource box by clicking on the total-crystals icon. 
+ - The '100%' value for crystals isn't necessarily the actual 100% value in the level. There are certain cases where some crystals have been 'written off', like the central cache in LRRR - Lava Laughter. 
+ - If your victory condition is Coordinate Hunt, each level clear is worth an extra location, independently of the bonus locations being enabled or not. 
 
 ### Any recommended settings? 
 
@@ -55,7 +65,7 @@ The default settings are to clear all 25 levels in the Standard campaign, with a
 
 Players familiar with Manic Miners may prefer to enable all campaigns and the No Duplicate Levels setting, which will still do a full run of 25 levels, but will randomly select each one.
 
-Running every campaign fully selected, if the goal is set high to match, can take a long time. 
+Note: running with every campaign fully selected and a matching high target level goal, can take a long time. 
 
 #### What are the target times?
 
@@ -84,6 +94,10 @@ Shows specific game information about which levels are accessible, but not yet c
 #### `/check_watch`
 
 Shows specific game information about which target times are accessible, but not yet cleared. It _only_ considers the level unlock items, and does not factor if you have all other prerequisites.
+
+#### `/power_levels`
+
+Shows specific game information about which crystal targets are accessible, but not yet cleared. It _only_ considers the level unlock items, and does not factor if you have all other prerequisites. Crystal targets may have additional prerequisites beyond those needed to clear a level.
 
 ## Under the hood
 
