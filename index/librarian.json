@@ -9,7 +9,11 @@
   "game": "Librarian Tidy Up the Arcane Library",
   "github": "https://github.com/Str8UpWHITE64/Librarian-AP",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "1.0.0": {
       "created_at": "2026-05-12T00:45:58Z",
@@ -220,6 +224,22 @@
       "title": "1.1.0-rc1",
       "version_simple": "1.1.0",
       "world_version": "1.1.0rc1"
+    },
+    "1.1.0-rc2": {
+      "created_at": "2026-06-06T01:49:58Z",
+      "description": "Second release candidate for 1.1.0. Drop-in install \u2014 see `INSTALL.txt` in the zip. Server host: use the\r\nupdated `librarian.apworld`.\r\n\r\n### New in rc2\r\n- **Hardened against a crash seen on rc1.** Throwing a big pile of books around could occasionally trip a\r\n  native crash; I traced it to a periodic \"redraw\" pass touching a book mid-cleanup and **turned that pass\r\n  off** (the targeted on-pickup redraw still runs). If you still hit a crash while throwing books around,\r\n  please tell me \u2014 that's exactly what I'm watching for.\r\n- **\"Invisible when held\" book \u2014 easier workaround.** I confirmed this is a rendering glitch on the held\r\n  book that the mod can't repair in place (only a fresh copy of the book clears it). New, possible, lighter fix:\r\n  **throw the invisible book out of bounds** \u2014 the game returns it to its spawn point a few seconds later, visible,\r\n  with **no reload and nothing lost**. (Returning to title \u2192 Continue, or relaunching, still works too.)\r\n\r\n### Carried over from rc1 (fixed since the betas)\r\n- **Row completion** credits the series you actually placed (fixes free-placement sections like 1B / 1C / 1J).\r\n- **No more level inflation** when you reload a save.\r\n- Large internal cleanup + a full comment pass \u2014 **no gameplay change**.\r\n\r\n### Known issues (help us close these)\r\n- **\"Invisible when held\" book (rare, random).** A received book can render invisible while held even though\r\n  it's fine in the shelf pile. Workaround: **throw it out of bounds** (it comes back visible), or reload.\r\n- **Intermittent crash / freeze (rare).** A book-warding operation can occasionally race the engine into a\r\n  native crash \u2014 or freeze on return-to-menu right after a heavy warding pass. The project's long-standing\r\n  hard problem; 1.1.0 reduces it but doesn't fully eliminate it.\r\n\r\n### If you crash or freeze \u2014 PLEASE send logs (this is what RC is for)\r\nSend the crash-report folder UE4SS drops, but especially:\r\n  - `Mods/Librarian-AP/crash_trace.log`   \u2014 the breadcrumb ledger; its last lines name what you were doing\r\n  - `\u2026/Binaries/Win64/UE4SS.log` \r\n  - one line on what you were doing (placing a row, returning to menu, throwing books, walking a shelf, \u2026)\r\n\r\nReports from older builds don't help anymore \u2014 **please confirm your title screen shows `v1.1.0-rc2`** first.",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc2/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "46027d520065f9ad060fb45fb12a35751bbb175d491961d58cb01c10a112af1b",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-rc2",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 51075,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-rc2",
+      "title": "1.1.0-rc2",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0rc2"
     }
   }
 }
