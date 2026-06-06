@@ -205,6 +205,21 @@
       "title": "1.1.0-beta6.2",
       "version_simple": "1.1.0",
       "world_version": "1.1.0b6"
+    },
+    "1.1.0-rc1": {
+      "created_at": "2026-05-29T14:13:52Z",
+      "description": "## Librarian-AP v1.1.0-rc1\r\n\r\nFirst release candidate for 1.1.0. Drop-in install \u2014 see `INSTALL.txt` in the zip. Server host: use the\r\nupdated `librarian.apworld`.\r\n\r\n### Fixed since the betas\r\n- **Row completion credits the right series.** Finishing a row in a free-placement section (1B / 1C / 1J, \u2026)\r\n  now sends the series you actually placed, not a mis-mapped one.\r\n- **No more level inflation on reload.** Re-loading a save no longer re-applies your skills and climbs your\r\n  level each time you load in.\r\n- **Self-healing redraw** (from beta6.2) keeps unlocked books from staying invisible as you move around.\r\n\r\n### Under the hood\r\n- A large internal cleanup (removed a lot of dead/vestigial hiding code) and a full comment pass \u2014 **no\r\n  gameplay change**, just a leaner, more maintainable build going into 1.1.0.\r\n\r\n### Known issues (help us close these)\r\n- **Intermittent crash / freeze (rare).** A book-warding operation can occasionally race the game engine into\r\n  a native crash \u2014 or, if you return to the menu right after a heavy warding pass, a multi-minute freeze then\r\n  crash. This is the project's long-standing hard problem; 1.1.0 reduces it but doesn't fully eliminate it.\r\n- **\"Invisible when held\" book (rare, random).** A received book may render invisible while held even though\r\n  it looks fine in the shelf pile. Workaround: return to title + Continue, or relaunch \u2014 it clears itself.\r\n\r\n### If you crash or freeze \u2014 PLEASE send logs (this is what RC1 is for)\r\nSend the crash-report folder UE4SS drops, but especially:\r\n  - `Mods/Librarian-AP/crash_trace.log`   \u2014 the breadcrumb ledger; its last lines name what we were doing\r\n  - `\u2026/Binaries/Win64/UE4SS.log`           \u2014 the last ~200 lines\r\n  - one line on what you were doing (placing a row, returning to menu, walking past a shelf, \u2026)\r\n\r\nReports from older builds don't help anymore \u2014 **please confirm your title screen shows `v1.1.0-rc1`** first.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc1/librarian.apworld",
+      "has_manifest": false,
+      "hash_sha256": "3bc31290d8c0d3be7d3db8e7112aed83040cbee3c411e17fb057443e0b75fabf",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-rc1",
+      "prerelease": true,
+      "size": 51022,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-rc1",
+      "title": "1.1.0-rc1",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0rc1"
     }
   }
 }
