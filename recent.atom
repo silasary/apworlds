@@ -2,75 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-07T07:31:38.226408+00:00</updated>
+  <updated>2026-06-07T12:36:24.931416+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.0</id>
-    <title>Mario Kart Double Dash v1.0.0</title>
-    <updated>2026-05-31T13:42:13+00:00</updated>
-    <author>
-      <name>aXu_AP</name>
-    </author>
-    <content>BIG update for the project's 1st anniversary! Most notable additions are extra checks from item boxes and shortcuts - but these new locations would be nothing if they didn't include any proper filler items - that's why also "Random Item" at last is a thing (good bye "Nothing" item!). And hey, there are some traps for you too! And qol and bug fixes as well.&#13;
-&#13;
-Big thank you for everybody who took part of testing the release candidates and reported bugs as well as good suggestions. Shout out to Matty Matt especially for doing some thorough testing. And Raze for working with the tracker pack!&#13;
-&#13;
-As usual, download a new apworld and options template below and have a good one! If this is your first time playing MKDD AP, here's the [setup guide](https://github.com/aXu-AP/archipelago-double-dash/blob/main/docs/en_Setup.md) and [readme](https://github.com/aXu-AP/archipelago-double-dash).&#13;
-&#13;
-## New Features&#13;
-* Boxsanity (single boxes or box groups as checks)&#13;
-* Shortcuts as locations&#13;
-* Random item as filler&#13;
-* Frantic items option&#13;
-* Guaranteed items (ensures you get an item if one is unlocked and fits your current position) &#13;
-* Progressive starting position item&#13;
-* Item rain traps&#13;
-* Overlapping start trap&#13;
-* Prevent extra characters if they are in starting inventory&#13;
-* Entrance info in hint info&#13;
-* Option for faster 50cc/100cc&#13;
-* All Cup Tour minimum rank and CC settings&#13;
-* Add ingame text for various things&#13;
-  * GP Race Skips in cup selection screen&#13;
-  * All Cup Tour requirements when ACT is selected (also accessible via `/unlocked`)&#13;
-  * Current kart and characters with their upgrades/items in pause screen in GP&#13;
-  * Good and staff times for current course in TT&#13;
-* Add Option Groups&#13;
-* Make custom lap counts editable in Options Creator&#13;
-## Changes&#13;
-* Trophy requirement is now percentage based (to suit better randomized options)&#13;
-* Improve unlocked command visually&#13;
-* Increase the level expectation for staff ghosts&#13;
-* Raise caps for items and kart upgrades&#13;
-* Raise extra trophy max amount&#13;
-* Handle connection error gracefully (use `/error` to see the latest error)&#13;
-* **Using Gecko codes like widescreen hack is no longer supported**&#13;
-## Fixes&#13;
-* Fix Dolphin cache problems&#13;
-  * This has been the biggest headache for the longest time, but I think now I have found a good solution. The client tries to invalidate the cache in 3 places: when entering the main menu, when entering character menu and as a last resort when pausing the game.&#13;
-* Fix the fireball glitch again - hopefully for good now&#13;
-* Prevent checks in invalid state&#13;
-  * The client won't give you checks for doing time trials when time trials are disabled, or other bad states like opening the client during a race.&#13;
-* A lot of little things&#13;
-&#13;
-**Full Changelog**: https://github.com/aXu-AP/archipelago-double-dash/compare/v0.3.2...v1.0.0</content>
-    <link href="https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jm771/apworld_crossword/releases/tag/v0.1.2</id>
-    <title>Crossword v0.0.0</title>
-    <updated>2026-05-31T16:21:54+00:00</updated>
-    <author>
-      <name>JHeard</name>
-    </author>
-    <content>Fix generation edge cases following fuzzing with https://github.com/Eijebong/Archipelago-fuzzer &#13;
-&#13;
-Docs here: https://github.com/jm771/ap_crossword/blob/main/README.md</content>
-    <link href="https://github.com/jm771/apworld_crossword/releases/tag/v0.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.13</id>
     <title>Total War Warhammer 3 v0.9.13.post5</title>
@@ -962,5 +898,89 @@ _Linux users, download the source code here to run the client._&#13;
 &#13;
 **Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.2.1...v0.2.2</content>
     <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/choatix/Archipelago/releases/tag/shadow-0.4.6</id>
+    <title>Shadow The Hedgehog v0.4.6</title>
+    <updated>2026-06-07T09:08:35+00:00</updated>
+    <author>
+      <name>choatix</name>
+    </author>
+    <content>Fix release files for previous version. Disable active debugging code correctly.&#13;
+&#13;
+==Please note all the below are a WIP, if you wish to contribute to improve==&#13;
+Level Guide: https://docs.google.com/document/d/1AhW4_tbdYi1otHE17zuGV4dDjaR6xaNDB6nT8rVNY0o/edit?usp=sharing&#13;
+&#13;
+Setup Guide: https://github.com/choatix/Archipelago/blob/shadow-cp/worlds/shadow_the_hedgehog/docs/setup_en.md&#13;
+&#13;
+Readme: https://github.com/choatix/Archipelago/blob/shadow-cp/worlds/shadow_the_hedgehog/docs/en_Shadow%20The%20Hedgehog.md&#13;
+&#13;
+Archipelago Wiki: https://archipelago.miraheze.org/wiki/Shadow_the_Hedgehog&#13;
+&#13;
+&#13;
+_Changes since last big release (0.2.7)_&#13;
+**Item Box Sanity**&#13;
+Capsules, boxes containing capsules are added as optional sanity.&#13;
+&#13;
+**Checkpoint Shuffle**&#13;
+Random starting checkpoint for levels and unlockable checkpoints as items in game.&#13;
+&#13;
+**Checkpoint Convenience**&#13;
+Option available to be able to go back to any previous activated checkpoint when playing with checkpoint sanity on.&#13;
+&#13;
+**Improved Logic Handling**&#13;
+Reworked logic for all enemies, items, weapons, etc to improve seeds.&#13;
+&#13;
+**Key Shuffle**&#13;
+Options related to key items and key doors allowing for more varied routes through stages.&#13;
+&#13;
+**Last Way Early**&#13;
+Previous Last Way was only included in story shuffle with the option, but now available by selecting Last Story even when playing select, preventing Devil Doom.&#13;
+&#13;
+**Select Gates**&#13;
+Gates added so stage accessibility is not locked to single stage unlocks.&#13;
+&#13;
+**Traps**&#13;
+Small assortment of traps added - Checkpoint, Ammo and Poison.&#13;
+&#13;
+&#13;
+</content>
+    <link href="https://github.com/choatix/Archipelago/releases/tag/shadow-0.4.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.8.0</id>
+    <title>Plants vs. Zombies: Replanted v1.8.0</title>
+    <updated>2026-06-07T10:17:20+00:00</updated>
+    <author>
+      <name>dannybonz</name>
+    </author>
+    <content>- Adds a **Wavesanity** option, allowing you to decide exactly how many extra waves should have locations, ranging from 0 all the way up to 2272. (Think about other players before enabling too many!)&#13;
+- You can now **randomise the zombies present on "The Great Wall"**. If the zombies chosen have Chinese variants, they will be used - otherwise they will keep their default appearance.&#13;
+- You can now set the **appearance rate of different costumes**. This includes the winter variants of Peashooter, Wall-nut, Zombie and Conehead; the Chinese variants of Flower Pot and various zombies; the retro variants of Peashooter and Zombie; the Plants vs. Zombies 2 variant of Cabbage-pult; the Headcrab variant of Conehead and the original variant of Backup Dancer. This affects **all levels**!&#13;
+- Adds a **"Sun Burst"** filler item, causing 75-150 sun to instantly appear.&#13;
+- Adds a **"Zombie Caffeine Trap"** item, causing all zombies on the lawn to gain a speed boost.&#13;
+- Adds an **"RV Trap"** item, causing an RV to be thrown at your plants.&#13;
+- Adds a **"Crater Trap"** item, causing three random craters to appear on your lawn.&#13;
+- Adds a **"Lawn Flip Trap"** item, causing your plant's positions to be flipped - i.e. what was originally in the back column is now at the front, and vice versa.&#13;
+- Adds a **"Lawn Randomiser Trap"** item, causing each plant on the lawn to transform into completely random plants.&#13;
+- Adds an **"Instant Zombie Hypnosis"** filler item that instantly hypnotises all on-screen zombies when received.&#13;
+- Adds a "light" setting for individual tile unlocks.&#13;
+- Adds a plant stat randomisation blacklist option, allowing you to choose specific plants to be unaffected by plant stat randomisation.&#13;
+- Tweaked conveyor randomisation logic for "Mini-games: Column Like You See 'Em".&#13;
+- Fixed a bug where flag locations would send early in "Fog: Level 4-4".&#13;
+- Put further limits on how fast plants can fire with plant stat randomisation.&#13;
+- Cloudy Day levels that take place on the Roof now logically expect Roof Cleaners.&#13;
+- Improved enforcement of maximum sun capacity.&#13;
+- Shovels dropped by zombies prior to the final wave will no longer be oversized.&#13;
+- Increased the maximum length of host, slot and password inputs from 24 characters to 100.&#13;
+- Improved controller support for "Random Seed Packet" filler.&#13;
+- Made changes to how randomised zombies are selected for "Mini-games: Seeing Stars", "Bonus Levels: Art Challenge Wall-nut" and "Bonus Levels: Art Challenge Sunflower", limiting the appearance of more destructive zombies.&#13;
+- Spoiler log details are now labelled by slot name.&#13;
+- Renamed "Mass Zombie Freeze" to "Instant Zombie Freeze".&#13;
+- Toughness will no longer be randomised for Spikeweed and Spikerock as it had no effect.&#13;
+- Rate will no longer be randomised for Cob Cannon as it had no effect.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.8.0"/>
   </entry>
 </feed>

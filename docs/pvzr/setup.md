@@ -1,6 +1,8 @@
 # Plants vs. Zombies: Replanted Archipelago - Setup Guide
 Defend your lawn from hordes of undead in this Archipelago implementation of "Plants vs. Zombies: Replanted", a modern take on the 2009 classic.
 
+This setup guide will instruct you on setting up Archipelago for Plants vs. Zombies: Replanted. [You can find the setup guide for Plants vs. Zombies: GOTY here.](https://github.com/vicr123/PvZ-Stable-Decompile-AP/blob/archipelago/README.md)
+
 ## Prerequisites
 - [Plants vs. Zombies Replanted](https://store.steampowered.com/app/3654560/)
 - [MelonLoader Installer](https://github.com/LavaGang/MelonLoader/releases/latest)

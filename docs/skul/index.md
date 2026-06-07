@@ -1,6 +1,6 @@
 # Skul: The Hero Slayer
 
-
+Skul The Hero Slayer is a 2D action platformer where you play as Skul, a skeleton who can swap out his head to gain different abilities.
 
 
 ## Downloads
