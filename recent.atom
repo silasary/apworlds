@@ -2,51 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-07T00:36:59.449458+00:00</updated>
+  <updated>2026-06-07T07:31:38.226408+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.0</id>
-    <title>Final Fantasy X v0.8.0</title>
-    <updated>2026-05-31T01:39:33+00:00</updated>
-    <author>
-      <name>Rurusachi</name>
-    </author>
-    <author>
-      <name>Andrewki</name>
-    </author>
-    <content>## FFX Apworld v0.8.0&#13;
-&#13;
-### Feature&#13;
-- Generate randomized equipment per character (@Rurusachi)&#13;
-- Alternate goal condition - Nemesis (@Rurusachi)&#13;
-- Seymour equipment items &amp; logic (@Andrewki44)&#13;
-- Hardcore Dream's End (@EvelynTSMG)&#13;
-&#13;
-### Enhancement&#13;
-- Excluded locations no longer generate, and are instead local filler (@Rurusachi)&#13;
-- Separate superbosses option to allow for Omega Weapon without Dark Aeons (@Andrewki44)&#13;
-&#13;
-### Bug Fixes&#13;
-- Fixed Nova &amp; Mark of Conquest exclusion logic based on superbosses vs original arena bosses (@Andrewki44)&#13;
-- Fixed a logical issue with arena rewards logic not interacting with skipped locations correctly (@Andrewki44)</content>
-    <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SWCreeperKing/PPDSArchipelago/releases/tag/v0.3.0</id>
-    <title>Placid Plastic Duck Simulator v0.3.0</title>
-    <updated>2026-05-31T06:14:26+00:00</updated>
-    <author>
-      <name>SW_CreeperKing</name>
-    </author>
-    <content>- [ApWorld] Added most DLC ducks&#13;
-- [Client] Removed text field character limits&#13;
-&#13;
-# Note, installation has changed, please visit readme</content>
-    <link href="https://github.com/SWCreeperKing/PPDSArchipelago/releases/tag/v0.3.0"/>
-  </entry>
   <entry>
     <id>https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.0</id>
     <title>Mario Kart Double Dash v1.0.0</title>
@@ -966,5 +926,41 @@ Don't believe what the title says, there are no memes whatsoever.&#13;
 &#13;
 Readme: https://github.com/spinerak/refunct-tas-archipelago/blob/master/README.md</content>
     <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.6</id>
+    <title>Mega Man Zero 3 v0.2.6</title>
+    <updated>2026-06-07T01:00:38+00:00</updated>
+    <author>
+      <name>brodieberger</name>
+    </author>
+    <content>Just some bug fixes for this update.&#13;
+&#13;
+# Bug Fixes&#13;
+- Fixed issue regarding lost body and foot chips.&#13;
+- Fixed issue where subtanks wouldn't be given properly if randomized weapons was not enabled.&#13;
+- Added generation logic for location checks requiring the flame body chip and recoil rod.</content>
+    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.2</id>
+    <title>Mario Kart Wii v0.2.2</title>
+    <updated>2026-06-07T03:17:09+00:00</updated>
+    <author>
+      <name>toent</name>
+    </author>
+    <content>## Release Version 0.2.2: Empty Start Items Fix&#13;
+Discovered an issue where the client would fall back on a default itemset, because that scenario was not properly handled. It is fixed now, thats basically the only thing that changed.&#13;
+&#13;
+### Changelog:&#13;
+- Fixed empty start items issue&#13;
+- Fixed an issue where the starting cups would display incorrectly in UT (It might still show up wrong, but I have confirmed this is only on UT, the actual generation logic is correct and the AP is completable).&#13;
+&#13;
+**REQUIRES APWORLD VERSION 0.2.0 - 0.2.2 (below 0.2.2 should still work, it will just show up wrong in UT)**&#13;
+&#13;
+_Linux users, download the source code here to run the client._&#13;
+&#13;
+**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.2.1...v0.2.2</content>
+    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.2"/>
   </entry>
 </feed>
