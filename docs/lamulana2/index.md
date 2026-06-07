@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.8.1/lamulana2.apworld">Latest Version (0.8.1)</a>
+- <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.8.2/lamulana2.apworld">Latest Version (0.8.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
