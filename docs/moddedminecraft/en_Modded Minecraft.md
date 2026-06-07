@@ -6,7 +6,7 @@ To do so the randomizer prevents you from getting advancements until you unlock 
 
 ## What items get shuffled?
 
-End goal is by default unlocking `minecraft:end/root` and killing the dragon. (can be changed to any other advancement)
+End goal is by default getting the advancement Free the End (`adv minecraft:end/root (Free the End)`) gotten by killing the dragon. (can be changed to any other advancement or quest)
 
 items that get shuffled give you access to more advancements/quests and gives you items based on the advancement/quest (advancement icon/quest reward)
 
