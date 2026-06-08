@@ -1,5 +1,11 @@
 # DELTARUNE
 
+## I'm a Linux Player
+
+Sadly for now, Linux last working version is 1.2.1 because of the lack of Proton/Wine implementation of winhttp that gamemaker use.
+
+A future update will provide a solution for Linux players.
+
 ## What is considered a location check in DELTARUNE?
 
 Location checks in DELTARUNE are all the spots in the game where you can get an item, and some extra events (Like getting the Moss). Exceptions are anything you cannot get on your chosen route and also some things that become unobtainable later on (Like Sweet Cap'n Cakes overworld shops) or things that only appear if certain choices are made (Like Chapter 3's Pipis item).
@@ -8,11 +14,13 @@ Location checks in DELTARUNE are all the spots in the game where you can get an 
 
 ## When the player receives an item, what happens?
 
-When the player receives an item in DELTARUNE, it will go into their inventory if they have space. Otherwise, it will wait until they do have space.
+When the player receives an item in DELTARUNE, it will go into their inventory if they have space.
+
+Currently if you have no space left, the item is discarded, which is a bug that will be fixed soon. Luckily, this is very unlikely to happen, as you now have 72 storage, 48 weapon, and 60 armor slots in every chapter, which is more than you'll reasonably need.
 
 ## What is the victory condition?
 
-Victory is achieved when the player sees the end of all chapters.
+Victory is achieved when the player seals all final fountains of each chapter included.
 
 This does not mean it'll be as simple as that, choosing certain options will add extra roadblocks! (Choosing "Mandatory" for Randomize Secret Bosses will make roadblocks appear unless you do all secret bosses.)
 
@@ -38,7 +46,7 @@ Chapter 4:
 Dark Sanctuary (Second Half) - "ClaimbClaws"
 Second Sanctuary - "SheetMusic"
 
-As well as this, the final boss of the final chapter chosen will require a certain amount of items to get to.
+As well as this, the final boss of each chapter chosen will require a certain amount of items to get to.
 
 Chapter 1:
 King Fight - King-Shaped Key Pieces
@@ -52,36 +60,53 @@ Tenna Fight - Remote Batteries
 Chapter 4:
 Third Sanctuary Ending - Combination Lock Digits
 
-So, if you choose Chapter 2 as the last chapter you're doing, the Queen fight will be blocked by getting enough KeyGen 2 Segments, but if you include Chapter 3, there will be no such block before Queen (Unless other options are chosen).
-
-**Chapter 3**
+### Chapter 3
 For Chapter 3, getting S-Rank on each board is expected. If you don't get S-Rank, you can either try the board again or buy it from a Pippins in the green room. If somehow the checks for the board didn't send, you can talk to the Zapper in the Ranking room about "My Rank, My Rewards?" to resend them.
 
-Make sure to get the extra ranks during the boards (Extra Moss, Extra Key, etc.)! **Tenna only gives you the checks after the board is over.**
+You can also replay any board at any time with a new Pippins in the green room.
 
-**Weird Route**
+Make sure to get the extra ranks during the boards (Extra Moss, Extra Key, etc.)!
 
-In order to beat the Weird Route, you will need to get to the end of each chapter while losing all recruits. The only recruits you don't have to lose are Lanino, Elnina, and Chapter 1 recruits.
+### Chosen Route
 
-Alongside this, you also have to do the "Forbidden"/"Snowgrave"/"Weird" storyline. If you accidentally deviate, a special "relieved" sound cue will play letting you know that the route has been aborted. MAKE SURE TO LOAD A PREVIOUS SAVE IN THIS SITUATION. Noelle's house in Chapter 4 is the last place you can abort the route, so you don't need to worry about it afterwards.
+#### Neutral Route
+
+Choosing Neutral Route doesn't add any recruit/lost recruit locations. You're expected to progress during the main storyline, though.
+
+#### Weird Route
+
+Choosing Weird Route will add losing each recruit as location. It's not required to lose every recruit to finish a chapter but it's strongly recommended as important items could be behind.
+
+It's also expected to follow the Weird storyline. If you accidentally deviate, a special "relieved" sound cue will play letting you know that the route has been aborted. MAKE SURE TO LOAD A PREVIOUS SAVE IN THIS SITUATION.
 
 If this is your first time doing Weird Route (or if you forgot how), there are many walkthroughs on YouTube and other sites. This route is pretty hidden and easy to accidentally abort if you don't know how to do it properly!
 
 Additional checks include: Both Rings and a special check for losing each recruit.
 
-**All Recruits**
+#### All Recruits
 
-In All Recruits, you (fittingly) have to gain every recruit. So, go along sparing every possible encounter until everyone is recruited. You can check your progress at each save point, and each chapter will let you know if you accidentally missed one (Queen will complain about Nubert being gone if you didn't recruit everyone, there's a paper on the wall before the Tenna fight, and there's a "bell of judgement" you can ring before the end of Chapter 4.)
+Choosing All Recruits will add recruiting each recruit as location. It's not required to recruit every recruit to finish a chapter but it's strongly recommended as important items could be behind.
+
+You can check your progress at each save point, and each chapter will let you know if you accidentally missed one (Trashy will warn you before the queen fight if you didn't recruit everyone, there's a paper on the wall before the Tenna fight, and there's a "bell of judgement" you can ring before the end of Chapter 4.)
 
 Each Recruit counts as a check. Some checks are available in this route that are not a part of the Weird Route.
+
+#### All Routes
+
+It combines both Weird Route and All Recruits as explained above. Remember that losing a recruit will prevent you from recruiting it. If you want to do both on the main savefile, you should recruit before losing.
+
+Also, Chapter 2 has Tasque Manager Challenge and All Stars Challenge that require recruits. It's strongly recommended to remove them if you're planning on playing on the same save file.
+
+
+## Universal Tracker Support
+
+The Text Client is fully supporting Universal Tracker. You can use the Tracker tab, UT commands and the map tab directly in DELTARUNE Text Client.
 
 ## Unique Local Commands
 
 The following commands are only available when using the DELTARUNE Client to play with Archipelago.
 
 - `/resync` Manually trigger a resync.
-- `/savepath` Redirect to proper save data folder. This is necessary for Linux users to use before connecting.
 - `/auto_patch` Patch the game automatically.
 - `/patch` Patch the game. Only use this command if `/auto_patch` fails.
-- `/savereset` Resets all saves for this DELTARUNE mod. Don't worry; your saves for the base game will remain untouched!
 - `/chosen_route` Use this to figure out your chosen route, if you don't know or have forgotten.

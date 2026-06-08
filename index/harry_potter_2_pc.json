@@ -105,6 +105,20 @@
       "title": "v2.4.0",
       "version_simple": "2.4.0",
       "world_version": "2.4.0"
+    },
+    "v2.5.0": {
+      "created_at": "2026-06-08T08:54:29Z",
+      "description": "# HP2PC_AP v2.5.0\r\n\r\nThe client now launches the game for you.\r\n\r\n## Changes\r\n\r\n- **The client auto-launches the game.** On connect it starts the right `Game.exe` for the seed's mode by itself, a moment after any sound, music, or dialogue randomizer finishes writing. On by default; set `auto_launch_game: false` under `harry_potter_2_pc_options` in host.yaml to launch it yourself.\r\n- **First connect asks once where the game is.** A folder picker prompts for the install that matches the seed's mode (the folder containing `system\\Game.exe`) and saves it to host.yaml, so you are asked only once per mode. The same per-mode install folder feeds the audio randomizers.\r\n- **New `/play` command.** Launches or relaunches the game on demand, handy if you closed it or turned auto-launch off.\r\n- **Level ending checks are sent correctly.** Dying in a level no longer messes up the obtainability for the level end - complete check to be send.\r\n- **Spell challenge timers are reset when exiting via the menu.** Just as all other vanilla exits do.\r\n\r\n## Upgrade notes\r\n\r\n- No new yaml options, so existing yaml files keep working unchanged.\r\n",
+      "download_url": "https://github.com/Kryen112/HP2PC_AP/releases/download/v2.5.0/harry_potter_2_pc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "cd68747cf0943a6cda4d4e95b40057b06d24277effed115e88b69c72e584debf",
+      "html_url": "https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.5.0",
+      "size": 105731,
+      "source_url": "https://api.github.com/repos/Kryen112/HP2PC_AP",
+      "tag": "v2.5.0",
+      "title": "v2.5.0",
+      "version_simple": "2.5.0",
+      "world_version": "2.5.0"
     }
   }
 }

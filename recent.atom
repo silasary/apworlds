@@ -2,29 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-08T07:46:26.128421+00:00</updated>
+  <updated>2026-06-08T13:36:42.880689+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.13</id>
-    <title>Total War Warhammer 3 v0.9.13.post5</title>
-    <updated>2026-05-31T18:57:07+00:00</updated>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>Completely rewrote the .pack mod side of the archipelago and merged all 3 .packs together for ease of use.&#13;
-Fixed bug where checks only sent on connect and sanity checks didn't send.&#13;
-Fixed ancillaries not sending.&#13;
-Fixed crash when loading a campaign.&#13;
-&#13;
-Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
-[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
-&#13;
-**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.9.12...v0.9.13</content>
-    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.9.13"/>
-  </entry>
   <entry>
     <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0</id>
     <title>CrossCode v0.9.0</title>
@@ -1076,5 +1058,136 @@ Small assortment of traps added - Checkpoint, Ammo and Poison.&#13;
 
 This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
     <link href="https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.5.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/chickentuna/Archipelago-Fakutori/releases/tag/v0.1.1</id>
+    <title>Fakutori v0.1.1.post2</title>
+    <updated>2026-06-08T10:05:44+00:00</updated>
+    <author>
+      <name>chickentuna</name>
+    </author>
+    <content>- **Asset rebuilt 2026-06-08:** fixed generation crashes — `KeyError: 'Quasar'` in set_rules for non-Quasar goals, `Extra shop` duplication with 2+ Fakutori players, and a multiworld `FillError` (filler under-count from the shared item pool); added manifest `compatible_version` so the world reports its version (0.1.1) correctly.&#13;
+- Fixed EvolvingFire recipe logic&#13;
+- Consistent minimum ap client version&#13;
+&#13;
+see https://github.com/chickentuna/FakutoriRandomizer/releases for plugin</content>
+    <link href="https://github.com/chickentuna/Archipelago-Fakutori/releases/tag/v0.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.1</id>
+    <title>Deltarune v2.0.1</title>
+    <updated>2026-06-08T12:56:09+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
+&#13;
+(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
+&#13;
+Here we are ! The big update ! So big that the patch note might miss some things but i'm gonna try to make it complete&#13;
+&#13;
+**Linux is not supported for now and will disconnect you after few seconds from the server! Linux will be supported in future updates**&#13;
+&#13;
+**Starting a chapter with previous chapter completion data isn't recommended as it was developed with that in mind and can lead to blocking bugs**&#13;
+# Changelog&#13;
+&#13;
+## APWorld&#13;
+- Complete rewrite of the rules with the new RuleBuilder, so AP v0.6.7 is the minimum version now. (which why would you be using anything else smh...)&#13;
+- The Client itself doesn't connect to the game anymore, but you can still use it for text, universal tracker, and patching the game.&#13;
+- Universal Tracker commands are now handled&#13;
+- Added Unlock Characters option&#13;
+- Added Unlock S/R/N-Actions option&#13;
+- Added Progressive [Character] Weapons&#13;
+- Added per-chapter macguffin option&#13;
+- Added Extra macguffin option&#13;
+- Added Remove Starting Inventory option&#13;
+- Added Better Odds option&#13;
+  - Chapter 1 and 2 man room 2% -&gt; 20%&#13;
+- RandomizeChapter is now set to All Unlocked by default&#13;
+- Added Option Presets&#13;
+- Secret Bosses items required like Broken Keys, KeyGen and EmptyDisk have now there own randomize option&#13;
+&#13;
+### Chapter 1&#13;
+- Include the Recruit and Lost locations&#13;
+- Added Throw Manual again location&#13;
+&#13;
+### Chapter 2&#13;
+- Added TwistedSwd fusion location, require Weird Route and chapter 2 included&#13;
+- Added Lose Swatchling location requirering Wrong Warp as an option&#13;
+- Added an option to exclude post-chapter locations to hold important items&#13;
+&#13;
+### Chapter 3&#13;
+- Added Extra Extra Key location for board 1&#13;
+- Change IncludeTRank option to ExcludeTRank option&#13;
+- Added Z-Rank with Z ExcludeZRank option&#13;
+&#13;
+### Chapter 4&#13;
+- Added Mike and games location as an option (Hints are sent when entering minigame room)&#13;
+- Also add an option to exclude platinum trophy if needed&#13;
+&#13;
+## Game&#13;
+&#13;
+- Archipelago Client is now in game&#13;
+- Option menu has been changed&#13;
+  - Added Music and SFX volume&#13;
+  - Added Return to Chapter Select&#13;
+  - Added Death Link configuration&#13;
+- Armor storage is now 60 for all chapters&#13;
+- Weapons storage is now 48 for all chapters&#13;
+- LancerCookie sell value is now D$50 for money farming&#13;
+- (Most) of location have now in-game preview when obtain&#13;
+- Shop have now in-game preview&#13;
+- Item balancing is now `final_stat = initial_stat * (current_chapter / item_chapter)`&#13;
+  - Can only downscale the stat, minimal 1 if stat isn't 0 or negative&#13;
+- Death Link now show you who and how send Death Link&#13;
+- You can now enter/exit Fullscreen in chapter select&#13;
+- You can customize color classification on connection screen&#13;
+- S.POISON is now used when obtained&#13;
+- When entering a chapter, the textboxes saying what items you got is gone so you don't have to wait through like 80,000 anymore&#13;
+- Some save points have been added or moved across the game&#13;
+&#13;
+### Chapter 1&#13;
+- The Chapter 3 version of the battle text (Tired and spare%) has been add when it happens, including Jevil&#13;
+- Entering the Man room now display how many attempts was required&#13;
+- You can now levelup like others chapters (max hp is 120/140/100, +2ATK max)&#13;
+&#13;
+### Chapter 2&#13;
+- The Chapter 3 version of the battle text (Tired and spare%) has been add when it happens&#13;
+- Entering the Man room now display how many attempts was required&#13;
+- Return to Castle Town has been moved to below the Cyber Field Warp area&#13;
+- After turning Berdly into a popsicle, Noelle will *gently* give you back the ThornRing into your inventory so you can craft the Twisted Sword. Thx Noelle!&#13;
+- Tasque manager weird route room and Werewerewire weird route room and pre-queen room now auto-save if you die so you respawn in the room instead of at the start of mansion&#13;
+&#13;
+### Chapter 3&#13;
+- Added an NPC in the Green Room that allow you to replay past boards&#13;
+- The same NPC also give you Ramb reward that you missed&#13;
+- Physical challenges room and gameshow room are now immune to Deathtlink&#13;
+- Dying in Green Room auto save before dying so you don't risk dying before saving&#13;
+&#13;
+### Chapter 4&#13;
+- You can now skip first sanctuary if you have Claimbclaws! (you won't get any of the checks there though, obv)&#13;
+- Added an NPC in third sanctuary to go to Gerson Study Arena&#13;
+- You can now bed skip during Weird Route (in future versions doing the cutscene at some point will be required though!)&#13;
+&#13;
+# Known Issues:&#13;
+- **Linux doesn't work. Well, technically it does, but you keep disconnecting every 5 seconds so it's nearly unplayable. Oops. Stand by for Linux support to be fixed...**&#13;
+- THE ARCHIPELAGO PROPHECIES... MY BABIES... THEY'RE... GONE!!! (they'll be back soon dw! just not right now)&#13;
+- Some locations don't tell you what you got in-game (namely, pretty much everything in chapter 4)</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.1"/>
   </entry>
 </feed>

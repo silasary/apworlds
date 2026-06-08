@@ -1,6 +1,8 @@
 # Fakutori
 
-
+Fakutori is a laid-back and colorful automation game;
+place machines, discover new elements, and try to craft the elusive Legendary Blocks!
+No limits, no pressure, just blocks!
 
 
 ## Downloads
