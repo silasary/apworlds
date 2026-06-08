@@ -8,6 +8,9 @@
 #### v0.2.1
 - <a href="https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.1/sonic_colours_ds.apworld">https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.1/sonic_colours_ds.apworld</a>
 
+#### v0.2.1
+- <a href="https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.2/sonic_colours_ds.apworld">https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.2/sonic_colours_ds.apworld</a>
+
 #### v0.2.0
 - <a href="https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.0/sonic_colours_ds.apworld">https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.0/sonic_colours_ds.apworld</a>
 
