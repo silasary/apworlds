@@ -4,7 +4,7 @@ Gnosia is a SinglePlayer social deduction game
 
 
 ## Downloads
-- <a href="https://github.com/Mat8071/Gnosia-Archipelago-Randomizer/releases/download/v0.1.2/gnosia.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/Mat8071/Gnosia-Archipelago-Randomizer/releases/download/v0.1.3/gnosia.apworld">Latest Version (0.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

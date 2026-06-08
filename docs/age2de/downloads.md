@@ -26,3 +26,6 @@
 #### v0.0.1
 - <a href="https://github.com/dmwever/Ageipelago/releases/download/0.2.0/age2de.apworld">https://github.com/dmwever/Ageipelago/releases/download/0.2.0/age2de.apworld</a>
 
+#### v0.0.1
+- <a href="https://github.com/dmwever/Ageipelago/releases/download/0.2.1/age2de.apworld">https://github.com/dmwever/Ageipelago/releases/download/0.2.1/age2de.apworld</a>
+
