@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "kbab"
+  ],
   "description": "League of Legends (LoL), commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games.",
   "game": "League of Legends",
   "github": [
@@ -6,7 +9,11 @@
     "https://github.com/kbab13reel/Archipelago"
   ],
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.0.1": {
       "created_at": "2023-12-14T20:58:10Z",
@@ -301,6 +308,21 @@
       "title": "Lol_AP v0.2.3",
       "version_simple": "0.2.3",
       "world_version": "0.2.3"
+    },
+    "lol_0.2.4": {
+      "created_at": "2026-05-26T17:09:10Z",
+      "description": "- Fixed Linux path separator packaging issue.\r\n- Fixed stale checks being sent after reconnect.\r\n- Fixed Game Win completion checks not always triggering.\r\n- Fixed check list sync/display inconsistencies.",
+      "download_url": "https://github.com/kbab13reel/Archipelago/releases/download/lol_0.2.4/lol.apworld",
+      "has_manifest": true,
+      "hash_sha256": "32c33c2bdeb341fbefeffa4a0fe5bb6f77124ae5c321f0517387bfa8d2cb5b53",
+      "html_url": "https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.4",
+      "minimum_ap_version": "0.6.6",
+      "size": 22116,
+      "source_url": "https://api.github.com/repos/kbab13reel/Archipelago",
+      "tag": "lol_0.2.4",
+      "title": "Lol_AP v0.2.4",
+      "version_simple": "0.2.4",
+      "world_version": "0.2.4"
     }
   }
 }
