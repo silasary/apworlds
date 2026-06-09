@@ -210,6 +210,21 @@
       "title": "v9.1.0-beta7",
       "version_simple": "9.1.0",
       "world_version": "9.1.0b7"
+    },
+    "v9.1.0-beta8": {
+      "created_at": "2026-06-08T19:43:37Z",
+      "description": "# OoT Randomizer APWorld v9.1.0-beta8 Update\r\n\r\nUpdated OoT Randomizer APWorld, based on the original OoTR randomizer at https://github.com/OoTRandomizer/OoT-Randomizer, on par with the latest update v9.1.0.\r\n\r\nThis is a beta build and might still include bugs, please test it thoroughly before trusting it in your multiworlds.\r\n\r\n\r\n## Changes:\r\n### Feat:\r\n- Adjuster now outputs a cosmetics log\r\n- Retroarch Bridge Traffic significantly reduced\r\n- Add Shuffle all sfx checkbox\r\n- Readd Specific Pot & Crate Textures settings removed during development\r\n\r\n### Fix:\r\n- Non-Spoiler Locations would not get patched properly\r\n- Outdated Music Patching (pre v9) (Update should hopefully patch custom music crashes)\r\n\r\nPlease note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.\r\nEven after deletion, the \"Open Patch\" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct \"Ocarina of Time Client\" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says \"Archipelago Ocarina of Time Client 0.6.x\" in the top bar with no info about the apworld version, you are using the old client.",
+      "download_url": "https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta8/oot.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9f4110e9a5869acf92db1e7ee8f4c9069e9aa8338a88fc0e20aea5a4e7c3c439",
+      "html_url": "https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-beta8",
+      "minimum_ap_version": "0.6.4",
+      "size": 3180432,
+      "source_url": "https://api.github.com/repos/TreZc0/OoTR-APWorld",
+      "tag": "v9.1.0-beta8",
+      "title": "v9.1.0-beta8",
+      "version_simple": "9.1.0",
+      "world_version": "9.1.0b8"
     }
   }
 }
