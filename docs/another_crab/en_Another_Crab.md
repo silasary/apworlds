@@ -5,7 +5,7 @@
 Currently, just about every item in the game is randomized.
 Including:
 
-- **Progression Items** (Fishing Line, Map Pieces)
+- **Progression Items** (Fork, Fishing Line, Map Pieces)
 - **Upgrade Items** (Bloodstar Limbs, Stainless Relics)
 - **Stowaways**
 - **Currency Items** (Breadclaws, Chipclaws)
@@ -13,6 +13,8 @@ Including:
 - **Costumes**
 - **Adaptations**
 - **Skills**
+
+Note shops, umami crystals, and some guaranteed drops from enemies (e.g. guaranteed stainless relics or barbed hooks) are not currently randomised.
 
 ## What items can be sent to you from other games?
 
@@ -24,10 +26,18 @@ There are x checks to be collected within the Another Crab's Treasure world.
 
 ## What is the goal to finish Another Crab's Treasure.
 
-At this time, the only way to finish the game is the vanilla ending where Kril get's his shell back from Prawnathan.
+The default goal is the vanilla ending, getting Kril's shell back from Prawnathan. 
+However, several other goals have also been implemented:
+
+- **Kill Magista** (the game ends when the player obtains the Pristine Pearl and kills Magista in Fallen Slacktide)
+- **Kill Voltai** (the game ends when the player obtains all 3 map pieces and the fuse shell, before killing Voltai in Scuttleport)
+- **Kill Roland** (the game ends when the player obtains all 3 map pieces and eelectrocute, before killing Roland on the Pinbarge)
 
 ## What is allowed concerning logic?
 
-The Another Crab's Treasure is currently only set up to be played through as intended.
+The Another Crab's Treasure archipelago mod's default logic expects the player to complete the game as intended by the devs (vanilla).
+However, several other logic options are also available:
 
-We plan to eventually add options that will allow skips/OOB tricks.
+- **Glitchless** (skips involving parkour are also in logic)
+- **Restricted** (glitches such as shell clips and CALs are also in logic)
+- **Unrestricted** (harder or game-breaking glitches are also allowed)
