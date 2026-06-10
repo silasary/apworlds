@@ -11,6 +11,9 @@
 #### v0.2.0
 - <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.2.0/kirbyam.apworld">https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.2.0/kirbyam.apworld</a>
 
+#### v0.2.0
+- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.3.0-rc1/kirbyam.apworld">https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.3.0-rc1/kirbyam.apworld</a>
+
 #### v0.2.0rc7
 - <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.2.0-rc7/kirbyam.apworld">https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.2.0-rc7/kirbyam.apworld</a>
 
