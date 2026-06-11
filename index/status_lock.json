@@ -89,6 +89,21 @@
       "title": "Bug fix (auto collect & auto release with no shards)",
       "version_simple": "0.3.2",
       "world_version": "0.3.2"
+    },
+    "v0.4.0": {
+      "created_at": "2026-06-11T07:38:39Z",
+      "description": "- Release and collect for players that goaled and are disconnected (the network protocol is shit for everything about goals):\r\n  - If using /copy_lines it will be copied\r\n  - If using the automated password, it will send a countdown of 10 seconds\\* before doing it\r\n- Fix release and collect modes set to enabled instead of goal once enough shards were obtained\r\n- Increase auto-release and auto-collect max shard amounts to 100\r\n\r\n\\*10 seconds is the supposed time but asyncio.sleep ends the 10 seconds while the server countdown is only at 5 (tested on localhost). Therefore asyncio.sleep is called to wait 20 seconds instead.",
+      "download_url": "https://github.com/guigui0246/StatusLock/releases/download/v0.4.0/status_lock.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fb8153357085d12835a1e1314b085254833c342a08a0e9c6dc345e43d1da6fd6",
+      "html_url": "https://github.com/guigui0246/StatusLock/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 17044106,
+      "source_url": "https://api.github.com/repos/guigui0246/StatusLock",
+      "tag": "v0.4.0",
+      "title": "Release and collect for disconnected players",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
     }
   }
 }

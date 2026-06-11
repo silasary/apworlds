@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/guigui0246/StatusLock/releases/download/v0.3.2/status_lock.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/guigui0246/StatusLock/releases/download/v0.4.0/status_lock.apworld">Latest Version (0.4.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

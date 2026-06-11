@@ -1,9 +1,12 @@
 # Shadow The Hedgehog
 
 ## Latest
-- <a href="https://github.com/choatix/Archipelago/releases/download/shadow-0.4.7/shadow_the_hedgehog.apworld">Latest Version (0.4.7)</a>
+- <a href="https://github.com/choatix/Archipelago/releases/download/shadow-0.4.8/shadow_the_hedgehog.apworld">Latest Version (0.4.8)</a>
 
 ## All Versions
+
+#### v0.4.8
+- <a href="https://github.com/choatix/Archipelago/releases/download/shadow-0.4.8/shadow_the_hedgehog.apworld">https://github.com/choatix/Archipelago/releases/download/shadow-0.4.8/shadow_the_hedgehog.apworld</a>
 
 #### v0.4.7
 - <a href="https://github.com/choatix/Archipelago/releases/download/shadow-0.4.7/shadow_the_hedgehog.apworld">https://github.com/choatix/Archipelago/releases/download/shadow-0.4.7/shadow_the_hedgehog.apworld</a>
