@@ -1,9 +1,12 @@
 # Anodyne
 
 ## Latest
-- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.2/anodyne.apworld">Latest Version (0.6.2)</a>
+- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.3/anodyne.apworld">Latest Version (0.6.3)</a>
 
 ## All Versions
+
+#### v0.6.3
+- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.3/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.3/anodyne.apworld</a>
 
 #### v0.6.2
 - <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.2/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.2/anodyne.apworld</a>

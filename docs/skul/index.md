@@ -4,7 +4,7 @@ Skul The Hero Slayer is a 2D action platformer where you play as Skul, a skeleto
 
 
 ## Downloads
-- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Skul/releases/download/1.0.1/skul.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Skul/releases/download/1.0.2/skul.apworld">Latest Version (1.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
