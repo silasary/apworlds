@@ -5,7 +5,7 @@ featured in the Yu-Gi-Oh! storyline.
 
 
 ## Downloads
-- <a href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.3/yugiohddm.apworld">Latest Version (0.3.3)</a>
+- <a href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld">Latest Version (0.3.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -15,4 +15,5 @@ featured in the Yu-Gi-Oh! storyline.
 
 ## Other Documentation files
 - <a href="Grandpas Shop Guide">Grandpas Shop Guide</a>
+- <a href="Location Groups Info">Location Groups Info</a>
 - <a href="en_YuGiOh! Dungeon Dice Monsters">en_YuGiOh! Dungeon Dice Monsters</a>

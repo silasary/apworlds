@@ -13,12 +13,16 @@
 Before starting the installation process, here's what you should know:
 - It is strongly recommended to use a mod manager if you want a quicker and easier installation process, but if you don't like installing extra software and are comfortable moving files around, you can refer to the manual setup guide instead.
 
+## Generating a game
+Generating a multiworld game works like any other Archipelago. You will download the apworld file, put it in your custom_worlds folder, then use the Options Creator to make a yaml and put it into your Players folder. Then click "Generate" on the launcher, and you will have a generated game!
+**NOTE: YOU MUST HAVE ARCHIPELAGO v0.6.7 TO GENERATE AND USE THE SKUL APWORLD!**
+
 ### Easy setup (mod manager)
 1. Download [r2modman](https://thunderstore.io/package/ebkr/r2modman/) using the "Manual Download" button, then install it using the executable in the downloaded zip package (You can also use [Thunderstore Mod Manager](https://www.overwolf.com/app/Thunderstore-Thunderstore_Mod_Manager) which works the same, but it requires [Overwolf](https://www.overwolf.com/))
 2. Open the mod manager and select Skul: The Hero Slayer in the game selection screen.
 3. Select the default profile or create a new one.
-4. Open the `Online` tab on the left, then search for `SkulArchipelago`.
-5. Expand `SkulArchipelago` and click the `Download` button to install the latest version and all its dependencies.
+4. Open the `Online` tab on the left, then search for `SkulArchipelago` and `BepInEx Skul`.
+5. Expand `SkulArchipelago` and click the `Download` button to install the latest version, and also do the same for `BepInEx Skul`.
 6. Click `Start Modded` to open the game with the mods.
 
 ### Manual setup

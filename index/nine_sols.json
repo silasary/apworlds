@@ -421,6 +421,36 @@
       "title": "0.5.3",
       "version_simple": "0.5.3",
       "world_version": "0.5.3"
+    },
+    "0.5.4": {
+      "created_at": "2026-06-10T21:46:55Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- Made post-PonR state playable.\r\n\t- The randomizer mod will now remove the usual post-PonR barriers in Central Hall, CTH, Galactic Dock and TRC, as well as force FSP to stay in its normal not-trashed-by-Eigong state. This should allow you to check any and all randomizer locations after triggering PonR, while also completing the unrandomized post-PonR sidequests if you feel like it.\r\n\t- Fixed the Central Hall elevator showing red \"Damaged Floor\" buttons all the time. Turns out this was tied to the New Kunlun Control Hub entrance being in its post-PonR state where it shows a button prompt when you walk past it. This fix might only take effect on fresh saves.\r\n- `vanilla` logic:\r\n\t- \"GoS (East): Upper Right of Room Above Yin Jifu's Tomb\" now requires (AD and LG) or CL. The \"or LG\" was missing before.\r\n\t- \"Yinglong Canal: Near Root Node\" now allows falling down from upper Yinglong, even if you can't climb up to this chest from the root node\r\n- `medium` logic:\r\n\t- \"AF (Depths) - Root Node\" to \"Shangui Arena\" now allows Air Dash and T-dash\r\n\t- \"AM - Left Exit\" to \"Above Left Exit\" now allows bow hover and Cloud Leap instead of Grapple\r\n\t- \"AM - Upper Right Exit\" now allows using bow hover from the light spinner ledge far to its left\r\n\t- \"CTH - Bottom of Large Shaft\" to \"Yanren Arena\" now allows Air Dash, Cloud Leap, T-dash and *Wall Climb* (instead of Tai-Chi Kick)\r\n\t- \"ED (Passages): Covered By Lasers\" now logically allows bypassing the zipline with bow hover\r\n\t- \"ED (Passages): Hack 2 Statues\" now allows bow hover and Ledge Grab to reach the left statue, as well as Cloud Piercer S/X to break its shield\r\n\t- \"ED (Sanctum) - Right Exit\" to \"Root Node\" is now itemless because Swift Runner is enough for this jump\r\n\t- \"Factory (GH) - Hammer Brothers Roof\" to \"Above Root Node\" now allows bow hover and ledge grab\r\n\t- \"Factory (U) - Broken Shanhai\" to \"Middle Right Exit\" now also requires (Cloud Leap or Ledge Grab) to get onto the ledge above the broken Shanhai. Previously, `vanilla` logic had this requirement but I forgot to copy it to `medium`.\r\n\t- \"GoS (East): Upper Right of Room Above Yin Jifu's Tomb\" now requires (AD and LG) or CL. On `medium` you can get to this *region* with T-dashes, and the location was incorrectly not requiring any movement items.\r\n\t- \"TRC: Above Sol Statue\" now allows falling from \"Upper Levels\", T-dashing, then Air Dashing onto the platform with the chest\r\n- `ledge_storage` logic:\r\n\t- \"AM - Left Exit\" to \"Above Left Exit\" now allows parry hover and Cloud Leap instead of Grapple\r\n\t- \"AM - Upper Right Exit\" now allows using parry hover with CL setup from the light spinner ledge far to its left\r\n\t- \"ED (Passages): Above Transporter\" now allows parry hover into Cloud Leap to reach the rope\r\n\t- \"ED (Passages) - Outside Tianshou Arena\" can now be logically reached with CL & LG / a triple jump from below the shortcut rope\r\n\t- \"ED (Passages): Covered By Lasers\" now allows bypassing the zipline with parry hover\r\n\t- \"ED (Passages) - Left Exit\" to the Root Node now allows parry hovers\r\n\t- \"Factory (MR) - Left Elevator\" to \"Walking Chest Above Green Pillar\" now allows CL & LG / a triple jump\r\n\t- \"Factory (GH) - Hammer Brothers Roof\" to \"Above Root Node\" now allows T-dash setup into parry hover\r\n\t- Factory (GH)'s platform puzzle room now allows wall sliding up either wall, then Air Dash and Cloud Leap to reach either of the upper platforms without Nymph\r\n\t- \"Factory (PA) - Root Node\" to \"Lower Left Fire Zone\" now allows CL & LG & AD / a triple jump with an Air Dash between jumps instead of using Nymph to lower the rope\r\n\t- 0.5.2 claimed the FSP tree-growing chests were in logic with CL & LG / triple jumps, but due to a silly typo, they were not. Now they are for real.\r\n\t- GoS (West) now allows parry hovering over the Cixing Arena\r\n\t- The last step of Sky Tower climb now also requires nymph to unlock the door to the root node. Previously, lower logic levels had this requirement but I forgot to copy it to LS logic.\r\n\t- Climbing up to \"TRC - Lower Sickbay\" can now be done with CL & LG / a triple jump instead of SMB.\r\n- Fixed the Cortex Center flower directly giving skill points instead of just checking an AP location\r\n- Add a comment about client/mod settings like Death Link to the example yaml\r\n- Extended 0.4.5's \"item re-apply checks\" to Sol Seals. In other words, if Yi is somehow missing a Sol Seal that we've already received the AP item for (after loading a save file), the mod will now \"re-apply\" the missing Seal and display a warning. This should mitigate various unreproducible glitches, but if you find a way to consistently trigger these warnings please report it so we can fix the underlying bug.\r\n",
+      "download_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/0.5.4/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c2894508c6bef04d5c80ccc228c8454cdebfb41ed3e6ba09cfd21391759cd6e4",
+      "html_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.4",
+      "minimum_ap_version": "0.6.4",
+      "size": 2585157,
+      "source_url": "https://api.github.com/repos/Ixrec/NineSolsArchipelagoRandomizer",
+      "tag": "0.5.4",
+      "title": "0.5.4",
+      "version_simple": "0.5.4",
+      "world_version": "0.5.4"
+    },
+    "0.5.5": {
+      "created_at": "2026-06-11T00:24:45Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- Fix the AFE arena softlock introduced in 0.5.4.",
+      "download_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/0.5.5/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0ba8ad13d02228068b18f1065663d228801c58ce0797e79bcb2e8f808e93465d",
+      "html_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.5",
+      "minimum_ap_version": "0.6.4",
+      "size": 2585159,
+      "source_url": "https://api.github.com/repos/Ixrec/NineSolsArchipelagoRandomizer",
+      "tag": "0.5.5",
+      "title": "0.5.5",
+      "version_simple": "0.5.5",
+      "world_version": "0.5.5"
     }
   }
 }

@@ -7,7 +7,7 @@ gripping sci-fi story.
 
 
 ## Downloads
-- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.1/crosscode.apworld">Latest Version (0.9.1)</a>
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.2/crosscode.apworld">Latest Version (0.9.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

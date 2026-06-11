@@ -48,4 +48,4 @@ Each time you get a Shop Progression item Grandpa's Shop inventory increases as 
 ## The Missing Dice
 The one die that cannot be bought from Grandpa's Shop is D. Magician Girl.
 You can still obtain this die as a random reward when your bonus item mode is set to Dice instead of Shop. She can also be obtained as a drop from beating Yami Yugi.
-If you set your starting dice pool to random she has the same chance as all other dice to be in it.
+If you set your starting dice pool to random she has the same chance as all other dice to be in it, or you can start with her in your dice pool.

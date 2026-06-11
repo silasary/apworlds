@@ -61,3 +61,4 @@ have your dice inventory updated.
 move to get the game to display the new duelist.
 4. If collecting dice are locations in your game (Bonus Item Mode - Shop), you can get the checks from your initial dice pool
 by removing them from your active dice pool and letting them sit in your collection for a moment.
+5. Item Plando is a bit volatile with Free Duel duelist items and locations, it is not recommended to try and plando their items or onto their locations as a result. Tournament and Shop items / locations should work just fine with Item Plando.
