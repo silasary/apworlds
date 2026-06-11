@@ -1,9 +1,12 @@
 # Baba Is You
 
 ## Latest
-- <a href="https://github.com/EmilyEmmi/Babapelago/releases/download/b2.0/baba_is_you.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/EmilyEmmi/Babapelago/releases/download/b3.0/baba_is_you.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/EmilyEmmi/Babapelago/releases/download/b3.0/baba_is_you.apworld">https://github.com/EmilyEmmi/Babapelago/releases/download/b3.0/baba_is_you.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/EmilyEmmi/Babapelago/releases/download/b2.0/baba_is_you.apworld">https://github.com/EmilyEmmi/Babapelago/releases/download/b2.0/baba_is_you.apworld</a>
