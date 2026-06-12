@@ -11,7 +11,4 @@ everyone&#x27;s favourite orange cat and plenty of lasagna.
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_GarfKart">en_GarfKart</a>

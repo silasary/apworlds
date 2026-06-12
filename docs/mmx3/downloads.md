@@ -1,9 +1,12 @@
 # Mega Man X3
 
 ## Latest
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx3-v1.5.1/mmx3.apworld">Latest Version (1.5.1)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx3-v1.5.2/mmx3.apworld">Latest Version (1.5.2)</a>
 
 ## All Versions
+
+#### v1.5.2
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx3-v1.5.2/mmx3.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx3-v1.5.2/mmx3.apworld</a>
 
 #### v1.5.1
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx3-v1.5.1/mmx3.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx3-v1.5.1/mmx3.apworld</a>

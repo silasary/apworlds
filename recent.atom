@@ -2,122 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-12T00:47:28.272803+00:00</updated>
+  <updated>2026-06-12T07:41:35.876253+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V2.3.0</id>
-    <title>Hunie Pop v2.3.0</title>
-    <updated>2026-06-05T07:23:43+00:00</updated>
-    <author>
-      <name>Dotsofdarkness</name>
-    </author>
-    <content>- (APWorld/Client/PopTracker) Added option/logic for having progressive dates&#13;
-- (APWorld) Fixed issue with custom options when set to min or max value&#13;
-- (APWorld) Fixed Universal Tracker compatibility &#13;
-- (APWorld) Changed Default option order and fixed some typos&#13;
-&#13;
-&lt;br&gt;&lt;/br&gt;&#13;
-CLIENT INSTALLATION INSTRUCTIONS:&#13;
-- Have Hunie Pop Installed&#13;
-- Download Hunie Pop Archipelago plugin (See Releases for latest version)&#13;
-- Extract and copy the contents of "Hunie Pop Archipelago plugin.zip" to the directory where "HuniePop.exe" is if it asks you to overwrite files click yes&#13;
-- NOTE if you get a game crash when starting the game make sure that in "{huniepop game directory}/BepInEx/config/BepInEx.cfg" the 2nd last option is "type = MonoBehaviour" not "type = Application"&#13;
-&#13;
-&#13;
-&#13;
-APWORLD INSTALLATION INSTRUCTIONS:&#13;
-- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
-- Download Huniepop APWorld (See Releases for latest version)&#13;
-- Select "Install APWorld" in launcher and select Huniepop APWorld you downloaded&#13;
-- Restart launcher for APWorld to properly install&#13;
-- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop YMAL&#13;
-&#13;
-&#13;
-&#13;
-POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
-- copy "Hunie Pop Archipelago poptracker.zip" to your poptracker "packs" folder</content>
-    <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V2.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DrNjitram/ArchipelagoSupra/releases/tag/V0.3.0</id>
-    <title>Supraland v0.1.0</title>
-    <updated>2026-06-05T07:54:27+00:00</updated>
-    <author>
-      <name>Dr. Njitram</name>
-    </author>
-    <author>
-      <name>Gummy</name>
-    </author>
-    <content>Removed support for Blue ville theft.&#13;
-Bump required AP to 0.6.7</content>
-    <link href="https://github.com/DrNjitram/ArchipelagoSupra/releases/tag/V0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.10.0</id>
-    <title>Casualties: Unknown v0.10.0.post2</title>
-    <updated>2026-06-05T09:31:34+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.10.0&#13;
-This update is NOT compatible with worlds generated on previous versions!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
-&#13;
-## Additions&#13;
-- Update to Casualties: Unknown V7.0.1&#13;
-- EnergyLink and RingLink support [APWorld Change]&#13;
-	- You can sell items to traders and deposit the trade value into either EnergyLink or RingLink currency&#13;
-	- You can also withdrawl from either currency pool to buy something from a trader&#13;
-- SleepLink support [APWorld Change]&#13;
-	- Originally a joke from the Stardew Valley thread, this is the first game to actually impliment this dumb idea&#13;
-	- Yes, it is exactly what it sounds like&#13;
-- The AED and Manual Defibrilator minigames now have items when Randomize Minigames is set to Individual&#13;
-## Changes&#13;
-- The Goal Depth must now be over 1500m for the five extra padding Depth Extenders to be added to the itempool [APWorld Change]&#13;
-- The default amount of Archipelago Items in the template YAML is now 40 [APWorld Change]&#13;
-- Archipelago Items now have logical requirements when Randomize Minigames is on [APWorld Change]&#13;
-	- The first 20% or 15 Archipelago Items are free, whichever is higher&#13;
-	- The next 40% of Archipelago Items require EITHER Lockpicking or Keypad Minigames&#13;
-	- The last 40% requires BOTH Lockpicking or Keypad Minigames&#13;
-	- If Randomize Minigames is set to As One, the last 80% is locked behind the Minigames item&#13;
-	- These changes are purely logical to help getting these minigames sooner in seeds, nothing stops you from going out of logic in-game&#13;
-## Fixes&#13;
-- Having Deathlink set to limbdamage no longer causes a lang error when getting Deathlinked&#13;
-- Fixed Starting Inventory from Pool doing nothing (#45) [APWorld Change]&#13;
-- Fixed unique Layer Unlocks still existing when the goal is Escape Overgrown Depths [APWorld Change]&#13;
-## Known Issues&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed&#13;
-- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed&#13;
-- The "Saline Bottle Recipe" item unlocks the Saline liquid recipe, not the container recipe</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.10.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.6</id>
-    <title>Paper Mario v0.6.6</title>
-    <updated>2026-06-05T13:31:55+00:00</updated>
-    <author>
-      <name>icebound777</name>
-    </author>
-    <content>## Bugfixes/Corrections&#13;
-&#13;
-* Fixed packaging mistake of the apworld file, leading to errors during seed generation.&#13;
-&#13;
-## Other&#13;
-&#13;
-* Updated the `Ressources and FAQ` docs&#13;
-  * Swap links to point to the new Github repository&#13;
-  * Update the tracker list&#13;
-* Updated the setup docs&#13;
-  * Mention bizhawk 2.11 or newer as possible emulator version&#13;
-  * Add setup guide for Luna's Project64</content>
-    <link href="https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.6"/>
-  </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.1</id>
     <title>Total War Warhammer 3 v0.10.1.post2</title>
@@ -1012,6 +901,23 @@ This update includes a lot of bug fixes and compatibility with the most recent v
     <link href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/tag/0.5.0"/>
   </entry>
   <entry>
+    <id>https://github.com/FeluciaPS/Archipelago/releases/tag/0.5.3-beta</id>
+    <title>Garfield Kart - Furious Racing v0.5.3b0</title>
+    <updated>2026-06-10T18:35:48+00:00</updated>
+    <author>
+      <name>FeluciaPS</name>
+    </author>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>**This is an APWorld only update.**&#13;
+&#13;
+- Fixed numerous issues with Universal Tracker, adding proper support for it.&#13;
+- Added yamlless Universal Tracker support&#13;
+- Converted the rules to Rule Builder for better compatibility</content>
+    <link href="https://github.com/FeluciaPS/Archipelago/releases/tag/0.5.3-beta"/>
+  </entry>
+  <entry>
     <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.2</id>
     <title>CrossCode v0.9.2</title>
     <updated>2026-06-10T19:06:40+00:00</updated>
@@ -1223,5 +1129,116 @@ Small assortment of traps added - Checkpoint, Ammo and Poison.&#13;
     <content>- Solves default decimal trap weights failing generation&#13;
 - Fixes trap counts being lower than expected weights</content>
     <link href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/tag/v0.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/studkid/RiftArchipelago/releases/tag/v0.13.0</id>
+    <title>Rift of the Necrodancer v0.13.0</title>
+    <updated>2026-06-12T01:41:46+00:00</updated>
+    <author>
+      <name>studkid</name>
+    </author>
+    <content># Additions&#13;
+- [APWorld] Added `Volume 2` DLC Songs&#13;
+- [Client] `Unplayed` filter option now will only display currently unlocked songs&#13;
+&#13;
+# Changes&#13;
+- [Client] Updated Archipelago.MultiClient.Net to 6.7.1&#13;
+&#13;
+# Bug Fixes&#13;
+- [Client] Fixed songs not locking properly after Volume 2 update&#13;
+- [Client] Base game songs should now reunlock properly when free play is disabled</content>
+    <link href="https://github.com/studkid/RiftArchipelago/releases/tag/v0.13.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.7.0</id>
+    <title>Brave Fencer Musashi v0.7.0</title>
+    <updated>2026-06-12T04:23:13+00:00</updated>
+    <author>
+      <name>AegeusEvander</name>
+    </author>
+    <content>Added:&#13;
+-added time sanity&#13;
+-complex logic rewrite&#13;
+-added URI client launch support (aka click on your slot to launch game)&#13;
+-fixes for trap sanity and open world&#13;
+&#13;
+Note:&#13;
+-Must use Archipelago v0.6.7 or newer&#13;
+-Not compatible with XDelta Patches, must run unmodified game&#13;
+-not compatible with prior apworld generations&#13;
+-map tracker with Universal Tracker https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.32&#13;
+-setup guide:https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/blob/main/docs/setup_en.md&#13;
+-Follow development and report bugs on the Archipelago gg Discord, -&gt; Future-game-design -&gt; Brave Fencer Musashi</content>
+    <link href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v1.2.1</id>
+    <title>Mega Man X2 v1.2.1</title>
+    <updated>2026-06-12T05:20:27+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>QoL changes. No version change in-game because the current ASM source contains Good Stuff:tm: I can't share yet.&#13;
+# Info&#13;
+* [Setup](https://thelx5.github.io/mmx/setup.html)&#13;
+# Changes&#13;
+* ~~Stole~~ Copied Mega Man 1/2/3's way to extract ROMs from the X Legacy Collection executable file&#13;
+* Added skip balancing tag to X-Hunter and Sigma stages</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx3-v1.5.2</id>
+    <title>Mega Man X3 v1.5.2</title>
+    <updated>2026-06-12T05:21:56+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>QoL changes. No version change in-game because the current ASM source contains Good Stuff:tm: I can't share yet.&#13;
+# Info&#13;
+* [Setup](https://thelx5.github.io/mmx/setup.html)&#13;
+# Changes&#13;
+* ~~Stole~~ Copied Mega Man 1/2/3's way to extract ROMs from the X Legacy Collection executable file&#13;
+* Fixed XML file failing to be appropriately copied to the patch/ROM location&#13;
+* Added a missing file in the Names directory</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx3-v1.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V2.3.1</id>
+    <title>Hunie Pop v2.3.1</title>
+    <updated>2026-06-12T06:00:06+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- (APWorld) Put shop items behind getting 4 date passes when progressive dates are enabled&#13;
+- (APWorld) Throw error/exception when YMAL has no girls enabled&#13;
+- (APWorld) Added check for "number_of_starting_girls" so that its not higher than number of girls enabled&#13;
+&#13;
+V2.3.0 changelog&#13;
+- (APWorld/Client/PopTracker) Added option/logic for having progressive dates&#13;
+- (APWorld) Fixed issue with custom options when set to min or max value&#13;
+- (APWorld) Fixed Universal Tracker compatibility &#13;
+- (APWorld) Changed Default option order and fixed some typos&#13;
+&#13;
+&lt;br&gt;&lt;/br&gt;&#13;
+CLIENT INSTALLATION INSTRUCTIONS:&#13;
+- Have Hunie Pop Installed&#13;
+- Download Hunie Pop Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Hunie Pop Archipelago plugin.zip" to the directory where "HuniePop.exe" is if it asks you to overwrite files click yes&#13;
+- NOTE if you get a game crash when starting the game make sure that in "{huniepop game directory}/BepInEx/config/BepInEx.cfg" the 2nd last option is "type = MonoBehaviour" not "type = Application"&#13;
+&#13;
+&#13;
+&#13;
+APWORLD INSTALLATION INSTRUCTIONS:&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Huniepop APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Huniepop APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop YMAL&#13;
+&#13;
+&#13;
+&#13;
+POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
+- copy "Hunie Pop Archipelago poptracker.zip" to your poptracker "packs" folder</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V2.3.1"/>
   </entry>
 </feed>

@@ -1,7 +1,7 @@
 # Brave Fencer Musashi Setup Guide
 
 ## Required Software
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). Please use the latest version. Versions below 0.4.4 are not supported.
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). Please use the latest version. Versions below 0.6.7 are not supported.
 - Brave Fencer Musashi NTSC: BIN(s)/CUE. 
 - [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) 2.7 or later. Other emulators are not supported.
 - The latest `bfm.apworld` file. You can find this on the [Releases page](https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases). Put this in your `Archipelago/custom_worlds` folder, if on windows and archipelago is installed double clicking on bfm.apworld should do this for you.
