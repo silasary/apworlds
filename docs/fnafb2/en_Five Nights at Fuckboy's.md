@@ -1,4 +1,4 @@
-# Five Nights at Fuckboy's (PC)
+# Five Nights at Fuckboy's 2 (PC)
 
 ## Where is the options page?
 
@@ -22,4 +22,4 @@ certain items to your own world.
 
 General items like weapons, armors, and healers will simply be put into your inventory.
 Party members will instantly be added to your party.
-The B.B. Shops and the Interior Walls entrance will automatically appear once recieved.
+The B.B. Shops will automatically appear once recieved.

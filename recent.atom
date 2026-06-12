@@ -2,57 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-12T13:11:07.499752+00:00</updated>
+  <updated>2026-06-12T18:46:45.411809+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/JBtheShadow/APManuals/releases/tag/v1.0.1</id>
-    <title>Manual_FantasyLife_JBtheShadow v1.0.1</title>
-    <updated>2026-06-05T17:25:48+00:00</updated>
-    <author>
-      <name>JBtheShadow</name>
-    </author>
-    <content>No changes in the yaml but because of logical changes it's recommended to generate a new multiworld.&#13;
-&#13;
-### Bug fixes:&#13;
-* When DLC was included, some locations were listed under categories named C, D and L;&#13;
-  * Definitely an oopsie from my part;&#13;
-* Skill level up locations were not considering licenses as part of their requirements, only the skill level packs;&#13;
-&#13;
-### Changes:&#13;
-* Progressive chapters reintroduced as requirements for challenges, crafting recipes, levels and skill levels;&#13;
-  * Acts as an additional layer of gating so you're at least on later chapters before logic expects you to grind levels;&#13;
-&#13;
-### TODO:&#13;
-* [ ] Review requirements for challenges and crafting recipes;&#13;
-* [ ] Items listed in the previous release:&#13;
-  * [ ] Include other types of chests (purple, invisible, master);&#13;
-  * [ ] Include an alternative to challenges or crafting locations in the form of tasks;&#13;
-    * [ ] Similar scope, collect X items or fight X enemies and the like;&#13;
-  * [ ] Add more goal requirements;&#13;
-  * [ ] Add template yamls for different setups, like different game modes;&#13;
-  * [ ] Look into other ways to allow a playthrough from an existing save;&#13;
-  * [ ] Look into other improvements;</content>
-    <link href="https://github.com/JBtheShadow/APManuals/releases/tag/v1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.1</id>
-    <title>Final Fantasy X v0.8.1</title>
-    <updated>2026-06-05T23:37:46+00:00</updated>
-    <author>
-      <name>Rurusachi</name>
-    </author>
-    <author>
-      <name>Andrewki</name>
-    </author>
-    <content>## FFX Apworld v0.8.1&#13;
-&#13;
-### Bug Fix&#13;
-- Nemesis rules were being overwritten several times, causing inconsistencies in it's logic. These rules have now been collected together and set properly. (@Rurusachi)</content>
-    <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.1"/>
-  </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.0%2Bpre-release-3</id>
     <title>Deltarune v2.0.0+pre.release.3</title>
@@ -1251,5 +1205,91 @@ Additionally, the logic assumes that the player knows of hidden paths throughout
 &#13;
 **Full Changelog**: https://github.com/tdkollins/Archipelago-Rabi-Ribi/compare/1.5.1...1.5.2</content>
     <link href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.0.0-TEST</id>
+    <title>Kirby Air Ride v1.0.0</title>
+    <updated>2026-06-12T16:16:31+00:00</updated>
+    <author>
+      <name>DeDeDK</name>
+    </author>
+    <content># KARchipelago v1.0.0-TEST&#13;
+&#13;
+Forget everything you thought you knew about the APWorld for Kirby Air Ride. This is a **FULL RE-RELEASE** of the apworld, featuring a **NEW, NATIVE GAME MOD**. We have a TON of new features and enhancements to existing features:&#13;
+&#13;
+- randomization of all 3 checklists&#13;
+  - checkbox rewards are AP items now and get shuffled&#13;
+  - this also means CROSS-MODE shuffling. Do an Air Ride checkbox to get a City Trial reward, etc.&#13;
+- full gating for:&#13;
+  - CT stadiums&#13;
+  - CT events&#13;
+  - CT items (everything)&#13;
+    - includes patches&#13;
+    - includes boxes (blue/green/red)&#13;
+  - machines (all of them, including top ride)&#13;
+  - copy abilities (shared gate across all 3 modes)&#13;
+  - kirby colors (shared gate across all 3 modes)&#13;
+  - AR courses&#13;
+  - TR courses&#13;
+  - TR items&#13;
+- EVERY item in the game is an AP item, plus:&#13;
+  - permanent +1 patches for CT, AR, and stadiums&#13;
+  - item spawn rate up&#13;
+  - patch cap increase&#13;
+  - checkbox fillers (all modes)&#13;
+  - all up/down&#13;
+  - instant Dragoon/Hydra&#13;
+  - big/small kirby (cosmetic, all modes)&#13;
+- new goals:&#13;
+  - CT max stats&#13;
+  - location lists (any mode)&#13;
+    - create custom goal playthroughs with lists of locations to complete&#13;
+- death link&#13;
+  - all modes&#13;
+- energy link&#13;
+  - all modes&#13;
+  - energy comes from machine charge, and can also charge your machine with energy&#13;
+  - in-game energylink spend menu to spend energy on items&#13;
+- trap link&#13;
+  - all modes&#13;
+  - a few custom traps!&#13;
+    - 1 HP trap&#13;
+    - drop patches trap&#13;
+- local multiplayer support (shared items for all human players)&#13;
+- new in-game settings menu&#13;
+&#13;
+### ***This is a TESTING release. Logic is not guaranteed to be correct! Other things will VERY likely break!***&#13;
+&#13;
+We need TESTERS to help test this out before making an official release. This was a huge rewrite with a brand new mod, I *definitely* missed things! Maybe obvious things!&#13;
+&#13;
+Please give this a go and **let me know what bugs you find** so we can make this a nice stable release that doesn't break multiworlds!&#13;
+&#13;
+Get it here:&#13;
+&#13;
+- apworld: https://github.com/DeDeDeK/KARchipelago/releases/latest&#13;
+- mod: https://github.com/DeDeDeK/karchipelago-mod/releases/latest&#13;
+- setup guide: https://github.com/DeDeDeK/KARchipelago/blob/main/worlds/kirby_air_ride/docs/setup_en.md&#13;
+&#13;
+&#13;
+## What's Changed&#13;
+* v1.0.0-TEST PR by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/51&#13;
+&#13;
+**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v0.6.0...v1.0.0-TEST</content>
+    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.0.0-TEST"/>
+  </entry>
+  <entry>
+    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.6</id>
+    <title>Cyberpunk 2077 v0.6.0</title>
+    <updated>2026-06-12T19:09:14+00:00</updated>
+    <author>
+      <name>247Tossing</name>
+    </author>
+    <content># New Features&#13;
+ - Cyberpunk no longer requires a client inside of the archipelago launcher in order to function. It now can directly connect to the AP server.&#13;
+&#13;
+# Fixes and Improvements&#13;
+ - Fixed progression generation issues (i think) based on community feedback (thanks so much for that btw) &#13;
+ - Locations can now exist in mutliple Regions (part of fixing progression)</content>
+    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.6"/>
   </entry>
 </feed>

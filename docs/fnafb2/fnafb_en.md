@@ -1,4 +1,6 @@
-# Five Nights at Fuckboy's Setup Guide
+# Five Nights at Fuckboy's 2 Setup Guide
+
+Its the same as FNaFB1 setup.
 
 ## Required Software
 

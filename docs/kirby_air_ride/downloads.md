@@ -1,9 +1,12 @@
 # Kirby Air Ride
 
 ## Latest
-- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v0.6.0/kirby_air_ride.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.0-TEST/kirby_air_ride.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
+
+#### v1.0.0
+- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.0-TEST/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.0-TEST/kirby_air_ride.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v0.6.0/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v0.6.0/kirby_air_ride.apworld</a>
