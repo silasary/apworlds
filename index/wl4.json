@@ -273,6 +273,21 @@
       "title": "3.3.3",
       "version_simple": "3.3.3",
       "world_version": "3.3.3"
+    },
+    "3.4.0": {
+      "created_at": "2026-06-13T17:13:01Z",
+      "description": "## General changes\r\n* World now requires AP 0.6.7 or newer\r\n## Generation changes\r\n* Fixed the generator choking when all items are set as non-local\r\n## Option changes\r\n* Added new levels \"intermediate\" and \"anything goes\" to the logic difficulty option\r\n  * Intermediate requires some of the simpler tricks originally in advanced logic\r\n  * Anything goes is currently relegated to a single new trick in TTL that's both difficult and risky\r\n  * Check the [trick guide](https://github.com/lilDavid/Archipelago-Wario-Land-4/blob/main/src/wl4/docs/en_Wario%20Land%204.md#what-do-the-logic-levels-do) for details\r\n  * **Note:** The PopTracker will need to be updated to reflect this option properly because the internal representation for advanced has changed\r\n* If the required jewels option is set higher than the pool jewels option, the former is now adjusted down instead of the latter up\r\n## Logic changes\r\n* Fixed logic not accounting for Ringosukis at the top of the jungle room in PZ on Hard and S-Hard\r\n* Fixed a logical point of no return for TBT Toy Car Tower Diamond\r\n* New tricks:\r\n  * Intermediate:\r\n    * MJ with Grab instead of Ground Pound\r\n    * Front of TBB with Grab in open portals\r\n  * Advanced:\r\n    * PZ jungle room with minion jump\r\n    * Escape PZ without Ground Pound\r\n    * TBB bouncy room alcove with minion jumps\r\n  * Anything Goes:\r\n    * Escape TTL without Super Ground Pound\r\n## Universal Tracker changes\r\n* You can now use /explain to read about this world's logic rules, including the effects of logic difficulty",
+      "download_url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.4.0/wl4.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d1df19c4dbdd6b30f52fd028063753e4ad3033640057eab7fd12274b36c17d97",
+      "html_url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.4.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 64600,
+      "source_url": "https://api.github.com/repos/lilDavid/Archipelago-Wario-Land-4",
+      "tag": "3.4.0",
+      "title": "3.4.0",
+      "version_simple": "3.4.0",
+      "world_version": "3.4.0"
     }
   }
 }

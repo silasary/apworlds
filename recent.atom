@@ -2,131 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-13T12:42:07.029226+00:00</updated>
+  <updated>2026-06-13T18:33:09.490617+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.6</id>
-    <title>Mega Man Zero 3 v0.2.6</title>
-    <updated>2026-06-07T01:00:38+00:00</updated>
-    <author>
-      <name>brodieberger</name>
-    </author>
-    <content>Just some bug fixes for this update.&#13;
-&#13;
-# Bug Fixes&#13;
-- Fixed issue regarding lost body and foot chips.&#13;
-- Fixed issue where subtanks wouldn't be given properly if randomized weapons was not enabled.&#13;
-- Added generation logic for location checks requiring the flame body chip and recoil rod.</content>
-    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.2.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.2</id>
-    <title>Mario Kart Wii v0.2.2</title>
-    <updated>2026-06-07T03:17:09+00:00</updated>
-    <author>
-      <name>toent</name>
-    </author>
-    <content>## Release Version 0.2.2: Empty Start Items Fix&#13;
-Discovered an issue where the client would fall back on a default itemset, because that scenario was not properly handled. It is fixed now, thats basically the only thing that changed.&#13;
-&#13;
-### Changelog:&#13;
-- Fixed empty start items issue&#13;
-- Fixed an issue where the starting cups would display incorrectly in UT (It might still show up wrong, but I have confirmed this is only on UT, the actual generation logic is correct and the AP is completable).&#13;
-&#13;
-**REQUIRES APWORLD VERSION 0.2.0 - 0.2.2 (below 0.2.2 should still work, it will just show up wrong in UT)**&#13;
-&#13;
-_Linux users, download the source code here to run the client._&#13;
-&#13;
-**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.2.1...v0.2.2</content>
-    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/choatix/Archipelago/releases/tag/shadow-0.4.6</id>
-    <title>Shadow The Hedgehog v0.4.6</title>
-    <updated>2026-06-07T09:08:35+00:00</updated>
-    <author>
-      <name>choatix</name>
-    </author>
-    <content>Fix release files for previous version. Disable active debugging code correctly.&#13;
-&#13;
-==Please note all the below are a WIP, if you wish to contribute to improve==&#13;
-Level Guide: https://docs.google.com/document/d/1AhW4_tbdYi1otHE17zuGV4dDjaR6xaNDB6nT8rVNY0o/edit?usp=sharing&#13;
-&#13;
-Setup Guide: https://github.com/choatix/Archipelago/blob/shadow-cp/worlds/shadow_the_hedgehog/docs/setup_en.md&#13;
-&#13;
-Readme: https://github.com/choatix/Archipelago/blob/shadow-cp/worlds/shadow_the_hedgehog/docs/en_Shadow%20The%20Hedgehog.md&#13;
-&#13;
-Archipelago Wiki: https://archipelago.miraheze.org/wiki/Shadow_the_Hedgehog&#13;
-&#13;
-&#13;
-_Changes since last big release (0.2.7)_&#13;
-**Item Box Sanity**&#13;
-Capsules, boxes containing capsules are added as optional sanity.&#13;
-&#13;
-**Checkpoint Shuffle**&#13;
-Random starting checkpoint for levels and unlockable checkpoints as items in game.&#13;
-&#13;
-**Checkpoint Convenience**&#13;
-Option available to be able to go back to any previous activated checkpoint when playing with checkpoint sanity on.&#13;
-&#13;
-**Improved Logic Handling**&#13;
-Reworked logic for all enemies, items, weapons, etc to improve seeds.&#13;
-&#13;
-**Key Shuffle**&#13;
-Options related to key items and key doors allowing for more varied routes through stages.&#13;
-&#13;
-**Last Way Early**&#13;
-Previous Last Way was only included in story shuffle with the option, but now available by selecting Last Story even when playing select, preventing Devil Doom.&#13;
-&#13;
-**Select Gates**&#13;
-Gates added so stage accessibility is not locked to single stage unlocks.&#13;
-&#13;
-**Traps**&#13;
-Small assortment of traps added - Checkpoint, Ammo and Poison.&#13;
-&#13;
-&#13;
-</content>
-    <link href="https://github.com/choatix/Archipelago/releases/tag/shadow-0.4.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.8.0</id>
-    <title>Plants vs. Zombies: Replanted v1.8.0</title>
-    <updated>2026-06-07T10:17:20+00:00</updated>
-    <author>
-      <name>dannybonz</name>
-    </author>
-    <content>- Adds a **Wavesanity** option, allowing you to decide exactly how many extra waves should have locations, ranging from 0 all the way up to 2272. (Think about other players before enabling too many!)&#13;
-- You can now **randomise the zombies present on "The Great Wall"**. If the zombies chosen have Chinese variants, they will be used - otherwise they will keep their default appearance.&#13;
-- You can now set the **appearance rate of different costumes**. This includes the winter variants of Peashooter, Wall-nut, Zombie and Conehead; the Chinese variants of Flower Pot and various zombies; the retro variants of Peashooter and Zombie; the Plants vs. Zombies 2 variant of Cabbage-pult; the Headcrab variant of Conehead and the original variant of Backup Dancer. This affects **all levels**!&#13;
-- Adds a **"Sun Burst"** filler item, causing 75-150 sun to instantly appear.&#13;
-- Adds a **"Zombie Caffeine Trap"** item, causing all zombies on the lawn to gain a speed boost.&#13;
-- Adds an **"RV Trap"** item, causing an RV to be thrown at your plants.&#13;
-- Adds a **"Crater Trap"** item, causing three random craters to appear on your lawn.&#13;
-- Adds a **"Lawn Flip Trap"** item, causing your plant's positions to be flipped - i.e. what was originally in the back column is now at the front, and vice versa.&#13;
-- Adds a **"Lawn Randomiser Trap"** item, causing each plant on the lawn to transform into completely random plants.&#13;
-- Adds an **"Instant Zombie Hypnosis"** filler item that instantly hypnotises all on-screen zombies when received.&#13;
-- Adds a "light" setting for individual tile unlocks.&#13;
-- Adds a plant stat randomisation blacklist option, allowing you to choose specific plants to be unaffected by plant stat randomisation.&#13;
-- Tweaked conveyor randomisation logic for "Mini-games: Column Like You See 'Em".&#13;
-- Fixed a bug where flag locations would send early in "Fog: Level 4-4".&#13;
-- Put further limits on how fast plants can fire with plant stat randomisation.&#13;
-- Cloudy Day levels that take place on the Roof now logically expect Roof Cleaners.&#13;
-- Improved enforcement of maximum sun capacity.&#13;
-- Shovels dropped by zombies prior to the final wave will no longer be oversized.&#13;
-- Increased the maximum length of host, slot and password inputs from 24 characters to 100.&#13;
-- Improved controller support for "Random Seed Packet" filler.&#13;
-- Made changes to how randomised zombies are selected for "Mini-games: Seeing Stars", "Bonus Levels: Art Challenge Wall-nut" and "Bonus Levels: Art Challenge Sunflower", limiting the appearance of more destructive zombies.&#13;
-- Spoiler log details are now labelled by slot name.&#13;
-- Renamed "Mass Zombie Freeze" to "Instant Zombie Freeze".&#13;
-- Toughness will no longer be randomised for Spikeweed and Spikerock as it had no effect.&#13;
-- Rate will no longer be randomised for Cob Cannon as it had no effect.&#13;
-&#13;
-For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
-    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.8.0"/>
-  </entry>
   <entry>
     <id>https://github.com/choatix/Archipelago/releases/tag/shadow-0.4.7</id>
     <title>Shadow The Hedgehog v0.4.7</title>
@@ -1253,5 +1133,104 @@ As always, let me know what's broken!</content>
 - Fixed faulty key address that could cause keys to not be received in dungeon&#13;
 - Reworked Item Group definitions, and added some more aliases.</content>
     <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.4-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.4.0</id>
+    <title>Wario Land 4 v3.4.0</title>
+    <updated>2026-06-13T17:13:01+00:00</updated>
+    <author>
+      <name>lil David</name>
+    </author>
+    <content>## General changes&#13;
+* World now requires AP 0.6.7 or newer&#13;
+## Generation changes&#13;
+* Fixed the generator choking when all items are set as non-local&#13;
+## Option changes&#13;
+* Added new levels "intermediate" and "anything goes" to the logic difficulty option&#13;
+  * Intermediate requires some of the simpler tricks originally in advanced logic&#13;
+  * Anything goes is currently relegated to a single new trick in TTL that's both difficult and risky&#13;
+  * Check the [trick guide](https://github.com/lilDavid/Archipelago-Wario-Land-4/blob/main/src/wl4/docs/en_Wario%20Land%204.md#what-do-the-logic-levels-do) for details&#13;
+  * **Note:** The PopTracker will need to be updated to reflect this option properly because the internal representation for advanced has changed&#13;
+* If the required jewels option is set higher than the pool jewels option, the former is now adjusted down instead of the latter up&#13;
+## Logic changes&#13;
+* Fixed logic not accounting for Ringosukis at the top of the jungle room in PZ on Hard and S-Hard&#13;
+* Fixed a logical point of no return for TBT Toy Car Tower Diamond&#13;
+* New tricks:&#13;
+  * Intermediate:&#13;
+    * MJ with Grab instead of Ground Pound&#13;
+    * Front of TBB with Grab in open portals&#13;
+  * Advanced:&#13;
+    * PZ jungle room with minion jump&#13;
+    * Escape PZ without Ground Pound&#13;
+    * TBB bouncy room alcove with minion jumps&#13;
+  * Anything Goes:&#13;
+    * Escape TTL without Super Ground Pound&#13;
+## Universal Tracker changes&#13;
+* You can now use /explain to read about this world's logic rules, including the effects of logic difficulty</content>
+    <link href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.0.1-TEST</id>
+    <title>Kirby Air Ride v1.0.0</title>
+    <updated>2026-06-13T17:35:37+00:00</updated>
+    <author>
+      <name>DeDeDK</name>
+    </author>
+    <content>- Fixes for not being able to hook into dolphin due to DME type checking differences across versions&#13;
+&#13;
+## What's Changed&#13;
+* Fixes by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/52&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v1.0.0-TEST...v1.0.1-TEST</content>
+    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.0.1-TEST"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.5.3</id>
+    <title>Rabi-Ribi v1.5.3</title>
+    <updated>2026-06-13T17:42:04+00:00</updated>
+    <author>
+      <name>PsyMarth</name>
+    </author>
+    <author>
+      <name>Phie</name>
+    </author>
+    <content>## Quick Links&#13;
+- [Game Info Page](https://github.com/tdkollins/Archipelago-Rabi-Ribi/blob/main/worlds/rabi_ribi/docs/en_Rabi-Ribi.md)&#13;
+- [Setup Guide](https://github.com/tdkollins/Archipelago-Rabi-Ribi/blob/main/worlds/rabi_ribi/docs/setup_beta_en.md)&#13;
+- [Known Issues](https://github.com/tdkollins/Archipelago-Rabi-Ribi/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)&#13;
+&#13;
+## Before Playing&#13;
+This randomizer assumes the player is aware of hidden techniques that allow the game to be beaten without items, even at the lowest settings. It is HIGHLY recommended to play through the Basic section of the [Platforming Tricks Tutorial](https://steamcommunity.com/sharedfiles/filedetails/?id=1706422414) before starting your first seed!&#13;
+&#13;
+Additionally, the logic assumes that the player knows of hidden paths throughout the game, revealed with Ribbon, Fire Orb, or Carrot Bombs. A patch is available to expose these paths, alongside other useful features! It can be enabled by setting "Apply Beginner Mod" to `true`.&#13;
+&#13;
+## What's Changed&#13;
+* Fix Calculation of Available Magic Types by @dclaganiere in https://github.com/tdkollins/Archipelago-Rabi-Ribi/pull/94&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/tdkollins/Archipelago-Rabi-Ribi/compare/1.5.2...1.5.3</content>
+    <link href="https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.5.3</id>
+    <title>ULTRAKILL v3.5.3</title>
+    <updated>2026-06-13T17:51:15+00:00</updated>
+    <author>
+      <name>TRPG</name>
+    </author>
+    <content>- Reworked how secret exits are checked.&#13;
+- Fixed the Pump Charge shotgun being unable to primary fire if attempting to use the secondary fire while it is not unlocked.&#13;
+- Fixed random music validation not working properly, which could sometimes cause certain levels to be impossible to load into.&#13;
+	- This is usually caused by playing a multiworld that was generated with an old version of the apworld (3.4.5 or older). Don't forget to update the apworld!&#13;
+- Fixed P Rank locations being added to the goal level.&#13;
+- Added an option to automatically exclude locations in the goal level.&#13;
+- Fixed 8-3 theme #1 random music reverting back to the original music after restarting from a checkpoint.&#13;
+- Fixed incorrect logic for Deathcatchers in 8-3. [@surytrap] #48&#13;
+- Fixed instantly unlocking a hint in The Cyber Grind when starting on a wave higher than 1.&#13;
+- Final ranks for levels are now not saved if cheats are enabled.&#13;
+- Enemy counters will not be added to levels if the total number of enemies is zero.&#13;
+- Added YAML-less support for Universal Tracker.</content>
+    <link href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.5.3"/>
   </entry>
 </feed>
