@@ -6,7 +6,7 @@ Dr. Doppler. The game introduces the ability to play as Zero for limited segment
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx3-v1.5.2/mmx3.apworld">Latest Version (1.5.2)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx3-v1.5.2/mmx3.apworld">Latest Version (1.5.2.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
