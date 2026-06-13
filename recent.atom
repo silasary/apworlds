@@ -2,86 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-13T00:44:47.110024+00:00</updated>
+  <updated>2026-06-13T07:22:44.286419+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.5.5</id>
-    <title>Ori and the Will of the Wisps v0.5.5</title>
-    <updated>2026-06-06T16:58:59+00:00</updated>
-    <author>
-      <name>Satisha</name>
-    </author>
-    <content>Fix the connection to the AP server crashing when the `qol` option is False and `quests` is `none`.</content>
-    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.5.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dmwever/Ageipelago/releases/tag/0.2.0</id>
-    <title>Age Of Empires II: Definitive Edition v0.0.1</title>
-    <updated>2026-06-06T17:45:16+00:00</updated>
-    <author>
-      <name>dmwever</name>
-    </author>
-    <content>## What's Changed&#13;
-&#13;
-### New Campaign: Joan of Arc&#13;
-- All 6 scenarios from the original base game.&#13;
-&#13;
-### New Setting: Shuffle Buildings&#13;
-- When enabled, buildings are shuffled into the pool. When disabled, buildings are given to the player as starting items.&#13;
-- Buildings take into account what civilizations are being played. Attila the Hun will never expect the player to need houses, and Joan of Arc won't ask for Feitorias.&#13;
-- 6 different options for shuffling:&#13;
- 1. _Shuffle Economy:_ Economy buildings are shuffled and must be unlocked, such as TC, houses, market, and dropsites. Will shuffle docks.&#13;
- 2. _Shuffle Tech:_ Tech buildings such as blacksmith, university, and monastery are shuffled.&#13;
- 3. _Shuffle Military:_ Military buildings are shuffled, including dock and Castle&#13;
- 4. _Shuffle Defense:_ Walls, towers, and castle are shuffled. Includes outpost.&#13;
- 5. _Shuffle Unique:_ In the future, unique buildings will be shuffled, currently doesn't do anything except keep unique buildings out of your starting inventory.&#13;
- 6. _Shuffle Wonder:_ The wonder the wonder the... no!&#13;
-&#13;
-### New Feature: APavilion&#13;
-- Each scenario now has a pavilion that allows them to declare victory once they beat a campaign. This will allow the player to obtain more checks even after winning a scenario.&#13;
-- The pavilion will flash AP colors when the player has won the scenario and will have a tech called "Victory".&#13;
-- Upon subsequent visits to a completed scenario, the player may declare victory at any point.&#13;
-- In the future, mercenaries and one-time resources will be located here for the player's digression.&#13;
-&#13;
-### Logic Overhaul&#13;
-- Starting resources are now dynamically generated to fill space. Players can now expect to have at least 1000 of gold, food, and wood and 500 stone by completion of the apworld. If the item pool is too small for that amount of items, players will receive less starting resources.&#13;
-- Building locations require the player to be able to reach their age and have villagers. Dynamically adjusts to unlocked scenarios.&#13;
-- All Attila the Hun locations have much stricter logic (makes things easier).&#13;
-- All opponents require a building with a counter to the units they build. Much thanks to @Stefrex1 for researching unit compositions for every scenario.&#13;
-&#13;
-### Updated Setting: Enabled Campaigns&#13;
-- Now accepts Joan of Arc as an option. When selecting multiple Campaigns, all campaigns must be finished to goal.&#13;
-&#13;
-### Updated Setting: Starting Campaigns&#13;
-- Now accepts Joan of Arc as an option. Each selected campaign will be given as a starting item.&#13;
-&#13;
-### Updated Setting: Scenario Branching&#13;
-- Scenario Branching All: affects Joan of Arc scenarios 2 and 3. In both campaigns, each individual castle is a check.&#13;
-- Scenario Branching Any: Destroying any castle in Joan of Arc 2 gives a single check. Destroy any three castles in Joan of Arc 3 for one check each.&#13;
-&#13;
-### QOL&#13;
-- Scenario-Specific checks are now listed as objectives in each scenario. At the moment, there is no difference between Branching Any and Branching All for which checks are displayed.&#13;
-&#13;
-### Client Changes&#13;
-- The client will now only connects to the game when it is connected to the AP world server.&#13;
-- The player is now notified when the game is connected to the client.&#13;
-&#13;
-### Bugfixes&#13;
-- World now actually goals 11&#13;
-- Scenario items no longer bleed into other scenarios.&#13;
-- Scenarios now wait for a connection before attempting to load startup data.&#13;
-- Removed starting resources from existing scenarios.&#13;
-- Failed reads and writes no longer display "Wrong AP World Version" errors.&#13;
-&#13;
-### Known Issues&#13;
-- In Joan of Arc 2, if one of the English players is defeated, the other surrenders as in vanilla, deleting their castles and giving free checks.&#13;
-&#13;
-**Full Changelog**: https://github.com/dmwever/Ageipelago/compare/0.1.4...0.2.0</content>
-    <link href="https://github.com/dmwever/Ageipelago/releases/tag/0.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/dmwever/Ageipelago/releases/tag/0.2.1</id>
     <title>Age Of Empires II: Definitive Edition v0.0.1</title>
@@ -712,6 +637,31 @@ Packaged with `zDEV-UE4SS_v3.0.1-947-g06474186`, `hibiki-bootstrap-v0.2.0`&#13;
     <link href="https://github.com/TRPG0/HbkArchipelago/releases/tag/0.3.1"/>
   </entry>
   <entry>
+    <id>https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.2.1</id>
+    <title>Clair Obscur Expedition 33 v0.2.1</title>
+    <updated>2026-06-10T12:59:44+00:00</updated>
+    <author>
+      <name>Démorck</name>
+    </author>
+    <author>
+      <name>Yezzdia</name>
+    </author>
+    <author>
+      <name>Noeva</name>
+    </author>
+    <content>- This version add superbosses exclusion in options&#13;
+- Remove and changes some locations&#13;
+&#13;
+## What's Changed&#13;
+* Adding superbosses &amp; handling multiple locations by @Demorck in https://github.com/Demorck/ClairObscur_APWorld/pull/44&#13;
+&#13;
+## New Contributors&#13;
+* @Demorck made their first contribution in https://github.com/Demorck/ClairObscur_APWorld/pull/44 (lmao)&#13;
+&#13;
+**Full Changelog**: https://github.com/Demorck/ClairObscur_APWorld/commits/v0.2.1</content>
+    <link href="https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.2.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/5.4.6</id>
     <title>Pokemon Crystal v5.4.6</title>
     <updated>2026-06-10T14:25:16+00:00</updated>
@@ -1252,5 +1202,26 @@ These updates are mirrored in the [web client](https://barretg.github.io/Taskipe
 ## Bugfixes&#13;
 - In Who Dump where blueprints twirl in a swirl, `Rocket Spring` blocks the path to collect them all, unless `Grinch Copter` unfurls.</content>
     <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/Archipelago/releases/tag/factorio_saws-0.9.2</id>
+    <title>Factorio - Space Age Without Space v0.9.2</title>
+    <updated>2026-06-13T06:41:14+00:00</updated>
+    <author>
+      <name>Silasary</name>
+    </author>
+    <content>## 0.9.2
+* Made Energy Bridge recipe actually random
+* Made fish immune to lightning strikes.
+* Adjusted recipe costs to be more accurate, which should lead to more interesting seeds.
+* Fixed CLI not working.
+* Updated the way the mod handles text localisation.
+
+## 0.9.1
+* Science Packs are now given randomised names.
+* Changed the 'Vanilla' yellow science pack to be crafted in a centrifuge, then added it to the machine shuffle.
+* Fixed a bug with Universal Tracker compatibility.
+* Made fruit trees immune to lightning strikes.</content>
+    <link href="https://github.com/silasary/Archipelago/releases/tag/factorio_saws-0.9.2"/>
   </entry>
 </feed>

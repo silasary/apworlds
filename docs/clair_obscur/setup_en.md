@@ -4,14 +4,15 @@
 
 * [Archipelago 0.6.1+](https://archipelago.gg/tutorial/Archipelago/setup/en)
 * A legal version of Clair Obscur: Expedition 33 (Steam or Gamepass)
-* [Latest clair_obscur.apworld](https://github.com/Demorck/ClairObscur_APWorld/releases) (by @Jostar)
+* [Latest clair_obscur.apworld](https://github.com/Demorck/ClairObscur_APWorld/releases) (by @Noeva)
 * [Latest version of the client mod](https://github.com/Demorck/ClairObscurArchipelagoRandomizer/releases) (by @Demorck)
 
 ## Recommended Software
 
 * [Poptracker](https://poptracker.github.io/)
   * [Our autotracker for Poptracker](https://github.com/Demorck/ClairObscur-Archipelago-Poptracker/releases) (by @Yezzdia)
-* [A map tracker for COE33](https://www.nexusmods.com/clairobscurexpedition33/mods/383)
+* [Mod: a map tracker for COE33](https://www.nexusmods.com/clairobscurexpedition33/mods/383)
+* [Mod: a ping tracker to know where are the loots for COE33](https://www.nexusmods.com/clairobscurexpedition33/mods/215)
 
 ## Setup
 
@@ -21,7 +22,8 @@
 4. Host the game, either locally or via the archipelago web hosting service
 5. Download the right file in the release tab of the mod client. (Steam or gamepass version).
 6. Extract it in the root of the game folder. To be sure that is well extract, you need to find 3 files called ClairObscurRandomizer.pak, ClairObscurRandomizer.ucas and ClairObscurRandomizer.utoc in `\Sandfall\Content\Paks\LogicMods` and ue4ss folder in `\Sandfall\Binaries\[WinGDK or Win64]`
-7. Profit !
+7. **FOR LINUS USERS**: Put this `WINEDLLOVERRIDES="dwmapi.dll=n,b" %command%` in launch options
+8. Profit !
 
 ## Connecting to a game
 1. In the main menu, there is an "Archipelago" button. If you don't find it, your installation is not correct.
@@ -33,6 +35,10 @@
 3. Click on "Connect" and wait until it says connected.
 4. Create a new save if you are connected for the first time. __NOTHING WILL HAPPEN UNTIL SPRING MEADOWS. WHEN YOU ARE IN SPRING MEADOWS, PRESS CTRL + F2__ (for now)
 
+# CONNECT TO AP AND DO THE PROLOGUE (JUST NEED TO TALK TO EMMA AT THE END), THIS IS A MUST HAVE FOR THE MOD TO WORK NOW BECAUSE A LOT OF THINGS HAPPENS WHEN THE FESTIVAL ENDS.
+
 ## Further Reading
 - [wiki](https://github.com/Demorck/ClairObscur_APWorld/wiki/)
+
+
 

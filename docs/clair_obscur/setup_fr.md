@@ -4,7 +4,7 @@
 
 * [Archipelago 0.6.1+](https://archipelago.gg/tutorial/Archipelago/setup/en)
 * Une version légale de Clair Obscur: Expedition 33 (Steam ou Gamepass) 
-* [La dernière version de clair_obscur.apworld](https://github.com/Demorck/ClairObscur_APWorld/releases) (par @Jostar)
+* [La dernière version de clair_obscur.apworld](https://github.com/Demorck/ClairObscur_APWorld/releases) (par @Noeva)
 * [La dernière version du mod](https://github.com/Demorck/ClairObscurArchipelagoRandomizer/releases) (par @Demorck)
 
 ## Logiciels recommandés
@@ -21,6 +21,7 @@
 4. Hébergez la partie. Soit localement ou avec le site d'Archipelago.
 5. Téléchargez la bonne version du mod (Steam ou Gamepass) 
 6. Extrayez le à la racine du jeu (directement dans `Expedition 33`). Pour être sûr qu'il est bien extrait au bon endroit, vous devez retrouver 3 fichiers appelés ClairObscurRandomizer.qqch dans `\Sandfall\Content\Paks\LogicMods` et le dossier ue4ss dans `\Sandfall\Binaries\[WinGDK or Win64]`
+7. **UTILISATEURS DE LINUX**: `WINEDLLOVERRIDES="dwmapi.dll=n,b" %command%` à mettre dans les options de lancements
 7. Profitez !
 
 ## Se connecter à la salle
@@ -32,6 +33,8 @@
   * __Password__ :
 3. Cliquez sur "Connect" et patientez jusqu'à que ce soit écrit: "Connected".
 4. Créez une nouvelle sauvegarde si vous vous connectez à la salle pour la première fois. __RIEN NE SE PASSERA JUSQU'AUX VALLONS FLEURIS. QUAND VOUS Y ÊTES, PRESSEZ CTRL + F2__ (le temps que je trouve une correction de bug)
+
+# FAITES LE PROLOGUE EN ÉTANT CONNECTÉ A ARCHIPELAGO, CAR BEAUCOUP DE CHOSES SE PASSE AVEC LE MOD QUAND LE PROLOGUE SE TERMINE. IL Y A JUSTE BESOIN DE PARLER A EMMA AU FESTIVAL.
 
 ## Pour aller plus loin
 - [wiki](https://github.com/Demorck/ClairObscur_APWorld/wiki/)
