@@ -151,6 +151,21 @@
       "version_simple": "0.9.3",
       "world_version": "0.9.3a0"
     },
+    "ph-v0.9.4-alpha": {
+      "created_at": "2026-06-13T11:20:18Z",
+      "description": "Compatible with seeds generated in v9.0+\r\n[Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)\r\n\r\n## Logic \ud83e\uddee\r\n- Added TotOK B12 hammer chest without hammer\r\n- Killing Gleeok with bombs now requires 2 bomb bags\r\n- Added new hammer skew to Mutoh's bk chest to glitched logic\r\n- Added ToI basement boomerang switches with hammer to hard logic\r\n- Made some new videos for the Tricks and Skips doc\r\n- Figured out precise conditions for pirate ambush (it's not random!), and updated logic accordingly\r\n- Fixed temple of wind boss key chest needing bombs and not chus\r\n- Fixed temple of fire oob connecting to the wrong region\r\n\r\n## Flags \ud83d\udea9\r\n- Courage crest check correctly requires the sw sea chart when map warp is enabled\r\n- Added safety for salvage repair kits stealing the salvage arm\r\n- Made sure triforce crest is removed correctly after ghost ship\r\n- Getting pirate ambush before unlocking the ghost ship hunt works\r\n\r\n## Map Warp \ud83d\uddfa\ufe0f\r\n- Map warping from the sea is now enabled, but you can only warp to quadrants whose sea charts you've unlocked\r\n- You can no longer map warp to sea quadrants without the correct sea chart\r\n\r\n## Entrance Rando \ud83d\udeaa\r\n- Exiting courage temple puts you outside the gates even if they're closed\r\n- Fixed client crash on trying to redisconnect entrances that were not properly stored\r\n\r\n## Other \ud83d\udecd\ufe0f\r\n- Bonk trees no longer require a reload to reset, you can bonk again as soon as the rupee despawns.\r\n  - Unfortunately i could not make it consistent for dig spots, cause buried rupees are actors and actor spawning is annoying.\r\n- Added the /carrot_asked client command, that gives good debug info to send to me when something goes wrong. It's basically the stuff i usually ask for from the debug launcher, but without needing the debug launcher.\r\n- Fixed faulty key address that could cause keys to not be received in dungeon\r\n- Reworked Item Group definitions, and added some more aliases.",
+      "download_url": "https://github.com/carrotinator/Archipelago/releases/download/ph-v0.9.4-alpha/tloz_ph.apworld",
+      "has_manifest": true,
+      "hash_sha256": "078b814e3d01213496bf16c0f8ba4539c2edcf08d2e5210a837e44701419cc31",
+      "html_url": "https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.4-alpha",
+      "minimum_ap_version": "0.6.3",
+      "size": 2588204,
+      "source_url": "https://api.github.com/repos/carrotinator/Archipelago",
+      "tag": "ph-v0.9.4-alpha",
+      "title": "tloz_ph AP v9.4",
+      "version_simple": "0.9.4",
+      "world_version": "0.9.4a0"
+    },
     "tloz_ph-v0.8.2-alpha": {
       "created_at": "2026-01-31T10:54:58Z",
       "description": "\u26a0\ufe0fnot compatible with seeds generated in previous versions\u26a0\ufe0f\r\n\r\n- fixed crash on getting vanilla potion location with full potions\r\n- fixed crash on getting TotOK key from vanilla location\r\n- UT Events now work again\r\n- apparently location groups were not enabled lol\r\n- fixed crash on vanilla Oshus' sword chest\r\n- removed Eddo's door event when not shuffling houses\r\n- removed gust windmills event if not shuffling overworld",
