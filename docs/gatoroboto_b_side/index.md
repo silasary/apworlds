@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.7.0/gatoroboto_b_side.apworld">Latest Version (0.6.3)</a>
+- <a href="https://github.com/Nitroxyz/Gato-Roboto-B-Side-Archipelago/releases/download/0.7.1/gatoroboto_b_side.apworld">Latest Version (0.7.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

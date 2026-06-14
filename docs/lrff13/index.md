@@ -4,7 +4,7 @@ TODO
 
 
 ## Downloads
-- <a href="https://github.com/Bartz24/ArchipelagoLR/releases/download/0.4.0/lrff13.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/Bartz24/ArchipelagoLR/releases/download/0.5.0-pre-release/lrff13.apworld">Latest Version (0.5.0rc0.post0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

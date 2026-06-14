@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "chpas"
+  ],
   "description": "Tasked with helping pay off their employer's debt, explorers Olimar and Louie team up with Pikmin (including purple and white Pikmin) to collect treasure on a strange planet. Time ticks away on the surface, but cave systems let you take your time to let your strategy blossom.",
   "game": "Pikmin 2",
   "github": "https://github.com/chpas0/Pikmin2Archipelago",
@@ -241,6 +244,20 @@
       "title": "v0.7.1",
       "version_simple": "0.7.1",
       "world_version": "0.7.1"
+    },
+    "v0.7.2": {
+      "created_at": "2026-06-11T00:06:47Z",
+      "description": "**NOTE: This mod is still in the testing phase. Play at your own risk.**\r\n**NOTE 2: Games generated on earlier versions will NOT work on this version.**\r\n\r\n## Changelog\r\n- Fix a bug where Violet Candypop Buds would not show up on the boss floor of Submerged Castle if it was shuffled to Floor 1 or 2.\r\n  - The limits on Violet/Ivory Candypop Buds showing up on early floors have been removed entirely\r\n- Fix a bug where Ivory Candypop Buds would not show up if they had not been discovered in Awakening Wood\r\n- Fix a bug where Floor 4 of Submerged Castle could be encountered with no ability to easily clear the poison vents\r\n  - Even if enemy rando is on, there is now guaranteed to be at least one Bulbmin on this floor\r\n- Fix a bug where Wistful Wild would open when the debt was paid even if both globes had not been collected\r\n- Fix a bug where logic would expect you to be able to access the onion in Perplexing Pool, even if you don't have White Pikmin unlocked\r\n- Fix the most annoying bug this project has faced, aka the duplicate item receipt bug. Thank you to Sol for discovering the source of the bug!\r\n  - There may still be some situations where it occurs, but most should be fixed. Please let me know if you still encounter it.\r\n- Remove the \"Last Treasure Received\" counter as it was taking up too much game memory\r\n  - This will be re-implemented in the future\r\n- Fix a bug where enemies in dead-ends would already be spawned instead of dropping from the ceiling\r\n  - This may cause crashes in enemy rando, please let me know if you experience this\r\n- Fix a bug where generations could fail due to invalid treasure/poko collection options. Thank you to KingDragonite for discovering the bug and providing some of the code to fix it.\r\n- Fix a bug where the client would not properly launch Dolphin on Linux. Thank you to Aurifier for sharing the fix to this!\r\n- Remove the \"Nothing\" item and implement the \"Weapons In Pool\" option in a cleaner way\r\n- Fix a bug where the \"Collect Treasure\" win condition included filler items\r\n- Add new filler items: Pikmin checks\r\n  - There are checks for each Pikmin type, and the frequency of each can be set in the YAML\r\n  - The number of Pikmin you get from the check and the leaf type of the spawned Pikmin can also be set in the YAML\r\n  - These checks can be obtained before the Pikmin type is actually unlocked, but you won't be able to access the Pikmin until the type is unlocked\r\n\r\n## Known Bugs\r\n- Game will occasionally crash when loading the next day after the debt is repaid\r\n- Game will occasionally crash upon picking up certain treasures. This commonly happens with the first treasure you pick up on Day 2, usually whatever is in the Utter Scrap location. Entering a cave before collecting it usually avoids the crash.\r\n- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.\r\n- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.\r\n- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear\r\n- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.",
+      "download_url": "https://github.com/chpas0/Pikmin2Archipelago/releases/download/v0.7.2/pikmin2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "cdb86e631ab3a33ecf6e98fc909dec6c52f664a056a986f36daf173adb0643b3",
+      "html_url": "https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.7.2",
+      "size": 664803,
+      "source_url": "https://api.github.com/repos/chpas0/Pikmin2Archipelago",
+      "tag": "v0.7.2",
+      "title": "v0.7.2",
+      "version_simple": "0.7.2",
+      "world_version": "0.7.2"
     }
   }
 }

@@ -8,6 +8,9 @@
 #### v0.5.0rc1
 - <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.5.0-preview-1/okamihd.apworld">https://github.com/Ragmoa/Archipelago/releases/download/0.5.0-preview-1/okamihd.apworld</a>
 
+#### v0.4.6
+- <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.4.6/okamihd.apworld">https://github.com/Ragmoa/Archipelago/releases/download/0.4.6/okamihd.apworld</a>
+
 #### v0.4.5
 - <a href="https://github.com/Ragmoa/Archipelago/releases/download/0.4.5/okamihd.apworld">https://github.com/Ragmoa/Archipelago/releases/download/0.4.5/okamihd.apworld</a>
 
