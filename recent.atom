@@ -2,195 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-14T00:39:06.607079+00:00</updated>
+  <updated>2026-06-14T07:43:12.720564+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.1</id>
-    <title>SM64: Spicy Mycena 64 v0.0.1</title>
-    <updated>2026-06-07T22:11:15+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>See info page: https://github.com/Alchav/Archipelago/blob/spicy-mycena-64/worlds/sm64ex_spicy/docs/en_Spicy%20Mycena%2064.md&#13;
-&#13;
-Use this repo to build your sm64ex game executable: https://github.com/Alchav/sm64ex&#13;
-&#13;
-This is minimally tested, please report any issues! There will probably be some :)</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.2</id>
-    <title>SM64: Spicy Mycena 64 v0.0.1</title>
-    <updated>2026-06-08T01:36:32+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>- Music Shuffle option added.&#13;
-- BoB should not get swapped out for another level when Area Randomizer is off.&#13;
-- Castle Cannon renamed to Cannon Unlock - Castle.</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.3</id>
-    <title>SM64: Spicy Mycena 64 v0.0.3</title>
-    <updated>2026-06-08T02:29:47+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>- Fixes logic issue with Wing Mario over the Rainbow entrance logic</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/chickentuna/Archipelago-Fakutori/releases/tag/v0.1.1</id>
-    <title>Fakutori v0.1.1.post2</title>
-    <updated>2026-06-08T10:05:44+00:00</updated>
-    <author>
-      <name>chickentuna</name>
-    </author>
-    <content>- **Asset rebuilt 2026-06-08:** fixed generation crashes — `KeyError: 'Quasar'` in set_rules for non-Quasar goals, `Extra shop` duplication with 2+ Fakutori players, and a multiworld `FillError` (filler under-count from the shared item pool); added manifest `compatible_version` so the world reports its version (0.1.1) correctly.&#13;
-- Fixed EvolvingFire recipe logic&#13;
-- Consistent minimum ap client version&#13;
-&#13;
-see https://github.com/chickentuna/FakutoriRandomizer/releases for plugin</content>
-    <link href="https://github.com/chickentuna/Archipelago-Fakutori/releases/tag/v0.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.1</id>
-    <title>Deltarune v2.0.1</title>
-    <updated>2026-06-08T12:56:09+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <author>
-      <name>theemeraldsword85</name>
-    </author>
-    <author>
-      <name>Tenebrosful</name>
-    </author>
-    <author>
-      <name>Vintagix</name>
-    </author>
-    <author>
-      <name>Deadzi</name>
-    </author>
-    <author>
-      <name>Charaster</name>
-    </author>
-    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
-&#13;
-(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
-&#13;
-Here we are ! The big update ! So big that the patch note might miss some things but i'm gonna try to make it complete&#13;
-&#13;
-**Linux is not supported for now and will disconnect you after few seconds from the server! Linux will be supported in future updates**&#13;
-&#13;
-**Starting a chapter with previous chapter completion data isn't recommended as it was developed with that in mind and can lead to blocking bugs**&#13;
-# Changelog&#13;
-&#13;
-## APWorld&#13;
-- Complete rewrite of the rules with the new RuleBuilder, so AP v0.6.7 is the minimum version now. (which why would you be using anything else smh...)&#13;
-- The Client itself doesn't connect to the game anymore, but you can still use it for text, universal tracker, and patching the game.&#13;
-- Universal Tracker commands are now handled&#13;
-- Added Unlock Characters option&#13;
-- Added Unlock S/R/N-Actions option&#13;
-- Added Progressive [Character] Weapons&#13;
-- Added per-chapter macguffin option&#13;
-- Added Extra macguffin option&#13;
-- Added Remove Starting Inventory option&#13;
-- Added Better Odds option&#13;
-  - Chapter 1 and 2 man room 2% -&gt; 20%&#13;
-- RandomizeChapter is now set to All Unlocked by default&#13;
-- Added Option Presets&#13;
-- Secret Bosses items required like Broken Keys, KeyGen and EmptyDisk have now there own randomize option&#13;
-&#13;
-### Chapter 1&#13;
-- Include the Recruit and Lost locations&#13;
-- Added Throw Manual again location&#13;
-&#13;
-### Chapter 2&#13;
-- Added TwistedSwd fusion location, require Weird Route and chapter 2 included&#13;
-- Added Lose Swatchling location requirering Wrong Warp as an option&#13;
-- Added an option to exclude post-chapter locations to hold important items&#13;
-&#13;
-### Chapter 3&#13;
-- Added Extra Extra Key location for board 1&#13;
-- Change IncludeTRank option to ExcludeTRank option&#13;
-- Added Z-Rank with Z ExcludeZRank option&#13;
-&#13;
-### Chapter 4&#13;
-- Added Mike and games location as an option (Hints are sent when entering minigame room)&#13;
-- Also add an option to exclude platinum trophy if needed&#13;
-&#13;
-## Game&#13;
-&#13;
-- Archipelago Client is now in game&#13;
-- Option menu has been changed&#13;
-  - Added Music and SFX volume&#13;
-  - Added Return to Chapter Select&#13;
-  - Added Death Link configuration&#13;
-- Armor storage is now 60 for all chapters&#13;
-- Weapons storage is now 48 for all chapters&#13;
-- LancerCookie sell value is now D$50 for money farming&#13;
-- (Most) of location have now in-game preview when obtain&#13;
-- Shop have now in-game preview&#13;
-- Item balancing is now `final_stat = initial_stat * (current_chapter / item_chapter)`&#13;
-  - Can only downscale the stat, minimal 1 if stat isn't 0 or negative&#13;
-- Death Link now show you who and how send Death Link&#13;
-- You can now enter/exit Fullscreen in chapter select&#13;
-- You can customize color classification on connection screen&#13;
-- S.POISON is now used when obtained&#13;
-- When entering a chapter, the textboxes saying what items you got is gone so you don't have to wait through like 80,000 anymore&#13;
-- Some save points have been added or moved across the game&#13;
-&#13;
-### Chapter 1&#13;
-- The Chapter 3 version of the battle text (Tired and spare%) has been add when it happens, including Jevil&#13;
-- Entering the Man room now display how many attempts was required&#13;
-- You can now levelup like others chapters (max hp is 120/140/100, +2ATK max)&#13;
-&#13;
-### Chapter 2&#13;
-- The Chapter 3 version of the battle text (Tired and spare%) has been add when it happens&#13;
-- Entering the Man room now display how many attempts was required&#13;
-- Return to Castle Town has been moved to below the Cyber Field Warp area&#13;
-- After turning Berdly into a popsicle, Noelle will *gently* give you back the ThornRing into your inventory so you can craft the Twisted Sword. Thx Noelle!&#13;
-- Tasque manager weird route room and Werewerewire weird route room and pre-queen room now auto-save if you die so you respawn in the room instead of at the start of mansion&#13;
-&#13;
-### Chapter 3&#13;
-- Added an NPC in the Green Room that allow you to replay past boards&#13;
-- The same NPC also give you Ramb reward that you missed&#13;
-- Physical challenges room and gameshow room are now immune to Deathtlink&#13;
-- Dying in Green Room auto save before dying so you don't risk dying before saving&#13;
-&#13;
-### Chapter 4&#13;
-- You can now skip first sanctuary if you have Claimbclaws! (you won't get any of the checks there though, obv)&#13;
-- Added an NPC in third sanctuary to go to Gerson Study Arena&#13;
-- You can now bed skip during Weird Route (in future versions doing the cutscene at some point will be required though!)&#13;
-&#13;
-# Known Issues:&#13;
-- **Linux doesn't work. Well, technically it does, but you keep disconnecting every 5 seconds so it's nearly unplayable. Oops. Stand by for Linux support to be fixed...**&#13;
-- THE ARCHIPELAGO PROPHECIES... MY BABIES... THEY'RE... GONE!!! (they'll be back soon dw! just not right now)&#13;
-- Some locations don't tell you what you got in-game (namely, pretty much everything in chapter 4)</content>
-    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.2</id>
-    <title>Total War Warhammer 3 v0.10.2</title>
-    <updated>2026-06-08T18:41:51+00:00</updated>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>Fixed gold filler not working.&#13;
-Fixed resource buildings for Cataph's Southern Realms.&#13;
-Fixed Borgio.&#13;
-&#13;
-Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
-[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
-&#13;
-**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.1...v0.10.2</content>
-    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.2"/>
-  </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.2</id>
     <title>Deltarune v2.0.2</title>
@@ -245,6 +61,24 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
 &#13;
 Notably there is also now a [web client](https://barretg.github.io/Taskipelago/web-client/) with mobile support!</content>
     <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.9.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.5.0</id>
+    <title>Kerbal Space Program 1 v0.5.0</title>
+    <updated>2026-06-09T05:56:22+00:00</updated>
+    <author>
+      <name>nickdavies</name>
+    </author>
+    <content>This generates contract missions for you now. One big change is that &#13;
+&#13;
+**you must use career mode now!!** The game will try and enforce this though.&#13;
+&#13;
+You also **can't** complete your goal early anymore. You must be given the Contract for it first. This makes the game more like other AP runs where you need the item unlocked regardless of your skill level.&#13;
+&#13;
+Still experimental so please provide feedback&#13;
+&#13;
+**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.4.3...v0.5.0</content>
+    <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.5.0"/>
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.5.7</id>
@@ -361,6 +195,25 @@ You can now use Location Group names in your yaml for options like exclude_locat
 [Grandpa's Shop Guide](https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/blob/main/worlds/yugiohddm/docs/Grandpas%20Shop%20Guide.md)&#13;
 [Location Groups Info](https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/blob/main/worlds/yugiohddm/docs/Location%20Groups%20Info.md)</content>
     <link href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/tag/v0.3.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.3</id>
+    <title>Vacation Simulator v0.0.3</title>
+    <updated>2026-06-10T04:47:54+00:00</updated>
+    <author>
+      <name>chandler05</name>
+    </author>
+    <author>
+      <name>Energymaster22</name>
+    </author>
+    <content>This is a rewrite of the Vacation Simulator APWorld released by chandler.&#13;
+Current changes from that APWorld include:&#13;
+- Rewriting all of the logic using RuleBuilder, which should speed the world up slightly and add some extras for players&#13;
+- Reduced Fill Errors by making all non logically required Memories into standard items instead of progression.&#13;
+- Has an `archipelago.json` file, so the world will work in future versions of AP&#13;
+&#13;
+The world still uses the same slot data formatting and yaml settings as the original, so it should be a drop in replacement in it's current state. This may change in later updates.</content>
+    <link href="https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.3"/>
   </entry>
   <entry>
     <id>https://github.com/TRPG0/HbkArchipelago/releases/tag/0.3.1</id>
@@ -489,6 +342,53 @@ This update includes a lot of bug fixes and compatibility with the most recent v
 * Fixed an issue in bundling where certain files would not be found in the archive (@CodeTriangle, #75).&#13;
 </content>
     <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.0</id>
+    <title>Baba Is You v0.3.0</title>
+    <updated>2026-06-10T21:37:13+00:00</updated>
+    <author>
+      <name>EmilyEmmi</name>
+    </author>
+    <content>Another large update, now featuring levels from ??? and ABC, alongside a new option to place Blossoms at world clears, as was commonly suggested. Levels from Depths, Meta, and Center have yet to be implemented since logic needs to be written for level access, but this update also contains some new tools to hopefully make that easier.&#13;
+&#13;
+NOTE: v0.6.7 of Archipelago is required due to the use of Rule Builder.&#13;
+&#13;
+## New features:&#13;
+- (All) Added levels from ??? and ABC&#13;
+- (All) Implemented "Flower" area access and "Reach Depths" goal&#13;
+- (All) Added "Place Blossoms at World Clears" option, which forces Blossoms and Blossom Petals to be placed at world clear locations.&#13;
+- (Levelpack) Added many new features to Manual mode- see the [readme](worlds/baba_is_you/BABAPELAGO_README.md#offline-testing) for details&#13;
+- (Tracker) Universal tracker's tabs now appear inside of the Baba Is You client if it is installed&#13;
+  - Thanks to Faris and qwint for helping me figure this out!&#13;
+- (Tracker) The map tab now shows every location instead of just "Win" locations, including "Clear", "Complete", "Bonus", and "Transform" locations&#13;
+&#13;
+## Adjustments/fixes:&#13;
+- (APWorld) There are now 10 blossoms by default instead of 12&#13;
+- (APWorld) All rules now use Rule Builder (some didn't in the previous version)&#13;
+- (APWorld) Fixed generation failure if Transformsanity was disabled and a level with transformations was accessible&#13;
+- (APWorld) Added OptionErrors when attempting to use unimplemented features, and fixed other generation failures&#13;
+- (APWorld) The Goal Levels option is now automatically capped at the max amount of levels possible with the current settings&#13;
+- (APWorld) Fixed Chasm-Extra 1 not logically connecting to Chasm-Extra 4&#13;
+- (APWorld) Logic was adjusted for the following levels:&#13;
+  - Trick Door (Alt solution found by Uni)&#13;
+  - A Way Out? (fixed requiring You and not requiring Win)&#13;
+- (Levelpack) Added some more error messages&#13;
+- (Client) Fixed the levelpack not updating itself if the version you had was pre-v2.0&#13;
+  - Also fixed the levelpack ALWAYS updating itself regardless of version...&#13;
+- (Client) Fixed the save slot command causing an error when used mid-game&#13;
+- (Tracker) The tracker now shows logic based on your selected difficulty&#13;
+&#13;
+This contains the Baba Is You APWorld, the Babapelago levelpack, and extraslot.lua. ONLY THE APWORLD IS REQUIRED! It contains the levelpack as well and will automatically install the pack when starting. The levelpack is included in case this feature doesn't work for whatever reason, and extraslot.lua is a global mod needed to play more than three slots at once, if you wish to do so. The host only needs the APWorld no matter what.&#13;
+&#13;
+For installation instructions, PLEASE check out the [readme](worlds/baba_is_you/BABAPELAGO_README.md). Very important!&#13;
+&#13;
+KNOWN ISSUES:&#13;
+- The client may suddenly stop sending checks (I haven't encountered this in a while, so it may have been fixed). Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.&#13;
+- There may be issues on Mac and Linux, since I haven't been able to test those myself. Please report any issues you experience.&#13;
+- Normal/hard logic has been well tested, although It was not feasible to test every possible combination of items. Please report any issues. In particular, Ultimate Maze's transforms are a complicated case.&#13;
+- Some non-ascii or punctation characters may display strangely in the client, but this hasn't caused any crashes from my testing. Supposedly this does cause a crash on Mac, although I'm hesitant to fully confirm this.</content>
+    <link href="https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.0"/>
   </entry>
   <entry>
     <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.4</id>
@@ -1193,5 +1093,74 @@ For Archipelago instructions, see https://archipelago.gg/tutorial/&#13;
 * Reconcile boolean logic between client and server when prog groups are in OR branches&#13;
 * Added debug logging</content>
     <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.9.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.0h</id>
+    <title>Baba Is You v0.3.0</title>
+    <updated>2026-06-13T20:54:28+00:00</updated>
+    <author>
+      <name>EmilyEmmi</name>
+    </author>
+    <content>Tiny update to fix logic for one singular level. Wow! Only the APWorld was updated.&#13;
+&#13;
+NOTE: v0.6.7 of Archipelago is required due to the use of Rule Builder.&#13;
+&#13;
+## Adjustments/fixes:&#13;
+- (APWorld) Fixed logic for Stardrop (one solution was impossible without G)&#13;
+&#13;
+This contains the Baba Is You APWorld, the Babapelago levelpack, and extraslot.lua. ONLY THE APWORLD IS REQUIRED! It contains the levelpack as well and will automatically install the pack when starting. The levelpack is included in case this feature doesn't work for whatever reason, and extraslot.lua is a global mod needed to play more than three slots at once, if you wish to do so. The host only needs the APWorld no matter what.&#13;
+&#13;
+For installation instructions, PLEASE check out the [readme](worlds/baba_is_you/BABAPELAGO_README.md). Very important!&#13;
+&#13;
+KNOWN ISSUES:&#13;
+- The client may suddenly stop sending checks (I haven't encountered this in a while, so it may have been fixed). Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.&#13;
+- There may be issues on Mac and Linux, since I haven't been able to test those myself. Please report any issues you experience.&#13;
+- Normal/hard logic has been well tested, although It was not feasible to test every possible combination of items. Please report any issues. In particular, Ultimate Maze's transforms are a complicated case.&#13;
+- Some non-ascii or punctation characters may display strangely in the client, but this hasn't caused any crashes from my testing. Supposedly this does cause a crash on Mac, although I'm hesitant to fully confirm this.</content>
+    <link href="https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.0h"/>
+  </entry>
+  <entry>
+    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.5</id>
+    <title>Cyberpunk 2077 v0.0.1</title>
+    <updated>2026-06-14T03:19:09+00:00</updated>
+    <author>
+      <name>247Tossing</name>
+    </author>
+    <content># New Features&#13;
+ - Weapon Restrictions: Can be set to not allow you to equip certain weapons period, or require a pass to equip them which is obtained from the multiworld&#13;
+&#13;
+# Fixes and Improvements&#13;
+ - Fixed NCPD scanner missions trigger "Gig: Hi Ho Silver Lining"&#13;
+ - Beat on the Brat: Kabuki doesn't appear in the Locations list despite it being required for progression&#13;
+ - Several quests listed in "Locations" were part of either cut content, or pure logic for cyberpunks quest backend and have been removed&#13;
+ - Crafting components (both items and quickhacks) have been added to the filler items pool&#13;
+ - Overhauled the backend ID assignment to be done at generation&#13;
+ - Various generation stability improvements&#13;
+ - Client &lt;-&gt; Game connection stability improvements (You may see the game disconnect and reconnect when loading saves, this is expected)</content>
+    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.4</id>
+    <title>Vacation Simulator v0.0.4</title>
+    <updated>2026-06-14T03:35:50+00:00</updated>
+    <author>
+      <name>chandler05</name>
+    </author>
+    <author>
+      <name>Energymaster22</name>
+    </author>
+    <content>New:&#13;
+- `Early Big Item` Option.&#13;
+   - This option forces an addition `Gate Unlock` or `Camera` early. This should reduce early locking in multiworlds, and slightly lower `Fill Error` generation failures when generating solo.&#13;
+&#13;
+Changes:&#13;
+- Removed location data from slot data&#13;
+- Removed the `helpers.py` file&#13;
+   - After further research, it seems like the mod was not actually reading the location data out of slot data. And since the only thing in helpers.py` was something to help with filling the location data, both have been removed. This should lower slot data size significantly, and slightly speed up gen output.&#13;
+&#13;
+This update does not require a mod update.&#13;
+&#13;
+**Full Changelog**: https://github.com/energymaster22/Archipelago/compare/vacation_simulator_0.0.3...vacation_simulator_0.0.4</content>
+    <link href="https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.4"/>
   </entry>
 </feed>
