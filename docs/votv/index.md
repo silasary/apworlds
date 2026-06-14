@@ -1,10 +1,11 @@
 # Voices of the Void
 
-
+This is where you describe your game. Pretend you are marketing the game and that people have no clue what it is.
+Or make it silly. Whatever you wish I have no control over you.
 
 
 ## Downloads
-- <a href="https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.0.1/votv.apworld">Latest Version (0.1.0)</a>
+- <a href="https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.3.0/votv.apworld">Latest Version (0.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

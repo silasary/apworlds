@@ -123,6 +123,7 @@ AP Mod created and maintained by:
 
 The following users have been of particular help with this mod, via various playtesting/suggestions/research/feedback:
 
+- imlegos
 - jurjen909
 - Nixill
 - Ruinae Retroque Rursus
