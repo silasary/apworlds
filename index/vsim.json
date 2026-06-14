@@ -1,0 +1,45 @@
+{
+  "authors": [
+    "chandler05",
+    "Energymaster22"
+  ],
+  "game": "Vacation Simulator",
+  "github": "https://github.com/energymaster22/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "vacation_simulator_0.0.3": {
+      "created_at": "2026-06-10T04:47:54Z",
+      "description": "This is a rewrite of the Vacation Simulator APWorld released by chandler.\r\nCurrent changes from that APWorld include:\r\n- Rewriting all of the logic using RuleBuilder, which should speed the world up slightly and add some extras for players\r\n- Reduced Fill Errors by making all non logically required Memories into standard items instead of progression.\r\n- Has an `archipelago.json` file, so the world will work in future versions of AP\r\n\r\nThe world still uses the same slot data formatting and yaml settings as the original, so it should be a drop in replacement in it's current state. This may change in later updates.",
+      "download_url": "https://github.com/energymaster22/Archipelago/releases/download/vacation_simulator_0.0.3/vsim.apworld",
+      "has_manifest": true,
+      "hash_sha256": "66f49e8cf117108f2af0cba1f2221569a60a5678eabc09654233e0cd0035ee67",
+      "html_url": "https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 8514,
+      "source_url": "https://api.github.com/repos/energymaster22/Archipelago",
+      "tag": "vacation_simulator_0.0.3",
+      "title": "Vacation Simulator 0.0.3",
+      "version_simple": "0.0.3",
+      "world_version": "0.0.3"
+    },
+    "vacation_simulator_0.0.4": {
+      "created_at": "2026-06-14T03:35:50Z",
+      "description": "New:\r\n- `Early Big Item` Option.\r\n   - This option forces an addition `Gate Unlock` or `Camera` early. This should reduce early locking in multiworlds, and slightly lower `Fill Error` generation failures when generating solo.\r\n\r\nChanges:\r\n- Removed location data from slot data\r\n- Removed the `helpers.py` file\r\n   - After further research, it seems like the mod was not actually reading the location data out of slot data. And since the only thing in helpers.py` was something to help with filling the location data, both have been removed. This should lower slot data size significantly, and slightly speed up gen output.\r\n\r\nThis update does not require a mod update.\r\n\r\n**Full Changelog**: https://github.com/energymaster22/Archipelago/compare/vacation_simulator_0.0.3...vacation_simulator_0.0.4",
+      "download_url": "https://github.com/energymaster22/Archipelago/releases/download/vacation_simulator_0.0.4/vsim.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9eb39bad02bd030abb1ec69e4fff09ed41bc2bd615e6ef700a8742366800bd23",
+      "html_url": "https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 8011,
+      "source_url": "https://api.github.com/repos/energymaster22/Archipelago",
+      "tag": "vacation_simulator_0.0.4",
+      "title": "Vacation Simulator 0.0.4",
+      "version_simple": "0.0.4",
+      "world_version": "0.0.4"
+    }
+  }
+}
