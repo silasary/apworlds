@@ -9,6 +9,7 @@
   "license": null,
   "manifest_fields": [
     "authors",
+    "minimum_ap_version",
     "world_version"
   ],
   "versions": {
@@ -191,6 +192,21 @@
       "title": "MSS AP v0.2.3",
       "version_simple": "0.2.3",
       "world_version": "0.2.3"
+    },
+    "sluggers-v0.3.0": {
+      "created_at": "2026-06-07T16:21:30Z",
+      "description": "- Changed Wario City logic so activating the dynamo now requires Wario to be unlocked; previously it was based on recruiting Wario in the overworld and only required Donkey Kong.\r\n- Added explicit Universal Tracker support, including a tracker tab in the client, yaml-less tracking support, and out-of-logic indicators for shops when no minigames are available.\r\n- Converted all logic to use rule builder. This APWorld is incompatible with Archipelago versions prior to 0.6.7.\r\n- (v0.3.1 hotfix) Fixed an issue where the UT logic tracking item was erroneously generated in multiworlds. The APWorld in the release has been replaced with this patch.\r\n\r\nThis client can still be used for ongoing multiworlds but new tracker functionality is not supported for versions prior to 0.3.0.\r\n\r\nCheck out the [setup guide](<https://github.com/MarioManTAW/Archipelago/blob/sluggers/worlds/mario_super_sluggers/docs/setup_en.md>) for setup procedures. You may also find the [PopTracker pack](<https://github.com/MarioManTAW/MarioSuperSluggersAPTracker/releases>) helpful.",
+      "download_url": "https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.3.0/mario_super_sluggers.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9c6f03af2ff5f8663b124f613b0175a6e21f3dd38aba279ff4d4e14a0410fd2d",
+      "html_url": "https://github.com/MarioManTAW/Archipelago/releases/tag/sluggers-v0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 23772,
+      "source_url": "https://api.github.com/repos/MarioManTAW/Archipelago",
+      "tag": "sluggers-v0.3.0",
+      "title": "MSS AP v0.3.0-v0.3.1",
+      "version_simple": "0.3.1",
+      "world_version": "0.3.1"
     }
   }
 }
