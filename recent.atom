@@ -2,71 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-15T14:17:29.330070+00:00</updated>
+  <updated>2026-06-15T19:25:26.152164+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.2</id>
-    <title>CrossCode v0.9.2</title>
-    <updated>2026-06-10T19:06:40+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Fixes to Mod&#13;
-&#13;
-* Fixed an issue in bundling where certain files would not be found in the archive (@CodeTriangle, #75).&#13;
-</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.0</id>
-    <title>Baba Is You v0.3.0</title>
-    <updated>2026-06-10T21:37:13+00:00</updated>
-    <author>
-      <name>EmilyEmmi</name>
-    </author>
-    <content>Another large update, now featuring levels from ??? and ABC, alongside a new option to place Blossoms at world clears, as was commonly suggested. Levels from Depths, Meta, and Center have yet to be implemented since logic needs to be written for level access, but this update also contains some new tools to hopefully make that easier.&#13;
-&#13;
-NOTE: v0.6.7 of Archipelago is required due to the use of Rule Builder.&#13;
-&#13;
-## New features:&#13;
-- (All) Added levels from ??? and ABC&#13;
-- (All) Implemented "Flower" area access and "Reach Depths" goal&#13;
-- (All) Added "Place Blossoms at World Clears" option, which forces Blossoms and Blossom Petals to be placed at world clear locations.&#13;
-- (Levelpack) Added many new features to Manual mode- see the [readme](worlds/baba_is_you/BABAPELAGO_README.md#offline-testing) for details&#13;
-- (Tracker) Universal tracker's tabs now appear inside of the Baba Is You client if it is installed&#13;
-  - Thanks to Faris and qwint for helping me figure this out!&#13;
-- (Tracker) The map tab now shows every location instead of just "Win" locations, including "Clear", "Complete", "Bonus", and "Transform" locations&#13;
-&#13;
-## Adjustments/fixes:&#13;
-- (APWorld) There are now 10 blossoms by default instead of 12&#13;
-- (APWorld) All rules now use Rule Builder (some didn't in the previous version)&#13;
-- (APWorld) Fixed generation failure if Transformsanity was disabled and a level with transformations was accessible&#13;
-- (APWorld) Added OptionErrors when attempting to use unimplemented features, and fixed other generation failures&#13;
-- (APWorld) The Goal Levels option is now automatically capped at the max amount of levels possible with the current settings&#13;
-- (APWorld) Fixed Chasm-Extra 1 not logically connecting to Chasm-Extra 4&#13;
-- (APWorld) Logic was adjusted for the following levels:&#13;
-  - Trick Door (Alt solution found by Uni)&#13;
-  - A Way Out? (fixed requiring You and not requiring Win)&#13;
-- (Levelpack) Added some more error messages&#13;
-- (Client) Fixed the levelpack not updating itself if the version you had was pre-v2.0&#13;
-  - Also fixed the levelpack ALWAYS updating itself regardless of version...&#13;
-- (Client) Fixed the save slot command causing an error when used mid-game&#13;
-- (Tracker) The tracker now shows logic based on your selected difficulty&#13;
-&#13;
-This contains the Baba Is You APWorld, the Babapelago levelpack, and extraslot.lua. ONLY THE APWORLD IS REQUIRED! It contains the levelpack as well and will automatically install the pack when starting. The levelpack is included in case this feature doesn't work for whatever reason, and extraslot.lua is a global mod needed to play more than three slots at once, if you wish to do so. The host only needs the APWorld no matter what.&#13;
-&#13;
-For installation instructions, PLEASE check out the [readme](worlds/baba_is_you/BABAPELAGO_README.md). Very important!&#13;
-&#13;
-KNOWN ISSUES:&#13;
-- The client may suddenly stop sending checks (I haven't encountered this in a while, so it may have been fixed). Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.&#13;
-- There may be issues on Mac and Linux, since I haven't been able to test those myself. Please report any issues you experience.&#13;
-- Normal/hard logic has been well tested, although It was not feasible to test every possible combination of items. Please report any issues. In particular, Ultimate Maze's transforms are a complicated case.&#13;
-- Some non-ascii or punctation characters may display strangely in the client, but this hasn't caused any crashes from my testing. Supposedly this does cause a crash on Mac, although I'm hesitant to fully confirm this.</content>
-    <link href="https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.4</id>
     <title>Nine Sols v0.5.4</title>
@@ -946,13 +886,14 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
   </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.5</id>
-    <title>Total War Warhammer 3 v0.10.5</title>
+    <title>Total War Warhammer 3 v0.10.5.post2</title>
     <updated>2026-06-14T20:14:24+00:00</updated>
     <author>
       <name>jordansds</name>
     </author>
     <content>Added missing WoC building.&#13;
 Added Monogod buildings for Norsca that were failing to generate and clarified their names better.&#13;
+Fixed generation error with spheres mode if too many spheres generate and no sanities are enabled.&#13;
 &#13;
 Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
 [FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).</content>
@@ -1160,5 +1101,118 @@ It is now more important than ever with these new updates to report any bugs you
   - Fix "Fill all 4 Soul Boxes" check not working&#13;
   - Prevent softlock from "Music EE - Shepherd of Fire" check</content>
     <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.3.0</id>
+    <title>Ship of Harkinian v1.3.0</title>
+    <updated>2026-06-15T17:28:28+00:00</updated>
+    <author>
+      <name>aMannus</name>
+    </author>
+    <author>
+      <name>jeromkiller</name>
+    </author>
+    <author>
+      <name>ScipioWright</name>
+    </author>
+    <author>
+      <name>Fanta-Tanked</name>
+    </author>
+    <author>
+      <name>Sam</name>
+    </author>
+    <author>
+      <name>DaComputerNerd717</name>
+    </author>
+    <author>
+      <name>A-Green-Spoon</name>
+    </author>
+    <author>
+      <name>StuBob</name>
+    </author>
+    <author>
+      <name>Tzuf23</name>
+    </author>
+    <author>
+      <name>mattman107</name>
+    </author>
+    <author>
+      <name>Varuuna</name>
+    </author>
+    <author>
+      <name>Lorithan</name>
+    </author>
+    <author>
+      <name>BootsinSoots</name>
+    </author>
+    <author>
+      <name>briaguya</name>
+    </author>
+    <author>
+      <name>Sirius902</name>
+    </author>
+    <author>
+      <name>ThatHypedPerson</name>
+    </author>
+    <content>The team has been hard at work over the last couple of months to put this release together.&#13;
+&#13;
+This release features a few frequently requested features and a pretty major under the hood change!&#13;
+&#13;
+## Changes&#13;
+- Our client is now based on Ship of Harkinian 9.2.3, fixing several in-game tracker inconsistencies and introduces a "Allow background inputs" toggle among all other new built-in Ship features.&#13;
+- Added static hints with clarity options, no more wondering what a merchant has for sale or or if killing those gold skultullas is worth it.&#13;
+- Added Gossip stone hints.&#13;
+- Added a fully featured hint panel to the client.&#13;
+- Ported all logic to the rule builder format, allowing Universal tracker to explain why you can or can't collect certain checks.&#13;
+- Added more starting item options.&#13;
+- Added Medallion locked trial options.&#13;
+- Added Trial count options.&#13;
+- Added Damage and Trap link toggles.&#13;
+- Added Automatic map switching in poptracker.&#13;
+- Fixes and updates to Item classifications&#13;
+- Fixes and updates to Item and Location groupings.&#13;
+- Improved deathlink handling.&#13;
+- A ton of bugfixes.&#13;
+&#13;
+# Full Change log&#13;
+- Updated client to Ship of Harkinian 9.2.3&#13;
+- Added the ability to launch the Ship of Harkinian client form your room's web page, automatically populating the connection data fields.&#13;
+- Added Starting Item options for the following items:&#13;
+  - Kokiri Sword.&#13;
+  - Deku Shield.&#13;
+  - Master Sword.&#13;
+  - Ocarinas.&#13;
+  - Nuts.&#13;
+  - Sticks.&#13;
+  - Songs.&#13;
+- Added different options for starting items in links pocket.&#13;
+- Added Starting hearts option.&#13;
+- Added medallion locked trials and Required trials count option,&#13;
+- Added static hints with clarity options.&#13;
+- Added gossip stone hints.&#13;
+- Added a hint panel to the Ship of Harkinian client which features.&#13;
+  - Automatic creation of hints on clear static hint dialogue.&#13;
+  - Updating hint relevance for items you can receive.&#13;
+  - Sorting.&#13;
+  - Manually requesting hints with a fuzzy searching for relevant items.&#13;
+- Improved Trap randomization.&#13;
+- Added automatic map switching to the poptracker pack.&#13;
+- Added location and item groups for all items.&#13;
+  - These are used for creating ambiguous hints, hints that can refer to multiple items or locations.&#13;
+- Internal logic has been fully switched over to the rule builder.&#13;
+- Added Damage and Trap link.&#13;
+- Fixed deathlink getting send out multiple times.&#13;
+- Fixed Broken item references with golden skultullas.&#13;
+- Made the Archipelago Connected label automatically fade out after you've been connected for a while.&#13;
+- Fixed bug where "Song from Ocarina of Time" and "Sheik in ice cavern" checks got sent out erroneously when their related "Ocarina of time Item" and "Ice cavern Iron Boots Chest" checks were collected remotely while offline during asynch multiworlds.&#13;
+- Added Randomization of seeded client features&#13;
+  - Local Enemy Randomizer and Randomized Mirror mode should not be the same across multiworlds anymore&#13;
+- Updated Item classifications.&#13;
+- Stopped requesting location scouts on every connection, now only requesting them on save file creation.&#13;
+- Added a whole bunch of unit test.&#13;
+- Fixed Poe collector giving you a bottle when the check has already been collected remotely.&#13;
+- Fixed accidental goaling a second time when switching to a different slot after beating the game.&#13;
+- Incoming ice traps now have randomized models now.</content>
+    <link href="https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.3.0"/>
   </entry>
 </feed>
