@@ -20,7 +20,8 @@ more open first-floor progression.
 
 Spicy Mycena 64 replaces the old star-count castle doors with key-style progression:
 
-- `Progressive MIPS`, `Wing Cap Light`, `Courtyard Boos`, `Castle Toads`, `Castle Cannon`, and `Yoshi` for
+- `Castle - Progressive MIPS`, `Unlock Tower of the Wing Cap`, `Unlock Big Boo's Haunt`, `Castle - Toads`,
+`Castle - Cannon Unlock`, and `Castle - Yoshi` for
 specific castle features.
 - `Dark World Key` unlocks the old 8-star door.
 - `Progressive Basement Key` unlocks the basement key door, and then the old 30-star door.
@@ -29,8 +30,8 @@ infinite stairs.
 - `Progressive Key` in combined progressive key mode will provide the Dark World Key, then the two Progressive Basement
 Keys, then the three Progressive Upstairs Keys.
 
-Yoshi is also a location check in this fork. The `Yoshi` item enables the Yoshi encounter, and logic also expects access
-to the castle roof cannon through `Castle Cannon`.
+Yoshi is also a location check in this fork. The `Castle - Yoshi` item enables the Yoshi encounter, and logic also
+expects access to the castle roof cannon through `Castle - Cannon Unlock`.
 
 ## Level Feature Items
 
