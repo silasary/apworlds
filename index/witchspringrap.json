@@ -1,0 +1,77 @@
+{
+  "game": null,
+  "github": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago",
+  "manifest_fields": [],
+  "versions": {
+    "0.0.1": {
+      "created_at": "2026-05-22T02:10:11Z",
+      "description": "Initial release of an alpha - **working up to Chapter 2** without issue, Chapter 3 with issue. You can technically set it to any chapter goal and it should work. Untested past Chapter 3 at this time.\r\n\r\n**Logic issues currently exist**, overworld checks past Chapter 3 do not have logic pathing, so the world will still place items there, but it shouldn't place any important progression(I hope, not fully tested)\r\n\r\n1. Download the .apworld and double click it to install into your Archipelago location.\r\n2. Download BepInEx-Unity.IL2CPP-win-x64 and put into your WitchSpring R game folder.\r\nI tested this specifically with BepInEx 6.0.0-be.755 (Unity IL2CPP x64)\r\n3. Download WSR_Plugin.zip and either replace the plugins folder in the new BepInEx folder with this one, or move the .dll from WSR_Plugin into the plugins folder. \r\n\r\nLaunch the WitchSpring R Client and connect to your slot **BEFORE** launching the WitchSpring R game.",
+      "download_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.0.1/witchspringrap.apworld",
+      "has_manifest": false,
+      "hash_sha256": "1a23ec1453a33dbeb763eefe6c170cb3c81759e56e69a14ef5e8d43e5c2ebc7b",
+      "html_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.0.1",
+      "size": 21015,
+      "source_url": "https://api.github.com/repos/LeiAfkpuz/WitchSpring-R-Archipelago",
+      "tag": "0.0.1",
+      "title": "0.0.1",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "0.1.0": {
+      "created_at": "2026-05-22T03:46:32Z",
+      "description": "Logic is better and number of checks now vary based on goal!\r\n\r\n**I do not recommend setting a goal for anything above Chapter 3. Chapter 2 is tested and functions, Chapter 3 is half tested and mostly functions! Anything past that is at your own risk.**\r\n\r\n1. Install [BepInEx Unity IL2CPP](https://builds.bepinex.dev/projects/bepinex_be) into the [WitchSpring R](https://store.steampowered.com/app/1958220/WitchSpring_R/) game folder\r\n   ( Tested with [BepInEx 6.0.0-be.755](https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip) ) \r\n2. Launch the game once for the folders to be created\r\n3. Place the WitchSpringRArchipelago.dll into the new BepInEx/plugins folder / Or replace the plugins folder with the one from the .zip\r\n4. Install the .apworld - by default you should be able to double click this for your Archipelago setup to automatically place it. Otherwise, it goes into the custom worlds folder.",
+      "download_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.1.0/witchspringrap.apworld",
+      "has_manifest": false,
+      "hash_sha256": "defdde77b2f39240e79940d9dc7cc2bfe76a0bf79a5baa00cfcc2b59f476e4c4",
+      "html_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.1.0",
+      "size": 21872,
+      "source_url": "https://api.github.com/repos/LeiAfkpuz/WitchSpring-R-Archipelago",
+      "tag": "0.1.0",
+      "title": "0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "0.1.1": {
+      "created_at": "2026-05-23T13:51:13Z",
+      "description": "## Changelog\r\n- Instead of the plugin looking at player inventory and granting items that don't exist. There is now a new processed_received_index.txt generated to keep track of what has been granted to the player. This helps to make sure you don't have infinite consumables and don't get constantly spammed with \"Duplicate equipment\" warning locking up other cutscenes if there was an error granting an item in a scene.\r\n- Please note that in your AppData > Local > Archipelago there is a WitchspringR folder that keeps track of your various game seeds and logs items sent/received\r\n- Fixed Pudding Cave 2 to be a map that allows items to be granted on. ",
+      "download_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.1.1/witchspringrap.apworld",
+      "has_manifest": false,
+      "hash_sha256": "defdde77b2f39240e79940d9dc7cc2bfe76a0bf79a5baa00cfcc2b59f476e4c4",
+      "html_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.1.1",
+      "size": 21872,
+      "source_url": "https://api.github.com/repos/LeiAfkpuz/WitchSpring-R-Archipelago",
+      "tag": "0.1.1",
+      "title": "0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    },
+    "0.1.2": {
+      "created_at": "2026-05-23T13:59:39Z",
+      "description": "Selecting a Chapter 3 goal is much less scary now and should be better! Still expect to run into bugs and game locks requiring an Alt+F4. Please save often!\r\nReminder the goals are what Chapter you need to get TO for a goal, not get through. IE; Chapter 2 goal sends a goal once you REACH Chapter 2. Chapter 3 goal sends goal once you REACH Chapter 3. \r\n\r\n## Changelog\r\n- Events in Chapter 2 should now also send checks\r\n- Fixed some logic gates to help make spheres better\r\n- Should be able to set a Chapter 3 goal with much less pain than before\r\n- Region pathing has been updated, Blackrock Golem Cave Fire should now be correctly located within Chapter 1 checks\r\n- Figured out how to make the Boar Boss a check, understand logic for doing other bosses, but still have to work on that. \r\n- Made more maps available for receiving items in. \r\n\r\n## Known Bugs\r\n- Game may hardlock on you if you initiate a conversation or scene without having the required items. Attempts to just hardblock this have made things worse so far. So please **SAVE OFTEN**\r\n- Certain maps may still not grant received items while on them. As always, Blackwitch Forest is your go-to safety to make sure you receive items\r\n- May have some logic issues. Please let me know!\r\n- You will duplicate the Blessings received. Ones received via the multiworld will not have the proper timer shown, but still work on said timer. The multiworld and story given Blessings operate separate of each other, so enjoy being OP for the time being. \r\n- Some items received have placeholder images. Even furtherstill, some of them don't function at all and just take up an inventory slot. Sorry \r\n- The game will still show you the vanilla item you were supposed to receive even if you did not receive said item. Please refer to the WitchSpring R Client for the item you received/sent. ",
+      "download_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.1.2/witchspringrap.apworld",
+      "has_manifest": false,
+      "hash_sha256": "985b90d41cf91a03f2834a16b7b32c4460a8e0c5769c4098fa4afc506b4de769",
+      "html_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.1.2",
+      "size": 22671,
+      "source_url": "https://api.github.com/repos/LeiAfkpuz/WitchSpring-R-Archipelago",
+      "tag": "0.1.2",
+      "title": "0.1.2",
+      "version_simple": "0.1.2",
+      "world_version": "0.1.2"
+    },
+    "0.1.3": {
+      "created_at": "2026-05-29T01:53:29Z",
+      "description": "### Changelog\r\n\r\n- Removed several items from the pool that would cause a softlock if the player attempted to use them\r\n- Updated several location names to be more readable. EX: Event_9 - Item 1 ; Tutorial Ambush - Item 1",
+      "download_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.1.3/witchspringrap.apworld",
+      "has_manifest": false,
+      "hash_sha256": "c03fb01bcbdc387952988331327011aeb7de4eb9a24997b6df97e09a2b69e2e4",
+      "html_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.1.3",
+      "size": 22734,
+      "source_url": "https://api.github.com/repos/LeiAfkpuz/WitchSpring-R-Archipelago",
+      "tag": "0.1.3",
+      "title": "0.1.3",
+      "version_simple": "0.1.3",
+      "world_version": "0.1.3"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "game": "Rogue Legacy 2",
+  "github": "https://github.com/zaphim12/RL2Archipelago",
+  "manifest_fields": [],
+  "versions": {
+    "v1.0.0": {
+      "created_at": "2026-05-19T05:05:55Z",
+      "description": "First release\r\n\r\nCore gameplay loop is all working, and completing an Archipelago run should feel relatively balanced. ",
+      "download_url": "https://github.com/zaphim12/RL2Archipelago/releases/download/v1.0.0/rogue_legacy_2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "27d5f49b33bca56bd544da00688b2430fc7fb11d83ac9d9aa7ff9934013132bd",
+      "html_url": "https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.0.0",
+      "size": 19772,
+      "source_url": "https://api.github.com/repos/zaphim12/RL2Archipelago",
+      "tag": "v1.0.0",
+      "title": "v1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "v1.0.1": {
+      "created_at": "2026-05-20T20:57:51Z",
+      "description": "### v1.0.1 \r\n**Note: You will need both the new mod files and the new .apworld file if you update to this version**\r\n\r\n\r\nFixes a few issues related to traps:\r\n- Traps now persist through biome transitions, including from the manor into the castle\r\n- Traps now persist if the player returns to the main menu and then continues the run\r\n- Traps now persist if the player closes the game and reconnects to the Archipelago\r\n- Fixed automaton swarm and giant snowflake traps being swapped\r\n- The dragon lancers should now actually appear in all biomes\r\n\r\nAdded config options for how likely an AP check is given when a chest is opened\r\n- Added three options, one for each of bronze (normal), silver, and fairy chests.\r\n- The defaults use the game's default odds of a drop occurring from each of these chests\r\n  - 15% drop chance for bronze chests\r\n  - 99% drop chance for silver chests\r\n  - 100% drop chance for fairy chests\r\n\r\nFixed an issue where killing void beasts murmur and gongheads had their clear checks reversed\r\n\r\nChanged the names of manor locations and items to be less wordy and cleaned up some logic around assigning the names.",
+      "download_url": "https://github.com/zaphim12/RL2Archipelago/releases/download/v1.0.1/rogue_legacy_2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "fa4d3d11fa59b3fc94dba11458d5588b5ce0cd2c8953681676aa9fe8553bf26a",
+      "html_url": "https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.0.1",
+      "size": 17211,
+      "source_url": "https://api.github.com/repos/zaphim12/RL2Archipelago",
+      "tag": "v1.0.1",
+      "title": "v1.0.1",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
+    },
+    "v1.1.0": {
+      "created_at": "2026-05-26T17:11:02Z",
+      "description": "**Note: Please replace both the .apworld and the game mod files when updating to this version**\r\n\r\nAdds several soft-logic rules which reduces the early sphere bloating in previous versions. This should also help maintain a smoother progression. Each of these rules has an associated option that can be configured to change run progression.\r\n\r\n1. manor_depths_per_boss - Determines how many manor purchases are considered to be \"in-logic\" at the current number of boss-kills\r\n2. chest_pre_boss_percent - Determines how many chests in a given biome are \"in-logic\" before vs after a boss kill\r\n3. stat_upgrades_per_boss - Determines how many (bundled) stat upgrades items need to be received for a boss kill to be considered \"in-logic\"\r\n4. stat_upgrades_per_biome_tier - Same as above but for biome related checks like chests, journals, and memories\r\n\r\nAlso the config for locking the NPCs in their base-game manor purchase slots has been removed. Instead it is replaced with a new config: early_npc_unlocks (default: enabled)\r\nWhen this setting is enabled, NPC unlocks are pressured to be earlier in the run by imposing them as logical requirements for later bosses and biomes.",
+      "download_url": "https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.0/rogue_legacy_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "dd4d4dfc629690792ce17fd00b39f583b17cbb31b74a0b59b6af99988efb2143",
+      "html_url": "https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 20123,
+      "source_url": "https://api.github.com/repos/zaphim12/RL2Archipelago",
+      "tag": "v1.1.0",
+      "title": "v1.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v1.1.1": {
+      "created_at": "2026-05-28T21:55:01Z",
+      "description": "**Note: Please replace both the .apworld and the game mod files when updating to this version**\r\n\r\n### Improvements and new configs\r\n\r\n- There's a new settings screen accessible from the pause menu for archipelago related settings\r\n  - There's now an in-game toggle for death-link\r\n  - There's a toggle to switch to a more minimalist item log that just displays plaintext in the top right of the screen instead of using the game's overlay banner\r\n- Challenge room chests (the red portals) now reward you with a fairy chest location check for the biome you're in\r\n- The starting class is now randomized (and if the knight isn't randomly rolled, it now becomes an item that can be discovered during the run)\r\n- All explanation text for traits, relics, and spells are shown by default instead of the question marks the game normally shows for undiscovered items\r\n- Blueprints and runes now only cost ore and red aether, respectively. This is to reserve gold exclusively for manor purchases (and teleporters)\r\n\r\n### Bugfixes\r\n\r\n- Receiving a death-link while in the manor, docks, or character select no longer softlocks the game\r\n- Magnesis and lifesteal runes are no longer given by default when the enchantress is unlocked. They must be found as AP items",
+      "download_url": "https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.1/rogue_legacy_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b334cc6f871810df125b3a730ec791747a85b3863b630c6eb40d01640a395f28",
+      "html_url": "https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.1",
+      "minimum_ap_version": "0.5.0",
+      "size": 21031,
+      "source_url": "https://api.github.com/repos/zaphim12/RL2Archipelago",
+      "tag": "v1.1.1",
+      "title": "v1.1.1",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}

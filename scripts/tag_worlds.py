@@ -35,6 +35,7 @@ BAD_DESCRIPTIONS = [
     "Randomizer methods/data for generation",
     "ToeJam & Earl",
     "TODO: Better docstring",
+    "A World subclass that provides helpers for interacting with the rule builder",
 ]
 
 
