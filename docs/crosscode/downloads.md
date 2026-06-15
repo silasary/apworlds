@@ -1,9 +1,12 @@
 # CrossCode
 
 ## Latest
-- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.2/crosscode.apworld">Latest Version (0.9.2)</a>
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.3/crosscode.apworld">Latest Version (0.9.3)</a>
 
 ## All Versions
+
+#### v0.9.3
+- <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.3/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.3/crosscode.apworld</a>
 
 #### v0.9.2
 - <a href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.2/crosscode.apworld">https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.2/crosscode.apworld</a>
