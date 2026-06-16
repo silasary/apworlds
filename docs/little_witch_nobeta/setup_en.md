@@ -3,12 +3,12 @@
 ## Required Software
 
 - [Little Witch Nobeta](https://store.steampowered.com/app/1049890/Little_Witch_Nobeta/) Steam version of Little Witch Nobeta at the current version.
-- [MelonLoader](https://melonloader.co/download) Download the MelonLoader installer for your distribution.
-- [RandomizedWitchNobetaAP MelonLoader mod](https://github.com/danielgruethling/LittleWitchNobetaAP/releases) Download the LWNAP.zip from the github releases.
+- [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) Download the MelonLoader installer for your distribution.
+- [LittleWitchNobetaAP MelonLoader mod](https://github.com/danielgruethling/LittleWitchNobetaAP/releases) Download the LWNAP.zip from the github releases.
 
 ## Installation Procedures
 
-This plugin modifies the game using [MelonLoader](https://melonloader.co/download), so it is needed to install MelonLoader to load this plugin, here are the steps to achieve this:
+This plugin modifies the game using [MelonLoader](https://github.com/LavaGang/MelonLoader/releases), so it is needed to install MelonLoader to load this plugin, here are the steps to achieve this:
 - Find the installation directory of the game *(Usually in `steamapps/common`, you can find this from the game properties in Steam -> local files -> browse...)*
 - Run the MelonLoader installer and install the newest stable version to your installation directory. As of writing this this should be v0.7.1.
 - Download the client mod: [**`LWNAP.zip`**](https://github.com/danielgruethling/LittleWitchNobetaAP/releases)

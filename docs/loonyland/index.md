@@ -11,8 +11,6 @@ what lies behind the madness going on in Halloween Hill.
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Loonyland">English</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 

@@ -132,6 +132,21 @@
       "title": "Dwarfipelago 1.1.1-beta",
       "version_simple": "1.1.1",
       "world_version": "1.1.1b0"
+    },
+    "1.1.2": {
+      "created_at": "2026-06-16T15:44:00Z",
+      "description": "## Fixes\r\n\r\n- **DF v50 check detection**: several checks relied on job_type/field names that no longer exist on DFHack 53.14 (DF v50), so they silently never fired:\r\n  - Brewing and tanning are `CustomReactions`, not job types \u2014 now detected by reaction name, fixing **First Brew Complete**, **First Leather Tanned**, and the three Crafting Leather checks.\r\n  - **First Trap Built** now matches the actual cage/stone/weapon trap-arming jobs instead of a non-existent `ConstructTrap` type.\r\n  - **Pumped Water/Magma** compared against the wrong enum value and could never register Water; fixed, and hand-cranked pumps are no longer excluded.\r\n  - **Sold an Artifact** now also handles DF v50's `item` pointer (previously only `item_id`).\r\n  - **First Eggs Hatched** disabled for now \u2014 no reliable hatch signal exists on v50.\r\n- **Sold an Artifact false-fired on world load**: the check scanned every historical artifact in the world instead of just ones present in your fort, so it could trip the instant a save loaded. Now tracks only artifacts actually present in your fort and fires when one of those goes missing.\r\n- **Sold an Artifact false-fired on raids**: sending a squad out with an artifact equipped registered as a \"sale\" once they returned. Now only fires when an artifact is confirmed trader-owned and then departs \u2014 raids, theft, and destruction no longer count.\r\n- **Treasury wealth undercounted stockpiled valuables**: coins and gems stored in bins, bags, or coffers were excluded by an overly broad \"in inventory\" check. They now count toward treasury wealth.\r\n- **Craftsanity rule fixes**: corrected crafting-permit/material logic for the \"Crafts\" item category (wood/stone, glass, and metal crafts were sharing one incorrect rule).\r\n- **World gen preset**: rewritten with the complete parameter set; the previous preset was missing parameters.\r\n\r\n## Improvements\r\n\r\n- **Milestone ladder prerequisites**: tiered milestones (mining depth, mining tiles, farming, and the cavern ladder) now require the previous tier to be reachable first, so logic can no longer hand out a high tier before earlier ones.\r\n- **Options page reorganized**: the WebHost options/YAML page now groups settings into collapsible sections (Goal Settings, Death Link, Craftsanity, Item & Location Options), leaving only the high-level options on the main page. Verified via a full local generation run with differing per-slot craftsanity/permit settings that the DataPackage checksum stays stable.\r\n\r\n## Other\r\n\r\n- Added two hidden commands",
+      "download_url": "https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.1.2/dwarf_fortress.apworld",
+      "has_manifest": true,
+      "hash_sha256": "08d4776a5b2c2c7decd967c5aa9be9ed9a178c16b3397b229cb40c8fef8b76ca",
+      "html_url": "https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.1.2",
+      "minimum_ap_version": "0.4.0",
+      "size": 66278,
+      "source_url": "https://api.github.com/repos/EthanTheBrave/Dwarfipelago",
+      "tag": "1.1.2",
+      "title": "Dwarfipelago v1.1.2",
+      "version_simple": "1.1.2",
+      "world_version": "1.1.2"
     }
   }
 }

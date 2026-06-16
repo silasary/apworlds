@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/z3xox/Tenkaichi2AP/releases/download/v0.2.5/budokai_tenkaichi2.apworld">Latest Version (0.2.5)</a>
+- <a href="https://github.com/z3xox/Tenkaichi2AP/releases/download/v0.3.0/budokai_tenkaichi2.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/z3xox/Tenkaichi2AP/releases/download/v0.3.0/budokai_tenkaichi2.apworld">https://github.com/z3xox/Tenkaichi2AP/releases/download/v0.3.0/budokai_tenkaichi2.apworld</a>
 
 #### v0.2.5
 - <a href="https://github.com/z3xox/Tenkaichi2AP/releases/download/v0.2.5/budokai_tenkaichi2.apworld">https://github.com/z3xox/Tenkaichi2AP/releases/download/v0.2.5/budokai_tenkaichi2.apworld</a>

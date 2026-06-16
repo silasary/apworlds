@@ -1,9 +1,17 @@
 {
+  "authors": [
+    "fragger",
+    "espalchemist"
+  ],
   "description": "",
   "game": "Little Witch Nobeta",
   "github": "https://github.com/danielgruethling/Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.1.2-alpha": {
       "created_at": "2024-07-28T07:25:08Z",
@@ -95,6 +103,22 @@
       "title": "Little Witch Nobeta apworld 0.2.1-beta",
       "version_simple": "0.2.1",
       "world_version": "0.2.1"
+    },
+    "0.3.1": {
+      "created_at": "2026-02-22T20:22:22Z",
+      "description": "This is version 0.3.1-beta for the new apworld of Little Witch Nobeta AP to use with the new MelonLoader client mod.\r\n\r\nA bunch of the changes were contributed by @espaspw, thanks for the huge contribution!\r\n\r\n0.3.1 changes compared to 0.2.1:\r\n- A lot of new options and some were changed. See https://github.com/danielgruethling/LittleWitchNobetaAP/releases/tag/0.3.1 for details\r\n- The apworld now adds its world version to slot data for a version check in the game client\r\n- Removed obsolete option for difficulty because this is chosen when creating the save game\r\n- Added partial support for universal tracker\r\n  - Now switches map data based on data storage values set by the client\r\n  - Full option pass through is planned for a future version to better support weighted options\r\n    - For now you will need to set weighted options to what they rolled when supplying the yaml to universal tracker\r\n- Added option groups\r\n- Switched logic rule structure to Rule Builder \r\n\r\nFrom now on the game client mod and the apworld will have seperate releases. For the client mod look [here](https://github.com/danielgruethling/LittleWitchNobetaAP/releases).\r\n\r\nFor a setup guide look [here](https://github.com/danielgruethling/Archipelago/blob/game_lwn/worlds/little_witch_nobeta/docs/setup_en.md). The links to the player options there only work when you run the web host yourself. Generate a template yaml using the launcher option and set your personal options from there.\r\n\r\nLogic is now partially generated from this repo: https://github.com/danielgruethling/NobetaLogic\r\nWhen you want to PR logic fixes and they go into rules.py, regions.py or locations.py, please PR them there.",
+      "download_url": "https://github.com/danielgruethling/Archipelago/releases/download/0.3.1/little_witch_nobeta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "abb5a48da7c79baef9fb1c762ca5d5fa1e49e50518575be49e6be340eae705fa",
+      "html_url": "https://github.com/danielgruethling/Archipelago/releases/tag/0.3.1",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 29613,
+      "source_url": "https://api.github.com/repos/danielgruethling/Archipelago",
+      "tag": "0.3.1",
+      "title": "Little Witch Nobeta apworld 0.3.1-beta",
+      "version_simple": "0.3.1",
+      "world_version": "0.3.1"
     }
   }
 }
