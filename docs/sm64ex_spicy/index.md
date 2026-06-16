@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-0.0.7/sm64ex_spicy.apworld">Latest Version (0.0.7)</a>
+- <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-0.0.8/sm64ex_spicy.apworld">Latest Version (0.0.8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

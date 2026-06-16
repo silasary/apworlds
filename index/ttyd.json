@@ -102,6 +102,22 @@
       "version_simple": "0.10.0",
       "world_version": "0.10.0"
     },
+    "v0.10.2": {
+      "created_at": "2026-06-14T20:49:34Z",
+      "description": "## Changelog\r\n- Expanded the games memory from 24MB to 64MB. This is a necessary step to maintain stability with the new Multiplayer update and Enemy Randomizer.\r\n- New yaml option: ConsoleMode. This is deliberately stated in the yaml that this should only ever be enabled if you intend to play solo on a console, and should not be enabled for any other reason. This will disable multiplayer functionality, and change some of the patches applied to the game.\r\n- Max rendered player count bumped from 16 to 24.\r\n- Re-Enabled color syncing between players in Multiplayer.\r\n\r\n# Note\r\nAs of v0.10.2 a new setting is required in your dolphin emulator for the game to function. This must be enabled before the game can be launched. In Config > Andvanced, \"Enable Emulated Memory Size Override\" must be checked, and the MEM1 slider must be set to 64MB. If this setting is not set the game will crash on boot.\r\n\r\n## Fixes\r\n- Fix a logic error for Poshley heights that expected you to have access with a lot less items than were actually required.",
+      "download_url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.2/ttyd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d450e5f8559a9bc8d3a30c54dbce313aef662cbbce2620e8793e438b61aa85e4",
+      "html_url": "https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.2",
+      "minimum_ap_version": "0.6.3",
+      "prerelease": true,
+      "size": 696349,
+      "source_url": "https://api.github.com/repos/jamesbrq/ArchipelagoTTYD",
+      "tag": "v0.10.2",
+      "title": "TTYD AP v0.10.2 Pre-Release",
+      "version_simple": "0.10.2",
+      "world_version": "0.10.2"
+    },
     "v0.2.0": {
       "created_at": "2025-04-20T21:38:48Z",
       "description": "Additions:\r\n3 new yaml options. LimitChapterLogic, LimitChapterEight, and PalaceSkip\r\nLimitChapterLogic: Chapters needing to be completed are determined during generation. Any chapters not required to beat the game will contain only junk items belonging to you.\r\nLimitChapterEight: Chapter 8 will only contain junk items belonging to you. All chapter 8 key items are force placed into their vanilla locations.\r\nPalaceSkip: Entering the thousand year door will take you straight to the room before Grodus.\r\n\r\nBUGFIXES:\r\n-Various client bugs and apworld logic errors\r\n-Fix for not being able to go to the moon more than 1 time\r\n-Fix for ch.7 progress being reverted if you talked to goldbob in poshley heights after going to the moon.\r\n-Fix for metal door in ch.5 reappearing after being opened\r\n-Fix for game crashing when talking to the mover in ch.2\r\n-Fix for yoshi check being triggerable twice in ch.3\r\n-Fix for cutscene error in grubbas office if you came in from the storage room before becoming a fighter.\r\n-Fix for issues in ch.6 regarding the bowser intermission.\r\n-Fix for jolene cutscene in ch.3 hallway playing when it shouldnt\r\n-Fix for NpcnameToPtr errors in ch.3 related to the yoshi egg\r\n-Fix for being softlocked in ch.3 if you warped out of the locker room while the champion fight was reserved.\r\n-Fix for game giving you partners for free in ch.3\r\n-Fix for 2 ships being in the rogueport docks if you beat ch.5 without ever sailing there,\r\n-Fix for entrance to Black Chest room in ch.1 teleporting you to the other side\r\n-Fix for doopliss event being missing in twilight trail if you warped out too early\r\n-Fix for the coconuts in ch.5 crashing when picking them up twice.\r\n-Fix for crash during some cutscenes if you did not have a partner/follower out.\r\n-Fix for SP bar not updating properly\r\n-Fix for losing maximum SP if you beat an earlier chapter than you already had done.\r\n-Various other small mod bugs and issues.\r\n\r\n\r\nDISCLAIMER: This apworld contains a derivative work licensed under GPL-3.\r\n\r\n**Full Changelog**: https://github.com/jamesbrq/ArchipelagoTTYD/compare/v0.1.1...v0.2.0",

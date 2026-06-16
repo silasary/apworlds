@@ -2,175 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-16T00:47:19.456946+00:00</updated>
+  <updated>2026-06-16T08:01:10.684979+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.5</id>
-    <title>SM64: Spicy Mycena 64 v0.0.5</title>
-    <updated>2026-06-13T09:28:17+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>You must re-build sm64ex if you have an older version!&#13;
-&#13;
-  - Added Universal Tracker support.&#13;
-  - Added per-level move randomizer modes for all 10 movement abilities.&#13;
-  - Added missing per-level Purple Switch items for JRB, DDD, TTM, and THI.&#13;
-  - Added Water Level Diamond item.&#13;
-  - Added Drain the Moat location check and Unlock Vanish Cap Under the Moat item. The grate opening and the moat draining are now separate.&#13;
-  - Added Wing Mario Over the Rainbow Bob-omb Buddy check and cannon unlock item.&#13;
-  - Added Coinsanity option.&#13;
-  - Reworked and fixed Tiny-Huge Island logic.&#13;
-  - Reworked and fixed Wet-Dry World logic&#13;
-  - Fixed Hazy Maze Cave coin logic.&#13;
-  - Adjusted Dire, Dire Docks logic to account for triple jumping onto the sub, and reaching poles from the sub.&#13;
-  - Renamed/formatted cannon and painting unlock item names consistently with hyphens.&#13;
-  - Improved the pause menu.&#13;
-&#13;
-As always, let me know what's broken!</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.4-alpha</id>
-    <title>The Legend of Zelda - Phantom Hourglass v0.9.4a0</title>
-    <updated>2026-06-13T11:20:18+00:00</updated>
-    <author>
-      <name>carrotinator</name>
-    </author>
-    <author>
-      <name>Tanker50207</name>
-    </author>
-    <author>
-      <name>palex00</name>
-    </author>
-    <author>
-      <name>CelestialKitsune</name>
-    </author>
-    <author>
-      <name>DayKat</name>
-    </author>
-    <author>
-      <name>1313e</name>
-    </author>
-    <author>
-      <name>Catzador</name>
-    </author>
-    <content>Compatible with seeds generated in v9.0+&#13;
-[Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)&#13;
-&#13;
-## Logic 🧮&#13;
-- Added TotOK B12 hammer chest without hammer&#13;
-- Killing Gleeok with bombs now requires 2 bomb bags&#13;
-- Added new hammer skew to Mutoh's bk chest to glitched logic&#13;
-- Added ToI basement boomerang switches with hammer to hard logic&#13;
-- Made some new videos for the Tricks and Skips doc&#13;
-- Figured out precise conditions for pirate ambush (it's not random!), and updated logic accordingly&#13;
-- Fixed temple of wind boss key chest needing bombs and not chus&#13;
-- Fixed temple of fire oob connecting to the wrong region&#13;
-&#13;
-## Flags 🚩&#13;
-- Courage crest check correctly requires the sw sea chart when map warp is enabled&#13;
-- Added safety for salvage repair kits stealing the salvage arm&#13;
-- Made sure triforce crest is removed correctly after ghost ship&#13;
-- Getting pirate ambush before unlocking the ghost ship hunt works&#13;
-&#13;
-## Map Warp 🗺️&#13;
-- Map warping from the sea is now enabled, but you can only warp to quadrants whose sea charts you've unlocked&#13;
-- You can no longer map warp to sea quadrants without the correct sea chart&#13;
-&#13;
-## Entrance Rando 🚪&#13;
-- Exiting courage temple puts you outside the gates even if they're closed&#13;
-- Fixed client crash on trying to redisconnect entrances that were not properly stored&#13;
-&#13;
-## Other 🛍️&#13;
-- Bonk trees no longer require a reload to reset, you can bonk again as soon as the rupee despawns.&#13;
-  - Unfortunately i could not make it consistent for dig spots, cause buried rupees are actors and actor spawning is annoying.&#13;
-- Added the /carrot_asked client command, that gives good debug info to send to me when something goes wrong. It's basically the stuff i usually ask for from the debug launcher, but without needing the debug launcher.&#13;
-- Fixed faulty key address that could cause keys to not be received in dungeon&#13;
-- Reworked Item Group definitions, and added some more aliases.</content>
-    <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.4-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.1.1-beta</id>
-    <title>Dwarf Fortress v1.1.1b0</title>
-    <updated>2026-06-13T16:35:37+00:00</updated>
-    <author>
-      <name>Dwarfipelago Contributors</name>
-    </author>
-    <content># **THIS IS A QUICK PATCH VERSION FOR 1.1.0**&#13;
-&#13;
-## Fixes in 1.1.1&#13;
--  Datapackage changed so the generated worlds can be hosted on archipelago.gg and any machine that did not generate it directly.&#13;
-- Logic issues with the permits.&#13;
-- Sold an artifact check fixed, but will forever fire. [Current issue]&#13;
-- Expedition check fixes.&#13;
-- All leather jobs were mislabeled &#13;
-- First brew finally works again.... Matched the same job call for counting alcohol brews. &#13;
-- Pump checks should work now.&#13;
-- Fixed world gen txt file.&#13;
-&#13;
-QUICK NOTE:&#13;
-If you choose to do crafting permits, you either need to have craftsanity set to hard, enable materials, or increase the number of total items to create for the final check.&#13;
-&#13;
-## Upgrade notes&#13;
-- Update the mod and apworld together to 1.1.1 (version match enforced).&#13;
--  Regeneration required because of the datapackage reworks</content>
-    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.1.1-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.4.0</id>
-    <title>Wario Land 4 v3.4.0</title>
-    <updated>2026-06-13T17:13:01+00:00</updated>
-    <author>
-      <name>lil David</name>
-    </author>
-    <content>## General changes&#13;
-* World now requires AP 0.6.7 or newer&#13;
-## Generation changes&#13;
-* Fixed the generator choking when all items are set as non-local&#13;
-## Option changes&#13;
-* Added new levels "intermediate" and "anything goes" to the logic difficulty option&#13;
-  * Intermediate requires some of the simpler tricks originally in advanced logic&#13;
-  * Anything goes is currently relegated to a single new trick in TTL that's both difficult and risky&#13;
-  * Check the [trick guide](https://github.com/lilDavid/Archipelago-Wario-Land-4/blob/main/src/wl4/docs/en_Wario%20Land%204.md#what-do-the-logic-levels-do) for details&#13;
-  * **Note:** The PopTracker will need to be updated to reflect this option properly because the internal representation for advanced has changed&#13;
-* If the required jewels option is set higher than the pool jewels option, the former is now adjusted down instead of the latter up&#13;
-## Logic changes&#13;
-* Fixed logic not accounting for Ringosukis at the top of the jungle room in PZ on Hard and S-Hard&#13;
-* Fixed a logical point of no return for TBT Toy Car Tower Diamond&#13;
-* New tricks:&#13;
-  * Intermediate:&#13;
-    * MJ with Grab instead of Ground Pound&#13;
-    * Front of TBB with Grab in open portals&#13;
-  * Advanced:&#13;
-    * PZ jungle room with minion jump&#13;
-    * Escape PZ without Ground Pound&#13;
-    * TBB bouncy room alcove with minion jumps&#13;
-  * Anything Goes:&#13;
-    * Escape TTL without Super Ground Pound&#13;
-## Universal Tracker changes&#13;
-* You can now use /explain to read about this world's logic rules, including the effects of logic difficulty</content>
-    <link href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.0.1-TEST</id>
-    <title>Kirby Air Ride v1.0.0</title>
-    <updated>2026-06-13T17:35:37+00:00</updated>
-    <author>
-      <name>DeDeDK</name>
-    </author>
-    <content>- Fixes for not being able to hook into dolphin due to DME type checking differences across versions&#13;
-&#13;
-## What's Changed&#13;
-* Fixes by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/52&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v1.0.0-TEST...v1.0.1-TEST</content>
-    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.0.1-TEST"/>
-  </entry>
   <entry>
     <id>https://github.com/tdkollins/Archipelago-Rabi-Ribi/releases/tag/1.5.3</id>
     <title>Rabi-Ribi v1.5.3</title>
@@ -221,7 +57,7 @@ Additionally, the logic assumes that the player knows of hidden paths throughout
   </entry>
   <entry>
     <id>https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/tag/v0.5.0</id>
-    <title>Oblivion Remastered v0.5.0.post2</title>
+    <title>Oblivion Remastered v0.5.0.post3</title>
     <updated>2026-06-13T18:50:57+00:00</updated>
     <author>
       <name>POD-io</name>
@@ -627,6 +463,26 @@ A large part of this update was backend stability focused, related to memory usa
 &#13;
 It is now more important than ever with these new updates to report any bugs you experience either into the discord or on github. If you experience anything please do not hesitate to do so.</content>
     <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.2</id>
+    <title>Paper Mario The Thousand Year Door v0.10.2</title>
+    <updated>2026-06-14T20:49:34+00:00</updated>
+    <author>
+      <name>jamesbrq</name>
+    </author>
+    <content>## Changelog&#13;
+- Expanded the games memory from 24MB to 64MB. This is a necessary step to maintain stability with the new Multiplayer update and Enemy Randomizer.&#13;
+- New yaml option: ConsoleMode. This is deliberately stated in the yaml that this should only ever be enabled if you intend to play solo on a console, and should not be enabled for any other reason. This will disable multiplayer functionality, and change some of the patches applied to the game.&#13;
+- Max rendered player count bumped from 16 to 24.&#13;
+- Re-Enabled color syncing between players in Multiplayer.&#13;
+&#13;
+# Note&#13;
+As of v0.10.2 a new setting is required in your dolphin emulator for the game to function. This must be enabled before the game can be launched. In Config &gt; Andvanced, "Enable Emulated Memory Size Override" must be checked, and the MEM1 slider must be set to 64MB. If this setting is not set the game will crash on boot.&#13;
+&#13;
+## Fixes&#13;
+- Fix a logic error for Poshley heights that expected you to have access with a lot less items than were actually required.</content>
+    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.2"/>
   </entry>
   <entry>
     <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.14.0</id>
@@ -1081,5 +937,79 @@ for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
 # Bugfixes&#13;
 - Fixes Skipped maps appearing when they shouldn't</content>
     <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.14.2</id>
+    <title>Metroid Dread v0.6.0</title>
+    <updated>2026-06-16T00:07:43+00:00</updated>
+    <author>
+      <name>maxdietz</name>
+    </author>
+    <author>
+      <name>Randovania Dread contributors</name>
+    </author>
+    <content>## Installation
+
+1. Download `dread.apworld` (below) and drop it into your
+   Archipelago install's `custom_worlds/` directory.
+2. Generate a multiworld using `Metroid Dread` as the game.
+3. Launch the **Dread Client** from Archipelago's Launcher (or
+   open a `.dreadap` file). The window includes an AP server address
+   bar, a **"Dread"** tab (live status + log), and a top-bar
+   **Switch-status pill** for pointing the client at your Switch or
+   Ryujinx. Click the pill → edit the IP → **Reconnect** (or use
+   `/dread_connect &lt;ip&gt;` in the command bar).
+4. Run `/setup` in the client to build and deploy the patched
+   RomFS — see the
+   [first-time setup walkthrough](https://github.com/mdietz94/dread_ap/blob/main/docs/first-time-setup.md)
+   for the click-by-click guide.
+
+See [README.md](https://github.com/mdietz94/dread_ap/blob/main/README.md)
+for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
+
+
+## What's Changed
+* Fix 0/0 power bombs when start-location randomizer grants Power Bomb by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/129
+
+
+**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.14.1...v0.14.2</content>
+    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.14.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.5</id>
+    <title>Feeding Frenzy 2 v0.5</title>
+    <updated>2026-06-16T01:41:39+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>Movement rando, level rando, and borderless fullscreen!&#13;
+&#13;
+## What's new:&#13;
+* Added /fullscreen command to client that sets the application to borderless fullscreen&#13;
+* Added 'Dash' and 'Suck' randomization items&#13;
+  * Notably this also affects the ability to clear poison since it blocks left/right clicking&#13;
+* Level randomization added with the 'level_shuffle' YAML option</content>
+    <link href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.8</id>
+    <title>SM64: Spicy Mycena 64 v0.0.8</title>
+    <updated>2026-06-16T07:24:06+00:00</updated>
+    <author>
+      <name>Alchav</name>
+    </author>
+    <content>Fixes have been made to sm64ex, but it should be backwards and forward-compatible going back to 0.0.6&#13;
+&#13;
+.apworld updates:&#13;
+- Lethal Lava Land 1-Up location names have been fixed and adjusted.&#13;
+- Logic fixes in BITFS, WDW, WF, TTC, WMOTR, BITDW, CCM, WMOTR, TTM, RR, BOB&#13;
+&#13;
+sm64ex fork updates:&#13;
+- 1-Up blocks once again spawn 1-Ups, which must be collected to register their checks.&#13;
+- Bookend enemies should drop blue coins when they kamikaze if no_despawns is enabled.&#13;
+- Yoshi no longer "upgrades" your Triple Jump.&#13;
+- Checks will not be sent during the demos.&#13;
+- A patch file is included which hopefully fixes whatever is wrong with the Better Camera in the Bowser fight arenas.</content>
+    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.8"/>
   </entry>
 </feed>
