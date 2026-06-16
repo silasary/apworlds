@@ -1,9 +1,12 @@
 # Grim Dawn
 
 ## Latest
-- <a href="https://github.com/routhken/Archipelago/releases/download/v0.4.1/grim_dawn.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/routhken/Archipelago/releases/download/v0.4.1/grim_dawn.apworld">Latest Version (0.4.1.post2)</a>
 
 ## All Versions
+
+#### v0.4.1.post2
+- <a href="https://github.com/routhken/Archipelago/releases/download/v0.4.1/grim_dawn.apworld">https://github.com/routhken/Archipelago/releases/download/v0.4.1/grim_dawn.apworld</a>
 
 #### v0.4.1
 - <a href="https://github.com/routhken/Archipelago/releases/download/v0.4.1/grim_dawn.apworld">https://github.com/routhken/Archipelago/releases/download/v0.4.1/grim_dawn.apworld</a>

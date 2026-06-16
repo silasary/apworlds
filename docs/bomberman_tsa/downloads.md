@@ -1,9 +1,12 @@
 # Bomberman The Second Attack
 
 ## Latest
-- <a href="https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.0/bomberman_tsa.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.1/bomberman_tsa.apworld">Latest Version (1.0.1)</a>
 
 ## All Versions
+
+#### v1.0.1
+- <a href="https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.1/bomberman_tsa.apworld">https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.1/bomberman_tsa.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.0/bomberman_tsa.apworld">https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.0/bomberman_tsa.apworld</a>

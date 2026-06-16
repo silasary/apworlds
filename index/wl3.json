@@ -392,6 +392,21 @@
       "title": "QoL additions, logic fixes",
       "version_simple": "0.4.1",
       "world_version": "0.4.1"
+    },
+    "v0.5.0": {
+      "created_at": "2026-06-15T19:43:03Z",
+      "description": "## v0.5.0\r\n\r\n### New Options\r\n\r\n- **Enemizer** \u2014 Full logic enemizer. Randomizes most enemy placement across levels. Some enemies stay vanilla due to their gating placements. Rooms with throw blocks are guaranteed a throwable enemy. Bosses also stay vanilla. Due to how logic has to be written, Transformation Shuffle must be turned on and will be automatically with this setting on.\r\n   \r\n   - Some rooms will be vanilla do to certain limitations. This setting is unstable and needs more testing. It may cause crashes \r\n    and/or unbeatable seeds. Use with caution. Please report any bugs by using \"/roomdebug\" and posting it in the discord. There are some     visual glitches with some enemies, but they should be purely cosmetic.\r\n\r\n- **Hidden Passages Revealed** \u2014 Reveals cracked/non-cracked blocks that usually hide secret pathways in levels. Does not include special blocks yet (Yarn, Fire, Throw, etc). \r\n- **Local Filler %** \u2014 Percentage of your filler kept in your own world. Helps mitigate the filler items in other people's world, especially when \"Big Coinsanity\" is on.\r\n- **Trap Weights** \u2014 Per-trap weighted selection. \r\n- **Golf Par Hints** \u2014 Hints AP items on par-or-better golf clears in the golf building. Can choose what you want hinted from pars.\r\n- **Golf Par Hint Frequency** \u2014 Frequency you want hints from getting pars in the golf building (per hole or per course). \r\n- **Overworld BG Palette Shuffle** \u2014 Adds overworld and title screen palette swap.\r\n- **Wario Colors** \u2014 change Wario's colors to specific hex values. Will use closest GBC palette\r\n\r\n\r\n### Changes\r\n\r\n- **Level BG Palette Shuffle** \u2014 Now a toggle (was a choice).\r\n- **Wario Palette Shuffle** \u2014 Combined shirt/overalls shuffle; replaces the two former toggles.\r\n- **Two new traps:**\r\n  - **Darkness Trap** \u2014 Blackout screen (emulates Teruteru blackout). Will need to collide with a wall, just like with a Teruteru.\r\n  - **PERFECT Trap** \u2014 Sends player to \"PERFECT\" screen, then to the overworld.\r\n\r\n### Misc. Changes/Fixes\r\n- **Title-screen version overlay** \u2014 Added version number to title screen to help verify version numbers for troubleshooting.\r\n- **Death-mode save flow** \u2014 Deaths now save to SRAM before resetting to title (previously lost progress).\r\n- Added \"GOLF\" section in YAML since there's so many settings now.\r\n- Changed a few things with palette swaps so some textures are less jagged overall (i.e., grass in out of the woods no longer has the weird shadows). ",
+      "download_url": "https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/download/v0.5.0/wl3.apworld",
+      "has_manifest": false,
+      "hash_sha256": "d24e7f786462a6483ed1215e2c472734412e58608a3ba856d409f3229ea3da36",
+      "html_url": "https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/tag/v0.5.0",
+      "prerelease": true,
+      "size": 141247,
+      "source_url": "https://api.github.com/repos/RvPA-Roopa/Wario-Land-3-Archipelago",
+      "tag": "v0.5.0",
+      "title": "Enemizer and so much more",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
     }
   }
 }

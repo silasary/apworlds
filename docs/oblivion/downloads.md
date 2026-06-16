@@ -1,9 +1,12 @@
 # Oblivion Remastered
 
 ## Latest
-- <a href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld">Latest Version (0.5.0.post2)</a>
 
 ## All Versions
+
+#### v0.5.0.post2
+- <a href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld">https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld">https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld</a>

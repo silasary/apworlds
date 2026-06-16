@@ -1,7 +1,6 @@
 {
   "authors": [
-    "nepcore",
-    "Lily the Little Angel"
+    "nepcore"
   ],
   "game": "TerraNil",
   "github": "https://github.com/nepcore/TerraNilAP",
@@ -11,6 +10,99 @@
     "world_version"
   ],
   "versions": {
+    "v0.1.0": {
+      "created_at": "2026-04-20T12:07:52Z",
+      "description": "- Added Desolate Island\r\n- Handbook doesn't come up between tiers anymore (it kept breaking on Desolate Island)\r\n- Goal condition changed to beating both implemented levels\r\n- Added a couple less useless filler items\r\n- The new game button now goes to the world map rather than the first level (preparation for eventually randomizing the start level)\r\n- Allow leaving to world map during first play of Temperate River\r\n- Some prep work to make adding more levels easier\r\n\r\nKnown Issues:\r\n- The Photo Stars checks sometimes don't go through right away, place any building to get them to send\r\n- No indication of checks sent or items received yet (except buildings in the unlocked tiers of the current level), a separate text client or tracker is highly recommended\r\n- Level completion is not yet tracked in a persistent manner, so if you reconnect to your slot you'll need to redo any level clears you've previously achieved\r\n- Level progress is not persistent, reconnecting to your slot means starting over, though things unlocked via Archipelago stay unlocked\r\n",
+      "download_url": "https://github.com/nepcore/TerraNilAP/releases/download/v0.1.0/TerraNil.apworld",
+      "has_manifest": true,
+      "hash_sha256": "98e6c05e87e09b27e244272f68cf6d8f137f4da8cfe91ef61c3472eeb8dc393a",
+      "html_url": "https://github.com/nepcore/TerraNilAP/releases/tag/v0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 10976,
+      "source_url": "https://api.github.com/repos/nepcore/TerraNilAP",
+      "tag": "v0.1.0",
+      "title": "v0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v0.1.1": {
+      "created_at": "2026-04-26T09:17:21Z",
+      "description": "* Added a text console to display Archipelago messages\r\n* Make the games save system work for Archipelago sessions\r\n* Persistent tracking of level completion",
+      "download_url": "https://github.com/nepcore/TerraNilAP/releases/download/v0.1.1/TerraNil.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3c1eb5691e9ee61466eddbe6c0af3fc7ae6cce6c96311473ed6ebab5995f66fe",
+      "html_url": "https://github.com/nepcore/TerraNilAP/releases/tag/v0.1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 10976,
+      "source_url": "https://api.github.com/repos/nepcore/TerraNilAP",
+      "tag": "v0.1.1",
+      "title": "v0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    },
+    "v0.2.0": {
+      "created_at": "2026-05-11T18:44:23Z",
+      "description": "- Added 5 new levels to the randomization\r\n  - Hill and Dale\r\n  - Polluted Bay\r\n  - Abandoned Quarry\r\n  - Scorched Caldera\r\n  - Volcanic Glacier\r\n- Save system now saves state for each level independently, meaning you can now return to the world map without loosing progress\r\n- Added a YAML option for how many levels you need to clear to goal (this does ***not*** exclude any levels from randomization)\r\n- Fixed console not using the games font after scene transition\r\n\r\nKnown Issues:\r\n- The Photo Stars checks sometimes don't go through right away, place any building to get them to send",
+      "download_url": "https://github.com/nepcore/TerraNilAP/releases/download/v0.2.0/TerraNil.apworld",
+      "has_manifest": true,
+      "hash_sha256": "83f5fa240bd6089aa3d85f859a8f5d972d8b99aa07146ab698cb4c407f7d61d5",
+      "html_url": "https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 18416,
+      "source_url": "https://api.github.com/repos/nepcore/TerraNilAP",
+      "tag": "v0.2.0",
+      "title": "v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "v0.2.1-pre": {
+      "created_at": "2026-05-19T20:49:56Z",
+      "description": "* Added option to choose or randomize the starting level\r\n* Added YAML option to select game difficulty (because the built in difficulty picker only works in River Valley)\r\n* Fix multiple logic errors\r\n* Fix a bug that would allow buildings to unlock incorrectly\r\n* Rename items and locations to present better in alphabetically sorted lists (e.g. Universal Tracker)\r\n* The archipelago console can now be hidden by pressing `F1`",
+      "download_url": "https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1-pre/TerraNil.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a0bf225087163197667fb8f75abf599b63844d8ed9fd098d1d82f6356a984330",
+      "html_url": "https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1-pre",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 19943,
+      "source_url": "https://api.github.com/repos/nepcore/TerraNilAP",
+      "tag": "v0.2.1-pre",
+      "title": "v0.2.1-pre",
+      "version_simple": "0.2.1",
+      "world_version": "0.2.1rc0"
+    },
+    "v0.2.1-pre2": {
+      "created_at": "2026-05-21T13:14:33Z",
+      "description": "* Also send lava checks if you end up with only a lava source\r\n* Add weather control hotkeys (`F2` for sun, `Shift`+`F2` form rain/snow/etc, only works once the relevant climate goal is achieved)\r\n* Add Universal Tracker YAMLless support",
+      "download_url": "https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1-pre2/TerraNil.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7b1c75d7422292fb500a19c3595b8c163d766bd9e2a4738ffb2788470c603bf5",
+      "html_url": "https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1-pre2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 20296,
+      "source_url": "https://api.github.com/repos/nepcore/TerraNilAP",
+      "tag": "v0.2.1-pre2",
+      "title": "v0.2.1-pre2",
+      "version_simple": "0.2.1",
+      "world_version": "0.2.1rc2"
+    },
+    "v0.2.1-pre3": {
+      "created_at": "2026-05-28T08:31:58Z",
+      "description": "* Added options to control how many/which levels are included \r\n* Added automatic reconnect if connection to the archipelago server is lost\r\n* Fixed a crash that would happen if trying to send check after losing connection\r\n* Fixed a couple logic issues\r\n* Fixed selected difficulty not being applied after restarting the game\r\n* Fixed \"Restart Phase\" button not working",
+      "download_url": "https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1-pre3/TerraNil.apworld",
+      "has_manifest": true,
+      "hash_sha256": "241533b94f65cf6d1d9ac81db8edb4f2955a9ce4bf324cb287b855cefa9a7c47",
+      "html_url": "https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1-pre3",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 21306,
+      "source_url": "https://api.github.com/repos/nepcore/TerraNilAP",
+      "tag": "v0.2.1-pre3",
+      "title": "v0.2.1-pre3",
+      "version_simple": "0.2.1",
+      "world_version": "0.2.1rc3"
+    },
     "v0.2.1-pre4": {
       "created_at": "2026-05-30T10:01:05Z",
       "description": "* Fixed console breaking and causing connection issues if multiple messages come in during a loading screen\r\n* Fixed reconnect breaking when not on the main menu\r\n* Fixed application quit handler causing a hangup when trying to exit the game in some cases",
