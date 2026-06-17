@@ -8,6 +8,9 @@
 #### v3
 - <a href="https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/download/V003/kirby_squeak_squad.apworld">https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/download/V003/kirby_squeak_squad.apworld</a>
 
+#### v0.0.7
+- <a href="https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/download/v0.0.7/kirby_squeak_squad.apworld">https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/download/v0.0.7/kirby_squeak_squad.apworld</a>
+
 #### v0.0.6
 - <a href="https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/download/v0.0.6/kirby_squeak_squad.apworld">https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/download/v0.0.6/kirby_squeak_squad.apworld</a>
 

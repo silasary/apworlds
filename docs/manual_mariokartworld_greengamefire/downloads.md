@@ -1,9 +1,12 @@
 # Manual_MarioKartWorld_Greengamefire
 
 ## Latest
-- <a href="https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/download/v0.3.2/manual_mariokartworld_greengamefire.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/download/v0.3.3/manual_mariokartworld_greengamefire.apworld">Latest Version (0.3.3)</a>
 
 ## All Versions
+
+#### v0.3.3
+- <a href="https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/download/v0.3.3/manual_mariokartworld_greengamefire.apworld">https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/download/v0.3.3/manual_mariokartworld_greengamefire.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/download/v0.3.2/manual_mariokartworld_greengamefire.apworld">https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/download/v0.3.2/manual_mariokartworld_greengamefire.apworld</a>

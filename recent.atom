@@ -2,70 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-17T00:44:10.239587+00:00</updated>
+  <updated>2026-06-17T07:52:09.989974+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.4</id>
-    <title>Vacation Simulator v0.0.4</title>
-    <updated>2026-06-14T03:35:50+00:00</updated>
-    <author>
-      <name>chandler05</name>
-    </author>
-    <author>
-      <name>Energymaster22</name>
-    </author>
-    <content>New:&#13;
-- `Early Big Item` Option.&#13;
-   - This option forces an addition `Gate Unlock` or `Camera` early. This should reduce early locking in multiworlds, and slightly lower `Fill Error` generation failures when generating solo.&#13;
-&#13;
-Changes:&#13;
-- Removed location data from slot data&#13;
-- Removed the `helpers.py` file&#13;
-   - After further research, it seems like the mod was not actually reading the location data out of slot data. And since the only thing in helpers.py` was something to help with filling the location data, both have been removed. This should lower slot data size significantly, and slightly speed up gen output.&#13;
-&#13;
-This update does not require a mod update.&#13;
-&#13;
-**Full Changelog**: https://github.com/energymaster22/Archipelago/compare/vacation_simulator_0.0.3...vacation_simulator_0.0.4</content>
-    <link href="https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/1-800-thewolf/AoM-Archipelago/releases/tag/v1.3.3</id>
-    <title>Age Of Mythology Retold v1.3.3</title>
-    <updated>2026-06-14T03:36:55+00:00</updated>
-    <author>
-      <name>1-800-thewolf</name>
-    </author>
-    <content>## Bugfixes and Balance Changes&#13;
-## 👍 Fully compatible with current games&#13;
-&#13;
-### Changes:&#13;
-- Titan Age now part of progressive age unlocks. Now your 4th age unlock unlocks Titan Age.&#13;
-- Improved Linux Compatibility&#13;
-- Fixed bug looping additional hints each time the slot is connected to&#13;
-- Improved a few places where the ui flashes&#13;
-&#13;
-**Full Changelog**: https://github.com/1-800-thewolf/AoM-Archipelago/compare/v1.3.2...v1.3.3</content>
-    <link href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/tag/v1.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/tag/v0.0.5</id>
-    <title>kirby_squeak_squad v0.0.5</title>
-    <updated>2026-06-14T03:52:24+00:00</updated>
-    <author>
-      <name>WindChill404</name>
-    </author>
-    <content>New release! Some big changes have happened regarding things so I am skipping to version 0.0.5! The system for the chests has been changed so that when you get send a progressive item (Star Seal, secret stage key, or second progressive ability), it will release the chest that would normally have that item in the vanilla game. This is to make sure all chests are checks.&#13;
-&#13;
-Abilities are also a two step progression, where the first one gives you access to use the ability, and the second will let you use the scroll version, and send the check of where that scroll was if not already gotten (again to avoid chests not being checks). Please feel free to reach out with questions or suggestions!&#13;
-&#13;
-Some new options include half of a death link (send-only 😢) and to have a random starting color that will stick with you most the time! As well as having the first time you use an ability be a check (Hint: you can eat Doc's UFO for the ability!)&#13;
-&#13;
-Hope it all works out and have fun playing! Again let me know on the Discord if there are issues!</content>
-    <link href="https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/tag/v0.0.5"/>
-  </entry>
   <entry>
     <id>https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/tag/v0.0.6</id>
     <title>kirby_squeak_squad v0.0.6</title>
@@ -333,7 +274,7 @@ It is now more important than ever with these new updates to report any bugs you
   </entry>
   <entry>
     <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.2</id>
-    <title>Paper Mario The Thousand Year Door v0.10.2</title>
+    <title>Paper Mario The Thousand Year Door v0.10.2.post2</title>
     <updated>2026-06-14T20:49:34+00:00</updated>
     <author>
       <name>jamesbrq</name>
@@ -341,14 +282,18 @@ It is now more important than ever with these new updates to report any bugs you
     <content>## Changelog&#13;
 - Expanded the games memory from 24MB to 64MB. This is a necessary step to maintain stability with the new Multiplayer update and Enemy Randomizer.&#13;
 - New yaml option: ConsoleMode. This is deliberately stated in the yaml that this should only ever be enabled if you intend to play solo on a console, and should not be enabled for any other reason. This will disable multiplayer functionality, and change some of the patches applied to the game.&#13;
+- New yaml option: Multiplayer. This is a toggle for all multiplayer features, it is on by default and if it is turned off you will not broadcast your location to other players or receive any positional data from them.&#13;
+- New yaml option: RemoteItems. A new toggle to enable remote item receiving, this is off by default. This is fully integrated with the multiplayer feature to sync all in-game objects and items on any given slot, this means that any amount of people can connect to the same slot and see live object updates and items be picked up. If you pick up a slot with locations checked already and connect for the first time all items from that slot will be received and their items will no longer appear in the multiworld.&#13;
+- The game will now attempt to auto-launch the game properly on mac and linux systems, and the client will also attempt to write the settings required for the game to run in the TTYD config file in dolphin on boot.&#13;
 - Max rendered player count bumped from 16 to 24.&#13;
 - Re-Enabled color syncing between players in Multiplayer.&#13;
 &#13;
 # Note&#13;
-As of v0.10.2 a new setting is required in your dolphin emulator for the game to function. This must be enabled before the game can be launched. In Config &gt; Andvanced, "Enable Emulated Memory Size Override" must be checked, and the MEM1 slider must be set to 64MB. If this setting is not set the game will crash on boot.&#13;
+As of v0.10.2 a new setting is required in your dolphin emulator for the game to function. This must be enabled before the game can be launched. In Config &gt; Advanced, "Enable Emulated Memory Size Override" must be checked, and the MEM1 slider must be set to 64MB. If this setting is not set the game will crash on boot.&#13;
 &#13;
 ## Fixes&#13;
-- Fix a logic error for Poshley heights that expected you to have access with a lot less items than were actually required.</content>
+- Fix a logic error for Poshley heights that expected you to have access with a lot less items than were actually required.&#13;
+- Fix some animations not playing correctly in multiplayer.</content>
     <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.2"/>
   </entry>
   <entry>
@@ -1083,5 +1028,46 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
 &#13;
 **Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.6...v0.10.7</content>
     <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/tag/v0.0.7</id>
+    <title>kirby_squeak_squad v0.0.7</title>
+    <updated>2026-06-17T02:19:14+00:00</updated>
+    <author>
+      <name>WindChill404</name>
+    </author>
+    <content>- Major fix to chest count overflow causing crashes - the fix makes it harder to track in game chests so...&#13;
+- Added an in-game overlay tracker that can be activated with 'T' key&#13;
+- Support for Universal Tracker</content>
+    <link href="https://github.com/WindChill404/Kirby-Squeak-Squad-APWORLD/releases/tag/v0.0.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/chesslogic/chessv/releases/tag/v0.3.2</id>
+    <title>ChecksMate v0.3.2</title>
+    <updated>2026-06-17T07:20:57+00:00</updated>
+    <author>
+      <name>chesslogic</name>
+    </author>
+    <content>Fewer crashes. Big pawns.&#13;
+&#13;
+- Feature: Added fairy_chess_pawn_upgrades with pawn-sergeant generation support in Off, Pool, and Max modes.&#13;
+- Technical: Move hashes are now 64 bit.&#13;
+  - This immediately allows us to populate a higher limit on distinct pieces, and may allow a wider variety of Directions among piece types.&#13;
+  - Enables (non-generative) AI search, opening-book, killer/countermove, and transposition.&#13;
+  - Note: Certain early crashes are to do with exploring unregistered Directions (e.g. a knight is 2,1 and 1,2; no piece moves 5,3).&#13;
+- Feature?: Improved crash and diagnostic reporting.&#13;
+  - Failure text includes more board, history, and move context.&#13;
+  - Centralized crash formatting.&#13;
+  - Added GUI recoverable diagnostics to avoid ending certain sessions.&#13;
+- Bug fix: Hardened move generation and core make/unmake.&#13;
+  - Previously could corrupt board state, or use garbage values due to an uninitialized MoveList cursor state.&#13;
+  - Added move-generation context stack tracing and stronger MoveList reset/restart/iteration contracts.&#13;
+  - Improved partial-make rollback.&#13;
+- Technical: Cleaned up client piece paths, item handling, location tracking, pawn setup/distribution, and mixed en-passant handling.&#13;
+  - Extracted item randomization out of the handler, which is now more of a coordinator.&#13;
+- Technical: Added test coverage for fuzzed positions, crash repros, MoveList contracts, make/unmake safety, hash stability, and diagnostic formatting.&#13;
+&#13;
+**Full Changelog**: https://github.com/chesslogic/chessv/compare/v0.3.1...v0.3.2</content>
+    <link href="https://github.com/chesslogic/chessv/releases/tag/v0.3.2"/>
   </entry>
 </feed>

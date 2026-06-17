@@ -7,7 +7,11 @@
   ],
   "game": "SMBWonder",
   "github": "https://github.com/mdietz94/smbw_ap",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0-alpha": {
       "created_at": "2026-05-27T01:14:36Z",
@@ -398,6 +402,21 @@
       "title": "v0.6.2",
       "version_simple": "0.6.2",
       "world_version": "0.6.2"
+    },
+    "v0.6.3": {
+      "created_at": "2026-06-17T02:05:05Z",
+      "description": "## SMBW Archipelago v0.6.3\n\n### First-time users \u2014 start here\n\n**[docs/first-time-setup.md](https://github.com/mdietz94/smbw_ap/blob/v0.6.3/docs/first-time-setup.md)** \u2014 full walkthrough: prerequisites, multiworld generation, and the SMBW Client setup wizard.\n\n### Verifying the download\n\n```\nsha256sum -c smbwonder.apworld.sha256\n```\n\n\n## What's Changed\n* Fix location requirements for W1, W2, W3, W4 coin checks by @mdietz94 in https://github.com/mdietz94/smbw_ap/pull/145\n* setup: allow an alternate bridge IP (subnet seed) through /setup by @mdietz94 in https://github.com/mdietz94/smbw_ap/pull/146\n\n\n**Full Changelog**: https://github.com/mdietz94/smbw_ap/compare/v0.6.2...v0.6.3",
+      "download_url": "https://github.com/mdietz94/smbw_ap/releases/download/v0.6.3/smbwonder.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3eaf62df6008b3f11563d0281fb59c8fa5b062955f30f75ca216d24b78c236f8",
+      "html_url": "https://github.com/mdietz94/smbw_ap/releases/tag/v0.6.3",
+      "minimum_ap_version": "0.5.0",
+      "size": 12847263,
+      "source_url": "https://api.github.com/repos/mdietz94/smbw_ap",
+      "tag": "v0.6.3",
+      "title": "v0.6.3",
+      "version_simple": "0.6.3",
+      "world_version": "0.6.3"
     }
   }
 }

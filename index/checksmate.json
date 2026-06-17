@@ -229,6 +229,20 @@
       "version_simple": "0.3.1",
       "world_version": "0.3.1"
     },
+    "v0.3.2": {
+      "created_at": "2026-06-17T07:20:57Z",
+      "description": "Fewer crashes. Big pawns.\r\n\r\n- Feature: Added fairy_chess_pawn_upgrades with pawn-sergeant generation support in Off, Pool, and Max modes.\r\n- Technical: Move hashes are now 64 bit.\r\n  - This immediately allows us to populate a higher limit on distinct pieces, and may allow a wider variety of Directions among piece types.\r\n  - Enables (non-generative) AI search, opening-book, killer/countermove, and transposition.\r\n  - Note: Certain early crashes are to do with exploring unregistered Directions (e.g. a knight is 2,1 and 1,2; no piece moves 5,3).\r\n- Feature?: Improved crash and diagnostic reporting.\r\n  - Failure text includes more board, history, and move context.\r\n  - Centralized crash formatting.\r\n  - Added GUI recoverable diagnostics to avoid ending certain sessions.\r\n- Bug fix: Hardened move generation and core make/unmake.\r\n  - Previously could corrupt board state, or use garbage values due to an uninitialized MoveList cursor state.\r\n  - Added move-generation context stack tracing and stronger MoveList reset/restart/iteration contracts.\r\n  - Improved partial-make rollback.\r\n- Technical: Cleaned up client piece paths, item handling, location tracking, pawn setup/distribution, and mixed en-passant handling.\r\n  - Extracted item randomization out of the handler, which is now more of a coordinator.\r\n- Technical: Added test coverage for fuzzed positions, crash repros, MoveList contracts, make/unmake safety, hash stability, and diagnostic formatting.\r\n\r\n**Full Changelog**: https://github.com/chesslogic/chessv/compare/v0.3.1...v0.3.2",
+      "download_url": "https://github.com/chesslogic/chessv/releases/download/v0.3.2/checksmate.apworld",
+      "has_manifest": false,
+      "hash_sha256": "6c0f81ad139c71d3bf98ba4c521741b238b6b751920c38579dd6f37beaf2867d",
+      "html_url": "https://github.com/chesslogic/chessv/releases/tag/v0.3.2",
+      "size": 243280,
+      "source_url": "https://api.github.com/repos/chesslogic/chessv",
+      "tag": "v0.3.2",
+      "title": "v0.3.2",
+      "version_simple": "0.3.2",
+      "world_version": "0.3.2"
+    },
     "v2023.11.06": {
       "created_at": "2023-11-06T01:23:11Z",
       "description": "Prerelease. No crashes recently. Primary new feature is to turn your specific computer into a HE grenade.\r\n\r\n - Support connecting to local servers.",

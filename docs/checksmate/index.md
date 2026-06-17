@@ -5,7 +5,7 @@ You win when you checkmate the opposing king!
 
 
 ## Downloads
-- <a href="https://github.com/chesslogic/chessv/releases/download/v0.3.1/checksmate.apworld">Latest Version (0.3.1)</a>
+- <a href="https://github.com/chesslogic/chessv/releases/download/v0.3.2/checksmate.apworld">Latest Version (0.3.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
