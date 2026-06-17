@@ -1,7 +1,10 @@
 {
   "game": "Rogue Legacy 2",
   "github": "https://github.com/zaphim12/RL2Archipelago",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v1.0.0": {
       "created_at": "2026-05-19T05:05:55Z",
@@ -58,6 +61,21 @@
       "source_url": "https://api.github.com/repos/zaphim12/RL2Archipelago",
       "tag": "v1.1.1",
       "title": "v1.1.1",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v1.1.2": {
+      "created_at": "2026-06-16T19:29:43Z",
+      "description": "**Note: Only the game mod files (RL2Archipelago.zip) need to be replaced when updating to this version. If you already have v1.1.1 you can keep your .apworld**\r\n\r\n### Improvements and cleanup\r\n\r\n- The debug hotkeys (7- set boss clear flags, 8- give gold, 9- heal player, 0- reveal map) are now disabled by default. They can still be enabled in the AP settings screen, but they are not intended to be used during a real run.\r\n- Added descriptions for the toggles in the AP settings screen\r\n- Major improvements in how the mod handles a temporary disconnect from the AP server. Now the game should auto re-connect you when the server becomes available again.\r\n  - The game will also show a notification to alert the player that they are disconnected\r\n  - Progress can still be made while disconnected and it is saved even through the game being closed. It will re-sync with the server upon the next successful connection\r\n\r\n### Bugfixes\r\n\r\n- There was a rare issue where players would be unable to close a settings menu and after restarting their game would lose their progress. This has been fixed along with adding more robust save management so progress should not be lost anymore.",
+      "download_url": "https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.2/rogue_legacy_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b334cc6f871810df125b3a730ec791747a85b3863b630c6eb40d01640a395f28",
+      "html_url": "https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.2",
+      "minimum_ap_version": "0.5.0",
+      "size": 21031,
+      "source_url": "https://api.github.com/repos/zaphim12/RL2Archipelago",
+      "tag": "v1.1.2",
+      "title": "v1.1.2",
       "version_simple": "0.1.0",
       "world_version": "0.1.0"
     }

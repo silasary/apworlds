@@ -2,68 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-16T19:19:26.235306+00:00</updated>
+  <updated>2026-06-17T00:44:10.239587+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/barretg/Taskipelago/releases/tag/v0.9.4</id>
-    <title>Taskipelago v0.9.4</title>
-    <updated>2026-06-13T20:39:24+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>## Quick patch:&#13;
-* Reconcile boolean logic between client and server when prog groups are in OR branches&#13;
-* Added debug logging</content>
-    <link href="https://github.com/barretg/Taskipelago/releases/tag/v0.9.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.0h</id>
-    <title>Baba Is You v0.3.0</title>
-    <updated>2026-06-13T20:54:28+00:00</updated>
-    <author>
-      <name>EmilyEmmi</name>
-    </author>
-    <content>Tiny update to fix logic for one singular level. Wow! Only the APWorld was updated.&#13;
-&#13;
-NOTE: v0.6.7 of Archipelago is required due to the use of Rule Builder.&#13;
-&#13;
-## Adjustments/fixes:&#13;
-- (APWorld) Fixed logic for Stardrop (one solution was impossible without G)&#13;
-&#13;
-This contains the Baba Is You APWorld, the Babapelago levelpack, and extraslot.lua. ONLY THE APWORLD IS REQUIRED! It contains the levelpack as well and will automatically install the pack when starting. The levelpack is included in case this feature doesn't work for whatever reason, and extraslot.lua is a global mod needed to play more than three slots at once, if you wish to do so. The host only needs the APWorld no matter what.&#13;
-&#13;
-For installation instructions, PLEASE check out the [readme](worlds/baba_is_you/BABAPELAGO_README.md). Very important!&#13;
-&#13;
-KNOWN ISSUES:&#13;
-- The client may suddenly stop sending checks (I haven't encountered this in a while, so it may have been fixed). Closing and re-opening the client should fix the issue. If you DON'T relaunch Baba Is You, the checks should send again next time you complete a level.&#13;
-- There may be issues on Mac and Linux, since I haven't been able to test those myself. Please report any issues you experience.&#13;
-- Normal/hard logic has been well tested, although It was not feasible to test every possible combination of items. Please report any issues. In particular, Ultimate Maze's transforms are a complicated case.&#13;
-- Some non-ascii or punctation characters may display strangely in the client, but this hasn't caused any crashes from my testing. Supposedly this does cause a crash on Mac, although I'm hesitant to fully confirm this.</content>
-    <link href="https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.0h"/>
-  </entry>
-  <entry>
-    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.5</id>
-    <title>Cyberpunk 2077 v0.0.1</title>
-    <updated>2026-06-14T03:19:09+00:00</updated>
-    <author>
-      <name>247Tossing</name>
-    </author>
-    <content># New Features&#13;
- - Weapon Restrictions: Can be set to not allow you to equip certain weapons period, or require a pass to equip them which is obtained from the multiworld&#13;
-&#13;
-# Fixes and Improvements&#13;
- - Fixed NCPD scanner missions trigger "Gig: Hi Ho Silver Lining"&#13;
- - Beat on the Brat: Kabuki doesn't appear in the Locations list despite it being required for progression&#13;
- - Several quests listed in "Locations" were part of either cut content, or pure logic for cyberpunks quest backend and have been removed&#13;
- - Crafting components (both items and quickhacks) have been added to the filler items pool&#13;
- - Overhauled the backend ID assignment to be done at generation&#13;
- - Various generation stability improvements&#13;
- - Client &lt;-&gt; Game connection stability improvements (You may see the game disconnect and reconnect when loading saves, this is expected)</content>
-    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.5"/>
-  </entry>
   <entry>
     <id>https://github.com/energymaster22/Archipelago/releases/tag/vacation_simulator_0.0.4</id>
     <title>Vacation Simulator v0.0.4</title>
@@ -622,6 +565,73 @@ This release provides the following updates:&#13;
     <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.2.1"/>
   </entry>
   <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.3</id>
+    <title>Deltarune v2.0.3</title>
+    <updated>2026-06-15T13:25:07+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
+&#13;
+(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
+&#13;
+***WARNING: Switching from earlier version during an ASYNC will make the game forget that you already completed chapters (as the datastorage key changed)***&#13;
+&#13;
+**Linux is not supported for now and will disconnect you after few seconds from the server! Linux will be supported in future updates**&#13;
+&#13;
+**Starting a chapter with previous chapter completion data isn't recommended for right now as the rewrite wasn't made with it in mind. This will be fixed soon!**&#13;
+&#13;
+# Changelog&#13;
+## APWorld&#13;
+- Reworked the Regions internally&#13;
+### Chapter 2&#13;
+- Purchasing the ThornRing and FreezeRing now requires having Noelle in Logic&#13;
+- `CH2: Cyber City - Trash Can #1` Now requires having either Kris or Noelle&#13;
+### Chapter 4&#13;
+- Made the exit to the Second Sanctuary have Susie and Kris in logic&#13;
+&#13;
+## Game&#13;
+- Internally, customflags are now more descriptive&#13;
+- Minor grammar/dialogue changes in all chapters&#13;
+- Connecting using the In-game Client should now work better&#13;
+- Connecting to alternative server is now fixed &#13;
+- Change datastorage key names to `slot_team_keyname` &#13;
+- Items needed to progress are now highlighted&#13;
+- Made Dark Candy/Darker Candy have proper stats/descriptions in their respective chapters&#13;
+### Chapter 1&#13;
+- Fixed Chapter 1 giving you empty weapon slots if you choose to have starting gear&#13;
+### Chapter 2&#13;
+- Fixed the KeyGen 2 lock appearing every time you re-enter the room&#13;
+- Made the npc telling you to fight Spamton NEO actually appear&#13;
+### Chapter 3&#13;
+- Doing 1225 on the Ball Machine doesn't steal all of your points, just 1225 of them&#13;
+- Added an NPC to skip Doom Board&#13;
+- Making it to the end of the Credits no longer crashes the game&#13;
+### Chapter 4&#13;
+- Skipping Dark Sanctuary now just sends the Jackenstein Gift and Sheetmusic locations&#13;
+- Made the warp to fight Hammer of Justice better (sorry starwalker....)&#13;
+- Returning to Castle Town at the end of Chapter 4 no longer has barriers</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.3"/>
+  </entry>
+  <entry>
     <id>https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.0</id>
     <title>budokai_tenkaichi2 v0.3.0</title>
     <updated>2026-06-15T17:22:40+00:00</updated>
@@ -782,9 +792,10 @@ This release features a few frequently requested features and a pretty major und
 - Incoming ice traps now have randomized models now.&#13;
 &#13;
 # Known Issues&#13;
- - There is a generation issue when using Item links. This issue will be fixed in new version down the line.&#13;
  - There are some issues with the client getting stuck "loading data" during save file creation. We are currently unsure which settings might cause this issue. If you run into this problem please send us your yaml file and a copy of the generated multiworld so we can diagnose the issue&#13;
- </content>
+ - There is a generation issue when using Item links. This issue will be fixed in new version down the line.&#13;
+ - The Hint panel does not correctly display the names of the hinted items when playing with multiple different games in the same multiworld&#13;
+ - In game Static Hints cannot find the names of locations for games with really high internal id numbers such as with paper mario.</content>
     <link href="https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.3.0"/>
   </entry>
   <entry>
@@ -1028,7 +1039,49 @@ Added filler blacklist to yaml&#13;
 New [submods](https://github.com/jordansds/TWW3-Recruit-Without-Buildings/releases) available if you want to recruit units without buildings.&#13;
 &#13;
 Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
-[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).</content>
+[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
+&#13;
+**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.5...v0.10.6</content>
     <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.2</id>
+    <title>Rogue Legacy 2 v0.1.0</title>
+    <updated>2026-06-16T19:29:43+00:00</updated>
+    <author>
+      <name>zaphim12</name>
+    </author>
+    <content>**Note: Only the game mod files (RL2Archipelago.zip) need to be replaced when updating to this version. If you already have v1.1.1 you can keep your .apworld**&#13;
+&#13;
+### Improvements and cleanup&#13;
+&#13;
+- The debug hotkeys (7- set boss clear flags, 8- give gold, 9- heal player, 0- reveal map) are now disabled by default. They can still be enabled in the AP settings screen, but they are not intended to be used during a real run.&#13;
+- Added descriptions for the toggles in the AP settings screen&#13;
+- Major improvements in how the mod handles a temporary disconnect from the AP server. Now the game should auto re-connect you when the server becomes available again.&#13;
+  - The game will also show a notification to alert the player that they are disconnected&#13;
+  - Progress can still be made while disconnected and it is saved even through the game being closed. It will re-sync with the server upon the next successful connection&#13;
+&#13;
+### Bugfixes&#13;
+&#13;
+- There was a rare issue where players would be unable to close a settings menu and after restarting their game would lose their progress. This has been fixed along with adding more robust save management so progress should not be lost anymore.</content>
+    <link href="https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.7</id>
+    <title>Total War Warhammer 3 v0.10.7</title>
+    <updated>2026-06-16T21:34:32+00:00</updated>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>Fixed more broken units.&#13;
+Renamed 2 Norsca techs that clashed.&#13;
+&#13;
+New [submods](https://github.com/jordansds/TWW3-Recruit-Without-Buildings/releases) available if you want to recruit units without buildings.&#13;
+&#13;
+Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
+[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
+&#13;
+**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.6...v0.10.7</content>
+    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.7"/>
   </entry>
 </feed>
