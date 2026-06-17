@@ -2,60 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-17T13:20:08.946950+00:00</updated>
+  <updated>2026-06-17T18:57:05.336928+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.4</id>
-    <title>Total War Warhammer 3 v0.10.4.post2</title>
-    <updated>2026-06-14T07:53:48+00:00</updated>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>Fixed Mousillon progressive buildings.&#13;
-Increased max sphere count.&#13;
-Fixed modded factions sending checks for their normal start pos in spheres.&#13;
-&#13;
-Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
-[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).</content>
-    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DeltaSilver/Armored-Core-6-Archipelago/releases/tag/v0.1.3-Beta</id>
-    <title>AC6AP v0.1.3b0</title>
-    <updated>2026-06-14T08:20:02+00:00</updated>
-    <author>
-      <name>DeltaSilver</name>
-    </author>
-    <content># Armored Core 6 Archipelago — v0.1.3-Beta&#13;
-&#13;
-# Changes&#13;
-&#13;
-- Fixed: Connections to archipelago.gg sometimes not working.&#13;
-- Added: Improved logging for error detection.&#13;
-&#13;
-## Features&#13;
-- 300+ Weapons and gear to receive.&#13;
-- Checks sent from mission clears, arenas, and mercenary ranks.&#13;
-&#13;
-## Known Issues&#13;
-- No on-screen pickup notification — check your AP client; parts show in the&#13;
-  assembly menu.&#13;
-- Archive Logs is experimental (collection flags still being verified).&#13;
-- Must launch through ModEngine2, not Steam directly.&#13;
-- When closing, crashing, or returning to garage from a mission causes all items gained during that mission to vanish.&#13;
-&#13;
-## Compatibility&#13;
-Built and tested on **AC6 App Ver. 1.09.1** with **ModEngine 2.1.0**. Other&#13;
-versions may break.&#13;
-&#13;
-## Credits&#13;
-&#13;
-**easywsclient**, **ModEngine2**, and **Archipelago**.</content>
-    <link href="https://github.com/DeltaSilver/Armored-Core-6-Archipelago/releases/tag/v0.1.3-Beta"/>
-  </entry>
   <entry>
     <id>https://github.com/Miiroun/ap-rummy/releases/tag/v1.0.0</id>
     <title>AP-Rummy v1.0.0</title>
@@ -730,7 +681,8 @@ This release features a few frequently requested features and a pretty major und
  - There are some issues with the client getting stuck "loading data" during save file creation. We are currently unsure which settings might cause this issue. If you run into this problem please send us your yaml file and a copy of the generated multiworld so we can diagnose the issue&#13;
  - There is a generation issue when using Item links. This issue will be fixed in new version down the line.&#13;
  - The Hint panel does not correctly display the names of the hinted items when playing with multiple different games in the same multiworld&#13;
- - In game Static Hints cannot find the names of locations for games with really high internal id numbers such as with paper mario.</content>
+ - In game Static Hints cannot find the names of locations for games with really high internal id numbers such as with paper mario.&#13;
+ - When creating a new save file for a slot that already has some playtime on it may not always correctly synch all items that were already checked.</content>
     <link href="https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.3.0"/>
   </entry>
   <entry>
@@ -1013,13 +965,14 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
   </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.7</id>
-    <title>Total War Warhammer 3 v0.10.7</title>
+    <title>Total War Warhammer 3 v0.10.7.post2</title>
     <updated>2026-06-16T21:34:32+00:00</updated>
     <author>
       <name>jordansds</name>
     </author>
     <content>Fixed more broken units.&#13;
 Renamed 2 Norsca techs that clashed.&#13;
+Fixed RitualSanity Generation failure.&#13;
 &#13;
 New [submods](https://github.com/jordansds/TWW3-Recruit-Without-Buildings/releases) available if you want to recruit units without buildings.&#13;
 &#13;
@@ -1069,5 +1022,40 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
 &#13;
 **Full Changelog**: https://github.com/chesslogic/chessv/compare/v0.3.1...v0.3.2</content>
     <link href="https://github.com/chesslogic/chessv/releases/tag/v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Wouter17/Spirit-Archipelago/releases/tag/0.1.4</id>
+    <title>Spirit Island v0.1.4</title>
+    <updated>2026-06-17T13:37:02+00:00</updated>
+    <author>
+      <name>Wouter17</name>
+    </author>
+    <content>## V0.1.4&#13;
+&#13;
+### Client&#13;
+- Refresh goals on connect (actually already published in hotfix)&#13;
+- Fix initial load freezing game&#13;
+- Fix scouting freezing game&#13;
+- Fix goal check freezing game&#13;
+- Fix increments incorrectly loading&#13;
+&#13;
+### APworld&#13;
+- Fixed item classification for filler items&#13;
+- Add description for element items&#13;
+- Automate names based on in-game files (instead of wiki)&#13;
+  Fixes name for:&#13;
+    - _Call on Midnight's Dreams_&#13;
+    - _Flash-fires_&#13;
+    - _Regrow From Roots_&#13;
+    - _Dark Skies Loose A Stinging Rain_&#13;
+    - _Foundations Sink Into Mud_&#13;
+    - _Mark Territory With Scars and Teeth_&#13;
+&#13;
+  Fixes expansion for _Roiling Bog and Snagging Thorn_&#13;
+&#13;
+---&#13;
+&#13;
+**Full Changelog**: https://github.com/Wouter17/Spirit-Archipelago/compare/0.1.3-hf1...0.1.4</content>
+    <link href="https://github.com/Wouter17/Spirit-Archipelago/releases/tag/0.1.4"/>
   </entry>
 </feed>
