@@ -1,4 +1,4 @@
-# None
+# Armored Core VI
 
 ## Latest
 - <a href="https://github.com/DeltaSilver/Armored-Core-6-Archipelago/releases/download/v0.1.3-Beta/AC6AP.apworld">Latest Version (0.1.3b0)</a>
