@@ -547,6 +547,21 @@
       "version_simple": "0.3.30",
       "world_version": "0.3.30"
     },
+    "0.3.31": {
+      "created_at": "2026-06-17T23:58:28Z",
+      "description": "# Changelog\r\n\r\n- Reworked plugins system and added capabilities to modify world generation\r\n  - Adding the hooks `generate_early`, `generate_encounters`, `create_regions`, `create_items`, `write_patch`\r\n  - However, this breaks old plugins\r\n- Slightly changed the `Reusable TMs` choice `yes` to `yes_please`\r\n  - Old yamls will still work and quietly fix the name change\r\n- Added an lz11 decompress algorithm\r\n- Fixed the Master Ball seller in N's Castle\r\n\r\n### Is this version compatible with older multiworld slots and save files?\r\nYes, back to 0.3.0, except the pre-release 0.3.99(9)\r\nHowever, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT\r\n",
+      "download_url": "https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.31/pokemon_bw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "020d3ff53450b4ddf26cabb6bb39a93170d52324b2f304e14c9a429a6a91c83c",
+      "html_url": "https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.31",
+      "minimum_ap_version": "0.6.4",
+      "size": 1100403,
+      "source_url": "https://api.github.com/repos/BlastSlimey/PokemonBWAP",
+      "tag": "0.3.31",
+      "title": "v0.3.31",
+      "version_simple": "0.3.31",
+      "world_version": "0.3.31"
+    },
     "0.3.4": {
       "created_at": "2025-08-11T21:01:25Z",
       "description": "# Changelog\r\n\r\n- Fixed some randomized trainer Pok\u00e9mon still having the vanilla Pok\u00e9mon's moves\r\n- Fixed randomized seasons not being written into save data properly, leading to all seasons being available immediately\r\n- Fixed enabling multiple Master Ball sellers leading to not all of them being available\r\n- Made flag and item writing in client more error-proof\r\n- Fixed `Nacrene City - Item from Lenora after Relic Castle` not showing up in UT\r\n- Added extended hint information for Dexsanity locations\r\n- Added location aliases for both Nidorans' Dexsanity locations in UT\r\n- Fixed Aha prizes having flipped flags\r\n- Added `Require Flash` to the `modify_logic` option\r\n- Fixed UT crashing when Encounter Plando was used in generating\r\n- Some QoL changes for writing the player yaml:\r\n  - Made all OptionSet options ignore casing\r\n  - Made Encounter Plando ignore casing for argument names, seasons, and methods\r\n  - Made Encounter Plando accept `season` and `slot` as alternatives to `seasons` and `slots`\r\n- Tweaked the Master Ball Seller option:\r\n  - Removed `:` and `'` characters from modifiers\r\n    - However, old yamls are still compatible\r\n  - Added the possibility to add any cost modifier in range of 0 to 30000\r\n  - Removed throwing an option error if any seller, but no cost is added\r\n    - No cost modifier now instead defaults to 3000\r\n- Added error message for patch file being too old\r\n- Added automatic ROM updates\r\n- Added details for incorrect ROM header error while patching\r\n- Fixed the Musharna static encounter not appearing immediately\r\n- Made the Undella Town Mansion seller snap his prices to 500-steps\r\n- Changed the dialog of the grunts on route 8 to better reflect how to make them disappear\r\n- Fixed the evolution items seller in Shopping Mall Nine giving a `???` item when pressing B\r\n- Added a warning to UT users when tracking with a not entirely compatible apworld version (e.g. due to RNG changes)\r\n- Added `None` species to Encounter Plando to make a plando entry not put anything into the specified slot(s)\r\n\r\n## Is this version compatible with older multiworld slots and save files?\r\nYes, back to 0.3.0\r\nHowever, worlds from 0.3.0 and 0.3.1 with certain wild Pok\u00e9mon randomization modifiers will have wrong Dexsanity logic in UT, which is not fixable.",

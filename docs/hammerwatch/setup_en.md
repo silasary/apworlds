@@ -37,3 +37,8 @@ will automatically try to connect you to the server and load the game.
 Playing together in the same game is supported in the Archipelago randomizer. However, all clients playing together
 should be connected to the same slot in Archipelago. Other than that, the procedure for playing multiplayer is the same
 as in the vanilla game.
+
+## Randomizer/Game Information
+
+Check out the [game info page](./en_Hammerwatch.md) for more information on how the randomizer works and how to avoid
+some common pitfalls.

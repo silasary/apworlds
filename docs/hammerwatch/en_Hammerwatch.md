@@ -68,10 +68,54 @@ When the player receives an item it appears at their feet, and they immediately 
 chest it is automatically broken open on delivery. If the item is a button effect or a shop upgrade the effects are
 applied immediately when received.
 
+# FAQ
+
 ## If I'm at full health/mana how does the server know that I found a recovery item if I can't pick it up?
 
 Items that can't be picked up can be walked on to notify the server that you have found the item. 
 This prevents you from having to damage yourself or use a skill in order to collect the location!
+
+## I ended up stuck someplace I can't get out of. Help!
+
+You can use the /t command to return to the start of the game. See the
+[client commands](./en_Hammerwatch.md#client-commands) section for more information on how in-game commands work.
+
+## The port on the server changed, what do I do??
+
+If the server's port has changed, you can force load a save by doing the following:
+
+1. Connect to the archipelago server with the new port
+2. Navigate to the Single button for singleplayer or the Multiplayer > Local/Host buttons for multiplayer like you would start a new save
+3. Click the Load button at the bottom and select your save file
+4. You should now be loaded in! If you save, the next time you play you should be able to continue using the Resume button
+
+## Why does Universal Tracker say some checks behind gates are out of logic even though I can open a gate?
+
+The randomizer assumes that keys are spent in the worst way possible to prevent softlocks. It's up to you on how wisely
+you want to use your keys!
+
+## How many checks does each option add?
+
+| Option                   | Castle        | Temple       |
+|--------------------------|---------------|--------------|
+| Base                     | ~375          | ~190         |
+| Bonus Chests             | 227           | 75           |
+| Bonus Keys               | 18            | 2            |
+| Randomize Peg Puzzles*   | 7 puzzles     | 10 puzzles   |
+| Randomize Secrets        | 0             | 20           |
+| Randomize Enemy Loot     | ~54 (122 max) | ~39 (98 max) |
+| Randomize Recovery Items | 452           | 105          |
+| Buttonsanity*            | 170           | 67           |
+| Buttoninsanity*          | 301           | 102          |
+| Shopsanity               | 70-77         | 70-77        |
+
+*Some notes:
+
+The Randomize Peg Puzzles option adds 0-4 locations per puzzle, with an average of around 2 per puzzle
+
+The Buttonsanity rows in the table include peg puzzle buttons, which aren't randomized if Randomize Peg Puzzles is off
+
+# Randomizer Info
 
 ## Custom items
 
@@ -138,33 +182,3 @@ instead.
 Used primarily to debug or to fix issues if a flag or event isn't triggered correctly
 
 /deathlink: toggles deathlink on/off. Note this also can be toggled in the options menu
-
-## The port on the server changed, what do I do??
-
-If the server's port has changed, you can force load a save by doing the following:
-
-1. Connect to the archipelago server with the new port
-2. Navigate to the Single button for singleplayer or the Multiplayer > Local/Host buttons for multiplayer like you would start a new save
-3. Click the Load button at the bottom and select your save file
-4. You should now be loaded in! If you save, the next time you play you should be able to continue using the Resume button
-
-## How many checks does each option add?
-
-| Option                   | Castle        | Temple       |
-|--------------------------|---------------|--------------|
-| Base                     | ~375          | ~190         |
-| Bonus Chests             | 227           | 75           |
-| Bonus Keys               | 18            | 2            |
-| Randomize Peg Puzzles*   | 7 puzzles     | 10 puzzles   |
-| Randomize Secrets        | 0             | 20           |
-| Randomize Enemy Loot     | ~54 (122 max) | ~39 (98 max) |
-| Randomize Recovery Items | 452           | 105          |
-| Buttonsanity*            | 170           | 67           |
-| Buttoninsanity*          | 301           | 102          |
-| Shopsanity               | 70-77         | 70-77        |
-
-*Some notes:
-
-The Randomize Peg Puzzles option adds 0-4 locations per puzzle, with an average of around 2 per puzzle
-
-The Buttonsanity rows in the table include peg puzzle buttons, which aren't randomized if Randomize Peg Puzzles is off
