@@ -80,7 +80,11 @@ def tag_worlds():
             if not license:
                 if isinstance(github, list):
                     github = github[0]
-                repo = get_or_add_github_repo(github)
+                try:
+                    repo = get_or_add_github_repo(github)
+                except Exception as e:
+                    print(f"Failed to get repo for {world} from {github}: {e}")
+                    continue
                 manifest["license"] = repo.get_license()
                 if manifest["license"]:
                     save(world, manifest)
