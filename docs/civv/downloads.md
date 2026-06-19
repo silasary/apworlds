@@ -1,9 +1,12 @@
 # Civilization V
 
 ## Latest
-- <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.9.8/civv.apworld">Latest Version (0.9.8)</a>
+- <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.0/civv.apworld">Latest Version (0.10.0)</a>
 
 ## All Versions
+
+#### v0.10.0
+- <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.0/civv.apworld">https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.0/civv.apworld</a>
 
 #### v0.9.8
 - <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.9.8/civv.apworld">https://github.com/1313e/Civ-V-AP-World/releases/download/v0.9.8/civv.apworld</a>

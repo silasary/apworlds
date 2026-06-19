@@ -240,6 +240,22 @@
       "title": "1.1.0-rc2",
       "version_simple": "1.1.0",
       "world_version": "1.1.0rc2"
+    },
+    "1.1.0-rc3": {
+      "created_at": "2026-06-19T16:48:56Z",
+      "description": "## Librarian-AP v1.1.0-rc3\r\n\r\nThird release candidate for 1.1.0. Drop-in install \u2014 see `INSTALL.txt` in the zip. Server host: use the\r\nupdated `librarian.apworld`.\r\n\r\n### New in rc3 \u2014 the crash fix\r\n- **The intermittent native crash should be fixed.** Every rc2 report pointed at the same root cause:\r\n  the mod was updating book/bookcase state on a background thread, racing the game's renderer into a\r\n  crash \u2014 especially right after a series/shelf unlock. rc3 funnels **all** of that work through a single,\r\n  serialized, on-the-game-thread \"pump,\" so it can no longer race the renderer. **This is the headline\r\n  fix we need you to validate** \u2014 play through connects and series/shelf unlocks and tell us if it stays\r\n  stable.\r\n\r\n### Carried over\r\n- The rc2 crash mitigation (proactive redraw sweep off) stays.\r\n- Row-completion fix, no level inflation on reload, and the large cleanup from rc1/rc2.\r\n\r\n### Known issues\r\n- **\"Invisible when held\" book (rare, random).** Workaround: throw it out of bounds (it comes back\r\n  visible), or reload. It's below the mod's reach \u2014 see `known_bugs.txt`.\r\n- **Return-to-menu freeze (rare).** rc3 prevents the *crash* there, but a heavy warding pass right before\r\n  going to the menu can still cause a multi-minute freeze on the Menu\u2192Continue path. Separate follow-up.\r\n\r\n### If you crash or freeze \u2014 PLEASE send logs (this is the whole point of rc3)\r\nSend the crash-report folder, especially:\r\n  - `Mods/Librarian-AP/crash_trace.log`   \u2014 the breadcrumb ledger; its last lines name what we were doing\r\n  - `\u2026/Binaries/Win64/UE4SS.log`           \u2014 the last ~200 lines\r\n  - one line on what you were doing (connecting, a series unlock, returning to menu, \u2026)\r\n\r\nPlease confirm your title screen shows **`v1.1.0-rc3`** first \u2014 older builds don't help. Optional A/B if\r\nyou do crash: set `BOOK_ACTOR_GAMETHREAD=false` (or `CASE_WARD_GAMETHREAD=false`) in\r\n`Scripts/diag_flags.lua` to route that layer back to the old off-thread path, and report whether it returns.",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc3/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "65d90b1ddbbb8f189976cfd638c5bdb4a33e777c88a8955fbc773433bff6ae30",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-rc3",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 51075,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-rc3",
+      "title": "1.1.0-rc3",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0rc3"
     }
   }
 }

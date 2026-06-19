@@ -6,7 +6,7 @@ confront colossal beasts, collect strange and powerful items, and unravel long-l
 
 
 ## Downloads
-- <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.7/tunic.apworld">Latest Version (4.2.7)</a>
+- <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/5.0.0/tunic.apworld">Latest Version (5.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

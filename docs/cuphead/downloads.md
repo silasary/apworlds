@@ -89,6 +89,9 @@
 #### v0.3a0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03a/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03a/cuphead.apworld</a>
 
+#### v0.2.16909567
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03e/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03e/cuphead.apworld</a>
+
 #### v0.2.16909311
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03d/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03d/cuphead.apworld</a>
 

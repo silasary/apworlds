@@ -1,9 +1,12 @@
 # TUNIC
 
 ## Latest
-- <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.7/tunic.apworld">Latest Version (4.2.7)</a>
+- <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/5.0.0/tunic.apworld">Latest Version (5.0.0)</a>
 
 ## All Versions
+
+#### v5.0.0
+- <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/5.0.0/tunic.apworld">https://github.com/silent-destroyer/tunic-randomizer/releases/download/5.0.0/tunic.apworld</a>
 
 #### v4.2.7
 - <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.7/tunic.apworld">https://github.com/silent-destroyer/tunic-randomizer/releases/download/4.2.7/tunic.apworld</a>
