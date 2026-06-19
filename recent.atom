@@ -2,140 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-18T18:57:11.498215+00:00</updated>
+  <updated>2026-06-19T00:47:57.771335+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.5</id>
-    <title>Total War Warhammer 3 v0.10.5.post2</title>
-    <updated>2026-06-14T20:14:24+00:00</updated>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>Added missing WoC building.&#13;
-Added Monogod buildings for Norsca that were failing to generate and clarified their names better.&#13;
-Fixed generation error with spheres mode if too many spheres generate and no sanities are enabled.&#13;
-&#13;
-Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
-[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).</content>
-    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.1a</id>
-    <title>Paper Mario The Thousand Year Door v0.10.0</title>
-    <updated>2026-06-14T20:49:34+00:00</updated>
-    <author>
-      <name>jamesbrq</name>
-    </author>
-    <content># Changelog&#13;
-- Disabled color syncing for Multiplayer.</content>
-    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.1a"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.1</id>
-    <title>Paper Mario The Thousand Year Door v0.10.0</title>
-    <updated>2026-06-14T20:49:34+00:00</updated>
-    <author>
-      <name>jamesbrq</name>
-    </author>
-    <content># Changelog&#13;
-- Fix some memory leaks related to Multiplayer. Will continue to monitor as bug are reported.&#13;
-&#13;
-**Please report any crashes you run into with screenshots in either the discord or on github**</content>
-    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.0</id>
-    <title>Paper Mario The Thousand Year Door v0.10.0</title>
-    <updated>2026-06-14T20:49:34+00:00</updated>
-    <author>
-      <name>jamesbrq</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## New Additions&#13;
-- New Feature: In-Game Multiplayer. If you are connected to an Archipelago room, you will see up to 16 players in the same room as you. Everything will sync up that you do including sounds and all animations/overworld moves. Other players can be hammered to stun them briefly.&#13;
-## Note&#13;
-This requires a new setting to be enabled in dolphin to avoid any emulator pop-ups and warnings. This is outlined in the setup doc, however the client will attempt to enable it for you automatically if you boot the game with it disabled. This is not guarenteed to work if you are on linux or mac. If you do not let the client boot the game for you automatically, it will still update the setting for you as long as the client was opened before your game.&#13;
-&#13;
-A large part of this update was backend stability focused, related to memory usage, since the last 2 updates have pushed the memory usage of the game to its limits, and causing multiple crashes randly due to this. This should be resolved, but this is a new system I am using unique to every TTYD mod ever created, so this is new untested territory. Everything seems good though, Ive tested as much as I can.&#13;
-&#13;
-## Changes and Fixes&#13;
-- All variants of Mini-Yux now will not have their HP scaled&#13;
-- Goal should now properly play when a their last crystal star is a tattle&#13;
-- Many fixes for logic with tattlesanity and enemy randomizer enabled&#13;
-- Fix for chapter access rules being incorrect with blue pipe toggle disabled&#13;
-- Fix for logic for some locations in the later half of palace of shadow&#13;
-- Various other small logic fixes&#13;
-&#13;
-It is now more important than ever with these new updates to report any bugs you experience either into the discord or on github. If you experience anything please do not hesitate to do so.</content>
-    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.2</id>
-    <title>Paper Mario The Thousand Year Door v0.10.2.post2</title>
-    <updated>2026-06-14T20:49:34+00:00</updated>
-    <author>
-      <name>jamesbrq</name>
-    </author>
-    <content>## Changelog&#13;
-- Expanded the games memory from 24MB to 64MB. This is a necessary step to maintain stability with the new Multiplayer update and Enemy Randomizer.&#13;
-- New yaml option: ConsoleMode. This is deliberately stated in the yaml that this should only ever be enabled if you intend to play solo on a console, and should not be enabled for any other reason. This will disable multiplayer functionality, and change some of the patches applied to the game.&#13;
-- New yaml option: Multiplayer. This is a toggle for all multiplayer features, it is on by default and if it is turned off you will not broadcast your location to other players or receive any positional data from them.&#13;
-- New yaml option: RemoteItems. A new toggle to enable remote item receiving, this is off by default. This is fully integrated with the multiplayer feature to sync all in-game objects and items on any given slot, this means that any amount of people can connect to the same slot and see live object updates and items be picked up. If you pick up a slot with locations checked already and connect for the first time all items from that slot will be received and their items will no longer appear in the multiworld.&#13;
-- The game will now attempt to auto-launch the game properly on mac and linux systems, and the client will also attempt to write the settings required for the game to run in the TTYD config file in dolphin on boot.&#13;
-- Max rendered player count bumped from 16 to 24.&#13;
-- Re-Enabled color syncing between players in Multiplayer.&#13;
-&#13;
-# Note&#13;
-As of v0.10.2 a new setting is required in your dolphin emulator for the game to function. This must be enabled before the game can be launched. In Config &gt; Advanced, "Enable Emulated Memory Size Override" must be checked, and the MEM1 slider must be set to 64MB. If this setting is not set the game will crash on boot.&#13;
-&#13;
-## Fixes&#13;
-- Fix a logic error for Poshley heights that expected you to have access with a lot less items than were actually required.&#13;
-- Fix some animations not playing correctly in multiplayer.</content>
-    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.14.0</id>
-    <title>Metroid Dread v0.6.0</title>
-    <updated>2026-06-14T21:22:06+00:00</updated>
-    <author>
-      <name>maxdietz</name>
-    </author>
-    <author>
-      <name>Randovania Dread contributors</name>
-    </author>
-    <content>## Installation
-
-1. Download `dread.apworld` (below) and drop it into your
-   Archipelago install's `custom_worlds/` directory.
-2. Generate a multiworld using `Metroid Dread` as the game.
-3. Launch the **Dread Client** from Archipelago's Launcher (or
-   open a `.dreadap` file). The window includes an AP server address
-   bar, a **"Dread"** tab (live status + log), and a top-bar
-   **Switch-status pill** for pointing the client at your Switch or
-   Ryujinx. Click the pill → edit the IP → **Reconnect** (or use
-   `/dread_connect &lt;ip&gt;` in the command bar).
-4. Run `/setup` in the client to build and deploy the patched
-   RomFS — see the
-   [first-time setup walkthrough](https://github.com/mdietz94/dread_ap/blob/main/docs/first-time-setup.md)
-   for the click-by-click guide.
-
-See [README.md](https://github.com/mdietz94/dread_ap/blob/main/README.md)
-for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
-
-
-## What's Changed
-* fix(logic): keep DoorLocks symbolic to prevent unbeatable door-rando seeds by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/124
-* fix(door-rando): restore solvable seeds + door/DNA/hint options, progressive defaults by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/125
-* Move dreadvania_python config to host.yaml (standard AP settings) by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/127
-
-
-**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.13.3...v0.14.0</content>
-    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.14.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.0.6</id>
     <title>SM64: Spicy Mycena 64 v0.0.6</title>
@@ -312,7 +183,7 @@ This release provides the following updates:&#13;
   </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.3</id>
-    <title>Deltarune v2.0.3.post2</title>
+    <title>Deltarune v2.0.3.post3</title>
     <updated>2026-06-15T13:25:07+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -346,6 +217,7 @@ This release provides the following updates:&#13;
 **Starting a chapter with previous chapter completion data isn't recommended for right now as the rewrite wasn't made with it in mind. This will be fixed soon!**&#13;
 &#13;
 **v2.0.3a HOTFIX: Trashcan in chapter 2 now correctly works**&#13;
+**v2.0.3b HOTFIX: Fix the order of connection package that was failing when server takes more than 0.5s to respond**&#13;
 &#13;
 # Changelog&#13;
 ## APWorld&#13;
@@ -1126,5 +998,141 @@ New:&#13;
 &#13;
 No .apworld changes made; works with older worlds/saves</content>
     <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.0</id>
+    <title>A Link Between Worlds v0.3.0</title>
+    <updated>2026-06-18T19:35:40+00:00</updated>
+    <author>
+      <name>randomsalience</name>
+    </author>
+    <content>### New Features&#13;
+- Small keys, big keys, and compasses can be shuffled outside of their dungeons. The "Keysy" option is no longer its own option as it has been merged with the key shuffle options.&#13;
+- New `nice_items` option `upgrades` shuffles 9 item upgrades into the pool. These item upgrades do nothing unless you also receive the item itself, in which case they give you the nice version of the item. New `super_items` option `upgrades` does the same with super items.&#13;
+&#13;
+### Changes&#13;
+- Reworked 3DS connection code to reduce errors.&#13;
+- Patcher shows a loading bar and writes to a log file.&#13;
+- Colors of rupees in shops are now correct.</content>
+    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.7.0</id>
+    <title>Bloons TD6 v0.7.0</title>
+    <updated>2026-06-18T21:41:54+00:00</updated>
+    <author>
+      <name>Matt41321</name>
+    </author>
+    <content>### 13 New Traps and 1 filler:&#13;
+- 144p Trap&#13;
+- Chaos Control Trap&#13;
+- Flood Trap&#13;
+- Input Sequence Trap&#13;
+- Math Quiz Trap&#13;
+- Number Sequence Trap&#13;
+- Pokemon Trivia Trap&#13;
+- Screen Flip Trap&#13;
+- Shuffle Trap&#13;
+- Swap Trap&#13;
+- Trivia Trap&#13;
+- Yap Trap&#13;
+- Zoom Trap&#13;
+- New filler Thrive</content>
+    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/StefanDucharme/nonogram-archipelago/releases/tag/v0.6.7</id>
+    <title>Nonopelagram v0.6.7</title>
+    <updated>2026-06-18T21:43:37+00:00</updated>
+    <author>
+      <name>StefanDucharme</name>
+    </author>
+    <content>Thanks to https://github.com/Serial-Developer for fixes and features</content>
+    <link href="https://github.com/StefanDucharme/nonogram-archipelago/releases/tag/v0.6.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.0</id>
+    <title>Cobalt Core v1.2.0</title>
+    <updated>2026-06-18T21:54:02+00:00</updated>
+    <author>
+      <name>Isaac-SOL</name>
+    </author>
+    <content>Full release of [1.2.0-rc1](https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release%2F1.2.0-rc1) and [1.2.0-rc2](https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release%2F1.2.0-rc2), finally fixing most of their bugs.&#13;
+Additional tweaks to the APWorld will come in a later version.&#13;
+&#13;
+Sorry for taking a long time with this one, I've gotten very busy as I've started working on a game!&#13;
+On that note, I'll be taking a pseudo-break from the mod until it is released, which I'm planning to do within the year. I will still be responding to questions on the discord and keeping an eye out for easy fixes and small suggestions, releasing patches when I have the time. The next big step after that will be support for content mods!&#13;
+&#13;
+## Tweaks&#13;
+&#13;
+- Setting `rewards_tweak` to `more_unlocked` will now guarantee at least one unlocked card in events, such as the "high-pitched static" event for example&#13;
+- CAT no longer announces AP items we are giving to ourselves&#13;
+- Hovering over the CAT messages to look at your artifacts now hides the message box&#13;
+- Removed the "choose profile" button in the main menu, as it was behaving weirdly and causing issues. If you want to change profiles, restart the game.&#13;
+&#13;
+## Fixes&#13;
+&#13;
+- Fixed a crash when you start with 7 or more characters including CAT&#13;
+- The game now correctly renders item names containing the `&lt;` character&#13;
+- The game will no longer give you locked starting cards when `randomize_starting_cards` is `false` and you have less than 3 characters&#13;
+&#13;
+The APWorld and YAML options are identical to 1.2.0-rc2, and do not need to be updated.</content>
+    <link href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Slimm160/Mini-Metro-Archipelago/releases/tag/0.2.1-alpha</id>
+    <title>Mini Metro v0.2.1a0</title>
+    <updated>2026-06-18T22:00:42+00:00</updated>
+    <author>
+      <name>Slimm160</name>
+    </author>
+    <content>Recent Changes&#13;
+- Added an additional goal "Goal Map". Allows you to set the goal of completing a specific map up to the target week&#13;
+- Made Logic more consistent and forgiving for early items.&#13;
+- Minor Bug Fixes</content>
+    <link href="https://github.com/Slimm160/Mini-Metro-Archipelago/releases/tag/0.2.1-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/StefanDucharme/blockupelago/releases/tag/v2.2</id>
+    <title>Blockupelago v2.2</title>
+    <updated>2026-06-18T22:41:57+00:00</updated>
+    <author>
+      <name>StefanDucharme</name>
+    </author>
+    <content/>
+    <link href="https://github.com/StefanDucharme/blockupelago/releases/tag/v2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.3</id>
+    <title>Rabbit and Steel v0.3.3</title>
+    <updated>2026-06-18T23:04:16+00:00</updated>
+    <author>
+      <name>tjwombo</name>
+    </author>
+    <content>6+ runs crashing (may have fixed 4+ shira ending early, but didnt test deliberately)&#13;
+DLC itemsets are in the pool&#13;
+Fixed visuals for starting with the opposite kingdom type than the game expected&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.3.3](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.2...v0.3.3) - 2026-06-18&#13;
+&#13;
+### Commits&#13;
+&#13;
+- add the lost hooks [`3372fa8`](https://github.com/tjwombo/RNSArchipelago/commit/3372fa8ff642148326d94cd3031b85f747da4068)&#13;
+- add todo note [`b30996f`](https://github.com/tjwombo/RNSArchipelago/commit/b30996f1d99bd3cf849ac11087a49cced1e50e57)&#13;
+- update workflow [`95b096b`](https://github.com/tjwombo/RNSArchipelago/commit/95b096beb70b7e3325f162101498aab83ddd7348)&#13;
+- Update reloaded.yml [`28e8fd7`](https://github.com/tjwombo/RNSArchipelago/commit/28e8fd7b4faa9b54fd4a4072cf139fb7e8052354)&#13;
+- Update ClassHandler.cs [`e874960`](https://github.com/tjwombo/RNSArchipelago/commit/e8749604a9dc8d10a33664f7510408487bec48dc)&#13;
+- Add DLC itemsets to AddItemsFromItemset [`3ee15fb`](https://github.com/tjwombo/RNSArchipelago/commit/3ee15fb63c229521674269d7ed074c9b44f1f3b5)&#13;
+- Fix 6+ runs crashing and maybe 4+ Shira bug [`497631b`](https://github.com/tjwombo/RNSArchipelago/commit/497631b6ed11dd890660b95de817582a9dfd21c5)&#13;
+- Update the background for mismatched kingdom start [`4c1f118`](https://github.com/tjwombo/RNSArchipelago/commit/4c1f1180bb9f14bfc74133b76a92777be2445347)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.3"/>
   </entry>
 </feed>

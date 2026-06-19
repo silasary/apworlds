@@ -7,7 +7,7 @@ grid sizes, abilities, and more.
 
 
 ## Downloads
-- <a href="https://github.com/StefanDucharme/blockupelago/releases/download/v0.2.0/blockupelago.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/StefanDucharme/blockupelago/releases/download/v2.2/blockupelago.apworld">Latest Version (2.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
