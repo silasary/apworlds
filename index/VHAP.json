@@ -49,6 +49,20 @@
       "version_simple": "1.2.3",
       "world_version": "1.2.3"
     },
+    "v.1.2.4": {
+      "created_at": "2026-05-19T07:29:24Z",
+      "description": "More Refining Done on displaying locked skills.\r\n\r\nFixes:\r\nSpecializations now properly display the [Locked By Archipelago] tooltip when locked\r\nRemoved the extra [Skill: Angel] that pointed to nothing\r\n\r\nAdditions:\r\nMade unlocking a specialization when the parent skill is locked, learn the parent skill instead, and then the base skill unlocks the specialization.\r\nAdded 2 commands (/APchat, /MCchat) allowing for each player to toggle their Minecraft chat to allow for ap commands, and messaging.\r\n(Chat Mode is saved between server/world resets)",
+      "download_url": "https://github.com/Studmuffin2227/VHAPMod/releases/download/v.1.2.4/VHAP.apworld",
+      "has_manifest": false,
+      "hash_sha256": "361a44786b94e097dc805f20cdf94dfd6eaf672f7411d73410ab8e826cbc7358",
+      "html_url": "https://github.com/Studmuffin2227/VHAPMod/releases/tag/v.1.2.4",
+      "size": 12032,
+      "source_url": "https://api.github.com/repos/Studmuffin2227/VHAPMod",
+      "tag": "v.1.2.4",
+      "title": "Version 1.2.4",
+      "version_simple": "1.2.4",
+      "world_version": "1.2.4"
+    },
     "v.1.2.4-pre": {
       "created_at": "2026-05-19T07:29:24Z",
       "description": "(Actually contains the apworld and jar file now)\r\nMarker as Pre-Release as the development for this update went by a little too smoothly, and i fear they may be bugs, or I forgot something I wanted to add...\r\n\r\nAdditions:\r\nAdded an option in the YAML to force Quest Check rewards to not be Progressive after a certain amount\r\nAdded DeathLink (Untested in Multiplayer)\r\nAdded DeathLink Vault Only (Death Links will only send and recieve when the player is inside a vault)\r\nAdded DeathLink Vault Curse (Makes received DeathLinks curse the next/current vault instead of killing the player\r\nAdded Progessive Level Cap Size (Default: -1, Any other number should unlock the respective amount of levels per cap) [Requested by @sparky5000 on discord]\r\n\r\nFixes:\r\nShould have fixed the skills, talents, mods, and expertise logic problems brought up by @angrevol on discord, including Herald logic as well\r\nFixed Vault Jewels not Rolling Stats/Modifiers\r\nShould have fixed multiplayer sending quests for all players involved, Should now only check quests for the player who ran the connect command.\r\nFixed the Check-Table block not showing in search JEI\r\n\r\n\r\nAnd probably something else but im too tired right now to remember.",
