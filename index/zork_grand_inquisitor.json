@@ -263,6 +263,36 @@
       "title": "Zork Grand Inquisitor - 2.1.1",
       "version_simple": "2.1.1",
       "world_version": "2.1.1.post2"
+    },
+    "zgi-v2.1.2": {
+      "created_at": "2026-06-20T02:27:50Z",
+      "description": "This is an improvement release that also includes tweaks and fixes.\r\n\r\n**This release IS compatible with games generated on the previous version**\r\n\r\n- **Improvement:** Checked locations are now seeded from the AP server upon connection. Helps with granting missable locations upon further reconnections\r\n- **Improvement:** After sliding the Zork Rocks in the locker and backing out, the explosion will happen immediately! No need to wait for the full countdown\r\n- **Tweak:** Mead Light is now a permanent item to avoid the possibility of a rare entrance randomizer softlock\r\n- **Tweak:** Mead Light? and ZIMDOR is Undamaged are no longer considered missable\r\n- **Tweak:** Spell Check Complete is now considered missable and granted when going back to the scroll box after imbuing BEBURTT\r\n- **Fix:** Addressed an issue where missable locations with multiple location requirements would be granted right away after meeting 1 requirement",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.1.2/zork_grand_inquisitor.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4710963eff1f5264f2c6e95e958f01cbecbf5cb209e1196e7110e93300e1d9b6",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 1142769,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "zgi-v2.1.2",
+      "title": "Zork Grand Inquisitor - 2.1.2",
+      "version_simple": "2.1.2",
+      "world_version": "2.1.2"
+    },
+    "zgi-v2.2.0": {
+      "created_at": "2026-06-20T02:50:48Z",
+      "description": "This is an improvement release.\r\n\r\n**This release IS compatible with games generated on the previous version**\r\n\r\n- **Improvement:** Switched supported ScummVM version from 2.7.1 (March 2023) to 2026.2.0 (March 2026)\r\n  - This up-to-date ScummVM version feature numerous improvements for ZVision (the Zork Grand Inquisitor game engine):\r\n    - Completely overhauled rendering + proper widescreen support\r\n    - Improvements to quality of 3D directional audio & nonlinear volume scaling\r\n    - Restored functionality of some in-game options controls\r\n    - Game script fixes\r\n    \r\n**IMPORTANT**\r\n\r\nA vanilla game script refers to a non-existent file regardless of the game version you own. That file will need to be created to avoid ScummVM crashing when operating the totemizer. Locate `me00h64p.raw` (for GOG, it's in `zassetse\\eng_aud`; for Steam, it's in `ZASSETS2\\MONAST2`). Make a copy and rename it to `me00h62p.raw`. The file has always been missing, but later ScummVM versions started crashing instead of ignoring the exception",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.2.0/zork_grand_inquisitor.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1eb2589169ee01f60ed3c0e2119367a07d6bcdb26c2d1a7ba07bce5ab58396f5",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 1143021,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "zgi-v2.2.0",
+      "title": "Zork Grand Inquisitor - 2.2.0",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0"
     }
   }
 }

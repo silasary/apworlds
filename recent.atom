@@ -2,48 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-20T00:44:16.985106+00:00</updated>
+  <updated>2026-06-20T07:22:59.481813+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.5</id>
-    <title>Black Ops 3 - Zombies v0.5.4</title>
-    <updated>2026-06-15T10:30:33+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>Fixes provided by @eah1759&#13;
-&#13;
-- Origins&#13;
-  - Add "All Spare Change Collected" check&#13;
-  - Fix "Fill all 4 Soul Boxes" check not working&#13;
-  - Prevent softlock from "Music EE - Shepherd of Fire" check</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.2.1</id>
-    <title>Cursed Words v0.2.0</title>
-    <updated>2026-06-15T12:53:04+00:00</updated>
-    <author>
-      <name>JammyGeeza</name>
-    </author>
-    <content>## Information&#13;
-This archipelago implementation is in **early development** and is in public pre-release for testing, so may not be complete and/or may contain bugs that heavily disrupt the experience. It is not advised to include this in large multiworlds at this time, so only do so at your own risk and inform your host beforehand.&#13;
-&#13;
-## Setup Guide&#13;
-Please visit the [Setup Guide](https://github.com/JammyGeeza/CursedWords-Archipelago#setup-guide) for instructions on how to install the mod client.&#13;
-&#13;
-## Issue / Bug Reporting&#13;
-If you experience issues that are not already on the [known issues list](https://github.com/JammyGeeza/CursedWords-Archipelago/issues?q=is%3Aissue%20state%3Aopen), please raise a new issue or post in the [Cursed Words Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1499176806962692196)&#13;
-&#13;
-## Release Notes&#13;
-This release provides the following updates:&#13;
-### Client Fixes&#13;
-- Updated to work with game version `v4.12`</content>
-    <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.2.1"/>
-  </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.3</id>
     <title>Deltarune v2.0.3.post3</title>
@@ -1240,5 +1203,78 @@ You can now filter what types of checks the seeking spell will search for, inclu
 &#13;
 No .apworld changes made; works with older worlds/saves</content>
     <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.2</id>
+    <title>Zork Grand Inquisitor v2.1.2</title>
+    <updated>2026-06-20T02:27:50+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is an improvement release that also includes tweaks and fixes.&#13;
+&#13;
+**This release IS compatible with games generated on the previous version**&#13;
+&#13;
+- **Improvement:** Checked locations are now seeded from the AP server upon connection. Helps with granting missable locations upon further reconnections&#13;
+- **Improvement:** After sliding the Zork Rocks in the locker and backing out, the explosion will happen immediately! No need to wait for the full countdown&#13;
+- **Tweak:** Mead Light is now a permanent item to avoid the possibility of a rare entrance randomizer softlock&#13;
+- **Tweak:** Mead Light? and ZIMDOR is Undamaged are no longer considered missable&#13;
+- **Tweak:** Spell Check Complete is now considered missable and granted when going back to the scroll box after imbuing BEBURTT&#13;
+- **Fix:** Addressed an issue where missable locations with multiple location requirements would be granted right away after meeting 1 requirement</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.2.0</id>
+    <title>Zork Grand Inquisitor v2.2.0</title>
+    <updated>2026-06-20T02:50:48+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is an improvement release.&#13;
+&#13;
+**This release IS compatible with games generated on the previous version**&#13;
+&#13;
+- **Improvement:** Switched supported ScummVM version from 2.7.1 (March 2023) to 2026.2.0 (March 2026)&#13;
+  - This up-to-date ScummVM version feature numerous improvements for ZVision (the Zork Grand Inquisitor game engine):&#13;
+    - Completely overhauled rendering + proper widescreen support&#13;
+    - Improvements to quality of 3D directional audio &amp; nonlinear volume scaling&#13;
+    - Restored functionality of some in-game options controls&#13;
+    - Game script fixes&#13;
+    &#13;
+**IMPORTANT**&#13;
+&#13;
+A vanilla game script refers to a non-existent file regardless of the game version you own. That file will need to be created to avoid ScummVM crashing when operating the totemizer. Locate `me00h64p.raw` (for GOG, it's in `zassetse\eng_aud`; for Steam, it's in `ZASSETS2\MONAST2`). Make a copy and rename it to `me00h62p.raw`. The file has always been missing, but later ScummVM versions started crashing instead of ignoring the exception</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.3</id>
+    <title>Cookie Clicker v0.8.3</title>
+    <updated>2026-06-20T04:10:01+00:00</updated>
+    <author>
+      <name>Charlignon</name>
+    </author>
+    <content>This release brings stability improvements to logic&#13;
+:information_source: This client IS retrocompatible with older version 0.8.x version (not alpha/beta), so you can update during an ongoing game.&#13;
+:warning: This apworld is NOT retromcompatible with previous clients. To use it, update your client to 0.8.3.&#13;
+&#13;
+## New yaml option&#13;
+* Plentiful Buildings: Additional Building Copies to the pull&#13;
+&#13;
+## Bug fixes&#13;
+* Fix Hardcore achievements being impossible. It now requires to bake 1Q cookies without buying Cookie Upgrades. It's now in sphere 2&#13;
+* Fix some prestige items unlocking themselves after ascending&#13;
+* Fix eggs achievements not checking properly&#13;
+* Improve logic for more sphere stability. It should hopefully fix trackers telling you unreachable checks being "in logic"&#13;
+&#13;
+## Acknowledgements&#13;
+* @SoraUltimateProgrammer made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/1&#13;
+* @wjg999 made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/4&#13;
+* @TeamLila made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/2&#13;
+&#13;
+Thanks a lot for helping grow this apworld !!&#13;
+&#13;
+## Misc.&#13;
+* This github now has a [discussion space](https://github.com/Charlignon/AP_CookieClicker/discussions) ! You can send ideas there and express opinions. This is a place that comes in addition to the AP discord server, in order to keep track of ideas </content>
+    <link href="https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.3"/>
   </entry>
 </feed>
