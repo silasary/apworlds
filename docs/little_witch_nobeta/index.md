@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/danielgruethling/Archipelago/releases/download/0.3.1/little_witch_nobeta.apworld">Latest Version (0.3.1)</a>
+- <a href="https://github.com/danielgruethling/Archipelago/releases/download/0.3.2/little_witch_nobeta.apworld">Latest Version (0.3.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

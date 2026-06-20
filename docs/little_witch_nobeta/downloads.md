@@ -1,9 +1,12 @@
 # Little Witch Nobeta
 
 ## Latest
-- <a href="https://github.com/danielgruethling/Archipelago/releases/download/0.3.1/little_witch_nobeta.apworld">Latest Version (0.3.1)</a>
+- <a href="https://github.com/danielgruethling/Archipelago/releases/download/0.3.2/little_witch_nobeta.apworld">Latest Version (0.3.2)</a>
 
 ## All Versions
+
+#### v0.3.2
+- <a href="https://github.com/danielgruethling/Archipelago/releases/download/0.3.2/little_witch_nobeta.apworld">https://github.com/danielgruethling/Archipelago/releases/download/0.3.2/little_witch_nobeta.apworld</a>
 
 #### v0.3.1
 - <a href="https://github.com/danielgruethling/Archipelago/releases/download/0.3.1/little_witch_nobeta.apworld">https://github.com/danielgruethling/Archipelago/releases/download/0.3.1/little_witch_nobeta.apworld</a>
