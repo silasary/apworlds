@@ -2,129 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-20T12:45:01.770026+00:00</updated>
+  <updated>2026-06-20T18:34:06.180180+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.3</id>
-    <title>Deltarune v2.0.3.post3</title>
-    <updated>2026-06-15T13:25:07+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <author>
-      <name>theemeraldsword85</name>
-    </author>
-    <author>
-      <name>Tenebrosful</name>
-    </author>
-    <author>
-      <name>Vintagix</name>
-    </author>
-    <author>
-      <name>Deadzi</name>
-    </author>
-    <author>
-      <name>Charaster</name>
-    </author>
-    <author>
-      <name>Potato</name>
-    </author>
-    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
-&#13;
-(This APWorld is intended for DELTARUNE 1.04. Using a Beta or the Ch1+2 Demo will not work.)&#13;
-&#13;
-***WARNING: Switching from earlier version during an ASYNC will make the game forget that you already completed chapters (as the datastorage key changed)***&#13;
-&#13;
-**Linux is not supported for now and will disconnect you after few seconds from the server! Linux will be supported in future updates**&#13;
-&#13;
-**Starting a chapter with previous chapter completion data isn't recommended for right now as the rewrite wasn't made with it in mind. This will be fixed soon!**&#13;
-&#13;
-**v2.0.3a HOTFIX: Trashcan in chapter 2 now correctly works**&#13;
-**v2.0.3b HOTFIX: Fix the order of connection package that was failing when server takes more than 0.5s to respond**&#13;
-&#13;
-# Changelog&#13;
-## APWorld&#13;
-- Reworked the Regions internally&#13;
-### Chapter 2&#13;
-- Purchasing the ThornRing and FreezeRing now requires having Noelle in Logic&#13;
-- `CH2: Cyber City - Trash Can #1` Now requires having either Kris or Noelle&#13;
-### Chapter 4&#13;
-- Made the exit to the Second Sanctuary have Susie and Kris in logic&#13;
-&#13;
-## Game&#13;
-- Internally, customflags are now more descriptive&#13;
-- Minor grammar/dialogue changes in all chapters&#13;
-- Connecting using the In-game Client should now work better&#13;
-- Connecting to alternative server is now fixed &#13;
-- Change datastorage key names to `slot_team_keyname` &#13;
-- Items needed to progress are now highlighted&#13;
-- Made Dark Candy/Darker Candy have proper stats/descriptions in their respective chapters&#13;
-### Chapter 1&#13;
-- Fixed Chapter 1 giving you empty weapon slots if you choose to have starting gear&#13;
-### Chapter 2&#13;
-- Fixed the KeyGen 2 lock appearing every time you re-enter the room&#13;
-- Made the npc telling you to fight Spamton NEO actually appear&#13;
-### Chapter 3&#13;
-- Doing 1225 on the Ball Machine doesn't steal all of your points, just 1225 of them&#13;
-- Added an NPC to skip Doom Board&#13;
-- Making it to the end of the Credits no longer crashes the game&#13;
-### Chapter 4&#13;
-- Skipping Dark Sanctuary now just sends the Jackenstein Gift and Sheetmusic locations&#13;
-- Made the warp to fight Hammer of Justice better (sorry starwalker....)&#13;
-- Returning to Castle Town at the end of Chapter 4 no longer has barriers</content>
-    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.0</id>
-    <title>budokai_tenkaichi2 v0.3.0</title>
-    <updated>2026-06-15T17:22:40+00:00</updated>
-    <author>
-      <name>z3xox</name>
-    </author>
-    <content>Z-Support Items are in the pool, disable giants flag as well as death link</content>
-    <link href="https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.4</id>
-    <title>Dead Cells v0.1.4</title>
-    <updated>2026-06-15T17:25:40+00:00</updated>
-    <author>
-      <name>Max_lamenace572</name>
-    </author>
-    <author>
-      <name>OnlyLeafeon</name>
-    </author>
-    <author>
-      <name>Rayze</name>
-    </author>
-    <content>Gameplay Changes:&#13;
-- Colorless shop price lowered (400 -&gt; 100)&#13;
-- Every outfit now costs 50 (except cultist)&#13;
-- The number of charges you gain with the hunter grenade is now the number of active BSC + 1&#13;
-- Added offline synchronization. If you are playing and you forgot to connect, the locations you checked will be sent when you are connected to the server&#13;
-- As a lot of people play on apworld versions incompatible with the mod version (ending in a crash when talking to the collector after receiving specific items), I will write from now on in the release notes which version it is compatible with, and now the apworld version is displayed in-game when connecting. The color code is: &#13;
-  - Red: too old and will cause crashes&#13;
-  - Green: compatible&#13;
-  - Orange: unknown as the apworld comes from a later release than the mod&#13;
-&#13;
-Bug Fixes:&#13;
-- AP versions of Dead Man's Bag and Residual Cells were overriding the vanilla ones when given once&#13;
-- Crash upon entering Boss Rush&#13;
-- Boss Defeats not being sent (a flag help for Universal Tracker users)&#13;
-&#13;
-Apworld Changes by Rayze:&#13;
-- Fixed Cursed Biome rules crashing generation if Bad Seed/Castlevania DLCs disabled&#13;
-- Archipelago.json wasnt actually in the apworld folder, moved it there and it it no longer throws the generation disclaimer&#13;
-- Fixed Parting Gift in the Graveyard missing Ram Rune rule&#13;
-- Added a Location Group "Problem Heads" for the Head Checks that currently cause an accessibility warning on generation&#13;
-- Renamed BossRushUnlock and added it to prefill to its associated Location&#13;
-&#13;
-Compatible with apworld 0.1.4</content>
-    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.4"/>
-  </entry>
   <entry>
     <id>https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.3.0</id>
     <title>Ship of Harkinian v1.3.0</title>
@@ -923,6 +805,22 @@ The APWorld and YAML options are identical to 1.2.0-rc2, and do not need to be u
     <link href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.0"/>
   </entry>
   <entry>
+    <id>https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.1</id>
+    <title>Cobalt Core v1.2.1</title>
+    <updated>2026-06-18T21:54:02+00:00</updated>
+    <author>
+      <name>Isaac-SOL</name>
+    </author>
+    <content>Fixes a gamebreaking crash.&#13;
+&#13;
+## Fixes&#13;
+&#13;
+- Fixes a crash happening whenever you take an AP artifact with only one item in it&#13;
+&#13;
+The APWorld and YAML options are identical to 1.2.0, and do not need to be updated.</content>
+    <link href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/Slimm160/Mini-Metro-Archipelago/releases/tag/0.2.1-alpha</id>
     <title>Mini Metro v0.2.1a0</title>
     <updated>2026-06-18T22:00:42+00:00</updated>
@@ -1299,5 +1197,51 @@ This release may not fully compatible with seeds generated **before** 1.4.0&#13;
   - !!joinTrapLink&#13;
   - !!leaveTrapLink</content>
     <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.4</id>
+    <title>Cookie Clicker v0.8.4</title>
+    <updated>2026-06-20T16:07:50+00:00</updated>
+    <author>
+      <name>Charlignon</name>
+    </author>
+    <content>This release is a hotfix and only includes updates of the client.&#13;
+  :information_source: This release is retrocompatible with 0.8.3. See [0.8.3](https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.3) for more details on retrocompatibility.&#13;
+&#13;
+## Fix&#13;
+3rd occurrence of Progressive temple would not correctly unlock the upgrade.&#13;
+&#13;
+## Notes&#13;
+Just updating your client is fine and will fix the issue. You will received the upgrade upon connection.&#13;
+Apworld is identical to 0.8.3</content>
+    <link href="https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.33</id>
+    <title>Pokemon Black and White v0.3.33</title>
+    <updated>2026-06-20T18:02:27+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <author>
+      <name>SparkyDaDoggo</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+- Fixed multiple changes to the base ROM being reverted in previous updates&#13;
+- Made the Plasma grunts in Chargestone Cave always stay in the cave&#13;
+  - This fixes them potentially never appearing when playing through Chargestone Cave in reverse&#13;
+- Added an NPC to the southern entrance of Chargestone Cave that throws you to the northern exit&#13;
+  - He only appears after defeating N in Chargestone Cave&#13;
+- Removed the forced Musical Theater dress up minigame&#13;
+- Fixed the fight with N in Nacrene City being missable when doing the Pinwheel Forest events before that&#13;
+- Added a bit of funny dialog at the start of the game&#13;
+- Added an NPC next to the Pokémon Center in Accumula Town, who will be used for a feature in 0.4.0&#13;
+&#13;
+### Is this version compatible with older multiworld slots and save files?&#13;
+Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
+However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT&#13;
+</content>
+    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.33"/>
   </entry>
 </feed>
