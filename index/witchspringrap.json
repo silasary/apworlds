@@ -86,6 +86,34 @@
       "title": "0.2.0",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "0.3.0": {
+      "created_at": "2026-06-20T18:58:12Z",
+      "description": "Adds in-game Archipelago messages and three optional \"sanity\" check categories\r\n(Battlesanity, Bestiary, QuestSanity), plus logic and naming fixes.\r\n\r\n> **\u26a0\ufe0f Upgrade notes (read before updating)**\r\n> - **Both files must be updated together:** install the new `witchspringrap.apworld` **and** the new `WitchSpringRArchipelago.dll`. They are a matched pair.\r\n> - **Generate fresh seeds** with 0.3.0 \u2014 the new options and checks won't exist on older seeds.\r\n> - The new check categories are **optional toggles, off by default** \u2014 your existing yaml keeps working unchanged.\r\n\r\n### In-game messages\r\n- The game now shows **\"Sent &lt;item&gt; to &lt;player&gt;\"** when you trigger a check and **\"Received &lt;item&gt; from &lt;player&gt;\"** when an item is delivered, in the top-left info bar.\r\n\r\n### New optional check categories (yaml toggles)\r\n- **Please note that naming conventions and logic may not be fully proper for these settings as of yet**\r\n- **Battlesanity** \u2014 a check for clearing each field battle (sends on win). ~136 checks.\r\n- **Bestiary** \u2014 a check for defeating each enemy; any rank/shield variant counts. ~101 checks.\r\n- **QuestSanity** \u2014 a check for completing each quest (main + request-board; sends when the quest is cleared, however it completes). ~140 checks.\r\n- Each is a separate toggle (default **off**); the item pool auto-pads with filler so seeds stay fillable when they're enabled.\r\n\r\n### Fixes\r\n- **Region name:** \"Blackhill Golem Cave\" corrected to **\"Backhill Golem Cave\"**.\r\n- **Arua Blessing** now also requires the Fire Magic Spellbook and Mind Control Circle (it isn't actually reachable until you can leave the starting area).\r\n- Minor per-check chapter-gating fixes from playtesting.\r\n",
+      "download_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.0/witchspringrap.apworld",
+      "has_manifest": false,
+      "hash_sha256": "1a3d742bb1b4e9700d3b56bd758aabfc982a60372b54320c8b37bb5809fa2eb9",
+      "html_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.0",
+      "size": 42786,
+      "source_url": "https://api.github.com/repos/LeiAfkpuz/WitchSpring-R-Archipelago",
+      "tag": "0.3.0",
+      "title": "v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
+    },
+    "0.3.1": {
+      "created_at": "2026-06-20T18:58:12Z",
+      "description": "Forgot to save the basic logic to questsanity. Still not perfect, but better than before",
+      "download_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.1/witchspringrap.apworld",
+      "has_manifest": false,
+      "hash_sha256": "bb32cea138e006997f657cb53bd0180505b49f53fc014b698897dbe9edf7de2d",
+      "html_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.1",
+      "size": 42932,
+      "source_url": "https://api.github.com/repos/LeiAfkpuz/WitchSpring-R-Archipelago",
+      "tag": "0.3.1",
+      "title": "0.3.1",
+      "version_simple": "0.3.1",
+      "world_version": "0.3.1"
     }
   }
 }

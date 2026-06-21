@@ -1,9 +1,12 @@
 # Peggle Deluxe
 
 ## Latest
-- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.2.0/peggle_deluxe.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.3.0/peggle_deluxe.apworld">Latest Version (1.3.0)</a>
 
 ## All Versions
+
+#### v1.3.0
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.3.0/peggle_deluxe.apworld">https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.3.0/peggle_deluxe.apworld</a>
 
 #### v1.2.0
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.2.0/peggle_deluxe.apworld">https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.2.0/peggle_deluxe.apworld</a>

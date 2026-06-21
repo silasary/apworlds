@@ -2,152 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-20T18:34:06.180180+00:00</updated>
+  <updated>2026-06-21T00:44:30.923686+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.3.0</id>
-    <title>Ship of Harkinian v1.3.0</title>
-    <updated>2026-06-15T17:28:28+00:00</updated>
-    <author>
-      <name>aMannus</name>
-    </author>
-    <author>
-      <name>jeromkiller</name>
-    </author>
-    <author>
-      <name>ScipioWright</name>
-    </author>
-    <author>
-      <name>Fanta-Tanked</name>
-    </author>
-    <author>
-      <name>Sam</name>
-    </author>
-    <author>
-      <name>DaComputerNerd717</name>
-    </author>
-    <author>
-      <name>A-Green-Spoon</name>
-    </author>
-    <author>
-      <name>StuBob</name>
-    </author>
-    <author>
-      <name>Tzuf23</name>
-    </author>
-    <author>
-      <name>mattman107</name>
-    </author>
-    <author>
-      <name>Varuuna</name>
-    </author>
-    <author>
-      <name>Lorithan</name>
-    </author>
-    <author>
-      <name>BootsinSoots</name>
-    </author>
-    <author>
-      <name>briaguya</name>
-    </author>
-    <author>
-      <name>Sirius902</name>
-    </author>
-    <author>
-      <name>ThatHypedPerson</name>
-    </author>
-    <content>The team has been hard at work over the last couple of months to put this release together.&#13;
-&#13;
-This release features a few frequently requested features and a pretty major under the hood change!&#13;
-&#13;
-## Changes&#13;
-- Our client is now based on Ship of Harkinian 9.2.3, fixing several in-game tracker inconsistencies and introduces a "Allow background inputs" toggle among all other new built-in Ship features.&#13;
-- Added static hints with clarity options, no more wondering what a merchant has for sale or or if killing those gold skultullas is worth it.&#13;
-- Added Gossip stone hints.&#13;
-- Added a fully featured hint panel to the client.&#13;
-- Ported all logic to the rule builder format, allowing Universal tracker to explain why you can or can't collect certain checks.&#13;
-- Added more starting item options.&#13;
-- Added Medallion locked trial options.&#13;
-- Added Trial count options.&#13;
-- Added Damage and Trap link toggles.&#13;
-- Added Automatic map switching in poptracker.&#13;
-- Fixes and updates to Item classifications&#13;
-- Fixes and updates to Item and Location groupings.&#13;
-- Improved deathlink handling.&#13;
-- A ton of bugfixes.&#13;
-&#13;
-# Full Change log&#13;
-- Updated client to Ship of Harkinian 9.2.3&#13;
-- Added the ability to launch the Ship of Harkinian client form your room's web page, automatically populating the connection data fields.&#13;
-- Added Starting Item options for the following items:&#13;
-  - Kokiri Sword.&#13;
-  - Deku Shield.&#13;
-  - Master Sword.&#13;
-  - Ocarinas.&#13;
-  - Nuts.&#13;
-  - Sticks.&#13;
-  - Songs.&#13;
-- Added different options for starting items in links pocket.&#13;
-- Added Starting hearts option.&#13;
-- Added medallion locked trials and Required trials count option,&#13;
-- Added static hints with clarity options.&#13;
-- Added gossip stone hints.&#13;
-- Added a hint panel to the Ship of Harkinian client which features.&#13;
-  - Automatic creation of hints on clear static hint dialogue.&#13;
-  - Updating hint relevance for items you can receive.&#13;
-  - Sorting.&#13;
-  - Manually requesting hints with a fuzzy searching for relevant items.&#13;
-- Improved Trap randomization.&#13;
-- Added automatic map switching to the poptracker pack.&#13;
-- Added location and item groups for all items.&#13;
-  - These are used for creating ambiguous hints, hints that can refer to multiple items or locations.&#13;
-- Internal logic has been fully switched over to the rule builder.&#13;
-- Added Damage and Trap link.&#13;
-- Fixed deathlink getting send out multiple times.&#13;
-- Fixed Broken item references with golden skultullas.&#13;
-- Made the Archipelago Connected label automatically fade out after you've been connected for a while.&#13;
-- Fixed bug where "Song from Ocarina of Time" and "Sheik in ice cavern" checks got sent out erroneously when their related "Ocarina of time Item" and "Ice cavern Iron Boots Chest" checks were collected remotely while offline during asynch multiworlds.&#13;
-- Added Randomization of seeded client features&#13;
-  - Local Enemy Randomizer and Randomized Mirror mode should not be the same across multiworlds anymore&#13;
-- Updated Item classifications.&#13;
-- Stopped requesting location scouts on every connection, now only requesting them on save file creation.&#13;
-- Added a whole bunch of unit test.&#13;
-- Fixed Poe collector giving you a bottle when the check has already been collected remotely.&#13;
-- Fixed accidental goaling a second time when switching to a different slot after beating the game.&#13;
-- Incoming ice traps now have randomized models now.&#13;
-&#13;
-# Known Issues&#13;
- - There are some issues with the client getting stuck "loading data" during save file creation. We are currently unsure which settings might cause this issue. If you run into this problem please send us your yaml file and a copy of the generated multiworld so we can diagnose the issue&#13;
- - There is a generation issue when using Item links. This issue will be fixed in new version down the line.&#13;
- - The Hint panel does not correctly display the names of the hinted items when playing with multiple different games in the same multiworld&#13;
- - In game Static Hints cannot find the names of locations for games with really high internal id numbers such as with paper mario.&#13;
- - When creating a new save file for a slot that already has some playtime on it may not always correctly synch all items that were already checked.</content>
-    <link href="https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Slimm160/Mini-Metro-Archipelago/releases/tag/0.2.0-alpha</id>
-    <title>Mini Metro v0.2.0a0</title>
-    <updated>2026-06-15T17:48:47+00:00</updated>
-    <author>
-      <name>Slimm160</name>
-    </author>
-    <content>Recent Changes&#13;
-- Custom Shard Counts or pre-calculated shard count up to player choice&#13;
-- Now it's progressive map shard that goes towards a new map in a queue&#13;
-- Lines are now unlocked one by one&#13;
-- Early logic is now implemented better. I hope.&#13;
-- a new stylized skip button&#13;
-&#13;
-Bug Fixes&#13;
-- Fixed UI issues on level-up&#13;
-- Fixed Week progression checks being out of sync with weeks&#13;
-- Fixed sending death link on leaving a map / disconnecting&#13;
-- Fixed checks sometimes not processing.</content>
-    <link href="https://github.com/Slimm160/Mini-Metro-Archipelago/releases/tag/0.2.0-alpha"/>
-  </entry>
   <entry>
     <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.14.1</id>
     <title>Metroid Dread v0.6.0</title>
@@ -1243,5 +1102,47 @@ Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
 However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT&#13;
 </content>
     <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.33"/>
+  </entry>
+  <entry>
+    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.0</id>
+    <title>witchspringrap v0.3.0</title>
+    <updated>2026-06-20T18:58:12+00:00</updated>
+    <author>
+      <name>LeiAfkpuz</name>
+    </author>
+    <content>Adds in-game Archipelago messages and three optional "sanity" check categories&#13;
+(Battlesanity, Bestiary, QuestSanity), plus logic and naming fixes.&#13;
+&#13;
+&gt; **⚠️ Upgrade notes (read before updating)**&#13;
+&gt; - **Both files must be updated together:** install the new `witchspringrap.apworld` **and** the new `WitchSpringRArchipelago.dll`. They are a matched pair.&#13;
+&gt; - **Generate fresh seeds** with 0.3.0 — the new options and checks won't exist on older seeds.&#13;
+&gt; - The new check categories are **optional toggles, off by default** — your existing yaml keeps working unchanged.&#13;
+&#13;
+### In-game messages&#13;
+- The game now shows **"Sent &amp;lt;item&amp;gt; to &amp;lt;player&amp;gt;"** when you trigger a check and **"Received &amp;lt;item&amp;gt; from &amp;lt;player&amp;gt;"** when an item is delivered, in the top-left info bar.&#13;
+&#13;
+### New optional check categories (yaml toggles)&#13;
+- **Please note that naming conventions and logic may not be fully proper for these settings as of yet**&#13;
+- **Battlesanity** — a check for clearing each field battle (sends on win). ~136 checks.&#13;
+- **Bestiary** — a check for defeating each enemy; any rank/shield variant counts. ~101 checks.&#13;
+- **QuestSanity** — a check for completing each quest (main + request-board; sends when the quest is cleared, however it completes). ~140 checks.&#13;
+- Each is a separate toggle (default **off**); the item pool auto-pads with filler so seeds stay fillable when they're enabled.&#13;
+&#13;
+### Fixes&#13;
+- **Region name:** "Blackhill Golem Cave" corrected to **"Backhill Golem Cave"**.&#13;
+- **Arua Blessing** now also requires the Fire Magic Spellbook and Mind Control Circle (it isn't actually reachable until you can leave the starting area).&#13;
+- Minor per-check chapter-gating fixes from playtesting.&#13;
+</content>
+    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.1</id>
+    <title>witchspringrap v0.3.1</title>
+    <updated>2026-06-20T18:58:12+00:00</updated>
+    <author>
+      <name>LeiAfkpuz</name>
+    </author>
+    <content>Forgot to save the basic logic to questsanity. Still not perfect, but better than before</content>
+    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.1"/>
   </entry>
 </feed>

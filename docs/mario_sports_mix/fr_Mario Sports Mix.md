@@ -37,10 +37,8 @@ difficulté expert sur le terrain Stade Mario à la balle au prisonnier)
 
 Étant aux premiers stades du développement d'Archipelago pour Mario Sports Mix, de nombreuses options ajoutant des
 checks sont prévues à l'avenir, tel que :
-
-- Charactersanity
 - Scoresanity
-- Stagesanity (terrains de jeu)
+- Courtsanity (terrains de jeu)
 - Les chemins annexes des tournois
 - Les mini-jeux
 
@@ -54,22 +52,6 @@ Sports Mix mode.)
 - Les objets de la case "?"
 - Les pièges (Actuellement : suppression de pièces, gel des personnages et division par deux du temps de match actuel)
 
-## Aide pour les indices
-
-Les items pour le jeu sont pour la plupart assez flous sur comment les nommer pour trouver un indice. De ce fait, un tag
-a été mis en place pour mieux se repérer. Vous pouvez retrouver un exemple pour chacun d’entre eux : 
-
-- Sport: Sports Mix
-- Basketball: Mushroom Cup (Hard)
-- Dodgeball: Flower Cup (Normal)
-- Volleyball: Star Cup (Normal)
-- Hockey: Star Cup (Hard)
-- Sports Mix: Star Cup
-- Sports Crystal: Red
-- Stage: Star Ship | Stage: Behemoth Stage
-- Character: Luigi
-- Costume: Tennis-wear Peach
-- ? Panel: Green Shell
 
 ## Une suggestion ?
 

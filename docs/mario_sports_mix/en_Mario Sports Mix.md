@@ -2,10 +2,10 @@
 
 ## What does randomisation do to this game?
 ### Items
-Each character, costume, stage, cup and ?-Panel item are randomised into the AP item pool. When you receive a costume,
+Each character, costume, court, cup and ?-Panel item are randomised into the AP item pool. When you receive a costume,
 you will only be able to access that costume if you have the character for it. 
 
-For each cup, if you do not have the associated stages for it, you will not be able to score points for that round,
+For each cup, if you do not have the associated courts for it, you will not be able to score points for that round,
 blocking you from sending checks. For example, Basketball Mushroom Cup requires Mario Stadium, Koopa Troopa Beach and DK
 Dock. If you have Mario Stadium but not Koopa Troopa Beach or DK Dock, you will be able to complete round 1 of Mushroom
 Cup but not round 2 and 3.
@@ -15,7 +15,7 @@ Sports Crystal (Red, Blue, Green, Yellow)
 
 ### Locations 
 There can be many different locations depending on your settings, for example, if you have all 4 difficulties on for
-Exhibition Difficulty, you will have a location for beating each stage on each difficulty, for example, Basketball Ex:
+Exhibition Difficulty, you will have a location for beating each court on each difficulty, for example, Basketball Ex:
 Beat Mario Stadium ([Difficulty]).
 
 For cups, if you have both Normal and Hard in Tournament Difficulty, you will have locations for each round of each cup,
@@ -31,7 +31,7 @@ Positive items include:
 - Each sport (Basketball, Volleyball, Dodgeball, Hockey) - There is a setting allowing you to start with them
 (Currently this setting is needed otherwise things won't work :/ )
 - Each cup for each sport
-- Each stage
+- Each court
 - Characters
 - Special Meter
 - ? Panel items
@@ -44,25 +44,8 @@ Negative items include:
 ## What isn't included yet?
 - Alternate Paths
 - Scoresanity
-- Stagesanity
-- Charactersanity
+- Courtsanity
 - Party Mode
-
-
-## Help with hints
-Hinting items can be confusing, especially if you don't know what to look for, so every item has a tag before it!
-Here's the list and some examples:
-- Sport: Sports Mix
-- Basketball: Mushroom Cup (Hard)
-- Dodgeball: Flower Cup (Normal)
-- Volleyball: Star Cup (Normal)
-- Hockey: Star Cup (Hard)
-- Sports Mix: Star Cup
-- Sports Crystal: Red
-- Stage: Star Ship | Stage: Behemoth Stage
-- Character: Luigi
-- Costume: Tennis-wear Peach
-- ? Panel: Green Shell
 
 ## Have any ideas?
 Please tell me in the [Mario Sports Mix Thread](https://discord.com/channels/731205301247803413/1485699253450833942)
