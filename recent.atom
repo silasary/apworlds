@@ -2,60 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-21T07:42:45.682513+00:00</updated>
+  <updated>2026-06-21T12:45:25.072258+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.5</id>
-    <title>Feeding Frenzy 2 v0.5</title>
-    <updated>2026-06-16T01:41:39+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>Movement rando, level rando, and borderless fullscreen!&#13;
-&#13;
-## What's new:&#13;
-* Added /fullscreen command to client that sets the application to borderless fullscreen&#13;
-* Added 'Dash' and 'Suck' randomization items&#13;
-  * Notably this also affects the ability to clear poison since it blocks left/right clicking&#13;
-* Level randomization added with the 'level_shuffle' YAML option</content>
-    <link href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/releases/tag/0.1.0</id>
-    <title>Pikuniku v0.1.0</title>
-    <updated>2026-06-16T04:57:56+00:00</updated>
-    <author>
-      <name>Jeffdev</name>
-    </author>
-    <author>
-      <name>EthanScraggy22</name>
-    </author>
-    <content>The very first release!&#13;
-&#13;
-[Game Information](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/blob/main/worlds/pikuniku/docs/en_Pikuniku.md)&#13;
-[Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/blob/main/worlds/pikuniku/docs/setup_en.md)&#13;
-[Client Mod](https://github.com/Jeffdev-Archipelago-Implementations/PikuAPMod/releases/latest)</content>
-    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/releases/tag/0.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/releases/tag/0.2.0</id>
-    <title>Pikuniku v0.2.0</title>
-    <updated>2026-06-16T05:51:27+00:00</updated>
-    <author>
-      <name>Jeffdev</name>
-    </author>
-    <author>
-      <name>EthanScraggy22</name>
-    </author>
-    <content>- [Client] Fixed bug where the apple checks wouldn't send at all&#13;
-- [APWorld] Fixed logic issues with apples and some coins&#13;
-- [APWorld/Client] Reshuffled some IDs to fix some coin checks not sending properly&#13;
-- [Client] Bundled client with the correct websocket-sharp and c-wspp.dll so all releases will be able to connect to archipelago.gg properly</content>
-    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/releases/tag/0.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/releases/tag/0.3.0</id>
     <title>Pikuniku v0.3.0</title>
@@ -1113,5 +1064,55 @@ This version requires the [patcher version v0.3.1](https://github.com/TheMasterZ
 - Client bug causing inventory items to be skipped under specific circumstance when the item reception buffer got full.&#13;
 - Quest 09 (Explorers Guild Trial) custom event playing on every tiles.</content>
     <link href="https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases/tag/v0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.3</id>
+    <title>Paper Mario The Thousand Year Door v0.10.3</title>
+    <updated>2026-06-21T08:23:24+00:00</updated>
+    <author>
+      <name>jamesbrq</name>
+    </author>
+    <content>## Changes&#13;
+- The client should now properly write the required TTYD settings in dolphin to the correct config, on Windows and Mac/Linux. It is now recommended to let the client set these for you instead of manually, and it is safe to uncheck the settings in dolphin and let the per-game config take over.&#13;
+- Patching will no longer fail with a patch/apworld mispatch, it will now warn you in the client that you should update to match them.&#13;
+&#13;
+## Fixes&#13;
+- Fix for some tattlesanity locations being bugged and sending out early, and having some unintended consequences including crashing and setting random story flags&#13;
+- Fix for deathlink not sending or being received correctly.&#13;
+- Shop locations will now properly follow the shop purchase limit rule with remote items enabled&#13;
+- Tattles and some boxes that weren't syncing properly will now properly sync in same slot co-op and when starting a new file with an in-progress game.&#13;
+&#13;
+**Full Changelog**: https://github.com/jamesbrq/ArchipelagoTTYD/compare/v0.10.2...main</content>
+    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.10.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CrusherRL/AP_Parkitect_World/releases/tag/1.5.0</id>
+    <title>Parkitect v1.5.0</title>
+    <updated>2026-06-21T10:24:39+00:00</updated>
+    <author>
+      <name>CrusherRL</name>
+    </author>
+    <content>Well as usual you find all information at the [mod](https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.5.0)!&#13;
+</content>
+    <link href="https://github.com/CrusherRL/AP_Parkitect_World/releases/tag/1.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GlassToadstool/Archipelago/releases/tag/0.7.2</id>
+    <title>Portal 2 v0.7.2</title>
+    <updated>2026-06-21T11:11:14+00:00</updated>
+    <author>
+      <name>GlassToadstool</name>
+    </author>
+    <content>## Additions&#13;
+&#13;
+- Added integrated UT support (thanks to Tenebrosful)&#13;
+- Added polling to only flush command queue while in game (delays deathlink and traps until the play enters a map)&#13;
+- Updated speedrun logic (thanks to Savvydruid)&#13;
+&#13;
+See the [mod page](https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.7.0) for previous additions.&#13;
+&#13;
+## Note&#13;
+You must use the latest (v0.7.0) version of the [Portal 2 Archipelago Mod](https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.7.0) with this version of the apworld.</content>
+    <link href="https://github.com/GlassToadstool/Archipelago/releases/tag/0.7.2"/>
   </entry>
 </feed>
