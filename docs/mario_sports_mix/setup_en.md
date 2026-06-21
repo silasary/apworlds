@@ -14,7 +14,7 @@
 your custom_worlds folder, or click Install APWorld in the Archipelago Launcher.
 
 ### Dolphin
-1) Dump your PAL version of Mario Sports Mix
+1) Dump your version of Mario Sports Mix
 2) Put the dump into a folder and set it as a game folder in Dolphin (Config → Paths)
 
 ## Read both!
@@ -23,7 +23,7 @@ your custom_worlds folder, or click Install APWorld in the Archipelago Launcher.
 
 ### Dolphin notes
 - <ins>**BACK UP YOUR SAVE DATA**</ins>
-- When playing, use **save file 1!**
+- When playing, use **save file 1** and make sure it's a new save!
 
 ## Creating a yaml file
 ### What is a yaml and why do I need one?

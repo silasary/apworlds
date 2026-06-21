@@ -10,7 +10,7 @@ blocking you from sending checks. For example, Basketball Mushroom Cup requires 
 Dock. If you have Mario Stadium but not Koopa Troopa Beach or DK Dock, you will be able to complete round 1 of Mushroom
 Cup but not round 2 and 3.
 
-You can unlock Sports Mix in 2 ways depending on your options, receiving the item "Sport: Sports Mix", or receiving each
+You can unlock Sports Mix in 2 ways depending on your options, receiving the item "Sports Mix", or receiving each
 Sports Crystal (Red, Blue, Green, Yellow)
 
 ### Locations 
@@ -22,16 +22,31 @@ For cups, if you have both Normal and Hard in Tournament Difficulty, you will ha
 for example, Basketball: Beat [Difficulty] Mushroom Cup Round [1, 2 or 3].
 
 ## What is the goal of the game?
-There are 2 bosses in Mario Sports Mix, Behemoth and King Behemoth. Behemoth is accessed beating the star cups on each
-for each sport, finally beating star cup one last time to fight Behemoth at the end. King Behemoth is accessed by
+There are 2 bosses in Mario Sports Mix, Behemoth and Behemoth King. Behemoth is accessed beating the star cups on each
+for each sport, finally beating star cup one last time to fight Behemoth at the end. Behemoth King is accessed by
 beating each Sports Mix cup.
+
+There _is_ another goal though, Win Cups. This is self-explanatory, you win the amount of cups, from 1 cup - 27 cups,
+the client keeps track of which Round 3 locations you've checked, then checks if you have the required number of cup
+wins to goal!
+
+## QoL Features
+In 1.0.0, I introduced custom tournament options! This mean you can change the amount of periods/sets you play,
+and change the amount of time you have in a match! Furthermore, for Basketball and Hockey, there is now "Enable Points
+Win", which means if you **or** the opponent get the required amount of points to win, the period ends!
+
+When playing exhibition, let's say you have both the normal and hard difficulties unlocked. If you play with hard CPUs
+and you win, you will also send the location for beating the court with normal CPUs! So, for the difficulty you play,
+you will send the check for that difficulty **and** the ones below as long as you have them enabled **and** unlocked!
+
 
 ## What items can appear in other worlds?
 Positive items include:
 - Each sport (Basketball, Volleyball, Dodgeball, Hockey) - There is a setting allowing you to start with them
 (Currently this setting is needed otherwise things won't work :/ )
-- Each cup for each sport
-- Each court
+- Each cup for each sport OR Progressive Cup
+- Each court OR Progressive Court
+- Exhibition Difficulties
 - Characters
 - Special Meter
 - ? Panel items

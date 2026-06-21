@@ -1,9 +1,12 @@
 # Mario Sports Mix
 
 ## Latest
-- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v1.0.0/mario_sports_mix.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v1.0.2/mario_sports_mix.apworld">Latest Version (1.0.2)</a>
 
 ## All Versions
+
+#### v1.0.2
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v1.0.2/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v1.0.2/mario_sports_mix.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v1.0.0/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v1.0.0/mario_sports_mix.apworld</a>
