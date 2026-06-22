@@ -1,9 +1,12 @@
 # Banjo Tooie
 
 ## Latest
-- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.12.0/banjo_tooie.apworld">Latest Version (4.12.0)</a>
+- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.12.1/banjo_tooie.apworld">Latest Version (4.12.1)</a>
 
 ## All Versions
+
+#### v4.12.1
+- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.12.1/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.12.1/banjo_tooie.apworld</a>
 
 #### v4.12.0
 - <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.12.0/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.12.0/banjo_tooie.apworld</a>
