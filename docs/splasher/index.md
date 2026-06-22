@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld">Latest Version (0.0.4)</a>
+- <a href="https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld">Latest Version (0.0.5.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

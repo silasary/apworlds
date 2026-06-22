@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/1.1.2/toystory2.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.0.0/toystory2.apworld">Latest Version (2.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

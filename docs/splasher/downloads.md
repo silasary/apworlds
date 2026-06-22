@@ -1,9 +1,12 @@
 # Splasher
 
 ## Latest
-- <a href="https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld">Latest Version (0.0.4)</a>
+- <a href="https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld">Latest Version (0.0.5.post2)</a>
 
 ## All Versions
+
+#### v0.0.5.post2
+- <a href="https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld">https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld</a>
 
 #### v0.0.4
 - <a href="https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld">https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld</a>

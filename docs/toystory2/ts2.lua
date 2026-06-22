@@ -1818,11 +1818,23 @@ function update_traps(level)
         -- Gated to a playable level so a death arriving on the map/Level Select
         -- stays queued and applies once the player is back in gameplay.
         mainmemory.write_u8(SHARED_DEATH_LINK, dl_q-1)
-        mainmemory.write_u8(0x0B221E, 255)
-        mainmemory.write_u8(0x0A155C, 255)
-        mainmemory.write_u8(0x0A136E, 2)
-        DEATH_PHASE    = 1
-        DEATH_A_FRAMES = 0
+        -- If Never Game Over is on and Buzz is out of lives, a normal kill here
+        -- would force a Game Over (death link bypassing the QOL). Instead run the
+        -- NGO rescue: boot to the map (0x0A135E=1) with 5 lives + full health and
+        -- write 5 to the result byte 0x0A136E. No death-freeze is needed since
+        -- Buzz isn't actually dying.
+        if is_never_game_over() and mainmemory.read_u8(A.BUZZ_LIVES)==0 then
+            mainmemory.write_u8(0x0A135E, 1)
+            mainmemory.write_u8(0x0A136E, 5)
+            mainmemory.write_u8(A.BUZZ_LIVES, 5)
+            mainmemory.write_u8(A.BUZZ_HP, 14)
+        else
+            mainmemory.write_u8(0x0B221E, 255)
+            mainmemory.write_u8(0x0A155C, 255)
+            mainmemory.write_u8(0x0A136E, 2)
+            DEATH_PHASE    = 1
+            DEATH_A_FRAMES = 0
+        end
     end
 
     -- Death sequence. While the death animation plays (0x0A136E==2) we freeze Buzz
@@ -1901,7 +1913,10 @@ function update_traps(level)
             if ngo_armed then
                 ngo_armed = false
                 mainmemory.write_u8(0x0A135E, 1)
-                mainmemory.write_u8(0x0A136E, 1)
+                -- Write 5 (not 1) to the result byte: 5 is safe in every level
+                -- type incl. bosses and coin levels, whereas 1 made a boss fight
+                -- register as WON.
+                mainmemory.write_u8(0x0A136E, 5)
                 mainmemory.write_u8(A.BUZZ_LIVES, 5)
                 mainmemory.write_u8(A.BUZZ_HP, 14)
             end

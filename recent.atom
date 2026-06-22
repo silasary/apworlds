@@ -2,92 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-21T18:35:53.116915+00:00</updated>
+  <updated>2026-06-22T00:45:29.956650+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.1</id>
-    <title>budokai_tenkaichi2 v0.3.1</title>
-    <updated>2026-06-16T13:53:02+00:00</updated>
-    <author>
-      <name>z3xox</name>
-    </author>
-    <content>UT Support Implemented</content>
-    <link href="https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.1.2</id>
-    <title>Dwarf Fortress v1.1.2</title>
-    <updated>2026-06-16T15:44:00+00:00</updated>
-    <author>
-      <name>Dwarfipelago Contributors</name>
-    </author>
-    <content>## Fixes&#13;
-&#13;
-- **DF v50 check detection**: several checks relied on job_type/field names that no longer exist on DFHack 53.14 (DF v50), so they silently never fired:&#13;
-  - Brewing and tanning are `CustomReactions`, not job types — now detected by reaction name, fixing **First Brew Complete**, **First Leather Tanned**, and the three Crafting Leather checks.&#13;
-  - **First Trap Built** now matches the actual cage/stone/weapon trap-arming jobs instead of a non-existent `ConstructTrap` type.&#13;
-  - **Pumped Water/Magma** compared against the wrong enum value and could never register Water; fixed, and hand-cranked pumps are no longer excluded.&#13;
-  - **Sold an Artifact** now also handles DF v50's `item` pointer (previously only `item_id`).&#13;
-  - **First Eggs Hatched** disabled for now — no reliable hatch signal exists on v50.&#13;
-- **Sold an Artifact false-fired on world load**: the check scanned every historical artifact in the world instead of just ones present in your fort, so it could trip the instant a save loaded. Now tracks only artifacts actually present in your fort and fires when one of those goes missing.&#13;
-- **Sold an Artifact false-fired on raids**: sending a squad out with an artifact equipped registered as a "sale" once they returned. Now only fires when an artifact is confirmed trader-owned and then departs — raids, theft, and destruction no longer count.&#13;
-- **Treasury wealth undercounted stockpiled valuables**: coins and gems stored in bins, bags, or coffers were excluded by an overly broad "in inventory" check. They now count toward treasury wealth.&#13;
-- **Craftsanity rule fixes**: corrected crafting-permit/material logic for the "Crafts" item category (wood/stone, glass, and metal crafts were sharing one incorrect rule).&#13;
-- **World gen preset**: rewritten with the complete parameter set; the previous preset was missing parameters.&#13;
-&#13;
-## Improvements&#13;
-&#13;
-- **Milestone ladder prerequisites**: tiered milestones (mining depth, mining tiles, farming, and the cavern ladder) now require the previous tier to be reachable first, so logic can no longer hand out a high tier before earlier ones.&#13;
-- **Options page reorganized**: the WebHost options/YAML page now groups settings into collapsible sections (Goal Settings, Death Link, Craftsanity, Item &amp; Location Options), leaving only the high-level options on the main page. Verified via a full local generation run with differing per-slot craftsanity/permit settings that the DataPackage checksum stays stable.&#13;
-&#13;
-## Other&#13;
-&#13;
-- Added two hidden commands</content>
-    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.6</id>
-    <title>Total War Warhammer 3 v0.10.6</title>
-    <updated>2026-06-16T16:06:02+00:00</updated>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>Fixed assorted incorrect internal unit names.&#13;
-Added filler blacklist to yaml&#13;
-&#13;
-New [submods](https://github.com/jordansds/TWW3-Recruit-Without-Buildings/releases) available if you want to recruit units without buildings.&#13;
-&#13;
-Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
-[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
-&#13;
-**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.5...v0.10.6</content>
-    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.2</id>
-    <title>Rogue Legacy 2 v0.1.0</title>
-    <updated>2026-06-16T19:29:43+00:00</updated>
-    <author>
-      <name>zaphim12</name>
-    </author>
-    <content>**Note: Only the game mod files (RL2Archipelago.zip) need to be replaced when updating to this version. If you already have v1.1.1 you can keep your .apworld**&#13;
-&#13;
-### Improvements and cleanup&#13;
-&#13;
-- The debug hotkeys (7- set boss clear flags, 8- give gold, 9- heal player, 0- reveal map) are now disabled by default. They can still be enabled in the AP settings screen, but they are not intended to be used during a real run.&#13;
-- Added descriptions for the toggles in the AP settings screen&#13;
-- Major improvements in how the mod handles a temporary disconnect from the AP server. Now the game should auto re-connect you when the server becomes available again.&#13;
-  - The game will also show a notification to alert the player that they are disconnected&#13;
-  - Progress can still be made while disconnected and it is saved even through the game being closed. It will re-sync with the server upon the next successful connection&#13;
-&#13;
-### Bugfixes&#13;
-&#13;
-- There was a rare issue where players would be unable to close a settings menu and after restarting their game would lose their progress. This has been fixed along with adding more robust save management so progress should not be lost anymore.</content>
-    <link href="https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.7</id>
     <title>Total War Warhammer 3 v0.10.7.post2</title>
@@ -346,6 +265,21 @@ New:&#13;
 &#13;
 **Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.18...0.0.19</content>
     <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.19"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/releases/tag/0.3.1</id>
+    <title>Pikuniku v0.3.1</title>
+    <updated>2026-06-18T05:36:06+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <author>
+      <name>EthanScraggy22</name>
+    </author>
+    <content>- [APWorld] Fixed logic bug where Forest Dancing Bug didn't logically require Water Hat&#13;
+- [Client] Changed the Valley Revisit to only be raining if you have the Water Hat, preventing you from going out of logic if backtracking there for missed checks.&#13;
+- [Client] Fixed shop items not being purchaseable if you have been sent the respective item</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Piku/releases/tag/0.3.1"/>
   </entry>
   <entry>
     <id>https://github.com/spencer2585/MCC-AP/releases/tag/Alpha-1.1.2</id>
@@ -1100,5 +1034,107 @@ You must use the latest (v0.7.0) version of the [Portal 2 Archipelago Mod](https
     </author>
     <content>Bug fix for `Exception: world.item_data is 127 long`.</content>
     <link href="https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.8</id>
+    <title>Donkey Kong 64 v1.5.8</title>
+    <updated>2026-06-21T18:57:52+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 1.5.8
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v1.5.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.4.1-beta</id>
+    <title>Dicey Dungeons v0.4.1b0</title>
+    <updated>2026-06-21T19:06:53+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>Changes from v0.4.0-beta&#13;
+- Floor 5 shops no longer have prices fixed at 4 gold per item&#13;
+- Level up rewards now respect equipment availability&#13;
+- Upgrade level rewards are now Copies if playing with Upgrade all equipment&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.4.0-beta...v0.4.1-beta</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.4.1-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.5.8</id>
+    <title>Donkey Kong 64 v1.5.8.post2</title>
+    <updated>2026-06-21T20:26:45+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 1.5.8
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Release/releases/tag/v1.5.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.1.0</id>
+    <title>SM64: Spicy Mycena 64 v0.1.0</title>
+    <updated>2026-06-21T20:27:08+00:00</updated>
+    <author>
+      <name>Alchav</name>
+    </author>
+    <content>You must build the 0.1.0 sm64ex build for use with this apworld. Going forward, updates that break compatibility between the apworld and the  sm64ex build will increment the first or second value of the version number, non-breaking updates will increment the last value. The "archipelago" sm64ex branch will always be the latest, but you may also enter a version number to get an older version.&#13;
+&#13;
+- Non-stop mode is enabled by default, with a patch file provided to return it to "stop mode."&#13;
+- Freestanding 1-Ups and "Exclamation Boxes" have been combined into one option: One Up Checks.&#13;
+- A new option has been added: Blocksanity. Adds checks for breaking all exclamation blocks and cap blocks.&#13;
+- Hazy Maze Cave is now included in Locked Paintings.&#13;
+- Tiny Island and Huge Island paintings are unlocked separately.&#13;
+- Several logic adjustments and fixes.&#13;
+- Location and Item name groups have been added.&#13;
+- Item name and classifications were adjusted.&#13;
+- No Despawns now grants coins and 1-Ups that end up on deadly quicksand. Mini Goombas now drop their coin if they attack.&#13;
+- The coins spawned during the final Bowser battle no longer increment your coin counter.</content>
+    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.1.0"/>
   </entry>
 </feed>
