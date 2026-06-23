@@ -8,3 +8,6 @@
 #### v0.1.0
 - <a href="https://github.com/sapphisylph/We-Love-Archipelago-Reroll/releases/download/v0.1.0/wlkrr.apworld">https://github.com/sapphisylph/We-Love-Archipelago-Reroll/releases/download/v0.1.0/wlkrr.apworld</a>
 
+#### v0.1.0
+- <a href="https://github.com/sapphisylph/We-Love-Archipelago-Reroll/releases/download/v0.1.1/wlkrr.apworld">https://github.com/sapphisylph/We-Love-Archipelago-Reroll/releases/download/v0.1.1/wlkrr.apworld</a>
+

@@ -1,6 +1,6 @@
 # We Love Katamari Reroll
 
-
+We Love Katamari Reroll
 
 
 ## Downloads

@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/0.5.5/nine_sols.apworld">Latest Version (0.5.5)</a>
+- <a href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/0.5.6/nine_sols.apworld">Latest Version (0.5.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -6,7 +6,7 @@ integration adds progression items that unlock game features.
 
 
 ## Downloads
-- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.7/nonopelagram.apworld">Latest Version (0.6.7)</a>
+- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.8/nonopelagram.apworld">Latest Version (1.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

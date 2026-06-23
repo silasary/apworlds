@@ -29,6 +29,21 @@
       "title": "v0.1.0",
       "version_simple": "0.1.0",
       "world_version": "0.1.0"
+    },
+    "v0.1.1": {
+      "created_at": "2026-04-12T15:19:00Z",
+      "description": "This update is a plugin only update. The apworld and yaml remain the same as the v0.1.0 version, and this update should be compatible with all games genned with the v0.1.0 apworld\r\n\r\n# Changelog\r\n- In gameplay, The King now announces what items get sent to what games via a dialogue box. Currently, this applies to all cousin roll ups, present roll ups, and level clear checks. (Super clear and shooting star checks are not currently set up.)\r\n- With this change, there are also now sample .json files that allow you to add in some customized dialogue based on the item or game of the item sent, with examples included\r\n- Added a way to disconnect and reconnect to the given archipelago server in the case of a disconnect. The \"Quit Door\" that appears in the select meadow has been repurposed to disconnect and reconnect to the inputted server.\r\n- The game state now saves itself locally, so now things like Music rando are saved between play sessions. (This is also useful for trap infrastructure for future updates)\r\n# Bugfixes\r\n- Fixed the issue of presents not appearing after the first roll up. Now presents will always appear no matter if you have collected them or not.\r\n- Fixed issue of ALAP5 super clear not sending in the case of rolling up the king.\r\n- Fixed Roll Up The Sun not allowing you to succeed on the first run. Now you should be able to complete Roll Up The Sun on your first playthrough given you have completed all necessary levels.\r\n- Fixed an issue of specific conditions causing erroneous checks sending at incorrect times, including the \"Roll up The Prince\" check.\r\n# Known issues\r\n- While new collected fans appear in the select meadow, cousins only appear after refreshing in a menu like the 'Favorite BGM' menu or the 'Collection' menu.\r\n- If the client gets disconnected from the server, the game will crash if you try to send a check while disconnected.\r\n# Updating\r\nTo update the plugin, simply delete the previous version of the plugin from the plugins directory in the ``WLKRR\\BepInEx\\plugins`` directory, and add the newest version in using the same installation instructions from the [ReadMe](https://github.com/sapphisylph/We-Love-Archipelago-Reroll/blob/main/README.md). Then launch the game once to configure the new files.\r\nIf you run into issues with installation after following these, try deleting the ``com.Zachamari.WeLoveArchipelago.cfg`` file from the ``WLKRR\\BepInEx\\config`` directory, and then launching the game to generate a new one. This shouldn't be necessary, however, better safe than sorry.",
+      "download_url": "https://github.com/sapphisylph/We-Love-Archipelago-Reroll/releases/download/v0.1.1/wlkrr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "986197777bb7549ecba576dac2300193a5c92079d50245275287cf27406b60e0",
+      "html_url": "https://github.com/sapphisylph/We-Love-Archipelago-Reroll/releases/tag/v0.1.1",
+      "minimum_ap_version": "0.6.6",
+      "size": 11986,
+      "source_url": "https://api.github.com/repos/sapphisylph/We-Love-Archipelago-Reroll",
+      "tag": "v0.1.1",
+      "title": "v0.1.1",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
     }
   }
 }
