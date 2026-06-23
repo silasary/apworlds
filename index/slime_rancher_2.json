@@ -304,6 +304,21 @@
       "title": "v0.8.0",
       "version_simple": "0.8.0",
       "world_version": "0.8.0"
+    },
+    "v0.9.0": {
+      "created_at": "2026-06-23T03:53:10Z",
+      "description": "### New Features\r\n- New setting for changing the amount of food to pop a Gordo Slime\r\n  - Allows for percentages from 10-200%\r\n- New setting for adding First Plort Market sale check locations to the pool\r\n  - This setting respects your goal choice and does not include anything from the Grey Labyrinth if you have your goal set as `labyrinth_open`\r\n- New setting for randomizing Ranch Expansions and their locations to the pool\r\n  - Pairs well with `randomize_research_drones` as there's new logic for the ones in the Conservatory\r\n- New setting for toggling whether or not the Fabricator is randomized\r\n- Officially launched support for Plort Door locations\r\n  - Doors still open on this setting, just used for adding locations to the pool\r\n\r\n_This rounds out almost all of the intended game options prior to the 1.0 release. There are a couple more that I'm looking into, but we're almost there_\r\n\r\n### Goal Changes\r\n- Combined the `prismacore_enter` and `prismacore_stabilize` goals into a single `prismacore` goal\r\n\r\n_Not sure if anyone was using both goals since once you can get into the Grey Labyrinth it's just some platforming to get to the Prismacore... If it ends up being requested, I'll bring back `prismacore_enter` in a future update but now the `prismacore` goal is specifically to stabilize it_\r\n\r\n### Quality of Life\r\n- Added friendly names to Research Drones\r\n- Added friendly names to Shadow Plort Collector locations\r\n- Disabled `Tarr Spawn`, `Tarr Rain`, and `Teleport` traps once the goal has been met\r\n\r\n### Bug Fixes\r\n- Fixed BOb intro conversation logic so it requires access to Ember Valley and Starlight Strand\r\n- Fixed Gigi conversation logic to be correctly tied to the Grey Labyrinth\r\n- Fixed the Powderfall Bluffs entrance Plort Door to count as the Region Gate when region access is randomized\r\n- Fixed the Prismacore fight not being able to start if the player had the Water Tank upgrade but had not crafted the Water Tank spot in the Fabricator\r\n- Fixed the handling for large amounts of incoming items so the game won't freeze\r\n- Fixed jetpack logic for Research Drones and Ghostly Drones\r\n- Fixed the Grey Labyrinth logic rules so that it requires both Ember Valley and Starlight Strand access in order to craft additional Radiant Projectors\r\n\r\n### Other Changes\r\n- Updated item IDs with additional buffer space in case future game updates bring in more things\r\n- Updated Slimepedia randomization to be on by default",
+      "download_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.9.0/slime_rancher_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "de9515482925585f2080b0f8ef23a332ffbe7dd37417b9388a86cde5817e5229",
+      "html_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.9.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 43127,
+      "source_url": "https://api.github.com/repos/Rhelys/SlimeRancher2-AP",
+      "tag": "v0.9.0",
+      "title": "v0.9.0",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0"
     }
   }
 }
