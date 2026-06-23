@@ -1,9 +1,12 @@
 # YOHANE THE PARHELION -BLAZE in the DEEPBLUE-
 
 ## Latest
-- <a href="https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.1.1/yohane_deepblue.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.1.2/yohane_deepblue.apworld">Latest Version (0.1.2)</a>
 
 ## All Versions
+
+#### v0.1.2
+- <a href="https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.1.2/yohane_deepblue.apworld">https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.1.2/yohane_deepblue.apworld</a>
 
 #### v0.1.1
 - <a href="https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.1.1/yohane_deepblue.apworld">https://github.com/SilicDev/Archipelago/releases/download/yohane_bitdb-v0.1.1/yohane_deepblue.apworld</a>

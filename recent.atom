@@ -2,112 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-22T19:16:39.802587+00:00</updated>
+  <updated>2026-06-23T00:38:35.670301+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.31</id>
-    <title>Pokemon Black and White v0.3.31</title>
-    <updated>2026-06-17T23:58:28+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <author>
-      <name>SparkyDaDoggo</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-- Reworked plugins system and added capabilities to modify world generation&#13;
-  - Adding the hooks `generate_early`, `generate_encounters`, `create_regions`, `create_items`, `write_patch`&#13;
-  - However, this breaks old plugins&#13;
-- Slightly changed the `Reusable TMs` choice `yes` to `yes_please`&#13;
-  - Old yamls will still work and quietly fix the name change&#13;
-- Added an lz11 decompress algorithm&#13;
-- Fixed the Master Ball seller in N's Castle&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
-However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT&#13;
-</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.31"/>
-  </entry>
-  <entry>
-    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.2.0</id>
-    <title>witchspringrap v0.2.0</title>
-    <updated>2026-06-18T01:14:35+00:00</updated>
-    <author>
-      <name>LeiAfkpuz</name>
-    </author>
-    <content>## 0.2.0&#13;
-### AI Disclaimer; Very reluctantly, this update was made with the help of AI. I do not plan to make this the norm, and I sat on this for a while if I even use this but there was just so much added and working that it would've been dumb not to use it. Further elaboration in discord&#13;
-&#13;
-A large update over 0.1.3 — full chapter coverage, cross-platform/save reliability,&#13;
-Universal Tracker support, many new checks, and a big pass of progression-logic fixes.&#13;
-&#13;
-&gt; **⚠️ Upgrade notes (read before updating)**&#13;
-&gt; - **Bridge data moved out of `%LOCALAPPDATA%`** into your game install folder. The client now asks for (or you set in `host.yaml`) your **WitchSpring R install path** on first use. See the README.&#13;
-&gt; - **Generate fresh seeds** with 0.2.0 — seeds made on 0.1.3 won't have the new checks or logic.&#13;
-&#13;
-### Cross-platform &amp; save reliability&#13;
-- Bridge files now live in the **game install folder** (`&lt;game&gt;/Archipelago/`) instead of `%LOCALAPPDATA%`, so the mod works under **Steam Deck / Proton / macOS**.&#13;
-- **Per-seed session folders** keep multiple seeds/saves cleanly separated — items and checks from one seed can never bleed into another.&#13;
-- **Crash / Alt-F4 resilience:** items not yet written to your save are re-delivered on reload (save-marker reconcile); the delivery queue retries then skips a bad item instead of stalling; writes are atomic.&#13;
-- **Items now deliver everywhere in the game.** The "safe to deliver" scene list previously only covered early areas, so items received in later chapters silently didn't arrive — it now covers the whole game (~200 scenes).&#13;
-&#13;
-### Universal Tracker&#13;
-- Added **Universal Tracker support** (generates without a yaml, reads slot data).&#13;
-&#13;
-### World coverage &amp; goals&#13;
-- Playable range expanded; still largely untested beyond Chapter 3 but should function through Chapter 9.&#13;
-- New regions: **RedBeard's Cave, Kanna's House, Luna's House, Ice Cave, Frozen Altar**.&#13;
-- Removed the phantom "Chapter 8" (the game goes 7 → 9); the chapter-9 goal is now reachable.&#13;
-&#13;
-### New location checks&#13;
-- Around **two dozen new checks** across the game: event rewards (weapon-upgrade materials, key story items, etc.), **blessing checks** (Arua, Aimhard, Elysion, Durok), and **battle-reward checks** (Boar Captain, Shipwreck Cabin Key).&#13;
-- Blessings are now sendable via a new in-game hook (they're granted differently from normal items, so they were previously unsendable).&#13;
-- Missable / one-time checks are marked so the generator never hides required progression behind them.&#13;
-&#13;
-### Progression-logic fixes&#13;
-- **Mind Control Circle** is back in the pool and properly gates the content that needs it (Swamp, South Island, the Fire Cave branch, weapon-upgrade handout, and one entrance chest).&#13;
-- **Reaching Chapter 2** now correctly requires the Fire Magic Spellbook **and** the Mind Control Circle; the Fire Spellbook itself sits behind Mind Control.&#13;
-- **South Island** access now requires the Fire Magic Spellbook (you pass Black Joe on the way), so it can't be stranded behind that gate.&#13;
-- **Reaching Chapter 3** now requires actually being able to reach the Lalaque Mine (Boar Captain's Tooth), not just holding the Mine Key.&#13;
-- **Reaching Chapter 6** now requires the Prototype Steam Engine.&#13;
-- **Ice Magic Spellbook** gates the Ice Cave and Durok Temple.&#13;
-- **Laoba Mountain** (Warrior Camp) is available earlier — as soon as you've beaten the Boar Captain — instead of being locked to Chapter 3.&#13;
-- Shipwreck progression modeled properly (Hold Key → Armory/Cabin Key → boss → Aimhard).&#13;
-- Swim-only spots (a South Island islet, the Royal Pudding fight) now require the Aged Lalaque Berry (the swimming-pet item) so they aren't logically required before you can reach them.&#13;
-- Numerous smaller rule corrections and a fixed Boar-Captain's-Tooth rule typo.&#13;
-&#13;
-### Item pool&#13;
-- **Removed craftable spell circles that soft-lock their quest** if received early (4-Orb Flame, 4-Pillar Ice) and the 3-Orb you already start with.&#13;
-- Removed redundant / trap / non-functional items from the pool (e.g. Shipwreck Cannonball, Great Key, Matt's Garden Passage Key, a duplicate Red Gem, the phantom Chapter 8).&#13;
-- Reclassified the Aged Lalaque Berry to progression (it now gates swim content) and Frozen Heart to filler.&#13;
-&#13;
-### Plugin / quality&#13;
-- New in-game **event blockers** (CheckSwitch hook) that gate story events safely without hard-locking.&#13;
-- Cleaned up logging: routine per-event chatter is now hidden/debug-level, so the BepInEx console stays quiet unless something actually goes wrong.</content>
-    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03e</id>
-    <title>Cuphead v0.2.16909567</title>
-    <updated>2026-06-18T02:24:56+00:00</updated>
-    <author>
-      <name>JKLeckr</name>
-    </author>
-    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
-&#13;
-_**WARNING:** If you are using Chalice Checks for King's Leap, you MUST update the client to [alpha03e](https://github.com/JKLeckr/CupheadArchipelagoMod/releases/tag/alpha03e)_&#13;
-&#13;
-### Revision&#13;
-&#13;
-This revision adds support to chalice checks in King's Leap (it wasn't supported, but it was not marked as unsupported in options).&#13;
-</content>
-    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03e"/>
-  </entry>
   <entry>
     <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.19</id>
     <title>YARG v0.0.19</title>
@@ -325,7 +224,7 @@ Harvesting 10 and 10 million crops were feeling left out. Added where appropriat
   </entry>
   <entry>
     <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.3</id>
-    <title>Rabbit and Steel v0.3.3</title>
+    <title>Rabbit and Steel v0.3.3.post2</title>
     <updated>2026-06-18T23:04:16+00:00</updated>
     <author>
       <name>tjwombo</name>
@@ -1110,7 +1009,10 @@ Hello, this is the last patch before the embargo of chapter 5, expect no update 
 - Added some missing reward previews&#13;
 ### Chapter 3&#13;
 - Fixed the Shadow Mantle fight only being accessible if you _did not_ have the SHELTER KEY&#13;
-- Made the room with the Shuttah and Zapper encounter immune to receiving items as it can softlock the game.. for some reason</content>
+- Made the room with the Shuttah and Zapper encounter immune to receiving items as it can softlock the game.. for some reason&#13;
+&#13;
+# Known bug&#13;
+- Exclude Z-Rank option don't work and actually reads Exclude T-Rank instead</content>
     <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.4"/>
   </entry>
   <entry>
@@ -1213,5 +1115,34 @@ APWORLD (needed for generating archieplago game):&#13;
     </author>
     <content>Save Skip Option Added</content>
     <link href="https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.6.0</id>
+    <title>Baldur's Gate 3 v0.5.0</title>
+    <updated>2026-06-22T20:13:22+00:00</updated>
+    <author>
+      <name>Broney</name>
+    </author>
+    <content>This is an EXPERIMENTAL release to add the BlockEntrances option, which, if set to true, locks out certain scene transitions in the game until the item is sent to the user.&#13;
+For use with the 0.6.0 bg3 mod.</content>
+    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.1.2</id>
+    <title>YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.1.2</title>
+    <updated>2026-06-22T20:51:50+00:00</updated>
+    <author>
+      <name>SilicDev</name>
+    </author>
+    <content># v0.1.2 Random starting weapon&#13;
+**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.1.1...yohane_bitdb-v0.1.2&#13;
+&#13;
+# Changes&#13;
+- Adds a `random_starting_weapon` option that replaces the default Katar starting item with a random weapon&#13;
+&#13;
+# Bug fixes&#13;
+- Logic fixes regarding Riko and Sea of Trees&#13;
+- Damage Link now actually triggers correctly depending on the DamageLink setting</content>
+    <link href="https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.1.2"/>
   </entry>
 </feed>
