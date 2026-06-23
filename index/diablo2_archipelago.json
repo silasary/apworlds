@@ -1,6 +1,8 @@
 {
   "authors": [
-    "D2Arch Team"
+    "solida1987",
+    "\ua4d8icka (AP logic)",
+    "Zo\u00eb (AP logic)"
   ],
   "description": "Diablo II Archipelago randomizes skill unlocks across the quest system.\nComplete quests to receive skills from any of the 7 character classes.\nDefeat the act boss specified by your Goal Scope option to achieve victory.",
   "flags": [
@@ -133,6 +135,21 @@
       "title": "Beta 1.9.9",
       "version_simple": "1.9.9",
       "world_version": "1.9.9"
+    },
+    "Stable-2.0.0": {
+      "created_at": "2026-06-23T05:59:55Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.0.0\n\nThe first **Stable** release. Diablo II Archipelago now runs through the new **Multiworld Launcher**, which controls all randomization \u2014 settings, seed and Archipelago connection \u2014 so there's no in-game login to fiddle with anymore.\n\n> **\u26a0\ufe0f Heads-up: antivirus & Windows SmartScreen.** Windows SmartScreen or your antivirus may flag the launcher the first time you run it. **This is a false positive** \u2014 Windows simply doesn't recognise this brand-new app yet, and new unsigned programs are flagged by default until they build reputation, regardless of their contents. It is safe: click **\"More info\" \u2192 \"Run anyway\"**, and restore/allow the file if your antivirus quarantines it. The app has been submitted to Microsoft for review, and the warning clears automatically as more people download and use it. *(A code-signing certificate would clear it instantly but is a costly recurring expense we're holding off on for now.)*\n\n## Headline changes\n\n- **New Multiworld Launcher.** The launcher now owns everything: choose your settings, seed and (for multiworld) your server/slot/password right in the launcher, then launch straight into a hooked-up game. The old in-game title-screen connection and F1 AP-login panel are gone.\n- **Standalone is a first-class mode.** Play solo with the *exact same* options the Archipelago world exposes \u2014 goal, quest categories, skill pool, shuffles, bonus/extra check categories, Collection and **Custom** goals.\n- **Seed library.** Every standalone seed is its own world with its own characters. Start a fresh seed or load/delete a previous one; only that seed's characters show up in-game.\n- **Full standalone tracker.** The launcher's **Locations** tab now shows the complete location universe for a solo run \u2014 every category, all difficulties, checked *and* unchecked \u2014 exactly like a connected Archipelago session.\n- **Custom goals in standalone.** Build your own win condition (act bosses, ubers, super-uniques, bulk check targets, collection, gold) without needing a server.\n- **HD graphics** activate by default.\n\n## Fixes\n\n- Quest/goal completion now fires correctly in standalone (previously some goals could never complete offline).\n- No more check-flood on login.\n- Fixed a crash on zone changes in Zone-Locking mode.\n- Boss Shuffle no longer spawns un-killable / cinematic bosses that blocked progression.\n- Separated trap rewards from DeathLink (receiving a trap no longer death-links others); incoming DeathLink now correctly kills.\n- Version now displays correctly in-game and in every registration file.\n\n## Credits\n\n- **solida1987** \u2014 project lead, game systems, quest design, AP integration\n- **\ua4d8icka** & **Zo\u00eb** \u2014 Archipelago logic (regions & rules)\n\nA legal copy of Diablo II + Lord of Destruction is required to play.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.0.0/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8175a5e79f8a41ae30edb1070f5c79ca93e29a532a5e853af6b7bb1c67b2dd01",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.0.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 56542,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.0.0",
+      "title": "Stable 2.0.0",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
     },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
