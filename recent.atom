@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-24T07:14:27.094331+00:00</updated>
+  <updated>2026-06-24T12:50:17.283485+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
@@ -1122,7 +1122,13 @@ I do **not** recommend setting a goal beyond Chapter 3(Goal: Chapter_4), because
 - Fixed logic issue with the coffins in BotW being reversed.&#13;
 - Added special character handling in hints.&#13;
 - Trap names and Gossip stone hints are now deterministic (always the same for the same seed).&#13;
-- Fixed Triforce Hunt immediately receiving items from goaling even before warping to the credits.</content>
+- Fixed Triforce Hunt immediately receiving items from goaling even before warping to the credits.&#13;
+- Fixed Version Checking&#13;
+- Fixed compatibility issues with games that use very large id numbers (such as paper mario)&#13;
+&#13;
+# Known Issues&#13;
+- A fix to filter out unsupported characters accidentally also filters out one of the supported characters.&#13;
+  - We've taken your L's but only the lowercase ones</content>
     <link href="https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.4.0"/>
   </entry>
   <entry>
