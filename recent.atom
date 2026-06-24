@@ -2,63 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-24T00:36:24.974920+00:00</updated>
+  <updated>2026-06-24T07:14:27.094331+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.3</id>
-    <title>Rabbit and Steel v0.3.3.post2</title>
-    <updated>2026-06-18T23:04:16+00:00</updated>
-    <author>
-      <name>tjwombo</name>
-    </author>
-    <content>6+ runs crashing (may have fixed 4+ shira ending early, but didnt test deliberately)&#13;
-DLC itemsets are in the pool&#13;
-Fixed visuals for starting with the opposite kingdom type than the game expected&#13;
-&#13;
-# Changelog&#13;
-&#13;
-All notable changes to this project will be documented in this file.&#13;
-&#13;
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
-&#13;
-## [v0.3.3](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.2...v0.3.3) - 2026-06-18&#13;
-&#13;
-### Commits&#13;
-&#13;
-- add the lost hooks [`3372fa8`](https://github.com/tjwombo/RNSArchipelago/commit/3372fa8ff642148326d94cd3031b85f747da4068)&#13;
-- add todo note [`b30996f`](https://github.com/tjwombo/RNSArchipelago/commit/b30996f1d99bd3cf849ac11087a49cced1e50e57)&#13;
-- update workflow [`95b096b`](https://github.com/tjwombo/RNSArchipelago/commit/95b096beb70b7e3325f162101498aab83ddd7348)&#13;
-- Update reloaded.yml [`28e8fd7`](https://github.com/tjwombo/RNSArchipelago/commit/28e8fd7b4faa9b54fd4a4072cf139fb7e8052354)&#13;
-- Update ClassHandler.cs [`e874960`](https://github.com/tjwombo/RNSArchipelago/commit/e8749604a9dc8d10a33664f7510408487bec48dc)&#13;
-- Add DLC itemsets to AddItemsFromItemset [`3ee15fb`](https://github.com/tjwombo/RNSArchipelago/commit/3ee15fb63c229521674269d7ed074c9b44f1f3b5)&#13;
-- Fix 6+ runs crashing and maybe 4+ Shira bug [`497631b`](https://github.com/tjwombo/RNSArchipelago/commit/497631b6ed11dd890660b95de817582a9dfd21c5)&#13;
-- Update the background for mismatched kingdom start [`4c1f118`](https://github.com/tjwombo/RNSArchipelago/commit/4c1f1180bb9f14bfc74133b76a92777be2445347)&#13;
-</content>
-    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.20</id>
-    <title>YARG v0.0.20</title>
-    <updated>2026-06-19T02:41:04+00:00</updated>
-    <author>
-      <name>energymaster22</name>
-    </author>
-    <content># Use Client Version 0.0.5+. No Client Update Required!&#13;
-&#13;
-New:&#13;
-- Support for the Pronoun Palace 01 Setlist&#13;
-&#13;
-## What's Changed&#13;
-* Added Pronoun Palace 01 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/44&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.19...0.0.20</content>
-    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.20"/>
-  </entry>
   <entry>
     <id>https://github.com/wildham0/FF1PRAP/releases/tag/0.6.0</id>
     <title>FF1 Pixel Remaster v0.6.0</title>
@@ -1029,6 +977,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     <link href="https://github.com/StefanDucharme/nonogram-archipelago/releases/tag/v0.6.8"/>
   </entry>
   <entry>
+    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.4</id>
+    <title>witchspringrap v0.3.4</title>
+    <updated>2026-06-23T16:12:30+00:00</updated>
+    <author>
+      <name>LeiAfkpuz</name>
+    </author>
+    <content>### GENERAL&#13;
+- Finalized first pass at logic for Bestiary/Questsanity/Battlesanity for Chapters 1-6.(I accidentally set my yaml for a Chapter 7 goal instead of Chapter 9, that's on me, running a second pass now)&#13;
+- Fixed a black-screen crash that could happen when multiple items were sent at once while you were changing scenes.&#13;
+- Fixed the "Sent ____" popup from re-appearing every time you re-load the game. It never re-sent the checks, it was just the UI firing again.&#13;
+- New in-game event gates. &#13;
+  - Added a fake "Narrel" item that you must receive from the multiworld for Narrel to move the boulder. &#13;
+  - Prototype Steam Engine and Matt's Garden Key are now correctly blocked from the vanilla item grant. &#13;
+  - Giving the Prototype Steam Engine to Kanna, *should* be gated and not allowed to happen until you receive the Prototype Steam Engine from the multiworld - **untested and I am working on this test**&#13;
+&#13;
+### Battlesanity&#13;
+- Numbers have been re-numbered based on the order that I fought them on the map. I tried to go from closest to entrance &gt; farthest from entrance order.&#13;
+- Added some Story/Event battles that were not previously logged.&#13;
+&#13;
+### Bestiary&#13;
+- Added more missing mobs from chapters 5+&#13;
+- Fixed the logic on a bunch of them&#13;
+&#13;
+### Disclaimer&#13;
+I do **not** recommend setting a goal beyond Chapter 3(Goal: Chapter_4), because I have not had a chance to test the new Narrel block as of yet. I wanted to push this out early once I found out about the black-screen crash introduced in 0.3.3</content>
+    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.4"/>
+  </entry>
+  <entry>
     <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.6</id>
     <title>Nine Sols v0.5.6</title>
     <updated>2026-06-23T16:21:29+00:00</updated>
@@ -1215,5 +1191,53 @@ Info page: https://github.com/Parcosmic/Hammerwatch-Archipelago/blob/dev/worlds/
 &#13;
 **CLIENT:** Temporarily disabled the duplicate item handler to prevent a bug that would cause the client not receive items properly.</content>
     <link href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/tag/v0.2.1-alpha-hotfix"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0</id>
+    <title>Crash2 v0.4.0</title>
+    <updated>2026-06-24T02:13:16+00:00</updated>
+    <author>
+      <name>Sim10XXX</name>
+    </author>
+    <author>
+      <name>alexdass</name>
+    </author>
+    <content>Number goes up to v0.4.0, more features, here's what's new:&#13;
+&#13;
+### Life-Sanity:&#13;
+- Adds 42 checks for collecting free-standing lives (this doesn't includes lives spawned from boxes)&#13;
+&#13;
+### Life Count Checks:&#13;
+- Option to add checks for reaching certain life counts&#13;
+- This can be any combination of numbers from 5-99&#13;
+- The randomization logic will consider higher life counts as occurring "later"&#13;
+  - This effect is accomplished by making the logic think that higher life counts require a larger amount of crystals&#13;
+&#13;
+### Bug Fixes:&#13;
+- Added missing logic for regular exits when Gimmick Lock is enabled&#13;
+- The client will now print errors if you reset the console or connect before the game loads, notifying you to restart/reconnect the client&#13;
+&#13;
+### Death Link:&#13;
+### Gimmick Lock:&#13;
+### Location Groups:&#13;
+- If you haven't kept up with the pre-releases up to this point, you can find their [release notes here](https://github.com/Sim10XXX/C2AP/releases) for more information on these features, and other bug fixes&#13;
+&#13;
+### Known Issues:&#13;
+- When using warp randomizer, exiting Totally Fly always puts you in the 4th warp room, which can give access to the 4th warp room early&#13;
+- Respawning at the last checkpoint without Polar in each Polar level can result in a double-death&#13;
+- Going through a Polar/Jetpack level without Polar/Jetpack unlocked can sometimes crash the game&#13;
+  - This is due to limitations of the game itself (since you're not expected to be running around as regular Crash)&#13;
+- Also use [GitHub issues](https://github.com/Sim10XXX/C2AP/issues) or the [Crash 2 AP thread](https://discord.com/channels/731205301247803413/1371461990794657863) to report bugs or suggest stuff</content>
+    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.0</id>
+    <title>pokemon_stadium v0.6.0</title>
+    <updated>2026-06-24T03:05:00+00:00</updated>
+    <author>
+      <name>jciii91</name>
+    </author>
+    <content>Added new options for setting the badges required to open Victory Road and setting how many GLC keys are in the starting inventory.</content>
+    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.0"/>
   </entry>
 </feed>

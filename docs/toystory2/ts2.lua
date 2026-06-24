@@ -75,7 +75,7 @@ local SHARED_TRAP_DAMAGE      = 0x1FF985
 local SHARED_DEATH_LINK       = 0x1FF986
 local SHARED_EXTRA_LIFE       = 0x1FF987
 local SHARED_HEALTH_UP        = 0x1FF988
-SHARED_INVINCIBLE_BUZZ  = 0x1FF96B  -- filler: 30s of Buzz invincibility (global: main chunk is at the 200-local limit)
+SHARED_INVINCIBLE_BUZZ  = 0x1FF96B  -- filler: 15s of Buzz invincibility (global: main chunk is at the 200-local limit)
 -- On-screen item feed: client writes a sequence byte (bumped on each new
 -- message) at 0x1FFF60, then up to 63 ASCII bytes + null terminator starting at
 -- 0x1FFF61. The Lua shows the latest message top-right for a few seconds.
@@ -282,6 +282,25 @@ end
 function get_ap_tokens()        return mainmemory.read_u8(SHARED_TOKENS) end
 function get_tickets()          return mainmemory.read_u8(SHARED_TICKETS) end
 function get_laser_level()      return mainmemory.read_u8(SHARED_LASER_LEVEL) end
+function get_spin_level()       return mainmemory.read_u8(0x1FFFEC) end  -- SHARED_SPIN_LEVEL
+-- Progressive Spin level 3 ("super spin") + Dizzy Buzz trap state. Globals (not
+-- local) to stay clear of the main-chunk 200-local limit.
+SPIN_SUPER       = 0xFFFFFED2   -- written every frame while super spin is ON
+SPIN_DIZZY       = 0xFFFFFF87   -- Dizzy Buzz value (triggers Buzz's dizzy animation)
+SPIN_UI_ADDR     = 0x0C2ACF     -- spin UI element (re-hidden during dizzy w/o spin)
+SPIN_HOLD_FRAMES = 8            -- frames O must be held to flip the super-spin toggle
+SPIN_DIZZY_CLEAR = 1            -- frames to hold 0x0A139C at 0 before the dizzy value
+SPIN_UI_HOLD     = 180          -- keep hiding the spin UI 3s (60fps) after dizzy ends
+spin3_on = false                -- super-spin toggle
+spin_streak = 0                 -- noise-tolerant "O held" counter
+spin_consumed = false           -- current hold already flipped the toggle
+dizzy_seq = 0                   -- >0 while the clear-then-dizzy write sequence runs
+dizzy_active = false            -- dizzy live; hands off 0x0A139C until the game zeroes it
+spin_ui_hidden = nil            -- learned value of the spin UI while it is hidden
+spin_ui_hold = 0                -- frames left to keep hiding the spin UI post-dizzy
+function clear_spin3()
+    mainmemory.write_u32_le(0x0A139C, 0)   -- zeroes 0x0A139C..0x0A139F
+end
 function is_move_unlocked(bit, is_rope)
     if is_rope then return (mainmemory.read_u8(SHARED_MOVE_UNLOCKS_HIGH) & 1) ~= 0 end
     return (mainmemory.read_u8(SHARED_MOVE_UNLOCKS_LOW) & (1 << bit)) ~= 0
@@ -417,7 +436,7 @@ local invince_frames     = 0
 -- QOL / filler cross-function state (global to avoid the 200-local main-chunk
 -- limit, matching DEATH_PHASE et al.)
 buzz_invince_frames = 0      -- Invincible Buzz filler: player i-frames remaining
-INVINCE_BUZZ_FRAMES = 1800   -- 30 seconds @ 60fps
+INVINCE_BUZZ_FRAMES = 900    -- 15 seconds @ 60fps
 full_health_frames  = 0      -- QOL: assert full health for a window after level entry
 ngo_armed           = true   -- QOL Never Game Over: one-shot guard (re-armed when HP>0)
 local INVINCE_DURATION   = 30 * 60
@@ -878,7 +897,7 @@ local LEVEL_NAME_DATA = {
     [18]={start=0x0E27E4,original={0x74,0x68,0x65,0x20,0x65,0x76,0x69,0x6C,0x20,0x65,0x6D,0x70,0x65,0x72,0x6F,0x72,0x20,0x7A,0x75,0x72,0x67},locked={0x6C,0x6F,0x63,0x6B,0x45,0x64,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}},
     [19]={start=0x0E27FC,original={0x61,0x69,0x72,0x70,0x6F,0x72,0x74,0x20,0x69,0x6E,0x66,0x69,0x6C,0x74,0x72,0x61,0x74,0x69,0x6F,0x6E},locked={0x6C,0x6F,0x63,0x6B,0x45,0x64,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}},
     [20]={start=0x0E2814,original={0x74,0x61,0x72,0x6D,0x61,0x63,0x20,0x74,0x72,0x6F,0x75,0x62,0x6C,0x65},locked={0x6C,0x6F,0x63,0x6B,0x45,0x64,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}},
-    [21]={start=0x0E2824,original={0x66,0x69,0x6E,0x61,0x6C,0x20,0x73,0x68,0x6F,0x77,0x64,0x6F,0x77,0x6E},locked={0x6C,0x6F,0x63,0x6B,0x45,0x64,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}},
+    [21]={start=0x0E2824,original={0x66,0x69,0x6E,0x61,0x6C,0x20,0x73,0x68,0x6F,0x77,0x64,0x6F,0x77,0x6E,0x00,0x00},locked={0x6C,0x6F,0x63,0x6B,0x45,0x64,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}},
 }
 local TEXT_YOU_NEED_TOKENS={[0x0E2834]=0x79,[0x0E2835]=0x6F,[0x0E2836]=0x75,[0x0E2837]=0x20,[0x0E2838]=0x6E,[0x0E2839]=0x65,[0x0E283A]=0x65,[0x0E283B]=0x64,[0x0E283C]=0x20,[0x0E283D]=0x6D,[0x0E283E]=0x6F,[0x0E283F]=0x72,[0x0E2840]=0x65,[0x0E2841]=0x20,[0x0E2842]=0x74,[0x0E2843]=0x6F,[0x0E2844]=0x6B,[0x0E2845]=0x65,[0x0E2846]=0x6E,[0x0E2847]=0x73,[0x0E2848]=0x00,[0x0E2849]=0x00,[0x0E284A]=0x00}
 local TEXT_MISSING_UNLOCK={[0x0E2834]=0x6D,[0x0E2835]=0x69,[0x0E2836]=0x73,[0x0E2837]=0x73,[0x0E2838]=0x69,[0x0E2839]=0x6E,[0x0E283A]=0x67,[0x0E283B]=0x20,[0x0E283C]=0x6C,[0x0E283D]=0x65,[0x0E283E]=0x76,[0x0E283F]=0x65,[0x0E2840]=0x6C,[0x0E2841]=0x20,[0x0E2842]=0x75,[0x0E2843]=0x6E,[0x0E2844]=0x6C,[0x0E2845]=0x6F,[0x0E2846]=0x63,[0x0E2847]=0x6B,[0x0E2848]=0x00,[0x0E2849]=0x00,[0x0E284A]=0x00}
@@ -1044,8 +1063,43 @@ end
 
 function write_level_name(hover_id,use_locked)
     local d=LEVEL_NAME_DATA[hover_id]; if not d then return end
+    -- OPEN mode: the final-showdown (hover 21) name shows the goal-condition
+    -- shorthand whenever the GOAL is unmet, independent of whether the level is
+    -- enterable. In open mode 21 can be unlocked (a received Final Showdown Unlock
+    -- item, or a satisfied level-condition) while tokens/bosses are still
+    -- outstanding -- gating this on use_locked left the name unchanged in that case.
+    -- goal_label_text() returns nil once the goal is fully met, so we then fall
+    -- through to the normal name.
+    --
+    -- The goal shorthand can be long enough to spill out of the 16-byte name field
+    -- (0x0E2824) into the SHARED flash-message buffer (0x0E2834). So while a flash is
+    -- playing we do NOT paint the shorthand -- we fall through to the short "locked"
+    -- name, leaving the message buffer to the popup. start_lock_flash repaints to
+    -- "locked"; the flash-end repaint restores the shorthand.
+    if hover_id==21 and get_game_mode()==0 and not lock_flash then
+        local g=goal_label_text()
+        if g then write_label(hover_id, g); return end
+    end
+    if use_locked then
+        -- Linear boss gates show "have/need tokens".
+        if get_game_mode()==1 and LINEAR_GATE_NUM[hover_id] then
+            write_label(hover_id, boss_gate_label(hover_id)); return
+        end
+    end
     local bytes=use_locked and d.locked or d.original
-    for i,v in ipairs(bytes) do mainmemory.write_u8(d.start+i-1,v) end
+    -- Restore the real name, clearing the FULL label width so a previously shown
+    -- "##/## tokens" / goal label leaves no stale tail (e.g. "Slime Time" picking up
+    -- the trailing 's' from "tokens" -> "Slime Times"). For the boss/goal gates the
+    -- prior label may be longer than the name, so we zero-pad up to that label's cap.
+    -- Hover 21 is capped at its 16-byte name field so we never wipe the abutting
+    -- flash-message buffer (0x0E2834).
+    local clearw = #bytes
+    if hover_id==21 then
+        clearw = 16
+    elseif LINEAR_GATE_NUM[hover_id] then
+        clearw = math.max(#bytes, LABEL_CAP[hover_id] or #bytes)
+    end
+    for i=1,clearw do mainmemory.write_u8(d.start+i-1, bytes[i] or 0x00) end
 end
 
 function write_all_level_names()
@@ -1059,8 +1113,8 @@ function write_lock_text(t)
 end
 
 function get_lock_msg_type(hover_id)
+    if get_game_mode()==1 and LINEAR_GATE_NUM[hover_id] then return "tokens" end
     if hover_id==21 then return "goal" end
-    if get_game_mode()==1 and BOSS_HOVER_GATE[hover_id] then return "tokens" end
     return "unlock"
 end
 
@@ -1068,6 +1122,141 @@ function get_active_lock_text(msg_type)
     if msg_type=="goal" then return TEXT_MISSING_GOAL
     elseif msg_type=="tokens" then return TEXT_YOU_NEED_TOKENS
     else return TEXT_MISSING_UNLOCK end
+end
+
+-- ============================================================
+-- #12  DYNAMIC LOCKED-GATE / MISSING-GOAL MESSAGES
+-- ============================================================
+-- The locked-gate popup renders the 23-byte buffer at LOCK_BUF. We no longer write
+-- 200 once and let the game animate; instead we write 193 (LOCK_MSG_SHOW) every
+-- frame the text should be visible and 0 every frame it should be blank, driving
+-- the flash ourselves. Numbers (token/boss counts) are built live, so these are
+-- functions writing ASCII, not the old fixed byte tables.
+LOCK_BUF, LOCK_BUF_LEN = 0x0E2834, 23
+LOCK_MSG_SHOW = 193
+
+-- Goal breakdown published by the Python client (it owns goal_conditions + boss
+-- tracking). Bitmask: b0 = tokens unmet, b1 = bosses unmet, b2 = level-unlock unmet.
+-- Goal breakdown published by the Python client (it owns goal_conditions + boss
+-- tracking). Bitmask: b0 = tokens unmet, b1 = bosses unmet, b2 = level-unlock unmet.
+-- These live in the SAFE low-shared region (with the game-mode mirror). They were
+-- at 0x1FFFF3-F6, past the validated shared map (ends 0x1FFFF2) in the top-of-RAM
+-- the game corrupts -- so they read 0 in-game and the goal label/popup fell back to
+-- "locked" / "missing goal conditions".
+GOAL_FLAGS_ADDR    = 0x1FF96C
+GOAL_BOSS_DEF_ADDR = 0x1FF96D   -- bosses defeated
+GOAL_BOSS_REQ_ADDR = 0x1FF96E   -- bosses required
+GOAL_TOK_REQ_ADDR  = 0x1FF96F   -- tokens required for the goal
+
+-- hover_id -> linear boss-gate number (1..5). 21 = linear final showdown (gate 5),
+-- which in LINEAR mode is a plain token gate; in OPEN mode 21 is the goal gate.
+LINEAR_GATE_NUM = {[9]=1,[12]=2,[15]=3,[18]=4,[21]=5}
+
+-- Max bytes we may write into each special label (string + a null terminator). 21
+-- sits just before the message buffer (0x0E2834); the goal shorthand may use the
+-- full 21 chars and spill into that buffer, so we allow 22 (21 + a terminating 0)
+-- on hover. While a flash plays, write_level_name paints the short "locked" name
+-- instead, so the popup owns the buffer; the flash-end repaint restores the label.
+LABEL_CAP = {[9]=12,[12]=12,[15]=20,[18]=24,[21]=22}
+
+function lock_char_byte(ch)
+    local b = string.byte(ch)
+    if b >= 65 and b <= 90 then b = b + 32 end   -- A-Z -> a-z (UI font is lowercase)
+    return b
+end
+
+-- Write ASCII s into `len` bytes at addr, zero-padding the remainder (clears any
+-- longer text previously there). Truncates s to len.
+function write_ascii(addr, s, len)
+    s = string.sub(s, 1, len)
+    for i = 0, len - 1 do
+        local b = (i < #s) and lock_char_byte(string.sub(s, i+1, i+1)) or 0x00
+        mainmemory.write_u8(addr + i, b)
+    end
+end
+function write_lock_string(s) write_ascii(LOCK_BUF, s, LOCK_BUF_LEN) end
+function write_label(hover_id, s)
+    local d = LEVEL_NAME_DATA[hover_id]; if not d then return end
+    local cap = LABEL_CAP[hover_id] or #d.original
+    -- Clear one byte PAST the text (#s + 1) so the game's null-terminated name render
+    -- stops at our string. Without this a label as long as (or longer than) the
+    -- original name left no terminator and the render ran on into stale/adjacent
+    -- buffer bytes -- e.g. the goal shorthand showing a garbage tail.
+    local clr = math.max(#s + 1, #d.original); if clr > cap then clr = cap end
+    write_ascii(d.start, s, clr)
+end
+
+-- "have/need tokens" for a linear boss gate (live token count vs that gate).
+function boss_gate_label(hover_id)
+    local gn = LINEAR_GATE_NUM[hover_id]; if not gn then return nil end
+    return get_ap_tokens() .. "/" .. get_gate(gn) .. " tokens"
+end
+
+-- Goal-condition shorthand for the goal level's label (hover 21), or nil if met.
+function goal_label_text()
+    local f = mainmemory.read_u8(GOAL_FLAGS_ADDR)
+    local t,b,l = (f&1)~=0, (f&2)~=0, (f&4)~=0
+    if not (t or b or l) then return nil end
+    if t and b and l then return "req tokens/bosses/lvl" end
+    if t and b then return "req tokens/bosses" end
+    if t and l then return "req tokens/level" end
+    if b and l then return "req bosses/level" end
+    if t then return "req tokens" end
+    if b then return "req bosses" end
+    return "req level"
+end
+
+-- Ordered list of popup messages for a locked gate.
+function build_lock_msgs(hover_id, kind)
+    if kind == "tokens" then
+        local gn = LINEAR_GATE_NUM[hover_id] or 5
+        local miss = get_gate(gn) - get_ap_tokens(); if miss < 0 then miss = 0 end
+        return { "missing " .. miss .. " tokens" }
+    elseif kind == "goal" then
+        local f = mainmemory.read_u8(GOAL_FLAGS_ADDR)
+        local m = {}
+        if (f&1)~=0 then
+            local miss = mainmemory.read_u8(GOAL_TOK_REQ_ADDR) - get_ap_tokens()
+            if miss < 0 then miss = 0 end
+            m[#m+1] = "missing " .. miss .. " tokens"
+        end
+        if (f&2)~=0 then
+            m[#m+1] = mainmemory.read_u8(GOAL_BOSS_DEF_ADDR) .. " of "
+                   .. mainmemory.read_u8(GOAL_BOSS_REQ_ADDR) .. " bosses defeated"
+        end
+        if (f&4)~=0 then m[#m+1] = "missing level unlock" end
+        if #m == 0 then m[1] = "missing goal conditions" end
+        return m
+    end
+    return { "missing level unlock" }
+end
+
+-- Flash state machine. Single-message kinds (unlock/tokens) show 100 frames then
+-- blank+stop; the goal kind cycles 75-show / 10-blank through every message once.
+SHOW_SINGLE, SHOW_CYCLE, BLANK_CYCLE = 100, 75, 10
+lock_flash = nil   -- {kind, msgs, idx, phase, timer}
+function start_lock_flash(hover_id, kind)
+    lock_flash = { kind=kind, msgs=build_lock_msgs(hover_id, kind), idx=1, phase="show", timer=0 }
+end
+function tick_lock_flash()
+    local lf = lock_flash; if not lf then return end
+    if lf.phase == "show" then
+        write_lock_string(lf.msgs[lf.idx] or "")
+        mainmemory.write_u8(A.LOCKED_MSG, LOCK_MSG_SHOW)
+        lf.timer = lf.timer + 1
+        local dur = (lf.kind == "goal") and SHOW_CYCLE or SHOW_SINGLE
+        if lf.timer >= dur then
+            if lf.kind == "goal" and lf.idx < #lf.msgs then
+                lf.phase = "blank"; lf.timer = 0
+            else
+                mainmemory.write_u8(A.LOCKED_MSG, 0); lock_flash = nil
+            end
+        end
+    else
+        mainmemory.write_u8(A.LOCKED_MSG, 0)
+        lf.timer = lf.timer + 1
+        if lf.timer >= BLANK_CYCLE then lf.idx = lf.idx + 1; lf.phase = "show"; lf.timer = 0 end
+    end
 end
 
 function is_x_pressed(input)
@@ -1391,9 +1580,76 @@ function update_moves()
     -- Re-read input after potential laser modification
     input=mainmemory.read_u8(A.INPUT)
 
-    -- Spin
-    if not HAS_SPIN then mainmemory.write_u32_le(A.SPIN,0xFFFFFFFF)
-    elseif not spin_restored then mainmemory.write_u32_le(A.SPIN,0x00000000); spin_restored=true end
+    -- ── Progressive Spin ──────────────────────────────────
+    -- L1 = base spin (move bit). L2 writes 0 to 0x04AD22 (exclusive). L3 = "super
+    -- spin": HOLD O to toggle FFFFFED2 -> 0x0A139C. Native spin is suppressed without
+    -- the move, at L3 (super spin replaces it), and while super spin is on. The Dizzy
+    -- Buzz trap (update_traps) drives the same address and OUTRANKS the spin: once a
+    -- dizzy is live we hand off until the game itself zeroes 0x0A139C.
+    local SPIN_LEVEL = get_spin_level()
+
+    -- Native spin enable (A.SPIN): blocked w/o the move, at L3, or while super on.
+    if (not HAS_SPIN) or SPIN_LEVEL>=3 or spin3_on then
+        mainmemory.write_u32_le(A.SPIN, 0xFFFFFFFF); spin_restored=false
+    elseif not spin_restored then
+        mainmemory.write_u32_le(A.SPIN, 0x00000000); spin_restored=true
+    end
+
+    -- L2 only: write 0 to 0x04AD22 each frame.
+    if SPIN_LEVEL==2 then mainmemory.write_u8(0x04AD22, 0) end
+
+    -- L3: HOLD O to flip the super-spin toggle (noise-tolerant streak).
+    if SPIN_LEVEL>=3 then
+        local circle_down = (input & 0x20) == 0   -- O/circle bit 0x20, active-low
+        if circle_down then spin_streak = math.min(spin_streak+1, SPIN_HOLD_FRAMES)
+        else spin_streak = math.max(spin_streak-1, 0) end
+        if spin_streak>=SPIN_HOLD_FRAMES and not spin_consumed then
+            if spin3_on then spin3_on=false
+            -- Only ACTIVATE super spin while grounded (0x0B2214 == 0). It can be
+            -- toggled off anytime, and once on it keeps running in the air (see the
+            -- write block below) -- you just can't start it mid-jump.
+            elseif mainmemory.read_u32_le(0x0A139C) ~= SPIN_DIZZY
+                   and mainmemory.read_u8(0x0B2214) == 0 then spin3_on=true end
+            spin_consumed = true
+        end
+        if spin_streak==0 then spin_consumed=false end
+    else
+        spin_streak=0; spin_consumed=false
+    end
+
+    -- Address ownership: dizzy sequence -> dizzy hands-off -> normal spin driving.
+    if dizzy_seq>0 then
+        if dizzy_seq>1 then mainmemory.write_u32_le(0x0A139C, 0)
+        else mainmemory.write_u32_le(0x0A139C, SPIN_DIZZY); dizzy_active=true end
+        dizzy_seq = dizzy_seq-1
+    elseif dizzy_active then
+        if mainmemory.read_u32_le(0x0A139C)==0 then dizzy_active=false end
+    else
+        -- Super spin runs whenever the toggle is on -- in the air too. Activation is
+        -- gated to the ground in the toggle block above, so this only ever continues
+        -- a ground-started spin; it never starts one mid-air. While the toggle is off
+        -- at L3 the value is held at 0 so airborne Stomp isn't overridden.
+        if spin3_on then
+            mainmemory.write_u32_le(0x0A139C, SPIN_SUPER)
+        elseif SPIN_LEVEL>=3 then
+            mainmemory.write_u32_le(0x0A139C, 0)
+        end
+    end
+
+    -- Spin UI: hidden when the player has no spin. A dizzy pops it and the UI
+    -- lingers ~3s past the animation, so re-assert the learned hidden value while a
+    -- dizzy is live AND for SPIN_UI_HOLD frames after it clears.
+    if not HAS_SPIN then
+        if dizzy_active or dizzy_seq>0 then
+            spin_ui_hold = SPIN_UI_HOLD                         -- top up the tail
+            if spin_ui_hidden ~= nil then mainmemory.write_u8(SPIN_UI_ADDR, spin_ui_hidden) end
+        elseif spin_ui_hold > 0 then
+            spin_ui_hold = spin_ui_hold - 1                     -- drain the 3s tail
+            if spin_ui_hidden ~= nil then mainmemory.write_u8(SPIN_UI_ADDR, spin_ui_hidden) end
+        else
+            spin_ui_hidden = mainmemory.read_u8(SPIN_UI_ADDR)   -- learn hidden value
+        end
+    end
 
     -- Double jump
     if not HAS_DBL_JUMP then
@@ -1804,6 +2060,17 @@ function update_traps(level)
         end
     end
 
+    -- Dizzy Buzz trap: cancel super spin, then run the clear-then-dizzy sequence
+    -- (driven by the spin block in update_moves). Dizzy outranks spin level 3.
+    -- Queue byte 0x1FFFD2 (SHARED_TRAP_DIZZY); client pushes, we consume here.
+    local dizzy_q = mainmemory.read_u8(0x1FFFD2)
+    if dizzy_q > 0 then
+        mainmemory.write_u8(0x1FFFD2, dizzy_q - 1)
+        spin3_on = false
+        spin_consumed = true
+        dizzy_seq = SPIN_DIZZY_CLEAR + 1
+    end
+
     -- Cutscene trap state machine runs every frame in the main loop (it must run
     -- on the map and boss-defeat screens too), not here.
 
@@ -1863,7 +2130,7 @@ function update_traps(level)
         end
     end
 
-    -- Filler: Invincible Buzz (30 seconds of i-frames). Only ticks inside a
+    -- Filler: Invincible Buzz (15 seconds of i-frames). Only ticks inside a
     -- playable level. Death link takes PRIORITY: if a death is being processed
     -- (DEATH_PHASE~=0) or an incoming death-link is queued, cancel invincibility
     -- so the death lands.
@@ -2349,6 +2616,27 @@ function update_coins(level)
     coin_load_timer=coin_load_timer+1
     if coin_load_timer<COIN_LOAD_WAIT then return end
 
+    -- ADOPT SERVER BASELINE — the client's _restore_from_server writes the highest
+    -- Coin Bundle already checked on the server into SHARED_COINS[level] on (re)connect.
+    -- coins_checked only inits to 0 at Lua load, so after a BizHawk/Lua reload a return
+    -- visit would re-derive bundles from 1 as the player re-collects, overwrite the
+    -- restored value with a lower count, and re-send (auto-release) bundles already
+    -- checked. Seed coins_checked from the restored count (raise only, capped at the
+    -- level's real bundle count so RAM garbage can't seed) so re-collection starts
+    -- ABOVE the baseline and checked bundles can never re-fire.
+    do
+        local sc_addr = SHARED_COINS[level]
+        if sc_addr then
+            local cb   = get_checks_bundle_size()
+            local maxc = COIN_MAX[level]
+            local maxb = (cb and cb > 0 and maxc) and math.ceil(maxc / cb) or 255
+            local server_checked = mainmemory.read_u8(sc_addr)
+            if server_checked > (coins_checked[level] or 0) and server_checked <= maxb then
+                coins_checked[level] = server_checked
+            end
+        end
+    end
+
     -- BASELINE — force the in-game coin counter to the AP-granted spendable amount
     -- as soon as the level has settled. This is SAFE to do before the player has
     -- moved: it only WRITES the correct amount, it doesn't read coin gains, so it
@@ -2823,6 +3111,16 @@ function on_level_change(new_level, prev_level)
     buzz_baseline_set=false
     buzz_spawn.started=false; buzz_spawn.base=0; buzz_spawn.cand=-1; buzz_spawn.stable=0; buzz_spawn.disc=nil
     buzz_spawn.move_x=nil; buzz_spawn.move_y=nil; buzz_spawn.move_frames=0; buzz_spawn.lr_frames=0
+    -- Progressive Spin level 3: clear the "super spin" state on every level change
+    -- so it never carries across an exit/entry (the spec clears 0x0A139C-0x0A139F on
+    -- exit). It only re-arms via an O press once back in a level at spin level 3.
+    spin3_on = false
+    spin_streak = 0
+    spin_consumed = false
+    dizzy_seq = 0
+    dizzy_active = false
+    spin_ui_hold = 0
+    clear_spin3()
     -- Snapshot the free-running counter at a MAP(16) -> LEVEL(1..15) transition.
     -- (Only that transition; other entries use the movement/timeout fallbacks.)
     if prev_level==16 and new_level>=1 and new_level<=15 then
@@ -3011,11 +3309,18 @@ function update_map(input, hovered)
             write_all_level_names()
         end
         local unlocked=is_level_unlocked(hovered)
-        local default_text=get_active_lock_text(get_lock_msg_type(hovered))
-        local msg_state=mainmemory.read_u8(A.LOCKED_MSG)
-        if we_triggered_msg and msg_state==0 then
-            we_triggered_msg=false; msg_playing=false
-            write_lock_text(default_text)
+
+        -- Keep the boss-gate "have/need tokens" labels current as the token count
+        -- changes (receiving a token should tick the number on the gate).
+        local tok_now=get_ap_tokens()
+        if tok_now~=last_gate_tokens then last_gate_tokens=tok_now; write_all_level_names() end
+
+        -- Open-mode goal label: refresh the final-showdown name when the client's
+        -- published goal breakdown changes (e.g. a boss defeat that doesn't move the
+        -- token count), so the shorthand on hover 21 stays current.
+        if get_game_mode()==0 then
+            local gf_now=mainmemory.read_u8(GOAL_FLAGS_ADDR)
+            if gf_now~=last_goal_flags then last_goal_flags=gf_now; write_all_level_names() end
         end
 
         -- Block X if: (a) the hovered level is locked, OR (b) we just arrived on
@@ -3027,6 +3332,15 @@ function update_map(input, hovered)
         if hovered ~= last_hovered then
             last_hovered = hovered
             map_select_settle = MAP_SELECT_SETTLE
+            if lock_flash then
+                -- A flash message was mid-play (player had pressed X). Moving to a
+                -- different level must KILL it and zero the on-screen animation
+                -- instantly -- not leave the last 'show' frame lingering until the
+                -- next gate's flash overwrites it.
+                lock_flash = nil
+                mainmemory.write_u8(A.LOCKED_MSG, 0)
+                write_all_level_names()   -- repaint labels so no popup tail remains
+            end
         elseif map_select_settle > 0 then
             map_select_settle = map_select_settle - 1
         end
@@ -3039,15 +3353,24 @@ function update_map(input, hovered)
 
         if x_now and must_block then
             block_x(input)
-            if (not unlocked) and not msg_playing then
-                write_lock_text(get_active_lock_text(get_lock_msg_type(hovered)))
-                mainmemory.write_u8(A.LOCKED_MSG,200)
-                msg_playing=true; we_triggered_msg=true
+            if (not unlocked) and not lock_flash then
+                start_lock_flash(hovered, get_lock_msg_type(hovered))
+                -- Repaint now that a flash is active: write_level_name suppresses the
+                -- (possibly buffer-spilling) goal shorthand while lock_flash is set, so
+                -- hover 21 reverts to the short "locked" name and the popup owns the
+                -- shared message buffer. The flash-end repaint below restores it.
+                write_all_level_names()
             end
-        else
-            if not msg_playing then write_lock_text(default_text) end
         end
-        if unlocked then mainmemory.write_u8(A.LOCKED_MSG,0) end
+        -- Drive the flash: writes 193 (show) / 0 (blank) to LOCKED_MSG every frame.
+        -- One-shot 100-frame show for unlock/tokens; a single 75/10 cycle through
+        -- every unmet condition for the goal gate.
+        local was_flashing = lock_flash ~= nil
+        if lock_flash then tick_lock_flash() end
+        -- The goal label can extend into the message buffer; once a flash finishes,
+        -- repaint the labels so the popup text never leaves a stale tail on the gate.
+        if was_flashing and not lock_flash then write_all_level_names() end
+        if unlocked then lock_flash=nil; mainmemory.write_u8(A.LOCKED_MSG,0) end
     end
 
     -- Music skip on map

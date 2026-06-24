@@ -121,6 +121,21 @@
       "version_simple": "0.3.0",
       "world_version": "0.3.0rc2.post1"
     },
+    "v0.4.0": {
+      "created_at": "2026-06-24T02:13:16Z",
+      "description": "Number goes up to v0.4.0, more features, here's what's new:\r\n\r\n### Life-Sanity:\r\n- Adds 42 checks for collecting free-standing lives (this doesn't includes lives spawned from boxes)\r\n\r\n### Life Count Checks:\r\n- Option to add checks for reaching certain life counts\r\n- This can be any combination of numbers from 5-99\r\n- The randomization logic will consider higher life counts as occurring \"later\"\r\n  - This effect is accomplished by making the logic think that higher life counts require a larger amount of crystals\r\n\r\n### Bug Fixes:\r\n- Added missing logic for regular exits when Gimmick Lock is enabled\r\n- The client will now print errors if you reset the console or connect before the game loads, notifying you to restart/reconnect the client\r\n\r\n### Death Link:\r\n### Gimmick Lock:\r\n### Location Groups:\r\n- If you haven't kept up with the pre-releases up to this point, you can find their [release notes here](https://github.com/Sim10XXX/C2AP/releases) for more information on these features, and other bug fixes\r\n\r\n### Known Issues:\r\n- When using warp randomizer, exiting Totally Fly always puts you in the 4th warp room, which can give access to the 4th warp room early\r\n- Respawning at the last checkpoint without Polar in each Polar level can result in a double-death\r\n- Going through a Polar/Jetpack level without Polar/Jetpack unlocked can sometimes crash the game\r\n  - This is due to limitations of the game itself (since you're not expected to be running around as regular Crash)\r\n- Also use [GitHub issues](https://github.com/Sim10XXX/C2AP/issues) or the [Crash 2 AP thread](https://discord.com/channels/731205301247803413/1371461990794657863) to report bugs or suggest stuff",
+      "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.4.0/crash2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c305635fa8cd92973f81e89dcf6ed9064d2efb46d259730065a36e9bcd65abd2",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.5",
+      "size": 47003,
+      "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
+      "tag": "v0.4.0",
+      "title": "Release v0.4.0",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
+    },
     "v0.4.0-pre": {
       "created_at": "2026-05-23T01:07:44Z",
       "description": "## Death Link\r\n- Option to enable sending/receiving death links\r\n  - When one person with death link dies, everyone with death link dies\r\n\r\n### Note\r\nSince this is a pre-release, I am leaving in some debug commands (to be used RESPONSIBLY) if you want to test some things out yourself. You will type these in the client:\r\n- debug_openwarproom\r\n  - Fully opens the warp room and all secret entrances (**and sends checks**)\r\n- exec\r\n  - Simulates receiving a death link (if death link ever fails or crashes the game, then please report the bug with a description of what you were doing in game and the printed crash state # from the console)\r\n- exec \\<event id\\> [event parameter 1] [event parameter 2] ...\r\n  - For if you want to experiment with the game's internal event system. This will send an event of id \\<event id\\> to crash, and you can optionally pass some parameters along with the event\r\n  - This is VERY prone to crashing the game\r\n  - Make sure you use save states taken from **after** you connected with this version of the client\r\n\r\n### Known Issues:\r\n- The client seems to have a small chance to freeze the game on connection (just try again and it'll be fine)",
