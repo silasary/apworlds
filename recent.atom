@@ -2,46 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-24T12:50:17.283485+00:00</updated>
+  <updated>2026-06-24T18:46:57.828007+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/wildham0/FF1PRAP/releases/tag/0.6.0</id>
-    <title>FF1 Pixel Remaster v0.6.0</title>
-    <updated>2026-06-19T12:08:13+00:00</updated>
-    <author>
-      <name>wildham</name>
-    </author>
-    <content>- Fix some locations naming&#13;
-- AP - Data is now written to save file&#13;
-- AP - Checks are resent on game load&#13;
-- AP - Receiving the Ship on the overworld will spawn it&#13;
-- AP - General resiliency improvement</content>
-    <link href="https://github.com/wildham0/FF1PRAP/releases/tag/0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.32</id>
-    <title>Pokemon Black and White v0.3.32</title>
-    <updated>2026-06-19T14:47:48+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <author>
-      <name>SparkyDaDoggo</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-- Fixed multiple plugins nullifying each other's modifications to the ROM&#13;
-- Fixed modifications to arm7 not being written to the ROM&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
-However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT&#13;
-</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.32"/>
-  </entry>
   <entry>
     <id>https://github.com/silent-destroyer/tunic-randomizer/releases/tag/5.0.0</id>
     <title>TUNIC v5.0.0</title>
@@ -1245,5 +1210,88 @@ Info page: https://github.com/Parcosmic/Hammerwatch-Archipelago/blob/dev/worlds/
     </author>
     <content>Added new options for setting the badges required to open Victory Road and setting how many GLC keys are in the starting inventory.</content>
     <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.4.1</id>
+    <title>Ship of Harkinian v1.4.1</title>
+    <updated>2026-06-24T12:53:05+00:00</updated>
+    <author>
+      <name>aMannus</name>
+    </author>
+    <author>
+      <name>jeromkiller</name>
+    </author>
+    <author>
+      <name>ScipioWright</name>
+    </author>
+    <author>
+      <name>Fanta-Tanked</name>
+    </author>
+    <author>
+      <name>Sam</name>
+    </author>
+    <author>
+      <name>DaComputerNerd717</name>
+    </author>
+    <author>
+      <name>A-Green-Spoon</name>
+    </author>
+    <author>
+      <name>StuBob</name>
+    </author>
+    <author>
+      <name>Tzuf23</name>
+    </author>
+    <author>
+      <name>mattman107</name>
+    </author>
+    <author>
+      <name>Varuuna</name>
+    </author>
+    <author>
+      <name>Lorithan</name>
+    </author>
+    <author>
+      <name>BootsinSoots</name>
+    </author>
+    <author>
+      <name>briaguya</name>
+    </author>
+    <author>
+      <name>Sirius902</name>
+    </author>
+    <author>
+      <name>ThatHypedPerson</name>
+    </author>
+    <content>Our previous release introduced a new system to filter out characters which are not supported in the Ocarina of Time font during save file creation. However due to an issue in our supported character table all lowercase L's were getting cut too.&#13;
+&#13;
+This patch release fixes this issue and should be backwards compatible with previously generated 1.4.0 multiworlds.&#13;
+You will have to create a new save file in order in order for the changes to take effect on an existing slot.&#13;
+&#13;
+## Full change log&#13;
+ - Fixed lowercase L's being seen as an unsupported character.&#13;
+ - Fixed logic issue with the wolfos grotto in the sacred forest meadow.&#13;
+ - Fixed logic issue with returning from the Deku tree boss room to the basement.</content>
+    <link href="https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.1</id>
+    <title>Mario Kart Double Dash v1.0.1</title>
+    <updated>2026-06-24T12:55:34+00:00</updated>
+    <author>
+      <name>aXu_AP</name>
+    </author>
+    <content>A few generation related fixes here... The client is compatible with 1.0.X generated seeds.&#13;
+&#13;
+Download a new apworld and options template below and have a good one! If this is your first time playing MKDD AP, here's the [setup guide](https://github.com/aXu-AP/archipelago-double-dash/blob/main/docs/en_Setup.md) and [readme](https://github.com/aXu-AP/archipelago-double-dash).&#13;
+&#13;
+## Fixes&#13;
+* Fix require star logic (sand pit check)&#13;
+* Fix spamming debug data when generating&#13;
+* Fix determinism issues&#13;
+* Fix generation sometimes failing at sand pit&#13;
+&#13;
+**Full Changelog**: https://github.com/aXu-AP/archipelago-double-dash/compare/v1.0.0...v1.0.1</content>
+    <link href="https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.1"/>
   </entry>
 </feed>
