@@ -7,7 +7,7 @@ that reward creative combos and precise trick execution.
 
 
 ## Downloads
-- <a href="https://github.com/SerpentAI/Archipelago/releases/download/thps12-v1.1.0/tony_hawks_pro_skater_1_2.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/SerpentAI/Archipelago/releases/download/thps12-v1.2.0/tony_hawks_pro_skater_1_2.apworld">Latest Version (1.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
