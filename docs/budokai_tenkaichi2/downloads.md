@@ -1,4 +1,4 @@
-# None
+# Dragon Ball Z Budokai Tenkaichi 2
 
 ## Latest
 - <a href="https://github.com/z3xox/Tenkaichi2AP/releases/download/v0.3.3/budokai_tenkaichi2.apworld">Latest Version (0.3.3)</a>

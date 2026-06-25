@@ -1,4 +1,4 @@
-# None
+# YGO LotD-LE
 
 ## Latest
 - <a href="https://github.com/HillbillyDroid/YGO-LotD-LE-APWorld/releases/download/v0.0.2/ygo_lotd.apworld">Latest Version (0.0.2)</a>

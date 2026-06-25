@@ -1,6 +1,7 @@
-# None
+# Streets of Rogue
 
-
+Streets of Rogue is a rogue-lite about player choice, freedom, and anarchic fun. 
+The game takes inspiration from fast-paced top-down rogue-lites like Binding of Isaac and Nuclear Throne, and adds free-form, experimentation-driven, emergent gameplay elements of RPGs like Deus Ex.
 
 
 ## Downloads

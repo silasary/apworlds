@@ -1,9 +1,12 @@
 # Five Nights at Fuckboy&#x27;s 2
 
 ## Latest
-- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.0/fnafb2.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.1/fnafb2.apworld">Latest Version (0.4.1)</a>
 
 ## All Versions
+
+#### v0.4.1
+- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.1/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.1/fnafb2.apworld</a>
 
 #### v0.4.0
 - <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.0/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.0/fnafb2.apworld</a>

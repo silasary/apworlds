@@ -8,6 +8,9 @@
 #### v0.8.0rc1
 - <a href="https://github.com/T0r1nn/APLC/releases/download/v0.8.0-pre-1/lethal_company.apworld">https://github.com/T0r1nn/APLC/releases/download/v0.8.0-pre-1/lethal_company.apworld</a>
 
+#### v0.7.12b0
+- <a href="https://github.com/T0r1nn/APLC/releases/download/v0.7.12-beta/lethal_company.apworld">https://github.com/T0r1nn/APLC/releases/download/v0.7.12-beta/lethal_company.apworld</a>
+
 #### v0.7.11b0
 - <a href="https://github.com/T0r1nn/APLC/releases/download/v0.7.11-beta/lethal_company.apworld">https://github.com/T0r1nn/APLC/releases/download/v0.7.11-beta/lethal_company.apworld</a>
 

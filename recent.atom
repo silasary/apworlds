@@ -2,143 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-25T00:37:56.686032+00:00</updated>
+  <updated>2026-06-25T07:16:33.208515+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/silent-destroyer/tunic-randomizer/releases/tag/5.0.0</id>
-    <title>TUNIC v5.0.0</title>
-    <updated>2026-06-19T15:57:36+00:00</updated>
-    <author>
-      <name>silent-destroyer</name>
-    </author>
-    <author>
-      <name>ScipioWright</name>
-    </author>
-    <content># Version 5.0.0&#13;
-&#13;
-### Backwards compatibility with existing seeds: &#13;
-- Single Player Randomizer: ❌&#13;
-- Archipelago: ⚠️&#13;
-  - The tunic.apworld file was updated in this version.&#13;
-  - This update is fully compatible with games generated on Archipelago 0.6.7 and the Archipelago website.&#13;
-  - Save files started on Version 4.2.7 can be picked up where they were left off after updating, with the following exception:&#13;
-    - For Entrance Rando seeds, set your spawn point at any save statue before updating, otherwise you may encounter a black screen when loading the file on 5.0.0.&#13;
-  - If you generate a game using the 5.0.0 apworld, every Tunic player in that game must update to the 5.0.0 mod, even if they're not using the new settings. There are new filler item IDs in the apworld that will cause issues on the old mod.&#13;
-&#13;
-## Check out everything new on the [Randomizer Website!](https://rando.tunic.run/)&#13;
-&#13;
-# Fox Prince (by @ScipioWright)&#13;
-&lt;img width="1909" height="1074" alt="image" src="https://github.com/user-attachments/assets/720a3ce2-10cb-4454-8f73-2ade6a32ccb1" /&gt;&#13;
-&#13;
-### A brand new Entrance Randomizer mode with features inspired by Blue Prince. (Not compatible with Archipelago.)&#13;
-- Every entrance you enter will prompt you with three entrances to choose from. Your choice will then be locked in for that transition for the rest of the seed.&#13;
-- New items have been added in this mode for use when choosing an entrance (dice for re-rolling, darts to pin an entrance for later)&#13;
-- Special thanks to fletchisafurry for their East Forest and Ziggurat map images!&#13;
-&#13;
-# Shuffle Enemy Drops + Shuffle Enemy Souls&#13;
-&lt;img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/1b3afa6d-b2b9-4dc5-bcb1-779c99c6be78" /&gt;&#13;
-&#13;
-### All enemies drop a check when defeated. Available in both Single Player and Archipelago.&#13;
-- Adds around 600 checks, with an additional "extra" option to include New Game+ and Nighttime enemies for ~100 more checks.&#13;
-- **Shuffling Enemy Souls** splits up the progression by making it so enemies do not appear in the world until their corresponding "soul" item is found. (Requires Enemy Drops to be shuffled.)&#13;
-- Poptracker support for enemy checks is in the works for a future update.&#13;
-  - Unchecked enemies will have a differently colored Z-Target ring, and can still be found via the Seeking Spell.&#13;
-&#13;
-# Trick &amp; Glitch Logic&#13;
-Toggle ladder storage, ice grappling, and/or laurels shortcuts in logic, with varying levels of difficulty. (These options already existed for Archipelago, but have now been ported to the standalone randomizer)&#13;
-&#13;
-&#13;
-## Archipelago Updates&#13;
-- Added a "Connect Via Player Link" button on the main menu, which allows you to right click -&gt; copy link on your player name from an Archipelago room page and connect with a single button press.&#13;
-- With the newest apworld, opening the archipelago launcher via the room page will now prompt you to launch either the text client, universal tracker, or TUNIC directly. Launching TUNIC this way will automatically connect you once the game loads to the title screen.&#13;
-  - Room passwords do not get populated with the above methods and must still be manually entered.&#13;
-- Death Link messages have been overhauled and now more accurately describe what killed you.&#13;
-- The Laurels and Questagon hints now sync with the Archipelago text client.&#13;
-- Universal Tracker now supports Deferred Entrances for Entrance Rando.&#13;
-- Added fuse locations to the poptracker maps for Universal Tracker&#13;
-- Added location groups for all grass/breakable/enemy checks to the APworld&#13;
-- Minor logic fixes and tweaks in the APworld&#13;
-- Players can no longer be interrupted by other players sending them an item while typing holy cross codes.&#13;
-- Death/Trap Links can no longer be received during the credits&#13;
-- The potion-forming animation will no longer get stuck on repeat while receiving a bunch of items.&#13;
-&#13;
-# Quick Settings Redux&#13;
-&lt;img width="1815" height="591" alt="image" src="https://github.com/user-attachments/assets/e16daa54-4c93-42ef-8198-317a2bd1205a" /&gt;&#13;
-&#13;
-### The randomizer menu has received an overhaul, now providing easy access to every setting found within the mod.&#13;
-&#13;
-# Seeking Spell Options&#13;
-You can now filter what types of checks the seeking spell will search for, including:&#13;
-- In-Logic Checks&#13;
-- Default/Vanilla Checks&#13;
-- Grass&#13;
-- Breakables&#13;
-- Fuses &amp; Bells&#13;
-- Enemies&#13;
-&#13;
-# Misc. Toggles&#13;
-- **CRT Filter**: Render the game with a CRT effect overlay&#13;
-- **Faster Item Queue**: For Archipelago, makes the item queue process faster and skip filler animations when receiving large amounts of items at once.&#13;
-- **Fool Trap Toggles**: You can now set each individual fool trap type to be either on/off/trap link only. There are a handful of new traps that were made specifically for trap link with non-tunic games that can now be enabled for yourself. New trap effects include CRT, Bald, Home (teleports you to overworld), Whoops!, W I D E, Zoom Out, Color Saturation, MP Depletion, Disarm (unequips all items), and Fast (speeds up the game).&#13;
-&#13;
-## Other Changes &amp; Bugfixes&#13;
-- Reduced the range of the Librarian and Heir swords.&#13;
-- Several optimizations to (hopefully) improve performance of the mod.&#13;
-- Added controller button mappings for the ending screen actions (release/collect/skip credits/hide stats).&#13;
-- The Heir can now be fought in Hexagon Quest. (Note: The logic does not account for this as it would normally.)&#13;
-- Fixed the cathedral elevator disappearing with shuffled fuses.&#13;
-- Added a tuning fork outside of the temple when ladders are shuffled in order to get back down from the upper right path.&#13;
-- Added a light source outside of the Cathedral Secret Legend door to highlight the chest.&#13;
-- Added ladder/fuse decorations near the overworld info sign depending on which is enabled.&#13;
-- The Chalkboard in the Sealed Temple now displays split counts for Overworld and Overworld Interiors.&#13;
-- Added an icon for the laurels-toggle item.&#13;
-- Added a small sfx/animation when unlocked abilities.&#13;
-- Fixed several ghost fox Trunic typos.&#13;
-- Added failsafe for wrong warping and getting stuck out of bounds due to the deathplane patch.&#13;
-- Added launch params to force the TUNC title screen or Mr Mayor mode (`-tunc` and `-mayor`)&#13;
-- Other things I am probably forgetting.</content>
-    <link href="https://github.com/silent-destroyer/tunic-randomizer/releases/tag/5.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.0</id>
-    <title>Civilization V v0.10.0</title>
-    <updated>2026-06-19T16:23:56+00:00</updated>
-    <author>
-      <name>1313e</name>
-    </author>
-    <content>NOTE: Several new options were added, so the YAML template needs to be regenerated.&#13;
-&#13;
-**General**:&#13;
-- A grand total of 168 new locations (263 -&gt; 431) have been added with various sanities: Unitsanity; Settlersanity; and Promotionsanity (with icons by @RaindropDry).&#13;
-- Deathlink with 4 possible triggers and 9 possible effects split over 31 weighted options was added.&#13;
-- Many more filler and trap items.&#13;
-&#13;
-**Changes/Improvements**:&#13;
-- Items sent to the game are now tracked on the save file.&#13;
-- Receiving an item now shows an alert in-game with what you received.&#13;
-- Getting a sanity check now reverts the name/description back to vanilla without item hint.&#13;
-- Added a BK Mode project available from the start for all cities.&#13;
-- Future Tech has been replaced with Culture Boost, which gives you a large culture bonus for a high science price.&#13;
-- Bonus AP Techs now just use numbers instead of "Bonus" in their name.&#13;
-- Client now has some leniency with Civ V not responding in time. This improves connection with Civ V on lower-spec machines.&#13;
-- Client has the Civ V icon now in the Archipelago Launcher.&#13;
-- Units can no longer become obsolete.&#13;
-- Updated README with tons more information and troubleshooting info.&#13;
-- Added ability to combine requirements using both AND and OR logic. Can be stacked indefinitely.&#13;
-- Opening the patch file on Linux now automatically converts the mod folder and all mod files to lowercase, to avoid case-sensitivity issues when running Civ V on Linux.&#13;
-- All filler and trap items now have weighting options.&#13;
-&#13;
-**Fixes**:&#13;
-- Fixed two AP policies having incorrect requirements.&#13;
-- Fixed bug where Traps were incorrectly marked as Filler.&#13;
-- Tradition Finisher now properly sends the Aqueduct building location, if Buildingsanity is on.&#13;
-&#13;
-**Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.9.8...v0.10.0</content>
-    <link href="https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.0"/>
-  </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.8</id>
     <title>Total War Warhammer 3 v0.10.8</title>
@@ -315,7 +183,7 @@ However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity 
   </entry>
   <entry>
     <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.0</id>
-    <title>witchspringrap v0.3.0</title>
+    <title>Witchspring R v0.3.0</title>
     <updated>2026-06-20T18:58:12+00:00</updated>
     <author>
       <name>LeiAfkpuz</name>
@@ -347,7 +215,7 @@ However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity 
   </entry>
   <entry>
     <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.1</id>
-    <title>witchspringrap v0.3.1</title>
+    <title>Witchspring R v0.3.1</title>
     <updated>2026-06-20T18:58:12+00:00</updated>
     <author>
       <name>LeiAfkpuz</name>
@@ -357,7 +225,7 @@ However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity 
   </entry>
   <entry>
     <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.2</id>
-    <title>witchspringrap v0.3.2</title>
+    <title>Witchspring R v0.3.2</title>
     <updated>2026-06-20T18:58:12+00:00</updated>
     <author>
       <name>LeiAfkpuz</name>
@@ -368,7 +236,7 @@ Also added Livya, Justice and Demon of Greed who were previously missing from th
   </entry>
   <entry>
     <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.3</id>
-    <title>witchspringrap v0.3.3</title>
+    <title>Witchspring R v0.3.3</title>
     <updated>2026-06-20T18:58:12+00:00</updated>
     <author>
       <name>LeiAfkpuz</name>
@@ -855,7 +723,7 @@ APWORLD (needed for generating archieplago game):&#13;
   </entry>
   <entry>
     <id>https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.3</id>
-    <title>budokai_tenkaichi2 v0.3.3</title>
+    <title>Dragon Ball Z Budokai Tenkaichi 2 v0.3.3</title>
     <updated>2026-06-22T17:42:49+00:00</updated>
     <author>
       <name>z3xox</name>
@@ -943,7 +811,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   </entry>
   <entry>
     <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.4</id>
-    <title>witchspringrap v0.3.4</title>
+    <title>Witchspring R v0.3.4</title>
     <updated>2026-06-23T16:12:30+00:00</updated>
     <author>
       <name>LeiAfkpuz</name>
@@ -1293,5 +1161,73 @@ Download a new apworld and options template below and have a good one! If this i
 &#13;
 **Full Changelog**: https://github.com/aXu-AP/archipelago-double-dash/compare/v1.0.0...v1.0.1</content>
     <link href="https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/T0r1nn/APLC/releases/tag/v0.7.12-beta</id>
+    <title>Lethal Company v0.7.12b0</title>
+    <updated>2026-06-25T00:34:09+00:00</updated>
+    <author>
+      <name>T0r1nn</name>
+    </author>
+    <content>Mod: &#13;
+* filler usage is now properly networked&#13;
+* removed unnecessary code for completing quota events (event locations don't exist past generation)&#13;
+&#13;
+Apworld:&#13;
+* the company building is now logically required to get the kidnapper fox and vain shroud entries&#13;
+* players can now choose how many quota locations can be in a single multiworld sphere [@donedonedone278] #29 &#13;
+&#13;
+Other:&#13;
+* created an example csproj.user for contributors&#13;
+* created build scripts to make testing easier for contributors [@donedonedone278] #29 &#13;
+Mod version 0.7.12 works with apworld versions 0.7.11 - 0.7.12</content>
+    <link href="https://github.com/T0r1nn/APLC/releases/tag/v0.7.12-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Simsipelago/Archipelago/releases/tag/2.0.0</id>
+    <title>The Sims 4 v2.0.0</title>
+    <updated>2026-06-25T02:16:08+00:00</updated>
+    <author>
+      <name>Simsipelago</name>
+    </author>
+    <content>This release changes quite a bit about the APWorld. It adds a number of new features that are only meant for people to use if they're prepared for an unfinished experience. &#13;
+&#13;
+## New additions/changes&#13;
+- DLC Skills&#13;
+- Multiple career support&#13;
+&#13;
+In addition to the major features, lots has changed on the backend.  The rules have been refactored to ensure better maintainability in the future, as well as some client fixes and squashed bugs. &#13;
+&#13;
+This release is NOT backwards compatible with older games or sessions. A lot has changed, and attempting to use the new APWorld and client with the older game mod will result in issues. Please finish all your existing game before updating!&#13;
+&#13;
+If you're wondering where the DLC options are, they're currently hidden because they're not prepared for general usage just yet. The DLC Skills have been tested and do work, but due to a lack of being able to lock most of them on the mod side, these options aren't ready for primetime despite being the headlining major feature for this update. We will update you when they become finished to a point where the experience doesn't suck. &#13;
+&#13;
+This release should fix some stability issues, but there are still some glaring bugs that haven't yet been fixed due to an unfortunate series of events that are not of importance here.&#13;
+&#13;
+## What's Changed&#13;
+* Minor bugfixes by @silasary in https://github.com/Simsipelago/Archipelago/pull/1&#13;
+* Select Multiple Careers by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/3&#13;
+* WIP DLC skills by @silasary in https://github.com/Simsipelago/Archipelago/pull/2&#13;
+* Merge Main (Aug 12) by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/4&#13;
+* Merge Main (Aug 16) by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/5&#13;
+* Don't make location sending O(n^2) by @silasary in https://github.com/Simsipelago/Archipelago/pull/7&#13;
+* merge main (again) by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/12&#13;
+* Fix client launch missing args by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/13&#13;
+* merge main (again) by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/17&#13;
+* Add CodeRabbit configuration by @coderabbitai[bot] in https://github.com/Simsipelago/Archipelago/pull/18&#13;
+* Sims 4: Rules Refactor Part 1 by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/14&#13;
+* Added a simple example for the set path by @mads-gregersen in https://github.com/Simsipelago/Archipelago/pull/20&#13;
+* Add an additional check that /set_path was given an absolute file path by @silasary in https://github.com/Simsipelago/Archipelago/pull/22&#13;
+* try merging main by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/28&#13;
+* Sims4 dev by @benny-dreamly in https://github.com/Simsipelago/Archipelago/pull/30&#13;
+&#13;
+## New Contributors&#13;
+* @silasary made their first contribution in https://github.com/Simsipelago/Archipelago/pull/1&#13;
+* @benny-dreamly made their first contribution in https://github.com/Simsipelago/Archipelago/pull/3&#13;
+* @coderabbitai[bot] made their first contribution in https://github.com/Simsipelago/Archipelago/pull/18&#13;
+* @mads-gregersen made their first contribution in https://github.com/Simsipelago/Archipelago/pull/20&#13;
+&#13;
+**Full Changelog**: https://github.com/Simsipelago/Archipelago/compare/1.7.5...2.0.0</content>
+    <link href="https://github.com/Simsipelago/Archipelago/releases/tag/2.0.0"/>
   </entry>
 </feed>

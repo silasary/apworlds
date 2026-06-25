@@ -1,4 +1,4 @@
-# None
+# Streets of Rogue
 
 ## Latest
 - <a href="https://github.com/Jmarcs27/StreetsOfRogueArchipelago/releases/download/v0.0.2/SoRWorld.apworld">Latest Version (0.0.2)</a>

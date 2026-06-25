@@ -16,7 +16,7 @@
   - Alternatively, if you are on Windows, you can double-click the APWorld to install it automatically. 
   - Additionally, you may not see the .apworld extension on the `sims4.apworld` file on certain operating systems. Windows is usually the primary culprit for this, so the double click method is more friendly to people who are a bit less tech-savvy. However, there are guides online that show you how to enable file extensions on Windows, that you can find through a cursory Google search. 
 - Follow the tutorial on [how to generate a game](https://archipelago.gg/tutorial/Archipelago/setup/en) from Archipelago's website.
-- Make sure you download both the `.ts4script` and `.package` files from the [Sims 4 Community Library](https://github.com/ColonolNutty/Sims4CommunityLibrary/releases/latest) and the [Sims 4 Archipelago Mod](https://github.com/Simsipelago/Archipelago/releases/latest).
+- Make sure you download both the `.ts4script` and `.package` files from the [Sims 4 Community Library](https://github.com/DeviantGameMods/Sims4CommunityLibrary/releases/latest) and the [Sims 4 Archipelago Mod](https://github.com/Simsipelago/Sims4ArchipelagoMod/releases/latest).
 - You will also need to download the [Lot 51 Core Library](https://lot51.cc/mods/core-library). 
 - Install all the downloaded mods to your Mods folder, which is usually located in `Documents/Electronic Arts/The Sims 4/Mods`.
 
@@ -24,6 +24,8 @@
 - By default, this mod only uses skills from the base game as checks and locations. You can optionally enable your packs in the YAML file if you would like to have them included in the randomization. Packs are unlikely to cause problems with the mod, however you can disable them optionally **NOT USING THE IN GAME PACK SELECTOR**.
   * If you don't know how disable packs without using the in game pack selector, you can use this [tutorial](https://jamesturner.yt/disablepacks) by James Turner.
 - Open the Archipelago Launcher and run the client. It should be called `The Sims 4 Client`. Upon the first time opening the client, it will prompt you to select your Mods folder. <strong>ONLY SELECT THE MODS FOLDER LOCATED AT</strong> <code>(your sims folder, typically called The Sims 4)/Mods</code>.
+  * If you have to manually set the path make sure you don't include quotes in the path.
+  * Example (Windows): <code>/set_path C:/Users/User/Documents/Electronic Arts/The Sims 4/Mods</code>
 - Once you have selected the Mods folder if you've been prompted for it, follow the next steps before connecting.
 - Launch your copy of The Sims 4, and ensure you have Script Mods enabled. The mod will not work correctly if Script Mods are not enabled.
   * You can enable Script Mods by going to `Game Options -> Other -> Script Mods Allowed`.

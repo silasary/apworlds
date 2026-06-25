@@ -1,6 +1,8 @@
-# None
+# Valheim
 
-
+Valheim world integration for Archipelago.
+Regions and locations are created in `create_regions` (including a call to `create_locations`).
+Items are created in `create_items`.
 
 
 ## Downloads

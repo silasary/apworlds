@@ -1,6 +1,8 @@
-# None
+# Dragon Ball Z Budokai Tenkaichi 2
 
-
+Dragon Ball Z: Budokai Tenkaichi 2 — fight through 200 Dragon Adventure
+missions across 24 scenarios, unlock scenarios and 129 characters via
+fusions and battle conditions, in a multiworld randomizer.
 
 
 ## Downloads
