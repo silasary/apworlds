@@ -1,24 +1,24 @@
-# Setup Guide for Ratchet & Clank Archipelago
+# Setup Guide for Ratchet and Clank Archipelago
 
-This guide is meant to help you get up and running with Ratchet & Clank in your Archipelago run.
+This guide is meant to help you get up and running with Ratchet and Clank in your Archipelago run.
 
 ## Requirements
 
-The following are required in order to play Ratchet & Clank in Archipelago
+The following are required in order to play Ratchet and Clank in Archipelago
 
 - Installed [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) v0.5.0 or higher.\
    **Make sure to install the Generator if you intend to generate multiworlds.**
-- The latest version of the [Ratchet & Clank apworld](https://github.com/Panda291/Archipelago/releases).
+- The latest version of the [Ratchet and Clank apworld](https://github.com/Panda291/Archipelago/releases).
 - A device to play on:
   - [RPCS3 Emulator](https://rpcs3.net/download).
   - A Homebrew enabled PS3 (easiest is PS3 HEN).
-- A Ratchet & Clank PAL ISO (`NPEA00385`)
+- A Ratchet and Clank PAL ISO (`NPEA00385`)
 - The latest version of the [Ratchet & Clank Multiplayer Client](https://github.com/bordplate/rac1-multiplayer/releases).
 - (optional) The latest version of the [Ratchet & Clank Multiplayer Server](https://github.com/bordplate/Lawrence/releases).
 
 ## AP World Installation
 
-1. Unzip the downloaded Ratchet & Clank apworld zip file
+1. Unzip the downloaded Ratchet and Clank apworld zip file
 2. Double-click the `rac1.apworld` to install it to your local Archipelago instance
 
 ## RPCS3 Settings
@@ -27,14 +27,14 @@ The following are required in order to play Ratchet & Clank in Archipelago
 
 ## Setting Up a YAML
 
-All players playing Ratchet & Clank must provide the room host with a YAML file containing the settings for their world.
-A sample YAML file for Ratchet & Clank is supplied in the Ratchet & Clank apworld download. Refer to the comments in that file for details about what each setting does.
+All players playing Ratchet and Clank must provide the room host with a YAML file containing the settings for their world.
+A sample YAML file for Ratchet and Clank is supplied in the Ratchet and Clank apworld download. Refer to the comments in that file for details about what each setting does.
 
 Once complete, provide the room host with your YAML file.
 
 ## Generating a Multiworld
 
-If you're generating a multiworld game that includes Ratchet & Clank, you'll need to run it locally since the online
+If you're generating a multiworld game that includes Ratchet and Clank, you'll need to run it locally since the online
 generator does not yet support it. Follow these steps to generate a multiworld:
 
 1. Gather all player's YAMLs. Place these YAMLs into the `Players` folder of your Archipelago installation. If the
@@ -74,9 +74,9 @@ A short TL;DR:
 
 ## Connection Troubleshooting
 
-- Use the latest Ratchet & Clank Archipelago release
+- Use the latest Ratchet and Clank Archipelago release
 
-  - Ratchet & Clank Archipelago: [Releases](https://github.com/Panda291/Archipelago/releases)
+  - Ratchet and Clank Archipelago: [Releases](https://github.com/Panda291/Archipelago/releases)
 
 - Use the latest RPCS3
 
@@ -84,7 +84,7 @@ A short TL;DR:
 
 - Use the Correct Version of the Game
 
-  - Ensure your ISO of Ratchet & Clank is the supported version:
+  - Ensure your ISO of Ratchet and Clank is the supported version:
     - Platform: `PlayStation 3`
     - Serial: `NPEA00385`
 
@@ -92,4 +92,4 @@ A short TL;DR:
 - Enable Networking in RPCS3
   - In RPCS3, Under Configuration -> System -> Network (in the top bar) -> Network Status to 'Connected'
 
-- For any problems, do not hesitate to check out the [Official Ratchet & Clank Multiplayer website](Configuration -> System -> Network (in the top bar) -> Network Status to 'Connected').
+- For any problems, do not hesitate to check out the [Official Ratchet & Clank Multiplayer website](https://boltcrate.space).

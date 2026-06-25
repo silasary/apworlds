@@ -256,6 +256,22 @@
       "title": "1.1.0-rc3",
       "version_simple": "1.1.0",
       "world_version": "1.1.0rc3"
+    },
+    "1.1.0-rc4": {
+      "created_at": "2026-06-25T15:06:33Z",
+      "description": "## Librarian-AP v1.1.0-rc4\r\n\r\nFourth release candidate for 1.1.0. **Client-side crash hotfix** \u2014 drop-in install, replace your `Scripts/`\r\nfolder. **Your apworld and existing seeds are unchanged \u2014 no need to regenerate or reconnect a new seed.**\r\n\r\n### New in rc4 \u2014 the rc3 crash fix\r\n- **The intermittent native crash should be fixed (for real this time).** The 5 rc3 crash reports turned out to be\r\n  a *different* bug than the render race rc3's pump fixed: a **cross-thread Lua-state race**. UE4SS runs the mod's\r\n  Lua on a background thread, but the game's own hook callbacks \u2014 and the ward pump \u2014 run Lua on the *game* thread;\r\n  when both touched the same Lua tables at once (e.g. right as items/series rolled in), the Lua heap corrupted and\r\n  the game aborted. rc4 makes the game-thread side only ever read immutable snapshots, so it can no longer collide\r\n  with the background thread. **This is the fix I need you to validate** \u2014 play through item bursts, row/series\r\n  completions, and general shelf-walking, and tell me if it stays stable.\r\n\r\n### Install\r\n- Overwrite your existing bundle as usual (or just replace\r\n  `\u2026/Librarian/Binaries/Win64/Mods/Librarian-AP/Scripts/`). Keep your existing apworld and YAML. **No seed regen.**\r\n- Confirm the title screen shows **`v1.1.0-rc4`**.\r\n\r\n### Two intentional behavior changes (NOT bugs)\r\n- Completion / section / floor / level checks now send within **\u22643 s** of the event (they ride the existing 3 s\r\n  sync loop) instead of instantly. Items still arrive \u2014 just a hair later.\r\n- The section-sign glow refreshes within **\u22645 s** after a Continue instead of immediately.\r\n\r\n### Known issues (unchanged from rc3)\r\n- **\"Invisible when held\" book (rare, random).** Workaround: throw it out of bounds (it returns visible), or reload.\r\n- **Return-to-menu freeze (rare).** A heavy ward pass right before going to the menu can still freeze the\r\n  Menu\u2192Continue path. Separate follow-up.\r\n\r\n### If you crash \u2014 PLEASE send logs\r\nSend the crash-report folder, especially:\r\n  - `Mods/Librarian-AP/crash_trace.log`   \u2014 the breadcrumb ledger (its tail names the last mod op)\r\n  - `\u2026/Binaries/Win64/UE4SS.log`           \u2014 the last ~200 lines (look for a Lua `next`/`compare` traceback or `abort`)\r\n  - one line on what you were doing\r\nPlease confirm the title screen / trace header says **`v1.1.0-rc4`** first \u2014 older builds don't help.",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc4/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "65d90b1ddbbb8f189976cfd638c5bdb4a33e777c88a8955fbc773433bff6ae30",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-rc4",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 51075,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-rc4",
+      "title": "1.1.0-rc4",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0rc4"
     }
   }
 }

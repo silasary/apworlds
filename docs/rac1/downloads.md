@@ -1,9 +1,12 @@
 # Ratchet &amp; Clank
 
 ## Latest
-- <a href="https://github.com/Panda291/Archipelago/releases/download/v0.1.3/rac1.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/Panda291/Archipelago/releases/download/v0.2.1b/rac1.apworld">Latest Version (0.2.1b0)</a>
 
 ## All Versions
+
+#### v0.2.1b0
+- <a href="https://github.com/Panda291/Archipelago/releases/download/v0.2.1b/rac1.apworld">https://github.com/Panda291/Archipelago/releases/download/v0.2.1b/rac1.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/Panda291/Archipelago/releases/download/v0.1.3/rac1.apworld">https://github.com/Panda291/Archipelago/releases/download/v0.1.3/rac1.apworld</a>

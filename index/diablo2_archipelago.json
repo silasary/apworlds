@@ -196,6 +196,21 @@
       "version_simple": "2.3.0",
       "world_version": "2.3.0"
     },
+    "Stable-2.4.0": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.4.0\n\nAnother bug-fix release based on tester feedback. Thanks for the reports!\n\n## Fixes\n\n- **Nightmare and Hell quest checks now register correctly.** On a seed set to clear\n  Nightmare or Hell, story, hunt and zone-clear quests were giving out no checks, and the\n  in-game tracker showed the *Normal* difficulty's completion data while you were standing in\n  a higher difficulty. The mod wasn't reading which difficulty you were actually in, so every\n  quest check was being scored against Normal. It now follows your live difficulty: Nightmare\n  and Hell checks fire, and the tracker shows the right data. A character that's already\n  mid-run on Nightmare/Hell will catch up on the next quest tick \u2014 the checks you'd earned but\n  weren't sent will arrive.\n\n- **Save & quit no longer scrambles the stash tabs or the F1 overlay.** Logging out and back\n  in could leave the stash tabs jumbled (showing the wrong AP/Shared set) or the F1 menu\n  graphics glitched, and it only \"fixed itself\" after a full relaunch. The cleanup that runs\n  when you leave a game wasn't always completing \u2014 two different exit detectors were racing and\n  one could cut the other off, leaking the previous character's state into the next load. There\n  is now a single, complete cleanup, so the stash and overlay come back correctly every time\n  without a restart.\n\n## Notes\n\n- Existing Archipelago seeds remain compatible.\n- Reminder: there are two separate stashes by design \u2014 your private AP stash during a run, and\n  the Shared stash. The Personal (P) tab is always your own. With this release, which set is\n  shown stays consistent after a save & quit.\n- Heads-up for the curious: item level requirements still appear after you identify an item \u2014\n  that's intentional. Removing them would let any drop roll wildly over- or under-powered for\n  your level and break the item progression, so it stays as-is.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.4.0/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6483740c53e547910680d8b940b67e33d4c301f01a46cac57bd22ff15b4b4d2f",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.4.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 57900,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.4.0",
+      "title": "Stable 2.4.0",
+      "version_simple": "2.4.0",
+      "world_version": "2.4.0"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
