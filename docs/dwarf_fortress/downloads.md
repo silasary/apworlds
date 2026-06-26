@@ -1,9 +1,12 @@
 # Dwarf Fortress
 
 ## Latest
-- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.1.2/dwarf_fortress.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.2.0/dwarf_fortress.apworld">Latest Version (1.2.0)</a>
 
 ## All Versions
+
+#### v1.2.0
+- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.2.0/dwarf_fortress.apworld">https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.2.0/dwarf_fortress.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.1.2/dwarf_fortress.apworld">https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.1.2/dwarf_fortress.apworld</a>

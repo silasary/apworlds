@@ -172,6 +172,20 @@
       "title": "Notifications, Options and Mods | v1.2.0",
       "version_simple": "1.2.0",
       "world_version": "1.2.0"
+    },
+    "release/v1.3.0": {
+      "created_at": "2026-06-25T23:05:10Z",
+      "description": "In this release, the progressive unlocks system is introduced: any chain of upgraded buildings will now generate as progressive unlocks (unless turned off). This means less getting stuck with a large warehouse without the medium one - warehouses will always be received in order. This should greatly help with a smoother game experience, but also increases the need for a poptracker. Tasks for later...\r\n\r\nAdditionally, some option presets have been added and a slew of bugs were fixed.\r\n\r\nLast but not least, the loading time of the mod was reduced my a factor of ~20x! On my system it went from ~34s for a max settings randomizer to a good bit under 2s.\r\n\r\n### Changes\r\n* Added progressive unlocks and an option to turn them off (on per default)\r\n  * Check the items page for a full list!\r\n  * Refactored some internal systems along the way, dropping ~500 auto-generated scripts from the mod\r\n* Added an option to exclude all special recipe checks (meaning those with more advanced unlock conditions)\r\n* Improved mod loading time by a factor of around ~20x\r\n* Added option presets\r\n* Added a trigger to locally release all items even without AP server\r\n* Fixed locations requiring buildings in multiple regions not checking requirements for the secondary regions\r\n* Fixed generation error when enabling Land of Lions without The Passage\r\n* Fixed Hacienda blank farm and blank brewery always being unlocked\r\n* Fixed Hacienda store room not counting as providing enough storage for the Grand Stadium\r\n* Fixed strange behaviour when starting a second new game without closing the game first\r\n* Improved documentation\r\n\r\nThis release **is not compatible** with older multiworlds.\r\n\r\n### [Game Page](<https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/en_Anno%201800.md>) | [Setup](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/setup_en.md) | [Items](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/items_en.md) | [Locations](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/locations_en.md) | [Roadmap](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/roadmap_en.md)\r\n\r\nFind the apworld and a several template yamls below.",
+      "download_url": "https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.0/a1800.apworld",
+      "has_manifest": true,
+      "hash_sha256": "872f72de19a5687d94f872fd8ec6c00a725f3fc3f9b44181d19d5e867f2392ab",
+      "html_url": "https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.0",
+      "size": 1401679,
+      "source_url": "https://api.github.com/repos/Dark-Listener/ArchipelagoA1800",
+      "tag": "release/v1.3.0",
+      "title": "Progressive Unlocks, Presets and Technical Improvements",
+      "version_simple": "1.3.0",
+      "world_version": "1.3.0"
     }
   }
 }

@@ -91,9 +91,15 @@ The host of the Archipelago multiworld should supply you with a zip file name `A
 seed number, `%2` is the slot number, `%3` is the slot name and `%4` is the Archipelago version this mod was created by.
 
 Before installing mods, Anno 1800 must have been started and closed at least once. Then, you can create the following
-folder: `...\Ubisoft Game Launcher\games\Anno 1800\mods` (exact location might be different if you changed the folder
-Ubisoft Connect installs games to). After another game start, there should be a popup about mod use, which must be
-accepted. Now the game can be closed again.
+folder (depending on your launcher):
+* `...\Ubisoft Game Launcher\games\Anno 1800\mods` (Ubisoft Connect and Epic)
+* `...\Steam\steamapps\common\Anno 1800\mods` (Steam)
+
+The exact location might be different if you changed the folder your launcher installs games to, but there should be a
+`Bin` and a `maindata` folder next to your `mods` folder - that means you're in the right spot.
+
+After another game start, there should be a popup about mod use, which must be accepted. Now the game can be closed
+again. If there was no popup, it will appear after you first install a mod.
 
 To install the mod, extract the zip file and move or copy the resulting folder into the folder you created above. The
 resulting folder structure should look like `mods\AP-%1-P%2-%3-%4\modinfo.json`.
@@ -224,4 +230,14 @@ path correctly.
 
 ## Troubleshooting
 
-No known frequent issues yet.
+### Connectivity Issues
+
+If you have issues connecting the Archpelago Client to the game, especially on Windows, make sure to do everything in
+the right order:
+* Close the Archipelago Client and Launcher if they are still open.
+* Open the game and load a save file. Explicitly reload the savefile if it is already open from previous attempts.
+  * Leave the game unpaused until a connection is established.
+  * Waiting on a finihsed loading screen is not enough, the actual game must be running.
+* Open the Archipelago Launcher and start the Anno 1800 Client.
+  * The Client should now connect and tell you that it got "world information" after a short moment.
+* Connect the Client to the Archipelago Server by entering the Server's IP and port.

@@ -49,7 +49,37 @@ Then **enable the mod** in DF's in-game mod manager before generating or loading
 > ```
 > Paste that path into Explorer's address bar to open it directly.
 
-### 3. Generate Your Archipelago Session
+### 3. Install the World Gen Preset
+
+Dwarfipelago works best with a specific world generation profile. Launch the **Dwarf Fortress Client** from the Archipelago launcher and run the following command **once, before generating a new world**, to add the preset to your world gen preset list:
+
+```
+/dfinstall
+```
+
+> **Back up your world_gen.txt first** if you have custom presets you care about:
+> ```
+> %AppData%\Roaming\Bay 12 Games\Dwarf Fortress\prefs\world_gen.txt
+> ```
+> The command appends the Dwarfipelago preset without touching your existing entries, but a backup is good practice.
+
+After running the command, restart DF and the **DwarfipelagoWorld** preset will appear in the world generation preset list. Select it when creating a new world.
+
+> **If `/dfinstall` can't find your `world_gen.txt`** (e.g. a non-Steam install), set `game_path` in `host.yaml` to your `Dwarf Fortress.exe`, or copy `prefs/world_gen.txt` from this repo into your DF `prefs/` folder by hand.
+
+#### Verifying your world
+
+After generating a world (and before embarking), run this command in the DFHack console to confirm the world meets Archipelago requirements:
+
+```
+dwarfipelago test worldcheck
+```
+
+This checks world size, history length, the presence of Dwarf/Human/Elf/Goblin civilizations, and active volcano count. If any check fails, consider rerolling — a world missing a key civilization will make certain AP goals impossible.
+
+---
+
+### 4. Generate Your Archipelago Session
 
 Create a `DwarfFortress.yaml` options file and generate your session through the Archipelago launcher or CLI:
 
@@ -77,7 +107,7 @@ Dwarf Fortress:
   #   - Cloth
 ```
 
-### 4. Launch and Connect
+### 5. Launch and Connect
 
 1. In the Archipelago launcher, click **Dwarf Fortress** to launch the game
 2. Load or embark on a fortress

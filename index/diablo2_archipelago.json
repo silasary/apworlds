@@ -211,6 +211,21 @@
       "version_simple": "2.4.0",
       "world_version": "2.4.0"
     },
+    "Stable-2.5.0": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.5.0\n\nThe stash redesign release, plus a batch of bug fixes from tester reports. Thanks for the testing!\n\n## New: one chest\n\n- **The stash is now a single chest** \u2014 no more separate \"AP\" and \"Shared\" sets that swapped around and showed\n  whichever one they felt like. There is one continuous set of tabs (Personal \"P\", chest tabs 2\u201310, and the\n  CON/RUN/GEM stackable tabs), shown the same way every time, in AP and standalone alike.\n\n- **Stash isolation toggle.** New option **\"Isolate stash to this seed\"** (default ON):\n  - **On** \u2014 the chest is isolated to the seed. Only characters in the same seed share it, so you can't carry\n    unrelated items in from other games.\n  - **Off** \u2014 the chest is global, shared with all your other \"global\" characters across every game.\n  - Set it in the standalone randomize setup (under Goal & Mode), or in your YAML for Archipelago games\n    (option \"Isolate Stash To Seed\", under Quality of Life).\n  - Your existing stash carries over automatically \u2014 nothing is lost.\n\n## New: shared progression across characters in a seed\n\n- Make a **second character in the same seed** and it catches up to the seed's level automatically (and gets the\n  matching stat and skill points), so you're not starting from level 1 when the seed is already deep in\n  Nightmare or Hell. A character is only ever brought *up*, never down.\n- If you'd rather keep characters fully separate, turn it off with `[settings] SeedSharedProgression=0` in\n  `d2arch.ini`.\n\n## Fixes\n\n- **Stackable-tab item duplication fixed.** Putting a tome (or an arrow/bolt quiver) into the Consumables tab and\n  pulling it back out could print extra copies. You now get back exactly what you put in.\n- **F1 skill book no longer corrupts when you switch characters** in the same seed. (It only happened sometimes;\n  the cause was a stale graphics handle when the game reused a character slot.)\n- **Replacing a skill with a Reset Point now refunds the old skill's points** back to your pool to re-spend\n  freely, instead of carrying them onto the new skill. (Takes effect after you log out and back in.)\n- **New \"Reset Skill Points\" button** in the F1 skill book. Costs 3 Reset Points and refunds ALL your invested\n  skill points (your chosen skills stay \u2014 only their points reset). Press it, then log out and back in within\n  one minute to confirm; if you don't, nothing happens and no Reset Points are spent.\n\n## Notes\n\n- Existing Archipelago seeds and characters remain compatible.\n- The earlier Nightmare/Hell quest-check fix and the save-and-quit stash/overlay fix (Stable 2.4.0) are included.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.5.0/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c4aa6ec4d3f457fbbc6350a49f666d278be328a14e15c637664cb99449e6cd9c",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.5.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 58173,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.5.0",
+      "title": "Stable 2.5.0",
+      "version_simple": "2.5.0",
+      "world_version": "2.5.0"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",

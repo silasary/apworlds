@@ -2,125 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-25T18:53:54.779776+00:00</updated>
+  <updated>2026-06-26T00:39:22.798175+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.2</id>
-    <title>Zork Grand Inquisitor v2.1.2</title>
-    <updated>2026-06-20T02:27:50+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is an improvement release that also includes tweaks and fixes.&#13;
-&#13;
-**This release IS compatible with games generated on the previous version**&#13;
-&#13;
-- **Improvement:** Checked locations are now seeded from the AP server upon connection. Helps with granting missable locations upon further reconnections&#13;
-- **Improvement:** After sliding the Zork Rocks in the locker and backing out, the explosion will happen immediately! No need to wait for the full countdown&#13;
-- **Tweak:** Mead Light is now a permanent item to avoid the possibility of a rare entrance randomizer softlock&#13;
-- **Tweak:** Mead Light? and ZIMDOR is Undamaged are no longer considered missable&#13;
-- **Tweak:** Spell Check Complete is now considered missable and granted when going back to the scroll box after imbuing BEBURTT&#13;
-- **Fix:** Addressed an issue where missable locations with multiple location requirements would be granted right away after meeting 1 requirement</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.2.0</id>
-    <title>Zork Grand Inquisitor v2.2.0</title>
-    <updated>2026-06-20T02:50:48+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is an improvement release.&#13;
-&#13;
-**This release IS compatible with games generated on the previous version**&#13;
-&#13;
-- **Improvement:** Switched supported ScummVM version from 2.7.1 (March 2023) to 2026.2.0 (March 2026)&#13;
-  - This up-to-date ScummVM version feature numerous improvements for ZVision (the Zork Grand Inquisitor game engine):&#13;
-    - Completely overhauled rendering + proper widescreen support&#13;
-    - Improvements to quality of 3D directional audio &amp; nonlinear volume scaling&#13;
-    - Restored functionality of some in-game options controls&#13;
-    - Game script fixes&#13;
-    &#13;
-**IMPORTANT**&#13;
-&#13;
-A vanilla game script refers to a non-existent file regardless of the game version you own. That file will need to be created to avoid ScummVM crashing when operating the totemizer. Locate `me00h64p.raw` (for GOG, it's in `zassetse\eng_aud`; for Steam, it's in `ZASSETS2\MONAST2`). Make a copy and rename it to `me00h62p.raw`. The file has always been missing, but later ScummVM versions started crashing instead of ignoring the exception</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.3</id>
-    <title>Cookie Clicker v0.8.3</title>
-    <updated>2026-06-20T04:10:01+00:00</updated>
-    <author>
-      <name>Charlignon</name>
-    </author>
-    <content>This release brings stability improvements to logic&#13;
-:information_source: This client IS retrocompatible with older version 0.8.x version (not alpha/beta), so you can update during an ongoing game.&#13;
-:warning: This apworld is NOT retromcompatible with previous clients. To use it, update your client to 0.8.3.&#13;
-&#13;
-## New yaml option&#13;
-* Plentiful Buildings: Additional Building Copies to the pull&#13;
-&#13;
-## Bug fixes&#13;
-* Fix Hardcore achievements being impossible. It now requires to bake 1Q cookies without buying Cookie Upgrades. It's now in sphere 2&#13;
-* Fix some prestige items unlocking themselves after ascending&#13;
-* Fix eggs achievements not checking properly&#13;
-* Improve logic for more sphere stability. It should hopefully fix trackers telling you unreachable checks being "in logic"&#13;
-&#13;
-## Acknowledgements&#13;
-* @SoraUltimateProgrammer made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/1&#13;
-* @wjg999 made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/4&#13;
-* @TeamLila made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/2&#13;
-&#13;
-Thanks a lot for helping grow this apworld !!&#13;
-&#13;
-## Misc.&#13;
-* This github now has a [discussion space](https://github.com/Charlignon/AP_CookieClicker/discussions) ! You can send ideas there and express opinions. This is a place that comes in addition to the AP discord server, in order to keep track of ideas </content>
-    <link href="https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.4.1</id>
-    <title>Parkitect v1.4.1</title>
-    <updated>2026-06-20T11:55:30+00:00</updated>
-    <author>
-      <name>CrusherRL</name>
-    </author>
-    <content>Installation can be found [here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)&#13;
-&#13;
-Enjoy!&#13;
-&#13;
-NOTE:&#13;
-This release is not backwards compatible with seeds generated **before** 1.2.1&#13;
-This release may not fully compatible with seeds generated **before** 1.4.0&#13;
-&#13;
-# Parkitect Archipelago — Release Notes&#13;
-## QOL&#13;
-- TrapLink can now be changed with commands via the Archipelago Window Input Field (Case &amp; whitespace insensitive !)&#13;
-  - !!toggleTrapLink&#13;
-  - !!joinTrapLink&#13;
-  - !!leaveTrapLink</content>
-    <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.4</id>
-    <title>Cookie Clicker v0.8.4</title>
-    <updated>2026-06-20T16:07:50+00:00</updated>
-    <author>
-      <name>Charlignon</name>
-    </author>
-    <content>This release is a hotfix and only includes updates of the client.&#13;
-  :information_source: This release is retrocompatible with 0.8.3. See [0.8.3](https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.3) for more details on retrocompatibility.&#13;
-&#13;
-## Fix&#13;
-3rd occurrence of Progressive temple would not correctly unlock the upgrade.&#13;
-&#13;
-## Notes&#13;
-Just updating your client is fine and will fix the issue. You will received the upgrade upon connection.&#13;
-Apworld is identical to 0.8.3</content>
-    <link href="https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.4"/>
-  </entry>
   <entry>
     <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.33</id>
     <title>Pokemon Black and White v0.3.33</title>
@@ -1238,5 +1124,191 @@ This release should fix some stability issues, but there are still some glaring 
 - Gold weapons now actually put respective checks in logic if progressive weapons are set to normal (like the gold bomb glove will make Novalis Cave gold bolt shown in logic)&#13;
 - Extra weapons that made sense were added to the ranged weapons and explosive weapons logic requirements</content>
     <link href="https://github.com/Panda291/Archipelago/releases/tag/v0.2.1b"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-86</id>
+    <title>Borderlands 2 v86</title>
+    <updated>2026-06-25T21:03:16+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.3):&#13;
+- "alternates" for logic&#13;
+- other changes to logic: locations are removed if any required region is excluded, levels detected differently, gear licenses not required if the setting is off&#13;
+- integrate always on level&#13;
+- The Pre-Sequel initial integration&#13;
+- Tracker tab in Client if UT is intalled </content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-86"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.5</id>
+    <title>Dead Cells v0.1.5</title>
+    <updated>2026-06-25T22:14:06+00:00</updated>
+    <author>
+      <name>Max_lamenace572</name>
+    </author>
+    <author>
+      <name>OnlyLeafeon</name>
+    </author>
+    <author>
+      <name>Rayze</name>
+    </author>
+    <content>New Quality of Life:&#13;
+- Improved UI responsiveness. Tested on FHD (1920x1080) and 4K (3840x2160)&#13;
+- Added controller support for the Archipelago menu&#13;
+&#13;
+Launcher Changes:&#13;
+- New button to download the latest version of DCCM&#13;
+- New option to help with GOG version support&#13;
+- Improved .NET 10 installation&#13;
+&#13;
+Bug Fixes:&#13;
+- Maria's Cat (NPC) still spawning after sending Maria's Cat check&#13;
+- Boss Rush pop-up appearing at each run start&#13;
+- Compatibility issues for the new major version of DCCM&#13;
+&#13;
+Apworld Changes by Rayze:&#13;
+- Fixed Parry Shield missing Ram and Spider Rune rules&#13;
+- Added rule for Acceptance route&#13;
+- Abyssal Trident missing a Ram Rune rule&#13;
+&#13;
+Compatible with apworld 0.1.4 and newer</content>
+    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.0</id>
+    <title>Anno 1800 v1.3.0</title>
+    <updated>2026-06-25T23:05:10+00:00</updated>
+    <author>
+      <name>Dark-Listener</name>
+    </author>
+    <content>In this release, the progressive unlocks system is introduced: any chain of upgraded buildings will now generate as progressive unlocks (unless turned off). This means less getting stuck with a large warehouse without the medium one - warehouses will always be received in order. This should greatly help with a smoother game experience, but also increases the need for a poptracker. Tasks for later...&#13;
+&#13;
+Additionally, some option presets have been added and a slew of bugs were fixed.&#13;
+&#13;
+Last but not least, the loading time of the mod was reduced my a factor of ~20x! On my system it went from ~34s for a max settings randomizer to a good bit under 2s.&#13;
+&#13;
+### Changes&#13;
+* Added progressive unlocks and an option to turn them off (on per default)&#13;
+  * Check the items page for a full list!&#13;
+  * Refactored some internal systems along the way, dropping ~500 auto-generated scripts from the mod&#13;
+* Added an option to exclude all special recipe checks (meaning those with more advanced unlock conditions)&#13;
+* Improved mod loading time by a factor of around ~20x&#13;
+* Added option presets&#13;
+* Added a trigger to locally release all items even without AP server&#13;
+* Fixed locations requiring buildings in multiple regions not checking requirements for the secondary regions&#13;
+* Fixed generation error when enabling Land of Lions without The Passage&#13;
+* Fixed Hacienda blank farm and blank brewery always being unlocked&#13;
+* Fixed Hacienda store room not counting as providing enough storage for the Grand Stadium&#13;
+* Fixed strange behaviour when starting a second new game without closing the game first&#13;
+* Improved documentation&#13;
+&#13;
+This release **is not compatible** with older multiworlds.&#13;
+&#13;
+### [Game Page](&lt;https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/en_Anno%201800.md&gt;) | [Setup](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/setup_en.md) | [Items](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/items_en.md) | [Locations](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/locations_en.md) | [Roadmap](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/roadmap_en.md)&#13;
+&#13;
+Find the apworld and a several template yamls below.</content>
+    <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.2.0</id>
+    <title>Dwarf Fortress v1.2.0</title>
+    <updated>2026-06-25T23:39:45+00:00</updated>
+    <author>
+      <name>Dwarfipelago Contributors</name>
+    </author>
+    <content>## New Features&#13;
+&#13;
+### New Dwarfipelago logo&#13;
+A brand new logo designed by jjjj12212 has been introduced&#13;
+&#13;
+- The [AP] button in the top left has been moved to the bottom of the screen, using this logo&#13;
+- Logo has also been added to the APworld client icon&#13;
+&#13;
+### Merchant's Shop&#13;
+A full in-game shop system powered by minted coins. Spend coins to buy AP items directly inside your fortress.&#13;
+&#13;
+- Shop slots are gated by **Merchant's Coffers** - 10 slots unlock per coffer received (up to 50 slots across 5 coffers)&#13;
+- The shop requires a **Merchant Shrine** to be active - a temple zone with a designated altar, coffer box, and bars&#13;
+- Players can choose their shrine bar material in the Shop tab: **Gold (5 bars)**, **Silver (10 bars)**, or **Coke (20 bars)**&#13;
+- Shop slots display item name, destination player, price, and buy status (BUY / SOLD / PENDING / LOCKED / need coins)&#13;
+- The Shop tab is always visible in the panel so shrine status is shown before the AP client connects&#13;
+- Shop is gated in AP logic behind the ability to mint coins (metal-smelting or Coins Permit depending on options)&#13;
+&#13;
+### Slay Megabeast Goal&#13;
+A full war campaign added as a playable goal. Build up military readiness and summon a Megabeast to fight.&#13;
+&#13;
+- Player summons the beast from the **War tab** in the panel - it is not auto-spawned&#13;
+- **Wave scheduler**: siege waves arrive every 2-4 months leading up to the climax&#13;
+- **Warband spawner**: enemy warbands spawn with curated gear appropriate to difficulty&#13;
+- **Breach climax**: the megabeast arrives as a destructive and foreboding foe&#13;
+- **Ramping rewards**: end game gear, bonus rewards, and a special commander for any and all threats&#13;
+- **War Effort section** added to the panel with readiness status&#13;
+- Megabeast goal now flagged as **Hard** in options; Population Boom flagged as **Unstable**&#13;
+- **Legendary Wealth** is now the default goal&#13;
+&#13;
+### Skillsanity&#13;
+Dwarves leveling their skills are AP location checks.&#13;
+&#13;
+- Complete runtime detection and check firing for all skill advancement&#13;
+- Configurable skill groups (Easy / Medium / All / Choose), max level cap, and incoming-dwarf level mechanic&#13;
+- Skills tab added to the panel showing your progress toward each skill level threshold&#13;
+- **Crafting Permits** now validates against Skillsanity or Craftsanity location counts&#13;
+&#13;
+### Progressive Mining Depth&#13;
+Mining depth gating replaced with **cavern-progress checks**.&#13;
+&#13;
+- Delve-depth checks retired in favour of tracking cavern breaches (First Cavern → Second Cavern → Third Cavern → Magma Sea → The Circus)&#13;
+- Cavern checks chain in strict depth order in AP logic&#13;
+&#13;
+### DFHack Build Menu &amp; Workshop Overlays&#13;
+Two new overlays provide real-time visual feedback without leaving the game.&#13;
+&#13;
+- **Blueprint overlay**: the Build menu reds out any workshop or furnace you haven't received the blueprint for yet&#13;
+- **Permit overlay**: workshop and furnace task lists red out crafts locked behind a Crafting Permit you haven't received, showing a `[Requires X Permit]` note - matching DF's own locked-item style&#13;
+- Both overlays fire on Workshop, Furnace, and Work Orders screens&#13;
+&#13;
+---&#13;
+&#13;
+## Fixes&#13;
+&#13;
+### Production &amp; Check Counting&#13;
+- **First Gem Cut** now fires for cut glass (not only cut stone gems)&#13;
+- **Metal craft counts**, **First Trap Built**, and **First Mechanism Made** fixed&#13;
+- **Coke** now counted with the correct reaction names (`*_TO_COKE`)&#13;
+- **Traction benches** counted from their produced item (not job type)&#13;
+- **Clay/ceramic Kiln crafts** (bricks, jugs, pots, hives, statues) now counted correctly&#13;
+- **First Bed Made** gated on Carpenter's Workshop Blueprint&#13;
+- **Sold an Artifact** location now properly gated in AP logic&#13;
+- **Screw Press** and **Soap Maker's Workshop** blueprints now properly block construction — both were silently ungated because they moved to `df.workshop_type.Custom` in this DF version and were no longer in the hardcoded workshop enum&#13;
+&#13;
+### Megabeast / Military&#13;
+- Training Completed no longer fires on fortress load from dwarf embark skills&#13;
+- Barracks / Training checks gated on metal-making ability&#13;
+- Megabeast spawn guaranteed (whoops this was broken this whole time...)&#13;
+&#13;
+### Dwarf Names&#13;
+- Spawned dwarves now receive a proper **first name** drawn from the Dwarven language translation table, displayed without quotes&#13;
+- Spawned dwarves now display **Dwarfipelago** as their surname so AP-sent dwarves are identifiable at a glance&#13;
+&#13;
+### Logic / Rules&#13;
+- `Sold an Artifact` ungated rule fixed&#13;
+- Bone-based logic corrected&#13;
+- Ambusher skill requires crossbows and bolts in logic&#13;
+- Wrong variable in Skillsanity options corrected&#13;
+- RotGK (Remains of the Great King) maximum count fix&#13;
+&#13;
+### World Generation&#13;
+- World gen preset rewritten and moved to AP client `/dfinstall` command for cleaner install flow&#13;
+&#13;
+---</content>
+    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.2.0"/>
   </entry>
 </feed>

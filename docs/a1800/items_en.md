@@ -155,3 +155,166 @@ A few items are forced to appear early and always in Anno, so the player doesn't
 * OW: Framework Knitters
 * OW: Fire Station
 * OW: Worker Residence
+
+## Progressive Items
+
+If the option is enabled, several building upgrade chains are given out as progressive items. This means each instance
+of the progressive item unlocks the next building in the chain. These are:
+* Progressive OW: Trading Post
+  1. OW: Small Trading Post
+  2. OW: Medium Trading Post
+  3. OW: Large Trading Post
+  4. OW: Grand Trading Post
+* Progressive OW: Warehouse
+  1. OW: Small Warehouse
+  2. OW: Medium Warehouse
+  3. OW: Large Warehouse
+  4. OW: Grand Warehouse
+* Progressive OW: Fire Station (only with `New World Rising` DLC)
+  1. OW: Fire Station
+  2. OW: Fire Department
+* Progressive OW: Police Station (only with `New World Rising` DLC)
+  1. OW: Police Station
+  2. OW: Police Headquarters
+* Progressive OW: Hospital (only with `New World Rising` DLC)
+  1. OW: Hospital
+  2. OW: City Hospital
+* Progressive OW: Pier (only with `Land of Lions` DLC)
+  1. OW: Pier
+  2. OW: Advanced Pier
+* Progressive OW: Public Mooring (only with `Tourist Season` DLC)
+  1. OW: Public Mooring
+  2. OW: Tourist Mooring
+* Progressive OW: Oil Harbour
+  1. OW: Small Oil Harbour
+  2. OW: Medium Oil Harbour
+  3. OW: Large Oil Harbour
+  4. OW: Grand Oil Harbour (only with `Bright Harvest` DLC)
+* Progressive OW: Residence
+  1. OW: Farmer Residence
+  2. OW: Worker Residence
+  3. OW: Artisan Residence
+  4. OW: Engineer Residence
+  5. OW: Investor Residence
+* Progressive OW: Research Institute (only with `Land of Lions` DLC)
+  1. OW: Research Institute: Foundations
+  2. OW: Research Institute: Superstructure
+  3. OW: Research Institute
+* Progressive OW: The Iron Tower (only with `Tourist Season` DLC)
+  1. OW: The Iron Tower: Foundations
+  2. OW: The Iron Tower: Superstructure
+  3. OW: The Iron Tower
+* Progressive OW: Rigid Airship Hangar (only with `Empire of the Skies` DLC)
+  1. OW: Rigid Airship Hangar: Foundations
+  2. OW: Rigid Airship Hangar: Structure
+  3. OW: Rigid Airship Hangar: Roof
+  4. OW: Rigid Airship Hangar
+* Progressive OW: World's Fair
+  1. OW: World's Fair: Foundations
+  2. OW: World's Fair: Superstructure
+  3. OW: World's Fair: Glazing
+  4. OW: World's Fair: Infrastructure
+  5. OW: World's Fair
+* Progressive OW: Engineer Skyscraper (only with `The High Life` DLC)
+  1. OW: Engineer Skyscraper: Level 1
+  2. OW: Engineer Skyscraper: Level 2
+  3. OW: Engineer Skyscraper: Level 3
+* Progressive OW: Investor Skyscraper (only with `The High Life` DLC)
+  1. OW: Investor Skyscraper: Level 1
+  2. OW: Investor Skyscraper: Level 2
+  3. OW: Investor Skyscraper: Level 3
+  4. OW: Investor Skyscraper: Level 4
+  5. OW: Investor Skyscraper: Level 5
+* Progressive OW: Skyline Tower (only with `The High Life` DLC)
+  1. OW: Skyline Tower: Foundations
+  2. OW: Skyline Tower: Superstructure
+  3. OW: Skyline Tower: Glazing
+  4. OW: Skyline Tower
+* Progressive NW: Trading Post
+  1. NW: Small Trading Post
+  2. NW: Medium Trading Post
+  3. NW: Large Trading Post
+* Progressive NW: Warehouse
+  1. NW: Small Warehouse
+  2. NW: Medium Warehouse
+  3. NW: Large Warehouse
+* Progressive NW: Fire Station (only with `New World Rising` DLC)
+  1. NW: Fire Station
+  2. NW: Fire Department
+* Progressive NW: Police Station (only with `New World Rising` DLC)
+  1. NW: Police Station
+  2. NW: Police Headquarters
+* Progressive NW: Hospital (only with `New World Rising` DLC)
+  1. NW: Hospital
+  2. NW: City Hospital
+* Progressive NW: Pier (only with `Land of Lions` DLC)
+  1. NW: Pier
+  2. NW: Advanced Pier
+* Progressive NW: Oil Harbour
+  1. NW: Small Oil Harbour
+  2. NW: Medium Oil Harbour
+  3. NW: Large Oil Harbour
+  4. NW: Grand Oil Harbour (only with `Bright Harvest` DLC)
+* Progressive NW: Residence
+  1. NW: Jornalero Residence
+  2. NW: Obrero Residence
+  3. NW: Artista Residence (only with `New World Rising` DLC)
+* Progressive NW: Hacienda Quarters (only with `Seeds of Change` DLC)
+  1. NW: Hacienda Jornalero Quarters
+  2. NW: Hacienda Obrera Quarters
+  3. NW: Hacienda Artista Quarters (only with `New World Rising` DLC)
+* Progressive NW: Rigid Airship Hangar (only with `Empire of the Skies` DLC)
+  1. NW: Rigid Airship Hangar: Foundations
+  2. NW: Rigid Airship Hangar: Structure
+  3. NW: Rigid Airship Hangar: Roof
+  4. NW: Rigid Airship Hangar
+* Progressive NW: Dam (only with `New World Rising` DLC)
+  1. NW: Dam: Structure
+  2. NW: Dam: Engineering
+  3. NW: Dam
+* Progressive NW: Grand Stadium (only with `New World Rising` DLC)
+  1. NW: Grand Stadium: Foundations
+  2. NW: Grand Stadium: Superstructure
+  3. NW: Grand Stadium
+* Progressive AR: Trading Post (only with `The Passage` DLC)
+  1. AR: Small Trading Post
+  2. AR: Medium Trading Post
+  3. AR: Large Trading Post
+* Progressive AR: Sky Trading Post (only with `The Passage` DLC)
+  1. AR: Small Sky Trading Post
+  2. AR: Medium Sky Trading Post
+  3. AR: Large Sky Trading Post
+* Progressive AR: Warehouse (only with `The Passage` DLC)
+  1. AR: Small Warehouse
+  2. AR: Medium Warehouse
+  3. AR: Large Warehouse
+* Progressive AR: Pier (only with `The Passage` and `Land of Lions` DLCs)
+  1. AR: Pier
+  2. AR: Advanced Pier
+* Progressive AR: Residence (only with `The Passage` DLC)
+  1. AR: Explorer Shelter
+  2. AR: Technician Shelter
+* Progressive AR: Arctic Airship Hangar (only with `The Passage` DLC)
+  1. AR: Arctic Airship Hangar: Foundations
+  2. AR: Arctic Airship Hangar: Structure
+  3. AR: Arctic Airship Hangar: Roof
+  4. AR: Arctic Airship Hangar
+* Progressive EN: Trading Post (only with `Land of Lions` DLC)
+  1. EN: Small Trading Post
+  2. EN: Medium Trading Post
+  3. EN: Large Trading Post
+* Progressive EN: Warehouse (only with `Land of Lions` DLC)
+  1. EN: Small Warehouse
+  2. EN: Medium Warehouse
+  3. EN: Large Warehouse
+* Progressive EN: Pier (only with `Land of Lions` DLC)
+  1. EN: Pier
+  2. EN: Advanced Pier
+* Progressive EN: Oil Harbour (only with `Bright Harvest` and `Land of Lions` DLCs)
+  1. EN: Small Oil Harbour
+  2. EN: Medium Oil Harbour
+  3. EN: Large Oil Harbour
+  4. EN: Grand Oil Harbour
+* Progressive EN: Residence (only with `Land of Lions` DLC)
+  1. EN: Shepherd Residence
+  2. EN: Elder Residence

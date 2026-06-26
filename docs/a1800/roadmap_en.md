@@ -10,14 +10,14 @@ The following features are planned to be added at some point (in no specific ord
 * More options for victory conditions
 * More options in general!
 * Option to send hints for unlocks visible in chains
-  * Fix incorrect recipe description hints
-* Introduce progressive items for trading posts, warehouses, monument stages...
+  * Fix incorrect recipe description hints?
 
 ## Potential Features | Considerations
 
 The following features are being considered, but it's unclear whether they are relevant or technically feasible
 
 * Add option to turn off trade smoothening
+* Add option to require some goods for population unlocks with high amounts (2000+ tourists, 4000+ scholars, 2700/4000+ artistas, etc)
 * Remove need unlocks (or add them to the pool) - not sure if possible
   * Removed for basic needs, kept for others
 * Double-check road upgrades without unlock via upgrade button (confirmed) and model if needed (not right now)
@@ -25,9 +25,18 @@ The following features are being considered, but it's unclear whether they are r
   * Cosmetic DLC should probably be avoided due to issues with compatibility
 * Handle NPC shops and item pools
 * Improve spoiler logs
+* Improve notifications for progressive items?
 * If possible, try to not place items "later" than any chosen victory condition, e.g. don't require items at 600
 obreros if 1 was chosen as victory condition
 * Add traps (e.g. cause incidents)
 * Require Elders to be fully supplied before unlocking Scholars? Otherwise most of Enbesa can be skipped - see 128474
 * Instead of grouped triggers and unlockable assets, use feature unlocks?
 * Find a way to make Docklands DLC work meaningfully? Somehow all the unlocks would have to be redone
+
+Load time ~33s
+No removals <2s
+Breaks compatibility with existing games
+
+
+lady marmelade message on lemonade building - check unlock, fix
+electricity artista unhide at 1 artista
