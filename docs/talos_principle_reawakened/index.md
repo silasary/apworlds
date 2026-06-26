@@ -10,10 +10,12 @@ Goals:
 
 
 ## Downloads
-- <a href="https://github.com/johnso48/TalosPrincipleArchipelago/releases/download/v1.3.0-BETA.2/talos_principle_reawakened.apworld">Latest Version (1.3.0b2)</a>
+- <a href="https://github.com/johnso48/TalosPrincipleArchipelago/releases/download/v1.4.0/talos_principle_reawakened.apworld">Latest Version (1.4.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_The Talos Principle Reawakened">English</a>
 
 ## Setup Guide
+- <a href="setup_en">English</a>
 

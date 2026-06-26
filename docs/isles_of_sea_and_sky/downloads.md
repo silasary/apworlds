@@ -17,6 +17,9 @@
 #### v14
 - <a href="https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases/download/v0_0_14/isles_of_sea_and_sky.apworld">https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases/download/v0_0_14/isles_of_sea_and_sky.apworld</a>
 
+#### v1.0.0
+- <a href="https://github.com/wolicodes/Archipelago/releases/download/1.0.0/isles_of_sea_and_sky.apworld">https://github.com/wolicodes/Archipelago/releases/download/1.0.0/isles_of_sea_and_sky.apworld</a>
+
 #### v0.0.13
 - <a href="https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases/download/v0_0_13/isles_of_sea_and_sky.apworld">https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases/download/v0_0_13/isles_of_sea_and_sky.apworld</a>
 

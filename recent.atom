@@ -2,81 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-26T00:39:22.798175+00:00</updated>
+  <updated>2026-06-26T07:27:11.241322+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.33</id>
-    <title>Pokemon Black and White v0.3.33</title>
-    <updated>2026-06-20T18:02:27+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <author>
-      <name>SparkyDaDoggo</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-- Fixed multiple changes to the base ROM being reverted in previous updates&#13;
-- Made the Plasma grunts in Chargestone Cave always stay in the cave&#13;
-  - This fixes them potentially never appearing when playing through Chargestone Cave in reverse&#13;
-- Added an NPC to the southern entrance of Chargestone Cave that throws you to the northern exit&#13;
-  - He only appears after defeating N in Chargestone Cave&#13;
-- Removed the forced Musical Theater dress up minigame&#13;
-- Fixed the fight with N in Nacrene City being missable when doing the Pinwheel Forest events before that&#13;
-- Added a bit of funny dialog at the start of the game&#13;
-- Added an NPC next to the Pokémon Center in Accumula Town, who will be used for a feature in 0.4.0&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
-However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT&#13;
-</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.33"/>
-  </entry>
-  <entry>
-    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.0</id>
-    <title>Witchspring R v0.3.0</title>
-    <updated>2026-06-20T18:58:12+00:00</updated>
-    <author>
-      <name>LeiAfkpuz</name>
-    </author>
-    <content>Adds in-game Archipelago messages and three optional "sanity" check categories&#13;
-(Battlesanity, Bestiary, QuestSanity), plus logic and naming fixes.&#13;
-&#13;
-&gt; **⚠️ Upgrade notes (read before updating)**&#13;
-&gt; - **Both files must be updated together:** install the new `witchspringrap.apworld` **and** the new `WitchSpringRArchipelago.dll`. They are a matched pair.&#13;
-&gt; - **Generate fresh seeds** with 0.3.0 — the new options and checks won't exist on older seeds.&#13;
-&gt; - The new check categories are **optional toggles, off by default** — your existing yaml keeps working unchanged.&#13;
-&#13;
-### In-game messages&#13;
-- The game now shows **"Sent &amp;lt;item&amp;gt; to &amp;lt;player&amp;gt;"** when you trigger a check and **"Received &amp;lt;item&amp;gt; from &amp;lt;player&amp;gt;"** when an item is delivered, in the top-left info bar.&#13;
-&#13;
-### New optional check categories (yaml toggles)&#13;
-- **Please note that naming conventions and logic may not be fully proper for these settings as of yet**&#13;
-- **Battlesanity** — a check for clearing each field battle (sends on win). ~136 checks.&#13;
-- **Bestiary** — a check for defeating each enemy; any rank/shield variant counts. ~101 checks.&#13;
-- **QuestSanity** — a check for completing each quest (main + request-board; sends when the quest is cleared, however it completes). ~140 checks.&#13;
-- Each is a separate toggle (default **off**); the item pool auto-pads with filler so seeds stay fillable when they're enabled.&#13;
-&#13;
-### Fixes&#13;
-- **Region name:** "Blackhill Golem Cave" corrected to **"Backhill Golem Cave"**.&#13;
-- **Arua Blessing** now also requires the Fire Magic Spellbook and Mind Control Circle (it isn't actually reachable until you can leave the starting area).&#13;
-- Minor per-check chapter-gating fixes from playtesting.&#13;
-</content>
-    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.1</id>
-    <title>Witchspring R v0.3.1</title>
-    <updated>2026-06-20T18:58:12+00:00</updated>
-    <author>
-      <name>LeiAfkpuz</name>
-    </author>
-    <content>Forgot to save the basic logic to questsanity. Still not perfect, but better than before</content>
-    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.1"/>
-  </entry>
   <entry>
     <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.2</id>
     <title>Witchspring R v0.3.2</title>
@@ -1017,6 +947,37 @@ Download a new apworld and options template below and have a good one! If this i
     <link href="https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.1"/>
   </entry>
   <entry>
+    <id>https://github.com/wolicodes/Archipelago/releases/tag/1.0.0</id>
+    <title>IslesOfSeaAndSky v1.0.0</title>
+    <updated>2026-06-24T23:28:13+00:00</updated>
+    <author>
+      <name>KimDelicious</name>
+    </author>
+    <author>
+      <name>Angrevol</name>
+    </author>
+    <author>
+      <name>Woli</name>
+    </author>
+    <author>
+      <name>Cuberyl</name>
+    </author>
+    <content>This is a fork from the work Kim Delicious has done here:&#13;
+https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky&#13;
+&#13;
+# It is similar to their latest version, which means it still requires downpatching the game to 1.2b to work.&#13;
+&#13;
+The 1.0.0 version number has nothing to do with stability or features, I just decided to change the versioning style used in the original project.&#13;
+&#13;
+# Changelog&#13;
+- Fixed a crash that happened when paired with certain games in multiworlds&#13;
+- Add a note sanity setting, courtesy of Cuberyl&#13;
+- Added a few Universal Tracker conveniences:&#13;
+  - Yaml-less support&#13;
+  - Migrated to rule builder, which means /explain works out of the box</content>
+    <link href="https://github.com/wolicodes/Archipelago/releases/tag/1.0.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/T0r1nn/APLC/releases/tag/v0.7.12-beta</id>
     <title>Lethal Company v0.7.12b0</title>
     <updated>2026-06-25T00:34:09+00:00</updated>
@@ -1310,5 +1271,55 @@ Two new overlays provide real-time visual feedback without leaving the game.&#13
 &#13;
 ---</content>
     <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.11.0</id>
+    <title>Casualties: Unknown v0.11.0</title>
+    <updated>2026-06-26T01:06:54+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.11.0&#13;
+This update is NOT compatible with worlds generated on previous versions!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
+&#13;
+@AnAverageArceus made their first contribution in https://github.com/Nichologeam/CUAP/pull/46&#13;
+&#13;
+# Additions&#13;
+- Added Craftsanity locations and Recipe items for Demo 7 items [APWorld Change] (thanks to @AnAverageArceus )&#13;
+- Written Notes left inside lifepods now contain Archipelago hints&#13;
+	- These hints are generated at the start of each layer, and will only show uncollected locations in your game&#13;
+# Changes&#13;
+- Added FOCUSED to the Difficult Moodlesanity Exclusions preset&#13;
+- Added Palpitations to the Minimal Moodlesanity Exclusions preset&#13;
+- Removed the Hope and Despair filler items [APWorld Change]&#13;
+# Fixes&#13;
+- Fixed over half the Craftsanity locations sending the wrong item [APWorld Change] (thanks to @AnAverageArceus )&#13;
+- Fixed over half the Recipe items giving the wrong recipe [APWorld Change] (thanks to @AnAverageArceus )&#13;
+- Fixed the `Saline bottle Recipe` item not doing anything&#13;
+- Logic changes to account for Titanium now only spawning in Overgrown Depths [APWorld Change]&#13;
+- Fixed SleepLink checking for the RingLink YAML option, causing SleepLink to only turn on if RingLink was on&#13;
+# Known Issues&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed&#13;
+- Loading a save can cause logic issues&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.10.0...v0.11.0</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.11.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.2</id>
+    <title>A Link Between Worlds v0.3.2</title>
+    <updated>2026-06-26T06:53:04+00:00</updated>
+    <author>
+      <name>randomsalience</name>
+    </author>
+    <content>This version is backward compatible with 0.3.x.&#13;
+- Fixes a bug where a newly created save file may be reported as invalid&#13;
+- Change to client to prevent possible item duplication</content>
+    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.2"/>
   </entry>
 </feed>
