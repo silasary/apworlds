@@ -1,9 +1,12 @@
 # Donkey Kong Country 2
 
 ## Latest
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.2/dkc2.apworld">Latest Version (3.1.2)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.3/dkc2.apworld">Latest Version (3.1.3)</a>
 
 ## All Versions
+
+#### v3.1.3
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.3/dkc2.apworld">https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.3/dkc2.apworld</a>
 
 #### v3.1.2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.2/dkc2.apworld">https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.2/dkc2.apworld</a>

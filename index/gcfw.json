@@ -150,6 +150,21 @@
       "title": "0.0.5.4 \u2014 Universal Tracker Hotfix",
       "version_simple": "0.0.5.4",
       "world_version": "0.0.5.4"
+    },
+    "v0.0.5.5": {
+      "created_at": "2026-06-26T08:02:32Z",
+      "description": "This lets you set much shorter goals, and adds a developer convenience for sending achievement checks. No save-breaking changes.\r\n\r\n## Logic & generation\r\n- **Lower goal minimums.** `fields_count` now accepts **12\u2013122** (was 50\u2013122) and `fields_percentage` now accepts **10\u2013100** (was 40\u2013100), so you can generate much shorter seeds.\r\n- **Trial-only achievements no longer gate Journey logic.** Several achievements that can realistically only be earned in Trial mode are marked untrackable so the fill never depends on them.\r\n\r\n## Quality of life\r\n- **Skill tooltip cleanup.** The Component-skill tooltip no longer says \"*if the field has been beaten at least once*\" \u2014 the randomizer removes that requirement, so the gem type unlocks regardless of whether you've cleared the field.\r\n\r\n## Developer / debug\r\n- New **Achievements** tab in the debug menu: send an achievement's location check without actually unlocking the achievement in-game. Lists the trackable, still-missing achievements for the connected slot.",
+      "download_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.5.5/gcfw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "10302e66389c6c322f10ad706c6cf094ac1abeaf8a54647792b459eb51de3e65",
+      "html_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.5.5",
+      "minimum_ap_version": "0.6.4",
+      "size": 256119,
+      "source_url": "https://api.github.com/repos/Levisaxos/Archipelago_GemcraftFrostbornWrath",
+      "tag": "v0.0.5.5",
+      "title": "0.0.5.5 \u2014 Shorter goals & QoL fix",
+      "version_simple": "0.0.5.5",
+      "world_version": "0.0.5.5"
     }
   }
 }

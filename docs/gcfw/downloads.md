@@ -8,6 +8,9 @@
 #### v0.2rc0
 - <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v.0.02-pre-alpha/gcfw.apworld">https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v.0.02-pre-alpha/gcfw.apworld</a>
 
+#### v0.0.5.5
+- <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.5.5/gcfw.apworld">https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.5.5/gcfw.apworld</a>
+
 #### v0.0.5.4
 - <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.5.4/gcfw.apworld">https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.5.4/gcfw.apworld</a>
 

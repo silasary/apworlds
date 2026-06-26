@@ -2,114 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-26T07:27:11.241322+00:00</updated>
+  <updated>2026-06-26T12:47:50.567125+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.2</id>
-    <title>Witchspring R v0.3.2</title>
-    <updated>2026-06-20T18:58:12+00:00</updated>
-    <author>
-      <name>LeiAfkpuz</name>
-    </author>
-    <content>Updated logic for Battlesanity/Questsanity/Bestiary&#13;
-Also added Livya, Justice and Demon of Greed who were previously missing from the list. </content>
-    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.3</id>
-    <title>Witchspring R v0.3.3</title>
-    <updated>2026-06-20T18:58:12+00:00</updated>
-    <author>
-      <name>LeiAfkpuz</name>
-    </author>
-    <content>Updated logic for Chapters 3+4 in regards to Bestiary/Questsanity/Battlesanity.&#13;
-&#13;
-- Added some missing enemies from the Bestiary&#13;
-- Removed 2 chests from Aimhards Temple - either I forgot where they are, or they're NG+ only, will review in more detail later.&#13;
-- Pushed some battles/enemies into logic in a later chapter, even if they're already accessible just due to difficulty spike on them.&#13;
-- Moved Volcano Road 3 and Royal Pudding to Chapter 5+ logic, since you gain access to them after the "To Elysion Temple" quest and I currently have no good way to track that in the logic documents. Safer bet this way. &#13;
-- Re-Added the South Island chest that was removed in the last update. Also renamed it.</content>
-    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.3.0</id>
-    <title>Phoenotopia: Awakening v0.3.0</title>
-    <updated>2026-06-20T21:30:58+00:00</updated>
-    <author>
-      <name>Lenamphy</name>
-    </author>
-    <author>
-      <name>ET_is_here</name>
-    </author>
-    <content>&lt;h1&gt;0.3 is here!&lt;/h1&gt;&#13;
-&#13;
-It took a little longer than I expected, but the project is finally ready for a new release.&#13;
-&#13;
-&lt;h2&gt;New features:&lt;/h2&gt;&#13;
-&#13;
-- **Almost 200 new checks**: Sunflower Road, the kingdom bridges, the Atai region, Sand Drifts and the Ouroboros Hideout are now included as locations, setting the total check count at 274. The new goal of your run is to defeat Birdy and the giant sand drake boss. Anything beyond that point in the story is the new out of bounds border for checks you can get. Special thanks to @ET_is_here for helping me with the logic here!&#13;
-- **Redistribution of checks among settings**: A lot of checks were about to fall under miscellaneous so I redid the distribution of settings. New settings include items in breakable objects, freestanding items, sidequests, minigames, trapchest, Ouroboros shrines, perro locations and the ancient vault.&#13;
-- **Spell of Rejuvenation / Progressive Prelude of Panselo**: With the Spell of Rejuvenation now in the item pool, you will now have the option to either get them progressively or separately. Doesn't make a difference with the current location pool, but the choice is yours.&#13;
-- **No more waiting while saving**: You will no longer have to stand still for 3 seconds when you save at a savepoint. I hope this will lower the bar of effort to go for a save. The waiting time was only for immersion anyway.&#13;
-- **Complete rework on NPC check handling**: You won't notice a thing, but I sure will. The way I implemented the handling for NPC checks was unsustainable for the rest of the game and I had to redo it entirely. It's cleaner and will save me many hours when adding the rest of the locations to the game. Aside from this, a lot of work was done under the hood to make the project more expandable.&#13;
-&#13;
-Like always, the community will be my testing crew. If you encounter any issues during your run, please let me know through one of the following ways:&#13;
-1. File an issue at the repository on [GitHub](https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/issues).&#13;
-2. Describe your issue in the game thread on the [official AP discord](https://discord.com/invite/8Z65BR2).&#13;
-3. Post it in the mwgg-support channel in the [Unofficial AP Discord](https://discord.multiworld.gg).&#13;
-&#13;
-&lt;h2&gt;Known issues:&lt;/h2&gt;&#13;
-&#13;
-- After buying one item from the Atai bartender, the text for the other item will go back to the vanilla text as well. This is only visual so you can still buy the other item.&#13;
-- Taking the water route from the Metro area to the left side of the Atai sewer with rocket boots and without the lifesaver will cause you to infinitely drown.</content>
-    <link href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.5</id>
-    <title>Cookie Clicker v0.8.5</title>
-    <updated>2026-06-21T00:42:14+00:00</updated>
-    <author>
-      <name>Charlignon</name>
-    </author>
-    <content>This release brings stability improvements to logic&#13;
-:information_source: This client IS retrocompatible with older version 0.8.x version (not alpha/beta), so you can update during an ongoing game.&#13;
-:warning: This apworld is NOT retromcompatible with previous clients. To use it, update your client to 0.8.3.&#13;
-&#13;
-## New yaml option&#13;
-* Plentiful Buildings: Additional Building Copies to the pull&#13;
-&#13;
-## Bug fixes&#13;
-* Fix Hardcore achievements being impossible. It now requires to bake 1Q cookies without buying Cookie Upgrades. It's now in sphere 2&#13;
-* Fix some prestige items unlocking themselves after ascending&#13;
-* Fix eggs achievements not checking properly&#13;
-* Improve logic for more sphere stability. It should hopefully fix trackers telling you unreachable checks being "in logic"&#13;
-* Fix last tier of Progressive temples not unlocking &#13;
-* Fix 0.8.3/0.8.4 bug of Progressive Buildings not unlocking buildings &#13;
-&#13;
-## Acknowledgements&#13;
-* @SoraUltimateProgrammer made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/1&#13;
-* @wjg999 made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/4&#13;
-* @TeamLila made their first contribution in https://github.com/Charlignon/AP_CookieClicker/pull/2&#13;
-&#13;
-Thanks a lot for helping grow this apworld !!&#13;
-&#13;
-## Misc.&#13;
-* This github now has a [discussion space](https://github.com/Charlignon/AP_CookieClicker/discussions) ! You can send ideas there and express opinions. This is a place that comes in addition to the AP discord server, in order to keep track of ideas </content>
-    <link href="https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.1</id>
-    <title>A Link Between Worlds v0.3.1</title>
-    <updated>2026-06-21T01:24:19+00:00</updated>
-    <author>
-      <name>randomsalience</name>
-    </author>
-    <content>Fixes a regression that made the apworld incompatible with the Citra emulator. This release is backward compatible with v0.3.0.</content>
-    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.1"/>
-  </entry>
   <entry>
     <id>https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases/tag/v0.3.1</id>
     <title>Etrian Odyssey v0.3.1</title>
@@ -579,6 +476,47 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix progressive regions and Shira 4+ bugs [`e5e8ad7`](https://github.com/tjwombo/RNSArchipelago/commit/e5e8ad7b3b3079ea044234b9faaff04017f8a7be)&#13;
 </content>
     <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.0</id>
+    <title>oh_so_hero v1.0.0</title>
+    <updated>2026-06-23T12:44:15+00:00</updated>
+    <author>
+      <name>L-technology-mods</name>
+    </author>
+    <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.1</id>
+    <title>oh_so_hero v1.0.1</title>
+    <updated>2026-06-23T13:08:03+00:00</updated>
+    <author>
+      <name>L-technology-mods</name>
+    </author>
+    <content>First automated release.&#13;
+&#13;
+## Installation&#13;
+&#13;
+Download both files from the release assets:&#13;
+&#13;
+- `oh_so_hero.apworld`&#13;
+- `OhSoHeroArchipelago-Client.zip`&#13;
+&#13;
+### 1. Install the APWorld&#13;
+&#13;
+Place `oh_so_hero.apworld` in your Archipelago `custom_worlds` folder.&#13;
+&#13;
+### 2. Install the game client/mod&#13;
+&#13;
+Extract `OhSoHeroArchipelago-Client.zip` directly into your Steam install folder for **Oh So Hero!**.&#13;
+&#13;
+Example path:&#13;
+&#13;
+```text&#13;
+SteamLibrary/steamapps/common/Oh So Hero!/&#13;
+&#13;
+After extraction, the folder should contain BepInEx files next to the game executable.</content>
+    <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.1"/>
   </entry>
   <entry>
     <id>https://github.com/StefanDucharme/nonogram-archipelago/releases/tag/v0.6.8</id>
@@ -1179,6 +1117,15 @@ Find the apworld and a several template yamls below.</content>
     <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.0"/>
   </entry>
   <entry>
+    <id>https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v0.16.7</id>
+    <title>oh_so_hero v0.16.7</title>
+    <updated>2026-06-25T23:29:54+00:00</updated>
+    <author>
+      <name>L-technology-mods</name>
+    </author>
+    <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v0.16.7"/>
+  </entry>
+  <entry>
     <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.2.0</id>
     <title>Dwarf Fortress v1.2.0</title>
     <updated>2026-06-25T23:39:45+00:00</updated>
@@ -1321,5 +1268,60 @@ Development on the Itch.io version of Casualties: Unknown has stopped. To play t
 - Fixes a bug where a newly created save file may be reported as invalid&#13;
 - Change to client to prevent possible item duplication</content>
     <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.3</id>
+    <title>Donkey Kong Country 2 v3.1.3</title>
+    <updated>2026-06-26T07:29:01+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>&lt;- messed up his ctrl+F&#13;
+## Info&#13;
+* [Info](&lt;https://thelx5.github.io/dkc2/index.html&gt;)&#13;
+* [Trivia (REQUIRED TO PLAY)](&lt;https://github.com/TheLX5/DKC2-Trivia/releases/latest&gt;)&#13;
+## Changes&#13;
+* Fixed logic related to Clapper and Diddy on Loose and Expert difficulties</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.34</id>
+    <title>Muse Dash v1.5.34</title>
+    <updated>2026-06-26T10:02:02+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content># Changes&#13;
+- Update songs to 8th Anniversary Muse Plus.&#13;
+&#13;
+# Installation&#13;
+## Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+&gt; You can find Muse Dash's folder by finding the game in your steam library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+&#13;
+### Windows&#13;
+1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Select Muse Dash in the list of games.&#13;
+   - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+3. Click install. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+### Linux&#13;
+1. Navigate to Muse Dash on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES="version=n,b" %command%`&#13;
+2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+   - You may need to give it permissions to execute.&#13;
+3. Select Muse Dash in the list of games.&#13;
+    - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+4. Click install. On first run, melonloader may install dotnet 6 in order to run.&#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+    &#13;
+### Mod Install&#13;
+1.Download `ArchipelagoMuseDash.zip`.&#13;
+2. Head to the Muse Dash folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.&#13;
+3. Extract the contents of the .zip file into mods. Ensure the files are not in a subfolder, this mod is not setup for that yet.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.34"/>
   </entry>
 </feed>

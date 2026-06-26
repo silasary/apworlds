@@ -226,6 +226,21 @@
       "version_simple": "2.5.0",
       "world_version": "2.5.0"
     },
+    "Stable-2.6.0": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.6.0\n\nA new opt-in trap plus a batch of fixes from the bug reports. Thanks for testing!\n\n## New: Monster Revive Trap\n\n- Optional trap you can switch on in your YAML (Archipelago) or in the standalone\n  randomize setup. When it's on, a handful of monsters per game become \"trapped\" \u2014\n  kill a trapped monster and about a second later **8 hostile copies of it spawn**\n  right where it died. A sudden ambush. Only normal monsters get trapped (never\n  bosses or super-uniques), there's a per-game cap, and the copies can't trap-chain.\n- Off by default. You'll find it under **Difficulty & XP** in the YAML, or as a\n  checkbox in the standalone randomize setup.\n\n## Fixes\n\n- **F1 skill book graphics corruption fixed.** After playing for a while / switching\n  characters, the skill book could start drawing garbled or random in-game graphics \u2014\n  buttons and skill icons turning into junk. That was a graphics-memory leak: the book\n  reloaded its art on every character switch and never freed the old copies, so they\n  piled up and eventually pointed at the wrong sprites. The art now loads once and stays\n  put. The same fix was applied to the stash icons, which had the same problem.\n- **\"Item level requirements\" toggle now works in Archipelago.** It worked in standalone\n  but was being ignored in AP games \u2014 fixed.\n- **Custom goals with a \"complete all X quests\" target could never finish.** The\n  all-hunts / all-kills / all-waypoints / all-level / all-exploration / all-story\n  subsystem targets were checking the wrong internal range, so the goal could sit at\n  \"almost done\" forever even after you'd done everything. They now check the real quest\n  list. If you used one of these, your goal completes properly now.\n- **Character save reset hardened.** Extra safety checks so a bad skill-reset can never\n  clear or corrupt a character \u2014 if anything looks wrong it leaves your save untouched\n  and keeps the timestamped backups it already makes.\n\n## Notes\n\n- Existing Archipelago seeds and characters remain compatible.\n- Everything from Stable 2.5.0 (one chest + stash isolation + shared progression) is included.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.6.0/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4c47b9986994d14a4cf7227d422e3b43c3596d75d14de9df144c42ffb33454d4",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.6.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 58434,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.6.0",
+      "title": "Stable-2.6.0",
+      "version_simple": "2.6.0",
+      "world_version": "2.6.0"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
