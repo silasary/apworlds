@@ -1,10 +1,36 @@
 {
+  "authors": [
+    "KimDelicious",
+    "Angrevol",
+    "Woli",
+    "Cuberyl"
+  ],
   "description": "Isles Of Sea And Sky is a sokoban-style puzzle game with metroidvania elements.\nAs the player collects items, and equipment they can explore islands to collect as many goodies as they can,\nuntil they reach the Sanctum, and learn just what all these Stars are for.",
   "game": "IslesOfSeaAndSky",
   "github": "https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
+    "1.0.0": {
+      "created_at": "2026-06-24T23:28:13Z",
+      "description": "This is a fork from the work Kim Delicious has done here:\r\nhttps://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky\r\n\r\n# It is similar to their latest version, which means it still requires downpatching the game to 1.2b to work.\r\n\r\nThe 1.0.0 version number has nothing to do with stability or features, I just decided to change the versioning style used in the original project.\r\n\r\n# Changelog\r\n- Fixed a crash that happened when paired with certain games in multiworlds\r\n- Add a note sanity setting, courtesy of Cuberyl\r\n- Added a few Universal Tracker conveniences:\r\n  - Yaml-less support\r\n  - Migrated to rule builder, which means /explain works out of the box",
+      "download_url": "https://github.com/wolicodes/Archipelago/releases/download/1.0.0/isles_of_sea_and_sky.apworld",
+      "has_manifest": true,
+      "hash_sha256": "022fa5f2eb23ff567fc655692d663ecd4acb115f476192a4cf6d1147ca702f9f",
+      "html_url": "https://github.com/wolicodes/Archipelago/releases/tag/1.0.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 1257438,
+      "source_url": "https://api.github.com/repos/wolicodes/Archipelago",
+      "tag": "1.0.0",
+      "title": "Isles of Sea and Sky Archipelago 1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
     "V0_0_6": {
       "created_at": "2025-05-31T08:47:36Z",
       "description": "## NOTE: Asyncs should now be compatible.\r\n[Setup Guide Here](https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/blob/V0_0_6/worlds/isles_of_sea_and_sky/docs/setup_en.md)\r\n## Patch\r\n\r\n- Reworked Item registration to support Asyncs. A history of received items is saved to file when the game itself saves. This should prevent loss of progress in case of Resyncing, or mishaps. Consequently, location sending, and item receiving should no longer drop data.\r\n- Most Locations checks now send room position instead of item number in room.\r\n- Seashells now count as secrets, and now work with the HUD Hint system.\r\n- Receiving a Shard Hit item should no longer puts the player in an offset glitch state after the cutscene has ended.\r\n\r\n## AP World\r\n\r\n### Client\r\n\r\n- Reworked Item Receiving to better support Asyncs. Players should no longer lose their history of locations when they (dis)connect to the server.\r\n- NOTE: Cheating items from the server while on Asyncs don't have a working history, so the server will need to send multiple commands until it catches up to what the game has saved. (I.e. Sending 3 commands, (receiving 3 items) Resyncing, then sending 4 commands will result in 1 additional item.) Data has been made unique per item to mitigate this problem.\r\n\r\n### Logic\r\n\r\n- Added new subregions to Stony Cliffs, Raging Volcano for better logic handling of the Phoenix Flute\r\n- Many many many small rule tweaks. The player is significantly less likely to get stuck.\r\n\r\n### Locations\r\n\r\n- Many Location IDs have been reworked to prevent mixups between locations in the same room.",
