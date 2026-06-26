@@ -42,13 +42,18 @@ NSMBW projects used
 - nsmbw-pipe-randomizer
 - NSMBW randomizer (original, non ap)
 
-
+\
 Original game
 - Nintendo
 
+AI-usage
+Gemini & ChatGPT 
+  - decoding assembly and reading address maps
+Pycharm linter
+  - linter, a line completion tool built into py-charm
+
+
+
 \
 Other
-- AI (for decoding assembly and reading address maps)
-  - Gemini
-  - ChatGPT
 - Keyboard (Python library)

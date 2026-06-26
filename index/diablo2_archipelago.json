@@ -241,6 +241,36 @@
       "version_simple": "2.6.0",
       "world_version": "2.6.0"
     },
+    "Stable-2.6.1": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.6.1\n\nHotfix for issues reported on 2.6.0. Thanks for the quick reports!\n\n## Fixes\n\n- **Reward gold (and stat/skill points) no longer duplicate on reload.** Gold, stat\n  points and skill points awarded by checks were being re-granted every time you\n  reloaded the character \u2014 your totals kept ballooning, and the inflated gold made\n  gold milestones / gold goals trigger far too early. Rewards are now delivered\n  exactly once and saved into your character normally. This is the recurring \"gold\"\n  problem.\n- **Custom Goal no longer shows \"Custom Goal Complete!\" the moment you enter the\n  game.** A Custom goal with no targets selected was being treated as instantly\n  complete. An empty Custom goal now falls back to Full Normal (beat Baal on Normal)\n  instead of auto-winning.\n- **Collection goal had the same false-complete and is fixed too** \u2014 an empty\n  Collection goal no longer reports complete with nothing collected.\n- **Zone tracker shows proper super-unique names.** The F4 gate tracker was showing\n  internal keys (e.g. \"BishiMausol\", \"RakanishuUG\", \"PitspawnPit\") \u2014 it now shows the\n  real names (Bishibosh, Rakanishu, Pitspawn, \u2026).\n\n## Notes\n\n- Everything from Stable 2.6.0 (Monster Revive Trap + the F1 / save-reset / custom-goal\n  soft-lock fixes) is included.\n- Existing seeds and characters remain compatible.\n- The launcher is unchanged (still 2.7.0) \u2014 no launcher update needed.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.6.1/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3b2178675bf4f5bf4126650ecf25a929c639e47844c5a0a1e88d09af30055a22",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.6.1",
+      "minimum_ap_version": "0.5.0",
+      "size": 58435,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.6.1",
+      "title": "Stable-2.6.1",
+      "version_simple": "2.6.1",
+      "world_version": "2.6.1"
+    },
+    "Stable-2.6.2": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.6.2\n\n## Item requirement options\n\n- Item requirements are now **two independent options** \u2014 **Item Level Requirements**\n  and **Item Stat Requirements**. Disable either to ignore that requirement when\n  equipping gear: level requirements and strength/dexterity requirements can be turned\n  off separately, and both apply across all gear (base items, magic/rare, set and\n  unique).\n\n## Other\n\n- **Monster Revive Trap** is now grouped under Traps in the options.\n\n## Notes\n\n- Existing seeds and characters remain compatible.\n- Launcher updated to 2.7.1.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.6.2/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "847dbc3d4ec933ff4b2fc91495230af8b997b0206a1532080b284fcaa6c41419",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.6.2",
+      "minimum_ap_version": "0.5.0",
+      "size": 58566,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.6.2",
+      "title": "Stable-2.6.2",
+      "version_simple": "2.6.2",
+      "world_version": "2.6.2"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
