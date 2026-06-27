@@ -271,6 +271,36 @@
       "version_simple": "2.6.2",
       "world_version": "2.6.2"
     },
+    "Stable-2.7.0": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.7.0\n\n## Zone Locking + Entrance Shuffle now work together\n\n- **Zone Locking and Entrance Shuffle can finally be enabled at the same time**, in\n  both Archipelago and standalone play. Previously turning on one forced the other\n  off, because gate keys were earned by killing a specific super-unique in a fixed\n  zone \u2014 and shuffling the entrances moved that boss out of reach.\n- When **both** options are on, each gate key is now earned by completing a\n  **condition** instead \u2014 collect gold, reach a character level, activate shrines,\n  or (in Acts 3\u20135) break barrels/urns or open chests. These conditions don't depend\n  on where an entrance leads, so the two systems no longer conflict.\n- Conditions scale across the route and per difficulty (Normal / Nightmare / Hell),\n  and early-act gates only use sources that are plentiful that early, so a key is\n  always earnable with the areas you can already reach.\n- The **F4 zone tracker** shows each gate's condition and your live progress\n  (e.g. `Gold 3,200 / 5,000`) in place of the boss name, and the **launcher Map**\n  turns a zone green the moment its condition is met.\n\n## Received set & unique items\n\n- Set and unique items received from Archipelago now arrive **unidentified**. Just\n  identify them (Cain or an identify scroll) and they become normal items you can\n  move and equip. This avoids the issue where moving a freshly-received set item\n  could make it vanish unless you saved and reloaded first.\n\n## Install check (\"some files may be missing\")\n\n- Fixed the false **\"some files may be missing. Consider re-installing\"** warning that\n  appeared on every launch. It was caused by an outdated file list being packed into\n  the download, so the check compared your install against the wrong version \u2014 nothing\n  was actually missing.\n- The install check is also much more helpful now: instead of a vague warning it lists\n  the **exact files** that are missing or the wrong size, and **automatically downloads\n  and restores** them when it can. If a file genuinely can't be downloaded, it says so\n  clearly.\n\n## Notes\n\n- Only the combined Zone Locking + Entrance Shuffle setup uses conditions \u2014 using\n  either option on its own is unchanged.\n- Gate keys are progression items, so Archipelago places them correctly across all\n  worlds in a multiworld.\n- Existing seeds and characters remain compatible.\n- Launcher updated to 2.7.2.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.7.0/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6595e39599555d33f52ee60e32cd8829eb1640bd04e5c5ea7cdd16bef1f7f076",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.7.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 58574,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.7.0",
+      "title": "Stable 2.7.0",
+      "version_simple": "2.7.0",
+      "world_version": "2.7.0"
+    },
+    "Stable-2.8.0": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.8.0\n\n## Zone Locking + Entrance Shuffle \u2014 full key-condition tuning\n\n- The combined Zone Locking + Entrance Shuffle key conditions are fully rebalanced.\n  Two new condition types join the pool: **Kill X monsters** and **Find X\n  super-uniques**.\n- Every act's **final key is a monster-kill milestone** that climbs continuously\n  through all difficulties (500 in Act 1 Normal up to 100,000 by the end of Hell).\n  The other keys per act are a varied mix (level, gold, super-uniques, shrines,\n  barrels, urns, chests) and no longer all the same type.\n- All count conditions (monsters, shrines, barrels, urns, chests) are now **lifetime\n  totals that count straight through Normal \u2192 Nightmare \u2192 Hell** \u2014 one number that\n  keeps climbing, much easier to read.\n- Thresholds are calibrated to the level you're expected to reach by the end of each\n  act on normal XP, so keys arrive at a sensible pace.\n- Barrels and urns only appear from Act 3 on Normal (too few earlier), but can appear\n  on any act in Nightmare/Hell. Chests can appear on any act.\n\n## XP bonus reworked\n\n- The XP setting is now **0 = standard XP**, and each step adds **+100%** (1 = double,\n  2 = triple, \u2026). It now goes all the way up to **100**.\n\n## Configurable gold & XP rewards\n\n- Gold and XP rewards now roll a **random amount between a minimum and a maximum** you\n  set. Each can range anywhere from 1 up to 1,000,000.\n\n## Received set & unique items\n\n- Set and unique items received from Archipelago arrive **unidentified** and now stay\n  put reliably \u2014 identify them with Cain or a scroll and they're ready to use, no\n  save-and-reload needed.\n\n## Notes\n\n- Existing seeds and characters remain compatible.\n- Launcher updated to 2.8.0.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.8.0/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d3e543a554f38915a32c6f864916b31f6d6efeafabd83ab1fbd3bc8c57d86af2",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.8.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 58931,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.8.0",
+      "title": "Stable 2.8.0",
+      "version_simple": "2.8.0",
+      "world_version": "2.8.0"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
