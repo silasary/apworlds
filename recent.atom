@@ -2,86 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-27T12:31:21.325142+00:00</updated>
+  <updated>2026-06-27T18:33:39.751991+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.2</id>
-    <title>Outer Wilds v1.2.2</title>
-    <updated>2026-06-22T01:56:35+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
-&#13;
-- @RS_Mind attempted to work around a Forgotten Castaways bug where the "Recursive Node" sometimes doesn't spawn. It's too inconsistent for anyone to pin down exact causes, but we suspect having many other mods loaded makes it more likely, which would explain why only randomizer players seem to be reporting it.&#13;
-- Logic fixes:&#13;
-	- Since you can't carry both a DLC Artifact and the Echo Hike Threader at the same time, Starlit Cove is no longer in logic if the Threader is your only logical way of reaching Cinder Isles (fixes #98 ).&#13;
-	- Added an explicit "Hearth's Neighbor Museum Plate" region to the HN1 logic to help remind players how to unlock the warp to the HN1 system&#13;
-	- Suitless logic for the text wheel inside the Frozen Shuttle now requires Spacesuit&#13;
-	- "DW: Starlit Cove Upper Tower Floors" logic is now aware that Raft Docks Patch is an alternative to Dream Totem Patch&#13;
-- "Find Gabbro's Ship" location is no longer incorrectly triggered by the ship on Bracket's Rest in FQ.&#13;
-- Fix Nomai text coloring exception spam on unscouted locations (the feature is still unsupported/broken, but this quick fix reduces the odds of it breaking unrelated stuff)</content>
-    <link href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.4</id>
-    <title>Deltarune v2.0.4</title>
-    <updated>2026-06-22T03:04:21+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <author>
-      <name>theemeraldsword85</name>
-    </author>
-    <author>
-      <name>Tenebrosful</name>
-    </author>
-    <author>
-      <name>Vintagix</name>
-    </author>
-    <author>
-      <name>Deadzi</name>
-    </author>
-    <author>
-      <name>Charaster</name>
-    </author>
-    <author>
-      <name>Potato</name>
-    </author>
-    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
-&#13;
-Hello, this is the last patch before the embargo of chapter 5, expect no update before the 2.1.0 chapter 5 release. Dev will begin at least 1 week after the chapter release. DELTARUNE in 2 tomorrow.&#13;
-&#13;
-## **This will be the last version before Chapter 5 drops. From then, there will be a week embargo before development of this mod resumes. If you want to play this mod, you'll have to downpatch your base DELTARUNE back to version 1.04, which is the last version before chapter 5 (More info on the Archipelago Discord). Stay tuned!**&#13;
-&#13;
-(This APWorld is intended for DELTARUNE 1.04. Using a Beta, the Ch1+2 Demo, or Chapter 5 versions will not work.)&#13;
-&#13;
-**Linux is not supported for now and will disconnect you after few seconds from the server! Linux will be supported in future updates**&#13;
-&#13;
-**Starting a chapter with previous chapter completion data isn't recommended for right now as the rewrite wasn't made with it in mind. This will be fixed soon!**&#13;
-&#13;
-# Changelog&#13;
-## APWorld&#13;
-- Added TensionBit and BShotBowtie to the Fusion Ingredient category&#13;
-- Fix Accessibility for TwistedSwd and TensionBow&#13;
-&#13;
-## Game&#13;
-- Game now properly goal again.. oops&#13;
-- Saving settings is now before scouting locations&#13;
-- Grouping some location checks into a single package instead of multiple&#13;
-- Most locations will now send before the textbox appears, in case of a softlock&#13;
-- Added some missing reward previews&#13;
-### Chapter 3&#13;
-- Fixed the Shadow Mantle fight only being accessible if you _did not_ have the SHELTER KEY&#13;
-- Made the room with the Shuttah and Zapper encounter immune to receiving items as it can softlock the game.. for some reason&#13;
-&#13;
-# Known bug&#13;
-- Exclude Z-Rank option don't work and actually reads Exclude T-Rank instead</content>
-    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.0.4"/>
-  </entry>
   <entry>
     <id>https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.0.1</id>
     <title>Spirit Valley v2.0.1</title>
@@ -1325,5 +1250,28 @@ Full patch notes of 0.3 can be found [here](https://github.com/Amphyros/Phoenoto
 Bugfixes:&#13;
 - Fix several logic problems.</content>
     <link href="https://github.com/Witchybun/Archipelago/releases/tag/MadouMonogatari106"/>
+  </entry>
+  <entry>
+    <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.3</id>
+    <title>Civilization V v0.10.3</title>
+    <updated>2026-06-27T12:41:02+00:00</updated>
+    <author>
+      <name>1313e</name>
+    </author>
+    <content>**Fixes**:&#13;
+- Check that weight options have at least one non-zero key when that option is used for generation.&#13;
+&#13;
+**Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.10.2...v0.10.3</content>
+    <link href="https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.6.2</id>
+    <title>Kerbal Space Program 1 v0.6.2</title>
+    <updated>2026-06-27T18:10:04+00:00</updated>
+    <author>
+      <name>nickdavies</name>
+    </author>
+    <content>**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.6.1...v0.6.2</content>
+    <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.6.2"/>
   </entry>
 </feed>
