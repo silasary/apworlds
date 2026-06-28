@@ -179,6 +179,21 @@
       "version_simple": "0.7.6",
       "world_version": "0.7.6"
     },
+    "st-v0.7.8-alpha": {
+      "created_at": "2026-06-28T09:38:06Z",
+      "description": "compatible with seeds generated in v7.x\r\n\r\n## New Features\r\n- Added Rule Builder Logic support for AP 0.6.7+. Main benefit is that you can use the UT command /explain to see the logic for a particular location or region. Also speeds up gen slightly and is easier to work with, and allows for exporting logic for potential future tracker stuff!\r\n- Added /carrot_asked command that prints the debug output from the current room, even if not running debug launcher\r\n## Bugfixes\r\n- Fixed typo in flags for s Mayscore portal to ocean portal with portal unlock items\r\n- Fixed snow tracks grouping typo\r\n- Tweaked respawns in Staven's room\r\n- Added detection and error message for trying to play with rom version 1.1\r\n- Allowed picking up teacher with fire glyph\r\n- Fixed total rabbits not sending properly\r\n- Added a hitbox to Hyrule Castle 2f indoor chest\r\n- Entering the ToS 31F no longer steals your tears of light\r\n- An Evil Train now always spawns underwater\r\n- Fixed model swap for Bunnio's Rabbit net\r\n- Made sure you can pick up Joe in outset after already taking him to Beedle\r\n- Added delay reset to rabbit rewards\r\n- Stopped Kenzo from leaving tp early if visited Anouki\r\n- Fixed a Kenzo bug in AV\r\n- Changed some trading post event logic\r\n- Treasure removed by delay reset now removes itself properly\r\n- Tears now reload on all ToS floors that don't remove them, allowing you to grab a new phantom after entering glyph rooms.\r\n- Going north on W Wooded Temple Tracks without snow glyph now bounces you cause there are no tracks\r\n- Buying bombs/quivers from shops no longer sends their matching ammo location. Also fixed for if those locs are their vanilla items\r\n- Saving and quitting in Staven's room now puts you in the room before, preventing a softlock from Zelda despawning during the fight.\r\n- Fixed some faulty goals, Including Staven, Vulcano and Skeldritch\r\n- Expanded hitbox for rabbit haven island chest\r\n- Fixed bad address on fire realm ice crash fix\r\n- Added killing the marine temple snapper Without sword to hard logic (requires setting up a hit before entering the arena with boomerang or bombs)\r\n- Added getting wooded temple boss key without whirlwind to hard logic\r\n- Fixed some shop detection in Goron shop\r\n- Fixed Snurglar keys sometimes sending multiple locations\r\n- Fixed Ocean Source persisting after Cactops\r\n- Made sure goal dungeons are always in the required dungeon pool, even when required dungeons are 0\r\n\r\nKnown Issues: \r\n- There are still some occasional fill bugs I've been struggling to track down",
+      "download_url": "https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.8-alpha/tloz_st.apworld",
+      "has_manifest": true,
+      "hash_sha256": "dd909e0c00323e4d712e11bc819ecc729ff35dc179a06a8b0e8a8206750d9eaa",
+      "html_url": "https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.8-alpha",
+      "minimum_ap_version": "0.6.0",
+      "size": 363909,
+      "source_url": "https://api.github.com/repos/DayKat/spirit-tracks",
+      "tag": "st-v0.7.8-alpha",
+      "title": "Spirit Tracks AP v7.8",
+      "version_simple": "0.7.8",
+      "world_version": "0.7.8a0"
+    },
     "v0.1.0": {
       "created_at": "2025-08-20T21:55:35Z",
       "description": "Hi this is a demo version of The Legend of Zelda - Spirit Tracks as a randomiser for Archipelago.\r\nCurrently this only has 5 checks: Aboda Clearing Rocks, Aboda Bee Boy, Aboda Stamp Station, Castle Town Stamp Station, and Tower of Spirits (ToS) Forest Rail Glyph.\r\nThis means that there is limited randomisation atm.\r\nEnjoy and please report any bugs/ideas for future things!\r\n\r\nBig credits to @carrotinator (Phantom Hourglass ap dev) and @1313e\r\n",
