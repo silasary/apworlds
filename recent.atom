@@ -2,39 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-28T12:35:48.084078+00:00</updated>
+  <updated>2026-06-28T18:29:44.240036+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.4</id>
-    <title>Witchspring R v0.3.4</title>
-    <updated>2026-06-23T16:12:30+00:00</updated>
-    <author>
-      <name>LeiAfkpuz</name>
-    </author>
-    <content>### GENERAL&#13;
-- Finalized first pass at logic for Bestiary/Questsanity/Battlesanity for Chapters 1-6.(I accidentally set my yaml for a Chapter 7 goal instead of Chapter 9, that's on me, running a second pass now)&#13;
-- Fixed a black-screen crash that could happen when multiple items were sent at once while you were changing scenes.&#13;
-- Fixed the "Sent ____" popup from re-appearing every time you re-load the game. It never re-sent the checks, it was just the UI firing again.&#13;
-- New in-game event gates. &#13;
-  - Added a fake "Narrel" item that you must receive from the multiworld for Narrel to move the boulder. &#13;
-  - Prototype Steam Engine and Matt's Garden Key are now correctly blocked from the vanilla item grant. &#13;
-  - Giving the Prototype Steam Engine to Kanna, *should* be gated and not allowed to happen until you receive the Prototype Steam Engine from the multiworld - **untested and I am working on this test**&#13;
-&#13;
-### Battlesanity&#13;
-- Numbers have been re-numbered based on the order that I fought them on the map. I tried to go from closest to entrance &gt; farthest from entrance order.&#13;
-- Added some Story/Event battles that were not previously logged.&#13;
-&#13;
-### Bestiary&#13;
-- Added more missing mobs from chapters 5+&#13;
-- Fixed the logic on a bunch of them&#13;
-&#13;
-### Disclaimer&#13;
-I do **not** recommend setting a goal beyond Chapter 3(Goal: Chapter_4), because I have not had a chance to test the new Narrel block as of yet. I wanted to push this out early once I found out about the black-screen crash introduced in 0.3.3</content>
-    <link href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.6</id>
     <title>Nine Sols v0.5.6</title>
@@ -1348,5 +1320,35 @@ Known Issues: &#13;
 &#13;
 **Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.2...1.2.3</content>
     <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.6.0</id>
+    <title>Tevi v0.7.3</title>
+    <updated>2026-06-28T15:31:46+00:00</updated>
+    <author>
+      <name>BlackSoulKnight</name>
+    </author>
+    <content>## DLC&#13;
+Has **no** logic and is not included yet&#13;
+- Enable teleportation from DLC areas before DLC final boss is defeated&#13;
+&#13;
+## Change log&#13;
+&#13;
+- Popup options moved into the Mod and can toggled on and off from the randomizer menu&#13;
+- Shops revert and currently sell their items for 3x the original prices&#13;
+- Received Archipelago item counter is saved even when a disconnect happens&#13;
+- Arcade rewards fixed&#13;
+- Mia shop item missing fixed&#13;
+- Cloister - Crouching Bunny -&gt; missing jump height&#13;
+- Ian Sho Bonus 15 to 18 -&gt; bad logic fixed&#13;
+- Verglas Village to Snowveil -&gt; slide included&#13;
+- Dreamless Depths to Dream palace -&gt; missing bombs&#13;
+- DreamKeeper - MP Quicken: Sugar Rush -&gt; missing slide&#13;
+- DreamKeeper - Alius fight -&gt; removed bomb requirement&#13;
+- DreamKeeper - Grip Sole Boots -&gt; removed bomb requirement&#13;
+- CopperWood to Industry -&gt; missing connection added&#13;
+&#13;
+</content>
+    <link href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.6.0"/>
   </entry>
 </feed>
