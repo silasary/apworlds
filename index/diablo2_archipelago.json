@@ -451,6 +451,21 @@
       "version_simple": "2.9.0",
       "world_version": "2.9.0"
     },
+    "Stable-2.9.1": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.9.1\n\nCrash-logging upgrade to catch the real cause of the remaining save & quit crash.\n\n## Change\n\n- **The crash log now captures non\u2013access-violation faults too** \u2014 e.g. a Diablo\n  II internal assertion, which is a *different kind* of fault than an access\n  violation. Until now those were invisible: the log filled with **caught,\n  non-fatal** access-violation entries (each one safely handled, the game kept\n  running) while the *actual* crash left no record \u2014 so we kept chasing the wrong\n  line. Access-violation entries are now clearly labeled \"usually caught\", and any\n  fatal non-AV fault is logged with its exact fault code so it stands out.\n- **If you still hit the save & quit crash, please send `d2arch_crash.txt`** \u2014 it\n  should now show the real cause (look for a \"NON-AV FAULT\" line).\n\n## Notes\n\n- Includes all the save & quit stability fixes from 2.9.0 (stale game pointer,\n  stale icon caches, entrance-shuffle maze-revert).\n- Launcher unchanged (still 2.8.2). Existing seeds and characters compatible.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.9.1/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b66da2fdd62020f1a29f394591a7b5f29743922c2357f1b6caf4aaa9a7533c7d",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.9.1",
+      "minimum_ap_version": "0.5.0",
+      "size": 59597,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.9.1",
+      "title": "Stable 2.9.1",
+      "version_simple": "2.9.1",
+      "world_version": "2.9.1"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
