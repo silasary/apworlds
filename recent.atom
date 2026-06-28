@@ -2,141 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-27T18:33:39.751991+00:00</updated>
+  <updated>2026-06-28T00:36:40.620521+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.0.1</id>
-    <title>Spirit Valley v2.0.1</title>
-    <updated>2026-06-22T07:10:32+00:00</updated>
-    <author>
-      <name>Dotsofdarkness</name>
-    </author>
-    <content>- (Client) Fixed old masters main quest not asking for right spirit&#13;
-- (Client) Fixed Certain items not being added to inventory properly&#13;
-- (Client) Added colour to console&#13;
-&#13;
-&#13;
-V2.0.0 changelog&#13;
-- (APWorld/Client) Added Option/Logic for Disabling Main/Side Quests&#13;
-- (APWorld/Client) Added Option/Logic for Different Goals (Complete all Main Missions(deafult), Catch all Spirits, Catch all Rare Spirits, Get All Spirits to Max Affection)&#13;
-- (APWorld/Client) Added Items/Logic for Mission Warps(TumbleweedTown -&gt; CrashSite, CoconutVillage Temple -&gt; ColdHarbor, Trail18 -&gt; Trail19) when Main Missions are Disabled&#13;
-- (APWorld/Client) Added locations for EV-3 Side Quests in HQ unless Side Quests are Disabled (NOTE: these will not be filled with progression items at this time)&#13;
-- (APWorld) Fixed errors in Default Trainers&#13;
-- (Client) Fixed not sending location when defeating Alice on Trail 11&#13;
-- (Client) Made Mission Warps(TumbleweedTown -&gt; CrashSite, CoconutVillage Temple -&gt; ColdHarbor, Trail18 -&gt; Trail19) Repeatable&#13;
-- (Client) Made Quest/Boss battles still happen when Main/Side Missions are Disabled&#13;
-- (Client) Added codes "$goal" and "$stuck"&#13;
-&#13;
-INSTALLATION INSTRUCTIONS:&#13;
-&#13;
-CLIENT:&#13;
-- Have Spirit Valley Installed&#13;
-- Download Spirit Valley Archipelago plugin (See Releases for latest version)&#13;
-- Extract and copy the contents of "Spirit Valley Archipelago Client V#.#.#.zip" to the directory where "SpiritValley.exe" is&#13;
-&#13;
-APWORLD (needed for generating archieplago game):&#13;
-- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
-- Download Spirit Valley APWorld (See Releases for latest version)&#13;
-- Select "Install APWorld" in launcher and select Spirit Valley APWorld you downloaded&#13;
-- Restart launcher for APWorld to properly install&#13;
-- (Optional but Recommended)Select "Generate Template Options" to generate default spirit valley YMAL</content>
-    <link href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-epsilon</id>
-    <title>Library of Ruina v1.0.0</title>
-    <updated>2026-06-22T14:52:37+00:00</updated>
-    <author>
-      <name>Az-LastPenguin</name>
-    </author>
-    <content>As always, check known bugs and report bugs in #70 &#13;
-&#13;
-**Unsubscribe from workshop mod!**&#13;
-&#13;
-**NEW RUN REQUIRED**&#13;
-&#13;
-**Uses -epsilon .apworld**&#13;
-## What changed since -alpha:&#13;
-&lt;details&gt;&#13;
-&lt;summary&gt;In older versions&lt;/summary&gt;&#13;
-&#13;
-### In -beta:&#13;
-- FIXED: Custom books are now properly saved&#13;
-- FIXED: Now you can't put books into the invitation manually, and can't find receptions earlier that way&#13;
-- FIXED: Impossible Passive Attribution Points (Needs testing, but i'm 99% sure it's fixed now)&#13;
-- FIXED: Receptions are no longer visible after joining new session without closing the game&#13;
-- FIXED: It's not possible to open Black Silence and Distorted Ensemble before you reach those battles&#13;
-### In -gamma:&#13;
-- CHANGED: Updated reception tree looks in the game. the reception box of doom. It's only for testing, so bear with me.&#13;
-- CHANGED &amp; FIXED: Changed how run seeds work. Fixed stuff related to them (also thanks Yar) &#13;
-### In -delta:&#13;
-- ADDED: Modified passive attribution system. Can now attribute up to 16 books. Passive Limits Break Item now works&#13;
-- FIXED: Impossible keypages and pages don't drop now (i hope)&#13;
-&#13;
-&lt;/details&gt;&#13;
-&#13;
-### In -epsilon:&#13;
-- CHANGED: Updated reception tree looks in the game. It's a pretty simple Sugiyama's algorithm with minimized edge-crossing for now. Hopefully i can figure out something fancier later. Also cool placement for endgoals&#13;
-- CHANGED: The checkmark for completed stages been changed to be a "status" of the stage: Checkmark is shown when the reception is cleared (completed + all checks collected); An exclamation mark is shown when the reception can be cleared (player has right books to start the stage)&#13;
-- CHANGED: Suppressions/Realization are now accessed on the map the say way Receptions are.&#13;
-- CHANGED: Playing with "Enemies Turn Into Checks" Option now sends remaining checks on stage clear (main purpose of that option was always to allow to chip at the enemy and get more checks to potentially escape BK situation, and not fight Xiao 8 times)&#13;
-- CHANGED: Items should now get received faster when in bulk (PLEASE REPORT ANY CRASHES!)&#13;
-- CHANGED: Custom icons are now also used for BoE (not yet available tee hee), Booster Packs and library progress level&#13;
-- ADDED: Floor Stages (Abnos/Realizations) now have a roman number specifying the order of the stage&#13;
-- ADDED: Shuffle Reverb Ensemble Floors option&#13;
-- ADDED: Endgoals always unlocked option&#13;
-- FIXED: Binah librarian shortage \[By Yar]&#13;
-- FIXED: Divide by 0 error \[By Yar]&#13;
-- FIXED: Keter Realization now works properly (Snow queen part &amp; snow queen suppression are not fixed yet, also when binah is replaced by angela, angela will be locked if player doesn't have Binah item, not sure if i have to fix that)&#13;
-- FIXED: Item hints position on differently sized screens (SOMEONE PLEASE TEST AND TELL ME IF IT WORKS!)&#13;
-- FIXED: Leave stage button in the team setup window before the fight now works all the time &#13;
-- FIXED: Binah (and librarians with base keypages) can now get passives attributed&#13;
-- REMOVED: The chapter shortcut buttons for the map &amp; chapter filter for book burning screen have been removed&#13;
-- REMOVED: The option to NOT randomize the reception tree is DISCONTINUED!</content>
-    <link href="https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-epsilon"/>
-  </entry>
-  <entry>
-    <id>https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.3</id>
-    <title>Dragon Ball Z Budokai Tenkaichi 2 v0.3.3</title>
-    <updated>2026-06-22T17:42:49+00:00</updated>
-    <author>
-      <name>z3xox</name>
-    </author>
-    <content>Save Skip Option Added</content>
-    <link href="https://github.com/z3xox/Tenkaichi2AP/releases/tag/v0.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.6.0</id>
-    <title>Baldur's Gate 3 v0.5.0</title>
-    <updated>2026-06-22T20:13:22+00:00</updated>
-    <author>
-      <name>Broney</name>
-    </author>
-    <content>This is an EXPERIMENTAL release to add the BlockEntrances option, which, if set to true, locks out certain scene transitions in the game until the item is sent to the user.&#13;
-For use with the 0.6.0 bg3 mod.</content>
-    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.1.2</id>
-    <title>YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.1.2</title>
-    <updated>2026-06-22T20:51:50+00:00</updated>
-    <author>
-      <name>SilicDev</name>
-    </author>
-    <content># v0.1.2 Random starting weapon&#13;
-**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.1.1...yohane_bitdb-v0.1.2&#13;
-&#13;
-# Changes&#13;
-- Adds a `random_starting_weapon` option that replaces the default Katar starting item with a random weapon&#13;
-&#13;
-# Bug fixes&#13;
-- Logic fixes regarding Riko and Sea of Trees&#13;
-- Damage Link now actually triggers correctly depending on the DamageLink setting</content>
-    <link href="https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.5.8</id>
     <title>pokemon_stadium v0.5.8</title>
@@ -1273,5 +1143,141 @@ Bugfixes:&#13;
     </author>
     <content>**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.6.1...v0.6.2</content>
     <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.6</id>
+    <title>Feeding Frenzy 2 v0.6</title>
+    <updated>2026-06-27T18:39:58+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>## Quick Patch&#13;
+* Fix for fullscreen where some user's setups used negative coordinates&#13;
+* Logic fix: accessing level 58 requires dash</content>
+    <link href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.8</id>
+    <title>Wargroove 2 v1.1.7</title>
+    <updated>2026-06-27T19:08:49+00:00</updated>
+    <author>
+      <name>Fly Hyping</name>
+    </author>
+    <author>
+      <name>Magnemania</name>
+    </author>
+    <author>
+      <name>Akblabla</name>
+    </author>
+    <content># Features&#13;
+- New map by KoiiBlitz: Giant Issue&#13;
+&lt;img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6b2dee1d-7f35-447f-bbb5-d6a0f420efbf" /&gt;&#13;
+</content>
+    <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.2.0</id>
+    <title>Pokemon Pinball Ruby &amp; Sapphire v0.2.0</title>
+    <updated>2026-06-27T21:52:31+00:00</updated>
+    <author>
+      <name>Silvris</name>
+    </author>
+    <content># New Features&#13;
+* New Goal Option: Medals&#13;
+  * When enabled, Pokédex Medals are added to the item pool, and receiving a certain amount of them is required for goal&#13;
+* Goal Trigger&#13;
+  * Choose when goal should be checked, either at end of ball or after defeating Groudon/Kyogre/Rayquaza&#13;
+* `/check_goal` Quickly check goal progress&#13;
+* A message will now appear in-game when items are received from other players.&#13;
+* A message will now appear in-game when goal is completed.&#13;
+* Egg Bunches 1-4 have been replaced with the following:&#13;
+  * Egg Bunch (Forest): Wurmple, Ralts, Oddish&#13;
+  * Egg Bunch (Cave): Whismur, Aron, Zubat, Bagon&#13;
+  * Egg Bunch (Mountain): Spoink, Shuppet, Chimecho, Natu&#13;
+  * Egg Bunch (Desert): Sandshrew, Spinda, Trapinch, Phanpy&#13;
+  * Egg Bunch (Sea): Snorunt, Spheal, Corsola, Horsea&#13;
+&#13;
+# Bug Fixes&#13;
+* Pichu can now be DexNav'd with less than 100 Pokémon registered.&#13;
+* Fixed Special Guest dex entries being offset by 1&#13;
+* Fixed attract mode incrementing counters for ball upgrades/bumpers&#13;
+* Fixed being able to activate e-Reader cards without actually owning the e-Reader cards&#13;
+* Fixed Clamperl requiring a Fire Stone for evolution, rather than a Link Cable</content>
+    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.16.0</id>
+    <title>Metroid Dread v0.6.0</title>
+    <updated>2026-06-27T21:53:56+00:00</updated>
+    <author>
+      <name>maxdietz</name>
+    </author>
+    <author>
+      <name>Randovania Dread contributors</name>
+    </author>
+    <content>## Installation
+
+1. Download `dread.apworld` (below) and drop it into your
+   Archipelago install's `custom_worlds/` directory.
+2. Generate a multiworld using `Metroid Dread` as the game.
+3. Launch the **Dread Client** from Archipelago's Launcher (or
+   open a `.dreadap` file). The window includes an AP server address
+   bar, a **"Dread"** tab (live status + log), and a top-bar
+   **Switch-status pill** for pointing the client at your Switch or
+   Ryujinx. Click the pill → edit the IP → **Reconnect** (or use
+   `/dread_connect &lt;ip&gt;` in the command bar).
+4. Run `/setup` in the client to build and deploy the patched
+   RomFS — see the
+   [first-time setup walkthrough](https://github.com/mdietz94/dread_ap/blob/main/docs/first-time-setup.md)
+   for the click-by-click guide.
+
+See [README.md](https://github.com/mdietz94/dread_ap/blob/main/README.md)
+for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
+
+
+## What's Changed
+* fix(transport-rando): never shuffle the Itorash capsule rides (Hanubia/Raven Beak crash) by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/133
+* Repair PopTracker logic export: rebuild compiled_rules.json from the graph by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/134
+
+
+**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.15.0...v0.16.0</content>
+    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.16.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.17.0</id>
+    <title>Metroid Dread v0.6.0</title>
+    <updated>2026-06-27T22:45:02+00:00</updated>
+    <author>
+      <name>maxdietz</name>
+    </author>
+    <author>
+      <name>Randovania Dread contributors</name>
+    </author>
+    <content>## Installation
+
+1. Download `dread.apworld` (below) and drop it into your
+   Archipelago install's `custom_worlds/` directory.
+2. Generate a multiworld using `Metroid Dread` as the game.
+3. Launch the **Dread Client** from Archipelago's Launcher (or
+   open a `.dreadap` file). The window includes an AP server address
+   bar, a **"Dread"** tab (live status + log), and a top-bar
+   **Switch-status pill** for pointing the client at your Switch or
+   Ryujinx. Click the pill → edit the IP → **Reconnect** (or use
+   `/dread_connect &lt;ip&gt;` in the command bar).
+4. Run `/setup` in the client to build and deploy the patched
+   RomFS — see the
+   [first-time setup walkthrough](https://github.com/mdietz94/dread_ap/blob/main/docs/first-time-setup.md)
+   for the click-by-click guide.
+
+See [README.md](https://github.com/mdietz94/dread_ap/blob/main/README.md)
+for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
+
+
+## What's Changed
+* fix: Dread client not connecting — re-assert bridge sysmodule + Bridge IP override by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/135
+
+
+**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.16.0...v0.17.0</content>
+    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.17.0"/>
   </entry>
 </feed>

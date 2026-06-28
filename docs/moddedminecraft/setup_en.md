@@ -6,6 +6,7 @@
 - Minecraft Mod Loader
   - Currently NeoForge and Forge supported
 - [Archipelago mod for Minecraft](https://github.com/Stuff691734/Archipelago)
+- [Modded Mineacraft Apworld](https://github.com/Stuff691734/ModdedMCArchipelago)
 
 ## Joining a Multiworld Game
 
@@ -20,6 +21,7 @@
 3. A file will have been created in your .minecraft folder named output/archipelago_data.json
 4. Copy the json in that file (ctrl+a, ctrl+c) 
 5. in the yaml gotten from running `Generate Template Options` replace the curly brackets under checks with the copied json.
+    - if using the Options Creator you will need to create a new line `  checks: {}` and replace those curly brackets.
 
 ## Hosting A Game
 

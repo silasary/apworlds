@@ -1,6 +1,6 @@
 # Kirby Squeak Squad
 
-
+Kirby: Squeak Squad treasure-shuffle randomizer.
 
 
 ## Downloads

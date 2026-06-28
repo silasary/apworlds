@@ -1,9 +1,12 @@
 # Modded Minecraft
 
 ## Latest
-- <a href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/download/v3.0.0/moddedminecraft.apworld">Latest Version (3.0.0)</a>
+- <a href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/download/v3.0.1/moddedminecraft.apworld">Latest Version (3.0.1)</a>
 
 ## All Versions
+
+#### v3.0.1
+- <a href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/download/v3.0.1/moddedminecraft.apworld">https://github.com/Stuff691734/ModdedMCArchipelago/releases/download/v3.0.1/moddedminecraft.apworld</a>
 
 #### v3.0.0
 - <a href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/download/v3.0.0/moddedminecraft.apworld">https://github.com/Stuff691734/ModdedMCArchipelago/releases/download/v3.0.0/moddedminecraft.apworld</a>
