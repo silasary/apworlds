@@ -20,3 +20,6 @@
 #### v0.0.0
 - <a href="https://github.com/jm771/apworld_crossword/releases/download/v0.1.4/crossword.apworld">https://github.com/jm771/apworld_crossword/releases/download/v0.1.4/crossword.apworld</a>
 
+#### v0.0.0
+- <a href="https://github.com/jm771/apworld_crossword/releases/download/v0.1.5/crossword.apworld">https://github.com/jm771/apworld_crossword/releases/download/v0.1.5/crossword.apworld</a>
+
