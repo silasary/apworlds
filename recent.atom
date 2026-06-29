@@ -2,66 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-29T00:38:33.851991+00:00</updated>
+  <updated>2026-06-29T07:43:13.444380+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.8</id>
-    <title>Dark Cloud 1 v0.5.0</title>
-    <updated>2026-06-23T19:19:23+00:00</updated>
-    <author>
-      <name>Lizardman175</name>
-    </author>
-    <content># Dark Cloud 1 AP Rando v0.5.8&#13;
-&#13;
-## Client Change&#13;
- - Reverted a change from 0.5.6 that may be causing atla to not send locations&#13;
- - Gave Shamshir its missing 4 points of mage slayer&#13;
-&#13;
-No .apworld changes made; works with older worlds/saves</content>
-    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/tag/v4.1.2</id>
-    <title>Hammerwatch v4.1.1</title>
-    <updated>2026-06-23T21:02:54+00:00</updated>
-    <author>
-      <name>Parcosmic</name>
-    </author>
-    <content>Logic fix for AvF9: SE Button Sequence&#13;
-&#13;
-Get the latest client release here: https://github.com/Parcosmic/HammerwatchAPMod/releases&#13;
-&#13;
-If you're new or looking for some more information check out the links below:&#13;
-Setup guide: https://github.com/Parcosmic/Hammerwatch-Archipelago/blob/dev/worlds/hammerwatch/docs/setup_en.md&#13;
-Info page: https://github.com/Parcosmic/Hammerwatch-Archipelago/blob/dev/worlds/hammerwatch/docs/en_Hammerwatch.md</content>
-    <link href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/tag/v4.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/thps12-v1.2.0</id>
-    <title>Tony Hawk's Pro Skater 1 + 2 v1.2.0</title>
-    <updated>2026-06-23T22:53:48+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is a feature release that also includes improvements, tweaks and fixes.&#13;
-&#13;
-**This release SHOULD be compatible with games generated on the previous version**&#13;
-&#13;
-- **Feature:** The Universal Tracker tab and features will now be embedded in the Tony Hawk's Pro Skater 1+2 Client (provided you have the latest Universal Tracker APWorld installed)&#13;
-- **Improvement:** The Epic Game Store (EGS) version of the game is now supported (!)&#13;
-- **Improvement:** Universal Tracker will now show locations that might be possible to get out of logic&#13;
-- **Improvement:** Universal Tracker location labels will now be sorted by skater -&gt; level -&gt; location (i.e. grouped by skater). Location names remain unchanged&#13;
-- **Tweak:** Rescaled base target scores of non-objective based levels so they are less trivial&#13;
-- **Tweak:** School II's secret tape no longer has item requirements&#13;
-- **Fix:** Addressed an issue where some traps of the same type could be skipped when receiving a large quantity of items at once (fixed proposed by josephwhite; thanks!)&#13;
-- **Fix:** Added an extra linebreak at the end of the spoiler header&#13;
-&#13;
-</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/thps12-v1.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/tag/v0.2.1-alpha-hotfix</id>
     <title>Marble It Up! Ultra v0.2.0</title>
@@ -1250,5 +1195,64 @@ See the discord for more details on what is new here&#13;
 &#13;
 **Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.6.2...v0.6.3</content>
     <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.17.1</id>
+    <title>Metroid Dread v0.6.0</title>
+    <updated>2026-06-29T02:38:49+00:00</updated>
+    <author>
+      <name>maxdietz</name>
+    </author>
+    <author>
+      <name>Randovania Dread contributors</name>
+    </author>
+    <content>## Installation
+
+1. Download `dread.apworld` (below) and drop it into your
+   Archipelago install's `custom_worlds/` directory.
+2. Generate a multiworld using `Metroid Dread` as the game.
+3. Launch the **Dread Client** from Archipelago's Launcher (or
+   open a `.dreadap` file). The window includes an AP server address
+   bar, a **"Dread"** tab (live status + log), and a top-bar
+   **Switch-status pill** for pointing the client at your Switch or
+   Ryujinx. Click the pill → edit the IP → **Reconnect** (or use
+   `/dread_connect &lt;ip&gt;` in the command bar).
+4. Run `/setup` in the client to build and deploy the patched
+   RomFS — see the
+   [first-time setup walkthrough](https://github.com/mdietz94/dread_ap/blob/main/docs/first-time-setup.md)
+   for the click-by-click guide.
+
+See [README.md](https://github.com/mdietz94/dread_ap/blob/main/README.md)
+for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
+
+
+## What's Changed
+* fix(patcher): re-assert rom:/ap_config.json on auto-patch by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/137
+
+
+**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.17.0...v0.17.1</content>
+    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.17.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.1.1</id>
+    <title>SM64: Spicy Mycena 64 v0.1.1</title>
+    <updated>2026-06-29T03:50:16+00:00</updated>
+    <author>
+      <name>Alchav</name>
+    </author>
+    <content>- Fixes to BITFS logic.&#13;
+- Renames a PSS 1-Up location name.</content>
+    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.2.1</id>
+    <title>Pokemon Pinball Ruby &amp; Sapphire v0.2.1</title>
+    <updated>2026-06-29T04:42:23+00:00</updated>
+    <author>
+      <name>Silvris</name>
+    </author>
+    <content># Bug Fixes&#13;
+* Fixed Armaldo logically evolving from Cradily and not Anorith.</content>
+    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.2.1"/>
   </entry>
 </feed>
