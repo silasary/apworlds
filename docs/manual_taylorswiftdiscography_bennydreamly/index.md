@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/benny-dreamly/Manuals/releases/download/TS-4.0.0/manual_taylorswiftdiscography_bennydreamly.apworld">Latest Version (4.0.0)</a>
+- <a href="https://github.com/benny-dreamly/Manuals/releases/download/TS-5.0.0/manual_taylorswiftdiscography_bennydreamly.apworld">Latest Version (5.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
