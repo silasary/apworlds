@@ -2,63 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-30T12:47:05.547006+00:00</updated>
+  <updated>2026-06-30T18:43:35.961365+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/wolicodes/Archipelago/releases/tag/1.0.0</id>
-    <title>IslesOfSeaAndSky v1.0.0</title>
-    <updated>2026-06-24T23:28:13+00:00</updated>
-    <author>
-      <name>KimDelicious</name>
-    </author>
-    <author>
-      <name>Angrevol</name>
-    </author>
-    <author>
-      <name>Woli</name>
-    </author>
-    <author>
-      <name>Cuberyl</name>
-    </author>
-    <content>This is a fork from the work Kim Delicious has done here:&#13;
-https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky&#13;
-&#13;
-# It is similar to their latest version, which means it still requires downpatching the game to 1.2b to work.&#13;
-&#13;
-The 1.0.0 version number has nothing to do with stability or features, I just decided to change the versioning style used in the original project.&#13;
-&#13;
-# Changelog&#13;
-- Fixed a crash that happened when paired with certain games in multiworlds&#13;
-- Add a note sanity setting, courtesy of Cuberyl&#13;
-- Added a few Universal Tracker conveniences:&#13;
-  - Yaml-less support&#13;
-  - Migrated to rule builder, which means /explain works out of the box</content>
-    <link href="https://github.com/wolicodes/Archipelago/releases/tag/1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/T0r1nn/APLC/releases/tag/v0.7.12-beta</id>
-    <title>Lethal Company v0.7.12b0</title>
-    <updated>2026-06-25T00:34:09+00:00</updated>
-    <author>
-      <name>T0r1nn</name>
-    </author>
-    <content>Mod: &#13;
-* filler usage is now properly networked&#13;
-* removed unnecessary code for completing quota events (event locations don't exist past generation)&#13;
-&#13;
-Apworld:&#13;
-* the company building is now logically required to get the kidnapper fox and vain shroud entries&#13;
-* players can now choose how many quota locations can be in a single multiworld sphere [@donedonedone278] #29 &#13;
-&#13;
-Other:&#13;
-* created an example csproj.user for contributors&#13;
-* created build scripts to make testing easier for contributors [@donedonedone278] #29 &#13;
-Mod version 0.7.12 works with apworld versions 0.7.11 - 0.7.12</content>
-    <link href="https://github.com/T0r1nn/APLC/releases/tag/v0.7.12-beta"/>
-  </entry>
   <entry>
     <id>https://github.com/Simsipelago/Archipelago/releases/tag/2.0.0</id>
     <title>The Sims 4 v2.0.0</title>
@@ -1216,5 +1164,127 @@ This version is a beta. Meaning, this is meant to test the new features and it's
 ### Bugfixes&#13;
 - And logic bugs were swatted out, so neat, like tiny flies removed before repeat!</content>
     <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.5</id>
+    <title>Ratchet &amp; Clank 2 v0.6.4.5</title>
+    <updated>2026-06-30T16:54:19+00:00</updated>
+    <author>
+      <name>Evilwb</name>
+    </author>
+    <content>Testing Dynamic PINE ports for multi PCSX2 instance support.&#13;
+Also adds auto connection functionally to the client using patch data, and added the manifest json.&#13;
+Based on: https://github.com/evilwb/APRac2/releases/tag/v0.6.4&#13;
+v0.6.4.4: Now has UT integrated, and yaml-less support. Works as long as [UT](&lt;https://github.com/FarisTheAncient/Archipelago/releases?q=tracker_&amp;expanded=true&gt;) is installed. Also fixed some first person logic issues.&#13;
+Thanks to @AmondoVagyok&#13;
+Also added world version to slot data so can see if client isn't matching multiworld gen.&#13;
+Planned: More UT features. "Glitch" logic. Internal or external map. Auto map tab switching. Community suggested logic changes.&#13;
+v0.6.4.5: Fixed CRC not being forced to 8 characters.&#13;
+Also made apworld version be checked using the archipelago.json instead of manually set.&#13;
+&#13;
+### Setup&#13;
+You need every RaC2 option in your `host.yaml` setup. That means:  &#13;
+`iso_file` to a valid vanilla iso in your Archipelago directory (should be already from normal setup)  &#13;
+`iso_start` to your PCSX2 exe (Make sure to use `/`)  &#13;
+`game_ini` to a game settings file in your PCSX2's gamesettings folder.  &#13;
+(Usually `%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini`)&#13;
+&#13;
+Example:&#13;
+```yaml&#13;
+rac2_options:&#13;
+  # File name of the Ratchet &amp; Clank 2 ISO&#13;
+  iso_file: "Ratchet &amp; Clank - Going Commando (USA) (v1.01).iso"&#13;
+  # Set this false to never autostart an iso (such as after patching),&#13;
+  # Set it to true to have the operating system default program open the iso&#13;
+  # Alternatively, set it to a path to a program to open the .iso file with (like PCSX2)&#13;
+  iso_start: "C:/Emulators/(PS2) PCSX2/pcsx2-qt.exe"&#13;
+  # Set to file path to an existing PCSX2 game setting INI file to have the patcher&#13;
+  # create an appropriately named INI with the rest of the patch output. This can be used to&#13;
+  # allow you to use you own custom PCSX2 setting with patched ISO.&#13;
+  game_ini: "%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini"&#13;
+```&#13;
+&#13;
+Game settings ini example:&#13;
+```ini&#13;
+[EmuCore]&#13;
+EnablePINE = true&#13;
+PINESlot = 28011&#13;
+&#13;
+[Achievements]&#13;
+Enabled = false&#13;
+&#13;
+[MemoryCards]&#13;
+Slot1_Enable = true&#13;
+Slot2_Enable = false&#13;
+Slot1_Filename = APgames.ps2&#13;
+```&#13;
+Recommended you use your settings for vanilla RaC2. But you can make a copy with specific edits.&#13;
+So you can set an AP specific memory card like in the example above. (You don't need to add PINE settings)&#13;
+&#13;
+For normal setup if you haven't already. Check [GitHub](&lt;https://github.com/evilwb/APRac2/blob/main/docs/setup_en.md&gt;), and [Discord](&lt;https://discord.com/channels/731205301247803413/1325015730218860554/1371288772548755466&gt;). Also [World info &amp; FaQ](https://github.com/evilwb/APRac2/blob/main/README.md).&#13;
+&#13;
+### Start&#13;
+Simply run a `.aprac2` file with Archipelago. (Recommended to set to open `.aprac2` files with Archipelago by default)&#13;
+Or run the client, and use the `/start` command, and then select your desired `.aprac2` file. (Or drag `.aprac2` into the client)&#13;
+Note: You can rename `aprac2` and patched `iso` but they have to have the same name or it'll make another `iso`.&#13;
+(Same way you have to keep `.apsave`, and their `.zip` name the same if hosting locally)&#13;
+&#13;
+Changes: &lt;https://github.com/jacobmix/APRac2/compare/v0.6.4.4...v0.6.4.5?w=1&gt;&#13;
+Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.5?w=1&gt;&#13;
+&#13;
+&#13;
+# Supported Game Version&#13;
+This only works with the following version of the game for now:&#13;
+- Platform: ``Playstation 2`` (This project will not be tackling the Playstation 3 versions)&#13;
+- Version: ``1.01``&#13;
+- Serial: ``SCUS-97268``&#13;
+- CRC32: ``6D1FC798`` (PCSX2 CRC: ``38996035``)&#13;
+- MD5: ``3CBBB5127EE8A0BE93EF0876F7781EE8``&#13;
+&#13;
+There is rooms for other versions/regions to be added in the future.&#13;
+&#13;
+# Basic Setup&#13;
+## AP World Installation&#13;
+0. Download &amp; install [Archipelago Launcher](https://github.com/ArchipelagoMW/Archipelago/releases/latest).&#13;
+1. Downloaded ``rac2.apworld`` file from the release assets below.&#13;
+2. Double-click the ``rac2.apworld`` to install it to your local Archipelago's ``custom_worlds`` folder.&#13;
+3. Restart the Archipelago Launcher&#13;
+4. Create your player yaml options with the Options Creator in the launcher.&#13;
+5. Save player yamls to ``Players`` folder or send to person hosting.&#13;
+   - Hoster generates multiworld with all player yamls in the ``Players`` folder.&#13;
+   - Self host or upload gen from ``output`` to &lt;https://archipelago.gg/uploads&gt;, and share room/connection info.&#13;
+6. Open ``.aprac2`` with Archipelago or after opening the "Ratchet and Clank 2 Client".&#13;
+   - Will be asked for iso, and other ``host.yaml`` options now if not setup.&#13;
+     - MAKE SURE THE RAC2 ISO COPIED TO YOUR ARCHIPELGO FOLDER IS FULLY COPIED OR MANUALLY COPY ONE OVER!&#13;
+7. Should auto connect. Else redownload patch or manually connect with client. (Using slot name, password if set, and IP/URL &amp; port)&#13;
+   - Tip. You can connect instantly with: ``&lt;SLOT_NAME&gt;:None@&lt;IP/URL&gt;:&lt;PORT&gt;``&#13;
+Example: ``CoolPlayer:CoolerPassword@archipelago.gg:38281`` (``None`` works if no password is set)&#13;
+## PCSX2 Settings&#13;
+- Enable PINE in PCSX2&#13;
+  - In PCSX2, Under Tools, Check Show Advanced Settings&#13;
+  - In PCSX2, System -&gt; Settings -&gt; Advanced tab -&gt; PINE Settings,&#13;
+**Check** Enable and ensure Slot is set to ``28011``</content>
+    <link href="https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.18.2</id>
+    <title>Metroid Dread v0.6.0</title>
+    <updated>2026-06-30T18:14:13+00:00</updated>
+    <author>
+      <name>maxdietz</name>
+    </author>
+    <author>
+      <name>Randovania Dread contributors</name>
+    </author>
+    <content>## What's Changed
+* docs(transport-rando): confirm Itorash capsule exclusion is correct (post-RB escape crash) by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/138
+* feat(world): add Universal Tracker support by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/139
+* Bound the Cataris thermal-toggle gap, per-station /warp, and Nav Station AP hints by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/140
+* Un-hide Suitless trick + guard full accessibility for all-tricks-disabled seeds by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/141
+* ci(release): fix devkitPro pacman 403 (Cloudflare WAF) in sysmodule build by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/142
+
+
+**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.17.1...v0.18.2</content>
+    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.18.2"/>
   </entry>
 </feed>

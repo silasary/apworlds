@@ -47,6 +47,9 @@
 #### v0.6.0
 - <a href="https://github.com/mdietz94/dread_ap/releases/download/v0.17.1/dread.apworld">https://github.com/mdietz94/dread_ap/releases/download/v0.17.1/dread.apworld</a>
 
+#### v0.6.0
+- <a href="https://github.com/mdietz94/dread_ap/releases/download/v0.18.2/dread.apworld">https://github.com/mdietz94/dread_ap/releases/download/v0.18.2/dread.apworld</a>
+
 #### v0.5.0
 - <a href="https://github.com/mdietz94/dread_ap/releases/download/v0.11.0/dread.apworld">https://github.com/mdietz94/dread_ap/releases/download/v0.11.0/dread.apworld</a>
 
