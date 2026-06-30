@@ -136,6 +136,21 @@
       "version_simple": "9.1.0",
       "world_version": "9.1.0b10"
     },
+    "v9.1.0-beta11": {
+      "created_at": "2026-06-29T21:08:13Z",
+      "description": "# OoT Randomizer APWorld v9.1.0-beta11 Update\r\n\r\nThis is a beta build and might still include bugs, please test it thoroughly before trusting it in your multiworlds.\r\n\r\n## Changes:\r\n### Feat:\r\n- Readd silver rupee pouches and chest specific texture multiselect\r\n### Fix:\r\n- Cleanup duplicated item ids.\r\n\r\nPlease note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.\r\nEven after deletion, the \"Open Patch\" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct \"Ocarina of Time Client\" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says \"Archipelago Ocarina of Time Client 0.6.x\" in the top bar with no info about the apworld version, you are using the old client.",
+      "download_url": "https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta11/oot.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c5f295752af39a5070aafa885e7d431571b42804103d3f60e43a8e1a3bfbd86f",
+      "html_url": "https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-beta11",
+      "minimum_ap_version": "0.6.4",
+      "size": 3046406,
+      "source_url": "https://api.github.com/repos/TreZc0/OoTR-APWorld",
+      "tag": "v9.1.0-beta11",
+      "title": "v9.1.0-beta11",
+      "version_simple": "9.1.0",
+      "world_version": "9.1.0b11"
+    },
     "v9.1.0-beta2": {
       "created_at": "2026-05-23T17:20:02Z",
       "description": "Updated OoT Randomizer APWorld, based on the original OoTR randomizer at https://github.com/OoTRandomizer/OoT-Randomizer, on par with the latest update v9.1.0.\r\n\r\nThis is a beta build and might still include bugs, please test it thoroughly before trusting it in your multiworlds.\r\n\r\nOptions changed, so generate a new default template. Not compatible with beta-1.\r\n\r\nChanges:\r\n\r\nFeat:\r\n- Voice Patching like in upstream through the Adjuster\r\n- Full Child Trade Shuffle options\r\n- Shuffle_dungeon_rewards restriction with boss entrance shuffle removed\r\n\r\nFix:\r\n- Hylian Loach Location mismatch\r\n- Grotto Beehives actor flag mismatch\r\n- Freezes of client and Adjuster on start / patching\r\n- Compass not exposing dungeon info\r\n- Several bugs that would reduce successful generation percentage\r\n- Special Hints for out of world items would crash generation\r\n- Bigger consumables packs like Bombs (10) would only send out 5 of each\r\n- Adult freestanding rupees not sending\r\n\r\n\r\nChore:\r\n- Cleanup of Emu bridge layer to not required a hardcoded dungeon location list\r\n\r\nPlease note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.",

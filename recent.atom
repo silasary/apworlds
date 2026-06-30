@@ -2,140 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-06-29T18:48:12.834290+00:00</updated>
+  <updated>2026-06-30T00:43:03.039688+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0</id>
-    <title>Crash2 v0.4.0</title>
-    <updated>2026-06-24T02:13:16+00:00</updated>
-    <author>
-      <name>Sim10XXX</name>
-    </author>
-    <author>
-      <name>alexdass</name>
-    </author>
-    <content>Number goes up to v0.4.0, more features, here's what's new:&#13;
-&#13;
-### Life-Sanity:&#13;
-- Adds 42 checks for collecting free-standing lives (this doesn't include lives spawned from boxes)&#13;
-&#13;
-### Life Count Checks:&#13;
-- Option to add checks for reaching certain life counts&#13;
-- This can be any combination of numbers from 5-99&#13;
-- The randomization logic will consider higher life counts as occurring "later"&#13;
-  - This effect is accomplished by making the logic think that higher life counts require a larger amount of crystals&#13;
-&#13;
-### Bug Fixes:&#13;
-- Added missing logic for regular exits when Gimmick Lock is enabled&#13;
-- The client will now print errors if you reset the console or connect before the game loads, notifying you to restart/reconnect the client&#13;
-&#13;
-### Death Link:&#13;
-### Gimmick Lock:&#13;
-### Location Groups:&#13;
-- If you haven't kept up with the pre-releases up to this point, you can find their [release notes here](https://github.com/Sim10XXX/C2AP/releases) for more information on these features, and other bug fixes&#13;
-&#13;
-### Known Issues:&#13;
-- When using warp randomizer, exiting Totally Fly always puts you in the 4th warp room, which can give access to the 4th warp room early&#13;
-- Respawning at the last checkpoint without Polar in each Polar level can result in a double-death&#13;
-- Going through a Polar/Jetpack level without Polar/Jetpack unlocked can sometimes crash the game&#13;
-  - This is due to limitations of the game itself (since you're not expected to be running around as regular Crash)&#13;
-- Also use [GitHub issues](https://github.com/Sim10XXX/C2AP/issues) or the [Crash 2 AP thread](https://discord.com/channels/731205301247803413/1371461990794657863) to report bugs or suggest stuff</content>
-    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.0</id>
-    <title>pokemon_stadium v0.6.0</title>
-    <updated>2026-06-24T03:05:00+00:00</updated>
-    <author>
-      <name>jciii91</name>
-    </author>
-    <content>Added new options for setting the badges required to open Victory Road and setting how many GLC keys are in the starting inventory.</content>
-    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.2</id>
-    <title>Sonic Adventure DX v1.2.2</title>
-    <updated>2026-06-24T03:58:14+00:00</updated>
-    <author>
-      <name>ClassicSpeed</name>
-    </author>
-    <content>&#13;
-## [v1.2.2] - 2026-06-26&#13;
-&#13;
-### Added:&#13;
-&#13;
-- Re-added traps during demo mode.&#13;
-- The adventure field is now open during demo mode if the "all open" setting is enabled.&#13;
-- Entering blocked levels will no longer send you back, you can now enter the level.&#13;
-    - This won't be taken into account for logic.</content>
-    <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.4.1</id>
-    <title>Ship of Harkinian v1.4.1</title>
-    <updated>2026-06-24T12:53:05+00:00</updated>
-    <author>
-      <name>aMannus</name>
-    </author>
-    <author>
-      <name>jeromkiller</name>
-    </author>
-    <author>
-      <name>ScipioWright</name>
-    </author>
-    <author>
-      <name>Fanta-Tanked</name>
-    </author>
-    <author>
-      <name>Sam</name>
-    </author>
-    <author>
-      <name>DaComputerNerd717</name>
-    </author>
-    <author>
-      <name>A-Green-Spoon</name>
-    </author>
-    <author>
-      <name>StuBob</name>
-    </author>
-    <author>
-      <name>Tzuf23</name>
-    </author>
-    <author>
-      <name>mattman107</name>
-    </author>
-    <author>
-      <name>Varuuna</name>
-    </author>
-    <author>
-      <name>Lorithan</name>
-    </author>
-    <author>
-      <name>BootsinSoots</name>
-    </author>
-    <author>
-      <name>briaguya</name>
-    </author>
-    <author>
-      <name>Sirius902</name>
-    </author>
-    <author>
-      <name>ThatHypedPerson</name>
-    </author>
-    <content>Our previous release introduced a new system to filter out characters which are not supported in the Ocarina of Time font during save file creation. However due to an issue in our supported character table all lowercase L's were getting cut too.&#13;
-&#13;
-This patch release fixes this issue and should be backwards compatible with previously generated 1.4.0 multiworlds.&#13;
-You will have to create a new save file in order in order for the changes to take effect on an existing slot.&#13;
-&#13;
-## Full change log&#13;
- - Fixed lowercase L's being seen as an unsupported character.&#13;
- - Fixed logic issue with the wolfos grotto in the sacred forest meadow.&#13;
- - Fixed logic issue with returning from the Deku tree boss room to the basement.</content>
-    <link href="https://github.com/HarbourMasters/Archipelago-SoH/releases/tag/SoH_1.4.1"/>
-  </entry>
   <entry>
     <id>https://github.com/aXu-AP/archipelago-double-dash/releases/tag/v1.0.1</id>
     <title>Mario Kart Double Dash v1.0.1</title>
@@ -260,7 +131,7 @@ This release should fix some stability issues, but there are still some glaring 
     <title>Age Of Mythology Retold v1.3.4</title>
     <updated>2026-06-25T15:43:32+00:00</updated>
     <author>
-      <name>1-800-thewolf</name>
+      <name>1.800.thewolf</name>
     </author>
     <content>## Small Improvements and New Options&#13;
 - 👁️ New option to exclude 30. All is Not Lost from the pool. This is the scenario that has a **mandatory** 20 minute wait 😬&#13;
@@ -1252,5 +1123,96 @@ for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
     </author>
     <content>**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.6.3...v0.6.4</content>
     <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.1</id>
+    <title>Valheim v0.2.1</title>
+    <updated>2026-06-29T19:13:36+00:00</updated>
+    <author>
+      <name>xyzzy44</name>
+    </author>
+    <content>Added additional logic requirements to force a minimum level of equipment to be available to the player as the seed progresses.&#13;
+Fixed Forest Troll trophy.&#13;
+</content>
+    <link href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/1-800-thewolf/AoM-Archipelago/releases/tag/v1.3.5</id>
+    <title>Age Of Mythology Retold v1.3.5</title>
+    <updated>2026-06-29T19:59:53+00:00</updated>
+    <author>
+      <name>1.800.thewolf</name>
+    </author>
+    <content>## Generation Improvements&#13;
+- ⚙️ Generation used to get upset for edge cases which is smoother now. One of these is vanilla gods + NA campaign.&#13;
+- ⚖️ Better point requirement generation so lofty scenarios are still doable.&#13;
+&#13;
+### 👍 Fully compatible with current games v1.1+&#13;
+&#13;
+**Full Changelog**: https://github.com/1-800-thewolf/AoM-Archipelago/compare/v1.3.4...v1.3.5</content>
+    <link href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/tag/v1.3.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/tag/v1.1.1</id>
+    <title>Celeste (Open World) v1.1.1</title>
+    <updated>2026-06-29T22:00:33+00:00</updated>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <content>v1.1.1 of the Archipelago Open World mod and APWorld for Celeste.&#13;
+&#13;
+Mod is fully backwards-compatible with seeds generated with v1.0.x APWorlds.&#13;
+&#13;
+Changelog since v1.0.7:&#13;
+&#13;
+```&#13;
+### Features:&#13;
+&#13;
+- New Goal&#13;
+    - Poetry Slam&#13;
+        - Collect all 16 Crystal Hearts and assemble the poem in the correct order to finish&#13;
+- New Items&#13;
+    - Yellow Torches&#13;
+        - `Torches` have been renamed to `Blue Torches`&#13;
+    - Tiny Trap&#13;
+- Logic Difficulty option&#13;
+    - Developer Intended&#13;
+    - Vanilla Movement&#13;
+    - Assist Mode&#13;
+- Move Shuffle options&#13;
+    - Dash Shuffle&#13;
+        - Unified&#13;
+        - Cardinal Loose&#13;
+        - Cardinal Restrictive&#13;
+        - Octal&#13;
+    - Climb Shuffle&#13;
+    - Crouch Shuffle&#13;
+- Split Interactables option&#13;
+    - Separate Interactable Items per Level, per Side, or per Level and Side&#13;
+- Golden Amnesty option&#13;
+    - Select how many deaths it takes for a full reset with a Golden Strawberry&#13;
+- DeathLink Receipt Style option&#13;
+    - Death&#13;
+    - Restart Chapter&#13;
+- Reduce Raspberries option&#13;
+    - Reduces the number of Raspberry items in the pool&#13;
+- Torch Behavior option&#13;
+    - Determines how torches behave (if you have the relevant item)&#13;
+- Custom Strawberry sprites by @Sterlia&#13;
+- Per-level deaths are now saved between play sessions&#13;
+- YAMLless Universal Tracker support&#13;
+- Swap to RuleBuilder for logic rules&#13;
+```</content>
+    <link href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/tag/v1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wildham0/FF1PRAP/releases/tag/0.6.2</id>
+    <title>FF1 Pixel Remaster v0.6.0</title>
+    <updated>2026-06-29T23:39:11+00:00</updated>
+    <author>
+      <name>wildham</name>
+    </author>
+    <content>- Fix event scripts hanging after receiving the ship on overworld</content>
+    <link href="https://github.com/wildham0/FF1PRAP/releases/tag/0.6.2"/>
   </entry>
 </feed>

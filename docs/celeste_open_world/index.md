@@ -4,7 +4,7 @@ Celeste (Open World) is a randomizer for the original Celeste. In this acclaimed
 
 
 ## Downloads
-- <a href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/download/v1.0.7/celeste_open_world.apworld">Latest Version (1.0.7)</a>
+- <a href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/download/v1.1.1/celeste_open_world.apworld">Latest Version (1.1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

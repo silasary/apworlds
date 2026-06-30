@@ -6,7 +6,7 @@ Items are created in `create_items`.
 
 
 ## Downloads
-- <a href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/download/0.2.0/valheim.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/download/0.2.1/valheim.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
