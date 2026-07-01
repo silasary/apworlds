@@ -7,18 +7,19 @@
 - Garry's Mod
 - Half-Life 2 (Not strictly required, but the default configs included are mainly made for HL2 maps, so you'll want it for your test run.)
 - [GWSockets](https://github.com/FredyH/GWSockets/releases) - More information on which version to grab can be found further down.
-- GMAP
-- apAdventure itself
+- [GMAP](https://github.com/ChrisCj8/gm_ap/releases)
+- [apAdventure itself](https://github.com/ChrisCj8/ap_adventure/releases)
+- Other games or workshop content may also be required depending on what configs are chosen for your run, apAdventure has a requirements system that you can use to check what else you need in game, and can create a addon preset for you to download/activate required workshop items automatically.
 
 ## Installation (for Players)
 
 1.  Install GWSockets
-    
+
     1. Grab the right version of GWSockets depending on your operating system and what version of GMod you're playing.
 
         Whether or not you need the 32 or 64-bit version of GWSockets doesn't depend on your OS, but on whether or not you're playing on the 64-bit branch of GMod. If you don't know what that means or think you may want to switch between the two in the future you can just get both, GMod will automatically load the correct version.
 
-        GMAP was mainly coded on GWSockets 1.2.0, 1.3 should work but hasn't been tested much.
+        GMAP was mainly coded on GWSockets 1.3.0, 1.4.x should work but hasn't been tested much.
 
         Linux is also completely untested.
 
@@ -46,8 +47,8 @@
 
     3. Install the apAdventure apworld like any other apworld.
 
-    4. (Optional) After starting the Archipelago Launcher with the apAdventure apworld installed, open up the `host.yaml` file in your Archipelago install folder. There should be a new section in it called `gmod_apadv_options` with a single setting called `gmodpath`. Put the path to your GMod installation folder here. (It should end with `../steamapps/common/GarrysMod/`, you may have to replace the backslashes (\\) with normal slashes (/) if you're copying it from your address bar, since the YAML format treats backslashes differently.)
-    
+    4. (Optional) After starting the Archipelago Launcher with the apAdventure apworld installed, a new folder called "gmod_apadv" should have been created in your Archipelago install directory, containing a file called "gmodpath.txt". Put the path to your GMod install folder into this file. The path should end with `../steamapps/common/GarrysMod/`.
+
         Doing this lets Archipelago load map configs and item sets you create in GMod directly from your data folder, meaning you won't have to copy them to your Archipelago folder every time you want to test them out.
 
 ### Recommendations
@@ -79,7 +80,8 @@ Note that if the host DOES have the GMod path set up in their `host.yaml` and is
     - The reason you can't enter this information on the map selection screen directly is because that screen does not offer a password field that hides whatever you're putting into it.
 7. Hit "Connect". If you are not in the right starting map for your current run, you will be sent there automatically.
     - When reconnecting to an already started run later, you can also go straight to a map you have already visited. You will only be sent back to your starting map if you visit a map you have not reached through a level transition before. You can use this to "fast travel" to already visited maps.
-8. (Optional, only in singleplayer) Open the console and type in `sv_pause_sp 0`.\
+8. Once connected, you can click the "Check Requirements" button to open the requirements menu. This menu lets you check if all requirements needed for your run are installed. Further explanations on how to use this menu can be found ingame.
+9. (Optional, only in singleplayer) Open the console and type in `sv_pause_sp 0`.\
     GMods Lua Environment gets paused when the game is paused in singleplayer, which eventually causes the game to lose connection with the AP server. Changing this console variable stops the game from pausing when the player brings up the main menu as if they were playing in multiplayer, which prevents this.\
     The game reconnects automatically after this happens, but this is still an option if you want other players to not get spammed with (dis)connection messages.
 
@@ -108,6 +110,7 @@ apAdventure allows custom items to be defined through Lua, but this feature is c
 #### Console Commands
 - `apadventure_patch_changelevel 0/1` - Controls whether or not apAdventure should replace `trigger_changelevel` brush entities with its own custom version, which disables its normal functionality and makes it visible to you, stopping you from accidentally triggering level transitions and making you more aware of where they are. Defaults to 0.
 - `apadventure_patch_loadsaved 0/1` - Controls whether or not apAdventure should replace `player_loadsaved` point entities with its own custom version, which disables it's normal functionality. These entities normally exist to reload the game whenever the player reaches a certain fail state, which may be triggered accidentally while editing configs, causing you to lose progress. Defaults to 0.
+- `apadventure_editor_allow_static_overwrite 0/1` - Allows players to save maps into map groups that also exist in data_static (the configs included with the apworld). Mainly exists to prevent people from accidentally overwriting stuff that they shouldn't. You can turn this on if you think you know what you're doing. Defaults to 0.
 - `apadventure_editor_processitemdefs "[name]"` - Converts an item set defined in Lua into a JSON format so the generator can use it. You won't need this if you're not making your own item sets.
 
 ### apAdventure only

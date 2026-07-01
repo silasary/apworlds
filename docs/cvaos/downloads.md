@@ -12,13 +12,13 @@
 - <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.20.6/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.20.6/cvaos.apworld</a>
 
 #### v2026.6.16
-- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.20.5/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.20.5/cvaos.apworld</a>
+- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/2026.06.16/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/2026.06.16/cvaos.apworld</a>
 
 #### v2026.6.16
 - <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.17/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.17/cvaos.apworld</a>
 
 #### v2026.6.16
-- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/2026.06.16/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/2026.06.16/cvaos.apworld</a>
+- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.20.5/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.20.5/cvaos.apworld</a>
 
 #### v2026.6.13.2
 - <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.13.2/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.13.2/cvaos.apworld</a>
