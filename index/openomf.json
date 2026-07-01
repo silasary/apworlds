@@ -1,0 +1,44 @@
+{
+  "authors": [
+    "stubob"
+  ],
+  "game": "One Must Fall: 2097",
+  "github": "https://github.com/stubobis1/archipelago-openomf",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "0.0.01": {
+      "created_at": "2026-06-17T03:09:19Z",
+      "description": "# One Must Fall: 2097 \u2014 Archipelago World v0.0.01\r\n\r\nInitial release of the OpenOMF Archipelago integration.\r\n\r\n---\r\n\r\n## What is this?\r\n\r\nOne Must Fall: 2097 is a 1994 robot fighting game. You pilot a Human Assisted Robot (HAR) through a series of tournaments, earning prize money to upgrade your machine and advance to harder competitions.\r\n\r\nThis Archipelago world randomizes which HARs you can use and where HAR/pilot upgrades come from. Instead of buying everything freely in the Mechlab, upgrades arrive as items \u2014 either from your own checks or sent to you by other players in a multiworld.\r\n\r\n---\r\n\r\n## How to play\r\n\r\n1. Connect to your Archipelago server from the OpenOMF main menu (**Archipelago** option).\r\n2. You receive your starting HAR immediately on connect.\r\n3. Fight through tournaments. Each match win and each tournament clear sends a check to the AP server.\r\n4. Items you receive (HAR unlocks, stat upgrades, money bundles) are applied automatically. Stat upgrades take effect at the start of your next match.\r\n5. Win your goal tournament to complete the seed.\r\n\r\n### Tournaments\r\n\r\nThe four tournaments unlock in order as you collect **Progressive Tournament Access** items:\r\n\r\n| Tournament | Access Required |\r\n|---|---|\r\n| North American Open | 0 (always available) |\r\n| Katushai Challenge | 1 |\r\n| WAR Invitational | 2 |\r\n| World Championship | 3 |\r\n\r\nRegistration fees still apply \u2014 you need money in hand to enter each tournament. Earn it by winning matches and collecting money bundles from the item pool.\r\n\r\n### Mechlab and Training\r\n\r\nPurchases in the Mechlab and training sessions also count as checks. You still pay money when you upgrade, but the actual stat boost comes from the AP server \u2014 you might pay for a HAR upgrade and receive a pilot stat instead (or a money bundle for another player). Higher upgrade tiers require tournament access to unlock, matching the tournament progression.\r\n\r\n---\r\n\r\n## How randomization works\r\n\r\n### Items\r\n\r\n| Item | Quantity | Effect |\r\n|---|---|---|\r\n| HAR Unlock | 11 (1 per HAR) | Lets you pilot that HAR; starting HAR is pre-granted |\r\n| Progressive Tournament Access | 3 | Each unlocks the next tournament in order |\r\n| Progressive [HAR] [Stat] | up to 9\u00d7 per stat per HAR | Raises that HAR's ARM Power / LEG Power / ARM Speed / LEG Speed / Armor / Stun Resist by 1 |\r\n| Progressive [HAR] Enhancement | 1\u20133\u00d7 per HAR | Applies the next enhancement upgrade for that HAR |\r\n| Progressive Power / Agility / Endurance | up to 25\u00d7 per stat | Raises your pilot stat by 1 |\r\n| Ability to change HAR color | 1 | Unlocks color customization in the Mechlab |\r\n| Money (Small) / Money (Large) | filler | Credits deposited directly to your account |\r\n\r\nHAR Unlocks and Tournament Access are **progression** items \u2014 the AP server guarantees they appear where they are reachable. Stat upgrades are **useful** but not required for logic. Money bundles are **filler**.\r\n\r\n### Locations (checks)\r\n\r\n| Check type | How to clear |\r\n|---|---|\r\n| `[Tournament] - Beat [Pilot]` | Win that match in tournament mode |\r\n| `Win [Tournament] (1/2/3)` | Win the full tournament (3 checks per tournament) |\r\n| `Buy [HAR] [Stat] Upgrade [N]` | Purchase that upgrade in the Mechlab |\r\n| `Train [Stat] Level [N]` | Purchase that training level |\r\n\r\nRestricted pilots (difficulty-gated secret opponents) are excluded from the check pool.\r\n\r\n---\r\n\r\n## YAML options\r\n\r\n```yaml\r\ngame: One Must Fall: 2097\r\n\r\nOne Must Fall: 2097:\r\n  goal_tournament: world_championship     # north_american_open | katushai_challenge | war_invitational | world_championship | all_tournaments\r\n  starting_har: random_selection          # jaguar | shadow | thorn | pyros | electra | katana | shredder | flail | gargoyle | chronos | nova | random_selection\r\n  har_stat_max: 9                         # 1\u201320 (vanilla = 9); sets how many upgrade levels exist per HAR stat\r\n  pilot_stat_max: 25                      # 1\u201350 (vanilla = 25); sets how many training levels exist per pilot stat\r\n  buy_cost_factor: 100                    # 10\u20131000; 100 = vanilla prices, 200 = 2\u00d7 per tier\r\n  money_small_value: 3000                 # base credits for a Money (Small) item\r\n  money_large_value: 15000               # base credits for a Money (Large) item\r\n```\r\n\r\nMoney values are multiplied in-game by a per-tournament prize modifier (1\u00d7 NAO / 2\u00d7 Katushai / 3\u00d7 WAR / 6\u00d7 World Championship).\r\n\r\n---\r\n\r\n## Known limitations (v0.0.01)\r\n\r\n- Difficulty-gated secret pilots are not included in the check pool.\r\n- No deathlink support yet.\r\n- No traps\r\n\r\n---\r\n\r\n## Setup\r\n\r\nSee [setup_en.md](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/en_One%20Must%20Fall%202097.md\r\n) for installation and connection instructions.\r\n\r\nIssues: https://github.com/stubobis1/archipelago-openomf/issues\r\n",
+      "download_url": "https://github.com/stubobis1/archipelago-openomf/releases/download/0.0.01/openomf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "924fc5b7e22ecfdf908f96bddfaa1e7e5d172238cc8d16b9b8e6f927e5c18941",
+      "html_url": "https://github.com/stubobis1/archipelago-openomf/releases/tag/0.0.01",
+      "minimum_ap_version": "0.6.7",
+      "size": 12019,
+      "source_url": "https://api.github.com/repos/stubobis1/archipelago-openomf",
+      "tag": "0.0.01",
+      "title": "Open OMF Archipelago Randomizer - Alpha 0.0.01 release",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "0.0.02": {
+      "created_at": "2026-06-20T21:58:34Z",
+      "description": "# One Must Fall: 2097 \u2014 Archipelago World v0.0.02\r\n\r\n**Full Changelog:** https://github.com/stubobis1/archipelago-openomf/compare/0.0.01...0.0.02\r\n\r\n> OMF:2097 was released as freeware by 3DO in 1999. The game data is freely and legally downloadable.\r\n\r\n---\r\n\r\n### What's New\r\n\r\n#### OpenOMF Client \u2014 major AP refactor\r\n\r\nAll AP logic consolidated into `archipelago/` submodule. Non-AP source files now have minimal diffs vs upstream OpenOMF. This makes the client easier to maintain and rebase against upstream.\r\n\r\nNew modules:\r\n- `ap_alert` \u2014 in-game alert/notification system for received items\r\n- `ap_arena` \u2014 arena scene AP integration\r\n- `ap_sgmanager` \u2014 AP save/load handling (extracted from core `sgmanager`)\r\n\r\nImprovements:\r\n- Mechlab AP logic fully encapsulated in `ap_mechlab`\r\n- Windows cross-compile Dockerfile added (`Dockerfile.build-windows`)\r\n- Removed committed build artifacts (`build2/` cache)\r\n\r\n#### Tooling (parent repo)\r\n\r\n- `build.sh`, `build-windows.sh` \u2014 Linux and Windows cross-compile build scripts\r\n- `build-run.sh`, `clean-build-run.sh` \u2014 quick dev iteration scripts\r\n- `bump_version.sh` \u2014 version bump automation across submodules\r\n- Removed old `ap_generate.py` and `test_omf.yaml`\r\n\r\n#### AP World\r\n\r\n- Version bump to 0.0.02 (no logic changes from 0.0.01)\r\n\r\n---\r\n\r\n### Links\r\n\r\n- [Setup guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/setup_en.md)\r\n- [Game guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/en_One%20Must%20Fall%202097.md)\r\n- [OpenOMF client](https://github.com/stubobis1/openomf)\r\n- [AP world](https://github.com/stubobis1/archipelago-openomf-apworld)\r\n- [Issues](https://github.com/stubobis1/archipelago-openomf/issues)\r\n\r\n---\r\n",
+      "download_url": "https://github.com/stubobis1/archipelago-openomf/releases/download/0.0.02/openomf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e1d1f4177f6e326b052d4ea05b539a7d9876ca5afae123d34b670b7151a39059",
+      "html_url": "https://github.com/stubobis1/archipelago-openomf/releases/tag/0.0.02",
+      "minimum_ap_version": "0.6.7",
+      "size": 12939,
+      "source_url": "https://api.github.com/repos/stubobis1/archipelago-openomf",
+      "tag": "0.0.02",
+      "title": "0.0.02",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2"
+    }
+  }
+}

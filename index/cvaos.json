@@ -1,0 +1,28 @@
+{
+  "authors": [
+    "dem1995"
+  ],
+  "game": "Castlevania - Aria of Sorrow",
+  "github": "https://github.com/anonymous-heap/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "world_version"
+  ],
+  "versions": {
+    "cvaos-apworld-2026.06.22": {
+      "created_at": "2026-06-23T11:03:50Z",
+      "description": "Requires Archipelago 0.6.4 or greater.\r\n\r\nDrop cvaos.apworld into your Archipelago install under /lib/worlds. To patch a ROM, drag the .apcvaos patch onto ArchipelagoLauncher.exe.\r\n\r\n## Bug-fixing and more progression-balancing\r\n### Features\r\n- **Vertical entrances no longer get a free pass**: 25 vertical entrances had erroneous reachability logic due to a flag (varying vertical portal jump) defaulting to \"accepted\". These were supposed to just be a flag to take a closer look for when entrance randomization happens.\r\n- **Floor/Ceiling Breakability in Logic**: Hidden ceiling and floor entrances are now part of logic. This is trivial for ceiling entrances in the current rando (due to the Winged Skeleton acquisition at the start). For floor entrances it's also likely trivial, but technically you do need equipment to be able to bust the floor - this update guarantees you will when the time comes.\r\n- **Pickup-balancing**: Due to a number of items entering technical progression (ceiling and floor breaking), this required updating anyway. However, there was some desire for more liberal spreads of some decent equipment early on (there was a very unlucky run yesterday). I've un-clumped some of the start-of-game pickups to try to encourage this.",
+      "download_url": "https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.06.22/cvaos.apworld",
+      "has_manifest": true,
+      "hash_sha256": "382480b2f1b6e0660d90f7e2a22c7834eaae2b697afb2ae28670b06f62cc3e91",
+      "html_url": "https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.06.22",
+      "prerelease": true,
+      "size": 386993,
+      "source_url": "https://api.github.com/repos/anonymous-heap/Archipelago",
+      "tag": "cvaos-apworld-2026.06.22",
+      "title": "Castlevania: Aria of Sorrow Archipelago 2026.06.22",
+      "version_simple": "2026.6.22",
+      "world_version": "2026.6.22"
+    }
+  }
+}
