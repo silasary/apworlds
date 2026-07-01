@@ -13,7 +13,7 @@ import yaml
 from common import get_or_add_github_repo, update_index_from_github, index
 from worlds.apworld_manager.world_manager import RepositoryManager
 
-REPO_REGEX = r"(https://github\.com/[a-zA-Z0-9_-]+/[a-zA-Z0-9_-]+)"
+REPO_REGEX = r"(https://github\.com/[a-zA-Z0-9_-\.]+/[a-zA-Z0-9_-\.]+)"
 
 if os.path.exists("queue.txt"):
     with open("queue.txt") as f:
