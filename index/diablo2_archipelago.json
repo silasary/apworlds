@@ -571,6 +571,21 @@
       "version_simple": "2.9.8",
       "world_version": "2.9.8"
     },
+    "Stable-2.9.9": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 2.9.9\n\nItem-delivery reliability fixes. Every reward you earn now actually reaches you.\n\n## Fixes\n\n- **Set / Unique gear from checks no longer disappears.** Random set and unique\n  items delivered from a check could silently vanish instead of landing in your\n  inventory. Delivery now uses the exact same reliable path the other rewards use\n  and drops the extra identity handling that was desyncing the item. Charms, set\n  and unique gear all arrive every time (and if the bags are full, the item drops\n  on the floor next to you instead of being lost).\n\n- **Boss-loot bonus now drops its full table.** The per-boss loot bonus was\n  delivering far fewer items than intended \u2014 rare-quality rolls (and some set /\n  unique rolls) were failing to spawn and quietly dropped, so a boss that should\n  give 3\u20135 items often gave only 1\u20132. Every rolled item now falls back through\n  rare \u2192 magic \u2192 normal until a real item is created, so each boss reliably drops\n  its whole loot table with a proper mix of qualities.\n\n## Notes\n\n- No changes to the launcher this release \u2014 it stays on the current version.\n- Standalone and Archipelago both get the fixes.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-2.9.9/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "eee1bab731dd4fd8f43d459e86f06783ea863020be1d0beb96d27ef9e5cf2459",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-2.9.9",
+      "minimum_ap_version": "0.5.0",
+      "size": 59597,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-2.9.9",
+      "title": "Stable 2.9.9",
+      "version_simple": "2.9.9",
+      "world_version": "2.9.9"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",

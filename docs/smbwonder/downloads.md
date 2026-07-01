@@ -1,9 +1,15 @@
 # SMBWonder
 
 ## Latest
-- <a href="https://github.com/mdietz94/smbw_ap/releases/download/v0.8.2/smbwonder.apworld">Latest Version (0.8.2)</a>
+- <a href="https://github.com/mdietz94/smbw_ap/releases/download/v0.8.4/smbwonder.apworld">Latest Version (0.8.4)</a>
 
 ## All Versions
+
+#### v0.8.4
+- <a href="https://github.com/mdietz94/smbw_ap/releases/download/v0.8.4/smbwonder.apworld">https://github.com/mdietz94/smbw_ap/releases/download/v0.8.4/smbwonder.apworld</a>
+
+#### v0.8.3
+- <a href="https://github.com/mdietz94/smbw_ap/releases/download/v0.8.3/smbwonder.apworld">https://github.com/mdietz94/smbw_ap/releases/download/v0.8.3/smbwonder.apworld</a>
 
 #### v0.8.2
 - <a href="https://github.com/mdietz94/smbw_ap/releases/download/v0.8.2/smbwonder.apworld">https://github.com/mdietz94/smbw_ap/releases/download/v0.8.2/smbwonder.apworld</a>
