@@ -2,293 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-01T00:38:37.700041+00:00</updated>
+  <updated>2026-07-01T07:33:21.739384+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/Panda291/Archipelago/releases/tag/v0.2.1b</id>
-    <title>Ratchet &amp; Clank v0.2.1b0</title>
-    <updated>2026-06-25T18:17:36+00:00</updated>
+    <id>https://github.com/NyanMC/build-a-jetpack/releases/tag/0.1.0</id>
+    <title>Build a Jetpack v0.1.0</title>
+    <updated>2026-06-26T07:53:18+00:00</updated>
     <author>
-      <name>Panad</name>
+      <name>ChromaNyan</name>
     </author>
-    <author>
-      <name>Myth197</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <content>Generation stability improvements:&#13;
-&#13;
-- Starting items now work again&#13;
-- Progressive packs should no longer cause generation failures&#13;
-- Standardised the naming convention of items and locations to match the ingame naming (mostly)&#13;
-- Added a mwgg compatible manifest&#13;
-- Gold weapons now actually put respective checks in logic if progressive weapons are set to normal (like the gold bomb glove will make Novalis Cave gold bolt shown in logic)&#13;
-- Extra weapons that made sense were added to the ranged weapons and explosive weapons logic requirements</content>
-    <link href="https://github.com/Panda291/Archipelago/releases/tag/v0.2.1b"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-86</id>
-    <title>Borderlands 2 v86</title>
-    <updated>2026-06-25T21:03:16+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
-&#13;
-new stuff (since 0.5.3):&#13;
-- "alternates" for logic&#13;
-- other changes to logic: locations are removed if any required region is excluded, levels detected differently, gear licenses not required if the setting is off&#13;
-- integrate always on level&#13;
-- The Pre-Sequel initial integration&#13;
-- Tracker tab in Client if UT is intalled </content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-86"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.5</id>
-    <title>Dead Cells v0.1.5</title>
-    <updated>2026-06-25T22:14:06+00:00</updated>
-    <author>
-      <name>Max_lamenace572</name>
-    </author>
-    <author>
-      <name>OnlyLeafeon</name>
-    </author>
-    <author>
-      <name>Rayze</name>
-    </author>
-    <content>New Quality of Life:&#13;
-- Improved UI responsiveness. Tested on FHD (1920x1080) and 4K (3840x2160)&#13;
-- Added controller support for the Archipelago menu&#13;
-&#13;
-Launcher Changes:&#13;
-- New button to download the latest version of DCCM&#13;
-- New option to help with GOG version support&#13;
-- Improved .NET 10 installation&#13;
-&#13;
-Bug Fixes:&#13;
-- Maria's Cat (NPC) still spawning after sending Maria's Cat check&#13;
-- Boss Rush pop-up appearing at each run start&#13;
-- Compatibility issues for the new major version of DCCM&#13;
-&#13;
-Apworld Changes by Rayze:&#13;
-- Fixed Parry Shield missing Ram and Spider Rune rules&#13;
-- Added rule for Acceptance route&#13;
-- Abyssal Trident missing a Ram Rune rule&#13;
-&#13;
-Compatible with apworld 0.1.4 and newer</content>
-    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.0</id>
-    <title>Anno 1800 v1.3.0</title>
-    <updated>2026-06-25T23:05:10+00:00</updated>
-    <author>
-      <name>Dark-Listener</name>
-    </author>
-    <content>In this release, the progressive unlocks system is introduced: any chain of upgraded buildings will now generate as progressive unlocks (unless turned off). This means less getting stuck with a large warehouse without the medium one - warehouses will always be received in order. This should greatly help with a smoother game experience, but also increases the need for a poptracker. Tasks for later...&#13;
-&#13;
-Additionally, some option presets have been added and a slew of bugs were fixed.&#13;
-&#13;
-Last but not least, the loading time of the mod was reduced my a factor of ~20x! On my system it went from ~34s for a max settings randomizer to a good bit under 2s.&#13;
-&#13;
-### Changes&#13;
-* Added progressive unlocks and an option to turn them off (on per default)&#13;
-  * Check the items page for a full list!&#13;
-  * Refactored some internal systems along the way, dropping ~500 auto-generated scripts from the mod&#13;
-* Added an option to exclude all special recipe checks (meaning those with more advanced unlock conditions)&#13;
-* Improved mod loading time by a factor of around ~20x&#13;
-* Added option presets&#13;
-* Added a trigger to locally release all items even without AP server&#13;
-* Fixed locations requiring buildings in multiple regions not checking requirements for the secondary regions&#13;
-* Fixed generation error when enabling Land of Lions without The Passage&#13;
-* Fixed Hacienda blank farm and blank brewery always being unlocked&#13;
-* Fixed Hacienda store room not counting as providing enough storage for the Grand Stadium&#13;
-* Fixed strange behaviour when starting a second new game without closing the game first&#13;
-* Improved documentation&#13;
-&#13;
-This release **is not compatible** with older multiworlds.&#13;
-&#13;
-### [Game Page](&lt;https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/en_Anno%201800.md&gt;) | [Setup](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/setup_en.md) | [Items](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/items_en.md) | [Locations](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/locations_en.md) | [Roadmap](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.0/worlds/a1800/docs/roadmap_en.md)&#13;
-&#13;
-Find the apworld and a several template yamls below.</content>
-    <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v0.16.7</id>
-    <title>oh_so_hero v0.16.7</title>
-    <updated>2026-06-25T23:29:54+00:00</updated>
-    <author>
-      <name>L-technology-mods</name>
-    </author>
-    <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v0.16.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.2.0</id>
-    <title>Dwarf Fortress v1.2.0</title>
-    <updated>2026-06-25T23:39:45+00:00</updated>
-    <author>
-      <name>Dwarfipelago Contributors</name>
-    </author>
-    <content>## New Features&#13;
-&#13;
-### New Dwarfipelago logo&#13;
-A brand new logo designed by jjjj12212 has been introduced&#13;
-&#13;
-- The [AP] button in the top left has been moved to the bottom of the screen, using this logo&#13;
-- Logo has also been added to the APworld client icon&#13;
-&#13;
-### Merchant's Shop&#13;
-A full in-game shop system powered by minted coins. Spend coins to buy AP items directly inside your fortress.&#13;
-&#13;
-- Shop slots are gated by **Merchant's Coffers** - 10 slots unlock per coffer received (up to 50 slots across 5 coffers)&#13;
-- The shop requires a **Merchant Shrine** to be active - a temple zone with a designated altar, coffer box, and bars&#13;
-- Players can choose their shrine bar material in the Shop tab: **Gold (5 bars)**, **Silver (10 bars)**, or **Coke (20 bars)**&#13;
-- Shop slots display item name, destination player, price, and buy status (BUY / SOLD / PENDING / LOCKED / need coins)&#13;
-- The Shop tab is always visible in the panel so shrine status is shown before the AP client connects&#13;
-- Shop is gated in AP logic behind the ability to mint coins (metal-smelting or Coins Permit depending on options)&#13;
-&#13;
-### Slay Megabeast Goal&#13;
-A full war campaign added as a playable goal. Build up military readiness and summon a Megabeast to fight.&#13;
-&#13;
-- Player summons the beast from the **War tab** in the panel - it is not auto-spawned&#13;
-- **Wave scheduler**: siege waves arrive every 2-4 months leading up to the climax&#13;
-- **Warband spawner**: enemy warbands spawn with curated gear appropriate to difficulty&#13;
-- **Breach climax**: the megabeast arrives as a destructive and foreboding foe&#13;
-- **Ramping rewards**: end game gear, bonus rewards, and a special commander for any and all threats&#13;
-- **War Effort section** added to the panel with readiness status&#13;
-- Megabeast goal now flagged as **Hard** in options; Population Boom flagged as **Unstable**&#13;
-- **Legendary Wealth** is now the default goal&#13;
-&#13;
-### Skillsanity&#13;
-Dwarves leveling their skills are AP location checks.&#13;
-&#13;
-- Complete runtime detection and check firing for all skill advancement&#13;
-- Configurable skill groups (Easy / Medium / All / Choose), max level cap, and incoming-dwarf level mechanic&#13;
-- Skills tab added to the panel showing your progress toward each skill level threshold&#13;
-- **Crafting Permits** now validates against Skillsanity or Craftsanity location counts&#13;
-&#13;
-### Progressive Mining Depth&#13;
-Mining depth gating replaced with **cavern-progress checks**.&#13;
-&#13;
-- Delve-depth checks retired in favour of tracking cavern breaches (First Cavern → Second Cavern → Third Cavern → Magma Sea → The Circus)&#13;
-- Cavern checks chain in strict depth order in AP logic&#13;
-&#13;
-### DFHack Build Menu &amp; Workshop Overlays&#13;
-Two new overlays provide real-time visual feedback without leaving the game.&#13;
-&#13;
-- **Blueprint overlay**: the Build menu reds out any workshop or furnace you haven't received the blueprint for yet&#13;
-- **Permit overlay**: workshop and furnace task lists red out crafts locked behind a Crafting Permit you haven't received, showing a `[Requires X Permit]` note - matching DF's own locked-item style&#13;
-- Both overlays fire on Workshop, Furnace, and Work Orders screens&#13;
-&#13;
----&#13;
-&#13;
-## Fixes&#13;
-&#13;
-### Production &amp; Check Counting&#13;
-- **First Gem Cut** now fires for cut glass (not only cut stone gems)&#13;
-- **Metal craft counts**, **First Trap Built**, and **First Mechanism Made** fixed&#13;
-- **Coke** now counted with the correct reaction names (`*_TO_COKE`)&#13;
-- **Traction benches** counted from their produced item (not job type)&#13;
-- **Clay/ceramic Kiln crafts** (bricks, jugs, pots, hives, statues) now counted correctly&#13;
-- **First Bed Made** gated on Carpenter's Workshop Blueprint&#13;
-- **Sold an Artifact** location now properly gated in AP logic&#13;
-- **Screw Press** and **Soap Maker's Workshop** blueprints now properly block construction — both were silently ungated because they moved to `df.workshop_type.Custom` in this DF version and were no longer in the hardcoded workshop enum&#13;
-&#13;
-### Megabeast / Military&#13;
-- Training Completed no longer fires on fortress load from dwarf embark skills&#13;
-- Barracks / Training checks gated on metal-making ability&#13;
-- Megabeast spawn guaranteed (whoops this was broken this whole time...)&#13;
-&#13;
-### Dwarf Names&#13;
-- Spawned dwarves now receive a proper **first name** drawn from the Dwarven language translation table, displayed without quotes&#13;
-- Spawned dwarves now display **Dwarfipelago** as their surname so AP-sent dwarves are identifiable at a glance&#13;
-&#13;
-### Logic / Rules&#13;
-- `Sold an Artifact` ungated rule fixed&#13;
-- Bone-based logic corrected&#13;
-- Ambusher skill requires crossbows and bolts in logic&#13;
-- Wrong variable in Skillsanity options corrected&#13;
-- RotGK (Remains of the Great King) maximum count fix&#13;
-&#13;
-### World Generation&#13;
-- World gen preset rewritten and moved to AP client `/dfinstall` command for cleaner install flow&#13;
-&#13;
----</content>
-    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.11.0</id>
-    <title>Casualties: Unknown v0.11.0</title>
-    <updated>2026-06-26T01:06:54+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.11.0&#13;
-This update is NOT compatible with worlds generated on previous versions!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
-&#13;
-@AnAverageArceus made their first contribution in https://github.com/Nichologeam/CUAP/pull/46&#13;
-&#13;
-# Additions&#13;
-- Added Craftsanity locations and Recipe items for Demo 7 items [APWorld Change] (thanks to @AnAverageArceus )&#13;
-- Written Notes left inside lifepods now contain Archipelago hints&#13;
-	- These hints are generated at the start of each layer, and will only show uncollected locations in your game&#13;
-# Changes&#13;
-- Added FOCUSED to the Difficult Moodlesanity Exclusions preset&#13;
-- Added Palpitations to the Minimal Moodlesanity Exclusions preset&#13;
-- Removed the Hope and Despair filler items [APWorld Change]&#13;
-# Fixes&#13;
-- Fixed over half the Craftsanity locations sending the wrong item [APWorld Change] (thanks to @AnAverageArceus )&#13;
-- Fixed over half the Recipe items giving the wrong recipe [APWorld Change] (thanks to @AnAverageArceus )&#13;
-- Fixed the `Saline bottle Recipe` item not doing anything&#13;
-- Logic changes to account for Titanium now only spawning in Overgrown Depths [APWorld Change]&#13;
-- Fixed SleepLink checking for the RingLink YAML option, causing SleepLink to only turn on if RingLink was on&#13;
-# Known Issues&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game, and will not be fixed&#13;
-- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game, and will not be fixed&#13;
-- Loading a save can cause logic issues&#13;
-&#13;
-**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.10.0...v0.11.0</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.11.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.2</id>
-    <title>A Link Between Worlds v0.3.2</title>
-    <updated>2026-06-26T06:53:04+00:00</updated>
-    <author>
-      <name>randomsalience</name>
-    </author>
-    <content>This version is backward compatible with 0.3.x.&#13;
-- Fixes a bug where a newly created save file may be reported as invalid&#13;
-- Change to client to prevent possible item duplication</content>
-    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.3</id>
-    <title>Donkey Kong Country 2 v3.1.3</title>
-    <updated>2026-06-26T07:29:01+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>&lt;- messed up his ctrl+F&#13;
-## Info&#13;
-* [Info](&lt;https://thelx5.github.io/dkc2/index.html&gt;)&#13;
-* [Trivia (REQUIRED TO PLAY)](&lt;https://github.com/TheLX5/DKC2-Trivia/releases/latest&gt;)&#13;
-## Changes&#13;
-* Fixed logic related to Clapper and Diddy on Loose and Expert difficulties</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.3"/>
+    <content>this feels familiar</content>
+    <link href="https://github.com/NyanMC/build-a-jetpack/releases/tag/0.1.0"/>
   </entry>
   <entry>
     <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.34</id>
@@ -329,6 +56,26 @@ Development on the Itch.io version of Casualties: Unknown has stopped. To play t
 4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
 </content>
     <link href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.34"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NyanMC/build-a-jetpack/releases/tag/0.1.0b</id>
+    <title>Build a Jetpack v0.1.0b0</title>
+    <updated>2026-06-26T10:09:01+00:00</updated>
+    <author>
+      <name>ChromaNyan</name>
+    </author>
+    <content>This is a client-only update; no apworld changes were made since 0.1.0.&#13;
+&#13;
+Receiving more than 8 oxygen masks now gives you infinite air instead of trapping you in a constant death loop&#13;
+&#13;
+Receiving more than 8 jetpacks now caps the fuel at 12,800 to prevent an overflow (that should be more than enough, I promise)&#13;
+&#13;
+Removed the ability to pause the game with O&#13;
+&#13;
+X now functions as an alternate jump button&#13;
+&#13;
+Added the ability to suppress pickups from the pause menu (in case you received a lot of magnets and don't have very many backpacks)</content>
+    <link href="https://github.com/NyanMC/build-a-jetpack/releases/tag/0.1.0b"/>
   </entry>
   <entry>
     <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.2.0</id>
@@ -391,6 +138,17 @@ This client is compatible with worlds generated on V2.5.0 and up.&#13;
 Setup Guide:&#13;
 https://github.com/Thedrummonger/Archipelago/blob/YARGV2/worlds/yayarg/docs/guide_en.md</content>
     <link href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/tag/V2.5.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nebulea-dev/Archipelago-BlueFire/releases/tag/0.2.0</id>
+    <title>Blue Fire v0.1.0</title>
+    <updated>2026-06-26T16:18:29+00:00</updated>
+    <author>
+      <name>Nebulea</name>
+    </author>
+    <content>[FIX] remove empty emote that didn't exist in-game&#13;
+[FIX] transform boolean rules into lambda rules</content>
+    <link href="https://github.com/Nebulea-dev/Archipelago-BlueFire/releases/tag/0.2.0"/>
   </entry>
   <entry>
     <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.15.0</id>
@@ -465,6 +223,16 @@ for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
 ## HOTFIX &#13;
 - Fix an issue where buildings couldn't be unlocked when Progressive Buildings were not enabled #8 </content>
     <link href="https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.1</id>
+    <title>Mario and Luigi Dream Team v0.1.1</title>
+    <updated>2026-06-27T00:46:09+00:00</updated>
+    <author>
+      <name>Dimitri Bee</name>
+    </author>
+    <content>Adds AP support for the Pi'illomizer</content>
+    <link href="https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.1"/>
   </entry>
   <entry>
     <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.6.0</id>
@@ -598,6 +366,29 @@ Bugfixes:&#13;
     <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.8"/>
   </entry>
   <entry>
+    <id>https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.2.0</id>
+    <title>burger_shop v0.2.0</title>
+    <updated>2026-06-27T19:37:07+00:00</updated>
+    <author>
+      <name>zsiegel701</name>
+    </author>
+    <content>Added support for Burger Shop 2! The setup process is similar to Burger Shop 1 and the associated files include "Burger Shop 2" in the name.&#13;
+&#13;
+### Burger Shop 1&#13;
+See the [setup guide](https://github.com/zsiegel701/Archipelago/blob/burger-shop/worlds/burger_shop/docs/setup_en.md) for full installation and connection instructions.&#13;
+See [this page](https://github.com/zsiegel701/Archipelago/blob/burger-shop/worlds/burger_shop/docs/en_Burger%20Shop.md) for details on what is randomized.&#13;
+&#13;
+### Burger Shop 2&#13;
+See the [setup guide](https://github.com/zsiegel701/Archipelago/blob/burger-shop/worlds/burger_shop_2/docs/setup_en.md) for full installation and connection instructions.&#13;
+See [this page](https://github.com/zsiegel701/Archipelago/blob/burger-shop/worlds/burger_shop_2/docs/en_Burger%20Shop%202.md) for details on what is randomized.&#13;
+&#13;
+### Additional Changes&#13;
+- Removed the "user_" prefix when logging that a file was found.&#13;
+- Only update the level count when an Archipelago save file is detected to prevent messing with existing save files. &#13;
+</content>
+    <link href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.2.0</id>
     <title>Pokemon Pinball Ruby &amp; Sapphire v0.2.0</title>
     <updated>2026-06-27T21:52:31+00:00</updated>
@@ -701,6 +492,16 @@ for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
 
 **Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.16.0...v0.17.0</content>
     <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.17.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.2.1</id>
+    <title>burger_shop v0.2.1</title>
+    <updated>2026-06-28T01:57:24+00:00</updated>
+    <author>
+      <name>zsiegel701</name>
+    </author>
+    <content>- Removed "Peas and Carrots" which will now be unlocked by receiving "Peas" and "Carrots" individually.  This avoids the issue of having too many items in the item pool when the maximum number of items are generated.</content>
+    <link href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.2.1"/>
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR1</id>
@@ -892,6 +693,16 @@ Has **no** logic and is not included yet&#13;
     <link href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.6.0"/>
   </entry>
   <entry>
+    <id>https://github.com/CDRomatron/Archipelago/releases/tag/s3-0.3</id>
+    <title>spyro3gba v3.post0</title>
+    <updated>2026-06-28T17:48:58+00:00</updated>
+    <author>
+      <name>CDRomatron</name>
+    </author>
+    <content>Only writes to inventory/server when something happens as opposed to always.</content>
+    <link href="https://github.com/CDRomatron/Archipelago/releases/tag/s3-0.3"/>
+  </entry>
+  <entry>
     <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.4</id>
     <title>Civilization V v0.10.4</title>
     <updated>2026-06-28T21:08:52+00:00</updated>
@@ -976,6 +787,39 @@ for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
     <content># Bug Fixes&#13;
 * Fixed Armaldo logically evolving from Cradily and not Anorith.</content>
     <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.5.0</id>
+    <title>Divinity Original Sin 2 v0.5.0</title>
+    <updated>2026-06-29T06:20:50+00:00</updated>
+    <author>
+      <name>Intaiachi</name>
+    </author>
+    <author>
+      <name>chaotic</name>
+    </author>
+    <author>
+      <name>JeyKey09</name>
+    </author>
+    <content>New:&#13;
+- Exp has been removed&#13;
+- Source masters can no longer give source points&#13;
+- Logic has been reworked accordingly&#13;
+&#13;
+You will now only be able to level up and increase your maximum amount of source points by obtaining AP items. This is to facilitate better logic as well as reliance on other AP games. &#13;
+&#13;
+Changes:&#13;
+- Grebb the Scholar has been removed as a check (its not even a quest in DE, whoops)&#13;
+&#13;
+Bugfixes:&#13;
+- Hired henchmen now work properly in regards to deathlink and stat increasing items&#13;
+- Multiplayer custom characters work properly in regards to deathlink and stat increasing items&#13;
+&#13;
+&#13;
+Setup Guide [here](https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/steup_en.md)&#13;
+&#13;
+DOS2 mod pak file [Github](https://github.com/Intaiachi/DOS2-Archipelago-Mod/releases), [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354)</content>
+    <link href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.5.0"/>
   </entry>
   <entry>
     <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.6.4</id>
@@ -1067,6 +911,19 @@ Changelog since v1.0.7:&#13;
 - Swap to RuleBuilder for logic rules&#13;
 ```</content>
     <link href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/tag/v1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.2.2</id>
+    <title>burger_shop v0.2.2</title>
+    <updated>2026-06-29T22:59:58+00:00</updated>
+    <author>
+      <name>zsiegel701</name>
+    </author>
+    <content>- Removed extra recipes from being added to the item pool when starter recipes are enabled&#13;
+- Added extra handling for profile names containing non-standard characters&#13;
+&#13;
+Only the .apworld files are changed in this release</content>
+    <link href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.2.2"/>
   </entry>
   <entry>
     <id>https://github.com/wildham0/FF1PRAP/releases/tag/0.6.2</id>
@@ -1252,5 +1109,27 @@ Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
 However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT&#13;
 </content>
     <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.35"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR3</id>
+    <title>The Grinch v1.6.0</title>
+    <updated>2026-07-01T00:32:07+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>## Notice&#13;
+This version is a beta. Meaning, this is meant to test the new features and it's behavior. Do not submit to public syncs and asyncs unless you want to take the risk of any issues that may occur when playing it. Play it at your own risk! I am not responsible for any issues that may occur if you decide to bring this version to public sessions.&#13;
+&#13;
+### Changes&#13;
+- A sleigh part option joins the game today, mixing multiworld paths or old vanilla play!&#13;
+- Mission item randomizing joins the show, in familiar spots or shuffled flow!&#13;
+- With clever new logic, you'll roam with delight where average players lose the fight!&#13;
+&#13;
+### Bugfixes&#13;
+- And logic bugs were swatted out, so neat, like tiny flies removed before repeat!</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR3"/>
   </entry>
 </feed>
