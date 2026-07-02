@@ -65,3 +65,6 @@
 #### v0.1.0
 - <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.2.0/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.2.0/meatballs.apworld</a>
 
+#### v0.1.0
+- <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.3.0/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.3.0/meatballs.apworld</a>
+

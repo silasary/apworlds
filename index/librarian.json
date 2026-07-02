@@ -272,6 +272,22 @@
       "title": "1.1.0-rc4",
       "version_simple": "1.1.0",
       "world_version": "1.1.0rc4"
+    },
+    "1.1.0-rc5": {
+      "created_at": "2026-05-29T14:13:52Z",
+      "description": "## Librarian-AP v1.1.0-rc5\r\n\r\nFifth release candidate for 1.1.0. **Client-side crash cure** \u2014 drop-in install, replace your `Scripts/` folder\r\nand the bundled apworld. **Existing seeds are unchanged \u2014 no need to regenerate or reconnect a new seed.**\r\n\r\n### New in rc5 \u2014 the single-thread cure\r\n- **The rc4 crash should be fixed at the root.** The intermittent native access violation on rc4 (clustered on\r\n  connect and item receipt) was Lua-VM heap corruption from running the mod's Lua on two OS threads at once. UE4SS\r\n  runs the mod on a background thread, but the game's own hook callbacks and the ward pump run Lua on the game\r\n  thread; two threads driving one Lua state corrupts the heap, and no `pcall` can catch it. rc5 moves everything \u2014\r\n  the AP client, `poll()`, item-apply, and all warding \u2014 onto the single game thread. One executor, no race. **This\r\n  is the fix to validate:** play through item bursts, row/series completions, connects, and general shelf-walking,\r\n  and report whether it stays stable.\r\n- **A second connect-time crash is also fixed.** Bookcase warding used to read component trees and touch render\r\n  state on shelves whose level was still streaming in \u2014 freed memory, same access violation. Shelf warding is now\r\n  as safe mid-stream as book warding always was.\r\n\r\n### Install\r\n- Overwrite your existing bundle (or replace\r\n  `\u2026/Librarian/Binaries/Win64/Mods/Librarian-AP/Scripts/`) and drop the new `librarian.apworld` into your\r\n  Archipelago `custom_worlds/`. Keep your existing YAML and seeds. **No seed regen.**\r\n- Confirm the title screen shows **`v1.1.0-rc5`**.\r\n\r\n### Behavior changes (intentional, NOT bugs)\r\n- **Continue / New Game gate on world-ready.** The title buttons stay disabled until the world is fully streamed and\r\n  warded, then enable \u2014 so you drop into an already-warded library and the shelf lights come on right as you enter.\r\n  A hard timeout guarantees the buttons always enable, even on a slow or book-sparse world.\r\n\r\n### Known issues (unchanged from rc4)\r\n- **\"Invisible when held\" book (rare, random).** Workaround: throw it out of bounds (it returns visible), or reload.\r\n- Very large shelf unwards can still cause a brief hitch \u2014 bearable, and a follow-up.\r\n\r\n### If you crash \u2014 PLEASE send logs\r\nSend the crash-report folder, especially:\r\n  - `Mods/Librarian-AP/crash_trace.log`   \u2014 the breadcrumb ledger (its tail names the last mod op)\r\n  - `\u2026/Binaries/Win64/UE4SS.log`           \u2014 the last ~200 lines\r\n  - one line on what you were doing\r\nPlease confirm the title screen / trace header says **`v1.1.0-rc5`** first \u2014 older builds don't help.",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc5/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "43e19b2a822954b7a78a477b507637bf55705c2384b5f0c41e56ae40d231428f",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0-rc5",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 51078,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0-rc5",
+      "title": "1.1.0-rc5",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0rc5"
     }
   }
 }

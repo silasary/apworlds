@@ -9,7 +9,7 @@ the AP location check.
 
 
 ## Downloads
-- <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc4/librarian.apworld">Latest Version (1.1.0rc4)</a>
+- <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc5/librarian.apworld">Latest Version (1.1.0rc5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
