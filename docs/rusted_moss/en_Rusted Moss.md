@@ -31,7 +31,7 @@ Gimmick is fully compatible; changing the `character` YAML option to `gimmick` w
 
 ## Known Limitations and Issues
 * Many of the yaml settings are drastically underused with some only being considered in one or two rooms.
-* The damage boost yaml options could potentially create an unbeatable seed because the logic makes no consideration for the player health needed to traverse consecutive rooms. I think this is extremely unlikely to happen based on how little those skips are required.
+* The damage boost yaml options could potentially create an unbeatable seed because the logic makes no consideration for the player health needed to traverse consecutive rooms. This is unlikely to happen based on how little those skips are required and used in logic.
 * No check for if the player has the TP to equip all required trinkets for logic is in place.
 * Logic for combat arenas was always assumed to be doable based on room traversal alone, no accounting for the difficulty of the encounter was considered. This ties back to the hard combat yaml option being underused.
 * Logic for bosses is similarly lacking, it does include loose logic for what would be required to do the fight hitless, but for some of the later bosses this is an unreasonable expectation to make of the player.

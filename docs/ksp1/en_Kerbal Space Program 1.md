@@ -6,21 +6,33 @@ Only vanilla (unmodded) KSP is supported - no part mods, planet packs, or other 
 Please report issues at the [GitHub issue tracker](https://github.com/nickdavies/Archipelago/issues).
 Include your player YAML, the AP `.zip` output, your `.apsave` file, and a screenshot if possible.
 
-## Where is the options page?
+## How do I configure my options?
 
-The [player options page for this game](../player-options) contains all the options you need to configure and
-export a config file.
+This world isn't part of the main Archipelago distribution yet, so it has no online player-options page.
+After installing the `.apworld`, create your config from the Archipelago Launcher instead:
+
+- **Options Creator** — a GUI that lists every option for each installed game (Kerbal Space Program 1
+  included), lets you set them visually, and exports a ready-to-use YAML.
+- **Generate Template Options** — writes a fully-commented template YAML for every installed game to your
+  `Players/Templates/` folder; open `Kerbal Space Program 1.yaml`, edit it, and use it as your config.
+
+See the setup guide for step-by-step instructions.
 
 ## What does randomization do to this game?
 
 Rocket parts (engines, fuel tanks, capsules, decouplers, etc.) are removed from the normal tech tree and shuffled
 into the multiworld item pool. You start with almost nothing and must receive parts from the pool to build
-increasingly capable rockets. The game must be played in **Science Mode**.
+increasingly capable rockets. The game must be played in **Career Mode**.
 
 Instead of the stock science-experiment progression, your location checks are **mission milestones**: first
 launch, altitude records, orbits, landings, crew landings, flag plants, sample returns, and more across all 17
 bodies in the Kerbol system. Completing a harder mission awards multiple checks at once (e.g., a Mun Sample
 Return also counts as a Mun Landing, Crewed Landing, etc.).
+
+You also play **contracts**: native KSP contracts (orbit a body, rescue a stranded Kerbal, transmit science,
+plant a flag, and more) injected into your game as items. Accepting and completing a contract checks its
+reward location, and under the default goal mode, completing contracts is what unlocks your victory condition.
+The orbital and rescue contracts are randomized — each seed hands you different target orbits to fly.
 
 The tech tree is still present but restructured. Tech tree nodes are additional locations that cost science
 points to purchase. Science packs (filler items) provide science needed to buy them but you are still expected
@@ -30,57 +42,53 @@ to gain science from your regular missions as normal.
 
 ### Items
 
-**Parts** are the core progression items. They are organized into progressive tiers:
+**Parts** are the core progression items. Every rocket part — engines, fuel tanks, capsules, probe cores,
+decouplers, solar panels, relays, heat shields, and so on — is its **own individual item** shuffled into the
+multiworld pool. You start with almost nothing and grow your parts catalogue as items arrive. A part is usable
+in the VAB/SPH the moment you receive it; generation simply never places a part in a location you couldn't
+reach yet, so you are never handed something you can't use.
 
-| Progressive Chain | What It Unlocks |
+**Progressive items** are the handful of non-part gates that still advance in tiers:
+
+| Progressive Item | What It Does |
 |---|---|
-| Progressive Launch Engine | Atmospheric engines: LV-T30/T45, Skipper, Mainsail/Vector |
-| Progressive Vacuum Engine | Vacuum engines: Terrier/Spark, Poodle, Nerv/Dawn |
-| Progressive SRB | Solid rockets: Flea/Mite, Hammer/Thumper, Kickback/Clydesdale |
-| Progressive LFO Tank | Fuel tanks, from Oscar-B up to Jumbo-64 |
-| Progressive Heat Shield | Heat shields: small (0.625–1.875m), large (2.5m+) |
-| Progressive Stack Decoupler | Stack decouplers/separators: small then large |
-| Progressive Radial Decoupler | Radial decouplers |
-| Progressive Capsule | Command pods: Mk1, Mk1 Lander/Mk2, Mk1-3 |
-| Progressive Probe Core | Probe cores: Stayputnik/OKTO, HECS, HECS2 |
-| Progressive Solar Panel | Solar panels: OX-STAT, OX-4W, Gigantor |
-| Progressive Relay | Relay antennas: Communotron 16, RA-2, HG-55, 88-88 |
-
-Each progressive tier unlocks a representative part and also **gates other parts in that tier**. For example,
-receiving "Progressive Launch Engine 2" unlocks the Skipper as a representative, and also makes other tier-2
-engines like the Thud available — but only if you've independently received those parts from the pool. Parts
-received before their progressive tier is unlocked will not be available in the VAB.
-
-**Progressive R&D** (3 copies) gates access to higher tiers of the tech tree.
+| Progressive R&D (×3) | Unlocks successively higher bands of the tech tree. |
+| Progressive Science Instrument (×3) | Advances your science-instrument tier (it feeds the science-point budget). |
+| Progressive Launch Pad (×3, optional) | Raises the launch-pad mass limit so you can fly heavier rockets. Present only if you enable the Progressive Launch Pad option. |
 
 **Science Packs** are filler items that grant science points, used to purchase tech tree nodes.
+
+**Contract items** — one per contract in your seed. Receiving a contract item makes that native KSP contract
+available to accept; completing it checks its reward location(s).
 
 **Other equipment** includes RTGs, batteries, docking ports, landing legs, ladders, reaction wheels, RCS,
 science instruments, and more.
 
-**Traps** Today are **NOT** implemented but are planned for later
+**Traps** are **NOT** implemented today but are planned for later.
 
 ### Locations
 
-Locations are **mission-based**, not science-experiment-based. You don't need to run individual experiments;
-instead you complete missions:
+Locations are **mission-based** (plus contracts), not science-experiment-based. You don't run individual
+experiments; instead you complete missions and contracts:
 
 - **Starting Inventory** (5–20 slots depending on difficulty) — Zero-requirement locations that bootstrap your
   run. The AP fill algorithm places the items you need to get started here.
 - **KSC Biome Checks** (12) — Earned by performing science experiments at KSC buildings (Launch Pad, VAB, R&D,
   Tracking Station, etc.). Each is named *Science from KSC <building>* to make the requirement obvious.
   Only one per building, not each sub-building biome.
-- **Kerbin Milestones** (13) — First Launch, First Landing, First Crash, altitude records (5km through 70km),
-  Splashdown, First Staging, EVA in Orbit.
+- **Home-body Milestones** (11) — First Launch, First Landing, First Crash, altitude records, First Staging.
+  Plus a single body-agnostic **Splashdown** check that fires on any ocean body (Kerbin / Eve / Laythe).
 - **Body Mission Events** (~231) — Per-body checks across all 17 bodies: Flyby, Orbit, Landing, Crewed Landing,
   Flag Plant, Return, and Sample Return. Each event type has multiple slots.
 - **Tech Tree Nodes** (124–248) — Each of the 62 tech nodes has 2–4 location slots (scaled by difficulty).
   Purchasing a node with science points awards these checks.
+- **Contracts** (10 by default) — Native KSP contracts injected by the client; completing one checks its reward
+  location(s). Under the default Count goal mode, completing contracts is also how you unlock your goal.
 
 ## Which items can be in another player's world?
 
-Any KSP item can appear in another player's world. Progressive parts, Progressive R&D, all other parts and science packs
-can all be placed in other games' locations.
+Any KSP item can appear in another player's world — individual parts, the progressive items (R&D, Science
+Instrument, Launch Pad), science packs, and contract items can all be placed in other games' locations.
 
 ## What does another world's item look like in KSP?
 
@@ -89,9 +97,9 @@ tech node, any items at those locations are sent to their respective players.
 
 ## When the player receives an item, what happens?
 
-When you receive a part, it becomes available in the VAB/SPH for building rockets. If the part's progressive
-tier hasn't been unlocked yet, the part will be held until you receive the corresponding progressive item.
-Science packs are added to your science balance immediately.
+When you receive a part, it becomes available in the VAB/SPH for building rockets immediately — there is no
+tier to unlock first. Science packs are added to your science balance right away, and receiving a contract
+item makes that contract available to accept.
 
 ## What is the victory condition?
 
@@ -99,13 +107,16 @@ The victory condition is configurable. Preset goals include:
 
 - **Duna Return** (default) — Return a vessel or crew from Duna.
 - **Eeloo Return** — Return from Eeloo.
-- **Eve Return** — Return from Eve (challenge goal).
 - **Flag Every Body** — Plant a flag on all 15 landable bodies.
 - **Standard Returns** — Return from 11 bodies (excluding Eve, Tylo, Laythe).
 - **Standard Sample Returns** — Crewed sample return from the same 11 bodies.
 - **Complete Tech Tree** — Purchase all 62 tech tree nodes.
 - **Mun Flag** — Plant a flag on the Mun (short run).
 - **Mun Sample Return** — Crewed sample return from the Mun (short run).
+- **Jool Moons Return** — Return from each Jool moon (Laythe, Vall, Tylo, Bop, Pol). Your home body is
+  filtered out, so a Laythe start gives a tight 4-target Jool-system goal.
+- **Random Contracts** — No destination goal: complete a number of your available contracts, then plant a
+  flag at home to win. Only valid with Goal Contract Mode = count or progressive_unlock.
 - **Custom** — Build your own goal from five body-list options: `flag_bodies`, `return_bodies`,
   `sample_return_bodies`, `orbit_bodies`, and `flyby_bodies`. Set goal to `custom` and populate one or
   more of these lists with body names. `orbit_bodies` and `flyby_bodies` accept all 17 bodies including
@@ -119,9 +130,14 @@ won't contain items required for progression.
 ## Key options
 
 - **Difficulty** — Controls delta-V margins, starting location count, and tech tree density. Casual is forgiving;
-  Insane requires exact delta-V piloting. **Only Normal has been thoroughly tested so far.**
-- **Item Pacing** — Prevents powerful items from appearing too early. Gentle (default) keeps tier-2 items out of
-  starting slots; Strict extends this restriction further.
+  Expert assumes near-optimal delta-V piloting. **Only Normal has been thoroughly tested so far.**
+- **Goal Contract Mode** — How your goal is unlocked. **Count (default):** complete a number of your available
+  contracts and the goal is awarded. Other modes: *Findable* (the goal item is in the multiworld pool and found
+  like any other item), *Starting* (the goal is granted up front, limited only by physics/parts), and
+  *Progressive Unlock* (goal missions unlock one at a time as you complete contracts).
+- **Contracts Available** — How many ordinary (non-goal) contracts are placed in the seed (default 10). These
+  are side objectives the client tracks; completing them is how Count and Progressive Unlock release your goal.
+  Contract mission types and their relative frequency are configurable too.
 - **Exclude Late Tech Tree** — Prevents progression items from being placed in tier-8 tech nodes, avoiding a
   late-game science grind if you'd rather focus on flying missions than gaining science.
 - **Start With Launch Clamps** — Enabled by default. Disabling makes launch clamps a progression gate for
@@ -141,7 +157,8 @@ as you receive items and complete checks.
 
 - `/explain <location>` — Shows a detailed rocket design for any location: which engines, tanks,
   and equipment logic thinks you need, and why a mission might not be in logic yet.
-- `/explain parts [filter]` — Lists all parts you've received, grouped by type. Optionally filter by name.
+- `/explain parts [filter]` — Lists all parts you've received, grouped by type. Optionally filter by
+  name (e.g. `/explain parts engine`).
 
 ## I am stuck!
 
@@ -151,3 +168,10 @@ it might not be reachable yet. This is the fastest way to understand what's bloc
 If you believe a location shown as in-logic is not actually achievable with your current parts, please
 file an [issue](https://github.com/nickdavies/Archipelago/issues) with the location name and either your
 parts list (from `/explain parts`) or your `.zip` and `.apsave` files.
+
+## Credits
+
+The in-game flags shipped with the client mod are based on the wonderful work of
+[1Kerbonaut](https://github.com/1Kerbonaut) from the
+[KSP-Style-Flags](https://github.com/1Kerbonaut/KSP-Style-Flags/tree/v1.0) project (v1.0).
+Many thanks for making them available!

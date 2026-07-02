@@ -1,9 +1,9 @@
 # Rusted Moss for Archipelago Setup and Usage Guide
 
 ## Required Software
-* Latest release of [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). Currently tested/working on version 0.5.1
+* Latest release of [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). Currently tested/working on version 0.6.4
 * A legal PC copy of Rusted Moss
-   * Tested on version 1.76
+   * Tested on version 3.98
    * Steam version is supported, itch.io version currently untested
 
 ## Installing the Archipelago Client for Rusted Moss
@@ -28,12 +28,8 @@
 
 ## Joining an Archipelago Game in Rusted Moss
 * Optional: backup your save files located in `/AppData/Local/Rusted_Moss`
-1. Open Rusted Moss and start a new save file, the mod has primarily been tested on Speedrun mode, but Normal and Flexible should mostly work as well
+1. Open Rusted Moss and start a new save file, the mod has primarily been tested on Speedrun mode, but Normal and Flexible should work as well
    * Maya and Ameli mode are unsupported
    * Using [Gimmick mod](https://github.com/Harlem512/rm-mod-database#gimmick) is supported (you must install and enable Gimmick manually)
-2. The game will appear to have gone back to the main menu, this is expected
-3. A new file named f_save_#.archipelago.save will have been created in the save data folder `/AppData/Local/Rusted_Moss`
-   * These file names are 0 indexed, so the first save file is f_save_0, and the last (sixth) save file is f_save_5
-4. Open the file and edit the url, port, slotName, and slotPassword fields with your connection info
-5. Attempt to create the file in the same slot again, the game should load after waiting on the menu screen for a little while while the connection is established
-   * If you are booted back to the main menu again, check your connection info again, or view the log file in the `/AppData/Local/Rusted_Moss/mods` folder
+2. Enter the slot name, password, and url for the hosted game and click connect
+3. If the menu hangs on connecting, click cancel and make sure the connection info is correct

@@ -11,6 +11,9 @@
 #### v0.5.0
 - <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.6.0/bg3.apworld">https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.6.0/bg3.apworld</a>
 
+#### v0.5.0
+- <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.6.1/bg3.apworld">https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.6.1/bg3.apworld</a>
+
 #### v0.4.5
 - <a href="https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.5/bg3.apworld">https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.4.5/bg3.apworld</a>
 

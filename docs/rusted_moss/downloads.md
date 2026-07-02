@@ -1,9 +1,12 @@
 # Rusted Moss
 
 ## Latest
-- <a href="https://github.com/dgrossmann144/Archipelago/releases/download/v0.1.6-alpha/rusted_moss.apworld">Latest Version (0.1.6)</a>
+- <a href="https://github.com/dgrossmann144/Archipelago/releases/download/v0.1.7-alpha/rusted_moss.apworld">Latest Version (0.1.7a0)</a>
 
 ## All Versions
+
+#### v0.1.7a0
+- <a href="https://github.com/dgrossmann144/Archipelago/releases/download/v0.1.7-alpha/rusted_moss.apworld">https://github.com/dgrossmann144/Archipelago/releases/download/v0.1.7-alpha/rusted_moss.apworld</a>
 
 #### v0.1.6
 - <a href="https://github.com/dgrossmann144/Archipelago/releases/download/v0.1.6-alpha/rusted_moss.apworld">https://github.com/dgrossmann144/Archipelago/releases/download/v0.1.6-alpha/rusted_moss.apworld</a>

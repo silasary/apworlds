@@ -803,6 +803,22 @@
       "title": "StardewArchipelago Release 7.4.6",
       "version_simple": "7.4.4",
       "world_version": "7.4.4"
+    },
+    "8.0.0": {
+      "created_at": "2026-07-02T03:43:19Z",
+      "description": "# First Release for StardewArchipelago 8.x.x\r\n\r\n### Should be considered a BETA for now.\r\n\r\n# New Features\r\n\r\n## Data Randomization\r\n\r\n- Data Randomization\r\n\r\nData randomization is the main feature of 8.x.x. It allows you to randomize internal data in stardew valley, locally (not through archipelago), so your prior knowledge is invalidated.\r\nData Randomization works based on two options. The first chooses, through individual toggles what data should be randomized, and the second chooses how this data will be randomized.\r\n### Available toggles:\r\n  - Fish Difficulty\r\n  - Fish Season\r\n  - Fish Weather\r\n  - Fish Location\r\n  - Fish Sell Price\r\n  - Fish Catch Method\r\n  - Crop Sell Price\r\n  - Growth Time\r\n  - Growth Season\r\n  - Which Crop From Which Seed\r\n  - Shop Prices\r\n  - Shop Prices Across Vendors\r\n  - Shop Currencies\r\n  - Shop Extra Materials\r\n  - Festival Season\r\n  - Festival Date\r\n  - Villager Birthdays\r\n  \r\n  ### Available Randomization Modes:\r\n  - Shuffled: All values are maintained, but shuffled between entries.\r\n  - Weighted Randomized: All entries are given a random value from the original pool, weighted from their original distribution, with repeat draws\r\n  - Randomized: All entries are given a random value from the original pool with no regard for the original frequency, with repeat draws. Can be imbalanced\r\n  - Normal Randomized: All entries are given a random value picked from a Log-Transformed Normal Distribution generated from the original values. Can be imbalanced\r\n  - Range Randomized: All entries are given a random value between the original minimum and original maximum, with no regard for what values originally existed. Very imbalanced.\r\n\r\n## New Entrance Randomizer Modes\r\n### The Entrance Randomizer has been entirely overhauled thanks to @itepastra 's efforts.\r\n - New Level: Overworld - Randomizes outside map transitions in addition to doors\r\n - New Level: Everywhere - Randomizes all map transitions, such as minecarts, warp totems, return scepter.\r\n - Level Removed: Buildings Without House - The house behavior is moved to a toggle instead.\r\n - Level Removed: Chaos - This was moved to be a toggled behavior instead.\r\n### New setting that uses individual toggles to customize the behavior of ER\r\n   - Chaos - Entrance reshuffle every day\r\n   - Decoupled - Both directions of the same entrance are randomized separately. **Not for the faint of heart**\r\n   - Shuffle Farmhouse - Includes the farmhouse in the randomization\r\n   - Shuffle Farmhouse Anywhere - Includes the farmhouse, and it is not limited to \"sane\" spots. **Not for the faint of heart**\r\n   - Same Direction - This tries to randomize entrances by maintaining direction (up-down-left-right), for reduced physical whiplash when traversing them.\r\n   - Same Type - This tries to randomize entrances but maintain their type. So a door that goes in a building, will still go in a building.\r\n### New Setting: Entrance Plando! Choose where some specific entrances will go!\r\n\r\n## Start Without: Villagers\r\nStart in a Ghost town with nobody to talk to. Unlock individual villagers!\r\n## Start Without: House\r\nStart homeless on your farm, and commune with nature.\r\n\r\n## New Traps\r\nThere are 16 new traps!\r\n## Trap Difficulty: Eldritch\r\n  New Trap difficulty, above nightmare. This level is designed to take revenge on the players who decided that nightmare was not that bad, and are playing it frequently.\r\n## Split Arcade Machines\r\n  Now you can do just one or the other, instead of them being together.\r\n## 9 New Meme Bundles\r\n",
+      "download_url": "https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.0/stardew_valley.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3a29d7badef4dd04d1cd2367a291b3c3801e1620cc1cdc8b8a23a19df85ea2cd",
+      "html_url": "https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.0",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 562430,
+      "source_url": "https://api.github.com/repos/agilbert1412/StardewArchipelago",
+      "tag": "8.0.0",
+      "title": "StardewArchipelago Release 8.0.0",
+      "version_simple": "8.0.0",
+      "world_version": "8.0.0"
     }
   }
 }

@@ -1,6 +1,6 @@
-# None
+# Oh So Hero!
 
-
+Archipelago integration for Oh So Hero!.
 
 
 ## Downloads
