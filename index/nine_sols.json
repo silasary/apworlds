@@ -466,6 +466,21 @@
       "title": "0.5.6",
       "version_simple": "0.5.6",
       "world_version": "0.5.6"
+    },
+    "0.5.7": {
+      "created_at": "2026-07-02T15:37:47Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- Universal Tracker map pages will now auto-tab to the world map whenever you open the Teleport menu in-game.\r\n- `vanilla` logic:\r\n  - \"Cortex Center - Caves Middle Left\" to \"Caves Upper Left\" previously had just CL in logic, but that's not quite enough, so now that option is CL + LG.\r\n  - \"Cortex Center - Caves Lower Left\" to \"Caves Middle Left\" now has a TCK-less option: WC + CL + AD\r\n- `medium` logic:\r\n  - \"AM - Under First Rope\" to \"Above Left Exit\" now allows nymph and bow hover.\r\n  - \"AF (Depths) - Upper Left Exit\" to \"Crystal Caves\" now allows just CS + Grapple. Previously it allowed CS + Grapple + AD, but it turns out the final drop can be done with yet another CS-dash.\r\n  - \"AF (Depths) - Root Node\" to \"Shangui Arena\" now allows CS + SR + T-dash.\r\n  - The \"AM: Near Root Node\" is now reachable from the root node using only a Thunder Buster arrow to break the one-way barrier from the wrong side. This was always the intent, but previously I used too few regions to model this area, which caused it to accidentally require some unrelated platforming too.\r\n  - \"AM - Above Left Exit\" to \"Root Node\" now allows Grapple only, since Swift Runner jumps are good enough for the spike pits after the slider.\r\n  - \"Cortex Center - Caves Lower Left\" to \"Caves Middle Left\" now has TCK-less options: WC + CL + T-dash, or WC + AD + T-dash.\r\n  - \"CTH - Bottom of Large Shaft\" to \"Yanren Arena\" now allows CS-dash and LG in place of AD.\r\n  - \"Factory (MR) - Moving Platforms\" was missing a connection to \"Root Node\". Although this connection is itemless on vanilla logic, we believe it only matters in practice if you can use medium or LS logic to get from \"Root Node\" to \"Behind Turret Near Green Pillar\" from the right side, i.e. without using UC to break the turret.\r\n  - Corrected \"Factory (U) - Broken Shanhai (with qi)\" to \"Middle Right Exit\" to explicitly require CS or AD or CL in addition to T-dash, instead of confusingly assuming you must have one of those to reach \"Broken Shanhai (with qi)\" in the first place.\r\n- `ledge_storage` logic:\r\n  - \"Cortex Center - Caves Lower Left\" to \"Caves Middle Left\" now has a WC-less option: CL + LG + TCK lets you triple jump to the TCK targets\r\n  - \"Cortex Center - After Large Door\" to \"Caves Upper Right\" now has a grapple-less option: CL + LG + WC lets you triple jump to the WC surface\r\n  - \"Factory (GH) - Lower Levels & Root Node\" to \"Above Root Node\" can now be done with bow hover and LS vault.\r\n  - \"Factory (MR) - Left Elevator\" to \"Top of Green Pillar\" can now be done with triple jumps.\r\n  - \"GoS (West): Platforms In Top Middle Room\" can now be done with bow hover and LS vault.\r\n  - \"IW - Root Node\" to \"Above Frogs\" now allows a wall slide up to the 2nd platform, then an LS vault onto the left crates.\r\n  - \"Yinglong Canal - Farmland Markings\" to \"Above Egg Cave\" now allows wall sliding up the green wall, with AD setup.\r\n- Various internal code changes / refactors to prepare for a future update with skill rando.\r\n",
+      "download_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/0.5.7/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6d46a5d14dd8cdffd79122375e485280ae6a861742f640cdeb4ba44b07823392",
+      "html_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.7",
+      "minimum_ap_version": "0.6.4",
+      "size": 2586358,
+      "source_url": "https://api.github.com/repos/Ixrec/NineSolsArchipelagoRandomizer",
+      "tag": "0.5.7",
+      "title": "0.5.7",
+      "version_simple": "0.5.7",
+      "world_version": "0.5.7"
     }
   }
 }

@@ -2,46 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-02T12:48:55.629762+00:00</updated>
+  <updated>2026-07-02T18:42:02.195092+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.6</id>
-    <title>Cookie Clicker v0.8.6</title>
-    <updated>2026-06-26T23:21:42+00:00</updated>
-    <author>
-      <name>Charlignon</name>
-    </author>
-    <content>Hotfix release, only the client script is updated&#13;
-0.8.6 is retrocompatible with 0.8.5&#13;
-&#13;
-&#13;
-## HOTFIX &#13;
-- Fix an issue where buildings couldn't be unlocked when Progressive Buildings were not enabled #8 </content>
-    <link href="https://github.com/Charlignon/AP_CookieClicker/releases/tag/0.8.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.1</id>
-    <title>Mario and Luigi Dream Team v0.1.1</title>
-    <updated>2026-06-27T00:46:09+00:00</updated>
-    <author>
-      <name>Dimitri Bee</name>
-    </author>
-    <content>Adds AP support for the Pi'illomizer</content>
-    <link href="https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.6.0</id>
-    <title>Kerbal Space Program 1 v0.6.0</title>
-    <updated>2026-06-27T07:51:50+00:00</updated>
-    <author>
-      <name>nickdavies</name>
-    </author>
-    <content>**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.5.0...v0.6.0</content>
-    <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.6.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.3.1</id>
     <title>Phoenotopia: Awakening v0.3.0</title>
@@ -1149,5 +1114,78 @@ There are 16 new traps!&#13;
 ## 9 New Meme Bundles&#13;
 </content>
     <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.20.1</id>
+    <title>Metroid Dread v0.20.1</title>
+    <updated>2026-07-02T15:07:38+00:00</updated>
+    <author>
+      <name>maxdietz</name>
+    </author>
+    <author>
+      <name>Randovania Dread contributors</name>
+    </author>
+    <content>## What's Changed&#13;
+* fix(logic): sever false-positive one-way rotatable "flipper" turn edges by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/148&#13;
+* feat(warp): block /warp in Ghavoran flipper-trap rooms, direct to checkpoint reload by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/149&#13;
+* Drop unreachable-by-config locations instead of failing full-accessibility gen by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/150&#13;
+* chore(release): sync apworld manifest version to the tag + automate it by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/151&#13;
+* fix(patcher): don't invoke the frozen Archipelago launcher as the patcher Python by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/152&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.19.0...v0.20.1</content>
+    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.20.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.7</id>
+    <title>Nine Sols v0.5.7</title>
+    <updated>2026-07-02T15:37:47+00:00</updated>
+    <author>
+      <name>Ixrec</name>
+    </author>
+    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
+&#13;
+- Universal Tracker map pages will now auto-tab to the world map whenever you open the Teleport menu in-game.&#13;
+- `vanilla` logic:&#13;
+  - "Cortex Center - Caves Middle Left" to "Caves Upper Left" previously had just CL in logic, but that's not quite enough, so now that option is CL + LG.&#13;
+  - "Cortex Center - Caves Lower Left" to "Caves Middle Left" now has a TCK-less option: WC + CL + AD&#13;
+- `medium` logic:&#13;
+  - "AM - Under First Rope" to "Above Left Exit" now allows nymph and bow hover.&#13;
+  - "AF (Depths) - Upper Left Exit" to "Crystal Caves" now allows just CS + Grapple. Previously it allowed CS + Grapple + AD, but it turns out the final drop can be done with yet another CS-dash.&#13;
+  - "AF (Depths) - Root Node" to "Shangui Arena" now allows CS + SR + T-dash.&#13;
+  - The "AM: Near Root Node" is now reachable from the root node using only a Thunder Buster arrow to break the one-way barrier from the wrong side. This was always the intent, but previously I used too few regions to model this area, which caused it to accidentally require some unrelated platforming too.&#13;
+  - "AM - Above Left Exit" to "Root Node" now allows Grapple only, since Swift Runner jumps are good enough for the spike pits after the slider.&#13;
+  - "Cortex Center - Caves Lower Left" to "Caves Middle Left" now has TCK-less options: WC + CL + T-dash, or WC + AD + T-dash.&#13;
+  - "CTH - Bottom of Large Shaft" to "Yanren Arena" now allows CS-dash and LG in place of AD.&#13;
+  - "Factory (MR) - Moving Platforms" was missing a connection to "Root Node". Although this connection is itemless on vanilla logic, we believe it only matters in practice if you can use medium or LS logic to get from "Root Node" to "Behind Turret Near Green Pillar" from the right side, i.e. without using UC to break the turret.&#13;
+  - Corrected "Factory (U) - Broken Shanhai (with qi)" to "Middle Right Exit" to explicitly require CS or AD or CL in addition to T-dash, instead of confusingly assuming you must have one of those to reach "Broken Shanhai (with qi)" in the first place.&#13;
+- `ledge_storage` logic:&#13;
+  - "Cortex Center - Caves Lower Left" to "Caves Middle Left" now has a WC-less option: CL + LG + TCK lets you triple jump to the TCK targets&#13;
+  - "Cortex Center - After Large Door" to "Caves Upper Right" now has a grapple-less option: CL + LG + WC lets you triple jump to the WC surface&#13;
+  - "Factory (GH) - Lower Levels &amp; Root Node" to "Above Root Node" can now be done with bow hover and LS vault.&#13;
+  - "Factory (MR) - Left Elevator" to "Top of Green Pillar" can now be done with triple jumps.&#13;
+  - "GoS (West): Platforms In Top Middle Room" can now be done with bow hover and LS vault.&#13;
+  - "IW - Root Node" to "Above Frogs" now allows a wall slide up to the 2nd platform, then an LS vault onto the left crates.&#13;
+  - "Yinglong Canal - Farmland Markings" to "Above Egg Cave" now allows wall sliding up the green wall, with AD setup.&#13;
+- Various internal code changes / refactors to prepare for a future update with skill rando.&#13;
+</content>
+    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.5.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.1</id>
+    <title>pokemon_stadium v0.6.1</title>
+    <updated>2026-07-02T16:28:12+00:00</updated>
+    <author>
+      <name>jciii91</name>
+    </author>
+    <content>Bug fixes&#13;
+- Resetting does not misfire the `Beat Rival` check&#13;
+- Trainersanity rules for GLC trainers check if a player has the key required, previously was checking how many of the required key they had&#13;
+- E4 access tied to `BadgeRequirement`, previously was defaulting to 8 because of a typo&#13;
+- Added missing EXP values to `growth_rates` dict&#13;
+- Rental randomness fixes&#13;
+  - Shuffler fixed&#13;
+  - Patching fixed, offset used during writing was not being updated correctly</content>
+    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.1"/>
   </entry>
 </feed>

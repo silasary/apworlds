@@ -1,9 +1,12 @@
 # Metroid Dread
 
 ## Latest
-- <a href="https://github.com/mdietz94/dread_ap/releases/download/v0.12.4/dread.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/mdietz94/dread_ap/releases/download/v0.20.1/dread.apworld">Latest Version (0.20.1)</a>
 
 ## All Versions
+
+#### v0.20.1
+- <a href="https://github.com/mdietz94/dread_ap/releases/download/v0.20.1/dread.apworld">https://github.com/mdietz94/dread_ap/releases/download/v0.20.1/dread.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/mdietz94/dread_ap/releases/download/v0.12.4/dread.apworld">https://github.com/mdietz94/dread_ap/releases/download/v0.12.4/dread.apworld</a>
