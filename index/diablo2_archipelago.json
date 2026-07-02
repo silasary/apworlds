@@ -586,6 +586,21 @@
       "version_simple": "2.9.9",
       "world_version": "2.9.9"
     },
+    "Stable-3.0.0": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 3.0.0\n\nCheck-logic reliability pass. No more stuck checks in empty areas, and every\nmonster-hunt check verified as real and completable.\n\n## Fixes\n\n- **Tower Cellar Level 1 & 2 checks no longer get stuck.** Those two sublevels\n  spawn no monsters (a long-standing level-generation quirk), so their \"Clear\"\n  checks \u2014 which needed 8 kills \u2014 could never be completed and were reported as\n  stuck / the areas as empty. Until the spawn issue is fixed at the source, both\n  checks now **auto-complete the moment you enter the area**, so they never block\n  a seed. Tower Cellar Levels 3\u20135 are unchanged (they populate normally; L5 still\n  has The Countess).\n\n## Verification\n\n- **All 46 monster-hunt checks confirmed valid.** Cross-checked every \"Hunt:\"\n  target against the game's actual monster data \u2014 all of them exist and spawn in\n  this mod, including **Winged Death**, The Tormentor, Taintbreeder and Riftwraith\n  the Cannibal (these are absent from retail Diablo II, but this build places them\n  in Act 4, so the hunts are completable). A few use a different in-game display\n  name than their internal name (e.g. \"Creeping Feature\" = Leatherarm, \"Sszark the\n  Burning\" = Web Mage, \"Shenk the Overseer\" = Siege Boss) \u2014 all detect correctly.\n\n## Note on the version number\n\nRolled straight from 2.9.9 to **3.0.0** (skipping 2.9.10) because the in-game\nversion display has an 11-character limit \u2014 \"2.9.10\" would have overflowed it.\nThe launcher is unchanged this release.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.0.0/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b21c1d234166ef4a28b4cc56933caa1c5adfa33a935300f71aae9a07ac904fa0",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.0.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 59596,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.0.0",
+      "title": "Stable 3.0.0",
+      "version_simple": "3.0.0",
+      "world_version": "3.0.0"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
