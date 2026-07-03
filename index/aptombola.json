@@ -72,6 +72,21 @@
       "title": "v0.2 - The Milestone Update",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "0.3": {
+      "created_at": "2026-07-02T17:49:10Z",
+      "description": "##  New Additions\r\n###  **Card Generation Criteria** Option\r\nDetermines how the Cards will be generated:\r\n-  **Classic**: The normal Card generation criteria. the following Tombola rules will be followed:\r\n-  - 1-9 in first column, 10-19 in second column, ..., 80-90 in last column\r\n-  - All columns will have at least one number\r\n-  - Numbers in the same column are ordered in ascending order\r\n-  **Order**: Numbers will be distributed into card in order.\r\n-  - 1 in Card 1, 2 in Card 2, ..., 6 in Card 6, 7 in Card 1, 8 in Card 2, ...\r\n-  **Chaos**: Numbers will not respect the Tombola rules respected by the Classic option.\r\n-  - e.g. 1 may appear in any column, 54 may appear before 22 in a column\r\n\r\n### **Marksanity** Option\r\nA new Sanity option that creates, for each Number, a location that will require you to Mark that Number to be checked\r\n### **Additional Card Unlocks** Option\r\nIf Cardsanity and this option are enabled, an additional copy of \"Card X Unlock\" is created for each locked Card.\r\n\r\n### **Location Groups**\r\nLocations are now grouped, for easy usage in yaml options such as Priority Locations!\r\nLocation groups that now exist are:\r\n- Card X Locations (for each Card)\r\n- Regular Locations\r\n- Rowsanity Locations\r\n- Regular {score} Locations (for each type of score)\r\n- Rowsanity {score} Locations (for each type of score)\r\n- All {score} Locations (includes both Regular and Rowsanity locations, for each score)\r\n- Milestone Locations\r\n- Marksanity Locations\r\n- Unlock Locations\r\n\r\n### New Filler Items\r\nThe amount of filler has more than doubled!\r\n\r\n## Changes\r\n- Spoiler Log now display a player's Cards\r\n- Hints in a Tombola location now displays what is needed to obtain it\r\nexample: `[Hint]: Player2's Pack Rat is at Card 1 - Ambo Reward 1 in Player1's World at Get 2 Numbers in any one of the following rows: [[3, 12, 50, 61, 81], [8, 31, 66, 71, 84], [25, 36, 45, 69, 87]].`\r\n- Color of progression items is now lighter in the client's text chat\r\n- Client now displays its version in the bottom left of the login screen\r\n- When playing the game on **Android**, scroll bars are now 2.5x wider\r\n\r\n## Bugfixes\r\n- Fixed capitalization being wrong on some filler items\r\n- Fixed APWorld being incompatible with APWorlds that modify other slot's Item Rules (such as SBURBelago)\r\n- Fixed Unlock Locations not following `Prevent Other Meta Game Items` and being able to contain Progression items from AP Tombola\r\n- Fixed Client erroneously making locked cards unlockable when connecting to a 0.2.x slot after logging out of a 0.1.x slot\r\n- Fixed Client not showing `(found)` when hinting items already found\r\n- Fixed extended hint info not showing when hinting items\r\n- Fixed save info behaving incorrectly when deleting a save\r\n\r\n## Download and How to Play:\r\n- **APWorld**\r\n- - The APWorld is available here: https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.3\r\n\r\n- **Client**\r\n- - Client Download for Windows, Linux and Android is available here: https://github.com/Arenes214/AP-Tombola/releases/tag/0.3\r\n- - Client is also available as a website here: https://arenes214.itch.io/ap-tombola\r\n- ** Client is backwards compatible with worlds generated on 0.1.x and 0.2.x**",
+      "download_url": "https://github.com/Arenes214/APWorld-Tombola/releases/download/0.3/aptombola.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f2719b071045f37371aee7f168643ee8290b98efd4e1c87a0757c33e4c78f98c",
+      "html_url": "https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.3",
+      "minimum_ap_version": "0.6.6",
+      "size": 19729,
+      "source_url": "https://api.github.com/repos/Arenes214/APWorld-Tombola",
+      "tag": "0.3",
+      "title": "v0.3 - The Order & Chaos Update",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

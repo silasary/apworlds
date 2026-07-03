@@ -9,9 +9,6 @@ befriend villagers, and uncover dark secrets.
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Stardew Valley">English</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
-- <a href="setup_fr">French</a>
 

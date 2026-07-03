@@ -2,78 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-02T18:42:02.195092+00:00</updated>
+  <updated>2026-07-03T00:34:35.211431+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.3.1</id>
-    <title>Phoenotopia: Awakening v0.3.0</title>
-    <updated>2026-06-27T09:21:03+00:00</updated>
-    <author>
-      <name>Lenamphy</name>
-    </author>
-    <author>
-      <name>ET_is_here</name>
-    </author>
-    <content>&lt;h1&gt;Bug fix patch - 0.3.1&lt;/h1&gt;&#13;
-&#13;
-Minor patch to fix a couple of bugs.&#13;
-&#13;
-&lt;h2&gt;Bug fixes:&lt;/h2&gt;&#13;
-&#13;
-- Fixed crash when walking into the shooting gallery in Atai with the minigames setting disabled.&#13;
-- "Sand Drifts - Stealer bird plains floor patch" check will no longer give you the item twice.&#13;
-&#13;
-Full patch notes of 0.3 can be found [here](https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.3.0)</content>
-    <link href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.6</id>
-    <title>Ape Escape 3 v2.0.6</title>
-    <updated>2026-06-27T10:29:01+00:00</updated>
-    <author>
-      <name>aidanii</name>
-    </author>
-    <content># Changelog&#13;
-## Game&#13;
-- When having entered Midnight Bay - Sewers without a Water Net, the client will now respawn the player to Midnight Bay - Front Port&#13;
-## Client&#13;
-- Client now checks the game state more frequently (0.5s -&gt; 0.1s)&#13;
-- PGC Progress is now sent to server DataStorage (for trackers)&#13;
-## Universal Tracker&#13;
-- Locations are now sorted by Region when listed under UT (@Fafale)</content>
-    <link href="https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.0.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.2.1</id>
-    <title>NSMBW v0.2.1</title>
-    <updated>2026-06-27T10:36:26+00:00</updated>
-    <author>
-      <name>Miiroun</name>
-    </author>
-    <content>## New Super Mario Bros Wii v0.2.1&#13;
-# Bugfix&#13;
-- Fixed so reveres  movements works&#13;
-- Compatible with multiworld and yaml generated on 0.2.0&#13;
-- To fix issue just receive another reverse movement trap</content>
-    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Witchybun/Archipelago/releases/tag/MadouMonogatari106</id>
-    <title>Madou Monogatari Hanamaru Daiyouchienji v106</title>
-    <updated>2026-06-27T10:39:48+00:00</updated>
-    <author>
-      <name>Witchybun</name>
-    </author>
-    <content>New Feature:&#13;
-- Uses rules builder now.&#13;
-&#13;
-Bugfixes:&#13;
-- Fix several logic problems.</content>
-    <link href="https://github.com/Witchybun/Archipelago/releases/tag/MadouMonogatari106"/>
-  </entry>
   <entry>
     <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.3</id>
     <title>Civilization V v0.10.3</title>
@@ -1187,5 +1120,156 @@ There are 16 new traps!&#13;
   - Shuffler fixed&#13;
   - Patching fixed, offset used during writing was not being updated correctly</content>
     <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.3</id>
+    <title>AP Tombola v0.3.0</title>
+    <updated>2026-07-02T17:49:10+00:00</updated>
+    <author>
+      <name>Arenes214</name>
+    </author>
+    <content>##  New Additions&#13;
+###  **Card Generation Criteria** Option&#13;
+Determines how the Cards will be generated:&#13;
+-  **Classic**: The normal Card generation criteria. the following Tombola rules will be followed:&#13;
+-  - 1-9 in first column, 10-19 in second column, ..., 80-90 in last column&#13;
+-  - All columns will have at least one number&#13;
+-  - Numbers in the same column are ordered in ascending order&#13;
+-  **Order**: Numbers will be distributed into card in order.&#13;
+-  - 1 in Card 1, 2 in Card 2, ..., 6 in Card 6, 7 in Card 1, 8 in Card 2, ...&#13;
+-  **Chaos**: Numbers will not respect the Tombola rules respected by the Classic option.&#13;
+-  - e.g. 1 may appear in any column, 54 may appear before 22 in a column&#13;
+&#13;
+### **Marksanity** Option&#13;
+A new Sanity option that creates, for each Number, a location that will require you to Mark that Number to be checked&#13;
+### **Additional Card Unlocks** Option&#13;
+If Cardsanity and this option are enabled, an additional copy of "Card X Unlock" is created for each locked Card.&#13;
+&#13;
+### **Location Groups**&#13;
+Locations are now grouped, for easy usage in yaml options such as Priority Locations!&#13;
+Location groups that now exist are:&#13;
+- Card X Locations (for each Card)&#13;
+- Regular Locations&#13;
+- Rowsanity Locations&#13;
+- Regular {score} Locations (for each type of score)&#13;
+- Rowsanity {score} Locations (for each type of score)&#13;
+- All {score} Locations (includes both Regular and Rowsanity locations, for each score)&#13;
+- Milestone Locations&#13;
+- Marksanity Locations&#13;
+- Unlock Locations&#13;
+&#13;
+### New Filler Items&#13;
+The amount of filler has more than doubled!&#13;
+&#13;
+## Changes&#13;
+- Spoiler Log now display a player's Cards&#13;
+- Hints in a Tombola location now displays what is needed to obtain it&#13;
+example: `[Hint]: Player2's Pack Rat is at Card 1 - Ambo Reward 1 in Player1's World at Get 2 Numbers in any one of the following rows: [[3, 12, 50, 61, 81], [8, 31, 66, 71, 84], [25, 36, 45, 69, 87]].`&#13;
+- Color of progression items is now lighter in the client's text chat&#13;
+- Client now displays its version in the bottom left of the login screen&#13;
+- When playing the game on **Android**, scroll bars are now 2.5x wider&#13;
+&#13;
+## Bugfixes&#13;
+- Fixed capitalization being wrong on some filler items&#13;
+- Fixed APWorld being incompatible with APWorlds that modify other slot's Item Rules (such as SBURBelago)&#13;
+- Fixed Unlock Locations not following `Prevent Other Meta Game Items` and being able to contain Progression items from AP Tombola&#13;
+- Fixed Client erroneously making locked cards unlockable when connecting to a 0.2.x slot after logging out of a 0.1.x slot&#13;
+- Fixed Client not showing `(found)` when hinting items already found&#13;
+- Fixed extended hint info not showing when hinting items&#13;
+- Fixed save info behaving incorrectly when deleting a save&#13;
+&#13;
+## Download and How to Play:&#13;
+- **APWorld**&#13;
+- - The APWorld is available here: https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.3&#13;
+&#13;
+- **Client**&#13;
+- - Client Download for Windows, Linux and Android is available here: https://github.com/Arenes214/AP-Tombola/releases/tag/0.3&#13;
+- - Client is also available as a website here: https://arenes214.itch.io/ap-tombola&#13;
+- ** Client is backwards compatible with worlds generated on 0.1.x and 0.2.x**</content>
+    <link href="https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.1</id>
+    <title>Stardew Valley v8.0.0</title>
+    <updated>2026-07-02T20:23:20+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Exempt-Medic (Proofreading)</name>
+    </author>
+    <content>- Fixed Decoupled Chaos Entrances not decoupling properly</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.2</id>
+    <title>Stardew Valley v8.0.0</title>
+    <updated>2026-07-02T20:36:10+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Exempt-Medic (Proofreading)</name>
+    </author>
+    <content>- Made the QoL Return Scepter warp to house only functional after you found your bed</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR4</id>
+    <title>The Grinch v1.6.0</title>
+    <updated>2026-07-02T21:50:07+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>## Notice&#13;
+This version is a beta. Meaning, this is meant to test the new features and it's behavior. Do not submit to public syncs and asyncs unless you want to take the risk of any issues that may occur when playing it. Play it at your own risk! I am not responsible for any issues that may occur if you decide to bring this version to public sessions.&#13;
+&#13;
+### Changes&#13;
+- A sleigh part option joins the game today, mixing multiworld paths or old vanilla play!&#13;
+- Mission item randomizing joins the show, in familiar spots or shuffled flow!&#13;
+- With clever new logic, you'll roam with delight where average players lose the fight!&#13;
+- No more crates get squashed on Mount Crumpit’s steep height, now every one can be collected with ease and delight!&#13;
+&#13;
+### Bugfixes&#13;
+- And logic bugs were swatted out, so neat, like tiny flies removed before repeat!</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.3</id>
+    <title>Stardew Valley v8.0.0</title>
+    <updated>2026-07-02T22:30:46+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Exempt-Medic (Proofreading)</name>
+    </author>
+    <content>- Fixed sleep command with multisleep amount always sleeping one too many days&#13;
+- Fixed Multisleep until Birthday showing up when no birthdays are available&#13;
+- Fixed DR for fish when mods decided to input them with an unqualified ID&#13;
+- Fixed the ability to sell We Moo Unseen cows&#13;
+- Fixed Qi Gem shop having a bunch of issues with randomized currencies</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.3"/>
   </entry>
 </feed>
