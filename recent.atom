@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-03T00:34:35.211431+00:00</updated>
+  <updated>2026-07-03T07:10:38.167405+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
@@ -965,90 +965,6 @@ More extensive and thorough setup documentation can be viewed here: https://gith
     <link href="https://github.com/dgrossmann144/Archipelago/releases/tag/v0.1.7-alpha"/>
   </entry>
   <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.0</id>
-    <title>Stardew Valley v8.0.0</title>
-    <updated>2026-07-02T03:43:19+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Exempt-Medic (Proofreading)</name>
-    </author>
-    <content># First Release for StardewArchipelago 8.x.x&#13;
-&#13;
-### Should be considered a BETA for now.&#13;
-&#13;
-# New Features&#13;
-&#13;
-## Data Randomization&#13;
-&#13;
-- Data Randomization&#13;
-&#13;
-Data randomization is the main feature of 8.x.x. It allows you to randomize internal data in stardew valley, locally (not through archipelago), so your prior knowledge is invalidated.&#13;
-Data Randomization works based on two options. The first chooses, through individual toggles what data should be randomized, and the second chooses how this data will be randomized.&#13;
-### Available toggles:&#13;
-  - Fish Difficulty&#13;
-  - Fish Season&#13;
-  - Fish Weather&#13;
-  - Fish Location&#13;
-  - Fish Sell Price&#13;
-  - Fish Catch Method&#13;
-  - Crop Sell Price&#13;
-  - Growth Time&#13;
-  - Growth Season&#13;
-  - Which Crop From Which Seed&#13;
-  - Shop Prices&#13;
-  - Shop Prices Across Vendors&#13;
-  - Shop Currencies&#13;
-  - Shop Extra Materials&#13;
-  - Festival Season&#13;
-  - Festival Date&#13;
-  - Villager Birthdays&#13;
-  &#13;
-  ### Available Randomization Modes:&#13;
-  - Shuffled: All values are maintained, but shuffled between entries.&#13;
-  - Weighted Randomized: All entries are given a random value from the original pool, weighted from their original distribution, with repeat draws&#13;
-  - Randomized: All entries are given a random value from the original pool with no regard for the original frequency, with repeat draws. Can be imbalanced&#13;
-  - Normal Randomized: All entries are given a random value picked from a Log-Transformed Normal Distribution generated from the original values. Can be imbalanced&#13;
-  - Range Randomized: All entries are given a random value between the original minimum and original maximum, with no regard for what values originally existed. Very imbalanced.&#13;
-&#13;
-## New Entrance Randomizer Modes&#13;
-### The Entrance Randomizer has been entirely overhauled thanks to @itepastra 's efforts.&#13;
- - New Level: Overworld - Randomizes outside map transitions in addition to doors&#13;
- - New Level: Everywhere - Randomizes all map transitions, such as minecarts, warp totems, return scepter.&#13;
- - Level Removed: Buildings Without House - The house behavior is moved to a toggle instead.&#13;
- - Level Removed: Chaos - This was moved to be a toggled behavior instead.&#13;
-### New setting that uses individual toggles to customize the behavior of ER&#13;
-   - Chaos - Entrance reshuffle every day&#13;
-   - Decoupled - Both directions of the same entrance are randomized separately. **Not for the faint of heart**&#13;
-   - Shuffle Farmhouse - Includes the farmhouse in the randomization&#13;
-   - Shuffle Farmhouse Anywhere - Includes the farmhouse, and it is not limited to "sane" spots. **Not for the faint of heart**&#13;
-   - Same Direction - This tries to randomize entrances by maintaining direction (up-down-left-right), for reduced physical whiplash when traversing them.&#13;
-   - Same Type - This tries to randomize entrances but maintain their type. So a door that goes in a building, will still go in a building.&#13;
-### New Setting: Entrance Plando! Choose where some specific entrances will go!&#13;
-&#13;
-## Start Without: Villagers&#13;
-Start in a Ghost town with nobody to talk to. Unlock individual villagers!&#13;
-## Start Without: House&#13;
-Start homeless on your farm, and commune with nature.&#13;
-&#13;
-## New Traps&#13;
-There are 16 new traps!&#13;
-## Trap Difficulty: Eldritch&#13;
-  New Trap difficulty, above nightmare. This level is designed to take revenge on the players who decided that nightmare was not that bad, and are playing it frequently.&#13;
-## Split Arcade Machines&#13;
-  Now you can do just one or the other, instead of them being together.&#13;
-## 9 New Meme Bundles&#13;
-</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.0"/>
-  </entry>
-  <entry>
     <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.20.1</id>
     <title>Metroid Dread v0.20.1</title>
     <updated>2026-07-02T15:07:38+00:00</updated>
@@ -1271,5 +1187,26 @@ This version is a beta. Meaning, this is meant to test the new features and it's
 - Fixed the ability to sell We Moo Unseen cows&#13;
 - Fixed Qi Gem shop having a bunch of issues with randomized currencies</content>
     <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.4</id>
+    <title>Stardew Valley v8.0.0</title>
+    <updated>2026-07-03T01:07:15+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Exempt-Medic (Proofreading)</name>
+    </author>
+    <content>- Fixed a small issue with duplicate ice cream entries (?)&#13;
+- Made secrets on the calendar be dynamic with their associated festivals, if applicable&#13;
+- Prevent invisible cows from giving farming XP</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.4"/>
   </entry>
 </feed>
