@@ -92,6 +92,20 @@
       "version_simple": "0.3.0",
       "world_version": "0.3.0"
     },
+    "v0.3.1": {
+      "created_at": "2026-07-03T12:39:22Z",
+      "description": "Uses [Version 0.2.1 of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/v.0.2.1)\r\n\r\nFixes/Code Changes:\r\n\r\n- removed some old unnecessary code that could cause players with high latency to have fillers be redeemed before the gamemode knew what items had already been applied, causing fillers that had already been applied to be applied again\r\n- fixed information about which filler items had already been applied not being reset when connecting to a new save, causing that information to carry over to the new save\r\n- stop creating fields in the itemsused table until that item is actually used to save memory\r\n- fixed save data not being saved when the player disconnects from one slot and connects to a new one without changing maps\r\n- fixed the PreDupe config script function not being passed the CFGLUA table like other config script functions\r\n\r\nNo changes to the apworld were made in this update, you do not need to redownload it if you're already using the 0.3.0 apworld.\r\n\r\nIf you don't know what the .fgd file is for, you don't need it.",
+      "download_url": "https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.1/gmod_apadv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4662a96d990eb71d86ba8b00878737fa02120777c647c04b836fddb588527e0c",
+      "html_url": "https://github.com/ChrisCj8/ap_adventure/releases/tag/v0.3.1",
+      "size": 53080,
+      "source_url": "https://api.github.com/repos/ChrisCj8/ap_adventure",
+      "tag": "v0.3.1",
+      "title": "Version 0.3.1",
+      "version_simple": "0.3.1",
+      "world_version": "0.3.1"
+    },
     "v1_1": {
       "created_at": "2026-04-11T21:08:52Z",
       "description": "Uses [Inititial Release Version of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/Main)\r\n\r\nFixed the apworld throwing errors on new installs because the host.yaml section and logic folders haven't been created yet.\r\n\r\nThis flew under my radar because I did not test the apworld on a new install, apologies.\r\n\r\nIf you don't know what the .fgd file is for you don't need it.",

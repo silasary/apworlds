@@ -8,7 +8,7 @@ Garry:
 
 
 ## Downloads
-- <a href="https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.0/gmod_apadv.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.1/gmod_apadv.apworld">Latest Version (0.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

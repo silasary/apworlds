@@ -10,7 +10,9 @@ your `.apsave` file, and a screenshot if possible.
 ## Required Software
 
 - [Kerbal Space Program](https://store.steampowered.com/app/220200/Kerbal_Space_Program/) (Steam or GOG)
-- The Mod today **REQUIRES Making History DLC!!**. If you wish to play without this please send me an Issue and I can look into supporting enabling/disabling it has an option
+- **Making History DLC** — enabled by default and **recommended**. The seed uses its parts unless you opt out:
+  if you don't own the DLC, remove `MakingHistory` from the **Enabled Part Packs** option in your YAML so the run
+  uses only stock parts.
 - The KSP Archipelago `.apworld` file from the
   [Archipelago releases page](https://github.com/nickdavies/Archipelago/releases)
 - The KSP Archipelago client mod (`KSPArchipelago`) — install via CKAN (recommended) or from the

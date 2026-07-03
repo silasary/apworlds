@@ -1,9 +1,12 @@
 # GMod - apAdventure
 
 ## Latest
-- <a href="https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.0/gmod_apadv.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.1/gmod_apadv.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.1/gmod_apadv.apworld">https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.1/gmod_apadv.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.0/gmod_apadv.apworld">https://github.com/ChrisCj8/ap_adventure/releases/download/v0.3.0/gmod_apadv.apworld</a>

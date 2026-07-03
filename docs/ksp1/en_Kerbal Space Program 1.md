@@ -2,6 +2,8 @@
 
 **This world is experimental.** Only the default (Normal) difficulty has been thoroughly tested.
 Only vanilla (unmodded) KSP is supported - no part mods, planet packs, or other gameplay mods have been tested.
+The **Making History DLC** is supported and its parts are **included by default**; if you don't own it,
+opt out via the **Enabled Part Packs** option (see Key options) so the seed only uses stock parts.
 [Kerbal Engineer Redux](https://github.com/jrbudda/KerbalEngineer) is known to work and is recommended for delta-v readouts.
 Please report issues at the [GitHub issue tracker](https://github.com/nickdavies/Archipelago/issues).
 Include your player YAML, the AP `.zip` output, your `.apsave` file, and a screenshot if possible.
@@ -52,8 +54,11 @@ reach yet, so you are never handed something you can't use.
 
 | Progressive Item | What It Does |
 |---|---|
-| Progressive R&D (×3) | Unlocks successively higher bands of the tech tree. |
+| Progressive R&D (×5) | Unlocks successively higher bands of the tech tree, and (with Buildings In Logic) raises the R&D facility's science-cost cap so you can afford pricier nodes. |
 | Progressive Science Instrument (×3) | Advances your science-instrument tier (it feeds the science-point budget). |
+| Progressive Astronaut Complex (×2, buildings) | Unlocks EVA — flag planting, EVA in orbit, rescues, and surface samples away from home. Present when Buildings In Logic is on (default). |
+| Progressive Tracking Station (×2, buildings) | Extends Deep Space Network range and unlocks patched conics. Present when Buildings In Logic is on (default). |
+| Progressive Mission Control (×1, buildings) | Unlocks maneuver nodes for planning transfers and rendezvous. Present when Buildings In Logic is on (default). |
 | Progressive Launch Pad (×3, optional) | Raises the launch-pad mass limit so you can fly heavier rockets. Present only if you enable the Progressive Launch Pad option. |
 
 **Science Packs** are filler items that grant science points, used to purchase tech tree nodes.
@@ -84,6 +89,42 @@ experiments; instead you complete missions and contracts:
   Purchasing a node with science points awards these checks.
 - **Contracts** (10 by default) — Native KSP contracts injected by the client; completing one checks its reward
   location(s). Under the default Count goal mode, completing contracts is also how you unlock your goal.
+
+## KSC building upgrades (Buildings In Logic)
+
+With **Buildings In Logic** (on by default) your KSC facilities start un-upgraded and you unlock them
+by collecting progressive items — they are no longer free from the start. Each facility gates a
+different capability:
+
+- **Astronaut Complex** — EVA actions. Planting a flag and doing an EVA in orbit require the upgrade
+  (even on your own home body), as do rescues and reaching a Kerbal outside the craft on any body
+  other than home.
+- **Tracking Station** — Deep Space Network range (a weaker station needs a stronger antenna, so
+  distant uncrewed missions and far science transmission require upgrading it) and patched conics.
+- **Mission Control** — maneuver nodes, which (together with conics) let you plan transfers and
+  rendezvous.
+- **Research & Development** — surface samples (a Kerbal collecting surface material needs the R&D
+  facility, even at home) and the science-cost cap described below.
+
+Turn Buildings In Logic **off** to play with every facility maxed from the start (closer to a
+science-sandbox feel), where no building gates anything.
+
+### Progressive R&D: tech bands *and* the R&D building (this is not a bug)
+
+Progressive R&D does **double duty**, which surprises people — it is working as intended:
+
+1. **Every** Progressive R&D copy unlocks the next **band** of the tech tree — i.e. which nodes you
+   are allowed to buy. You get 5 total, and the early bands are deliberately generous (your first
+   copy opens several early tiers).
+2. **Two of those copies — the 2nd and the 4th — also upgrade the R&D *building* itself.** The
+   building level sets KSP's science-cost cap: the price of the most expensive node you may purchase
+   (100 → 500 → unlimited science). The 2nd copy raises the building to the middle level (and unlocks
+   surface samples); the 4th raises it to max.
+
+So most Progressive R&D items only open new tech, but two of them *also* bump the R&D building. That
+is deliberate: the building upgrades are placed so the science-cost cap is **never** the thing
+blocking you — the tech band you've unlocked is always the real limit. If you receive an R&D item and
+the building does **not** visibly upgrade, that is expected — only the 2nd and 4th copies do.
 
 ## Which items can be in another player's world?
 
@@ -131,6 +172,14 @@ won't contain items required for progression.
 
 - **Difficulty** — Controls delta-V margins, starting location count, and tech tree density. Casual is forgiving;
   Expert assumes near-optimal delta-V piloting. **Only Normal has been thoroughly tested so far.**
+- **Buildings In Logic** — **On by default.** Gates the Astronaut Complex, Tracking Station, Mission Control, and
+  R&D facility as progression, so you unlock EVA, comms/conics, maneuver nodes, and the tech science-cost cap by
+  collecting the matching Progressive items (see *KSC building upgrades* above). Turn it off to start with every
+  facility maxed.
+- **Enabled Part Packs** — Which optional DLC part packs to include. **The Making History pack is enabled by
+  default, so the seed uses its parts** — if you do **not** own the Making History DLC you must **opt out** by
+  removing `MakingHistory` from this set, or you'll be handed parts you can't build. Stock parts are always
+  available regardless.
 - **Goal Contract Mode** — How your goal is unlocked. **Count (default):** complete a number of your available
   contracts and the goal is awarded. Other modes: *Findable* (the goal item is in the multiworld pool and found
   like any other item), *Starting* (the goal is granted up front, limited only by physics/parts), and
