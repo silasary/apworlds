@@ -14,10 +14,15 @@ Funi Raccoon Game is a silly 3D collectathon about a Raccoon stealing things and
 
 All Dumpster items, hats, gems, cats, dumbbell increases, and progressive cooling rods can be found, as well as filler euro increases.
 
+## FAQ
+
+What are the Function keybinds and what do they do?
+F1: Display all keybinds and their usages
+F2: Display current progress towards set goals
+F3: Change if item popups in the middle of the screen should appear/disappear
+F4: Filter out messages to only be relevant to yourself, rather than all messages
+F6: Change if Archipelago text client messages should show in the bottom left at alls
+
 ## Where is the options page?
 
 The options yaml can be made via the Options Creator in the Archipelago launcher. It requires Archipelago v0.6.7 to run.
-
-## Disclaimer
-
-This mod was made in part with help from Claude. I am not a pro Godot programmer, and I needed a lot of help figuring out how to set this up and make it work. That being said, **all code has been vetted to ensure that its at least fairly quality, and I will always make sure I am understanding what is written when it writes things.** I welcome any and all PRs to improve the code on both the Godot mod, and this APWorld, and I make a full commitment to ensuring this project is well made and well put together. I could hide this information, but I believe it is best to be transparent about the help I used with it :) REMEMBER TO SUPPORT AND COMMISSION ARTISTS ALWAYS, DOWN WITH ARTISTIC CREATIVE GEN AI USAGE!
