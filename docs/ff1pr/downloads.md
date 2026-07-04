@@ -1,45 +1,45 @@
 # FF1 Pixel Remaster
 
 ## Latest
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.6.0/ff1pr.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.6.2/ff1pr.apworld">Latest Version (0.6.0r2)</a>
 
 ## All Versions
+
+#### v0.6.0r2
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.6.2/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.6.2/ff1pr.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.6.0/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.6.0/ff1pr.apworld</a>
 
-#### v0.6.0
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.6.2/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.6.2/ff1pr.apworld</a>
-
 #### v0.5.16
 - <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.17/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.17/ff1pr.apworld</a>
+
+#### v0.5.12r5
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.16/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.16/ff1pr.apworld</a>
+
+#### v0.5.12r4
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.15/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.15/ff1pr.apworld</a>
+
+#### v0.5.12r3
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.14/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.14/ff1pr.apworld</a>
+
+#### v0.5.12r2
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.13/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.13/ff1pr.apworld</a>
 
 #### v0.5.12
 - <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.12/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.12/ff1pr.apworld</a>
 
-#### v0.5.12
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.13/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.13/ff1pr.apworld</a>
+#### v0.5.8r4
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.9/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.9/ff1pr.apworld</a>
 
-#### v0.5.12
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.14/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.14/ff1pr.apworld</a>
+#### v0.5.8r3
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.8/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.8/ff1pr.apworld</a>
 
-#### v0.5.12
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.15/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.15/ff1pr.apworld</a>
-
-#### v0.5.12
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.16/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.16/ff1pr.apworld</a>
-
-#### v0.5.8
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.10/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.10/ff1pr.apworld</a>
-
-#### v0.5.8
+#### v0.5.8r2
 - <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.11/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.11/ff1pr.apworld</a>
 
 #### v0.5.8
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.8/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.8/ff1pr.apworld</a>
-
-#### v0.5.8
-- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.9/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.9/ff1pr.apworld</a>
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.10/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.10/ff1pr.apworld</a>
 
 #### v0.5.7
 - <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.5.7/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.5.7/ff1pr.apworld</a>

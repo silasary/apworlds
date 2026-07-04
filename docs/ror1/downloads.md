@@ -38,11 +38,11 @@
 #### v0.4.1
 - <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.4.1/ror1.apworld">https://github.com/studkid/RoR_Archipelago/releases/download/v0.4.1/ror1.apworld</a>
 
-#### v0.4
-- <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.4/ror1.apworld">https://github.com/studkid/RoR_Archipelago/releases/download/v0.4/ror1.apworld</a>
+#### v0.4r2
+- <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.4-hotfix/ror1.apworld">https://github.com/studkid/RoR_Archipelago/releases/download/v0.4-hotfix/ror1.apworld</a>
 
 #### v0.4
-- <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.4-hotfix/ror1.apworld">https://github.com/studkid/RoR_Archipelago/releases/download/v0.4-hotfix/ror1.apworld</a>
+- <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.4/ror1.apworld">https://github.com/studkid/RoR_Archipelago/releases/download/v0.4/ror1.apworld</a>
 
 #### v0.3.5
 - <a href="https://github.com/studkid/RoR_Archipelago/releases/download/v0.3.5/ror1.apworld">https://github.com/studkid/RoR_Archipelago/releases/download/v0.3.5/ror1.apworld</a>

@@ -17,11 +17,11 @@
 #### v2.1.5
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.2.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.2.0/factorio_bobs.apworld</a>
 
-#### v2.1.4
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.4/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.4/factorio_bobs.apworld</a>
+#### v2.1.4r2
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.5/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.5/factorio_bobs.apworld</a>
 
 #### v2.1.4
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.5/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.5/factorio_bobs.apworld</a>
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.4/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.4/factorio_bobs.apworld</a>
 
 #### v2.1.3
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.3/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.3/factorio_bobs.apworld</a>
@@ -29,17 +29,17 @@
 #### v2.1.2
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.2/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.2/factorio_bobs.apworld</a>
 
+#### v2.1.0r2
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.1/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.1/factorio_bobs.apworld</a>
+
 #### v2.1.0
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.0/factorio_bobs.apworld</a>
 
-#### v2.1.0
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.1/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.1.1/factorio_bobs.apworld</a>
+#### v1.3.3r2
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.0.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.0.0/factorio_bobs.apworld</a>
 
 #### v1.3.3
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.3/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.3/factorio_bobs.apworld</a>
-
-#### v1.3.3
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.0.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.0.0/factorio_bobs.apworld</a>
 
 #### v1.3.2
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.2/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.2/factorio_bobs.apworld</a>
@@ -47,11 +47,11 @@
 #### v1.3.1
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.1/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.1/factorio_bobs.apworld</a>
 
-#### v1.2.0
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.2.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.2.0/factorio_bobs.apworld</a>
+#### v1.2.0r2
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.0/factorio_bobs.apworld</a>
 
 #### v1.2.0
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.3.0/factorio_bobs.apworld</a>
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.2.0/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.2.0/factorio_bobs.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.1.2/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V1.1.2/factorio_bobs.apworld</a>

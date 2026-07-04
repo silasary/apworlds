@@ -29,9 +29,9 @@
 #### v1.0.2a0
 - <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.2-alpha/dwarf_fortress.apworld">https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.2-alpha/dwarf_fortress.apworld</a>
 
-#### v1.0.0
-- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.0/dwarf_fortress.apworld">https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.0/dwarf_fortress.apworld</a>
+#### v1.0.0r2
+- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.1-alpha/dwarf_fortress.apworld">https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.1-alpha/dwarf_fortress.apworld</a>
 
 #### v1.0.0
-- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.1-alpha/dwarf_fortress.apworld">https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.1-alpha/dwarf_fortress.apworld</a>
+- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.0/dwarf_fortress.apworld">https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.0.0/dwarf_fortress.apworld</a>
 

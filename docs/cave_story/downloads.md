@@ -23,11 +23,11 @@
 #### v0.6.2
 - <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.2/cave_story.apworld">https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.2/cave_story.apworld</a>
 
-#### v0.6.1
-- <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.1/cave_story.apworld">https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.1/cave_story.apworld</a>
+#### v0.6.1r2
+- <a href="https://github.com/kl3cks7r/Archipelago/releases/download/v0.6.1/cave_story.apworld">https://github.com/kl3cks7r/Archipelago/releases/download/v0.6.1/cave_story.apworld</a>
 
 #### v0.6.1
-- <a href="https://github.com/kl3cks7r/Archipelago/releases/download/v0.6.1/cave_story.apworld">https://github.com/kl3cks7r/Archipelago/releases/download/v0.6.1/cave_story.apworld</a>
+- <a href="https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.1/cave_story.apworld">https://github.com/kl3cks7r/CaveStoryArchipelago/releases/download/0.6.1/cave_story.apworld</a>
 
 #### v0.6
 - <a href="https://github.com/kl3cks7r/Archipelago/releases/download/v0.6/cave_story.apworld">https://github.com/kl3cks7r/Archipelago/releases/download/v0.6/cave_story.apworld</a>

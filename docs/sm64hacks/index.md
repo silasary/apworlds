@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.7/sm64hacks.apworld">Latest Version (1.1.7)</a>
+- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.9/sm64hacks.apworld">Latest Version (1.1.7r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

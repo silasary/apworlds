@@ -47,11 +47,11 @@
 #### v0.0.20
 - <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.0.20.0/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.0.20.0/dsr.apworld</a>
 
-#### v0.0.19
-- <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19/dsr.apworld</a>
+#### v0.0.19r2
+- <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19.1/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19.1/dsr.apworld</a>
 
 #### v0.0.19
-- <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19.1/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19.1/dsr.apworld</a>
+- <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19/dsr.apworld</a>
 
 #### v0.0.18.3
 - <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.0.18.3/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.0.18.3/dsr.apworld</a>

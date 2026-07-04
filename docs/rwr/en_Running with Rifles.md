@@ -30,10 +30,10 @@ Depending on your options:
 
 - Squadmate Slots (rank promotions)
 - Map access keys (11 keys, starting map is always unlocked)
-- Weapon unlocks (9 categories or ~67 individual weapons)
-- Radio call unlocks (13 calls + master Radio item)
+- Weapon unlocks (9 categories or ~196 individual weapons)
+- Radio call unlocks (12 calls + master Radio item)
 - Equipment (vests, deployables, binoculars)
 - Throwables (C4, claymores, impact grenades, flares)
 - Vanilla grenades, vests, and costumes (if shuffled)
 - RP bundles, XP boosts, rare weapon vouchers
-- Traps (demotion, radio jammer, friendly fire, squad desertion)
+- Traps (demotion, radio jammer, friendly fire)

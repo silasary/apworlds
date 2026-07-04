@@ -1,18 +1,18 @@
 # Vampire Survivors
 
 ## Latest
-- <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.2/vampire_survivors.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.4/vampire_survivors.apworld">Latest Version (0.3.2r3)</a>
 
 ## All Versions
 
-#### v0.3.2
-- <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.2/vampire_survivors.apworld">https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.2/vampire_survivors.apworld</a>
+#### v0.3.2r3
+- <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.4/vampire_survivors.apworld">https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.4/vampire_survivors.apworld</a>
 
-#### v0.3.2
+#### v0.3.2r2
 - <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.3/vampire_survivors.apworld">https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.3/vampire_survivors.apworld</a>
 
 #### v0.3.2
-- <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.4/vampire_survivors.apworld">https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.4/vampire_survivors.apworld</a>
+- <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.2/vampire_survivors.apworld">https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.2/vampire_survivors.apworld</a>
 
 #### v0.3.1
 - <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.1/vampire_survivors.apworld">https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.1/vampire_survivors.apworld</a>

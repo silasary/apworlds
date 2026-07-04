@@ -1,6 +1,8 @@
 # Toy Story 2
 
-
+Buzz Lightyear is on a mission to rescue Woody from the evil Al McWhiggin!
+Explore 15 levels, collect Pizza Planet Tokens, and defeat the Prospector
+to save Woody and infinity and beyond!
 
 
 ## Downloads

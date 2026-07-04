@@ -8,11 +8,11 @@
 #### v0.15.18
 - <a href="https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.18/into_the_breach.apworld">https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.18/into_the_breach.apworld</a>
 
-#### v0.15.16
-- <a href="https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.16/into_the_breach.apworld">https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.16/into_the_breach.apworld</a>
+#### v0.15.16r2
+- <a href="https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.17/into_the_breach.apworld">https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.17/into_the_breach.apworld</a>
 
 #### v0.15.16
-- <a href="https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.17/into_the_breach.apworld">https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.17/into_the_breach.apworld</a>
+- <a href="https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.16/into_the_breach.apworld">https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.16/into_the_breach.apworld</a>
 
 #### v0.15.15
 - <a href="https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.15/into_the_breach.apworld">https://github.com/Ishigh1/ITB-randomizer-for-AP/releases/download/v0.15.15/into_the_breach.apworld</a>

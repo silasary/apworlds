@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Typ0Codes/shipped-in-space-archipeligo-support/releases/download/1.0.0/shippedinspace.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/Typ0Codes/shipped-in-space-archipeligo-support/releases/download/2.1.0/shippedinspace.apworld">Latest Version (1.0.0r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

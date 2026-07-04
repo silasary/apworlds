@@ -8,11 +8,11 @@
 #### v0.10.2
 - <a href="https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.10.2/pseudoregalia.apworld">https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.10.2/pseudoregalia.apworld</a>
 
-#### v0.10.0
-- <a href="https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.0/pseudoregalia.apworld">https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.0/pseudoregalia.apworld</a>
+#### v0.10.0r2
+- <a href="https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.1/pseudoregalia.apworld">https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.1/pseudoregalia.apworld</a>
 
 #### v0.10.0
-- <a href="https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.1/pseudoregalia.apworld">https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.1/pseudoregalia.apworld</a>
+- <a href="https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.0/pseudoregalia.apworld">https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.0/pseudoregalia.apworld</a>
 
 #### v0.9.4
 - <a href="https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.9.4/pseudoregalia.apworld">https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.9.4/pseudoregalia.apworld</a>

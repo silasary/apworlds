@@ -14,11 +14,11 @@
 #### v0.19.0
 - <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.19.0/reventure.apworld">https://github.com/Droppel/ReventureEndingRando/releases/download/0.19.0/reventure.apworld</a>
 
-#### v0.18.2
-- <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.2/reventure.apworld">https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.2/reventure.apworld</a>
+#### v0.18.2r2
+- <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.2-hotfix/reventure.apworld">https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.2-hotfix/reventure.apworld</a>
 
 #### v0.18.2
-- <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.2-hotfix/reventure.apworld">https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.2-hotfix/reventure.apworld</a>
+- <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.2/reventure.apworld">https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.2/reventure.apworld</a>
 
 #### v0.18.1
 - <a href="https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.1/reventure.apworld">https://github.com/Droppel/ReventureEndingRando/releases/download/0.18.1/reventure.apworld</a>

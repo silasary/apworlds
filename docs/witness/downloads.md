@@ -17,59 +17,59 @@
 #### v1.0.0
 - <a href="https://github.com/Exempt-Medic/Archipelago/releases/download/v1.0.0/witness.apworld">https://github.com/Exempt-Medic/Archipelago/releases/download/v1.0.0/witness.apworld</a>
 
-#### v0.5.1
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p13/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p13/witness.apworld</a>
+#### v0.5.1r6
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p18/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p18/witness.apworld</a>
 
-#### v0.5.1
+#### v0.5.1r5
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p17/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p17/witness.apworld</a>
+
+#### v0.5.1r4
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p16/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p16/witness.apworld</a>
+
+#### v0.5.1r3
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p15/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p15/witness.apworld</a>
+
+#### v0.5.1r2
 - <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p14/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p14/witness.apworld</a>
 
 #### v0.5.1
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p15/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p15/witness.apworld</a>
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p13/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p13/witness.apworld</a>
 
-#### v0.5.1
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p16/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p16/witness.apworld</a>
+#### v0.5.0r6
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p9/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p9/witness.apworld</a>
 
-#### v0.5.1
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p17/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p17/witness.apworld</a>
+#### v0.5.0r5
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p8/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p8/witness.apworld</a>
 
-#### v0.5.1
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p18/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.1p18/witness.apworld</a>
+#### v0.5.0r4
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p7/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p7/witness.apworld</a>
+
+#### v0.5.0r3
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p12/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p12/witness.apworld</a>
+
+#### v0.5.0r2
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p11/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p11/witness.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p10/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p10/witness.apworld</a>
 
-#### v0.5.0
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p11/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p11/witness.apworld</a>
+#### v0.4.7r6
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p6/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p6/witness.apworld</a>
 
-#### v0.5.0
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p12/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p12/witness.apworld</a>
+#### v0.4.7r5
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p5/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p5/witness.apworld</a>
 
-#### v0.5.0
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p7/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p7/witness.apworld</a>
+#### v0.4.7r4
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p4/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p4/witness.apworld</a>
 
-#### v0.5.0
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p8/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p8/witness.apworld</a>
+#### v0.4.7r3
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p3/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p3/witness.apworld</a>
 
-#### v0.5.0
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p9/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.5.0p9/witness.apworld</a>
-
-#### v0.4.7
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p1/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p1/witness.apworld</a>
-
-#### v0.4.7
+#### v0.4.7r2
 - <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p2/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p2/witness.apworld</a>
 
 #### v0.4.7
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p3/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p3/witness.apworld</a>
-
-#### v0.4.7
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p4/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p4/witness.apworld</a>
-
-#### v0.4.7
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p5/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p5/witness.apworld</a>
-
-#### v0.4.7
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p6/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p6/witness.apworld</a>
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p1/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.7p1/witness.apworld</a>
 
 #### v0.4.5b6
 - <a href="https://github.com/NewSoupVi/Archipelago/releases/download/0.4.5_beta6/witness.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/0.4.5_beta6/witness.apworld</a>

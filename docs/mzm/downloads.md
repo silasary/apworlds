@@ -23,29 +23,29 @@
 #### v0.4.1
 - <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.1/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.1/mzm.apworld</a>
 
-#### v0.4.0
-- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0/mzm.apworld</a>
+#### v0.4.0r3
+- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0-pre2/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0-pre2/mzm.apworld</a>
 
-#### v0.4.0
+#### v0.4.0r2
 - <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0-pre1/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0-pre1/mzm.apworld</a>
 
 #### v0.4.0
-- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0-pre2/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0-pre2/mzm.apworld</a>
+- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.4.0/mzm.apworld</a>
 
 #### v0.3.1
 - <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.1/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.1/mzm.apworld</a>
 
-#### v0.3.0
-- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0/mzm.apworld</a>
+#### v0.3.0r4
+- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre3/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre3/mzm.apworld</a>
 
-#### v0.3.0
+#### v0.3.0r3
+- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre2a/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre2a/mzm.apworld</a>
+
+#### v0.3.0r2
 - <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre1/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre1/mzm.apworld</a>
 
 #### v0.3.0
-- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre2a/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre2a/mzm.apworld</a>
-
-#### v0.3.0
-- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre3/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre3/mzm.apworld</a>
+- <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0/mzm.apworld</a>
 
 #### v0.3.0rc0.post0
 - <a href="https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre2/mzm.apworld">https://github.com/lilDavid/Archipelago-Metroid-Zero-Mission/releases/download/0.3.0-pre2/mzm.apworld</a>

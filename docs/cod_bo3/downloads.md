@@ -1,27 +1,27 @@
 # Black Ops 3 - Zombies
 
 ## Latest
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.4/cod_bo3.apworld">Latest Version (0.5.4)</a>
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.6/cod_bo3.apworld">Latest Version (0.5.4r3)</a>
 
 ## All Versions
+
+#### v0.5.4r3
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.6/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.6/cod_bo3.apworld</a>
+
+#### v0.5.4r2
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.5/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.5/cod_bo3.apworld</a>
 
 #### v0.5.4
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.4/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.4/cod_bo3.apworld</a>
 
-#### v0.5.4
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.5/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.5/cod_bo3.apworld</a>
+#### v0.5.1r3
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.3/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.3/cod_bo3.apworld</a>
 
-#### v0.5.4
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.6/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.6/cod_bo3.apworld</a>
-
-#### v0.5.1
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.1/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.1/cod_bo3.apworld</a>
-
-#### v0.5.1
+#### v0.5.1r2
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.2/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.2/cod_bo3.apworld</a>
 
 #### v0.5.1
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.3/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.3/cod_bo3.apworld</a>
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.1/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.1/cod_bo3.apworld</a>
 
 #### v0.5.0.post2
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.0/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.0/cod_bo3.apworld</a>
@@ -29,20 +29,20 @@
 #### v0.5.0
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.0/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.0/cod_bo3.apworld</a>
 
-#### v0.4.2
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.4.2/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.4.2/cod_bo3.apworld</a>
+#### v0.4.2r3
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.4.4/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.4.4/cod_bo3.apworld</a>
 
-#### v0.4.2
+#### v0.4.2r2
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.4.3/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.4.3/cod_bo3.apworld</a>
 
 #### v0.4.2
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.4.4/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.4.4/cod_bo3.apworld</a>
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.4.2/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.4.2/cod_bo3.apworld</a>
+
+#### v0.4.0r2
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.4.1/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.4.1/cod_bo3.apworld</a>
 
 #### v0.4.0
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.4.0/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.4.0/cod_bo3.apworld</a>
-
-#### v0.4.0
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.4.1/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.4.1/cod_bo3.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.3.0/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.3.0/cod_bo3.apworld</a>
@@ -62,11 +62,11 @@
 #### v0.2.2
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.2.2/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.2.2/cod_bo3.apworld</a>
 
-#### v0.2.0
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.2.0/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.2.0/cod_bo3.apworld</a>
+#### v0.2.0r2
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.2.1/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.2.1/cod_bo3.apworld</a>
 
 #### v0.2.0
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.2.1/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.2.1/cod_bo3.apworld</a>
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.2.0/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.2.0/cod_bo3.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.1.3/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.1.3/cod_bo3.apworld</a>

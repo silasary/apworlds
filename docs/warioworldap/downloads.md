@@ -17,26 +17,26 @@
 #### v0.1.9
 - <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld</a>
 
+#### v0.1.7r3
+- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.8/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.8/WarioworldAP.apworld</a>
+
+#### v0.1.7r2
+- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.8/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.8/WarioworldAP.apworld</a>
+
 #### v0.1.7
 - <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.7/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.7/WarioworldAP.apworld</a>
 
-#### v0.1.7
-- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.8/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.8/WarioworldAP.apworld</a>
+#### v0.1.3r4
+- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.6/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.6/WarioworldAP.apworld</a>
 
-#### v0.1.7
-- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.8/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.8/WarioworldAP.apworld</a>
+#### v0.1.3r3
+- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.5/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.5/WarioworldAP.apworld</a>
 
-#### v0.1.3
-- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.3/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.3/WarioworldAP.apworld</a>
-
-#### v0.1.3
+#### v0.1.3r2
 - <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.4/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.4/WarioworldAP.apworld</a>
 
 #### v0.1.3
-- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.5/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.5/WarioworldAP.apworld</a>
-
-#### v0.1.3
-- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.6/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.6/WarioworldAP.apworld</a>
+- <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.3/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.3/WarioworldAP.apworld</a>
 
 #### v0.1.2
 - <a href="https://github.com/m0ester/WarioworldAP/releases/download/v0.1.2/WarioworldAP.apworld">https://github.com/m0ester/WarioworldAP/releases/download/v0.1.2/WarioworldAP.apworld</a>

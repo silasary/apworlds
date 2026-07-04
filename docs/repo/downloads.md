@@ -1,21 +1,21 @@
 # R.E.P.O
 
 ## Latest
-- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld">Latest Version (0.4.1r4)</a>
 
 ## All Versions
 
-#### v0.4.1
-- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld</a>
+#### v0.4.1r4
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld</a>
 
-#### v0.4.1
+#### v0.4.1r3
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld</a>
+
+#### v0.4.1r2
 - <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.2/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.2/repo.apworld</a>
 
 #### v0.4.1
-- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld</a>
-
-#### v0.4.1
-- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.3/repo.apworld</a>
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1/repo.apworld</a>
 
 #### v0.4.1rc1
 - <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1-rc1/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.1-rc1/repo.apworld</a>
@@ -23,11 +23,11 @@
 #### v0.4.0
 - <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.0/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.0/repo.apworld</a>
 
-#### v0.3.0
-- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.3.0/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.3.0/repo.apworld</a>
+#### v0.3.0r2
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.3.1/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.3.1/repo.apworld</a>
 
 #### v0.3.0
-- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.3.1/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.3.1/repo.apworld</a>
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.3.0/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.3.0/repo.apworld</a>
 
 #### v0.2.4
 - <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.2.4/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.2.4/repo.apworld</a>

@@ -5,7 +5,7 @@ Good games don&#x27;t need more than six checks.
 
 
 ## Downloads
-- <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.4.0/crash2.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.4.1/crash2.apworld">Latest Version (0.4.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

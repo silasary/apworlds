@@ -17,7 +17,7 @@
 #### v1.3.0rc0.post0
 - <a href="https://github.com/Nullctipus/ArchipelagoClusterTruck/releases/download/1.3.0-prerelease1/cluster_truck.apworld">https://github.com/Nullctipus/ArchipelagoClusterTruck/releases/download/1.3.0-prerelease1/cluster_truck.apworld</a>
 
-#### v1.3.0rc0.post0
+#### v1.3.0rc0.post0r2
 - <a href="https://github.com/Nullctipus/ArchipelagoClusterTruck/releases/download/1.3.0-prerelease2/cluster_truck.apworld">https://github.com/Nullctipus/ArchipelagoClusterTruck/releases/download/1.3.0-prerelease2/cluster_truck.apworld</a>
 
 #### v1.2.2

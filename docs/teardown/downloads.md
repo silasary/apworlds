@@ -11,11 +11,11 @@
 #### v0.2.1.post2
 - <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.2.1/teardown.apworld">https://github.com/Evereliquest/Archipelago/releases/download/v0.2.1/teardown.apworld</a>
 
-#### v0.2.1
-- <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.2.1/teardown.apworld">https://github.com/Evereliquest/Archipelago/releases/download/v0.2.1/teardown.apworld</a>
+#### v0.2.1r2
+- <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.2.2/teardown.apworld">https://github.com/Evereliquest/Archipelago/releases/download/v0.2.2/teardown.apworld</a>
 
 #### v0.2.1
-- <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.2.2/teardown.apworld">https://github.com/Evereliquest/Archipelago/releases/download/v0.2.2/teardown.apworld</a>
+- <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.2.1/teardown.apworld">https://github.com/Evereliquest/Archipelago/releases/download/v0.2.1/teardown.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.2.0/teardown.apworld">https://github.com/Evereliquest/Archipelago/releases/download/v0.2.0/teardown.apworld</a>

@@ -6,7 +6,7 @@ By manipulating them, you can change how the game works, repurpose things you fi
 
 
 ## Downloads
-- <a href="https://github.com/EmilyEmmi/Babapelago/releases/download/b3.0/baba_is_you.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/EmilyEmmi/Babapelago/releases/download/b3.0h/baba_is_you.apworld">Latest Version (0.3.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

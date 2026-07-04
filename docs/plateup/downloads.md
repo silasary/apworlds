@@ -113,11 +113,11 @@
 #### v0.1.8b1
 - <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.8.1/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.8.1/plateup.apworld</a>
 
-#### v0.1.7b1
-- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.7.1/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.7.1/plateup.apworld</a>
+#### v0.1.7b1r2
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.7.1.5/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.7.1.5/plateup.apworld</a>
 
 #### v0.1.7b1
-- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.7.1.5/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.7.1.5/plateup.apworld</a>
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.7.1/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.7.1/plateup.apworld</a>
 
 #### v0.1.6b4
 - <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.6.4/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.6.4/plateup.apworld</a>
@@ -134,20 +134,20 @@
 #### v0.1.5b4
 - <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.5/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.5/plateup.apworld</a>
 
-#### v0.1.5b3
-- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.3/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.3/plateup.apworld</a>
+#### v0.1.5b3r2
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.4/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.4/plateup.apworld</a>
 
 #### v0.1.5b3
-- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.4/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.4/plateup.apworld</a>
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.3/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.3/plateup.apworld</a>
 
 #### v0.1.5b2
 - <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.2/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.2/plateup.apworld</a>
 
-#### v0.1.5b1
-- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5/plateup.apworld</a>
+#### v0.1.5b1r2
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.1/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.1/plateup.apworld</a>
 
 #### v0.1.5b1
-- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.1/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5.1/plateup.apworld</a>
+- <a href="https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/0.1.5/plateup.apworld</a>
 
 #### v0.1.4b2
 - <a href="https://github.com/CazIsABoi/Archipelago/releases/download/v0.1.4.2/plateup.apworld">https://github.com/CazIsABoi/Archipelago/releases/download/v0.1.4.2/plateup.apworld</a>

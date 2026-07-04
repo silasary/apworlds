@@ -47,35 +47,35 @@
 #### v2.0.0+pre.release.1b
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bpre-release-1b/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bpre-release-1b/deltarune.apworld</a>
 
-#### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2/deltarune.apworld</a>
+#### v1.2.99r10
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3c/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3c/deltarune.apworld</a>
 
-#### v1.2.99
+#### v1.2.99r9
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3b-hotfix/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3b-hotfix/deltarune.apworld</a>
+
+#### v1.2.99r8
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3b/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3b/deltarune.apworld</a>
+
+#### v1.2.99r7
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3a/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3a/deltarune.apworld</a>
+
+#### v1.2.99r6
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3/deltarune.apworld</a>
+
+#### v1.2.99r5
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2d/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2d/deltarune.apworld</a>
+
+#### v1.2.99r4
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2c/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2c/deltarune.apworld</a>
+
+#### v1.2.99r3
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2b/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2b/deltarune.apworld</a>
+
+#### v1.2.99r2
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2a/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2a/deltarune.apworld</a>
 
 #### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2b/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2b/deltarune.apworld</a>
-
-#### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2c/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2c/deltarune.apworld</a>
-
-#### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2d/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2d/deltarune.apworld</a>
-
-#### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3/deltarune.apworld</a>
-
-#### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3a/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3a/deltarune.apworld</a>
-
-#### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3b/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3b/deltarune.apworld</a>
-
-#### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3b-hotfix/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3b-hotfix/deltarune.apworld</a>
-
-#### v1.2.99
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3c/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta3c/deltarune.apworld</a>
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta2/deltarune.apworld</a>
 
 #### v1.2.2
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta-1/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.0%2Bbeta-1/deltarune.apworld</a>
@@ -116,26 +116,26 @@
 #### v1.0.3
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.3/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.3/deltarune.apworld</a>
 
-#### v1.0.0
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.0/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.0/deltarune.apworld</a>
+#### v1.0.0r3
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.2/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.2/deltarune.apworld</a>
 
-#### v1.0.0
+#### v1.0.0r2
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.1/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.1/deltarune.apworld</a>
 
 #### v1.0.0
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.2/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.2/deltarune.apworld</a>
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.0/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v1.0.0/deltarune.apworld</a>
 
-#### v0.2.4
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.4/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.4/deltarune.apworld</a>
+#### v0.2.4r4
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.7/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.7/deltarune.apworld</a>
 
-#### v0.2.4
+#### v0.2.4r3
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.6/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.6/deltarune.apworld</a>
+
+#### v0.2.4r2
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.5/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.5/deltarune.apworld</a>
 
 #### v0.2.4
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.6/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.6/deltarune.apworld</a>
-
-#### v0.2.4
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.7/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.7/deltarune.apworld</a>
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.4/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.4/deltarune.apworld</a>
 
 #### v0.2.3
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.3/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v0.2.3/deltarune.apworld</a>

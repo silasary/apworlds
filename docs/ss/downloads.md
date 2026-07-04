@@ -17,41 +17,41 @@
 #### v0.5.3
 - <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.3/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.3/ss.apworld</a>
 
-#### v0.5.2
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2/ss.apworld</a>
+#### v0.5.2r3
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2-pre2/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2-pre2/ss.apworld</a>
 
-#### v0.5.2
+#### v0.5.2r2
 - <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2-pre1/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2-pre1/ss.apworld</a>
 
 #### v0.5.2
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2-pre2/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2-pre2/ss.apworld</a>
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.2/ss.apworld</a>
 
 #### v0.5.1
 - <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.1/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.1/ss.apworld</a>
 
-#### v0.5.0
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0/ss.apworld</a>
+#### v0.5.0r8
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.4-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.4-pre/ss.apworld</a>
 
-#### v0.5.0
+#### v0.5.0r7
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.3-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.3-pre/ss.apworld</a>
+
+#### v0.5.0r6
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.2-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.2-pre/ss.apworld</a>
+
+#### v0.5.0r5
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre2/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre2/ss.apworld</a>
+
+#### v0.5.0r4
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre/ss.apworld</a>
+
+#### v0.5.0r3
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0-pre2/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0-pre2/ss.apworld</a>
+
+#### v0.5.0r2
 - <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0-pre/ss.apworld</a>
 
 #### v0.5.0
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0-pre2/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0-pre2/ss.apworld</a>
-
-#### v0.5.0
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre/ss.apworld</a>
-
-#### v0.5.0
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre2/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.1-pre2/ss.apworld</a>
-
-#### v0.5.0
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.2-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.2-pre/ss.apworld</a>
-
-#### v0.5.0
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.3-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.3-pre/ss.apworld</a>
-
-#### v0.5.0
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.4-pre/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0.4-pre/ss.apworld</a>
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.0/ss.apworld</a>
 
 #### v0.4.1
 - <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.4.1/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.4.1/ss.apworld</a>

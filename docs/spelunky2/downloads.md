@@ -20,11 +20,11 @@
 #### v0.3.6
 - <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.6/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.6/spelunky2.apworld</a>
 
-#### v0.3.5
-- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.5/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.5/spelunky2.apworld</a>
+#### v0.3.5r2
+- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/3.5/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/3.5/spelunky2.apworld</a>
 
 #### v0.3.5
-- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/3.5/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/3.5/spelunky2.apworld</a>
+- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.5/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.5/spelunky2.apworld</a>
 
 #### v0.3.4
 - <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.4/spelunky2.apworld">https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.3.4/spelunky2.apworld</a>

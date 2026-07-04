@@ -11,14 +11,14 @@
 #### v0.6.0a1
 - <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.1/dark_souls_2.apworld">https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.6.0-alpha.1/dark_souls_2.apworld</a>
 
+#### v0.5.5r2
+- <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.5-hotfix/dark_souls_2.apworld">https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.5-hotfix/dark_souls_2.apworld</a>
+
 #### v0.5.5.post2
 - <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.5-hotfix/dark_souls_2.apworld">https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.5-hotfix/dark_souls_2.apworld</a>
 
 #### v0.5.5
 - <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.5/dark_souls_2.apworld">https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.5/dark_souls_2.apworld</a>
-
-#### v0.5.5
-- <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.5-hotfix/dark_souls_2.apworld">https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.5-hotfix/dark_souls_2.apworld</a>
 
 #### v0.5.4.post2
 - <a href="https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.4/dark_souls_2.apworld">https://github.com/WildBunnie/DarkSoulsII-Archipelago/releases/download/v0.5.4/dark_souls_2.apworld</a>

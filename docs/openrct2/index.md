@@ -6,7 +6,7 @@ roller coasters, manage finances, and build the park of their dreams!
 
 
 ## Downloads
-- <a href="https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v0.1.20-beta/openrct2.apworld">Latest Version (0.1.20)</a>
+- <a href="https://github.com/Crazycolbster/rollercoaster-tycoon-randomizer/releases/download/v0.1.21-beta/openrct2.apworld">Latest Version (0.1.20r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

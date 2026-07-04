@@ -59,17 +59,17 @@
 #### v0.6.3
 - <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.3/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.3/casualtiesunknown.apworld</a>
 
-#### v0.6.0
-- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.0/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.0/casualtiesunknown.apworld</a>
+#### v0.6.0r4
+- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.2/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.2/casualtiesunknown.apworld</a>
 
-#### v0.6.0
+#### v0.6.0r3
+- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.1/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.1/casualtiesunknown.apworld</a>
+
+#### v0.6.0r2
 - <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.0-hotfix1/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.0-hotfix1/casualtiesunknown.apworld</a>
 
 #### v0.6.0
-- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.1/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.1/casualtiesunknown.apworld</a>
-
-#### v0.6.0
-- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.2/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.2/casualtiesunknown.apworld</a>
+- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.0/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.0/casualtiesunknown.apworld</a>
 
 #### v0.6.0rc4
 - <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.6.0-pre4/casualtiesunknown.apworld">https://github.com/Nichologeam/CUAP/releases/download/v0.6.0-pre4/casualtiesunknown.apworld</a>

@@ -5,7 +5,7 @@ Created in a week(ish) by the Celeste team to celebrate the game’s sixth anniv
 
 
 ## Downloads
-- <a href="https://github.com/PoryGoneDev/Celeste64/releases/download/v1.4.0/celeste64.apworld">Latest Version (1.4.0)</a>
+- <a href="https://github.com/PoryGoneDev/Celeste64/releases/download/v1.4.1/celeste64.apworld">Latest Version (1.4.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

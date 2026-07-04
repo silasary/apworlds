@@ -29,11 +29,11 @@
 #### v0.0.10
 - <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.0.10/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.0.10/tmc.apworld</a>
 
-#### v0.0.9
-- <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9/tmc.apworld</a>
+#### v0.0.9r2
+- <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9-hotfix-1/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9-hotfix-1/tmc.apworld</a>
 
 #### v0.0.9
-- <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9-hotfix-1/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9-hotfix-1/tmc.apworld</a>
+- <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9/tmc.apworld</a>
 
 #### v0.0.8
 - <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.0.8/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.0.8/tmc.apworld</a>

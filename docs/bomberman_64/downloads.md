@@ -8,7 +8,7 @@
 #### v0.1.4
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bomb64_v0.1.4/bomberman_64.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/bomb64_v0.1.4/bomberman_64.apworld</a>
 
-#### v0.1.3
+#### v0.1.3r2
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bomb64_v0.1.3/bomberman_64.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/bomb64_v0.1.3/bomberman_64.apworld</a>
 
 #### v0.1.3

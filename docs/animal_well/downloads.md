@@ -1,18 +1,18 @@
 # ANIMAL WELL
 
 ## Latest
-- <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld">Latest Version (0.5.4.post2)</a>
+- <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld">Latest Version (0.5.4r2)</a>
 
 ## All Versions
+
+#### v0.5.4r2
+- <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld">https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld</a>
 
 #### v0.5.4.post2
 - <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld">https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld</a>
 
 #### v0.5.4
 - <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.3/animal_well.apworld">https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.3/animal_well.apworld</a>
-
-#### v0.5.4
-- <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld">https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld</a>
 
 #### v0.5.3
 - <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.3/animal_well.apworld">https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.3/animal_well.apworld</a>

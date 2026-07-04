@@ -8,11 +8,11 @@
 #### v0.8.0
 - <a href="https://github.com/wcolding/SWR_AP_Client/releases/download/v0.8.0/swr.apworld">https://github.com/wcolding/SWR_AP_Client/releases/download/v0.8.0/swr.apworld</a>
 
-#### v0.7.0
-- <a href="https://github.com/wcolding/SWR_AP_Client/releases/download/v0.7.0/swr.apworld">https://github.com/wcolding/SWR_AP_Client/releases/download/v0.7.0/swr.apworld</a>
+#### v0.7.0r2
+- <a href="https://github.com/wcolding/SWR_apworld/releases/download/v0.7.0-preview/swr.apworld">https://github.com/wcolding/SWR_apworld/releases/download/v0.7.0-preview/swr.apworld</a>
 
 #### v0.7.0
-- <a href="https://github.com/wcolding/SWR_apworld/releases/download/v0.7.0-preview/swr.apworld">https://github.com/wcolding/SWR_apworld/releases/download/v0.7.0-preview/swr.apworld</a>
+- <a href="https://github.com/wcolding/SWR_AP_Client/releases/download/v0.7.0/swr.apworld">https://github.com/wcolding/SWR_AP_Client/releases/download/v0.7.0/swr.apworld</a>
 
 #### v0.6.2
 - <a href="https://github.com/wcolding/SWR_apworld/releases/download/v0.6.2/swr.apworld">https://github.com/wcolding/SWR_apworld/releases/download/v0.6.2/swr.apworld</a>

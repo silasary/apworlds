@@ -1,30 +1,30 @@
 # Minit
 
 ## Latest
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.11/minit.apworld">Latest Version (0.6.11)</a>
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld">Latest Version (0.6.11r2)</a>
 
 ## All Versions
+
+#### v0.6.11r2
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld</a>
 
 #### v0.6.11
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.11/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.11/minit.apworld</a>
 
-#### v0.6.11
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld</a>
-
 #### v0.6.10
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.10/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.10/minit.apworld</a>
 
-#### v0.6.6
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.6/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.6/minit.apworld</a>
+#### v0.6.6r4
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.9/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.9/minit.apworld</a>
 
-#### v0.6.6
+#### v0.6.6r3
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.8/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.8/minit.apworld</a>
+
+#### v0.6.6r2
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.7/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.7/minit.apworld</a>
 
 #### v0.6.6
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.8/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.8/minit.apworld</a>
-
-#### v0.6.6
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.9/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.9/minit.apworld</a>
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.6/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.6/minit.apworld</a>
 
 #### v0.6.5
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.5/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.5/minit.apworld</a>

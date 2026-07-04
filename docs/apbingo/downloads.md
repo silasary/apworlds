@@ -8,12 +8,12 @@
 #### v1.1.1
 - <a href="https://github.com/Cynichill/APBingo/releases/download/1.1.1/APBingo.apworld">https://github.com/Cynichill/APBingo/releases/download/1.1.1/APBingo.apworld</a>
 
-#### v1.0.0
-- <a href="https://github.com/Cynichill/APBingo/releases/download/1.0.0/APBingo.apworld">https://github.com/Cynichill/APBingo/releases/download/1.0.0/APBingo.apworld</a>
+#### v1.0.0r3
+- <a href="https://github.com/Cynichill/APBingo/releases/download/1.1.0/APBingo.apworld">https://github.com/Cynichill/APBingo/releases/download/1.1.0/APBingo.apworld</a>
 
-#### v1.0.0
+#### v1.0.0r2
 - <a href="https://github.com/Cynichill/APBingo/releases/download/1.0.1/APBingo.apworld">https://github.com/Cynichill/APBingo/releases/download/1.0.1/APBingo.apworld</a>
 
 #### v1.0.0
-- <a href="https://github.com/Cynichill/APBingo/releases/download/1.1.0/APBingo.apworld">https://github.com/Cynichill/APBingo/releases/download/1.1.0/APBingo.apworld</a>
+- <a href="https://github.com/Cynichill/APBingo/releases/download/1.0.0/APBingo.apworld">https://github.com/Cynichill/APBingo/releases/download/1.0.0/APBingo.apworld</a>
 

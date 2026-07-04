@@ -95,25 +95,34 @@
 #### v4.0.0.post5
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-5/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-5/manual_blocktales_wolfboi008.apworld</a>
 
+#### v4.0.0r4
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC3/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC3/manual_blocktales_wolfboi008.apworld</a>
+
 #### v4.0.0.post4
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-4/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-4/manual_blocktales_wolfboi008.apworld</a>
+
+#### v4.0.0r3
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC2/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC2/manual_blocktales_wolfboi008.apworld</a>
 
 #### v4.0.0.post3
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0/manual_blocktales_wolfboi008.apworld</a>
 
-#### v4.0.0.post3
+#### v4.0.0.post3r2
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-3/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-3/manual_blocktales_wolfboi008.apworld</a>
 
-#### v4.0.0.post3
+#### v4.0.0.post3r3
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-3a/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-3a/manual_blocktales_wolfboi008.apworld</a>
+
+#### v4.0.0r2
+- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC1/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC1/manual_blocktales_wolfboi008.apworld</a>
 
 #### v4.0.0.post2
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC3/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC3/manual_blocktales_wolfboi008.apworld</a>
 
-#### v4.0.0.post2
+#### v4.0.0.post2r2
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0/manual_blocktales_wolfboi008.apworld</a>
 
-#### v4.0.0.post2
+#### v4.0.0.post2r3
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-2/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/pre-4.0.0-2/manual_blocktales_wolfboi008.apworld</a>
 
 #### v4.0.0.post1
@@ -121,15 +130,6 @@
 
 #### v4.0.0
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0/manual_blocktales_wolfboi008.apworld</a>
-
-#### v4.0.0
-- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC1/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC1/manual_blocktales_wolfboi008.apworld</a>
-
-#### v4.0.0
-- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC2/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC2/manual_blocktales_wolfboi008.apworld</a>
-
-#### v4.0.0
-- <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC3/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/4.0.0-RC3/manual_blocktales_wolfboi008.apworld</a>
 
 #### v3.0.1
 - <a href="https://github.com/WolfBoi008/Block-Tales/releases/download/3.0.1/manual_blocktales_wolfboi008.apworld">https://github.com/WolfBoi008/Block-Tales/releases/download/3.0.1/manual_blocktales_wolfboi008.apworld</a>

@@ -8,7 +8,7 @@
 #### v0.1.2
 - <a href="https://github.com/Happyhappyism/Plok-Archipelago/releases/download/plok_v0.1.3/plok.apworld">https://github.com/Happyhappyism/Plok-Archipelago/releases/download/plok_v0.1.3/plok.apworld</a>
 
-#### v0.1.1
+#### v0.1.1r2
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/plok_v011/plok.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/plok_v011/plok.apworld</a>
 
 #### v0.1.1

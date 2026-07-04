@@ -6,7 +6,7 @@ or the Temple of the Sun to stop the evil Sun Guardian Sha&#x27;Rand.
 
 
 ## Downloads
-- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v4.1.1/hammerwatch.apworld">Latest Version (4.1.1)</a>
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v4.1.2/hammerwatch.apworld">Latest Version (4.1.1r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

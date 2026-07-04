@@ -4,14 +4,12 @@ monke
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v0.1.0/dktoluca.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.0/dktoluca.apworld">Latest Version (1.0.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Donkey Kong Toluca">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
-- <a href="setup_es">Spanish</a>
 
-## Other Documentation files
-- <a href="en_Donkey Kong Country">en_Donkey Kong Country</a>

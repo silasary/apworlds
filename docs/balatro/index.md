@@ -6,7 +6,7 @@ Source: https://en.wikipedia.org/wiki/Balatro_(video_game)
 
 
 ## Downloads
-- <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9e/balatro.apworld">Latest Version (0.1.9.post2)</a>
+- <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9f/balatro.apworld">Latest Version (0.1.9r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

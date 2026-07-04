@@ -17,14 +17,14 @@
 #### v1.0.1
 - <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.1/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.0.1/pokemon_frlg.apworld</a>
 
-#### v1.0.0
-- <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.0/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.0.0/pokemon_frlg.apworld</a>
+#### v1.0.0r3
+- <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.0-beta-2/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.0.0-beta-2/pokemon_frlg.apworld</a>
 
-#### v1.0.0
+#### v1.0.0r2
 - <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.0-beta-1/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.0.0-beta-1/pokemon_frlg.apworld</a>
 
 #### v1.0.0
-- <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.0-beta-2/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.0.0-beta-2/pokemon_frlg.apworld</a>
+- <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.0/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.0.0/pokemon_frlg.apworld</a>
 
 #### v1.0.0b4
 - <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.0-beta-4/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.0.0-beta-4/pokemon_frlg.apworld</a>
@@ -74,11 +74,11 @@
 #### v0.8.4
 - <a href="https://github.com/vyneras/Archipelago/releases/download/0.8.4/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/0.8.4/pokemon_frlg.apworld</a>
 
-#### v0.8.3
-- <a href="https://github.com/vyneras/Archipelago/releases/download/0.8.3/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/0.8.3/pokemon_frlg.apworld</a>
+#### v0.8.3r2
+- <a href="https://github.com/vyneras/Archipelago/releases/download/0.8.3-hotfix/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/0.8.3-hotfix/pokemon_frlg.apworld</a>
 
 #### v0.8.3
-- <a href="https://github.com/vyneras/Archipelago/releases/download/0.8.3-hotfix/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/0.8.3-hotfix/pokemon_frlg.apworld</a>
+- <a href="https://github.com/vyneras/Archipelago/releases/download/0.8.3/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/0.8.3/pokemon_frlg.apworld</a>
 
 #### v0.8.2
 - <a href="https://github.com/vyneras/Archipelago/releases/download/0.8.2/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/0.8.2/pokemon_frlg.apworld</a>

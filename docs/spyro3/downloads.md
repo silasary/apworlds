@@ -35,14 +35,14 @@
 #### v1.2.0
 - <a href="https://github.com/Uroogla/S3AP/releases/download/1.2.0/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.2.0/spyro3.apworld</a>
 
-#### v1.1.0
-- <a href="https://github.com/Uroogla/S3AP/releases/download/1.1.0/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.1.0/spyro3.apworld</a>
+#### v1.1.0r3
+- <a href="https://github.com/Uroogla/S3AP/releases/download/1.1.0-rc2/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.1.0-rc2/spyro3.apworld</a>
 
-#### v1.1.0
+#### v1.1.0r2
 - <a href="https://github.com/Uroogla/S3AP/releases/download/1.1.0-rc1/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.1.0-rc1/spyro3.apworld</a>
 
 #### v1.1.0
-- <a href="https://github.com/Uroogla/S3AP/releases/download/1.1.0-rc2/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.1.0-rc2/spyro3.apworld</a>
+- <a href="https://github.com/Uroogla/S3AP/releases/download/1.1.0/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.1.0/spyro3.apworld</a>
 
 #### v1.0.1
 - <a href="https://github.com/Uroogla/S3AP/releases/download/1.0.1/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.0.1/spyro3.apworld</a>

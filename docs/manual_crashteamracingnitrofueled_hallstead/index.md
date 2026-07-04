@@ -13,5 +13,4 @@ the player must manually refrain from using these gathered items until the track
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 

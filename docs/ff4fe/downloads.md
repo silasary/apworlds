@@ -14,18 +14,18 @@
 #### v5
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-AP-v5/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-AP-v5/ff4fe.apworld</a>
 
-#### v4
-- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.1/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.1/ff4fe.apworld</a>
+#### v4r5
+- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-AP-v1/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-AP-v1/ff4fe.apworld</a>
 
-#### v4
+#### v4r4
+- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.4/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.4/ff4fe.apworld</a>
+
+#### v4r3
+- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.3/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.3/ff4fe.apworld</a>
+
+#### v4r2
 - <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.2/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.2/ff4fe.apworld</a>
 
 #### v4
-- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.3/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.3/ff4fe.apworld</a>
-
-#### v4
-- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.4/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.4/ff4fe.apworld</a>
-
-#### v4
-- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-AP-v1/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-AP-v1/ff4fe.apworld</a>
+- <a href="https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.1/ff4fe.apworld">https://github.com/Rosalie-A/Archipelago/releases/download/FFIV-0.1/ff4fe.apworld</a>
 

@@ -1,10 +1,10 @@
 # Cursed Words
 
-
+Cursed Words - [Description Here]
 
 
 ## Downloads
-- <a href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/download/v0.2.0/cursed_words.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/download/v0.2.1/cursed_words.apworld">Latest Version (0.2.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

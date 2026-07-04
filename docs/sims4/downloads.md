@@ -17,32 +17,32 @@
 #### v1.7.5
 - <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.5/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.5/sims4.apworld</a>
 
-#### v1.7.4
+#### v1.7.4r2
 - <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.4/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.4/sims4.apworld</a>
 
 #### v1.7.4
 - <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.4/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.4/sims4.apworld</a>
 
-#### v1.7.1
+#### v1.7.1r7
+- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld</a>
+
+#### v1.7.1r6
+- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld</a>
+
+#### v1.7.1r5
+- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld</a>
+
+#### v1.7.1r4
+- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.2/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.2/sims4.apworld</a>
+
+#### v1.7.1r3
+- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.2/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.2/sims4.apworld</a>
+
+#### v1.7.1r2
 - <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.1/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.1/sims4.apworld</a>
 
 #### v1.7.1
 - <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.1/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.1/sims4.apworld</a>
-
-#### v1.7.1
-- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.2/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.2/sims4.apworld</a>
-
-#### v1.7.1
-- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.2/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.2/sims4.apworld</a>
-
-#### v1.7.1
-- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld</a>
-
-#### v1.7.1
-- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld</a>
-
-#### v1.7.1
-- <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.3/sims4.apworld</a>
 
 #### v1.7.0
 - <a href="https://github.com/Simsipelago/Archipelago/releases/download/1.7.0/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/1.7.0/sims4.apworld</a>
@@ -59,17 +59,17 @@
 #### v1.5.2
 - <a href="https://github.com/benny-dreamly/Archipelago/releases/download/sims-1.5.2/sims4.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/sims-1.5.2/sims4.apworld</a>
 
+#### v1.5.1r2
+- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/sims4-1.5.1-unofficial/sims4.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/sims4-1.5.1-unofficial/sims4.apworld</a>
+
 #### v1.5.1
 - <a href="https://github.com/benny-dreamly/Archipelago/releases/download/sims-1.5.1/sims4.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/sims-1.5.1/sims4.apworld</a>
 
-#### v1.5.1
-- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/sims4-1.5.1-unofficial/sims4.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/sims4-1.5.1-unofficial/sims4.apworld</a>
+#### v1.5r2
+- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/sims4-1.5-hotfix-unofficial/sims4.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/sims4-1.5-hotfix-unofficial/sims4.apworld</a>
 
 #### v1.5
 - <a href="https://github.com/itsmisscactus/Archipelago/releases/download/1.5/sims4.apworld">https://github.com/itsmisscactus/Archipelago/releases/download/1.5/sims4.apworld</a>
-
-#### v1.5
-- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/sims4-1.5-hotfix-unofficial/sims4.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/sims4-1.5-hotfix-unofficial/sims4.apworld</a>
 
 #### v1.4
 - <a href="https://github.com/itsmisscactus/Archipelago/releases/download/1.4/sims4.apworld">https://github.com/itsmisscactus/Archipelago/releases/download/1.4/sims4.apworld</a>

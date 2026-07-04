@@ -14,17 +14,17 @@
 #### v2.0.4
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.4/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.4/toem.apworld</a>
 
+#### v2.0.2r2
+- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.3/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.3/toem.apworld</a>
+
 #### v2.0.2
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.2/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.2/toem.apworld</a>
 
-#### v2.0.2
-- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.3/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.3/toem.apworld</a>
+#### v2.0.0r2
+- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.1/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.1/toem.apworld</a>
 
 #### v2.0.0
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.0/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.0/toem.apworld</a>
-
-#### v2.0.0
-- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.1/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/2.0.1/toem.apworld</a>
 
 #### v1.9.0
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.9.0/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.9.0/toem.apworld</a>
@@ -35,12 +35,12 @@
 #### v1.1.0
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.1.0/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.1.0/toem.apworld</a>
 
-#### v1.0.0
-- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.0/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.0/toem.apworld</a>
+#### v1.0.0r3
+- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.2/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.2/toem.apworld</a>
 
-#### v1.0.0
+#### v1.0.0r2
 - <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.1/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.1/toem.apworld</a>
 
 #### v1.0.0
-- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.2/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.2/toem.apworld</a>
+- <a href="https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.0/toem.apworld">https://github.com/bbernardoni/Archipelago.TOEM/releases/download/1.0.0/toem.apworld</a>
 

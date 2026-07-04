@@ -4,7 +4,7 @@ Command an army, in the sequel to the hit turn based strategy game Wargroove!
 
 
 ## Downloads
-- <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.7/wargroove2.apworld">Latest Version (1.1.7)</a>
+- <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.8/wargroove2.apworld">Latest Version (1.1.7r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

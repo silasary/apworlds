@@ -26,26 +26,26 @@
 #### v2.0.1.post2
 - <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld</a>
 
+#### v2.0.0r5
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld</a>
+
+#### v2.0.0r4
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5%2B2/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5%2B2/ape_escape_3.apworld</a>
+
 #### v2.0.0.post3
 - <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld</a>
+
+#### v2.0.0r3
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5%2B1/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5%2B1/ape_escape_3.apworld</a>
 
 #### v2.0.0.post2
 - <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld</a>
 
-#### v2.0.0
-- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00/ape_escape_3.apworld</a>
-
-#### v2.0.0
+#### v2.0.0r2
 - <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5/ape_escape_3.apworld</a>
 
 #### v2.0.0
-- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5%2B1/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5%2B1/ape_escape_3.apworld</a>
-
-#### v2.0.0
-- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5%2B2/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.5%2B2/ape_escape_3.apworld</a>
-
-#### v2.0.0
-- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.1/ape_escape_3.apworld</a>
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00/ape_escape_3.apworld</a>
 
 #### v2.0.0b4
 - <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.4/ape_escape_3.apworld</a>
@@ -56,11 +56,11 @@
 #### v2.0.0b3
 - <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.3/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.3/ape_escape_3.apworld</a>
 
-#### v2.0.0b2
-- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.2/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.2/ape_escape_3.apworld</a>
+#### v2.0.0b2r2
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00beta-2/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00beta-2/ape_escape_3.apworld</a>
 
 #### v2.0.0b2
-- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00beta-2/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00beta-2/ape_escape_3.apworld</a>
+- <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.2/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00-beta.2/ape_escape_3.apworld</a>
 
 #### v2.0.0b1
 - <a href="https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00beta-1/ape_escape_3.apworld">https://github.com/aidanii24/ae3-archipelago/releases/download/v2.0.00beta-1/ape_escape_3.apworld</a>

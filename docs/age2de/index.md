@@ -5,7 +5,7 @@ ages and the various battles, conquests, and wars of history.
 
 
 ## Downloads
-- <a href="https://github.com/dmwever/Ageipelago/releases/download/0.0.1/age2de.apworld">Latest Version (0.0.1)</a>
+- <a href="https://github.com/dmwever/Ageipelago/releases/download/0.2.1/age2de.apworld">Latest Version (0.0.1r8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

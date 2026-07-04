@@ -1,15 +1,15 @@
 # Monster Sanctuary
 
 ## Latest
-- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7/monster_sanctuary.apworld">Latest Version (1.3.7)</a>
+- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7-hotfix1/monster_sanctuary.apworld">Latest Version (1.3.7r2)</a>
 
 ## All Versions
 
-#### v1.3.7
-- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7/monster_sanctuary.apworld</a>
+#### v1.3.7r2
+- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7-hotfix1/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7-hotfix1/monster_sanctuary.apworld</a>
 
 #### v1.3.7
-- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7-hotfix1/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7-hotfix1/monster_sanctuary.apworld</a>
+- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.7/monster_sanctuary.apworld</a>
 
 #### v1.3.6
 - <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.6/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.3.6/monster_sanctuary.apworld</a>
@@ -74,11 +74,11 @@
 #### v1.0.2b0
 - <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.0.2-beta/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/v1.0.2-beta/monster_sanctuary.apworld</a>
 
-#### v1.0
-- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/1.0.0-beta/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/1.0.0-beta/monster_sanctuary.apworld</a>
+#### v1.0r2
+- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/1.0.1-beta/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/1.0.1-beta/monster_sanctuary.apworld</a>
 
 #### v1.0
-- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/1.0.1-beta/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/1.0.1-beta/monster_sanctuary.apworld</a>
+- <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/1.0.0-beta/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/1.0.0-beta/monster_sanctuary.apworld</a>
 
 #### v0.0.10
 - <a href="https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/0.0.10/monster_sanctuary.apworld">https://github.com/Gtaray/archipelago-monstersanctuary/releases/download/0.0.10/monster_sanctuary.apworld</a>

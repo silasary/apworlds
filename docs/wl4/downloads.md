@@ -29,20 +29,20 @@
 #### v3.1.1
 - <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.1/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.1/wl4.apworld</a>
 
-#### v3.1.0
-- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0/wl4.apworld</a>
+#### v3.1.0r5
+- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre4/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre4/wl4.apworld</a>
 
-#### v3.1.0
+#### v3.1.0r4
+- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre3/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre3/wl4.apworld</a>
+
+#### v3.1.0r3
+- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre2/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre2/wl4.apworld</a>
+
+#### v3.1.0r2
 - <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre1/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre1/wl4.apworld</a>
 
 #### v3.1.0
-- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre2/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre2/wl4.apworld</a>
-
-#### v3.1.0
-- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre3/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre3/wl4.apworld</a>
-
-#### v3.1.0
-- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre4/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0-pre4/wl4.apworld</a>
+- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.1.0/wl4.apworld</a>
 
 #### v3.0.1
 - <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.0.1/wl4.apworld">https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.0.1/wl4.apworld</a>

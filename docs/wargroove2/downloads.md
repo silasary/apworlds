@@ -1,21 +1,21 @@
 # Wargroove 2
 
 ## Latest
-- <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.7/wargroove2.apworld">Latest Version (1.1.7)</a>
+- <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.8/wargroove2.apworld">Latest Version (1.1.7r2)</a>
 
 ## All Versions
+
+#### v1.1.7r2
+- <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.8/wargroove2.apworld">https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.8/wargroove2.apworld</a>
 
 #### v1.1.7
 - <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.7/wargroove2.apworld">https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.7/wargroove2.apworld</a>
 
-#### v1.1.7
-- <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.8/wargroove2.apworld">https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.8/wargroove2.apworld</a>
+#### v1.1.5r2
+- <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.6/wargroove2.apworld">https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.6/wargroove2.apworld</a>
 
 #### v1.1.5
 - <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.5/wargroove2.apworld">https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.5/wargroove2.apworld</a>
-
-#### v1.1.5
-- <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.6/wargroove2.apworld">https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.6/wargroove2.apworld</a>
 
 #### v1.1.4
 - <a href="https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.4/wargroove2.apworld">https://github.com/FlySniper/Archipelago/releases/download/wargroove2-1.1.4/wargroove2.apworld</a>

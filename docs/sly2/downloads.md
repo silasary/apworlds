@@ -17,11 +17,11 @@
 #### v0.8.3
 - <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.3/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v0.8.3/sly2.apworld</a>
 
-#### v0.8.1
-- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.1/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v0.8.1/sly2.apworld</a>
+#### v0.8.1r2
+- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.2/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v0.8.2/sly2.apworld</a>
 
 #### v0.8.1
-- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.2/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v0.8.2/sly2.apworld</a>
+- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.1/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v0.8.1/sly2.apworld</a>
 
 #### v0.8.0
 - <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.0/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v0.8.0/sly2.apworld</a>

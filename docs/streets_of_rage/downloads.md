@@ -23,11 +23,11 @@
 #### v0.0.3
 - <a href="https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.3/streets_of_rage.apworld">https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.3/streets_of_rage.apworld</a>
 
-#### v0.0.2a0
-- <a href="https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.2-alpha/streets_of_rage.apworld">https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.2-alpha/streets_of_rage.apworld</a>
+#### v0.0.2a0r2
+- <a href="https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.2-alpha_fix/streets_of_rage.apworld">https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.2-alpha_fix/streets_of_rage.apworld</a>
 
 #### v0.0.2a0
-- <a href="https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.2-alpha_fix/streets_of_rage.apworld">https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.2-alpha_fix/streets_of_rage.apworld</a>
+- <a href="https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.2-alpha/streets_of_rage.apworld">https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.2-alpha/streets_of_rage.apworld</a>
 
 #### v0.0.1a0
 - <a href="https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.1-alpha/streets_of_rage.apworld">https://github.com/UltiNaruto/SOR_AP_Randomizer/releases/download/v0.0.1-alpha/streets_of_rage.apworld</a>

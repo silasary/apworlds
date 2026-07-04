@@ -17,11 +17,11 @@
 #### v0.18.2
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18.2/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18.2/deep_rock_galactic.apworld</a>
 
-#### v0.18.0
-- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18/deep_rock_galactic.apworld</a>
+#### v0.18.0r2
+- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/V0.18.1/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/V0.18.1/deep_rock_galactic.apworld</a>
 
 #### v0.18.0
-- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/V0.18.1/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/V0.18.1/deep_rock_galactic.apworld</a>
+- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18/deep_rock_galactic.apworld</a>
 
 #### v0.17b0
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.17-Beta/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.17-Beta/deep_rock_galactic.apworld</a>
@@ -32,11 +32,11 @@
 #### v0.16.4
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.4/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.4/deep_rock_galactic.apworld</a>
 
-#### v0.16.3
-- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.3/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.3/deep_rock_galactic.apworld</a>
+#### v0.16.3r2
+- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.17/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.17/deep_rock_galactic.apworld</a>
 
 #### v0.16.3
-- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.17/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.17/deep_rock_galactic.apworld</a>
+- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.3/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.3/deep_rock_galactic.apworld</a>
 
 #### v0.16.2
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.2/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.2/deep_rock_galactic.apworld</a>

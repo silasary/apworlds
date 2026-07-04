@@ -17,11 +17,11 @@
 #### v0.6.0
 - <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.0/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.6.0/anodyne.apworld</a>
 
-#### v0.5.1
-- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.1/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.1/anodyne.apworld</a>
+#### v0.5.1r2
+- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.2/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.2/anodyne.apworld</a>
 
 #### v0.5.1
-- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.2/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.2/anodyne.apworld</a>
+- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.1/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.1/anodyne.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.0/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.5.0/anodyne.apworld</a>
@@ -92,9 +92,9 @@
 #### v0.1.1
 - <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.1.1/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.1.1/anodyne.apworld</a>
 
-#### v0.1.0
-- <a href="https://github.com/hatkirby/Archipelago/releases/download/anodyne-v0.1.0/anodyne.apworld">https://github.com/hatkirby/Archipelago/releases/download/anodyne-v0.1.0/anodyne.apworld</a>
+#### v0.1.0r2
+- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.1.0/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.1.0/anodyne.apworld</a>
 
 #### v0.1.0
-- <a href="https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.1.0/anodyne.apworld">https://github.com/PixieCatSupreme/ArchipelagoAno/releases/download/v0.1.0/anodyne.apworld</a>
+- <a href="https://github.com/hatkirby/Archipelago/releases/download/anodyne-v0.1.0/anodyne.apworld">https://github.com/hatkirby/Archipelago/releases/download/anodyne-v0.1.0/anodyne.apworld</a>
 

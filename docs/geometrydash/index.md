@@ -1,6 +1,6 @@
 # Geometry Dash
 
-
+Jump and fly your way through danger in this rhythm-based action platformer!
 
 
 ## Downloads

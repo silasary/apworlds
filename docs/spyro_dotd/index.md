@@ -6,7 +6,7 @@ that allow each dragon to get stronger.
 
 
 ## Downloads
-- <a href="https://github.com/IcyPenguin28/DotDAP/releases/download/0.1.0/spyro_dotd.apworld">Latest Version (0.1.0)</a>
+- <a href="https://github.com/IcyPenguin28/DotDAP/releases/download/0.1.1/spyro_dotd.apworld">Latest Version (0.1.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

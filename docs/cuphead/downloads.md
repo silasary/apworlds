@@ -8,32 +8,32 @@
 #### v3
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview03f/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview03f/cuphead.apworld</a>
 
-#### v2
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview02j/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview02j/cuphead.apworld</a>
+#### v2r9
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i.1/cuphead.apworld</a>
 
-#### v2
+#### v2r8
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i/cuphead.apworld</a>
+
+#### v2r7
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02h.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02h.1/cuphead.apworld</a>
+
+#### v2r6
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02h/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02h/cuphead.apworld</a>
+
+#### v2r5
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02g/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02g/cuphead.apworld</a>
+
+#### v2r4
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02f/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02f/cuphead.apworld</a>
+
+#### v2r3
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02e/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02e/cuphead.apworld</a>
+
+#### v2r2
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02d/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02d/cuphead.apworld</a>
 
 #### v2
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02e/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02e/cuphead.apworld</a>
-
-#### v2
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02f/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02f/cuphead.apworld</a>
-
-#### v2
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02g/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02g/cuphead.apworld</a>
-
-#### v2
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02h/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02h/cuphead.apworld</a>
-
-#### v2
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02h.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02h.1/cuphead.apworld</a>
-
-#### v2
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i/cuphead.apworld</a>
-
-#### v2
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02i.1/cuphead.apworld</a>
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview02j/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview02j/cuphead.apworld</a>
 
 #### v2rc0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02c/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02c/cuphead.apworld</a>
@@ -44,14 +44,14 @@
 #### v2a0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02a/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha02a/cuphead.apworld</a>
 
-#### v1
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01d/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01d/cuphead.apworld</a>
+#### v1r3
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01f/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01f/cuphead.apworld</a>
 
-#### v1
+#### v1r2
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01e/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01e/cuphead.apworld</a>
 
 #### v1
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01f/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01f/cuphead.apworld</a>
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01d/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01d/cuphead.apworld</a>
 
 #### v1rc0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01c/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01c/cuphead.apworld</a>
@@ -62,23 +62,23 @@
 #### v1a1
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01a.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha01a.1/cuphead.apworld</a>
 
+#### v1a0r2
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview01a/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview01a/cuphead.apworld</a>
+
 #### v1a0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview01a/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/adpreview01a/cuphead.apworld</a>
 
-#### v1a0
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview01a/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview01a/cuphead.apworld</a>
+#### v0.3r4
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03f/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03f/cuphead.apworld</a>
 
-#### v0.3
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03d/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03d/cuphead.apworld</a>
+#### v0.3r3
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03e.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03e.1/cuphead.apworld</a>
 
-#### v0.3
+#### v0.3r2
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03e/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03e/cuphead.apworld</a>
 
 #### v0.3
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03e.1/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03e.1/cuphead.apworld</a>
-
-#### v0.3
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03f/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03f/cuphead.apworld</a>
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03d/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03d/cuphead.apworld</a>
 
 #### v0.3rc0
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03c/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/preview03c/cuphead.apworld</a>

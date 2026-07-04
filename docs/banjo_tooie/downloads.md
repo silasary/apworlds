@@ -23,7 +23,7 @@
 #### v4.11.5
 - <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.5/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.5/banjo_tooie.apworld</a>
 
-#### v4.11.4
+#### v4.11.4r2
 - <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.4/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.4/banjo_tooie.apworld</a>
 
 #### v4.11.4
@@ -32,11 +32,11 @@
 #### v4.11.3
 - <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.3/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.3/banjo_tooie.apworld</a>
 
-#### v4.11.1
-- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.1/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.1/banjo_tooie.apworld</a>
+#### v4.11.1r2
+- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.2/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.2/banjo_tooie.apworld</a>
 
 #### v4.11.1
-- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.2/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.2/banjo_tooie.apworld</a>
+- <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.1/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.1/banjo_tooie.apworld</a>
 
 #### v4.11.0
 - <a href="https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.0/banjo_tooie.apworld">https://github.com/jjjj12212/Archipelago-BanjoTooie/releases/download/V4.11.0/banjo_tooie.apworld</a>

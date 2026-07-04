@@ -8,9 +8,9 @@
 #### v3.post0
 - <a href="https://github.com/CDRomatron/Archipelago/releases/download/s3-0.1/spyro3gba.apworld">https://github.com/CDRomatron/Archipelago/releases/download/s3-0.1/spyro3gba.apworld</a>
 
-#### v3.post0
+#### v3.post0r2
 - <a href="https://github.com/CDRomatron/Archipelago/releases/download/s3-0.2/spyro3gba.apworld">https://github.com/CDRomatron/Archipelago/releases/download/s3-0.2/spyro3gba.apworld</a>
 
-#### v3.post0
+#### v3.post0r3
 - <a href="https://github.com/CDRomatron/Archipelago/releases/download/s3-0.3/spyro3gba.apworld">https://github.com/CDRomatron/Archipelago/releases/download/s3-0.3/spyro3gba.apworld</a>
 

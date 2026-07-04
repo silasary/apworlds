@@ -8,11 +8,11 @@
 #### v0.7.8a0
 - <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.8-alpha/tloz_st.apworld">https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.8-alpha/tloz_st.apworld</a>
 
-#### v0.7.6
-- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.6/tloz_st.apworld">https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.6/tloz_st.apworld</a>
+#### v0.7.6r2
+- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.7/tloz_st.apworld">https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.7/tloz_st.apworld</a>
 
 #### v0.7.6
-- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.7/tloz_st.apworld">https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.7/tloz_st.apworld</a>
+- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.6/tloz_st.apworld">https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.6/tloz_st.apworld</a>
 
 #### v0.7.5
 - <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.5/tloz_st.apworld">https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.5/tloz_st.apworld</a>

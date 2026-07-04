@@ -23,10 +23,10 @@
 #### v0.4.0.post2
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc1/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc1/rac3.apworld</a>
 
-#### v0.4.0.post2
+#### v0.4.0.post2r2
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc2/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc2/rac3.apworld</a>
 
-#### v0.4.0.post2
+#### v0.4.0.post2r3
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld</a>
 
 #### v0.4.0

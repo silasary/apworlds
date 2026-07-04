@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.5.0/dos2.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.5.1/dos2.apworld">Latest Version (0.5.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

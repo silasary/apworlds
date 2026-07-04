@@ -8,11 +8,11 @@
 #### v2.0.4
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.4/cv_dos.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.4/cv_dos.apworld</a>
 
-#### v2.0.2
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.2/cv_dos.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.2/cv_dos.apworld</a>
+#### v2.0.2r2
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.3/cv_dos.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.3/cv_dos.apworld</a>
 
 #### v2.0.2
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.3/cv_dos.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.3/cv_dos.apworld</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.2/cv_dos.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.2/cv_dos.apworld</a>
 
 #### v2.0.1.post2
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.1/cv_dos.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvdos2.0.1/cv_dos.apworld</a>

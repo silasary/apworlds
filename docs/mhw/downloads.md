@@ -8,7 +8,7 @@
 #### v0.1.3a0
 - <a href="https://github.com/QPL22/MHW_Archipelago/releases/download/v0.1.3-alpha/mhw.apworld">https://github.com/QPL22/MHW_Archipelago/releases/download/v0.1.3-alpha/mhw.apworld</a>
 
-#### v0.1.2
+#### v0.1.2r2
 - <a href="https://github.com/QPL22/MHW_Archipelago/releases/download/v0.1.2-alpha/mhw.apworld">https://github.com/QPL22/MHW_Archipelago/releases/download/v0.1.2-alpha/mhw.apworld</a>
 
 #### v0.1.2

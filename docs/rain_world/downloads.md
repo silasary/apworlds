@@ -44,9 +44,9 @@
 #### v1.1.1
 - <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.1/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.1/rain_world.apworld</a>
 
-#### v1.1.0
-- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.0/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.0/rain_world.apworld</a>
+#### v1.1.0r2
+- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.0-hotfix2/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.0-hotfix2/rain_world.apworld</a>
 
 #### v1.1.0
-- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.0-hotfix2/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.0-hotfix2/rain_world.apworld</a>
+- <a href="https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.0/rain_world.apworld">https://github.com/alphappy/ArchipelagoRW/releases/download/v1.1.0/rain_world.apworld</a>
 

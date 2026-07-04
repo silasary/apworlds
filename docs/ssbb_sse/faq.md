@@ -30,6 +30,8 @@ This is a known bug that has something to do with how SSE stores character unloc
 
 Make sure that you launched Brawl using the Minus Launcher and NOT using the ROM directly, see the setup for a more thorough walkthrough.
 
+Additionally, there is also currently a bug where receiving too many items at once can cause them to not get received correctly. If you're sure you received the items and everything is working well, you can have the host manually send the bugged trophies.
+
 ### I have an idea for what to add to the randomizer!
 
 You can discuss in the Subspace thread in the Archipelago server, but note that there is a basic roadmap planned out already and some of the more esoteric options are going to be lower priority (don't let that stop you from brainstorming things though).

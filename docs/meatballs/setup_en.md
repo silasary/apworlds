@@ -2,9 +2,9 @@
 
 ## Required Software
 
-- A modded Nintendo Switch running Super Mario Odyssey 1.0.0 (FW 21.x with Atmosphere CFW), **or** an emulator.
+- A modded Nintendo Switch running Super Mario Odyssey 1.0.0 (FW 21.x or 22 with Atmosphere CFW), **or** an emulator.
 - A Windows PC on the same LAN as the Switch.
-- Archipelago + Python 3.12 + devkitPro + devkitA64 + CMake + Ninja + hactool + your Switch's `prod.keys` (XCI cartridge dumps also need `title.keys`).
+- Archipelago + Python 3.12 + LLVM 19 + WinLibs (mingw64) + CMake + Ninja + hactool + your Switch's `prod.keys` (XCI cartridge dumps also need `title.keys`). The setup wizard installs LLVM 19 and WinLibs for you if they're missing.
 
 See [`docs/first-time-setup.md`](https://github.com/mdietz94/smo_archipelago/blob/main/docs/first-time-setup.md) for the full prerequisite table with install links.
 
@@ -13,7 +13,7 @@ See [`docs/first-time-setup.md`](https://github.com/mdietz94/smo_archipelago/blo
 1. Download `meatballs.apworld` from the project's Releases page.
 2. Drop it into your Archipelago install's `custom_worlds/` directory.
 3. Open the Archipelago Launcher and click **SMO Client** in the Clients list.
-4. Run `/setup` in the SMO Client command bar. The setup wizard walks you through prerequisite checks, SMO dump pick (NSP or XCI), moon/capture extraction, your PC's LAN IP, the Switch-mod compile, and the deploy to SD card (or emulator). You only need to do this once per machine (or again if your PC's LAN IP changes, or after upgrading to a new release).
+4. Run `/setup` in the SMO Client command bar. The setup wizard walks you through prerequisite checks, SMO dump pick (NSP or XCI), moon/capture extraction, the Switch-mod compile, and the deploy to SD card (or emulator). You only need to do this once per machine (or again after upgrading to a new release). Your PC's LAN IP is auto-detected and baked in as a fallback; runtime UDP discovery handles routine IP changes automatically.
 
 ## Joining a multiworld game
 

@@ -8,9 +8,9 @@
 #### v0.1.2
 - <a href="https://github.com/Ninjakakes/Archipelago/releases/download/j_v0.1.2/junko.apworld">https://github.com/Ninjakakes/Archipelago/releases/download/j_v0.1.2/junko.apworld</a>
 
-#### v0.1.0
-- <a href="https://github.com/Ninjakakes/Archipelago/releases/download/j_0.1.0/junko.apworld">https://github.com/Ninjakakes/Archipelago/releases/download/j_0.1.0/junko.apworld</a>
+#### v0.1.0r2
+- <a href="https://github.com/Ninjakakes/Archipelago/releases/download/j_v0.1.0/junko.apworld">https://github.com/Ninjakakes/Archipelago/releases/download/j_v0.1.0/junko.apworld</a>
 
 #### v0.1.0
-- <a href="https://github.com/Ninjakakes/Archipelago/releases/download/j_v0.1.0/junko.apworld">https://github.com/Ninjakakes/Archipelago/releases/download/j_v0.1.0/junko.apworld</a>
+- <a href="https://github.com/Ninjakakes/Archipelago/releases/download/j_0.1.0/junko.apworld">https://github.com/Ninjakakes/Archipelago/releases/download/j_0.1.0/junko.apworld</a>
 

@@ -5,7 +5,7 @@ Roll through an extensive single-player campaign filled with dangerous obstacles
 
 
 ## Downloads
-- <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.2.1-alpha/miuultra.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.2.1-alpha-hotfix/miuultra.apworld">Latest Version (0.2.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

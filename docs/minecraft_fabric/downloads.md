@@ -35,11 +35,11 @@
 #### v1.0.1a0
 - <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.1-alpha/minecraft_fabric.apworld">https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.1-alpha/minecraft_fabric.apworld</a>
 
-#### v1.0.0
-- <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.2-alpha/minecraft_fabric.apworld">https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.2-alpha/minecraft_fabric.apworld</a>
+#### v1.0.0r2
+- <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.3-alpha/minecraft_fabric.apworld">https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.3-alpha/minecraft_fabric.apworld</a>
 
 #### v1.0.0
-- <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.3-alpha/minecraft_fabric.apworld">https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.3-alpha/minecraft_fabric.apworld</a>
+- <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.2-alpha/minecraft_fabric.apworld">https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.2-alpha/minecraft_fabric.apworld</a>
 
 #### v1.0.0a0
 - <a href="https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.0-alpha/minecraft_fabric.apworld">https://github.com/Deadlydiamond98/MinecraftFabricAPWorld/releases/download/v1.0.0-alpha/minecraft_fabric.apworld</a>

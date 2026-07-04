@@ -41,11 +41,11 @@
 #### v4
 - <a href="https://github.com/nicopop/NicosManualApworlds/releases/download/v4.0.0/manual_outerwilds_nicopopxd.apworld">https://github.com/nicopop/NicosManualApworlds/releases/download/v4.0.0/manual_outerwilds_nicopopxd.apworld</a>
 
-#### v3.2.1
-- <a href="https://github.com/nicopop/NicosManualApworlds/releases/download/v3.2.1/manual_outerwilds_nicopopxd.apworld">https://github.com/nicopop/NicosManualApworlds/releases/download/v3.2.1/manual_outerwilds_nicopopxd.apworld</a>
+#### v3.2.1r2
+- <a href="https://github.com/nicopop/NicosManualApworlds/releases/download/v3.2.1Pre1/manual_outerwilds_nicopopxd.apworld">https://github.com/nicopop/NicosManualApworlds/releases/download/v3.2.1Pre1/manual_outerwilds_nicopopxd.apworld</a>
 
 #### v3.2.1
-- <a href="https://github.com/nicopop/NicosManualApworlds/releases/download/v3.2.1Pre1/manual_outerwilds_nicopopxd.apworld">https://github.com/nicopop/NicosManualApworlds/releases/download/v3.2.1Pre1/manual_outerwilds_nicopopxd.apworld</a>
+- <a href="https://github.com/nicopop/NicosManualApworlds/releases/download/v3.2.1/manual_outerwilds_nicopopxd.apworld">https://github.com/nicopop/NicosManualApworlds/releases/download/v3.2.1/manual_outerwilds_nicopopxd.apworld</a>
 
 #### v3.1.0
 - <a href="https://github.com/nicopop/NicosManualApworlds/releases/download/v3.1.0/manual_outerwilds_nicopopxd.apworld">https://github.com/nicopop/NicosManualApworlds/releases/download/v3.1.0/manual_outerwilds_nicopopxd.apworld</a>

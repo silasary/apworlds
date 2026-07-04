@@ -137,22 +137,22 @@
 #### v0.0.0.post8
 - <a href="https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld</a>
 
-#### v0.0.0+latest
+#### v0.0.0+latestr7
 - <a href="https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld</a>
 
-#### v0.0.0+latest
+#### v0.0.0+latestr6
 - <a href="https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld</a>
 
-#### v0.0.0+latest
+#### v0.0.0+latestr5
 - <a href="https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld</a>
 
-#### v0.0.0+latest
+#### v0.0.0+latestr4
 - <a href="https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld</a>
 
-#### v0.0.0+latest
+#### v0.0.0+latestr3
 - <a href="https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld</a>
 
-#### v0.0.0+latest
+#### v0.0.0+latestr2
 - <a href="https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/latest/candybox2.apworld</a>
 
 #### v0.0.0+latest

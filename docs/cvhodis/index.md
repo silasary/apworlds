@@ -8,7 +8,7 @@ Dracula&#x27;s remains and unravel the conspiracy between two parallel castles.
 
 
 ## Downloads
-- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0/cvhodis.apworld">Latest Version (2.0)</a>
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0hotfix/cvhodis.apworld">Latest Version (2.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

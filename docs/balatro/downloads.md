@@ -1,21 +1,21 @@
 # Balatro
 
 ## Latest
-- <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9e/balatro.apworld">Latest Version (0.1.9.post2)</a>
+- <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9f/balatro.apworld">Latest Version (0.1.9r3)</a>
 
 ## All Versions
+
+#### v0.1.9r3
+- <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9f/balatro.apworld">https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9f/balatro.apworld</a>
+
+#### v0.1.9r2
+- <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9e/balatro.apworld">https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9e/balatro.apworld</a>
 
 #### v0.1.9.post2
 - <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9e/balatro.apworld">https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9e/balatro.apworld</a>
 
 #### v0.1.9
 - <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9d/balatro.apworld">https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9d/balatro.apworld</a>
-
-#### v0.1.9
-- <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9e/balatro.apworld">https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9e/balatro.apworld</a>
-
-#### v0.1.9
-- <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9f/balatro.apworld">https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9f/balatro.apworld</a>
 
 #### v0.1.9rc0
 - <a href="https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9c/balatro.apworld">https://github.com/BurndiL/BalatroAP/releases/download/v0.1.9c/balatro.apworld</a>

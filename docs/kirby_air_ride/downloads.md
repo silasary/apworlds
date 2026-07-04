@@ -8,11 +8,11 @@
 #### v1.0.2
 - <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.2-TEST/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.2-TEST/kirby_air_ride.apworld</a>
 
-#### v1.0.0
-- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.0-TEST/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.0-TEST/kirby_air_ride.apworld</a>
+#### v1.0.0r2
+- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.1-TEST/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.1-TEST/kirby_air_ride.apworld</a>
 
 #### v1.0.0
-- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.1-TEST/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.1-TEST/kirby_air_ride.apworld</a>
+- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.0-TEST/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.0-TEST/kirby_air_ride.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v0.6.0/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v0.6.0/kirby_air_ride.apworld</a>

@@ -4,7 +4,7 @@ A mix between Portal, Zelda and Metroid. Exploration, puzzles, terrible combat, 
 
 
 ## Downloads
-- <a href="https://github.com/DrNjitram/ArchipelagoSupra/releases/download/V0.1.0/supraland.apworld">Latest Version (0.1.0)</a>
+- <a href="https://github.com/DrNjitram/ArchipelagoSupra/releases/download/V0.3.0/supraland.apworld">Latest Version (0.1.0r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -23,20 +23,20 @@
 #### v0.5.0
 - <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.5.0/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.5.0/bfm.apworld</a>
 
-#### v0.2.5
-- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.5/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.5/bfm.apworld</a>
+#### v0.2.5r5
+- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.2/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.2/bfm.apworld</a>
 
-#### v0.2.5
+#### v0.2.5r4
+- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.1/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.1/bfm.apworld</a>
+
+#### v0.2.5r3
+- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.0/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.0/bfm.apworld</a>
+
+#### v0.2.5r2
 - <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.3.0/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.3.0/bfm.apworld</a>
 
 #### v0.2.5
-- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.0/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.0/bfm.apworld</a>
-
-#### v0.2.5
-- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.1/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.1/bfm.apworld</a>
-
-#### v0.2.5
-- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.2/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.4.2/bfm.apworld</a>
+- <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.5/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.5/bfm.apworld</a>
 
 #### v0.2.4
 - <a href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.4/bfm.apworld">https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/download/v0.2.4/bfm.apworld</a>

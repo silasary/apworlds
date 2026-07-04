@@ -26,11 +26,11 @@
 #### v2.2.1
 - <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.2.1/spire.apworld">https://github.com/cjmang/StS-AP-World/releases/download/2.2.1/spire.apworld</a>
 
-#### v2.2.0
-- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.2.0/spire.apworld">https://github.com/cjmang/StS-AP-World/releases/download/2.2.0/spire.apworld</a>
+#### v2.2.0r2
+- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.2.0-rc-1/spire.apworld">https://github.com/cjmang/StS-AP-World/releases/download/2.2.0-rc-1/spire.apworld</a>
 
 #### v2.2.0
-- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.2.0-rc-1/spire.apworld">https://github.com/cjmang/StS-AP-World/releases/download/2.2.0-rc-1/spire.apworld</a>
+- <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.2.0/spire.apworld">https://github.com/cjmang/StS-AP-World/releases/download/2.2.0/spire.apworld</a>
 
 #### v2.1.2
 - <a href="https://github.com/cjmang/StS-AP-World/releases/download/2.1.2/spire.apworld">https://github.com/cjmang/StS-AP-World/releases/download/2.1.2/spire.apworld</a>

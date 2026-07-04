@@ -40,6 +40,22 @@
 4. Launch RWR with the Archipelago mod selected.
 5. The client will synchronize items and locations between the game and the server.
 
+## Playing Co-op (2 players, shared slot)
+
+Two players can share a single AP slot by playing on the same RWR campaign.
+
+1. Both players install the mod (same version).
+2. The host goes through the normal setup (connect the AP client, launch RWR with the mod).
+3. The guest joins the host's RWR server via **Multiplayer → LAN Browser** or **by IP** (host must
+   port-forward UDP `4001–4002`, or invite via Steam Friends).
+4. Only the host runs the AP Python client — the guest just plays.
+
+Checks from either player count. Items (rank, weapons, radio calls) apply to both. Death Link
+affects both. When the guest joins mid-campaign, their character is forced to the current AP rank.
+
+If the host disconnects, the RWR server ends (no host migration). Just relaunch to resume — the AP
+progress is saved.
+
 ## Troubleshooting
 
 - **Client can't connect**: Make sure the server address and port are correct. Check firewall settings.

@@ -26,20 +26,20 @@
 #### v1.0.2
 - <a href="https://github.com/Uroogla/S2AP/releases/download/1.0.2/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/1.0.2/spyro2.apworld</a>
 
-#### v1.0.1
-- <a href="https://github.com/Uroogla/S2AP/releases/download/1.0.1/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/1.0.1/spyro2.apworld</a>
+#### v1.0.1r2
+- <a href="https://github.com/Uroogla/S2AP/releases/download/linux_test/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/linux_test/spyro2.apworld</a>
 
 #### v1.0.1
-- <a href="https://github.com/Uroogla/S2AP/releases/download/linux_test/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/linux_test/spyro2.apworld</a>
+- <a href="https://github.com/Uroogla/S2AP/releases/download/1.0.1/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/1.0.1/spyro2.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Uroogla/S2AP/releases/download/1.0.0/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/1.0.0/spyro2.apworld</a>
 
-#### v0.3.2
-- <a href="https://github.com/Uroogla/S2AP/releases/download/0.3.2/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.3.2/spyro2.apworld</a>
+#### v0.3.2r2
+- <a href="https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld</a>
 
 #### v0.3.2
-- <a href="https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/full_gemsanity_31_10_25/spyro2.apworld</a>
+- <a href="https://github.com/Uroogla/S2AP/releases/download/0.3.2/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.3.2/spyro2.apworld</a>
 
 #### v0.3.1
 - <a href="https://github.com/Uroogla/S2AP/releases/download/0.3.1/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.3.1/spyro2.apworld</a>
@@ -53,14 +53,14 @@
 #### v0.2.1
 - <a href="https://github.com/Uroogla/S2AP/releases/download/0.2.1/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.2.1/spyro2.apworld</a>
 
-#### v0.2.0
-- <a href="https://github.com/Uroogla/S2AP/releases/download/0.2.0/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.2.0/spyro2.apworld</a>
+#### v0.2.0r3
+- <a href="https://github.com/Uroogla/S2AP/releases/download/0.2.0-rc2/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.2.0-rc2/spyro2.apworld</a>
 
-#### v0.2.0
+#### v0.2.0r2
 - <a href="https://github.com/Uroogla/S2AP/releases/download/0.2.0-rc1/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.2.0-rc1/spyro2.apworld</a>
 
 #### v0.2.0
-- <a href="https://github.com/Uroogla/S2AP/releases/download/0.2.0-rc2/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.2.0-rc2/spyro2.apworld</a>
+- <a href="https://github.com/Uroogla/S2AP/releases/download/0.2.0/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.2.0/spyro2.apworld</a>
 
 #### v0.1.2
 - <a href="https://github.com/Uroogla/S2AP/releases/download/0.1.2/spyro2.apworld">https://github.com/Uroogla/S2AP/releases/download/0.1.2/spyro2.apworld</a>
