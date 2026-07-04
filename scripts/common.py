@@ -1,3 +1,4 @@
+from collections import Counter
 import datetime
 import functools
 import hashlib
@@ -188,6 +189,16 @@ def cleanup_manifest(manifest):
         manifest["flags"] = [flag for flag, enabled in manifest["flags"].items() if enabled]
     elif isinstance(manifest.get("flags", []), str):
         manifest["flags"] = manifest["flags"].split(",")
+
+    seen_versions = Counter()
+    versions = manifest.get("versions", {}).values()
+    for info in versions:
+        seen_versions[info["world_version"]] += 1
+        if seen_versions[info["world_version"]] > 1:
+            raw_version = info["world_version"]
+            revision = seen_versions[info["world_version"]]
+            info["world_version"] = f"{raw_version}r{revision}"
+            print(f"Duplicate world version {raw_version} in manifest, renamed to {info['world_version']}")
 
 
 def save_manifests(github_url, manifests):
