@@ -1,9 +1,12 @@
 # Super Smash Bros. Melee
 
 ## Latest
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/meleeap1.1/melee.apworld">Latest Version (1.1)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0/melee.apworld">Latest Version (2.0.0)</a>
 
 ## All Versions
+
+#### v2.0.0
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0/melee.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0/melee.apworld</a>
 
 #### v1.1
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/meleeap1.1/melee.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/meleeap1.1/melee.apworld</a>

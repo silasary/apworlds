@@ -2,146 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-04T00:33:31.264466+00:00</updated>
+  <updated>2026-07-04T07:07:41.186151+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.1</id>
-    <title>Crash2 v0.4.0</title>
-    <updated>2026-06-28T04:31:50+00:00</updated>
-    <author>
-      <name>Sim10XXX</name>
-    </author>
-    <author>
-      <name>alexdass</name>
-    </author>
-    <content>&#13;
-### New Option:&#13;
-- Life count checks can now be set using both a range and custom values&#13;
-  -  Useful if you want to add a lot of life count checks&#13;
-&#13;
-### Bug Fixes:&#13;
-- Fixed typos causing 3 life sanity checks to not be placed by the apworld&#13;
-  - This also fixes the life sanity checks after Bee-Having being off by 1 ID&#13;
-- Fixed the client crashing when no life count checks are enabled&#13;
-- Fixed life bundles not sending when fruit sanity is enabled&#13;
-&#13;
-### Known Issues:&#13;
-- Generating a multiworld with multiple Crash 2 yamls will error if any life count checks are enabled&#13;
-- Life sanity lives are no longer perma-collected&#13;
-- Also everything mentioned in v0.4.0 known issues</content>
-    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/toluca-v1.0.0</id>
-    <title>Donkey Kong Toluca v1.0.0</title>
-    <updated>2026-06-28T08:00:53+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>"I'm happy with the state of the APWorld" kind of update&#13;
-# Changes&#13;
-* New options to allow unlocking `Progressive Vehicle` items other than multiworld items&#13;
-    * Via Banana Bird count&#13;
-    * Via worlds unlocked&#13;
-* Swanky's Sideshow games can be valid locations (beat each 3 per world)&#13;
-    * This also removes the bear coin cost to enter a game&#13;
-* KONG letters progress is saved per level upon collecting them&#13;
-* Bear Brothers' trade sequence can be shuffled&#13;
-    * Adds 3 locations to the Banana Bird as locations option&#13;
-    * Removes giving Barnacle a shell as a requirement for the rare flower to appear on the map&#13;
-    * Rare flower no longer checks for Razor Ridge completion, only Barbos&#13;
-    * Mirror item in Bazaar expects you to reach either Cove or Mekanos to consider it in logic (no one wants to farm coins)&#13;
-* Added a label to every world that informs what's the current progress on level clears and how many are required to fight the world's boss&#13;
-* Added an option to swap Kaos Kore and Knautilus levels&#13;
-    * Goal option is updated to reflect that the goal is now either Kastle KAOS or Knautilus instead of KAOS Kore or Krematoa&#13;
-* Implemented more `cog_placement` options:&#13;
-    * `krematoa_level_clear`: Places them at level ends in Krematoa&#13;
-    * `krematoa_anywhere`: Places them anywhere in Krematoa. Includes Extra Cogs.&#13;
-* Added an option to have additional Banana Birds, Cogs and Bonus Coins in the item pool&#13;
-* Added the ability to change the Kongs' palettes&#13;
-* Generator no longer places Cogs if Knautilus isn't a valid goal&#13;
-* Allow setting to 0 the required level clears per world&#13;
-* Fixed an issue with levels on Krematoa trying to get alternate palettes after Knautilus surfaces&#13;
-* Level ID is now sent via Data Storage (for PopTracker auto tabbing)&#13;
-* A few logic changes</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/toluca-v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.8-alpha</id>
-    <title>The Legend of Zelda - Spirit Tracks v0.7.8a0</title>
-    <updated>2026-06-28T09:38:06+00:00</updated>
-    <author>
-      <name>DayKat</name>
-    </author>
-    <author>
-      <name>1313e</name>
-    </author>
-    <author>
-      <name>Carrotinator</name>
-    </author>
-    <author>
-      <name>TriforceDrummer</name>
-    </author>
-    <author>
-      <name>Nepecute</name>
-    </author>
-    <content>compatible with seeds generated in v7.x&#13;
-&#13;
-## New Features&#13;
-- Added Rule Builder Logic support for AP 0.6.7+. Main benefit is that you can use the UT command /explain to see the logic for a particular location or region. Also speeds up gen slightly and is easier to work with, and allows for exporting logic for potential future tracker stuff!&#13;
-- Added /carrot_asked command that prints the debug output from the current room, even if not running debug launcher&#13;
-## Bugfixes&#13;
-- Fixed typo in flags for s Mayscore portal to ocean portal with portal unlock items&#13;
-- Fixed snow tracks grouping typo&#13;
-- Tweaked respawns in Staven's room&#13;
-- Added detection and error message for trying to play with rom version 1.1&#13;
-- Allowed picking up teacher with fire glyph&#13;
-- Fixed total rabbits not sending properly&#13;
-- Added a hitbox to Hyrule Castle 2f indoor chest&#13;
-- Entering the ToS 31F no longer steals your tears of light&#13;
-- An Evil Train now always spawns underwater&#13;
-- Fixed model swap for Bunnio's Rabbit net&#13;
-- Made sure you can pick up Joe in outset after already taking him to Beedle&#13;
-- Added delay reset to rabbit rewards&#13;
-- Stopped Kenzo from leaving tp early if visited Anouki&#13;
-- Fixed a Kenzo bug in AV&#13;
-- Changed some trading post event logic&#13;
-- Treasure removed by delay reset now removes itself properly&#13;
-- Tears now reload on all ToS floors that don't remove them, allowing you to grab a new phantom after entering glyph rooms.&#13;
-- Going north on W Wooded Temple Tracks without snow glyph now bounces you cause there are no tracks&#13;
-- Buying bombs/quivers from shops no longer sends their matching ammo location. Also fixed for if those locs are their vanilla items&#13;
-- Saving and quitting in Staven's room now puts you in the room before, preventing a softlock from Zelda despawning during the fight.&#13;
-- Fixed some faulty goals, Including Staven, Vulcano and Skeldritch&#13;
-- Expanded hitbox for rabbit haven island chest&#13;
-- Fixed bad address on fire realm ice crash fix&#13;
-- Added killing the marine temple snapper Without sword to hard logic (requires setting up a hit before entering the arena with boomerang or bombs)&#13;
-- Added getting wooded temple boss key without whirlwind to hard logic&#13;
-- Fixed some shop detection in Goron shop&#13;
-- Fixed Snurglar keys sometimes sending multiple locations&#13;
-- Fixed Ocean Source persisting after Cactops&#13;
-- Made sure goal dungeons are always in the required dungeon pool, even when required dungeons are 0&#13;
-&#13;
-Known Issues: &#13;
-- There are still some occasional fill bugs I've been struggling to track down</content>
-    <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.7.8-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.3</id>
-    <title>PokePark v1.2.3</title>
-    <updated>2026-06-28T11:52:58+00:00</updated>
-    <author>
-      <name>Joe Mama (Mekurushi)</name>
-    </author>
-    <content>## What's Changed&#13;
-* bugfix: changed Groudon Location region to magma zone by @Mekurushi in https://github.com/Mekurushi/Archipelago_Pokepark/pull/124&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.2...1.2.3</content>
-    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.3"/>
-  </entry>
   <entry>
     <id>https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/tag/v1.6.0</id>
     <title>Tevi v0.7.3</title>
@@ -1265,5 +1130,84 @@ Yes, back to 0.3.0, except the pre-release 0.3.99(9)&#13;
 However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity logic in UT&#13;
 </content>
     <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.3.36"/>
+  </entry>
+  <entry>
+    <id>https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.07.03</id>
+    <title>Castlevania - Aria of Sorrow v2026.7.3</title>
+    <updated>2026-07-04T02:13:12+00:00</updated>
+    <author>
+      <name>dem1995</name>
+    </author>
+    <content>Requires Archipelago 0.6.4 or greater.&#13;
+&#13;
+Drop cvaos.apworld into your Archipelago install under /lib/worlds. To patch a ROM, drag the .apcvaos patch onto ArchipelagoLauncher.exe.&#13;
+&#13;
+## Canada Day / Fourth of July Update&#13;
+### Additions:&#13;
+* Adds a Library-to-Forbidden-Area Button Handling option. This turns the button that unlocks the Forbidden Area from the Library into a shuffleable pickup.&#13;
+* Adds friendly names to the checks (c/o @schwartzgandhi for writing and @fenrir7732 for review). &#13;
+* Adds "Oops, All Whips" and "Classicvania Movement" patch options from @Xanthus1&#13;
+### Adjustments&#13;
+* Adjusts the ceiling/floor-breaking pickups to be `progression_deprioritized_skip_balancing` instead of `progression_skip_balancing`&#13;
+* Quadruples the drop-rates of Devil, Manticore, and Curly souls&#13;
+* Enables kicking out of single jump (courtesy of Xanthus)&#13;
+### Fixes&#13;
+* Fixes the build issue reported by Fenrir&#13;
+* Fixes the 814-&gt;80D logic error reported by Cringe&#13;
+* ROM no longer required by host</content>
+    <link href="https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.07.03"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.33</id>
+    <title>Universal Tracker v0.2.33</title>
+    <updated>2026-07-04T03:42:21+00:00</updated>
+    <author>
+      <name>FarisTheAncient</name>
+    </author>
+    <content>## What's Changed&#13;
+* Support for multiple player icons by @NaveTK in https://github.com/FarisTheAncient/Archipelago/pull/135&#13;
+* Updating UT fuzzer hook for my fuzzer beta&#13;
+* Support world sending override functions in multiple messages&#13;
+* Adding local world version to explain_faris&#13;
+* adding explain_spot&#13;
+&#13;
+## New Contributors&#13;
+* @NaveTK made their first contribution in https://github.com/FarisTheAncient/Archipelago/pull/135&#13;
+&#13;
+**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.2.32...Tracker_v0.2.33</content>
+    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.33"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.5.1</id>
+    <title>Divinity Original Sin 2 v0.5.0</title>
+    <updated>2026-07-04T05:46:11+00:00</updated>
+    <author>
+      <name>Intaiachi</name>
+    </author>
+    <author>
+      <name>chaotic</name>
+    </author>
+    <author>
+      <name>JeyKey09</name>
+    </author>
+    <content>Bugfixes:&#13;
+- Potentially fixed path issues&#13;
+&#13;
+Setup Guide [here](https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/steup_en.md)&#13;
+&#13;
+DOS2 mod pak file [Github](https://github.com/Intaiachi/DOS2-Archipelago-Mod/releases), [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354)</content>
+    <link href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.7.1</id>
+    <title>Kerbal Space Program 1 v0.7.1</title>
+    <updated>2026-07-04T05:47:45+00:00</updated>
+    <author>
+      <name>nickdavies</name>
+    </author>
+    <content>bug fixes for 0.7 release
+
+**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.7.0...v0.7.1</content>
+    <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.7.1"/>
   </entry>
 </feed>
