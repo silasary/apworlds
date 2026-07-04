@@ -481,6 +481,21 @@
       "title": "0.5.7",
       "version_simple": "0.5.7",
       "world_version": "0.5.7"
+    },
+    "0.6.0": {
+      "created_at": "2026-07-04T16:03:25Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- **Skill Tree Randomization** adds 27 locations for the skill tree nodes purchaseable with skill points, and 19 items for the skills themselves.\r\n\t- An Experience Multiplier setting has been added to the F1 mod settings. For now I'm not making it a separate mod.\r\n\t- Note that Swift Runner logic has not been implemented yet. For medium/ledge_storage players, the Swift Runner skill will still be auto-unlocked at the start, so the new Swift Runner item will feel redundant for now.\r\n\t- The logic for when you'll be expected to \"check\" a skill tree node is similar to shop rando: They're split into low, medium and high cost groups (based on a node's \"total cost\" including prerequisite nodes), and these three groups become in logic as you gain access to more of the map.\r\n\t- More details can be found in the `randomize_skill_tree` option description.\r\n- Updated Universal Tracker map pages:\r\n\t- Added a \"skill_tree\" page for obvious reasons\r\n\t- Reordered UT map pages. Now the first 3 pages in the dropdown are world_map, four_seasons_pavilion, and skill_tree, *and* all of the remaining pages are finally in alphabetical order.\r\n- `vanilla` logic: Previously, \"GoS (Entry) - Root Node\" to \"Coffin\" was incorrectly in logic with only Charged Strike. CS-dash is viable here, but that trick should only be available on medium or higher.\r\n- The `first_root_node` values have been properly alphabetized, including the option description's list of nodes needing early placements.",
+      "download_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/0.6.0/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1ece9bbd2378d106aa159b2a1bbdcd5fc262e92d4ef1d1cbe492c6da20427af1",
+      "html_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 3644379,
+      "source_url": "https://api.github.com/repos/Ixrec/NineSolsArchipelagoRandomizer",
+      "tag": "0.6.0",
+      "title": "0.6.0",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0"
     }
   }
 }

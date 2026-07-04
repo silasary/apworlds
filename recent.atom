@@ -2,62 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-04T12:38:59.508441+00:00</updated>
+  <updated>2026-07-04T18:27:19.252396+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.6.3</id>
-    <title>Kerbal Space Program 1 v0.6.3</title>
-    <updated>2026-06-28T22:34:08+00:00</updated>
-    <author>
-      <name>nickdavies</name>
-    </author>
-    <content>This release changes from Science Mode to career mode and adds contract&#13;
-&#13;
-See the discord for more details on what is new here&#13;
-&#13;
-**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.6.2...v0.6.3</content>
-    <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.6.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.17.1</id>
-    <title>Metroid Dread v0.6.0r14</title>
-    <updated>2026-06-29T02:38:49+00:00</updated>
-    <author>
-      <name>maxdietz</name>
-    </author>
-    <author>
-      <name>Randovania Dread contributors</name>
-    </author>
-    <content>## Installation
-
-1. Download `dread.apworld` (below) and drop it into your
-   Archipelago install's `custom_worlds/` directory.
-2. Generate a multiworld using `Metroid Dread` as the game.
-3. Launch the **Dread Client** from Archipelago's Launcher (or
-   open a `.dreadap` file). The window includes an AP server address
-   bar, a **"Dread"** tab (live status + log), and a top-bar
-   **Switch-status pill** for pointing the client at your Switch or
-   Ryujinx. Click the pill → edit the IP → **Reconnect** (or use
-   `/dread_connect &lt;ip&gt;` in the command bar).
-4. Run `/setup` in the client to build and deploy the patched
-   RomFS — see the
-   [first-time setup walkthrough](https://github.com/mdietz94/dread_ap/blob/main/docs/first-time-setup.md)
-   for the click-by-click guide.
-
-See [README.md](https://github.com/mdietz94/dread_ap/blob/main/README.md)
-for prerequisites (Switch hardware, Atmosphere CFW, Dread 2.1.0 RomFS, etc.).
-
-
-## What's Changed
-* fix(patcher): re-assert rom:/ap_config.json on auto-patch by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/137
-
-
-**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.17.0...v0.17.1</content>
-    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.17.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.1.1</id>
     <title>SM64: Spicy Mycena 64 v0.1.1</title>
@@ -1205,5 +1154,44 @@ Made an attempt at making the client more usable on mobile</content>
 &#13;
 **Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.4.2-beta...v0.4.3-beta</content>
     <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.4.3-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.21.0</id>
+    <title>Metroid Dread v0.21.0</title>
+    <updated>2026-07-04T14:08:20+00:00</updated>
+    <author>
+      <name>maxdietz</name>
+    </author>
+    <author>
+      <name>Randovania Dread contributors</name>
+    </author>
+    <content>## What's Changed
+* chore(release): v0.20.1 by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/153
+* fix(ut): ASCII arrow + drill into blocked regions in /explain by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/154
+
+
+**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.20.1...v0.21.0</content>
+    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.21.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.0</id>
+    <title>Nine Sols v0.6.0</title>
+    <updated>2026-07-04T16:03:25+00:00</updated>
+    <author>
+      <name>Ixrec</name>
+    </author>
+    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
+&#13;
+- **Skill Tree Randomization** adds 27 locations for the skill tree nodes purchaseable with skill points, and 19 items for the skills themselves.&#13;
+	- An Experience Multiplier setting has been added to the F1 mod settings. For now I'm not making it a separate mod.&#13;
+	- Note that Swift Runner logic has not been implemented yet. For medium/ledge_storage players, the Swift Runner skill will still be auto-unlocked at the start, so the new Swift Runner item will feel redundant for now.&#13;
+	- The logic for when you'll be expected to "check" a skill tree node is similar to shop rando: They're split into low, medium and high cost groups (based on a node's "total cost" including prerequisite nodes), and these three groups become in logic as you gain access to more of the map.&#13;
+	- More details can be found in the `randomize_skill_tree` option description.&#13;
+- Updated Universal Tracker map pages:&#13;
+	- Added a "skill_tree" page for obvious reasons&#13;
+	- Reordered UT map pages. Now the first 3 pages in the dropdown are world_map, four_seasons_pavilion, and skill_tree, *and* all of the remaining pages are finally in alphabetical order.&#13;
+- `vanilla` logic: Previously, "GoS (Entry) - Root Node" to "Coffin" was incorrectly in logic with only Charged Strike. CS-dash is viable here, but that trick should only be available on medium or higher.&#13;
+- The `first_root_node` values have been properly alphabetized, including the option description's list of nodes needing early placements.</content>
+    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.0"/>
   </entry>
 </feed>

@@ -4,7 +4,7 @@ Bottom text
 
 
 ## Downloads
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0/melee.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0/melee.apworld">Latest Version (2.0.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
