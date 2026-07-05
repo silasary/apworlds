@@ -24,5 +24,3 @@ To update the mod, simply replace the mod files.
 ## Playing
 - Upon opening the game, you will be prompted to enter your connection information.
 - After succesfully connecting, you are ready to play!
-
-A new user profile will automatically be created for each Archipelago game. If there is no space to create this profile, you will need to temporarily remove the Replanted Archipelago mod, reboot the game and manually delete a profile of your choice. After deleting a profile, you can reinstall the mod and continue as normal.

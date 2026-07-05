@@ -8,7 +8,7 @@
 #### v0.5.0r2
 - <a href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.5.1/dos2.apworld">https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.5.1/dos2.apworld</a>
 
-#### v0.5.0r2
+#### v0.5.0r2r2
 - <a href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.5.2/dos2.apworld">https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.5.2/dos2.apworld</a>
 
 #### v0.5.0

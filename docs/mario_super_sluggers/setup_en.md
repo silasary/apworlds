@@ -9,16 +9,19 @@
 ## Optional Software
 - [Mario Super Sluggers Tracker](https://github.com/MarioManTAW/MarioSuperSluggersAPTracker/releases/)
   - Requires [PopTracker](https://github.com/black-sliver/PopTracker/releases/)
+- [MSS AP Patcher](https://github.com/MarioManTAW/mss-ap-patcher/releases/)
 
 ## How to play
 
 First, you need a room to connect to. For this, you or someone you know has to generate a game. This will not be
 explained here, but you can check the [Archipelago Setup Guide](https://archipelago.gg/tutorial/Archipelago/setup_en).
 
-Unlike most randomizers, Mario Super Sluggers AP doesn't need you to patch your rom beforehand. Everything is done at
-runtime.
+Unlike most randomizers, Mario Super Sluggers AP doesn't need you to patch your rom beforehand. Everything important
+can be done at runtime, however there are some additional features that are possible with an optional patch.
+- [Optional] Use the [MSS AP Patcher](https://github.com/MarioManTAW/mss-ap-patcher/releases/)
+  to generate a patched game file.
 - Open the Mario Super Sluggers Client from Archipelago Launcher.
-- Open Dolphin and launch the game.
+- Open Dolphin and launch the game. If you created a patched file, use that one here.
   - **Important!** Do not load into a save file that already has Challenge Mode save data, as this will send checks
     prematurely.
   - **Important!** Do not press "New" on the Challenge Mode starting screen before you are connected to the host.
@@ -26,7 +29,7 @@ runtime.
 - Write your slot/player name into the box at the bottom and press enter. If needed, enter the room password.
 - Once you are connected, enter Challenge Mode and start a new game.
 - When reconnecting, it is fine to reuse the same save file but both the game and client need to be closed between
-sessions.
+  sessions.
 
 ## Troubleshooting
 
