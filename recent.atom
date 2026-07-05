@@ -2,144 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-05T07:14:50.160189+00:00</updated>
+  <updated>2026-07-05T12:33:56.146345+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/wildham0/FF1PRAP/releases/tag/0.6.2</id>
-    <title>FF1 Pixel Remaster v0.6.0r2</title>
-    <updated>2026-06-29T23:39:11+00:00</updated>
-    <author>
-      <name>wildham</name>
-    </author>
-    <content>- Fix event scripts hanging after receiving the ship on overworld</content>
-    <link href="https://github.com/wildham0/FF1PRAP/releases/tag/0.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR2</id>
-    <title>The Grinch v1.6.0r2</title>
-    <updated>2026-06-30T00:31:40+00:00</updated>
-    <author>
-      <name>MarioSpore</name>
-    </author>
-    <author>
-      <name>SomeJakeGuy</name>
-    </author>
-    <content>## Notice&#13;
-This version is a beta. Meaning, this is meant to test the new features and it's behavior. Do not submit to public syncs and asyncs unless you want to take the risk of any issues that may occur when playing it. Play it at your own risk! I am not responsible for any issues that may occur if you decide to bring this version to public sessions.&#13;
-&#13;
-### Changes&#13;
-- A sleigh part option joins the game today, mixing multiworld paths or old vanilla play!&#13;
-- Mission item randomizing joins the show, in familiar spots or shuffled flow!&#13;
-- With clever new logic, you'll roam with delight where average players lose the fight!&#13;
-&#13;
-### Bugfixes&#13;
-- And logic bugs were swatted out, so neat, like tiny flies removed before repeat!</content>
-    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.5</id>
-    <title>Ratchet &amp; Clank 2 v0.6.4.5</title>
-    <updated>2026-06-30T16:54:19+00:00</updated>
-    <author>
-      <name>Evilwb</name>
-    </author>
-    <content>Testing Dynamic PINE ports for multi PCSX2 instance support.&#13;
-Also adds auto connection functionally to the client using patch data, and added the manifest json.&#13;
-Based on: https://github.com/evilwb/APRac2/releases/tag/v0.6.4&#13;
-v0.6.4.4: Now has UT integrated, and yaml-less support. Works as long as [UT](&lt;https://github.com/FarisTheAncient/Archipelago/releases?q=tracker_&amp;expanded=true&gt;) is installed. Also fixed some first person logic issues.&#13;
-Thanks to @AmondoVagyok&#13;
-Also added world version to slot data so can see if client isn't matching multiworld gen.&#13;
-Planned: More UT features. "Glitch" logic. Internal or external map. Auto map tab switching. Community suggested logic changes.&#13;
-v0.6.4.5: Fixed CRC not being forced to 8 characters.&#13;
-Also made apworld version be checked using the archipelago.json instead of manually set.&#13;
-&#13;
-### Setup&#13;
-You need every RaC2 option in your `host.yaml` setup. That means:  &#13;
-`iso_file` to a valid vanilla iso in your Archipelago directory (should be already from normal setup)  &#13;
-`iso_start` to your PCSX2 exe (Make sure to use `/`)  &#13;
-`game_ini` to a game settings file in your PCSX2's gamesettings folder.  &#13;
-(Usually `%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini`)&#13;
-&#13;
-Example:&#13;
-```yaml&#13;
-rac2_options:&#13;
-  # File name of the Ratchet &amp; Clank 2 ISO&#13;
-  iso_file: "Ratchet &amp; Clank - Going Commando (USA) (v1.01).iso"&#13;
-  # Set this false to never autostart an iso (such as after patching),&#13;
-  # Set it to true to have the operating system default program open the iso&#13;
-  # Alternatively, set it to a path to a program to open the .iso file with (like PCSX2)&#13;
-  iso_start: "C:/Emulators/(PS2) PCSX2/pcsx2-qt.exe"&#13;
-  # Set to file path to an existing PCSX2 game setting INI file to have the patcher&#13;
-  # create an appropriately named INI with the rest of the patch output. This can be used to&#13;
-  # allow you to use you own custom PCSX2 setting with patched ISO.&#13;
-  game_ini: "%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini"&#13;
-```&#13;
-&#13;
-Game settings ini example:&#13;
-```ini&#13;
-[EmuCore]&#13;
-EnablePINE = true&#13;
-PINESlot = 28011&#13;
-&#13;
-[Achievements]&#13;
-Enabled = false&#13;
-&#13;
-[MemoryCards]&#13;
-Slot1_Enable = true&#13;
-Slot2_Enable = false&#13;
-Slot1_Filename = APgames.ps2&#13;
-```&#13;
-Recommended you use your settings for vanilla RaC2. But you can make a copy with specific edits.&#13;
-So you can set an AP specific memory card like in the example above. (You don't need to add PINE settings)&#13;
-&#13;
-For normal setup if you haven't already. Check [GitHub](&lt;https://github.com/evilwb/APRac2/blob/main/docs/setup_en.md&gt;), and [Discord](&lt;https://discord.com/channels/731205301247803413/1325015730218860554/1371288772548755466&gt;). Also [World info &amp; FaQ](https://github.com/evilwb/APRac2/blob/main/README.md).&#13;
-&#13;
-### Start&#13;
-Simply run a `.aprac2` file with Archipelago. (Recommended to set to open `.aprac2` files with Archipelago by default)&#13;
-Or run the client, and use the `/start` command, and then select your desired `.aprac2` file. (Or drag `.aprac2` into the client)&#13;
-Note: You can rename `aprac2` and patched `iso` but they have to have the same name or it'll make another `iso`.&#13;
-(Same way you have to keep `.apsave`, and their `.zip` name the same if hosting locally)&#13;
-&#13;
-Changes: &lt;https://github.com/jacobmix/APRac2/compare/v0.6.4.4...v0.6.4.5?w=1&gt;&#13;
-Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.5?w=1&gt;&#13;
-&#13;
-&#13;
-# Supported Game Version&#13;
-This only works with the following version of the game for now:&#13;
-- Platform: ``Playstation 2`` (This project will not be tackling the Playstation 3 versions)&#13;
-- Version: ``1.01``&#13;
-- Serial: ``SCUS-97268``&#13;
-- CRC32: ``6D1FC798`` (PCSX2 CRC: ``38996035``)&#13;
-- MD5: ``3CBBB5127EE8A0BE93EF0876F7781EE8``&#13;
-&#13;
-There is rooms for other versions/regions to be added in the future.&#13;
-&#13;
-# Basic Setup&#13;
-## AP World Installation&#13;
-0. Download &amp; install [Archipelago Launcher](https://github.com/ArchipelagoMW/Archipelago/releases/latest).&#13;
-1. Downloaded ``rac2.apworld`` file from the release assets below.&#13;
-2. Double-click the ``rac2.apworld`` to install it to your local Archipelago's ``custom_worlds`` folder.&#13;
-3. Restart the Archipelago Launcher&#13;
-4. Create your player yaml options with the Options Creator in the launcher.&#13;
-5. Save player yamls to ``Players`` folder or send to person hosting.&#13;
-   - Hoster generates multiworld with all player yamls in the ``Players`` folder.&#13;
-   - Self host or upload gen from ``output`` to &lt;https://archipelago.gg/uploads&gt;, and share room/connection info.&#13;
-6. Open ``.aprac2`` with Archipelago or after opening the "Ratchet and Clank 2 Client".&#13;
-   - Will be asked for iso, and other ``host.yaml`` options now if not setup.&#13;
-     - MAKE SURE THE RAC2 ISO COPIED TO YOUR ARCHIPELGO FOLDER IS FULLY COPIED OR MANUALLY COPY ONE OVER!&#13;
-7. Should auto connect. Else redownload patch or manually connect with client. (Using slot name, password if set, and IP/URL &amp; port)&#13;
-   - Tip. You can connect instantly with: ``&lt;SLOT_NAME&gt;:None@&lt;IP/URL&gt;:&lt;PORT&gt;``&#13;
-Example: ``CoolPlayer:CoolerPassword@archipelago.gg:38281`` (``None`` works if no password is set)&#13;
-## PCSX2 Settings&#13;
-- Enable PINE in PCSX2&#13;
-  - In PCSX2, Under Tools, Check Show Advanced Settings&#13;
-  - In PCSX2, System -&gt; Settings -&gt; Advanced tab -&gt; PINE Settings,&#13;
-**Check** Enable and ensure Slot is set to ``28011``</content>
-    <link href="https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.5"/>
-  </entry>
   <entry>
     <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.18.2</id>
     <title>Metroid Dread v0.6.0r15</title>
@@ -1211,5 +1078,100 @@ Changelog since v1.1.1:&#13;
 - Several logic fixes&#13;
 ```</content>
     <link href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/tag/v1.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.5.2</id>
+    <title>Divinity Original Sin 2 v0.5.0r2</title>
+    <updated>2026-07-05T07:54:25+00:00</updated>
+    <author>
+      <name>Intaiachi</name>
+    </author>
+    <author>
+      <name>chaotic</name>
+    </author>
+    <author>
+      <name>JeyKey09</name>
+    </author>
+    <content>Changes:&#13;
+- Containersanity setting had been added, still work in progress. Functions in act 1 alone, do not enabled outside of act 1 goals.&#13;
+&#13;
+Bugfixes:&#13;
+- Confirmed path fix for linux&#13;
+- Fixed Magister Ellwin, Magister Swentin, and Source Hound Phylip not correctly sending checks&#13;
+- Fixed Saltwater Crocodile naming scheme&#13;
+&#13;
+This release is NOT backwards compatible with 0.5.0.&#13;
+&#13;
+Setup Guide [here](https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/steup_en.md)&#13;
+&#13;
+DOS2 mod pak file [Github](https://github.com/Intaiachi/DOS2-Archipelago-Mod/releases), [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354)</content>
+    <link href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.8</id>
+    <title>Everhood 2 v0.4.8</title>
+    <updated>2026-07-05T08:17:36+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content>&gt; [!IMPORTANT]&#13;
+&gt; While many softlocks have been fixed. Some softlocks may still occur. Some areas were untested such as Green Route 3 and many Hilbert Hotel rooms. Please bring my attention to them in Discord if they occur.&#13;
+&#13;
+&gt; [!NOTE]&#13;
+&gt; Minimum version of the APWorld is now 0.6.7.&#13;
+&gt; THE APWORLD HAS NO UPDATE FOR THIS RELEASE, IT DOES NOT NEED TO BE UPDATED.&#13;
+&#13;
+See 0.4.2 patch notes for the main changes: https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.2&#13;
+## Changes&#13;
+- Added support for "Irvine's Mailbox" located in the Time Hub.&#13;
+&#13;
+## Mod Fixes&#13;
+- When entering Marzian Year 0 again, the final cutscene area will no longer trigger, instead you will be teleported to the Cosmic Hub.&#13;
+- When going back to the main hubs, the animation of the player should be reset. Preventing the player from getting locked in the stunned animation after Marzian Year 0.&#13;
+&#13;
+## AP World Fixes&#13;
+- Fixed the Universal Tracker Implementation not having the correct amount of Power Gems needed for the Dragon.&#13;
+&#13;
+# Installation&#13;
+## Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+&gt; You can find Everhood 2's folder by finding the game in your steam library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+&#13;
+### Windows&#13;
+1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Select Everhood 2 in the list of games.&#13;
+   - If Everhood 2 does not appear, click add game manually then browse to `Everhood 2 .exe`.&#13;
+3. Click install. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+### Linux&#13;
+1. Navigate to Everhood 2 on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES="version=n,b" %command%`&#13;
+2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+   - You may need to give it permissions to execute.&#13;
+3. Select Everhood 2 in the list of games.&#13;
+    - If Everhood 2 does not appear, click add game manually then browse to `Everhood 2.exe`.&#13;
+4. Click install.&#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+## Mod Install&#13;
+&#13;
+1.Download `ArchipelagoEverhood.zip`.&#13;
+2. Head to the Everhood 2 folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.&#13;
+3. Extract the contents of the .zip file into mods. Ensure the files are not in a subfolder, this mod is not setup for that yet.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/tag/v0.4.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nepley/pcb-apworld/releases/tag/v1.2.3</id>
+    <title>Touhou Youyoumu ~ Perfect Cherry Blossom v1.2.3</title>
+    <updated>2026-07-05T12:26:02+00:00</updated>
+    <author>
+      <name>Nepley</name>
+    </author>
+    <content>- @ManDude Fix bossCounter not being reset properly between stage in normal mode when a previous stage has already been completed in a previous run&#13;
+- Fix Power Points being reset between stage in normal mode</content>
+    <link href="https://github.com/Nepley/pcb-apworld/releases/tag/v1.2.3"/>
   </entry>
 </feed>

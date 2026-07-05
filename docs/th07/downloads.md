@@ -1,9 +1,12 @@
 # Touhou Youyoumu ~ Perfect Cherry Blossom
 
 ## Latest
-- <a href="https://github.com/Nepley/pcb-apworld/releases/download/v1.2.2/th07.apworld">Latest Version (1.2.2)</a>
+- <a href="https://github.com/Nepley/pcb-apworld/releases/download/v1.2.3/th07.apworld">Latest Version (1.2.3)</a>
 
 ## All Versions
+
+#### v1.2.3
+- <a href="https://github.com/Nepley/pcb-apworld/releases/download/v1.2.3/th07.apworld">https://github.com/Nepley/pcb-apworld/releases/download/v1.2.3/th07.apworld</a>
 
 #### v1.2.2
 - <a href="https://github.com/Nepley/pcb-apworld/releases/download/v1.2.2/th07.apworld">https://github.com/Nepley/pcb-apworld/releases/download/v1.2.2/th07.apworld</a>

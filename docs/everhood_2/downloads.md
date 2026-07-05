@@ -1,9 +1,12 @@
 # Everhood 2
 
 ## Latest
-- <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.7/everhood_2.apworld">Latest Version (0.4.6r2)</a>
+- <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.8/everhood_2.apworld">Latest Version (0.4.8)</a>
 
 ## All Versions
+
+#### v0.4.8
+- <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.8/everhood_2.apworld">https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.8/everhood_2.apworld</a>
 
 #### v0.4.6r2
 - <a href="https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.7/everhood_2.apworld">https://github.com/DeamonHunter/ArchipelagoEverhood2/releases/download/v0.4.7/everhood_2.apworld</a>
