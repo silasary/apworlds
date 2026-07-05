@@ -1,9 +1,12 @@
 # Celeste (Open World)
 
 ## Latest
-- <a href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/download/v1.1.1/celeste_open_world.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/download/v1.1.2/celeste_open_world.apworld">Latest Version (1.1.2)</a>
 
 ## All Versions
+
+#### v1.1.2
+- <a href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/download/v1.1.2/celeste_open_world.apworld">https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/download/v1.1.2/celeste_open_world.apworld</a>
 
 #### v1.1.1
 - <a href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/download/v1.1.1/celeste_open_world.apworld">https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/download/v1.1.1/celeste_open_world.apworld</a>

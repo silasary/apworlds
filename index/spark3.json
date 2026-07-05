@@ -21,6 +21,20 @@
       "version_simple": "0.1.0",
       "world_version": "0.1.0a0"
     },
+    "v0.10.0-beta": {
+      "created_at": "2026-07-05T01:20:09Z",
+      "description": "# Changelog\r\n- Gimmick Rando: Gimmicks in stages can be items in the item pool\r\n- Revisited the logic for every stage, making characters and certain shop abilities logically relevant\r\n- Score Sanity is fully logically implemented\r\n- Checkpoint Sanity: Checkpoints in stages can be locations\r\n- Options to help with Combat's progressiveness\r\n  - Optional Bosses: Makes defeating the bosses no longer required to unlock the next gate\r\n  - Local Early: Combat is guaranteed to be early sphere in your own game\r\n  - Start: Start with Combat, self-explanatory\r\n- Added option to not randomize combat moves\r\n- Combined Combat and Perfect Combo. Combat is now progressive and further items give a configurable amount of combo\r\n- Made the Score Multiplier item progressive and configurable in the client\r\n- Progressive Timestop: Progressively slows down the in-game timer (configurable in the client)\r\n- Progressive Energy: Progressively regenerates energy when on the ground (configurable in the client)\r\n- Added multiple traps\r\n  - Spring Trap: Spawns a spring in the opposite direction of the player\r\n  - Zoom Trap: Moves the camera slightly in front of Spark (purely visual)\r\n  - Bald Trap: Removes Spark's hat for 30 seconds (purely visual)\r\n  - Gravity Trap: Increases gravity for 15 seconds\r\n  - Damage Trap: Damages Spark\r\n- Added a toggle for energy-using items to be relevant in logic or not\r\n- Added a toggle for characters to be relevant in logic or not\r\n- Added an option in the tracker for energy bubbles and capsules\r\n- Locations are now in Title Case\r\n- You can now hold LB/RB in the database to quickly increment/decrement range items\r\n- You can now hold the Left Stick or Dpad in the database to quickly scroll\r\n- New Command: `.whatgate <stage name>`, shows what gate a stage is in\r\n- Added tracker arrow above vehicles\r\n## Bug Fixes\r\n- Added option in client settings to avoid potential softlock with collectathon coins\r\n- Fixed Radar Scout incorrectly showing an available dash\r\n- Fixed being able to double jump with only Dash\r\n- Fixed Universal Tracker not taking into account Coin Hunt\r\n- Fixed connection errors disappearing too quickly\r\n- Fixed explore medals only sending on initial collection\r\n- Fixed generation logs getting clogged with debug prints\r\n\r\nKnown Issue: Restrictive Start if both Ability Rando and Gimmick Rando are on and no sanities are on\r\nKnown Issue: The idea to make the current logic into hard logic was made rather late into development",
+      "download_url": "https://github.com/Kylogias/Spark3-Archipelago/releases/download/v0.10.0-beta/spark3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7fd239793e2504071126bf55e2c24d26427d1db5a974bf61435b2795f4c57449",
+      "html_url": "https://github.com/Kylogias/Spark3-Archipelago/releases/tag/v0.10.0-beta",
+      "size": 33551,
+      "source_url": "https://api.github.com/repos/Kylogias/Spark3-Archipelago",
+      "tag": "v0.10.0-beta",
+      "title": "v0.10.0-beta",
+      "version_simple": "0.10.0",
+      "world_version": "0.10.0b0"
+    },
     "v0.2.0-alpha": {
       "created_at": "2026-04-22T21:30:42Z",
       "description": "# Spark 3 Archipelago v0.2.0-alpha\r\n\r\n## Changelog\r\n- Fixed a bug with double jumping near walls\r\n- Overhauled how locations and rules are internally stored\r\n- Added an option to disable Spark 2 Stages\r\n- Added a mode to help lab check requirements\r\n-  Added Coinsanity, each coin in the Collectathon stages is a check",

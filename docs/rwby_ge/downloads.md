@@ -8,7 +8,7 @@
 #### v0.1.0r2
 - <a href="https://github.com/nepcore/RwbyAP/releases/download/v0.1.1/rwby_ge.apworld">https://github.com/nepcore/RwbyAP/releases/download/v0.1.1/rwby_ge.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0r2r2
 - <a href="https://github.com/nepcore/RwbyAP/releases/download/v0.2.0-rc1/rwby_ge.apworld">https://github.com/nepcore/RwbyAP/releases/download/v0.2.0-rc1/rwby_ge.apworld</a>
 
 #### v0.1.0
