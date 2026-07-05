@@ -100,7 +100,7 @@ Here are some examples of complete check names:
 - `Chimney Canopy - Karma Flower - CC_B06`
 - `The Exterior - Echo`
 - `Undergrowth - Shelter - UG_S03`
-- `Food Quest - Red Centipede or Aquapede`
+- `Food Quest - Aquapede or Red Centipede`
 - `Passage - The Chieftain`
 - `The Wanderer - 7 pips`
 

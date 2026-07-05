@@ -6,7 +6,7 @@ A Yume Nikki-inspired game developed by P. Yoshi for Leeble Game Jam 3.
 
 
 ## Downloads
-- <a href="https://github.com/Ninjakakes/Archipelago/releases/download/j_v0.1.0/junko.apworld">Latest Version (0.1.0r2)</a>
+- <a href="https://github.com/Ninjakakes/Archipelago/releases/download/j_0.1.0/junko.apworld">Latest Version (0.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

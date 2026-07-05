@@ -8,6 +8,7 @@
   "license": null,
   "manifest_fields": [
     "authors",
+    "minimum_ap_version",
     "world_version"
   ],
   "versions": {
@@ -220,6 +221,21 @@
       "title": "v1.5.2",
       "version_simple": "1.5.2",
       "world_version": "1.5.2"
+    },
+    "v1.6.0": {
+      "created_at": "2026-07-04T21:14:28Z",
+      "description": "# See [the setup page](https://github.com/alphappy/ArchipelagoRW/blob/v1.5.0/worlds/rain_world/docs/setup_en.md) for instructions.\r\n# This release is intended to be used with [v1.6.0+ of the client](https://github.com/SaltiestSyrup/RWRandomizer/releases/tag/v1.6.0), and version 0.6.7+ of Archipelago.\r\n\r\n## New Features\r\n- Hell Spears added as a possible filler item. (c8cb5a71a6a0dabfc797d2120f34101668644113)\r\n- Rivulet's Longer Cycles item is now split into two items, Longer Cycles and Disable Five Pebbles. (071ae6357279f4fc3ab176cf6cbd1f774bc866c9)\r\n- Watcher can now optionally include Weaver Encounter checks. (846638ee96b4a87005ff5c3b065c24a6763499a6)\r\n- The Weaver ability can now be randomized, creating 4 Progressive Weaver items. (846638ee96b4a87005ff5c3b065c24a6763499a6)\r\n\r\n## Logic Fixes\r\n- Fix middle Outer Rim being considered accessible with Ripple 3. (5a65f555779cdab3d5efaf257e6dd0db0065c42b)\r\n- Fix Shattered Terrace Spinning Top check not requiring Ripplespace access. (208b7d2c1131a3e630f3120aa6e03cbe35fc9f22)\r\n- Traps with a DLC requirement will no longer generate on slots without the relevant DLC enabled. (284a3d214560f19eaacad7edeffa9d43767c8e2a)\r\n- SB_S01 now considered part of the filtration sub-region for glow logic. (09926f57d03e711cdea84959eaea41d5ca2a2e31)\r\n- Fix Ripplespace minimum requirement option not being used everywhere it should be. (17945449d38d2bad3065ce67d90c6bcd90ed51e0)\r\n\r\n## Misc Changes\r\n- Migrated most of the logic to use Rule Builder, which enables the use of /explain and similar commands in Universal Tracker. (#261)\r\n- Fix inconsistent capitalization in item names. (cf41f446387c2016d448b97613d3d20c6799ee9b)\r\n- Change how the victory condition handles Watcher goals. Weaver is now an alias of Echoes ending, and choosing True Ending for slugcats other than Watcher will be interpreted as Ascension ending. (d0ccd650deee4af3a6ba97004ce7aa999e00825a)\r\n- Fix Warp items not being hint-able with swapped region order. (671e34597f290d92658fc64d17daa1523d2078a3)\r\n- Karma flowers on the other end of Spinning Top warps are once again included in the item pool, as the client now forces them to persist. (aca21e962c33c4ab6279a65b0b8e06e51ec4bef5)",
+      "download_url": "https://github.com/alphappy/ArchipelagoRW/releases/download/v1.6.0/rain_world.apworld",
+      "has_manifest": true,
+      "hash_sha256": "34fa901a473a5e6e2a5e9930b78c60b5e29af0822d326cfbdb37c9fae097f6e9",
+      "html_url": "https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.6.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 179493,
+      "source_url": "https://api.github.com/repos/alphappy/ArchipelagoRW",
+      "tag": "v1.6.0",
+      "title": "v1.6.0",
+      "version_simple": "1.6.0",
+      "world_version": "1.6.0"
     }
   }
 }

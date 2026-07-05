@@ -57,9 +57,6 @@ You do not have to include the `{number}` in your name.
 Install the Randomizer mod by doing one of the following:
 - Download [from the Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3323349183).
   - Steam will automatically keep this updated to the version available on the Workshop by default.
-  However, this version may not necessarily be the newest available version of the mod.
-  The version here could lag behind the most recent release on GitHub
-  to avoid disrupting existing running multiworlds.
 - Download from GitHub.
   1. Download a release [from GitHub](https://github.com/SaltiestSyrup/RWRandomizer/releases).
      If you downloaded a specific release of the APWorld in step 2,
@@ -67,8 +64,9 @@ Install the Randomizer mod by doing one of the following:
   2. Unzip it and place the `rwrandomizer` folder in your RW folder at
      `Rain World\RainWorld_Data\StreamingAssets\mods`.
 
-If you are subscribed to the mod on the Workshop and have a non-Workshop version in the `mods` folder,
-do not activate both versions at the same time.
+Do not have both the Steam Workshop version and the manual installation installed at the same time,
+as some things may behave unexpectedly. If you change between types of installations, 
+you will have to disable and re-enable the mod in Remix for it to work properly.
 Note also that each version keeps its own save data. If you are manually updating from an older client 
 version you may want to manually transfer the save data in the mod files.
 
@@ -76,9 +74,12 @@ version you may want to manually transfer the save data in the mod files.
 
 Configure Rain World and your mods by doing the following:
 1. If you are running Linux (which includes Steam Deck) and have not used Remix mods before:
-   1. Right-click on Rain World in the library and select *Properties...*
-   2. Open the *General* tab.
-   3. In the `LAUNCH OPTIONS` box, add `WINEDLLOVERRIDES="winhttp=n,b" %command%`.
+   1. Right-click on Rain World in the library and select **Properties...**
+   2. Open the **General** tab.
+   3. In the **LAUNCH OPTIONS** box, add `WINEDLLOVERRIDES="winhttp=n,b" %command%`.
+   4. Open the **Compatibility** tab.
+   5. Check "Force the use of a specific Steam play compatibility tool".
+   6. Select Proton 8.0-5 from the drop-down. (This avoids a suspected Proton incompatibility with the mod)
 2. (Re)start Rain World.
 3. Go to the Remix menu and enable the following:
    1. Rain World Remix

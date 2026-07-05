@@ -3,9 +3,12 @@
 The majority of Remix mods will work with the Randomizer mod and Archipelago,
 but there are a few exceptions and caveats.
 Generally, mods that may be problems are:
-- those which move objects or events around, even if not randomly.
-  - This includes some custom slugcat mods, which may have their own alternate settings files for regions and rooms.
-- those which change existing connections between rooms or regions.
+- Any custom campaigns or regions
+- Those which move objects or events around, even if not randomly.
+- Those which change existing connections between rooms or regions.
+- Custom slugcats can be played in a vanilla campaign using Jolly Co-op, 
+as long as the slugcat is able to reach all the campaign's required checks.
+- Mods that significantly modify the game such as Rain Meadow or Bingo are not compatible. 
 
 Compatibility may change over time.
 Incompatible mods may be supported in future versions.
@@ -17,7 +20,7 @@ Mods not listed here are probably compatible.
 | More Slugcats Expansion (Downpour) | Full          | Make sure that the `Game state` setting in your player YAML file matches whether you have More Slugcats Expansion enabled. |
 | The Watcher                        | N/A           | Archipelago does not currently work in Watcher's campaign, but simply having hte mod enabled is fine.                      |
 | Echo Room Randomizer               | Incompatible  |                                                                                                                            |
-| Enemy Randomizer                   | Weak          | Food quest and passage check logic relies on knowing where creatures can be found.                                         |
+| Enemy Randomizer                   | Weak          | Food quest and passage check logic relies on knowing where creatures can be found. These checks will have broken logic.    |
 | Gate Karma Randomizer              | Incompatible  |                                                                                                                            |
 | Item Randomizer                    | Incompatible  |                                                                                                                            |
 | Iterator Room Randomizer           | Incompatible  |                                                                                                                            |
@@ -25,4 +28,5 @@ Mods not listed here are probably compatible.
 | Region Randomizer                  | Incompatible  |                                                                                                                            |
 | Room Randomizer                    | Weak          | Certain intra-region logic is broken, regardless of settings.  It may or may not cause a softlock.                         |
 | Slugcat Randomizer                 | Weak          | Some checks can only be done by certain slugcats.                                                                          |
+|                                    |               |                                                                                                                            |
 
