@@ -1,9 +1,12 @@
 # SMW: Spicy Mycena Waffles
 
 ## Latest
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.9/waffles.apworld">Latest Version (1.3.9)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.10/waffles.apworld">Latest Version (1.3.10)</a>
 
 ## All Versions
+
+#### v1.3.10
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.10/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.10/waffles.apworld</a>
 
 #### v1.3.9
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.9/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.9/waffles.apworld</a>

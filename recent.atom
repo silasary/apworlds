@@ -2,49 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-06T00:37:31.516483+00:00</updated>
+  <updated>2026-07-06T07:35:18.064102+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.1</id>
-    <title>Stardew Valley v8.0.0</title>
-    <updated>2026-07-02T20:23:20+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Exempt-Medic (Proofreading)</name>
-    </author>
-    <content>- Fixed Decoupled Chaos Entrances not decoupling properly</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.2</id>
-    <title>Stardew Valley v8.0.0r2</title>
-    <updated>2026-07-02T20:36:10+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Exempt-Medic (Proofreading)</name>
-    </author>
-    <content>- Made the QoL Return Scepter warp to house only functional after you found your bed</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR4</id>
     <title>The Grinch v1.6.0r4</title>
@@ -768,7 +730,7 @@ See 0.4.2 patch notes for the main changes: https://github.com/DeamonHunter/Arch
   </entry>
   <entry>
     <id>https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.3.2</id>
-    <title>Phoenotopia: Awakening v0.3.0r2</title>
+    <title>Phoenotopia: Awakening v0.3.0r2r2</title>
     <updated>2026-07-05T13:46:36+00:00</updated>
     <author>
       <name>Lenamphy</name>
@@ -975,7 +937,7 @@ Bugfixes</content>
   </entry>
   <entry>
     <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.8</id>
-    <title>Stardew Valley v8.0.0r3</title>
+    <title>Stardew Valley v8.0.0r3r2</title>
     <updated>2026-07-05T19:54:49+00:00</updated>
     <author>
       <name>Kaito Kid</name>
@@ -1011,12 +973,16 @@ Bugfixes</content>
 Changes have been made to the sm64ex build since the last release. Technically backwards compatibility should exist both ways, but you should rebuild to latest sm64ex:&#13;
 - BBH Second Floor and Secret Room Vanish Cap block location checks have been reversed from their incorrect assignments.&#13;
 - VCUTM text on the Levels menu is no longer overlapping other text.&#13;
-- Now accepts hat color assignment. Hat will continue using shirt color for games generated before 0.1.2.</content>
+- Now accepts hat color assignment. Hat will continue using shirt color for games generated before 0.1.2.&#13;
+&#13;
+Hotfix for sm64ex:&#13;
+- DDD Poles item will not spawn Bowser's Sub.&#13;
+- The Bowser door blocking the big hole in DDD will spawn by default and disappear when the Poles item is obtained.</content>
     <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.1.2"/>
   </entry>
   <entry>
     <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.9</id>
-    <title>Stardew Valley v8.0.0r2</title>
+    <title>Stardew Valley v8.0.0r2r2r2</title>
     <updated>2026-07-05T22:21:09+00:00</updated>
     <author>
       <name>Kaito Kid</name>
@@ -1094,5 +1060,52 @@ Thanks a lot to [Evoker](https://github.com/Ung-W) for making a [PopTracker](htt
 * Trade sequence might be broken with collect? Didn't test lol.&#13;
 * Apparently saving after completing Kastle KAOS breaks the save? The client get everything back to you anyway...</content>
     <link href="https://github.com/TheLX5/Archipelago/releases/tag/toluca-v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.10</id>
+    <title>SMW: Spicy Mycena Waffles v1.3.10</title>
+    <updated>2026-07-06T02:19:34+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <content>luigi&#13;
+## Info &#13;
+* [Information](https://thelx5.github.io/smw/)&#13;
+## Changes&#13;
+* Luigi Physics&#13;
+	* Option to enable the feature is now visible&#13;
+	* Allows you to play with SMA2's Luigi Physics (floaty, somewhat slow)&#13;
+	* DOES NOT ALTER LOGIC IN ANY FORM. And never will. Feel free to get out of logic.&#13;
+	* Fixed getting stuck in castle cutscenes&#13;
+* Removed castle destruction cutscenes&#13;
+* Fixed the rare case where two exits can lead to the same entrance&#13;
+* Special World Clear item is now considered "deprioritized"&#13;
+* Too lazy to update the credits version number</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.10</id>
+    <title>Stardew Valley v8.0.0r2</title>
+    <updated>2026-07-06T03:47:10+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Exempt-Medic (Proofreading)</name>
+    </author>
+    <content>- Allow using `!!sleep end of month`&#13;
+- Prevent events from starting *during* a multisleep. This fixes one of my longstanding nemesis, the grandpa bug!&#13;
+- When waking up homeless, but a cutscene is playing, allow the player to stay in the house for the duration of the cutscene. This prevents bugs related to warping the player to the farm during a cutscene. This fixes the new grandpa bug!&#13;
+- Prevent the makeover trap from deleting pans being worn on head</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.10"/>
   </entry>
 </feed>
