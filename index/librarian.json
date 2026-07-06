@@ -90,6 +90,21 @@
       "version_simple": "1.0.4",
       "world_version": "1.0.4"
     },
+    "1.1.0": {
+      "created_at": "2026-07-06T14:53:45Z",
+      "description": "## Librarian-AP v1.1.0\r\n\r\n### What's new\r\n\r\n**The crash is fixed.** The long-standing intermittent native crash is resolved \u2014 the mod's Archipelago client,\r\nitem application, and all book/shelf warding now run on a single thread, and shelf warding is safe even while the\r\nworld is still streaming in.\r\n\r\n**Book hiding is completely working.** Locked books stay hidden cleanly, and the old fences in front of locked\r\nshelves are gone \u2014 replaced by a status light above each section:\r\n\r\n- **Red** \u2014 no shelves in that section unlocked yet\r\n- **Yellow** \u2014 some shelves unlocked\r\n- **Off** \u2014 all shelves unlocked\r\n\r\nAn at-a-glance read of your progress, with nothing blocking the view of the shelves.\r\n\r\n**A ton of bug fixes**, including:\r\n\r\n- **Wrong checks being sent** \u2014 completions now map to the correct location/series.\r\n- **Checks sent when books were out of order** \u2014 a row/shelf no longer counts as complete unless its books are\r\n  actually in the right order (no more false completions).\r\n- **General instability** \u2014 crashes and hitches across connect, item bursts, and shelf-walking.\r\n\r\n### Compatibility\r\n\r\nGame builds **1.0.8, 1.0.9, and 1.0.11** are recognized as tested. \r\n\r\n### Install\r\n\r\n- **Game side:** extract the zip and drop the `Librarian/` folder into your Steam install (overwrite when\r\n  prompted), or just replace `\u2026/Librarian/Binaries/Win64/Mods/Librarian-AP/Scripts/`.\r\n- **Server side:** drop `librarian.apworld` into your Archipelago `custom_worlds/`.\r\n- Existing YAML and seeds keep working \u2014 no regen. Confirm the title screen shows **`v1.1.0`**.\r\n\r\n### Known issues\r\n\r\n- **Return-to-menu freeze (rare).** A heavy shelf-warding pass right before returning to the menu can briefly hang\r\n  the Menu\u2192Continue transition. It is a transient freeze, not a crash. A follow-up.\r\n- **\"Invisible when held\" book (rare, random).** Throw it out of bounds (it returns visible), or reload.\r\n\r\n### If you crash \u2014 please send logs\r\n\r\n`Mods/Librarian-AP/crash_trace.log` (the breadcrumb ledger \u2014 its tail names the last mod op) plus the last ~200\r\nlines of `\u2026/Win64/UE4SS.log`, and one line on what you were doing. Confirm the trace header reads **`mod=1.1.0`**.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1b99a2cd8af906e5d33836645deaf3de893fd6ec30b23ef10fad4861f852a3b4",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 51165,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.0",
+      "title": "Librarian-AP v1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
+    },
     "1.1.0-beta1": {
       "created_at": "2026-06-01T13:34:35Z",
       "description": "**Librarian-AP 1.1.0 \u2014 Beta 1**\r\n\r\nFirst beta of v1.1.0 for the test group. Please report any bugs or crashes (see the beta testing guide).\r\n\r\n**What's new**\r\n- Shelf section unlocks now correctly re-enable book placement on the unlocked bookcases.\r\n- Locked (warded) book series are hidden in the central pile and revealed as you unlock them.\r\n- Stability and cleanup fixes.\r\n\r\n**Install**\r\n- `Librarian-AP_v1.1.0-beta1.zip` \u2014 extract the `Librarian/` folder into your game install. See `INSTALL.txt` inside.\r\n- `librarian.apworld` \u2014 Archipelago **host only**; drop into `custom_worlds/`.\r\n\r\n**Known beta quirk**\r\n- A locked series may occasionally still show in the central pile (cosmetic \u2014 you still can't pick it up).\r\n- An unlocked series may occasionally be invisible after looking at it.  This fixes itself after the next received series unlock.",
