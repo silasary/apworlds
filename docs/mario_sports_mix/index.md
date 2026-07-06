@@ -6,7 +6,7 @@ land and conquer all the sports!
 
 
 ## Downloads
-- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v1.1.0/mario_sports_mix.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v1.1.1/mario_sports_mix.apworld">Latest Version (1.1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

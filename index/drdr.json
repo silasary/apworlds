@@ -340,6 +340,21 @@
       "title": "1.0.1 Release",
       "version_simple": "1.0.1",
       "world_version": "1.0.1.post2"
+    },
+    "1.0.2": {
+      "created_at": "2026-07-05T19:33:13Z",
+      "description": "## Highlights\r\n\r\n**The big one:** the crash when leaving 10 or more party members behind in another area is fixed. Large parties are fully supported \u2014 the cause was the other-map HP widget overflowing its vanilla-sized pool after loading screens and cutscenes. While your party is scattered, the widget shows up to 8 members and restores automatically when you regroup.\r\n\r\n## Fixes\r\n\r\n- **Party crash** \u2014 no more crashing after loading screens/cutscenes when 10+ party members were left in another zone.\r\n- **The \"Burt bug\"** \u2014 survivors spawning dead or not spawning at all are now detected and repaired automatically on area transitions. No more console commands needed.\r\n- **Extra PP locations** \u2014 \"Use N Microwaves/Stoves/Clothing Racks\" progress no longer resets between play sessions.\r\n- **Unsendable locations** \u2014 fixed four location checks that could never send due to name mismatches: *Meet back at the Security Room at 11am day 3*, *Meet back at the Security Room at 5pm day 3*, *Witness Special Forces 10pm day 3*, and a redundant *Kill Kent on day 3* sender.\r\n- **Connection resilience** \u2014 all run tracking (checks, scoops, stickers, stats) now lives in a single file per seed and resyncs with the server on every connect. Disconnecting mid-session can no longer permanently miss locations.\r\n- **\"Failed to Save\" diagnosed** \u2014 Steam limits this game to roughly **200 MB of save data total**, counting your vanilla saves *and* every AP seed's save folder. See the README's new [Save Data and the \"Failed to Save\" Error](../../blob/main/README.md#save-data-and-the-failed-to-save-error) section for cleanup steps. The mod now captures diagnostics automatically when a save fails, and warns you loudly if you connect mid-game (which breaks saving until the game is restarted).\r\n\r\n## Updating\r\n\r\n1. Replace the contents of `reframework/autorun` with the new mod files.\r\n2. Replace `drdr.apworld` in your Archipelago `custom_worlds` folder.\r\n3. Existing progress migrates automatically the first time each seed connects \u2014 no manual steps.\r\n\r\nRecommended: disable Steam Cloud for Dead Rising Deluxe Remaster (Properties \u2192 General) while playing AP \u2014 details in the README.",
+      "download_url": "https://github.com/Str8UpWHITE64/DRAP/releases/download/1.0.2/drdr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a5b9371d3e8b70ac7a864b3bf2343724e07cb72027a2c061f893e6331682f771",
+      "html_url": "https://github.com/Str8UpWHITE64/DRAP/releases/tag/1.0.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 457276,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/DRAP",
+      "tag": "1.0.2",
+      "title": "1.0.2 Release",
+      "version_simple": "1.0.2",
+      "world_version": "1.0.2"
     }
   }
 }

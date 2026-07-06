@@ -8,7 +8,7 @@ games before playing this one, Trails in the Sky FC / SC.
 
 
 ## Downloads
-- <a href="https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/0.1.7/tits_the_3rd.apworld">Latest Version (0.1.7)</a>
+- <a href="https://github.com/Archipelago-Trails-in-the-Sky-the-3rd/Archipelago-Trails-in-the-Sky-the-3rd/releases/download/0.1.7/tits_the_3rd.apworld">Latest Version (0.1.7.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

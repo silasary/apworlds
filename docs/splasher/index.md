@@ -4,7 +4,7 @@ Splasher is a 2D action-platformer ...
 
 
 ## Downloads
-- <a href="https://github.com/Frisk202020/Archipelago/releases/download/Alpha/splasher.apworld">Latest Version (0.0.5.post2)</a>
+- <a href="https://github.com/Frisk202020/Archipelago/releases/download/v.0.0.6/splasher.apworld">Latest Version (0.0.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -15,3 +15,6 @@ Splasher is a 2D action-platformer ...
 - <a href="setup_en">English</a>
 - <a href="setup_fr">French</a>
 
+## Other Documentation files
+- <a href="feedback_en">feedback_en</a>
+- <a href="feedback_fr">feedback_fr</a>

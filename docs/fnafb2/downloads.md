@@ -8,6 +8,9 @@
 #### v0.4.3r2
 - <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.4/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.4/fnafb2.apworld</a>
 
+#### v0.4.3r2
+- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.5/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.5/fnafb2.apworld</a>
+
 #### v0.4.3
 - <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.3/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.3/fnafb2.apworld</a>
 

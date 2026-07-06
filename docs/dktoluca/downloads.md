@@ -1,9 +1,12 @@
 # Donkey Kong Toluca
 
 ## Latest
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.0/dktoluca.apworld">Latest Version (1.0.0r2)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.1/dktoluca.apworld">Latest Version (1.0.1)</a>
 
 ## All Versions
+
+#### v1.0.1
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.1/dktoluca.apworld">https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.1/dktoluca.apworld</a>
 
 #### v1.0.0r2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.0/dktoluca.apworld">https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.0/dktoluca.apworld</a>

@@ -4,7 +4,7 @@ monke
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.0/dktoluca.apworld">Latest Version (1.0.0r2)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.1/dktoluca.apworld">Latest Version (1.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
