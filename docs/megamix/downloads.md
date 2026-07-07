@@ -1,9 +1,12 @@
 # Hatsune Miku Project Diva Mega Mix+
 
 ## Latest
-- <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.5.0B/megamix.apworld">Latest Version (1.5.0b0)</a>
+- <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.5.1B/megamix.apworld">Latest Version (1.5.1b0)</a>
 
 ## All Versions
+
+#### v1.5.1b0
+- <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.5.1B/megamix.apworld">https://github.com/Cynichill/DivaAPworld/releases/download/1.5.1B/megamix.apworld</a>
 
 #### v1.5.0b0
 - <a href="https://github.com/Cynichill/DivaAPworld/releases/download/1.5.0B/megamix.apworld">https://github.com/Cynichill/DivaAPworld/releases/download/1.5.0B/megamix.apworld</a>
