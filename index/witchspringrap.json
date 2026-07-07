@@ -158,6 +158,20 @@
       "title": "0.3.4",
       "version_simple": "0.3.4",
       "world_version": "0.3.4"
+    },
+    "0.3.6": {
+      "created_at": "2026-06-26T06:20:12Z",
+      "description": "Fixing logic error for varying quests/bestiary/battlesanities and a couple other glaring problems that didn't come up prior!\r\n\r\n### Logic / Progression\r\n- **Reaching Chapter 3 now requires the Chaos Stone** it always did, but logic didn't think so. \r\n- Lalaque Forest Battles, 7, 8, 10, 11, 12, 14. Lalaque Mine Battles 24, 28 now require the **Chaos Stone**\r\n- **Quest - Thorough Exorcism** now requires the **Chaos Stone** and **Lalaque Mine Key**\r\n- Sera's Dress was showing in logic way too early. My mistake, I was confusing the Chapter 6 dress with the Chapter 2 dress in the back-end. \r\n- **Laoba Mountain** all checks here now come into logic later in Chapter 2. You can still OOL them earlier if you wish, but they will wait for **Boar Captain's Tooth and Chaos Stone** before being considered in logic. \r\n\r\n### Generation Fixes\r\n- Apparently some battles were still generating locations, even if they didn't exist within the goal chapter. Not sure how I missed that, but cleaned that up. \r\n- This also happened with the chest in Fox Den\r\n- Logically, Quest - Barrier Wall was always unreachable due to how Dispelling Stones was written in the item pool. Corrected this as well.\r\n\r\n### Newly Known Issues\r\n- **Even Better Magic** can still soft-lock and cause some issues. I'm working on fixes for this, but please try to rush crafting the 4-orb Flame Circle as soon as you can. If it lands on the second spell page there's problems completing the tutorial. Currently working on ways to skip tutorials, if I can get this functional hopefully Chapter 1 becomes more streamlined. \r\n\r\n## As always make sure you safe often, and I do not recommend setting a goal above Chapter 3. There are some untested features in the later chapters because I have not had a lot of time lately due to real life stuff going on.",
+      "download_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.6/witchspringrap.apworld",
+      "has_manifest": false,
+      "hash_sha256": "f308e6fe25f10d4c6a22e5a4deacd032967c0a8d27978c69a83dffeaf15492dc",
+      "html_url": "https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/tag/0.3.6",
+      "size": 48345,
+      "source_url": "https://api.github.com/repos/LeiAfkpuz/WitchSpring-R-Archipelago",
+      "tag": "0.3.6",
+      "title": "v0.3.6",
+      "version_simple": "0.3.6",
+      "world_version": "0.3.6"
     }
   }
 }
