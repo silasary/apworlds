@@ -2,29 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-08T12:40:13.680003+00:00</updated>
+  <updated>2026-07-08T18:40:27.712657+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.21.0</id>
-    <title>Metroid Dread v0.21.0</title>
-    <updated>2026-07-04T14:08:20+00:00</updated>
-    <author>
-      <name>maxdietz</name>
-    </author>
-    <author>
-      <name>Randovania Dread contributors</name>
-    </author>
-    <content>## What's Changed
-* chore(release): v0.20.1 by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/153
-* fix(ut): ASCII arrow + drill into blocked regions in /explain by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/154
-
-
-**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.20.1...v0.21.0</content>
-    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.21.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.0</id>
     <title>Nine Sols v0.6.0</title>
@@ -1040,5 +1022,38 @@ Changes:&#13;
     * Mainbrace Mayhem Bonus 1 &amp; Banana Bunch 1 no longer requires Hover or Cartwheel when using Diddy&#13;
     * Banana Coin 1 &amp; 2 in Web Woods uses loose logic</content>
     <link href="https://github.com/TheLX5/Archipelago/releases/tag/dkc2-v3.1.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.13</id>
+    <title>Stardew Valley v8.0.13</title>
+    <updated>2026-07-08T14:30:32+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Exempt-Medic (Proofreading)</name>
+    </author>
+    <content>## Mod&#13;
+- Fixed the Junimo Kart leaderboards potentially crashing when NPCs don't exist&#13;
+- Implemented Reverse Trap&#13;
+&#13;
+## Apworld&#13;
+- Fixed name of `Meet Caroline` location. The typo made it not generate this location at all&#13;
+- Fixed the biggest bug ever™. All other_requirements on sources were getting lost in DR&#13;
+- Added missing NPC existence rules to various quests and cutscenes&#13;
+- Added more sanitization to fish DR, notably night market fish in winter, island fish in summer, etc.&#13;
+- Fixed Marlon and Gunther rules when the Jasper mod is active and they turn real&#13;
+- Remove the robin money-making rule when using unshuffled tools because it often turned recursive&#13;
+- Slight optimization of season rules&#13;
+- Always randomize entrances for obelisks and warp totems, instead of relying on endgame locations being enabled, since the items are always in the pool&#13;
+- Make sure crab pot fish that turn into fishing rod fish, roll a low difficulty if difficulties aren't DRed&#13;
+- Added Reverse Trap</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.13"/>
   </entry>
 </feed>
