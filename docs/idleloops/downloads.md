@@ -1,4 +1,4 @@
-# None
+# Idle Loops
 
 ## Latest
 - <a href="https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.1/idleloops.apworld">Latest Version (0.4.1)</a>

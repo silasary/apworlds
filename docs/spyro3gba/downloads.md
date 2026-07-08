@@ -1,4 +1,4 @@
-# None
+# Spyro: Attack of the Rhynocs
 
 ## Latest
 - <a href="https://github.com/CDRomatron/Archipelago/releases/download/s3-0.1/spyro3gba.apworld">Latest Version (3.post0)</a>

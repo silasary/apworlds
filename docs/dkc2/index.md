@@ -6,7 +6,7 @@ to rescue Donkey Kong from the clutches of Kaptain K. Rool.
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.3/dkc2.apworld">Latest Version (3.1.3)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/dkc2-v3.1.4/dkc2.apworld">Latest Version (3.1.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

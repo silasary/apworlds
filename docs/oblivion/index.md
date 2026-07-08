@@ -9,7 +9,7 @@ from the multiworld.
 
 
 ## Downloads
-- <a href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld">Latest Version (0.5.0.post4)</a>
+- <a href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.1/oblivion.apworld">Latest Version (0.5.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

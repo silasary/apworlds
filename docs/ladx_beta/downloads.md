@@ -1,9 +1,12 @@
 # Links Awakening DX Beta
 
 ## Latest
-- <a href="https://github.com/threeandthreee/Archipelago/releases/download/13.4.2/ladx_beta.apworld">Latest Version (13.4.2)</a>
+- <a href="https://github.com/threeandthreee/Archipelago/releases/download/13.4.3/ladx_beta.apworld">Latest Version (13.4.3)</a>
 
 ## All Versions
+
+#### v13.4.3
+- <a href="https://github.com/threeandthreee/Archipelago/releases/download/13.4.3/ladx_beta.apworld">https://github.com/threeandthreee/Archipelago/releases/download/13.4.3/ladx_beta.apworld</a>
 
 #### v13.4.2
 - <a href="https://github.com/threeandthreee/Archipelago/releases/download/13.4.2/ladx_beta.apworld">https://github.com/threeandthreee/Archipelago/releases/download/13.4.2/ladx_beta.apworld</a>
