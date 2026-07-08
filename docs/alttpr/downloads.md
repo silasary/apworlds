@@ -1,9 +1,12 @@
 # The Legend of Zelda: A Link to the Past
 
 ## Latest
-- <a href="https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.2/alttpr.apworld">Latest Version (1.2.2)</a>
+- <a href="https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.3/alttpr.apworld">Latest Version (1.2.2r2)</a>
 
 ## All Versions
+
+#### v1.2.2r2
+- <a href="https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.3/alttpr.apworld">https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.3/alttpr.apworld</a>
 
 #### v1.2.2
 - <a href="https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.2/alttpr.apworld">https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.2/alttpr.apworld</a>

@@ -8,6 +8,9 @@
 #### v0.3.0r2
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld</a>
 
+#### v0.3.0r2r2
+- <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld</a>
+
 #### v0.3.0
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.3.0/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.3.0/tboir.apworld</a>
 

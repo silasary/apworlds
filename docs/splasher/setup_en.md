@@ -41,6 +41,13 @@ In order to play on *archipelago.gg* (or most other servers on the internet), yo
 
 For hosting this Archipelago, you need to install the [apworld](https://github.com/Frisk202020/Archipelago/releases/) (simply double click on it, or install it with the launcher).
 
+### Tools
+
+As this game currently doesn't have in-game Archipelago messages, it is recommended to use external tools to guide your playthrough. 
+
+- For the tracker, I definitely recommend using *Evoker*'s [PopTracker](https://github.com/Ung-W/Splasher-AP-Poptracker/releases/). Universal Tracker is not fully compatible with this world (some issues, mainly with progressive powers, has been observed).
+- For the client, you can go with the native text client but I'd rather recommend this [web client](https://drawesome4333.github.io/ap-tracker/).
+
 ## Feedback
 
 Since this world is in early development, feedback about your playthrough would be very appreciated (especially if encountering issues) ! You can contact me :

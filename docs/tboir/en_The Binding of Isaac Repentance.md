@@ -1,7 +1,7 @@
 # The Binding of Isaac: Repentance
 ## Where is the settings page?
 ~~The [player settings](/games/The%20Binding%20of%20Isaac%20Repentance/player-options) page for this game contains all the options you need to configure and export a config file.~~  
-... if the game ever gets core-verified that is. For now you'll have to generate a yaml template via the Archipelago Launcher or download it from the release page.
+... if the game ever gets core-verified that is. For now please use the Options Creator in your Archipelago Launcher.
 
 ## What does randomization do to this game?
 The Binding of Isaac: Repentance is already random. The Archipelago mod mostly implements how you can progress throughout your run.  
@@ -58,6 +58,21 @@ There are 5 categories of items you can receive:
    These include all sorts of pickups like random hearts, bombs, coins, etc. and are what you'll receive most frequently.
 4. [Optional] Traps
 5. [Optional] 1-Ups
+
+### What Item and Location groups do exist for this?
+#### Item Groups
+* Unlocks
+* Items
+* Junk
+* Traps
+* Stat Ups
+
+#### Location Groups
+* Rooms
+* Boss Rewards
+* AP Items
+* [stage] (e.g. "Basement" would contain all checks on Basement)
+* [room]s (e.g. "Secret Rooms" would contain all secret rooms)
 
 ### What happens to the Items I received when I start a new run?
 Unlocks and 1-Ups are always retained and re-given on each run once you have received them.  
