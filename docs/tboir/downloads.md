@@ -1,9 +1,12 @@
 # The Binding of Isaac Repentance
 
 ## Latest
-- <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld">Latest Version (0.3.0r2)</a>
+- <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.1/tboir.apworld">Latest Version (0.4.1)</a>
 
 ## All Versions
+
+#### v0.4.1
+- <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.1/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.1/tboir.apworld</a>
 
 #### v0.3.0r2
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld</a>

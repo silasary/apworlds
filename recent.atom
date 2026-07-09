@@ -2,46 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-08T18:40:27.712657+00:00</updated>
+  <updated>2026-07-09T00:40:36.097918+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.0</id>
-    <title>Nine Sols v0.6.0</title>
-    <updated>2026-07-04T16:03:25+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
-&#13;
-- **Skill Tree Randomization** adds 27 locations for the skill tree nodes purchaseable with skill points, and 19 items for the skills themselves.&#13;
-	- An Experience Multiplier setting has been added to the F1 mod settings. For now I'm not making it a separate mod.&#13;
-	- Note that Swift Runner logic has not been implemented yet. For medium/ledge_storage players, the Swift Runner skill will still be auto-unlocked at the start, so the new Swift Runner item will feel redundant for now.&#13;
-	- The logic for when you'll be expected to "check" a skill tree node is similar to shop rando: They're split into low, medium and high cost groups (based on a node's "total cost" including prerequisite nodes), and these three groups become in logic as you gain access to more of the map.&#13;
-	- More details can be found in the `randomize_skill_tree` option description.&#13;
-- Updated Universal Tracker map pages:&#13;
-	- Added a "skill_tree" page for obvious reasons&#13;
-	- Reordered UT map pages. Now the first 3 pages in the dropdown are world_map, four_seasons_pavilion, and skill_tree, *and* all of the remaining pages are finally in alphabetical order.&#13;
-- `vanilla` logic: Previously, "GoS (Entry) - Root Node" to "Coffin" was incorrectly in logic with only Charged Strike. CS-dash is viable here, but that trick should only be available on medium or higher.&#13;
-- The `first_root_node` values have been properly alphabetized, including the option description's list of nodes needing early placements.</content>
-    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nepcore/RwbyAP/releases/tag/v0.2.0-rc1</id>
-    <title>RWBY Grimm Eclipse v0.1.0r2r2</title>
-    <updated>2026-07-04T19:52:42+00:00</updated>
-    <author>
-      <name>nepcore</name>
-    </author>
-    <content>* Added support of online co-op&#13;
-* Added death link&#13;
-* Added an option to change how many characters are unlocked at the start&#13;
-&#13;
-To play together with others simply have every player connect to the same archipelago slot from the archipelago entry in the main menu.</content>
-    <link href="https://github.com/nepcore/RwbyAP/releases/tag/v0.2.0-rc1"/>
-  </entry>
   <entry>
     <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.34</id>
     <title>Universal Tracker v0.2.34</title>
@@ -1055,5 +1020,27 @@ Changes:&#13;
 - Make sure crab pot fish that turn into fishing rod fish, roll a low difficulty if difficulties aren't DRed&#13;
 - Added Reverse Trap</content>
     <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.13"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.2</id>
+    <title>pokemon_stadium v0.6.2</title>
+    <updated>2026-07-08T18:37:36+00:00</updated>
+    <author>
+      <name>jciii91</name>
+    </author>
+    <content>Bugfix for Prime Cup rental list. Pika Cup rental list in `constants` had Pokémon included that should not have been, which was causing the patcher to overwrite some of the Prime Cup list and break it.&#13;
+&#13;
+Fixed the gender symbol bug for the Nidorans.</content>
+    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NaveTK/Archipelago/releases/tag/v0.4.1</id>
+    <title>The Binding of Isaac Repentance v0.4.1</title>
+    <updated>2026-07-08T21:06:18+00:00</updated>
+    <author>
+      <name>NaveTK</name>
+    </author>
+    <content>Fuzzer, manifest, determinism and UT compatibility fixes</content>
+    <link href="https://github.com/NaveTK/Archipelago/releases/tag/v0.4.1"/>
   </entry>
 </feed>
