@@ -1,9 +1,12 @@
 # Chibi Robo
 
 ## Latest
-- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/1.2.3/chibi_robo.apworld">Latest Version (1.2.3)</a>
+- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/1.2.3.1/chibi_robo.apworld">Latest Version (1.2.3.1)</a>
 
 ## All Versions
+
+#### v1.2.3.1
+- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/1.2.3.1/chibi_robo.apworld">https://github.com/EverydaySimpleDev/Archipelago/releases/download/1.2.3.1/chibi_robo.apworld</a>
 
 #### v1.2.3
 - <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/1.2.3/chibi_robo.apworld">https://github.com/EverydaySimpleDev/Archipelago/releases/download/1.2.3/chibi_robo.apworld</a>

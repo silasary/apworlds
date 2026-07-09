@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/Hallstead/AP-Pokeclicker/releases/download/Apworld-v0.1.1/pokeclicker.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/Hallstead/AP-Pokeclicker/releases/download/Apworld-v0.1.2/pokeclicker.apworld">Latest Version (0.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
