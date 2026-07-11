@@ -1,6 +1,7 @@
 # Blue Fire
 
-
+Blue Fire is a soulslike exploration platformer featuring a fast-paced combat system,
+challenging boss fights, and an intricate world to explore.
 
 
 ## Downloads
