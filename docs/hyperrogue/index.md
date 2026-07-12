@@ -4,7 +4,7 @@ HyperRogue game desc.
 
 
 ## Downloads
-- <a href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/download/v0.2.0/hyperrogue.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/RealMelwei/hyperrogue_archipelago/releases/download/v0.2.1/hyperrogue.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
