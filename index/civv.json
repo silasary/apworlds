@@ -123,6 +123,20 @@
       "version_simple": "0.10.5",
       "world_version": "0.10.5"
     },
+    "v0.10.6": {
+      "created_at": "2026-07-13T15:34:42Z",
+      "description": "**Changes/Improvements**:\r\n- DeathLink effect is now also stated in DeathLink notification in-game.\r\n\r\n**Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.10.5...v0.10.6",
+      "download_url": "https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.6/civv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8aa9686c9bcb5c850c272a7b85668124cbd1ed66516fba66a4f6694a90a65a91",
+      "html_url": "https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.6",
+      "size": 455806,
+      "source_url": "https://api.github.com/repos/1313e/Civ-V-AP-World",
+      "tag": "v0.10.6",
+      "title": "APWorld v0.10.6",
+      "version_simple": "0.10.6",
+      "world_version": "0.10.6"
+    },
     "v0.2.0": {
       "created_at": "2025-07-14T15:47:43Z",
       "description": "NOTE: The APMod was also updated in this release, so please make sure to use the new version.\r\n\r\n**General**:\r\n- Refactored the entire code base (both APWorld and APMod) to follow a modular fashion, allowing me to implement new features much more rapidly now.\r\n\r\n**Changes/Improvements**:\r\n- Items and locations now have their type prefixed to their names (this is mostly for future updates where I can add more types besides just technologies, without causing name clashing).\r\n- Some small logic that was still remaining has now been removed entirely as it was faulty.\r\n- The client now has a proper description in the AP Launcher. :)\r\n- Some changes were made to the logs of the client that allows me to more easily debug issues if they arise.\r\n- Reduced amount of pointless communication between the game and the client to basically zero, reducing desync chances and improving responsiveness.\r\n    - The only desync issue that still persists is when you tab out of the game; wait for a while (I believe at least 5 minutes); close the client; tab back into the game; start up the client again. The game will refuse to connect and the only way to make it connect is to go back to the main menu and load the game again.\r\n\r\n**Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.1.4...v0.2.0",

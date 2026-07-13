@@ -134,6 +134,34 @@
       "title": "v2.6.0",
       "version_simple": "2.6.0",
       "world_version": "2.6.0"
+    },
+    "v2.7.0": {
+      "created_at": "2026-07-01T11:17:35Z",
+      "description": "# HP2PC_AP v2.7.0\r\nContainersanity, open-castle bean bonus room, new traps, coloured toasts, and a big batch of check-reliability and logic fixes.\r\n\r\n### New\r\n- **Containersanity**. 281 containers become locations.\r\n- **Bean bonus room in open castle**. Hidden trigger in the entry hall in the bean bonus room chamber, near the door.\r\n- **Gold Card Room completion goal**. Completing it is the 13th open-castle level objective.\r\n- **Levicorpus**, **Engorgio**, **Reducio**, **Overcompensation** & **Jelly-Legs Jinx** traps.\r\n- **Confundus and Obliviate trap indicators**. On-screen countdown, plus a green tint while Confundus is active.\r\n- **Running logic option**. Puts the sprint in logic and drops its bean cost so it works at zero beans.\r\n- **Per-item receipt sounds**. Spells, keys, equipment, cards, ingredients, beans, and traps each get their own sound.\r\n- **Coloured text in toasts** & **Restyled toast messages**.\r\n- **Unlocked spells and keys panel** in the pause menu, with hover tooltips.\r\n- **Bookcase blocker hints**. Bumping into one names the key it needs.\r\n\r\n### Fixed\r\n- **Dropped checks fixed**.  Weird unreal engine quirk, no more dropped checks.\r\n- **Checks fire sooner**. Some had some wait time, no more!\r\n- **Cards survive save-load**. Everything is also restored on reconnect.\r\n- **Airborne grants deferred**. Items no longer save mid-fall, which could reload straight back into death.\r\n- **Level-to-level crash fixed**. Some crashes happened on some garbage collecting on level transitions.\r\n- **Auto-launch on every reconnect**.\r\n- **Duelling and Quidditch keys precollect** when their category & goal is off.\r\n\r\n### Logic and content changes\r\n- **Open castle safety guard**, to make generating better.\r\n- **Vanilla gating**. Improved the keys they need to be in logic.\r\n- **Option renamed.** `allow_secrets_progression` is now `allow_missable_progression`, and it now also covers one-way containersanity containers.",
+      "download_url": "https://github.com/Kryen112/HP2PC_AP/releases/download/v2.7.0/harry_potter_2_pc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "74ab898929b90c71b5f6acdac422ecbe834099cf838066c8c55cb4838f940e38",
+      "html_url": "https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.7.0",
+      "size": 142204,
+      "source_url": "https://api.github.com/repos/Kryen112/HP2PC_AP",
+      "tag": "v2.7.0",
+      "title": "v2.7.0",
+      "version_simple": "2.7.0",
+      "world_version": "2.7.0"
+    },
+    "v2.8.0": {
+      "created_at": "2026-07-13T14:38:20Z",
+      "description": "# HP2PC_AP v2.8.0\r\nProgressive level keys for vanilla, timed traps with on-screen countdowns, and a /hint command for your next in-logic item.\r\n\r\n### New\r\n- **Progressive Level Key**. With `vanilla_gate_levels` on, the 5 story-level keys (Bicorn, Boomslang, Goyle, Slytherin Common Room, Forbidden Forest) are replaced by 5 copies of one Progressive Level Key. Each copy unlocks the next level in story order, so every key found is immediate progress. No more holding the Forbidden Forest key while stuck outside Bicorn. Duelling and Quidditch gate independently, so they keep their own keys. The receipt toast names the level each copy opened.\r\n- **/hint command**. `/hint spell`, `/hint key`, and `/hint card [bronze|silver|gold]` hint your next in-logic item of that kind, costing hint points like !hint. Bare `/hint card` follows the seed goal.\r\n- **Countdowns for every timed trap**. Engorgio, Reducio, Levicorpus, Jelly-Legs, and Drowsiness join Confundus and Obliviate in the on-screen trap countdown.\r\n\r\n### Changed\r\n- **Engorgio, Reducio, and Levicorpus run on timers** (~30s) instead of lasting the whole level. Overcompensation and Polyjuice still do.\r\n- **Not compatible with v2.7.0 seeds or in-progress games** (new item in the datapackage). Finish running multiworlds before updating.",
+      "download_url": "https://github.com/Kryen112/HP2PC_AP/releases/download/v2.8.0/harry_potter_2_pc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "658293e4119f8a0d45409c2ce0ec3838d0f809a75e1eb6f84da268974687c241",
+      "html_url": "https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.8.0",
+      "size": 151049,
+      "source_url": "https://api.github.com/repos/Kryen112/HP2PC_AP",
+      "tag": "v2.8.0",
+      "title": "v2.8.0",
+      "version_simple": "2.8.0",
+      "world_version": "2.8.0"
     }
   }
 }
