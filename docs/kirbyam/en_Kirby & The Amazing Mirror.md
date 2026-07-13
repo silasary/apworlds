@@ -22,6 +22,7 @@
 - Enemies that cannot be swallowed are excluded from the enemy copy-ability randomization pool.
 - The chance for an enemy to not have a copy ability can be controlled via the `ability_randomization_no_ability_weight`
 - Ability statues (sometimes called ability trophies or ability stands) have a dedicated boolean toggle (`ability_randomization_statues`) that controls inclusion only; when enabled, included statues inherit the selected `ability_randomization_mode` (`off`, `shuffled`, or `completely_random`). They will always grant an ability and are not affected by `ability_randomization_no_ability_weight` or `ability_randomization_passive_enemies`. They do respect `ability_randomization_minny`. When using `shuffled` mode, a spoiler log includes the statue to ability assignments.
+- AP ability unlock items are generated dynamically from `data/abilities.json` only when the `Ability Gating` option is enabled. That option defaults on and appears under `Make the game harder`. When enabled, unlock items are generated only for abilities marked `safe_to_gate` (and not explicitly disabled by `enemy_copy_allowed: false`); gated abilities are blocked until their matching AP unlock item has been received.
 
 
 
@@ -70,6 +71,7 @@ Use exact item/location names from this world (or the item groups listed above) 
   - `dark_mind`: Defeat Dark Mind to complete the seed.
   - `defeat_any_area_boss`: Defeat any one `* - Boss Defeat` location (Mustard Mountain, Moonlight Mansion, Candy Constellation, Olive Ocean, Peppermint Palace, Cabbage Cavern, Carrot Castle, or Radish Ruins). In this mode, collecting all Mirror Shards is not required by the goal mode itself.
     - Candy Constellation's Master Hand + Crazy Hand fight is treated as one pooled boss target (`BOSS_DEFEAT_3`).
+  - `defeat_configured_area_boss`: Defeat a specific area boss selected by the `configured_area_boss` option. The default target is the Master Hand + Crazy Hand pair (`BOSS_DEFEAT_3`), and the selected target is only used by this goal mode.
   - `defeat_random_hidden_area_boss`: Defeat one seed-selected hidden area boss. The selected target is carried in slot data as an internal boss-defeat key; normal player-facing output does not reveal the boss name, but spoiler output may.
 
 
@@ -79,6 +81,8 @@ Use exact item/location names from this world (or the item groups listed above) 
 
 
 When you find an item that is not your own, you will be able to see what it was and who it was sent to in both Bizhawk and the Archipelago Bizhawk client. The sprite for the item will still appear, but you will need to receive it via Archipelago before it's usable. When collecting a mirror shard check, the cutscene will still play as if you've received the mirror shard, however it will not be given until you receive it properly via Archipelago.
+
+If an item sends to your own slot, BizHawk shows one local confirmation line (`You found your <item>.`) instead of separate send and receive popups.
 
 
 
@@ -94,7 +98,7 @@ You will not see an indicator in the game, instead you'll see you received an it
 
 
 
-Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, or defeat the seed-selected hidden area boss in `defeat_random_hidden_area_boss` mode.
+Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, defeat the configured area boss in `defeat_configured_area_boss` mode, or defeat the seed-selected hidden area boss in `defeat_random_hidden_area_boss` mode.
 
 
 

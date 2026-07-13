@@ -1,9 +1,12 @@
 # Garfield Kart - Furious Racing
 
 ## Latest
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/0.5.3-beta/garfkart.apworld">Latest Version (0.5.3b0)</a>
+- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/1.0.0/garfkart.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
+
+#### v1.0.0
+- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/1.0.0/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/1.0.0/garfkart.apworld</a>
 
 #### v0.5.3b0
 - <a href="https://github.com/FeluciaPS/Archipelago/releases/download/0.5.3-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/0.5.3-beta/garfkart.apworld</a>

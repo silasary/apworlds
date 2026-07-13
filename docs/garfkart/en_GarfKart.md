@@ -19,4 +19,3 @@ Anything you choose to randomize in the game will be sent out to the multiworld,
 
 ## Where is the options page?
 Currently, there is no options page. You can download the latest apworlds yaml and the apworld to play [on the latest release](https://github.com/FeluciaPS/Archipelago/releases) and configure it to with the options you'd like.
-

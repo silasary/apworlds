@@ -2,39 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-13T00:33:51.107919+00:00</updated>
+  <updated>2026-07-13T07:11:31.973226+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/hoppel16/ArchipelagoBranchSly1/releases/tag/v0.3.5-alpha-hotfix1</id>
-    <title>Sly Cooper and the Thievius Raccoonus v0.3.5a0</title>
-    <updated>2026-07-06T20:01:34+00:00</updated>
-    <author>
-      <name>hoppel16</name>
-    </author>
-    <content>- Incremented version number&#13;
-- Fixed duplicate world unlock items (for real this time)</content>
-    <link href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/tag/v0.3.5-alpha-hotfix1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hoppel16/ArchipelagoBranchSly1/releases/tag/v0.3.5-alpha</id>
-    <title>Sly Cooper and the Thievius Raccoonus v0.4.1</title>
-    <updated>2026-07-06T20:01:34+00:00</updated>
-    <author>
-      <name>hoppel16</name>
-    </author>
-    <content>- Fixed an error preventing players from connecting if starting world was set to random and avoid early BK was enabled&#13;
-- Fixed an error preventing players from being granted received thief moves&#13;
-- Fixed an error that caused extra episode unlock items to be created if starting world was set to "All"&#13;
-- Added item groups and location groups (@phoenixaki)&#13;
-- Adds support for speed tricks via new YAML option (@phoenixaki)&#13;
-- Improved documentation (@phoenixaki)&#13;
-&#13;
-NOTE: This update changes the names of many existing items. This should still be compatible with worlds generated on v0.3.0 and onward, but you may wish to avoid upgrading if you're in the middle of a seed.</content>
-    <link href="https://github.com/hoppel16/ArchipelagoBranchSly1/releases/tag/v0.3.5-alpha"/>
-  </entry>
   <entry>
     <id>https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.7</id>
     <title>Paper Mario v0.6.7</title>
@@ -1132,7 +1104,7 @@ It also now integrates Universal Tracker into the Client *if* you have the UT ap
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR7</id>
-    <title>The Grinch v1.6.0r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2</title>
     <updated>2026-07-12T16:42:36+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1155,7 +1127,7 @@ This version is a beta. Meaning, this is meant to test the new features and it's
   </entry>
   <entry>
     <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.17</id>
-    <title>Stardew Valley v8.0.13r2r2r2</title>
+    <title>Stardew Valley v8.0.13r2r2r2r2</title>
     <updated>2026-07-12T17:46:17+00:00</updated>
     <author>
       <name>Kaito Kid</name>
@@ -1195,5 +1167,66 @@ New:&#13;
 &#13;
 **Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.22...0.0.23</content>
     <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.23"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FeluciaPS/Archipelago/releases/tag/1.0.0</id>
+    <title>Garfield Kart - Furious Racing v1.0.0</title>
+    <updated>2026-07-13T03:20:42+00:00</updated>
+    <author>
+      <name>FeluciaPS</name>
+    </author>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>*The final major release!*&#13;
+&#13;
+`New:`&#13;
+- [APWorld/Client] Added checks for completing races/cups on 150cc/100cc/50cc. These get added based on your cc requirement setting in the yaml, and send out based on the highest cc completed&#13;
+- [APWorld/Client] Added 3 new fillers: Random Item Box, Start Boost Helper, Inspirational Garfield Quote&#13;
+- [APWorld/Client] Added 5 new traps: Mirror Trap, Sleep Trap, Grayscale Trap, Broken Drift Trap, Bounce Trap&#13;
+- [APWorld/Client] De-coupled the Time Trial locations from the time trial goal, allowing you to randomize time trials without setting time trials as your goal. Time Trials now unlock upon unlocking access to a specific race/cup&#13;
+- [APWorld] Allowed you to set a required % of Puzzle Pieces to goal a Puzzle Piece Hunt slot&#13;
+- [APWorld] Added new options for handling traps and how long they should be active for&#13;
+- [Client] Added DeathLink support&#13;
+- [Client] Added new art for the main menu logo and puzzle piece icons, courtesy of Flow&#13;
+- [Client] Added mod config options for lapsanity placement requirement, CPU item handling with itemsanity, and toggling on/off item mania mode&#13;
+- [Client] Added extra text displays of the status of each race/cup/time trials checks in the relevant selection menus, as well as lapsanity.&#13;
+- [Client] Revamped the Gallery menu to be used as a tracker for various items you've been sent, as well as a counter for how much puzzle pieces you've gotten. It's now labeled as "Archipelago" with the Archipelago logo.&#13;
+- [Client] Added extra text on the character selections to display if you've sent checks for winning with them or not&#13;
+&#13;
+`Changes:`&#13;
+- [APWorld/Client] Removed the ability to split up hats/spoilers by tiers or progressively. These are now just randomize on or off, automatically giving you the highest tier hat/spoiler&#13;
+- [APWorld] Simplified item names across the whole APWorld&#13;
+- [Client] Changed the cc_requirement handling to allow you to play a higher cc than you set (for example, playing 150cc with 100cc requirement set) and still make checks count&#13;
+- [Client] Changed item randomization to give you a 50% chance to select an item you've been given, instead of giving you nothing, if you haven't received every item yet.&#13;
+- [Client] Changed lapsanity to require you to play on your set cc_requirement or higher for it to count.&#13;
+- [Client] Goal tracking is now handled via a json file storing data, rather than by checking what locations you have sent. This fixes collect causing issues with auto goaling slots, as you will now have to goal all races manually&#13;
+- [Client] Changed the top screen notification display to display colors, and have a drop shadow to be seen easier&#13;
+- [Client] Filtered out warning about compressed websockets and !help message from the notification display&#13;
+&#13;
+`Fixes:`&#13;
+- [Client] Fixed a bug where the Bombastic Spoiler item gave you the Apprentice Hat&#13;
+- [Client] Fixed the item roulette animation not happening if you picked up and item box and got an item you haven't unlocked&#13;
+- [Client] Fixed bug where you could select characters/karts you don't have unlocked via the Garage menu.&#13;
+- [Client] Fixed the top screen notification display not scaling properly for resolutions</content>
+    <link href="https://github.com/FeluciaPS/Archipelago/releases/tag/1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/APxiv/releases/tag/0.30.0</id>
+    <title>Final Fantasy XIV v0.30.0</title>
+    <updated>2026-07-13T06:57:38+00:00</updated>
+    <author>
+      <name>silasary</name>
+    </author>
+    <content>* Added new checks for attuning aetherytes.
+* Added new option: Huntsanity.  Checks for defeating hunt targets.
+* Added the rest of Bozja.
+* Added Occult Crescent South Horn.
+* Added new PvP map
+* Changed logic for Big Fish to also require the bait for Intuition fish
+* More kinds of filler items.
+* Option to exclude specific jobs from the item pool.
+* Assorted bugfixes</content>
+    <link href="https://github.com/silasary/APxiv/releases/tag/0.30.0"/>
   </entry>
 </feed>

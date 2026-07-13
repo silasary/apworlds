@@ -35,6 +35,9 @@
 #### v0.3.6r2
 - <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.3.6-QoL/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.3.6-QoL/mario_sports_mix.apworld</a>
 
+#### v0.3.6.post2
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.3.6-QoL/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.3.6-QoL/mario_sports_mix.apworld</a>
+
 #### v0.3.6
 - <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.3.6/mario_sports_mix.apworld">https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v0.3.6/mario_sports_mix.apworld</a>
 
