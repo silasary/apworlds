@@ -36,6 +36,11 @@ plant a flag, and more) injected into your game as items. Accepting and completi
 reward location, and under the default goal mode, completing contracts is what unlocks your victory condition.
 The orbital and rescue contracts are randomized — each seed hands you different target orbits to fly.
 
+By default, most of the solar system also starts **hidden**. Bodies beyond your home neighbourhood are
+invisible (or unlabelled and un-clickable) and award no checks until they're **discovered** — normally by
+receiving their **Discover** item, though by default you can also reveal one by flying there (out of logic).
+Exploring the Kerbol system is itself part of your progression. See *Hidden bodies* below.
+
 The tech tree is still present but restructured. Tech tree nodes are additional locations that cost science
 points to purchase. Science packs (filler items) provide science needed to buy them but you are still expected
 to gain science from your regular missions as normal.
@@ -65,6 +70,11 @@ reach yet, so you are never handed something you can't use.
 
 **Contract items** — one per contract in your seed. Receiving a contract item makes that native KSP contract
 available to accept; completing it checks its reward location(s).
+
+**Discover items** — one *Discover &lt;Body&gt;* item per hidden body in your seed (present only when Body
+Visibility Mode hides bodies). Receiving one reveals that body and unlocks its missions, contracts, and
+science. They are always progression and can be placed anywhere in the multiworld, including another player's
+world. See *Hidden bodies* below.
 
 **Other equipment** includes RTGs, batteries, docking ports, landing legs, ladders, reaction wheels, RCS,
 science instruments, and more.
@@ -126,10 +136,58 @@ is deliberate: the building upgrades are placed so the science-cost cap is **nev
 blocking you — the tech band you've unlocked is always the real limit. If you receive an R&D item and
 the building does **not** visibly upgrade, that is expected — only the 2nd and 4th copies do.
 
+## Hidden bodies (Body Visibility Mode)
+
+By default some celestial bodies start **hidden** — invisible or unlabelled on the map, off the Tab-cycle,
+and unable to award any location checks — until you receive their **Discover &lt;Body&gt;** item. This turns
+the Kerbol system itself into progression: you unlock *where* you can go, not just *what* you can fly.
+
+**Body Visibility Mode** decides which bodies start hidden:
+
+- **auto** (default) — chosen from your goal. A goal confined to your home system hides *even the home system*
+  (like `home_only`), so you discover your own neighbourhood one body at a time; any wider goal hides
+  everything *outside* your home system (like `home_system`).
+- **all_visible** — feature off. Every body is visible from the start, exactly as before, and no Discover
+  items are added.
+- **home_system** — your home body and the rest of its local system are visible; every other body is hidden
+  until discovered.
+- **home_only** — only your home body is visible; everything else, including the rest of your home system,
+  is hidden until discovered.
+
+Your **home body and the Sun are never hidden.** Planets are always discovered before their moons — a moon's
+Discover item only becomes reachable once you hold its planet's.
+
+**While a body is hidden it awards no location checks** — its flybys, orbits, landings, samples, and contracts
+are dormant until it's revealed. There are two ways to reveal one: receiving its **Discover** item (the
+in-logic route, which also restores its map label, targeting, and science), or — when Allow Undiscovered
+Bodies is on — simply flying there and entering its SOI. Once revealed by *either* route, its checks fire
+normally; a fly-there reveal just isn't something the seed's logic ever relies on.
+
+**Allow Undiscovered Bodies** controls whether you can physically reach a body you haven't discovered:
+
+- **On** (default) — a hidden body's sphere still exists but is uninteractable: no map label, not clickable,
+  not Tab-selectable. You *can* fly a probe there anyway — this is **out of logic**, AP never requires it —
+  and entering its SOI reveals the body locally, at which point its flyby (and every later) check fires
+  normally. That fly-there reveal is remembered across restarts.
+- **Off** — a hidden body is fully invisible; its sphere is removed from the game. Flying into its SOI
+  **destroys your craft** ("collided with undiscovered body") *before any check can fire* — so with this
+  setting the Discover item is the only way to unlock a body's checks. This is intended, not a bug: you flew
+  into a body you couldn't see.
+
+Either way, the seed's **logic only ever requires a body's Discover item** to unlock it. The `auto` default
+means most players never touch these options — the mode is picked from your goal, and every body you actually
+need is gated behind a Discover item the fill algorithm guarantees you can reach.
+
+**Tech-tree interaction (not a bug):** an undiscovered body's science does **not** count toward your science
+budget until you discover it. A science-hungry tech tier can therefore stay unaffordable until you have
+discovered enough of the system — discovering bodies is part of how you afford the deeper tree. This is why
+the Complete Tech Tree goal remains solvable with hidden bodies enabled.
+
 ## Which items can be in another player's world?
 
 Any KSP item can appear in another player's world — individual parts, the progressive items (R&D, Science
-Instrument, Launch Pad), science packs, and contract items can all be placed in other games' locations.
+Instrument, Launch Pad), science packs, contract items, and Discover items can all be placed in other games'
+locations.
 
 ## What does another world's item look like in KSP?
 
@@ -191,6 +249,12 @@ won't contain items required for progression.
   late-game science grind if you'd rather focus on flying missions than gaining science.
 - **Start With Launch Clamps** — Enabled by default. Disabling makes launch clamps a progression gate for
   interplanetary missions. It is important to note that you might not get any landing legs so disabling this may be seed breaking.
+- **Body Visibility Mode** — Which celestial bodies start hidden, revealed by Discover items. **Default `auto`**,
+  which picks a sensible mode from your goal (see *Hidden bodies* above). Set to `all_visible` to turn the
+  feature off entirely; `home_system` / `home_only` force a specific scope.
+- **Allow Undiscovered Bodies** — **On by default.** On: undiscovered bodies are visible-but-uninteractable and
+  can be flown to out of logic (arriving reveals them). Off: they are invisible and flying into their SOI
+  destroys your craft. Only meaningful when Body Visibility Mode is hiding bodies.
 
 ## Tracking In-Logic Locations
 

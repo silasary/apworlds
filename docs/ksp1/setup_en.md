@@ -74,7 +74,12 @@ Kerbal Space Program 1:
   difficulty: normal
   start_with_launch_clamps: true
   exclude_late_tech_tree: true
+  body_visibility_mode: auto        # hidden bodies unlock via Discover items; auto picks a scope from your goal
+  allow_undiscovered_bodies: true   # false = flying into an undiscovered body's SOI destroys your craft
 ```
+
+Set `body_visibility_mode: all_visible` to play with the whole solar system visible from the start (the
+pre–hidden-bodies behaviour).
 
 ### Verifying your config file
 

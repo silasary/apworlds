@@ -7,7 +7,7 @@ trains, and an astounding new 3-dimensional gameplay environment in space.
 
 
 ## Downloads
-- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/flowersanity_1.1.0/flowersanity.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/flowersanity_1.1.0_fix/flowersanity.apworld">Latest Version (1.1.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
