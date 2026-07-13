@@ -20,7 +20,7 @@
 #### v1.6.0r2r2r2
 - <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0-PR6/grinch.apworld">https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0-PR6/grinch.apworld</a>
 
-#### v1.6.0r2
+#### v1.6.0r2r2
 - <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0-PR7/grinch.apworld">https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0-PR7/grinch.apworld</a>
 
 #### v1.6.0
