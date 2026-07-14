@@ -102,6 +102,21 @@
       "title": "v1.2.3",
       "version_simple": "1.2.2",
       "world_version": "1.2.2r2"
+    },
+    "v1.3.0": {
+      "created_at": "2026-07-13T18:32:33Z",
+      "description": "# v1.3.0\r\n\r\n## Doors!!!\r\n* New option door_shuffle randomizes the layout of every dungeon\r\n  * Rooms connect to each other in different ways, and any door between rooms might require a key or bombs\r\n  * Each dungeon has its vanilla entrance room (e.g. Swamp Palace requires Flippers to enter), and all boss rooms are in their usual dungeon\r\n  * Basic door shuffle randomizes each dungeon's layout, but each room stays within its own dungeon\r\n  * Partitioned door shuffle can mix together rooms from different dungeons. Light World dungeons are shuffled together, early Dark World dungeons are shuffled together, and Mitts-locked dungeons are shuffled together.\r\n  * Crossed door shuffle can place almost any room in any dungeon\r\n* New option lobby_shuffle also randomizes the first room in each dungeon\r\n* New option door_type_shuffle sets whether big key locked doors are also randomized. More options for randomizing trap doors will be added in the future\r\n* Mirror Scroll and dungeon counters to show the number of checks/keys in each dungeon are always enabled with door shuffle\r\n* Dungeon locations use their vanilla name, so e.g. \"Ice Palace - Map Chest\" might not be in Ice Palace\r\n* Known issues:\r\n  * Generation is slow, and on occasion is extremely slow, mostly with more advanced door shuffle. I suggest restarting generation if it is taking a long time.\r\n  * Some settings are not allowed with door shuffle to prevent excessive generation errors\r\n    * Standard mode + door shuffle will throw an error during generation\r\n    * Key drop shuffle is always enabled with door shuffle, regardless of settings\r\n    * Small key shuffle is always enabled with partitioned or crossed door shuffle, regardless of settings\r\n  * Universal Tracker sometimes fails to connect to a doors seed\r\n  * Universal Tracker is sometimes wrong about dungeon items, usually by believing that an item behind a locked door is accessible\r\n  * Door shuffle is inherently a bit volatile, and is not recommended for large multiworlds\r\n\r\n## Not Doors!\r\n* New options for entrance shuffle to only randomize dungeon entrances\r\n* New options to shuffle the location of Link's House and the back of Tavern in crossed entrance shuffle\r\n* New option to enable dungeon counters that show the collected/total number of checks and keys in each dungeon\r\n* Similar options in the YAML have been grouped together\r\n* Hints in entrance shuffle now show the entrance(s) for their location\r\n* Fixed a bug where Flute Shuffle didn't work correctly with Universal Tracker\r\n* Fixed most generation errors",
+      "download_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.3.0/alttpr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8708c0cd77a3bac5cdb5c89cec09dc9815a8743c8362b0fe28a3ffa657884123",
+      "html_url": "https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.3.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 2496004,
+      "source_url": "https://api.github.com/repos/aurabot24/Archipelago-ALttPR",
+      "tag": "v1.3.0",
+      "title": "v1.3.0",
+      "version_simple": "1.3.0",
+      "world_version": "1.3.0"
     }
   }
 }

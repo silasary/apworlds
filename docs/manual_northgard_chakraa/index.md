@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/download/2025.09.01/manual_northgard_chakraa.apworld">Latest Version (2025.9.1)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/download/2026.07.13/manual_northgard_chakraa.apworld">Latest Version (2026.7.13)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Manual_Northgard_Chakraa
 
 ## Latest
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/download/2025.09.01/manual_northgard_chakraa.apworld">Latest Version (2025.9.1)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/download/2026.07.13/manual_northgard_chakraa.apworld">Latest Version (2026.7.13)</a>
 
 ## All Versions
+
+#### v2026.7.13
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/download/2026.07.13/manual_northgard_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/download/2026.07.13/manual_northgard_chakraa.apworld</a>
 
 #### v2025.9.1
 - <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/download/2025.09.01/manual_northgard_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/download/2025.09.01/manual_northgard_chakraa.apworld</a>
