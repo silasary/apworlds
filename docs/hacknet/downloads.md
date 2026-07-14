@@ -1,9 +1,12 @@
 # Hacknet
 
 ## Latest
-- <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-3-hotfix-2/hacknet.apworld">Latest Version (3r3)</a>
+- <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-4/hacknet.apworld">Latest Version (4)</a>
 
 ## All Versions
+
+#### v4
+- <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-4/hacknet.apworld">https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-4/hacknet.apworld</a>
 
 #### v3r3
 - <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-3-hotfix-2/hacknet.apworld">https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-3-hotfix-2/hacknet.apworld</a>
