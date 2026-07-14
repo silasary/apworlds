@@ -8,6 +8,9 @@
 #### v0.2.0r2
 - <a href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/download/v0.2.1/cursed_words.apworld">https://github.com/JammyGeeza/CursedWords-Archipelago/releases/download/v0.2.1/cursed_words.apworld</a>
 
+#### v0.2.0r2
+- <a href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/download/v0.2.2/cursed_words.apworld">https://github.com/JammyGeeza/CursedWords-Archipelago/releases/download/v0.2.2/cursed_words.apworld</a>
+
 #### v0.2.0
 - <a href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/download/v0.2.0/cursed_words.apworld">https://github.com/JammyGeeza/CursedWords-Archipelago/releases/download/v0.2.0/cursed_words.apworld</a>
 

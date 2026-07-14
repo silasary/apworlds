@@ -2,48 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-14T12:33:19.762389+00:00</updated>
+  <updated>2026-07-14T18:31:33.150873+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.2</id>
-    <title>pokemon_stadium v0.6.2</title>
-    <updated>2026-07-08T18:37:36+00:00</updated>
-    <author>
-      <name>jciii91</name>
-    </author>
-    <content>Bugfix for Prime Cup rental list. Pika Cup rental list in `constants` had Pokémon included that should not have been, which was causing the patcher to overwrite some of the Prime Cup list and break it.&#13;
-&#13;
-Fixed the gender symbol bug for the Nidorans.</content>
-    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/NaveTK/Archipelago/releases/tag/v0.4.1</id>
-    <title>The Binding of Isaac Repentance v0.4.1</title>
-    <updated>2026-07-08T21:06:18+00:00</updated>
-    <author>
-      <name>NaveTK</name>
-    </author>
-    <content>Fuzzer, manifest, determinism and UT compatibility fixes</content>
-    <link href="https://github.com/NaveTK/Archipelago/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03f</id>
-    <title>Cuphead v0.2.16909823</title>
-    <updated>2026-07-09T05:18:49+00:00</updated>
-    <author>
-      <name>JKLeckr</name>
-    </author>
-    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
-&#13;
-### Revision&#13;
-&#13;
-This revision fixed the top grade rule for Rugged Ridge when DLC is disabled.&#13;
-</content>
-    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03f"/>
-  </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.10</id>
     <title>Total War Warhammer 3 v0.10.11</title>
@@ -1238,5 +1201,96 @@ Drop cvaos.apworld into your Archipelago install under /lib/worlds. To patch a R
 * Fixes a few to-704/728-through-713 connection issues (reported by Lily)&#13;
 * Fixes the 903 upwards connection issue (I don't recall finding or fixing this and am not sure who did. Someone claim this!)</content>
     <link href="https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.07.13"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ragmoa/Archipelago/releases/tag/0.5.0</id>
+    <title>Okami HD v0.5.0</title>
+    <updated>2026-07-14T14:16:08+00:00</updated>
+    <author>
+      <name>Axertin</name>
+    </author>
+    <author>
+      <name>Ragmoa</name>
+    </author>
+    <content># 0.5.0 ARC 2:&#13;
+&#13;
+- Updated logic Up to Oni Island&#13;
+- New goal is now beating Orochi in Moon Cave, and Ninetails in Oni Island.&#13;
+&#13;
+## Additional Fixes:&#13;
+- Add vine requirement to Kusa Village blockhead.&#13;
+- Exclude freestanding item in Calcified cavern as it doesn't work.&#13;
+- Account for chests in Agata Forest behind the bridge being able to be collected through Taka Pass.&#13;
+- Require Crescent to save Chun if the NightTimeCheck Option is enabled.&#13;
+- Removed Canine tracker, Border Key, Dragon Orb, Fox Rods, Shell Amulet and Treasure Box from item pool (They're either collected through their vanilla option that sets the flags for their use, or they cause softlocks)&#13;
+- Fix warps to cursed Agata Forest and Cursed Taka pass not taken into account&#13;
+- Fix Tsuta ruins and checks not requiring long swim at all</content>
+    <link href="https://github.com/Ragmoa/Archipelago/releases/tag/0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.2.2</id>
+    <title>Cursed Words v0.2.0r2</title>
+    <updated>2026-07-14T16:29:11+00:00</updated>
+    <author>
+      <name>JammyGeeza</name>
+    </author>
+    <content>## Information&#13;
+This archipelago implementation is in **early development** and is in public pre-release for testing, so may not be complete and/or may contain bugs that heavily disrupt the experience. It is not advised to include this in large multiworlds at this time, so only do so at your own risk and inform your host beforehand.&#13;
+&#13;
+## Setup Guide&#13;
+Please visit the [Setup Guide](https://github.com/JammyGeeza/CursedWords-Archipelago#setup-guide) for instructions on how to install the mod client.&#13;
+&#13;
+## Issue / Bug Reporting&#13;
+If you experience issues that are not already on the [known issues list](https://github.com/JammyGeeza/CursedWords-Archipelago/issues?q=is%3Aissue%20state%3Aopen), please raise a new issue or post in the [Cursed Words Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1499176806962692196)&#13;
+&#13;
+## Release Notes&#13;
+This release provides the following updates:&#13;
+### Client Fixes&#13;
+- Fixes an issue where some filler items were being redeemed at times that rendered them completely useless.&#13;
+- Fixes an issue where receiving a Progressive Sticker or Stamp Slot while in the shop did not let you purchase an item without first re-stocking.</content>
+    <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.7</id>
+    <title>Black Ops 3 - Zombies v0.5.7</title>
+    <updated>2026-07-14T17:02:57+00:00</updated>
+    <author>
+      <name>colin969</name>
+    </author>
+    <content>Mostly logic changes to allow for a better flow, and allow disabling certain high-time cost checks instead of having to do exclusions. SoE has gotten a few more checks, and an improvement to the spawns on the first few rounds to smooth out the frequency of checks.&#13;
+&#13;
+Reworking the printouts in the bottom left is top priority for a future release.&#13;
+&#13;
+**Note:** Origins is no longer marked as unstable. This doesn't mean it has all the checks I'd like it to have, but I'm reasonably confident it plays well.&#13;
+&#13;
+- 200 Points item reduced to 150 Points when playing with 3 or more players&#13;
+- 1500 Points item reduced to 1000 Points when playing with 3 or more players&#13;
+- Number of headshots required for checks slightly reduced&#13;
+- Season Pass maps are now disabled by default, only Shadows of Evil is on by default&#13;
+- Fixed perk machine hint strings being set wrong in edge cases (Origins generators, ZNS web clearing)&#13;
+- Fixed LUI error when sending an unknown location (@eah1759)&#13;
+- **Shadows of Evil**&#13;
+  - New Check - Apothicon Sword - Fill the egg at any statue&#13;
+  - New Check - Apothicon Sword - Complete any ritual circle&#13;
+  - New Check - Unlock the Margwa's Head (@eah1759)&#13;
+  - Apothicon Sword checks moved 2 rounds later in logic each&#13;
+  - Removed spawn delay being longer than other maps before round 5&#13;
+  - Removed all zombies being forced to walk before round 4&#13;
+  - New Option - Enable Unlock the Margwa's Head Check&#13;
+  - New Option - Enable Tripmine Upgrade Check (forced on in Weapon Quest)&#13;
+- **Gorod Krovi**&#13;
+  - Bunker survival logic requirements removed from early dragon gauntlet checks&#13;
+  - New Option - Enable Challenge Checks&#13;
+  - New Option - Enable Monkeybomb Upgrade Check (forced on in Weapon Quest)&#13;
+  - New Option - Enable Helmet Checks&#13;
+- **Revelations**&#13;
+  - New Option - Enable Challenge Checks&#13;
+- **Moon**&#13;
+  - Digger RNG option moved from Round 16 to Round 12&#13;
+- **Origins**&#13;
+  - Improved restoration of power generators from save&#13;
+  - Removed Unstable tag from options creator&#13;
+  - Fixed Archangel and Aether Music EEs not being added as checks</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.7"/>
   </entry>
 </feed>

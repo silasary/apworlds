@@ -13,7 +13,7 @@ class "River of the Heavens (Kamiki side)"
 "River of the Heavens (Kamiki side)" : {method} <&lock-locked> //River of the Heavens - Restoring the River//: //**River of the Heavens - Restoring the River**//
 "Cursed Kamiki" <--> "River of the Heavens (Kamiki side)"
 class "Kamiki Village (Stone state)" 
-"Kamiki Village (Stone state)" : {field} <&lock-unlocked,color=transparent> Kamiki Village - Sunrise
+"Kamiki Village (Stone state)" : {field} <&lock-unlocked,color=transparent> --Kamiki Village - Sunrise--
 "Kamiki Village (Stone state)" : {method} <&lock-locked> //Kamiki Village - Restoring the villagers//: //**Kamiki Village - Restoring the villagers**//
 "Kamiki Village (Stone state)" : {method} <&lock-locked> //Kamiki Village - Fight with MrOrange//: //**Kamiki Village - Fight with MrOrange**//
 "Kamiki Village (Stone state)" --> "Kamiki Village"
@@ -39,7 +39,7 @@ class "Kamiki Village"
 "Kamiki Village" : {method} <&lock-locked> //Kamiki Village - Help Susano Train/Break the boulder//: //**Kamiki Village - Help Susano Train/Break the boulder**//
 "Kamiki Village" : {method} <&lock-locked> //Kamiki Village - Bloom every Tree//: //**Kamiki Village - Bloom every Tree**//
 "Kamiki Village" : {method} <&lock-locked> //Kamiki Village - Restore Sakuya's Tree//: //**Kamiki Village - Restore Sakuya's Tree**//
-"Kamiki Village" : {field} <&lock-unlocked,color=transparent> Kamiki Village - Get Orb from Hayabusa
+"Kamiki Village" : {method} <&lock-locked> //Kamiki Village - Get Orb from Hayabusa//: //**Satomi Power Orb (Loyalty)**//
 "Kamiki Village" --> "Kamiki Village Merchant"
 class "Mist Warp Hub" 
 "Kamiki Village (Stone state)" <--> "Mist Warp Hub"
@@ -56,7 +56,7 @@ class "Kamiki Village Islands"
 class "Susano's house" 
 "Kamiki Village" <--> "Susano's house"
 class "Kushi's house" 
-"Kushi's house" : {field} Kamiki Village - Kushi's Gift
+"Kushi's house" : {field} --Kamiki Village - Kushi's Gift--
 "Kamiki Village" <--> "Kushi's house"
 class "Mr and Mrs Orange's house" 
 "Mr and Mrs Orange's house" : {field} Kamiki Village - Chest buried in Oranges' house
@@ -65,6 +65,7 @@ class "Cursed Shinshu Field"
 "Cursed Shinshu Field" : {method} <&lock-locked> //Shinshu Field - Restore Guardian Sapling//: //**Shinshu Field - Restore Guardian Sapling**//
 "Kamiki Village" <--> "Cursed Shinshu Field"
 "Cursed Shinshu Field" --> "Shinshu Field"
+"Cursed Shinshu Field" --> "Shinshu Field (Common)"
 class "Shinshu Field" 
 "Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Buried chest near Guardian Sapling
 "Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Freestanding chest behind Guardian Sapling
@@ -84,12 +85,23 @@ class "Shinshu Field"
 "Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Freestanding chest near Tama's house
 "Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Buried Chest in burning leaf pile behind Dojo
 "Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Shop Slot 1
+"Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Shop Slot 2
+"Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Shop Slot 3
+"Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Shop Slot 4
+"Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Shop Slot 5
+"Shinshu Field" : {field} <&lock-unlocked,color=transparent> Shinshu Field - Shop Slot 6
 "Shinshu Field" : {method} <&lock-locked> //Shinshu Field - Climb on plateau//: //**Shinshu Field - Climb on plateau**//
 "Shinshu Field" : {method} <&lock-locked> //Shinshu Field - Clear Devil gate near Dojo//: //**Shinshu Field - Clear Devil gate near Dojo**//
 "Kamiki Village" <--> "Shinshu Field"
+"Shinshu Field" --> "Shinshu Field (Common)"
 "Mist Warp Hub" <--> "Shinshu Field"
 class "Kamiki Village Merchant" 
 "Kamiki Village Merchant" : {field} Kamiki Village - Shop Slot 1
+"Kamiki Village Merchant" : {field} Kamiki Village - Shop Slot 2
+"Kamiki Village Merchant" : {field} Kamiki Village - Shop Slot 3
+"Kamiki Village Merchant" : {field} Kamiki Village - Shop Slot 4
+"Kamiki Village Merchant" : {field} Kamiki Village - Shop Slot 5
+"Kamiki Village Merchant" : {field} Kamiki Village - Shop Slot 6
 class "Kusa Village" 
 "Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Chest on rafters after banners
 "Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Chest on rafters before banners
@@ -99,58 +111,77 @@ class "Kusa Village"
 "Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Underwater Chest near Fuse's house right
 "Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Underwater Chest near Fuse's house left
 "Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Shop Slot 1
+"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Shop Slot 2
+"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Shop Slot 3
+"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Shop Slot 4
+"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Shop Slot 5
+"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Shop Slot 6
+"Kusa Village" : {method} <&lock-locked> //Kusa Village - Save Fuse//: //**Kusa Village - Save Fuse**//
 "Kusa Village" : {method} <&lock-locked> //Kusa Village - Defeat Blockhead//: //**Kusa Village - Defeat Blockhead**//
-"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Save Rei
-"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Save Shin
-"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Save Chi
-"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Save Ko
-"Kusa Village" : {field} <&lock-unlocked,color=transparent> Kusa Village - Save Tei
+"Kusa Village" : {method} <&lock-locked> //Kusa Village - Access Blockhead//: //**Kusa Village - Access Blockhead**//
+"Kusa Village" : {method} <&lock-locked> //Kusa Village - Save Rei//: //**Satomi Power Orb (Rei)**//
+"Kusa Village" : {method} <&lock-locked> //Kusa Village - Save Shin//: //**Satomi Power Orb (Shin)**//
+"Kusa Village" : {method} <&lock-locked> //Kusa Village - Save Chi//: //**Satomi Power Orb (Chi)**//
+"Kusa Village" : {method} <&lock-locked> //Kusa Village - Save Ko//: //**Satomi Power Orb (Ko)**//
+"Kusa Village" : {method} <&lock-locked> //Kusa Village - Save Tei//: //**Satomi Power Orb (Tei)**//
 "Mist Warp Hub" <--> "Kusa Village"
-class "Sasa Sanctuary" 
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 4th West side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 2nd West side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 5th East side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 3rd East side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 1st East side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 4th East side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 2nd East side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 5th West side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 3rd West side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 1st West side chest near Papa Jamba
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Buried Chest near hot springs
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Nuregami
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Daruma Doll
-"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Shop Slot 1
-"Sasa Sanctuary" : {method} <&lock-locked> //Sasa Sanctuary - Dig with Mr Bamboo//: //**Sasa Sanctuary - Dig with Mr Bamboo**//
-"Sasa Sanctuary" : {method} <&lock-locked> //Sasa Sanctuary - Open Bamboo grove Door//: //**Sasa Sanctuary - Open Bamboo grove Door**//
-"Mist Warp Hub" <--> "Sasa Sanctuary"
+class "Sasa Sanctuary (Entrance)" 
+"Sasa Sanctuary (Entrance)" : {field} Sasa Sanctuary - Buried Chest near Entrance
+"Mist Warp Hub" <--> "Sasa Sanctuary (Entrance)"
 class "City Checkpoint (Taka side)" 
 "City Checkpoint (Taka side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Buried chest behind merchant
 "City Checkpoint (Taka side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Chest under ramp
 "City Checkpoint (Taka side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Shop Slot 1
+"City Checkpoint (Taka side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Shop Slot 2
+"City Checkpoint (Taka side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Shop Slot 3
+"City Checkpoint (Taka side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Shop Slot 4
+"City Checkpoint (Taka side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Shop Slot 5
+"City Checkpoint (Taka side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Shop Slot 6
 "City Checkpoint (Taka side)" : {method} <&lock-locked> //City Checkpoint - Activate the Drawbridge//: //**City Checkpoint - Activate the Drawbridge**//
 "Mist Warp Hub" <--> "City Checkpoint (Taka side)"
+class "Nothern Rysohima Coast" 
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest southwest on mainland
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest southwest of Umi's restaurant
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest on eastern beach mainland
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest near Yoichi
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest near Tomb cave entrance
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - West underwater clam near Umi's restaurant 2
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - West underwater clam near Umi's restaurant 1
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - East underwater clam near Umi's restaurant
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater Clam near mainland east beach 1 
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater Clam near mainland east beach 2 
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater Clam near mainland east beach 3 
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater Clam near mainland east beach 4 
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater chest in river 1
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater chest in river 2
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater chest in river 3
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater chest in river 4
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest south of ultimate origin mirror
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Shop Slot 1
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Shop Slot 2
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Shop Slot 3
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Shop Slot 4
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Shop Slot 5
+"Nothern Rysohima Coast" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Shop Slot 6
+"Nothern Rysohima Coast" : {method} <&lock-locked> //Northern Ryoshima Coast - Unlock Warp Points//: //**Northern Ryoshima Coast - Unlock Warp Points**//
+"Nothern Rysohima Coast" : {method} <&lock-locked> //Northern Ryoshima Coast - Climb to Watcher's Cape//: //**Northern Ryoshima Coast - Climb to Watcher's Cape**//
+"Nothern Rysohima Coast" : {method} <&lock-locked> //Northern Ryoshima Coast - Climb to Tomb Cave//: //**Northern Ryoshima Coast - Climb to Tomb Cave**//
+"Nothern Rysohima Coast" : {method} <&lock-locked> //Northern Ryoshima Coast - Meet Orca//: //**Orca**//
+"Nothern Rysohima Coast" : {method} <&lock-locked> //Northern Ryoshima Coast - Open Treasure Cave//: //**Northern Ryoshima Coast - Open Treasure Cave**//
+"Nothern Rysohima Coast" --> "Northern Ryoshima Coast (Watcher's cape mandatory Encounter)"
+"Mist Warp Hub" <--> "Nothern Rysohima Coast"
+class "Northern Ryoshima Coast (Secret Mist Warp Area)" 
+"Northern Ryoshima Coast (Secret Mist Warp Area)" : {field} Northern Ryoshima Coast - Chest in secret Mist Warp Area
+"Mist Warp Hub" <--> "Northern Ryoshima Coast (Secret Mist Warp Area)"
 class "Susano's Secret Underground Meditation Chamber" 
 "Susano's Secret Underground Meditation Chamber" : {method} <&lock-locked> //Kamiki Village - Wake up Susano//: //**Kamiki Village - Wake up Susano**//
 "Susano's house" <--> "Susano's Secret Underground Meditation Chamber"
-class "Cursed Hana Valley" 
-"Cursed Hana Valley" : {field} <&lock-unlocked,color=transparent> Hana Valley - Freestanding Chest
-"Cursed Hana Valley" : {field} <&lock-unlocked,color=transparent> Hana Valley - Buried chest near tunnel
-"Cursed Hana Valley" : {field} <&lock-unlocked,color=transparent> Hana Valley - Buried chest at entrance boulder
-"Cursed Hana Valley" : {method} <&lock-locked> //Hana Valley - Open the sun stone door//: //**Hana Valley - Open the sun stone door**//
-"Cursed Hana Valley" : {method} <&lock-locked> //Hana Valley - Defeat Sleepy//: //**Hana Valley - Defeat Sleepy**//
-"Cursed Hana Valley" : {method} <&lock-locked> //Hana Valley - Grow Guardian Sapling//: //**Hana Valley - Grow Guardian Sapling**//
-"Cursed Shinshu Field" <--> "Cursed Hana Valley"
-"Cursed Hana Valley" --> " Hana Valley - Sakigami sequence"
-class "Hana Valley" 
-"Hana Valley" : {field} Hana Valley - Chest on Island
-"Hana Valley" : {field} Hana Valley - Sun Fragment Chest (Bloom every Tree)
-"Cursed Shinshu Field" <--> "Hana Valley"
+class "Shinshu Field (Common)" 
 class "Shinshu Field (Cave to Agata Forest)" 
 "Shinshu Field (Cave to Agata Forest)" : {method} <&lock-locked> //Shinshu Field - Open Entrance to Agata Forest//: //**Shinshu Field - Open Entrance to Agata Forest**//
 "Shinshu Field" <--> "Shinshu Field (Cave to Agata Forest)"
 class "Tama's house" 
-"Tama's house" : {field} Shinshu Field - Bakigami
+"Tama's house" : {field} --Shinshu Field - Bakugami--
 "Shinshu Field" <--> "Tama's house"
 class "Moon Cave (Entrance outside)" 
 "Moon Cave (Entrance outside)" : {method} <&lock-locked> //Moon Cave - Open entrance//: //**Moon Cave - Open entrance**//
@@ -163,29 +194,37 @@ class "Shinshu Field Plateau"
 "Shinshu Field" <--> "Shinshu Field Plateau"
 class "Mermaid Spring Warp Hub" 
 "Shinshu Field" <--> "Mermaid Spring Warp Hub"
-"Sasa Sanctuary" <--> "Mermaid Spring Warp Hub"
+"Nothern Rysohima Coast" <--> "Mermaid Spring Warp Hub"
 class "Taka Pass" 
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile near Guardian Sapling
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest on top of big rock above ledge
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile after cave
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile near cave west
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile near Ultimate Origin mirror
-"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest on top of Gutters' House
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest on top of Cutters' House
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest across banners
-"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Buried chest near Gutters' house
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Buried chest near Cutters' House
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Buried chest near mermaid spring
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Buried chest near tea house
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Buried chest near treasure hunter
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Buried under leaf pile near city checkpoint exit
-"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile behind Gutters' house
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile behind Cutters' House
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile near mermaid spring
-"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile near city checkpoint exit #2
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile near agata forest entrance
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Chest under leaf pile near moles gang
 "Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Shop Slot 1
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Shop Slot 2
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Shop Slot 3
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Shop Slot 4
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Shop Slot 5
+"Taka Pass" : {field} <&lock-unlocked,color=transparent> Taka Pass - Shop Slot 6
 "Taka Pass" : {method} <&lock-locked> //Taka Pass - Clear Devil gate near waterfall//: //**Taka Pass - Clear Devil gate near waterfall**//
 "Taka Pass" : {method} <&lock-locked> //Taka Pass - Save Chun//: //**Taka Pass - Save Chun**//
+"Taka Pass" : {method} <&lock-locked> //Taka Pass - Open Digging Cave//: //**Taka Pass - Open Digging Cave**//
 "Kusa Village" <--> "Taka Pass"
+"Sasa Sanctuary (Entrance)" <--> "Taka Pass"
 "City Checkpoint (Taka side)" <--> "Taka Pass"
+"Taka Pass" --> "Taka Pass (Common)"
 "Mermaid Spring Warp Hub" <--> "Taka Pass"
 class "Kusa Village (Blockhead cave)" 
 "Kusa Village (Blockhead cave)" : {field} Kusa Village - Chest inside Blockhead Cave
@@ -199,17 +238,30 @@ class "Kusa Village Inn"
 class "Gale Shrine (1F Entrance)" 
 "Gale Shrine (1F Entrance)" : {method} <&lock-locked> //Gale Shrine - Open Door//: //**Gale Shrine - Open Door**//
 "Kusa Village" <--> "Gale Shrine (1F Entrance)"
-class "Sasa Sanctuary (Entrance)" 
-"Sasa Sanctuary (Entrance)" : {field} Sasa Sanctuary - Buried Chest near Entrance
-"Taka Pass" <--> "Sasa Sanctuary (Entrance)"
-"Sasa Sanctuary" <--> "Sasa Sanctuary (Entrance)"
-class "Sasa Sanctuary (Bamboo Grove)" 
-"Sasa Sanctuary (Bamboo Grove)" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Buried Chest in bamboo grove stairs
-"Sasa Sanctuary (Bamboo Grove)" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Left side Buried Chest in bamboo grove back
-"Sasa Sanctuary (Bamboo Grove)" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Right side Buried Chest in bamboo grove back
-"Sasa Sanctuary (Bamboo Grove)" : {method} <&lock-locked> //Sasa Sanctuary - Save Take//: //**Sasa Sanctuary - Save Take**//
-"Sasa Sanctuary (Bamboo Grove)" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Get Orb from Take
-"Sasa Sanctuary" <--> "Sasa Sanctuary (Bamboo Grove)"
+class "Sasa Sanctuary" 
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 4th West side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 2nd West side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 5th East side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 3rd East side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 1st East side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 4th East side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 2nd East side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 5th West side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 3rd West side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - 1st West side chest near Papa Jamba
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Buried Chest near hot springs
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> --Sasa Sanctuary - Nuregami--
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Daruma Doll
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Shop Slot 1
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Shop Slot 2
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Shop Slot 3
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Shop Slot 4
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Shop Slot 5
+"Sasa Sanctuary" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Shop Slot 6
+"Sasa Sanctuary" : {method} <&lock-locked> //Sasa Sanctuary - Dig with Mr Bamboo//: //**Sasa Sanctuary - Dig with Mr Bamboo**//
+"Sasa Sanctuary" : {method} <&lock-locked> //Sasa Sanctuary - Open Bamboo grove Door//: //**Sasa Sanctuary - Open Bamboo grove Door**//
+"Sasa Sanctuary (Entrance)" <--> "Sasa Sanctuary"
+"Mermaid Spring Warp Hub" <--> "Sasa Sanctuary"
 class "City Checkpoint Drawbridge" 
 "City Checkpoint Drawbridge" : {field} City Checkpoint - Chest inside torches circle
 "City Checkpoint Drawbridge" : {field} City Checkpoint - Chest on top of rock
@@ -220,18 +272,99 @@ class "City Checkpoint (River)"
 "City Checkpoint (River)" : {field} City Checkpoint - Burning chest on river's edge South near waterfall 
 "City Checkpoint (River)" : {field} City Checkpoint - Buired Chest on River Northern Island
 "City Checkpoint (Taka side)" <--> "City Checkpoint (River)"
-class " Hana Valley - Sakigami sequence" 
-" Hana Valley - Sakigami sequence" : {field} <&lock-unlocked,color=transparent> Hana Valley - Sakigami
-" Hana Valley - Sakigami sequence" : {method} <&lock-locked> //Hana Valley - Guardian Sapling Restoration//: //**Hana Valley - Guardian Sapling Restoration**//
-" Hana Valley - Sakigami sequence" --> "Hana Valley"
+class "Nothern Rysohima Coast (Mandatory Fight)" 
+"Nothern Rysohima Coast (Mandatory Fight)" : {method} <&lock-locked> //Northern Ryoshima Coast - Mandatory Earth Nose Fight//: //**Northern Ryoshima Coast - Mandatory Earth Nose Fight**//
+"Nothern Rysohima Coast" <--> "Nothern Rysohima Coast (Mandatory Fight)"
+class "Northern Ryoshima Coast (Watcher's cape mandatory Encounter)" 
+"Northern Ryoshima Coast (Watcher's cape mandatory Encounter)" : {method} <&lock-locked> //Northern Ryoshima Coast - Mandatory encounter in Watcher's Cape//: //**Northern Ryoshima Coast - Mandatory encounter in Watcher's Cape**//
+"Northern Ryoshima Coast (Watcher's cape mandatory Encounter)" --> "Northern Ryoshima Coast (Watcher's cape)"
+class "Northern Ryoshima Coast (Guardian Sapling Island)" 
+"Northern Ryoshima Coast (Guardian Sapling Island)" : {field} Northern Ryoshima Coast - Buried Chest on guardian sapling island
+"Northern Ryoshima Coast (Guardian Sapling Island)" : {field} Northern Ryoshima Coast - Freestanding Chest on guardian sapling island
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Guardian Sapling Island)"
+class "Northern Ryoshima Coast (Tomb Cave)" 
+"Northern Ryoshima Coast (Tomb Cave)" : {field} Northern Ryoshima Coast - Chest in Tomb Cave 2
+"Northern Ryoshima Coast (Tomb Cave)" : {field} Northern Ryoshima Coast - Chest in Tomb Cave 3
+"Northern Ryoshima Coast (Tomb Cave)" : {field} Northern Ryoshima Coast - Chest in Tomb Cave 1
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Tomb Cave)"
+class "Northern Ryoshima Coast (Westernmost Island)" 
+"Northern Ryoshima Coast (Westernmost Island)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest on Westernmost island beach
+"Northern Ryoshima Coast (Westernmost Island)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Freestanding Chest on Westernmost island
+"Northern Ryoshima Coast (Westernmost Island)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater Clam on Westernmost island beach 2
+"Northern Ryoshima Coast (Westernmost Island)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater Clam on Westernmost island beach 3
+"Northern Ryoshima Coast (Westernmost Island)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Underwater Clam on Westernmost island beach 1
+"Northern Ryoshima Coast (Westernmost Island)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest on Westernmost island
+"Northern Ryoshima Coast (Westernmost Island)" : {method} <&lock-locked> //Northern Ryoshima Coast - Fish Marlin//: //**Northern Ryoshima Coast - Fish Marlin**//
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Westernmost Island)"
+class "Northern Ryoshima Coast (Island North of Catcall Tower)" 
+"Northern Ryoshima Coast (Island North of Catcall Tower)" : {field} Northern Ryoshima Coast - Southern Buried Chest on island north of catcall tower
+"Northern Ryoshima Coast (Island North of Catcall Tower)" : {field} Northern Ryoshima Coast - Northern Buried Chest on island north of catcall tower
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Island North of Catcall Tower)"
+class "Northern Ryoshima Coast (Umi's Restaurant)" 
+"Northern Ryoshima Coast (Umi's Restaurant)" : {field} Northern Ryoshima Coast - Kazegami (Whirlwind)
+"Northern Ryoshima Coast (Umi's Restaurant)" : {field} Northern Ryoshima Coast - Chest after Whirlwind
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Umi's Restaurant)"
+class "Northern Ryoshima Coast (Cherry Bomb 2 Island)" 
+"Northern Ryoshima Coast (Cherry Bomb 2 Island)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Burning Chest on Cherry Bomb 2 Island
+"Northern Ryoshima Coast (Cherry Bomb 2 Island)" : {method} <&lock-locked> //Northern Ryoshima Coast - Open Cherry Bomb 2 Cave//: //**Northern Ryoshima Coast - Open Cherry Bomb 2 Cave**//
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Cherry Bomb 2 Island)"
+class "Northern Ryoshima Coast (Power Slash 2 Island)" 
+"Northern Ryoshima Coast (Power Slash 2 Island)" : {method} <&lock-locked> //Northern Ryoshima Coast - Open Power Slash 2 Cave//: //**Northern Ryoshima Coast - Open Power Slash 2 Cave**//
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Power Slash 2 Island)"
+class "Northern Ryoshima Coast (Bandit Spider Island)" 
+"Northern Ryoshima Coast (Bandit Spider Island)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest on bandit spider island
+"Northern Ryoshima Coast (Bandit Spider Island)" : {method} <&lock-locked> //Northern Ryoshima Coast - Open Bandit Spider Cave//: //**Northern Ryoshima Coast - Open Bandit Spider Cave**//
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Bandit Spider Island)"
+class "Northern Ryoshima Coast (Sea)" 
+"Northern Ryoshima Coast (Sea)" : {field} Northern Ryoshima Coast - Underwater Clam on rocks west of watcher's cape
+"Northern Ryoshima Coast (Sea)" : {field} Northern Ryoshima Coast - Underwater Clam on rocks north of Guardian Sapling
+"Northern Ryoshima Coast (Sea)" : {field} Northern Ryoshima Coast - Underwater Clam on rocks southwest of watcher's cape
+"Northern Ryoshima Coast (Sea)" : {field} Northern Ryoshima Coast - Underwater Clam on rocks north of bandit spider island
+"Northern Ryoshima Coast (Sea)" : {field} Northern Ryoshima Coast - Underwater Clam on rocks west of watcher's cape 2
+"Northern Ryoshima Coast (Sea)" : {field} Northern Ryoshima Coast - Underwater Clam on rocks between Power Slash 2 and Cherry Bomb 2 Island 1
+"Northern Ryoshima Coast (Sea)" : {field} Northern Ryoshima Coast - Underwater Clam on rocks between Power Slash 2 and Cherry Bomb 2 Island 2
+"Northern Ryoshima Coast (Sea)" : {field} Northern Ryoshima Coast - Underwater Clam on rocks north of Catcall Tower
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Sea)"
+class "Northern Ryoshima Coast (Catcall Tower Island)" 
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Catcall Tower Island)"
+class "Northern Ryoshima Coast (Treasure cave)" 
+"Northern Ryoshima Coast (Treasure cave)" : {field} Northern Ryoshima Coast - Chest in treasure cave 1
+"Northern Ryoshima Coast (Treasure cave)" : {field} Northern Ryoshima Coast - Chest in treasure cave 2
+"Northern Ryoshima Coast (Treasure cave)" : {field} Northern Ryoshima Coast - Chest in treasure cave 3
+"Nothern Rysohima Coast" <--> "Northern Ryoshima Coast (Treasure cave)"
+class "Dragon Palace" 
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - West Clam at entrance 1
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - West Clam at entrance 2
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - East Clam at entrance
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - Chest inside guardhouse
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - Ms Turtle's Shop Slot 1
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - Ms Turtle's Shop Slot 2
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - Ms Turtle's Shop Slot 3
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - Ms Turtle's Shop Slot 4
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - Ms Turtle's Shop Slot 5
+"Dragon Palace" : {field} <&lock-unlocked,color=transparent> Dragon Palace - Ms Turtle's Shop Slot 6
+"Dragon Palace" : {method} <&lock-locked> //Dragon Palace - Open Treasure Cave behind stairs//: //**Dragon Palace - Open Treasure Cave behind stairs**//
+"Dragon Palace" : {method} <&lock-locked> //Dragon Palace - Get Shell Amulet from Otohime//: //**Dragon Palace - Get Shell Amulet from Otohime**//
+"Dragon Palace" : {method} <&lock-locked> //Dragon Palace - Give Dragon Orb to Otohime//: //**Dragon Palace - Give Dragon Orb to Otohime**//
+"Nothern Rysohima Coast" <--> "Dragon Palace"
+class "Cursed Hana Valley" 
+"Cursed Hana Valley" : {field} <&lock-unlocked,color=transparent> Hana Valley - Freestanding Chest
+"Cursed Hana Valley" : {field} <&lock-unlocked,color=transparent> Hana Valley - Buried chest near tunnel
+"Cursed Hana Valley" : {field} <&lock-unlocked,color=transparent> Hana Valley - Buried chest at entrance boulder
+"Cursed Hana Valley" : {method} <&lock-locked> //Hana Valley - Open the sun stone door//: //**Hana Valley - Open the sun stone door**//
+"Cursed Hana Valley" : {method} <&lock-locked> //Hana Valley - Defeat Sleepy//: //**Hana Valley - Defeat Sleepy**//
+"Cursed Hana Valley" : {method} <&lock-locked> //Hana Valley - Grow Guardian Sapling//: //**Hana Valley - Grow Guardian Sapling**//
+"Shinshu Field (Common)" <--> "Cursed Hana Valley"
+"Cursed Hana Valley" --> " Hana Valley - Sakigami sequence"
+class "Hana Valley" 
+"Hana Valley" : {field} Hana Valley - Chest on Island
+"Hana Valley" : {field} --Hana Valley - Sun Fragment Chest (Bloom every Tree)--
+"Shinshu Field (Common)" <--> "Hana Valley"
 class "Cursed Agata Forest" 
-"Cursed Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Burning Chest near Madame Fawn's 1
-"Cursed Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Burning Chest near Madame Fawn's 2
-"Cursed Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Burning Chest near Madame Fawn's 3
-"Cursed Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Ledge chest near Madame Fawn's 
 "Cursed Agata Forest" : {method} <&lock-locked> //Agata Forest - Restore Guardian Sapling//: //**Agata Forest - Restore Guardian Sapling**//
 "Shinshu Field (Cave to Agata Forest)" <--> "Cursed Agata Forest"
 "Cursed Agata Forest" --> "Agata Forest (Pre-waka fight)"
+"Cursed Agata Forest" --> "Agata Forest (Common)"
 class "Agata Forest" 
 "Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Treasure Bud near big rocks
 "Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Treasure Bud on lone tree island next to big rocks
@@ -258,18 +391,24 @@ class "Agata Forest"
 "Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Chest after Bridge cutscene
 "Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Chest near Kiba
 "Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Chest near Tusta ruins door
-"Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Fish Giant Salmon with Kokari
-"Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Yumigami
+"Agata Forest" : {field} <&lock-unlocked,color=transparent> --Agata Forest - Fish Giant Salmon with Kokari--
+"Agata Forest" : {field} <&lock-unlocked,color=transparent> --Agata Forest - Yumigami--
 "Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Shop Slot 1
+"Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Shop Slot 2
+"Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Shop Slot 3
+"Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Shop Slot 4
+"Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Shop Slot 5
+"Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Shop Slot 6
 "Agata Forest" : {method} <&lock-locked> //Agata Forest - Unlock Mermaid Spring//: //**Agata Forest - Unlock Mermaid Spring**//
 "Agata Forest" : {method} <&lock-locked> //Agata Forest - Open Ruins Door//: //**Agata Forest - Open Ruins Door**//
 "Agata Forest" : {method} <&lock-locked> //Agata Forest - Repair Bridge with Kokari//: //**Agata Forest - Repair Bridge with Kokari**//
 "Agata Forest" : {method} <&lock-locked> //Agata Forest - Fill Kushi's Barrel//: //**Agata Forest - Fill Kushi's Barrel**//
 "Agata Forest" : {method} <&lock-locked> //Agata Forest - Fight with Susano//: //**Agata Forest - Fight with Susano**//
 "Agata Forest" : {method} <&lock-locked> //Agata Forest - Fish Whopper with Kokari//: //**Agata Forest - Fish Whopper with Kokari**//
-"Agata Forest" : {field} <&lock-unlocked,color=transparent> Agata Forest - Get Orb from Ume
+"Agata Forest" : {method} <&lock-locked> //Agata Forest - Get Orb from Ume//: //**Satomi Power Orb (Justice)**//
 "Agata Forest" : {method} <&lock-locked> //Agata Forest - Open shortcut to Shinshu Field//: //**Agata Forest - Open shortcut to Shinshu Field**//
 "Shinshu Field (Cave to Agata Forest)" <--> "Agata Forest"
+"Agata Forest" --> "Agata Forest (Common)"
 "Mermaid Spring Warp Hub" <--> "Agata Forest"
 class "Moon Cave (Broken stairs)" 
 "Moon Cave (Entrance outside)" <--> "Moon Cave (Broken stairs)"
@@ -285,16 +424,57 @@ class "Ryoshima Coast"
 "Ryoshima Coast" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Buried Chest east of pier ramp
 "Ryoshima Coast" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Buried Chest on ledge near pier
 "Ryoshima Coast" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Shop Slot 1
+"Ryoshima Coast" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Shop Slot 2
+"Ryoshima Coast" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Shop Slot 3
+"Ryoshima Coast" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Shop Slot 4
+"Ryoshima Coast" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Shop Slot 5
+"Ryoshima Coast" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Shop Slot 6
 "Ryoshima Coast" : {method} <&lock-locked> //Ryoshima Coast - Climb catwalk tower//: //**Ryoshima Coast - Climb catwalk tower**//
 "Ryoshima Coast" : {method} <&lock-locked> //Ryoshima Coast - Open Lunar Lagoon//: //**Ryoshima Coast - Open Lunar Lagoon**//
 "Ryoshima Coast" : {method} <&lock-locked> //Ryoshima Coast - Open Shortcut To Mme Fawn's//: //**Ryoshima Coast - Open Shortcut To Mme Fawn's**//
 "Ryoshima Coast" : {method} <&lock-locked> //Ryoshima Coast - Clear Devil Gate near North Ryoshima Coast Entrance//: //**Ryoshima Coast - Clear Devil Gate near North Ryoshima Coast Entrance**//
+"Ryoshima Coast" : {method} <&lock-locked> //Ryoshima Coast - Open Bandit Spider Cave//: //**Ryoshima Coast - Open Bandit Spider Cave**//
+"Ryoshima Coast" : {method} <&lock-locked> //Ryoshima Coast - Open shortcut to Sei-an City//: //**Ryoshima Coast - Open shortcut to Sei-an City**//
 "Ryoshima Coast" --> "Ryoshima Coast (West of Pier)"
 "Ryoshima Coast" --> "Ryoshima Coast (Lunar Lagoon)"
 "Mermaid Spring Warp Hub" <--> "Ryoshima Coast"
-class "Agata Forest (Behind Bridge to Taka Pass)" 
-"Agata Forest" <--> "Agata Forest (Behind Bridge to Taka Pass)"
-"Taka Pass" <--> "Agata Forest (Behind Bridge to Taka Pass)"
+class "Sei-an City Aristocratic Quarter" 
+"Sei-an City Aristocratic Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Chest in Canal near easter water wheel
+"Sei-an City Aristocratic Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Chest in Canal near western water wheel
+"Sei-an City Aristocratic Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Freestanding chest west of bridge gate
+"Sei-an City Aristocratic Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest west of bridge gate
+"Sei-an City Aristocratic Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest east of bridge gate
+"Sei-an City Aristocratic Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Freestanding chest near guard house
+"Sei-an City Aristocratic Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest near guard house
+"Sei-an City Aristocratic Quarter" : {method} <&lock-locked> //Sei-an City (Aristocratic Quarter) - Fool Himiko's Guards//: //**Sei-an City (Aristocratic Quarter) - Fool Himiko's Guards**//
+"Mermaid Spring Warp Hub" <--> "Sei-an City Aristocratic Quarter"
+class "Catcall Tower(Top)" 
+"Catcall Tower(Top)" : {field} <&lock-unlocked,color=transparent> Catcall Tower - Freestanding chest near mermaid spring
+"Catcall Tower(Top)" : {field} <&lock-unlocked,color=transparent> Catcall Tower - Freestanding chest on top of tower 2F
+"Catcall Tower(Top)" : {field} <&lock-unlocked,color=transparent> Catcall Tower - Kabegami
+"Catcall Tower(Top)" : {field} <&lock-unlocked,color=transparent> Catcall Tower - Freestanding chest on top of tower behind cat statue
+"Catcall Tower(Top)" : {field} <&lock-unlocked,color=transparent> Catcall Tower - Secret chest after climbing the tower twice
+"Catcall Tower(Top)" : {method} <&lock-locked> //Catcall Tower - Unlock warp//: //**Catcall Tower - Unlock warp**//
+"Mermaid Spring Warp Hub" <--> "Catcall Tower(Top)"
+class "Dragon Palace (Soothing Spring)" 
+"Dragon Palace (Soothing Spring)" : {field} <&lock-unlocked,color=transparent> Dragon Palace - North Clam near Soothing Spring
+"Dragon Palace (Soothing Spring)" : {field} <&lock-unlocked,color=transparent> Dragon Palace - West Clam near Soothing Spring
+"Dragon Palace (Soothing Spring)" : {field} <&lock-unlocked,color=transparent> Dragon Palace -Chest on Pillars
+"Dragon Palace (Soothing Spring)" : {field} <&lock-unlocked,color=transparent> Dragon Palace - Nuregami (Fountain)
+"Dragon Palace (Soothing Spring)" : {field} <&lock-unlocked,color=transparent> --Dragon Palace - Chest after fountain--
+"Dragon Palace (Soothing Spring)" : {method} <&lock-locked> //Dragon Palace - Restore the soothing spring//: //**Dragon Palace - Restore the soothing spring**//
+"Dragon Palace" <--> "Dragon Palace (Soothing Spring)"
+"Mermaid Spring Warp Hub" <--> "Dragon Palace (Soothing Spring)"
+class "Taka Pass (Common)" 
+"Taka Pass (Common)" : {field} Taka pass - Stray bead chest in cave pond
+"Taka Pass (Common)" : {field} Taka pass - Burning chest in cave upper
+"Taka Pass (Common)" : {field} Taka pass - Second Burning chest in cave upper
+"Taka Pass (Common)" --> "Agata Forest (Behind Bridge to Taka Pass)"
+class "Taka Pass Cave" 
+"Taka Pass Cave" : {field} Taka Pass - Chest in treasure cave 1
+"Taka Pass Cave" : {field} Taka Pass - Chest in treasure cave 2
+"Taka Pass Cave" : {field} Taka Pass - Chest in treasure cave 3
+"Taka Pass" <--> "Taka Pass Cave"
 class "Gale Shrine (1F Main room)" 
 "Gale Shrine (1F Main room)" : {field} <&lock-unlocked,color=transparent> Gale Shrine - 1st Underwater Chest in entrance room
 "Gale Shrine (1F Main room)" : {field} <&lock-unlocked,color=transparent> Gale Shrine - 2nd Underwater Chest in entrance room
@@ -303,19 +483,75 @@ class "Gale Shrine (1F Main room)"
 "Gale Shrine (1F Main room)" : {method} <&lock-locked> //Gale Shrine - Open Lift//: //**Gale Shrine - Open Lift**//
 "Gale Shrine (1F Main room)" : {method} <&lock-locked> //Gale Shrine - Move the Windmill Bridges//: //**Gale Shrine - Move the Windmill Bridges**//
 "Gale Shrine (1F Entrance)" <--> "Gale Shrine (1F Main room)"
+class "Sasa Sanctuary (Bamboo Grove)" 
+"Sasa Sanctuary (Bamboo Grove)" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Buried Chest in bamboo grove stairs
+"Sasa Sanctuary (Bamboo Grove)" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Left side Buried Chest in bamboo grove back
+"Sasa Sanctuary (Bamboo Grove)" : {field} <&lock-unlocked,color=transparent> Sasa Sanctuary - Right side Buried Chest in bamboo grove back
+"Sasa Sanctuary (Bamboo Grove)" : {method} <&lock-locked> //Sasa Sanctuary - Save Take//: //**Sasa Sanctuary - Save Take**//
+"Sasa Sanctuary (Bamboo Grove)" : {method} <&lock-locked> //Sasa Sanctuary - Get Orb from Take//: //**Satomi Power Orb (Duty)**//
+"Sasa Sanctuary" <--> "Sasa Sanctuary (Bamboo Grove)"
 class "City Checkpoint (Ryoshima side)" 
 "City Checkpoint (Ryoshima side)" : {field} <&lock-unlocked,color=transparent> City Checkpoint - Buried Chest on Ryoshima side after cursed patches
 "City Checkpoint (Ryoshima side)" : {method} <&lock-locked> //City Checkpoint - Restore Cursed Patches on Ryoshima side//: //**City Checkpoint - Restore Cursed Patches on Ryoshima side**//
 "City Checkpoint Drawbridge" <--> "City Checkpoint (Ryoshima side)"
 "City Checkpoint (Ryoshima side)" --> "City Checkpoint (River)"
 "Ryoshima Coast" <--> "City Checkpoint (Ryoshima side)"
+class "Ryoshima Coast (Near Seian City Entrance)" 
+"Ryoshima Coast (Near Seian City Entrance)" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Buried chest on ledge near Seian city entrance
+"Ryoshima Coast (Near Seian City Entrance)" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Freestanding chest near Seian city entrance stake fence
+"Ryoshima Coast (Near Seian City Entrance)" : {method} <&lock-locked> //Ryoshima Coast - Open Door to North Ryoshima Coast//: //**Ryoshima Coast - Open Door to North Ryoshima Coast**//
+"Nothern Rysohima Coast (Mandatory Fight)" <--> "Ryoshima Coast (Near Seian City Entrance)"
+class "Northern Ryoshima Coast (Watcher's cape)" 
+"Northern Ryoshima Coast (Watcher's cape)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Buried Chest in watcher's cape
+"Northern Ryoshima Coast (Watcher's cape)" : {method} <&lock-locked> //Northern Ryoshima Coast - Open Whirlpool//: //**Northern Ryoshima Coast - Open Whirlpool**//
+"Northern Ryoshima Coast (Watcher's cape)" : {method} <&lock-locked> //Northern Ryoshima Coast - Open Bridge to Oni Island//: //**Northern Ryoshima Coast - Open Bridge to Oni Island**//
+"Northern Ryoshima Coast (Watcher's cape)" --> "Nothern Rysohima Coast"
+class "Northern Ryoshima Coast (Cherry Bomb 2 Cave)" 
+"Northern Ryoshima Coast (Cherry Bomb 2 Cave)" : {method} <&lock-locked> //Northern Ryoshima Coast - Offer 120,000 yen in Cherry Bomb 2 Fountain//: //**Northern Ryoshima Coast - Offer 120,000 yen in Cherry Bomb 2 Fountain**//
+"Northern Ryoshima Coast (Cherry Bomb 2 Island)" <--> "Northern Ryoshima Coast (Cherry Bomb 2 Cave)"
+class "Northern Ryoshima Coast (Power Slash 2 Cave)" 
+"Northern Ryoshima Coast (Power Slash 2 Cave)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Bakugami (Cherry Bomb 2)
+"Northern Ryoshima Coast (Power Slash 2 Cave)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Chest after Cherry Bomb 2
+"Northern Ryoshima Coast (Power Slash 2 Cave)" : {method} <&lock-locked> //Northern Ryoshima Coast - Offer 60,000 yen in Power Slash 2 Fountain//: //**Northern Ryoshima Coast - Offer 60,000 yen in Power Slash 2 Fountain**//
+"Northern Ryoshima Coast (Power Slash 2 Island)" <--> "Northern Ryoshima Coast (Power Slash 2 Cave)"
+class "Northern Ryoshima Coast (Bandit spider cave)" 
+"Northern Ryoshima Coast (Bandit spider cave)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Chest after Bandit Spider
+"Northern Ryoshima Coast (Bandit spider cave)" : {field} <&lock-unlocked,color=transparent> Northern Ryoshima Coast - Chest after 10 devil gates
+"Northern Ryoshima Coast (Bandit spider cave)" : {method} <&lock-locked> //Northern Ryoshima Coast - Defeat Bandit Spider in cave//: //**Northern Ryoshima Coast - Defeat Bandit Spider in cave**//
+"Northern Ryoshima Coast (Bandit spider cave)" : {method} <&lock-locked> //Northern Ryoshima Coast - Clear 10 Devil Gates in cave//: //**Northern Ryoshima Coast - Clear 10 Devil Gates in cave**//
+"Northern Ryoshima Coast (Bandit Spider Island)" <--> "Northern Ryoshima Coast (Bandit spider cave)"
+class "Catcall Tower (Bottom)" 
+"Catcall Tower (Bottom)" : {field} Catcall Tower - Freestanding Chest in front of tower
+"Catcall Tower (Bottom)" : {field} Catcall Tower - Freestanding Chest on west pillar
+"Catcall Tower (Bottom)" : {field} Catcall Tower - Freestanding Chest on east pillar
+"Northern Ryoshima Coast (Catcall Tower Island)" <--> "Catcall Tower (Bottom)"
+class "Dragon Palace (Water Dragon's Garden)" 
+"Dragon Palace (Water Dragon's Garden)" : {field} Dragon Palace - East Clam in garden
+"Dragon Palace (Water Dragon's Garden)" : {field} Dragon Palace - North Clam in garden
+"Dragon Palace (Water Dragon's Garden)" : {field} Dragon Palace - North Clam on ledge in garden
+"Dragon Palace (Water Dragon's Garden)" : {field} Dragon Palace - Chest after blooming the dragon's remains
+"Dragon Palace" <--> "Dragon Palace (Water Dragon's Garden)"
+class "Dragon Palace (Treasure Cave)" 
+"Dragon Palace (Treasure Cave)" : {field} Dragon Palace - Chest in treasure cave 1
+"Dragon Palace (Treasure Cave)" : {field} Dragon Palace - Chest in treasure cave 2
+"Dragon Palace (Treasure Cave)" : {field} Dragon Palace - Chest in treasure cave 3
+"Dragon Palace" <--> "Dragon Palace (Treasure Cave)"
+class " Hana Valley - Sakigami sequence" 
+" Hana Valley - Sakigami sequence" : {field} <&lock-unlocked,color=transparent> --Hana Valley - Sakigami--
+" Hana Valley - Sakigami sequence" : {method} <&lock-locked> //Hana Valley - Guardian Sapling Restoration//: //**Hana Valley - Guardian Sapling Restoration**//
+" Hana Valley - Sakigami sequence" --> "Hana Valley"
 class "Agata Forest (Pre-waka fight)" 
 "Agata Forest (Pre-waka fight)" : {method} <&lock-locked> //Agata Forest - Defeat Waka//: //**Agata Forest - Defeat Waka**//
 "Agata Forest (Pre-waka fight)" --> "Agata Forest"
-class "Madame Fawn's House" 
-"Cursed Agata Forest" <--> "Madame Fawn's House"
-"Agata Forest" <--> "Madame Fawn's House"
-"Ryoshima Coast" <--> "Madame Fawn's House"
+class "Agata Forest (Common)" 
+"Agata Forest (Common)" : {field} Agata Forest - Burning Chest near Madame Fawn's 1
+"Agata Forest (Common)" : {field} Agata Forest - Burning Chest near Madame Fawn's 2
+"Agata Forest (Common)" : {field} Agata Forest - Burning Chest near Madame Fawn's 3
+"Agata Forest (Common)" : {field} Agata Forest - Ledge chest near Madame Fawn's 
+class "Agata Forest (Behind Bridge to Taka Pass)" 
+"Agata Forest" <--> "Agata Forest (Behind Bridge to Taka Pass)"
+"Agata Forest (Behind Bridge to Taka Pass)" --> "Curesd Taka Pass"
+"Agata Forest (Behind Bridge to Taka Pass)" --> "Taka Pass"
 class "Tsuta Ruins (1F - Main Part)" 
 "Tsuta Ruins (1F - Main Part)" : {field} <&lock-unlocked,color=transparent> Tsuta Ruins - Treasure Bud in Entrance Hall Left Side
 "Tsuta Ruins (1F - Main Part)" : {field} <&lock-unlocked,color=transparent> Tsuta Ruins - Freestanding Chest at Entrance
@@ -334,21 +570,6 @@ class "Moon Cave (Underground Entrance)"
 "Moon Cave (Broken stairs)" <--> "Moon Cave (Underground Entrance)"
 class "Ryoshima Coast (Sea)" 
 "Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Underwater Clam in dojo island bombable room
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Clam on southernmost rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Clam between shimenawa rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Southern underwater Clam between shimenawa rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Northern underwater Clam between shimenawa rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Clam on easternmost rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Underwater Clam on southernmost rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Clam on rocks northwest of shimenawa rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - North Underwater clam on rocks northwest of shimenawa rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - South Underwater clam on rocks northwest of shimenawa rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Underwater clam on underwater rocks east of sunken ship
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Underwater clam on underwater rocks south of ultimate origin mirror
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Underwater Clam on easternmost rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Underwater Clam on easternmost underwater rocks
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - East Underwater Clam on rocks south of Sunken Ship
-"Ryoshima Coast (Sea)" : {field} Ryoshima Coast - West Underwater Clam on rocks south of Sunken Ship
 "Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Underwater Clam southwest of ultimate origin mirror
 "Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Eastmost Underwater Clam, south of city checkpoint warp
 "Ryoshima Coast (Sea)" : {field} Ryoshima Coast - Underwater Clam southeast of ultimate origin mirror
@@ -359,6 +580,7 @@ class "Ryoshima Coast (Catwalk Tower)"
 "Ryoshima Coast" <--> "Ryoshima Coast (Catwalk Tower)"
 class "Ryoshima Coast (Near Seian City Entrance Encounter)" 
 "Ryoshima Coast (Near Seian City Entrance Encounter)" : {method} <&lock-locked> //Ryoshima Coast - Mandatory Ubume Encounter//: //**Ryoshima Coast - Mandatory Ubume Encounter**//
+"Ryoshima Coast (Near Seian City Entrance)" <--> "Ryoshima Coast (Near Seian City Entrance Encounter)"
 "Ryoshima Coast" <--> "Ryoshima Coast (Near Seian City Entrance Encounter)"
 class "Ryoshima Coast (West of Pier)" 
 "Ryoshima Coast (West of Pier)" : {field} Ryoshima Coast - Underwater clam, west of Pier
@@ -366,14 +588,58 @@ class "Ryoshima Coast (West of Pier)"
 class "Ankoku Temple" 
 "Ankoku Temple" : {field} Ryoshima Coast - Chest inside Ankoku Temple
 "Ryoshima Coast" <--> "Ankoku Temple"
+class "Madame Fawn's House" 
+"Madame Fawn's House" : {field} Agata Forest - Stray Bead in Madame Fawn's
+"Agata Forest (Common)" <--> "Madame Fawn's House"
+"Ryoshima Coast" <--> "Madame Fawn's House"
 class "Ryoshima Coast (Lunar Lagoon)" 
 "Ryoshima Coast (Lunar Lagoon)" : {field} Ryoshima Coast - Buried Clam behind Sunken ship
 "Ryoshima Coast (Lunar Lagoon)" : {field} Ryoshima Coast - Buried Clam in front of Sunken ship
 "Ryoshima Coast (Lunar Lagoon)" : {field} Ryoshima Coast - Buried Clam in Lunar lagoon near rocks
 "Ryoshima Coast (Lunar Lagoon)" --> "Ryoshima Coast (Sea)"
-class "Curesd Taka Pass" 
-"Curesd Taka Pass" : {method} <&lock-locked> //Taka Pass - Blow up boulder to cave//: //**Taka Pass - Blow up boulder to cave**//
-"Agata Forest (Behind Bridge to Taka Pass)" <--> "Curesd Taka Pass"
+"Ryoshima Coast (Lunar Lagoon)" --> "Sunken Ship (Entrance)"
+class "Ryoshima Coast (Bandit spider cave)" 
+"Ryoshima Coast (Bandit spider cave)" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Chest after Bandit Spider
+"Ryoshima Coast (Bandit spider cave)" : {field} <&lock-unlocked,color=transparent> Ryoshima Coast - Chest after 10 devil gates
+"Ryoshima Coast (Bandit spider cave)" : {method} <&lock-locked> //Ryoshima Coast - Defeat Bandit Spider in cave//: //**Ryoshima Coast - Defeat Bandit Spider in cave**//
+"Ryoshima Coast (Bandit spider cave)" : {method} <&lock-locked> //Ryoshima Coast - Clear 10 Devil Gates in cave//: //**Ryoshima Coast - Clear 10 Devil Gates in cave**//
+"Ryoshima Coast" <--> "Ryoshima Coast (Bandit spider cave)"
+class "Sei-an City (Himiko's palace East Treasure Room)" 
+"Sei-an City (Himiko's palace East Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - West freestanding chest inside Himiko's east treasure room
+"Sei-an City (Himiko's palace East Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - West freestanding chest inside Himiko's east treasure room 2
+"Sei-an City (Himiko's palace East Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - East freestanding chest inside Himiko's east treasure room
+"Ryoshima Coast" <--> "Sei-an City (Himiko's palace East Treasure Room)"
+class "Sei-an City Aristocratic Quarter (Sick)" 
+"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Freestanding Chest outside Okuni's house
+"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest outside Okuni's house
+"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Underwater chest east of central bridge
+"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Freestanding Chest outside northeast house
+"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest outside northeast house
+"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest east of Himiko's palace guards
+"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest behind clock tower
+"Sei-an City Aristocratic Quarter (Sick)" : {method} <&lock-locked> //Sei-an City (Aristocratic Quarter) - Climb clock tower//: //**Sei-an City (Aristocratic Quarter) - Climb clock tower**//
+"Sei-an City Aristocratic Quarter" <--> "Sei-an City Aristocratic Quarter (Sick)"
+class "Sei-an City (Himiko's palace entrance)" 
+"Sei-an City (Himiko's palace entrance)" : {field} Sei-an City (Aristocratic Quarter) - East buried chest behind Himiko's guards
+"Sei-an City (Himiko's palace entrance)" : {field} Sei-an City (Aristocratic Quarter) - Northeast Freestanding chest in Himiko's palace entrance
+"Sei-an City (Himiko's palace entrance)" : {field} Sei-an City (Aristocratic Quarter) - Freestanding chest behind Himiko's palace
+"Sei-an City Aristocratic Quarter" <--> "Sei-an City (Himiko's palace entrance)"
+"Sei-an City (Himiko's palace entrance)" --> "Sei-an City Aristocratic Quarter (Sick)"
+"Sei-an City (Himiko's palace East Treasure Room)" <--> "Sei-an City (Himiko's palace entrance)"
+class "Sei-an City (Guards house)" 
+"Sei-an City (Guards house)" : {field} Sei-an City (Aristocratic Quarter) - Chest inside guard house
+"Sei-an City Aristocratic Quarter" <--> "Sei-an City (Guards house)"
+class "Sei-an City (Lake Beewa)" 
+"Sei-an City (Lake Beewa)" : {field} Sei-an City (Aristocratic Quarter) - Underwater chest in Lake Beewa
+"Sei-an City Aristocratic Quarter" <--> "Sei-an City (Lake Beewa)"
+class "Catcall Tower" 
+"Catcall Tower" : {field} Catcall Tower - Chest on 3rd cloud platform
+"Catcall Tower" : {field} Catcall Tower - Chest on stone platform above 3rd cloud platform
+"Catcall Tower" : {field} Catcall Tower - Chest on 4th cloud platform
+"Catcall Tower" : {field} Catcall Tower - Chest on stone platform above 4th cloud platform
+"Catcall Tower" : {field} Catcall Tower - Chest on 5th cloud platform
+"Catcall Tower (Bottom)" <--> "Catcall Tower"
+"Catcall Tower(Top)" <--> "Catcall Tower"
 class "Gale Shrine (Lift)" 
 "Gale Shrine (Lift)" : {field} <&lock-unlocked,color=transparent> Gale Shrine - 1st Chest Under Lift 
 "Gale Shrine (Lift)" : {field} <&lock-unlocked,color=transparent> Gale Shrine - 2nd Chest Under Lift 
@@ -395,6 +661,43 @@ class "Cursed Ryoshima Coast"
 "Cursed Ryoshima Coast" : {method} <&lock-locked> //Ryoshima Coast - Bloom the Guardian Sapling//: //**Ryoshima Coast - Bloom the Guardian Sapling**//
 "City Checkpoint (Ryoshima side)" <--> "Cursed Ryoshima Coast"
 "Cursed Ryoshima Coast" --> "Ryoshima Coast"
+class "Sei-an City Commoners' Quarter (No water)" 
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Northern Chest in West Canal
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in western Canal near water source
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in eastern Canal empty Ferry Stop
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Southern Chest in eastern Canal near bridge
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in eastern canal under balcony
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in western Canal between bridge and ferry spot
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in western canal north of ferry spot
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Southern chest in western Canal
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in Eastern Canal near stairs to Mr Flower's house
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried chest Chest near west ferry spot
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried chest near east wall
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Freestanding chest west of Ryoshima entrance
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried Chest behind Mr Flower's house
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in canal northeast corner
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Freestanding chest behind Aspiring Carpenter's house
+"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest east of Aristocratic quarters entrance
+"Sei-an City Commoners' Quarter (No water)" : {method} <&lock-locked> //Sei-an City (Commoner's Quarter) - Dig water source//: //**Sei-an City (Commoner's Quarter) - Dig water source**//
+"Ryoshima Coast (Near Seian City Entrance)" <--> "Sei-an City Commoners' Quarter (No water)"
+class "Oni Island (Entrance)" 
+"Northern Ryoshima Coast (Watcher's cape)" <--> "Oni Island (Entrance)"
+class "Inside the dragon" 
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Clam on pillar near entrance
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Freestanding Clam near entrance 1
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Freestanding Clam near entrance 2
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Freestanding Clam on high east pillar near entrance
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Clam on first pillar after tunnel
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Clam on middle pillar after tunnel
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Clam on last pillars after tunnel high
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Clam on last pillars after tunnel low
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Buried Clam near entrance west of river
+"Inside the dragon" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Buried Clam before small bridge
+"Inside the dragon" : {method} <&lock-locked> //Inside the dragon - Cross to deeper part//: //**Inside the dragon - Cross to deeper part**//
+"Inside the dragon" : {method} <&lock-locked> //Inside the dragon - Grab the key//: //**Inside the dragon - Grab the key**//
+"Dragon Palace (Water Dragon's Garden)" <--> "Inside the dragon"
+class "Curesd Taka Pass" 
+"Curesd Taka Pass" : {method} <&lock-locked> //Taka Pass - Blow up boulder to cave//: //**Taka Pass - Blow up boulder to cave**//
 class "Tsuta Ruins (Mushrooms)" 
 "Tsuta Ruins (Mushrooms)" : {field} <&lock-unlocked,color=transparent> Tsuta Ruins - Treasure bud behind logs in Mushrooms room
 "Tsuta Ruins (Mushrooms)" : {method} <&lock-locked> //Tsuta Ruins - Mandatory Double Ogre Fight//: //**Tsuta Ruins - Mandatory Double Ogre Fight**//
@@ -412,17 +715,17 @@ class "Tsuta Ruins (Left Side)"
 "Tsuta Ruins (Left Side)" : {method} <&lock-locked> //Tsuta Ruins - Restore Bridge to Devil Gates' room//: //**Tsuta Ruins - Restore Bridge to Devil Gates' room**//
 "Tsuta Ruins (1F - Main Part)" <--> "Tsuta Ruins (Left Side)"
 class "Tsuta Ruins (Inside central Statue)" 
-"Tsuta Ruins (Inside central Statue)" : {field} <&lock-unlocked,color=transparent> Tsuta Ruins - Tsutagami
+"Tsuta Ruins (Inside central Statue)" : {field} <&lock-unlocked,color=transparent> --Tsuta Ruins - Tsutagami--
 "Tsuta Ruins (Inside central Statue)" : {method} <&lock-locked> //Tsuta Ruins - Bloom every cursed patch inside statue//: //**Tsuta Ruins - Bloom every cursed patch inside statue**//
 "Tsuta Ruins (Inside central Statue)" : {method} <&lock-locked> //Tsuta Ruins - Open the top of the statue//: //**Tsuta Ruins - Open the top of the statue**//
 "Tsuta Ruins (Inside central Statue)" : {method} <&lock-locked> //Tsuta Ruins - Defeat the spider queen//: //**Tsuta Ruins - Defeat the spider queen**//
 "Tsuta Ruins (1F - Main Part)" <--> "Tsuta Ruins (Inside central Statue)"
 class "Calcified Cavern" 
 "Calcified Cavern" : {field} <&lock-unlocked,color=transparent> Calcified Cavern - Freestanding item
+"Calcified Cavern" : {field} <&lock-unlocked,color=transparent> Calcified Cavern - Chest after devil gate
 "Calcified Cavern" : {field} <&lock-unlocked,color=transparent> Calcified Cavern - Left Side chest
 "Calcified Cavern" : {field} <&lock-unlocked,color=transparent> Calcified Cavern - Frozen Chest
 "Calcified Cavern" : {method} <&lock-locked> //Calcified Cavern - Defeat devil gate//: //**Calcified Cavern - Defeat devil gate**//
-"Calcified Cavern" : {method} <&lock-locked> //Calcified Cavern - Get Mask//: //**Calcified Cavern - Get Mask**//
 "Calcified Cavern" : {method} <&lock-locked> //Calcified Cavern - Fool Yokai Guards//: //**Calcified Cavern - Fool Yokai Guards**//
 "Moon Cave (Underground Entrance)" <--> "Calcified Cavern"
 class "Ryoshima Coast (Dojo)" 
@@ -436,31 +739,110 @@ class "Ryoshima Coast (Top of Sunken Ship)"
 "Ryoshima Coast (Top of Sunken Ship)" : {field} Ryoshima Coast - Left Chest on top of Sunken Ship
 "Ryoshima Coast (Top of Sunken Ship)" : {field} Ryoshima Coast - Right Chest on top of Sunken Ship
 "Ryoshima Coast (Sea)" <--> "Ryoshima Coast (Top of Sunken Ship)"
-class "Ryoshima Coast (Near Seian City Entrance)" 
-"Ryoshima Coast (Near Seian City Entrance)" : {field} Ryoshima Coast - Buried chest on ledge near Seian city entrance
-"Ryoshima Coast (Near Seian City Entrance)" : {field} Ryoshima Coast - Freestanding chest near Seian city entrance stake fence
-"Ryoshima Coast (Near Seian City Entrance Encounter)" <--> "Ryoshima Coast (Near Seian City Entrance)"
+class "Ryoshima Coast (Sea, far away)" 
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Clam on southernmost rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Clam between shimenawa rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Southern underwater Clam between shimenawa rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Northern underwater Clam between shimenawa rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Clam on easternmost rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Underwater Clam on southernmost rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Clam on rocks northwest of shimenawa rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - North Underwater clam on rocks northwest of shimenawa rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - South Underwater clam on rocks northwest of shimenawa rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Underwater clam on underwater rocks east of sunken ship
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Underwater clam on underwater rocks south of ultimate origin mirror
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Underwater Clam on easternmost rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - Underwater Clam on easternmost underwater rocks
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - East Underwater Clam on rocks south of Sunken Ship
+"Ryoshima Coast (Sea, far away)" : {field} Ryoshima Coast - West Underwater Clam on rocks south of Sunken Ship
+"Ryoshima Coast (Sea)" <--> "Ryoshima Coast (Sea, far away)"
 class "Sunken Ship (Entrance)" 
 "Sunken Ship (Entrance)" : {method} <&lock-locked> //Sunken Ship - Rao climbs on Ama's back//: //**Sunken Ship - Rao climbs on Ama's back**//
 "Sunken Ship (Entrance)" : {method} <&lock-locked> //Sunken Ship - Open entrance Door//: //**Sunken Ship - Open entrance Door**//
-"Ryoshima Coast (Lunar Lagoon)" <--> "Sunken Ship (Entrance)"
-class "Cursed Taka Pass (Waka Fight)" 
-"Cursed Taka Pass (Waka Fight)" : {method} <&lock-locked> //Taka Pass - Rematch with Waka//: //**Taka Pass - Rematch with Waka**//
-"Curesd Taka Pass" <--> "Cursed Taka Pass (Waka Fight)"
+class "Sei-an City (Lecture Hall)" 
+"Sei-an City (Lecture Hall)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - West chest in lecture hall
+"Sei-an City (Lecture Hall)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - East chest in lecture hall
+"Sei-an City (Lecture Hall)" : {method} <&lock-locked> //Sei-an City (Aristocratic Quarter) - Give Prayer Slips to Rao//: //**Sei-an City (Aristocratic Quarter) - Give Prayer Slips to Rao**//
+"Sei-an City Aristocratic Quarter (Sick)" <--> "Sei-an City (Lecture Hall)"
+class "Sei-an City (Okuni's house)" 
+"Sei-an City (Okuni's house)" : {field} Sei-an City (Aristocratic Quarter) - Chest in Okuni's house
+"Sei-an City Aristocratic Quarter (Sick)" <--> "Sei-an City (Okuni's house)"
+class "Sei-an City Aristocratic Quarter (Northeast house)" 
+"Sei-an City Aristocratic Quarter (Northeast house)" : {field} Sei-an City (Aristocratic Quarter) - Chest in northeast house
+"Sei-an City Aristocratic Quarter (Sick)" <--> "Sei-an City Aristocratic Quarter (Northeast house)"
+class "Sei-an City (Clock tower)" 
+"Sei-an City (Clock tower)" : {field} Sei-an City (Aristocratic Quarter) - Thunder Chest in Clock Tower
+"Sei-an City Aristocratic Quarter (Sick)" <--> "Sei-an City (Clock tower)"
+class "Imperial Palace (Entrance)" 
+"Imperial Palace (Entrance)" : {method} <&lock-locked> //Imperial Palace - Prayer Slips//: //**Prayer Slips**//
+"Imperial Palace (Entrance)" : {method} <&lock-locked> //Imperial Palace - Grab Prayer Slips//: //**Imperial Palace - Grab Prayer Slips**//
+"Imperial Palace (Entrance)" : {method} <&lock-locked> //Imperial Palace - Become Smol//: //**Imperial Palace - Become Smol**//
+"Sei-an City Aristocratic Quarter (Sick)" <--> "Imperial Palace (Entrance)"
+class "Sei-an City (Himiko's palace West Treasure Room)" 
+"Sei-an City (Himiko's palace West Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - Daruma doll inside Himiko's west treasure room
+"Sei-an City (Himiko's palace West Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - Freestanding chest inside Himiko's west treasure room
+"Sei-an City (Himiko's palace entrance)" <--> "Sei-an City (Himiko's palace West Treasure Room)"
+class "Himiko's Palace" 
+"Himiko's Palace" : {field} <&lock-unlocked,color=transparent> Himiko's Palace - Chest behind elevator
+"Himiko's Palace" : {field} <&lock-unlocked,color=transparent> Himiko's Palace - Freestanding item before sea of Fire
+"Himiko's Palace" : {method} <&lock-locked> //Himiko's Palace - Cross sea of fire//: //**Himiko's Palace - Cross sea of fire**//
+"Sei-an City (Himiko's palace entrance)" <--> "Himiko's Palace"
 class "Gale Shrine (2F)" 
 "Gale Shrine (2F)" : {field} <&lock-unlocked,color=transparent> Gale Shrine - 2F Burning Chest
 "Gale Shrine (2F)" : {method} <&lock-locked> //Gale Shrine - 2F Cursed Scroll//: //**Gale Shrine - 2F Cursed Scroll**//
 "Gale Shrine (Lift)" <--> "Gale Shrine (2F)"
 class "Gale Shrine (3F)" 
-"Gale Shrine (3F)" : {field} Gale Shrine - Kazegami
+"Gale Shrine (3F)" : {field} --Gale Shrine - Kazegami--
 "Gale Shrine (3F)" : {field} Gale Shrine - 3F Sun Fragment chest near Kazegami
 "Gale Shrine (3F)" : {field} Gale Shrine - 3F Burning Chest
 "Gale Shrine (Lift)" <--> "Gale Shrine (3F)"
 class "Gale Shrine (Crimson Helm Arena)" 
-"Gale Shrine (Crimson Helm Arena)" : {field} <&lock-unlocked,color=transparent> Gale Shrine - Crimson Helm Reward
+"Gale Shrine (Crimson Helm Arena)" : {field} <&lock-unlocked,color=transparent> --Gale Shrine - Crimson Helm Reward--
 "Gale Shrine (Crimson Helm Arena)" : {method} <&lock-locked> //Gale Shrine - Defeat Crimson Helm//: //**Gale Shrine - Defeat Crimson Helm**//
-"Gale Shrine (Crimson Helm Arena)" : {field} <&lock-unlocked,color=transparent> Gale Shrine - Get Serpent Crystal
+"Gale Shrine (Crimson Helm Arena)" : {method} <&lock-locked> //Gale Shrine - Get Serpent Crystal//: //**Serpent Crystal**//
 "Gale Shrine (After Windmill Bridges)" <--> "Gale Shrine (Crimson Helm Arena)"
+class "Sei-an City Commoners' Quarter" 
+"Sei-an City Commoners' Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Freestanding Chest behind west buildings
+"Sei-an City Commoners' Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried Chest near west buildings
+"Sei-an City Commoners' Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried Chest near Yama's restaurant
+"Sei-an City Commoners' Quarter" : {method} <&lock-locked> //Sei-an City (Commoner's Quarter) - Blow up wall to southwest building//: //**Sei-an City (Commoner's Quarter) - Blow up wall to southwest building**//
+"Sei-an City Commoners' Quarter" : {method} <&lock-locked> //Sei-an City (Commoner's Quarter) - Climb to Tao Troopers Headquarters//: //**Sei-an City (Commoner's Quarter) - Climb to Tao Troopers Headquarters**//
+"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City Commoners' Quarter"
+class "Sei-an City (Weapon Shop)" 
+"Sei-an City (Weapon Shop)" : {field} Sei-an City - Weapon Shop Slot 1
+"Sei-an City (Weapon Shop)" : {field} Sei-an City - Weapon Shop Slot 2
+"Sei-an City (Weapon Shop)" : {field} Sei-an City - Weapon Shop Slot 3
+"Sei-an City (Weapon Shop)" : {field} Sei-an City - Weapon Shop Slot 4
+"Sei-an City (Weapon Shop)" : {field} Sei-an City - Weapon Shop Slot 5
+"Sei-an City (Weapon Shop)" : {field} Sei-an City - Weapon Shop Slot 6
+"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City (Weapon Shop)"
+class "Sei-an City (Tool Shop)" 
+"Sei-an City (Tool Shop)" : {field} Sei-an City - Tool Shop Slot 1
+"Sei-an City (Tool Shop)" : {field} Sei-an City - Tool Shop Slot 2
+"Sei-an City (Tool Shop)" : {field} Sei-an City - Tool Shop Slot 3
+"Sei-an City (Tool Shop)" : {field} Sei-an City - Tool Shop Slot 4
+"Sei-an City (Tool Shop)" : {field} Sei-an City - Tool Shop Slot 5
+"Sei-an City (Tool Shop)" : {field} Sei-an City - Tool Shop Slot 6
+"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City (Tool Shop)"
+class "Sei-an City (Mr Flower's house)" 
+"Sei-an City (Mr Flower's house)" : {field} Sei-an City (Commoner's quarter) - Chest Buried in Mr Flower's house
+"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City (Mr Flower's house)"
+class "Sei-an City Lake Beewa Bridge (Commoner's Side)" 
+"Sei-an City Lake Beewa Bridge (Commoner's Side)" : {method} <&lock-locked> //Sei-an City (Aristocratic Quarter) - Fish The Living Sword with Benkei//: //**Sei-an City (Aristocratic Quarter) - Fish The Living Sword with Benkei**//
+"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City Lake Beewa Bridge (Commoner's Side)"
+class "Oni Island (Entrance Bridge)" 
+"Oni Island (Entrance)" <--> "Oni Island (Entrance Bridge)"
+"Oni Island (Entrance Bridge)" --> "Oni Island (Sea of Fire)"
+class "Inside the dragon (Deeper part)" 
+"Inside the dragon (Deeper part)" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Chest in hidden waterspout area near origin mirror
+"Inside the dragon (Deeper part)" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Buried Clam After crossing pillars
+"Inside the dragon (Deeper part)" : {field} <&lock-unlocked,color=transparent> Inside the dragon - Buried Clam near origin mirror
+"Inside the dragon (Deeper part)" : {method} <&lock-locked> //Inside the dragon - Open door to dragon orb//: //**Inside the dragon - Open door to dragon orb**//
+"Inside the dragon" <--> "Inside the dragon (Deeper part)"
+class "Cursed Taka Pass (Waka Fight)" 
+"Cursed Taka Pass (Waka Fight)" : {method} <&lock-locked> //Taka Pass - Rematch with Waka//: //**Taka Pass - Rematch with Waka**//
+"Curesd Taka Pass" <--> "Cursed Taka Pass (Waka Fight)"
+"Cursed Taka Pass (Waka Fight)" --> "Taka Pass (Common)"
 class "Tsuta Ruins (Devil Gates)" 
 "Tsuta Ruins (Devil Gates)" : {field} <&lock-unlocked,color=transparent> Tsuta Ruins - Treasure Bud near Devil gates
 "Tsuta Ruins (Devil Gates)" : {field} <&lock-unlocked,color=transparent> Tsuta Ruins - Treasure Bud #2 near Devil gates
@@ -475,7 +857,7 @@ class "Tsuta Ruins (Devil Gates)"
 class "Tsuta Ruins (Spider Queen's lair)" 
 "Tsuta Ruins (Spider Queen's lair)" : {field} Tsuta Ruins - Left Chest before Spider queen
 "Tsuta Ruins (Spider Queen's lair)" : {field} Tsuta Ruins - Right Chest before Spider queen
-"Tsuta Ruins (Spider Queen's lair)" : {field} Tsuta Ruins - Boss reward
+"Tsuta Ruins (Spider Queen's lair)" : {field} --Tsuta Ruins - Boss reward--
 "Tsuta Ruins (Inside central Statue)" <--> "Tsuta Ruins (Spider Queen's lair)"
 class "Moon Cave (1F Main Room)" 
 "Moon Cave (1F Main Room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 1F Chest on ledge in the kitchen
@@ -489,27 +871,6 @@ class "Moon Cave (1F Main Room)"
 "Moon Cave (1F Main Room)" : {method} <&lock-locked> //Moon Cave - 1F Give all ingredients to Ajimi//: //**Moon Cave - 1F Give all ingredients to Ajimi**//
 "Calcified Cavern" <--> "Moon Cave (1F Main Room)"
 "Moon Cave (1F Main Room)" --> "Moon Cave (1F locked cave)"
-class "Sei-an City Commoners' Quarter (No water)" 
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Northern Chest in West Canal
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in western Canal near water source
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in eastern Canal empty Ferry Stop
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Southern Chest in eastern Canal near bridge
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in eastern canal under balcony
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in western Canal between bridge and ferry spot
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in western canal north of ferry spot
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Southern chest in western Canal
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in Eastern Canal near stairs to Mr Flower's house
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried chest Chest near west ferry spot
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried chest near east wall
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Freestanding chest west of Ryoshima entrance
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried Chest behind Mr Flower's house
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - NOT Chest in Canal near Mr Flower's house
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Freestanding Chest behind building
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in Canal near Mr Flower's house
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest in canal northeast corner
-"Sei-an City Commoners' Quarter (No water)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest east of Aristocratic quarters entrance
-"Sei-an City Commoners' Quarter (No water)" : {method} <&lock-locked> //Sei-an City (Commoner's Quarter) - Dig water source//: //**Sei-an City (Commoner's Quarter) - Dig water source**//
-"Ryoshima Coast (Near Seian City Entrance)" <--> "Sei-an City Commoners' Quarter (No water)"
 class "Sunken Ship (Southwest Room, Low water)" 
 "Sunken Ship (Southwest Room, Low water)" : {field} <&lock-unlocked,color=transparent> Sunken Ship - Chest in Southwest room 1
 "Sunken Ship (Southwest Room, Low water)" : {field} <&lock-unlocked,color=transparent> Sunken Ship - Chest in Southwest room 2
@@ -517,10 +878,58 @@ class "Sunken Ship (Southwest Room, Low water)"
 "Sunken Ship (Southwest Room, Low water)" : {method} <&lock-locked> //Sunken Ship - Mandatory Jiro & Saburo fight//: //**Sunken Ship - Mandatory Jiro & Saburo fight**//
 "Sunken Ship (Southwest Room, Low water)" : {method} <&lock-locked> //Sunken Ship - Open Northwest cursed door//: //**Sunken Ship - Open Northwest cursed door**//
 "Sunken Ship (Entrance)" <--> "Sunken Ship (Southwest Room, Low water)"
+class "Sei-an City Lake Beewa Bridge(Aristocratic Side)" 
+"Sei-an City Lake Beewa Bridge (Commoner's Side)" <--> "Sei-an City Lake Beewa Bridge(Aristocratic Side)"
+"Sei-an City (Lecture Hall)" <--> "Sei-an City Lake Beewa Bridge(Aristocratic Side)"
+class "Imperial Palace (Small Size - Entrance)" 
+"Imperial Palace (Small Size - Entrance)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Chest at entrance
+"Imperial Palace (Small Size - Entrance)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Locked Chest in poison puddle
+"Imperial Palace (Small Size - Entrance)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Freestanding Chest on poison puddle rocks
+"Imperial Palace (Small Size - Entrance)" : {method} <&lock-locked> //Imperial Palace - Mandatory Thunder Doom Mirror Encounter//: //**Imperial Palace - Mandatory Thunder Doom Mirror Encounter**//
+"Imperial Palace (Small Size - Entrance)" : {method} <&lock-locked> //Imperial Palace - Open west side lockjaw//: //**Imperial Palace - Open west side lockjaw**//
+"Imperial Palace (Entrance)" <--> "Imperial Palace (Small Size - Entrance)"
+class "Imperial Palace" 
+"Imperial Palace" : {field} Imperial Palace - Chest near the Emperor
+"Imperial Palace" : {field} Imperial Palace - Buried chest 1
+"Imperial Palace" : {field} Imperial Palace - Buried chest 2
+"Imperial Palace" : {field} Imperial Palace - Buried chest 3
+"Imperial Palace" : {field} Imperial Palace - Buried chest 4
+"Imperial Palace" : {field} Imperial Palace - Buried chest 5
+"Imperial Palace (Entrance)" <--> "Imperial Palace"
+class "Himiko's Palace (Himiko's Chambers)" 
+"Himiko's Palace (Himiko's Chambers)" : {field} <&lock-unlocked,color=transparent> --Himiko's Palace - Get Border Key from Queen Himiko--
+"Himiko's Palace (Himiko's Chambers)" : {method} <&lock-locked> //Himiko's Palace - Hear Himiko's request//: //**Himiko's Palace - Hear Himiko's request**//
+"Himiko's Palace (Himiko's Chambers)" : {method} <&lock-locked> //Himiko's Palace - Get Oni Island Location//: //**Himiko's Palace - Get Oni Island Location**//
+"Himiko's Palace" <--> "Himiko's Palace (Himiko's Chambers)"
+class "Sei-an City (Yama's restaurant)" 
+"Sei-an City (Yama's restaurant)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest after learning Fireburst
+"Sei-an City (Yama's restaurant)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Moegami(Fireburst)
+"Sei-an City (Yama's restaurant)" : {method} <&lock-locked> //Sei-an City (Commoner's Quarter) - Give golden mushroom to Yama//: //**Sei-an City (Commoner's Quarter) - Give golden mushroom to Yama**//
+"Sei-an City Commoners' Quarter" <--> "Sei-an City (Yama's restaurant)"
+class "Sei-an City (Southwest building)" 
+"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, 1F southwest Rafters
+"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, GF Freestanding Left
+"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, GF Freestanding Right
+"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, 2F northwest Rafters Left
+"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, 2F northwest Rafters Right
+"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, 2F north Rafters
+"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, GF in Cage
+"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, GF near Cage
+"Sei-an City Commoners' Quarter" <--> "Sei-an City (Southwest building)"
+class "Sei-an City (Tao Troopers Headquarters)" 
+"Sei-an City (Tao Troopers Headquarters)" : {field} Sei-an City (Commoner's quarter) - Freestanding chest behind Tao Troopers headquarters
+"Sei-an City Commoners' Quarter" <--> "Sei-an City (Tao Troopers Headquarters)"
+class "Sei-an City (Blossom's house)" 
+"Sei-an City (Blossom's house)" : {field} Sei-an City (Commoner's quarter) - Chest in Blossom's house
+"Sei-an City Commoners' Quarter" <--> "Sei-an City (Blossom's house)"
+class "Oni Island (Sea of Fire)" 
+"Oni Island (Sea of Fire)" : {field} Oni Island - East Vine Island chest on sea of fire
+"Oni Island (Sea of Fire)" : {field} Oni Island - West Vine Island chest on sea of fire
+class "Inside the dragon (Orb area)" 
+"Inside the dragon (Orb area)" : {method} <&lock-locked> //Inside the dragon - Flood with acid//: //**Inside the dragon - Flood with acid**//
+"Inside the dragon (Orb area)" : {method} <&lock-locked> //Inside the dragon - Get Dragon Orb//: //**Inside the dragon - Get Dragon Orb**//
+"Inside the dragon (Deeper part)" <--> "Inside the dragon (Orb area)"
 class "Cursed Taka Pass (Cave)" 
-"Cursed Taka Pass (Cave)" : {field} <&lock-unlocked,color=transparent> Taka pass - Stray bead chest in cave pond
-"Cursed Taka Pass (Cave)" : {field} <&lock-unlocked,color=transparent> Taka pass - Burning chest in cave upper
-"Cursed Taka Pass (Cave)" : {field} <&lock-unlocked,color=transparent> Taka pass - Second Burning chest in cave upper
 "Cursed Taka Pass (Cave)" : {method} <&lock-locked> //Taka pass - Restore Bridge to Guardian Sapling//: //**Taka pass - Restore Bridge to Guardian Sapling**//
 "Cursed Taka Pass (Waka Fight)" <--> "Cursed Taka Pass (Cave)"
 class "Moon Cave (1F locked cave)" 
@@ -534,13 +943,19 @@ class "Moon Cave (B2F Under Lift)"
 "Moon Cave (B2F Under Lift)" : {method} <&lock-locked> //Moon Cave - B2F oepn eyes door//: //**Moon Cave - B2F oepn eyes door**//
 "Moon Cave (1F Main Room)" <--> "Moon Cave (B2F Under Lift)"
 class "Moon Cave (1F Kitchen Back)" 
+"Moon Cave (1F Kitchen Back)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Ice Lips Chest
 "Moon Cave (1F Kitchen Back)" : {method} <&lock-locked> //Moon Cave - 1F Disrupt lift in kitchen back//: //**Moon Cave - 1F Disrupt lift in kitchen back**//
 "Moon Cave (1F Kitchen Back)" : {method} <&lock-locked> //Moon Cave - 1F Cursed Door in kitchen back//: //**Moon Cave - 1F Cursed Door in kitchen back**//
-"Moon Cave (1F Kitchen Back)" : {method} <&lock-locked> //Moon Cave - 1F Get Ice Lips//: //**Ice Lips**//
 "Moon Cave (1F Kitchen Back)" : {method} <&lock-locked> //Moon Cave - 1F Melt kitchen Ice form behind//: //**Moon Cave - 1F Melt Kitchen Ice**//
 "Moon Cave (1F Main Room)" <--> "Moon Cave (1F Kitchen Back)"
 class "Moon Cave (Orochi)" 
+"Moon Cave (Orochi)" : {field} <&lock-unlocked,color=transparent> --Moon Cave - Orochi Reward--
 "Moon Cave (Orochi)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Merchant Before Orochi Shop Slot 1
+"Moon Cave (Orochi)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Merchant Before Orochi Shop Slot 2
+"Moon Cave (Orochi)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Merchant Before Orochi Shop Slot 3
+"Moon Cave (Orochi)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Merchant Before Orochi Shop Slot 4
+"Moon Cave (Orochi)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Merchant Before Orochi Shop Slot 5
+"Moon Cave (Orochi)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Merchant Before Orochi Shop Slot 6
 "Moon Cave (Orochi)" : {method} <&lock-locked> //Moon Cave - Defeat Orochi//: //**Moon Cave - Defeat Orochi**//
 "Moon Cave (1F Main Room)" <--> "Moon Cave (Orochi)"
 class "Moon Cave (2F Geyser rafter)" 
@@ -555,37 +970,34 @@ class "Moon Cave (B1F Under Lift)"
 class "Moon Cave (2F Chest Rafter)" 
 "Moon Cave (2F Chest Rafter)" : {field} Moon Cave - 2F Rafters Chest
 "Moon Cave (1F Main Room)" <--> "Moon Cave (2F Chest Rafter)"
-class "Sei-an City Commoners' Quarter" 
-"Sei-an City Commoners' Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Freestanding Chest behind west buildings
-"Sei-an City Commoners' Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried Chest near west buildings
-"Sei-an City Commoners' Quarter" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Buried Chest near Yama's restaurant
-"Sei-an City Commoners' Quarter" : {method} <&lock-locked> //Sei-an City (Commoner's Quarter) - Blow up wall to southwest building//: //**Sei-an City (Commoner's Quarter) - Blow up wall to southwest building**//
-"Sei-an City Commoners' Quarter" : {method} <&lock-locked> //Sei-an City (Commoner's Quarter) - Climb to Tao Troopers Headquarters//: //**Sei-an City (Commoner's Quarter) - Climb to Tao Troopers Headquarters**//
-"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City Commoners' Quarter"
-class "Sei-an City (Weapon Shop)" 
-"Sei-an City (Weapon Shop)" : {field} Sei-an City Weapon Shop Slot 1
-"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City (Weapon Shop)"
-class "Sei-an City (Tool Shop)" 
-"Sei-an City (Tool Shop)" : {field} Sei-an City Tool Shop Slot 1
-"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City (Tool Shop)"
-class "Sei-an City (Mr Flower's house)" 
-"Sei-an City (Mr Flower's house)" : {field} Sei-an City (Commoner's quarter) - Chest Buried in Mr Flower's house
-"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City (Mr Flower's house)"
-class "Sei-an City Lake Beewa Bridge (Commoner's Side)" 
-"Sei-an City Lake Beewa Bridge (Commoner's Side)" : {method} <&lock-locked> //Sei-an City (Aristocratic Quarter) - Fish The Living Sword with Benkei//: //**Sei-an City (Aristocratic Quarter) - Fish The Living Sword with Benkei**//
-"Sei-an City Commoners' Quarter (No water)" <--> "Sei-an City Lake Beewa Bridge (Commoner's Side)"
 class "Sunken Ship (Bone Pile Room, Low water)" 
 "Sunken Ship (Southwest Room, Low water)" <--> "Sunken Ship (Bone Pile Room, Low water)"
+class "Imperial Palace (Small Size - Feet Hell)" 
+"Imperial Palace (Small Size - Feet Hell)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Chest in feet hell northern alcove
+"Imperial Palace (Small Size - Feet Hell)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Chest in feet hell southern alcove
+"Imperial Palace (Small Size - Feet Hell)" : {method} <&lock-locked> //Imperial Palace - Blow up alcove walls in feet hell//: //**Imperial Palace - Blow up alcove walls in feet hell**//
+"Imperial Palace (Small Size - Feet Hell)" : {method} <&lock-locked> //Imperial Palace - Grab lockjaw key//: //**Imperial Palace - Grab lockjaw key**//
+"Imperial Palace (Small Size - Feet Hell)" : {method} <&lock-locked> //Imperial Palace - Outspeed the Brooms//: //**Imperial Palace - Outspeed the Brooms**//
+"Imperial Palace (Small Size - Entrance)" <--> "Imperial Palace (Small Size - Feet Hell)"
+class "Imperial Palace (Small Size - West cave after lockjaw)" 
+"Imperial Palace (Small Size - West cave after lockjaw)" : {method} <&lock-locked> //Imperial Palace - Blow up west cave floor//: //**Imperial Palace - Blow up west cave floor**//
+"Imperial Palace (Small Size - Entrance)" <--> "Imperial Palace (Small Size - West cave after lockjaw)"
+class "Oni Island (Sea of Fire Upper Part)" 
+"Oni Island (Sea of Fire Upper Part)" : {field} <&lock-unlocked,color=transparent> Oni Island - East chest on sea upper center
+"Oni Island (Sea of Fire Upper Part)" : {field} <&lock-unlocked,color=transparent> Oni Island - West chest on sea upper center
+"Oni Island (Sea of Fire Upper Part)" : {method} <&lock-locked> //Oni Island - Mandatory Fight before entrance//: //**Oni Island - Mandatory Fight before entrance**//
+"Oni Island (Sea of Fire)" <--> "Oni Island (Sea of Fire Upper Part)"
+"Oni Island (Sea of Fire Upper Part)" --> "Oni Island (Entrance Bridge)"
 class "Cursed Taka Pass (Guardian Sapling)" 
 "Cursed Taka Pass (Guardian Sapling)" : {method} <&lock-locked> //Taka pass - Restore Guardian Sapling//: //**Taka pass - Restore Guardian Sapling**//
 "Cursed Taka Pass (Cave)" <--> "Cursed Taka Pass (Guardian Sapling)"
 "Cursed Taka Pass (Guardian Sapling)" --> "Taka Pass"
 class "Moon Cave (1F locked cave back)" 
+"Moon Cave (1F locked cave back)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Ogre Liver Chest
 "Moon Cave (1F locked cave back)" : {method} <&lock-locked> //Moon Cave - Mandatory Ogre Encounter//: //**Moon Cave - Mandatory Ogre Encounter**//
-"Moon Cave (1F locked cave back)" : {method} <&lock-locked> //Moon Cave - Get Ogre Liver//: //**Ogre Liver**//
 "Moon Cave (1F locked cave)" <--> "Moon Cave (1F locked cave back)"
 class "Moon Cave (B2F Frozen Statue Room)" 
-"Moon Cave (B2F Frozen Statue Room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - Moegami
+"Moon Cave (B2F Frozen Statue Room)" : {field} <&lock-unlocked,color=transparent> --Moon Cave - Moegami--
 "Moon Cave (B2F Frozen Statue Room)" : {method} <&lock-locked> //Moon Cave - B2F Defeat Ice Lips//: //**Moon Cave - B2F Defeat Ice Lips**//
 "Moon Cave (B2F Frozen Statue Room)" : {method} <&lock-locked> //Moon Cave - B2F Melt Ice block to other lift//: //**Moon Cave - B2F Melt Ice block to other lift**//
 "Moon Cave (B2F Under Lift)" <--> "Moon Cave (B2F Frozen Statue Room)"
@@ -609,27 +1021,27 @@ class "Moon Cave (B1F Underground Lake)"
 "Moon Cave (B1F Underground Lake)" : {method} <&lock-locked> //Moon Cave - B1F Lake open valve//: //**Moon Cave - B1F Lake open valve**//
 "Moon Cave (B1F Underground Lake)" : {method} <&lock-locked> //Moon Cave - B1F Lake geyser//: //**Moon Cave - B1F Lake geyser**//
 "Moon Cave (B1F Under Lift)" <--> "Moon Cave (B1F Underground Lake)"
-class "Sei-an City (Yama's restaurant)" 
-"Sei-an City (Yama's restaurant)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Chest after learning Fireburst
-"Sei-an City (Yama's restaurant)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Commoner's quarter) - Moegami(Fireburst)
-"Sei-an City (Yama's restaurant)" : {method} <&lock-locked> //Sei-an City (Commoner's Quarter) - Give golden mushroom to Yama//: //**Sei-an City (Commoner's Quarter) - Give golden mushroom to Yama**//
-"Sei-an City Commoners' Quarter" <--> "Sei-an City (Yama's restaurant)"
-class "Sei-an City (Southwest building)" 
-"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, 1F southwest Rafters
-"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, GF Freestanding Left
-"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, 2F northwest Rafters Left
-"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, 2F north central Rafters
-"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, GF in Cage
-"Sei-an City (Southwest building)" : {field} Sei-an City (Commoner's quarter) - Chest in southwest building, GF near Cage
-"Sei-an City Commoners' Quarter" <--> "Sei-an City (Southwest building)"
-class "Sei-an City (Tao Troopers Headquarters)" 
-"Sei-an City (Tao Troopers Headquarters)" : {field} Sei-an City (Commoner's quarter) - Freestanding chest behind Tao Troopers headquarters
-"Sei-an City Commoners' Quarter" <--> "Sei-an City (Tao Troopers Headquarters)"
-class "Sei-an City Lake Beewa Bridge(Aristocratic Side)" 
-"Sei-an City Lake Beewa Bridge (Commoner's Side)" <--> "Sei-an City Lake Beewa Bridge(Aristocratic Side)"
 class "Sunken Ship (Northwest Room, Low water)" 
 "Sunken Ship (Northwest Room, Low water)" : {method} <&lock-locked> //Sunken Ship - Raise water level//: //**Sunken Ship - Raise water level**//
 "Sunken Ship (Bone Pile Room, Low water)" <--> "Sunken Ship (Northwest Room, Low water)"
+class "Imperial Palace (Small Size - Poison Sōzu Room)" 
+"Imperial Palace (Small Size - Poison Sōzu Room)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Locked chest near poison Sozu
+"Imperial Palace (Small Size - Poison Sōzu Room)" : {method} <&lock-locked> //Imperial Palace - Cross the Sozu//: //**Imperial Palace - Cross the Sozu**//
+"Imperial Palace (Small Size - Feet Hell)" <--> "Imperial Palace (Small Size - Poison Sōzu Room)"
+class "Imperial Palace (Small Size - Spider Cave)" 
+"Imperial Palace (Small Size - Spider Cave)" : {method} <&lock-locked> //Imperial Palace - Blow up wall to mist flask room//: //**Imperial Palace - Blow up wall to mist flask room**//
+"Imperial Palace (Small Size - West cave after lockjaw)" <--> "Imperial Palace (Small Size - Spider Cave)"
+class "Oni Island (Interior Entrance Room)" 
+"Oni Island (Interior Entrance Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - Shop Slot 1
+"Oni Island (Interior Entrance Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - Shop Slot 2
+"Oni Island (Interior Entrance Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - Shop Slot 3
+"Oni Island (Interior Entrance Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - Shop Slot 4
+"Oni Island (Interior Entrance Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - Shop Slot 5
+"Oni Island (Interior Entrance Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - Shop Slot 6
+"Oni Island (Interior Entrance Room)" : {method} <&lock-locked> //Oni Island - 1F Defeat Poltergeists to get Key//: //**Oni Island - 1F Defeat Poltergeists to get Key**//
+"Oni Island (Interior Entrance Room)" : {method} <&lock-locked> //Oni Island - 1F Open West room thunder door//: //**Oni Island - 1F Open West room thunder door**//
+"Oni Island (Interior Entrance Room)" : {method} <&lock-locked> //Oni Island - 1F Open Gate with Thunder Key//: //**Oni Island - 1F Open Gate with Thunder Key**//
+"Oni Island (Sea of Fire Upper Part)" <--> "Oni Island (Interior Entrance Room)"
 class "Moon Cave (B2F Behind Bombable wall)" 
 "Moon Cave (B2F Behind Bombable wall)" : {field} Moon Cave - B2F Chest behind bombable wall
 "Moon Cave (B2F Lift Back)" <--> "Moon Cave (B2F Behind Bombable wall)"
@@ -637,69 +1049,105 @@ class "Moon Cave (3F Fire Eye Room)"
 "Moon Cave (3F Fire Eye Room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F Left Frozen Chest after Fire eye room
 "Moon Cave (3F Fire Eye Room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F Middle Frozen Chest after Fire eye room
 "Moon Cave (3F Fire Eye Room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F Right Frozen Chest after Fire eye room
+"Moon Cave (3F Fire Eye Room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F Fire Eye Chest
 "Moon Cave (3F Fire Eye Room)" : {method} <&lock-locked> //Moon Cave - 3F Cursed Fire Eye Torii//: //**Moon Cave - 3F Cursed Fire Eye Torii**//
-"Moon Cave (3F Fire Eye Room)" : {method} <&lock-locked> //Moon Cave - 3F Get Fire Eye//: //**Fire Eye**//
 "Moon Cave (3F Main room)" <--> "Moon Cave (3F Fire Eye Room)"
 class "Moon Cave (3F Sand room)" 
 "Moon Cave (3F Sand room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F Map Chest after ball puzzle
 "Moon Cave (3F Sand room)" : {method} <&lock-locked> //Moon Cave - 3F Push the ball//: //**Moon Cave - 3F Push the ball**//
 "Moon Cave (3F Sand room)" --> "Moon Cave (3F Rafters after sand room)"
 "Moon Cave (3F Sand room)" --> "Moon Cave (1F Main Room)"
-class "Sei-an City (Lecture Hall)" 
-"Sei-an City (Lecture Hall)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - West chest in lecture hall
-"Sei-an City (Lecture Hall)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - East chest in lecture hall
-"Sei-an City (Lecture Hall)" : {method} <&lock-locked> //Sei-an City (Aristocratic Quarter) - Give Prayer Slips to Rao//: //**Sei-an City (Aristocratic Quarter) - Give Prayer Slips to Rao**//
-"Sei-an City Lake Beewa Bridge(Aristocratic Side)" <--> "Sei-an City (Lecture Hall)"
 class "Sunken Ship (Northwest Room, High water)" 
 "Sunken Ship (Northwest Room, High water)" : {method} <&lock-locked> //Sunken Ship - Drain water level//: //**Sunken Ship - Drain water level**//
 "Sunken Ship (Northwest Room, Low water)" <--> "Sunken Ship (Northwest Room, High water)"
 class "Sunken Ship (Hands room Low water)" 
 "Sunken Ship (Northwest Room, Low water)" <--> "Sunken Ship (Hands room Low water)"
+class "Imperial Palace (Small Size - Emperor's Bedroom)" 
+"Imperial Palace (Small Size - Emperor's Bedroom)" : {field} Imperial Palace - Northwest locked chest in webs above the emperor's bedroom
+"Imperial Palace (Small Size - Emperor's Bedroom)" : {field} Imperial Palace - North central chest above the emperor's bedroom
+"Imperial Palace (Small Size - Emperor's Bedroom)" : {field} Imperial Palace - Southwest locked chest in webs above the emperor's bedroom
+"Imperial Palace (Small Size - Poison Sōzu Room)" <--> "Imperial Palace (Small Size - Emperor's Bedroom)"
+class "Imperial Palace (Small Size - Spider Cave Top Ledges)" 
+"Imperial Palace (Small Size - Spider Cave Top Ledges)" : {field} Imperial Palace - Locked Chest in spider cave webs
+"Imperial Palace (Small Size - Spider Cave)" <--> "Imperial Palace (Small Size - Spider Cave Top Ledges)"
+class "Imperial Palace (Small Size - Mist Flask Room)" 
+"Imperial Palace (Small Size - Mist Flask Room)" : {field} <&lock-unlocked,color=transparent> --Imperial Palace - Kasugami--
+"Imperial Palace (Small Size - Mist Flask Room)" : {method} <&lock-locked> //Imperial Palace - Outspeed the spider//: //**Imperial Palace - Outspeed the spider**//
+"Imperial Palace (Small Size - Mist Flask Room)" : {method} <&lock-locked> //Imperial Palace - Mandatory Wind Doom Mirror//: //**Imperial Palace - Mandatory Wind Doom Mirror**//
+"Imperial Palace (Small Size - Spider Cave)" <--> "Imperial Palace (Small Size - Mist Flask Room)"
+class "Oni Island (Pre tobi #1)" 
+"Oni Island (Pre tobi #1)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest above West stairs to B2F
+"Oni Island (Pre tobi #1)" : {method} <&lock-locked> //Oni Island - Tobi Race #1 (Simple Door)//: //**Oni Island - Tobi Race #1 (Simple Door)**//
+"Oni Island (Interior Entrance Room)" <--> "Oni Island (Pre tobi #1)"
+class "Oni Island (1F West Room)" 
+"Oni Island (1F West Room)" : {field} Oni Island - 1F Chest in West Room
+"Oni Island (Interior Entrance Room)" <--> "Oni Island (1F West Room)"
+class "Oni Island (1F Statue Room)" 
+"Oni Island (1F Statue Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Left Thunder chest before statue
+"Oni Island (1F Statue Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Right Thunder chest before statue
+"Oni Island (1F Statue Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Left chest in front of statue
+"Oni Island (1F Statue Room)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Right chest in front of statue
+"Oni Island (1F Statue Room)" : {method} <&lock-locked> //Oni Island - 1F Blow up Statue//: //**Oni Island - 1F Blow up Statue**//
+"Oni Island (Interior Entrance Room)" <--> "Oni Island (1F Statue Room)"
+class "Oni Island (1F Sliding Doors of hell)" 
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #1 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #2 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #3 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #4 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #5 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #6 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #7 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #8 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #9 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #10 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest in Sliding Door Maze #11 (of 11)
+"Oni Island (1F Sliding Doors of hell)" : {method} <&lock-locked> //Oni Island - 1F Blow up wall to exit maze//: //**Oni Island - 1F Blow up wall to exit maze**//
+"Oni Island (Interior Entrance Room)" <--> "Oni Island (1F Sliding Doors of hell)"
 class "Moon Cave (3F Rafters after sand room)" 
 "Moon Cave (3F Rafters after sand room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F Frozen Chest near merchant
 "Moon Cave (3F Rafters after sand room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F merchant Shop Slot 1
+"Moon Cave (3F Rafters after sand room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F merchant Shop Slot 2
+"Moon Cave (3F Rafters after sand room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F merchant Shop Slot 3
+"Moon Cave (3F Rafters after sand room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F merchant Shop Slot 4
+"Moon Cave (3F Rafters after sand room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F merchant Shop Slot 5
+"Moon Cave (3F Rafters after sand room)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F merchant Shop Slot 6
 "Moon Cave (3F Rafters after sand room)" : {method} <&lock-locked> //Moon Cave - 3F Rafters use flower//: //**Moon Cave - 3F Rafters use flower**//
 class "Moon Cave (2F Sand pit)" 
 "Moon Cave (2F Sand pit)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 3F Chest in sand pit
 "Moon Cave (2F Sand pit)" : {method} <&lock-locked> //Moon Cave - 3F Blow up Sand pit wall//: //**Moon Cave - 3F Blow up Sand pit wall**//
 "Moon Cave (3F Sand room)" <--> "Moon Cave (2F Sand pit)"
-class "Sei-an City Aristocratic Quarter (Sick)" 
-"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Freestanding Chest outside Okuni's house
-"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest outside Okuni's house
-"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Underwater chest east of central bridge
-"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Freestanding Chest outside northeast house
-"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest outside northeast house
-"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest east of Himiko's palace guards
-"Sei-an City Aristocratic Quarter (Sick)" : {field} <&lock-unlocked,color=transparent> Sei-an City (Aristocratic Quarter) - Buried chest behind clock tower
-"Sei-an City Aristocratic Quarter (Sick)" : {method} <&lock-locked> //Sei-an City (Aristocratic Quarter) - Climb clock tower//: //**Sei-an City (Aristocratic Quarter) - Climb clock tower**//
-"Sei-an City (Lecture Hall)" <--> "Sei-an City Aristocratic Quarter (Sick)"
 class "Sunken Ship (Bone Pile Room, High water)" 
 "Sunken Ship (Bone Pile Room, High water)" : {method} <&lock-locked> //Sunken Ship - Mandatory Ichiro fight//: //**Sunken Ship - Mandatory Ichiro fight**//
 "Sunken Ship (Northwest Room, High water)" <--> "Sunken Ship (Bone Pile Room, High water)"
 class "Sunken Ship (East Hallway Low water)" 
 "Sunken Ship (Hands room Low water)" <--> "Sunken Ship (East Hallway Low water)"
+class "Imperial Palace (Small Size - West Beam)" 
+"Imperial Palace (Small Size - West Beam)" : {field} Imperial Palace - Southmost chest on west beam above the emperor's bedroom
+"Imperial Palace (Small Size - West Beam)" : {field} Imperial Palace - Soutwest chest on west beam above the emperor's bedroom
+"Imperial Palace (Small Size - West Beam)" : {field} Imperial Palace - center chest on west beam above the emperor's bedroom
+"Imperial Palace (Small Size - Emperor's Bedroom)" <--> "Imperial Palace (Small Size - West Beam)"
+class "Imperial Palace (Small Size - Inside the Emperor's Body)" 
+"Imperial Palace (Small Size - Inside the Emperor's Body)" : {field} <&lock-unlocked,color=transparent> --Imperial Palace - Blight Reward--
+"Imperial Palace (Small Size - Inside the Emperor's Body)" : {method} <&lock-locked> //Imperial Palace - Defeat Blight//: //**Imperial Palace - Defeat Blight**//
+"Imperial Palace (Small Size - Emperor's Bedroom)" <--> "Imperial Palace (Small Size - Inside the Emperor's Body)"
+"Imperial Palace (Small Size - Inside the Emperor's Body)" --> "Imperial Palace"
+class "Oni Island (between Tobi #1 and #2)" 
+"Oni Island (between Tobi #1 and #2)" : {method} <&lock-locked> //Oni Island - Tobi Race #2 (Spike Platforms)//: //**Oni Island - Tobi Race #2 (Spike Platforms)**//
+"Oni Island (Pre tobi #1)" <--> "Oni Island (between Tobi #1 and #2)"
+class "Oni Island (B1F Alarm Room)" 
+"Oni Island (B1F Alarm Room)" : {method} <&lock-locked> //Oni Island - B1F Cut alarm//: //**Oni Island - B1F Cut alarm**//
+"Oni Island (1F Statue Room)" <--> "Oni Island (B1F Alarm Room)"
+class "Oni Island (1F Thunder Key Area)" 
+"Oni Island (1F Thunder Key Area)" : {method} <&lock-locked> //Oni Island - 1F Grab First Thunder Key//: //**Oni Island - 1F Grab First Thunder Key**//
+"Oni Island (1F Thunder Key Area)" : {method} <&lock-locked> //Oni Island - 1F Climb to thunder Door//: //**Oni Island - 1F Climb to thunder Door**//
+"Oni Island (1F Thunder Key Area)" : {method} <&lock-locked> //Oni Island - 1F Open Thunder Door after fist thunder Key//: //**Oni Island - 1F Open Thunder Door after fist thunder Key**//
+"Oni Island (1F Sliding Doors of hell)" <--> "Oni Island (1F Thunder Key Area)"
 class "Moon Cave (4F Rafters)" 
 "Moon Cave (4F Rafters)" : {method} <&lock-locked> //Moon Cave - 4F Rafters use flower//: //**Moon Cave - 4F Rafters use flower**//
 "Moon Cave (4F Rafters)" : {method} <&lock-locked> //Moon Cave - 4F Rafters cross banners//: //**Moon Cave - 4F Rafters cross banners**//
 "Moon Cave (4F Rafters)" : {method} <&lock-locked> //Moon Cave - 4F Mandatory Fight//: //**Moon Cave - 4F Mandatory Fight**//
 "Moon Cave (3F Rafters after sand room)" <--> "Moon Cave (4F Rafters)"
 "Moon Cave (4F Rafters)" --> "Moon Cave (1F Main Room)"
-class "Sei-an City (Okuni's house)" 
-"Sei-an City (Okuni's house)" : {field} Sei-an City (Aristocratic Quarter) - Chest in Okuni's house
-"Sei-an City Aristocratic Quarter (Sick)" <--> "Sei-an City (Okuni's house)"
-class "Sei-an City Aristocratic Quarter (Northeast house)" 
-"Sei-an City Aristocratic Quarter (Northeast house)" : {field} Sei-an City (Aristocratic Quarter) - Chest in northeast house
-"Sei-an City Aristocratic Quarter (Sick)" <--> "Sei-an City Aristocratic Quarter (Northeast house)"
-class "Sei-an City (Clock tower)" 
-"Sei-an City Aristocratic Quarter (Sick)" <--> "Sei-an City (Clock tower)"
-class "Sei-an City Aristocratic Quarter" 
-"Sei-an City Aristocratic Quarter" : {method} <&lock-locked> //Sei-an City (Aristocratic Quarter) - Fool Himiko's Guards//: //**Sei-an City (Aristocratic Quarter) - Fool Himiko's Guards**//
-"Sei-an City Aristocratic Quarter (Sick)" <--> "Sei-an City Aristocratic Quarter"
-class "Imperial Palace (Entrance)" 
-"Imperial Palace (Entrance)" : {method} <&lock-locked> //Imperial Palace - Prayer Slips//: //**Prayer Slips**//
-"Imperial Palace (Entrance)" : {method} <&lock-locked> //Imperial Palace - Grab Prayer Slips//: //**Imperial Palace - Grab Prayer Slips**//
-"Imperial Palace (Entrance)" : {method} <&lock-locked> //Imperial Palace - Become Smol//: //**Imperial Palace - Become Smol**//
-"Sei-an City Aristocratic Quarter (Sick)" <--> "Imperial Palace (Entrance)"
 class "Sunken Ship (Southwest Room, High water)" 
 "Sunken Ship (Southwest Room, High water)" --> "Sunken Ship (Southern room ledge)"
 "Sunken Ship (Bone Pile Room, High water)" <--> "Sunken Ship (Southwest Room, High water)"
@@ -712,6 +1160,11 @@ class "Sunken Ship (Southeast Room, Low water)"
 "Sunken Ship (Southeast Room, Low water)" --> "Sunken Ship (Southwest Room, Low water)"
 "Sunken Ship (Southeast Room, Low water)" --> "Sunken Ship (Southern room ledge)"
 "Sunken Ship (East Hallway Low water)" <--> "Sunken Ship (Southeast Room, Low water)"
+class "Oni Island (between Tobi #2 and #3)" 
+"Oni Island (between Tobi #2 and #3)" : {field} <&lock-unlocked,color=transparent> Oni Island - B2F Chest behind stairs after spike room
+"Oni Island (between Tobi #2 and #3)" : {method} <&lock-locked> //Oni Island - B2F Climb to 1F//: //**Oni Island - B2F Climb to 1F**//
+"Oni Island (between Tobi #2 and #3)" : {method} <&lock-locked> //Oni Island - Tobi race #3 (Terraced Passage)//: //**Oni Island - Tobi race #3 (Terraced Passage)**//
+"Oni Island (between Tobi #1 and #2)" <--> "Oni Island (between Tobi #2 and #3)"
 class "Moon Cave (4F Canon)" 
 "Moon Cave (4F Canon)" : {method} <&lock-locked> //Moon Cave - 4F Fire the canon!//: //**Moon Cave - 4F Fire the canon!**//
 "Moon Cave (4F Rafters)" <--> "Moon Cave (4F Canon)"
@@ -719,26 +1172,11 @@ class "Moon Cave (4F Canon)"
 class "Moon Cave (4F after canon)" 
 "Moon Cave (4F after canon)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 4F Lower ledge Frozen Chest
 "Moon Cave (4F after canon)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 4F Upper ledge Frozen Chest
+"Moon Cave (4F after canon)" : {field} <&lock-unlocked,color=transparent> Moon Cave - 4F Black Demon Horn Chest
 "Moon Cave (4F after canon)" : {method} <&lock-locked> //Moon Cave - 4F Move Fireball//: //**Moon Cave - 4F Move Fireball**//
 "Moon Cave (4F after canon)" : {method} <&lock-locked> //Moon Cave - 4F Melt Ice Blocks//: //**Moon Cave - 4F Melt Ice Blocks**//
 "Moon Cave (4F after canon)" : {method} <&lock-locked> //Moon Cave - 4F Black Demon Horn Torii//: //**Moon Cave - 4F Black Demon Horn Torii**//
-"Moon Cave (4F after canon)" : {method} <&lock-locked> //Moon Cave - 4F Get Black Demon Horn//: //**Black Demon Horn**//
 "Moon Cave (4F Rafters)" <--> "Moon Cave (4F after canon)"
-class "Sei-an City (Himiko's palace entrance)" 
-"Sei-an City (Himiko's palace entrance)" : {field} Sei-an City (Aristocratic Quarter) - East buried chest behind Himiko's guards
-"Sei-an City (Himiko's palace entrance)" : {field} Sei-an City (Aristocratic Quarter) - Northeast Freestanding chest in Himiko's palace entrance
-"Sei-an City (Himiko's palace entrance)" : {field} Sei-an City (Aristocratic Quarter) - Freestanding chest behind Himiko's palace
-"Sei-an City Aristocratic Quarter" <--> "Sei-an City (Himiko's palace entrance)"
-"Sei-an City (Himiko's palace entrance)" --> "Sei-an City Aristocratic Quarter (Sick)"
-class "Imperial Palace (Small Size - Entrance)" 
-"Imperial Palace (Small Size - Entrance)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Chest at entrance
-"Imperial Palace (Small Size - Entrance)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Locked Chest in poison puddle
-"Imperial Palace (Small Size - Entrance)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Freestanding Chest on poison puddle rocks
-"Imperial Palace (Small Size - Entrance)" : {method} <&lock-locked> //Imperial Palace - Mandatory Thunder Doom Mirror Encounter//: //**Imperial Palace - Mandatory Thunder Doom Mirror Encounter**//
-"Imperial Palace (Small Size - Entrance)" : {method} <&lock-locked> //Imperial Palace - Open west side lockjaw//: //**Imperial Palace - Open west side lockjaw**//
-"Imperial Palace (Entrance)" <--> "Imperial Palace (Small Size - Entrance)"
-class "Imperial Palace" 
-"Imperial Palace (Entrance)" <--> "Imperial Palace"
 class "Sunken Ship (Southeast Room, High water)" 
 "Sunken Ship (Southeast Room, High water)" : {method} <&lock-locked> //Sunken Ship - use Cannon in southeast room (High water) //: //**Sunken Ship - use Cannon in southeast room**//
 "Sunken Ship (Southeast Room, High water)" --> "Sunken Ship (Southeast Room Chests)"
@@ -754,62 +1192,48 @@ class "Sunken Ship (Treasure Room)"
 "Sunken Ship (Treasure Room)" : {field} Sunken Ship - Chest in treasure room 2
 "Sunken Ship (Treasure Room)" : {field} Sunken Ship - Chest in treasure room 3
 "Sunken Ship (Southeast Room, Low water)" <--> "Sunken Ship (Treasure Room)"
-class "Sei-an City (Himiko's palace West Treasure Room)" 
-"Sei-an City (Himiko's palace West Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - Daruma doll inside Himiko's west treasure room
-"Sei-an City (Himiko's palace West Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - Freestanding chest inside Himiko's west treasure room
-"Sei-an City (Himiko's palace entrance)" <--> "Sei-an City (Himiko's palace West Treasure Room)"
-class "Sei-an City (Himiko's palace East Treasure Room)" 
-"Sei-an City (Himiko's palace East Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - West freestanding chest inside Himiko's east treasure room
-"Sei-an City (Himiko's palace East Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - West freestanding chest inside Himiko's east treasure room 2
-"Sei-an City (Himiko's palace East Treasure Room)" : {field} Sei-an City (Aristocratic Quarter) - East freestanding chest inside Himiko's east treasure room 2
-"Sei-an City (Himiko's palace entrance)" <--> "Sei-an City (Himiko's palace East Treasure Room)"
-class "Imperial Palace (Small Size - Feet Hell)" 
-"Imperial Palace (Small Size - Feet Hell)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Chest in feet hell northern alcove
-"Imperial Palace (Small Size - Feet Hell)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Chest in feet hell southern alcove
-"Imperial Palace (Small Size - Feet Hell)" : {method} <&lock-locked> //Imperial Palace - Blow up alcove walls in feet hell//: //**Imperial Palace - Blow up alcove walls in feet hell**//
-"Imperial Palace (Small Size - Feet Hell)" : {method} <&lock-locked> //Imperial Palace - Grab lockjaw key//: //**Imperial Palace - Grab lockjaw key**//
-"Imperial Palace (Small Size - Feet Hell)" : {method} <&lock-locked> //Imperial Palace - Outspeed the Brooms//: //**Imperial Palace - Outspeed the Brooms**//
-"Imperial Palace (Small Size - Entrance)" <--> "Imperial Palace (Small Size - Feet Hell)"
-class "Imperial Palace (Small Size - West cave after lockjaw)" 
-"Imperial Palace (Small Size - West cave after lockjaw)" : {method} <&lock-locked> //Imperial Palace - Blow up west cave floor//: //**Imperial Palace - Blow up west cave floor**//
-"Imperial Palace (Small Size - Entrance)" <--> "Imperial Palace (Small Size - West cave after lockjaw)"
+class "Oni Island (between Tobi #3 and #4)" 
+"Oni Island (between Tobi #3 and #4)" : {method} <&lock-locked> //Oni Island - Tobi race #4 (Passage of Saws)//: //**Oni Island - Tobi race #4 (Passage of Saws)**//
+"Oni Island (between Tobi #2 and #3)" <--> "Oni Island (between Tobi #3 and #4)"
 class "Sunken Ship (East Hallway High water)" 
 "Sunken Ship (East Hallway High water)" : {field} Sunken Ship - Southern chest in eastern hallway
 "Sunken Ship (East Hallway High water)" : {field} Sunken Ship - Northern chest in eastern hallway
 "Sunken Ship (Southeast Room, High water)" <--> "Sunken Ship (East Hallway High water)"
-class "Imperial Palace (Small Size - Poison Sōzu Room)" 
-"Imperial Palace (Small Size - Poison Sōzu Room)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Locked chest near poison Sozu
-"Imperial Palace (Small Size - Poison Sōzu Room)" : {method} <&lock-locked> //Imperial Palace - Cross the Sozu//: //**Imperial Palace - Cross the Sozu**//
-"Imperial Palace (Small Size - Feet Hell)" <--> "Imperial Palace (Small Size - Poison Sōzu Room)"
-class "Imperial Palace (Small Size - Spider Cave)" 
-"Imperial Palace (Small Size - Spider Cave)" : {method} <&lock-locked> //Imperial Palace - Blow up wall to mist flask room//: //**Imperial Palace - Blow up wall to mist flask room**//
-"Imperial Palace (Small Size - West cave after lockjaw)" <--> "Imperial Palace (Small Size - Spider Cave)"
+class "Oni Island (between Tobi #4 and #5)" 
+"Oni Island (between Tobi #4 and #5)" : {field} <&lock-unlocked,color=transparent> Oni Island - 1F Chest after passage of Saws
+"Oni Island (between Tobi #4 and #5)" : {method} <&lock-locked> //Oni Island - Tobi race #5 (Demonic Wheels)//: //**Oni Island - Tobi race #5 (Demonic Wheels)**//
+"Oni Island (between Tobi #3 and #4)" <--> "Oni Island (between Tobi #4 and #5)"
 class "Sunken Ship (Hands room High water)" 
 "Sunken Ship (Hands room High water)" : {field} <&lock-unlocked,color=transparent> Sunken Ship - Chest on ledge in hands room
 "Sunken Ship (Hands room High water)" : {method} <&lock-locked> //Sunken Ship - Set barrel on Scales//: //**Sunken Ship - Set barrel on Scales**//
 "Sunken Ship (East Hallway High water)" <--> "Sunken Ship (Hands room High water)"
 "Sunken Ship (Hands room High water)" --> "Sunken Ship (Northwest Room, High water)"
-class "Imperial Palace (Small Size - Emperor's Bedroom)" 
-"Imperial Palace (Small Size - Emperor's Bedroom)" : {field} Imperial Palace - Northwest locked chest in webs above the emperor's bedroom
-"Imperial Palace (Small Size - Emperor's Bedroom)" : {field} Imperial Palace - North central chest above the emperor's bedroom
-"Imperial Palace (Small Size - Emperor's Bedroom)" : {field} Imperial Palace - Southwest locked chest in webs above the emperor's bedroom
-"Imperial Palace (Small Size - Poison Sōzu Room)" <--> "Imperial Palace (Small Size - Emperor's Bedroom)"
-class "Imperial Palace (Small Size - Spider Cave Top Ledges)" 
-"Imperial Palace (Small Size - Spider Cave Top Ledges)" : {field} Imperial Palace - Locked Chest in spider cave webs
-"Imperial Palace (Small Size - Spider Cave)" <--> "Imperial Palace (Small Size - Spider Cave Top Ledges)"
-class "Imperial Palace (Small Size - Mist Flask Room)" 
-"Imperial Palace (Small Size - Mist Flask Room)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Kasugami
-"Imperial Palace (Small Size - Mist Flask Room)" : {method} <&lock-locked> //Imperial Palace - Outspeed the spider//: //**Imperial Palace - Outspeed the spider**//
-"Imperial Palace (Small Size - Mist Flask Room)" : {method} <&lock-locked> //Imperial Palace - Mandatory Wind Doom Mirror//: //**Imperial Palace - Mandatory Wind Doom Mirror**//
-"Imperial Palace (Small Size - Spider Cave)" <--> "Imperial Palace (Small Size - Mist Flask Room)"
-class "Imperial Palace (Small Size - West Beam)" 
-"Imperial Palace (Small Size - West Beam)" : {field} Imperial Palace - Southmost chest on west beam above the emperor's bedroom
-"Imperial Palace (Small Size - West Beam)" : {field} Imperial Palace - Soutwest chest on west beam above the emperor's bedroom
-"Imperial Palace (Small Size - West Beam)" : {field} Imperial Palace - center chest on west beam above the emperor's bedroom
-"Imperial Palace (Small Size - Emperor's Bedroom)" <--> "Imperial Palace (Small Size - West Beam)"
-class "Imperial Palace (Small Size - Inside the Emperor's Body)" 
-"Imperial Palace (Small Size - Inside the Emperor's Body)" : {field} <&lock-unlocked,color=transparent> Imperial Palace - Defeat Blight Reward
-"Imperial Palace (Small Size - Inside the Emperor's Body)" : {method} <&lock-locked> //Imperial Palace - Defeat Blight//: //**Imperial Palace - Defeat Blight**//
-"Imperial Palace (Small Size - Emperor's Bedroom)" <--> "Imperial Palace (Small Size - Inside the Emperor's Body)"
-"Imperial Palace (Small Size - Inside the Emperor's Body)" --> "Imperial Palace"
+class "Oni Island (between Tobi #5 and #6)" 
+"Oni Island (between Tobi #5 and #6)" : {field} <&lock-unlocked,color=transparent> Oni Island - 2F Chest after demonic wheels
+"Oni Island (between Tobi #5 and #6)" : {method} <&lock-locked> //Oni Island - Tobi race #6 (Chamber of Delay)//: //**Oni Island - Tobi race #6 (Chamber of Delay)**//
+"Oni Island (between Tobi #4 and #5)" <--> "Oni Island (between Tobi #5 and #6)"
+class "Oni Island (after tobi #6, Labyrinth of Torment)" 
+"Oni Island (after tobi #6, Labyrinth of Torment)" : {field} <&lock-unlocked,color=transparent> Oni Island - 2F Chest after Chamber of delay
+"Oni Island (after tobi #6, Labyrinth of Torment)" : {field} <&lock-unlocked,color=transparent> Oni Island - 3F Right Chest in Labyrinth of Torment
+"Oni Island (after tobi #6, Labyrinth of Torment)" : {field} <&lock-unlocked,color=transparent> Oni Island - 3F Left Chest Labyrinth of Torment
+"Oni Island (after tobi #6, Labyrinth of Torment)" : {method} <&lock-locked> //Oni Island - 3F Mandatory Blue Ogre Fight//: //**Oni Island - 3F Mandatory Blue Ogre Fight**//
+"Oni Island (after tobi #6, Labyrinth of Torment)" : {method} <&lock-locked> //Oni Island - Tobi race #7 (Passage of Needles)//: //**Oni Island - Tobi race #7 (Passage of Needles)**//
+"Oni Island (between Tobi #5 and #6)" <--> "Oni Island (after tobi #6, Labyrinth of Torment)"
+class "Oni Island (after tobi #7, Passage of Needles)" 
+"Oni Island (after tobi #7, Passage of Needles)" : {method} <&lock-locked> //Oni Island - 3F Blow up wall to exterior roof//: //**Oni Island - 3F Blow up wall to exterior roof**//
+"Oni Island (after tobi #7, Passage of Needles)" : {method} <&lock-locked> //Oni Island - 3F Open Lockjaw//: //**Oni Island - 3F Open Lockjaw**//
+"Oni Island (after tobi #6, Labyrinth of Torment)" <--> "Oni Island (after tobi #7, Passage of Needles)"
+class "Oni Island (Exterior roof)" 
+"Oni Island (Exterior roof)" : {method} <&lock-locked> //Oni Island - Grab Key on the roof//: //**Oni Island - Grab Key on the roof**//
+"Oni Island (after tobi #7, Passage of Needles)" <--> "Oni Island (Exterior roof)"
+class "Oni Island (3F post lockjaw)" 
+"Oni Island (3F post lockjaw)" : {field} <&lock-unlocked,color=transparent> Oni Island - 3F Chest in Spike Room
+"Oni Island (3F post lockjaw)" : {field} <&lock-unlocked,color=transparent> Oni Island - Gekigami
+"Oni Island (3F post lockjaw)" : {method} <&lock-locked> //Oni Island - 3F Open thunder door after Gekigami//: //**Oni Island - 3F Open thunder door after Gekigami**//
+"Oni Island (3F post lockjaw)" : {method} <&lock-locked> //Oni Island - 3F Blow up floor after Gekigami//: //**Oni Island - 3F Blow up floor after Gekigami**//
+"Oni Island (after tobi #7, Passage of Needles)" <--> "Oni Island (3F post lockjaw)"
+class "Oni Island (3F post gekigami)" 
+"Oni Island (3F post gekigami)" : {field} Oni Island - 3F Thunder Chest after Gekigami
+"Oni Island (3F post lockjaw)" <--> "Oni Island (3F post gekigami)"
+"Oni Island (3F post gekigami)" --> "Oni Island (1F Thunder Key Area)"
 @enduml

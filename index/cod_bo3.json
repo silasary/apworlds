@@ -403,6 +403,21 @@
       "title": "Black Ops 3 - Zombies Archipelago 0.5.6",
       "version_simple": "0.5.4",
       "world_version": "0.5.4r3"
+    },
+    "0.5.7": {
+      "created_at": "2026-07-14T17:02:57Z",
+      "description": "Mostly logic changes to allow for a better flow, and allow disabling certain high-time cost checks instead of having to do exclusions. SoE has gotten a few more checks, and an improvement to the spawns on the first few rounds to smooth out the frequency of checks.\r\n\r\nReworking the printouts in the bottom left is top priority for a future release.\r\n\r\n**Note:** Origins is no longer marked as unstable. This doesn't mean it has all the checks I'd like it to have, but I'm reasonably confident it plays well.\r\n\r\n- 200 Points item reduced to 150 Points when playing with 3 or more players\r\n- 1500 Points item reduced to 1000 Points when playing with 3 or more players\r\n- Number of headshots required for checks slightly reduced\r\n- Season Pass maps are now disabled by default, only Shadows of Evil is on by default\r\n- Fixed perk machine hint strings being set wrong in edge cases (Origins generators, ZNS web clearing)\r\n- Fixed LUI error when sending an unknown location (@eah1759)\r\n- **Shadows of Evil**\r\n  - New Check - Apothicon Sword - Fill the egg at any statue\r\n  - New Check - Apothicon Sword - Complete any ritual circle\r\n  - New Check - Unlock the Margwa's Head (@eah1759)\r\n  - Apothicon Sword checks moved 2 rounds later in logic each\r\n  - Removed spawn delay being longer than other maps before round 5\r\n  - Removed all zombies being forced to walk before round 4\r\n  - New Option - Enable Unlock the Margwa's Head Check\r\n  - New Option - Enable Tripmine Upgrade Check (forced on in Weapon Quest)\r\n- **Gorod Krovi**\r\n  - Bunker survival logic requirements removed from early dragon gauntlet checks\r\n  - New Option - Enable Challenge Checks\r\n  - New Option - Enable Monkeybomb Upgrade Check (forced on in Weapon Quest)\r\n  - New Option - Enable Helmet Checks\r\n- **Revelations**\r\n  - New Option - Enable Challenge Checks\r\n- **Moon**\r\n  - Digger RNG option moved from Round 16 to Round 12\r\n- **Origins**\r\n  - Improved restoration of power generators from save\r\n  - Removed Unstable tag from options creator\r\n  - Fixed Archangel and Aether Music EEs not being added as checks",
+      "download_url": "https://github.com/colin969/bo3_archipelago/releases/download/0.5.7/cod_bo3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "766b5a02a16833f38901e5aacbf4c4902ef339d99caa51e1231d3f9f084c93a8",
+      "html_url": "https://github.com/colin969/bo3_archipelago/releases/tag/0.5.7",
+      "minimum_ap_version": "0.6.7",
+      "size": 98361,
+      "source_url": "https://api.github.com/repos/colin969/bo3_archipelago",
+      "tag": "0.5.7",
+      "title": "Black Ops 3 - Zombies Archipelago 0.5.7",
+      "version_simple": "0.5.7",
+      "world_version": "0.5.7"
     }
   }
 }

@@ -1,9 +1,12 @@
 # Black Ops 3 - Zombies
 
 ## Latest
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.6/cod_bo3.apworld">Latest Version (0.5.4r3)</a>
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.7/cod_bo3.apworld">Latest Version (0.5.7)</a>
 
 ## All Versions
+
+#### v0.5.7
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.7/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.7/cod_bo3.apworld</a>
 
 #### v0.5.4r3
 - <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.6/cod_bo3.apworld">https://github.com/colin969/bo3_archipelago/releases/download/0.5.6/cod_bo3.apworld</a>
