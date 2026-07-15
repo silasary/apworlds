@@ -2,63 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-15T00:26:11.739779+00:00</updated>
+  <updated>2026-07-15T06:53:01.440853+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.6</id>
-    <title>Dead Cells v0.1.6</title>
-    <updated>2026-07-10T00:39:23+00:00</updated>
-    <author>
-      <name>Max_lamenace572</name>
-    </author>
-    <author>
-      <name>OnlyLeafeon</name>
-    </author>
-    <author>
-      <name>Rayze</name>
-    </author>
-    <content>New Features:&#13;
-- Upgrade Death Link:&#13;
-  - Death Link group, sending and receiving links only to people in the same group&#13;
-  - Death Trap, giving a random trap when receiving a death link instead of dying (thanks chocobo13 for the idea)&#13;
-    - Sub-option for Death Trap to trigger Trap Link&#13;
-- Energy Link, you can store and share your cells with other games, but you lose 20% of them upon deposit&#13;
-- Damage Link, the damage you take is sent to other games, and you can receive damage from them&#13;
-  - Damage Link group, similar to other link groups&#13;
-- Health Link, life is shared between other Dead Cells players. Taking damage, healing, and recovery are based on percentage&#13;
-  - Health Link group, similar to other link groups&#13;
-  - Health Curse, sub-option that shares curses with others&#13;
-- Trap Link, when receiving a trap, send this trap to other Dead Cells players (thanks StudMuffin for the idea)&#13;
-  - Trap Link group, similar to other link groups&#13;
-&#13;
-Gameplay Changes:&#13;
-- Picking up a hunter's grenade while already having it now adds 5 charges&#13;
-- You can now buy hunter's grenade charges in the shop, 50 cells for active BSC+1&#13;
-- The Legendary shop is finally open! For only 600 cells on colorless items&#13;
-&#13;
-New Quality of Life:&#13;
-- Added error pop-up when disconnected in-game&#13;
-- Added a second menu page for the Energy Link UI&#13;
-  - Already responsive and controller compatible, just like the first page&#13;
-&#13;
-Bug Fixes:&#13;
-- Crash on menu when performing specific inputs with a controller&#13;
-- Death Link being sent when dying directly from Death Link&#13;
-- Item system not using the offline one upon disconnection, resulting in a crash and bugged location&#13;
-- Pokebomb charge being used when an enemy died while extracting&#13;
-- Could buy a colorless affix on a non-existent item with a controller&#13;
-- Double reverse controls trap, leaving the controls always inverted&#13;
-&#13;
-Apworld Changes with the help of Rayze:&#13;
-- Fixed Sanguine Vortex missing a requirement of fully clearing a biome, which requires either Vine/Spider rune to reach the Toxic Sewers entrance, or either of the other two unlockable biomes&#13;
-- Fixed assault shield located in Toxic Sewers instead of Promenade&#13;
-&#13;
-Compatible with apworld 0.1.4 and newer</content>
-    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.6"/>
-  </entry>
   <entry>
     <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.4.4-beta</id>
     <title>Dicey Dungeons v0.4.4b0</title>
@@ -1276,7 +1224,7 @@ However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity 
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR8</id>
-    <title>The Grinch v1.6.0r2</title>
+    <title>The Grinch v1.6.0r2r2</title>
     <updated>2026-07-14T23:23:42+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1324,5 +1272,49 @@ This version is a beta. Meaning, this is meant to test the new features and it's
 - Tentative fix to get rid of parallel universes (Thanks @KingOfFries for help with the investigation)&#13;
 - Fixed some Carpenter and Blacksmith items that didn't benefit from the discount setting if they were DRed</content>
     <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.19"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases/tag/v0.4.0</id>
+    <title>Etrian Odyssey v0.4.0</title>
+    <updated>2026-07-15T01:22:05+00:00</updated>
+    <author>
+      <name>TheMasterZelda</name>
+    </author>
+    <content># Etrian Odyssey v0.4.0 [Beta]&#13;
+&#13;
+The UT and Skill Update.&#13;
+&#13;
+This version is compatible with Archipelago 0.6.7 or greater.&#13;
+&#13;
+This update must be installed for both the host and the client to function properly.&#13;
+&#13;
+Report any issues to the Etrian Odyssey (DS) channel in the AP discord server.&#13;
+&#13;
+This version requires the [patcher version v0.4.0](https://github.com/TheMasterZelda/etrian-odyssey-1-archipelago-patcher/releases/tag/v0.4.0).&#13;
+&#13;
+## New&#13;
+&#13;
+- Universal Tracker Glitched Logic support. In the context of this game, glitched logic remove sustain and battle logic.&#13;
+- Universal Tracker yaml-less support&#13;
+- Merged the option `remove_skills_requirements` with the new option.&#13;
+- Added the new option `skill_requirement_shuffle`. It has the following values:&#13;
+  - **Vanilla:** Vanilla Requirements. Nothing is changed.&#13;
+  - **Remove:** Removes the skills requirement from the game. This mean that every skill are learnable by themselves from level 1 (if unlocked).&#13;
+  - **Level Shuffle:** The required skills are kept the same, but the level requirement are randomized.&#13;
+  - **Non-Root Shuffle with Mastery retention:** All non-base skills requirements are randomized, retaining the mastery trees.&#13;
+  - **Non-Root Shuffle:** All non-base skills requirements are randomized without retaining the mastery trees.&#13;
+  - **Full Shuffle with Mastery retention:** All skills requirements are randomized, retaining the mastery trees.&#13;
+  - **Full Shuffle:** All skills requirements are randomized without retaining the mastery trees.**&#13;
+  - **Chaos:** All skills requirements are randomized. Mastery are not prioritized as primary requirement. No chain dependency limit.&#13;
+&#13;
+## Fixes&#13;
+&#13;
+- Automatic Quest Reward Scouting crashing the client under specific circumstances&#13;
+- Improved reliability for Clear Key and Violet Key special flag handling.&#13;
+&#13;
+## Misc&#13;
+&#13;
+- Major Logic Engine refactoring. This fixed most potential generation problems, and improved generation performances.</content>
+    <link href="https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases/tag/v0.4.0"/>
   </entry>
 </feed>
