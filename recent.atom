@@ -2,21 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-15T12:40:28.872821+00:00</updated>
+  <updated>2026-07-15T18:32:31.786606+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Totox00/ap-ahlcg/releases/tag/v0.1.3</id>
-    <title>Arkham Horror The Card Game v0.1.3</title>
-    <updated>2026-07-10T01:20:42+00:00</updated>
-    <author>
-      <name>toto00</name>
-    </author>
-    <content/>
-    <link href="https://github.com/Totox00/ap-ahlcg/releases/tag/v0.1.3"/>
-  </entry>
   <entry>
     <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.15</id>
     <title>Stardew Valley v8.0.13r2r2</title>
@@ -163,7 +153,7 @@ This update was very tricky to implement and would have been impossible without 
     </author>
     <content>## RaC3 APWorld v0.6.0
 
-**Branch:** main
+**Branch:** main  
 **Date:** 2026-07-10 10:37 UTC
 
 &lt;details&gt;
@@ -401,11 +391,11 @@ This update was very tricky to implement and would have been impossible without 
 ### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)
 
 ### Notes
-This release was automatically generated from the **main** branch.
+This release was automatically generated from the **main** branch.  
 Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
 
 ### If a location is broken and does not get sent out
-Go to the server console (locally or via the Archipelago room page) and run:
+Go to the server console (locally or via the Archipelago room page) and run:  
 `/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`
 </content>
     <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.0"/>
@@ -1211,7 +1201,7 @@ However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity 
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR8</id>
-    <title>The Grinch v1.6.0r2r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2r2</title>
     <updated>2026-07-14T23:23:42+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1312,5 +1302,80 @@ This version requires the [patcher version v0.4.0](https://github.com/TheMasterZ
       <name>L-technology-mods</name>
     </author>
     <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.0</id>
+    <title>Crash Team Racing v0.1.0</title>
+    <updated>2026-07-15T11:35:04+00:00</updated>
+    <author>
+      <name>dowlle</name>
+    </author>
+    <content>## CTR-AP v0.1.0 - first public release
+
+CTR-AP is an Archipelago integration for a native PC port of Crash Team Racing (PlayStation, 1999). It lets Crash Team Racing take part in an Archipelago multiworld: trophies, relics, tokens, gems, and boss wins become checks, and the items you need to progress arrive from the multiworld.
+
+📖 **New here? Follow the [setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md).**
+
+The default seed gives you the full experience: randomized warp-pad requirements with destination shuffle, the Gems hidden in the multiworld, Gem Cups and Battle Arenas included, and a sprinkle of trap items.
+
+### Bring your own disc
+
+This release ships no game data. You provide the game files from your own copy of the NTSC-U (North American) Crash Team Racing disc. Nothing here contains Crash Team Racing game assets, and none are distributed.
+
+Easiest setup: name a raw `.bin` dump of your disc `ctr-u.bin` and place it in an `assets` folder next to the executable.
+Alternatively, the bundled `extract_assets.py` reads your disc image (`.cue`, `.bin`, or `.chd`), verifies the region, and copies out just the files the game needs, which saves disk space. See the [setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) for the full walkthrough.
+
+### What is in this release
+
+- `ctr_native_ap.exe`: the game executable with Archipelago support built in.
+- `ctr.apworld`: the Archipelago world, for whoever generates the multiworld.
+- `extract_assets.py`: the optional space-saving asset extractor.
+- `ap-config.example.txt`: a documented template for your server settings (optional; the in-game OPTIONS → Connection screen is the recommended way).
+- `SETUP.md`: step-by-step setup (the [living guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md), or [as shipped with this release](https://github.com/dowlle/ctr-native-ap/blob/v0.1.0/SETUP.md)).
+
+The `ctr.apworld` is also attached separately for multiworld hosts who only need the world file.
+
+### Known limitations
+
+- NTSC-U (North American) discs only. PAL and Japanese discs are detected and refused. Other regions may be supported later.
+- The disc image must be a raw MODE2/2352 dump (a `.cue`/`.bin`, a raw `.bin`, or a `.chd`). A cooked 2048-byte `.iso` does not carry the audio and video sector data the game needs.
+- `.chd` images require the `chdman` tool to be installed and on your PATH.
+- After beating your goal, the game may freeze on a black screen once the credits end. Your goal is already sent to the multiworld at that point - close the game and relaunch. A relaunch shows your completed seed correctly.
+- Windows only for now; a Linux/Steam Deck build is on the roadmap.
+
+### What's next
+
+v0.1.0 is the beginning, not the finish line. On the roadmap - no dates promised, hobby project honesty applies:
+
+**Planned next:** live position checks (earn a check for *reaching* 1st mid-race, including inside Gem Cups) as the foundation for progressive boost and character-stat item packs · splitting the Oxide's Final Challenge relic requirement into Gold and Platinum tiers · per-seed AI difficulty · a proper Ultimate Sacred Fire trap tier with the blue flame, plus more trap types · received Wumpa Fruit actually giving you fruit · enforced relic-race minimum-time and all-boxes options · skippable podium cutscenes · per-track boss garage unlocks · Steam Deck/Linux · DeathLink.
+
+**Exploring:** custom community tracks in the randomizer pool · a solo/offline mode · boss shuffle.
+
+**Long-term:** Arcade Cups and Time Trial ghosts as checks, character unlocks as multiworld rewards, Mirror/N-Verted/Retro-Fueled seed modifiers, music shuffle, and a Shortcut Unlock item.
+
+Found a bug or have an idea? Open an issue.
+
+### Verify your download
+
+`ctr-archipelago-v0.1.0-windows-x86.zip`
+SHA-256: `2174191a475565145ba8401ef2469df0d066ef815dd92eb565a07e1f8de4332f`
+
+### Credits
+
+- The CTR-tools [CTR-ModSDK](https://github.com/CTR-tools/CTR-ModSDK) decompilation project, which this port is built on.
+- Reverse engineering and Archipelago work by Icebound777 and Taor - the [randomizer design](https://github.com/icebound777/CTR-Randomizer-Standalone) this project carries forward.
+- [PsyCross](https://github.com/OpenDriver2/PsyCross), for PlayStation hardware-abstraction code that parts of the native platform layer are derived from.
+- [thecodingbob](https://github.com/thecodingbob/ctr-native), whose in-game config menu framework this fork's options menu is ported from.
+- [SDL3](https://github.com/libsdl-org/SDL), for cross-platform windowing, input, timing, and audio.
+- [apclientpp](https://github.com/black-sliver/apclientpp), the Archipelago client library powering the in-process connection.
+- Crash Team Racing is a trademark of its respective rights holders. This is an unofficial, fan-made project and is not affiliated with or endorsed by them.
+
+### AI disclosure
+
+Parts of this project were developed with AI assistance. See the [AI disclosure in the repository README](https://github.com/dowlle/ctr-native-ap#ai-usage-disclosure) for the honest, detailed version.
+
+
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.0"/>
   </entry>
 </feed>

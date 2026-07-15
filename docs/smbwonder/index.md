@@ -8,7 +8,7 @@ relays them as Archipelago location checks and pushes received items
 
 
 ## Downloads
-- <a href="https://github.com/mdietz94/smbw_ap/releases/download/v0.8.4/smbwonder.apworld">Latest Version (0.8.4)</a>
+- <a href="https://github.com/mdietz94/smbw_ap/releases/download/v0.9.0/smbwonder.apworld">Latest Version (0.9.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
