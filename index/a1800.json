@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "DarkListener"
+  ],
   "description": "Anno 1800 is a city-building real-time strategy game developed by Ubisoft Blue Byte as part of the Anno series.\nLead the industrial revolution of the 19th century as you settle islands in Europe, South America and more to\ncreate teeming metropolises!",
   "game": "Anno 1800",
   "github": "https://github.com/Dark-Listener/ArchipelagoA1800",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "release/v0.1.0": {
       "created_at": "2026-05-10T09:31:00Z",
@@ -186,6 +193,21 @@
       "title": "Progressive Unlocks, Presets and Technical Improvements | v1.3.0",
       "version_simple": "1.3.0",
       "world_version": "1.3.0"
+    },
+    "release/v1.3.1": {
+      "created_at": "2026-07-16T03:59:46Z",
+      "description": "Just a quick bugfix release to make Universal Tracker work with Anno 1800 again.\r\n\r\n### Changes\r\n* Fixed Universal Tracker breaking when progressive items are enabled\r\n* Fixed duplicate starting items if multiple instances of Anno 1800 are in the same multiworld\r\n* Added section on how to make money to the main game page\r\n\r\nThis release is compatible with multiworlds from v1.3.0 onwards.\r\n\r\n### [Game Page](<https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.1/worlds/a1800/docs/en_Anno%201800.md>) | [Setup](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.1/worlds/a1800/docs/setup_en.md) | [Items](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.1/worlds/a1800/docs/items_en.md) | [Locations](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.1/worlds/a1800/docs/locations_en.md) | [Roadmap](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.3.1/worlds/a1800/docs/roadmap_en.md)\r\n\r\nFind the apworld and a several template yamls below.",
+      "download_url": "https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.1/a1800.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7e4daa173f32a187582bd0e1b3e8bdf22c106b32d5df5b4dceb7b6d4f622c067",
+      "html_url": "https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 1402118,
+      "source_url": "https://api.github.com/repos/Dark-Listener/ArchipelagoA1800",
+      "tag": "release/v1.3.1",
+      "title": "Bugfix for UT compatibility | v1.3.1",
+      "version_simple": "1.3.1",
+      "world_version": "1.3.1"
     }
   }
 }

@@ -32,11 +32,3 @@ obreros if 1 was chosen as victory condition
 * Require Elders to be fully supplied before unlocking Scholars? Otherwise most of Enbesa can be skipped - see 128474
 * Instead of grouped triggers and unlockable assets, use feature unlocks?
 * Find a way to make Docklands DLC work meaningfully? Somehow all the unlocks would have to be redone
-
-Load time ~33s
-No removals <2s
-Breaks compatibility with existing games
-
-
-lady marmelade message on lemonade building - check unlock, fix
-electricity artista unhide at 1 artista

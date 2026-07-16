@@ -6,7 +6,7 @@ create teeming metropolises!
 
 
 ## Downloads
-- <a href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.0/a1800.apworld">Latest Version (1.3.0)</a>
+- <a href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.1/a1800.apworld">Latest Version (1.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
