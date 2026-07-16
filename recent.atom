@@ -8,6 +8,297 @@
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
+    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.0</id>
+    <title>Ratchet &amp; Clank 3 v0.6.0</title>
+    <updated>2026-07-10T07:14:36+00:00</updated>
+    <author>
+      <name>AmondoVagyok</name>
+    </author>
+    <author>
+      <name>Myth197</name>
+    </author>
+    <author>
+      <name>Taoshi</name>
+    </author>
+    <author>
+      <name>yuxia</name>
+    </author>
+    <author>
+      <name>yuxia228</name>
+    </author>
+    <author>
+      <name>Yuxia228</name>
+    </author>
+    <author>
+      <name>1theory</name>
+    </author>
+    <content>## RaC3 APWorld v0.6.0
+
+**Branch:** main
+**Date:** 2026-07-10 10:37 UTC
+
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;📜 Summary (1431 changes since v0.5.3)&lt;/strong&gt;&lt;/summary&gt;
+
+- RAC3: Fix JP MAIN_MENU/MAP_CHECK address conversion (9eb5f736d)
+- RAC3: Fix JP Florana vendor address range boundary (81482d9b7)
+- RAC3: Update JP version support status in FAQ (bf050f5ac)
+- RAC3: Update JP version status message to beta/completable (dd9aa4b59)
+- RAC3: Add initial support for JP version (280786c97)
+- RAC3: Standardize Shortcuts option keys (878a8f574)
+- Merge remote-tracking branch 'origin/hacker-skip' into hacker-skip (f12175bf3)
+- RAC3: Small fixes to Holostar Teleporter, Vendor Access and Vendor Scouting (a9030439d)
+- RAC3: Improve message of development commands when used in normal builds (dd8c15e0d)
+- RAC3: Add option for items to be added to vendors when the infobot is collected (b997e8880)
+- RAC3: Holostar Teleporter Shortcut (f8c338095)
+- RAC3: Mark Post Hideout Assault as stable (003d22365)
+- RAC3: Add Find Qwark Location (d7b553625)
+- RAC3: Overhaul starting inventory handling (0f3672ca4)
+- RAC3: Add some Region debugging (e6ff27322)
+- RAC3: Allow all OptionCounter options to accept any value greater than 1 (6eaa505d7)
+- RAC3: Remove Suck it Up skillpoint from simple skillpoints (657fa0964)
+- RAC3: Allow any number input to enable scout vendors (7a7a32899)
+- RAC3: Add Gadgetron Debt Trap (ac300c7d4)
+- RAC3: Make /rac3_info for actions print out the IDs in hex (1b595aecb)
+- RAC3: Fix bolt pack offline fillers not working (d87af092d)
+- RAC3: Update UnitTest for Intro Skip default setting (7c7977742)
+- RAC3: Handle RYNO level cap command in weapon level tracking (d9bb600c6)
+- RAC3: Deprecate unused functions and constants (7a911067c)
+- RAC3: Parameter cleanup (4e2483292)
+- RAC3: Formatting (998716df7)
+- RAC3: Fix tyhrraguise puzzles on command center disappearing after refractor skip (0cbc099e7)
+- RAC3: Put Aridia mission 3 in logic if you have a long range weapon (94fc08ec7)
+- RAC3: Unlock sewers if homewarping from aquatos base + Fix broken rift inducer and qwack o ray level logic (c7716bf92)
+- RAC3: Remove shield charger levels if one hp challenge is enabled for ratchet (46217ccc6)
+- RAC3: Remove ammo from the vendor of weapons we dont have unlocked yet (893811555)
+- RAC3: Add 1ms to to jackpot timer if a new jackpot filler would perfectly overlap with an existing one (e4351eab2)
+- RAC3: Add stored fillers to server side save data (a969d7766)
+- RAC3: Grammar fixes in the yaml (e1dacb71b)
+- RAC3: Re-organize the NGPlusItems yaml description (c53229fa6)
+- RAC3: Fix formatting on region disabled message (141fde2ec)
+- RAC3: Update pypine (71e14832f)
+- RAC3: Make yaml more readable (b60fb5663)
+- RAC3: documentation change (548db952a)
+- RAC3: Add warning messages if people go to disabled regions (9f927744b)
+- RAC3: 4 bytes of storage per filler instead of 1 (62653af01)
+- RAC3: Fix addresses of stored fillers (6c1cd6e5a)
+- RAC3: Make PDA vendor scanning more reliable and add message to nation if you go there with it disabled (42398a8f5)
+- RAC3: Clarify shortcuts and speedups yaml (eceaa483c)
+- RAC3: Cap offline fillers at 255 (624183bbb)
+- RAC3: Update PyPINE (fd14f1055)
+- RAC3: Add last refractor door on command center to refractor skip (aa5c27ad1)
+- RAC3: Add more stuff to /rac3_info (9ba1cfbda)
+- RAC3: Prevent the use of locked weapons (a9140928a)
+- RAC3: Make newer yaml enabled/disabled options be consistent with the rest (55c63bebf)
+- RAC3: Fix latching jackpot fillers causing multiplier to stick at a too high value (7918c3021)
+- RAC3: Move helpdesk option to a new QoL section of the yaml (8d0276d94)
+- RAC3: Fix nanotech exp sometimes getting reset when processing offline nanotech fillers (330b075e0)
+- RAC3: Make main menu message reappear if you go back to main menu after game start (e38d0c738)
+- RAC3: Fix NG+ nanotech not respecting nanotech limitation (1a7ec4f90)
+- RAC3: rename skill master calc function (2ba0c4c55)
+- RAC3: Remember that the infernox skillpoint is a thing (0eada1c2c)
+- RAC3: make sure skill master trophy truely isn't in the pool if all 30 skill points arent either (ebcca0dc1)
+- RAC3: Fix omega weapons not showing up when progressive weapons are off (04d2f6d83)
+- RAC3: Improve notification for offline fillers (a33726589)
+- RAC3: Offline Fillers (39aee2381)
+- RAC3: Add missing function call to handle game ready (c21bd1eb3)
+- RAC3: Add helpdesk yaml option (3fbb65498)
+- RAC3: Force manual progressive weapons mode in more places if necessary (e3ea36936)
+- RAC3: Split progressive weapon leveling into manual and automatic (3d84aa783)
+- RAC3: Add weapon level locations to progressive weapons (fdd7716ff)
+- RAC3: Allow more permissive generation if in a big enough multiworld (433e2ea43)
+- RAC3: Fix no space between messages in handle not enough locations (47e0f49ca)
+- RAC3: Fix missing world.player in can reach region (e94d98713)
+- RAC3: Make good exp function setting independent (9cbd4c9e7)
+- RAC3: Fix fuzzing failures (eb6d4e8a1)
+- RAC3: Add special connection error message if you connect with the wrong Ratchet game. (7749419bc)
+- RAC3: Update NG+ items yaml description and add Weapon Level before weapon level locations (098f6896f)
+- RAC3: Make veldin skip the default (5d4641ad9)
+- RAC3: teeny tiny optimization to the cycle cache (bfd242f36)
+- RAC3: massively optimize nanotech and sewer crystal location reads (12e471f0a)
+- RAC3: Run Ruff Formatter (30dc0a279)
+- RAC3: Fix softlocked death link message for automatic softlocks (88066a875)
+- RAC3: Add failsafe for return to phoenix after grand prize bout (ecda44747)
+- RAC3: Mark VR Gadget training as stable (c8b768ae4)
+- RAC3: NG+ can always earn good xp (e51fb0713)
+- RAC3: Adjust good exp logic (29a4f631f)
+- RAC3: Add weapon levels are locations (1a0192062)
+- RAC3: Skip OptionError stuff if using UT is true (2be1efd65)
+- RAC3: Mark previous useful weapon as progression skip balancing (80aa60921)
+- RAC3: Also add weapon levels to weapon levels dict if progressive weapons are enabled (4fb488f6b)
+- RAC3: Fix omega arsenal getting checked on connect (589c5766e)
+- RAC3: Force omega arsenal trophy if all requirements are met (51118e33e)
+- RAC3: Move PAL shift minimum address up further to prevent vid comic ship teleport bugs (765b89d5a)
+- RAC3: Fix nanofinder trophy logic (adf028f59)
+- RAC3: Re-add missing level 100 nanotech... whoops (f3ed7c9b6)
+- RAC3: Adjust logic for weapon challenges in NG+ (5d1422292)
+- RAC3: Update NG+ nanotech logic once again (a30e4e664)
+- RAC3: temporarily comment out more WIP options to avoid confusion (c512698f8)
+- RAC3: Make NG+ Nanotech logic no longer distinguish between NG+ with or without multiplier (f6edfa02d)
+- RAC3: Re-adjust NG+ nanotech logic (b0a486634)
+- RAC3: Mark master plan and star map locations as stable (c429077c4)
+- RAC3: Add NG+ trophies (604ea30e2)
+- RAC3: Add up to 200 nanotech (6686e388b)
+- RAC3: Temporarily comment out the broken shortcuts/speedups and make all nanotech in logic if NGPlus is enabled regardless of multiplier (96f9bfc63)
+- RAC3: Allow jackpot crates if multiplier is x1 and increase jackpot filler to 30 second to match vanilla (b8643daf0)
+- RAC3: Add NGPlus Start yaml option (c47be3374)
+- Add support WSL2 + Windows environment (#146) (195dbbcc1)
+- RAC3: Only convert address once when reading bits (67200b740)
+- RAC3: Fix Tyhrranosis dropship not being there immediately (aa63c399a)
+- RAC3: Improve NGPlusItems yaml description (e32970626)
+- RAC3: Update PyPine (322dc9002)
+- RAC3: Delay weapon level ups if currently upgrading weapon pause state is active (518f89d3d)
+- RAC3: Add cutscene flags file (dd4b70ada)
+- RAC3: If main function hasn't been initialized yet, then we assume main menu (9869ea727)
+- RAC3: Fix weapon vendor yaml option overruling ngplus items yaml option (cba5106ec)
+- RAC3: Use newly discovered max health address for one hp challenge for vehicles (5453c041f)
+- RAC3: Add museum hacker doors to hacker skip because why not (4b4636d70)
+- RAC3: Allow the shield charger to be added to quick select (c02d3e446)
+- RAC3: Fix first tower tyhrranosis bug (7c572f9f2)
+- RAC3: Skip server save data no longer used (dd5b742b2)
+- RAC3: Make vendor overwrite only happen once (eacdec553)
+- RAC3: Fix markdown violations (acac0031a)
+- RAC3: Florana drawbridge fix (0b51d377a)
+- RAC3: Fix client disconnecting if connecting before game is ready (c4d76dac3)
+- RAC3: Improve planet switching (9f40f328b)
+- RAC3: cycle through all shortcut options (50bca2f93)
+- RAC3: Prevent server spam when after goaled (0d7efa924)
+- RAC3: RYNO command fixes (f26bc3aea)
+- RAC3: Vid Comic 4 is not PAL shifted (55752e101)
+- RAC3: Fix homewarp addresses for vid comics (1b13ad178)
+- RAC3: Optimize more reads (4e1610114)
+- RAC3: Reduce log file sizes for a ton (1478c1a06)
+- RAC3: Add moby address to assertion message (64cd14c8f)
+- RAC3: Fix PDA Vendor sometimes being outside the typical moby range (c0a71d562)
+- RAC3: Fix KeyError if weapon/armor vendor is disabled (f6e43d00a)
+- RAC3: Fix infinite items in the vendor (45771af4a)
+- RAC3: set between planets to False initially (5b316ead9)
+- RAC3: optimise some reads (4f6f77cd9)
+- RAC3: fix checking between planets (ce7364ee0)
+- RAC3: Gadget respawn on new planet timing improvements (9253b223f)
+- RAC3: Simplify Holostar Clank fix (36688788a)
+- RAC3: Aridia and Holostar fixes (1d0819c90)
+- RAC3: Fix warnings and formatting (64369e8c4)
+- RAC3: Remove unnecessary dict (b4145c81f)
+- RAC3: Small optimization for vendor cursor reads (c14d2a222)
+- RAC3: Weapon level up no longer gives free mega variant (268d9218e)
+- RAC3: Don't put omega weapons in the vendor if progressive weapons (b054fa715)
+- RAC3: Fix xp getting reset back to level thredshold (f5b8a32d4)
+- RAC3: Fix weapon level restoration (2a6b26331)
+- RAC3: Add NGPlus weapons to the vendor if you have the V5 version (fe88fc906)
+- RAC3: Rename NG+ option names (22a83329d)
+- RAC3: /RYNO command supports any level value (4c4f3309c)
+- RAC3: Add NG+ Item and Vendor Options (9b105b41e)
+- RAC3: Prevent VR weapon test from collecting location (583dac28b)
+- RAC3: Fix TypeError (001379d29)
+- RAC3: Refactor moby scanning to use Ratchet pointer instead of moby table constants (0e7f331c5)
+- RAC3: Server Side Savedata (7d14c268b)
+- RAC3: Some Mission Bugfixes (da9cbe169)
+- RAC3: New Planet Handling (69d108135)
+- RAC3: Fix small bugs (5e2d1deb7)
+- RAC3: Fix various type and attribute errors (c8c9aa9ec)
+- RAC3: Add missing NGPlus location group (de120d7e4)
+- RAC3: Handle Tyhrranosis Dropship (8bc466dae)
+- RAC3: take intro skip into account for nanotech logic (a214d0356)
+- RAC3: Make dynamic nanotech logic (a2bffe07e)
+- RAC3: Post Vendor Balance Changes (0738f2c7b)
+- RAC3: Documentation (6aa85b84b)
+- RAC3: Shortcut Data Refactor (569174373)
+- RAC3: Add metropolis taxi shortcut (937271a91)
+- RAC3: Fix hacker skip on aquatos (91d9909d5)
+- RAC3: Add more shortcuts (e2c565895)
+- RAC3: correctly clear visited planets (abeb059fa)
+- RAC3: Run Ruff Formatter (f6a5fd731)
+- RAC3: Tiny optimizations (c109d63b6)
+- RAC3: Optimize get visited planets (de91b308d)
+- RAC3: Add read/write count to update cycle debug log (253e5b3f6)
+- RAC3: Remove redundant sequence break about sasha (84dbd9c16)
+- RAC3: Fixed progress flags with multiple bits not getting set correctly (58c7b3b74)
+- RAC3: Fix gadget skips (cc47f1e1d)
+- RAC3: Fix write bits (3f0255b87)
+- RAC3: Fix errors (f95da2171)
+- RAC3: Add more Shortcuts (c420b69a8)
+- RAC3: Fix introskip (4112c14ba)
+- RAC3: Fix relative import that should have been absolute (9688b21a0)
+- RAC3: Split Progress and Moby flags (ecd70908d)
+- RAC3: Split Shortcuts and Speedups (d29568a02)
+- RAC3: Make reloading mark off the boolean that indicate that the refractor puzzles have been unlocked (4ce85725f)
+- RAC3: Remember to call the new cycler (0af2edcbb)
+- RAC3: Add more shortcut constants (382126a84)
+- RAC3: Begin refractor skip (6d721929c)
+- RAC3: Add Tyhrraguise skip (2ae6b1a32)
+- RAC3: Fix phoenix hacker skip (6615c4db8)
+- RAC3: Remove accents from messages (e793aab37)
+- RAC3: Fix Code cave getting set up before it is ready (28882ca21)
+- RAC3: Fix some characters not getting replaced with a question mark (b8996f02d)
+- RAC3: Fix small oversight (ce0092ea9)
+- RAC3: Code cleanup 3 (The Big One) (b2cbd1bca)
+- RAC3: Raise character limit in message boxes to 250 bytes (07a7e00b7)
+- RAC3: Allow homewarping in vid comics (b9814b244)
+- RAC3: Add load level dev command (b4f5e5a9a)
+- RAC3: Code cleanup 2 (Constants) (2de39b827)
+- RAC3: let people use development commands again, but everyone will know about it (c2ae2fbb0)
+- RAC3: Remove redundant connection check (fb27dc7ee)
+- RAC3: Minor puzzle check refactor (8828fd3c4)
+- RAC3: Code cleanup 1 (Client) (d2e1264f5)
+- RAC3: Make existing development command only available if on a development build (b69f9df3f)
+- RAC3: Fix Galaxy Burger (0dbf0565a)
+- RAC3: Update hacker skip yaml option description (4f4d30fb5)
+- RAC3: Remove start address debug logging and made it easier for traversal test command to use the table addresses automatically (4a3f33cde)
+- RAC3: Add holostar to PAL, whoops (67fffba03)
+- RAC3: Make reloading stop the moby searching (b452917d9)
+- RAC3: Add PAL addresses for hacker puzzle (85a730b6f)
+- RAC3: Fix aquatos gate not unlocking (ec4e1d9df)
+- RAC3: Write the number 5 for all objects (cf76cc26b)
+- RAC3: Changing planets counts as a reload (75c91dd65)
+- RAC3: Force the doors/elevators to open (928430565)
+- RAC3: Add client logging message too (056138e73)
+- RAC3: Make the hacker skip warning run only once per seed at most (0874f46fc)
+- RAC3: Change the bit for command center hacker puzzle (230096766)
+- RAC3: Remove messagebox debug logging (05345b114)
+- RAC3: Add hacker skip to proc options (7640d0752)
+- RAC3: Fix scout vender constant missing (ad6dddd3e)
+- RAC3: Make sure that hacker cycler actually gets called (e492b9ad4)
+- RAC3: Add warning if hacker is received on a planet with hacker skip enabled. (9fb6fc807)
+- RAC3: Add Progressflag class (7c7aee613)
+- RAC3: Add Hacker Skip yaml option (064269fbe)
+- RAC3: Add health cycler TODO (7aea4170b)
+- RAC3: Add message length validation to enqueue notification (80379d12f)\n- ...and 1231 more commits.
+
+&lt;/details&gt;
+
+**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.5.3...v0.6.0
+
+### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)
+
+### Notes
+This release was automatically generated from the **main** branch.
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
+
+### If a location is broken and does not get sent out
+Go to the server console (locally or via the Archipelago room page) and run:
+`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`
+</content>
+    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.1</id>
+    <title>YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.2.1</title>
+    <updated>2026-07-10T07:45:41+00:00</updated>
+    <author>
+      <name>SilicDev</name>
+    </author>
+    <content># v0.2.1 Craftsanity hotfix&#13;
+**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.2.0...yohane_bitdb-v0.2.1&#13;
+&#13;
+# Bug fixes&#13;
+- Fixed an error where craftsanity wouldn't actually add any locations &#13;
+&#13;
+# Internal&#13;
+- More tests</content>
+    <link href="https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/NaveTK/Archipelago/releases/tag/v0.4.2</id>
     <title>The Binding of Isaac Repentance v0.4.1r2</title>
     <updated>2026-07-10T16:11:08+00:00</updated>
