@@ -12,6 +12,7 @@ This extension adds the following optional fields:
 * `license` - The software license a world is distributed under.  This can either be a string of a well-known name (eg `"MIT"` or `"LGPLv3"`), or a URL to a specific licence file.
 * `repo_url` - A URL link to the github repo a world can be found in.  The World Manager uses this for an "Add remote" prompt if a locally installed world is not found in any enabled indexes.
 * `flags` - An array of additional boolean flags. See below for some that the manager uses.
+* `ai_disclosure` - a string field containing one of `none`, `hint`, `assist`, `pair`, `copilot`, `auto` see below for more details.
 
 * `github` - A depreciated alias for `repo_url`
 
@@ -25,3 +26,17 @@ While not currently used in any way, future plans include using these additional
 * `supports_deathlink`
 * `supports_energylink`
 * `supports_ringlink`
+
+## AI Disclosure
+
+The `ai_disclosure` field borrows terminology from [ai-declaration.md](https://ai-declaration.md), to broadly communicate how much AI was used (if any).
+
+* **None**: No AI tools were used at any point.
+* **Hint**: AI autocomplete or inline suggestions only. The human writes all code; AI occasionally completes a line or block.  **No prompting was used.**
+  * Note that some IDEs have semantic analysis tools that are not gen-AI but look and behave similarly to the end user.
+* **Assist**: Human-led. AI is used on demand for specific tasks (generating a function, explaining code, drafting a test) but does not drive the work.
+* **Pair**: Active human-AI collaboration throughout. Contribution is roughly equal.
+* **Copilot**: AI implements while the human plans and reviews. The human defines what to build and **validates the output**, but the AI does most of the writing.
+* **Auto**: AI acts autonomously with minimal human direction. The human may steer at a high level or approve outcomes, but does not write or closely direct the code.
+
+Important Note:  The expectation for all tiers except Auto is that you understand and can explain all code in your project.   If you are not sufficiently verifying the output of an agent, the agent is being used autonomously.
