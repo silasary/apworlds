@@ -8,6 +8,9 @@
 #### v0.6.3
 - <a href="https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases/download/0.0.6/smrpg.apworld">https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases/download/0.0.6/smrpg.apworld</a>
 
+#### v0.0.9
+- <a href="https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases/download/0.0.9/smrpg.apworld">https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases/download/0.0.9/smrpg.apworld</a>
+
 #### v0.0.8.post2
 - <a href="https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases/download/0.0.8/smrpg.apworld">https://github.com/TheRealSolidusSnake/SMRPG_apworld/releases/download/0.0.8/smrpg.apworld</a>
 

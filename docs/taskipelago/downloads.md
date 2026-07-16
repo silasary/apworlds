@@ -1,9 +1,12 @@
 # Taskipelago
 
 ## Latest
-- <a href="https://github.com/barretg/Taskipelago/releases/download/v0.9.5/taskipelago.apworld">Latest Version (0.9.5)</a>
+- <a href="https://github.com/barretg/Taskipelago/releases/download/v0.9.6/taskipelago.apworld">Latest Version (0.9.6)</a>
 
 ## All Versions
+
+#### v0.9.6
+- <a href="https://github.com/barretg/Taskipelago/releases/download/v0.9.6/taskipelago.apworld">https://github.com/barretg/Taskipelago/releases/download/v0.9.6/taskipelago.apworld</a>
 
 #### v0.9.5
 - <a href="https://github.com/barretg/Taskipelago/releases/download/v0.9.5/taskipelago.apworld">https://github.com/barretg/Taskipelago/releases/download/v0.9.5/taskipelago.apworld</a>

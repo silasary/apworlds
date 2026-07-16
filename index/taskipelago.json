@@ -313,6 +313,20 @@
       "title": "Taskipelago/Taskipelabingo Version 0.9.5",
       "version_simple": "0.9.5",
       "world_version": "0.9.5"
+    },
+    "v0.9.6": {
+      "created_at": "2026-07-16T17:23:29Z",
+      "description": "## New Features\r\n* \"Priority\" option added for tasks to be in priority locations\r\n* Added \"prev\" and \"sequential\" keywords to task pre-reqs. \"prev\" will establish a requirement on the previous task in sequence. \"sequential\" can be used in tasks where count > 1 in order to make each task in the duplicates sequential dependent (i.e. second task in duplicate depends on completing the first, third on second, fourth on third, etc.)\r\n* Task location names now display in non-taskipelago clients\r\n\r\n## Bug Fixes\r\n* Fixed a bug with the way goal state is detected\r\n* Added a check to prevent yaml generation when the yaml would have no location available at multiworld start to prevent location starvation\r\n* Fixed another filler generation bug\r\n* General clean-up\r\n\r\n## Known Issues\r\n* Universal Tracker is unhappy with the structure of the datapackage because of the dynamic nature of Taskipelago's location names. This is aimed to be resolved in a future patch.",
+      "download_url": "https://github.com/barretg/Taskipelago/releases/download/v0.9.6/taskipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "ac7fa94dbbca058db58052f56b50a3adb0294f8ed33eba8fdc275bcb04bb22dd",
+      "html_url": "https://github.com/barretg/Taskipelago/releases/tag/v0.9.6",
+      "size": 244242,
+      "source_url": "https://api.github.com/repos/barretg/Taskipelago",
+      "tag": "v0.9.6",
+      "title": "Taskipelago/Taskipelabingo Version 0.9.6",
+      "version_simple": "0.9.6",
+      "world_version": "0.9.6"
     }
   }
 }

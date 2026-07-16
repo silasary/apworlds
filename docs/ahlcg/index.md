@@ -7,7 +7,7 @@ Their efforts determine not only the course of your game, but carry forward thro
 
 
 ## Downloads
-- <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.3/ahlcg.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.4/ahlcg.apworld">Latest Version (0.1.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
