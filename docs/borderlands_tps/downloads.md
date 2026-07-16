@@ -20,3 +20,6 @@
 #### v82
 - <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-82/borderlands_tps.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-82/borderlands_tps.apworld</a>
 
+#### v0.5.4
+- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/v0.5.4/borderlands_tps.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/v0.5.4/borderlands_tps.apworld</a>
+

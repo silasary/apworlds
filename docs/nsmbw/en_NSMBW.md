@@ -9,7 +9,6 @@ config file.
 ## What is goal
 - To beat bowsers castle at world 8
 - Bowsers castle is looked behind having a number of star coin items and beaten the last level in a number of worlds. (Configurable in player yaml)
-- To do this you need 2x world 8 unlock and ground pound (for 8-airship)
 
 
 ## Items
@@ -86,76 +85,48 @@ Settings can be found in host.yaml in the "nsmbw_settings" category and are play
 - Making savestates is currently difficult depending on location. Do not close game or make savestates when you are in peach's castle or world 9.
 - For some features (death link and move rando) the game will overwrite savestate 8 in dolphin. (It does this to clear the JIT cache).
 - If you have movement rando selected, you will be given some movement abilities to start out with to be able to grab your checks. You will always have button_right and either spin or big_jump.
-- The client will ask for a pop-tracker pack, you can ignore it for now as it is still in development.
+- The client might ask you for a pop-tracker pack, you can ignore it for now as it is still in development.
 - With movement rando on and not having the item climb will cause a soft lock if you encounter a ledge (like in 6-1). You are free from the softlock if you do /kill.
 - Sometimes mario is invisible on the worldmap
 - Only save file 2 will work to play on.
 - Known Issues for other game versions
-  - EU1: entier movement (dont turn on)
+  - None US2: Inventory powerups
+  - EU1: Movement (dont turn on)
   - US1: Star and swim movement (add these to don't rando moves if you have movement rando on)
 - Don't go to the game menu with archipelago connected, this means don't use quick save in game: instead make save states.
 - On Linux you will need to give the client root access for it to properly access save states
 - Climb movement have issues, you can't leve vine without climb and through other ways can climb sometimes softlocks you. You solve this with the /kill command. 
 - If you are connected to the game on the title screen then it will read of data in save slot 1 and might send all locations, be careful. Dont go to the main menu when you are connected to client.
 - Generation failure:
-  - Either problem around start : increase location count in multiworld
-  - Or set accessibility: full, nsmbw have problems generation with one game that has another accessibility setting if bowser_star_coin req is too high
+  - Either problem around start : increase location count in the multiworld
 - loading save state sends lots of inventory items
 - The clock might not display modified time correctly, but is accurate.
 - Star will display visually as active when not, if not unlocked and bring it from inventory
 - Rarely caches when loading a world map world, if encountered please report this issue
+- Deathlink problems:
+  - If not received, try running /kill, if this does not work, make sure you have changed the dolphin settings in the set-up guide.
+  - If not sending, try turing off your deathlink group and then toggle deathlink off and on again.
+  - Run /deathlink_debug to get information about its current state.
 
-## Client commands
-- /toogle_deathlink
-  - Adds or removes the death link tag.
-- /death_link_group [group]
-  - Changes your death link group
-- /reapply_checks
-  - Run this if you have not sent a level location that you have completed.
-- /dev [level]
-  - A developer cheat command for unlocking levels. Only works when running from source.
-- /save
-  - Saves some of the client memory to a file. Can be helpful to run if the client craches.
-- /starcoin_count
-  - Returns the amount of star coin items received.
-- /completed_worlds
-  - Returns the number of worlds that the game count as completed for unlocking bowsers castle.
-- /kill
-  - Kills mario, run this if you get softlocked.
-- /refresh
-  - Clears the JIT cache, run if you don't recive a move or get stuck in death loop.
-- /reconnect_dolphin
-  - A debug command that trys to rehook dolphin.
-- /movements
-  - Gives you a list of all movements you have and have not received.
-- /change_collection_level
-  - Changes your collection level, useful if you want to do this
-- /toggle_auto_open
-  - Toggles if the client should auto open dolphin and other features
-- /change_save_slot
-  - Changed the save slot that is auto-used
-- Tracker commands (extrapolated)
-  - /explain [location]
-    - Helpful to figure out why something is in logic, run e.g. /explain 1-1 for more helpful debug
 
 
 ## FAQ
 - What is not randomized currently?
   - Levels (order), enemies, powerups, pipes
 - Deathlink?
-  - Deathlink is implemented. Toggle it with command in client or with setting in your yaml.
+  - Deathlink, deathlink groups and deathlink amnesty are implemented. Toggle them with command in client or with options in your yaml.
 - What is different from vanilla
-  - Can't unlock canons
-  - The unlocks from world 9 requires 10 starcoin items / world number  to unlock
+  - Can't unlock canons or secret exits
+  - The unlocks from world 9 requires starcoin items
+  - Peach's castle hint movie shop requires starcoin items
 - Multiplayer?
-  - Multiplayer is currently not supported
-  - You can play but only mario will be restricted to some of the unlocks
+  - You can play NSMBW multiplay 2 ways:
+    1) Same-slot co-op: Both connect to the same archipelago slot separately. This entails you play seperate levels but a level completed for you get marked for your friend. Run /change_collection_level 2 for a better experience
+    2) Local/Dolphin net-play: Not supported for powerups, deathlink movement rando.
 -  Tracker?
   - A basic implementation of Universal tracker, see setup_en.md for instructions. A pop tracker pack is in development.
-- Where is Rivvolution patch?
-  - In its current state the client does not modify the game file in any way (just editing the games live memory). This means that you do not need a mod patch.
-- Why aren't star coins sent?
-  - You need to complete the level
+- Rivvolution patch?
+  - In its current state the client does not modify the game file in any way (just editing the games live memory). Therefor there is no riivolution patch.
 - Do you support item/location groups?
   - yes, e.g. Powerups, Movement, Hintmovies, Starcoins, Starcoins_World1, Starcoins_World1_Level1, Level_completion_world1, Level_completion
 - Why are not cannons unlocked?
@@ -164,7 +135,10 @@ Settings can be found in host.yaml in the "nsmbw_settings" category and are play
   - Game is developed on US rev2 of NSMBW. The client doesn't error out on other editions but some features will not work.
   - If you have another revision please report the problems you have in discord and mention your game revision.
 - I want to help with this game, how do I start?
-  - Help is appreciated, both coding playtesting and logic. Begin by reading [dev_docs](../dev_files/dev_docs) and then ask in discord.
+  - Help is appreciated, both coding, playtesting and logic. Begin by reading [dev_docs](../dev_files/dev_docs) and then ask in discord.
+- Why is a level in logic?
+  - Run /explain levelname and /explain_more levelname.
+  - This will give you the rule for the location, you can run /movements to get a list of active movements. 
 - Bugs?
   - Expect bugs, it is still in development.
   - Report a bug either at the [github](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/issues) or in the NSMBW thread in the [AP discord](https://discord.com/channels/731205301247803413/1327187652864380948), make sure to mention your game revision.
@@ -172,9 +146,9 @@ Settings can be found in host.yaml in the "nsmbw_settings" category and are play
 ## Debug tips
 - Restart launcher and computer after installing if the client doesn't show up in launcher or something doesn't work.
 - Make sure you are on at least archipelago 0.6.7, lastest world and game version is US rev2 (and the file format is either .iso or .wbfs, .rvz will not work) and are playing on save file 2.
-- If you have problem with tracker, try updating it.
+- If you have problem with the tracker, try updating it.
 - Do not have another dolphin instance open when you start client.
 - Connect to the server from the client after you are on the world map in game if you have problems on the title screen.
-- Try running the client commands /refresh, /reapply_checks and /reconnect_dolphin. Also try making a save-state and load it to clear the JIT cache.
+- Try running some client commands related to your issue.
   - If you have trouble with moves unlocking, death-link etc it probably issue with JIT_chache. The client automaticly makes savestate by pressing shirt+F8 and them F8. Make sure you have these button combos mapped to save-states in dolphoin.
 - If you can not solve your problem, run the debug launcher (found inside your archipelago directory) and send a screenshot of the client in the nsmbw thread in the archipelago discord server.

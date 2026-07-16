@@ -6,7 +6,6 @@
 - [NSMBW AP-World](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/latest)
 - A legally dumped copy of New Super Mario Bros Wii (US rev 2) (both .iso and .wbfs works)
   - If this is not the edition of your copy, see [en_NSMBW.md](../docs/en_NSMBW.md) for list of features known to be broken on other versions.
-  - If you need help with dumping your copy, you can look at this [tutorial](https://horizon.miraheze.org/wiki/Obtain_Original_Game_Files).
 - [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases) (Optionally) 
 
 
@@ -31,10 +30,11 @@
 4) After you have entered the world map press CONNECT in the client, and enter your slot name and password.
 5) Open the in game world-select menu and move to the world you have unlocked.
 6) See the quirks section in [en_NSMBW.md](../docs/en_NSMBW.md) for quirks with the implementation.
-7) Make save-states to save the game and run /save.
-   - Do NOT save when you are in world 9, it can delete your save
-   - Don't use the in game save feature and make a new save state after every level
+7) Make save-states to save the game and run /save often.
+   - Do NOT save when you are in world 9, it can delete your save.
+   - Don't use the in game save feature and make a new save state after every level clear.
    - To close the game run /exit
+
 
 ## Tracker 
 - You can optionally use the built-in universal tracker extension to track available locations.

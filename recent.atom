@@ -2,130 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-15T18:32:31.786606+00:00</updated>
+  <updated>2026-07-16T00:35:08.241159+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.15</id>
-    <title>Stardew Valley v8.0.13r2r2</title>
-    <updated>2026-07-10T02:05:34+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Exempt-Medic (Proofreading)</name>
-    </author>
-    <content>- Removed accidental dependency on VisibleFish&#13;
-- Fixed a null reference in the shop conditions&#13;
-- Added the waterfall to the DR fish spawns&#13;
-- Fixes to the Mineshaft fish&#13;
-- Attempted fix at festival cutscenes with non-existing actors&#13;
-&#13;
-### 8.0.15-b and 8.0.15-c&#13;
-- More fixes to events and festivals</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.15"/>
-  </entry>
-  <entry>
-    <id>https://github.com/seadoggie001/TFWR-APMod/releases/tag/v0.0.8-beta</id>
-    <title>The Farmer Was Replaced v0.0.7</title>
-    <updated>2026-07-10T02:32:03+00:00</updated>
-    <author>
-      <name>seadoggie</name>
-    </author>
-    <content>For installation instructions, please [see the setup guide](https://github.com/seadoggie001/Archipelago/blob/theFarmerWasReplaced/worlds/tfwr/docs/setup_en.md)&#13;
-&#13;
-## Fixes&#13;
-- Drones have been unfrozen! AP checks are submitted on a background thread, so the game can continue.&#13;
-- AP Disconnects are handled again - you can reconnect after being disconnected&#13;
-- The code captures and logs more exceptions now&#13;
--  A lot of background reshuffling making things easier to update in the future. (Exciting, right?!)</content>
-    <link href="https://github.com/seadoggie001/TFWR-APMod/releases/tag/v0.0.8-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/benny-dreamly/Manuals/releases/tag/TS-5.0.1</id>
-    <title>Manual_TaylorSwiftDiscography_bennydreamly v5.0.1</title>
-    <updated>2026-07-10T04:35:10+00:00</updated>
-    <author>
-      <name>benny-dreamly</name>
-    </author>
-    <content>this release fixes generation and the victory logic&#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Manuals/compare/TS-5.0.0...TS-5.0.1</content>
-    <link href="https://github.com/benny-dreamly/Manuals/releases/tag/TS-5.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/functorial/MMLAP/releases/tag/v0.3.0</id>
-    <title>Mega Man Legends v0.3.0</title>
-    <updated>2026-07-10T05:17:32+00:00</updated>
-    <author>
-      <name>functorial</name>
-    </author>
-    <author>
-      <name>aztro</name>
-    </author>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>## Very Important!&#13;
-**Duckstation MUST be running with the following non-default setting:**&#13;
-```&#13;
-Settings &gt; Console &gt; CPU Emulation &gt; Execution Mode = Interpreter (Slowest)&#13;
-```&#13;
-This is because the client makes many runtime edits to the game's code. These will fail if Duckstation if running in Recompiler mode (default).&#13;
-&#13;
-## New Features&#13;
-- Break linearity of the game's story with *region lock options*, each of which with Open, Randomized, and Vanilla options. If Randomized, corresponding items are shuffled into the pool with corresponding locations. If Open, the areas are automatically unlocked.&#13;
-  - **Citizen's Card**: Controls access to the city.&#13;
-  - **Class B License**: Controls access to the Underground Ruins.&#13;
-  - **Class A License**: Controls access to the Sub-Gates.&#13;
-  - **Unlock Main Gate**: ...&#13;
-  - **Unlock Sub-Cities**: ...&#13;
-- A new "Defeat All Bosses" goal ("boss" = enemy with a health bar). &#13;
-- The option to shuffle your first special weapon (in place of the Splash Mine) across any desired subset of special weapons. If selected, the Splash Mine is shuffled into the item pool.&#13;
-- The option to shuffle Buster Max into the item pool. &#13;
-- The Cardon Forest Sub-Gate Keys are now proper items and locations.&#13;
-- Defeating Gai-nee Tooren in the Uptown Sub-city is now a location (and included in the "Defeat All Bosses" goal).&#13;
-&#13;
-## Other Changes &amp; Improvements&#13;
-- The client no longer requires running as administrator. Just make sure Duckstation is not running as admin either.&#13;
-- The client now loads your previous login host and slot for convenience from a log in the local directory.&#13;
-- The "Complete museum" location has been removed. The individual museum item turn-ins and the prism crystal are still a locations.&#13;
-- The Spring Set item is replaced with the Jump Springs.&#13;
-- The Mine Parts Kit item is replaced with the Splash Mine. &#13;
-- Many backend changes &amp; improvements, e.g. the underlying client is upgraded to a more recent version.&#13;
-&#13;
-## Bug Fixes&#13;
-- Some black screen bugs are handled (e.g. after Juno).&#13;
-- Fixed a bug where receiving a buster part could delete other buster parts.&#13;
-- Fixed issue where certain locations were getting released early with other locations.&#13;
-- Zenny will be re-received upon reloading a save such that you will not lose any zenny upon death. &#13;
-- Items that are already turned in or used in crafting will no longer be re-received after reloading a save.&#13;
-- Fixed issue where Anna side quest would always give Sun-light. Same for Ira quest which always gave Flower pearl.&#13;
-&#13;
-## Caveats&#13;
-- This game is still in a pre-release state. Various bugs may persist which may render your seed incompletable.&#13;
-- If any bugs or crashes are encountered, please run "!debug" in the client and send me a screenshot of the result.&#13;
-- Since the v0.3.0 beta, most bugs have either fixed or assumed to be fixed. Let me know if you still encounter any of these beta bugs previously discussed!&#13;
-&#13;
-Please read the Wiki page to learn more about various in-game logic requirement decisions that were made and implemented for this open world update:&#13;
-https://github.com/functorial/MMLAP/wiki/Open-World-Logic-and-Definitions&#13;
-&#13;
-This update was very tricky to implement and would have been impossible without all the help from the community:&#13;
-- Uroogla for the code contributions, feedback, and constant stream of general helpfulness.&#13;
-- Alejandro for finding the memory address corresponding to game progression state, which serves as the basis of the open world update via multiple fast-forwarding methods. &#13;
-- TheCopperCat for enduring multiple nights of broken multiworld sessions with me.&#13;
-- The following people for bravely playtesting this version's broken beta and submitting bug reports: SavageWizzrobe, MacNCheese, Nitrocosmic, Colbydude, Ikari, deon, Zizzle, Slightly Angry Eevee, Raven Wolf, Maplelink64, Flitter, Patchwork, Megarexs, MainStun, All Meshed Up, SkyLinKo, Prin.&#13;
-- Everyone else unmentioned who offered feedback, suggestions, and encouragement.</content>
-    <link href="https://github.com/functorial/MMLAP/releases/tag/v0.3.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.0</id>
     <title>Ratchet &amp; Clank 3 v0.6.0</title>
@@ -1201,7 +1082,7 @@ However, tracking worlds generated before 0.3.27 might show incorrect Dexsanity 
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR8</id>
-    <title>The Grinch v1.6.0r2r2r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2r2r2</title>
     <updated>2026-07-14T23:23:42+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1377,5 +1258,57 @@ Parts of this project were developed with AI assistance. See the [AI disclosure 
 
 </content>
     <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/V0.2.2</id>
+    <title>NSMBW v0.2.2</title>
+    <updated>2026-07-15T17:14:25+00:00</updated>
+    <author>
+      <name>Miiroun</name>
+    </author>
+    <content># New Super Mario Bros Wii v0.2.2&#13;
+## Features&#13;
+- Deathlink amnesty&#13;
+- New option for hintmovie logic&#13;
+- Logo in launcher&#13;
+- Option to use xdotool instead of root access for Linux&#13;
+- More debug comands&#13;
+&#13;
+&#13;
+## Bug fixes&#13;
+- Logic: Spin jump logic, 5-1 climb, etc&#13;
+- One of the issues with connecting&#13;
+- Grouped deathlink&#13;
+</content>
+    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/V0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NaixGames/Polycosmos/releases/tag/0.16.2</id>
+    <title>Hades v0.16.2</title>
+    <updated>2026-07-15T19:13:15+00:00</updated>
+    <author>
+      <name>Naix</name>
+    </author>
+    <content>Various bugfixes and logic fixes. &#13;
+&#13;
+Thanks to @ColgateSupreme </content>
+    <link href="https://github.com/NaixGames/Polycosmos/releases/tag/0.16.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.4</id>
+    <title>Borderlands 2 v0.5.4</title>
+    <updated>2026-07-15T22:00:46+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Relatively well-tested release from mid-late June.&#13;
+new stuff:&#13;
+- "alternates" for logic&#13;
+- buncha logic fixes&#13;
+- other changes to logic: locations are removed if any required region is excluded, levels detected differently, gear licenses not required if the setting is off&#13;
+- integrate always on level&#13;
+- Tracker tab in Client if UT is intalled&#13;
+- new ramp in hayters folly</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.4"/>
   </entry>
 </feed>

@@ -1,12 +1,13 @@
-Coded by and main developer
+Main developer
 - Miiroun
 
 \
 Others that helped
 - React / jacob_x_x (Done most of logic)
 - Matgamer2575 (started project and found some memory addresses)
+- IndyGibb (PRed some light code changes using Claude)
 - techmuse (helped with locating addresses)
-- LuigiXRules (Fixed typos in documentation)
+- LuigiXRules (Fixed typos in documentation, provided helpful insight and playtested Us rev1)
 
 \
 Communities that helped
@@ -14,6 +15,11 @@ Communities that helped
 - Archipelago dc server (worlddev help and documentation)
 - Horizon & NSMBW Hacking Depo discord servers (for knowledge about the game)
 
+
+NSMBW_logo:
+- Image by miiroun
+- Remixed of archipelago logo by Krista Corkos and Christopher Wilson, lisensed under [Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/)
+- Based on star coins in mario, made by nintendo
 
 \
 Community projects used
@@ -46,14 +52,15 @@ NSMBW projects used
 Original game
 - Nintendo
 
+
 AI-usage
 Gemini & ChatGPT 
   - decoding assembly and reading address maps
 Pycharm linter
   - linter, a line completion tool built into py-charm
-
-
+Claude
+  - Small PR have been made by IndyGibb using claude, they have been thoroughly reviewed by humans
 
 \
 Other
-- Keyboard (Python library)
+- Keyboard (Python library) MIT licensed
