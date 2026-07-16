@@ -16,13 +16,19 @@ repos:
       language: python
       types: [file]
       exclude_types: ['image', 'binary', 'executable']
-      exclude: ^docs/.*$
+      exclude: (?x)^(
+        docs/.*|
+        recent.atom
+        )$
     - id: end-of-file-fixer
       name: EOF Newlines
       language: python
       types: [python]
       exclude_types: ['image', 'binary', 'executable']
-      exclude: ^docs/.*$
+      exclude: (?x)^(
+        docs/.*|
+        recent.atom
+        )$
     - id: check-yaml
       name: YAML Structure
       language: python
