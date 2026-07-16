@@ -208,7 +208,7 @@ The following mods are compatible with the randomizer and should not cause any i
 * Fam's More Unique Icons - v1.0.0
 * Fancy Billiardtables (Taludas) - v1.0.0
 * Faster Constructions (Kurila) - v1.6.1
-* \[Fix\] Community Patch - v1.025
+* \[Fix\] Community Patch - v1.025-v1.0261
 * Fix for feedbackunit Texture bugs (Taludas) - v1.0.0
 * Free Farmfield Placement (Taludas) - v3.1.1
 * Harbor Blocking \[Spice it Up\] - v1.0.1

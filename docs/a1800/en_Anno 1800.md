@@ -80,3 +80,19 @@ some point. Strange requirements, like empty strings, "continue your journey", o
 when the building unlock is not located locally or at a non-standard locations.
 
 Similarly, some location names in Archipelago may still include names from disabled DLCs.
+
+## I'm running out of money! Help!
+
+Money can be pretty tight in this randomizer since you're never guaranteed to unlock luxury goods. There are however a
+few ways to mitigate monetary issues:
+* Turn off production you don't need - buildings still cost money if they can't produce due to a full storage
+  * This is especially common with building materials
+* Sell soap to Eli Bleakworth - each ton of soap generates a raw profit of 279 as he pays extra
+  * You have to sell at his harbour - use a trade route for automation
+* Produce ships and sell them to Sir Archibald Blake or Madame Kahina
+  * You are guaranteed to unlock ships by the time you reach Artisans
+  * Building and selling ships is always profitable as long as you have the spare workforce
+  * Schooners equate to 1625 in raw profit - ~540 income per minute in continuous production
+  * Larger ships are worth more
+* If you have access to the DLC and unlocks, Tourists are a great source of income and can be built once you reach
+Artisans and windows

@@ -1,9 +1,12 @@
 # Anno 1800
 
 ## Latest
-- <a href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.0/a1800.apworld">Latest Version (1.3.0)</a>
+- <a href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.1/a1800.apworld">Latest Version (1.3.1)</a>
 
 ## All Versions
+
+#### v1.3.1
+- <a href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.1/a1800.apworld">https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.1/a1800.apworld</a>
 
 #### v1.3.0
 - <a href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.0/a1800.apworld">https://github.com/Dark-Listener/ArchipelagoA1800/releases/download/release/v1.3.0/a1800.apworld</a>
