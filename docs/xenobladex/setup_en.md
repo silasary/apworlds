@@ -54,11 +54,9 @@ Currently only the PAL and latest US version of Xenoblade X is supported.
   - 1.0.2U
 
 ### My Client is unable to find the Cemu Settings.xml
-
 If you migrated from an older version of Cemu you might need to freshly reinstall Cemu.
 
 ### Xenoblade X is not receiving/sending any items
-
 Make sure that you are one one of the supported versions of Cemu and Xenoblade X.
 Make sure you reached the first day cutscene overlooking Primordia and time is progressing.
 
@@ -66,10 +64,19 @@ Make sure you reached the first day cutscene overlooking Primordia and time is p
 If your client is still active just press `Disconnect` and then `Connect` and your game should reopen.
 
 ### What happens if I lose connection?
-
 If a disconnection occurs, wait a moment to see if the game automatically reconnects itself.
 The game is independent from the client so if the client disconnects you should just reconnect it,
 you dont have to restart the game when its still running.
+
+### Xenoblade X is freezing after watching the sunrise cutscene
+This specific point is where the game first connects to the client and if your game is freezing that means that 
+your game can not communicate with the client. The most likely cause for this is that your firewall settings are not 
+correctly configured. In public networks for example this is a very likely an issue. You can add an `Inbound Rule` with
+a `local loopback` for port `45872` and the `ArchipelagoLauncher` Programm. Additionally check that Xenoblade X and Cemu 
+is running on a supported version.
+
+### Xenoblade X or the Client is very slow
+Make sure to not install Cemu or the Client on an HDD or on a cloud. This will lead to unstable communication and a laggy game.
 
 ### Can i use Cemu graphic packs?
 Some of these are included in the settings to allow for more flexibility.
