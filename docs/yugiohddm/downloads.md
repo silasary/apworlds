@@ -1,9 +1,12 @@
 # Yu-Gi-Oh! Dungeon Dice Monsters
 
 ## Latest
-- <a href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld">Latest Version (0.3.4)</a>
+- <a href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld">Latest Version (0.3.4.post2)</a>
 
 ## All Versions
+
+#### v0.3.4.post2
+- <a href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld">https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld</a>
 
 #### v0.3.4
 - <a href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld">https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld</a>

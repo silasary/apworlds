@@ -2,6 +2,8 @@
 
 ## Troubleshooting for Esoteric Issues
 
+Please check if any of the client commands can solve your issues during the process of troubleshooting.
+
 If any issues arise that **cannot be solved by going over this guide**, you may ask in the [thread](https://discord.com/channels/731205301247803413/1346288808512983040/1470840910500724736) for Touhou 18.5: 100th Black Market in #future-game-design in the official Archipelago Discord server. Of course, before attempting to troubleshoot via the Discord thread, please ensure that you have familiarized yourself with the procedures involved in setting up the game and have attempted to fix it using all of the information provided below.
 
 ## TL;DR:
@@ -26,22 +28,22 @@ If any issues arise that **cannot be solved by going over this guide**, you may 
 
 ## Starting Conditions
 
-- You will begin the game with one stage unlocked, no cards unlocked, no Funds, only 1 loadout card, and 100% equipment cost limit.
+- You will begin the game with one stage unlocked, no cards unlocked, no Funds, only 1 loadout card slot, and 100% equipment cost limit.
 - Which stage would be unlocked at start can be changed in the Options.
 - For beginners, it is recommended to choose "**Tutorial - First Black Market Deal**" as the Starting Market.
-- The client will **automatically** save your progress and restore it according to server data. You will receive your unlocked stages, cards, Funds, card slots, and equipment cost upon a successful connection. **_Local save data/Steam save data is not needed for this reason._**
+- The client will **automatically** save your progress and restore it according to server data. You will receive your unlocked stages, cards, Funds, card slots, and equipment cost upon a successful connection unless specified otherwise. **_Local save data/Steam save data is not needed for this reason._**
 
 ## Important Setup Before Playing
 
 If the .apworld for 100th Black Market has not yet been installed, do so.
 
-For Steam releases, disable Steam's Cloud saving feature for the game. This can be done in Settings -> Properties... -> General -> Steam Cloud.
+**Note for Steam releases:** Disable Steam's Cloud saving feature for the game. This can be done in Settings -> Properties... -> General -> Steam Cloud.
 
 Before attempting to open the game and play, please backup your previous save data. This is typically located in `%appdata%\ShanghaiAlice\th185`, and **nowhere** in the game's installation folder. These files would be named `scoreth185.dat` and `scoreth185bak.dat`, wherein the latter is a backup copy of the former.
 
-Before launching the game, open the Touhou 18.5 client in the Archipelago Launcher and run the `/replace_save` command in order to clear the game's save data. The command will paste in save data specifically tailored to work with the randomizer. Do this every time before opening the game to ensure no inconveniences arise during launcher. Alternatively, if the command does not work, you may manually delete the save data.
+By default, the client will automatically replace the game's save data with its own every time it connects to a valid server. However, it is possible to disable this feature and replace the save data manually via a command instead. To do so, before launching the game, open the Touhou 18.5 client in the Archipelago Launcher and run the `/replace_save` command in order to replace the game's save data. The command will paste in save data specifically tailored to work with the randomizer (if successful, there will only be one `scoreth185.dat` file and no `scoreth185bak.dat` file in the save data folder). Do this every time before opening the game to ensure no inconveniences arise during launcher. Alternatively, if the command does not work, you may manually clear the save data.
 
-In both cases, the client will default to `%appdata%\ShanghaiAlice\th185` as the game's save data path. If the game keeps its save data elsewhere, change the path as necessary.
+In both cases, the client will default to `%appdata%\ShanghaiAlice\th185` as the game's save data path. If the game keeps its save data elsewhere, change the path as necessary via `/set_save_directory`.
 
 Once the above is done, continue reading below.
 
@@ -53,7 +55,7 @@ At the top of the client, you may see a text box. This is where the `IP Address`
 
 If the client successfully connects, you will be asked for your slot name. Enter the name you used during the `.yaml` generation.
 
-Once this is done, you may open the game. The client will attempt to connect to the game. If successful, you will be informed that the client has found the game. You may then play the game as usual.
+Once this is done, you may open the game. The client will attempt to connect to the game. If successful, you will be informed that the client has found the game. You may then play the game as usual.`
 
 ## Modding Compatibility
 

@@ -31,7 +31,7 @@ In Tournament mode your Reverse and Dark Division items (allow you to play in th
 In Free Duel mode your Duelist Unlock items (allowing you to play against them in Free Duel).
 In either mode based on your bonus item mode, either dice or shop progression and money items.
 
-## What does another world's item look like in Yu-Gi-Oh! Forbidden Memories
+## What does another world's item look like in Yu-Gi-Oh! Dungeon Dice Monsters
 
 Your item acquisitions take the form of having defeated duelists or tournaments, or collecting dice. As such,
 you'll have to check the BizHawk Client to know the actual items that were unlocked from those locations.

@@ -5,7 +5,7 @@ featured in the Yu-Gi-Oh! storyline.
 
 
 ## Downloads
-- <a href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld">Latest Version (0.3.4)</a>
+- <a href="https://github.com/JustinMarshall98/Archipelago---YuGiOh-Dungeon-Dice-Monsters-GBA-/releases/download/v0.3.4/yugiohddm.apworld">Latest Version (0.3.4.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
