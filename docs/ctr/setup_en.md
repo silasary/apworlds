@@ -88,7 +88,7 @@ CTR-AP/
     ctr-u.bin
 ```
 
-That's it — no Python, no extraction step. The image must be the common
+That's it: no Python, no extraction step. The image must be the common
 single-track raw PlayStation BIN layout (MODE2/2352 sectors). A cooked
 2048-byte `.iso` does not carry the audio and video sector data the game
 needs, so it will not work. This path does not check the disc region, so make
@@ -181,7 +181,7 @@ real keyboard, so set up your room before handing off to the couch.
   sector data. Re-dump or re-obtain the disc as a raw MODE2/2352 image.
 - **Cannot connect to the server:** check the server address, slot name, and
   password in **OPTIONS → Connection** (the status line there shows the error
-  reason) — or in `ap-config.txt` if you use the config file instead. The slot
+  reason), or in `ap-config.txt` if you use the config file instead. The slot
   name must match the room exactly. Note that settings saved from the in-game
   screen (`config.ini`) override `ap-config.txt`.
 
