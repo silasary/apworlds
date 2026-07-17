@@ -1,9 +1,12 @@
 # Oh So Hero!
 
 ## Latest
-- <a href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/download/v1.0.2/oh_so_hero.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/download/v1.0.3/oh_so_hero.apworld">Latest Version (1.0.3)</a>
 
 ## All Versions
+
+#### v1.0.3
+- <a href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/download/v1.0.3/oh_so_hero.apworld">https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/download/v1.0.3/oh_so_hero.apworld</a>
 
 #### v1.0.2
 - <a href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/download/v1.0.2/oh_so_hero.apworld">https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/download/v1.0.2/oh_so_hero.apworld</a>
