@@ -1,9 +1,12 @@
 # Fire Emblem Sacred Stones
 
 ## Latest
-- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.2/fe8.apworld">Latest Version (0.4.2)</a>
+- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.5.0-rc1/fe8.apworld">Latest Version (0.5.0rc1)</a>
 
 ## All Versions
+
+#### v0.5.0rc1
+- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.5.0-rc1/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.5.0-rc1/fe8.apworld</a>
 
 #### v0.4.2
 - <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.2/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.2/fe8.apworld</a>

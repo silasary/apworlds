@@ -11,7 +11,7 @@ Build an army. Trust no one.
 
 
 ## Downloads
-- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.2/fe8.apworld">Latest Version (0.4.2)</a>
+- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.5.0-rc1/fe8.apworld">Latest Version (0.5.0rc1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

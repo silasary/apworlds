@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-18T00:31:55.448531+00:00</updated>
+  <updated>2026-07-18T06:46:13.615428+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
@@ -44,7 +44,7 @@ This version is a beta. Meaning, this is meant to test the new features and it's
       <name>Witchybun (Mod Support)</name>
     </author>
     <author>
-      <name>Exempt-Medic (Proofreading)</name>
+      <name>Noa (Entrance Randomizer)</name>
     </author>
     <content>- When events are waiting for an actor to move, and that actor doesn't exist, skip to the next step instead of waiting forever&#13;
 - Added a mod-side safeguard (for the beta playtest) for island fish to be catchable in summer and submarine fish in winter&#13;
@@ -349,7 +349,7 @@ No backwards compatibility&#13;
       <name>Witchybun (Mod Support)</name>
     </author>
     <author>
-      <name>Exempt-Medic (Proofreading)</name>
+      <name>Noa (Entrance Randomizer)</name>
     </author>
     <content>## Mod&#13;
 - Added Summer to catch seasons for all fish spawns in the desert&#13;
@@ -462,6 +462,35 @@ Drop cvaos.apworld into your Archipelago install under /lib/worlds. To patch a R
 - Fix warps to cursed Agata Forest and Cursed Taka pass not taken into account&#13;
 - Fix Tsuta ruins and checks not requiring long swim at all</content>
     <link href="https://github.com/Ragmoa/Archipelago/releases/tag/0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CT075/Archipelago/releases/tag/fe8-alpha-0.5.0-rc1</id>
+    <title>Fire Emblem Sacred Stones v0.5.0rc1</title>
+    <updated>2026-07-14T15:03:12+00:00</updated>
+    <author>
+      <name>CT075</name>
+    </author>
+    <content>Requires Archipelago &gt;= 0.6.0&#13;
+&#13;
+Drop `fe8.apworld` into your Archipelago install in `custom_worlds`. To open patch files, drag. the `.apfe8` file onto the `ArchipelagoLauncher.exe` file.&#13;
+&#13;
+Changelog:&#13;
+- Added new randomization options, check the YAML for details!&#13;
+- BUGFIX: Fixed a bug that caused Seth and Valter's cutscene battle during the prologue to freeze&#13;
+- BUGFIX: Units that join at different levels on different routes will now join at the correct level if that level is above the level cap&#13;
+- BUGFIX: All Summoners and Necromancers can now summon phantoms&#13;
+- BUGFIX: Fixed several logic bugs leading to generation crashes&#13;
+&#13;
+Known issues:&#13;
+- Chapters with lots of enemies on-screen at once can have visual glitches if there are too many unique classes. This is most commonly-experienced in chapter 19.&#13;
+- Attempting to set `MinimumUsableHolyWeapons` to 6 or higher may cause seed generation to fail due to being unable to place enough progressive weapon ranks.&#13;
+- Units that gain "overflow" exp over the level cap will show that EXP on the status page. This is a visual glitch only.&#13;
+- In some cases, enemies on otherwise-impassable terrain will be unable to move. If this occurs in a rout mission, this may require excessive RNG manipulation to clear.&#13;
+- Player units will use generic palettes.&#13;
+- In chapter 9 Ephraim, enemies are programmed to ignore Tana, but may move towards her anyway.&#13;
+- The Universal Tracker may report unintuitive unlocks.&#13;
+- All Summoners other than Ewan and Knoll share a summon "slot", meaning only one Summoner may have a phantom on the field at once.</content>
+    <link href="https://github.com/CT075/Archipelago/releases/tag/fe8-alpha-0.5.0-rc1"/>
   </entry>
   <entry>
     <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.2.2</id>
@@ -591,7 +620,7 @@ This version is a beta. Meaning, this is meant to test the new features and it's
       <name>Witchybun (Mod Support)</name>
     </author>
     <author>
-      <name>Exempt-Medic (Proofreading)</name>
+      <name>Noa (Entrance Randomizer)</name>
     </author>
     <content>- Made FIBS display fish in alphabetical order for convenience&#13;
 - Added forced repeatable behavior to special orders that might still be needed for a bundle&#13;
@@ -1018,7 +1047,7 @@ Incompatible with worlds generated before 0.4.0. Compatible with worlds generate
       <name>Witchybun (Mod Support)</name>
     </author>
     <author>
-      <name>Exempt-Medic (Proofreading)</name>
+      <name>Noa (Entrance Randomizer)</name>
     </author>
     <content>- Fixed bug where the Gazette was prioritizing entrances using the wrong name, so priority was broken&#13;
 - Ported all changes from [7.4.25](https://github.com/agilbert1412/StardewArchipelago/releases/tag/7.4.25)&#13;
@@ -1202,5 +1231,33 @@ _Linux users, download the source code here to run the client._&#13;
 - Changed the Archipelago connection flow to block connections to apworlds older than v0.5.0, to prevent bugs that come from that&#13;
 - Added the plugin version to the Archipelago window </content>
     <link href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/tag/0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.21</id>
+    <title>Stardew Valley v8.0.21</title>
+    <updated>2026-07-18T04:47:20+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Mod&#13;
+- Fixed the bear cutscene again (apparently I keep breaking it?)&#13;
+- Adjusted the player color algorithm because Honeywell kept shaming me for being too dark :(&#13;
+- Fixed an issue with Desert Festival purchases costing both calico eggs and their DR currency&#13;
+- Increased the trap dequeuing timer so traps tend to less overwrite each other&#13;
+&#13;
+## Apworld&#13;
+- Fixed the dwarf being meetable without the translation guide&#13;
+- Fixed mushroom kebab asking for the wrong mushroom (apparently distant lands had an update that changed it...)&#13;
+- Require both Marnie and Ayeisha for the pet cutscene, apparently it needs both of them to exist when Ayeisha is installed</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.21"/>
   </entry>
 </feed>
