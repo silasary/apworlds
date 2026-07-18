@@ -4,7 +4,7 @@ Another Crab&#x27;s Treasure is an underwater souls-like with a charming art sty
 
 
 ## Downloads
-- <a href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/0.5.0/another_crab.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/0.5.1/another_crab.apworld">Latest Version (0.5.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
