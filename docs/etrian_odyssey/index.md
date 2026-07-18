@@ -4,7 +4,7 @@ Etrian Odyssey is a dungeon crawler RPG first developed by Atlus in 2007 on the 
 
 
 ## Downloads
-- <a href="https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases/download/v0.4.0/etrian_odyssey.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases/download/v0.4.1/etrian_odyssey.apworld">Latest Version (0.4.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

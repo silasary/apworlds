@@ -260,6 +260,21 @@
       "title": "fe8 alpha 0.5.0 (RC1)",
       "version_simple": "0.5.0",
       "world_version": "0.5.0rc1"
+    },
+    "fe8-alpha-0.5.0-rc1r2": {
+      "created_at": "2026-07-14T15:03:12Z",
+      "description": "Requires Archipelago >= 0.6.0\r\n\r\nDrop `fe8.apworld` into your Archipelago install in `custom_worlds`. To open patch files, drag. the `.apfe8` file onto the `ArchipelagoLauncher.exe` file.\r\n\r\nChangelog:\r\n- Added new randomization options, check the YAML for details!\r\n- BUGFIX: Fixed a bug that caused Seth and Valter's cutscene battle during the prologue to freeze\r\n- BUGFIX: Units that join at different levels on different routes will now join at the correct level if that level is above the level cap\r\n- BUGFIX: All Summoners and Necromancers can now summon phantoms\r\n- BUGFIX: Fixed several logic bugs leading to generation crashes\r\n\r\nKnown issues:\r\n- Chapters with lots of enemies on-screen at once can have visual glitches if there are too many unique classes. This is most commonly-experienced in chapter 19.\r\n- Attempting to set `MinimumUsableHolyWeapons` to 6 or higher may cause seed generation to fail due to being unable to place enough progressive weapon ranks.\r\n- Units that gain \"overflow\" exp over the level cap will show that EXP on the status page. This is a visual glitch only.\r\n- In some cases, enemies on otherwise-impassable terrain will be unable to move. If this occurs in a rout mission, this may require excessive RNG manipulation to clear.\r\n- Player units will use generic palettes.\r\n- In chapter 9 Ephraim, enemies are programmed to ignore Tana, but may move towards her anyway.\r\n- The Universal Tracker may report unintuitive unlocks.\r\n- All Summoners other than Ewan and Knoll share a summon \"slot\", meaning only one Summoner may have a phantom on the field at once.",
+      "download_url": "https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.5.0-rc1/fe8.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c07f4433dde1995b050215706fc324f40dded8067ac03fe633e15e6dd152c50f",
+      "html_url": "https://github.com/CT075/Archipelago/releases/tag/fe8-alpha-0.5.0-rc1",
+      "prerelease": true,
+      "size": 74743,
+      "source_url": "https://api.github.com/repos/CT075/Archipelago",
+      "tag": "fe8-alpha-0.5.0-rc1r2",
+      "title": "fe8 alpha 0.5.0 (RC1)",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0.post2"
     }
   }
 }

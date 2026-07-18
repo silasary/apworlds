@@ -1,9 +1,12 @@
 # Kerbal Space Program 1
 
 ## Latest
-- <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.8.0/ksp1.apworld">Latest Version (0.8.0)</a>
+- <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.8.1/ksp1.apworld">Latest Version (0.8.1)</a>
 
 ## All Versions
+
+#### v0.8.1
+- <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.8.1/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/v0.8.1/ksp1.apworld</a>
 
 #### v0.8.0
 - <a href="https://github.com/nickdavies/Archipelago/releases/download/v0.8.0/ksp1.apworld">https://github.com/nickdavies/Archipelago/releases/download/v0.8.0/ksp1.apworld</a>
