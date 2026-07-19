@@ -2,188 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-19T00:31:40.637702+00:00</updated>
+  <updated>2026-07-19T06:59:01.316282+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.6</id>
-    <title>Civilization V v0.10.6</title>
-    <updated>2026-07-13T15:34:42+00:00</updated>
-    <author>
-      <name>1313e</name>
-    </author>
-    <content>**Changes/Improvements**:&#13;
-- DeathLink effect is now also stated in DeathLink notification in-game.&#13;
-&#13;
-**Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.10.5...v0.10.6</content>
-    <link href="https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.3.0</id>
-    <title>The Legend of Zelda: A Link to the Past v1.3.0</title>
-    <updated>2026-07-13T18:32:33+00:00</updated>
-    <author>
-      <name>aurabot</name>
-    </author>
-    <content># v1.3.0&#13;
-&#13;
-## Doors!!!&#13;
-* New option door_shuffle randomizes the layout of every dungeon&#13;
-  * Rooms connect to each other in different ways, and any door between rooms might require a key or bombs&#13;
-  * Each dungeon has its vanilla entrance room (e.g. Swamp Palace requires Flippers to enter), and all boss rooms are in their usual dungeon&#13;
-  * Basic door shuffle randomizes each dungeon's layout, but each room stays within its own dungeon&#13;
-  * Partitioned door shuffle can mix together rooms from different dungeons. Light World dungeons are shuffled together, early Dark World dungeons are shuffled together, and Mitts-locked dungeons are shuffled together.&#13;
-  * Crossed door shuffle can place almost any room in any dungeon&#13;
-* New option lobby_shuffle also randomizes the first room in each dungeon&#13;
-* New option door_type_shuffle sets whether big key locked doors are also randomized. More options for randomizing trap doors will be added in the future&#13;
-* Mirror Scroll and dungeon counters to show the number of checks/keys in each dungeon are always enabled with door shuffle&#13;
-* Dungeon locations use their vanilla name, so e.g. "Ice Palace - Map Chest" might not be in Ice Palace&#13;
-* Known issues:&#13;
-  * Generation is slow, and on occasion is extremely slow, mostly with more advanced door shuffle. I suggest restarting generation if it is taking a long time.&#13;
-  * Some settings are not allowed with door shuffle to prevent excessive generation errors&#13;
-    * Standard mode + door shuffle will throw an error during generation&#13;
-    * Key drop shuffle is always enabled with door shuffle, regardless of settings&#13;
-    * Small key shuffle is always enabled with partitioned or crossed door shuffle, regardless of settings&#13;
-  * Universal Tracker sometimes fails to connect to a doors seed&#13;
-  * Universal Tracker is sometimes wrong about dungeon items, usually by believing that an item behind a locked door is accessible&#13;
-  * Door shuffle is inherently a bit volatile, and is not recommended for large multiworlds&#13;
-&#13;
-## Not Doors!&#13;
-* New options for entrance shuffle to only randomize dungeon entrances&#13;
-* New options to shuffle the location of Link's House and the back of Tavern in crossed entrance shuffle&#13;
-* New option to enable dungeon counters that show the collected/total number of checks and keys in each dungeon&#13;
-* Similar options in the YAML have been grouped together&#13;
-* Hints in entrance shuffle now show the entrance(s) for their location&#13;
-* Fixed a bug where Flute Shuffle didn't work correctly with Universal Tracker&#13;
-* Fixed most generation errors</content>
-    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/tag/2026.07.13</id>
-    <title>Manual_Northgard_Chakraa v2026.7.13</title>
-    <updated>2026-07-13T21:01:20+00:00</updated>
-    <author>
-      <name>ChakraaThePanda</name>
-    </author>
-    <content>* UPDATED: Version  Stable Update - 20260319 on AP 0.6.7&#13;
-&#13;
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/compare/2025.09.01...2026.07.13</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-Northgard/releases/tag/2026.07.13"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.1</id>
-    <title>Nine Sols v0.6.1</title>
-    <updated>2026-07-13T22:24:26+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
-&#13;
-- **Swift Runner logic** has been implemented for `medium` logic. Currently, this affects 1 location rule and 20 connection rules. To be super clear, since this has gotten a little complicated now:&#13;
-	- This is only a change if you play with `logic_difficulty: medium` (or higher) and `randomize_skill_tree: true`. Before, Swift Runner jumps were "itemless"; medium logic would just expect you to perform them without listing any items. Now the Swift Runner item is explicitly required by logic, and this item matters because the skill will no longer be auto-unlocked.&#13;
-	- If you play with `logic_difficulty: vanilla`, then nothing has changed. Swift Runner usage remains out of logic. If `randomize_skill_tree: true`, then there is a Swift Runner item, but it's only `useful`.&#13;
-	- If you play with `logic_difficulty: medium` (or higher) and `randomize_skill_tree: false`, then nothing has changed. Swift Runner jumps are in logic, and the Swift Runner skill will continue to be auto-unlocked when you start the game.&#13;
-- The UT map pages for Grotto now show which portals are connected using colored lines and letters (thanks @Juanba )&#13;
-- Skill rando tweaks:&#13;
-	- Fixed hints and descriptions showing the content of a not-yet-revealed skill tree node (the ones still showing a padlock icon) after that node's vanilla skill is received.&#13;
-	- In the randomized skill tree menu, the opacity of the AP logos in each randomized node has been reduced from 40% to 20%.&#13;
-	- Shop and skill auto-hinting is now asynchronous / non-blocking. In particular, this means you should no longer feel the game freeze the first time you open the skill tree in a new slot, although it will still take the AP server a few seconds to generate the hints.&#13;
-- `vanilla` logic:&#13;
-	- "ED (Passages) - Left Exit" to "Under Root Node" is now directly in logic with Grapple, CL and AD, without going through "Top Of TCK Platform Tutorial Room" first&#13;
-	- "GoS (East): Spike Ball Hall Upper Left" logic has been changed from CL or AD to CL or (AD and LG), since I noticed just AD is not enough. This probably has no impact in practice since you either fall down from the root node which skips the jump where AD is not enough, or you arrive from below where CL is required anyway.&#13;
-- `medium` logic changes that aren't part of Swift Runner logic:&#13;
-	- "ED (Living Area) - Opera Theater" to "East Building Rooftops" is now in logic with bow hover and CL&#13;
-	- "ED (Passages): Above Transporter" now allows bow hover, TCK and CL (among other combinations), because you can bow hover from the ledge at the end of the laser gauntlet instead of the box we usually use for this location&#13;
-	- "ED (Passages) - Left Exit" to "Under Root Node" is now directly in logic with bow hover or (grapple and CL and T-dash), without going through "Top Of TCK Platform Tutorial Room" first&#13;
-	- "OW - Root Node &amp; Middle Exits" to "Shortcut Elevator" is now in logic with WC and T-Dash&#13;
-	- "OW - Shortcut Elevator" to "Robot" is now in logic with SR, CS-dash and LG&#13;
-- `ledge_storage` logic:&#13;
-	- "AM - Highest Light Spinner" now allows parry hovering to either "Above Root Node" or "Upper Right Exit" with either CL setup, or T-dash setup plus Wall Climb (since using WC does not remove LS)&#13;
-	- "Central Hall - Left" to "Center", i.e. going through CH Vents backwards, is now in logic with CL and LG by doing three triple jumps&#13;
-	- "ED (Passages): Above Transporter" now allows (grapple and (CL or AD)) as another way to carry LS high enough to wall slide to the chest&#13;
-	- "ED (Passages) - Left Exit" to "Under Root Node" is now directly in logic with parry hover and CL, without going through "Top Of TCK Platform Tutorial Room" first&#13;
-	- "ED (Sanctum) - Root Node" to "Outside Nobility Hall" with a triple jump&#13;
-- Added `display_name`s to generation options that were missing them. If you've ever looked at a spoiler log and wondered why a few Nine Sols options were snake_case while most were Title Case, this is why.&#13;
-</content>
-    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.18</id>
-    <title>Stardew Valley v8.0.18</title>
-    <updated>2026-07-13T22:57:36+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content>## Mod&#13;
-- Added Summer to catch seasons for all fish spawns in the desert&#13;
-- Prevent playing cutscenes that contain NPCs which you have received during the current day, so they haven,t actually spawned in yet&#13;
-- Added a cleanup clause for duplicate NPCs, which I am still not sure where they come from&#13;
-- Fixed mountain to town shortcuts accidentally using the mountain to town randomized entrance if they were themselves not randomized&#13;
-&#13;
-## Apworld&#13;
-- Added Desert to regions where fish always need summer to be catchable&#13;
-- Added many missing NPC existence rules to quests and secrets</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.18"/>
-  </entry>
-  <entry>
-    <id>https://github.com/NaveTK/Archipelago/releases/tag/v0.4.3</id>
-    <title>The Binding of Isaac Repentance v0.4.3.post4</title>
-    <updated>2026-07-13T23:17:37+00:00</updated>
-    <author>
-      <name>NaveTK</name>
-    </author>
-    <content>Integrated UT support&#13;
-Rewritten internal logic&#13;
-Added unit tests, fixed logic bugs&#13;
-Cracked key now as alternative to Red Key and Soul of Cain available</content>
-    <link href="https://github.com/NaveTK/Archipelago/releases/tag/v0.4.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.4.3</id>
-    <title>Factorio: Platformer v0.4.3</title>
-    <updated>2026-07-14T00:56:59+00:00</updated>
-    <author>
-      <name>lepideble</name>
-    </author>
-    <content>## Fixes&#13;
-&#13;
-* Fix inversed check that platform has hub by @lepideble in https://github.com/lepideble/factorio-apworld/pull/68&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.4.2...platformer-0.4.3</content>
-    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.4.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.23.0</id>
-    <title>Metroid Dread v0.23.0</title>
-    <updated>2026-07-14T01:43:53+00:00</updated>
-    <author>
-      <name>maxdietz</name>
-    </author>
-    <author>
-      <name>Randovania Dread contributors</name>
-    </author>
-    <content>## What's Changed&#13;
-* chore(release): v0.22.0 by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/161&#13;
-* fix(door-rando): sync one-way doors' far sides with the rolled weakness (schema 8) by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/162&#13;
-* fix(patcher): regenerate end-credits spoiler_log from real AP placements by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/163&#13;
-* fix(logic): resolve misc:DoorLocks faithfully under door-lock rando by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/164&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.22.0...v0.23.0</content>
-    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.23.0"/>
-  </entry>
   <entry>
     <id>https://github.com/AutumnRivers/Archipelago-Hacknet/releases/tag/hacknet-alpha-4</id>
     <title>Hacknet v4</title>
@@ -572,6 +395,16 @@ Thanks to @ColgateSupreme </content>
     <link href="https://github.com/NaixGames/Polycosmos/releases/tag/0.16.2"/>
   </entry>
   <entry>
+    <id>https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v1.2.1</id>
+    <title>Brutal Orchestra v1.0.0r3</title>
+    <updated>2026-07-15T20:45:23+00:00</updated>
+    <author>
+      <name>DeadEye</name>
+    </author>
+    <content>Now you recieve heroes and money properly</content>
+    <link href="https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v1.2.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.4</id>
     <title>Borderlands 2 v0.5.4</title>
     <updated>2026-07-15T22:00:46+00:00</updated>
@@ -608,6 +441,27 @@ This release is compatible with multiworlds from v1.3.0 onwards.&#13;
 &#13;
 Find the apworld and a several template yamls below.</content>
     <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nebbii/za-gdx/releases/tag/v0.1.2</id>
+    <title>Zelda's Adventure GDX v0.1.0r5</title>
+    <updated>2026-07-16T06:13:52+00:00</updated>
+    <author>
+      <name>nebbii</name>
+    </author>
+    <content>## What's Changed&#13;
+* Feature: stylized archipelago pickup sprite courtesy of Spectremint by @nebbii in https://github.com/nebbii/za-gdx/pull/95&#13;
+&lt;img width="430" height="270" alt="image" src="https://github.com/user-attachments/assets/880ca078-384d-408d-9ec3-19517f44a860" /&gt;&#13;
+&#13;
+&#13;
+* Feature: Clean up archipelago config screen and add password field by @nebbii in https://github.com/nebbii/za-gdx/pull/100&#13;
+* Fix: Make Llort reward 250 rubies on defeat by @sshrrutiiii in https://github.com/nebbii/za-gdx/pull/101&#13;
+&#13;
+## New Contributors&#13;
+* @sshrrutiiii made their first contribution in https://github.com/nebbii/za-gdx/pull/101&#13;
+&#13;
+**Full Changelog**: https://github.com/nebbii/za-gdx/compare/v0.1.1...v0.1.2</content>
+    <link href="https://github.com/nebbii/za-gdx/releases/tag/v0.1.2"/>
   </entry>
   <entry>
     <id>https://codeberg.org/Partatio/SS2-Apworld/releases/tag/0.5.1</id>
@@ -1048,6 +902,21 @@ Installation instructions can be found [here](https://github.com/jordansds/Archi
     <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.11"/>
   </entry>
   <entry>
+    <id>https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.1.0</id>
+    <title>Final Fantasy XIII-2 v0.1.0</title>
+    <updated>2026-07-18T14:46:18+00:00</updated>
+    <author>
+      <name>MLSTRM</name>
+    </author>
+    <content>Initial public release of FF13-2 apworld!&#13;
+&#13;
+Requires FFModdingWPF FF13-2 standalone rando version 0.8.2.51+ - https://github.com/Bartz24/FFModdingWPF&#13;
+The standalone rando has a link to the required version of Nova Chrysalia required to install the generated modpacks&#13;
+&#13;
+To receive items from the client, hold L2 or R2 while in a field area (not the crux/battle)</content>
+    <link href="https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.1.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.8.1</id>
     <title>Kerbal Space Program 1 v0.8.1</title>
     <updated>2026-07-18T14:52:45+00:00</updated>
@@ -1166,21 +1035,134 @@ Known Issues:&#13;
     <author>
       <name>Silasary</name>
     </author>
-    <content>## 0.9.3
-* Fixed a cross-slot bleed involving custom recipes that use fluoroketone.
-* Added a better error message for impossible yaml combinations.
-## 0.9.2
-* Made Energy Bridge recipe actually random
-* Made fish immune to lightning strikes.
-* Adjusted recipe costs to be more accurate, which should lead to more interesting seeds.
-* Fixed CLI not working.
-* Updated the way the mod handles text localisation.
-
-## 0.9.1
-* Science Packs are now given randomised names.
-* Changed the 'Vanilla' yellow science pack to be crafted in a centrifuge, then added it to the machine shuffle.
-* Fixed a bug with Universal Tracker compatibility.
+    <content>## 0.9.3&#13;
+* Fixed a cross-slot bug involving custom recipes that use fluoroketone.&#13;
+* Added a better error message for impossible yaml combinations.&#13;
+* Put basic seed info into the Mod info&#13;
+* Added Integrated UT support to the client&#13;
+&#13;
+## 0.9.2&#13;
+* Made Energy Bridge recipe actually random&#13;
+* Made fish immune to lightning strikes.&#13;
+* Adjusted recipe costs to be more accurate, which should lead to more interesting seeds.&#13;
+* Fixed CLI not working.&#13;
+* Updated the way the mod handles text localisation.&#13;
+&#13;
+## 0.9.1&#13;
+* Science Packs are now given randomised names.&#13;
+* Changed the 'Vanilla' yellow science pack to be crafted in a centrifuge, then added it to the machine shuffle.&#13;
+* Fixed a bug with Universal Tracker compatibility.&#13;
 * Made fruit trees immune to lightning strikes.</content>
     <link href="https://github.com/silasary/Archipelago/releases/tag/factorio_saws-0.9.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/tag/0.5.2</id>
+    <title>Another Crab's Treasure v0.5.2</title>
+    <updated>2026-07-19T01:00:42+00:00</updated>
+    <author>
+      <name>Automagic00</name>
+    </author>
+    <content>**NOTE:  NG+ features are still not functioning properly, and not recommended to be enabled at this time. Everything else with this update should now be functioning properly however. This update does not update the apworld, so you can update from v0.5.0 mid run. Downpatching is not required for this update, and is fully compatible with Year of the Crab update.**&#13;
+&#13;
+- Improved world item markers to stay toggled on hopefully for good, and be significantly better on in game performance&#13;
+- Added an option to toggle the visibility of crystal item markers both in the map/world&#13;
+- Changed the top left in game settings to be stored in the save file, keeping your set settings across restarts&#13;
+- Added config options to the mod to keep track of the last used connection&#13;
+- Changed world/map item markers to not display collected items/checks that have been sent already&#13;
+- Changed the marker render distance slider bar to uncap the render distance if set all the way to the right (this will make it work as it did pre v0.5.1, minus the bugs)&#13;
+- Added a disconnect button to the connection menu after connecting&#13;
+- Fixed the pawn shop shopkeeper not being interactable in some situations, making it impossible to sell your trash for microplastics.</content>
+    <link href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/tag/0.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silent-destroyer/tunic-randomizer/releases/tag/5.0.1</id>
+    <title>TUNIC v5.0.1</title>
+    <updated>2026-07-19T01:04:28+00:00</updated>
+    <author>
+      <name>silent-destroyer</name>
+    </author>
+    <author>
+      <name>ScipioWright</name>
+    </author>
+    <content>### Backwards compatibility with existing seeds: &#13;
+- Single Player: ❌&#13;
+- Archipelago: ✅&#13;
+  - The tunic apworld was updated in this version:&#13;
+    - Fixed inconsistent rules for boss checks if shuffled enemy drops and combat logic were both enabled&#13;
+&#13;
+# Changes&#13;
+- Fixed a single player bug where switching from an entrance rando save file to a non-entrance rando save file in the same session would cause seed bleed and corrupt the item placements.&#13;
+- Fixed a visual bug when switching between save files that would cause the wrong freestanding item models/chest colors to appear on the first load.&#13;
+- Fixed a couple of Fox Prince logic bugs.&#13;
+  - The Hero's Laurels are now prevented from appearing at the `Secret Gathering Place - 20 Fairies` check in Fox Prince due to it being too restrictive and causing issues.&#13;
+- The Dice and Dart items now appear in the inventory screen in Fox Prince.&#13;
+- Interacting with the Sealed Temple door will no longer send you to the intro cutscene ghost area.&#13;
+  - This was previously always the case when playing Hexagon Quest, but now applies in all modes.&#13;
+- The seeking spell will no longer target the coin wells if the filter option for default checks is disabled.&#13;
+- To avoid confusion, the bald fox trap no longer removes the laurels from the player.</content>
+    <link href="https://github.com/silent-destroyer/tunic-randomizer/releases/tag/5.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03h</id>
+    <title>Cuphead v0.2.16910335</title>
+    <updated>2026-07-19T01:40:44+00:00</updated>
+    <author>
+      <name>JKLeckr</name>
+    </author>
+    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
+&#13;
+### Revision&#13;
+&#13;
+This revision adjust logic to allow double jumping for getting coin 1 in Funhouse Frazzle.&#13;
+</content>
+    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03h"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.4</id>
+    <title>CrossCode v0.9.4</title>
+    <updated>2026-07-19T02:22:44+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content>## Fixes to Mod&#13;
+&#13;
+* Fixed an issue where, in the Quest Menu in Records, if a non-randomized quest was displayed after a randomized quest, their rewards would overlap (#87, @CodeTriangle).&#13;
+* Fixed an issue where, on the Archipelago Game Info screen, when Quest Randomization and Shop Randomization were both turned off, Progressive Equipment would never display as enabled. (#86, @CodeTriangle).&#13;
+&#13;
+## Fixes to Logic&#13;
+&#13;
+* **Creator** goal has been moved to **Vermillion Wasteland** as it should have been (#82, @Gudf).&#13;
+* **Shock Pedestal** and **So'najiz Circuit Override** have swapped regions as their logic had previously been transposed (#84, @kumquat-ir).&#13;
+* **An Unfortunate Series of Features** now requires access to Maroon Valley (#85, @CodeTriangle).&#13;
+* **Botanics: Omega Open Baraleles** now requires grove or wave (#85, @CodeTriangle).&#13;
+* Shop Slots for **Cross Gear** in **Rhombus Weapons** now requires **Azure Archipelago Pass** (#85, @CodeTriangle).</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.1.0</id>
+    <title>Spirit Valley v2.1.0</title>
+    <updated>2026-07-19T04:23:21+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- (APWorld) Redid rules to use Rule Builder allowing for "/explain" to be used in UT&#13;
+- (APworld) Fixed main/side mission battles being in logic when the associated mission isn't&#13;
+- (Client) fixed sending goal locations when server has client release disabled&#13;
+&#13;
+&#13;
+INSTALLATION INSTRUCTIONS:&#13;
+&#13;
+CLIENT:&#13;
+- Have Spirit Valley Installed&#13;
+- Download Spirit Valley Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Spirit Valley Archipelago Client V#.#.#.zip" to the directory where "SpiritValley.exe" is&#13;
+&#13;
+APWORLD (needed for generating archieplago game):&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Spirit Valley APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Spirit Valley APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recommended)Select "Generate Template Options" to generate default spirit valley YMAL</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.1.0"/>
   </entry>
 </feed>

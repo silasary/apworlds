@@ -4,7 +4,7 @@ Spyro: A Hero&#x27;s Tail is a 3D platformer and collect-a-thon released in 2004
 
 
 ## Downloads
-- <a href="https://github.com/XuaTheGrate/spyro-aht-ap/releases/download/0.3.3/spyro-aht.apworld">Latest Version (0.3.0r4)</a>
+- <a href="https://github.com/seanstan95/PhoenixAP/releases/download/v1.0.10/spyro-aht.apworld">Latest Version (1.0.9r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

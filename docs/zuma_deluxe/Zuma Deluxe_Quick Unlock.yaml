@@ -1,0 +1,396 @@
+﻿# Q. What is this file?
+# A. This file contains options which allow you to configure your multiworld experience while allowing
+#    others to play how they want as well.
+#
+# Q. How do I use it?
+# A. The options in this file are weighted. This means the higher number you assign to a value, the
+#    more chances you have for that option to be chosen. For example, an option like this:
+#
+#    map_shuffle:
+#      on: 5
+#      off: 15
+#
+#    Means you have 5 chances for map shuffle to occur, and 15 chances for map shuffle to be turned
+#    off.
+#
+# Q. I've never seen a file like this before. What characters am I allowed to use?
+# A. This is a .yaml file. You are allowed to use most characters.
+#    To test if your yaml is valid or not, you can use this website:
+#        http://www.yamllint.com/
+#    You can also verify that your Archipelago options are valid at this site:
+#        https://archipelago.gg/check
+
+# Your name in-game, limited to 16 characters.
+#     {player} will be replaced with the player's slot number.
+#     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
+#     {number} will be replaced with the counter value of the name.
+#     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
+name: Player{number}
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Zuma Deluxe Template
+
+game: Zuma Deluxe
+requires:
+  version: 0.6.7 # Version of Archipelago required for this yaml to work as expected.
+  game:
+    Zuma Deluxe: 0.1.0 # Version of the world required for this yaml to work as expected.
+
+Zuma Deluxe:
+  ################
+  # Game Options #
+  ################
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # 
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-99: 0 # random value between 0 and 99
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # 
+    # **Full:** ensure everything can be reached and acquired.
+    # 
+    # **Minimal:** ensure what is needed to reach your goal can be acquired.
+    full: 50
+    minimal: 0
+
+  ################
+  # Goal Options #
+  ################
+  game_mode:
+    # Choose the game mode where you will be playing.
+    # Adventure: Enables Adventure mode.
+    # Gauntlet: Enables Gauntlet mode both Survival and Practice.
+    # Explorer: Play Both Modes.
+    adventure: 0
+    gauntlet: 50
+    explorer: 0
+
+  goal:
+    # Choose the Level to complete for your Goal
+    # Space: Beat the level Space
+    # Random: picks a random lvl of the list
+    space: 0
+    random_level: 50
+
+  goal_mode:
+    # "
+    # When the exploration Mode is played, picks to what mode will be the goal level assigned.
+    # 
+    # When picking option both:
+    # space Goal,  allows the player to goal by beating either version.
+    # random, will pick a random level for each mode,
+    # 
+    # random One will select one of the modes to have the goal
+    adventure: 0
+    gauntlet: 0
+    both: 0
+    random_one: 50
+
+  sun_idol:
+    # The amount of Sun Idols that will be Scattered around the multiworld.
+    # 
+    # Will be cap depending on the amount of final checks.
+    # Max around adventure ~100~
+    # Max around gauntlet ~200~
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 10
+    # Maximum value is 250
+    50: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-10-250: 0 # random value between 10 and 250
+
+  sun_idol_unlock:
+    # The percentage of Sun Idols required to goal by beating the goal level.
+    # Will unlock space in adventure.
+    # Will let you play the goal difficulty for the level in gauntlet.
+    # 
+    # Max will be one less than the amount of Sun Idols.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    50: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-99: 0 # random value between 0 and 99
+
+  sun_idol_helpers:
+    # After you unlock the goal level, each extra SunIdol will make the level easier until the selected percentage.
+    # 
+    # At this amount of Sun idols:
+    # Space will have the vanilla requirement in adventure.
+    # Gauntlet will goal at the first level of goal difficulty
+    # 
+    # if smaller than the required Sun idols, will be set to one higher
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 100
+    75: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-100: 0 # random value between 1 and 100
+
+  death_link:
+    # When you lose a live or get game over, the other player will also die.
+    # the opposite is also true.
+    'off': 50
+    toggle: 0
+    'on': 0
+
+  #################
+  # Level Options #
+  #################
+  ace_time:
+    # Add the Ace-Time of each level as locations.
+    'false': 50
+    'true': 0
+
+  coins:
+    # Choose the multiplier percentage to the amount of coins needed per Section (Board Difficulty or Stage) to send the location.
+    # 
+    # The base amount is calculated on the amount of levels per Section, 7 in gauntlet, 5-7 in adventure.
+    # 
+    # For reference decimals will go up.
+    # 50% : 4 gauntlet 3-4 adventure
+    # 150% : 11 gauntlet 8-11 adventure
+    # Minimum will be 1 coin.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 200
+    100: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-200: 0 # random value between 1 and 200
+
+  gaps:
+    # Amount of gaps shots for each Section.
+    # The base amount is calculated on the amount of levels per Section, 7 in gauntlet, 5-7 in adventure.
+    # 
+    # For reference decimals will go up.
+    # 50% : 4 gauntlet 3-4 adventure
+    # 150% : 11 gauntlet 8-11 adventure
+    # Minimum will be 1 gap shot.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 300
+    100: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-300: 0 # random value between 1 and 300
+
+  combo:
+    # Amount of combos shots for each Section. (groups destroyed after a shot)
+    # The base amount is calculated on the amount of levels per Section, 7 in gauntlet, 5-7 in adventure.
+    # 
+    # For reference decimals will go up.
+    # 50% : 4 gauntlet 3-4 adventure
+    # 150% : 11 gauntlet 8-11 adventure
+    # Minimum will be 1 combos shot.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 500
+    200: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-500: 0 # random value between 1 and 500
+
+  max_combo:
+    # The amount of Combos to made with one shot required to send the check.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 2
+    # Maximum value is 5
+    3: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-2-5: 0 # random value between 2 and 5
+
+  chain:
+    # The length of the chain to made required to send the check.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 5
+    # Maximum value is 10
+    6: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-5-10: 0 # random value between 5 and 10
+
+  ####################
+  # Gauntlet Options #
+  ####################
+  gauntlet_levels:
+    # Determines which Boards from Gauntlet can be considered for inclusion in the multiworld.
+    # 
+    # Set any Level you don't want to possibly play to false.
+    # 
+    # A minimum of 5 Levels must be selected to play.
+    # 
+    # If space is selected as goal but not here, only clearing the goal will be the only check in space
+    Board 1 - Spiral of Doom: true
+    Board 10 - Rorschach: true
+    Board 11 - Mouth of Centeotl: true
+    Board 12 - Snake Pit: true
+    Board 13 - Sand Garden: false
+    Board 14 - Lair of The Mud Snake: false
+    Board 15 - Lan Ding Pad: true
+    Board 16 - Altar of Tlaloc: true
+    Board 17 - Code of Mixtec: true
+    Board 18 - Shrine of Quetzalcoatl: true
+    Board 19 - Mirror Serpent: true
+    Board 2 - Osprey Talon: true
+    Board 20 - Sun Stone: false
+    Board 21 - Zumaic Exodus: false
+    Board 22 - Space: false
+    Board 3 - Riverbed Mosaic: true
+    Board 4 - Breath of Ethecatl: true
+    Board 5 - Dark Vortex: true
+    Board 6 - SwitchBack: false
+    Board 7 - Long Range: false
+    Board 8 - When Spirals Attack: true
+    Board 9 - Mud Slide: true
+
+  gauntlet_amount:
+    # Determines how many levels will be picked from your selection from Gauntlet to include in the multiworld.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 5
+    # Maximum value is 22
+    10: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-5-22: 0 # random value between 5 and 22
+
+  gauntlet_difficulty:
+    # Determines the Goal difficulty for the Gauntlet.
+    # Each lower difficulty will be location.
+    eagle: 0
+    jaguar: 50
+    sun_god: 0
+
+  #####################
+  # Adventure Options #
+  #####################
+  adventure_levels:
+    # Determines which stages from adventure can be considered for inclusion in the multiworld.
+    # 
+    # Set any Level you don't want to possibly play to false.
+    # 
+    # A minimum of 4 Levels must be selected to play.
+    Stage 1 - Temple of Zukulkan 1: true
+    Stage 10 - Secret Shrine Of Zuma 1: false
+    Stage 11 - Secret Shrine Of Zuma 2: false
+    Stage 12 - Secret Shrine Of Zuma 3: false
+    Stage 2 - Temple of Zukulkan 2: true
+    Stage 3 - Temple of Zukulkan 3: true
+    Stage 4 - Quetzal Quatl 1: false
+    Stage 5 - Quetzal Quatl 2: false
+    Stage 6 - Quetzal Quatl 3: false
+    Stage 7 - Popo Poyolli 1: false
+    Stage 8 - Popo Poyolli 2: false
+    Stage 9 - Popo Poyolli 3: false
+
+  adventure_amount:
+    # Determines how many levels will be picked from your selection from Gauntlet to include in the multiworld.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 4
+    # Maximum value is 12
+    9: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-4-12: 0 # random value between 4 and 12
+
+  ##################
+  # Useful Options #
+  ##################
+  clear_score_multiplier:
+    # Multiplier percentage for scores needed to beat each level
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 10
+    # Maximum value is 300
+    100: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-10-300: 0 # random value between 10 and 300
+
+  maximum_starting_lives:
+    # Number of lives you will start after receiving all Progressive Lives.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 2
+    # Maximum value is 10
+    3: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-2-10: 0 # random value between 2 and 10
+
+  ###########################
+  # Item & Location Options #
+  ###########################
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with the specified amount of these items. Example: "Bomb: 1"
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the ``!hint`` command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the ``!hint`` command.
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item.
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item.
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  plando_items:
+    # Generic items plando.
+    []

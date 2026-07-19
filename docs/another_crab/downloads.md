@@ -1,9 +1,12 @@
 # Another Crab&#x27;s Treasure
 
 ## Latest
-- <a href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/0.5.1/another_crab.apworld">Latest Version (0.5.1)</a>
+- <a href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/0.5.2/another_crab.apworld">Latest Version (0.5.2)</a>
 
 ## All Versions
+
+#### v0.5.2
+- <a href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/0.5.2/another_crab.apworld">https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/0.5.2/another_crab.apworld</a>
 
 #### v0.5.1
 - <a href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/0.5.1/another_crab.apworld">https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/download/0.5.1/another_crab.apworld</a>

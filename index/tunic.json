@@ -100,6 +100,21 @@
       "title": "TUNIC Randomizer 5.0.0",
       "version_simple": "5.0.0",
       "world_version": "5.0.0"
+    },
+    "5.0.1": {
+      "created_at": "2026-07-19T01:04:28Z",
+      "description": "### Backwards compatibility with existing seeds: \r\n- Single Player: \u274c\r\n- Archipelago: \u2705\r\n  - The tunic apworld was updated in this version:\r\n    - Fixed inconsistent rules for boss checks if shuffled enemy drops and combat logic were both enabled\r\n\r\n# Changes\r\n- Fixed a single player bug where switching from an entrance rando save file to a non-entrance rando save file in the same session would cause seed bleed and corrupt the item placements.\r\n- Fixed a visual bug when switching between save files that would cause the wrong freestanding item models/chest colors to appear on the first load.\r\n- Fixed a couple of Fox Prince logic bugs.\r\n  - The Hero's Laurels are now prevented from appearing at the `Secret Gathering Place - 20 Fairies` check in Fox Prince due to it being too restrictive and causing issues.\r\n- The Dice and Dart items now appear in the inventory screen in Fox Prince.\r\n- Interacting with the Sealed Temple door will no longer send you to the intro cutscene ghost area.\r\n  - This was previously always the case when playing Hexagon Quest, but now applies in all modes.\r\n- The seeking spell will no longer target the coin wells if the filter option for default checks is disabled.\r\n- To avoid confusion, the bald fox trap no longer removes the laurels from the player.",
+      "download_url": "https://github.com/silent-destroyer/tunic-randomizer/releases/download/5.0.1/tunic.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7f45a5c8ee2eeecd2f8d3f922f8d097e940836dacb8f472f59df351f03184943",
+      "html_url": "https://github.com/silent-destroyer/tunic-randomizer/releases/tag/5.0.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 154358,
+      "source_url": "https://api.github.com/repos/silent-destroyer/tunic-randomizer",
+      "tag": "5.0.1",
+      "title": "TUNIC Randomizer 5.0.1",
+      "version_simple": "5.0.1",
+      "world_version": "5.0.1"
     }
   }
 }
