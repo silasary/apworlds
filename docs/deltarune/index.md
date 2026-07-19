@@ -4,7 +4,7 @@ Deltarune is an RPG.
 
 
 ## Downloads
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.5/deltarune.apworld">Latest Version (2.0.5)</a>
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.0.6/deltarune.apworld">Latest Version (2.0.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

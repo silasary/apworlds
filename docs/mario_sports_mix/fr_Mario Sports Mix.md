@@ -38,13 +38,11 @@ difficulté expert sur le terrain Stade Mario à la balle au prisonnier)
 Étant aux premiers stades du développement d'Archipelago pour Mario Sports Mix, de nombreuses options ajoutant des
 checks sont prévues à l'avenir, tel que :
 - Scoresanity
-- Courtsanity (terrains de jeu)
 - Les chemins annexes des tournois
-- Les mini-jeux
 
 ## Quels objets peut-on trouver dans les autres mondes ?
 
-- L'accès aux différents sports (une option ultérieure permettra de débloquer nativement tous les sports.)
+- L'accès aux différents sports
 - Les personnages
 - Les différents accès aux coupes dans chacun des sports (Avec la différenciation, entre facile et difficile sauf pour le
 Sports Mix mode.)

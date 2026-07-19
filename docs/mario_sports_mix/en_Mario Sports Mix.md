@@ -42,8 +42,7 @@ you will send the check for that difficulty **and** the ones below as long as yo
 
 ## What items can appear in other worlds?
 Positive items include:
-- Each sport (Basketball, Volleyball, Dodgeball, Hockey) - There is a setting allowing you to start with them
-(Currently this setting is needed otherwise things won't work :/ )
+- Each sport (Basketball, Volleyball, Dodgeball, Hockey)
 - Each cup for each sport OR Progressive Cup
 - Each court OR Progressive Court
 - Exhibition Difficulties
@@ -59,8 +58,6 @@ Negative items include:
 ## What isn't included yet?
 - Alternate Paths
 - Scoresanity
-- Courtsanity
-- Party Mode
 
 ## Have any ideas?
 Please tell me in the [Mario Sports Mix Thread](https://discord.com/channels/731205301247803413/1485699253450833942)

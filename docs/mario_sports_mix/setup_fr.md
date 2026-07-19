@@ -2,10 +2,10 @@
 
 ## Logiciels requis 
 
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) (la version 0.6.7 ou la plus récente)
-- [Dernière version de l’Apworld](https://github.com/ElectroStarz/ArchipelagoMSM/releases)
-- [L’émulateur Dolphin](https://dolphin-emu.org/download/?ref=btn)
--  Votre Rom de Mario Sport Mix (Seul le NTSC-J n'est pas supporté)
+* [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) (la version 0.6.7 ou la plus récente)
+* [Dernière version de l’Apworld](https://github.com/ElectroStarz/ArchipelagoMSM/releases)
+* [L’émulateur Dolphin](https://dolphin-emu.org/download/?ref=btn)
+* Votre Rom de Mario Sport Mix (Seul le NTSC-J n'est pas supporté)
  
 ## Installation
 
@@ -27,11 +27,6 @@ directement dans l’application, et sélectionnez le fichier installé.
 - Vérifiez que vous utilisez le client Mario Sports Mix et que vous êtes connecté quand vous jouez au jeu, sans quoi,
 **ça ne fonctionnera pas.**
 
-### Dolphin
-
-- <ins>**Sauvegardez bien vos données lorsque vous jouez!**</ins>
-- Quand vous jouez, n’utilisez que la sauvegarde 1 ! (Le support des autres fichiers de sauvegardes sera possiblement
-supporté plus tard.)
 
 ## Créer le fichier yaml
 ### Explication d’un fichier yaml et pourquoi en avoir besoin
