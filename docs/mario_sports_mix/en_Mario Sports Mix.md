@@ -24,7 +24,7 @@ for example, Basketball: Beat [Difficulty] Mushroom Cup Round [1, 2 or 3].
 ## What is the goal of the game?
 There are 2 bosses in Mario Sports Mix, Behemoth and Behemoth King. Behemoth is accessed beating the star cups on each
 for each sport, finally beating star cup one last time to fight Behemoth at the end. Behemoth King is accessed by
-beating each Sports Mix cup.
+beating the Sports Mix Star cup.
 
 There _is_ another goal though, Win Cups. This is self-explanatory, you win the amount of cups, from 1 cup - 27 cups,
 the client keeps track of which Round 3 locations you've checked, then checks if you have the required number of cup

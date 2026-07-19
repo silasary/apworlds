@@ -17,7 +17,7 @@
 #### v0.1.0r2
 - <a href="https://github.com/nebbii/za-gdx/releases/download/v0.1.0/zagdx.apworld">https://github.com/nebbii/za-gdx/releases/download/v0.1.0/zagdx.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0r2r2
 - <a href="https://github.com/nebbii/za-gdx/releases/download/v0.1.3/zagdx.apworld">https://github.com/nebbii/za-gdx/releases/download/v0.1.3/zagdx.apworld</a>
 
 #### v0.1.0

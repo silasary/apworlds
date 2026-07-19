@@ -1,9 +1,12 @@
 # Hyperdimension Neptunia Re;Birth3 V GENERATION
 
 ## Latest
-- <a href="https://github.com/vegemiiBG/Archipelago-NepRb3/releases/download/v0.1.7/nep_rb3.apworld">Latest Version (0.1.7)</a>
+- <a href="https://github.com/vegemiiBG/Archipelago-NepRb3/releases/download/v0.1.8/nep_rb3.apworld">Latest Version (0.1.8)</a>
 
 ## All Versions
+
+#### v0.1.8
+- <a href="https://github.com/vegemiiBG/Archipelago-NepRb3/releases/download/v0.1.8/nep_rb3.apworld">https://github.com/vegemiiBG/Archipelago-NepRb3/releases/download/v0.1.8/nep_rb3.apworld</a>
 
 #### v0.1.7
 - <a href="https://github.com/vegemiiBG/Archipelago-NepRb3/releases/download/v0.1.7/nep_rb3.apworld">https://github.com/vegemiiBG/Archipelago-NepRb3/releases/download/v0.1.7/nep_rb3.apworld</a>

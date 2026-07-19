@@ -5,7 +5,7 @@ Undertale Yellow is a fangame based on Undertale where every choice you make mat
 
 
 ## Downloads
-- <a href="https://github.com/Pugie38/Undertale-Yellow-AP/releases/download/v0.1.6/undertale_yellow.apworld">Latest Version (0.1.6.post2)</a>
+- <a href="https://github.com/Pugie38/Undertale-Yellow-AP/releases/download/v0.1.6.1/undertale_yellow.apworld">Latest Version (0.1.6.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

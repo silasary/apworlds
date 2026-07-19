@@ -4,7 +4,7 @@ Final Fantasy V: Career Day
 
 
 ## Downloads
-- <a href="https://github.com/junglechief87/arch_ffvcd/releases/download/v.83.0/ffvcd.apworld">Latest Version (83.0)</a>
+- <a href="https://github.com/junglechief87/arch_ffvcd/releases/download/v83.1/ffvcd.apworld">Latest Version (83.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
