@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "FF7 Archipelago"
+  ],
+  "game": "Final Fantasy VII",
+  "github": "https://github.com/blazerwazey/FF7pelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "V0.0.1": {
+      "created_at": "2026-06-22T01:21:18Z",
+      "description": "Initial Testing Release of Final Fantasy 7's Archipelago integration.\r\n\r\nThis can only be used in conjunction the the Gold Saucer Randomizer available from: https://github.com/blazerwazey/Gold-Saucer/releases\r\n",
+      "download_url": "https://github.com/blazerwazey/FF7pelago/releases/download/V0.0.1/ff7.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8934eaa16b01d5a389ebe5923a6817f330e59b22c8b1abe1d17c35e15299464f",
+      "html_url": "https://github.com/blazerwazey/FF7pelago/releases/tag/V0.0.1",
+      "minimum_ap_version": "0.5.1",
+      "size": 96887,
+      "source_url": "https://api.github.com/repos/blazerwazey/FF7pelago",
+      "tag": "V0.0.1",
+      "title": "v0.0.1 FF7 AP World ",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "V0.0.2": {
+      "created_at": "2026-06-23T05:30:59Z",
+      "description": "Define _GOLD_CHOCOBO_EARLY_REGIONS set (Kalm, Mythril Mines, Chocobo Farm, Fort Condor, Junon, Corel, Gold Saucer Area, Midgar Sector 5)\r\nAdd item_rule in _apply_free_roam_rules to block Gold Chocobo placement in early-reachable regions\r\nRemove Gold Chocobo from early_priority_items list in create_regions (keep Green Chocobo, Submarine, Highwind)",
+      "download_url": "https://github.com/blazerwazey/FF7pelago/releases/download/V0.0.2/ff7.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4b2ae02d8d9c424874902daef635b172cce09f70e2d0a831f5a648d0c697b549",
+      "html_url": "https://github.com/blazerwazey/FF7pelago/releases/tag/V0.0.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 105704,
+      "source_url": "https://api.github.com/repos/blazerwazey/FF7pelago",
+      "tag": "V0.0.2",
+      "title": "V0.0.2 FF7 APWorld",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2"
+    },
+    "v0.0.3": {
+      "created_at": "2026-06-24T04:39:11Z",
+      "description": "Patch Notes:\r\n\r\nFF7: Free Roam game-over recovery - auto re-deliver all received items after a Game Over, fix key-item gate-flag conflicts, PHS menu lock, and armor init\r\n\r\nAdd automatic game-over detection and item re-delivery: latch module 26 (Game Over), debounce _RESUME_REDELIVER_TICKS stable gameplay ticks, then re-queue all received items to restore key items/vehicles/party/chocobos/inventory wiped by md1stin baseline reload\r\n\r\nAdd /resync command for manual re-delivery (same mechanism as auto recovery)",
+      "download_url": "https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.3/ff7.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a60a0b37e2f3c5e3a9c02488994290fb2c5192214f88b5c00d3e635b6da17522",
+      "html_url": "https://github.com/blazerwazey/FF7pelago/releases/tag/v0.0.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 108301,
+      "source_url": "https://api.github.com/repos/blazerwazey/FF7pelago",
+      "tag": "v0.0.3",
+      "title": "V0.0.3 FF7 APWorld",
+      "version_simple": "0.0.3",
+      "world_version": "0.0.3"
+    },
+    "v0.0.4": {
+      "created_at": "2026-06-27T05:08:56Z",
+      "description": "**New**\r\n- **AP shop descriptions show classification** \u2014 `An Archipelago Item for <Player> - <Progression/Useful/Filler/Trap> Item`.\r\n- **`disable_fort_condor_checks`** YAML option (World group). This only effects the minigame checks.\r\n\r\n**Locations**\r\n- **Red Submarine** is a working check \u2014 ram detection uses the game's natural flag (`0x0EF6.0`); the materia hits your menu only when received via AP.\r\n- **Cosmo Canyon Item Store** double pickup (Elixir + Magic Source) added.\r\n- **Basement Key** re\u2011introduced as a check.\r\n- **Glacier Map / Snowboard / Basement Key** locations no longer removed when received via AP.\r\n- **Excluded:** Nibelheim Item Store \u2013 Elixir, North Corel \u2013 Catastrophe.\r\n\r\n**Items / placement**\r\n- **Weapon delivery fixes** \u2014 Heaven's Cloud no longer gives Apocalypse; 3 Morph\u2011phones corrected; 5 duplicate entries removed.\r\n- **Huge Materia** delivered only via AP (in\u2011game pickups fire the check without adding to the menu).\r\n- **early_priority_items** no longer forces Highwind/Submarine/Green Chocobo early.\r\n\r\n**Client / live game**\r\n- **Submarine** spawns *and* is drivable out to sea at Junon.\r\n- **Icicle Inn snowboard cat** moved aside so the pickup is reachable.\r\n- **Limit Breaks** work on AP\u2011delivered characters (no battle softlock).\r\n- **Game\u2011over redundancy** \u2014 all AP items re\u2011delivered after a Free Roam game over + `/resync` command.\r\n- **PHS menu** locked until 3 characters received.\r\n- **XP / Gil / Materia(AP) multipliers** apply consistently (incl. after a process restart).\r\n- Reverted the Yuffie forest encounter flag; removed the unused `Var[3][189]` write.",
+      "download_url": "https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.4/ff7.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ec342245144811596a4c07318a9679122823b2cf9286d7df4f1d427e03ac4f97",
+      "html_url": "https://github.com/blazerwazey/FF7pelago/releases/tag/v0.0.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 110717,
+      "source_url": "https://api.github.com/repos/blazerwazey/FF7pelago",
+      "tag": "v0.0.4",
+      "title": "V0.0.4 FF7 APWorld",
+      "version_simple": "0.0.4",
+      "world_version": "0.0.4"
+    }
+  }
+}

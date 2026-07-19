@@ -1,0 +1,77 @@
+{
+  "game": null,
+  "github": "https://github.com/EviVirus/Archipelago",
+  "manifest_fields": [],
+  "versions": {
+    "FNaFW-v.1.0.4": {
+      "created_at": "2026-05-27T01:26:30Z",
+      "description": "# Fixes\r\n- Changed the way logic gets checked for when certain settings are on",
+      "download_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v.1.0.4/fnafw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "aff95d7e275b15caa4d3c9b0ce60f7bb84c5fed0c23d1be31842dcab894daf3a",
+      "html_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/tag/FNaFW-v.1.0.4",
+      "size": 8046174,
+      "source_url": "https://api.github.com/repos/EviVirus/Archipelago-FNaFW-FFPS",
+      "tag": "FNaFW-v.1.0.4",
+      "title": "FNaFW Archipelago: v1.0.4",
+      "version_simple": "1.0.4",
+      "world_version": "1.0.4"
+    },
+    "FNaFW-v1.0.1": {
+      "created_at": "2026-05-27T01:26:30Z",
+      "description": "# Fixes\r\n- Fixed the issue of unbeatable seeds being able to be generated (fixed Logic)\r\n- Added logic to the \"magic_rainbow\" goal\r\n\r\n# New\r\n- Implemented \"Hard Logic\" for \"magic_rainbow\" goal",
+      "download_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.0.1/fnafw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "ef977e16a04fdb93b724e35894cc079fdb01e25566c6bfaa274c7e04c1f2996a",
+      "html_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/tag/FNaFW-v1.0.1",
+      "size": 8046054,
+      "source_url": "https://api.github.com/repos/EviVirus/Archipelago-FNaFW-FFPS",
+      "tag": "FNaFW-v1.0.1",
+      "title": "FNaFW Archipelago: v1.0.1",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
+    },
+    "FNaFW-v1.0.2": {
+      "created_at": "2026-05-27T01:26:30Z",
+      "description": "# Fixes\r\n- Fixed the \"Hard_Logic\" option not applying when activated ",
+      "download_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.0.2/fnafw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "d83f565a8a5a207e5f8d154d965830cea637d32f6a2e4e8f6f1cac5e67f547a4",
+      "html_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/tag/FNaFW-v1.0.2",
+      "size": 8046052,
+      "source_url": "https://api.github.com/repos/EviVirus/Archipelago-FNaFW-FFPS",
+      "tag": "FNaFW-v1.0.2",
+      "title": "FNaFW Archipelago: v1.0.2",
+      "version_simple": "1.0.2",
+      "world_version": "1.0.2"
+    },
+    "FNaFW-v1.0.3": {
+      "created_at": "2026-05-27T01:26:30Z",
+      "description": "# Fixes\r\n- Fixed if there was more than 1 one instance of FNaFW in the multiworld, generation had a 90% chance to fail.\r\n- Fixed options not applying AGAIN (I did a big dumb dumb)",
+      "download_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.0.3/fnafw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "de43d9482bdb59e1f892f570bfb42d0239e15ab9a8d0233ea18a906df4bf0c5c",
+      "html_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/tag/FNaFW-v1.0.3",
+      "size": 8046029,
+      "source_url": "https://api.github.com/repos/EviVirus/Archipelago-FNaFW-FFPS",
+      "tag": "FNaFW-v1.0.3",
+      "title": "FNaFW Archipelago: v1.0.3",
+      "version_simple": "1.0.3",
+      "world_version": "1.0.3"
+    },
+    "FNaFW-v1.1.0": {
+      "created_at": "2026-05-27T01:26:30Z",
+      "description": "# New\r\n- Halloween Land and Geist Lair are now randomized into the pool\r\n   - You'll need `Halloween Land Access`/`Geist Lair Access` to enter the respective area from now on\r\n   - Adds 2 extra checks, each for entering the respective area\r\n- Added a new YAML setting (`halloween_minigame`)\r\n   - Randomizes the portals to the minigames in Halloween Land into the pool when turned on\r\n   - Adds 4 new locations for entering each minigame: `<Minigame>: Enter`\r\n   - Adds 4 new items to the Pool: `<Minigame> Access`\r\n- Added an \"UPDATE\" button to every screen\r\n   - Reloads every item recieved when pressed\r\n   - Allows the game to not constantly check for new items, reducing lag\r\n   - Automatically fixes some issues with items not being recieved\r\n   - You do NOT need to always press the \"Update\" button, the game also checks for the items when loading a new screen (e.g. pressing the \"Bytes\" button)\r\n- Made the path to Halloween Land more visible\r\n- Added an `archipelago.json` to the .apworld (so that it doesn't get unsupported when v0.7.0 of Archipelago releases)\r\n- Changed the description of some YAML settings to be more clear\r\n\r\n# Fixes\r\n- Fixed `Warp Item` doing nothing when having the setting `area_warping` set to `warp_item`.\r\n- Fixed Logic issues, specifically issues with `Warp Item` and `Progressive Animatronics`",
+      "download_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.1.0/fnafw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "a790042866e7b0c312fc8ab29448107e25c8d67e9bfa4385e22d80d29169b1be",
+      "html_url": "https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/tag/FNaFW-v1.1.0",
+      "size": 7464176,
+      "source_url": "https://api.github.com/repos/EviVirus/Archipelago-FNaFW-FFPS",
+      "tag": "FNaFW-v1.1.0",
+      "title": "FNaFW Archipelago: v1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
+    }
+  }
+}

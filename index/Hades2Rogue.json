@@ -1,0 +1,79 @@
+{
+  "game": null,
+  "github": "https://github.com/BrittisH39/Hades2Archipelago",
+  "manifest_fields": [],
+  "versions": {
+    "0.2.0": {
+      "created_at": "2026-07-01T18:00:18Z",
+      "description": "Renamed to Hades2Rogue to differentiate from existing Hades 2 implementation.\r\n\r\nFixed the multiple room locations not sending, but this time for real.",
+      "download_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/download/0.2.0/Hades2Rogue.apworld",
+      "has_manifest": false,
+      "hash_sha256": "e7bedb098239ecfb051b464d725f67a940709ae6e884241321458f5e7cd8be5d",
+      "html_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/tag/0.2.0",
+      "size": 43665,
+      "source_url": "https://api.github.com/repos/BrittisH39/Hades2Archipelago",
+      "tag": "0.2.0",
+      "title": "v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "v0.3.0": {
+      "created_at": "2026-07-02T00:33:13Z",
+      "description": "Fixed the following issues:\r\nStarting Max Health and Starting Max Arcana items not working\r\nQuitting and rejoining midrun randomizes the Daedalus upgrades you receive from the Daedalus Upgrade item\r\nNPCs won't give you their keepsakes, and therefore send their keepsake location, if you already have their keepsake.\r\nA bunch of logic issues for when you are only doing one route.\r\nRarity increase feature didn't work.",
+      "download_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.3.0/Hades2Rogue.apworld",
+      "has_manifest": false,
+      "hash_sha256": "1b2c648bb2cc354ffd46dbcf75a36dfbd74f29aba6b799465125a4f532aad0fd",
+      "html_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.3.0",
+      "size": 45622,
+      "source_url": "https://api.github.com/repos/BrittisH39/Hades2Archipelago",
+      "tag": "v0.3.0",
+      "title": "v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
+    },
+    "v0.4.0": {
+      "created_at": "2026-07-02T00:44:20Z",
+      "description": "Added Zagreus as an additional goal option, changed some other goal options to include him\r\nWhen a route is completed (Meaning that routes boss has been defeated the amount of times required by the YAML), all of the core locations from that route are released.\r\nHopefully fixed the bug where some players got \"APWorld appears to be invalid or damaged\" error message when trying to install the APWorld? I think I was just packaging it incorrectly, but it always worked for me, so I don't really have a way to test this.\r\nAdded /deathlink command to the client so you can enable/disable deathlink mid-run\r\n\r\nZagreus' stuff has only been tested once since I don't have a ton of time to test, marking this as prerelease for that reason.",
+      "download_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.4.0/Hades2Rogue.apworld",
+      "has_manifest": false,
+      "hash_sha256": "c6dec679774b6c05ca278bb0aab7113c40f9332ac8acfc58d3d7d050a1526c40",
+      "html_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.4.0",
+      "prerelease": true,
+      "size": 47715,
+      "source_url": "https://api.github.com/repos/BrittisH39/Hades2Archipelago",
+      "tag": "v0.4.0",
+      "title": "",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
+    },
+    "v0.5.0": {
+      "created_at": "2026-07-04T00:11:21Z",
+      "description": "# Added new features:\r\n- AspectSanity \"Per_Aspect\" mode, where all 24 aspects gets 5 progressive checks associated with it, adding 120 total items to the item pool.\r\n- Randomized and Per_Aspect modes start you with a random aspect, not always Melinoe's (Not tested super thoroughly)\r\n- All gods are available from the beginning, so your first run isn't pretty much always Apollo, Aphrodite, and Poseidon.\r\n\r\n\r\n## Fixed a number of issues, including:\r\n**Zagreus Fixes**\r\n- Redesigning Zagreus Final Challenge so it actually works consistently, instead of just putting you right in the fight it'll spawn the contract\r\n- Fixed an issue that resulted from that change, where you would go into the Zagreus fights with none of your build, which is very funny, but not ideal.\r\n- Redesigned how the run ends when you kill Zagreus.\r\n- Fixed Zagreus showing up in every shop in either of the two options, regardless of whether you'd defeated him already.\r\n- Ensured the infernal contract won't ever show up in the shop if it's set to Final Challenge.\r\n- Made it so the zagreus_encounter_mode, zagreus_defeats_needed, and zagreus_weaken_tiers actually do something, because apparently I wired that up wrong.\r\n**Bridge Connection Fixes/Diagnostics**\r\n- Added some additional logging so it's easier to determine what's going wrong between the mod and the AP client\r\ndefinitely not happen anymore (Theoretically, maybe)\r\n- Added some extra diagnostic stuff when using /bridge in the client\r\n- Removed the ability for players to change the port for the client/mod connection in the mod config, since there is no way of changing it for the client, and it's a bit confusing when there is also a archipelago server and port that people associate more with those concepts.\r\n\r\n## Also\r\n- Consolidated some of the bookkeeping for the Weapon-unlocks\r\n- Receiving certain items during boon-selection should no longer soft-lock your game.\r\n- Fixed a theoretical issue where if you run multiple seeds, it might use initial settings from the first run when launching into the second run. I never had this issue despite trying to reproduce for awhile, but it should \r\n- Eris should no longer break your game when giving you a curse, and should stop giving you said curse.",
+      "download_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.5.0/Hades2Rogue.apworld",
+      "has_manifest": false,
+      "hash_sha256": "fdf22becc812a8422a410dd8eea68c175833d9b99cefc9c00320e40505a56e10",
+      "html_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.5.0",
+      "prerelease": true,
+      "size": 50603,
+      "source_url": "https://api.github.com/repos/BrittisH39/Hades2Archipelago",
+      "tag": "v0.5.0",
+      "title": "v0.5.0",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
+    },
+    "v0.6.0": {
+      "created_at": "2026-07-04T00:11:21Z",
+      "description": "**Added Zagreus Journey:** A whole 3rd route using the Zagreus Journey mod by NikkelM. You'll need to have Hades installed alongside the mod in order for it to work. Be warned that it will not work unless you have a downloaded copy of Hades 1. Also added all of the applicable locations, incantations, keepsakes, etc.\r\n\r\nCore checks now count additional encounters in the same room as separate rooms. (Fields of Mourning and Rift of Thessaly)\r\n\r\nMassive YAML rewrite to make things clearer, hopefully.\r\n\r\n\r\n**A crap ton of bug fixes, including:**\r\n\r\nStarting aspect randomly reasserting itself in portions of the code, breaking daedalus hammers sometimes.\r\nKeepsake rack not opening until a player actually gives a nectar to someone.\r\nDeathlink had a ton of issues that I fixed, but I think there are others I need to find. I would really appreciate any feedback on this, since most of my testing is done solo, so it's difficult to find and stamp out the bugs in the edge cases\r\nSome item collision issues.\r\nMet Selene firing incorrectly.\r\nSome enemy defeated checks not sending when said enemy is defeated\r\nVarious other small things I caught",
+      "download_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.6.0/Hades2Rogue.apworld",
+      "has_manifest": false,
+      "hash_sha256": "e2fd1f66305e8fe9877e2fc56c90961516b0a0e20de94d85e31990d992708b49",
+      "html_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.6.0",
+      "size": 62808,
+      "source_url": "https://api.github.com/repos/BrittisH39/Hades2Archipelago",
+      "tag": "v0.6.0",
+      "title": "v0.6.0",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0"
+    }
+  }
+}

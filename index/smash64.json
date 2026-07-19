@@ -1,0 +1,89 @@
+{
+  "authors": [
+    "IncidiousJacob",
+    "ChatGPT"
+  ],
+  "game": "Super Smash Bros. 64",
+  "github": "https://github.com/IncidiousJacob/Smashipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "BTP/RTTF": {
+      "created_at": "2026-06-02T20:33:24Z",
+      "description": "Changelog:\r\n- Added checks to Board the Platforms, and Race to the Finish\r\n- Added Classic Mode Opponent Randomization\r\n- Fixed a generation issue regarding traps being set to 0 in the yaml options\r\n- various performance and bug fixes\r\n",
+      "download_url": "https://github.com/IncidiousJacob/Smashipelago/releases/download/BTP/RTTF/smash64.apworld",
+      "has_manifest": false,
+      "hash_sha256": "a2b23cd0d74e19e091a0f96bc09c2e1f0ccb5cb83f77cd72e9f015baab82ddab",
+      "html_url": "https://github.com/IncidiousJacob/Smashipelago/releases/tag/BTP/RTTF",
+      "size": 106071,
+      "source_url": "https://api.github.com/repos/IncidiousJacob/Smashipelago",
+      "tag": "BTP/RTTF",
+      "title": "Version 0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r5"
+    },
+    "deathlink": {
+      "created_at": "2026-05-30T17:34:14Z",
+      "description": "Changelog:\r\n-Fixed the patches thanks PixelShake92 for the help on this\r\n-added checks for break the target (kinda buggy)\r\n-added deathlink losing all your stocks in classic mode sends a deathlink, recieving on removes one stock\r\n\r\nKnown bugs:\r\nBreak the target and board the platform behave strangely with character locks",
+      "download_url": "https://github.com/IncidiousJacob/Smashipelago/releases/download/deathlink/smash64.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4714a48bfac5c6d24ea256d5b23b03387aa0a6a53b455836f8db2caef08529e4",
+      "html_url": "https://github.com/IncidiousJacob/Smashipelago/releases/tag/deathlink",
+      "minimum_ap_version": "0.6.7",
+      "size": 14814,
+      "source_url": "https://api.github.com/repos/IncidiousJacob/Smashipelago",
+      "tag": "deathlink",
+      "title": "Version 0.0.2",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r2"
+    },
+    "links": {
+      "created_at": "2026-05-31T02:26:29Z",
+      "description": "-Added Energylink use /energylink in the bizhawk client to see all related commands\r\n-Added Damagelink\r\n-Added the ability to choose what character/difficulty checks are in the pool\r\n-Added a yaml option to choose your starting max stocks\r\n-Fixed an issue causing the game to think all fights took place on very easy regardless of chosen difficulty\r\n-Added a command to display your goal progress use /goal in the bizhawk client",
+      "download_url": "https://github.com/IncidiousJacob/Smashipelago/releases/download/links/smash64.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b1f0c371e3a5579fc56d711ddcd047041ac1c2ecbdbc98df09d29d7fa1693153",
+      "html_url": "https://github.com/IncidiousJacob/Smashipelago/releases/tag/links",
+      "minimum_ap_version": "0.6.7",
+      "size": 26480,
+      "source_url": "https://api.github.com/repos/IncidiousJacob/Smashipelago",
+      "tag": "links",
+      "title": "version 0.0.4",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r4"
+    },
+    "progression": {
+      "created_at": "2026-05-31T02:26:29Z",
+      "description": "Changelog:\r\n- Added Progressive Max Stocks, You Start unable to use more than one Starting stock until you receive the progressive max stock item\r\n- Added Progressive difficulty, Similar to max stock you can only choose Very Easy to start, how many progressive difficulties are in the pool is dependent on yaml settings\r\n- Added checks for each difficulty level, the max difficulty of checks is also a yaml option\r\n- Added a max difficulty goal condition requiring you to beat classic mode at least once on the corresponding difficulty level as the yaml setting\r\n- Increased how many classic mod clears can be required to goal max is 1 per character per difficulty level (I.E. if max difficulty checks is easy, 12 characters X 2 Difficulties = 24 Max clears possible so 25 will cause gen to fail with clear instructions as to why)\r\n- Added a command to see which characters are currently unlocked in the client, also added text on the bottom left of the screen saying \"locked\" when you hover your token over a locked chracter\r\n- Added a command to toggle Deathlink on/off to the client, yaml option must be on or you can't turn it on later",
+      "download_url": "https://github.com/IncidiousJacob/Smashipelago/releases/download/progression/smash64.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f02690c222a22ace641026a23edfba7e8d6d82e04b15e83b3f8bf41f644a9b18",
+      "html_url": "https://github.com/IncidiousJacob/Smashipelago/releases/tag/progression",
+      "minimum_ap_version": "0.6.7",
+      "size": 18493,
+      "source_url": "https://api.github.com/repos/IncidiousJacob/Smashipelago",
+      "tag": "progression",
+      "title": "Version 0.0.3",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r3"
+    },
+    "startup": {
+      "created_at": "2026-05-30T04:51:18Z",
+      "description": "Checks are:\r\neach classic mode fight won (bonus stages are not ready yet, please disable the yaml option)\r\n\r\nItems are:\r\nCharacter Unlocks\r\n\r\nGoal is:\r\nComplete Classic mode with X amount of characters\r\nX = the option set in the yaml",
+      "download_url": "https://github.com/IncidiousJacob/Smashipelago/releases/download/startup/smash64.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3fc84fa5c816faac4474d408ae53ad21242e092cd731cb5854f55968e190ea78",
+      "html_url": "https://github.com/IncidiousJacob/Smashipelago/releases/tag/startup",
+      "minimum_ap_version": "0.6.7",
+      "size": 11683,
+      "source_url": "https://api.github.com/repos/IncidiousJacob/Smashipelago",
+      "tag": "startup",
+      "title": "Version 0.0.1",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}

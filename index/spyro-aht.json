@@ -1,6 +1,6 @@
 {
   "authors": [
-    "MayaXTG",
+    "mayaxtg",
     "ebbeaht"
   ],
   "description": "Spyro: A Hero's Tail is a 3D platformer and collect-a-thon released in 2004 for the Xbox, Playstation 2 and GameCube.",
@@ -8,13 +8,12 @@
     "unready"
   ],
   "game": "Spyro: A Hero's Tail",
-  "github": "https://github.com/XuaTheGrate/spyro-aht-ap",
-  "license": "MIT",
-  "manifest_fields": [
-    "authors",
-    "minimum_ap_version",
-    "world_version"
+  "github": [
+    "https://github.com/XuaTheGrate/spyro-aht-ap",
+    "https://github.com/seanstan95/PhoenixAP"
   ],
+  "license": "MIT",
+  "manifest_fields": [],
   "versions": {
     "0.0.1": {
       "created_at": "2026-02-26T01:39:37Z",
@@ -156,6 +155,153 @@
       "title": "GameCube Alpha 8",
       "version_simple": "0.3.0",
       "world_version": "0.3.0r4"
+    },
+    "1.0.0": {
+      "created_at": "2026-04-03T21:12:55Z",
+      "description": "- Added Firework randomization option\r\n- Added realm access randomization options\r\n- Added region Key rings\r\n- Added Starting realm option\r\n- Added cost randomization of Professor Mole's gadgets\r\n- Added item and location groups to improve hints and exclusions\r\n- Added in game map tracker (toggle on pause menu)\r\n- Bosses can now be toggled to \"easy\" mode, massively increasing the damage they receive\r\n- Full client rewrite\r\n  - Reduced generation failure rate to ~10%\r\n- Fixed logic error in Dark Mines at the laser turret room\r\n- Fixed bosses breaking when teleporting out of the arena mid-fight\r\n\r\nDownload the AR_Code.txt via https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.0/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "34c713e4e4b06e3531ce9d8811f2187f2fbe058329bafc42d257aa349e35dfb9",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.0",
+      "size": 783085,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.0",
+      "title": "1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "1.0.1": {
+      "created_at": "2026-04-04T20:10:30Z",
+      "description": "- Fixed shop item patch causing client disconnect\r\n- Fixed 4 frame notification appearing\r\n- Fixed mismatched item count for key_rings and realm_access options\r\n- Fixed non-key ring shop having mismatched item ids\r\n- Fixed regression in realm access patch\r\n- Fixed regression in breath rules\r\n- Fixed critical error in locations.json\r\n\r\nDownload the AR_Code.txt via https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.1/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e774283b8b6670e823fe993176d13518a2a7ed08a9987cab7fc2c6098b283750",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.1",
+      "size": 780700,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.1",
+      "title": "1.0.1",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
+    },
+    "1.0.2": {
+      "created_at": "2026-04-05T02:09:08Z",
+      "description": "*Last hotfix: 1:24pm PT*\r\n\r\n- Fixed DeathLink not being received\r\n- Fixed possible softlock with gadgets\r\n- Removed RealmAccess(shuffled)\r\n  - Caused too many issues to be worth the effort to keep\r\n- Re-enabled MiscGoal(all)\r\n- Disallowed starting outside Dragon Village if Movement and Shop randomization is disabled\r\n  - At least one of Movement or Shop must be enabled to start outside Dragon Village\r\n\r\nAR_Code.txt: https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.2/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8aae0755634ecc75851dc9122bf7ead71d0455acb4a5ee6248b7fcb25c3baef2",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.2",
+      "size": 780401,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.2",
+      "title": "1.0.2",
+      "version_simple": "1.0.2",
+      "world_version": "1.0.2"
+    },
+    "1.0.3": {
+      "created_at": "2026-04-07T21:27:04Z",
+      "description": "- Modified disconnection logic\r\n  - In game will now correctly tell you the client is not connected if you disconnect the client\r\n- Modified Double Gems logic\r\n  - Backend modifications only, functionally exactly the same\r\n- Fireworks will no longer appear on the tracker if they are not randomized\r\n- Fixed Starting Realm Access check not being assigned an access card\r\n- Fixed realm access cards not updating the in game tracker\r\n- Fixed invalid location being scouted in the shop\r\n- Fixed incorrect amount of shop locations\r\n- Fixed mismatched gem pack count\r\n- Receiving a death link no longer glitches the player if they are climbing a wall as Hunter or Blink\r\n\r\nAR_Code.txt: https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0.3",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.3/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a9e4abbf8fe1484a889f4a1a121f7ef032c7b8e9ecd774aed3f4f4b0d09a13ef",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 781145,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.3",
+      "title": "1.0.3",
+      "version_simple": "1.0.4",
+      "world_version": "1.0.4"
+    },
+    "1.0.4": {
+      "created_at": "2026-04-12T21:52:53Z",
+      "description": "- Fixed logic error at FV: Light Gem beyond Light Gem Door\r\n- Added new region to Dark Mine due to logic error\r\n  - Besides the 4 early checks (2 locked chests, 2 beyond light gem door), Dark Mine now requires Charge\r\n- Fixed incorrect index checking for light gem doors\r\n\r\nAR_Code.txt: <https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0.3>",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.4/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0a8edd4e78cb4143595feb146d2e5055106fb7c4e6c58a1ac465f31fc9cc48f7",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 781160,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.4",
+      "title": "1.0.4",
+      "version_simple": "1.0.4",
+      "world_version": "1.0.4r2"
+    },
+    "1.0.5": {
+      "created_at": "2026-04-19T21:34:38Z",
+      "description": "- Modified YAML option comments to be more clear\r\n- Update README to include extra notes about the mod\r\n- Fixed infinite lock-pick bug\r\n\r\nAR_Code.txt: https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0.3",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.5/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "89ea678f043d454c071073cf6c361a7d0d912829d8ab9d6e8e8b437a5b9ecfd0",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 781922,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.5",
+      "title": "1.0.5",
+      "version_simple": "1.0.5",
+      "world_version": "1.0.5"
+    },
+    "1.0.6": {
+      "created_at": "2026-04-22T23:13:05Z",
+      "description": "- Improved clarity of key rings\r\n- Fixed Mecha-Red not being marked as reachable in the tracker\r\n- Unicode support for shop items\r\n\r\nAR_Code.txt: https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0.6",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.6/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5b42627e4eb31291f595f6bc4247e97dd54f3b7dc76046a836d66954e2081514",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 782043,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.6",
+      "title": "1.0.6",
+      "version_simple": "1.0.6",
+      "world_version": "1.0.6"
+    },
+    "1.0.7": {
+      "created_at": "2026-04-26T01:33:59Z",
+      "description": "- Fixed shop items for the 3rd time\r\n- Fixed typo in notification\r\n\r\nAR_Code.txt: https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0.6",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.7/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d5ad5cb7594296c0b1a505f43498034e0172ae702ecce649c3d0231a2a677c9b",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.7",
+      "minimum_ap_version": "0.6.7",
+      "size": 782078,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.7",
+      "title": "1.0.7",
+      "version_simple": "1.0.7",
+      "world_version": "1.0.7"
+    },
+    "1.0.9": {
+      "created_at": "2026-05-26T06:00:26Z",
+      "description": "- Fixed bug with Moneybags' shop item 5\r\n- Re-introduced min and max gadget cost options\r\n- Added \"shop items\" as a location group\r\n- Adjusted logic for 2 items in Coastal Remains\r\n    - The light gem in Otto's pool now requires glide, and the dragon egg past the piranha pool no longer requires glide\r\n- Expanded item groups\r\n    - Added new groups Elder Abilities, Collectibles, Abilities, Filler, and Access Cards\r\n    - Renamed \"Breath\" group to \"Breaths\" to be consistent\r\n\r\nChanges courtesy of @seanstan95\r\n\r\nAR_Code.txt: https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0.6",
+      "download_url": "https://github.com/XuaTheGrate/Archipelago/releases/download/1.0.9/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d7a1f2a8555b034bced363fa90cee3cf28f91a4ebbd5764f0feabd9f1922e8c3",
+      "html_url": "https://github.com/XuaTheGrate/Archipelago/releases/tag/1.0.9",
+      "minimum_ap_version": "0.6.7",
+      "size": 782351,
+      "source_url": "https://api.github.com/repos/XuaTheGrate/Archipelago",
+      "tag": "1.0.9",
+      "title": "1.0.9",
+      "version_simple": "1.0.9",
+      "world_version": "1.0.9"
+    },
+    "v1.0.10": {
+      "created_at": "2026-06-07T02:24:07Z",
+      "description": "# v1.0.10: New Client Command & Red's Lab Fixes\r\n*This release is not compatible with previously generated seeds due to the addition of a few things into the slot data, and adjustments in location logic which would clash with previous versions. It is, however, compatible with the most recent version of the game mod (AR codes), [linked here](https://github.com/BrinchEbsen/AHT_Archipelago/releases/tag/v1.0.6) for convenience.*\r\n\r\n- Added new client command `/list_options` which lists all YAML options as well as the costs of things which were potentially randomized (such as gadget and light gem door costs). A lot of this info is already visible on the pause menu in the game mod but some of the info was not, so this is meant to complement that.\r\n  - This required adding 4 new entries to the slot data, one each for the options to randomize minigame rewards.\r\n- Fixed Mecha-Red location not having boss lair cost logic applied to it. This resulted in the Mecha-Red location being accessible in logic once Red's Lab in general is accessible.\r\n- Fixed a minor logic issue with a Dragon Egg in Red's Lab which should require Fire Breath and did not.\r\n- Fixed 2 locations in Red's Lab which had their names swapped.",
+      "download_url": "https://github.com/seanstan95/PhoenixAP/releases/download/v1.0.10/spyro-aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b871c628ec2689ad1da20fecab200049bc8795e75ce7c201929e930c41354141",
+      "html_url": "https://github.com/seanstan95/PhoenixAP/releases/tag/v1.0.10",
+      "minimum_ap_version": "0.6.7",
+      "size": 783639,
+      "source_url": "https://api.github.com/repos/seanstan95/PhoenixAP",
+      "tag": "v1.0.10",
+      "title": "Spyro: A Hero's Tail: v1.0.10",
+      "version_simple": "1.0.9",
+      "world_version": "1.0.9r2"
     }
   }
 }
