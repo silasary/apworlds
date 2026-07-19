@@ -88,10 +88,22 @@ Map completion requirements for Academia only now require 4xx/400 access - 500 m
 
 Monster professor can now also be obtained after defeating 13 bosses. Each boss grants a Boss Token, and the count is used here.
 
-The bosses included are:
+The boss locations (as the fights may be randomised) included are:
+- Aloeidai (Yaschas Massif 10AF)
+- Atlas (Weakened version, Bresha Ruins 5AF)
+- Caius (Oerba 200AF)
+- Caius (Serah Solo fight, Void Beyond)
+- Faeryl (Archylte Steppe ???AF)
+- Gogmagog Alpha (New Bodhum 3AF)
+- Gogmagog Beta (New Bodhum 3AF)
+- Gogmagog Gamma (A Dying World 700AF)
+- Kalavinka (Bresha Ruins 100AF)
+- Mutantomato (Sunleth Waterscape 300AF)
+- Pacos Amethyst/Luvulite (Academia 500AF)
+- Proto Fal'cie Adam (Augusta Tower 200AF)
+- Zenobia (Academia 400AF)
 
-
-## Full fragment list
+This list may be expanded in the future, if it is, options will also be introduced to adjust the number of bosses required to obtain the fragment
 
 ## Known Issues/Limitations
 
@@ -101,12 +113,7 @@ The base game has a restriction on only being able to obtain 2 fragment missions
 
 In a randomised situation, this can potentially lead to some softlocks if you access missions before you can complete them and then become unable to start a new mission otherwise.
 
-Some safety latches exist to prevent this in some situations.
+Some safety latches exist to prevent this in some situations (e.g. Bresha Ruins 100/300).
 
-- Bresha Ruins 100 stuff
-
-Similarly, some checks can be missed if a mission is handed in before the chain of items it normally sets up has been checked.
-
-Known examples:
-
-- Yaschas Technician's Note
+Similarly, some checks can be missed if a mission is handed in before the chain of items it normally sets up has been checked. Where possible, the scripts have been
+adjusted to prevent this, although some situations may still exist. If you run into a situation where a check is no longer accessible please report it!
