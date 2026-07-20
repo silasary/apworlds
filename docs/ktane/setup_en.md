@@ -2,7 +2,7 @@
 
 ## Warning
 
-This game currently doesn't work with macOS and Linux. Only windows is fully supported as of now.
+This game currently doesn't work with Linux. Only Windows and MacOS are fully supported as of now.
 
 ## Required Software
 
@@ -107,3 +107,9 @@ manuals.
 Playing offline is not an option for Keep Talking and Nobody Explodes. If you do not have Internet connection, you can
 create a local server and play from there, but the Expert Manual Client will not be working as it needs Internet 
 connection to access the correct manuals.
+
+## Known bugs
+
+This mod uses a custom version of websocket-sharp. As such, all other mods that use Websocket-sharp may fail when this
+mod is enabled. These mods include Hyperlink, Custom Keys and Tyler Verifies. When you want to play these mods, please
+disable Archipelago in the mod menus or unsubscribe from it completely in the steam workshop.

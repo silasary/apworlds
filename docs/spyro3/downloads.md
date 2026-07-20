@@ -45,7 +45,7 @@
 - <a href="https://github.com/Uroogla/S3AP/releases/download/1.1.0/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.1.0/spyro3.apworld</a>
 
 #### v1.0.1
-- <a href="https://github.com/ArsonAssassin/S3AP/releases/download/1.0.1/spyro3.apworld">https://github.com/ArsonAssassin/S3AP/releases/download/1.0.1/spyro3.apworld</a>
+- <a href="https://github.com/Uroogla/S3AP/releases/download/1.0.1/spyro3.apworld">https://github.com/Uroogla/S3AP/releases/download/1.0.1/spyro3.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/ArsonAssassin/S3AP/releases/download/1.0.0/spyro3.apworld">https://github.com/ArsonAssassin/S3AP/releases/download/1.0.0/spyro3.apworld</a>

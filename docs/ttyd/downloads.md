@@ -1,9 +1,12 @@
 # Paper Mario The Thousand Year Door
 
 ## Latest
-- <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.3/ttyd.apworld">Latest Version (0.10.3)</a>
+- <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.11.0/ttyd.apworld">Latest Version (0.11.0)</a>
 
 ## All Versions
+
+#### v0.11.0
+- <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.11.0/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.11.0/ttyd.apworld</a>
 
 #### v0.10.3
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.3/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.3/ttyd.apworld</a>

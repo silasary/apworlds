@@ -4,7 +4,7 @@ Vampire Survivors
 
 
 ## Downloads
-- <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.4/vampire_survivors.apworld">Latest Version (0.3.2r3)</a>
+- <a href="https://github.com/SWCreeperKing/ArchipelagoSurvivors/releases/download/v0.3.4/vampire_survivors.apworld">Latest Version (0.3.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
