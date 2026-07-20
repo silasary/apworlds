@@ -2,64 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-20T07:14:03.505599+00:00</updated>
+  <updated>2026-07-20T12:53:35.893205+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases/tag/v0.4.0</id>
-    <title>Etrian Odyssey v0.4.0</title>
-    <updated>2026-07-15T01:22:05+00:00</updated>
-    <author>
-      <name>TheMasterZelda</name>
-    </author>
-    <content># Etrian Odyssey v0.4.0 [Beta]&#13;
-&#13;
-The UT and Skill Update.&#13;
-&#13;
-This version is compatible with Archipelago 0.6.7 or greater.&#13;
-&#13;
-This update must be installed for both the host and the client to function properly.&#13;
-&#13;
-Report any issues to the Etrian Odyssey (DS) channel in the AP discord server.&#13;
-&#13;
-This version requires the [patcher version v0.4.0](https://github.com/TheMasterZelda/etrian-odyssey-1-archipelago-patcher/releases/tag/v0.4.0).&#13;
-&#13;
-## New&#13;
-&#13;
-- Universal Tracker Glitched Logic support. In the context of this game, glitched logic remove sustain and battle logic.&#13;
-- Universal Tracker yaml-less support&#13;
-- Merged the option `remove_skills_requirements` with the new option.&#13;
-- Added the new option `skill_requirement_shuffle`. It has the following values:&#13;
-  - **Vanilla:** Vanilla Requirements. Nothing is changed.&#13;
-  - **Remove:** Removes the skills requirement from the game. This mean that every skill are learnable by themselves from level 1 (if unlocked).&#13;
-  - **Level Shuffle:** The required skills are kept the same, but the level requirement are randomized.&#13;
-  - **Non-Root Shuffle with Mastery retention:** All non-base skills requirements are randomized, retaining the mastery trees.&#13;
-  - **Non-Root Shuffle:** All non-base skills requirements are randomized without retaining the mastery trees.&#13;
-  - **Full Shuffle with Mastery retention:** All skills requirements are randomized, retaining the mastery trees.&#13;
-  - **Full Shuffle:** All skills requirements are randomized without retaining the mastery trees.**&#13;
-  - **Chaos:** All skills requirements are randomized. Mastery are not prioritized as primary requirement. No chain dependency limit.&#13;
-&#13;
-## Fixes&#13;
-&#13;
-- Automatic Quest Reward Scouting crashing the client under specific circumstances&#13;
-- Improved reliability for Clear Key and Violet Key special flag handling.&#13;
-&#13;
-## Misc&#13;
-&#13;
-- Major Logic Engine refactoring. This fixed most potential generation problems, and improved generation performances.</content>
-    <link href="https://github.com/TheMasterZelda/Etrian_Odyssey_1_Archipelago/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.2</id>
-    <title>Oh So Hero! v1.0.2</title>
-    <updated>2026-07-15T10:31:11+00:00</updated>
-    <author>
-      <name>L-technology-mods</name>
-    </author>
-    <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.0</id>
     <title>Crash Team Racing v0.1.0</title>
@@ -1083,7 +1030,7 @@ The standalone rando has a link to the required version of Nova Chrysalia requir
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR9</id>
-    <title>The Grinch v1.6.0r2</title>
+    <title>The Grinch v1.6.0r2r2</title>
     <updated>2026-07-20T03:50:30+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1130,5 +1077,36 @@ Changes:&#13;
 &#13;
 **Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.23...0.0.24</content>
     <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.24"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Starwort/suikapelago/releases/tag/1.1.2</id>
+    <title>Suikapelago v1.1.2</title>
+    <updated>2026-07-20T09:52:33+00:00</updated>
+    <author>
+      <name>Starwort</name>
+    </author>
+    <content>Feature: UT support (including Yamlless)&#13;
+Fix: off-by-one in Scoresanity requirements, most notably making scores logical when using a starting max fruit size of 1 and therefore not actually being possible&#13;
+&#13;
+Client improvements: Improved the appearance of Blindness Trap (now shows the text 'You are blind!'). Fixed scoresanity requirements not correctly counting towards goal</content>
+    <link href="https://github.com/Starwort/suikapelago/releases/tag/1.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NyanMC/build-a-jetpack/releases/tag/0.2.0</id>
+    <title>Build a Jetpack v0.2.0</title>
+    <updated>2026-07-20T10:58:35+00:00</updated>
+    <author>
+      <name>ChromaNyan</name>
+    </author>
+    <content>Tweaked logic slightly: logic now expects deeper sea layers for locations which require 5 or more rocks or gold.&#13;
+&#13;
+Added two new options:&#13;
+&#13;
+harsh_pressure: Makes high pressure zones drain your air far more rapidly. "High pressure zones" are layers two or more levels deeper than your diving suit level.&#13;
+&#13;
+death_link: Drowning will kill everyone else who enabled death link. When someone else who enabled death link dies, you will drown instantly. Drowning above water looks a bit funny, won't fix&#13;
+&#13;
+The client should be backwards compatible with the 0.1.0 apworld, but this was not tested thoroughly. If you encounter problems, use the client.zip provided in an old release.</content>
+    <link href="https://github.com/NyanMC/build-a-jetpack/releases/tag/0.2.0"/>
   </entry>
 </feed>

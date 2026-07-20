@@ -1,9 +1,12 @@
 # Suikapelago
 
 ## Latest
-- <a href="https://github.com/Starwort/suikapelago/releases/download/1.1.1/suikapelago.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/Starwort/suikapelago/releases/download/1.1.2/suikapelago.apworld">Latest Version (1.1.2)</a>
 
 ## All Versions
+
+#### v1.1.2
+- <a href="https://github.com/Starwort/suikapelago/releases/download/1.1.2/suikapelago.apworld">https://github.com/Starwort/suikapelago/releases/download/1.1.2/suikapelago.apworld</a>
 
 #### v1.1.1
 - <a href="https://github.com/Starwort/suikapelago/releases/download/1.1.1/suikapelago.apworld">https://github.com/Starwort/suikapelago/releases/download/1.1.1/suikapelago.apworld</a>
