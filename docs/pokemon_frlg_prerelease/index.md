@@ -1,10 +1,13 @@
 # Pokemon FireRed and LeafGreen Prelease
 
-
+Pokémon FireRed and LeafGreen are remakes of the very first Pokémon games.
+Experience the Kanto region with several updated features from Gen III.
+Catch, train, and battle Pokémon, face off against the evil organization Team Rocket, challenge Gyms in order to
+earn Badges, help resolve the many crises on the Sevii Islands, and become the Pokémon Champion!
 
 
 ## Downloads
-- <a href="https://github.com/vyneras/Archipelago/releases/download/1.1.0-beta.1/pokemon_frlg_prerelease.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/vyneras/Archipelago/releases/download/1.1.0-beta.2/pokemon_frlg_prerelease.apworld">Latest Version (1.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
