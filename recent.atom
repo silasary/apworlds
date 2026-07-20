@@ -2,109 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-20T12:53:35.893205+00:00</updated>
+  <updated>2026-07-20T18:45:17.826188+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.0</id>
-    <title>Crash Team Racing v0.1.0</title>
-    <updated>2026-07-15T11:35:04+00:00</updated>
-    <author>
-      <name>dowlle</name>
-    </author>
-    <content>## CTR-AP v0.1.0 - first public release
-
-CTR-AP is an Archipelago integration for a native PC port of Crash Team Racing (PlayStation, 1999). It lets Crash Team Racing take part in an Archipelago multiworld: trophies, relics, tokens, gems, and boss wins become checks, and the items you need to progress arrive from the multiworld.
-
-📖 **New here? Follow the [setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md).**
-
-The default seed gives you the full experience: randomized warp-pad requirements with destination shuffle, the Gems hidden in the multiworld, Gem Cups and Battle Arenas included, and a sprinkle of trap items.
-
-### Bring your own disc
-
-This release ships no game data. You provide the game files from your own copy of the NTSC-U (North American) Crash Team Racing disc. Nothing here contains Crash Team Racing game assets, and none are distributed.
-
-Easiest setup: name a raw `.bin` dump of your disc `ctr-u.bin` and place it in an `assets` folder next to the executable.
-Alternatively, the bundled `extract_assets.py` reads your disc image (`.cue`, `.bin`, or `.chd`), verifies the region, and copies out just the files the game needs, which saves disk space. See the [setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) for the full walkthrough.
-
-### What is in this release
-
-- `ctr_native_ap.exe`: the game executable with Archipelago support built in.
-- `ctr.apworld`: the Archipelago world, for whoever generates the multiworld.
-- `extract_assets.py`: the optional space-saving asset extractor.
-- `ap-config.example.txt`: a documented template for your server settings (optional; the in-game OPTIONS → Connection screen is the recommended way).
-- `SETUP.md`: step-by-step setup (the [living guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md), or [as shipped with this release](https://github.com/dowlle/ctr-native-ap/blob/v0.1.0/SETUP.md)).
-
-The `ctr.apworld` is also attached separately for multiworld hosts who only need the world file.
-
-### Known limitations
-
-- NTSC-U (North American) discs only. PAL and Japanese discs are detected and refused. Other regions may be supported later.
-- The disc image must be a raw MODE2/2352 dump (a `.cue`/`.bin`, a raw `.bin`, or a `.chd`). A cooked 2048-byte `.iso` does not carry the audio and video sector data the game needs.
-- `.chd` images require the `chdman` tool to be installed and on your PATH.
-- After beating your goal, the game may freeze on a black screen once the credits end. Your goal is already sent to the multiworld at that point - close the game and relaunch. A relaunch shows your completed seed correctly.
-- Windows only for now; a Linux/Steam Deck build is on the roadmap.
-
-### What's next
-
-v0.1.0 is the beginning, not the finish line. On the roadmap - no dates promised, hobby project honesty applies:
-
-**Planned next:** live position checks (earn a check for *reaching* 1st mid-race, including inside Gem Cups) as the foundation for progressive boost and character-stat item packs · splitting the Oxide's Final Challenge relic requirement into Gold and Platinum tiers · per-seed AI difficulty · a proper Ultimate Sacred Fire trap tier with the blue flame, plus more trap types · received Wumpa Fruit actually giving you fruit · enforced relic-race minimum-time and all-boxes options · skippable podium cutscenes · per-track boss garage unlocks · Steam Deck/Linux · DeathLink.
-
-**Exploring:** custom community tracks in the randomizer pool · a solo/offline mode · boss shuffle.
-
-**Long-term:** Arcade Cups and Time Trial ghosts as checks, character unlocks as multiworld rewards, Mirror/N-Verted/Retro-Fueled seed modifiers, music shuffle, and a Shortcut Unlock item.
-
-Found a bug or have an idea? Open an issue.
-
-### Verify your download
-
-`ctr-archipelago-v0.1.0-windows-x86.zip`
-SHA-256: `2174191a475565145ba8401ef2469df0d066ef815dd92eb565a07e1f8de4332f`
-
-### Credits
-
-- The CTR-tools [CTR-ModSDK](https://github.com/CTR-tools/CTR-ModSDK) decompilation project, which this port is built on.
-- Reverse engineering and Archipelago work by Icebound777 and Taor - the [randomizer design](https://github.com/icebound777/CTR-Randomizer-Standalone) this project carries forward.
-- [PsyCross](https://github.com/OpenDriver2/PsyCross), for PlayStation hardware-abstraction code that parts of the native platform layer are derived from.
-- [thecodingbob](https://github.com/thecodingbob/ctr-native), whose in-game config menu framework this fork's options menu is ported from.
-- [SDL3](https://github.com/libsdl-org/SDL), for cross-platform windowing, input, timing, and audio.
-- [apclientpp](https://github.com/black-sliver/apclientpp), the Archipelago client library powering the in-process connection.
-- Crash Team Racing is a trademark of its respective rights holders. This is an unofficial, fan-made project and is not affiliated with or endorsed by them.
-
-### AI disclosure
-
-Parts of this project were developed with AI assistance. See the [AI disclosure in the repository README](https://github.com/dowlle/ctr-native-ap#ai-usage-disclosure) for the honest, detailed version.
-
-
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/V0.2.2</id>
-    <title>NSMBW v0.2.2</title>
-    <updated>2026-07-15T17:14:25+00:00</updated>
-    <author>
-      <name>Miiroun</name>
-    </author>
-    <content># New Super Mario Bros Wii v0.2.2&#13;
-## Features&#13;
-- Deathlink amnesty&#13;
-- New option for hintmovie logic&#13;
-- Logo in launcher&#13;
-- Option to use xdotool instead of root access for Linux&#13;
-- More debug comands&#13;
-&#13;
-&#13;
-## Bug fixes&#13;
-- Logic: Spin jump logic, 5-1 climb, etc&#13;
-- One of the issues with connecting&#13;
-- Grouped deathlink&#13;
-</content>
-    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/V0.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/NaixGames/Polycosmos/releases/tag/0.16.2</id>
     <title>Hades v0.16.2</title>
@@ -1030,7 +932,7 @@ The standalone rando has a link to the required version of Nova Chrysalia requir
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR9</id>
-    <title>The Grinch v1.6.0r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2</title>
     <updated>2026-07-20T03:50:30+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1108,5 +1010,48 @@ death_link: Drowning will kill everyone else who enabled death link. When someon
 &#13;
 The client should be backwards compatible with the 0.1.0 apworld, but this was not tested thoroughly. If you encounter problems, use the client.zip provided in an old release.</content>
     <link href="https://github.com/NyanMC/build-a-jetpack/releases/tag/0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BootsinSoots/Archipelago/releases/tag/V0.6.2</id>
+    <title>Luigi's Mansion v0.6.0r2</title>
+    <updated>2026-07-20T15:47:19+00:00</updated>
+    <author>
+      <name>BootsinSoots</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <author>
+      <name>TheChiefMoose</name>
+    </author>
+    <author>
+      <name>LMFinish</name>
+    </author>
+    <content># Luigi's Mansion AP - 0.6.2&#13;
+Windows / Linux Compatible&#13;
+INCOMPATIBLE WITH OLDER VERSIONS&#13;
+&#13;
+# Fixes&#13;
+Fix newer versions of Universal Tracker being classed as old&#13;
+Remove Lydia's Stool from the extra boo spots pool&#13;
+Fix Silver/Gold portrait ghost borders not triggering properly if the ghost is under 100 health&#13;
+Fix Mr. Bones not respawning alongside Spooky&#13;
+Rename Balcony Plant NW Corner Near Bench correctly&#13;
+&#13;
+[Base Game Changes](https://github.com/BootsinSoots/Archipelago/blob/Luigi's-Mansion-AP/worlds/luigismansion/docs/Base%20ISO%20Changes.md)&#13;
+[Dolphin GC/Wii Emulator](https://dolphin-emu.org/download/)&#13;
+[Setup Guide](https://github.com/BootsinSoots/Archipelago/blob/Luigi's-Mansion-AP/worlds/luigismansion/docs/setup_en.md)</content>
+    <link href="https://github.com/BootsinSoots/Archipelago/releases/tag/V0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.5</id>
+    <title>PokePark v1.2.5</title>
+    <updated>2026-07-20T17:28:31+00:00</updated>
+    <author>
+      <name>Joe Mama (Mekurushi)</name>
+    </author>
+    <content>- fixed ut version check&#13;
+**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.4...1.2.5</content>
+    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.5"/>
   </entry>
 </feed>
