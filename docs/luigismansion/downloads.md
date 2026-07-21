@@ -1,9 +1,12 @@
 # Luigi&#x27;s Mansion
 
 ## Latest
-- <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.3/luigismansion.apworld">Latest Version (0.6.3)</a>
+- <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.4/luigismansion.apworld">Latest Version (0.6.4)</a>
 
 ## All Versions
+
+#### v0.6.4
+- <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.4/luigismansion.apworld">https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.4/luigismansion.apworld</a>
 
 #### v0.6.3
 - <a href="https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.3/luigismansion.apworld">https://github.com/BootsinSoots/Archipelago/releases/download/V0.6.3/luigismansion.apworld</a>
