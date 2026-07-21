@@ -2,33 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-20T18:45:17.826188+00:00</updated>
+  <updated>2026-07-21T00:32:54.121846+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/NaixGames/Polycosmos/releases/tag/0.16.2</id>
-    <title>Hades v0.16.2</title>
-    <updated>2026-07-15T19:13:15+00:00</updated>
-    <author>
-      <name>Naix</name>
-    </author>
-    <content>Various bugfixes and logic fixes. &#13;
-&#13;
-Thanks to @ColgateSupreme </content>
-    <link href="https://github.com/NaixGames/Polycosmos/releases/tag/0.16.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v1.2.1</id>
-    <title>Brutal Orchestra v1.0.0r3</title>
-    <updated>2026-07-15T20:45:23+00:00</updated>
-    <author>
-      <name>DeadEye</name>
-    </author>
-    <content>Now you recieve heroes and money properly</content>
-    <link href="https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v1.2.1"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.4</id>
     <title>Borderlands 2 v0.5.4</title>
@@ -932,7 +910,7 @@ The standalone rando has a link to the required version of Nova Chrysalia requir
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR9</id>
-    <title>The Grinch v1.6.0r2r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2r2</title>
     <updated>2026-07-20T03:50:30+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1053,5 +1031,87 @@ Rename Balcony Plant NW Corner Near Bench correctly&#13;
     <content>- fixed ut version check&#13;
 **Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.4...1.2.5</content>
     <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.2b</id>
+    <title>Sonic Adventure DX v1.2.2b0</title>
+    <updated>2026-07-20T19:03:25+00:00</updated>
+    <author>
+      <name>ClassicSpeed</name>
+    </author>
+    <content>## [v1.2.2b] - 2026-07-20&#13;
+&#13;
+### Fixed:&#13;
+- Removed Drowning Deathlink since it was sending Deathlinks incorrectly.&#13;
+- Fixed incorrect links in game guides.&#13;
+- Fixed Chao Garden not saving progress.&#13;
+- Improved Chaos Emeralds color in the in-game tracker.</content>
+    <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.2b"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.2</id>
+    <title>Crash Team Racing v0.1.2</title>
+    <updated>2026-07-20T22:51:24+00:00</updated>
+    <author>
+      <name>dowlle</name>
+    </author>
+    <content>Position checks become real randomizer locations, Universal Tracker works, and the Steam Deck is playable without a keyboard. Plus a batch of fixes from launch week.&#13;
+&#13;
+Thanks MarioSpore, therawkhawk64, Bethany and Anezia for the reports, and everyone in the Discord who played and broke things.&#13;
+&#13;
+### Downloads&#13;
+&#13;
+- **Windows:** `ctr-archipelago-v0.1.2-windows-x86.zip` (contains everything)&#13;
+- **Steam Deck / Linux:** `ctr-archipelago-v0.1.2-linux-x86.tar.gz` (experimental)&#13;
+- **Hosting?** `ctr.apworld` and `Crash.Team.Racing.yaml` are attached separately&#13;
+&#13;
+📖 [Setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) ([as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.1.2/SETUP.md)). **Update the client and the apworld together, they are a pair.**&#13;
+&#13;
+⚠️ **Audio sounding wrong?** The old extractor truncated audio data. Skip extraction entirely: drop your NTSC-U disc image into `assets` as `ctr-u.bin`. Steam Deck users never need the extractor. Thanks Icebound777.&#13;
+&#13;
+### New&#13;
+&#13;
+- **Position checks in logic.** Finish and held-position rungs on the 16 trophy races are full locations, including through Gem Cup legs. ([#9](https://github.com/dowlle/ctr-native-ap/issues/9), [#41](https://github.com/dowlle/ctr-native-ap/issues/41))&#13;
+- **Universal Tracker support.** UT rebuilds the seed's real logic from slot data instead of guessing. Reported by Anezia. ([#29](https://github.com/dowlle/ctr-native-ap/issues/29))&#13;
+- **Steam Deck connection screen.** On-screen keyboard on focus, and the edit works from the pad: X or START saves, TRIANGLE cancels. ([#73](https://github.com/dowlle/ctr-native-ap/issues/73), [#74](https://github.com/dowlle/ctr-native-ap/issues/74))&#13;
+- **DeathLink in the options menu**, applied live, no hotkey. ([PR #70](https://github.com/dowlle/ctr-native-ap/pull/70), building on [#6](https://github.com/dowlle/ctr-native-ap/issues/6))&#13;
+- **Seed check on connect.** Warns you if a solo seed cannot be finished. Built after Bethany hit one. ([#42](https://github.com/dowlle/ctr-native-ap/issues/42))&#13;
+- **Crash reporter.** Writes `ctr-ap-crash.txt` next to the exe. Please attach it to reports. ([#43](https://github.com/dowlle/ctr-native-ap/issues/43))&#13;
+&#13;
+### Fixed&#13;
+&#13;
+- Gem Cups could lock themselves on completion and strand checks behind them, sometimes making a seed unfinishable. Thanks MarioSpore. ([#61](https://github.com/dowlle/ctr-native-ap/issues/61))&#13;
+- Turning off battle arenas did not actually remove their checks, which could still be required. Thanks MarioSpore. ([#50](https://github.com/dowlle/ctr-native-ap/issues/50))&#13;
+- A received DeathLink death could fire a burst of outgoing deaths. ([#45](https://github.com/dowlle/ctr-native-ap/issues/45))&#13;
+- Traps and Wumpa no longer re-fire on reconnect. Thanks therawkhawk64. ([#46](https://github.com/dowlle/ctr-native-ap/issues/46))&#13;
+- Extractor audio truncation. ([#47](https://github.com/dowlle/ctr-native-ap/issues/47))&#13;
+- Shuffled warp pads could route a return exit to the wrong hub. ([apworld #8](https://github.com/dowlle/ctr-archipelago-apworld/pull/8))&#13;
+- Two fixes picked from the upstream decompilation project: a crash at the Naughty Dog intro box ([CTR-tools/ctr-native#32](https://github.com/CTR-tools/ctr-native/issues/32)) and the kart shifting forward during the big turbo ([#36](https://github.com/CTR-tools/ctr-native/issues/36)). The first may also cover the post-boss softlock.&#13;
+&#13;
+### Known issues&#13;
+&#13;
+- **Vanilla pad mode can generate an unbeatable seed ([#80](https://github.com/dowlle/ctr-native-ap/issues/80)).** Treat it as experimental. The seed check catches it on connect, so reroll if warned. Default randomized mode is fine.&#13;
+- **Generation can rarely fail ([#65](https://github.com/dowlle/ctr-native-ap/issues/65)).** Roughly thirty times rarer than before, fails loudly, reroll. Solo unaffected.&#13;
+- **Gemstone Valley pause crash ([#56](https://github.com/dowlle/ctr-native-ap/issues/56))** and **Mystery Caves crash ([#57](https://github.com/dowlle/ctr-native-ap/issues/57))**, both unreproduced. The crash reporter finally gives us something to work with.&#13;
+- **Post-boss cutscene softlock ([#51](https://github.com/dowlle/ctr-native-ap/issues/51))**, likely fixed but not retested.&#13;
+&#13;
+### Testing&#13;
+&#13;
+Played in game: the Gem Cup fix, Steam Deck keyboard and controller, the extractor, and a connect and race smoke. The seed checker ran against six option profiles, which is how [#80](https://github.com/dowlle/ctr-native-ap/issues/80) was found. Generation passed the full Archipelago index check matrix, 14,000 generations, no failures.&#13;
+&#13;
+Not verified in game: [#45](https://github.com/dowlle/ctr-native-ap/issues/45) (needs a two player room), [#46](https://github.com/dowlle/ctr-native-ap/issues/46), [#41](https://github.com/dowlle/ctr-native-ap/issues/41).&#13;
+&#13;
+### Next&#13;
+&#13;
+Item packs (progressive boost and character stats) and the character phase, plus fixing vanilla pad mode properly. No dates, hobby project honesty applies.&#13;
+&#13;
+---&#13;
+&#13;
+**Checksums**&#13;
+- zip `51098512f9a17112187ea7b1230ebe7e5fad03f94f6299946b028496eef02e40`&#13;
+- tar.gz `71d388cbe10285e5ed93c00091a7d3fa4de83294289689e18d3914039a31efa8`&#13;
+- apworld `87277feea1f0c3996d3d45f688f75d9725ffa4780fc28eff36a0acbd629d1623`&#13;
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.2"/>
   </entry>
 </feed>
