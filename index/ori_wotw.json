@@ -302,6 +302,21 @@
       "title": "0.5.5",
       "version_simple": "0.5.5",
       "world_version": "0.5.5"
+    },
+    "v0.6.0": {
+      "created_at": "2026-07-20T19:45:26Z",
+      "description": "Requires at least version `4.44.0` of the client to work properly.\r\n\r\nMain changes:\r\n- Implement a new generator for entrance randomization, to fix generation failures with the generic one.\r\n- Spawn items are now random, which adds more diversity and reduces generation failures in constrained sphere 1 (this is still a work in progress).\r\n- Added the option to spawn at a random location (not limited to teleporters).\r\n- Add new commands to the randomizer wheel (hold V to open it): commands to collect/release, command to reset Keystone doors (if you got stuck), toggle for chat messages.\r\n\r\nOther changes:\r\n- Renamed some options and fixed some errors in their description.\r\n- A lot of refactoring in AP World code (hopefully this didn't add new bugs).\r\n- Skipping cutscenes is now separated from the quality of life option (the new option is called `skip_cutscenes`).\r\n- The `unpopular`, `free_teleporters` and `free_regenerate` options are now taken into account in the in-game logic map.\r\n\r\nBugfix\r\n- (Hopefully) Fix all known issues related to connection when switching save files.\r\n- Items are no longer given during spirit trial, to prevent them being lost afterwards.\r\n- Fix some door icons not appearing in the map when they are randomized.\r\n- Fix some characters in item names or chat messages being used as color markup and messing with the text (these characters are now removed instead).",
+      "download_url": "https://github.com/Satisha10/APwotw_release/releases/download/v0.6.0/ori_wotw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "60eec2e54b4f70a8324e070df56cc7cd82f32f20b096213e7547381a6638f73a",
+      "html_url": "https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 204764,
+      "source_url": "https://api.github.com/repos/Satisha10/APwotw_release",
+      "tag": "v0.6.0",
+      "title": "0.6.0",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0"
     }
   }
 }

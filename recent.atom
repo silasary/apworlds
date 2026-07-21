@@ -2,28 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-21T00:32:54.121846+00:00</updated>
+  <updated>2026-07-21T07:03:09.701771+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.4</id>
-    <title>Borderlands 2 v0.5.4</title>
-    <updated>2026-07-15T22:00:46+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Relatively well-tested release from mid-late June.&#13;
-new stuff:&#13;
-- "alternates" for logic&#13;
-- buncha logic fixes&#13;
-- other changes to logic: locations are removed if any required region is excluded, levels detected differently, gear licenses not required if the setting is off&#13;
-- integrate always on level&#13;
-- Tracker tab in Client if UT is installed&#13;
-- new ramp in hayters folly</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.3.1</id>
     <title>Anno 1800 v1.3.1</title>
@@ -910,7 +893,7 @@ The standalone rando has a link to the required version of Nova Chrysalia requir
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR9</id>
-    <title>The Grinch v1.6.0r2r2r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2r2r2</title>
     <updated>2026-07-20T03:50:30+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1049,69 +1032,135 @@ Rename Balcony Plant NW Corner Near Bench correctly&#13;
     <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.2b"/>
   </entry>
   <entry>
+    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.0</id>
+    <title>Ori and the Will of the Wisps v0.6.0</title>
+    <updated>2026-07-20T19:45:26+00:00</updated>
+    <author>
+      <name>Satisha</name>
+    </author>
+    <content>Requires at least version `4.44.0` of the client to work properly.&#13;
+&#13;
+Main changes:&#13;
+- Implement a new generator for entrance randomization, to fix generation failures with the generic one.&#13;
+- Spawn items are now random, which adds more diversity and reduces generation failures in constrained sphere 1 (this is still a work in progress).&#13;
+- Added the option to spawn at a random location (not limited to teleporters).&#13;
+- Add new commands to the randomizer wheel (hold V to open it): commands to collect/release, command to reset Keystone doors (if you got stuck), toggle for chat messages.&#13;
+&#13;
+Other changes:&#13;
+- Renamed some options and fixed some errors in their description.&#13;
+- A lot of refactoring in AP World code (hopefully this didn't add new bugs).&#13;
+- Skipping cutscenes is now separated from the quality of life option (the new option is called `skip_cutscenes`).&#13;
+- The `unpopular`, `free_teleporters` and `free_regenerate` options are now taken into account in the in-game logic map.&#13;
+&#13;
+Bugfix&#13;
+- (Hopefully) Fix all known issues related to connection when switching save files.&#13;
+- Items are no longer given during spirit trial, to prevent them being lost afterwards.&#13;
+- Fix some door icons not appearing in the map when they are randomized.&#13;
+- Fix some characters in item names or chat messages being used as color markup and messing with the text (these characters are now removed instead).</content>
+    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.2</id>
     <title>Crash Team Racing v0.1.2</title>
     <updated>2026-07-20T22:51:24+00:00</updated>
     <author>
       <name>dowlle</name>
     </author>
-    <content>Position checks become real randomizer locations, Universal Tracker works, and the Steam Deck is playable without a keyboard. Plus a batch of fixes from launch week.&#13;
-&#13;
-Thanks MarioSpore, therawkhawk64, Bethany and Anezia for the reports, and everyone in the Discord who played and broke things.&#13;
-&#13;
-### Downloads&#13;
-&#13;
-- **Windows:** `ctr-archipelago-v0.1.2-windows-x86.zip` (contains everything)&#13;
-- **Steam Deck / Linux:** `ctr-archipelago-v0.1.2-linux-x86.tar.gz` (experimental)&#13;
-- **Hosting?** `ctr.apworld` and `Crash.Team.Racing.yaml` are attached separately&#13;
-&#13;
-📖 [Setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) ([as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.1.2/SETUP.md)). **Update the client and the apworld together, they are a pair.**&#13;
-&#13;
-⚠️ **Audio sounding wrong?** The old extractor truncated audio data. Skip extraction entirely: drop your NTSC-U disc image into `assets` as `ctr-u.bin`. Steam Deck users never need the extractor. Thanks Icebound777.&#13;
-&#13;
-### New&#13;
-&#13;
-- **Position checks in logic.** Finish and held-position rungs on the 16 trophy races are full locations, including through Gem Cup legs. ([#9](https://github.com/dowlle/ctr-native-ap/issues/9), [#41](https://github.com/dowlle/ctr-native-ap/issues/41))&#13;
-- **Universal Tracker support.** UT rebuilds the seed's real logic from slot data instead of guessing. Reported by Anezia. ([#29](https://github.com/dowlle/ctr-native-ap/issues/29))&#13;
-- **Steam Deck connection screen.** On-screen keyboard on focus, and the edit works from the pad: X or START saves, TRIANGLE cancels. ([#73](https://github.com/dowlle/ctr-native-ap/issues/73), [#74](https://github.com/dowlle/ctr-native-ap/issues/74))&#13;
-- **DeathLink in the options menu**, applied live, no hotkey. ([PR #70](https://github.com/dowlle/ctr-native-ap/pull/70), building on [#6](https://github.com/dowlle/ctr-native-ap/issues/6))&#13;
-- **Seed check on connect.** Warns you if a solo seed cannot be finished. Built after Bethany hit one. ([#42](https://github.com/dowlle/ctr-native-ap/issues/42))&#13;
-- **Crash reporter.** Writes `ctr-ap-crash.txt` next to the exe. Please attach it to reports. ([#43](https://github.com/dowlle/ctr-native-ap/issues/43))&#13;
-&#13;
-### Fixed&#13;
-&#13;
-- Gem Cups could lock themselves on completion and strand checks behind them, sometimes making a seed unfinishable. Thanks MarioSpore. ([#61](https://github.com/dowlle/ctr-native-ap/issues/61))&#13;
-- Turning off battle arenas did not actually remove their checks, which could still be required. Thanks MarioSpore. ([#50](https://github.com/dowlle/ctr-native-ap/issues/50))&#13;
-- A received DeathLink death could fire a burst of outgoing deaths. ([#45](https://github.com/dowlle/ctr-native-ap/issues/45))&#13;
-- Traps and Wumpa no longer re-fire on reconnect. Thanks therawkhawk64. ([#46](https://github.com/dowlle/ctr-native-ap/issues/46))&#13;
-- Extractor audio truncation. ([#47](https://github.com/dowlle/ctr-native-ap/issues/47))&#13;
-- Shuffled warp pads could route a return exit to the wrong hub. ([apworld #8](https://github.com/dowlle/ctr-archipelago-apworld/pull/8))&#13;
-- Two fixes picked from the upstream decompilation project: a crash at the Naughty Dog intro box ([CTR-tools/ctr-native#32](https://github.com/CTR-tools/ctr-native/issues/32)) and the kart shifting forward during the big turbo ([#36](https://github.com/CTR-tools/ctr-native/issues/36)). The first may also cover the post-boss softlock.&#13;
-&#13;
-### Known issues&#13;
-&#13;
-- **Vanilla pad mode can generate an unbeatable seed ([#80](https://github.com/dowlle/ctr-native-ap/issues/80)).** Treat it as experimental. The seed check catches it on connect, so reroll if warned. Default randomized mode is fine.&#13;
-- **Generation can rarely fail ([#65](https://github.com/dowlle/ctr-native-ap/issues/65)).** Roughly thirty times rarer than before, fails loudly, reroll. Solo unaffected.&#13;
-- **Gemstone Valley pause crash ([#56](https://github.com/dowlle/ctr-native-ap/issues/56))** and **Mystery Caves crash ([#57](https://github.com/dowlle/ctr-native-ap/issues/57))**, both unreproduced. The crash reporter finally gives us something to work with.&#13;
-- **Post-boss cutscene softlock ([#51](https://github.com/dowlle/ctr-native-ap/issues/51))**, likely fixed but not retested.&#13;
-&#13;
-### Testing&#13;
-&#13;
-Played in game: the Gem Cup fix, Steam Deck keyboard and controller, the extractor, and a connect and race smoke. The seed checker ran against six option profiles, which is how [#80](https://github.com/dowlle/ctr-native-ap/issues/80) was found. Generation passed the full Archipelago index check matrix, 14,000 generations, no failures.&#13;
-&#13;
-Not verified in game: [#45](https://github.com/dowlle/ctr-native-ap/issues/45) (needs a two player room), [#46](https://github.com/dowlle/ctr-native-ap/issues/46), [#41](https://github.com/dowlle/ctr-native-ap/issues/41).&#13;
-&#13;
-### Next&#13;
-&#13;
-Item packs (progressive boost and character stats) and the character phase, plus fixing vanilla pad mode properly. No dates, hobby project honesty applies.&#13;
-&#13;
----&#13;
-&#13;
-**Checksums**&#13;
-- zip `51098512f9a17112187ea7b1230ebe7e5fad03f94f6299946b028496eef02e40`&#13;
-- tar.gz `71d388cbe10285e5ed93c00091a7d3fa4de83294289689e18d3914039a31efa8`&#13;
-- apworld `87277feea1f0c3996d3d45f688f75d9725ffa4780fc28eff36a0acbd629d1623`&#13;
+    <content>Position checks become real randomizer locations, Universal Tracker works, and the Steam Deck is playable without a keyboard. Plus a batch of fixes from launch week.
+
+Thanks MarioSpore, therawkhawk64, Bethany and Anezia for the reports, and everyone in the Discord who played and broke things.
+
+### Downloads
+
+- **Windows:** `ctr-archipelago-v0.1.2-windows-x86.zip` (contains everything)
+- **Steam Deck / Linux:** `ctr-archipelago-v0.1.2-linux-x86.tar.gz` (experimental)
+- **Hosting?** `ctr.apworld` and `Crash.Team.Racing.yaml` are attached separately
+
+📖 [Setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) ([as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.1.2/SETUP.md)). **Update the client and the apworld together, they are a pair.**
+
+⚠️ **Audio sounding wrong?** The old extractor truncated audio data. Skip extraction entirely: drop your NTSC-U disc image into `assets` as `ctr-u.bin`. Steam Deck users never need the extractor. Thanks Icebound777.
+
+### New
+
+- **Position checks in logic.** Finish and held-position rungs on the 16 trophy races are full locations, including through Gem Cup legs. ([#9](https://github.com/dowlle/ctr-native-ap/issues/9), [#41](https://github.com/dowlle/ctr-native-ap/issues/41))
+- **Universal Tracker support.** UT rebuilds the seed's real logic from slot data instead of guessing. Reported by Anezia. ([#29](https://github.com/dowlle/ctr-native-ap/issues/29))
+- **Steam Deck connection screen.** On-screen keyboard on focus, and the edit works from the pad: X or START saves, TRIANGLE cancels. ([#73](https://github.com/dowlle/ctr-native-ap/issues/73), [#74](https://github.com/dowlle/ctr-native-ap/issues/74))
+- **DeathLink in the options menu**, applied live, no hotkey. ([PR #70](https://github.com/dowlle/ctr-native-ap/pull/70), building on [#6](https://github.com/dowlle/ctr-native-ap/issues/6))
+- **Seed check on connect.** Warns you if a solo seed cannot be finished. Built after Bethany hit one. ([#42](https://github.com/dowlle/ctr-native-ap/issues/42))
+- **Crash reporter.** Writes `ctr-ap-crash.txt` next to the exe. Please attach it to reports. ([#43](https://github.com/dowlle/ctr-native-ap/issues/43))
+
+### Fixed
+
+- Gem Cups could lock themselves on completion and strand checks behind them, sometimes making a seed unfinishable. Thanks MarioSpore. ([#61](https://github.com/dowlle/ctr-native-ap/issues/61))
+- Turning off battle arenas did not actually remove their checks, which could still be required. Thanks MarioSpore. ([#50](https://github.com/dowlle/ctr-native-ap/issues/50))
+- A received DeathLink death could fire a burst of outgoing deaths. ([#45](https://github.com/dowlle/ctr-native-ap/issues/45))
+- Traps and Wumpa no longer re-fire on reconnect. Thanks therawkhawk64. ([#46](https://github.com/dowlle/ctr-native-ap/issues/46))
+- Extractor audio truncation. ([#47](https://github.com/dowlle/ctr-native-ap/issues/47))
+- Shuffled warp pads could route a return exit to the wrong hub. ([apworld #8](https://github.com/dowlle/ctr-archipelago-apworld/pull/8))
+- Two fixes picked from the upstream decompilation project: a crash at the Naughty Dog intro box ([CTR-tools/ctr-native#32](https://github.com/CTR-tools/ctr-native/issues/32)) and the kart shifting forward during the big turbo ([#36](https://github.com/CTR-tools/ctr-native/issues/36)). The first may also cover the post-boss softlock.
+
+### Known issues
+
+- **Vanilla pad mode can generate an unbeatable seed ([#80](https://github.com/dowlle/ctr-native-ap/issues/80)).** Treat it as experimental. The seed check catches it on connect, so reroll if warned. Default randomized mode is fine.
+- **Generation can rarely fail ([#65](https://github.com/dowlle/ctr-native-ap/issues/65)).** Roughly thirty times rarer than before, fails loudly, reroll. Solo unaffected.
+- **Gemstone Valley pause crash ([#56](https://github.com/dowlle/ctr-native-ap/issues/56))** and **Mystery Caves crash ([#57](https://github.com/dowlle/ctr-native-ap/issues/57))**, both unreproduced. The crash reporter finally gives us something to work with.
+- **Post-boss cutscene softlock ([#51](https://github.com/dowlle/ctr-native-ap/issues/51))**, likely fixed but not retested.
+- **Position rungs through Gem Cup legs are awarded in game but not fully in logic ([#86](https://github.com/dowlle/ctr-native-ap/issues/86)).** The "including through Gem Cup legs" claim above was only half true and we missed that at release: the game does send the rungs when you finish a track as a cup leg, but the seed logic and Universal Tracker treat a rung as out of logic until the track's own pad opens, so UT can hide rungs a cup would already grant. This cannot make a seed unbeatable, it only understates what is reachable. Found by Bethany.
+
+### Testing
+
+Played in game: the Gem Cup fix, Steam Deck keyboard and controller, the extractor, and a connect and race smoke. The seed checker ran against six option profiles, which is how [#80](https://github.com/dowlle/ctr-native-ap/issues/80) was found. Generation passed the full Archipelago index check matrix, 14,000 generations, no failures.
+
+Not verified in game: [#45](https://github.com/dowlle/ctr-native-ap/issues/45) (needs a two player room), [#46](https://github.com/dowlle/ctr-native-ap/issues/46), [#41](https://github.com/dowlle/ctr-native-ap/issues/41).
+
+### Next
+
+Item packs (progressive boost and character stats) and the character phase, plus fixing vanilla pad mode properly. No dates, hobby project honesty applies.
+
+---
+
+**Checksums**
+- zip `51098512f9a17112187ea7b1230ebe7e5fad03f94f6299946b028496eef02e40`
+- tar.gz `71d388cbe10285e5ed93c00091a7d3fa4de83294289689e18d3914039a31efa8`
+- apworld `87277feea1f0c3996d3d45f688f75d9725ffa4780fc28eff36a0acbd629d1623`
+
 </content>
     <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BootsinSoots/Archipelago/releases/tag/V0.6.3</id>
+    <title>Luigi's Mansion v0.6.3</title>
+    <updated>2026-07-21T05:29:43+00:00</updated>
+    <author>
+      <name>BootsinSoots</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <author>
+      <name>TheChiefMoose</name>
+    </author>
+    <author>
+      <name>LMFinish</name>
+    </author>
+    <content># Luigi's Mansion AP - 0.6.3 HOTFIX&#13;
+Windows / Linux Compatible&#13;
+INCOMPATIBLE WITH OLDER VERSIONS&#13;
+&#13;
+## Fixes&#13;
+Fix bad dependency pull&#13;
+Fix Portrait Ghost Health code issue&#13;
+First attempt to prevent Breaker Door locking if Deathlink occurs during breaker switch event. This comes with two new commands: &#13;
+- /breaker_broke -&gt; gets details about why your breaker door may be locked, send it in the discord channel to help us figure out why&#13;
+- /breaker_fix -&gt; used to unlock breaker door if it gets locked somehow &#13;
+&#13;
+## Maybe fixed&#13;
+Breaker room door locks on rare occasions with no apparent cause&#13;
+King Boo warp event will not trigger more than once - Only speak to him if you're sure you can goal or else you will have to open a new save file. (Currently unsure why this happens)&#13;
+&#13;
+[Base Game Changes](&lt;https://github.com/BootsinSoots/Archipelago/blob/Luigi's-Mansion-AP/worlds/luigismansion/docs/Base%20ISO%20Changes.md&gt;)&#13;
+[Dolphin GC/Wii Emulator](&lt;https://dolphin-emu.org/download/&gt;)&#13;
+[Setup Guide](&lt;https://github.com/BootsinSoots/Archipelago/blob/Luigi's-Mansion-AP/worlds/luigismansion/docs/setup_en.md&gt;)</content>
+    <link href="https://github.com/BootsinSoots/Archipelago/releases/tag/V0.6.3"/>
   </entry>
 </feed>
