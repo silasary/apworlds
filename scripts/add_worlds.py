@@ -127,9 +127,12 @@ if spreadsheet:
 
 if args.scan_file:
     with open(args.scan_file) as f:
-        for line in f:
+        text = f.read()
+        for line in text:
             if match := re.search(REPO_REGEX, line):
                 queue.append(match.group(1))
+        if "- [X] This world is AD" in text:
+            args.dark = True
 
 if not queue:
     with open("queue.txt", "w") as f:
