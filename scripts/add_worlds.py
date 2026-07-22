@@ -13,7 +13,7 @@ import yaml
 from common import get_or_add_github_repo, update_index_from_github, index
 from worlds.apworld_manager.world_manager import RepositoryManager
 
-REPO_REGEX = r"(https://github\.com/[a-zA-Z0-9_-\.]+/[a-zA-Z0-9_-\.]+)"
+REPO_REGEX = r"(https://github\.com/[a-zA-Z0-9_\-\.]+/[a-zA-Z0-9_\-\.]+)"
 
 if os.path.exists("queue.txt"):
     with open("queue.txt") as f:
@@ -29,6 +29,7 @@ parser.add_argument("--scan-forks", default=False, action="store_true", help="Sc
 parser.add_argument("--spreadsheet", default=False, action="store_true", help="Add worlds from the spreadsheet")
 parser.add_argument("--awesomes-spreadsheet", default=False, action="store_true", help="Add worlds from the spreadsheet")
 parser.add_argument("--allow-uppercase", default=False, action="store_true", help="Allow uppercase letters in filenames")
+parser.add_argument("--scan-file", default=None, help="Scan a file for repo URLs to add to the index")
 parser.add_argument("url", nargs="*", help="URL to add to the index")
 args = parser.parse_args()
 if args.url:
@@ -123,6 +124,12 @@ if spreadsheet:
 
         if "After Dark" in row.get("Notes", "") and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
             ad_games.append(row["Game"].strip())
+
+if args.scan_file:
+    with open(args.scan_file) as f:
+        for line in f:
+            if match := re.search(REPO_REGEX, line):
+                queue.append(match.group(1))
 
 if not queue:
     with open("queue.txt", "w") as f:
