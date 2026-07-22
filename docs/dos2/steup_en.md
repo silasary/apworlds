@@ -26,7 +26,8 @@
 4. Download the Archipelago DOS2 mod. If using the Steam workshop, simply subscribe to the linked mod. If you downloaded the mod off Github, move the .pak folder into the the game's mod folder
 (Documents\Larian Studios\Divinity Original Sin 2\Mods).
 5. Make sure the Archipelago mod is enabled in game by going to "Mods" in the main menu and making sure the corresponding box is checked.
-6. Verify that the directory "Documents\Larian Studios\Divinity Original Sin 2\Osiris Data does exist. If not, start a game with the Archipelago mod enabled and play until you load into the tutorial. This will create the folder.
+6. Verify that the directory "Documents\Larian Studios\Divinity Original Sin 2\Osiris Data does exist. If not, start a game with the Archipelago mod enabled and play until you load into the tutorial and
+complete the first quest (Death Belowdecks, completes after Windego explodes). This will create the folder.
 You can also just create the folder manually (make sure the folder location and name are exact).
 
 Other operating systems should be similar if not identical (confirmation needed, let Intaiachi know).

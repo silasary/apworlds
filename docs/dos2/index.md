@@ -1,10 +1,10 @@
 # Divinity Original Sin 2
 
-
+Divinity Original Sin 2 is a turn based tactical RPG in which you control the Godwoken to fight against the Voidwoken
 
 
 ## Downloads
-- <a href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.5.1/dos2.apworld">Latest Version (0.5.0r2)</a>
+- <a href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.6.0/dos2.apworld">Latest Version (0.6.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -47,7 +47,7 @@ All items listed in the above list.
 
 ## What does another world's item look like in Divinity?
 
-No information will be presented in the game, the client is the only current way to see incoming and outgoing items.
+No information will be presented in the game, the client is the only current way to see outgoing items.
 
 ## Is multiplayer supported?
 
@@ -56,8 +56,8 @@ Basically, have the host play like they're going to play a single player archipe
 
 ## What happens when I receive an item?
 
-If it's an item, it will appear in the current controlled party members inventory. If it's the first of its type to be obtained, a pop up in the middle of the screen will show the item received.
-If it's any of the stats, it will be given to each party member and can be spent when opening up the character menu. Level ups will make their usual effects and sounds but the rest will be silent, keep your eyes open!
+Everything will appear in the current controlled party members inventory with a notification pop up telling you what you have received. Stats will be given to every party member.
+These are retained even when loading past saves.
 
 ## Whats this Archipelago Sync spell?
 
