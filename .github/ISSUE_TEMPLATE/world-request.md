@@ -12,7 +12,7 @@ assignees: ''
 
 ## Additional Details
 
-Please enter any additional details here.  
+Please enter any additional details here.
 If you are changing the owner of an existing repo, please provide a link to a github issue or discord message stating that ownership has been passed.
 
 ### If the world is rated 18+, please place an X in the checkbox below:
