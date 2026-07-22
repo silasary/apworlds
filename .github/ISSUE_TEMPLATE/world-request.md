@@ -2,7 +2,7 @@
 name: World Request
 about: Request worlds be added to the index
 title: 'New World: World Name here'
-labels: ''
+labels: 'world request'
 assignees: ''
 
 ---
