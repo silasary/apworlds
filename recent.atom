@@ -2,47 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-22T12:39:44.687497+00:00</updated>
+  <updated>2026-07-22T18:34:57.284092+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03h</id>
-    <title>Cuphead v0.2.16910335</title>
-    <updated>2026-07-19T01:40:44+00:00</updated>
-    <author>
-      <name>JKLeckr</name>
-    </author>
-    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
-&#13;
-### Revision&#13;
-&#13;
-This revision adjust logic to allow double jumping for getting coin 1 in Funhouse Frazzle.&#13;
-</content>
-    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03h"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.4</id>
-    <title>CrossCode v0.9.4</title>
-    <updated>2026-07-19T02:22:44+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Fixes to Mod&#13;
-&#13;
-* Fixed an issue where, in the Quest Menu in Records, if a non-randomized quest was displayed after a randomized quest, their rewards would overlap (#87, @CodeTriangle).&#13;
-* Fixed an issue where, on the Archipelago Game Info screen, when Quest Randomization and Shop Randomization were both turned off, Progressive Equipment would never display as enabled. (#86, @CodeTriangle).&#13;
-&#13;
-## Fixes to Logic&#13;
-&#13;
-* **Creator** goal has been moved to **Vermillion Wasteland** as it should have been (#82, @Gudf).&#13;
-* **Shock Pedestal** and **So'najiz Circuit Override** have swapped regions as their logic had previously been transposed (#84, @kumquat-ir).&#13;
-* **An Unfortunate Series of Features** now requires access to Maroon Valley (#85, @CodeTriangle).&#13;
-* **Botanics: Omega Open Baraleles** now requires grove or wave (#85, @CodeTriangle).&#13;
-* Shop Slots for **Cross Gear** in **Rhombus Weapons** now requires **Azure Archipelago Pass** (#85, @CodeTriangle).</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.1</id>
     <title>Bayonetta v1.0.0r2</title>
@@ -1002,7 +966,7 @@ The 0.2.0 design campaign: the character phase, item packs, and the adaptive pod
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0-PR10</id>
-    <title>The Grinch v1.6.0r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2</title>
     <updated>2026-07-21T21:40:43+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1216,7 +1180,7 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0</id>
-    <title>The Grinch v1.6.0r2</title>
+    <title>The Grinch v1.6.0r2r2</title>
     <updated>2026-07-22T01:54:25+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1294,5 +1258,87 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
     </author>
     <content/>
     <link href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.4.0/lingo2.apworld"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.0</id>
+    <title>Mega Man X2 v2.0.0</title>
+    <updated>2026-07-22T15:36:18+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content># Big FAT rewrite.&#13;
+# Info&#13;
+* [Setup](https://github.com/TheLX5/Archipelago/wiki/Mega-Man-X2#setup)&#13;
+# Changes&#13;
+* Full FxPak support&#13;
+* 100% local saves&#13;
+    * Bye bye `/resync`&#13;
+* Added DamageLink support&#13;
+* Added a Manager launcher program&#13;
+    * Can disable Energy/Damage/Death Links on a given patch&#13;
+    * Several YAML options are now present in the Manager&#13;
+        * Default button configuration&#13;
+        * X4 Dash Jumps Toggle&#13;
+        * Shoryuken input method&#13;
+        * Palettes&#13;
+* Removed lives as an AP item and as a system in the game&#13;
+* Player's max HP is now capped to 64 (up from 56)&#13;
+* Reworked HP bars so they don't wrap around the screen&#13;
+    * A HP Pickup icon will appear below the HP bar during normal gameplay when it exceeds 32 HP&#13;
+    * Pause HP bar no longer wraps around the screen&#13;
+    * Reused lives counter to show a numeric HP counter&#13;
+* Added several new chip items:&#13;
+  * **`Rapid Five Chip` (MMX5)**: Increases the amount of buster shots on screen to 5&#13;
+  * **`Speed Shot Chip` (MMX5)**: Increases lemons horizontal speed by 50%&#13;
+  * **`Buster Plus Chip` (MMX5)**: Increases Buster damage by 1&#13;
+  * **`Weapon Plus Chip` (MMX6)**: Increases Weapon damage by 1&#13;
+  * **`D-Converter Chip` (MMX6)**: Refills the active weapon when taking damage&#13;
+  * **`D-Barrier Chip` (MMX6)**: Doubles the I-frames after getting hit&#13;
+  * **`Item Plus Chip` (MMX7)**: Increases item drop rates by roughly 33%&#13;
+  * **`Spike Walker Chip` (MMX8)**: Halves speed when sliding down a wall&#13;
+* Dashed lemons now appear green instead of yellow/orange&#13;
+* All weapons are now refilled upon dying&#13;
+* Players now go directly to the Game Clear screen once Sigma is defeated (removes credits sequence)&#13;
+* Players are now redirected to X-Hunter Base 4 when all conditions are met&#13;
+* Bosses have a minimum of 2 HP across all HP rando modes instead of 1 HP&#13;
+* Boss Weakness Plando now accepts multiple weaknesses at once&#13;
+* Added Boss HP Plando&#13;
+* Tweaked Boss Weakness Shuffle&#13;
+    * Added Swapped and Chaotic Triple options&#13;
+    * Renamed Shuffled to Simple&#13;
+* X-Hunter Base tweaks&#13;
+    * No longer can be opened with Weapons, Armor Upgrades, Heart Tanks or Sub Tanks&#13;
+* Optimized X-Hunter Base Opening logic code from the ROM side (should experience slightly less lag overall)&#13;
+    * This forces you to watch the Progress Screen in order to process X-Hunter Base unlocking criteria&#13;
+* Adjusted Serges' fights (toggable from the Manager)&#13;
+    * [Serges I] Serges can take damage at any point&#13;
+    * [Serges I] Removed shield/No longer taunts&#13;
+    * [Serges I] No longer gets stunned by weapons&#13;
+    * [Serges II] Removed immunity from Serges' capsule&#13;
+    * [Serges II] Actual hurtbox enlarged so it's easier to hit&#13;
+* Fixed some uncommon crashes on the pause menu with a full arsenal</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.9</id>
+    <title>Wargroove 2 v1.1.9</title>
+    <updated>2026-07-22T17:50:01+00:00</updated>
+    <author>
+      <name>Fly Hyping</name>
+    </author>
+    <author>
+      <name>Magnemania</name>
+    </author>
+    <author>
+      <name>Akblabla</name>
+    </author>
+    <author>
+      <name>KoiiBlitz</name>
+    </author>
+    <content># Features&#13;
+- New map by KoiiBlitz: Thieves' Town&#13;
+- Logic fixes for Wargroove Warriors&#13;
+- Giant Issue Fixes</content>
+    <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.9"/>
   </entry>
 </feed>
