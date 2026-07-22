@@ -1,0 +1,104 @@
+{
+  "authors": [
+    "RadisNoir"
+  ],
+  "game": "Pokemon BW Extra Logic Plugin",
+  "github": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v1": {
+      "created_at": "2026-06-30T19:36:51Z",
+      "description": "**Features**\r\n* Added `add_rock_smash` option:\r\n  * Makes TM94 Rock Smash a field move\r\n  * Blocks the path between Undella Town and Route 13 with breakable rocks\r\n  * Creates a connection between Wellspring Cave 1F and Challenger's Cave B1F that requires Rock Smash\r\n  * `Wellspring Cave - 1F hidden item #1`, `Wellspring Cave - 1F north east item` and `Challenger's Cave - B1F south item` logically require Rock Smash in addition to their previous access rule\r\n  * Breakable rocks trigger an encounter against a lvl 15 Dwebble\r\n* Added `add_ss_ticket` option:\r\n  * Adds a boat connection between P2 Laboratory and Liberty Garden that requires the Liberty Pass\r\n  * Adds a second ferry that sails between Liberty Garden and Undella Town, requiring the Liberty Pass and the S.S. Ticket\r\n    * The Victini event must be cleared to use the black ferry from Liberty Garden\r\n* Added `hm_with_badges` option:\r\n  * Makes HM01 Cut require the Trio Badge\r\n  * Makes HM03 Surf require the Quake Badge\r\n  * Makes HM04 Strength require the Bolt Badge\r\n  * Makes HM05 Waterfall require the Freeze Badge\r\n  * Makes HM06 Dive require the Legend Badge\r\n  * If `add_rock_smash` is on, makes TM94 Rock Smash require the Basic Badge\r\n* Imported some of the [QoL Plugin](https://github.com/Radis7Noir/pokemon_bw_qol_plugin) patches to ensure compatibility between the two plugins and prevent sequence breaks\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:\r\n      add_rock_smash: true\r\n      add_ss_ticket: true\r\n      hm_with_badges: true\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is only compatible with v0.3.35 of the main BW APworld.\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/commits/v1",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v1/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "eeb11112aa4f78a241b557901bd61f62ca4b34e6e4a9d5b91003ccce8f854fdf",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v1",
+      "minimum_ap_version": "0.6.4",
+      "size": 73888,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v1",
+      "title": "v1 - Initial Release",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "v2": {
+      "created_at": "2026-07-01T12:35:40Z",
+      "description": "** Fix**\r\n* Added a missing connection between Challenger's Cave and Route 9\r\n* Added a missing connection between Wellspring Cave and Route 3\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:\r\n      add_rock_smash: true\r\n      add_ss_ticket: true\r\n      hm_with_badges: true\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is only compatible with v0.3.35+ of the main BW APworld.\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v1...v2",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v2/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "739bb8e6d358fea6244211a7853e07cc1b475293f637e303a0197da82f9031f0",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v2",
+      "minimum_ap_version": "0.6.4",
+      "size": 73930,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v2",
+      "title": "v2 - Fix",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0"
+    },
+    "v3": {
+      "created_at": "2026-07-09T08:41:35Z",
+      "description": "** Fix**\r\n* Added more missing connections between regions to make full use of the plugin options\r\n\r\n**Updates**\r\n* Added `move_strength_boulders`\r\n  * Moves the north boulder on Route 13 to create a new path to reach the Giant Chasm\r\n  * Moves the south boulder in the Dreamyard to create a new path to reach the Basement\r\n  * Moves the boulder in Dragonspiral Tower 2F and adds another one to make Strength required to reach the next floors\r\n* Added `move_strength_boulders_vi_road`\r\n  * Moves the boulder on Victory Road 4F Left Cavern to make Strength required to reach Pok\u00e9mon League\r\n  * This option can only be enabled if `move_strength_boulders` is set to true\r\n* Added `extra_cut_trees`\r\n  * Puts the Loot Sack roadblock NPCs to the west side of Pinwheel Forest and adds cut trees in the middle path, making it possible to leave the Forest with Cut and the Dragon Skull\r\n  * A Plasma grunt NPC will block the East path until Team Plasma leaves the Forest\r\n  * A Petilil NPC will appear near the north exit after defeating Team Plasma to teleport the player back to the south entrance to avoid softlocks\r\n* Added `extra_cut_trees_kyurem`\r\n  * Adds cut trees just before the small pond in the Giant Chasm crater\r\n  * This option can only be enabled if `extra_cut_trees` is set to true\r\n* Added `add_rock_smash_musharna`\r\n  * Adds breakable rocks on the northen side of the Dreamyard Basement\r\n  * This option can only be enabled if `add_rock_smash` is set to true\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:\r\n      add_ss_ticket: true\r\n      hm_with_badges: true\r\n      add_rock_smash: true\r\n      add_rock_smash_musharna: true  # requires add_rock_smash\r\n      extra_cut_trees: true\r\n      extra_cut_trees_kyurem: true   # requires extra_cut_trees\r\n      move_strength_boulders: true\r\n      move_strength_boulders_vi_road: true   # requires move_strength_boulders\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is only compatible with v0.3.35+ of the main BW APworld\r\n* This version is compatible with v19 of the QoL Plugin\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v2...v3",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v3/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "62a50471dceb1444e95fde36bb4c70a051fcbf88863f3e5c8760babc77194d38",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v3",
+      "minimum_ap_version": "0.6.4",
+      "size": 89369,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v3",
+      "title": "v3 - The Strength and Cut Update",
+      "version_simple": "1.3.0",
+      "world_version": "1.3.0"
+    },
+    "v4": {
+      "created_at": "2026-07-14T23:39:46Z",
+      "description": "** Fixes**\r\n* Fixed the missing boulder change in Dragonspiral Tower 2F with `move_strength_boulders`\r\n* The plasma grunt in Pinwheel Forest East now disappears after defeating Team Plasma without reloading the map\r\n\r\n**Updates**\r\n* Rewrote some parts of the plugin files for v0.3.37 of the main APworld (@BlastSlimey)\r\n* Added `add_pass`\r\n  * Adds a plane connection between Mistralton City and Village Bridge that requires the (Maglev) Pass\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:\r\n      add_ss_ticket: true\r\n      add_pass: true  # NEW\r\n      hm_with_badges: true\r\n      add_rock_smash: true\r\n      add_rock_smash_musharna: true  # requires add_rock_smash\r\n      extra_cut_trees: true\r\n      extra_cut_trees_kyurem: true   # requires extra_cut_trees\r\n      move_strength_boulders: true\r\n      move_strength_boulders_vi_road: true   # requires move_strength_boulders\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is compatible with v0.3.37+ of the main BW APworld\r\n* This version is compatible with v20 of the QoL Plugin\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v3...v4",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v4/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "727ffd6837e897611758e76ae93713a8bf0f5c551f2700d27eb628bb76914f91",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v4",
+      "minimum_ap_version": "0.6.4",
+      "size": 118670,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v4",
+      "title": "v4 - The Maglev Airlines Update",
+      "version_simple": "1.4.0",
+      "world_version": "1.4.0"
+    },
+    "v5": {
+      "created_at": "2026-07-16T18:37:18Z",
+      "description": "** Fix**\r\n* Fixed the logic of the plane connection incorrectly checking for Cut and the Pass instead of just the Pass\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:  # updated for v5\r\n      add_ss_ticket: true\r\n      add_pass: true\r\n      hm_with_badges: true\r\n      add_rock_smash: true\r\n      add_rock_smash_musharna: true  # requires add_rock_smash\r\n      extra_cut_trees: true\r\n      extra_cut_trees_kyurem: true   # requires extra_cut_trees\r\n      move_strength_boulders: true\r\n      move_strength_boulders_vi_road: true   # requires move_strength_boulders\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is compatible with v0.3.37+ of the main BW APworld\r\n* This version is compatible with v20 of the QoL Plugin\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v4...v5",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v5/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e457121c6c0fa96dee8aba0f9500229d84db90a2a40d0eb94fd364842a1bc4b0",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v5",
+      "minimum_ap_version": "0.6.4",
+      "size": 118667,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v5",
+      "title": "v5 - Maglev Pass Logic Fix",
+      "version_simple": "1.5.0",
+      "world_version": "1.5.0"
+    },
+    "v6": {
+      "created_at": "2026-07-20T12:13:31Z",
+      "description": "**Fixes**\r\n* Fixed the logic in Abyssal Ruins as the Strength purple block can be pushed regardless of the badge requirement option\r\n* Fixed the Static Musharna logic with `add_rock_smash_musharna` not taking the `Consider static pok\u00e9mon` modifier into account\r\n* Dwebble from breakable rocks now take the `Consider static pok\u00e9mon` modifier into account\r\n\r\n**Updates**\r\n* Added `dark_areas` as a YAML option\r\n  * Turns all the listed areas dark and allows the use of Flash\r\n  * `Require flash` makes all the darken areas logically require Flash\r\n  * `_All` includes all areas\r\n  * `_Random` has a 50% chance to include each area that is not already included\r\n  * `[]` removes all darken areas\r\n  * The full list of valid areas is available in the README\r\n  * Removing the option entirely will keep the default dark areas\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:  # updated for v6\r\n      add_ss_ticket: true\r\n      add_pass: true\r\n      hm_with_badges: true\r\n      add_rock_smash: true\r\n      add_rock_smash_musharna: true  # requires add_rock_smash\r\n      extra_cut_trees: true\r\n      extra_cut_trees_kyurem: true   # requires extra_cut_trees\r\n      move_strength_boulders: true\r\n      move_strength_boulders_vi_road: true   # requires move_strength_boulders\r\n      dark_areas: [\"Wellspring Cave B1F\", \"Mistralton Cave\", \"Challengers Cave\"]  # supports \"_All\" and \"_Random\", see README\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is compatible with v0.3.37+ of the main BW APworld\r\n* This version is compatible with v20 of the QoL Plugin\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v5...v6",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v6/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4e31d6743e596f52abad5bbec23180d09330e244025c5f27ff9956905318daae",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v6",
+      "minimum_ap_version": "0.6.4",
+      "size": 120883,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v6",
+      "title": "v6 - The Blind Update",
+      "version_simple": "1.6.0",
+      "world_version": "1.6.0"
+    }
+  }
+}

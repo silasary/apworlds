@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-##Link to the github repo
+## Link to the github repo
 - https://github.com/ArchipelagoMW/Archipelago
 
 ## Additional Details
