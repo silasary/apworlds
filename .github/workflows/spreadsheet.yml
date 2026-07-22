@@ -29,7 +29,7 @@ jobs:
         python3 scripts/common.py
         [ -e Archipelago/host.yaml ] || echo "{}" >> Archipelago/host.yaml
     - name: Configure host.yaml
-      uses: mikefarah/yq@v4.45.1
+      uses: mikefarah/yq@v4.53.3
       with:
         cmd: yq -i '.apworld_manager.github_token = "${{ secrets.GITHUB_TOKEN }}"' Archipelago/host.yaml
     - name: Scan Spreadsheet
