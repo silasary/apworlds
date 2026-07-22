@@ -2,7 +2,10 @@
 
 ## Summary
 
-Given that there are over 70 traps included in the Crypt of the NecroDancer AP world, this document has been made to explain what each trap does, their general duration during play, and the severity of their effects on play. This is to make it evident which traps should be disabled or increased in weight based on the player's needs.
+This document explains what each trap does, its general duration during play, and the severity of its effects. Traps come in two tiers:
+
+- **Item Pool Traps** can appear as items in the multiworld. Their frequency is controlled per trap by the `trap_weights` option (weight 0 removes a trap from the pool and blocks it from incoming TrapLink traps).
+- **TrapLink-Only Traps** never appear as items. They only trigger when another player's linked trap maps to them (see [TrapLink Mappings](#traplink-mappings)), and can be blocked with the `traplink_excluded_traps` option.
 
 ### Durations
 - Instant: This trap's effects are applied once instantaneously
@@ -19,77 +22,72 @@ Given that there are over 70 traps included in the Crypt of the NecroDancer AP w
 
 ## Table of Contents
 
+### Item Pool Traps
+
+1. [Animal Trap](#animal-trap)
+2. [Bald Trap](#bald-trap)
+3. [Bomb Trap](#bomb-trap)
+4. [Camera Trap](#camera-trap)
+5. [Chaos Trap](#chaos-trap)
+6. [Confusion Trap](#confusion-trap)
+7. [Cursed Trap](#cursed-trap)
+8. [Cutscene Trap](#cutscene-trap)
+9. [Dad Trap](#dad-trap)
+10. [Damage Trap](#damage-trap)
+11. [Dead Ringer Trap](#dead-ringer-trap)
+12. [Disarm Trap](#disarm-trap)
+13. [Double Damage Trap](#double-damage-trap)
+14. [Earth Trap](#earth-trap)
+15. [Freeze Trap](#freeze-trap)
+16. [Gold Scatter Trap](#gold-scatter-trap)
+17. [Haunted Shopkeeper Trap](#haunted-shopkeeper-trap)
+18. [Hot Coals Trap](#hot-coals-trap)
+19. [Ice Floor Trap](#ice-floor-trap)
+20. [Isometric Trap](#isometric-trap)
+21. [Leaping Trap](#leaping-trap)
+22. [Market Crash Trap](#market-crash-trap)
+23. [Monkey Trap](#monkey-trap)
+24. [No Return Trap](#no-return-trap)
+25. [One Hit Trap](#one-hit-trap)
+26. [Shake Trap](#shake-trap)
+27. [Shrink Trap](#shrink-trap)
+28. [Spotlight Trap](#spotlight-trap)
+29. [Summon Trap](#summon-trap)
+30. [Swap Trap](#swap-trap)
+31. [Tar Trap](#tar-trap)
+32. [Teleport Trap](#teleport-trap)
+33. [Tempo Trap](#tempo-trap)
+34. [Timer Trap](#timer-trap)
+35. [Transmute Trap](#transmute-trap)
+36. [Undo Trap](#undo-trap)
+
+### TrapLink-Only Traps
+
 1. [144p Trap](#144p-trap)
 2. [AAA Trap](#aaa-trap)
-3. [Animal Trap](#animal-trap)
-4. [Armadillo Trap](#armadillo-trap)
-5. [Bald Trap](#bald-trap)
-6. [Beetle Trap](#beetle-trap)
-7. [Bomb Trap](#bomb-trap)
-8. [Bonk Trap](#bonk-trap)
-9. [Burn Trap](#burn-trap)
-10. [Camera Trap](#camera-trap)
-11. [Chaos Trap](#chaos-trap)
-12. [Commando Trap](#commando-trap)
-13. [Confusion Trap](#confusion-trap)
-14. [Cursed Trap](#cursed-trap)
-15. [Cutscene Trap](#cutscene-trap)
-16. [Dad Trap](#dad-trap)
-17. [Damage Trap](#damage-trap)
-18. [Dead Ringer Trap](#dead-ringer-trap)
-19. [Disable Trap](#disable-trap)
-20. [Disarm Trap](#disarm-trap)
-21. [Double Damage Trap](#double-damage-trap)
-22. [Earth Trap](#earth-trap)
-23. [Exposition Trap](#exposition-trap)
-24. [Fake Transition Trap](#fake-transition-trap)
-25. [Fast Trap](#fast-trap)
-26. [Flip Horizontal Trap](#flip-horizontal-trap)
-27. [Flip Vertical Trap](#flip-vertical-trap)
-28. [Frame Slime Trap](#frame-slime-trap)
-29. [Freeze Trap](#freeze-trap)
-30. [Gold Scatter Trap](#gold-scatter-trap)
-31. [Haunted Shopkeeper Trap](#haunted-shopkeeper-trap)
-32. [Help Trap](#help-trap)
-33. [Hiccup Trap](#hiccup-trap)
-34. [Home Trap](#home-trap)
-35. [Ice Floor Trap](#ice-floor-trap)
-36. [Instant Death Trap](#instant-death-trap)
-37. [Invisible Trap](#invisible-trap)
-38. [Isometric Trap](#isometric-trap)
-39. [Jump Trap](#jump-trap)
-40. [Laughter Trap](#laughter-trap)
-41. [Leaping Trap](#leaping-trap)
-42. [Market Crash Trap](#market-crash-trap)
-43. [Meteor Trap](#meteor-trap)
-44. [Monkey Trap](#monkey-trap)
-45. [My Turn Trap](#my-turn-trap)
-46. [No Return Trap](#no-return-trap)
-47. [No Revivals Trap](#no-revivals-trap)
-48. [One Hit Trap](#one-hit-trap)
-49. [Paper Trap](#paper-trap)
-50. [Person Trap](#person-trap)
-51. [Satiated Trap](#satiated-trap)
-52. [Shake Trap](#shake-trap)
-53. [Shrink Trap](#shrink-trap)
-54. [Skeleton Trap](#skeleton-trap)
-55. [Slime Player Trap](#slime-player-trap)
-56. [Slip Trap](#slip-trap)
-57. [Slow Trap](#slow-trap)
-58. [Spotlight Trap](#spotlight-trap)
-59. [Sticky Hands Trap](#sticky-hands-trap)
-60. [Stone Trap](#stone-trap)
-61. [Swap Trap](#swap-trap)
-62. [Tar Trap](#tar-trap)
-63. [Teleport Trap](#teleport-trap)
-64. [Tempo Trap](#tempo-trap)
-65. [Timer Trap](#timer-trap)
-66. [Transmute Trap](#transmute-trap)
-67. [Tutorial Trap](#tutorial-trap)
-68. [Undo Trap](#undo-trap)
-69. [W I D E Trap](#w-i-d-e-trap)
-70. [Zoom In Trap](#zoom-in-trap)
-71. [Zoom Out Trap](#zoom-out-trap)
+3. [Bonk Trap](#bonk-trap)
+4. [Commando Trap](#commando-trap)
+5. [Disable Trap](#disable-trap)
+6. [Exposition Trap](#exposition-trap)
+7. [Fake Transition Trap](#fake-transition-trap)
+8. [Frame Slime Trap](#frame-slime-trap)
+9. [Help Trap](#help-trap)
+10. [Hiccup Trap](#hiccup-trap)
+11. [Home Trap](#home-trap)
+12. [Instant Death Trap](#instant-death-trap)
+13. [Invisible Trap](#invisible-trap)
+14. [Jump Trap](#jump-trap)
+15. [Laughter Trap](#laughter-trap)
+16. [Meteor Trap](#meteor-trap)
+17. [My Turn Trap](#my-turn-trap)
+18. [No Revivals Trap](#no-revivals-trap)
+19. [Paper Trap](#paper-trap)
+20. [Satiated Trap](#satiated-trap)
+21. [Slime Player Trap](#slime-player-trap)
+22. [Slip Trap](#slip-trap)
+23. [Sticky Hands Trap](#sticky-hands-trap)
+24. [Tutorial Trap](#tutorial-trap)
+25. [W I D E Trap](#w-i-d-e-trap)
 
 ---
 
@@ -120,30 +118,12 @@ Possesses each player as a random animal for the rest of the floor or until the 
 
 ---
 
-## Armadillo Trap
-
-**Duration:** Instant
-**Severity:** Medium
-
-Spawns 2–6 armadillos in vacant tiles within a four tile radius of each player. Higher zones bias the spawn pool toward higher zone armadillo variants.
-
----
-
 ## Bald Trap
 
 **Duration:** Floor
 **Severity:** Low
 
 Replaces the player's head sprite texture with a character-specific bald variant. Characters with rift (supporter) skins use matching rift-bald variants that also react to emotional states. Excluded characters: Reaper, Chaunter, Goldman. Has no effect on gameplay otherwise.
-
----
-
-## Beetle Trap
-
-**Duration:** Instant
-**Severity:** Medium
-
-Spawns 2–6 ice/fire beetles in vacant tiles within a four tile radius of each player.
 
 ---
 
@@ -165,21 +145,12 @@ Plays a bonk sound effect, squashes the player's sprite, and confuses the player
 
 ---
 
-## Burn Trap
-
-**Duration:** 12 Turns
-**Severity:** Medium
-
-Places hot coals under the player each turn for the duration of the trap. Don't stand still!
-
----
-
 ## Camera Trap
 
 **Duration:** 20 Seconds
 **Severity:** Low
 
-Rotates the camera by a random angle (0–360°) for the duration of the trap. Controls are not rotated to accommodate to the camera angle, nor are any sprites.
+Applies one of five camera effects: Rotate (random 0–360° angle), Flip Horizontal (top-to-bottom mirror), Flip Vertical (left-to-right mirror), Zoom In, or Zoom Out. The variant is chosen at random unless a specific one is forced by an incoming TrapLink trap. Gameplay inputs and sprites are unchanged.
 
 ---
 
@@ -239,9 +210,9 @@ Spawns a DorianDad entity soul-linked to the player, like during Cadence's Necro
 ## Damage Trap
 
 **Duration:** Instant
-**Severity:** Low
+**Severity:** Medium
 
-Deals one heart of damage to the player. If the player is already at 1 HP the damage is skipped, but the player character still makes a hit sound effect.
+Deals one heart of damage to the player. This damage can kill; deaths are attributed to the Damage Trap on the death screen.
 
 ---
 
@@ -259,7 +230,7 @@ Spawns a Dead Ringer enemy between 2 and 4 tiles away from each player. Plays th
 **Duration:** 16 Turns
 **Severity:** Medium
 
-Randomly disables one of the following actions: Move Up, Move Down, Move Left, Move Right, Bombs, Item Use, Weapon Throw, or Digging. Disabled movement keys also disable attacking in that direction. Attempting the blocked action plays an error sound and shows a "Disabled!" flyaway.
+Randomly disables one of the following actions: Move Up, Move Down, Move Left, Move Right, Bombs, Item Use, Weapon Throw, or Digging. Disabled movement keys also disable attacking in that direction. Attempting the blocked action plays an error sound, and a pulsing indicator naming the disabled action is shown above the player while active.
 
 ---
 
@@ -277,7 +248,7 @@ Scatters all carried items from the player's inventory onto nearby floor tiles u
 **Duration:** Floor
 **Severity:** High
 
-Doubles all incoming enemy and trap damage to the player for the rest of the floor. Self-inflicted damage is exempt. Fires at most once per floor.
+Doubles all incoming enemy and trap damage to the player for the rest of the floor. Self-inflicted damage is exempt. Fires at most once per floor. A pulsing "x2 DMG" indicator is shown above the player while active.
 
 ---
 
@@ -286,16 +257,16 @@ Doubles all incoming enemy and trap damage to the player for the rest of the flo
 **Duration:** Instant
 **Severity:** Low
 
-Places dirt walls around each player three tiles in each direction, walling them in. Only converts replaceable floor tiles, tiles occupied by an entity are left clear.
+Encases each player in a ring of dirt walls two tiles out, then splatters scattered dirt walls across the surrounding area (up to five tiles away). Only converts replaceable floor tiles; tiles occupied by a player are left clear.
 
 ---
 
 ## Exposition Trap
 
-**Duration:** 33 Seconds
+**Duration:** ~45 Seconds
 **Severity:** Low
 
-Queues and plays all 6 of Cadence's tutorial voice lines (played with subtitles if enabled).
+Queues and plays all 6 of Cadence's tutorial voice lines back-to-back (with subtitles if enabled). Lines play on a real-time schedule, so standing still doesn't pause the monologue.
 
 ---
 
@@ -305,33 +276,6 @@ Queues and plays all 6 of Cadence's tutorial voice lines (played with subtitles 
 **Severity:** Low
 
 Fades the screen to black and back (1.5s fade in, 1s hold, 1.5s fade out), mimicking a floor transition without actually loading a new level.
-
----
-
-## Fast Trap
-
-**Duration:** 32 Turns
-**Severity:** High
-
-Increases the song tempo to 125% of normal (faster than a Tempo Trap's maximum of 112.5%) for the duration. Players with an item that makes them immune to tempo changes are immune and get a "Negated" flyaway. Cannot stack.
-
----
-
-## Flip Horizontal Trap
-
-**Duration:** 20 Seconds
-**Severity:** Low
-
-Flips the camera view upside-down (top-to-bottom mirror) for 20 seconds. Gameplay inputs remain unchanged.
-
----
-
-## Flip Vertical Trap
-
-**Duration:** 20 Seconds
-**Severity:** Low
-
-Mirrors the entire camera view vertically (left-right mirror) for 20 seconds. Gameplay inputs remain unchanged.
 
 ---
 
@@ -349,7 +293,7 @@ Adds 5 animated slimes randomly on the HUD, chosen from eight slime types (green
 **Duration:** 10 Beats
 **Severity:** Medium
 
-Freezes the player in ice for the duration. Has no effect if the player is immune to freezing.
+Freezes the player for the duration, as either Ice or Stone (petrification) — mechanically identical stuns with different flavor. The variant is chosen at random unless forced by an incoming TrapLink trap. Has no effect if the player is immune to freezing.
 
 ---
 
@@ -358,7 +302,7 @@ Freezes the player in ice for the duration. Has no effect if the player is immun
 **Duration:** Instant
 **Severity:** Low
 
-Steals 60–100% of the player's gold (scaling down at higher amounts) and scatters it as coin piles across the level in vacant tiles. Large amounts have a 30% chance to spawn Leprechauns instead of static coin piles.
+Steals 60–100% of the player's gold (scaling down at higher amounts) and scatters it as coin piles across the level in vacant tiles. One Leprechaun spawns per 100 gold scattered (up to three), always taking the largest piles.
 
 ---
 
@@ -385,7 +329,7 @@ Opens a chain of five modal dialog boxes with helpful tips about basic game mech
 **Duration:** Floor
 **Severity:** Medium
 
-Every 5-10 beats forces the player to move one tile in a random cardinal direction, disabling the current action being made. Clears on floor transition.
+Every 5-10 beats forces the player to move one tile in a random cardinal direction, disabling the current action being made. Clears on floor transition. A pulsing "Hiccups!" indicator is shown above the player while active.
 
 ---
 
@@ -395,6 +339,15 @@ Every 5-10 beats forces the player to move one tile in a random cardinal directi
 **Severity:** Low
 
 Teleports all players back to the level's spawn. Might cause a problem if the song is nearly completed and the miniboss hasn't been beaten.
+
+---
+
+## Hot Coals Trap
+
+**Duration:** 12 Turns
+**Severity:** Medium
+
+Places hot coals under the player each turn for the duration of the trap. Don't stand still!
 
 ---
 
@@ -412,7 +365,7 @@ Temporarily replaces every changeable floor tile in the level with ice. After th
 **Duration:** Instant
 **Severity:** Extreme
 
-Deals 999 damage to all players. A held potion absorbs the kill, same as a regular DeathLink event. Does not trigger a DeathLink. Disabled by default.
+Deals 999 damage to all players. A held potion absorbs the kill, same as a regular DeathLink event. Does not trigger a DeathLink. Blocked by default via the `traplink_excluded_traps` option.
 
 ---
 
@@ -430,7 +383,7 @@ Sets all player characters to be cosmetically invisible, having no effect on ene
 **Duration:** 20 Seconds
 **Severity:** Low
 
-Rotates the camera to one of four diagonal angles (45°, 135°, 225°, 315°) and also rotates each player's sprite to match. Creates a pseudo-isometric visual effect. Controls are not changed (for now).
+Rotates the camera to one of four diagonal angles (45°, 135°, 225°, 315°) and also rotates each player's sprite to match, creating a pseudo-isometric visual effect. Movement inputs are rotated to match the view — pressing a direction moves toward that screen direction, which is a diagonal on the world grid.
 
 ---
 
@@ -466,7 +419,7 @@ Gives the player characters untoggleable leaping movement, making each step cove
 **Duration:** Run
 **Severity:** Medium
 
-Multiplies all shop prices by five times for the remainder of the run. Fires at most once per run.
+Closes all shops for the remainder of the run: every item for sale is removed and its floor tile is replaced with an "Out of Stock" tile, on the current floor and every floor after. AP shop slots are unaffected. Fires at most once per run.
 
 ---
 
@@ -493,7 +446,7 @@ Spawns a random monkey entity on top of the player characters, grabbing onto the
 **Duration:** 10-15 Turns
 **Severity:** High
 
-Overrides all player inputs with random actions for a random duration. The action pool includes all four movement directions plus diagonals (if available), bomb, item slots, and spells.
+Overrides all player inputs with random actions for a random duration. The action pool includes all four movement directions plus diagonals (if available), bomb, item slots, and spells. A pulsing "My Turn!" indicator is shown above the player while active.
 
 ---
 
@@ -520,7 +473,7 @@ Removes all revival potions from the player's inventory and from the current lev
 **Duration:** Floor
 **Severity:** High
 
-Reduces the player's max HP to one half-heart for the rest of the floor. The original max HP is saved and restored on floor transition (but not their health at the time).
+Reduces the player's max HP to one half-heart for the rest of the floor. The original max HP is saved and restored on floor transition (but not their health at the time). A pulsing "One Hit!" indicator is shown above the player while active.
 
 ---
 
@@ -530,15 +483,6 @@ Reduces the player's max HP to one half-heart for the rest of the floor. The ori
 **Severity:** Low
 
 Squashes all characters (not just players) to near-zero width while leaving height normal, making them all paper-thin. Restores to normal on floor transition.
-
----
-
-## Person Trap
-
-**Duration:** Instant
-**Severity:** Low
-
-Spawns 2–6 copies of random playable characters as in vacant tiles within four tile radius. Each spawned person plays its greeting voice line on appearance and is idle.
 
 ---
 
@@ -569,15 +513,6 @@ Shrinks the player characters for the trap duration, making them unable to attac
 
 ---
 
-## Skeleton Trap
-
-**Duration:** Instant
-**Severity:** Medium
-
-Spawns 2-6 skeletons, armored skeletons, mages, skeleton knights, and skulls in vacant tiles within a four tile radius of each player. Higher zones favor tougher variants.
-
----
-
 ## Slime Player Trap
 
 **Duration:** Floor
@@ -596,15 +531,6 @@ Forces the player to slide in their current movement direction as though on ice,
 
 ---
 
-## Slow Trap
-
-**Duration:** 32 Turns
-**Severity:** High
-
-Decreases the song tempo to 75% of normal (slower than a Tempo Trap's minimum of 87.5%) for the duration. Players with an item that makes them immune to tempo changes are immune and get a "Negated" flyaway. Cannot stack.
-
----
-
 ## Spotlight Trap
 
 **Duration:** Floor
@@ -619,16 +545,16 @@ Clamps the player's tile and object vision radius to two tiles, creating a small
 **Duration:** Floor
 **Severity:** Medium
 
-Curses all item slots that the player currently has items equipped in, preventing those items from being dropped, stolen, or replaced. Only the slots the trap cursed are un-cursed on floor transition; pre-existing cursed slots (e.g. Klarinetta's innate cursed weapon) are unaffected.
+Curses all item slots that the player currently has items equipped in, preventing those items from being dropped, stolen, or replaced. Only the slots the trap cursed are un-cursed on floor transition; pre-existing cursed slots (e.g. Klarinetta's innate cursed weapon) are unaffected. A pulsing "Sticky Hands!" indicator is shown above the player while active.
 
 ---
 
-## Stone Trap
+## Summon Trap
 
-**Duration:** 10 Beats
+**Duration:** Instant
 **Severity:** Medium
 
-Petrifies the player for the duration. Has no effect if the player is immune to freezing.
+Spawns 2–6 entities from a randomly chosen summon group in vacant tiles within a four tile radius of each player. Current groups: Skeletons (skeletons, armored skeletons, mages, knights, and skulls; higher zones favor tougher variants), Armadillos (higher zones bias toward higher-zone variants), ice/fire Beetles, and — rarely — friendly Persons (idle playable characters that greet you). Incoming TrapLink traps can target a specific group (e.g. Buyon Trap always summons beetles).
 
 ---
 
@@ -664,7 +590,7 @@ Teleports the player to a random vacant tile at least three tiles away (up to 40
 **Duration:** 32 Beats
 **Severity:** Medium
 
-Applies a random tempo change (either 87.5% or 112.5% of normal tempo) for the trap duration, akin to a normal tempo change trap in-game. Players with an item that makes them immune to tempo changes are immune and get a "Negated" flyaway. Cannot stack.
+Applies a tempo change for the trap duration, akin to a normal tempo change trap in-game. Rolls a random 87.5% or 112.5% of normal tempo, unless an incoming TrapLink trap forces the harsher Fast (125%) or Slow (75%) variant. Players with an item that makes them immune to tempo changes are immune and get a "Negated" flyaway. All tempo effects share one active slot and cannot stack.
 
 ---
 
@@ -691,7 +617,7 @@ Transmutes all transmutable items in the player's inventory into random unlocked
 **Duration:** Instant
 **Severity:** Extreme
 
-Loads the Tutorial level immediately, ejecting the player from their current run. Shows "Tutorial time!" flyaway before loading. Disabled by default.
+Loads the Tutorial level immediately, ejecting the player from their current run. Shows "Tutorial time!" flyaway before loading. Blocked by default via the `traplink_excluded_traps` option.
 
 ---
 
@@ -713,25 +639,9 @@ Stretches all player sprites to four times their normal width with no change to 
 
 ---
 
-## Zoom In Trap
-
-**Duration:** 20 Seconds
-**Severity:** Low
-
-Zooms the camera significantly in for the trap duration.
-
----
-
-## Zoom Out Trap
-
-**Duration:** 20 Seconds
-**Severity:** Low
-
-Zooms the camera significantly out for the trap duration.
-
 ## TrapLink Mappings
 
-Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the item is recognised but has no implementation and is silently dropped. Suggestions are appreciated and should be given in the [Archipelago thread for Crypt of the NecroDancer](https://discord.com/channels/731205301247803413/1192775219740422176).
+Every row maps an Archipelago item name to a `TrapHandler` ID, optionally with handler-specific arguments (e.g. a forced Summon Trap variant). `Null` means the item is recognised but has no implementation and is silently dropped. Suggestions are appreciated and should be given in the [Archipelago thread for Crypt of the NecroDancer](https://discord.com/channels/731205301247803413/1192775219740422176).
 
 | TrapLink Trap Name | TrapHandler ID |
 |---|---|
@@ -739,7 +649,7 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Aaa Trap | `AaaTrap` |
 | Animal Trap | `AnimalTrap` |
 | Animal Bonus Trap | *(Null)* |
-| Army Trap | `ArmadilloTrap` |
+| Army Trap | `SummonTrap` (Armadillo variant) |
 | Bald Trap | `BaldTrap` |
 | Banana Peel Trap | `SlipTrap` |
 | Banana Trap | `SlipTrap` |
@@ -750,13 +660,14 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Bomb Trap | `BombTrap` |
 | Bonk Trap | `BonkTrap` |
 | Breakout Trap | *(Null)* |
-| Bubble Trap | `FreezeTrap` |
-| Bullet Time Trap | `FreezeTrap` |
+| Bubble Trap | `FreezeTrap` (Ice variant) |
+| Bullet Time Trap | `FreezeTrap` (Ice variant) |
 | Burn Trap | `BurnTrap` |
-| Buyon Trap | `BeetleTrap` |
-| Camera Rotate Trap | `CameraTrap` |
+| Buyon Trap | `SummonTrap` (Beetle variant) |
+| Camera Rotate Trap | `CameraTrap` (Rotate variant) |
+| Camera Trap | `CameraTrap` |
 | Chaos Trap | `ChaosTrap` |
-| Chaos Control Trap | `FreezeTrap` |
+| Chaos Control Trap | `FreezeTrap` (Ice variant) |
 | Chart Modifier Trap | `TempoTrap` |
 | Chaser Trap | `HauntedShopkeeperTrap` |
 | Clear Image Trap | *(Null)* |
@@ -766,8 +677,11 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Control Ball Trap | *(Null)* |
 | Controller Drift Trap | *(Null)* |
 | Cursed Ball Trap | *(Null)* |
+| Cursed Trap | `CursedTrap` |
 | Cutscene Trap | `CutsceneTrap` |
+| Dad Trap | `DadTrap` |
 | Damage Trap | `DamageTrap` |
+| Dead Ringer Trap | `DeadRingerTrap` |
 | Deisometric Trap | `IsometricTrap` |
 | Depletion Trap | `DisarmTrap` |
 | Disable A Trap | `DisableTrap` |
@@ -777,7 +691,9 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Disable Z Trap | `DisableTrap` |
 | Disarm Trap | `DisarmTrap` |
 | Double Damage | `DoubleDamageTrap` |
+| Double Damage Trap | `DoubleDamageTrap` |
 | Dry Trap | `DisarmTrap` |
+| Earth Trap | `EarthTrap` |
 | Eject Ability | `DisarmTrap` |
 | Electrocution Trap | *(Null)* |
 | Empty Item Box Trap | `DisarmTrap` |
@@ -788,35 +704,38 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Exposition Trap | `ExpositionTrap` |
 | Extreme Chaos Mode | *(Null)* |
 | Fake Transition | `FakeTransitionTrap` |
-| Fast Trap | `FastTrap` |
+| Fast Trap | `TempoTrap` (Fast variant) |
 | Fear Trap | *(Null)* |
 | Fire Trap | `BurnTrap` |
 | Fish Eye Trap | *(Null)* |
 | Fishing Trap | *(Null)* |
 | Fishin' Boo Trap | *(Null)* |
-| Flip Horizontal Trap | `FlipHorizontalTrap` |
-| Flip Trap | `FlipHorizontalTrap` |
-| Flip Vertical Trap | `FlipVerticalTrap` |
+| Flip Horizontal Trap | `CameraTrap` (FlipHorizontal variant) |
+| Flip Trap | `CameraTrap` (FlipHorizontal variant) |
+| Flip Vertical Trap | `CameraTrap` (FlipVertical variant) |
 | Frame Slime Trap | `FrameSlimeTrap` |
-| Freeze Trap | `FreezeTrap` |
+| Freeze Trap | `FreezeTrap` (Ice variant) |
 | Frog Trap | *(Null)* |
-| Frost Trap | `FreezeTrap` |
-| Frozen Trap | `FreezeTrap` |
+| Frost Trap | `FreezeTrap` (Ice variant) |
+| Frozen Trap | `FreezeTrap` (Ice variant) |
 | Fuzzy Trap | *(Null)* |
 | Gadget Shuffle Trap | `TransmuteTrap` |
 | Gas Trap | `ConfusionTrap` |
 | Get Out Trap | `TimerTrap` |
 | Ghost | `HauntedShopkeeperTrap` |
 | Ghost Chat | *(Null)* |
+| Gold Scatter Trap | `GoldScatterTrap` |
 | Gooey Bag | `SlimePlayerTrap` |
 | Gravity Trap | `IceFloorTrap` |
+| Haunted Shopkeeper Trap | `HauntedShopkeeperTrap` |
 | Help Trap | `HelpTrap` |
 | Hey! Trap | *(Null)* |
 | Hiccup Trap | `HiccupTrap` |
 | Home Trap | `HomeTrap` |
 | Honey Trap | `TarTrap` |
+| Hot Coals Trap | `BurnTrap` |
 | Ice Floor Trap | `IceFloorTrap` |
-| Ice Trap | `FreezeTrap` |
+| Ice Trap | `FreezeTrap` (Ice variant) |
 | Icy Hot Pants Trap | *(Null)* |
 | Input Sequence Trap | *(Null)* |
 | Instant Crystal Trap | *(Null)* |
@@ -826,11 +745,13 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Invisiball Trap | *(Null)* |
 | Invisible Trap | `InvisibleTrap` |
 | Invisibility Trap | `InvisibleTrap` |
-| Iron Boots Trap | `SlowTrap` |
+| Iron Boots Trap | `TempoTrap` (Slow variant) |
+| Isometric Trap | `IsometricTrap` |
 | Items to Bombs | `BombTrap` |
 | Jump Trap | `JumpTrap` |
 | Jumping Jacks Trap | `JumpTrap` |
 | Laughter Trap | `LaughterTrap` |
+| Leaping Trap | `LeapingTrap` |
 | Light Up Path Trap | *(Null)* |
 | Literature Trap | `ExpositionTrap` |
 | Mana Drain Trap | `DisarmTrap` |
@@ -838,12 +759,14 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Math Quiz Trap | *(Null)* |
 | Meteor Trap | `MeteorTrap` |
 | Metronome Trap | `TimerTrap` |
-| Mirror Trap | `FlipHorizontalTrap` |
+| Mirror Trap | `CameraTrap` (FlipHorizontal variant) |
 | Monkey Mash Trap | `MonkeyTrap` |
+| Monkey Trap | `MonkeyTrap` |
 | My Turn! Trap | `MyTurnTrap` |
 | Ninja Trap | *(Null)* |
 | No Guarding | `CommandoTrap` |
 | No Petals | `SatiatedTrap` |
+| No Return Trap | `NoReturnTrap` |
 | No Revivals | `NoRevivalsTrap` |
 | No Stocks | *(Null)* |
 | No Vac Trap | `DisableTrap` |
@@ -851,10 +774,11 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Nut Trap | *(Null)* |
 | OmoTrap | `HelpTrap` |
 | One Hit KO | `OneHitTrap` |
+| One Hit Trap | `OneHitTrap` |
 | Paper Trap | `PaperTrap` |
 | Paralyze Trap | *(Null)* |
 | Paralysis Trap | *(Null)* |
-| Person Trap | `PersonTrap` |
+| Person Trap | `SummonTrap` (Person variant) |
 | Phone Trap | `HelpTrap` |
 | Pie Trap | `SlipTrap` |
 | Pinball Trap | *(Null)* |
@@ -868,7 +792,7 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | PONG Challenge | *(Null)* |
 | Pong Trap | *(Null)* |
 | Posession Trap | *(Null)* |
-| PowerPoint Trap | `SlowTrap` |
+| PowerPoint Trap | `TempoTrap` (Slow variant) |
 | Push Trap | `LeapingTrap` |
 | Radiation Trap | *(Null)* |
 | Rail Trap | `IceFloorTrap` |
@@ -880,27 +804,32 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | Reverse Trap | `ConfusionTrap` |
 | Rockfall Trap | `EarthTrap` |
 | Sandstorm Trap | `EarthTrap` |
-| Screen Flip Trap | `FlipHorizontalTrap` |
+| Screen Flip Trap | `CameraTrap` (FlipHorizontal variant) |
 | Shake Trap | `ShakeTrap` |
+| Shrink Trap | `ShrinkTrap` |
 | Sleep Trap | *(Null)* |
 | Slip Trap | `SlipTrap` |
 | Slime Player Trap | `SlimePlayerTrap` |
-| Slow Trap | `SlowTrap` |
-| Slowness Trap | `SlowTrap` |
+| Slow Trap | `TempoTrap` (Slow variant) |
+| Slowness Trap | `TempoTrap` (Slow variant) |
 | Snake Trap | *(Null)* |
 | Spam Trap | `MyTurnTrap` |
 | Spike Ball Trap | *(Null)* |
-| Spooky Time | `SkeletonTrap` |
+| Spooky Time | `SummonTrap` (Skeleton variant) |
 | Spotlight Trap | `SpotlightTrap` |
 | Spring Trap | *(Null)* |
 | Squash Trap | `BonkTrap` |
 | Sticky Floor Trap | `TarTrap` |
 | Sticky Hands Trap | `StickyHandsTrap` |
+| Stone Trap | `FreezeTrap` (Stone variant) |
 | Stun Trap | `ConfusionTrap` |
+| Summon Trap | `SummonTrap` |
 | SvC Effect | *(Null)* |
 | Swap Trap | `SwapTrap` |
+| Tar Trap | `TarTrap` |
 | Tarr Trap | `TarTrap` |
 | Teleport Trap | `TeleportTrap` |
+| Tempo Trap | `TempoTrap` |
 | Text Trap | `HelpTrap` |
 | Thwimp Trap | *(Null)* |
 | Time Limit | `TimerTrap` |
@@ -911,14 +840,21 @@ Every row maps an Archipelago item name to a `TrapHandler` ID. `Null` means the 
 | TNT Barrel Trap | `BombTrap` |
 | TNT Trap | `BombTrap` |
 | Tool Swap Trap | `TransmuteTrap` |
+| Transmute Trap | `TransmuteTrap` |
 | Trivia Trap | *(Null)* |
 | Tutorial Trap | `TutorialTrap` |
 | Underwater Trap | *(Null)* |
 | Undo Trap | `UndoTrap` |
 | UNO Challenge | *(Null)* |
+| Vintage Trap | *(Null)* |
 | W I D E Trap | `WideTrap` |
+| Weather Cloudy Trap | *(Null)* |
+| Weather Rainy Trap | *(Null)* |
+| Weather Stormy Trap | *(Null)* |
+| Weather Sunny Trap | *(Null)* |
+| Well Done Trap | *(Null)* |
 | Whirlpool Trap | *(Null)* |
 | Whoops! Trap | `DisarmTrap` |
-| Zoom In Trap | `ZoomInTrap` |
-| Zoom Out Trap | `ZoomOutTrap` |
-| Zoom Trap | `ZoomInTrap` |
+| Zoom In Trap | `CameraTrap` (ZoomIn variant) |
+| Zoom Out Trap | `CameraTrap` (ZoomOut variant) |
+| Zoom Trap | `CameraTrap` (ZoomIn variant) |

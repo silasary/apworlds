@@ -29,7 +29,7 @@
 #### v0.1.0r2
 - <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.0/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.0/atlyss.apworld</a>
 
-#### v0.1.0
+#### v0.0.5
 - <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.5-PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.5-PreRelease/Atlyss.apworld</a>
 
 #### v0.0.0+testbuild

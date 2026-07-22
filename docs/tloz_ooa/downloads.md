@@ -8,6 +8,24 @@
 #### v4
 - <a href="https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa_4_3/tloz_ooa.apworld">https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa_4_3/tloz_ooa.apworld</a>
 
+#### v1.0.2
+- <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.2/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.2/tloz_ooa.apworld</a>
+
+#### v1.0.0r2
+- <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.1/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.1/tloz_ooa.apworld</a>
+
+#### v1.0.0
+- <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.0/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.0/tloz_ooa.apworld</a>
+
+#### v0.5.2
+- <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.2/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.2/tloz_ooa.apworld</a>
+
+#### v0.5.1
+- <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.1/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.1/tloz_ooa.apworld</a>
+
+#### v0.5.0
+- <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.0/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.0/tloz_ooa.apworld</a>
+
 #### v0.4.3
 - <a href="https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa_4_2/tloz_ooa.apworld">https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa_4_2/tloz_ooa.apworld</a>
 
@@ -26,6 +44,6 @@
 #### v0.2.4
 - <a href="https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa_2/tloz_ooa.apworld">https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa_2/tloz_ooa.apworld</a>
 
-#### vooa
+#### v0.0.0
 - <a href="https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa/tloz_ooa.apworld">https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa/tloz_ooa.apworld</a>
 

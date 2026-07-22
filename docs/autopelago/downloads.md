@@ -1,9 +1,15 @@
 # Autopelago
 
 ## Latest
-- <a href="https://github.com/airbreather/Autopelago/releases/download/v0.11.9/autopelago.apworld">Latest Version (0.11.0r17)</a>
+- <a href="https://github.com/airbreather/Archipelago/releases/download/v1.1.1/autopelago.apworld">Latest Version (1.1.1)</a>
 
 ## All Versions
+
+#### v1.1.1
+- <a href="https://github.com/airbreather/Archipelago/releases/download/v1.1.1/autopelago.apworld">https://github.com/airbreather/Archipelago/releases/download/v1.1.1/autopelago.apworld</a>
+
+#### v1.1.0
+- <a href="https://github.com/airbreather/Archipelago/releases/download/v1.1.0/autopelago.apworld">https://github.com/airbreather/Archipelago/releases/download/v1.1.0/autopelago.apworld</a>
 
 #### v0.11.0r17
 - <a href="https://github.com/airbreather/Autopelago/releases/download/v0.11.9/autopelago.apworld">https://github.com/airbreather/Autopelago/releases/download/v0.11.9/autopelago.apworld</a>

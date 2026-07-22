@@ -1,15 +1,9 @@
 # Mega Man X Command Mission
 
 ## Latest
-- <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.62/commandmission.apworld">Latest Version (0.1.62)</a>
+- <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.7/commandmission.apworld">Latest Version (0.1.7)</a>
 
 ## All Versions
-
-#### v0.1.62
-- <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.62/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.62/commandmission.apworld</a>
-
-#### v0.1.61
-- <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.61/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.61/commandmission.apworld</a>
 
 #### v0.1.7
 - <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.7/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.7/commandmission.apworld</a>
