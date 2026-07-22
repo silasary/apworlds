@@ -6,7 +6,7 @@ from time import sleep
 import requests
 import csv
 import gspread
-
+import openpyxl
 
 import common
 import yaml
@@ -103,14 +103,40 @@ def fetch_spreadsheet_rows_csv(spreadsheet: str, tabs: list[int]) -> list[dict[s
     return all_rows
 
 
+def fetch_spreadsheet_rows_xlsx(spreadsheet: str, tabs: list[int]) -> list[dict[str, str]]:
+    all_rows: list[dict[str, str]] = []
+    for gid in tabs:
+        SPREADSHEET_URL = f"https://docs.google.com/spreadsheets/d/{spreadsheet}/export?gid={gid}&format=xlsx"
+        response = requests.get(SPREADSHEET_URL)
+        response.raise_for_status()
+        with open("temp.xlsx", "wb") as f:
+            f.write(response.content)
+
+        wb = openpyxl.load_workbook("temp.xlsx")
+        sheet = wb.worksheets[0]
+        rows = list(sheet.rows)
+        while rows[0][0].value != "Game":
+            rows.pop(0)
+        headers = [c.value for c in rows[0]]
+        rows.pop(0)
+        parsed = [{headers[i]: c.hyperlink.target if c.hyperlink else c.value for i, c in enumerate(row)} for row in rows]
+        all_rows.extend(parsed)
+    return all_rows
+
+
 games_without_links = set()
 if spreadsheet:
-    all_rows = fetch_spreadsheet_rows_api(spreadsheet, tabs)
+    all_rows = fetch_spreadsheet_rows_xlsx(spreadsheet, tabs)
     if not all_rows:
         print("Failed to fetch spreadsheet with API, falling back to csv download")
         all_rows = fetch_spreadsheet_rows_csv(spreadsheet, tabs)
 
     for row in all_rows:
+        if isinstance(row.get("Game", ""), float):
+            # 2048
+            row["Game"] = str(int(row["Game"]))
+        elif row["Game"] is None:
+            continue
         if wheretofind := (row.get("Where can you get the APWorld and Client?", "").strip() or row.get("Where can you get the APWorld or program?", "").strip()) or (
             row.get("APWorld Link", "").strip() or row.get("Links & Downloads", "").strip()
         ):
@@ -122,7 +148,9 @@ if spreadsheet:
 
             # queue.extend(repolinks)
 
-        if "After Dark" in row.get("Notes", "") and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
+        if "After Dark" in (row.get("Notes", "") or "") and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
+            ad_games.append(row["Game"].strip())
+        elif row.get("18+ / Unrated", False):
             ad_games.append(row["Game"].strip())
 
 if args.scan_file:
