@@ -34,8 +34,10 @@ jobs:
             cmd: yq -i '.apworld_manager.github_token = "${{ secrets.GITHUB_TOKEN }}"' Archipelago/host.yaml
 
       - name: Triage World Request
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
-            echo ${{ github.event.issue.body }} > issue_body.txt
+            echo "$ISSUE_BODY" > issue_body.txt
             python3 scripts/add_worlds.py --scan-file issue_body.txt
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
@@ -46,4 +48,3 @@ jobs:
             reviewers: silasary
             body: |
                 Resolves #${{ github.event.issue.number }}.
-
