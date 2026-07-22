@@ -1,16 +1,28 @@
 {
+  "authors": [
+    "josephanimate2021",
+    "Glan9",
+    "SenPierre",
+    "FlameStripe"
+  ],
   "description": "The Legend of Zelda: Oracles of Ages is one of the rare Capcom entries to the series.\nNayru, the oracle of ages, has been possessed by Veran, and she is now making a mess in Labrynna\nGather the Essences of Times, exorcice Nayru and defeat Veran to save the timeline of Labrynna",
   "game": "The Legend of Zelda - Oracle of Ages",
-  "github": "https://github.com/SenPierre/ArchipelagoOoA",
+  "github": [
+    "https://github.com/SenPierre/ArchipelagoOoA",
+    "https://github.com/josephanimate2021/ArchipelagoOoA"],
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "ooa": {
       "download_url": "https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa/tloz_ooa.apworld",
       "size": 252185,
       "source_url": "https://api.github.com/repos/SenPierre/ArchipelagoOoA",
       "version_simple": "0.0.0",
-      "world_version": "ooa"
+      "world_version": "0.0.0"
     },
     "ooa_2": {
       "created_at": "2024-09-09T17:45:20Z",
@@ -111,6 +123,99 @@
       "title": "Oracle of Ages 0.4.2",
       "version_simple": "0.4.2",
       "world_version": "0.4.2.post3"
+    },
+    "v0.5.0": {
+      "created_at": "2026-04-08T10:42:40Z",
+      "description": "This release is aimed to mostly fix issues relating to text problems and etc. \r\n\r\n## What's New\r\n* Added Hero's Cave to the list of dungeons for dungeon shuffle (if hero's cave is enabled)\r\n* Added warp_to_start location option to give users an option of where their warping location needs to be. By default, the warping location will be set to the screen with the triforce stone in it.\r\n* Added a new setting option called skip_starting_cinematic where if turned on, you don't see the nintendo logo and the cinematic at all, just the start screen.\r\n* Added Music/SFX Shuffle options in settings where if turned on, will shuffle your music/SFX each time you patch a new game.\r\n* Added Mute Music setting option that allows you to mute in game music if you need to do things like adding your own music into your video or etc.\r\n## What's Fixed\r\n* Tokay Chicken Hut no longer refills your bombs and it's item sprite has finally been changed.\r\n* Most text errors have been eliminated. I am not sure about all of them though, I did my last playthough of this game with keysanity on and I think I remember finding one text error that occured when I got the D3 small key and AP thought that I got a piece of heart. Hopefully that's not me.\r\n* Ridge Bush Cave Chest was fixed after a bug discovery by one of the developers.\r\n## What's Improved\r\n* Dungeon precision text has been improved via a setting option called improve_dungeon_precision_text where instead of the text saying \"Dungeon {NUMBER},\" it will say \"{DUNGEON_NAME}.\" This will only be a necessity if you have sanity (except slates) of any kind enabled.\r\n* The link summoned cutscene no longer plays when starting a new file (just like in the seasons AP)\r\n* When creating a new file, instead of buttons being brought up like new game, secrets, or link, you are instantly brought to the name creation screen.\r\n* The second screen of the inventory has been improved the same way it was in season world : Most items are removed when used and clear space for others items, and all trade items are now displayed individually.\r\n\r\n# NOTE:\r\nThe current PopTracker Pack for ages is currently not compatible with this release due to many location changes that will make the pack think that some locations are either obtained when not, or not obtained when obtained, or etc. Right now, it's best if you play with this release if you know the layout/logic of ages pretty well.\r\n\r\nUPDATE: As of 4/14/26, the tracker has been updated to support the new location changes that were done with the release. The link is here: https://github.com/Dranzior/ooa_brooty/releases/tag/0.9.3\r\n\r\n**Full Changelog**: https://github.com/josephanimate2021/ArchipelagoOoA/commits/v0.5.0",
+      "download_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.0/tloz_ooa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d459dfb558b6367e4b4e3d02b46b470998228b59b186da6e5fe7bef386c7f3d5",
+      "html_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v0.5.0",
+      "minimum_ap_version": "0.5.1",
+      "prerelease": true,
+      "size": 188522,
+      "source_url": "https://api.github.com/repos/josephanimate2021/ArchipelagoOoA",
+      "tag": "v0.5.0",
+      "title": "Oracle of Ages Apworld v0.5.0",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
+    },
+    "v0.5.1": {
+      "created_at": "2026-04-16T16:15:20Z",
+      "description": "This is a bugfix release which fixes a problem with the 3rd statue puzzle of Hero's Cave where you get the same item you got from the 2nd statue puzzle. Did not see that initially, but we are good now! Also some logic fixes were added (mainly rolling ridge)\r\n\r\nCredit to @SenPierre for contributing to the fixes for the v0.5.1 release!\r\n\r\nFull changes :\r\n\r\n* Fixed 3rd statue puzzle of Hero's Cave check\r\n* Fix logic for Ganon and Rolling ridge\r\n* Fix warp out of Hero cave in dungeon shuffle\r\n* Fix Maku drop (again)\r\n* Fix Maku Seed appearing like a ghost on top of the inventory (It shouldn't appear at all now)",
+      "download_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.1/tloz_ooa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1028c60409a2a7f07db195317c14e7354ae035fba762f944f48084a8f596999c",
+      "html_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v0.5.1",
+      "minimum_ap_version": "0.5.1",
+      "prerelease": true,
+      "size": 188853,
+      "source_url": "https://api.github.com/repos/josephanimate2021/ArchipelagoOoA",
+      "tag": "v0.5.1",
+      "title": "Oracle of Ages APWorld v0.5.1",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1"
+    },
+    "v0.5.2": {
+      "created_at": "2026-04-21T22:55:54Z",
+      "description": "fixed hero's cave essence warp",
+      "download_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v0.5.2/tloz_ooa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "07ee3e33ffeb7d4f0fb9caa3b8d1dafb7049ec9002fb535b32f3ebc8af4833a2",
+      "html_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v0.5.2",
+      "minimum_ap_version": "0.5.1",
+      "prerelease": true,
+      "size": 188856,
+      "source_url": "https://api.github.com/repos/josephanimate2021/ArchipelagoOoA",
+      "tag": "v0.5.2",
+      "title": "Oracle of Ages Apworld v0.5.2",
+      "version_simple": "0.5.2",
+      "world_version": "0.5.2"
+    },
+    "v1.0.0": {
+      "created_at": "2026-07-12T00:11:51Z",
+      "description": "Hoy this is a big release ! We have a ton new stuff for you to try, some QOL and bugs fixes.\r\n\r\nWe mainly moved to 1.0.0 so we are on par with season for the version logic. From now on, the main version (The first number) will change when retro-compatibility break. Also error message about version should be more explicit now. But also, the game is pretty stable, you have a lot of option, it might be fair to say this is a proper 1.0.\r\n\r\nAs always, put the apworld in your the custom_world folder, and then you can launch your game simply by double clicking the apooa file and launching it with archipelago. It will just ask for you (legally obtain) ROM of ages if you never set it up.\r\n\r\nIf you encounter any issue, please report them in the oracle-of-ages channel in the Archipelago Discord.  \r\nhttps://discord.com/channels/731205301247803413/1492540520462024774\r\n\r\nAnd please... Have a good time. :)\r\n -- Joseph, Flamestripe & Piapiou\r\n\r\n### **New Additions/Options**\r\n\r\n- Gasha Locations : option to add up to 15 gasha seed plots, enemy kill requirements modifiable in the yaml.\r\n\r\n- Secret locations - added option to enable the post game secret locations, these locations are the ones if you beat ages before seasons.\r\n\r\n- 3 New Vasu Rings : the ring you get for beating the game will be available from the start, so talk to vasu twice, and an option for two new rings based on the trophies for killing enemies and collecting rupees, values modifiable in the yaml\r\n\r\n- Tokay Thieves : The Tokay who steal your items on crescent now all have items\r\n\r\n- Minibosses - added an option to give an item upon defeating a miniboss, placed like the heart container from end bosses.\r\n\r\n- Essence Shuffle - new option to shuffle the essences into the item pool\r\n\r\n- Linked Heroes Cave - Option to include the linked game hero's cave, the entrance is located at its vanilla location, works with dungeon shuffle\r\n\r\n- Duplicate Seed Trees - added option to force up to 3 seed trees to be the duplicate seeds, listed names in yaml.\r\n\r\n- Warp to Start Location - changes where the warp to start feature places you, either outside the triforce stone or next to the maku tree time portal\r\n\r\n### **Minor Changes**\r\n\r\n- Reverted an older change on crescent island that stopped an echoes portal from being activated unless you had tune of currents, will cause softlocks without proper items so be sure to know how to warp to start\r\n\r\n- Tune of currents now activates echoes portals, still need to use echoes for the tokkey item\r\n\r\n- You are now able to cycle through maps you are currently not on. Press the start button while your map is open.\r\n\r\n- While secrets are enabled, a piece of land will appear in the pirate sea area so you can access the underwater chest in the present, this also grants access to the 16th gasha plot in logic. It doesn't grant the ability to randomize 16 rewards, but gives an extra place to plant a seed (16 locations for 15 rewards)\r\n\r\n- New games now start in the room with the maku portal and the first item.\r\n\r\n- You can now immediately talk with one of the brothers in symmetry city instead of the long chain in vanilla.\r\n\r\n- Some rings have been classified as progression items so they can actually show up as logical items, currently these include expert's ring, fist ring, toss ring, and energy ring\r\n\r\n- All of the singular check trade quest items are now classified as progression skip balancing. Single game / no progression balancing seeds remain unaffected, but seeds with progression balancing on should no longer have to suffer these items clogging up your progression path. ONLY the items that grant single checks, others that grant 2 or more are unchanged.\r\n\r\n### **Bug Fixes**\r\n\r\n- More logic fixes, hopefully rolling ridge works properly\r\n\r\n- Please rolling ridge work i don't want to look at you anymore\r\n\r\n- Can we get rid of rolling ridge so i don't have to look at it again I'm BEGGING\r\n\r\n- Second inventory screen items now display properly and are removed when used\r\n\r\n- Above change to symmetry city fixes a bug where turning in repaired tuni nut before getting the brother check stopped you from getting it\r\n\r\n- Link's (or applicable player sprite's) gloves now have the grippy rubber on it, you should no longer drop your items offscreen when receiving an item from another game on a screen transition\r\n\r\n- You are no longer expected to do the goron dance in the past for the brother emblem due to the letter of introduction breaking the first graceful goron's sequences. If you reach him before obtaining the letter then you can still get the item from them, but it will be considered out of logic\r\n\r\n- King Zora should hopefully not trap you within his domain expansion while attempting to receive his secret check\r\n\r\n- There is no longer an ambush by a large fish in a room it shouldn't be in",
+      "download_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.0/tloz_ooa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7e8d9a5ca6ef7279b4f3403f01ce22a92489f9c966abd2059dc0d03a71d939f3",
+      "html_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.0.0",
+      "minimum_ap_version": "0.5.1",
+      "size": 456675,
+      "source_url": "https://api.github.com/repos/josephanimate2021/ArchipelagoOoA",
+      "tag": "v1.0.0",
+      "title": "Oracle of Ages Apworld v1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "v1.0.1": {
+      "created_at": "2026-07-13T07:49:08Z",
+      "description": "- Fix crashes when entering mini-boss rooms when mini boss location are enabled (whoopsie)",
+      "download_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.1/tloz_ooa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "65f78ddb9d7047d45e3a1f97a4ef0d7c8cd1ba573c1d18571308e5a9da7550ec",
+      "html_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.0.1",
+      "minimum_ap_version": "0.5.1",
+      "size": 456697,
+      "source_url": "https://api.github.com/repos/josephanimate2021/ArchipelagoOoA",
+      "tag": "v1.0.1",
+      "title": "Oracle of Ages Apworld v1.0.1",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
+    },
+    "v1.0.2": {
+      "created_at": "2026-07-21T17:22:31Z",
+      "description": "(Properly changed the internal apworld version this time. Retro compat should still work)\r\n\r\n* Logic fixes\r\n* Fixed Sea of storm chest wrongly swapped if secrets are enabled\r\n* Fixed master keys not being received properly\r\n* Fix the gasha planted flag being reset upon harvest\r\n* Fix a softlock when trying again the elder goron secret baseball minigame\r\n* Fix the bush chest (Again)",
+      "download_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.2/tloz_ooa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c6be60516accf1dc5b9c8967fc2ab471b03c82d9bee7fa8ad3bb44e1700528e6",
+      "html_url": "https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.0.2",
+      "minimum_ap_version": "0.5.1",
+      "size": 456852,
+      "source_url": "https://api.github.com/repos/josephanimate2021/ArchipelagoOoA",
+      "tag": "v1.0.2",
+      "title": "Oracle of Ages Apworld v1.0.2",
+      "version_simple": "1.0.2",
+      "world_version": "1.0.2"
     }
   }
 }
