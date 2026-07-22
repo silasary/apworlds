@@ -1,7 +1,10 @@
 {
   "description": "Live and drink",
   "game": "Caves of Qud",
-  "github": "https://github.com/lonesurv1vor/CavesOfQudArchipelagoRandomizer",
+  "github": [
+    "https://github.com/lonesurv1vor/CavesOfQudArchipelagoRandomizer",
+    "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer"
+  ],
   "license": null,
   "manifest_fields": [],
   "versions": {
@@ -130,6 +133,76 @@
       "title": "v0.7.0",
       "version_simple": "0.7.0",
       "world_version": "0.7.0"
+    },
+    "v0.7.1": {
+      "created_at": "2025-06-17T20:19:45Z",
+      "description": ".apworld update only. Adds the various Bey Lah side quests to the locations pool.",
+      "download_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/download/v0.7.1/cavesofqud.apworld",
+      "has_manifest": false,
+      "hash_sha256": "0a07d45bf302092d4c5bb54f6a2f3368eb3fdb944b88cb507bdbb8187f97abcf",
+      "html_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/tag/v0.7.1",
+      "size": 8174,
+      "source_url": "https://api.github.com/repos/SabreCat/CavesOfQudArchipelagoRandomizer",
+      "tag": "v0.7.1",
+      "title": "v0.7.1",
+      "version_simple": "0.7.1",
+      "world_version": "0.7.1"
+    },
+    "v0.7.2": {
+      "created_at": "2026-02-15T21:45:54Z",
+      "description": "**Changelog**: https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/compare/v0.7.1...v0.7.2\r\n\r\n* Adds four new locations. Acquiring various lore items guaranteed to spawn in the early game will trigger checks.\r\n  * The sheaf of tattered parchment in the waterlogged passage\r\n  * Corpus Choliys, available from Mayor Nuntu in Kyakukya\r\n  * The sheaf of bloodstained goatskin parchment, found on the way to Mamon Souldrinker's village from Kyakukya\r\n  * The sheet of crumpled paper, found near Eskhind in the vicinity of Bey Lah\r\n* Fixes an issue where items other than preserved foods would not be removed from the player's inventory when delivered to Argyve or the Barathrumite intercom.",
+      "download_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/download/v0.7.2/cavesofqud.apworld",
+      "has_manifest": false,
+      "hash_sha256": "4fd068f1382bee2494046772461e695f8da36c4cfccf440454063ccbe71fefcb",
+      "html_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/tag/v0.7.2",
+      "size": 8276,
+      "source_url": "https://api.github.com/repos/SabreCat/CavesOfQudArchipelagoRandomizer",
+      "tag": "v0.7.2",
+      "title": "v0.7.2",
+      "version_simple": "0.7.2",
+      "world_version": "0.7.2"
+    },
+    "v0.8.0": {
+      "created_at": "2026-03-04T15:46:49Z",
+      "description": "**Changelog**: https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/compare/v0.7.2...v0.8.0\r\n\r\n* Substantial rewrite of Archipelago region logic. Level progression now extends through regions related to quests, rather than the other way around. This is mostly under-the-hood for world generation, except...\r\n* Quest gating revised.\r\n  * There are now fewer blocks during Argyve's quest line, down to 3 from 6.\r\n  * However, locks have been added to some quest steps that lacked them. There are a total of eight AP items needed to complete the Defend Grit Gate goal, and one each for three side quest chains.\r\n  * You no longer receive \"Unlock\" AP items that have no in-game effect.\r\n  * AP items for quests now have flavorful names and bits of dialogue associated with them.\r\n* Added the \"Lost Artifacts\" generation option. If enabled, three locations are added to the pool: the Ruin of House Isner, Stopsvallin, and Kindrish.\r\n* Refactored some AP functionality into a system rather than a part, to head off potential issues with body swapping.",
+      "download_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/download/v0.8.0/cavesofqud.apworld",
+      "has_manifest": false,
+      "hash_sha256": "1031c0137b0b0de056aec14a45ee0ada00717342b10de6c5ed3576d0fa5f146b",
+      "html_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/tag/v0.8.0",
+      "size": 9833,
+      "source_url": "https://api.github.com/repos/SabreCat/CavesOfQudArchipelagoRandomizer",
+      "tag": "v0.8.0",
+      "title": "v0.8.0",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0"
+    },
+    "v0.8.1": {
+      "created_at": "2026-03-31T00:35:27Z",
+      "description": "**Changelog**: https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/compare/v0.8.0...v0.8.1\r\n\r\n* True Kin and Esper character types are now supported.\r\n  * Whether you're playing Mutants or True Kin is a YAML option for the world. You can freely play Esper or non-Esper mutants within the same world.\r\n  * Esper implementation is minimal, granting +1 Ego when normally you'd receive a Rapid Mutation Advancement.\r\n* Main quest unlock items are now progressive.\r\n  * Receiving your first Progressive Main Quest item from the multiworld fulfills Argyve's requirement for an Ancient Knickknack. The second covers the Prime Knickknack, and so on.\r\n* The first time you visit the deliveries list at Argyve or the Barathrumite intercom, you'll scout the locations, revealing what items will be awarded for each delivery.\r\n* One more step in the Bey Lah side quest area grants a check.",
+      "download_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/download/v0.8.1/cavesofqud.apworld",
+      "has_manifest": false,
+      "hash_sha256": "eb46ab3f625c2d66adaef8875a3dd3dcf4a86100e9e34cc76220bc1f538953e5",
+      "html_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/tag/v0.8.1",
+      "size": 10140,
+      "source_url": "https://api.github.com/repos/SabreCat/CavesOfQudArchipelagoRandomizer",
+      "tag": "v0.8.1",
+      "title": "v0.8.1 True Kin, Espers, and Progressive Main Quest",
+      "version_simple": "0.8.1",
+      "world_version": "0.8.1"
+    },
+    "v0.8.2": {
+      "created_at": "2026-07-15T19:18:56Z",
+      "description": "**Changelog**: https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/compare/v0.8.1...v0.8.2\r\n\r\nFixes several issues reported in the Caves of Qud thread on the Archipelago Discord.\r\n\r\n* Clarified in quest dialogue that **Progressive Main Quest** AP items are needed to clear requirements for Weirdwire Fusor, Eschaton Transcoder, etc.\r\n* Flattened item distribution weights--quest locations no longer default to Priority, making CoQ less \"greedy\" in multiworlds.\r\n* Added level gates to side quest unlock items, so they aren't seeded into the multiworld when you're playing a run too short to take advantage of them.\r\n* Adjusted the minimum levels of some locations to line up more sensibly with the levels of different run goals.\r\n* Updated manifest data that had been left out of date vs mod versions--the mods screen in CoQ should now correctly note what version of this mod you're on.\r\n* Removed unneeded files from the mod archive. It's now orders of magnitude smaller!\r\n* README updates:\r\n  * Expanded on known issues with traps.\r\n  * Added an AI disclosure.",
+      "download_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/download/v0.8.2/cavesofqud.apworld",
+      "has_manifest": false,
+      "hash_sha256": "b07bcc5924817164361b9d43d01705476a926a034c9be03fd84e79273fe77b9e",
+      "html_url": "https://github.com/SabreCat/CavesOfQudArchipelagoRandomizer/releases/tag/v0.8.2",
+      "size": 10151,
+      "source_url": "https://api.github.com/repos/SabreCat/CavesOfQudArchipelagoRandomizer",
+      "tag": "v0.8.2",
+      "title": "v0.8.2 Generation and Progression Fixes",
+      "version_simple": "0.8.2",
+      "world_version": "0.8.2"
     }
   }
 }

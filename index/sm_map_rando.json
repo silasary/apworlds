@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "lordlou"
+  ],
+  "game": "Super Metroid Map Rando",
+  "github": "https://github.com/lordlou/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.119.2": {
+      "created_at": "2026-07-19T16:38:52Z",
+      "description": "## What's Changed\r\n* SM Map Rando: Reimplement `extend_hint_information` by @snowflav-goob in https://github.com/lordlou/Archipelago/pull/6\r\n* SM Map Rando: Convert to APProcedurePatch by @snowflav-goob in https://github.com/lordlou/Archipelago/pull/7\r\n* Fixed item marker logic for AP itemsby @snowflav-goob\r\n* Ensure map used for common map seeds is the same by @snowflav-goob\r\n* Downgrade v121 settings to v119 as reasonably as possible by @snowflav-goob\r\n* Common Map Option is now a TextChoice so you can create common map groups\r\n* New Option \"Unique Start Locations\": \r\n    When Common Map is set to a group name and Start Location is set to Random, controls start location uniqueness within the group.\r\n    The integer value sets the maximum number of attempts to achieve unique start locations.\r\n    If attempts are exhausted, generation proceeds as if this option was disabled.\r\n    This setting is ignored if \"common_map\" is Off.\r\n* Big optimization on generation time by caching a highly costly operation\r\n* Fixed possible failure for generations not having any MapRando Worlds (build_app_data is now only called if there's at least one         MapRando player)\r\n* Added archipelago.json to be futureproof\r\n* Added proper github release workflow\r\n\r\n## New Contributors\r\n* @snowflav-goob made their first contribution in https://github.com/lordlou/Archipelago/pull/6",
+      "download_url": "https://github.com/lordlou/Archipelago/releases/download/v0.119.2/sm_map_rando.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bd3f9cd8f415880ed4d481558e0f40eb941e1645ec8be91620a647270c3521c7",
+      "html_url": "https://github.com/lordlou/Archipelago/releases/tag/v0.119.2",
+      "minimum_ap_version": "0.6.6",
+      "prerelease": true,
+      "size": 8195853,
+      "source_url": "https://api.github.com/repos/lordlou/Archipelago",
+      "tag": "v0.119.2",
+      "title": "Super Metroid Map Rando APWorld v0.119.2",
+      "version_simple": "0.119.2",
+      "world_version": "0.119.2"
+    }
+  }
+}

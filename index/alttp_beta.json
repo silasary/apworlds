@@ -1,0 +1,44 @@
+{
+  "authors": [
+    "Berserker"
+  ],
+  "game": "A Link to the Past Beta",
+  "github": "https://github.com/Alchav/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "alttp2026-v1": {
+      "created_at": "2026-06-25T06:50:41Z",
+      "description": "This beta test apworld uses the game name \"A Link to the Past Beta\" and uses .aplttpbeta patch files, and should be usable concurrently with the core A Link to the Past world.\r\n\r\n- No longer needs an A Link to the Past ROM to generate.\r\n- Boss Prize Shuffle: shuffle the Crystals and Pendants into the item pool and open their locations for any item.\r\n- Key Rings option: combine all small keys for dungeons of your choice into a Small Key Ring which grants all the keys for that dungeon. If Key Drop Shuffle is disabled, it grants all keys except for the key drop keys.\r\n- Bosses goal is replaced by Dungeons goal. A separate option allows you to choose how many dungeons must be cleared to make Ganon vulnerable. Setting it to 12 dungeons produces the same result as the old Bosses option.\r\n- Adds option to Randomize Damage Classes. You may swap the effects of each damage source class across enemies (Wizzrobe might inherit Deadrock's vulnerability only to Magic Powder/Quake transformations, etc.), globally swap the effects of each damage class (Fire Rod might have the effect that Ice Rod would have had on each enemy, etc.), do a mixed shuffle that swaps both enemies' damage effects and swap items' effects, do a \"Chaos\" randomization where damage effects are constructed at complete random, or, if you are a masochist, do a \"Nightmare\" option that causes every enemy to have only be killable by one possible damage source class.\r\n- Reading in-game hints automatically adds those hints to the server.\r\n- Vastly improved Enemizer logic. Rooms which require clearing enemies, and enemies that hold key drops, may now allow enemies that have special kill requirements, with proper logic in place for them. Various Enemizer bug fixes such as outdoor escape sequence sprites no longer having glitched graphics.\r\n\r\nExpect things to be very broken, and report your findings!\r\n\r\nHOTFIX: should fix major generation crashes! Hopefully things are slightly less broken now.",
+      "download_url": "https://github.com/Alchav/Archipelago/releases/download/alttp2026-v1/alttp_beta_pre_hotfix.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ce3fa5bee7911ba661a509814d6fa908439378c51dc5a3d9ebc8574d01b177a9",
+      "html_url": "https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v1",
+      "minimum_ap_version": "0.6.6",
+      "size": 557677,
+      "source_url": "https://api.github.com/repos/Alchav/Archipelago",
+      "tag": "alttp2026-v1",
+      "title": "A Link to the Past 2026 Beta, version 1",
+      "version_simple": "6.0.0",
+      "world_version": "6.0.0"
+    },
+    "alttp2026-v3hotfix2": {
+      "created_at": "2026-07-20T00:39:47Z",
+      "description": "  ### New Options\r\n\r\n  - Added Randomize Puzzles option. This randomizes certain rooms'  conditions for doors opening or chests spawning, the positions of some pushable blocks, movable statues, etc., and some other surprises :) - If you encounter a room you can't seem to progress in with Randomize Puzzles enabled, please report it along with your patch file.\r\n  - Added Preserve Melee Damage Classes option. This keeps damage classes used by swords and Hammer unchanged during Damage\r\n    Class Swap, Mixed, and Chaos. It is ignored for Enemy Swap and Nightmare.\r\n  - Added Wallmasters Stay Dead option because I hate Wallmasters so much and I've been testing games on snes9x for Android with no rewind button and touch screen controls and, ugh.\r\n\r\n  ### Interface\r\n\r\n  - Added a pause-menu row showing which of the twelve boss dungeons have been cleared.\r\n  - Crystals 5 and 6 now appear red when boss prize shuffle is enabled.\r\n\r\n  ### Enemy Shuffle\r\n\r\n  - Added stricter sprite graphics compatibility handling and validation, preventing shuffled rooms from receiving\r\n    incompatible sprite graphics groups.\r\n  - Killable Thieves now receive a proper damage table rather than relying on the previous ASM substitution.\r\n  - Improved Standard escape weapon selection when enemy and damage-class randomization are enabled.\r\n\r\n  ### Pot And Dungeon Logic\r\n\r\n  - Expanded Pot Shuffle to include rooms that did not previously have pots shuffled.\r\n  - Corrected several dungeon-key self-lock and fixed key-drop interactions.\r\n  - Improved restrictive dungeon-item placement and retry handling to reduce generation failures.\r\n\r\n  ### Fixes\r\n\r\n  - Fixed boss-room warp-out being interrupted when the boss prize completes a Heart Container.\r\n  - Fixed starting inventories with more than four bottles corrupting bottle storage.\r\n  - Bomb Shop and Sahasrahla hint generation no longer crashes when one or more referenced dungeon prizes are absent.\r\n\r\n### Webhost\r\n  \r\n  - Added a webhost guide explaining damage classes, weapon mappings, special effects, randomized combat behavior, and\r\n    important enemy and boss exceptions. For now you can find it at https://github.com/Alchav/Archipelago/blob/alttp-big-2026-update-beta-test/worlds/alttp_beta/docs/randomize_damage_classes_en.md",
+      "download_url": "https://github.com/Alchav/Archipelago/releases/download/alttp2026-v3hotfix2/alttp_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4098915da424ddb33f18f6b0a506c362916ee8ca6e692de3df10a2a194241a54",
+      "html_url": "https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v3hotfix2",
+      "minimum_ap_version": "0.6.6",
+      "size": 630628,
+      "source_url": "https://api.github.com/repos/Alchav/Archipelago",
+      "tag": "alttp2026-v3hotfix2",
+      "title": "A Link to the Past 2026 Beta, version 3",
+      "version_simple": "6.0.2",
+      "world_version": "6.0.2"
+    }
+  }
+}

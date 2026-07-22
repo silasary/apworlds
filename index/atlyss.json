@@ -1,0 +1,101 @@
+{
+  "authors": [
+    "Azrael0534",
+    "Nichologeam",
+    "Sterlia",
+    "SW_CreeperKing",
+    "Blitz0"
+  ],
+  "flags": [
+    "after_dark"
+  ],
+  "game": "Atlyss",
+  "github": "https://github.com/Blitz0070/ATLYSS-Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.1.0": {
+      "created_at": "2026-05-19T19:50:37Z",
+      "description": "## AtlyssArchipelago (fork) \u2014 first release\r\n\r\n### New\r\n\r\n- **XP speed** \u2014 Choose how fast you level: from `0.5x` up to `8\u00d7`. Default is normal (`1\u00d7`). Affects XP from fights and usual in-game rewards (anything the game treats as normal XP).\r\n- **Boss kill checks** \u2014 Defeating bosses now properly counts as Archipelago checks. **Six** new boss-related checks in total.\r\n\r\n### Changed\r\n\r\n- **When to connect** \u2014 Connect to Archipelago **after** you\u2019ve loaded into the game with your character. You\u2019ll get a warning if you try too early.\r\n- **Save & Quit** \u2014 You\u2019ll be disconnected automatically from the Archipelago server now when you save and quit your character.\r\n- **Chat** \u2014 Archipelago messages show in the normal chat area and stay under important UI (like quest lists) so busy servers don\u2019t cover the whole screen.\r\n- **Achievements (YAML / host options)** \u2014 You can turn achievement checks **on** or **off** when generating the world. **On (default):** in-game achievements count as Archipelago locations (up to about **18**, fewer if you skip some classes). **Off:** those locations aren\u2019t placed and the mod won\u2019t send achievement checks\u2014good for shorter or more boss/quest-focused runs.\r\n- **Password privacy** \u2014 The Archipelago connection password field is masked (hidden characters) like a normal password box.\r\n\r\n### Fixes\r\n\r\n- Boss-related goals now finish when you kill the right boss.\r\n- Items from Archipelago show up in Spike storage correctly.\r\n- Received items in Spike line up in order without weird gaps.\r\n- Shops show stacked copies of the same AP item, with counters so you know how many you can still buy.\r\n- Fixed a wrong item name so **Slimecrust Katars** send correctly (was misspelled before).\r\n\r\n---\r\n\r\n*First release of this fork.*",
+      "download_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.0/atlyss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c227a4e54a288474d929b84d3b483bfe9523d3c495f22afcc72ea6c8223c0c4e",
+      "html_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/tag/v0.1.0",
+      "minimum_ap_version": "0.6.5",
+      "prerelease": true,
+      "size": 34493,
+      "source_url": "https://api.github.com/repos/Blitz0070/ATLYSS-Archipelago",
+      "tag": "v0.1.0",
+      "title": "AtlyssArchipelago v0.1.0 (initial fork release)",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r2"
+    },
+    "v0.1.1": {
+      "created_at": "2026-05-19T19:50:37Z",
+      "description": "### Fixes\r\n\r\n- **Universal Tracker** \u2014 Generating or refreshing the world for tracking should **not be failing** when the game would otherwise treat your main and secondary class as \u201cthe same\u201d during that automated step.\r\n  - **\u201cCan\u2019t generate\u201d / tracker errors** tied to duplicate-looking class defaults during tool-driven generation.\r\n\r\n---\r\n\r\n",
+      "download_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.1/atlyss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a03f3544febe86274c1cec3a47ebdbdbf7a04359dd196ce92acb0365aedfe970",
+      "html_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/tag/v0.1.1",
+      "minimum_ap_version": "0.6.5",
+      "prerelease": true,
+      "size": 17676,
+      "source_url": "https://api.github.com/repos/Blitz0070/ATLYSS-Archipelago",
+      "tag": "v0.1.1",
+      "title": "Atlyss Archipelago (APWorld) \u2014 hotfix: UT generation",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v0.2.0": {
+      "created_at": "2026-06-10T22:37:15Z",
+      "description": "**Requires:** Archipelago **0.6.7+**. Use **apworld and mod both from this same release** \u2014 mismatched versions can will break things.\r\n\r\n- Mod on Thunderstore under blitz0070: [listing](https://thunderstore.io/c/atlyss/p/blitz0070/AtlyssArchipelago/).\r\n\r\n### New\r\n\r\n- Crown speed \u2014 YAML option for crown income from fights and quests (0.5\u00d7\u20138\u00d7). Doesn\u2019t touch shop prices or AP crown items.\r\n- Two progressive portal lines \u2014 Sanctum line + separate Tuul line, instead of one \u201cProgressive Portal\u201d item.\r\n- World logic rebuilt \u2014 quests, portals, shops, bosses. Better seeds, fill, and tracker/spoiler-log support.\r\n- Gated equipment \u2014 gated mode is progressive lines only; unrestricted unchanged.\r\n\r\n### Changed\r\n\r\n- XP speed \u2014 still 0.5\u00d7\u20138\u00d7, but only creeps and quests now, not XP tomes.\r\n- Fewer achievement checks \u2014 nine by default; removed Trout Master, Fashion Sense, Skill Student, and old class-pick ones. Toggle still works like before.\r\n- Nulversa \u2014 three quest checks merged into one.\r\n- Shop Sanity \u2014 can\u2019t buy every shop check right at the start anymore; all shop checks open up on receiving `sanctum_catacombs_f2` so normal mode catacombs.\r\n- Shop counters show 0 when sold out.\r\n\r\n### Fixes\r\n\r\n- Makin\u2019 a Mekspear and other quest routes (including without Crescent Road first).\r\n- Craft quests and wrong Catacombs floors on some quests.\r\n- Gen/fill errors with gated equipment and shop checks.\r\n- Universal Tracker logic export (on top of the v0.1.1 hotfix).\r\n- Altered Vision firing at random times.\r\n- Portals staying wrong after restart.\r\n- \u201cCresent\u201d \u2192 Crescent spelling in logic.\r\n- Misc stability and chat hardening for online play.\r\n\r\n### Known Issues\r\n- Can end up with slight hitch / hiccup when receiving items from server. Will hopefully fix in v0.2.1\r\n---",
+      "download_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.0/atlyss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "67a0d679e3bee189c06238e4fb78696c27c0797f57ee8a7416bb64f862c0d8fd",
+      "html_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/tag/v0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 52000,
+      "source_url": "https://api.github.com/repos/Blitz0070/ATLYSS-Archipelago",
+      "tag": "v0.2.0",
+      "title": "ATLYSS Archipelago \u2014 v0.2.0 (Logic Rework)",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r3"
+    },
+    "v0.2.1": {
+      "created_at": "2026-06-10T23:43:56Z",
+      "description": "**Requires:** Archipelago **0.6.7+**. Modifies only **mod this release** \u2014 Can just download this mod to overwrite last release but APworld is the same as last v0.2.0.\r\n\r\n### Fixes\r\n\r\n- Fixes hitching caused by insane sync on receiving / sending items.",
+      "download_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.1/atlyss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "67a0d679e3bee189c06238e4fb78696c27c0797f57ee8a7416bb64f862c0d8fd",
+      "html_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/tag/v0.2.1",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 52000,
+      "source_url": "https://api.github.com/repos/Blitz0070/ATLYSS-Archipelago",
+      "tag": "v0.2.1",
+      "title": "ATLYSS Archipelago \u2014 v0.2.1 (Hitching Fix)",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r4"
+    },
+    "v0.2.2": {
+      "created_at": "2026-06-18T12:54:40Z",
+      "description": "### Fixes\r\n\r\n- Refactored underlying Mining & Fishing level code to be Rule Builder based\r\n  - Should fix the previous High Mining Level expectations even though don't have Tuul Enclave Portal problem\r\n- Fixed logic for Sapphite Ingots quest; now doesn't over-complicate and just needs pre-requisite Amberite Ingots finished & Tuul Enclave portal route obtained\r\n- Add in missing quests, Cold Shoulder and Blossom of Life as locations.\r\n- Client: Re-fixed Altered Vision detection; was removed by accident due to other achievement removals",
+      "download_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.2/atlyss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "342928b86e269a82eb308a016a80d47ba48c0280a5caca86d1d30b0235ef331f",
+      "html_url": "https://github.com/Blitz0070/ATLYSS-Archipelago/releases/tag/v0.2.2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 57443,
+      "source_url": "https://api.github.com/repos/Blitz0070/ATLYSS-Archipelago",
+      "tag": "v0.2.2",
+      "title": "ATLYSS Archipelago \u2014 v0.2.2",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    }
+  }
+}

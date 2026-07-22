@@ -1,0 +1,77 @@
+{
+  "authors": [
+    "Boi"
+  ],
+  "flags": [
+    "after_dark"
+  ],
+  "game": "Bayonetta",
+  "github": "https://github.com/Boi-027/BayonettaArchipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "main": {
+      "created_at": "2026-07-18T09:51:29Z",
+      "description": "## First release \ud83c\udf89\r\n\r\nThis is the **first build** of the Bayonetta Archipelago Randomizer \u2014 expect\r\nbugs. It's playable, but rough edges are likely, especially in less-tested areas.\r\n\r\nIf you hit something broken or unexpected, please\r\n[open an Issue](../../issues) with as much detail as you can (what you were doing,\r\nwhat happened, and anything from the in-game console). Suggestions are welcome too.\r\n\r\n### Downloads\r\n\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder.\r\n- **`Bayonetta.yaml`** \u2014 place in your Archipelago `Players` folder\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder along side the dinput8.dll (next to `Bayonetta.exe`).\r\n\r\nSee the [README](../../blob/main/README.md) for full setup and troubleshooting.",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/main/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "133b5bf565be434c44125a7225735a28a3e22892f9417772aa52eebe4b696949",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/main",
+      "minimum_ap_version": "0.4.0",
+      "size": 9476,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "main",
+      "title": "1.0 - First Build!",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "v1.1": {
+      "created_at": "2026-07-19T03:12:39Z",
+      "description": "## v1.1\r\n\r\nBug fixes and a tracker upgrade based on player feedback from the first release.\r\n\r\n### Fixed\r\n- **Chapter V Competion Check now requires Beast Within in logic.** Previously the generator\r\n  could consider Chapter V's completion reachable before you had the panther\r\n  transformation needed for its platforming finale. It's now properly gated.\r\n- **Chapter unlocks persist correctly on reconnect** \u2014 unlocked chapters no\r\n  longer carry over incorrectly between sessions.\r\n\r\n### Added\r\n- **Tracker now shows what you can actually do.** A clear \"You have N checks you\r\n  can do right now\" line, so you always know what's actionable.\r\n- **Chapters-in-logic indicator** \u2014 see how many chapters are currently open;\r\n  hover for the full list.\r\n- **Locked chapters are hidden** from the tracker's location list until unlocked,\r\n  while overall progress still counts every check in the game.\r\n- The tracker updates live as you receive chapter unlocks and key techniques.\r\n\r\n### Downloads\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder.\r\n\r\n**Existing seeds keep their original logic** \u2014 the Chapter V fix applies to newly\r\ngenerated seeds only. Grab the updated `.apworld` and regenerate to get it.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues) \u2014 feedback from the\r\nfirst release drove all of these changes.",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.1/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0bcc18c02aea06d8189b789ccb1372ef3fce4ecb180ae6219d715d056648c63f",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.1",
+      "minimum_ap_version": "0.4.0",
+      "size": 9363,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v1.1",
+      "title": "v1.1 - Chapter V logic fix + tracker upgrade",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
+    },
+    "v1.2": {
+      "created_at": "2026-07-21T02:02:53Z",
+      "description": "## v1.2\r\n\r\nMajor client-side overhaul and apworld fixes based on player feedback from v1.1.\r\n\r\n### Added\r\n- **On-Screen Notification System** \u2014 Color-coded popups appear in the top-left\r\n  corner for every event: received items (green), location checks (blue),\r\n  DeathLink events (red), hints (yellow), chapter/verse/Alfheim completions\r\n  (gold/orange). Notifications auto-fade and require no key press \u2014 always\r\n  visible without interfering with gameplay.\r\n- **Shop Auto-Scouting (Gates of Hell)** \u2014 Entering Rodin's shop automatically\r\n  scouts all available shop items without consuming hint points. Displays the\r\n  exact AP item at each shop location with classification: `(Progression)`,\r\n  `(Useful)`, `(Filler)`, or `(Trap)`.\r\n- **Expanded Filler Item Pool** \u2014 Added 7 new halo denominations (1,000 through\r\n  200,000) for more varied filler rewards. Increased consumable and crafting\r\n  ingredient counts per seed.\r\n- **Local Send Logging** \u2014 All location checks and item sends now log in the\r\n  same format as the Archipelago website.\r\n\r\n### Fixed\r\n- **DeathLink no longer triggers false verse completions.** Receiving a\r\n  DeathLink was incorrectly marking the current verse as complete. DeathLink\r\n  kills are now properly isolated from verse and chapter completion detection.\r\n- **Chapter blocking hook no longer breaks scrolling.** The hook was writing to\r\n  memory every frame, breaking mouse wheel scrolling in Load Game, Gates of\r\n  Hell shop, and Chapter Select menus. Now only writes when the chapter limit\r\n  actually changes.\r\n- **Alfheim locations now exist in seeds.** The 21 Alfheim locations were\r\n  missing from region creation, causing every seed to fail item/location count\r\n  checks and discard filler items. All Alfheims now properly receive items.\r\n- **Victory condition now targets Requiem.** The goal was set to Chapter XVI's\r\n  completion, which only required one unlock item. Now correctly points to\r\n  Requiem's completion, requiring all 16 chapter unlocks plus Requiem Unlock.\r\n- **Duplicate location ID 610001 removed.** \"Goal: Complete Requiem\" and\r\n  \"Prologue - Verse 1\" shared the same ID, causing ambiguous client checks.\r\n- **YAML options now actually work.** Include/exclude toggles for weapons,\r\n  techniques, accessories, consumables, crafting, halos, and golden LPs were\r\n  ignored during generation. Pool filtering is now properly wired.\r\n- **Starting Chapter now precollects all earlier unlocks.** The docstring\r\n  promised \"along with all earlier chapters\" but only the chosen chapter's\r\n  unlock was precollected. Fixed to match documented behavior.\r\n- **Victory item no longer shuffled into the pool.** The \"Victory\" item (51999)\r\n  was a progression item that could be found in checks, doing nothing. Now\r\n  properly handled as an event.\r\n- **Honor-system text removed from chapter unlocks** \u2014 the blocking hook\r\n  enforces them directly.\r\n- **Hook install log spam removed** \u2014 `[chblock]` messages no longer clutter\r\n  the console.\r\n\r\nSpecial Thanks to dowlle for the [issue report\ud83d\udc8b](https://github.com/Boi-027/BayonettaArchipelago/issues/3)\r\n\r\n### Improved\r\n- **Notification Safety** \u2014 Notification windows use `NoNav`,\r\n  `NoScrollWithMouse`, `NoScrollbar`, and `NoInputs` flags to prevent any\r\n  interference with game input or menus.\r\n- **`apworld` version bumped to 1.2.0** in `archipelago.json`.\r\n\r\n### Downloads\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to\r\n  `Bayonetta.exe`).\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder.\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder (next to\r\n  `Bayonetta.exe`).\r\n- **Update both files** \u2014 the client and apworld work together for the new\r\n  filler items and shop scouting.\r\n\r\n**Existing seeds keep their original logic** \u2014 apworld fixes apply to newly\r\ngenerated seeds only. Grab the updated `.apworld` and regenerate to get them.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues) \u2014 feedback from the\r\nfirst release drove all of these changes.",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.2/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "945dacbd54d4ac2f8a371d7673996e3a5820f1fc09ffa469d6d5ed7289701027",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.2",
+      "minimum_ap_version": "0.4.0",
+      "size": 9420,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v1.2",
+      "title": "v1.2 - Major client-side overhaul and apworld fixes based on player feedback from v1.1.",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0"
+    },
+    "v1.3": {
+      "created_at": "2026-07-21T23:50:09Z",
+      "description": "## v1.3\r\n\r\nMajor content expansion: all 44 treasure chests are now locations, plus goal options, expanded heart/pearl pools.\r\n\r\n### Added\r\n- **44 Treasure Chest Locations** \u2014 Every Umbra Witches' final resting place is now an AP location (IDs 60301\u201160345). Opening a chest automatically sends the check; the client detects them by polling the lane\u2011flag memory addresses mapped during development.\r\n- **Goal Options** \u2014 Three goal modes available in YAML:\r\n  - `all_chapters` \u2014 Complete all 17 chapters including Requiem\r\n  - `chapter_count` \u2014 Complete a set number of chapters (Requiem can be one)\r\n  - `boss_rush` \u2014 Only the 6 boss chapters + Requiem\r\n  \r\n           - \"Chapter IV: The Cardinal Virtue of Fortitude\",\r\n           - \"Chapter VII: The Cardinal Virtue of Temperance\",\r\n           - \"Chapter XI: The Cardinal Virtue of Justice\",\r\n           - \"Chapter XIII: The Cardinal Virtue of Prudence\",\r\n           - \"Chapter XIV: Isla Del Sol\",\r\n           - \"Chapter XVI: The Lumen Sage\",\r\n           \r\n  - `chapter_count_no_requiem` \u2014 Complete X chapters, Requiem not required\r\n- **`goal_chapter_count` YAML option** \u2014 Sets the target number for count\u2011based goals (range 1\u201117, default 8).\r\n- **`include_chests` YAML option** \u2014 Toggle treasure chest locations on or off (default on).\r\n- **Expanded Heart / Pearl Pool** \u2014 Every seed now includes 40 Broken Witch Hearts and 16 Broken Moon Pearls by default, ensuring full HP and MP progression is always possible.\r\n\r\n### Improved\r\n- **Shutdown Sequence** \u2014 Should close the game properly now and not leave it running in the background after closing it.\r\n- **Goal logic** \u2014 Completion conditions now correctly count collected (checked) locations, so count\u2011based goals trigger as soon as the target is met.\r\n\r\n### Downloads\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder.\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **Update both files** \u2014 the client and apworld work together for the new chest locations and goal options.\r\n\r\n**Existing seeds keep their original logic** \u2014 goal and chest changes apply to newly generated seeds only. Grab the updated `.apworld` and regenerate to get them.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues) \u2014 feedback drives every update.",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.3/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ef92ae180f224888f0f3babe3540c81d2212bef859225a76ee78b812fffacf79",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.3",
+      "minimum_ap_version": "0.4.0",
+      "size": 11745,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v1.3",
+      "title": "v1.3 - Major content expansion: all 44 treasure chests are now locations, plus goal options, expanded heart/pearl pools.",
+      "version_simple": "1.3.0",
+      "world_version": "1.3.0"
+    }
+  }
+}
