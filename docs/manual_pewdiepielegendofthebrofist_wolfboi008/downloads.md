@@ -1,9 +1,12 @@
 # Manual_PewDiePieLegendoftheBrofist_WolfBoi008
 
 ## Latest
-- <a href="https://github.com/WolfBoi008/PewDiePie-Legend-of-the-BroFist/releases/download/1.2.0/manual_pewdiepielegendofthebrofist_wolfboi008.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/WolfBoi008/PewDiePie-Legend-of-the-BroFist/releases/download/1.2.1/manual_pewdiepielegendofthebrofist_wolfboi008.apworld">Latest Version (1.2.1)</a>
 
 ## All Versions
+
+#### v1.2.1
+- <a href="https://github.com/WolfBoi008/PewDiePie-Legend-of-the-BroFist/releases/download/1.2.1/manual_pewdiepielegendofthebrofist_wolfboi008.apworld">https://github.com/WolfBoi008/PewDiePie-Legend-of-the-BroFist/releases/download/1.2.1/manual_pewdiepielegendofthebrofist_wolfboi008.apworld</a>
 
 #### v1.2.0
 - <a href="https://github.com/WolfBoi008/PewDiePie-Legend-of-the-BroFist/releases/download/1.2.0/manual_pewdiepielegendofthebrofist_wolfboi008.apworld">https://github.com/WolfBoi008/PewDiePie-Legend-of-the-BroFist/releases/download/1.2.0/manual_pewdiepielegendofthebrofist_wolfboi008.apworld</a>
