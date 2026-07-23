@@ -1,5 +1,11 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
+-- ----------------------------------------------------------------------------
+-- CONNECTOR VERSION: 2.0.2   <-- must match the Toy Story 2 .apworld release.
+--   If a player reports odd behaviour (e.g. checks sending early), have them
+--   confirm this line. It is also printed in the BizHawk Lua console on load and
+--   again when settings are received, so they can read it back without opening
+--   the file. A mismatch with the current release means their connector is stale.
 -- ============================================================================
 -- This ONE file replaces BOTH old scripts. You no longer load
 -- connector_bizhawk_generic.lua separately - it is bundled at the bottom here.
@@ -18,6 +24,12 @@
 -- ============================================================================
 
 -- === Part 1: Toy Story 2 logic =============================================
+
+-- Single source of truth for the connector release version (see header). Bump this
+-- in lockstep with the .apworld release. Global so it stays in scope across the
+-- Part 1 / Part 2 do...end blocks without consuming a local slot.
+TS2_VERSION = "2.1.0"
+
 do
 -- ============================================================
 -- Toy Story 2: Buzz Lightyear to the Rescue
@@ -161,7 +173,7 @@ local A = {
     LASER_PROG=0x04A636, LASER_SUPER=0x0A15E0, LASER_UI=0x0C2AD1,
     BOSS_HP=0x0C2F1A, PROSP2=0x0C2FB2, PROSP3=0x0C304A,
     NARROW_VIS=0x0A1398, FREEZE=0x0A10A0, INVINCE=0x06D610,
-    DISC=0x0A15C4,
+    DISC=0x0A15C4, GRAPPLE=0x0A1368,
     BUZZ_X=0x0B2188, BUZZ_Y=0x0B2189, BUZZ_HP=0x0B221E,
     BUZZ_POS=0x0B2191, LEVEL_READY=0x0A1044,
     BUZZ_LIVES=0x0B2222, BUZZ_IFRAME=0x0B221C,
@@ -492,6 +504,28 @@ function shuffle(t)
     return s
 end
 
+-- Seed-locked normal-mode music map, written by the client from slot_data.
+-- SHARED_MUSIC_MAP_VALID is 1 once the 22 bytes at SHARED_MUSIC_MAP_BASE hold a
+-- real map (index = natural track id, value = track to play instead).
+-- GLOBAL, not local: the main chunk is at the 200-local ceiling (see header).
+SHARED_MUSIC_MAP_VALID = 0x1FFB00
+SHARED_MUSIC_MAP_BASE  = 0x1FFB01
+
+-- Preferred path: the map was rolled at GENERATION time with the seed's own RNG
+-- and shipped via slot_data, so it is identical on every reconnect. Returns true
+-- once that map has been read in.
+function read_shared_music_map()
+    if mainmemory.read_u8(SHARED_MUSIC_MAP_VALID) ~= 1 then return false end
+    for t = 0, 21 do
+        normal_map[t] = mainmemory.read_u8(SHARED_MUSIC_MAP_BASE + t)
+    end
+    return true
+end
+
+-- Fallback for seeds generated before the map was shipped in slot_data (valid
+-- flag never becomes 1). math.random is not seeded here, so this re-rolls on
+-- every script load -- which is exactly the drift the shared map fixes. Built at
+-- most once per run so the music at least stays stable within a session.
 function build_normal_map()
     local shuffled, has_fp
     repeat
@@ -623,7 +657,15 @@ local GADGETS = {
         hitboxes={{addr=0x0C9D28,uncollected=8},{addr=0x0C9F30,uncollected=8}},
         sizes={}, usability={0x0C7881,0x0C7871} },
     [0x1FF996] = { level=5,
-        containers={{addr=0x19E9CC,uncollected=28},{addr=0x19E9CD,uncollected=243},{addr=0x19E9E4,uncollected=248},{addr=0x19E9E5,uncollected=244},{addr=0x19E9E8,uncollected=150},{addr=0x19E9E9,uncollected=11},{addr=0x19E9EA,uncollected=6},{addr=0x19E9ED,uncollected=16},{addr=0x19E9EE,uncollected=5},{addr=0x19E9F0,uncollected=106},{addr=0x19E9F1,uncollected=244},{addr=0x13AEA6,uncollected=73},{addr=0x13FE73,uncollected=12,collected=16},{addr=0x13FE75,uncollected=12,collected=16},{addr=0x13FE77,uncollected=12,collected=16},{addr=0x19E9F4,uncollected=248},{addr=0x19E9F5,uncollected=244}},
+        -- 0x19E9CC/0x19E9CD were previously listed here too, but they belong to
+        -- Rocket Boots (0x1FF998) -- they are the tail of its contiguous
+        -- 0x19E9BC-0x19E9CD block. Having them in BOTH lists made the two gadgets
+        -- fight over the same bytes: owning Grappling Hook but not Rocket Boots
+        -- meant unlock_gadget wrote 0 over the 28/243 that write_gadget had just
+        -- written, and since these writes are edge-triggered on ownership change,
+        -- whichever ran last (pairs() order is undefined) stuck for the whole
+        -- level visit. Rocket Boots owns them now; do not re-add them here.
+        containers={{addr=0x19E9E4,uncollected=248},{addr=0x19E9E5,uncollected=244},{addr=0x19E9E8,uncollected=150},{addr=0x19E9E9,uncollected=11},{addr=0x19E9EA,uncollected=6},{addr=0x19E9ED,uncollected=16},{addr=0x19E9EE,uncollected=5},{addr=0x19E9F0,uncollected=106},{addr=0x19E9F1,uncollected=244},{addr=0x13AEA6,uncollected=73},{addr=0x13FE73,uncollected=12,collected=16},{addr=0x13FE75,uncollected=12,collected=16},{addr=0x13FE77,uncollected=12,collected=16},{addr=0x19E9F4,uncollected=248},{addr=0x19E9F5,uncollected=244}},
         hitboxes={{addr=0x0C9C58,uncollected=8}},
         sizes={}, usability={0x0C7961} },
     [0x1FF997] = { level=5,
@@ -1572,7 +1614,13 @@ function update_moves()
         mainmemory.write_u32_le(A.LASER_SUPER,LZ.SUPER_VAL)
         -- Laser 3 is the Disc Launcher: show the laser UI while the player has
         -- discs (the count rises on pickup), and hide it again once it hits 0.
-        if mainmemory.read_u8(A.DISC)==0 then
+        -- The Grappling Hook shares this same UI element, so hooks must keep it
+        -- visible too -- otherwise picking up a hook at Laser 3 left the count
+        -- hidden. A.GRAPPLE is a global 1-byte count that reads 0 in levels
+        -- without the hook, so the zero-check alone covers the "only grappling-
+        -- hook levels" case and no per-level gate is needed. (The LASER_LEVEL==0
+        -- branch above already applies the same rule.)
+        if mainmemory.read_u8(A.DISC)==0 and mainmemory.read_u8(A.GRAPPLE)==0 then
             mainmemory.write_u8(A.LASER_UI,0)
         end
     end
@@ -3228,10 +3276,20 @@ function on_level_change(new_level, prev_level)
         local mm=music_mode()
         local mapped
         if mm==1 then
-            -- Build the shuffled map lazily: music_mode isn't known at on_init
-            -- (the client writes settings after the Lua's first frame), so the
-            -- map would otherwise stay empty and no randomization would happen.
-            if not buzz_spawn.nmap then build_normal_map(); buzz_spawn.nmap=true end
+            -- Build the map lazily: music_mode isn't known at on_init (the
+            -- client writes settings after the Lua's first frame), so the map
+            -- would otherwise stay empty and no randomization would happen.
+            -- Keep looking for the seed's shared map until it arrives, and
+            -- adopt it even if we already fell back to a local shuffle. The
+            -- local shuffle itself is only ever built ONCE, so music never
+            -- re-rolls mid-session on old seeds.
+            if not buzz_spawn.nmap_shared then
+                if read_shared_music_map() then
+                    buzz_spawn.nmap_shared=true; buzz_spawn.nmap=true
+                elseif not buzz_spawn.nmap then
+                    build_normal_map(); buzz_spawn.nmap=true
+                end
+            end
             mapped=normal_map[music_natural] or music_natural
         elseif mm==2 then mapped=CHAOS_POOL[math.random(#CHAOS_POOL)]
         elseif mm==3 then mapped=oops_track()
@@ -3399,7 +3457,7 @@ function ts2_main()
         local _gm = mainmemory.read_u8(0x1FF97D)
         if _gm == 0xA0 or _gm == 0xA1 then
             SETTINGS_SEEN = true
-            print("[TS2] Settings received from client — tracking active.")
+            print("[TS2] Settings received from client — tracking active.  (connector v"..TS2_VERSION..")")
         end
     end
     local level   = mainmemory.read_u8(A.LEVEL)
@@ -3608,7 +3666,7 @@ end
 -- ============================================================
 -- START
 -- ============================================================
-print("[TS2] Archipelago combined script loaded!")
+print("[TS2] Archipelago combined script loaded!  (connector v"..TS2_VERSION..")")
 print("[TS2] Waiting for Python client to write settings...")
 event.onframestart(ts2_main,"ts2")
 

@@ -11,10 +11,10 @@
 #### v1.6.0r3
 - <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0-PR3/grinch.apworld">https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0-PR3/grinch.apworld</a>
 
-#### v1.6.0r2r2
+#### v1.6.0r2r2r2
 - <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0/grinch.apworld">https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0/grinch.apworld</a>
 
-#### v1.6.0r2r2r2
+#### v1.6.0r2r2r2r2
 - <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0-PR10/grinch.apworld">https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.0-PR10/grinch.apworld</a>
 
 #### v1.6.0r2
