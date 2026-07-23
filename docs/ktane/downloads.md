@@ -8,6 +8,9 @@
 #### v0.3.0
 - <a href="https://github.com/GreenPower713/Archipelago/releases/download/v0.3.0/ktane.apworld">https://github.com/GreenPower713/Archipelago/releases/download/v0.3.0/ktane.apworld</a>
 
+#### v0.3.0a0
+- <a href="https://github.com/GreenPower713/Archipelago/releases/download/v0.3.0a/ktane.apworld">https://github.com/GreenPower713/Archipelago/releases/download/v0.3.0a/ktane.apworld</a>
+
 #### v0.2.0
 - <a href="https://github.com/GreenPower713/Archipelago/releases/download/v0.2.0/ktane.apworld">https://github.com/GreenPower713/Archipelago/releases/download/v0.2.0/ktane.apworld</a>
 

@@ -1,9 +1,12 @@
 # Crash Team Racing
 
 ## Latest
-- <a href="https://github.com/dowlle/ctr-native-ap/releases/download/v0.1.3/ctr.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/dowlle/ctr-native-ap/releases/download/v0.1.4/ctr.apworld">Latest Version (0.1.4)</a>
 
 ## All Versions
+
+#### v0.1.4
+- <a href="https://github.com/dowlle/ctr-native-ap/releases/download/v0.1.4/ctr.apworld">https://github.com/dowlle/ctr-native-ap/releases/download/v0.1.4/ctr.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/dowlle/ctr-native-ap/releases/download/v0.1.3/ctr.apworld">https://github.com/dowlle/ctr-native-ap/releases/download/v0.1.3/ctr.apworld</a>
