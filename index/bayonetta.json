@@ -7,11 +7,7 @@
   ],
   "game": "Bayonetta",
   "github": "https://github.com/Boi-027/BayonettaArchipelago",
-  "manifest_fields": [
-    "authors",
-    "minimum_ap_version",
-    "world_version"
-  ],
+  "manifest_fields": [],
   "versions": {
     "main": {
       "created_at": "2026-07-18T09:51:29Z",
@@ -102,6 +98,20 @@
       "title": "v1.4.1 - MacGuffin Item Name Change",
       "version_simple": "1.4.1",
       "world_version": "1.4.1"
+    },
+    "v1.5": {
+      "created_at": "2026-07-23T01:09:54Z",
+      "description": "## v1.5\r\n\r\nUmbran Tears, three deadly new traps, optional verse\u2011rank challenges, and a\r\nscroll\u2011locking fix that puts the v1.4 regression to rest.\r\n\r\n### What's New\r\n\r\n**Umbran Tears of Blood \u2014 18 Normal\u2011mode locations**\r\nAll 18 Umbran Tears that can be collected on Normal difficulty are now proper\r\nArchipelago locations, each with its own check. Collecting a crow fires the\r\nlocation check instantly, with the classic red \u201c\u2713 Tear\u201d notification. A new\r\nYAML option, **`include_tears`** (default off), controls them \u2014 they\u2019re opt\u2011in\r\nbecause tears are difficulty\u2011specific and only Normal is mapped right now.\r\nHard and Non\u2011Stop \u221e Climax tears can be added in a future update.\r\n\r\n**Verse Rank (Medal) locations**\r\nEvery single verse now has an optional bonus location that fires when you\r\nachieve the target rank. A new YAML option, **`verse_rank_target`**, lets you\r\nchoose the grade required \u2014 Stone (always on), Bronze, Silver, Gold, Platinum,\r\nor Pure Platinum. Rank locations can hold any item, including progression, so\r\naiming high can gate important items behind skilled play. The in\u2011game Rank\r\nFinder tool (Admin \u2192 Rank Finder) helps you map rank\u2011storage addresses if you\r\nwant to extend it.\r\n\r\n- So now we have a total of 348 Locations to check!\r\n\r\n**Three new traps**\r\nThe mischief pool grows again.\r\n- **Alfheim Curse** \u2014 You can only survive three more hits before being reduced\r\n  to 1 HP. A counter ticks down on\u2011screen with each blow.\r\n- **Berserk** \u2014 Every active enemy instantly becomes enraged.\r\n- **Gracious & Glorious** \u2014 The upgraded claw duo joins the fight. Faster,\r\n  meaner, and definitely not Grace & Glory.\r\n\r\n**Scroll\u2011bar lock fixed**\r\nThe chapter\u2011blocking hook now writes to memory only when the unlock limit\r\nactually changes, instead of every frame. This restores normal mouse\u2011wheel\r\nscrolling in the Load Game, Gates of Hell shop, and Chapter Select menus \u2014\r\nthe lock that crept back in v1.4 is gone.\r\n\r\n### Improvements\r\n\r\n- Tear location IDs now match the six\u2011digit format the apworld uses, so tear\r\n  checks display proper names instead of \u201c? Tear\u201d. (From my Bug tests)\r\n\r\n### Downloads\r\n\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to\r\n  `Bayonetta.exe`).\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder too.\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder\r\n  (replace the old one).\r\n\r\n**Existing seeds keep their original logic** \u2014 tear locations, new traps,\r\nverse\u2011rank challenges, and the scroll fix all apply to freshly generated\r\nseeds. Old seeds will still play fine with the new DLL, but the new content\r\nneeds a regeneration.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues) \u2014 every update is\r\nshaped by player feedback.",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.5/bayonetta.apworld",
+      "has_manifest": false,
+      "hash_sha256": "eadebd29db7053b3447de489e6ad029027cd70bb5c178f9bb771180810333eb7",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.5",
+      "size": 15557,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v1.5",
+      "title": "v1.5 - More Locations and Traps!",
+      "version_simple": "1.5",
+      "world_version": "1.5"
     }
   }
 }
