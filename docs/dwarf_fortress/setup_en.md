@@ -97,11 +97,11 @@ Dwarf Fortress:
 
   # Craftsanity — optional crafting milestone checks
   craftsanity: off                  # off | on | storage
-  craftsanity_item_group: medium    # easy | medium | hard | craftsanity | choose
+  craftsanity_difficulty: medium    # easy | medium | hard | craftsanity | choose
   craftsanity_enable_materials: false  # split checks by material type (Stone Blocks vs Metal Blocks)
   craftsanity_max_amount: 15        # total items to produce per check group
   craftsanity_threshold: 5          # items crafted per individual check
-  # craftsanity_items:              # only used when craftsanity_item_group is 'choose'
+  # craftsanity_items:              # only used when craftsanity_difficulty is 'choose'
   #   - Beds
   #   - Blocks
   #   - Cloth

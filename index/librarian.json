@@ -318,6 +318,21 @@
       "title": "Librarian-AP v1.1.1",
       "version_simple": "1.1.1",
       "world_version": "1.1.1"
+    },
+    "1.1.2": {
+      "created_at": "2026-07-23T23:05:23Z",
+      "description": "## Librarian-AP v1.1.2\r\n\r\nClient-only hotfix on the 1.1.0 line. Fixes save recognition after a crash, and stops a New Game\r\nfrom inheriting the previous run's progress.\r\n\r\n> ### This is a game-files update only\r\n>\r\n> **Keep your existing apworld and seed.** Nothing on the generation side changed \u2014 you do not need\r\n> to regenerate. Just update the game files:\r\n>\r\n> Extract the zip and drop `Librarian/` into your Steam install (overwrite). See `INSTALL.txt`.\r\n> The title screen bottom-right should read `LibAP v1.1.2`.\r\n\r\n### What's fixed\r\n\r\n**Your save is recognised after a crash.** The mod identifies your run by the library's layout. It\r\nused to read where every book currently sat, so a crash that shifted books could make your run fail\r\nits own check and refuse to load. It now reads where each book *belongs*, which a crash doesn't\r\nchange \u2014 so once you're on 1.1.2, a crash can no longer lock you out.\r\n\r\n**New Game no longer inherits the last run's progress.** If you had played before, starting a New\r\nGame could pick up the previous save still in memory \u2014 granting skills that never arrived in game\r\nand sending level-up checks for rows you hadn't completed. A New Game now starts clean.\r\n\r\n### Normal players \u2014 nothing to do\r\n\r\nUpdate the game files and press **Continue** as usual. Your run verifies at load exactly as before,\r\nand quietly upgrades to the new system in the background. No steps, no regeneration.\r\n\r\n### If your run is stuck failing to load (post-crash)\r\n\r\nA run that crashed before this update may still be rejected on the first load. One-time recovery:\r\n\r\n1. Update to 1.1.2 and try **Continue** once (expected to still fail \u2014 that's fine).\r\n2. Open `%LOCALAPPDATA%\\Librarian\\Saved\\LibrarianAP_slots.txt`.\r\n3. Find the line for your run and **delete everything after the comma**, keeping the number before\r\n   it. For example `\u2026=21,3459109785` becomes `\u2026=21`. Save the file.\r\n4. Reconnect and **Continue into that save**.\r\n\r\nYour run is adopted on load and recorded under the new system \u2014 and it won't happen again.\r\n\r\n*(Only the one line for that run changes; leave the rest of the file alone. During that single\r\nrecovery load the mod trusts whatever save you open, so make sure it's the right one.)*\r\n\r\n### If something breaks\r\n\r\nSend `crash_trace.log` (header should read `mod=1.1.2`), the last ~200 lines of `UE4SS.log`, and one\r\nline on what you were doing.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.2/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4ff7f449a555aff73193751a9d454dda6675648a963ff13f24fd3da9e2f95078",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 51209,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.2",
+      "title": "Librarian-AP v1.1.2",
+      "version_simple": "1.1.2",
+      "world_version": "1.1.2"
     }
   }
 }

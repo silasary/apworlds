@@ -2,65 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-23T18:33:55.290065+00:00</updated>
+  <updated>2026-07-24T00:33:34.125330+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.24</id>
-    <title>YARG v0.0.24</title>
-    <updated>2026-07-20T04:54:24+00:00</updated>
-    <author>
-      <name>energymaster22</name>
-    </author>
-    <content># Use Client Version 0.0.5+. No Client Update Required!&#13;
-&#13;
-New:&#13;
-- Support for the Teto Pack 2 Setlist&#13;
-&#13;
-Changes:&#13;
-- Update YARN Request Pack 3&#13;
-&#13;
-## What's Changed&#13;
-* Update YARN Request Pack 3 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/55&#13;
-* Added Teto Pack 2 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/56&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.23...0.0.24</content>
-    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/0.0.24"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Starwort/suikapelago/releases/tag/1.1.2</id>
-    <title>Suikapelago v1.1.2</title>
-    <updated>2026-07-20T09:52:33+00:00</updated>
-    <author>
-      <name>Starwort</name>
-    </author>
-    <content>Feature: UT support (including Yamlless)&#13;
-Fix: off-by-one in Scoresanity requirements, most notably making scores logical when using a starting max fruit size of 1 and therefore not actually being possible&#13;
-&#13;
-Client improvements: Improved the appearance of Blindness Trap (now shows the text 'You are blind!'). Fixed scoresanity requirements not correctly counting towards goal</content>
-    <link href="https://github.com/Starwort/suikapelago/releases/tag/1.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/NyanMC/build-a-jetpack/releases/tag/0.2.0</id>
-    <title>Build a Jetpack v0.2.0</title>
-    <updated>2026-07-20T10:58:35+00:00</updated>
-    <author>
-      <name>ChromaNyan</name>
-    </author>
-    <content>Tweaked logic slightly: logic now expects deeper sea layers for locations which require 5 or more rocks or gold.&#13;
-&#13;
-Added two new options:&#13;
-&#13;
-harsh_pressure: Makes high pressure zones drain your air far more rapidly. "High pressure zones" are layers two or more levels deeper than your diving suit level.&#13;
-&#13;
-death_link: Drowning will kill everyone else who enabled death link. When someone else who enabled death link dies, you will drown instantly. Drowning above water looks a bit funny, won't fix&#13;
-&#13;
-The client should be backwards compatible with the 0.1.0 apworld, but this was not tested thoroughly. If you encounter problems, use the client.zip provided in an old release.</content>
-    <link href="https://github.com/NyanMC/build-a-jetpack/releases/tag/0.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v6</id>
     <title>Pokemon BW Extra Logic Plugin v1.6.0</title>
@@ -930,7 +876,7 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0</id>
-    <title>The Grinch v1.6.0r2r2r2r2r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2r2r2r2r2</title>
     <updated>2026-07-22T01:54:25+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1468,5 +1414,136 @@ source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/f
 &#13;
 - Updated Logic: Changes to Regions (no real Gameplay changes, just better for UT)</content>
     <link href="https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.11.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.3.0</id>
+    <title>Dwarf Fortress v1.3.0</title>
+    <updated>2026-07-23T19:38:41+00:00</updated>
+    <author>
+      <name>Dwarfipelago Contributors</name>
+    </author>
+    <content>## New Features&#13;
+&#13;
+### Custom Caves&#13;
+Carved into the solid rock between your cavern layers, invisible on the map until a dwarf walks into one.&#13;
+&#13;
+- Up to six pockets carved at world gen (two per inter-cavern gap), shaped as organic ovals and stocked with **real DF items** at generation time&#13;
+- **Treasure caves** &amp; **Trap caves** &#13;
+- **Cave Map Fragment** items reveal the next cave's location - a coordinate hint for treasure caves, a directional warning for trap caves&#13;
+- Two always-present **secret caves**: Not sure when these were implimented... We've heard that one is close to the surface and the other is a deep loss to the fort...&#13;
+&#13;
+### Room, Temple &amp; Guildhall Milestones&#13;
+Full set of fortress building/zone milestones.&#13;
+&#13;
+- Each room type designated (bedroom, office, dining hall, tomb)&#13;
+- **Per-room quality tiers** - Decent, Fine, Great, Grand, Royal for each room type&#13;
+- **Temple tiers** (Shrine, Temple, Temple Complex) and **guildhall tiers** (Guildhall, Grand Guildhall), read from DF's own location value/tier&#13;
+- All of it surfaced on a new **Rooms** section in the panel's Progress tab&#13;
+&#13;
+### Dwarfsanity Goal&#13;
+A new win condition: collect **every workshop blueprint and every crafting permit** in the pool (requires Crafting Permits enabled).&#13;
+&#13;
+### Craftsanity for Every Item + In-Workshop Overlay&#13;
+&#13;
+- Craftsanity expanded to cover (nearly) every craftable item, with a permits-for-all mode and many new item types (metal crafter goods, full clothing and footwear coverage, and more)&#13;
+- A **Craftsanity overlay** marks the workshop task list and work-order picker so you can see at a glance which crafts still owe a check&#13;
+&#13;
+### Skillsanity: Combat Skills&#13;
+Combat skills are now Skillsanity checks alongside labor skills, with a Skills tab display and their own combat skill-group / selection options.&#13;
+&#13;
+### Re-embark Recovery&#13;
+Lose a fort and start a new one on the same slot without losing progress.&#13;
+&#13;
+- Previously received items are re-delivered to the new fort's depot&#13;
+- Delivery is **throttled** (~100 items per poll) so a large history can't flood the game, and **resumes** cleanly if interrupted mid-recovery&#13;
+- Migrants arrive as one consolidated wave, and incoming traps are skipped so a fresh fort isn't immediately overrun&#13;
+&#13;
+### Reworked Traps&#13;
+Flavorless "nothing" traps replaced with ones that actually do something.&#13;
+&#13;
+- **Goblin Saboteurs** - goblins slip in and wreck a workshop. *What were they looking for?*&#13;
+- **Ensnaring Webs** - every citizen is caught in cave-spider webbing. *Dwarf is Stuck!*&#13;
+- **Unquenchable Thirst** - the whole fort is struck by a powerful thirst and rushes to drink. *Working up a pretty mighty thirst...*&#13;
+- **Order Sabotage** - every current manager work order is wiped. *Surely, you remember what you had queued?*&#13;
+&#13;
+### Exclude Difficult Checks&#13;
+Three new YAML toggles that keep progression items out of the hardest end-game checks (they hold filler only), so no partner's run is gated behind a Dwarf Fortress milestone you may never reach.&#13;
+&#13;
+- `exclude_deep_endgame_checks` - Reached the Magma Sea, Welcome to the Circus, Mined Adamantine&#13;
+- `exclude_top_room_checks` - the Grand/Royal room tiers, Temple Complex, Grand Guildhall&#13;
+- `exclude_top_fortress_checks` - City &amp; Metropolis Established, Duke Appointed, Monarch Takes Residence&#13;
+&#13;
+### Additional Items &amp; Tools&#13;
+- **Raw Adamantine** (pre-smelting boulder) received items and adamantine detection for the Mined Adamantine check&#13;
+- **Stone Slab** filler item - blank memorial slabs to engrave and build, laying ghosts to rest when caskets are permit-locked&#13;
+&#13;
+## Improvements&#13;
+- **Themed sieges (Slay Megabeast)**: roaming warbands are now coherent per-civilisation sieges - **goblin, human, elf, or night-creature** hosts - that ramp toward real siege scale with a crossbow contingent, monster escorts, and an elite commander.&#13;
+- **Defense-aware siege scaling**: wave size now scales (capped at 2×) with your fort's defenses - trap density and standing-army size - so a turtled fort still gets a real fight.&#13;
+- **Merchant's Shop options**: added an on/off toggle and a shop price multiplier, and shop prices are now banded by Merchant's Coffer tier (ceiling raised to 100k).&#13;
+- **Legendary Wealth goal** now tracks **lifetime** coins minted + gems cut (a stable running total) instead of a live treasury scan that dropped when you spent.&#13;
+- **Panel expansion**: infrastructure, biology, endgame, military, titles, and per-room quality readouts; a Permits tab and a Caves tab; a wider layout and larger shop-name field.&#13;
+- **Room milestones cascade** on a tier jump - building straight to a high tier now also fires the lower ones (the Shrine check is monotonic with Temple / Temple Complex).&#13;
+- **Performance Improvements**: This might have just been a Kicka issue. If anyone encounters any performance issues, PLEASE notify Kicka or post an issue on Github&#13;
+- **Docs**: README restructured into four top-level groups; Skillsanity, Merchant's Shop, Progressive Mining Depth, and definitive per-goal completion requirements all documented.&#13;
+&#13;
+## Fixes&#13;
+- **DeathLink never sending**: citizen deaths are now counted via a `was_citizen()` helper - `isCitizen()` returns false for dead units.&#13;
+- **Mined Adamantine false-fired** on receiving the adamantine Artifact Weapon, Artifact Armor, or Master Builder's Codex - those no longer count as mining adamantine.&#13;
+- **Persistent-storage pollution**: craft counts are now stored only for items that actually have a craftsanity check this seed.&#13;
+- **`military_training` unlock max** corrected (4 to 10) so the Unlocks panel shows the right total.&#13;
+- **Gem treasury value**, **magma-sea breach detection**, and the **cavern mining buffer** (+2 z-levels) corrected.&#13;
+- **Trade depot** no longer clears your starting items when a placement candidate fails.&#13;
+- **Glass liquid containers** are gated behind glass, and **ceramic** craft work orders are now counted.&#13;
+- **Assorted craftsanity / skillsanity logic-rule fixes**&#13;
+&#13;
+## Upgrade Notes&#13;
+&#13;
+- Update the **mod and the apworld together** to 1.3 - versions are match-checked.&#13;
+- **Regeneration is required**: the location and item set changed (room/cave/skill checks, new options), so existing seeds are not compatible.&#13;
+&#13;
+</content>
+    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.2</id>
+    <title>Xenoblade X v0.2.2</title>
+    <updated>2026-07-23T21:09:39+00:00</updated>
+    <author>
+      <name>Maragon</name>
+    </author>
+    <author>
+      <name>Nina</name>
+    </author>
+    <content>- Fix `KEY: Blade License` not setting division on 1.0.2U</content>
+    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.19a</id>
+    <title>Deep Rock Galactic v0.19.0</title>
+    <updated>2026-07-23T21:11:46+00:00</updated>
+    <author>
+      <name>SipcoGamingGuild</name>
+    </author>
+    <author>
+      <name>Taz</name>
+    </author>
+    <content>** Large Overhaul 0.19 (May Be Incompatible with all Previous Versions)**&#13;
+&#13;
+- Added Gauntlet [short] goal mode&#13;
+- Completely reworked item generation to allow large range of low and high item and location counts&#13;
+- Added Linux Fix from SpaceCat-Chan&#13;
+- Added fix for client window crash when Goal was reached&#13;
+- Fixed some trap bugs&#13;
+- Fixed some UI bugs&#13;
+- Fixed some debug bugs&#13;
+- Minor code rewrites and comments for clarity&#13;
+&#13;
+**INFO FILES (Sideloader must be used with the .pak file for PreRelease Builds)**&#13;
+ [INSTRUCTIONS](https://docs.google.com/document/d/16At-2kS_azJRf9PdUcZeA8Esfoh6kNm2dWVWy8u8wA0/edit?usp=sharing)&#13;
+ [MOD on MOD.IO](https://mod.io/g/drg/m/test-archipelago-integration#description)&#13;
+ [SIDELOADER for DRG Mods](https://github.com/trumank/mint)&#13;
+ Mod file now included in releases for mint users.</content>
+    <link href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.19a"/>
   </entry>
 </feed>
