@@ -2,134 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-24T06:56:48.856562+00:00</updated>
+  <updated>2026-07-24T12:38:50.034525+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.2</id>
-    <title>Bayonetta v1.2.0</title>
-    <updated>2026-07-21T02:02:53+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v1.2&#13;
-&#13;
-Major client-side overhaul and apworld fixes based on player feedback from v1.1.&#13;
-&#13;
-### Added&#13;
-- **On-Screen Notification System** — Color-coded popups appear in the top-left&#13;
-  corner for every event: received items (green), location checks (blue),&#13;
-  DeathLink events (red), hints (yellow), chapter/verse/Alfheim completions&#13;
-  (gold/orange). Notifications auto-fade and require no key press — always&#13;
-  visible without interfering with gameplay.&#13;
-- **Shop Auto-Scouting (Gates of Hell)** — Entering Rodin's shop automatically&#13;
-  scouts all available shop items without consuming hint points. Displays the&#13;
-  exact AP item at each shop location with classification: `(Progression)`,&#13;
-  `(Useful)`, `(Filler)`, or `(Trap)`.&#13;
-- **Expanded Filler Item Pool** — Added 7 new halo denominations (1,000 through&#13;
-  200,000) for more varied filler rewards. Increased consumable and crafting&#13;
-  ingredient counts per seed.&#13;
-- **Local Send Logging** — All location checks and item sends now log in the&#13;
-  same format as the Archipelago website.&#13;
-&#13;
-### Fixed&#13;
-- **DeathLink no longer triggers false verse completions.** Receiving a&#13;
-  DeathLink was incorrectly marking the current verse as complete. DeathLink&#13;
-  kills are now properly isolated from verse and chapter completion detection.&#13;
-- **Chapter blocking hook no longer breaks scrolling.** The hook was writing to&#13;
-  memory every frame, breaking mouse wheel scrolling in Load Game, Gates of&#13;
-  Hell shop, and Chapter Select menus. Now only writes when the chapter limit&#13;
-  actually changes.&#13;
-- **Alfheim locations now exist in seeds.** The 21 Alfheim locations were&#13;
-  missing from region creation, causing every seed to fail item/location count&#13;
-  checks and discard filler items. All Alfheims now properly receive items.&#13;
-- **Victory condition now targets Requiem.** The goal was set to Chapter XVI's&#13;
-  completion, which only required one unlock item. Now correctly points to&#13;
-  Requiem's completion, requiring all 16 chapter unlocks plus Requiem Unlock.&#13;
-- **Duplicate location ID 610001 removed.** "Goal: Complete Requiem" and&#13;
-  "Prologue - Verse 1" shared the same ID, causing ambiguous client checks.&#13;
-- **YAML options now actually work.** Include/exclude toggles for weapons,&#13;
-  techniques, accessories, consumables, crafting, halos, and golden LPs were&#13;
-  ignored during generation. Pool filtering is now properly wired.&#13;
-- **Starting Chapter now precollects all earlier unlocks.** The docstring&#13;
-  promised "along with all earlier chapters" but only the chosen chapter's&#13;
-  unlock was precollected. Fixed to match documented behavior.&#13;
-- **Victory item no longer shuffled into the pool.** The "Victory" item (51999)&#13;
-  was a progression item that could be found in checks, doing nothing. Now&#13;
-  properly handled as an event.&#13;
-- **Honor-system text removed from chapter unlocks** — the blocking hook&#13;
-  enforces them directly.&#13;
-- **Hook install log spam removed** — `[chblock]` messages no longer clutter&#13;
-  the console.&#13;
-&#13;
-Special Thanks to dowlle for the [issue report💋](https://github.com/Boi-027/BayonettaArchipelago/issues/3)&#13;
-&#13;
-### Improved&#13;
-- **Notification Safety** — Notification windows use `NoNav`,&#13;
-  `NoScrollWithMouse`, `NoScrollbar`, and `NoInputs` flags to prevent any&#13;
-  interference with game input or menus.&#13;
-- **`apworld` version bumped to 1.2.0** in `archipelago.json`.&#13;
-&#13;
-### Downloads&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to&#13;
-  `Bayonetta.exe`).&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder.&#13;
-- **`z.dll`** — place in your Bayonetta game folder (next to&#13;
-  `Bayonetta.exe`).&#13;
-- **Update both files** — the client and apworld work together for the new&#13;
-  filler items and shop scouting.&#13;
-&#13;
-**Existing seeds keep their original logic** — apworld fixes apply to newly&#13;
-generated seeds only. Grab the updated `.apworld` and regenerate to get them.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues) — feedback from the&#13;
-first release drove all of these changes.</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.1.0</id>
-    <title>pokemon_snap v0.1.0</title>
-    <updated>2026-07-21T02:24:48+00:00</updated>
-    <author>
-      <name>nielrenned</name>
-    </author>
-    <content>## What's Changed&#13;
-* Add "Wonderful!" and "Same Pokemon" checks&#13;
-* Split Bulbasaur, Pikachu, Magikarp, and Zubat into multiple checks, one for each course they're in&#13;
-&#13;
-**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.0.1...v0.1.0</content>
-    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.1.1</id>
-    <title>pokemon_snap v0.1.1</title>
-    <updated>2026-07-21T02:30:01+00:00</updated>
-    <author>
-      <name>nielrenned</name>
-    </author>
-    <content>## What's Changed&#13;
-* Fix bad function call&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.1.0...v0.1.1</content>
-    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.2.0</id>
-    <title>pokemon_snap v0.2.0</title>
-    <updated>2026-07-21T03:34:12+00:00</updated>
-    <author>
-      <name>nielrenned</name>
-    </author>
-    <content>## What's Changed&#13;
-* Special poses added as locations&#13;
-* River/Cave unlock bug fixed&#13;
-&#13;
-**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.1.1...v0.2.0</content>
-    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/BootsinSoots/Archipelago/releases/tag/V0.6.3</id>
     <title>Luigi's Mansion v0.6.3</title>
@@ -1197,6 +1074,18 @@ new stuff (since 0.5.4):&#13;
     <link href="https://github.com/GreenPower713/Archipelago/releases/tag/v0.3.0a"/>
   </entry>
   <entry>
+    <id>https://github.com/GreenPower713/Archipelago/releases/tag/v0.3.0b</id>
+    <title>Keep Talking and Nobody Explodes v0.3.0b0</title>
+    <updated>2026-07-23T07:03:32+00:00</updated>
+    <author>
+      <name>GreenPower713</name>
+    </author>
+    <content>Changelog:&#13;
+&#13;
+- Fix a bug where a misplaced parenthesis would create an error</content>
+    <link href="https://github.com/GreenPower713/Archipelago/releases/tag/v0.3.0b"/>
+  </entry>
+  <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.4</id>
     <title>Crash Team Racing v0.1.4</title>
     <updated>2026-07-23T08:53:44+00:00</updated>
@@ -1511,5 +1400,51 @@ setup instructions on the home page and [readme](https://github.com/EdricY/Bounc
 new stuff (since 0.5.4):&#13;
 - fix UT connection issue (hopefully)</content>
     <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-89"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v2.0</id>
+    <title>Brutal Orchestra v1.0.0r2</title>
+    <updated>2026-07-24T07:03:13+00:00</updated>
+    <author>
+      <name>DeadEye</name>
+    </author>
+    <content>Introduce you new features&#13;
+&#13;
+1) 2 more Goal types. For amount of pearls and for achievement Brutal Orchestra (this one is for asyncs)&#13;
+2) Ability sanity. Every character have only 1 slot with random ability (3 from this character + slap) and Progressive Ability add a slot to character (For this to work you must have 50+ additional locations via Bittle, Chests or Shop)&#13;
+&#13;
+Small QoL&#13;
+&#13;
+1) Autoscroll and working Enter for chat. F1 can hide chat&#13;
+&#13;
+Fixes&#13;
+&#13;
+1) Garden Shop deleted (my mistake, forgot that there is no shop in garden)&#13;
+2) Every item is should work now&#13;
+&#13;
+Problems &#13;
+&#13;
+1) Still require start a run before connecting </content>
+    <link href="https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-91</id>
+    <title>Borderlands 2 v91</title>
+    <updated>2026-07-24T07:13:54+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.4):&#13;
+- fix UT connection issue (hopefully)&#13;
+- infinite backpack as yaml setting&#13;
+- AP travels in fast travel menu </content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-91"/>
   </entry>
 </feed>
