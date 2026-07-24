@@ -7,7 +7,11 @@
   ],
   "game": "Bayonetta",
   "github": "https://github.com/Boi-027/BayonettaArchipelago",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "main": {
       "created_at": "2026-07-18T09:51:29Z",
@@ -126,6 +130,21 @@
       "title": "v1.6 - Added Witch Time and Trap Control!",
       "version_simple": "1.6",
       "world_version": "1.6"
+    },
+    "v1.6.5": {
+      "created_at": "2026-07-24T06:55:09Z",
+      "description": "## v1.6.5\r\n\r\nAlfheim overlay tracking, an expanded \"Alfheims\" location group for easier YAML filtering, and robust crash fixes that put title screen and item tab regressions to rest.\r\n\r\n### What's New\r\n\r\n**Alfheim Overlay Tracking**\r\nThe in-game tracker now features complete support for tracking Alfheim portal completions. Alfheims are now cleanly nested directly inside their respective chapters alongside normal verses and chests.\r\n\r\n**Expanded \"Alfheims\" Location Group**\r\nThe server-side `apworld` location group has been extended so that `\"Alfheims\"` now properly bundles all related checks together\u2014spanning portals, verse clears, and verse ranks. This makes it effortless for runners to exclude or prioritize Alfheim trials with a single YAML entry.\r\n\r\n### Bug Fixes & Stability\r\n\r\n**Title Screen Crash Fix**\r\nAdded robust safety locks (`Stage <= 0`) across health and memory functions to completely prevent crashes and access violations during the 30-second title screen connection phase.\r\n\r\n**Item Tab UI Fix**\r\nRemoved unsafe inventory memory writes that were blanking out the item tab. Full items now auto-consume correctly via native game logic without breaking the UI renderer.\r\n\r\n**Amnesia Trap Iterator Fix**\r\nFixed an unsafe iterator invalidation bug in `ProcessTrapTimers` using safe post-increment erasing, preventing rare crashes when an Amnesia Trap expires.\r\n\r\n**Compiler & Linker Alignment**\r\nRealigned `g_apWitchTimeLocked` to match `volatile bool` across header and source files, clearing up unresolved external symbols (`LNK2001`).\r\n\r\n### Downloads\r\n\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder too.\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder (replace the old one).\r\n\r\n**Existing seeds keep their original logic** \u2014 location groups, overlay tracking, and crash fixes apply to freshly generated seeds. Old seeds will still play fine with the new DLL, but updated server-side world rules require a regeneration.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues) \u2014 every update is shaped by player feedback.",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.6.5/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1bded60583abfbae0d0b3fa7892982735da2d300b4292f5275498ee535bee2dc",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6.5",
+      "minimum_ap_version": "0.4.0",
+      "size": 16783,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v1.6.5",
+      "title": "v1.6.5 - Tracker Changes and Bug Fixes",
+      "version_simple": "1.6.5",
+      "world_version": "1.6.5"
     }
   }
 }

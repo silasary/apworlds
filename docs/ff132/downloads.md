@@ -1,9 +1,15 @@
 # Final Fantasy XIII-2
 
 ## Latest
-- <a href="https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.1.1/ff132.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.1.3/ff132.apworld">Latest Version (0.1.3)</a>
 
 ## All Versions
+
+#### v0.1.3
+- <a href="https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.1.3/ff132.apworld">https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.1.3/ff132.apworld</a>
+
+#### v0.1.2
+- <a href="https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.1.2/ff132.apworld">https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.1.2/ff132.apworld</a>
 
 #### v0.1.1
 - <a href="https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.1.1/ff132.apworld">https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.1.1/ff132.apworld</a>
