@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 2.0.2   <-- must match the Toy Story 2 .apworld release.
+-- CONNECTOR VERSION: 2.1.1   <-- must match the Toy Story 2 .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "2.1.0"
+TS2_VERSION = "2.1.1"
 
 do
 -- ============================================================
@@ -173,7 +173,7 @@ local A = {
     LASER_PROG=0x04A636, LASER_SUPER=0x0A15E0, LASER_UI=0x0C2AD1,
     BOSS_HP=0x0C2F1A, PROSP2=0x0C2FB2, PROSP3=0x0C304A,
     NARROW_VIS=0x0A1398, FREEZE=0x0A10A0, INVINCE=0x06D610,
-    DISC=0x0A15C4, GRAPPLE=0x0A1368,
+    DISC=0x0A15C4, GRAPPLE=0x0A1368, PAUSE=0x0A10F4,
     BUZZ_X=0x0B2188, BUZZ_Y=0x0B2189, BUZZ_HP=0x0B221E,
     BUZZ_POS=0x0B2191, LEVEL_READY=0x0A1044,
     BUZZ_LIVES=0x0B2222, BUZZ_IFRAME=0x0B221C,
@@ -390,6 +390,16 @@ local push_restored  = false
 local rope_restored  = false
 local visor_restored = false
 local dbljump_restored = false
+
+-- Double-jump input suppression state. GLOBAL, not local: the main chunk is at
+-- the 200-local ceiling (see header), so new module state must not be a local.
+DJ_SUPPRESSING = false   -- currently killing an in-air jump press
+DJ_PAD_PREV    = false   -- real controller X last frame (for edge detection)
+DJ_LATCHED     = false   -- debounced "airborne" latch
+DJ_GROUND_RUN  = 0       -- consecutive frames the jump state has read grounded
+DJ_PREV_PAUSED = false   -- pause menu was open last frame
+DJ_X_AT_PAUSE  = false   -- was X already held when the pause menu opened?
+DJ_GROUND_HOLD = 6       -- grounded frames required to clear the latch
 local stomp_nudged   = false
 local circle_was_up  = true
 
@@ -1311,6 +1321,23 @@ function block_x(input)
     mainmemory.write_u8(A.INPUT, input | 0x40)
 end
 
+function dj_pad_x()
+    -- Read the REAL controller, not A.INPUT. A.INPUT is the byte we overwrite to
+    -- block the jump, so detecting the press edge from it would see our own
+    -- writes and a second tap would never look "new". Core-agnostic scan, the
+    -- same approach select_is_pressed() uses. Falls back to the RAM byte if the
+    -- joypad table is unavailable.
+    local ok, pad = pcall(joypad.get)
+    if ok and type(pad) == "table" then
+        for name, val in pairs(pad) do
+            if type(name) == "string" and name:find("Cross") then
+                return val and true or false
+            end
+        end
+    end
+    return is_x_pressed(mainmemory.read_u8(A.INPUT))
+end
+
 function check_token_collection(level_id,hover_id)
     local addr=TOKEN_ADDR[hover_id]; if not addr then return end
     local value=mainmemory.read_u8(addr); if value==0 then return end
@@ -1700,16 +1727,71 @@ function update_moves()
     end
 
     -- Double jump
+    --
+    -- 0x049A04 is `lh $v0, 0x8E($s0)` -- a LOAD, not a branch. NOPing it (the old
+    -- approach) disabled nothing; it just left a stale value in $v0, so whatever
+    -- test followed ran on leftovers. That worked most of the time and leaked
+    -- whenever timing or a different code path left a different value there,
+    -- which is why mashing the jump button, or jumping near angled geometry,
+    -- still produced a second jump. The instruction is now left intact.
+    --
+    -- The move is blocked at the INPUT instead, and only for a jump press that
+    -- BEGINS in mid-air. That matters on three counts:
+    --   * a press carried over from the ground is never touched, so the normal
+    --     variable-height jump is unaffected. Holding X released for the whole
+    --     airborne period reads as "player let go" and gives a short hop.
+    --   * the jump state is never forced. Writing 0x0B2214 back to 0 was the
+    --     original approach and it also cancelled Stomp's mid-air launch.
+    --   * while the pause menu is open nothing is suppressed, so menu input works
+    --     normally. A press made INSIDE the menu is then swallowed on resume,
+    --     because by then it is only "held" and has no rising edge left to catch.
     if not HAS_DBL_JUMP then
-        -- Patch out the double-jump instruction itself. This is the actual code
-        -- that performs the mid-air second jump (both the X and L1 exploit), so
-        -- NOPing it kills it at the source — no input/state suppression needed.
-        -- (The old approach forced jump-state 0x0B2214 back to 0, which also
-        -- cancelled Stomp's mid-air launch; this instruction patch avoids that.)
-        -- 0x049A04: uncollected=NOP (0x00000000), collected=0x8602008E.
-        mainmemory.write_u32_le(0x049A04,0x00000000)
-        dbljump_restored=false
-    elseif not dbljump_restored then
+        local dj_air = jump ~= 0
+        local dj_pad = dj_pad_x()
+
+        -- Debounced airborne latch. The raw jump state can flick back to 0 for a
+        -- frame on sloped ground, which was one of the ways a second jump slipped
+        -- through; the latch only clears after DJ_GROUND_HOLD consecutive
+        -- grounded frames, so a one-frame flicker cannot reopen the window.
+        if dj_air then DJ_GROUND_RUN = 0 else DJ_GROUND_RUN = DJ_GROUND_RUN + 1 end
+        if dj_air then DJ_LATCHED = true
+        elseif DJ_GROUND_RUN >= DJ_GROUND_HOLD then DJ_LATCHED = false end
+
+        if mainmemory.read_u8(A.PAUSE) ~= 0 then
+            -- Paused. Record whether X was ALREADY held when the menu opened, so
+            -- a press carried in from before the pause is not mistaken for a menu
+            -- press on resume. Let all menu input through untouched.
+            if not DJ_PREV_PAUSED then DJ_X_AT_PAUSE = dj_pad end
+            DJ_SUPPRESSING = false
+            DJ_PREV_PAUSED = true
+        else
+            if DJ_PREV_PAUSED and dj_pad and (not DJ_X_AT_PAUSE)
+               and (dj_air or DJ_LATCHED) then
+                DJ_SUPPRESSING = true      -- X pressed in the menu, still held
+            end
+            DJ_PREV_PAUSED = false
+            if dj_pad and (not DJ_PAD_PREV) and (dj_air or DJ_LATCHED) then
+                DJ_SUPPRESSING = true      -- fresh press that began in mid-air
+            end
+            if not dj_pad then DJ_SUPPRESSING = false end
+            if DJ_SUPPRESSING then
+                -- Re-read: earlier blocks this frame may have written A.INPUT.
+                local dj_in = mainmemory.read_u8(A.INPUT)
+                if (dj_in & 0x40) == 0 then
+                    mainmemory.write_u8(A.INPUT, dj_in | 0x40)
+                end
+            end
+        end
+        DJ_PAD_PREV = dj_pad
+    else
+        DJ_SUPPRESSING = false; DJ_PAD_PREV = false; DJ_LATCHED = false
+        DJ_GROUND_RUN = 0; DJ_PREV_PAUSED = false; DJ_X_AT_PAUSE = false
+    end
+
+    -- The old NOP is gone, so make sure the real instruction is in place. This
+    -- also repairs it if an older build of this script NOPed it earlier in the
+    -- same session.
+    if not dbljump_restored then
         mainmemory.write_u32_le(0x049A04,0x8602008E)
         dbljump_restored=true
     end

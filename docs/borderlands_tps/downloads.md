@@ -1,9 +1,12 @@
 # Borderlands The Pre-Sequel
 
 ## Latest
-- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-88/borderlands_tps.apworld">Latest Version (88)</a>
+- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-89/borderlands_tps.apworld">Latest Version (89)</a>
 
 ## All Versions
+
+#### v89
+- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-89/borderlands_tps.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-89/borderlands_tps.apworld</a>
 
 #### v88
 - <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-88/borderlands_tps.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-88/borderlands_tps.apworld</a>

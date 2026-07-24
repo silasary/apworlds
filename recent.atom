@@ -2,230 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-24T00:33:34.125330+00:00</updated>
+  <updated>2026-07-24T06:56:48.856562+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v6</id>
-    <title>Pokemon BW Extra Logic Plugin v1.6.0</title>
-    <updated>2026-07-20T12:13:31+00:00</updated>
-    <author>
-      <name>RadisNoir</name>
-    </author>
-    <content>**Fixes**&#13;
-* Fixed the logic in Abyssal Ruins as the Strength purple block can be pushed regardless of the badge requirement option&#13;
-* Fixed the Static Musharna logic with `add_rock_smash_musharna` not taking the `Consider static pokémon` modifier into account&#13;
-* Dwebble from breakable rocks now take the `Consider static pokémon` modifier into account&#13;
-&#13;
-**Updates**&#13;
-* Added `dark_areas` as a YAML option&#13;
-  * Turns all the listed areas dark and allows the use of Flash&#13;
-  * `Require flash` makes all the darken areas logically require Flash&#13;
-  * `_All` includes all areas&#13;
-  * `_Random` has a 50% chance to include each area that is not already included&#13;
-  * `[]` removes all darken areas&#13;
-  * The full list of valid areas is available in the README&#13;
-  * Removing the option entirely will keep the default dark areas&#13;
-&#13;
-**YAML Options List**&#13;
-* The following options need to be added to the Black and White YAML under `plugin_options`:&#13;
-```&#13;
-  plugin_options:&#13;
-    extra_logic:  # updated for v6&#13;
-      add_ss_ticket: true&#13;
-      add_pass: true&#13;
-      hm_with_badges: true&#13;
-      add_rock_smash: true&#13;
-      add_rock_smash_musharna: true  # requires add_rock_smash&#13;
-      extra_cut_trees: true&#13;
-      extra_cut_trees_kyurem: true   # requires extra_cut_trees&#13;
-      move_strength_boulders: true&#13;
-      move_strength_boulders_vi_road: true   # requires move_strength_boulders&#13;
-      dark_areas: ["Wellspring Cave B1F", "Mistralton Cave", "Challengers Cave"]  # supports "_All" and "_Random", see README&#13;
-```&#13;
-&#13;
-**Important Notes**&#13;
-* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.&#13;
-* It is not possible to add the extra logic options mid-playthrough.&#13;
-&#13;
-**Backwards Compatibility**&#13;
-* This version is compatible with v0.3.37+ of the main BW APworld&#13;
-* This version is compatible with v20 of the QoL Plugin&#13;
-&#13;
-**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v5...v6</content>
-    <link href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BootsinSoots/Archipelago/releases/tag/V0.6.2</id>
-    <title>Luigi's Mansion v0.6.0r2</title>
-    <updated>2026-07-20T15:47:19+00:00</updated>
-    <author>
-      <name>BootsinSoots</name>
-    </author>
-    <author>
-      <name>SomeJakeGuy</name>
-    </author>
-    <author>
-      <name>TheChiefMoose</name>
-    </author>
-    <author>
-      <name>LMFinish</name>
-    </author>
-    <content># Luigi's Mansion AP - 0.6.2&#13;
-Windows / Linux Compatible&#13;
-INCOMPATIBLE WITH OLDER VERSIONS&#13;
-&#13;
-# Fixes&#13;
-Fix newer versions of Universal Tracker being classed as old&#13;
-Remove Lydia's Stool from the extra boo spots pool&#13;
-Fix Silver/Gold portrait ghost borders not triggering properly if the ghost is under 100 health&#13;
-Fix Mr. Bones not respawning alongside Spooky&#13;
-Rename Balcony Plant NW Corner Near Bench correctly&#13;
-&#13;
-[Base Game Changes](https://github.com/BootsinSoots/Archipelago/blob/Luigi's-Mansion-AP/worlds/luigismansion/docs/Base%20ISO%20Changes.md)&#13;
-[Dolphin GC/Wii Emulator](https://dolphin-emu.org/download/)&#13;
-[Setup Guide](https://github.com/BootsinSoots/Archipelago/blob/Luigi's-Mansion-AP/worlds/luigismansion/docs/setup_en.md)</content>
-    <link href="https://github.com/BootsinSoots/Archipelago/releases/tag/V0.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.5</id>
-    <title>PokePark v1.2.5</title>
-    <updated>2026-07-20T17:28:31+00:00</updated>
-    <author>
-      <name>Joe Mama (Mekurushi)</name>
-    </author>
-    <content>- fixed ut version check&#13;
-**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.4...1.2.5</content>
-    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.9.8</id>
-    <title>Grandia v0.9.8</title>
-    <updated>2026-07-20T17:36:48+00:00</updated>
-    <author>
-      <name>Grandiarchipelago</name>
-    </author>
-    <content>**What's new:**&#13;
-- Turbo Mode (2x), toggle with Right Ctrl (Keyboard) or Select (Controller).&#13;
-- Skip video cinematics with Backspace (Keyboard) or Select (Controller).&#13;
-&#13;
-No Logic changes, no need to regenerate a room.</content>
-    <link href="https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.9.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.2b</id>
-    <title>Sonic Adventure DX v1.2.2b0</title>
-    <updated>2026-07-20T19:03:25+00:00</updated>
-    <author>
-      <name>ClassicSpeed</name>
-    </author>
-    <content>## [v1.2.2b] - 2026-07-20&#13;
-&#13;
-### Fixed:&#13;
-- Removed Drowning Deathlink since it was sending Deathlinks incorrectly.&#13;
-- Fixed incorrect links in game guides.&#13;
-- Fixed Chao Garden not saving progress.&#13;
-- Improved Chaos Emeralds color in the in-game tracker.</content>
-    <link href="https://github.com/ClassicSpeed/sadx-classic-randomizer/releases/tag/v1.2.2b"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.0</id>
-    <title>Ori and the Will of the Wisps v0.6.0</title>
-    <updated>2026-07-20T19:45:26+00:00</updated>
-    <author>
-      <name>Satisha</name>
-    </author>
-    <content>Requires at least version `4.44.0` of the client to work properly.&#13;
-&#13;
-Main changes:&#13;
-- Implement a new generator for entrance randomization, to fix generation failures with the generic one.&#13;
-- Spawn items are now random, which adds more diversity and reduces generation failures in constrained sphere 1 (this is still a work in progress).&#13;
-- Added the option to spawn at a random location (not limited to teleporters).&#13;
-- Add new commands to the randomizer wheel (hold V to open it): commands to collect/release, command to reset Keystone doors (if you got stuck), toggle for chat messages.&#13;
-&#13;
-Other changes:&#13;
-- Renamed some options and fixed some errors in their description.&#13;
-- A lot of refactoring in AP World code (hopefully this didn't add new bugs).&#13;
-- Skipping cutscenes is now separated from the quality of life option (the new option is called `skip_cutscenes`).&#13;
-- The `unpopular`, `free_teleporters` and `free_regenerate` options are now taken into account in the in-game logic map.&#13;
-&#13;
-Bugfix&#13;
-- (Hopefully) Fix all known issues related to connection when switching save files.&#13;
-- Items are no longer given during spirit trial, to prevent them being lost afterwards.&#13;
-- Fix some door icons not appearing in the map when they are randomized.&#13;
-- Fix some characters in item names or chat messages being used as color markup and messing with the text (these characters are now removed instead).</content>
-    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.2</id>
-    <title>Crash Team Racing v0.1.2</title>
-    <updated>2026-07-20T22:51:24+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>Position checks become real randomizer locations, Universal Tracker works, and the Steam Deck is playable without a keyboard. Plus a batch of fixes from launch week.
-
-Thanks MarioSpore, therawkhawk64, Bethany and Anezia for the reports, and everyone in the Discord who played and broke things.
-
-### Downloads
-
-- **Windows:** `ctr-archipelago-v0.1.2-windows-x86.zip` (contains everything)
-- **Steam Deck / Linux:** `ctr-archipelago-v0.1.2-linux-x86.tar.gz` (experimental)
-- **Hosting?** `ctr.apworld` and `Crash.Team.Racing.yaml` are attached separately
-
-📖 [Setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) ([as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.1.2/SETUP.md)). **Update the client and the apworld together, they are a pair.**
-
-⚠️ **Audio sounding wrong?** The old extractor truncated audio data. Skip extraction entirely: drop your NTSC-U disc image into `assets` as `ctr-u.bin`. Steam Deck users never need the extractor. Thanks Icebound777.
-
-### New
-
-- **Position checks in logic.** Finish and held-position rungs on the 16 trophy races are full locations, including through Gem Cup legs. ([#9](https://github.com/dowlle/ctr-native-ap/issues/9), [#41](https://github.com/dowlle/ctr-native-ap/issues/41))
-- **Universal Tracker support.** UT rebuilds the seed's real logic from slot data instead of guessing. Reported by Anezia. ([#29](https://github.com/dowlle/ctr-native-ap/issues/29))
-- **Steam Deck connection screen.** On-screen keyboard on focus, and the edit works from the pad: X or START saves, TRIANGLE cancels. ([#73](https://github.com/dowlle/ctr-native-ap/issues/73), [#74](https://github.com/dowlle/ctr-native-ap/issues/74))
-- **DeathLink in the options menu**, applied live, no hotkey. ([PR #70](https://github.com/dowlle/ctr-native-ap/pull/70), building on [#6](https://github.com/dowlle/ctr-native-ap/issues/6))
-- **Seed check on connect.** Warns you if a solo seed cannot be finished. Built after Bethany hit one. ([#42](https://github.com/dowlle/ctr-native-ap/issues/42))
-- **Crash reporter.** Writes `ctr-ap-crash.txt` next to the exe. Please attach it to reports. ([#43](https://github.com/dowlle/ctr-native-ap/issues/43))
-
-### Fixed
-
-- Gem Cups could lock themselves on completion and strand checks behind them, sometimes making a seed unfinishable. Thanks MarioSpore. ([#61](https://github.com/dowlle/ctr-native-ap/issues/61))
-- Turning off battle arenas did not actually remove their checks, which could still be required. Thanks MarioSpore. ([#50](https://github.com/dowlle/ctr-native-ap/issues/50))
-- A received DeathLink death could fire a burst of outgoing deaths. ([#45](https://github.com/dowlle/ctr-native-ap/issues/45))
-- Traps and Wumpa no longer re-fire on reconnect. Thanks therawkhawk64. ([#46](https://github.com/dowlle/ctr-native-ap/issues/46))
-- Extractor audio truncation. ([#47](https://github.com/dowlle/ctr-native-ap/issues/47))
-- Shuffled warp pads could route a return exit to the wrong hub. ([apworld #8](https://github.com/dowlle/ctr-archipelago-apworld/pull/8))
-- Two fixes picked from the upstream decompilation project: a crash at the Naughty Dog intro box ([CTR-tools/ctr-native#32](https://github.com/CTR-tools/ctr-native/issues/32)) and the kart shifting forward during the big turbo ([#36](https://github.com/CTR-tools/ctr-native/issues/36)). The first may also cover the post-boss softlock.
-
-### Known issues
-
-- **Vanilla pad mode can generate an unbeatable seed ([#80](https://github.com/dowlle/ctr-native-ap/issues/80)).** Treat it as experimental. The seed check catches it on connect, so reroll if warned. Default randomized mode is fine.
-- **Generation can rarely fail ([#65](https://github.com/dowlle/ctr-native-ap/issues/65)).** Roughly thirty times rarer than before, fails loudly, reroll. Solo unaffected.
-- **Gemstone Valley pause crash ([#56](https://github.com/dowlle/ctr-native-ap/issues/56))** and **Mystery Caves crash ([#57](https://github.com/dowlle/ctr-native-ap/issues/57))**, both unreproduced. The crash reporter finally gives us something to work with.
-- **Post-boss cutscene softlock ([#51](https://github.com/dowlle/ctr-native-ap/issues/51))**, likely fixed but not retested.
-- **Position rungs through Gem Cup legs are awarded in game but not fully in logic ([#86](https://github.com/dowlle/ctr-native-ap/issues/86)).** The "including through Gem Cup legs" claim above was only half true and we missed that at release: the game does send the rungs when you finish a track as a cup leg, but the seed logic and Universal Tracker treat a rung as out of logic until the track's own pad opens, so UT can hide rungs a cup would already grant. This cannot make a seed unbeatable, it only understates what is reachable. Found by Bethany.
-
-### Testing
-
-Played in game: the Gem Cup fix, Steam Deck keyboard and controller, the extractor, and a connect and race smoke. The seed checker ran against six option profiles, which is how [#80](https://github.com/dowlle/ctr-native-ap/issues/80) was found. Generation passed the full Archipelago index check matrix, 14,000 generations, no failures.
-
-Not verified in game: [#45](https://github.com/dowlle/ctr-native-ap/issues/45) (needs a two player room), [#46](https://github.com/dowlle/ctr-native-ap/issues/46), [#41](https://github.com/dowlle/ctr-native-ap/issues/41).
-
-### Next
-
-Item packs (progressive boost and character stats) and the character phase, plus fixing vanilla pad mode properly. No dates, hobby project honesty applies.
-
----
-
-**Checksums**
-- zip `51098512f9a17112187ea7b1230ebe7e5fad03f94f6299946b028496eef02e40`
-- tar.gz `71d388cbe10285e5ed93c00091a7d3fa4de83294289689e18d3914039a31efa8`
-- apworld `87277feea1f0c3996d3d45f688f75d9725ffa4780fc28eff36a0acbd629d1623`
-
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.2</id>
     <title>Bayonetta v1.2.0</title>
@@ -876,7 +657,7 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.0</id>
-    <title>The Grinch v1.6.0r2r2r2r2r2r2r2</title>
+    <title>The Grinch v1.6.0r2r2r2r2r2r2r2r2</title>
     <updated>2026-07-22T01:54:25+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1055,6 +836,20 @@ No changes.&#13;
     <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.9"/>
   </entry>
   <entry>
+    <id>https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.7.1</id>
+    <title>Hades2Rogue v0.7.1</title>
+    <updated>2026-07-22T17:56:16+00:00</updated>
+    <author>
+      <name>BrittisH39</name>
+    </author>
+    <content>Bug Fixes:&#13;
+ - Sisyphus icon mapped incorrectly for the Hades 2 tab.&#13;
+ - Hopefully setup the mod to adjust for a version mismatch&#13;
+ - If a helper room is rolled and the player hasn't unlocked any helpers, it should now reroll to a different type of room.&#13;
+ - Fixed loading order when Archipelago launches to correct for some conflicts with other Apworlds</content>
+    <link href="https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.7.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.23</id>
     <title>Stardew Valley v8.0.21r2r2</title>
     <updated>2026-07-22T19:34:02+00:00</updated>
@@ -1164,6 +959,27 @@ long."&#13;
     <link href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.0"/>
   </entry>
   <entry>
+    <id>https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.1</id>
+    <title>Toy Story 2 v2.1.1</title>
+    <updated>2026-07-22T21:25:56+00:00</updated>
+    <author>
+      <name>imklubb</name>
+    </author>
+    <content># Bug Fixes&#13;
+- Double Jump suppression is finally fixed. You may find Single Jumps harder to make now. This is by design. The double jump suppression is much much tighter now.&#13;
+&#13;
+# Logic&#13;
+- Corrections in the following levels:&#13;
+  - Construction Yard Race Token. Now requires Double Jump for Easy Skips&#13;
+&#13;
+# Known Issues&#13;
+- Saving the game could potentially freeze the game. There's no need to save since you have the qol save state and the AP will give you everything on a load. Also keep in mind that the PS1 version of this game takes forever to load in general. Give it enough time to think&#13;
+- Cutscene warping may still be a thing. Do the right thing and leave a level if you're not supposed to be there... but also let me know, this bug is hard to pin down&#13;
+- The Second Zurg Cutscene doesn't play from a trap. (I fought this one the entire development... I don't care anymore)&#13;
+- Coinsanity will sometimes cause enemies to blink into existence briefly! Spooky...</content>
+    <link href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.10.0</id>
     <title>Grandia v0.9.9r2</title>
     <updated>2026-07-23T00:36:36+00:00</updated>
@@ -1263,6 +1079,91 @@ needs a regeneration.&#13;
 Found a bug or have an idea? [Open an Issue](../../issues) — every update is&#13;
 shaped by player feedback.</content>
     <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6</id>
+    <title>Bayonetta v1.6</title>
+    <updated>2026-07-23T01:09:54+00:00</updated>
+    <author>
+      <name>Boi</name>
+    </author>
+    <content>## v1.6&#13;
+Witch Time joins the item pool, traps get per-trap control, and technique&#13;
+locations lose their "Shop:" prefix.&#13;
+&#13;
+### What's New&#13;
+&#13;
+**Witch Time as an unlockable item**&#13;
+Witch Time is now a randomized progression item and is **locked from the&#13;
+start of every run**. While locked, a perfect dodge simply doesn't trigger&#13;
+it — the activation is suppressed at the source, so there's no flash, no&#13;
+sound sting, no half-second of slowdown before it cuts out. Dodging still&#13;
+gives you i-frames and dodge offset; you just don't get the reward until&#13;
+the item shows up.&#13;
+&#13;
+Two deliberate carve-outs:&#13;
+- **Bat Within** still performs its dodge and still saves you. It just&#13;
+  doesn't slow time afterwards — a panic button without the payoff.&#13;
+- **Bracelet of Time** still works normally. It's a separate item you have&#13;
+  to find, buy and equip, and a Witch-Time-less run makes it genuinely&#13;
+  worth the accessory slot for once.&#13;
+&#13;
+Witch Time follows the existing **`include_techniques`** option — turn that&#13;
+off and you start with it as usual. It has no dedicated location; the game&#13;
+keeps no ownership flag for it, so unlike the other techniques there's no&#13;
+way for the client to detect you learning it yourself.&#13;
+&#13;
+**Per-trap toggles**&#13;
+A new YAML option, **`trap_weights`**, lets you pick exactly which traps can&#13;
+appear and how common each one is. Set a trap to **0** to switch it off&#13;
+entirely. Values are *relative weights*, not percentages — a trap at 20 is&#13;
+twice as likely as one at 10, and they don't need to add up to anything.&#13;
+Only applies when `trap_percentage` is above 0. Zero everything out and no&#13;
+traps are placed at all, whatever your percentage says.&#13;
+&#13;
+```yaml&#13;
+trap_percentage: 20&#13;
+trap_weights:&#13;
+  Pickpocket Trap: 10&#13;
+  Bloodletting Trap: 0      # off&#13;
+  Fragile Witch Trap: 0     # off&#13;
+  Magic Drain Trap: 10&#13;
+  Amnesia Trap: 5&#13;
+  Sticky Fingers Trap: 10&#13;
+  Squish Trap: 20           # twice as likely as most&#13;
+  Angel Ambush Trap: 10&#13;
+  Grace &amp; Glory Trap: 5&#13;
+  Nemesis Trap: 1           # rare&#13;
+  Alfheim Curse Trap: 5&#13;
+  Berserk Trap: 5&#13;
+  Gracious &amp; Glorious Trap: 1&#13;
+```&#13;
+&#13;
+### Improvements&#13;
+&#13;
+- Technique locations dropped the "Shop:" prefix — `Shop: Learn Bat Within`&#13;
+  is now just `Learn Bat Within`. Location IDs are unchanged, and the&#13;
+  tracker now splits "Shop" and "Techniques" into separate groups.&#13;
+  &#13;
+- Fixed the `Loading...` screen when trying to go to the options menu.&#13;
+&#13;
+### Downloads&#13;
+- **dinput8.dll** — place in your Bayonetta game folder (next to&#13;
+  Bayonetta.exe).&#13;
+- **z.dll** — place in your Bayonetta game folder too.&#13;
+- **bayonetta.apworld** — place in your Archipelago custom_worlds folder&#13;
+  (replace the old one).&#13;
+  &#13;
+**Existing seeds keep their original logic** — tear locations, new traps,&#13;
+verse‑rank challenges, and the scroll fix all apply to freshly generated&#13;
+seeds. Old seeds will still play fine with the new DLL, but the new content&#13;
+needs a regeneration.&#13;
+&#13;
+Found a bug or have an idea? [Open an Issue](../../issues) — every update is&#13;
+shaped by player feedback.&#13;
+&#13;
+WARNING: If you update to this version while playing on a older version your Witch Time will not work! Play on previous release until you generate a new Multiworld with the new apworld.</content>
+    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6"/>
   </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-88</id>
@@ -1545,5 +1446,70 @@ Three new YAML toggles that keep progression items out of the hardest end-game c
  [SIDELOADER for DRG Mods](https://github.com/trumank/mint)&#13;
  Mod file now included in releases for mint users.</content>
     <link href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.19a"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.24</id>
+    <title>Stardew Valley v8.0.24</title>
+    <updated>2026-07-24T01:44:46+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Mod&#13;
+- Fixed an issue where specials orders that were forced to be repeatable, would still get auto-deleted from the quest log&#13;
+&#13;
+## Apworld&#13;
+- Fixed several logic issues with Special Orders that require villagers to exist&#13;
+- Added a few missing growth times that weren't being DRed&#13;
+- Fixed an issue where randomizing which crop comes from which seed, would accidentally keep the other aspects from the crop, instead of the ones from the seed. Such as growth season.&#13;
+- Sanitize Fish data so that desert fish can always be catched in the sun&#13;
+- Added rain totem logic to fish that are catchable in the rain in winter&#13;
+- Sanitized Fish data so that all extended family fish can always be caught within the same season&#13;
+- Moved the 5 extended family fish locations to the walnut room region for performance</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.24"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mdietz94/dread_ap/releases/tag/v0.25.0</id>
+    <title>Metroid Dread v0.25.0</title>
+    <updated>2026-07-24T02:28:23+00:00</updated>
+    <author>
+      <name>maxdietz</name>
+    </author>
+    <author>
+      <name>Randovania Dread contributors</name>
+    </author>
+    <content>## What's Changed
+* chore(release): v0.24.0 by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/168
+* Drop inbound DeathLinks while at a save/nav/map station by @mdietz94 in https://github.com/mdietz94/dread_ap/pull/169
+
+
+**Full Changelog**: https://github.com/mdietz94/dread_ap/compare/v0.24.0...v0.25.0</content>
+    <link href="https://github.com/mdietz94/dread_ap/releases/tag/v0.25.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-89</id>
+    <title>Borderlands 2 v89</title>
+    <updated>2026-07-24T05:51:56+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.4):&#13;
+- fix UT connection issue (hopefully)</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-89"/>
   </entry>
 </feed>

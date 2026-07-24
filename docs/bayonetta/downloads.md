@@ -1,9 +1,12 @@
 # Bayonetta
 
 ## Latest
-- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.5/bayonetta.apworld">Latest Version (1.5)</a>
+- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.6/bayonetta.apworld">Latest Version (1.6)</a>
 
 ## All Versions
+
+#### v1.6
+- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.6/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.6/bayonetta.apworld</a>
 
 #### v1.5
 - <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.5/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.5/bayonetta.apworld</a>
