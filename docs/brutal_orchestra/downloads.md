@@ -14,7 +14,7 @@
 #### v1.0.0r2r2
 - <a href="https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/download/v1.2.2/brutal_orchestra.apworld">https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/download/v1.2.2/brutal_orchestra.apworld</a>
 
-#### v1.0.0r2r2
+#### v1.0.0r2r2r2
 - <a href="https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/download/v2.0/brutal_orchestra.apworld">https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/download/v2.0/brutal_orchestra.apworld</a>
 
 #### v1.0

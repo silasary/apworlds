@@ -2,125 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-24T18:40:56.503067+00:00</updated>
+  <updated>2026-07-25T00:32:28.246204+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.0.2</id>
-    <title>The Legend of Zelda - Oracle of Ages v1.0.2</title>
-    <updated>2026-07-21T17:22:31+00:00</updated>
-    <author>
-      <name>josephanimate2021</name>
-    </author>
-    <author>
-      <name>Glan9</name>
-    </author>
-    <author>
-      <name>SenPierre</name>
-    </author>
-    <author>
-      <name>FlameStripe</name>
-    </author>
-    <content>(Properly changed the internal apworld version this time. Retro compat should still work)&#13;
-&#13;
-* Logic fixes&#13;
-* Fixed Sea of storm chest wrongly swapped if secrets are enabled&#13;
-* Fixed master keys not being received properly&#13;
-* Fix the gasha planted flag being reset upon harvest&#13;
-* Fix a softlock when trying again the elder goron secret baseball minigame&#13;
-* Fix the bush chest (Again)</content>
-    <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.3</id>
-    <title>Crash Team Racing v0.1.3</title>
-    <updated>2026-07-21T17:57:11+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>A correctness patch. Vanilla warp pad mode is fixed and no longer experimental, audio settings finally save, the client survives losing its server, and the seed logic tells the truth about Gem Cup legs. No new gameplay, a dozen things now behave the way they always should have.
-
-Thanks Bethany, BEXUS and MarioSpore for the reports, and everyone in the Discord who keeps breaking things in useful ways.
-
-### Downloads
-
-- **Windows:** `ctr-archipelago-v0.1.3-windows-x86.zip` (contains everything)
-- **Steam Deck / Linux:** `ctr-archipelago-v0.1.3-linux-x86.tar.gz`, now less than half the old download size
-- **Hosts and players:** `ctr.apworld` and `Crash.Team.Racing.yaml` are attached separately
-- **Debugging a crash?** `ctr_native_ap.debug` holds the Linux debug symbols, matched to this exact build
-
-📖 [Setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) ([as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.1.3/SETUP.md)). **Update the client and the apworld together, they are a pair.**
-
-### Fixed
-
-- **Vanilla warp pad mode could generate unbeatable seeds. Fixed, and no longer experimental.** Fair warning: vanilla got noticeably tighter, only Crash Cove and Roo's Tubes are open at the start, which is how the original game works. ([#80](https://github.com/dowlle/ctr-native-ap/issues/80))
-- Podium rungs earned through Gem Cup legs are now fully in logic and visible in Universal Tracker, closing the v0.1.2 known issue. Found by Bethany. ([#86](https://github.com/dowlle/ctr-native-ap/issues/86))
-- Audio settings survive a restart now, in the AP build and the vanilla build both. ([#53](https://github.com/dowlle/ctr-native-ap/issues/53))
-- Losing the server no longer crashes the game. The client rides out the disconnect and reconnects by itself. ([#103](https://github.com/dowlle/ctr-native-ap/issues/103))
-- Boss garage stars no longer turn red from received Keys. From BEXUS's session. ([#84](https://github.com/dowlle/ctr-native-ap/issues/84))
-- The seed check could flash a false "seed not completable" right after you sent a check. Root caused from Bethany's seed. ([#85](https://github.com/dowlle/ctr-native-ap/issues/85))
-- The seed check also cried wolf on merged destination shuffle: it did not know a podium check can be earned through a Gem Cup leg. Advisory only, never blocked play. ([#107](https://github.com/dowlle/ctr-native-ap/issues/107))
-- The multiworld reachability log line reads like information now instead of an alarm. ([PR #102](https://github.com/dowlle/ctr-native-ap/pull/102))
-- Turning off Gem Cups with shuffled gems could leave live checks on the excluded cups, and one contradictory option combo now fails generation with a clear message. ([#50](https://github.com/dowlle/ctr-native-ap/issues/50))
-- A requirement-weight config with Trophy at 0 crashed generation. It now fails with a message telling you what to change. ([#87](https://github.com/dowlle/ctr-native-ap/issues/87))
-- Every vendored networking dependency is now pinned and hash-verified at build time, recorded in `versions.txt` inside the bundle. ([#78](https://github.com/dowlle/ctr-native-ap/issues/78))
-
-### New
-
-- **Pads with remaining relic or token checks pulse blue on the map** instead of going quiet, so you can see where checks remain at a glance. ([#60](https://github.com/dowlle/ctr-native-ap/issues/60))
-- **Items you send to other players show in the hub feed** as "ITEM TO PLAYER", the same way received items already do. Reported by MarioSpore. ([#63](https://github.com/dowlle/ctr-native-ap/issues/63))
-- **The crash reporter arms at launch instead of the first frame**, so startup crashes finally leave a `ctr-ap-crash.txt`. ([#93](https://github.com/dowlle/ctr-native-ap/issues/93))
-- **The Linux download dropped from 27 MB to 11 MB.** The debug symbols ship separately as `ctr_native_ap.debug`. ([#92](https://github.com/dowlle/ctr-native-ap/issues/92))
-- **The APWorld Manager listing shows a description and author** instead of a blank row. ([apworld #11](https://github.com/dowlle/ctr-archipelago-apworld/issues/11))
-
-### Known issues
-
-- **Generation can rarely fail in a multiworld ([#75](https://github.com/dowlle/ctr-native-ap/issues/75)).** Fails loudly at generation, reroll. Solo unaffected.
-- **Gemstone Valley pause crash ([#56](https://github.com/dowlle/ctr-native-ap/issues/56))** and **Mystery Caves crash ([#57](https://github.com/dowlle/ctr-native-ap/issues/57))**, both still unreproduced. With the reporter now arming at launch a crash file is much more likely, please attach `ctr-ap-crash.txt`.
-- **Post-boss cutscene softlock ([#51](https://github.com/dowlle/ctr-native-ap/issues/51))** did not reproduce in release testing with the outro path exercised deliberately. One clean run is not proof, so it stays listed.
-- **A crash from an internal exception may still exit without a crash report**, rare after this release's guards. ([#103](https://github.com/dowlle/ctr-native-ap/issues/103))
-
-### Testing
-
-Verified in game on the exact shipped builds: audio persistence, the garage star matrix, the sent-item feed in both directions, the map pulse, the seed check through podium bursts and on the merged-shuffle seeds that used to trip it (plus a deliberately broken seed to prove it still flags real problems), server-loss survive and reconnect, and the boss outro path. Logic changes passed all eleven checks of the Archipelago index matrix plus a dedicated vanilla-mode run, about 19,000 generations, zero failures.
-
-### Next
-
-The 0.2.0 design campaign: the character phase, item packs, and the adaptive podium rung budget, with solo/offline play ([#89](https://github.com/dowlle/ctr-native-ap/issues/89)) behind those. No dates, hobby project honesty applies.
-
----
-
-**Checksums**
-- zip `e2819fe832341b9e1624506414392d2a3bbf7ddcbec5dbe5e80837c202db37fd`
-- tar.gz `880e45d93ecca4733d8654ba9c2fa1cbd4e6a7e54e92a7ba596d23343bb34372`
-- apworld `52137acf0ffd54305e08c5b6e07d6a3881ff2f114cf0de21aa427766fbec63b6`
-- debug `0141f3954005db111daf71c8d2ebb06c4627d6d87cba3854655872f69f8a7022`
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.07.21</id>
-    <title>Archipeladoku v2026.7.21</title>
-    <updated>2026-07-21T18:52:21+00:00</updated>
-    <author>
-      <name>Galdiuz</name>
-    </author>
-    <content/>
-    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.07.21"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.9.9</id>
-    <title>Grandia v0.9.9</title>
-    <updated>2026-07-21T19:21:42+00:00</updated>
-    <author>
-      <name>Grandiarchipelago</name>
-    </author>
-    <content>**Fixes:**&#13;
-- Save/Load Resync not syncing Keys properly</content>
-    <link href="https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.9.9"/>
-  </entry>
   <entry>
     <id>https://github.com/SerpentAI/Archipelago/releases/tag/riven-v1.0.0</id>
     <title>Riven v1.0.0</title>
@@ -1322,7 +1208,7 @@ Found a bug or have an idea? [Open an Issue](../../issues) — every update is s
   </entry>
   <entry>
     <id>https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v2.0</id>
-    <title>Brutal Orchestra v1.0.0r2r2</title>
+    <title>Brutal Orchestra v1.0.0r2r2r2</title>
     <updated>2026-07-24T07:03:13+00:00</updated>
     <author>
       <name>DeadEye</name>
@@ -1421,5 +1307,106 @@ Widen debug logging when enabled</content>
 - Other minor adjustments&#13;
 ### Mod Unchanged, only effects the APWorld</content>
     <link href="https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.7.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/stubobis1/Archipelago/releases/tag/2.2.0</id>
+    <title>Path of Exile v2.2.0</title>
+    <updated>2026-07-24T18:21:30+00:00</updated>
+    <author>
+      <name>StuBob</name>
+    </author>
+    <content># Path of Exile apworld - 2.1.0 to 2.2.0&#13;
+&#13;
+## Gems &amp; items&#13;
+- Added 3.29 skill/support gems, alt-gem variants, and new base items.&#13;
+- Added Scion's new 3.29 ascendancy, Luminary. Ascendancies-per-class capped at 3 across the board (Scion no longer special-cased at 2).&#13;
+- Added a batch of 3.28 exceptional support gems (filler-only, not required to reach goal).&#13;
+- New "Exceptional Gems" item category, separate from skill/support/utility.&#13;
+- Gem name fixes to match current in-game text: "Pact of K'tash" -&gt; "Pact of K'Tash", "Coursing Currents Support" -&gt; "Coursing Current Support", "Minion Pact Support" -&gt; "Communion Support".&#13;
+- Removed unused jingle sound assets.&#13;
+&#13;
+## Logic fixes&#13;
+- Fixed preset-unlocked gear tiers to grant via Progressive Gear items (not Random Gear) when the progressive_gear option is on, matching existing fallback behavior.&#13;
+- Fixed area location data: removed "Merveil's Lair" (not a valid checkable area), corrected "Weaver's Chambers" -&gt; "The Weaver's Chambers" and "Vaal Ruins" -&gt; "The Vaal Ruins".&#13;
+&#13;
+## Other&#13;
+- Class tree (base class -&gt; ascendancies) now derived from item data instead of hardcoded, so future ascendancy additions surface automatically.&#13;
+- Added test coverage for area-location reachability and boss-defeat/atlas logic.&#13;
+- Docs rewrite (setup guide, world guide).&#13;
+- Bundled client updated to 2.2.0 (see link below).&#13;
+&#13;
+https://github.com/stubobis1/Path-of-Exile-Archipelago-Client/releases/tag/2.2.0&#13;
+&#13;
+**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/2.1.0...2.2.0</content>
+    <link href="https://github.com/stubobis1/Archipelago/releases/tag/2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.1</id>
+    <title>The Grinch v1.6.1</title>
+    <updated>2026-07-24T21:30:35+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>## Bugfixes&#13;
+- Various generation gremlins gave `RecursiveError` a shout, while Supadow minigame regions refused to wander out. When `supadow_minigames` slept, they still would stick around, and advanced logic event item IDs were finally pinned and found.</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.5</id>
+    <title>Factorio Bob's v2.2.5</title>
+    <updated>2026-07-24T22:50:18+00:00</updated>
+    <author>
+      <name>Osiris32-and-a-half</name>
+    </author>
+    <content>Sorry for the unprompted hiatus. I do plan on working more on this, life ~~(and gtnh)~~ has just gotten in the way but I should have some more free time to work on this again. ~~(As I have dropped gtnh)~~&#13;
+&#13;
+Next version will hopefully include a new more stable logic and change this project's name to factorio modpack's&#13;
+&#13;
+# Changelog&#13;
+- Updated Bob's mods&#13;
+- Disabled artifacts being in logic for Bob's mods (logic issue again)&#13;
+- No longer searches for facpacks in player folder (I really shouldn't have tried to forced this once I realised how much AP does not care if something is an actual yaml or not)&#13;
+- Fixed crash in built apworld by CosmicWolf (I got it ready and then forgot to publish this before the unprompted hiatus sorry)&#13;
+- Only essential technologies now only show progression/advancement by CosmicWolf &#13;
+- Couple of locale improvements by CosmicWolf &#13;
+- Added 4 more traps by CosmicWolf &#13;
+  - Peek A Tech: Trap items that when received hide all the technologies on the tech screen. Stopping all science for a short while.&#13;
+  - Tech Reset Trap: Trap items that when received resets the process of all technologies, does not unresearch.&#13;
+  - Map Info Reset: Trap items that when received trigger that your map data gets deleted.&#13;
+  - Energy Spiral: Trap items that when received temporarily increases the energy cost and raises pollution produced of all machines.&#13;
+- Some more fixes by CosmicWolf (I have looked through it all but can't tell exactly what some stuff fixes just that it's something)&#13;
+&#13;
+# Bob's mods versions&#13;
+bobassembly_2.1.0.zip&#13;
+bobelectronics_2.1.1.zip&#13;
+bobenemies_2.1.0.zip&#13;
+bobequipment_2.1.0.zip&#13;
+bobgreenhouse_2.1.0.zip&#13;
+bobinserters_2.0.3.zip&#13;
+boblibrary_2.1.0.zip&#13;
+boblogistics_2.1.1.zip&#13;
+bobmining_2.1.0.zip&#13;
+bobmodules_2.1.0.zip&#13;
+bobores_2.1.2.zip&#13;
+bobplates_2.1.1.zip&#13;
+bobpower_2.1.0.zip&#13;
+bobrevamp_2.1.1.zip&#13;
+bobtech_2.1.0.zip&#13;
+bobvehicleequipment_2.1.1.zip&#13;
+bobwarfare_2.1.0.zip</content>
+    <link href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.2.2a</id>
+    <title>pokemon_snap v0.2.2a0</title>
+    <updated>2026-07-25T00:25:34+00:00</updated>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <content/>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.2.2a"/>
   </entry>
 </feed>
