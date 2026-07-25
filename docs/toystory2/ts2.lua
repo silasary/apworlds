@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 2.1.1   <-- must match the Toy Story 2 .apworld release.
+-- CONNECTOR VERSION: 2.1.2   <-- must match the Toy Story 2 .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,39 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "2.1.1"
+TS2_VERSION = "2.1.2"
+
+-- ── Debug logging (OFF by default) ──────────────────────────────────────────
+-- A player who hits a bug (a crash, a stuck connection, a wrong send) can set
+--   TS2_DEBUG = true
+-- reproduce the problem, and send the resulting ts2_debug.txt (written next to
+-- EmuHawk.exe) with their report. It records: the connector version, the client
+-- handshake, every level transition, boss defeats, savestate loads, a periodic
+-- heartbeat of the game state, and -- most useful for a crash -- any Lua error
+-- from the main loop, with its message. Leave it false for normal play; when off
+-- it costs nothing (a single flag check).
+TS2_DEBUG = false
+TS2_DEBUG_FILE = "ts2_debug.txt"
+TS2_DEBUG_HEARTBEAT = 600   -- frames between heartbeat snapshots (~10s at 60fps)
+-- Globals (not locals): the main chunk is at the 200-local ceiling.
+ts2_dbg_handle = nil
+ts2_dbg_hb_frame = 0
+function ts2_debug(msg)
+    if not TS2_DEBUG then return end
+    if ts2_dbg_handle == nil then
+        ts2_dbg_handle = io.open(TS2_DEBUG_FILE, "a")
+        if ts2_dbg_handle then
+            ts2_dbg_handle:write("\n==== ts2 debug session (connector " ..
+                tostring(TS2_VERSION) .. ") ====\n")
+            ts2_dbg_handle:write("If you are reporting a bug, attach this whole file.\n")
+        end
+    end
+    if ts2_dbg_handle then
+        local fr = (type(emu) == "table" and emu.framecount and emu.framecount()) or -1
+        ts2_dbg_handle:write(string.format("[f%d] %s\n", fr, msg))
+        ts2_dbg_handle:flush()
+    end
+end
 
 do
 -- ============================================================
@@ -408,6 +440,11 @@ local circle_was_up  = true
 -- ============================================================
 local boss_defeated       = false
 local boss_started = {slime=false, toybarn=false, zurg=false, bombs=false}
+-- TBE: confirm the real fight via the first downward HP step (26->25), which the
+-- load flicker (26<->0 only) can never produce. GLOBALS, not locals: the main
+-- chunk is at the 200-local ceiling, so new module state must be global.
+toybarn_real_hit = false
+toybarn_last_hp = -1
 local prosp_loading       = false
 
 -- ============================================================
@@ -647,7 +684,12 @@ local last_unlocks_low, last_unlocks_high = -1, -1
 local msg_playing, we_triggered_msg = false, false
 local last_hovered = -1
 local map_select_settle = 0
-local MAP_SELECT_SETTLE = 10
+-- Frames the hovered level must stay put AND X must stay released before a press
+-- is honoured. Was 10 (~1/6s), which players beat by flicking the cursor onto a
+-- level and mashing X on the same frames the game was still settling the lock
+-- state. 45 frames (~0.75s) is long enough that a deliberate press still feels
+-- instant but a flick-and-mash can't land inside the window.
+local MAP_SELECT_SETTLE = 45
 local x_was_down = false
 local last_tickets, last_tokens_linear = -1, -1
 for lvl,_ in pairs(PARTS) do potato_collected2_idx[lvl]=1 end
@@ -1373,12 +1415,71 @@ function set_all_token_addresses()
     end
 end
 
+-- Pure computation of the linear-mode unlock bitmask (low byte = hovers 7-14,
+-- high byte = 15-21). Mirrors the unlock decisions in apply_linear_area exactly,
+-- WITHOUT touching memory, so reconcile_map_state_from_shared can compare the
+-- intended unlocks against what's live and only rewrite on a real mismatch. If
+-- the two ever drift, this is the function to re-sync with apply_linear_area.
+function compute_linear_unlocks(area, tickets, tokens)
+    local low, high = 0, 0
+    local function unlock(h)
+        local bit = HOVER_TO_BIT[h]; if not bit then return end
+        if h <= 14 then low = low | (1<<bit) else high = high | (1<<bit) end
+    end
+    for _,h in ipairs(AREA_UNLOCKED[area] or {}) do unlock(h) end
+    local data = AREA_LEVELS[area]
+    if data then
+        for _,h in ipairs(data.special or {}) do unlock(h) end
+        for _,h in ipairs(data.boss or {}) do
+            local gn = BOSS_GATE[h]
+            if gn and tokens >= get_gate(gn) then unlock(h) end
+        end
+    end
+    if tokens >= get_gate(5) and tickets >= 4 then unlock(21) end
+    return low, high
+end
+
 function check_prospector_unlock()
     -- The client computes whether the player's chosen GOAL CONDITIONS are met
     -- (tokens / bosses / level unlocks / combos) and writes the result here. We
     -- just honor it, instead of hard-requiring tokens AND tickets regardless of
     -- the selected goal (which left non-token/boss goals never unlocking).
     set_level_unlocked(21, mainmemory.read_u8(SHARED_PROSP_ITEM)==1)
+end
+
+-- Force the game-side map state to agree with the client-authored shared region.
+-- Called every frame WHILE ON THE MAP. The individual apply_* paths only run on a
+-- change, so a savestate load (which reverts everything at once, producing no
+-- change) can leave the derived unlock/token state stale -- most dangerously a
+-- final-level unlock the player has not earned. This re-derives that state
+-- unconditionally, but only WRITES when something is actually wrong, so a normal
+-- frame with no desync costs a handful of reads and no writes.
+function reconcile_map_state_from_shared()
+    -- The on-map token counter (A.MAP_TOKEN) is already reconciled every frame by
+    -- the token-display block in the map handler, so it is not repeated here. This
+    -- function's job is the UNLOCK bitmask, which nothing else re-derives on a
+    -- no-change frame.
+    if get_game_mode()==0 then
+        -- OPEN mode: the final showdown is governed entirely by the client's
+        -- goal-condition flag. Re-assert it so a reverted bitmask bit can't leave
+        -- hover 21 open (or closed) against the shared truth.
+        local want = mainmemory.read_u8(SHARED_PROSP_ITEM)==1
+        if is_level_unlocked(21) ~= want then set_level_unlocked(21, want) end
+    else
+        -- LINEAR mode: unlocks are a pure function of tickets + tokens, so
+        -- recompute the authoritative bitmask and only rewrite the game-side
+        -- unlock bytes if they differ. apply_linear_area already encodes that
+        -- function; call it when the derived unlocks don't match what's live.
+        local tickets = get_tickets()
+        local area = math.min(tickets, 4)
+        local want_low, want_high = compute_linear_unlocks(area, tickets, get_ap_tokens())
+        if mainmemory.read_u8(SHARED_UNLOCKS_LOW)  ~= want_low
+        or mainmemory.read_u8(SHARED_UNLOCKS_HIGH) ~= want_high then
+            apply_linear_area(tickets)
+            last_tickets = tickets
+            last_tokens_linear = get_ap_tokens()
+        end
+    end
 end
 
 function apply_linear_area(tickets)
@@ -2360,6 +2461,7 @@ function update_boss(level)
             if boss_started.bombs and hp==0 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<0))
+                ts2_debug("boss defeat detected: Bombs Away (bit 0) at level="..level..", hp="..hp)
             end
         end
     elseif level==3 then
@@ -2373,19 +2475,34 @@ function update_boss(level)
             if boss_started.slime and hp==0 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<1))
+                ts2_debug("boss defeat detected: Slime Time (bit 1) at level="..level..", hp="..hp)
             end
         end
     elseif level==9 then
-        -- Toy Barn Encounter: "seen alive" gate, but ONLY once the level has
-        -- actually started (buzz_moved). During the load the HP byte reads garbage
-        -- transients (e.g. 26 -> 0 -> 26 before Buzz spawns), which previously armed
-        -- and fired a false early defeat. Requiring buzz_moved gates out the load
-        -- window so only the real fight counts.
+        -- Toy Barn Encounter: THE boss that sent early. Its HP byte snaps 26 <-> 0
+        -- during the load, before Buzz spawns, and 26 is ALSO the real spawn HP --
+        -- so a plain "saw high, then saw 0" gate (Slime's approach) fired on the
+        -- load flicker instead of the real kill.
+        --
+        -- The clean signal: confirm the real fight the way the player does. The
+        -- first hit always steps HP DOWN by one (26 -> 25), no matter the attack,
+        -- and every subsequent phase steps down too (trace showed 26 -> ... -> 17
+        -- -> 13 -> 9 -> 0, each value held for hundreds of frames). The load
+        -- garbage only ever snaps 26 -> 0 or 0 -> 26; it can NEVER produce a
+        -- positive-to-smaller-positive step. So a single such step is proof the
+        -- fight is genuinely underway, and only then does hp==0 count as a defeat.
+        -- This arms instantly on the first hit and needs no timing threshold.
         if (defeats&(1<<2))==0 and buzz_moved then
-            if hp>0 then boss_started.toybarn=true end
-            if boss_started.toybarn and hp==0 and not boss_defeated then
+            if hp>=20 then boss_started.toybarn=true end
+            if boss_started.toybarn and toybarn_last_hp>0 and hp>0
+               and hp<toybarn_last_hp then
+                toybarn_real_hit=true          -- HP stepped down between two live reads
+            end
+            toybarn_last_hp=hp
+            if boss_started.toybarn and toybarn_real_hit and hp==0 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<2))
+                ts2_debug("boss defeat detected: Toy Barn Encounter (bit 2) at level="..level..", hp="..hp)
             end
         end
     elseif level==12 then
@@ -2401,6 +2518,7 @@ function update_boss(level)
             if boss_started.zurg and hp<=9 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<3))
+                ts2_debug("boss defeat detected: Zurg (bit 3) at level="..level..", hp="..hp)
             end
         end
     elseif level==15 then
@@ -3223,7 +3341,23 @@ end
 -- ============================================================
 -- ON LEVEL CHANGE
 -- ============================================================
+function reset_boss_detection()
+    -- Volatile per-fight detection state. These are LUA variables, which a BizHawk
+    -- savestate does NOT revert (it only reverts game RAM). So after a savestate
+    -- load they can be left set from a previous fight while the RAM they describe
+    -- has reverted -- e.g. toybarn_real_hit still true, so a single transient
+    -- hp==0 re-sets the TBE defeat bit and the client sends the reward again.
+    -- Resetting them on level change AND on savestate load keeps them in sync with
+    -- the RAM they are supposed to track.
+    boss_defeated=false
+    boss_started.slime=false; boss_started.toybarn=false
+    boss_started.bombs=false; boss_started.zurg=false
+    prosp_loading=false
+    toybarn_real_hit=false; toybarn_last_hp=-1
+end
+
 function on_level_change(new_level, prev_level)
+    ts2_debug(string.format("level change: %d -> %d", prev_level, new_level))
     -- Cutscene trap: run its level-change state machine FIRST (it inspects the
     -- new level + hover to decide whether to cancel, keep alive, or chain).
     cs_on_level_change(new_level)
@@ -3267,9 +3401,7 @@ function on_level_change(new_level, prev_level)
     if not is_move_unlocked(BITS.DBL_JUMP) then dbljump_restored=false end
 
     -- Boss
-    boss_defeated=false; boss_started.slime=false; boss_started.toybarn=false
-    boss_started.bombs=false
-    boss_started.zurg=false; prosp_loading=false
+    reset_boss_detection()
 
     -- Coin sanity
     coin_load_timer=0
@@ -3422,6 +3554,13 @@ function update_map(input, hovered)
     if not map_was_on then
         map_entry_timer=MAP_ENTRY_FRAMES
         map_was_on=true
+        -- Force the level-select grace period on arrival too. Without this, a
+        -- savestate or fast boss-return could land the player on the map with the
+        -- cursor ALREADY on an unlocked level and last_hovered already matching,
+        -- so the hover-change reset below never fires and a held/mashed X enters
+        -- instantly. Arm it here so every fresh arrival waits out the window.
+        map_select_settle = MAP_SELECT_SETTLE
+        last_hovered = -1
     end
 
     -- Open / Linear mode
@@ -3436,6 +3575,26 @@ function update_map(input, hovered)
             last_tickets=tickets; last_tokens_linear=tokens; on_map=true
         end
     end
+
+    -- SAVESTATE DESYNC GUARD (map only)
+    --
+    -- The client re-writes the shared region (0x1FFFxx: tokens, unlocks, tickets)
+    -- authoritatively every frame, so THOSE bytes always heal. But the game-side
+    -- copies the game actually reads to decide entry -- the on-map token count and
+    -- the unlock bitmask -- are only refreshed when a value CHANGES: linear mode
+    -- reapplies on a ticket/token delta, open mode via the prospector flag. Load a
+    -- savestate and every one of those bytes reverts together, so no delta is seen
+    -- and the stale game-side state (e.g. a final-level unlock the player hasn't
+    -- actually earned) sticks. Players used this to make the game think the final
+    -- level was beatable.
+    --
+    -- Reconcile the derived state against the shared source every frame while on
+    -- the map, and only when it is actually wrong. This is deliberately NOT done
+    -- in-level: the shared region is stable there, savestates mid-level don't
+    -- touch level-select entry, and rewriting every frame in-level would be
+    -- pointless churn. On the map it is cheap and it is the only place the stale
+    -- unlock can be acted on.
+    reconcile_map_state_from_shared()
 
     -- Level locking / names
     if hovered>=7 then
@@ -3540,6 +3699,7 @@ function ts2_main()
         if _gm == 0xA0 or _gm == 0xA1 then
             SETTINGS_SEEN = true
             print("[TS2] Settings received from client — tracking active.  (connector v"..TS2_VERSION..")")
+            ts2_debug(string.format("client handshake OK: settings received (game-mode tag 0x%02X)", _gm))
         end
     end
     local level   = mainmemory.read_u8(A.LEVEL)
@@ -3547,6 +3707,19 @@ function ts2_main()
     local buzz_x  = mainmemory.read_u8(A.BUZZ_X)
     local buzz_y  = mainmemory.read_u8(A.BUZZ_Y)
     local hovered = mainmemory.read_u8(A.HOVER)
+
+    -- DEBUG heartbeat: periodically snapshot the game state. If the emulator or
+    -- script dies, the LAST heartbeat in the log shows where the player was, which
+    -- is the single most useful clue for a hard-to-reproduce crash.
+    if TS2_DEBUG then
+        ts2_dbg_hb_frame = ts2_dbg_hb_frame + 1
+        if ts2_dbg_hb_frame >= TS2_DEBUG_HEARTBEAT then
+            ts2_dbg_hb_frame = 0
+            ts2_debug(string.format(
+                "heartbeat: level=%d hover=%d buzz=(%d,%d) buzz_moved=%s",
+                level, hovered, buzz_x, buzz_y, tostring(buzz_moved)))
+        end
+    end
 
     -- ── LEVEL CHANGE ─────────────────────────────────────
     if level~=last_level then
@@ -3750,7 +3923,53 @@ end
 -- ============================================================
 print("[TS2] Archipelago combined script loaded!  (connector v"..TS2_VERSION..")")
 print("[TS2] Waiting for Python client to write settings...")
-event.onframestart(ts2_main,"ts2")
+-- Register the main loop. When debug is ON, wrap it so a Lua error (which would
+-- otherwise silently stop the script and look like a "crash" to the player) is
+-- recorded with its message before it propagates -- the single most useful thing
+-- for diagnosing a crash report. Behavior is unchanged: the error is re-raised,
+-- so the script still stops exactly as before, but now there is a log line saying
+-- what and where. When debug is OFF there is no wrapper and no overhead.
+event.onframestart(function()
+    if TS2_DEBUG then
+        local ok, err = pcall(ts2_main)
+        if not ok then
+            ts2_debug("FATAL Lua error in main loop: " .. tostring(err))
+            error(err)
+        end
+    else
+        ts2_main()
+    end
+end, "ts2")
+
+-- Savestate loads revert game RAM but NOT this script's own variables, so the
+-- volatile detection flags can end up describing a fight that the reverted RAM no
+-- longer reflects. The most visible symptom was the Toy Barn Encounter re-sending
+-- its defeat after loading a savestate back to the level select: toybarn_real_hit
+-- (and the other boss flags) survived the load, so a transient hp==0 re-set the
+-- bit. Re-sync everything the moment a state is loaded, so detection re-derives
+-- from the restored RAM exactly as if the script had just attached.
+if event and event.onloadstate then
+    event.onloadstate(function()
+        -- Fix (runs regardless of debug): a savestate is a photograph of RAM and
+        -- can carry a stale boss-defeat bit -- set before the current code, or by
+        -- an earlier false trigger. Loading re-introduces it and the client would
+        -- send the reward off the RAM bit. Clear the shared boss byte on load; the
+        -- client re-writes cur|server_boss_mask every frame, so a defeat the SERVER
+        -- knows about is restored within a frame, while a bit that only lived in
+        -- the savestate stays gone. Also resync the volatile Lua detection flags,
+        -- which a savestate does NOT revert (they gate boss/defeat detection and a
+        -- stale value would let it run on the freshly-reverted RAM).
+        mainmemory.write_u8(SHARED_BOSS_DEFEATS, 0)
+        reset_boss_detection()
+        buzz_moved=false
+        if buzz_spawn then
+            buzz_spawn.move_x=nil; buzz_spawn.move_y=nil
+            buzz_spawn.move_frames=0; buzz_spawn.lr_frames=0
+            buzz_spawn.lr_snapshot=nil
+        end
+        ts2_debug("savestate loaded -> boss byte cleared, detection resynced")
+    end, "ts2_loadstate")
+end
 
 end
 -- === Part 2: Archipelago generic BizHawk connector (bundled, unmodified) ====

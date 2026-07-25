@@ -145,6 +145,21 @@
       "title": "v1.6.5 - Tracker Changes and Bug Fixes",
       "version_simple": "1.6.5",
       "world_version": "1.6.5"
+    },
+    "v1.6.6": {
+      "created_at": "2026-07-24T15:12:14Z",
+      "description": "v1.6.6\r\n\r\nA small bug-fix release. It cleans up three problems that all showed up\r\nnear the end of a run: beating Requiem, the ending credits, and the intro\r\ncutscene.\r\n\r\n### Bug Fixes\r\n\r\n- Beating Requiem counted as the wrong chapter.\r\n  The ending credits replay old verses from Chapters II and VI right before\r\n  the results screen, and the game was grabbing those instead of Requiem. So\r\n  finishing Requiem got credited to an earlier chapter by mistake. It now\r\n  credits Requiem correctly every time, which means goals that need Requiem\r\n  finally finish on their own.\r\n\r\n- Fake error messages during the credits.\r\n  Because those replayed credit verses were being mistaken for Requiem, the\r\n  game tried to check verses that don't exist and filled the log with\r\n  \"location isn't in this seed's datapackage\" warnings. Those are gone now.\r\n\r\n- Techniques getting checked off during the intro cutscene.\r\n  In the opening cutscene the game shows off moves like Bullet Climax and\r\n  Breakdance. The game thought YOU had learned them and sent those checks\r\n  early, before you'd earned anything. Techniques now only count when you\r\n  actually buy them at the Gates of Hell.\r\n\r\n- Goals now check themselves constantly.\r\n  Before, a goal was only re-checked the exact moment the results screen\r\n  appeared. If that moment got missed (a fast load, a reconnect), a finished\r\n  goal could go unnoticed. It's now checked every frame, so it completes the\r\n  moment you've met the conditions.\r\n  \r\n### HEADS-UP\r\n\r\n- Watch your goal option. \"chapter_count\" ALSO requires you to beat Requiem.\r\n  If you want a chapter-count goal that does NOT need Requiem, pick\r\n  \"chapter_count_no_requiem\". They're easy to mix up, and choosing the wrong\r\n  one can leave your slot unable to finish even after you've done the chapters.\r\n\r\n### Downloads\r\n\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder too.\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder (replace the old one).\r\n\r\n**Existing seeds keep their original logic** \u2014 location groups, overlay tracking, and crash fixes apply to freshly generated seeds. Old seeds will still play fine with the new DLL, but updated server-side world rules require a regeneration.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues) \u2014 every update is shaped by player feedback.",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.6.6/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "60249ac6ae204b2093d980acf278f0e657e063cb0f9fa73ae0e9e8b9b48d6b71",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6.6",
+      "minimum_ap_version": "0.4.0",
+      "size": 16783,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v1.6.6",
+      "title": "v1.6.6 - Bug Fixes and Small Changes",
+      "version_simple": "1.6.6",
+      "world_version": "1.6.6"
     }
   }
 }

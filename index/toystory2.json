@@ -190,6 +190,21 @@
       "title": "Toy Story 2 AP 2.1.1",
       "version_simple": "2.1.1",
       "world_version": "2.1.1"
+    },
+    "2.1.2": {
+      "created_at": "2026-07-25T06:16:31Z",
+      "description": "# New\r\n- `ts2.lua` now has a debug mode. You can turn it to true if you feel like you're having consistant connection issues, desyncs, or game crashes. (The Bizhawk logs help with this too)\r\n\r\n# Bug Fixes\r\n- The wait time before being able to select a level has increased from 1/10ths of a second to 3/4ths of a second. This window is to ensure you can't access a level you're not supposed to. **If someone else breaks this, I'm going nuclear and forcing the level to end if you're not supposed to be there.**\r\n- TBE has a better trigger for knowing the fight is happening, so now checks should send for this fight every time.\r\n- Save state _SHOULD_ no longer break anything. Every frame you're on the level select, the LUA is checking to make sure you have everything you should have.\r\n\r\n# Known Issues\r\n- Saving the game could potentially freeze the game. There's no need to save since you have the qol save state and the AP will give you everything on a load. Also keep in mind that the PS1 version of this game takes forever to load in general. Give it enough time to think\r\n- Cutscene warping may still be a thing. Do the right thing and leave a level if you're not supposed to be there... but also let me know, this bug is hard to pin down\r\n- The Second Zurg Cutscene doesn't play from a trap. (I fought this one the entire development... I don't care anymore)\r\n- Coinsanity will sometimes cause enemies to blink into existence briefly! Spooky...",
+      "download_url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.1.2/toystory2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7b0a98bf9f2f861a977705be7b552624aeee4b3a8b05aece7e3961e65982249b",
+      "html_url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 3381103,
+      "source_url": "https://api.github.com/repos/imklubb/Archipelago-Toy-Story-2",
+      "tag": "2.1.2",
+      "title": "Toy Story 2 AP 2.1.2",
+      "version_simple": "2.1.2",
+      "world_version": "2.1.2"
     }
   }
 }
