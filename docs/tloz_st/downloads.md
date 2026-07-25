@@ -1,9 +1,12 @@
 # The Legend of Zelda - Spirit Tracks
 
 ## Latest
-- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.8-alpha/tloz_st.apworld">Latest Version (0.7.8a0)</a>
+- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.9/tloz_st.apworld">Latest Version (0.7.9)</a>
 
 ## All Versions
+
+#### v0.7.9
+- <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.9/tloz_st.apworld">https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.9/tloz_st.apworld</a>
 
 #### v0.7.8a0
 - <a href="https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.8-alpha/tloz_st.apworld">https://github.com/DayKat/spirit-tracks/releases/download/st-v0.7.8-alpha/tloz_st.apworld</a>

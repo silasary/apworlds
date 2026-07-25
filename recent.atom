@@ -2,131 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-25T06:55:14.563203+00:00</updated>
+  <updated>2026-07-25T18:24:37.871701+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.3</id>
-    <title>Bayonetta v1.3.0</title>
-    <updated>2026-07-21T23:50:09+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v1.3&#13;
-&#13;
-Major content expansion: all 44 treasure chests are now locations, plus goal options, expanded heart/pearl pools.&#13;
-&#13;
-### Added&#13;
-- **44 Treasure Chest Locations** — Every Umbra Witches' final resting place is now an AP location (IDs 60301‑60345). Opening a chest automatically sends the check; the client detects them by polling the lane‑flag memory addresses mapped during development.&#13;
-- **Goal Options** — Three goal modes available in YAML:&#13;
-  - `all_chapters` — Complete all 17 chapters including Requiem&#13;
-  - `chapter_count` — Complete a set number of chapters (Requiem can be one)&#13;
-  - `boss_rush` — Only the 6 boss chapters + Requiem&#13;
-  &#13;
-           - "Chapter IV: The Cardinal Virtue of Fortitude",&#13;
-           - "Chapter VII: The Cardinal Virtue of Temperance",&#13;
-           - "Chapter XI: The Cardinal Virtue of Justice",&#13;
-           - "Chapter XIII: The Cardinal Virtue of Prudence",&#13;
-           - "Chapter XIV: Isla Del Sol",&#13;
-           - "Chapter XVI: The Lumen Sage",&#13;
-           &#13;
-  - `chapter_count_no_requiem` — Complete X chapters, Requiem not required&#13;
-- **`goal_chapter_count` YAML option** — Sets the target number for count‑based goals (range 1‑17, default 8).&#13;
-- **`include_chests` YAML option** — Toggle treasure chest locations on or off (default on).&#13;
-- **Expanded Heart / Pearl Pool** — Every seed now includes 40 Broken Witch Hearts and 16 Broken Moon Pearls by default, ensuring full HP and MP progression is always possible.&#13;
-&#13;
-### Improved&#13;
-- **Shutdown Sequence** — Should close the game properly now and not leave it running in the background after closing it.&#13;
-- **Goal logic** — Completion conditions now correctly count collected (checked) locations, so count‑based goals trigger as soon as the target is met.&#13;
-&#13;
-### Downloads&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder.&#13;
-- **`z.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **Update both files** — the client and apworld work together for the new chest locations and goal options.&#13;
-&#13;
-**Existing seeds keep their original logic** — goal and chest changes apply to newly generated seeds only. Grab the updated `.apworld` and regenerate to get them.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues) — feedback drives every update.</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.4</id>
-    <title>Bayonetta v1.4.0</title>
-    <updated>2026-07-22T00:23:21+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v1.4&#13;
-&#13;
-The big one since v1.3 — a full generator rewrite that fixes every goal, safer chest/technique handling, three cross-game link protocols, ten traps, a MacGuffin hunt, and a smarter in-game tracker.&#13;
-&#13;
-### What's New&#13;
-&#13;
-**New goal: MacGuffin Hunt** — A configurable number of **Eyes of the World Fragments** are scattered across the multiworld, and you win the moment you've collected enough — no Requiem required, no final boss, just the hunt. **`macguffins_required`** (default 10, range 1–100) sets how many you need, and **`macguffins_total`** (default 15, range 1–100) sets how many exist. Both accept standard AP weighted YAML values (`macguffins_total: {30: 50, random-range-1-100: 20}`). If you ask for more Eyes than the pool can fit, the generator caps them to what fits instead of failing — Ship of Harkinian Triforce Hunt style.&#13;
-&#13;
-**Ten new trap items** — Junk checks can now bite back. The full pool:&#13;
-- **Pickpocket** — Steals up to 10,000 Halos.&#13;
-- **Bloodletting** — Halves your current HP (never kills).&#13;
-- **Fragile Witch** — Sets you to 1 HP. Don't get hit.&#13;
-- **Magic Drain** — Empties your magic gauge.&#13;
-- **Amnesia** — Forgets a random technique you own for 30 seconds, then gives it back.&#13;
-- **Sticky Fingers** — Swipes up to 3 of one random consumable.&#13;
-- **Squish** — Bayonetta gets flattened for 20 seconds. (Makes you slippery and heavy)&#13;
-- **Angel Ambush** — Three random rank-and-file angels spawn on you.&#13;
-- **Grace &amp; Glory** — The claw duo joins your fight.&#13;
-- **???** — Play a session to find out... 💋&#13;
-&#13;
-Ambush enemies queue up if you're in a menu and pounce the moment you're back in gameplay. A new **`trap_percentage`** YAML option (default 15) controls how much of the junk pool becomes traps — set it to 0 for a trap-free seed.&#13;
-&#13;
-**Three new link protocols, all off by default**&#13;
-- **Damage Link** — Damage you take is shared with every other Damage Link player, and theirs with you. Shared damage always leaves you at least 1 HP, so it stings without killing.&#13;
-- **Trap Link** — When a trap fires on you, it fires on every other Trap Link player too. Other games' traps fire the same trap here when Bayonetta has a match, or a random Bayonetta trap when it doesn't — you never sit one out.&#13;
-- **Ring Link** — Halos you collect are shared as rings with other Ring Link players (1 ring = 100 Halos), and their rings become your Halos. Shop purchases are never shared, so buying Rodin won't bankrupt your friends. Batched send/receive summaries keep the log readable when playing next to Sonic worlds.&#13;
-&#13;
-All three can be toggled live from the in-game menu next to Death Link.&#13;
-&#13;
-**Enzo's Pocket Change** — A new junk filler worth exactly 137 Halos. His cut, after expenses.&#13;
-&#13;
-**Smarter tracker tab**&#13;
-- **GO Mode banner** — A gold "★ GO MODE — your goal is one step away!" line appears when you're one clear, one Eye, or one boss short of victory, tuned to whichever goal you picked.&#13;
-- **MacGuffin counter** — On hunt seeds, the tracker header shows "✦ Eyes of the World Fragments: 7 / 10" and turns green once you hit the required count.&#13;
-&#13;
-**Weapon shop logic** — The generator now knows that buying a weapon at the Gates of Hell requires its Golden LP, so it will never hide a progression item behind a weapon you can't buy yet. With Golden LPs turned off, important items are kept out of the weapon shop entirely.&#13;
-&#13;
-**Hint groups** — You can now hint whole categories at once in the client console: `!hint Golden LPs`, `!hint Weapons`, `!hint Chapter Unlocks`, and more.&#13;
-&#13;
-**Chest-free seeds fully supported** — Turning chests off now works cleanly from generation to gameplay: the seed leaves them out, and the game stops watching for them.&#13;
-&#13;
-### Fixed&#13;
-&#13;
-- **Goals didn't match their names** — The goal you picked in your YAML wasn't the goal you actually got: *Chapter Count* generated as *All Chapters*, *Boss Rush* generated as a chapter count, and *No Requiem* still required Requiem. On top of that, the server considered every seed "finished" as soon as Requiem was reachable, no matter your goal. All goals now do exactly what they say and match what the game checks in-game.&#13;
-- **Boss Rush was missing two bosses** — The game only checked 4 of the 6 boss chapters, so Boss Rush could finish early. Chapters XIII and XVI now count like they always should have.&#13;
-- **HP traps and Damage Link were being reverted mid-frame** — Writing HP to one memory slot let the game snap it back from the other on the very next frame, so Bloodletting, Fragile Witch, and incoming shared damage silently did nothing. Both slots are now written together, matching how Death Link already worked.&#13;
-- **Most Halo bundles did nothing** — 7 of the 12 Halo amounts (1,000 / 2,500 / 7,500 / 20,000 / 30,000 / 75,000 / 200,000) were silently thrown away when you received them. They now actually pay out.&#13;
-- **Turning chests off could break the whole multiworld** — Generating with chests disabled could fail outright, and in games with more than one Bayonetta player it could even strip chests from *their* seeds too. Fixed properly.&#13;
-- **Unbeatable seeds with techniques off** — Chapter V requires Beast Within, but with techniques turned off that item didn't exist, so the seed could never be finished. The requirement now only applies when techniques are actually randomized (otherwise you just buy it at the shop like normal).&#13;
-- **Dead items removed** — "Witch Heart (Full)" and "Moon Pearl (Full)" did nothing when received, so they're no longer placed in seeds. (Broken fragments still work and still add up.)&#13;
-- **Item pool always fits** — Extra hearts, pearls, consumable stacks, and Halos now fill the seed to exactly the right size no matter which options you turn off — no more too-many or too-few items.&#13;
-- **Docs corrected** — There are 45 chests, not 44 (Chapter IX has 11).&#13;
-&#13;
-### Download&#13;
-&#13;
-- **`dinput8.dll`** — put this in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **`z.dll`** — put this in your Bayonetta game folder too (next to `Bayonetta.exe`).&#13;
-- **`bayonetta.apworld`** — put this in your Archipelago `custom_worlds` folder (replace the old one).&#13;
-- **You must regenerate** — unlike v1.3.1, this update changes the generator. New games need to be generated with the new `.apworld`. Old seeds will still play fine with the new DLL, but the goal, logic, and new-item additions only apply to freshly generated seeds.&#13;
-&#13;
-### Heads-up&#13;
-&#13;
-- Everyone in the multiworld who plays Bayonetta should be on the new `.apworld` before generating — mixing old and new versions in one generation is asking for trouble.&#13;
-- Fresh-save advice from v1.3.1 still applies: old saves that already own shop items will insta-send those checks on connect.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues) — feedback drives every update.</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.4.1</id>
     <title>Bayonetta v1.4.1</title>
@@ -1405,5 +1285,29 @@ bobwarfare_2.1.0.zip</content>
 - The Second Zurg Cutscene doesn't play from a trap. (I fought this one the entire development... I don't care anymore)&#13;
 - Coinsanity will sometimes cause enemies to blink into existence briefly! Spooky...</content>
     <link href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-93</id>
+    <title>Borderlands 2 v93</title>
+    <updated>2026-07-25T16:07:03+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.4):&#13;
+- fix UT connection issue (hopefully)&#13;
+- infinite backpack as yaml setting&#13;
+- AP travels in fast travel menu &#13;
+- new setting to remove symbols without removing cult of the vault challenges&#13;
+- named enemy locations toggleable&#13;
+- level up checks toggleable (need more options for this in the future)&#13;
+- slot name + seed for .items.txt file</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-93"/>
   </entry>
 </feed>
