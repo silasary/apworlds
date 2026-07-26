@@ -2,45 +2,38 @@
 
 ## Required Software
 
-- [Slime Rancher 2](https://store.steampowered.com/app/1657630/Slime_Rancher_2/) (Steam, version 1.1.0 or later)
-- [BepInEx 6 (IL2CPP x64)](https://github.com/BepInEx/BepInEx/releases) — **must be the IL2CPP build, not the Mono build**
-- [SlimeRancher2-AP mod](https://github.com/Rhelys/SlimeRancher2-AP/releases/latest) — the Archipelago integration mod
+- [Slime Rancher 2](https://store.steampowered.com/app/1657630/Slime_Rancher_2/) (Steam)
+- BepInEx-Unity.IL2CPP x64, bleeding-edge build v755: [Windows and Linux][bepinex-win-linux],
+  [MacOS][bepinex-macos]
+- The `.apworld` file and the SlimeRancher2-AP mod, both from the
+  [SlimeRancher2-AP GitHub releases page][sr2ap-releases]
 
 ## Installation
 
-### 1. Install BepInEx 6
+### 1. Install BepInEx
 
-1. Download the latest **BepInEx 6 IL2CPP x64** release (the file named something like
-   `BepInEx_win-x64_6.x.x.zip`).
-2. Extract the archive directly into your Slime Rancher 2 game folder
-   (e.g. `C:\Program Files (x86)\Steam\steamapps\common\Slime Rancher 2`).
-   After extraction you should see a `BepInEx` folder and `doorstop_config.ini` next to `SlimeRancher2.exe`.
-3. Launch the game once and close it — BepInEx will generate its folder structure and the
-   `BepInEx/interop/` DLLs it needs.
+1. Download the BepInEx build for your OS from the links above.
+2. Extract all of the BepInEx files into the game's root folder — the one containing the
+   game's `.exe`. For Steam users, this is the folder that opens when you right-click
+   Slime Rancher 2, select **Manage**, then **Browse local files**.
+3. **Linux players only:** add `WINEDLLOVERRIDES="winhttp=n,b" %command%` to the game's Steam
+   launch options. To do this, right-click Slime Rancher 2 in Steam, go to **Properties**, and
+   enter it under **Launch Options** on the **General** tab. (Thanks to izzy for the
+   troubleshooting on this!)
+4. Launch the game once, then close it — this lets BepInEx generate its folder structure.
 
 ### 2. Install the SlimeRancher2-AP Mod
 
-1. Download `SlimeRancher2-AP.zip` from the [latest release](https://github.com/Rhelys/SlimeRancher2-AP/releases/latest).
-2. Extract the contents into:
-   ```
-   <SR2 game folder>/BepInEx/plugins/SlimeRancher2-AP/
-   ```
-   The folder should contain `SlimeRancher2-AP.dll` (and companion DLLs).
-3. Launch the game to confirm BepInEx loads the mod — you should see a small connection panel
-   accessible from the **Options** menu.
+1. Download the mod archive from the [SlimeRancher2-AP releases page][sr2ap-releases].
+2. Unzip the mod folder into `BepInEx/Plugins` inside your game folder.
 
 ## Connecting to an Archipelago Server
 
-1. Open Slime Rancher 2 and navigate to the **Options** menu (gear icon on the title screen).
-2. Select the **Archipelago** tab (the AP logo in the category list on the left).
-3. Enter your connection details:
-   - **Host** — server address (e.g. `archipelago.gg`)
-   - **Port** — server port (default `38281`)
-   - **Slot Name** — your player name as set in your YAML options file
-   - **Password** — leave blank if the room has no password
-4. Click **Connect**.  The status line will show `Connected` when successful.
-5. Start a **New Game** while connected — the save slot will be bound to your AP session
-   and will auto-connect on future loads.
+1. Open Slime Rancher 2 and go to **Settings**.  There should be an **Archipelago** menu option.
+2. Enter your connection details (host, port, and slot name) and connect to the server.
+   **You must connect before starting a new game** — connecting after the fact will not bind
+   an existing save to your AP session.
+3. Once connected, start a **New Game** in the slot of your choice and enjoy!
 
 ## Configuring Your YAML
 
@@ -49,7 +42,7 @@ edit it to your liking.  Key options:
 
 | Option | Description |
 |---|---|
-| `goal` | Win condition — `labyrinth_open`, `newbucks`, `prismacore_enter`, `prismacore_stabilize`, or `slimepedia` |
+| `goal` | Win condition — `labyrinth_open`, `newbucks`, `prismacore`, or `slimepedia` |
 | `randomize_pods` | Include Treasure Pods as location checks (default: on) |
 | `randomize_gordos` | Include Gordo Slimes as location checks (default: on) |
 | `randomize_map_nodes` | Include Map Data Nodes (default: on) |
@@ -86,3 +79,7 @@ The mod supports offline play.  If you lose your connection mid-session:
 **BepInEx is not loading**
 : You must use the **IL2CPP x64** BepInEx build.  The Mono (BepInEx 5) build is not
   compatible with Slime Rancher 2.
+
+[bepinex-win-linux]: https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip
+[bepinex-macos]: https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.755%2B3fab71a.zip
+[sr2ap-releases]: https://github.com/Rhelys/SlimeRancher2-AP/releases
