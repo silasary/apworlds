@@ -1,9 +1,12 @@
 # Crystalis
 
 ## Latest
-- <a href="https://github.com/Ars-Ignis/Archipelago/releases/download/v2.0.4-Crystalis/crystalis.apworld">Latest Version (2.0.4rc0.post0)</a>
+- <a href="https://github.com/Ars-Ignis/Archipelago/releases/download/v3.0.0-Crystalis/crystalis.apworld">Latest Version (3.0.0rc0.post0)</a>
 
 ## All Versions
+
+#### v3.0.0rc0.post0
+- <a href="https://github.com/Ars-Ignis/Archipelago/releases/download/v3.0.0-Crystalis/crystalis.apworld">https://github.com/Ars-Ignis/Archipelago/releases/download/v3.0.0-Crystalis/crystalis.apworld</a>
 
 #### v2.0.4rc0.post0
 - <a href="https://github.com/Ars-Ignis/Archipelago/releases/download/v2.0.4-Crystalis/crystalis.apworld">https://github.com/Ars-Ignis/Archipelago/releases/download/v2.0.4-Crystalis/crystalis.apworld</a>

@@ -333,6 +333,21 @@
       "title": "Librarian-AP v1.1.2",
       "version_simple": "1.1.2",
       "world_version": "1.1.2"
+    },
+    "1.1.3": {
+      "created_at": "2026-07-26T03:31:46Z",
+      "description": "## Librarian-AP v1.1.3\r\n\r\nClient-only hotfix. **1.1.2 was released to stop a New Game inheriting the previous run's progress,\r\nand it only fixed part of it.** This completes that fix.\r\n\r\n> ### Update if you are on 1.1.2\r\n>\r\n> **Keep your existing apworld and seed** \u2014 nothing on the generation side changed, so no\r\n> regeneration is needed. Extract the zip and drop `Librarian/` into your Steam install (overwrite).\r\n> The title screen bottom-right should read `LibAP v1.1.3`.\r\n>\r\n> The included apworld is a version-label bump only; grabbing it is optional and changes nothing.\r\n\r\n### What was still broken\r\n\r\nIf you launched the game, let it load an existing save at the title, then pressed **New Game**, the\r\nnew run could still adopt that old save's history \u2014 sending a burst of level-up and row-completion\r\nchecks it had never earned, straight into the multiworld.\r\n\r\n1.1.2 closed two of the paths that did this. Two more were reading the old save directly and were\r\nmissed; both are now closed, along with the underlying rule so it cannot happen a third time.\r\n\r\n### If this happened to your run\r\n\r\nChecks already sent cannot be un-sent by updating. If a run received a burst of items it never\r\nearned, it is best to regenerate and start new.\r\n\r\n### Everything else\r\n\r\nUnchanged from 1.1.2. Your saves, slots and the crash-recovery fix from that release all continue to\r\nwork as they did.\r\n\r\n### If something breaks\r\n\r\nSend `crash_trace.log` (header should read `mod=1.1.3`), the last ~200 lines of `UE4SS.log`, and one\r\nline on what you were doing.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.3/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "cff6044324b91f639174dc8a4094aa89583f26c410e970f1791e50294ef2043e",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/1.1.3",
+      "minimum_ap_version": "0.6.4",
+      "size": 51209,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "1.1.3",
+      "title": "Librarian-AP v1.1.3",
+      "version_simple": "1.1.3",
+      "world_version": "1.1.3"
     }
   }
 }

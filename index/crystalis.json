@@ -3,14 +3,21 @@
     "CodeGorilla"
   ],
   "description": "October 1st, 1997: The END Day. Long after a savage war engulfs and destroys the world, Simea wakes from cryostasis\nto find himself in a strange, post-apocalyptic world. Explore the land and fight against the Goa Empire in this\n1990 NES action role-playing game.",
+  "flags": [
+    "supports_deathlink"
+  ],
   "game": "Crystalis",
   "github": "https://github.com/Ars-Ignis/Archipelago",
   "license": null,
   "manifest_fields": [
     "authors",
+    "flags",
     "minimum_ap_version",
+    "repo_url",
+    "tracker",
     "world_version"
   ],
+  "tracker": "https://github.com/Ars-Ignis/crystalis-randomizer-tracker/releases",
   "versions": {
     "v1.0.0": {
       "created_at": "2024-09-30T03:31:53Z",
@@ -146,6 +153,21 @@
       "title": "Crystalis APWorld v2.0.4",
       "version_simple": "2.0.4",
       "world_version": "2.0.4rc0.post0"
+    },
+    "v3.0.0-Crystalis": {
+      "created_at": "2026-07-22T04:15:21Z",
+      "description": "# New Features\r\n - ## Crystalis Outside of Tower\r\n   When playing with `house_shuffle: true`, the message from Mesia normally found behind Rage and Mesia's room at the top of Tower will be added to the pool of external buildings (i.e. windmill, lighthouse, Tornel's house, beach house, and fisherman's house) and shuffled amongst them. To get Crystalis from Mesia when houses are shuffled, you need all four swords. Crystalis is required to open the final staircase on the Tower to get to Dyna and will automatically open all the other Tower staircases automatically. It's also always at level 3 and always has a Warrior Ring effect applied. It even works while paralyzed, making you effectively immune to paralysis. Crystalis can break any kind of wall and freeze rivers as well, so logically it stands in for any sword. Receiving Crystalis will make the swords and sword upgrades currently in your inventory disappear, but the game will still track what you've received. As such Tornel will still be able to teach you something even if one or both of the upgrades he cares about were removed by Crystalis.\r\n - ## New option: `filler_weights`\r\n   You can now use the `filler_weights` option in your YAML to control what filler items appear in your game. `filler_weights` is a dict, meaning it's a series of entries that will look something like this: `{\"filler item 1\": 10, \"filler item 2\": 5, etc.}` If the weights add up to exactly the number of filler spots in your game (48 on default settings), then exactly the number you specify of each item will be added to the item pool. Otherwise, filler items will be created randomly, using the values you provided as relative weights. For example, in the example above `filler item 1` would be chosen 10/15 = 2/3rds of the time, and `filler item 2` would be chosen 1/3rd of the time.\r\n   \r\n   All consumables except Opel Statue are valid for filler weights, along with all traps. Speaking of...\r\n  - ## New Trap Options\r\n    This update introduces some new traps. In addition to the Mimic that already existed, the following traps can be added by including them in your `filler_weights`:\r\n      - Wild Warp Trap\r\n      - Paralysis Trap\r\n      - Petrify Trap\r\n      - Poison Trap\r\n      - Nuper Trap\r\n      - Sword of Thunder (yes, it counts as a trap when it can teleport you to a random town deep in the middle of Goa Fortress)\r\n    \r\n    The Sword of Thunder items now also have different IDs and names based on which town they will warp you to. These warps *are* considered in logic, so long as you have Teleport or a way to purchase Warp Boots.\r\n    \r\n - ## Additional Universal Tracker Support\r\n   - ### Deferred Entrances\r\n   When playing with House Shuffle, Area Shuffle, or even just GBC Cave, Universal Tracker will now not spoil in advance where any randomized entrances lead if `enforce_deferred_entrances` is set to on or default in the universal_tracker section of your host.yaml.\r\n   - ### Glitched Logic\r\n   Universal tracker will now be able to detect things that are reachable but out-of-logic based on your options. This could be either because of glitches you have enabled but not in-logic, or because of missing upgrades for things that are logically guaranteed (e.g. fighting a boss without the appropriate bracelet when battle magic is guaranteed).\r\n   - ### Race Mode Support\r\n   If race mode was enabled during generation, Universal Tracker will now require that deferred entrances are on, and in addition, will not spoil anything about wall weaknesses, boss weaknesses, randomized trade-ins, or unidentified key items. It will now show items in the tracker for when you can attempt to do one of those things, and only once you successfully do the thing (use a key item, defeat a boss, or break a wall) will those be cleared and logic appropriately updated.\r\n\r\n - ## Miscellaneous Enhancements\r\n   - Locations should now be registered by the client more promptly\r\n   - Items can now be received while standing on invisible trigger tiles\r\n   - An alternate slot name is now baked into the patched ROM and auto detected when connecting to the game, so you no longer need to manually enter your slot name\r\n   - If your patch is downloaded from the room page on the website, it will now have connection information baked in. This and the above item means you can now auto-connect by simply double-clicking the patch file (or using Open Patch in the Archipelago Launcher) when your patched ROM is in the same folder as the patch file.\r\n   \r\n# IMPORTANT NOTE\r\nThis version is incompatible with multiworlds generated with older versions of this APWorld. It is also incompatible with all currently released versions of the PopTracker pack. I am working on an update to that pack, and will be trying to get it out as soon as possible. In the meantime, this game should work perfectly with Universal Tracker, so use that for tracking, if you need it.",
+      "download_url": "https://github.com/Ars-Ignis/Archipelago/releases/download/v3.0.0-Crystalis/crystalis.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d493f205c780663736184fc27552c815575aa5c05bc888a76cecb21529bf3363",
+      "html_url": "https://github.com/Ars-Ignis/Archipelago/releases/tag/v3.0.0-Crystalis",
+      "minimum_ap_version": "0.6.0",
+      "size": 87161,
+      "source_url": "https://api.github.com/repos/Ars-Ignis/Archipelago",
+      "tag": "v3.0.0-Crystalis",
+      "title": "Crystalis APWorld v3.0.0",
+      "version_simple": "3.0.0",
+      "world_version": "3.0.0rc0.post0"
     }
   }
 }
