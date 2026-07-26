@@ -4,7 +4,7 @@ Pikmin 1 yay
 
 
 ## Downloads
-- <a href="https://github.com/Poke714/Archipelago/releases/download/v0.1.0/pikmin.apworld">Latest Version (0.1.0)</a>
+- <a href="https://github.com/TheLynk/Archipelago/releases/download/Pikmin_apworld_V0.5/pikmin.apworld">Latest Version (0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/galdiuz/archipeladoku/releases/download/v2026.07.21/archipeladoku.apworld">Latest Version (2026.7.21)</a>
+- <a href="https://github.com/galdiuz/archipeladoku/releases/download/v2026.07.26/archipeladoku.apworld">Latest Version (2026.7.26)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
