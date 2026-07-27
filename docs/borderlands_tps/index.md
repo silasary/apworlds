@@ -4,7 +4,7 @@ Borderlands The Pre-Sequel is a looter shooter we all love.
 
 
 ## Downloads
-- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-93/borderlands_tps.apworld">Latest Version (93)</a>
+- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-94/borderlands_tps.apworld">Latest Version (94)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

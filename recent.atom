@@ -2,139 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-27T00:32:58.492010+00:00</updated>
+  <updated>2026-07-27T07:13:23.894297+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6</id>
-    <title>Bayonetta v1.6</title>
-    <updated>2026-07-23T01:09:54+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v1.6&#13;
-Witch Time joins the item pool, traps get per-trap control, and technique&#13;
-locations lose their "Shop:" prefix.&#13;
-&#13;
-### What's New&#13;
-&#13;
-**Witch Time as an unlockable item**&#13;
-Witch Time is now a randomized progression item and is **locked from the&#13;
-start of every run**. While locked, a perfect dodge simply doesn't trigger&#13;
-it — the activation is suppressed at the source, so there's no flash, no&#13;
-sound sting, no half-second of slowdown before it cuts out. Dodging still&#13;
-gives you i-frames and dodge offset; you just don't get the reward until&#13;
-the item shows up.&#13;
-&#13;
-Two deliberate carve-outs:&#13;
-- **Bat Within** still performs its dodge and still saves you. It just&#13;
-  doesn't slow time afterwards — a panic button without the payoff.&#13;
-- **Bracelet of Time** still works normally. It's a separate item you have&#13;
-  to find, buy and equip, and a Witch-Time-less run makes it genuinely&#13;
-  worth the accessory slot for once.&#13;
-&#13;
-Witch Time follows the existing **`include_techniques`** option — turn that&#13;
-off and you start with it as usual. It has no dedicated location; the game&#13;
-keeps no ownership flag for it, so unlike the other techniques there's no&#13;
-way for the client to detect you learning it yourself.&#13;
-&#13;
-**Per-trap toggles**&#13;
-A new YAML option, **`trap_weights`**, lets you pick exactly which traps can&#13;
-appear and how common each one is. Set a trap to **0** to switch it off&#13;
-entirely. Values are *relative weights*, not percentages — a trap at 20 is&#13;
-twice as likely as one at 10, and they don't need to add up to anything.&#13;
-Only applies when `trap_percentage` is above 0. Zero everything out and no&#13;
-traps are placed at all, whatever your percentage says.&#13;
-&#13;
-```yaml&#13;
-trap_percentage: 20&#13;
-trap_weights:&#13;
-  Pickpocket Trap: 10&#13;
-  Bloodletting Trap: 0      # off&#13;
-  Fragile Witch Trap: 0     # off&#13;
-  Magic Drain Trap: 10&#13;
-  Amnesia Trap: 5&#13;
-  Sticky Fingers Trap: 10&#13;
-  Squish Trap: 20           # twice as likely as most&#13;
-  Angel Ambush Trap: 10&#13;
-  Grace &amp; Glory Trap: 5&#13;
-  Nemesis Trap: 1           # rare&#13;
-  Alfheim Curse Trap: 5&#13;
-  Berserk Trap: 5&#13;
-  Gracious &amp; Glorious Trap: 1&#13;
-```&#13;
-&#13;
-### Improvements&#13;
-&#13;
-- Technique locations dropped the "Shop:" prefix — `Shop: Learn Bat Within`&#13;
-  is now just `Learn Bat Within`. Location IDs are unchanged, and the&#13;
-  tracker now splits "Shop" and "Techniques" into separate groups.&#13;
-  &#13;
-- Fixed the `Loading...` screen when trying to go to the options menu.&#13;
-&#13;
-### Downloads&#13;
-- **dinput8.dll** — place in your Bayonetta game folder (next to&#13;
-  Bayonetta.exe).&#13;
-- **z.dll** — place in your Bayonetta game folder too.&#13;
-- **bayonetta.apworld** — place in your Archipelago custom_worlds folder&#13;
-  (replace the old one).&#13;
-  &#13;
-**Existing seeds keep their original logic** — tear locations, new traps,&#13;
-verse‑rank challenges, and the scroll fix all apply to freshly generated&#13;
-seeds. Old seeds will still play fine with the new DLL, but the new content&#13;
-needs a regeneration.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues) — every update is&#13;
-shaped by player feedback.&#13;
-&#13;
-WARNING: If you update to this version while playing on a older version your Witch Time will not work! Play on previous release until you generate a new Multiworld with the new apworld.</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-88</id>
-    <title>Borderlands 2 v88</title>
-    <updated>2026-07-23T06:24:30+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
-&#13;
-new stuff (since 0.5.4):&#13;
-- fix UT connection issue (hopefully)</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-88"/>
-  </entry>
-  <entry>
-    <id>https://github.com/GreenPower713/Archipelago/releases/tag/v0.3.0a</id>
-    <title>Keep Talking and Nobody Explodes v0.3.0a0</title>
-    <updated>2026-07-23T07:03:32+00:00</updated>
-    <author>
-      <name>GreenPower713</name>
-    </author>
-    <content>Changelog:&#13;
-&#13;
-- Fix logic issue with Praetorian Pact bomb 5.2 Insanity for 8 and 9 modules solved when hardlock modules is disabled.&#13;
-- Reworked the archipelago.json file to be in-line with the requirements and have versions numbers.</content>
-    <link href="https://github.com/GreenPower713/Archipelago/releases/tag/v0.3.0a"/>
-  </entry>
-  <entry>
-    <id>https://github.com/GreenPower713/Archipelago/releases/tag/v0.3.0b</id>
-    <title>Keep Talking and Nobody Explodes v0.3.0b0</title>
-    <updated>2026-07-23T07:03:32+00:00</updated>
-    <author>
-      <name>GreenPower713</name>
-    </author>
-    <content>Changelog:&#13;
-&#13;
-- Fix a bug where a misplaced parenthesis would create an error</content>
-    <link href="https://github.com/GreenPower713/Archipelago/releases/tag/v0.3.0b"/>
-  </entry>
   <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.4</id>
     <title>Crash Team Racing v0.1.4</title>
@@ -631,6 +503,45 @@ Found a bug or have an idea? [Open an Issue](../../issues) — every update is s
     <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6.6"/>
   </entry>
   <entry>
+    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.0.-beta.1</id>
+    <title>Bayonetta v2.0</title>
+    <updated>2026-07-24T15:12:14+00:00</updated>
+    <author>
+      <name>Boi</name>
+    </author>
+    <content>WARNING: THIS IS A PRE-RELEASE!! I DIDN'T HAVE TIME TO TEST SOME OF THE NEW APWORLD CHANGES SO THINGS MAY BE UNBEATABLE. IF YOU DO USE v2.0 PLEASE GIVE ME FEEDBACK ON ANY BUGS YOU ENCOUNTER.&#13;
+&#13;
+## v2.0&#13;
+&#13;
+Combat item randomization, separated toggle options, tracker refinements, and input enforcement for your Bayonetta Archipelago runs!&#13;
+&#13;
+### What's New&#13;
+&#13;
+**Custom Combat Items**&#13;
+* **New AP Items:** Randomize Punches &amp; Kicks, Double Jumps, Torture Attacks, and Angel Arms into your multiworld. Enable or Disable via YAML!&#13;
+* **Client-Side Enforcement:** BayoHook automatically blocks moves you haven't unlocked yet.&#13;
+* **APWorld Changes:** Requiem is now unlocked when you complete your specific amount of chapters if you choose `chapter_count` as your goal.&#13;
+* **Traps Changes:** Traps will now be sent when you enter a verse, this change was made to stop crashes when loading into a new chapter. This causes all earned items to only send when you go into a new verse. &#13;
+&#13;
+**Bug Fixes &amp; Tracker Updates**&#13;
+* **Chapter VI Fix:** Fixed a generation crash related to Chapter VI rules.&#13;
+* **Requiem Logic:** Fixed a bug where Requiem unlocked too early.&#13;
+* **Tracker Toggle:** Added a filter option to view locked chapters and their unobtained checks greyed out.&#13;
+&#13;
+&#13;
+&#13;
+### Downloads&#13;
+&#13;
+- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
+- **`z.dll`** — place in your Bayonetta game folder too.&#13;
+- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder (replace the old one).&#13;
+&#13;
+**Existing seeds keep their original logic** — updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.&#13;
+&#13;
+Found a bug or have an idea? [Open an Issue](../../issues)!</content>
+    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.0.-beta.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.1.3</id>
     <title>Final Fantasy XIII-2 v0.1.3</title>
     <updated>2026-07-24T16:04:50+00:00</updated>
@@ -979,6 +890,32 @@ Mac and Linux builds require a chmod/xattr command which is included in the READ
     <link href="https://github.com/zane31415/APCowtasticCafe/releases/tag/v1.0.1"/>
   </entry>
   <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-94</id>
+    <title>Borderlands 2 v94</title>
+    <updated>2026-07-26T07:08:09+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.4):&#13;
+- fix UT connection issue (hopefully)&#13;
+- infinite backpack as yaml setting&#13;
+- AP travels in fast travel menu &#13;
+- new setting to remove symbols without removing cult of the vault challenges&#13;
+- named enemy locations toggleable&#13;
+- level up checks toggleable (need more options for this in the future)&#13;
+- slot name + seed for .items.txt file&#13;
+- migrate blgstor to settings dir (sdk_mods/settings/blgstor)&#13;
+- rigged slots purchaseable from earl</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-94"/>
+  </entry>
+  <entry>
     <id>https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.12.0</id>
     <title>Grandia v0.12.0</title>
     <updated>2026-07-26T09:17:20+00:00</updated>
@@ -1266,6 +1203,24 @@ precollected. Regenerate any v0.7.0 seeds.</content>
     <link href="https://github.com/tathxo/DSAP/releases/tag/v0.2.1"/>
   </entry>
   <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.2.2</id>
+    <title>Dark Souls Remastered v0.2.2</title>
+    <updated>2026-07-26T22:31:56+00:00</updated>
+    <author>
+      <name>Noka</name>
+    </author>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <content># **Dark Souls Remastered Archipelago v0.2.2**&#13;
+## Logic Hotfixes&#13;
+### Version update -&gt; 0.2.2. Both apworld and client have updated.&#13;
+**Client is unchanged except for version number, and is compatible with 0.2.x generated apworlds**.&#13;
+* Fix: Fixed 4 kings, After Quelaag, and Demon Firesage access logic rules&#13;
+* Fix: Added watchtower basement exits</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.2.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.0-beta.3</id>
     <title>Pokemon FireRed and LeafGreen Prelease v1.0.2</title>
     <updated>2026-07-27T00:09:46+00:00</updated>
@@ -1300,5 +1255,26 @@ precollected. Regenerate any v0.7.0 seeds.</content>
 - The `base_stats` option does not affect Deoxys attack/defense forms&#13;
 - The Rival battle in Oak's Lab can occasionally softlock the game. Recommend saving before triggering the battle</content>
     <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.0-beta.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.5.4</id>
+    <title>ULTRAKILL v3.5.4</title>
+    <updated>2026-07-27T02:49:47+00:00</updated>
+    <author>
+      <name>TRPG</name>
+    </author>
+    <content>- Added a new option to require a way to break Guttermen shields in logic.&#13;
+- Added a new option to enable speedrunner tech in logic, including glitches, out-of-bounds exploits, and other difficult tricks.&#13;
+	- Work in progress! Only implemented until the end of Layer 3&#13;
+- Options have been sorted into categories.&#13;
+- Completed levels are now synchronized to and from the server.&#13;
+- Individual levels will now be listed in the act summary when unlocked or completed.&#13;
+- Added icons for secret exits in the level select.&#13;
+- All secondary fires are now unlocked while a Quick Charge powerup is active.&#13;
+- All secondary fires are now locked while a Weapon Malfunction trap is active.&#13;
+- Fixed incorrect logic for Streetcleaners in 4-2.&#13;
+- Fixed logic for 4-3: Don't pick up the torch not including the Firestarter.&#13;
+- Fixed the Piercer's secondary fire sometimes becoming usable while locked if a Dual Wield powerup is active.</content>
+    <link href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.5.4"/>
   </entry>
 </feed>

@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.6.6/bayonetta.apworld">Latest Version (1.6.6)</a>
+- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.0.-beta.1/bayonetta.apworld">Latest Version (2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
