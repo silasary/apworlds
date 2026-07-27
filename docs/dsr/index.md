@@ -4,7 +4,7 @@ Dark Souls is a game where you die.
 
 
 ## Downloads
-- <a href="https://github.com/tathxo/DSAP/releases/download/v0.2.0/dsr.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/tathxo/DSAP/releases/download/v0.2.1/dsr.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

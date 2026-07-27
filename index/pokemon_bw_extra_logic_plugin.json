@@ -99,6 +99,21 @@
       "title": "v6 - The Blind Update",
       "version_simple": "1.6.0",
       "world_version": "1.6.0"
+    },
+    "v7": {
+      "created_at": "2026-07-26T19:48:34Z",
+      "description": "**Fix**\r\n* Fixed `dark_areas` logic for multiple areas \r\n\r\n**Update**\r\n* Updated multiple patches to ensure compatibility with the QoL plugin\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:  # same as v6\r\n      add_ss_ticket: true\r\n      add_pass: true\r\n      hm_with_badges: true\r\n      add_rock_smash: true\r\n      add_rock_smash_musharna: true  # requires add_rock_smash\r\n      extra_cut_trees: true\r\n      extra_cut_trees_kyurem: true   # requires extra_cut_trees\r\n      move_strength_boulders: true\r\n      move_strength_boulders_vi_road: true   # requires move_strength_boulders\r\n      dark_areas: [\"Wellspring Cave B1F\", \"Mistralton Cave\", \"Challengers Cave\"]  # supports \"_All\" and \"_Random\", see README\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is compatible with v0.3.37+ of the main BW APworld\r\n* This version is compatible with v21 of the QoL Plugin\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v6...v7",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v7/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ab22a4848e1b9828dcd360f35f6630755dd751d9e98c2f5ff8cb4c74160c723a",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v7",
+      "minimum_ap_version": "0.6.4",
+      "size": 121308,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v7",
+      "title": "v7 - Logic Fixes",
+      "version_simple": "1.7.0",
+      "world_version": "1.7.0"
     }
   }
 }

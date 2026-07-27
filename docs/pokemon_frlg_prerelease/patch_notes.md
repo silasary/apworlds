@@ -1,19 +1,35 @@
 # 1.1.0
 ## Game Updates
+* Using Teleport on the field will return you to the interior of the last Pokémon Center you visited if Pokémon Centers are shuffled 
 * Increased the amount of coins that you can hold to 50000
 * Added 3000 coins and 5000 coins purchase options at the Celadon Game Corner
 * Dexsanity rewards for Pokémon you catch before getting the Pokédex will now be given to you immediately upon getting the Pokédex. You no longer need to get the Pokédex rated by Oak or at a PC
 ## Apworld Updates
+* Converted logic to use Rule Builder (requires AP version 0.6.7 or higher)
 * Updated several region and entrance names for better clarity in the spoiler log and when using UT
+* Option groups have been added
 * New option `skip_intro`
   * Set whether the vanilla intro sequence where you get your starter Pokémon from Oak's Lab should be skipped or not. If the intro is skipped then you will be prompted to select your starter Pokémon during Oak's initial speech
   * This setting is forced on if Random Starting Town or any type of Entrance Randomization is on
+* Updated option `shuffle_pokemon_centers`
+  * Now includes the Player's House though your starting town's Pokémon Center entrance will never lead there
+* Updated option `mix_entrance_warp_pools`
+  * Added `Pokemon Centers` as an option
+    * Your starting town's Pokémon Center entrance is guaranteed to lead to a Pokémon Center
+  * Added `Warp Tiles` as an option
+    * Warp Tiles will only be mixed if using `full` Warp Tiles shuffle
+  * Added `Dropdowns` as an option
+    * Dropdowns will only be mixed is using `full` Dropdown shuffle and entrances/warps are decoupled
 * Updated option `prizesanity`
   * The coin price for purchasing items at the Game Corner Prize Room will now be determined by what item it is
 * Updated option `shop_prices` and `consistent_shop_prices`
   * Now applies to Game Corner Prize Room item purchases as well
+* Updated option `trainersanity`
+  * Split into `kanto_trainersanity` and `sevii_trainersanity` options
 * New option `item_appearance_matches_contents`
   * Changes the color of item balls to match their contents. Green balls contain progression items, blue balls contain useful items, and red balls contain filler or trap items
+* Removed option `modify_world_state`
+  * The options that were originally under this have been broken into individual options to allow greater control over them
 * New option `elevators_condition`
   * Sets the conditions the Celadon Department Store and Silph Co. elevators are in. Has no logical implications unless interior warps are shuffled
     * Open: The elevators can be used normally

@@ -2,256 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-26T18:29:41.779805+00:00</updated>
+  <updated>2026-07-27T00:32:58.492010+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.7.1</id>
-    <title>Hades2Rogue v0.7.1</title>
-    <updated>2026-07-22T17:56:16+00:00</updated>
-    <author>
-      <name>BrittisH39</name>
-    </author>
-    <content>Bug Fixes:&#13;
- - Sisyphus icon mapped incorrectly for the Hades 2 tab.&#13;
- - Hopefully setup the mod to adjust for a version mismatch&#13;
- - If a helper room is rolled and the player hasn't unlocked any helpers, it should now reroll to a different type of room.&#13;
- - Fixed loading order when Archipelago launches to correct for some conflicts with other Apworlds</content>
-    <link href="https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.7.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.23</id>
-    <title>Stardew Valley v8.0.21r2r2</title>
-    <updated>2026-07-22T19:34:02+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content>- One more fix to Legend weather&#13;
-- Fixed cutscenes getting stuck when waiting on an non-existing NPC to emote&#13;
-- Fixed randomized Beach Obelisk exit point going to the wrong tile&#13;
-- Fixed the ability to use a minecart from the "wrong tile" and it not triggering the proper ER</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.23"/>
-  </entry>
-  <entry>
-    <id>https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.0</id>
-    <title>Toy Story 2 v2.1.0</title>
-    <updated>2026-07-22T21:25:56+00:00</updated>
-    <author>
-      <name>imklubb</name>
-    </author>
-    <content># New: Map page in the Archipelago client&#13;
-&#13;
-With [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases) installed, the client now shows a visual map tab alongside the usual in-logic&#13;
-location list. It uses the same maps and pin positions as the PopTracker pack.&#13;
-&#13;
-- All 12 maps, including Level Select and the boss map&#13;
-- Every non-coin location, plus coin locations in both coinsanity modes&#13;
-- Auto-tabs to whichever level you are currently in, using the level info the&#13;
-  client already publishes&#13;
-- Shows what is reachable rather than what you are holding&#13;
-&#13;
-Coin handling depends on your Coinsanity Checks Bundle Size:&#13;
-&#13;
-- **Size 1** (default): each coin is its own check, so coins appear on the map&#13;
-  at their exact positions. It will however, not be able to show you coins&#13;
-  remaining. You'll need the PopTracker for that.&#13;
-- **Size 5 and above**: coins are grouped into `Coin Bundle N` checks. A bundle&#13;
-  covers several coins and has no single position, so each level gets one&#13;
-  "Coin Bundles" pin placed where the PopTracker pack draws its coin counter,&#13;
-  on both the level map and Level Select.&#13;
-&#13;
-Whichever mode a seed uses, the other set of pins is hidden automatically.&#13;
-&#13;
-Note that this is Universal Tracker's map, not the PopTracker pack itself. It&#13;
-reads the apworld's logic directly, so it cannot drift out of sync with the&#13;
-apworld. The PopTracker pack is still the richer standalone tracker.&#13;
-&#13;
-# Music randomizer is now seed-locked&#13;
-&#13;
-Normal mode previously shuffled the track list inside the Lua connector using an&#13;
-unseeded random number generator, so the shuffle changed every time the script&#13;
-reloaded. Disconnecting and reconnecting gave you different music.&#13;
-&#13;
-The mapping is now rolled during generation using the seed's own RNG and sent&#13;
-through slot_data. It is identical on every reconnect, identical for anyone else&#13;
-looking at the same slot, and appears in the spoiler log.&#13;
-&#13;
-# Bug Fixes&#13;
-- **Al's Penthouse coins sending early.** Two coins had incorrect memory&#13;
-addresses, which caused them to send as soon as the level loaded:&#13;
-&#13;
-  - Living Room - Vulture 2: `0x0C3A6E` corrected to `0x0C3802`&#13;
-  - Kitchen - Fridge Door: `0x0C2CEC` corrected to `0x0C350A`&#13;
-&#13;
-- Alleys and Gullies - Central Hub - Zurg Boat 1 also had a stale duplicate&#13;
-address in `coin_data.py`; the two data files now agree everywhere.&#13;
-&#13;
-- **Rocket Boots not re-locking correctly in Alleys and Gullies.** Two container&#13;
-bytes, `0x19E9CC` and `0x19E9CD`, were listed under both the Grappling Hook and&#13;
-Rocket Boots. If you owned the Grappling Hook but not Rocket Boots, the unlock&#13;
-routine wrote zero over the values the lock routine had just written, and since&#13;
-these writes only fire when ownership changes, whichever ran last stuck for the&#13;
-rest of the level visit. The bytes now belong to Rocket Boots alone. This was the&#13;
-only cross-gadget address conflict in the game.&#13;
-&#13;
-- **Laser UI hidden while holding Grappling Hooks.** At Laser level 3 the UI was&#13;
-suppressed, which hid the Grappling Hook count. It is now correctly shows&#13;
-the amount of Grappling Hooks you have&#13;
-&#13;
-## Options&#13;
-&#13;
-The Easy skips description now reads: "Easy is incredibly easy skips that anyone&#13;
-can do. They may require trial and error, but you won't have to try for too&#13;
-long."&#13;
-&#13;
-# Logic&#13;
-- Corrections in the following levels:&#13;
-  - Andy's House&#13;
-  - Al's Space Land (This one was super broken)&#13;
-  - Al's Toy Barn&#13;
-  - Al's Penthouse&#13;
-&#13;
-# Known Issues&#13;
-- Double Jump will sometime works if Buzz is jumping into angled geometry. It's not easy to replicate and probably will never be fixed&#13;
-- Saving the game could potentially freeze the game. There's no need to save since you have the qol save state and the AP will give you everything on a load. Also keep in mind that the PS1 version of this game takes forever to load in general. Give it enough time to think&#13;
-- Cutscene warping may still be a thing. Do the right thing and leave a level if you're not supposed to be there... but also let me know, this bug is hard to pin down&#13;
-- The Second Zurg Cutscene doesn't play from a trap. (I fought this one the entire development... I don't care anymore)&#13;
-- Coinsanity will sometimes cause enemies to blink into existence briefly! Spooky...</content>
-    <link href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.1</id>
-    <title>Toy Story 2 v2.1.1</title>
-    <updated>2026-07-22T21:25:56+00:00</updated>
-    <author>
-      <name>imklubb</name>
-    </author>
-    <content># Bug Fixes&#13;
-- Double Jump suppression is finally fixed. You may find Single Jumps harder to make now. This is by design. The double jump suppression is much much tighter now.&#13;
-&#13;
-# Logic&#13;
-- Corrections in the following levels:&#13;
-  - Construction Yard Race Token. Now requires Double Jump for Easy Skips&#13;
-&#13;
-# Known Issues&#13;
-- Saving the game could potentially freeze the game. There's no need to save since you have the qol save state and the AP will give you everything on a load. Also keep in mind that the PS1 version of this game takes forever to load in general. Give it enough time to think&#13;
-- Cutscene warping may still be a thing. Do the right thing and leave a level if you're not supposed to be there... but also let me know, this bug is hard to pin down&#13;
-- The Second Zurg Cutscene doesn't play from a trap. (I fought this one the entire development... I don't care anymore)&#13;
-- Coinsanity will sometimes cause enemies to blink into existence briefly! Spooky...</content>
-    <link href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/2.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.10.0</id>
-    <title>Grandia v0.9.9r2</title>
-    <updated>2026-07-23T00:36:36+00:00</updated>
-    <author>
-      <name>Grandiarchipelago</name>
-    </author>
-    <content>**What's new:**&#13;
-- Updated + New QOL Shortcuts (Turbo mode / Encounter toggle).&#13;
-- Gameplay Balance options (Vanilla / Redux).&#13;
-- Better Save Gates: Prevent loading a save not linked to the current AP Slot.&#13;
-&#13;
-**Fixes:**&#13;
-- Save load sync broken on Memory Card slot 2.</content>
-    <link href="https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.10.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.1</id>
-    <title>Xenoblade X v0.2.1</title>
-    <updated>2026-07-23T00:44:30+00:00</updated>
-    <author>
-      <name>Maragon</name>
-    </author>
-    <author>
-      <name>Nina</name>
-    </author>
-    <content>- Add support for `Rule Builder`.&#13;
-- Better generation time.&#13;
-- Revert Chapter 12 logic again.&#13;
-- Restructure big parts of the codebase.</content>
-    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.5</id>
-    <title>Bayonetta v1.5</title>
-    <updated>2026-07-23T01:09:54+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v1.5&#13;
-&#13;
-Umbran Tears, three deadly new traps, optional verse‑rank challenges, and a&#13;
-scroll‑locking fix that puts the v1.4 regression to rest.&#13;
-&#13;
-### What's New&#13;
-&#13;
-**Umbran Tears of Blood — 18 Normal‑mode locations**&#13;
-All 18 Umbran Tears that can be collected on Normal difficulty are now proper&#13;
-Archipelago locations, each with its own check. Collecting a crow fires the&#13;
-location check instantly, with the classic red “✓ Tear” notification. A new&#13;
-YAML option, **`include_tears`** (default off), controls them — they’re opt‑in&#13;
-because tears are difficulty‑specific and only Normal is mapped right now.&#13;
-Hard and Non‑Stop ∞ Climax tears can be added in a future update.&#13;
-&#13;
-**Verse Rank (Medal) locations**&#13;
-Every single verse now has an optional bonus location that fires when you&#13;
-achieve the target rank. A new YAML option, **`verse_rank_target`**, lets you&#13;
-choose the grade required — Stone (always on), Bronze, Silver, Gold, Platinum,&#13;
-or Pure Platinum. Rank locations can hold any item, including progression, so&#13;
-aiming high can gate important items behind skilled play. The in‑game Rank&#13;
-Finder tool (Admin → Rank Finder) helps you map rank‑storage addresses if you&#13;
-want to extend it.&#13;
-&#13;
-- So now we have a total of 348 Locations to check!&#13;
-&#13;
-**Three new traps**&#13;
-The mischief pool grows again.&#13;
-- **Alfheim Curse** — You can only survive three more hits before being reduced&#13;
-  to 1 HP. A counter ticks down on‑screen with each blow.&#13;
-- **Berserk** — Every active enemy instantly becomes enraged.&#13;
-- **Gracious &amp; Glorious** — The upgraded claw duo joins the fight. Faster,&#13;
-  meaner, and definitely not Grace &amp; Glory.&#13;
-&#13;
-**Scroll‑bar lock fixed**&#13;
-The chapter‑blocking hook now writes to memory only when the unlock limit&#13;
-actually changes, instead of every frame. This restores normal mouse‑wheel&#13;
-scrolling in the Load Game, Gates of Hell shop, and Chapter Select menus —&#13;
-the lock that crept back in v1.4 is gone.&#13;
-&#13;
-### Improvements&#13;
-&#13;
-- Tear location IDs now match the six‑digit format the apworld uses, so tear&#13;
-  checks display proper names instead of “? Tear”. (From my Bug tests)&#13;
-&#13;
-### Downloads&#13;
-&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to&#13;
-  `Bayonetta.exe`).&#13;
-- **`z.dll`** — place in your Bayonetta game folder too.&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder&#13;
-  (replace the old one).&#13;
-&#13;
-**Existing seeds keep their original logic** — tear locations, new traps,&#13;
-verse‑rank challenges, and the scroll fix all apply to freshly generated&#13;
-seeds. Old seeds will still play fine with the new DLL, but the new content&#13;
-needs a regeneration.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues) — every update is&#13;
-shaped by player feedback.</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.5"/>
-  </entry>
   <entry>
     <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6</id>
     <title>Bayonetta v1.6</title>
@@ -1352,6 +1107,28 @@ report. Applied Pikmin bonuses are now listed by item name instead of raw IDs.&#
     <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.07.26"/>
   </entry>
   <entry>
+    <id>https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.3.0</id>
+    <title>Outer Wilds v1.3.0</title>
+    <updated>2026-07-26T16:32:06+00:00</updated>
+    <author>
+      <name>Ixrec</name>
+    </author>
+    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
+&#13;
+- NomaiVR compatibility work from @theCapypara :&#13;
+	- A "Show Unlock Notification" setting that shows a text notification at the center of the screen whenever an item is unlocked. This is primarily intended for NomaiVR players, since the normal in-game console is difficult to read in VR.&#13;
+	- Normally NomaiVR forces you to wake up facing GD, just like when you wake up in the vanilla game. The randomizer will now actively disable this "feature", since it becomes a bug when the randomizer puts you on another planet or randomizes orbits.&#13;
+	- Reimplements the in-game console to follow the player's view while fixing several cases where it would fail to appear.&#13;
+	- Extend NomaiVR's solution for text input fields in the main menu to also work for the in-game console.&#13;
+	- Fixes NomaiVR's handling of the Translator and Signalscope, especially when ArchipelagoRandomizer prevents you from equipping them.&#13;
+	- Fixes NomaiVR re-enabling the Landing Camera after ArchipelagoRandomizer disables it.&#13;
+	- Edits NomaiVR's ship UI to say when the Signalscope, Scout, and Landing Camera are "not available".&#13;
+- Song of the Universe tracking fixes:&#13;
+	- Fixed Universal Tracker "Go Mode" for Song of the Universe goals&#13;
+	- Fixed an in-game tracker bug that would cause inconsistently crashes on Song of the Universe slots</content>
+    <link href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.3.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/Ars-Ignis/Archipelago/releases/tag/v3.0.1-Crystalis</id>
     <title>Crystalis v3.0.1rc0.post0</title>
     <updated>2026-07-26T17:18:36+00:00</updated>
@@ -1360,5 +1137,168 @@ report. Applied Pikmin bonuses are now listed by item name instead of raw IDs.&#
     </author>
     <content>- fixed bug where having Sword of Thunder in filler_weights with exact filler counts would cause generation to crash</content>
     <link href="https://github.com/Ars-Ignis/Archipelago/releases/tag/v3.0.1-Crystalis"/>
+  </entry>
+  <entry>
+    <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.7</id>
+    <title>Civilization V v0.10.7</title>
+    <updated>2026-07-26T19:31:37+00:00</updated>
+    <author>
+      <name>1313e</name>
+    </author>
+    <content>**Changes/Improvements**:&#13;
+- Added option to enable/disable Super Palace.&#13;
+- Added option groups.&#13;
+&#13;
+**Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.10.6...v0.10.7</content>
+    <link href="https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v7</id>
+    <title>Pokemon BW Extra Logic Plugin v1.7.0</title>
+    <updated>2026-07-26T19:48:34+00:00</updated>
+    <author>
+      <name>RadisNoir</name>
+    </author>
+    <content>**Fix**&#13;
+* Fixed `dark_areas` logic for multiple areas &#13;
+&#13;
+**Update**&#13;
+* Updated multiple patches to ensure compatibility with the QoL plugin&#13;
+&#13;
+**YAML Options List**&#13;
+* The following options need to be added to the Black and White YAML under `plugin_options`:&#13;
+```&#13;
+  plugin_options:&#13;
+    extra_logic:  # same as v6&#13;
+      add_ss_ticket: true&#13;
+      add_pass: true&#13;
+      hm_with_badges: true&#13;
+      add_rock_smash: true&#13;
+      add_rock_smash_musharna: true  # requires add_rock_smash&#13;
+      extra_cut_trees: true&#13;
+      extra_cut_trees_kyurem: true   # requires extra_cut_trees&#13;
+      move_strength_boulders: true&#13;
+      move_strength_boulders_vi_road: true   # requires move_strength_boulders&#13;
+      dark_areas: ["Wellspring Cave B1F", "Mistralton Cave", "Challengers Cave"]  # supports "_All" and "_Random", see README&#13;
+```&#13;
+&#13;
+**Important Notes**&#13;
+* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.&#13;
+* It is not possible to add the extra logic options mid-playthrough.&#13;
+&#13;
+**Backwards Compatibility**&#13;
+* This version is compatible with v0.3.37+ of the main BW APworld&#13;
+* This version is compatible with v21 of the QoL Plugin&#13;
+&#13;
+**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v6...v7</content>
+    <link href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.8.0</id>
+    <title>layer8problem v0.8.0</title>
+    <updated>2026-07-26T20:28:09+00:00</updated>
+    <author>
+      <name>TheZockerBrain069</name>
+    </author>
+    <content>## What changed in the apworld&#13;
+&#13;
+`create_items` no longer truncated the pool after precollecting — that cut&#13;
+the last two entries (3rd copies of Progressive Negative Affection (Gabi)),&#13;
+leaving `Gabi - Rival` and `Gabi - Nemesis` unfillable. The pool is now&#13;
+progression-first and the overflow is taken off the normal-item tail and&#13;
+precollected. Regenerate any v0.7.0 seeds.</content>
+    <link href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.25</id>
+    <title>Stardew Valley v8.0.25</title>
+    <updated>2026-07-26T22:29:11+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Mod&#13;
+- Added an alias for Island SouthEast because the apworld had the wrong capitalization&#13;
+- Fixed back to school trap sometimes giving duplicate professions&#13;
+- Fixed beach to forest shortcut using static warps instead of dynamic&#13;
+- Updated id tables&#13;
+&#13;
+## Apworld&#13;
+- Added missing rules to meeting Juna&#13;
+- Changed ER classification of Juna's door since it requires progression&#13;
+- Implemented currencies in content packs&#13;
+- only DR currencies from enabled content packs&#13;
+- Fixed extended family logic requiring the normal legendary fish&#13;
+- Removed weird duplicate ancient seeds rule&#13;
+- Added missing requirements to the commitment bundle&#13;
+- Fixed Island SouthEast name capitalization</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.25"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.2.1</id>
+    <title>Dark Souls Remastered v0.2.1</title>
+    <updated>2026-07-26T22:31:56+00:00</updated>
+    <author>
+      <name>Noka</name>
+    </author>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <content># **Dark Souls Remastered Apworld &amp; Client v0.2.1**&#13;
+## Hotfix update&#13;
+&#13;
+### Version update -&gt; 0.2.1. Both apworld and client have updated.&#13;
+**This client is compatible with 0.2.0 generated apworlds**.&#13;
+&#13;
+## Fixes:&#13;
+* Fix: Fixed Key to the Seal being unrandomized (which results in early lordvessel unlocking a lot of checks)&#13;
+* Fix: Removed extra messages on shop hint&#13;
+* Fix: Fixed diag output from /lordvessel command displaying wrong game names&#13;
+* Fix: Attempted to revert some overlay changes to address a display issue. If the overlay doesn't work on this client, you may be able to try some window swapping to get it correct, but I would recommend toggling it off instead.</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.0-beta.3</id>
+    <title>Pokemon FireRed and LeafGreen Prelease v1.0.2</title>
+    <updated>2026-07-27T00:09:46+00:00</updated>
+    <author>
+      <name>Vyneras</name>
+    </author>
+    <content>ROM CHECKSUM: `00939B09`&#13;
+&#13;
+[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.1.0-beta.3/worlds/pokemon_frlg_prerelease/docs/setup_en.md)&#13;
+[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.1.0-beta.3/worlds/pokemon_frlg_prerelease/docs/rom%20changes.md)&#13;
+&#13;
+**Game Updates**&#13;
+- Using Teleport on the field will return you to the interior of the last Pokémon Center you visited if Pokémon Centers are shuffled&#13;
+&#13;
+**Apworld Updates**&#13;
+- Updated option `shuffle_pokemon_centers`&#13;
+  - Now includes the Player's House though your starting town's Pokémon Center entrance will never lead there&#13;
+- Updated option `mix_entrance_warp_pools`&#13;
+  - Added `Pokemon Centers` as an option&#13;
+    - Your starting town's Pokémon Center entrance is guaranteed to lead to a Pokémon Center&#13;
+  - Added `Warp Tiles` as an option&#13;
+    - Warp Tiles will only be mixed if using `full` Warp Tiles shuffle&#13;
+  - Added `Dropdowns` as an option&#13;
+    - Dropdowns will only be mixed is using `full` Dropdown shuffle and entrances/warps are decoupled&#13;
+  - Updated option `trainersanity`&#13;
+    - Split into `kanto_trainersanity` and `sevii_trainersanity` options&#13;
+&#13;
+**Bug Fixes**&#13;
+- Fixed an issue where `fly_destination_plando` was sometimes ignored&#13;
+&#13;
+**Known Issues**&#13;
+- The `base_stats` option does not affect Deoxys attack/defense forms&#13;
+- The Rival battle in Oak's Lab can occasionally softlock the game. Recommend saving before triggering the battle</content>
+    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.0-beta.3"/>
   </entry>
 </feed>
