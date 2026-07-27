@@ -1,9 +1,12 @@
 # Factorio Bob&#x27;s
 
 ## Latest
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.2.5/factorio_bobs.apworld">Latest Version (2.2.5)</a>
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.2.6/factorio_bobs.apworld">Latest Version (2.2.6)</a>
 
 ## All Versions
+
+#### v2.2.6
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.2.6/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.2.6/factorio_bobs.apworld</a>
 
 #### v2.2.5
 - <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.2.5/factorio_bobs.apworld">https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.2.5/factorio_bobs.apworld</a>
