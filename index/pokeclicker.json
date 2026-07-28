@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "Hallstead"
+  ],
   "description": "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.\nThis allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.\nThe key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,\nthe player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent.",
   "flags": [
     "unready"
@@ -6,7 +9,11 @@
   "game": "Pokeclicker",
   "github": "https://github.com/Hallstead/AP-Pokeclicker",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "Apworld-v0.1.0": {
       "created_at": "2025-12-13T22:32:01Z",
@@ -50,6 +57,22 @@
       "title": "Apworld-v0.1.2",
       "version_simple": "0.1.2",
       "world_version": "0.1.2"
+    },
+    "Apworld-v0.1.2-Faster": {
+      "created_at": "2026-07-09T19:58:58Z",
+      "description": "This is the same APworld as the previous release, except the internals have been completely rewritten to remove all the bloat.\r\nGeneration should now be much faster.\r\n\r\nPlease note that all bugs that were in the previous release will also be present in this one. It is purely for generation speed.\r\nThe one exception is that I fixed a bug where pokemon found in Victory Road were listed as available even if not all 8 gym badges were found yet.",
+      "download_url": "https://github.com/Hallstead/AP-Pokeclicker/releases/download/Apworld-v0.1.2-Faster/pokeclicker.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b5f149e906a56182ce520e032c01b031c2dbb3f76d9d3ce15d76202633771a74",
+      "html_url": "https://github.com/Hallstead/AP-Pokeclicker/releases/tag/Apworld-v0.1.2-Faster",
+      "minimum_ap_version": "0.6.6",
+      "prerelease": true,
+      "size": 54146,
+      "source_url": "https://api.github.com/repos/Hallstead/AP-Pokeclicker",
+      "tag": "Apworld-v0.1.2-Faster",
+      "title": "Apworld-v0.1.2 (Faster Gen)",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
     }
   }
 }

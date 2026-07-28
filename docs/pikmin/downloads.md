@@ -1,9 +1,12 @@
 # Pikmin
 
 ## Latest
-- <a href="https://github.com/TheLynk/Archipelago/releases/download/Pikmin_apworld_V0.5/pikmin.apworld">Latest Version (0.5)</a>
+- <a href="https://github.com/TheLynk/Archipelago/releases/download/Pikmin_apworld_V0.5.1/pikmin.apworld">Latest Version (0.5.1)</a>
 
 ## All Versions
+
+#### v0.5.1
+- <a href="https://github.com/TheLynk/Archipelago/releases/download/Pikmin_apworld_V0.5.1/pikmin.apworld">https://github.com/TheLynk/Archipelago/releases/download/Pikmin_apworld_V0.5.1/pikmin.apworld</a>
 
 #### v0.5
 - <a href="https://github.com/TheLynk/Archipelago/releases/download/Pikmin_apworld_V0.5/pikmin.apworld">https://github.com/TheLynk/Archipelago/releases/download/Pikmin_apworld_V0.5/pikmin.apworld</a>
