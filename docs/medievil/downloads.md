@@ -17,7 +17,7 @@
 #### v0.2.8r2
 - <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.11/medievil.apworld">https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.11/medievil.apworld</a>
 
-#### v0.2.8r2
+#### v0.2.8r2r2
 - <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.12/medievil.apworld">https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.12/medievil.apworld</a>
 
 #### v0.2.8

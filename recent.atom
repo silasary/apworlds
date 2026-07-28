@@ -2,206 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-28T12:42:29.890988+00:00</updated>
+  <updated>2026-07-28T18:41:46.127096+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6.6</id>
-    <title>Bayonetta v1.6.6</title>
-    <updated>2026-07-24T15:12:14+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>v1.6.6&#13;
-&#13;
-A small bug-fix release. It cleans up three problems that all showed up&#13;
-near the end of a run: beating Requiem, the ending credits, and the intro&#13;
-cutscene.&#13;
-&#13;
-### Bug Fixes&#13;
-&#13;
-- Beating Requiem counted as the wrong chapter.&#13;
-  The ending credits replay old verses from Chapters II and VI right before&#13;
-  the results screen, and the game was grabbing those instead of Requiem. So&#13;
-  finishing Requiem got credited to an earlier chapter by mistake. It now&#13;
-  credits Requiem correctly every time, which means goals that need Requiem&#13;
-  finally finish on their own.&#13;
-&#13;
-- Fake error messages during the credits.&#13;
-  Because those replayed credit verses were being mistaken for Requiem, the&#13;
-  game tried to check verses that don't exist and filled the log with&#13;
-  "location isn't in this seed's datapackage" warnings. Those are gone now.&#13;
-&#13;
-- Techniques getting checked off during the intro cutscene.&#13;
-  In the opening cutscene the game shows off moves like Bullet Climax and&#13;
-  Breakdance. The game thought YOU had learned them and sent those checks&#13;
-  early, before you'd earned anything. Techniques now only count when you&#13;
-  actually buy them at the Gates of Hell.&#13;
-&#13;
-- Goals now check themselves constantly.&#13;
-  Before, a goal was only re-checked the exact moment the results screen&#13;
-  appeared. If that moment got missed (a fast load, a reconnect), a finished&#13;
-  goal could go unnoticed. It's now checked every frame, so it completes the&#13;
-  moment you've met the conditions.&#13;
-  &#13;
-### HEADS-UP&#13;
-&#13;
-- Watch your goal option. "chapter_count" ALSO requires you to beat Requiem.&#13;
-  If you want a chapter-count goal that does NOT need Requiem, pick&#13;
-  "chapter_count_no_requiem". They're easy to mix up, and choosing the wrong&#13;
-  one can leave your slot unable to finish even after you've done the chapters.&#13;
-&#13;
-### Downloads&#13;
-&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **`z.dll`** — place in your Bayonetta game folder too.&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder (replace the old one).&#13;
-&#13;
-**Existing seeds keep their original logic** — location groups, overlay tracking, and crash fixes apply to freshly generated seeds. Old seeds will still play fine with the new DLL, but updated server-side world rules require a regeneration.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues) — every update is shaped by player feedback.</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v1.6.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.0.-beta.1</id>
-    <title>Bayonetta v2.0</title>
-    <updated>2026-07-24T15:12:14+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>WARNING: THIS IS A PRE-RELEASE!! I DIDN'T HAVE TIME TO TEST SOME OF THE NEW APWORLD CHANGES SO THINGS MAY BE UNBEATABLE. IF YOU DO USE v2.0 PLEASE GIVE ME FEEDBACK ON ANY BUGS YOU ENCOUNTER.&#13;
-&#13;
-## v2.0&#13;
-&#13;
-Combat item randomization, separated toggle options, tracker refinements, and input enforcement for your Bayonetta Archipelago runs!&#13;
-&#13;
-### What's New&#13;
-&#13;
-**Custom Combat Items**&#13;
-* **New AP Items:** Randomize Punches &amp; Kicks, Double Jumps, Torture Attacks, and Angel Arms into your multiworld. Enable or Disable via YAML!&#13;
-* **Client-Side Enforcement:** BayoHook automatically blocks moves you haven't unlocked yet.&#13;
-* **APWorld Changes:** Requiem is now unlocked when you complete your specific amount of chapters if you choose `chapter_count` as your goal.&#13;
-* **Traps Changes:** Traps will now be sent when you enter a verse, this change was made to stop crashes when loading into a new chapter. This causes all earned items to only send when you go into a new verse. &#13;
-&#13;
-**Bug Fixes &amp; Tracker Updates**&#13;
-* **Chapter VI Fix:** Fixed a generation crash related to Chapter VI rules.&#13;
-* **Requiem Logic:** Fixed a bug where Requiem unlocked too early.&#13;
-* **Tracker Toggle:** Added a filter option to view locked chapters and their unobtained checks greyed out.&#13;
-&#13;
-&#13;
-&#13;
-### Downloads&#13;
-&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **`z.dll`** — place in your Bayonetta game folder too.&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder (replace the old one).&#13;
-&#13;
-**Existing seeds keep their original logic** — updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues)!</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.0.-beta.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.1.0</id>
-    <title>Bayonetta v2.1.0</title>
-    <updated>2026-07-24T15:12:14+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v2.1.0&#13;
-&#13;
-Draggable overlay windows, custom combat item randomization, inventory synchronization, multiplayer link stability, and world rule refinements for your Bayonetta Archipelago runs!&#13;
-&#13;
-### What's New&#13;
-&#13;
-**Custom Combat Items &amp; AP Expansion**&#13;
-* **New AP Items:** Randomize Punches &amp; Kicks, Double Jumps, Torture Attacks, and Angel Arms into your multiworld. Enable or disable them via YAML.&#13;
-* **Client-Side Enforcement:** BayoHook automatically blocks moves you haven't unlocked yet during active AP sessions.&#13;
-* **Traps Timing:** Traps are now sent when entering a verse to prevent loading crashes when transitioning into a new chapter.&#13;
-&#13;
-**UI &amp; Quality of Life**&#13;
-* **Draggable Overlay Window:** The main BayoHook menu can now be freely clicked and dragged from anywhere within its body for total layout flexibility.&#13;
-* **New Keybind:** Pressing the Insert Key will not hide the bottom right gui incase you don't want to see it.&#13;
-&#13;
-**Goals &amp; World Rules**&#13;
-* **MacGuffin Hunt Requiem Option:** Added a configuration setting requiring the Requiem move to successfully complete the MacGuffin Hunt goal.&#13;
-* **Requiem Unlock Logic:** Requiem is now automatically unlocked when you complete your specified amount of chapters if you choose `chapter_count` as your goal.&#13;
-&#13;
-**New Trap!**&#13;
-* **Fairness and Fearless:** These two have joined the fight!&#13;
-&#13;
----&#13;
-&#13;
-### Bug Fixes &amp; Adjustments&#13;
-&#13;
-* **Audio Stability:** Fixed the bug causing loud game sounds to return unexpectedly. (Hopefully for reals now)&#13;
-* **Accessory &amp; Consumable Fixes:** Resolved issues where accessory checks failed to send, and fixed consumables properly appearing in the inventory and item wheel immediately upon receipt.&#13;
-* **Multiplayer Links:** &#13;
-  * Addressed and resolved problems affecting Damage Link functionality.&#13;
-  * Implemented fixes to correct Death Link echoes and synchronization stability.&#13;
-* **Chapter VI Fix:** Fixed a generation crash related to Chapter VI rules.&#13;
-* **Requiem Logic:** Fixed a bug where Requiem unlocked too early.&#13;
-* **Tracker Updates:** Added a filter option to view locked chapters and their unobtained checks greyed out, alongside general tracker refinements.&#13;
-&#13;
-Warning! Having Punch and Kick as AP Items is kind of unstable right now! if you do a run with those on please tell me any issues you encounter!&#13;
-EDIT: Fixed Fairness and Fearless trap should spawn correctly now.&#13;
----&#13;
-&#13;
-### Downloads&#13;
-&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **`z.dll`** — place in your Bayonetta game folder too.&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder (replace the old one).&#13;
-&#13;
-**Existing seeds keep their original logic** — updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues)!</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.2.0</id>
-    <title>Bayonetta v2.2.0</title>
-    <updated>2026-07-24T15:12:14+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v2.2.0&#13;
-Prologue and chapter progression gating, shop balance adjustments, logic deadlock prevention, Witch Time safeguards, an audio-loop fix, and currency/chapter tracking stabilization for your Bayonetta Archipelago runs!&#13;
-&#13;
-### What's New&#13;
-&#13;
-**Prologue &amp; Chapter Progression Logic**&#13;
-* **Prologue Combat Gating:** The Prologue now requires the combat moves needed to actually clear it. Verse 1 requires **Punch or Kick** (either satisfies it), and Verse 2 / completion additionally require **Torture Attacks**. Each requirement only applies when that category is randomized in your YAML — if a category is off, that move is native and no gate is added, so seeds never deadlock.&#13;
-* **Chapter VII Ungated:** Removed the Beast Within and Witch Time gates from Chapter VII to match verified playthrough progression — the chapter is completable without them.&#13;
-* **Chapter XV Verse Correction:** Fixed Chapter XV (*A Tower to Truth*) to have its correct **14 verses** instead of 15, removing the phantom Verse 15 location and its rank that could never be reached.&#13;
-&#13;
-**Shop &amp; Technique Logic**&#13;
-* **Vanilla Accuracy Alignment:** Removed `Learn Beast Within` and `Bullet Climax` from Rodin's shop location pool to match vanilla Bayonetta 1 progression mechanics where techniques are unlocked via story progression.&#13;
-* **Chapter Gating Exemptions:** Added filtering in `Rules.py` so technique purchases and shop checks skip chapter-verse combat restrictions, preventing placement deadlocks.&#13;
-&#13;
-**Rules &amp; Gating Safeguards**&#13;
-* **Witch Time Gating Bypass:** Updated Alfheim portal rules to safely bypass `Witch Time` requirements when techniques are disabled via YAML configurations.&#13;
-* **Currency &amp; Item Table Expansion:** Added `300,000`, `500,000`, and `1,000,000` Halos as Filler Items to help buy shop items.&#13;
-&#13;
-### Bug Fixes &amp; Adjustments&#13;
-* **Witch Heart Audio Loop:** Fixed a bug where completing the final piece of a Broken Witch Heart could cause the health-upgrade pickup sound to play on a loop, producing a loud buzzing noise. The counter-cleanup now runs only briefly after a grant instead of every frame, so it no longer fights the engine's own write.&#13;
-* **Prologue Completion Tracking:** Fixed a client-side stage-tracking issue in `Archipelago.cpp` where completing the Prologue could fail to register properly during transition screens, ensuring Chapter 1 unlocks and key item pickups function seamlessly.&#13;
-&#13;
-### Todo&#13;
-* **Still need to work on tracker showing only in logic items.&#13;
-&#13;
-### Downloads&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **`z.dll`** — place in your Bayonetta game folder too.&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder (replace the old one).&#13;
-&#13;
-**Existing seeds keep their original logic** — updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues)!</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.1.3</id>
     <title>Final Fantasy XIII-2 v0.1.3</title>
@@ -1164,7 +969,7 @@ Setup Guide : https://github.com/TheLynk/Archipelago/blob/PikminV2/worlds/pikmin
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.8</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2r2</title>
     <updated>2026-07-28T09:32:35+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1188,7 +993,7 @@ No APWorld changes since v1.0.4.</content>
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.2.12</id>
-    <title>Medievil v0.2.8r2</title>
+    <title>Medievil v0.2.8r2r2</title>
     <updated>2026-07-28T10:12:50+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1205,5 +1010,61 @@ No APWorld changes since v1.0.4.</content>
     </author>
     <content/>
     <link href="https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.2.1</id>
+    <title>Medievil 2 v0.2.1</title>
+    <updated>2026-07-28T12:41:57+00:00</updated>
+    <author>
+      <name>RiezaHughes</name>
+    </author>
+    <content/>
+    <link href="https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.3.2</id>
+    <title>pokemon_snap v0.3.2</title>
+    <updated>2026-07-28T14:39:02+00:00</updated>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <content>* Fix Universal Tracker compatibility issues&#13;
+&#13;
+**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.3.1...v0.3.2</content>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.2.2</id>
+    <title>Medievil 2 v0.2.1r2</title>
+    <updated>2026-07-28T16:43:16+00:00</updated>
+    <author>
+      <name>RiezaHughes</name>
+    </author>
+    <content/>
+    <link href="https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.0.0</id>
+    <title>Taskipelago v1.0.0</title>
+    <updated>2026-07-28T17:23:08+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>*Finally out of beta!*&#13;
+&#13;
+## New Features&#13;
+* Description text can be attached to tasks&#13;
+* Added a YAML option to preview task rewards via scouting or hinting&#13;
+* Community YAML Library accessible in YAML Generator&#13;
+&#13;
+## Changes&#13;
+* Added dollar signs to the purchase button to make it more distinctive&#13;
+&#13;
+## Bug Fixes&#13;
+* Fixed a bug where consumable items wouldn't register when placed after filler items&#13;
+&#13;
+## Known Issues&#13;
+* Universal Tracker is unhappy with the structure of the datapackage because of the dynamic nature of Taskipelago's location names. This is aimed to be resolved in a future patch. This is an issue specifically with multiple taskipelago worlds in a single multiworld with shared item or location names.</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.0.0"/>
   </entry>
 </feed>
