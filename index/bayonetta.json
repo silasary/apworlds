@@ -7,7 +7,11 @@
   ],
   "game": "Bayonetta",
   "github": "https://github.com/Boi-027/BayonettaArchipelago",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "main": {
       "created_at": "2026-07-18T09:51:29Z",
@@ -171,6 +175,21 @@
       "title": "v2.0.-beta.1 - Changes to Traps, AP Items, and Client",
       "version_simple": "2.0",
       "world_version": "2.0"
+    },
+    "v2.1.0": {
+      "created_at": "2026-07-24T15:12:14Z",
+      "description": "## v2.1.0\r\n\r\nDraggable overlay windows, custom combat item randomization, inventory synchronization, multiplayer link stability, and world rule refinements for your Bayonetta Archipelago runs!\r\n\r\n### What's New\r\n\r\n**Custom Combat Items & AP Expansion**\r\n* **New AP Items:** Randomize Punches & Kicks, Double Jumps, Torture Attacks, and Angel Arms into your multiworld. Enable or disable them via YAML.\r\n* **Client-Side Enforcement:** BayoHook automatically blocks moves you haven't unlocked yet during active AP sessions.\r\n* **Traps Timing:** Traps are now sent when entering a verse to prevent loading crashes when transitioning into a new chapter.\r\n\r\n**UI & Quality of Life**\r\n* **Draggable Overlay Window:** The main BayoHook menu can now be freely clicked and dragged from anywhere within its body for total layout flexibility.\r\n* **New Keybind:** Pressing the Insert Key will not hide the bottom right gui incase you don't want to see it.\r\n\r\n**Goals & World Rules**\r\n* **MacGuffin Hunt Requiem Option:** Added a configuration setting requiring the Requiem move to successfully complete the MacGuffin Hunt goal.\r\n* **Requiem Unlock Logic:** Requiem is now automatically unlocked when you complete your specified amount of chapters if you choose `chapter_count` as your goal.\r\n\r\n**New Trap!**\r\n* **Fairness and Fearless:** These two have joined the fight!\r\n\r\n---\r\n\r\n### Bug Fixes & Adjustments\r\n\r\n* **Audio Stability:** Fixed the bug causing loud game sounds to return unexpectedly. (Hopefully for reals now)\r\n* **Accessory & Consumable Fixes:** Resolved issues where accessory checks failed to send, and fixed consumables properly appearing in the inventory and item wheel immediately upon receipt.\r\n* **Multiplayer Links:** \r\n  * Addressed and resolved problems affecting Damage Link functionality.\r\n  * Implemented fixes to correct Death Link echoes and synchronization stability.\r\n* **Chapter VI Fix:** Fixed a generation crash related to Chapter VI rules.\r\n* **Requiem Logic:** Fixed a bug where Requiem unlocked too early.\r\n* **Tracker Updates:** Added a filter option to view locked chapters and their unobtained checks greyed out, alongside general tracker refinements.\r\n\r\nWarning! Having Punch and Kick as AP Items is kind of unstable right now! if you do a run with those on please tell me any issues you encounter!\r\nEDIT: Fixed Fairness and Fearless trap should spawn correctly now.\r\n---\r\n\r\n### Downloads\r\n\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder too.\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder (replace the old one).\r\n\r\n**Existing seeds keep their original logic** \u2014 updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues)!",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.1.0/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d93746f1a3a78a2fdb0d0396b01fa7b5f4498b466c8acfa27253cdaf96cbb387",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.1.0",
+      "minimum_ap_version": "0.4.0",
+      "size": 19267,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v2.1.0",
+      "title": "v2.1.0 - APWorld Changes, Bug Fixes, and More!",
+      "version_simple": "2.1.0",
+      "world_version": "2.1.0"
     }
   }
 }

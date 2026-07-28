@@ -8,6 +8,9 @@
 #### v8
 - <a href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/download/Layer8Problem/layer8problem.apworld">https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/download/Layer8Problem/layer8problem.apworld</a>
 
+#### v0.9.0
+- <a href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/download/v0.9.0/layer8problem.apworld">https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/download/v0.9.0/layer8problem.apworld</a>
+
 #### v0.8.0
 - <a href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/download/v0.8.0/layer8problem.apworld">https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/download/v0.8.0/layer8problem.apworld</a>
 
