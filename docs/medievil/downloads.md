@@ -1,9 +1,12 @@
 # Medievil
 
 ## Latest
-- <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.9/medievil.apworld">Latest Version (0.2.9)</a>
+- <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.3.0/medievil.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.3.0/medievil.apworld">https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.3.0/medievil.apworld</a>
 
 #### v0.2.9
 - <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.9/medievil.apworld">https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.9/medievil.apworld</a>
@@ -13,6 +16,9 @@
 
 #### v0.2.8r2
 - <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.11/medievil.apworld">https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.11/medievil.apworld</a>
+
+#### v0.2.8r2
+- <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.12/medievil.apworld">https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.12/medievil.apworld</a>
 
 #### v0.2.8
 - <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.10/medievil.apworld">https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.2.10/medievil.apworld</a>

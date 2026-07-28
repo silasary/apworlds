@@ -190,6 +190,21 @@
       "title": "v2.1.0 - APWorld Changes, Bug Fixes, and More!",
       "version_simple": "2.1.0",
       "world_version": "2.1.0"
+    },
+    "v2.2.0": {
+      "created_at": "2026-07-24T15:12:14Z",
+      "description": "## v2.2.0\r\nPrologue and chapter progression gating, shop balance adjustments, logic deadlock prevention, Witch Time safeguards, an audio-loop fix, and currency/chapter tracking stabilization for your Bayonetta Archipelago runs!\r\n\r\n### What's New\r\n\r\n**Prologue & Chapter Progression Logic**\r\n* **Prologue Combat Gating:** The Prologue now requires the combat moves needed to actually clear it. Verse 1 requires **Punch or Kick** (either satisfies it), and Verse 2 / completion additionally require **Torture Attacks**. Each requirement only applies when that category is randomized in your YAML \u2014 if a category is off, that move is native and no gate is added, so seeds never deadlock.\r\n* **Chapter VII Ungated:** Removed the Beast Within and Witch Time gates from Chapter VII to match verified playthrough progression \u2014 the chapter is completable without them.\r\n* **Chapter XV Verse Correction:** Fixed Chapter XV (*A Tower to Truth*) to have its correct **14 verses** instead of 15, removing the phantom Verse 15 location and its rank that could never be reached.\r\n\r\n**Shop & Technique Logic**\r\n* **Vanilla Accuracy Alignment:** Removed `Learn Beast Within` and `Bullet Climax` from Rodin's shop location pool to match vanilla Bayonetta 1 progression mechanics where techniques are unlocked via story progression.\r\n* **Chapter Gating Exemptions:** Added filtering in `Rules.py` so technique purchases and shop checks skip chapter-verse combat restrictions, preventing placement deadlocks.\r\n\r\n**Rules & Gating Safeguards**\r\n* **Witch Time Gating Bypass:** Updated Alfheim portal rules to safely bypass `Witch Time` requirements when techniques are disabled via YAML configurations.\r\n* **Currency & Item Table Expansion:** Added `300,000`, `500,000`, and `1,000,000` Halos as Filler Items to help buy shop items.\r\n\r\n### Bug Fixes & Adjustments\r\n* **Witch Heart Audio Loop:** Fixed a bug where completing the final piece of a Broken Witch Heart could cause the health-upgrade pickup sound to play on a loop, producing a loud buzzing noise. The counter-cleanup now runs only briefly after a grant instead of every frame, so it no longer fights the engine's own write.\r\n* **Prologue Completion Tracking:** Fixed a client-side stage-tracking issue in `Archipelago.cpp` where completing the Prologue could fail to register properly during transition screens, ensuring Chapter 1 unlocks and key item pickups function seamlessly.\r\n\r\n### Todo\r\n* **Still need to work on tracker showing only in logic items.\r\n\r\n### Downloads\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder too.\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder (replace the old one).\r\n\r\n**Existing seeds keep their original logic** \u2014 updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues)!",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.2.0/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3bf301b17bc1224da2816ef59872f534c935167891eb8f2ace8526888378df5e",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.2.0",
+      "minimum_ap_version": "0.4.0",
+      "size": 17965,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v2.2.0",
+      "title": "v2.2.0 - Progression Logic changes, Bug Fixes, and More!",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0"
     }
   }
 }
