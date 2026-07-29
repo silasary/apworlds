@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.3.2/pokemon_snap.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.4.0/pokemon_snap.apworld">Latest Version (0.4.0)</a>
 
 ## All Versions
+
+#### v0.4.0
+- <a href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.4.0/pokemon_snap.apworld">https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.4.0/pokemon_snap.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.3.2/pokemon_snap.apworld">https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.3.2/pokemon_snap.apworld</a>

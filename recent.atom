@@ -2,108 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-29T00:29:18.324134+00:00</updated>
+  <updated>2026-07-29T07:01:29.546886+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.1</id>
-    <title>The Grinch v1.6.1</title>
-    <updated>2026-07-24T21:30:35+00:00</updated>
-    <author>
-      <name>MarioSpore</name>
-    </author>
-    <author>
-      <name>SomeJakeGuy</name>
-    </author>
-    <content>## Bugfixes&#13;
-- Various generation gremlins gave `RecursiveError` a shout, while Supadow minigame regions refused to wander out. When `supadow_minigames` slept, they still would stick around, and advanced logic event item IDs were finally pinned and found.</content>
-    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.4.1</id>
-    <title>Crash Team Racing v0.1.4.1</title>
-    <updated>2026-07-24T22:39:24+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>﻿# CTR Archipelago v0.1.4.1 (pre-release)
-
-&gt; **Pre-release / stability fix.** This build adds crash protections for an in-race crash family reported since v0.1.4 shipped, plus new performance telemetry to help me chase reported stutters. It is marked pre-release because the crash fixes target rare paths that are hard to trigger on demand: the guards are code-reviewed, build-verified, and mirror a retail-verified sibling handler, but the exact averted-crash moments have not all been exercised in-game. If v0.1.4 is working fine for you, staying on it is a reasonable choice. If you have hit an in-race crash or feel stutters, this build is for you.
-
-## Fixed
-
-- Crash when an explosion catches a dropped TNT or Nitro sitting on a crate spot (reported twice within a day of the v0.1.4 release, both on Oxide Station, via the in-client crash reporter). The handler now checks the crate link the same way the game's own sibling handler does. ([#136](https://github.com/dowlle/ctr-native-ap/pull/136), part of the wider guard sweep tracked in [#137](https://github.com/dowlle/ctr-native-ap/issues/137))
-- Instance creation during thread-pool exhaustion now fails safely instead of crashing one frame later, and logs an `[AP POOL]` line so reports can tell me it happened. ([#136](https://github.com/dowlle/ctr-native-ap/pull/136))
-
-- Two more guards from the same family: the warped-burst weapon explosion and the spider shadow no longer crash if the instance pool is exhausted at their spawn moment. This exact guard content ran a full online multiplayer evening session without issues before release. ([#139](https://github.com/dowlle/ctr-native-ap/pull/139))
-
-## New: performance telemetry (please send me your stutters)
-
-The client now watches its own frame timing and writes rate-limited `[AP PERF]` lines into `ctr-ap.log` when a frame stalls, attributing the stall to the network layer, the seed verifier, or the game engine itself. This costs nothing in normal play and exists purely so stutter reports become diagnosable.
-
-**If you feel stutters, lag spikes, or short hangs: please tell me.** The most useful report is: your `ctr-ap.log` (or a `support-bundle.bat` archive), roughly when it happened, whether you were online in a multiworld or playing alone, and what was going on at that moment (race start, lots of weapons, a music or track change, connecting). Post in the Discord thread or open a GitHub issue.
-
-Thanks to the players who sent crash bundles. The reporter upgrade from v0.1.4 is what made both crashes symbolizable, so if you crash, please do run `support-bundle.bat` and share the archive.
-
-## Compatibility
-
-- **Client-only release.** The v0.1.4 `ctr.apworld` stays current: keep your existing apworld, YAML, seeds, and saves. The guards are purely additive and change nothing in normal play.
-- **Windows-only.** Linux users stay on v0.1.4 for now; these fixes ship for Linux in the next full release.
-
-## Checksums
-
-- `ctr-archipelago-v0.1.4.1-windows-x86.zip`: `df09310833cea540119c08d41159d595a4544ae8f5802f1bad7a0fe23c1a7728`
-
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.5</id>
-    <title>Factorio Bob's v2.2.5</title>
-    <updated>2026-07-24T22:50:18+00:00</updated>
-    <author>
-      <name>Osiris32-and-a-half</name>
-    </author>
-    <content>Sorry for the unprompted hiatus. I do plan on working more on this, life ~~(and gtnh)~~ has just gotten in the way but I should have some more free time to work on this again. ~~(As I have dropped gtnh)~~&#13;
-&#13;
-Next version will hopefully include a new more stable logic and change this project's name to factorio modpack's&#13;
-&#13;
-# Changelog&#13;
-- Updated Bob's mods&#13;
-- Disabled artifacts being in logic for Bob's mods (logic issue again)&#13;
-- No longer searches for facpacks in player folder (I really shouldn't have tried to forced this once I realised how much AP does not care if something is an actual yaml or not)&#13;
-- Fixed crash in built apworld by CosmicWolf (I got it ready and then forgot to publish this before the unprompted hiatus sorry)&#13;
-- Only essential technologies now only show progression/advancement by CosmicWolf &#13;
-- Couple of locale improvements by CosmicWolf &#13;
-- Added 4 more traps by CosmicWolf &#13;
-  - Peek A Tech: Trap items that when received hide all the technologies on the tech screen. Stopping all science for a short while.&#13;
-  - Tech Reset Trap: Trap items that when received resets the process of all technologies, does not unresearch.&#13;
-  - Map Info Reset: Trap items that when received trigger that your map data gets deleted.&#13;
-  - Energy Spiral: Trap items that when received temporarily increases the energy cost and raises pollution produced of all machines.&#13;
-- Some more fixes by CosmicWolf (I have looked through it all but can't tell exactly what some stuff fixes just that it's something)&#13;
-&#13;
-# Bob's mods versions&#13;
-bobassembly_2.1.0.zip&#13;
-bobelectronics_2.1.1.zip&#13;
-bobenemies_2.1.0.zip&#13;
-bobequipment_2.1.0.zip&#13;
-bobgreenhouse_2.1.0.zip&#13;
-bobinserters_2.0.3.zip&#13;
-boblibrary_2.1.0.zip&#13;
-boblogistics_2.1.1.zip&#13;
-bobmining_2.1.0.zip&#13;
-bobmodules_2.1.0.zip&#13;
-bobores_2.1.2.zip&#13;
-bobplates_2.1.1.zip&#13;
-bobpower_2.1.0.zip&#13;
-bobrevamp_2.1.1.zip&#13;
-bobtech_2.1.0.zip&#13;
-bobvehicleequipment_2.1.1.zip&#13;
-bobwarfare_2.1.0.zip</content>
-    <link href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.2.5"/>
-  </entry>
   <entry>
     <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.2.2a</id>
     <title>pokemon_snap v0.2.2a0</title>
@@ -1070,5 +973,58 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
 &#13;
 Make sure to update both the apworld and ss2 mod. Don't update midrun, you should not need to remake your yaml from 0.5.0 or 0.5.1</content>
     <link href="https://codeberg.org/Partatio/SS2-Apworld/releases/tag/0.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.4.0</id>
+    <title>pokemon_snap v0.4.0</title>
+    <updated>2026-07-29T03:29:35+00:00</updated>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <content># New Features&#13;
+* Added Secret Exits as checks&#13;
+* Variety of soft logic changes to make some very hard checks a little easier (thanks @cobyw)&#13;
+* Variety of FAQ updates (thanks @cobyw)&#13;
+* Added default option to exclude RNG based photos from required checks (thanks @cobyw)&#13;
+* Added damaged photos of the missing gen 1 pokemon to the pool as trash items (thanks @cobyw)&#13;
+&#13;
+# Bug Fixes&#13;
+* Universal Tracker v3 compatibility fix (thanks @SomeJakeGuy)&#13;
+* Renamed "\&lt;Pokemon\&gt;: Wonderful!" items to "\&lt;Pokemon\&gt;: Good Technique" because Oak doesn't always say "Wonderful!"&#13;
+&#13;
+**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.3.1...v0.4.0</content>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.15.1</id>
+    <title>Brotato v0.15.0r2</title>
+    <updated>2026-07-29T03:57:14+00:00</updated>
+    <author>
+      <name>Rampaging Hippy</name>
+    </author>
+    <content>## Changed&#13;
+&#13;
+- Increased WebSocket buffer sizes in client mod from 20 MB to 80 MB.&#13;
+  - This should (hopefully) be a bandaid fix until the new WS implementation is ready.</content>
+    <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.15.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03h.1</id>
+    <title>Cuphead v0.2.20020710</title>
+    <updated>2026-07-29T06:00:59+00:00</updated>
+    <author>
+      <name>JKLeckr</name>
+    </author>
+    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
+&#13;
+### Revision&#13;
+&#13;
+This revision adjust logic to allow double jumping for getting coin 1 in Funhouse Frazzle.&#13;
+&#13;
+### Hotfix&#13;
+&#13;
+This hotfix adjusts the manifest version format to be more readable. This does not affect the end user much. Purely for the peace of some folks (like me).&#13;
+</content>
+    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03h.1"/>
   </entry>
 </feed>
