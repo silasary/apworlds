@@ -1,9 +1,12 @@
 # System Shock 2
 
 ## Latest
-- <a href="https://codeberg.org/Partatio/SS2-Apworld/releases/download/0.5.1/ss2.apworld">Latest Version (0.5.1)</a>
+- <a href="https://codeberg.org/Partatio/SS2-Apworld/releases/download/0.5.2/ss2.apworld">Latest Version (0.5.2)</a>
 
 ## All Versions
+
+#### v0.5.2
+- <a href="https://codeberg.org/Partatio/SS2-Apworld/releases/download/0.5.2/ss2.apworld">https://codeberg.org/Partatio/SS2-Apworld/releases/download/0.5.2/ss2.apworld</a>
 
 #### v0.5.1
 - <a href="https://codeberg.org/Partatio/SS2-Apworld/releases/download/0.5.1/ss2.apworld">https://codeberg.org/Partatio/SS2-Apworld/releases/download/0.5.1/ss2.apworld</a>

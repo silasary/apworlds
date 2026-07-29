@@ -2,21 +2,21 @@
 
 ## Where is the options page?
 
-The player options page for this game contains all the options you need to configure and export a config file.
-
-[Enter The Gungeon Player Options Page](../player-options).
+WIP
 
 ## What does randomization do to this game?
-Unlocking chests gives you progression items which make reaching your side goals easier, as well as random guns, items, and traps.
+All chest items replaced with APItem location checks. Milestones for goals like clearing rooms & cash spent send location checks.
+
+Items received in Gungeon are randomized by rarity.
 
 ## What is the goal of Enter The Gungeon when randomized?
-To defeat The Lich or High Dragun depending on goals set, as well as any additional side bosses you may select.
+To defeat all Enter the Gungeon bosses marked in options. These can include: Lich, Dragun, Character Pasts, secret chamber bosses.
 
 ## Which items can be in another player's world?
-All items including progressional items by default.
+Gungeon items randomized in rarity tiers, Character unlocks for Paradox Mode, Curse lowering for Reverse Curse Mode
 
 ## What does another world's item look like in Enter The Gungeon?
-You will receieve messages through the item pickup notification telling you what items you receive as well as send to other players.
+APItem in chests & messages through client. WIP for in-engine messages.
 
 ## When the player receives an item, what happens?
-Items will be dropped on the ground near the player.
+Synergy 'bloop' will play and items will be dropped on the ground near the player.

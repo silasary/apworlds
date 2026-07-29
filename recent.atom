@@ -2,71 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-28T18:41:46.127096+00:00</updated>
+  <updated>2026-07-29T00:29:18.324134+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.1.3</id>
-    <title>Final Fantasy XIII-2 v0.1.3</title>
-    <updated>2026-07-24T16:04:50+00:00</updated>
-    <author>
-      <name>MLSTRM</name>
-    </author>
-    <content>Fix generation when DLC locations are disabled&#13;
-&#13;
-Widen debug logging when enabled</content>
-    <link href="https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.7.2</id>
-    <title>Hades2Rogue v0.7.2</title>
-    <updated>2026-07-24T16:20:35+00:00</updated>
-    <author>
-      <name>BrittisH39</name>
-    </author>
-    <content>### Bugfixes and Adjustments&#13;
-- Fixed a couple bugs that the player was unlikely to ever see.&#13;
-- Made some adjustments to better future-proof&#13;
-- Removed game assets from the client&#13;
-- Wrote a setup guide and general info document within a docs folder in the APWorld&#13;
-- Other minor adjustments&#13;
-### Mod Unchanged, only effects the APWorld</content>
-    <link href="https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.7.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/stubobis1/Archipelago/releases/tag/2.2.0</id>
-    <title>Path of Exile v2.2.0</title>
-    <updated>2026-07-24T18:21:30+00:00</updated>
-    <author>
-      <name>StuBob</name>
-    </author>
-    <content># Path of Exile apworld - 2.1.0 to 2.2.0&#13;
-&#13;
-## Gems &amp; items&#13;
-- Added 3.29 skill/support gems, alt-gem variants, and new base items.&#13;
-- Added Scion's new 3.29 ascendancy, Luminary. Ascendancies-per-class capped at 3 across the board (Scion no longer special-cased at 2).&#13;
-- Added a batch of 3.28 exceptional support gems (filler-only, not required to reach goal).&#13;
-- New "Exceptional Gems" item category, separate from skill/support/utility.&#13;
-- Gem name fixes to match current in-game text: "Pact of K'tash" -&gt; "Pact of K'Tash", "Coursing Currents Support" -&gt; "Coursing Current Support", "Minion Pact Support" -&gt; "Communion Support".&#13;
-- Removed unused jingle sound assets.&#13;
-&#13;
-## Logic fixes&#13;
-- Fixed preset-unlocked gear tiers to grant via Progressive Gear items (not Random Gear) when the progressive_gear option is on, matching existing fallback behavior.&#13;
-- Fixed area location data: removed "Merveil's Lair" (not a valid checkable area), corrected "Weaver's Chambers" -&gt; "The Weaver's Chambers" and "Vaal Ruins" -&gt; "The Vaal Ruins".&#13;
-&#13;
-## Other&#13;
-- Class tree (base class -&gt; ascendancies) now derived from item data instead of hardcoded, so future ascendancy additions surface automatically.&#13;
-- Added test coverage for area-location reachability and boss-defeat/atlas logic.&#13;
-- Docs rewrite (setup guide, world guide).&#13;
-- Bundled client updated to 2.2.0 (see link below).&#13;
-&#13;
-https://github.com/stubobis1/Path-of-Exile-Archipelago-Client/releases/tag/2.2.0&#13;
-&#13;
-**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/2.1.0...2.2.0</content>
-    <link href="https://github.com/stubobis1/Archipelago/releases/tag/2.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.1</id>
     <title>The Grinch v1.6.1</title>
@@ -969,7 +909,7 @@ Setup Guide : https://github.com/TheLynk/Archipelago/blob/PikminV2/worlds/pikmin
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.8</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r2r2</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2r2r2</title>
     <updated>2026-07-28T09:32:35+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1066,5 +1006,69 @@ No APWorld changes since v1.0.4.</content>
 ## Known Issues&#13;
 * Universal Tracker is unhappy with the structure of the datapackage because of the dynamic nature of Taskipelago's location names. This is aimed to be resolved in a future patch. This is an issue specifically with multiple taskipelago worlds in a single multiworld with shared item or location names.</content>
     <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.7.1</id>
+    <title>Crypt of the NecroDancer v0.7.1</title>
+    <updated>2026-07-28T18:36:25+00:00</updated>
+    <author>
+      <name>lastingParadox</name>
+    </author>
+    <content>### Mod Requirements&#13;
+- AP Redux Mod Version 3.1.0&#13;
+&#13;
+### Changes&#13;
+- Add minimum mod version requirement to apworld metadata&#13;
+  - Gates connecting to this apworld from an unsupported mod version. Be sure to update your mod and apworld together folks!&#13;
+- Add more varied connection disconnect reasons&#13;
+  - Being rejected from connecting to the client due to a version mismatch will specify the mod version required&#13;
+- Add `/goal` command, which is now outputted in the client when connecting to the client from the mod-side&#13;
+  - Ex: `Goal progress: Zones (12/24) | Victory condition: Ensemble Mode`&#13;
+- Fix `Progressive Zone Access` keys not propagating the save when connecting to the client&#13;
+- Fix locations being sent when disconnecting from one CotND AP player and reconnecting as a separate CotND AP player in the same session&#13;
+  - All player-specific data is deleted now on the client disconnecting from the server.&#13;
+- Change default `zones` goal from 30 zones to 24 zones&#13;
+  - 6 characters to complete 4 zones each when Amplified isn't enabled&#13;
+- Clear up unused "Crypt of the NecroDancer" client tab, hide `[CotNDServer]` messages in the client&#13;
+&#13;
+Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
+&#13;
+Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
+    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.7.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/tag/v0.6.2</id>
+    <title>Soul Blazer v0.6.2</title>
+    <updated>2026-07-28T20:28:21+00:00</updated>
+    <author>
+      <name>Tranquilite</name>
+    </author>
+    <content>## What's Changed&#13;
+### Client Tweaks&#13;
+* Client: Don't send victory via client to allow continuing to play/clear a seed when release is off.&#13;
+* Client: Allow sending items anytime/anywhere when release cut scenes are off.&#13;
+### Logic: Great Door with Soul Fix&#13;
+* Logic: Leo's Lab Great Door with Soul does not require Door to Models (only 2nd floor access)&#13;
+* Typo: Correct Trail Room -&gt; Trial Room&#13;
+### Base Patch Improvements&#13;
+* Base Patch: Update base patch to correct typo (excercise -&gt; exercise).&#13;
+* Patch Gen: Fix equipment stat scaling addresses.&#13;
+* Patch Gen: Add seed hash to file select screen.&#13;
+&#13;
+&#13;
+**Full Changelog**: &lt;https://github.com/Tranquilite0/Archipelago-SoulBlazer/compare/v0.6.1...v0.6.2&gt;</content>
+    <link href="https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/tag/v0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://codeberg.org/Partatio/SS2-Apworld/releases/tag/0.5.2</id>
+    <title>System Shock 2 v0.5.2</title>
+    <updated>2026-07-28T21:39:32+02:00</updated>
+    <author>
+      <name>Partatio</name>
+    </author>
+    <content>Changed location names to "Level - location" to look nicer in universal tracker, thanks to [Mute-255](https://codeberg.org/Mute-255) for this improvement.&#13;
+&#13;
+Make sure to update both the apworld and ss2 mod. Don't update midrun, you should not need to remake your yaml from 0.5.0 or 0.5.1</content>
+    <link href="https://codeberg.org/Partatio/SS2-Apworld/releases/tag/0.5.2"/>
   </entry>
 </feed>

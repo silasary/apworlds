@@ -371,6 +371,21 @@
       "title": "v0.7.0",
       "version_simple": "0.7.0",
       "world_version": "0.7.0"
+    },
+    "v0.7.1": {
+      "created_at": "2026-07-28T18:36:25Z",
+      "description": "### Mod Requirements\r\n- AP Redux Mod Version 3.1.0\r\n\r\n### Changes\r\n- Add minimum mod version requirement to apworld metadata\r\n  - Gates connecting to this apworld from an unsupported mod version. Be sure to update your mod and apworld together folks!\r\n- Add more varied connection disconnect reasons\r\n  - Being rejected from connecting to the client due to a version mismatch will specify the mod version required\r\n- Add `/goal` command, which is now outputted in the client when connecting to the client from the mod-side\r\n  - Ex: `Goal progress: Zones (12/24) | Victory condition: Ensemble Mode`\r\n- Fix `Progressive Zone Access` keys not propagating the save when connecting to the client\r\n- Fix locations being sent when disconnecting from one CotND AP player and reconnecting as a separate CotND AP player in the same session\r\n  - All player-specific data is deleted now on the client disconnecting from the server.\r\n- Change default `zones` goal from 30 zones to 24 zones\r\n  - 6 characters to complete 4 zones each when Amplified isn't enabled\r\n- Clear up unused \"Crypt of the NecroDancer\" client tab, hide `[CotNDServer]` messages in the client\r\n\r\nPlease see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.\r\n\r\nPlease inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).",
+      "download_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.7.1/cotnd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c087a1da1d3e00629ab6ddd70a4ef3c501558521ee73829ec9d9d48a8c6ee66d",
+      "html_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.7.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 21948120,
+      "source_url": "https://api.github.com/repos/lastingParadox/Archipelago-CotND",
+      "tag": "v0.7.1",
+      "title": "v0.7.1",
+      "version_simple": "0.7.1",
+      "world_version": "0.7.1"
     }
   }
 }
