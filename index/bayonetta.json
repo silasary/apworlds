@@ -205,6 +205,21 @@
       "title": "v2.2.0 - Progression Logic changes, Bug Fixes, and More!",
       "version_simple": "2.2.0",
       "world_version": "2.2.0"
+    },
+    "v2.3.0": {
+      "created_at": "2026-07-24T15:12:14Z",
+      "description": "## v2.3.0\r\nCombat move-restriction overhaul, a crash fix from conflicting internal hooks, a Witch Heart audio-loop fix for in-world completions, accessory shop check reliability, and new crash diagnostics for your Bayonetta Archipelago runs!\r\n\r\n### What's New\r\n**Crash Diagnostics**\r\n* **Crash Dumps & Organized Logs:** If the game crashes, a dump file and log are now written to an `Archipelago Logs` folder placed next to `Bayonetta.exe`, making future issues far easier to track down. All logs are now organized into this folder rather than the game root.\r\n\r\n### Bug Fixes & Adjustments\r\n* **Reliable Combat Move Restrictions:** Locked combat categories (**Punch**, **Kick**, **Torture Attacks**, **Angel Arms**, **Double Jump**) are now filtered cleanly at the source instead of being interrupted mid-animation. This resolves the stuck-state and crash issues that could occur when a restricted move was used during combat.\r\n* **Conflicting Hook Crash:** Fixed a crash where the move-restriction system and BayoHook's own move-swap feature were both modifying the same game instruction, which could destabilize the game and cause random crashes during play. These are now unified into a single hook that handles both correctly.\r\n* **Witch Heart Audio Loop (In-World Pickups):** Fixed a bug where completing a full Broken Witch Heart set (4/4) from an in-world pickup \u2014 such as a heart piece from a chest \u2014 could cause the health-upgrade pickup sound to loop. The completion now resolves cleanly and plays once. \r\n* **Accessory and TechniqueShop Checks:** Purchasing accessories in the shop now reliably sends their location check. Now shows any accessories or techniques that you have received as purchasable items in Gates of Hell.\r\n* **Punches and Kicks:** These now officially don't work until you get the item, you no longer get one kick and punch.\r\n\r\n### Notes\r\n* **Bat Within grants Witch Time:** Dodging with Bat Within will trigger Witch Time even when Witch Time itself is locked. This is intentional and kept as a feature.\r\n* **Locked Torture Attacks:** When Torture Attacks are locked, they no longer deal damage or defeat enemies. However, the attack prompt still appears and the move still consumes magic \u2014 this is a cosmetic leftover with no gameplay effect, and will be addressed in a future update.\r\n* **Witch Heart Audio Loop:** I literally went around collecting so many Broken Witch Hearts, if this doesn't fix it I'm going to cry.\r\n\r\n### Todo\r\n* **Still need to work on tracker showing only in logic items.\r\n* **Torture Attacks prompt/magic cost when locked (cosmetic only).\r\n\r\n### Downloads\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder too.\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder (replace the old one).\r\n\r\n**Existing seeds keep their original logic** \u2014 updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues)!",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.3.0/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "96a558189fb01b087248ba8015960ecbe7cb7d051873923dd062590bb1f7b1f2",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.3.0",
+      "minimum_ap_version": "0.4.0",
+      "size": 17802,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v2.3.0",
+      "title": "v2.3.0 - New Crash Log, Bug Fixes, and More!",
+      "version_simple": "2.3.0",
+      "world_version": "2.3.0"
     }
   }
 }
