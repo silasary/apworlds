@@ -6,11 +6,11 @@
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)
 
-- [r2modman](https://thunderstore.io/c/riskofrain2/p/ebkr/r2modman/) (Or similar mod launcher for thunderstore)
+- [r2modman](https://thunderstore.io/c/riskofrain2/p/ebkr/r2modman/) (or a similar mod launcher for Thunderstore)
 
 - The Hades2Rogue [APWorld](https://github.com/BrittisH39/Hades2Archipelago/releases)
 
-- The Hades2Rogue [mod](https://thunderstore.io/c/hades-ii/p/BrittisH39/Hades2RogueArchipelago/) (Installed via r2modman)
+- The Hades2Rogue [mod](https://thunderstore.io/c/hades-ii/p/BrittisH39/Hades2RogueArchipelago/) (installed via r2modman)
 
 
 
@@ -25,8 +25,8 @@
 
 - Install and launch [r2modman](https://thunderstore.io/c/riskofrain2/p/ebkr/r2modman/).
 - Find and select Hades 2. Select which store you own Hades 2 on. (Epic Games Launcher untested at this time)
-- Select or Create a profile (Name doesn't matter)
-- Select online on the left side, then search and find "Hades2RogueArchipelago".
+- Select or create a profile (name doesn't matter).
+- Select Online on the left side, then search for and find "Hades2RogueArchipelago".
 
 - Select download, then download with dependencies.
 
@@ -34,26 +34,26 @@
 
 ### APWorld
 
-- Launch [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)
-- Drag and Drop the [APWorld](https://github.com/BrittisH39/Hades2Archipelago/releases) onto the Archipelago window.
-- Close and relaunch Archipelago
+- Launch [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases).
+- Drag and drop the [APWorld](https://github.com/BrittisH39/Hades2Archipelago/releases) onto the Archipelago window.
+- Close and relaunch Archipelago.
 
 
 
 ## Configuring Your YAML
 
-- I've done my best to make sure runs are possible regardless of your YAML settings, but I recommend not setting maximum vows unless you are very confident in your Hades 2 skills. You will start the game with nothing, and the logic is set to believe you can at least make it to the boss of each region you have access to.
-- DO NOT enable Zagreus' Journey unless you have Hades 1 installed in the same location you have Hades 2 installed in; alternatively you can use the Zagreus Journey config in r2modman to point to your Hades 1 installation.
+- Runs are designed to be possible regardless of your YAML settings, but it's recommended not to set maximum vows unless you are very confident in your Hades 2 skills. You will start the game with nothing, and the logic is set to believe you can at least make it to the boss of each region you have access to.
+- DO NOT enable Zagreus' Journey unless you have Hades 1 installed in the same location you have Hades 2 installed in; alternatively you can use the Zagreus' Journey config in r2modman to point to your Hades 1 installation.
 
 
 
 ## Connecting to a Game
 
-- Launch Archipelago, and launch the Hades 2 Rogue Client
-- Put in the server your connecting and the port at the top (Example: Archipelago.gg:45829). Hit connect.
+- Launch Archipelago, and launch the Hades 2 Rogue Client.
+- Put in the server you're connecting to and the port at the top (example: Archipelago.gg:45829). Hit connect.
 - Enter your slot name when it asks for it.
 - Once connected, hit "Launch Modded" in r2modman.
-- Launch into a save, ensure the client says "Game connected to Bridge" and enjoy!
+- Launch into a save, ensure the client says "Game connected to Bridge", and enjoy!
 
 
 
