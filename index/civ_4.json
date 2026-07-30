@@ -1,0 +1,44 @@
+{
+  "authors": [
+    "VincentSIFTD"
+  ],
+  "game": "Civilization IV",
+  "github": "https://github.com/VincentBorchardt/Civ4-Archipelago-Mod",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "Alpha": {
+      "created_at": "2026-07-22T04:39:55Z",
+      "description": "### Civilization IV Archipelago Mod Version 0.1 Alpha Test\r\nMy first attempt at releasing this mod to the public, with Techsanity and GPsanity options. Expect plenty of problems, but the point is for other people to stress test them out and give me a break for once.\r\n\r\n### Installation Instructions:\r\n1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.\r\n2. Install the APWorld as normal.\r\n\r\n### Play Instructions:\r\n1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)\r\n2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.\r\n3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking \"Save and Connect.\" If the connection is successful you'll get a popup that says \"Successfully Connected,\" and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**\r\n\r\n### Known Issues:\r\n1. You can still receive techs in Techsanity from ways that aren't traditional research: starting techs from your leader, goody huts, (normal) GP bulbs, and tech trading, and this could lead to duplicates. These are planned to be removed in future updates. Let me know if things break because of them--they shouldn't, but I'm not 100% certain.\r\n2. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill.\r\n3. I had generation errors when creating solo/near-solo multiworlds and high Techsanity Era Gates values--I never tested with higher values with GPsanity working, but keep that in mind if you're having trouble generating.\r\n4. Sending a victory should work, but that is the one kind of check I haven't tested yet--let me know if victories work, and be ready to release if they don't!\r\n5. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.\r\n6. There are a lot of debugging messages left in the mod--I removed some of them, but don't expect a clean feed.\r\n\r\nIf you have any questions, or things I forgot to mention, let me know in the Civilization IV thread in the Archipelago Discord server.\r\n\r\nGithub for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/client/civ_4_client.py",
+      "download_url": "https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/download/Alpha/civ_4.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9a314ac1544809f8cf5503afdb0bb2ba2c6c59f3040b711dc28754f2463692e6",
+      "html_url": "https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha",
+      "minimum_ap_version": "0.6.7",
+      "size": 20399,
+      "source_url": "https://api.github.com/repos/VincentBorchardt/Civ4-Archipelago-Mod",
+      "tag": "Alpha",
+      "title": "Version 0.1 Alpha Test",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "Alpha_0_1_1": {
+      "created_at": "2026-07-25T01:58:47Z",
+      "description": "This release fixes victory conditions not triggering. You need both a new mod and APWorld, but there are no logic changes, so they should be drop-in replacements.\r\n\r\n\r\n### Installation Instructions:\r\n1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.\r\n2. Install the APWorld as normal.\r\n\r\n### Play Instructions:\r\n1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)\r\n2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.\r\n3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking \"Save and Connect.\" If the connection is successful you'll get a popup that says \"Successfully Connected,\" and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**\r\n\r\n### Known Issues:\r\n1. You can still receive techs in Techsanity from ways that aren't traditional research: starting techs from your leader, goody huts, (normal) GP bulbs, and tech trading, and this could lead to duplicates. These are planned to be removed in future updates. Let me know if things break because of them--they shouldn't, but I'm not 100% certain.\r\n2. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill.\r\n3. I had generation errors when creating solo/near-solo multiworlds and high Techsanity Era Gates values--I never tested with higher values with GPsanity working, but keep that in mind if you're having trouble generating.\r\n4. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.\r\n5. There are a lot of debugging messages left in the mod--I removed some of them, but don't expect a clean feed.\r\n\r\nIf you have any questions, or things I forgot to mention, let me know in the Civilization IV thread in the Archipelago Discord server.\r\n\r\nGithub for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/",
+      "download_url": "https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/download/Alpha_0_1_1/civ_4.apworld",
+      "has_manifest": true,
+      "hash_sha256": "625e71701abafe2500cbd33bc8085057659e07152409bcce28a62f42f894b29c",
+      "html_url": "https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_1_1",
+      "minimum_ap_version": "0.6.7",
+      "size": 20517,
+      "source_url": "https://api.github.com/repos/VincentBorchardt/Civ4-Archipelago-Mod",
+      "tag": "Alpha_0_1_1",
+      "title": "Alpha Release Version 0.1.1",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1r2"
+    }
+  }
+}

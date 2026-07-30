@@ -1,0 +1,29 @@
+{
+  "authors": [
+    "T4g1"
+  ],
+  "game": "Tomba!",
+  "github": "https://github.com/T4g1/ArchipelagoTomba",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.0.1-alpha": {
+      "created_at": "2026-07-23T20:08:01Z",
+      "description": "This is the initial **alpha release** introducing multiworld randomizer functionality for *Tomba!* via the Archipelago framework. \r\n\r\n> [!WARNING]\r\n> This release is in an early testing phase. While core progression mechanics are fully functional, you may encounter minor bugs or pacing quirks. Please report any logic errors or generation issues on the issue tracker.\r\n\r\n---\r\n\r\n## \u2728 What's New\r\n\r\n### \ud83d\uddfa\ufe0f World, Progression & Logic Coverage\r\n* **Complete Mapping**: All base game **events**, **items**, and **regions** are fully covered and integrated into the randomizer logic.\r\n* **Archipelago Integration**: Clearing events and getting items serves as location checks to send and receive items across the multiworld.\r\n\r\n### \ud83d\udee0\ufe0f Stability & Softlock Fixes\r\n* **Logic Safeguards**: Some events have been patched to make sure you can no longer soft-lock them:\r\n    * **Where the Barrel Rolls**: The Barrel respawns if you break it\r\n    * **Take Out**: This event is automaticaly cleared if you cleared \"Hide and Go Seek\" (and the reward is dispatched as location check)\r\n    * **Biting Plant Flower**: In the first area after the fog, the blue apple that allows to get that flower early is also respawned upon leaving the area until you hit it and grab the flower\r\n    * **Chests**: Some chests with multiple items are also respawned until both items are acquired correctly\r\n* **Known Exception**: The **\"I'm so Hungry\"** event is currently excluded from these fixes and can still cause a softlock. Use caution when managing food-related progression.\r\n\r\n### \u2699\ufe0f New Slot Options\r\nYou can now configure these new settings in your player YAML:\r\n* `bell_warp`: Allows the Bell to be randomized. Be wary that those can potentialy lead to issues as the event logic is not fool proof yet.\r\n* `keep_blackjack`: Choose whether to keep Tomba's Blackjack weapon from the beginning or randomize it into the item pool.\r\n\r\n### \ud83d\udeab Non-Randomized Elements\r\nTo preserve game stability, the following elements remain in their vanilla states and are **not randomized**:\r\n* The **Furious Tornado** on the mailbox.\r\n* The **Frog** required for the *Take Me Home* event.\r\n\r\n---\r\n\r\n## \ud83d\udd27 Installation\r\n1. Download the source code or the `.apworld` file.\r\n2. Drop it into your Archipelago `custom_worlds/` directory.",
+      "download_url": "https://github.com/T4g1/ArchipelagoTomba/releases/download/v0.0.1-alpha/tomba.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8a0fe467ce7f97b702daa422683bb98654b8bc66202c8e9b81392a11d5cc2172",
+      "html_url": "https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.0.1-alpha",
+      "minimum_ap_version": "0.6.7",
+      "size": 55908,
+      "source_url": "https://api.github.com/repos/T4g1/ArchipelagoTomba",
+      "tag": "v0.0.1-alpha",
+      "title": "Tomba! APWorld 0.0.1 (Alpha)",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1a0"
+    }
+  }
+}
