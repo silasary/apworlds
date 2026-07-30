@@ -24,6 +24,21 @@
       "title": "Tomba! APWorld 0.0.1 (Alpha)",
       "version_simple": "0.0.1",
       "world_version": "0.0.1a0"
+    },
+    "v0.0.2-alpha": {
+      "created_at": "2026-07-27T15:35:22Z",
+      "description": "Second **alpha release** introducing various bug fixes and improvements regarding Archipelago synchronization.\r\n\r\n> [!WARNING]\r\n> This release is in an early testing phase. While core progression mechanics are fully functional, you may encounter minor bugs or pacing quirks. Please report any logic errors or generation issues on the issue tracker.\r\n\r\n---\r\n\r\n## \u2728 What's New\r\n\r\n### \ud83d\udee0\ufe0f Stability & Softlock Fixes\r\n* Rewrote the game interface assembly in order to pop found items from the game only when they have successfully been processed\r\n* Added some more info in the README section\r\n* Fix #6 : Added Section information on Leaf Butterflies and changed numerotation\r\n* Fix #10 : Added a threshold so location that are too far are not checked\r\n* Fixed the Pipe location: The actual item is not required by the game logic so the location can stay without creating a softlock in Baccus Lake\r\n* Fixed Healing mushroom not being harvestable\r\n* Fixed the Mermaid's Singing Rock logic to require a weapon of sort\r\n* Typo in the Motocross section\r\n* Fixed filler items now also giving Lunch Box, Large Lunch Box and Healing Mushroom\r\n* Fixed chest in stormy mountains not respawning if not having grabbed the two wings\r\n* Fix #7 : Manualy trigger the Telescope location upon completing the event as it becomes unpickable once the Look and See!? event is cleared\r\n* Fix: Look and See event was reported accessible without Telescope in the inventory\r\n* Fix #8 : Baron is no longer randomized as it breaks related events\r\n* Changes the location/item association algorithm, location that do not have coordinates are prioritized\r\n* Added regression tests\r\n* Fix #15 \r\n* Fix #13 \r\n* Fix Softlock with the phoenix if phoenix mountain event is cleared\r\n* Fix #17 : Uses The Real Evil Pig event instead of Grandpa's Bracelet which is unreliable due to appearing much later in the cutscene\r\n* Fix #18 : Introducing door manipulation (thanks to bosshunter on Discord) to force Baccus Village accessible once Phoenix Mountain is cleared and starting the Mouse Pig Bag event in order to avoid Softlock\r\n* Fix #14: Verified the item counts and added locations\r\n* Fix entering Hidden Village with Grapple or GrappleJack\r\n* Fix #16 : Pants can now be grabbed and the locations are associated correctly regardless of the current pants Tomba owns\r\n* Fix Flower Seeds not being in logic before forest is cleared\r\n* And probably many other issues I forgot to track\r\n\r\n### \ud83d\udeab Non-Randomized Elements\r\nTo preserve game stability, the following elements remain in their vanilla states and are **not randomized**:\r\n* The **Furious Tornado** on the mailbox.\r\n* The **Frog** required for the *Take Me Home* event.\r\n* **Healing Mushroom** and **Blue Powder** are no longer randomized\r\n\r\n---\r\n\r\n## \ud83d\udd27 Installation\r\n1. Download the source code or the `.apworld` file.\r\n2. Drop it into your Archipelago `custom_worlds/` directory.",
+      "download_url": "https://github.com/T4g1/ArchipelagoTomba/releases/download/v0.0.2-alpha/tomba.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bafcce7af16cae325b57b7188d8860dd0b5c3f01358eec5343a417f4a0f82f64",
+      "html_url": "https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.0.2-alpha",
+      "minimum_ap_version": "0.6.7",
+      "size": 63954,
+      "source_url": "https://api.github.com/repos/T4g1/ArchipelagoTomba",
+      "tag": "v0.0.2-alpha",
+      "title": "Tomba! APWorld 0.0.2 (Alpha)",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
     }
   }
 }

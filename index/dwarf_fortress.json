@@ -179,6 +179,21 @@
       "title": "Dwarfipelago v1.3.0 Release Notes",
       "version_simple": "1.3.0",
       "world_version": "1.3.0"
+    },
+    "1.3.1": {
+      "created_at": "2026-07-29T15:30:38Z",
+      "description": "## Improvements\r\n\r\n- **Completed Location Check Validation**: Implemented a validation check for all checks the AP client has sent, and what the AP server has actually received. This is triggered on a reconnect to the AP server. (implemented to help curb the potential problem that was seen with a charcoal check being missed)\r\n\r\n## Fixes\r\n\r\n- **Craftsanity Craft Count Overlay**: Certain crafted items would not show the */15 counter when not playing with materials enabled.\r\n- **Room Value Detection**: Room value and quality level was not being detected properly for bedrooms, dining halls, quarters, and tombs. \r\n\r\n## Upgrade Notes\r\n\r\n- Update the **mod and the apworld together** to 1.3.1 - versions are match-checked, but your running DF seed will now support compatible versions\r\n- **Regeneration is NOT required**: the location and item set did not change, so existing seeds are compatible with this patch release",
+      "download_url": "https://github.com/EthanTheBrave/Dwarfipelago/releases/download/1.3.1/dwarf_fortress.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bb8eed8b76ed6a558158051b3e8304fbecd748d710c01e884e3b598c84797624",
+      "html_url": "https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.3.1",
+      "minimum_ap_version": "0.4.0",
+      "size": 253808,
+      "source_url": "https://api.github.com/repos/EthanTheBrave/Dwarfipelago",
+      "tag": "1.3.1",
+      "title": "Dwarfipelago v1.3.1 Release Notes",
+      "version_simple": "1.3.1",
+      "world_version": "1.3.1"
     }
   }
 }

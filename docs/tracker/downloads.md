@@ -1,9 +1,12 @@
 # Universal Tracker
 
 ## Latest
-- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.3.2/tracker.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.3.3/tracker.apworld">Latest Version (0.3.3)</a>
 
 ## All Versions
+
+#### v0.3.3
+- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.3.3/tracker.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.3.3/tracker.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.3.2/tracker.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_v0.3.2/tracker.apworld</a>
