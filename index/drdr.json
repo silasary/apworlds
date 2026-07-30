@@ -9,11 +9,7 @@
   "game": "Dead Rising Deluxe Remaster",
   "github": "https://github.com/Str8UpWHITE64/DRAP",
   "license": "MIT",
-  "manifest_fields": [
-    "authors",
-    "minimum_ap_version",
-    "world_version"
-  ],
+  "manifest_fields": [],
   "versions": {
     "0.0.10": {
       "created_at": "2026-01-02T11:53:50Z",
@@ -355,6 +351,20 @@
       "title": "1.0.2 Release",
       "version_simple": "1.0.2",
       "world_version": "1.0.2"
+    },
+    "1.1.0": {
+      "created_at": "2026-07-30T14:50:17Z",
+      "description": "## Logic\r\n\r\nThe bulk of this release. Logic was reworked to model the mall the way the game\r\nactually plays.\r\n\r\n- Entrance Plaza: shutters now gate everything behind them, including the four\r\n  display racks and the Backup for Brad interaction; EP routing restricted to\r\n  real paths\r\n- Maintenance Tunnel modelled in both modes, and the door graph completed in\r\n  both directions\r\n- Microwave and stove checks now sum across reachable zones instead of assuming\r\n  a single area; Seon's stays required in Restricted Item Mode, and received\r\n  food items can stand in for it otherwise\r\n- Region-level logic for level-up checks\r\n- Revised gating for A Promise to Isabela, Out of Control, and Beat Drivin\r\n  Carlito in ScoopSanity\r\n- Backup for Brad can no longer land in the first ScoopSanity chain slot\r\n- Ammo logic revised for the 30/300 bullet checks\r\n- Challenge checks can be satisfied by sent tools outside Restricted Item Mode\r\n- Universal Tracker now adopts the seed's own scoop order when re-generating\r\n\r\n## Options and items\r\n\r\n- New **Cult Limited** toggle\r\n\r\n## Client and stability\r\n\r\n- Fixed the first Connect never completing \u2014 no more pressing Connect twice\r\n- Slot-connect and item delivery deferred a frame, fixing unreliable reads\r\n  during load\r\n- Bundled REFramework updated to v1.5.9.1, which fixes the garbled console\r\n  output and the memory corruption behind it\r\n- Every play session writes its own timestamped log file\r\n- The mod now fails visibly if the client DLL can't load, instead of silently\r\n- Survives prefab registry loss in the world spawner\r\n- Traps fire at most one per area at a time\r\n- Traps, buffs and other unusable items no longer clutter the item list; the\r\n  unused Saves tab is gone\r\n\r\n## Packaging\r\n\r\n- **The zip now includes `reframework/data`.** It was missing from earlier\r\n  releases, which left the mod loading with no item data on a clean install.\r\n- Shipped as a single zip with REFramework, the client library and licences\r\n\r\n## Docs\r\n\r\n- New Beginner's Guide\r\n- New Known Bugs document\r\n- README updated to match the current install layout\r\n\r\n## Known issues\r\n\r\n- **Rescue Simone Ravendark** is force-excluded this release. The rescue\r\n  broke between 1.0.2 and 1.1.0; excluding it keeps the check from stranding\r\n  anyone while the root cause is fixed. Tracked in #16.\r\n\r\n## Upgrading\r\n\r\nExtract the zip over your existing install and let it overwrite \u2014 the\r\n`reframework/data` folder is new and the mod will not work without it.\r\n\r\n## Credits\r\n\r\nLogic work by @Mr-Rippe and @RazgrizEast.",
+      "download_url": "https://github.com/Str8UpWHITE64/DRAP/releases/download/1.1.0/drdr.apworld",
+      "has_manifest": false,
+      "hash_sha256": "9119d99e840849ed8833a8c85c93e256ee853d9ed91b2f8caa898b307a1f0d27",
+      "html_url": "https://github.com/Str8UpWHITE64/DRAP/releases/tag/1.1.0",
+      "size": 460650,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/DRAP",
+      "tag": "1.1.0",
+      "title": "1.1.0 Release",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
     }
   }
 }

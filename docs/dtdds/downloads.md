@@ -1,9 +1,12 @@
 # Door to Door Door Salesman
 
 ## Latest
-- <a href="https://github.com/TheOmnipresence/DoorSalesmanAPWorld/releases/download/0.0.2/dtdds.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/TheOmnipresence/DoorSalesmanAPWorld/releases/download/0.0.3/dtdds.apworld">Latest Version (0.0.2r2)</a>
 
 ## All Versions
+
+#### v0.0.2r2
+- <a href="https://github.com/TheOmnipresence/DoorSalesmanAPWorld/releases/download/0.0.3/dtdds.apworld">https://github.com/TheOmnipresence/DoorSalesmanAPWorld/releases/download/0.0.3/dtdds.apworld</a>
 
 #### v0.0.2
 - <a href="https://github.com/TheOmnipresence/DoorSalesmanAPWorld/releases/download/0.0.2/dtdds.apworld">https://github.com/TheOmnipresence/DoorSalesmanAPWorld/releases/download/0.0.2/dtdds.apworld</a>
