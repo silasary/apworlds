@@ -14,7 +14,7 @@
 #### v0.1.2r2
 - <a href="https://github.com/ksteve35/ScritchyScratchyAP/releases/download/v0.1.2-hotfix.1/scritchy_scratchy.apworld">https://github.com/ksteve35/ScritchyScratchyAP/releases/download/v0.1.2-hotfix.1/scritchy_scratchy.apworld</a>
 
-#### v0.1.2r2
+#### v0.1.2r2r2
 - <a href="https://github.com/ksteve35/ScritchyScratchyAP/releases/download/v0.1.2-hotfix.2-linuxtest.2/scritchy_scratchy.apworld">https://github.com/ksteve35/ScritchyScratchyAP/releases/download/v0.1.2-hotfix.2-linuxtest.2/scritchy_scratchy.apworld</a>
 
 #### v0.1.2

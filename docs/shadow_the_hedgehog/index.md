@@ -7,7 +7,7 @@ Help Shadow find the truth and put a stop the his cursed past from coming back t
 
 
 ## Downloads
-- <a href="https://github.com/choatix/Archipelago/releases/download/shadow-0.4.8/shadow_the_hedgehog.apworld">Latest Version (0.4.8)</a>
+- <a href="https://github.com/choatix/Archipelago/releases/download/shadow-0.4.9/shadow_the_hedgehog.apworld">Latest Version (0.4.9)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -3,26 +3,18 @@
 ## Required Software
 
 - DELTARUNE from the [Steam page](https://store.steampowered.com/app/1671210/)
-  - Require 1.04 (`download_depot 1671210 1671212 5291565625263756968`)
+  - (`download_depot 1671210 1671212 6988415462459025370`)
 - Archipelago from the [Archipelago Releases Page](https://github.com/ArchipelagoMW/Archipelago/releases)
   - Require minimum 0.6.7
 - DELTARUNE APWorld from the [Releases Page](https://github.com/theemeraldsword85/DELTARUNEAP/releases)
   
-## Recommended Software
+## HIGHLY Recommended Software
 
 - Universal Tracker APWorld from the [UT Releases Page](https://github.com/FarisTheAncient/Archipelago/releases)
 
 ## Installation
 
 ### Patching the game
-
-**Requires DELTARUNE 1.04 vanilla *(last public branch on Steam)***
-
-**If you've updated to Chapter 5, do the following to downpatch your base DELTARUNE:**
-
-- Open the steamconsole (Windows + R `steam://nav/console`)
-- Type `download_depot 1671210 1671212 5291565625263756968`
-- Follow the rest of the Setup guide. But use `/auto_patch steamdepot` instead of `/auto_patch steaminstall`
 
 Download the APWorld and place it into archipelago/custom_worlds (Double clicking the APWorld will also work!)
 
@@ -38,10 +30,7 @@ Next, go to your Archipelago folder either by finding it yourself or by clicking
 
 #### Linux users
 
-**Linux is currently not supported as it will disconnect you from the server few seconds after connection**
-
-The Linux installation is mostly similar, however, DELTARUNE will be installed on Steam as the Linux 
-variant.
+The Linux installation is mostly similar, however, DELTARUNE will be installed on Steam as the Linux variant.
 
 Since this randomizer only supports the Windows version, we must fix this, by right-click the game in Steam, going to `Properties -> Compatibility`, and checking `Force the use of a specific Steam Play compatibility tool`.
 
@@ -65,9 +54,10 @@ Not required, but you can also open the DELTARUNE Text Client in the Archipelago
 
 #### Linux users
 
-**On Steam (via Proton)**: This assumes the game is in a Steam Library folder.  Right-click DELTARUNE, go to `Manage -> 
-Browse Local Files`. Go up the directories to the `steamapps` folder, open `compatdata/1671210` (1671210 is the "magic number" for
-DELTARUNE in Steam).  Save data from here is at `/pfx/drive_c/users/steamuser/AppData/Local/DELTARUNE`.
+Linux users require the usage of a proxy. Start the Archipelago Deltarune Client, then connect to the room and use the command `/linux_proxy`. You should now be able to connect with the window method with `localhost` for host and `1225` as port.
 
-**Through WINE directly**: This depends on the prefix used.  If it is default, then the save data is located at
+**On Steam (via Proton)**: This assumes the game is in a Steam Library folder.  Right-click DELTARUNE, go to `Manage -> Browse Local Files`. Go up the directories to the `steamapps` folder, open `compatdata/1671210` (1671210 is the "magic number" for
+DELTARUNE in Steam). Save data from here is at `/pfx/drive_c/users/steamuser/AppData/Local/DELTARUNE`.
+
+**Through WINE directly**: This depends on the prefix used. If it is default, then the save data is located at
 `/home/USERNAME/.wine/drive_c/users/USERNAME/AppData/Local/DELTARUNE`.

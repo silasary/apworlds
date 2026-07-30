@@ -2,61 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-30T07:03:00.806305+00:00</updated>
+  <updated>2026-07-30T12:41:46.230314+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.9.0</id>
-    <title>Harry Potter 2 PC v2.9.0</title>
-    <updated>2026-07-26T15:25:57+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content>## Harry Potter 2 PC v2.9.0&#13;
-&#13;
-**The mod now installs itself!** The compiled game mod ships inside the apworld: when the client connects to a seed, it installs the mod and patches your INIs (`Default.ini`, `HP.ini`, `Game.ini`) automatically. No more separate mod download or manual config editing (And no more languages being broken). You can also trigger it manually with `/installmod` in the client. Setup is now just: apworld in `custom_worlds`, connect, play.&#13;
-&#13;
-**New option: running logic tiers.** `allow_running_logic` is now a three-way choice: **off / on / difficult**. The trickier running shortcuts (Castle Exterior, Gryffindor Challenge Star 2, and reaching the Forbidden Forest / Quidditch matches by running) have moved to the new **difficult** tier. Plain "on" is just for all more logical and easy running logic that dont need an explanation ;)&#13;
-&#13;
-**Logic fixes:**&#13;
-- Gold Card Room: the five back cards and the Complete now require **Lumos + Flipendo**.&#13;
-- Quidditch Match 3 (Slytherin) now requires the **Bicorn level key** in vanilla.</content>
-    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.9.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.3.0</id>
-    <title>Outer Wilds v1.3.0</title>
-    <updated>2026-07-26T16:32:06+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
-&#13;
-- NomaiVR compatibility work from @theCapypara :&#13;
-	- A "Show Unlock Notification" setting that shows a text notification at the center of the screen whenever an item is unlocked. This is primarily intended for NomaiVR players, since the normal in-game console is difficult to read in VR.&#13;
-	- Normally NomaiVR forces you to wake up facing GD, just like when you wake up in the vanilla game. The randomizer will now actively disable this "feature", since it becomes a bug when the randomizer puts you on another planet or randomizes orbits.&#13;
-	- Reimplements the in-game console to follow the player's view while fixing several cases where it would fail to appear.&#13;
-	- Extend NomaiVR's solution for text input fields in the main menu to also work for the in-game console.&#13;
-	- Fixes NomaiVR's handling of the Translator and Signalscope, especially when ArchipelagoRandomizer prevents you from equipping them.&#13;
-	- Fixes NomaiVR re-enabling the Landing Camera after ArchipelagoRandomizer disables it.&#13;
-	- Edits NomaiVR's ship UI to say when the Signalscope, Scout, and Landing Camera are "not available".&#13;
-- Song of the Universe tracking fixes:&#13;
-	- Fixed Universal Tracker "Go Mode" for Song of the Universe goals&#13;
-	- Fixed an in-game tracker bug that would cause inconsistently crashes on Song of the Universe slots</content>
-    <link href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ars-Ignis/Archipelago/releases/tag/v3.0.1-Crystalis</id>
-    <title>Crystalis v3.0.1rc0.post0</title>
-    <updated>2026-07-26T17:18:36+00:00</updated>
-    <author>
-      <name>CodeGorilla</name>
-    </author>
-    <content>- fixed bug where having Sword of Thunder in filler_weights with exact filler counts would cause generation to crash</content>
-    <link href="https://github.com/Ars-Ignis/Archipelago/releases/tag/v3.0.1-Crystalis"/>
-  </entry>
   <entry>
     <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.7</id>
     <title>Civilization V v0.10.7</title>
@@ -726,7 +676,7 @@ Make sure to update both the apworld and ss2 mod. Don't update midrun, you shoul
   </entry>
   <entry>
     <id>https://github.com/ksteve35/ScritchyScratchyAP/releases/tag/v0.1.2-hotfix.2-linuxtest.2</id>
-    <title>scritchy_scratchy v0.1.2r2</title>
+    <title>scritchy_scratchy v0.1.2r2r2</title>
     <updated>2026-07-28T22:06:01+00:00</updated>
     <author>
       <name>ksteve35</name>
@@ -831,10 +781,12 @@ Squash Trap introduction with multi-phase cartoon flattening, robust animation f
 &#13;
 ### What's New&#13;
 **Squash Trap:** You now get flattened as if Golden squashed you.&#13;
+**Removed Double Jump as AP Item**&#13;
 &#13;
 ### Bug Fixes &amp; Adjustments&#13;
 * **Connection Persistence:** Added automatic local configuration saving and loading (`ap_config.txt`) so your server address, port, and slot name remember themselves across game restarts.&#13;
 * **Broken Witch Heart Noise:** After much trial and error the Heart noise SHOULD be fixed.&#13;
+* **Logic should be somewhat fixed now**&#13;
 &#13;
 ### Notes&#13;
 * **Regeneration Required:** New trap items and rules require a fresh multiworld generation (`bayonetta.apworld`). Existing seeds will not contain the Squash Trap in their item pools.&#13;
@@ -977,6 +929,35 @@ Install guide and more information is in the [AP world Info Document](https://gi
     <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.1"/>
   </entry>
   <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.5</id>
+    <title>CrossCode v0.9.5</title>
+    <updated>2026-07-30T06:20:57+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content>## Changes to Logic&#13;
+&#13;
+* Modified **Faj'ro Temple** and **Grand Krys'kajo** logic (#90, @Valkhiya).&#13;
+  * Both temples now have their initial doors leading to the middle of the temple unlocked by default.&#13;
+  * Now, completing the left and right branches of the first floor of each temple, instead of unlocking the next part of the dungeon, spawns a chest.&#13;
+  * This relaxes the number of required elements needed to finish these temples, leading to more possible logical permutations.&#13;
+  * **Note:** These patches are not applied conditionally. If you generated on 0.9.4 or before and you want to avoid going out of logic, you will have to enforce this on your own by only accessing the second floor of the dungeons only after completing both branches.&#13;
+* Removed Chest Lock Randomization from **Mine U2: Frozen Chamber 2 Right**, **Faj'ro 3F: Large Fire Chamber Right**, and **So'najiz U1: Trial of Persistence Lower Left** (#91, @CodeTriangle).&#13;
+  * These chests are the game's introduction to the concept of using **Thief's Key**, **Silver Key**, and **Radiant Key** respectively, meaning that they control barriers to progression.&#13;
+  * When **Chest Lock Randomization** was enabled, however, these chests would generate with a random level, causing a long-standing logic bug.&#13;
+  * Now, these chests will always generate with their default level, ensuring logical accuracy.&#13;
+&#13;
+## Fixes to Generation&#13;
+&#13;
+* Do not create regions that will not be used in the rando (CodeTriangle/Archipelago#26, #92, @CodeTriangle).&#13;
+  * This fixes a unit test failure.&#13;
+&#13;
+## Fixes to Logic&#13;
+&#13;
+* Move **Henry Trailblazing** to **Sapphire Ridge** region.</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.5"/>
+  </entry>
+  <entry>
     <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.3</id>
     <title>Universal Tracker v0.3.3</title>
     <updated>2026-07-30T06:28:03+00:00</updated>
@@ -995,5 +976,51 @@ Install guide and more information is in the [AP world Info Document](https://gi
 &#13;
 **Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.3.2...Tracker_v0.3.3</content>
     <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.6</id>
+    <title>CrossCode v0.9.6</title>
+    <updated>2026-07-30T08:45:55+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content>## Fixes&#13;
+&#13;
+* Fixed a packaging error where an in-progress version of upcoming features were distributed with 0.9.5, causing several issues.</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0-beta1</id>
+    <title>Deltarune v2.1.0b1</title>
+    <updated>2026-07-30T10:56:27+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
+&#13;
+# Changelog&#13;
+Huuuuuuuh currently a lot of things but lazy, will be available for the full release trust&#13;
+- Chapter 5&#13;
+- Toast Notification&#13;
+- Linux Proxy</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0-beta1"/>
   </entry>
 </feed>
