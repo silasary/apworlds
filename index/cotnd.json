@@ -386,6 +386,21 @@
       "title": "v0.7.1",
       "version_simple": "0.7.1",
       "world_version": "0.7.1"
+    },
+    "v0.7.2": {
+      "created_at": "2026-07-31T00:28:45Z",
+      "description": "### Notes\r\n- Be sure to update your APWorld for your in-progress multiworld if you're experiencing any of the problems listed below!\r\n  - You might need to collect an item for the new save data to generate properly.\r\n- Side effect of the save editing this update is that in-progress worlds will have their diamond + gold count reset to received item amounts on initial connection\r\n  - You can use the `/diamonds X` command if this is an issue, whereas X is the amount of diamonds you want to see your diamond counter to. You can use deltas `+/-` as well to add or subtract from your current amount\r\n\r\n### Changes\r\n- Add proper [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) support for randomized caged npc locations and conditional starting character\r\n  - If a player ends up selecting a starting character that isn't apart of their enabled DLC or is in their `character_blacklist`, UT originally wouldn't receive the newly randomized starting character; this is fixed now\r\n- Add sending a chat message to the mod on sending an item from the connected player's game to another world\r\n- Fix extra modes never being unlocked in the client save data\r\n- Fix Progressive Zone Access keys sometimes being double-counted on initial connection from the mod\r\n- Fix temporary/consumable items received while disconnected not showing up in-game on reconnection\r\n- Fix `starting_inventory` items (consumables, zone access keys, traps, extra modes) not populating on initial connection\r\n- Fix Caged NPCs being able to crowd on a single floor before considering floors of a zone without an NPC\r\n\r\nPlease see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.\r\n\r\nPlease inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).",
+      "download_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.7.2/cotnd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0e0e7827ed3e94dab26001350e12405f8521513da06af7f879b74cbd64808feb",
+      "html_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.7.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 21949404,
+      "source_url": "https://api.github.com/repos/lastingParadox/Archipelago-CotND",
+      "tag": "v0.7.2",
+      "title": "v0.7.2",
+      "version_simple": "0.7.2",
+      "world_version": "0.7.2"
     }
   }
 }

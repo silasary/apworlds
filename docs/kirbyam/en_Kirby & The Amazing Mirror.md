@@ -21,7 +21,7 @@
 - Minny can be kept vanilla with the `ability_randomization_minny` toggle while still randomizing other enemy ability sources.
 - Enemies that cannot be swallowed are excluded from the enemy copy-ability randomization pool.
 - The chance for an enemy to not have a copy ability can be controlled via the `ability_randomization_no_ability_weight`
-- Ability statues (sometimes called ability trophies or ability stands) have a dedicated boolean toggle (`ability_randomization_statues`) that controls inclusion only; when enabled, included statues inherit the selected `ability_randomization_mode` (`off`, `shuffled`, or `completely_random`). They will always grant an ability and are not affected by `ability_randomization_no_ability_weight` or `ability_randomization_passive_enemies`. They do respect `ability_randomization_minny`. When using `shuffled` mode, a spoiler log includes the statue to ability assignments.
+- Ability statues (sometimes called ability trophies or ability stands) have a dedicated boolean toggle (`ability_randomization_statues`). With the toggle off, statues retain their vanilla abilities. In `shuffled` mode, each statue keeps one seed-deterministic assignment, which appears in the spoiler log. In `completely_random` mode, a regular statue makes a fresh draw every time its grant is triggered; independent draws may still repeat by chance. Statue draws use the configured ability whitelist, respect `ability_randomization_minny`, and remove gated abilities until their AP unlock items are received. Statues always draw an ability when at least one eligible ability remains and intentionally ignore `ability_randomization_no_ability_weight`, `ability_randomization_passive_enemies`, `ability_randomization_minibosses`, and `ability_randomization_boss_spawns`. The Master Sword stand is not treated as a regular randomized statue.
 - AP ability unlock items are generated dynamically from `data/abilities.json` only when the `Ability Gating` option is enabled. That option defaults on and appears under `Make the game harder`. When enabled, unlock items are generated only for abilities marked `safe_to_gate` (and not explicitly disabled by `enemy_copy_allowed: false`); gated abilities are blocked until their matching AP unlock item has been received.
 
 
@@ -34,6 +34,8 @@ Locations in which items can be found:
 - All Big Chests
 - All Mirror Shards
 - All Rooms (Optional, not enabled by default)
+- All Levers
+- All Big Switches
 Items that can be shuffled:
 - All Mirror Shards
 - All Maps

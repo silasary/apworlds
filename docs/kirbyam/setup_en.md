@@ -23,14 +23,15 @@ clear it.
 ## Generating and Patching a Game
 
 1. Create your options file (YAML).
-2. Follow the general Archipelago instructions for [generating a game](/tutorial/Archipelago/setup_en#generating-a-game).
-This will generate an output file for you. Your patch file will have the `.apkirbyam` file extension.
-3. Open `ArchipelagoLauncher.exe`
-4. Select "Open Patch" on the left side and select your patch file.
-5. If this is your first time patching, you will be prompted to locate your vanilla ROM.
-6. A patched `.gba` file will be created in the same place as the patch file.
-7. On your first time opening a patch with BizHawk Client, you will also be asked to locate `EmuHawk.exe` in your
-BizHawk install.
+2. Open `ArchipelagoLauncher.exe`. If someone else is generating the multiworld, continue to step 6.
+3. As this is a custom world, you will need to generate the multiworld locally. To do this, place your YAML files in the `Players` folder.
+4. Once this is done select open next to the `Generate` option within the Archipelago Launcher. This will open a terminal and take a few moments to generate the multiworld. 
+5. If there are no issues you'll see a new `.zip` file within the `output` folder of your Archipelago directory. You can take that file and upload it to [Archipelago](https://archipelago.gg/uploads) to host your world.
+6. Your host, will send you a link to your room, find your name and click the `Download Patch File` text in the same row. After the download is complete you should see your patch file will have the `.apkirbyam` file extension.
+6. In the Archipelago Launcher, select the "Open Patch" option and select your patch file.
+7. If this is your first time patching, you will be prompted to locate your vanilla ROM.
+8. A patched `.gba` file will be created in the same place as the patch file.
+9. On your first time opening a patch with BizHawk Client, you will also be asked to locate `EmuHawk.exe` in your BizHawk install.
 
 If you're playing a single-player seed and you don't care about autotracking or hints, you can stop here, close the
 client, and load the patched ROM in any emulator. However, for multiworlds and other Archipelago features, continue
