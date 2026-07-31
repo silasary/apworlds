@@ -13,6 +13,21 @@
     "world_version"
   ],
   "versions": {
+    "2026.07.31": {
+      "created_at": "2026-07-31T19:33:03Z",
+      "description": "### ADDED\r\n- FishSanity option: adds a check for the first catch of every species (fish and junk alike) at each of the game's 6 quality tiers (Normal through Alpha). Gated by rod-tier region access and by Progressive Bait count, matching the game's actual bait-determines-quality mechanic (worms=Normal, cricket=Shining, leech=Glistening, minnow=Opulent, squid=Radiant, nautilus/gildedworm=Alpha). Adds 468 locations.\r\n- `archipelago.json` manifest - Archipelago core requires this starting in 0.7.0.\r\n\r\n### FIXED\r\n- Fixed a stray `Null` file being written next to `webfishing.exe` on first launch or save (the client mod could try to save its inventory/locations cache before a server path was ever set, and GDScript coerces a null file path into the literal string \"Null\").\r\n- Fixed a latent item/location count mismatch that would break solo generation whenever \"Rare Fish Checks\" was turned off.\r\n\r\n### CHANGED\r\n- Repo restructured for clarity - the world package moved to `worlds/webfishing/`, its docs (setup guide, game info, loot tables) now live alongside it in `worlds/webfishing/docs/`, and the root README is a short pointer to those instead of holding everything itself.\r\n- Install docs rewritten for GDWeave-only installation (r2modman no longer required or mentioned), with direct release-asset download links.\r\n\r\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-WEBFISHING/commits/2026.07.31",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-WEBFISHING/releases/download/2026.07.31/webfishing.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b3bca56165f2e8f0413b6f89ff39efd35fc8031f9d74385504a6a30f285d1b2c",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-WEBFISHING/releases/tag/2026.07.31",
+      "minimum_ap_version": "0.6.7",
+      "size": 414144,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-WEBFISHING",
+      "tag": "2026.07.31",
+      "title": "2026.07.31 - New Fork + Added FishSanity",
+      "version_simple": "2026.7.31",
+      "world_version": "2026.07.31"
+    },
     "v1.0.0-alpha": {
       "created_at": "2025-01-19T22:05:29Z",
       "description": "> [!CAUTION]  \r\n> This is an alpha version - there may still be bugs and frustrating item logic! Please play at your own risk!\r\n## Initial release\r\n  - All checks are particular quests from the quest board\r\n  - Receivable items:\r\n    - Progressive rod/bait upgrades\r\n    - Lures\r\n    - Consumables\r\n    - Money\r\n  - Customisable win conditions:\r\n    - Reach a target rank\r\n    - Reach a certain percentage journal completion\r\n  - AP button that opens AP connection menu in esc. menu\r\n  - AP chat appears in local chat\r\n",
