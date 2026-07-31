@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.2.0/fnafw.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.2.1/fnafw.apworld">Latest Version (1.2.1)</a>
 
 ## All Versions
+
+#### v1.2.1
+- <a href="https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.2.1/fnafw.apworld">https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.2.1/fnafw.apworld</a>
 
 #### v1.2.0
 - <a href="https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.2.0/fnafw.apworld">https://github.com/EviVirus/Archipelago-FNaFW-FFPS/releases/download/FNaFW-v1.2.0/fnafw.apworld</a>
