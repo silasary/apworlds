@@ -2,61 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-07-31T07:08:58.197782+00:00</updated>
+  <updated>2026-07-31T12:47:01.070327+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v2.1.1</id>
-    <title>Mario Sports Mix v2.1.1</title>
-    <updated>2026-07-27T19:00:56+00:00</updated>
-    <author>
-      <name>ElectroStarz</name>
-    </author>
-    <content>## What's Changed?&#13;
-* Added /filler_reduce (Reduces filler queue by 20 if over 30)&#13;
-* Fixed court detection (Should fix Party Mode checks)&#13;
-* Probably some other stuff but I forgot&#13;
-If anything still doesn't work ping me and I'll smash my head into a wall again to figure things out :P</content>
-    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v2.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.0</id>
-    <title>layer8problem v0.9.0</title>
-    <updated>2026-07-27T23:27:36+00:00</updated>
-    <author>
-      <name>TheZockerBrain069</name>
-    </author>
-    <content>## What is new&#13;
-&#13;
-Two extra location pools — 30 item finds and 99 sidequest chains — bringing&#13;
-a slot from 61 to 190 checks. The client picks them up through&#13;
-`engine.addToArchive` and `engine.resolveTerminal`.</content>
-    <link href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.1</id>
-    <title>Mega Man X2 v2.0.1</title>
-    <updated>2026-07-28T00:12:38+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>Small round of fixes&#13;
-# Info&#13;
-* [Setup](https://github.com/TheLX5/Archipelago/wiki/Mega-Man-X2#setup)&#13;
-## Changes&#13;
-* Added some extra data to `slot_data` for the PopTracker pack update&#13;
-* Added missing hint information for bosses&#13;
-* Fixed a bug where players couldn't pause after getting a refill/heart tank during a cutscene&#13;
-* Fixed the save data not being properly initialized under certain scenarios&#13;
-* Fixed a crash when trying to pause while having less than 8 HP&#13;
-* Potentially fixed crashes with bosses not having super strict weakness settings&#13;
-* Fixed an oversight with `Speed Burner (Underwater)` weakness requiring `Silk Shot` as a logical rule&#13;
-* `/explain` now tells you which Silk Shot flavor was rolled&#13;
-* Prevented EnergyLink client errors</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Bongo9911/HotLavaAPWorld/releases/tag/0.1.0</id>
     <title>hot_lava v0.1.0</title>
@@ -1014,7 +964,7 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
 - Added a new goal mode: `defeat_configured_area_boss` completes the seed after a specific area-boss is defeated (Issue #207).&#13;
   - Which area boss is used is determined by the new `configured_area_boss` option. It defaults to Master Hand and Crazy Hand.&#13;
 - Added four new lever location checks sourced from native lever bits: Moonlight Mansion 2-11, Olive Ocean 6-13, Carrot Castle 5-12, and Radish Ruins 8-12 (Issue #850).&#13;
-- Added the world map big chest in the tutorial rooms as an AP location check (Issue #845). We plan for the world map as an item can follow later.&#13;
+- Added the world map big chest in the tutorial rooms as an AP location check (Issue #845). We plan for the world map as an item to follow later.&#13;
   - Because of how we detect the game state, the check will only send AFTER the tutorial is completed and you enter Central Circle for the first time.&#13;
 &#13;
 ### Improvements&#13;
@@ -1025,7 +975,8 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
 - Localization: Only the North American ROM is supported. All AP notifications are in English.&#13;
 - Progression: The entire game is still only two spheres. This means you can complete almost the entirety of Kirby and the Amazing Mirror without ever having to receive an item, except open the Dimension Mirror. In other words, you can do everything in the game except defeat Dark Mind without ever receiving an item from another player. This is a consequence of the original game design. We have plans to gate your progression in other ways, but they all require coding/hacking in intentional blockers.&#13;
 - Small Chests: We know you want the "small" chests implemented. We want them implemented too. We've been working on it for months. We decided getting out what IS working, is more important.&#13;
-- Major (big) chests: The animation for getting the original item will play with the original sprite. This is expected. We hope in the future to support "sprite swapping" where we show the sprite for the actual item delivered or a custom sprite if it's not a KirbyAM item.&#13;
+- Sprite Swapping: The animation for getting the original item will play with the original sprite. Statues show the old ability. This is expected. We hope in the future to support "sprite swapping" where we show the sprite for the actual item delivered or ability granted.&#13;
+- Emulator: Only BizHawk is supported. mGBA may work, but we don't currently test against it.&#13;
 &#13;
 ### Bug Fixes&#13;
 &#13;
@@ -1076,5 +1027,134 @@ Fixes:&#13;
 * Astarion being in the party _should_ let you still get the location for talking to the Gur Hunter.&#13;
 * Mirkon/Mol/Doni had a few edge cases handled for learning the password.</content>
     <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0%2Bbeta2</id>
+    <title>Deltarune v2.1.0+beta2</title>
+    <updated>2026-07-31T07:08:49+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
+&#13;
+## **&gt;&gt;&gt; This is an unstable pre-release. Unless you're testing, we recommend using version v2.0.6 instead. &lt;&lt;&lt;**&#13;
+&#13;
+# Changelog&#13;
+&#13;
+## APworld&#13;
+- Re-added Music and Swatch Cafe&#13;
+- Fixed S/R/N actions not being locked&#13;
+- fixed TrueTie and DogWidow are no longer always in their default locations if you choose to include hidden items&#13;
+&#13;
+## Game&#13;
+- Fixed the Bromides crashing the game in chapter 1 (that's a lie, but at least not anymore in chapter 2)&#13;
+- Seth no longer worries about protecting {0} and actually says the item name&#13;
+- The first chest in the garden is no longer always unopened&#13;
+- Fixed Flowery forgetting to stop talking if you die to an enemy&#13;
+- Kris's bed no longer looks weird in chapter 5, though it might in previous chapters.&#13;
+- Unlocking Chapters no longer awards you 10,000 POINTs.&#13;
+- Tenna now remembers how to speak properly.&#13;
+- Mike is no longer permanently unavailable if you choose Weird Route/Side B&#13;
+- The Keygen 2 no longer thinks Virovirokun is a Hathy while checking your recruits&#13;
+- Unlocking Blue's Room and Mysterious Puzzle warp doors works properly in Chapter 5&#13;
+- There is now a Platforming Swap Statue before the fight against Orange and Green.&#13;
+- It's now really obvious you can return to Castle town in the Dark Garden light&#13;
+- Losing the Shi recruit now properly send the location&#13;
+- Getting items that give a textbox no longer softlocks you&#13;
+- Trying to buy the Flower Gifts after fighting Pink no longer ends the universe as we know it.&#13;
+&#13;
+## Known issues:&#13;
+- Sometimes items just.. don't get sent to you. I can't reproduce this no matter what I try. PLEASE SPEED I NEED THIS!!! JUST LET ME FIGURE OUT WHAT'S WRONG I BEG OF YOU!!!!!!&#13;
+- Sheary disables the menu&#13;
+- Pink's shop item 4 doesn't display the pink coins you have&#13;
+- Bromide still crash chapter 1&#13;
+- Flowers item don't have there special effect in other chapters</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0%2Bbeta2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.4.53</id>
+    <title>Muse Dash v1.5.35</title>
+    <updated>2026-07-31T09:48:08+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content># Changes&#13;
+- Update songs to Song of Determination &amp; Power&#13;
+- If the mod fails to get datastorage values on startup, it should continue on and give you free items (for now) rather than crash internally and put the mod in a bad state.&#13;
+&#13;
+# Installation&#13;
+## Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+&gt; You can find Muse Dash's folder by finding the game in your steam library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+&#13;
+### Windows&#13;
+1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Select Muse Dash in the list of games.&#13;
+   - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+3. Click install. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+### Linux&#13;
+1. Navigate to Muse Dash on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES="version=n,b" %command%`&#13;
+2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+   - You may need to give it permissions to execute.&#13;
+3. Select Muse Dash in the list of games.&#13;
+    - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+4. Click install. On first run, melonloader may install dotnet 6 in order to run.&#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+    &#13;
+### Mod Install&#13;
+1.Download `ArchipelagoMuseDash.zip`.&#13;
+2. Head to the Muse Dash folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.&#13;
+3. Extract the contents of the .zip file into mods. Ensure the files are not in a subfolder, this mod is not setup for that yet.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.4.53"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/tag/v0.3.0</id>
+    <title>Once Upon a Katamari v0.3.0</title>
+    <updated>2026-07-31T10:38:36+00:00</updated>
+    <author>
+      <name>Seafoamy</name>
+    </author>
+    <content>This updated mod is compatible with worlds generated using v0.1.0 and v0.2.x. The apworld is not compatible with older versions of the mod.&#13;
+## Collectionsanity&#13;
+Collectionsanity allows you to turn (almost) every single unique roll in the game into a check. The 'BAN', 'DAI', 'NAM' and 'CO' objects, as well as all objects unique to the final "That Hole..." level are not currently included. A total of 3,637 objects are included.&#13;
+You can choose between 'individual' and 'milestones' mode.&#13;
+Individual means every unique object is considered a check. E.g. you get a check for specifically rolling up a tomato.&#13;
+Milestones means you gain checks for every x amount of unique objects rolled up. If you set it to 100, you'll get a check for rolling up 100 unique objects, and then 200 and so on. You can also set an amount of objects to be considered 'out of logic', so you don't have to hunt down every single object. Unless you want to.&#13;
+Objects found in the tutorial are not considered in logic as they are missable. &#13;
+You can set a percentage of collectionsanity checks on either mode to be forced to have a local junk item. &#13;
+## Other Changes&#13;
+- You can now skip the tutorial&#13;
+- "As Large As Possible 1" is no longer a forced starting level.&#13;
+- Start with a random cousin&#13;
+- Fog Trap - Adds the fog from the 'Lots of Yokai' stage as a trap, which will slowly dissipate over time (does not activate on 'Lots of Yokai')&#13;
+- The preview shown before starting a level will now accurately show which crowns, cousins and presents you have collected in that level.&#13;
+&#13;
+See the [README](https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/blob/main/README.md) for more info and setup instructions.&#13;
+&#13;
+*it was mainly collectionsanity :3*</content>
+    <link href="https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/tag/v0.3.0"/>
   </entry>
 </feed>

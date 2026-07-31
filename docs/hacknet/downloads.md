@@ -23,11 +23,11 @@
 #### v2
 - <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-2/hacknet.apworld">https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-2/hacknet.apworld</a>
 
-#### v1
-- <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-1/hacknet.apworld">https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-1/hacknet.apworld</a>
-
 #### v1.0.0
 - <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-1.0.0/hacknet.apworld">https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-1.0.0/hacknet.apworld</a>
+
+#### v1
+- <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-1/hacknet.apworld">https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-alpha-1/hacknet.apworld</a>
 
 #### v0.0.4
 - <a href="https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-0.0.4/hacknet.apworld">https://github.com/AutumnRivers/Archipelago-Hacknet/releases/download/hacknet-0.0.4/hacknet.apworld</a>
