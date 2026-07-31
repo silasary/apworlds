@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/OSRSM-v0.1.9/osrsm.apworld">Latest Version (0.1.8r2)</a>
+- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/OSRSM-v0.1.10/osrsm.apworld">Latest Version (0.1.10)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
