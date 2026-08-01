@@ -42,7 +42,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
-            branch: new-worlds
+            branch: issue-${{ github.event.issue.number }}
             title: Triage World Request
             add-paths: 'index/*.json'
             reviewers: silasary
