@@ -167,13 +167,18 @@ if spreadsheet:
             ad_games.append(row["Game"].strip())
 
 if args.scan_file:
+    print(f"Scanning {args.scan_file} for repo URLs")
     with open(args.scan_file) as f:
         text = f.read()
         for line in text:
             if match := re.search(REPO_REGEX, line):
                 queue.append(match.group(1))
+                print(f"Found {match.group(1)} in {args.scan_file}")
         if "- [X] This world is AD" in text:
             args.dark = True
+    if not queue:
+        print(f"No repo URLs found in {args.scan_file}")
+        print(f"Full text of {args.scan_file}:\n```\n{text}\n```")
 
 if not queue:
     with open("queue.txt", "w") as f:
