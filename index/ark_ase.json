@@ -10,6 +10,72 @@
     "world_version"
   ],
   "versions": {
+    "v0.1.0-alpha": {
+      "created_at": "2026-07-14T19:13:06Z",
+      "description": "First public alpha of the ARK: Survival Evolved (Pre-Aquatica, The Island) integration for [Archipelago](https://archipelago.gg). Engrams, taming, and supply crates are locked behind AP items; notes, tames, kills, breeding, levels, collection, and bosses send checks.\r\n\r\nSetup: follow [docs/GETTING_STARTED.md](https://github.com/Jbaker16163/Ark-Survival-Archipelago/blob/main/docs/GETTING_STARTED.md).\r\n\r\n| `ark_ase.apworld` | the seed-generating machine |\r\n| `ArkAP_plugin.zip` | the ARK dedicated server PC |\r\n| `ArkConnector.zip` | the server PC |\r\n| `ark_survival_evolved_ap.zip` (optional tracker) | any PC |\r\n\r\nAlpha. ASE only (not ASA), Windows server only. All four files are built together always update them as a set. Multiplayer-on-one-server and dino spawn randomization are experimental.",
+      "download_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.1.0-alpha/ark_ase.apworld",
+      "has_manifest": true,
+      "hash_sha256": "075b5840ffb073366a891f71b4119d03c868ae80d05f6d02a8f8a69b368bd10f",
+      "html_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.1.0-alpha",
+      "maximum_ap_version": "0.9.99",
+      "minimum_ap_version": "0.6.0",
+      "prerelease": true,
+      "size": 47615,
+      "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
+      "tag": "v0.1.0-alpha",
+      "title": "v0.1.0-alpha",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "v0.1.1-alpha": {
+      "created_at": "2026-07-17T03:34:29Z",
+      "description": "Softlock prevention / progression logic\r\n\r\n- Excluded progression from grind-heavy checks: 50+ note-collection milestones, tame/breed count milestones, levels >70, boss holograms, obscure note families (Genesis Chronicles, HLN-A, ??? Notes), water alphas \u2192 all alphas, tame-only late-game dossiers (Rhyniognatha, Carcharodontosaurus).\r\n- Gated tough kills (water/apex creatures, Unicorn, Kill 50+/100 Species) so they hold later progression instead of sitting at sphere 1.\r\n- Removed Acrocanthosaurus (not an ASE creature).\r\n- Embedded /connect + /confirm restart chain\r\n\r\n- /confirm now reliably restarts the server if randomized dino is enabled.\r\n- Wild creatures(only happens with /confirm for randomize dinos) now actually get wiped on that restart via -ForceRespawnDinos.\r\n- Fixed the connect/rejoin status message never appearing (detection now keys off actual login/logout, with a short delay so chat can render).\r\n- Fixed <host:port> rendering as an emoji in chat.\r\n\r\n- Reset_ark_test.bat now wipes per-player mailboxes and strips leftover randomized-spawn lines from Game.ini.\r\n\r\n- Retired the old ArkConnector.zip. We will now be using /connect in game. \r\n\r\n**Thank you Lurch9229 for providing proper logic. Will continue to work with him to refine logic and fix softlocks.** ",
+      "download_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.1.1-alpha/ark_ase.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4c72c14e3820c82f22c8f6cfb3965fbc42c1361966775bb9d55ef283a66ebf24",
+      "html_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.1.1-alpha",
+      "maximum_ap_version": "0.9.99",
+      "minimum_ap_version": "0.6.0",
+      "prerelease": true,
+      "size": 58533,
+      "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
+      "tag": "v0.1.1-alpha",
+      "title": "v0.1.1-alpha",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
+    },
+    "v0.1.2-alpha": {
+      "created_at": "2026-07-26T05:57:27Z",
+      "description": "1. Added additional logic. THANKS LURCH\r\n2. Updated getting_started to include Avocado's launcher. THANKS AVOCADO\r\n3. Added mod support for a small set of mods(bugs may be about).\r\n4. Removed DLC explorer notes that were unable to be gotten without the DLC. THANKS LURCH AGAIN!\r\n5. Added grouped items(before you were only able to get 1 engram or 1 tame at a time, now you can choose to get 2, 3 or 4)\r\n6. Removed the in-game hint resource cost(bugs are still here - I will fix them eventually)\r\n7. I am sure there is more stuff but I can't remember right now... \r\n\r\nIncluded is Avocado's launcher: https://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher to easily setup the server. May update this to be more detailed later when it isn't 2AM in the morning. SMILES :)",
+      "download_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.1.2-alpha/ark_ase.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f8dafffa1fcfd5b55b142219b64ef76016d37ccd248c28620e7d96b3f02dff0c",
+      "html_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.1.2-alpha",
+      "maximum_ap_version": "0.9.99",
+      "minimum_ap_version": "0.6.0",
+      "size": 90481,
+      "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
+      "tag": "v0.1.2-alpha",
+      "title": "v0.1.2-alpha",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r3"
+    },
+    "v0.1.3-alpha": {
+      "created_at": "2026-07-26T06:20:03Z",
+      "description": "1. Fixed more logic. Hopefully spheres are working as expected now.\r\n2. Fixed multiplayer bugs.\r\n\r\nNot much work done today but hopefully logic is more consistent now + bug fixes. \r\n\r\nIncluded Avocado's new launcher build. https://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher/releases/tag/v0.4.4",
+      "download_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.1.3-alpha/ark_ase.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0c4d554e613a587645c7e2dcf4449f9ee683a61127deb1f47d54f61854816b82",
+      "html_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.1.3-alpha",
+      "maximum_ap_version": "0.9.99",
+      "minimum_ap_version": "0.6.0",
+      "size": 91430,
+      "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
+      "tag": "v0.1.3-alpha",
+      "title": "v0.1.3-alpha",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r4"
+    },
     "v0.1.4-alpha": {
       "created_at": "2026-07-29T03:29:33Z",
       "description": "- Fixed being unable to use /hint for paired items. You are now able to. \r\n- Fixed additional logic - AHHHHHHHHH\r\n- Removed the Titan from the taming list to do(might come back eventually as a goal to win the archipelago?)\r\n- Added S+/SS given with default building items. \r\n\r\nOnce again big thanks to Lurch, Beeno, Avocado, and Brandon. \r\n\r\nAttached once again is Avocado's Launcher. USE IT! It makes life much easier(or so I am told). https://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher/releases#release-v0.4.4",
@@ -24,7 +90,7 @@
       "tag": "v0.1.4-alpha",
       "title": "v0.1.4-alpha",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0"
+      "world_version": "1.0.0r5"
     }
   }
 }
