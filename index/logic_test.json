@@ -1,0 +1,75 @@
+{
+  "authors": [
+    "gerbiljames",
+    "palex00"
+  ],
+  "game": "Logic Test",
+  "github": "https://github.com/palex00/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "logic-test-0.1.0": {
+      "created_at": "2026-07-04T21:07:19Z",
+      "description": "Initial release of **Logic Test**, a diagnostic Archipelago world for surfacing logic leaks in another game's world.\n\n## What it does\n\nAdd one Logic Test slot alongside one or more games-under-test. During generation it generates the under-test slots together as one nested multiworld, reads their overall (cross-game) sphere structure, and rebuilds itself as a linear chain of gated spheres matching it:\n\n- Every under-test item is pulled out and locked into a Logic Test sphere location.\n- Each under-test location instead receives a `KEY_i` macguffin.\n- Sphere `i` only opens once the slot has collected every `KEY_i`, releasing that sphere's original items.\n\nPlay is forced into lock-step with the intended spheres, so every check matters. A logic leak (an access rule looser in the model than the real game) shows up as a hard stall: a key the model says is reachable but isn't, so the next sphere never opens.\n\n## Setup\n\nAdd one Logic Test slot plus one or more games-under-test. Slot order does not matter, since each under-test game's RNG is reproduced from its slot number, so YAMLs can be in any order.\n\n## Limits\n\n- Up to 512 spheres\n- Up to 100,000 locations (networkable items across all under-test games)\n\n## Assets\n\n- `logic_test.apworld`: the world, install it into your Archipelago `custom_worlds` directory\n- `Logic.Test.yaml`: a template options YAML\n\nRequires Archipelago 0.6.7 or newer.\n",
+      "download_url": "https://github.com/palex00/Archipelago/releases/download/logic-test-0.1.0/logic_test.apworld",
+      "has_manifest": true,
+      "hash_sha256": "82d25c4a72b4611b5b41e0944ea8eca6a21b4db4136ec21d815a985802f5a777",
+      "html_url": "https://github.com/palex00/Archipelago/releases/tag/logic-test-0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 14288,
+      "source_url": "https://api.github.com/repos/palex00/Archipelago",
+      "tag": "logic-test-0.1.0",
+      "title": "logic-test-0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "logic-test-0.1.1": {
+      "created_at": "2026-07-05T11:18:59Z",
+      "description": "Bugfix release.\n\n- **Priority/early items no longer leak into the under-test games.** Locations locked by priority or early-item fill were mistaken for fixed placements and got no `KEY`, so the outer fill dropped real items onto them, sometimes failing generation. They now become normal `KEY` targets.\n- **Unreachable markers (reverse-leak detector).** Under-test locations the model can't reach in progression now get a `Logic Test Unreachable Marker` instead of a `KEY`. Picking one up means the real game reached what the model proved unreachable. Only appears under `minimal`/`items` accessibility.\n\nAssets: `logic_test.apworld` (install into `custom_worlds`) and `Logic.Test.yaml`. Requires Archipelago 0.6.7+.\n",
+      "download_url": "https://github.com/palex00/Archipelago/releases/download/logic-test-0.1.1/logic_test.apworld",
+      "has_manifest": true,
+      "hash_sha256": "156e57ca05d08c89b12d478af24f3c76315add26d92e183c93d9c7ad12e48243",
+      "html_url": "https://github.com/palex00/Archipelago/releases/tag/logic-test-0.1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 16205,
+      "source_url": "https://api.github.com/repos/palex00/Archipelago",
+      "tag": "logic-test-0.1.1",
+      "title": "logic-test-0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    },
+    "logic-test-0.2.0": {
+      "created_at": "2026-07-07T21:15:33Z",
+      "description": "## Logic Test 0.2.0\n\n### WebHost slot launch\n- Clicking a **Logic Test** slot on a WebHost room page now opens the Logic Test Client instead of the generic Text Client, when the apworld is installed. The client auto-connects using the room's `archipelago://` link.\n- If the Logic Test apworld isn't installed, behavior is unchanged: the slot falls back to the Text Client. Fully backwards compatible with existing rooms.\n\n### Other\n- Added an MIT license.\n\n**Full Changelog**: https://github.com/palex00/Archipelago/compare/logic-test-0.1.1...logic-test-0.2.0\n",
+      "download_url": "https://github.com/palex00/Archipelago/releases/download/logic-test-0.2.0/logic_test.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3d29c05977b01d9a0cbe674a06acdbaaa6aa68b68b5a9753d104fe1c29bf1cac",
+      "html_url": "https://github.com/palex00/Archipelago/releases/tag/logic-test-0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 17000,
+      "source_url": "https://api.github.com/repos/palex00/Archipelago",
+      "tag": "logic-test-0.2.0",
+      "title": "logic-test-0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "logic-test-0.2.1": {
+      "created_at": "2026-07-09T22:54:04Z",
+      "description": "## Logic Test 0.2.1\n\nBugfix release for the WebHost slot launch added in 0.2.0.\n\n### Fixes\n- **Selecting the Logic Test Client from the WebHost slot picker now actually opens it.** The launcher passes the room's `archipelago://` URI to the client, but the launch handler dropped it \u2014 raising a `TypeError` and silently failing, so nothing happened when you picked the client. It now accepts and forwards the URI, and the client auto-connects as intended.\n\n**Full Changelog**: https://github.com/palex00/Archipelago/compare/logic-test-0.2.0...logic-test-0.2.1",
+      "download_url": "https://github.com/palex00/Archipelago/releases/download/logic-test-0.2.1/logic_test.apworld",
+      "has_manifest": true,
+      "hash_sha256": "289a13084307a3f7c43966da2460b993cb6c6a178dae74b178c1542249bf1b30",
+      "html_url": "https://github.com/palex00/Archipelago/releases/tag/logic-test-0.2.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 17009,
+      "source_url": "https://api.github.com/repos/palex00/Archipelago",
+      "tag": "logic-test-0.2.1",
+      "title": "logic-test-0.2.1",
+      "version_simple": "0.2.1",
+      "world_version": "0.2.1"
+    }
+  }
+}
