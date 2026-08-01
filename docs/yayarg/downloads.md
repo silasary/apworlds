@@ -38,6 +38,12 @@
 #### v2.1.0
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.1.0/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.1.0/yayarg.apworld</a>
 
-#### v1.1.0
+#### v1.1.0r2
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.0.0/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.0.0/yayarg.apworld</a>
+
+#### v1.1.0
+- <a href="https://github.com/Thedrummonger/YargArchipelagoClient/releases/download/V1.1.0/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoClient/releases/download/V1.1.0/yayarg.apworld</a>
+
+#### v1.0.1
+- <a href="https://github.com/Thedrummonger/YargArchipelagoClient/releases/download/V1.0.1/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoClient/releases/download/V1.0.1/yayarg.apworld</a>
 

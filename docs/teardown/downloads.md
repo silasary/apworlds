@@ -1,9 +1,12 @@
 # Teardown
 
 ## Latest
-- <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.3.0/teardown.apworld">Latest Version (0.2.4)</a>
+- <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.3.1/teardown.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.3.1/teardown.apworld">https://github.com/Evereliquest/Archipelago/releases/download/v0.3.1/teardown.apworld</a>
 
 #### v0.2.4
 - <a href="https://github.com/Evereliquest/Archipelago/releases/download/v0.3.0/teardown.apworld">https://github.com/Evereliquest/Archipelago/releases/download/v0.3.0/teardown.apworld</a>
