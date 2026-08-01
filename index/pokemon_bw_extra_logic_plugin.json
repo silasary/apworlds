@@ -114,6 +114,21 @@
       "title": "v7 - Logic Fixes",
       "version_simple": "1.7.0",
       "world_version": "1.7.0"
+    },
+    "v8": {
+      "created_at": "2026-08-01T14:42:13Z",
+      "description": "**Fixes**\r\n* Fixed Tornadus/Thundurus/Landorus cutscenes crashing the game when there are too many dark areas\r\n  * As a consequence, the roamer is now a static encounter until a better fix is made\r\n* Fixed the logic of the three locations near the entrance of Moor of Icirrus that can't be reached during winter without Surf\r\n\r\n**Updates**\r\n* Added `randomize_starting_town` as an option\r\n  * Swaps the player's house with a house from another town\r\n  * Valid choices are: \"Nuvema Town\", \"Accumula Town\", \"Striaton City\", \"Nacrene City\", \"Castelia City\", \"Nimbasa City\", \"Driftveil City\", \"Mistralton City\", \"Icirrus City\", \"Opelucid City\", \"Lacunosa Town\", \"Undella Town\"\r\n  * `starting_town_blacklist` prevents the listed towns to be chosen as the starting town if `randomize_starting_town` is activated\r\n  * If Cynthia is set as goal, \"Lacunosa Town\" and \"Undella Town\" cannot be selected as the starting town\r\n  * If all towns are blacklisted or if there is no valid choice, the option will fall back to Nuvema Town\r\n  * When Mistralton City is chosen as the starting town, the Move reminder house is relocated in Nuvema Town and the logic for move evolution is updated accordingly\r\n  * When the starting town is not Nuvema Town, Mom will not give her first item. An added clerk NPC in Nuvema Town will hand it instead\r\n* Adjusted multiple cutscenes to prevent sequence breaks with a random starting town\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:  # updated for v8\r\n      randomize_starting_town: true\r\n      starting_town_blacklist: []  # list in README\r\n      add_ss_ticket: true\r\n      add_pass: true\r\n      hm_with_badges: true\r\n      add_rock_smash: true\r\n      add_rock_smash_musharna: true  # requires add_rock_smash\r\n      extra_cut_trees: true\r\n      extra_cut_trees_kyurem: true   # requires extra_cut_trees\r\n      move_strength_boulders: true\r\n      move_strength_boulders_vi_road: true   # requires move_strength_boulders\r\n      dark_areas: [\"Wellspring Cave B1F\", \"Mistralton Cave\", \"Challengers Cave\"]  # supports \"_All\" and \"_Random\", see README\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is compatible with v0.3.37+ of the main BW APworld\r\n* This version is compatible with v22 of the QoL Plugin\r\n\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v7...v8",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v8/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0c9225fd7acb365eec07ab1be217ce3a506953da4ab1cfbe0372abfdbeaf1923",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v8",
+      "minimum_ap_version": "0.6.4",
+      "size": 181616,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v8",
+      "title": "v8 - The Moving Out Update",
+      "version_simple": "1.8.0",
+      "world_version": "1.8.0"
     }
   }
 }
