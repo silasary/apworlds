@@ -1,0 +1,43 @@
+{
+  "authors": [
+    "Chilly"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Before We Leave",
+  "github": "https://github.com/haydencase0/BWLArchipelago",
+  "manifest_fields": [
+    "authors"
+  ],
+  "versions": {
+    "v0.1": {
+      "created_at": "2026-07-07T18:40:39Z",
+      "description": "# Before We Leave Archipelago Mod - v0.1.1\r\n \r\nThis is a bug fix update fixing critical issues that were found with the initial release\r\n \r\n## What's Changed\r\n \r\n - Progressive Housing unlock path changed from:\r\n| Progressive Housing | House \u2192 School \u2192 Apartment | to \u2192\r\n| Progressive Housing | School \u2192 House \u2192 Apartment |\r\n- **Save/load persistence** \u2014 a json file is created along with a save allowing \r\n  AP unlocks to stay consistent between sessions.\r\n- **Unlock Order** \u2014 added some rules to the apworld to help avoid getting stuck\r\n(note: there is still a potential that there are some missing rules so if you find one let me know)\r\n\r\n\r\n## Known Issues\r\n- **Connection UI** \u2014 if accidentally pressed play offline, there is no way to reopen the \r\n  Archipelago connection UI requiring a restart.\r\n- **Quit button UI** \u2014 the Archipelago connection screen does not fully\r\n  dismiss when the quit button fade animation plays. It disappears when\r\n  the game closes.\r\n- **Win conditions** \u2014 win conditions are implemented but have not been fully tested.\r\n- **Debug logging** \u2014 the log output is verbose and includes diagnostic\r\n  information that will be cleaned up in a future release.\r\n- **Repair** \u2014 after researching the repair node, the repair functionality \r\n  is available even if you haven't received it from AP yet.\r\n\r\n## Requirements\r\n \r\n- Before We Leave (Steam)\r\n- BepInEx 5.4.x (x64 Unity)\r\n- Archipelago 0.6.7 or later\r\n## Installation\r\n \r\nSee [README.md](README.md) for full installation instructions.",
+      "download_url": "https://github.com/haydencase0/BWLArchipelago/releases/download/v0.1/before_we_leave.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ac7891c4270edd428d184ff314b36b1ee3713490a51e7eeeb73eaae33d12c6cd",
+      "html_url": "https://github.com/haydencase0/BWLArchipelago/releases/tag/v0.1",
+      "size": 12978,
+      "source_url": "https://api.github.com/repos/haydencase0/BWLArchipelago",
+      "tag": "v0.1",
+      "title": "Before We Leave Archipelago Mod - v0.1.1",
+      "version_simple": "0.1",
+      "world_version": "0.1"
+    },
+    "v0.1.0": {
+      "created_at": "2026-06-11T17:08:14Z",
+      "description": "# Before We Leave Archipelago Mod - v0.1.0 Initial Release\r\n \r\nThis is the first public release of the Before We Leave Archipelago mod, bringing\r\nmultiworld randomizer support to Before We Leave via the Archipelago framework.\r\n \r\n## What's Included\r\n \r\n### Core Features\r\n \r\n- **Technology randomization** \u2014 all researchable technologies are shuffled into\r\n  the Archipelago item pool. Research technologies in the library to send location\r\n  checks, and receive randomized technology unlocks from the multiworld.\r\n- **Progressive technology chains** \u2014 nine technology groups are organized into\r\n  progressive chains so you can never receive a high-level technology before its\r\n  prerequisites. For example, Progressive Mining always grants Mining before\r\n  Metalwork, Glass, and Laser in that order.\r\n- **In-game connection UI** \u2014 connect to your Archipelago server directly from\r\n  the main menu without editing any config files. Your connection details are\r\n  saved automatically for future sessions.\r\n- **Offline play** \u2014 the Play Offline button on the connection screen lets you\r\n  play the game normally without connecting to an Archipelago server.\r\n### Progressive Technology Groups\r\n \r\n| Group | Technologies |\r\n|-------|-------------|\r\n| Progressive Housing | House \u2192 School \u2192 Apartment |\r\n| Progressive Mining | Mining \u2192 Metalwork \u2192 Glass \u2192 Laser |\r\n| Progressive Elevator | Elevator \u2192 SpaceElevator |\r\n| Progressive Power | Repair \u2192 Power \u2192 OilPower \u2192 CleanPower |\r\n| Progressive Happiness | Pump \u2192 Music \u2192 MeetingSquare \u2192 RoadDecoration |\r\n| Progressive Food | Gardening \u2192 Cooking \u2192 Farming \u2192 Baking |\r\n| Progressive Upgrades | Tinkering \u2192 Automation \u2192 Filtering |\r\n| Progressive Rocket | Fuel \u2192 Space |\r\n| Progressive Shipping | Shipping \u2192 AdvancedShipping \u2192 Airships |\r\n \r\n### Win Conditions\r\n \r\nThree win conditions are available via your player YAML:\r\n \r\n- **Launch Rocket** *(default)* \u2014 launch your first rocket. Short game.\r\n- **Colonize Planets** \u2014 colonize 2 to 7 planets. Medium game.\r\n- **Complete Game** \u2014 See the end game scene. Long game.\r\n## Known Issues\r\n \r\n- **Save/load persistence** \u2014 researched and granted technologies are stored\r\n  in memory only and will reset when the game is closed. Archipelago will\r\n  replay all received items on reconnect so grants are recovered, but the\r\n  checkmark display for researched technologies will be lost. This will be\r\n  addressed in a future release.\r\n- **Quit button UI** \u2014 the Archipelago connection screen does not fully\r\n  dismiss when the quit button fade animation plays. It disappears when\r\n  the game closes.\r\n- **Connection UI** \u2014 if accidentally pressed play offline, there is no way to reopen the \r\n  Archipelago connection UI requiring a restart.\r\n- **Repair** \u2014 repair functionality doesn't work properly if received before researching \r\n  the item in the library\r\n- **Win conditions** \u2014 win conditions are implemented but have not been fully tested.\r\n- **Debug logging** \u2014 the log output is verbose and includes diagnostic\r\n  information that will be cleaned up in a future release.\r\n## Requirements\r\n \r\n- Before We Leave (Steam)\r\n- BepInEx 5.4.x (x64 Unity)\r\n- Archipelago 0.6.7 or later\r\n## Installation\r\n \r\nSee [README.md](README.md) for full installation instructions.",
+      "download_url": "https://github.com/haydencase0/BWLArchipelago/releases/download/v0.1.0/before_we_leave.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5abe09ad5408341debcc3294f2083a19dc51cbe897e9744182b9867921cc48d6",
+      "html_url": "https://github.com/haydencase0/BWLArchipelago/releases/tag/v0.1.0",
+      "size": 12414,
+      "source_url": "https://api.github.com/repos/haydencase0/BWLArchipelago",
+      "tag": "v0.1.0",
+      "title": "Before We Leave Archipelago Mod - v0.1.0 Initial Release",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "Phllyphl"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "nothing_archipelago",
+  "github": "https://github.com/Phllyphl/Nothing_Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "nothing_archipelago_v0.2.3": {
+      "created_at": "2026-04-20T01:02:29Z",
+      "description": "Release of Nothing-Archipelago\r\n\r\nInspiration Nothing: https://store.steampowered.com/app/2696480/Nothing/\r\n\r\nThis version contains the game nothing rewritten in python to make integrating with archipelago easier for me (C# sucks). Additionally the initial game play of Nothing has been expanded to actually have checks, notably milestones as well as a shop. The python version of the game launches through the archipelago launcher (note 1) and has an integrated client based on the Common client.\r\n\r\n(note 1) while testing the game will launch from source, but as of yet have been unable to get the ModuleLoader within the archipelago launcher to install pygame-ce so that the game runs, to get around this you must add the pygame-ce libraries manually, see instructions below.\r\n\r\nAs far as I am aware generation should always succeed as long as the TimeCap interval is greater then or equal to the Milestone interval. Also game generates much better when randomized with other games. Death link has been fully implemented. **Note the disconnect archipelago button doesn't actually work yet.**\r\n\r\nNothing Archipelago requires additional python libraries that don't ship with archipelago to resolve this you need to download them and add them to your archipelago installation. On linux this should be in Archipelago/lib, where ever you installed archipelago (if your are using an appimage idk then). for windows this should be somewhere in C:\\ProgramData\\Archipelago (probably lib, but i don't have windows)\r\n\r\nYou can install both pygame-ce and charset-normalizer to your local python install and then copy those folders to the correct lib folder or you can download them from github directly as follows:\r\n\r\nDownload the correct pygame-ce .whl and the correct charset-normalizer.whl file from the following repos:\r\nhttps://github.com/pygame-community/pygame-ce/releases\r\nhttps://pypi.org/project/charset-normalizer/#files\r\n\r\nTo get the correct one match these three parts to your system:\r\nPython Version (cpXX): Look for the tag that matches your Python version.\r\nPython 3.11 -> cp311\r\nPython 3.12 -> cp312\r\nPython 3.13 -> cp313\r\nOperating System:\r\nWindows: Look for win_amd64 (64-bit) or win32 (32-bit).\r\nmacOS: Look for macosx_10_9_x86_64 (Intel) or macosx_11_0_arm64 (Apple Silicon/M1/M2).\r\nLinux: Look for manylinux...x86_64 (standard 64-bit PC) or manylinux...aarch64 (ARM-based like Raspberry Pi).\r\nExample: If you are on Windows 64-bit using Python 3.12, the correct pygame file is pygame_ce-2.5.2-cp312-cp312- win_amd64.whl\r\n\r\nonce you have downloaded it you can simply extract the folders and copy them into the lib folder and you should be good to go",
+      "download_url": "https://github.com/Phllyphl/Nothing_Archipelago/releases/download/nothing_archipelago_v0.2.3/nothing_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3d918b684ebd543cfe4fcd1924cd3854e40dfacde79d215eaeecaa32c818b9fa",
+      "html_url": "https://github.com/Phllyphl/Nothing_Archipelago/releases/tag/nothing_archipelago_v0.2.3",
+      "minimum_ap_version": "0.6.4",
+      "size": 72617059,
+      "source_url": "https://api.github.com/repos/Phllyphl/Nothing_Archipelago",
+      "tag": "nothing_archipelago_v0.2.3",
+      "title": "Nothing-archipelago v0.2.3-alpha",
+      "version_simple": "0.2.3",
+      "world_version": "0.2.3"
+    }
+  }
+}

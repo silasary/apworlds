@@ -1,0 +1,65 @@
+{
+  "authors": [
+    "CallmeZero"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Donkey Kong Country Returns",
+  "github": "https://github.com/CallmeZewo/DKCR_APWorld",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.0.2": {
+      "created_at": "2026-06-26T22:57:10Z",
+      "description": "# Donkey Kong Country Returns AP World\r\n\r\nThe PopTracker pack for DKCR is available here:\r\n\r\n* **PopTracker Pack:** https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases\r\n\r\n---\r\n\r\n## Installation\r\n\r\n### Requirements\r\n\r\n* **Dolphin Emulator:** https://github.com/dolphin-emu/dolphin\r\n* **DKCR AP World (latest):** https://github.com/CallmeZewo/DKCR_APWorld\r\n* **Archipelago Launcher:** https://github.com/ArchipelagoMW/Archipelago\r\n\r\n### Setup\r\n\r\n1. Download the latest release of the DKCR AP World.\r\n2. Install it using one of the following methods:\r\n\r\n   * Double-click the `.apworld` file, or\r\n   * Place it into your `custom_worlds` folder inside your Archipelago installation.\r\n3. Launch the game with **Dolphin Emulator**.\r\n4. Make sure you are using **Donkey Kong Country Returns (USA Rev 1.1)**.\r\n\r\n   * You can confirm this in Dolphin by right-clicking the game \u2192 **Properties**.\r\n\r\n---\r\n\r\n## Current Features\r\n\r\n### Checks\r\n\r\nThe AP World currently tracks checks for:\r\n\r\n* Level completion\r\n* Individual Puzzle Pieces\r\n* Full Puzzle Piece collection in a level\r\n* Individual KONG Letters\r\n* Full KONG Letter collection in a level\r\n\r\n### Items\r\n\r\nPlayers currently receive:\r\n\r\n* Puzzle Pieces\r\n* KONG Letters per world\r\n\r\n> **Note:** These items do not currently affect gameplay. They are used for Archipelago progression logic to improve multiworld generation. Logic and balance are still being refined, so progression may sometimes feel restrictive.\r\n\r\n---\r\n\r\n## Notes\r\n\r\n* No patch is required. The AP World uses **memory injection**, so it runs on an unmodified game.\r\n* Boss access is intended to require Puzzle Pieces, but this logic has not been implemented yet.\r\n* If you run into issues, have questions, or want updates, join the **Archipelago Discord** and check the DKCR thread:\r\n  https://discord.gg/8Z65BR2\r\n\r\nThanks to everyone in the community who\u2019s already helped with PopTracker development and early logic documentation. It\u2019s been a huge help moving things forward.\r\n",
+      "download_url": "https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.0.2/donkey_kong_country_returns.apworld",
+      "has_manifest": true,
+      "hash_sha256": "870cd9bbdd250492fe8c240a6dc4bc2e0b303af22fe9a649d143280483d66ee1",
+      "html_url": "https://github.com/CallmeZewo/DKCR_APWorld/releases/tag/v0.0.2",
+      "minimum_ap_version": "0.6.6",
+      "prerelease": true,
+      "size": 1483375,
+      "source_url": "https://api.github.com/repos/CallmeZewo/DKCR_APWorld",
+      "tag": "v0.0.2",
+      "title": "DKCR AP World v0.0.2-alpha",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2"
+    },
+    "v0.0.3": {
+      "created_at": "2026-06-27T07:29:08Z",
+      "description": "## Fixed Issues\r\n\r\n* Fixed a client crash that could occur when retrying a level.\r\n* Fixed the Puzzle Piece Set and Kong Letter Set being assigned to the wrong location.\r\n* Fixed Puzzle Pieces being awarded when entering a level instead of only when earned.\r\n",
+      "download_url": "https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.0.3/donkey_kong_country_returns.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fbce7ee5b74e3225672f0a317b50333b114be7de39658c8ebf0d68319e5b7a5c",
+      "html_url": "https://github.com/CallmeZewo/DKCR_APWorld/releases/tag/v0.0.3",
+      "minimum_ap_version": "0.6.6",
+      "prerelease": true,
+      "size": 1483052,
+      "source_url": "https://api.github.com/repos/CallmeZewo/DKCR_APWorld",
+      "tag": "v0.0.3",
+      "title": "DKCR AP World v0.0.3-alpha",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2r2"
+    },
+    "v0.0.4": {
+      "created_at": "2026-06-27T09:43:05Z",
+      "description": "## Puzzle Pieces\r\n\r\n- The puzzle piece memory address was only stable by coincidence during earlier testing.\r\n- This has been reverted back to the previous, more reliable approach.\r\n\r\n**Known issue:**\r\n- The game now crashes when pressing \u201cRetry Level\u201d.",
+      "download_url": "https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.0.4/donkey_kong_country_returns.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7986664b2577acd116a9f209141f79b4b9ef2076e7f990b62de836b44ecacaa2",
+      "html_url": "https://github.com/CallmeZewo/DKCR_APWorld/releases/tag/v0.0.4",
+      "minimum_ap_version": "0.6.6",
+      "prerelease": true,
+      "size": 1483041,
+      "source_url": "https://api.github.com/repos/CallmeZewo/DKCR_APWorld",
+      "tag": "v0.0.4",
+      "title": "DKCR AP World v0.0.4-alpha",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2r3"
+    }
+  }
+}

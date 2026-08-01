@@ -12,6 +12,36 @@
     "world_version"
   ],
   "versions": {
+    "V1.0.1": {
+      "created_at": "2025-12-27T06:52:06Z",
+      "description": "## **Yet Another YARG Archipelago Implimentation**\r\n\r\nThe APWorld id has been changed to YAYARG to allow loading along the other version.\r\n\r\nSetup Guide\r\nhttps://github.com/Thedrummonger/Archipelago/blob/YARG/worlds/yayarg/docs/guide_en.md",
+      "download_url": "https://github.com/Thedrummonger/YargArchipelagoClient/releases/download/V1.0.1/yayarg.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a05eaef65278e7ba0c66a8a51733f5fc22117329cb4a44144c6a8bdfdf853d60",
+      "html_url": "https://github.com/Thedrummonger/YargArchipelagoClient/releases/tag/V1.0.1",
+      "minimum_ap_version": "0.6.1",
+      "size": 10109,
+      "source_url": "https://api.github.com/repos/Thedrummonger/YargArchipelagoClient",
+      "tag": "V1.0.1",
+      "title": "V1.0.1",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
+    },
+    "V1.1.0": {
+      "created_at": "2026-01-15T04:49:09Z",
+      "description": "# Yet Another YARG AP V1.1.0\r\n\r\n## New Features\r\n- **Song Packs**: You can now change Song Items into Song Pack Items which will unlock a configurable number of songs at once.\r\n- **Energy Link**: Completing a song can now send your score as energy to the energy link bank. A multiplier will be applied based on how far you are in your seed. What songs send energy is configurable.\r\n- **Energy Shop**: With energy link enabled, you can now spend energy to purchase useful items like Song Swaps.\r\n- **New Deathlink Mode**: you can now configure death link to lower your rock meter to a point where missing a single not would cause you to fail instead of failing you immediately.\r\n- **Rock Meter Trap**: A new trap that will reduce 1/4th of your rock meter.\r\n- The Yarg AP Client will now edit AP Item Receive messages to insert the actual name of the song along with the song number (this only work in the Yarg AP Client).\r\n- The client now keeps track of who send each filler item. The user will be displayed in game when receiving the item. \r\n- You can now check who sent you individual songs in the clients right click menu.\r\n\r\n## Bug Fixes\r\n- Fix a bug that caused Star Power items to not apply in song.\r\n- Fix option edits not saving in the CLI client.\r\n\r\nSetup Guide\r\nhttps://github.com/Thedrummonger/Archipelago/blob/YARG/worlds/yayarg/docs/guide_en.md",
+      "download_url": "https://github.com/Thedrummonger/YargArchipelagoClient/releases/download/V1.1.0/yayarg.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1d09f6d265748b00a047a7467bf3db734b59cf10b401b01fe19b6f72cd310e06",
+      "html_url": "https://github.com/Thedrummonger/YargArchipelagoClient/releases/tag/V1.1.0",
+      "minimum_ap_version": "0.6.1",
+      "size": 11489,
+      "source_url": "https://api.github.com/repos/Thedrummonger/YargArchipelagoClient",
+      "tag": "V1.1.0",
+      "title": "V1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
+    },
     "V2.0.0": {
       "created_at": "2026-01-28T18:11:10Z",
       "description": "# Version 2.0.0 of Yet Another YARG Archipelago \r\n## **This is an alpha! Minimally tested and likely very buggy!**\r\n\r\n### Major Changes\r\n- **Dynamic location and item names**: Locations and items now use the actual names of your custom songs in-game for all players to see. This is achieved by reading each player's YAML when Archipelago loads and dynamically creating locations based on every player's song list.\r\n- **No more client**: Everything now happens completely inside YARG.\r\n  - All settings are now defined in the YAML, including song pools, song plando and the list of songs to use in your seed.\r\n  - It is **Highly** recommended use the **YARG YAML Creator** to generate your YAML. It is required at minimum to generate your song list.\r\n\r\n### New Features\r\n- **Instrument Randomizer**: Each instrument you define in at least one of your pools will be scattered across the multiworld. You must collect the instrument item to play songs from pools requiring that instrument. You will always start with one instrument.\r\n- **Combined goal criteria**: Instead of choosing between \"Collect X fame points\" OR \"Complete X percent of your songs,\" you can now require both, either individually, or neither.\r\n- **New goal condition**: In addition to previous goal conditions, you can now require finding your individual goal song unlock item in the pool.\r\n- **New YAML Creator**: A standalone program for creating your YAML file. This is **required** as it is the only way to fill in the hash string or obtain the Song Export file needed for the \"Song List\" option.",
@@ -25,7 +55,7 @@
       "tag": "V2.0.0",
       "title": "V2.0.0",
       "version_simple": "1.1.0",
-      "world_version": "1.1.0"
+      "world_version": "1.1.0r2"
     },
     "V2.1.0": {
       "created_at": "2026-01-31T16:35:53Z",

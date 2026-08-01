@@ -38,6 +38,15 @@ bad_repos = skip_config.get("skipped_repos", [])
 
 filtered_url = re.compile(r"(.*?)(?:\[(.*)\])$")
 
+MANIFEST_FIELDS = [
+    "ai_disclosure",
+    "authors",
+    "flags",
+    "igdb_id",
+    "tracker",
+    "tracker_included",
+]
+
 
 class NoWorldsFound(Exception):
     pass
@@ -198,7 +207,9 @@ def cleanup_manifest(manifest):
         if seen_versions[info["world_version"]] > 1:
             raw_version = info["world_version"]
             revision = seen_versions[info["world_version"]]
-            info["world_version"] = f"{raw_version}r{revision}"
+            parsed_version = parse_version(raw_version)
+            new_version = parsed_version.base_version + f"r{revision}"
+            info["world_version"] = new_version
             print(f"Duplicate world version {raw_version} in manifest, renamed to {info['world_version']}")
 
 
@@ -274,16 +285,10 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
 
         if "game" in manifest_data and not manifest.get("game"):
             manifest["game"] = manifest_data["game"]
-        if "tracker" in manifest_data:
-            manifest["tracker"] = manifest_data["tracker"]
-        if "flags" in manifest_data:
-            manifest["flags"] = manifest_data["flags"]
-        if "tracker_included" in manifest_data:
-            manifest.setdefault("flags", []).append("tracker_included")
-        if "igdb_id" in manifest_data:
-            manifest["igdb_id"] = manifest_data["igdb_id"]
-        if "authors" in manifest_data:
-            manifest["authors"] = manifest_data["authors"]
+        for field in MANIFEST_FIELDS:
+            if field in manifest_data:
+                manifest[field] = manifest_data[field]
+
         if manifest_data.get("game") and not manifest.get("game"):
             manifest["game"] = manifest_data["game"]
         if isinstance(manifest.get("authors", []), str):  # Putting a string in this field is against spec, but when has that ever stopped anyone?

@@ -4,7 +4,10 @@
     "unready"
   ],
   "game": "Super Mario Odyssey",
-  "github": "https://github.com/Kgamer77/SuperMarioOdysseyArchipelago",
+  "github": [
+    "https://github.com/Kgamer77/SuperMarioOdysseyArchipelago",
+    "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago"
+  ],
   "license": null,
   "manifest_fields": [],
   "versions": {
@@ -161,6 +164,76 @@
       "title": "v1.6.3 Hot Fix",
       "version_simple": "1.6.3",
       "world_version": "1.6.3.post2"
+    },
+    "v1.7.0": {
+      "created_at": "2026-06-14T04:27:54Z",
+      "description": "AP World Changes:\r\n- Built-in Universal Tracker Tab\r\n- Glitch logic in Universal Tracker (still in-development)\r\n- Many logic improvements\r\n  - Cap > Cascade requires Frog. Frogless is no longer required\r\n  - Most of Cascade requires Chain Chomp. First moon skip is no longer required\r\n  - Inverted Pyramid requires Bullet Bill\r\n  - Uproot and Sherm required for much more of Wooded's Story\r\n  - And many other small improvements for individual moons\r\n- Moon requirements for \"Same Total\" and \"Same Total Lock Ruined\" are now +/- 5 from the base game, rather than completely random\r\n- Moons are now progression-balanced items\r\n- It is now possible to gen with a Sand Kingdom goal\r\n- Turning shopsanity off completely removes shop items from the item pool\r\n- Disable death link temporarily while in the Cap Kingdom Spark Pylon to prevent a softlock\r\n- Added a `/die` command to simulate receiving a deathlink\r\n- Added a `/deathlink` command to turn deathlink on and off in an existing game. Resets whenever you reconnect to the AP server\r\n- Improved the help message for all commands\r\n\r\nMod Changes:\r\n- Fixed the Cap Kingdom Spark Pylon sometimes not capturing\r\n- Topper will now always appear when spawning in Cap Kingdom Scenario 1\r\n  - No more forced restarts because you received a death link after beating Topper\r\n- Significant Networking improvements\r\n- Colored messages in the Text Client\r\n- Text Client now supports up to 5 messages\r\n- Bound Bowl no longer crashes the game\r\n- Receiving a death link during Bound Bowl now has a special interaction\r\n  - This avoids a crash when dying during bound bowl\r\n- The Wooded Kingdom and Lake Kingdom switch pipes have been slightly adjusted\r\n- Wooded Kingdom purples no longer disappear if you choose Lake first\r\n- Flower Field loading zone never despawns\r\n- Most captures now uncapture when being captured without the corresponding check, rather than being killed entirely\r\n\r\n\r\nAnd probably more that I've forgotten by now. The game is far more stable now, and the logic is far more sensible, aiming to ensure that even first-time players can enjoy the Archipelago\r\n\r\nKnown Issues:\r\n- Receiving a death while buying a shop moon crashes the game\r\n- Capturesanity logic past Wooded needs to be investigated for potential issues\r\n- The code base is messy and needs a refactor",
+      "download_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.0/smo.apworld",
+      "has_manifest": false,
+      "hash_sha256": "9c12020c40837fdf27d8ca7bda870f3d8289f44cf2ceb474eb315bfbe20fdc18",
+      "html_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/tag/v1.7.0",
+      "size": 67961,
+      "source_url": "https://api.github.com/repos/AdalynBlack/SuperMarioOdysseyArchipelago",
+      "tag": "v1.7.0",
+      "title": "v1.7.0",
+      "version_simple": "1.7.0",
+      "world_version": "1.7.0"
+    },
+    "v1.7.1": {
+      "created_at": "2026-06-24T20:55:53Z",
+      "description": "#### Only the apworld was changed in this update. You do not need to update your mod installation!\r\n\r\n- Fixed an issue that prevented generation from working when capturesanity is disabled",
+      "download_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.1/smo.apworld",
+      "has_manifest": false,
+      "hash_sha256": "41582c874bbb863ca33e4522d01a8c7a6705be20b975ba58f27e3419f2d2ce1e",
+      "html_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/tag/v1.7.1",
+      "size": 133580,
+      "source_url": "https://api.github.com/repos/AdalynBlack/SuperMarioOdysseyArchipelago",
+      "tag": "v1.7.1",
+      "title": "v1.7.1",
+      "version_simple": "1.7.1",
+      "world_version": "1.7.1"
+    },
+    "v1.7.2": {
+      "created_at": "2026-07-04T19:34:06Z",
+      "description": "#### Only the apworld was changed in this update. You do not need to update your mod installation!\r\n\r\n- Fixed an issue that broke genning with Capturesanity enabled\r\n    - This was a regression in v1.7.1. Genning is now confirmed working with Capturesanity enabled and disabled\r\n- Fixed snow's moon total\r\n    - This was an issue introduced in the development phases of v1.7.0 due to bound bowl crashing the game. As bound bowl no longer crashes, the moon total was able to be reset\r\n- Fixed an issue with \"Doctor in the House\" when the goal was set to Dark Side and moon counts were set to Moderate\r\n    - Doctor in the House requires 240 moons to unlock the relevant outfit, but on some Dark Side seeds, there weren't 240 moons to collect. This moon is now removed if there aren't enough moons for it to be \r\n\r\nKnown Issues:\r\n- In very rare cases, darker side goals may fail to generate. This issue might have been resolved, but it's rare enough that it's hard to be certain\r\n\r\nSpecial thanks to @itz_trackz on Discord for helping test for genning issues using the Fuzzer! This helped to track down a couple of smaller generation errors, and also helps ensure that this release and future releases will not regress\r\n\r\n**Full Changelog**: https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/compare/v1.7.1...v1.7.2",
+      "download_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.2/smo.apworld",
+      "has_manifest": false,
+      "hash_sha256": "20a5b7b446b858eb43e1fb9ae469532ad733089998da2560b5e83e7b9501131b",
+      "html_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/tag/v1.7.2",
+      "size": 68049,
+      "source_url": "https://api.github.com/repos/AdalynBlack/SuperMarioOdysseyArchipelago",
+      "tag": "v1.7.2",
+      "title": "v1.7.2",
+      "version_simple": "1.7.2",
+      "world_version": "1.7.2"
+    },
+    "v1.7.3": {
+      "created_at": "2026-07-21T01:58:41Z",
+      "description": "- Improved the Cap Kingdom Topper Fight boss flag behaviour\r\n- Fixed an issue where the required number of moons in a kingdom could, in rare circumstances, exceed the maximum number of moons\r\n- Added an `SMOAP_VERSION` file to the release to make determining what version you're currently on easier\r\n    - Emulator: `SMOAP/SMOAP_VERSION`\r\n    - Switch: `atmosphere/contents/0100000000010000/`\r\n- Made the Metro Kingdom outfit moons require the Builder Outfit\r\n- Improved networking slightly\r\n- Added better documentation for setting up Ryujinx and re-setting the server IP/Port config\r\n\r\nKnown Apworld Issues:\r\n- Certain postgame outfits sometimes don't generate accessible locations. Only affects Dark and Darker goals\r\n- Darker Side's Multi-moon is sometimes inaccessible. Only affects Darker side\r\n\r\nFor Mod issues, please check to the Issues tab on Github",
+      "download_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.3/smo.apworld",
+      "has_manifest": false,
+      "hash_sha256": "95782d03e1a01976d331fcdfe515f6fabf92dcc2d94b8128bd174034d0bff018",
+      "html_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/tag/v1.7.3",
+      "size": 68158,
+      "source_url": "https://api.github.com/repos/AdalynBlack/SuperMarioOdysseyArchipelago",
+      "tag": "v1.7.3",
+      "title": "v1.7.3",
+      "version_simple": "1.7.3",
+      "world_version": "1.7.3"
+    },
+    "v1.7.4": {
+      "created_at": "2026-07-29T21:05:01Z",
+      "description": "- Improved Networking and Error Messages\r\n- Fixed Story Logic in Seaside Kingdom\r\n- Improved some dev scripts",
+      "download_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.4/smo.apworld",
+      "has_manifest": false,
+      "hash_sha256": "a84f118660981bcbc4c966a2727cfae47a09665b662f5c1ddeeaf317d63eda7d",
+      "html_url": "https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/tag/v1.7.4",
+      "size": 243947,
+      "source_url": "https://api.github.com/repos/AdalynBlack/SuperMarioOdysseyArchipelago",
+      "tag": "v1.7.4",
+      "title": "v1.7.4",
+      "version_simple": "1.7.4",
+      "world_version": "1.7.4"
     }
   }
 }
