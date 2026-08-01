@@ -9,7 +9,8 @@ import traceback
 
 import urllib.parse
 import yaml
-from common import NoWorldsFound, parse_version, update_index_from_github, repositories, load_manifest, update_index_from_changelog
+from common import NoWorldsFound, parse_version, update_index_from_github, repositories, update_index_from_changelog
+from manifest_manager import load_manifest
 from write_docs import write_docs
 from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
 from feedgen.feed import FeedGenerator

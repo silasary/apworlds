@@ -13,7 +13,8 @@ import warnings
 import zipimport
 import traceback_with_variables
 
-from common import NoWorldsFound, load_manifest, parse_version, update_index_from_github, repositories, get_or_add_github_repo, save
+from common import NoWorldsFound, parse_version, update_index_from_github, repositories, get_or_add_github_repo, save
+from manifest_manager import load_manifest
 from worlds import AutoWorldRegister
 from worlds.AutoWorld import World
 from worlds.apworld_manager.world_manager import ApWorldMetadata

@@ -15,6 +15,8 @@ import requests
 import yaml
 import bs4
 
+from manifest_manager import index, load_manifest
+
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
 sys.path.append("Archipelago")
@@ -27,8 +29,6 @@ from worlds.Files import InvalidDataError  # noqa: E402
 from worlds.apworld_manager.world_manager import ApWorldMetadata, GithubRepository, RemoteWorldSource, RepositoryManager, parse_version, Repository  # noqa: E402
 from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version  # noqa: E402
 from worlds.apworld_manager.container import RepoWorldContainer  # noqa: E402
-
-index = pathlib.Path("index")
 
 repositories = RepositoryManager()
 
@@ -386,29 +386,6 @@ def parse_version_from_release(release: dict, raw_version: str, prefer_version_f
             if version_number is None:
                 version_number = Version("0.0.0")
     return version_number
-
-
-def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=None) -> dict:
-    try:
-        if (file_path := file_path.with_suffix(".json")).exists():
-            manifest = json.loads(file_path.read_text())
-        elif (file_path := file_path.with_suffix(".yaml")).exists():
-            manifest = yaml.safe_load(file_path.read_text())
-        elif github_url:
-            manifest = {"game": "", "github": github_url}
-            if default_flags:
-                manifest["flags"] = default_flags
-        else:
-            manifest = {}
-        return manifest
-    except json.decoder.JSONDecodeError as e:
-        print(f"Failed to parse {file_path}: {e}")
-        try:
-            manifest = yaml.safe_load(file_path.read_text())
-            return manifest
-        except yaml.YAMLError as e:
-            print(f"Also failed to parse as YAML: {e}")
-        raise
 
 
 def get_or_add_github_repo(github_url) -> GithubRepository | Repository:

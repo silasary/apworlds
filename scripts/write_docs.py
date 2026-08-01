@@ -10,7 +10,8 @@ import langcodes
 
 import requests
 
-from common import construct_metadata_release, repositories, save as save_manifest, load_manifest, parse_version
+from common import construct_metadata_release, repositories, save as save_manifest, parse_version
+from manifest_manager import load_manifest
 
 with open("templates/downloads_template.mustache") as f:
     downloads_template = f.read()

@@ -10,7 +10,9 @@ import openpyxl
 
 import common
 import yaml
-from common import get_or_add_github_repo, update_index_from_github, index
+from common import get_or_add_github_repo, update_index_from_github, filtered_url
+from manifest_manager import index, index_manager
+import manifest_manager
 from worlds.apworld_manager.world_manager import RepositoryManager
 
 REPO_REGEX = r"(https://github\.com/[a-zA-Z0-9_\-\.]+/[a-zA-Z0-9_\-\.]+)"
@@ -126,6 +128,19 @@ def fetch_spreadsheet_rows_xlsx(spreadsheet: str, tabs: list[int]) -> list[dict[
 
 games_without_links = set()
 if spreadsheet:
+
+    def extract_apworld_link(row: dict[str, str]) -> str | None:
+        where_to_find = row.get("Links & Downloads", "")
+        if not where_to_find:
+            where_to_find = row.get("APWorld Link", "")
+        if not where_to_find:
+            where_to_find = row.get("Where can you get the APWorld and Client?", "")
+        if not where_to_find:
+            where_to_find = row.get("Where can you get the APWorld or program?", "")
+        if where_to_find:
+            return where_to_find.strip()
+        return ""
+
     all_rows = fetch_spreadsheet_rows_xlsx(spreadsheet, tabs)
     if not all_rows:
         print("Failed to fetch spreadsheet with API, falling back to csv download")
@@ -137,9 +152,7 @@ if spreadsheet:
             row["Game"] = str(int(row["Game"]))
         elif row["Game"] is None:
             continue
-        if wheretofind := (row.get("Where can you get the APWorld and Client?", "").strip() or row.get("Where can you get the APWorld or program?", "").strip()) or (
-            row.get("APWorld Link", "").strip() or row.get("Links & Downloads", "").strip()
-        ):
+        if wheretofind := extract_apworld_link(row):
             repolinks = re.findall(REPO_REGEX, wheretofind)
             for link in repolinks:
                 queue.append(link + f"[{row['Game'].strip()}]")
@@ -186,6 +199,14 @@ for url in queue.copy():
     repositories = RepositoryManager()
     github = url.strip()
     github = github.split("/releases", 1)[0]
+    if m := filtered_url.match(github):
+        github_url, game_name_filter = m.groups()
+        manifest = index_manager.manifests_by_game.get(game_name_filter)
+        if manifest and manifest.get("github") == github_url:
+            print(f"Skipping {github_url} because it is already in the index for {game_name_filter}")
+            queue.remove(url)
+            continue
+
     manifests = update_index_from_github(None, {}, github_url=github, default_flags=default_flags)
     for world, manifest in manifests.items():
         # if not args.allow_uppercase and not world.islower():
@@ -223,7 +244,7 @@ for world in pathlib.Path("index").iterdir():
     if world.is_dir():
         pass
     else:
-        manifest = common.load_manifest(world)
+        manifest = manifest_manager.load_manifest(world)
         if not manifest:
             print(f"Failed to load manifest for {world}")
             continue
