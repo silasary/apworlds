@@ -1,17 +1,17 @@
 import argparse
 import glob
 import os
-from pathlib import Path
 import pathlib
-from typing import Any, Iterable
-import pystache
 import zipfile
+from collections.abc import Iterable
+from pathlib import Path
+from typing import Any
+
 import langcodes
-
+import pystache
 import requests
-
-from common import construct_metadata_release, repositories, save as save_manifest, parse_version
-from manifest_manager import load_manifest
+from common import construct_metadata_release, parse_version, repositories
+from manifest_manager import load_manifest, save_manifest
 
 with open("templates/downloads_template.mustache") as f:
     downloads_template = f.read()

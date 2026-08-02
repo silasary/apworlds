@@ -1,18 +1,16 @@
 import argparse
+import csv
 import os
 import pathlib
 import re
 from time import sleep
-import requests
-import csv
-import gspread
-import openpyxl
 
-import common
-import yaml
-from common import get_or_add_github_repo, update_index_from_github, filtered_url
-from manifest_manager import index, index_manager
+import gspread
 import manifest_manager
+import openpyxl
+import requests
+from common import filtered_url, get_or_add_github_repo, update_index_from_github
+from manifest_manager import index_manager
 from worlds.apworld_manager.world_manager import RepositoryManager
 
 REPO_REGEX = r"(https://github\.com/[a-zA-Z0-9_\-\.]+/[a-zA-Z0-9_\-\.]+)"
@@ -221,10 +219,10 @@ for url in queue.copy():
         print(f"Added {world} from {github}")
         if manifest.get("game") in ad_games and "after_dark" not in manifest.setdefault("flags", []):
             manifest["flags"].append("after_dark")
-            common.save(world=pathlib.Path("index", world + ".json"), manifest=manifest)
+            manifest_manager.save_manifest(world=pathlib.Path("index", world + ".json"), manifest=manifest)
         if args.ready and "unready" in manifest.get("flags", []):
             manifest["flags"].remove("unready")
-            common.save(world=pathlib.Path("index", world + ".json"), manifest=manifest)
+            manifest_manager.save_manifest(world=pathlib.Path("index", world + ".json"), manifest=manifest)
     if not manifests:
         failed.append(github)
 
@@ -233,20 +231,7 @@ for url in queue.copy():
     save()
     sleep(2)
 
-for world in pathlib.Path("Archipelago", "worlds").iterdir():
-    if world.stem == "apworld_manager":
-        continue
-    if world.is_dir():
-        file = index / f"{world.stem}.yaml"
-        if file.exists():
-            with open(file) as f:
-                manifest = yaml.safe_load(f)
-            if "supported" not in manifest:
-                manifest["supported"] = True
-                with open(file, "w") as f:
-                    yaml.safe_dump(manifest, f)
-
-for world in pathlib.Path("index").iterdir():
+for world in index_manager.files:
     if world.is_dir():
         pass
     else:

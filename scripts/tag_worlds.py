@@ -13,8 +13,8 @@ import warnings
 import zipimport
 import traceback_with_variables
 
-from common import NoWorldsFound, parse_version, update_index_from_github, repositories, get_or_add_github_repo, save
-from manifest_manager import load_manifest
+from common import NoWorldsFound, parse_version, update_index_from_github, repositories, get_or_add_github_repo
+from manifest_manager import load_manifest, save_manifest
 from worlds import AutoWorldRegister
 from worlds.AutoWorld import World
 from worlds.apworld_manager.world_manager import ApWorldMetadata
@@ -88,12 +88,12 @@ def tag_worlds():
                     continue
                 manifest["license"] = repo.get_license()
                 if manifest["license"]:
-                    save(world, manifest)
+                    save_manifest(world, manifest)
 
             if manifest.get("after_dark"):
                 del manifest["after_dark"]
                 manifest.setdefault("flags", []).append("after_dark")
-                save(world, manifest)
+                save_manifest(world, manifest)
 
             do_analyze = not manifest.get("game") or not manifest.get("description")
 
@@ -153,7 +153,7 @@ def import_and_introspect_world(world: pathlib.Path, manifest: dict, versions: d
         if description:
             manifest["description"] = inspect.cleandoc(description).strip()
 
-        save(world, manifest)
+        save_manifest(world, manifest)
 
     except Exception as e:
         if manifest.get("supported", False) and not manifest.get("versions"):
@@ -167,7 +167,7 @@ def import_and_introspect_world(world: pathlib.Path, manifest: dict, versions: d
             manifest["versions"].get(highest_remote_version.world_version, {})["maximum_ap_version"] = "0.4.6"
         with open(f"{world.stem}.log", "w") as f:
             f.writelines([line + "\n" for line in traceback_with_variables.iter_exc_lines(e)])
-        save(world, manifest)
+        save_manifest(world, manifest)
         return
 
 

@@ -2,7 +2,6 @@ from collections import Counter
 import datetime
 import functools
 import hashlib
-import json
 import os
 import pathlib
 import re
@@ -15,7 +14,7 @@ import requests
 import yaml
 import bs4
 
-from manifest_manager import index, load_manifest
+from manifest_manager import index, load_manifest, save_manifest
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -213,7 +212,7 @@ def cleanup_manifest(manifest):
             print(f"Duplicate world version {raw_version} in manifest, renamed to {info['world_version']}")
 
 
-def save_manifests(github_url, manifests):
+def save_manifests(github_url: str | list[str] | None, manifests: dict[str, dict]) -> None:
     for name, manifest in manifests.items():
         cleanup_manifest(manifest)
         if github_url:
@@ -223,7 +222,7 @@ def save_manifests(github_url, manifests):
         if file_path.exists():
             file_path.unlink()
         file_path = index / f"{name}.json"
-        save(file_path, manifest)
+        save_manifest(file_path, manifest)
 
 
 def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | None, manifests: dict[str, dict], release: ApWorldMetadata) -> None:
@@ -405,13 +404,6 @@ def get_or_add_github_repo(github_url) -> GithubRepository | Repository:
         repo = repositories.add_repo(github_url)
         repo.refresh()
     return repo
-
-
-def save(world: pathlib.Path, manifest: dict):
-    if world.suffix == ".yaml":
-        world.write_text(yaml.dump(manifest))
-    else:
-        world.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
 
 
 # def parse_version(version: str) -> Version:
