@@ -2,104 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-01T18:32:47.047082+00:00</updated>
+  <updated>2026-08-02T00:35:27.687701+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.4.0</id>
-    <title>Bayonetta v2.4.0</title>
-    <updated>2026-07-29T10:31:43+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v2.4.0&#13;
-Squash Trap introduction with multi-phase cartoon flattening, robust animation frame and move part resets, connection details persistence across restarts, and YAML generation validation fixes!&#13;
-&#13;
-* **I totally forgot a bunch of stuff sooo..**&#13;
-&#13;
-### What's New&#13;
-**Squash Trap:** You now get flattened as if Golden squashed you.&#13;
-**Removed Double Jump as AP Item**&#13;
-&#13;
-### Bug Fixes &amp; Adjustments&#13;
-* **Connection Persistence:** Added automatic local configuration saving and loading (`ap_config.txt`) so your server address, port, and slot name remember themselves across game restarts.&#13;
-* **Broken Witch Heart Noise:** After much trial and error the Heart noise SHOULD be fixed.&#13;
-* **Logic should be somewhat fixed now**&#13;
-&#13;
-### Notes&#13;
-* **Regeneration Required:** New trap items and rules require a fresh multiworld generation (`bayonetta.apworld`). Existing seeds will not contain the Squash Trap in their item pools.&#13;
-&#13;
-### Todo&#13;
-* **Fine-tune trap duration scaling across multiplayer sessions.**&#13;
-&#13;
-### Downloads&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **`z.dll`** — place in your Bayonetta game folder too.&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder (replace the old one).&#13;
-&#13;
-**Existing seeds keep their original logic** — updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues)!</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.2.3</id>
-    <title>Medievil 2 v0.2.3</title>
-    <updated>2026-07-29T10:42:54+00:00</updated>
-    <author>
-      <name>RiezaHughes</name>
-    </author>
-    <content/>
-    <link href="https://github.com/riezahughes/Medievil2APWorld/releases/tag/v0.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.3.1</id>
-    <title>Dwarf Fortress v1.3.1</title>
-    <updated>2026-07-29T15:30:38+00:00</updated>
-    <author>
-      <name>Dwarfipelago Contributors</name>
-    </author>
-    <content>## Improvements&#13;
-&#13;
-- **Completed Location Check Validation**: Implemented a validation check for all checks the AP client has sent, and what the AP server has actually received. This is triggered on a reconnect to the AP server. (implemented to help curb the potential problem that was seen with a charcoal check being missed)&#13;
-&#13;
-## Fixes&#13;
-&#13;
-- **Craftsanity Craft Count Overlay**: Certain crafted items would not show the */15 counter when not playing with materials enabled.&#13;
-- **Room Value Detection**: Room value and quality level was not being detected properly for bedrooms, dining halls, quarters, and tombs. &#13;
-&#13;
-## Upgrade Notes&#13;
-&#13;
-- Update the **mod and the apworld together** to 1.3.1 - versions are match-checked, but your running DF seed will now support compatible versions&#13;
-- **Regeneration is NOT required**: the location and item set did not change, so existing seeds are compatible with this patch release</content>
-    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/1.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.9.0</id>
-    <title>Hades2Rogue v0.9.0</title>
-    <updated>2026-07-29T16:07:32+00:00</updated>
-    <author>
-      <name>BrittisH39</name>
-    </author>
-    <content>- Added a [Github Pages site](https://brittish39.github.io/Hades2Archipelago/#yaml) where you can create a YAML more easily. &#13;
-- Added Per_aspect_per_room for you sickos out there. This alone should be considered pre-release build, but I'm releasing the patch as full release because this is more stable than 0.8.0 outside of potential issues with that feature hardly anyone will use.&#13;
-- Corrected for a bug where even if you didn't have Zagreus Journey enabled, missing the Hades 1 install would still break everything.</content>
-    <link href="https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.9.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.8.4</id>
-    <title>Kerbal Space Program 1 v0.8.4</title>
-    <updated>2026-07-29T17:49:40+00:00</updated>
-    <author>
-      <name>nickdavies</name>
-    </author>
-    <content>Bug fix for issue running fallback on post_fill. This scopes solvability to only KSP's slot and also runs later in the generation.
-
-**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.8.3...v0.8.4</content>
-    <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.8.4"/>
-  </entry>
   <entry>
     <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v2.1.3</id>
     <title>Mario Sports Mix v2.1.3</title>
@@ -582,6 +489,35 @@ Set `door_rando` to `'decoupled'` to use it.&#13;
 - Fixed important items getting sent again if you use one for quests.&#13;
 - Fixed logic @ Morg</content>
     <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.0</id>
+    <title>Burger Shop v0.3.0</title>
+    <updated>2026-07-30T21:39:51+00:00</updated>
+    <author>
+      <name>zsiegel701</name>
+    </author>
+    <content>## New Configuration Options&#13;
+- Customer Slots: Forces levels to use a specified number of customer slots.&#13;
+- Character Randomization: Randomizes the characters in each level.&#13;
+&#13;
+### Burger Shop 1&#13;
+See the [setup guide](https://github.com/zsiegel701/Archipelago/blob/burger-shop/worlds/burger_shop/docs/setup_en.md) for full installation and connection instructions.&#13;
+See [this page](https://github.com/zsiegel701/Archipelago/blob/burger-shop/worlds/burger_shop/docs/en_Burger%20Shop.md) for details on what is randomized.&#13;
+&#13;
+### Burger Shop 2&#13;
+See the [setup guide](https://github.com/zsiegel701/Archipelago/blob/burger-shop/worlds/burger_shop_2/docs/setup_en.md) for full installation and connection instructions.&#13;
+See [this page](https://github.com/zsiegel701/Archipelago/blob/burger-shop/worlds/burger_shop_2/docs/en_Burger%20Shop%202.md) for details on what is randomized.&#13;
+&#13;
+### Additional Changes&#13;
+- If the game is loaded before the client is connected and additional changes are needed to the game that cannot be done mid-session, the client will now mention that the game must be restarted.&#13;
+- Ninja orders will not include bonus recipes to prevent orders that cannot be completed.&#13;
+- Schoolgirl orders that are normally for 3 items will always be for 3 items.&#13;
+- Orders that would be empty due to a lack of ingredient unlocks will now fallback to the Dude's order.&#13;
+- The starter recipes option will now add a toasted breakfast item as well as a dinner meat item&#13;
+&#13;
+All files have been updated in this version.  To reinstall the game files, delete the existing archipelago folder in your Burger Shop installation directory and add the same folder from the corresponding zip file of this release.</content>
+    <link href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.0"/>
   </entry>
   <entry>
     <id>https://github.com/blitzashspear/ap-yhtwtg/releases/tag/release-1.0.1</id>
@@ -1209,5 +1145,64 @@ Like always, the community will be my testing crew. If you encounter any issues 
       <name>L-technology-mods</name>
     </author>
     <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NaixGames/Polycosmos/releases/tag/0.16.3</id>
+    <title>Hades v0.16.3</title>
+    <updated>2026-08-01T18:44:58+00:00</updated>
+    <author>
+      <name>Naix</name>
+    </author>
+    <content>- Adding bounce for auto tabbing for the tracker&#13;
+- Changing some defaults so people for the first time have a more friendly experience&#13;
+- Decreasing max number of checks behind the score location mode. Mainly, because people tend to put a number too high and then suffer 🤷‍♂️</content>
+    <link href="https://github.com/NaixGames/Polycosmos/releases/tag/0.16.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.0</id>
+    <title>pokemon_snap v0.5.0</title>
+    <updated>2026-08-01T21:38:08+00:00</updated>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <content># New Features&#13;
+## Added the following options to the YAML&#13;
+- Include "Good Technique" and "Multiple Pokemon" photos as checks&#13;
+- Include the 11 "Special Pose" photos as checks&#13;
+- Include the 6 Pokemon Sign photos as checks&#13;
+- Include taking each of the 3 Secret Exits&#13;
+- Include the luck-based "Multiple Pokemon" checks&#13;
+- Include the "hard" checks&#13;
+- Start with Dash Engine&#13;
+&#13;
+## Notes&#13;
+This should be compatible with worlds generated on v0.4.0, but could be slightly buggy.&#13;
+&#13;
+**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.4.0...v0.5.0</content>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.3</id>
+    <title>Factorio: Space Age v2.2.3</title>
+    <updated>2026-08-01T23:39:00+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 2.2.3&#13;
+&#13;
+* Fix infinite technologies interacting weirdly with the multiworld: [#36](https://github.com/thejoshwolfe/Archipelago/issues/36)&#13;
+    * When an infinite tech is part of a large progressive group, it gives the next tech in the group out of logic.&#13;
+    * Infinite technology locations are no longer part of the multiworld, so they should not confuse trackers anymore. They are local only to the Factorio: Space Age slot.&#13;
+    * Fix crash on release/collect.&#13;
+* Further adjusted balance on `space_technology_level` to no longer reduce crafting time for `space-platform-foundation` and `rocket-silo`.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.3"/>
   </entry>
 </feed>

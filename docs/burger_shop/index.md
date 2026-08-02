@@ -5,7 +5,7 @@ across 80 Story Mode levels. Unlock all 14 customer characters to reach the fina
 
 
 ## Downloads
-- <a href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/download/v0.2.2/burger_shop.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/download/v0.3.0/burger_shop.apworld">Latest Version (0.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

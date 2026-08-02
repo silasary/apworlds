@@ -5,6 +5,8 @@
 - [Burger Shop 2](https://store.steampowered.com/app/730870/) (Steam)
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.7 or later
 
+Currently, only Windows is supported.
+
 ## Optional Software
 
 - [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.32) — adds a Tracker tab to the client showing which levels are currently in logic based on your received items. Install by placing `tracker.apworld` in the `custom_worlds/` folder alongside `burger_shop_2.apworld`.
@@ -57,10 +59,12 @@ Burger Shop 2/
 | Option | Default | Description |
 |---|---|---|
 | Five Star Mode | On | Level checks require all 5 stars; off means any completion counts |
-| Starter Recipes | Off | Adds one random item from each of six starter pools to your starting inventory |
+| Starter Recipes | Off | Adds one random item from each of eight starter pools to your starting inventory |
 | Bonus Recipes | On | Replaces filler items with bonus recipes not in the base game |
 | Start with Lollipops | On | Lollipops added to starting inventory (recommended with Five Star Mode) |
 | Start with BurgerBot | Off | BurgerBot added to starting inventory |
+| Customer Slots | Vanilla | Forces levels to use a specified number of customer slots |
+| Character Randomization | Vanilla | Randomizes the characters in each level |
 
 ## Troubleshooting
 
@@ -73,7 +77,7 @@ burger_shop_2_settings:
 
 **My save file is not being detected.**
 Only saves created *after* connecting the client to the server are tracked. Create a fresh save once
-the client shows you are connected.
+the client says that it's waiting for a save file to be created.
 
 **Recipe changes are not showing up mid-level.**
 The game reads updated order files when a level starts. Finish the current level or return to the map

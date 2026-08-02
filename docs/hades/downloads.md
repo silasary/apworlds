@@ -1,9 +1,12 @@
 # Hades
 
 ## Latest
-- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.16.2/hades.apworld">Latest Version (0.16.2)</a>
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.16.3/hades.apworld">Latest Version (0.16.3)</a>
 
 ## All Versions
+
+#### v0.16.3
+- <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.16.3/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.16.3/hades.apworld</a>
 
 #### v0.16.2
 - <a href="https://github.com/NaixGames/Polycosmos/releases/download/0.16.2/hades.apworld">https://github.com/NaixGames/Polycosmos/releases/download/0.16.2/hades.apworld</a>

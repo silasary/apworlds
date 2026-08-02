@@ -5,6 +5,8 @@
 - [Burger Shop](https://store.steampowered.com/app/730840/) (Steam)
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.7 or later
 
+Currently, only Windows is supported.
+
 ## Installation
 
 ### 1. Install the Archipelago world
@@ -55,6 +57,8 @@ will create the directory that contains your save file information.
 | Bonus Recipes | On | Replaces filler items with bonus recipes not in the base game |
 | Start with Cookies | On | Cookies added to starting inventory |
 | Start with BurgerBot | Off | BurgerBot added to starting inventory |
+| Customer Slots | Vanilla | Forces levels to use a specified number of customer slots |
+| Character Randomization | Vanilla | Randomizes the characters in each level |
 
 ## Troubleshooting
 
@@ -66,8 +70,8 @@ burger_shop_settings:
 ```
 
 **My save file is not being detected.**
-Only saves created *after* connecting the client to the server are tracked. Create a fresh save once the
-client shows you are connected.
+Only saves created *after* connecting the client to the server are tracked. Create a fresh save once
+the client says that it's waiting for a save file to be created.
 
 **Recipe changes are not showing up mid-level.**
 The game reads updated order files when a level starts. Finish the current level or return to the map screen
