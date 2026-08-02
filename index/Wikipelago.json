@@ -7,6 +7,62 @@
   "license": null,
   "manifest_fields": [],
   "versions": {
+    "0.3.0-Continued": {
+      "created_at": "2026-07-23T23:20:40Z",
+      "description": "## Why Wikipelago Continued?\r\n\r\nThe original Wikipelago project was abandoned. With the original author's permission, this fork continues public development and hosting (MIT), with credit to [Skrumptily69](https://github.com/Skrumptily69/Wikipelago).\r\n\r\nLive web client: https://wikipelago-contd.onrender.com/\r\n\r\n## What's new in 0.3.0 (vs 0.2.0)\r\n\r\n- Larger curated article pool, with category tags and a new music category\r\n- Updated seed defaults\r\n- Optional display-lens difficulty unlocks (and related sanities)\r\n- Client and bridge reliability improvements, cleanup, and bugfixes\r\n- Docs and packaging polish for Archipelago 0.6.7\r\n\r\n## Install\r\n\r\nDownload `Wikipelago.apworld` and the YAML template from this release, install the apworld, generate/host as usual, then connect with the web client above.\r\n\r\nDocs: [Overview](https://github.com/Eske-N/Wikipelago-Continued/blob/main/docs/overview.md) \u00b7 [Setup](https://github.com/Eske-N/Wikipelago-Continued/blob/main/docs/setup.md) \u00b7 [Options](https://github.com/Eske-N/Wikipelago-Continued/blob/main/docs/options.md)",
+      "download_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/download/0.3.0-Continued/Wikipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "63005d096c5f00d736695af44202054e20020f84a8199297dfbafcddb613d57b",
+      "html_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/tag/0.3.0-Continued",
+      "size": 53750,
+      "source_url": "https://api.github.com/repos/Dreskn/Wikipelago-Continued",
+      "tag": "0.3.0-Continued",
+      "title": "Wikipelago Continued 0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0rc0"
+    },
+    "0.4.0-DeadAndReborn": {
+      "created_at": "2026-07-25T18:00:35Z",
+      "description": "## What's new\r\n- Deaths, DeathLink, link bombs (+ density)\r\n- Traps (\"foggy traps\" obfuscate links, \"missing traps\" remove some links from the page) + TrapLink (`trap_count` / `trap_type`)\r\n- Target page reroll (3/round) + hover summary tooltip \r\n- Side panel redesign\r\n\r\n## Notes\r\n- Recommended Archipelago: **0.6.7**\r\n- Regenerate seeds with this apworld for reroll / trap slot_data\r\n- Web client: https://wikipelago-contd.onrender.com/",
+      "download_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/download/0.4.0-DeadAndReborn/Wikipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "9a91fe47a6a1e99791f3d0afad68ff6f366e2aa631bfa837c93e40bfa1f4a697",
+      "html_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/tag/0.4.0-DeadAndReborn",
+      "size": 55437,
+      "source_url": "https://api.github.com/repos/Dreskn/Wikipelago-Continued",
+      "tag": "0.4.0-DeadAndReborn",
+      "title": "0.4.0-DeadAndReborn",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
+    },
+    "0.4.1": {
+      "created_at": "2026-07-27T13:24:50Z",
+      "description": "Bugfixes\r\nUpdated apworld for new generates. Current rooms can use the live 0.4.1 web client without issue",
+      "download_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/download/0.4.1/Wikipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "e9b0a43f1d9c24fa2b64f709b06cbcdb936a24ff3bef79e696a9629eaa6eff01",
+      "html_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/tag/0.4.1",
+      "size": 54448,
+      "source_url": "https://api.github.com/repos/Dreskn/Wikipelago-Continued",
+      "tag": "0.4.1",
+      "title": "0.4.1",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1"
+    },
+    "0.4.2": {
+      "created_at": "2026-07-27T23:11:46Z",
+      "description": "Another round of bugfixes",
+      "download_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/download/0.4.2/Wikipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "053b22aea1fa97ab39fd319d02f1bbd0bef1d63b9296b8965e50872512e80d58",
+      "html_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/tag/0.4.2",
+      "size": 26924,
+      "source_url": "https://api.github.com/repos/Dreskn/Wikipelago-Continued",
+      "tag": "0.4.2",
+      "title": "0.4.2",
+      "version_simple": "0.4.2",
+      "world_version": "0.4.2"
+    },
     "release-2": {
       "created_at": "2026-03-12T17:18:36Z",
       "description": "## Wikipelago v0.1.1\r\n\r\nBeta update for Wikipelago.\r\n\r\n### Changes\r\n- Expanded article pools across all supported categories\r\n- Added many more titles, so category-restricted seeds are less likely to fail\r\n- Tightened category filtering so disabled categories do not leak into seeds\r\n- Removed the web client search bar to prevent direct target skipping\r\n- Updated web client cache versioning for cleaner deploys\r\n- Improved reconnect behavior so the web client can preserve progress after disconnects (recovery may still not be fully reliable)\r\n\r\n### Included Categories\r\n- Video Games\r\n- Board Games\r\n- Movies\r\n- TV Shows\r\n- Anime/Manga\r\n- Sports\r\n- Science/Space\r\n- Technology/Internet\r\n- History\r\n- Geography/Landmarks\r\n- Food/Cuisine\r\n- Art/Literature\r\n- Mythology/Folklore\r\n\r\n### Notes\r\n- Recommended Archipelago version: `0.6.6`\r\n- Reconnect progress restoration is still not fully reliable in all cases\r\n- If using a narrow category setup with very high round counts, generation may still require enabling more categories or lowering `check_count`\r\n\r\n### Files\r\nThis release should be used with:\r\n- `Wikipelago.apworld`\r\n- updated Wikipelago YAML template\r\n- latest deployed web client\r\n\r\n### Thanks\r\nThanks to everyone for testing and sending feedback. The reports directly helped improve seed quality and category behavior.\r\n",
@@ -51,6 +107,20 @@
       "title": "Wikipelago v0.2.0",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "v0.5.0-Bingo!": {
+      "created_at": "2026-07-29T12:54:42Z",
+      "description": "## Wikipelago 0.5.0-Bingo!\r\n\r\nRequires **Archipelago 0.6.7** (or compatible).  \r\nWeb client: https://wikipelago-contd.onrender.com/\r\n\r\n**Hosts:** install this `Wikipelago.apworld`, restart the Launcher, and **generate a new seed** for 0.5 features.  \r\n**Players:** browser + web client only (no apworld needed to play).\r\n\r\nIn-progress **0.4.x** rooms can usually keep playing on the new client; Back behavior may feel different. New bingo / progressive toolkit need this apworld.\r\n\r\n---\r\n\r\n### New in 0.5.0\r\n\r\n#### Letter-pair bingo\r\n- Optional **letter-pair bingo** boards (on by default). **Multi-board** via `bingo_cards_start` + **Progressive Bingo Card**\r\n- Stamp pairs from visitng pages; row / column / diagonal / full-card checks. Each line is a location to check\r\n\r\n#### Progressive toolkit\r\n- **Progressive Back** (replaces one-shot Back Button) \u2014 per-round back button maximum uses increases with this unlock\r\n- **Progressive Reroll** \u2014 per-round target rerolls unlocks progressively\r\n\r\n#### Misc bug fixes, gameplay balance, documentation\r\n- Grand Goal is **distinct** from the final round target (already in 0.4.2)\r\n- Connection panel and disconnect control\r\n- Resume/reconnect hardening\r\n- Target page tooltip when hovering\r\n- FAQ page created (`docs/faq.md`)\r\n- Random first-round opening page fix\r\n- Dark-UI table color fix\r\n- Portal/namespace error toasts\r\n\r\n---\r\n\r\n### Install\r\n1. Download `Wikipelago.apworld` (+ optional `Wikipelago.yaml`)\r\n2. Install into Archipelago (`custom_worlds` or double-click)\r\n3. Restart Launcher \u2192 Generate \u2192 host\r\n4. Play at https://wikipelago-contd.onrender.com/",
+      "download_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/download/v0.5.0-Bingo%21/Wikipelago.apworld",
+      "has_manifest": false,
+      "hash_sha256": "10a8a74d4d9b4ae716208bf3c458177f03c9ae4a28ef8d20c0eb9e9500d7abb5",
+      "html_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/tag/v0.5.0-Bingo!",
+      "size": 34705,
+      "source_url": "https://api.github.com/repos/Dreskn/Wikipelago-Continued",
+      "tag": "v0.5.0-Bingo!",
+      "title": "0.5.0-Bingo!",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0b0"
     }
   }
 }
