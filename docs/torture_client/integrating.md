@@ -6,9 +6,8 @@ The importing process follows just like UT.
 
 ![How to import Torture User Client](https://github.com/ElectroStarz/Torture-AP-Client/blob/main/docs/images/importing.png)
 
-We define the classes afterwards because we can't import as SuperContext and SuperCommandContext because of UT. Now, for
-your Context and CommandProcessor classes we use multilevel inheritance, they should look something like this (Depending
-on if you have integrated UT or not)
+We can't import as SuperContext and SuperCommandContext because of UT, so we use multilevel inheritence. Your context
+and CommandProcessor classes should look something like this (Depending on if you have integrated UT or not)
 
 ![Multilevel inheritence with the Context and CommandProcessor classes](https://github.com/ElectroStarz/Torture-AP-Client/blob/main/docs/images/multilevel_inheritance.png)
 

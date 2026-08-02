@@ -24,10 +24,16 @@ tab in the top, "Torture Dashboard". It's recommended to have the client be larg
 skills... But anyway, on the left you will see server and player information. If you have any suggestions as to what should be
 there, please do say.
 
-### Deathlink
-On the right you will see a few boxes. The first 2 are to send a deathlink, with the text input being the reason and the
-box being the send box (Note, the slot name is NOT included in the reason, you will have to type something like "I hate
-you all"). 
+### Coloured Names
+If you quickly look below, you'll see that the names are coloured, here's what they mean:\
+Red = Disconnected\
+Green = Connected & Regular Client\
+Blue = Connected & Torture User Client (Supports Special Features)\
+Yellow = Goaled
+
+### Link Sending
+On the right you'll see a few boxes. Two buttons, one text input. The top button allows you to select between the
+supported link types. Then the hint text in the text input box will update to what information you need to enter.
 
 ### Trap Sending
 Below that there are the send traps options and the target player check boxes. This allows you to send traps to either
@@ -42,7 +48,7 @@ The trap sending may not be perfect, this checks the item_name_to_id in the data
 Now below that you will see a Log to Clients subheading! This will log directly to the client whatever you type and 
 send! However, this is a feature only supported by the Torture **User** Client, see
 [here](https://github.com/ElectroStarz/Torture-AP-Client/blob/main/docs/integrating.md) to integrate it with your
-client. The names in green are the clients that support this feature.
+client.
 
 You can even use [colours](https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/network%20protocol.md#JSONMessagePart)
 with this! If you want a piece of text (or all) to be in colour, simply type {color: insert colour here, text:

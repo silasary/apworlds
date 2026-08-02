@@ -216,6 +216,22 @@
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 1 \u2014 Statue shop, blessing items, progressive everything",
       "version_simple": "1.9.2",
       "world_version": "1.9.2r2"
+    },
+    "v2.0.0-beta.2": {
+      "created_at": "2026-08-02T14:51:13Z",
+      "description": "> \ud83e\uddea **Still a beta.** Requires **Archipelago 0.6.7 or newer**. This is beta 1 plus one fix \u2014 see [2.0.0-beta.1](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.1) for the full change list.\n\n## \ud83d\udd13 Fixes the post-Kishgal softlock on 1F\n\nIf you beat Kishgal, got dropped on 1F for the story scene, and then found that **the stairs event never triggers, you can't leave, and the Crystal answers with *\"If I go anywhere, I'll just get in everyone's way\"*** \u2014 this build repairs that, including on a save that is already stuck. Just update `dinput8.dll` and load your save; it fixes itself on the next tick and logs what it did.\n\n**What was happening.** That 1F scene ends with a per-character block, and Yunica's never took effect:\n\n```\ntest g_flags[150] == 1        <- Yunica\njump-if-false past the block\n  g_flags[278] += 4\n  g_flags[284] = 1\n  g_flags[286] = 1\n  g_flags[285] = 1\n  g_flags[287] = 1\n  g_flags[243] = 1            <- the one that matters\n```\n\nEverything before that block ran, and everything after it ran \u2014 only those six writes went missing, which is a state the game itself can't produce. `g_flags[243]` is what the north-exit trigger checks before starting the stairs event, and it's also why the Crystal refuses: the game still thinks the scene is in progress.\n\n**Honest scope: this is a repair, not a cure.** We do not yet know *why* the branch gets skipped. The leading theory is that cutscene fast-forwarding lets the room transition tear the script down while its tail is still running, but that's unproven. So the mod detects the impossible state and replays exactly those six writes \u2014 nothing else. It can't misfire: `g_flags[346]` is set unguarded at the top of every story scene of that group, so \"scene ran but branch didn't\" is precisely `346 && !243`, and the check is further scoped to Yunica standing on 1F.\n\n**Testing status:** the six writes were confirmed by hand on a live stuck save and unstuck it immediately. The automatic trigger compiles and is guarded, but hasn't yet been observed firing on its own \u2014 if you're the one who's stuck, you're the first real test. Please say whether it cleared, and grab `yso_ap.log` either way.\n\n*Thanks to **Chiral** for the original report and the detail that made it findable, and to the second player who confirmed it's not a one-off <3*\n\n## \u26a0\ufe0f Still open\n\n- **Devil's Corridor is under-gated in logic.** Passing it needs the Roo trade at `S_3104` (a Roda Fruit), not just the Crimson Lotusblade \u2014 as Yunica the Roo hums Feena's theme so the Silver Harmonica works; Hugo gets the Hammer, Toal the Ring of Ease. A seed that puts your first Roda Fruit past the corridor can strand you. Not fixed here: it needs a counted rule and a generation pass, not a quick data edit.\n- **26 location flags double as story-scene state** (`344`/`345` Red Moon Crest, `304` Cerulean Flabellum, `335` Levinstrike Warhammer, `385` Double Jump, `270`/`285` Dreaming Idol). These can fire checks you never earned. One consequence you may see: the 1F repair writes `285`, which will send `Wailing Blue: 1F Save \u2014 Dreaming Idol` as a side effect.\n\n---\n\n**Install:** drop `ys_origin.apworld` in `custom_worlds/`, `dinput8.dll` next to `yso_win.exe`. The apworld is unchanged from beta 1 \u2014 if you already have it, only the DLL needs replacing.\n",
+      "download_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v2.0.0-beta.2/ys_origin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6bc84b41b498b5bcbe4f7e97a42f569731f26a8ae12b317996be53e2e0dd3290",
+      "html_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 74517,
+      "source_url": "https://api.github.com/repos/4rtefakt/ys-origin-archipelago",
+      "tag": "v2.0.0-beta.2",
+      "title": "Ys Origin \u00d7 Archipelago 2.0 beta 2 \u2014 Post-Kishgal 1F softlock repair",
+      "version_simple": "1.9.2",
+      "world_version": "1.9.2r2"
     }
   }
 }

@@ -72,7 +72,7 @@ The 100% crystal targets are shown, though the options only allow up to 95% to m
 | Don't Panic           | 12m           | 8m              | 5m            | 4m                 | 4                     | 31             |
 | Driller Night         | 5m            | 3m              | 1m 30s        | 1m                 | 2                     | 11             |
 | Erode Works           | 20m           | 12m             | 8m            | 6m                 | 3                     | 64             |
-| Explosive Action      | 12m           | 7m              | 4m 30s        | 3m 30s             | 2                     | 24             |
+| Explosive Action      | 15m           | 11m             | 8m 30s        | 7m 30s             | 2                     | 24             |
 | Fire and Water        | 30m           | 20m             | 14m           | 11m                | 4                     | 71             |
 | Frozen Frenzy         | 15m           | 10m             | 6m            | 5m                 | 3                     | 181            |
 | Hot Stuff             | 30m           | 20m             | 14m           | 11m                | 5                     | 200            |
@@ -90,3 +90,40 @@ The 100% crystal targets are shown, though the options only allow up to 95% to m
 | The Path To Power     | 10m           | 6m              | 4m            | 3m                 | 2                     | 11             |
 | Water Lot Of Fun      | 16m           | 11m             | 7m            | 5m 30s             | 3                     | 62             |
 | Water Works           | 12m           | 7m 30s          | 5m            | 4m                 | 3                     | 104            |
+
+# Baz's Mod campaign
+| Level                 | Easy Par Time | Medium Par Time | Hard Par Time | Rock Hard Par Time | Locations incl. Bonus | Crystal Target |
+| :-------------------- | :------------ | :-------------- | :------------ | :----------------- | :-------------------- | :------------- |
+| A Breath of Fresh Air | 60m           | 40m             | 28m           | 24m                | 2                     | 66             |
+| Air Raiders           | 2h            | 1h 30m          | 1h            | 50m                | 4                     | 158            |
+| Back to Basics        | 2h            | 1h 30m          | 1h 10m        | 1h                 | 5                     | 340            |
+| Breathless            | 35m           | 25m             | 15m           | 12m                | 3                     | 219            |
+| Cold Comfort          | 1h 20m        | 50m             | 36m           | 30m                | 3                     | 117            |
+| Don't Panic           | 1h 30m        | 1h              | 43m           | 39m                | 4                     | 155            |
+| Down In The Dirt      | 1h 45m        | 1h 15m          | 50m           | 42m                | 3                     | 98             |
+| Driller Night         | 30m           | 20m             | 13m           | 11m                | 2                     | 59             |
+| Erode Works           | 55m           | 40m             | 33m           | 29m                | 3                     | 154            |
+| Explosive Action      | 35m           | 25m             | 18m           | 16m                | 2                     | 163            |
+| Fire and Water        | 1h 45m        | 1h 20m          | 55m           | 48m                | 4                     | 218            |
+| Frozen Frenzy         | 1h 20m        | 50m             | 35m           | 30m                | 3                     | 306            |
+| Hot Stuff             | 1h 45m        | 1h 15m          | 50m           | 42m                | 5                     | 241            |
+| Ice Spy               | 2h            | 1h 30m          | 1h            | 50m                | 4                     | 206            |
+| It's A Hold Up        | 1h            | 45m             | 32m           | 28m                | 2                     | 85             |
+| Lake Of Fire          | 1h            | 45m             | 30m           | 25m                | 4                     | 230            |
+| Lava Laughter         | 55m           | 40m             | 27m           | 24m                | 4                     | 106            |
+| Mine Over Manner      | 35m           | 25m             | 18m           | 16m                | 2                     | 65             |
+| Molten Meltdown       | 50m           | 35m             | 24m           | 21m                | 2                     | 111            |
+| Oresome               | 3h 45m        | 2h45m           | 2h            | 1h 40m             | 4                     | 229            |
+| Recruitment           | 1h            | 45m             | 28m           | 24m                | 2                     | 61             |
+| Rock Hard             | 1h 55m        | 1h 20m          | 55m           | 45m                | 3                     | 139            |
+| Rocky Horror          | 3h 40m        | 2h 30m          | 1h 45m        | 1h 30m             | 5                     | 408            |
+| Rubble Trouble        | 30m           | 20m             | 15m           | 12m                | 2                     | 74             |
+| Run The Gauntlet      | 1h 35m        | 1h 5m           | 45m           | 38m                | 2                     | 235            |
+| Seamless              | 1h            | 45m             | 30m           | 25m                | 3                     | 92             |
+| Search And Rescue     | 1h 30m        | 1h              | 42m           | 38m                | 3                     | 320            |
+| Slimey Simple         | 50m           | 35m             | 21m           | 17m                | 3                     | 106            |
+| Split Down The Middle | 35m           | 24m             | 16m           | 13m                | 3                     | 127            |
+| The Hard Rock Life    | 1h 10m        | 45m             | 28m           | 24m                | 2                     | 95             |
+| The Path To Power     | 30m           | 20m             | 15m           | 12m                | 2                     | 62             |
+| Water Lot Of Fun      | 3h 10m        | 2h 20m          | 1h 40m        | 1h 20m             | 3                     | 209            |
+| Water Works           | 1h 30m        | 1h              | 45m           | 40m                | 3                     | 224            |
