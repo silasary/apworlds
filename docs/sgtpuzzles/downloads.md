@@ -1,9 +1,12 @@
 # Simon Tatham&#x27;s Portable Puzzle Collection
 
 ## Latest
-- <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.16-prealpha/sgtpuzzles.apworld">Latest Version (0.1.16rc0)</a>
+- <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.17-prealpha/sgtpuzzles.apworld">Latest Version (0.1.17rc0)</a>
 
 ## All Versions
+
+#### v0.1.17rc0
+- <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.17-prealpha/sgtpuzzles.apworld">https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.17-prealpha/sgtpuzzles.apworld</a>
 
 #### v0.1.16rc0
 - <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.16-prealpha/sgtpuzzles.apworld">https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.16-prealpha/sgtpuzzles.apworld</a>
