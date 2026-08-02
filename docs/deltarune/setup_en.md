@@ -7,6 +7,7 @@
 - Archipelago from the [Archipelago Releases Page](https://github.com/ArchipelagoMW/Archipelago/releases)
   - Require minimum 0.6.7
 - DELTARUNE APWorld from the [Releases Page](https://github.com/theemeraldsword85/DELTARUNEAP/releases)
+- DELTARUNE Archipelago mod from [GameBanana Page](https://gamebanana.com/mods/699556) or [Releases Page](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)
   
 ## HIGHLY Recommended Software
 
@@ -14,9 +15,17 @@
 
 ## Installation
 
-### Patching the game
+### Patching the game (With ModLoader)
+
+Download the mod from [GameBanana](https://gamebanana.com/mods/699556) with either G3M (1-Click Install) or DeltaMod (need to download then import)
+
+If you don't use mod loader, you can also patch your game with DeltaPatcher
+
+### Patching the game (With the apworld)
 
 Download the APWorld and place it into archipelago/custom_worlds (Double clicking the APWorld will also work!)
+
+Download the bsdiff files from the mod [Releases Page](https://github.com/Tenebrosful/DeltaruneAP-mod/releases) and place it in a folder named `DELTARUNE_PATCH` at the root of Archipelago folder.
 
 Run the Archipelago Launcher (Or restart the launcher if it's already running)
 

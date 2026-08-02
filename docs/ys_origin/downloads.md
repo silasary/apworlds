@@ -1,9 +1,12 @@
 # Ys Origin
 
 ## Latest
-- <a href="https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v1.9.2/ys_origin.apworld">Latest Version (1.9.2)</a>
+- <a href="https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v2.0.0-beta.1/ys_origin.apworld">Latest Version (1.9.2r2)</a>
 
 ## All Versions
+
+#### v1.9.2r2
+- <a href="https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v2.0.0-beta.1/ys_origin.apworld">https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v2.0.0-beta.1/ys_origin.apworld</a>
 
 #### v1.9.2
 - <a href="https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v1.9.2/ys_origin.apworld">https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v1.9.2/ys_origin.apworld</a>
