@@ -170,10 +170,11 @@ if args.scan_file:
     print(f"Scanning {args.scan_file} for repo URLs")
     with open(args.scan_file) as f:
         text = f.read()
-        for line in text:
-            if match := re.search(REPO_REGEX, line):
-                queue.append(match.group(1))
-                print(f"Found {match.group(1)} in {args.scan_file}")
+        matches = re.findall(REPO_REGEX, text)
+        if matches:
+            for match in matches:
+                queue.append(match)
+                print(f"Found {match} in {args.scan_file}")
         if "- [X] This world is AD" in text:
             args.dark = True
     if not queue:
