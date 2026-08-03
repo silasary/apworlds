@@ -1,9 +1,12 @@
 # Oxygen Not Included
 
 ## Latest
-- <a href="https://github.com/ShadowKitty42/ONI-Archipelago/releases/download/v0.99/oni.apworld">Latest Version (0.99)</a>
+- <a href="https://github.com/ShadowKitty42/ONI-Archipelago/releases/download/v0.9.10/oni.apworld">Latest Version (7.0.0)</a>
 
 ## All Versions
+
+#### v7.0.0
+- <a href="https://github.com/ShadowKitty42/ONI-Archipelago/releases/download/v0.9.10/oni.apworld">https://github.com/ShadowKitty42/ONI-Archipelago/releases/download/v0.9.10/oni.apworld</a>
 
 #### v0.99
 - <a href="https://github.com/ShadowKitty42/ONI-Archipelago/releases/download/v0.99/oni.apworld">https://github.com/ShadowKitty42/ONI-Archipelago/releases/download/v0.99/oni.apworld</a>

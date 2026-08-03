@@ -14,6 +14,9 @@
 #### v1.0.0r2
 - <a href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/endermagnolia-v0.0.5/endermagnolia.apworld">https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/endermagnolia-v0.0.5/endermagnolia.apworld</a>
 
+#### v1.0.0r2
+- <a href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/endermagnolia-v0.0.6/endermagnolia.apworld">https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/endermagnolia-v0.0.6/endermagnolia.apworld</a>
+
 #### v1.0.0
 - <a href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/endermagnolia-v0.0.2/endermagnolia.apworld">https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/endermagnolia-v0.0.2/endermagnolia.apworld</a>
 
