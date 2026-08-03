@@ -1,4 +1,3 @@
-from collections import Counter
 import datetime
 import functools
 import hashlib
@@ -6,28 +5,28 @@ import os
 import pathlib
 import re
 import sys
+import zipfile
+from collections import Counter
 from pathlib import Path
 from typing import Any
-import zipfile
 
+import bs4
 import requests
 import yaml
-import bs4
-
 from manifest_manager import index, load_manifest, save_manifest
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
 sys.path.append("Archipelago")
 sys.path.append("Archipelago/lib")
-import ModuleUpdate  # noqa: E402
+import ModuleUpdate
 
 ModuleUpdate.update(yes=True)
 
-from worlds.Files import InvalidDataError  # noqa: E402
-from worlds.apworld_manager.world_manager import ApWorldMetadata, GithubRepository, RemoteWorldSource, RepositoryManager, parse_version, Repository  # noqa: E402
-from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version  # noqa: E402
-from worlds.apworld_manager.container import RepoWorldContainer  # noqa: E402
+from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version
+from worlds.apworld_manager.container import RepoWorldContainer
+from worlds.apworld_manager.world_manager import ApWorldMetadata, GithubRepository, RemoteWorldSource, Repository, RepositoryManager, parse_version
+from worlds.Files import InvalidDataError
 
 repositories = RepositoryManager()
 

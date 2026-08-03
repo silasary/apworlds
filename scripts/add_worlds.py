@@ -159,9 +159,7 @@ if spreadsheet:
 
             # queue.extend(repolinks)
 
-        if "After Dark" in (row.get("Notes", "") or "") and row["Game"].strip() != "ULTRAKILL":  # ULTRAKILL is not an After Dark game
-            ad_games.append(row["Game"].strip())
-        elif row.get("18+ / Unrated", False):
+        if "After Dark" in (row.get("Notes", "") or "") and row["Game"].strip() != "ULTRAKILL" or row.get("18+ / Unrated", False):  # ULTRAKILL is not an After Dark game
             ad_games.append(row["Game"].strip())
 
 if args.scan_file:

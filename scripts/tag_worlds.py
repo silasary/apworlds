@@ -11,13 +11,13 @@ import pathlib
 import sys
 import warnings
 import zipimport
-import traceback_with_variables
 
-from common import NoWorldsFound, parse_version, update_index_from_github, repositories, get_or_add_github_repo
+import traceback_with_variables
+from common import NoWorldsFound, get_or_add_github_repo, parse_version, repositories, update_index_from_github
 from manifest_manager import load_manifest, save_manifest
 from worlds import AutoWorldRegister
-from worlds.AutoWorld import World
 from worlds.apworld_manager.world_manager import ApWorldMetadata
+from worlds.AutoWorld import World
 
 WORLD_TYPES = AutoWorldRegister.world_types
 
@@ -31,7 +31,7 @@ BAD_DESCRIPTIONS = [
     "Rift of the Necrodancer is a game that you play.",
     "Plok whose apworld code is completely stolen from Majoras Masks apworld.",
     "Momodora Moonlit Farewell is a game",
-    "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.\nThis allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.\nThe key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,\nthe player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent.",  # noqa: E501
+    "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.\nThis allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.\nThe key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,\nthe player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent.",
     "TTYD",
     "Randomizer methods/data for generation",
     "ToeJam & Earl",

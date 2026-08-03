@@ -1,19 +1,19 @@
 import argparse
-from collections import defaultdict, Counter
 import datetime
 import json
 import os
 import pathlib
 import sys
 import traceback
-
 import urllib.parse
+from collections import Counter, defaultdict
+
 import yaml
-from common import NoWorldsFound, parse_version, update_index_from_github, repositories, update_index_from_changelog
-from manifest_manager import load_manifest, index_manager
-from write_docs import write_docs
-from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
+from common import NoWorldsFound, parse_version, repositories, update_index_from_changelog, update_index_from_github
 from feedgen.feed import FeedGenerator
+from manifest_manager import index_manager, load_manifest
+from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
+from write_docs import write_docs
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--no-refresh", action="store_true", help="Don't refresh the GitHub repositories")
