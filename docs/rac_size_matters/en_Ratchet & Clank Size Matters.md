@@ -14,7 +14,7 @@ All weapons, gadgets, and armour pieces and infobots are shuffled across the fol
 - Armour & Titanium Bolt pickups
 - Skyboard Challanges
 - Weapon Vendors
-- Skill Points (untested in full)
+- Skill Points
 - Armour Sets
 
 ## What is the goal?

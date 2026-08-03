@@ -14,6 +14,9 @@
 #### v2
 - <a href="https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release2/srb2.apworld">https://github.com/GraymonDgt/SRB2Archipelago/releases/download/release2/srb2.apworld</a>
 
+#### v1.7.3.post2
+- <a href="https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.7.3/srb2.apworld">https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.7.3/srb2.apworld</a>
+
 #### v1.7.3
 - <a href="https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.7.3/srb2.apworld">https://github.com/GraymonDgt/SRB2Archipelago/releases/download/v1.7.3/srb2.apworld</a>
 

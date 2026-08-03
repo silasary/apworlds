@@ -1,9 +1,12 @@
 # Torture Client
 
 ## Latest
-- <a href="https://github.com/ElectroStarz/Torture-AP-Client/releases/download/v0.0.2/torture_client.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/ElectroStarz/Torture-AP-Client/releases/download/v0.0.3/torture_client.apworld">Latest Version (0.0.2r2)</a>
 
 ## All Versions
+
+#### v0.0.2r2
+- <a href="https://github.com/ElectroStarz/Torture-AP-Client/releases/download/v0.0.3/torture_client.apworld">https://github.com/ElectroStarz/Torture-AP-Client/releases/download/v0.0.3/torture_client.apworld</a>
 
 #### v0.0.2
 - <a href="https://github.com/ElectroStarz/Torture-AP-Client/releases/download/v0.0.2/torture_client.apworld">https://github.com/ElectroStarz/Torture-AP-Client/releases/download/v0.0.2/torture_client.apworld</a>
