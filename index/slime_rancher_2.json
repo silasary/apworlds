@@ -87,6 +87,21 @@
       "version_simple": "0.12.1",
       "world_version": "0.12.1"
     },
+    "v0.12.2": {
+      "created_at": "2026-08-02T21:01:00Z",
+      "description": "## Performance Improvement Updates\r\n- Added a profiler setting for diagnosing expensive behaviors that reduce the game's performance\r\n  - To enable the profiler, start the game once after updating the plugin - This will generate a new file at `Slime Rancher 2\\BepInEx\\config` called `com.archipelago.slimerancher2.cfg`. Once that's present, close the game, update the `PerfLogSeconds = 0` to a value of your choosing (0 is disabled). Repeating after that many seconds in-game, the profiler will write the mod performance to the BepInEx LogOutput for better troubleshooting.\r\n- Updated from frame-based to time-based throttles for spawn rate, weather, radiant slime, and research drone components\r\n- Removed frame-based allocation for the goal status components\r\n\r\n_In my local testing, these changes altogether improved my framerate from the ~120fps I was getting to the 144fps I was expecting. Hopefully this improves things for you all as well!_\r\n\r\n## Mod Behavior Changes\r\n- Fixed in-game message for the Tarr Rain trap to now say Tarr Rain instead of Slime Rain\r\n- Reduced the trap interaction delay from 5s to 2s\r\n\r\n_Still needed to have some kind of delay, but 5s still felt very long when I was playtesting. 2s should be safe for the item transitions without feeling too far off for players_\r\n\r\n## Bug Fixes\r\n- Fixed 6 of the Research Drone Archives that weren't being picked up correctly by the mod - 3 in Ember Valley, 3 in Starlight Strand\r\n\r\n<img width=\"224\" height=\"224\" alt=\"image\" src=\"https://github.com/user-attachments/assets/4f201ec1-bcc6-4e94-81c0-ae960f5c3b00\" />\r\n",
+      "download_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.12.2/slime_rancher_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b9b4c906901c3e487681b07293430642be76a7b7f7abdf3b0c9684cfb598466d",
+      "html_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.12.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 59687,
+      "source_url": "https://api.github.com/repos/Rhelys/SlimeRancher2-AP",
+      "tag": "v0.12.2",
+      "title": "v0.12.2 - The Performance Update",
+      "version_simple": "0.12.2",
+      "world_version": "0.12.2"
+    },
     "v0.2.0": {
       "created_at": "2026-04-17T19:03:35Z",
       "description": "Initial fixes for the Slime Rancher 2 v1.2 release - Radiant Slime Sanctuary\r\n\r\nNo new content in this release, just getting the mod working with the new game version. Updates to include the new features will be in a later update",

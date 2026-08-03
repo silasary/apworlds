@@ -4,8 +4,12 @@
 - A [Steam](https://store.steampowered.com/app/2011780/Yellow_Taxi_Goes_Vroom/) or [GOG](https://www.gog.com/en/game/yellow_taxi_goes_vroom) PC copy of Yellow Taxi Goes Vroom
 - The [latest mod](https://github.com/soopercool101/YellowTaxiAP/releases/latest)
 
-## Optional Software
+## Optional/Recommended Software
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
+- [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker)
+
+## Generating a Game
+See [here](https://archipelago.gg/tutorial/Archipelago/setup_en) for information on setting up Archipelago.
 
 ## Installation
 - Download the .zip file in the latest release of the mod (***NOT THE SOURCE CODE***)

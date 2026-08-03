@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v0.0.2-alpha/tomba.apworld">Latest Version (0.0.1)</a>
+- <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v0.1.2-beta/tomba.apworld">Latest Version (0.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
