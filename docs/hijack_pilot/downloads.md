@@ -1,9 +1,12 @@
 # Hijack - Pilot Generator
 
 ## Latest
-- <a href="https://github.com/Meliacci/Archipelago/releases/download/HijackV0.0.5/hijack_pilot.apworld">Latest Version (0.0.5)</a>
+- <a href="https://github.com/Meliacci/Archipelago/releases/download/HijackV0.0.6/hijack_pilot.apworld">Latest Version (0.0.6)</a>
 
 ## All Versions
+
+#### v0.0.6
+- <a href="https://github.com/Meliacci/Archipelago/releases/download/HijackV0.0.6/hijack_pilot.apworld">https://github.com/Meliacci/Archipelago/releases/download/HijackV0.0.6/hijack_pilot.apworld</a>
 
 #### v0.0.5
 - <a href="https://github.com/Meliacci/Archipelago/releases/download/HijackV0.0.5/hijack_pilot.apworld">https://github.com/Meliacci/Archipelago/releases/download/HijackV0.0.5/hijack_pilot.apworld</a>
