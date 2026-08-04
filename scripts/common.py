@@ -218,9 +218,6 @@ def save_manifests(github_url: str | list[str] | None, manifests: dict[str, dict
         if github_url:
             check_manifest_has_github_url(manifest, github_url, name)
 
-        file_path = index / f"{name}.yaml"
-        if file_path.exists():
-            file_path.unlink()
         file_path = index / f"{name}.json"
         save_manifest(file_path, manifest)
 

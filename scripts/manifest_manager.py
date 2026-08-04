@@ -72,7 +72,9 @@ def save_manifest(world: pathlib.Path, manifest: dict) -> None:
     if path:
         world = pathlib.Path(path)
 
-    if world.suffix == ".yaml":
-        world.write_text(yaml.dump(_manifest))
-    else:
-        world.write_text(json.dumps(_manifest, indent=2, sort_keys=True) + "\n")
+    yaml_path = world.with_suffix(".yaml")
+    if yaml_path.exists():
+        yaml_path.unlink()
+    world = world.with_suffix(".json")
+
+    world.write_text(json.dumps(_manifest, indent=2, sort_keys=True) + "\n")
