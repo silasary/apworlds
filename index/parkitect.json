@@ -240,7 +240,7 @@
       "size": 148969,
       "source_url": "https://api.github.com/repos/CrusherRL/AP_Parkitect",
       "tag": "1.4.1",
-      "title": "1.4.1",
+      "title": "Version 1.4.1",
       "version_simple": "1.4.1",
       "world_version": "1.4.1"
     },
@@ -257,6 +257,20 @@
       "title": "Version 1.5.0",
       "version_simple": "1.5.0",
       "world_version": "1.5.0"
+    },
+    "1.6.0": {
+      "created_at": "2026-08-04T07:55:27Z",
+      "description": "Installation instructions can be found [[here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)].\r\n\r\nEnjoy!\r\n\r\n> **Notes**\r\n>\r\n> * This release is **not** backward compatible with seeds generated **before v1.2.1**.\r\n> * This release **may not** be fully compatible with seeds generated **before v1.5.0**.\r\n> * `Archipelago.MultiClient.Net.dll` is no longer required\u2014it is now bundled with the mod.\r\n> * The `Linux`, `macOS`, and `Windows` folders must be replaced when updating.\r\n\r\n# Parkitect Archipelago \u2014 Release Notes\r\n\r\n## Features\r\n\r\n* Bundled all required DLLs. Only `Archipelago.dll` is now required (`Archipelago.MultiClient.Net.dll` can be removed from the `Mods` folder).\r\n* Updated the Archipelago window:\r\n\r\n  * Added **Challenges** and **EnergyLink** tabs.\r\n* Added **EnergyLink**.\r\n* Added new challenges:\r\n\r\n  * \"Have x Amount of `Rides`\"\r\n  * \"Have x Amount of `Drinks`\"\r\n  * \"Have x Amount of `Food`\"\r\n  * \"Have x Amount of `Non-Food + Non-Drink Shops`\" (Facilities)\r\n* Expanded and updated challenge requirements:\r\n\r\n  * Total Profit for `Rides` + `Ride Type` and `Shops` + `Shop Type`\r\n  * Total Revenue for `Ride Type` and `Shop Type`\r\n  * Photos sold for `Coaster Type` and `Coaster` itself\r\n  * redeemed Vouchers for `Drinks`, `Food` and `Rides` + `Ride Types`\r\n* Improved challenge descriptions for better readability.\r\n* Increased the chance of guests being affected when a trap is activated (previously fixed at 20% and 30%).\r\n* Added new commands for **Release Mode** (completed challenges are removed):\r\n\r\n  * `!!toggleReleaseMode` \u2013 Toggle Release Mode.\r\n  * `!!enableReleaseMode` \u2013 Enable Release Mode.\r\n  * `!!disableReleaseMode` \u2013 Disable Release Mode.\r\n* Added the **TrapLink Trap** from GTA: San Andreas.\r\n* Updated the README with new documentation.\r\n* Added new AP World options:\r\n\r\n  * `early_toilets`\r\n  * `early_cash_machine`\r\n  * `early_first_aid_room`\r\n  * `early_edible_shop` \u2013 Grants a random early drink or food stall.\r\n  * `early_ride` \u2013 Grants a random early ride (e.g. coaster, transport ride, etc.).\r\n  * `early_decoration` \u2013 Grants a random decoration theme.\r\n  * `early_staff_room`\r\n  * `early_training_room`\r\n  * `challenge_maximum_coaster_revenue` \u2013 Challenge: Total coaster revenue.\r\n  * `challenge_maximum_ride_profit` \u2013 Challenge: Total ride profit.\r\n  * `challenge_maximum_shop_profit` \u2013 Challenge: Total shop profit.\r\n  * `challenge_maximum_photos` \u2013 Challenge: Photos sold.\r\n  * `challenge_maximum_ride_vouchers` \u2013 Challenge: Redeemed ride vouchers.\r\n  * `challenge_maximum_shop_vouchers` \u2013 Challenge: Redeemed shop vouchers.\r\n  * `release_mode` \u2013 If enabled, completed challenges are removed. This setting is applied when starting a new game but can also be changed in-game.\r\n* Rebalanced the probability of challenge requirements.\r\n* Added a command list for the TrapLink option (APWorld  YAML).\r\n\r\n## Fixes\r\n\r\n* Since the MultiClient is now bundled, all Newtonsoft dependency issues have been resolved.\r\n\r\n  * `RoomInfoPacket`, `TagsChangedPrintJsonPacket`, and `ItemPrintJsonPacket` are still ignored.\r\n  * Chat messages (including `/say`) and additional packet types now work correctly.\r\n* Fixed an issue where reconnecting to the server could freeze the game.\r\n* Fixed a challenge checkbug where modded shops were not counted for **Shop**-type challenges.\r\n* Added missing requirements for ride and shop type challenges.\r\n* Fixed incorrectly assigned statistic items for the following scenarios:\r\n\r\n  * `happyco_bakery`\r\n  * `brimstone_peak`\r\n  * `candyland`\r\n  * `celeste_mountain`\r\n  * `dusty_ridge_ranch`\r\n  * `jungle_adventure`\r\n  * `lakeside_gardens`\r\n  * `magma_falls`\r\n  * `technopolis`\r\n  * `the_broken_atoll`\r\n  * `victoria_island`\r\n  * `yucatan_ridge`\r\n* Removed the `STATISTICS_TOTAL_PATH_ATTACHMENTS_REPAIRED` statistic from all scenarios, as it does not exist in-game.\r\n* Fixed various typos.",
+      "download_url": "https://github.com/CrusherRL/AP_Parkitect/releases/download/1.6.0/parkitect.apworld",
+      "has_manifest": false,
+      "hash_sha256": "e7461f833e48ae093e3a69142b3be8f2eee46b080c6cc5e51f8b8acdc0a5f902",
+      "html_url": "https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.0",
+      "size": 304421,
+      "source_url": "https://api.github.com/repos/CrusherRL/AP_Parkitect",
+      "tag": "1.6.0",
+      "title": "Version 1.6.0",
+      "version_simple": "1.6.0",
+      "world_version": "1.6.0"
     }
   }
 }
