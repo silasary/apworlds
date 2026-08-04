@@ -2,143 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-04T12:47:02.451251+00:00</updated>
+  <updated>2026-08-04T18:42:18.888690+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.14</id>
-    <title>Total War Warhammer 3 v0.10.14</title>
-    <updated>2026-08-01T14:18:38+00:00</updated>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>Bugfixes&#13;
-&#13;
-Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
-[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
-&#13;
-**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.13...v0.10.14</content>
-    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.14"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v8</id>
-    <title>Pokemon BW Extra Logic Plugin v1.8.0</title>
-    <updated>2026-08-01T14:42:13+00:00</updated>
-    <author>
-      <name>RadisNoir</name>
-    </author>
-    <content>**Fixes**&#13;
-* Fixed Tornadus/Thundurus/Landorus cutscenes crashing the game when there are too many dark areas&#13;
-  * As a consequence, the roamer is now a static encounter until a better fix is made&#13;
-* Fixed the logic of the three locations near the entrance of Moor of Icirrus that can't be reached during winter without Surf&#13;
-&#13;
-**Updates**&#13;
-* Added `randomize_starting_town` as an option&#13;
-  * Swaps the player's house with a house from another town&#13;
-  * Valid choices are: "Nuvema Town", "Accumula Town", "Striaton City", "Nacrene City", "Castelia City", "Nimbasa City", "Driftveil City", "Mistralton City", "Icirrus City", "Opelucid City", "Lacunosa Town", "Undella Town"&#13;
-  * `starting_town_blacklist` prevents the listed towns to be chosen as the starting town if `randomize_starting_town` is activated&#13;
-  * If Cynthia is set as goal, "Lacunosa Town" and "Undella Town" cannot be selected as the starting town&#13;
-  * If all towns are blacklisted or if there is no valid choice, the option will fall back to Nuvema Town&#13;
-  * When Mistralton City is chosen as the starting town, the Move reminder house is relocated in Nuvema Town and the logic for move evolution is updated accordingly&#13;
-  * When the starting town is not Nuvema Town, Mom will not give her first item. An added clerk NPC in Nuvema Town will hand it instead&#13;
-* Adjusted multiple cutscenes to prevent sequence breaks with a random starting town&#13;
-&#13;
-**YAML Options List**&#13;
-* The following options need to be added to the Black and White YAML under `plugin_options`:&#13;
-```&#13;
-  plugin_options:&#13;
-    extra_logic:  # updated for v8&#13;
-      randomize_starting_town: true&#13;
-      starting_town_blacklist: []  # list in README&#13;
-      add_ss_ticket: true&#13;
-      add_pass: true&#13;
-      hm_with_badges: true&#13;
-      add_rock_smash: true&#13;
-      add_rock_smash_musharna: true  # requires add_rock_smash&#13;
-      extra_cut_trees: true&#13;
-      extra_cut_trees_kyurem: true   # requires extra_cut_trees&#13;
-      move_strength_boulders: true&#13;
-      move_strength_boulders_vi_road: true   # requires move_strength_boulders&#13;
-      dark_areas: ["Wellspring Cave B1F", "Mistralton Cave", "Challengers Cave"]  # supports "_All" and "_Random", see README&#13;
-```&#13;
-&#13;
-**Important Notes**&#13;
-* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.&#13;
-* It is not possible to add the extra logic options mid-playthrough.&#13;
-&#13;
-**Backwards Compatibility**&#13;
-* This version is compatible with v0.3.37+ of the main BW APworld&#13;
-* This version is compatible with v22 of the QoL Plugin&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v7...v8</content>
-    <link href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.4.0</id>
-    <title>Phoenotopia: Awakening v0.4.0</title>
-    <updated>2026-08-01T15:02:05+00:00</updated>
-    <author>
-      <name>Lenamphy</name>
-    </author>
-    <author>
-      <name>ET_is_here</name>
-    </author>
-    <author>
-      <name>fight4day</name>
-    </author>
-    <content>&lt;h1&gt;0.4.0 - Major QoL update&lt;/h1&gt;&#13;
-&#13;
-No new checks yet, but a lot of quality of life improvements that make playing this world a lot more streamlined. I'm not done with QoL features and felt tempted to keep going until it's perfect, but I feel like the ones in this update were essential. The rest can come later.&#13;
-&#13;
-&lt;h2&gt;What's new:&lt;/h2&gt;&#13;
-&#13;
-- **Savewarping**: Open up the select menu and you'll see a new option "Warp to Savepoint". This lets you select a save point you have visited before and warp to it. No need to walk back all the way to the Anuri Temple once you have the required items.&#13;
-- **Dungeon item settings**: You can adjust settings for the placement of dungeon items, like Pearlstones and Ouro keys, in your YAML. Per dungeon you can say if you want to keep them vanilla, in their own dungeon, or shuffle them in the multiworld.&#13;
-- **Bundled dungeon items**: This option lets you bundle dungeon items into one item with infinite uses. The Anuri Pearlstone Necklace and Ouro Guard Kingring are custom items with custom sprites made by @ Damocles. Shoutout to them!&#13;
-- **Hinted shop items**: When you leave a shop without buying all the items, the remaining items are automatically hinted in the archipelago server. Free of charge, no hint points will be spent.&#13;
-&#13;
-&lt;h2&gt;Fixes:&lt;/h2&gt;&#13;
-&#13;
-- When respawning in water after drowning or voiding out, Gail is set to the swimming state and will no longer infinitely drown. This way, Rocket Boots can be considered in logic for crossing bodies of water.&#13;
-- All key items now properly apply their showcase animation when picked up in your own world. Let me know if you want an option to disable these animations.&#13;
-- Picking up an item in your own world now gives you the item instantly and doesn't depend on the server to give you that item. This gets rid of the delay between picking up an item and getting it when playing on a remote server.&#13;
-- Moonstones now always get added to the inventory. Shoutout to @fight4day for finding this bug.&#13;
-- Some NPC checks no longer require you to have inventory space.&#13;
-- The turtle no longer uses up inventory space and can't be discarded.&#13;
-- The mouse in Ouroboros hideout that usually drops a key now properly swaps sprites when small animal checks are disabled.&#13;
-- Item popups now use the right font coloring.&#13;
-- Fixed a crash when entering the main menu without a server connection.&#13;
-&#13;
-Like always, the community will be my testing crew. If you encounter any issues during your run, please let me know through one of the following channels:&#13;
-1. File an issue at the repository on [GitHub](https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/issues).&#13;
-2. Describe your issue in the game thread on the [official AP discord](https://discord.com/invite/8Z65BR2).&#13;
-3. Post it in the mwgg-support channel in the [Unofficial AP Discord](https://discord.multiworld.gg).</content>
-    <link href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.4</id>
-    <title>Oh So Hero! v1.0.4</title>
-    <updated>2026-08-01T17:46:17+00:00</updated>
-    <author>
-      <name>L-technology-mods</name>
-    </author>
-    <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/NaixGames/Polycosmos/releases/tag/0.16.3</id>
-    <title>Hades v0.16.3</title>
-    <updated>2026-08-01T18:44:58+00:00</updated>
-    <author>
-      <name>Naix</name>
-    </author>
-    <content>- Adding bounce for auto tabbing for the tracker&#13;
-- Changing some defaults so people for the first time have a more friendly experience&#13;
-- Decreasing max number of checks behind the score location mode. Mainly, because people tend to put a number too high and then suffer 🤷‍♂️</content>
-    <link href="https://github.com/NaixGames/Polycosmos/releases/tag/0.16.3"/>
-  </entry>
   <entry>
     <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.0</id>
     <title>pokemon_snap v0.5.0</title>
@@ -852,7 +720,7 @@ The server re-sends your whole item list on connect, and we replay it to rebuild
   </entry>
   <entry>
     <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.4</id>
-    <title>Ys Origin v1.9.2r2</title>
+    <title>Ys Origin v1.9.2r3</title>
     <updated>2026-08-02T20:45:58+00:00</updated>
     <author>
       <name>4rtefakt</name>
@@ -1555,6 +1423,39 @@ Install guide and more information is in the [AP world Info Document](https://gi
     <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.2"/>
   </entry>
   <entry>
+    <id>https://github.com/MatthewMarinets/war3-ap-maps/releases/tag/0.0.1-release</id>
+    <title>wc3 v0.0.1.post0</title>
+    <updated>2026-08-04T06:35:30+00:00</updated>
+    <author>
+      <name>MatthewMarinets</name>
+    </author>
+    <content>### 0.0.1 Initial release -- Human Campaign only&#13;
+This is the first release of Archipelago warcraft 3, featuring just the human campaign. Note night elf and most tavern heroes are still disabled in the hero selection as their corrupted variants for Human 9 are not implemented yet.&#13;
+&#13;
+### Installation instructions&#13;
+* archipelago.w3n should be placed in the Documents/Warcraft III/Campaigns folder&#13;
+* wc3.apworld should be installed with your existing Archipelago installation, either by putting it in custom_worlds/ or installing it through the launcher&#13;
+* The template yaml is provided for your convenience, and also because I believe the template generated by the Archipelago launcher doesn't give the best introduction to yaml. It is formatted slightly differently, but has all the same options&#13;
+&#13;
+#### If you're playing on wc3 1.29 or older&#13;
+On older versions of Warcraft 3, you must set a registry key to allow preloader communication (which this mod uses).&#13;
+* Run regedit (On linux, you can also run regedit under the same wineprefix as your game, it's under `drive_c/windows/regedit.exe`)&#13;
+* Navigate to key `HKEY_CURRENT_USER\SOFTWARE\Blizzard Entertainment\Warcraft III`&#13;
+* Add a DWORD key `Allow Local Files`&#13;
+* Set the value of `Allow Local Files` to 1&#13;
+&#13;
+#### If you're playing on Reforged&#13;
+I'm declaring this unsupported on account of being unable to start the Reforged client at all on my machine. Users have reported communication issues with reforged, I'm unable to do anything about them.&#13;
+&#13;
+### Known Issues&#13;
+Currently there aren't any known bugs outstanding.&#13;
+&#13;
+Currently there's poor control over what hero gets tomes -- it'll go to whatever hero most recently picked up an item, and transfer the target if that hero dies. This won't be fixed in this release.&#13;
+&#13;
+There's poor visibility into what checks you've done and what items you have. The best recourse is to use the `/missing` and `/received` commands in the Archipelago client. An in-game way to accomplish something similar may come in a future release, but not this one.</content>
+    <link href="https://github.com/MatthewMarinets/war3-ap-maps/releases/tag/0.0.1-release"/>
+  </entry>
+  <entry>
     <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.0</id>
     <title>Parkitect v1.6.0</title>
     <updated>2026-08-04T07:55:27+00:00</updated>
@@ -1650,6 +1551,90 @@ Enjoy!&#13;
     <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.0"/>
   </entry>
   <entry>
+    <id>https://github.com/MikeFritzDevelops/ACWW-Archipelago/releases/tag/v0.1.0-alpha</id>
+    <title>acww v0.1.0a0</title>
+    <updated>2026-08-04T09:16:21+00:00</updated>
+    <author>
+      <name>MikeFritzDevelops</name>
+    </author>
+    <content># Animal Crossing: Wild World Archipelago v0.1.0-alpha&#13;
+&#13;
+Welcome to the public alpha release of Animal Crossing: Wild World for Archipelago!&#13;
+&#13;
+This release contains the initial playable implementation of Animal Crossing: Wild World featuring museum-based progression, seasonal month progression, a custom BizHawk Master Controller, and PopTracker support.&#13;
+&#13;
+---&#13;
+&#13;
+## Downloads&#13;
+&#13;
+### acww.apworld **(REQUIRED)**&#13;
+&#13;
+The Archipelago world file.&#13;
+&#13;
+Install by placing it into your Archipelago `custom_worlds` folder.&#13;
+&#13;
+---&#13;
+&#13;
+### connector_bizhawk_acww.lua **(REQUIRED)**&#13;
+&#13;
+The Lua connector used by BizHawk to communicate with the Archipelago server.&#13;
+&#13;
+Install by placing it into your Archipelago/data/lua folder.&#13;
+&#13;
+---&#13;
+&#13;
+### acww_poptracker.zip **(OPTIONAL)**&#13;
+&#13;
+Optional PopTracker package for automatic tracking.&#13;
+&#13;
+---&#13;
+&#13;
+## Supported Versions&#13;
+&#13;
+- Archipelago 0.6.7 or newer&#13;
+- BizHawk 2.11.1&#13;
+- Animal Crossing: Wild World (USA) (Rev 1)&#13;
+- Game Code: ADME&#13;
+&#13;
+Additional ROM revisions are planned for future releases.&#13;
+&#13;
+---&#13;
+&#13;
+## Features&#13;
+&#13;
+- Catchsanity&#13;
+- Museumsanity&#13;
+- Journal Milestones&#13;
+- Museum Percentage Milestones&#13;
+- Configurable Museum Goal&#13;
+- Month Progression&#13;
+- High-RNG Catch Progression Exclusion&#13;
+- Master Controller&#13;
+- Restore AP Progress&#13;
+- Recover Undonated Specimens&#13;
+- Reclaim Renewable Resources&#13;
+- Weed Removal&#13;
+- PopTracker Support&#13;
+&#13;
+---&#13;
+&#13;
+## Documentation&#13;
+&#13;
+- [README](https://github.com/MikeFritzDevelops/ACWW-Archipelago#readme)&#13;
+- [Setup Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/setup_en.md)&#13;
+- [Game Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/game_en.md)&#13;
+- [Master Controller Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/controller.md)&#13;
+&#13;
+---&#13;
+&#13;
+## Alpha Notice&#13;
+&#13;
+This is an early alpha release.&#13;
+&#13;
+Bug reports, balance feedback, and suggestions are greatly appreciated.</content>
+    <link href="https://github.com/MikeFritzDevelops/ACWW-Archipelago/releases/tag/v0.1.0-alpha"/>
+  </entry>
+  <entry>
     <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.1</id>
     <title>GemCraft: Frostborn Wrath v0.0.6.1</title>
     <updated>2026-08-04T11:24:08+00:00</updated>
@@ -1664,5 +1649,102 @@ text fields are relabelled in place (nothing moved or hidden):&#13;
     Wizard Level xxx&#13;
     Fields explored: yyy</content>
     <link href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.7</id>
+    <title>Dead Cells v0.1.7</title>
+    <updated>2026-08-04T11:53:05+00:00</updated>
+    <author>
+      <name>Max_lamenace572</name>
+    </author>
+    <author>
+      <name>OnlyLeafeon</name>
+    </author>
+    <author>
+      <name>Rayze</name>
+    </author>
+    <content>New Features:&#13;
+- New Save system:&#13;
+  - Increased the number of save slots to 99&#13;
+  - You can now duplicate saves without the issue of receiving items only on one&#13;
+  - Now the seed in the save is checked against the server seed, avoiding launching a wrong save&#13;
+  - You cannot launch a new save without being connected (and you can still play offline on existing saves)&#13;
+  - New global save, shared with other saves with the same seed. So the following will now be linked:&#13;
+    - The progression for each item in the Collector shop&#13;
+    - The forge's progression&#13;
+    - Cells&#13;
+    - Boss kill count (used for the boss heads)&#13;
+  - And on that note, you can save and duplicate in the transition before a boss biome if you want to quickly take every loot available&#13;
+- New Bank system:&#13;
+  - Bank Unlock is now an item, and the Bank can spawn only when it is received&#13;
+  - The Bank won't spawn if the next biome is a boss&#13;
+  - You need to have entered any biome of the same world depth you want the Bank to spawn in&#13;
+    - Even though you don't need to have taken an exit in this world depth to spawn the Bank, if you don't have any, the transition after the Bank won't have exits&#13;
+  - If the Bank can spawn, it will appear at each transition until you enter it. It's still once per run.&#13;
+- Added a new option that gives epic scrolls when beating a boss without taking a hit (based on Rayze's gameplay idea)&#13;
+&#13;
+Gameplay Changes:&#13;
+- Changed Scissor, Comb, Green Hole, Red Hole, Dark Vortex, Spatial Anomaly and Fisherman Hood. Their requirements will now be based on the locations checked, not items received and unlocked anymore.&#13;
+  - Spatial Anomaly head count is now 35-&gt;33, so every head for BSC lower than 5&#13;
+  - Fisherman Hood head count is now 40-&gt;38, so every head on BSC 5&#13;
+&#13;
+Quality of Life:&#13;
+- Scrolls are now displayed at the top of the filler inventory&#13;
+&#13;
+Bug Fixes:&#13;
+- Goal set to 4 BSC if always launching the game in the same specific way&#13;
+- Stabilized connection with links, causing timeout or disconnection crashes&#13;
+- Tentacle cinematic giving the crown key again in some cases&#13;
+- Boss rush being wrongly open in specific cases&#13;
+- Start run items not being given again after a win&#13;
+- Servants flawless outfit and loot gen not working correctly&#13;
+- Rare logger issue where logs aren't shown&#13;
+- Receiving boss rush doesn't make it appear in the history&#13;
+- Sometimes the switch menu button disappearing&#13;
+- Disabled background of pokebomb still displayed when charges are bought in the AP shop&#13;
+- Crash when entering Richter Mode&#13;
+&#13;
+Apworld Changes:&#13;
+- Added rule for the Flawless Torch&#13;
+- Changed White Hole rule, now logically requires Cursed Flask&#13;
+- Added new location/item logic for the Cavern Key, Boss Rush Statue, 2nd Dracula Castle Unlock, Training Room Key, and Richter Mode&#13;
+- Checks from enemies in the bank now have world depth logic&#13;
+&#13;
+Rayze's Changes:&#13;
+- Fixed multiple AP names not matching the game's names&#13;
+- Fixed issue with max BSC location for UT&#13;
+- Fixed Dancers being in Undying Shores logic&#13;
+- Fixed Extended Healing missing Teleport Rune rule&#13;
+- Fixed War Javelin missing Homunculus and Spider Rune rules&#13;
+&#13;
+Compatible with apworld 0.1.7 only</content>
+    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.1</id>
+    <title>SM64: Spicy Mycena 64 v0.2.0r2</title>
+    <updated>2026-08-04T15:17:33+00:00</updated>
+    <author>
+      <name>Alchav</name>
+    </author>
+    <content>- Fixed a generation crash with certain option combinations.&#13;
+- Fixed TOTWC being improperly classified as Filler when Blocksanity is disabled and the Coin Mastery trick is enabled with non-permanent-coins.&#13;
+- THI non-permanent-coin logic fixes.</content>
+    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.04</id>
+    <title>Northgard v2026.8.4</title>
+    <updated>2026-08-04T17:04:52+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Fixed&#13;
+- Stale Chapter-unlock markers left over from a previous Conquest save or room could falsely unlock an unrelated node in a brand-new save whenever Northgard's random battle-name pool reused the same name (e.g. a fresh save's Chapter 06 - Top could appear unlocked before ever being earned). The client now continuously reconciles unlock markers against whichever save is actually pinned, removing any that don't belong to it.&#13;
+### Changed&#13;
+- Simplified the setup guide's connection order: you no longer need to create a Conquest save before connecting the client for the first time -- the in-game lock-enforcement patch applies on connect regardless of whether a save exists yet. You just need to make sure Northgard itself is closed before opening the client.&#13;
+&#13;
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.03...2026.08.04</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.04"/>
   </entry>
 </feed>

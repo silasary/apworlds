@@ -251,6 +251,21 @@
       "version_simple": "0.1.6",
       "world_version": "0.1.6"
     },
+    "0.1.7": {
+      "created_at": "2026-08-04T11:53:05Z",
+      "description": "New Features:\r\n- New Save system:\r\n  - Increased the number of save slots to 99\r\n  - You can now duplicate saves without the issue of receiving items only on one\r\n  - Now the seed in the save is checked against the server seed, avoiding launching a wrong save\r\n  - You cannot launch a new save without being connected (and you can still play offline on existing saves)\r\n  - New global save, shared with other saves with the same seed. So the following will now be linked:\r\n    - The progression for each item in the Collector shop\r\n    - The forge's progression\r\n    - Cells\r\n    - Boss kill count (used for the boss heads)\r\n  - And on that note, you can save and duplicate in the transition before a boss biome if you want to quickly take every loot available\r\n- New Bank system:\r\n  - Bank Unlock is now an item, and the Bank can spawn only when it is received\r\n  - The Bank won't spawn if the next biome is a boss\r\n  - You need to have entered any biome of the same world depth you want the Bank to spawn in\r\n    - Even though you don't need to have taken an exit in this world depth to spawn the Bank, if you don't have any, the transition after the Bank won't have exits\r\n  - If the Bank can spawn, it will appear at each transition until you enter it. It's still once per run.\r\n- Added a new option that gives epic scrolls when beating a boss without taking a hit (based on Rayze's gameplay idea)\r\n\r\nGameplay Changes:\r\n- Changed Scissor, Comb, Green Hole, Red Hole, Dark Vortex, Spatial Anomaly and Fisherman Hood. Their requirements will now be based on the locations checked, not items received and unlocked anymore.\r\n  - Spatial Anomaly head count is now 35->33, so every head for BSC lower than 5\r\n  - Fisherman Hood head count is now 40->38, so every head on BSC 5\r\n\r\nQuality of Life:\r\n- Scrolls are now displayed at the top of the filler inventory\r\n\r\nBug Fixes:\r\n- Goal set to 4 BSC if always launching the game in the same specific way\r\n- Stabilized connection with links, causing timeout or disconnection crashes\r\n- Tentacle cinematic giving the crown key again in some cases\r\n- Boss rush being wrongly open in specific cases\r\n- Start run items not being given again after a win\r\n- Servants flawless outfit and loot gen not working correctly\r\n- Rare logger issue where logs aren't shown\r\n- Receiving boss rush doesn't make it appear in the history\r\n- Sometimes the switch menu button disappearing\r\n- Disabled background of pokebomb still displayed when charges are bought in the AP shop\r\n- Crash when entering Richter Mode\r\n\r\nApworld Changes:\r\n- Added rule for the Flawless Torch\r\n- Changed White Hole rule, now logically requires Cursed Flask\r\n- Added new location/item logic for the Cavern Key, Boss Rush Statue, 2nd Dracula Castle Unlock, Training Room Key, and Richter Mode\r\n- Checks from enemies in the bank now have world depth logic\r\n\r\nRayze's Changes:\r\n- Fixed multiple AP names not matching the game's names\r\n- Fixed issue with max BSC location for UT\r\n- Fixed Dancers being in Undying Shores logic\r\n- Fixed Extended Healing missing Teleport Rune rule\r\n- Fixed War Javelin missing Homunculus and Spider Rune rules\r\n\r\nCompatible with apworld 0.1.7 only",
+      "download_url": "https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.7/dead_cells.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c2cff7717fd38f5e84db8f79755234951eb27228791be4b43262cd4c5f6d2bb1",
+      "html_url": "https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.7",
+      "minimum_ap_version": "0.6.6",
+      "size": 51266,
+      "source_url": "https://api.github.com/repos/Maxlamenace572/DeadCellsArchipelago",
+      "tag": "0.1.7",
+      "title": "0.1.7",
+      "version_simple": "0.1.7",
+      "world_version": "0.1.7"
+    },
     "BugFix": {
       "created_at": "2026-03-22T05:55:27Z",
       "description": "should fix:\r\n-locked items by Flask1\r\n-filler items not being dropped\r\n-crash entering the swamp",

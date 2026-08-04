@@ -68,6 +68,21 @@
       "title": "2026.08.03 - Minor Fixes to Patch Application",
       "version_simple": "2026.8.3",
       "world_version": "2026.8.3"
+    },
+    "2026.08.04": {
+      "created_at": "2026-08-04T17:04:52Z",
+      "description": "### Fixed\r\n- Stale Chapter-unlock markers left over from a previous Conquest save or room could falsely unlock an unrelated node in a brand-new save whenever Northgard's random battle-name pool reused the same name (e.g. a fresh save's Chapter 06 - Top could appear unlocked before ever being earned). The client now continuously reconciles unlock markers against whichever save is actually pinned, removing any that don't belong to it.\r\n### Changed\r\n- Simplified the setup guide's connection order: you no longer need to create a Conquest save before connecting the client for the first time -- the in-game lock-enforcement patch applies on connect regardless of whether a save exists yet. You just need to make sure Northgard itself is closed before opening the client.\r\n\r\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.03...2026.08.04",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.08.04/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4f422ca8c10eca37b9a09c9c5a3eff9c2dd7121c23f258c070309fbfa4a5ddac",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.04",
+      "minimum_ap_version": "0.6.7",
+      "size": 10415319,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.08.04",
+      "title": "2026.08.04 - Fixed Left Over Markers",
+      "version_simple": "2026.8.4",
+      "world_version": "2026.8.4"
     }
   }
 }
