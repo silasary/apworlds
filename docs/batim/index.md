@@ -4,13 +4,12 @@
 
 
 ## Downloads
-- <a href="https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v1.1.2/batim.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v1.2.0/batim.apworld">Latest Version (1.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Bendy and the Ink Machine">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_BATIM">en_BATIM</a>

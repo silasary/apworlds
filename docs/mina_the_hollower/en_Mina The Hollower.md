@@ -9,7 +9,7 @@ The Archipelago Mod and AP World are currently in a beta state. It is stable and
 
 ## What does randomization do to this game?
 
-In the Archipelago Randomizer, all trinkets, player upgrades, underlab improvements, and train tickets. Every chest, trinket, bonestone, and shop are locations.
+In the Archipelago Randomizer, all trinkets, player upgrades, underlab improvements, and train tickets are items you can find. Every chest, trinket, bonestone, and shop inventories are locations where items can be.
 
 Ability Shuffling is by default on and is the main way we gate checks in this open world game, with the option to shuffle certain abilities (Burrow, Swim, Climb, Carry, Bounce, Spring),
 preventing them from being used until found. Burrow is by default not shuffled. Shuffle Burrow if you want a challenge.

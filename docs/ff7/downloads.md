@@ -8,6 +8,9 @@
 #### v0.0.5
 - <a href="https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.5/ff7.apworld">https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.5/ff7.apworld</a>
 
+#### v0.0.5a0
+- <a href="https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.5a/ff7.apworld">https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.5a/ff7.apworld</a>
+
 #### v0.0.4
 - <a href="https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.4/ff7.apworld">https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.4/ff7.apworld</a>
 

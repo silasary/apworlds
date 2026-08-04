@@ -7,7 +7,7 @@ config file.
 
 ## What does randomization do to this game?
 
-By default, the following can be obtained as items:
+The following can be obtained as items:
  - Ritual items from chapter 1 (Book, Doll, Gear, Inkwell, Record, and Wrench)
  - Wally's lost keys from chapter 2
  - The collectible valve wheel from chapter 2
@@ -16,7 +16,9 @@ By default, the following can be obtained as items:
  - Bertrum's Bossfight
  - Chapter Unlocks
  - Cans of Bacon Soup
+ - (optionally) Checkpoints
  - Filler items
+	- Bacon Soup (Used)
 
 By default, the following can be sent as location checks:
  - Ritual items from chapter 1 (Book, Doll, Gear, Inkwell, Record, and Wrench)
@@ -31,10 +33,11 @@ By default, the following can be sent as location checks:
  - Completion of a chapter
  - (optionally) Finding theMeatly cutouts
  - (optionally) Getting perfect scores in the chapter 4 warehouse minigames.
+ - (optionally) Checkpoints
 
 ## What is the goal?
 
-Currently, the only available goal is to beat Beast Bendy at the end of Chapter 5. Starting chapter 5 will require a
+Currently, the only available goal is to beat Beast Bendy at the end of Chapter 5. Starting the fight will require a
 configurable number of bacon soup cans to be received.
 
 ## I received an item, but I can't place it where it needs to go?
@@ -42,3 +45,8 @@ configurable number of bacon soup cans to be received.
 Since Bendy and the Ink Machine doesn't have a real inventory, you still have to interact with an item to "pick it up". If
 you don't have an item yet, the interaction will only try to send out the location check, and you will need to interact
 with the object again after receiving the item to be able to use it fully.
+
+## I can't unclog the toy machine in chapter 3 or interact with the books in chapter 4?
+
+Both the toys that clog the chapter 3 toy machine and the books needed to open the door in chapter 4 require an item to
+interact with them (CH3 Toys and CH4 Books respectively).

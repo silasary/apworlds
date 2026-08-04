@@ -1,19 +1,39 @@
-## Installing
 
-Download the mod and the AP world. The mod will be a zip file with your OS name
-- [Latest Mod Release](https://github.com/Axertin/mth-apclient/releases/latest)
+## Required Software
 
-- [Latest AP World release](https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/latest)
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases).
+- A Legal steam copy of Mina the Hollower
 
-### Switch to the Experimental Modding Beta
+## Installation Procedures
+
+### Install Archipelago
+Download and install [Archipelago](<https://github.com/ArchipelagoMW/Archipelago/releases/latest>). **The installer 
+   file is located in the assets section at the bottom of the version information.**
+### Install the AP world
+1. download the [Latest AP World release here](https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/latest)
+2. double click the ap world to install it to your archipelago. 
+3. Restart the archipelago program for Mina the Hollower to show up.
+4. Use the options creator to create a yaml, or modify the supplied one on github releases
+5. put the yaml in the **Players** folder in your AP files
+6. run generate
+7. go to archipelago.gg and host the game. select the generated zip in **/output/**
+
+If this is confusing go the official archipelago discord for help
+
+### Install the AP Client
+
+1. Download the [Latest Mod Release](https://github.com/Axertin/mth-apclient/releases/latest). The mod will be a zip file with your OS name
+
+
+
+2. Switch to the Experimental Modding Beta
  The mod requires a Steam copy of Mina the Hollower on the **experimental-modding Beta** It also requires 
  `-mod -mod-allow-code` launch options set (this enables loading a mod's code library).
+   If you have not switched steam betas before
+   1. navigate to Steam->Mina The Hollower->Properties->Game Versions & Betas
+   2. Select `experimental-modding` in the version list
 
-If you have never done this before, 
-1. navigate to Steam->Mina The Hollower->Properties->Game Versions & Betas
-2. Select `experimental-modding` in the version list
-
-### Windows
+### Windows Install
 
 Unzip the mod.zip (containing a `apclient` folder with a `mod.dll` and `mod.yc`) inside into:
 
@@ -34,7 +54,7 @@ Set Steam launch options for Mina the Hollower:
 The game's mod loader writes `%APPDATA%\Yacht Club Games\Mina the Hollower\mod.log` each run;
 the mod's own runtime log is `%LOCALAPPDATA%\mth-apclient\mthap_*.log`.
 
-### Linux
+### Linux Install
 
 The mod is installed into Mina The Hollower's save directory (the SDL prefix path), not the install dir.
 

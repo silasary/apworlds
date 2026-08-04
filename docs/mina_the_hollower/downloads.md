@@ -1,9 +1,12 @@
 # Mina The Hollower
 
 ## Latest
-- <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.0-beta.1/mina_the_hollower.apworld">Latest Version (0.11.0)</a>
+- <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.0-beta.2/mina_the_hollower.apworld">Latest Version (0.11.2)</a>
 
 ## All Versions
+
+#### v0.11.2
+- <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.0-beta.2/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.0-beta.2/mina_the_hollower.apworld</a>
 
 #### v0.11.0
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.0-beta.1/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.0-beta.1/mina_the_hollower.apworld</a>

@@ -5,16 +5,32 @@
 - [Bendy and the Ink Machine](https://store.steampowered.com/app/622650/Bendy_and_the_Ink_Machine/)
 - The [BATIM apworld](https://github.com/Lorecrafter703/Archipelago/releases), 
   if not bundled with your version of Archipelago
+- Thunderstore Mod Manager
+
+If installing manually:
 - [Bendy and the Archipelago Machine](https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases) mod
+- [BepInEx](https://github.com/BepInEx/BepInEx/releases)
 
 ## Installation
 
-1. Back up your save files. The mod is still in development, and currently does not preserve saves.
-   1. The saves will be in a file called **batim.game**, located in whichever directory steam stores
-   save files on your operating system.
-2. Download the latest release of the [Bendy and the Archipelago Machine](https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases) mod
-3. Extract the zip file into the game's root directory where the exe file is located.
-4. Open the game, if all is well you should see a BepInEx console open up.
+### Thunderstore
+
+1. In the Thunderstore Mod Manager, create a profile and select Bendy and the Ink Machine as the game
+2. Go to "Get Mods" section and search for "Bendy and the Archipelago Machine"
+3. Click on it to expand the listing, and click the Download button that appears
+4. Click on "Start Modded" to open the mod
+
+### Manual Install
+
+1. Extract the BepInEx zip file into your game's root directory
+2. Run the game once to complete the installation
+3. Navigate to the config folder, and open up the BepInEx.cfg file
+4. Locate the following options and set them to true
+	- HideManagerGameObject in [Chainloader]
+	- Enabled in [Logging.Console]
+5. Extract the mod folder into the plugins folder of the BepInEx install
+6. Opening the game should now also bring up a BepInEx console
+
 
 ## Joining a new MultiWorld
 
