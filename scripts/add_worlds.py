@@ -200,6 +200,9 @@ if args.unready:
 
 queue = list(set(queue))
 for url in queue.copy():
+    if not url:
+        queue.remove(url)
+        continue
     repositories = RepositoryManager()
     github = url.strip()
     github = github.split("/releases", 1)[0]
