@@ -1,9 +1,12 @@
 # Skyward Sword
 
 ## Latest
-- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.6-pre1/ss.apworld">Latest Version (0.5.6rc1)</a>
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.6/ss.apworld">Latest Version (0.5.6)</a>
 
 ## All Versions
+
+#### v0.5.6
+- <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.6/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.6/ss.apworld</a>
 
 #### v0.5.6rc1
 - <a href="https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.6-pre1/ss.apworld">https://github.com/Battlecats59/SS_APWorld/releases/download/v0.5.6-pre1/ss.apworld</a>

@@ -53,6 +53,21 @@
       "title": "2026.07.28.2 - Manifest.json Hotfix",
       "version_simple": "2026.7.29",
       "world_version": "2026.7.29"
+    },
+    "2026.08.03": {
+      "created_at": "2026-08-03T19:36:18Z",
+      "description": "### FIXED\r\n- Rare crash (patch_northgard.exe - Application Error, 0xc0000142) that could occur when connecting to a room, caused by two client instances racing to extract and execute the same patch binary.\r\n- Possible corruption of hlboot.dat if two client windows (two rooms open at once) both auto-healed the same Northgard install at the same time.\r\n- Connecting to a room no longer briefly freezes the client while the in-game patch is checked/applied.\r\n\r\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.07.28.2...2026.08.03",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.08.03/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8d9ac1a6e4cadf7136595404d677d414555638ed7612d7166b833c21f9eabf81",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.03",
+      "minimum_ap_version": "0.6.7",
+      "size": 10414551,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.08.03",
+      "title": "2026.08.03 - Minor Fixes to Patch Application",
+      "version_simple": "2026.8.3",
+      "world_version": "2026.8.3"
     }
   }
 }

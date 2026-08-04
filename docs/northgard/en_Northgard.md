@@ -8,6 +8,11 @@ battle, and so on up to Chapter 07). Normally you unlock the next battle just by
 the current one. In this randomizer, unlocking a Chapter instead requires receiving that
 Chapter's item from the multiworld -- it may be found in your own world or someone else's.
 
+"Chapter" is this randomizer's own name for each position in that tree -- it isn't
+Northgard's own terminology, so here's what it actually maps to on your Conquest map:
+
+![The Conquest map with each Chapter position labeled Chapter 1 through Chapter 7](images/chapters.png)
+
 Two Progression Modes control exactly how that gate works:
 - **Linear** (default): same as vanilla Conquest's own flow -- a Chapter also needs an
   adjacent Chapter beaten first, on top of owning its item.
