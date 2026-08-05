@@ -2,124 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-05T07:00:22.163219+00:00</updated>
+  <updated>2026-08-05T12:46:34.562669+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.6.1</id>
-    <title>Bayonetta v2.4.0r3</title>
-    <updated>2026-08-02T12:35:44+00:00</updated>
-    <author>
-      <name>Boi</name>
-    </author>
-    <content>## v2.6.1&#13;
-Just a quick patch fixing some bugs I encountered on my recent run.&#13;
-&#13;
-### Bug Fixes &amp; Adjustments&#13;
-* **Punch and Kick Lock:** Can no longer use PPKP, ect without Kick, You were able to use Kick inbetween moves if you had Punch but not Kick.&#13;
-* **Angel Arms:** These were locked for some reason even though you received the AP item.&#13;
-+ Other Small Bugs&#13;
-&#13;
-### Notes&#13;
-&#13;
-### Todo&#13;
-* **Rodin's LP Menu:** Figure out a safe way to let players manually hand LPs to Rodin without the mod accidentally deleting the items.&#13;
-* **Heel Slide Testing:** Keep an eye on Heel Slide to make sure it always sends the check under all save/load conditions.&#13;
-* **Tracker Updates:** Work on making the item tracker only show items that are currently "in logic".&#13;
-* **Torture Attacks:** Remove the on-screen prompt and magic cost when Torture Attacks are locked.&#13;
-&#13;
-### Highly Recommended Additions&#13;
-For the most stable and enjoyable experience, I strongly recommend downloading and installing these alongside the AP mod, it does not take much work to install and it will help with crashes and bugs the AP mod might have! &#13;
-* **[Bayonetta 4GB Patch](https://github.com/oceaniccamred/Bayonetta-4GB-Patched-EXE)** (Highly recommended to prevent memory crashes)&#13;
-* **[Bayonetta Essentials](https://gamebanana.com/mods/533310)**&#13;
-&#13;
-### Downloads&#13;
-- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
-- **`z.dll`** — place in your Bayonetta game folder too.&#13;
-- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder (replace the old one). (No new changes)&#13;
-&#13;
-**Existing seeds keep their original logic** — updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.&#13;
-&#13;
-Found a bug or have an idea? [Open an Issue](../../issues)!</content>
-    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v2.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.9.1</id>
-    <title>Harry Potter 2 PC v2.9.1</title>
-    <updated>2026-08-02T13:22:36+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content># HP2PC_AP release v2.9.1&#13;
-&#13;
-- Fix locale for /installmod and /play commands, so it should support all OS language types.</content>
-    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.9.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.2</id>
-    <title>Ys Origin v1.9.2r2</title>
-    <updated>2026-08-02T14:51:13+00:00</updated>
-    <author>
-      <name>4rtefakt</name>
-    </author>
-    <content>&gt; 🧪 **Still a beta.** Requires **Archipelago 0.6.7 or newer**. This is beta 1 plus one fix — see [2.0.0-beta.1](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.1) for the full change list.
-
-## 🔓 Fixes the post-Kishgal softlock on 1F
-
-If you beat Kishgal, got dropped on 1F for the story scene, and then found that **the stairs event never triggers, you can't leave, and the Crystal answers with *"If I go anywhere, I'll just get in everyone's way"*** — this build repairs that, including on a save that is already stuck. Just update `dinput8.dll` and load your save; it fixes itself on the next tick and logs what it did.
-
-**What was happening.** That 1F scene ends with a per-character block, and Yunica's never took effect:
-
-```
-test g_flags[150] == 1        &lt;- Yunica
-jump-if-false past the block
-  g_flags[278] += 4
-  g_flags[284] = 1
-  g_flags[286] = 1
-  g_flags[285] = 1
-  g_flags[287] = 1
-  g_flags[243] = 1            &lt;- the one that matters
-```
-
-Everything before that block ran, and everything after it ran — only those six writes went missing, which is a state the game itself can't produce. `g_flags[243]` is what the north-exit trigger checks before starting the stairs event, and it's also why the Crystal refuses: the game still thinks the scene is in progress.
-
-**Honest scope: this is a repair, not a cure.** We do not yet know *why* the branch gets skipped. The leading theory is that cutscene fast-forwarding lets the room transition tear the script down while its tail is still running, but that's unproven. So the mod detects the impossible state and replays exactly those six writes — nothing else. It can't misfire: `g_flags[346]` is set unguarded at the top of every story scene of that group, so "scene ran but branch didn't" is precisely `346 &amp;&amp; !243`, and the check is further scoped to Yunica standing on 1F.
-
-**Testing status:** the six writes were confirmed by hand on a live stuck save and unstuck it immediately. The automatic trigger compiles and is guarded, but hasn't yet been observed firing on its own — if you're the one who's stuck, you're the first real test. Please say whether it cleared, and grab `yso_ap.log` either way.
-
-*Thanks to **Chiral** for the original report and the detail that made it findable, and to the second player who confirmed it's not a one-off &lt;3*
-
-## ⚠️ Still open
-
-- **Devil's Corridor is under-gated in logic.** Passing it needs the Roo trade at `S_3104` (a Roda Fruit), not just the Crimson Lotusblade — as Yunica the Roo hums Feena's theme so the Silver Harmonica works; Hugo gets the Hammer, Toal the Ring of Ease. A seed that puts your first Roda Fruit past the corridor can strand you. Not fixed here: it needs a counted rule and a generation pass, not a quick data edit.
-- **26 location flags double as story-scene state** (`344`/`345` Red Moon Crest, `304` Cerulean Flabellum, `335` Levinstrike Warhammer, `385` Double Jump, `270`/`285` Dreaming Idol). These can fire checks you never earned. One consequence you may see: the 1F repair writes `285`, which will send `Wailing Blue: 1F Save — Dreaming Idol` as a side effect.
-
----
-
-**Install:** drop `ys_origin.apworld` in `custom_worlds/`, `dinput8.dll` next to `yso_win.exe`. The apworld is unchanged from beta 1 — if you already have it, only the DLL needs replacing.
-</content>
-    <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ElectroStarz/Torture-AP-Client/releases/tag/v0.0.2</id>
-    <title>Torture Client v0.0.2</title>
-    <updated>2026-08-02T15:19:45+00:00</updated>
-    <author>
-      <name>ElectroStarz</name>
-    </author>
-    <content>## What's Changed?&#13;
-* Added Ring Link Support&#13;
-* Added Coloured Names&#13;
-&#13;
-&#13;
-Red = Disconnected\&#13;
-Green = Connected &amp; Regular Client\&#13;
-Blue = Connected &amp; Torture User Client (Supports Special Features)\&#13;
-Yellow = Goaled</content>
-    <link href="https://github.com/ElectroStarz/Torture-AP-Client/releases/tag/v0.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.4.1</id>
     <title>Grand Theft Auto: San Andreas v0.4.0r2</title>
@@ -149,8 +36,7 @@ Fixes&#13;
 &#13;
 1) Filler locations/items were removed&#13;
 2) Long location fix&#13;
-3) Issue with unable to send achievement locations also fixed&#13;
-4) No need anymore to restart game after changing/deleting save file</content>
+3) Issue with unable to send achievement locations also fixed</content>
     <link href="https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v2.1"/>
   </entry>
   <entry>
@@ -361,7 +247,7 @@ The server re-sends your whole item list on connect, and we replay it to rebuild
   </entry>
   <entry>
     <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.4</id>
-    <title>Ys Origin v1.9.2r2</title>
+    <title>Ys Origin v1.9.2r3</title>
     <updated>2026-08-02T20:45:58+00:00</updated>
     <author>
       <name>4rtefakt</name>
@@ -1657,5 +1543,89 @@ sm64ex updates:&#13;
 -Added option to begin game with Chaos Chips hinted&#13;
 -Added option to disable Enemy Level slider in-game</content>
     <link href="https://github.com/udime123/Silver-Daze-APWorld/releases/tag/0.7.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.3.0</id>
+    <title>Pokemon Pinball Ruby &amp; Sapphire v0.3.0</title>
+    <updated>2026-08-05T08:01:59+00:00</updated>
+    <author>
+      <name>Silvris</name>
+    </author>
+    <content># New Features&#13;
+* Shop Tracks&#13;
+  * A max of 5 sets of shop locations per board (which each set having up to a max of 15 locations within them)&#13;
+  * Prices can be low (y=5x), medium (y=x^1.65), or large (y=10x)&#13;
+* Roulette Locations&#13;
+  * Up to 40 locations per board, replaces all Small and BIG on the roulette while unsent&#13;
+* Music Shuffle&#13;
+* DeathLink&#13;
+&#13;
+# Bug Fixes&#13;
+* Fixed an issue where using DexNav on Pichu would force all future eggs in that game to be Pichu&#13;
+* Fixed an issue where Pokédex Medals would appear in the item pool with Medals goal disabled</content>
+    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/stubobis1/Archipelago/releases/tag/2.2.1</id>
+    <title>Path of Exile v2.2.1</title>
+    <updated>2026-08-05T08:04:51+00:00</updated>
+    <author>
+      <name>StuBob</name>
+    </author>
+    <content>## World&#13;
+&#13;
+- **Atziri boss data fixed**: the Apex of Sacrifice fight (`atziri`) and the Alluring Abyss fight (`uber_atziri`) were previously merged into one `atziri` location with a mixed/incorrect drop table. They're now tracked separately, each with the correct guaranteed unique drop pool for its own arena.&#13;
+- **Uber Incarnation bosses added**: Incarnation of Fear, Neglect, and Dread now have separate `uber_incarnation_of_fear`, `uber_incarnation_of_neglect`, and `uber_incarnation_of_dread` boss locations, each with their own correct (and previously-missing) unique drop table, distinct from the base-difficulty fights.&#13;
+- Updated `bosses_available` valid choices and existing tests to include the new boss keys.&#13;
+&#13;
+### For use with client at: https://github.com/stubobis1/Path-of-Exile-Archipelago-Client/releases/tag/2.2.1&#13;
+### Setup guide here: https://stubobis1.github.io/pathofexile_ap/guide.html&#13;
+Client 2.2.1 remains backwards compatible with 2.2.0 servers.&#13;
+&#13;
+**Full Changelog**: https://github.com/stubobis1/Archipelago/compare/2.2.0...2.2.1</content>
+    <link href="https://github.com/stubobis1/Archipelago/releases/tag/2.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/APxiv/releases/tag/0.30.2</id>
+    <title>Final Fantasy XIV v0.30.2</title>
+    <updated>2026-08-05T09:28:37+00:00</updated>
+    <author>
+      <name>silasary</name>
+    </author>
+    <content>* Added custom job level UI to the XIV Manual Client.&#13;
+* Fixed bug where Coils of Bahamut would always be in logic.&#13;
+* Fixed typo in the name of Ocean Fishing: Ruby Price.</content>
+    <link href="https://github.com/silasary/APxiv/releases/tag/0.30.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.1</id>
+    <title>Parkitect v1.6.1</title>
+    <updated>2026-08-05T11:37:21+00:00</updated>
+    <author>
+      <name>CrusherRL</name>
+    </author>
+    <content>Installation instructions can be found [[here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)].&#13;
+&#13;
+Enjoy!&#13;
+&#13;
+&gt; **Notes**&#13;
+&gt;&#13;
+&gt; * This release is **not** backward compatible with seeds generated **before v1.2.1**.&#13;
+&gt; * This release **may not** be fully compatible with seeds generated **before v1.5.0**.&#13;
+&gt; &#13;
+&#13;
+# Parkitect Archipelago — Release Notes&#13;
+&#13;
+## Features&#13;
+* Added Migrations to move internal files&#13;
+* Added new button to open AP Config Folder (Mod Menu, open `Settings`)&#13;
+* Updated Mod in Mod.io and on Steam&#13;
+&#13;
+## Notes for Steam&#13;
+Updating on Steam will cause to lose your Savegames. To prevent this do the following:&#13;
+1. Copy/Move your `Savegame` Folder somewhere else&#13;
+2. Update the Mod&#13;
+3. Move your `Savegame` Folder back into the mod Folder</content>
+    <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.1"/>
   </entry>
 </feed>
