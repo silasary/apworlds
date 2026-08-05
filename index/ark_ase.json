@@ -89,6 +89,22 @@
       "title": "v0.1.4-alpha",
       "version_simple": "1.0.0",
       "world_version": "1.0.0r5"
+    },
+    "v0.1.5-alpha": {
+      "created_at": "2026-07-29T03:29:33Z",
+      "description": "- Added 45 exploration checks - fly to a region and it checks. Biomes, mountains, islands, caves, all three obelisks, and a Deep Ocean one that only fires when you actually dive.\r\n- Added 10 death checks. Carnivore, herbivore, alpha, cold, heat, drowning, lava, falling, starvation, dehydration. Go on. Die.\r\n- Added milestones for dying (1/5/10/25/40), exploring (5/10/15/20/25 regions), and taming or killing a high-level creature. The level ones scale to YOUR server difficulty, so they work whether your max wild is 30 or 150.\r\n- Fixed Campfire arriving as an item and unlocking absolutely nothing. \r\n- Fixed Campfire ALSO being placed in the pool when free starter engrams was already switched on, so you got an unlock for something you already had.\r\n- Fixed Plant Species X Seed and Leech Blood never sending their checks - both were looking for the wrong item internally. You can hold 100 of them and nothing would happen. Achatina Paste and Element Dust had the same problem in filler.\r\n- Fixed underwater dossiers being reachable without scuba - a single tamed Diplocaulus was counting as deep diving gear. 12 notes could hold progression you had no way to get to(added tame logic for the diplocaulus to require crossbow+tranq arrows).\r\n- Multiplayer FALSE now properly unlocks for everyone on the server. Engrams and tames already did, but filler, buffs and traps were only going to whoever happened to load in first.(not tested, get to work tester bees)\r\n- Unlock messages now say who the unlock is for and list every item you got, not just the first one. Paired engrams, bundled saddles and grouped items all show properly now.\r\n- Fixed losing your tames and engrams after a server restart. Also fixed the follow-up where it handed you your entire item history back, filler and all.(nasty bug, sorry I didn't catch this before the last build)\r\n- Added /apcheck, /apdumpinv, /apresync, /aprecover and /dumppos.\r\n- Added additional logic from Lurch. \r\n\r\n**Upgrading: replace the WHOLE plugin folder, not just the dll - the data files changed too. You also need to regenerate your seed. If you use multiplayer true, everyone should /connect once.**\r\n\r\nOnce again big thanks to Lurch, Beeno, Avocado, and Brandon. Attached once again is Avocado's Launcher. USE IT! It makes life much easier(or so I am told). https://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher/releases#release-v0.4.4",
+      "download_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.1.5-alpha/ark_ase.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7b350c3bebf35dd007e54dab4b7e5f9170e959386089cb412eaa6bd5932bee01",
+      "html_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.1.5-alpha",
+      "maximum_ap_version": "0.9.99",
+      "minimum_ap_version": "0.6.0",
+      "size": 112259,
+      "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
+      "tag": "v0.1.5-alpha",
+      "title": "v0.1.5-alpha",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
     }
   }
 }

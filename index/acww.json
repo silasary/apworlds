@@ -1,7 +1,14 @@
 {
-  "game": null,
+  "authors": [
+    "Mike"
+  ],
+  "game": "Animal Crossing: Wild World",
   "github": "https://github.com/MikeFritzDevelops/ACWW-Archipelago",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0-alpha": {
       "created_at": "2026-08-04T09:16:21Z",
@@ -17,6 +24,22 @@
       "title": "Animal Crossing: Wild World v0.1.0-alpha",
       "version_simple": "0.1.0",
       "world_version": "0.1.0a0"
+    },
+    "v0.1.1-alpha": {
+      "created_at": "2026-08-05T14:57:47Z",
+      "description": "## v0.1.1-alpha\r\n\r\n### Added\r\n\r\n- Refactored memory profile architecture to lay the groundwork for future game version support.\r\n- Improved the inventory watcher to use stable inventory snapshots before processing changes.\r\n\r\n### Changed\r\n\r\n- **Starter Kit** renamed to **Start with Tools**\r\n- **Start with Tools** now grants the tools without sending three initial checks.\r\n- Normal tools no longer considered progression for logic; Golden tools remain randomized items.\r\n- Updated PopTracker with monthly Bug and Fish Journals, improved availability information, and corrected bug and fish logic.\r\n\r\n### Fixed\r\n\r\n- Museum goal validation now raises an 'OptionError' instead of 'ValueError'.\r\n- Fixed several client-side issues related to starting tool handling and internal state synchronization.\r\n- General stability improvements and code cleanup.\r\n\r\n## Documentation\r\n\r\n- [README](https://github.com/MikeFritzDevelops/ACWW-Archipelago#readme)\r\n- [Setup Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/setup_en.md)\r\n- [Game Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/game_en.md)\r\n- [Master Controller Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/controller.md)\r\n\r\n---\r\n\r\n## Alpha Notice\r\n\r\nThis is an early alpha release.\r\n\r\nBug reports, balance feedback, and suggestions are greatly appreciated.",
+      "download_url": "https://github.com/MikeFritzDevelops/ACWW-Archipelago/releases/download/v0.1.1-alpha/acww.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a06df641ba27785dade897d9fd3309175d653346e0f9fa2036ab3896fbace5a0",
+      "html_url": "https://github.com/MikeFritzDevelops/ACWW-Archipelago/releases/tag/v0.1.1-alpha",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 30493,
+      "source_url": "https://api.github.com/repos/MikeFritzDevelops/ACWW-Archipelago",
+      "tag": "v0.1.1-alpha",
+      "title": "v0.1.1-alpha - Stability & Tracker Update",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1a0"
     }
   }
 }
