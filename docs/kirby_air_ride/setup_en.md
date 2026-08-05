@@ -97,6 +97,7 @@ Once you're ready, follow these steps to connect to the room:
 * Ensure that you do not have any Dolphin cheats or codes enabled. Some cheats or codes can unexpectedly interfere with emulation and make troubleshooting errors difficult. Some gecko or action replay codes may work, but they may also break the game state that archipelago depends on to function.
 * Ensure that you only have one instance of Dolphin running.
 * Ensure that `Enable Emulated Memory Size Override` in Dolphin (under `Options` > `Configuration` > `Advanced`) is **disabled**.
+* Ensure that RetroAchievements is **disabled** in Dolphin (under `Tools` > `Achievements`, uncheck `Enable RetroAchievements.org Integration`). Leaving it enabled will stop the mod from loading.
 * Ensure the `Fallback Region` in Dolphin (under `Options` > `Configuration` > `General`) is set to `NTSC-U`.
 * If you run with a custom GC boot menu, you'll need to skip it by going to `Options` > `Configuration` > `GameCube` and checking `Skip Main Menu`.
 * Full restart of client and dolphin.

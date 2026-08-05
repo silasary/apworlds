@@ -3,7 +3,7 @@
 ## Required Software
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
-- [The HKRR APworld](https://github.com/richarm4/Archipelago/releases)
+- [The HKRR APworld](https://github.com/richarm4/Archipelago/releases?q=Hello)
 - A legally dumped US ISO of Hello Kitty: Roller Rescue
 - [Dolphin Emulator](https://dolphin-emu.org/download/?ref=btn)
 ## How to play
@@ -15,4 +15,4 @@ but you can check the [Archipelago Setup Guide](/tutorial/Archipelago/setup_en#g
 Open the game, wait in Hello Kitty's house, open the client in Archipelago Launcher, and Dolphin should automatically connect to it.
 Then you can connect to your Archipelago room, and it should let you start sending and receiving checks.
 
-**This is an early alpha release.** Not every level CLEAR goal works every time like I had hoped, and choosing to bring along a partner character can break the memory tracking of a level.
+Currently, it should be noted that bringing in a partner character to a level will break coin tracking within the level.

@@ -14,7 +14,11 @@ Place the TTYD apworld in the `custom_worlds` folder of your Archipelago install
 
 ## Dolphin Configuration
 
-In your Dolphin settings (Accessed by going to Options > Configuration up top), change the following settings:
+# Note
+
+The archipelago client will automatically configure Dolphin for you, but if you want to do it manually, here are the settings you need to change.
+
+## Settings
 
 - In Game Config > General, make sure Enable Dual Core is unchecked
 - In Game Config > Graphics, set your Backend to either OpenGL or Vulkan (Direct3D can often cause errors that may lead to crashes)

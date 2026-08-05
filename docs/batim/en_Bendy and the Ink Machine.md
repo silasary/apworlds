@@ -16,9 +16,12 @@ The following can be obtained as items:
  - Bertrum's Bossfight
  - Chapter Unlocks
  - Cans of Bacon Soup
- - (optionally) Checkpoints
  - Filler items
-	- Bacon Soup (Used)
+	- Empty Soup Can
+	- Empty Ink Well
+	- Broken Banjo String
+ - (optionally) Checkpoints
+ - (optionally) The Tommy Gun
 
 By default, the following can be sent as location checks:
  - Ritual items from chapter 1 (Book, Doll, Gear, Inkwell, Record, and Wrench)
@@ -34,11 +37,14 @@ By default, the following can be sent as location checks:
  - (optionally) Finding theMeatly cutouts
  - (optionally) Getting perfect scores in the chapter 4 warehouse minigames.
  - (optionally) Checkpoints
+ - (optionally) The Tommy Gun
+ - (optionally) Completing the CH3 Lever Challenge (1 check per wave)
 
 ## What is the goal?
 
-Currently, the only available goal is to beat Beast Bendy at the end of Chapter 5. Starting the fight will require a
-configurable number of bacon soup cans to be received.
+The default goal is to beat Beast Bendy at the end of Chapter 5. Starting the fight will require a
+configurable number of bacon soup cans to be received. The goal can be changed to completion of any chapter,
+with later chapters being discluded from randomization unless specifically included.
 
 ## I received an item, but I can't place it where it needs to go?
 

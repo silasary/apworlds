@@ -1,9 +1,12 @@
 # Manual_TaylorSwiftDiscography_bennydreamly
 
 ## Latest
-- <a href="https://github.com/benny-dreamly/Manuals/releases/download/TS-6.0.1/manual_taylorswiftdiscography_bennydreamly.apworld">Latest Version (6.0.1)</a>
+- <a href="https://github.com/benny-dreamly/Manuals/releases/download/TS-6.1.0/manual_taylorswiftdiscography_bennydreamly.apworld">Latest Version (6.1.0)</a>
 
 ## All Versions
+
+#### v6.1.0
+- <a href="https://github.com/benny-dreamly/Manuals/releases/download/TS-6.1.0/manual_taylorswiftdiscography_bennydreamly.apworld">https://github.com/benny-dreamly/Manuals/releases/download/TS-6.1.0/manual_taylorswiftdiscography_bennydreamly.apworld</a>
 
 #### v6.0.1
 - <a href="https://github.com/benny-dreamly/Manuals/releases/download/TS-6.0.1/manual_taylorswiftdiscography_bennydreamly.apworld">https://github.com/benny-dreamly/Manuals/releases/download/TS-6.0.1/manual_taylorswiftdiscography_bennydreamly.apworld</a>
