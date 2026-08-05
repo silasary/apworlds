@@ -198,6 +198,10 @@ def cleanup_manifest(manifest):
     elif isinstance(manifest.get("flags", []), str):
         manifest["flags"] = manifest["flags"].split(",")
 
+    if manifest.get("_new", False) and len(manifest.get("versions", {})) < 3:
+        # If a manifest is new and has less than 3 versions, mark it as unready by default
+        manifest["flags"] = manifest.get("flags", []) + ["unready"]
+
     seen_versions = Counter()
     versions = manifest.get("versions", {}).values()
     versions = sorted(versions, key=lambda v: v.get("created_at", datetime.datetime.min.isoformat()))

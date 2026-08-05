@@ -38,7 +38,7 @@ class IndexManager:
             elif (file_path := file_path.with_suffix(".yaml")).exists():
                 manifest = yaml.safe_load(file_path.read_text())
             elif github_url:
-                manifest = {"game": "", "github": github_url}
+                manifest = {"game": "", "github": github_url, "_new": True}
                 if default_flags:
                     manifest["flags"] = default_flags
             else:
@@ -69,6 +69,7 @@ def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=N
 def save_manifest(world: pathlib.Path, manifest: dict) -> None:
     _manifest = manifest.copy()
     path = _manifest.pop("_filename", None)
+    _manifest.pop("_new", None)
     if path:
         world = pathlib.Path(path)
 
