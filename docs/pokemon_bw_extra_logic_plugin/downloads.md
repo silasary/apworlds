@@ -1,9 +1,12 @@
 # Pokemon BW Extra Logic Plugin
 
 ## Latest
-- <a href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v8/pokemon_bw_extra_logic_plugin.apworld">Latest Version (1.8.0)</a>
+- <a href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v9/pokemon_bw_extra_logic_plugin.apworld">Latest Version (1.9.0)</a>
 
 ## All Versions
+
+#### v1.9.0
+- <a href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v9/pokemon_bw_extra_logic_plugin.apworld">https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v9/pokemon_bw_extra_logic_plugin.apworld</a>
 
 #### v1.8.0
 - <a href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v8/pokemon_bw_extra_logic_plugin.apworld">https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v8/pokemon_bw_extra_logic_plugin.apworld</a>

@@ -2,259 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-06T07:08:11.315593+00:00</updated>
+  <updated>2026-08-06T12:48:12.733533+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.0</id>
-    <title>Supermarket Simulator v0.3.0</title>
-    <updated>2026-08-02T22:42:32+00:00</updated>
-    <author>
-      <name>Lemix028</name>
-    </author>
-    <content>Initial public release of the Supermarket Simulator Archipelago World (apworld) and C# Client Mod.&#13;
-</content>
-    <link href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.6.3</id>
-    <title>Baldur's Gate 3 v0.6.3</title>
-    <updated>2026-08-03T03:07:29+00:00</updated>
-    <author>
-      <name>Broney</name>
-    </author>
-    <content>Fixes in this version:&#13;
-* Including the BG3 Mod pak in this release too&#13;
-* Fixes the mindflayer colony's logical requirement on the shar trials&#13;
-* BG3 mod change- fixes the Ruined Village Well for block entrances on</content>
-    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.6.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.0</id>
-    <title>GemCraft: Frostborn Wrath v0.6.0</title>
-    <updated>2026-08-03T09:53:00+00:00</updated>
-    <author>
-      <name>Levisaxos</name>
-    </author>
-    <content>&gt; ⚠️ **Breaking change.** Seeds generated with an older apworld are not compatible&#13;
-&gt; with 0.6.0 — finish any in-progress async before updating, then generate new seeds&#13;
-&gt; with the 0.6.0 apworld.&#13;
-&#13;
-A large update: derived Wizard-Level progression gating, a full talisman rework&#13;
-(AP Shop + generated progression set), two new world-map information windows, and&#13;
-a long list of fixes. Covers both the Bezel mod and the apworld.&#13;
-&#13;
-Legend: 🆕 **New** · ⬆️ **Improved** · 🗑️ **Removed** · 🐛 **Bugfix**&#13;
-&#13;
----&#13;
-&#13;
-## 🆕 New&#13;
-&#13;
-### Progression &amp; logic&#13;
-- **Wizard Level (WL) gating.** Achievements and fields are now gated on a *derived*&#13;
-  Wizard Level computed from collected XP, instead of the live in-game wizard level.&#13;
-  Each achievement can override the effort-tier WL floor with its own `min_wl:N`.&#13;
-- **Difficulty-scaled battle XP.** The battle-XP multiplier's base now depends on&#13;
-  difficulty — Easy 2.0 / Medium 1.5 / Hard 1.0 / Extreme 0.5 — recomputed live in&#13;
-  battle and in the selector so the pre-battle and outcome displays reflect it. Trial&#13;
-  mode is left untouched. (Extreme now requires Endurance enabled at generation.)&#13;
-- **`tm&lt;Spell&gt;Charge` achievement parity.** The mod resolves talisman Max-Charge&#13;
-  achievement requirements by summing held progression fragments, mirroring the&#13;
-  apworld, so their in-logic dots match generation.&#13;
-&#13;
-### Talismans&#13;
-- **AP-generated progression talisman set.** Every seed gets a deterministic,&#13;
-  bit-exact 25-fragment talisman (a legal 5×5 jigsaw with maxed starting/wave mana),&#13;
-  giving the power model a fixed, known baseline. Freeze/Barrage charge sums are&#13;
-  guaranteed high enough to keep their achievements reachable.&#13;
-- **Talisman AP Shop.** A hover-popup shop on the talisman screen to buy and place&#13;
-  the 25 "perfect placement" fragments with shadow cores (net-zero vs. selling).&#13;
-- **Free talisman fragment on unlock.** Receiving an AP talisman unlock now drops one&#13;
-  fragment straight into your inventory for free (once per unlock, deduped) — place,&#13;
-  upgrade, or sell it as you like. The AP Shop stays for net-zero re-buys.&#13;
-- **"Archipelago item" tooltip marker.** AP-sourced talisman fragments now show an&#13;
-  *Archipelago item* line in their hover tooltip (inventory / active slots), so you&#13;
-  can always tell which fragments came from AP.&#13;
-&#13;
-### World-map information windows&#13;
-- **Icon-based field tooltip.** The vanilla world-map field tooltip is replaced by an&#13;
-  icon-driven panel: live stage data (name, waves, first-wave HP, real minimap),&#13;
-  Journey/Stash check orbs colored by logic state (grey = done / green = in logic /&#13;
-  red = blocked), granularity-aware pouch &amp; stash-key item names, an "Available gems"&#13;
-  row, and a list of the achievements you can earn by playing that field.&#13;
-- **Game Elements window.** A new selector window (button between "In Logic" and the&#13;
-  AP Debug Menu) that inverts the field tooltip: toggle element / structure / creature&#13;
-  / weather / gem icons to light up which fields carry them. Includes a 26×6 field&#13;
-  grid with AND matching, ownership gray-out (fields you don't own can't tempt you),&#13;
-  pouch-aware gem matching, and per-field hover contents.&#13;
-&#13;
-### Stats &amp; progress&#13;
-- **Always-visible achievement progress bars.** Cumulative "Reach N" achievements now&#13;
-  draw a live progress bar (current total ÷ target) in the achievements window, so you&#13;
-  can see how close you are without earning them first. Driven by a generated&#13;
-  game_id → stat-index/target map.&#13;
-&#13;
-### Update safety&#13;
-- **Breaking-update warning on the main menu.** When a newer version would invalidate a&#13;
-  seed you're part-way through, the update badge turns **red** and reads "Update&#13;
-  available — BREAKING", so you can tell at a glance whether it's safe to update&#13;
-  mid-async. Any breaking release between your version and the latest trips it, not just&#13;
-  the newest one.&#13;
-- **Changelog flags which version broke compatibility.** Each breaking release in the&#13;
-  in-game changelog now carries a "finish any in-progress async before updating" banner.&#13;
-&#13;
-### Options / QoL&#13;
-- **`extra_shadow_cores_per_wave` option (0–5).** Grants N extra shadow cores per wave&#13;
-  reached, banked at level end like vanilla drops. Pure pass-through — no effect on&#13;
-  items, locations, or logic.&#13;
-&#13;
----&#13;
-&#13;
-## ⬆️ Improved&#13;
-&#13;
-### Progression pacing&#13;
-- **Fixed the XP curve for a better early-game pace** — it now starts high and eases&#13;
-  off toward the end.&#13;
-&#13;
-### Skillpoint economy&#13;
-- **Reworked to fixed values.** Replaced the per-seed budget math with fixed SP items:&#13;
-  40 always-present bundles (32 Small + 6 Medium + 2 Big) plus a "Skillpoint" (1 SP)&#13;
-  filler. Total SP now scales purely with a seed's check count — do more, get more.&#13;
-- Every achievement is **normalized to a flat 1 SP** while AP is active (vanilla&#13;
-  1/2/3 values snapshotted and restored on deactivate).&#13;
-- Fixed the bundle total (Medium 8 → 6; SP total corrected).&#13;
-&#13;
-### Generation &amp; pool&#13;
-- **Achievements are hard-gated at generation** on their full requirement DNF —&#13;
-  elements with same-stage binding, gem/monster-stat counters, skills, traits, and&#13;
-  field clearability — replacing the old loose "WL floor + skill/trait only" gate. A&#13;
-  data-driven filler-only guard keeps the stricter counters from stranding progression&#13;
-  items.&#13;
-- **Achievement requirement retuning.** A pass over per-achievement gates now leans on&#13;
-  the derived Wizard Level instead of raw wave count where that models the real effort&#13;
-  better — several shadow-core-find, talisman-fragment, and beam/barrage-count&#13;
-  achievements swapped their `minWave` gate for a `min_wl` one, the strike-spell wave&#13;
-  thresholds were raised, "Build 15 Towers" gained a light WL floor, and "Ground Luck"&#13;
-  was reclassified Minor → Major. apworld and mod logic stay in lockstep.&#13;
-&#13;
-### UI &amp; tooltips&#13;
-- **Debug menu tabs** are now native game buttons with real hover/active-state frames.&#13;
-- **Field tooltip stays alive during the post-battle XP tally** (instead of dropping to&#13;
-  the vanilla tooltip), and just-cleared checks are pushed the moment the game-over&#13;
-  panel appears so it reflects the new in-logic state during the map tally.&#13;
-- **Field WL-blocker text simplified** to "Requires higher XP/WL" — the derived WL gate&#13;
-  isn't the wizard level shown in-game, so showing a raw number was misleading.&#13;
-&#13;
-### Docs&#13;
-- README / overview docs refreshed: skillpoint bundles, `xp_tome_bonus` default,&#13;
-  `achievement_required_effort` default and per-level check counts, and the new&#13;
-  `extra_shadow_cores_per_wave` option.&#13;
-&#13;
----&#13;
-&#13;
-## 🗑️ Removed&#13;
-&#13;
-### Progression &amp; logic&#13;
-- **Fields no longer require other specific fields.** A field's only requirements are&#13;
-  its own map token and enough progression — you'll never be told to go clear one&#13;
-  particular field just to open another. (A couple of late fields still ask for the&#13;
-  relevant skills, which was always the point of those.)&#13;
-- **Tiers are gone**, and requirement granularity was reduced across the board, for&#13;
-  smoother gameplay and generation.&#13;
-- **Battle traits no longer inflate progression.** Traits still do everything they do&#13;
-  in battle — they just no longer count toward the progression level that unlocks&#13;
-  fields, so pacing is consistent no matter which traits you run.&#13;
-&#13;
-### Item pool&#13;
-- **Retired the extra talisman fragments and extra shadow-core stashes** into filler;&#13;
-  only the 25 progression fragments remain AP items.&#13;
-&#13;
-### UI&#13;
-- **Removed the old Wizard Level slider** from the debug menu.&#13;
-&#13;
----&#13;
-&#13;
-## 🐛 Bugfixes&#13;
-&#13;
-### Achievements — corrected descriptions to match the real vanilla requirement&#13;
-The in-game text for these achievements did not match what the game code actually&#13;
-checks. The description shown in the achievements window is now corrected to the true&#13;
-requirement:&#13;
-&#13;
-- **Crunchy Bites** — "Kill 160 frozen swarmlings" also requires the swarmlings to be&#13;
-  in a **whiteout**; the text never said so.&#13;
-- **Absolute Zero** — "Kill 273 frozen monsters": frozen monsters that are *also* in a&#13;
-  whiteout silently **don't count**.&#13;
-- **Snow Dust** — text says **95** frozen kills while snowing; the code requires **100**.&#13;
-- **Ablatio Retinae** — text says **111** whiteouts; the code unlocks at **90**.&#13;
-- **Green Path** — text says **9,900** green-blooded kills; the code unlocks at **9,000**.&#13;
-- **Green Vial** — text says **75%** of kills by poison; the code checks **&gt; 74%**.&#13;
-- **Stirring Up the Nest** — "gem bomb and wasp kills only" also requires **at least 30&#13;
-  total kills**.&#13;
-- **Getting Rid of Them** — "Drop 48 gem bombs on beacons": gem bombs on **Jars of Wasps&#13;
-  also count**.&#13;
-- **Deal Some Damage Too** — "Have 5 traps with bolt-enhanced gems" actually needs **6**&#13;
-  (the check runs one enhancement before the new gem is counted).&#13;
-&#13;
-### Achievements — fixed off-by-one that made "keep the orb intact" impossible&#13;
-These four could never be earned on a field with exactly the stated number of waves:&#13;
-the intact-wave counter starts at −1, so it tops out one short (e.g. 19 of the needed 20)&#13;
-and the game required N+1 waves. The mod now unlocks each at its stated wave count (the&#13;
-orb-XP bonus is left untouched), and the logic gates match:&#13;
-&#13;
-- **Well Defended** — now unlocks at **20** intact waves (was 21).&#13;
-- **Tightly Secured** — now unlocks at **60** (was 61).&#13;
-- **It's a Trap** — now unlocks at **120** (was 121).&#13;
-- **You Shall Not Pass** — now unlocks at **240** (was 241).&#13;
-&#13;
-### Achievements — other&#13;
-- **Achievement tooltip appended twice / onto the wrong tooltips.** The AP tooltip&#13;
-  overlay is now gated to the active achievements window, so it no longer double-adds&#13;
-  the "Archipelago" block mid-battle or bleeds onto non-achievement tooltips on other&#13;
-  selector screens.&#13;
-- **WL gating didn't apply to achievements** — fixed.&#13;
-&#13;
-### Standalone / state safety&#13;
-- **Standalone AP-state leaks fixed.** Several AP-mode mutations were only reversed on&#13;
-  full unload, not on AP → standalone transitions: the message-log hotkey and resize&#13;
-  listeners, per-battle patcher locks (GemPouch / HollowGem), and the difficulty-XP&#13;
-  scaling. A standalone save loaded after an AP save is now pure vanilla.&#13;
-&#13;
-### UI&#13;
-- **Menus silently stopped responding to clicks.** Panel / tab / scroll listeners were&#13;
-  weakly referenced and got garbage-collected mid-session; switched to strong refs.&#13;
-- **In-battle info-panel tooltips were stripped every frame** by the talisman shop's&#13;
-  cleanup; it now only removes the shared info panel when it owns the tooltip.&#13;
-- **Field tooltip lit up the wrong field** — the panel now blocks mouse events and&#13;
-  force-highlights its own field.&#13;
-- **Field tooltip popped up behind on-map buttons.** The field hover hit-test ignored&#13;
-  z-order, so an AP button drawn over a field token would still trigger the field&#13;
-  tooltip (and append AP lines onto the button's own tooltip). Both field overlays now&#13;
-  defer to any selector button under the cursor, matching the game's mouse routing.&#13;
-- **Field-token hit-testing leaked onto other selector screens.** On the achievements /&#13;
-  skills / talisman / settings sub-screens (which sit over the map and reuse the shared&#13;
-  info panel) the field overlay was still hit-testing the tokens behind them — hiding&#13;
-  those screens' own tooltips and lighting a field behind the panel. It now fully&#13;
-  releases the moment you leave the world map.&#13;
-- **Debug options window** bugs fixed.&#13;
-- Marked Monster icon no longer flagged as needs-fix.&#13;
-&#13;
-### Logic&#13;
-- **Wizard Stash reachability** now requires the Wizard Stash Key item (parity with the&#13;
-  apworld), except when `stash_key_granularity` is OFF.&#13;
-&#13;
-### Misc&#13;
-- Additional smaller bug fixes and cleanup across the mod and apworld.&#13;
-&#13;
----&#13;
-&#13;
-_Generated for the release following v0.0.5.6 — set the final version number in the&#13;
-header before publishing._&#13;
-</content>
-    <link href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.0"/>
-  </entry>
   <entry>
     <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v2.1.4</id>
     <title>Mario Sports Mix v2.1.4</title>
@@ -1501,5 +1253,76 @@ Full patch notes of 0.4 can be found [here](https://github.com/Amphyros/Phoenoto
 * Fixed logic believing Bombos could be used without a sword&#13;
 * Fixed a generation error when the Bomb Shop was placed at a Desert Palace entrance</content>
     <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-96</id>
+    <title>Borderlands 2 v96</title>
+    <updated>2026-08-06T07:06:56+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.4):&#13;
+- fix UT connection issue (hopefully)&#13;
+- infinite backpack as yaml setting&#13;
+- AP travels in fast travel menu &#13;
+- new setting to remove symbols without removing cult of the vault challenges&#13;
+- named enemy locations toggleable&#13;
+- level up checks toggleable (need more options for this in the future)&#13;
+- slot name + seed for .items.txt file&#13;
+- migrate blgstor to settings dir (sdk_mods/settings/blgstor)&#13;
+- rigged slots purchaseable from earl&#13;
+- rigged slots are 1 spin and work for Torgue/Flamerock slots&#13;
+- logic fixes&#13;
+- rulebuilder refactor&#13;
+- some coop things working: loot spawns, sprint, equip blocking, travel commands (chat and fast travel station)</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-96"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v9</id>
+    <title>Pokemon BW Extra Logic Plugin v1.9.0</title>
+    <updated>2026-08-06T08:50:00+00:00</updated>
+    <author>
+      <name>RadisNoir</name>
+    </author>
+    <content>**Fixes**&#13;
+* Fixed Landorus appearing without Tornadus and Thundurus in the party&#13;
+* Imported the updated field move patches from the QoL plugin&#13;
+&#13;
+**YAML Options List**&#13;
+* The following options need to be added to the Black and White YAML under `plugin_options`:&#13;
+```&#13;
+  plugin_options:&#13;
+    extra_logic:  # same as v8&#13;
+      randomize_starting_town: true&#13;
+      starting_town_blacklist: []  # list in README&#13;
+      add_ss_ticket: true&#13;
+      add_pass: true&#13;
+      hm_with_badges: true&#13;
+      add_rock_smash: true&#13;
+      add_rock_smash_musharna: true  # requires add_rock_smash&#13;
+      extra_cut_trees: true&#13;
+      extra_cut_trees_kyurem: true   # requires extra_cut_trees&#13;
+      move_strength_boulders: true&#13;
+      move_strength_boulders_vi_road: true   # requires move_strength_boulders&#13;
+      dark_areas: ["Wellspring Cave B1F", "Mistralton Cave", "Challengers Cave"]  # supports "_All" and "_Random", see README&#13;
+```&#13;
+&#13;
+**Important Notes**&#13;
+* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.&#13;
+* It is not possible to add the extra logic options mid-playthrough.&#13;
+&#13;
+**Backwards Compatibility**&#13;
+* This version is compatible with v0.3.37+ of the main BW APworld&#13;
+* This version is compatible with v23 of the QoL Plugin&#13;
+&#13;
+**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v8...v9</content>
+    <link href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v9"/>
   </entry>
 </feed>

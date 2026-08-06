@@ -43,6 +43,21 @@
       "title": "Grunnchipelago 1.0.0",
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
+    },
+    "v1.0.1": {
+      "created_at": "2026-08-06T09:31:02Z",
+      "description": "Bug-fix patch. **No in-game behaviour changes**: existing seeds and runs stay compatible,\nand the 1.0.0 mod still works with a 1.0.1 seed (and the other way round). Updating is\nstill recommended so everyone runs the same version.\n\n## Installation\n\n1. **The mod** (every player): unzip `Grunnchipelago-client-1.0.1.zip` into `Grunn/BepInEx/plugins/`. BepInEx 5 (x64) must already be installed.\n2. **The apworld** (only whoever generates the seed): drop `grunn.apworld` into `Archipelago/custom_worlds/`.\n3. **The YAML**: start from `Grunn_template.yaml` (every option is documented in it).\n\nDetailed guides: [setup EN](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/setup_en.md) \u00b7 [setup FR](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/setup_fr.md) \u00b7 [goals and options](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/en_Grunn.md)\n\n## What changed\n\n- **Regression tests** for the `keep_vanilla_shears` + `lock_player_hut` combination,\n  following a playtest report: the polaroids the game only reveals once you have been\n  inside the player hut (magpie nest, tall man at the window) do require the hut key,\n  and the location holding that key is always reachable without it.\n- **Design documentation fixed**: it still referred to `keep_shears`, an option name that\n  no longer exists. Worth knowing for your own YAMLs \u2014 an unknown option name **does not\n  fail generation**: Archipelago prints a single warning line\n  (`... is not a valid option name for Grunn`) and then generates with the default value.\n  When in doubt, always start from `Grunn_template.yaml`.\n\n## About the playtest report\n\nThe reported behaviour (the hut key appearing reachable too early) **could not be\nreproduced**: 30 seeds generated with those options, checked with strict sphere-based\naccessibility, no anomaly; and the game's own conditions confirm the rule in place (the\nnest polaroid is revealed by having entered the hut, nothing else). The most likely\nexplanation remains a version mismatch between the apworld that generated the seed and the\none the tracker loads \u2014 hence this release, which puts everyone on the same version. If it\nhappens again, please attach the YAML, the spoiler log and the version in use.\n\n## Compatibility\n\nArchipelago 0.6.7 or later \u00b7 Grunn (Steam, Windows) \u00b7 BepInEx 5 x64\n\n---\n\nUnofficial project, not affiliated with Sokpop Collective. Grunn is the property of Tom van den Boogaart / Sokpop Collective. No game content is redistributed here.\n",
+      "download_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.0.1/grunn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bf7558ffc340a938750b812164bbe7f5d8b5f44819887fefe39145dcc1c8d0db",
+      "html_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/tag/v1.0.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 50069,
+      "source_url": "https://api.github.com/repos/Serial-Developer/Grunnchipelago",
+      "tag": "v1.0.1",
+      "title": "Grunnchipelago 1.0.1",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
     }
   }
 }
