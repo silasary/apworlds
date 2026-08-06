@@ -1,0 +1,48 @@
+{
+  "authors": [
+    "Serial-Developer"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Grunn",
+  "github": "https://github.com/Serial-Developer/Grunnchipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.1.0": {
+      "created_at": "2026-08-01T21:58:20Z",
+      "description": "**Cette version est obsolete.** Son fichier `grunn.apworld` ne se charge pas (erreur `No functional world found to handle game Grunn`).\n\nTelechargez la [version 1.0.0](https://github.com/Serial-Developer/Grunnchipelago/releases/latest).",
+      "download_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/download/v0.1.0/grunn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0d9841bfd0a8d6aaf17e0926b7601c39f72e6290af52eb5cf09dcc38af7ebddc",
+      "html_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/tag/v0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 49412,
+      "source_url": "https://api.github.com/repos/Serial-Developer/Grunnchipelago",
+      "tag": "v0.1.0",
+      "title": "Grunnchipelago 0.1.0 (obsolete - utilisez la 1.0.0)",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v1.0.0": {
+      "created_at": "2026-08-05T13:50:37Z",
+      "description": "Premi\u00e8re version stable de Grunnchipelago : l'apworld Archipelago pour **Grunn** et son mod client BepInEx.\n\n## Installation\n\n1. **Le mod** (tous les joueurs) : d\u00e9zipper `Grunnchipelago-client-1.0.0.zip` dans `Grunn/BepInEx/plugins/`. BepInEx 5 (x64) doit \u00eatre install\u00e9 au pr\u00e9alable.\n2. **L'apworld** (uniquement la personne qui g\u00e9n\u00e8re la seed) : placer `grunn.apworld` dans `Archipelago/custom_worlds/`.\n3. **Le YAML** : partir de `Grunn_template.yaml` (toutes les options y sont d\u00e9crites).\n\nGuides d\u00e9taill\u00e9s : [setup EN](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/setup_en.md) \u00b7 [setup FR](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/setup_fr.md) \u00b7 [options et objectifs](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/en_Grunn.md)\n\n## Ce que contient la randomisation\n\n- Objets-cl\u00e9s, outils, cl\u00e9s, idoles, instruments et fragments d'\u00e2me m\u00e9lang\u00e9s dans le multimonde\n- Checks additionnels : 32 polaro\u00efds, 7 fant\u00f4mes, 7 bonnes actions, 6 t\u00e2ches d'entretien, les fins, et les 15 pi\u00e8ces avec `coinsanity`\n- 3 objectifs : `good_ending`, `true_ending` (d\u00e9faut), `all_endings`\n- Bonus progressifs (vitesse, port\u00e9e du s\u00e9cateur, cadence) et 8 pi\u00e8ges\n- DeathLink : les fins mortelles envoient la mort, en recevoir une remet le cycle \u00e0 z\u00e9ro\n- Les objets re\u00e7us sont r\u00e9inject\u00e9s automatiquement \u00e0 chaque nouveau cycle\n- Profil de sauvegarde d\u00e9di\u00e9 par seed : votre partie vanilla n'est pas touch\u00e9e\n\n## Corrections depuis la 0.1.0\n\n- **L'apworld empaquet\u00e9 ne se chargeait pas** : `data/ids.json` \u00e9tait lu avec `open()`, ce qui \u00e9choue dans une archive zip (`No functional world found to handle game Grunn`). Corrig\u00e9 via `pkgutil`.\n- **Manifest incomplet** : `compatible_version` manquait, ce qui aurait cass\u00e9 le monde \u00e0 partir d'Archipelago 0.7.0.\n- Ajout du template YAML en t\u00e9l\u00e9chargement direct.\n\n## Compatibilit\u00e9\n\nArchipelago 0.6.7 ou sup\u00e9rieur \u00b7 Grunn (Steam, Windows) \u00b7 BepInEx 5 x64\n\n---\n\nProjet non officiel, sans lien avec Sokpop Collective. Grunn est la propri\u00e9t\u00e9 de Tom van den Boogaart / Sokpop Collective. Aucun contenu du jeu n'est redistribu\u00e9 ici.\n",
+      "download_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.0.0/grunn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b94fd74cac389b1f08b694150b5e181a0b53ccbcbb1a8ffd5ba16fe90b5cd68d",
+      "html_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/tag/v1.0.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 49416,
+      "source_url": "https://api.github.com/repos/Serial-Developer/Grunnchipelago",
+      "tag": "v1.0.0",
+      "title": "Grunnchipelago 1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    }
+  }
+}
