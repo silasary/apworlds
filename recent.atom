@@ -2,67 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-06T00:28:20.386209+00:00</updated>
+  <updated>2026-08-06T07:08:11.315593+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.12.2</id>
-    <title>Slime Rancher 2 v0.12.2</title>
-    <updated>2026-08-02T21:01:00+00:00</updated>
-    <author>
-      <name>Rhelys</name>
-    </author>
-    <content>## Performance Improvement Updates&#13;
-- Added a profiler setting for diagnosing expensive behaviors that reduce the game's performance&#13;
-  - To enable the profiler, start the game once after updating the plugin - This will generate a new file at `Slime Rancher 2\BepInEx\config` called `com.archipelago.slimerancher2.cfg`. Once that's present, close the game, update the `PerfLogSeconds = 0` to a value of your choosing (0 is disabled). Repeating after that many seconds in-game, the profiler will write the mod performance to the BepInEx LogOutput for better troubleshooting.&#13;
-- Updated from frame-based to time-based throttles for spawn rate, weather, radiant slime, and research drone components&#13;
-- Removed frame-based allocation for the goal status components&#13;
-&#13;
-_In my local testing, these changes altogether improved my framerate from the ~120fps I was getting to the 144fps I was expecting. Hopefully this improves things for you all as well!_&#13;
-&#13;
-## Mod Behavior Changes&#13;
-- Fixed in-game message for the Tarr Rain trap to now say Tarr Rain instead of Slime Rain&#13;
-- Reduced the trap interaction delay from 5s to 2s&#13;
-&#13;
-_Still needed to have some kind of delay, but 5s still felt very long when I was playtesting. 2s should be safe for the item transitions without feeling too far off for players_&#13;
-&#13;
-## Bug Fixes&#13;
-- Fixed 6 of the Research Drone Archives that weren't being picked up correctly by the mod - 3 in Ember Valley, 3 in Starlight Strand&#13;
-&#13;
-&lt;img width="224" height="224" alt="image" src="https://github.com/user-attachments/assets/4f201ec1-bcc6-4e94-81c0-ae960f5c3b00" /&gt;&#13;
-</content>
-    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.12.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.6.0</id>
-    <title>Yellow Taxi Goes Vroom v0.6.0</title>
-    <updated>2026-08-02T22:37:55+00:00</updated>
-    <author>
-      <name>soopercool101</name>
-    </author>
-    <content>[Mod](https://github.com/soopercool101/YellowTaxiAP/releases/tag/v0.6.0) | [Setup Guide](https://github.com/soopercool101/Archipelago/blob/YTGV.v0.6.0/worlds/yellowtaxi/docs/setup_en.md)&#13;
-&#13;
-## v0.6.0 - The "Trap" Update&#13;
-&#13;
-- Add Maurizio's City, with full logic&#13;
-- Add Help Maurizio as a new goal&#13;
-- New options:&#13;
-  - Include Out-Of-Bounds: Adds logic for going out-of-bounds, either barely (bumping into walls to collect hidden coins) or fully&#13;
-  - Trap Fill Percent: What % of filler will be replaced by trap items&#13;
-  - Enabled Traps: Allows you to enable from a list of 16 available traps&#13;
-  - Trap Link: Allows you to receive traps from other games, and send them when received&#13;
-  - Trap Link Uses Whitelist: When enabled, enforces Trap Link to only use the "Enabled Traps" list&#13;
-  - Shop Hints: Allows creating hints when a shop screen is exited without purchasing. Defaults to progression only&#13;
-  - Easy Alien Mosk: Makes the Tosla Offices boss fight easier by spawning more Golden Springs&#13;
-  - Start Inventory From Pool: Allows you to start with items that would otherwise be shuffled. These items will be replaced by filler in the pool&#13;
-- Add new `Trap` item group for Traps&#13;
-- Various optimizations to speed up world loading and generation&#13;
-- Universal Tracker now sorts location list by region, rather than alphabetically&#13;
-- Major logic changes</content>
-    <link href="https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.6.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.0</id>
     <title>Supermarket Simulator v0.3.0</title>
@@ -739,7 +683,7 @@ Install guide and more information is in the [AP world Info Document](https://gi
   </entry>
   <entry>
     <id>https://github.com/MatthewMarinets/war3-ap-maps/releases/tag/0.0.1-release</id>
-    <title>wc3 v0.0.1.post3</title>
+    <title>wc3 v0.0.1.post4</title>
     <updated>2026-08-04T06:35:30+00:00</updated>
     <author>
       <name>MatthewMarinets</name>
@@ -753,7 +697,7 @@ This is the first release of Archipelago warcraft 3, featuring just the human ca
 * The template yaml is provided for your convenience, and also because I believe the template generated by the Archipelago launcher doesn't give the best introduction to yaml. It is formatted slightly differently, but has all the same options&#13;
 &#13;
 #### If you're playing on wc3 1.29 or older&#13;
-On older versions of Warcraft 3, you must set a registry key to allow preloader communication (which this mod uses).&#13;
+On older versions of Warcraft 3, you must set a registry key to allow preloader communication (which this mod uses). On windows, you can run the `/setup` command within the Archipelago client to set the key for you. To do it manually, or on other platforms:&#13;
 * Run regedit (On linux, you can also run regedit under the same wineprefix as your game, it's under `drive_c/windows/regedit.exe`)&#13;
 * Navigate to key `HKEY_CURRENT_USER\SOFTWARE\Blizzard Entertainment\Warcraft III`&#13;
   * If this folder doesn't already exist, make sure you've already run Warcraft 3 for the first time so it creates it&#13;
@@ -764,7 +708,7 @@ On older versions of Warcraft 3, you must set a registry key to allow preloader 
 I'm declaring this unsupported on account of being unable to start the Reforged client at all on my machine. Users have reported communication issues with reforged, I'm unable to do anything about them.&#13;
 &#13;
 #### If you're playing on Windows&#13;
-This mod assumes your documents folder is at `C:/Users/&lt;user&gt;/Documents`. If it's moved, you'll have to move it back. This often gets moved mistakenly by onedrive.&#13;
+This mod reads and writes to your documents folder. If that folder is on onedrive, it will warn you on startup.&#13;
 &#13;
 ### Known Issues&#13;
 Currently there aren't any known bugs outstanding.&#13;
@@ -1544,5 +1488,18 @@ Full patch notes of 0.4 can be found [here](https://github.com/Amphyros/Phoenoto
 - Fixed teammate objective checks (should be robuster).&#13;
 - Added WMIC fallback support for Windows system detection.</content>
     <link href="https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.3.2</id>
+    <title>The Legend of Zelda: A Link to the Past v1.3.2</title>
+    <updated>2026-08-06T04:46:25+00:00</updated>
+    <author>
+      <name>aurabot</name>
+    </author>
+    <content>v1.3.2&#13;
+&#13;
+* Fixed logic believing Bombos could be used without a sword&#13;
+* Fixed a generation error when the Bomb Shop was placed at a Desert Palace entrance</content>
+    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.3.2"/>
   </entry>
 </feed>
