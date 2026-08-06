@@ -1,9 +1,17 @@
 {
+  "authors": [
+    "Energymaster22",
+    "thedrummonger"
+  ],
   "description": "YARG is an Open-Source plastic band rhythm game! \nPlay through the YARG Official Setlist for the crowd,\nand maybe get some free items from your fans!",
   "game": "YARG",
   "github": "https://github.com/energymaster22/YARGArchipelago",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.0.1": {
       "created_at": "2025-12-22T17:22:49Z",
@@ -354,6 +362,21 @@
       "title": "0.0.9",
       "version_simple": "0.0.9",
       "world_version": "0.0.9"
+    },
+    "1.0.0": {
+      "created_at": "2026-08-05T17:56:58Z",
+      "description": "# Use Client Version 1.y.z.\r\n\r\nNew:\r\n- Added an `archipelago.json` manifest file to ensure compatibility with Archipelago 0.7.0.\r\n\r\nChanges:\r\n- Reduced Slot Data usage\r\n  - This is a ***breaking*** change and does require a client update.\r\n- This world and client will now use something similar to semantic versioning. In an x.y.z versioning number:\r\n  - x will be for changes that break compatibility between client and apworld. APWorld versions that change this number will only work with versions of the client that match.\r\n  - y will be for song/feature updates that do not break compatibility.\r\n  - z will be for small patches that do not break compatibility.\r\n\r\n\r\n## What's Changed\r\n* Pull in Whiteweek Pack by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/40\r\n* Merge pull request #46 from energymaster22/45-add-yarn-request-pack-03 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/48\r\n* Pull In setlist updates by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/51\r\n* Merge pull request #58 from energymaster22/57-add-variety-pack-1 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/59\r\n* Add Mac note to README.md by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/60\r\n* Update Readme in minimize branch by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/61\r\n* Minimize Slot Data Use by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/62\r\n* Added archipelago.json by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/64\r\n\r\n\r\n**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.25...1.0.0",
+      "download_url": "https://github.com/energymaster22/YARGArchipelago/releases/download/1.0.0/yarg.apworld",
+      "has_manifest": true,
+      "hash_sha256": "da52eb1a11d4bce0cdf0478f9bdc808ef955e24c90044220a0b52d53a32aab27",
+      "html_url": "https://github.com/energymaster22/YARGArchipelago/releases/tag/1.0.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 33639,
+      "source_url": "https://api.github.com/repos/energymaster22/YARGArchipelago",
+      "tag": "1.0.0",
+      "title": "1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
     }
   }
 }

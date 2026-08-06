@@ -2,138 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-05T18:45:01.352507+00:00</updated>
+  <updated>2026-08-06T00:28:20.386209+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.2</id>
-    <title>Ori and the Will of the Wisps v0.6.2</title>
-    <updated>2026-08-02T19:34:29+00:00</updated>
-    <author>
-      <name>Satisha</name>
-    </author>
-    <content>**Add support for glitched logic in Universal Tracker.**&#13;
-The behavior can be configured via the `ut_config` option (see the option documentation).&#13;
-### Logic bugfix&#13;
-- Fix sentry jumps (both variants) not working in the logic.&#13;
-- Fix glitched paths sometimes requiring more skills than expected.</content>
-    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.3</id>
-    <title>Ys Origin v1.9.2r3</title>
-    <updated>2026-08-02T20:08:17+00:00</updated>
-    <author>
-      <name>4rtefakt</name>
-    </author>
-    <content>&gt; 🧪 **Still a beta.** Requires **Archipelago 0.6.7 or newer**. Two live-reported fixes on top of [beta 2](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.2); see [beta 1](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.1) for the full 2.0 change list.
-
-## 🏪 The statue list no longer collapses to one item
-
-Every row in the goddess-statue blessing list showed the **same** item, and buying that one row read as *[Done]* for all of them — locking you out of the rest of the blessings.
-
-The row-to-location map was keyed by price, and it assigned every entry whose randomized cost matched a shop slot. So any blessings that happened to be **priced the same** all collapsed onto whichever slot came last. Vanilla-price collisions were already handled world-side; randomized-price collisions weren't — and they're common, since a narrow `blessing_cost_min`/`max` range (or the two being equal) makes every row identical. Each slot is now claimed at most once, so every row keeps its own location no matter how the prices land.
-
-If you were hit by this, the fix applies as soon as you reconnect — nothing in your save is wrong, it was only ever a display/lookup problem.
-
-## 🔌 A dropped connection no longer duplicates your consumables
-
-Reconnecting handed out **another copy of every counted item** — and restored ones you'd already spent.
-
-The server re-sends your whole item list on connect, and we replay it to rebuild state. That's idempotent for boolean key items (a set to 1), but not for the three counted cells — **Roda Fruit, Cleria Ore, Celcetan Panacea** — nor for the elemental skill levels, which *add* rather than set. So every reconnect topped them all up, including fruits you'd already fed to a Roo. Counted cells are now skipped on replay, the same rule the SP and trap branches already used: spendable state lives in your save and isn't safe to re-apply.
-
-**If your counts are already inflated, this build won't shrink them** — it only stops further growth. Nothing is broken by having extra; feed the spares to a Roo or drink them.
-
-*Both reported by **pokemonfan1937** &lt;3*
-
-## ⚠️ Reported and NOT fixed here
-
-- **A check firing for the wrong location** — sending the Crimson Lotusblade check while receiving a Progressive Fire Skill from an unrelated chest. That location detects on a story flag, not on the artifact cell the skill grant writes, so the obvious mechanism isn't it and I don't want to guess. **If you hit this, please send `yso_ap_mod.log` from your `%TEMP%` folder** — the sweep logs a line every time it fires a location the normal path didn't, which should name the culprit.
-
-## 🐞 Known, still open
-
-- **Devil's Corridor and the 23F mirror are under-gated in logic.** Passing the corridor needs the Roo trade (a Roda Fruit), and the mirror into the Hall of Reflection needs the **Rod** — neither is modelled. The Rod one can in principle produce an unwinnable seed, since the Hall of Reflection leads to the endgame. Both need a generation pass, not a quick data edit.
-- **Suppressed vanilla state-changes still play their dialogue.** Killing the three Zelkarons announces "the Evil Ring is charged" when it wasn't — the real Evil Ring is a pool item, and receiving it is what opens the Rado's Annex door. The logic is correct; the message is a lie, and it sends you hunting a bug that isn't there.
-- **26 location flags double as story-scene state**, which can fire checks you never earned.
-
----
-
-**Install:** drop `ys_origin.apworld` in `custom_worlds/`, `dinput8.dll` next to `yso_win.exe`. The apworld is unchanged since beta 1 — if you have it already, only the DLL needs replacing.
-</content>
-    <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mitchell1711/Archipelago/releases/tag/v0.3.2</id>
-    <title>Shovel Knight Pocket Dungeon v0.3.2</title>
-    <updated>2026-08-02T20:24:41+00:00</updated>
-    <author>
-      <name>Mitchell</name>
-    </author>
-    <content># Shovel Knight Pocket Dungeon Archipelago v0.3.2&#13;
-&#13;
-[Setup](https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md) | [Mod Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702)&#13;
-&#13;
-### Changes&#13;
-- Savefiles not created by the client that loaded the mod don't get interpreted as AP savefiles anymore&#13;
-- Solo character runs now work properly without tripping up generation&#13;
-- Make fuzzer happy</content>
-    <link href="https://github.com/Mitchell1711/Archipelago/releases/tag/v0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.4</id>
-    <title>Ys Origin v1.9.2r2</title>
-    <updated>2026-08-02T20:45:58+00:00</updated>
-    <author>
-      <name>4rtefakt</name>
-    </author>
-    <content>&gt; 🧪 **Still a beta.** Requires **Archipelago 0.6.7 or newer**.
-&gt;
-&gt; ⚠️ **Unlike beta 3, this one includes a new `ys_origin.apworld` — copy both files.** The generation fix below only exists in the apworld.
-&gt;
-&gt; **Already mid-run on a beta 3 seed?** Just take the DLL. It carries every mod-side fix *and* derives the Evil Ring fix locally, so it is correct against a beta 3 apworld too — you do not need to reroll your seed. The apworld matters for seeds you generate from now on.
-
-See [beta 1](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.1) for the full 2.0 change list, and [beta 3](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.3) for the statue-list and reconnect-duplication fixes (both included here).
-
-## 💍 The drained Evil Ring no longer clutters your inventory
-
-The game stores the Evil Ring under **two** ids — one *"emits a power"*, one *"its power seems to have been drained"*. The Mask-of-Eyes chest gives you the drained one, and killing the three Zelkarons upgrades it in place to the charged one, which is what the Rado's Annex door checks.
-
-Only the charged id was ever suppressed, so the chest still handed out the **drained** ring: an item that can never be charged (the upgrade targets the suppressed id) but looks exactly like the real thing in your inventory. Now you simply never see it — receiving the AP Evil Ring grants the charged one and the door opens, which is how it already worked.
-
-This is applied from *both* sides, so an updated DLL fixes it even on an older seed.
-
-## 🎲 Some option combinations couldn't generate at all
-
-```
-Fill.FillError: Not enough filler items for excluded locations.
-There are 16 more excluded locations than excludable items.
-```
-
-Provisional locations are marked filler-only, and Archipelago enforces that by requiring one filler item per such location. Certain option sets made the arithmetic impossible — turning statue/blessing/floor checks **off** while leaving room checks **on** removes the categories that supply filler but keeps all 166 scene-detected locations, and `weapon_requirements` / `random_start` promote further items to progression on top.
-
-The filler-only marking is a precaution, not a correctness requirement, so generation now drops the *minimum* number of those markings instead of failing. Scene-detected locations go first — they do detect live; they're simply the ones confirmed most recently.
-
-## 🔬 New: a seed fuzzer
-
-`tools/fuzz_seeds.py` draws options independently and generates N seeds against a real Archipelago checkout. The hand-written test configs only ever covered combinations we thought of — which is exactly why the statue list collapsing shipped in two betas: every playtest used a wide shuffled price range, so a seed where blessings priced *identically* was never generated.
-
-The fuzzer includes deliberately degenerate cases (a flat `500–500` band makes every blessing cost the same). It found the FillError above on its 16th seed. **40 randomized seeds now generate and pass Archipelago's own beatability check.**
-
-## 🐞 Known, still open
-
-- **Devil's Corridor and the 23F mirror are under-gated in logic.** Passing the corridor needs the Roo trade (a Roda Fruit); the mirror into the Hall of Reflection needs the **Rod**. Neither is modelled, and the Rod one could in principle produce an unwinnable seed.
-- **Suppressed vanilla state-changes still play their dialogue** — killing the three Zelkarons announces "the Evil Ring is charged" when it wasn't. The logic is correct; the message is a lie.
-- **26 location flags double as story-scene state**, which can fire checks you never earned.
-- **A check firing for the wrong location** (reported on beta 2, not reproduced). If you hit it, please send `yso_ap_mod.log` from `%TEMP%`.
-
----
-
-**Install:** `ys_origin.apworld` into `custom_worlds/`, `dinput8.dll` next to `yso_win.exe`.
-</content>
-    <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.12.2</id>
     <title>Slime Rancher 2 v0.12.2</title>
@@ -1561,6 +1434,44 @@ Latest (main) releases are recommended, as pre-releases (staging) may contain ex
     <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-odd-couple/v0.0.3"/>
   </entry>
   <entry>
+    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/1.0.0</id>
+    <title>YARG v1.0.0</title>
+    <updated>2026-08-05T17:56:58+00:00</updated>
+    <author>
+      <name>Energymaster22</name>
+    </author>
+    <author>
+      <name>thedrummonger</name>
+    </author>
+    <content># Use Client Version 1.y.z.&#13;
+&#13;
+New:&#13;
+- Added an `archipelago.json` manifest file to ensure compatibility with Archipelago 0.7.0.&#13;
+&#13;
+Changes:&#13;
+- Reduced Slot Data usage&#13;
+  - This is a ***breaking*** change and does require a client update.&#13;
+- This world and client will now use something similar to semantic versioning. In an x.y.z versioning number:&#13;
+  - x will be for changes that break compatibility between client and apworld. APWorld versions that change this number will only work with versions of the client that match.&#13;
+  - y will be for song/feature updates that do not break compatibility.&#13;
+  - z will be for small patches that do not break compatibility.&#13;
+&#13;
+&#13;
+## What's Changed&#13;
+* Pull in Whiteweek Pack by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/40&#13;
+* Merge pull request #46 from energymaster22/45-add-yarn-request-pack-03 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/48&#13;
+* Pull In setlist updates by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/51&#13;
+* Merge pull request #58 from energymaster22/57-add-variety-pack-1 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/59&#13;
+* Add Mac note to README.md by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/60&#13;
+* Update Readme in minimize branch by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/61&#13;
+* Minimize Slot Data Use by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/62&#13;
+* Added archipelago.json by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/64&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.25...1.0.0</content>
+    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/1.0.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.0</id>
     <title>Refunct v1.3.0</title>
     <updated>2026-08-05T17:57:23+00:00</updated>
@@ -1587,5 +1498,51 @@ Latest (main) releases are recommended, as pre-releases (staging) may contain ex
 - When connecting, it now shows that it is still connecting instead of pretending it worked.&#13;
 - Removed a jump from logic that was very tight (22-1 -&gt; 22-2).</content>
     <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Wakamu/Archipelago/releases/tag/0.3.20</id>
+    <title>Archipelago Visual Tracker v0.3.20</title>
+    <updated>2026-08-05T19:16:00+00:00</updated>
+    <author>
+      <name>Wakamu</name>
+    </author>
+    <content>**Fixes**:&#13;
+- Client failing to launch when using shortcut.</content>
+    <link href="https://github.com/Wakamu/Archipelago/releases/tag/0.3.20"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.4.1</id>
+    <title>Phoenotopia: Awakening v0.4.0r2</title>
+    <updated>2026-08-05T20:38:51+00:00</updated>
+    <author>
+      <name>Lenamphy</name>
+    </author>
+    <author>
+      <name>ET_is_here</name>
+    </author>
+    <author>
+      <name>fight4day</name>
+    </author>
+    <content>&lt;h1&gt;0.4.1 - Bug fixes:&lt;/h1&gt;&#13;
+&#13;
+- Progressive Prelude of Panselo no longer causes a LoadLevel error.&#13;
+- Grabbing regular loot in screens that do not include an AP check no longer causes an error.&#13;
+&#13;
+Full patch notes of 0.4 can be found [here](https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.4.0).</content>
+    <link href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.5</id>
+    <title>League of Legends v0.2.5</title>
+    <updated>2026-08-05T22:53:56+00:00</updated>
+    <author>
+      <name>kbab</name>
+    </author>
+    <content>- Contributions from '@Fghtk':&#13;
+  - Fixed champions with 'Jade_' Data Dragon variants showing as locked.&#13;
+  - Added 'item_name_group' called 'Champions' so you can hint all of your champion unlock items.&#13;
+- Fixed teammate objective checks (should be robuster).&#13;
+- Added WMIC fallback support for Windows system detection.</content>
+    <link href="https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.5"/>
   </entry>
 </feed>
