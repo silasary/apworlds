@@ -2,288 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-07T06:35:14.199901+00:00</updated>
+  <updated>2026-08-07T12:23:05.473170+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.0</id>
-    <title>Parkitect v1.6.0</title>
-    <updated>2026-08-04T07:55:27+00:00</updated>
-    <author>
-      <name>CrusherRL</name>
-    </author>
-    <content>Installation instructions can be found [[here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)].&#13;
-&#13;
-Enjoy!&#13;
-&#13;
-&gt; **Notes**&#13;
-&gt;&#13;
-&gt; * This release is **not** backward compatible with seeds generated **before v1.2.1**.&#13;
-&gt; * This release **may not** be fully compatible with seeds generated **before v1.5.0**.&#13;
-&gt; * `Archipelago.MultiClient.Net.dll` is no longer required—it is now bundled with the mod.&#13;
-&gt; * The `Linux`, `macOS`, and `Windows` folders must be replaced when updating.&#13;
-&#13;
-# Parkitect Archipelago — Release Notes&#13;
-&#13;
-## Features&#13;
-&#13;
-* Bundled all required DLLs. Only `Archipelago.dll` is now required (`Archipelago.MultiClient.Net.dll` can be removed from the `Mods` folder).&#13;
-* Updated the Archipelago window:&#13;
-&#13;
-  * Added **Challenges** and **EnergyLink** tabs.&#13;
-* Added **EnergyLink**.&#13;
-* Added new challenges:&#13;
-&#13;
-  * "Have x Amount of `Rides`"&#13;
-  * "Have x Amount of `Drinks`"&#13;
-  * "Have x Amount of `Food`"&#13;
-  * "Have x Amount of `Non-Food + Non-Drink Shops`" (Facilities)&#13;
-* Expanded and updated challenge requirements:&#13;
-&#13;
-  * Total Profit for `Rides` + `Ride Type` and `Shops` + `Shop Type`&#13;
-  * Total Revenue for `Ride Type` and `Shop Type`&#13;
-  * Photos sold for `Coaster Type` and `Coaster` itself&#13;
-  * redeemed Vouchers for `Drinks`, `Food` and `Rides` + `Ride Types`&#13;
-* Improved challenge descriptions for better readability.&#13;
-* Increased the chance of guests being affected when a trap is activated (previously fixed at 20% and 30%).&#13;
-* Added new commands for **Release Mode** (completed challenges are removed):&#13;
-&#13;
-  * `!!toggleReleaseMode` – Toggle Release Mode.&#13;
-  * `!!enableReleaseMode` – Enable Release Mode.&#13;
-  * `!!disableReleaseMode` – Disable Release Mode.&#13;
-* Added the **TrapLink Trap** from GTA: San Andreas.&#13;
-* Updated the README with new documentation.&#13;
-* Added new AP World options:&#13;
-&#13;
-  * `early_toilets`&#13;
-  * `early_cash_machine`&#13;
-  * `early_first_aid_room`&#13;
-  * `early_edible_shop` – Grants a random early drink or food stall.&#13;
-  * `early_ride` – Grants a random early ride (e.g. coaster, transport ride, etc.).&#13;
-  * `early_decoration` – Grants a random decoration theme.&#13;
-  * `early_staff_room`&#13;
-  * `early_training_room`&#13;
-  * `challenge_maximum_coaster_revenue` – Challenge: Total coaster revenue.&#13;
-  * `challenge_maximum_ride_profit` – Challenge: Total ride profit.&#13;
-  * `challenge_maximum_shop_profit` – Challenge: Total shop profit.&#13;
-  * `challenge_maximum_photos` – Challenge: Photos sold.&#13;
-  * `challenge_maximum_ride_vouchers` – Challenge: Redeemed ride vouchers.&#13;
-  * `challenge_maximum_shop_vouchers` – Challenge: Redeemed shop vouchers.&#13;
-  * `release_mode` – If enabled, completed challenges are removed. This setting is applied when starting a new game but can also be changed in-game.&#13;
-* Rebalanced the probability of challenge requirements.&#13;
-* Added a command list for the TrapLink option (APWorld  YAML).&#13;
-&#13;
-## Fixes&#13;
-&#13;
-* Since the MultiClient is now bundled, all Newtonsoft dependency issues have been resolved.&#13;
-&#13;
-  * `RoomInfoPacket`, `TagsChangedPrintJsonPacket`, and `ItemPrintJsonPacket` are still ignored.&#13;
-  * Chat messages (including `/say`) and additional packet types now work correctly.&#13;
-* Fixed an issue where reconnecting to the server could freeze the game.&#13;
-* Fixed a challenge checkbug where modded shops were not counted for **Shop**-type challenges.&#13;
-* Added missing requirements for ride and shop type challenges.&#13;
-* Fixed incorrectly assigned statistic items for the following scenarios:&#13;
-&#13;
-  * `happyco_bakery`&#13;
-  * `brimstone_peak`&#13;
-  * `candyland`&#13;
-  * `celeste_mountain`&#13;
-  * `dusty_ridge_ranch`&#13;
-  * `jungle_adventure`&#13;
-  * `lakeside_gardens`&#13;
-  * `magma_falls`&#13;
-  * `technopolis`&#13;
-  * `the_broken_atoll`&#13;
-  * `victoria_island`&#13;
-  * `yucatan_ridge`&#13;
-* Removed the `STATISTICS_TOTAL_PATH_ATTACHMENTS_REPAIRED` statistic from all scenarios, as it does not exist in-game.&#13;
-* Fixed various typos.</content>
-    <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MikeFritzDevelops/ACWW-Archipelago/releases/tag/v0.1.0-alpha</id>
-    <title>Animal Crossing: Wild World v0.1.0a0</title>
-    <updated>2026-08-04T09:16:21+00:00</updated>
-    <author>
-      <name>Mike</name>
-    </author>
-    <content># Animal Crossing: Wild World Archipelago v0.1.0-alpha&#13;
-&#13;
-Welcome to the public alpha release of Animal Crossing: Wild World for Archipelago!&#13;
-&#13;
-This release contains the initial playable implementation of Animal Crossing: Wild World featuring museum-based progression, seasonal month progression, a custom BizHawk Master Controller, and PopTracker support.&#13;
-&#13;
----&#13;
-&#13;
-## Downloads&#13;
-&#13;
-### acww.apworld **(REQUIRED)**&#13;
-&#13;
-The Archipelago world file.&#13;
-&#13;
-Install by placing it into your Archipelago `custom_worlds` folder.&#13;
-&#13;
----&#13;
-&#13;
-### connector_bizhawk_acww.lua **(REQUIRED)**&#13;
-&#13;
-The Lua connector used by BizHawk to communicate with the Archipelago server.&#13;
-&#13;
-Install by placing it into your Archipelago/data/lua folder.&#13;
-&#13;
----&#13;
-&#13;
-### acww_poptracker.zip **(OPTIONAL)**&#13;
-&#13;
-Optional PopTracker package for automatic tracking.&#13;
-&#13;
----&#13;
-&#13;
-## Supported Versions&#13;
-&#13;
-- Archipelago 0.6.7 or newer&#13;
-- BizHawk 2.11.1&#13;
-- Animal Crossing: Wild World (USA) (Rev 1)&#13;
-- Game Code: ADME&#13;
-&#13;
-Additional ROM revisions are planned for future releases.&#13;
-&#13;
----&#13;
-&#13;
-## Features&#13;
-&#13;
-- Catchsanity&#13;
-- Museumsanity&#13;
-- Journal Milestones&#13;
-- Museum Percentage Milestones&#13;
-- Configurable Museum Goal&#13;
-- Month Progression&#13;
-- High-RNG Catch Progression Exclusion&#13;
-- Master Controller&#13;
-- Restore AP Progress&#13;
-- Recover Undonated Specimens&#13;
-- Reclaim Renewable Resources&#13;
-- Weed Removal&#13;
-- PopTracker Support&#13;
-&#13;
----&#13;
-&#13;
-## Documentation&#13;
-&#13;
-- [README](https://github.com/MikeFritzDevelops/ACWW-Archipelago#readme)&#13;
-- [Setup Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/setup_en.md)&#13;
-- [Game Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/game_en.md)&#13;
-- [Master Controller Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/controller.md)&#13;
-&#13;
----&#13;
-&#13;
-## Alpha Notice&#13;
-&#13;
-This is an early alpha release.&#13;
-&#13;
-Bug reports, balance feedback, and suggestions are greatly appreciated.</content>
-    <link href="https://github.com/MikeFritzDevelops/ACWW-Archipelago/releases/tag/v0.1.0-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.1</id>
-    <title>GemCraft: Frostborn Wrath v0.0.6.1</title>
-    <updated>2026-08-04T11:24:08+00:00</updated>
-    <author>
-      <name>Levisaxos</name>
-    </author>
-    <content>Relabel the LOADGAME slot badge for Archipelago slots so players running&#13;
-multiple asyncs can tell them apart at a glance. Each AP slot's four native&#13;
-text fields are relabelled in place (nothing moved or hidden):&#13;
-    host:port&#13;
-    slotName&#13;
-    Wizard Level xxx&#13;
-    Fields explored: yyy</content>
-    <link href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.7</id>
-    <title>Dead Cells v0.1.7</title>
-    <updated>2026-08-04T11:53:05+00:00</updated>
-    <author>
-      <name>Max_lamenace572</name>
-    </author>
-    <author>
-      <name>OnlyLeafeon</name>
-    </author>
-    <author>
-      <name>Rayze</name>
-    </author>
-    <content>New Features:&#13;
-- New Save system:&#13;
-  - Increased the number of save slots to 99&#13;
-  - You can now duplicate saves without the issue of receiving items only on one&#13;
-  - Now the seed in the save is checked against the server seed, avoiding launching a wrong save&#13;
-  - You cannot launch a new save without being connected (and you can still play offline on existing saves)&#13;
-  - New global save, shared with other saves with the same seed. So the following will now be linked:&#13;
-    - The progression for each item in the Collector shop&#13;
-    - The forge's progression&#13;
-    - Cells&#13;
-    - Boss kill count (used for the boss heads)&#13;
-  - And on that note, you can save and duplicate in the transition before a boss biome if you want to quickly take every loot available&#13;
-- New Bank system:&#13;
-  - Bank Unlock is now an item, and the Bank can spawn only when it is received&#13;
-  - The Bank won't spawn if the next biome is a boss&#13;
-  - You need to have entered any biome of the same world depth you want the Bank to spawn in&#13;
-    - Even though you don't need to have taken an exit in this world depth to spawn the Bank, if you don't have any, the transition after the Bank won't have exits&#13;
-  - If the Bank can spawn, it will appear at each transition until you enter it. It's still once per run.&#13;
-- Added a new option that gives epic scrolls when beating a boss without taking a hit (based on Rayze's gameplay idea)&#13;
-&#13;
-Gameplay Changes:&#13;
-- Changed Scissor, Comb, Green Hole, Red Hole, Dark Vortex, Spatial Anomaly and Fisherman Hood. Their requirements will now be based on the locations checked, not items received and unlocked anymore.&#13;
-  - Spatial Anomaly head count is now 35-&gt;33, so every head for BSC lower than 5&#13;
-  - Fisherman Hood head count is now 40-&gt;38, so every head on BSC 5&#13;
-&#13;
-Quality of Life:&#13;
-- Scrolls are now displayed at the top of the filler inventory&#13;
-&#13;
-Bug Fixes:&#13;
-- Goal set to 4 BSC if always launching the game in the same specific way&#13;
-- Stabilized connection with links, causing timeout or disconnection crashes&#13;
-- Tentacle cinematic giving the crown key again in some cases&#13;
-- Boss rush being wrongly open in specific cases&#13;
-- Start run items not being given again after a win&#13;
-- Servants flawless outfit and loot gen not working correctly&#13;
-- Rare logger issue where logs aren't shown&#13;
-- Receiving boss rush doesn't make it appear in the history&#13;
-- Sometimes the switch menu button disappearing&#13;
-- Disabled background of pokebomb still displayed when charges are bought in the AP shop&#13;
-- Crash when entering Richter Mode&#13;
-&#13;
-Apworld Changes:&#13;
-- Added rule for the Flawless Torch&#13;
-- Changed White Hole rule, now logically requires Cursed Flask&#13;
-- Added new location/item logic for the Cavern Key, Boss Rush Statue, 2nd Dracula Castle Unlock, Training Room Key, and Richter Mode&#13;
-- Checks from enemies in the bank now have world depth logic&#13;
-&#13;
-Rayze's Changes:&#13;
-- Fixed multiple AP names not matching the game's names&#13;
-- Fixed issue with max BSC location for UT&#13;
-- Fixed Dancers being in Undying Shores logic&#13;
-- Fixed Extended Healing missing Teleport Rune rule&#13;
-- Fixed War Javelin missing Homunculus and Spider Rune rules&#13;
-&#13;
-Compatible with apworld 0.1.7 only</content>
-    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.1</id>
-    <title>SM64: Spicy Mycena 64 v0.2.0r2</title>
-    <updated>2026-08-04T15:17:33+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>- Fixed a generation crash with certain option combinations.&#13;
-- Fixed TOTWC being improperly classified as Filler when Blocksanity is disabled and the Coin Mastery trick is enabled with non-permanent-coins.&#13;
-- THI non-permanent-coin logic fixes.</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.1"/>
-  </entry>
   <entry>
     <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.04</id>
     <title>Northgard v2026.8.4</title>
@@ -1416,5 +1139,102 @@ And a whole lot of internal changes, optimizations and improvements (as implied 
 sm64ex updates:&#13;
 - Whomps' and Merry-go-round Boos' coins should function correctly on Permanent Coins mode.</content>
     <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-98</id>
+    <title>Borderlands 2 v98</title>
+    <updated>2026-08-07T06:32:30+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.4):&#13;
+- fix UT connection issue (hopefully)&#13;
+- infinite backpack as yaml setting&#13;
+- AP travels in fast travel menu &#13;
+- new setting to remove symbols without removing cult of the vault challenges&#13;
+- named enemy locations toggleable&#13;
+- level up checks toggleable (need more options for this in the future)&#13;
+- slot name + seed for .items.txt file&#13;
+- migrate blgstor to settings dir (sdk_mods/settings/blgstor)&#13;
+- rigged slots purchaseable from earl&#13;
+- rigged slots are 1 spin and work for Torgue/Flamerock slots&#13;
+- logic fixes&#13;
+- rulebuilder refactor&#13;
+- some coop things working: loot spawns, sprint, equip blocking, travel commands (chat and fast travel station)</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-98"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7</id>
+    <title>CrossCode v0.9.7</title>
+    <updated>2026-08-07T06:57:16+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content>## Changes to Logic&#13;
+&#13;
+* Changed logic in **Faj'ro Temple** and **So'najiz Temple** to be more in line with the open world mod (@Valkhiya, #95).&#13;
+* Changed chests that block chest key gates so that they once again require the key that opens them (@CodeTriangle, #96).&#13;
+* **Faj'ro 3F: Large Fire Chamber Left** no longer requires a silver key in addition to a bronze key (@CodeTriangle, #96).&#13;
+&#13;
+## Changes to Generation&#13;
+&#13;
+* **Circuit Override** items are now classified as Useful instead of Progression after notable user feedback  (@CodeTriangle, #97).&#13;
+* Only 3 **Faj'ro Key** items are shuffled, in accordance with the recent changes to the open world mod (@CodeTriangle, #97).</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.10</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.10</title>
+    <updated>2026-08-07T09:47:32+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.10&#13;
+&#13;
+**Branch:** main&#13;
+**Date:** 2026-08-07 10:07 UTC&#13;
+&#13;
+&lt;details&gt;&#13;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.9&lt;/strong&gt;&lt;/summary&gt;&#13;
+&#13;
+- fix: forced starting planet including ryllus (322ab35f)&#13;
+- fix(size matters): update docs (847de01d)&#13;
+- feat(size matters, dynamic pine): reverted pypine to submodules and giant clank/forced loads are now handled (7e785a60)&#13;
+- feat: no more submodules thank fk (cc551230)&#13;
+&#13;
+&lt;/details&gt;&#13;
+&#13;
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.9...rac-size-matters/v0.4.10&#13;
+&#13;
+### Notes&#13;
+This release was automatically generated from the **main** branch.&#13;
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
+</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.7.1</id>
+    <title>Bloons TD6 v0.7.1</title>
+    <updated>2026-08-07T12:08:47+00:00</updated>
+    <author>
+      <name>Matt41321</name>
+    </author>
+    <content>## Added&#13;
+- New Tower Skywarden&#13;
+- New map Ascent</content>
+    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.7.1"/>
   </entry>
 </feed>
