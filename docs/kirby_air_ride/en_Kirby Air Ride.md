@@ -243,7 +243,9 @@ Configure it in the in-game settings menu.
 
 ### Reveal checklists
 
-With "Reveal Checklists" enabled, the checklists for each of your enabled modes start fully revealed instead of hidden.
+Each mode has its own "Reveal Checklist" option ("City Trial Reveal Checklist", "Air Ride Reveal Checklist", "Top Ride Reveal Checklist", "Archipelago Reveal Checklist"). With one enabled, that checklist starts fully revealed instead of filling in around the squares you complete, so you can read every objective from the start. On the Archipelago checklist only the squares that carry an objective are revealed.
+
+Revealing is visual only - it does not complete or unlock anything.
 
 ### Drop ability
 

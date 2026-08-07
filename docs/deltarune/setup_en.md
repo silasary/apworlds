@@ -1,9 +1,11 @@
 # DELTARUNE Archipelago Setup Guide
 
+## This setup guide is for the Chapter 5 beta releases. Looking for the v2.0.6 setup guide? Click [here](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.0.6/worlds/deltarune/docs/setup_en.md).
+
 ## Required Software
 
 - DELTARUNE from the [Steam page](https://store.steampowered.com/app/1671210/)
-  - (`download_depot 1671210 1671212 2054633419585385858`)
+  - If you want to use a Steam depot instead of a Steam install, use (`download_depot 1671210 1671212 2054633419585385858`)
 - Archipelago from the [Archipelago Releases Page](https://github.com/ArchipelagoMW/Archipelago/releases)
   - Require minimum 0.6.7
 - DELTARUNE APWorld from the [Releases Page](https://github.com/theemeraldsword85/DELTARUNEAP/releases)

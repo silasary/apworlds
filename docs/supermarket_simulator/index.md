@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.0/supermarket_simulator.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.1/supermarket_simulator.apworld">Latest Version (0.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -14,5 +14,6 @@
 ## Notes
 
 - Run the client as Administrator (required for memory access).
-- The randomiser is locked to save slot 2 -- start a brand new game there before connecting. Slots 1, 3, and 4 are never touched.
+- The randomizer is locked to save slot 2 - start a brand new game there before connecting. Slots 1, 3, and 4 are never touched.
+- Bug Net, Snaxscope, and Snaktivator are not part of the item pool - not yet implemented.
 - The goal is beating the game (reaching the credits) AND collecting your configured (in yaml settings) Golden Snax count.

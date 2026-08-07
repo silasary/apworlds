@@ -1,9 +1,12 @@
 # Idle Loops
 
 ## Latest
-- <a href="https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.1/idleloops.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.2/idleloops.apworld">Latest Version (0.4.2)</a>
 
 ## All Versions
+
+#### v0.4.2
+- <a href="https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.2/idleloops.apworld">https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.2/idleloops.apworld</a>
 
 #### v0.4.1
 - <a href="https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.1/idleloops.apworld">https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.1/idleloops.apworld</a>

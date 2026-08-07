@@ -15,11 +15,10 @@ Optionally, Levelups and Trade Vouchers may also send locations.
 
 ## Which items can be in another player's world?
 
-Any of the items which can be shuffled may also be placed into another player's world. It is possible to choose to limit
-certain items to your own world.
+Any of the items which can be shuffled may also be placed into another player's world.
 
 ## When the player receives an item, what happens?
 
 General items like weapons, armors, and healers will simply be put into your inventory.
 Party members will instantly be added to your party.
-The B.B. Shops and the Interior Walls entrance will automatically appear once recieved.
+The B.B. Shops and the Interior Walls entrance will automatically appear once received.

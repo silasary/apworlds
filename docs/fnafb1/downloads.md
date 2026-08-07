@@ -1,9 +1,12 @@
 # Five Nights at Fuckboy&#x27;s
 
 ## Latest
-- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v1.0.0/fnafb1.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/fnafb1-1.1.0/fnafb1.apworld">Latest Version (1.1.0)</a>
 
 ## All Versions
+
+#### v1.1.0
+- <a href="https://github.com/Scrungip/FNaFBAP/releases/download/fnafb1-1.1.0/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/fnafb1-1.1.0/fnafb1.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Scrungip/FNaFBAP/releases/download/v1.0.0/fnafb1.apworld">https://github.com/Scrungip/FNaFBAP/releases/download/v1.0.0/fnafb1.apworld</a>

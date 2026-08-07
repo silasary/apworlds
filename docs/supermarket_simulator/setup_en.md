@@ -2,76 +2,83 @@
 
 ## Required Software
 
-*   **Supermarket Simulator** on [Steam](https://store.steampowered.com/app/2670630/Supermarket_Simulator/). The Archipelago mod has been tested on version **1.4.2** and newer.
-*   **BepInEx 6 (Unity IL2CPP version)**. This is the modding framework required to load the Archipelago client mod into the game.
-*   The **Supermarket Simulator Archipelago Client Mod**. You can download the latest release from the [GitHub Releases page](https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases).
+* **Supermarket Simulator** on [Steam](https://store.steampowered.com/app/2670630/Supermarket_Simulator/). Tested on version **1.5.3**.
+* **BepInEx 6 (Unity IL2CPP x64 version)**. Modding framework required to load the client mod into the game. Confirmed working version: **BepInEx 6.0.0-be.785-6abdba4** (Unity IL2CPP for Windows x64).
+* **Supermarket Simulator Archipelago Client Mod & APWorld**. Available from the [GitHub Releases page](https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases).
 
-## Installation Procedures
+## Installation
 
-### Setup
+### 1. Install BepInEx 6
+1. Download **BepInEx 6 (Unity IL2CPP for Windows x64)** from the [official repository](https://github.com/BepInEx/BepInEx). Currently, the **IL2CPP** version is only available through the [Bleeding Edge Releases](https://builds.bepinex.dev/projects/bepinex_be). Not the **Mono** version! 
+2. Extract all files from the BepInEx `.zip` archive directly into your main **Supermarket Simulator** game folder (where `Supermarket Simulator.exe` is located).
 
-1.  Download the [**BepInEx 6 (Unity IL2CPP x64)**](https://github.com/BepInEx/BepInEx) (Currently Bleeding Edge Build) release.
-2.  Extract the contents of the `.zip` archive directly into your main **Supermarket Simulator** installation folder (the directory containing `Supermarket Simulator.exe`).
-3.  Launch the game once to allow BepInEx to generate its folder structure, then close the game.
-4.  Download the latest release of the **Supermarket Simulator Archipelago Mod** from the [GitHub Releases page](https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases).
-5.  Copy `SupermarketSimArchipelago.dll` and the other two required dependency `.dll` files (`Archipelago.MultiClient.Net.dll` and `Newtonsoft.Json.dll`) directly into the `<GameDir>/BepInEx/plugins/` folder.
-6.  You can configure your credentials by editing `<GameDir>/BepInEx/config/com.lemix028.supermarketsimulator.archipelago.cfg` in a text editor.
+### 2. Install the Mod and APWorld
+1. Download the latest release from the [GitHub Releases page](https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases). Both the client mod (SupermarketArchipelago_Client_vX.X.X.zip ) and the Archipelago world package (.apworld) are available there.
+2. Open your game's directory and navigate to `BepInEx/plugins/`. (If the folder doesn't exist, run the game once to let BepInEx generate it, or create it manually).
+3. Extract `SupermarketSimArchipelago.dll` and its required dependency `.dll` files into the `plugins/` folder.
+4. Place the downloaded `.apworld` file in your Archipelago custom worlds directory: `C:\ProgramData\Archipelago\custom_worlds`
 
+---
 
-### Where do I get a config file?
+## Connection & Setup
 
-The Player Options page on the website allows you to configure your personal options and export a config file from them. Player options page: [Supermarket Simulator Player Options Page](../player-options)
+You can set up your Archipelago connection credentials directly in-game or via the configuration file.
 
-## Generating a Single-Player Game
+### 1. Connecting In-Game (Recommended)
+1. Launch **Supermarket Simulator**.
+2. Click the **AP Server Connect** button in the main menu to open the connection details window.
+3. Enter your connection details:
+   * **Server Address**: The address of your Archipelago server (e.g., `archipelago.gg:38281`). You can use **Ctrl+V** to paste directly from your clipboard.
+   * **Slot Name**: Your player slot name as configured in your YAML.
+   * **Password**: The password for the room (leave blank if none).
+4. Click **Connect & Save**. The credentials will be saved automatically, and the mod will attempt to connect.
+5. Once connected, your status and goal progress will be displayed in the **Connection HUD** in the top-left corner of the screen. You can now load your save game or start a new one!
 
-1.  Navigate to the Player Options page, configure your options, and click the "Generate Game" button.
-    *   Player Options page: [Supermarket Simulator Player Options Page](../player-settings)
-2.  You will be presented with a "Seed Info" page.
-3.  Click the "Create New Room" link.
-4.  You will be presented with a server page, which contains the **Server Address** (IP:Port) for your room.
-5.  Launch **Supermarket Simulator**.
-6.  Click the **AP Server Connect** button in the main menu to open the **Archipelago Connection Details** login menu.
-7.  Fill in your connection details:
-    *   **Server Address**: The room's server address (e.g. `archipelago.gg:38281`). You can use **Ctrl+V** to paste this directly from your clipboard.
-    *   **Slot Name**: Your exact player slot name (case-sensitive). Press **Tab** to switch focus between fields.
-    *   **Password**: Room password (leave blank if none).
-8.  Click **Connect & Save**. The mod will save these details to your config file and attempt connection.
-    *   *Alternative*: You can still pre-configure your credentials by editing `<GameDir>/BepInEx/config/com.lemix028.supermarketsimulator.archipelago.cfg` directly in a text editor before launching the game, then click the connect button to connect immediately.
-9.  Once connected, you can start playing your game immediately.
+### 2. Alternative: Editing the Config File
+If you prefer, you can pre-configure your credentials before launching the game:
+1. Launch the game once so BepInEx can generate the config file, then close the game.
+2. Open `<GameDir>/BepInEx/config/com.lemix028.supermarketsimulator.archipelago.cfg` in a text editor.
+3. Fill in your server details:
+   ```ini
+   [Archipelago]
+   ServerAddress = archipelago.gg:38281
+   SlotName = PlayerName
+   Password = 
+   ```
+4. Save the file and start the game. Click **AP Server Connect** in the Main Menu to open the login UI with these details pre-filled, then click **Connect** to establish the connection.
+    
+---
 
-## Joining a MultiWorld Game
+## Creating & Configuring Your YAML File
 
-### Obtain your connection details
+1. Ensure `supermarket_simulator.apworld` is placed in your `custom_worlds/` folder.
+2. Open the **Archipelago Launcher** and click **Generate Templates Options** to create the default `Supermarket Simulator.yaml` template in your `Players/templates/` directory (or copy the template included with the release).
+3. Open the `.yaml` file in a text editor to configure your desired settings (e.g. victory goal, customer checkout locations/chance, price randomization, DLC options, multipliers).
+4. Save your finished `.yaml` file into the Archipelago `Players/` folder.
 
-When you join a multiworld game, you will be asked to provide your config file to whoever is hosting. Once the game has been generated, the host will provide you with the **Server Address** (IP:Port), your **Slot Name**, and a **Password** (if configured).
+---
 
-### Connect to the server
+## Generating a Game (Single-Player or MultiWorld)
 
-1.  Launch **Supermarket Simulator**.
-2.  Click the **AP Server Connect** button in the main menu to open the **Archipelago Connection Details** login menu.
-3.  Enter the connection details provided by the host:
-    *   **Server Address**: The host's server address (e.g. `archipelago.gg:38281`). (Ctrl+V paste supported!)
-    *   **Slot Name**: Your exact player slot name (case-sensitive). (Tab to navigate fields!)
-    *   **Password**: Room password (leave blank if none).
-4.  Click **Connect & Save**. 
-    *   *Alternative*: You can also fill in these details in `<GameDir>/BepInEx/config/com.lemix028.supermarketsimulator.archipelago.cfg` directly in a text editor, save, launch the game, and connect.
-5.  The connection HUD in the top-left corner of the screen will confirm your status.
+1. Place `supermarket_simulator.apworld` into your Archipelago `custom_worlds/` directory (located in `C:\ProgramData\Archipelago\custom_worlds` or your local Archipelago installation folder).
+2. Place all participating player configuration files (`.yaml`) into the Archipelago `Players/` directory.
+3. Open the **Archipelago Launcher** and click **Generate** (or run `ArchipelagoGenerate.exe`).
+4. Once generation completes, an output `.zip` file (e.g. `AP_12345.zip`) will be created in your `output/` folder.
 
-### Play the game
+---
 
-When the HUD shows you as connected, you are ready to begin playing. Congratulations on successfully joining a multiworld game!
+## Hosting
 
-## Hosting a MultiWorld game
+You can host your generated `.zip` file using either the Archipelago Website or a Local Server:
 
-The process to host a game is relatively simple:
+### Option A: Hosting via Archipelago Website (Recommended)
+1. Go to the [Archipelago Seed Upload Page](https://archipelago.gg/uploads) on the website.
+2. Upload your generated `.zip` file (e.g. `AP_12345.zip`).
+3. Click **Create Room** to generate your online multiworld room.
+4. Copy the room's **Server Address** (IP:Port) from the room page.
 
-1.  Collect config files from your players.
-2.  Create a zip file containing your players' config files.
-3.  Upload that zip file to the Generate page.
-    *   Generate page: [WebHost Seed Generation Page](/generate)
-4.  Wait a moment while the seed is generated.
-5.  When the seed is generated, you will be redirected to a "Seed Info" page.
-6.  Click "Create New Room". This will take you to the server page. Provide the link to this page or the connection credentials (IP:Port) to your players.
-7.  Note that a link to a MultiWorld Tracker is at the top of the room page. The tracker shows the progress of all players in the game. Any observers may also be given the link to this page.
-8.  Once all players have joined, they may begin playing.
+### Option B: Hosting Locally
+1. Open the **Archipelago Launcher** and select **Host Server** and select your `AP_12345.zip`.
+2. Use your local/server IP address and Port.
+
 

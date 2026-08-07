@@ -4,7 +4,11 @@
   ],
   "game": "Supermarket Simulator",
   "github": "https://github.com/Lemix028/SupermarketSimulator-Archipelago",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.2.1": {
       "created_at": "2026-07-19T17:06:33Z",
@@ -35,6 +39,21 @@
       "title": "v0.3.0 ",
       "version_simple": "0.3.0",
       "world_version": "0.3.0"
+    },
+    "v0.3.1": {
+      "created_at": "2026-08-06T14:46:05Z",
+      "description": "**Seed stability, generation safety limits, and balance improvements.**\r\n\r\n* **Local Checkout Fill:** Added the `local_checkout_fill` YAML option to pre-fill checkout locations with local filler/trap items.\r\n* **Unbeatable Seed Protection:** Raised the minimum `customer_checkout_chance` to 40% and capped `MaxDaysCompleted` at 200 days to ensure seeds remain beatable.\r\n* **Server Safety Thresholds:** Capped global multiworld checkout items at 400 and added a host setting to bypass minimum limits if needed.",
+      "download_url": "https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.1/supermarket_simulator.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2b120d37130ef59779f366bc51646eb412c441d7692829d24b20745b21357297",
+      "html_url": "https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 25715,
+      "source_url": "https://api.github.com/repos/Lemix028/SupermarketSimulator-Archipelago",
+      "tag": "v0.3.1",
+      "title": "v0.3.1",
+      "version_simple": "0.3.1",
+      "world_version": "0.3.1"
     }
   }
 }
