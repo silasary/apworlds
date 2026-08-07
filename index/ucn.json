@@ -1,0 +1,50 @@
+{
+  "authors": [
+    "Fewffwa",
+    "Kiwizcat",
+    "Richiepok",
+    "Evi"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Ultimate Custom Night",
+  "github": "https://github.com/fewffwa/UCN-AP",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "0.1.0": {
+      "created_at": "2026-08-03T18:46:30Z",
+      "description": "```Changelog:\r\nNew features:\r\n    Hard logic: allows for unintended methods of stopping certain animatronics\r\n    Scaresanity: Creates 56 new checks in total for each animatronic (excluding fredbear)to either jumpscare you or annoy you.\r\n    Deathlink!\r\n    Note: Deathlink and scaresanity are not compatible and will throw an error when used together\r\n    \r\nGeneration changes:\r\n    You can now set the target score to the minimum amount without excluding animatronics manually\r\n    You can now exclude animatronics with challengesanity enabled.\r\n\r\nLogic changes (doesn't apply to hard logic):\r\n    Golden Freddy now requires the Mask\r\n    Rockstar Freddy now requires the Heater\r\n    The Power Generator and Deathcoin are now progression items\r\n    To get scores above 8k points, you need to have the Power Gen, Deathcoin and Global Music Box unlocked\r\n    \r\nBug fixes:\r\n    Fixed challenges not activating the proper animatronics when they are not unlocked. Challenges now no longer give any points.\r\n    Fixed Client not connecting to room, if there's an empty CNAP file\r\n    Fixed client not reading checks in some cases. If you notice you\u2019re not sending checks when you should, try waiting 30 seconds at most to see if the issue fixes itself. If waiting didn\u2019t help, use the resync command.```\r\n\r\nQuickfixes:\r\n04.08: Made Music Man Scaresanity require Power Generator to be in logic",
+      "download_url": "https://github.com/fewffwa/UCN-AP/releases/download/0.1.0/ucn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0afd952bef385368455acd724439ef60ed89b1efdbb8b42558e41986d81587fc",
+      "html_url": "https://github.com/fewffwa/UCN-AP/releases/tag/0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 5658682,
+      "source_url": "https://api.github.com/repos/fewffwa/UCN-AP",
+      "tag": "0.1.0",
+      "title": "0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "0.1.1": {
+      "created_at": "2026-08-06T19:07:40Z",
+      "description": "New features:\r\n\tGame now displays the apworld version number\r\n\tDeath Link now has an amnesty option (3 at default)\r\n\r\nClient changes:\r\n\tClient now displays the current version number when opened\r\n\r\nFixed Bugs:\r\n\tDeathlink not turning on when joining a room\r\n\tVanilla Dee Dee not turning on when joining a room\r\n\tFixed issue where the client freezes and cannot be reopened if the save file breaks\r\n\tFixed some Deathlink message typos\r\n\tFixed issue where a world couldn't be generated if the target score required all avaiable animatronics to goal, and Bonnie was\r\n\texcluded but Foxy wasn't in normal logic \r\n\tFixed issue where the target score didn't lower if it's higher than the max possible score \r\n\tFixed issue where Bonnet's scaresanity would send out nightmare fredbear's check instead\r\n\r\nLogic Changes:\r\n\tMusic Man's scaresanity now requires the Power generator\r\n\tBonnet's, The minireena's and Lolbit's Scaresanity now requires the Power AC\r\n",
+      "download_url": "https://github.com/fewffwa/UCN-AP/releases/download/0.1.1/ucn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ccedd6971bf46c44a737282bc51785f3de35a686078450d7ce2ef8963cecfa35",
+      "html_url": "https://github.com/fewffwa/UCN-AP/releases/tag/0.1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 5659545,
+      "source_url": "https://api.github.com/repos/fewffwa/UCN-AP",
+      "tag": "0.1.1",
+      "title": "0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    }
+  }
+}
