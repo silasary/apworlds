@@ -7,7 +7,11 @@
   "game": "GemCraft: Frostborn Wrath",
   "github": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "V0.0.5": {
       "created_at": "2026-05-27T09:16:04Z",
@@ -201,9 +205,24 @@
       "size": 330280,
       "source_url": "https://api.github.com/repos/Levisaxos/Archipelago_GemcraftFrostbornWrath",
       "tag": "v0.0.6.1",
-      "title": "Add async identifier to save-slot badges; restore AP connection defaults",
+      "title": "V0.0.6.1 Add async identifier to save-slot badges; restore AP connection defaults",
       "version_simple": "0.0.6.1",
       "world_version": "0.0.6.1"
+    },
+    "v0.0.6.2": {
+      "created_at": "2026-08-07T13:21:45Z",
+      "description": "A focused bug-fix release that corrects how field tokens get distributed when you use the **Different World** field token placement option in a multiplayer game.\r\n\r\n## Bug fixes since 0.0.6.1\r\n\r\n- When a player used the **Different World** field token placement option (especially alongside non-local items), all of their field tokens could pile into a single other player's world instead of being spread randomly across everyone.\r\n- With progressive field token granularity, some of those field tokens could still end up back in your own world under **Different World**",
+      "download_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.2/gcfw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "476c015cf71c7e86d50ee335855c5cbe9aaf061299c57bee3745606d1fe48a18",
+      "html_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 140713,
+      "source_url": "https://api.github.com/repos/Levisaxos/Archipelago_GemcraftFrostbornWrath",
+      "tag": "v0.0.6.2",
+      "title": "# 0.0.6.2 \u2014 Different World Token Fix",
+      "version_simple": "0.6.2",
+      "world_version": "0.6.2"
     }
   }
 }

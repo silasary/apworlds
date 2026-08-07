@@ -9,7 +9,11 @@
   "game": "Diablo II Archipelago",
   "github": "https://github.com/solida1987/Diablo-II-Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "Beta-1.7.1": {
       "created_at": "2026-04-13T08:10:27Z",
@@ -788,6 +792,66 @@
       "title": "Stable 3.3.0",
       "version_simple": "3.3.0",
       "world_version": "3.3.0"
+    },
+    "Stable-3.3.1": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Stable 3.3.1 \u2014 the skill pool slider means what it says\n\nRequires **Multiworld Launcher 2.9.6**. Everything from 3.3.0 is included.\n\nSetting the skill pool slider to 30 \u2014 or 1 \u2014 still produced every vanilla\nskill. Maegis called it, and there were two separate faults behind it:\n\n**The game never applied the value.** The pool was always built with every\nskill; the number only filtered what one list displayed in Archipelago mode.\nThe slider now governs membership: at 30, exactly 30 vanilla skills exist in\nthat seed's pool, chosen at random per seed and spread proportionally across\nthe tiers (30 becomes 10/10/10; 1 becomes a single tier-1 skill). The rest\nnever appear \u2014 not as unlocks, not as rewards, not in the book.\n\n**The launcher overrode the slider.** With the experimental pack enabled it\nsilently wrote the maximum instead of the chosen value. It now writes what you\nset; the pack sits on top of that count, all-or-nothing, as designed.\n\nTwo deliberate exceptions to the cut: your own class's class-locked skills\nalways survive (the randomizer never places them and losing them would break\nthe class), and in Archipelago mode the pool is governed by the world\ngenerator exactly as before \u2014 the option in your YAML decides, and the game\ndoes not second-guess it.\n\nThe retired duplicates from earlier rounds are excluded before the count, so\nthey no longer occupy slider slots either.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.3.1/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1952a42e1ee4188717c91a95c163b10990c3b161475bbc4fc2fcd2d35ac17a16",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.3.1",
+      "minimum_ap_version": "0.5.0",
+      "size": 60821,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.3.1",
+      "title": "Stable 3.3.1",
+      "version_simple": "3.3.1",
+      "world_version": "3.3.1"
+    },
+    "Stable-3.3.2": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Stable 3.3.2 \u2014 kicking a pot is not dying\n\nRequires **Multiworld Launcher 2.9.6**. Everything from 3.3.1 is included.\n\n**DeathLink no longer fires when you kick a breakable.** The death detector\nread the player's animation mode and treated mode 12 as \"dead\" \u2014 but 12 is\nKICK. Every kicked pot, urn or basket (and every assassin kick skill)\nbroadcast a death to the whole multiworld while the kicker stood there\nperfectly healthy, which is exactly the prank Ormrdorr discovered. The\ndetector now uses the two real death modes (dying animation and corpse), so a\nDeathLink goes out only when your character actually dies.\n\n**An incoming DeathLink now does something to you.** On current launchers\nanother player's death only printed a notification. It now also springs the\nDeathLink trap \u2014 a monster pack on your position, the same response the old\nbridge always used. A guaranteed instant kill needs a verified engine damage\ncall and careful hardcore testing, so that stays on the research list; until\nthen the trap is the strongest safe response.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.3.2/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0144cdce8d5cf023d73632db010e11860a3869d6860bb67783e5df0213be7660",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.3.2",
+      "minimum_ap_version": "0.5.0",
+      "size": 60822,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.3.2",
+      "title": "Stable 3.3.2",
+      "version_simple": "3.3.2",
+      "world_version": "3.3.2"
+    },
+    "Stable-3.3.3": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Stable 3.3.3 \u2014 the main menu now tells you the keys\n\nRequires **Multiworld Launcher 2.9.6**. Everything from 3.3.2 is included.\n\n**A key list on the main menu.** Left of the Diablo II logo, on the screen with\nSINGLE PLAYER / OTHER MULTIPLAYER / EXIT, there is now a panel listing every\nkey the mod adds:\n\n| | |\n|---|---|\n| **5** | Skill book |\n| **6** | Quest log |\n| **7** | Tracker |\n| **8** | Zone map |\n| **F1-F4** | Your skills |\n| **Wheel** | Cycle skills |\n| **Ctrl+V** | Cheat menu |\n| **Ctrl+O** | Graphics options |\n\nIt also points at the launcher for the things that live there: the **Items**\ntab for everything you have sent and received, **Progression** for goals,\nchecks and hints, and **Map** for the live zone map.\n\nThe panel exists only on that one screen. Click any menu button and it is gone\nbefore the next screen draws, so it can never sit on top of character select,\nthe game, or anything else. Set `ShowMenuHelp=0` under `[settings]` in\n`Archipelago\\d2arch.ini` to turn it off, or move it with `HelpX` / `HelpY`\nunder `[layout]`.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.3.3/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "77d13b8730b8bfc808594c9b3a73541af74740486d2bd5760b806eb1a76595d9",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.3.3",
+      "minimum_ap_version": "0.5.0",
+      "size": 60821,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.3.3",
+      "title": "Stable 3.3.3",
+      "version_simple": "3.3.3",
+      "world_version": "3.3.3"
+    },
+    "Stable-3.3.4": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Stable 3.3.4 \u2014 the key list is actually on screen now\n\nRequires **Multiworld Launcher 2.9.6**. Everything from 3.3.3 is included.\n\n**The panel was drawn 242 pixels too high.** Diablo II places a sprite by its\nBOTTOM edge, not its top \u2014 the mod's own in-game panels already compensate for\nthat, but the new main-menu panel did not, so all you saw was the bottom border\nline jammed against the top of the screen. It now sits where it belongs, in the\nempty area left of the logo.\n\n**F1 to F12, not F1 to F4.** The panel said F1-F4 for your skill hotkeys. All\ntwelve function keys can hold a skill; the line now says so.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.3.4/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bcf60030fba73dad384c95f4e99dae4771779da32af25719930831b10d75b573",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.3.4",
+      "minimum_ap_version": "0.5.0",
+      "size": 60821,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.3.4",
+      "title": "Stable 3.3.4",
+      "version_simple": "3.3.4",
+      "world_version": "3.3.4"
     },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",

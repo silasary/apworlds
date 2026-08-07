@@ -150,20 +150,30 @@ Multiple traps can be active at the same time, and they may interact with each o
 ## Jak II Traps
 ### "More fun for the whole multiworld!"
 
-| Trap Name       | Effect                                                                |
-|-----------------|-----------------------------------------------------------------------|
-| High Alert Trap | "Arrest him!"                                                         |
-| Ammo Trap       | Jak has all of his ammo taken away from him, making his guns unusable |
-| Dark Trap       | Jak gives into his anger, forcefully transforming into Dark Jak       |
-| Speed Trap      | Jak and the world around him are suddenly extremely fast              |
-| Slow Trap       | Jak and the world around him are suddenly at a snail's pace           |
-| Hero Trap       | The world gains the properties of the game's "Hero Mode" difficulty   |
+| Trap Name  | Effect                                                                |
+|------------|-----------------------------------------------------------------------|
+| Ammo Trap  | Jak has all of his ammo taken away from him, making his guns unusable |
+| Dark Trap  | Jak gives into his anger, forcefully transforming into Dark Jak       |
+| Speed Trap | Jak and the world around him are suddenly extremely fast              |
+| Slow Trap  | Jak and the world around him are suddenly at a snail's pace           |
+| Hero Trap  | The world gains the properties of the game's "Hero Mode" difficulty   |
 
 ## I got soft-locked and I can't leave, how do I get out of this?
 
 Open the pause menu, navigate to `Restart/Quit`, then `Go to Spargus`, then `Yes`.
 Selecting this option will put you back into Spargus. From there, you can make your way
 back to where you were prior to getting stuck.
+
+## How do I reach certain areas like Volcano, Eco Mines, or War Factory?
+
+The mod has been worked around to have the Warp Gate Menu Mod by Nick07. Certain Warp Gates can take you to different areas of the game.
+
+| Trap Name                  | Effect             |
+|----------------------------|--------------------|
+| Warp Gate in Temple        | Volcano, Eco Mines |
+| Warp Gate in Power Station | War Factory.       |
+
+Now they will only be accessible when you have the mission to access that area. So use the built-in Mission tab in the Pause Menu to see if you can play those missions.
 
 ## I think I found a bug, where should I report it?
 

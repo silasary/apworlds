@@ -1,4 +1,4 @@
-# Jak 3 (ArchipelaGOAL II) Setup Guide
+# Jak 3 (ArchipelaGOAL 3) Setup Guide
 
 ## Required Software
 

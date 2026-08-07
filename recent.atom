@@ -2,26 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-07T12:23:05.473170+00:00</updated>
+  <updated>2026-08-07T18:27:44.232803+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.04</id>
-    <title>Northgard v2026.8.4</title>
-    <updated>2026-08-04T17:04:52+00:00</updated>
-    <author>
-      <name>Chakraa</name>
-    </author>
-    <content>### Fixed&#13;
-- Stale Chapter-unlock markers left over from a previous Conquest save or room could falsely unlock an unrelated node in a brand-new save whenever Northgard's random battle-name pool reused the same name (e.g. a fresh save's Chapter 06 - Top could appear unlocked before ever being earned). The client now continuously reconciles unlock markers against whichever save is actually pinned, removing any that don't belong to it.&#13;
-### Changed&#13;
-- Simplified the setup guide's connection order: you no longer need to create a Conquest save before connecting the client for the first time -- the in-game lock-enforcement patch applies on connect regardless of whether a save exists yet. You just need to make sure Northgard itself is closed before opening the client.&#13;
-&#13;
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.03...2026.08.04</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.04"/>
-  </entry>
   <entry>
     <id>https://github.com/benny-dreamly/Manuals/releases/tag/TS-6.1.0</id>
     <title>Manual_TaylorSwiftDiscography_bennydreamly v6.1.0</title>
@@ -1236,5 +1221,20 @@ Latest (main) releases are recommended, as pre-releases (staging) may contain ex
 - New Tower Skywarden&#13;
 - New map Ascent</content>
     <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.7.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.2</id>
+    <title>GemCraft: Frostborn Wrath v0.6.2</title>
+    <updated>2026-08-07T13:21:45+00:00</updated>
+    <author>
+      <name>Levisaxos</name>
+    </author>
+    <content>A focused bug-fix release that corrects how field tokens get distributed when you use the **Different World** field token placement option in a multiplayer game.&#13;
+&#13;
+## Bug fixes since 0.0.6.1&#13;
+&#13;
+- When a player used the **Different World** field token placement option (especially alongside non-local items), all of their field tokens could pile into a single other player's world instead of being spread randomly across everyone.&#13;
+- With progressive field token granularity, some of those field tokens could still end up back in your own world under **Different World**</content>
+    <link href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.2"/>
   </entry>
 </feed>

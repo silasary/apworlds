@@ -6,7 +6,7 @@ into an Archipelago multiworld.
 
 
 ## Downloads
-- <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.0/gcfw.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.2/gcfw.apworld">Latest Version (0.6.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
