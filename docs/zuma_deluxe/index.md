@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.2.0-b/zuma_deluxe.apworld">Latest Version (0.2.0b0)</a>
+- <a href="https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.2.1-b/zuma_deluxe.apworld">Latest Version (0.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

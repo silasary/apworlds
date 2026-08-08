@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/0.1.2/fp2.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0/fp2.apworld">Latest Version (1.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

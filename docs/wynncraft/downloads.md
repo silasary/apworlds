@@ -1,9 +1,12 @@
 # Wynncraft
 
 ## Latest
-- <a href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/download/v0.3.2/wynncraft.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/download/v0.3.3/wynncraft.apworld">Latest Version (0.3.3)</a>
 
 ## All Versions
+
+#### v0.3.3
+- <a href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/download/v0.3.3/wynncraft.apworld">https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/download/v0.3.3/wynncraft.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/download/v0.3.2/wynncraft.apworld">https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/download/v0.3.2/wynncraft.apworld</a>

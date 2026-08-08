@@ -1,9 +1,12 @@
 # Zuma Deluxe
 
 ## Latest
-- <a href="https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.2.0-b/zuma_deluxe.apworld">Latest Version (0.2.0b0)</a>
+- <a href="https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.2.1-b/zuma_deluxe.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.2.1-b/zuma_deluxe.apworld">https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.2.1-b/zuma_deluxe.apworld</a>
 
 #### v0.2.0b0
 - <a href="https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.2.0-b/zuma_deluxe.apworld">https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.2.0-b/zuma_deluxe.apworld</a>
