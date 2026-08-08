@@ -1,9 +1,39 @@
 # Diablo II Archipelago
 
 ## Latest
-- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.0/diablo2_archipelago.apworld">Latest Version (3.4.0)</a>
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.5.0/diablo2_archipelago.apworld">Latest Version (3.5.0)</a>
 
 ## All Versions
+
+#### v3.5.0
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.5.0/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.5.0/diablo2_archipelago.apworld</a>
+
+#### v3.4.9
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.9/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.9/diablo2_archipelago.apworld</a>
+
+#### v3.4.8
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.8/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.8/diablo2_archipelago.apworld</a>
+
+#### v3.4.7
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.7/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.7/diablo2_archipelago.apworld</a>
+
+#### v3.4.6
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.6/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.6/diablo2_archipelago.apworld</a>
+
+#### v3.4.5
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.5/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.5/diablo2_archipelago.apworld</a>
+
+#### v3.4.4
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.4/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.4/diablo2_archipelago.apworld</a>
+
+#### v3.4.3
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.3/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.3/diablo2_archipelago.apworld</a>
+
+#### v3.4.2
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.2/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.2/diablo2_archipelago.apworld</a>
+
+#### v3.4.1
+- <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.1/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.1/diablo2_archipelago.apworld</a>
 
 #### v3.4.0
 - <a href="https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.0/diablo2_archipelago.apworld">https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.4.0/diablo2_archipelago.apworld</a>

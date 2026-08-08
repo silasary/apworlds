@@ -8,6 +8,9 @@
 #### v0.8.0.post2
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.0/slay_the_princess.apworld</a>
 
+#### v0.8.0r2
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.1/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.1/slay_the_princess.apworld</a>
+
 #### v0.8.0
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.0/slay_the_princess.apworld</a>
 
