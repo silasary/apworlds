@@ -617,6 +617,22 @@
       "title": "[pre-lease] Refunct for Archipelago 1.3.0: Co-op and more!",
       "version_simple": "1.3.0",
       "world_version": "1.3.0"
+    },
+    "v1.3.1": {
+      "created_at": "2026-08-07T23:43:20Z",
+      "description": "## Co-op!\r\n- In the yaml and in in-game settings, you can enable seeing other players. If other players in the multiworld have this setting on too, you can see them walking around in your game! \r\n  - The option is called \"see other players\" and it determines how many other players you can see in your game. Setting it to 0 turns it off. I think 10 players at a time should be fine performance-wise.\r\n  - (Technical: packets are only sent to Refunct slots with the setting on, at max 1 per second. The send-rate slowly decreases with the number of players, making it so there are never more than 10 packets per second in total for this in the end (which only occurs if there are 10+ players).)\r\n- You can now connect to the same slot as someone else, and buttons/platforms/cubes in the main gamemode will be synced! You will also still be able to see each-other.\r\n\r\n### Mod:\r\n- Starting from v1.3.1 generated games, you can only join games with the *exact* correct mod version. If you log in with another version, the mod will show which version you need (bottom-left and top-right). All previous versions are available in the releases tab.\r\n\r\n### Options & Gameplay:\r\n- Added \"Ascend\" trap. \u2601\ufe0f \r\n- Added \"Depthless trap\". \ud83d\ude48 \r\n- Added option to have only gameplay-traps.\r\n\r\n### Fixes:\r\n- Go-mode in UT now shows correctly. If you have enough grass and (one of the following)\r\n  - if your goal is known and you can reach it.\r\n  - if your goal is unknown and you have been to your final location.\r\n- When connecting, it now shows that it is still connecting instead of pretending it worked.\r\n- Removed a jump from logic that was very tight (22-1 -> 22-2).",
+      "download_url": "https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.3.1/refunct.apworld",
+      "has_manifest": true,
+      "hash_sha256": "dfaef6a04e0e1dacd371a801923d2a7c9ffee9ba094aaa3c37ae0940e1e2e120",
+      "html_url": "https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.1",
+      "minimum_ap_version": "0.6.4",
+      "prerelease": true,
+      "size": 20815,
+      "source_url": "https://api.github.com/repos/spinerak/refunct-tas-archipelago",
+      "tag": "v1.3.1",
+      "title": "[pre-lease] Refunct for Archipelago 1.3.1: Co-op and more!",
+      "version_simple": "1.3.1",
+      "world_version": "1.3.1"
     }
   }
 }
