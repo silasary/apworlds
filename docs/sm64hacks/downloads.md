@@ -9,10 +9,10 @@
 - <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.9/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.9/sm64hacks.apworld</a>
 
 #### v1.1.7r2
-- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.8/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.8/sm64hacks.apworld</a>
+- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.10/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.10/sm64hacks.apworld</a>
 
 #### v1.1.7r2
-- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.10/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.10/sm64hacks.apworld</a>
+- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.8/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.8/sm64hacks.apworld</a>
 
 #### v1.1.7
 - <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.7/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.7/sm64hacks.apworld</a>

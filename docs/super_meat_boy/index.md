@@ -5,7 +5,7 @@ who you might recognize from games such as The End is Nigh or The Binding of Isa
 
 
 ## Downloads
-- <a href="https://github.com/PixelShake92/Super-Meat-Boy-AP/releases/download/Alpha_1/super_meat_boy.apworld">Latest Version (1)</a>
+- <a href="https://github.com/PixelShake92/Super-Meat-Boy-AP/releases/download/Alpha_2/super_meat_boy.apworld">Latest Version (2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

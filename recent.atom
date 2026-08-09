@@ -2,186 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-09T06:31:04.463417+00:00</updated>
+  <updated>2026-08-09T12:14:41.870365+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.1</id>
-    <title>Supermarket Simulator v0.3.1</title>
-    <updated>2026-08-06T14:46:05+00:00</updated>
-    <author>
-      <name>Lemix028</name>
-    </author>
-    <content>**Seed stability, generation safety limits, and balance improvements.**&#13;
-&#13;
-* **Local Checkout Fill:** Added the `local_checkout_fill` YAML option to pre-fill checkout locations with local filler/trap items.&#13;
-* **Unbeatable Seed Protection:** Raised the minimum `customer_checkout_chance` to 40% and capped `MaxDaysCompleted` at 200 days to ensure seeds remain beatable.&#13;
-* **Server Safety Thresholds:** Capped global multiworld checkout items at 400 and added a host setting to bypass minimum limits if needed.</content>
-    <link href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-0.8.1</id>
-    <title>Slay The Princess v0.8.0r2</title>
-    <updated>2026-08-06T14:57:47+00:00</updated>
-    <author>
-      <name>Onilaf</name>
-    </author>
-    <content>Fix Mirror Gallery</content>
-    <link href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-0.8.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.5</id>
-    <title>Crash Team Racing v0.1.5</title>
-    <updated>2026-08-06T15:48:21+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>
-Other players' items are now visible in the world: they show as the Archipelago logo on the warp pads, tinted by what they are. Pads can sort their rewards by type, connecting on Linux works out of the box, and the post-boss softlock that has been on the known-issues list since v0.1.2 is fixed.
-
-If you are on v0.1.4.1, this is the release that replaces it. v0.1.4.1 shipped Windows only and was never promoted; v0.1.5 is a complete pair again, on every platform.
-
-Thanks to everyone in the Discord who kept reporting things, and to the people of the [Majora's Mask: Recompiled AP Randomizer](https://github.com/RecompRando/MMRecompRando) for the logo mesh.
-
-### Downloads
-
-- **Windows:** `ctr-archipelago-v0.1.5-windows-x86.zip` (contains everything)
-- **Steam Deck / Linux:** `ctr-archipelago-v0.1.5-linux-x86.tar.gz`
-- **Hosts and players:** `ctr.apworld` and `Crash.Team.Racing.yaml` are attached separately
-- **Debugging a crash?** `ctr_native_ap.debug` (Linux) and `ctr_native_ap.exe.debug` (Windows) hold the debug symbols, each matched to this exact build. The Windows exe is stripped from this release on, which is why its symbols now ship separately too.
-
-📖 [Setup guide](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) ([as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.1.5/SETUP.md)). **Update the client and the apworld together, they are a pair.**
-
-### New
-
-- **Items belonging to other players now show as the Archipelago logo on warp pads**, tinted by classification so you can tell progression from filler at a glance. ([#124](https://github.com/dowlle/ctr-native-ap/issues/124))
-- **Warp pads can group what they are offering by reward type** instead of cycling one mixed pile: trophies and podium rungs in one slot, relic tiers in another, tokens and gems and crystals in the third. Set `warp_pad_item_display` in your YAML; the old behaviour is still there as `one_pile`. ([#59](https://github.com/dowlle/ctr-native-ap/issues/59))
-- **Hints for a shuffled warp pad now name the physical pad you have to drive into**, not just the destination. ([#52](https://github.com/dowlle/ctr-native-ap/issues/52))
-- **Item name groups**, so hints and commands can ask for a whole category instead of one exact item name. ([#167](https://github.com/dowlle/ctr-native-ap/issues/167))
-- **Boss garages and the Oxide door tell you what they want** instead of just refusing to open. ([#24](https://github.com/dowlle/ctr-native-ap/issues/24))
-- **The title screen tells you when a newer release is out**, once, in one orange line, with the detail under OPTIONS then Connection. Turn it off with `update_check = false` in `config.ini`. ([#150](https://github.com/dowlle/ctr-native-ap/issues/150))
-- **F11 toggles fullscreen**, matching upstream. Right Alt plus Enter and Left Alt plus Enter both still work. ([#143](https://github.com/dowlle/ctr-native-ap/issues/143))
-- **Gem cups no longer appear on the warp pads that are open right at the start.** Reaching a gem cup now always takes some progression first, so an early lucky pad can no longer hand you the strongest checks in sphere one. ([#149](https://github.com/dowlle/ctr-native-ap/issues/149))
-- Audio and a set of small standalone fixes were picked up from upstream ctr-native this cycle. ([#121](https://github.com/dowlle/ctr-native-ap/issues/121), [#123](https://github.com/dowlle/ctr-native-ap/issues/123))
-
-### Fixed
-
-- **Beating a boss while holding no received Keys no longer softlocks the hub.** The first-key spawn set a driving freeze that only the Aku Aku greeting released, and the AP flow had already skipped that greeting. On the known-issues list since v0.1.2. ([#51](https://github.com/dowlle/ctr-native-ap/issues/51))
-- **Linux: connecting to archipelago.gg no longer fails with a certificate error on distros that keep their trust store somewhere unexpected.** ([#170](https://github.com/dowlle/ctr-native-ap/issues/170))
-- **The pause screen stopped showing CTR tokens you never received.** Arena crystals light for received Purple Tokens only, and the per-colour counts match the printed totals. ([#142](https://github.com/dowlle/ctr-native-ap/issues/142))
-- **A failed connection says what went wrong.** A dead address now reads "Cannot reach &lt;host&gt;, retrying" after about nine seconds instead of "Connecting..." forever. ([#146](https://github.com/dowlle/ctr-native-ap/issues/146))
-- **A seed generated by a newer apworld no longer sends a GOAL it cannot judge.** The client says so in the feed and stands down. ([#163](https://github.com/dowlle/ctr-native-ap/issues/163))
-- **The boss door's requirement line no longer draws on top of the challenge name**, and it now also shows how many trophies you hold. ([#24](https://github.com/dowlle/ctr-native-ap/issues/24))
-- **The item marker is shaded and spins with the other prizes** instead of sitting as a flat, fixed cut-out. ([#124](https://github.com/dowlle/ctr-native-ap/issues/124))
-- **The update notice sits clear of the title banner and the menu** instead of across them. ([#150](https://github.com/dowlle/ctr-native-ap/issues/150))
-- More retail-blind NULL dereferences are guarded, continuing the v0.1.4 sweep. ([#137](https://github.com/dowlle/ctr-native-ap/issues/137))
-- `ctr-ap.log` stopped claiming it banked wumpa it actually discarded, and stopped repeating the same reachability line verbatim. ([#144](https://github.com/dowlle/ctr-native-ap/issues/144))
-- **The music hitch at track change is gone.** ([#48](https://github.com/dowlle/ctr-native-ap/issues/48))
-
-### Known issues
-
-- **Linux: the pre-race intro flyby renders from inside the track.** Near-black frames and flat slabs for the length of the flyby, then everything is correct the moment the countdown view takes over. Cosmetic, the racing view is unaffected. ([#138](https://github.com/dowlle/ctr-native-ap/issues/138))
-- **After a long spell offline, reconnecting can pause the game for about ten seconds on the intro screen** while it catches up on everything it missed. It does recover on its own; let it finish.
-- **Brief audio dropouts can happen when the hub streams a new region in, and when you move the window.** Not new in this release, and not the track-change hitch above; this one comes from how audio is tied to the main loop and is being worked on for a later release.
-
-### Testing
-
-Verified in game on the exact shipped builds, on Windows and on the Steam Deck: fullscreen on all three bindings and mid-race, both warp pad display modes including a no-regression pass on the old one, the arena token display and a first-time arena win while holding received tokens, the connection failure and recovery path, the boss win at zero received Keys that used to softlock, the update notice firing and staying silent when it should, the newer-schema stand-down, a deliberate pool-exhaustion attempt, and a full session of track changes listening for the audio hitch.
-
-The item marker and the boss door advert placement were verified in game again on the polish build after their fixes.
-
-Logic changes passed all ten checks of the Archipelago index fuzz matrix on the exact `ctr.apworld` shipped here, 14,000 generations, zero failures.
-
-Not verified in game: nothing in this release is claimed above without a matrix item behind it.
-
-### Next
-
-0.2.0 is the content wave: all sixteen characters playable in Adventure as multiworld unlocks, staged stat and boost systems, and the location supply to pay for them. No dates, hobby project honesty applies.
-
----
-
-The multiworld item marker uses the Archipelago logo (copyright Krista Corkos and Christopher Wilson, CC BY-NC 4.0) via [MMRecompRando](https://github.com/RecompRando/MMRecompRando)'s mesh (GPL-3.0). Thanks to both.
-
-**Checksums**
-- zip `95a88c453ad912991d50d1e3a896f263f1a06adfebafdf5b82b380d5b7eead57`
-- tar.gz `e102d827443df7369641cd8d567d0f5ebe23ff724ff33c56909e7c2527c1a309`
-- apworld `cfa525c2296554f32e749164994790b3fb2d6a8f4d8309c377f51f1820b8d689`
-- debug (Linux) `a76c465d04205a9368d1c4c2a071382223381bd0e0671d39696d11a387b0bd35`
-- debug (Windows) `878d8794e82b57ba52e9a8600809a7bdc3e3ade9835b2c19902fed638238f231`
-
-
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/0.1-beta1</id>
-    <title>johnny_upgrade v0.1b1</title>
-    <updated>2026-08-06T16:49:57+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>just testing</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/0.1-beta1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/0.1-beta2</id>
-    <title>johnny_upgrade v0.1b2</title>
-    <updated>2026-08-06T17:08:03+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>update to add income settings</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/0.1-beta2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0%2Bbeta5</id>
-    <title>Deltarune v2.1.0+beta5</title>
-    <updated>2026-08-06T17:34:26+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <author>
-      <name>theemeraldsword85</name>
-    </author>
-    <author>
-      <name>Tenebrosful</name>
-    </author>
-    <author>
-      <name>Vintagix</name>
-    </author>
-    <author>
-      <name>Deadzi</name>
-    </author>
-    <author>
-      <name>Charaster</name>
-    </author>
-    <author>
-      <name>Potato</name>
-    </author>
-    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
-&#13;
-## **&gt;&gt;&gt; This is an unstable pre-release. Unless you're testing, we recommend using version v2.0.6 instead. &lt;&lt;&lt;**&#13;
-&#13;
-[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
-[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
-&#13;
-## **&gt;&gt;&gt; PATCH FILES HAS BEEN REMOVED FROM THE APWORLD, YOU HAVE TO DOWNLOAD IT FROM THE OTHER REPOSITORY &lt;&lt;&lt;**&#13;
-&#13;
-# Changelog&#13;
-&#13;
-## APworld&#13;
-- Changed Netskie Chest location name&#13;
-- Changed Vending Machine to Soda Fountain location name in chapter 5&#13;
-- Add the chest before Mike as a location&#13;
-- Fix everybodyweapon screwing the progressive weapons since... probably always&#13;
-- DamageLink Support (doesn't send overworld damage for now)&#13;
-- Changed Jigsawry and Ponman logic to allow them if you can access Forest (losing susie)&#13;
-- GildedRose is now currently an unused item&#13;
-- Fix jevil rewards if not randomized</content>
-    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0%2Bbeta5"/>
-  </entry>
   <entry>
     <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.5</id>
     <title>Rabbit and Steel v0.3.5</title>
@@ -1284,9 +1109,68 @@ NOTE: This release is only classed as compatible with itself in the client due t
     <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v2.2.0"/>
   </entry>
   <entry>
+    <id>https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1</id>
+    <title>TCG Card Shop Simulator v1.2.0rc1</title>
+    <updated>2026-08-08T22:32:33+00:00</updated>
+    <author>
+      <name>FyreDay</name>
+    </author>
+    <content>### Changelog&#13;
+- fix Bulk Box ids&#13;
+- Add Grading unlock item that unlocks grading&#13;
+- Fix access to cards not being correct</content>
+    <link href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.3</id>
+    <title>pokemon_snap v0.5.3</title>
+    <updated>2026-08-09T02:58:24+00:00</updated>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <content>## What's Changed&#13;
+* Swapped out `random` for `world.random` to ensure consistent trash by @cobyw&#13;
+* Fixed Universal Tracker compatibility bug by @cobyw&#13;
+* Added PopTracker map auto-updating (pending PopTracker pack release)&#13;
+* Fixed crash caused by receiving an item mid-level (and icons will now appear mid-level)&#13;
+* Logic: Remove Pokemon Sign Detector from item pool if Pokemon Signs are disabled as checks&#13;
+* Code simplification and cleanup&#13;
+&#13;
+**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.5.2...v0.5.3</content>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.2</id>
+    <title>PixelDraw v1.3.2</title>
+    <updated>2026-08-09T03:09:03+00:00</updated>
+    <author>
+      <name>InterestedSC2</name>
+    </author>
+    <content>**Version 1.3.2​**&#13;
+&#13;
+_Archipelago Changes:_&#13;
+&#13;
+- ​Fixed the CHIP_PACK_5 issue&#13;
+- Fixed invalid patterns still being accepted in completion shape and needed patterns options&#13;
+- Code cleanup</content>
+    <link href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0b</id>
+    <title>Isles of Trials v0.2.0b0</title>
+    <updated>2026-08-09T05:30:14+00:00</updated>
+    <author>
+      <name>NyanMC</name>
+    </author>
+    <content>altered the rock sprite slightly (hopefully easier to distinguish from metal tiles)&#13;
+backported the improved health display from isles 2 (seeing temporary hearts should be easier)&#13;
+finally remembered to add the new and improved label</content>
+    <link href="https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0b"/>
+  </entry>
+  <entry>
     <id>https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0</id>
-    <title>zoominoes v0.1.0.post2</title>
-    <updated>2026-08-08T21:34:27+00:00</updated>
+    <title>zoominoes v0.1.0.post3</title>
+    <updated>2026-08-09T09:18:34+00:00</updated>
     <author>
       <name>chickentuna</name>
     </author>
@@ -1359,62 +1243,138 @@ unobtainable.
     <link href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0"/>
   </entry>
   <entry>
-    <id>https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1</id>
-    <title>TCG Card Shop Simulator v1.2.0rc1</title>
-    <updated>2026-08-08T22:32:33+00:00</updated>
+    <id>https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.4</id>
+    <title>Idle Loops v0.4.4</title>
+    <updated>2026-08-09T09:59:27+00:00</updated>
     <author>
-      <name>FyreDay</name>
+      <name>IHaveNoFunnyName</name>
     </author>
-    <content>### Changelog&#13;
-- fix Bulk Box ids&#13;
-- Add Grading unlock item that unlocks grading&#13;
-- Fix access to cards not being correct</content>
-    <link href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1"/>
+    <content>- Fixed Wild Mana/Herb logic&#13;
+&#13;
+If you installed before 6th August, click [\&lt;\&lt;HERE\&gt;\&gt;](https://ihavenofunnyname.github.io/IdleLoopsAP/idle-loops-ap.user.js) to update the client.&#13;
+&#13;
+See https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.3 and https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.2</content>
+    <link href="https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.4"/>
   </entry>
   <entry>
-    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.3</id>
-    <title>pokemon_snap v0.5.3</title>
-    <updated>2026-08-09T02:58:24+00:00</updated>
+    <id>https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.3.3a</id>
+    <title>i_am_your_beast v0.3.3a0</title>
+    <updated>2026-08-09T10:10:54+00:00</updated>
     <author>
-      <name>nielrenned</name>
+      <name>petiboy7</name>
     </author>
-    <content>## What's Changed&#13;
-* Swapped out `random` for `world.random` to ensure consistent trash by @cobyw&#13;
-* Fixed Universal Tracker compatibility bug by @cobyw&#13;
-* Added PopTracker map auto-updating (pending PopTracker pack release)&#13;
-* Fixed crash caused by receiving an item mid-level (and icons will now appear mid-level)&#13;
-* Logic: Remove Pokemon Sign Detector from item pool if Pokemon Signs are disabled as checks&#13;
-* Code simplification and cleanup&#13;
-&#13;
-**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.5.2...v0.5.3</content>
-    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.3"/>
+    <content> **Bug Fixes**&#13;
+  - Fixed a bug when generating a multiworld with multiple games.&#13;
+  &#13;
+ **Changes**&#13;
+  - Added option to toggle bonus objectives for each collection in the yaml. </content>
+    <link href="https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.3.3a"/>
   </entry>
   <entry>
-    <id>https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.2</id>
-    <title>PixelDraw v1.3.2</title>
-    <updated>2026-08-09T03:09:03+00:00</updated>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0%2Bbeta7</id>
+    <title>Deltarune v2.1.0+beta7</title>
+    <updated>2026-08-09T10:40:03+00:00</updated>
     <author>
-      <name>InterestedSC2</name>
+      <name>Mewlif</name>
     </author>
-    <content>**Version 1.3.2​**&#13;
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
 &#13;
-_Archipelago Changes:_&#13;
+## **&gt;&gt;&gt; This is an unstable pre-release. Unless you're testing, we recommend using version v2.0.6 instead. &lt;&lt;&lt;**&#13;
 &#13;
-- ​Fixed the CHIP_PACK_5 issue&#13;
-- Fixed invalid patterns still being accepted in completion shape and needed patterns options&#13;
-- Code cleanup</content>
-    <link href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.2"/>
+[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
+[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
+&#13;
+## **&gt;&gt;&gt; PATCH FILES HAS BEEN REMOVED FROM THE APWORLD, YOU HAVE TO DOWNLOAD IT FROM THE OTHER REPOSITORY &lt;&lt;&lt;**&#13;
+&#13;
+# Changelog&#13;
+&#13;
+- Fixed Linux proxy receiving already collected items&#13;
+- Add `/auto_patch linux` and `/auto_patch linuxdepot`&#13;
+- Noelle cannot be choose as random character anymore&#13;
+- Changed some default and description options</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0%2Bbeta7"/>
   </entry>
   <entry>
-    <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0b</id>
-    <title>Isles of Trials v0.2.0b0</title>
-    <updated>2026-08-09T05:30:14+00:00</updated>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.12</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.12</title>
+    <updated>2026-08-09T11:03:53+00:00</updated>
     <author>
-      <name>NyanMC</name>
+      <name>Pangu</name>
     </author>
-    <content>altered the rock sprite slightly (hopefully easier to distinguish from metal tiles)&#13;
-backported the improved health display from isles 2 (seeing temporary hearts should be easier)&#13;
-finally remembered to add the new and improved label</content>
-    <link href="https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0b"/>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.12
+
+**Branch:** main
+**Date:** 2026-08-09 11:06 UTC
+
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.11&lt;/strong&gt;&lt;/summary&gt;
+
+- fix: rules issue with setting ryllus always acessible (6e4bd3ab)
+
+&lt;/details&gt;
+
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.11...rac-size-matters/v0.4.12
+
+### Notes
+This release was automatically generated from the **main** branch.
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
+</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.12"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1</id>
+    <title>TerraNil v0.2.1</title>
+    <updated>2026-08-09T11:13:31+00:00</updated>
+    <author>
+      <name>nepcore</name>
+    </author>
+    <author>
+      <name>Lily the Little Angel</name>
+    </author>
+    <content>- Rename items and locations to present better in alphabetically sorted lists (e.g. Universal Tracker)&#13;
+- The archipelago console can now be hidden by pressing `F1`&#13;
+- Send lava checks if you end up with only a lava source&#13;
+- Tried to make early game BK less egregious by forcing some early items to be in sphere 1&#13;
+- Added option to choose or randomize the starting level&#13;
+- Added YAML option to select game difficulty (because the built in difficulty picker only works in River Valley)&#13;
+- Added weather control hotkeys (`F2` for sun, `Shift`+`F2` for rain/snow/etc, only works once the relevant climate goal is achieved)&#13;
+- Added Universal Tracker YAMLless support&#13;
+- Added options to control how many/which levels are included&#13;
+- Added automatic reconnect if connection to the archipelago server is lost&#13;
+- Fixed multiple logic errors&#13;
+- Fixed a bug that would allow buildings to unlock incorrectly&#13;
+- Fixed a crash that would happen if trying to send checks after losing connection&#13;
+- Fixed selected difficulty not being applied after restarting the game&#13;
+- Fixed "Restart Phase" button not working&#13;
+- Fixed console breaking and causing connection issues if multiple messages come in during a loading screen&#13;
+- Fixed reconnect breaking when not on the main menu&#13;
+&#13;
+Known Issues:&#13;
+- In sessions with many checks the console will eventually stop rendering text and start to lag out the game, restarting the game and thereby emptying the console fixes this (will be fixed in the next version)</content>
+    <link href="https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1"/>
   </entry>
 </feed>

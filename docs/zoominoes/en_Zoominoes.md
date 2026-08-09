@@ -25,7 +25,7 @@ Clear a full 28-day run on your goal difficulty tier, 7 by default.
 ## Which items can be in another player's world?
 
 Animals, snacks, souvenirs, zookeepers and progressive difficulty tiers, plus filler
-of extra starting gold, extra plays and bonus hand size.
+of permanent +1 gold, +1 play and +1 hand size.
 
 ## What does another world's item look like?
 

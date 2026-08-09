@@ -1,6 +1,7 @@
 {
   "authors": [
-    "nepcore"
+    "nepcore",
+    "Lily the Little Angel"
   ],
   "description": "Terra Nil is an intricate environmental strategy game about transforming a barren wasteland into a thriving, balanced ecosystem.",
   "game": "TerraNil",
@@ -56,6 +57,21 @@
       "title": "v0.2.0",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "v0.2.1": {
+      "created_at": "2026-08-09T11:13:31Z",
+      "description": "- Rename items and locations to present better in alphabetically sorted lists (e.g. Universal Tracker)\r\n- The archipelago console can now be hidden by pressing `F1`\r\n- Send lava checks if you end up with only a lava source\r\n- Tried to make early game BK less egregious by forcing some early items to be in sphere 1\r\n- Added option to choose or randomize the starting level\r\n- Added YAML option to select game difficulty (because the built in difficulty picker only works in River Valley)\r\n- Added weather control hotkeys (`F2` for sun, `Shift`+`F2` for rain/snow/etc, only works once the relevant climate goal is achieved)\r\n- Added Universal Tracker YAMLless support\r\n- Added options to control how many/which levels are included\r\n- Added automatic reconnect if connection to the archipelago server is lost\r\n- Fixed multiple logic errors\r\n- Fixed a bug that would allow buildings to unlock incorrectly\r\n- Fixed a crash that would happen if trying to send checks after losing connection\r\n- Fixed selected difficulty not being applied after restarting the game\r\n- Fixed \"Restart Phase\" button not working\r\n- Fixed console breaking and causing connection issues if multiple messages come in during a loading screen\r\n- Fixed reconnect breaking when not on the main menu\r\n\r\nKnown Issues:\r\n- In sessions with many checks the console will eventually stop rendering text and start to lag out the game, restarting the game and thereby emptying the console fixes this (will be fixed in the next version)",
+      "download_url": "https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1/TerraNil.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0c371076fb9ae83c8b914e2f62df8af7a45d0b61d068754783d085b3bd235a6f",
+      "html_url": "https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 21395,
+      "source_url": "https://api.github.com/repos/nepcore/TerraNilAP",
+      "tag": "v0.2.1",
+      "title": "v0.2.1",
+      "version_simple": "0.2.1",
+      "world_version": "0.2.1"
     },
     "v0.2.1-pre": {
       "created_at": "2026-05-19T20:49:56Z",

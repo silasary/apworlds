@@ -1,9 +1,12 @@
 # TerraNil
 
 ## Latest
-- <a href="https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1-pre4/TerraNil.apworld">Latest Version (0.2.1rc4)</a>
+- <a href="https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1/TerraNil.apworld">Latest Version (0.2.1)</a>
 
 ## All Versions
+
+#### v0.2.1
+- <a href="https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1/TerraNil.apworld">https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1/TerraNil.apworld</a>
 
 #### v0.2.1rc4
 - <a href="https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1-pre4/TerraNil.apworld">https://github.com/nepcore/TerraNilAP/releases/download/v0.2.1-pre4/TerraNil.apworld</a>
