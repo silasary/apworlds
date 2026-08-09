@@ -29,10 +29,10 @@ this folder, right-click **Burger Shop 2** in your Steam library, select **Prope
 Burger Shop 2/
 ├── archipelago/
 │   └── levels/
-│       ├── Game.xml
-│       ├── Breakfast_*.xml
-│       ├── Order_*.xml
-│       ├── Dinner_*.xml
+│       ├── Game.xml.orig
+│       ├── Breakfast_*.xml.orig
+│       ├── Order_*.xml.orig
+│       ├── Dinner_*.xml.orig
 │       └── ... (remaining order files)
 ├── properties/
 │   └── params_user.xml
@@ -51,8 +51,7 @@ Burger Shop 2/
    ```
 4. Enter your slot name and password when prompted.
 5. Launch the game using `/launch` in the client console, or start it manually.
-6. **Create a new save file.** The client associates saves with your session at creation time — do
-   not use a save that was created before connecting.
+6. **Choose the `Archipelago` profile.** The client creates and manages it for you once you connect.
 
 ## Options
 
@@ -75,9 +74,9 @@ burger_shop_2_settings:
   game_install_path: "C:/Program Files (x86)/Steam/steamapps/common/Burger Shop 2"
 ```
 
-**My save file is not being detected.**
-Only saves created *after* connecting the client to the server are tracked. Create a fresh save once
-the client says that it's waiting for a save file to be created.
+**The client says the Archipelago profile belongs to a previous session.**
+The game is still open on the profile from an earlier seed, so the client cannot reset it. Close the
+game (or use `/restart`) and it will be laid down fresh for the current one.
 
 **Recipe changes are not showing up mid-level.**
 The game reads updated order files when a level starts. Finish the current level or return to the map

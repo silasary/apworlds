@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/download/v0.3.1/burger_shop_2.apworld">Latest Version (0.3.1)</a>
+- <a href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/download/v0.3.2/burger_shop_2.apworld">Latest Version (0.3.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

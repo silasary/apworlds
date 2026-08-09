@@ -2,96 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-09T12:14:41.870365+00:00</updated>
+  <updated>2026-08-09T18:19:51.638336+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.5</id>
-    <title>Rabbit and Steel v0.3.5</title>
-    <updated>2026-08-06T18:17:55+00:00</updated>
-    <author>
-      <name>tjwombo</name>
-    </author>
-    <content>added:&#13;
-- Random include class sanity option&#13;
-- Selects kingdoms, besides the first, in a weighted random fashion based on checks remaining with class checks having a heavier weight&#13;
-&#13;
-fixed:&#13;
-- Updated configs&#13;
-&#13;
-# Changelog&#13;
-&#13;
-All notable changes to this project will be documented in this file.&#13;
-&#13;
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
-&#13;
-## [v0.3.5](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.4...v0.3.5) - 2026-08-06&#13;
-&#13;
-### Commits&#13;
-&#13;
-- Code cleanup [`130a5a1`](https://github.com/tjwombo/RNSArchipelago/commit/130a5a180d88c38bd6e4c89aabd94e5dd02b1507)&#13;
-- Config update [`57904f5`](https://github.com/tjwombo/RNSArchipelago/commit/57904f5486d252135d9ff4159129905c191ac0cf)&#13;
-- Add weighted weights and remove selections from settings [`ce2f62e`](https://github.com/tjwombo/RNSArchipelago/commit/ce2f62ef47cdc5156f597e1fc5176fdbe77f4a9f)&#13;
-- Update readme [`04ce3bb`](https://github.com/tjwombo/RNSArchipelago/commit/04ce3bb94954c2e0fa3ad9ab23fbbade342a5c38)&#13;
-- Add chest and shop weighting [`e894270`](https://github.com/tjwombo/RNSArchipelago/commit/e89427020327ff0c9a0f3ebbf5698fe26bdb27f2)&#13;
-- cleanup [`10c64d8`](https://github.com/tjwombo/RNSArchipelago/commit/10c64d85e1f5f1aca21e1c5d0f557d94c5be663b)&#13;
-- Update password config visual on load [`8647874`](https://github.com/tjwombo/RNSArchipelago/commit/8647874fe439591d7d9be78ddb0b3e2883823a80)&#13;
-- Update readme [`b868f17`](https://github.com/tjwombo/RNSArchipelago/commit/b868f17e7611e97bbaab0ffd655ea6b45bcfa15c)&#13;
-</content>
-    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/kumquat-ir/Archipelago/releases/tag/vsr-1.0.1</id>
-    <title>Vision Soft Reset v1.0.1</title>
-    <updated>2026-08-06T19:32:40+00:00</updated>
-    <author>
-      <name>hellfall</name>
-    </author>
-    <content>- Fix logic for Cottospark and Cottocache cards only accounting for entering the room from above&#13;
-- Remove Twister Jump as an item since you can always do it if you have spin dodge (whoops), require hard logic to be turned on for it instead&#13;
-&#13;
-No client update is required.&#13;
-Updated poptracker pack:&#13;
-https://github.com/kumquat-ir/vsr-tracker/releases/tag/1.0.1</content>
-    <link href="https://github.com/kumquat-ir/Archipelago/releases/tag/vsr-1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.2</id>
-    <title>Nine Sols v0.6.2</title>
-    <updated>2026-08-06T20:20:22+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
-&#13;
-- Universal Tracker map page auto-tabbing:&#13;
-	- If you auto-tabbed to the world_map page by opening the in-game Teleport menu, closing the menu / resuming the game will now auto-tab back to the previous map page.&#13;
-	- Auto-tabbing for the skill_tree page has been removed.&#13;
-- Added a "Randomize Robe Color" setting, which changes Yi's robe's color on every room transition (inspired by the Tunic randomizer)&#13;
-- The save menu now shows "X locations checked" on each save slot above the playtime&#13;
-- The pause menu now shows how many seals are required for Eigong, Lady E and Prison above the console&#13;
-- Ruyi's message when trying to walk out the "jammed" FSP door now has an additional sentence to explicitly mention the Teleport menu&#13;
-- Talking to a non-FSP Shanhai before repairing the FSP one will now post an on-screen reminder that you can't ask for their chips before repairing the FSP one&#13;
-- Buying a chip from a Shanhai will finally actually deduct 400 jin from the player, in addition to checking the corresponding AP location&#13;
-- In the vanilla game, you could get a 'pity' Limitless Realm segment with basic combat tutorials if you died very early (many of us never saw this). The randomizer will now actively disable this segment, since its trigger conditions make no sense in rando, and it can be particularly annoying for death link players.&#13;
-`vanilla` logic:&#13;
-	- "Cortex Center - Caves Middle Left" now allows CS and CL instead of CS and Nymph: instead of hacking the ropes to lower them, you can CL up to the one tiny rope that's already exposed&#13;
-`medium` logic:&#13;
-	- "AF (Depths) - Lower Level" to "Under Lower Left Exit" now allows SR and T-dashes&#13;
-	- "OW: Enemy Gauntlet Room" now allows using Cloud Piercer S/X on the shielded beetle instead of CS&#13;
-`ledge_storage` logic:&#13;
-	- "AF (Depths) - Lower Left Exit" to "Climb to Root Node" previously required AD setup for LS, but T-dash setup is enough, so AD is no longer required&#13;
-	- "ED (Passages): Above Pink Pool Left Of Root Node" and "ED (Passages): Far Left Rooms" can now be reached without TCK by triple jumping up to "Outside Tianshou Arena" then continuing up and left to the platforms above the left pink pool (i.e. doing the vanilla route to Tianshou backwards). This route uses (LG + CL + AD) to reach the first location, then an additional (bow hover or SR or CS-dash) to get to the second location.&#13;
-	- "GoS (East) - Stone Carvings" to "Upper Exit" is now in logic with only LG because you can wall slide up the obstacle after T-dash setup&#13;
-	- "IW - Above Frogs" to "Upper Right Statue" now allows not just triple jumping, but also wall sliding after CL setup, AD setup, or (T-dash setup and Swift Runner)&#13;
-	- "TRC: Above Sol Statue" is now in logic with bow hover and LS vault&#13;
-	- "Yinglong Canal - Farmland Markings" to "Above Egg Cave" previously required SR to get into the room where you wall slide without losing LS, now it also allows AD or bow hover&#13;
-</content>
-    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.2"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-97</id>
     <title>Borderlands 2 v97</title>
@@ -1168,81 +1083,6 @@ finally remembered to add the new and improved label</content>
     <link href="https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0b"/>
   </entry>
   <entry>
-    <id>https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0</id>
-    <title>zoominoes v0.1.0.post3</title>
-    <updated>2026-08-09T09:18:34+00:00</updated>
-    <author>
-      <name>chickentuna</name>
-    </author>
-    <content>Community testing build. Feedback and bug reports welcome.
-
-## Install
-
-**1. BepInEx** — download **BepInEx 6 bleeding-edge, `Unity.Mono`, `win-x64`** from
-&lt;https://builds.bepinex.dev/projects/bepinex_be&gt; and unzip it into the game folder,
-next to `Zoominoes.exe`. Zoominoes is a Unity 6 Mono game; BepInEx 5 will not work.
-Run the game once so BepInEx creates its folders, then close it.
-
-e.g. for Windows:
-&lt;https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.Mono-win-x64-6.0.0-be.785%2B6abdba4.zip&gt;
-
-**2. The mod** — unzip `ZoominoesArchipelago.zip` into the same game folder. It drops
-into `BepInEx/plugins/`.
-
-**3. The world** — put `zoominoes.apworld` in your Archipelago install's
-`custom_worlds/` folder.
-
-On Linux the game runs under Proton with the same files. Add
-`WINEDLLOVERRIDES="winhttp=n,b" %command%` to the Steam launch options, or the
-loader will not inject.
-
-## Playing
-
-Press **F1** for the connection panel, enter your server address, port, slot name
-and password, and connect. The panel opens by itself until you do. Details are
-remembered for next launch.
-
-Runs are played on a dedicated **AP** profile. Your existing saves are not read or
-written while the mod is installed.
-
-## What is randomised
-
-Animals, snacks, souvenirs, zookeepers and difficulty tiers arrive as Archipelago
-items, along with extra starting gold, extra plays and hand size.
-
-`randomize_starter_zookeeper` and `randomize_starter_unlocks` extend that to what you
-open with: a random zookeeper in place of Marina, and a random 6 animals, 4 snacks and
-4 souvenirs in place of Starfish, Fennec and the rest. Whatever the draw passes over
-becomes an item like anything else.
-
-Checks come from Gift Shop slots and from finishing a day. **Every difficulty tier
-has its own set of both** — "Tier 3 - Shop 2 - Slot 1" is a different location from
-"Tier 5 - Shop 2 - Slot 1", so each tier you unlock opens 43 fresh checks: 24 across
-its eight shops and 19 across its playable days. On top of that, winning with each
-zookeeper and clearing each tier are checks in their own right.
-
-Three goals: clear a target difficulty tier, clear it with several different
-zookeepers, or collect Zoo Tickets scattered across the multiworld.
-
-Only normal runs take part — daily challenges, seeded runs and challenge runs are
-left alone.
-
-Items apply from your **next** run, since the game fixes its content pool when a run
-begins.
-
-## Options
-
-`Zoominoes-template.yaml` has every option, its documentation and its weights. Put it
-in your Archipelago `Players` folder and change the name at the top.
-
-Content the seed has no room for is unlocked from the start rather than left
-unobtainable.
-
-
-</content>
-    <link href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0"/>
-  </entry>
-  <entry>
     <id>https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.4</id>
     <title>Idle Loops v0.4.4</title>
     <updated>2026-08-09T09:59:27+00:00</updated>
@@ -1376,5 +1216,131 @@ Latest (main) releases are recommended, as pre-releases (staging) may contain ex
 Known Issues:&#13;
 - In sessions with many checks the console will eventually stop rendering text and start to lag out the game, restarting the game and thereby emptying the console fixes this (will be fixed in the next version)</content>
     <link href="https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.2</id>
+    <title>Ender Magnolia v0.1.2</title>
+    <updated>2026-08-09T14:28:05+00:00</updated>
+    <author>
+      <name>Trex</name>
+    </author>
+    <content>Pre-release of the **Archipelago** world for **Ender Magnolia**&#13;
+&#13;
+## Update&#13;
+ - Added Meta Progression option&#13;
+ - Group locations/items&#13;
+ - Added start inventory from pool support&#13;
+&#13;
+## Requirements&#13;
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
+- [Ender Magnolia Randomizer](https://github.com/Trexounay/EnderMagnolia.Randomizer/releases) Get the corresponding version&#13;
+&#13;
+## Current Features&#13;
+- 340 checks&#13;
+- 2 Goals: **Ending A** **Ending B**&#13;
+- Starting Skill option (except non breaking walls weapon)&#13;
+- Shuffle relic costs&#13;
+- Progressive Aptitudes&#13;
+- Start with heal/fast travel&#13;
+- min/max chapters&#13;
+- Central Elevator Fix option&#13;
+- Starting respite&#13;
+&#13;
+## Notes&#13;
+This is an early pre-release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
+    <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0</id>
+    <title>zoominoes v0.1.0.post4</title>
+    <updated>2026-08-09T15:01:23+00:00</updated>
+    <author>
+      <name>chickentuna</name>
+    </author>
+    <content>Community testing build. Feedback and bug reports welcome.
+
+## Install
+
+**1. BepInEx** — download **BepInEx 6 bleeding-edge, `Unity.Mono`, `win-x64`** from
+&lt;https://builds.bepinex.dev/projects/bepinex_be&gt; and unzip it into the game folder,
+next to `Zoominoes.exe`. Zoominoes is a Unity 6 Mono game; BepInEx 5 will not work.
+Run the game once so BepInEx creates its folders, then close it.
+
+e.g. for Windows:
+&lt;https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.Mono-win-x64-6.0.0-be.785%2B6abdba4.zip&gt;
+
+**2. The mod** — unzip `ZoominoesArchipelago.zip` into the same game folder. It drops
+into `BepInEx/plugins/`.
+
+**3. The world** — put `zoominoes.apworld` in your Archipelago install's
+`custom_worlds/` folder.
+
+On Linux the game runs under Proton with the same files. Add
+`WINEDLLOVERRIDES="winhttp=n,b" %command%` to the Steam launch options, or the
+loader will not inject.
+
+## Playing
+
+Press **F1** for the connection panel, enter your server address, port, slot name
+and password, and connect. The panel opens by itself until you do. Details are
+remembered for next launch.
+
+Runs are played on a dedicated **AP** profile. Your existing saves are not read or
+written while the mod is installed.
+
+## What is randomised
+
+Animals, snacks, souvenirs, zookeepers and difficulty tiers arrive as Archipelago
+items, along with extra starting gold, extra plays and hand size.
+
+`randomize_starter_zookeeper` and `randomize_starter_unlocks` extend that to what you
+open with: a random zookeeper in place of Marina, and a random 6 animals, 4 snacks and
+4 souvenirs in place of Starfish, Fennec and the rest. Whatever the draw passes over
+becomes an item like anything else.
+
+Checks come from Gift Shop slots and from finishing a day. **Every difficulty tier
+has its own set of both** — "Tier 3 - Shop 2 - Slot 1" is a different location from
+"Tier 5 - Shop 2 - Slot 1", so each tier you unlock opens 43 fresh checks: 24 across
+its eight shops and 19 across its playable days. On top of that, winning with each
+zookeeper and clearing each tier are checks in their own right.
+
+Three goals: clear a target difficulty tier, clear it with several different
+zookeepers, or collect Zoo Tickets scattered across the multiworld.
+
+Only normal runs take part — daily challenges, seeded runs and challenge runs are
+left alone.
+
+Items apply from your **next** run, since the game fixes its content pool when a run
+begins.
+
+## Options
+
+`Zoominoes-template.yaml` has every option, its documentation and its weights. Put it
+in your Archipelago `Players` folder and change the name at the top.
+
+Content the seed has no room for is unlocked from the start rather than left
+unobtainable.
+
+
+</content>
+    <link href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.2</id>
+    <title>burger_shop_2 v0.3.2</title>
+    <updated>2026-08-09T16:22:06+00:00</updated>
+    <author>
+      <name>zsiegel701</name>
+    </author>
+    <content>This release contains several QOL updates for both Burger Shop 1 and 2.&#13;
+&#13;
+- The client will create and manage its own Archipelago save file.  This means a new save file is no longer needed for an Archipelago session, you just need to connect the client then load the Archipelago save file in Burger Shop.&#13;
+- Locations sent to Burger Shop will now automatically show that level as a 5-star completion on the map screen.  The exceptions to this are level 80 for Burger Shop 1 and Levels 118, 119, and 120 for Burger Shop 2, since they are required to reach the goal.&#13;
+- The zip file containing the game files have been updated to make re-installation easier.  You just need to copy over the "archipelago" and "properties" folder into your Burger Shop installation directory and replace all files.&#13;
+- The Burger Shop client windows are now named to make it easier to identify them.&#13;
+&#13;
+Additionally, &#13;
+- The Old Chap, Dog Lover, and Shirtless Guy customers cannot be placed in level 1 if character randomization is turned on, to prevent the rare case that there are no available levels in logic for the first 15 levels.</content>
+    <link href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.2"/>
   </entry>
 </feed>

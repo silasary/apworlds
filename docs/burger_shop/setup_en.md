@@ -25,9 +25,9 @@ The result should look like:
 Burger Shop/
 ├── archipelago/
 │   └── levels/
-│       ├── Game.xml
-│       ├── Layout.xml
-│       ├── Order_BizChick.xml
+│       ├── Game.xml.orig
+│       ├── Layout.xml.orig
+│       ├── Order_BizChick.xml.orig
 │       └── ... (remaining order files)
 ├── properties/
 │   └── params_user.xml
@@ -45,8 +45,7 @@ will create the directory that contains your save file information.
    ```
 4. Enter your slot name and password when prompted.
 5. Launch the game using `/launch` in the client console, or start it manually.
-6. **Create a new save file.** The client associates saves with your session at creation time — do not use a
-   save that was created before connecting.
+6. **Choose the `Archipelago` profile.** The client creates and manages it for you once you connect.
 
 ## Options
 
@@ -69,10 +68,9 @@ burger_shop_settings:
   game_install_path: "C:/Program Files (x86)/Steam/steamapps/common/Burger Shop"
 ```
 
-**My save file is not being detected.**
-Only saves created *after* connecting the client to the server are tracked. Create a fresh save once
-the client says that it's waiting for a save file to be created.
+**The client says the Archipelago profile belongs to a previous session.**
+The game is still open on the profile from an earlier seed, so the client cannot reset it. Close the
+game (or use `/restart`) and it will be laid down fresh for the current one.
 
 **Recipe changes are not showing up mid-level.**
-The game reads updated order files when a level starts. Finish the current level or return to the map screen
-to see newly unlocked recipes take effect.
+The game reads updated order files when a level starts. Finish the current level or return to the map screen to see newly unlocked recipes take effect.
