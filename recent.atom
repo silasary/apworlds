@@ -2,94 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-09T00:16:59.538229+00:00</updated>
+  <updated>2026-08-09T06:31:04.463417+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-96</id>
-    <title>Borderlands 2 v96</title>
-    <updated>2026-08-06T07:06:56+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
-&#13;
-new stuff (since 0.5.4):&#13;
-- fix UT connection issue (hopefully)&#13;
-- infinite backpack as yaml setting&#13;
-- AP travels in fast travel menu &#13;
-- new setting to remove symbols without removing cult of the vault challenges&#13;
-- named enemy locations toggleable&#13;
-- level up checks toggleable (need more options for this in the future)&#13;
-- slot name + seed for .items.txt file&#13;
-- migrate blgstor to settings dir (sdk_mods/settings/blgstor)&#13;
-- rigged slots purchaseable from earl&#13;
-- rigged slots are 1 spin and work for Torgue/Flamerock slots&#13;
-- logic fixes&#13;
-- rulebuilder refactor&#13;
-- some coop things working: loot spawns, sprint, equip blocking, travel commands (chat and fast travel station)</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-96"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v9</id>
-    <title>Pokemon BW Extra Logic Plugin v1.9.0</title>
-    <updated>2026-08-06T08:50:00+00:00</updated>
-    <author>
-      <name>RadisNoir</name>
-    </author>
-    <content>**Fixes**&#13;
-* Fixed Landorus appearing without Tornadus and Thundurus in the party&#13;
-* Imported the updated field move patches from the QoL plugin&#13;
-&#13;
-**YAML Options List**&#13;
-* The following options need to be added to the Black and White YAML under `plugin_options`:&#13;
-```&#13;
-  plugin_options:&#13;
-    extra_logic:  # same as v8&#13;
-      randomize_starting_town: true&#13;
-      starting_town_blacklist: []  # list in README&#13;
-      add_ss_ticket: true&#13;
-      add_pass: true&#13;
-      hm_with_badges: true&#13;
-      add_rock_smash: true&#13;
-      add_rock_smash_musharna: true  # requires add_rock_smash&#13;
-      extra_cut_trees: true&#13;
-      extra_cut_trees_kyurem: true   # requires extra_cut_trees&#13;
-      move_strength_boulders: true&#13;
-      move_strength_boulders_vi_road: true   # requires move_strength_boulders&#13;
-      dark_areas: ["Wellspring Cave B1F", "Mistralton Cave", "Challengers Cave"]  # supports "_All" and "_Random", see README&#13;
-```&#13;
-&#13;
-**Important Notes**&#13;
-* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.&#13;
-* It is not possible to add the extra logic options mid-playthrough.&#13;
-&#13;
-**Backwards Compatibility**&#13;
-* This version is compatible with v0.3.37+ of the main BW APworld&#13;
-* This version is compatible with v23 of the QoL Plugin&#13;
-&#13;
-**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v8...v9</content>
-    <link href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.3.3</id>
-    <title>i_am_your_beast v0.3.3</title>
-    <updated>2026-08-06T14:42:26+00:00</updated>
-    <author>
-      <name>petiboy7</name>
-    </author>
-    <content> **Bug Fixes**&#13;
-  - Fixed weapons being locked even when weapon rando is off.&#13;
-  - Fixed a generating but when Kick unlock is enable without weapons.</content>
-    <link href="https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.3.3"/>
-  </entry>
   <entry>
     <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.1</id>
     <title>Supermarket Simulator v0.3.1</title>
@@ -1072,6 +989,28 @@ Any question, Bug or idea, feel free to ask on the discord channel for the game.
     <link href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.2"/>
   </entry>
   <entry>
+    <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.2</id>
+    <title>Final Fantasy X v0.8.2</title>
+    <updated>2026-08-08T12:24:18+00:00</updated>
+    <author>
+      <name>Rurusachi</name>
+    </author>
+    <author>
+      <name>Andrewki</name>
+    </author>
+    <content>## FFX Apworld v0.8.2&#13;
+&#13;
+### Enhancement&#13;
+- Updates to internal rule classes. FFX custom rule classes now support `/explain` functionality from Universal Tracker (@Andrewki44)&#13;
+&#13;
+### Bug Fix&#13;
+- Fixed Shinryu being in logic immediately with the Monster Arena region (@Andrewki44)&#13;
+- Fixed Nova accessibility logic between Post-Nemesis &amp; Omega Weapon (@Rurusachi)&#13;
+- Fenrir &amp; Earth Eater reward locations are no longer enabled with Area &amp; Species rewards respectively (@Andrewki44)&#13;
+- Removed Aeon immunities from the randomized gear pool (@Rurusachi)</content>
+    <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/ArsonAssassin/DWAP/releases/tag/0.3.10</id>
     <title>Digimon World v0.3.10</title>
     <updated>2026-08-08T13:02:02+00:00</updated>
@@ -1431,5 +1370,51 @@ unobtainable.
 - Add Grading unlock item that unlocks grading&#13;
 - Fix access to cards not being correct</content>
     <link href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.3</id>
+    <title>pokemon_snap v0.5.3</title>
+    <updated>2026-08-09T02:58:24+00:00</updated>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <content>## What's Changed&#13;
+* Swapped out `random` for `world.random` to ensure consistent trash by @cobyw&#13;
+* Fixed Universal Tracker compatibility bug by @cobyw&#13;
+* Added PopTracker map auto-updating (pending PopTracker pack release)&#13;
+* Fixed crash caused by receiving an item mid-level (and icons will now appear mid-level)&#13;
+* Logic: Remove Pokemon Sign Detector from item pool if Pokemon Signs are disabled as checks&#13;
+* Code simplification and cleanup&#13;
+&#13;
+**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.5.2...v0.5.3</content>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.2</id>
+    <title>PixelDraw v1.3.2</title>
+    <updated>2026-08-09T03:09:03+00:00</updated>
+    <author>
+      <name>InterestedSC2</name>
+    </author>
+    <content>**Version 1.3.2​**&#13;
+&#13;
+_Archipelago Changes:_&#13;
+&#13;
+- ​Fixed the CHIP_PACK_5 issue&#13;
+- Fixed invalid patterns still being accepted in completion shape and needed patterns options&#13;
+- Code cleanup</content>
+    <link href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0b</id>
+    <title>Isles of Trials v0.2.0b0</title>
+    <updated>2026-08-09T05:30:14+00:00</updated>
+    <author>
+      <name>NyanMC</name>
+    </author>
+    <content>altered the rock sprite slightly (hopefully easier to distinguish from metal tiles)&#13;
+backported the improved health display from isles 2 (seeing temporary hearts should be easier)&#13;
+finally remembered to add the new and improved label</content>
+    <link href="https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0b"/>
   </entry>
 </feed>

@@ -460,6 +460,21 @@
       "version_simple": "1.0.0",
       "world_version": "1.0.0r7"
     },
+    "v1.1.10": {
+      "created_at": "2026-08-09T04:57:02Z",
+      "description": "been sitting on most of these bugs but too lazy to actually fix them until today\r\n\r\nQOL:\r\n- stars, keys, moat, caps are collected in the file select rather than waiting until you load up the game. this means plutonium mario 64 loads the pipes now after you reset the game, and other hacks have things like mips and toad in the main overworld spawn in after reset as well. moat is also drained after reset\r\n\r\nbugfixes:\r\n- moat actually works (dunno why it didnt tbh but i removed some legacy code which was for supporting v0.4.2 and earlier worlds and was no longer useful (unless someone has an async which is almost a year old) and apparently that fixed it\r\n- fixed bug with the progression checker which combined the progression of every hack in the multiworld so if one hack had a progressive c13 cannon it would make every hack have a progressive c13 cannon\r\n- same-slot coop works again\r\n- the game no longer says \"A trap has appeared!\" when you receive a 1-up mushroom from an offline-received trap",
+      "download_url": "https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.10/sm64hacks.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a04164c6b7e0ddc3103d6fc4b694069bf13b554b8dfa641206d6ad18e1fc4c47",
+      "html_url": "https://github.com/DNVIC/archipelago-sm64hacks/releases/tag/v1.1.10",
+      "minimum_ap_version": "0.6.3",
+      "size": 296721,
+      "source_url": "https://api.github.com/repos/DNVIC/archipelago-sm64hacks",
+      "tag": "v1.1.10",
+      "title": "v1.1.10",
+      "version_simple": "1.1.7",
+      "world_version": "1.1.7r2"
+    },
     "v1.1.2": {
       "created_at": "2026-04-02T20:30:07Z",
       "description": "- Fixed move rando being enabled in hacks that dont support move rando",

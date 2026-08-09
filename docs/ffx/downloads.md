@@ -1,9 +1,12 @@
 # Final Fantasy X
 
 ## Latest
-- <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.8.1/ffx.apworld">Latest Version (0.8.1)</a>
+- <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.8.2/ffx.apworld">Latest Version (0.8.2)</a>
 
 ## All Versions
+
+#### v0.8.2
+- <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.8.2/ffx.apworld">https://github.com/FFX-AP/Archipelago/releases/download/v0.8.2/ffx.apworld</a>
 
 #### v0.8.1
 - <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.8.1/ffx.apworld">https://github.com/FFX-AP/Archipelago/releases/download/v0.8.1/ffx.apworld</a>
