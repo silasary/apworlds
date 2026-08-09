@@ -67,7 +67,7 @@ Under [ChainLoader] change HideManagerGameObject = false to HideManagerGameObjec
 
 ### Install Plugin
 
-Extract the [latest release of the mod plugin]((https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases) into `TCG Card Shop Simulator\BepInEx\plugins` inside your game's install folder.
+Extract the [latest release of the mod plugin](https://github.com/FyreDay/TCG-CardShop-Sim-APClient/releases/latest) into `TCG Card Shop Simulator\BepInEx\plugins` inside your game's install folder.
 
 # IF YOU DON'T SEE A CONNECTION WINDOW WHEN YOU LAUNCH THE GAME DOUBLE CHECK THAT HideManagerGameObject IS SET TO TRUE IN THE BEPINEX.CFG FILE
 

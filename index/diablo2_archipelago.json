@@ -1138,6 +1138,36 @@
       "version_simple": "3.5.2",
       "world_version": "3.5.2"
     },
+    "Stable-3.5.4": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 3.5.4\n\n## Gate keys can no longer strand you (zone locking)\nThe big one. With zone locking on, your Progressive Act Keys could be placed\nanywhere in the multiworld \u2014 including behind another player's endgame. One\ntester's second Act 1 key sat in someone else's Act 5, the third in their Act 5\n*Nightmare*: nine zones to play, then nothing until that player finished the\ngame twice.\n\nGeneration now places every act's keys in the sphere of the act they open \u2014\nAct 1 keys in sphere 1, Act 2 in sphere 2, and so on through every difficulty.\nKeys still travel into other players' games; they just can never sit deeper\nthan the act that needs them. The generator also self-verifies the chain and\nrefuses to produce a seed that breaks it.\n\n**Regenerate your multiworld with the new apworld to get this protection.**\nThe launcher's Seed Check (updated in launcher 2.9.22) now audits any spoiler\nfor exactly this problem, so old seeds can be screened before you commit an\nevening to them.\n\n## The Summoner hunt completes\n\"Hunt: The Summoner\" never fired: the engine places him directly from the\nlevel preset, so kills bypassed the super-unique detection entirely. Kills of\npreset-placed named bosses (The Summoner, Radament, Griswold, Nihlathak) are\nnow recognised by their unique monster class. Story credit was always fine \u2014\nthis fixes the hunt check.\n\n## Waypoint tracker told the wrong story\nThe HUD tracker had its own waypoint\u2192area table, and its Act 2 tail was off by\none: standing in Far Oasis it looked up the Lost City waypoint and said\n\"[NOT FOUND]\" forever, even after the check was sent and accepted. One table\nnow \u2014 the same one the detector uses.\n\n## Quest-type toggles can no longer eat checks\nCompleting a quest while its type was toggled off stamped it \"done\" without\nsending the check \u2014 permanently, even after re-enabling the type. The toggle\nnow refuses the completion instead of recording it, so the check fires when\nyou turn the type back on.\n\n## Smaller fixes\n- Gate-condition banner under AP now says \"check sent \u2014 awaiting the key\"\n  instead of promising an unlock that hadn't arrived yet.\n- Boss kills are always logged (the kill log used to stop after 50 lines,\n  which made hunt reports impossible to diagnose).\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.5.4/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f8bdfd7824bc51d6ea2b82206ca294b5701632f6a0e83c103d3f7458295a5fda",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.5.4",
+      "minimum_ap_version": "0.5.0",
+      "size": 69806,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.5.4",
+      "title": "Stable 3.5.4",
+      "version_simple": "3.5.4",
+      "world_version": "3.5.4"
+    },
+    "Stable-3.5.5": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 3.5.5\n\n## DeathLink actually kills you now\nReceiving a DeathLink used to spawn a monster pack on your position \u2014 something\nyou could simply fight off, which made the whole pact meaningless. It now runs\nthe engine's own player-death routine: corpse, pets dismissed, respawn in town,\nexactly as if a monster had landed the blow.\n\nThe first attempt used poison damage and did not work, for a reason worth\nknowing: **in Diablo II poison can never kill a player** \u2014 it floors at 1 life\nno matter how much you apply. The fix calls the death handler directly instead.\n\nTwo guards come with it:\n\n- **A death caused by a DeathLink is never broadcast back.** Without that, two\n  linked players kill each other in an endless loop.\n- **Hardcore characters are exempt.** A DeathLink is not a good enough reason\n  to end a hardcore run permanently; those players get the notification only.\n  If the game cannot tell whether a character is hardcore, it refuses to kill.\n\nSending was already correct and is unchanged: only a real death is sent, never\na kick or a trap.\n\n## Starting skills \u2014 a real setting, and always tier 1\nHow many skills you begin with is now an Archipelago option (`starting_skills`,\ndefault 6), matching the setting standalone has always had. The game already\nknew how to read it; the apworld simply never sent one.\n\nStarting skills are now drawn from **tier 1 only** \u2014 the ten lowest-row skills\nof each class \u2014 in Archipelago as well. Previously Archipelago handed out the\nfirst few skills of a pool shuffled across all three tiers, so a run could open\non Frozen Orb or Blessed Hammer. Standalone never did this; the two modes now\nagree.\n\n## XP rewards up to 10,000,000\nThe XP reward minimum and maximum ceilings are raised from 1,000,000 to\n10,000,000, in the game, the apworld and the launcher alike.\n\n## Settings parity\nEvery Archipelago option now has a standalone counterpart and vice versa. The\ngaps closed this round: the Collection gold target (Archipelago-only until now)\nand the starting-skill count (standalone-only until now). The standalone skill\npool size slider is gone \u2014 the pool is the full set from the start, as\nArchipelago has always done it.\n\nUse launcher 2.9.23 or newer.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.5.5/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9336214caf14bd0468b13e31f25babf1c61e74a16a940287c97af5100a49b1b4",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.5.5",
+      "minimum_ap_version": "0.5.0",
+      "size": 71245,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.5.5",
+      "title": "Stable 3.5.5",
+      "version_simple": "3.5.5",
+      "world_version": "3.5.5"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",

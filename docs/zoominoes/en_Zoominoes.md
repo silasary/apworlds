@@ -9,12 +9,14 @@ configure and export a config file.
 
 Almost every animal, snack and souvenir is removed from your collection at the
 start. They come back as Archipelago items, so the pool a run draws from is only
-what the multiworld has sent you. Zookeepers beyond Marina and the difficulty tiers
-above the first are items too.
+what the multiworld has sent you. Every zookeeper but your starter, and the
+difficulty tiers above the first, are items too.
 
-A small floor stays unlocked so runs remain playable: the starter animals, a handful
-of commons, all gems, and Marina. Special events, board spaces and achievements are
-untouched.
+A small floor stays unlocked so runs remain playable: the starter animals, all gems,
+one zookeeper and fourteen commons. That set is Marina plus Starfish, Fennec and the
+rest unless you randomize it, in which case the seed draws its own zookeeper and its
+own 6 animals, 4 snacks and 4 souvenirs, and everything it passes over goes into the
+item pool. Special events, board spaces and achievements are untouched.
 
 ## What is the goal?
 
@@ -23,7 +25,7 @@ Clear a full 28-day run on your goal difficulty tier, 7 by default.
 ## Which items can be in another player's world?
 
 Animals, snacks, souvenirs, zookeepers and progressive difficulty tiers, plus filler
-of bonus gold, extra plays and bonus hand size.
+of extra starting gold, extra plays and bonus hand size.
 
 ## What does another world's item look like?
 

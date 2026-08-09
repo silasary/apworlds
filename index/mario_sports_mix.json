@@ -829,6 +829,21 @@
       "title": "Mario Sports Mix AP v2.1.4",
       "version_simple": "2.1.4",
       "world_version": "2.1.4"
+    },
+    "v2.2.0": {
+      "created_at": "2026-08-08T21:28:40Z",
+      "description": "## What's Changed?\r\n- **Exhibition Tour:** `find_num_exhibition_locs` was called with the wrong number of arguments in `locations.py`; the helper now consistently receives `enabled_sports`, `exhibition_type`, and `exhibition_difficulties`.\r\n- **Universal Exhibition:** Generation now requires at least one enabled main sport, so Sports Mix alone can no longer create impossible universal exhibition checks.\r\n- **Universal Exhibition:** Fixed `FillError` when Universal Exhibitions were enabled with no main sports.\r\n- **Exhibition Checks:** Now only generate when at least one main sport is enabled.\r\n- **Cup/Exhibition Access:** `can_play_any_cup`/`can_play_any_exhibition` now use actual generated match locations and no longer index an empty court list.\r\n- **Character/Special Sanity:** These checks can now be satisfied by any real generated tournament, exhibition, or Party Mode match.\r\n- **Court Sanity:** Checks are now created only for courts playable in the current configuration; empty exhibition difficulties no longer create phantom court checks.\r\n- **Court Sanity Access:** Now based on actual generated match locations, so Progressive Court and Progressive Cup configurations are handled correctly.\r\n- **Behemoth Rules:** Rule construction is now safe when no main sport is enabled, removing an empty-list `[0]` access.\r\n- **Boss Location:** Validation now includes the 'both' option when tournaments are disabled.\r\n- **Behemoth Config:** Configurations with no main sport enabled are now rejected early.\r\n- **Exhibition Tour Config:** Now validates All Sports type, at least one difficulty, and at least one main sport.\r\n- **Win Cups:** Now validates against the actual number of cups available for enabled sports/difficulties\r\n- **Character/Special Sanity Config:** Configurations with no playable match mode are now rejected early instead of becoming unreachable FillErrors.\r\n- **Unlock Items:** Removed unnecessary cup, court, and exhibition unlock items when no matching content exists.\r\n- **Party Palooza:** Party Palooza-only seeds can now generate correctly.\r\n- **Filler Handling:** Fixed rapid fire filler replacement\r\n\r\nNOTE: This release is only classed as compatible with itself in the client due to the large changelog, but it *should* hopefully be fine with existing multiworlds. If you want new features I'd recommend waiting for the 3.0.0 release.",
+      "download_url": "https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v2.2.0/mario_sports_mix.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f899702522fb185801f98ac9955d36bc428343e2a46a8414c88f811de82c40e2",
+      "html_url": "https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v2.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 121067,
+      "source_url": "https://api.github.com/repos/ElectroStarz/ArchipelagoMSM",
+      "tag": "v2.2.0",
+      "title": "Mario Sports Mix AP v2.2.0 - The Fuzzer Patch",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0"
     }
   }
 }

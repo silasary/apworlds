@@ -2,136 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-08T18:20:57.109146+00:00</updated>
+  <updated>2026-08-09T00:16:59.538229+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/1.0.0</id>
-    <title>YARG v1.0.0</title>
-    <updated>2026-08-05T17:56:58+00:00</updated>
-    <author>
-      <name>Energymaster22</name>
-    </author>
-    <author>
-      <name>thedrummonger</name>
-    </author>
-    <content># Use Client Version 1.y.z.&#13;
-&#13;
-New:&#13;
-- Added an `archipelago.json` manifest file to ensure compatibility with Archipelago 0.7.0.&#13;
-&#13;
-Changes:&#13;
-- Reduced Slot Data usage&#13;
-  - This is a ***breaking*** change and does require a client update.&#13;
-- This world and client will now use something similar to semantic versioning. In an x.y.z versioning number:&#13;
-  - x will be for changes that break compatibility between client and apworld. APWorld versions that change this number will only work with versions of the client that match.&#13;
-  - y will be for song/feature updates that do not break compatibility.&#13;
-  - z will be for small patches that do not break compatibility.&#13;
-&#13;
-&#13;
-## What's Changed&#13;
-* Pull in Whiteweek Pack by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/40&#13;
-* Merge pull request #46 from energymaster22/45-add-yarn-request-pack-03 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/48&#13;
-* Pull In setlist updates by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/51&#13;
-* Merge pull request #58 from energymaster22/57-add-variety-pack-1 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/59&#13;
-* Add Mac note to README.md by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/60&#13;
-* Update Readme in minimize branch by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/61&#13;
-* Minimize Slot Data Use by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/62&#13;
-* Added archipelago.json by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/64&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/0.0.25...1.0.0</content>
-    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.0</id>
-    <title>Refunct v1.3.0</title>
-    <updated>2026-08-05T17:57:23+00:00</updated>
-    <author>
-      <name>Spineraks</name>
-    </author>
-    <content>## Co-op!&#13;
-- In the yaml and in in-game settings, you can enable seeing other players. If other players in the multiworld have this setting on too, you can see them walking around in your game! &#13;
-  - The option is called "see other players" and it determines how many other players you can see in your game. Setting it to 0 turns it off. I think 10 players at a time should be fine performance-wise.&#13;
-  - (Technical: packets are only sent to Refunct slots with the setting on, at max 1 per second. The send-rate slowly decreases with the number of players, making it so there are never more than 10 packets per second in total for this in the end (which only occurs if there are 10+ players).)&#13;
-- You can now connect to the same slot as someone else, and buttons/platforms/cubes in the main gamemode will be synced! You will also still be able to see each-other.&#13;
-&#13;
-### Mod:&#13;
-- Starting from v1.3.0 generated games, you can only join games with the *exact* correct mod version. If you log in with another version, the mod will show which version you need (bottom-left and top-right). All previous versions are available in the releases tab.&#13;
-&#13;
-### Options &amp; Gameplay:&#13;
-- Added "Ascend" trap. ☁️ &#13;
-- Added option to have only gameplay-traps.&#13;
-&#13;
-### Fixes:&#13;
-- Go-mode in UT now shows correctly. If you have enough grass and (one of the following)&#13;
-  - if your goal is known and you can reach it.&#13;
-  - if your goal is unknown and you have been to your final location.&#13;
-- When connecting, it now shows that it is still connecting instead of pretending it worked.&#13;
-- Removed a jump from logic that was very tight (22-1 -&gt; 22-2).</content>
-    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Wakamu/Archipelago/releases/tag/0.3.20</id>
-    <title>Archipelago Visual Tracker v0.3.20</title>
-    <updated>2026-08-05T19:16:00+00:00</updated>
-    <author>
-      <name>Wakamu</name>
-    </author>
-    <content>**Fixes**:&#13;
-- Client failing to launch when using shortcut.</content>
-    <link href="https://github.com/Wakamu/Archipelago/releases/tag/0.3.20"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.4.1</id>
-    <title>Phoenotopia: Awakening v0.4.0r2</title>
-    <updated>2026-08-05T20:38:51+00:00</updated>
-    <author>
-      <name>Lenamphy</name>
-    </author>
-    <author>
-      <name>ET_is_here</name>
-    </author>
-    <author>
-      <name>fight4day</name>
-    </author>
-    <content>&lt;h1&gt;0.4.1 - Bug fixes:&lt;/h1&gt;&#13;
-&#13;
-- Progressive Prelude of Panselo no longer causes a LoadLevel error.&#13;
-- Grabbing regular loot in screens that do not include an AP check no longer causes an error.&#13;
-&#13;
-Full patch notes of 0.4 can be found [here](https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.4.0).</content>
-    <link href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.5</id>
-    <title>League of Legends v0.2.5</title>
-    <updated>2026-08-05T22:53:56+00:00</updated>
-    <author>
-      <name>kbab</name>
-    </author>
-    <content>- Contributions from '@Fghtk':&#13;
-  - Fixed champions with 'Jade_' Data Dragon variants showing as locked.&#13;
-  - Added 'item_name_group' called 'Champions' so you can hint all of your champion unlock items.&#13;
-- Fixed teammate objective checks (should be robuster).&#13;
-- Added WMIC fallback support for Windows system detection.</content>
-    <link href="https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.3.2</id>
-    <title>The Legend of Zelda: A Link to the Past v1.3.2</title>
-    <updated>2026-08-06T04:46:25+00:00</updated>
-    <author>
-      <name>aurabot</name>
-    </author>
-    <content>v1.3.2&#13;
-&#13;
-* Fixed logic believing Bombos could be used without a sword&#13;
-* Fixed a generation error when the Bomb Shop was placed at a Desert Palace entrance</content>
-    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.3.2"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-96</id>
     <title>Borderlands 2 v96</title>
@@ -1059,6 +934,7 @@ See https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.2&#13;
 Changes/Bugfixes:&#13;
 - Tremendous thanks to @/rentashayanvi, @/swagalicous, and @/raptor980 for reporting and helping with many of these changes and bugs.&#13;
 - The client no longer crashes when the wrong directory is selected and will now exit gracefully and prompt you again on next open.&#13;
+- Quests will now not close on act exit, you will have to complete them properly.&#13;
 - "The Taming of the Holy Fire" no longer needs the Scholar tag to be deciphered.&#13;
 - "Driftwood: Dessicated Undead (490, 828)" and the corresponding "Lich" hit list objective has been removed as it is missable.&#13;
 - The Kraken in the Arx harbor has been added as a check and hit list objective.&#13;
@@ -1326,5 +1202,234 @@ Couple Access fixes and fixed Quarry Access&#13;
 &#13;
 Now you also can choose amount checks for Fool shop</content>
     <link href="https://github.com/DeadEyeDv/Brutal-Orchestra-Archipelago/releases/tag/v2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.2</id>
+    <title>Refunct v1.3.2</title>
+    <updated>2026-08-08T19:00:50+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content>## Co-op!&#13;
+- In the yaml and in in-game settings, you can enable seeing other players. If other players in the multiworld have this setting on too, you can see them walking around in your game! &#13;
+  - The option is called "see other players" and it determines how many other players you can see in your game. Setting it to 0 turns it off. I think 10 players at a time should be fine performance-wise.&#13;
+  - (Technical: packets are only sent to Refunct slots with the setting on, at max 1 per second. The send-rate slowly decreases with the number of players, making it so there are never more than 10 packets per second in total for this in the end (which only occurs if there are 10+ players).)&#13;
+- You can now connect to the same slot as someone else, and buttons/platforms/cubes in the main gamemode will be synced! You will also still be able to see each-other.&#13;
+&#13;
+### Mod:&#13;
+- Starting from v1.3.0 generated games, you can only join games with the *exact* correct mod version. If you log in with another version, the mod will show which version you need (bottom-left and top-right). All previous versions are available in the releases tab.&#13;
+- You can now press CTRL+P to enter the practice tool for speedruns. Might find a better way to reach that soon.&#13;
+&#13;
+### Options &amp; Gameplay:&#13;
+- You can now choose which effects and traps you want.  ⚠️ yaml has changed quite a bit⚠️ &#13;
+- Added "Ascend" trap. ☁️ &#13;
+- Added "Depthless trap". 🙈 &#13;
+- Pretty traps are now "effects" and are just filler items instead of traps.&#13;
+&#13;
+### Fixes:&#13;
+- Go-mode in UT now shows correctly. If you have enough grass and (one of the following)&#13;
+  - if your goal is known and you can reach it.&#13;
+  - if your goal is unknown and you have been to your final location.&#13;
+- When connecting, it now shows that it is still connecting instead of pretending it worked.&#13;
+- Removed a jump from logic that was very tight (22-1 -&gt; 22-2).&#13;
+- Added a jump to logic because it is very easy with ledge grab (3-3 -&gt; 3-4)</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0%2Bbeta6</id>
+    <title>Deltarune v2.1.0+beta6</title>
+    <updated>2026-08-08T20:02:55+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
+&#13;
+## **&gt;&gt;&gt; This is an unstable pre-release. Unless you're testing, we recommend using version v2.0.6 instead. &lt;&lt;&lt;**&#13;
+&#13;
+[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
+[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
+&#13;
+## **&gt;&gt;&gt; PATCH FILES HAS BEEN REMOVED FROM THE APWORLD, YOU HAVE TO DOWNLOAD IT FROM THE OTHER REPOSITORY &lt;&lt;&lt;**&#13;
+&#13;
+&#13;
+# Changelog&#13;
+&#13;
+## APworld&#13;
+- New option when unlocked character is enable to start with a random character&#13;
+- Clean up&#13;
+- Fix crash when other worlds was trying to hash deltarune item&#13;
+- Rework of the overflow logic (faster)&#13;
+- Add missing lightcandy&#13;
+- Remove Floweryscarf, only brokenscarf remains</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.0%2Bbeta6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.11</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.11</title>
+    <updated>2026-08-08T20:22:30+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.11
+
+**Branch:** main
+**Date:** 2026-08-08 20:28 UTC
+
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.10&lt;/strong&gt;&lt;/summary&gt;
+
+- fix(size matters): infobot pokitaru is now infobot pokitaru and ryllus (535db97f)
+- fix(size matters): nicer title for window using r&amp;c 5 if multiple titles are available (ab3773fc)
+
+&lt;/details&gt;
+
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.10...rac-size-matters/v0.4.11
+
+### Notes
+This release was automatically generated from the **main** branch.
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
+</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.11"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v2.2.0</id>
+    <title>Mario Sports Mix v2.2.0</title>
+    <updated>2026-08-08T21:28:40+00:00</updated>
+    <author>
+      <name>ElectroStarz</name>
+    </author>
+    <content>## What's Changed?&#13;
+- **Exhibition Tour:** `find_num_exhibition_locs` was called with the wrong number of arguments in `locations.py`; the helper now consistently receives `enabled_sports`, `exhibition_type`, and `exhibition_difficulties`.&#13;
+- **Universal Exhibition:** Generation now requires at least one enabled main sport, so Sports Mix alone can no longer create impossible universal exhibition checks.&#13;
+- **Universal Exhibition:** Fixed `FillError` when Universal Exhibitions were enabled with no main sports.&#13;
+- **Exhibition Checks:** Now only generate when at least one main sport is enabled.&#13;
+- **Cup/Exhibition Access:** `can_play_any_cup`/`can_play_any_exhibition` now use actual generated match locations and no longer index an empty court list.&#13;
+- **Character/Special Sanity:** These checks can now be satisfied by any real generated tournament, exhibition, or Party Mode match.&#13;
+- **Court Sanity:** Checks are now created only for courts playable in the current configuration; empty exhibition difficulties no longer create phantom court checks.&#13;
+- **Court Sanity Access:** Now based on actual generated match locations, so Progressive Court and Progressive Cup configurations are handled correctly.&#13;
+- **Behemoth Rules:** Rule construction is now safe when no main sport is enabled, removing an empty-list `[0]` access.&#13;
+- **Boss Location:** Validation now includes the 'both' option when tournaments are disabled.&#13;
+- **Behemoth Config:** Configurations with no main sport enabled are now rejected early.&#13;
+- **Exhibition Tour Config:** Now validates All Sports type, at least one difficulty, and at least one main sport.&#13;
+- **Win Cups:** Now validates against the actual number of cups available for enabled sports/difficulties&#13;
+- **Character/Special Sanity Config:** Configurations with no playable match mode are now rejected early instead of becoming unreachable FillErrors.&#13;
+- **Unlock Items:** Removed unnecessary cup, court, and exhibition unlock items when no matching content exists.&#13;
+- **Party Palooza:** Party Palooza-only seeds can now generate correctly.&#13;
+- **Filler Handling:** Fixed rapid fire filler replacement&#13;
+&#13;
+NOTE: This release is only classed as compatible with itself in the client due to the large changelog, but it *should* hopefully be fine with existing multiworlds. If you want new features I'd recommend waiting for the 3.0.0 release.</content>
+    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0</id>
+    <title>zoominoes v0.1.0.post2</title>
+    <updated>2026-08-08T21:34:27+00:00</updated>
+    <author>
+      <name>chickentuna</name>
+    </author>
+    <content>Community testing build. Feedback and bug reports welcome.
+
+## Install
+
+**1. BepInEx** — download **BepInEx 6 bleeding-edge, `Unity.Mono`, `win-x64`** from
+&lt;https://builds.bepinex.dev/projects/bepinex_be&gt; and unzip it into the game folder,
+next to `Zoominoes.exe`. Zoominoes is a Unity 6 Mono game; BepInEx 5 will not work.
+Run the game once so BepInEx creates its folders, then close it.
+
+e.g. for Windows:
+&lt;https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.Mono-win-x64-6.0.0-be.785%2B6abdba4.zip&gt;
+
+**2. The mod** — unzip `ZoominoesArchipelago.zip` into the same game folder. It drops
+into `BepInEx/plugins/`.
+
+**3. The world** — put `zoominoes.apworld` in your Archipelago install's
+`custom_worlds/` folder.
+
+On Linux the game runs under Proton with the same files. Add
+`WINEDLLOVERRIDES="winhttp=n,b" %command%` to the Steam launch options, or the
+loader will not inject.
+
+## Playing
+
+Press **F1** for the connection panel, enter your server address, port, slot name
+and password, and connect. The panel opens by itself until you do. Details are
+remembered for next launch.
+
+Runs are played on a dedicated **AP** profile. Your existing saves are not read or
+written while the mod is installed.
+
+## What is randomised
+
+Animals, snacks, souvenirs, zookeepers and difficulty tiers arrive as Archipelago
+items, along with extra starting gold, extra plays and hand size.
+
+`randomize_starter_zookeeper` and `randomize_starter_unlocks` extend that to what you
+open with: a random zookeeper in place of Marina, and a random 6 animals, 4 snacks and
+4 souvenirs in place of Starfish, Fennec and the rest. Whatever the draw passes over
+becomes an item like anything else.
+
+Checks come from Gift Shop slots and from finishing a day. **Every difficulty tier
+has its own set of both** — "Tier 3 - Shop 2 - Slot 1" is a different location from
+"Tier 5 - Shop 2 - Slot 1", so each tier you unlock opens 43 fresh checks: 24 across
+its eight shops and 19 across its playable days. On top of that, winning with each
+zookeeper and clearing each tier are checks in their own right.
+
+Three goals: clear a target difficulty tier, clear it with several different
+zookeepers, or collect Zoo Tickets scattered across the multiworld.
+
+Only normal runs take part — daily challenges, seeded runs and challenge runs are
+left alone.
+
+Items apply from your **next** run, since the game fixes its content pool when a run
+begins.
+
+## Options
+
+`Zoominoes-template.yaml` has every option, its documentation and its weights. Put it
+in your Archipelago `Players` folder and change the name at the top.
+
+Content the seed has no room for is unlocked from the start rather than left
+unobtainable.
+
+
+</content>
+    <link href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1</id>
+    <title>TCG Card Shop Simulator v1.2.0rc1</title>
+    <updated>2026-08-08T22:32:33+00:00</updated>
+    <author>
+      <name>FyreDay</name>
+    </author>
+    <content>### Changelog&#13;
+- fix Bulk Box ids&#13;
+- Add Grading unlock item that unlocks grading&#13;
+- Fix access to cards not being correct</content>
+    <link href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1"/>
   </entry>
 </feed>
