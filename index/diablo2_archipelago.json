@@ -1198,6 +1198,36 @@
       "version_simple": "3.5.7",
       "world_version": "3.5.7"
     },
+    "Stable-3.5.8": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 3.5.8\n\n## Cheating in a Progressive Act Key now opens the gate you are stuck on\n\nGiving yourself \"Progressive Act 2 Key (Normal)\" \u2014 from the launcher's item\ndialog or with `!getitem` \u2014 always re-opened that act's **first** gate. If you\nwere stuck on gate 3, nothing happened, no matter how many times you tried.\n\nThe four copies of an act's key all share one item id; which gate a copy opens\nis worked out from the check it came from. A key granted by cheat has no check\nbehind it, so it fell through to an old fallback meant for legacy bridges, and\nthat fallback always picked gate 1.\n\nIt now opens the next unopened gate instead. Reconnecting does not hand out\nextra gates: the count is taken per session against what you already owned when\nthe first such key arrived, so the server replaying your item history re-grants\nexactly the same gates rather than growing them.\n\nReported by fariel: *\"Giving myself the item Progressive Act 2 Key (Normal)\ndidn't work. No combination of restarting, giving the item, etc worked.\"*\n\n---\n\nBoth this and the matching launcher release (2.9.28) are worth taking. The\nlauncher one fixes a seed-generation bug that could make a seed unwinnable.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.5.8/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c7907547ea5496aa9e689752251e58de4ea0af111c95145891976acddcff6072",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.5.8",
+      "minimum_ap_version": "0.5.0",
+      "size": 71638,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.5.8",
+      "title": "Stable 3.5.8",
+      "version_simple": "3.5.8",
+      "world_version": "3.5.8"
+    },
+    "Stable-3.5.9": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 3.5.9\n\n## The Treasure Cow actually pays out now\n\nTwo separate bugs, and they hid each other.\n\n**It often dropped nothing at all.** The cow's death is spotted by polling its\nunit pointer every tick. Diablo II recycles a corpse's unit from its pool, and\nif that happened between two polls the code took a branch that logged \"LOST \u2014\nno loot\" and moved on. No drop, no message, nothing on screen. That is the only\npath that produces exactly nothing with no trace, and it is almost certainly\nwhat testers were hitting.\n\nThe game does not free a *live* monster in a loaded area, so a unit that\nvanishes while you are still standing there is a dead one. That now counts as a\nkill. Only leaving the area \u2014 a real unload \u2014 counts as a loss.\n\n**And when it did work, the payout was ordinary.** The cow queued one boss loot\ntable: 3-5 items, exactly what any quest loot reward gives. It now queues\n**twelve** \u2014 36-60 items, dropped one table per 250 ms so they spread over about\nthree seconds instead of landing as a single heap.\n\nThe drain queue was also capped at 5, so raising the count alone would have\nthrown two thirds of it away silently. The cap is 16 now.\n\nYou also get a notification and a line in `Archipelago/treasure_cow.log` on both\npaths, so if a cow ever comes up short again the log says why instead of staying\nquiet.\n\nReported by Maegis: *\"Treasure cow dropped nothing.\"*\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.5.9/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "221a9a11a5f428af5ca6d51ad7f9ec0c8e51067136e1d405fef23000aba065b7",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.5.9",
+      "minimum_ap_version": "0.5.0",
+      "size": 71638,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.5.9",
+      "title": "Stable 3.5.9",
+      "version_simple": "3.5.9",
+      "world_version": "3.5.9"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
