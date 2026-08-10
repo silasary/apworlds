@@ -105,6 +105,22 @@
       "title": "v0.1.5-alpha",
       "version_simple": "1.0.0",
       "world_version": "1.0.0r2"
+    },
+    "v0.1.6-alpha": {
+      "created_at": "2026-08-05T21:37:36Z",
+      "description": "**Item Delivery**\r\n\r\n- Fixed engrams that were recorded as unlocked but never became craftable. Happened when the item arrived while you were dead or respawning; the log said it succeeded.\r\n- Fixed items that Archipelago awarded and the game never received at all. Two causes: an item index was marked delivered before its line reached disk, and a lost line could not be replayed.\r\n- Items now WAIT for you. Anything that arrives while you are dead or offline is held and delivered when you are back on your feet, instead of being applied to nobody(bug with new connector system).\r\n- Fixed babies not being claimable in multiplayer (\"Taming is locked for this creature\"). Also affected cryopod and soul-ball releases.\r\n- Fixed checks being lost when the game could not tell which survivor earned them.\r\n\r\n**Engrams**\r\n\r\n- Fixed 40 engrams that could never be unlocked(weird bug once again), Stimulant among them. They were also being retried every tick forever - one server log reached 238 MB, roughly half of it that retry.\r\n\r\n**QOL**\r\n\r\n- The plugin version is now shown in chat on connect, on join, and in `/apstatus`.(let's start normalizing sending me logs if you are receiving a bug)\r\n\r\n**Maps**\r\n\r\n- Added early support for Scorched Earth and Ragnarok, what is currently done is their creatures, engrams, bosses, artifacts, supply drops, and explorer notes(I am sure something is missed here, like I said early). \r\n- 31 exploration regions on scorched earth, 37 on Ragnarok\r\n- Very early here, I have not tested much for logic on this, should not be used in a long term run but for testing, it should be fine. \r\n\r\n**Upgrading: replace the WHOLE plugin folder, not just the dll - the data files changed too. You also need to regenerate your seed. If you use multiplayer true, everyone should /connect once.**\r\n\r\nOnce again big thanks to Lurch, Beeno, Avocado, and Brandon. Attached once again is Avocado's Launcher. USE IT! It makes life much easier(or so I am told). https://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher/releases/tag/v0.4.8",
+      "download_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.1.6-alpha/ark_ase.apworld",
+      "has_manifest": true,
+      "hash_sha256": "71c88cf7edf86ac25ef4ecaecbece1d1026a365990a7a49554cf4b6c7e914cc7",
+      "html_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.1.6-alpha",
+      "maximum_ap_version": "0.9.99",
+      "minimum_ap_version": "0.6.0",
+      "size": 134144,
+      "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
+      "tag": "v0.1.6-alpha",
+      "title": "v0.1.6-alpha",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
     }
   }
 }

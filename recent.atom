@@ -2,111 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-10T12:27:36.114303+00:00</updated>
+  <updated>2026-08-10T18:31:04.443172+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.3</id>
-    <title>Mina The Hollower v0.11.3</title>
-    <updated>2026-08-07T01:54:07+00:00</updated>
-    <author>
-      <name>FyreDay, Axertin, ZXavier</name>
-    </author>
-    <content>This is a beta release. This means it is stable with no major bugs. If you find a bug please report it in the [Github Issues](https://github.com/FyreDay/Archipelago-MinaTheHollower/issues)&#13;
-&#13;
-Install guide and more information is in the [AP world Info Document](https://github.com/FyreDay/Archipelago-MinaTheHollower/blob/main/worlds/mina_the_hollower/docs/en_Mina%20The%20Hollower.md)&#13;
-&#13;
-### Changelog&#13;
-&#13;
-- Fix Bridge weaver and Burrow conflict&#13;
-- Fix Bridge weaver over water&#13;
-- Update names of many locations to be more descriptive&#13;
-- Add Wallowers logic to the rest of the jump logic&#13;
-- Add Dummy cache and brisk brew to jump logic&#13;
-- Fix double side arm permit&#13;
-- Fix extra max bone up checks</content>
-    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.2</id>
-    <title>Idle Loops v0.4.2</title>
-    <updated>2026-08-07T04:03:42+00:00</updated>
-    <author>
-      <name>IHaveNoFunnyName</name>
-    </author>
-    <content>## Idle Loops AP 0.4.2 ##&#13;
-#### "I have no control over the versioning scheme i chose this is a major release despite being versioned as a patch" ####&#13;
-&#13;
-### APWorld: ###&#13;
-- Rewrote everything for options, and as such:&#13;
-- Options!&#13;
-	- Toggles for location types&#13;
-	- Set max level per location type&#13;
-	- Goal based defaults (That are reasonable and playtested this time!)&#13;
-		- (Probably should have been presets)&#13;
-	- You can assume the new features below also have options to enable/disable them.&#13;
-- Added "Mana Logic" for Z1, i.e. AP knows exactly (well, underestimates) how much mana/gold you can get and what locations are possible&#13;
-	- This let me turn off the heavy handed previous logic and now playthroughs of Z1 actually feel different!&#13;
-- Added a "Shop" to Z1/3 to buy checks for ramping gold costs&#13;
-- Respect Vanilla skill requirements for actions (i.e. Heal The Sick's "Unlocked at 12 Magic")&#13;
-	- Unsupported additional option to also respect progress bar requirements, it's all implemented and working i just don't want complaints about Fill Errors or how close to vanilla it feels&#13;
-- Make Mana Reduction actions a requirement for what they reduce&#13;
-- Logically guarantee 10k mana from Z1 into Z2&#13;
-- Require Glasses to be in Z1&#13;
-- Add a second Glasses to the pool (you start the loop with Glasses if you have both)&#13;
-- Batch Wild Mana and Herbs 10x&#13;
-- Added a "Nothing" filler item&#13;
-- Added Gamespeed, Stat Exp and Skill Exp mults, both global and as items.&#13;
-	(No skill exp item it would feel bad to spend time leveling something then get an item that would have sped it up by 10%)&#13;
-- Generally improved logic all around&#13;
-&#13;
-### Client: ###&#13;
-- Also rewrote everything but for no reason&#13;
-	- That's a lie things are properly laid out now i have a build process and everything&#13;
-- Colourful message log&#13;
-	- Corrected colours on Lloyd's fork's dark mode so these colours align with other AP clients and Strength is Red again.&#13;
-- Redid scouting properly (compared to the very minimal original), largely a code difference but they're colourful now (and are placed in every relevant tooltip)&#13;
-- This feels like retreading the above but did your eyes gloss over 'Added a "Shop"'? That needed me to figure out how to inject actions into the game!&#13;
-	- Another thing that would have been way easier if i forked the game rather than a client mod.&#13;
-- Added a tooltip to the "AP log" title displaying received non-action items&#13;
-- Fixed starting items not having an effect the first loop after connecting&#13;
-&#13;
-And a whole lot of internal changes, optimizations and improvements (as implied by rewriting everything) that aren't really user facing so i didn't want to turn them into a patch note.</content>
-    <link href="https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.0</id>
-    <title>plateup v0.2.7.0</title>
-    <updated>2026-08-07T04:59:43+00:00</updated>
-    <author>
-      <name>CazIsABoi</name>
-    </author>
-    <content>## What's New?&#13;
-- Fixed for the Turning Up The Heat Update&#13;
-- Added Fajitas and it's items and checks&#13;
-&#13;
-[Mod Update 0.2.7.0](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.7.0)</content>
-    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.3</id>
-    <title>SM64: Spicy Mycena 64 v0.2.3</title>
-    <updated>2026-08-07T05:04:45+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>apworld updates:&#13;
-- Fixed Red Coin logic for Wet-Dry World.&#13;
-- Added detailed Universal Tracker /explain output for individual coin sources, displaying required regions, items, moves, and logic tricks for each set of coins.&#13;
-- Fixed the Tower of the Wing Cap Permanent Coins route so it does not incorrectly require the Coin Mastery trick.&#13;
-- Various other under the hood fixes.&#13;
-&#13;
-sm64ex updates:&#13;
-- Whomps' and Merry-go-round Boos' coins should function correctly on Permanent Coins mode.</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.3"/>
-  </entry>
   <entry>
     <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-98</id>
     <title>Borderlands 2 v98</title>
@@ -1274,5 +1174,99 @@ Install guide and more information is in the [AP world Info Document](https://gi
 - Fix double side arm permit with kite check&#13;
 - Fix QB head carry check</content>
     <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/cxve/q-ap-world/releases/tag/v2.0.1</id>
+    <title>Q-UP v2.0.1</title>
+    <updated>2026-08-10T09:10:38+00:00</updated>
+    <author>
+      <name>cxve</name>
+    </author>
+    <content>**Info** [Game Page](&lt;https://github.com/cxve/q-ap-world/blob/main-q-up/worlds/q_up/docs/en_Q-UP.md&gt;) - [Setup Guide](&lt;https://github.com/cxve/q-ap-world/blob/main-q-up/worlds/q_up/docs/setup_en.md&gt;)&#13;
+**Downloads** [World](&lt;https://github.com/cxve/q-ap-world/releases/&gt;) - [Mod](&lt;https://github.com/cxve/q-ap-mod/releases/&gt;) - [PopTracker](&lt;https://github.com/cxve/q-ap-poptracker/releases/&gt;)&#13;
+## 💎 Changes&#13;
+- Trying to generate a world with more progression items than locations will now raise OptionErrors&#13;
+- Optimized shuffling behavior&#13;
+- The world will no longer generate filler items when max items is being exceeded&#13;
+## 🛠️ Fixes&#13;
+- Fixed a crash when skill distribution check is disabled&#13;
+- Fixed randomizer getting stuck in a loop when trying to resolve 01_START skill&#13;
+- Added missing logic check for ITEM_RECYCLING_SYSTEM&#13;
+- Option creator will no longer allow to generate worlds with invalid challenge location ids&#13;
+- Using the same seed should now always result in the same world&#13;
+&#13;
+**Full Changelog**: https://github.com/cxve/q-ap-world/compare/v2.0.0...v2.0.1</content>
+    <link href="https://github.com/cxve/q-ap-world/releases/tag/v2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-0.8.3</id>
+    <title>Slay The Princess v0.8.0r2</title>
+    <updated>2026-08-10T11:36:26+00:00</updated>
+    <author>
+      <name>Onilaf</name>
+    </author>
+    <content>Add Narrator item to talk to him at the end of the 5th loop&#13;
+Add 6 step of Oblivion as locations&#13;
+Add the pristine sword item (for apotheosis)&#13;
+&#13;
+Possibility of combining hearts for HearRando (for example, Deep Heart and Bright Heart (Grey Hearts) are the same location)&#13;
+Change in the YAML to combine the chapter and chapter global options&#13;
+&#13;
+Fixed an issue where 41 filler items were being created extra&#13;
+Fixes an interaction issue between Gifts items and Mirrors locations</content>
+    <link href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-0.8.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.3</id>
+    <title>johnny_upgrade v1.3</title>
+    <updated>2026-08-10T12:59:57+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>## What's New&#13;
+* Total logic overhaul: no more frame perfect inputs and crazy tech in logic by default (turn on knockback and recoil boosts if you want the full speedrunner experience, just know you'll be expected to BLJ knockback boost using spikes, boost backwards with the gun to reach coins in shorter time, etc.)&#13;
+* More logic in shops to spread more evenly across logic spheres and reduce the early grind some (depends some on your multiworld size)&#13;
+* Added a logic requirement for the double jump check as it requires XP gained from accessing later areas of the map&#13;
+* G and H hotkeys added to collapse/hide the archipelago view&#13;
+&#13;
+## Known Issues&#13;
+* In-game log shows item and location IDs instead of names&#13;
+&#13;
+## Setup&#13;
+To install the client mod:&#13;
+1. Get the Tamper Monkey extension for your browser&#13;
+2. Install the script from below by clicking it (should install automatically)&#13;
+3. Navigate to https://www.coolmathgames.com/0-johnny-upgrade&#13;
+4. Have fun :)</content>
+    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/danielgruethling/Archipelago/releases/tag/0.3.3</id>
+    <title>Little Witch Nobeta v0.3.3</title>
+    <updated>2026-08-10T17:30:25+00:00</updated>
+    <author>
+      <name>fragger</name>
+    </author>
+    <author>
+      <name>espalchemist</name>
+    </author>
+    <content>This is version 0.3.3 for the new apworld of Little Witch Nobeta AP to use with the new MelonLoader client mod.&#13;
+&#13;
+0.3.3 changes compared to 0.3.2:&#13;
+- Several logic fixes&#13;
+- Renamed "Defeat Tania" location to just "Tania" like other bosses&#13;
+- Added new options:&#13;
+  - Condensed magic: Getting a magic book will instantly elevate Nobetas knowledge of that magic to its maximum level&#13;
+  - Maximum magic level: Allows to configure the maximum level for magic knowledge below level 5 (for more difficulty)&#13;
+- Changed how trial keys work&#13;
+  - Instead of having to carry around several trial key items which block the inventory slots there are now separate trial keys but they are stored as a variable instead&#13;
+&#13;
+From now on the game client mod and the apworld will have seperate releases. For the client mod look [here](https://github.com/danielgruethling/LittleWitchNobetaAP/releases).&#13;
+&#13;
+For a setup guide look [here](https://github.com/danielgruethling/Archipelago/blob/game_lwn/worlds/little_witch_nobeta/docs/setup_en.md). The links to the player options there only work when you run the web host yourself. Generate a template yaml using the launcher option and set your personal options from there.&#13;
+&#13;
+Logic is now partially generated from this repo: https://github.com/danielgruethling/NobetaLogic&#13;
+When you want to PR logic fixes and they go into rules.py, regions.py or locations.py, please PR them there.</content>
+    <link href="https://github.com/danielgruethling/Archipelago/releases/tag/0.3.3"/>
   </entry>
 </feed>

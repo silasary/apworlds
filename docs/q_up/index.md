@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/cxve/q-ap-world/releases/download/v2.0.0/q_up.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/cxve/q-ap-world/releases/download/v2.0.1/q_up.apworld">Latest Version (2.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
