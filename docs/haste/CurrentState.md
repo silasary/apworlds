@@ -8,9 +8,11 @@ Updates are admittedly slow to release (I have other hobbies), but be assured th
 
 ### Currently Available Settings
 In brief, the following settings are currently available:
-- Shard Goal: Set which boss contains the win condition
+- Shard Goal: Sets which boss contains the win condition
+- Starting Shard: Sets which Shard will have the first checks, removing locations in the Shards prior.
 - Shard Unlocks: Sets if Shard unlocks require both the item and the corresponding boss clear
 - Shopsanity: Checks on certain shop purchases
+  - Global Shops can also require additional items to lock access to later Shop checks
 - Fragmentsanity: Checks on Fragment clears
   - The rate of Fragment clears needed to obtain the check can also be modified in various ways
 - Fashion Weeboh Purchases: Checks on costume purchases
@@ -18,7 +20,7 @@ In brief, the following settings are currently available:
 - NPC Shuffle: Hub NPCs as items in the pool
 - Starting Ability Shuffle: Changes the starting ability to any of the four options, or none at all
 - Speed Upgrades: Reduces base speed to 60%, items that increase base speed up to 120% in the pool
-- Persistent Items: In-game Haste items (grouped by rarity & function) in the pool
+- Persistent Items: In-game Haste items [(grouped by rarity & function)](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ItemCategories.md) in the pool
 - Default Costume: Sets hat and body costume independently
 - Unlock All Items: Unlocks all mid-run items
 - Anti-Spark Filler: Determines how generous the filler items are for granting Anti-Sparks
@@ -37,7 +39,7 @@ In brief, the following settings and mod features are planned to be (**but not g
 - Text input support for in-game client (to remove reliance on multiple windows)
 - In-game UI to indicate how many checks are available in a given location
 - In-game toggle to enable/disable Deathlink
-- Some sort of handling for both Endless Shard and the Disaster Shards (very unsure on the implementation)
+- Some sort of handling for both Endless Shard (very unsure on the implementation)
 - Fix bugs
 - More things that will inevitably be suggested as more people play Haste
 

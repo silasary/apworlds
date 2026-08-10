@@ -1,9 +1,12 @@
 # The Murder of Sonic the Hedgehog
 
 ## Latest
-- <a href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/download/v0.3.0-beta/tmosth.apworld">Latest Version (0.3.0b0)</a>
+- <a href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/download/v0.3.1-beta/tmosth.apworld">Latest Version (0.3.1b0)</a>
 
 ## All Versions
+
+#### v0.3.1b0
+- <a href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/download/v0.3.1-beta/tmosth.apworld">https://github.com/TwinklePillar/MurderOfSonicAP/releases/download/v0.3.1-beta/tmosth.apworld</a>
 
 #### v0.3.0b0
 - <a href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/download/v0.3.0-beta/tmosth.apworld">https://github.com/TwinklePillar/MurderOfSonicAP/releases/download/v0.3.0-beta/tmosth.apworld</a>

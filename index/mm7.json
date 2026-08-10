@@ -1,10 +1,14 @@
 {
+  "authors": [
+    "SanchoBob8"
+  ],
   "flags": [
     "unready"
   ],
   "game": "Mega Man 7",
   "github": "https://github.com/SanchoBob8/Archipelago-MM7",
   "manifest_fields": [
+    "authors",
     "minimum_ap_version",
     "world_version"
   ],
@@ -21,7 +25,7 @@
       "size": 17620,
       "source_url": "https://api.github.com/repos/SanchoBob8/Archipelago-MM7",
       "tag": "0.1.0",
-      "title": "Mega Man 7 Archipelago v0.1.0",
+      "title": "v0.1.0",
       "version_simple": "0.0.1",
       "world_version": "0.0.1r2"
     },
@@ -37,7 +41,7 @@
       "size": 19154,
       "source_url": "https://api.github.com/repos/SanchoBob8/Archipelago-MM7",
       "tag": "0.2.0",
-      "title": " Mega Man 7 Archipelago v0.2.0",
+      "title": "v0.2.0",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
     },
@@ -53,9 +57,25 @@
       "size": 16840,
       "source_url": "https://api.github.com/repos/SanchoBob8/Archipelago-MM7",
       "tag": "v0.0.1",
-      "title": "Mega Man 7 Archipelago v0.0.1",
+      "title": "v0.0.1",
       "version_simple": "0.0.1",
       "world_version": "0.0.1"
+    },
+    "v0.3.0": {
+      "created_at": "2026-08-09T22:11:41Z",
+      "description": "# Mega Man 7 Archipelago v0.3.0\r\n\r\nThis release expands stage progression and multiworld functionality with Robot Master Access Codes, checkpoint selection, and DeathLink support.\r\n\r\n## Highlights\r\n\r\n### Robot Master Access Codes\r\n\r\n* Added an optional Access Code for each of the eight Robot Master stages.\r\n* When enabled, a stage cannot be entered until its corresponding Access Code has been received.\r\n* One random Robot Master Access Code is granted at the start to ensure an immediately accessible stage.\r\n* Locked Robot Master portraits are hidden on the stage-select screen.\r\n* Receiving an Access Code while on the stage-select screen immediately reveals the corresponding portrait.\r\n* Access Codes integrate with Boss Weakness Logic so the starting stage remains completable.\r\n\r\nCloses #12.\r\n\r\n### Checkpoint Selection\r\n\r\n* Added optional checkpoint selection for Robot Master stages.\r\n* Use **L/R** on the stage-select screen to choose between:\r\n\r\n  * Stage entrance\r\n  * Midpoint\r\n  * Pre-boss checkpoint\r\n* The selected checkpoint is displayed directly on the Robot Master portrait.\r\n* By default, checkpoint selection is available only for cleared stages.\r\n* Added an option to allow checkpoint selection in uncleared stages.\r\n* When Robot Master Access Codes are enabled, checkpoint selection is unavailable for locked stages.\r\n* Wily stages are unaffected.\r\n\r\nCloses #16.\r\n\r\n### DeathLink\r\n\r\n* Added DeathLink support.\r\n* Local deaths can now be sent to other DeathLink-enabled players.\r\n* Received DeathLinks kill Mega Man once the game is in a safe active gameplay state.\r\n* Added safeguards against deaths being triggered during transitions and other invalid states.\r\n* Prevented received DeathLinks from being echoed back as additional DeathLinks.\r\n\r\nCloses #9.\r\n",
+      "download_url": "https://github.com/SanchoBob8/Archipelago-MM7/releases/download/v0.3.0/mm7.apworld",
+      "has_manifest": true,
+      "hash_sha256": "35336121187c89d6344860f314b902fd0c567c887aa8605a18c21e06ce75d589",
+      "html_url": "https://github.com/SanchoBob8/Archipelago-MM7/releases/tag/v0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 4256017,
+      "source_url": "https://api.github.com/repos/SanchoBob8/Archipelago-MM7",
+      "tag": "v0.3.0",
+      "title": "v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

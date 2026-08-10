@@ -2,154 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-09T18:19:51.638336+00:00</updated>
+  <updated>2026-08-10T00:23:01.516966+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-97</id>
-    <title>Borderlands 2 v97</title>
-    <updated>2026-08-06T20:40:36+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
-&#13;
-new stuff (since 0.5.4):&#13;
-- fix UT connection issue (hopefully)&#13;
-- infinite backpack as yaml setting&#13;
-- AP travels in fast travel menu &#13;
-- new setting to remove symbols without removing cult of the vault challenges&#13;
-- named enemy locations toggleable&#13;
-- level up checks toggleable (need more options for this in the future)&#13;
-- slot name + seed for .items.txt file&#13;
-- migrate blgstor to settings dir (sdk_mods/settings/blgstor)&#13;
-- rigged slots purchaseable from earl&#13;
-- rigged slots are 1 spin and work for Torgue/Flamerock slots&#13;
-- logic fixes&#13;
-- rulebuilder refactor&#13;
-- some coop things working: loot spawns, sprint, equip blocking, travel commands (chat and fast travel station)</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-97"/>
-  </entry>
-  <entry>
-    <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.5.0</id>
-    <title>Grand Theft Auto: San Andreas v0.5.0</title>
-    <updated>2026-08-06T22:10:00+00:00</updated>
-    <author>
-      <name>awaken</name>
-    </author>
-    <content>## New:&#13;
-- End of the Line is now another goal (*Return to Los Santos*)&#13;
-- Submission sliders - every submission now has an option to change its length. Choose how many checks each activity sends instead of grinding each one to the end.&#13;
-&#13;
-## Changes:&#13;
-- `GTASAClient.exe` is gone - there is no need to download a separate `.exe` anymore, the client is now bundled with `gta_sa.apworld` and will appear in the Archipelago Launcher on install&#13;
-- Collectible blips now work differently - checking a collectible and loading an older save will return the blip for it. Recollecting them does not send a new check and only removes the blip.&#13;
-&#13;
-## Fixes:&#13;
-- Fixed saving/loading storing and restoring AP progress incorrectly&#13;
-- Fixed items duplicating when loaded into an older save/new game&#13;
-- Spraying tags after loading an older save will correctly send checks.&#13;
-- Fixed client losing checks while server is disconnected.&#13;
-- Fixed mission blockers being stored in the game's save file.&#13;
-&#13;
-## Notes:&#13;
-Although **Return to Los Santos** is another region now, there is no new content besides the missions. This release focused almost solely on making the mod functional again.</content>
-    <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/robofett28/bugsnax_ap_world/releases/tag/v0.1.1-alpha</id>
-    <title>bugsnax v0.1.1a0</title>
-    <updated>2026-08-06T22:45:18+00:00</updated>
-    <author>
-      <name>robofett28</name>
-    </author>
-    <content>This is just a general stability update to the previous version, and brings no new gameplay features.&#13;
-&#13;
-### Main Issues Fixed:&#13;
-- Cromdo no longer places the lunchpad allowing you to access it earlier than inteded.&#13;
-- Restarting the game without restarting the client should no longer stop tools from being granted.&#13;
-- Removed Bug Net, Snaxscope, and Snaktivator from item pool until they can be properly implemented&#13;
-- Client now ensures tools received via AP should always be selectable.&#13;
-- Client now ensures tools **NOT** received via AP should never be selectable.&#13;
-- Removed Herobrine&#13;
-&#13;
-### Features Added&#13;
-- New command "/resync" is now available in the client and _should_ grant any tools received to the player in case of a desync.&#13;
-- Client should now tell you how many Golden Snax you have collected after each one.&#13;
-- Client now tells you when you have completed either of the 2 goals - Golden Snax or Final mission, whichever you complete first&#13;
-&#13;
-&#13;
-**NOTE: Regenerate your YAML and start a fresh seed after installing this new apworld - this version isn't compatible with games generated under v0.1.0-alpha.**</content>
-    <link href="https://github.com/robofett28/bugsnax_ap_world/releases/tag/v0.1.1-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.2.0-b</id>
-    <title>Zuma Deluxe v0.2.0b0</title>
-    <updated>2026-08-06T22:50:38+00:00</updated>
-    <author>
-      <name>Movido51</name>
-    </author>
-    <content>Beta Release for a Archipelago of Zuma Deluxe&#13;
-&#13;
-A playable version of the randomizer for Zuma Deluxe, still changes to come.&#13;
-&#13;
-# Last Changes and Fixes&#13;
-## Changes&#13;
-- When conecting to a game with the Zuma Deluxe Client it will unlock all _Stages_ in **Adventure Mode** allowing you to play any of the 12 temples from a fresh file.&#13;
-- Changed the basic names for items and some locations.&#13;
-- Added groups for items and locations (in Details will be a link for a list of them) .&#13;
-- Added icon in the archipelago client list.&#13;
-- Remade how Useful Items get calculated.&#13;
-- Some Yaml option like coins are now by amount and not percentage&#13;
-## Fixes&#13;
-- Solved some looping issues that appeared with new pointers.&#13;
-- Corrected the amount of points detected by making chains.&#13;
-- Removed instakill from Rush (more in Filler Items Segments).&#13;
-- Shift Color doesnt generate fake balls anymore (low tested).&#13;
-- No more coins in Space.&#13;
-# Filler Items &#13;
-- Filler items are stackable at a higger count of 120 for instant items, or a duration of a minute for the long ones.&#13;
-- Rush now only doubles the speed of the level, with a duration of 5 seconds.&#13;
-- Color Shift has a duration of 10 seconds.&#13;
-- Get a Break has a duration of 10 seconds.&#13;
-&#13;
-# Details&#13;
-Some details and explanations in [Game Page](https://github.com/Movido51/Archipelago/blob/ZumaDeluxe/worlds/zuma_deluxe/docs/en_Zuma_Deluxe.md) and some instruccions in [Setup Page](https://github.com/Movido51/Archipelago/blob/ZumaDeluxe/worlds/zuma_deluxe/docs/setup_en.md).&#13;
-List on Groups in [Group List](https://github.com/Movido51/Archipelago/blob/ZumaDeluxe/worlds/zuma_deluxe/docs/en_Zuma_Deluxe_groups.md)&#13;
-&#13;
-&#13;
-# Know Issues&#13;
-Some know stuff planned for the future:&#13;
-- Filler items still has a effect even paused, there is no solution for that yet.&#13;
-- The Client will get better icons clearer details on unlocked areas and remaining checks.&#13;
-- This is included for both modes, and locations.&#13;
-- New Options on yaml are not yet implemented or connected, like sanitys.&#13;
-&#13;
-&#13;
- # Remainders&#13;
-You need to have the Zuma Deluxe Client and the Zuma Deluxe game open at the same time to play&#13;
-&#13;
-If you connect while you have a level open in Zuma go back to the menu.&#13;
-&#13;
-If the game is not found it probably is the language of it&#13;
-&#13;
-To keep track of locations use universal tracker&#13;
-&#13;
-When entering a map, always use the new game, it might not recognize the mode otherwise&#13;
-&#13;
-Deathlink accelerates the game into a own death.&#13;
-&#13;
-Any question, Bug or idea, feel free to ask on the discord channel for the game.&#13;
-# **_Have Fun_**</content>
-    <link href="https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.2.0-b"/>
-  </entry>
   <entry>
     <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.1.1-TEST</id>
     <title>Kirby Air Ride v1.1.1</title>
@@ -718,7 +575,7 @@ Any question, Bug or idea, feel free to ask on the discord channel for the game.
   </entry>
   <entry>
     <id>https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.2</id>
-    <title>layer8problem v0.9.2</title>
+    <title>layer8problem v0.9.2.post2</title>
     <updated>2026-08-08T04:10:43+00:00</updated>
     <author>
       <name>TheZockerBrain069</name>
@@ -1342,5 +1199,94 @@ unobtainable.
 Additionally, &#13;
 - The Old Chap, Dog Lover, and Shirtless Guy customers cannot be placed in level 1 if character randomization is turned on, to prevent the rare case that there are no available levels in logic for the first 15 levels.</content>
     <link href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.0</id>
+    <title>Haste v0.5.0</title>
+    <updated>2026-08-09T17:37:52+00:00</updated>
+    <author>
+      <name>JXJacob</name>
+    </author>
+    <author>
+      <name>WritingHusky</name>
+    </author>
+    <content>The fifth major release of the Haste Archipelago&#13;
+&#13;
+You will need to subscribe to and enable the [Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3462307025) on Steam.&#13;
+&#13;
+## New YAML Features&#13;
+- **Disaster Shards** are now supported, acting as Shards 11-14 in the Shard Goal setting&#13;
+- **Starting Shard** allows you to choose which Shard your checks begin in, removing locations in all previous Shards&#13;
+  - When playing with Progressive Speed Upgrades, you will be pre-given enough of them to keep up with your Starting Shard&#13;
+  - All hub purchases will still expect 1 *additional* Progressive Shard before being logically available&#13;
+- **Dynamic Scaling** for both Shopsanity and Fragmentsanity, which sets the checks in each Shard relative to the length of the Shard itself&#13;
+  - The length of each Shard can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ShardLength.md)&#13;
+- **Global Shop Packs** can be added to hard-lock later Global Shopsanity purchases, segmented into blocks of 15 purchases&#13;
+  - An additional setting to add extra Packs has also been added&#13;
+- Quality of Life options&#13;
+  - **Refund Bad Purchases** will refund you any Sparks spent on *AP Shop Items* that would not send a check. This setting does nothing if you do not have Shopsanity Separate enabled.&#13;
+  - **Remove Separate AP Shop Items When Done** will prevent *AP Shop Items* from appearing in Shops once you have exceeded the available checks in that region (either through completely running out, or lacking sufficient Global Shop Packs)&#13;
+  - **Scout Hub Locations** enabled all hub purchases to also send AP hints upon opening their respective NPC's dialogue&#13;
+    - This setting can be overridden at any time via the in-game options menu.&#13;
+- Anti-Quality of Life option&#13;
+  - **Base Disaster Level** will *permanently* set all Shards to have the corresponding Disaster Shard effects&#13;
+    - This setting is provided ***WITHOUT ANY SAFEGUARDING LOGIC***. Do NOT enable unless you know what you are doing.&#13;
+    - This base Disaster level *will* stack with any Disaster Traps, but will *not* stack with the normal Disaster Shards&#13;
+&#13;
+## Logic Changes&#13;
+- The Crispy and Twister Flopsy costume purchases have been moved out of Vanilla Plus and into Vanilla, since the Disaster Shards that lock them are now accessible&#13;
+- Expensive Captain's Upgrade and Fashion Weeboh Purchases will require additional Progressive Shards before becoming logically available&#13;
+  - Captain's Upgrades:&#13;
+    - Purchase 1-2: No additional Shards&#13;
+    - Purchase 3-4: 2 additional Shards&#13;
+    - Purchase 5: 4 additional Shards&#13;
+    - Purchase 6: 6 additional Shards&#13;
+    - EXCEPTION: The first and only 'Max Lives' Upgrade purchase expects 2 additional Shards, as it is the same price as Purchase 4 in other upgrade lines&#13;
+  - Costume Purchases:&#13;
+    - Flopsy and Weeboh: 2 additional Shards&#13;
+    - Zoe 64, Twisted Flopsy, and Totally Accurate Zoe: 4 additional Shards&#13;
+&#13;
+## Bugfixes&#13;
+- Fixed Courier's Board not being considered a valid Ability to access Shards 5 &amp; beyond&#13;
+- Fixed Wraith's Hourglass and Sage's Cowl having swapped IDs in some places, which lead to weird fill errors with the Totally Accurate Zoe costume purchase&#13;
+- Fixed issue where Little Sister and Supersonic Zoe costumes were not being locked properly in Vanilla Plus and All Unlocks&#13;
+- Fixed issue where "Seperate" was used several times instead of "Separate", which is how the word is actually spelled</content>
+    <link href="https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.4</id>
+    <title>Factorio: Space Age v2.2.4</title>
+    <updated>2026-08-09T22:09:38+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 2.2.4&#13;
+&#13;
+* Fix infinite technologies again. Should work like I intended in the previous release now.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TwinklePillar/MurderOfSonicAP/releases/tag/v0.3.1-beta</id>
+    <title>The Murder of Sonic the Hedgehog v0.3.1b0</title>
+    <updated>2026-08-09T22:27:14+00:00</updated>
+    <author>
+      <name>TwinklePillar</name>
+    </author>
+    <content># Changelog&#13;
+- Fix Safe Room being inaccessible&#13;
+- Fix freezing when sending a location&#13;
+- Fix logic not being applied with Car Rando&#13;
+- The game now disconnects upon loading the title screen&#13;
+&#13;
+Compatible with v0.3.0-beta</content>
+    <link href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/tag/v0.3.1-beta"/>
   </entry>
 </feed>

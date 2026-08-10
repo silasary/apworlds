@@ -4,7 +4,7 @@ Welcome to Haste Archipelago! This guide will help you set up the randomizer and
 Whether playing, generating, or hosting an Archipelago room with Haste, you must follow a few simple steps to
 get started.
 
-Unfortunately, Mac OS is not officially supported at this time.
+Unfortunately, the Mac OSX and Console versions are not officially supported.
 
 ## Requirements
 
@@ -13,11 +13,6 @@ You'll need the following components to be able to play/generate with Haste:
 - Install [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) v0.6.4 or higher.\
    **Make sure to install the Generator if you intend to generate multiworlds.**
 - The latest version of the [Haste APWorld](https://github.com/WritingHusky/haste_apworld/releases/latest).
-
-If you intend to play under Linux, you will need to consider the following information.
-
-- Grab the `tar.gz` version of Archipelago, not the `AppImage`. The file name should be similar to the following on the
-  release page: `Archipelago_X.X.X_linux-x86_64.tar.gz`.
 
 ## Installation
 
@@ -57,7 +52,7 @@ the instructions for hosting on the website from a locally generated game or on 
 
 ## Connecting to a Room
 
-It is recommended that you open a text client along side the game, as the chat log is still in development.
+Haste does **not** have a dedicated AP client from the AP Launcher: the client is **built directly into the Steam Workshop mod** itself. However, it is recommended that you open a generic text client along side the game if you wish to hint items, as the in-game client does not support text input at this time.
 
 1. If you haven't already subscribe to the [Archipelago Randomizer Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3462307025) on Steam
 2. Start Haste on Steam
@@ -70,4 +65,14 @@ It is recommended that you open a text client along side the game, as the chat l
 ## Troubleshooting
 
 - Ensure that you are running version v0.6.4 or higher of Archipelago, and the latest version of the apworld.
+- Verify the integrity of your game files on Steam
 - Report issuses to the [Haste thread](https://discord.com/channels/731205301247803413/1356638437872111687) (under `future-game-design`) in the [Archipelago Discord](https://discord.gg/archipelago)
+ 
+ ### Incompatible Mods
+
+ Some mods have been found to cause problems with Haste AP, it is highly recommended that you remove them if playing with this mod. If a mod is not listed, the mod is (probably) okay to use with AP.
+
+ - [Speed Demon (REVIVED)](https://steamcommunity.com/sharedfiles/filedetails/?id=3519431069)
+   - **Completely incompatible**: Both mods make drastic changes to the same base-game functions and cannot coexist peacefully.
+ - [HarmonyX](https://steamcommunity.com/sharedfiles/filedetails/?id=3408901301)
+   - *Warning*: Has caused issues with the hub NPCs in the past, could cause more issues in the future.

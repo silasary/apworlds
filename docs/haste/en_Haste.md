@@ -3,7 +3,15 @@
 ## What does randomization do to this game?
 
 Shards are locked behind an unlock item. Abilities are shuffled into the item pool. Various other options exist to customize what is available in the APWorld.
-This mod will also set all story flags and several meta-progression flags and is therefore **not** recommended to be used with non-AP savefiles.
+This mod will also set all story flags and several meta-progression flags and is therefore **not** compatible to be used with non-AP save files.
+
+## Setup
+
+Once the Steam Workshop mod is installed, connect to the AP room via the in-game Settings menu (under the new AP tab). The connection is managed entirely through the Workshop mod and does not require a client from the AP Launcher. 
+
+**You will need to play on a new save file**, which can be managed from the in-game Settings menu (at the bottom of the General settings tab); the mod will stop you if you attempt to use a previously-used and non-Archipelago save file.
+
+A more detailed setup guide can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/setup_en.md).
 
 ## What are the Items in this APWorld?
 
@@ -34,13 +42,13 @@ The goal of Haste is to beat the boss of the configured Shard Goal (default is S
 
 ## When the player receives an item, what happens?
 
-The item will immediately come into effect.
+The item will come into effect once it is safe to process them. If the game is loading or the player is in a menu, the game will hold onto any incoming items before processing them to prevent bugs.
 
 If `Force Reload` is enabled and you are in the Hub, getting a Progressive Shard or NPC will reload the Hub to update. This may cause issues if you are talking to an NPC when this reload happens. Otherwise, you will need to exit and re-enter the Hub for the hub to update.
 
 ## I need help! What do I do?
 
-Refer to the troubleshooting steps in the [setup guide](https://github.com/WritingHusky/haste_apworld/blob/main/docs/setup_en.md). Then, if you are still stuck, please ask in the [Haste thread](https://discord.com/channels/731205301247803413/1356638437872111687) (under `future-game-design`) in the [Archipelago Discord](https://discord.gg/archipelago).
+Refer to the troubleshooting steps in the [setup guide](https://github.com/WritingHusky/haste_apworld/blob/main/docs/setup_en.md#troubleshooting). Then, if you are still stuck, please ask in the [Haste thread](https://discord.com/channels/731205301247803413/1356638437872111687) (under `future-game-design`) in the [Archipelago Discord](https://discord.gg/archipelago).
 
 ## State of the Rando
 

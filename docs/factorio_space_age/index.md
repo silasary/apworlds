@@ -11,7 +11,7 @@ https://www.factorio.com/
 
 
 ## Downloads
-- <a href="https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v2.2.3/factorio_space_age.apworld">Latest Version (2.2.3)</a>
+- <a href="https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v2.2.4/factorio_space_age.apworld">Latest Version (2.2.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

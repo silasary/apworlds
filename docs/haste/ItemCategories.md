@@ -16,6 +16,8 @@ Some items have multiple purposes, and therefore fall into multiple categories. 
 
 Items may be recategorized if there is enough demand for it.
 
+Items with a ***bolded italic name*** are Active Items, and can be excluded in the YAML settings.
+
 ## Speed Items
 Includes items that grants Boost, Speed, spawns a Boost Ring, or grants a special movement option.
 
@@ -23,26 +25,26 @@ Includes items that grants Boost, Speed, spawns a Boost Ring, or grants a specia
 | ----------- | ----------- |
 | Golden Necklace | Common |
 | Growth Potential | Common |
-| Mysterious Spring | Common |
-| Recyclable Rocket | Common |
-| Rocket Boots | Common |
+| ***Mysterious Spring*** | Common |
+| ***Recyclable Rocket*** | Common |
+| ***Rocket Boots*** | Common |
 | Shortcut | Common |
 | Spark Plug | Common |
 | Spark Powered Propeller | Common |
 | Transition Slingshot | Common |
-| Boost Remote | Rare |
+| ***Boost Remote*** | Rare |
 | Cherry on Top | Rare |
 | Emergency Shoes | Rare |
-| Energy Lash | Rare |
+| ***Energy Lash*** | Rare |
 | Greed Machine | Rare |
 | Heir's Determination | Rare |
-| Personal Gravity Enhancer | Rare |
+| ***Personal Gravity Enhancer*** | Rare |
 | Risk and Reward | Rare |
 | Secret Technique Instructions | Rare |
 | Shiny Anchor Pin | Rare |
-| Standard Redirector | Rare |
-| Time Dilation Thing | Rare |
-| Timeline Shifter | Rare |
+| ***Standard Redirector*** | Rare |
+| ***Time Dilation Thing*** | Rare |
+| ***Timeline Shifter*** | Rare |
 | Vitamins | Rare |
 | BOOSTR POG | Epic |
 | Bootleg Pattern | Epic |
@@ -52,15 +54,15 @@ Includes items that grants Boost, Speed, spawns a Boost Ring, or grants a specia
 | Pathfinder | Epic |
 | Perpetual Motion Machine | Epic |
 | Ring Materializer | Epic |
-| Spark Dasher | Epic |
+| ***Spark Dasher*** | Epic |
 | Well Earned Confidence | Epic |
-| Blood Engine | Legendary* |
-| Experimental Autopilot | Legendary* |
+| ***Blood Engine*** | Legendary* |
+| ***Experimental Autopilot*** | Legendary* |
 | Experimental Thrusters | Legendary* |
 | Timeline Attractor | Legendary* |
 | Wingspan | Legendary* |
 
-> \*Legendary items are included in this list for documentation's sake. In-game the Legendary items are not seperated by function.
+> \*Legendary items are included in this list for documentation's sake. In-game, the Legendary items are not seperated by function.
 
 ## Support Items
 Includes items grants Energy, Sparks, Luck, Cooldown reduction, Item retriggers, or Perfect landings.
@@ -95,9 +97,9 @@ Includes items grants Energy, Sparks, Luck, Cooldown reduction, Item retriggers,
 | Flashback | Legendary* |
 | General Relativity | Legendary* |
 | Overcomplicated Coin | Legendary* |
-| Portable Harvester | Legendary* |
+| ***Portable Harvester*** | Legendary* |
 
-> \*Legendary items are included in this list for documentation's sake. In-game the Legendary items are not seperated by function.
+> \*Legendary items are included in this list for documentation's sake. In-game, the Legendary items are not seperated by function.
 
 ## Health Items
 Includes items that grants Healing, increases Max Health, or grants Invulnerability.
@@ -116,7 +118,7 @@ Includes items that grants Healing, increases Max Health, or grants Invulnerabil
 | Pocket Snack | Common |
 | Protective Medallion | Common |
 | Reheated Soup | Common |
-| Replenishing Vial | Common |
+| ***Replenishing Vial*** | Common |
 | Restorative Maneuver | Common |
 | Velocity Powered Syringe | Common |
 | Big Squash | Rare |
@@ -129,15 +131,15 @@ Includes items that grants Healing, increases Max Health, or grants Invulnerabil
 | Intangibility | Rare |
 | Leadership Pipe | Rare |
 | Low Grade Timeline Swapper | Rare |
-| Personal Matter Stabilizer | Rare |
+| ***Personal Matter Stabilizer*** | Rare |
 | Quick Taco | Rare |
 | Speedy Recovery | Rare |
 | Extreme Herbs | Epic |
 | Friendly Looking Star | Epic |
 | Impact Activated Healing Drone | Epic |
 | Pungent Herbs | Epic |
-| Steel Hat Lining | Epic |
+| ***Steel Hat Lining*** | Epic |
 | Timeline Refactor | Epic |
-| Otherworldly Contact | Legendary* |
+| ***Otherworldly Contact*** | Legendary* |
 
-> \*Legendary items are included in this list for documentation's sake. In-game the Legendary items are not seperated by function.
+> \*Legendary items are included in this list for documentation's sake. In-game, the Legendary items are not seperated by function.

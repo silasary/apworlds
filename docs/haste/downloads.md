@@ -1,9 +1,12 @@
 # Haste
 
 ## Latest
-- <a href="https://github.com/WritingHusky/haste_apworld/releases/download/v0.4.0/haste.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/WritingHusky/haste_apworld/releases/download/v0.5.0/haste.apworld">Latest Version (0.5.0)</a>
 
 ## All Versions
+
+#### v0.5.0
+- <a href="https://github.com/WritingHusky/haste_apworld/releases/download/v0.5.0/haste.apworld">https://github.com/WritingHusky/haste_apworld/releases/download/v0.5.0/haste.apworld</a>
 
 #### v0.4.0
 - <a href="https://github.com/WritingHusky/haste_apworld/releases/download/v0.4.0/haste.apworld">https://github.com/WritingHusky/haste_apworld/releases/download/v0.4.0/haste.apworld</a>
