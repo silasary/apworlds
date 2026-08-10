@@ -2,82 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-10T00:23:01.516966+00:00</updated>
+  <updated>2026-08-10T06:33:39.450785+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.1.1-TEST</id>
-    <title>Kirby Air Ride v1.1.1</title>
-    <updated>2026-08-07T01:03:38+00:00</updated>
-    <author>
-      <name>DeDeDK</name>
-    </author>
-    <content>- per-checklist reveal options&#13;
-- fix machine audio on title screen&#13;
-- bump verison to 1.1.1&#13;
-&#13;
-## What's Changed&#13;
-* v1.1.1-TEST PR by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/55&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v1.1.0-TEST...v1.1.1-TEST</content>
-    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.1.1-TEST"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.1</id>
-    <title>layer8problem v0.9.1</title>
-    <updated>2026-08-07T01:26:36+00:00</updated>
-    <author>
-      <name>TheZockerBrain069</name>
-    </author>
-    <content>Hotfix release&#13;
-&#13;
-## What was broken&#13;
-&#13;
-The apworld declared `required_client_version = (0, 9, 0)`. That field is not&#13;
-our mod version — it is the minimum **Archipelago** version a client must run,&#13;
-and the WebHost validates it against real AP releases. AP 0.9.0 does not exist&#13;
-(the current line is 0.6.x), so uploading the seed returned&#13;
-*Internal Server Error*.  &#13;
-&#13;
-## Added &#13;
-&#13;
-poptracker pack</content>
-    <link href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.6.1</id>
-    <title>Yellow Taxi Goes Vroom v0.6.1</title>
-    <updated>2026-08-07T01:43:21+00:00</updated>
-    <author>
-      <name>soopercool101</name>
-    </author>
-    <content>[Mod](https://github.com/soopercool101/YellowTaxiAP/releases/tag/v0.6.0) | [Setup Guide](https://github.com/soopercool101/Archipelago/blob/YTGV.v0.6.1/worlds/yellowtaxi/docs/setup_en.md)&#13;
-&#13;
-## v0.6.1 - Logic hotfix&#13;
-- Fix Expert 2+ logic bug in which the incorrect rocket level access rule was checked for bringing in golden propeller to Lab Memories&#13;
-&#13;
-## v0.6.0 - The "Trap" Update&#13;
-&#13;
-- Add Maurizio's City, with full logic&#13;
-- Add Help Maurizio as a new goal&#13;
-- New options:&#13;
-  - Include Out-Of-Bounds: Adds logic for going out-of-bounds, either barely (bumping into walls to collect hidden coins) or fully&#13;
-  - Trap Fill Percent: What % of filler will be replaced by trap items&#13;
-  - Enabled Traps: Allows you to enable from a list of 16 available traps&#13;
-  - Trap Link: Allows you to receive traps from other games, and send them when received&#13;
-  - Trap Link Uses Whitelist: When enabled, enforces Trap Link to only use the "Enabled Traps" list&#13;
-  - Shop Hints: Allows creating hints when a shop screen is exited without purchasing. Defaults to progression only&#13;
-  - Easy Alien Mosk: Makes the Tosla Offices boss fight easier by spawning more Golden Springs&#13;
-  - Start Inventory From Pool: Allows you to start with items that would otherwise be shuffled. These items will be replaced by filler in the pool&#13;
-- Add new `Trap` item group for Traps&#13;
-- Various optimizations to speed up world loading and generation&#13;
-- Universal Tracker now sorts location list by region, rather than alphabetically&#13;
-- Major logic changes</content>
-    <link href="https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.6.1"/>
-  </entry>
   <entry>
     <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.3</id>
     <title>Mina The Hollower v0.11.3</title>
@@ -1220,7 +1149,7 @@ You will need to subscribe to and enable the [Mod](https://steamcommunity.com/sh
   - When playing with Progressive Speed Upgrades, you will be pre-given enough of them to keep up with your Starting Shard&#13;
   - All hub purchases will still expect 1 *additional* Progressive Shard before being logically available&#13;
 - **Dynamic Scaling** for both Shopsanity and Fragmentsanity, which sets the checks in each Shard relative to the length of the Shard itself&#13;
-  - The length of each Shard can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ShardLength.md)&#13;
+  - The length of each Shard can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ShardLengths.md)&#13;
 - **Global Shop Packs** can be added to hard-lock later Global Shopsanity purchases, segmented into blocks of 15 purchases&#13;
   - An additional setting to add extra Packs has also been added&#13;
 - Quality of Life options&#13;
@@ -1288,5 +1217,62 @@ source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/f
 &#13;
 Compatible with v0.3.0-beta</content>
     <link href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/tag/v0.3.1-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.8.0</id>
+    <title>pokemon_stadium v0.8.0</title>
+    <updated>2026-08-10T01:26:21+00:00</updated>
+    <author>
+      <name>jciii91</name>
+    </author>
+    <content>## Reworked move balancing&#13;
+&#13;
+### The goal of this reworked system is to recreate the difficulty curve of the vanilla game as closely as possible so that players have a sense of progression as they work through a seed&#13;
+&#13;
+- Removed old system that had 3 different tier systems for physical, special, and status moves&#13;
+- All moves combined into a single tier system now&#13;
+- Assigned "BST modifiers" to each tier. These are used to calculate an "adjusted BST" for each Pokémon&#13;
+- Calculated vanilla adjusted BSTs to and compiled a list of target BSTs for each gym/cup&#13;
+  - These target BSTs will get a setting in a later update to allow them to be shuffled&#13;
+- Randomizer now builds movesets for Pokémon that align them with a target BST&#13;
+- Rental lists are sorted by adjusted BST&#13;
+  - The later in the rental table a Pokémon appears, the stronger it should be&#13;
+&#13;
+Also fixed the naming for Poké Cup trainer locations.</content>
+    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.6.3</id>
+    <title>Funi Raccoon Game v1.6.3</title>
+    <updated>2026-08-10T03:30:18+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>Primarily a code cleanup update, but also updated the Orb logic to logically require being sent Orb to get the location "Store Orb" since the shop only opens when being sent the Orb.</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.4</id>
+    <title>Mina The Hollower v0.11.4</title>
+    <updated>2026-08-10T04:36:10+00:00</updated>
+    <author>
+      <name>FyreDay, Axertin, ZXavier</name>
+    </author>
+    <content>**THIS AP WORLD'S UT MAPS ONLY WORK WITH [AP CLIENT BETA 5](https://github.com/Axertin/mth-apclient/releases/tag/v1.0.0-beta.5) AND LATER**&#13;
+&#13;
+This is a beta release. This means it is stable with no major bugs. If you find a bug please report it in the [Github Issues](https://github.com/FyreDay/Archipelago-MinaTheHollower/issues)&#13;
+&#13;
+Install guide and more information is in the [AP world Info Document](https://github.com/FyreDay/Archipelago-MinaTheHollower/blob/main/worlds/mina_the_hollower/docs/en_Mina%20The%20Hollower.md)&#13;
+&#13;
+### Changelog&#13;
+&#13;
+- Change UT Map Processing to be more consistent. This broke some maps, report any problems you find&#13;
+- Fix Weapon chests in lower shipwreck&#13;
+- Add logic for swimming in water&#13;
+- Fix some Hollower shop item logic&#13;
+- Fix LL bridge chest&#13;
+- Fix double side arm permit with kite check&#13;
+- Fix QB head carry check</content>
+    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.4"/>
   </entry>
 </feed>
