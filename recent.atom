@@ -2,336 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-10T00:23:01.516966+00:00</updated>
+  <updated>2026-08-11T06:24:36.986757+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.1.1-TEST</id>
-    <title>Kirby Air Ride v1.1.1</title>
-    <updated>2026-08-07T01:03:38+00:00</updated>
-    <author>
-      <name>DeDeDK</name>
-    </author>
-    <content>- per-checklist reveal options&#13;
-- fix machine audio on title screen&#13;
-- bump verison to 1.1.1&#13;
-&#13;
-## What's Changed&#13;
-* v1.1.1-TEST PR by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/55&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v1.1.0-TEST...v1.1.1-TEST</content>
-    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.1.1-TEST"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.1</id>
-    <title>layer8problem v0.9.1</title>
-    <updated>2026-08-07T01:26:36+00:00</updated>
-    <author>
-      <name>TheZockerBrain069</name>
-    </author>
-    <content>Hotfix release&#13;
-&#13;
-## What was broken&#13;
-&#13;
-The apworld declared `required_client_version = (0, 9, 0)`. That field is not&#13;
-our mod version — it is the minimum **Archipelago** version a client must run,&#13;
-and the WebHost validates it against real AP releases. AP 0.9.0 does not exist&#13;
-(the current line is 0.6.x), so uploading the seed returned&#13;
-*Internal Server Error*.  &#13;
-&#13;
-## Added &#13;
-&#13;
-poptracker pack</content>
-    <link href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.6.1</id>
-    <title>Yellow Taxi Goes Vroom v0.6.1</title>
-    <updated>2026-08-07T01:43:21+00:00</updated>
-    <author>
-      <name>soopercool101</name>
-    </author>
-    <content>[Mod](https://github.com/soopercool101/YellowTaxiAP/releases/tag/v0.6.0) | [Setup Guide](https://github.com/soopercool101/Archipelago/blob/YTGV.v0.6.1/worlds/yellowtaxi/docs/setup_en.md)&#13;
-&#13;
-## v0.6.1 - Logic hotfix&#13;
-- Fix Expert 2+ logic bug in which the incorrect rocket level access rule was checked for bringing in golden propeller to Lab Memories&#13;
-&#13;
-## v0.6.0 - The "Trap" Update&#13;
-&#13;
-- Add Maurizio's City, with full logic&#13;
-- Add Help Maurizio as a new goal&#13;
-- New options:&#13;
-  - Include Out-Of-Bounds: Adds logic for going out-of-bounds, either barely (bumping into walls to collect hidden coins) or fully&#13;
-  - Trap Fill Percent: What % of filler will be replaced by trap items&#13;
-  - Enabled Traps: Allows you to enable from a list of 16 available traps&#13;
-  - Trap Link: Allows you to receive traps from other games, and send them when received&#13;
-  - Trap Link Uses Whitelist: When enabled, enforces Trap Link to only use the "Enabled Traps" list&#13;
-  - Shop Hints: Allows creating hints when a shop screen is exited without purchasing. Defaults to progression only&#13;
-  - Easy Alien Mosk: Makes the Tosla Offices boss fight easier by spawning more Golden Springs&#13;
-  - Start Inventory From Pool: Allows you to start with items that would otherwise be shuffled. These items will be replaced by filler in the pool&#13;
-- Add new `Trap` item group for Traps&#13;
-- Various optimizations to speed up world loading and generation&#13;
-- Universal Tracker now sorts location list by region, rather than alphabetically&#13;
-- Major logic changes</content>
-    <link href="https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.3</id>
-    <title>Mina The Hollower v0.11.3</title>
-    <updated>2026-08-07T01:54:07+00:00</updated>
-    <author>
-      <name>FyreDay, Axertin, ZXavier</name>
-    </author>
-    <content>This is a beta release. This means it is stable with no major bugs. If you find a bug please report it in the [Github Issues](https://github.com/FyreDay/Archipelago-MinaTheHollower/issues)&#13;
-&#13;
-Install guide and more information is in the [AP world Info Document](https://github.com/FyreDay/Archipelago-MinaTheHollower/blob/main/worlds/mina_the_hollower/docs/en_Mina%20The%20Hollower.md)&#13;
-&#13;
-### Changelog&#13;
-&#13;
-- Fix Bridge weaver and Burrow conflict&#13;
-- Fix Bridge weaver over water&#13;
-- Update names of many locations to be more descriptive&#13;
-- Add Wallowers logic to the rest of the jump logic&#13;
-- Add Dummy cache and brisk brew to jump logic&#13;
-- Fix double side arm permit&#13;
-- Fix extra max bone up checks</content>
-    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.2</id>
-    <title>Idle Loops v0.4.2</title>
-    <updated>2026-08-07T04:03:42+00:00</updated>
-    <author>
-      <name>IHaveNoFunnyName</name>
-    </author>
-    <content>## Idle Loops AP 0.4.2 ##&#13;
-#### "I have no control over the versioning scheme i chose this is a major release despite being versioned as a patch" ####&#13;
-&#13;
-### APWorld: ###&#13;
-- Rewrote everything for options, and as such:&#13;
-- Options!&#13;
-	- Toggles for location types&#13;
-	- Set max level per location type&#13;
-	- Goal based defaults (That are reasonable and playtested this time!)&#13;
-		- (Probably should have been presets)&#13;
-	- You can assume the new features below also have options to enable/disable them.&#13;
-- Added "Mana Logic" for Z1, i.e. AP knows exactly (well, underestimates) how much mana/gold you can get and what locations are possible&#13;
-	- This let me turn off the heavy handed previous logic and now playthroughs of Z1 actually feel different!&#13;
-- Added a "Shop" to Z1/3 to buy checks for ramping gold costs&#13;
-- Respect Vanilla skill requirements for actions (i.e. Heal The Sick's "Unlocked at 12 Magic")&#13;
-	- Unsupported additional option to also respect progress bar requirements, it's all implemented and working i just don't want complaints about Fill Errors or how close to vanilla it feels&#13;
-- Make Mana Reduction actions a requirement for what they reduce&#13;
-- Logically guarantee 10k mana from Z1 into Z2&#13;
-- Require Glasses to be in Z1&#13;
-- Add a second Glasses to the pool (you start the loop with Glasses if you have both)&#13;
-- Batch Wild Mana and Herbs 10x&#13;
-- Added a "Nothing" filler item&#13;
-- Added Gamespeed, Stat Exp and Skill Exp mults, both global and as items.&#13;
-	(No skill exp item it would feel bad to spend time leveling something then get an item that would have sped it up by 10%)&#13;
-- Generally improved logic all around&#13;
-&#13;
-### Client: ###&#13;
-- Also rewrote everything but for no reason&#13;
-	- That's a lie things are properly laid out now i have a build process and everything&#13;
-- Colourful message log&#13;
-	- Corrected colours on Lloyd's fork's dark mode so these colours align with other AP clients and Strength is Red again.&#13;
-- Redid scouting properly (compared to the very minimal original), largely a code difference but they're colourful now (and are placed in every relevant tooltip)&#13;
-- This feels like retreading the above but did your eyes gloss over 'Added a "Shop"'? That needed me to figure out how to inject actions into the game!&#13;
-	- Another thing that would have been way easier if i forked the game rather than a client mod.&#13;
-- Added a tooltip to the "AP log" title displaying received non-action items&#13;
-- Fixed starting items not having an effect the first loop after connecting&#13;
-&#13;
-And a whole lot of internal changes, optimizations and improvements (as implied by rewriting everything) that aren't really user facing so i didn't want to turn them into a patch note.</content>
-    <link href="https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.0</id>
-    <title>plateup v0.2.7.0</title>
-    <updated>2026-08-07T04:59:43+00:00</updated>
-    <author>
-      <name>CazIsABoi</name>
-    </author>
-    <content>## What's New?&#13;
-- Fixed for the Turning Up The Heat Update&#13;
-- Added Fajitas and it's items and checks&#13;
-&#13;
-[Mod Update 0.2.7.0](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.7.0)</content>
-    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.3</id>
-    <title>SM64: Spicy Mycena 64 v0.2.3</title>
-    <updated>2026-08-07T05:04:45+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>apworld updates:&#13;
-- Fixed Red Coin logic for Wet-Dry World.&#13;
-- Added detailed Universal Tracker /explain output for individual coin sources, displaying required regions, items, moves, and logic tricks for each set of coins.&#13;
-- Fixed the Tower of the Wing Cap Permanent Coins route so it does not incorrectly require the Coin Mastery trick.&#13;
-- Various other under the hood fixes.&#13;
-&#13;
-sm64ex updates:&#13;
-- Whomps' and Merry-go-round Boos' coins should function correctly on Permanent Coins mode.</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-0.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-98</id>
-    <title>Borderlands 2 v98</title>
-    <updated>2026-08-07T06:32:30+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
-&#13;
-new stuff (since 0.5.4):&#13;
-- fix UT connection issue (hopefully)&#13;
-- infinite backpack as yaml setting&#13;
-- AP travels in fast travel menu &#13;
-- new setting to remove symbols without removing cult of the vault challenges&#13;
-- named enemy locations toggleable&#13;
-- level up checks toggleable (need more options for this in the future)&#13;
-- slot name + seed for .items.txt file&#13;
-- migrate blgstor to settings dir (sdk_mods/settings/blgstor)&#13;
-- rigged slots purchaseable from earl&#13;
-- rigged slots are 1 spin and work for Torgue/Flamerock slots&#13;
-- logic fixes&#13;
-- rulebuilder refactor&#13;
-- some coop things working: loot spawns, sprint, equip blocking, travel commands (chat and fast travel station)</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-98"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.0</id>
-    <title>johnny_upgrade v1.0</title>
-    <updated>2026-08-07T06:39:58+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>Initial release of johnny upgrade archipelago&#13;
-&#13;
-To install the client mod:&#13;
-1. Get the Tamper Monkey extension for your browser&#13;
-2. Install the script from below by clicking it (should install automatically)&#13;
-3. Navigate to https://www.coolmathgames.com/0-johnny-upgrade&#13;
-4. Have fun :)</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7</id>
-    <title>CrossCode v0.9.7</title>
-    <updated>2026-08-07T06:57:16+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Changes to Logic&#13;
-&#13;
-* Changed logic in **Faj'ro Temple** and **So'najiz Temple** to be more in line with the open world mod (@Valkhiya, #95).&#13;
-* Changed chests that block chest key gates so that they once again require the key that opens them (@CodeTriangle, #96).&#13;
-* **Faj'ro 3F: Large Fire Chamber Left** no longer requires a silver key in addition to a bronze key (@CodeTriangle, #96).&#13;
-&#13;
-## Changes to Generation&#13;
-&#13;
-* **Circuit Override** items are now classified as Useful instead of Progression after notable user feedback  (@CodeTriangle, #97).&#13;
-* Only 3 **Faj'ro Key** items are shuffled, in accordance with the recent changes to the open world mod (@CodeTriangle, #97).</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.1</id>
-    <title>johnny_upgrade v1.1</title>
-    <updated>2026-08-07T07:50:25+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>Initial release of johnny upgrade archipelago but with websockets fixed :)&#13;
-&#13;
-To install the client mod:&#13;
-1. Get the Tamper Monkey extension for your browser&#13;
-2. Install the script from below by clicking it (should install automatically)&#13;
-3. Navigate to https://www.coolmathgames.com/0-johnny-upgrade&#13;
-4. Have fun :)</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.2</id>
-    <title>johnny_upgrade v1.2</title>
-    <updated>2026-08-07T07:50:25+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>## What's New&#13;
-* Added more logic to the shop to spread it more evenly across multiple spheres of logic using the coin multiplier as the basis&#13;
-* Added a logic requirement for the double jump check as it requires XP gained from accessing later areas of the map&#13;
-&#13;
-NOTE: This is fully untested and won't be till a later date.&#13;
-&#13;
-## Known Issues:&#13;
-* Client disconnect is not properly clearing all state- for now, please reset your save on the main menu if you change slots.&#13;
-* Some shop-related logic bugs&#13;
-&#13;
-## Setup&#13;
-To install the client mod:&#13;
-1. Get the Tamper Monkey extension for your browser&#13;
-2. Install the script from below by clicking it (should install automatically)&#13;
-3. Navigate to https://www.coolmathgames.com/0-johnny-upgrade&#13;
-4. Have fun :)</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.10</id>
-    <title>Ratchet &amp; Clank: Size Matters v0.4.10</title>
-    <updated>2026-08-07T09:47:32+00:00</updated>
-    <author>
-      <name>Pangu</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <author>
-      <name>ImJustATester</name>
-    </author>
-    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.10&#13;
-&#13;
-**Branch:** main&#13;
-**Date:** 2026-08-07 10:07 UTC&#13;
-&#13;
-&lt;details&gt;&#13;
-&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.9&lt;/strong&gt;&lt;/summary&gt;&#13;
-&#13;
-- fix: forced starting planet including ryllus (322ab35f)&#13;
-- fix(size matters): update docs (847de01d)&#13;
-- feat(size matters, dynamic pine): reverted pypine to submodules and giant clank/forced loads are now handled (7e785a60)&#13;
-- feat: no more submodules thank fk (cc551230)&#13;
-&#13;
-&lt;/details&gt;&#13;
-&#13;
-**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.9...rac-size-matters/v0.4.10&#13;
-&#13;
-### Notes&#13;
-This release was automatically generated from the **main** branch.&#13;
-Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
-</content>
-    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.10"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.7.1</id>
-    <title>Bloons TD6 v0.7.1</title>
-    <updated>2026-08-07T12:08:47+00:00</updated>
-    <author>
-      <name>Matt41321</name>
-    </author>
-    <content>## Added&#13;
-- New Tower Skywarden&#13;
-- New map Ascent</content>
-    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.7.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.2</id>
     <title>GemCraft: Frostborn Wrath v0.6.2</title>
@@ -1220,7 +895,7 @@ You will need to subscribe to and enable the [Mod](https://steamcommunity.com/sh
   - When playing with Progressive Speed Upgrades, you will be pre-given enough of them to keep up with your Starting Shard&#13;
   - All hub purchases will still expect 1 *additional* Progressive Shard before being logically available&#13;
 - **Dynamic Scaling** for both Shopsanity and Fragmentsanity, which sets the checks in each Shard relative to the length of the Shard itself&#13;
-  - The length of each Shard can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ShardLength.md)&#13;
+  - The length of each Shard can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ShardLengths.md)&#13;
 - **Global Shop Packs** can be added to hard-lock later Global Shopsanity purchases, segmented into blocks of 15 purchases&#13;
   - An additional setting to add extra Packs has also been added&#13;
 - Quality of Life options&#13;
@@ -1288,5 +963,433 @@ source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/f
 &#13;
 Compatible with v0.3.0-beta</content>
     <link href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/tag/v0.3.1-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.8.0</id>
+    <title>pokemon_stadium v0.8.0</title>
+    <updated>2026-08-10T01:26:21+00:00</updated>
+    <author>
+      <name>jciii91</name>
+    </author>
+    <content>## Reworked move balancing&#13;
+&#13;
+### The goal of this reworked system is to recreate the difficulty curve of the vanilla game as closely as possible so that players have a sense of progression as they work through a seed&#13;
+&#13;
+- Removed old system that had 3 different tier systems for physical, special, and status moves&#13;
+- All moves combined into a single tier system now&#13;
+- Assigned "BST modifiers" to each tier. These are used to calculate an "adjusted BST" for each Pokémon&#13;
+- Calculated vanilla adjusted BSTs to and compiled a list of target BSTs for each gym/cup&#13;
+  - These target BSTs will get a setting in a later update to allow them to be shuffled&#13;
+- Randomizer now builds movesets for Pokémon that align them with a target BST&#13;
+- Rental lists are sorted by adjusted BST&#13;
+  - The later in the rental table a Pokémon appears, the stronger it should be&#13;
+&#13;
+Also fixed the naming for Poké Cup trainer locations.</content>
+    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.6.3</id>
+    <title>Funi Raccoon Game v1.6.3</title>
+    <updated>2026-08-10T03:30:18+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>Primarily a code cleanup update, but also updated the Orb logic to logically require being sent Orb to get the location "Store Orb" since the shop only opens when being sent the Orb.</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.4</id>
+    <title>Mina The Hollower v0.11.4</title>
+    <updated>2026-08-10T04:36:10+00:00</updated>
+    <author>
+      <name>FyreDay, Axertin, ZXavier</name>
+    </author>
+    <content>**THIS AP WORLD'S UT MAPS ONLY WORK WITH [AP CLIENT BETA 5](https://github.com/Axertin/mth-apclient/releases/tag/v1.0.0-beta.5) AND LATER**&#13;
+&#13;
+This is a beta release. This means it is stable with no major bugs. If you find a bug please report it in the [Github Issues](https://github.com/FyreDay/Archipelago-MinaTheHollower/issues)&#13;
+&#13;
+Install guide and more information is in the [AP world Info Document](https://github.com/FyreDay/Archipelago-MinaTheHollower/blob/main/worlds/mina_the_hollower/docs/en_Mina%20The%20Hollower.md)&#13;
+&#13;
+### Changelog&#13;
+&#13;
+- Change UT Map Processing to be more consistent. This broke some maps, report any problems you find&#13;
+- Fix Weapon chests in lower shipwreck&#13;
+- Add logic for swimming in water&#13;
+- Fix some Hollower shop item logic&#13;
+- Fix LL bridge chest&#13;
+- Fix double side arm permit with kite check&#13;
+- Fix QB head carry check</content>
+    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/cxve/q-ap-world/releases/tag/v2.0.1</id>
+    <title>Q-UP v2.0.1</title>
+    <updated>2026-08-10T09:10:38+00:00</updated>
+    <author>
+      <name>cxve</name>
+    </author>
+    <content>**Info** [Game Page](&lt;https://github.com/cxve/q-ap-world/blob/main-q-up/worlds/q_up/docs/en_Q-UP.md&gt;) - [Setup Guide](&lt;https://github.com/cxve/q-ap-world/blob/main-q-up/worlds/q_up/docs/setup_en.md&gt;)&#13;
+**Downloads** [World](&lt;https://github.com/cxve/q-ap-world/releases/&gt;) - [Mod](&lt;https://github.com/cxve/q-ap-mod/releases/&gt;) - [PopTracker](&lt;https://github.com/cxve/q-ap-poptracker/releases/&gt;)&#13;
+## 💎 Changes&#13;
+- Trying to generate a world with more progression items than locations will now raise OptionErrors&#13;
+- Optimized shuffling behavior&#13;
+- The world will no longer generate filler items when max items is being exceeded&#13;
+## 🛠️ Fixes&#13;
+- Fixed a crash when skill distribution check is disabled&#13;
+- Fixed randomizer getting stuck in a loop when trying to resolve 01_START skill&#13;
+- Added missing logic check for ITEM_RECYCLING_SYSTEM&#13;
+- Option creator will no longer allow to generate worlds with invalid challenge location ids&#13;
+- Using the same seed should now always result in the same world&#13;
+&#13;
+**Full Changelog**: https://github.com/cxve/q-ap-world/compare/v2.0.0...v2.0.1</content>
+    <link href="https://github.com/cxve/q-ap-world/releases/tag/v2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-0.8.3</id>
+    <title>Slay The Princess v0.8.0r2</title>
+    <updated>2026-08-10T11:36:26+00:00</updated>
+    <author>
+      <name>Onilaf</name>
+    </author>
+    <content>Add Narrator item to talk to him at the end of the 5th loop&#13;
+Add 6 step of Oblivion as locations&#13;
+Add the pristine sword item (for apotheosis)&#13;
+&#13;
+Possibility of combining hearts for HearRando (for example, Deep Heart and Bright Heart (Grey Hearts) are the same location)&#13;
+Change in the YAML to combine the chapter and chapter global options&#13;
+&#13;
+Fixed an issue where 41 filler items were being created extra&#13;
+Fixes an interaction issue between Gifts items and Mirrors locations</content>
+    <link href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-0.8.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.3</id>
+    <title>johnny_upgrade v1.3</title>
+    <updated>2026-08-10T12:59:57+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>## What's New&#13;
+* Total logic overhaul: no more frame perfect inputs and crazy tech in logic by default (turn on knockback and recoil boosts if you want the full speedrunner experience, just know you'll be expected to BLJ knockback boost using spikes, boost backwards with the gun to reach coins in shorter time, etc.)&#13;
+* More logic in shops to spread more evenly across logic spheres and reduce the early grind some (depends some on your multiworld size)&#13;
+* Added a logic requirement for the double jump check as it requires XP gained from accessing later areas of the map&#13;
+* G and H hotkeys added to collapse/hide the archipelago view&#13;
+&#13;
+## Known Issues&#13;
+* In-game log shows item and location IDs instead of names&#13;
+&#13;
+## Setup&#13;
+To install the client mod:&#13;
+1. Get the Tamper Monkey extension for your browser&#13;
+2. Install the script from below by clicking it (should install automatically)&#13;
+3. Navigate to https://www.coolmathgames.com/0-johnny-upgrade&#13;
+4. Have fun :)</content>
+    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/danielgruethling/Archipelago/releases/tag/0.3.3</id>
+    <title>Little Witch Nobeta v0.3.3</title>
+    <updated>2026-08-10T17:30:25+00:00</updated>
+    <author>
+      <name>fragger</name>
+    </author>
+    <author>
+      <name>espalchemist</name>
+    </author>
+    <content>This is version 0.3.3 for the new apworld of Little Witch Nobeta AP to use with the new MelonLoader client mod.&#13;
+&#13;
+0.3.3 changes compared to 0.3.2:&#13;
+- Several logic fixes&#13;
+- Renamed "Defeat Tania" location to just "Tania" like other bosses&#13;
+- Added new options:&#13;
+  - Condensed magic: Getting a magic book will instantly elevate Nobetas knowledge of that magic to its maximum level&#13;
+  - Maximum magic level: Allows to configure the maximum level for magic knowledge below level 5 (for more difficulty)&#13;
+- Changed how trial keys work&#13;
+  - Instead of having to carry around several trial key items which block the inventory slots there are now separate trial keys but they are stored as a variable instead&#13;
+&#13;
+From now on the game client mod and the apworld will have seperate releases. For the client mod look [here](https://github.com/danielgruethling/LittleWitchNobetaAP/releases).&#13;
+&#13;
+For a setup guide look [here](https://github.com/danielgruethling/Archipelago/blob/game_lwn/worlds/little_witch_nobeta/docs/setup_en.md). The links to the player options there only work when you run the web host yourself. Generate a template yaml using the launcher option and set your personal options from there.&#13;
+&#13;
+Logic is now partially generated from this repo: https://github.com/danielgruethling/NobetaLogic&#13;
+When you want to PR logic fixes and they go into rules.py, regions.py or locations.py, please PR them there.</content>
+    <link href="https://github.com/danielgruethling/Archipelago/releases/tag/0.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.4</id>
+    <title>One Must Fall: 2097 v0.0.4</title>
+    <updated>2026-08-10T18:36:47+00:00</updated>
+    <author>
+      <name>stubob</name>
+    </author>
+    <content># One Must Fall: 2097 - Archipelago v0.0.4&#13;
+https://github.com/stubobis1/archipelago-openomf/releases&#13;
+**Full Changelog:** https://github.com/stubobis1/archipelago-openomf/compare/0.0.3...0.0.4&#13;
+&#13;
+&gt; OMF:2097 was released as freeware by Epic MegaGames in 1999. The game data is freely and legally downloadable.&#13;
+&#13;
+---&#13;
+# Apworld&#13;
+&#13;
+### What's New&#13;
+&#13;
+#### Economy rebalance&#13;
+&#13;
+Default economy YAML options have been retuned:&#13;
+&#13;
+- `buy_cost_factor` default doubled, 10 → 20 (Mechlab prices now default to 20% of vanilla, up from 10%)&#13;
+- `money_small_value` default halved, 3000 → 1500&#13;
+- `money_large_value` default cut to a fifth, 15000 → 3000&#13;
+- `money_small_step` / `money_large_step` defaults reduced (150 → 100, 750 → 200)&#13;
+&#13;
+Net effect: purchases cost more relative to money checks by default, and the per-check growth curve is flatter — a tighter default economy. All five remain player-configurable via YAML.&#13;
+&#13;
+---&#13;
+# Client&#13;
+&#13;
+### What's New&#13;
+&#13;
+#### Fixes&#13;
+&#13;
+- Fixed the "all tournaments" goal silently failing: `ap_on_tournament_win` now persists `APSave` to disk immediately after setting the tournament-won bit, instead of leaving it to the next autosave. The mechlab scene reloads `APSave` from disk on entry, so without this the just-set bit could get clobbered by the stale on-disk copy before it was ever saved&#13;
+- Fixed forfeiting a match while connected to Archipelago sometimes being scored using `fight_stats.winner` left over from the *previous* match — it's now forced to a real value on forfeit so `arena_end()`'s AP match-check can't read stale state&#13;
+&#13;
+#### Testing&#13;
+&#13;
+- AP-only tests (link against Archipelago-only symbols) now build as a separate `openomf_test_ap` executable via a new `testing/test_ap_*.c` naming convention, instead of sharing the main `openomf_test_main` binary&#13;
+- New `test_ap_tournament_goal.c` suite covering the tournament-goal logic behind the fix above&#13;
+&#13;
+#### Tooling (parent repo)&#13;
+&#13;
+- Consolidated duplicated Docker build/lib-bundling/game-data-linking logic out of `build.sh`, `test.sh`, and `build-run-noap.sh` into a shared `build-common.sh`&#13;
+- `bump_version.sh` no longer touches git at all — it only updates `archipelago.json`'s `world_version`; committing and tagging is manual&#13;
+- `gen_and_host.sh` now writes generated player YAML and multiworld output into the repo (`omf_players/`, `omf_output/`, `omf_templates/`) instead of `/tmp`, so they're around for debugging&#13;
+&#13;
+---&#13;
+### Links&#13;
+&#13;
+- [Setup guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/setup_en.md)&#13;
+- [Game guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/en_One%20Must%20Fall%202097.md)&#13;
+- [OpenOMF client](https://github.com/stubobis1/openomf)&#13;
+- [AP world](https://github.com/stubobis1/archipelago-openomf-apworld)&#13;
+- [Issues](https://github.com/stubobis1/archipelago-openomf/issues)</content>
+    <link href="https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.3</id>
+    <title>Ori and the Will of the Wisps v0.6.3</title>
+    <updated>2026-08-10T18:38:01+00:00</updated>
+    <author>
+      <name>Satisha</name>
+    </author>
+    <content>The update is aimed at reducing generation failures with entrance randomization and random spawn. There are a few breaking yaml changes.&#13;
+### Yaml changes&#13;
+- For the `goal` option, the `random` key got renamed to `one_random`, since random is a reserved key.&#13;
+- Some option combinations with random spawn (that have a high probablility/guarantee of resulting in a failure) now raise an `OptionError`. If you have the base teleporters in the pool (option `tp`, which is already enabled by default), you won't encounter these.&#13;
+### Fixes&#13;
+- Fix accessibility check with the `glades_done` option.&#13;
+- Prevent several entrance randomizations layout that lead to a generation failure.&#13;
+- Changed some amount of random spawn items, and help the generator to reduce fill errors.</content>
+    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.4</id>
+    <title>Diablo II Archipelago v3.6.4</title>
+    <updated>2026-08-10T20:25:45+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># Diablo II Archipelago — Unstable 3.6.4
+
+## The channel is now called Unstable
+
+It used to say "Stable". That promised more than it should: this is a project
+that ships fixes the same day they are found, and several releases in a day is
+normal. "Unstable" is the honest label.
+
+Nothing about how it works has changed. In game the version reads `U-3.6.4` —
+the slot Diablo II gives us holds eleven characters, and the full word does not
+fit next to a version number.
+
+## The Treasure Cow is a real super-unique now
+
+**Every cow in the Cow Level was called "Archipelago Treasure Cow".** That was
+not a display bug — the Treasure Cow was an ordinary Hell Bovine, and the only
+way to give it a name was to rename the monster *type* in the string table.
+That renames every Hell Bovine in the game, all thousands of them.
+
+So the Treasure Cow got its own entry in the super-unique table, and the Hell
+Bovine has its vanilla name back. **The Cow Level reads normally again.**
+
+The cow still comes alone, still hits like a boss, and it can appear more than
+once in a session.
+
+## Killing it drops chests
+
+The cow used to pay out by handing items straight to you, which is where every
+"the cow dropped nothing" report came from. It now spawns **3 to 5 sparkling
+chests** around you instead, and Diablo II's own chest code does the rest:
+
+- every item rolls at magic quality, 5% of the time rare
+- they skip the 25% "drops nothing" gate an ordinary chest has to pass
+- if nothing magic came out, the game rerolls up to ten more times
+
+A sparkling chest cannot come up empty. That guarantee is the game's, not ours.
+
+If the mod does not recognise your game build it quietly falls back to the old
+item reward rather than spawning nothing, and says so in the log.
+
+## Testing it
+
+The cheat menu (Ctrl+V) has a **Treasure Cow** button under Mons → Bosses, so
+you can spawn one where you stand instead of waiting for it to turn up.
+
+## Source code
+
+The full source is now on GitHub alongside the release, for both this line and
+the experimental one.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.6</id>
+    <title>Rabbit and Steel v0.3.6</title>
+    <updated>2026-08-10T23:45:56+00:00</updated>
+    <author>
+      <name>tjwombo</name>
+    </author>
+    <content>Fixed 8 kingdom runs ending early&#13;
+a lot of code cleanup that hopefully doesn't break anything&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.3.6](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.5...v0.3.6) - 2026-08-10&#13;
+&#13;
+### Commits&#13;
+&#13;
+- Update README.md [`b119e87`](https://github.com/tjwombo/RNSArchipelago/commit/b119e87175f5f46280b23e63183574f0d1215862)&#13;
+- cleanup + fix route length [`6a2badc`](https://github.com/tjwombo/RNSArchipelago/commit/6a2badcb15e077c7dc855dbb428229e043d6413a)&#13;
+- Add variable to ignore data from slot data [`8951ac1`](https://github.com/tjwombo/RNSArchipelago/commit/8951ac121eff9f4f37442ea6688054e6b116e4e1)&#13;
+- update modconfig [`268d0e6`](https://github.com/tjwombo/RNSArchipelago/commit/268d0e627e0f3741b9376286c7c8fe449d0a77e3)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.2.4</id>
+    <title>Dark Souls Remastered v0.2.4</title>
+    <updated>2026-08-10T23:53:50+00:00</updated>
+    <author>
+      <name>Noka</name>
+    </author>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <content># **Dark Souls Remastered Archipelago v0.2.4**&#13;
+## Laurentius Shop, Forced GH Lizard Spawns, and a DA Logic Update&#13;
+&#13;
+### Version update -&gt; 0.2.4. Both apworld and client have updated. **Client is compatible with 0.2.x generated apworlds**. Latest client required if using updated apworld.&#13;
+* Feature: Added Laurentius's shop to `limited_shop_item_shuffle`-enabled locations. He is also prevented from moving on until you buy out his shop. &#13;
+* Feature: Force lizard spawns in the Great Hollow on every load instead of the vanilla 1-in-3 occurrence rate, when `lizard_shuffle` is enabled.&#13;
+* Fix: Corrected broken logic in Duke's Archives with `Boss Fogwall Sanity` on which didn't require `Boss Fog Wall Key - Seath 1st Encounter` for getting into the main prison area with the DA Prison Extra Key.&#13;
+&#13;
+Known issues (will be addressed in a later release)&#13;
+1) Occasional crash related to bonfire syncing code.&#13;
+2) Petrus might aggro on you if you hurt his companions.</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioManTAW/Archipelago/releases/tag/sluggers-v1.0.0</id>
+    <title>Mario Super Sluggers v1.0.0</title>
+    <updated>2026-08-11T00:23:02+00:00</updated>
+    <author>
+      <name>MarioManTAW</name>
+    </author>
+    <content>- Code patches have been moved from being applied at runtime by the client to the new [**MSS AP Patcher**](&lt;https://github.com/MarioManTAW/mss-ap-patcher/releases&gt;). This should make the game more stable and less susceptible to issues when connection steps happen out of order.&#13;
+  - This means that **patching is now mandatory**, be sure to follow the new setup steps. Additionally, this update is **not backwards-compatible** with older APWorld versions so please finish any ongoing multiworlds before updating.&#13;
+- New option: **Randomize Error Items**. Randomizes which 3 error items you have access to at the start.&#13;
+- New option: **Randomize Stats**. Shuffles stats between characters. Pitching, batting, fielding, and running stats are shuffled independently.&#13;
+- New option: **Randomize Puzzles**. Randomizes the lever puzzle in Mario Stadium and the hedge maze in Peach Ice Garden.&#13;
+- New option: **Randomize Quiz**. Adds additional question sets for Blue Yoshi's quiz, including sluggers, math, and meme.&#13;
+- New option: **Randomize Text**. Shuffles text/dialogue throughout the game, excluding relevant UI/tutorial text.&#13;
+&#13;
+Check out the [setup guide](&lt;https://github.com/MarioManTAW/Archipelago/blob/sluggers/worlds/mario_super_sluggers/docs/setup_en.md&gt;) for setup procedures (this has changed!). You may also find the [PopTracker pack](&lt;https://github.com/MarioManTAW/MarioSuperSluggersAPTracker/releases&gt;) helpful.</content>
+    <link href="https://github.com/MarioManTAW/Archipelago/releases/tag/sluggers-v1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.5</id>
+    <title>Diablo II Archipelago v3.6.5</title>
+    <updated>2026-08-11T05:41:51+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># Diablo II Archipelago — Unstable 3.6.5
+
+## The cheat menu fits the screen now
+
+Some tabs — Runes, Gems and Misc under Loot — were taller than the screen at
+800x600. The panel centred itself on its own height, so on those tabs the title
+bar with the close button sat up to 67 pixels above the top edge and the last
+rows below the bottom one, with no way to reach either.
+
+The panel now caps its height to the screen and the content scrolls instead:
+mouse wheel over the panel, scrollbar on the right edge, and each tab remembers
+its own position. Tabs that fit are unchanged.
+
+## Choose how many skills are in the pool
+
+New option in both the Archipelago YAML (**Skill Pool Size**) and the
+launcher's standalone settings (a checkbox plus a slider). Off, or 0, means
+what it has always meant: every skill that passes the class filter.
+
+Set it to 30 and the pool is exactly 30 skills — **10 tier-1, 10 tier-2 and
+10 tier-3, picked at random**. The split stays even at any value, the class
+filter is applied first, and the skill locations that no longer hold a skill
+fill with ordinary filler instead.
+
+## Tested
+
+This release went through the full logic battery: every option at both
+extremes, the risky combinations (gates x entrances x goals, now including the
+new pool cap against all of them), 300 randomised option sets, a mixed
+multiworld, all 56 custom goals, a 126-slot world with ~300,000 foreign
+locations, and the gate-key placement audit — 360 key placements, none
+unreachable. The sweep also caught two real bugs in this feature before
+release, which is exactly what it is for.
+
+## Launcher 2.9.35
+
+- **Volume slider** for the notification sounds, defaulting to 50%.
+- **Add your own sound** — pick a wav, mp3 or wma and it appears in the
+  per-event sound lists. Your files live in their own folder that updates
+  never touch.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.4</id>
+    <title>Ori and the Will of the Wisps v0.6.4</title>
+    <updated>2026-08-11T06:10:39+00:00</updated>
+    <author>
+      <name>Satisha</name>
+    </author>
+    <content>Fix the `one_random` key (which replaced the `random` key in 0.6.3) not behaving as intened.</content>
+    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.4"/>
   </entry>
 </feed>

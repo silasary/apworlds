@@ -347,6 +347,36 @@
       "title": "0.6.2",
       "version_simple": "0.6.2",
       "world_version": "0.6.2"
+    },
+    "v0.6.3": {
+      "created_at": "2026-08-10T18:38:01Z",
+      "description": "The update is aimed at reducing generation failures with entrance randomization and random spawn. There are a few breaking yaml changes.\r\n### Yaml changes\r\n- For the `goal` option, the `random` key got renamed to `one_random`, since random is a reserved key.\r\n- Some option combinations with random spawn (that have a high probablility/guarantee of resulting in a failure) now raise an `OptionError`. If you have the base teleporters in the pool (option `tp`, which is already enabled by default), you won't encounter these.\r\n### Fixes\r\n- Fix accessibility check with the `glades_done` option.\r\n- Prevent several entrance randomizations layout that lead to a generation failure.\r\n- Changed some amount of random spawn items, and help the generator to reduce fill errors.",
+      "download_url": "https://github.com/Satisha10/APwotw_release/releases/download/v0.6.3/ori_wotw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "40b062f257fa3223cbef1d02f77298a9553bc33c459b36e3cee474459620da20",
+      "html_url": "https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.3",
+      "minimum_ap_version": "0.6.3",
+      "size": 313949,
+      "source_url": "https://api.github.com/repos/Satisha10/APwotw_release",
+      "tag": "v0.6.3",
+      "title": "0.6.3",
+      "version_simple": "0.6.3",
+      "world_version": "0.6.3"
+    },
+    "v0.6.4": {
+      "created_at": "2026-08-11T06:10:39Z",
+      "description": "Fix the `one_random` key (which replaced the `random` key in 0.6.3) not behaving as intened.",
+      "download_url": "https://github.com/Satisha10/APwotw_release/releases/download/v0.6.4/ori_wotw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f3285fbed5f73ca3053d1992431fc41de9cf4fd9fb100bb54a74bf9a25d898a2",
+      "html_url": "https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.4",
+      "minimum_ap_version": "0.6.3",
+      "size": 313954,
+      "source_url": "https://api.github.com/repos/Satisha10/APwotw_release",
+      "tag": "v0.6.4",
+      "title": "0.6.4",
+      "version_simple": "0.6.4",
+      "world_version": "0.6.4"
     }
   }
 }

@@ -1,9 +1,12 @@
 # Mario Super Sluggers
 
 ## Latest
-- <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.4.0/mario_super_sluggers.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v1.0.0/mario_super_sluggers.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
+
+#### v1.0.0
+- <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v1.0.0/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v1.0.0/mario_super_sluggers.apworld</a>
 
 #### v0.4.0
 - <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.4.0/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.4.0/mario_super_sluggers.apworld</a>
