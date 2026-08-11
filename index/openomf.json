@@ -4,7 +4,10 @@
   ],
   "description": "One Must Fall: 2097 \u2014 a classic robot fighting tournament game.\nEnter the arena, unlock HARs, and upgrade your robot through Archipelago item randomization.",
   "game": "One Must Fall: 2097",
-  "github": "https://github.com/stubobis1/archipelago-openomf",
+  "github": [
+    "https://github.com/stubobis1/archipelago-openomf",
+    "https://github.com/stubobis1/archipelago-openomf-apworld"
+  ],
   "license": "GPL-3.0",
   "manifest_fields": [
     "authors",
@@ -41,6 +44,21 @@
       "title": "0.0.02",
       "version_simple": "0.0.2",
       "world_version": "0.0.2"
+    },
+    "omf-0.0.3": {
+      "created_at": "2026-08-07T18:34:17Z",
+      "description": "# One Must Fall: 2097 - Archipelago World v0.0.3\r\n**Full Changelog**: https://github.com/stubobis1/archipelago-openomf-apworld/commits/omf-0.0.3\r\n\r\n> OMF:2097 was released as freeware. The game data is freely and legally downloadable.\r\n\r\n---\r\n\r\n### What's New\r\n\r\n#### AP World \u2014 Money economy rework\r\n\r\nThe money-check economy has been redesigned around fairness and predictability, especially for async/multiworld play:\r\n\r\n- Removed the per-tournament prize multiplier (1\u00d7 NAO / 2\u00d7 Katushai / 3\u00d7 WAR / 6\u00d7 World) that scaled Money (Small)/Money (Large) awards based on the highest tournament you'd unlocked\r\n- Money items now credit their full value to **all 11 HAR wallets at once**, instead of only the currently active HAR \u2014 including HARs you haven't unlocked yet, so they start funded once you do. No more logging off mid-tournament and finding a backlog of checks dumped onto whichever HAR happened to be active\r\n- Each successive check of the same type is worth a little more than the last, via new `money_small_step` / `money_large_step` YAML options (default 150 / 750 credits; set to 0 for a flat, unchanging value)\r\n\r\n#### Fixes\r\n\r\n- `AvailableHARs` YAML option was defaulting to 2 instead of 11\r\n- Disabled a leftover debug-output flag that shouldn't have shipped\r\n\r\n---\r\n\r\n### Links\r\n\r\n- [Setup guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/omf-0.0.3/worlds/openomf/docs/setup_en.md)\r\n- [Game guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/omf-0.0.3/worlds/openomf/docs/en_One%20Must%20Fall%202097.md)\r\n- [OpenOMF client](https://github.com/stubobis1/openomf/releases/tag/omf-0.0.3)\r\n- [AP world](https://github.com/stubobis1/archipelago-openomf-apworld/releases/tag/omf-0.0.3)\r\n- [Issues](https://github.com/stubobis1/archipelago-openomf/issues)",
+      "download_url": "https://github.com/stubobis1/archipelago-openomf-apworld/releases/download/omf-0.0.3/openomf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "08b0a7f306c4845414c6c81d5565448d30b057d03d5ac9eba34354da46cca41f",
+      "html_url": "https://github.com/stubobis1/archipelago-openomf-apworld/releases/tag/omf-0.0.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 13502,
+      "source_url": "https://api.github.com/repos/stubobis1/archipelago-openomf-apworld",
+      "tag": "omf-0.0.3",
+      "title": "One Must Fall: 2097 - APworld v0.0.3",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2r2"
     },
     "omf-0.0.4": {
       "created_at": "2026-08-10T18:36:47Z",

@@ -1,0 +1,36 @@
+{
+  "flags": [],
+  "game": "Bat to the Heavens",
+  "github": "https://github.com/NathanW001/BTTHArchipelago",
+  "manifest_fields": [],
+  "versions": {
+    "0.1.0": {
+      "created_at": "2026-08-06T09:24:16Z",
+      "description": "# v0.1.0: Initial Release\r\n## Features\r\n#### Checks:\r\n- Fizzies, Phants, Postcards, all Key and Equipment items, Location Visits. Includes 80 checks.\r\n- Option for Checkpointsanity. Adds 82 checks\r\n#### Items:\r\n- All base game equipment and collectables.\r\n- World blocks: Objects such as Yellow Fences and Momentum Launchers have to be sent to you before they are usable.\r\n#### World Options:\r\n- Variations in Goal to require either base game completion, completion with minimum amount of fizzies, or all checkpoints\r\n- Force the Bat to spawn in it's default location\r\n- Checkpointsanity to make all checkpoints checks\r\n- Deathlink (be careful with this one)",
+      "download_url": "https://github.com/NathanW001/BTTHArchipelago/releases/download/0.1.0/bat_to_the_heavens.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ffd02b175af1d6fd42787d74e3a1fa0dca48627052dbea792a98bcb53c0c3a58",
+      "html_url": "https://github.com/NathanW001/BTTHArchipelago/releases/tag/0.1.0",
+      "size": 14012,
+      "source_url": "https://api.github.com/repos/NathanW001/BTTHArchipelago",
+      "tag": "0.1.0",
+      "title": "v0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "0.1.01": {
+      "created_at": "2026-08-08T04:31:17Z",
+      "description": "### Quick Hotfixes:\r\n- Fixed issues with incoming DeathLinks not being read properly by the game\r\n- Fixed issues with Goal completion at the top of Heaven's Channel. More specifically, there were two main issues. First, when the goal was to complete the game with a minimum amount, it would always check for the maximum amount. Second, when the player would interact with the door it would play the dialogue to end the game and then not initiate credits. I'm not sure if it's a Godot specific issue with function overrides, but despite calling the super() function it wouldn't run properly, so I've opted to just call the required functions to end the game manually and not call super. I've also added a notification that displays when the player has a goal that they haven't met yet.",
+      "download_url": "https://github.com/NathanW001/BTTHArchipelago/releases/download/0.1.01/bat_to_the_heavens.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ffd02b175af1d6fd42787d74e3a1fa0dca48627052dbea792a98bcb53c0c3a58",
+      "html_url": "https://github.com/NathanW001/BTTHArchipelago/releases/tag/0.1.01",
+      "size": 14012,
+      "source_url": "https://api.github.com/repos/NathanW001/BTTHArchipelago",
+      "tag": "0.1.01",
+      "title": "v0.1.01",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    }
+  }
+}
