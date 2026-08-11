@@ -11,6 +11,36 @@
     "world_version"
   ],
   "versions": {
+    "enemizer-v2": {
+      "created_at": "2026-04-26T17:27:16Z",
+      "description": "Replaces EnemizerCLI executable with native Python code, removing the need for bundling the executable with future Archipelago releases, as well as randomizing enemies and pots early in order to make that data available for use in logic (which will be done in a separate PR).\r\n\r\nThis release fixes boss graphic corruption seen in v1 (released only on Discord).",
+      "download_url": "https://github.com/Alchav/Archipelago/releases/download/enemizer-v2/alttp.apworld",
+      "has_manifest": true,
+      "hash_sha256": "98a297c975789286bd3ccd41f792956fe85daa93d01e560198d3d1f188c57112",
+      "html_url": "https://github.com/Alchav/Archipelago/releases/tag/enemizer-v2",
+      "minimum_ap_version": "0.6.6",
+      "size": 341050,
+      "source_url": "https://api.github.com/repos/Alchav/Archipelago",
+      "tag": "enemizer-v2",
+      "title": "ALTTP: We Have Enemizer at Home v2",
+      "version_simple": "5.1.0",
+      "world_version": "5.1.0"
+    },
+    "enemizer-v3": {
+      "created_at": "2026-04-27T00:25:28Z",
+      "description": "- Applies missing patch to stop Trinexx from creating icy floors with boss shuffle, which instead create solid floors in some boss arenas.\r\n- Fixes an issue with duplicating the Ice Palace pot hole",
+      "download_url": "https://github.com/Alchav/Archipelago/releases/download/enemizer-v3/alttp.apworld",
+      "has_manifest": true,
+      "hash_sha256": "baa20d38578574dccc8ad81d7b2ca9269e49941412afa311c4783e2215e93cc3",
+      "html_url": "https://github.com/Alchav/Archipelago/releases/tag/enemizer-v3",
+      "minimum_ap_version": "0.6.6",
+      "size": 341451,
+      "source_url": "https://api.github.com/repos/Alchav/Archipelago",
+      "tag": "enemizer-v3",
+      "title": "ALTTP: We Have Enemizer at Home v3",
+      "version_simple": "5.1.0",
+      "world_version": "5.1.0r2"
+    },
     "enemizer-v4": {
       "created_at": "2026-05-04T01:09:54Z",
       "description": "- Fixes EnemizerCLI's RandomizeTileTrapFloorTile function, normally unused in Archipelago, being forced on.\r\n- Fix water enemy filtering for non-water shutter rooms\r\n\r\nNote that it appears that alttp.apworld in `/custom_worlds/` is ignored if the alttp folder is still in `/lib/worlds/` - you will need to remove it (keep a backup!) for generation.",
@@ -24,7 +54,7 @@
       "tag": "enemizer-v4",
       "title": "ALTTP: We Have Enemizer at Home v4",
       "version_simple": "5.1.0",
-      "world_version": "5.1.0"
+      "world_version": "5.1.0r3"
     }
   }
 }

@@ -2,252 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-11T06:24:36.986757+00:00</updated>
+  <updated>2026-08-11T12:23:58.706214+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.2</id>
-    <title>GemCraft: Frostborn Wrath v0.6.2</title>
-    <updated>2026-08-07T13:21:45+00:00</updated>
-    <author>
-      <name>Levisaxos</name>
-    </author>
-    <content>A focused bug-fix release that corrects how field tokens get distributed when you use the **Different World** field token placement option in a multiplayer game.&#13;
-&#13;
-## Bug fixes since 0.0.6.1&#13;
-&#13;
-- When a player used the **Different World** field token placement option (especially alongside non-local items), all of their field tokens could pile into a single other player's world instead of being spread randomly across everyone.&#13;
-- With progressive field token granularity, some of those field tokens could still end up back in your own world under **Different World**</content>
-    <link href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/benny-dreamly/Manuals/releases/tag/TS-6.2.0</id>
-    <title>Manual_TaylorSwiftDiscography_bennydreamly v6.2.0</title>
-    <updated>2026-08-07T18:19:52+00:00</updated>
-    <author>
-      <name>benny-dreamly</name>
-    </author>
-    <content>This release updates the manual to the latest stable manual release, as well as adding proper sorting on the locations.&#13;
-&#13;
-There is currently a bit of an issue for the music client, as the ordering of the songs in speak now tv is not the same as on the album, however I did not change the order of the locations as that would have broken backwards compatibility with some older versions of the manual, however I may be changing this in another release, which will not be backwards compatible with existing games.&#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Manuals/compare/TS-6.1.0...TS-6.2.0</content>
-    <link href="https://github.com/benny-dreamly/Manuals/releases/tag/TS-6.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.3</id>
-    <title>Idle Loops v0.4.3</title>
-    <updated>2026-08-07T22:05:38+00:00</updated>
-    <author>
-      <name>IHaveNoFunnyName</name>
-    </author>
-    <content>- Improved Glasses logic&#13;
-- Actually have an APWorld version &#13;
-&#13;
- click [\&lt;\&lt;HERE\&gt;\&gt;](https://ihavenofunnyname.github.io/IdleLoopsAP/idle-loops-ap.user.js) to update the client &#13;
-&#13;
-See https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.2&#13;
-</content>
-    <link href="https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.1</id>
-    <title>Refunct v1.3.1</title>
-    <updated>2026-08-07T23:43:20+00:00</updated>
-    <author>
-      <name>Spineraks</name>
-    </author>
-    <content>## Co-op!&#13;
-- In the yaml and in in-game settings, you can enable seeing other players. If other players in the multiworld have this setting on too, you can see them walking around in your game! &#13;
-  - The option is called "see other players" and it determines how many other players you can see in your game. Setting it to 0 turns it off. I think 10 players at a time should be fine performance-wise.&#13;
-  - (Technical: packets are only sent to Refunct slots with the setting on, at max 1 per second. The send-rate slowly decreases with the number of players, making it so there are never more than 10 packets per second in total for this in the end (which only occurs if there are 10+ players).)&#13;
-- You can now connect to the same slot as someone else, and buttons/platforms/cubes in the main gamemode will be synced! You will also still be able to see each-other.&#13;
-&#13;
-### Mod:&#13;
-- Starting from v1.3.1 generated games, you can only join games with the *exact* correct mod version. If you log in with another version, the mod will show which version you need (bottom-left and top-right). All previous versions are available in the releases tab.&#13;
-&#13;
-### Options &amp; Gameplay:&#13;
-- Added "Ascend" trap. ☁️ &#13;
-- Added "Depthless trap". 🙈 &#13;
-- Added option to have only gameplay-traps.&#13;
-&#13;
-### Fixes:&#13;
-- Go-mode in UT now shows correctly. If you have enough grass and (one of the following)&#13;
-  - if your goal is known and you can reach it.&#13;
-  - if your goal is unknown and you have been to your final location.&#13;
-- When connecting, it now shows that it is still connecting instead of pretending it worked.&#13;
-- Removed a jump from logic that was very tight (22-1 -&gt; 22-2).</content>
-    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.3.3</id>
-    <title>Wynncraft v0.3.3</title>
-    <updated>2026-08-08T00:35:50+00:00</updated>
-    <author>
-      <name>EpicPuppy613</name>
-    </author>
-    <content>- Increase max level to 80&#13;
-- Fix various logic bugs&#13;
-- Rename check based on in-game updates&#13;
-  - "Complete: Grave Diggers" will have to be manually completed by your host on existing worlds</content>
-    <link href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.7.0</id>
-    <title>Divinity Original Sin 2 v0.7.0</title>
-    <updated>2026-08-08T00:39:26+00:00</updated>
-    <author>
-      <name>Intaiachi</name>
-    </author>
-    <author>
-      <name>chaotic</name>
-    </author>
-    <author>
-      <name>JeyKey09</name>
-    </author>
-    <content>New:&#13;
-- A new class named "Random" has been added. Origin party members can also be given the Random class by saying your interested in someone with some randomness when recruiting them.&#13;
-  - This class will start with three (or five if recruiting a companion past act 1) random starter skills as well as a random race skill and random origin source skill.&#13;
-  - These skill have a bit of logic to them, so you cannot get a skill that requires a ranged weapon and another skill that requires a melee weapon at the same time, or incarnate infusions without the incarnate itself.&#13;
-  - This class also comes with the additional setting to expand the selection of skill from starter skill to all non-source skills. You will get all the combat ability points needed to use every ability.&#13;
-- Traps are now bespoke, so the old random status traps have been replaced with something like "Minor Poison Trap" or "Severe Cow Trap".&#13;
-- A new option "Enable Level Teleport" has been added, which when enabled, will give you a "Level Teleport" item when loading into the Merryweather.&#13;
-  - This item will allow you to teleport to any region you have been to before.&#13;
-  - This item is still in beta and is very unstable, it is recommended to save before using it and to reload said save after you are done using it.&#13;
-- Two new client commands have been added, "/directory" and "/hits".&#13;
-    - "/directory" will display the the directory the client have saved and its contents. This is mainly to help with troubleshooting if you come to me for help.&#13;
-    - "/hits" will display the remaining hits needed for victory on hit list goals.&#13;
-&#13;
-Changes/Bugfixes:&#13;
-- Tremendous thanks to @/rentashayanvi, @/swagalicous, and @/raptor980 for reporting and helping with many of these changes and bugs.&#13;
-- The client no longer crashes when the wrong directory is selected and will now exit gracefully and prompt you again on next open.&#13;
-- Quests will now not close on act exit, you will have to complete them properly.&#13;
-- "The Taming of the Holy Fire" no longer needs the Scholar tag to be deciphered.&#13;
-- "Driftwood: Dessicated Undead (490, 828)" and the corresponding "Lich" hit list objective has been removed as it is missable.&#13;
-- The Kraken in the Arx harbor has been added as a check and hit list objective.&#13;
-- Remaining hits will no longer be printed to the client on connect and hit complete, use "/hits" instead.&#13;
-- The region "Fort Joy" has been split in two, "Fort Joy Ghetto" and "Fort Joy".&#13;
-  - "Fort Joy Ghetto" encapsulates the beach and its namesake, while "Fort Joy" encapsulates the fort itself and the prison beneath it.&#13;
-- The fire slugs in the Fort Joy Prison have been added as checks.&#13;
-- "East Reaper's Eye" has been renamed to "The Hollow Marshes".&#13;
-- The ad Trompdoys that are apart of the second fight against Trompdoy are now checks.&#13;
-- The Small Viscous Eggs found during Counting your Chickens are now checks.&#13;
-- The ads in Mordus' fight are now checks.&#13;
-- The Viscous Eggs found in Wreckers Cave are now checks.&#13;
-- White Magister Jonathan is now a check&#13;
-- The two magisters fighting voidwoken in the entrance to The Blackpits are no longer checks.&#13;
-- The magisters preparing to execute the Crossleys now share a check with each member of the Crossleys, so letting the execution occur will no longer make missable checks.&#13;
-- Owen Anchoret now shares a check with the Magister Inquisitor during No Way Out while the other magisters included in that quest are no longer checks. This makes it so no matter how you treat that quest, you will not create missables.&#13;
-- The gate guards in The Blackpits are no longer checks.&#13;
-- Magister Reimond is no longer a check, as he can flee the fight in The Blackpits and become missable.&#13;
-- The ads in Ghalann's fight are now checks (except for one that he summons).&#13;
-- The ads in Ryker's fight are now checks. There are three masked servants in each arena you can fight him in and they share a check with each other so no matter where you fight Ryker, you can't miss a check.&#13;
-- The Captains Hideaway's containers are now checks if containersanity is enabled.&#13;
-- Various absent container checks in the Lady Vengeance have been added.&#13;
-- The crate covering the ladder to the inside of the Merryweather that the Kraken destroys is no longer a check.&#13;
-- A pile of body parts in the magister prison by the source hounds is no longer a check.&#13;
-- An unlootable tree stump in the Fort Joy Beach is no longer a check.&#13;
-- The Illusionary Crates in Trompdoy's cave are no longer checks.&#13;
-- Rakeda's cave's containers have been reevaluated, with some removed and some added, shouldn't have any unreachable containers anymore (I hope).&#13;
-- A barrel in The Blackpits cave that could only be destroyed, not looted, is no longer a check.&#13;
-- Two piles of corpses that change when spirit vision is used by them in Bloodmoon Island are no longer checks.&#13;
-- A skeleton in Bloodmoon Island has been added as a container check.&#13;
-- Before uncompleteable quest "The Voices" is no longer a check.&#13;
-- Delusions of Gradeur has been corrected to Delusions of Greatness.&#13;
-- Crippling a Demon is no longer a check.&#13;
-- Mordus' basement is now logically in Reaper's Bluffs.&#13;
-- Lamenting Abomination and Alice Alisceon are in logic at level 14 (was 12).&#13;
-- The Shadowcloak's in the Paladin Checkpoint are now logically in The Blackpits.&#13;
-- The harbor building in The Blackpits are now in logic at level 16 and when you can get source vampirism (was level 15).&#13;
-- The area around the quest "They Shall Not Pass" up to the gate into stonegarden and he waterfall into Ryker's basement are now logically in Reaper's Coast.&#13;
-- The fight against Loic the Immaculate is now in logic at level 20 (was 19)&#13;
-- The ads in the Kraken fight and surrounding area are now in logic at level 20 (was 19)&#13;
-- The quest "The Shreikers" are now in logic after getting a purging wand and being level 9 (was 7)&#13;
-- The quest "Red Ink in the Ledger" is now logically in Reaper's Bluffs.&#13;
-- The quest "The Gift of the Blackroot" is now logically in Cloisterwood.&#13;
-- The quest "Hammerfall" is now logically in the Tomb of Lucian.&#13;
-- The quest "A Taste of Freedom" is now logically in Cloisterwood.&#13;
-- The quest "The Wrecked Caravan" is now logically in Driftwood.&#13;
-- The quests "Shadow over Driftwood", "Drowning Her Sorrows", and "The Law of the Order" are now logically in Reaper's Bluffs.&#13;
-- The quests "Waking Ryker", "Hannag's Bargin", "A Generous Offer", "Heroes' Rest", "The Reluctant Servants", "Dark Dealings in the Blackpits", and "Almira's Request" are now logically in The Blackpits.&#13;
-- Ryker and his ads are now logically in The Blackpits.&#13;
-- The quests "Jahan's Lesson", "All In The Family", and "A Hunter of Wicked Things" are now logically in Bloodmoon Island.&#13;
-- The quest "Keep Calm and Carrion" now are in logic at level 15 (was 11).&#13;
-- The quests "Wisdom of the Keeper/The Righteous", and "Past Mistakes" along with Karon and his ads are now logically in the Tomb of Lucian.&#13;
-- The hit list goal will now be in logic when the final hit target is in logic (was incorrectly placed in Fort Joy before).&#13;
-- Several typos were fixed.&#13;
-&#13;
-Setup Guide [here](https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/steup_en.md)&#13;
-&#13;
-DOS2 mod pak file [Github](https://github.com/Intaiachi/DOS2-Archipelago-Mod/releases), [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354)</content>
-    <link href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.26</id>
-    <title>Stardew Valley v8.0.25r2</title>
-    <updated>2026-08-08T00:50:30+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content>- Updated ID Tables&#13;
-- Fixed Blueberry Tart having a pants qualifier which broke its display in the lingo bundle&#13;
-- Fixed Pants having shirt qualifiers which broke their display in the lingo bundle&#13;
-- Added a small hint when failing a donation in the lingo bundle&#13;
-- Fixed some recipes in shops not following DR when turned into Ap locations&#13;
-- Fixed a crash on the day started code if the mod couldn't connect properly</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.0.26"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.2.1-b</id>
-    <title>Zuma Deluxe v0.2.0</title>
-    <updated>2026-08-08T02:39:38+00:00</updated>
-    <author>
-      <name>Movido51</name>
-    </author>
-    <content>HotFix for the Archipelago of Zuma Deluxe&#13;
-&#13;
-A playable version of the randomizer for Zuma Deluxe, still changes to come.&#13;
-As tradition a bug is noted after release.&#13;
-&#13;
-Only a client fix.&#13;
-&#13;
-&#13;
-# Quick Fixes &#13;
-Deathlink wasn't working correctly in the client almost being ignore, now deathlink works like the old rush trap making the game faster, beating a level will make you survive the deathlink combos will stun it.&#13;
-&#13;
-# Compatible Version&#13;
-&#13;
-This release is a hot fix of version [0.2.0](https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.2.0-b) its compatible with the games made in that version, and only affects the client.&#13;
-&#13;
-&#13;
-&#13;
-# Remainders&#13;
-You need to have the Zuma Deluxe Client and the Zuma Deluxe game open at the same time to play&#13;
-&#13;
-If you connect while you have a level open in Zuma go back to the menu.&#13;
-&#13;
-If the game is not found it probably is the language of it&#13;
-&#13;
-To keep track of locations use universal tracker&#13;
-&#13;
-When entering a map, always use the new game, it might not recognize the mode otherwise&#13;
-&#13;
-Any question, Bug or idea, feel free to ask on the discord channel for the game.&#13;
-&#13;
-## **_Have a Lovely Week_**</content>
-    <link href="https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.2.1-b"/>
-  </entry>
   <entry>
     <id>https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.2</id>
     <title>layer8problem v0.9.2.post2</title>
@@ -259,6 +18,33 @@ Any question, Bug or idea, feel free to ask on the discord channel for the game.
 &#13;
 ## - add an automatic UTF-8/emoji guard</content>
     <link href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NathanW001/BTTHArchipelago/releases/tag/0.1.01</id>
+    <title>Bat to the Heavens v0.1.1</title>
+    <updated>2026-08-08T04:31:17+00:00</updated>
+    <author>
+      <name>NathanW001</name>
+    </author>
+    <content>### Quick Hotfixes:&#13;
+- Fixed issues with incoming DeathLinks not being read properly by the game&#13;
+- Fixed issues with Goal completion at the top of Heaven's Channel. More specifically, there were two main issues. First, when the goal was to complete the game with a minimum amount, it would always check for the maximum amount. Second, when the player would interact with the door it would play the dialogue to end the game and then not initiate credits. I'm not sure if it's a Godot specific issue with function overrides, but despite calling the super() function it wouldn't run properly, so I've opted to just call the required functions to end the game manually and not call super. I've also added a notification that displays when the player has a goal that they haven't met yet.</content>
+    <link href="https://github.com/NathanW001/BTTHArchipelago/releases/tag/0.1.01"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.0</id>
+    <title>Rhythm Tengoku v1.0.0</title>
+    <updated>2026-08-08T06:42:04+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>Initial release.&#13;
+# Info&#13;
+* [Info](https://thelx5.github.io/tengoku/index.html)&#13;
+* [Setup](https://thelx5.github.io/tengoku/setup.html)&#13;
+# Notes&#13;
+* You need to reload the game menu to see any changes on the level grid, especially on the first load.</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.0"/>
   </entry>
   <entry>
     <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.2</id>
@@ -629,6 +415,53 @@ See https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.3 and https
     <link href="https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.4"/>
   </entry>
   <entry>
+    <id>https://github.com/Dreskn/Wikipelago-Continued/releases/tag/v0.6.0-ZaWarudo!</id>
+    <title>Wikipelago v0.6.0r2</title>
+    <updated>2026-08-09T10:08:56+00:00</updated>
+    <author>
+      <name>Dreskn (continued)</name>
+    </author>
+    <author>
+      <name>Skrumptily69 (original)</name>
+    </author>
+    <content>## Wikipelago 0.6.0-ZaWarudo!&#13;
+&#13;
+Requires **Archipelago 0.6.7**.  &#13;
+**New web client: https://wikipelago.dreskn.fr/**&#13;
+&#13;
+In-progress **0.5.x** rooms should be able to keep playing on the new client.&#13;
+&#13;
+---&#13;
+&#13;
+### Play in your more languages&#13;
+- Seeds can use **English, French, German, Spanish, Italian, Portuguese, Dutch, Swedish, or Polish** Wikipedia&#13;
+- Per-language curated article pools&#13;
+- **Client UI language** is separate from the seed’s wiki language (top-right menu)&#13;
+- Practice (solo) mode uses the selected UI language for its pool&#13;
+&#13;
+### Bingo&#13;
+- New item : **Progressive Bingo Stamp** allows you to stamp a cell you don't know how to get to&#13;
+- Bingo boards can hide/show. First-time completion of a board auto-hides it&#13;
+- Large boards better display (expand the board by clicking on it)&#13;
+- Bingo letter-pair frequencies are per language (using Scrabble alphabets)&#13;
+&#13;
+### Progression&#13;
+- Surplus Knowledge Fragments option (`additional_fragments_in_pool`, default 2); required fragments default **7**&#13;
+&#13;
+### Client performance &amp; readability&#13;
+- Faster page loads: hover prefetch + parsing and loading overlay&#13;
+- Single-pass link processing / lighter search restore&#13;
+- Target summary tooltip no longer clipped by the side panel&#13;
+- Climate diagrams and wide tables render more reliably, fixed scrolling bugs from these tables&#13;
+- Viewport-locked play area with independent side-panel scroll&#13;
+&#13;
+### Packaging &amp; quality&#13;
+- Proper Archipelago packaging (`wikipelago.apworld`, manifest / world_version)&#13;
+- YAML `requires` pins AP **0.6.7** + Wikipelago **0.6.0**&#13;
+- CI builds the apworld and strict-validates all language pools</content>
+    <link href="https://github.com/Dreskn/Wikipelago-Continued/releases/tag/v0.6.0-ZaWarudo!"/>
+  </entry>
+  <entry>
     <id>https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.3.3a</id>
     <title>i_am_your_beast v0.3.3a0</title>
     <updated>2026-08-09T10:10:54+00:00</updated>
@@ -876,6 +709,98 @@ Additionally, &#13;
     <link href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.2"/>
   </entry>
   <entry>
+    <id>https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.99</id>
+    <title>RE3Remake v0.3.0</title>
+    <updated>2026-08-09T16:34:47+00:00</updated>
+    <author>
+      <name>TheRealSolidusSnake</name>
+    </author>
+    <content>This is a "pre-release" of Version 3 that people can test while I'm MIA again.&#13;
+Any bugs you all find please report to the thread, and I'll try to get them fixed up when I get back from my trip 😃 &#13;
+&#13;
+**RE2Randomizer features ported over:**&#13;
+------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
+&#13;
+**Enemy kills can be checks/locations**&#13;
+Same as RE2, this adds a lot of checks (and more backtracking) to the randomizer 😃 &#13;
+&#13;
+**Double Weapons / Local Weapons**&#13;
+Same as RE2, always nice to have more weaponry in the world (although you won't receive duplicates, still)&#13;
+&#13;
+**In-game GUI tooltips when paused/in menu and a more revamped GUI system overall** &lt;- Mod menu is a lot more pleasant to look at&#13;
+&#13;
+**Safes when checked now behave closer to RE2**, they'll open automatically, the item will poof and the map will clear!&#13;
+&#13;
+**You can no longer toggle Deathlink on difficulties you have not beaten Vanilla**&#13;
+It's a design choice that I appreciated from RE2, so now we force players to "git gudder" before they can turn it on. &#13;
+I don't want players bringing Inferno Deathlink to a multiworld if they've never beaten the game on Inferno before.&#13;
+&#13;
+**RE3Randomizer specific changes**&#13;
+------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
+&#13;
+**Added "Invisible Enemies"**, which is just as awful as it sounds and can include Nemesis if desired 😅 &#13;
+&#13;
+**Added "Speedy Enemy Mode"**, which is just as awful as it sounds and can include Nemesis if desired 😅 &#13;
+&#13;
+**Added "Enemy Behavior"**, which is just as awful as it sounds and can include Nemesis if desired 😅 &#13;
+[SHOCKEEEEEEEEEEERRRRRR](https://www.youtube.com/watch?v=sMk-HPBF6Mw) - (you're Shocker, btw (Shocking, I know))&#13;
+&#13;
+**Client no longer requires EMV-Engine/Console**, which makes it much lighter space/resource wise and hopefully less jarring for the end user.&#13;
+Should also be feature parity between Non/RTX versions, now. &#13;
+This means that every version of RE3Remake should now be completely playable with the randomizer (I don't own the others to test)&#13;
+&#13;
+**Files can be checks/locations**, they only add junk into the item pool however.&#13;
+Note: If you happened to pick-up any of the files inside the subway station prior to making the save you made to play the randomizer, you'll want to start fresh and make a new save without having done that.&#13;
+&#13;
+**Added an In-Game Tracker, you can see the locations around you that you've missed**&#13;
+You'll find the toggle inside of the Archipelago Mod Window above the button to re-receive items :)&#13;
+&#13;
+**Revamped inventory system one more time, so items no longer *have* to be placed into the item box**&#13;
+While making Version 2 last year, I found the actual player fields for Carlos/Jill so I could award items how RE2 does but I had already dumped a ton of time into Version 2 and didn't want to stall the release any further.&#13;
+Note: Items that don't belong to the character being played should go into their respective item box, 2-slot items and weapons still always go to the item box regardless.&#13;
+&#13;
+**Fixed a major bug with the Lock Pick/Battery Pack**&#13;
+Thanks to everyone who reported this. &#13;
+Previously, if you received the Lock Pick/Battery Pack and then saved/quit/died before seeing the Lock Pick/Battery Pack cutscene, it could disappear from your inventory. It should now persist through save + quit/load/death.&#13;
+&#13;
+**Electronic Gadget in the R.P.D. is now in the item pool**&#13;
+This means Carlos may finally have to take a break at the police station and eat some donuts.&#13;
+Note: The Electronic Gadget on the Shower Room Wall will look like it enters your inventory, it will disappear afterward immediately.&#13;
+This is to prevent the game from killing the interact to place the bomb afterwards. This was the only solution I could find in my efforts to randomize this location. I'll continue to look into solutions for the Safety Deposit Key and Battery. &#13;
+&#13;
+**Jewels and the STARS ID Card are now always local**&#13;
+**This prevents players from accidentally disposing of them too early and missing locations later on**&#13;
+You'll always get the Jewels before having to go to the RPD and the ID Card is a requirement to go into the Reception Room from the Main hall in the RPD, so you're guaranteed to get it before it's needed as well (as long as you didn't accidentally skip it somewhere in your own game, which shouldn't be happening anymore :) )&#13;
+You can still go to the Clock Puzzle when you get to the Subway Station with Carlos and even put the Jewels into the puzzle after that point to so long as you don't accidentally "dispose" of them&#13;
+&#13;
+**Added two new Traps** &#13;
+(Jill only, unfortunately, because Carlos can't vomit)&#13;
+(I thought of something funny to do as a trap for Carlos, maybe when Version 3 gets officially released)&#13;
+&#13;
+**Hospital Defense Skip is real(ish)!** &#13;
+You can now sit completely still during that section and it will play out normally&#13;
+Note: You'll still need to place the Detonator in the 2nd phase of the Defense section to trigger the transfer to Jill. &#13;
+&#13;
+**And a bunch of smaller bug fixes, including:**&#13;
+&#13;
+Locker 109 is no longer static due to an item_object issue.&#13;
+&#13;
+Supply Case now correctly give Flame Rounds instead of Acid Rounds.&#13;
+&#13;
+Locations/Enemies properly sending the first time around.&#13;
+This was a bug in my code in the apworld that went overlooked because I suspected the client was the problem.&#13;
+&#13;
+Locations/Enemies now have GUIDs attached to them, so you can no longer grab stuff "out of order" accidentally&#13;
+&#13;
+## Thanks to Fuzzy for the RE2 ported code and this fix as well&#13;
+* Remove likely cause of ImGUI error in recent REF versions - https://github.com/TheRealSolidusSnake/RE3R_AP_Client/pull/7&#13;
+&#13;
+## What others contributed&#13;
+RopeyRed - Enemy Kills/Files on all difficulties (Standard only this release, however)&#13;
+Grenier - Stripped Scenario/Character out of the client/apworld so it no longer appends (JA), we only append difficulty if it's not a "Standard" location.</content>
+    <link href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.99"/>
+  </entry>
+  <entry>
     <id>https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.0</id>
     <title>Haste v0.5.0</title>
     <updated>2026-08-09T17:37:52+00:00</updated>
@@ -927,6 +852,23 @@ You will need to subscribe to and enable the [Mod](https://steamcommunity.com/sh
 - Fixed issue where Little Sister and Supersonic Zoe costumes were not being locked properly in Vanilla Plus and All Unlocks&#13;
 - Fixed issue where "Seperate" was used several times instead of "Separate", which is how the word is actually spelled</content>
     <link href="https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.1</id>
+    <title>Rhythm Tengoku v1.0.1</title>
+    <updated>2026-08-09T18:16:28+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>more support&#13;
+# Info&#13;
+* [Info](https://thelx5.github.io/tengoku/index.html)&#13;
+* [Setup](https://thelx5.github.io/tengoku/setup.html)&#13;
+# Changes&#13;
+* Added support for Rhythm Tengoku v1.1/Rev 1&#13;
+# Notes&#13;
+* You need to reload the game menu to see any changes on the level grid, especially on the first load.</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.1"/>
   </entry>
   <entry>
     <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.4</id>
@@ -1116,20 +1058,19 @@ When you want to PR logic fixes and they go into rules.py, regions.py or locatio
     <link href="https://github.com/danielgruethling/Archipelago/releases/tag/0.3.3"/>
   </entry>
   <entry>
-    <id>https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.4</id>
+    <id>https://github.com/stubobis1/archipelago-openomf-apworld/releases/tag/omf-0.0.4</id>
     <title>One Must Fall: 2097 v0.0.4</title>
     <updated>2026-08-10T18:36:47+00:00</updated>
     <author>
       <name>stubob</name>
     </author>
-    <content># One Must Fall: 2097 - Archipelago v0.0.4&#13;
+    <content># One Must Fall: 2097 - Archipelago World v0.0.4&#13;
 https://github.com/stubobis1/archipelago-openomf/releases&#13;
 **Full Changelog:** https://github.com/stubobis1/archipelago-openomf/compare/0.0.3...0.0.4&#13;
 &#13;
 &gt; OMF:2097 was released as freeware by Epic MegaGames in 1999. The game data is freely and legally downloadable.&#13;
 &#13;
 ---&#13;
-# Apworld&#13;
 &#13;
 ### What's New&#13;
 &#13;
@@ -1144,28 +1085,18 @@ Default economy YAML options have been retuned:&#13;
 &#13;
 Net effect: purchases cost more relative to money checks by default, and the per-check growth curve is flatter — a tighter default economy. All five remain player-configurable via YAML.&#13;
 &#13;
----&#13;
-# Client&#13;
+#### Bug fixes (OpenOMF client)&#13;
 &#13;
-### What's New&#13;
-&#13;
-#### Fixes&#13;
-&#13;
-- Fixed the "all tournaments" goal silently failing: `ap_on_tournament_win` now persists `APSave` to disk immediately after setting the tournament-won bit, instead of leaving it to the next autosave. The mechlab scene reloads `APSave` from disk on entry, so without this the just-set bit could get clobbered by the stale on-disk copy before it was ever saved&#13;
-- Fixed forfeiting a match while connected to Archipelago sometimes being scored using `fight_stats.winner` left over from the *previous* match — it's now forced to a real value on forfeit so `arena_end()`'s AP match-check can't read stale state&#13;
+- Fixed the "all tournaments" goal silently failing to complete: winning a tournament wasn't persisted immediately, so the mechlab's save-reload on entry could clobber the just-won tournament bit before it was written to disk&#13;
+- Fixed forfeiting a match in Archipelago mode sometimes being scored using stale data from the previous match&#13;
 &#13;
 #### Testing&#13;
 &#13;
-- AP-only tests (link against Archipelago-only symbols) now build as a separate `openomf_test_ap` executable via a new `testing/test_ap_*.c` naming convention, instead of sharing the main `openomf_test_main` binary&#13;
-- New `test_ap_tournament_goal.c` suite covering the tournament-goal logic behind the fix above&#13;
-&#13;
-#### Tooling (parent repo)&#13;
-&#13;
-- Consolidated duplicated Docker build/lib-bundling/game-data-linking logic out of `build.sh`, `test.sh`, and `build-run-noap.sh` into a shared `build-common.sh`&#13;
-- `bump_version.sh` no longer touches git at all — it only updates `archipelago.json`'s `world_version`; committing and tagging is manual&#13;
-- `gen_and_host.sh` now writes generated player YAML and multiworld output into the repo (`omf_players/`, `omf_output/`, `omf_templates/`) instead of `/tmp`, so they're around for debugging&#13;
+- AP-specific tests now build as their own `openomf_test_ap` binary (they link Archipelago-only symbols), instead of living inside the main test suite&#13;
+- New test coverage for the tournament-goal logic (`AP Tournament Goal` suite)&#13;
 &#13;
 ---&#13;
+&#13;
 ### Links&#13;
 &#13;
 - [Setup guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/setup_en.md)&#13;
@@ -1173,7 +1104,7 @@ Net effect: purchases cost more relative to money checks by default, and the per
 - [OpenOMF client](https://github.com/stubobis1/openomf)&#13;
 - [AP world](https://github.com/stubobis1/archipelago-openomf-apworld)&#13;
 - [Issues](https://github.com/stubobis1/archipelago-openomf/issues)</content>
-    <link href="https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.4"/>
+    <link href="https://github.com/stubobis1/archipelago-openomf-apworld/releases/tag/omf-0.0.4"/>
   </entry>
   <entry>
     <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.3</id>
@@ -1383,6 +1314,81 @@ release, which is exactly what it is for.
     <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.5"/>
   </entry>
   <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.6</id>
+    <title>Diablo II Archipelago v3.6.6</title>
+    <updated>2026-08-11T06:09:31+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># Unstable 3.6.6
+
+Rewards you can plan around. 33 new filler items, and where they land now
+depends on how far into the run you are.
+
+## Tiered rewards land at a matching depth
+
+High runes, perfect gems, grand charms and the big point items are held back
+for the later acts and difficulties. Their low-tier counterparts come early.
+A Vex is no longer exactly as likely in Blood Moor as in Hell Act 5.
+
+Measured over a full seed: **100% of tiered rewards now land inside their
+band, against 62-66% before.**
+
+The bands scale to the seed. A Full Normal run only spans Act 1 through Act 5
+Normal, so the whole ladder is squeezed onto that — the order survives even
+when "late" means Act 4 Normal instead of Act 3 Hell.
+
+New option **Tiered Filler Depth** (on by default) in both the AP YAML and the
+standalone settings. Turn it off for the old flat roll. It only moves filler,
+so logic and reachability are identical either way.
+
+## New rewards
+
+**Tiered bundles** — Random Rune (Mid), Random Rune (High), Flawless Gem,
+Perfect Gem, Small Charm, Large Charm, Grand Charm. The high rune band runs
+Pul through Ohm; Lo and above stay out of the filler pool.
+
+**Point items in real sizes** — 1, 3 and 10 Stat Points; 1, 2 and 3 Skill
+Points; 1 and 3 Reset Points. Named honestly, so what the multiworld shows
+other players is what you actually receive.
+
+**Gear by slot** — set and unique drops split into armour, helm, shield,
+gloves, boots, belt, weapon and jewelry. "Drop: Unique Boots" now means boots.
+
+## New traps
+
+- **Barrel Field** — a ring of exploding barrels around you
+- **Urn Garden** — a floor of urns to wade through
+- **False Treasure** — six chests, two of which are not chests
+- **Junk Backpack** — twenty useless items into your pack
+
+The first three hold until you leave town. All four also appear in standalone
+runs.
+
+## Fixes
+
+- **Standalone was missing twelve reward types.** The ordinary-item bundles
+  added in 3.6.5 were only ever wired into the Archipelago roll — a standalone
+  character could never receive them. All 19 bundles and all 8 trap types now
+  roll in both modes.
+- The Treasure Cow's chests and the new object traps now share one spawner
+  instead of two copies of the same code.
+
+## Verified
+
+Generation checked across the smoke, isolate, risky and multiworld option
+sweeps in both lines. A 300-player multiworld generated clean: 522 gate keys
+placed, zero depth violations.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.6"/>
+  </entry>
+  <entry>
     <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.4</id>
     <title>Ori and the Will of the Wisps v0.6.4</title>
     <updated>2026-08-11T06:10:39+00:00</updated>
@@ -1391,5 +1397,111 @@ release, which is exactly what it is for.
     </author>
     <content>Fix the `one_random` key (which replaced the `random` key in 0.6.3) not behaving as intened.</content>
     <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.7</id>
+    <title>Diablo II Archipelago v3.6.7</title>
+    <updated>2026-08-11T08:31:14+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># Unstable 3.6.7
+
+A loot filter. Choose what colour each kind of drop is drawn in, or stop
+drawing it at all.
+
+## Where
+
+**Launcher → Settings → Diablo II → Loot Filter → "Colours and hiding…"**
+
+Twenty-two groups, each with a colour and a Hide box:
+
+**By type** — gold, runes, gems, charms, jewels, rings and amulets, health and
+mana potions, rejuvenation, throwing potions, antidote/thawing/stamina,
+scrolls, tomes, keys, arrows and bolts, quest items.
+
+**By quality** — normal, superior, magic, rare, set, unique, crafted.
+
+Ten colours: white, red, green, blue, gold, grey, tan, orange, yellow, or
+Default to leave it exactly as the game draws it.
+
+Everything starts at Default, so if you never open the dialog nothing about
+your game changes. The setting is remembered across seeds and applies to both
+Archipelago and standalone runs.
+
+Gold as orange, runes in their own colour, plain white gear gone entirely —
+whatever you want.
+
+## Read this before you turn it on
+
+**This is the first release of the filter and it is not fully proven.**
+
+Diablo II does not keep item colours in any data file; it decides them in
+code. The only way to change them is to intercept the game's drawing calls,
+and that interception sees *every* piece of text the game client draws — menus
+and shop lists included, not just labels on the ground.
+
+There is a guard: a rule only applies to text that arrived with a backdrop
+behind it, which ground labels have and menu text does not. It should be
+enough. It has not been confirmed in a real session.
+
+So: if you set a rule and text goes missing somewhere it should not, that is
+this. Open the dialog and press **Reset all to default** — it takes effect on
+the next launch, no reinstall and no waiting for a patch.
+
+There is a **"Log every item label"** box at the bottom of the dialog. Turning
+it on for a minute and sending the resulting `d2arch_log.txt` is what will
+settle whether the guard holds.
+
+## Also
+
+The mod's import-patching helper now handles ordinal imports, which is how the
+Diablo II modules export nearly everything. That is what made the filter
+reachable at all.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.8</id>
+    <title>Diablo II Archipelago v3.6.8</title>
+    <updated>2026-08-11T11:24:18+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># Unstable 3.6.8
+
+## The loot filter is gone again
+
+3.6.7 added a filter for recolouring and hiding item labels on the ground. It
+did not work, and it is removed.
+
+The honest version of what happened: Diablo II decides those colours in code
+rather than in any data file, so changing them means intercepting the game's
+drawing calls. Which call to intercept could not be established from the
+binary — the function that reads the Alt key, which is the one that decides
+whether to label items at all, makes no drawing call anywhere near itself. The
+release went out on a reasonable guess with a fallback plan, and the fallback
+is this patch.
+
+Nothing else in 3.6.7 was affected, and nothing carried over: the mod no longer
+contains the code, and the launcher writes the filter off on every launch so a
+mismatched pair of versions cannot leave it running.
+
+Everything from 3.6.6 — tiered reward depth, the 33 new filler items, the four
+object traps — is untouched.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.8"/>
   </entry>
 </feed>

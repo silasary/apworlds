@@ -5,7 +5,7 @@ Enter the arena, unlock HARs, and upgrade your robot through Archipelago item ra
 
 
 ## Downloads
-- <a href="https://github.com/stubobis1/archipelago-openomf/releases/download/omf-0.0.4/openomf.apworld">Latest Version (0.0.4)</a>
+- <a href="https://github.com/stubobis1/archipelago-openomf-apworld/releases/download/omf-0.0.4/openomf.apworld">Latest Version (0.0.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
