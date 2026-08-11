@@ -2,7 +2,7 @@
 
 ## Where is the settings page?
 
-The [player settings page for this game](../player-settings) contains all the options for configuring your randomizer experience.
+The [player settings page for this game](/games/One Must Fall: 2097/player-options) contains all the options for configuring your randomizer experience.
 
 ## What does randomization do to this game?
 
@@ -12,7 +12,7 @@ In the Archipelago randomizer:
 - **HAR Unlocks** are items in the multiworld. You start with one HAR and receive others as items from the AP server.
 - **Stat upgrades** (HAR and pilot) are progressive items. Buying an upgrade slot in Mechlab sends a location check; the actual stat boost arrives as an item from the server.
 - **Match wins** and **tournament victories** send location checks.
-- Money still matters — match winnings and AP money bundle items fund your Mechlab purchases and tournament registration fees.
+- Money still matters — match winnings and AP money bundle items fund your Mechlab purchases and tournament registration fees. Each Money item you receive credits its full value to **every HAR's wallet at once** (even ones you haven't unlocked yet), and each successive item of the same type is worth a little more than the last.
 
 ## What is the goal?
 
@@ -34,4 +34,4 @@ When the AP server sends you an item, a brief notification plays in the HUD and 
 
 ## Unique local commands
 
-None beyond the standard Archipelago client interface. Connection settings (host, port, slot, password) are entered in the **Archipelago** menu on OpenOMF's main menu.
+None beyond the standard Archipelago client interface. Connection settings (host, port, slot, password) are entered in the **Archipelago** menu on OpenOMF's main menu. Quitting out of the Mechlab disconnects you from the Archipelago server.

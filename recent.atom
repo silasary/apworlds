@@ -2,76 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-10T18:31:04.443172+00:00</updated>
+  <updated>2026-08-11T00:21:08.156310+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-98</id>
-    <title>Borderlands 2 v98</title>
-    <updated>2026-08-07T06:32:30+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
-&#13;
-new stuff (since 0.5.4):&#13;
-- fix UT connection issue (hopefully)&#13;
-- infinite backpack as yaml setting&#13;
-- AP travels in fast travel menu &#13;
-- new setting to remove symbols without removing cult of the vault challenges&#13;
-- named enemy locations toggleable&#13;
-- level up checks toggleable (need more options for this in the future)&#13;
-- slot name + seed for .items.txt file&#13;
-- migrate blgstor to settings dir (sdk_mods/settings/blgstor)&#13;
-- rigged slots purchaseable from earl&#13;
-- rigged slots are 1 spin and work for Torgue/Flamerock slots&#13;
-- logic fixes&#13;
-- rulebuilder refactor&#13;
-- some coop things working: loot spawns, sprint, equip blocking, travel commands (chat and fast travel station)</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-98"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.0</id>
-    <title>johnny_upgrade v1.0</title>
-    <updated>2026-08-07T06:39:58+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>Initial release of johnny upgrade archipelago&#13;
-&#13;
-To install the client mod:&#13;
-1. Get the Tamper Monkey extension for your browser&#13;
-2. Install the script from below by clicking it (should install automatically)&#13;
-3. Navigate to https://www.coolmathgames.com/0-johnny-upgrade&#13;
-4. Have fun :)</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7</id>
-    <title>CrossCode v0.9.7</title>
-    <updated>2026-08-07T06:57:16+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Changes to Logic&#13;
-&#13;
-* Changed logic in **Faj'ro Temple** and **So'najiz Temple** to be more in line with the open world mod (@Valkhiya, #95).&#13;
-* Changed chests that block chest key gates so that they once again require the key that opens them (@CodeTriangle, #96).&#13;
-* **Faj'ro 3F: Large Fire Chamber Left** no longer requires a silver key in addition to a bronze key (@CodeTriangle, #96).&#13;
-&#13;
-## Changes to Generation&#13;
-&#13;
-* **Circuit Override** items are now classified as Useful instead of Progression after notable user feedback  (@CodeTriangle, #97).&#13;
-* Only 3 **Faj'ro Key** items are shuffled, in accordance with the recent changes to the open world mod (@CodeTriangle, #97).</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7"/>
-  </entry>
   <entry>
     <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.1</id>
     <title>johnny_upgrade v1.1</title>
@@ -1268,5 +1203,175 @@ For a setup guide look [here](https://github.com/danielgruethling/Archipelago/bl
 Logic is now partially generated from this repo: https://github.com/danielgruethling/NobetaLogic&#13;
 When you want to PR logic fixes and they go into rules.py, regions.py or locations.py, please PR them there.</content>
     <link href="https://github.com/danielgruethling/Archipelago/releases/tag/0.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.4</id>
+    <title>One Must Fall: 2097 v0.0.4</title>
+    <updated>2026-08-10T18:36:47+00:00</updated>
+    <author>
+      <name>stubob</name>
+    </author>
+    <content># One Must Fall: 2097 - Archipelago v0.0.4&#13;
+https://github.com/stubobis1/archipelago-openomf/releases&#13;
+**Full Changelog:** https://github.com/stubobis1/archipelago-openomf/compare/0.0.3...0.0.4&#13;
+&#13;
+&gt; OMF:2097 was released as freeware by Epic MegaGames in 1999. The game data is freely and legally downloadable.&#13;
+&#13;
+---&#13;
+# Apworld&#13;
+&#13;
+### What's New&#13;
+&#13;
+#### Economy rebalance&#13;
+&#13;
+Default economy YAML options have been retuned:&#13;
+&#13;
+- `buy_cost_factor` default doubled, 10 → 20 (Mechlab prices now default to 20% of vanilla, up from 10%)&#13;
+- `money_small_value` default halved, 3000 → 1500&#13;
+- `money_large_value` default cut to a fifth, 15000 → 3000&#13;
+- `money_small_step` / `money_large_step` defaults reduced (150 → 100, 750 → 200)&#13;
+&#13;
+Net effect: purchases cost more relative to money checks by default, and the per-check growth curve is flatter — a tighter default economy. All five remain player-configurable via YAML.&#13;
+&#13;
+---&#13;
+# Client&#13;
+&#13;
+### What's New&#13;
+&#13;
+#### Fixes&#13;
+&#13;
+- Fixed the "all tournaments" goal silently failing: `ap_on_tournament_win` now persists `APSave` to disk immediately after setting the tournament-won bit, instead of leaving it to the next autosave. The mechlab scene reloads `APSave` from disk on entry, so without this the just-set bit could get clobbered by the stale on-disk copy before it was ever saved&#13;
+- Fixed forfeiting a match while connected to Archipelago sometimes being scored using `fight_stats.winner` left over from the *previous* match — it's now forced to a real value on forfeit so `arena_end()`'s AP match-check can't read stale state&#13;
+&#13;
+#### Testing&#13;
+&#13;
+- AP-only tests (link against Archipelago-only symbols) now build as a separate `openomf_test_ap` executable via a new `testing/test_ap_*.c` naming convention, instead of sharing the main `openomf_test_main` binary&#13;
+- New `test_ap_tournament_goal.c` suite covering the tournament-goal logic behind the fix above&#13;
+&#13;
+#### Tooling (parent repo)&#13;
+&#13;
+- Consolidated duplicated Docker build/lib-bundling/game-data-linking logic out of `build.sh`, `test.sh`, and `build-run-noap.sh` into a shared `build-common.sh`&#13;
+- `bump_version.sh` no longer touches git at all — it only updates `archipelago.json`'s `world_version`; committing and tagging is manual&#13;
+- `gen_and_host.sh` now writes generated player YAML and multiworld output into the repo (`omf_players/`, `omf_output/`, `omf_templates/`) instead of `/tmp`, so they're around for debugging&#13;
+&#13;
+---&#13;
+### Links&#13;
+&#13;
+- [Setup guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/setup_en.md)&#13;
+- [Game guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/en_One%20Must%20Fall%202097.md)&#13;
+- [OpenOMF client](https://github.com/stubobis1/openomf)&#13;
+- [AP world](https://github.com/stubobis1/archipelago-openomf-apworld)&#13;
+- [Issues](https://github.com/stubobis1/archipelago-openomf/issues)</content>
+    <link href="https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.3</id>
+    <title>Ori and the Will of the Wisps v0.6.3</title>
+    <updated>2026-08-10T18:38:01+00:00</updated>
+    <author>
+      <name>Satisha</name>
+    </author>
+    <content>The update is aimed at reducing generation failures with entrance randomization and random spawn. There are a few breaking yaml changes.&#13;
+### Yaml changes&#13;
+- For the `goal` option, the `random` key got renamed to `one_random`, since random is a reserved key.&#13;
+- Some option combinations with random spawn (that have a high probablility/guarantee of resulting in a failure) now raise an `OptionError`. If you have the base teleporters in the pool (option `tp`, which is already enabled by default), you won't encounter these.&#13;
+### Fixes&#13;
+- Fix accessibility check with the `glades_done` option.&#13;
+- Prevent several entrance randomizations layout that lead to a generation failure.&#13;
+- Changed some amount of random spawn items, and help the generator to reduce fill errors.</content>
+    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.4</id>
+    <title>Diablo II Archipelago v3.6.4</title>
+    <updated>2026-08-10T20:25:45+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># Diablo II Archipelago — Unstable 3.6.4
+
+## The channel is now called Unstable
+
+It used to say "Stable". That promised more than it should: this is a project
+that ships fixes the same day they are found, and several releases in a day is
+normal. "Unstable" is the honest label.
+
+Nothing about how it works has changed. In game the version reads `U-3.6.4` —
+the slot Diablo II gives us holds eleven characters, and the full word does not
+fit next to a version number.
+
+## The Treasure Cow is a real super-unique now
+
+**Every cow in the Cow Level was called "Archipelago Treasure Cow".** That was
+not a display bug — the Treasure Cow was an ordinary Hell Bovine, and the only
+way to give it a name was to rename the monster *type* in the string table.
+That renames every Hell Bovine in the game, all thousands of them.
+
+So the Treasure Cow got its own entry in the super-unique table, and the Hell
+Bovine has its vanilla name back. **The Cow Level reads normally again.**
+
+The cow still comes alone, still hits like a boss, and it can appear more than
+once in a session.
+
+## Killing it drops chests
+
+The cow used to pay out by handing items straight to you, which is where every
+"the cow dropped nothing" report came from. It now spawns **3 to 5 sparkling
+chests** around you instead, and Diablo II's own chest code does the rest:
+
+- every item rolls at magic quality, 5% of the time rare
+- they skip the 25% "drops nothing" gate an ordinary chest has to pass
+- if nothing magic came out, the game rerolls up to ten more times
+
+A sparkling chest cannot come up empty. That guarantee is the game's, not ours.
+
+If the mod does not recognise your game build it quietly falls back to the old
+item reward rather than spawning nothing, and says so in the log.
+
+## Testing it
+
+The cheat menu (Ctrl+V) has a **Treasure Cow** button under Mons → Bosses, so
+you can spawn one where you stand instead of waiting for it to turn up.
+
+## Source code
+
+The full source is now on GitHub alongside the release, for both this line and
+the experimental one.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.6</id>
+    <title>Rabbit and Steel v0.3.6</title>
+    <updated>2026-08-10T23:45:56+00:00</updated>
+    <author>
+      <name>tjwombo</name>
+    </author>
+    <content>Fixed 8 kingdom runs ending early&#13;
+a lot of code cleanup that hopefully doesn't break anything&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.3.6](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.5...v0.3.6) - 2026-08-10&#13;
+&#13;
+### Commits&#13;
+&#13;
+- Update README.md [`b119e87`](https://github.com/tjwombo/RNSArchipelago/commit/b119e87175f5f46280b23e63183574f0d1215862)&#13;
+- cleanup + fix route length [`6a2badc`](https://github.com/tjwombo/RNSArchipelago/commit/6a2badcb15e077c7dc855dbb428229e043d6413a)&#13;
+- Add variable to ignore data from slot data [`8951ac1`](https://github.com/tjwombo/RNSArchipelago/commit/8951ac121eff9f4f37442ea6688054e6b116e4e1)&#13;
+- update modconfig [`268d0e6`](https://github.com/tjwombo/RNSArchipelago/commit/268d0e627e0f3741b9376286c7c8fe449d0a77e3)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.6"/>
   </entry>
 </feed>

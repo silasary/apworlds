@@ -1273,6 +1273,21 @@
       "version_simple": "3.6.2",
       "world_version": "3.6.2"
     },
+    "Stable-3.6.3": {
+      "created_at": "2026-06-23T07:23:19Z",
+      "description": "# Diablo II Archipelago \u2014 Stable 3.6.3\n\n## The Treasure Cow now drops chests\n\nKilling the Treasure Cow spawns **3 to 5 sparkling chests** in a ring around\nyou. Open them at your own pace.\n\n### Why it changed\n\nThe cow used to pay out through the mod's own item-delivery path \u2014 build the\nitems, hand them to the player. That path is where every \"the cow dropped\nnothing\" report came from: it has to get item quality, inventory space and\ndelivery flags right every single time, and when any one of those went wrong the\nreward silently vanished.\n\nSo the mod stops making items altogether. It spawns real chests and lets Diablo\nII do what it has always done well.\n\n### Why these chests are worth opening\n\nThey are the sparkling kind \u2014 the same ones you hunt for in the wild. The game's\nown chest code treats them specially:\n\n- every item rolls at **magic** quality, and 5% of the time **rare**\n- they skip the 25% \"drops nothing\" gate an ordinary chest has to pass\n- if nothing magic came out, the game **rerolls up to ten more times** until\n  something does\n\nA sparkling chest cannot come up empty. That is a guarantee from the game\nitself, not from us \u2014 which is exactly the point.\n\n### If something goes wrong\n\nThe mod checks that it recognises your game build before spawning anything. On\nan unexpected build it quietly falls back to the old item reward instead, so a\nkilled cow is never unrewarded. The reason is written to the log either way.\n\nBoth the confirmed kill and the \"cow vanished while you were still standing\nthere\" case pay out the same way.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Stable-3.6.3/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "02dc36a2cf9666f0adfbee430b6c7f4bcf176b924b45b6c1f86c9337d2d4eebd",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Stable-3.6.3",
+      "minimum_ap_version": "0.5.0",
+      "size": 71660,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Stable-3.6.3",
+      "title": "Stable-3.6.3",
+      "version_simple": "3.6.3",
+      "world_version": "3.6.3"
+    },
     "Test-Beta-1.6.0": {
       "created_at": "2026-03-30T09:30:28Z",
       "description": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
@@ -1286,6 +1301,21 @@
       "title": "Test-Beta-1.6.0",
       "version_simple": "1.6.0",
       "world_version": "1.6.0"
+    },
+    "Unstable-3.6.4": {
+      "created_at": "2026-08-10T20:25:45Z",
+      "description": "# Diablo II Archipelago \u2014 Unstable 3.6.4\n\n## The channel is now called Unstable\n\nIt used to say \"Stable\". That promised more than it should: this is a project\nthat ships fixes the same day they are found, and several releases in a day is\nnormal. \"Unstable\" is the honest label.\n\nNothing about how it works has changed. In game the version reads `U-3.6.4` \u2014\nthe slot Diablo II gives us holds eleven characters, and the full word does not\nfit next to a version number.\n\n## The Treasure Cow is a real super-unique now\n\n**Every cow in the Cow Level was called \"Archipelago Treasure Cow\".** That was\nnot a display bug \u2014 the Treasure Cow was an ordinary Hell Bovine, and the only\nway to give it a name was to rename the monster *type* in the string table.\nThat renames every Hell Bovine in the game, all thousands of them.\n\nSo the Treasure Cow got its own entry in the super-unique table, and the Hell\nBovine has its vanilla name back. **The Cow Level reads normally again.**\n\nThe cow still comes alone, still hits like a boss, and it can appear more than\nonce in a session.\n\n## Killing it drops chests\n\nThe cow used to pay out by handing items straight to you, which is where every\n\"the cow dropped nothing\" report came from. It now spawns **3 to 5 sparkling\nchests** around you instead, and Diablo II's own chest code does the rest:\n\n- every item rolls at magic quality, 5% of the time rare\n- they skip the 25% \"drops nothing\" gate an ordinary chest has to pass\n- if nothing magic came out, the game rerolls up to ten more times\n\nA sparkling chest cannot come up empty. That guarantee is the game's, not ours.\n\nIf the mod does not recognise your game build it quietly falls back to the old\nitem reward rather than spawning nothing, and says so in the log.\n\n## Testing it\n\nThe cheat menu (Ctrl+V) has a **Treasure Cow** button under Mons \u2192 Bosses, so\nyou can spawn one where you stand instead of waiting for it to turn up.\n\n## Source code\n\nThe full source is now on GitHub alongside the release, for both this line and\nthe experimental one.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/Unstable-3.6.4/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f6b7d2ca096e2ec415fa348a6bac08d05dfc358a3e36bbc93a7a44799b5e84c7",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.4",
+      "minimum_ap_version": "0.5.0",
+      "size": 71660,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "Unstable-3.6.4",
+      "title": "Unstable-3.6.4",
+      "version_simple": "3.6.4",
+      "world_version": "3.6.4"
     },
     "beta-1.0.0": {
       "created_at": "2026-03-26T12:04:20Z",
