@@ -2,72 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-11T12:23:58.706214+00:00</updated>
+  <updated>2026-08-11T18:28:38.231808+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.2</id>
-    <title>layer8problem v0.9.2.post2</title>
-    <updated>2026-08-08T04:10:43+00:00</updated>
-    <author>
-      <name>TheZockerBrain069</name>
-    </author>
-    <content>## - Remove the problematic emojis from all AP location names &#13;
-&#13;
-## - add an automatic UTF-8/emoji guard</content>
-    <link href="https://github.com/TheZockerBrain069/Layer8Problem-AP/releases/tag/v0.9.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/NathanW001/BTTHArchipelago/releases/tag/0.1.01</id>
-    <title>Bat to the Heavens v0.1.1</title>
-    <updated>2026-08-08T04:31:17+00:00</updated>
-    <author>
-      <name>NathanW001</name>
-    </author>
-    <content>### Quick Hotfixes:&#13;
-- Fixed issues with incoming DeathLinks not being read properly by the game&#13;
-- Fixed issues with Goal completion at the top of Heaven's Channel. More specifically, there were two main issues. First, when the goal was to complete the game with a minimum amount, it would always check for the maximum amount. Second, when the player would interact with the door it would play the dialogue to end the game and then not initiate credits. I'm not sure if it's a Godot specific issue with function overrides, but despite calling the super() function it wouldn't run properly, so I've opted to just call the required functions to end the game manually and not call super. I've also added a notification that displays when the player has a goal that they haven't met yet.</content>
-    <link href="https://github.com/NathanW001/BTTHArchipelago/releases/tag/0.1.01"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.0</id>
-    <title>Rhythm Tengoku v1.0.0</title>
-    <updated>2026-08-08T06:42:04+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>Initial release.&#13;
-# Info&#13;
-* [Info](https://thelx5.github.io/tengoku/index.html)&#13;
-* [Setup](https://thelx5.github.io/tengoku/setup.html)&#13;
-# Notes&#13;
-* You need to reload the game menu to see any changes on the level grid, especially on the first load.</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.2</id>
-    <title>Final Fantasy X v0.8.2</title>
-    <updated>2026-08-08T12:24:18+00:00</updated>
-    <author>
-      <name>Rurusachi</name>
-    </author>
-    <author>
-      <name>Andrewki</name>
-    </author>
-    <content>## FFX Apworld v0.8.2&#13;
-&#13;
-### Enhancement&#13;
-- Updates to internal rule classes. FFX custom rule classes now support `/explain` functionality from Universal Tracker (@Andrewki44)&#13;
-&#13;
-### Bug Fix&#13;
-- Fixed Shinryu being in logic immediately with the Monster Arena region (@Andrewki44)&#13;
-- Fixed Nova accessibility logic between Post-Nemesis &amp; Omega Weapon (@Rurusachi)&#13;
-- Fenrir &amp; Earth Eater reward locations are no longer enabled with Area &amp; Species rewards respectively (@Andrewki44)&#13;
-- Removed Aeon immunities from the randomized gear pool (@Rurusachi)</content>
-    <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.8.2"/>
-  </entry>
   <entry>
     <id>https://github.com/ArsonAssassin/DWAP/releases/tag/0.3.10</id>
     <title>Digimon World v0.3.10</title>
@@ -1503,5 +1442,315 @@ Everything from 3.6.6 — tiered reward depth, the 33 new filler items, the four
 object traps — is untouched.
 </content>
     <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.9</id>
+    <title>Diablo II Archipelago v3.6.9</title>
+    <updated>2026-08-11T11:36:01+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># Unstable 3.6.9
+
+Debug menu (Ctrl+V), Character tab.
+
+## Two new buttons
+
+**+100M XP** — exactly one hundred million experience. From a fresh character
+that lands you at level 57.
+
+**Max Level** — straight to 99. There because 100M is not actually enough to
+reach the Pandemonium content: from level 90 it does not even give you one
+more level.
+
+Both stop at 99 rather than doing anything, and say so in the log.
+
+## +10 Levels now gives ten levels
+
+It used to hand over a flat 500,000 experience regardless of where you were.
+That is roughly thirty levels at level 1 and next to nothing at level 80 — the
+button had been lying about what it did.
+
+It now reads your level and adds the actual gap to level+10.
+
+## Under the hood
+
+Level 99 costs 3,837,739,017 experience, which does not fit in the signed
+32-bit value the game's stat call takes. A large grant is handed over in
+pieces, and never more than the room left below the cap — adding past it wraps
+the total negative, and the character would look like it had lost every level
+it had.
+
+Launcher unchanged at 2.9.38.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/Unstable-3.6.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.2.2-beta</id>
+    <title>Tomba! v0.2.2b0</title>
+    <updated>2026-08-11T12:40:53+00:00</updated>
+    <author>
+      <name>T4g1</name>
+    </author>
+    <author>
+      <name>bosshunter</name>
+    </author>
+    <content>Second **beta release** introducing several new settings and a better location management that should hopefully results in less missing checks&#13;
+&#13;
+&gt; [!WARNING]&#13;
+&gt; This release is in testing phase. While core progression mechanics are fully functional, you may encounter minor bugs or pacing quirks. Please report any logic errors or generation issues on the issue tracker.&#13;
+&#13;
+---&#13;
+&#13;
+## ✨ What's New&#13;
+&#13;
+### 🛠️ Core Optimization &amp; Stability&#13;
+* **Overhauled Location Tracking**: Rewrote location metadata to double-check in-game status directly instead of guessing. This drastically reduces missing checks.&#13;
+* **Performance Boost**: Enhanced overall responsiveness and speed of the new location/check system.&#13;
+&#13;
+### 🗺️ Logic &amp; Rule Fixes&#13;
+* **Expanded Item Pool**: Added all remaining chests containing AP Crystals or Apples to the randomized pool.&#13;
+* **Reachability Fixes**: Corrected rules for accessing locations via item combinations or specific conditions.&#13;
+* **Key Requirements**: Fixed several item locations that were mistakenly assigned the wrong required key.&#13;
+* **Jump Rule Update**: Updated the `CAN_BIG_JUMP` rule to correctly include **Psychic Fish** and **Blue Powder**.&#13;
+* **Missing Items**: Restored the 3 missing 1Ups from the *Million Year Old Chest* in **Familiar Mansion**.&#13;
+* **Typo Fixes**: Cleaned up minor text errors.&#13;
+&#13;
+### 🐛 Bug Fixes&#13;
+* Fix #26 &#13;
+* Fix #45 &#13;
+* Fix #46 &#13;
+* Fix #48&#13;
+* Fix #49&#13;
+* Fix #50&#13;
+* Fix #51&#13;
+* Fix #52&#13;
+* Fix #53&#13;
+* Fix #54&#13;
+* Fix #56 &#13;
+* Fix #59 &#13;
+* Fix #64 &#13;
+&#13;
+---&#13;
+&#13;
+## 🔧 Installation&#13;
+1. Download the source code or the `.apworld` file.&#13;
+2. Drop it into your Archipelago `custom_worlds/` directory.</content>
+    <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.2.2-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/v3.7.0</id>
+    <title>Diablo II Archipelago v3.7.0</title>
+    <updated>2026-08-11T13:03:32+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># v3.7.0
+
+## The version is just a number now
+
+No more Beta, Stable or Unstable. Each of those made a promise about the build
+that the number already says better, and the last rename was itself a reaction
+to "Stable" claiming too much. A bare version claims nothing.
+
+`Unstable-3.6.9` was the last of the old spelling; this is `v3.7.0`.
+
+## Hunts now say where the target actually is
+
+With the super-unique shuffle on, a hunt's target keeps its name but stands on
+some other boss's spawn point. Three separate displays were supposed to tell
+you that. None of them did, for three different reasons:
+
+**The quest book showed nothing at all.** The code that looks up the moved
+target's real location sat behind a condition that could never be true — the
+line above it had already ruled out every hunt. It was dead from the day it was
+written.
+
+**Zone names were off by one.** The area name table is indexed by area id
+directly, but the book read it one slot low, so every zone on the page named
+its neighbour. This is very likely why the hunt areas were written off as
+untrustworthy at the time: the table was right, the reading was wrong.
+
+**The in-game tracker named the host but not the place.** It now says both.
+
+A hunt reads `Found in: Black Marsh (at Rakanishu's spot)` when shuffled, and
+its own verified zone when not.
+
+## Boss loot was invisible in solo runs
+
+Every reward type announces itself so the launcher can log it and play a sound.
+Boss loot said "Awesome loot incoming!", which carried none of the markers the
+solo pipe filters on — so it produced no tracker entry and no sound, and always
+had. It now announces itself like everything else:
+`Drop: Andariel Loot (4 items)`.
+
+Traps had the same problem and are fixed alongside.
+
+## Debug menu
+
+Unchanged from 3.6.9: `+100M XP`, `Max Level`, and `+10 Levels` giving ten
+actual levels.
+
+Requires launcher 2.9.39.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/v3.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.8.0</id>
+    <title>The Legend of Zelda - Spirit Tracks v0.8.0</title>
+    <updated>2026-08-11T13:04:14+00:00</updated>
+    <author>
+      <name>DayKat</name>
+    </author>
+    <author>
+      <name>1313e</name>
+    </author>
+    <author>
+      <name>Carrotinator</name>
+    </author>
+    <author>
+      <name>TriforceDrummer</name>
+    </author>
+    <author>
+      <name>Nepecute</name>
+    </author>
+    <author>
+      <name>Catzador</name>
+    </author>
+    <content>Very not compatible with previous versions.&#13;
+Requires new minimum Archipelago version of v0.6.7&#13;
+&#13;
+[Setup Guide](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/setup.md)&#13;
+&#13;
+## UT Map Tracker by @Catzador and me&#13;
+- Maps for every room in the game, with entrances, locations, events and auto tabbing!&#13;
+&#13;
+## Randomized Start&#13;
+- Added Randomized Start&#13;
+  - Has presets for niko, stations, towns and tos, but you can add any land entrance you like to the pool&#13;
+- Added free_starting_items option, cause most stations have no locations on an empty sphere 0.&#13;
+- start_with_train does a bit of railfinding, and will give you valid rails if your starting entrance leads to a train entrance.&#13;
+&#13;
+## Entrance Randomization&#13;
+- Added entrance rando with the following groupings, that can either be shuffled by themselves or in 1 of 3 pools with other grouping. Dungeon options can also choose to only be shuffle with dungeon parts of the same dungeon:&#13;
+  - shuffle_houses&#13;
+  - shuffle_caves&#13;
+  - shuffle_overworld_transitions&#13;
+  - shuffle_stations&#13;
+  - shuffle_train_transitions&#13;
+  - shuffle_portals&#13;
+  - shuffle_dungeon_entrances&#13;
+  - shuffle_bosses&#13;
+  - shuffle_dungeon_rooms&#13;
+  - shuffle_blue_warps&#13;
+  - shuffle_tos_staircase&#13;
+  - shuffle_tos_entrances (not new, but has the new pool options)&#13;
+  - shuffle_hyrule_castle     &#13;
+  - shuffle_disorientation (&gt;:3)&#13;
+  - shuffle_eote (ends of the earth)&#13;
+  - shuffle_las (lost at sea)&#13;
+- Added the following entrance randomizer modifier options:&#13;
+  - entrance_directionality: choose what pools and groupings care about pairing ups and downs etc.&#13;
+  - decouple_entrances&#13;
+  - ut_blocked_entrances: same as ph, choose how ut tracks blocked entrances.&#13;
+- Added entrance plando, with auto-pairing of orphaned entrances across groupings.&#13;
+- Adding option for changing the number of times ER tries to generate a valid layout, in case you want to play with volitile ER settings.&#13;
+- Added extended hint data when entrances are randomized&#13;
+&#13;
+## Smaller new stuff&#13;
+- Added in-game warp to start! Same as ph, open the collection screen and flip to prime, then enter any transition or save and quit!&#13;
+- Added map warp! Tap a station on the map to prime a warp there. UT's `/get_logical_path` considers map warp when finding the shortest path. This can be disabled in host.yaml.&#13;
+- You remain in control during cutscenes for opening doors, extending bridges and hitting switches!&#13;
+- Added an option for non-progressive versions of bombs, bow and sword&#13;
+- Phantom Zelda now teleports to you whenever you try to enter a door without her&#13;
+- Added 3 missing big rupee locations in Dune Sanctuary&#13;
+- Added the /count_entrances client command, to check your entrance exploration progress.&#13;
+- Added an `all` option to plando_dungeon_pool&#13;
+- Opened the one-way passage from tunnel to the tower to the tower basement&#13;
+- Removed dungeons automatically open their boss doors, and give free small keys (in case ER wants you to pass through or something)&#13;
+- Locations sent from console now process in client, for things like sending ut events&#13;
+- Added open_blizzard_temple yaml option, the bell doors are always open&#13;
+- Added open_blue_warps yaml option, 2-way blue warps are always open&#13;
+- New UT events:&#13;
+  - Unlocking blue warps&#13;
+  - Unlocking train portals&#13;
+  - Delivering NPCs that give rewards in other rooms to their stations.&#13;
+  - Visiting Kagoron at the Mountain Altar&#13;
+  - Finding the chest at Disorientation Station&#13;
+  - Triggers in other ER rooms in marine temple&#13;
+  - Unique rabbit locations when total rabbits are enabled&#13;
+  - Stamp stations with vanilla stamps&#13;
+  - Extra shortcuts&#13;
+- Added a yaml option to toggle extra UT events&#13;
+- UT's /get_logical_path can use unlocked shortcuts.&#13;
+- Many events will trigger backup activation of themselves if save data was lost after triggering them&#13;
+&#13;
+## Bugfixes and tweaks&#13;
+- Fixed crashes from game trying to spawn demon trains on non-existant tracks. Forest glyph is now randomizable, as well as fire glyph without btt&#13;
+- Fixed gen bug where certain locations required a `player` amount of something&#13;
+- `both` option for dark realm access now cares about dungeons&#13;
+- Shattered compass mode no longer adds a completed compass to the pool&#13;
+- Boss key stuff should no longer crash!&#13;
+- Fraaz can now logically be killed with more than sword (most weapons hit through his big form's chargeup!)&#13;
+- Oops some events did not have data.&#13;
+- no_cargo now removes all lava in Goron Village&#13;
+- Ferrus now spawns in fire realm with ocean source&#13;
+- Hearts no longer get stolen at max health&#13;
+- Farmabe chests in LAS give treasure on repeat visits. final chest does not when rooms are shuffled&#13;
+- Quitting on the train no longer sends rabbit locations&#13;
+- Fixed catch 50 rabbits location&#13;
+- Fixed Linebeck treasure cave giving free rupees&#13;
+- Fixed Cactops giving free ocean source&#13;
+- Train parts are more consistent&#13;
+- Teao 3 unlocks without the previous levels if Teao 3 is a required dungeon&#13;
+- Fixed Teao 3 location&#13;
+- Stamps gotten with the vanilla stamp option persist through resets&#13;
+- Fixed item models for farmable chests on repeat visits&#13;
+- Client now actually fetches most server data on connecting rather than needing to wait until they get updated lol&#13;
+- Added a 10s timeout for precision operations&#13;
+- Saving and quitting was triggering events early, fixed it&#13;
+- Renamed starting entrance to Warp to Start&#13;
+- Prevented deathlink from processing during get item cutscenes&#13;
+- Fixed compass of light appearing in pool when playing with shattered compass&#13;
+- Failing to enter the dark realm sends goal requirement info&#13;
+- Added getting ToS 19f center chest without rotating repeaters with an off screen bow shot&#13;
+- Fixed model swaps for progressive item vanilla locations&#13;
+- Made progress on multi-version support&#13;
+- Sending extra progressive items sets the base item&#13;
+&#13;
+Huge thanks to @catzador for doing tracker data entry and loads of playtesting before release!</content>
+    <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/pkolb-dev/Archipelago/releases/tag/2.0.0</id>
+    <title>The Legend of Dragoon v2.0.0</title>
+    <updated>2026-08-11T16:02:51+00:00</updated>
+    <author>
+      <name>pkolb-dev</name>
+    </author>
+    <content>## What's Changed&#13;
+* Sync by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/54&#13;
+* Swap to Rules Builder by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/55&#13;
+* Feature/augment shopsanity by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/58&#13;
+* Add deathlink option by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/59&#13;
+* fork sync by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/61&#13;
+* Legend of Dragoon: initial impl of magic by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/60&#13;
+* Feature/2.0.0 playtest changes by @pkolb-dev in https://github.com/pkolb-dev/Archipelago/pull/62&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/pkolb-dev/Archipelago/compare/1.3.1...2.0.0</content>
+    <link href="https://github.com/pkolb-dev/Archipelago/releases/tag/2.0.0"/>
   </entry>
 </feed>

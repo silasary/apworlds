@@ -10,5 +10,4 @@
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
