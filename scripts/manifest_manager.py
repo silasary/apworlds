@@ -73,9 +73,22 @@ def save_manifest(world: pathlib.Path, manifest: dict) -> None:
     if path:
         world = pathlib.Path(path)
 
-    yaml_path = world.with_suffix(".yaml")
+    should_be_yaml = len(manifest.get("versions", [])) == 0
+    if should_be_yaml:
+        write_yaml_file(world.with_suffix(".yaml"), _manifest)
+    else:
+        write_json_file(world.with_suffix(".json"), _manifest)
+
+
+def write_json_file(file_path: pathlib.Path, data: dict) -> None:
+    yaml_path = file_path.with_suffix(".yaml")
     if yaml_path.exists():
         yaml_path.unlink()
-    world = world.with_suffix(".json")
+    file_path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
 
-    world.write_text(json.dumps(_manifest, indent=2, sort_keys=True) + "\n")
+
+def write_yaml_file(file_path: pathlib.Path, data: dict) -> None:
+    json_path = file_path.with_suffix(".json")
+    if json_path.exists():
+        json_path.unlink()
+    file_path.write_text(yaml.dump(data, sort_keys=True))
