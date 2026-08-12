@@ -1,40 +1,22 @@
-# ATLYSS
+# Atlyss
 
 ## Latest
-- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.4-PreRelease/Atlyss.apworld">Latest Version (1.0.4rc0.post0)</a>
+- <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.2/atlyss.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
 
-#### v1.0.4rc0.post0
-- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.4-PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.4-PreRelease/Atlyss.apworld</a>
-
-#### v1.0.3rc0.post0
-- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.3-PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.3-PreRelease/Atlyss.apworld</a>
-
-#### v1.0.2rc0.post0
-- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.2-PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.2-PreRelease/Atlyss.apworld</a>
-
-#### v1.0.1rc0.post0
-- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.1-PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.1-PreRelease/Atlyss.apworld</a>
-
-#### v0.1.0r5
-- <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.1/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.1/atlyss.apworld</a>
+#### v0.2.0
+- <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.2/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.2/atlyss.apworld</a>
 
 #### v0.1.0r4
-- <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.0/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.0/atlyss.apworld</a>
+- <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.1/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.1/atlyss.apworld</a>
 
 #### v0.1.0r3
-- <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.1/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.1/atlyss.apworld</a>
+- <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.0/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.0/atlyss.apworld</a>
 
 #### v0.1.0r2
 - <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.0/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.0/atlyss.apworld</a>
 
-#### v0.0.5
-- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.5-PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/V1.0.5-PreRelease/Atlyss.apworld</a>
-
-#### v0.0.0+testbuild
-- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/TestBuild/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/TestBuild/Atlyss.apworld</a>
-
-#### v0.0.0+prerelease
-- <a href="https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/PreRelease/Atlyss.apworld">https://github.com/AzraeL0534/ATLYSS-Archipelago-WIP/releases/download/PreRelease/Atlyss.apworld</a>
+#### v0.1.0
+- <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.1/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.1/atlyss.apworld</a>
 

@@ -44,6 +44,9 @@ Currently, the items randomized are:
 - Vista of the gods will always be found in Kamiki Village. You can also get it from its vanilla source.
 - Mask will always be found in Calcified Cavern (Except in the freestanding item spot, it breaks the cutscene.)
 - Moon Cave ingredients will be randomized in Moon Cave. (You can bypass this with the settings.)
+- Leaf piles may also be destroyed with Inferno or Fireburst
+- The NightTimeChecks options no longer assumes you need Crescent for chests under leaf piles, as their locations are made
+  obvious.
 
 ## Healed areas available without blooming their guardian sapling:
 
@@ -54,7 +57,7 @@ Currently, the items randomized are:
 
 ### Agata Forest
 
-- by exiting Taka pass(Although the bridge won't be here.)
+- by exiting Taka pass (Although the bridge won't be here.)
 
 ### Taka Pass
 
@@ -86,8 +89,8 @@ Currently, the items randomized are:
 
 ### Imperial Palace (Issun size)
 
-- You need to have Lucky Mallet and enter the treasure room in Sunken ship to get the escape the water
-  dargon cutscene.
+- You'll always find the lucky mallet in the Sunken Ship Treasure room chests for now, as you need to have it in your
+  inventory to trigger the chased by the water dragon cutscene, which will open this dungeon.
 
 ### Himiko's Palace
 
@@ -104,4 +107,4 @@ Currently, the items randomized are:
 ### Oni Island
 
 - Vanilla: After doing inside the dragon, go see Otohime, then run to Ankoku Temple to open the shortcut, In Himiko's
-  Chambers, beat the evil Rao, the nrun to watcher's cape.
+  Chambers, beat the evil Rao, then run to watcher's cape.
