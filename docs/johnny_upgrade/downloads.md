@@ -1,4 +1,4 @@
-# None
+# Johnny Upgrade
 
 ## Latest
 - <a href="https://github.com/barretg/johnny-upgrade-ap/releases/download/v1.4-pre/johnny_upgrade.apworld">Latest Version (1.4rc0)</a>

@@ -1,6 +1,7 @@
-# None
+# Zoominoes
 
-
+Zoominoes is a roguelike deckbuilder where you run a zoo out of dominoes,
+playing animals onto a board to hit a daily score goal across a 28-day month.
 
 
 ## Downloads
@@ -8,9 +9,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Zoominoes">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Zoominoes">en_Zoominoes</a>

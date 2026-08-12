@@ -1,6 +1,7 @@
-# None
+# Bugsnax
 
-
+Bugsnax is a game about where players explore a mysterious island
+and attempt to find and capture the eponymous insectoid food creatures
 
 
 ## Downloads

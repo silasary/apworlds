@@ -1,6 +1,7 @@
-# None
+# Burger Shop 2
 
-
+Burger Shop 2 is a time-management restaurant game serving breakfast, lunch,
+and dinner across 120 Story Mode levels in 8 stages.
 
 
 ## Downloads
@@ -8,9 +9,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Burger Shop 2">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Burger Shop 2">en_Burger Shop 2</a>

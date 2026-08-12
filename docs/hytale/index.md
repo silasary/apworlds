@@ -1,6 +1,8 @@
-# None
+# Hytale
 
-
+Hytale is an adventure/sandbox game.
+Collect crafting stations, raw materials, weapons, and gear to unlock
+increasingly dangerous hunts and crafting achievements.
 
 
 ## Downloads

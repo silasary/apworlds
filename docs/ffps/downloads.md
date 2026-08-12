@@ -1,4 +1,4 @@
-# None
+# FFPS
 
 ## Latest
 - <a href="https://github.com/EviVirus/Archipelago-FNaFW/releases/download/FFPS-v1.0.0-pre1/ffps.apworld">Latest Version (1.0.0rc1)</a>

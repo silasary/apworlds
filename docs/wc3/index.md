@@ -1,6 +1,6 @@
-# None
+# Warcraft 3
 
-
+Warcraft 3 is a fantasy real-time strategy game developed and published by Blizzard Entertainment.
 
 
 ## Downloads
@@ -8,9 +8,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Warcraft 3">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Warcraft 3">en_Warcraft 3</a>

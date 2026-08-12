@@ -1,4 +1,4 @@
-# None
+# Hades2Rogue
 
 ## Latest
 - <a href="https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.9.3/Hades2Rogue.apworld">Latest Version (0.9.3)</a>

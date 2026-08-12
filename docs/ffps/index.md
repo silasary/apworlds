@@ -1,6 +1,7 @@
-# None
+# FFPS
 
-
+Freddy Fazbear&#x27;s Pizzeria Simulator is a horror game where animatronics come through vents into your office
+to kill you. You win if you complete night 5 with all 4 animatronics obtained in your world to get the true ending.
 
 
 ## Downloads
@@ -8,9 +9,9 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_FFPS">English</a>
 
 ## Setup Guide
 
 ## Other Documentation files
-- <a href="en_FFPS">en_FFPS</a>
 - <a href="ffps_en">ffps_en</a>

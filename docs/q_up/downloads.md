@@ -1,9 +1,12 @@
 # Q-UP
 
 ## Latest
-- <a href="https://github.com/cxve/q-ap-world/releases/download/v2.0.1/q_up.apworld">Latest Version (2.0.1)</a>
+- <a href="https://github.com/cxve/q-ap-world/releases/download/v2.0.2/q_up.apworld">Latest Version (2.0.2)</a>
 
 ## All Versions
+
+#### v2.0.2
+- <a href="https://github.com/cxve/q-ap-world/releases/download/v2.0.2/q_up.apworld">https://github.com/cxve/q-ap-world/releases/download/v2.0.2/q_up.apworld</a>
 
 #### v2.0.1
 - <a href="https://github.com/cxve/q-ap-world/releases/download/v2.0.1/q_up.apworld">https://github.com/cxve/q-ap-world/releases/download/v2.0.1/q_up.apworld</a>

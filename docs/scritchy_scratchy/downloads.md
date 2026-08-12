@@ -1,4 +1,4 @@
-# None
+# Scritchy Scratchy
 
 ## Latest
 - <a href="https://github.com/ksteve35/ScritchyScratchyAP/releases/download/v0.1.2-hotfix.2/scritchy_scratchy.apworld">Latest Version (0.1.2r4)</a>

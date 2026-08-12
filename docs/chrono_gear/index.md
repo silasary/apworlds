@@ -1,6 +1,6 @@
-# None
+# Chrono Gear
 
-
+Archipelago implementation for Chrono Gear: Warden of Time.
 
 
 ## Downloads

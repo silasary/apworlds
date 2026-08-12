@@ -1,4 +1,4 @@
-# None
+# IAmYourBeast
 
 ## Latest
 - <a href="https://github.com/petiboy7/IAYBArchipelago/releases/download/0.3.3/i_am_your_beast.apworld">Latest Version (0.3.3)</a>

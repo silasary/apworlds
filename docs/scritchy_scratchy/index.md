@@ -1,6 +1,9 @@
-# None
+# Scritchy Scratchy
 
-
+Scritchy Scratchy is a roguelite idle scratch ticket game.
+Unlock ticket types, upgrades, and gadgets sent from the multiworld
+while sending checks by cashing out tickets and buying upgrades.
+Complete the game by winning the Final Chance ticket.
 
 
 ## Downloads

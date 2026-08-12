@@ -1,6 +1,9 @@
-# None
+# Armored Core VI
 
-
+Armored Core VI: Fires of Rubicon -- Archipelago.
+Progress through missions, complete arena challenges, and reach any
+ending to complete your goal. AC parts are shuffled throughout the
+multiworld.
 
 
 ## Downloads

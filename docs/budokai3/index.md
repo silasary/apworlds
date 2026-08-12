@@ -1,6 +1,8 @@
-# None
+# Dragon Ball Z Budokai 3
 
-
+Dragon Ball Z Budokai 3 — fight through Dragon Universe campaigns,
+unlock sagas, and collect capsules in a multiworld randomizer.
+Play as Goku, Vegeta, Piccolo and more across all four sagas.
 
 
 ## Downloads
