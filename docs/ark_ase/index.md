@@ -1,6 +1,6 @@
 # ARK Survival Evolved
 
-
+ARK: Survival Evolved - engrams, taming, and dossiers as Archipelago items/checks.
 
 
 ## Downloads

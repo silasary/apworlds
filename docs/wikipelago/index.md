@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Dreskn/Wikipelago-Continued/releases/download/v0.6.0-ZaWarudo%21/wikipelago.apworld">Latest Version (0.6.0r2)</a>
+- <a href="https://github.com/Skrumptily69/Wikipelago/releases/download/release-2/Wikipelago.apworld">Latest Version (2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

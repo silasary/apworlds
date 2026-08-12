@@ -2,58 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-12T06:38:57.069223+00:00</updated>
+  <updated>2026-08-12T12:30:58.732714+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1</id>
-    <title>TCG Card Shop Simulator v1.2.0rc1</title>
-    <updated>2026-08-08T22:32:33+00:00</updated>
-    <author>
-      <name>FyreDay</name>
-    </author>
-    <content>### Changelog&#13;
-- fix Bulk Box ids&#13;
-- Add Grading unlock item that unlocks grading&#13;
-- Fix access to cards not being correct</content>
-    <link href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0-pre.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.3</id>
-    <title>Pokemon Snap v0.5.3</title>
-    <updated>2026-08-09T02:58:24+00:00</updated>
-    <author>
-      <name>nielrenned</name>
-    </author>
-    <content>## What's Changed&#13;
-* Swapped out `random` for `world.random` to ensure consistent trash by @cobyw&#13;
-* Fixed Universal Tracker compatibility bug by @cobyw&#13;
-* Added PopTracker map auto-updating (pending PopTracker pack release)&#13;
-* Fixed crash caused by receiving an item mid-level (and icons will now appear mid-level)&#13;
-* Logic: Remove Pokemon Sign Detector from item pool if Pokemon Signs are disabled as checks&#13;
-* Code simplification and cleanup&#13;
-&#13;
-**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.5.2...v0.5.3</content>
-    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.5.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.2</id>
-    <title>PixelDraw v1.3.2</title>
-    <updated>2026-08-09T03:09:03+00:00</updated>
-    <author>
-      <name>InterestedSC2</name>
-    </author>
-    <content>**Version 1.3.2​**&#13;
-&#13;
-_Archipelago Changes:_&#13;
-&#13;
-- ​Fixed the CHIP_PACK_5 issue&#13;
-- Fixed invalid patterns still being accepted in completion shape and needed patterns options&#13;
-- Code cleanup</content>
-    <link href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.2"/>
-  </entry>
   <entry>
     <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0b</id>
     <title>Isles of Trials v0.2.0b0</title>
@@ -358,7 +311,7 @@ unobtainable.
   </entry>
   <entry>
     <id>https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.2</id>
-    <title>Burger Shop 2 v0.3.2</title>
+    <title>Burger Shop v0.3.2</title>
     <updated>2026-08-09T16:22:06+00:00</updated>
     <author>
       <name>zsiegel701</name>
@@ -1696,6 +1649,73 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archip
     <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.2.3-beta"/>
   </entry>
   <entry>
+    <id>https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/v3.7.2</id>
+    <title>Diablo II Archipelago v3.7.2</title>
+    <updated>2026-08-11T22:07:29+00:00</updated>
+    <author>
+      <name>solida1987</name>
+    </author>
+    <author>
+      <name>ꓘicka (AP logic)</name>
+    </author>
+    <author>
+      <name>Zoë (AP logic)</name>
+    </author>
+    <content># v3.7.2 — Settings, gold and a stuck-skill rescue (safe mid-run)
+
+Game-side only. The launcher is unchanged (still 2.9.39), and so is every
+generated data file — **your monsters, bosses, entrances and vendors stay
+exactly where they are.** Safe to install in the middle of a run.
+
+## Your settings actually apply now
+
+- **Skill point cap was stuck at 20** no matter what your YAML said. The value
+  arrived correctly from the server, then the character's own saved state
+  overwrote it with a stale one. Under Archipelago the YAML is now the final
+  word; standalone keeps its per-character settings as before. Same fix for
+  "skill level requirements". No cleanup needed — it corrects itself on load.
+
+## Gold
+
+- **Gold rewards announced "0 Gold" while paying the real amount.** When gold
+  became level-scaled the amount moved to where the character's level is
+  known, but the message stayed behind and kept printing a hardcoded zero. You
+  were always being paid; only the text lied.
+- *Experimental line only:* level-scaled gold was queued but **never actually
+  granted** — four places added to the queue and nothing ever emptied it.
+
+## Quality of life
+
+- **Whirlwind (and any skill with its own animation) no longer traps you.**
+  Start one holding a bow, crossbow or spear and the character used to freeze
+  until you logged out. If you are stuck in a skill animation and haven't moved
+  for three seconds, the game now nudges you free by itself.
+- **The "SOMETHING UNUSUAL IS NEARBY" warning** lost its black box — it was
+  sized by guessing the pixel width from the character count, so it only ever
+  covered the first half of the message. The text is also higher and further
+  left. Both offsets are tunable in `d2arch.ini` under `[Notifications]`
+  (`BigWarnOffsetX`, `BigWarnOffsetY`).
+
+## Items
+
+- **Quest items can no longer be handed out as random unique or set drops.**
+  Six quest bases were reachable this way — the Viper Amulet, Khalim's Flail
+  and Will, the Staff of Kings, the Horadric Staff and the Hellforge Hammer.
+  Getting a spare could confuse or break the chain it belongs to.
+- **Every super-unique the mod adds has a real name.** All 45 showed up as
+  "an evil force", which is also why a gate guardian standing next to its
+  quest boss looked like a broken duplicate. They now read "Gatekeeper
+  &amp;lt;name&amp;gt;", so you can tell the key-holder from the real thing.
+
+## Not in this release
+
+The monster, super-unique and shop shuffle rebalances are built and tested but
+deliberately held back: they change the generated world, and that would move
+things around mid-run. They ship once the current games are finished.
+</content>
+    <link href="https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/v3.7.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/cxve/q-ap-world/releases/tag/v2.0.2</id>
     <title>Q-UP v2.0.2</title>
     <updated>2026-08-12T00:34:02+00:00</updated>
@@ -1716,5 +1736,72 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archip
 &#13;
 **Full Changelog**: https://github.com/cxve/q-ap-world/compare/v2.0.1...v2.0.2</content>
     <link href="https://github.com/cxve/q-ap-world/releases/tag/v2.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.2.4-beta</id>
+    <title>Tomba! v0.2.4b0</title>
+    <updated>2026-08-12T08:05:03+00:00</updated>
+    <author>
+      <name>T4g1</name>
+    </author>
+    <author>
+      <name>bosshunter</name>
+    </author>
+    <content>Second **beta release** introducing several new settings and a better location management that should hopefully results in less missing checks&#13;
+&#13;
+&gt; [!WARNING]&#13;
+&gt; This release is in testing phase. While core progression mechanics are fully functional, you may encounter minor bugs or pacing quirks. Please report any logic errors or generation issues on the issue tracker.&#13;
+&#13;
+---&#13;
+&#13;
+## ✨ What's New&#13;
+&#13;
+### 🛠️ Core Optimization &amp; Stability&#13;
+* **Overhauled Location Tracking**: Rewrote location metadata to double-check in-game status directly instead of guessing. This drastically reduces missing checks.&#13;
+* **Performance Boost**: Enhanced overall responsiveness and speed of the new location/check system.&#13;
+* Settings to randomize Furious Tornado and Chick&#13;
+&#13;
+### 🗺️ Logic &amp; Rule Fixes&#13;
+* **Expanded Item Pool**: Added all remaining chests containing AP Crystals or Apples to the randomized pool.&#13;
+* **Reachability Fixes**: Corrected rules for accessing locations via item combinations or specific conditions.&#13;
+* **Key Requirements**: Fixed several item locations that were mistakenly assigned the wrong required key.&#13;
+* **Jump Rule Update**: Updated the `CAN_BIG_JUMP` rule to correctly include **Psychic Fish** and **Blue Powder**.&#13;
+* **Missing Items**: Restored the 3 missing 1Ups from the *Million Year Old Chest* in **Familiar Mansion**.&#13;
+* **Typo Fixes**: Cleaned up minor text errors.&#13;
+&#13;
+### 🐛 Bug Fixes&#13;
+* Fix RetroArch issue with cached reads&#13;
+* Fix giving Charity Wing upon entering masakari river&#13;
+* Fix #26 &#13;
+* Fix #45 &#13;
+* Fix #46 &#13;
+* Fix #48&#13;
+* Fix #49&#13;
+* Fix #50&#13;
+* Fix #51&#13;
+* Fix #52&#13;
+* Fix #53&#13;
+* Fix #54&#13;
+* Fix #56 &#13;
+* Fix #59 &#13;
+* Fix #64 &#13;
+&#13;
+---&#13;
+&#13;
+## 🔧 Installation&#13;
+1. Download the source code or the `.apworld` file.&#13;
+2. Drop it into your Archipelago `custom_worlds/` directory.</content>
+    <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.2.4-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.1.7</id>
+    <title>Quake 1 v1.1.7</title>
+    <updated>2026-08-12T10:32:32+00:00</updated>
+    <author>
+      <name>randomcodegen</name>
+    </author>
+    <content>- Fixed medkits/armor not working&#13;
+- Performance improvements through caching</content>
+    <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.1.7"/>
   </entry>
 </feed>

@@ -1,10 +1,10 @@
 # Tomba!
 
-
+Tomba! is a platform/adventure/puzzle game for the PSX
 
 
 ## Downloads
-- <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v0.2.3-beta/tomba.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v0.2.4-beta/tomba.apworld">Latest Version (0.2.4b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

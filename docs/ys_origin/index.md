@@ -1,6 +1,6 @@
 # Ys Origin
 
-
+Ys Origin randomizer world (Hugo slice).
 
 
 ## Downloads

@@ -1520,6 +1520,21 @@
       "title": "v3.7.1",
       "version_simple": "3.7.1",
       "world_version": "3.7.1"
+    },
+    "v3.7.2": {
+      "created_at": "2026-08-11T22:07:29Z",
+      "description": "# v3.7.2 \u2014 Settings, gold and a stuck-skill rescue (safe mid-run)\n\nGame-side only. The launcher is unchanged (still 2.9.39), and so is every\ngenerated data file \u2014 **your monsters, bosses, entrances and vendors stay\nexactly where they are.** Safe to install in the middle of a run.\n\n## Your settings actually apply now\n\n- **Skill point cap was stuck at 20** no matter what your YAML said. The value\n  arrived correctly from the server, then the character's own saved state\n  overwrote it with a stale one. Under Archipelago the YAML is now the final\n  word; standalone keeps its per-character settings as before. Same fix for\n  \"skill level requirements\". No cleanup needed \u2014 it corrects itself on load.\n\n## Gold\n\n- **Gold rewards announced \"0 Gold\" while paying the real amount.** When gold\n  became level-scaled the amount moved to where the character's level is\n  known, but the message stayed behind and kept printing a hardcoded zero. You\n  were always being paid; only the text lied.\n- *Experimental line only:* level-scaled gold was queued but **never actually\n  granted** \u2014 four places added to the queue and nothing ever emptied it.\n\n## Quality of life\n\n- **Whirlwind (and any skill with its own animation) no longer traps you.**\n  Start one holding a bow, crossbow or spear and the character used to freeze\n  until you logged out. If you are stuck in a skill animation and haven't moved\n  for three seconds, the game now nudges you free by itself.\n- **The \"SOMETHING UNUSUAL IS NEARBY\" warning** lost its black box \u2014 it was\n  sized by guessing the pixel width from the character count, so it only ever\n  covered the first half of the message. The text is also higher and further\n  left. Both offsets are tunable in `d2arch.ini` under `[Notifications]`\n  (`BigWarnOffsetX`, `BigWarnOffsetY`).\n\n## Items\n\n- **Quest items can no longer be handed out as random unique or set drops.**\n  Six quest bases were reachable this way \u2014 the Viper Amulet, Khalim's Flail\n  and Will, the Staff of Kings, the Horadric Staff and the Hellforge Hammer.\n  Getting a spare could confuse or break the chain it belongs to.\n- **Every super-unique the mod adds has a real name.** All 45 showed up as\n  \"an evil force\", which is also why a gate guardian standing next to its\n  quest boss looked like a broken duplicate. They now read \"Gatekeeper\n  &lt;name&gt;\", so you can tell the key-holder from the real thing.\n\n## Not in this release\n\nThe monster, super-unique and shop shuffle rebalances are built and tested but\ndeliberately held back: they change the generated world, and that would move\nthings around mid-run. They ship once the current games are finished.\n",
+      "download_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/download/v3.7.2/diablo2_archipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a88f3c17318ebd6433d1e3a80510fc8684740ca983f336d5f28dea461dc85856",
+      "html_url": "https://github.com/solida1987/Diablo-II-Archipelago/releases/tag/v3.7.2",
+      "minimum_ap_version": "0.5.0",
+      "size": 80238,
+      "source_url": "https://api.github.com/repos/solida1987/Diablo-II-Archipelago",
+      "tag": "v3.7.2",
+      "title": "v3.7.2",
+      "version_simple": "3.7.2",
+      "world_version": "3.7.2"
     }
   }
 }
