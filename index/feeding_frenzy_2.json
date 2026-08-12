@@ -89,6 +89,20 @@
       "title": "Feeding Frenzy 2 AP - Release v0.6",
       "version_simple": "0.6",
       "world_version": "0.6"
+    },
+    "v0.7": {
+      "created_at": "2026-08-06T05:10:30Z",
+      "description": "*We're so back*\r\nThe new architecture should in theory greatly increase stability. Please note the new flow for starting the game (in the README and at the bottom of these release notes.\r\n\r\n## What's new:\r\n* Major architecture change: moved to a dll injection based architecture for more precise control of execution flow and greater stability\r\n* Fixed a bug where sometimes the user could progress without progressive fish\r\n* Fixed some issues interacting with the Steam \"deluxe\" version of the game vs the original release\r\n\r\n## Setup\r\nInstall as you would any other apworld (put it in `custom_worlds`, or double click to install automatically), generate template yamls to get the yaml file if needed, have your host generate/host the game, and then do the following:\r\n\r\n1. Launch the **Feeding Frenzy 2 Client** from the Archipelago Launcher. Do **not** start the game yourself -- the client has to start it (see below).\r\n2. Click **Launch Game** in the client.\r\n   * The first time, you'll be asked to pick your Feeding Frenzy 2 install directory (the folder containing `FeedingFrenzy2.exe` for the original release, or `FeedingFrenzyTwo.exe` for the Steam \"Deluxe\" release). It's remembered after that.\r\n   * The client copies its mod DLLs (`dsound.dll`, `ff2ap_hooks.dll`, plus a copy of the system `dsound.dll` as `dsound_real.dll`) into that folder and then starts the game. The Steam release is started through Steam so it can provide `steam.dll`.\r\n3. At the title screen, create a **new user**. **This is very important:** the randomizer writes level-progress data into whichever profile you use, so use a fresh one rather than your normal save.\r\n4. Connect to the server in the client.\r\n5. (Optional) Type `/fullscreen` in the client for borderless fullscreen with scaled mouse input.\r\n6. Play!\r\n",
+      "download_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.7/feeding_frenzy_2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "46922b5c91d403eb56f2bfa7d4605f82649eab91713a9b7ecf04f9ec4893daaa",
+      "html_url": "https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.7",
+      "size": 96294,
+      "source_url": "https://api.github.com/repos/barretg/feeding-frenzy-2-archipelago",
+      "tag": "v0.7",
+      "title": "Feeding Frenzy 2 AP - Release v0.7",
+      "version_simple": "0.7",
+      "world_version": "0.7"
     }
   }
 }

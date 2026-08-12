@@ -14,6 +14,9 @@
 #### v0.7.4r4
 - <a href="https://github.com/LonLon-Labs/SSHD_APWorld/releases/download/Continuous/sshd.apworld">https://github.com/LonLon-Labs/SSHD_APWorld/releases/download/Continuous/sshd.apworld</a>
 
+#### v0.7.4r4
+- <a href="https://github.com/LonLon-Labs/SSHD_APWorld/releases/download/Continuous/sshd.apworld">https://github.com/LonLon-Labs/SSHD_APWorld/releases/download/Continuous/sshd.apworld</a>
+
 #### v0.7.4r3
 - <a href="https://github.com/LonLon-Labs/SSHD_APWorld/releases/download/Continuous/sshd.apworld">https://github.com/LonLon-Labs/SSHD_APWorld/releases/download/Continuous/sshd.apworld</a>
 
