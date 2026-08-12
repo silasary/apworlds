@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "BatAtVideoGames"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Hollow Knight: Silksong",
+  "github": "https://github.com/Batatvideogames/silksong-archipelago-randomizer",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.4.2": {
+      "created_at": "2026-08-05T19:01:06Z",
+      "description": "### Important\r\n\r\n[Made a Trello](https://trello.com/b/as8YLuLA/skonging) where I document things that need fixing, things that are done (but might not be in most recent ver yet) and other stuff\r\n\r\nWhen reporting problems please make sure it isn't in the to-fix or long term to-do\r\n\r\n### Changelog\r\n\r\n- Phantoms cross stich event doesn't softlock anymore\r\n- Added Pollip Heart randomization with six Shellwood checks and six progressive hearts. The Pollip wish now reflects received AP hearts in fresh runs and Pollip Pouch requires all six when the category is randomized\r\n- Added Tool Pouch randomization with four checks and four progressive upgrades. Repeated Crafting Kits, Tool Pouches, Silk Hearts, Claw Mirrors and Curveclaws now maintain their proper progression counts across saves and offline map logic\r\n- Added Restoration of Bellhart as its own QuestSanity check. Also added optional individual relic turn-ins for Scrounge relics and Cardinius cylinders\r\n- Added separate price randomization for shops, Bellways, maps, pins, Needle upgrades and Wish donations. Expensive Shell Shard donations now account for Tool Pouch capacity\r\n- Added the experimental Bone Bottom starting location. Act 2 goal seeds now remove confirmed Act 3-only sources and dependent checks while keeping Silk Soar in the pool as optional post-goal progression\r\n- Flea Hunt now counts all 30 distinct received AP Fleas, including Kratt, Vog and Huge Flea. Goal completion also resynchronizes correctly after saving or reconnecting\r\n- Expanded and tightened room logic across Bone Bottom, The Marrow, Weavenest Atla, Wormways and Deep Docks. Checks with known conservative routes are usable, while genuinely unknown routes remain safely blocked from progression placement\r\n- Corrected many individual access rules, including Grindle, Greymoor Tower Flea, Greymoor Silkeater, Shellwood shard caches, several Memory Lockets and the Bone Bottom statue cache. False Needolin requirements were removed from the Citadel entrance and Cogwork Dancers elevator\r\n- Added the correct Surgeon\u2019s Key requirements for The Unravelled, its Silk Heart and the Underworks Psalm Cylinder. The Psalm Cylinder now uses its real Whiteward route instead of the unrelated Trobbio route\r\n- Fixed physical checks that could remain vanilla, disappear, or fail to report. This includes Pollip Hearts, several inaccessible Shell Shard caches, Mottled Scar Curveclaw and the Hunter\u2019s March and Far Fields necklaces\r\n- The Hunter\u2019s March and Far Fields necklaces are now stationary AP checks that ants cannot carry away. Nearby ordinary rosary caches keep their normal carry-away behavior\r\n- Expanded and corrected map-marker coverage for bosses, Wishes, Tool Pouches, Beast Shards, Pollip Hearts, relic turn-ins and state-dependent shop sources. The Sands of Karak Memory Locket marker and pickup source now point to the correct nook below Watcher at the Edge\r\n- Improved Slab recovery. F4 and every genuine seated bench now restore Hornet\u2019s confiscated cloak, crest, tools and temporary Rosaries and Shell Shards without changing Slab story progression\r\n- Added Naked Trap and improved trap cleanup. Naked Trap can be cleared at a bench, directional input no longer becomes stuck after the trap ends and Stagger Trap uses native recoil without dealing damage\r\n- Fixed post-fight softlocks for The Unravelled and Lace 2 when Hornet has no Silk Hearts. Their existing native recovery branch is now used without granting a free Silk Heart\r\n- Improved memory-fight reliability. Boss checks now trigger at safer victory-only states, while durable AP rewards, DeathLink and resource links survive native memory restoration correctly\r\n- Improved randomized shop previews and item presentation. Shops prefetch the actual AP reward more reliably, Mottled Scar Curveclaw reports the correct check and outgoing items now display an in-game notification\r\n- Crest Slot titles now show Item Name (Player Name) on one readable line. Long player names shrink or ellipsize after the item name and map-marker tooltip text size is configurable\r\n- Improved native inventory synchronization. Physical Bellway purchases unlock their matching destinations, Faydown-only ownership displays the correct cloak and Flea Brew and Plasmium Phial receive one proper initial charge\r\n- Improved several world-state and recovery cases, including Act 3 F4 routing, Cradle map fallback behavior, Wisp Thicket\u2019s randomized Faydown gate, the Moss Mother approach and the Marrow gauntlet\u2019s AP Cling Grip handling\r\n- Updated the bundled companion mods to CrestWheel and Custom Music Randomizer. Fresh Custom Music installs start disabled and its battle handling is safer around arena doors and native fight completion",
+      "download_url": "https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.2/silksong.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a1dcf04d638d4a60efff0ed3ab00fb1e6cea006b0bf10ac8e14133970dc1d1ce",
+      "html_url": "https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 192172,
+      "source_url": "https://api.github.com/repos/Batatvideogames/silksong-archipelago-randomizer",
+      "tag": "v0.4.2",
+      "title": "Silksong Randomizer 0.4.2",
+      "version_simple": "0.4.2",
+      "world_version": "0.4.2"
+    }
+  }
+}
