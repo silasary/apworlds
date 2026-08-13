@@ -20,6 +20,9 @@ with open("templates/index_template.mustache") as f:
 
 
 def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[str, Any], force: bool) -> None:
+    if manifest.get("upgrades_into"):
+        return
+
     versions = [v for v in versions if not v.get("ignore", False)]
     if not versions:
         return
