@@ -6,7 +6,11 @@
   "game": "Shellipelago",
   "github": "https://github.com/ethentianknight/shellipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "1.10": {
       "created_at": "2026-06-26T14:13:04Z",
@@ -94,7 +98,7 @@
     },
     "1.14": {
       "created_at": "2026-07-14T19:51:33Z",
-      "description": "Major logic fixes.",
+      "description": "Major logic fixes.\r\n\r\nUpdated 'web' download to no longer fail to initialize final run",
       "download_url": "https://github.com/ethentianknight/shellipelago/releases/download/1.14/shellipelago.apworld",
       "has_manifest": true,
       "hash_sha256": "12c3b36217445acd5a8cf1fe24b06df0ca3372018672ff0e0cf06d149db756df",
@@ -106,6 +110,21 @@
       "title": "Shellipelago 1.14",
       "version_simple": "1.14.0",
       "world_version": "1.14.0"
+    },
+    "1.14b": {
+      "created_at": "2026-08-13T14:19:36Z",
+      "description": "Players reported that warps were in logic even with graphics 0 that could not see them.\r\n\r\nGraphics 0 now can see warps as checkerboard tiles. No updates to the .apworld or yaml, it's compatible with previous 1.14 gens.\r\n\r\n\r\nIf you would prefer to not have to download the client, the game is also hosted on [itch.io](https://dragonsidestudios.itch.io/shellipelago) and mirrored at [shellipelago.pages.dev](https://shellipelago.pages.dev/) if you prefer fullscreen.  \r\n\r\nInstructions and text commands are listed on [itch.io](https://dragonsidestudios.itch.io/shellipelago) \r\n\r\nShoehorning the mobile release in here as well.",
+      "download_url": "https://github.com/ethentianknight/shellipelago/releases/download/1.14b/shellipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fb0a85d0deb0bcadb8efa31e47b4b9e61d438c8d489097ae4453ce215a79045a",
+      "html_url": "https://github.com/ethentianknight/shellipelago/releases/tag/1.14b",
+      "minimum_ap_version": "0.6.7",
+      "size": 56770,
+      "source_url": "https://api.github.com/repos/ethentianknight/shellipelago",
+      "tag": "1.14b",
+      "title": "Shellipelago 1.14b - Warp Hotfix",
+      "version_simple": "1.14.0",
+      "world_version": "1.14.0r2"
     },
     "1.2": {
       "created_at": "2026-06-22T00:50:22Z",

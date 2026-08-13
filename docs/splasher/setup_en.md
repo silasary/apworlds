@@ -21,12 +21,19 @@
 
 - Download the latest release of the [Splasher Archipelago](https://github.com/Frisk202020/SplasherArchipelago/releases/). Extract and drag all its content from /plugins into BepInEx's /plugins folder. 
 - Drag `connection.yaml` and `Proxy.exe` files inside `Splasher Archipelago` to Splasher's root folder. Then edit `connection.yaml` with your connexion info. The proxy is useful when playing online, [it is explained bellow](#playing-on-archipelagogg).
-- Launch the game and ring the assistant's bell : it should initiate a connection to the server, and if successful, initiate the mod !
-*You can ensure it worked if you now can't fire water/paint (except if unlocked in Archipelago)*
+
+### Setting up assets
+
+Archipelago implements new assets that need to be installed to ensure a flawless experience. These are shipped with the client, but need to be installed in specific locations.
+
+- Drag the contents of `assets` into `BepInEx\assets` (create folder if non-existent)
+- Drag the contents of `languages` into `<Splasher>\Splasher_Data\StreamingAssets\Languages`
+
+Once all of the above is done, you can launch the game and ring the assistant's bell : it should initiate a connection to the server, and if successful, initiate the mod ! You can ensure it works by ringing the Secretaire's bell, she should confirm Archipelago started properly.
 
 ## Managing the Archipelago session
 
-- Even though the base game does not have multiple save files, Archipelago will use new files as soon as it is enabled. Your vanilla save is safe, though Archipelago will trigger Steam achievements. It should be prevented in a future version.
+- Even though the base game does not have multiple save files, Archipelago will use new files as soon as it is enabled. Your vanilla save is safe, and Archipelago will disable achievements and sending Time Attack scores online.
 - If the Archipelago session successfully started, connection to the server is automatically managed. You don't have to worry about reconnections.
 
 ## Playing a game
@@ -39,13 +46,13 @@ In order to play on *archipelago.gg* (or most other servers on the internet), yo
 
 ### Hosting locally
 
-For hosting this Archipelago, you need to install the [apworld](https://github.com/Frisk202020/Archipelago/releases/) (simply double click on it, or install it with the launcher).
+For hosting this Archipelago, you need to install the [apworld](https://github.com/Frisk202020/Archipelago/releases/) (simply double click on it, or install it with the launcher). Versions of the client and the APWorld are synchronized except if stated otherwise, meaning you'll need to update both when upgrading.
 
 ### Tools
 
 As this game currently doesn't have in-game Archipelago messages, it is recommended to use external tools to guide your playthrough. 
 
-- For the tracker, I definitely recommend using *Evoker*'s [PopTracker](https://github.com/Ung-W/Splasher-AP-Poptracker/releases/). Universal Tracker is not fully compatible with this world (some issues, mainly with progressive powers, has been observed).
+- For the tracker, I definitely recommend using *Evoker*'s [PopTracker](https://github.com/Ung-W/Splasher-AP-Poptracker/releases/). Universal Tracker is not fully compatible with this world (some issues, mainly with progressive powers, have been observed).
 - For the client, you can go with the native text client but I'd rather recommend this [web client](https://drawesome4333.github.io/ap-tracker/).
 
 ## Feedback

@@ -131,6 +131,21 @@
       "title": "Splasher APWorld (v.0.0.7)",
       "version_simple": "0.0.7",
       "world_version": "0.0.7"
+    },
+    "v.0.0.8": {
+      "created_at": "2026-07-07T21:54:00Z",
+      "description": "# Splasher Archipelago (**v.0.0.8**) -- New Paint Types\r\n\r\n**This version requires to update the APWorld accordingly**\r\n\r\n**Don't forget to update your asset files**\r\n\r\n## Highlights\r\n\r\n### Progressive Water\r\n\r\nWe implement two new paint types integrated as *progressive water* :\r\n- **polluted water** (Lvl 1) : weaker water with less damage and which kills the player or fellow splashers on contact.\r\n- **speedink** (Lvl 3) : stronger water with double the damage and which doubles the player's speed when running onto it. When progressive water is enabled, it is also the only paint that can damage boss bubons, thus is required to goal.\r\n\r\nProgressive water is a separate option from `Randomize Powers` and is integrated differently depending on it :\r\n- for default randomization, stickink and speedink keep being a standalone unlockable while 3 progressive water items are in the pool.\r\n- for default randomization \"except water\", only 2 progressive water items are in the pool, 1 is on vanilla's water unlock.\r\n- for progressive randomization, all water tiers unlock before stickink and bouncink.\r\n- progressive water can't be enabled if randomization is off.\r\n\r\n### Traps\r\n\r\nThis version implements traps, for instance :\r\n- **Feet state** : your feet is affected by a random paint type (sticky, bouncy, speedy or toxic). The player dies after staying *3 seconds* on the floor if having `toxic feet`. Notice you won't have stickink or bouncink feet if those powers aren't unlocked.\r\n- **Mad Gun** : your gun will fire non-stop one of your unlocked paints. You can still fire other paint types but can't fire nothing in this state.\r\n- **Paint swap** : quite straightforward, your paint input buttons are shuffled around. \r\n\r\nThis traps can be revoked in two ways : \r\n- Dying for a few times (the number is set in options)\r\n- Reaching a checkpoint (including entering / clearing a level)\r\n\r\nOptions allow to enable one or both of those amnesties.\r\n\r\n## Additional changes\r\n\r\n- Added a splasher pool, which define how many filler splashers (according to your goal) are replaced by filler / traps\r\n- Capped cutscene speed for the Inkorp Express to `5` (to prevent unintentional deaths)\r\n- Reworked logic to include progressive water. This will need to be play-tested thoroughly\r\n\r\n## Next version\r\n\r\nThis version was intended to implement checkpoint-sanity and the option to collect splashers instantly (along with traps), but I got sidetracked by new paint types. This will be worked on for `0.0.9`.\r\n\r\n## [Client](https://github.com/Frisk202020/SplasherArchipelago/releases) | [APWorld](https://github.com/Frisk202020/Archipelago/releases)",
+      "download_url": "https://github.com/Frisk202020/Archipelago/releases/download/v.0.0.8/splasher.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7603131e88c5634ca33f6e28784ea6c4ede174c24b27941e63c64239d6734580",
+      "html_url": "https://github.com/Frisk202020/Archipelago/releases/tag/v.0.0.8",
+      "minimum_ap_version": "0.6.7",
+      "size": 23718,
+      "source_url": "https://api.github.com/repos/Frisk202020/Archipelago",
+      "tag": "v.0.0.8",
+      "title": "Splasher APWorld (v.0.0.8)",
+      "version_simple": "0.0.8",
+      "world_version": "0.0.8"
     }
   }
 }

@@ -2,151 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-13T12:26:31.128128+00:00</updated>
+  <updated>2026-08-13T18:28:36.259375+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1</id>
-    <title>TerraNil v0.2.1</title>
-    <updated>2026-08-09T11:13:31+00:00</updated>
-    <author>
-      <name>nepcore</name>
-    </author>
-    <author>
-      <name>Lily the Little Angel</name>
-    </author>
-    <content>- Rename items and locations to present better in alphabetically sorted lists (e.g. Universal Tracker)&#13;
-- The archipelago console can now be hidden by pressing `F1`&#13;
-- Send lava checks if you end up with only a lava source&#13;
-- Tried to make early game BK less egregious by forcing some early items to be in sphere 1&#13;
-- Added option to choose or randomize the starting level&#13;
-- Added YAML option to select game difficulty (because the built in difficulty picker only works in River Valley)&#13;
-- Added weather control hotkeys (`F2` for sun, `Shift`+`F2` for rain/snow/etc, only works once the relevant climate goal is achieved)&#13;
-- Added Universal Tracker YAMLless support&#13;
-- Added options to control how many/which levels are included&#13;
-- Added automatic reconnect if connection to the archipelago server is lost&#13;
-- Fixed multiple logic errors&#13;
-- Fixed a bug that would allow buildings to unlock incorrectly&#13;
-- Fixed a crash that would happen if trying to send checks after losing connection&#13;
-- Fixed selected difficulty not being applied after restarting the game&#13;
-- Fixed "Restart Phase" button not working&#13;
-- Fixed console breaking and causing connection issues if multiple messages come in during a loading screen&#13;
-- Fixed reconnect breaking when not on the main menu&#13;
-&#13;
-Known Issues:&#13;
-- In sessions with many checks the console will eventually stop rendering text and start to lag out the game, restarting the game and thereby emptying the console fixes this (will be fixed in the next version)</content>
-    <link href="https://github.com/nepcore/TerraNilAP/releases/tag/v0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.2</id>
-    <title>Ender Magnolia v0.1.2</title>
-    <updated>2026-08-09T14:28:05+00:00</updated>
-    <author>
-      <name>Trex</name>
-    </author>
-    <content>Pre-release of the **Archipelago** world for **Ender Magnolia**&#13;
-&#13;
-## Update&#13;
- - Added Meta Progression option&#13;
- - Group locations/items&#13;
- - Added start inventory from pool support&#13;
-&#13;
-## Requirements&#13;
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
-- [Ender Magnolia Randomizer](https://github.com/Trexounay/EnderMagnolia.Randomizer/releases) Get the corresponding version&#13;
-&#13;
-## Current Features&#13;
-- 340 checks&#13;
-- 2 Goals: **Ending A** **Ending B**&#13;
-- Starting Skill option (except non breaking walls weapon)&#13;
-- Shuffle relic costs&#13;
-- Progressive Aptitudes&#13;
-- Start with heal/fast travel&#13;
-- min/max chapters&#13;
-- Central Elevator Fix option&#13;
-- Starting respite&#13;
-&#13;
-## Notes&#13;
-This is an early pre-release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
-    <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0</id>
-    <title>Zoominoes v0.1.0.post4</title>
-    <updated>2026-08-09T15:01:23+00:00</updated>
-    <author>
-      <name>chickentuna</name>
-    </author>
-    <content>Community testing build. Feedback and bug reports welcome.
-
-## Install
-
-**1. BepInEx** — download **BepInEx 6 bleeding-edge, `Unity.Mono`, `win-x64`** from
-&lt;https://builds.bepinex.dev/projects/bepinex_be&gt; and unzip it into the game folder,
-next to `Zoominoes.exe`. Zoominoes is a Unity 6 Mono game; BepInEx 5 will not work.
-Run the game once so BepInEx creates its folders, then close it.
-
-e.g. for Windows:
-&lt;https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.Mono-win-x64-6.0.0-be.785%2B6abdba4.zip&gt;
-
-**2. The mod** — unzip `ZoominoesArchipelago.zip` into the same game folder. It drops
-into `BepInEx/plugins/`.
-
-**3. The world** — put `zoominoes.apworld` in your Archipelago install's
-`custom_worlds/` folder.
-
-On Linux the game runs under Proton with the same files. Add
-`WINEDLLOVERRIDES="winhttp=n,b" %command%` to the Steam launch options, or the
-loader will not inject.
-
-## Playing
-
-Press **F1** for the connection panel, enter your server address, port, slot name
-and password, and connect. The panel opens by itself until you do. Details are
-remembered for next launch.
-
-Runs are played on a dedicated **AP** profile. Your existing saves are not read or
-written while the mod is installed.
-
-## What is randomised
-
-Animals, snacks, souvenirs, zookeepers and difficulty tiers arrive as Archipelago
-items, along with extra starting gold, extra plays and hand size.
-
-`randomize_starter_zookeeper` and `randomize_starter_unlocks` extend that to what you
-open with: a random zookeeper in place of Marina, and a random 6 animals, 4 snacks and
-4 souvenirs in place of Starfish, Fennec and the rest. Whatever the draw passes over
-becomes an item like anything else.
-
-Checks come from Gift Shop slots and from finishing a day. **Every difficulty tier
-has its own set of both** — "Tier 3 - Shop 2 - Slot 1" is a different location from
-"Tier 5 - Shop 2 - Slot 1", so each tier you unlock opens 43 fresh checks: 24 across
-its eight shops and 19 across its playable days. On top of that, winning with each
-zookeeper and clearing each tier are checks in their own right.
-
-Three goals: clear a target difficulty tier, clear it with several different
-zookeepers, or collect Zoo Tickets scattered across the multiworld.
-
-Only normal runs take part — daily challenges, seeded runs and challenge runs are
-left alone.
-
-Items apply from your **next** run, since the game fixes its content pool when a run
-begins.
-
-## Options
-
-`Zoominoes-template.yaml` has every option, its documentation and its weights. Put it
-in your Archipelago `Players` folder and change the name at the top.
-
-Content the seed has no room for is unlocked from the start rather than left
-unobtainable.
-
-
-</content>
-    <link href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.2</id>
     <title>Burger Shop 2 v0.3.2</title>
@@ -1155,7 +1015,7 @@ Also I'm going to start including the bizhawk connector in these releases again.
   </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.10</id>
-    <title>Dark Cloud 1 v0.5.0r2</title>
+    <title>Dark Cloud 1 v0.5.0r3</title>
     <updated>2026-08-12T21:44:05+00:00</updated>
     <author>
       <name>Lizardman175</name>
@@ -1387,5 +1247,87 @@ All instructions for how to install and use the mod are in the [README.md](https
 * Improved Trap Sending: Now creates a fake generation like UT, does require the APWorld of the game to be installed (Fall back method toggleable in the client using /trap_fallback)&#13;
 * Fixed the user client disconnecting due to missing arguments in a bounce packet</content>
     <link href="https://github.com/ElectroStarz/Torture-AP-Client/releases/tag/v0.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.1.8</id>
+    <title>Quake 1 v1.1.8</title>
+    <updated>2026-08-13T14:05:35+00:00</updated>
+    <author>
+      <name>randomcodegen</name>
+    </author>
+    <content>- Implemented new item model; Big Shoutout to PastaPillows on Discord</content>
+    <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.1.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ethentianknight/shellipelago/releases/tag/1.14b</id>
+    <title>Shellipelago v1.14.0r2</title>
+    <updated>2026-08-13T14:19:36+00:00</updated>
+    <author>
+      <name>ethentianknight</name>
+    </author>
+    <content>Players reported that warps were in logic even with graphics 0 that could not see them.&#13;
+&#13;
+Graphics 0 now can see warps as checkerboard tiles. No updates to the .apworld or yaml, it's compatible with previous 1.14 gens.&#13;
+&#13;
+&#13;
+If you would prefer to not have to download the client, the game is also hosted on [itch.io](https://dragonsidestudios.itch.io/shellipelago) and mirrored at [shellipelago.pages.dev](https://shellipelago.pages.dev/) if you prefer fullscreen.  &#13;
+&#13;
+Instructions and text commands are listed on [itch.io](https://dragonsidestudios.itch.io/shellipelago) &#13;
+&#13;
+Shoehorning the mobile release in here as well.</content>
+    <link href="https://github.com/ethentianknight/shellipelago/releases/tag/1.14b"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.9</id>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
+    <updated>2026-08-13T17:14:13+00:00</updated>
+    <author>
+      <name>C@:\EM1NAL\</name>
+    </author>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>**Multiplayer is currently not working on 64-bit.**&#13;
+- Removed references to EpicMM so 64-bit doesn't crash.&#13;
+&#13;
+No APWorld changes since v1.0.4.</content>
+    <link href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.3.5-beta</id>
+    <title>Tomba! v0.3.5b0</title>
+    <updated>2026-08-13T17:49:31+00:00</updated>
+    <author>
+      <name>T4g1</name>
+    </author>
+    <author>
+      <name>bosshunter</name>
+    </author>
+    <content>Third **beta release** introducing yet again new settings and minor fixes&#13;
+&#13;
+&gt; [!WARNING]&#13;
+&gt; This release is in testing phase. While core progression mechanics are fully functional, you may encounter minor bugs or pacing quirks. Please report any logic errors or generation issues on the issue tracker.&#13;
+&#13;
+---&#13;
+&#13;
+## ✨ What's New&#13;
+&#13;
+### 🛠️ Core Optimization &amp; Stability&#13;
+* **Deathlink**: You can now enable deathlink in Tomba!&#13;
+* **No Game Over**: If you are tired of Game Over screens, you can opt in for infinite life instead!&#13;
+* **Random status alteration**: This one allows for random status alteration: Tomba! will sometimes start crying or laughing instead of getting an usefull item&#13;
+&#13;
+### 🐛 Bug Fixes&#13;
+* Fix: Can no longer get the location where you are supposed to get Yan's Lunch Box after Go Hide and Seek is cleared: This is now force cleared upon clearing the event&#13;
+* Fix: The chest in Ol'Pond was wrongly configured, this is now fixed&#13;
+* Fix: The location where you get the big key upon clearing the Big Painting of a key event is now checked too when Haunted Mansion is purified early&#13;
+* Fix: Chest in the tree at VOAB with the Bell in it was also wrongly configured and is now fixed&#13;
+&#13;
+---&#13;
+&#13;
+## 🔧 Installation&#13;
+1. Download the source code or the `.apworld` file.&#13;
+2. Drop it into your Archipelago `custom_worlds/` directory.</content>
+    <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.3.5-beta"/>
   </entry>
 </feed>
