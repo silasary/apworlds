@@ -11,6 +11,9 @@
 #### v0.6.0r2r2
 - <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.6.3/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.6.3/ff1pr.apworld</a>
 
+#### v0.6.0r2
+- <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.6.1/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.6.1/ff1pr.apworld</a>
+
 #### v0.6.0
 - <a href="https://github.com/wildham0/FF1PRAP/releases/download/0.6.0/ff1pr.apworld">https://github.com/wildham0/FF1PRAP/releases/download/0.6.0/ff1pr.apworld</a>
 

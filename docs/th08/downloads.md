@@ -1,9 +1,12 @@
 # Touhou Eiyashou ~ Imperishable Night
 
 ## Latest
-- <a href="https://github.com/Nepley/in-apworld/releases/download/v1.1.2/th08.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/Nepley/in-apworld/releases/download/v1.1.3/th08.apworld">Latest Version (1.1.3)</a>
 
 ## All Versions
+
+#### v1.1.3
+- <a href="https://github.com/Nepley/in-apworld/releases/download/v1.1.3/th08.apworld">https://github.com/Nepley/in-apworld/releases/download/v1.1.3/th08.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/Nepley/in-apworld/releases/download/v1.1.2/th08.apworld">https://github.com/Nepley/in-apworld/releases/download/v1.1.2/th08.apworld</a>

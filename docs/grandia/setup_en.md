@@ -49,6 +49,16 @@ Client commands:
 
 In Task Manager → Details, `grandia.exe` should show **32-bit**.
 
+## Injection troubleshooting
+
+If the client repeats `LoadLibraryW returned NULL` / `LoadLibraryW failed`:
+
+1. Confirm `grandia.exe` is running **in-game** (past the Steam/launcher menu).
+2. Use the latest **Win32** `grandia.apworld` (x64 DLLs will not load).
+3. Allow `Grandiarchipelago.dll` in antivirus.
+4. Run Archipelago and Steam as the **same Windows user**.
+5. Check the new client log line for the **remote Win32 error** (e.g. `126 ERROR_MOD_NOT_FOUND`).
+
 ## Development status
 
 | Component | Status |

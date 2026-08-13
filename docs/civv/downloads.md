@@ -23,6 +23,9 @@
 #### v0.10.2
 - <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.2/civv.apworld">https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.2/civv.apworld</a>
 
+#### v0.10.1
+- <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.1/civv.apworld">https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.1/civv.apworld</a>
+
 #### v0.10.0
 - <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.0/civv.apworld">https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.0/civv.apworld</a>
 

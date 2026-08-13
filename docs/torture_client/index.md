@@ -1,10 +1,10 @@
 # Torture Client
 
-
+Inflict horrible pain and suffering on your friends with this :]
 
 
 ## Downloads
-- <a href="https://github.com/ElectroStarz/Torture-AP-Client/releases/download/v0.0.3/torture_client.apworld">Latest Version (0.0.2r2)</a>
+- <a href="https://github.com/ElectroStarz/Torture-AP-Client/releases/download/v0.0.4/torture_client.apworld">Latest Version (0.0.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -41,8 +41,8 @@ selected or random people. If you put a number without anyone selected, the clie
 traps to. If you have a number **and** selected people, it will pick [number]/[selected] people to send traps to. If you
 have just selected people, it will send traps to them.
 
-The trap sending may not be perfect, this checks the item_name_to_id in the datapackage for items that have the word
-"Trap" (case-insensitive) in them.
+Trap Sending requires you to have the APWorld for the game installed as it creates a fake generation like UT, the yaml
+however is not needed.
 
 ### Log to Clients
 Now below that you will see a Log to Clients subheading! This will log directly to the client whatever you type and 

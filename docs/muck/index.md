@@ -1,6 +1,8 @@
 # Muck
 
-
+Muck is a survival-roguelike about collecting resources and powerups during the day to survive the nights.
+Your goal is to repair a ship to leave the Muck island before the exponential difficulty destroys you, however, powerfull bosses will have to be fought for that
+To leave, you will have to face your arch nemesis : Bob
 
 
 ## Downloads
