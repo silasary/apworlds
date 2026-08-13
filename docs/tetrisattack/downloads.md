@@ -1,9 +1,12 @@
 # Tetris Attack
 
 ## Latest
-- <a href="https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.2_01/tetrisattack.apworld">Latest Version (0.4.2r2)</a>
+- <a href="https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.3/tetrisattack.apworld">Latest Version (0.4.3)</a>
 
 ## All Versions
+
+#### v0.4.3
+- <a href="https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.3/tetrisattack.apworld">https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.3/tetrisattack.apworld</a>
 
 #### v0.4.2r2
 - <a href="https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.2_01/tetrisattack.apworld">https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.2_01/tetrisattack.apworld</a>

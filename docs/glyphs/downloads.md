@@ -1,9 +1,12 @@
 # GLYPHS
 
 ## Latest
-- <a href="https://github.com/BuffYoda21/ap-glyphs/releases/download/v1.2.0/glyphs.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/BuffYoda21/ap-glyphs/releases/download/v1.2.1/glyphs.apworld">Latest Version (1.2.1)</a>
 
 ## All Versions
+
+#### v1.2.1
+- <a href="https://github.com/BuffYoda21/ap-glyphs/releases/download/v1.2.1/glyphs.apworld">https://github.com/BuffYoda21/ap-glyphs/releases/download/v1.2.1/glyphs.apworld</a>
 
 #### v1.2.0
 - <a href="https://github.com/BuffYoda21/ap-glyphs/releases/download/v1.2.0/glyphs.apworld">https://github.com/BuffYoda21/ap-glyphs/releases/download/v1.2.0/glyphs.apworld</a>
