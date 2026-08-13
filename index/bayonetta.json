@@ -282,6 +282,21 @@
       "title": "v2.6.2",
       "version_simple": "2.4.0",
       "world_version": "2.4.0r2"
+    },
+    "v3.0.0": {
+      "created_at": "2026-08-02T12:35:44Z",
+      "description": "## v3.0.0\r\nSteam P2P Co-op expansion featuring Shared Witch Time, co-op consumable inventory trading.\r\n\r\n### What's New\r\n* **Shared Witch Time:** Added cooperative P2P synchronization for Witch Time. When either you or your co-op peer successfully triggers Witch Time in combat, it now broadcasts across P2P sockets to instantly force-activate Witch Time for both players simultaneously.\r\n* **Co-op Consumable & Item Sharing:** Extended the Co-op tab menu with a live inventory list of your current lollipops and crafting compounds. You can now select any item and click **\"Give to Peer\"** to instantly transfer it over P2P while safely deducting the item count from your own inventory.\r\n* * **Public Lobby Browser:** This was added so you don't have to give your friends the Room ID instead you can just see the room in the browser. (Have no idea if it works but if it does I will add a Room Password option)\r\n\r\n### Bug Fixes & Adjustments\r\n* **Location Address Collision Fixes:** Cleaned up global `location_table` and region builders to properly separate and conditionally register rank tiers (`Any Medal` vs. `All Medals`), fixing generation crashes and ensuring 100% fuzzer test pass rates.\r\n* **Rule and Logic Alignment:** Updated movement gating and victory conditions in `Rules.py` to match the new memory fragment option configurations.\r\n* **Traps and Techniques:** Traps should no longer be spawned in Gates of Hell and Techniques should no longer send checks when trying out the Technique instead of buying them.\r\n\r\n### HOT FIX\r\n* **Chapter Unlocks and Ingame Notification System:** Fixed the broken notification system and changed it up a bit, and unlocked chapters now show.\r\n\r\n### Todo\r\n* **Co-op Enhancements:** Implement a downed state and cooperative revival mechanic for Player 2.\r\n* **Tracker Updates:** Refine UI elements for active inventory trading feedback.\r\n* **Witch Heart Noise Bug:** This awful bug is still a problem.\r\n\r\n### Highly Recommended Additions\r\nFor the most stable and enjoyable experience, I strongly recommend downloading and installing these alongside the AP mod, it does not take much work to install and it will help with crashes and bugs the AP mod might have! \r\n* **[Bayonetta 4GB Patch](https://github.com/oceaniccamred/Bayonetta-4GB-Patched-EXE)** (Highly recommended to prevent memory crashes)\r\n* **[Bayonetta Essentials](https://gamebanana.com/mods/533310)**\r\n\r\n### Downloads\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta `plugins/` folder (requires an ASI loader proxy `dinput8.dll` in your main game folder next to `Bayonetta.exe`).\r\n- **`z.dll`** \u2014 place in your Bayonetta `plugins/` folder (requires an ASI loader proxy `dinput8.dll` in your main game folder next to `Bayonetta.exe`).\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder (replace the old one).\r\n\r\n**Existing seeds keep their original logic** \u2014 updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.\r\n\r\nFound a bug or have an idea? [Open an Issue](../../issues)!",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v3.0.0/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a78599ef87f9a43641c21b4bc3045c0d22e9447b578798b6d7826f56b0c2f318",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v3.0.0",
+      "minimum_ap_version": "0.4.0",
+      "size": 16597,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v3.0.0",
+      "title": "v3.0.0 - More Co-op Features and Bug Fixes!",
+      "version_simple": "3.0.0",
+      "world_version": "3.0.0"
     }
   }
 }

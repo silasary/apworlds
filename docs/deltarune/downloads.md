@@ -1,9 +1,12 @@
 # Deltarune
 
 ## Latest
-- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.1.0%2Bbeta7/deltarune.apworld">Latest Version (2.1.0+beta7)</a>
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.1.1/deltarune.apworld">Latest Version (2.1.1)</a>
 
 ## All Versions
+
+#### v2.1.1
+- <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.1.1/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.1.1/deltarune.apworld</a>
 
 #### v2.1.0+beta7
 - <a href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.1.0%2Bbeta7/deltarune.apworld">https://github.com/theemeraldsword85/DELTARUNEAP/releases/download/v2.1.0%2Bbeta7/deltarune.apworld</a>
