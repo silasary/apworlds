@@ -1,9 +1,12 @@
 # Johnny Upgrade
 
 ## Latest
-- <a href="https://github.com/barretg/johnny-upgrade-ap/releases/download/v1.4-pre/johnny_upgrade.apworld">Latest Version (1.4rc0)</a>
+- <a href="https://github.com/barretg/johnny-upgrade-ap/releases/download/v1.4/johnny_upgrade.apworld">Latest Version (1.4)</a>
 
 ## All Versions
+
+#### v1.4
+- <a href="https://github.com/barretg/johnny-upgrade-ap/releases/download/v1.4/johnny_upgrade.apworld">https://github.com/barretg/johnny-upgrade-ap/releases/download/v1.4/johnny_upgrade.apworld</a>
 
 #### v1.4rc0
 - <a href="https://github.com/barretg/johnny-upgrade-ap/releases/download/v1.4-pre/johnny_upgrade.apworld">https://github.com/barretg/johnny-upgrade-ap/releases/download/v1.4-pre/johnny_upgrade.apworld</a>

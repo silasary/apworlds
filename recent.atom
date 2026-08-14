@@ -2,285 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-13T18:28:36.259375+00:00</updated>
+  <updated>2026-08-14T00:26:14.239092+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.2</id>
-    <title>Burger Shop 2 v0.3.2</title>
-    <updated>2026-08-09T16:22:06+00:00</updated>
-    <author>
-      <name>zsiegel701</name>
-    </author>
-    <content>This release contains several QOL updates for both Burger Shop 1 and 2.&#13;
-&#13;
-- The client will create and manage its own Archipelago save file.  This means a new save file is no longer needed for an Archipelago session, you just need to connect the client then load the Archipelago save file in Burger Shop.&#13;
-- Locations sent to Burger Shop will now automatically show that level as a 5-star completion on the map screen.  The exceptions to this are level 80 for Burger Shop 1 and Levels 118, 119, and 120 for Burger Shop 2, since they are required to reach the goal.&#13;
-- The zip file containing the game files have been updated to make re-installation easier.  You just need to copy over the "archipelago" and "properties" folder into your Burger Shop installation directory and replace all files.&#13;
-- The Burger Shop client windows are now named to make it easier to identify them.&#13;
-&#13;
-Additionally, &#13;
-- The Old Chap, Dog Lover, and Shirtless Guy customers cannot be placed in level 1 if character randomization is turned on, to prevent the rare case that there are no available levels in logic for the first 15 levels.</content>
-    <link href="https://github.com/zsiegel701/Burger-Shop-Archipelago/releases/tag/v0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.99</id>
-    <title>RE3Remake v0.3.0</title>
-    <updated>2026-08-09T16:34:47+00:00</updated>
-    <author>
-      <name>TheRealSolidusSnake</name>
-    </author>
-    <content>This is a "pre-release" of Version 3 that people can test while I'm MIA again.&#13;
-Any bugs you all find please report to the thread, and I'll try to get them fixed up when I get back from my trip 😃 &#13;
-&#13;
-**RE2Randomizer features ported over:**&#13;
-------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
-&#13;
-**Enemy kills can be checks/locations**&#13;
-Same as RE2, this adds a lot of checks (and more backtracking) to the randomizer 😃 &#13;
-&#13;
-**Double Weapons / Local Weapons**&#13;
-Same as RE2, always nice to have more weaponry in the world (although you won't receive duplicates, still)&#13;
-&#13;
-**In-game GUI tooltips when paused/in menu and a more revamped GUI system overall** &lt;- Mod menu is a lot more pleasant to look at&#13;
-&#13;
-**Safes when checked now behave closer to RE2**, they'll open automatically, the item will poof and the map will clear!&#13;
-&#13;
-**You can no longer toggle Deathlink on difficulties you have not beaten Vanilla**&#13;
-It's a design choice that I appreciated from RE2, so now we force players to "git gudder" before they can turn it on. &#13;
-I don't want players bringing Inferno Deathlink to a multiworld if they've never beaten the game on Inferno before.&#13;
-&#13;
-**RE3Randomizer specific changes**&#13;
-------------------------------------------------------------------------------------------------------------------------------------------------------&#13;
-&#13;
-**Added "Invisible Enemies"**, which is just as awful as it sounds and can include Nemesis if desired 😅 &#13;
-&#13;
-**Added "Speedy Enemy Mode"**, which is just as awful as it sounds and can include Nemesis if desired 😅 &#13;
-&#13;
-**Added "Enemy Behavior"**, which is just as awful as it sounds and can include Nemesis if desired 😅 &#13;
-[SHOCKEEEEEEEEEEERRRRRR](https://www.youtube.com/watch?v=sMk-HPBF6Mw) - (you're Shocker, btw (Shocking, I know))&#13;
-&#13;
-**Client no longer requires EMV-Engine/Console**, which makes it much lighter space/resource wise and hopefully less jarring for the end user.&#13;
-Should also be feature parity between Non/RTX versions, now. &#13;
-This means that every version of RE3Remake should now be completely playable with the randomizer (I don't own the others to test)&#13;
-&#13;
-**Files can be checks/locations**, they only add junk into the item pool however.&#13;
-Note: If you happened to pick-up any of the files inside the subway station prior to making the save you made to play the randomizer, you'll want to start fresh and make a new save without having done that.&#13;
-&#13;
-**Added an In-Game Tracker, you can see the locations around you that you've missed**&#13;
-You'll find the toggle inside of the Archipelago Mod Window above the button to re-receive items :)&#13;
-&#13;
-**Revamped inventory system one more time, so items no longer *have* to be placed into the item box**&#13;
-While making Version 2 last year, I found the actual player fields for Carlos/Jill so I could award items how RE2 does but I had already dumped a ton of time into Version 2 and didn't want to stall the release any further.&#13;
-Note: Items that don't belong to the character being played should go into their respective item box, 2-slot items and weapons still always go to the item box regardless.&#13;
-&#13;
-**Fixed a major bug with the Lock Pick/Battery Pack**&#13;
-Thanks to everyone who reported this. &#13;
-Previously, if you received the Lock Pick/Battery Pack and then saved/quit/died before seeing the Lock Pick/Battery Pack cutscene, it could disappear from your inventory. It should now persist through save + quit/load/death.&#13;
-&#13;
-**Electronic Gadget in the R.P.D. is now in the item pool**&#13;
-This means Carlos may finally have to take a break at the police station and eat some donuts.&#13;
-Note: The Electronic Gadget on the Shower Room Wall will look like it enters your inventory, it will disappear afterward immediately.&#13;
-This is to prevent the game from killing the interact to place the bomb afterwards. This was the only solution I could find in my efforts to randomize this location. I'll continue to look into solutions for the Safety Deposit Key and Battery. &#13;
-&#13;
-**Jewels and the STARS ID Card are now always local**&#13;
-**This prevents players from accidentally disposing of them too early and missing locations later on**&#13;
-You'll always get the Jewels before having to go to the RPD and the ID Card is a requirement to go into the Reception Room from the Main hall in the RPD, so you're guaranteed to get it before it's needed as well (as long as you didn't accidentally skip it somewhere in your own game, which shouldn't be happening anymore :) )&#13;
-You can still go to the Clock Puzzle when you get to the Subway Station with Carlos and even put the Jewels into the puzzle after that point to so long as you don't accidentally "dispose" of them&#13;
-&#13;
-**Added two new Traps** &#13;
-(Jill only, unfortunately, because Carlos can't vomit)&#13;
-(I thought of something funny to do as a trap for Carlos, maybe when Version 3 gets officially released)&#13;
-&#13;
-**Hospital Defense Skip is real(ish)!** &#13;
-You can now sit completely still during that section and it will play out normally&#13;
-Note: You'll still need to place the Detonator in the 2nd phase of the Defense section to trigger the transfer to Jill. &#13;
-&#13;
-**And a bunch of smaller bug fixes, including:**&#13;
-&#13;
-Locker 109 is no longer static due to an item_object issue.&#13;
-&#13;
-Supply Case now correctly give Flame Rounds instead of Acid Rounds.&#13;
-&#13;
-Locations/Enemies properly sending the first time around.&#13;
-This was a bug in my code in the apworld that went overlooked because I suspected the client was the problem.&#13;
-&#13;
-Locations/Enemies now have GUIDs attached to them, so you can no longer grab stuff "out of order" accidentally&#13;
-&#13;
-## Thanks to Fuzzy for the RE2 ported code and this fix as well&#13;
-* Remove likely cause of ImGUI error in recent REF versions - https://github.com/TheRealSolidusSnake/RE3R_AP_Client/pull/7&#13;
-&#13;
-## What others contributed&#13;
-RopeyRed - Enemy Kills/Files on all difficulties (Standard only this release, however)&#13;
-Grenier - Stripped Scenario/Character out of the client/apworld so it no longer appends (JA), we only append difficulty if it's not a "Standard" location.</content>
-    <link href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases/tag/0.2.99"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.0</id>
-    <title>Haste v0.5.0</title>
-    <updated>2026-08-09T17:37:52+00:00</updated>
-    <author>
-      <name>JXJacob</name>
-    </author>
-    <author>
-      <name>WritingHusky</name>
-    </author>
-    <content>The fifth major release of the Haste Archipelago&#13;
-&#13;
-You will need to subscribe to and enable the [Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3462307025) on Steam.&#13;
-&#13;
-## New YAML Features&#13;
-- **Disaster Shards** are now supported, acting as Shards 11-14 in the Shard Goal setting&#13;
-- **Starting Shard** allows you to choose which Shard your checks begin in, removing locations in all previous Shards&#13;
-  - When playing with Progressive Speed Upgrades, you will be pre-given enough of them to keep up with your Starting Shard&#13;
-  - All hub purchases will still expect 1 *additional* Progressive Shard before being logically available&#13;
-- **Dynamic Scaling** for both Shopsanity and Fragmentsanity, which sets the checks in each Shard relative to the length of the Shard itself&#13;
-  - The length of each Shard can be found [here](https://github.com/WritingHusky/haste_apworld/blob/main/docs/ShardLengths.md)&#13;
-- **Global Shop Packs** can be added to hard-lock later Global Shopsanity purchases, segmented into blocks of 15 purchases&#13;
-  - An additional setting to add extra Packs has also been added&#13;
-- Quality of Life options&#13;
-  - **Refund Bad Purchases** will refund you any Sparks spent on *AP Shop Items* that would not send a check. This setting does nothing if you do not have Shopsanity Separate enabled.&#13;
-  - **Remove Separate AP Shop Items When Done** will prevent *AP Shop Items* from appearing in Shops once you have exceeded the available checks in that region (either through completely running out, or lacking sufficient Global Shop Packs)&#13;
-  - **Scout Hub Locations** enabled all hub purchases to also send AP hints upon opening their respective NPC's dialogue&#13;
-    - This setting can be overridden at any time via the in-game options menu.&#13;
-- Anti-Quality of Life option&#13;
-  - **Base Disaster Level** will *permanently* set all Shards to have the corresponding Disaster Shard effects&#13;
-    - This setting is provided ***WITHOUT ANY SAFEGUARDING LOGIC***. Do NOT enable unless you know what you are doing.&#13;
-    - This base Disaster level *will* stack with any Disaster Traps, but will *not* stack with the normal Disaster Shards&#13;
-&#13;
-## Logic Changes&#13;
-- The Crispy and Twister Flopsy costume purchases have been moved out of Vanilla Plus and into Vanilla, since the Disaster Shards that lock them are now accessible&#13;
-- Expensive Captain's Upgrade and Fashion Weeboh Purchases will require additional Progressive Shards before becoming logically available&#13;
-  - Captain's Upgrades:&#13;
-    - Purchase 1-2: No additional Shards&#13;
-    - Purchase 3-4: 2 additional Shards&#13;
-    - Purchase 5: 4 additional Shards&#13;
-    - Purchase 6: 6 additional Shards&#13;
-    - EXCEPTION: The first and only 'Max Lives' Upgrade purchase expects 2 additional Shards, as it is the same price as Purchase 4 in other upgrade lines&#13;
-  - Costume Purchases:&#13;
-    - Flopsy and Weeboh: 2 additional Shards&#13;
-    - Zoe 64, Twisted Flopsy, and Totally Accurate Zoe: 4 additional Shards&#13;
-&#13;
-## Bugfixes&#13;
-- Fixed Courier's Board not being considered a valid Ability to access Shards 5 &amp; beyond&#13;
-- Fixed Wraith's Hourglass and Sage's Cowl having swapped IDs in some places, which lead to weird fill errors with the Totally Accurate Zoe costume purchase&#13;
-- Fixed issue where Little Sister and Supersonic Zoe costumes were not being locked properly in Vanilla Plus and All Unlocks&#13;
-- Fixed issue where "Seperate" was used several times instead of "Separate", which is how the word is actually spelled</content>
-    <link href="https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.1</id>
-    <title>Rhythm Tengoku v1.0.1</title>
-    <updated>2026-08-09T18:16:28+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>more support&#13;
-# Info&#13;
-* [Info](https://thelx5.github.io/tengoku/index.html)&#13;
-* [Setup](https://thelx5.github.io/tengoku/setup.html)&#13;
-# Changes&#13;
-* Added support for Rhythm Tengoku v1.1/Rev 1&#13;
-# Notes&#13;
-* You need to reload the game menu to see any changes on the level grid, especially on the first load.</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.7.1</id>
-    <title>Brave Fencer Musashi v0.7.1</title>
-    <updated>2026-08-09T20:04:38+00:00</updated>
-    <author>
-      <name>AegeusEvander</name>
-    </author>
-    <content>0.7.1 Added:&#13;
-fixed determinism bug (aka same seed would not make the same world due to a different trap being selected)&#13;
-&#13;
-0.7.0 Added:&#13;
--added time sanity&#13;
--complex logic rewrite&#13;
--added URI client launch support (aka click on your slot to launch game)&#13;
--fixes for trap sanity and open world&#13;
-&#13;
-Note:&#13;
--Must use Archipelago v0.6.7 or newer&#13;
--Not compatible with XDelta Patches, must run unmodified game&#13;
--not compatible with prior apworld generations&#13;
--map tracker with Universal Tracker https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.2.32&#13;
--setup guide:https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/blob/main/docs/setup_en.md&#13;
--Follow development and report bugs on the Archipelago gg Discord, -&gt; Future-game-design -&gt; Brave Fencer Musashi</content>
-    <link href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.7.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.4</id>
-    <title>Factorio: Space Age v2.2.4</title>
-    <updated>2026-08-09T22:09:38+00:00</updated>
-    <author>
-      <name>Berserker</name>
-    </author>
-    <author>
-      <name>Josh Wolfe</name>
-    </author>
-    <content># Factorio: Space Age apworld 2.2.4&#13;
-&#13;
-* Fix infinite technologies again. Should work like I intended in the previous release now.&#13;
-&#13;
-download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
-general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
-setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
-source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
-    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.2.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TwinklePillar/MurderOfSonicAP/releases/tag/v0.3.1-beta</id>
-    <title>The Murder of Sonic the Hedgehog v0.3.1b0</title>
-    <updated>2026-08-09T22:27:14+00:00</updated>
-    <author>
-      <name>TwinklePillar</name>
-    </author>
-    <content># Changelog&#13;
-- Fix Safe Room being inaccessible&#13;
-- Fix freezing when sending a location&#13;
-- Fix logic not being applied with Car Rando&#13;
-- The game now disconnects upon loading the title screen&#13;
-&#13;
-Compatible with v0.3.0-beta</content>
-    <link href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/tag/v0.3.1-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.8.0</id>
-    <title>pokemon_stadium v0.8.0</title>
-    <updated>2026-08-10T01:26:21+00:00</updated>
-    <author>
-      <name>jciii91</name>
-    </author>
-    <content>## Reworked move balancing&#13;
-&#13;
-### The goal of this reworked system is to recreate the difficulty curve of the vanilla game as closely as possible so that players have a sense of progression as they work through a seed&#13;
-&#13;
-- Removed old system that had 3 different tier systems for physical, special, and status moves&#13;
-- All moves combined into a single tier system now&#13;
-- Assigned "BST modifiers" to each tier. These are used to calculate an "adjusted BST" for each Pokémon&#13;
-- Calculated vanilla adjusted BSTs to and compiled a list of target BSTs for each gym/cup&#13;
-  - These target BSTs will get a setting in a later update to allow them to be shuffled&#13;
-- Randomizer now builds movesets for Pokémon that align them with a target BST&#13;
-- Rental lists are sorted by adjusted BST&#13;
-  - The later in the rental table a Pokémon appears, the stronger it should be&#13;
-&#13;
-Also fixed the naming for Poké Cup trainer locations.</content>
-    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v0.8.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.6.3</id>
-    <title>Funi Raccoon Game v1.6.3</title>
-    <updated>2026-08-10T03:30:18+00:00</updated>
-    <author>
-      <name>Jeffdev</name>
-    </author>
-    <content>Primarily a code cleanup update, but also updated the Orb logic to logically require being sent Orb to get the location "Store Orb" since the shop only opens when being sent the Orb.</content>
-    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.6.3"/>
-  </entry>
   <entry>
     <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.4</id>
     <title>Mina The Hollower v0.11.4</title>
@@ -477,6 +203,19 @@ Net effect: purchases cost more relative to money checks by default, and the per
 * Added bombs to enemysanity and allowed for enemy respawns even after they've been collected as checks&#13;
 * Fix for a data race related to server-side coin collection</content>
     <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4-pre"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4</id>
+    <title>Johnny Upgrade v1.4</title>
+    <updated>2026-08-10T19:19:22+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>## What's New&#13;
+* Added the gun to the multiworld and replaced it with the AP logo in game&#13;
+* Added bombs to enemysanity and allowed for enemy respawns even after they've been collected as checks&#13;
+* Fix for a data race related to server-side coin collection</content>
+    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4"/>
   </entry>
   <entry>
     <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.6</id>
@@ -1015,7 +754,7 @@ Also I'm going to start including the bizhawk connector in these releases again.
   </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.10</id>
-    <title>Dark Cloud 1 v0.5.0r3</title>
+    <title>Dark Cloud 1 v0.5.0r2</title>
     <updated>2026-08-12T21:44:05+00:00</updated>
     <author>
       <name>Lizardman175</name>
@@ -1287,15 +1026,14 @@ Shoehorning the mobile release in here as well.</content>
     <author>
       <name>jordansds</name>
     </author>
-    <content>**Multiplayer is currently not working on 64-bit.**&#13;
-- Removed references to EpicMM so 64-bit doesn't crash.&#13;
+    <content>- Fixed matchmaking on the new 64-bit update.&#13;
 &#13;
 No APWorld changes since v1.0.4.</content>
     <link href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.9"/>
   </entry>
   <entry>
     <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.3.5-beta</id>
-    <title>Tomba! v0.3.5b0</title>
+    <title>Tomba! v0.3.5.post2</title>
     <updated>2026-08-13T17:49:31+00:00</updated>
     <author>
       <name>T4g1</name>
@@ -1329,5 +1067,155 @@ No APWorld changes since v1.0.4.</content>
 1. Download the source code or the `.apworld` file.&#13;
 2. Drop it into your Archipelago `custom_worlds/` directory.</content>
     <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.3.5-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/mirrors-edge-v1.2.0</id>
+    <title>Mirror's Edge v1.2.0</title>
+    <updated>2026-08-13T19:11:30+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is a small feature release that also includes improvements and tweaks.&#13;
+&#13;
+**This release IS compatible with games generated on the previous version**&#13;
+&#13;
+- **Feature:** The Universal Tracker tab and features will now be embedded in the Mirror's Edge Client (provided you have the latest Universal Tracker APWorld installed)&#13;
+- **Improvement:** Universal Tracker will now show advanced logic locations that might be possible to get out of logic when you are playing with regular logic&#13;
+- **Tweak:** Tightened some menu routine timings&#13;
+- **Tweak:** Modified the logic rule for Actino Rise - Checkpoint 11 &#13;
+- **Tweak:** Added an extra linebreak at the end of the spoiler header&#13;
+- **Tweak:** Clarified some expectations before the client is started in the setup guide</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/mirrors-edge-v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.2</id>
+    <title>Deltarune v2.1.1r2</title>
+    <updated>2026-08-13T21:17:00+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.1.2/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.1.2/worlds/deltarune/docs/en_DELTARUNE.md)&#13;
+&#13;
+[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
+Or, alternatively,&#13;
+[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
+&#13;
+# Changelog&#13;
+- Fix the fusion of MonarchRBN logic&#13;
+- Fix some options descriptions</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ragmoa/Archipelago/releases/tag/0.5.2</id>
+    <title>Okami HD v0.5.2</title>
+    <updated>2026-08-13T21:34:27+00:00</updated>
+    <author>
+      <name>Axertin</name>
+    </author>
+    <author>
+      <name>Ragmoa</name>
+    </author>
+    <content>Fix early game logic</content>
+    <link href="https://github.com/Ragmoa/Archipelago/releases/tag/0.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.5.0-alpha</id>
+    <title>Dicey Dungeons v0.5.0a0</title>
+    <updated>2026-08-13T21:45:22+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>Pre-Release of the Inventor.&#13;
+&#13;
+Features:&#13;
+- Play as the Inventor&#13;
+- New options&#13;
+  - Randomize gadgets - Gives the option to randomize gadgets for filler items, or all items&#13;
+  - Inventor Episode 3 - Prevent Rust - Instead of limited equipment availability, this forces Episode 3 to have the same equipment rules as all other episodes&#13;
+&#13;
+Known issues / areas of concern:&#13;
+- Episode 3 (Rust) is a struggle to balance. If playing with Rust enabled, you may not get enough equipment in-logic to beat it. A big focus before full release will be to adjust the rules in this situation to support this episode.&#13;
+- Randomize gadgets - Some existing gadget options might not work, and some have already been filtered out because they break the game. If you encounter any game-breaking gadget effects when playing with this option, let me know.&#13;
+&#13;
+Included in this release:&#13;
+- .apworld file for Inventor pre-release&#13;
+- .yaml file with recommended settings for Inventor play&#13;
+&#13;
+Recommended additions:&#13;
+- PopTracker file for Inventor support [here](https://github.com/Fylcoast/Dicey-Dungeons-AP-Tracker/releases/tag/v0.0.6)&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.4.4-beta...v0.5.0-alpha</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.5.0-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.6.0</id>
+    <title>Grand Theft Auto: San Andreas v0.6.0</title>
+    <updated>2026-08-13T21:53:49+00:00</updated>
+    <author>
+      <name>awaken</name>
+    </author>
+    <content>## New:&#13;
+- BMX, NRG-500 and Chiliad Challenges now send checks. (Both BMX and Chiliad are gated behind Max Cycling Skill)&#13;
+- Gang Territories now send checks (**Only in RTLS!**)&#13;
+- Universal Tracker is now accessible inside the `GTA SA Client` (#18)&#13;
+- Collectible blips now show up on the pause menu map&#13;
+- Collectible sliders - every collectible now has the option to choose how many of them are randomized. A random set of that size is picked (#12)&#13;
+## Changes:&#13;
+- Progressive Missions logic is changed - every Progressive Mission is now randomized per branch (Progressive Sweet, Progressive Ryder etc.) instead of unlocking every mission.&#13;
+- Every mission blip now has a Progressive Mission counter next to it.&#13;
+- Taxi now sends a check every fare, 50 in total.&#13;
+- Starting Point Saves were renamed to `Badlands Start`, `San Fierro Start` and `Las Venturas Start` in-game. (#8)&#13;
+## Fixed:&#13;
+- Fixed Tagging Up Turf tags not detected as sprayed (#1) &#13;
+- Fixed Deathlink firing even when turned off (#19)&#13;
+- Mission blockers now work inside interiors (Four Dragons and The Caligula's Casino)&#13;
+- Beat Down on B Dup is now gated with a mission blocker (#20)&#13;
+- Fixed 10 Snapshot blips being misplaced&#13;
+- Fixed LS Submissions being gated by 1 Progressive Mission instead of 0 (#17)&#13;
+- Fixed Wang Cars and Zero Missions being blocked by mission blockers</content>
+    <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.2</id>
+    <title>Mario and Luigi Dream Team v0.1.2</title>
+    <updated>2026-08-13T21:54:22+00:00</updated>
+    <author>
+      <name>Dimitri Bee</name>
+    </author>
+    <content>This release adds an important feature to the Pi'illomizer, Shopsanity! This feature allows you to randomize shops, which can be done in both base play and through AP support (provided you edit the right settings in the yaml)! There are 20 shops with 8 items each, so happy shopping!&#13;
+&#13;
+This update also...&#13;
+- Fixed Dream Eggs canceling out if you get multiple&#13;
+- Fixed the pi'illo outside of Neo Bowser Castle not letting you view the Dreamy Neo Bowser Castle stats&#13;
+- (Supposedly) Fixed a crash in the Pi'illo Castle elevator ride</content>
+    <link href="https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alias-Cynestal/Archipelago/releases/tag/v1.2.0</id>
+    <title>Control v1.2.0</title>
+    <updated>2026-08-13T22:26:54+00:00</updated>
+    <author>
+      <name>Alias-Cynestal</name>
+    </author>
+    <content>**Full Changelog**: https://github.com/Alias-Cynestal/Archipelago/compare/v1.1.0...v1.2.0</content>
+    <link href="https://github.com/Alias-Cynestal/Archipelago/releases/tag/v1.2.0"/>
   </entry>
 </feed>

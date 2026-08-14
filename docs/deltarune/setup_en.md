@@ -1,7 +1,5 @@
 # DELTARUNE Archipelago Setup Guide
 
-## This setup guide is for the Chapter 5 beta releases. Looking for the v2.0.6 setup guide? Click [here](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.0.6/worlds/deltarune/docs/setup_en.md).
-
 ## Required Software
 
 - DELTARUNE from the [Steam page](https://store.steampowered.com/app/1671210/)
@@ -19,7 +17,7 @@
 
 ### Patching the game (With ModLoader)
 
-Download the mod from [GameBanana](https://gamebanana.com/mods/699556) with either G3M (1-Click Install) or DeltaMod (need to download then import)
+Download the mod from [GameBanana](https://gamebanana.com/mods/699556) with either G3M or DeltaMod (Recommend to use the xdelta version it patch in 6s vs csx that patch in 2 minutes)
 
 If you don't use mod loader, you can also patch your game with DeltaPatcher
 
