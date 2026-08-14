@@ -1,0 +1,66 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/barretg/hl1-sven-ap",
+  "manifest_fields": [],
+  "versions": {
+    "v0.1": {
+      "created_at": "2026-08-12T03:49:55Z",
+      "description": "This is a very early build of the apworld. Please report any problems in Discord or the Issues page on github (with reproduction steps please and thank you!)\r\n\r\nSven Co-op's half-life 1 campaign is meant to be played in multiplayer. No support will be offered to players attempting to circumvent this restriction.\r\n\r\nTo set up as the game host:\r\n* Install the apworld by downloading and double clicking (or placing it in your custom_worlds folder)\r\n* Open the Half-Life (Sven Co-op) Client and select your install directory\r\n* Run /install in the client\r\n* Connect the client to the multiworld, and open a server on the map -sp_campaign_portal\r\n* Once your friends are in game with you, you can type !ap to see unlocked missions in the console, and !warp to change maps to the unlocked mission. (The in-game panels also work)\r\n\r\nNOTE: If anyone encounters strange sounds, just load another map and it should resolve. Sometimes Sven doesn't like when weapons from outside of the map's cache are brought in to the map, especially if someone joins after that happens.",
+      "download_url": "https://github.com/barretg/hl1-sven-ap/releases/download/v0.1/half_life_sven.apworld",
+      "has_manifest": false,
+      "hash_sha256": "451d24269d063da37f620d1e752f1599c4ab0ca4bb7f0ad0856d6c73ac168cc1",
+      "html_url": "https://github.com/barretg/hl1-sven-ap/releases/tag/v0.1",
+      "size": 145930,
+      "source_url": "https://api.github.com/repos/barretg/hl1-sven-ap",
+      "tag": "v0.1",
+      "title": "Half-Life (Sven Co-op) apworld Alpha v0.1",
+      "version_simple": "0.1",
+      "world_version": "0.1"
+    },
+    "v0.2": {
+      "created_at": "2026-08-12T23:09:16Z",
+      "description": "Note that this is a very early build of the apworld. Please report any problems in Discord or the Issues page on github (with reproduction steps please and thank you!)\r\n\r\nSven Co-op's Half-Life campaign is meant to be played in multiplayer. No support will be offered to players attempting to circumvent this restriction.\r\n\r\n## What's New\r\n* Added Blue Shift Campaign\r\n  * NOTE: Host must own the game.\r\n* Added Opposing Force Campaign\r\n  * NOTE: Host must own the game.\r\n* Added They Hunger Campaign\r\n* Various logic and stability improvements\r\n* New YAML Option to disable all intro missions\r\n* Starting weapon is now randomized between all enabled campaign's melee weapons (excludes reskins like the knife, shovel, and umbrella as these are map specific)\r\n* Traps now queue so they always get you even if you're mid level load :)\r\n* New commands: `!tracker <text>` and `!find <text>`\r\n  * The `!tracker` command can be used to display a checklist of checks for all or some missions (matches on the text argument)\r\n  * The `!find` command can be used to see roughly how far you are from the nearest check location within the same map, or a specific location provided by text argument in the same map or another.\r\n* Updated command: `!warp`\r\n  * Now lets you warp back to individual maps you've reached within a chapter so you don't always have to start at the beginning\r\n* Console variants of all commands using `.ap` or `.ap_<cmd>`\r\n* Updated weapon locations and added locations for HEV Suit pickups in all campaigns that have an HEV Suit equivalent\r\n* Universal Tracker integration\r\n\r\n## Setup\r\nAs the game host:\r\nInstall the apworld by downloading and double clicking (or placing it in your custom_worlds folder)\r\nOpen the Half-Life (Sven Co-op) Client and select your install directory\r\nRun /install in the client\r\nConnect the client to the multiworld, and open a server on the map -sp_campaign_lobby\r\nOnce your friends are in game with you (they can just join!), you can type !ap to see unlocked missions in the console, and !warp to change maps to the unlocked mission. (The in-game panels also work)\r\n\r\n## Known Issues\r\n* General instability: expect some crashing or other random issues\r\n* Sound cacheing bug: sometimes when another player joins the lobby, their sounds are all mixed up. This will self resolve once you get into a mission. I am under the impression that if they install the plugin too that helps, but I'm unsure. This one is kind of complicated to diagnose.\r\n* Occasional random weapon location checks sent out on the mission where they're found on loading/unloading that mission.",
+      "download_url": "https://github.com/barretg/hl1-sven-ap/releases/download/v0.2/half_life_sven.apworld",
+      "has_manifest": false,
+      "hash_sha256": "1d038bfbe13e24ce0c1c2894d3e6798774158063c7c0dee24559c58103411552",
+      "html_url": "https://github.com/barretg/hl1-sven-ap/releases/tag/v0.2",
+      "size": 222778,
+      "source_url": "https://api.github.com/repos/barretg/hl1-sven-ap",
+      "tag": "v0.2",
+      "title": "Half-Life (Sven Co-op) Archipelago Alpha v0.2",
+      "version_simple": "0.2",
+      "world_version": "0.2"
+    },
+    "v0.2.1": {
+      "created_at": "2026-08-13T19:01:24Z",
+      "description": "Note that this is a very early build of the apworld. Please report any problems in Discord or the Issues page on github (with reproduction steps please and thank you!)\r\n\r\nSven Co-op's Half-Life campaign is meant to be played in multiplayer. No support will be offered to players attempting to circumvent this restriction.\r\n\r\n## Bug fixes\r\n* Fixed the goal trigger for opposing force since there's no geneworm in sven.\r\n\r\n## Setup\r\nAs the game host:\r\nInstall the apworld by downloading and double clicking (or placing it in your custom_worlds folder)\r\nOpen the Half-Life (Sven Co-op) Client and select your install directory\r\nRun /install in the client\r\nConnect the client to the multiworld, and open a server on the map -sp_campaign_portal\r\nOnce your friends are in game with you (they can just join!), you can type !ap to see unlocked missions in the console, and !warp to change maps to the unlocked mission. (The in-game panels also work)\r\n\r\n## Known Issues\r\n* Sound cacheing bug: sometimes when another player joins the lobby, their sounds are all mixed up. This will self resolve once you get into a mission. I am under the impression that if they install the plugin too that helps, but I'm unsure. This one is kind of complicated to diagnose.\r\n* Occasional random weapon location checks sent out on the mission where they're found on loading/unloading that mission.\r\n* The check Unforeseen Consequences - Health Charger 1 (Part 2) is unreachable, please add it to your excluded locations",
+      "download_url": "https://github.com/barretg/hl1-sven-ap/releases/download/v0.2.1/half_life_sven.apworld",
+      "has_manifest": false,
+      "hash_sha256": "9edd9db99a15f2efb59330fe43ed0f5aed466181df07a02eea58fe31d7652532",
+      "html_url": "https://github.com/barretg/hl1-sven-ap/releases/tag/v0.2.1",
+      "size": 222922,
+      "source_url": "https://api.github.com/repos/barretg/hl1-sven-ap",
+      "tag": "v0.2.1",
+      "title": "Half-Life (Sven Co-op) Archipelago Alpha v0.2.1",
+      "version_simple": "0.2.1",
+      "world_version": "0.2.1"
+    },
+    "v0.2.2": {
+      "created_at": "2026-08-14T01:48:35Z",
+      "description": "Note that this is a very early build of the apworld. Please report any problems in Discord or the Issues page on github (with reproduction steps please and thank you!)\r\n\r\nSven Co-op's Half-Life campaign is meant to be played in multiplayer. No support will be offered to players attempting to circumvent this restriction.\r\n\r\n## Bug fixes\r\n* Removed the unreachable charger in Unforeseen Consequences.\r\n\r\n## Setup\r\nAs the game host:\r\nInstall the apworld by downloading and double clicking (or placing it in your custom_worlds folder)\r\nOpen the Half-Life (Sven Co-op) Client and select your install directory\r\nRun /install in the client\r\nConnect the client to the multiworld, and open a server on the map -sp_campaign_portal\r\nOnce your friends are in game with you (they can just join!), you can type !ap to see unlocked missions in the console, and !warp to change maps to the unlocked mission. (The in-game panels also work)\r\n\r\n## Known Issues\r\n* Sound cacheing bug: sometimes when another player joins the lobby, their sounds are all mixed up. This will self resolve once you get into a mission. I am under the impression that if they install the plugin too that helps, but I'm unsure. This one is kind of complicated to diagnose.\r\n* Occasional random weapon location checks sent out on the mission where they're found on loading/unloading that mission.",
+      "download_url": "https://github.com/barretg/hl1-sven-ap/releases/download/v0.2.2/half_life_sven.apworld",
+      "has_manifest": false,
+      "hash_sha256": "7232a00c153b2b1f7cda3b97846d47a707f16586947af6f903c00db0ee1da5f5",
+      "html_url": "https://github.com/barretg/hl1-sven-ap/releases/tag/v0.2.2",
+      "size": 222890,
+      "source_url": "https://api.github.com/repos/barretg/hl1-sven-ap",
+      "tag": "v0.2.2",
+      "title": "Half-Life (Sven Co-op) Archipelago Alpha v0.2.2",
+      "version_simple": "0.2.2",
+      "world_version": "0.2.2"
+    }
+  }
+}
