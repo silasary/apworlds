@@ -1,9 +1,12 @@
 # Ender Lilies
 
 ## Latest
-- <a href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/v0.8/enderlilies.apworld">Latest Version (0.8)</a>
+- <a href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/enderlilies-v0.8/enderlilies.apworld">Latest Version (0.8r2)</a>
 
 ## All Versions
+
+#### v0.8r2
+- <a href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/enderlilies-v0.8/enderlilies.apworld">https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/enderlilies-v0.8/enderlilies.apworld</a>
 
 #### v0.8
 - <a href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/v0.8/enderlilies.apworld">https://github.com/Trexounay/EnderLilies.Archipelago/releases/download/v0.8/enderlilies.apworld</a>
