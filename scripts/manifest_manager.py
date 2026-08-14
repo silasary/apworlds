@@ -50,6 +50,7 @@ class IndexManager:
             try:
                 manifest = yaml.safe_load(file_path.read_text())
                 manifest["_filename"] = str(file_path.absolute())
+                print("- Successfully parsed as YAML")
                 return manifest
             except yaml.YAMLError as e:
                 print(f"Also failed to parse as YAML: {e}")

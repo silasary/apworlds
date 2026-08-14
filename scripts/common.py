@@ -200,7 +200,7 @@ def cleanup_manifest(manifest):
 
     if manifest.get("_new", False) and len(manifest.get("versions", {})) < 3:
         # If a manifest is new and has less than 3 versions, mark it as unready by default
-        manifest["flags"] = manifest.get("flags", []) + ["unready"]
+        manifest["flags"] = list(set(manifest.get("flags", []) + ["unready"]))
 
     seen_versions = Counter()
     versions = manifest.get("versions", {}).values()

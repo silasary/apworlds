@@ -1,0 +1,24 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/TheRealSolidusSnake/Archipelago",
+  "manifest_fields": [],
+  "versions": {
+    "1.0.0": {
+      "created_at": "2026-08-10T04:28:45Z",
+      "description": "Some new additions since 0.9.9 \ud83d\ude03 but we're keeping the full changelog in case others missed out.\r\n\r\n# Metal Gear Solid Changelog\r\n# MGS: Masala Garden Salad\r\n\r\n## Location Name Improvements\r\n\r\n* Added region names to locations.\r\n* Numbered locations now count only the copies found within that specific area.\r\n\r\nFor example, instead of searching Universal Tracker for:\r\n\r\n* **Grenade 9**\r\n* **Grenade 10**\r\n* **Grenade 11**\r\n\r\nThey will now appear as:\r\n\r\n* **Canyon - Grenade 1**\r\n* **Canyon - Grenade 2**\r\n* **Canyon - Grenade 3**\r\n\r\n## Missable Location Changes\r\n\r\nPreviously missable locations, such as the **Mine Detector** and **Night Vision Goggles**, are no longer permanently missable.\r\n\r\nWhen one of these items is found or received, the client will hold onto it and only give it to the player after its original in-game location has been checked.\r\n\r\nThis means progression can now safely appear at these locations while also preventing players from skipping ahead early with the Cardboard Boxes. Two birds, one stone.\r\n\r\nThe three Rations found at the very beginning of the game are **not** included in this system. If you miss one of those, restart your game. \ud83d\ude04\r\n\r\n## Logic and Generation Fixes\r\n\r\n* Fixed several logic errors where players were expected to reach checks they did not actually have access to.\r\n* Fixed smaller logic issues, such as Body Armor not appearing unless Thermal Goggles were currently in your inventory.\r\n* Fixed generation errors involving the **Dog Tag** goal when there was not enough room for all of the added Dog Tags in the item pool.\r\n\r\n  * Dog Tags are progression, but the generator now treats them as \"useful\" when doing fill since they only help you \"goal\" and don't help you actually move around like Power Stars would or any other such \"progression\" item.\r\n  * Thank God for the fuzzer.\r\n* Fixed an issue where the completion goal was not being sent after finishing the game. Hopefully.\r\n\r\n## Client Fixes\r\n\r\n* You no longer have to move/delete/store your saves if you want to juggle more than one seed, the slot information should get written to your save automatically so you can pick up and go as you please.\r\n\r\n* Fixed a crash that occurred when attempting to collect an ammo location while already at maximum capacity.\r\n\r\n  * Previously, the client could continue crashing until you manually removed ammo from your save, fired enough ammunition and then reconnected.\r\n  * The client will now wait until you have enough space before processing the location.\r\n  \r\n* Fixed an issue where reconnecting after a server failure\u2014or saving and reloading in certain areas\u2014could cause unrelated checks to be sent.\r\n  * This was noticed most often when saving in the **Medi Room**.\r\n  \r\n* Fixed **Cardboard Box C** being treated as **Cardboard Box B** by the client, which prevented Box C from being received correctly.\r\n\r\n## Location Changes\r\n\r\n* Added locations that were previously missing.\r\n* Removed locations that do not actually exist.\r\n\r\nIf you think another location should be added, feel free to make a request in the thread.\r\n\r\n## AI Disclosure\r\n\r\nWhile adding and removing locations that were missing or did not exist\u2014and while fixing the crash caused by collecting ammo at maximum capacity\u2014I used Claude to handle the large amount of renumbering and repetitive APWorld changes.\r\n\r\nDoing all of that manually would have taken significantly longer. Trust me, I might still be working on it otherwise.\r\n\r\nI also asked it to take a crack at a very specific issue involving the second Ration in the Medi Room, because everything I tried had failed.\r\n\r\nIt also failed \ud83d\ude04 \ud83d\ude04 \ud83d\ude04 \r\n\r\nWe ultimately removed that location for now. I may circle back to it later, although I might just leave it out permanently since that is also a solution lol\r\n\r\nHope everyone enjoys the rewrite/fixes \ud83d\ude05 \r\n\r\nHappy gaming!",
+      "download_url": "https://github.com/TheRealSolidusSnake/Archipelago/releases/download/1.0.0/mgsalad.apworld",
+      "has_manifest": false,
+      "hash_sha256": "903a847a307234bf100aa423fc46fe3f3948692521df99a61e0e5d1d62682656",
+      "html_url": "https://github.com/TheRealSolidusSnake/Archipelago/releases/tag/1.0.0",
+      "size": 44546,
+      "source_url": "https://api.github.com/repos/TheRealSolidusSnake/Archipelago",
+      "tag": "1.0.0",
+      "title": "Archipelago 1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/Str8UpWHITE64/Dorfromantik-AP",
+  "manifest_fields": [],
+  "versions": {
+    "0.1.0": {
+      "created_at": "2026-07-28T21:02:34Z",
+      "description": "# Dorfromantik Archipelago v0.1.0\r\n\r\n## What it does\r\n\r\nDorfromantik normally hands you 40 tiles and lets you earn more by placing perfectly and\r\ncompleting quests. Both are switched off here. A run lasts exactly as many placements as\r\nArchipelago has given you \u2014 when the stack empties, the run ends and you start another.\r\nProgress carries across runs, so a bad run costs nothing but time.\r\n\r\nYou start with one terrain type. Until you receive more, the game only generates tiles for\r\nterrain you own, and flags for terrain you don't own never appear at all.\r\n\r\n- **Items** \u2014 Terrain tiles (Forest, Field, Village, Water, Train Track), Quest Tiles,\r\n  generic Tile Packs, and the game's 22 tile and biome unlocks.\r\n- **Locations** \u2014 Flags completed, counted overall, per terrain, and within a single run,\r\n  plus score milestones.\r\n- **Goal** \u2014 Your choice, and both are single-run achievements: reach a target score in one\r\n  run, or complete a target number of flags in one run.\r\n\r\n## Options\r\n\r\nThere are four, and that is deliberate. **Goal**, your target, **Skill**, and **Tiles Per\r\nPack**.\r\n\r\nSkill decides how much you are given to reach your goal, and means the same thing on both\r\ngoals: how much of what you are handed you actually convert. Every figure is measured from\r\nreal play.\r\n\r\n| Skill | Points per tile | Tiles to reach 5000 | Flags closed |\r\n|---|---|---|---|\r\n| easy | 25.0 | 200 | 70% |\r\n| medium | 27.8 | 180 | 78% |\r\n| hard | 30.3 | 165 | 87% |\r\n| pro | 33.3 | 150 | 95% |\r\n\r\nEverything else \u2014 deck length, flag tiles, how many checks exist \u2014 is derived from your\r\ngoal. There is no option for pool size or check count on purpose: either would compete with\r\nthe goal, and the larger number would quietly win, leaving seeds finishable long before\r\ntheir items arrived.\r\n\r\n## Downloads\r\n\r\n| File | What it is |\r\n|---|---|\r\n| `Dorfromantik-AP-v0.1.0.zip` | The game mod. BepInEx included \u2014 drop-in. |\r\n| `dorfromantik.apworld` | The Archipelago world. Needs Archipelago 0.6.8+. |\r\n\r\n## Install\r\n\r\n**Mod** \u2014 Extract the zip into your Dorfromantik folder, next to `Dorfromantik.exe`.\r\nThat's the whole install; BepInEx ships with it, already configured.\r\n(Steam: right-click Dorfromantik \u2192 Manage \u2192 Browse local files.)\r\n\r\nLaunch the game once and quit, which creates\r\n`BepInEx\\config\\io.github.dorfromantik.archipelago.cfg`. Open it and set:\r\n\r\n```ini\r\nApModeEnabled = true\r\nSlot = your slot name\r\nHost = your server\r\nPort = your port",
+      "download_url": "https://github.com/Str8UpWHITE64/Dorfromantik-AP/releases/download/0.1.0/dorfromantik.apworld",
+      "has_manifest": false,
+      "hash_sha256": "a8d1a21177d35479e2a724d3febdfd4b83d4761a23c14cb029fb15b33d18cd66",
+      "html_url": "https://github.com/Str8UpWHITE64/Dorfromantik-AP/releases/tag/0.1.0",
+      "size": 20578,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Dorfromantik-AP",
+      "tag": "0.1.0",
+      "title": "0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}
