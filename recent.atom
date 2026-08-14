@@ -2,58 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-14T00:26:14.239092+00:00</updated>
+  <updated>2026-08-14T06:39:14.501041+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.4</id>
-    <title>Mina The Hollower v0.11.4</title>
-    <updated>2026-08-10T04:36:10+00:00</updated>
-    <author>
-      <name>FyreDay, Axertin, ZXavier</name>
-    </author>
-    <content>**THIS AP WORLD'S UT MAPS ONLY WORK WITH [AP CLIENT BETA 5](https://github.com/Axertin/mth-apclient/releases/tag/v1.0.0-beta.5) AND LATER**&#13;
-&#13;
-This is a beta release. This means it is stable with no major bugs. If you find a bug please report it in the [Github Issues](https://github.com/FyreDay/Archipelago-MinaTheHollower/issues)&#13;
-&#13;
-Install guide and more information is in the [AP world Info Document](https://github.com/FyreDay/Archipelago-MinaTheHollower/blob/main/worlds/mina_the_hollower/docs/en_Mina%20The%20Hollower.md)&#13;
-&#13;
-### Changelog&#13;
-&#13;
-- Change UT Map Processing to be more consistent. This broke some maps, report any problems you find&#13;
-- Fix Weapon chests in lower shipwreck&#13;
-- Add logic for swimming in water&#13;
-- Fix some Hollower shop item logic&#13;
-- Fix LL bridge chest&#13;
-- Fix double side arm permit with kite check&#13;
-- Fix QB head carry check</content>
-    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/cxve/q-ap-world/releases/tag/v2.0.1</id>
-    <title>Q-UP v2.0.1</title>
-    <updated>2026-08-10T09:10:38+00:00</updated>
-    <author>
-      <name>cxve</name>
-    </author>
-    <content>**Info** [Game Page](&lt;https://github.com/cxve/q-ap-world/blob/main-q-up/worlds/q_up/docs/en_Q-UP.md&gt;) - [Setup Guide](&lt;https://github.com/cxve/q-ap-world/blob/main-q-up/worlds/q_up/docs/setup_en.md&gt;)&#13;
-**Downloads** [World](&lt;https://github.com/cxve/q-ap-world/releases/&gt;) - [Mod](&lt;https://github.com/cxve/q-ap-mod/releases/&gt;) - [PopTracker](&lt;https://github.com/cxve/q-ap-poptracker/releases/&gt;)&#13;
-## 💎 Changes&#13;
-- Trying to generate a world with more progression items than locations will now raise OptionErrors&#13;
-- Optimized shuffling behavior&#13;
-- The world will no longer generate filler items when max items is being exceeded&#13;
-## 🛠️ Fixes&#13;
-- Fixed a crash when skill distribution check is disabled&#13;
-- Fixed randomizer getting stuck in a loop when trying to resolve 01_START skill&#13;
-- Added missing logic check for ITEM_RECYCLING_SYSTEM&#13;
-- Option creator will no longer allow to generate worlds with invalid challenge location ids&#13;
-- Using the same seed should now always result in the same world&#13;
-&#13;
-**Full Changelog**: https://github.com/cxve/q-ap-world/compare/v2.0.0...v2.0.1</content>
-    <link href="https://github.com/cxve/q-ap-world/releases/tag/v2.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-0.8.3</id>
     <title>Slay The Princess v0.8.0r2</title>
@@ -754,7 +707,7 @@ Also I'm going to start including the bizhawk connector in these releases again.
   </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.10</id>
-    <title>Dark Cloud 1 v0.5.0r2</title>
+    <title>Dark Cloud 1 v0.5.0r3</title>
     <updated>2026-08-12T21:44:05+00:00</updated>
     <author>
       <name>Lizardman175</name>
@@ -1217,5 +1170,42 @@ This update also...&#13;
     </author>
     <content>**Full Changelog**: https://github.com/Alias-Cynestal/Archipelago/compare/v1.1.0...v1.2.0</content>
     <link href="https://github.com/Alias-Cynestal/Archipelago/releases/tag/v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.0</id>
+    <title>Mega Man Zero 3 v0.3.0</title>
+    <updated>2026-08-14T03:15:13+00:00</updated>
+    <author>
+      <name>brodieberger</name>
+    </author>
+    <content>A full rewrite! The world is now [built from a decompilation of the game](https://github.com/mmzret/rmz3) instead of patched into the ROM by hand. &#13;
+&#13;
+Since this update is almost a total rewrite, so there could likely be a lot of undocumented bugs, so be sure to let me know in the Discord if anything seems off!&#13;
+&#13;
+# New Features:&#13;
+- Item popups. You now get a little graphic on screen when another player sends you an item.&#13;
+  - This is still a work in progress, as the icons currently don't actually represent what you've received.&#13;
+- There is now a disk counter on the pause menu, so you can see how many you're holding out of how many you need for your goal to complete.&#13;
+- The hub room lets you replay a stage you've already cleared, either as a free run or as the mission again. This lets you reattempt missions for another chance at an A+ rank clear, meaning that no checks in this world are missable.&#13;
+- The vanilla goal option has been removed. There used to be a "vanilla" option, where you just had to beat the final boss. It has been removed, and now the only goal is to beat the boss with the set number of secret disks given. If you want the old way back, you can just set required disks to 0. I didn't feel like maintaining both options, and I don't think many people used it anyway.&#13;
+# Bug Fixes&#13;
+- E-Crystals filler items should no longer be lost if you load earlier saves after being sent them.&#13;
+- Subtanks no longer delete their location check. Receiving a subtank from someone else used to despawn its pickup in the world, which made that location impossible to get.&#13;
+- Armor chips, subtanks, and crystals no longer get temporarily deleted by a game over, and now show up immediately when you load a save.&#13;
+- Fixed one of Sunken Library's disks not being reset when you load the level and have already been given the disk through an Archipelago item.&#13;
+- Removed the warning telling you not to save after the credits. New Game Plus works entirely now, and saving whenever should be fine too, but you should probably keep a save game on the last level just so you can revisit all levels in the game.</content>
+    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.15.2</id>
+    <title>Brotato v0.15.0r2</title>
+    <updated>2026-08-14T04:04:28+00:00</updated>
+    <author>
+      <name>Rampaging Hippy</name>
+    </author>
+    <content>## Fixed&#13;
+&#13;
+- Fixed the client failing to connect if the player's name had non-ASCII characters.</content>
+    <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.15.2"/>
   </entry>
 </feed>
