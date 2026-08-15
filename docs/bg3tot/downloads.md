@@ -1,9 +1,12 @@
 # Baldur&#x27;s Gate 3 - ToT
 
 ## Latest
-- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.0/bg3tot.apworld">Latest Version (1.1.8)</a>
+- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.1/bg3tot.apworld">Latest Version (1.2.1)</a>
 
 ## All Versions
+
+#### v1.2.1
+- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.1/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.1/bg3tot.apworld</a>
 
 #### v1.1.8
 - <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.0/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.0/bg3tot.apworld</a>

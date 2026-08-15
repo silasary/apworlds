@@ -2,39 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-15T00:18:15.567072+00:00</updated>
+  <updated>2026-08-15T06:19:56.535370+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/MarioManTAW/Archipelago/releases/tag/sluggers-v1.0.0</id>
-    <title>Mario Super Sluggers v1.0.0</title>
-    <updated>2026-08-11T00:23:02+00:00</updated>
-    <author>
-      <name>MarioManTAW</name>
-    </author>
-    <content>- Code patches have been moved from being applied at runtime by the client to the new [**MSS AP Patcher**](&lt;https://github.com/MarioManTAW/mss-ap-patcher/releases&gt;). This should make the game more stable and less susceptible to issues when connection steps happen out of order.&#13;
-  - This means that **patching is now mandatory**, be sure to follow the new setup steps. Additionally, this update is **not backwards-compatible** with older APWorld versions so please finish any ongoing multiworlds before updating.&#13;
-- New option: **Randomize Error Items**. Randomizes which 3 error items you have access to at the start.&#13;
-- New option: **Randomize Stats**. Shuffles stats between characters. Pitching, batting, fielding, and running stats are shuffled independently.&#13;
-- New option: **Randomize Puzzles**. Randomizes the lever puzzle in Mario Stadium and the hedge maze in Peach Ice Garden.&#13;
-- New option: **Randomize Quiz**. Adds additional question sets for Blue Yoshi's quiz, including sluggers, math, and meme.&#13;
-- New option: **Randomize Text**. Shuffles text/dialogue throughout the game, excluding relevant UI/tutorial text.&#13;
-&#13;
-Check out the [setup guide](&lt;https://github.com/MarioManTAW/Archipelago/blob/sluggers/worlds/mario_super_sluggers/docs/setup_en.md&gt;) for setup procedures (this has changed!). You may also find the [PopTracker pack](&lt;https://github.com/MarioManTAW/MarioSuperSluggersAPTracker/releases&gt;) helpful.</content>
-    <link href="https://github.com/MarioManTAW/Archipelago/releases/tag/sluggers-v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.4</id>
-    <title>Ori and the Will of the Wisps v0.6.4</title>
-    <updated>2026-08-11T06:10:39+00:00</updated>
-    <author>
-      <name>Satisha</name>
-    </author>
-    <content>Fix the `one_random` key (which replaced the `random` key in 0.6.3) not behaving as intened.</content>
-    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.4"/>
-  </entry>
   <entry>
     <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.2.2-beta</id>
     <title>Tomba! v0.2.2b0</title>
@@ -493,7 +465,7 @@ Also I'm going to start including the bizhawk connector in these releases again.
   </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.10</id>
-    <title>Dark Cloud 1 v0.5.0r2</title>
+    <title>Dark Cloud 1 v0.5.0r3</title>
     <updated>2026-08-12T21:44:05+00:00</updated>
     <author>
       <name>Lizardman175</name>
@@ -1209,5 +1181,69 @@ Install guide and more information is in the [AP world Info Document](https://gi
 - Improve UT location placements&#13;
 - Rename 2 BB checks</content>
     <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/tag/v1.2.1</id>
+    <title>Baldur's Gate 3 - ToT v1.2.1</title>
+    <updated>2026-08-15T01:00:04+00:00</updated>
+    <author>
+      <name>Broney</name>
+    </author>
+    <author>
+      <name>Zoltun</name>
+    </author>
+    <content>## Room Generation, Client, &amp; Save Recovery Fixes&#13;
+&#13;
+### Fixes&#13;
+&#13;
+- Fixed room generation errors caused by BG3 ToT settings not resolving correctly, which could also prevent other APWorlds from saving changes to `host.yaml`. **- POD-io**&#13;
+- Fixed the AP client disconnect loop when connecting to older rooms containing legacy `Lockpick` items.&#13;
+- Fixed Shop Fragments being lost after loading a save from before the fragment was received.&#13;
+&#13;
+### Notes&#13;
+&#13;
+- This is a small stability patch with no new content or gameplay changes.&#13;
+- Update both `bg3tot.apworld` and `ArchipelagoToT.pak` when installing this release.&#13;
+</content>
+    <link href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/tag/v1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0</id>
+    <title>Mina The Hollower v1.0.0</title>
+    <updated>2026-08-15T04:41:45+00:00</updated>
+    <author>
+      <name>FyreDay, Axertin, ZXavier</name>
+    </author>
+    <content>This is the first full release of the Mina the Hollower AP! This AP World is compatible with any 1.X.X AP Client&#13;
+&#13;
+## [AP Client](https://github.com/Axertin/mth-apclient/releases) | [Setup Guide](https://github.com/FyreDay/Archipelago-MinaTheHollower/blob/main/worlds/mina_the_hollower/docs/setup_en.md) | [Readme](https://github.com/FyreDay/Archipelago-MinaTheHollower/blob/main/worlds/mina_the_hollower/docs/en_Mina%20The%20Hollower.md)&#13;
+&#13;
+## Features&#13;
+&#13;
+### Goals&#13;
+- Repair Radiant Manor Generator (Roll Credits)&#13;
+- Repair X Generators (Configurable from 1 to 6)&#13;
+&#13;
+### Items&#13;
+- Abilities (Burrow, Carry, Swim, Bounce, Climb, Spring)&#13;
+- Trinkets&#13;
+- Player Upgrades (Vials, Magic, Health, Sparks, Weapons)&#13;
+- Underlab Improvements&#13;
+- Train Tickets&#13;
+- Locks (or Kears, configurable)&#13;
+- Starting Item Set (Including Starting Weapon)&#13;
+- Bone-Up Caps&#13;
+&#13;
+### Locations&#13;
+- Chests&#13;
+- Buried Bonestone&#13;
+- Shop Inventories&#13;
+- Boss Kills&#13;
+- In-World Item Pickups (Bonestone, Boss roses)&#13;
+&#13;
+### Other Features&#13;
+- Universal Tracker Map Support&#13;
+- Deathlink (Sent on Sparkless Demise)</content>
+    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0"/>
   </entry>
 </feed>

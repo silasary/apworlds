@@ -3,11 +3,13 @@ Installation instructions:
 2. Now for the BG3 mod part. Go to https://github.com/Norbyte/bg3se/releases and follow the installation instructions for the Script Extender.
 3. Launch BG3 and at the bottom left of the main menu there should be text for "script extender installed". Start a new game and save, then exit (this is silly, yes, but it generates the Script Extender folder we'll be using later, and we only need to do it once)
 4. Go to https://github.com/zane31415/BG3ArchipelagoMod/releases and download the .pak file from the latest release. (https://github.com/zane31415/BG3ArchipelagoMod/blob/main/Archipelago_9d8340ef-8f94-1397-4634-3297a02800d5.pak). Copy it to AppData\Local\Larian Studios\Baldur's Gate 3\Mods\ or wherever your system has your BG3 installation + mod folder.
-5. Launch the Archipelago Baldur's Gate 3 client and connect to the slot. Note: This is the Baldur's Gate 3 client in Archipelago, not a text client.
+5. Launch the client: the easiest way is to **double-click the `.apbg3` file** that generation put next to your seed's output — it opens the correct client with your slot name pre-filled. (Alternatively, open "Baldur's Gate 3 Client" from the Archipelago Launcher. Note: this is the Baldur's Gate 3 client, **not** the Text Client — the Text Client will connect fine but items will never reach the game.)
 6. Launch BG3, go to mod manager, check the box for Archipelago. Exit mod manager, start new game.
 7. If it worked, when you spawn on the tutorial ship a "Archipelago Sync" spell will be added to your inventory.
 
-Items will be provided to the currently active player character whenever an action is taken (jump, crouch, attack, etc) if "any action sync" is chosen, or on casting the scroll if "scroll sync" is chosen.
+Items are delivered automatically within a second or so of being received; the Archipelago Sync scroll remains as a manual "force a sync now" button.
+
+Press **U** in-game to open the Archipelago status window: connection state, items/checks counters, recent items, gate locks and a resync button. If the game can't detect a running BG3 client for ~15 seconds it will warn you in-game (that warning is also how you find out you accidentally launched the Text Client).
 Changes to base game: Characters will not level naturally, and most rare+ equipment has been removed from lootables.
 Items are Level Fragments, and most uncommon+ equipment available in the game, depending on yaml selection.
 Locations are either questsanity (complete quest updates) or killsanity (kill hostile creatures).

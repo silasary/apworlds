@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.0/bg3tot.apworld">Latest Version (1.1.8)</a>
+- <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.1/bg3tot.apworld">Latest Version (1.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
