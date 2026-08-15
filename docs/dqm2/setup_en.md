@@ -9,7 +9,7 @@
 
 ## Optional Software
 
-- [Dragon Quest Monsters 2 Archipelago Map Tracker](https://github.com/OmegaZeron/DQM2-AP-PopTracker-Pack/releases/latest) for use with [PopTracker](https://github.com/black-sliver/PopTracker/releases/latest)
+- [Dragon Quest Monsters 2 Archipelago Map Tracker](https://github.com/OmegaZeron/DQM2-AP-PopTracker-Pack/releases/latest) for use with [PopTracker](https://poptracker.github.io/)
 
 ## Creating a YAML
 

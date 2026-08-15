@@ -55,4 +55,5 @@ These are not ordered in any specific way.
 ## Current Quirks
 
 - Items obtained from most NPCs and Locations will display the vanilla item in the dialogue. This will be fixed in the future.
+- Mom and Dad lie about giving items.
 - No post game content, unless you `!getitem` their keys. Items are not currently randomized, but the monsters are.

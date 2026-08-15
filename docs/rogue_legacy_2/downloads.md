@@ -17,6 +17,9 @@
 #### v0.1.0r2
 - <a href="https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.1/rogue_legacy_2.apworld">https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.1/rogue_legacy_2.apworld</a>
 
+#### v0.1.0r2
+- <a href="https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.3/rogue_legacy_2.apworld">https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.3/rogue_legacy_2.apworld</a>
+
 #### v0.1.0
 - <a href="https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.0/rogue_legacy_2.apworld">https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.0/rogue_legacy_2.apworld</a>
 

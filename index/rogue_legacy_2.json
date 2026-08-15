@@ -79,6 +79,21 @@
       "title": "v1.1.2",
       "version_simple": "0.1.0",
       "world_version": "0.1.0r3"
+    },
+    "v1.1.3": {
+      "created_at": "2026-08-14T18:29:02Z",
+      "description": "Note: Please replace both the .apworld and the game mod files when updating to this version\r\n\r\n### Improvements\r\n\r\n- Add a colored tree which displays the upgrade paths in the manor. Manor locations are now named according to this tree (i.e. Manor - Red Path Upgrade 3) so that it is much clearer what a hint (or spoiler log) is referring to in the manor.\r\n  - This can be toggled on/off using the Spin-Kick button  \r\n- Added flavor text for foreign item descriptions which indicates whether it is progression, useful, or filler (or trap). \r\n- Manor items are no longer all marked as progression, only stat upgrades (assuming the YAML is configured to require some number of stat upgrades before biomes/bosses are considered \"in-logic\") are now progression. Things like class unlocks are not. This should provide a marginal improvement in success rate when generating worlds with stringent logic.\r\n\r\n### New Config Options\r\n\r\n1. reveal_manor_upgrades - (true/false, default: false), When enabled, all upgrades in the manor will be shown so purchases can be planned in advance. The normal purchase gating still applies; before you can purchase an upgrade, you must have purchased the previous upgrade in the manor.\r\n2. trap_appearance - (hidden/visible, default: hidden), When 'hidden' traps are disguised as another item from the multi-world so that they can't be trivially avoided by looking at an item name before purchasing. After purchase, the trap's true name is revealed. \r\n\r\n### Bugfixes\r\n\r\n- Fixed a bug where in a specific scenario (all estuaries defeated and sun lantern received already) Johan would not spawn in Pishon Dry Lake to give the sun-lantern-conversation location check.",
+      "download_url": "https://github.com/zaphim12/RL2Archipelago/releases/download/v1.1.3/rogue_legacy_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bae94d6a5884de5e4e2f2bcd1bdf3b832f81105bbc23f4f8cb442418bb5d5148",
+      "html_url": "https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.3",
+      "minimum_ap_version": "0.5.0",
+      "size": 21423,
+      "source_url": "https://api.github.com/repos/zaphim12/RL2Archipelago",
+      "tag": "v1.1.3",
+      "title": "v1.1.3",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r2"
     }
   }
 }

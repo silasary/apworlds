@@ -2,154 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-14T18:32:40.149199+00:00</updated>
+  <updated>2026-08-15T00:18:15.567072+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/stubobis1/archipelago-openomf-apworld/releases/tag/omf-0.0.4</id>
-    <title>One Must Fall: 2097 v0.0.4</title>
-    <updated>2026-08-10T18:36:47+00:00</updated>
-    <author>
-      <name>stubob</name>
-    </author>
-    <content># One Must Fall: 2097 - Archipelago World v0.0.4&#13;
-https://github.com/stubobis1/archipelago-openomf/releases&#13;
-**Full Changelog:** https://github.com/stubobis1/archipelago-openomf/compare/0.0.3...0.0.4&#13;
-&#13;
-&gt; OMF:2097 was released as freeware by Epic MegaGames in 1999. The game data is freely and legally downloadable.&#13;
-&#13;
----&#13;
-&#13;
-### What's New&#13;
-&#13;
-#### Economy rebalance&#13;
-&#13;
-Default economy YAML options have been retuned:&#13;
-&#13;
-- `buy_cost_factor` default doubled, 10 → 20 (Mechlab prices now default to 20% of vanilla, up from 10%)&#13;
-- `money_small_value` default halved, 3000 → 1500&#13;
-- `money_large_value` default cut to a fifth, 15000 → 3000&#13;
-- `money_small_step` / `money_large_step` defaults reduced (150 → 100, 750 → 200)&#13;
-&#13;
-Net effect: purchases cost more relative to money checks by default, and the per-check growth curve is flatter — a tighter default economy. All five remain player-configurable via YAML.&#13;
-&#13;
-#### Bug fixes (OpenOMF client)&#13;
-&#13;
-- Fixed the "all tournaments" goal silently failing to complete: winning a tournament wasn't persisted immediately, so the mechlab's save-reload on entry could clobber the just-won tournament bit before it was written to disk&#13;
-- Fixed forfeiting a match in Archipelago mode sometimes being scored using stale data from the previous match&#13;
-&#13;
-#### Testing&#13;
-&#13;
-- AP-specific tests now build as their own `openomf_test_ap` binary (they link Archipelago-only symbols), instead of living inside the main test suite&#13;
-- New test coverage for the tournament-goal logic (`AP Tournament Goal` suite)&#13;
-&#13;
----&#13;
-&#13;
-### Links&#13;
-&#13;
-- [Setup guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/setup_en.md)&#13;
-- [Game guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/en_One%20Must%20Fall%202097.md)&#13;
-- [OpenOMF client](https://github.com/stubobis1/openomf)&#13;
-- [AP world](https://github.com/stubobis1/archipelago-openomf-apworld)&#13;
-- [Issues](https://github.com/stubobis1/archipelago-openomf/issues)</content>
-    <link href="https://github.com/stubobis1/archipelago-openomf-apworld/releases/tag/omf-0.0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.3</id>
-    <title>Ori and the Will of the Wisps v0.6.3</title>
-    <updated>2026-08-10T18:38:01+00:00</updated>
-    <author>
-      <name>Satisha</name>
-    </author>
-    <content>The update is aimed at reducing generation failures with entrance randomization and random spawn. There are a few breaking yaml changes.&#13;
-### Yaml changes&#13;
-- For the `goal` option, the `random` key got renamed to `one_random`, since random is a reserved key.&#13;
-- Some option combinations with random spawn (that have a high probablility/guarantee of resulting in a failure) now raise an `OptionError`. If you have the base teleporters in the pool (option `tp`, which is already enabled by default), you won't encounter these.&#13;
-### Fixes&#13;
-- Fix accessibility check with the `glades_done` option.&#13;
-- Prevent several entrance randomizations layout that lead to a generation failure.&#13;
-- Changed some amount of random spawn items, and help the generator to reduce fill errors.</content>
-    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4-pre</id>
-    <title>Johnny Upgrade v1.4rc0</title>
-    <updated>2026-08-10T19:19:22+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>## What's New&#13;
-* Added the gun to the multiworld and replaced it with the AP logo in game&#13;
-* Added bombs to enemysanity and allowed for enemy respawns even after they've been collected as checks&#13;
-* Fix for a data race related to server-side coin collection</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4-pre"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4</id>
-    <title>Johnny Upgrade v1.4</title>
-    <updated>2026-08-10T19:19:22+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>## What's New&#13;
-* Added the gun to the multiworld and replaced it with the AP logo in game&#13;
-* Added bombs to enemysanity and allowed for enemy respawns even after they've been collected as checks&#13;
-* Fix for a data race related to server-side coin collection</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.6</id>
-    <title>Rabbit and Steel v0.3.6</title>
-    <updated>2026-08-10T23:45:56+00:00</updated>
-    <author>
-      <name>tjwombo</name>
-    </author>
-    <content>Fixed 8 kingdom runs ending early&#13;
-a lot of code cleanup that hopefully doesn't break anything&#13;
-&#13;
-# Changelog&#13;
-&#13;
-All notable changes to this project will be documented in this file.&#13;
-&#13;
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
-&#13;
-## [v0.3.6](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.5...v0.3.6) - 2026-08-10&#13;
-&#13;
-### Commits&#13;
-&#13;
-- Update README.md [`b119e87`](https://github.com/tjwombo/RNSArchipelago/commit/b119e87175f5f46280b23e63183574f0d1215862)&#13;
-- cleanup + fix route length [`6a2badc`](https://github.com/tjwombo/RNSArchipelago/commit/6a2badcb15e077c7dc855dbb428229e043d6413a)&#13;
-- Add variable to ignore data from slot data [`8951ac1`](https://github.com/tjwombo/RNSArchipelago/commit/8951ac121eff9f4f37442ea6688054e6b116e4e1)&#13;
-- update modconfig [`268d0e6`](https://github.com/tjwombo/RNSArchipelago/commit/268d0e627e0f3741b9376286c7c8fe449d0a77e3)&#13;
-</content>
-    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/tathxo/DSAP/releases/tag/v0.2.4</id>
-    <title>Dark Souls Remastered v0.2.4</title>
-    <updated>2026-08-10T23:53:50+00:00</updated>
-    <author>
-      <name>Noka</name>
-    </author>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <content># **Dark Souls Remastered Archipelago v0.2.4**&#13;
-## Laurentius Shop, Forced GH Lizard Spawns, and a DA Logic Update&#13;
-&#13;
-### Version update -&gt; 0.2.4. Both apworld and client have updated. **Client is compatible with 0.2.x generated apworlds**. Latest client required if using updated apworld.&#13;
-* Feature: Added Laurentius's shop to `limited_shop_item_shuffle`-enabled locations. He is also prevented from moving on until you buy out his shop. &#13;
-* Feature: Force lizard spawns in the Great Hollow on every load instead of the vanilla 1-in-3 occurrence rate, when `lizard_shuffle` is enabled.&#13;
-* Fix: Corrected broken logic in Duke's Archives with `Boss Fogwall Sanity` on which didn't require `Boss Fog Wall Key - Seath 1st Encounter` for getting into the main prison area with the DA Prison Extra Key.&#13;
-&#13;
-Known issues (will be addressed in a later release)&#13;
-1) Occasional crash related to bonfire syncing code.&#13;
-2) Petrus might aggro on you if you hurt his companions.</content>
-    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.2.4"/>
-  </entry>
   <entry>
     <id>https://github.com/MarioManTAW/Archipelago/releases/tag/sluggers-v1.0.0</id>
     <title>Mario Super Sluggers v1.0.0</title>
@@ -636,7 +493,7 @@ Also I'm going to start including the bizhawk connector in these releases again.
   </entry>
   <entry>
     <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.10</id>
-    <title>Dark Cloud 1 v0.5.0r3</title>
+    <title>Dark Cloud 1 v0.5.0r2</title>
     <updated>2026-08-12T21:44:05+00:00</updated>
     <author>
       <name>Lizardman175</name>
@@ -1178,5 +1035,179 @@ Turn on by adding `fully_unlocked_mode: on`  to your yaml</content>
     </author>
     <content>Adds option to block free powder pickups.</content>
     <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.4.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.3</id>
+    <title>Rogue Legacy 2 v0.1.0r2</title>
+    <updated>2026-08-14T18:29:02+00:00</updated>
+    <author>
+      <name>zaphim12</name>
+    </author>
+    <content>Note: Please replace both the .apworld and the game mod files when updating to this version&#13;
+&#13;
+### Improvements&#13;
+&#13;
+- Add a colored tree which displays the upgrade paths in the manor. Manor locations are now named according to this tree (i.e. Manor - Red Path Upgrade 3) so that it is much clearer what a hint (or spoiler log) is referring to in the manor.&#13;
+  - This can be toggled on/off using the Spin-Kick button  &#13;
+- Added flavor text for foreign item descriptions which indicates whether it is progression, useful, or filler (or trap). &#13;
+- Manor items are no longer all marked as progression, only stat upgrades (assuming the YAML is configured to require some number of stat upgrades before biomes/bosses are considered "in-logic") are now progression. Things like class unlocks are not. This should provide a marginal improvement in success rate when generating worlds with stringent logic.&#13;
+&#13;
+### New Config Options&#13;
+&#13;
+1. reveal_manor_upgrades - (true/false, default: false), When enabled, all upgrades in the manor will be shown so purchases can be planned in advance. The normal purchase gating still applies; before you can purchase an upgrade, you must have purchased the previous upgrade in the manor.&#13;
+2. trap_appearance - (hidden/visible, default: hidden), When 'hidden' traps are disguised as another item from the multi-world so that they can't be trivially avoided by looking at an item name before purchasing. After purchase, the trap's true name is revealed. &#13;
+&#13;
+### Bugfixes&#13;
+&#13;
+- Fixed a bug where in a specific scenario (all estuaries defeated and sun lantern received already) Johan would not spawn in Pishon Dry Lake to give the sun-lantern-conversation location check.</content>
+    <link href="https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Teotia444/twwhd-apworld/releases/tag/v1.0.2-beta</id>
+    <title>The Wind Waker HD v1.0.2b0</title>
+    <updated>2026-08-14T19:20:30+00:00</updated>
+    <author>
+      <name>Teotia444</name>
+    </author>
+    <content># Changes&#13;
+Fixed the following locations :&#13;
+- `Windfall Island - Lenzo Bring Forest Firefly` will temporarily be disabled as it's a repeatable check and is not tied to a flag&#13;
+- `Windfall Island - Lenzo Become Assistant` used to not register, that's fixed&#13;
+&#13;
+Tracker: &#13;
+- Added a password field to the tracker so you can connect to password locked servers&#13;
+- Removed the mail chaining logic which would display available mail on certain conditions even if it was impossible&#13;
+- Restored the location list background which was removed for unknown reasons (upstream??)&#13;
+&#13;
+Others :&#13;
+- fixed generation with blue chu being held back by a typo&#13;
+- fixed death link sending twice sometimes when it was triggered by another player&#13;
+&#13;
+(this update comes with a generator update)</content>
+    <link href="https://github.com/Teotia444/twwhd-apworld/releases/tag/v1.0.2-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.3</id>
+    <title>Ender Magnolia v0.1.3</title>
+    <updated>2026-08-14T19:59:55+00:00</updated>
+    <author>
+      <name>Trex</name>
+    </author>
+    <content>**Archipelago** world for **Ender Magnolia**&#13;
+&#13;
+## Update&#13;
+- Added an option for advanced logic&#13;
+- Added an option for scaling chapter with progress&#13;
+- Fixed swamp lake respite logic&#13;
+&#13;
+## Requirements&#13;
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
+- [Ender Magnolia Randomizer](https://github.com/Trexounay/EnderMagnolia.Randomizer/releases) Get the corresponding version&#13;
+&#13;
+## Current Features&#13;
+- 340 checks&#13;
+- 2 Goals: **Ending A** **Ending B**&#13;
+- Starting Skill option (except non breaking walls weapon)&#13;
+- Shuffle relic costs&#13;
+- Progressive Aptitudes&#13;
+- Start with heal/fast travel&#13;
+- min/max chapters&#13;
+- Central Elevator Fix option&#13;
+- Starting respite&#13;
+&#13;
+## Notes&#13;
+This is an early release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
+    <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V0.0.3</id>
+    <title>Fantastic Fist v0.0.3</title>
+    <updated>2026-08-14T20:09:50+00:00</updated>
+    <author>
+      <name>WaluigiGoesWa</name>
+    </author>
+    <content>Entrance Rando has been implemented.&#13;
+Fixed versioning of the mod and AP World.&#13;
+Fixed bug where multiple connection sessions could be stored.&#13;
+Info tabs when hovering over a level now correctly show what exits have been collected in the level.&#13;
+Boss info tabs will show how many coins are acquired and needed when the player does not have enough.&#13;
+Fixed generation bug in the AP World when using Entrance Rando but no Door Rando.&#13;
+&#13;
+Currently Deathlink, Roomsanity, Checkpointsanity, and Door Rando do not work. They will be implemented at a later date.</content>
+    <link href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V0.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Turese/LOArchipelagoPlugins/releases/tag/1.2.2</id>
+    <title>Look Outside v1.2.2</title>
+    <updated>2026-08-14T20:46:29+00:00</updated>
+    <author>
+      <name>Turese</name>
+    </author>
+    <content># QOL Features&#13;
+- Sybil’s Planetarium is unlocked by default&#13;
+- The book of crossword puzzles now starts with every puzzle completed but one&#13;
+- Paying rent now automatically grants locations for items that would otherwise become unreachable in the next phase of the landlord’s apartment&#13;
+- Removed some metadata from the client zipfile (.DS_Store artifacts from MacOS still present in some folders atm)&#13;
+- New options &#13;
+    - Starting Roommates: Player can pick an amount of random recruits to be in their apartment from game start.&#13;
+    - Elevator by Floor: When set to true, elevator activation will be granted one floor at a time, rather than all at once.&#13;
+&#13;
+# Client fixes&#13;
+- Fixed bug where buying Item 6 from Mutt’s shop would send the location for buying Item 12&#13;
+- Fixed bug where the boss Obsession was prevented from spawning in the Apartment 12 walls&#13;
+- Fixed bug where death link chat message would be sent on death even if death link was disabled&#13;
+- Fixed bug where the “Ease Regrets” option for Spine on the calendar in the player’s bedroom would not bring her back to life.&#13;
+- Fixed bug where being too late to save Ernest would not cause his ease regrets option to appear &#13;
+- Fixed bug where disabling randomized game skills still removes games’ ability to grant skills&#13;
+- Fixed bug where Wriggly Fred vanishes from the Fred apartment when acquired in the player’s fridge through the randomizer.&#13;
+- Fixed issue where "Suturing Kit" uses were initialized when defeating Taxidermy instead of when acquiring the item&#13;
+- Sam will now have arms until first connecting to archipelago to avoid a bug where the starting cutscene could remove arms after they had been granted to the player by archipelago.&#13;
+- Fixed some missing or swapped item icons&#13;
+- If player missed picking up the item randomized to the "Fred's Apt. Hat Room - Item" location before killing Toxic/Green Fred, then killing “Not A Cowboy Hat” will grant the location instead&#13;
+&#13;
+# Apworld changes&#13;
+- Fixed logic bug where “Teddy” was not considered a requirement for “Apt. 32 Bathroom - Item From Joel (Day 2-5)”&#13;
+- Fixed logic bug where “Myrmidon XII” was not considered a requirement for “Play Video Game - Myrmidon XII”&#13;
+- Fixed logic bug where “Rat Baby Thing” was not considered a requirement for “Apt. 13 - Item From Wall Mouth”&#13;
+- Fixed logic bug where certain worm enemies were considered reachable without completing Nestor and Rafta’s quest (nor were disabled when when Nestor and Rafta’s quest locations were disabled)&#13;
+- Fixed logic bug where Kevin shop item locations were considered reachable without completing Nestor and Rafta’s quest (nor were disabled when when Nestor and Rafta’s quest locations were disabled)&#13;
+- “Worm Egg” is no longer added to the item pool when Nestor and Rafta’s quest locations are disabled&#13;
+- Fixed logic bug where offerings were not considered a requirement for “Pre-ritual Gift From Jasper” (now requires 4 offerings or 3 offerings + Guinea Pig)&#13;
+- Disabling game skills now makes most games not progression items&#13;
+- Adjusted item pool drop rates of some filler items&#13;
+- Adjusted some location names&#13;
+&#13;
+## Difficulty bugs&#13;
+- Fixed bug where extra enemies that only appear in certain difficulties no longer appear in the overworld in all difficulties (this only applies to enemies that are bundled into fights that appear in all difficulties; hard-mode exclusive enemies like the Tooth Fairy in the tooth apartment will still always appear)&#13;
+- Vincent’s apartment is no longer open by default on non-Cursed difficulties, to align better with vanilla behavior&#13;
+- Fixed errors where the following overworld item locations would not appear on all difficulty modes:&#13;
+    - Boiler Storage - Item on South Table 1&#13;
+    - Boiler Storage - Item on South Table 3&#13;
+    - Boiler Storage - Item on West Counter 2&#13;
+    - Security Storage - Item on North Counter 2&#13;
+    - LL Memorial Room Cache - West Table Item 2&#13;
+    - LL Memorial Room Cache - South Corner Item 1&#13;
+    - Laundromat - Item in Southeast Corner&#13;
+    - Mutt's Shop Bathroom - Item on Counter</content>
+    <link href="https://github.com/Turese/LOArchipelagoPlugins/releases/tag/1.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.6</id>
+    <title>Mina The Hollower v0.11.5r2</title>
+    <updated>2026-08-14T21:00:19+00:00</updated>
+    <author>
+      <name>FyreDay, Axertin, ZXavier</name>
+    </author>
+    <content>**THIS AP WORLD IS ONLY COMPATIBLE WITH [AP CLIENT BETA 6](https://github.com/Axertin/mth-apclient/releases/tag/v1.0.0-beta.6) AND LATER**&#13;
+&#13;
+This is a beta release. This means it is stable with no major bugs. If you find a bug please report it in the [Github Issues](https://github.com/FyreDay/Archipelago-MinaTheHollower/issues)&#13;
+&#13;
+Install guide and more information is in the [AP world Info Document](https://github.com/FyreDay/Archipelago-MinaTheHollower/blob/main/worlds/mina_the_hollower/docs/en_Mina%20The%20Hollower.md)&#13;
+&#13;
+### Changelog&#13;
+&#13;
+- Improve UT location placements&#13;
+- Rename 2 BB checks</content>
+    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.0-beta.6"/>
   </entry>
 </feed>

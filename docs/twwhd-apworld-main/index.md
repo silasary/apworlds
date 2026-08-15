@@ -7,7 +7,7 @@ meet a cast of unforgettable characters as he searches for his kidnapped sister.
 
 
 ## Downloads
-- <a href="https://github.com/Teotia444/twwhd-apworld/releases/download/v1.0.1-beta/twwhd-apworld-main.apworld">Latest Version (1.0.1b0)</a>
+- <a href="https://github.com/Teotia444/twwhd-apworld/releases/download/v1.0.2-beta/twwhd-apworld-main.apworld">Latest Version (1.0.2b0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

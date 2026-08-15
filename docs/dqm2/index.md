@@ -1,10 +1,12 @@
 # Dragon Quest Monsters 2
 
-
+Your island home is sinking into the ocean, and you&#x27;re the one to save it!
+You&#x27;ll need to find, train and breed an army of the coolest, weirdest and
+cutest Dragon Warrior monsters to ever live inside your Game Boy!
 
 
 ## Downloads
-- <a href="https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.0.2/dqm2.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.0.3/dqm2.apworld">Latest Version (0.0.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
