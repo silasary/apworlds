@@ -1,19 +1,19 @@
 import argparse
-from collections import defaultdict, Counter
 import datetime
 import json
 import os
 import pathlib
 import sys
 import traceback
-
 import urllib.parse
+from collections import Counter, defaultdict
+
 import yaml
-from common import NoWorldsFound, parse_version, update_index_from_github, repositories, update_index_from_changelog
-from manifest_manager import load_manifest, index_manager
-from write_docs import write_docs
-from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
+from common import NoWorldsFound, parse_version, repositories, update_index_from_changelog, update_index_from_github
 from feedgen.feed import FeedGenerator
+from manifest_manager import index_manager, load_manifest
+from worlds.apworld_manager.world_manager import GithubRateLimitExceeded
+from write_docs import write_docs
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--no-refresh", action="store_true", help="Don't refresh the GitHub repositories")
@@ -140,7 +140,7 @@ for world in index_manager.files:
             break
         except NoWorldsFound as e:
             print(f"Error updating {world.stem}: {e}")
-        except Exception as e:
+        except Exception as e:  # noqa: BLE001
             print(f"Error updating {world.stem}: {e}")
             traceback.print_exc()
 
@@ -171,7 +171,7 @@ if args.add_unknown:
     for id in repositories.all_known_package_ids:
         manifest = pathlib.Path("index") / f"{id}.yaml"
         if not manifest.exists():
-            version = list(repositories.packages_by_id_version[id].values())[0]
+            version = next(iter(repositories.packages_by_id_version[id].values()))
             manifest.write_text(yaml.dump({"game": "", "github": version.source_url}))
             print(f"Missing {manifest}")
 

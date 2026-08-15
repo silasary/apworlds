@@ -2,6 +2,7 @@ import argparse
 import glob
 import os
 import pathlib
+import sys
 import zipfile
 from collections.abc import Iterable
 from pathlib import Path
@@ -152,7 +153,7 @@ def run_for_world(world_stem: str) -> None:
     manifest_path = Path("index") / f"{world_stem}.json"
     if not manifest_path.exists():
         print(f"Manifest for world {world_stem} does not exist.")
-        exit(1)
+        sys.exit(1)
     manifest = load_manifest(manifest_path)
     versions = list(manifest.get("versions", {}).values())
     versions.sort(key=lambda v: parse_version(v.get("world_version", "0.0.0")), reverse=True)

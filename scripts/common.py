@@ -1,4 +1,3 @@
-from collections import Counter
 import datetime
 import functools
 import hashlib
@@ -6,28 +5,28 @@ import os
 import pathlib
 import re
 import sys
+import zipfile
+from collections import Counter
 from pathlib import Path
 from typing import Any
-import zipfile
 
+import bs4
 import requests
 import yaml
-import bs4
-
 from manifest_manager import index, load_manifest, save_manifest
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
 sys.path.append("Archipelago")
 sys.path.append("Archipelago/lib")
-import ModuleUpdate  # noqa: E402
+import ModuleUpdate
 
 ModuleUpdate.update(yes=True)
 
-from worlds.Files import InvalidDataError  # noqa: E402
-from worlds.apworld_manager.world_manager import ApWorldMetadata, GithubRepository, RemoteWorldSource, RepositoryManager, parse_version, Repository  # noqa: E402
-from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version  # noqa: E402
-from worlds.apworld_manager.container import RepoWorldContainer  # noqa: E402
+from worlds.apworld_manager._vendor.packaging.version import InvalidVersion, Version
+from worlds.apworld_manager.container import RepoWorldContainer
+from worlds.apworld_manager.world_manager import ApWorldMetadata, GithubRepository, RemoteWorldSource, Repository, RepositoryManager, parse_version
+from worlds.Files import InvalidDataError
 
 repositories = RepositoryManager()
 
@@ -115,11 +114,10 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             file_path = index / f"{release.id}.json"
             manifest = load_manifest(file_path, github_url, default_flags)
             manifests[release.id] = manifest
-        if manifest.get("supported", False):
-            if datetime.datetime.fromisoformat(release.created_at) < latest_ap_release() - datetime.timedelta(days=365):
-                if release.world_version in manifest.get("versions", {}):
-                    del manifest["versions"][release.world_version]
-                continue
+        if manifest.get("supported", False) and datetime.datetime.fromisoformat(release.created_at) < latest_ap_release() - datetime.timedelta(days=365):
+            if release.world_version in manifest.get("versions", {}):
+                del manifest["versions"][release.world_version]
+            continue
         if manifest.get("game") and game_name_filter and manifest["game"].lower() != game_name_filter.lower():
             # print(f"Skipping {release.id} in {github_url} due to game filter {game_name_filter}")
             continue
@@ -159,9 +157,9 @@ def update_index_from_github(file_path: Path | None, manifest: dict, github_url:
             "version_simple": version_number.base_version,
             "created_at": release.created_at,
         }
-        for key in data:
+        for key, value in data.items():
             if key not in version_info:
-                version_info[key] = data[key]
+                version_info[key] = value
 
         if "lib_file" in manifest:
             lib_file = release.data.get("other_assets", {}).get(manifest["lib_file"])
@@ -204,7 +202,7 @@ def cleanup_manifest(manifest):
 
     seen_versions = Counter()
     versions = manifest.get("versions", {}).values()
-    versions = sorted(versions, key=lambda v: v.get("created_at", datetime.datetime.min.isoformat()))
+    versions = sorted(versions, key=lambda v: v.get("created_at", datetime.datetime.min.replace(tzinfo=datetime.timezone.utc).isoformat()))
     for info in versions:
         seen_versions[info["world_version"]] += 1
         if seen_versions[info["world_version"]] > 1:
@@ -241,10 +239,9 @@ def download_and_hash_manifest(manifest: dict[str, Any], default_flags: dict | N
             file = repositories.download_remote_world(release, False)
         except requests.exceptions.HTTPError as e:
             print(f"Failed to download {release.download_url}: {e}")
-            if e.response.status_code == 404:
-                if tag_version in manifest.get("versions", {}):
-                    del manifest["versions"][tag_version]
-                    return
+            if e.response.status_code == 404 and tag_version in manifest.get("versions", {}):
+                del manifest["versions"][tag_version]
+                return
             raise
         with open(file, "rb") as f:
             hash = hashlib.sha256(f.read()).hexdigest()
