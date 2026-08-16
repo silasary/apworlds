@@ -76,6 +76,11 @@ Dark Ages' Jester requirement and Frostbite Caves' warmth requirement meaningful
 drop a threat into a world you have no answer for, and it cannot take one out of a world whose logic
 is built on it. Nothing about item placement or logic changes when this is on.
 
+Levels built around particular zombies are skipped entirely — the camel matching games in Ancient
+Egypt, the Pirate Seas cannon levels, Beghouled, bowling, Last Stand and the other set pieces. Those
+levels are won on their specific zombies rather than just spawning them, so a swap could leave one
+unbeatable. That is 84 of the game's 1134 levels; everything else shuffles.
+
 The roll is fixed per level, so retrying is not a reroll, and two players on the same seed get
 different lawns.
 

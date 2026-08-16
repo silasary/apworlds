@@ -265,9 +265,25 @@
       "size": 263800,
       "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
       "tag": "mmx5-v0.5.3",
-      "title": "Mega Man X5 apworld v0.5.3",
+      "title": "MMX5 apworld v0.5.3 (superseded by v0.5.4)",
       "version_simple": "0.5.3",
       "world_version": "0.5.3"
+    },
+    "mmx5-v0.5.4": {
+      "created_at": "2026-08-16T05:02:30Z",
+      "description": "Two fixes and two new options. **No re-patch needed** unless you turn on one of the new options \u2014 both are off by default and the fixes are client-side, so a disc patched for 0.5.3 is still correct.\n\n## Fixed\n\n**Life Energy you receive now actually heals you.** It never did. The client was writing received energy into what it took for the game's refill queue; those bytes are in fact the fill levels of Sub-Tank 1 and Sub-Tank 2. So the energy healed nothing at any HP \u2014 it went into a sub-tank instead, the *wrong* one whenever you were playing Zero, and into a tank you might not even own, in which case it went nowhere at all.\n\nEnergy now behaves like a capsule off the floor: it heals you, and at full health it tops up a sub-tank you own. Tanks that the old bug overfilled past the game's own maximum are repaired on sight \u2014 that was the sub-tank overcap reported back on 0.5.0.\n\n**A Boss Rush rematch could be credited without fighting it.** A player game-overed out of the Duff McWhalen rematch, came back to the Sigma stage, picked up an item, and was handed the McWhalen rematch check. The address watched for boss HP is not boss-only \u2014 it belongs to the game's first object slot, which holds the boss during a rematch and ordinary objects the rest of the time. An object appearing there and going away looks exactly like a boss filling its health bar and dying. The client now checks that the thing in that slot is actually the boss whose code is loaded.\n\nOn a multiworld this was worse than a free check, since it releases someone else's item \u2014 worth a look at your seed if you saw a rematch complete on its own.\n\n## New options\n\n**Weapon Damage** \u2014 randomizes how hard *your* weapons hit. `weak` 50\u201390% of normal, `regular` 80\u2013130%, `strong` 120\u2013200%, `chaotic` 25\u2013250%. Each weapon rolls once and keeps its shape: a charged shot scales with its uncharged shot, so it can never come out weaker than the plain one.\n\n**Boss Damage** \u2014 the mirror, for the eight Mavericks' attacks. Each boss rolls once, so its light pokes stay light next to its big attack and the whole fight gets more or less dangerous together. Attacks shared with ordinary enemies are untouched, and so are instant kills.\n\nBoth change the disc, so re-patch if you turn one on. They stack with Boss HP Randomization \u2014 `weak` weapons against `strong` bosses is a long afternoon.\n\n## Also\n\nThe setup guide was wrong about armor parts: they do nothing individually, and once you hold all four X5 grants the armor on a **results screen** \u2014 so the fourth part needs a stage cleared before the armor is selectable.\n\n---\n\n`mmx5.apworld` goes in your Archipelago install's `custom_worlds/` folder. `MMX5-Unpatcher.exe` restores an AP-patched disc to a clean dump if you have lost your original \u2014 drag a `.bin` onto it.\n\nRequires Archipelago 0.6.7 or newer. 521 tests, release gate 31/31.\n",
+      "download_url": "https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.5.4/mmx5.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e47adb702624342a7cf279e19e438a11707e170b5e276d4db7abdb022c8d9baf",
+      "html_url": "https://github.com/Shinnuu/Archipelago/releases/tag/mmx5-v0.5.4",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 292771,
+      "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
+      "tag": "mmx5-v0.5.4",
+      "title": "MMX5 apworld v0.5.4",
+      "version_simple": "0.5.4",
+      "world_version": "0.5.4"
     }
   }
 }

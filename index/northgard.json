@@ -99,6 +99,21 @@
       "title": "2026.08.15 - Code Cleanup",
       "version_simple": "2026.8.15",
       "world_version": "2026.8.15"
+    },
+    "2026.08.15.2": {
+      "created_at": "2026-08-16T01:19:37Z",
+      "description": "## 2026.08.15.2\n\n### Fixed\n- Non-Linear Progression Mode: the region/location logic itself was still enforcing Linear Mode's ancestor-adjacency rule, so generation and trackers required an adjacent Chapter to be reached first before a later one counted as logically accessible -- even though the in-game client already unlocked Chapters correctly out of order. A Chapter's location is now logically reachable the moment its own item is received, matching the in-game behavior.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.15...2026.08.15.2",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.08.15.2/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bf721dac3b176f28d4b59a6d08b9c0749204b749fa059d9e5ef062acbdba7aa7",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.15.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 10414898,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.08.15.2",
+      "title": "2026.08.15.2 - Non-Linear Mode Logic Fix",
+      "version_simple": "2026.8.15",
+      "world_version": "2026.8.15.2"
     }
   }
 }

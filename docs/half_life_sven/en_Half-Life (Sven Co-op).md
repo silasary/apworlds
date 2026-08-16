@@ -35,6 +35,46 @@ finale" setting, and the seed is won only when every campaign's finale is done.
 Their weapons go into one pool, so Opposing Force's displacer and They Hunger's
 tommy gun turn up in Black Mesa and the Tau cannon turns up in theirs.
 
+## What is Suspension?
+
+An arcade map Sven Co-op ships alongside the campaigns, and an optional extra in
+a seed: `suspension: true`. It is one map rather than a campaign — a class-based
+squad retaking a suspension bridge in eight sections, against waves that scale
+with how many players are in the lobby.
+
+Three things become checks. Each of the eight sections, per difficulty. Clearing
+a run, credited to whichever class you spent most of it as. And the medal at the
+end, scored on the team's total deaths: platinum for a flawless run down to n00b,
+with `suspension_required_award` deciding how far up the ladder goes. Medals
+always roll down, so a platinum run sends every lesser medal too and nobody has
+to die on purpose.
+
+Difficulty is the lobby's shared ticket pool — 50 on easy down to a single ticket
+on insane — and `Progressive Suspension Difficulty` items open the tiers in
+order, so a fresh seed can only vote easy. Seven of the eight classes are items.
+The eighth, the Juggernaut, is not: the map opens it once a run has been cleared
+with each of the other seven, exactly as it does outside a randomiser.
+
+Suspension's goal is a run cleared with **every one of the eight classes at your
+capped difficulty** — so the Juggernaut is the last of them, and the cap is what
+the goal is measured at. `suspension_goal_requires_award` adds the medal to that:
+off, the deaths do not matter; on, each of those clears has to earn
+`suspension_required_award` as well. Reaching it does not win the seed on its
+own — every campaign in the YAML still has to be finished too.
+
+`suspension_classanity` turns each section into a check *per class*, which is
+lobby-scale: eight players on eight different classes clear eight classes' worth
+in one run, where a solo player would need eight runs.
+
+Section 4 is a tank, and only the Grenadier, the Pointman and the Engineer can
+get anything that hurts it — the bridge's explosives crates equip those three
+and nobody else. So every check from the tank onward, along with the clears and
+the medals, is in logic behind holding one of those three classes. The sections
+before it are open to any class, the detonation pack in section 3 included:
+that one is a map item anybody can pick up and carry.
+
+There is no hub console for it. Type `!warp suspension`.
+
 ## What does randomization do to this game?
 
 The Sven Co-op campaign portal becomes a hub. Every mission is sealed until its
@@ -51,7 +91,8 @@ That starting weapon is the crowbar unless `random_starting_weapon` is on, in
 which case it is any melee weapon your campaigns could hand out — Opposing
 Force's pipe wrench or combat knife, They Hunger's spanner. It replaces the
 crowbar outright, so a wrench start means the crowbars in the levels are refused
-like everything else.
+like everything else — until the Crowbar item arrives, because it is in the pool
+like any other weapon the seed did not start you with.
 
 A campaign's final mission is not unlocked by an item at all. Nihilanth opens once
 you have completed a configurable number of other Half-Life missions, and every
@@ -68,8 +109,9 @@ for Opposing Force, 5 for Blue Shift, 2 for They Hunger), the weapons of every
 campaign you enabled, and optionally the HEV suit and long jump module.
 Everything else is filler: ammo caches, medkits and armour batteries.
 
-Half-Life brings 13 weapons (Glock, .357, MP5, shotgun, crossbow, RPG, Tau
-cannon, gluon gun, hivehand, satchel charges, tripmines, snarks, hand grenades).
+Half-Life brings 14 weapons (the crowbar, Glock, .357, MP5, shotgun, crossbow,
+RPG, Tau cannon, gluon gun, hivehand, satchel charges, tripmines, snarks, hand
+grenades).
 Opposing Force adds eight more: the desert eagle, SAW, sniper rifle, displacer,
 spore launcher, barnacle grapple, pipe wrench and minigun. They Hunger adds nine
 of its own, from the Colt 1911 and tommy gun to the tesla gun. Blue Shift adds
@@ -139,3 +181,27 @@ campaign has always given it to you.
 
 Kill Nihilanth. Its mission only opens once you have completed enough of the
 others, so the run is a tour of Black Mesa rather than a beeline.
+
+With several campaigns enabled it is every one of their finales, each behind its
+own count. With Suspension enabled it is those plus one more: the bridge cleared
+with each class in `suspension_goal_classes` — all eight by default — at the
+hardest tier your YAML allows, and earning `suspension_required_award` too if
+`suspension_goal_requires_award` is on.
+
+## What happens when somebody dies?
+
+With DeathLink on, a death is the whole lobby's: everyone gibs and one DeathLink
+goes out to the multiworld. `lobby_death_link` separates those two halves, since
+one player's mistake ending the round for seven others is not always what a
+lobby wants:
+
+- **on** — the default, and what DeathLink has always done here.
+- **non_arcade** — the lobby gibs in the campaigns but never on Suspension,
+  where a run is long and deaths are already the medal's business.
+- **off** — nobody else dies for your death, and the DeathLink still goes out.
+
+A DeathLink *arriving* from another world always takes the lobby, whatever this
+is set to: being killed by it is what receiving one means. And with DeathLink
+itself off, none of it happens — there is nothing for a wipe to be the point of.
+`death_link_amnesty` is separate again, and forgives a number of deaths before
+one is reported at all.

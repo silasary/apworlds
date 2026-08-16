@@ -39,7 +39,7 @@ The options worth knowing about:
   game data.
 - **Worlds Required for Modern Day** — how many worlds must satisfy that condition.
 - **Modern Day Victory** — which Modern Day level ends the run.
-- **Skip Tutorial** — start on the world map and send the tutorial checks automatically.
+- **Skip Tutorial** — start on the world map and send the tutorial checks automatically. Also stops the game making you open the almanac, zen garden and store when each one unlocks.
 - **Shopsanity** — turn the store's one-time purchases into 39 extra checks.
 - **Trap Percentage** — how much of the filler pool becomes Lawn Mower Traps.
 

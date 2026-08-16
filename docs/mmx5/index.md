@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.5.3/mmx5.apworld">Latest Version (0.5.3)</a>
+- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.5.4/mmx5.apworld">Latest Version (0.5.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

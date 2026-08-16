@@ -2,68 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-16T00:20:35.810614+00:00</updated>
+  <updated>2026-08-16T06:19:42.474983+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Totox00/ap-ahlcg/releases/tag/v0.2.0</id>
-    <title>Arkham Horror The Card Game v0.1.4r2</title>
-    <updated>2026-08-12T13:01:27+00:00</updated>
-    <author>
-      <name>toto00</name>
-    </author>
-    <content>Added support for the Dream-Eater and the Innsmouth Conspiracy&#13;
-Added an option to limit the number of unlockable investigators in the item pool&#13;
-Fixed some bugs</content>
-    <link href="https://github.com/Totox00/ap-ahlcg/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.4.4</id>
-    <title>Links Awakening DX Beta v13.4.4</title>
-    <updated>2026-08-12T16:02:59+00:00</updated>
-    <author>
-      <name>zig</name>
-    </author>
-    <author>
-      <name>threeandthree</name>
-    </author>
-    <content>Fix option overrides.&#13;
-&#13;
-Also I'm going to start including the bizhawk connector in these releases again.</content>
-    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.4.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.10</id>
-    <title>Dark Cloud 1 v0.5.0r2</title>
-    <updated>2026-08-12T21:44:05+00:00</updated>
-    <author>
-      <name>Lizardman175</name>
-    </author>
-    <content># Dark Cloud 1 AP Rando v0.5.10&#13;
-&#13;
-## Client Changes&#13;
- - Fixed an issue where the soft limit of attachments was getting ignored&#13;
- - Fixed a bug that would prevent sending chest checks collected while disconnected if connecting on the start screen&#13;
- - Added character and boss kill flags (excluding genie for now) to DataStorage for poptracker use.  They will get set to false if an older save is loaded without them completed.&#13;
-&#13;
-## Linux?&#13;
- - Updated library and it may now work on Linux with proton? (untested)</content>
-    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.5.10"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BuffYoda21/ap-glyphs/releases/tag/v1.2.1</id>
-    <title>GLYPHS v1.2.1</title>
-    <updated>2026-08-12T22:48:41+00:00</updated>
-    <author>
-      <name>BuffYoda21</name>
-    </author>
-    <content>## Apworld Changes&#13;
-- Small logic bugfixes&#13;
-- Added a disclaimer regarding UT and the new Randomize Button Colors option</content>
-    <link href="https://github.com/BuffYoda21/ap-glyphs/releases/tag/v1.2.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.7.1</id>
     <title>Divinity Original Sin 2 v0.7.0r2</title>
@@ -1164,7 +1107,7 @@ Changelog since v1.1.2:&#13;
 - Various Loot Menu UI changes have been made, including bug fixes and adding tooltips to Relic and potion rewards. (fixes [#192](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/192) and [#201](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/201))&#13;
 &#13;
 &gt; [!TIP]&#13;
-&gt; Progressive Starter Card and Progressive Starter Relic can make the early game significantly harder. Archipelago logic accounts for this but the defaults might be too hard. Please let us know about your thoughts in the discord!&#13;
+&gt; Progressive Starter Card and Progressive Starter Relic can make the early game significantly harder. Archipelago logic currently doesn't account for this.&#13;
 &#13;
 ## Shops, Gold, and Filler Items&#13;
 &#13;
@@ -1294,5 +1237,91 @@ Is your Archipelago Launcher v0.6.7 or later? If not it **won't work**.&#13;
 **Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.04...2026.08.15
 </content>
     <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.15"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.6.0</id>
+    <title>Pokemon Snap v0.6.0</title>
+    <updated>2026-08-16T01:19:32+00:00</updated>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <content>## What's Changed&#13;
+&#13;
+### New Locations&#13;
+* The Oak Rewards are now checks:&#13;
+  * 3 Checks for Photo Count: 6, 22, and 40 photos&#13;
+  * 3 Checks for Report Score: 24,000, 72,500, and 130,000&#13;
+&#13;
+### New Goals (#61 by @cobyw)&#13;
+* The Rainbow Cloud unlock is now either: number of Sign Pictures or number of Pokemon Pictures&#13;
+* Added YAML option: number of pictures required to unlock Rainbow Cloud&#13;
+&#13;
+### Logic Changes&#13;
+- Mew is now considered in-logic with the Pokemon Food _or_ the Pester Ball, provided you can access Rainbow Cloud (#62)&#13;
+- Poliwag now requires Pokemon Food or Pester Ball to be in-logic (#57 by @cobyw)&#13;
+- The following checks were reclassified as "hard checks" (#78 by @cobyw, #82)&#13;
+  - Goldeen: Wonderful&#13;
+  - Magikarp (Cave): Wonderfull&#13;
+  - Pikachu (River): Wonderful&#13;
+  - Balloon Pikachu&#13;
+  - Flying Pikachu&#13;
+&#13;
+### Quality of Life&#13;
+- Grouped YAML options and added `start_inventory_pool` by @cobyw in #58&#13;
+- Added Launcher Icon by @OniHelix in #73&#13;
+- Added YAML option: press L to stop the Zero-One&#13;
+- Added YAML option: set camera inversion&#13;
+- D-pad is usable in most menus now&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.5.3...v0.6.0</content>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.15.2</id>
+    <title>Northgard v2026.8.15.2</title>
+    <updated>2026-08-16T01:19:37+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>## 2026.08.15.2
+
+### Fixed
+- Non-Linear Progression Mode: the region/location logic itself was still enforcing Linear Mode's ancestor-adjacency rule, so generation and trackers required an adjacent Chapter to be reached first before a later one counted as logically accessible -- even though the in-game client already unlocked Chapters correctly out of order. A Chapter's location is now logically reachable the moment its own item is received, matching the in-game behavior.
+
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.15...2026.08.15.2</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.15.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/1.1.0</id>
+    <title>YARG v1.1.0</title>
+    <updated>2026-08-16T02:25:06+00:00</updated>
+    <author>
+      <name>Energymaster22</name>
+    </author>
+    <author>
+      <name>thedrummonger</name>
+    </author>
+    <content># Use Client Version 1.y.z.&#13;
+&#13;
+New:&#13;
+- Support for YARG Official Setlist Wave 16&#13;
+&#13;
+## What's Changed&#13;
+* 67 add yarg setlist wave 16 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/68&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/1.0.0...1.1.0</content>
+    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.7.1</id>
+    <title>Feeding Frenzy 2 v0.7.1</title>
+    <updated>2026-08-16T02:48:46+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>Quick hotfix for a logic issue regarding Back to Boris and its dash requirement</content>
+    <link href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.7.1"/>
   </entry>
 </feed>
