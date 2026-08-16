@@ -284,6 +284,21 @@
       "title": "v9.1.0-beta9",
       "version_simple": "9.1.0",
       "world_version": "9.1.0b9"
+    },
+    "v9.1.0-release": {
+      "created_at": "2026-08-16T17:55:54Z",
+      "description": "# OoT Randomizer APWorld v9.1.0 Full Release 1\r\n\r\nThis is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.\r\n\r\n## Changes:\r\n- Added support for multiworlds larger than 255 players\r\n- Fixed generation/fill failures involving pre-completed dungeons, song placement, shops, and any_dungeon Silver Rupees.\r\n- Expanded the xflag room table to prevent overflow.\r\n- Protected file-select custom messages from non-ASCII characters.\r\n- Automatically parse automatic server/port loading from the webhost room manifest.\r\n\r\nPlease note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.\r\nEven after deletion, the \"Open Patch\" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct \"Ocarina of Time Client\" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says \"Archipelago Ocarina of Time Client 0.6.x\" in the top bar with no info about the apworld version, you are using the old client.",
+      "download_url": "https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release/oot.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4cd13440cc8865d9050efbf1e7d4e954cc9dff98ffac23d9b4fd1b3c8dc0f951",
+      "html_url": "https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release",
+      "minimum_ap_version": "0.6.4",
+      "size": 3055153,
+      "source_url": "https://api.github.com/repos/TreZc0/OoTR-APWorld",
+      "tag": "v9.1.0-release",
+      "title": "v9.1.0-release",
+      "version_simple": "9.1.0",
+      "world_version": "9.1.0.post0"
     }
   }
 }

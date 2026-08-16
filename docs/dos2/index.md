@@ -4,7 +4,7 @@ Divinity Original Sin 2 is a turn based tactical RPG in which you control the Go
 
 
 ## Downloads
-- <a href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.7.1/dos2.apworld">Latest Version (0.7.0r2)</a>
+- <a href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/download/v0.8.0/dos2.apworld">Latest Version (0.8.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
