@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/0.5.3-alpha/spire2.apworld">Latest Version (0.5.3a0)</a>
+- <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/1.0.0/spire2.apworld">Latest Version (1.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

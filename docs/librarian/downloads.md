@@ -1,9 +1,12 @@
 # Librarian Tidy Up the Arcane Library
 
 ## Latest
-- <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.3/librarian.apworld">Latest Version (1.1.3)</a>
+- <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/2.0.0/librarian.apworld">Latest Version (2.0.0)</a>
 
 ## All Versions
+
+#### v2.0.0
+- <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/2.0.0/librarian.apworld">https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/2.0.0/librarian.apworld</a>
 
 #### v1.1.3
 - <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.3/librarian.apworld">https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.3/librarian.apworld</a>
