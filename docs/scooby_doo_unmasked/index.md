@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Its-Retro/Archipelago/releases/download/v0.2.0/scooby_doo_unmasked.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/Its-Retro/Archipelago/releases/download/v0.2.1/scooby_doo_unmasked.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

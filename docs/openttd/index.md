@@ -12,5 +12,4 @@ All vehicles are randomized — unlock them through Archipelago checks!
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 

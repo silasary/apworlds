@@ -8,7 +8,7 @@ v1 location model: MDP chest events + early story checks
 
 
 ## Downloads
-- <a href="https://github.com/Wakamu/Grandiarchipelago/releases/download/0.14.0_1/grandia.apworld">Latest Version (0.14.0)</a>
+- <a href="https://github.com/Wakamu/Grandiarchipelago/releases/download/0.15.0/grandia.apworld">Latest Version (0.15.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Grandia
 
 ## Latest
-- <a href="https://github.com/Wakamu/Grandiarchipelago/releases/download/0.14.0_1/grandia.apworld">Latest Version (0.14.0)</a>
+- <a href="https://github.com/Wakamu/Grandiarchipelago/releases/download/0.15.0/grandia.apworld">Latest Version (0.15.0)</a>
 
 ## All Versions
+
+#### v0.15.0
+- <a href="https://github.com/Wakamu/Grandiarchipelago/releases/download/0.15.0/grandia.apworld">https://github.com/Wakamu/Grandiarchipelago/releases/download/0.15.0/grandia.apworld</a>
 
 #### v0.14.0
 - <a href="https://github.com/Wakamu/Grandiarchipelago/releases/download/0.14.0_1/grandia.apworld">https://github.com/Wakamu/Grandiarchipelago/releases/download/0.14.0_1/grandia.apworld</a>
