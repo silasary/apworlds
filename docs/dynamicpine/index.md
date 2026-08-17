@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/dynamicpine/v99.0.1/dynamicpine.apworld">Latest Version (99.0.1)</a>
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/dynamicpine/v99.0.2/dynamicpine.apworld">Latest Version (99.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

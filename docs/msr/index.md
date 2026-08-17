@@ -7,7 +7,7 @@ you can explore the areas freely, and the Chozo seals provide hints instead.
 
 
 ## Downloads
-- <a href="https://github.com/lilDavid/AP-SamusReturns/releases/download/0.3.0/msr.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/lilDavid/AP-SamusReturns/releases/download/0.3.1/msr.apworld">Latest Version (0.3.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -124,6 +124,11 @@ need to call them directly.
   — the env-var plumbing `launch_pcsx2` uses internally to know whether it's
   safe to manage PCSX2 in this process. Game clients don't normally call
   these directly.
+- `mark_pending_auth(slot_name)` / `get_pending_auth() -> str | None` — records
+  (and reads back) the slot name the hub's `/launch` was given, so a launched
+  client can pre-fill its own `self.auth` instead of asking the player to
+  retype the same name. See [Pre-filling the slot
+  name](adding_to_apworld.md#pre-filling-the-slot-name-optional).
 
 ## Client command helper
 

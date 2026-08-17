@@ -62,21 +62,26 @@ This section is for players who want to host a solo or multiplayer game.
 
 ---
 
-## Weapons and Gadgets
+## Client Commands
 
-When the client first connects it will scan PCSX2 memory for the weapon array. This scan can take a moment. You will see a message like:
-
-```
-[RAC] Weapon array at 0x20F12345.
-```
-
-If weapons or gadgets are not being applied correctly, use the following commands in the client console:
+The weapon/gadget array's memory location is resolved directly from the loaded planet, not scanned — no manual step needed there. The following commands are available in the client console:
 
 | Command | Description |
 |---------|-------------|
-| `/scan` | Force a fresh weapon array scan. Use this if weapons are not showing up after connecting or after a game reload. |
 | `/reconnect` | Disconnect and reconnect to PCSX2, then re-apply all received items. Use this if the client loses sync with the emulator. |
-| `/disconnect_game` | Disconnect from PCSX2 without closing the client. |
+| `/force_sync` | Force the player's in-game state to match what was received from Archipelago. |
+| `/states` | Print every active internal state — useful when reporting a bug. |
+| `/rac5_info` | Print the current slot options plus every active state's repr. |
+| `/vendor_refresh` | Force-rewrite the vendor's item list immediately, instead of waiting for the next menu open/close. |
+| `/debug` | Toggle verbose per-tick state-change logging in the client console. |
+| `/spawn_ghost` | Spawn a static ghost clone of yourself at your current position (only on planets with confirmed Ghost Ratchet addresses) — debug tool, unrelated to Ghost Link. |
+| `/enable_deathlink` / `/disable_deathlink` | Toggle DeathLink for this session. |
+| `/enable_ammolink` / `/disable_ammolink` | Toggle Ammo Link for this session. |
+| `/enable_boltlink` / `/disable_boltlink` | Toggle Bolt Link for this session. |
+| `/enable_ghostlink` / `/disable_ghostlink` | Toggle Ghost Link for this session. |
+| `/ghost_link_interval [seconds]` | Show (no argument) or override how often your position is broadcast to other Ghost Link players — overrides the Ghost Link Update Interval YAML option without regenerating. |
+
+Toggling a Link on/off client-side is only half the picture — the matching YAML option (Ammo Link, Bolt Link, Ghost Link) must also be enabled at generation time. See the game info page's "What options are available?" section for details.
 
 ---
 
@@ -86,9 +91,12 @@ If weapons or gadgets are not being applied correctly, use the following command
 Make sure you are running `SCUS-97615` (NTSC-U). PAL and other regional versions are not supported.
 
 **Weapons are not appearing after receiving items**
-Use `/scan` in the client console. If that does not help, use `/reconnect`.
+Use `/reconnect` in the client console to re-apply everything received so far. If that doesn't help, use `/force_sync`.
 
 **Vendor purchases are not registering**
 Make sure you are standing at a vendor on a planet that has vendor locations. Purchases are detected when you buy from the vendor menu — the client needs to be connected before you open the menu.
+
+**Ratchet's model is invisible after a planet load (Starting Skin set to anything other than Default)**
+Open the in-game Skins menu and close it again — the chosen skin doesn't fully apply on its own after a planet load, and skipping this step can leave the model invisible instead.
 
 **If you need further help**, join the [Archipelago Discord](https://discord.gg/archipelago) and visit the `[PSP/PS2] Ratchet & Clank Size Matters` thread in the `future-game-design` forum channel (located at the bottom).

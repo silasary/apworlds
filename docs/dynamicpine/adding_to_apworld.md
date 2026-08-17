@@ -79,6 +79,36 @@ serial in the tuple, `dynamic_pine.game_ids[0]`.
 
 ## 2. Get your PINE port from Dynamic Pine in your client
 
+### Pre-filling the slot name (optional)
+
+The hub's `/launch <game> <instance>` (and the "simple" launcher's Launch
+button) records `instance` as the slot name it expects you to connect
+with — `get_pine_port`/`launch_pcsx2` key their config off exactly that
+string, so a typo when the player manually types their slot name into your
+client breaks the port lookup. Pre-fill it instead, before your client would
+otherwise prompt for a slot name (e.g. at the top of `server_auth`):
+
+```python
+try:
+    from worlds.dynamicpine import get_pending_auth, launched_via_hub
+except ImportError:
+    get_pending_auth = launched_via_hub = None
+
+def _pending_auth(self) -> None:
+    if self.auth or not launched_via_hub or not launched_via_hub():
+        return
+    pending = get_pending_auth()
+    if pending:
+        self.auth = pending
+```
+
+Guarded the same way as everything else here — only applies when actually
+launched through the hub (`launched_via_hub()`), and only if `self.auth`
+isn't already set some other way (a `--name` CLI arg, a prior connection).
+See [`RACSizeMatterWorld`'s
+`_dynamic_pine_auth()`](../../rac_size_matters/client/context.py) for a
+complete example wired into `server_auth`.
+
 Typically in your `Connected` package handler, once the slot name is known:
 
 ```python

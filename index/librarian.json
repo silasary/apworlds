@@ -361,6 +361,21 @@
       "title": "Librarian-AP v2.0.0",
       "version_simple": "2.0.0",
       "world_version": "2.0.0"
+    },
+    "2.0.1": {
+      "created_at": "2026-08-16T23:48:53Z",
+      "description": "## Librarian-AP v2.0.1\r\n\r\nThree bug fixes from 2.0.0 reports. **All three are retroactive: if you are mid-run\r\non a 2.0.0 seed, update the mod and reconnect, and the items, checks and goal you\r\nwere missing will come through. You do not need a new seed.**\r\n\r\n## Bug Fixes\r\n\r\n### Items received at connect went missing\r\n\r\nThe first items a seed gives you arrive in the same instant you connect, before the\r\nclient has finished loading the item list from the server. Their names came back as\r\n\"Unknown\", and since items are applied by name, those ones applied to nothing and\r\nwere gone. Reloading fixed things only because reconnecting makes the\r\nserver send everything again.\r\n\r\nThe client now waits for the name before it counts an item as delivered.\r\n\r\n**If this happened to you, reconnect to your slot and the missing items will apply.**\r\n\r\n### The goal did not send on the full goal\r\n\r\nEvery goal now sends off the row count, `full` included. A run that finished its last\r\nrow in an earlier session also sends the goal now, instead of waiting for a row\r\ncompletion that already happened.\r\n\r\n### \"Complete N Books\" checks never sent\r\n\r\nIn BookSanity, the book milestone checks never fired in any seed. The client was\r\nnever reading them.\r\n\r\nThey now send, and they count every book you have correctly shelved across the whole\r\nrun rather than just the current session, so loading a save no longer starts the count\r\nover.\r\n\r\nThese checks were called `Complete N Books` and are now `Correctly shelve N books`.\r\nSeeds generated on 2.0.0 are not affected and will keep the old name in your tracker.\r\nThe only thing that needs updating is a YAML that names these locations in\r\n`exclude_locations`, `priority_locations` or plando, and only for new seeds.\r\n\r\n## Also in this release\r\n\r\nSixteen leftover diagnostic hooks are gone. Four of them were failing to register on\r\nevery launch and showing up as errors in logs.\r\n\r\n## Updating\r\n\r\n> Extract the zip and drop `Librarian/` into your Steam install (overwrite). Drop the\r\n> included `librarian.apworld` into your Archipelago `custom_worlds/` folder. Requires\r\n> game build 1.0.12 or newer. The title screen top-right should read `LibAP v2.0.1`.\r\n\r\n**Continuing a 2.0.0 run:** you only need the mod. Your existing seed is fine and the\r\nhost does not need to change anything.\r\n\r\n**Generating a new seed:** you need the new `librarian.apworld` as well.\r\n\r\n## If something breaks\r\n\r\nSend `crash_trace.log` (the header should read `mod=2.0.1`), the last ~200 lines of\r\n`UE4SS.log`, your YAML's `Librarian:` section, and one line on what you were doing.",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/2.0.1/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "50abaaf4a246e023c952014efe816fe69506298357ae968bf4e132a8ab7f514b",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/2.0.1",
+      "minimum_ap_version": "0.6.4",
+      "size": 61304,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "2.0.1",
+      "title": "2.0.1",
+      "version_simple": "2.0.1",
+      "world_version": "2.0.1"
     }
   }
 }

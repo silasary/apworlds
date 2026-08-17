@@ -1,9 +1,12 @@
 # Mega Man Zero 3
 
 ## Latest
-- <a href="https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.3.0/mmzero3.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.3.1/mmzero3.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.3.1/mmzero3.apworld">https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.3.1/mmzero3.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.3.0/mmzero3.apworld">https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.3.0/mmzero3.apworld</a>

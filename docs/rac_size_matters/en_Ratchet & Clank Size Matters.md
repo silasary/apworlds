@@ -24,24 +24,29 @@ types. Some of these are always in the pool; others are only included when their
 | Location type | Count | Notes |
 |---|---|---|
 | Titanium Bolts | 20 | Always included. |
-| Armour Pickups | 13 (11 without Giant Clank) | Two pieces (Metalis Gloves, Challax Chestplate) require the Giant Clank option. |
+| Armour Pickups | 21 total | Two pieces (Metalis Gloves, Challax Chestplate) require Giant Clank; the Hyperborean/Chameleon pieces additionally require Challenge Mode 1/2 (and NG+ Items). |
 | Boss | 1 | Defeating Otto Destruct on Quodrona. |
 | Gadget Pickups | 2 | Always included. |
-| Weapon Vendors | 11 | Always included — one per weapon's kiosk. |
+| Weapon Vendors | 12 | Always included — one per weapon's kiosk. |
 | Gadget Vendors | 5 | Always included. |
-| Weapon Mod Vendors | 13 | Always included. |
+| Weapon Mod Vendors | 23 | Always included; 10 of these are Challenge Mode 1+ only. |
+| Weapon Titan Vendor purchases | 12 | Requires Challenge Mode 1+. One per Titan-eligible weapon (every weapon except RYNO) — see [the weapon vendor FAQ entry](#how-does-the-weapon-vendors-leftright-view-work) for how this interacts with Progressive Weapons. |
 | Story Missions | 18 (fewer without Giant Clank/Clank Challenges) | Requires All Missions. Two entries need Giant Clank; one needs Clank Challenges. |
 | Cutscenes | 18 | Requires All Cutscenes. |
-| Skill Points | up to 19 | Requires Skill Points: 8 on Easy, 19 on Hard (Easy's 8 plus 11 more). Clank Challenge (3) and Skyboard Challenge (2) skill points are controlled by their own separate toggles below, on top of this — 24 in total with everything enabled. |
-| Clank Challenge rewards | 6 | Requires Clank Challenges: Item Challenges (or higher). |
-| All Clank Challenge completions | 24 | Requires Clank Challenges: All. |
+| Skill Points | up to 19 | Requires Skill Points: 8 on Easy, 19 on Hard (Easy's 8 plus 11 more). Clank Challenge (3) and Skyboard Challenge (2) skill points are controlled by their own separate toggles, on top of this. |
+| Clank Challenge rewards | 6 | Requires Clank Challenges: Item Challenges (or higher). Filtered further by Clank Challenge Groups (Demolition Derby / Gadgetbot Toss / Gadgetbot) — excluding a group drops its locations from both this tier and the one below. |
+| All Clank Challenge completions | 24 (on top of the rewards above) | Requires Clank Challenges: All. |
 | Skyboard race completions | 4 | Requires Skyboard Challenges: All. |
 | Extra Skyboard checks | 4 | Requires Skyboard Challenges: All. |
-| Weapon Level (max level) | 13 | Requires Weapon Level Checks: Max Level (or higher). |
-| Weapon Level (every level) | 26 | Requires Weapon Level Checks: All. |
+| Shrink Ray puzzle checks | 7 | Requires Shrink Ray Options: Locations. |
 | Armour Set Checks | 13 | Requires Armour Set Checks (on by default). |
+| Weapon Level 4 | 13 | Requires Weapon Level Checks: Level 4 (or Level 4 and 8 / All). |
+| Weapon Level 8 | 12 | Requires Weapon Level Checks: Level 8 (or Level 4 and 8 / All) **and** Challenge Mode 1+. |
+| Weapon Level 2-3 | 26 | Requires Weapon Level Checks: All. |
+| Weapon Level 5-7 | 36 | Requires Weapon Level Checks: All **and** Challenge Mode 1+. |
+| Nanotech (health) Level | up to 70 | Requires Nanotech Level Interval != Off. One check per level that's both a multiple of the interval (5/10/25) and no higher than Nanotech Level Max — e.g. every_5 with max 75 gives 14 checks (10, 15, ... 75). |
 
-With every optional location type enabled, the pool tops out at 215 locations.
+A bare-defaults YAML generates around 106 locations. With every optional location type enabled, the pool goes well past 300.
 
 ## What options are available?
 
@@ -54,27 +59,46 @@ of everything specific to this game:
 | Starting Gadgets | 1 | Number of random gadgets precollected at the start (1 grants the Hypershot). |
 | Random Starting Planet | Off | Off: always start on Pokitaru and Ryllus, as in vanilla. Logic: two of the seven eligible planets are chosen at random, weighted by how many locations they offer under your other settings. No Logic: the same two-planet pick, but uniformly random instead of weighted. Dreamtime, Inside Clank, and Quodrona are never candidates. |
 | Starting Bolts | 45,000 | Bolts precollected at the start. |
-| Progressive Weapons | Off | Off: weapons are individual items, leveling works as in vanilla. Manual: a single Progressive Weapon item per weapon caps how far you can level by playing. Automatic: level is set directly from Progressive Weapon items received, no need to play to level up. |
+| Progressive Weapons | Off | Off: weapons are individual items, leveling works as in vanilla. Manual: a single Progressive Weapon item per weapon caps how far you can level by playing. Automatic: level is set directly from Progressive Weapon items received, no need to play to level up. With Challenge Mode 1+, the 5th Progressive Weapon copy also lets a weapon climb past level 4 organically once it's actually reached level 4 — no Titan vendor purchase required (though buying it is still an equally valid, and equivalent, way to get there). |
 | Progressive Mods | Off | On: one Progressive Mod item per weapon grants mod slots in sequence, instead of each slot being its own item. |
 | Progressive Armour | Off | On: armour pieces unlock in a fixed order via Progressive Armour items, instead of as individual pieces. |
 | Trap Chance | 0% | Percent chance for each filler item to be replaced with a trap. |
 | Trap Weight | equal | Relative weights of each trap type when a filler item rolls as a trap. |
-| Trap Duration | per-trap default | How many seconds each trap type stays active once triggered. |
-| Weapon Experience Multiplier | Off | Multiplies weapon experience gained, speeding up leveling. Stops applying past level 4. |
-| Bolt Multiplier | Off | Multiplies bolts gained from crates/enemies. Doesn't affect one-off AP grants like Starting Bolts. |
+| Trap Duration | 20s per trap (Reset Level is instant) | How many seconds each trap type stays active once triggered. |
+| Weapon Experience Multiplier | 4x | Multiplies weapon experience gained, speeding up leveling (0/1 = no boost, up to 16x). Stops applying past level 4 (level 8 with Challenge Mode). |
+| Bolt Multiplier | 4x | Multiplies bolts gained from crates/enemies (0/1 = no boost, up to 16x). Doesn't affect one-off AP grants like Starting Bolts. |
+| Nanotech Experience Multiplier | 4x | Multiplies Nanotech (health) experience gained, speeding up Nanotech leveling (0/1 = no boost, up to 16x). |
 | All Missions | On | Adds story mission completions as location checks. |
 | All Cutscenes | Off | Adds cutscene/flag-event triggers as location checks. |
 | Giant Clank | Off | On: the Giant Clank Metalis and Giant Clank Challax sequences become playable and their completion/armour/skill point checks are added. Off: entering either sequence immediately forces a load back out, as in vanilla before this option existed. |
 | Clank Challenges | Item Challenges | Off: none. Item Challenges: only the armour/gadget reward per arena. All: every individual challenge completion is its own check. |
-| Skyboard Challenges | Off | All: every individual Skyboard race completion is a separate check. |
-| Skill Points | Off | Off: none. Easy: a curated set of easier skill points. Hard: also includes a curated set of harder skill points. Clank Challenge and Skyboard Challenge skill points are controlled separately (see below), regardless of this setting. |
+| Clank Challenge Groups | every group on | Selects which Clank Challenge groups (Demolition Derby / Gadgetbot Toss / Gadgetbot) get location checks at all, once Clank Challenges is on. Setting a group to 0 excludes all of its locations (both tiers) from generation — the challenge itself is still fully playable in-game, it just has no AP check. |
 | Enable Clank Challenge Skill Points | Off | Adds skill points earned from Clank Challenge arenas as checks, regardless of the Clank Challenges option. |
+| Skyboard Challenges | Off | All: every individual Skyboard race completion is a separate check. |
 | Enable Skyboard Challenge Skill Points | Off | Adds skill points earned from Skyboard Challenges as checks, regardless of the Skyboard Challenges option. |
+| Shrink Ray Options | Locations | Off: vanilla — puzzles must be solved normally, no checks. Locations: Shrink Ray puzzle completions become location checks. Skip: every tracked puzzle gate is force-solved automatically, bypassing whatever it would otherwise block (no checks). |
+| Skill Points | Off | Off: none. Easy: a curated set of easier skill points. Hard: also includes a curated set of harder skill points. Clank Challenge and Skyboard Challenge skill points are controlled separately (see above), regardless of this setting. |
 | Armour Set Checks | On | Treats equipping a complete armour set as a check. Adds 13 locations. |
-| Weapon Level Checks | Off | Off: none. Max Level: one check per weapon for reaching level 4. All: one check per weapon per level (1–4). |
+| Weapon Level Checks | Off | Off: none. Level 4: one check per weapon for reaching level 4. Level 8: one check per weapon for reaching level 8 (Challenge Mode 1+ only). Level 4 and 8: both. All: one check per weapon per level, 2 through 8 (5-8 requires Challenge Mode 1+). |
+| Nanotech Level Interval | Off | Off: no Nanotech (health) level checks. every_5 / every_10 / every_25: one check for every level that's a multiple of the interval, up to Nanotech Level Max. Levels above 20 need access to a good EXP planet. |
+| Nanotech Level Max | 75 | Highest Nanotech Level Nanotech Level Interval will create a check for — e.g. every_5 with this set to 25 checks only levels 10, 15, 20, 25. No effect while Nanotech Level Interval is Off. |
 | NG+ Items | On | Off: removes RYNO and the Chameleon/Hyperborean armour sets from generation (along with their Weapon Level and Armour Set checks, and Stalker/Ice II, which need a Chameleon or Hyperborean piece), since these are New Game Plus exclusives that would be unobtainable on a fresh playthrough. |
+| Challenge Mode | 0 | Enables the game's Challenge Mode (New Game Plus) tier and controls how far generation reaches into it. 0: vanilla, no Challenge Mode content. 1: adds the RYNO vendor purchase, 10 Challenge-Mode-only weapon mod purchases, and the 4 Hyperborean armour pieces. 2: everything from tier 1, plus the 4 Chameleon armour pieces. Everything this unlocks is still gated by NG+ Items — with that off, this option alone has no effect. |
 | Death Amnesty | 0 | Number of deaths allowed before items are removed from your inventory on death. Higher is more forgiving. |
-| Starting Skin | Default | Cosmetic skin for Ratchet, applied automatically on each planet load. All skins are unlocked in-game regardless of this choice. |
+| Starting Skin | Default | Cosmetic skin for Ratchet, applied automatically on each planet load. All skins are unlocked in-game regardless of this choice. **If you've set this to anything other than Default, open the in-game Skins menu and close it again after each planet load** — skipping this step can leave Ratchet's model invisible instead of showing the chosen skin. |
+
+### Game Links
+
+Cross-player options, each with a matching client-side toggle you also need to turn on (`/enable_ammolink`, `/enable_boltlink`, `/enable_ghostlink` — see the [setup guide](setup_en.md#client-commands)) before they actually do anything — enabling the YAML option alone auto-enables the toggle on connect, but you can flip any of them on/off per-session from the client too, same as Death Link.
+
+**These only ever link you with other Ratchet & Clank: Size Matters players** — never with players of other games, even ones on your same team. Ghost Link picks its candidate peers by explicitly matching game, and Ammo/Bolt Link's underlying sync data is keyed under this game's own namespace, so another game's client never sees or touches it.
+
+| Option | Default | What it does |
+|---|---|---|
+| Ammo Link | Off | Mirrors weapon ammo counts with every other connected, linked player: whenever your ammo for a weapon changes, everyone else linked for that weapon is updated to match, and vice versa. Players don't need matching weapon inventories. |
+| Bolt Link | Off | Mirrors your bolt count with every other connected, linked player — spend or collect bolts on any linked player and everyone else's balance matches. |
+| Ghost Link | Off | Renders another linked, connected player as a static ghost clone whenever you're both on the same planet. Only one ghost can ever be shown at once — if multiple linked players share your planet, the lowest slot number wins. Has an additional host.yaml-level kill switch (applied at generation time, not by the running server — see [dynamicpine's docs](../../dynamicpine/docs/adding_to_apworld.md) for the distinction if you host on a different machine than you generate on). |
+| Ghost Link Update Interval | 5s | How often (in seconds) your position is broadcast to other Ghost Link players. 0 broadcasts as fast as possible (every poll tick, no throttling). Overridable live per-session with `/ghost_link_interval`, without regenerating. |
 
 Plus the standard Archipelago options (Death Link, Progression Balancing, Accessibility, Start Inventory From Pool,
 etc.) shared across every game.
@@ -93,6 +117,15 @@ You will be able to visit the planets with whatever infobot you receive, receivi
 for travel within Ratchet's Ship. Upon receiving a weapon it unlocks in ratchet's inventory, which will let you equip it
 and use to fire on enemy troops. Progressive upgrades will upgrade your weapons increasing their
 firepower.
+
+## How does the weapon vendor's left/right view work?
+
+Any weapon's vendor menu has two views, swapped with D-Pad Left/Right:
+- **Left (default) view** — the normal purchasable list: whatever's still available to buy at this vendor. If a weapon has already been fully purchased here, the vendor opens straight into the right view instead, since there's nothing left to show on the left.
+- **Right view** — your full owned inventory instead, so you can buy ammo for a weapon you already own that isn't (or is no longer) listed on this vendor's purchasable side.
+
+With Challenge Mode 1+, a Titan-eligible weapon's kiosk also lists its Titan variant once the base weapon has reached level 4 — buying it floors the weapon at level 5 and opens leveling up to 8. With Progressive Weapons (Manual or Automatic), the 5th Progressive Weapon copy achieves the exact same outcome on its own, without ever needing to visit the vendor — the check for the Titan purchase location fires the moment the level 4→5 transition happens, vendor visit or not.
+
 
 ## Setup guide
 

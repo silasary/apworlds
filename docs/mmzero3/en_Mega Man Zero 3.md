@@ -3,20 +3,25 @@
 Welcome to my project. Things are still under development, but here you will find my development of a custom Archipelago World for Mega Man Zero 3 on the GBA. You should probably read everything here so you know what to expect before playing!
 
 ## General Information
-- As of right now, the randomized items include: All secret disks, armor chips, EX Skills, subtanks, the four weapons, and E-Crystals as filler.
+- As of right now, the randomized items include: All secret disks, armor chips, EX Skills, subtanks, the four weapons, stage access items, and story progress. E-Crystals are filler.
 
-- To beat the game, the player must defeat the final boss while collecting a configurable number of secret disks (default: 80). You can set this number using the required_secret_disks option in your YAML file.
+- Every stage is locked behind its own access item. You start in the Resistance Base with no stages accessible. The first access item is guaranteed to be early local, so check around the base and talk to NPCs.
 
-- EX Skills are awarded based on your score on the level you just completed, rather than on your average score going into that level. (Yes, that's how they worked in the vanilla game).
+- There's a modified mission select screen, which is visually very WIP. It works, and everything it tells you is correct, but it does not look finished yet.
+  - Boss portraits are in groups of four like before, but now you can tab between the pages with left and right on the d-pad (the shoulder buttons work too). 
+  - Hovering a level tells you its name, how many of its disks you have found, whether it's LOCKED / OPEN / CLEARED, and your best rank in it.
+  - Picking a level you have already beaten asks you how you want to run it. EXPLORE is the vanilla revisit for picking up disks you missed. RETRY MISSION plays the level as a real mission again, so the boss is back and you get another shot at the A+ rank check.
 
-- You can leave levels regardless if you have completed them or not. Except for the opening level, the Missile Factory, and Weil's Lab (These levels are tied to in game events).
+- To beat the game, clear the Abandoned Research Laboratory. It won't open until you have cleared every other stage AND you are holding a configurable number of secret disks (default: 120).
 
-- Talking to the operator in the command room and choosing to transfer to a level you have already beaten now asks you how you want to run it. EXPLORE is the vanilla revisit for picking up disks you missed. RETRY MISSION plays the level as a real mission again, so the boss is back and you get another shot at the A+ rank check.
+- EX Skills are awarded based on your score on the level you just completed, rather than on your average score going into that level. (Yes, that's how they worked in the vanilla game). Your global rank score is calculated based on your average of all of your highest scores on completed levels.
 
 
 ## Quality of Life Stuff
 
 - All skippable cutscenes are skippable by default.
+
+- You can leave any level at any time.
 
 - Pressing SELECT during gameplay swaps your sub weapon to the next one you own. This will be turned into a weapon wheel later.
 
@@ -24,11 +29,14 @@ Welcome to my project. Things are still under development, but here you will fin
 
 - Collecting certain lore related secret disks will simultaneously unlock a random e-Reader graphical change. A full list can be seen [here](https://tcrf.net/Mega_Man_Zero_3/e-Reader_Functions). 
 
+- Your player rank is now based on the averages of your highest clears.
+
+
 
 ## Options
 
 - `required_secret_disks`:  
-  Set the number of disks needed for completion. Default is 80, max is 180.
+  How many disks you need to be holding before the final stage will open (In addition to clearing every other level). Default is 120, max is 180.
 
 - `randomize_weapons`:  
   Puts the Buster, Z-Saber, Recoil Rod and Shield Boomerang into the item pool. With this off you get all four from the start and starting_weapons does nothing.
@@ -44,21 +52,25 @@ Welcome to my project. Things are still under development, but here you will fin
 
 ## Known Bugs
 
-- This world has just underwent a massive overhaul from the ground up, I'm sure there are plenty of undocumented bugs, so please try to report as much as possible!
+- The level select screen is visually early access. It works, and everything it tells you is correct, but it does not look finished yet. Specifically:
 
-- Retrying a level several times will mess up your overall rank, with the HUD desyncing with what it actually is in game. It looks like the game averages every clear you have ever done. The bosses use that rank to decide whether to use new attacks, but not much else cares about it. Later I will be replacing how that number is worked out when the level select screen goes in, so I've left it alone for now.
+  - The page with Area X-2 on it draws three portraits instead of four. The fourth one is there and selectable, and the name and info at the bottom are right, but the portrait doesn't render correctly.
+
+  - The last page is invisible. Those four levels (Derelict Spacecraft, Missile Factory, Sub Arcadia and Weil's Lab) have no boss portrait art yet. But the text at the bottom of the screen is correct and the levels are selectable as normal.
+
+  - Talking to the operator in the command room takes you straight to the stage select. Press up next to Ciel and you get the choice of her or the operator, so you can still talk to her.
+
+- This world has recently underwent a massive overhaul from the ground up, I'm sure there are plenty of undocumented bugs, so please try to report as much as possible!
 
 - There's probably some more bugs especially with world generation; I haven't done too much testing, so provide any feedback if something goes wrong!
 
 ## Planned Features
-- Routing changes. 
-  - Right now most of the game is accessible from the very start. Very few locations checks are locked behind items, which makes the game too open. 
-  - Either limit stages based off of an entry item (like MM2) or by total collected disk count (like SM64).
-- An improved level select screen. 
-  - All levels viewable from the start by tabbing from boss group to boss group.
+- Finishing the level select screen.
+  - Fix the visual issues on the page that has Copy-X on it.
   - Boss portraits greyed out until you unlock them.
-  - Once you have beaten a level it tells you how many disks you have left to find, and your best rank.
-  - Selecting a completed level asks if you want to revisit or reattempt (similar to how it works now).
+  - Arrows on either side so you can tell there are more pages.
+  - Include portrait art for the four levels that don't have any. They all exist in game, just have to render them.
+  - Maybe randomize the order that the bosses appear on, just cause.
 - A weapon wheel on SELECT for swapping chips and weapons without opening the menu. Right now it just cycles sub weapon.
 - Progressive weapon upgrades. 
   - The first one gives you the weapon
@@ -67,6 +79,8 @@ Welcome to my project. Things are still under development, but here you will fin
   - This will hopefully fix an issue where weapons can be hard to find in the current game.
 - Other collectables as location checks. Like static health pickups, extra lives, etc.
 - Level, enemy, or entrance randomization.
+- Option to change the rank required to earn an Ex Skill check (higher or lower).
+- Something to do with the minigames.
 
 ---
 If you have any questions, feel free to contact me on Discord: Stingrays110, though I'd prefer if you kept it to the Zero channel on the Archipelago Discord
