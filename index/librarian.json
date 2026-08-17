@@ -373,9 +373,24 @@
       "size": 61304,
       "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
       "tag": "2.0.1",
-      "title": "2.0.1",
+      "title": "Librarian-AP v2.0.1",
       "version_simple": "2.0.1",
       "world_version": "2.0.1"
+    },
+    "2.0.2": {
+      "created_at": "2026-08-17T17:40:26Z",
+      "description": "## Librarian-AP v2.0.2\r\n\r\nA goal option, a new default, and a fix to what lands on your checks.\r\n\r\n**Existing 2.0.1 runs are unaffected: you do not need a new seed to update the mod.**\r\nThe new options only apply to seeds generated from here on.\r\n\r\n## `goal: custom` now works in every unlock mode\r\n\r\nCustom used to be rejected in `individual_series_unlocks` and `booksanity`. It works\r\nin all three now.\r\n\r\n```yaml\r\ngoal: custom\r\ncustom_goal_row_count: 200      # progressive_unlocks / individual_series_unlocks\r\ncustom_goal_book_count: 1500    # booksanity counts books instead\r\nextra_series_percent: 10\r\n```\r\n\r\nBookSanity counts books rather than rows, so it has its own\r\n`custom_goal_book_count`. The default of 1500 is about half the library, which puts\r\nit close to a floor goal in size. Worth knowing: 400 rows hold 3072 books, so a\r\nrow-shaped number here is a far shorter run than it looks.\r\n\r\n**A custom book goal is also the quickest way to play BookSanity.** The full goal is\r\nslow to generate at ~3072 items; a custom goal takes about a second.\r\n\r\n### The seed is trimmed to fit your goal\r\n\r\nIf you set your goal row count to 200, only 200 series are added to the pool, unlike before\r\nwhere all 400 were added.  This makes it so you no longer have 200 extra checks sent when\r\nyou complete your goal, and other players dont have tons of checks trapped behind your\r\ngoal.\r\n\r\nSo a custom goal now trims the library down to roughly what your goal needs, plus\r\n`extra_series_percent` slack (default 10%). Sections past that leave the pool\r\nentirely. A 200-row seed keeps about 222 rows instead of 400, and the surplus drops\r\nfrom 200 checks to around 22.\r\n\r\n`extra_series_percent` is one dial with two effects. Lower trims harder and is kinder\r\nto a multiworld; higher gives you more choice over *which* rows you finish rather than\r\na forced march through nearly all of them. Sections are always kept whole, so the real\r\ntotal lands on the next section boundary rather than exactly on your percentage.\r\n\r\n## Books now stay hidden until their shelf is open\r\n\r\n`only_unward_shelfable_books` defaults to **on**. A book you can pick up is now always\r\none you can shelve where it belongs.\r\n\r\nWith it off, books arrive grabbable whether or not their bookcase is open, and to\r\ncollect everything you may need to shelf a series, then replace it with a different\r\nseries on the same shelf, working through what you hold using the shelves you have.\r\nThat is a real way to play, and it is still there if you want it. It just is not what\r\nmost people expect on a first run.\r\n\r\n## Bug fix: traps no longer crowd out your magic\r\n\r\nWhen a seed is smaller than the item pool, the surplus comes off the optional items.\r\nThe order was wrong: magic went first, so a smaller goal could strip\r\n`Progressive Insight` and friends while keeping every `Fatigue` trap. BookSanity was\r\nworse: what survived came down to where an item happened to sit in a list.\r\n\r\nTraps are dropped first now, then Mastery, then bag capacity, with base magic kept\r\nlongest. A 200-row seed goes from 60 useful items and 10 traps to 70 useful and no traps.\r\n\r\n## Updating\r\n\r\n> Extract the zip and drop `Librarian/` into your Steam install (overwrite). Drop the\r\n> included `librarian.apworld` into your Archipelago `custom_worlds/` folder. Requires\r\n> game build 1.0.12 or newer. The title screen top-right should read `LibAP v2.0.2`.\r\n\r\n**Continuing a 2.0.1 run:** you only need the mod, and the host does not need to\r\nchange anything.\r\n\r\n**Generating a new seed:** you need the new `librarian.apworld` as well.\r\n\r\n## If something breaks\r\n\r\nSend `crash_trace.log` (the header should read `mod=2.0.2`), the last ~200 lines of\r\n`UE4SS.log`, your YAML's `Librarian:` section, and one line on what you were doing.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/2.0.2/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7699e85d86e80afd958a31acbb940e0334cd2e147e9226618b46d285b326e1c7",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/2.0.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 63760,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "2.0.2",
+      "title": "Librarian-AP v2.0.2",
+      "version_simple": "2.0.2",
+      "world_version": "2.0.2"
     }
   }
 }
