@@ -2,7 +2,7 @@
 
 ## Where is the options page?
 
-There isn't one :O
+Use Generate Template Options or Options Creater from the AP launcher
 
 ## What does randomization do to this game?
 
@@ -25,4 +25,4 @@ No visuals are shown when finding items.
 
 ## When the player receives an item, what happens?
 
-If the player is in a dungeon, an in-game message will say what was received.
+If the player is in a dungeon, an in-game message will say what was received. All items are shown in the client.

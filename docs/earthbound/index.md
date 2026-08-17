@@ -9,8 +9,6 @@ across the world in search of 8 Melodies to defeat Giygas, the cosmic evil.
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_EarthBound">English</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 

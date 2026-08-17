@@ -2,118 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-17T00:15:57.261427+00:00</updated>
+  <updated>2026-08-17T06:16:29.617790+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/experiment-2</id>
-    <title>Borderlands 2 v2</title>
-    <updated>2026-08-14T18:10:09+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Your story quests are set to completed, and AP will send you through the game in a non-linear fashion.&#13;
-Turn on by adding `fully_unlocked_mode: on`  to your yaml</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/experiment-2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.4.5</id>
-    <title>Links Awakening DX Beta v13.4.5</title>
-    <updated>2026-08-14T18:13:26+00:00</updated>
-    <author>
-      <name>zig</name>
-    </author>
-    <author>
-      <name>threeandthree</name>
-    </author>
-    <content>Adds option to block free powder pickups.</content>
-    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.4.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.3</id>
-    <title>Rogue Legacy 2 v0.1.0r2</title>
-    <updated>2026-08-14T18:29:02+00:00</updated>
-    <author>
-      <name>zaphim12</name>
-    </author>
-    <content>Note: Please replace both the .apworld and the game mod files when updating to this version&#13;
-&#13;
-### Improvements&#13;
-&#13;
-- Add a colored tree which displays the upgrade paths in the manor. Manor locations are now named according to this tree (i.e. Manor - Red Path Upgrade 3) so that it is much clearer what a hint (or spoiler log) is referring to in the manor.&#13;
-  - This can be toggled on/off using the Spin-Kick button  &#13;
-- Added flavor text for foreign item descriptions which indicates whether it is progression, useful, or filler (or trap). &#13;
-- Manor items are no longer all marked as progression, only stat upgrades (assuming the YAML is configured to require some number of stat upgrades before biomes/bosses are considered "in-logic") are now progression. Things like class unlocks are not. This should provide a marginal improvement in success rate when generating worlds with stringent logic.&#13;
-&#13;
-### New Config Options&#13;
-&#13;
-1. reveal_manor_upgrades - (true/false, default: false), When enabled, all upgrades in the manor will be shown so purchases can be planned in advance. The normal purchase gating still applies; before you can purchase an upgrade, you must have purchased the previous upgrade in the manor.&#13;
-2. trap_appearance - (hidden/visible, default: hidden), When 'hidden' traps are disguised as another item from the multi-world so that they can't be trivially avoided by looking at an item name before purchasing. After purchase, the trap's true name is revealed. &#13;
-&#13;
-### Bugfixes&#13;
-&#13;
-- Fixed a bug where in a specific scenario (all estuaries defeated and sun lantern received already) Johan would not spawn in Pishon Dry Lake to give the sun-lantern-conversation location check.</content>
-    <link href="https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Teotia444/twwhd-apworld/releases/tag/v1.0.2-beta</id>
-    <title>The Wind Waker HD v1.0.2b0</title>
-    <updated>2026-08-14T19:20:30+00:00</updated>
-    <author>
-      <name>Teotia444</name>
-    </author>
-    <content># Changes&#13;
-Fixed the following locations :&#13;
-- `Windfall Island - Lenzo Bring Forest Firefly` will temporarily be disabled as it's a repeatable check and is not tied to a flag&#13;
-- `Windfall Island - Lenzo Become Assistant` used to not register, that's fixed&#13;
-&#13;
-Tracker: &#13;
-- Added a password field to the tracker so you can connect to password locked servers&#13;
-- Removed the mail chaining logic which would display available mail on certain conditions even if it was impossible&#13;
-- Restored the location list background which was removed for unknown reasons (upstream??)&#13;
-&#13;
-Others :&#13;
-- fixed generation with blue chu being held back by a typo&#13;
-- fixed death link sending twice sometimes when it was triggered by another player&#13;
-&#13;
-(this update comes with a generator update)</content>
-    <link href="https://github.com/Teotia444/twwhd-apworld/releases/tag/v1.0.2-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.3</id>
-    <title>Ender Magnolia v0.1.3.post2</title>
-    <updated>2026-08-14T19:59:55+00:00</updated>
-    <author>
-      <name>Trex</name>
-    </author>
-    <content>**Archipelago** world for **Ender Magnolia**&#13;
-&#13;
-## Update&#13;
-- Added an option for advanced logic&#13;
-- Added an option for scaling chapter with progress&#13;
-- Fixed swamp lake respite logic&#13;
-&#13;
-## Requirements&#13;
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
-- [Ender Magnolia Randomizer](https://github.com/Trexounay/EnderMagnolia.Randomizer/releases) Get the corresponding version&#13;
-&#13;
-## Current Features&#13;
-- 340 checks&#13;
-- 2 Goals: **Ending A** **Ending B**&#13;
-- Starting Skill option (except non breaking walls weapon)&#13;
-- Shuffle relic costs&#13;
-- Progressive Aptitudes&#13;
-- Start with heal/fast travel&#13;
-- min/max chapters&#13;
-- Central Elevator Fix option&#13;
-- Starting respite&#13;
-&#13;
-## Notes&#13;
-This is an early release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
-    <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.3"/>
-  </entry>
   <entry>
     <id>https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V0.0.3</id>
     <title>Fantastic Fist v0.0.3</title>
@@ -793,11 +686,9 @@ Is your Archipelago Launcher v0.6.7 or later? If not it **won't work**.&#13;
     <author>
       <name>Chakraa</name>
     </author>
-    <content>## 2026.08.15.2
-
-### Fixed
-- Non-Linear Progression Mode: the region/location logic itself was still enforcing Linear Mode's ancestor-adjacency rule, so generation and trackers required an adjacent Chapter to be reached first before a later one counted as logically accessible -- even though the in-game client already unlocked Chapters correctly out of order. A Chapter's location is now logically reachable the moment its own item is received, matching the in-game behavior.
-
+    <content>### Fixed&#13;
+- Non-Linear Progression Mode: the region/location logic itself was still enforcing Linear Mode's ancestor-adjacency rule, so generation and trackers required an adjacent Chapter to be reached first before a later one counted as logically accessible -- even though the in-game client already unlocked Chapters correctly out of order. A Chapter's location is now logically reachable the moment its own item is received, matching the in-game behavior.&#13;
+&#13;
 **Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.15...2026.08.15.2</content>
     <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.15.2"/>
   </entry>
@@ -1521,5 +1412,193 @@ host does not need to change anything.&#13;
 Send `crash_trace.log` (the header should read `mod=2.0.1`), the last ~200 lines of&#13;
 `UE4SS.log`, your YAML's `Librarian:` section, and one line on what you were doing.</content>
     <link href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/furret78/Archipelago/releases/tag/unstable-0.4.3</id>
+    <title>Black Market of Bulletphilia ~ 100th Black Market v0.4.3</title>
+    <updated>2026-08-16T23:57:47+00:00</updated>
+    <author>
+      <name>Yuureiki</name>
+    </author>
+    <content>Archipelago Randomizer implementation for **_Black Market of Bulletphilia ~ 100th Black Market_**, also known as _**Touhou 18.5**_.&#13;
+&#13;
+- **.apworld version:** Unstable 0.4.3&#13;
+- **Minimum Archipelago Launcher version:** 0.6.7&#13;
+&#13;
+Recommended to play on Windows, as **the game does not support Linux natively**. If playing on Linux, it is recommended to run both Archipelago Launcher and the game in Wine/Proton.&#13;
+&#13;
+# Changelog&#13;
+- Option **Itemized Equipment Upgrades** can now be customized to go up to 34 card slots and 1000% equip cost.&#13;
+- Added Option: **Recommended Equipment Upgrades in Logic**. Recommended Loadout in Logic can now also take into account Itemized Equipment Upgrades.&#13;
+- Added Option: **Permanent Upgrades** (lives, Bullet Money, Shot Power, Shot Attack%, and Magic Circle Attack%).&#13;
+- Added Option: **Trap Blacklist**.&#13;
+- Renamed several items to be less confusing as to whether they are `One-time` bonuses, `Temporary` traps, or `Permanent` upgrades.&#13;
+- Revamped certain old Trap items to be `Temporary`: Freeze Trap, Extreme Speed Trap.&#13;
+- Added new `Temporary` Traps: Magic Circle Disable Trap, Powerless Shot Trap.&#13;
+- Added new `One-time` Traps: Funds Reset Trap, Bullet Money Reset Trap, 20% Shot Attack Trap, 0% Magic Circle Attack Trap, 1000% Magic Circle Duration Trap, Shot Power Reset Trap.&#13;
+&#13;
+Incompatible with worlds generated before 0.4.0. Compatible with worlds generated from 0.4.0 onwards.&#13;
+&#13;
+**Full Changelog**: https://github.com/furret78/Archipelago/compare/unstable-0.4.2...unstable-0.4.3&#13;
+&#13;
+# Game Details and Setup&#13;
+- See **game details** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/en_100th%20Black%20Market.md). When exporting .yaml files for this game, it is recommended to use the Options Creator in the Archipelago Launcher for a smooth experience.&#13;
+- See the **setup guide** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/setup_en.md).</content>
+    <link href="https://github.com/furret78/Archipelago/releases/tag/unstable-0.4.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Phenra/RoadTripAdventure-AP/releases/tag/v0.2.0</id>
+    <title>Road Trip Adventure v0.2.0</title>
+    <updated>2026-08-17T00:13:57+00:00</updated>
+    <author>
+      <name>Phenra</name>
+    </author>
+    <content>**Randomizer info page:**&#13;
+https://github.com/Phenra/RoadTripAdventure-AP/blob/main/docs/en_Road%20Trip%20Adventure.md&#13;
+**Setup guide:**&#13;
+https://github.com/Phenra/RoadTripAdventure-AP/blob/main/docs/setup_en.md&#13;
+&#13;
+&#13;
+### New YAML options:&#13;
+- **Parts Cost Modifier**: Set a percentage modifier for the cost of parts.&#13;
+- **Parts Cost Maximum**: Set the maximum cost for a part (applied after the percentage modifier).&#13;
+- **Auto Unlock Warps**: Automatically unlock the warp to a town's Q's Factory when you gain access to it.&#13;
+- Item and location groups added (@jack5github)&#13;
+### Bug fixes:&#13;
+- Shop checks can no longer be repurchased.&#13;
+- Missing access rule added for the Black Opal.&#13;
+- The Blue Sapphire and Fountain Pen now logically require Big Tires to access.&#13;
+  - Previous logic could have expected the player to know they can reverse up the pyramids, which is a glitch.&#13;
+- Client now patches vanilla game bug that causes the Space Meter to not be given to the player.&#13;
+  - In the vanilla game, clearing Tunnel Race on the first try causes the game to only give the player Body Q085, and not the Space Meter. This meant the location check for the Space Meter was permanently missable!&#13;
+### Gameplay changes:&#13;
+- In Decorations mode, the in-game descriptions for area unlock items now show what town they unlock.&#13;
+### New client commands:&#13;
+- 'world_version': Displays both the version of RTA AP in use, as well as the version used during generation (if connected to a server).&#13;
+- 'progressive_parts_progress': Displays the number of each progressive part received so far. Useful for determining which set to spend a hint on.&#13;
+### Behind-the-Scenes changes:&#13;
+- Wrote a basic MIPS encoder (not feature complete, generally only instructions I've used thus far are implemented). All game patches were rewritten to utilize it. This should make writing new assembly patches and updating old ones *significantly* easier!&#13;
+  - The rewritten patches were pretty thoroughly tested, so they shouldn't cause any issues - but please let me know if you run into any problems.</content>
+    <link href="https://github.com/Phenra/RoadTripAdventure-AP/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lizardman175/DC1AP/releases/tag/v0.6.0</id>
+    <title>Dark Cloud 1 v0.6.0</title>
+    <updated>2026-08-17T01:09:04+00:00</updated>
+    <author>
+      <name>Lizardman175</name>
+    </author>
+    <content># Dark Cloud 1 AP Rando v0.6.0&#13;
+&#13;
+## General changes&#13;
+ - Shopsanity&#13;
+   - Adds 2 items to each shop within the boss goal setting.  First item appears as Medusa Powder (300g), the second as Warp Powder (500g).  These are dummied out vanilla items.&#13;
+   - Gaffer's store replaces the attack/endurance+1 until the items are purchased while other stores just add new items&#13;
+   - Jack's Store logically requires Ruby so you can get the better building completion rewards before being required to get his items&#13;
+   - Rando's shop ironically is not randomized as he is missable&#13;
+ - Fishsanity&#13;
+   - Adds first catch of each fish as locations (Ocean fish and Garayans are extra options)&#13;
+     - Fish logically require access to a shop with bait: Ruty (ocean fish), Brooke (desert fish &amp; baron garayan), Wise Owl or Lana for the rest (Lana for Mardan)&#13;
+	   - Wise Owl now sells Carrots for catching Umadakara&#13;
+     - Baron Garayan requires boss goal 4+ for Brooke's Shop, Mardan needs boss goal 3+ for Lana. Otherwise, they won't be locations.&#13;
+     - UT will show glitched logic if the fish are accessible without a bait shop&#13;
+   - Some bait may be added to the item pool with this setting (and are flagged Useful instead of Filler)&#13;
+   - https://darkcloud.fandom.com/wiki/Fish#Dark_Cloud for help on fish/bait/locations (seems incorrect)&#13;
+ - Floorsanity&#13;
+   - Full clearing each normal dungeon floor becomes a check.  Requires all 15 enemies killed at the same time, rather than a total kill count.&#13;
+   - Character-limited floors are an extra option&#13;
+ - Removed Dark Genie item/location; the boss kill is now tracked in data storage&#13;
+ - Reworked location ID values (internal, but may affect poptracker. Check locations.py comment for details.)&#13;
+ - Renamed "Yellow Drops entrance path chest" to "Yellow Drops path to Moon Sea chest 2"&#13;
+&#13;
+## Server Changes&#13;
+ - Reworked item generation&#13;
+   - Items are now randomly created rather than static based on vanilla chests&#13;
+   - Slayer attachments are now useful instead of filler&#13;
+   - Other items like Gold Bullion and Dran's Feather can now be in the item pool&#13;
+   - Fishing rod added to the item pool&#13;
+ - Dungeon checks now show glitched logic availability in UT if not enough HP/def boost items have been received&#13;
+ - Option to add a set of gems to the item pool (provided enough locations exist)&#13;
+&#13;
+## Client Changes&#13;
+ - Added a new "Connected and Ready!" message once the client has finished initialization tasks&#13;
+ - DeathLink now buffers until the player is in a killable state&#13;
+ - Alnet's House completion event is disabled to avoid double fishing rod&#13;
+ - If connecting on a vanilla save, client now gives an error instead of releasing items&#13;
+ - Rotated Norune Pond and Oasis to be more accessible for fishing&#13;
+ - Added a few extra copies of parts like road and tree just for fun. Instead of 5, you'll get 6-8&#13;
+ - Fixed a bug with autobuild that could give too many trees&#13;
+ - Fixed a bug where the "x attachments remaining" message wasn't logging&#13;
+ - Removed autobuilding of robot parts while in the factory; there is an obscure game crash that can happen that I haven't tracked down&#13;
+ - Made Chief Bonka last item received for Chief's House so it is easier to access the building's chests&#13;
+ - Added slot number to datastorage names&#13;
+ &#13;
+## Known Issues&#13;
+ - Shop sanity items don't always remove from shop inventory correctly after sending location&#13;
+ - New ready message shows up during certain cutscenes</content>
+    <link href="https://github.com/Lizardman175/DC1AP/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.16</id>
+    <title>Northgard v2026.8.16</title>
+    <updated>2026-08-17T01:25:37+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Fixed&#13;
+- Winning the second same-Chapter battle (top/bottom) wasn't sending the proper checks.&#13;
+- Non-Linear Mode: the Conquest map could get permanently stuck (no nodes clickable, Escape not working) after winning a battle out of the usual order.&#13;
+&#13;
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.15.2...2026.08.16&#13;
+</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.16"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.3%2Bhotfix1</id>
+    <title>Deltarune v2.1.3+hotfix1</title>
+    <updated>2026-08-17T02:22:28+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.1.3+hotfix1/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.1.3+hotfix1/worlds/deltarune/docs/en_DELTARUNE.md) - [Credits](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/DELTARUNEAP%20CREDITS.md)&#13;
+&#13;
+[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
+Or, alternatively,&#13;
+[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
+&#13;
+# Changelog&#13;
+- Fix Tasque Manager Challenge and All Star challenge behing in logic before their requirement&#13;
+- Fix Ambuy-lance and Maus not checking recruit requirement if you was playing both routes</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.3%2Bhotfix1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Simsipelago/Archipelago/releases/tag/2.0.1</id>
+    <title>The Sims 4 v2.0.1</title>
+    <updated>2026-08-17T04:28:26+00:00</updated>
+    <author>
+      <name>Simsipelago</name>
+    </author>
+    <content>This release fixes the Universal Tracker integration. Thank you to @silasary for fixing it!&#13;
+&#13;
+**Full Changelog**: https://github.com/Simsipelago/Archipelago/compare/2.0.0...2.0.1</content>
+    <link href="https://github.com/Simsipelago/Archipelago/releases/tag/2.0.1"/>
   </entry>
 </feed>

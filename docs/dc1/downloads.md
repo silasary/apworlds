@@ -1,9 +1,12 @@
 # Dark Cloud 1
 
 ## Latest
-- <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.8/dc1.apworld">Latest Version (0.5.0r9)</a>
+- <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.6.0/dc1.apworld">Latest Version (0.6.0)</a>
 
 ## All Versions
+
+#### v0.6.0
+- <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.6.0/dc1.apworld">https://github.com/Lizardman175/DC1AP/releases/download/v0.6.0/dc1.apworld</a>
 
 #### v0.5.0r9
 - <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.8/dc1.apworld">https://github.com/Lizardman175/DC1AP/releases/download/v0.5.8/dc1.apworld</a>
@@ -24,13 +27,13 @@
 - <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.3/dc1.apworld">https://github.com/Lizardman175/DC1AP/releases/download/v0.5.3/dc1.apworld</a>
 
 #### v0.5.0r3
+- <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.10/dc1.apworld">https://github.com/Lizardman175/DC1AP/releases/download/v0.5.10/dc1.apworld</a>
+
+#### v0.5.0r3
 - <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.2/dc1.apworld">https://github.com/Lizardman175/DC1AP/releases/download/v0.5.2/dc1.apworld</a>
 
 #### v0.5.0r2
 - <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.1/dc1.apworld">https://github.com/Lizardman175/DC1AP/releases/download/v0.5.1/dc1.apworld</a>
-
-#### v0.5.0r2
-- <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.10/dc1.apworld">https://github.com/Lizardman175/DC1AP/releases/download/v0.5.10/dc1.apworld</a>
 
 #### v0.5.0r2
 - <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.9/dc1.apworld">https://github.com/Lizardman175/DC1AP/releases/download/v0.5.9/dc1.apworld</a>

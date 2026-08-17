@@ -102,7 +102,7 @@
     },
     "2026.08.15.2": {
       "created_at": "2026-08-16T01:19:37Z",
-      "description": "## 2026.08.15.2\n\n### Fixed\n- Non-Linear Progression Mode: the region/location logic itself was still enforcing Linear Mode's ancestor-adjacency rule, so generation and trackers required an adjacent Chapter to be reached first before a later one counted as logically accessible -- even though the in-game client already unlocked Chapters correctly out of order. A Chapter's location is now logically reachable the moment its own item is received, matching the in-game behavior.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.15...2026.08.15.2",
+      "description": "### Fixed\r\n- Non-Linear Progression Mode: the region/location logic itself was still enforcing Linear Mode's ancestor-adjacency rule, so generation and trackers required an adjacent Chapter to be reached first before a later one counted as logically accessible -- even though the in-game client already unlocked Chapters correctly out of order. A Chapter's location is now logically reachable the moment its own item is received, matching the in-game behavior.\r\n\r\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.15...2026.08.15.2",
       "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.08.15.2/northgard.apworld",
       "has_manifest": true,
       "hash_sha256": "bf721dac3b176f28d4b59a6d08b9c0749204b749fa059d9e5ef062acbdba7aa7",
@@ -114,6 +114,21 @@
       "title": "2026.08.15.2 - Non-Linear Mode Logic Fix",
       "version_simple": "2026.8.15",
       "world_version": "2026.8.15.2"
+    },
+    "2026.08.16": {
+      "created_at": "2026-08-17T01:25:37Z",
+      "description": "### Fixed\r\n- Winning the second same-Chapter battle (top/bottom) wasn't sending the proper checks.\r\n- Non-Linear Mode: the Conquest map could get permanently stuck (no nodes clickable, Escape not working) after winning a battle out of the usual order.\r\n\r\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.15.2...2026.08.16\r\n",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.08.16/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "40b15dd3014d4b7a9d7bcf6181643d3c004c08bed951249fa6cb181cf0a0a454",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.16",
+      "minimum_ap_version": "0.6.7",
+      "size": 10416342,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.08.16",
+      "title": "2026.08.16 - More Polishing Fixes",
+      "version_simple": "2026.8.16",
+      "world_version": "2026.8.16"
     }
   }
 }

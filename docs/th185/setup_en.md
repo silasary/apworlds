@@ -57,6 +57,10 @@ If the client successfully connects, you will be asked for your slot name. Enter
 
 Once this is done, you may open the game. The client will attempt to connect to the game. If successful, you will be informed that the client has found the game. You may then play the game as usual.`
 
+## Linux Compatibility?
+
+This implementation does not run natively on Linux nor does the game without intermediary software. However, it is possible to get both working on Linux. Check pinned messages in the Discord [thread](https://discord.com/channels/731205301247803413/1346288808512983040/1470840910500724736) for Touhou 18.5. (Credits to **Marisa** for figuring this part out.)
+
 ## Modding Compatibility
 
 - Mods which _**directly**_ modify the game executable will break compatibility. As the client relies on consistent memory addresses to operate, directly editing the executable will derail the entire thing.

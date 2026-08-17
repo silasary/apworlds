@@ -4,7 +4,7 @@ Dark Cloud 1
 
 
 ## Downloads
-- <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.5.8/dc1.apworld">Latest Version (0.5.0r9)</a>
+- <a href="https://github.com/Lizardman175/DC1AP/releases/download/v0.6.0/dc1.apworld">Latest Version (0.6.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -14,3 +14,4 @@ Dark Cloud 1
 
 ## Other Documentation files
 - <a href="en_Dark Cloud">en_Dark Cloud</a>
+- <a href="en_Progression_Guide">en_Progression_Guide</a>

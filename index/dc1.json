@@ -276,7 +276,7 @@
       "tag": "v0.5.10",
       "title": "DC1AP v0.5.10",
       "version_simple": "0.5.0",
-      "world_version": "0.5.0r2"
+      "world_version": "0.5.0r3"
     },
     "v0.5.2": {
       "created_at": "2026-05-23T02:37:38Z",
@@ -397,6 +397,21 @@
       "title": "DC1AP v0.5.9",
       "version_simple": "0.5.0",
       "world_version": "0.5.0r2"
+    },
+    "v0.6.0": {
+      "created_at": "2026-08-17T01:09:04Z",
+      "description": "# Dark Cloud 1 AP Rando v0.6.0\r\n\r\n## General changes\r\n - Shopsanity\r\n   - Adds 2 items to each shop within the boss goal setting.  First item appears as Medusa Powder (300g), the second as Warp Powder (500g).  These are dummied out vanilla items.\r\n   - Gaffer's store replaces the attack/endurance+1 until the items are purchased while other stores just add new items\r\n   - Jack's Store logically requires Ruby so you can get the better building completion rewards before being required to get his items\r\n   - Rando's shop ironically is not randomized as he is missable\r\n - Fishsanity\r\n   - Adds first catch of each fish as locations (Ocean fish and Garayans are extra options)\r\n     - Fish logically require access to a shop with bait: Ruty (ocean fish), Brooke (desert fish & baron garayan), Wise Owl or Lana for the rest (Lana for Mardan)\r\n\t   - Wise Owl now sells Carrots for catching Umadakara\r\n     - Baron Garayan requires boss goal 4+ for Brooke's Shop, Mardan needs boss goal 3+ for Lana. Otherwise, they won't be locations.\r\n     - UT will show glitched logic if the fish are accessible without a bait shop\r\n   - Some bait may be added to the item pool with this setting (and are flagged Useful instead of Filler)\r\n   - https://darkcloud.fandom.com/wiki/Fish#Dark_Cloud for help on fish/bait/locations (seems incorrect)\r\n - Floorsanity\r\n   - Full clearing each normal dungeon floor becomes a check.  Requires all 15 enemies killed at the same time, rather than a total kill count.\r\n   - Character-limited floors are an extra option\r\n - Removed Dark Genie item/location; the boss kill is now tracked in data storage\r\n - Reworked location ID values (internal, but may affect poptracker. Check locations.py comment for details.)\r\n - Renamed \"Yellow Drops entrance path chest\" to \"Yellow Drops path to Moon Sea chest 2\"\r\n\r\n## Server Changes\r\n - Reworked item generation\r\n   - Items are now randomly created rather than static based on vanilla chests\r\n   - Slayer attachments are now useful instead of filler\r\n   - Other items like Gold Bullion and Dran's Feather can now be in the item pool\r\n   - Fishing rod added to the item pool\r\n - Dungeon checks now show glitched logic availability in UT if not enough HP/def boost items have been received\r\n - Option to add a set of gems to the item pool (provided enough locations exist)\r\n\r\n## Client Changes\r\n - Added a new \"Connected and Ready!\" message once the client has finished initialization tasks\r\n - DeathLink now buffers until the player is in a killable state\r\n - Alnet's House completion event is disabled to avoid double fishing rod\r\n - If connecting on a vanilla save, client now gives an error instead of releasing items\r\n - Rotated Norune Pond and Oasis to be more accessible for fishing\r\n - Added a few extra copies of parts like road and tree just for fun. Instead of 5, you'll get 6-8\r\n - Fixed a bug with autobuild that could give too many trees\r\n - Fixed a bug where the \"x attachments remaining\" message wasn't logging\r\n - Removed autobuilding of robot parts while in the factory; there is an obscure game crash that can happen that I haven't tracked down\r\n - Made Chief Bonka last item received for Chief's House so it is easier to access the building's chests\r\n - Added slot number to datastorage names\r\n \r\n## Known Issues\r\n - Shop sanity items don't always remove from shop inventory correctly after sending location\r\n - New ready message shows up during certain cutscenes",
+      "download_url": "https://github.com/Lizardman175/DC1AP/releases/download/v0.6.0/dc1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "74c5102753656dd60c510f54392a4dd6830e167a858603eda6ea600d27d49362",
+      "html_url": "https://github.com/Lizardman175/DC1AP/releases/tag/v0.6.0",
+      "minimum_ap_version": "0.6.5",
+      "size": 41089,
+      "source_url": "https://api.github.com/repos/Lizardman175/DC1AP",
+      "tag": "v0.6.0",
+      "title": "DC1AP v0.6.0",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0"
     }
   }
 }

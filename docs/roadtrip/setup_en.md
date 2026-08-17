@@ -44,5 +44,7 @@ Once the [multiworld has been generated](https://archipelago.gg/tutorial/Archipe
     - This is true even if you restart PCSX2 while disconnected, so long as you saved your game before closing the emulator.
 - What about if I receive an item while disconnected?
     - Nope! Same deal as locations: In RTA AP, your save file will contain a count of how many items you've received from the server. If that count doesn't match your 'items received' count on the server, then the server will send you all of the items you're missing.
+- In Stamps mode, how do I check the number of stamps I've received from the multiworld?
+    - From the overworld pause menu, go to Notebook > Stamps. The AP stamp count now displays in the top-left of the Stamps page.
 - Why is [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) giving me the error "Internal generation failed, something has gone wrong"?
     - In order to use UT with RTA, the YAML you used for generation will need to be in your Players subfolder within your Archipelago install folder.

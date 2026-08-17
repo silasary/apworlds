@@ -23,12 +23,6 @@ Uncanny Cat Golf is a silly golf game about shooting a cat into a golf hole, whi
 
 The options yaml can be made via the Options Creator in the Archipelago launcher. It requires Archipelago v0.6.7 or higher to run.
 
-## Why isn't this on Archipelago main?
-
-This game has some nebulous copyright, meaning it doesn't fall under something that is allowed in Archipelago main. As a result, while it can be played fine on archipelago.gg's website, it cannot be discussed or have a thread made in Archipelago main.
-
-In lieu of this, there is a thread on the [Unofficial Archipelago discord](https://discord.gg/j9TvjcZRwZ) located at [this thread.](https://discord.com/channels/1345801058609270794/1530464006677073980) You can report bugs here, or in the github issues of the mod repo, or in the thread in the [Uncanny Cat Golf discord](https://discord.gg/TyC2X2qg5h) (the thread can be found [here](https://discord.com/channels/1270819416954765435/1530466283605332089))
-
 ## Does this support Universal Tracker?
 
 This game supports yamlless UT support, so you can use Universal Tracker without even having a player yaml, and features full Universal Tracker support including /explain and /get_logical_path for seeing what each check needs. Highly recommended.

@@ -5,7 +5,7 @@ The Sims 4 focuses on creating and controlling a neighborhood of virtual people,
 
 
 ## Downloads
-- <a href="https://github.com/Simsipelago/Archipelago/releases/download/2.0.0/sims4.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/Simsipelago/Archipelago/releases/download/2.0.1/sims4.apworld">Latest Version (2.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -14,3 +14,5 @@ The Sims 4 focuses on creating and controlling a neighborhood of virtual people,
 ## Setup Guide
 - <a href="setup_en">English</a>
 
+## Other Documentation files
+- <a href="AI-Disclosure">AI-Disclosure</a>
