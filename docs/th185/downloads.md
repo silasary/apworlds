@@ -1,9 +1,12 @@
 # Black Market of Bulletphilia ~ 100th Black Market
 
 ## Latest
-- <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.4.3/th185.apworld">Latest Version (0.4.3)</a>
+- <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.4.4/th185.apworld">Latest Version (0.4.4)</a>
 
 ## All Versions
+
+#### v0.4.4
+- <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.4.4/th185.apworld">https://github.com/furret78/Archipelago/releases/download/unstable-0.4.4/th185.apworld</a>
 
 #### v0.4.3
 - <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.4.3/th185.apworld">https://github.com/furret78/Archipelago/releases/download/unstable-0.4.3/th185.apworld</a>

@@ -2,28 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-17T06:16:29.617790+00:00</updated>
+  <updated>2026-08-17T12:14:33.099259+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V0.0.3</id>
-    <title>Fantastic Fist v0.0.3</title>
-    <updated>2026-08-14T20:09:50+00:00</updated>
-    <author>
-      <name>WaluigiGoesWa</name>
-    </author>
-    <content>Entrance Rando has been implemented.&#13;
-Fixed versioning of the mod and AP World.&#13;
-Fixed bug where multiple connection sessions could be stored.&#13;
-Info tabs when hovering over a level now correctly show what exits have been collected in the level.&#13;
-Boss info tabs will show how many coins are acquired and needed when the player does not have enough.&#13;
-Fixed generation bug in the AP World when using Entrance Rando but no Door Rando.&#13;
-&#13;
-Currently Deathlink, Roomsanity, Checkpointsanity, and Door Rando do not work. They will be implemented at a later date.</content>
-    <link href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V0.0.3"/>
-  </entry>
   <entry>
     <id>https://github.com/Turese/LOArchipelagoPlugins/releases/tag/1.2.2</id>
     <title>Look Outside v1.2.2</title>
@@ -1428,11 +1411,12 @@ Send `crash_trace.log` (the header should read `mod=2.0.1`), the last ~200 lines
 Recommended to play on Windows, as **the game does not support Linux natively**. If playing on Linux, it is recommended to run both Archipelago Launcher and the game in Wine/Proton.&#13;
 &#13;
 # Changelog&#13;
-- Option **Itemized Equipment Upgrades** can now be customized to go up to 34 card slots and 1000% equip cost.&#13;
+- Option **Itemized Equipment Upgrades** can now be customized to go up to +33 card slots and +600% equip cost.&#13;
 - Added Option: **Recommended Equipment Upgrades in Logic**. Recommended Loadout in Logic can now also take into account Itemized Equipment Upgrades.&#13;
 - Added Option: **Permanent Upgrades** (lives, Bullet Money, Shot Power, Shot Attack%, and Magic Circle Attack%).&#13;
 - Added Option: **Trap Blacklist**.&#13;
 - Renamed several items to be less confusing as to whether they are `One-time` bonuses, `Temporary` traps, or `Permanent` upgrades.&#13;
+- Removed Max Speed Trap due to being too similar to Extreme Speed Trap.&#13;
 - Revamped certain old Trap items to be `Temporary`: Freeze Trap, Extreme Speed Trap.&#13;
 - Added new `Temporary` Traps: Magic Circle Disable Trap, Powerless Shot Trap.&#13;
 - Added new `One-time` Traps: Funds Reset Trap, Bullet Money Reset Trap, 20% Shot Attack Trap, 0% Magic Circle Attack Trap, 1000% Magic Circle Duration Trap, Shot Power Reset Trap.&#13;
@@ -1600,5 +1584,34 @@ Or, alternatively,&#13;
 &#13;
 **Full Changelog**: https://github.com/Simsipelago/Archipelago/compare/2.0.0...2.0.1</content>
     <link href="https://github.com/Simsipelago/Archipelago/releases/tag/2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/furret78/Archipelago/releases/tag/unstable-0.4.4</id>
+    <title>Black Market of Bulletphilia ~ 100th Black Market v0.4.4</title>
+    <updated>2026-08-17T10:23:02+00:00</updated>
+    <author>
+      <name>Yuureiki</name>
+    </author>
+    <content>Archipelago Randomizer implementation for **_Black Market of Bulletphilia ~ 100th Black Market_**, also known as _**Touhou 18.5**_.&#13;
+&#13;
+- **.apworld version:** Unstable 0.4.4&#13;
+- **Minimum Archipelago Launcher version:** 0.6.7&#13;
+&#13;
+Recommended to play on Windows, as **the game does not support Linux natively**. If playing on Linux, it is recommended to run both Archipelago Launcher and the game in Wine/Proton.&#13;
+&#13;
+# Changelog&#13;
+- Fixed a FillError bug caused by enabling **Itemized Equipment Upgrades** without enabling **Recommended Equipment Upgrades in Logic**.&#13;
+- Adjusted the descriptions of various Options to be less incorrect.&#13;
+- Added Option: **Trap Durations**. The duration of some Temporary traps can now be adjusted before generation.&#13;
+- Updated docs.&#13;
+&#13;
+Incompatible with worlds generated before 0.4.0. Compatible with worlds generated from 0.4.0 onwards.&#13;
+&#13;
+**Full Changelog**: https://github.com/furret78/Archipelago/compare/unstable-0.4.3...unstable-0.4.4&#13;
+&#13;
+# Game Details and Setup&#13;
+- See **game details** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/en_100th%20Black%20Market.md). When exporting .yaml files for this game, it is recommended to use the Options Creator in the Archipelago Launcher for a smooth experience.&#13;
+- See the **setup guide** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/setup_en.md).</content>
+    <link href="https://github.com/furret78/Archipelago/releases/tag/unstable-0.4.4"/>
   </entry>
 </feed>

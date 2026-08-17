@@ -12,7 +12,7 @@ markets that the god couldn&#x27;t intervene in--&quot;black markets&quot;--bega
 
 
 ## Downloads
-- <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.4.3/th185.apworld">Latest Version (0.4.3)</a>
+- <a href="https://github.com/furret78/Archipelago/releases/download/unstable-0.4.4/th185.apworld">Latest Version (0.4.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
