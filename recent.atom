@@ -2,167 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-18T06:14:43.610546+00:00</updated>
+  <updated>2026-08-18T12:16:46.152710+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/narramoment/Archipelago/releases/tag/0.2.0</id>
-    <title>Jak II v0.2.0</title>
-    <updated>2026-08-15T19:17:42+00:00</updated>
-    <author>
-      <name>narramoment</name>
-    </author>
-    <content>Courtesy of @BlakeWehlage, welcome to 0.2.0 :)&#13;
-&#13;
-NEW FEATURES:&#13;
-&#13;
-- DEATHLINK!! DIE IN YOUR GAME, EVERYONE ELSE (who has it turned on) DIES AS WELL!!&#13;
-- Item Replay! Whenever you load into your save file, all of the important items are re-added into your inventory. No need to mess around with the debug menu!&#13;
-- Item Generation has been fixed! No more "unplaced items"!&#13;
-- Goaling is now properly triggered!&#13;
-All other changes are made on the mod side, so stay tuned :)&#13;
-Full Changelog: https://github.com/narramoment/Archipelago/compare/0.1.0...0.2.0</content>
-    <link href="https://github.com/narramoment/Archipelago/releases/tag/0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/2.0.0</id>
-    <title>Librarian Tidy Up the Arcane Library v2.0.0</title>
-    <updated>2026-08-15T19:26:48+00:00</updated>
-    <author>
-      <name>Str8UpWHITE64</name>
-    </author>
-    <content># Librarian-AP v2.0.0&#13;
-# BookSanity is here!!&#13;
-Every individual book in the library has an item and check associated with it.  Start with all&#13;
-sections unlocked and send checks for every book you correctly place. Books are sent to&#13;
-you as "Book: Series Vol N", for example `Book: Magical Creatures and Their Spells`. Checks are &#13;
-"Book: Section - Series Vol N", so `Book: 1A - Monster Field Notes: A Beastmaster's Journey Vol 3`.&#13;
-&#13;
-## **Existing 1.x runs are not carried over: generate a new seed.**&#13;
-&#13;
-### Choose how you want books unlocked&#13;
-&#13;
-`unlock_mode` lets you choose how books/series are unlocked.  Choose `progressive_unlocks` &#13;
-to stay with the old system, `individual_series_unlocks` to unlock each series individually, &#13;
-or `booksanity` to unlock every book individually.  The default is `progressive_unlocks`.&#13;
-&#13;
-```yaml&#13;
-unlock_mode: &#13;
-  progressive_unlocks : 50          # the default&#13;
-  individual_series_unlocks: 0&#13;
-  booksanity: 0&#13;
-```&#13;
-&#13;
-- **progressive_unlocks** (default) unlocks series in fungible groups, the classic&#13;
-  and most compact item pool.&#13;
-- **individual_series_unlocks** makes each of the ~400 series its own item. Every&#13;
-  bookcase starts open.&#13;
-- **booksanity** makes every individual book its own item and check. Every bookcase&#13;
-  starts open. A floor goal is recommended, since the full goal is slow to generate&#13;
-  at that size.&#13;
-&#13;
-In BookSanity, `starting_series_count` gives you that many series' *worth* of random&#13;
-individual books rather than whole series, so 5 is roughly 15 to 50 books.&#13;
-&#13;
-Locked books stay hidden and cannot be picked up, including through the magic skills:&#13;
-Assemble will not pull one into your bag, and Insight will not reveal one.&#13;
-&#13;
-## New Items and Traps&#13;
-### Magic Mastery&#13;
-New, additional magic items have been added to further improve the magic skills.&#13;
-You will receive both the regular `Progressive MagicSkill` items and `MagicSkill Mastery` items.&#13;
-Mastery items extend the use length and reduce the cooldown of using the magic skill.&#13;
-&#13;
-Examples: `Progressive Insight` and `Insight Mastery`&#13;
-&#13;
-### Bag Capacity&#13;
-Bag Capacity items have also been added, to increase the number of books you can&#13;
-carry in your bag at once.  `+2 Book Capacity` and `+3 Book Capacity` are added to the&#13;
-pool, to increase your total bag capacity up to 40. &#13;
-&#13;
-### Fatigue Traps&#13;
-Traps are added into the pool in the form of Fatigue Traps.  These traps, like `Fatigue: Assemble`&#13;
-make your magic use time really short, and the cooldown period really long. 2 for each&#13;
-magic skill are added to the pool.&#13;
-&#13;
-## Change to Vanilla game&#13;
-&#13;
-### The ability to delete saves from the Load Menu&#13;
-I have added the ability to delete a save in the Load Menu instead of just the Save Menu.&#13;
-This was added so it is easier for you to delete old AP save without the need to&#13;
-load into a save and then open the save menu.&#13;
-&#13;
-This does spill over to vanilla, though, so be careful.  It does still warn you before&#13;
-deleting a save file, but there is no indication on the load screen that you can delete&#13;
-a file.  &#13;
-&#13;
-### A warning about missing AP Saves&#13;
-When you connect to a server for the first time, the game will automatically select new game&#13;
-for you and have you hit Yes.  If you connect to the same game later, it will auto-load&#13;
-into the save for you.  If you delete that save for some reason, now it will tell&#13;
-you at the home screen, and you will have to select New Game on your own.  This is to prevent you&#13;
-from accidentally sending a new fingerprint to the server if you just moved your save file to a&#13;
-new location for backups.  Once you hit New Game and Yes, the server will get the new fingerprint,&#13;
-and you will load into a new save as if you connected to the server for the first time.&#13;
-&#13;
-## Bug Fixes:&#13;
-&#13;
-### Checks now go to the shelf you actually finished&#13;
-&#13;
-On shelves where some rows hold three books and others hold ten, finishing a row could&#13;
-send a *different* series' check and hold back the one you earned. The wrong check was&#13;
-a real check, sent into the multiworld for a shelf you had not completed.&#13;
-&#13;
-This was reported as "these two series never send", which was true, but only half of&#13;
-it. The cause of the issue was that the mod inferred the series positions and would&#13;
-send checks from an earlier, out of order, series.  This made it so the completed ones&#13;
-weren't sent, and earlier, out of order ones were.&#13;
-&#13;
-### Returning to the main menu no longer crashes&#13;
-&#13;
-The mod saves your run as you quit, and that save is asynchronous. The game began&#13;
-tearing the world down while the save was still reading it, which killed the game&#13;
-outright. It now waits for the save to finish first.&#13;
-&#13;
-### You no longer click your way into a run&#13;
-&#13;
-Connecting to a seed for the first time starts the New Game for you and prompts you to &#13;
-start a new save; returning to one loads your save. While the shelves are still being &#13;
-prepared you are held in the pause menu, with Resume, Save and Load unavailable and &#13;
-Quit and Options still working. It releases itself the moment the world is ready, &#13;
-so you never walk into a library that is still being set up.&#13;
-&#13;
-### Also fixed&#13;
-&#13;
-- Starting a New Game no longer inherits the previous run's progress&#13;
-- Restarting on the same slot no longer sends inflated level checks&#13;
-- Insight no longer leaves books glowing&#13;
-&#13;
-### Known issues&#13;
-&#13;
-A BookSanity check can occasionally lag behind the shelving that earned it, because the&#13;
-game marks a book correct slightly after telling us it was shelved. If a check has not&#13;
-appeared, pull the book and shelve it again and it will send immediately.&#13;
-&#13;
-A book can turn invisible the moment you pick it up in the hidden-book modes. Reloading&#13;
-the save will fix the issue. Nothing is lost. This one sits below the layer the mod can reach.&#13;
-&#13;
-&#13;
-### Updating&#13;
-&#13;
-&gt; Extract the zip and drop `Librarian/` into your Steam install (overwrite). Drop the included&#13;
-&gt; `librarian.apworld` into your Archipelago `custom_worlds/` folder. **Both are required**, and you&#13;
-&gt; need to **generate a new seed**. Requires game build 1.0.12 or newer. The title screen top-right&#13;
-&gt; should read `LibAP v2.0.0`.&#13;
-&#13;
-### If something breaks&#13;
-&#13;
-Send `crash_trace.log` (the header should read `mod=2.0.0`), the last ~200 lines of&#13;
-`UE4SS.log`, your YAML's `Librarian:` section, and one line on what you were doing.</content>
-    <link href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/2.0.0"/>
-  </entry>
   <entry>
     <id>https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/tag/v1.1.3</id>
     <title>Celeste (Open World) v1.1.3</title>
@@ -1656,5 +1500,45 @@ Client-only release. Location and item IDs, logic, options and the apworld are u
   - `enable_biome_keys: false` no longer fails gen.&#13;
   - Client now only subscribes to the DeathLink tag if it's actually enabled.</content>
     <link href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/tag/v1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.2</id>
+    <title>Mega Man X2 v2.0.2</title>
+    <updated>2026-08-18T06:38:09+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>Some fixes&#13;
+## Info&#13;
+* [General Information](https://thelx5.github.io/mmx2/index.html)&#13;
+* [Setup Guide](https://thelx5.github.io/mmx2/setup.html)&#13;
+## Changes&#13;
+* Added a missing rule for X-Hunter Base 4 requiring nothing to enter&#13;
+* Fixed being able to receive items while falling from the sky at the start of a level&#13;
+* Fixed 1-Ups not being properly disabled in some parts of the game&#13;
+* Fixed Arms Upgrade not working correctly with certain settings</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.0</id>
+    <title>Easy Delivery Co. v0.2.0</title>
+    <updated>2026-08-18T10:53:40+00:00</updated>
+    <author>
+      <name>Aeromaze</name>
+    </author>
+    <content>## Changes&#13;
+Added yaml option to lock deliveries to and from towns to require an item, starting with a random town in Mountain Town&#13;
+Added logic to payload deliveries with the "Lock Towns" option on&#13;
+Added yaml option to adjust intercity deliveries&#13;
+Changed filler item generation&#13;
+APWorld changed to use the Rule Builder, raising the minimum required Archipelago version to 0.6.7&#13;
+Updated Archipelago.MultiClient.Net to v6.7.1&#13;
+## Fixes&#13;
+Fixed how hints are updated. Deliveries should no longer randomly stop generating&#13;
+Swapped Snowcat Fit and Snowcat Foreman&#13;
+Now sends all checks from a completed delivery in one packet&#13;
+## Notes&#13;
+⚠️ The in-game tracker can only be closed by the x in the top right corner</content>
+    <link href="https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.0"/>
   </entry>
 </feed>

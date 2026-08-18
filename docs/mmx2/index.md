@@ -7,7 +7,7 @@ boss battles that grant new weapons, and the use of the Cx4 chip for enhanced gr
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx2-v2.0.1/mmx2.apworld">Latest Version (2.0.1)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx2-v2.0.2/mmx2.apworld">Latest Version (2.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -3,7 +3,7 @@
 ## Required Software
 
 - [Easy Delivery Co.](https://store.steampowered.com/app/3293010/Easy_Delivery_Co/) for PC
-- [Easy Delivery Co. Randomizer Mod](https://github.com/Aeromaze/EasyDeliveryAP)
+- [Easy Delivery Co. Randomizer Mod](https://github.com/Aeromaze/Archipelago/releases)
 - [BepInEx 5.4.23.4 (win_x64)](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.4)
 - [Easy Deliver API](https://github.com/foxfoxfoxgay/EasyDeliveryAPI/releases/tag/1.0.0)
 
@@ -35,7 +35,7 @@ Launch the game once and close it to finish the BepInEx installation.
 
 ### Install The Easy Delivery Co. Randomizer Mod
 
-Download the latest release of the [Easy Delivery Mod](https://github.com/Aeromaze/EasyDeliveryAP) and the latest release of the [Easy Deliver API](https://github.com/foxfoxfoxgay/EasyDeliveryAPI/releases/tag/1.0.0).
+Download the latest release of the [Easy Delivery Mod](https://github.com/Aeromaze/Archipelago/releases) and the latest release of the [Easy Deliver API](https://github.com/foxfoxfoxgay/EasyDeliveryAPI/releases/tag/1.0.0).
 
 Extract the contents of the downloaded .zip files, and find the folders labeled EasyDeliveryAP and BepInEx
 
