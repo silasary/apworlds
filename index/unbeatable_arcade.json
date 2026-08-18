@@ -1,12 +1,17 @@
 {
   "authors": [
-    "AllPoland"
+    "AllPoland",
+    "estradiol-valerate"
   ],
   "description": "UNBEATABLE is a rhythm game where music is illegal and you do crimes.\nUNBEATABLE Arcade Mode is a game mode separate from the story mode, where you can play songs from the game (and other places) to your heart's content.",
   "game": "UNBEATABLE Arcade",
   "github": "https://github.com/AllPoland/unbeatAP",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0-alpha": {
       "created_at": "2026-01-10T00:23:14Z",
@@ -168,6 +173,21 @@
       "title": "v0.7.0 Alpha",
       "version_simple": "0.7.0",
       "world_version": "0.7.0a0"
+    },
+    "v0.7.1-alpha": {
+      "created_at": "2026-07-28T00:49:51Z",
+      "description": "This is an APWorld only update, making generation a little more consistent.\r\n\r\nAPWorld Bug Fixes:\r\n- Fixes generation/blacklist issues (Thanks to @Gudf in AllPoland/Archipelago#16)\r\n- Fixes non-determinism issues during generation (Thanks to @Gudf in AllPoland/Archipelago#17)\r\n- Fixes archipelago.json being invalid in releases\r\n\r\nThe **client** is **compatible** with v0.7.0, v0.6.0, v0.5.0 and v0.4.0 apworlds! This is an APWorld only update, so there's no need to update the mod if you already have client v0.7.0.\r\nThe **apworld** is **compatible** with v0.7.0 clients!\r\n\r\n**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.\r\n\r\nAny feedback or ideas are welcome in the \"UNBEATABLE (PC)\" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!",
+      "download_url": "https://github.com/AllPoland/unbeatAP/releases/download/v0.7.1-alpha/unbeatable_arcade.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7f5751f385bf1eae749af00d84e245d0fe506957c6675bcd7246d86d645af184",
+      "html_url": "https://github.com/AllPoland/unbeatAP/releases/tag/v0.7.1-alpha",
+      "minimum_ap_version": "0.6.4",
+      "size": 21806,
+      "source_url": "https://api.github.com/repos/AllPoland/unbeatAP",
+      "tag": "v0.7.1-alpha",
+      "title": "v0.7.1 Alpha",
+      "version_simple": "0.7.1",
+      "world_version": "0.7.1a0"
     }
   }
 }

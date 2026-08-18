@@ -274,6 +274,20 @@
       "title": "v1.0.0",
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
+    },
+    "v1.1.0": {
+      "created_at": "2026-08-17T18:35:12Z",
+      "description": "Sly 2 Archipelago implementation. For setup instructions, check out the [README](https://github.com/NikolajDanger/APSly2/blob/main/README.md).\r\n\r\n## Changes\r\n### Features\r\n- Tasksanity is here! Adds a new `tasksanity` option, which makes every task of every mission its own check. Adds 278 new locations.\r\n- Increased the maximum number of Clockwerk parts in the pool to 500. I also added a bunch more silly named Clockwerk parts.\r\n- The sell value of loot and treasures can be randomized with a new range of options.\r\n- Added the `dynamic_loot_tables` option, which makes pickpocketing favor checks you haven't gotten yet (you can still get unlucky. It's just slightly less annoying).\r\n- The `/loot_table` command now outputs in color, showing more clearly which loot is in logic and which are checked.\r\n- Pickpocket checks are now on the UT map page (just in the Sly 2 client, not in a standalone UT client).\r\n\r\n### Bug fixes and improvements\r\n- Fixed the main problem of last release: Clockwerk parts count not being recalculated on reconnect.\r\n- The duration of some of the traps has been increased.\r\n- Added a `/trace` command, for diagnosing crashes as they're happening. Should absolutely not be turned on during normal play; the log file grows very quickly.\r\n- Several generation fixes.\r\n- Fixed guards not spawning with the correct randomized loot. This is like the third time, but I'm certain it's right this time.\r\n- Fixed \"&\" displaying incorrectly in-game.\r\n- The client now fully resets when connecting to a different slot.",
+      "download_url": "https://github.com/NikolajDanger/APSly2/releases/download/v1.1.0/sly2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b9e3332ea994734ab2b53dae03ef762cfd38c570aca8f5ba3beda1d983d48377",
+      "html_url": "https://github.com/NikolajDanger/APSly2/releases/tag/v1.1.0",
+      "size": 3609212,
+      "source_url": "https://api.github.com/repos/NikolajDanger/APSly2",
+      "tag": "v1.1.0",
+      "title": "v1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
     }
   }
 }

@@ -73,8 +73,18 @@ Use exact item/location names from this world (or the item groups listed above) 
   - `dark_mind`: Defeat Dark Mind to complete the seed.
   - `defeat_any_area_boss`: Defeat any one `* - Boss Defeat` location (Mustard Mountain, Moonlight Mansion, Candy Constellation, Olive Ocean, Peppermint Palace, Cabbage Cavern, Carrot Castle, or Radish Ruins). In this mode, collecting all Mirror Shards is not required by the goal mode itself.
     - Candy Constellation's Master Hand + Crazy Hand fight is treated as one pooled boss target (`BOSS_DEFEAT_3`).
-  - `defeat_configured_area_boss`: Defeat a specific area boss selected by the `configured_area_boss` option. The default target is the Master Hand + Crazy Hand pair (`BOSS_DEFEAT_3`), and the selected target is only used by this goal mode.
-  - `defeat_random_hidden_area_boss`: Defeat one seed-selected hidden area boss. The selected target is carried in slot data as an internal boss-defeat key; normal player-facing output does not reveal the boss name, but spoiler output may.
+  - `defeat_area_boss`: Defeat the area boss selected by `configured_area_boss`. The default is Master Hand + Crazy Hand (`BOSS_DEFEAT_3`). Set `configured_area_boss` to `random` to have Archipelago choose one of the eight area bosses during option parsing. The old name `defeat_configured_area_boss` remains accepted as a compatibility alias. Replace the removed `defeat_random_hidden_area_boss` with `goal: defeat_area_boss` plus `configured_area_boss: random`.
+
+### Using Archipelago's built-in `random` choice
+
+`configured_area_boss` and `starting_kirby_color` are normal Archipelago `Choice` options. You can replace the entire generated weight mapping for either option with the scalar value `random`:
+
+```yaml
+configured_area_boss: random
+starting_kirby_color: random
+```
+
+Archipelago resolves each `random` value to one concrete choice during option parsing. The generated weighted template lists only concrete choices, so `random` is documented in comments rather than appearing as another weighted sub-option.
 
 
 
@@ -100,7 +110,7 @@ You will not see an indicator in the game, instead you'll see you received an it
 
 
 
-Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, defeat the configured area boss in `defeat_configured_area_boss` mode, or defeat the seed-selected hidden area boss in `defeat_random_hidden_area_boss` mode.
+Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, or defeat the selected `configured_area_boss` in `defeat_area_boss` mode.
 
 
 

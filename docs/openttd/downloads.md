@@ -1,12 +1,9 @@
 # OpenTTD
 
 ## Latest
-- <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta5/openttd.apworld">Latest Version (15.2b5)</a>
+- <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta4/openttd.apworld">Latest Version (15.2b4)</a>
 
 ## All Versions
-
-#### v15.2b5
-- <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta5/openttd.apworld">https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta5/openttd.apworld</a>
 
 #### v15.2b4
 - <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta4/openttd.apworld">https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta4/openttd.apworld</a>
