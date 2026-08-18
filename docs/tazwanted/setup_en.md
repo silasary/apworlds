@@ -4,25 +4,95 @@
 
 - Archipelago 0.5.0 or newer
 - PCSX2 2.0 or newer, with **PINE** enabled
-- A Taz Wanted (PS2) disc image, `SLUS-20236`
+- **Your own dump of Taz: Wanted (USA) (En,Fr,De,Es,It)**, `SLUS-20236`, as a
+  `.bin` — the 746,983,440-byte MODE2/2352 track. Nothing here is distributed
+  with the game; you patch a copy of your own disc.
+- The **`.apTAZ` file** from your room's page on the Archipelago server. It
+  arrives named `P1_YourName_<room>.apTAZ`. It is about a kilobyte — it holds
+  your seed's settings, not the game.
 
 ## Enabling PINE in PCSX2
 
 Settings → Advanced → tick **Enable PINE**, and leave the slot at `28011`.
 The client talks to the emulator through it; nothing works without it.
 
-## Playing
+## The first time: double-click your `.apTAZ`
 
-1. Start Archipelago and launch **Taz Wanted Client** from the launcher.
-2. Connect it to the room, then to your slot.
-3. Start PCSX2 and load the game.
-4. **Set the difficulty to match your yaml** before starting a file. The
-   client warns you if they disagree, but by then some checks may already be
-   unreachable.
-5. Start a new file. Any of the three slots works.
+That is the whole setup. The Taz Wanted Client opens and asks you two
+questions, once ever:
 
-The client writes nothing until a save file is loaded, so it is safe to leave
-running at the title screen.
+1. **Where is PCSX2?** Point it at `pcsx2-qt.exe`.
+2. **Where is your Taz Wanted `.bin`?** Point it at your own dump.
+
+If you pick the wrong file it says so on the spot and names both hashes. Every
+address this patcher writes was measured out of that one revision, so a
+different disc would produce an image that boots and is quietly wrong. It is
+refused rather than patched.
+
+Then it patches — about thirty seconds, with a progress bar — and writes two
+files **beside your `.apTAZ`**:
+
+```
+    P1_YourName_<room>.apTAZ     what you downloaded
+    P1_YourName_<room>.bin       your playable disc
+    P1_YourName_<room>.cue       so PCSX2 knows what it is looking at
+```
+
+Your original dump is never modified. PCSX2 then starts on the patched image
+by itself.
+
+## ⚠ Connect BEFORE you choose English
+
+**This is the one rule.** The moment the game starts, connect the client to
+your room and slot — before you touch the **Choose Language** screen.
+
+Connecting after that screen means the client has already missed its chance to
+set your slot up, and the run has to be restarted from a cold boot. The client
+says this in red every time it starts a game, and shouts if it catches you at
+the main menu still unconnected.
+
+## Playing again later
+
+Two ways, and they are the same game either way:
+
+- **Double-click the same `.apTAZ`.** The patched `.bin` is already sitting
+  next to it, so nothing is patched again and you are asked nothing — it just
+  launches PCSX2 on it.
+- **Or do it by hand.** Launch **Taz Wanted Client** from the Archipelago
+  launcher and load your patched `.bin` in PCSX2 yourself. Handy if you keep
+  PCSX2 open, or want the game running before the client is.
+
+Either way, connect before the language screen.
+
+If you delete the patched `.bin`, double-clicking the `.apTAZ` simply builds
+it again — and you will not be asked for PCSX2 or your dump a second time,
+because those answers are kept in `host.yaml`.
+
+## Before you start a file
+
+**Set the difficulty to match your yaml.** The client warns you if they
+disagree, but by then some checks may already be unreachable.
+
+Then start a new file — any of the three slots works. The client writes
+nothing until a save file is loaded, so it is safe to leave running at the
+title screen.
+
+## Boot from cold, not from a save state
+
+A save state made on a different build of the disc restores the old archive
+directory, the old executable and the old sound contents over your patched
+image. Start the game normally; save files are fine, save states carried
+across a re-patch are not.
+
+## What the patch actually changes
+
+- The main menu wears an **Archipelago** logo, so you can tell at a glance
+  that you launched the right image.
+- If your yaml randomises costumes, each level's booth hands out the costume
+  your seed assigned it — model, animations, voice and all — with no loading
+  stutter, because the work was done on the disc rather than in RAM.
+
+Everything else is the game you already own.
 
 ## Commands
 
@@ -42,9 +112,9 @@ if the game ever looks out of step with what you own.
 ## Saving and reloading
 
 The client is the source of truth, not the save file. It records what it has
-sent and rebuilds your unlocks from the server every time it connects, so save
-states, reloading a file, and reconnecting mid-session are all safe. You cannot
-lose an item by reloading, and you cannot send a check twice.
+sent and rebuilds your unlocks from the server every time it connects, so
+reloading a file and reconnecting mid-session are both safe. You cannot lose
+an item by reloading, and you cannot send a check twice.
 
 ## Game modes
 
@@ -65,3 +135,13 @@ Costumes and bonus games are still shuffled.
 - The Hindenbird shows your remaining goal while you are standing in Tazland.
 - Bonus games need their unlock, whatever your sandwich count says.
 - Phone booths refuse you until the matching costume arrives.
+
+## If something goes wrong
+
+- **"Unable to reach PCSX2"** — PINE is not on, or another tool is holding the
+  same slot. Close any other PCSX2 scripts and retry.
+- **You picked the wrong file for PCSX2 or your dump** — open `host.yaml`,
+  delete the offending line under `tazwanted_options`, and the client will ask
+  again next time.
+- **Diagnostics** — `logs/Taz Diagnostics.txt`, rewritten each session. It is
+  always on, and it is the first thing to read if a run goes strange.

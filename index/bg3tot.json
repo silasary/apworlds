@@ -147,6 +147,21 @@
       "title": "v1.2.1 - Stability Sweep",
       "version_simple": "1.2.1",
       "world_version": "1.2.1"
+    },
+    "v1.2.2": {
+      "created_at": "2026-08-18T15:13:12Z",
+      "description": "## Bridge Reliability & Shop Fragment Recovery\r\n\r\n### Changes\r\n\r\n- Hardened communication between the BG3 mod and the Archipelago client by publishing status, options, and received-item history as complete snapshots.\r\n- Shop Fragment progress is now reconciled against Archipelago's complete received-item history, allowing affected saves to repair themselves after reconnecting.\r\n- Improved connection, disconnection, and seed-change ordering so BG3 does not treat intentionally cleared bridge files as active game state.\r\n\r\n### Fixes\r\n\r\n- Fixed Shop Fragments randomly dropping to '0' after returning to camp, loading a save, or restarting the game. **- megaknight05**\r\n- Fixed temporary or incomplete bridge-file reads being persisted as lost Shop Fragment progress.\r\n- Fixed bridge status reporting failures potentially interfering with the Archipelago connection. **- heavywarcrier**\r\n- Fixed communication watcher errors retrying too aggressively instead of waiting before the next attempt.\r\n\r\n### Notes\r\n\r\n- Existing saves and active asyncs remain compatible. No new seed or campaign restart is required.\r\n- Saves affected by missing Shop Fragments should automatically recover their correct total after reconnecting to Archipelago with v1.2.2.\r\n- Update both `bg3tot.apworld` and `ArchipelagoToT.pak` when installing this release.\r\n",
+      "download_url": "https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.2.2/bg3tot.apworld",
+      "has_manifest": true,
+      "hash_sha256": "385f4111a28f7e67871b8c1a045494ffe07f20057fc9fcd77bd77b2bc46c082f",
+      "html_url": "https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/tag/v1.2.2",
+      "minimum_ap_version": "0.6.2",
+      "size": 286851,
+      "source_url": "https://api.github.com/repos/Zoltun456/Archipelago-BG3-ToT",
+      "tag": "v1.2.2",
+      "title": "v1.2.2 - Persistence Protection",
+      "version_simple": "1.2.2",
+      "world_version": "1.2.2"
     }
   }
 }

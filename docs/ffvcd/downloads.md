@@ -1,9 +1,12 @@
 # Final Fantasy V Career Day
 
 ## Latest
-- <a href="https://github.com/junglechief87/arch_ffvcd/releases/download/v83.2/ffvcd.apworld">Latest Version (83.2)</a>
+- <a href="https://github.com/junglechief87/arch_ffvcd/releases/download/v83.3/ffvcd.apworld">Latest Version (83.3)</a>
 
 ## All Versions
+
+#### v83.3
+- <a href="https://github.com/junglechief87/arch_ffvcd/releases/download/v83.3/ffvcd.apworld">https://github.com/junglechief87/arch_ffvcd/releases/download/v83.3/ffvcd.apworld</a>
 
 #### v83.2
 - <a href="https://github.com/junglechief87/arch_ffvcd/releases/download/v83.2/ffvcd.apworld">https://github.com/junglechief87/arch_ffvcd/releases/download/v83.2/ffvcd.apworld</a>

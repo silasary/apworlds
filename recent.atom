@@ -2,215 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-18T12:16:46.152710+00:00</updated>
+  <updated>2026-08-18T18:15:41.366518+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/tag/v1.1.3</id>
-    <title>Celeste (Open World) v1.1.3</title>
-    <updated>2026-08-15T20:17:28+00:00</updated>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <content>v1.1.3 of the Archipelago Open World mod and APWorld for Celeste.&#13;
-&#13;
-Mod is fully backwards-compatible with seeds generated with v1.0.x APWorlds.&#13;
-&#13;
-Changelog since v1.1.2:&#13;
-&#13;
-```md&#13;
-### Bug Fixes:&#13;
-- The Required Strawberry count no longer displays as negative&#13;
-- Sending a DeathLink while disconnected should no longer crash&#13;
-- `Screen Flip Trap` is no longer permitted during the credits sequence&#13;
-- Golden Strawberries are no longer duplicated when going through Mirror Temple Mirrors or into the Golden Room&#13;
-- Universal Tracker now understands your goal area properly&#13;
-- DataPackage is now in a consistent order, preventing bogus cache mismatches&#13;
-- Minor typo fixes&#13;
-- Several logic fixes&#13;
-```</content>
-    <link href="https://github.com/PoryGoneDev/Celeste-Archipelago-Open-World/releases/tag/v1.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/1.0.0</id>
-    <title>Slay the Spire II v1.0.0</title>
-    <updated>2026-08-15T21:58:57+00:00</updated>
-    <author>
-      <name>Kirbyfanner</name>
-    </author>
-    <author>
-      <name>Platano Bailando</name>
-    </author>
-    <author>
-      <name>Lyxn</name>
-    </author>
-    <author>
-      <name>MartyredG</name>
-    </author>
-    <author>
-      <name>Terairk</name>
-    </author>
-    <content># Slay the Spire II 1.0 Release!&#13;
-&#13;
-**Huge shoutout to all the contributors! This is a product of love from:** @dlueben1 @cjmang @Lyxn-M @Terairk &#13;
-&#13;
-**Thank you to everyone who helped playtest this, report bugs, provide support, and contribute ideas!**&#13;
-&#13;
-&gt; [!WARNING]&#13;
-&gt; Slay the Spire II is an early access and receives frequent updates. As such, while this mod is fully playable, there is a chance that bugs can slip past us when the devs do their regular game updates. Please report any bugs you find and thanks for your patience!&#13;
-&#13;
-# Changelist&#13;
-&#13;
-## Characters and Ascensions&#13;
-&#13;
-- Ascensions can now be configured as **individual modifiers**, globally or separately for each character.&#13;
-  - This means that instead of the vanilla behavior of "all ascensions up to Ascension X", you can have individual Ascension modifiers enabled!&#13;
-- Added **Ascension Down** items, allowing selected Ascension modifiers to be disabled as items arrive during a run. ([#169](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/169), [#181](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/181); fixes [#46](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/46), [#135](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/135), and [#147](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/147))&#13;
-- Added support for up to **five custom characters** alongside the five built-in characters. &#13;
-  - Installed character IDs can be found under **Archipelago Settings -&gt; Archipelago**. ([#176](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/176))&#13;
-&#13;
-&gt; [!CAUTION]&#13;
-&gt; Modded characters are supported on a best-effort basis. Test custom characters before using them in a long multiworld, especially if they substantially change game systems!&#13;
-&#13;
-&gt; [!WARNING]&#13;
-&gt; Archipelago logic does not account for Ascension Down items&#13;
-&#13;
-## Ancient, Relic, and Starter Progression&#13;
-&#13;
-- Added **Progressive Ancient** items and optional **Neow Sanity**. ([#177](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/177), [#207](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/207), [#73](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/73))&#13;
-  - Ancient rewards can be configured to appear as a three-choice reward in the Archipelago loot screen or in their original locations at the start of each act. &#13;
-  - You can now **randomize the Ancient Relic pool**.&#13;
-    - Balanced: Keep Ancient Relic Pools vanilla&#13;
-    - Chaos: Ancient Relic Pools are randomized within their Act&#13;
-    - True Chaos: Ancient Relic Pools are randomized across Acts 2 and 3 for all non-Neow Ancients.&#13;
-- Relic rewards can be configured to use a coupon system. The first configurable number of Relic items are available immediately; later Relics require rewards earned from Elites, treasure chests, Black Star, etc. ([#223](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/223))&#13;
-  - Earned rewards are banked, so fighting Elites remains valuable even before the corresponding item arrives. Recommend setting this option to 2 so elites remain valuable.&#13;
-- Added optional **Progressive Starter Card** and **Progressive Starter Relic** items. Each restores the normal starter first, then grants the corresponding Ancient upgrade. &#13;
-  - These options *require Floor Checks*.&#13;
-- Added an option to keep a winning character's remaining checks locked instead of automatically releasing them on victory.&#13;
-  - This is an option to incentivize players to fight Elites rather than "race to the top" and for those 100% no release syncs.&#13;
-- Various Loot Menu UI changes have been made, including bug fixes and adding tooltips to Relic and potion rewards. (fixes [#192](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/192) and [#201](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/201))&#13;
-&#13;
-&gt; [!TIP]&#13;
-&gt; Progressive Starter Card and Progressive Starter Relic can make the early game significantly harder. Archipelago logic currently doesn't account for this.&#13;
-&#13;
-## Shops, Gold, and Filler Items&#13;
-&#13;
-- Gold Sanity rewards now better match Slay the Spire II's natural combat and Elite rewards, including the effects of the Poverty Ascension modifier. ([#196](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/196); fixes [#186](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/186) and [#191](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/191))&#13;
-- Added various buffs as filler items with configurable filler weights, including free card plays, Strength, Dexterity, Plating, Buffer, Vigor, Artifact, Thorns, Friendship, card upgrades, card removal, and additional card rewards. ([#178](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/178), [#225](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/225))&#13;
-- Shop Sanity is here! This feature supports configurable colored-card, neutral-card, relic, potion, and progressive card-removal slots. AP inventory has its own shop page and configurable fixed or tiered prices. ([#230](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/230), [#232](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/232); fixes [#180](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/180), [#188](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/188), [#224](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/224); fixes [#218](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/218), and [#190](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/190))&#13;
-&#13;
-&gt; [!WARNING]&#13;
-&gt; Shopsanity is a very complicated feature, and while we've worked very hard to stabilize it, there may be edge cases yet uncaught. Please report any bugs you find to our Discord or GitHub!&#13;
-&gt;&#13;
-&gt; Additionally, Archipelago logic does not account for the Shop Sanity cost mode.&#13;
-&#13;
-&gt; [!NOTE]&#13;
-&gt; Currently, filler items are entirely consumed at the start of your next turn of combat. In the future we will buffer this system so that players who have been offline for a while don't waste all the filler buffs on the first combat of a floor.&#13;
-&#13;
-## Client and Interface&#13;
-&#13;
-- Reworked the main and pause menus with new options and QoL changes (too many PRs to count)&#13;
-- New settings include an Archipelago loot-screen keybind, configurable notification options, and a selectable Ancient announcer. ([#168](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/168))&#13;
-- Improved connection-screen keyboard navigation: Tab and Shift+Tab cycle through controls, Enter activates buttons, and Escape closes the screen safely. ([#208](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/208); fixes [#67](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/67))&#13;
-- Added a top-bar display for the current act's Progressive Rest and Progressive Smith unlocks. (fixes [#210](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/210))&#13;
-- Reworked the Archipelago reward overlay so it composes correctly with the map, deck, card piles, native rewards, shops, and treasure rooms. Tooltips and notifications now render at the correct size and layer. ([#222](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/222); fixes [#185](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/185) and [#220](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/220))&#13;
-&#13;
-## Official Website&#13;
-&#13;
-The Slay the Spire II Archipelago Client now has an official [Website](https://sts2ap.net)!&#13;
-&#13;
-Most importantly we now have an **Online YAML Builder/Wizard** that *greatly* simplifies setting up a player's YAML. Please check it out [here](https://sts2ap.net/#/builder)!&#13;
-&#13;
-&gt; [!NOTE]&#13;
-&gt; The YAML Builder is still in development and doesn't support certain features like starting hints, local/non-local items, etc. Expect more features very soon, as it will update *outside of the mod's update schedule*.&#13;
-&#13;
-## Beta Branch Compatibility&#13;
-&#13;
-- One client build now supports the default public game branch and provides experimental compatibility with newer beta branches. The default public branch remains recommended. ([#205](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/205))&#13;
-&#13;
-&gt; [!CAUTION]&#13;
-&gt; This incredible feature is possible thanks to the pioneering efforts of @Terairk but please be careful when using the Beta Branch, *especially* for asyncs/long-running sessions. MegaCrit updates the Beta Branch of StS II very frequently, and while we'll do our best to keep support for Beta and Public, we can't predict our availability and how damaging/complicated their changes to the Beta Branch will be.&#13;
-&gt;&#13;
-&gt; So while this is very awesome, be warned to use this at your own risk.&#13;
-&gt;&#13;
-&gt; If you're not familiar with Archipelago, Slay the Spire II, or navigating issues during a Multiworld, we **strongly recommend the Default Public Version**.&#13;
-&#13;
-## Bug Fixes &amp; Reliability Updates&#13;
-&#13;
-- Received items are queued and processed on the game thread, fixing race-condition crashes and unreliable item handling. ([#221](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/221); fixes [#154](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/154) and [#194](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/issues/194))&#13;
-- AP card rewards now use the game's standard reward flow, and enter the combat draw pile when claimed mid-combat.&#13;
--  Relics like Lasting Candy now function correctly without double-counting. ([#208](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/208))&#13;
-- Underdocks is available without its vanilla Timeline unlock.&#13;
-- Fixed character-select crashes, AP reward-screen softlocks, missing filler weights, tracker inconsistencies, Campfire Sanity checks, Shop Sanity inventory behavior, Progressive Ancient generation, and Death Link timer synchronization. ([#181](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/181), [#224](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/224), [#225](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/225), [#231](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/231), [#233](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/233))&#13;
-- Added compatibility for APWorlds from `0.5.3` and earlier, including legacy Ascension values and saves.&#13;
-  - This should allow players to finish their existing Archipelago games without interruption. ([#228](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/228) and [#229](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/pull/229))&#13;
-- While untested, this mod should now be compatible with **MacOS and Linux**&#13;
-  - This is because we've removed the custom Windows-only log window in favor of RitsuLib's logging tools.&#13;
-&#13;
-&gt; [!TIP]&#13;
-&gt; If you've successfully run the mod on MacOS, Linux, or SteamOS, please reach out and let us know how it went!&#13;
-&#13;
-# Mod Information&#13;
-&#13;
-## Pre-Requisites&#13;
-&#13;
-- **Your host MUST use Archipelago Client v0.6.7+**.&#13;
-- This version of the mod is intended to be used for **v0.107.1** of Slay the Spire II&#13;
-  - While we have experimental support for the public beta branch, we recommend **the "Default Public/Main Version"** of the game to most players. Since the beta branch is updated more frequently and is more volatile, it's less likely to be bug-free. Please use it at your own risk. However numerous players have used it just fine, @Terairk is the maintainer for this and he mostly develops here.&#13;
-  - We will do our best to keep up with game updates as they release, so please be patient when encountering issues.&#13;
-&#13;
-## Installing the Mod from Steam Workshop (Recommended)&#13;
-&#13;
-1. Ensure that you have [RitsuLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3747602295) installed. The easiest way to obtain it is from Steam Workshop.&#13;
-2. Subscribe to the [Slay the Spire II Archipelago Client](https://steamcommunity.com/sharedfiles/filedetails/?id=3748826296) on Steam Workshop.&#13;
-3. Make sure that any other unnecessary mods are turned off, unless you're trying to use a specific modded character for your Archipelago session.&#13;
-4. Start the game&#13;
-&#13;
-## Manually Installing the Mod from GitHub&#13;
-&#13;
-1. Ensure that you have [RitsuLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3747602295) installed. The easiest way to obtain it is from Steam Workshop.&#13;
-2. Download the "sts2-client.zip" from the [Releases](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/latest) section of the Repo&#13;
-3. Go to your Slay the Spire II directory (In Steam, click "Browse Local Files")&#13;
-4. If a folder called `mods` does not exist, create it&#13;
-5. Unzip the **contents** of `sts2-client.zip` into `mods`&#13;
-&#13;
-- If you've done this step correctly, your directory structure should look like this: `/&lt;slay-the-spire-2-local-files&gt;/mods/Archipelago/` and the contents of that folder should be a bunch of `.dll` files and a `.pck` file (there may be more files too, please don't touch anything in this folder)&#13;
-&#13;
-6. Start the game&#13;
-&#13;
-### Additional Steps for **Hosts**&#13;
-&#13;
-7. Download `spire2.apworld`&#13;
-8. Open your Archipelago Launcher&#13;
-9. Click "Install APWorld"&#13;
-10. Select `spire2.apworld` in the file dialog that pops up&#13;
-11. **Restart the Archipelago Launcher**&#13;
-12. Now you should be able to properly host/generate an Archipelago Session with StS 2&#13;
-&#13;
-- If you want to use `archipelago.gg` to host the game, generate it locally first following the steps above, then upload the `.zip` file from the `output` folder in your Archipelago installation&#13;
-&#13;
-&gt; [!IMPORTANT]&#13;
-&gt; You need to use Archipelago Version 0.6.7+ and CANNOT use earlier versions of Archipelago with this mod!&#13;
-&#13;
-## Known Issues/Limitations&#13;
-&#13;
-- Switching Slay the Spire II branches during an active run may make that run's checkpoint incompatible with the other branch.&#13;
-&#13;
-## Common Q&amp;A&#13;
-&#13;
-### Will this mess with my unmodded Save File?&#13;
-&#13;
-No.&#13;
-&#13;
-### I installed the AP World but it's not working&#13;
-&#13;
-Is your Archipelago Launcher v0.6.7 or later? If not it **won't work**.&#13;
-</content>
-    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/1.0.0"/>
-  </entry>
   <entry>
     <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.15</id>
     <title>Northgard v2026.8.15</title>
@@ -1540,5 +1336,48 @@ Now sends all checks from a completed delivery in one packet&#13;
 ## Notes&#13;
 ⚠️ The in-game tracker can only be closed by the x in the top right corner</content>
     <link href="https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/flingoXD/Archipelago/releases/tag/0.1.0</id>
+    <title>vardrain-- v0.0.0r2</title>
+    <updated>2026-08-18T12:56:12+00:00</updated>
+    <author>
+      <name>flingoXD</name>
+    </author>
+    <content>Fixed a few bugs from previous versions and more importantly added DeathLink with an amnesty option</content>
+    <link href="https://github.com/flingoXD/Archipelago/releases/tag/0.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/tag/v1.2.2</id>
+    <title>Baldur's Gate 3 - ToT v1.2.2</title>
+    <updated>2026-08-18T15:13:12+00:00</updated>
+    <author>
+      <name>Broney</name>
+    </author>
+    <author>
+      <name>Zoltun</name>
+    </author>
+    <content>## Bridge Reliability &amp; Shop Fragment Recovery&#13;
+&#13;
+### Changes&#13;
+&#13;
+- Hardened communication between the BG3 mod and the Archipelago client by publishing status, options, and received-item history as complete snapshots.&#13;
+- Shop Fragment progress is now reconciled against Archipelago's complete received-item history, allowing affected saves to repair themselves after reconnecting.&#13;
+- Improved connection, disconnection, and seed-change ordering so BG3 does not treat intentionally cleared bridge files as active game state.&#13;
+&#13;
+### Fixes&#13;
+&#13;
+- Fixed Shop Fragments randomly dropping to '0' after returning to camp, loading a save, or restarting the game. **- megaknight05**&#13;
+- Fixed temporary or incomplete bridge-file reads being persisted as lost Shop Fragment progress.&#13;
+- Fixed bridge status reporting failures potentially interfering with the Archipelago connection. **- heavywarcrier**&#13;
+- Fixed communication watcher errors retrying too aggressively instead of waiting before the next attempt.&#13;
+&#13;
+### Notes&#13;
+&#13;
+- Existing saves and active asyncs remain compatible. No new seed or campaign restart is required.&#13;
+- Saves affected by missing Shop Fragments should automatically recover their correct total after reconnecting to Archipelago with v1.2.2.&#13;
+- Update both `bg3tot.apworld` and `ArchipelagoToT.pak` when installing this release.&#13;
+</content>
+    <link href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/tag/v1.2.2"/>
   </entry>
 </feed>
