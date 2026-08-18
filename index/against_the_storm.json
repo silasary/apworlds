@@ -223,7 +223,7 @@
     },
     "v1.2.0": {
       "created_at": "2026-02-24T23:18:09Z",
-      "description": "[Info about this randomizer](https://github.com/RyanCirincione/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/en_Against_The_Storm.md)\r\n[Setup instructions](https://github.com/RyanCirincione/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/setup_en.md)\r\n# Changes\r\n- New:\r\n  - Universal Tracker support! Specifically for blueprint_items + recipe_shuffle, and trade locations.\r\n    - This was tricky for me, so please report if there are still any issues.\r\n  - Added Brineworks to the item pool.\r\n- Changed:\r\n  - If you have a biome key in your starting inventory, the apworld should no longer hand you another.\r\n  - On connection, gifts with the same name and sender should be aggregated into one alert.\r\n- Fixed:\r\n  - Upgraded bat houses location now properly requires copper ore.\r\n  - Resolved issue where Training Expedition panel wouldn't open when disconnected from AP.\r\n  - Fixed villager needs showing incorrect icons when unlocked.",
+      "description": "[Info about this randomizer](https://github.com/Ryguy-9999/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/en_Against_The_Storm.md)\r\n[Setup instructions](https://github.com/Ryguy-9999/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/setup_en.md)\r\n# Changes\r\n- New:\r\n  - Universal Tracker support! Specifically for blueprint_items + recipe_shuffle, and trade locations.\r\n    - This was tricky for me, so please report if there are still any issues.\r\n  - Added Brineworks to the item pool.\r\n- Changed:\r\n  - If you have a biome key in your starting inventory, the apworld should no longer hand you another.\r\n  - On connection, gifts with the same name and sender should be aggregated into one alert.\r\n- Fixed:\r\n  - Upgraded bat houses location now properly requires copper ore.\r\n  - Resolved issue where Training Expedition panel wouldn't open when disconnected from AP.\r\n  - Fixed villager needs showing incorrect icons when unlocked.",
       "download_url": "https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.0/against_the_storm.apworld",
       "has_manifest": true,
       "hash_sha256": "3068b85d24be8c49b96acaec52a70e5e4c173c05c4c524610e086e0732ffa6d7",
@@ -234,6 +234,20 @@
       "title": "v1.2.0",
       "version_simple": "1.2.0",
       "world_version": "1.2.0"
+    },
+    "v1.2.1": {
+      "created_at": "2026-08-18T05:12:51Z",
+      "description": "[Info about this randomizer](https://github.com/Ryguy-9999/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/en_Against_The_Storm.md)\r\n[Setup instructions](https://github.com/Ryguy-9999/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/setup_en.md)\r\n# Changes\r\n- New:\r\n  - Added an alert whenever the game attempts to store a resource that is blocked by AP for any reason.\r\n    - This alert can be toggled with the command `ap.toggleBlockedGoodsAlert`. This will be saved by the game.\r\n- Fixed:\r\n  - Resource icons locked by the mod should now automatically refresh. (Finally!)\r\n    - Only the goods panel at the top and species panels the top left are targeted.\r\n    - They refresh on connection, and when using `ap.toggleLockIcons`.\r\n  - Game no longer attempts to give you blueprints from reputation without the appropriate options.\r\n  - Filler starting items no longer duplicate on settlement reload.\r\n  - `enable_biome_keys: false` no longer fails gen.\r\n  - Client now only subscribes to the DeathLink tag if it's actually enabled.",
+      "download_url": "https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.1/against_the_storm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7542d922739c49968c00176d67778f9abc67fc7bbed29c64069e2e3723bb434d",
+      "html_url": "https://github.com/Ryguy-9999/ArchipelagoATS/releases/tag/v1.2.1",
+      "size": 20360,
+      "source_url": "https://api.github.com/repos/Ryguy-9999/ArchipelagoATS",
+      "tag": "v1.2.1",
+      "title": "v1.2.1",
+      "version_simple": "1.2.1",
+      "world_version": "1.2.1"
     }
   }
 }

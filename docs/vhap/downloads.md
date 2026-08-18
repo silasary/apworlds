@@ -1,9 +1,12 @@
 # Vault Hunters
 
 ## Latest
-- <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v.1.3.0-unstable/VHAP.apworld">Latest Version (1.3.0)</a>
+- <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.3.0/VHAP.apworld">Latest Version (1.3.0r2)</a>
 
 ## All Versions
+
+#### v1.3.0r2
+- <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.3.0/VHAP.apworld">https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.3.0/VHAP.apworld</a>
 
 #### v1.3.0
 - <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v.1.3.0-unstable/VHAP.apworld">https://github.com/Studmuffin2227/VHAPMod/releases/download/v.1.3.0-unstable/VHAP.apworld</a>

@@ -169,20 +169,6 @@
       "version_simple": "15.2",
       "world_version": "15.2b2"
     },
-    "v15.2-beta3": {
-      "created_at": "2026-03-06T10:34:58Z",
-      "description": "## What's new in Beta 3\r\n\r\n### Fixed\r\n- **\"Maintain X% rating for N months\" missions** now correctly track consecutive months where ALL rated stations meet the threshold. Any station falling below resets the counter to zero. Previously this was approximated by counting qualifying stations.\r\n- **DeathLink notification** now shows a full newspaper popup so it's impossible to miss. Also printed in red in the console.\r\n- **Server field placeholder** no longer shows `wss://` prefix \u2014 protocol is auto-detected.\r\n\r\n### Added\r\n- **Savegame persistence** \u2014 AP session state now survives save/load:\r\n  - Connection credentials (host, port, slot, password)\r\n  - Completed missions\r\n  - Shop page offset and day counter\r\n  - Cumulative cargo and profit statistics\r\n  - \"Maintain rating\" month counters\r\n\r\n### Changed\r\n- Minor dead code and compiler warning cleanup\r\n\r\n---\r\n\r\n## Installation\r\n1. Download `openttd-15.2-archipelago-windows-win64.zip`\r\n2. Extract and run `openttd.exe`\r\n3. Install `openttd.apworld` in your Archipelago `custom_worlds` folder\r\n4. Connect via the **AP** button in the main menu\r\n\r\n## Requirements\r\n- Windows 10/11 x64\r\n- [Archipelago 0.6.6+](https://github.com/ArchipelagoMW/Archipelago/releases)\r\n\r\n## Known Issues\r\n- WebSocket compression not supported (server logs a warning, no gameplay impact)\r\n- Multiplayer (multiple companies) not supported\r\n- WSS/TLS only on Windows \u2014 Linux/macOS falls back to plain WS",
-      "download_url": "https://github.com/solida1987/openttd-archipelago/releases/download/v15.2-beta3/openttd.apworld",
-      "has_manifest": true,
-      "hash_sha256": "8e318aedaa2bda7094b20c0ac90e0230bb386d0dd5e334185cb3423c0e66ae57",
-      "html_url": "https://github.com/solida1987/openttd-archipelago/releases/tag/v15.2-beta3",
-      "size": 17737,
-      "source_url": "https://api.github.com/repos/solida1987/openttd-archipelago",
-      "tag": "v15.2-beta3",
-      "title": "OpenTTD Archipelago \u2014 Beta 3",
-      "version_simple": "15.2",
-      "world_version": "15.2b3"
-    },
     "v2.0.0": {
       "created_at": "2026-08-16T09:37:22Z",
       "description": "# OpenTTD Archipelago 2.0.0\n\nThe launcher era. This game is now a **plugin** for the\n[Multiworld Launcher](https://github.com/solida1987/Multiworld-Launcher)\n(3.0.1 or newer) \u2014 see **INSTALL.md** on this release.\n\n- No in-game server login: the launcher owns the session, Join AP connects straight away\n- Standalone mode: pre-generated solo seeds, progress kept per seed\n- Auto-install and updates through the launcher\n- NewGRF guard: the launcher checks your sets against the seed before play\n- YAML builder with all 108 options\n- DeathLink both ways\n\n| Asset | What it is |\n|---|---|\n| `openttd_archipelago-1.0.0.londonplugin` | The plugin you add to the launcher |\n| `game_package.zip` | The full game \u2014 the launcher installs this for you, or download it by hand |\n| `game_manifest.json` | Per-file checksums of the package |\n| `openttd.apworld` | For whoever hosts the multiworld |\n| `INSTALL.md` | The full walkthrough |\n| `openttd-archipelago-legacy-v1.4.1-win64.zip` | The old pre-launcher build |\n\nThe legacy build has its own in-game Archipelago client and needs no launcher.\nIt is discontinued and gets no further updates, but it rides along on every\nrelease so it stays one download away. Its source is the `v1.4.1` tag.\n",

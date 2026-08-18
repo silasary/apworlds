@@ -1,10 +1,12 @@
 # Castlevania: Order of Ecclesia
 
-
+In the wake of the Belmont clan disappearing from history,
+the Order of Ecclesia was formed to combat Dracula should he arise again.
+Bearing the glyph of Dominus, will Shanoa be able to defeat him?
 
 
 ## Downloads
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe1.2/cv_ooe.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe1.2.1/cv_ooe.apworld">Latest Version (1.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
