@@ -1,9 +1,12 @@
 # Jak II
 
 ## Latest
-- <a href="https://github.com/narramoment/Archipelago/releases/download/0.2.0/jakii.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/narramoment/Archipelago/releases/download/0.2.1/jakii.apworld">Latest Version (0.2.1)</a>
 
 ## All Versions
+
+#### v0.2.1
+- <a href="https://github.com/narramoment/Archipelago/releases/download/0.2.1/jakii.apworld">https://github.com/narramoment/Archipelago/releases/download/0.2.1/jakii.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/narramoment/Archipelago/releases/download/0.2.0/jakii.apworld">https://github.com/narramoment/Archipelago/releases/download/0.2.0/jakii.apworld</a>

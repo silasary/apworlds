@@ -125,9 +125,8 @@ Multiple traps can be active at the same time, and they may interact with each o
 | High Alert Trap | "Arrest him!"                                                         |
 | Ammo Trap       | Jak has all of his ammo taken away from him, making his guns unusable |
 | Dark Trap       | Jak gives into his anger, forcefully transforming into Dark Jak       |
-| Speed Trap      | Jak and the world around him are suddenly extremely fast              |
-| Slow Trap       | Jak and the world around him are suddenly at a snail's pace           |
 | Hero Trap       | The world gains the properties of the game's "Hero Mode" difficulty   |
+| Reverse Trap    | Jak's movement is completely inverted                                 |
 
 ## I got soft-locked and I can't leave, how do I get out of this?
 

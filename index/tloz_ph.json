@@ -166,6 +166,21 @@
       "version_simple": "0.9.4",
       "world_version": "0.9.4a0"
     },
+    "ph-v0.9.5-alpha": {
+      "created_at": "2026-08-18T19:57:35Z",
+      "description": "Compatible with seeds generated in v9.0+\r\n[Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)\r\n\r\n- Link remains in control during lots of small cutscenes, like opening doors and spawning chests\r\n  - Added a yaml option to toggle chest spawning cutscenes, cause you get zero feedback with skips on.\r\n- Fixed read locations stealing items that share models, mainly affecting spirit gems\r\n- Fixed keys being buggy when received in dungeons\r\n- Restarting the client in TotOK no longer sends extra keys\r\n- Removed Oshus gem location until i figure out how to fix the softlock\r\n- Added extra debugging info to instant-goal, cause it sometimes sends early\r\n- Fixed salvage courage crest location sending early after getting the sun key\r\n- Blocked map warping to an ocean quadrant with the salvage arm, cause it softlocks.\r\n- Removed \"Nothing!\" from potion pool\r\n- Prevented receiving spirits in spirit room from sending spirit locations\r\n- Logic for spirit locations allows for getting spirit rewards from earlier spirits with later ones\r\n- Added missing UT boss event for Cubus Sisters\r\n- Defeating the Cubus Sisters outside the ghost ship no longer spawns their warp\r\n- Fixed a logic bug in ToW\r\n- Removed a rogue event from the `Temple of the Ocean King` location group, allowing you to use it in yaml options\r\n- Prevented goal from sending early when dying and reviving on Bellumbeck",
+      "download_url": "https://github.com/carrotinator/Archipelago/releases/download/ph-v0.9.5-alpha/tloz_ph.apworld",
+      "has_manifest": true,
+      "hash_sha256": "db6ea09a0a96c9bd27455564d47c676d6b5b4e851e957e5b111cced92227cf4d",
+      "html_url": "https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.5-alpha",
+      "minimum_ap_version": "0.6.3",
+      "size": 2595153,
+      "source_url": "https://api.github.com/repos/carrotinator/Archipelago",
+      "tag": "ph-v0.9.5-alpha",
+      "title": "tloz_ph AP v9.5",
+      "version_simple": "0.9.5",
+      "world_version": "0.9.5a0"
+    },
     "tloz_ph-v0.8.2-alpha": {
       "created_at": "2026-01-31T10:54:58Z",
       "description": "\u26a0\ufe0fnot compatible with seeds generated in previous versions\u26a0\ufe0f\r\n\r\n- fixed crash on getting vanilla potion location with full potions\r\n- fixed crash on getting TotOK key from vanilla location\r\n- UT Events now work again\r\n- apparently location groups were not enabled lol\r\n- fixed crash on vanilla Oshus' sword chest\r\n- removed Eddo's door event when not shuffling houses\r\n- removed gust windmills event if not shuffling overworld",

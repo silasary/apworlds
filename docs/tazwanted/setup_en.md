@@ -2,11 +2,19 @@
 
 ## What you need
 
-- Archipelago 0.5.0 or newer
+- Archipelago 0.6.4 or newer
 - PCSX2 2.0 or newer, with **PINE** enabled
-- **Your own dump of Taz: Wanted (USA) (En,Fr,De,Es,It)**, `SLUS-20236`, as a
-  `.bin` — the 746,983,440-byte MODE2/2352 track. Nothing here is distributed
-  with the game; you patch a copy of your own disc.
+- **Your own dump of Taz: Wanted (USA) (En,Fr,De,Es,It)**, `SLUS-20236`, in
+  either of the two forms a PS2 disc is normally kept in:
+
+  | | |
+  |---|---|
+  | `.bin` | 746,983,440 bytes, MODE2/2352 — a raw dump, usually with a `.cue` |
+  | `.iso` | 650,434,560 bytes — the same disc with the per-sector error correction stripped, which is what "convert to ISO" tools produce |
+
+  Both work and both are checked by hash. Whichever you give it, you get the
+  same patched disc back in the same form. Nothing here is distributed with
+  the game; you patch a copy of your own disc.
 - The **`.apTAZ` file** from your room's page on the Archipelago server. It
   arrives named `P1_YourName_<room>.apTAZ`. It is about a kilobyte — it holds
   your seed's settings, not the game.
@@ -22,12 +30,21 @@ That is the whole setup. The Taz Wanted Client opens and asks you two
 questions, once ever:
 
 1. **Where is PCSX2?** Point it at `pcsx2-qt.exe`.
-2. **Where is your Taz Wanted `.bin`?** Point it at your own dump.
+2. **Where is your Taz Wanted dump?** Point it at your own `.bin` or `.iso`.
 
-If you pick the wrong file it says so on the spot and names both hashes. Every
-address this patcher writes was measured out of that one revision, so a
-different disc would produce an image that boots and is quietly wrong. It is
-refused rather than patched.
+If you pick the wrong file it says so on the spot — it names both hashes and,
+since it can see the size, **what kind of wrong it is**: a different revision
+or region, an image of some other disc, or not a disc image at all. Every
+address this patcher writes was measured out of one revision, so a different
+disc would produce an image that boots and is quietly wrong. It is refused
+rather than patched.
+
+> **A note for anyone who was refused before.** 1.1.0 accepted only the raw
+> `.bin`, so a perfectly good `.iso` of the right game was turned away with
+> nothing but two hashes to go on. That was the most common thing to hit, and
+> **1.1.1 reads both.** Update the apworld and pick the same file again —
+> your existing `.apTAZ` still works, so there is nothing to re-roll and no
+> need to bother whoever is hosting your room.
 
 Then it patches — about thirty seconds, with a progress bar — and writes two
 files **beside your `.apTAZ`**:
@@ -37,6 +54,10 @@ files **beside your `.apTAZ`**:
     P1_YourName_<room>.bin       your playable disc
     P1_YourName_<room>.cue       so PCSX2 knows what it is looking at
 ```
+
+If you gave it an `.iso`, you get `P1_YourName_<room>.iso` instead and no
+`.cue` — PCSX2 mounts one directly, and a `.cue` describing it as MODE2/2352
+would be describing it wrongly.
 
 Your original dump is never modified. PCSX2 then starts on the patched image
 by itself.
@@ -91,6 +112,13 @@ across a re-patch are not.
 - If your yaml randomises costumes, each level's booth hands out the costume
   your seed assigned it — model, animations, voice and all — with no loading
   stutter, because the work was done on the disc rather than in RAM.
+- **Every costume's special attack works on whatever level it lands on.** The
+  DJ's sound waves and the Adventurer's flying hat are built into the game
+  per-level, so early builds had six pairings where the attack silently did
+  nothing and the seed simply avoided them. It does not have to any more —
+  all eleven costumes work on all eleven levels, and the same goes for
+  `Completely Random` seeds that hand the same costume to several levels at
+  once.
 
 Everything else is the game you already own.
 
@@ -131,8 +159,17 @@ Costumes and bonus games are still shuffled.
 - Levels you have not unlocked read **LOCKED** on the hub signs.
 - A boss gate tells you what you are still missing.
 - In Linear, reaching a poster gate opens the boss the next time the hub
-  loads — enter a level and come back, and the door will be open.
+  loads — enter a level and come back, and the door will be open. The same is
+  true of any boss whose unlock arrives while you are already standing in its
+  hub; the door tells you to reload when that happens.
 - The Hindenbird shows your remaining goal while you are standing in Tazland.
+- **When you qualify for the Hindenbird, the game says `YOU'RE IN GO MODE!`**
+  — once, on screen, the moment the last requirement lands.
+- If you qualify *while you are already standing in Tazland*, the arena door
+  was built before you did and is still shut. The Hindenbird's line changes
+  to **`Reload Hub to face Tweety`** to say so — step into any level and come
+  back, and it opens. Qualifying anywhere else means the Tazland you walk into
+  next is already built with the door open, and you will not see the message.
 - Bonus games need their unlock, whatever your sandwich count says.
 - Phone booths refuse you until the matching costume arrives.
 
