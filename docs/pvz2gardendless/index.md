@@ -1,6 +1,9 @@
-# None
+# PvZ2 Gardendless
 
-
+PvZ2 Gardendless — A web-based reimagining of Plants vs. Zombies 2.
+Each world requires its unique Key item to access. Modern Day unlocks
+once a configurable number of world goals are met. Victory = defeat the
+Modern Day Zomboss.
 
 
 ## Downloads
@@ -8,9 +11,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_PvZ2 Gardendless">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_PvZ2 Gardendless">en_PvZ2 Gardendless</a>

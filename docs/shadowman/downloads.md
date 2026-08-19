@@ -1,4 +1,4 @@
-# None
+# Shadow Man Remastered
 
 ## Latest
 - <a href="https://github.com/bropacman/shadow-man-remastered-ap-world/releases/download/v0.1.1/shadowman.apworld">Latest Version (0.1.1)</a>

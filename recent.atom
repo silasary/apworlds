@@ -2,62 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-19T00:21:36.070636+00:00</updated>
+  <updated>2026-08-19T06:19:36.367427+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Droppel/ReventureEndingRando/releases/tag/0.21.0</id>
-    <title>Reventure v0.21.0</title>
-    <updated>2026-08-16T07:59:16+00:00</updated>
-    <author>
-      <name>Droppel</name>
-    </author>
-    <content># Version 0.21.0&#13;
-&#13;
-This is mainly a maintenance release.&#13;
-- Unified repositories to simplify future development&#13;
-- Add build script&#13;
-- Fix broken normal generation&#13;
-- Includes the fixed filler item generation by @Meliacci</content>
-    <link href="https://github.com/Droppel/ReventureEndingRando/releases/tag/0.21.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.0.0</id>
-    <title>OpenTTD v1.4.1r2</title>
-    <updated>2026-08-16T09:37:22+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content># OpenTTD Archipelago 2.0.0
-
-The launcher era. This game is now a **plugin** for the
-[Multiworld Launcher](https://github.com/solida1987/Multiworld-Launcher)
-(3.0.1 or newer) — see **INSTALL.md** on this release.
-
-- No in-game server login: the launcher owns the session, Join AP connects straight away
-- Standalone mode: pre-generated solo seeds, progress kept per seed
-- Auto-install and updates through the launcher
-- NewGRF guard: the launcher checks your sets against the seed before play
-- YAML builder with all 108 options
-- DeathLink both ways
-
-| Asset | What it is |
-|---|---|
-| `openttd_archipelago-1.0.0.londonplugin` | The plugin you add to the launcher |
-| `game_package.zip` | The full game — the launcher installs this for you, or download it by hand |
-| `game_manifest.json` | Per-file checksums of the package |
-| `openttd.apworld` | For whoever hosts the multiworld |
-| `INSTALL.md` | The full walkthrough |
-| `openttd-archipelago-legacy-v1.4.1-win64.zip` | The old pre-launcher build |
-
-The legacy build has its own in-game Archipelago client and needs no launcher.
-It is discontinued and gets no further updates, but it rides along on every
-release so it stays one download away. Its source is the `v1.4.1` tag.
-</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.0.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Wakamu/Grandiarchipelago/releases/tag/0.15.0</id>
     <title>Grandia v0.15.0</title>
@@ -1394,6 +1343,48 @@ Implemented /resync command.&#13;
     <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.5-alpha"/>
   </entry>
   <entry>
+    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.1</id>
+    <title>cyberpunk2077-0.7.1 v0.7.0r2</title>
+    <updated>2026-08-18T23:10:28+00:00</updated>
+    <author>
+      <name>247Tossing</name>
+    </author>
+    <content># Cyberpunk Archipelago Mod v0.7&#13;
+&#13;
+This is probably the biggest update the mod has had to date. I believe at this point it is safe to say this mod is in the best and most stable state is has been thus far.&#13;
+&#13;
+## Nexusmods Release!&#13;
+ - The mod is now available on nexusmods to (Hopefully) make it easier to install for more players (Does not have the AP World or Poptracker included)&#13;
+&#13;
+## New Content&#13;
+ - Vendor Sanity: Progression and Filler items added to vendors around NC&#13;
+ - Third Party Mod Support: Official Support added for New Game Plus - Native&#13;
+ - Third Party Mod Support: Official Support confirmed with Randomizer 2077 (except Vendor Randomization and Loot Randomization (causes some quests to be unbeatable despite what the mod says))&#13;
+&#13;
+## New YAML Options&#13;
+ - New completion goals&#13;
+    - Complete Main Quests: Only requires a roll credits on any ending&#13;
+    - Complete Main + Side: Requires completing all paths with major companions along side rolling credits&#13;
+    - Complete Phantom Liberty Only: Only requires completing the Phantom Liberty main questline&#13;
+ - District Access Tokens and Weapon Access Tokens&#13;
+    - Now have options (default enabled) to force the access tokens to only appear to other players worlds&#13;
+&#13;
+## Improvements and Misc&#13;
+ - A logo on the main menu! Wow!&#13;
+ - Client UI in the CET Overlay has been redesigned to be more in line with other AP world clients&#13;
+ - Deathlink now sends a message in the AP server&#13;
+ - Substantial changes and adjustments made to the rules and AP generation which should result in very consistent and stable generation&#13;
+    - The end quest of a larger quest chain (i.e the end of a major arc for panam/judy/etc.) are tagged as "priority" and will have a higher likelyhood of containing progression items in the multiworld. This was done to combat issues i was seeing where cyberpunk would hoard progression items during testing&#13;
+ - NCPD Hustles (reported crime / suspected organized crime) temporarily removed as the checks were not being picked up consistently. (will revisit later)&#13;
+&#13;
+## Fixes&#13;
+ - There are so many various bug fixes and inprovements that its really impossible to list them all&#13;
+&#13;
+## v0.7.1&#13;
+ - Added pre-requisite quests into the Phantom Liberty quests.</content>
+    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.4.0</id>
     <title>Cursed Words v0.4.0</title>
     <updated>2026-08-18T23:33:10+00:00</updated>
@@ -1427,5 +1418,21 @@ This release provides the following updates:&#13;
 - Updated to support additional features from the APWorld&#13;
 - Location criteria mappings re-worked for encounters</content>
     <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.3</id>
+    <title>Mega Man X2 v2.0.3</title>
+    <updated>2026-08-19T02:04:01+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>more fixes&#13;
+# Info&#13;
+* [General Information](https://thelx5.github.io/mmx2/index.html)&#13;
+* [Setup Guide](https://thelx5.github.io/mmx2/setup.html)&#13;
+# Changes&#13;
+* Fixed Energy Pool on pause menu not being displayed properly&#13;
+* Fixed HP refills softlocking the game</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.3"/>
   </entry>
 </feed>

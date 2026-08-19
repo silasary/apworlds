@@ -1,6 +1,7 @@
-# None
+# Half-Life (Sven Co-op)
 
-
+Half-Life&#x27;s campaign, played co-operatively in Sven Co-op, with every
+mission and every weapon locked behind Archipelago items.
 
 
 ## Downloads
@@ -8,9 +9,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Half-Life (Sven Co-op)">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Half-Life (Sven Co-op)">en_Half-Life (Sven Co-op)</a>

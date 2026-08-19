@@ -6,7 +6,7 @@ cutest Dragon Warrior monsters to ever live inside your Game Boy!
 
 
 ## Downloads
-- <a href="https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.0.3/dqm2.apworld">Latest Version (0.0.3)</a>
+- <a href="https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.0.4/dqm2.apworld">Latest Version (0.0.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
