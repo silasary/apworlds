@@ -4,7 +4,7 @@ Digimon World is a game about raising digital monsters and recruiting allies to 
 
 
 ## Downloads
-- <a href="https://github.com/ArsonAssassin/DWAP/releases/download/0.3.10/dw1.apworld">Latest Version (0.3.10)</a>
+- <a href="https://github.com/ArsonAssassin/DWAP/releases/download/0.3.11/dw1.apworld">Latest Version (0.3.11)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

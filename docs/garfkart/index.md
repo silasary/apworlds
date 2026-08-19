@@ -5,7 +5,7 @@ everyone&#x27;s favourite orange cat and plenty of lasagna.
 
 
 ## Downloads
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/1.0.2/garfkart.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/1.0.2/garfkart.apworld">Latest Version (1.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

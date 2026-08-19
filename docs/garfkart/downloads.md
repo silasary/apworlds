@@ -1,51 +1,51 @@
 # Garfield Kart - Furious Racing
 
 ## Latest
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/1.0.2/garfkart.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/1.0.2/garfkart.apworld">Latest Version (1.0.2)</a>
 
 ## All Versions
 
 #### v1.0.2
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/1.0.2/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/1.0.2/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/1.0.2/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/1.0.2/garfkart.apworld</a>
 
 #### v1.0.0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/1.0.0/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/1.0.0/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/1.0.0/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/1.0.0/garfkart.apworld</a>
 
 #### v0.5.3b0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/0.5.3-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/0.5.3-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/0.5.3-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/0.5.3-beta/garfkart.apworld</a>
 
 #### v0.5.2
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.5.4-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.5.4-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.5.4-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.5.4-beta/garfkart.apworld</a>
 
 #### v0.5.2b0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/0.5.2-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/0.5.2-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/0.5.2-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/0.5.2-beta/garfkart.apworld</a>
 
 #### v0.5.1b0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/0.5.1-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/0.5.1-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/0.5.1-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/0.5.1-beta/garfkart.apworld</a>
 
 #### v0.5.0b0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.5.0-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.5.0-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.5.0-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.5.0-beta/garfkart.apworld</a>
 
 #### v0.4.3b0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.3-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.3-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.4.3-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.4.3-beta/garfkart.apworld</a>
 
 #### v0.4.2
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/0.4.4-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/0.4.4-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/0.4.4-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/0.4.4-beta/garfkart.apworld</a>
 
 #### v0.4.2b0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.2-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.2-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.4.2-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.4.2-beta/garfkart.apworld</a>
 
 #### v0.4.1b0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.1-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.1-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.4.1-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.4.1-beta/garfkart.apworld</a>
 
 #### v0.4.0b0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.0-beta/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.4.0-beta/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.4.0-beta/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.4.0-beta/garfkart.apworld</a>
 
 #### v0.3.2a0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.3.2-alpha/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.3.2-alpha/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.3.2-alpha/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.3.2-alpha/garfkart.apworld</a>
 
 #### v0.3.1a0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.3.1-alpha/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.3.1-alpha/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.3.1-alpha/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.3.1-alpha/garfkart.apworld</a>
 
 #### v0.3.post2
 - <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.3-alpha/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.3-alpha/garfkart.apworld</a>
@@ -54,11 +54,11 @@
 - <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.3-alpha/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.3-alpha/garfkart.apworld</a>
 
 #### v0.3.0a0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.3.0-alpha/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.3.0-alpha/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.3.0-alpha/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.3.0-alpha/garfkart.apworld</a>
 
 #### v0.2a0
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.2-alpha/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.2-alpha/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.2-alpha/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.2-alpha/garfkart.apworld</a>
 
 #### v0.0.1
-- <a href="https://github.com/FeluciaPS/Archipelago/releases/download/v0.1-alpha/garfkart.apworld">https://github.com/FeluciaPS/Archipelago/releases/download/v0.1-alpha/garfkart.apworld</a>
+- <a href="https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.1-alpha/garfkart.apworld">https://github.com/FeluciaPS/GarfieldKartAP/releases/download/v0.1-alpha/garfkart.apworld</a>
 
