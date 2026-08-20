@@ -24,7 +24,7 @@ If any issues arise that **cannot be solved by going over this guide**, you may 
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
 - The .apworld for 100th Black Market, if not bundled with Archiepelago.
-- Touhou 18.5: 100th Black Market, the game. Available on [Steam](https://store.steampowered.com/app/2097720/Black_Market_of_Bulletphilia___100th_Black_Market/), but its Comiket CD release also works.
+- Touhou 18.5: 100th Black Market, the game. Available on [Steam](https://store.steampowered.com/app/2097720/Black_Market_of_Bulletphilia___100th_Black_Market/), but its Comiket CD release also works. The game executable should be named "th185.exe".
 
 ## Starting Conditions
 

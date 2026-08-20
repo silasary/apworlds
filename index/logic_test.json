@@ -72,6 +72,21 @@
       "title": "logic-test-0.2.1",
       "version_simple": "0.2.1",
       "world_version": "0.2.1"
+    },
+    "logic-test-0.3.0": {
+      "created_at": "2026-08-19T20:56:45Z",
+      "description": "## Sphere model fix: locked placements no longer break lock-step\n\nFixed the bug where locked in-game placements in the under-test game (vanilla or shuffled badges, HMs, key items) caused interleaved keys \u2014 e.g. lots of `KEY_12` arriving while `KEY_11` was still incomplete \u2014 along with false `LOGIC LEAK` warnings in the client. These items are never gated by the KEY spheres, so the player picks them up mid-sphere in real play; the sphere model now collects them via closure (like events) in both `count_events` modes, restoring the lock-step guarantee: a `KEY_(i+1)` is never legitimately reachable before every `KEY_i`.\n\nRelated hardening:\n- The unreachable-marker pass uses the same networkable-location predicate as the sphere computation.\n- Generation fails loudly if the fixed-location snapshot hook didn't run, instead of silently falling back to post-fill lock flags.\n- Non-advancement items are skipped in the closure sets (they can't affect reachability).\n- New regression test replays gated play via `MultiWorld.get_spheres` against a slot with shuffled (locked) badges/HMs.\n\n## Client improvements\n\n- **Leak tracking persists across reconnects**: keys received ahead of the current sphere are recorded in server data storage (per team/slot), so leak history survives reconnects and item replays. Leaked spheres are flagged in the status output and GUI with the sphere they arrived on.\n- **Per-sphere key totals**: the status list and GUI tab now show have/required key counts for every sphere (done / now / locked), not just the current one.\n\n## Upgrade notes\n\nSeeds generated with 0.2.1 or earlier keep their old (misgrouped) key assignment \u2014 the fix applies at generation time, so affected multiworlds need a regen. Existing games remain playable; the early keys are safe and the leak warnings they trigger are spurious.\n",
+      "download_url": "https://github.com/palex00/Archipelago/releases/download/logic-test-0.3.0/logic_test.apworld",
+      "has_manifest": true,
+      "hash_sha256": "aadfd3d6d585b63ea6ccd5333c481b665d0179dab3779c3c3cd1a271051d2326",
+      "html_url": "https://github.com/palex00/Archipelago/releases/tag/logic-test-0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 19196,
+      "source_url": "https://api.github.com/repos/palex00/Archipelago",
+      "tag": "logic-test-0.3.0",
+      "title": "logic-test-0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

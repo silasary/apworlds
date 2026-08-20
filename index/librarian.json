@@ -391,6 +391,21 @@
       "title": "Librarian-AP v2.0.2",
       "version_simple": "2.0.2",
       "world_version": "2.0.2"
+    },
+    "2.0.3": {
+      "created_at": "2026-08-19T18:43:35Z",
+      "description": "## Librarian-AP v2.0.3\r\n\r\nSpare unlocks so you get BK'd less often, plus three fixes.\r\n\r\n**Existing runs are unaffected.** Nothing here changes a seed in progress.\r\n\r\n## `extra_series_percent` is now `spare_book_item_percent`\r\n\r\n**Regenerate your YAML to update the name.** Same default of 10, but capped at 20 now.\r\n\r\nRenamed because it does more than one job. On `goal: custom` it works as it did in 2.0.2.\r\nIt now also applies to **full and floor goals**, adding that percentage of extra\r\n`Progressive Series Unlock` items to the pool, replacing filler.\r\n\r\nA full or floor goal needs every series in its scope, so one unlock sitting in a stalled\r\nor abandoned game can leave you stuck for good. The spares mean you need most of them\r\nrather than all.\r\n\r\n## New: `spare_shelf_items`\r\n\r\nThe same for bookcases, on full and floor goals. A count per bookcase rather than a\r\npercentage: it adds an extra N `Progressive Shelf Unlock` items for each section,\r\nreplacing filler.\r\n\r\n```yaml\r\nspare_shelf_items: 0   # 0-3, default 0\r\n```\r\n\r\nIt is the most expensive setting in the YAML, one item slot per bookcase per step. A seed\r\nwith no room for the number you pick uses fewer and says so during generation.\r\n\r\nBoth settings are `progressive_unlocks` only, where unlock items are interchangeable.\r\n\r\n## Fix: BookSanity with `goal: custom` could fail to generate\r\n\r\nIn 2.0.2 it could fail outright with an accessibility error listing `Reached Level`\r\nlocations. The level filter used the row count you asked for, not the rows the trimmed\r\nseed holds.\r\n\r\n## Fix: UT showing every level as reachable\r\n\r\nIn BookSanity the level checks read as in logic from the start, with sphere trackers\r\nputting all 45 in sphere 1. Levels come from finishing **rows**, but the logic counted\r\n**books**: level 45 wants 254 rows and was asked for 254 books, of 3072.\r\n\r\n## Fix: UT modeling the wrong starting items\r\n\r\nUniversal Tracker re-runs generation without seeing your YAML, so `starting_series_count`\r\nand `series_per_unlock` came from defaults and it modeled the wrong number of starting\r\nseries unlocks.\r\n\r\n## Updating\r\n\r\n> Extract the zip and drop `Librarian/` into your Steam install (overwrite). Drop the\r\n> included `librarian.apworld` into your Archipelago `custom_worlds/` folder. Requires\r\n> game build 1.0.12 or newer. The title screen top-right should read `LibAP v2.0.3`.\r\n\r\n## If something breaks\r\n\r\nSend `crash_trace.log` (the header should read `mod=2.0.3`), the last ~200 lines of\r\n`UE4SS.log`, your YAML's `Librarian:` section, and one line on what you were doing.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/2.0.3/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "820e20bb1ae2a3696ed437692a30a3673aa9e086666d99a91d742eceeeaae7a0",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/2.0.3",
+      "minimum_ap_version": "0.6.4",
+      "size": 65888,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "2.0.3",
+      "title": "Librarian-AP v2.0.3",
+      "version_simple": "2.0.3",
+      "world_version": "2.0.3"
     }
   }
 }

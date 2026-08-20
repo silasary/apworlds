@@ -1,9 +1,12 @@
 # UNBEATABLE Arcade
 
 ## Latest
-- <a href="https://github.com/AllPoland/unbeatAP/releases/download/v0.7.1-alpha/unbeatable_arcade.apworld">Latest Version (0.7.1a0)</a>
+- <a href="https://github.com/AllPoland/unbeatAP/releases/download/v0.7.2-alpha/unbeatable_arcade.apworld">Latest Version (0.7.2a0)</a>
 
 ## All Versions
+
+#### v0.7.2a0
+- <a href="https://github.com/AllPoland/unbeatAP/releases/download/v0.7.2-alpha/unbeatable_arcade.apworld">https://github.com/AllPoland/unbeatAP/releases/download/v0.7.2-alpha/unbeatable_arcade.apworld</a>
 
 #### v0.7.1a0
 - <a href="https://github.com/AllPoland/unbeatAP/releases/download/v0.7.1-alpha/unbeatable_arcade.apworld">https://github.com/AllPoland/unbeatAP/releases/download/v0.7.1-alpha/unbeatable_arcade.apworld</a>

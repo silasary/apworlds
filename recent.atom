@@ -2,199 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-19T18:17:28.415799+00:00</updated>
+  <updated>2026-08-20T00:17:28.428113+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/spencer2585/MCC-AP/releases/tag/Alpha-1.2.0</id>
-    <title>Halo The Master Chief Collection v1.2.0</title>
-    <updated>2026-08-16T15:02:16+00:00</updated>
-    <author>
-      <name>Spencer2585</name>
-    </author>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content># What's new&#13;
-## Skullsanity&#13;
-- items grant the ability to turn skulls on or off, and skull pickups in levels are locations&#13;
-- currently the skull pickups are not toggleable to prevent generation issues due to too few locations&#13;
-- skull items have 4 settings&#13;
-1. off: skulls can be freely turned on or off&#13;
-2. non-scoring: non scoring skulls are forced off and you must receive the skull item to be able to turn them on&#13;
-3. all: non-scoring skulls work as they do in the non-scoring option. scoring skulls are forced on and you must recieve the skull item to be able to turn them off&#13;
-4. inverted: all skulls are forced off. you must recieve their item to be able to turn them on&#13;
-- when skullsanity is set to all mission completion is logically set behind receiving a yaml configurable number of scoring skulls.&#13;
-- locked skulls are shown as locked in the UI&#13;
-&#13;
-## Chapters&#13;
-(Chapters are what im calling the parts in a mission where black bars come across the top and bottom and a title diologue is shown in the bottom)&#13;
-- reaching chapters in a mission sends a location&#13;
-- these locations are always on&#13;
-- these locations do not take skullsanity into consideration for logic, if the mission is playable all chapters are logically reachable&#13;
-- Known Bug: When a chapter is shown in a skippable cutscene skipping the cutscene will cause the location to not send&#13;
-</content>
-    <link href="https://github.com/spencer2585/MCC-AP/releases/tag/Alpha-1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.3.0</id>
-    <title>Metroid: Samus Returns v0.3.0</title>
-    <updated>2026-08-16T16:17:26+00:00</updated>
-    <author>
-      <name>lil David</name>
-    </author>
-    <content>I've been sitting on this one because I wanted to do some logic stuff, but haven't found the motivation for that so I'll go ahead and release the updated patcher features since they've been waiting for ages.&#13;
-&#13;
-## Game changes&#13;
-* Updated Open Samus Returns Rando to 3.6.1&#13;
-* Added information about the seed and patcher on the title screen&#13;
-* The intro text is now skipped&#13;
-* The whole map is revealed from the start&#13;
-* Updated the text that appears when you get all Metroid DNA without having the hatchling&#13;
-* Added spoiler log to the credits&#13;
-  * Items show roughly in the order logic expected you to collect them&#13;
-* Solo Plasma Beam does more damage to Steel Orbs&#13;
-* Spazer and Plasma Beam projectiles no longer shoot through breakable blocks without Wave Beam&#13;
-* The area item collection percentage is now correct and counts all items and all Metroids (the percentage on the main menu still doesn't work)&#13;
-&#13;
-## Options changes&#13;
-* Added Reverse Area 8 option&#13;
-  * When enabled, the wall from Hatchling Room to Queen Arena is removed&#13;
-  * The queen won't be there if you come from that direction - you only fight her if you drop in from Queen Arena Access&#13;
-* Added Fusion Suit cosmetic option&#13;
-&#13;
-## Client changes&#13;
-* Client now shows a progress bar as it patches the game&#13;
-&#13;
-## Logic changes&#13;
-* Fixed escape rule for Surface: Cavern Cavity&#13;
-* Fixed bomb requirement for A2: Interior Intersection Terminal - Tunnel pickup&#13;
-&#13;
-## Universal Tracker changes&#13;
-* Rule explanations now show trick requirements by name (instead of generically as 'sequence breaks')&#13;
-* Rule explanations now show the requirement to escape from points of no return (no change to actual requirements shown, just that they're for escaping is now explicit)&#13;
-&#13;
-**Full Changelog**: https://github.com/lilDavid/AP-SamusReturns/compare/0.2.2...0.3.0</content>
-    <link href="https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.3</id>
-    <title>Deltarune v2.1.3.post2</title>
-    <updated>2026-08-16T17:34:24+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <author>
-      <name>theemeraldsword85</name>
-    </author>
-    <author>
-      <name>Tenebrosful</name>
-    </author>
-    <author>
-      <name>Vintagix</name>
-    </author>
-    <author>
-      <name>Deadzi</name>
-    </author>
-    <author>
-      <name>Charaster</name>
-    </author>
-    <author>
-      <name>Potato</name>
-    </author>
-    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.1.3/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.1.3/worlds/deltarune/docs/en_DELTARUNE.md) - [Credits](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/DELTARUNEAP%20CREDITS.md)&#13;
-&#13;
-[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
-Or, alternatively,&#13;
-[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
-&#13;
-# Changelog&#13;
-- Tasque Manager Challenge and All Star challenge no longer are considered post-chapter 2 as you was already able to do them in castle when conditions are met&#13;
-- Remove ExcludePostChapter2Locations option&#13;
-- Remove Mixing classification for UT compatibility&#13;
-- Fix ProxyDisconnect package crashing the game&#13;
-- Fix Shadow Mantle not being required in logic for Knight if option wasn't secret bosses mandatory</content>
-    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release</id>
-    <title>Ocarina of Time v9.1.0.post0</title>
-    <updated>2026-08-16T17:55:54+00:00</updated>
-    <author>
-      <name>espeon65536</name>
-    </author>
-    <author>
-      <name>TreZ</name>
-    </author>
-    <content># OoT Randomizer APWorld v9.1.0 Full Release 1&#13;
-&#13;
-This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
-&#13;
-## Changes:&#13;
-- Added support for multiworlds larger than 255 players&#13;
-- Fixed generation/fill failures involving pre-completed dungeons, song placement, shops, and any_dungeon Silver Rupees.&#13;
-- Expanded the xflag room table to prevent overflow.&#13;
-- Protected file-select custom messages from non-ASCII characters.&#13;
-- Automatically parse automatic server/port loading from the webhost room manifest.&#13;
-&#13;
-Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.&#13;
-Even after deletion, the "Open Patch" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct "Ocarina of Time Client" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says "Archipelago Ocarina of Time Client 0.6.x" in the top bar with no info about the apworld version, you are using the old client.</content>
-    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.5</id>
-    <title>Borderlands 2 v0.5.5</title>
-    <updated>2026-08-16T18:08:47+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>new stuff:&#13;
-- fix UT connection issue (hopefully)&#13;
-- infinite backpack as yaml setting&#13;
-- AP travels in fast travel menu&#13;
-- new setting to remove symbols without removing cult of the vault challenges&#13;
-- named enemy locations toggleable&#13;
-- level up checks toggleable (need more options for this in the future)&#13;
-- slot name + seed for .items.txt file&#13;
-- migrate blgstor to settings dir (sdk_mods/settings/blgstor)&#13;
-- rigged slots purchaseable from earl&#13;
-- rigged slots are 1 spin and work for Torgue/Flamerock slots&#13;
-- logic fixes&#13;
-- rulebuilder refactor&#13;
-- some coop things working: loot spawns, sprint, equip blocking, travel commands (chat and fast travel station)&#13;
-- Override Level 80 as a possible start_inventory item&#13;
-- case insensitive travel commands, more aliases&#13;
-</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/v0.5.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v.1.4.0</id>
-    <title>Refunct v1.4.0</title>
-    <updated>2026-08-16T18:25:33+00:00</updated>
-    <author>
-      <name>Spineraks</name>
-    </author>
-    <content># Map Editor Upgrade&#13;
-This version of the mod has a huge upgrade of the map editor!&#13;
-- Press CTRL+SHIFT+M to get into the map editor menu. You don't need an AP connection.&#13;
-- I have made a beautiful crunchy 360p youtube video where I explain some of the features: &#13;
-https://www.youtube.com/watch?v=cmmgYrfLzmc&#13;
-- After every change the map is saved automatically.&#13;
-- Feel free to share your levels in the discord! We might structure it a little bit better if we get a lot of levels but that would be super cool right!?&#13;
-## Custom maps in Archipelago&#13;
-- I'm planning to make custom maps part of Archipelago. First, I'll probably add a "Custom Vanilla" gamemode which just has 1 check for every button. The player can just pick *any* custom map without me having to check them first. Nice way to play some custom maps in AP!&#13;
-- If there is a map I really like, I might make logic for it so we can have OG Rando or Move Rando for it :)&#13;
-&#13;
-# Other&#13;
-- Traps now have "trap" in their name. &#13;
-- There is no color coding in the minigame list and it's also sorted by which are available. (@nepcore &lt;3)&#13;
-&#13;
-## Linux troubles&#13;
-- The mod might not work with new Steam installs on Linux? We are working on it but let us know if you have problems :3</content>
-    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v.1.4.0"/>
-  </entry>
   <entry>
     <id>https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.3.1</id>
     <title>Metroid: Samus Returns v0.3.0r2</title>
@@ -1493,5 +1305,210 @@ This is an early release and has not been extensively tested. Expect bugs and mi
  [SIDELOADER for DRG Mods](https://github.com/trumank/mint)&#13;
  Mod file now included in releases for mint users.</content>
     <link href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.19"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.3</id>
+    <title>PixelDraw v1.3.3</title>
+    <updated>2026-08-19T18:14:32+00:00</updated>
+    <author>
+      <name>InterestedSC2</name>
+    </author>
+    <content>**Version 1.3.3**&#13;
+&#13;
+_Archipelago Changes:_&#13;
+&#13;
+- Added knockbacklink (links knockback received between players)&#13;
+- Added a page for deathlink and knockbacklink in the menu&#13;
+- Disabled most deathlink messages&#13;
+- Added deathlink grace&#13;
+- Fixed removing locations (collect)&#13;
+- Updated/edited both docs&#13;
+- Changed option groups</content>
+    <link href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/tag/1.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/2.0.3</id>
+    <title>Librarian Tidy Up the Arcane Library v2.0.3</title>
+    <updated>2026-08-19T18:43:35+00:00</updated>
+    <author>
+      <name>Str8UpWHITE64</name>
+    </author>
+    <content>## Librarian-AP v2.0.3&#13;
+&#13;
+Spare unlocks so you get BK'd less often, plus three fixes.&#13;
+&#13;
+**Existing runs are unaffected.** Nothing here changes a seed in progress.&#13;
+&#13;
+## `extra_series_percent` is now `spare_book_item_percent`&#13;
+&#13;
+**Regenerate your YAML to update the name.** Same default of 10, but capped at 20 now.&#13;
+&#13;
+Renamed because it does more than one job. On `goal: custom` it works as it did in 2.0.2.&#13;
+It now also applies to **full and floor goals**, adding that percentage of extra&#13;
+`Progressive Series Unlock` items to the pool, replacing filler.&#13;
+&#13;
+A full or floor goal needs every series in its scope, so one unlock sitting in a stalled&#13;
+or abandoned game can leave you stuck for good. The spares mean you need most of them&#13;
+rather than all.&#13;
+&#13;
+## New: `spare_shelf_items`&#13;
+&#13;
+The same for bookcases, on full and floor goals. A count per bookcase rather than a&#13;
+percentage: it adds an extra N `Progressive Shelf Unlock` items for each section,&#13;
+replacing filler.&#13;
+&#13;
+```yaml&#13;
+spare_shelf_items: 0   # 0-3, default 0&#13;
+```&#13;
+&#13;
+It is the most expensive setting in the YAML, one item slot per bookcase per step. A seed&#13;
+with no room for the number you pick uses fewer and says so during generation.&#13;
+&#13;
+Both settings are `progressive_unlocks` only, where unlock items are interchangeable.&#13;
+&#13;
+## Fix: BookSanity with `goal: custom` could fail to generate&#13;
+&#13;
+In 2.0.2 it could fail outright with an accessibility error listing `Reached Level`&#13;
+locations. The level filter used the row count you asked for, not the rows the trimmed&#13;
+seed holds.&#13;
+&#13;
+## Fix: UT showing every level as reachable&#13;
+&#13;
+In BookSanity the level checks read as in logic from the start, with sphere trackers&#13;
+putting all 45 in sphere 1. Levels come from finishing **rows**, but the logic counted&#13;
+**books**: level 45 wants 254 rows and was asked for 254 books, of 3072.&#13;
+&#13;
+## Fix: UT modeling the wrong starting items&#13;
+&#13;
+Universal Tracker re-runs generation without seeing your YAML, so `starting_series_count`&#13;
+and `series_per_unlock` came from defaults and it modeled the wrong number of starting&#13;
+series unlocks.&#13;
+&#13;
+## Updating&#13;
+&#13;
+&gt; Extract the zip and drop `Librarian/` into your Steam install (overwrite). Drop the&#13;
+&gt; included `librarian.apworld` into your Archipelago `custom_worlds/` folder. Requires&#13;
+&gt; game build 1.0.12 or newer. The title screen top-right should read `LibAP v2.0.3`.&#13;
+&#13;
+## If something breaks&#13;
+&#13;
+Send `crash_trace.log` (the header should read `mod=2.0.3`), the last ~200 lines of&#13;
+`UE4SS.log`, your YAML's `Librarian:` section, and one line on what you were doing.&#13;
+</content>
+    <link href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/2.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.16</id>
+    <title>Total War Warhammer 3 v0.10.16</title>
+    <updated>2026-08-19T19:08:39+00:00</updated>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>Added missing Dechala buildings.&#13;
+Fixed progressive units.&#13;
+&#13;
+**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.15...v0.10.16</content>
+    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.16"/>
+  </entry>
+  <entry>
+    <id>https://github.com/palex00/Archipelago/releases/tag/logic-test-0.3.0</id>
+    <title>Logic Test v0.3.0</title>
+    <updated>2026-08-19T20:56:45+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <author>
+      <name>palex00</name>
+    </author>
+    <content>## Sphere model fix: locked placements no longer break lock-step
+
+Fixed the bug where locked in-game placements in the under-test game (vanilla or shuffled badges, HMs, key items) caused interleaved keys — e.g. lots of `KEY_12` arriving while `KEY_11` was still incomplete — along with false `LOGIC LEAK` warnings in the client. These items are never gated by the KEY spheres, so the player picks them up mid-sphere in real play; the sphere model now collects them via closure (like events) in both `count_events` modes, restoring the lock-step guarantee: a `KEY_(i+1)` is never legitimately reachable before every `KEY_i`.
+
+Related hardening:
+- The unreachable-marker pass uses the same networkable-location predicate as the sphere computation.
+- Generation fails loudly if the fixed-location snapshot hook didn't run, instead of silently falling back to post-fill lock flags.
+- Non-advancement items are skipped in the closure sets (they can't affect reachability).
+- New regression test replays gated play via `MultiWorld.get_spheres` against a slot with shuffled (locked) badges/HMs.
+
+## Client improvements
+
+- **Leak tracking persists across reconnects**: keys received ahead of the current sphere are recorded in server data storage (per team/slot), so leak history survives reconnects and item replays. Leaked spheres are flagged in the status output and GUI with the sphere they arrived on.
+- **Per-sphere key totals**: the status list and GUI tab now show have/required key counts for every sphere (done / now / locked), not just the current one.
+
+## Upgrade notes
+
+Seeds generated with 0.2.1 or earlier keep their old (misgrouped) key assignment — the fix applies at generation time, so affected multiworlds need a regen. Existing games remain playable; the early keys are safe and the leak warnings they trigger are spurious.
+</content>
+    <link href="https://github.com/palex00/Archipelago/releases/tag/logic-test-0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.10</id>
+    <title>Wargroove 2 v1.1.10</title>
+    <updated>2026-08-19T21:10:10+00:00</updated>
+    <author>
+      <name>Fly Hyping</name>
+    </author>
+    <author>
+      <name>Magnemania</name>
+    </author>
+    <author>
+      <name>Akblabla</name>
+    </author>
+    <author>
+      <name>Luminary Lytra</name>
+    </author>
+    <content># Features&#13;
+- Map Changes by KoiiBlitz.&#13;
+- Fixed a logic issue with the map Giant Issue</content>
+    <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/furret78/ArchipelagoHBM/releases/tag/0.4.5</id>
+    <title>Black Market of Bulletphilia ~ 100th Black Market v0.4.5</title>
+    <updated>2026-08-19T21:16:46+00:00</updated>
+    <author>
+      <name>Yuureiki</name>
+    </author>
+    <content>Archipelago Randomizer implementation for **_Black Market of Bulletphilia ~ 100th Black Market_**, also known as _**Touhou 18.5**_.&#13;
+&#13;
+- **.apworld version:** 0.4.5&#13;
+- **Minimum Archipelago Launcher version:** 0.6.7&#13;
+&#13;
+Recommended to play on Windows, as **the game does not support Linux natively**. If playing on Linux, it is recommended to run both Archipelago Launcher and the game in Wine/Proton.&#13;
+&#13;
+# Changelog&#13;
+- Added `Izanagi Object - Dragon Gem` item and its own item group.&#13;
+- Added **Dragon Gem Hunt goal**: the player must collect a certain number of `Izanagi Object - Dragon Gem`s before victory is achieved. This is a treasure hunt mode similar to Yoshi Island's Luigi Hunt and Super Mario World's Yoshi Egg Hunt goals.&#13;
+- Added options **Dragon Gems Required** and **Dragon Gems in Pool**.&#13;
+- Quality-of-life: `One-time` Items will now apply to the next run if they are received at the end of a stage.&#13;
+- Quality-of-life: The game will now NOT cap lives at 7 despite being able to carry up to 11.&#13;
+- Quality-of-life: There can now be up to 16 Equip Cost upgrade items in the item pool, totalling up to 900% Equip Cost if fully upgraded. Only applicable when playing with **Itemized Equipment Upgrades** set to **Separate**.&#13;
+- Fixed the 17th Ability Card loadout slot onwards containing Blank Card by default.&#13;
+- Fixed .yaml templates generating without Progression Balancing and Accessibility options.&#13;
+&#13;
+**Full Changelog**: https://github.com/furret78/ArchipelagoHBM/compare/unstable-0.4.4...0.4.5&#13;
+&#13;
+# Game Details and Setup&#13;
+- See **game details** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/en_100th%20Black%20Market.md). When exporting .yaml files for this game, it is recommended to use the Options Creator in the Archipelago Launcher for a smooth experience.&#13;
+- See the **setup guide** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/setup_en.md).</content>
+    <link href="https://github.com/furret78/ArchipelagoHBM/releases/tag/0.4.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.0.0-beta1</id>
+    <title>Wikipelago v1.0.0b1</title>
+    <updated>2026-08-19T21:36:11+00:00</updated>
+    <author>
+      <name>Dreskn (continued)</name>
+    </author>
+    <author>
+      <name>Skrumptily69 (original)</name>
+    </author>
+    <content>Test build. Not production.&#13;
+&#13;
+Install this pre-release wikipelago.apworld + use this YAM, do not use Latest.&#13;
+Play on the dev client: https://wikipelago-dev.dreskn.fr/&#13;
+Do not use main client with this build.&#13;
+Generate a new seed.</content>
+    <link href="https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.0.0-beta1"/>
   </entry>
 </feed>

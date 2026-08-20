@@ -1,9 +1,12 @@
 # PixelDraw
 
 ## Latest
-- <a href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/download/1.3.2/pixeldraw.apworld">Latest Version (1.3.2)</a>
+- <a href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/download/1.3.3/pixeldraw.apworld">Latest Version (1.3.3)</a>
 
 ## All Versions
+
+#### v1.3.3
+- <a href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/download/1.3.3/pixeldraw.apworld">https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/download/1.3.3/pixeldraw.apworld</a>
 
 #### v1.3.2
 - <a href="https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/download/1.3.2/pixeldraw.apworld">https://github.com/TheOmnipresence/PixelDrawAPWorld/releases/download/1.3.2/pixeldraw.apworld</a>
