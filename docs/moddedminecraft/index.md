@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/download/v3.0.6/moddedminecraft.apworld">Latest Version (3.0.6)</a>
+- <a href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/download/v3.0.7/moddedminecraft.apworld">Latest Version (3.0.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -4,7 +4,7 @@ A classic run and gun action game heavily focused on boss battles
 
 
 ## Downloads
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03h.5/cuphead.apworld">Latest Version (0.2.20020715)</a>
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03i/cuphead.apworld">Latest Version (0.2.20020810)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

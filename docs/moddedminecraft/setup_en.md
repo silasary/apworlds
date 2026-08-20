@@ -23,12 +23,6 @@
 5. in the yaml gotten from running `Generate Template Options` replace the curly brackets under checks with the copied json.
     - if using the Options Creator you will need to create a new line `  checks: {}` and replace those curly brackets.
 
-## Hosting A Game
-
-1. Generate
-2. Either generate again or restart archipelago (Code modifies the datapackage and that only updates at the start of generation or on launch)
-3. Host
-
 ## Issues
 - This apworld does not have any available checks at start. (Generation error: `No more spots to place #### items. Remaining locations are invalid.`)
   - Add `{"adv minecraft:story/root (Minecraft)":1}` to starting items.

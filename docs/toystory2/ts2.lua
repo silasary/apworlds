@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 2.1.2   <-- must match the Toy Story 2 .apworld release.
+-- CONNECTOR VERSION: 2.2.0   <-- must match the Toy Story 2 .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "2.1.2"
+TS2_VERSION = "2.2.0"
 
 -- ── Debug logging (OFF by default) ──────────────────────────────────────────
 -- A player who hits a bug (a crash, a stuck connection, a wrong send) can set
@@ -96,9 +96,9 @@ local SHARED_MOVE_UNLOCKS_LOW = 0x1FFFED
 local SHARED_MOVE_UNLOCKS_HIGH= 0x1FFFEF
 local SHARED_BOSS_DEFEATS     = 0x1FFFF2
 -- Rex / Prospector
-local SHARED_REX_LOW          = 0x1FF9C4
-local SHARED_REX_HIGH         = 0x1FF9C5
-local SHARED_PROSP_ITEM       = 0x1FF9C6
+local SHARED_REX_LOW          = 0x1FE9C4
+local SHARED_REX_HIGH         = 0x1FE9C5
+local SHARED_PROSP_ITEM       = 0x1FE9C6
 -- Despawn seeds (server -> Lua, ONE DIRECTION). The client derives the current
 -- level's collected mask from the AP server's checked_locations and writes it
 -- here every tick; the Lua only READS these to hide already-collected objects.
@@ -106,93 +106,93 @@ local SHARED_PROSP_ITEM       = 0x1FF9C6
 -- never produce a phantom check (unlike the SHARED_BATTERY/LIFE/LASER/TOY masks,
 -- which carry our own fresh-collection reports outward). Globals to stay under
 -- the 200-local limit in main.
-SHARED_DESPAWN_BATTERY  = 0x1FF97F
-SHARED_DESPAWN_LIFE      = 0x1FF980
-SHARED_DESPAWN_LASER     = 0x1FF9C7
-SHARED_DESPAWN_TOY       = 0x1FF9FF
+SHARED_DESPAWN_BATTERY  = 0x1FE97F
+SHARED_DESPAWN_LIFE      = 0x1FE980
+SHARED_DESPAWN_LASER     = 0x1FE9C7
+SHARED_DESPAWN_TOY       = 0x1FE9FF
 -- Traps / death / filler
-local SHARED_TRAP_NARROW      = 0x1FF981
-local SHARED_TRAP_INVINCIBLE  = 0x1FF982
-local SHARED_TRAP_FREEZE      = 0x1FF983
-local SHARED_TRAP_CUTSCENE    = 0x1FF984
-local SHARED_TRAP_DAMAGE      = 0x1FF985
-local SHARED_DEATH_LINK       = 0x1FF986
-local SHARED_EXTRA_LIFE       = 0x1FF987
-local SHARED_HEALTH_UP        = 0x1FF988
-SHARED_INVINCIBLE_BUZZ  = 0x1FF96B  -- filler: 15s of Buzz invincibility (global: main chunk is at the 200-local limit)
+local SHARED_TRAP_NARROW      = 0x1FE981
+local SHARED_TRAP_INVINCIBLE  = 0x1FE982
+local SHARED_TRAP_FREEZE      = 0x1FE983
+local SHARED_TRAP_CUTSCENE    = 0x1FE984
+local SHARED_TRAP_DAMAGE      = 0x1FE985
+local SHARED_DEATH_LINK       = 0x1FE986
+local SHARED_EXTRA_LIFE       = 0x1FE987
+local SHARED_HEALTH_UP        = 0x1FE988
+SHARED_INVINCIBLE_BUZZ  = 0x1FE96B  -- filler: 15s of Buzz invincibility (global: main chunk is at the 200-local limit)
 -- On-screen item feed: client writes a sequence byte (bumped on each new
 -- message) at 0x1FFF60, then up to 63 ASCII bytes + null terminator starting at
 -- 0x1FFF61. The Lua shows the latest message top-right for a few seconds.
 -- Parts collected
-local SHARED_EAR_COLLECTED    = 0x1FF989
-local SHARED_EYE_COLLECTED    = 0x1FF98A
-local SHARED_ARM_COLLECTED    = 0x1FF98B
-local SHARED_FOOT_COLLECTED   = 0x1FF98C
-local SHARED_MOUTH_COLLECTED  = 0x1FF98D
+local SHARED_EAR_COLLECTED    = 0x1FE989
+local SHARED_EYE_COLLECTED    = 0x1FE98A
+local SHARED_ARM_COLLECTED    = 0x1FE98B
+local SHARED_FOOT_COLLECTED   = 0x1FE98C
+local SHARED_MOUTH_COLLECTED  = 0x1FE98D
 -- Parts received
-local SHARED_EAR_RECEIVED     = 0x1FF98E
-local SHARED_EYE_RECEIVED     = 0x1FF98F
-local SHARED_ARM_RECEIVED     = 0x1FF990
-local SHARED_FOOT_RECEIVED    = 0x1FF991
-local SHARED_MOUTH_RECEIVED   = 0x1FF992
--- Parts exchanged (turned in to Mr. Potato Head) — 0x1FF9E1-0x1FF9E5
-local SHARED_EAR_EXCHANGED    = 0x1FF9E1
-local SHARED_EYE_EXCHANGED    = 0x1FF9E2
-local SHARED_ARM_EXCHANGED    = 0x1FF9E3
-local SHARED_FOOT_EXCHANGED   = 0x1FF9E4
-local SHARED_MOUTH_EXCHANGED  = 0x1FF9E5
+local SHARED_EAR_RECEIVED     = 0x1FE98E
+local SHARED_EYE_RECEIVED     = 0x1FE98F
+local SHARED_ARM_RECEIVED     = 0x1FE990
+local SHARED_FOOT_RECEIVED    = 0x1FE991
+local SHARED_MOUTH_RECEIVED   = 0x1FE992
+-- Parts exchanged (turned in to Mr. Potato Head) — 0x1FE9E1-0x1FE9E5
+local SHARED_EAR_EXCHANGED    = 0x1FE9E1
+local SHARED_EYE_EXCHANGED    = 0x1FE9E2
+local SHARED_ARM_EXCHANGED    = 0x1FE9E3
+local SHARED_FOOT_EXCHANGED   = 0x1FE9E4
+local SHARED_MOUTH_EXCHANGED  = 0x1FE9E5
 -- Gadgets received
 
 local SHARED_COINS = {
-    [1]=0x1FF971,[2]=0x1FF972,[4]=0x1FF973,[5]=0x1FF974,
-    [7]=0x1FF975,[8]=0x1FF976,[10]=0x1FF977,[11]=0x1FF978,
-    [13]=0x1FF979,[14]=0x1FF97A,
+    [1]=0x1FE971,[2]=0x1FE972,[4]=0x1FE973,[5]=0x1FE974,
+    [7]=0x1FE975,[8]=0x1FE976,[10]=0x1FE977,[11]=0x1FE978,
+    [13]=0x1FE979,[14]=0x1FE97A,
 }
 -- Coin bundle ITEMS received from AP (count of bundles granted, to convert to
 -- coins to spend). SEPARATE from SHARED_COINS (coinsanity detection).
 local SHARED_COIN_ITEMS = {
-    [1]=0x1FF9E6,[2]=0x1FF9E7,[4]=0x1FF9E8,[5]=0x1FF9E9,
-    [7]=0x1FF9EA,[8]=0x1FF9EB,[10]=0x1FF9EC,[11]=0x1FF9ED,
-    [13]=0x1FF9EE,[14]=0x1FF9EF,
+    [1]=0x1FE9E6,[2]=0x1FE9E7,[4]=0x1FE9E8,[5]=0x1FE9E9,
+    [7]=0x1FE9EA,[8]=0x1FE9EB,[10]=0x1FE9EC,[11]=0x1FE9ED,
+    [13]=0x1FE9EE,[14]=0x1FE9EF,
 }
 -- Hamm "50 coins" check done per coin level (client writes 1 from checked_locations).
 -- Global to avoid the 200-local limit.
 SHARED_HAMM_DONE = {
-    [1]=0x1FF960,[2]=0x1FF961,[4]=0x1FF962,[5]=0x1FF963,
-    [7]=0x1FF964,[8]=0x1FF965,[10]=0x1FF966,[11]=0x1FF967,
-    [13]=0x1FF968,[14]=0x1FF969,
+    [1]=0x1FE960,[2]=0x1FE961,[4]=0x1FE962,[5]=0x1FE963,
+    [7]=0x1FE964,[8]=0x1FE965,[10]=0x1FE966,[11]=0x1FE967,
+    [13]=0x1FE968,[14]=0x1FE969,
 }
 -- Token checks collected, one byte per hover_id (7-20). Bits: 1=Hamm's,
 -- 2=Missing Toys, 4=Race, 8=Hidden, 16=Boss. Lua writes, client reads.
 local SHARED_TOKENS_COLLECTED = {
-    [7]=0x1FF9F0,[8]=0x1FF9F1,[9]=0x1FF9F2,[10]=0x1FF9F3,
-    [11]=0x1FF9F4,[12]=0x1FF9F5,[13]=0x1FF9F6,[14]=0x1FF9F7,
-    [15]=0x1FF9F8,[16]=0x1FF9F9,[17]=0x1FF9FA,[18]=0x1FF9FB,
-    [19]=0x1FF9FC,[20]=0x1FF9FD,[21]=0x1FF9FE,
+    [7]=0x1FE9F0,[8]=0x1FE9F1,[9]=0x1FE9F2,[10]=0x1FE9F3,
+    [11]=0x1FE9F4,[12]=0x1FE9F5,[13]=0x1FE9F6,[14]=0x1FE9F7,
+    [15]=0x1FE9F8,[16]=0x1FE9F9,[17]=0x1FE9FA,[18]=0x1FE9FB,
+    [19]=0x1FE9FC,[20]=0x1FE9FD,[21]=0x1FE9FE,
 }
 local SHARED_TOY_COLLECTED = {
-    [1]=0x1FF9A1,[2]=0x1FF9A2,[4]=0x1FF9A3,[5]=0x1FF9A4,
-    [7]=0x1FF9A5,[8]=0x1FF9A6,[10]=0x1FF9A7,[11]=0x1FF9A8,
-    [13]=0x1FF9A9,[14]=0x1FF9AA,
+    [1]=0x1FE9A1,[2]=0x1FE9A2,[4]=0x1FE9A3,[5]=0x1FE9A4,
+    [7]=0x1FE9A5,[8]=0x1FE9A6,[10]=0x1FE9A7,[11]=0x1FE9A8,
+    [13]=0x1FE9A9,[14]=0x1FE9AA,
 }
 local SHARED_TOY_RECEIVED = {
-    [1]=0x1FF9AB,[2]=0x1FF9AC,[4]=0x1FF9AD,[5]=0x1FF9AE,
-    [7]=0x1FF9AF,[8]=0x1FF9B0,[10]=0x1FF9B1,[11]=0x1FF9B2,
-    [13]=0x1FF9B3,[14]=0x1FF9B4,
+    [1]=0x1FE9AB,[2]=0x1FE9AC,[4]=0x1FE9AD,[5]=0x1FE9AE,
+    [7]=0x1FE9AF,[8]=0x1FE9B0,[10]=0x1FE9B1,[11]=0x1FE9B2,
+    [13]=0x1FE9B3,[14]=0x1FE9B4,
 }
 local SHARED_BATTERY = {
-    [1]=0x1FF9B5,[2]=0x1FF9B6,[6]=0x1FF9B7,[4]=0x1FF9B8,
-    [5]=0x1FF9B9,[7]=0x1FF9BA,[8]=0x1FF9BB,[9]=0x1FF9BC,
-    [11]=0x1FF9BD,[13]=0x1FF9BE,[14]=0x1FF9BF,
+    [1]=0x1FE9B5,[2]=0x1FE9B6,[6]=0x1FE9B7,[4]=0x1FE9B8,
+    [5]=0x1FE9B9,[7]=0x1FE9BA,[8]=0x1FE9BB,[9]=0x1FE9BC,
+    [11]=0x1FE9BD,[13]=0x1FE9BE,[14]=0x1FE9BF,
 }
 local SHARED_LIFE = {
-    [1]=0x1FF9D9,[2]=0x1FF9DA,[4]=0x1FF9DB,[5]=0x1FF9DC,
-    [7]=0x1FF9DD,[8]=0x1FF9DE,[11]=0x1FF9DF,[14]=0x1FF9E0,
+    [1]=0x1FE9D9,[2]=0x1FE9DA,[4]=0x1FE9DB,[5]=0x1FE9DC,
+    [7]=0x1FE9DD,[8]=0x1FE9DE,[11]=0x1FE9DF,[14]=0x1FE9E0,
 }
 local SHARED_LASER_SANITY = {
-    [1]=0x1FF9C8,[2]=0x1FF9C9,[3]=0x1FF9CA,[4]=0x1FF9CB,
-    [5]=0x1FF9CC,[7]=0x1FF9CD,[8]=0x1FF9CE,[10]=0x1FF9CF,
-    [11]=0x1FF9D0,[13]=0x1FF9D1,[14]=0x1FF9D2,
+    [1]=0x1FE9C8,[2]=0x1FE9C9,[3]=0x1FE9CA,[4]=0x1FE9CB,
+    [5]=0x1FE9CC,[7]=0x1FE9CD,[8]=0x1FE9CE,[10]=0x1FE9CF,
+    [11]=0x1FE9D0,[13]=0x1FE9D1,[14]=0x1FE9D2,
 }
 
 -- ============================================================
@@ -235,6 +235,61 @@ local MV = {
     PUSH_LOCKED=0x00000000,  PUSH_UNLOCKED=0x8663000E,
     ROPE_LOCKED=0x00000000,  ROPE_UNLOCKED=0x00431023,
 }
+
+-- ── Move gates patched as CODE, not as game state ───────────────────────────
+-- All verified by disassembling a MainRAM dump of SLUS-00893 (see 2.1.3 notes).
+-- GLOBAL, not local: the main chunk is at the 200-local ceiling (see header).
+--
+-- VISOR: the activation block is INLINED TWICE, once per player-state handler.
+-- Both copies read the button word at 0x0A12B4 (1500($gp)), mask it with
+-- 0x000FFF7F, compare to 1, and on a match set visor state 0x0A11F4 = 3 and
+-- zero the player's three velocity fields at +104/+108/+112 -- that zeroing is
+-- what reads as a mid-air "double jump". ts2.lua only ever patched 0x04CD00,
+-- so the 0x04A474 copy kept firing and kept granting the L1 double jump with no
+-- Visor owned. A whole-executable scan found exactly these two copies.
+VISOR_OP_A, VISOR_OP_A_REAL = 0x04CD00, 0x00831824   -- and $v1, $a0, $v1
+VISOR_OP_B, VISOR_OP_B_REAL = 0x04A474, 0x00A31824   -- and $v1, $a1, $v1
+--
+-- POLE: 0x0A1244 is NOT a permission flag. It is the game's live "attached to a
+-- pole" state (0 = free, -1 = attached) and the game writes it in 12 places
+-- inside the pole routine at 0x04B3A8. Lock the grab GATE instead:
+--   0x04B3FC unlocked = bne $v0,$zero,0x04B4E0  (scan for a pole if not attached)
+--            locked   = beq $zero,$zero,...     (unconditionally skip the scan)
+-- The routine has exactly one caller (jal 0x04B3A8 at 0x04CD9C) and this is its
+-- only gate, so patching it is a complete lock that never touches live state.
+POLE_GATE, POLE_GATE_UNLOCKED, POLE_GATE_LOCKED = 0x04B3FC, 0x14400038, 0x10000038
+--
+-- DOUBLE JUMP: blocked in the game's own code now, not at the input.
+-- The jump handler runs:
+--   0x049794  lhu  $v0, 0x15BC($v0)     ; the button word at 0x0A15BC
+--   0x04979C  andi $v0, $v0, 0x4000     ; 0x4000 = Cross/X  (0x0400 = L1, which is
+--                                       ;   what the visor gate tests -- same word)
+--   0x0497A0  beq  $v0, $zero, 0x049A2C ; X not held -> leave the handler entirely
+--   0x0497B0  lh   $v1, 140($s0)        ; the jump state machine (A.JUMP)
+--   0x0497B8  bne  $v1, $v0(2), 0x049814 ; state != 2 -> the NORMAL jump path
+--                                        ; state == 2 (first jump FALLING) falls
+--                                        ; through to the second-jump body at
+--                                        ; 0x049860 (velocity, sound 16, state 5)
+-- 0x0497B8 is the divergence, so that is what we force. A grounded press has
+-- state 0 and ALREADY takes this branch, so first jumps are untouched; only the
+-- state==2 fall-through disappears.
+-- (0x0497A0 is NOT the right anchor -- it gates the whole handler, so forcing it
+-- removes every jump. Learned the hard way.)
+--
+-- This replaces the old input suppression, which could never be reliable: it
+-- wrote A.INPUT (0x0A3DDB), and NONE of the button words the game actually tests
+-- -- 0x0A15BC here, 0x0A12B4 for the visor -- are that byte. Suppression was
+-- racing the game's own pad copy every frame, which is why spamming X leaked a
+-- second jump through, and why it needed a special case to stop eating pole
+-- leaps. A code patch has no timing to lose.
+DJ_GATE, DJ_GATE_UNLOCKED, DJ_GATE_LOCKED = 0x0497B8, 0x14620016, 0x10000016
+-- Repair for builds that briefly patched 0x0497A0 instead: that value can be
+-- baked into a savestate, and a stuck 0x100000A2 there means Buzz cannot jump at
+-- all. Re-assert the vanilla instruction every frame; it is never patched now.
+DJ_XGATE, DJ_XGATE_VANILLA = 0x0497A0, 0x104000A2
+-- Legacy input-suppression path. The gate above supersedes it; flip this to true
+-- only if the code patch ever needs backing up.
+DJ_INPUT_FALLBACK = false
 
 local TOKEN_ADDR = {
     [7]=0x0C1618,[8]=0x0C1619,[9]=0x0C161A,[10]=0x0C161B,
@@ -288,14 +343,14 @@ local BIT_TO_NAME={[1]="Hamm's 50 Coins Token",[2]="Missing Toys Token",[4]="Rac
 -- ============================================================
 GM_LATCH = {}  -- global (no local-limit cost): game-mode latch state
 function get_game_mode()
-    -- Read the game mode from the mirror (0x1FF97D) the client writes, tagged
+    -- Read the game mode from the mirror (0x1FE97D) the client writes, tagged
     -- 0xA0=open / 0xA1=linear. We only trust (and latch) a magic-tagged value, so
     -- random RAM garbage can't be mistaken for a real mode (a bare 0/1 could, and
     -- that broke linear after the first level). The real settings byte (0x1FFFD1)
     -- is in the top-of-RAM region the game corrupts during transitions, so it's
     -- only a last-resort fallback before the client's first write.
     if GM_LATCH.cached ~= nil then return GM_LATCH.cached end
-    local m = mainmemory.read_u8(0x1FF97D)
+    local m = mainmemory.read_u8(0x1FE97D)
     if m == 0xA0 or m == 0xA1 then
         GM_LATCH.cached = m - 0xA0
         return GM_LATCH.cached
@@ -368,12 +423,12 @@ end
 -- Sanity settings (bit flags in a settings byte — we read SHARED_GAME_MODE area)
 -- The Python client writes slot_data settings; we read them from fixed addresses
 -- We use dedicated addresses just above our shared map for sanity toggles
-local SHARED_SETTINGS = 0x1FF9D3  -- 1 byte: bit0=coinsanity, bit1=lifesanity, bit2=batterysanity, bit3=laser_sanity, bit4=rexsanity, bit5=movesanity, bit6=hintsanity
-local SHARED_MUSIC_MODE   = 0x1FF9D4  -- 0=off, 1=normal, 2=chaos, 3=oops
-local SHARED_MUSIC_TRACK  = 0x1FF9D5  -- oops all bangers track
-local SHARED_SKIP_SONG    = 0x1FF9D6  -- 1=enabled
-local SHARED_QOL          = 0x1FF9D7  -- bit0=autosave, bit1=disc-fill, bit2=fallAnim, bit3=skipCutscenes, bit4=autocoins
-local SHARED_DEATH_LINK_ON= 0x1FF9D8  -- 1=death link enabled
+local SHARED_SETTINGS = 0x1FE9D3  -- 1 byte: bit0=coinsanity, bit1=lifesanity, bit2=batterysanity, bit3=laser_sanity, bit4=rexsanity, bit5=movesanity, bit6=hintsanity
+local SHARED_MUSIC_MODE   = 0x1FE9D4  -- 0=off, 1=normal, 2=chaos, 3=oops
+local SHARED_MUSIC_TRACK  = 0x1FE9D5  -- oops all bangers track
+local SHARED_SKIP_SONG    = 0x1FE9D6  -- 1=enabled
+local SHARED_QOL          = 0x1FE9D7  -- bit0=RETIRED, bit1=disc-fill, bit2=fallAnim, bit3=skipCutscenes, bit4=autocoins
+local SHARED_DEATH_LINK_ON= 0x1FE9D8  -- 1=death link enabled
 
 function setting(byte_addr, bit)
     return (mainmemory.read_u8(byte_addr) & (1 << bit)) ~= 0
@@ -385,6 +440,10 @@ function is_batterysanity() return setting(SHARED_SETTINGS, 2) end
 function is_lasersanity()   return setting(SHARED_SETTINGS, 3) end
 function is_rexsanity()     return setting(SHARED_SETTINGS, 4) end
 function is_hintsanity()    return setting(SHARED_SETTINGS, 6) end
+-- bit0 was the Auto Save option. The option is gone and the client now holds
+-- this bit at 0 for every seed, so is_auto_save() is always false and the
+-- savestate.saveslot(10) call in update_map never runs. Kept, not deleted, so
+-- the feature can be turned back on from the client side alone.
 function is_auto_save()     return setting(SHARED_QOL, 0) end
 function is_autocoins()     return setting(SHARED_QOL, 4) end
 function is_disc_fill()     return setting(SHARED_QOL, 1) end
@@ -478,7 +537,7 @@ local rex_triggered   = false
 -- Connection generation: the client bumps SHARED_CONN_GEN each connect. When it
 -- changes we clear the rex mask/state so talks from a previous seed (still held in
 -- this running Lua) aren't asserted into a newly-connected seed.
-SHARED_CONN_GEN       = 0x1FF96A
+SHARED_CONN_GEN       = 0x1FE96A
 conn_gen_seen         = nil   -- global (200-local limit)
 
 -- ============================================================
@@ -555,8 +614,8 @@ end
 -- SHARED_MUSIC_MAP_VALID is 1 once the 22 bytes at SHARED_MUSIC_MAP_BASE hold a
 -- real map (index = natural track id, value = track to play instead).
 -- GLOBAL, not local: the main chunk is at the 200-local ceiling (see header).
-SHARED_MUSIC_MAP_VALID = 0x1FFB00
-SHARED_MUSIC_MAP_BASE  = 0x1FFB01
+SHARED_MUSIC_MAP_VALID = 0x1FEB00
+SHARED_MUSIC_MAP_BASE  = 0x1FEB01
 
 -- Preferred path: the map was rolled at GENERATION time with the seed's own RNG
 -- and shipped via slot_data, so it is identical on every reconnect. Returns true
@@ -634,20 +693,20 @@ PART_GADGET_BIT = {
 -- level's NATIVE Potato-Head gadget. The game would natively grant these via the
 -- Potato flow; we only let that happen if you actually own the matching item.
 NATIVE_GADGET_OWN = {
-    [1]  = 0x1FF993,  -- Cosmic Shield - Andy's House
-    [4]  = 0x1FF995,  -- Disc Launcher - Construction Yard
-    [7]  = 0x1FF999,  -- Rocket Boots - Al's Toy Barn
-    [10] = 0x1FF99D,  -- Grappling Hook - Elevator Hop
-    [13] = 0x1FF99F,  -- Hover Boots - Airport Infiltration
+    [1]  = 0x1FE993,  -- Cosmic Shield - Andy's House
+    [4]  = 0x1FE995,  -- Disc Launcher - Construction Yard
+    [7]  = 0x1FE999,  -- Rocket Boots - Al's Toy Barn
+    [10] = 0x1FE99D,  -- Grappling Hook - Elevator Hop
+    [13] = 0x1FE99F,  -- Hover Boots - Airport Infiltration
 }
 -- Server-published seed: bit set when that level's "Missing X" pickup check is
 -- collected. While the bit is CLEAR (pickup not yet collected) we clear the
 -- gadget-unlock bit so the game re-spawns the world pickup.
-SHARED_DESPAWN_PART = 0x1FF9C0
+SHARED_DESPAWN_PART = 0x1FE9C0
 PART_SEED_BIT = {
     [1]=1, [4]=2, [7]=4, [10]=8, [13]=16,  -- bits 0..4
 }
-SHARED_DESPAWN_PART_EXCH = 0x1FF9C1
+SHARED_DESPAWN_PART_EXCH = 0x1FE9C1
 -- Potato/sanity/map state (compact)
 local gadgets_written, part_watched, part_exchanged, toys_written = false, false, false, false
 local part_seen_present = {}
@@ -695,22 +754,22 @@ local last_tickets, last_tokens_linear = -1, -1
 for lvl,_ in pairs(PARTS) do potato_collected2_idx[lvl]=1 end
 
 local GADGETS = {
-    [0x1FF993] = { level=1,
+    [0x1FE993] = { level=1,
         containers={{addr=0x14F797,uncollected=16},{addr=0x14F799,uncollected=16},{addr=0x14F79B,uncollected=16},{addr=0x1B6619,uncollected=16},{addr=0x1B661D,uncollected=16},{addr=0x1B6622,uncollected=7},{addr=0x149B6A,uncollected=76},{addr=0x1B6621,uncollected=240}},
         hitboxes={{addr=0x0CA0D0,uncollected=8}},
         sizes={{addr=0x14F7B7,collected=32},{addr=0x14F7B9,collected=32},{addr=0x14F7BB,collected=32}},
         usability={0x0C78F1} },
-    [0x1FF994] = { level=2,
+    [0x1FE994] = { level=2,
         containers={{addr=0x13ED2B,uncollected=16},{addr=0x13ED2D,uncollected=16},{addr=0x13ED2F,uncollected=16},{addr=0x13FFAB,uncollected=16},{addr=0x13FFAD,uncollected=16},{addr=0x13FFAF,uncollected=16},{addr=0x13FFCB,uncollected=16},{addr=0x13FFCD,uncollected=16},{addr=0x13FFCF,uncollected=16},{addr=0x16CFA9,uncollected=16},{addr=0x16CFB1,uncollected=16},{addr=0x16CFB9,uncollected=16},{addr=0x16CFD1,uncollected=240},{addr=0x16AE11,uncollected=240},{addr=0x16AE19,uncollected=16},{addr=0x16AE1A,uncollected=7},{addr=0x16AE1E,uncollected=7},{addr=0x16AE21,uncollected=240},{addr=0x16B016,uncollected=3},{addr=0x16CFD9,uncollected=16},{addr=0x16CFE1,uncollected=240},{addr=0x13B4EE,uncollected=73},{addr=0x13C5BA,uncollected=73},{addr=0x13C5CE,uncollected=73}},
         hitboxes={{addr=0x0C9D90,uncollected=8},{addr=0x0C9DC4,uncollected=8},{addr=0x0C9DF8,uncollected=8}},
         sizes={}, usability={0x0C7A41,0x0C7A51,0x0C7A61} },
-    [0x1FF995] = { level=4,
+    [0x1FE995] = { level=4,
         containers={{addr=0x187A44,uncollected=224},{addr=0x187A45,uncollected=251},{addr=0x187A49,uncollected=16},{addr=0x187A4C,uncollected=32},{addr=0x187A4D,uncollected=4},{addr=0x187A50,uncollected=117},{addr=0x187A51,uncollected=15},{addr=0x187D10,uncollected=51},{addr=0x187D11,uncollected=19},{addr=0x187D18,uncollected=51},{addr=0x187D19,uncollected=19},{addr=0x187A40,uncollected=117},{addr=0x187A41,uncollected=15},{addr=0x1393DA,uncollected=9},{addr=0x1395E2,uncollected=9},{addr=0x187E55,uncollected=16},{addr=0x187E59,uncollected=16},{addr=0x187E5D,uncollected=240}},
         hitboxes={{addr=0x0C9D28,uncollected=8},{addr=0x0C9F30,uncollected=8}},
         sizes={}, usability={0x0C7881,0x0C7871} },
-    [0x1FF996] = { level=5,
+    [0x1FE996] = { level=5,
         -- 0x19E9CC/0x19E9CD were previously listed here too, but they belong to
-        -- Rocket Boots (0x1FF998) -- they are the tail of its contiguous
+        -- Rocket Boots (0x1FE998) -- they are the tail of its contiguous
         -- 0x19E9BC-0x19E9CD block. Having them in BOTH lists made the two gadgets
         -- fight over the same bytes: owning Grappling Hook but not Rocket Boots
         -- meant unlock_gadget wrote 0 over the 28/243 that write_gadget had just
@@ -720,45 +779,45 @@ local GADGETS = {
         containers={{addr=0x19E9E4,uncollected=248},{addr=0x19E9E5,uncollected=244},{addr=0x19E9E8,uncollected=150},{addr=0x19E9E9,uncollected=11},{addr=0x19E9EA,uncollected=6},{addr=0x19E9ED,uncollected=16},{addr=0x19E9EE,uncollected=5},{addr=0x19E9F0,uncollected=106},{addr=0x19E9F1,uncollected=244},{addr=0x13AEA6,uncollected=73},{addr=0x13FE73,uncollected=12,collected=16},{addr=0x13FE75,uncollected=12,collected=16},{addr=0x13FE77,uncollected=12,collected=16},{addr=0x19E9F4,uncollected=248},{addr=0x19E9F5,uncollected=244}},
         hitboxes={{addr=0x0C9C58,uncollected=8}},
         sizes={}, usability={0x0C7961} },
-    [0x1FF997] = { level=5,
+    [0x1FE997] = { level=5,
         containers={{addr=0x19E69D,uncollected=252},{addr=0x19E6C2,uncollected=2},{addr=0x19E73D,uncollected=240},{addr=0x19E745,uncollected=16},{addr=0x19E746,uncollected=7},{addr=0x19E74A,uncollected=7},{addr=0x19E74D,uncollected=240},{addr=0x13AD52,uncollected=73}},
         hitboxes={{addr=0x0C9C24,uncollected=8}},
         sizes={}, usability={0x0C79F1} },
-    [0x1FF998] = { level=5,
+    [0x1FE998] = { level=5,
         containers={{addr=0x19E9BC,uncollected=140},{addr=0x19E9BD,uncollected=241},{addr=0x19E9BE,uncollected=194},{addr=0x19E9BF,uncollected=255},{addr=0x19E9C0,uncollected=221},{addr=0x19E9C1,uncollected=6},{addr=0x19E9C2,uncollected=168},{addr=0x19E9C3,uncollected=252},{addr=0x19E9C4,uncollected=54},{addr=0x19E9C5,uncollected=14},{addr=0x19E9C6,uncollected=120},{addr=0x19E9C7,uncollected=249},{addr=0x19E9C9,uncollected=250},{addr=0x19E9CA,uncollected=169},{addr=0x19E9CB,uncollected=248},{addr=0x19E9CC,uncollected=28},{addr=0x19E9CD,uncollected=243},{addr=0x13FEF3,uncollected=16},{addr=0x13FEF5,uncollected=16},{addr=0x13FEF7,uncollected=16},{addr=0x140093,uncollected=16},{addr=0x140095,uncollected=16},{addr=0x140097,uncollected=16},{addr=0x13AE56,uncollected=73},{addr=0x13AE92,uncollected=73}},
         hitboxes={{addr=0x0C9B54,uncollected=8},{addr=0x0C9B88,uncollected=8}},
         sizes={}, usability={0x0C7AB1,0x0C7951} },
-    [0x1FF999] = { level=7,
+    [0x1FE999] = { level=7,
         containers={{addr=0x168EA5,uncollected=16},{addr=0x168EA9,uncollected=240},{addr=0x137D13,uncollected=16},{addr=0x137D15,uncollected=16},{addr=0x137D17,uncollected=16},{addr=0x168EA1,uncollected=16},{addr=0x168EB7,uncollected=128},{addr=0x168EB6,uncollected=10},{addr=0x13458A,uncollected=73}},
         hitboxes={{addr=0x0C9C8C,uncollected=8}},
         sizes={}, usability={0x0C7881} },
-    [0x1FF99A] = { level=7,
+    [0x1FE99A] = { level=7,
         containers={{addr=0x16A38C,uncollected=224},{addr=0x16A38D,uncollected=254},{addr=0x16A38E,uncollected=9},{addr=0x16A390,uncollected=245},{addr=0x16A391,uncollected=15},{addr=0x16A392,uncollected=7},{addr=0x16A394,uncollected=1},{addr=0x16A395,uncollected=16},{addr=0x16A396,uncollected=248},{addr=0x16A397,uncollected=255},{addr=0x16A398,uncollected=9},{addr=0x16A399,uncollected=240},{addr=0x16A39A,uncollected=6},{addr=0x16A39C,uncollected=224},{addr=0x16A39D,uncollected=254},{addr=0x16A3A4,uncollected=36},{addr=0x16A3A5,uncollected=75},{addr=0x135002,uncollected=73}},
         hitboxes={{addr=0x0C9D28,uncollected=8}},
         sizes={}, usability={0x0C78B1} },
-    [0x1FF99B] = { level=7,
+    [0x1FE99B] = { level=7,
         containers={{addr=0x169AA8,uncollected=231},{addr=0x169AA9,uncollected=252},{addr=0x169AAD,uncollected=16},{addr=0x169AB0,uncollected=25},{addr=0x169AB1,uncollected=3},{addr=0x169AB4,uncollected=178},{addr=0x169AB5,uncollected=15},{addr=0x134B8E,uncollected=73},{addr=0x169AA5,uncollected=15}},
         hitboxes={{addr=0x0C9CC0,uncollected=8}},
         sizes={}, usability={0x0C7891} },
-    [0x1FF99C] = { level=8,
+    [0x1FE99C] = { level=8,
         containers={{addr=0x170739,uncollected=254},{addr=0x17073C,uncollected=240},{addr=0x17073D,uncollected=15},{addr=0x17073E,uncollected=7},{addr=0x170741,uncollected=16},{addr=0x170742,uncollected=1},{addr=0x170744,uncollected=16},{addr=0x170745,uncollected=240},{addr=0x170746,uncollected=7},{addr=0x170748,uncollected=155},{addr=0x170749,uncollected=254},{addr=0x13661E,uncollected=73}},
         hitboxes={{addr=0x0C97E0,uncollected=8}},
         sizes={{addr=0x13A1B7,collected=32},{addr=0x13A1B9,collected=32},{addr=0x13A1BB,collected=32}},
         usability={0x0C7811} },
-    [0x1FF99D] = { level=10,
+    [0x1FE99D] = { level=10,
         containers={{addr=0x13BE73,uncollected=16},{addr=0x13BE75,uncollected=16},{addr=0x13BE77,uncollected=16},{addr=0x1393F2,uncollected=73}},
         hitboxes={{addr=0x0C9CF4,uncollected=8}},
         sizes={}, usability={0x0C77A1} },
-    [0x1FF99E] = { level=11,
+    [0x1FE99E] = { level=11,
         containers={{addr=0x14532F,uncollected=16},{addr=0x145331,uncollected=16},{addr=0x145333,uncollected=16},{addr=0x13FD22,uncollected=73}},
         hitboxes={{addr=0x0C9D5C,uncollected=8}},
         sizes={{addr=0x144EFF,collected=32},{addr=0x144F01,collected=32},{addr=0x144F03,collected=32}},
         usability={0x0C7841} },
-    [0x1FF99F] = { level=13,
+    [0x1FE99F] = { level=13,
         containers={{addr=0x19643D,uncollected=16},{addr=0x196441,uncollected=16},{addr=0x1977ED,uncollected=240},{addr=0x1977F0,uncollected=1},{addr=0x1977F1,uncollected=16},{addr=0x1448AA,uncollected=73},{addr=0x145282,uncollected=73},{addr=0x1488EB,uncollected=16},{addr=0x1488ED,uncollected=16},{addr=0x1488EF,uncollected=16},{addr=0x148FD3,uncollected=16},{addr=0x148FD5,uncollected=16},{addr=0x148FD7,uncollected=16},{addr=0x195F5E,uncollected=129},{addr=0x196445,uncollected=240},{addr=0x1977F5,uncollected=16}},
         hitboxes={{addr=0x0C99B4,uncollected=8},{addr=0x0C9980,uncollected=8}},
         sizes={}, usability={0x0C7871,0x0C7881} },
-    [0x1FF9A0] = { level=14,
+    [0x1FE9A0] = { level=14,
         containers={{addr=0x186C40,uncollected=250},{addr=0x186C41,uncollected=255},{addr=0x186C45,uncollected=16},{addr=0x186C46,uncollected=7},{addr=0x186C49,uncollected=16},{addr=0x187191,uncollected=15},{addr=0x187194,uncollected=251},{addr=0x187195,uncollected=250},{addr=0x187199,uncollected=16},{addr=0x1871A1,uncollected=15},{addr=0x187190,uncollected=49},{addr=0x18719C,uncollected=5},{addr=0x18719D,uncollected=5},{addr=0x186D80,uncollected=87},{addr=0x186D81,uncollected=249},{addr=0x186D82,uncollected=3},{addr=0x186D84,uncollected=116},{addr=0x186D85,uncollected=241},{addr=0x186D86,uncollected=1},{addr=0x186D88,uncollected=1},{addr=0x186D89,uncollected=16},{addr=0x186D8A,uncollected=3},{addr=0x186D8C,uncollected=140},{addr=0x186D8D,uncollected=14},{addr=0x186CE1,uncollected=241},{addr=0x186CE4,uncollected=182},{addr=0x186CE5,uncollected=5},{addr=0x186CE6,uncollected=3},{addr=0x186CE9,uncollected=16},{addr=0x186CEA,uncollected=7},{addr=0x186CEC,uncollected=74},{addr=0x186CED,uncollected=250},{addr=0x186CEE,uncollected=7},{addr=0x186CF1,uncollected=241},{addr=0x186EC1,uncollected=15},{addr=0x186EC4,uncollected=94},{addr=0x186EC5,uncollected=5},{addr=0x186EC9,uncollected=16},{addr=0x186ECC,uncollected=162},{addr=0x186ECD,uncollected=250},{addr=0x186ED0,uncollected=18},{addr=0x186ED1,uncollected=15},{addr=0x186BC9,uncollected=14},{addr=0x186BCC,uncollected=94},{addr=0x186BCD,uncollected=7},{addr=0x186BD1,uncollected=16},{addr=0x186BD4,uncollected=162},{addr=0x186BD5,uncollected=248},{addr=0x186BD8,uncollected=51},{addr=0x186BD9,uncollected=14},{addr=0x186F39,uncollected=13},{addr=0x186F3C,uncollected=28},{addr=0x186F3D,uncollected=247},{addr=0x186F41,uncollected=16},{addr=0x186F44,uncollected=228},{addr=0x186F45,uncollected=8},{addr=0x186DD1,uncollected=5},{addr=0x186DD4,uncollected=14},{addr=0x186DD5,uncollected=241},{addr=0x186DD9,uncollected=16},{addr=0x186DDC,uncollected=242},{addr=0x186DDD,uncollected=14},{addr=0x186DE0,uncollected=182},{addr=0x186DE1,uncollected=5},{addr=0x186FB1,uncollected=5},{addr=0x186FB4,uncollected=10},{addr=0x186FB5,uncollected=15},{addr=0x186FB9,uncollected=16},{addr=0x186FBC,uncollected=246},{addr=0x186FBD,uncollected=240},{addr=0x186FC0,uncollected=117},{addr=0x186FC1,uncollected=5},{addr=0x186D31,uncollected=241},{addr=0x186D32,uncollected=7},{addr=0x186D34,uncollected=132},{addr=0x186D35,uncollected=249},{addr=0x186D36,uncollected=5},{addr=0x186D38,uncollected=1},{addr=0x186D39,uncollected=16},{addr=0x186D3A,uncollected=7},{addr=0x186D3C,uncollected=124},{addr=0x186D3D,uncollected=6},{addr=0x186D30,uncollected=96},{addr=0x187000,uncollected=255},{addr=0x187001,uncollected=14},{addr=0x187004,uncollected=109},{addr=0x187005,uncollected=250},{addr=0x187009,uncollected=16},{addr=0x18700C,uncollected=147},{addr=0x18700D,uncollected=5},{addr=0x187010,uncollected=255},{addr=0x187011,uncollected=14},{addr=0x186C95,uncollected=12},{addr=0x186C96,uncollected=6},{addr=0x186C99,uncollected=16},{addr=0x186C9A,uncollected=5},{addr=0x186C9C,uncollected=65},{addr=0x186C9D,uncollected=243},{addr=0x186C9E,uncollected=7},{addr=0x186CA0,uncollected=85},{addr=0x186CA1,uncollected=246},{addr=0x186C4D,uncollected=240},{addr=0x186C91,uncollected=246},{addr=0x186D41,uncollected=241},{addr=0x186D91,uncollected=249},{addr=0x186F49,uncollected=13},{addr=0x186BA1,uncollected=9},{addr=0x186BA5,uncollected=12},{addr=0x186BA9,uncollected=16},{addr=0x186BAD,uncollected=243},{addr=0x186BB1,uncollected=9}},
         hitboxes={{addr=0x0C987C,uncollected=8},{addr=0x0C9744,uncollected=8},{addr=0x0C9918,uncollected=8},{addr=0x0C98B0,uncollected=8},{addr=0x0C9980,uncollected=8},{addr=0x0C97AC,uncollected=8},{addr=0x0C9710,uncollected=8},{addr=0x0C98E4,uncollected=8},{addr=0x0C97E0,uncollected=8},{addr=0x0C9848,uncollected=8},{addr=0x0C994C,uncollected=8},{addr=0x0C9814,uncollected=8},{addr=0x0C9778,uncollected=8}},
         sizes={},
@@ -870,11 +929,11 @@ for lvl,_ in pairs(LASERS_SANITY) do laser_masks[lvl]=0 end
 -- REX DATA
 -- ============================================================
 local REX_LEVEL_TO_BIT = {
-    [1]={addr=0x1FF9C4,bit=0},[2]={addr=0x1FF9C4,bit=1},
-    [4]={addr=0x1FF9C4,bit=2},[5]={addr=0x1FF9C4,bit=3},
-    [7]={addr=0x1FF9C4,bit=4},[8]={addr=0x1FF9C4,bit=5},
-    [10]={addr=0x1FF9C5,bit=0},[11]={addr=0x1FF9C5,bit=1},
-    [13]={addr=0x1FF9C5,bit=2},[14]={addr=0x1FF9C5,bit=3},
+    [1]={addr=0x1FE9C4,bit=0},[2]={addr=0x1FE9C4,bit=1},
+    [4]={addr=0x1FE9C4,bit=2},[5]={addr=0x1FE9C4,bit=3},
+    [7]={addr=0x1FE9C4,bit=4},[8]={addr=0x1FE9C4,bit=5},
+    [10]={addr=0x1FE9C5,bit=0},[11]={addr=0x1FE9C5,bit=1},
+    [13]={addr=0x1FE9C5,bit=2},[14]={addr=0x1FE9C5,bit=3},
 }
 
 function make_text(bytes, len)
@@ -932,8 +991,8 @@ for lid,_ in pairs(LEVEL_SIGNATURES) do rex_state[lid]=0 end
 -- they stay correct across resets. Because the seed never feeds the published
 -- mask, a stale/garbage read of it can never cause a phantom check (worst case is
 -- briefly-wrong dialog text, which the client's per-tick rewrite corrects).
-HINT_MASK_ADDR = 0x1FF9C2
-HINT_SEED_ADDR = 0x1FFA83
+HINT_MASK_ADDR = 0x1FE9C2
+HINT_SEED_ADDR = 0x1FEA83
 HINT_BLOCKS = {
     [1] = {
         {name="Andy's Room Bookshelf", sig={0x69,0x66,0x20,0x79,0x6F,0x75,0x20,0x73,0x65,0x65,0x20,0x74,0x68,0x65,0x20,0x5E,0x70,0x75,0x73,0x68,0x5E,0x20,0x69,0x63,0x6F,0x6E,0x20,0x79}},
@@ -1155,8 +1214,34 @@ function get_rex_replacement(level_id)
     else return TEXT_DOTS end
 end
 
+-- The name field that begins immediately after each linear boss-gate slot. A
+-- gate label like "10/14 tokens" is 12 characters and those slots are exactly 12
+-- bytes, so its terminator has to live in the FOLLOWING field's first byte.
+-- That byte is not spare -- write_all_level_names() repaints every hover through
+-- pairs(), so the neighbour would put its own text straight back and the game
+-- would render both fields as one string again ("10/14 TOKENSLOCKED").
+-- Both sides therefore have to agree on that byte: the gate writes the
+-- terminator, and the neighbour paints nothing but a terminator. Then the result
+-- is the same whichever order pairs() happens to visit them in.
+-- Safe because in LINEAR the level behind a closed gate is closed too, so its
+-- name is never on screen; it repaints normally the moment the gate opens.
+GATE_BEFORE = {[10]=9, [13]=12}
+function gate_label_fills_slot(h)
+    if get_game_mode()~=1 then return false end
+    if not LINEAR_GATE_NUM[h] then return false end
+    if is_level_unlocked(h) then return false end
+    local cap=LABEL_CAP[h]; if not cap then return false end
+    local s=boss_gate_label(h)
+    return s ~= nil and #s >= cap
+end
+
 function write_level_name(hover_id,use_locked)
     local d=LEVEL_NAME_DATA[hover_id]; if not d then return end
+    local prev=GATE_BEFORE[hover_id]
+    if prev and gate_label_fills_slot(prev) then
+        mainmemory.write_u8(d.start, 0x00)   -- yield our first byte to its terminator
+        return
+    end
     -- OPEN mode: the final-showdown (hover 21) name shows the goal-condition
     -- shorthand whenever the GOAL is unmet, independent of whether the level is
     -- enterable. In open mode 21 can be unlocked (a received Final Showdown Unlock
@@ -1237,10 +1322,10 @@ LOCK_MSG_SHOW = 193
 -- at 0x1FFFF3-F6, past the validated shared map (ends 0x1FFFF2) in the top-of-RAM
 -- the game corrupts -- so they read 0 in-game and the goal label/popup fell back to
 -- "locked" / "missing goal conditions".
-GOAL_FLAGS_ADDR    = 0x1FF96C
-GOAL_BOSS_DEF_ADDR = 0x1FF96D   -- bosses defeated
-GOAL_BOSS_REQ_ADDR = 0x1FF96E   -- bosses required
-GOAL_TOK_REQ_ADDR  = 0x1FF96F   -- tokens required for the goal
+GOAL_FLAGS_ADDR    = 0x1FE96C
+GOAL_BOSS_DEF_ADDR = 0x1FE96D   -- bosses defeated
+GOAL_BOSS_REQ_ADDR = 0x1FE96E   -- bosses required
+GOAL_TOK_REQ_ADDR  = 0x1FE96F   -- tokens required for the goal
 
 -- hover_id -> linear boss-gate number (1..5). 21 = linear final showdown (gate 5),
 -- which in LINEAR mode is a plain token gate; in OPEN mode 21 is the goal gate.
@@ -1278,6 +1363,16 @@ function write_label(hover_id, s)
     -- buffer bytes -- e.g. the goal shorthand showing a garbage tail.
     local clr = math.max(#s + 1, #d.original); if clr > cap then clr = cap end
     write_ascii(d.start, s, clr)
+    -- ...except when the text EXACTLY fills the cap, because every LABEL_CAP equals
+    -- its slot size, so the clamp above eats the terminator and the render runs
+    -- straight into the NEXT level's name field. That is the linear boss gate:
+    -- "10/14 tokens" is 12 characters and hovers 9 and 12 have 12-byte slots, which
+    -- rendered as "10/14 TOKENSLOCKED". Terminate one byte past the text.
+    -- That byte belongs to the following name field (0x0E275C Construction Yard,
+    -- 0x0E2790 Al's Toy Barn), which is safe HERE and only here: this label only
+    -- shows while that gate is closed, and in linear the level behind it is closed
+    -- too, so its name is never on screen. Both are repainted when the gate opens.
+    if #s >= clr then mainmemory.write_u8(d.start + #s, 0x00) end
 end
 
 -- "have/need tokens" for a linear boss gate (live token count vs that gate).
@@ -1372,12 +1467,25 @@ function dj_pad_x()
     local ok, pad = pcall(joypad.get)
     if ok and type(pad) == "table" then
         for name, val in pairs(pad) do
-            if type(name) == "string" and name:find("Cross") then
+            if type(name) == "string" and dj_is_cross_name(name) then
                 return val and true or false
             end
         end
     end
     return is_x_pressed(mainmemory.read_u8(A.INPUT))
+end
+
+-- BUGFIX: Nymashock labels the face buttons with the PlayStation GLYPHS --
+-- "P1 X", "P1 O", "P1 []", "P1 /\" -- not "Cross". The old name:find("Cross")
+-- therefore never matched on the core we actually ship on, and dj_pad_x() fell
+-- through to the A.INPUT byte every single time: precisely the unreliable path
+-- its own comment warns against. Because A.INPUT is the byte the suppressor
+-- writes, the edge detector saw its own writes, so suppression toggled on and
+-- off frame to frame and mid-air jumps leaked through. Match both spellings so
+-- other PSX cores (which do say "Cross") keep working. Anchored to the end so
+-- nothing else in the pad table -- "Disk Index", "P1 Analog" -- can collide.
+function dj_is_cross_name(n)
+    return n:find("Cross", 1, true) ~= nil or n == "X" or n:sub(-2) == " X"
 end
 
 function check_token_collection(level_id,hover_id)
@@ -1714,8 +1822,12 @@ function update_moves()
         local hook_ready=mainmemory.read_u8(0x0BEA20)
         local using_hook=visor_1~=0 and visor_2~=0 and hook_ready~=255
         if not (disc_ammo>0 or using_hook) then
-            if (255-input)&LZ.SQUARE_BIT~=0 then
-                mainmemory.write_u8(A.INPUT,input+LZ.SQUARE_BIT)
+            -- Read-modify-write the CURRENT byte, never the copy taken at the top
+            -- of update_moves: several blocks in this function write A.INPUT, and
+            -- stamping down a stale copy silently undoes the others' work.
+            local cur = mainmemory.read_u8(A.INPUT)
+            if (cur & LZ.SQUARE_BIT) == 0 then
+                mainmemory.write_u8(A.INPUT, cur | LZ.SQUARE_BIT)
             end
             mainmemory.write_u32_le(A.LASER_PROG,LZ.PROG_DEFAULT)
             mainmemory.write_u32_le(A.LASER_SUPER,0)
@@ -1846,8 +1958,27 @@ function update_moves()
     --   * while the pause menu is open nothing is suppressed, so menu input works
     --     normally. A press made INSIDE the menu is then swallowed on resume,
     --     because by then it is only "held" and has no rising edge left to catch.
-    if not HAS_DBL_JUMP then
-        local dj_air = jump ~= 0
+    -- Block (or restore) the double jump in the GAME'S code. Asserted every frame
+    -- in both directions, like ledge grab and the visor, so nothing can strand it.
+    if not HAS_DBL_JUMP then mainmemory.write_u32_le(DJ_GATE, DJ_GATE_LOCKED)
+    else                     mainmemory.write_u32_le(DJ_GATE, DJ_GATE_UNLOCKED) end
+    -- Always vanilla: see DJ_XGATE above. Repairs a savestate that captured the
+    -- short-lived wrong patch, which otherwise blocks jumping outright.
+    mainmemory.write_u32_le(DJ_XGATE, DJ_XGATE_VANILLA)
+
+    if not HAS_DBL_JUMP and DJ_INPUT_FALLBACK then
+        -- BUGFIX (could not jump off poles while owning Pole Climb): hanging on a
+        -- pole is not "grounded", so jump~=0, and the fresh X press used to leap
+        -- off looked exactly like a mid-air double jump and got swallowed. It only
+        -- bit players who owned Pole Climb but NOT Double Jump, which is why it
+        -- read as a pole-climb bug rather than a double-jump one.
+        -- 0x0A1244 is the game's live pole-attachment state (0 = free, non-zero =
+        -- attached; confirmed by disassembling the pole routine at 0x04B3A8), so
+        -- use it to exempt pole jumps. The real double jump is still blocked: by
+        -- the time Buzz is airborne the press is only HELD, so it has no rising
+        -- edge left to catch -- the same reason a jump from the ground is safe.
+        local on_pole = mainmemory.read_u32_le(A.POLE) ~= 0
+        local dj_air = (jump ~= 0) and not on_pole
         local dj_pad = dj_pad_x()
 
         -- Debounced airborne latch. The raw jump state can flick back to 0 for a
@@ -1857,6 +1988,10 @@ function update_moves()
         if dj_air then DJ_GROUND_RUN = 0 else DJ_GROUND_RUN = DJ_GROUND_RUN + 1 end
         if dj_air then DJ_LATCHED = true
         elseif DJ_GROUND_RUN >= DJ_GROUND_HOLD then DJ_LATCHED = false end
+        -- Drop the latch the instant Buzz grabs a pole, rather than waiting out
+        -- DJ_GROUND_HOLD: otherwise a leap off within the first few frames of
+        -- attaching would still be treated as a mid-air press and swallowed.
+        if on_pole then DJ_LATCHED = false; DJ_SUPPRESSING = false end
 
         if mainmemory.read_u8(A.PAUSE) ~= 0 then
             -- Paused. Record whether X was ALREADY held when the menu opened, so
@@ -1909,18 +2044,34 @@ function update_moves()
     end
 
     -- Visor
+    -- BUGFIX: the visor-activation gate is inlined TWICE (VISOR_OP_A/B above).
+    -- Only copy A was ever patched, so copy B kept running and kept zeroing the
+    -- player's velocity fields on an L1 press -- which is the "L1 double jump
+    -- without the Visor" players reported. Both copies are patched now.
+    -- NOTE: the A.INPUT suppression below cannot influence this path at all --
+    -- the gate reads the button word at 0x0A12B4, not A.INPUT (0x0A3DDB). It is
+    -- left in place because other code may still consume A.INPUT.
     if not HAS_VISOR then
-        if (255-input)&LZ.VISOR_L1_BIT~=0 then
-            mainmemory.write_u8(A.INPUT,input+LZ.VISOR_L1_BIT)
+        -- BUGFIX (L1 + X gave a double jump): this used to write
+        -- `input + VISOR_L1_BIT`, where `input` is the copy taken at the TOP of
+        -- update_moves. The double-jump block runs BEFORE this one and releases X
+        -- by setting bit 0x40 in A.INPUT -- and this write then stamped the stale
+        -- pre-suppression byte straight back down, un-releasing X. So holding L1
+        -- while pressing X in mid-air cancelled the double-jump block every
+        -- frame. Read-modify-write, and only ever touch our own bit.
+        local cur = mainmemory.read_u8(A.INPUT)
+        if (cur & LZ.VISOR_L1_BIT) == 0 then
+            mainmemory.write_u8(A.INPUT, cur | LZ.VISOR_L1_BIT)
         end
-        -- Patch out the Visor ability instruction entirely (NOP). This not only
-        -- blocks the visor from opening but also kills the L1 mid-air double jump,
-        -- which only exists while the Visor is functional. 0x04CD00: locked=NOP,
-        -- unlocked=0x00831824.
-        mainmemory.write_u32_le(0x04CD00,0x00000000)
+        mainmemory.write_u32_le(VISOR_OP_A, 0x00000000)
+        mainmemory.write_u32_le(VISOR_OP_B, 0x00000000)
         visor_restored=false
-    elseif not visor_restored then
-        mainmemory.write_u32_le(0x04CD00,0x00831824)
+    else
+        -- Asserted EVERY frame in BOTH directions (the ledge-grab pattern) so
+        -- nothing -- a savestate load, an overlay reload -- can strand a NOP
+        -- here and leave the Visor permanently dead. Two u32 writes is nothing.
+        mainmemory.write_u32_le(VISOR_OP_A, VISOR_OP_A_REAL)
+        mainmemory.write_u32_le(VISOR_OP_B, VISOR_OP_B_REAL)
         visor_restored=true
     end
 
@@ -1938,8 +2089,18 @@ function update_moves()
     end
 
     -- Pole climb
-    if not HAS_POLE then mainmemory.write_u32_le(A.POLE,MV.POLE_LOCKED)
-    elseif not pole_restored then mainmemory.write_u32_le(A.POLE,MV.POLE_UNLOCKED); pole_restored=true end
+    -- BUGFIX: this used to write A.POLE (0x0A1244) directly -- FFFFFFFF to lock,
+    -- 00000000 to unlock. But that address is the game's LIVE "attached to a
+    -- pole" state, not a permission flag (see POLE_GATE above). The lock worked
+    -- by accident; the unlock was the problem. A bare write of 0 means "not on a
+    -- pole", so whenever that one-shot write landed while the player actually
+    -- WAS on one -- any frame where HAS_POLE briefly read false and re-armed
+    -- pole_restored -- it detached them mid-climb and left them stuck: unable to
+    -- jump off. Patch the grab gate instead. Code, not live state, so it is safe
+    -- to assert every frame in both directions and A.POLE is never touched.
+    if not HAS_POLE then mainmemory.write_u32_le(POLE_GATE, POLE_GATE_LOCKED)
+    else                 mainmemory.write_u32_le(POLE_GATE, POLE_GATE_UNLOCKED)
+                         pole_restored=true end
 
     -- Pole vault
     if not HAS_VAULT then
@@ -2143,7 +2304,7 @@ function update_cutscene(level)
     -- what froze checks/coinsanity/Rex the instant a cutscene trap was received.
     local cs_now = mainmemory.read_u8(CUTSCENE_STATE_ADDR)
     CS_PLAYING = CS.active and (cs_now==32 or cs_now==64)
-    mainmemory.write_u8(0x1FF97E, CS_PLAYING and 1 or 0)
+    mainmemory.write_u8(0x1FE97E, CS_PLAYING and 1 or 0)
 
     -- Decrement the load-settle trigger timer.
     if CS.trigger_timer>0 then CS.trigger_timer=CS.trigger_timer-1 end
@@ -2810,14 +2971,41 @@ COIN_UI_VALUE   = 0x88   -- written to A.COIN_ANIM on collect (non-coinsanity)
 autocoin_load_timer = 0
 AUTOCOIN_LOAD_WAIT  = 120
 
-function ac_is_coin(m)
-    if mainmemory.read_u8(m) ~= COIN_MARKER then return false end
+AC_LOOKBACK     = 6      -- ac_is_coin inspects bytes [m-6 .. m]
+
+-- Bulk block reader, probed ONCE so the per-frame path stays a single call.
+-- read_bytes_as_array is 1-indexed; readbyterange is the older 0-indexed
+-- spelling and is present on every BizHawk we support. Returns
+-- (table, index_of_base) so the caller's arithmetic is identical either way.
+-- GLOBAL, not local: the main chunk is at the 200-local ceiling (see header).
+ac_block_reader = nil
+function ac_get_block_reader()
+    if ac_block_reader then return ac_block_reader end
+    if mainmemory.read_bytes_as_array then
+        ac_block_reader = function(base, len)
+            return mainmemory.read_bytes_as_array(base, len), 1
+        end
+    else
+        ac_block_reader = function(base, len)
+            return mainmemory.readbyterange(base, len), 0
+        end
+    end
+    return ac_block_reader
+end
+
+function ac_is_coin(buf, base, first, m)
+    -- Identical fingerprint to the old per-byte version, read out of the block
+    -- snapshot instead of five separate emulator calls. buf[first] holds the
+    -- byte at `base`, so the byte at address x is buf[(x - base) + first].
+    -- An out-of-range index yields nil, which fails the marker test safely.
+    local i = (m - base) + first
+    if buf[i] ~= COIN_MARKER then return false end
     if m-6 < 0 then return false end
-    local b6 = mainmemory.read_u8(m-6)
-    if b6 == 0 then return false end
-    if b6 ~= mainmemory.read_u8(m-4) then return false end   -- identity pair equal
-    if mainmemory.read_u8(m-5) ~= 0 then return false end     -- zero between pair
-    if mainmemory.read_u8(m-3) ~= 0 then return false end     -- zero after pair
+    local b6 = buf[i-6]
+    if b6 == nil or b6 == 0 then return false end
+    if b6 ~= buf[i-4] then return false end   -- identity pair equal
+    if buf[i-5] ~= 0 then return false end    -- zero between pair
+    if buf[i-3] ~= 0 then return false end    -- zero after pair
     return true
 end
 
@@ -2837,13 +3025,30 @@ function update_auto_coins(level)
         return
     end
 
+    -- PERF: snapshot the whole object block in ONE emulator call. The old loop
+    -- made a mainmemory.read_u8 call per byte -- 4,000 NLua round trips EVERY
+    -- FRAME (240k/second) just to find, usually, nothing. On a slower machine
+    -- that is a serious slice of the 16.7ms frame budget, and this runs on every
+    -- coin level whenever the QOL option is on.
+    -- Behaviour is unchanged. The despawn below MUTATES memory as it scans, and
+    -- the old code's later reads saw those zeroes -- so a marker sitting within
+    -- the despawn window of a coin just collected could not match. The same
+    -- zeroes are mirrored into the snapshot below, which preserves that exactly.
+    local base = COIN_BLOCK_LO - AC_LOOKBACK
+    local blen = COIN_BLOCK_HI - base + 1
+    local buf, first = ac_get_block_reader()(base, blen)
+
     local collected = 0
     for a = COIN_BLOCK_LO, COIN_BLOCK_HI do
-        if ac_is_coin(a) then
+        if ac_is_coin(buf, base, first, a) then
             -- Despawn: wide zero around the marker (proven to remove the coin).
             for o = COIN_DESPAWN_LO, COIN_DESPAWN_HI do
                 local x = a + o
-                if x >= 0 then mainmemory.write_u8(x, 0) end
+                if x >= 0 then
+                    mainmemory.write_u8(x, 0)
+                    local bi = (x - base) + first
+                    if bi >= first and bi < first + blen then buf[bi] = 0 end
+                end
             end
             -- Bump the raw coin counter by 1 (u8 ceiling guard).
             local c = mainmemory.read_u8(A.COIN)
@@ -3141,7 +3346,7 @@ end
 -- ============================================================
 -- ON-SCREEN ITEM FEED
 -- ============================================================
--- The client writes a sequence byte at 0x1FFA00 and a message at 0x1FFA01,
+-- The client writes a sequence byte at 0x1FEA00 and a message at 0x1FEA01,
 -- encoded as alternating text|color|text|color... segments separated by '|'.
 -- Color codes: w=white, g=green(items), c=cyan(players), y=yellow(locations),
 -- r=red. New messages STACK vertically and each fades out on its own timer
@@ -3167,10 +3372,10 @@ local feed = {seq=-1, msgs={}, CHAR_W=10, LIFE=360}
 -- press the Lua bumps a one-direction counter at FEED_CYCLE_ADDR; the client
 -- watches it and advances the mode (announcing it on screen) when it changes.
 -- NOTE: this counter must NOT share a byte with anything the game/Lua writes during
--- play, or that write looks like a Select press. It originally sat at 0x1FF9C3,
--- which is the HIGH BYTE of the u16 hint mask (0x1FF9C2): writing the hint mask on
+-- play, or that write looks like a Select press. It originally sat at 0x1FE9C3,
+-- which is the HIGH BYTE of the u16 hint mask (0x1FE9C2): writing the hint mask on
 -- Andy's House entry, and the Living Room Recliner block (bit 8 -> high byte),
--- spuriously cycled the feed. It now lives at 0x1FF970, clear of all other shared
+-- spuriously cycled the feed. It now lives at 0x1FE970, clear of all other shared
 -- bytes.
 --
 -- IMPORTANT: we read the Select button from joypad.get() (the emulated controller
@@ -3179,7 +3384,7 @@ local feed = {seq=-1, msgs={}, CHAR_W=10, LIFE=360}
 -- byte A.INPUT at update_coins: spurious bit-clear reads), which made bit0 flicker
 -- and randomly cycled the feed during the Bombs Away boss fight. joypad.get reads
 -- the actual host->emulator input, so it's stable everywhere.
-FEED_CYCLE_ADDR = 0x1FF970
+FEED_CYCLE_ADDR = 0x1FE970
 feed_select_was_down = false
 
 function select_is_pressed()
@@ -3205,12 +3410,12 @@ function update_item_feed()
     end
     feed_select_was_down = sel_down
 
-    local seq = mainmemory.read_u8(0x1FFA00)
+    local seq = mainmemory.read_u8(0x1FEA00)
     if seq ~= feed.seq then
         feed.seq = seq
         local chars = {}
         for i = 0, 119 do
-            local b = mainmemory.read_u8(0x1FFA01 + i)
+            local b = mainmemory.read_u8(0x1FEA01 + i)
             if b == 0 then break end
             chars[#chars+1] = string.char(b)
         end
@@ -3265,8 +3470,8 @@ function on_init()
     -- On-screen item feed buffer (in the safe scratch region; the 0x1FFFxx top
     -- of RAM is used by the game stack during load and writing there crashed the
     -- game when the script loaded together with it).
-    mainmemory.write_u8(0x1FFA00, 0)
-    for i = 0, 127 do mainmemory.write_u8(0x1FFA01 + i, 0) end
+    mainmemory.write_u8(0x1FEA00, 0)
+    for i = 0, 127 do mainmemory.write_u8(0x1FEA01 + i, 0) end
     -- Feed mode cycle counter (Select button -> client advances mode)
     mainmemory.write_u8(FEED_CYCLE_ADDR, 0)
     -- Coin bundle counters
@@ -3315,10 +3520,10 @@ function on_init()
     mainmemory.write_u8(SHARED_REX_LOW, 0)
     mainmemory.write_u8(SHARED_REX_HIGH, 0)
     mainmemory.write_u8(SHARED_CONN_GEN, 0)
-    mainmemory.write_u8(0x1FF97B, 0)
-    mainmemory.write_u8(0x1FF97C, 0)
-    mainmemory.write_u8(0x1FF97D, 0)  -- game-mode mirror (client writes mode+1)
-    mainmemory.write_u8(0x1FF97E, 0)  -- cutscene-active flag (pauses client checks)
+    mainmemory.write_u8(0x1FE97B, 0)
+    mainmemory.write_u8(0x1FE97C, 0)
+    mainmemory.write_u8(0x1FE97D, 0)  -- game-mode mirror (client writes mode+1)
+    mainmemory.write_u8(0x1FE97E, 0)  -- cutscene-active flag (pauses client checks)
     -- Boss defeats
     mainmemory.write_u8(SHARED_BOSS_DEFEATS, 0)
     -- Player progress state (unlocks, tokens, tickets, moves, laser).
@@ -3331,8 +3536,8 @@ function on_init()
     mainmemory.write_u8(SHARED_TOKENS, 0)
     mainmemory.write_u8(SHARED_TICKETS, 0)
     mainmemory.write_u8(SHARED_LASER_LEVEL, 0)
-    -- Gadgets received (addresses 0x1FF993-0x1FF9A0)
-    for addr=0x1FF993,0x1FF9A0 do mainmemory.write_u8(addr, 0) end
+    -- Gadgets received (addresses 0x1FE993-0x1FE9A0)
+    for addr=0x1FE993,0x1FE9A0 do mainmemory.write_u8(addr, 0) end
 
     -- Write sentinel LAST so the client only validates once everything is zeroed
     mainmemory.write_u8(0x1FFFD0, 0xAB)
@@ -3371,6 +3576,15 @@ function on_level_change(new_level, prev_level)
     end
 
     -- Moves
+    -- Migration from the old A.POLE-squatting lock: versions up to 2.1.2 left
+    -- 0xFFFFFFFF ("attached to a pole") sitting in 0x0A1244. If a player carries
+    -- that in from an older session or savestate while owning Pole Climb, the
+    -- grab scan at 0x04B3FC never runs and poles stay dead. Clearing it here is
+    -- always safe -- a level transition is never mid-climb -- and the game also
+    -- zeroes it itself at 0x049388/0x049470 on level init.
+    if is_move_unlocked(BITS.POLE) and mainmemory.read_u32_le(A.POLE)==0xFFFFFFFF then
+        mainmemory.write_u32_le(A.POLE, 0)
+    end
     buzz_moved=false; last_buzz_x=-1; last_buzz_y=-1
     buzz_baseline_set=false
     buzz_spawn.started=false; buzz_spawn.base=0; buzz_spawn.cand=-1; buzz_spawn.stable=0; buzz_spawn.disc=nil
@@ -3508,10 +3722,118 @@ function on_level_change(new_level, prev_level)
         elseif mm==2 then mapped=CHAOS_POOL[math.random(#CHAOS_POOL)]
         elseif mm==3 then mapped=oops_track()
         else mapped=music_natural end
-        if mapped then mainmemory.write_u8(A.MUSIC,mapped); music_current=mapped end
+        -- mapped>=0: music_natural is -1 until the first level entry where
+        -- A.MUSIC reads something other than 255 (see the raw~=255 filter above),
+        -- and -1 is TRUTHY in Lua, so on that first entry the bare `if mapped`
+        -- let a negative track id through to write_u8 -- which BizHawk silently
+        -- truncates, giving a garbage track and a bogus music_current. In mm==1
+        -- the same thing happens via normal_map[-1] being nil. The else-branch
+        -- below already guarded for exactly this; this matches it.
+        if mapped and mapped>=0 then mainmemory.write_u8(A.MUSIC,mapped); music_current=mapped end
     else
         if music_natural~=-1 then
             mainmemory.write_u8(A.MUSIC,music_natural); music_current=music_natural
+        end
+    end
+end
+
+-- ============================================================
+-- TITLE SCREEN BRANDING
+-- ============================================================
+-- The title/menu strings are plain null-terminated ASCII in a packed table.
+-- Each one lives in a fixed-size slot, so a replacement must be no LONGER than
+-- the original (all three below are shorter) and the leftover tail has to be
+-- zeroed or the old ending shows through ("start apme").
+--
+-- These addresses are only menu text while the menu exists -- during gameplay
+-- the same memory holds unrelated data. So we only ever write when the slot
+-- currently holds the EXACT vanilla string plus its terminator. That means we
+-- rewrite each time the game re-populates the menu, and we never touch the
+-- addresses at any other time.
+--
+-- NOTE ON "v 2 2 0": in this font the digits 1-4 are BUTTON GLYPHS, not digits
+-- -- the game's own strings "2 select", "1  fire", "2  jump", "3  spin" are how
+-- it draws the square/cross/circle/triangle icons. So a literal 2 here will
+-- probably render as the X button. TITLE_STRINGS is deliberately easy to edit:
+-- change the `new` values, reload ts2.lua, and look at the title screen.
+TITLE_BLOCK_LO  = 0x0E2648
+TITLE_BLOCK_LEN = 0x4C          -- covers 0x0E2648 .. 0x0E2693 (all three slots)
+
+-- The menu font is NOT ASCII for digits. 0x30-0x39 are the controller-button
+-- icons -- that is not our quirk, it is what the vanilla string "2 select" is
+-- asking for, and it draws as "(circle) select". The real digit glyphs start at
+-- 0xA3, so '0'=0xA3 .. '9'=0xAC. Verified on hardware in this exact slot:
+-- 76 20 A5 20 A5 20 A3 draws "v 2 2 0", while ASCII 76 20 32 20 32 20 30 draws
+-- button icons where the numbers should be.
+TITLE_FONT_DIGIT0 = 0xA3
+
+-- `room` is the number of bytes before the NEXT string in the table begins, so a
+-- replacement plus its terminator has to fit inside it. ("options" sits directly
+-- behind two of these three.) The neighbour checks in title_test.lua are what
+-- catch a wrong value here.
+TITLE_STRINGS = {
+    { addr = 0x0E2648, orig = "start game",    text = "start ap",    room = 12 },
+    { addr = 0x0E2668, orig = "continue game", text = "continue ap", room = 16 },
+    { addr = 0x0E2688, orig = "2 select",      text = nil,           room = 12 },
+}
+
+function ts2_title_encode(s)
+    local out = {}
+    for i = 1, #s do
+        local c = string.byte(s, i)
+        if c >= 0x30 and c <= 0x39 then c = TITLE_FONT_DIGIT0 + (c - 0x30) end
+        out[i] = c
+    end
+    return out
+end
+
+-- "2.2.0" -> "v 2 2 0". Spaces stand in for the dots because the menu font has
+-- no '.' glyph. Anything that is not three dotted numbers returns nil and the
+-- slot keeps its vanilla text -- a half-drawn version number is worse than none.
+function ts2_title_version_text(v)
+    local maj, min, pat = tostring(v or ""):match("^(%d+)%.(%d+)%.(%d+)$")
+    if not maj then return nil end
+    return "v " .. maj .. " " .. min .. " " .. pat
+end
+
+-- Encode once at load, so bumping TS2_VERSION is the ONLY edit a release needs.
+function ts2_title_init()
+    TITLE_STRINGS[3].text = ts2_title_version_text(TS2_VERSION)
+    for _, t in ipairs(TITLE_STRINGS) do
+        t.new = nil
+        if t.text then
+            if #t.text + 1 <= t.room then
+                t.new = ts2_title_encode(t.text)
+            else
+                -- Overrunning would eat the next menu entry, so drop the whole
+                -- replacement rather than truncate it into nonsense.
+                ts2_debug(string.format(
+                    "title: %q needs %d bytes, slot at 0x%06X holds %d -- skipped",
+                    t.text, #t.text + 1, t.addr, t.room))
+            end
+        end
+    end
+end
+ts2_title_init()
+
+function update_title_text()
+    local buf, first = ac_get_block_reader()(TITLE_BLOCK_LO, TITLE_BLOCK_LEN)
+    for _, t in ipairs(TITLE_STRINGS) do
+        local base  = (t.addr - TITLE_BLOCK_LO) + first
+        local match = t.new ~= nil
+        for i = 1, #t.orig do
+            if buf[base + i - 1] ~= string.byte(t.orig, i) then match = false; break end
+        end
+        -- Require the terminator too, so a coincidental byte run cannot trigger.
+        if match and buf[base + #t.orig] ~= 0 then match = false end
+        if match then
+            for i = 1, #t.new do
+                mainmemory.write_u8(t.addr + i - 1, t.new[i])
+            end
+            -- Terminate, and clear any tail of the old string left behind.
+            for i = #t.new, math.max(#t.orig, #t.new) do
+                mainmemory.write_u8(t.addr + i, 0)
+            end
         end
     end
 end
@@ -3695,7 +4017,7 @@ function ts2_main()
     -- mirror is magic-tagged 0xA0/0xA1). Lets a player tell "settings never arrived"
     -- (client/slot_data problem) apart from "settings arrived fine".
     if not SETTINGS_SEEN then
-        local _gm = mainmemory.read_u8(0x1FF97D)
+        local _gm = mainmemory.read_u8(0x1FE97D)
         if _gm == 0xA0 or _gm == 0xA1 then
             SETTINGS_SEEN = true
             print("[TS2] Settings received from client — tracking active.  (connector v"..TS2_VERSION..")")
@@ -3742,8 +4064,12 @@ function ts2_main()
 
     update_item_feed()
 
+    -- Menu branding. Self-gating: only writes when the vanilla string is
+    -- actually present, so it costs one block read per frame and nothing else.
+    update_title_text()
+
     -- Rex: write the rex bytes authoritatively EVERY frame, regardless of which
-    -- level value we are in. The game corrupts 0x1FF9C4/C5 during the load hitch
+    -- level value we are in. The game corrupts 0x1FE9C4/C5 during the load hitch
     -- on the way back to the map (level bounces through transition values), and
     -- the client reads those bytes every frame — so the rewrite must NOT be gated
     -- to the in-level branch or phantom rex checks fire during the transition.
@@ -3767,8 +4093,8 @@ function ts2_main()
         -- old seed's value until the client's per-tick restore overwrites them next
         -- frame. Re-ORing them now would immediately re-poison the cleared mask.
         if not just_reconnected then
-            rex_lua_mask.lo = rex_lua_mask.lo | mainmemory.read_u8(0x1FF97B)
-            rex_lua_mask.hi = rex_lua_mask.hi | mainmemory.read_u8(0x1FF97C)
+            rex_lua_mask.lo = rex_lua_mask.lo | mainmemory.read_u8(0x1FE97B)
+            rex_lua_mask.hi = rex_lua_mask.hi | mainmemory.read_u8(0x1FE97C)
             mainmemory.write_u8(SHARED_REX_LOW, rex_lua_mask.lo)
             mainmemory.write_u8(SHARED_REX_HIGH, rex_lua_mask.hi)
         end
@@ -3923,21 +4249,159 @@ end
 -- ============================================================
 print("[TS2] Archipelago combined script loaded!  (connector v"..TS2_VERSION..")")
 print("[TS2] Waiting for Python client to write settings...")
--- Register the main loop. When debug is ON, wrap it so a Lua error (which would
--- otherwise silently stop the script and look like a "crash" to the player) is
--- recorded with its message before it propagates -- the single most useful thing
--- for diagnosing a crash report. Behavior is unchanged: the error is re-raised,
--- so the script still stops exactly as before, but now there is a log line saying
--- what and where. When debug is OFF there is no wrapper and no overhead.
+-- ── HEALTH BEACON ───────────────────────────────────────────────────────────
+-- Correcting an assumption the old comment here made: BizHawk does NOT stop the
+-- script when a callback throws. NamedLuaFunction.Call wraps every event handler
+-- in LuaSandbox.Sandbox, which catches the exception, prints it to the LUA
+-- CONSOLE, and returns -- the handler simply runs again next frame. So a bug in
+-- Part 1 does not look like a crash at all: the game plays on, the AP client
+-- stays connected and happy, and the randomizer just quietly stops sending
+-- checks, with the only record in a window players never open. Worse, an error
+-- inside on_level_change means `last_level=level` never runs, so the same call
+-- re-throws every frame forever and Part 1 stays dead until ts2.lua is reloaded.
+--
+-- So stop relying on the Lua Console. Beat a counter every frame and let the
+-- CLIENT report a stall, in the AP client log -- the one artefact players
+-- reliably send us.
+--   TS2_HEALTH_ADDR  rolling counter; frozen => this handler is not running
+--   TS2_ERR_ADDR     0 = fine, 1 = Part 1 has thrown at least once
+-- Both are read by ts2_client.py. A savestate reverts them, so the client tests
+-- for CHANGE, not increase.
+--
+-- 2.2.0 MOVED THIS BLOCK. It used to live at 0x1FFC00-0x1FFC04, described as
+-- "verified clear of every other shared use". It is not clear -- it is live game
+-- memory, and writing it is what caused the random Level Select hang.
+-- Evidence, from the 14 RAM dumps in the Toy Story 2 folder:
+--   * 0x1FFC00-0x1FFC0F is NON-ZERO in 14/14 dumps.
+--   * 0x1FFC00 holds a POINTER. 0x1FFC01 is the only byte of it the beacon did
+--     not overwrite, and in all five Level Select dumps it equals byte 1 of the
+--     live pointer at 0x1FFC0C (0x800FF3E0 / 0x800FF440 / 0x800FF480 /
+--     0x800FEF0C / 0x800FF52C -> 0x1FFC01 = F3 / F4 / F4 / EF / F5). 5 of 5.
+--   * The two dumps taken with an older ts2.lua (no version publish) show that
+--     range holding completely different game data again, so it is general
+--     purpose memory the game hands out, not spare RAM.
+-- The 2.1.3 beat alone only corrupted byte 0, so the pointer still landed inside
+-- the same buffer and usually survived. 2.2.0 added the 3-byte version publish at
+-- 0x1FFC02, which overwrites bytes 2-3 -- the whole top half of the pointer.
+-- 0x800FF3E0 becomes 0x0202F3D7, which is not a mapped address; the moment the
+-- game follows it the emulated CPU wanders off and loops forever while EmuHawk
+-- itself stays responsive and no Lua error is ever printed. That is the reported
+-- "random freeze on the Level Select", and it is why an older ts2.lua does not
+-- have it: 2.1.2 never writes there at all.
+--
+-- Confirmed fixed in play: with the beacon moved, the Level Select stops hanging.
+-- The beacon is at 0x1FE8A0-0x1FE8A9, inside the connector's shared block at
+-- 0x1FE8A0-0x1FEB16. The block was at 0x1FF8A0-0x1FFB16 until 2.2.0 and moved
+-- DOWN BY 0x1000 -- one hex digit, so every relative offset and table stride
+-- still holds exactly.
+--
+-- It moved because the old block was not ours: shared_probe.lua, run with this
+-- script UNLOADED, caught the game writing bytes the connector claimed in every
+-- level -- including SHARED_LIFE[14] at 0x1FF9E0, byte 0 of a pointer
+-- (0x800BB800) the game keeps in Tarmac Trouble, which this script re-asserted
+-- every frame with lifesanity on. That was the in-level freeze.
+--
+-- The first attempt at this move went to 0x1FF0A0 and broke the game: nothing
+-- ever writes that range, so the probe called it free -- but it holds the
+-- PlayStation disc header the BIOS loads at boot, 0x20 padding. Reading 0x20
+-- instead of 0 fired the cutscene trap and sent phantom checks. A home must be
+-- never-written AND zero in every dump. Static is not free.
+--
+-- 0x1FE8A0-0x1FEB16 passes both tests for all 324 bytes, over 12 levels and 16
+-- dumps, inside a 3,456-byte free run: 2,208 bytes of margin below, 617 above.
+--
+-- The block now opens with a 4-byte MAGIC. Without it the client cannot tell
+-- "this ts2.lua published version 0.0.0" from "this ts2.lua published nothing and
+-- I am reading the game's memory" -- which is exactly why an old ts2.lua produced
+-- no version-mismatch warning: the bytes it read were live game data, not zeros.
+TS2_BEACON_ADDR  = 0x1FE8A0      -- 'T','S','2',0xA5
+TS2_BEACON_MAGIC = 0xA5325354    -- little-endian: 54 53 32 A5
+TS2_HEALTH_ADDR  = 0x1FE8A4
+TS2_ERR_ADDR     = 0x1FE8A5
+-- Connector version, published as three bytes so ts2_client.py can prove the
+-- .apworld and ts2.lua are actually the same release. Players mixing an old
+-- ts2.lua with a new apworld (or the reverse) is a recurring support problem
+-- and produces symptoms that look like anything except a version mismatch.
+TS2_VER_ADDR     = 0x1FE8A6      -- major, minor, patch
+-- Tripwire for the mistake that produced this comment. If the shared block ever
+-- gets sited on somebody else's data again, the symptom is silent and awful:
+-- traps fire on their own, settings read as nonsense, phantom checks send. The
+-- disc-header padding that caused it is long runs of 0x20 (space) or 0x30 ('0'),
+-- so look for exactly that, once, at load. Read-only, and it cannot false-fire
+-- on real connector data -- the client never writes long runs of 0x20/0x30.
+function ts2_check_shared_block()
+    local lo, hi = 0x1FE8A0, 0x1FEB16
+    local ok, buf = pcall(function()
+        return (mainmemory.read_bytes_as_array or mainmemory.readbyterange)(lo, hi - lo + 1)
+    end)
+    if not ok or type(buf) ~= "table" then return end
+    local pad, run, worst = 0, 0, 0
+    for _, v in pairs(buf) do
+        if v == 0x20 or v == 0x30 then
+            run = run + 1; if run > worst then worst = run end
+            pad = pad + 1
+        else run = 0 end
+    end
+    if worst >= 16 then
+        print("\n[TS2] *** WARNING: the connector's shared block at " ..
+              string.format("0x%06X-0x%06X", lo, hi) ..
+              " holds " .. pad .. " bytes of 0x20/0x30 padding (longest run " ..
+              worst .. ").")
+        print("[TS2] That is somebody else's data -- almost certainly the disc header.")
+        print("[TS2] Do NOT play on this build; report it. Traps and checks will misfire.\n")
+    end
+end
+ts2_check_shared_block()
+
+ts2_health_beat = 0
+ts2_err_seen    = false
+ts2_err_count   = 0
+
 event.onframestart(function()
-    if TS2_DEBUG then
-        local ok, err = pcall(ts2_main)
-        if not ok then
-            ts2_debug("FATAL Lua error in main loop: " .. tostring(err))
-            error(err)
+    local ok, err = pcall(ts2_main)
+    if not ok then
+        ts2_err_count = ts2_err_count + 1
+        if not ts2_err_seen then          -- report once, not 60x/second
+            ts2_err_seen = true
+            pcall(mainmemory.write_u8, TS2_ERR_ADDR, 1)
+            print("\n[TS2] *** SCRIPT ERROR -- tracking has STOPPED. ***")
+            print("[TS2] " .. tostring(err))
+            print("[TS2] Send that line to imklubb, then reload ts2.lua.\n")
+            if TS2_DEBUG then
+                ts2_debug("FATAL Lua error in main loop: " .. tostring(err))
+            else
+                -- Recorded even with debug OFF: this runs at most once per
+                -- session and it is the single most useful line in a bug report.
+                local h = io.open(TS2_DEBUG_FILE, "a")
+                if h then
+                    h:write(string.format(
+                        "\n==== ts2 SCRIPT ERROR (connector %s) ====\n%s\n",
+                        tostring(TS2_VERSION), tostring(err)))
+                    h:close()
+                end
+            end
         end
-    else
-        ts2_main()
+    end
+    -- Beat last, and beat even after a failure: a FROZEN counter then means "this
+    -- handler is not running at all", which TS2_ERR_ADDR tells apart from
+    -- "running but erroring".
+    if emu.getsystemid() ~= "NULL" then
+        ts2_health_beat = (ts2_health_beat + 1) % 256
+        pcall(mainmemory.write_u8, TS2_HEALTH_ADDR, ts2_health_beat)
+        -- Re-assert the error byte: it lives in emulated RAM, so a savestate load
+        -- reverts it to 0, and the console banner above only ever prints once --
+        -- without this the client would lose the signal and go quiet again.
+        if ts2_err_seen then pcall(mainmemory.write_u8, TS2_ERR_ADDR, 1) end
+        -- Re-asserted every frame: a savestate reverts emulated RAM.
+        local _vmaj, _vmin, _vpat = tostring(TS2_VERSION):match("(%d+)%.(%d+)%.(%d+)")
+        if _vmaj then
+            pcall(mainmemory.write_u8, TS2_VER_ADDR,     tonumber(_vmaj) % 256)
+            pcall(mainmemory.write_u8, TS2_VER_ADDR + 1, tonumber(_vmin) % 256)
+            pcall(mainmemory.write_u8, TS2_VER_ADDR + 2, tonumber(_vpat) % 256)
+        end
+        -- Magic LAST, so a block the client catches mid-write can never carry a
+        -- valid magic in front of a stale version.
+        pcall(mainmemory.write_u32_le, TS2_BEACON_ADDR, TS2_BEACON_MAGIC)
     end
 end, "ts2")
 
@@ -3961,6 +4425,25 @@ if event and event.onloadstate then
         -- stale value would let it run on the freshly-reverted RAM).
         mainmemory.write_u8(SHARED_BOSS_DEFEATS, 0)
         reset_boss_detection()
+        -- FREEZE FIX: re-arm the one-shot move restores.
+        -- Several sites patch live MIPS instructions (0x04AFF4 pole vault,
+        -- 0x049A04 double jump, plus the A.SPIN/PUSH/ROPE writes; visor and pole
+        -- are asserted every frame now and no longer rely on these flags).
+        -- Their "locked" form is a NOP; the real opcode is written back
+        -- ONCE, gated by these flags. A savestate reverts game RAM but NOT Lua
+        -- variables -- so loading a state taken while a move was still locked
+        -- puts the NOP back while the flag still says "already restored", and the
+        -- real opcode is never written again. The game then runs for the rest of
+        -- the session with a hole in its code: 0x04AFF4 is `lw $v0, 8($s2)` and
+        -- 0x04CD00 is `and $v1, $a0, $v1`, so the register keeps a stale value,
+        -- and if the game uses it as a pointer or loop counter the emulated CPU
+        -- hangs -- the game freezes solid while EmuHawk itself stays responsive
+        -- and no Lua error is ever printed. That is the reported bug.
+        -- Clearing the flags re-arms the restore on the very next frame.
+        -- (Ledge grab is already immune: it rewrites both branches every frame.)
+        spin_restored=false;  pole_restored=false; vault_restored=false
+        push_restored=false;  rope_restored=false; visor_restored=false
+        dbljump_restored=false
         buzz_moved=false
         if buzz_spawn then
             buzz_spawn.move_x=nil; buzz_spawn.move_y=nil

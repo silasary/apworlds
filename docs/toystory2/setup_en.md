@@ -218,6 +218,8 @@ you are not in a playable level are queued and applied once you are back in a le
 - **No starting items / nothing unlocked:** You most likely loaded the Lua off the
   title screen. Return to the title screen after pressing Start (the main menu),
   reload `ts2.lua`, and reconnect.
+- **`ts2.lua` has a debug mode. Switch the line to true if you're having general connection
+  issues or game crashes.
 - **Coin counts, checks, or unlocks look wrong after reconnecting:** You may have
   reconnected or reloaded the scripts while inside a level. Return to the map or
   title screen and reconnect from there; the state will re-sync correctly.
