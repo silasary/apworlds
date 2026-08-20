@@ -3,9 +3,13 @@
 ## Required Software
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
-- [The Scorpion Swamp apworld]()
-- [The Scorpion Swamp companion app]()
+- [The Scorpion Swamp apworld](https://github.com/LegendofFantasy/Archipelago/releases/tag/scorpion-swamp/latest)
+- [The Scorpion Swamp companion app](https://github.com/LegendofFantasy/Scorpion-Swamp-Companion/releases/latest)
 - (OPTIONAL) [The Universal Tracker apworld](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker)
+
+## Also Required
+
+- The book, Scorpion Swamp.
 
 ## How to play
 
@@ -24,4 +28,5 @@ Preferences menu.
 they lead to. Text uniquely added for playing in Archipelago will appear as well, typically to let you know what item(s)
 you have found in a location but may also include any randomizer-specific overrides necessary for the given text. Dice
 rolling, inventory management, and stat tracking are handled by the companion app along with all communications with
-Archipelago.
+Archipelago. More information about the companion app and its features can be found
+[here](https://github.com/LegendofFantasy/Scorpion-Swamp-Companion/blob/main/README.md).

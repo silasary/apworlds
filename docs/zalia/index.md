@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld">Latest Version (0.2.0r2)</a>
+- <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld">Latest Version (1.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
