@@ -2,52 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-21T00:21:21.717162+00:00</updated>
+  <updated>2026-08-21T06:24:21.048688+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Ryguy-9999/ArchipelagoATS/releases/tag/v1.2.1</id>
-    <title>Against the Storm v1.2.1</title>
-    <updated>2026-08-18T05:12:51+00:00</updated>
-    <author>
-      <name>Ryguy9999</name>
-    </author>
-    <content>[Info about this randomizer](https://github.com/Ryguy-9999/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/en_Against_The_Storm.md)&#13;
-[Setup instructions](https://github.com/Ryguy-9999/ArchipelagoATS/blob/main/worlds/against_the_storm/docs/setup_en.md)&#13;
-# Changes&#13;
-- New:&#13;
-  - Added an alert whenever the game attempts to store a resource that is blocked by AP for any reason.&#13;
-    - This alert can be toggled with the command `ap.toggleBlockedGoodsAlert`. This will be saved by the game.&#13;
-- Fixed:&#13;
-  - Resource icons locked by the mod should now automatically refresh. (Finally!)&#13;
-    - Only the goods panel at the top and species panels the top left are targeted.&#13;
-    - They refresh on connection, and when using `ap.toggleLockIcons`.&#13;
-  - Game no longer attempts to give you blueprints from reputation without the appropriate options.&#13;
-  - Filler starting items no longer duplicate on settlement reload.&#13;
-  - `enable_biome_keys: false` no longer fails gen.&#13;
-  - Client now only subscribes to the DeathLink tag if it's actually enabled.</content>
-    <link href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/tag/v1.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.2</id>
-    <title>Mega Man X2 v2.0.2</title>
-    <updated>2026-08-18T06:38:09+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>Some fixes&#13;
-## Info&#13;
-* [General Information](https://thelx5.github.io/mmx2/index.html)&#13;
-* [Setup Guide](https://thelx5.github.io/mmx2/setup.html)&#13;
-## Changes&#13;
-* Added a missing rule for X-Hunter Base 4 requiring nothing to enter&#13;
-* Fixed being able to receive items while falling from the sky at the start of a level&#13;
-* Fixed 1-Ups not being properly disabled in some parts of the game&#13;
-* Fixed Arms Upgrade not working correctly with certain settings</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.0</id>
     <title>Easy Delivery Co. v0.2.0</title>
@@ -2296,5 +2255,59 @@ own machine.
 - [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/OGY0ZmFjNjIwN2JjYTYwNTIzZjAwNjM4YWVlOTMyMGE6MTc4NzI2NTU1MQ==/detection)
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.8.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.0.0</id>
+    <title>Mario Sports Mix v3.0.0</title>
+    <updated>2026-08-21T03:13:33+00:00</updated>
+    <author>
+      <name>ElectroStarz</name>
+    </author>
+    <author>
+      <name>Puffy</name>
+    </author>
+    <content># What's Changed?&#13;
+## Alternate Paths&#13;
+- **Alternate Paths have been added! Clear missions along them to send locations.**&#13;
+- **Alternate Path Type**: Choose between per-cup and progressive alternate paths, as well as the option to merge locations between sports and/or difficulties.&#13;
+- **Always Spawn Alt Paths**: Choose to auto-unlock the alternate paths, bypassing the need to meet the criterias in the original game.&#13;
+- **Quality of Life**: Use Left/Right on the D-Pad when starting a new tournament to select your side to minimize the need for RNG.&#13;
+- **Alternate Path Guide**: In addition, several maps and a guide have been included to help those unfamiliar with the alternate paths.&#13;
+&#13;
+## Cosmetic Options&#13;
+- **Replace All Opponent Characters**: Turns all your opponents into a single character! You can even change the Hockey Goalies and Dodgeball Yoshis!&#13;
+- **Music Shuffle**: Shuffles around the game's music! (Note that some menu tracks cannot be shuffled)&#13;
+- **Tint Stages**: Applies a random tint to each stage to spice up the visuals a bit!&#13;
+&#13;
+## Quality of Life Changes&#13;
+- **Restrict Sports Mix**: Makes it so Sports Mix can only pull from enabled sports.&#13;
+- **Start with Random Mushroom Cups**: You can now start with 1-7 random mushroom cups (+ courts).&#13;
+- **Points to Win**: Changed Points to Win so that it applies for the whole match, rather than just the set.&#13;
+- **Progressive Courts**: Progressive Courts now use a different order that should make progression smoother.&#13;
+     -  &lt;sub&gt;Mario Stadium &gt; Koopa Troopa Beach &gt; Peach's Castle &gt; Toad Park &gt; DK Dock &gt; Western Junction &gt; Luigi's Mansion &gt; Wario Factory &gt; Daisy Garden &gt; Waluigi Pinball &gt; Bowser Jr. Blvd &gt; Ghoulish Galleon &gt; Bowser's Castle &gt; Star Ship &gt; Behemoth Stage&lt;sub/&gt;&#13;
+&#13;
+## Bug Fixes&#13;
+- Fixed some logic pertaining to Sports Mix&#13;
+- Updated some older functions to use newly discovered memory addresses&#13;
+- Fixed a bug where changing from one Mario Sports Mix player to another without closing the client would cause the new Mario Sports Mix player to instantly check all locations checked from the first player.&#13;
+- Fixed a bug where duplicate courts got added to the itempool if the court was part of Party Mode, but was also precollected at the start.</content>
+    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spencer2585/MCC-AP/releases/tag/Alpha-1.2.1</id>
+    <title>Halo The Master Chief Collection v1.2.1</title>
+    <updated>2026-08-21T03:29:17+00:00</updated>
+    <author>
+      <name>Spencer2585</name>
+    </author>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content># Bug Fixes&#13;
+- Fixed Skulls locked when skullsanity is disabled&#13;
+- Fixed Skull pickups sending the wrong location&#13;
+- Fix skulls not being locked after quitting a mission&#13;
+- Fix brower flagging zip file as virus</content>
+    <link href="https://github.com/spencer2585/MCC-AP/releases/tag/Alpha-1.2.1"/>
   </entry>
 </feed>

@@ -4,7 +4,7 @@ Witchspring R is an RPG split into chapters where you are a witch, Pieberry, exp
 
 
 ## Downloads
-- <a href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.9/witchspringrap.apworld">Latest Version (0.3.9)</a>
+- <a href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.9/witchspringrap.apworld">Latest Version (0.3.9.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

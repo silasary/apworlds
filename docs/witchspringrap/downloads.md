@@ -1,9 +1,12 @@
 # Witchspring R
 
 ## Latest
-- <a href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.9/witchspringrap.apworld">Latest Version (0.3.9)</a>
+- <a href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.9/witchspringrap.apworld">Latest Version (0.3.9.post2)</a>
 
 ## All Versions
+
+#### v0.3.9.post2
+- <a href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.9/witchspringrap.apworld">https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.9/witchspringrap.apworld</a>
 
 #### v0.3.9
 - <a href="https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.9/witchspringrap.apworld">https://github.com/LeiAfkpuz/WitchSpring-R-Archipelago/releases/download/0.3.9/witchspringrap.apworld</a>

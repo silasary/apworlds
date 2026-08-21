@@ -1,9 +1,12 @@
 # Sonic Dreams Collection
 
 ## Latest
-- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.3.0/sdc.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.4.0/sdc.apworld">Latest Version (0.4.0)</a>
 
 ## All Versions
+
+#### v0.4.0
+- <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.4.0/sdc.apworld">https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.4.0/sdc.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.3.0/sdc.apworld">https://github.com/KitLemonfoot/ArchipelagoSDC/releases/download/v0.3.0/sdc.apworld</a>
