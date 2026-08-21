@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.6.0/tf2_mvm.apworld">Latest Version (1.6.0)</a>
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.8.2/tf2_mvm.apworld">Latest Version (1.8.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

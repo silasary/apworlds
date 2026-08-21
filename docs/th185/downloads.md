@@ -1,9 +1,12 @@
 # Black Market of Bulletphilia ~ 100th Black Market
 
 ## Latest
-- <a href="https://github.com/furret78/ArchipelagoHBM/releases/download/0.4.5/th185.apworld">Latest Version (0.4.5)</a>
+- <a href="https://github.com/furret78/ArchipelagoHBM/releases/download/0.4.51/th185.apworld">Latest Version (0.4.51)</a>
 
 ## All Versions
+
+#### v0.4.51
+- <a href="https://github.com/furret78/ArchipelagoHBM/releases/download/0.4.51/th185.apworld">https://github.com/furret78/ArchipelagoHBM/releases/download/0.4.51/th185.apworld</a>
 
 #### v0.4.5
 - <a href="https://github.com/furret78/ArchipelagoHBM/releases/download/0.4.5/th185.apworld">https://github.com/furret78/ArchipelagoHBM/releases/download/0.4.5/th185.apworld</a>

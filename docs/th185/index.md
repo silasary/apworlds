@@ -12,13 +12,10 @@ markets that the god couldn&#x27;t intervene in--&quot;black markets&quot;--bega
 
 
 ## Downloads
-- <a href="https://github.com/furret78/ArchipelagoHBM/releases/download/0.4.5/th185.apworld">Latest Version (0.4.5)</a>
+- <a href="https://github.com/furret78/ArchipelagoHBM/releases/download/0.4.51/th185.apworld">Latest Version (0.4.51)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_100th Black Market">en_100th Black Market</a>

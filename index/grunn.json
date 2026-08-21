@@ -60,6 +60,21 @@
       "title": "Grunnchipelago 1.0.1",
       "version_simple": "1.0.1",
       "world_version": "1.0.1"
+    },
+    "v1.1.0": {
+      "created_at": "2026-08-20T22:48:09Z",
+      "description": "New option to hide what every check contains, plus a batch of item classification fixes.\n\n## Installation\n\n1. **The mod** (every player): unzip `Grunnchipelago-client-1.1.0.zip` into `Grunn/BepInEx/plugins/`. BepInEx 5 (x64) must already be installed.\n2. **The apworld** (only whoever generates the seed): drop `grunn.apworld` into `Archipelago/custom_worlds/`.\n3. **The YAML**: start from `Grunn_template.yaml` (every option is documented in it).\n\nDetailed guides: [setup EN](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/setup_en.md) \u00b7 [setup FR](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/setup_fr.md) \u00b7 [goals and options](https://github.com/Serial-Developer/Grunnchipelago/blob/master/apworld/grunn/docs/en_Grunn.md)\n\n## New option: `mask_items`\n\nOff by default. Turn it on and no location shows what it holds any more. Every spot wears an Archipelago model coloured by the class of its content: progression, useful or filler. Grunn's own items are masked too, which is the whole point of the mode. You always know how valuable a check is, never what it is.\n\nTraps borrow one of the three models. The choice is fixed per location and per seed, so relaunching the game never gives them away.\n\nIt is purely cosmetic. Item placement, logic and generation are identical with the option on or off, and the pickup message still names what you actually got.\n\n## Item classification\n\n- **Popcorn** is now filler. It does nothing in game and no access rule uses it. Corn and Butter stay progression since they gate its cooking.\n- **Garden Key** and **Strange Key** are now progression. Both open a vanilla door, even though the logic knows a way around each of them.\n- **Abandoned Key** is only added to the pool when `lock_player_hut` is on, since that option is the only thing that gives the key a use. With the option off it no longer takes a slot.\n\n## Fixes\n\n- The burnt bramble between the park and the road now stays open with `persistent_shortcuts`, like the other comfort shortcuts.\n- `archipelago.json` no longer hardcodes the packaging fields `version` and `compatible_version`. They are injected when the `.apworld` is built, read from the Archipelago version it is built against. Archipelago's own test suite rejects a world folder that declares them, and a hardcoded value would go stale the day the packaging scheme changes.\n\n## Compatibility\n\nUpdate both parts. The classification changes affect generation, so a seed made with 1.1.0 differs from one made with 1.0.1, and `mask_items` needs the 1.1.0 client to be read at all.\n\nArchipelago 0.6.7 or later \u00b7 Grunn (Steam, Windows) \u00b7 BepInEx 5 x64\n\n---\n\nUnofficial project, not affiliated with Sokpop Collective. Grunn is the property of Tom van den Boogaart / Sokpop Collective. No game content is redistributed here.\n",
+      "download_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.0/grunn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "110d490ddaf2a0eec3ba04700553c165d52a14335c8bc7acbab085b51da54d0f",
+      "html_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/tag/v1.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 51677,
+      "source_url": "https://api.github.com/repos/Serial-Developer/Grunnchipelago",
+      "tag": "v1.1.0",
+      "title": "Grunnchipelago 1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
     }
   }
 }

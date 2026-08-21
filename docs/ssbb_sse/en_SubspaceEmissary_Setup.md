@@ -35,13 +35,21 @@ The mod for the Subspace Emissary APWorld uses the same loading method as most B
 
 2. Open the Archipelago Launcher, and then launch the `Subspace Emissary Client` from the launcher. (If it's not there, make sure you installed the APWorld; see [Installing the APWorld](#installing-the-apworld) above.)
 
-3. Within the client, run `/create_sd`. The first time you do this, it will ask you for `DolphinTool.exe` — this is a program that should have been included when you downloaded Dolphin, and is usually located in the same directory as the emulator. **It is not the Dolphin emulator itself.** If you don't have it, you should redownload / reinstall Dolphin; you can also download it standalone [from this repository](https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_ISO_GameCube_Wii_Conversion_Scripts/releases).
+3. Within the client, run `/create_sd`. The first time you do this, it will ask you for `DolphinTool.exe` — this is a program that should have been included when you downloaded Dolphin, and is usually located in the same directory as the emulator. **It is not the Dolphin emulator itself.** If you don't have it, you should redownload / reinstall Dolphin.
 
     ![](images/dolphintool.png)
+
+    **Note:** The Linux Distribution of Dolphin does **not** include DolphinTool, and as such, it must be installed separately. Install `dolphin-emu-tool`, then use `whereis dolphin-tool` to find the install location. Select this location instead of `DolphinTool.exe`
 
     It will also ask you for your Super Smash Bros. Brawl ROM. Note that **only NTSC USA ROMs** will work, and other releases will be rejected. (However, both v1.01 and v1.02 are usable.)
 
     **Note:** At the moment, this APWorld does not support customization, so you can use the same SD card for every run. This means you **do not** have to run `/create_sd` if you've already done it before.
+
+    **Note:** The command, when run, should output something similar to the following:
+
+    ![](images/createsd.png)
+
+    If this doesn't happen (especially if the first line never prints) please let me know in the Discord channel.
 
 4. When the command finishes, it will inform you of an `sd_card` folder that it has created, usually in the same place that your Brawl ROM is located. Open Dolphin and click on `Config` on the top bar, or go to `Options -> Configuration`. Once in the Settings window, navigate to `Wii` on the left side and you'll see some `SD Card Settings`.
 
@@ -53,7 +61,11 @@ The mod for the Subspace Emissary APWorld uses the same loading method as most B
 
     ![](images/dolphindefault.png)
 
-6. Double click the `Minus Launcher.elf` to start up the game, and enter the server connection info into your client (if you closed it since step 2, just reopen it.). You should then be good to go!
+6. Double click the `Minus Launcher.elf` to start up the game, and enter the server connection info into your client (if you closed it since step 2, just reopen it). You should then be good to go!
+
+    **Note:** You can check to make sure the SD card is loaded correctly by the slightly modified title screen.
+
+    ![](images/titlescreen.png)
 
 # Questions / Bugs
 

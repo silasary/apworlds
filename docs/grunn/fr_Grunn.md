@@ -99,6 +99,12 @@ qui pèsent le plus sur une partie.
   recevoir des objets Gulden du multimonde au lieu de tondre l'herbe pour gagner de l'argent.
 - `persistent_shortcuts` — les raccourcis de confort restent débloqués d'un cycle à l'autre. Aucun
   impact sur la logique.
+- `mask_items` — chaque emplacement affiche un modèle Archipelago coloré selon la classe de son
+  contenu (progression, utile, remplissage) au lieu de l'objet lui-même, y compris pour les objets
+  de Grunn : vous savez ce que vaut un check, jamais ce qu'il contient. Les pièges empruntent l'un
+  des trois modèles, toujours le même pour un emplacement donné, afin qu'un relancement ne les
+  trahisse jamais. Purement cosmétique — rien ne bouge dans la logique, et le message de ramassage
+  nomme toujours ce que vous avez réellement obtenu.
 - `death_link` — chaque fin mortelle atteinte (tout sauf Bus, Picnic et la bonne fin / true
   ending) envoie un DeathLink. En recevoir un déclenche un jumpscare de cauchemar et remet votre
   semaine à zéro : aucune fin n'est déclenchée et aucun check n'est accordé, personne ne peut donc

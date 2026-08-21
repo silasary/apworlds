@@ -93,6 +93,11 @@ run the most.
 - `coinsanity` — the 15 placed gulden become checks, and buying things means receiving Gulden
   items from the multiworld instead of cutting grass for money.
 - `persistent_shortcuts` — comfort shortcuts stay unlocked across run resets. No logic impact.
+- `mask_items` — every location shows an Archipelago model coloured by its content's class
+  (progression, useful, filler) instead of the item itself, Grunn's own items included: you can
+  tell how valuable a check is, never what it is. Traps borrow one of the three models, always
+  the same one for a given spot, so a relaunch never gives them away. Purely cosmetic — nothing
+  moves in the logic, and the pickup message still names what you actually got.
 - `death_link` — every death ending you reach (anything except Bus, Picnic and the good/true
   ending) sends a DeathLink. Receiving one shows a nightmare jumpscare and resets your current
   week: no ending fires and no check is granted, so nobody can farm your endings for you.

@@ -1,9 +1,21 @@
 # Team Fortress 2 Mann vs Machine
 
 ## Latest
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.6.0/tf2_mvm.apworld">Latest Version (1.6.0)</a>
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.8.2/tf2_mvm.apworld">Latest Version (1.8.2)</a>
 
 ## All Versions
+
+#### v1.8.2
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.8.2/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.8.2/tf2_mvm.apworld</a>
+
+#### v1.8.1
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.8.1/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.8.1/tf2_mvm.apworld</a>
+
+#### v1.8.0
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.8.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.8.0/tf2_mvm.apworld</a>
+
+#### v1.7.0
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.7.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.7.0/tf2_mvm.apworld</a>
 
 #### v1.6.0
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.6.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.6.0/tf2_mvm.apworld</a>
