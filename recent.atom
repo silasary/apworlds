@@ -2,76 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-21T12:15:38.828714+00:00</updated>
+  <updated>2026-08-21T18:15:17.236155+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.0</id>
-    <title>Easy Delivery Co. v0.2.0</title>
-    <updated>2026-08-18T10:53:40+00:00</updated>
-    <author>
-      <name>Aeromaze</name>
-    </author>
-    <content>## Changes&#13;
-Added yaml option to lock deliveries to and from towns to require an item, starting with a random town in Mountain Town&#13;
-Added logic to payload deliveries with the "Lock Towns" option on&#13;
-Added yaml option to adjust intercity deliveries&#13;
-Changed filler item generation&#13;
-APWorld changed to use the Rule Builder, raising the minimum required Archipelago version to 0.6.7&#13;
-Updated Archipelago.MultiClient.Net to v6.7.1&#13;
-## Fixes&#13;
-Fixed how hints are updated. Deliveries should no longer randomly stop generating&#13;
-Swapped Snowcat Fit and Snowcat Foreman&#13;
-Now sends all checks from a completed delivery in one packet&#13;
-## Notes&#13;
-⚠️ The in-game tracker can only be closed by the x in the top right corner</content>
-    <link href="https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/flingoXD/Archipelago/releases/tag/0.1.0</id>
-    <title>vardrain-- v0.0.0r2</title>
-    <updated>2026-08-18T12:56:12+00:00</updated>
-    <author>
-      <name>flingoXD</name>
-    </author>
-    <content>Fixed a few bugs from previous versions and more importantly added DeathLink with an amnesty option</content>
-    <link href="https://github.com/flingoXD/Archipelago/releases/tag/0.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/tag/v1.2.2</id>
-    <title>Baldur's Gate 3 - ToT v1.2.2</title>
-    <updated>2026-08-18T15:13:12+00:00</updated>
-    <author>
-      <name>Broney</name>
-    </author>
-    <author>
-      <name>Zoltun</name>
-    </author>
-    <content>## Bridge Reliability &amp; Shop Fragment Recovery&#13;
-&#13;
-### Changes&#13;
-&#13;
-- Hardened communication between the BG3 mod and the Archipelago client by publishing status, options, and received-item history as complete snapshots.&#13;
-- Shop Fragment progress is now reconciled against Archipelago's complete received-item history, allowing affected saves to repair themselves after reconnecting.&#13;
-- Improved connection, disconnection, and seed-change ordering so BG3 does not treat intentionally cleared bridge files as active game state.&#13;
-&#13;
-### Fixes&#13;
-&#13;
-- Fixed Shop Fragments randomly dropping to '0' after returning to camp, loading a save, or restarting the game. **- megaknight05**&#13;
-- Fixed temporary or incomplete bridge-file reads being persisted as lost Shop Fragment progress.&#13;
-- Fixed bridge status reporting failures potentially interfering with the Archipelago connection. **- heavywarcrier**&#13;
-- Fixed communication watcher errors retrying too aggressively instead of waiting before the next attempt.&#13;
-&#13;
-### Notes&#13;
-&#13;
-- Existing saves and active asyncs remain compatible. No new seed or campaign restart is required.&#13;
-- Saves affected by missing Shop Fragments should automatically recover their correct total after reconnecting to Archipelago with v1.2.2.&#13;
-- Update both `bg3tot.apworld` and `ArchipelagoToT.pak` when installing this release.&#13;
-</content>
-    <link href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/tag/v1.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.0.2b</id>
     <title>IslesOfSeaAndSky v2.0.2b0</title>
@@ -2309,5 +2244,75 @@ own machine.
 - Fix skulls not being locked after quitting a mission&#13;
 - Fix brower flagging zip file as virus</content>
     <link href="https://github.com/spencer2585/MCC-AP/releases/tag/Alpha-1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.10.0</id>
+    <title>Harry Potter 2 PC v2.10.0</title>
+    <updated>2026-08-21T12:34:15+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content># HP2PC_AP v2.10.0&#13;
+Blocker hints now reach you before you walk into the bookcase, plus a Skurge Challenge logic fix and setup docs that finally spell out the engine patch.&#13;
+&#13;
+### New&#13;
+- **Blockers speak on approach.** A blocker now names what it is waiting for as soon as you get within about 500 units and have a clear line of sight to it, instead of waiting for you to walk into it. Bumping one still works the same way.&#13;
+- **The four vanilla spell-classroom blockers finally talk.** The Rictusempra, Skurge, Diffindo and Spongify classroom bookcases were silent even on contact. They now name the spell they want.&#13;
+&#13;
+### Logic and content changes&#13;
+- **Skurge Challenge Chest 5 and Chest 6** now require **Skurge + Flipendo + (Lumos or Running) + Alohomora**, up from Skurge + Alohomora. Both chests sit behind the full lit-area set, so they now expect everything that set needs.&#13;
+&#13;
+### Docs&#13;
+- **The M212 engine patch is documented as a required prerequisite.** The README gained a Requirements section, and the player setup step now has Discord download links plus a check to confirm you are actually on the patched engine.&#13;
+- **Linux support documented** via Proton or Wine.</content>
+    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.10.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.3.4</id>
+    <title>IAmYourBeast v0.3.4</title>
+    <updated>2026-08-21T13:05:01+00:00</updated>
+    <author>
+      <name>petiboy7</name>
+    </author>
+    <content># I Am Your Beast Archipelago 0.3.4&#13;
+&#13;
+## Improvements&#13;
+&#13;
+### APWorld&#13;
+- Changed the `.yaml` description to add missing information and make each option easier to understand.&#13;
+- Added a new option to exclude Horde levels from the pool.&#13;
+- Added a new option to change Map Type to show armor items on the map.&#13;
+&#13;
+### Mod&#13;
+- Level names are always visible on the level select screen.&#13;
+- Cutscenes are hidden by default on the level select screen. Can be toggled on or off.&#13;
+- Added a button to only show levels that are available on the level select screen. Can be toggled on or off.&#13;
+- Optionally added armor items to the map. Can be changed in the YAML settings.&#13;
+- When connecting to Archipelago from the Menu, all items are resynced with the server and all checks that are done in your save file but were never sent are sent. The game might freeze for a while when connecting if there are a lot of these.&#13;
+&#13;
+## Fixes&#13;
+&#13;
+### Mod&#13;
+- Weapons are now visible on the minimap when weapon randomization is not enabled.&#13;
+- *Maybe* fixed Bonus Objective locations not sending properly. Again.&#13;
+&#13;
+## Note&#13;
+&#13;
+**This version is not compatible with already hosted multiworlds.**</content>
+    <link href="https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.3.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.1</id>
+    <title>Easy Delivery Co. v0.2.0r2</title>
+    <updated>2026-08-21T17:28:43+00:00</updated>
+    <author>
+      <name>Aeromaze</name>
+    </author>
+    <content>## Fixes&#13;
+Fix generating with locked towns without payload checks&#13;
+Prevent opening the Fishing Town gate the vanilla way with the radio towers as items option&#13;
+## Notes&#13;
+⚠️ The in-game tracker can only be closed by the x in the top right corner</content>
+    <link href="https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.1"/>
   </entry>
 </feed>

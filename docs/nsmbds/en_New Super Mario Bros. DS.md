@@ -35,11 +35,11 @@ for overworld signs and may count toward your goal.
 ### Blocksanity
 
 Blocksanity adds up to over 1,100 Coin and Power-Up Blocks as extra checks. It is
-disabled by default because it greatly increases the size of the seed.
+disabled by default because it greatly increases the size of the seed. A few special blocks are still missing, such as hanging blocks.
 
-The flying-block room in World 6-2 (Over 120 blocks fyling in a row) can also be included. Its many blocks are
-kept safe for progression: most contain local filler or traps instead of
-important advancement items.
+The flying-block room in World 6-2 contains 128 flying-block checks and can also be included. 
+These checks never contain progression items for the local player, 
+and at most 16 can be global checks for other players. The remaining checks contain local filler or traps.
 
 ## Goals
 
@@ -53,7 +53,7 @@ You can choose one of four victory conditions:
 | Completionist | Defeat Bowser and receive the chosen number of Star Coin items |
 
 Star Coins spent at signs still count toward Star Coin Hunt and Completionist.
-Only your current spending balance goes down.
+Only your current spending balance goes down. The overview section in the client shows the total amount received so far.
 
 ## Progression items
 
@@ -85,6 +85,8 @@ how access to the overworld signs works:
 Permits can lock the use of Mushrooms, Fire Flowers, Blue Shells, Mini
 Mushrooms, Mega Mushrooms, and the touchscreen reserve pocket. When a Permit
 option is enabled, you must find that Permit before using the ability.
+Power-Ups simply disappear when collected if you don't own the permit yet. 
+Item-based Power-Ups are queued up until you unlock the permit.
 
 ## Items you can receive
 
@@ -101,10 +103,9 @@ option is enabled, you must find that Permit before using the ability.
 | Coin Bundle | Adds 50 Coins |
 | Time Capsule | Adds 30 seconds to the current level |
 | Starman Lite | Grants five seconds of invincibility |
-| Trap Shield | Blocks the next trap; several charges can be stored |
+| Trap Shield | Blocks the next trap; several charges can be stored (Cyan Shield) |
 | Small Care Package | Adds time, Coins, and one life |
-| Life Insurance | Prevents the next death from consuming a life |
-| Nothing | Does nothing |
+| Life Insurance | Prevents the next death from consuming a life (Green Heart) |
 
 If your reserve pocket is full, a received Power-Up waits until it can be
 delivered. It is not lost.
@@ -165,10 +166,11 @@ lasts three seconds. Bonk Trap can optionally be allowed to kill Small Mario.
 
 ## Death Link
 
-Death Link shares deaths with other participating players. When enabled, your
-death can defeat them and their deaths can defeat you. Life Insurance can save
-a life locally; a separate option decides whether an insured death is still
-sent through Death Link.
+Death Link shares deaths with other participating players. 
+When enabled, your death can defeat them and their deaths can defeat you.  
+Life Insurance prevents the next local death from consuming a life. 
+The option Death Link: Trigger on Insured Deaths determines whether that insured death is still sent through Death Link. 
+It is disabled by default.
 
 ## Character palettes
 
@@ -184,7 +186,8 @@ randomizes every pixel.
 ## Client and emulator features
 
 The NSMBDS Client can launch BizHawk, the patched ROM, and the included Lua
-script for you. During play it shows your connection, received items, some more.
+script for you. During play it shows received items,
+checked locations, and notifications.
 
 The emulator also displays an activity feed in the lower-left corner.
 It shows checks and item transfers in real time, can be scrolled, and can be hidden with CTRL+SHIFT+H. Reconnecting may

@@ -1,9 +1,12 @@
 # Easy Delivery Co.
 
 ## Latest
-- <a href="https://github.com/Aeromaze/Archipelago/releases/download/v0.2.0/easy_delivery_co.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/Aeromaze/Archipelago/releases/download/v0.2.1/easy_delivery_co.apworld">Latest Version (0.2.0r2)</a>
 
 ## All Versions
+
+#### v0.2.0r2
+- <a href="https://github.com/Aeromaze/Archipelago/releases/download/v0.2.1/easy_delivery_co.apworld">https://github.com/Aeromaze/Archipelago/releases/download/v0.2.1/easy_delivery_co.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/Aeromaze/Archipelago/releases/download/v0.2.0/easy_delivery_co.apworld">https://github.com/Aeromaze/Archipelago/releases/download/v0.2.0/easy_delivery_co.apworld</a>

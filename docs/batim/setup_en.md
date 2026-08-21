@@ -35,7 +35,9 @@ If installing manually:
 ## Joining a new MultiWorld
 
 1. When the game opens up, you should see a new section in the top left to input connection information.
-2. After filling in the required fields, you may click **Begin**.
-3. On a successful connection, you will be able to choose a save file. (You may need to click Begin a second time)
-   - NOTE: Whichever save file you connect to first will be the save you must use every time you connect in the future.
-4. After choosing a save file, you will be able to continue to chapter select, and begin playing.
+2. After filling in the required fields, you may click **Connect**.
+3. On a successful connection, you should see the connection menu replaced with a count for received Bacon Soups,
+and a toggle for deathlink. You should now be able to select **Begin**, and continue as normal.
+
+**NOTE:** It is recommended to back up your save files before playing, as selecting a slot will
+automatically override any data that was previously there.

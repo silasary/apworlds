@@ -2,8 +2,8 @@
 
 ## Requirements
 
-- Tested on Archipelago 0.6.7
-- Tested BizHawk 2.11.1 with the melonDS core
+- Archipelago Client (Tested with 0.6.7 and newer)
+- BizHawk Emulator **2.11.1 or newer** (Older version don't work)
 - A unmodified USA copy of New Super Mario Bros. DS
 - The NSMBDS `.apworld` [latest release](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/latest) 
 

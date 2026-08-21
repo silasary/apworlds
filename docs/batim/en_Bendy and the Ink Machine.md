@@ -22,6 +22,7 @@ The following can be obtained as items:
 	- Broken Banjo String
  - (optionally) Checkpoints
  - (optionally) The Tommy Gun
+ - (optionally) Boris's Bone
 
 By default, the following can be sent as location checks:
  - Ritual items from chapter 1 (Book, Doll, Gear, Inkwell, Record, and Wrench)
@@ -39,12 +40,14 @@ By default, the following can be sent as location checks:
  - (optionally) Checkpoints
  - (optionally) The Tommy Gun
  - (optionally) Completing the CH3 Lever Challenge (1 check per wave)
+ - (optionally) Boris's Bone
 
 ## What is the goal?
 
 The default goal is to beat Beast Bendy at the end of Chapter 5. Starting the fight will require a
 configurable number of bacon soup cans to be received. The goal can be changed to completion of any chapter,
-with later chapters being discluded from randomization unless specifically included.
+with later chapters being discluded from randomization unless specifically included. Chapters preceding the
+goal chapter can also be set to be required for completion.
 
 ## I received an item, but I can't place it where it needs to go?
 
@@ -55,4 +58,12 @@ with the object again after receiving the item to be able to use it fully.
 ## I can't unclog the toy machine in chapter 3 or interact with the books in chapter 4?
 
 Both the toys that clog the chapter 3 toy machine and the books needed to open the door in chapter 4 require an item to
-interact with them (CH3 Toys and CH4 Books respectively).
+interact with them (CH3 Toys and CH4 Books respectively). Generally, if there is something that won't let you interact
+with it, it is probably an item you are missing, which can be found in the list above.
+
+## How does Deathlink work?
+
+Deathlink works mostly how you would expect, with a few caveats. If you are in chapter 1, death links you recieve will
+still "trigger", but nothing will actually happen. Also, deathlinks cannot happen while you are in the death tunnel
+(though they can still be queued), as well as any time the game considers you to be in a "hidden" state. This includes
+the Miracle Stations and riding the cart at the end of chapter 4 for example.
