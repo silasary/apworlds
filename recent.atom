@@ -2,128 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-22T00:21:09.103785+00:00</updated>
+  <updated>2026-08-22T06:20:24.040264+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.2.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.2.0</title>
-    <updated>2026-08-18T20:42:38+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-- Death Link. Dying takes the rest of the multiworld with you, and theirs takes
-  you.
-
-
-## Windows
-
-Download `tf2ap.exe` above and run it. One file: no Docker, no clone, no
-compiler. It opens a window, asks for the address of your Archipelago room,
-and installs everything the server needs. The bots that fill your team are in
-it too.
-
-The
-[Windows guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-takes you from the download to the first wave.
-
-## Docker
-
-Download `compose.yaml` and `.env.example` into an empty directory:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then make a session and start:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads), open a room, and
-write its port into `AP_PORT`.
-
-The images come from `ghcr.io/m-this/tf2-archipelago`. `compose.yaml` pins
-them to this release. Set `TF2AP_VERSION` in `.env` to run another one.
-
-To host the session on this machine, set `COMPOSE_PROFILES=selfhost`,
-`AP_HOST=archipelago`, `AP_PORT=38281` and `AP_TLS=false`. Then
-`docker compose up -d` needs no seed and no room.
-
-## The other files
-
-| File | What it is |
-| --- | --- |
-| `tf2_mvm.apworld` | The Archipelago world, for the official app. The launcher installs it for you. |
-| `tf2_archipelago.smx` | The compiled plugin, for a server that neither the launcher nor the compose file runs. |
-| `tf2-defender-bots.zip` | The bots that fill the RED team, for that same server. Unzip it into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and location tables. They are inside the apworld; they are here to read. |
-
-[The book](https://m-this.github.io/tf2-archipelago/) covers the rest.
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.1.0...v1.2.0
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.1</id>
-    <title>cyberpunk2077-0.7.1 v0.7.0r2</title>
-    <updated>2026-08-18T23:10:28+00:00</updated>
-    <author>
-      <name>247Tossing</name>
-    </author>
-    <content># Cyberpunk Archipelago Mod v0.7&#13;
-&#13;
-This is probably the biggest update the mod has had to date. I believe at this point it is safe to say this mod is in the best and most stable state is has been thus far.&#13;
-&#13;
-## Nexusmods Release!&#13;
- - The mod is now available on nexusmods to (Hopefully) make it easier to install for more players (Does not have the AP World or Poptracker included)&#13;
-&#13;
-## New Content&#13;
- - Vendor Sanity: Progression and Filler items added to vendors around NC&#13;
- - Third Party Mod Support: Official Support added for New Game Plus - Native&#13;
- - Third Party Mod Support: Official Support confirmed with Randomizer 2077 (except Vendor Randomization and Loot Randomization (causes some quests to be unbeatable despite what the mod says))&#13;
-&#13;
-## New YAML Options&#13;
- - New completion goals&#13;
-    - Complete Main Quests: Only requires a roll credits on any ending&#13;
-    - Complete Main + Side: Requires completing all paths with major companions along side rolling credits&#13;
-    - Complete Phantom Liberty Only: Only requires completing the Phantom Liberty main questline&#13;
- - District Access Tokens and Weapon Access Tokens&#13;
-    - Now have options (default enabled) to force the access tokens to only appear to other players worlds&#13;
-&#13;
-## Improvements and Misc&#13;
- - A logo on the main menu! Wow!&#13;
- - Client UI in the CET Overlay has been redesigned to be more in line with other AP world clients&#13;
- - Deathlink now sends a message in the AP server&#13;
- - Substantial changes and adjustments made to the rules and AP generation which should result in very consistent and stable generation&#13;
-    - The end quest of a larger quest chain (i.e the end of a major arc for panam/judy/etc.) are tagged as "priority" and will have a higher likelyhood of containing progression items in the multiworld. This was done to combat issues i was seeing where cyberpunk would hoard progression items during testing&#13;
- - NCPD Hustles (reported crime / suspected organized crime) temporarily removed as the checks were not being picked up consistently. (will revisit later)&#13;
-&#13;
-## Fixes&#13;
- - There are so many various bug fixes and inprovements that its really impossible to list them all&#13;
-&#13;
-## v0.7.1&#13;
- - Added pre-requisite quests into the Phantom Liberty quests.</content>
-    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.1"/>
-  </entry>
   <entry>
     <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.4.0</id>
     <title>Cursed Words v0.4.0</title>
@@ -1264,6 +1147,23 @@ port into `AP_PORT`.
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.4.0"/>
   </entry>
   <entry>
+    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-beta.12</id>
+    <title>Pokemon Crystal Prerelease v1.30.11</title>
+    <updated>2026-08-19T23:31:51+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+**This is beta software, it may be unstable. Use at your own risk.**&#13;
+&#13;
+## Features&#13;
+- The spoiler log and Universal Tracker now show user-friendly entrance names (huge thanks to @snowflav-goob for compiling the names)&#13;
+&#13;
+_This release is backwards compatible down to 6.0.0-beta.1, re-patch your ROM to benefit from in-game fixes_</content>
+    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-beta.12"/>
+  </entry>
+  <entry>
     <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03i</id>
     <title>Cuphead v0.2.20020810</title>
     <updated>2026-08-20T00:26:46+00:00</updated>
@@ -2326,5 +2226,81 @@ Tracker for this apworld version : [Ape Escape Tracker 0.7.0](https://github.com
 &#13;
 **Full Changelog**: https://github.com/Thedragon005/Archipelago-Ape-Escape/compare/v0.9.9....v0.9.10</content>
     <link href="https://github.com/Thedragon005/Archipelago-Ape-Escape/releases/tag/v0.9.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Akashortstack/Psychonauts-AP-Integration/releases/tag/v1.0.0</id>
+    <title>Psychonauts v1.0.0</title>
+    <updated>2026-08-22T01:19:58+00:00</updated>
+    <author>
+      <name>Akashortstack</name>
+    </author>
+    <author>
+      <name>Mysteryem</name>
+    </author>
+    <content># New Option&#13;
+- Scavenger Hunt Rewards: Add Scavenger Hunt Completion Rewards as Locations.&#13;
+    Half: Adds a location for redeeming 8 scavenger hunt items with Ford in the camp.&#13;
+    All: Adds two locations for redeeming 8 and 16 scavenger hunt items with Ford in the camp.&#13;
+&#13;
+## Minor Changes&#13;
+- Small Logic changes for Meat Circus: Oly Escort now requires EITHER Telekinesis OR Confusion to complete. 40% figments now requires Levitation.&#13;
+&#13;
+## Bug Fixes&#13;
+- Baggage can no longer be placed on the MC Grind Rail location, causing you to potentially fall underneath the death plane during the collection cutscene.&#13;
+- Fixed some cases where baggage would collect multiple times on loading a save.&#13;
+&#13;
+# Resources&#13;
+&#13;
+Requires latest AP Branch of the Psychonauts Randomizer Mod to run, found here:&#13;
+https://github.com/Akashortstack/PsychoRando/releases&#13;
+&#13;
+Setup Guide with installation instructions and additional information for PsychoRando here:&#13;
+https://docs.google.com/document/d/1b7QOnOLmTSvdC7A1YK3bsSmhtSOsAMs0XF5j-tyE6Zw/edit?usp=sharing&#13;
+&#13;
+Requires Astralathe to run, download and installation instructions found here:&#13;
+https://gitlab.com/scrunguscrungus/astralathe/-/wikis/Installing%20Astralathe&#13;
+&#13;
+PopTracker Pack created by Mysteryem here:&#13;
+https://github.com/Mysteryem/Psychonauts_AP_PopTracker/releases&#13;
+&#13;
+# Psychonauts Archipelago Setup Guide&#13;
+&#13;
+## Setting up the required mods&#13;
+1. Install Psychonauts for PC, Astralathe, and the Psychonauts Randomizer Mod from the AP Companion Branch.&#13;
+    Full Psychonauts Randomizer and Astralathe setup guide here: https://docs.google.com/document/d/1b7QOnOLmTSvdC7A1YK3bsSmhtSOsAMs0XF5j-tyE6Zw/edit?usp=sharing&#13;
+    **Make sure Astralathe is up to date, use the AP Companion Branch of PsychoRando, and make sure to open the game with AstralatheLauncher.exe at least once.**&#13;
+    &#13;
+2. Download the psychonauts.apworld and install (easiest method is by trying to open the apworld file, Archipelago will install automatically)&#13;
+&#13;
+3. Open the Archipelago Launcher and run the Psychonauts Client. If you get an error message saying the root_directory could not be found, follow steps 4-5. Otherwise, skip to step 6.&#13;
+&#13;
+4. Find the folder that contains your Psychonauts and Astralathe installation, and copy the folder directory. For example, the most common place for the Steam version is "C:\\\\Program Files (x86)\\\\Steam\\\\steamapps\\\\common\\\\Psychonauts"  &#13;
+&#13;
+5. Run ArchipelagoLauncher.exe and open host.yaml from the Archipelago Launcher, find the psychonauts_options and paste your psychonauts game directory into the root_directory setting between the quotes. **If the root directory contains single slashes between lines, change all of these to double slashes. If you don't, the client will fail to open**&#13;
+&#13;
+6. Click "Generate Template Settings". This will open file explorer&#13;
+Find "Psychonauts.yaml" and copy it to /Players/ (create this folder if it does not exist)&#13;
+&#13;
+7. Open the YAML file and change the line that says "name: Player{number}" to your desired player name.&#13;
+Adjust the settings in the YAML to your liking&#13;
+&#13;
+8. Run ArchipelagoGenerate.exe&#13;
+&#13;
+9. Take the newly created AP_XXX.zip file in /output/ in upload it here: https://archipelago.gg/uploads then create a room&#13;
+&#13;
+10. Download patch file next to your player name, then unzip the file. This contains a file called RandoSeed.lua &#13;
+&#13;
+11. Find your Psychonauts game directory and open /ModResource/PsychoRando/Scripts&#13;
+&#13;
+12. Paste RandoSeed.lua from your generated Archipelago file into this folder. Replace the file in the destination if needed.&#13;
+&#13;
+13. Run AstralatheLauncher.exe to open the game. You should see your player number and name on the menu screen, along with your current randomizer version.&#13;
+&#13;
+14. From the menu, enter the yellow door to start a new game.&#13;
+&#13;
+15. From the Archipelago Launcher, open the Psychonauts Client and connect to your server hosted on archipelago.gg&#13;
+&#13;
+16. Once you've started a new save file and connected to the server, you can start playing!</content>
+    <link href="https://github.com/Akashortstack/Psychonauts-AP-Integration/releases/tag/v1.0.0"/>
   </entry>
 </feed>

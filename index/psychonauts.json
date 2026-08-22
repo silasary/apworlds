@@ -1,12 +1,16 @@
 {
+  "authors": [
+    "Akashortstack",
+    "Mysteryem"
+  ],
   "description": "Psychonauts is a third-person action platformer game developed by Double Fine Productions, published by Majesco Entertainment, and released in 2005.\nThe player follows Razputin, a young boy gifted with psychic abilities. After sneaking into Whispering Rock Psychic Summer Camp, it's up to Raz to explore \nthe minds of other characters in order to save his fellow psychic campers, and the world, from an evil threat.",
   "game": "Psychonauts",
   "github": "https://github.com/Akashortstack/Psychonauts-AP-Integration",
   "license": null,
   "manifest_fields": [
     "authors",
-    "world_version",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "v0.6.1": {
@@ -149,6 +153,21 @@
       "title": "Psychonauts AP World v0.9.3-BETA",
       "version_simple": "0.9.3",
       "world_version": "0.9.3.post2"
+    },
+    "v1.0.0": {
+      "created_at": "2026-08-22T01:19:58Z",
+      "description": "# New Option\r\n- Scavenger Hunt Rewards: Add Scavenger Hunt Completion Rewards as Locations.\r\n    Half: Adds a location for redeeming 8 scavenger hunt items with Ford in the camp.\r\n    All: Adds two locations for redeeming 8 and 16 scavenger hunt items with Ford in the camp.\r\n\r\n## Minor Changes\r\n- Small Logic changes for Meat Circus: Oly Escort now requires EITHER Telekinesis OR Confusion to complete. 40% figments now requires Levitation.\r\n\r\n## Bug Fixes\r\n- Baggage can no longer be placed on the MC Grind Rail location, causing you to potentially fall underneath the death plane during the collection cutscene.\r\n- Fixed some cases where baggage would collect multiple times on loading a save.\r\n\r\n# Resources\r\n\r\nRequires latest AP Branch of the Psychonauts Randomizer Mod to run, found here:\r\nhttps://github.com/Akashortstack/PsychoRando/releases\r\n\r\nSetup Guide with installation instructions and additional information for PsychoRando here:\r\nhttps://docs.google.com/document/d/1b7QOnOLmTSvdC7A1YK3bsSmhtSOsAMs0XF5j-tyE6Zw/edit?usp=sharing\r\n\r\nRequires Astralathe to run, download and installation instructions found here:\r\nhttps://gitlab.com/scrunguscrungus/astralathe/-/wikis/Installing%20Astralathe\r\n\r\nPopTracker Pack created by Mysteryem here:\r\nhttps://github.com/Mysteryem/Psychonauts_AP_PopTracker/releases\r\n\r\n# Psychonauts Archipelago Setup Guide\r\n\r\n## Setting up the required mods\r\n1. Install Psychonauts for PC, Astralathe, and the Psychonauts Randomizer Mod from the AP Companion Branch.\r\n    Full Psychonauts Randomizer and Astralathe setup guide here: https://docs.google.com/document/d/1b7QOnOLmTSvdC7A1YK3bsSmhtSOsAMs0XF5j-tyE6Zw/edit?usp=sharing\r\n    **Make sure Astralathe is up to date, use the AP Companion Branch of PsychoRando, and make sure to open the game with AstralatheLauncher.exe at least once.**\r\n    \r\n2. Download the psychonauts.apworld and install (easiest method is by trying to open the apworld file, Archipelago will install automatically)\r\n\r\n3. Open the Archipelago Launcher and run the Psychonauts Client. If you get an error message saying the root_directory could not be found, follow steps 4-5. Otherwise, skip to step 6.\r\n\r\n4. Find the folder that contains your Psychonauts and Astralathe installation, and copy the folder directory. For example, the most common place for the Steam version is \"C:\\\\\\\\Program Files (x86)\\\\\\\\Steam\\\\\\\\steamapps\\\\\\\\common\\\\\\\\Psychonauts\"  \r\n\r\n5. Run ArchipelagoLauncher.exe and open host.yaml from the Archipelago Launcher, find the psychonauts_options and paste your psychonauts game directory into the root_directory setting between the quotes. **If the root directory contains single slashes between lines, change all of these to double slashes. If you don't, the client will fail to open**\r\n\r\n6. Click \"Generate Template Settings\". This will open file explorer\r\nFind \"Psychonauts.yaml\" and copy it to /Players/ (create this folder if it does not exist)\r\n\r\n7. Open the YAML file and change the line that says \"name: Player{number}\" to your desired player name.\r\nAdjust the settings in the YAML to your liking\r\n\r\n8. Run ArchipelagoGenerate.exe\r\n\r\n9. Take the newly created AP_XXX.zip file in /output/ in upload it here: https://archipelago.gg/uploads then create a room\r\n\r\n10. Download patch file next to your player name, then unzip the file. This contains a file called RandoSeed.lua \r\n\r\n11. Find your Psychonauts game directory and open /ModResource/PsychoRando/Scripts\r\n\r\n12. Paste RandoSeed.lua from your generated Archipelago file into this folder. Replace the file in the destination if needed.\r\n\r\n13. Run AstralatheLauncher.exe to open the game. You should see your player number and name on the menu screen, along with your current randomizer version.\r\n\r\n14. From the menu, enter the yellow door to start a new game.\r\n\r\n15. From the Archipelago Launcher, open the Psychonauts Client and connect to your server hosted on archipelago.gg\r\n\r\n16. Once you've started a new save file and connected to the server, you can start playing!",
+      "download_url": "https://github.com/Akashortstack/Psychonauts-AP-Integration/releases/download/v1.0.0/psychonauts.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fc7cc59113092b8d35361b197413cf8cebd4825a21fe4f01ee4556492095b610",
+      "html_url": "https://github.com/Akashortstack/Psychonauts-AP-Integration/releases/tag/v1.0.0",
+      "minimum_ap_version": "0.6.5",
+      "size": 77577,
+      "source_url": "https://api.github.com/repos/Akashortstack/Psychonauts-AP-Integration",
+      "tag": "v1.0.0",
+      "title": "Psychonauts AP World v1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
     }
   }
 }
