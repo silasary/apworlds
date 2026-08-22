@@ -7,7 +7,7 @@ challenges and opening the Umbra Witches&#x27; treasure chests.
 
 
 ## Downloads
-- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v3.0.0/bayonetta.apworld">Latest Version (3.0.0)</a>
+- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v3.1.0/bayonetta.apworld">Latest Version (3.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

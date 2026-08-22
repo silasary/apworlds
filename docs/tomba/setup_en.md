@@ -81,13 +81,18 @@ You only have to do these steps once. Note, RetroArch 1.9.x will not work as it 
 3. Go to Settings --> Network. Set "Network Commands" to ON. (It is found below Request Device 16.) Leave the default
    Network Command Port at 55355. \
    ![Screenshot of Network Commands setting](../../generic/docs/retroarch-network-commands-en.png)
-4. Go to Main Menu --> Online Updater --> Core Downloader. Scroll down and select "Sony - PlayStation (Beetle PSX HW)".
+4. Go to Main Menu --> Online Updater --> Core Downloader. Scroll down and select "Sony - PlayStation (Beetle PSX)".
 
-You can select the core you downloaded earlier and then, go on with the next step
+You can go back to the main menu and select `Load Core`. Select the core you downloaded earlier and then, go on with the next step
 
 #### BizHawk
 
-Each time you start the emulator, you need to:
+First off, you need to configure the emulator to use the Octoshock core, to do so:
+1. Go to `Config -> Preferred Cores -> PSX`
+2. Make sure `Octoshock` is selected \
+   ![Screenshot of Preferred Cores settings](bizhawk-preferred-cores-en.png)
+
+Also, each time you start the emulator, you need to:
 1. Open the LUA console: `Tools -> LUA console`
 2. Start the connector script: `Script -> Open Script...`
 3. Navigate to your Archipelago folder and load: `data\lua\connector_bizhawk_generic.lua`
