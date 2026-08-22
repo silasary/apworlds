@@ -2,282 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-22T12:12:17.701293+00:00</updated>
+  <updated>2026-08-22T18:18:51.334094+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.3</id>
-    <title>Mega Man X2 v2.0.3</title>
-    <updated>2026-08-19T02:04:01+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>more fixes&#13;
-# Info&#13;
-* [General Information](https://thelx5.github.io/mmx2/index.html)&#13;
-* [Setup Guide](https://thelx5.github.io/mmx2/setup.html)&#13;
-# Changes&#13;
-* Fixed Energy Pool on pause menu not being displayed properly&#13;
-* Fixed HP refills softlocking the game</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.6-alpha</id>
-    <title>The Legend of Zelda - Phantom Hourglass v0.9.6a0</title>
-    <updated>2026-08-19T09:19:49+00:00</updated>
-    <author>
-      <name>carrotinator</name>
-    </author>
-    <author>
-      <name>Tanker50207</name>
-    </author>
-    <author>
-      <name>palex00</name>
-    </author>
-    <author>
-      <name>CelestialKitsune</name>
-    </author>
-    <author>
-      <name>DayKat</name>
-    </author>
-    <author>
-      <name>1313e</name>
-    </author>
-    <author>
-      <name>Catzador</name>
-    </author>
-    <content>Compatible with seeds generated in v9.x&#13;
-[Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)&#13;
-&#13;
-- Hotfixed first stage of progressive items sending last stage</content>
-    <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.6-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ishigh1/Archipelago/releases/tag/2048-1.1.3</id>
-    <title>2048 v1.1.3</title>
-    <updated>2026-08-19T12:10:51+00:00</updated>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>There has been some reports about merges not working even after getting the corresponding item. I got no idea why, so here's more logging to help investigate</content>
-    <link href="https://github.com/Ishigh1/Archipelago/releases/tag/2048-1.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.3.0</id>
-    <title>Factorio: Space Age v2.3.0</title>
-    <updated>2026-08-19T13:04:49+00:00</updated>
-    <author>
-      <name>Berserker</name>
-    </author>
-    <author>
-      <name>Josh Wolfe</name>
-    </author>
-    <content># Factorio: Space Age apworld 2.3.0&#13;
-&#13;
-* Now based on Factorio 2.1 🎉&#13;
-    * As of writing this, Factorio 2.1.14 itself is still experimental. Please report bugs or incompatibilities, and thanks for being an early tester of both this apworld and Factorio 2.1!&#13;
-    * The new `stellar-discovery-solar-system-edge` technology means that the `progressive-promethium` large group has one extra item.&#13;
-    * Moving `biter-egg` and `nutrients-from-biter-egg` recipes to `biter-egg-handling` means the `progressive-captivity` large group has one extra item.&#13;
-    * The default number of filler nothing items is now 3 instead of 4, because `biter-egg-handling` is no longer an empty technology.&#13;
-* New YAML option `intermediate_technologies: unlocked` enabled by default, which unlocks 19 technologies from the start that only give intermediate products. This option doesn't give free samples for these intermediates. See https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/data/ap_data.py for the list of technologies. [#37](https://github.com/thejoshwolfe/Archipelago/issues/37)&#13;
-* New YAML option `production_and_utility_science: removed` disabled by default, which allows for a smaller scale game, particularly with shorter objectives like `goal: any_other_planet_science`.&#13;
-* Research objectives beyond your configured goal are removed. For example, `goal: aquilo_orbit` will remove all research locations involving cryogenic science packs. When combined with `infinite_technologies: shuffle` (the default), infinite technologies beyond the goal are moved earlier instead of removed, copying the ingredients, prerequisites, and count formula of an earlier infinite technology. This can enable Factorio: Space Age players to unblock themselves by researching large progressive groups from infinite technology locations out of logic once enough science packs are unlocked, always at least chemical science. [#11](https://github.com/thejoshwolfe/Archipelago/issues/11)&#13;
-* Fix filler items not contributing to their progressive group like they're supposed to.&#13;
-* Improved information in the technology GUI:&#13;
-    * Progressive chains are shown as dependencies between the inaccessible vanilla technologies, visualizing progressive chains. [#19](https://github.com/thejoshwolfe/Archipelago/issues/19)&#13;
-    * Move multiworld item name from description to trigger description. Thanks @CosmicWolf/@Enderdraak for suggesting this in [#31](https://github.com/thejoshwolfe/Archipelago/issues/31) and [#30](https://github.com/thejoshwolfe/Archipelago/pull/30).&#13;
-    * Move localizable strings to `locale/en/locale.cfg` (no longer dynamically generated), which should enable third-party translations. Thanks @CosmicWolf/@Enderdraak for the reference implementation in [#30](https://github.com/thejoshwolfe/Archipelago/pull/30).&#13;
-&#13;
-download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
-general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
-setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
-source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
-    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.8.2</id>
-    <title>The Legend of Zelda - Spirit Tracks v0.8.2</title>
-    <updated>2026-08-19T15:52:53+00:00</updated>
-    <author>
-      <name>DayKat</name>
-    </author>
-    <author>
-      <name>1313e</name>
-    </author>
-    <author>
-      <name>Carrotinator</name>
-    </author>
-    <author>
-      <name>TriforceDrummer</name>
-    </author>
-    <author>
-      <name>Nepecute</name>
-    </author>
-    <author>
-      <name>Catzador</name>
-    </author>
-    <content>Compatible with seeds generated in v8.x&#13;
-[Setup Guide](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/setup.md)&#13;
-&#13;
-- fixed start_with_train not working&#13;
-- fixed non-er rail checker not checking coordinates&#13;
-- fixed mountain temple crash&#13;
-- fixed boss room blocked item crash&#13;
-- fixed dynamic entrance instancing bug&#13;
-- fixed item id problem, and made sure it works with poptracker again. you'll need to redownload the [poptracker pack](https://github.com/carrotinator/spirit-tracks-poptracker-ap/tree/carrot-map-tweaks)&#13;
-</content>
-    <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.8.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.3.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.3.0</title>
-    <updated>2026-08-19T15:58:23+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>## Changes
-
-- The first giant and the first tank of a mission are checks.
-- Each class's own first weapon slot opens.
-- Choose the mission and the class you start on, and exclude missions you do
-  not want in the run.
-- Reach the internet over Steam's relay, with no port to open.
-- A Join button that puts you on the right server.
-- Bots play the loadout they were given, buy damage instead of buying at
-  random, and keep your seat on RED.
-- Name the classes the bots fill RED with.
-- A Cash Bundle now pays where the money survives.
-- The run counts the waves the team lost.
-
-
-&lt;p align="center"&gt;&#13;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;&#13;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;&#13;
-  &lt;/a&gt;&#13;
-&lt;/p&gt;&#13;
-&#13;
-Release notes — v1.3.0&#13;
-&#13;
-Bots play their loadout&#13;
-&#13;
-	•	Each class gets its own first weapon slot, so Medic starts with the Medigun, Engineer with the Wrench and PDAs, and Spy with the Knife. A run drawing only those three used to be unplayable.&#13;
-	•	Bots hold their distance by what they carry: a Brass Beast closes in, a Tomislav holds a lane, a shotgun walks in instead of firing from minigun range.&#13;
-	•	Bots pull a weapon that still has ammo instead of walking at a robot holding an empty one.&#13;
-	•	Bots buy damage first, and buy it for the weapon in hand. They used to buy at random — hence Heavies with jump height and a stock minigun.&#13;
-	•	You can name the bot team, in order, and the first seats fill first.&#13;
-&#13;
-New checks&#13;
-&#13;
-	•	The first tank destroyed in a mission is a check (26 missions have one; Mannhattan’s three run on gates).&#13;
-	•	The first giant killed in a mission is a check (all 29).&#13;
-	•	The location table goes from 210 to 265.&#13;
-&#13;
-Run shape&#13;
-&#13;
-	•	Choose the start mission and the start class, or leave both random.&#13;
-	•	MVM_EXCLUDED_MISSIONS now actually works on Docker — it reached the container but was never written into the YAML.&#13;
-&#13;
-Fixes&#13;
-&#13;
-	•	Join button works: it names Team Fortress 2 itself instead of asking the server, and connects to this machine’s network address rather than 127.0.0.1.&#13;
-	•	Saving settings restarts a running server instead of telling you to.&#13;
-	•	The launcher restarts the server itself when SourceMod updates its gamedata.&#13;
-	•	The header follows the run’s current mission instead of showing the configured start mission forever.&#13;
-	•	Test Mode respects the difficulty tier and the start mission.&#13;
-	•	A Cash Bundle pays between waves, where it survives; one arriving on an empty server waits instead of vanishing.&#13;
-	•	Players stay on RED: idle handling no longer gives your seat away, and the bot count no longer grows past six.&#13;
-	•	DeathLink docs corrected — a team wipe does not fail a wave; the bomb reaching the hatch does.&#13;
-&#13;
-## Windows&#13;
-&#13;
-Download **`tf2ap.exe`** above. Run it. It installs everything else.&#13;
-&#13;
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)&#13;
-&#13;
-## Linux / Docker&#13;
-&#13;
-Download **`compose.yaml`** and **`.env.example`**:&#13;
-&#13;
-```sh&#13;
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago&#13;
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download&#13;
-curl -fsSLO "$base/compose.yaml"&#13;
-curl -fsSL -o .env "$base/.env.example"&#13;
-```&#13;
-&#13;
-Set `SRCDS_RCONPW` in `.env`, then:&#13;
-&#13;
-```sh&#13;
-docker compose --profile seed run --rm seed   # writes ./seed&#13;
-docker compose up -d&#13;
-```&#13;
-&#13;
-Upload the file from `seed/` at&#13;
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's&#13;
-port into `AP_PORT`.&#13;
-&#13;
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)&#13;
-&#13;
-## Other assets&#13;
-&#13;
-| File | For |&#13;
-| --- | --- |&#13;
-| `tf2_mvm.apworld` | The official Archipelago app. |&#13;
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |&#13;
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |&#13;
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/commits/v1.3.0
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Rosalie-A/Archipelago/releases/tag/FFT-v0.4.0</id>
-    <title>Final Fantasy Tactics Ivalice Island v0.4.0</title>
-    <updated>2026-08-19T16:56:32+00:00</updated>
-    <author>
-      <name>Cerabow</name>
-    </author>
-    <author>
-      <name>Toast</name>
-    </author>
-    <author>
-      <name>Jumza</name>
-    </author>
-    <author>
-      <name>Rosalie</name>
-    </author>
-    <content># Final Fantasy Tactics APWorld Update v0.4.0&#13;
-&#13;
-This release is not backwards compatible with previous releases.&#13;
-&#13;
-## APWorld Changes&#13;
-- Changes&#13;
-  - Move-Find Item (MFI) randomization has been added.&#13;
-    - This setting makes MFI tiles send out multiworld locations.&#13;
-	- This can be configured to optionally trigger MFI tiles with any Chemist or any unit on your team.&#13;
-	- Regardless of whether the tiles are randomized to be multiworld locations, you can randomize the ingame reward given by the tile.&#13;
-  - Ingame poach rewards can now be randomized.&#13;
-  - The client has been changed to trigger in battle rewards automatically.&#13;
-    - This applies to MFI tiles, poach rewards, and job unlocks.&#13;
-  - The Transmooglifier setting has been added.&#13;
-    - This setting changes Rad, Alicia, and Lavian to have special custom jobs designed specifically for Ivalice Island.&#13;
-	- The pool of jobs it picks from can be customized.&#13;
-  - Enemy Randomizer now has a `boss shuffle randomized` option which shuffles unique "boss" units among each other and randomizes all other units per your settings.&#13;
-  - A Vanilla Changes option has been added allowing you to customize which changes from vanilla behavior you'd like enabled.&#13;
-  - A vanilla change enabled by default has been added to adjust shop inventories. This adds an early Katana and Polearm to castle shops and adds the basic guns to trade cities.&#13;
-  - In Enemy Randomizer, a level boost is applied to "boss" units so even when they randomize into common units they have a bit more of a punch than their hangers-on.&#13;
-  - In Enemy Randomizer, a special template for Summoners with the Zodiac spell available has been added.&#13;
-  - An alternate final boss battle has been added for those who wish to test their skills (or are merely bored at the end of a multiworld game). This final battle is of an increased difficulty, is not affected by Enemy Randomizer, and is never required. Clearing it, however, will win the game just as clearing the Graveyard of Airships 2 fight would.&#13;
-- Bugfixes&#13;
-  - In Enemy Randomizer, Sorceror (Kletian's job) now has its primary skillset always available.&#13;
-&#13;
-[Setup Guide](https://github.com/Rosalie-A/Archipelago/wiki/Final-Fantasy-Tactics:-Ivalice-Island-Setup-Guide)</content>
-    <link href="https://github.com/Rosalie-A/Archipelago/releases/tag/FFT-v0.4.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.4</id>
     <title>Ender Magnolia v0.1.4</title>
@@ -833,7 +562,7 @@ Seeds generated with 0.2.1 or earlier keep their old (misgrouped) key assignment
     <link href="https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.10"/>
   </entry>
   <entry>
-    <id>https://github.com/furret78/ArchipelagoHBM/releases/tag/0.4.5</id>
+    <id>https://github.com/furret78/ArchipelagoTouhou/releases/tag/0.4.5</id>
     <title>Black Market of Bulletphilia ~ 100th Black Market v0.4.5</title>
     <updated>2026-08-19T21:16:46+00:00</updated>
     <author>
@@ -861,7 +590,7 @@ Recommended to play on Windows, as **the game does not support Linux natively**.
 # Game Details and Setup&#13;
 - See **game details** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/en_100th%20Black%20Market.md). When exporting .yaml files for this game, it is recommended to use the Options Creator in the Archipelago Launcher for a smooth experience.&#13;
 - See the **setup guide** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/setup_en.md).</content>
-    <link href="https://github.com/furret78/ArchipelagoHBM/releases/tag/0.4.5"/>
+    <link href="https://github.com/furret78/ArchipelagoTouhou/releases/tag/0.4.5"/>
   </entry>
   <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.3.5</id>
@@ -1321,7 +1050,7 @@ This release provides the following updates:&#13;
     <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.4.1"/>
   </entry>
   <entry>
-    <id>https://github.com/furret78/ArchipelagoHBM/releases/tag/0.4.51</id>
+    <id>https://github.com/furret78/ArchipelagoTouhou/releases/tag/0.4.51</id>
     <title>Black Market of Bulletphilia ~ 100th Black Market v0.4.51</title>
     <updated>2026-08-20T17:41:14+00:00</updated>
     <author>
@@ -1347,7 +1076,7 @@ Does not change anything else.&#13;
 # Game Details and Setup&#13;
 - See **game details** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/en_100th%20Black%20Market.md). When exporting .yaml files for this game, it is recommended to use the Options Creator in the Archipelago Launcher for a smooth experience.&#13;
 - See the **setup guide** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/setup_en.md).</content>
-    <link href="https://github.com/furret78/ArchipelagoHBM/releases/tag/0.4.51"/>
+    <link href="https://github.com/furret78/ArchipelagoTouhou/releases/tag/0.4.51"/>
   </entry>
   <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.6.0</id>
@@ -2256,5 +1985,233 @@ Adjust the settings in the YAML to your liking&#13;
 1. Download the source code or the `.apworld` file.&#13;
 2. Drop it into your Archipelago `custom_worlds/` directory.</content>
     <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.4.6-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.1</id>
+    <title>Library of Ruina v1.0.0r2</title>
+    <updated>2026-08-22T12:15:54+00:00</updated>
+    <author>
+      <name>LastPenguin</name>
+    </author>
+    <content>As always, check known bugs and report bugs in #70 &#13;
+&#13;
+**Unsubscribe from workshop mod!**&#13;
+&#13;
+**New run NOT required**&#13;
+&#13;
+**Uses -eta .apworld**&#13;
+&#13;
+**You can find full changelog [here](https://github.com/Az-LastPenguin/LORAP/blob/dev/Changelogs/1.0.0%20in-dev.md)**&#13;
+&#13;
+## Changelog:&#13;
+- FIXED: Abno/EGO page receive panel not opening and breaking item receive&#13;
+- FIXED: Debug panel showing wrong book of everything opened count</content>
+    <link href="https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vicr123/Archipelago/releases/tag/20260822-1</id>
+    <title>Candy Box 2 v1.20260822.1</title>
+    <updated>2026-08-22T13:00:33+00:00</updated>
+    <author>
+      <name>Victor Tran</name>
+    </author>
+    <author>
+      <name>Aren Merzoian</name>
+    </author>
+    <content>This version of the Candy Box 2 randomizer introduces the following features:&#13;
+- New goal conditions are now available.&#13;
+  - Goal conditions are implemented as a set of tasks to be performed&#13;
+  - In addition to obtaining the PLAY stones, you can also opt to require dying to the Castle Trap Room or swimming 3000m in the sea.&#13;
+  - Any subset of these tasks can be made as a requirement to goal the game.&#13;
+  - Your progress towards these goals can be found by finding the Talking Candy.&#13;
+- Filler locations have been overhauled.&#13;
+  - Filler locations now exist in the Lollipop Farm and as distances travelled in the sea.&#13;
+  - Filler locations are randomly selected when required.&#13;
+  - Opting for Individual Spells now adds filler locations instead of bundling multiple items into one shop purchase at the Sorceress' hut.&#13;
+- Hovering over the World Map in your Inventory now tells you how many Progressive World Maps you have received.&#13;
+- You can now have up to 20 font traps in the world.&#13;
+- Logic has been updated for single enemy quests - the Purple Fin is now taken into account.&#13;
+&#13;
+Tested on AP 0.6.7, YMMV on later versions. Requires AP 0.6.0 or later.&#13;
+&#13;
+Game client available at: https://candybox2-ap.vicr123.com/20260822-1/</content>
+    <link href="https://github.com/vicr123/Archipelago/releases/tag/20260822-1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.3.1</id>
+    <title>Factorio: Space Age v2.3.1</title>
+    <updated>2026-08-22T13:04:05+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 2.3.1&#13;
+&#13;
+* Guard against version mismatches between generation and runtime client.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.2</id>
+    <title>YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.2.2</title>
+    <updated>2026-08-22T13:44:06+00:00</updated>
+    <author>
+      <name>SilicDev</name>
+    </author>
+    <content># v0.2.2 Craftsanity hotfix 2 and UT Yamlless support&#13;
+**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.2.1...yohane_bitdb-v0.2.2&#13;
+&#13;
+# Changes&#13;
+- Python Client has gotten some text handling improvements&#13;
+&#13;
+# New Features&#13;
+- UT Yamlless support has been added&#13;
+&#13;
+# Bug fixes&#13;
+- Fixed an error where craftsanity wouldn't actually add any locations (this time for real) &#13;
+- Improved logic for Coral Hill items to prevent more unbeatable seeds&#13;
+&#13;
+# Internal&#13;
+- More tests&#13;
+- world_version has been added to slot_data for the new mod client&#13;
+&#13;
+--- &#13;
+&#13;
+AP Mod download: https://github.com/SilicDev/YohaneAPMod/releases/tag/v0.0.1&#13;
+Yohane BID mod loader download: https://github.com/SilicDev/YohaneBIDModLoader/releases/tag/v0.0.1</content>
+    <link href="https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v.1.5.0</id>
+    <title>Refunct v1.5.0</title>
+    <updated>2026-08-22T14:12:48+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content>- Refunct now uses Rulebuilder! You will need at least Archipelago 0.6.7 from now on.&#13;
+# Custom maps in Archipelago!&#13;
+- You can now play custom maps and they'll give checks in Archipelago. Every button is a check for a total of 37 checks. Enable the Custom Minigame in your yaml.&#13;
+- You can use any custom map you want! Here's my recommended list (currently only 2 maps): [link to archipelago discord](https://discord.com/channels/731205301247803413/1273001824919617577/1540723304296353824).&#13;
+- Here's how to install them: download the maps you want. Then open Refunct and the mod. Press CTRL+SHIFT+M and select "Open Maps Folder". Place your custom map there (it's probably `AppData\Roaming\refunct-tas\maps`). &#13;
+- Once you unlock the Custom minigame and you select it, you will be asked directly which custom map you want to play, you can select it there. You can (re)start whichever you want.&#13;
+- You can make custom maps too with the editor!&#13;
+# Map editor improvements&#13;
+- Pressing `c` and triggering the next cluster should now work better.&#13;
+- You can now press `left`/`right`/`up`/`down`/`pageup`/`pagedown` to work in 3 dimensions without having to toggle.&#13;
+- `TAB` now opens the advanced editor of the selected element, if any.</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v.1.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.5</id>
+    <title>Ender Magnolia v0.1.5</title>
+    <updated>2026-08-22T14:34:08+00:00</updated>
+    <author>
+      <name>Trex</name>
+    </author>
+    <content>**Archipelago** world for **Ender Magnolia**&#13;
+&#13;
+## Update&#13;
+- Logic update&#13;
+- Option to enable NG+ AI&#13;
+- Option to enable multi skills of the same Spirit&#13;
+- Fix elevator key generating 1 more item than checks&#13;
+- Fix 3 missing upgrades in the pool&#13;
+&#13;
+## Requirements&#13;
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
+- [Ender Magnolia Randomizer](https://github.com/Trexounay/EnderMagnolia.Randomizer/releases/tag/endermagnolia-v0.1.5)&#13;
+&#13;
+## Current Features&#13;
+- 340 checks&#13;
+- 2 Goals: **Ending A** **Ending B**&#13;
+- Starting Skill option (except non breaking walls weapon)&#13;
+- Shuffle relic costs&#13;
+- Progressive Aptitudes&#13;
+- Start with heal/fast travel&#13;
+- min/max chapters&#13;
+- Central Elevator Fix option&#13;
+- Starting respite&#13;
+&#13;
+## Notes&#13;
+This is an early release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
+    <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.0</id>
+    <title>Pokemon FireRed and LeafGreen v1.1.0</title>
+    <updated>2026-08-22T16:11:38+00:00</updated>
+    <author>
+      <name>Vyneras</name>
+    </author>
+    <content>ROM CHECKSUM: `00939B09`&#13;
+&#13;
+[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.1.0/worlds/pokemon_frlg_prerelease/docs/setup_en.md)&#13;
+[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.1.0/worlds/pokemon_frlg_prerelease/docs/rom%20changes.md)&#13;
+&#13;
+**Game Updates**&#13;
+- Using Teleport on the field will return you to the interior of the last Pokémon Center you visited if Pokémon Centers are shuffled &#13;
+- Increased the amount of coins that you can hold to 50000&#13;
+- Added 3000 coins and 5000 coins purchase options at the Celadon Game Corner&#13;
+- Dexsanity rewards for Pokémon you catch before getting the Pokédex will now be given to you immediately upon getting the Pokédex. You no longer need to get the Pokédex rated by Oak or at a PC&#13;
+&#13;
+**Apworld Updates**&#13;
+- Converted logic to use Rule Builder (requires AP version 0.6.7 or higher)&#13;
+- Updated several region and entrance names for better clarity in the spoiler log and when using UT&#13;
+- Option groups have been added&#13;
+- New option `skip_intro`&#13;
+  - Set whether the vanilla intro sequence where you get your starter Pokémon from Oak's Lab should be skipped or not. If the intro is skipped then you will be prompted to select your starter Pokémon during Oak's initial speech&#13;
+  - This setting is forced on if Random Starting Town or any type of Entrance Randomization is on&#13;
+- Updated option `shuffle_pokemon_centers`&#13;
+  - Now includes the Player's House though your starting town's Pokémon Center entrance will never lead there&#13;
+- Updated option `mix_entrance_warp_pools`&#13;
+  - Added `Pokemon Centers` as an option&#13;
+    - Your starting town's Pokémon Center entrance is guaranteed to lead to a Pokémon Center&#13;
+  - Added `Warp Tiles` as an option&#13;
+    - Warp Tiles will only be mixed if using `full` Warp Tiles shuffle&#13;
+  - Added `Dropdowns` as an option&#13;
+    - Dropdowns will only be mixed is using `full` Dropdown shuffle and entrances/warps are decoupled&#13;
+- Updated option `prizesanity`&#13;
+  - The coin price for purchasing items at the Game Corner Prize Room will now be determined by what item it is&#13;
+- Updated option `shop_prices` and `consistent_shop_prices`&#13;
+  - Now applies to Game Corner Prize Room item purchases as well&#13;
+- Updated option `trainersanity`&#13;
+  - Split into `kanto_trainersanity` and `sevii_trainersanity` options&#13;
+- New option `item_appearance_matches_contents`&#13;
+  - Changes the color of item balls to match their contents. Green balls contain progression items, blue balls contain useful items, and red balls contain filler items. Traps will be a random color between the three&#13;
+- Removed option `modify_world_state`&#13;
+  - The options that were originally under this have been broken into individual options to allow greater control over them&#13;
+- New option `elevators_condition`&#13;
+  - Sets the conditions the Celadon Department Store and Silph Co. elevators are in. Has no logical implications unless interior warps are shuffled&#13;
+    - Open: The elevators can be used normally&#13;
+    - Locked: The elevators will require the Lift Key before they can be used&#13;
+    - Disabled: The elevators are completely unusable&#13;
+- Updated option `modify_world_state`&#13;
+  - Removed `All Elevators Locked` option&#13;
+- New option `elite_four_rematch_requirement`&#13;
+  - Sets the requirement for challenging the Elite Four Rematch between badges or gyms&#13;
+- New option `cheaper_coins`&#13;
+  - Reduces the cost of buying coins from the Celadon Game Corner by 90%&#13;
+- Update option `game_option`&#13;
+  - Added new option `Encounter Mode`&#13;
+    - Random: Encounters are chosen randomly based on the encounter rates&#13;
+    - Boost: Encounters are chosen based on the encounter rates with a higher chance for Pokémon that haven't already been caught&#13;
+    - Rotate: Encounters are chosen by rotating through the encounter slots in an area (multiple slots in a row can be the same Pokémon)&#13;
+&#13;
+**Bug Fixes**&#13;
+- Fixed an issue where the Pokédex was accessible in the Safari Zone even when you didn't have it&#13;
+- Fixed an issue where items that should only be purchasable once could be purchased multiple times at the Celadon Game Corner Prize Room Shops&#13;
+- Fixed an issue where logic could expect you to board the Seagallop from the harbor side of Vermilion City and sail to the main part of the city without any tickets/passes&#13;
+&#13;
+**Known Issues**&#13;
+- The `base_stats` option does not affect Deoxys attack/defense forms&#13;
+- The Rival battle in Oak's Lab can occasionally softlock the game. Recommend saving before triggering the battle&#13;
+- Registering an evolution item and using it from the field will softlock the game</content>
+    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.0"/>
   </entry>
 </feed>

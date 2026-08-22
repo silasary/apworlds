@@ -1,9 +1,12 @@
 # Pokemon FireRed and LeafGreen
 
 ## Latest
-- <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.4/pokemon_frlg.apworld">Latest Version (1.0.4)</a>
+- <a href="https://github.com/vyneras/Archipelago/releases/download/1.1.0/pokemon_frlg.apworld">Latest Version (1.1.0)</a>
 
 ## All Versions
+
+#### v1.1.0
+- <a href="https://github.com/vyneras/Archipelago/releases/download/1.1.0/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.1.0/pokemon_frlg.apworld</a>
 
 #### v1.0.4
 - <a href="https://github.com/vyneras/Archipelago/releases/download/1.0.4/pokemon_frlg.apworld">https://github.com/vyneras/Archipelago/releases/download/1.0.4/pokemon_frlg.apworld</a>
