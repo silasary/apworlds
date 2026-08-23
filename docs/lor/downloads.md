@@ -1,9 +1,12 @@
 # Library of Ruina
 
 ## Latest
-- <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-gamma/lor.apworld">Latest Version (1.0.0r3)</a>
+- <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-eta.1/lor.apworld">Latest Version (1.0.0r3)</a>
 
 ## All Versions
+
+#### v1.0.0r3
+- <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-eta.1/lor.apworld">https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-eta.1/lor.apworld</a>
 
 #### v1.0.0r3
 - <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-gamma/lor.apworld">https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-gamma/lor.apworld</a>
@@ -16,9 +19,6 @@
 
 #### v1.0.0r2
 - <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-eta/lor.apworld">https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-eta/lor.apworld</a>
-
-#### v1.0.0r2
-- <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-eta.1/lor.apworld">https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-eta.1/lor.apworld</a>
 
 #### v1.0.0.post2r2
 - <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-gamma/lor.apworld">https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-gamma/lor.apworld</a>

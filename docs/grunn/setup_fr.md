@@ -3,7 +3,7 @@
 ## Logiciels nécessaires
 
 - **Grunn** (Sokpop Collective) sur Steam.
-- **BepInEx 5** (x64) — <https://github.com/BepInEx/BepInEx/releases>.
+- **BepInEx 5** (x64) - <https://github.com/BepInEx/BepInEx/releases>.
   Prenez une version `BepInEx_x64_5.4.x`, et **non** BepInEx 6.
 - Le **mod client Grunnchipelago** (`Grunnchipelago.Client.dll` et ses dépendances).
 - L'**apworld Grunn** (`grunn.apworld`), utile uniquement à la personne qui génère la seed.
@@ -31,8 +31,8 @@ version **x64**.
 ## Se connecter à un multimonde
 
 Lancez le jeu. Sur l'**écran titre**, un petit panneau **ARCHIPELAGO** se trouve à droite,
-juste au-dessus du numéro de version. Le curseur de la souris y est libéré — sur l'écran titre
-uniquement — pour pouvoir cliquer dans le panneau ; en jeu, Grunn reste intégralement au
+juste au-dessus du numéro de version. Le curseur de la souris y est libéré - sur l'écran titre
+uniquement - pour pouvoir cliquer dans le panneau ; en jeu, Grunn reste intégralement au
 clavier, rien n'est changé.
 
 | Touche | Effet |
@@ -44,17 +44,17 @@ clavier, rien n'est changé.
 
 Les champs à remplir :
 
-- **Host** — `archipelago.gg`, ou `localhost` pour un serveur local
-- **Port** — le port indiqué par la room
-- **Slot Name** — doit correspondre exactement au champ `name:` de votre YAML
-- **Password** — laissez vide si la room n'en a pas
+- **Host** - `archipelago.gg`, ou `localhost` pour un serveur local
+- **Port** - le port indiqué par la room
+- **Slot Name** - doit correspondre exactement au champ `name:` de votre YAML
+- **Password** - laissez vide si la room n'en a pas
 
 Tant qu'un champ détient le clavier, les commandes du menu sont mises en sommeil : vous pouvez
 taper un slot contenant un « E » sans déclencher la validation du menu.
 
 Il n'y a qu'un bouton, **Connect**. L'actionner alors que vous êtes déjà connecté quitte
 simplement la room courante pour rejoindre la nouvelle : changer de multimonde revient donc à
-modifier les champs et à recliquer. En cas d'échec, le panneau le dit — avec le motif renvoyé
+modifier les champs et à recliquer. En cas d'échec, le panneau le dit - avec le motif renvoyé
 par le serveur quand il en donne un, sinon au bout d'une dizaine de secondes.
 
 Le panneau retient ce que vous saisissez : au lancement suivant, la connexion se refait toute
@@ -68,14 +68,14 @@ Si vous préférez, les mêmes réglages se trouvent dans
 `BepInEx/config/grunnchipelago.client.cfg`, section `[Connection]` ; le panneau ne fait que
 lire et écrire ce fichier.
 
-`Enabled = false` désactive tout et vous rend le jeu vanilla — aucun patch n'est appliqué
+`Enabled = false` désactive tout et vous rend le jeu vanilla - aucun patch n'est appliqué
 dans cet état.
 
 ## La console en jeu
 
 Appuyez sur **F1** en jeu pour prendre la main sur la console Archipelago, en bas à droite.
-Elle affiche tout ce que dit le serveur — objets trouvés, indices, discussion, résultats de
-commandes — et reste très discrète tant qu'elle n'a pas le focus.
+Elle affiche tout ce que dit le serveur - objets trouvés, indices, discussion, résultats de
+commandes - et reste très discrète tant qu'elle n'a pas le focus.
 
 | Touche | Effet |
 |---|---|
@@ -100,7 +100,7 @@ arrache pas l'historique en pleine lecture.
   (Tab/Pause).
 - **Journalisation** : `VerboseLogs` enregistre chaque check, octroi et piège. Le mod tient
   aussi un journal horodaté persistant dans
-  `BepInEx/plugins/Grunnchipelago/grunnchipelago_session.log` — c'est ce fichier qu'il faut
+  `BepInEx/plugins/Grunnchipelago/grunnchipelago_session.log` - c'est ce fichier qu'il faut
   joindre en cas de problème.
 
 ## Sauvegardes
@@ -108,12 +108,12 @@ arrache pas l'historique en pleine lecture.
 Le mod tient un **profil de sauvegarde dédié par multimonde**, nommé d'après la seed et votre
 slot :
 
-- **Non connecté** — vous jouez sur votre sauvegarde normale, vanilla. Jamais touchée.
-- **Connecté** — le jeu bascule sur le profil de cette seed et de ce slot. Deux multimondes
+- **Non connecté** - vous jouez sur votre sauvegarde normale, vanilla. Jamais touchée.
+- **Connecté** - le jeu bascule sur le profil de cette seed et de ce slot. Deux multimondes
   différents ne partagent jamais leur progression, et rejoindre la même room reprend son
   profil là où vous l'aviez laissé.
 
-La bascule n'a lieu que **sur l'écran titre, avant tout chargement de monde** — d'où l'intérêt
+La bascule n'a lieu que **sur l'écran titre, avant tout chargement de monde** - d'où l'intérêt
 de se connecter là plutôt qu'en cours de partie. Se connecter alors qu'une partie est déjà
 lancée laisse la sauvegarde courante intacte jusqu'au retour au menu.
 
@@ -145,7 +145,7 @@ les erreurs de connexion y sont écrites en entier.
 réapparaît mais reste inerte. Le journal indique `Silencieux : … (deja envoye)`.
 
 **Un objet n'est jamais apparu dans le monde.** Trois objets ne sont volontairement jamais
-injectés dans votre inventaire — l'Os, la Boussole et la Clé étrange. Les posséder tuerait
+injectés dans votre inventaire - l'Os, la Boussole et la Clé étrange. Les posséder tuerait
 une fin (respectivement Chien, Labyrinthe et Long Couloir). Ils apparaissent à la place sous
 forme de ramassage près du panneau des roses, au point de départ, et vous ne les prenez que
 lorsque vous en avez réellement besoin.

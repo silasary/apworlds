@@ -6,7 +6,7 @@ increasingly dangerous hunts and crafting achievements.
 
 
 ## Downloads
-- <a href="https://github.com/LucasRenaudineau/hytelago/releases/download/release2/Hytale.apworld">Latest Version (2)</a>
+- <a href="https://github.com/LucasRenaudineau/hytelago/releases/download/release3/Hytale.apworld">Latest Version (3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Final Fantasy XIV
 
 ## Latest
-- <a href="https://github.com/silasary/APxiv/releases/download/0.30.2/ffxiv.apworld">Latest Version (0.30.2)</a>
+- <a href="https://github.com/silasary/APxiv/releases/download/0.31.1/ffxiv.apworld">Latest Version (0.31.1)</a>
 
 ## All Versions
+
+#### v0.31.1
+- <a href="https://github.com/silasary/APxiv/releases/download/0.31.1/ffxiv.apworld">https://github.com/silasary/APxiv/releases/download/0.31.1/ffxiv.apworld</a>
 
 #### v0.30.2
 - <a href="https://github.com/silasary/APxiv/releases/download/0.30.2/ffxiv.apworld">https://github.com/silasary/APxiv/releases/download/0.30.2/ffxiv.apworld</a>
