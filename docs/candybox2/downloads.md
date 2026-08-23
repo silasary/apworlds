@@ -1,9 +1,12 @@
 # Candy Box 2
 
 ## Latest
-- <a href="https://github.com/vicr123/Archipelago/releases/download/20260822-1/candybox2.apworld">Latest Version (1.20260822.1)</a>
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20260822-1/candybox2.apworld">Latest Version (1.20260822.1r2)</a>
 
 ## All Versions
+
+#### v1.20260822.1r2
+- <a href="https://github.com/vicr123/Archipelago/releases/download/20260822-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20260822-1/candybox2.apworld</a>
 
 #### v1.20260822.1
 - <a href="https://github.com/vicr123/Archipelago/releases/download/20260822-1/candybox2.apworld">https://github.com/vicr123/Archipelago/releases/download/20260822-1/candybox2.apworld</a>

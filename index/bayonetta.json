@@ -327,6 +327,21 @@
       "title": "v3.1.0 - Fixed Co-op and Verse Rank Bugs",
       "version_simple": "3.1.0",
       "world_version": "3.1.0"
+    },
+    "v3.2.0": {
+      "created_at": "2026-08-22T11:58:39Z",
+      "description": "## v3.2.0\r\nMajor bug fixes for combat filters, vehicle logic, duplicate checks, and overall game stability!\r\n\r\n### Bug Fixes & Adjustments\r\n* **Alfheim Option Added:** Added a dedicated toggle to the `bayonetta.apworld` settings allowing players to disable Alfheims as randomized location checks.\r\n* **Hitstun, Death & Grab Lockouts Fixed:** Fixed an overly aggressive input filter that accidentally blocked system animations. Hitstun (damage knockback), magic drain, death states, and contextual grabs (like the Wicked Weave Flurry Grab) will no longer be intercepted when kicks are locked.\r\n* **Chapter XIII Surfboard Glitch:** Fixed a major bug during the Sapientia boss fight where players would stand on a static board with normal movement, becoming entirely invincible. The surfboard vehicle state now loads perfectly.\r\n* **Route 666 Check Overhaul:** Completely rewrote the Chapter 8 verse tracker. The randomizer now natively hooks into the Rank Table memory, ensuring checks are awarded the exact millisecond the verse result screen appears. This permanently fixes false Pure Platinum grants, missing checks, and quit-to-menu exploits.\r\n* **Route 666 Dynamic Vehicle Sync:** Vehicle restriction immunity is now properly mapped to exact verses. You will no longer be allowed to use locked weapons during the on-foot car fights in Verses 1 and 2.\r\n* **Angel Arms Full Arsenal Unlocks:** Expanded the item ID range filter to correctly encompass all enemy-dropped weapons (such as spears, bows, and chainsaws alongside the Ardor Blade). \r\n* **Magic Flute Menu Visibility:** The *Magic Flute* will now immediately appear in your in-game item menu when received through the Archipelago multiworld, without requiring you to manually craft it or pick it up first.\r\n* **Smoother Pause Combos:** Fixed an issue where combo attacks requiring a slight delay or pause would freeze up or fail to register. Combo chains now flow smoothly from start to finish.\r\n\r\n### Todo\r\n* **Co-op Enhancements:** Refine spectator scaling and sync timings for custom weapons during high-intensity co-op play.\r\n* **Tracker Updates:** Work on making the item tracker only show items that are currently \"in logic\".\r\n\r\n### Highly Recommended Additions\r\nFor the most stable and enjoyable experience, I strongly recommend downloading and installing these alongside the AP mod, it does not take much work to install and it will help with crashes and bugs the AP mod might have! \r\n* **[Bayonetta 4GB Patch](https://github.com/oceaniccamred/Bayonetta-4GB-Patched-EXE)** (Highly recommended to prevent memory crashes)\r\n* **[Bayonetta Essentials](https://gamebanana.com/mods/533310)**\r\n\r\n### Downloads\r\n- **`dinput8.dll`** \u2014 place in your Bayonetta game folder (next to `Bayonetta.exe`).\r\n- **`z.dll`** \u2014 place in your Bayonetta game folder too.\r\n- **`bayonetta.apworld`** \u2014 place in your Archipelago `custom_worlds` folder (replace the old one).\r\n\r\n**Existing seeds keep their original logic** \u2014 updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.",
+      "download_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/download/v3.2.0/bayonetta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2795bb68f1fe62200082bc73e143029f1065d099d45fd74586d9e6de9ef89da4",
+      "html_url": "https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v3.2.0",
+      "minimum_ap_version": "0.4.0",
+      "size": 16495,
+      "source_url": "https://api.github.com/repos/Boi-027/BayonettaArchipelago",
+      "tag": "v3.2.0",
+      "title": "v3.2.0 - Bug Fixes and New Addon for YAML",
+      "version_simple": "3.2.0",
+      "world_version": "3.2.0"
     }
   }
 }

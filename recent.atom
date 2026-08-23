@@ -2,104 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-23T00:16:13.867335+00:00</updated>
+  <updated>2026-08-23T06:17:55.098105+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.16</id>
-    <title>Total War Warhammer 3 v0.10.16.post2</title>
-    <updated>2026-08-19T19:08:39+00:00</updated>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>Added missing Dechala buildings.&#13;
-Fixed bug with Dechala and progressive buildings failing generation.&#13;
-Fixed progressive units.&#13;
-&#13;
-**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.15...v0.10.16</content>
-    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.16"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.3.3</id>
-    <title>Team Fortress 2 Mann vs Machine v1.3.3</title>
-    <updated>2026-08-19T19:52:53+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-- A server set to LAN refused the whole network, including the machines meant
-  to reach it. Fixed.
-- Giving a login token now means the server is meant to be joined from
-  somewhere else, and it is set up that way.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.3.2...v1.3.3
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.3.3"/>
-  </entry>
   <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.3.4</id>
     <title>Team Fortress 2 Mann vs Machine v1.3.4</title>
@@ -1685,8 +1592,45 @@ The PR to fix this has been merged, but until Archipelago has another release, p
     <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v0.4.6-beta"/>
   </entry>
   <entry>
+    <id>https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v3.2.0</id>
+    <title>Bayonetta v3.2.0</title>
+    <updated>2026-08-22T11:58:39+00:00</updated>
+    <author>
+      <name>Boi</name>
+    </author>
+    <content>## v3.2.0&#13;
+Major bug fixes for combat filters, vehicle logic, duplicate checks, and overall game stability!&#13;
+&#13;
+### Bug Fixes &amp; Adjustments&#13;
+* **Alfheim Option Added:** Added a dedicated toggle to the `bayonetta.apworld` settings allowing players to disable Alfheims as randomized location checks.&#13;
+* **Hitstun, Death &amp; Grab Lockouts Fixed:** Fixed an overly aggressive input filter that accidentally blocked system animations. Hitstun (damage knockback), magic drain, death states, and contextual grabs (like the Wicked Weave Flurry Grab) will no longer be intercepted when kicks are locked.&#13;
+* **Chapter XIII Surfboard Glitch:** Fixed a major bug during the Sapientia boss fight where players would stand on a static board with normal movement, becoming entirely invincible. The surfboard vehicle state now loads perfectly.&#13;
+* **Route 666 Check Overhaul:** Completely rewrote the Chapter 8 verse tracker. The randomizer now natively hooks into the Rank Table memory, ensuring checks are awarded the exact millisecond the verse result screen appears. This permanently fixes false Pure Platinum grants, missing checks, and quit-to-menu exploits.&#13;
+* **Route 666 Dynamic Vehicle Sync:** Vehicle restriction immunity is now properly mapped to exact verses. You will no longer be allowed to use locked weapons during the on-foot car fights in Verses 1 and 2.&#13;
+* **Angel Arms Full Arsenal Unlocks:** Expanded the item ID range filter to correctly encompass all enemy-dropped weapons (such as spears, bows, and chainsaws alongside the Ardor Blade). &#13;
+* **Magic Flute Menu Visibility:** The *Magic Flute* will now immediately appear in your in-game item menu when received through the Archipelago multiworld, without requiring you to manually craft it or pick it up first.&#13;
+* **Smoother Pause Combos:** Fixed an issue where combo attacks requiring a slight delay or pause would freeze up or fail to register. Combo chains now flow smoothly from start to finish.&#13;
+&#13;
+### Todo&#13;
+* **Co-op Enhancements:** Refine spectator scaling and sync timings for custom weapons during high-intensity co-op play.&#13;
+* **Tracker Updates:** Work on making the item tracker only show items that are currently "in logic".&#13;
+&#13;
+### Highly Recommended Additions&#13;
+For the most stable and enjoyable experience, I strongly recommend downloading and installing these alongside the AP mod, it does not take much work to install and it will help with crashes and bugs the AP mod might have! &#13;
+* **[Bayonetta 4GB Patch](https://github.com/oceaniccamred/Bayonetta-4GB-Patched-EXE)** (Highly recommended to prevent memory crashes)&#13;
+* **[Bayonetta Essentials](https://gamebanana.com/mods/533310)**&#13;
+&#13;
+### Downloads&#13;
+- **`dinput8.dll`** — place in your Bayonetta game folder (next to `Bayonetta.exe`).&#13;
+- **`z.dll`** — place in your Bayonetta game folder too.&#13;
+- **`bayonetta.apworld`** — place in your Archipelago `custom_worlds` folder (replace the old one).&#13;
+&#13;
+**Existing seeds keep their original logic** — updates apply to freshly generated seeds. Old seeds play fine with the new DLL, but new world rules require a regeneration.</content>
+    <link href="https://github.com/Boi-027/BayonettaArchipelago/releases/tag/v3.2.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.1</id>
-    <title>Library of Ruina v1.0.0r3</title>
+    <title>Library of Ruina v1.0.0r2</title>
     <updated>2026-08-22T12:15:54+00:00</updated>
     <author>
       <name>LastPenguin</name>
@@ -1705,35 +1649,6 @@ The PR to fix this has been merged, but until Archipelago has another release, p
 - FIXED: Abno/EGO page receive panel not opening and breaking item receive&#13;
 - FIXED: Debug panel showing wrong book of everything opened count</content>
     <link href="https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vicr123/Archipelago/releases/tag/20260822-1</id>
-    <title>Candy Box 2 v1.20260822.1</title>
-    <updated>2026-08-22T13:00:33+00:00</updated>
-    <author>
-      <name>Victor Tran</name>
-    </author>
-    <author>
-      <name>Aren Merzoian</name>
-    </author>
-    <content>This version of the Candy Box 2 randomizer introduces the following features:&#13;
-- New goal conditions are now available.&#13;
-  - Goal conditions are implemented as a set of tasks to be performed&#13;
-  - In addition to obtaining the PLAY stones, you can also opt to require dying to the Castle Trap Room or swimming 3000m in the sea.&#13;
-  - Any subset of these tasks can be made as a requirement to goal the game.&#13;
-  - Your progress towards these goals can be found by finding the Talking Candy.&#13;
-- Filler locations have been overhauled.&#13;
-  - Filler locations now exist in the Lollipop Farm and as distances travelled in the sea.&#13;
-  - Filler locations are randomly selected when required.&#13;
-  - Opting for Individual Spells now adds filler locations instead of bundling multiple items into one shop purchase at the Sorceress' hut.&#13;
-- Hovering over the World Map in your Inventory now tells you how many Progressive World Maps you have received.&#13;
-- You can now have up to 20 font traps in the world.&#13;
-- Logic has been updated for single enemy quests - the Purple Fin is now taken into account.&#13;
-&#13;
-Tested on AP 0.6.7, YMMV on later versions. Requires AP 0.6.0 or later.&#13;
-&#13;
-Game client available at: https://candybox2-ap.vicr123.com/20260822-1/</content>
-    <link href="https://github.com/vicr123/Archipelago/releases/tag/20260822-1"/>
   </entry>
   <entry>
     <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v2.3.1</id>
@@ -1994,5 +1909,50 @@ This is an early release and has not been extensively tested. Expect bugs and mi
 &#13;
 **Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.10.8...v0.10.9</content>
     <link href="https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.2.7-real</id>
+    <title>Super Smash Bros. Brawl - The Subspace Emissary v0.2.7.post0</title>
+    <updated>2026-08-23T00:53:51+00:00</updated>
+    <author>
+      <name>kenniky</name>
+    </author>
+    <content>Implements a flow to constantly update adventure data address&#13;
+&#13;
+Backwards compatible to v0.2.0&#13;
+&#13;
+Info: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/en_SubspaceEmissary.md&#13;
+Setup: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/en_SubspaceEmissary_Setup.md&#13;
+FAQ: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/faq.md</content>
+    <link href="https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.2.7-real"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vicr123/Archipelago/releases/tag/20260822-1</id>
+    <title>Candy Box 2 v1.20260822.1r2</title>
+    <updated>2026-08-23T05:33:57+00:00</updated>
+    <author>
+      <name>Victor Tran</name>
+    </author>
+    <author>
+      <name>Aren Merzoian</name>
+    </author>
+    <content>This version of the Candy Box 2 randomizer introduces the following features:&#13;
+- New goal conditions are now available.&#13;
+  - Goal conditions are implemented as a set of tasks to be performed&#13;
+  - In addition to obtaining the PLAY stones, you can also opt to require dying to the Castle Trap Room or swimming 3000m in the sea.&#13;
+  - Any subset of these tasks can be made as a requirement to goal the game.&#13;
+  - Your progress towards these goals can be found by finding the Talking Candy.&#13;
+- Filler locations have been overhauled.&#13;
+  - Filler locations now exist in the Lollipop Farm and as distances travelled in the sea.&#13;
+  - Filler locations are randomly selected when required.&#13;
+  - Opting for Individual Spells now adds filler locations instead of bundling multiple items into one shop purchase at the Sorceress' hut.&#13;
+- Hovering over the World Map in your Inventory now tells you how many Progressive World Maps you have received.&#13;
+- You can now have up to 20 font traps in the world.&#13;
+- Logic has been updated for single enemy quests - the Purple Fin is now taken into account.&#13;
+&#13;
+Tested on AP 0.6.7, YMMV on later versions. Requires AP 0.6.0 or later.&#13;
+&#13;
+Game client available at: https://candybox2-ap.vicr123.com/20260822-1/</content>
+    <link href="https://github.com/vicr123/Archipelago/releases/tag/20260822-1"/>
   </entry>
 </feed>
