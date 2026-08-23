@@ -26,6 +26,21 @@
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
     },
+    "v10": {
+      "created_at": "2026-08-22T19:19:30Z",
+      "description": "**Fixes**\r\n* Fixed a missing connection between Route 5 and Nimbasa City\r\n* Fixed a generation error when Mistralton City is selected as starting town and `shuffle_badges: shuffle`\r\n  * Skyla will now always give the Jet Badge or the Quake Badge if `starting_town = \"Mistralton City\"` and `shuffle_badges: shuffle`\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:  # same as v8\r\n      randomize_starting_town: true\r\n      starting_town_blacklist: []  # list in README\r\n      add_ss_ticket: true\r\n      add_pass: true\r\n      hm_with_badges: true\r\n      add_rock_smash: true\r\n      add_rock_smash_musharna: true  # requires add_rock_smash\r\n      extra_cut_trees: true\r\n      extra_cut_trees_kyurem: true   # requires extra_cut_trees\r\n      move_strength_boulders: true\r\n      move_strength_boulders_vi_road: true   # requires move_strength_boulders\r\n      dark_areas: [\"Wellspring Cave B1F\", \"Mistralton Cave\", \"Challengers Cave\"]  # supports \"_All\" and \"_Random\", see README\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is compatible with v0.3.37+ of the main BW APworld\r\n* This version is compatible with v23 of the QoL Plugin",
+      "download_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/download/v10/pokemon_bw_extra_logic_plugin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "69b56dbde21d0ec2932db4b56da20ae47645857ad6a788282567f0df04761e1d",
+      "html_url": "https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v10",
+      "minimum_ap_version": "0.6.4",
+      "size": 182549,
+      "source_url": "https://api.github.com/repos/Radis7Noir/pokemon_bw_extra_logic_plugin",
+      "tag": "v10",
+      "title": "v10 - Generation Fix",
+      "version_simple": "1.10.0",
+      "world_version": "1.10.0"
+    },
     "v2": {
       "created_at": "2026-07-01T12:35:40Z",
       "description": "** Fix**\r\n* Added a missing connection between Challenger's Cave and Route 9\r\n* Added a missing connection between Wellspring Cave and Route 3\r\n\r\n**YAML Options List**\r\n* The following options need to be added to the Black and White YAML under `plugin_options`:\r\n```\r\n  plugin_options:\r\n    extra_logic:\r\n      add_rock_smash: true\r\n      add_ss_ticket: true\r\n      hm_with_badges: true\r\n```\r\n\r\n**Important Notes**\r\n* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.\r\n* It is not possible to add the extra logic options mid-playthrough.\r\n\r\n**Backwards Compatibility**\r\n* This version is only compatible with v0.3.35+ of the main BW APworld.\r\n\r\n**Full Changelog**: https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/compare/v1...v2",

@@ -1,9 +1,12 @@
 # APQuest
 
 ## Latest
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/apquest1.0.1/apquest.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/apquest_boss_health_fix/apquest.apworld">Latest Version (2.0.0)</a>
 
 ## All Versions
+
+#### v2.0.0
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/apquest_boss_health_fix/apquest.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/apquest_boss_health_fix/apquest.apworld</a>
 
 #### v1.0.1
 - <a href="https://github.com/NewSoupVi/Archipelago/releases/download/apquest1.0.1/apquest.apworld">https://github.com/NewSoupVi/Archipelago/releases/download/apquest1.0.1/apquest.apworld</a>

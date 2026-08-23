@@ -5,7 +5,7 @@ Good games don&#x27;t need more than six checks.
 
 
 ## Downloads
-- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/apquest1.0.1/apquest.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/NewSoupVi/Archipelago/releases/download/apquest_boss_health_fix/apquest.apworld">Latest Version (2.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Plants Vs Zombies Fusion
 
 ## Latest
-- <a href="https://github.com/GraymonDgt/PVZFusionArchipelago/releases/download/v1.7.0/pvzf.apworld">Latest Version (1.7.0)</a>
+- <a href="https://github.com/GraymonDgt/PVZFusionArchipelago/releases/download/v1.8.0/pvzf.apworld">Latest Version (1.8.0)</a>
 
 ## All Versions
+
+#### v1.8.0
+- <a href="https://github.com/GraymonDgt/PVZFusionArchipelago/releases/download/v1.8.0/pvzf.apworld">https://github.com/GraymonDgt/PVZFusionArchipelago/releases/download/v1.8.0/pvzf.apworld</a>
 
 #### v1.7.0
 - <a href="https://github.com/GraymonDgt/PVZFusionArchipelago/releases/download/v1.7.0/pvzf.apworld">https://github.com/GraymonDgt/PVZFusionArchipelago/releases/download/v1.7.0/pvzf.apworld</a>
