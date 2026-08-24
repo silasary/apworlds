@@ -4,7 +4,7 @@ Refunct is a first-person platformer focused on movement and momentum.
 
 
 ## Downloads
-- <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v.1.5.0/refunct.apworld">Latest Version (1.5.0)</a>
+- <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.5.1/refunct.apworld">Latest Version (1.5.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -2,463 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-24T12:18:49.796699+00:00</updated>
+  <updated>2026-08-24T18:19:38.974730+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.5.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.5.0</title>
-    <updated>2026-08-20T14:31:15+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-- New defender bots. They evade sentry busters, spy check, deploy the medigun
-  by what it is instead of by panic, lay and detonate sticky traps, jump as
-  Scout, and aim rockets at the ground when the splash pays.
-- Engineers buy for their primary and secondary, and pull the wrangler for the
-  shield rather than only for the reach.
-- Bots stop walking backwards to ride a teleporter that was not worth it.
-- A server with no login token now runs on LAN, which is what it is.
-- The launcher says where the server is when Join does nothing.
-- The Bots tab scrolls on a short window.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.4.0...v1.5.0
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.4.1</id>
-    <title>Cursed Words v0.4.0r2</title>
-    <updated>2026-08-20T15:46:29+00:00</updated>
-    <author>
-      <name>JammyGeeza</name>
-    </author>
-    <content>## Information&#13;
-This archipelago implementation is in **early development** and is in public pre-release for testing, so may not be complete and/or may contain bugs that heavily disrupt the experience. It is not advised to include this in large multiworlds at this time, so only do so at your own risk and inform your host beforehand.&#13;
-&#13;
-## Setup Guide&#13;
-Please visit the [Setup Guide](https://github.com/JammyGeeza/CursedWords-Archipelago#setup-guide) for instructions on how to install the mod client.&#13;
-&#13;
-## Issue / Bug Reporting&#13;
-If you experience issues that are not already on the [known issues list](https://github.com/JammyGeeza/CursedWords-Archipelago/issues/views/12865), please raise a new issue or post in the [Cursed Words Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1499176806962692196)&#13;
-&#13;
-## Patch Notes&#13;
-This release provides the following updates:&#13;
-### APWorld&#13;
-- None&#13;
-### Client&#13;
-- Fixes naming mis-match with 'Stage' related location checks</content>
-    <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/furret78/ArchipelagoTouhou/releases/tag/0.4.51</id>
-    <title>Black Market of Bulletphilia ~ 100th Black Market v0.4.51</title>
-    <updated>2026-08-20T17:41:14+00:00</updated>
-    <author>
-      <name>Yuureiki</name>
-    </author>
-    <content>Archipelago Randomizer implementation for **_Black Market of Bulletphilia ~ 100th Black Market_**, also known as _**Touhou 18.5**_.&#13;
-&#13;
-- **.apworld version:** 0.4.51&#13;
-- **Minimum Archipelago Launcher version:** 0.6.7&#13;
-&#13;
-Recommended to play on Windows, as **the game does not support Linux natively**. If playing on Linux, it is recommended to run both Archipelago Launcher and the game in Wine/Proton.&#13;
-&#13;
-# Changelog&#13;
-- Quality-of-life: Koishi's Ability Card no longer keeps the Power loss death penalty reduction behavior that was carried over from Unconnected Marketeers. Since deaths in 100th Black Market does not subtract Power upon dying, Koishi's card was the only way player deaths reduced Power.&#13;
-- Quality-of-life: `One-time` Funds received at the end of a stage will be applied to the Funds in the menu instead of in the stage.&#13;
-- Itemized Equip Cost can now go up to 18, totalling 1000% Equip Cost if fully upgraded.&#13;
-- Removed certain unnecessary code comments from internal files to cut down on file size _(not removed in GitHub source code, only in release build)_.&#13;
-&#13;
-Does not change anything else.&#13;
-&#13;
-**Full Changelog**: https://github.com/furret78/ArchipelagoHBM/compare/0.4.5...0.4.51&#13;
-&#13;
-# Game Details and Setup&#13;
-- See **game details** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/en_100th%20Black%20Market.md). When exporting .yaml files for this game, it is recommended to use the Options Creator in the Archipelago Launcher for a smooth experience.&#13;
-- See the **setup guide** [here](https://github.com/furret78/Archipelago/blob/main/worlds/th185/docs/setup_en.md).</content>
-    <link href="https://github.com/furret78/ArchipelagoTouhou/releases/tag/0.4.51"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.6.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.6.0</title>
-    <updated>2026-08-20T17:45:57+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-- The defender bots know six maps by hand: Bigrock, Coal Town, Decoy,
-  Mannworks, Mannhattan and Rottenburg. Somebody flew each one and stood on
-  every spot, so engineers build where a player would build.
-- Engineers move their nest between waves when a better spot opens up, instead
-  of holding one place all mission.
-- Engineers put the dispenser where it was placed by hand, and keep out of each
-  other's way.
-- On Rottenburg engineers stay off the tank's path on a tank wave, and use the
-  platform spot that only works when a tank is rolling.
-- Engineers no longer rebuild a level 3 from nothing every wave when they were
-  not going to move anyway.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.5.0...v1.6.0
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.7.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.7.0</title>
-    <updated>2026-08-20T21:03:19+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-- The server no longer freezes at the end of a wave. Every engineer worked out
-  where to move its nest in the same frame; they take turns now.
-- Engineers stop holding wave one's nest for the whole mission, and upgrade it
-  instead.
-- Engineers no longer move their nest between waves. It crashed the server at
-  every wave transition, so it is off until it works.
-  `sm_redbots_manager_engineer_nest_relocate 1` turns it back on.
-- A bot that is hurt or low on ammo guards the bomb from a dispenser beside it,
-  instead of walking off to find a health pack.
-- `tf2ap.exe` carries an icon and says what it is in its file properties.
-- Windows still warns about `tf2ap.exe`. The install guide says why, and every
-  release now publishes `SHA256SUMS` and links a VirusTotal report so you can
-  check what you downloaded.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. SmartScreen calls the exe an
-unrecognized app; Defender sometimes flags it. Click **More info**, then **Run
-anyway**. The launcher unpacks archives into your TF2 directory, writes
-SourceMod's DLLs there, downloads a game server and starts it, which is what an
-installer does and also what a dropper does, and the file is not signed yet, so
-a scanner has nothing to weigh against the heuristic.
-[TODO item 13](https://github.com/m-this/tf2-archipelago/blob/main/TODO.md#13-sign-the-windows-exe-open)
-is the fix. Check the file below instead of trusting it, or build it yourself
-with `make launcher`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-`tf2ap.exe` is also on VirusTotal. Search its SHA-256 at
-[virustotal.com](https://www.virustotal.com/gui/home/search) to see what every
-engine says about this exact build. Expect a small number of heuristic and
-machine-learning detections and no named malware family; the section above says
-why. The source of all of it is in the repository, and `make launcher` rebuilds
-the exe on your own machine.
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.6.0...v1.7.0</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.8.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.8.0</title>
-    <updated>2026-08-20T22:01:53+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-- Medics keep the medigun out. Every robot they could see used to pull them
-  onto the syringe gun, which drops the heal and stops the charge building.
-- Scouts double jump most of the time, and the second jump goes the other way,
-  which is harder to shoot than one long arc.
-- Bots that are hurt or low on ammo hold the bomb from a friendly dispenser
-  instead of walking off to find a health pack.
-- Engineers rate dispenser range far higher and buy it early, now that the
-  whole team stands in it.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. SmartScreen calls the exe an
-unrecognized app; Defender sometimes flags it. Click **More info**, then **Run
-anyway**. The launcher unpacks archives into your TF2 directory, writes
-SourceMod's DLLs there, downloads a game server and starts it, which is what an
-installer does and also what a dropper does, and the file is not signed yet, so
-a scanner has nothing to weigh against the heuristic.
-[TODO item 13](https://github.com/m-this/tf2-archipelago/blob/main/TODO.md#13-sign-the-windows-exe-open)
-is the fix. Check the file below instead of trusting it, or build it yourself
-with `make launcher`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-`tf2ap.exe` is also on VirusTotal. Search its SHA-256 at
-[virustotal.com](https://www.virustotal.com/gui/home/search) to see what every
-engine says about this exact build. Expect a small number of heuristic and
-machine-learning detections and no named malware family; the section above says
-why. The source of all of it is in the repository, and `make launcher` rebuilds
-the exe on your own machine.
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.7.0...v1.8.0</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.8.0"/>
-  </entry>
   <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.8.1</id>
     <title>Team Fortress 2 Mann vs Machine v1.8.1</title>
@@ -1121,7 +669,7 @@ For the most stable and enjoyable experience, I strongly recommend downloading a
   </entry>
   <entry>
     <id>https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.1</id>
-    <title>Library of Ruina v1.0.0r2</title>
+    <title>Library of Ruina v1.0.0r3</title>
     <updated>2026-08-22T12:15:54+00:00</updated>
     <author>
       <name>LastPenguin</name>
@@ -2146,5 +1694,150 @@ Free code signing for open source projects, provided by
 - Removed arena door cs skips from certain arenas that can softlock you in the door if entering next to a wall&#13;
 - Arena doors open instantly, allowing you to exit arenas quicker</content>
     <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.8.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.1.0</id>
+    <title>Viscera Cleanup Detail v1.1.0</title>
+    <updated>2026-08-24T11:32:35+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content># Viscera Cleanup Detail 1.1.0&#13;
+&#13;
+- **Revolutionary Robotics laser welder** for 100% cleaned. Without it, now max 80% is in logic.&#13;
+- **Uprinsing vendor and welder** for 100% cleaned, 80% otherwise.&#13;
+- **The punch-out report can fill itself** (new yaml option auto_fill_punchout_report). Use the punch-out machine once to fill it in, and each PID entered into it will also auto-fill itself.&#13;
+&#13;
+**Upgrading**&#13;
+- Existing yamls keep working untouched.</content>
+    <link href="https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.3</id>
+    <title>Nine Sols v0.6.3</title>
+    <updated>2026-08-24T13:47:36+00:00</updated>
+    <author>
+      <name>Ixrec</name>
+    </author>
+    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
+&#13;
+- Fixed UT map page auto-tabbing to/from the world_map when the Teleport menu is opened or closed. Hopefully for real this time.&#13;
+- Fixed the pause menu seal count displays so they should be legible at any window size.&#13;
+- Jade Cost Plando is now an OptionCounter, so it can be edited in the Options Creator&#13;
+- Fixed a shop rando corner case where the forced DS/HC purchase logic would ask you to buy a !collected item, which was also disabled.&#13;
+- AP hint generation is now done in batches. For example, if you open Kuafu's shop and there are 5 useful/prog items, the mod will (usually) send only 1 message to the AP server with all 5 locations to hint, instead of 5 separate messages.&#13;
+- The source of truth for Nine Sols' logic has been moved from .jsonc to .py files in order to improve the process around contributing logic changes. This should be an invisible internal change, but it's worth mentioning in case there are bugs, or you liked inspecting these files.&#13;
+-----&#13;
+- `vanilla` logic:&#13;
+	- "OW - Activate Crates And Return" is now reachable with Cloud Leap replacing Nymph, because the crushers you're expected to disable with nymph can instead be bypassed by using Cloud Leap and Air Dash to spend several seconds over the red floor&#13;
+- `medium` logic:&#13;
+	- "AM - Above Root Node" to "Bottom Right" now allows Wall Climb and T-dash&#13;
+	- "AF (Depths) - Lower Level" to "Under Lower Left Exit" was incorrectly in logic with only Swift Runner; now it requires Grapple and Swift Runner&#13;
+	- "AF (Elevator) - Moving Boxes Below Root Node" to "Statue Chest" now allows Swift Runner and T-dash&#13;
+	- "CTH - Yanren Arena" is now reachable with neither Nymph nor Cloud Leap, by using (Wall Climb + Air Dash + Tai-Chi Kick + (Swift Runner OR Charged Strike)) to platform all the way through the tunnel and grab the side of the stationary crate&#13;
+	- "OW - Activate Crates And Return" is now reachable with bow hover for the same reason as the `vanilla` change&#13;
+	- "OW - Outside Enemy Gauntlet Room" is now reachable by using bow hover to avoid the crusher then get back onto the same crate it just crushed&#13;
+	- "OW: Crusher Gauntlet" is now reachable using Wall Climb, Ledge Grab, and either Charged Strike or (bow hover and Swift Runner)&#13;
+- `ledge_storage` logic:&#13;
+	- "ED (Passages) - Statue In Left Chasm" is now reachable with parry hover from left pink pool, which requires CL and AD since the only available ledge uses CL setup and it's on the other side of the pink waterfall you need AD to pass through&#13;
+	- "GoS (West): Above Elevator" was incorrectly in logic with only Ledge Grab. Now it's Ledge Grab and Air Dash.&#13;
+	- "GoS (West) - Lower Right Exits" to "Lower Platform Rotation Button" with CL + LG triple jump is now in logic&#13;
+	- "GoS (West) - Lower Right Exits" to "Cixing Arena Left Overlook" now requires only LG instead of CL+LG, because you can do T-dash setup on the right side of the elevator chasm&#13;
+	- "OW - Activate Crates And Return" is now reachable with parry hover for the same reason as the `vanilla` change&#13;
+	- "OW - Lower Right Exit" to "Root Node &amp; Middle Exits" is now reachable without Wall Climb. You could already use Cloud Leap and Ledge Grab to *activate* the lower crates, but we realized CL and LG also lets you jump from the activated crates to the root node without Wall Climb.&#13;
+	- "OW - Outside Enemy Gauntlet Room" is now reachable by using parry hover to avoid the crusher then get back onto the same crate it just crushed&#13;
+</content>
+    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.0</id>
+    <title>Factorio: Space Age v3.0.0</title>
+    <updated>2026-08-24T14:59:37+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 3.0.0&#13;
+&#13;
+* Added `map_exchange_string` YAML option to allow arbitrarily customizable world generation settings. [#38](https://github.com/thejoshwolfe/Archipelago/issues/38)&#13;
+    * Thanks to Rseding91 [here](https://forums.factorio.com/viewtopic.php?t=132784) and rfvgyhn [here](https://github.com/rfvgyhn/factorio-exchange-string-parser) for providing the support needed to make this happen.&#13;
+    * This apworld is now version locked with specifically Factorio 2.1.14. This is because during the public beta experimental phase, Factorio is breaking the map exchange string format without warning. Once Factorio 2.1 is stable, the version locking can be relaxed.&#13;
+* (BREAKING) The `world_gen_custom` option is gone. Nobody (including me) knew how to use it properly; good riddance. The `world_gen_asteroid_spawn_rate` and `world_gen_spoil_rate` placeholder options are also gone. Use `map_exchange_string` instead.&#13;
+* The `world_gen` option is overhauled:&#13;
+    * `custom` now uses `map_exchange_string` instead of `world_gen_custom`, but still respects `world_gen_enemies` and randomizes the seed.&#13;
+    * `custom_verbatim` (new) uses `map_exchange_string` and makes no modifications.&#13;
+    * `vanilla` is renamed to `default` so that it exactly matches the in-game name for the preset. `vanilla` is still accepted as an alias. (and confusingly `default` is not the default. The default is still `buffed_resources`.)&#13;
+    * `rail_world`, `death_world`, `ribbon_world`, etc. are all added to represent the builtin presets. [#7](https://github.com/thejoshwolfe/Archipelago/issues/7)&#13;
+* The temporary save file in the Client's cwd has been renamed from `Archipelago.zip` to `ArchipelagoTemporaryServerQuery.zip` to make it clear that that's not the save file that you actually play on, and it's ok to delete it whenever you want. (Today I learned that it was not the save file you actually play on; perhaps others will now also know.) If you launch the client through the UI, then this file is probably in your Archipelago directory.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.2</id>
+    <title>Stardew Valley v8.1.2</title>
+    <updated>2026-08-24T16:12:25+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Apworld&#13;
+- Fixed potential big logic errors introduced by cutscene regions&#13;
+- Fixed common mushrooms not being included in forage locations&#13;
+&#13;
+## Mod&#13;
+- Fixed Salmonberry and Blackberry from bush not sending the forage locations</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Droppel/ReventureEndingRando/releases/tag/0.21.1</id>
+    <title>Reventure v0.21.1</title>
+    <updated>2026-08-24T16:31:28+00:00</updated>
+    <author>
+      <name>Droppel</name>
+    </author>
+    <content>Fixed an error, where the jump height was set to 0, if it was not defined by the world, instead of to the default of 3.</content>
+    <link href="https://github.com/Droppel/ReventureEndingRando/releases/tag/0.21.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.5.1</id>
+    <title>Refunct v1.5.1</title>
+    <updated>2026-08-24T16:40:54+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content>## 1.5.0a -&gt; 1.5.1&#13;
+- Fixed the issue that nerf minigame would add extra items if custom minigame was in, whoops :)&#13;
+&#13;
+## 1.5.0 -&gt; 1.5.0a&#13;
+- Fixed game crashes when editing a map and collecting cubes&#13;
+- Hide "edit-menu" when "playing" a custom map&#13;
+&#13;
+# 1.5.0&#13;
+Refunct now uses Rulebuilder! You will need at least Archipelago 0.6.7 from now on.&#13;
+# Custom maps in Archipelago!&#13;
+- You can now play custom maps and they'll give checks in Archipelago. Every button is a check for a total of 37 checks. Enable the Custom Minigame in your yaml.&#13;
+- You can use any custom map you want! Here's my recommended list (currently only 2 maps): [link to archipelago discord](https://discord.com/channels/731205301247803413/1273001824919617577/1540723304296353824).&#13;
+- Here's how to install them: download the maps you want. Then open Refunct and the mod. Press CTRL+SHIFT+M and select "Open Maps Folder". Place your custom map there (it's probably `AppData\Roaming\refunct-tas\maps`). &#13;
+- Once you unlock the Custom minigame and you select it, you will be asked directly which custom map you want to play, you can select it there. You can (re)start whichever you want.&#13;
+- You can make custom maps too with the editor!&#13;
+# Map editor improvements&#13;
+- Pressing `c` and triggering the next cluster should now work better.&#13;
+- You can now press `left`/`right`/`up`/`down`/`pageup`/`pagedown` to work in 3 dimensions without having to toggle.&#13;
+- `TAB` now opens the advanced editor of the selected element, if any.</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.5.1"/>
   </entry>
 </feed>

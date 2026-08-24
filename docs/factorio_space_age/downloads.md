@@ -1,9 +1,12 @@
 # Factorio: Space Age
 
 ## Latest
-- <a href="https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v2.3.1/factorio_space_age.apworld">Latest Version (2.3.1)</a>
+- <a href="https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v3.0.0/factorio_space_age.apworld">Latest Version (3.0.0)</a>
 
 ## All Versions
+
+#### v3.0.0
+- <a href="https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v3.0.0/factorio_space_age.apworld">https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v3.0.0/factorio_space_age.apworld</a>
 
 #### v2.3.1
 - <a href="https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v2.3.1/factorio_space_age.apworld">https://github.com/thejoshwolfe/Archipelago/releases/download/space-age-v2.3.1/factorio_space_age.apworld</a>

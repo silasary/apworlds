@@ -4,7 +4,7 @@ Quake 1 Randomizer
 
 
 ## Downloads
-- <a href="https://github.com/randomcodegen/ironwail_ap/releases/download/1.1.8/quake.apworld">Latest Version (1.1.8.post2)</a>
+- <a href="https://github.com/randomcodegen/ironwail_ap/releases/download/1.1.9/quake.apworld">Latest Version (1.1.9)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
