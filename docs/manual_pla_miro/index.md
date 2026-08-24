@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/Miro-n1/archipelago_manuals/releases/download/PLA_1.05/manual_PLA_miro.apworld">Latest Version (1.5)</a>
+- <a href="https://github.com/Miro-n1/archipelago_manuals/releases/download/PLA_1.06/manual_PLA_miro.apworld">Latest Version (1.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

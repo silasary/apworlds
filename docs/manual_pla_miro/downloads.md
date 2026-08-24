@@ -1,9 +1,12 @@
 # Manual_PLA_Miro
 
 ## Latest
-- <a href="https://github.com/Miro-n1/archipelago_manuals/releases/download/PLA_1.05/manual_PLA_miro.apworld">Latest Version (1.5)</a>
+- <a href="https://github.com/Miro-n1/archipelago_manuals/releases/download/PLA_1.06/manual_PLA_miro.apworld">Latest Version (1.6)</a>
 
 ## All Versions
+
+#### v1.6
+- <a href="https://github.com/Miro-n1/archipelago_manuals/releases/download/PLA_1.06/manual_PLA_miro.apworld">https://github.com/Miro-n1/archipelago_manuals/releases/download/PLA_1.06/manual_PLA_miro.apworld</a>
 
 #### v1.5
 - <a href="https://github.com/Miro-n1/archipelago_manuals/releases/download/PLA_1.05/manual_PLA_miro.apworld">https://github.com/Miro-n1/archipelago_manuals/releases/download/PLA_1.05/manual_PLA_miro.apworld</a>

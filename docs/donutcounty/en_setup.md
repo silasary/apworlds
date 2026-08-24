@@ -2,7 +2,7 @@
 
 Requirements:
 
-- [Donut County](https://donutcounty.com/) on Windows or Linux (untested)
+- [Donut County](https://donutcounty.com/) on Windows or Linux
 - [BepInEx 5.4.* (Unity Mono x64)](https://github.com/BepInEx/BepInEx/releases)
 - [DonutCountyAP](https://github.com/1e1001/DonutCountyAP/)
 
@@ -12,7 +12,9 @@ Install BepInEx:
 
 1. Extract the BepInEx `.zip` archive into your Donut County install folder
 	- On Steam, you can right-click the game, "Manage" &rarr; "Browse local files"
-2. Start the game to allow BepInEx to create its folders.
+2. Linux-exclusive setup:
+	- In the game's properties on Steam, set launch options to `WINEDLLOVERRIDES="winhttp=n,b" %command%` to give BepInEx loading priority.
+3. Start the game to allow BepInEx to create its folders.
 
 Install the mod:
 

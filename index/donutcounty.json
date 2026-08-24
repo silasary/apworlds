@@ -15,7 +15,7 @@
   "versions": {
     "v0.1.0": {
       "created_at": "2026-08-20T19:45:38Z",
-      "description": "This is the initial unstable release:\r\n\r\n- Location checks for progress within levels (\"checkpoints\" / completions).\r\n- 16 achievements can also be locations.\r\n- Collect \"Quadcopter Piece\"s (placeholder name) to unlock a goal area.\r\n- Unlock \"abilities\", for hole-based effects and items to catapult.\r\n- A few levels can have special items/locations within them (Snake Danger, Salt & Pepper).\r\n- Mostly functional UT support.\r\n- A few fun traps / filler items.\r\n- Some extra QOL features for dialog and achievements.\r\n- And some yaml settings that can cause generation failure!\r\n\r\n[See the repository](https://github.com/1e1001/DonutCountyAP/) for more information and setup instructions.",
+      "description": "This is the initial unstable release:\r\n\r\n- Location checks for progress within levels (\"checkpoints\" / completions).\r\n- 16 achievements can also be locations.\r\n- Collect \"Quadcopter Piece\"s (placeholder name) to unlock a goal area.\r\n- Unlock \"abilities\", for hole-based effects and items to catapult.\r\n- A few levels can have special items/locations within them (Snake Danger, Salt & Pepper).\r\n- Mostly functional UT support.\r\n- A few fun traps / filler items.\r\n- Some extra QOL features for dialog and achievements.\r\n- And some yaml settings that can cause generation failure!",
       "download_url": "https://github.com/1e1001/DonutCountyAP/releases/download/v0.1.0/donutcounty.apworld",
       "has_manifest": true,
       "hash_sha256": "1b6e31f6001817bcf5f24dc34b2b07037c512a2e548e0d9ac8e1ad67f1d9bccf",
@@ -27,6 +27,21 @@
       "title": "DonutCountyAP v0.1.0",
       "version_simple": "0.1.0",
       "world_version": "0.1.0"
+    },
+    "v0.1.1": {
+      "created_at": "2026-08-23T19:34:44Z",
+      "description": "World:\r\n- **Fix some achievements not requiring their dependant item.**\r\n- Add more info to world documentation, including Linux setup instructions.\r\n- Rename some entrances and item categories.\r\n\r\nClient:\r\n- **Fix an issue preventing connection to a slot if it has received items.**\r\n- Buffer and re-send location checks in the case of sudden server disconnects.\r\n- Store some more tracker-adjacent data on the server.\r\n- Fix the claw machine secret code triggering many times.\r\n- Prevent quacking when you can't text.\r\n\r\nThe client is partially compatible with 0.1.0 worlds, some in-logic locations may be unreachable.",
+      "download_url": "https://github.com/1e1001/DonutCountyAP/releases/download/v0.1.1/donutcounty.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2bb91fe16f0cc98662d7474f9066cc7258da1ed52f9fc5b63aea90e01b4534c8",
+      "html_url": "https://github.com/1e1001/DonutCountyAP/releases/tag/v0.1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 15423,
+      "source_url": "https://api.github.com/repos/1e1001/DonutCountyAP",
+      "tag": "v0.1.1",
+      "title": "DonutCountyAP v0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
     }
   }
 }

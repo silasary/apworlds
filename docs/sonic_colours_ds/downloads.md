@@ -1,9 +1,12 @@
 # Sonic Colours (DS)
 
 ## Latest
-- <a href="https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.2/sonic_colours_ds.apworld">Latest Version (0.2.1r2)</a>
+- <a href="https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.3/sonic_colours_ds.apworld">Latest Version (0.2.3)</a>
 
 ## All Versions
+
+#### v0.2.3
+- <a href="https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.3/sonic_colours_ds.apworld">https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.3/sonic_colours_ds.apworld</a>
 
 #### v0.2.1r2
 - <a href="https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.2/sonic_colours_ds.apworld">https://github.com/SilicDev/Archipelago/releases/download/scds-v0.2.2/sonic_colours_ds.apworld</a>
