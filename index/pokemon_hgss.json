@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "Olivier"
+  ],
+  "flags": [],
+  "game": "Pokemon HGSS",
+  "github": "https://github.com/SingeKiller/Pok-HeartGold_Apworld",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.2.3": {
+      "created_at": "2026-08-17T01:18:11Z",
+      "description": "**Fixed**\r\n\r\n- The Save button stopped doing anything at all, and Bag/Save/Options would disappear entirely after quitting and relaunching, on a randomize_start_location save. Root cause: the old design spawned the player directly inside Professor Elm's Lab and faked having Bag/Trainer Card/Save/Options by poking a flag directly  but the real save-execution code checks something else entirely, so Save did nothing, and nothing was ever actually saved. \r\n- Full redesign: the player now wakes up and talks to Mom normally (she grants Bag/Trainer Card/Save/Options for real, exactly like vanilla), and only the player's own front door gets redirected to the Lab afterward.\r\n- Black screen when walking through the door: the redirect only patched the destination map, not the exact entry point within that map. Fixed.\r\n- Walking straight back outside if you held a direction while entering the Lab: the landing spot was literally on top of the exit door. Moved further into the room.\r\n\r\n**Removed**\r\n\r\n- The individual randomize_bag/randomize_trainer_card/randomize_pokedex/randomize_options_button toggles (added yesterday). A live playtest revealed the game's own Pause Menu can't handle an icon being unavailable while the ones after it (Save, Options) are visible  selecting one icon can end up opening a different one entirely. \r\n\r\nThat's a limitation of the game itself, never encountered in vanilla since those icons are always unlocked together. No fix is possible without an ASM hook, which we avoid on principle. All four are once again always granted normally, like before yesterday.\r\n\r\n**Added**\r\n\r\n- remote_items: when enabled, your own items are never written directly into the ROM  you always receive them from the server, the same way you already receive other players' items. Lets you restart a corrupted save without losing progress, or share a save between multiple people.",
+      "download_url": "https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.3/pokemon_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "48380ac0919d4280cf08a1ae8c306f45183b57f140d41d0f203aff89b54f87d4",
+      "html_url": "https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 377653,
+      "source_url": "https://api.github.com/repos/SingeKiller/Pok-HeartGold_Apworld",
+      "tag": "v0.2.3",
+      "title": "v0.2.3 Emergency Patch & Fix",
+      "version_simple": "0.6.4",
+      "world_version": "0.6.4"
+    }
+  }
+}
