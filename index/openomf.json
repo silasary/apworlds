@@ -74,6 +74,21 @@
       "title": "omf-0.0.4",
       "version_simple": "0.0.4",
       "world_version": "0.0.4"
+    },
+    "omf-0.0.5": {
+      "created_at": "2026-08-25T04:16:51Z",
+      "description": "# Archipelago OpenOMF  v0.0.5\r\n\r\n> OMF:2097 was released as freeware by Epic MegaGames in 1999. The game data is freely and legally downloadable.\r\n\r\n---\r\n\r\n### What's New\r\n\r\n#### Fixes (Multiworld)\r\n\r\n- Fixed shop purchases not being remembered when the location's item belongs to another game in the multiworld. Shop state was previously rebuilt from `ReceivedItems`, which only fires for items sent back to *us* \u2014 a location whose item goes to another player never echoes back, so the shop showed it as never bought and charged you for it again every time you reopened the mechlab. Shop state is now derived from the server's `checked_locations` instead, which reflects every location *we've* checked regardless of who receives the item\r\n- As part of the same fix, shop/training state now also picks up: locations found while disconnected (synced on the next connect), server-side auto-releases (e.g. another game completing and releasing all its remaining checks), and checks made by another client connected to the same slot in co-op\r\n- Fixed the shop being able to skip past a still-unbought level if a later level in the same stat got checked out of order (same-slot co-op, a release) \u2014 it now keeps offering the actual next unbought level, and instantly recognizes the skipped one as owned once you reach it\r\n- Fixed the shop/training price label staying one step behind after a purchase until you moved focus away and back \u2014 it now updates immediately\r\n---\r\n\r\n### Links\r\n\r\n- [Setup guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/setup_en.md)\r\n- [Game guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/en_One%20Must%20Fall%202097.md)\r\n- [Parent repo](https://github.com/stubobis1/archipelago-openomf)\r\n- [Client repo](https://github.com/stubobis1/openomf)\r\n- [AP world repo](https://github.com/stubobis1/archipelago-openomf-apworld)\r\n- [Issues](https://github.com/stubobis1/archipelago-openomf/issues)\r\n\r\n\r\n**Full Changelog**: https://github.com/stubobis1/archipelago-openomf/compare/omf-0.0.4...omf-0.0.5",
+      "download_url": "https://github.com/stubobis1/archipelago-openomf/releases/download/omf-0.0.5/openomf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7ab59e0c08769a6b2c47459a77c6633cf9ae62d6f148713ad6c913100423367f",
+      "html_url": "https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 13500,
+      "source_url": "https://api.github.com/repos/stubobis1/archipelago-openomf",
+      "tag": "omf-0.0.5",
+      "title": "omf-0.0.5",
+      "version_simple": "0.0.5",
+      "world_version": "0.0.5"
     }
   }
 }

@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-gamma/lor.apworld">Latest Version (1.0.0r3)</a>
+- <a href="https://github.com/Az-LastPenguin/LORAP/releases/download/v1.0.0-eta.2/lor.apworld">Latest Version (1.0.0r4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

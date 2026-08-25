@@ -1,9 +1,12 @@
 # Wikipelago
 
 ## Latest
-- <a href="https://github.com/Dreskn/Wikipelago-Continued/releases/download/1.0.0/wikipelago.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/Dreskn/Wikipelago-Continued/releases/download/1.0.1/wikipelago.apworld">Latest Version (1.0.1)</a>
 
 ## All Versions
+
+#### v1.0.1
+- <a href="https://github.com/Dreskn/Wikipelago-Continued/releases/download/1.0.1/wikipelago.apworld">https://github.com/Dreskn/Wikipelago-Continued/releases/download/1.0.1/wikipelago.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Dreskn/Wikipelago-Continued/releases/download/1.0.0/wikipelago.apworld">https://github.com/Dreskn/Wikipelago-Continued/releases/download/1.0.0/wikipelago.apworld</a>
