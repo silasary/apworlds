@@ -6,7 +6,7 @@ lost all of his abilities. Can he get them back in time to save the Princess?
 
 
 ## Downloads
-- <a href="https://github.com/PoryGoneDev/Pory_Archipelago/releases/download/smw-v2.1.1/smw.apworld">Latest Version (2.1.1)</a>
+- <a href="https://github.com/PoryGoneDev/SMW_APWorld/releases/download/v2.2.2/smw.apworld">Latest Version (2.2.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

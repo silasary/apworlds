@@ -15,26 +15,14 @@ nothing about items or checks depends on it.
 
 ## Installing
 
-Some pieces belong to other projects and are not ours to redistribute, so you
-fetch those yourself:
-
-- **Python** — <https://www.python.org/downloads/>.
-  During setup, **tick "Add python.exe to PATH"**.
-- **UndertaleModTool**, CLI build —
-  [releases](https://github.com/UnderminersTeam/UndertaleModTool/releases).
-  Grab `UTMT_CLI_<version>-Windows.zip`.
-- **`gm-apclientpp.dll`, the 32-bit build** —
-  [releases](https://github.com/black-sliver/gm-apclientpp/releases).
-  **The 64-bit build will not work** — the GameMaker 1.4 runner is 32-bit.
-
-Then:
+You need **Python** — <https://www.python.org/downloads/>, and during setup
+**tick "Add python.exe to PATH"**. Nothing else: UndertaleModTool and
+`gm-apclientpp.dll` are inside the patcher zip.
 
 1. **Copy your whole game folder** somewhere outside Steam and work on the
    copy. Steam can "verify" your real install and quietly undo everything.
 2. **Extract `vdh-ap-patcher.zip` into that game folder.**
-3. Put **`gm-apclientpp.dll`** in the same folder, next to `data.win`.
-4. Extract **UndertaleModTool** into `build\utmt\`.
-5. **Double-click `patch.bat`.**
+3. **Double-click `patch.bat`.**
 
 You should end up with this, and nothing to type:
 
@@ -42,12 +30,13 @@ You should end up with this, and nothing to type:
 Vertical Drop Heroes HD\
     data.win
     Vertical Drop Heroes HD.exe
-    gm-apclientpp.dll
+    gm-apclientpp.dll        <-- from the zip
     patch.bat
     build\
         build.py
         utmt\UndertaleModCli.exe
     gml\
+    third-party\             <-- licenses, and UTMT's GPL source
 ```
 
 The patcher needs no configuration because it is sitting in the folder it
@@ -92,10 +81,15 @@ top of a session already in progress.
 Status is shown live on that page, and as a small readout in the top-left
 during play: `connecting` -> `handshaking` -> `connected`.
 
-Everything is still written to `archipelago.ini` in the game folder, so you can
-edit that by hand instead if you prefer. Leaving `Slot` empty keeps the mod
-completely dormant -- it does not even load the DLL, and the game plays as
-vanilla.
+Everything is still written to `archipelago.ini`, so you can edit that by hand
+instead if you prefer -- but note that it is **not** the copy in your game
+folder. GameMaker redirects the game's file writes into its own save area,
+which for this mod is `%LOCALAPPDATA%\Vertical_Drop_Heroes_HD\`. The Options
+page prints the exact path on its bottom line, and `ap_debug.log` is in there
+too. Editing the copy sitting next to the exe has no effect.
+
+Leaving `Slot` empty keeps the mod completely dormant -- it does not even load
+the DLL, and the game plays as vanilla.
 
 ## What changed in the game
 

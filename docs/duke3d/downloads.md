@@ -8,6 +8,9 @@
 #### v0.0.8
 - <a href="https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.8/duke3d.apworld">https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.8/duke3d.apworld</a>
 
+#### v0.0.7.post3
+- <a href="https://github.com/randomcodegen/NBloodAP/releases/download/0.0.7/duke3d.apworld">https://github.com/randomcodegen/NBloodAP/releases/download/0.0.7/duke3d.apworld</a>
+
 #### v0.0.7.post2
 - <a href="https://github.com/randomcodegen/NBloodAP/releases/download/0.0.7/duke3d.apworld">https://github.com/randomcodegen/NBloodAP/releases/download/0.0.7/duke3d.apworld</a>
 

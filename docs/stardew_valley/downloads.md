@@ -69,6 +69,9 @@
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.8/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.8/stardew_valley.apworld</a>
 
 #### v8.0.0r2
+- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.1/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.1/stardew_valley.apworld</a>
+
+#### v8.0.0r2
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.10/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.10/stardew_valley.apworld</a>
 
 #### v8.0.0r2r2
@@ -90,7 +93,7 @@
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.9/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.9/stardew_valley.apworld</a>
 
 #### v8.0.0
-- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.1/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.1/stardew_valley.apworld</a>
+- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.0/stardew_valley_8.0.0.Beta.Async.%2B.Entrance.Plando.Fix.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.0.0/stardew_valley_8.0.0.Beta.Async.%2B.Entrance.Plando.Fix.apworld</a>
 
 #### v7.4.4r3
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.6/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/7.4.6/stardew_valley.apworld</a>
