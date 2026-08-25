@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "Olivier"
+  ],
+  "flags": [],
+  "game": "Pokemon HeartGold",
+  "github": "https://github.com/SingeKiller/Pok-HeartGold_Apworld",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.2.0": {
+      "created_at": "2026-08-12T09:52:44Z",
+      "description": "## Added\r\n\r\n- **Universal Tracker support.** Drop `tracker.apworld` into your `custom_worlds` folder to track a HeartGold slot without needing its YAML  it figures out what you can currently reach on its own. Thanks @gerbiljames for the PR.\r\n\r\n- **Nuzlocke aids** (off by default):\r\n  - `disable_ohko_moves`: Guillotine/Horn Drill/Fissure/Sheer Cold become ordinary 60 power / 100 accuracy moves instead of an RNG-based instant KO.\r\n  - \r\n  - `disable_trapping_abilities`: removes Arena Trap, Shadow Tag, and Magnet Pull from every Pok\u00e9mon that has one (replaced with a copy of that species' other ability, or Run Away for mono-ability trappers like Wobbuffet).\r\n\r\n## Changed\r\n\r\n- ARM9 recompression no longer hard-fails a patch on the rare case the game code can't be compressed smaller  it falls back to writing that region uncompressed instead, matching the game's own boot-time behavior for that case.\r\n\r\n\r\n## Upgrading\r\n\r\nDelete the old `pokemon_heartgold.apworld` from your `custom_worlds` folder before installing this one.",
+      "download_url": "https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.0/pokemon_heartgold.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bc1eb39364fce31fdc6db6a4e584e32332c5d73e241f1d9cfe82588b19661f3e",
+      "html_url": "https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 331938,
+      "source_url": "https://api.github.com/repos/SingeKiller/Pok-HeartGold_Apworld",
+      "tag": "v0.2.0",
+      "title": "v0.2.0 Universal Tracker Support",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    }
+  }
+}

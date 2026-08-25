@@ -1,7 +1,14 @@
 {
+  "authors": [
+    "PoryGone",
+    "lx5"
+  ],
   "description": "Super Mario World is an action platforming game.\nThe Princess has been kidnapped by Bowser again, but Mario has somehow\nlost all of his abilities. Can he get them back in time to save the Princess?",
   "game": "Super Mario World",
-  "github": "https://github.com/PoryGoneDev/Pory_Archipelago",
+  "github": [
+    "https://github.com/PoryGoneDev/Pory_Archipelago",
+    "https://github.com/PoryGoneDev/SMW_APWorld"
+  ],
   "license": null,
   "manifest_fields": [],
   "versions": {
@@ -60,6 +67,64 @@
       "title": "v2.1.1",
       "version_simple": "2.1.1",
       "world_version": "2.1.1"
+    },
+    "v2.1.2": {
+      "created_at": "2025-09-15T01:54:19Z",
+      "description": "Changelog since v2.0.x:\r\n\r\n### Features:\r\n- Trap Link\r\n  - When you receive a trap, you send a copy of it to every other player with Trap Link enabled\r\n- Ring Link\r\n    - Any coin amounts gained and lost by a linked player will be instantly shared with all other active linked players",
+      "download_url": "https://github.com/PoryGoneDev/SMW_APWorld/releases/download/v2.1.2/smw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "a16dbaa43cfe3fe853f3b44cab8d6aea0b91ffb9887e6af577d79967a7194bd8",
+      "html_url": "https://github.com/PoryGoneDev/SMW_APWorld/releases/tag/v2.1.2",
+      "size": 309903,
+      "source_url": "https://api.github.com/repos/PoryGoneDev/SMW_APWorld",
+      "tag": "v2.1.2",
+      "title": "v2.1.2",
+      "version_simple": "2.1.2",
+      "world_version": "2.1.2"
+    },
+    "v2.2.0": {
+      "created_at": "2025-09-15T02:06:26Z",
+      "description": "Changelog since v2.1.x:\r\n\r\n```\r\n### Features:\r\n- New Items\r\n\t- Dry Trap\r\n\t\t- Removes your item box item\r\n\t- Ice Untrap\r\n\t\t- Removes Ice Physics from the current level, if applicable\r\n\t- Timer Untrap\r\n\t\t- Returns the timer to 300 seconds if it drops below 100 seconds\r\n\t- Reverse Untrap\r\n\t\t- Returns reversed controls to normal, if applicable\r\n- Switch Palace levels are now always shuffled into the single-exit level pool\r\n- Castles and Fortresses can now optionally be shuffled into the single-exit level pool\r\n- Level Name Shuffle\r\n\t- In-game names of levels can be shuffled. Location Names (Client and Server) are unchanged\r\n- Level Tile Shuffle\r\n- Boss Health option\r\n\t- Koopaling and Bowser health values can be set\r\n- The names of the mod/APWorld developers and contributors have been added to the in-game credits\r\n\r\n### Quality of Life:\r\n- The list of visited levels per slot is stored on the server, and the PopTracker pack now reads this list and by default only displays levels that you have visited\r\n- More Trap names are handled for TrapLink\r\n\r\n### Bug Fixes:\r\n- Several logic tweaks/fixes\r\n```",
+      "download_url": "https://github.com/PoryGoneDev/SMW_APWorld/releases/download/v2.2.0/smw.apworld",
+      "has_manifest": false,
+      "hash_sha256": "89ff1d4bcdd40e9ad0d5eef1a46f55970f2989c3a7633d02ad1ac7977c1ccf6f",
+      "html_url": "https://github.com/PoryGoneDev/SMW_APWorld/releases/tag/v2.2.0",
+      "size": 318529,
+      "source_url": "https://api.github.com/repos/PoryGoneDev/SMW_APWorld",
+      "tag": "v2.2.0",
+      "title": "v2.2.0",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0"
+    },
+    "v2.2.1": {
+      "created_at": "2026-01-28T23:30:16Z",
+      "description": "Changelog since v2.2.0:\r\n\r\n```\r\nAdd APWorld Manifest\r\n```\r\n\r\nChangelog since v2.1.x:\r\n\r\n```\r\n### Features:\r\n- New Items\r\n\t- Dry Trap\r\n\t\t- Removes your item box item\r\n\t- Ice Untrap\r\n\t\t- Removes Ice Physics from the current level, if applicable\r\n\t- Timer Untrap\r\n\t\t- Returns the timer to 300 seconds if it drops below 100 seconds\r\n\t- Reverse Untrap\r\n\t\t- Returns reversed controls to normal, if applicable\r\n- Switch Palace levels are now always shuffled into the single-exit level pool\r\n- Castles and Fortresses can now optionally be shuffled into the single-exit level pool\r\n- Level Name Shuffle\r\n\t- In-game names of levels can be shuffled. Location Names (Client and Server) are unchanged\r\n- Level Tile Shuffle\r\n- Boss Health option\r\n\t- Koopaling and Bowser health values can be set\r\n- The names of the mod/APWorld developers and contributors have been added to the in-game credits\r\n\r\n### Quality of Life:\r\n- The list of visited levels per slot is stored on the server, and the PopTracker pack now reads this list and by default only displays levels that you have visited\r\n- More Trap names are handled for TrapLink\r\n\r\n### Bug Fixes:\r\n- Several logic tweaks/fixes\r\n```",
+      "download_url": "https://github.com/PoryGoneDev/SMW_APWorld/releases/download/v2.2.1/smw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d75c3fa0d875f8d5c4799ce16e33ec640dea1b01c0e094f612e1cd5ceabd6fa2",
+      "html_url": "https://github.com/PoryGoneDev/SMW_APWorld/releases/tag/v2.2.1",
+      "minimum_ap_version": "0.6.3",
+      "size": 416351,
+      "source_url": "https://api.github.com/repos/PoryGoneDev/SMW_APWorld",
+      "tag": "v2.2.1",
+      "title": "v2.2.1",
+      "version_simple": "2.2.1",
+      "world_version": "2.2.1"
+    },
+    "v2.2.2": {
+      "created_at": "2026-01-31T00:50:34Z",
+      "description": "Changelog since v2.2.1:\r\n\r\n```\r\nSupport for AP Procedure Patch for ROMless generation ( thanks @TheLX5 )\r\n```\r\n\r\nChangelog since v2.1.x:\r\n\r\n```\r\n### Features:\r\n- New Items\r\n\t- Dry Trap\r\n\t\t- Removes your item box item\r\n\t- Ice Untrap\r\n\t\t- Removes Ice Physics from the current level, if applicable\r\n\t- Timer Untrap\r\n\t\t- Returns the timer to 300 seconds if it drops below 100 seconds\r\n\t- Reverse Untrap\r\n\t\t- Returns reversed controls to normal, if applicable\r\n- Switch Palace levels are now always shuffled into the single-exit level pool\r\n- Castles and Fortresses can now optionally be shuffled into the single-exit level pool\r\n- Level Name Shuffle\r\n\t- In-game names of levels can be shuffled. Location Names (Client and Server) are unchanged\r\n- Level Tile Shuffle\r\n- Boss Health option\r\n\t- Koopaling and Bowser health values can be set\r\n- The names of the mod/APWorld developers and contributors have been added to the in-game credits\r\n\r\n### Quality of Life:\r\n- The list of visited levels per slot is stored on the server, and the PopTracker pack now reads this list and by default only displays levels that you have visited\r\n- More Trap names are handled for TrapLink\r\n\r\n### Bug Fixes:\r\n- Several logic tweaks/fixes\r\n```",
+      "download_url": "https://github.com/PoryGoneDev/SMW_APWorld/releases/download/v2.2.2/smw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a222e8359395ba3e45b0c2ea2188c0803db5c9608c4c7c6c715f82b4595f105f",
+      "html_url": "https://github.com/PoryGoneDev/SMW_APWorld/releases/tag/v2.2.2",
+      "minimum_ap_version": "0.6.3",
+      "size": 301857,
+      "source_url": "https://api.github.com/repos/PoryGoneDev/SMW_APWorld",
+      "tag": "v2.2.2",
+      "title": "v2.2.2",
+      "version_simple": "2.2.2",
+      "world_version": "2.2.2"
     }
   }
 }

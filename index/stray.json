@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Nichologeam"
+  ],
+  "game": "Stray",
+  "github": "https://github.com/Nichologeam/StrayAP",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.0.1": {
+      "created_at": "2026-08-14T07:45:09Z",
+      "description": "### Stray Archipelago v0.0.1\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/StrayAP/blob/master/README.md).\r\n\r\n# Known Issues\r\n- Items received for chapters later than the one you are currently in are not added to the backpack until you reach that chapter. This is to prevent a crash, and I'll try to find a workaround at some point.\r\n- This is generally untested, as my copy of Stray crashes when going past Slums Part 1.",
+      "download_url": "https://github.com/Nichologeam/StrayAP/releases/download/v0.0.1/stray.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0a3e363f059d7fd84e169216e19bfa663a1fa3cde9c50fb42e01d387fc0a3725",
+      "html_url": "https://github.com/Nichologeam/StrayAP/releases/tag/v0.0.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 37976,
+      "source_url": "https://api.github.com/repos/Nichologeam/StrayAP",
+      "tag": "v0.0.1",
+      "title": "",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "v0.0.2": {
+      "created_at": "2026-08-14T18:36:31Z",
+      "description": "### Stray Archipelago v0.0.2\r\nAll previous APWorlds are inherently not compatable due to how the mod's version checking system works.\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/StrayAP/blob/master/README.md).\r\n\r\n# Additions\r\n- Added `apdisconnect` command\r\n- The game now force-resyncs the cat's inventory on connect\r\n# Fixes\r\n- Fixed `apresync` deleting the cat's entire inventory\r\n- Fixed disconnecting not working\r\n- (probably) fixed Universal Tracker displaying the game always being in Go Mode [APWorld Change]\r\n# Known Issues\r\n- Items received for chapters later than the one you are currently in are not added to the backpack until you reach that chapter. This is to prevent a crash, and I'll try to find a workaround at some point.\r\n- Universal Tracker throws \"Cannot Create Item\" errors.\r\n- This is generally untested, as my copy of Stray crashes when going past Slums Part 1.\r\n\r\n**Full Changelog**: https://github.com/Nichologeam/StrayAP/compare/v0.0.1...v0.0.2",
+      "download_url": "https://github.com/Nichologeam/StrayAP/releases/download/v0.0.2/stray.apworld",
+      "has_manifest": true,
+      "hash_sha256": "eeea0b96b769ca0d151e49fb6469c93d0ea07221e523a3a1a19a603a32e97c75",
+      "html_url": "https://github.com/Nichologeam/StrayAP/releases/tag/v0.0.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 37946,
+      "source_url": "https://api.github.com/repos/Nichologeam/StrayAP",
+      "tag": "v0.0.2",
+      "title": "v0.0.2",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2"
+    },
+    "v0.0.3": {
+      "created_at": "2026-08-16T23:20:54Z",
+      "description": "### Stray Archipelago v0.0.3\r\nThis update is compatible with worlds generated on all previous versions.\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/StrayAP/blob/master/README.md).\r\n\r\n# Additions:\r\n- Added a lot more additional logging to hopefully catch cases of inventory corruption\r\n# Changes:\r\n- The version checking system now allows non-breaking version mismatches\r\n# Fixes:\r\n- Fixed Unreadable Sheet Music being logically unobtainable if Code Logic was enabled\r\n- Fixed Universal Tracker being unable to process items correctly\r\n- (maybe) fixed the game randomly disconnecting\r\n# Known Issues:\r\n- Items received for later chapters are not added to the backpack. This is to prevent a crash that I will try and find a workaround for later\r\n- Receiving or resyncing the Outsider Notebooks while inside the Slums will cause B-12 to play its coresponding dialogue\r\n- Receiving certain items at certain times can corrupt the inventory, causing a crash on the next checkpoint load. I'm looking into this\r\n\r\n**Full Changelog**: https://github.com/Nichologeam/StrayAP/compare/v0.0.2...v0.0.3",
+      "download_url": "https://github.com/Nichologeam/StrayAP/releases/download/v0.0.3/stray.apworld",
+      "has_manifest": true,
+      "hash_sha256": "aea957b767b34d7cd14d3c49b89ab3bb8a5ae1f95a61b69808afb334dc8a5e8d",
+      "html_url": "https://github.com/Nichologeam/StrayAP/releases/tag/v0.0.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 38405,
+      "source_url": "https://api.github.com/repos/Nichologeam/StrayAP",
+      "tag": "v0.0.3",
+      "title": "",
+      "version_simple": "0.0.3",
+      "world_version": "0.0.3"
+    },
+    "v0.0.4": {
+      "created_at": "2026-08-18T23:06:54Z",
+      "description": "### Stray Archipelago v0.0.4\r\nThis update is compatible with worlds generated on all previous versions.\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/StrayAP/blob/master/README.md).\r\n\r\n# Changes:\r\n- Logic now accounts for needing to fix the tracker before giving it to Seamus to finish Slums Part 2\r\n\t- You now need the Poncho, Broken Tracker, and Fixed Tracker to logically finish the chapter\r\n# Fixes:\r\n- Fixed `Scratching Spot - Slums Meditation Room` not logically requiring the flat keys [APWorld Change]\r\n- Fixed receiving items throwing an error sometimes\r\n- Attempted to try fixing the inventory corruption issues\r\n# Known Issues:\r\n- Items received for later chapters are not added to the backpack. This is to prevent a crash that I will try and find a workaround for later\r\n- Receiving or resyncing the Outsider Notebooks while inside the Slums will cause B-12 to play its corresponding dialogue\r\n- Receiving certain items at certain times can corrupt the inventory, causing a crash on the next checkpoint load. I'm looking into this\r\n\r\n**Full Changelog**: https://github.com/Nichologeam/StrayAP/compare/v0.0.3...v0.0.4",
+      "download_url": "https://github.com/Nichologeam/StrayAP/releases/download/v0.0.4/stray.apworld",
+      "has_manifest": true,
+      "hash_sha256": "283f39fd36456ffb6d5c4ca647f86b26a2dd171ab048d43c6bb851d83fb9095b",
+      "html_url": "https://github.com/Nichologeam/StrayAP/releases/tag/v0.0.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 38441,
+      "source_url": "https://api.github.com/repos/Nichologeam/StrayAP",
+      "tag": "v0.0.4",
+      "title": "",
+      "version_simple": "0.0.4",
+      "world_version": "0.0.4"
+    }
+  }
+}

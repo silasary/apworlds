@@ -4,10 +4,14 @@
   ],
   "description": "As a demon army besieges his village, a young ninja ventures through a cursed world, to deliver a scroll paramount\nto his clan\u2019s survival. What begins as a classic action platformer soon unravels into an expansive time-traveling\nadventure full of thrills, surprises, and humor.",
   "game": "The Messenger",
-  "github": "https://github.com/Jouramie/Archipelago",
+  "github": [
+    "https://github.com/Jouramie/Archipelago",
+    "https://github.com/Jouramie/TheMessengerRandomizerModAP"
+  ],
   "license": null,
   "manifest_fields": [
-    "authors"
+    "authors",
+    "world_version"
   ],
   "versions": {
     "0.6.0-RC3-messenger-ut": {
@@ -97,6 +101,21 @@
       "title": "AP 0.6.7 - The Messenger x Universal Tracker w/ PopTracker",
       "version_simple": "0.6.7",
       "world_version": "0.6.7"
+    },
+    "v0.16.0-beta": {
+      "created_at": "2026-07-19T22:43:26Z",
+      "description": "# Messenger Randomizer AP\r\n\r\nBeta release for Messenger AP with a many many not yet merged changes.\r\n\r\n## Mod Changelog\r\n- Add 4 new locations for the generators in Elemental Skylands (disabled by default) alwaysintreble#23\r\n- Support for deferred entrances in UT alwaysintreble#24\r\n- Improve region tracking for UT and poptracker\r\n- Fix some location name that were different from the Apworld alwaysintreble#29\r\n- Improve logging\r\n\r\n## Apworld Changelog\r\n- Add 4 new locations for the generators in Elemental Skylands (disabled by default) ArchipelagoMW/Archipelago#6252\r\n- Fix UT not working with some options ArchipelagoMW/Archipelago#6132 ArchipelagoMW/Archipelago#6340\r\n- Add map integration and glitch logic to UT (requires pop tracker pack) ArchipelagoMW/Archipelago#6030\r\n- Add deferred entrances in UT map integration to prevent transition shuffle spoiler\r\n- Support for UT explain command ArchipelagoMW/Archipelago#6278\r\n- Fix transition plando not working for some entrances ArchipelagoMW/Archipelago#6327\r\n- Many logic fixes ArchipelagoMW/Archipelago#6124 ArchipelagoMW/Archipelago#6194  ArchipelagoMW/Archipelago#6258 ArchipelagoMW/Archipelago#6337\r\n\r\n[Commit link](https://github.com/Jouramie/Archipelago/releases/tag/messenger%2F0.16.0-beta)\r\n\r\n# Installation Instructions (for Windows, but likely compatible with other systems)\r\nMod installation step are the same as usual.\r\n\r\n## Apworld\r\n- Install Archipelago (link below) with the generator enabled.\r\n- Place the new `messenger.apworld` file in your custom world folder.\r\n- Remove the old `messenger.apworld` file from your `lib/worlds` folder.\r\n- When connecting to a _The Messenger_ seed with UT, you will be prompted to locate a The Messenger Track Pack (downloadable [here](https://github.com/alwaysintreble/TheMessengerTrackPack/releases)). **Do not unzip it.** Link the zipped file. Dismiss the prompt if you do not wish to use the map. If needed, you can change the location in your `host.yaml` in your Archipelago installation.\r\n\r\n## How to play the new content\r\nFrom the AP Launcher, you can use Options Creator to create a yaml for the beta apworld. That's where you can enable the Elemental Skylands generators shuffle. Once you have your yaml, generate locally.\r\n\r\n## Compatibility\r\nThis release is fully compatible with worlds generated with the official apworld or on the site. Be aware however that if you use the tracker from this release, it might show some locations in logic that were not meant to be when the game generated. Following what's \"in logic\" in the tracker will not match the spheres server-side.\r\n\r\n# Troubleshooting\r\n- Make sure you removed your `messenger.apworld` from `lib/worlds` and added the new apworld in `custom_worlds`\r\n- *I can't see the map in UT, even tho I linked the track pack.* Make sure you linked **the zipped** track pack. It need to be zipped. You can change the file by editing your `host.yaml`.\r\n- *UT says the local datapackage for the connected game does not match the server's datapackage. Should I be worried?* No. You are connected to a game generated with a previous version of the apworld, but this should not prevent the tracker from working.\r\n- Report any issue in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel in the Archipelago discord. Make sure to ping @jouramie otherwise I won't read. \r\n\r\n# We Need Your Help! \r\nIf you'd like to help integrate this into the main Archipelago releases, drop a comment on one of the pull requests! :wink:\r\nAlso, please mention in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel that you used it, and report any issue. This will help with the integration process if some player mention using the beta world! ",
+      "download_url": "https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.0-beta/messenger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "edc26b525d75a920178d43a9ea1d41723fc2f5137fe8a84d88b235690c71524d",
+      "html_url": "https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/tag/v0.16.0-beta",
+      "prerelease": true,
+      "size": 83370,
+      "source_url": "https://api.github.com/repos/Jouramie/TheMessengerRandomizerModAP",
+      "tag": "v0.16.0-beta",
+      "title": " v0.16.0-beta",
+      "version_simple": "0.16.0",
+      "world_version": "0.16.0b0"
     }
   }
 }
