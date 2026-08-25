@@ -1,9 +1,12 @@
 # Manual_GlassAnimals_bennydreamly
 
 ## Latest
-- <a href="https://github.com/benny-dreamly/Manuals/releases/download/GA-5.0.0/manual_glassanimals_bennydreamly.apworld">Latest Version (5.0.0)</a>
+- <a href="https://github.com/benny-dreamly/Manuals/releases/download/GA-6.0.0/manual_glassanimals_bennydreamly.apworld">Latest Version (6.0.0)</a>
 
 ## All Versions
+
+#### v6.0.0
+- <a href="https://github.com/benny-dreamly/Manuals/releases/download/GA-6.0.0/manual_glassanimals_bennydreamly.apworld">https://github.com/benny-dreamly/Manuals/releases/download/GA-6.0.0/manual_glassanimals_bennydreamly.apworld</a>
 
 #### v5.0.0
 - <a href="https://github.com/benny-dreamly/Manuals/releases/download/GA-5.0.0/manual_glassanimals_bennydreamly.apworld">https://github.com/benny-dreamly/Manuals/releases/download/GA-5.0.0/manual_glassanimals_bennydreamly.apworld</a>

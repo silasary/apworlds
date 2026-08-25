@@ -1,9 +1,12 @@
 # Spark the Electric Jester 3
 
 ## Latest
-- <a href="https://github.com/TwinklePillar/Spark3-Archipelago/releases/download/v0.11.2-beta/spark3.apworld">Latest Version (0.11.2.post2)</a>
+- <a href="https://github.com/TwinklePillar/Spark3-Archipelago/releases/download/v0.11.3-beta/spark3.apworld">Latest Version (0.11.3b0)</a>
 
 ## All Versions
+
+#### v0.11.3b0
+- <a href="https://github.com/TwinklePillar/Spark3-Archipelago/releases/download/v0.11.3-beta/spark3.apworld">https://github.com/TwinklePillar/Spark3-Archipelago/releases/download/v0.11.3-beta/spark3.apworld</a>
 
 #### v0.11.2.post2
 - <a href="https://github.com/TwinklePillar/Spark3-Archipelago/releases/download/v0.11.2-beta/spark3.apworld">https://github.com/TwinklePillar/Spark3-Archipelago/releases/download/v0.11.2-beta/spark3.apworld</a>

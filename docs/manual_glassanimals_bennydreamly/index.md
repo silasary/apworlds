@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/benny-dreamly/Manuals/releases/download/GA-5.0.0/manual_glassanimals_bennydreamly.apworld">Latest Version (5.0.0)</a>
+- <a href="https://github.com/benny-dreamly/Manuals/releases/download/GA-6.0.0/manual_glassanimals_bennydreamly.apworld">Latest Version (6.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
