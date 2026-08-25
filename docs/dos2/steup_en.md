@@ -24,9 +24,9 @@
 2. Install the dos2.apworld. This can be done by using the Archipelago Launcher's "Install AP World" component, or just by copying the dos2.apworld into the custom_worlds folder in the Archipelago install.
 3. Download and install Norbyte's Script Extender from the link above, the more recent the better. Follow the instructions on the Script Extender's Github.
 4. Download the Archipelago DOS2 mod. If using the Steam workshop, simply subscribe to the linked mod. If you downloaded the mod off Github, move the .pak folder into the the game's mod folder
-(Documents\Larian Studios\Divinity Original Sin 2\Mods).
+(Documents\Larian Studios\Divinity Original Sin 2 Definitve Edition\Mods).
 5. Make sure the Archipelago mod is enabled in game by going to "Mods" in the main menu and making sure the corresponding box is checked.
-6. Verify that the directory "Documents\Larian Studios\Divinity Original Sin 2\Osiris Data does exist. If not, start a game with the Archipelago mod enabled and play until you load into the tutorial and
+6. Verify that the directory "Documents\Larian Studios\Divinity Original Sin 2 Definitve Edition\Osiris Data does exist. If not, start a game with the Archipelago mod enabled and play until you load into the tutorial and
 complete the first quest (Death Belowdecks, completes after Windego explodes). This will create the folder.
 You can also just create the folder manually (make sure the folder location and name are exact).
 
@@ -45,8 +45,8 @@ When you join a multiworld game, provide your .yaml to the host. You will not ne
 ### Connecting to the Multiworld
 
 In the Archipelago Launcher, search for "Divinity Original Sin 2 Client" and launch it. A message box will appear asking for the directory you created in step 6 of the setup, select the Osiris Data folder and the client will open properly.
- In the Divinity Original Sin 2 Client, type in the host's room in the server box at the top. This will either be "archipelago.gg:xxxxx" or an ip depending on what the host is hosting on. Hit connect and you
- will be prompted to enter your slot name. Enter the exact name you put as your name in your .yaml and you will be connected. From here, just open up Divinity Original Sin 2, make sure the Archipelago mod is enabled, and start playing!
+In the Divinity Original Sin 2 Client, type in the host's room in the server box at the top. This will either be "archipelago.gg:xxxxx" or an ip depending on what the host is hosting on. Hit connect and you
+will be prompted to enter your slot name. Enter the exact name you put as your name in your .yaml and you will be connected. From here, just open up Divinity Original Sin 2, make sure the Archipelago mod is enabled, and start playing!
 
 ## Hosting a Multiworld game
 
@@ -55,12 +55,11 @@ It's recommended to use the hosting service provided on the Archipelago website.
 1. Collect all the .yaml files from each player.
 2. Put them all in the "Players" folder in your Archipelago install.
 3. Open the Archipelago Launcher and open the "Generate" component.
-4. If successful, a zip will be created in the output folder of your Archipelago install
-    -If unsuccessful, double check each .yaml is valid and try again
-5. Hit "Start Playing" on Archipelago's website and hit "host a pre-generated game"
-6. Upload that zip that was created in the earlier output folder
-7. Hit create new room
-8. Connect with the port at the top of the page
+4. If successful, a zip will be created in the output folder of your Archipelago install. If unsuccessful, double check each .yaml is valid and try again.
+5. Hit "Start Playing" on Archipelago's website and hit "host a pre-generated game".
+6. Upload that zip that was created in the earlier output folder.
+7. Hit create new room.
+8. Connect with the port at the top of the page.
 9. Play!
 
 ## Playing Divinity Multiplayer

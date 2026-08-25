@@ -5,6 +5,8 @@ randomizer. Clearing levels and finding secrets sends items to you or to other
 players. In return, your own world access, abilities, Power-Ups, and Star Coins
 may be found anywhere in the multiworld.
 
+**[Roadmap](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/Roadmap.md)**
+
 For installation and launch instructions, see the [Setup Guide](setup_en.md).
 
 > **Alpha:** Crashes and fatal errors are considered unlikely. Known types of
@@ -20,6 +22,7 @@ For installation and launch instructions, see the [Setup Guide](setup_en.md).
 With the standard location settings, a seed includes:
 
 - all 80 level goals;
+- all 9 Castle boss defeats as separate checks;
 - all 240 Star Coins;
 - 34 Toad House rewards;
 - 29 Red Coin Challenges;
@@ -47,10 +50,10 @@ You can choose one of four victory conditions:
 
 | Goal | How to win |
 |---|---|
-| Defeat Bowser | Clear World 8-Bowser's Castle |
+| Defeat Bowser | Defeat Bowser & Bowser Jr. in World 8-Bowser's Castle |
 | Star Coin Hunt | Receive the chosen number of Star Coin items |
-| World Tour | Clear the castle goal in all eight worlds |
-| Completionist | Defeat Bowser and receive the chosen number of Star Coin items |
+| World Tour | Defeat all 9 Castle bosses |
+| Completionist | Defeat all 9 Castle bosses and receive the chosen number of Star Coin items |
 
 Star Coins spent at signs still count toward Star Coin Hunt and Completionist.
 Only your current spending balance goes down. The overview section in the client shows the total amount received so far.
@@ -189,10 +192,17 @@ The NSMBDS Client can launch BizHawk, the patched ROM, and the included Lua
 script for you. During play it shows received items,
 checked locations, and notifications.
 
+The patched game unlocks the native **SAVE** option in the World Map menu, so
+you can save your current game at any time while on the World Map.
+
 The emulator also displays an activity feed in the lower-left corner.
 It shows checks and item transfers in real time, can be scrolled, and can be hidden with CTRL+SHIFT+H. Reconnecting may
 restore older feed messages, but already used lives, Coins, Power-Ups, and traps
 are not applied a second time.
+
+### Hotkeys
+
+ - Toggle Emulator Feed: `CTRL+SHIFT+H`
 
 ## Important player options
 

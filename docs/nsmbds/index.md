@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.4.3-alpha/nsmbds.apworld">Latest Version (0.4.3a0)</a>
+- <a href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.4.4-alpha/nsmbds.apworld">Latest Version (0.4.4a0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
