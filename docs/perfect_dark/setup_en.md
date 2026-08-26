@@ -20,11 +20,19 @@
 5. Host the game through their [site](https://archipelago.gg/uploads) or locally
 6. Inside the Perfect Dark AP Client folder, place your rom in the data folder and rename it to 'pd.ntsc-final.z64'
 7. Open pd.x86_64 and use the '/connect ip:port slotname password' command in the console to connect to the server
-8. You are ready to play. I recommend making a new save file.
+8. You are ready to play.
 
 More info: 
 - [Archipelago Setup Guide](https://archipelago.gg/tutorial/Archipelago/setup_en)
 - [Perfect Dark PC Port](https://github.com/fgsfdsfgs/perfect_dark)
+
+## Updating
+
+If you have an old version of the client, you can update to the newest version without having to delete any files.
+
+1. Download the latest version of the client and apworld
+2. Drag all the files inside the Perfect Dark AP Client folder you just downloaded and replace the files in the old one
+3. Follow the steps from the setup section to get started
 
 ## Switching Rooms
 

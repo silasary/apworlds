@@ -1,9 +1,12 @@
 # Mega Man X2
 
 ## Latest
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx2-v2.0.3/mmx2.apworld">Latest Version (2.0.3)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx2-v2.0.4/mmx2.apworld">Latest Version (2.0.4)</a>
 
 ## All Versions
+
+#### v2.0.4
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx2-v2.0.4/mmx2.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx2-v2.0.4/mmx2.apworld</a>
 
 #### v2.0.3
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx2-v2.0.3/mmx2.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx2-v2.0.3/mmx2.apworld</a>

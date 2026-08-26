@@ -66,8 +66,9 @@ BizHawk and the original game ROM are not distributed with this project.
 9. In the NSMBDS Client, switch to the **Archipelago** tab. Enter the server
    address, then click **Connect**, enter slot name, and optional password.
 
-10. Wait until both the Archipelago connection and the BizHawk connection are active. 
-   The Emulator Feed in the bottom-right corner of BizHawk should show both connection messages:
+10. Wait until both the Archipelago connection and the BizHawk connection are active.
+   The Emulator Feed should show both connection messages (its width, position,
+   status, and fade-out time can be changed in the client's **Settings** tab):
 
    ```text
    NSMBDS Client connected to BizHawk.

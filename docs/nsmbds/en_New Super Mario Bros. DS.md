@@ -163,6 +163,8 @@ items. Every trap can also be enabled or disabled separately.
 | Coin Tax | Removes up to ten Coins |
 | Time Drain | Removes 50 seconds from the level timer |
 | Coin Thief | Removes all normal Coins |
+| No Turnaround Trap | Locks horizontal movement to the first chosen direction for 15 seconds |
+| Power-Up Pickpocket Trap | Immediately steals the touchscreen reserve Power-Up |
 
 Most timed traps last 15 seconds. The Spotlight lasts ten seconds and I'm Stuck
 lasts three seconds. Bonk Trap can optionally be allowed to kill Small Mario.
@@ -175,7 +177,7 @@ Life Insurance prevents the next local death from consuming a life.
 The option Death Link: Trigger on Insured Deaths determines whether that insured death is still sent through Death Link. 
 It is disabled by default.
 
-## Character palettes
+## Cosmetic options
 
 Mario and Luigi can each use their own color palette. The selected colors are
 applied to the character (also the Power Ups) while playing levels; gameplay and abilities do not
@@ -186,6 +188,13 @@ Pastel Rosa, Gold, Silver, Peach, Random Preset, and Crazy Random. **Random
 Preset** chooses one of the prepared palettes for the seed. **Crazy Random**
 randomizes every pixel.
 
+The **Secondary Screen Background** option can shuffle the five vanilla
+in-level lower-screen wallpapers or use one selected wallpaper in every level.
+The available fixed designs are White Bricks, Star Pattern, Blue Bricks, Mario
+Silhouette, and Classic Overworld.
+
+![Secondary Screen Background choices](images/secondary_screen_backgrounds.png)
+
 ## Client and emulator features
 
 The NSMBDS Client can launch BizHawk, the patched ROM, and the included Lua
@@ -195,8 +204,11 @@ checked locations, and notifications.
 The patched game unlocks the native **SAVE** option in the World Map menu, so
 you can save your current game at any time while on the World Map.
 
-The emulator also displays an activity feed in the lower-left corner.
-It shows checks and item transfers in real time, can be scrolled, and can be hidden with CTRL+SHIFT+H. Reconnecting may
+The emulator also displays a configurable activity feed.
+It shows checks and item transfers in real time and can be scrolled. The
+client's **Settings** tab controls its status, width, screen position, and
+fade-out time; changes apply while the game is running. The feed can also be
+hidden temporarily with CTRL+SHIFT+H. Reconnecting may
 restore older feed messages, but already used lives, Coins, Power-Ups, and traps
 are not applied a second time.
 
@@ -217,7 +229,8 @@ you will find there:
   items may appear.
 - **Traps:** set the overall percentage and toggle individual effects.
 - **Multiplayer:** enable Death Link and its Life Insurance behavior.
-- **Cosmetics:** select separate Mario and Luigi palettes.
+- **Cosmetics:** select separate Mario and Luigi palettes and optionally
+  shuffle the in-level secondary-screen backgrounds.
 
 Normal host safety limits allow up to 30% global Blocksanity checks and a 50%
 trap rate. Higher values require the host to explicitly allow unsafe NSMBDS
