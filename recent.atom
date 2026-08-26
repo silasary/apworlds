@@ -2,195 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-26T06:16:56.724373+00:00</updated>
+  <updated>2026-08-26T12:23:34.069735+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/vicr123/Archipelago/releases/tag/20260822-1</id>
-    <title>Candy Box 2 v1.20260822.1r2</title>
-    <updated>2026-08-23T05:33:57+00:00</updated>
-    <author>
-      <name>Victor Tran</name>
-    </author>
-    <author>
-      <name>Aren Merzoian</name>
-    </author>
-    <content>This version of the Candy Box 2 randomizer introduces the following features:&#13;
-- New goal conditions are now available.&#13;
-  - Goal conditions are implemented as a set of tasks to be performed&#13;
-  - In addition to obtaining the PLAY stones, you can also opt to require dying to the Castle Trap Room or swimming 3000m in the sea.&#13;
-  - Any subset of these tasks can be made as a requirement to goal the game.&#13;
-  - Your progress towards these goals can be found by finding the Talking Candy.&#13;
-- Filler locations have been overhauled.&#13;
-  - Filler locations now exist in the Lollipop Farm and as distances travelled in the sea.&#13;
-  - Filler locations are randomly selected when required.&#13;
-  - Opting for Individual Spells now adds filler locations instead of bundling multiple items into one shop purchase at the Sorceress' hut.&#13;
-- Hovering over the World Map in your Inventory now tells you how many Progressive World Maps you have received.&#13;
-- You can now have up to 20 font traps in the world.&#13;
-- Logic has been updated for single enemy quests - the Purple Fin is now taken into account.&#13;
-&#13;
-Tested on AP 0.6.7, YMMV on later versions. Requires AP 0.6.0 or later.&#13;
-&#13;
-Game client available at: https://candybox2-ap.vicr123.com/20260822-1/</content>
-    <link href="https://github.com/vicr123/Archipelago/releases/tag/20260822-1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.5</id>
-    <title>Ratchet &amp; Clank 2 v0.6.4.5.post2</title>
-    <updated>2026-08-23T06:41:45+00:00</updated>
-    <author>
-      <name>Evilwb</name>
-    </author>
-    <content>Testing Dynamic PINE ports for multi PCSX2 instance support.&#13;
-Also adds auto connection functionally to the client using patch data, and added the manifest json.&#13;
-Based on: https://github.com/evilwb/APRac2/releases/tag/v0.6.4&#13;
-v0.6.4.4: Now has UT integrated, and yaml-less support. Works as long as [UT](&lt;https://github.com/FarisTheAncient/Archipelago/releases?q=tracker_&amp;expanded=true&gt;) is installed. Also fixed some first person logic issues.&#13;
-Thanks to @AmondoVagyok&#13;
-Also added world version to slot data so can see if client isn't matching multiworld gen.&#13;
-Planned: More UT features. "Glitch" logic. Internal or external map. Auto map tab switching. Community suggested logic changes.&#13;
-v0.6.4.5: Fixed CRC not being forced to 8 characters.&#13;
-Also made apworld version be checked using the archipelago.json instead of manually set.&#13;
-&#13;
-### Setup&#13;
-You need every RaC2 option in your `host.yaml` setup. That means:  &#13;
-`iso_file` to a valid vanilla iso in your Archipelago directory (should be already from normal setup)  &#13;
-`iso_start` to your PCSX2 exe (Make sure to use `/`)  &#13;
-`game_ini` to a game settings file in your PCSX2's gamesettings folder.  &#13;
-(Usually `%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini`)&#13;
-&#13;
-Example:&#13;
-```yaml&#13;
-rac2_options:&#13;
-  # File name of the Ratchet &amp; Clank 2 ISO&#13;
-  iso_file: "Ratchet &amp; Clank - Going Commando (USA) (v1.01).iso"&#13;
-  # Set this false to never autostart an iso (such as after patching),&#13;
-  # Set it to true to have the operating system default program open the iso&#13;
-  # Alternatively, set it to a path to a program to open the .iso file with (like PCSX2)&#13;
-  iso_start: "C:/Emulators/(PS2) PCSX2/pcsx2-qt.exe"&#13;
-  # Set to file path to an existing PCSX2 game setting INI file to have the patcher&#13;
-  # create an appropriately named INI with the rest of the patch output. This can be used to&#13;
-  # allow you to use you own custom PCSX2 setting with patched ISO.&#13;
-  game_ini: "%USERPROFILE%/Documents/PCSX2/gamesettings/SCUS-97268_38996035.ini"&#13;
-```&#13;
-&#13;
-Game settings ini example:&#13;
-```ini&#13;
-[EmuCore]&#13;
-EnablePINE = true&#13;
-PINESlot = 28011&#13;
-&#13;
-[Achievements]&#13;
-Enabled = false&#13;
-&#13;
-[MemoryCards]&#13;
-Slot1_Enable = true&#13;
-Slot2_Enable = false&#13;
-Slot1_Filename = APgames.ps2&#13;
-```&#13;
-Recommended you use your settings for vanilla RaC2. But you can make a copy with specific edits.&#13;
-So you can set an AP specific memory card like in the example above. (You don't need to add PINE settings)&#13;
-&#13;
-For normal setup if you haven't already. Check [GitHub](&lt;https://github.com/evilwb/APRac2/blob/main/docs/setup_en.md&gt;), and [Discord](&lt;https://discord.com/channels/731205301247803413/1325015730218860554/1371288772548755466&gt;). Also [World info &amp; FaQ](https://github.com/evilwb/APRac2/blob/main/README.md).&#13;
-&#13;
-### Start&#13;
-Simply run a `.aprac2` file with Archipelago. (Recommended to set to open `.aprac2` files with Archipelago by default)&#13;
-Or run the client, and use the `/start` command, and then select your desired `.aprac2` file. (Or drag `.aprac2` into the client)&#13;
-Note: You can rename `aprac2` and patched `iso` but they have to have the same name or it'll make another `iso`.&#13;
-(Same way you have to keep `.apsave`, and their `.zip` name the same if hosting locally)&#13;
-&#13;
-Changes: &lt;https://github.com/jacobmix/APRac2/compare/v0.6.4.4...v0.6.4.5?w=1&gt;&#13;
-Full changes: &lt;https://github.com/jacobmix/APRac2/compare/main...v0.6.4.5?w=1&gt;&#13;
-&#13;
-&#13;
-# Supported Game Version&#13;
-This only works with the following version of the game for now:&#13;
-- Platform: ``Playstation 2`` (This project will not be tackling the Playstation 3 versions)&#13;
-- Version: ``1.01``&#13;
-- Serial: ``SCUS-97268``&#13;
-- CRC32: ``6D1FC798`` (PCSX2 CRC: ``38996035``)&#13;
-- MD5: ``3CBBB5127EE8A0BE93EF0876F7781EE8``&#13;
-&#13;
-There is rooms for other versions/regions to be added in the future.&#13;
-&#13;
-# Basic Setup&#13;
-## AP World Installation&#13;
-0. Download &amp; install [Archipelago Launcher](https://github.com/ArchipelagoMW/Archipelago/releases/latest).&#13;
-1. Downloaded ``rac2.apworld`` file from the release assets below.&#13;
-2. Double-click the ``rac2.apworld`` to install it to your local Archipelago's ``custom_worlds`` folder.&#13;
-3. Restart the Archipelago Launcher&#13;
-4. Create your player yaml options with the Options Creator in the launcher.&#13;
-5. Save player yamls to ``Players`` folder or send to person hosting.&#13;
-   - Hoster generates multiworld with all player yamls in the ``Players`` folder.&#13;
-   - Self host or upload gen from ``output`` to &lt;https://archipelago.gg/uploads&gt;, and share room/connection info.&#13;
-6. Open ``.aprac2`` with Archipelago or after opening the "Ratchet and Clank 2 Client".&#13;
-   - Will be asked for iso, and other ``host.yaml`` options now if not setup.&#13;
-     - MAKE SURE THE RAC2 ISO COPIED TO YOUR ARCHIPELGO FOLDER IS FULLY COPIED OR MANUALLY COPY ONE OVER!&#13;
-7. Should auto connect. Else redownload patch or manually connect with client. (Using slot name, password if set, and IP/URL &amp; port)&#13;
-   - Tip. You can connect instantly with: ``&lt;SLOT_NAME&gt;:None@&lt;IP/URL&gt;:&lt;PORT&gt;``&#13;
-Example: ``CoolPlayer:CoolerPassword@archipelago.gg:38281`` (``None`` works if no password is set)&#13;
-## PCSX2 Settings&#13;
-- Enable PINE in PCSX2&#13;
-  - In PCSX2, Under Tools, Check Show Advanced Settings&#13;
-  - In PCSX2, System -&gt; Settings -&gt; Advanced tab -&gt; PINE Settings,&#13;
-**Check** Enable and ensure Slot is set to ``28011``</content>
-    <link href="https://github.com/jacobmix/APRac2/releases/tag/v0.6.4.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MikeFritzDevelops/ACWW-Archipelago/releases/tag/v0.1.2-alpha</id>
-    <title>Animal Crossing: Wild World v0.1.1</title>
-    <updated>2026-08-23T07:59:34+00:00</updated>
-    <author>
-      <name>Mike</name>
-    </author>
-    <content>## v0.1.2-alpha&#13;
-&#13;
-## Added&#13;
-&#13;
-- Added an option to Skip Tom Nook's Tutorial&#13;
-- Added an option to set 'Barren Town' which removes all plants and trees from town at start, requiring player to sculpt their town to their desire to hunt bugs requiring flowers and trees.&#13;
-- Added QoL feature to guarantee at least 1 tree in town always has a bee hive to make Bee hunting less of a grind.&#13;
-- Added QoL feature to instantly grow trees to full mature state.&#13;
-- Added Bee and Invisible Bee Traps as optional trap settings.&#13;
-- Added Weather Control to Master Controller to allow for forced rain/snow.&#13;
-&#13;
-## Changed&#13;
-&#13;
-- Updated availability logic for weather-dependent bugs and fish to account for Weather Control.&#13;
-&#13;
-## Fixed&#13;
-&#13;
-- Fixed a bug that caused tools to be repeatedly added to inventory if one was lost/equipped.&#13;
-- Fixed an issue where every check caused a full refresh of the Master Controller leading to performance issues.&#13;
-- Fixed poptracker availability for some fish and bugs, and improved clarity of images.&#13;
-&#13;
-## Documentation&#13;
-&#13;
-- [README](https://github.com/MikeFritzDevelops/ACWW-Archipelago#readme)&#13;
-- [Setup Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/setup_en.md)&#13;
-- [Game Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/game_en.md)&#13;
-- [Master Controller Guide](https://github.com/MikeFritzDevelops/ACWW-Archipelago/blob/main/acww/docs/controller.md)&#13;
-&#13;
----&#13;
-&#13;
-## Alpha Notice&#13;
-&#13;
-This is an early alpha release.&#13;
-&#13;
-Bug reports, balance feedback, and suggestions are greatly appreciated.</content>
-    <link href="https://github.com/MikeFritzDevelops/ACWW-Archipelago/releases/tag/v0.1.2-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/LucasRenaudineau/hytelago/releases/tag/release3</id>
-    <title>Hytale v3</title>
-    <updated>2026-08-23T09:44:24+00:00</updated>
-    <author>
-      <name>LucasRenaudineau</name>
-    </author>
-    <content>Modifying some locations/items names.</content>
-    <link href="https://github.com/LucasRenaudineau/hytelago/releases/tag/release3"/>
-  </entry>
   <entry>
     <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.3</id>
     <title>Supermarket Simulator v0.3.3</title>
@@ -1325,6 +1141,37 @@ Old **1.0.0** rooms keep working. Hosts generating new seeds should use this apw
     <link href="https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.0.1"/>
   </entry>
   <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha4</id>
+    <title>Crash Team Racing v0.2.0a4</title>
+    <updated>2026-08-25T16:18:38+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content># CTR Archipelago 0.2.0 Alpha 4
+
+Alpha 4 combines the current correction build with the upstream native renderer and retail-parity sync so the full candidate can be tested together. This is a prerelease, not stable 0.2.0.
+
+The client and `ctr.apworld` are a matched pair. Install the apworld included in your platform archive before generating a seed, and keep every player in the room on Alpha 4.
+
+## Included in this candidate
+
+- The full Alpha 3 feature set and apworld logic.
+- The current upstream renderer, retail-parity, audio, UI, vehicle and profile port.
+- The confirmed zero-Key Ripper Roo boss-return fix.
+- Configurable sustained-trap duration from 10 to 90 seconds or Full race, with 15 seconds as the default.
+- Transition and podium diagnostics, with repeated podium diagnostic lines suppressed until reconnect.
+
+## Testing status
+
+The focused transition, podium, diagnostic-dedup, first-Key and trap-scheduler harnesses pass. Fresh 32-bit AP, vanilla and Windows builds also pass. The combined upstream-port candidate still needs its Steam runtime gate, so please treat rendering, pause behavior, profile save/load and race transitions as active test areas.
+
+The racer-ownership reload repair is not included in these bytes. Back up late saves and report any unreceived racer that becomes playable after loading a profile.
+
+See `README-ALPHA4.md` and `KNOWN-ISSUES.md` inside the archive for hashes, setup notes and the current attention list. CTR-AP does not ship Crash Team Racing game data.
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha4"/>
+  </entry>
+  <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.18</id>
     <title>Total War Warhammer 3 v0.10.18</title>
     <updated>2026-08-25T17:04:35+00:00</updated>
@@ -1599,5 +1446,148 @@ This release provides the following updates:&#13;
 On reconnect, if your connection info hasn't changed, the mod should automatically reconnect you to the Archipelago server. Otherwise, run /archipelago disconnect and then run the connect command again with the new information.&#13;
 </content>
     <link href="https://github.com/threecrowsinatrenchcrowt/DrehmalAPWorld/releases/tag/v0.3.0-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha5</id>
+    <title>Crash Team Racing v0.2.0a5</title>
+    <updated>2026-08-26T10:56:38+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content># CTR Archipelago 0.2.0 Alpha 5
+
+Alpha 5 is a focused correctness and graphics prerelease. The client and `ctr.apworld` are a matched pair, so install the apworld included in your platform archive before generating a seed and keep every player in the room on Alpha 5.
+
+For the complete player-facing 0.2.0 changelog, see the [0.2.0 release notes on Archipelago Pie](https://ap-pie.com/ctr/reference/0-2-0-release-notes).
+
+## Highlights
+
+- Render Scale can now be set to Original, 2X, 3X, 4X or Native.
+- Smooth Scaling and Texture Filtering are now player-facing options.
+- Blue Fire U-turns work while reserves are active.
+- Fixed Oxide's garage opening and the Final Challenge appearing before all configured goal requirements were complete.
+- Shuffled warp-pad access is repaired for seeds that do not require four Keys.
+- Gem Cup AP boxes now follow the physical warp-pad access of each cup leg.
+
+The complete combined candidate passed focused automated tests, fresh Linux AP and vanilla builds, a fresh Windows build, and an integrated Steam runtime pass. Text remains at the original UI resolution and can look soft at 4X or Native; higher-resolution text is future work rather than part of this release.
+
+See `README-ALPHA5.md` and `KNOWN-ISSUES.md` inside the archive for exact source identities, hashes, setup notes and the current attention list. CTR-AP does not ship Crash Team Racing game data.
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/KuroLynx/AEM-Archipelago-Minecraft/releases/tag/v0.5.1</id>
+    <title>AEMinecraft v0.5.1</title>
+    <updated>2026-08-26T10:57:05+00:00</updated>
+    <author>
+      <name>KuroLynx</name>
+    </author>
+    <content>## AEMinecraft v0.5.1&#13;
+&#13;
+A maintenance release: one generation failure fixed, and a round of corrections to the&#13;
+logic that decides when a check is reachable.&#13;
+&#13;
+### Fixed&#13;
+&#13;
+**Generation failed with BlazeandCave's Advancements Pack and `challenge_sanity: all`.**&#13;
+Any seed combining those two options crashed during generation and produced no output.&#13;
+The cause was a loop in the logic for BACAP's "Super Challenges" tab. These seeds now&#13;
+generate normally. Other `challenge_sanity` settings were never affected.&#13;
+&#13;
+### Improved&#13;
+&#13;
+**Sixteen checks no longer come for free.** Each of them could previously be completed&#13;
+without owning anything the randomizer had placed, which let progression open up earlier&#13;
+than intended. They now ask for what the game actually requires — among them:&#13;
+&#13;
+- items that can only be collected with **shears** or **Silk Touch**, such as glow lichen,&#13;
+  dead bushes, grass, ferns, vines and mushroom blocks&#13;
+- **nether wart**, which only grows inside Nether Fortresses and Bastion Remnants, and&#13;
+  previously opened the entire brewing tree on arrival in the Nether&#13;
+- **wither roses**, which require defeating the Wither&#13;
+- **string** from cobwebs, and **carved pumpkins**&#13;
+&#13;
+Tool requirements are now read directly from the game files, so they stay correct as&#13;
+Minecraft changes.&#13;
+&#13;
+### Upgrading&#13;
+&#13;
+- The mod and the apworld are released together and should be used as a matched set.&#13;
+- Seeds generated with v0.5.0 are unaffected and can be finished as they are.&#13;
+- Because the logic is stricter, regenerating an existing v0.5.0 seed with v0.5.1 will&#13;
+  produce a different placement. Generate a new seed rather than expecting the old one to&#13;
+  be reproduced.&#13;
+- No YAML changes are required.</content>
+    <link href="https://github.com/KuroLynx/AEM-Archipelago-Minecraft/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.9.0r2</title>
+    <updated>2026-08-26T12:05:22+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `7e8f6585087ace7752552a65339100a0f4410d08`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.9.0
+
+- docs: drop three pages from the book and cut the vocabulary page to a stub
+- docs(readme): cut the README to a front page and move the rest into the book
+- chore(beads): the env.example download 404s, and a shorter README bead
+- chore(beads): nightly publishes, and tip is burned for good
+- fix(ci): the rolling prerelease is nightly, because tip is burned
+- chore(beads): tip is blocked by a tag ruleset, not by its own code
+- fix(ci): tip drops its local tag before making the new one
+- fix(ci): tip deletes and recreates its tag instead of moving it
+- chore(deps): Go 1.27.0, the tools that can read it, and bots v2.15.0
+- feat(plugin): sm_ap_bundle pays a Cash Bundle by hand
+- chore(beads): the bundle ledger crosses the plugin boundary
+- feat(plugin): publish the bundle ledger to the defender mod
+- chore(beads): the README wants both lists and a rewrite pass
+- chore(beads): the README duplicates the setup docs it links to
+- chore(beads): the tip workflow is in
+- feat(ci): a moving tip tag with a prerelease on every push to main
+- chore(beads): apw-48u does not reproduce across ten conditions
+- chore(beads): the bundle does not stop a sale, the attribute is the question
+- chore(beads): apw-48u is testable on the bed, and a bot is not the control
+- chore(beads): the statuses say what is actually true
+- fix(plugin): a Cash Bundle pays the bots too
+- chore(beads): update 2 bead files
+- chore(beads): update 2 bead files
+- chore(beads): fold the bot payout bead into apw-4cb
+- fix(launcher): the engine watchdog stays off on Linux
+- chore(beads): the bots were never paid a Cash Bundle
+- chore(beads): update 2 bead files
+- chore(beads): the mission list still reads the room's checks
+- bd: update sync.remote
+- bd: clear sync.remote
+- chore(deps): pin the defender bots at v2.14.0
+- docs(agents): restore the standard beads block
+- docs(agents): cut CLAUDE.md to 48 lines
+- docs(agents): make CLAUDE.md the real instructions, symlink AGENTS.md
+- chore(triage): import the 1.9.0 Discord reports
+- chore(todo): move the backlog into beads
+- bd init: initialize beads issue tracking
+- docs(loadouts): draft the custom bot loadout builder, launcher side
+- docs(changelog): the pin is v2.13.2, and say what it carries
+- chore(deploy): pin defenderbots v2.13.2
+- chore(deploy): pin defenderbots v2.13.0
+- chore(deploy): pin defenderbots v2.12.0
+- chore(deploy): pin defenderbots v2.11.0
+- fix(plugin): RED comes back to its size between waves
+- fix(launcher): a bot seat left on the draw keeps its number
+- docs(changelog): the 1.9 notes state what the release does
+- docs(changelog): the 1.9 notes read as one line each
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
 </feed>

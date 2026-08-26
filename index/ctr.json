@@ -123,6 +123,38 @@
       "title": "v0.1.5",
       "version_simple": "0.1.5",
       "world_version": "0.1.5"
+    },
+    "v0.2.0-alpha4": {
+      "created_at": "2026-08-25T16:18:38Z",
+      "description": "# CTR Archipelago 0.2.0 Alpha 4\n\nAlpha 4 combines the current correction build with the upstream native renderer and retail-parity sync so the full candidate can be tested together. This is a prerelease, not stable 0.2.0.\n\nThe client and `ctr.apworld` are a matched pair. Install the apworld included in your platform archive before generating a seed, and keep every player in the room on Alpha 4.\n\n## Included in this candidate\n\n- The full Alpha 3 feature set and apworld logic.\n- The current upstream renderer, retail-parity, audio, UI, vehicle and profile port.\n- The confirmed zero-Key Ripper Roo boss-return fix.\n- Configurable sustained-trap duration from 10 to 90 seconds or Full race, with 15 seconds as the default.\n- Transition and podium diagnostics, with repeated podium diagnostic lines suppressed until reconnect.\n\n## Testing status\n\nThe focused transition, podium, diagnostic-dedup, first-Key and trap-scheduler harnesses pass. Fresh 32-bit AP, vanilla and Windows builds also pass. The combined upstream-port candidate still needs its Steam runtime gate, so please treat rendering, pause behavior, profile save/load and race transitions as active test areas.\n\nThe racer-ownership reload repair is not included in these bytes. Back up late saves and report any unreceived racer that becomes playable after loading a profile.\n\nSee `README-ALPHA4.md` and `KNOWN-ISSUES.md` inside the archive for hashes, setup notes and the current attention list. CTR-AP does not ship Crash Team Racing game data.\n",
+      "download_url": "https://github.com/dowlle/ctr-native-ap/releases/download/v0.2.0-alpha4/ctr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f05efcbca349c2c687f0b9ae30844cbbfcdc80d751096398e9132a4db1d6be9d",
+      "html_url": "https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha4",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 242724,
+      "source_url": "https://api.github.com/repos/dowlle/ctr-native-ap",
+      "tag": "v0.2.0-alpha4",
+      "title": "CTR Archipelago 0.2.0 Alpha 4",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0a4"
+    },
+    "v0.2.0-alpha5": {
+      "created_at": "2026-08-26T10:56:38Z",
+      "description": "# CTR Archipelago 0.2.0 Alpha 5\n\nAlpha 5 is a focused correctness and graphics prerelease. The client and `ctr.apworld` are a matched pair, so install the apworld included in your platform archive before generating a seed and keep every player in the room on Alpha 5.\n\nFor the complete player-facing 0.2.0 changelog, see the [0.2.0 release notes on Archipelago Pie](https://ap-pie.com/ctr/reference/0-2-0-release-notes).\n\n## Highlights\n\n- Render Scale can now be set to Original, 2X, 3X, 4X or Native.\n- Smooth Scaling and Texture Filtering are now player-facing options.\n- Blue Fire U-turns work while reserves are active.\n- Fixed Oxide's garage opening and the Final Challenge appearing before all configured goal requirements were complete.\n- Shuffled warp-pad access is repaired for seeds that do not require four Keys.\n- Gem Cup AP boxes now follow the physical warp-pad access of each cup leg.\n\nThe complete combined candidate passed focused automated tests, fresh Linux AP and vanilla builds, a fresh Windows build, and an integrated Steam runtime pass. Text remains at the original UI resolution and can look soft at 4X or Native; higher-resolution text is future work rather than part of this release.\n\nSee `README-ALPHA5.md` and `KNOWN-ISSUES.md` inside the archive for exact source identities, hashes, setup notes and the current attention list. CTR-AP does not ship Crash Team Racing game data.\n",
+      "download_url": "https://github.com/dowlle/ctr-native-ap/releases/download/v0.2.0-alpha5/ctr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "33efdd348ee7e33ba36808037ad5add311db5d0c1a2c284bfa2dcc03f4d9100f",
+      "html_url": "https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha5",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 244471,
+      "source_url": "https://api.github.com/repos/dowlle/ctr-native-ap",
+      "tag": "v0.2.0-alpha5",
+      "title": "CTR Archipelago 0.2.0 Alpha 5",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0a5"
     }
   }
 }

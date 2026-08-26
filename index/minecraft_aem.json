@@ -74,6 +74,20 @@
       "title": "v0.5.0",
       "version_simple": "0.5.0",
       "world_version": "0.5.0"
+    },
+    "v0.5.1": {
+      "created_at": "2026-08-26T10:57:05Z",
+      "description": "## AEMinecraft v0.5.1\r\n\r\nA maintenance release: one generation failure fixed, and a round of corrections to the\r\nlogic that decides when a check is reachable.\r\n\r\n### Fixed\r\n\r\n**Generation failed with BlazeandCave's Advancements Pack and `challenge_sanity: all`.**\r\nAny seed combining those two options crashed during generation and produced no output.\r\nThe cause was a loop in the logic for BACAP's \"Super Challenges\" tab. These seeds now\r\ngenerate normally. Other `challenge_sanity` settings were never affected.\r\n\r\n### Improved\r\n\r\n**Sixteen checks no longer come for free.** Each of them could previously be completed\r\nwithout owning anything the randomizer had placed, which let progression open up earlier\r\nthan intended. They now ask for what the game actually requires \u2014 among them:\r\n\r\n- items that can only be collected with **shears** or **Silk Touch**, such as glow lichen,\r\n  dead bushes, grass, ferns, vines and mushroom blocks\r\n- **nether wart**, which only grows inside Nether Fortresses and Bastion Remnants, and\r\n  previously opened the entire brewing tree on arrival in the Nether\r\n- **wither roses**, which require defeating the Wither\r\n- **string** from cobwebs, and **carved pumpkins**\r\n\r\nTool requirements are now read directly from the game files, so they stay correct as\r\nMinecraft changes.\r\n\r\n### Upgrading\r\n\r\n- The mod and the apworld are released together and should be used as a matched set.\r\n- Seeds generated with v0.5.0 are unaffected and can be finished as they are.\r\n- Because the logic is stricter, regenerating an existing v0.5.0 seed with v0.5.1 will\r\n  produce a different placement. Generate a new seed rather than expecting the old one to\r\n  be reproduced.\r\n- No YAML changes are required.",
+      "download_url": "https://github.com/KuroLynx/AEM-Archipelago-Minecraft/releases/download/v0.5.1/minecraft_aem.apworld",
+      "has_manifest": false,
+      "hash_sha256": "c2fdae82af7015b3bcd8e8061ffb67cc9e28f76b95f68309820cd8043451c2e9",
+      "html_url": "https://github.com/KuroLynx/AEM-Archipelago-Minecraft/releases/tag/v0.5.1",
+      "size": 460471,
+      "source_url": "https://api.github.com/repos/KuroLynx/AEM-Archipelago-Minecraft",
+      "tag": "v0.5.1",
+      "title": "v0.5.1",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1"
     }
   }
 }
