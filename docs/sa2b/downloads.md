@@ -1,4 +1,4 @@
-# None
+# Sonic Adventure 2 Battle
 
 ## Latest
 - <a href="https://github.com/PoryGone/SA2B_Archipelago/releases/download/v2.4.2/sa2b.apworld">Latest Version (2.4.2)</a>

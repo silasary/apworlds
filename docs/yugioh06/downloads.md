@@ -1,4 +1,4 @@
-# None
+# Yu-Gi-Oh! 2006
 
 ## Latest
 - <a href="https://github.com/Rensen3/ArchipelagoYGO06/releases/download/YuGiOh2006v2.4/yugioh06.apworld">Latest Version (2006r7)</a>

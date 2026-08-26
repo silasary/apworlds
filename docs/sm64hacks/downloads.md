@@ -1,18 +1,18 @@
 # SM64 Romhack
 
 ## Latest
-- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.12/sm64hacks.apworld">Latest Version (1.1.11r2)</a>
+- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.14/sm64hacks.apworld">Latest Version (1.1.11r3)</a>
 
 ## All Versions
+
+#### v1.1.11r3
+- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.14/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.14/sm64hacks.apworld</a>
 
 #### v1.1.11r2
 - <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.12/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.12/sm64hacks.apworld</a>
 
 #### v1.1.11r2
 - <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.13/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.13/sm64hacks.apworld</a>
-
-#### v1.1.11r2
-- <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.14/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.14/sm64hacks.apworld</a>
 
 #### v1.1.11
 - <a href="https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.11/sm64hacks.apworld">https://github.com/DNVIC/archipelago-sm64hacks/releases/download/v1.1.11/sm64hacks.apworld</a>

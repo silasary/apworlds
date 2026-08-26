@@ -38,28 +38,32 @@ This document explains what each trap does, its general duration during play, an
 12. [Disarm Trap](#disarm-trap)
 13. [Double Damage Trap](#double-damage-trap)
 14. [Earth Trap](#earth-trap)
-15. [Freeze Trap](#freeze-trap)
-16. [Gold Scatter Trap](#gold-scatter-trap)
-17. [Haunted Shopkeeper Trap](#haunted-shopkeeper-trap)
-18. [Hot Coals Trap](#hot-coals-trap)
-19. [Ice Floor Trap](#ice-floor-trap)
-20. [Isometric Trap](#isometric-trap)
-21. [Leaping Trap](#leaping-trap)
-22. [Market Crash Trap](#market-crash-trap)
-23. [Monkey Trap](#monkey-trap)
-24. [No Return Trap](#no-return-trap)
-25. [One Hit Trap](#one-hit-trap)
-26. [Shake Trap](#shake-trap)
-27. [Shrink Trap](#shrink-trap)
-28. [Spotlight Trap](#spotlight-trap)
-29. [Summon Trap](#summon-trap)
-30. [Swap Trap](#swap-trap)
-31. [Tar Trap](#tar-trap)
-32. [Teleport Trap](#teleport-trap)
-33. [Tempo Trap](#tempo-trap)
-34. [Timer Trap](#timer-trap)
-35. [Transmute Trap](#transmute-trap)
-36. [Undo Trap](#undo-trap)
+15. [Frank Trap](#frank-trap)
+16. [Freddy Trap](#freddy-trap)
+17. [Freeze Trap](#freeze-trap)
+18. [Gold Scatter Trap](#gold-scatter-trap)
+19. [Haunted Shopkeeper Trap](#haunted-shopkeeper-trap)
+20. [Hot Coals Trap](#hot-coals-trap)
+21. [Ice Floor Trap](#ice-floor-trap)
+22. [Isometric Trap](#isometric-trap)
+23. [Leaping Trap](#leaping-trap)
+24. [Market Crash Trap](#market-crash-trap)
+25. [Monkey Trap](#monkey-trap)
+26. [No Return Trap](#no-return-trap)
+27. [One Hit Trap](#one-hit-trap)
+28. [Shake Trap](#shake-trap)
+29. [Shrink Trap](#shrink-trap)
+30. [Spotlight Trap](#spotlight-trap)
+31. [Summon Trap](#summon-trap)
+32. [Swap Trap](#swap-trap)
+33. [Tar Trap](#tar-trap)
+34. [Teleport Trap](#teleport-trap)
+35. [Tempo Trap](#tempo-trap)
+36. [Timer Trap](#timer-trap)
+37. [Transmute Trap](#transmute-trap)
+38. [Trap Trap](#trap-trap)
+39. [Undo Trap](#undo-trap)
+40. [Wall Pig Trap](#wall-pig-trap)
 
 ### TrapLink-Only Traps
 
@@ -285,6 +289,24 @@ Fades the screen to black and back (1.5s fade in, 1s hold, 1.5s fade out), mimic
 **Severity:** Low
 
 Adds 5 animated slimes randomly on the HUD, chosen from eight slime types (green, blue, orange, ice, fire, purple, black, white) for the rest of the run.
+
+---
+
+## Frank Trap
+
+**Duration:** Floor
+**Severity:** High
+
+Spawns Frankensteinway between 2 and 4 tiles away from each player, and plays the global Frankensteinway announcement audio. Requires the Amplified DLC.
+
+---
+
+## Freddy Trap
+
+**Duration:** Floor
+**Severity:** Low
+
+Spawns a Shopkeeper in a vacant tile within a four tile radius of each player. That's it.
 
 ---
 
@@ -554,7 +576,15 @@ Curses all item slots that the player currently has items equipped in, preventin
 **Duration:** Instant
 **Severity:** Medium
 
-Spawns 2–6 entities from a randomly chosen summon group in vacant tiles within a four tile radius of each player. Current groups: Skeletons (skeletons, armored skeletons, mages, knights, and skulls; higher zones favor tougher variants), Armadillos (higher zones bias toward higher-zone variants), ice/fire Beetles, and — rarely — friendly Persons (idle playable characters that greet you). Incoming TrapLink traps can target a specific group (e.g. Buyon Trap always summons beetles).
+Spawns 2–6 entities from a randomly chosen summon group in vacant tiles within a four tile radius of each player. Every monster group except Beetles biases toward tougher variants in higher zones. Incoming TrapLink traps can target a specific group (e.g. Buyon Trap always summons beetles).
+Current variants are as follows:
+- Skeletons (skeletons, armored skeletons, mages, knights, and skulls; higher zones favor tougher variants)
+- Armadillos (higher zones bias toward higher-zone variants)
+- Ice and Fire Beetles
+- Goblins (purple and grey goblins, bombers, and the occasional sleeping sentry)
+- Golems
+- Slimes (all eight colors, with the stationary green slime kept rare)
+- Friendly playable characters (rare)
 
 ---
 
@@ -612,6 +642,15 @@ Transmutes all transmutable items in the player's inventory into random unlocked
 
 ---
 
+## Trap Trap
+
+**Duration:** Floor
+**Severity:** High
+
+Gives every replaceable floor tile in the level a 10% chance of gaining a trap, weighted toward spike and confusion traps. Tiles that already hold a trap are skipped, as are tiles a player is standing on.
+
+---
+
 ## Tutorial Trap
 
 **Duration:** Instant
@@ -639,222 +678,231 @@ Stretches all player sprites to four times their normal width with no change to 
 
 ---
 
+## Wall Pig Trap
+
+**Duration:** Floor
+**Severity:** Medium
+
+Infests the floor with Wall Pigs. Every wall with an open floor to its left or right has a 7% chance of gaining one facing that way, and at least 5 are always placed.
+
+---
+
 ## TrapLink Mappings
 
 Every row maps an Archipelago item name to a `TrapHandler` ID, optionally with handler-specific arguments (e.g. a forced Summon Trap variant). `Null` means the item is recognised but has no implementation and is silently dropped. Suggestions are appreciated and should be given in the [Archipelago thread for Crypt of the NecroDancer](https://discord.com/channels/731205301247803413/1192775219740422176).
 
-| TrapLink Trap Name | TrapHandler ID |
-|---|---|
-| 144p Trap | `144pTrap` |
-| Aaa Trap | `AaaTrap` |
-| Animal Trap | `AnimalTrap` |
-| Animal Bonus Trap | *(Null)* |
-| Army Trap | `SummonTrap` (Armadillo variant) |
-| Bald Trap | `BaldTrap` |
-| Banana Peel Trap | `SlipTrap` |
-| Banana Trap | `SlipTrap` |
-| Banner Trap | *(Null)* |
-| Bee Trap | *(Null)* |
-| Blue Balls Curse | `InstantDeathTrap` |
-| Bomb | `BombTrap` |
-| Bomb Trap | `BombTrap` |
-| Bonk Trap | `BonkTrap` |
-| Breakout Trap | *(Null)* |
-| Bubble Trap | `FreezeTrap` (Ice variant) |
-| Bullet Time Trap | `FreezeTrap` (Ice variant) |
-| Burn Trap | `BurnTrap` |
-| Buyon Trap | `SummonTrap` (Beetle variant) |
-| Camera Rotate Trap | `CameraTrap` (Rotate variant) |
-| Camera Trap | `CameraTrap` |
-| Chaos Trap | `ChaosTrap` |
-| Chaos Control Trap | `FreezeTrap` (Ice variant) |
-| Chart Modifier Trap | `TempoTrap` |
-| Chaser Trap | `HauntedShopkeeperTrap` |
-| Clear Image Trap | *(Null)* |
-| Confound Trap | `ConfusionTrap` |
-| Confuse Trap | `ConfusionTrap` |
-| Confusion Trap | `ConfusionTrap` |
-| Control Ball Trap | *(Null)* |
-| Controller Drift Trap | *(Null)* |
-| Cursed Ball Trap | *(Null)* |
-| Cursed Trap | `CursedTrap` |
-| Cutscene Trap | `CutsceneTrap` |
-| Dad Trap | `DadTrap` |
-| Damage Trap | `DamageTrap` |
-| Dead Ringer Trap | `DeadRingerTrap` |
-| Deisometric Trap | `IsometricTrap` |
-| Depletion Trap | `DisarmTrap` |
-| Disable A Trap | `DisableTrap` |
-| Disable B Trap | `DisableTrap` |
-| Disable C Up Trap | `DisableTrap` |
-| Disable Tag Trap | `DisableTrap` |
-| Disable Z Trap | `DisableTrap` |
-| Disarm Trap | `DisarmTrap` |
-| Double Damage | `DoubleDamageTrap` |
-| Double Damage Trap | `DoubleDamageTrap` |
-| Dry Trap | `DisarmTrap` |
-| Earth Trap | `EarthTrap` |
-| Eject Ability | `DisarmTrap` |
-| Electrocution Trap | *(Null)* |
-| Empty Item Box Trap | `DisarmTrap` |
-| Enemy Ball Trap | *(Null)* |
-| Energy Drain Trap | `DisarmTrap` |
-| Expensive Stocks | `CursedTrap` |
-| Explosion Trap | `BombTrap` |
-| Exposition Trap | `ExpositionTrap` |
-| Extreme Chaos Mode | *(Null)* |
-| Fake Transition | `FakeTransitionTrap` |
-| Fast Trap | `TempoTrap` (Fast variant) |
-| Fear Trap | *(Null)* |
-| Fire Trap | `BurnTrap` |
-| Fish Eye Trap | *(Null)* |
-| Fishing Trap | *(Null)* |
-| Fishin' Boo Trap | *(Null)* |
-| Flip Horizontal Trap | `CameraTrap` (FlipHorizontal variant) |
-| Flip Trap | `CameraTrap` (FlipHorizontal variant) |
-| Flip Vertical Trap | `CameraTrap` (FlipVertical variant) |
-| Frame Slime Trap | `FrameSlimeTrap` |
-| Freeze Trap | `FreezeTrap` (Ice variant) |
-| Frog Trap | *(Null)* |
-| Frost Trap | `FreezeTrap` (Ice variant) |
-| Frozen Trap | `FreezeTrap` (Ice variant) |
-| Fuzzy Trap | *(Null)* |
-| Gadget Shuffle Trap | `TransmuteTrap` |
-| Gas Trap | `ConfusionTrap` |
-| Get Out Trap | `TimerTrap` |
-| Ghost | `HauntedShopkeeperTrap` |
-| Ghost Chat | *(Null)* |
-| Gold Scatter Trap | `GoldScatterTrap` |
-| Gooey Bag | `SlimePlayerTrap` |
-| Gravity Trap | `IceFloorTrap` |
-| Haunted Shopkeeper Trap | `HauntedShopkeeperTrap` |
-| Help Trap | `HelpTrap` |
-| Hey! Trap | *(Null)* |
-| Hiccup Trap | `HiccupTrap` |
-| Home Trap | `HomeTrap` |
-| Honey Trap | `TarTrap` |
-| Hot Coals Trap | `BurnTrap` |
-| Ice Floor Trap | `IceFloorTrap` |
-| Ice Trap | `FreezeTrap` (Ice variant) |
-| Icy Hot Pants Trap | *(Null)* |
-| Input Sequence Trap | *(Null)* |
-| Instant Crystal Trap | *(Null)* |
-| Instant Death Trap | `InstantDeathTrap` |
-| Invert Colors Trap | *(Null)* |
-| Inverted Mouse Trap | `ConfusionTrap` |
-| Invisiball Trap | *(Null)* |
-| Invisible Trap | `InvisibleTrap` |
-| Invisibility Trap | `InvisibleTrap` |
-| Iron Boots Trap | `TempoTrap` (Slow variant) |
-| Isometric Trap | `IsometricTrap` |
-| Items to Bombs | `BombTrap` |
-| Jump Trap | `JumpTrap` |
-| Jumping Jacks Trap | `JumpTrap` |
-| Laughter Trap | `LaughterTrap` |
-| Leaping Trap | `LeapingTrap` |
-| Light Up Path Trap | *(Null)* |
-| Literature Trap | `ExpositionTrap` |
-| Mana Drain Trap | `DisarmTrap` |
-| Market Crash Trap | `MarketCrashTrap` |
-| Math Quiz Trap | *(Null)* |
-| Meteor Trap | `MeteorTrap` |
-| Metronome Trap | `TimerTrap` |
-| Mirror Trap | `CameraTrap` (FlipHorizontal variant) |
-| Monkey Mash Trap | `MonkeyTrap` |
-| Monkey Trap | `MonkeyTrap` |
-| My Turn! Trap | `MyTurnTrap` |
-| Ninja Trap | *(Null)* |
-| No Guarding | `CommandoTrap` |
-| No Petals | `SatiatedTrap` |
-| No Return Trap | `NoReturnTrap` |
-| No Revivals | `NoRevivalsTrap` |
-| No Stocks | *(Null)* |
-| No Vac Trap | `DisableTrap` |
-| Number Sequence Trap | *(Null)* |
-| Nut Trap | *(Null)* |
-| OmoTrap | `HelpTrap` |
-| One Hit KO | `OneHitTrap` |
-| One Hit Trap | `OneHitTrap` |
-| Paper Trap | `PaperTrap` |
-| Paralyze Trap | *(Null)* |
-| Paralysis Trap | *(Null)* |
-| Person Trap | `SummonTrap` (Person variant) |
-| Phone Trap | `HelpTrap` |
-| Pie Trap | `SlipTrap` |
-| Pinball Trap | *(Null)* |
-| Pixelate Trap | *(Null)* |
-| Pixellation Trap | *(Null)* |
-| Poison Mushroom | `ShrinkTrap` |
-| Poison Trap | *(Null)* |
-| Pokemon Count Trap | *(Null)* |
-| Pokemon Trivia Trap | *(Null)* |
-| Police Trap | *(Null)* |
-| PONG Challenge | *(Null)* |
-| Pong Trap | *(Null)* |
-| Posession Trap | *(Null)* |
-| PowerPoint Trap | `TempoTrap` (Slow variant) |
-| Push Trap | `LeapingTrap` |
-| Radiation Trap | *(Null)* |
-| Rail Trap | `IceFloorTrap` |
-| Ranch Trap | `HomeTrap` |
-| Random Status Trap | *(Null)* |
-| Resistance Trap | `TimerTrap` |
-| Reversal Trap | `ConfusionTrap` |
-| Reverse Controls Trap | `ConfusionTrap` |
-| Reverse Trap | `ConfusionTrap` |
-| Rockfall Trap | `EarthTrap` |
-| Sandstorm Trap | `EarthTrap` |
-| Screen Flip Trap | `CameraTrap` (FlipHorizontal variant) |
-| Shake Trap | `ShakeTrap` |
-| Shrink Trap | `ShrinkTrap` |
-| Sleep Trap | *(Null)* |
-| Slip Trap | `SlipTrap` |
-| Slime Player Trap | `SlimePlayerTrap` |
-| Slow Trap | `TempoTrap` (Slow variant) |
-| Slowness Trap | `TempoTrap` (Slow variant) |
-| Snake Trap | *(Null)* |
-| Spam Trap | `MyTurnTrap` |
-| Spike Ball Trap | *(Null)* |
-| Spooky Time | `SummonTrap` (Skeleton variant) |
-| Spotlight Trap | `SpotlightTrap` |
-| Spring Trap | *(Null)* |
-| Squash Trap | `BonkTrap` |
-| Sticky Floor Trap | `TarTrap` |
-| Sticky Hands Trap | `StickyHandsTrap` |
-| Stone Trap | `FreezeTrap` (Stone variant) |
-| Stun Trap | `ConfusionTrap` |
-| Summon Trap | `SummonTrap` |
-| SvC Effect | *(Null)* |
-| Swap Trap | `SwapTrap` |
-| Tar Trap | `TarTrap` |
-| Tarr Trap | `TarTrap` |
-| Teleport Trap | `TeleportTrap` |
-| Tempo Trap | `TempoTrap` |
-| Text Trap | `HelpTrap` |
-| Thwimp Trap | *(Null)* |
-| Time Limit | `TimerTrap` |
-| Time Warp Trap | `TimerTrap` |
-| Timer Trap | `TimerTrap` |
-| Tiny Trap | `ShrinkTrap` |
-| Tip Trap | `HelpTrap` |
-| TNT Barrel Trap | `BombTrap` |
-| TNT Trap | `BombTrap` |
-| Tool Swap Trap | `TransmuteTrap` |
-| Transmute Trap | `TransmuteTrap` |
-| Trivia Trap | *(Null)* |
-| Tutorial Trap | `TutorialTrap` |
-| Underwater Trap | *(Null)* |
-| Undo Trap | `UndoTrap` |
-| UNO Challenge | *(Null)* |
-| Vintage Trap | *(Null)* |
-| W I D E Trap | `WideTrap` |
-| Weather Cloudy Trap | *(Null)* |
-| Weather Rainy Trap | *(Null)* |
-| Weather Stormy Trap | *(Null)* |
-| Weather Sunny Trap | *(Null)* |
-| Well Done Trap | *(Null)* |
-| Whirlpool Trap | *(Null)* |
-| Whoops! Trap | `DisarmTrap` |
-| Zoom In Trap | `CameraTrap` (ZoomIn variant) |
-| Zoom Out Trap | `CameraTrap` (ZoomOut variant) |
-| Zoom Trap | `CameraTrap` (ZoomIn variant) |
+| TrapLink Trap Name      | TrapHandler ID                        |
+|-------------------------|---------------------------------------|
+| 144p Trap               | `144pTrap`                            |
+| Aaa Trap                | `AaaTrap`                             |
+| Animal Trap             | `AnimalTrap`                          |
+| Animal Bonus Trap       | *(Null)*                              |
+| Army Trap               | `SummonTrap` (Armadillo variant)      |
+| Bald Trap               | `BaldTrap`                            |
+| Banana Peel Trap        | `SlipTrap`                            |
+| Banana Trap             | `SlipTrap`                            |
+| Banner Trap             | *(Null)*                              |
+| Bee Trap                | *(Null)*                              |
+| Blue Balls Curse        | `InstantDeathTrap`                    |
+| Bomb                    | `BombTrap`                            |
+| Bomb Trap               | `BombTrap`                            |
+| Bonk Trap               | `BonkTrap`                            |
+| Breakout Trap           | *(Null)*                              |
+| Bubble Trap             | `FreezeTrap` (Ice variant)            |
+| Bullet Time Trap        | `FreezeTrap` (Ice variant)            |
+| Burn Trap               | `BurnTrap`                            |
+| Buyon Trap              | `SummonTrap` (Beetle variant)         |
+| Camera Rotate Trap      | `CameraTrap` (Rotate variant)         |
+| Camera Trap             | `CameraTrap`                          |
+| Chaos Trap              | `ChaosTrap`                           |
+| Chaos Control Trap      | `FreezeTrap` (Ice variant)            |
+| Chart Modifier Trap     | `TempoTrap`                           |
+| Chaser Trap             | `HauntedShopkeeperTrap`               |
+| Clear Image Trap        | *(Null)*                              |
+| Confound Trap           | `ConfusionTrap`                       |
+| Confuse Trap            | `ConfusionTrap`                       |
+| Confusion Trap          | `ConfusionTrap`                       |
+| Control Ball Trap       | *(Null)*                              |
+| Controller Drift Trap   | *(Null)*                              |
+| Cursed Ball Trap        | *(Null)*                              |
+| Cursed Trap             | `CursedTrap`                          |
+| Cutscene Trap           | `CutsceneTrap`                        |
+| Dad Trap                | `DadTrap`                             |
+| Damage Trap             | `DamageTrap`                          |
+| Dead Ringer Trap        | `DeadRingerTrap`                      |
+| Deisometric Trap        | `IsometricTrap`                       |
+| Depletion Trap          | `DisarmTrap`                          |
+| Disable A Trap          | `DisableTrap`                         |
+| Disable B Trap          | `DisableTrap`                         |
+| Disable C Up Trap       | `DisableTrap`                         |
+| Disable Tag Trap        | `DisableTrap`                         |
+| Disable Z Trap          | `DisableTrap`                         |
+| Disarm Trap             | `DisarmTrap`                          |
+| Double Damage           | `DoubleDamageTrap`                    |
+| Double Damage Trap      | `DoubleDamageTrap`                    |
+| Dry Trap                | `DisarmTrap`                          |
+| Earth Trap              | `EarthTrap`                           |
+| Eject Ability           | `DisarmTrap`                          |
+| Electrocution Trap      | *(Null)*                              |
+| Empty Item Box Trap     | `DisarmTrap`                          |
+| Enemy Ball Trap         | *(Null)*                              |
+| Energy Drain Trap       | `DisarmTrap`                          |
+| Expensive Stocks        | `CursedTrap`                          |
+| Explosion Trap          | `BombTrap`                            |
+| Exposition Trap         | `ExpositionTrap`                      |
+| Extreme Chaos Mode      | *(Null)*                              |
+| Fake Transition         | `FakeTransitionTrap`                  |
+| Fast Trap               | `TempoTrap` (Fast variant)            |
+| Fear Trap               | *(Null)*                              |
+| Fire Trap               | `BurnTrap`                            |
+| Fish Eye Trap           | *(Null)*                              |
+| Fishing Trap            | *(Null)*                              |
+| Fishin' Boo Trap        | *(Null)*                              |
+| Flip Horizontal Trap    | `CameraTrap` (FlipHorizontal variant) |
+| Flip Trap               | `CameraTrap` (FlipHorizontal variant) |
+| Flip Vertical Trap      | `CameraTrap` (FlipVertical variant)   |
+| Frame Slime Trap        | `FrameSlimeTrap`                      |
+| Freeze Trap             | `FreezeTrap` (Ice variant)            |
+| Frog Trap               | *(Null)*                              |
+| Frost Trap              | `FreezeTrap` (Ice variant)            |
+| Frozen Trap             | `FreezeTrap` (Ice variant)            |
+| Fuzzy Trap              | *(Null)*                              |
+| Gadget Shuffle Trap     | `TransmuteTrap`                       |
+| Gas Trap                | `ConfusionTrap`                       |
+| Get Out Trap            | `TimerTrap`                           |
+| Ghost                   | `HauntedShopkeeperTrap`               |
+| Ghost Chat              | *(Null)*                              |
+| Gold Scatter Trap       | `GoldScatterTrap`                     |
+| Gooey Bag               | `SlimePlayerTrap`                     |
+| Gravity Trap            | `IceFloorTrap`                        |
+| Haunted Shopkeeper Trap | `HauntedShopkeeperTrap`               |
+| Help Trap               | `HelpTrap`                            |
+| Hey! Trap               | *(Null)*                              |
+| Hiccup Trap             | `HiccupTrap`                          |
+| Home Trap               | `HomeTrap`                            |
+| Honey Trap              | `TarTrap`                             |
+| Hot Coals Trap          | `BurnTrap`                            |
+| Ice Floor Trap          | `IceFloorTrap`                        |
+| Ice Trap                | `FreezeTrap` (Ice variant)            |
+| Icy Hot Pants Trap      | *(Null)*                              |
+| Input Sequence Trap     | *(Null)*                              |
+| Instant Crystal Trap    | *(Null)*                              |
+| Instant Death Trap      | `InstantDeathTrap`                    |
+| Invert Colors Trap      | *(Null)*                              |
+| Inverted Mouse Trap     | `ConfusionTrap`                       |
+| Invisiball Trap         | *(Null)*                              |
+| Invisible Trap          | `InvisibleTrap`                       |
+| Invisibility Trap       | `InvisibleTrap`                       |
+| Iron Boots Trap         | `TempoTrap` (Slow variant)            |
+| Isometric Trap          | `IsometricTrap`                       |
+| Items to Bombs          | `BombTrap`                            |
+| Jump Trap               | `JumpTrap`                            |
+| Jumping Jacks Trap      | `JumpTrap`                            |
+| Laughter Trap           | `LaughterTrap`                        |
+| Leaping Trap            | `LeapingTrap`                         |
+| Light Up Path Trap      | *(Null)*                              |
+| Literature Trap         | `ExpositionTrap`                      |
+| Mana Drain Trap         | `DisarmTrap`                          |
+| Market Crash Trap       | `MarketCrashTrap`                     |
+| Math Quiz Trap          | *(Null)*                              |
+| Meteor Trap             | `MeteorTrap`                          |
+| Metronome Trap          | `TimerTrap`                           |
+| Mirror Trap             | `CameraTrap` (FlipHorizontal variant) |
+| Monkey Mash Trap        | `MonkeyTrap`                          |
+| Monkey Trap             | `MonkeyTrap`                          |
+| My Turn! Trap           | `MyTurnTrap`                          |
+| Ninja Trap              | *(Null)*                              |
+| No Guarding             | `CommandoTrap`                        |
+| No Petals               | `SatiatedTrap`                        |
+| No Return Trap          | `NoReturnTrap`                        |
+| No Revivals             | `NoRevivalsTrap`                      |
+| No Stocks               | *(Null)*                              |
+| No Vac Trap             | `DisableTrap`                         |
+| Number Sequence Trap    | *(Null)*                              |
+| Nut Trap                | *(Null)*                              |
+| OmoTrap                 | `HelpTrap`                            |
+| One Hit KO              | `OneHitTrap`                          |
+| One Hit Trap            | `OneHitTrap`                          |
+| Paper Trap              | `PaperTrap`                           |
+| Paralyze Trap           | *(Null)*                              |
+| Paralysis Trap          | *(Null)*                              |
+| Person Trap             | `SummonTrap` (Person variant)         |
+| Phone Trap              | `HelpTrap`                            |
+| Pie Trap                | `SlipTrap`                            |
+| Pinball Trap            | *(Null)*                              |
+| Pixelate Trap           | *(Null)*                              |
+| Pixellation Trap        | *(Null)*                              |
+| Poison Mushroom         | `ShrinkTrap`                          |
+| Poison Trap             | *(Null)*                              |
+| Pokemon Count Trap      | *(Null)*                              |
+| Pokemon Trivia Trap     | *(Null)*                              |
+| Police Trap             | *(Null)*                              |
+| PONG Challenge          | *(Null)*                              |
+| Pong Trap               | *(Null)*                              |
+| Posession Trap          | *(Null)*                              |
+| PowerPoint Trap         | `TempoTrap` (Slow variant)            |
+| Push Trap               | `LeapingTrap`                         |
+| Radiation Trap          | *(Null)*                              |
+| Rail Trap               | `IceFloorTrap`                        |
+| Ranch Trap              | `HomeTrap`                            |
+| Random Status Trap      | *(Null)*                              |
+| Resistance Trap         | `TimerTrap`                           |
+| Reversal Trap           | `ConfusionTrap`                       |
+| Reverse Controls Trap   | `ConfusionTrap`                       |
+| Reverse Trap            | `ConfusionTrap`                       |
+| Rockfall Trap           | `EarthTrap`                           |
+| Sandstorm Trap          | `EarthTrap`                           |
+| Screen Flip Trap        | `CameraTrap` (FlipHorizontal variant) |
+| Shake Trap              | `ShakeTrap`                           |
+| Shrink Trap             | `ShrinkTrap`                          |
+| Sleep Trap              | *(Null)*                              |
+| Slip Trap               | `SlipTrap`                            |
+| Slime Player Trap       | `SlimePlayerTrap`                     |
+| Slow Trap               | `TempoTrap` (Slow variant)            |
+| Slowness Trap           | `TempoTrap` (Slow variant)            |
+| Snake Trap              | *(Null)*                              |
+| Spam Trap               | `MyTurnTrap`                          |
+| Spike Ball Trap         | *(Null)*                              |
+| Spooky Time             | `SummonTrap` (Skeleton variant)       |
+| Spotlight Trap          | `SpotlightTrap`                       |
+| Spring Trap             | *(Null)*                              |
+| Squash Trap             | `BonkTrap`                            |
+| Sticky Floor Trap       | `TarTrap`                             |
+| Sticky Hands Trap       | `StickyHandsTrap`                     |
+| Stone Trap              | `FreezeTrap` (Stone variant)          |
+| Stun Trap               | `ConfusionTrap`                       |
+| Summon Trap             | `SummonTrap`                          |
+| SvC Effect              | *(Null)*                              |
+| Swap Trap               | `SwapTrap`                            |
+| Tar Trap                | `TarTrap`                             |
+| Tarr Trap               | `TarTrap`                             |
+| Teleport Trap           | `TeleportTrap`                        |
+| Tempo Trap              | `TempoTrap`                           |
+| Text Trap               | `HelpTrap`                            |
+| Thwimp Trap             | *(Null)*                              |
+| Time Limit              | `TimerTrap`                           |
+| Time Warp Trap          | `TimerTrap`                           |
+| Timer Trap              | `TimerTrap`                           |
+| Tiny Trap               | `ShrinkTrap`                          |
+| Tip Trap                | `HelpTrap`                            |
+| TNT Barrel Trap         | `BombTrap`                            |
+| TNT Trap                | `BombTrap`                            |
+| Tool Swap Trap          | `TransmuteTrap`                       |
+| Transmute Trap          | `TransmuteTrap`                       |
+| Trivia Trap             | *(Null)*                              |
+| Tutorial Trap           | `TutorialTrap`                        |
+| Underwater Trap         | *(Null)*                              |
+| Undo Trap               | `UndoTrap`                            |
+| UNO Challenge           | *(Null)*                              |
+| Vintage Trap            | *(Null)*                              |
+| W I D E Trap            | `WideTrap`                            |
+| Weather Cloudy Trap     | *(Null)*                              |
+| Weather Rainy Trap      | *(Null)*                              |
+| Weather Stormy Trap     | *(Null)*                              |
+| Weather Sunny Trap      | *(Null)*                              |
+| Well Done Trap          | *(Null)*                              |
+| Whirlpool Trap          | *(Null)*                              |
+| Whoops! Trap            | `DisarmTrap`                          |
+| Zoom In Trap            | `CameraTrap` (ZoomIn variant)         |
+| Zoom Out Trap           | `CameraTrap` (ZoomOut variant)        |
+| Zoom Trap               | `CameraTrap` (ZoomIn variant)         |

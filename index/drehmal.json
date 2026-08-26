@@ -26,6 +26,21 @@
       "title": "Drehmal Archipelago v0.2.1",
       "version_simple": "0.2.1",
       "world_version": "0.2.1b0"
+    },
+    "v0.3.0-beta": {
+      "created_at": "2026-08-25T22:13:09Z",
+      "description": "# Drehmal Archipelago v0.3.0\r\n\r\n## Bugfixes:\r\n- Made tower unlock rewards thread safe\r\n- Now batch sends location check packets to Archipelago server\r\n- Implemented a more reliable fix for advancement rewards glitch\r\n- Prevented teleport trap's effect from sending players out of bounds\r\n- Fixed various typos\r\n- Fixed Aphelion deathlooping\r\n\r\n## Improvements:\r\n- Added randomized starting location\r\n- Two new completion goals:\r\n   - Added completion goal for reaching Drehmal's end credits room\r\n   - Added completion goal for reaching a certain Terminus unlock percentage\r\n- Added music randomizer option for Drehmal's custom soundtrack\r\n- Logic overhaul for vanilla and vanilla-like advancements\r\n- Moved Foundry to the Veldt for balancing purposes\r\n- Buffed the teleport trap substantially\r\n\r\n## Setup:\r\n\r\n### Required software:\r\n\r\n- [Drehmal APOTHEOSIS v2.2.2f for Minecraft Fabric 1.20.1](https://www.drehmal.net/downloads)\r\n- Additional mods:\r\n    - Drehmal Archipelago Mod v0.3.0\r\n    - [Koala Lib v1.2.14](https://modrinth.com/mod/koala_lib/version/1.2.14)\r\n    - [Unsafe World Random Access Detector v1.1.0](https://modrinth.com/mod/uwrad/version/1.1.0)\r\n- The hi_drehmal_rando datapack v0.3.0\r\n\r\n### Joining a Multiworld\r\n\r\n1. Install Drehmal v2.2.2f and its corresponding modpack (Note that Drehmal provides a custom installer, available on its downloads page, if you don't want to manually create the Fabric installation)\r\n2. Add the three additional mods listed above to the mods folder of Drehmal's Minecraft installation\r\n3. Go into the save file you're going to be playing on and replace the hi_drehmal.zip datapack with the hi_drehmal_rando.zip datapack at path [Fabric install]/saves/Drehmal APOTHEOSIS 2.2.2f/datapacks/hi_drehmal_rando.zip\r\n4. Launch Minecraft and enter the Drehmal world\r\n5. In the lobby room, before activating the first terminal, run the command /archipelago connect \"[server name]:[port]\" [player name]\r\n6. Have fun!\r\n\r\n### Rejoining an earlier game\r\n\r\nOn reconnect, if your connection info hasn't changed, the mod should automatically reconnect you to the Archipelago server. Otherwise, run /archipelago disconnect and then run the connect command again with the new information.\r\n",
+      "download_url": "https://github.com/threecrowsinatrenchcrowt/DrehmalAPWorld/releases/download/v0.3.0-beta/drehmal.apworld",
+      "has_manifest": true,
+      "hash_sha256": "449244853f2f4f4130891caf76d94e5b05ccbb16d8fa2ed041ea8b7cfecb7485",
+      "html_url": "https://github.com/threecrowsinatrenchcrowt/DrehmalAPWorld/releases/tag/v0.3.0-beta",
+      "minimum_ap_version": "0.6.5",
+      "size": 29568,
+      "source_url": "https://api.github.com/repos/threecrowsinatrenchcrowt/DrehmalAPWorld",
+      "tag": "v0.3.0-beta",
+      "title": "Drehmal Archipelago v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0b0"
     }
   }
 }

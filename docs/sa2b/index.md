@@ -1,6 +1,6 @@
-# None
+# Sonic Adventure 2 Battle
 
-
+Sonic Adventure 2 Battle is an action platforming game. Play as Sonic, Tails, Knuckles, Shadow, Rouge, and Eggman across 31 stages and prevent the destruction of the earth.
 
 
 ## Downloads
@@ -8,9 +8,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Sonic Adventure 2 Battle">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Sonic Adventure 2 Battle">en_Sonic Adventure 2 Battle</a>

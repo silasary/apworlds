@@ -1,4 +1,4 @@
-# None
+# Landstalker - The Treasures of King Nole
 
 ## Latest
 - <a href="https://github.com/Dinopony/randstalker-archipelago/releases/download/1.3.0/landstalker.apworld">Latest Version (1.3.0)</a>

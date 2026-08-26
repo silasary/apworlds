@@ -6,7 +6,7 @@ Bearing the glyph of Dominus, will Shanoa be able to defeat him?
 
 
 ## Downloads
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe1.2.1/cv_ooe.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe1.3/cv_ooe.apworld">Latest Version (1.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -16,3 +16,4 @@ Bearing the glyph of Dominus, will Shanoa be able to defeat him?
 
 ## Other Documentation files
 - <a href="en_Castlevania Order of Ecclesia">en_Castlevania Order of Ecclesia</a>
+- <a href="logic_tricks">logic_tricks</a>

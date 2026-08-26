@@ -1,4 +1,4 @@
-# None
+# AEMinecraft
 
 ## Latest
 - <a href="https://github.com/KuroLynx/AEM-Archipelago-Minecraft/releases/download/v0.5.0/minecraft_aem.apworld">Latest Version (0.5.0)</a>

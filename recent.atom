@@ -2,41 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-26T00:22:59.865882+00:00</updated>
+  <updated>2026-08-26T06:16:56.724373+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/narramoment/Archipelago/releases/tag/0.2.2</id>
-    <title>Jak II v0.2.2</title>
-    <updated>2026-08-23T00:18:29+00:00</updated>
-    <author>
-      <name>narramoment</name>
-    </author>
-    <content>- Fixes to Linux implementation to (hopefully) allow full linux/mac support&#13;
-- Dual Check and Oracle implementation!&#13;
-- Archipelago Options Menu Re-order + moved "Warp to" option and gave more choices based on current items&#13;
-&#13;
-**Full Changelog**: https://github.com/narramoment/Archipelago/compare/0.2.1...0.2.2</content>
-    <link href="https://github.com/narramoment/Archipelago/releases/tag/0.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.2.7-real</id>
-    <title>Super Smash Bros. Brawl - The Subspace Emissary v0.2.7.post0</title>
-    <updated>2026-08-23T00:53:51+00:00</updated>
-    <author>
-      <name>kenniky</name>
-    </author>
-    <content>Implements a flow to constantly update adventure data address&#13;
-&#13;
-Backwards compatible to v0.2.0&#13;
-&#13;
-Info: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/en_SubspaceEmissary.md&#13;
-Setup: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/en_SubspaceEmissary_Setup.md&#13;
-FAQ: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/faq.md</content>
-    <link href="https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.2.7-real"/>
-  </entry>
   <entry>
     <id>https://github.com/vicr123/Archipelago/releases/tag/20260822-1</id>
     <title>Candy Box 2 v1.20260822.1r2</title>
@@ -1382,6 +1352,54 @@ Hope you enjoy, and have a great day!</content>
     <link href="https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.3"/>
   </entry>
   <entry>
+    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.8.0</id>
+    <title>Crypt of the NecroDancer v0.8.0</title>
+    <updated>2026-08-25T18:28:02+00:00</updated>
+    <author>
+      <name>lastingParadox</name>
+    </author>
+    <content>### Notes&#13;
+- **This update requires AP Redux mod v4.0.0 or newer**. The apworld and the mod changed significantly this release, and older mod versions will refuse to connect. The same applies in reverse&#13;
+- **In-progress multiworlds cannot be carried over to v0.8.0**. This update adds a variety of new locations types and reshapes the item pool. Finish your existing worlds before updating.&#13;
+&#13;
+### Changes&#13;
+- Refactored practically the entire APWorld logic (generation, items, locations, regions) to abide by recommendations provided by the community, APQuest's implementation specifically.&#13;
+  - I'm 99% certain generation is working as intended, but please reach out if something seems out of order!&#13;
+- Add option to include shrines as checks.&#13;
+  - Enabling this adds all available shrines to the item pool depending on enabled DLC. A shrine that has not been acquired yet will not generate mid-run. Upon first activation of the shrine, the check will be sent to the client. A shrine no character in your pool could ever trigger will not be included (Aria cannot access Shrine of Pain, for instance).&#13;
+- Add option to set how many items found mid-run will be considered as checks per zone. Default is 8, but can be increased to 25.&#13;
+  - Item generation chance (default 25%) makes a 25% chance for items generated on level load to instead be these per-zone item checks. Items can be found spawned in secret rooms, (non-flawless) chests, crates, barrels, and shops currently.&#13;
+- Add option to include flawless boss chests as checks per zone.&#13;
+- Add option to set how many rows of AP Lobby shop locations will generate in the multiworld. Default is 4, but can be increased to 25.&#13;
+  - Setting this value to -1 (or "auto") will leave the shop rows as-is: 8 rows without DLC enabled, 12 rows with all DLC enabled.&#13;
+- Add option to set how many progress locations exist per zone. Default is 2 (Floor 2 + Zone completion), but can be increased to 4 (Floors 1, 2, 3, and Zone completion).&#13;
+  - Personally, I'm a bit on the fence regarding this change; you're still required to go through the whole zone for all checks, so it feels like there's little benefit for this change aside from reducing location amounts in the multiworld. Considering changing this to not always include the Zone completion, which should alleviate having to play through the entirety of each zone as each character in the pool.&#13;
+- Add option to set speedrun time limits for getting All Zones location checks. Configurable for each character, default is 0 (disabled), but can be increased to 60 minutes per character.&#13;
+  - Any values set less than 3 minutes are increased to 3 minutes minimum.&#13;
+- Add diamond exchange rate option to determine how many diamonds are received on successful run completion. Default is 100 gold per diamond, but can be either reduced to 0 (disabled) or 1000.&#13;
+- Add option to handle DeathLinks when playing multiplayer: does each player dying send a DeathLink packet or only when all players die? Default is the latter.&#13;
+- Add +1 Red/Black/Purple Chest Per Zone and Progressive Gold Multiplier items.&#13;
+- Add 12 new filler items to the item pool: "Bomb", "3 Bombs", "Grenade", "Spare Potion", "Spare Coupon", "Spare Heart Transplant", "Answered Need", "Depth Skip", "Random Item", "Random Shrine", "Charmed Escort", "Fire Sale"&#13;
+  - Spare items spawn that item for the player but does not unlock it for generation mid-run. Answered Need and Depth Skip spawn a Scroll of Need and a Depth Scroll respectively.&#13;
+  - Random Item spawns any chest pool item, regardless of unlock. Random Shrine spawns any acquired shrine around the player.&#13;
+  - Charmed Escort spawns 3 random charmed enemies around the player(s). These can be minibosses and shopkeepers.&#13;
+  - Fire Sale makes all shops on the current floor 50% off.&#13;
+- Add 4 new traps to the item pool:&#13;
+  - Frank Trap (Amplified Required): Frankensteinway spawns in the level, similarly to Dead Ringer Trap&#13;
+  - Freddy Trap: Summons a passive Shopkeeper around each player&#13;
+  - Wall Pig Trap: Replaces tiles with a vacant left or right tile throughout the level 7% of the time with a Wall Pig facing in that respective direction. A minimum of 5 Wall Pigs will spawn regardless.&#13;
+  - Trap Trap: Replaces vacant floor tiles throughout the level at a 10% chance with traps, more weighted towards spike and confusion traps.&#13;
+- Adjusted starting inventory logic to always give items related to disabled settings (Materials, Progressive Access Keys, Character Room Key, Shrines)&#13;
+- Modified location growth to be interchangeable between per zone item checks (if greater than 0) and shop item checks (if greater than 0). If locations are still needed, then shop rows will grow regardless of their setting.&#13;
+- Supply item room item categories and associated items over to the mod from the client.&#13;
+- Fix character item requirements being tracked separately by the apworld and the mod. The client now supplies the mod all of the character item requirements.&#13;
+&#13;
+Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
+&#13;
+Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
+    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.8.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.6</id>
     <title>Ender Magnolia v0.1.6</title>
     <updated>2026-08-25T19:32:03+00:00</updated>
@@ -1528,5 +1546,58 @@ This release provides the following updates:&#13;
 - Fixed an issue where the Itemfinder was not required for hidden items regardless of the `itemfinder_required` setting&#13;
 - Fixed an issue where UT would consider hidden items and dark caves as in logic when they weren't</content>
     <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/threecrowsinatrenchcrowt/DrehmalAPWorld/releases/tag/v0.3.0-beta</id>
+    <title>Drehmal v0.3.0b0</title>
+    <updated>2026-08-25T22:13:09+00:00</updated>
+    <author>
+      <name>ThreeCrows, Deadlydiamond98</name>
+    </author>
+    <content># Drehmal Archipelago v0.3.0&#13;
+&#13;
+## Bugfixes:&#13;
+- Made tower unlock rewards thread safe&#13;
+- Now batch sends location check packets to Archipelago server&#13;
+- Implemented a more reliable fix for advancement rewards glitch&#13;
+- Prevented teleport trap's effect from sending players out of bounds&#13;
+- Fixed various typos&#13;
+- Fixed Aphelion deathlooping&#13;
+&#13;
+## Improvements:&#13;
+- Added randomized starting location&#13;
+- Two new completion goals:&#13;
+   - Added completion goal for reaching Drehmal's end credits room&#13;
+   - Added completion goal for reaching a certain Terminus unlock percentage&#13;
+- Added music randomizer option for Drehmal's custom soundtrack&#13;
+- Logic overhaul for vanilla and vanilla-like advancements&#13;
+- Moved Foundry to the Veldt for balancing purposes&#13;
+- Buffed the teleport trap substantially&#13;
+&#13;
+## Setup:&#13;
+&#13;
+### Required software:&#13;
+&#13;
+- [Drehmal APOTHEOSIS v2.2.2f for Minecraft Fabric 1.20.1](https://www.drehmal.net/downloads)&#13;
+- Additional mods:&#13;
+    - Drehmal Archipelago Mod v0.3.0&#13;
+    - [Koala Lib v1.2.14](https://modrinth.com/mod/koala_lib/version/1.2.14)&#13;
+    - [Unsafe World Random Access Detector v1.1.0](https://modrinth.com/mod/uwrad/version/1.1.0)&#13;
+- The hi_drehmal_rando datapack v0.3.0&#13;
+&#13;
+### Joining a Multiworld&#13;
+&#13;
+1. Install Drehmal v2.2.2f and its corresponding modpack (Note that Drehmal provides a custom installer, available on its downloads page, if you don't want to manually create the Fabric installation)&#13;
+2. Add the three additional mods listed above to the mods folder of Drehmal's Minecraft installation&#13;
+3. Go into the save file you're going to be playing on and replace the hi_drehmal.zip datapack with the hi_drehmal_rando.zip datapack at path [Fabric install]/saves/Drehmal APOTHEOSIS 2.2.2f/datapacks/hi_drehmal_rando.zip&#13;
+4. Launch Minecraft and enter the Drehmal world&#13;
+5. In the lobby room, before activating the first terminal, run the command /archipelago connect "[server name]:[port]" [player name]&#13;
+6. Have fun!&#13;
+&#13;
+### Rejoining an earlier game&#13;
+&#13;
+On reconnect, if your connection info hasn't changed, the mod should automatically reconnect you to the Archipelago server. Otherwise, run /archipelago disconnect and then run the connect command again with the new information.&#13;
+</content>
+    <link href="https://github.com/threecrowsinatrenchcrowt/DrehmalAPWorld/releases/tag/v0.3.0-beta"/>
   </entry>
 </feed>

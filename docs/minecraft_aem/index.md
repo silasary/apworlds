@@ -1,6 +1,6 @@
-# None
+# AEMinecraft
 
-
+Minecraft Randomizer by KuroLynx (Mod by EDGN)
 
 
 ## Downloads

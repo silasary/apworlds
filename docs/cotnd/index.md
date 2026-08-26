@@ -5,7 +5,7 @@ skeletons, dragons, and rapping moles. Descend into the crypt to defeat the Necr
 
 
 ## Downloads
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.7.2/cotnd.apworld">Latest Version (0.7.2)</a>
+- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld">Latest Version (0.8.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
