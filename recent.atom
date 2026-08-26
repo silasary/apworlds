@@ -2,297 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-25T18:18:49.232325+00:00</updated>
+  <updated>2026-08-26T00:22:59.865882+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.5</id>
-    <title>Ender Magnolia v0.1.5</title>
-    <updated>2026-08-22T14:34:08+00:00</updated>
-    <author>
-      <name>Trex</name>
-    </author>
-    <content>**Archipelago** world for **Ender Magnolia**&#13;
-&#13;
-## Update&#13;
-- Logic update&#13;
-- Option to enable NG+ AI&#13;
-- Option to enable multi skills of the same Spirit&#13;
-- Fix elevator key generating 1 more item than checks&#13;
-- Fix 3 missing upgrades in the pool&#13;
-&#13;
-## Requirements&#13;
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
-- [Ender Magnolia Randomizer](https://github.com/Trexounay/EnderMagnolia.Randomizer/releases/tag/endermagnolia-v0.1.5)&#13;
-&#13;
-## Current Features&#13;
-- 340 checks&#13;
-- 2 Goals: **Ending A** **Ending B**&#13;
-- Starting Skill option (except non breaking walls weapon)&#13;
-- Shuffle relic costs&#13;
-- Progressive Aptitudes&#13;
-- Start with heal/fast travel&#13;
-- min/max chapters&#13;
-- Central Elevator Fix option&#13;
-- Starting respite&#13;
-&#13;
-## Notes&#13;
-This is an early release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
-    <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.0</id>
-    <title>Pokemon FireRed and LeafGreen v1.1.0</title>
-    <updated>2026-08-22T16:11:38+00:00</updated>
-    <author>
-      <name>Vyneras</name>
-    </author>
-    <content>ROM CHECKSUM: `00939B09`&#13;
-&#13;
-[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.1.0/worlds/pokemon_frlg/docs/setup_en.md)&#13;
-[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.1.0/worlds/pokemon_frlg/docs/rom%20changes.md)&#13;
-&#13;
-**Game Updates**&#13;
-- Using Teleport on the field will return you to the interior of the last Pokémon Center you visited if Pokémon Centers are shuffled &#13;
-- Increased the amount of coins that you can hold to 50000&#13;
-- Added 3000 coins and 5000 coins purchase options at the Celadon Game Corner&#13;
-- Dexsanity rewards for Pokémon you catch before getting the Pokédex will now be given to you immediately upon getting the Pokédex. You no longer need to get the Pokédex rated by Oak or at a PC&#13;
-&#13;
-**Apworld Updates**&#13;
-- Converted logic to use Rule Builder (requires AP version 0.6.7 or higher)&#13;
-- Updated several region and entrance names for better clarity in the spoiler log and when using UT&#13;
-- Option groups have been added&#13;
-- New option `skip_intro`&#13;
-  - Set whether the vanilla intro sequence where you get your starter Pokémon from Oak's Lab should be skipped or not. If the intro is skipped then you will be prompted to select your starter Pokémon during Oak's initial speech&#13;
-  - This setting is forced on if Random Starting Town or any type of Entrance Randomization is on&#13;
-- Updated option `shuffle_pokemon_centers`&#13;
-  - Now includes the Player's House though your starting town's Pokémon Center entrance will never lead there&#13;
-- Updated option `mix_entrance_warp_pools`&#13;
-  - Added `Pokemon Centers` as an option&#13;
-    - Your starting town's Pokémon Center entrance is guaranteed to lead to a Pokémon Center&#13;
-  - Added `Warp Tiles` as an option&#13;
-    - Warp Tiles will only be mixed if using `full` Warp Tiles shuffle&#13;
-  - Added `Dropdowns` as an option&#13;
-    - Dropdowns will only be mixed is using `full` Dropdown shuffle and entrances/warps are decoupled&#13;
-- Updated option `prizesanity`&#13;
-  - The coin price for purchasing items at the Game Corner Prize Room will now be determined by what item it is&#13;
-- Updated option `shop_prices` and `consistent_shop_prices`&#13;
-  - Now applies to Game Corner Prize Room item purchases as well&#13;
-- Updated option `trainersanity`&#13;
-  - Split into `kanto_trainersanity` and `sevii_trainersanity` options&#13;
-- New option `item_appearance_matches_contents`&#13;
-  - Changes the color of item balls to match their contents. Green balls contain progression items, blue balls contain useful items, and red balls contain filler items. Traps will be a random color between the three&#13;
-- Removed option `modify_world_state`&#13;
-  - The options that were originally under this have been broken into individual options to allow greater control over them&#13;
-- New option `elevators_condition`&#13;
-  - Sets the conditions the Celadon Department Store and Silph Co. elevators are in. Has no logical implications unless interior warps are shuffled&#13;
-    - Open: The elevators can be used normally&#13;
-    - Locked: The elevators will require the Lift Key before they can be used&#13;
-    - Disabled: The elevators are completely unusable&#13;
-- New option `elite_four_rematch_requirement`&#13;
-  - Sets the requirement for challenging the Elite Four Rematch between badges or gyms&#13;
-- New option `cheaper_coins`&#13;
-  - Reduces the cost of buying coins from the Celadon Game Corner by 90%&#13;
-- Update option `game_option`&#13;
-  - Added new option `Encounter Mode`&#13;
-    - Random: Encounters are chosen randomly based on the encounter rates&#13;
-    - Boost: Encounters are chosen based on the encounter rates with a higher chance for Pokémon that haven't already been caught&#13;
-    - Rotate: Encounters are chosen by rotating through the encounter slots in an area (multiple slots in a row can be the same Pokémon)&#13;
-&#13;
-**Bug Fixes**&#13;
-- Fixed an issue where the Pokédex was accessible in the Safari Zone even when you didn't have it&#13;
-- Fixed an issue where items that should only be purchasable once could be purchased multiple times at the Celadon Game Corner Prize Room Shops&#13;
-- Fixed an issue where logic could expect you to board the Seagallop from the harbor side of Vermilion City and sail to the main part of the city without any tickets/passes&#13;
-&#13;
-**Known Issues**&#13;
-- The `base_stats` option does not affect Deoxys attack/defense forms&#13;
-- The Rival battle in Oak's Lab can occasionally softlock the game. Recommend saving before triggering the battle&#13;
-- Registering an evolution item and using it from the field will softlock the game</content>
-    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v10</id>
-    <title>Pokemon BW Extra Logic Plugin v1.10.0</title>
-    <updated>2026-08-22T19:19:30+00:00</updated>
-    <author>
-      <name>RadisNoir</name>
-    </author>
-    <content>**Fixes**&#13;
-* Fixed a missing connection between Route 5 and Nimbasa City&#13;
-* Fixed a generation error when Mistralton City is selected as starting town and `shuffle_badges: shuffle`&#13;
-  * Skyla will now always give the Jet Badge or the Quake Badge if `starting_town = "Mistralton City"` and `shuffle_badges: shuffle`&#13;
-&#13;
-**YAML Options List**&#13;
-* The following options need to be added to the Black and White YAML under `plugin_options`:&#13;
-```&#13;
-  plugin_options:&#13;
-    extra_logic:  # same as v8&#13;
-      randomize_starting_town: true&#13;
-      starting_town_blacklist: []  # list in README&#13;
-      add_ss_ticket: true&#13;
-      add_pass: true&#13;
-      hm_with_badges: true&#13;
-      add_rock_smash: true&#13;
-      add_rock_smash_musharna: true  # requires add_rock_smash&#13;
-      extra_cut_trees: true&#13;
-      extra_cut_trees_kyurem: true   # requires extra_cut_trees&#13;
-      move_strength_boulders: true&#13;
-      move_strength_boulders_vi_road: true   # requires move_strength_boulders&#13;
-      dark_areas: ["Wellspring Cave B1F", "Mistralton Cave", "Challengers Cave"]  # supports "_All" and "_Random", see README&#13;
-```&#13;
-&#13;
-**Important Notes**&#13;
-* The plugin needs to be installed by the host before generation. The player also needs the plugin to patch their ROM.&#13;
-* It is not possible to add the extra logic options mid-playthrough.&#13;
-&#13;
-**Backwards Compatibility**&#13;
-* This version is compatible with v0.3.37+ of the main BW APworld&#13;
-* This version is compatible with v23 of the QoL Plugin</content>
-    <link href="https://github.com/Radis7Noir/pokemon_bw_extra_logic_plugin/releases/tag/v10"/>
-  </entry>
-  <entry>
-    <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.8</id>
-    <title>Civilization V v0.10.8</title>
-    <updated>2026-08-22T21:11:31+00:00</updated>
-    <author>
-      <name>1313e</name>
-    </author>
-    <content>**Fixes**:&#13;
-- Correctly mark Dromon as a Trireme replacement.&#13;
-&#13;
-**Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.10.7...v0.10.8</content>
-    <link href="https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.2</id>
-    <title>Mega Man Zero 3 v0.3.2</title>
-    <updated>2026-08-22T21:31:31+00:00</updated>
-    <author>
-      <name>brodieberger</name>
-    </author>
-    <content>Implemented Extra Lives as location checks. Some bug fixes.&#13;
-&#13;
-# Features&#13;
-- Static extra life pickups found in stages are now location checks. &#13;
-  - They have an animation placed around them to let you know they haven't been checked yet.&#13;
-  - This is forced on for right now but will soon be an option (pickup-sanity) later in the future, once all other static pickups have been implemented.&#13;
-&#13;
-# Bug Fixes&#13;
-- Fixed error regarding using certain trackers. Now all trackers should know about weapon requirements.&#13;
-- Updated wording for some options to be clearer.</content>
-    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/KuroLynx/AEM-Archipelago-Minecraft/releases/tag/v0.5.0</id>
-    <title>minecraft_aem v0.5.0</title>
-    <updated>2026-08-22T22:00:25+00:00</updated>
-    <author>
-      <name>KuroLynx</name>
-    </author>
-    <content># AEMinecraft v0.5.0&#13;
-&#13;
-The big one: **you can play with friends now**, and your world no longer stops being playable&#13;
-when Archipelago isn't reachable.&#13;
-&#13;
-Grab both files below — the mod `.jar` and the `.apworld` — from this same release. They have to&#13;
-match.&#13;
-&#13;
----&#13;
-&#13;
-## Play with friends&#13;
-&#13;
-A Minecraft world is one Archipelago slot, and now a whole group can play that slot together, on&#13;
-LAN or on a dedicated server.&#13;
-&#13;
-- **Everyone's progress counts as the run's progress.** Advancements are shared — including&#13;
-  half-finished ones, so your thirty biomes and your friend's ten add up to Adventuring Time.&#13;
-  A check is sent once, by whoever gets there first.&#13;
-- **You still get your own rewards.** Everyone completes the shared advancement for real, so&#13;
-  everyone opens their own BACAP reward chest and gets their own trophy. Filler buffs go to every&#13;
-  player too, including the ones that arrived while you were logged off.&#13;
-- **Traps hit the people who are actually there**, and are never banked up to dump on whoever logs&#13;
-  in next.&#13;
-- **DeathLink is proportionate.** A death arriving from another world takes one random player, not&#13;
-  the whole server. Operators can switch it off for the run with `/aem deathlink off`.&#13;
-- Log in late, or first after a restart, and you're caught up on everything the run has done.&#13;
-&#13;
-Running a dedicated server takes one config file. Setup guide: **docs/setup_en.md**, "Playing With&#13;
-Friends".&#13;
-&#13;
-## Keep playing when Archipelago isn't there&#13;
-&#13;
-Once your world has connected **once**, it remembers what it needs. After that:&#13;
-&#13;
-- The room being down — or dropping mid-session — doesn't end your run. You keep playing.&#13;
-- Everything the world decides for itself keeps working exactly as strictly as before: locks,&#13;
-  advancements, the tracker, the in-logic indicator.&#13;
-- Checks you earn while offline are saved in the world and sent the moment you're back. They&#13;
-  survive restarts and crashes.&#13;
-- What waits for the link is what genuinely needs it: items other worlds send you, and Archipelago&#13;
-  chat.&#13;
-&#13;
-`/aem status` tells you where you stand; `/aem reconnect` gets you back on and flushes what you&#13;
-earned.&#13;
-&#13;
-Good for async games, flaky connections, and playing on a plane.&#13;
-&#13;
-## ⚠️ The game is now called "AEMinecraft"&#13;
-&#13;
-It used to be `Minecraft [AEM]`. Before you play v0.5.0:&#13;
-&#13;
-1. **Update the mod jar and the apworld together.** An older jar can't join a v0.5.0 room — it&#13;
-   still introduces itself by the old name.&#13;
-2. **Update your YAML**: the `game:` line and the option-block heading both become `AEMinecraft`.&#13;
-   The `template.yaml` attached to this release is already correct.&#13;
-&#13;
-Seeds you generated with an older apworld need the older mod, so finish those runs before you&#13;
-upgrade.&#13;
-&#13;
-## Fixes you'll notice&#13;
-&#13;
-- **Traps can hurt you; they can't rob you.** No more losing your inventory or waking up to your&#13;
-  base rearranged. They also space themselves out and don't all fire at once when you reconnect.&#13;
-- **The finder bar points at what's near you**, not near world spawn, and comes back after a&#13;
-  reconnect instead of disappearing for good.&#13;
-- **Chat behaves.** Messages you type are no longer swallowed as Archipelago commands.&#13;
-- **The randomizer understands advancements much better.** Requirements that used to read as free&#13;
-  — enchantments, damage types, mob variants and mounts, where a block is placed, what a container&#13;
-  holds, brewing, BACAP's potion goals — are now understood properly. In practice: fewer checks&#13;
-  that look reachable and aren't, and fewer that let you skip past a gate you were meant to open.&#13;
-- **Spears** are gated by Knowledge: Spear Handling, as they always should have been.&#13;
-- A **raid** won't start until every raid mob is unlocked, and your Bad Omen is kept rather than&#13;
-  quietly spent.&#13;
-- Locked mobs no longer take up the mob cap, so the mobs you *can* meet actually spawn.&#13;
-- New: **`/aem structures`** lists structures held back by locks, and can recover them.&#13;
-&#13;
-## Requirements&#13;
-&#13;
-Minecraft **26.1.2**, Fabric Loader **0.19.2+**, Fabric API, Archipelago **0.6.7+**.&#13;
-BACAP `1.20.3` is optional.&#13;
-&#13;
-## Something look wrong?&#13;
-&#13;
-Multiplayer and offline play are new, and a couple of the lock fixes are freshly baked — if you see&#13;
-a locked mob riding another, a raid misbehaving, or anything odd after a reconnect, please open an&#13;
-issue with your YAML and what you were doing.&#13;
-</content>
-    <link href="https://github.com/KuroLynx/AEM-Archipelago-Minecraft/releases/tag/v0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.9</id>
-    <title>Civilization V v0.10.9</title>
-    <updated>2026-08-22T22:22:19+00:00</updated>
-    <author>
-      <name>1313e</name>
-    </author>
-    <content>**Fixes**:&#13;
-- Make Dromon a naval melee combat class.&#13;
-&#13;
-**Full Changelog**: https://github.com/1313e/Civ-V-AP-World/compare/v0.10.8...v0.10.9</content>
-    <link href="https://github.com/1313e/Civ-V-AP-World/releases/tag/v0.10.9"/>
-  </entry>
   <entry>
     <id>https://github.com/narramoment/Archipelago/releases/tag/0.2.2</id>
     <title>Jak II v0.2.2</title>
@@ -1649,5 +1363,170 @@ Old **1.0.0** rooms keep working. Hosts generating new seeds should use this apw
     </author>
     <content>Fixed beastmen progressive buildings</content>
     <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.18"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.3</id>
+    <title>Mario and Luigi Dream Team v0.1.3</title>
+    <updated>2026-08-25T18:09:49+00:00</updated>
+    <author>
+      <name>Dimitri Bee</name>
+    </author>
+    <content>Hello, everyone! In probably the shortest turnaround I've ever had for an update, v0.1.3 is out!&#13;
+In this update, I:&#13;
+- Added 2 new starting locations&#13;
+- Separated Luiginary Works into 9 new abilities, each based on individual Luiginary works&#13;
+- Merged my client with @Nepply's official hardware client&#13;
+- Fixed a bug where multiple AP Attack Pieces in the same shop would cause it to bug out&#13;
+- Made the EXP multiplier even stronger&#13;
+Hope you enjoy, and have a great day!</content>
+    <link href="https://github.com/MnL-Modding/Piillomizer/releases/tag/v0.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.6</id>
+    <title>Ender Magnolia v0.1.6</title>
+    <updated>2026-08-25T19:32:03+00:00</updated>
+    <author>
+      <name>Trex</name>
+    </author>
+    <content>**Archipelago** world for **Ender Magnolia**&#13;
+&#13;
+## Update&#13;
+- Logic update&#13;
+- Option to randomize entrances&#13;
+- Option to randomize enemies&#13;
+&#13;
+## Requirements&#13;
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
+- [Ender Magnolia Randomizer](https://github.com/Trexounay/EnderMagnolia.Randomizer/releases/tag/endermagnolia-v0.1.6)&#13;
+&#13;
+## Current Features&#13;
+- 340 checks&#13;
+- 2 Goals: **Ending A** **Ending B**&#13;
+- Starting Skill option (except non breaking walls weapon)&#13;
+- Shuffle relic costs&#13;
+- Progressive Aptitudes&#13;
+- Start with heal/fast travel&#13;
+- min/max chapters&#13;
+- Central Elevator Fix option&#13;
+- Starting respite&#13;
+&#13;
+## Notes&#13;
+This is an early release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
+    <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.0.1</id>
+    <title>Mina The Hollower v1.0.0r2</title>
+    <updated>2026-08-25T19:34:43+00:00</updated>
+    <author>
+      <name>FyreDay, Axertin, ZXavier</name>
+    </author>
+    <content>Features:&#13;
+- Add requirement for at least attack 3 and defense 3 for all boss fights&#13;
+- Add Ossex bike sewer map&#13;
+&#13;
+Fixes:&#13;
+&#13;
+- Fix MM image&#13;
+- Fix Armond Fight logic&#13;
+- Fix SB and NB connection,&#13;
+- Update Pinky map, move Pinky locations&#13;
+- Fix Ossex West Wall logic</content>
+    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.3</id>
+    <title>Factorio: Space Age v3.0.3</title>
+    <updated>2026-08-25T19:44:35+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 3.0.3&#13;
+&#13;
+* Fix apworld being completely broken.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/fogmike/Archipelago_ManicMiners/releases/tag/v1.5.1</id>
+    <title>Manic Miners v1.5.1</title>
+    <updated>2026-08-25T20:05:05+00:00</updated>
+    <author>
+      <name>fogmike</name>
+    </author>
+    <content>Quick fix to address a specific bug interaction with Chief's Favourite Truck and LRRR - Rubble Trouble</content>
+    <link href="https://github.com/fogmike/Archipelago_ManicMiners/releases/tag/v1.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.0</id>
+    <title>Cursed Words v0.5.0</title>
+    <updated>2026-08-25T21:58:30+00:00</updated>
+    <author>
+      <name>JammyGeeza</name>
+    </author>
+    <content>## Information&#13;
+This archipelago implementation is in **early development** and is in public pre-release for testing, so may not be complete and/or may contain bugs that heavily disrupt the experience. It is not advised to include this in large multiworlds at this time, so only do so at your own risk and inform your host beforehand.&#13;
+&#13;
+## Setup Guide&#13;
+Please visit the [Setup Guide](https://github.com/JammyGeeza/CursedWords-Archipelago#setup-guide) for instructions on how to install the mod client.&#13;
+&#13;
+## Issue / Bug Reporting&#13;
+If you experience issues that are not already on the [known issues list](https://github.com/JammyGeeza/CursedWords-Archipelago/issues/views/12865), please raise a new issue or post in the [Cursed Words Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1499176806962692196)&#13;
+&#13;
+## Release Notes&#13;
+This release provides the following updates:&#13;
+### APWorld&#13;
+### Updates&#13;
+- Re-worked Sticker / Stamp requirements for Character Stage access rules&#13;
+  - Characters require a 5-Sticker and 5-Stamp Synergy with are treated as `progression` and are guaranteed in the item pool&#13;
+  - Players can customise the synergies with YAML options which overrides the preset synergies&#13;
+  - Access rules require XX% of both Stickers and Stamps Synergies for stage progression&#13;
+  - `guaranteed_stickers` and `guaranteed_stamps` removed as a consequence of this new functionality&#13;
+- Added locations for `Clear Boss / Encounter with X Grids Unused`&#13;
+- Added `Pinsanity` locations and YAML option&#13;
+- Added two Trap items `Force Grid Re-roll` and `Lose Money` with Trap Percentage and Weighting YAML options&#13;
+- Added Filler Weighting YAML options&#13;
+- Added YAML option to set maximum `Money Earned` locations&#13;
+- Added YAML option to set maximum `Word Length` locations&#13;
+- Added YAML option to set maximum `Word Score` locations&#13;
+- General location name re-wordings for better grouping and clarity&#13;
+- General YAML option description re-wordings for better clarity&#13;
+- Reduced starting 'common' Stickers / Stamps from 12 to 10&#13;
+### Fixes&#13;
+- Fixed options template generation issue&#13;
+- Updated `Shopsanity` access rule logic to no longer be gated by Stage 2&#13;
+### Client&#13;
+### Updates&#13;
+- Updated Location / Item mappings to support additions and changes in the APWorld&#13;
+- Save Slots in the menu now display the last known Slot Name and Locations Completed count&#13;
+### Fixes&#13;
+- Fixes an issue causing `Buy a Consumable Tile` location not checking&#13;
+- Fixes an issue causing some `Tilesanity` checks to be unreachable&#13;
+- Fixes an issue causing restocking the shop to be very slow when `Shopsanity` is enabled</content>
+    <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.1</id>
+    <title>Pokemon FireRed and LeafGreen v1.1.1</title>
+    <updated>2026-08-25T21:59:01+00:00</updated>
+    <author>
+      <name>Vyneras</name>
+    </author>
+    <content>ROM CHECKSUM: `00939B09`&#13;
+&#13;
+[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.1.1/worlds/pokemon_frlg/docs/setup_en.md)&#13;
+[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.1.1/worlds/pokemon_frlg/docs/rom%20changes.md)&#13;
+&#13;
+**Bug Fixes**&#13;
+- Fixed an issue where the Itemfinder was not required for hidden items regardless of the `itemfinder_required` setting&#13;
+- Fixed an issue where UT would consider hidden items and dark caves as in logic when they weren't</content>
+    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.1"/>
   </entry>
 </feed>

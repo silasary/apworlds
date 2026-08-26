@@ -121,6 +121,12 @@ Shows specific game information about what non-level unlocks you have or haven't
 
 If playing with Chief's Favourite Truck enabled, this allows you to disable it temporarily if it's causing more hindrance than help (possible in certain monster- or lava-heavy levels). Run it again to re-enable. Must be run each time the client is restarted, i.e. truck is enabled by default at the start of each session. 
 
+## Other notes and recommendations
+
+An in-game timer can be turned on in the game's Gameplay Settings, to help track Par Times. 
+
+[Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) is a useful Archipelago tool for checking what AP Locations are currently in-logic. Additionally you can use the `/explain` command to view underlying logic, like `/explain Can Build Support Station`. 
+
 ## Under the hood
 
 The Archipelago integration works in two main ways. 
