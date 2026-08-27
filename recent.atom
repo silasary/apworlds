@@ -2,246 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-27T15:54:05.727714+00:00</updated>
+  <updated>2026-08-27T21:23:50.993983+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.9.0</id>
-    <title>Divinity Original Sin 2 v0.9.0</title>
-    <updated>2026-08-24T21:34:06+00:00</updated>
-    <author>
-      <name>Intaiachi</name>
-    </author>
-    <author>
-      <name>chaotic</name>
-    </author>
-    <author>
-      <name>JeyKey09</name>
-    </author>
-    <content>New:&#13;
-- The journal now contains quests that match every non-containersanity check. These are split into two categories in the journal, "Archipelago Quests" and "Archipelago Kills", which have all the checks that match their namesake. These quests will be completed upon sending the check they represent and will persist through saves, so they will always be accurate to what you have and have not sent yet.&#13;
-  - There is a known bug where completing a quest will have it not be removed from the active part of the journal and its archive will have no description. Refreshing the journal by setting any quest as active/inactive, clicking on the "show on map" button, or saving and loading will correct this. It is purely visual.&#13;
-&#13;
-Changes/Bugfixes:&#13;
-- The quest Invaders has been removed, as killing the Sallow Man doesn't send the check properly.&#13;
-- Saeva the Many-faced, Sahun Woundbinder, Urrha the Snake Charmer, and Kajun Frozenheart (Karon's ads) have been removed as they send their check preemptively since they technically die when Arx initializes.&#13;
-- You can no longer receive items in the character creator and lose them.&#13;
-- Loading a new game or other playthrough that is not the Archipelago one will now sync your items immediately instead of after getting a check. Should be smoother if you have to start a new game mid Archipelago.&#13;
-- The about page in the GitHub has been updated.&#13;
-&#13;
-About [here](https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/en_Divinty%20Original%20Sin%202.md)&#13;
-Setup Guide [here](https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/steup_en.md)&#13;
-&#13;
-DOS2 mod pak file [Github](https://github.com/Intaiachi/DOS2-Archipelago-Mod/releases), [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354)</content>
-    <link href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.9.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.4.0</id>
-    <title>The Legend of Zelda: A Link to the Past v1.4.0</title>
-    <updated>2026-08-24T22:27:12+00:00</updated>
-    <author>
-      <name>aurabot</name>
-    </author>
-    <content>### New Options&#13;
-&#13;
-* Bombless starts. Two bomb capacity upgrades are added to the item pool and unlock the ability to use bombs&#13;
-* Potsanity&#13;
-  * Any combination of pots with keys, pots in caves, and pots in dungeons can be checks&#13;
-  * Unchecked pots are a different color, and dungeon counters are forced on with dungeon pots randomized&#13;
-  * Due to technical limits, a max of 256 multiworld items can be found under pots&#13;
-* Enemy Drop Shuffle&#13;
-  * Enemies with keys, or all enemies in caves and dungeons, can drop a check when killed&#13;
-  * With all enemies enabled:&#13;
-    * Dungeon counters are forced on&#13;
-    * Link starts with a sword&#13;
-    * A blue square appears in the top-left corner if there is an enemy to kill on the current supertile (usually the current or adjacent room)&#13;
-    * Enemies which do not drop items, cannot be killed, or infinitely respawn, are not checks&#13;
-* Local Fill Percent forces a given percentage of filler items from pots/enemy drops into your own world&#13;
-&#13;
-### Other changes&#13;
-* The maximum number of Triforce Pieces has been increased to 850&#13;
-* Key Drop Shuffle is now redundant and has been hidden from the yaml template and option creator. If enabled, pots and enemies that drop keys are shuffled, in addition to your pots and enemy drop settings</content>
-    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.4.4-alpha</id>
-    <title>New Super Mario Bros. DS v0.4.4a0</title>
-    <updated>2026-08-24T23:57:06+00:00</updated>
-    <author>
-      <name>Lemix028</name>
-    </author>
-    <content>This update includes a major overhaul of the game logic. I rebuilt the world logic and added several options that let you control which routes may be required for progression.&#13;
-&#13;
-The logic is much more complete now, but since this is still an alpha, it may contain incorrect or missing requirements. If you find a location that is incorrectly in or out of logic, please report it with as much information as possible.&#13;
-&#13;
-### Added&#13;
-&#13;
-* Added logic options for:&#13;
-  * Secret Exit shortcuts within a world&#13;
-  * Secret Exit world unlocks&#13;
-  * Warp Cannon world routes&#13;
- _Disabled route types can still be used, but the generator will not require them for progression_&#13;
-* Added an option to prevent progression items from appearing at advanced or difficult locations&#13;
-* Added nine Castle boss defeats as separate Archipelago locations&#13;
-* Added a minimum compatible emulator version (BizHawk 2.11.1)&#13;
-* Added PopTracker view synchronization (for the upcoming PopTracker pack)&#13;
-&#13;
-### Changed&#13;
-&#13;
-* Rebuilt the world logic with stage-by-stage dependencies for levels, Secret Exits, Toad Houses, Star Coin Gates, Towers, and Castles&#13;
-* Updated the World Tour and Completionist goals to use the new boss locations&#13;
-* Added Power-Up Permit requirements to all affected checks&#13;
-* Made the incompatible emulator warning much harder to overlook&#13;
-&#13;
-### Fixed&#13;
-&#13;
-* Fixed DeathLink triggering when returning to the overworld&#13;
-* Fixed Star Coin Signs being purchasable without the required item by navigating the hidden UI&#13;
-* Fixed secondary paths to the World 4 and World 7 Towers unlocking without the required item&#13;
-* Fixed scrolling not working with the Horizontal and Hybrid screen layouts&#13;
-* Fixed the Kivy client freezing</content>
-    <link href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.4.4-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TwinklePillar/Spark3-Archipelago/releases/tag/v0.11.3-beta</id>
-    <title>Spark the Electric Jester 3 v0.11.3b0</title>
-    <updated>2026-08-25T00:15:00+00:00</updated>
-    <author>
-      <name>TwinklePillar</name>
-    </author>
-    <content># Changelog&#13;
-- Added an option to restore energy when resetting to checkpoint&#13;
-- Fix several freezes when interacting with Archipelago&#13;
-- Fix trap link applying when receiving a trap item&#13;
-- Fix gravity trap not applying&#13;
-- Fix death link message being blank when no cause was sent&#13;
-- Fix logic but in Castela Blanca&#13;
-- Fix Floresta Blanca score medals being in logic without Combat&#13;
-- The database has been reorganized and renamed&#13;
-  - Split the options into multiple tabs&#13;
-  - Added settings for the appearance of the tracker arrow&#13;
-  - Added several options regarding death link&#13;
-  - Goal progress can be viewed in the database&#13;
-- The game now properly disconnects from Archipelago&#13;
-- The shop's functionality has been removed, it is now exclusively used for archipelago&#13;
-- Renamed the level unlock items&#13;
-- Added an option to randomize car and copter&#13;
-- Added Knockback Link&#13;
-&#13;
-***Known Issue:*** You may need to wait to receive all items upon connect.&#13;
-***Known Issue:*** Stuttering when Knockback Link is enabled and you take damage&#13;
-&#13;
-Compatible with all v0.11 worlds</content>
-    <link href="https://github.com/TwinklePillar/Spark3-Archipelago/releases/tag/v0.11.3-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/benny-dreamly/Manuals/releases/tag/GA-6.0.0</id>
-    <title>Manual_GlassAnimals_bennydreamly v6.0.0</title>
-    <updated>2026-08-25T02:18:21+00:00</updated>
-    <author>
-      <name>benny-dreamly</name>
-    </author>
-    <content>This release updates the manual to the latest stable release of the base manual apworld.&#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Manuals/compare/GA-5.0.0...GA-6.0.0</content>
-    <link href="https://github.com/benny-dreamly/Manuals/releases/tag/GA-6.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.5</id>
-    <title>One Must Fall: 2097 v0.0.5</title>
-    <updated>2026-08-25T04:16:51+00:00</updated>
-    <author>
-      <name>stubob</name>
-    </author>
-    <content># Archipelago OpenOMF  v0.0.5&#13;
-&#13;
-&gt; OMF:2097 was released as freeware by Epic MegaGames in 1999. The game data is freely and legally downloadable.&#13;
-&#13;
----&#13;
-&#13;
-### What's New&#13;
-&#13;
-#### Fixes (Multiworld)&#13;
-&#13;
-- Fixed shop purchases not being remembered when the location's item belongs to another game in the multiworld. Shop state was previously rebuilt from `ReceivedItems`, which only fires for items sent back to *us* — a location whose item goes to another player never echoes back, so the shop showed it as never bought and charged you for it again every time you reopened the mechlab. Shop state is now derived from the server's `checked_locations` instead, which reflects every location *we've* checked regardless of who receives the item&#13;
-- As part of the same fix, shop/training state now also picks up: locations found while disconnected (synced on the next connect), server-side auto-releases (e.g. another game completing and releasing all its remaining checks), and checks made by another client connected to the same slot in co-op&#13;
-- Fixed the shop being able to skip past a still-unbought level if a later level in the same stat got checked out of order (same-slot co-op, a release) — it now keeps offering the actual next unbought level, and instantly recognizes the skipped one as owned once you reach it&#13;
-- Fixed the shop/training price label staying one step behind after a purchase until you moved focus away and back — it now updates immediately&#13;
----&#13;
-&#13;
-### Links&#13;
-&#13;
-- [Setup guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/setup_en.md)&#13;
-- [Game guide](https://github.com/stubobis1/archipelago-openomf-apworld/blob/master/worlds/openomf/docs/en_One%20Must%20Fall%202097.md)&#13;
-- [Parent repo](https://github.com/stubobis1/archipelago-openomf)&#13;
-- [Client repo](https://github.com/stubobis1/openomf)&#13;
-- [AP world repo](https://github.com/stubobis1/archipelago-openomf-apworld)&#13;
-- [Issues](https://github.com/stubobis1/archipelago-openomf/issues)&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/stubobis1/archipelago-openomf/compare/omf-0.0.4...omf-0.0.5</content>
-    <link href="https://github.com/stubobis1/archipelago-openomf/releases/tag/omf-0.0.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.4.1</id>
-    <title>The Legend of Zelda: A Link to the Past v1.4.1</title>
-    <updated>2026-08-25T05:54:13+00:00</updated>
-    <author>
-      <name>aurabot</name>
-    </author>
-    <content>Underworld enemy drop shuffle no longer forces a starting sword.</content>
-    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zane31415/APVerticalDropHeroesHD/releases/tag/v0.2.0</id>
-    <title>Vertical Drop Heroes HD v0.2.0</title>
-    <updated>2026-08-25T07:25:22+00:00</updated>
-    <author>
-      <name>Broney</name>
-    </author>
-    <content>Improved the release packaging.&#13;
-Added shrine locations.&#13;
-Added traps.&#13;
-Added hard level gating logic.&#13;
-</content>
-    <link href="https://github.com/zane31415/APVerticalDropHeroesHD/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.7-alpha</id>
-    <title>The Legend of Zelda - Phantom Hourglass v0.9.7a0</title>
-    <updated>2026-08-25T07:28:37+00:00</updated>
-    <author>
-      <name>carrotinator</name>
-    </author>
-    <author>
-      <name>Tanker50207</name>
-    </author>
-    <author>
-      <name>palex00</name>
-    </author>
-    <author>
-      <name>CelestialKitsune</name>
-    </author>
-    <author>
-      <name>DayKat</name>
-    </author>
-    <author>
-      <name>1313e</name>
-    </author>
-    <author>
-      <name>Catzador</name>
-    </author>
-    <content>Compatible with seeds generated in v9.x&#13;
-[Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)&#13;
-&#13;
-- Main read list is reloaded after cutscenes, fixing Bellum goal not sending.&#13;
-- Fixed unnecessary delay resets from gift_addr locations that are not address reads&#13;
-- Fixed client crash on sending too many progressive items&#13;
-- `exclude_locations` in yaml is taken into account when calculating how many filler items to make</content>
-    <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.9.7-alpha"/>
-  </entry>
   <entry>
     <id>https://github.com/furret78/ArchipelagoTouhou/releases/tag/0.4.52</id>
     <title>Black Market of Bulletphilia ~ 100th Black Market v0.4.52</title>
@@ -1295,6 +1060,25 @@ Thanks to Sol for their help with tips on getting Memory Override to work, it ma
     <link href="https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.0"/>
   </entry>
   <entry>
+    <id>https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.1</id>
+    <title>Pikmin 2 v0.8.1</title>
+    <updated>2026-08-27T02:57:06+00:00</updated>
+    <author>
+      <name>chpas</name>
+    </author>
+    <content>**NOTE: This mod is still in the testing phase. Play at your own risk.**&#13;
+&#13;
+## Changelog&#13;
+- Fix a bug that caused the client to silently crash when collecting Louie&#13;
+## Known Bugs&#13;
+- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.&#13;
+- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.&#13;
+- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear&#13;
+- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.&#13;
+- Sometimes collecting Louie does not trigger the goal</content>
+    <link href="https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.3</id>
     <title>Phantasy Star II v0.1.3</title>
     <updated>2026-08-27T08:27:22+00:00</updated>
@@ -1404,7 +1188,7 @@ unobtainable.
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `ae24891e2b526806795652d76452db141b21885e`.
+Built from `77fd2cbc3ee5c9f25618441940e46d4a01fe71dd`.
 
 ## Downloads
 
@@ -1413,6 +1197,9 @@ Built from `ae24891e2b526806795652d76452db141b21885e`.
 
 ## Since v1.10.0
 
+- feat(launcher): keep only the robot health scale
+- chore(beads): note the lever instrumentation on apw-d7u
+- chore(beads): close apw-d7u, the balancing levers are fixed and measured
 - docs(plugin): record why a Cash Bundle keeps the Scout heal (apw-jo7)
 - chore(beads): record the balancing and teleporter work
 - feat(plugin): restore the wave after a restart, and hide the empty buff window
@@ -1460,5 +1247,222 @@ Built from `ae24891e2b526806795652d76452db141b21885e`.
 - feat(community): add portable MvM mission support
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.0</id>
+    <title>NSMBW v0.3.0</title>
+    <updated>2026-08-27T16:05:54+00:00</updated>
+    <author>
+      <name>Miiroun</name>
+    </author>
+    <content># Warning Experimental update&#13;
+Game may crash. If it does, please report it immediately.&#13;
+&#13;
+&#13;
+# Features&#13;
+- Level shuffle&#13;
+- Music shuffle&#13;
+- Many options and settings&#13;
+  - /debug is most important, this dumps all relevant debug info&#13;
+- Added proper logic to inventory powerups&#13;
+- Added support for local co-op&#13;
+- Removed need for loading / saving save states : requires riivolution enabled&#13;
+- Many minor quality of life improvements.&#13;
+&#13;
+&#13;
+# Bugfixes&#13;
+- Deathlink groups no longer causes load issues&#13;
+- Deathlink amnesty exist&#13;
+- Removed problematic hint movies&#13;
+- Minor logic fixes&#13;
+&#13;
+&#13;
+# Breaking changes&#13;
+You can now select to use (optionally) use a riivolution patch. This is required if you want level shuffle and music shuffle enabled. It also provides simple qol patches and graphic changes.&#13;
+Recommended to delete settings in host.yaml.&#13;
+Also recommended to regenerate your option yaml since many options have changed names.&#13;
+&#13;
+&#13;
+# Links&#13;
+[Download](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.0)&#13;
+[Setup Guide](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md)</content>
+    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.3</id>
+    <title>Stardew Valley v8.1.2r2</title>
+    <updated>2026-08-27T17:10:29+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>- Fixed an issue where sometimes traps would wait to only execute after a map transition&#13;
+- Added an extra effect to the Back To School Trap&#13;
+- Allow the player to declare bankruptcy</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.8</id>
+    <title>Rabbit and Steel v0.3.8</title>
+    <updated>2026-08-27T17:13:07+00:00</updated>
+    <author>
+      <name>tjwombo</name>
+    </author>
+    <content>Fixed Atelier Aurum chest typo&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.3.8](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.7...v0.3.8) - 2026-08-27&#13;
+&#13;
+### Commits&#13;
+&#13;
+- fixed typo [`be300d4`](https://github.com/tjwombo/RNSArchipelago/commit/be300d457c21c93c358ba04e0e436e8668a6ffa1)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.4</id>
+    <title>Factorio: Space Age v3.0.4</title>
+    <updated>2026-08-27T17:50:36+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 3.0.4&#13;
+&#13;
+* Remove map exchange string version locking with Factorio 2.1.{14,15,16} etc. It's probably going to be fine to just require `&gt;= 2.1.14`.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.8</id>
+    <title>Dead Cells v0.1.8</title>
+    <updated>2026-08-27T18:27:51+00:00</updated>
+    <author>
+      <name>Max_lamenace572</name>
+    </author>
+    <author>
+      <name>OnlyLeafeon</name>
+    </author>
+    <author>
+      <name>Rayze</name>
+    </author>
+    <content>New Features:&#13;
+- New biome warp system&#13;
+  - In the tracker, when selecting a biome, a new button is present, allowing you to warp there&#13;
+  - To warp to a biome, you need to have entered it at least once&#13;
+  - You can only warp to biomes after your current one. This is determined by their world depth, which can be seen in the world map.&#13;
+  - When selecting a biome to warp into, a button for canceling the warp appears.&#13;
+  - The warp will be effective when exiting the menu&#13;
+&#13;
+Gameplay Changes:&#13;
+- Restarting now also gives an aspect check&#13;
+- When selecting a 5 BSC goal, you can now only win by defeating the secret boss&#13;
+&#13;
+Quality of Life:&#13;
+- Improved the in-game tracker&#13;
+  - The missing requirements to access a biome are now shown on the biome image&#13;
+    - The biome unlock item is represented by the lock in the top left corner&#13;
+    - Item icons mean you should receive it, biome icons mean it is required to be accessible, and boss icons require you to have killed the boss&#13;
+    - Requirements on the same line have an AND operator, an OR is applied between lines&#13;
+  - Accessible biomes are now shown in the world map (thanks StudMuffin for the idea)&#13;
+  - Added logic to the item tracker to show which items are accessible&#13;
+    - You can select an item to show a pop-up with information on the item&#13;
+      - The minimum number of BSC possible for this item&#13;
+      - The mob dropping the blueprint, if any&#13;
+      - Special requirements, if any, using the same display logic as biomes&#13;
+      - A description for some items obtained in a specific way&#13;
+&#13;
+Bug Fixes:&#13;
+- Starter items or items unlocked by default not being synced across saves after unlocking them at the Collector&#13;
+- A crash caused by some blueprints disappearing, such as the Half-Life ones and the Golden Outfits on DCCM 13.x&#13;
+- Gems replacing some picked blueprints not spawning&#13;
+- Items not being given and a rare minimap crash after quitting an existing save and then creating a new save on a new slot for another AP server without quitting the game&#13;
+- The Time Keeper’s portal for the glitched run&#13;
+- Giant cutscene playing when unlocking the King Outfit&#13;
+- King disappearing after unlocking the King Outfit, locking the Homunculus Rune and Symmetrical Lance locations&#13;
+- Interacting with the training room door without having the key, which allowed players to pass through the enter/exit door without checking any requirements&#13;
+- The selection speed of controllers in the mod UI, changing based on the monitor refresh rate. Its speed is the same as before for 60 fps&#13;
+- Improved responsiveness for UI text being smaller than expected&#13;
+- Improved responsiveness for scrollers having a smaller mask on resolutions other than 16:9&#13;
+&#13;
+APWorld Changes:&#13;
+- Changed Luchador's Outfit rule, being accessible from the Bank&#13;
+- Added a missing Bank requirement for the Guillain Head&#13;
+- Added 3 missing Random Starter equipment rules for Blue Hole&#13;
+- Removed the Lizard Outfit from the Undying Shores logic&#13;
+- Added Swarm rule for Biter Head&#13;
+- Added 2 missing possible locations (Queen and Dracula) for BSC 1 to 4&#13;
+- Added rules for locations at 5 BSC, such as Homunculus Rune for King Outfit, or Spider Rune for Sonic Carbine and for Observatory&#13;
+&#13;
+Rayze's Changes:&#13;
+- Implemented "start_inventory_from_pool"&#13;
+- Added proper Option Groups&#13;
+- Outfits are now all filler unless they're expressly needed for something&#13;
+- Small rework to how generated filler is handled due to above ^&#13;
+- Scrolls now have the "Useful" tag&#13;
+- Derelict Distillery (and the Cavern Key location) now don't generate on 0 BSC seeds, as they are "Post-Goal Locations"&#13;
+- Marked a handful of fitting "Progression" items with the new "Deprioritized" and "Skip Balancing" tags&#13;
+- Removed the now-unnecessary "Problem Heads" location group&#13;
+&#13;
+Compatible with APWorld 0.1.7 and newer</content>
+    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zane31415/APVerticalDropHeroesHD/releases/tag/v0.3.0</id>
+    <title>Vertical Drop Heroes HD v0.3.0</title>
+    <updated>2026-08-27T18:44:26+00:00</updated>
+    <author>
+      <name>Broney</name>
+    </author>
+    <content>* Fixed Deathlink text to reference slotname instead of character name&#13;
+* Fixed a bug where the second merchant in a level would show the wrong display text&#13;
+* Added a "end this run early" option in the pause menu to allow exiting a run without sending deathlink&#13;
+* Fixed a bug where gold would carry over between slots&#13;
+* Added instrumentation to catch logs for future issues (ap_debug.log)</content>
+    <link href="https://github.com/zane31415/APVerticalDropHeroesHD/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NyanMC/ap-celesteclassic/releases/tag/0.2.0</id>
+    <title>Celeste Classic v0.2.0</title>
+    <updated>2026-08-27T19:19:25+00:00</updated>
+    <author>
+      <name>ChromaNyan</name>
+    </author>
+    <content>added a new "reasonable skips" logic difficulty&#13;
+note: the client didn't change from last release, other than the version number</content>
+    <link href="https://github.com/NyanMC/ap-celesteclassic/releases/tag/0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Happyhappyism/Sonic-Battle-Archipelago/releases/tag/sonic_battle_v0.1.5</id>
+    <title>Sonic Battle v0.1.5</title>
+    <updated>2026-08-27T19:52:22+00:00</updated>
+    <author>
+      <name>Happyhappyism</name>
+    </author>
+    <content># Sonic Battle Archipelago v0.1.5&#13;
+## Fixes&#13;
+- Fixed an error with the game patching the character select routine&#13;
+- Fixed an error where the game wouldn't generate with invalid randomized color values</content>
+    <link href="https://github.com/Happyhappyism/Sonic-Battle-Archipelago/releases/tag/sonic_battle_v0.1.5"/>
   </entry>
 </feed>

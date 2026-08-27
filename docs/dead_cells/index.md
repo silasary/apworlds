@@ -6,7 +6,7 @@ across biomes, with full DLC support and Boss Cell difficulty scaling.
 
 
 ## Downloads
-- <a href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.7/dead_cells.apworld">Latest Version (0.1.7)</a>
+- <a href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.8/dead_cells.apworld">Latest Version (0.1.8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -3,15 +3,21 @@
     "Miiroun"
   ],
   "description": "NSMBW world\ncopy past from ap-quest",
-  "flags": [],
+  "flags": [
+    "supports_deathlink"
+  ],
   "game": "NSMBW",
   "github": "https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii",
   "license": null,
   "manifest_fields": [
     "authors",
+    "flags",
     "minimum_ap_version",
+    "repo_url",
+    "tracker",
     "world_version"
   ],
+  "tracker": "https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker",
   "versions": {
     "V0.2.2": {
       "created_at": "2026-07-15T17:14:25Z",
@@ -137,6 +143,21 @@
       "title": "New Super Mario Bros Wii v0.2.1",
       "version_simple": "0.2.1",
       "world_version": "0.2.1"
+    },
+    "v0.3.0": {
+      "created_at": "2026-08-27T16:05:54Z",
+      "description": "# Warning Experimental update\r\nGame may crash. If it does, please report it immediately.\r\n\r\n\r\n# Features\r\n- Level shuffle\r\n- Music shuffle\r\n- Many options and settings\r\n  - /debug is most important, this dumps all relevant debug info\r\n- Added proper logic to inventory powerups\r\n- Added support for local co-op\r\n- Removed need for loading / saving save states : requires riivolution enabled\r\n- Many minor quality of life improvements.\r\n\r\n\r\n# Bugfixes\r\n- Deathlink groups no longer causes load issues\r\n- Deathlink amnesty exist\r\n- Removed problematic hint movies\r\n- Minor logic fixes\r\n\r\n\r\n# Breaking changes\r\nYou can now select to use (optionally) use a riivolution patch. This is required if you want level shuffle and music shuffle enabled. It also provides simple qol patches and graphic changes.\r\nRecommended to delete settings in host.yaml.\r\nAlso recommended to regenerate your option yaml since many options have changed names.\r\n\r\n\r\n# Links\r\n[Download](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.0)\r\n[Setup Guide](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md)",
+      "download_url": "https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/download/v0.3.0/nsmbw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "93efc490972106c9ab5639510af17b10277abfb4c68b7bee92d8abe69e5cc208",
+      "html_url": "https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 413865,
+      "source_url": "https://api.github.com/repos/Miiroun/Archipelago-NewSuperMarioBrosWii",
+      "tag": "v0.3.0",
+      "title": "Archipelago v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

@@ -4,7 +4,7 @@ Tasked with helping pay off their employer&#x27;s debt, explorers Olimar and Lou
 
 
 ## Downloads
-- <a href="https://github.com/chpas0/Pikmin2Archipelago/releases/download/v0.8.0/pikmin2.apworld">Latest Version (0.8.0.post2)</a>
+- <a href="https://github.com/chpas0/Pikmin2Archipelago/releases/download/v0.8.1/pikmin2.apworld">Latest Version (0.8.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
