@@ -8,7 +8,7 @@ nobody installs a modification.
 
 
 ## Downloads
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">Latest Version (1.10.0r2)</a>
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">Latest Version (1.11.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -16,6 +16,6 @@ nobody installs a modification.
 - <a href="fr_Team Fortress 2 Mann vs Machine">French</a>
 
 ## Setup Guide
-- <a href="setup_fr">French</a>
 - <a href="setup_en">English</a>
+- <a href="setup_fr">French</a>
 

@@ -22,13 +22,13 @@ If the .yaml file is missing in your ```Players/Templates``` folder, then please
 #### Step 1
 Place all of the players' ```.yaml``` files into the ```Players``` folder of your Archipelago installation (NOT the ```Players/Templates``` folder).
 #### Step 2
-Open the Archipelago Launcher (```ArchipelagoLauncher.exe```) and click the "Generate Button". If the generation succeeds, this should create a ```.zip``` archive in the ```output``` directory of your Archipelago installation.
+Open the Archipelago Launcher (```ArchipelagoLauncher.exe```) and click the ```Generate``` button. If the generation succeeds, this should create a ```.zip``` archive in the ```output``` directory of your Archipelago installation.
 #### Step 3
 Unzip the archive that was just generated. There should be an ```.appik2``` file inside called ```AP_<seed>_P<slot>_<name>.appik2```. This file will be referred to as the Pikmin 2 setup file for the rest of the guide.
 #### Step 4
 Run the ```patcher.exe``` executable that was included with the Pikmin 2 APWorld release. It will prompt you for the Pikmin 2 setup file (the ```.appik2``` file from Step 3) and the Pikmin 2 USA .iso file. It will output a patched version of the game to the same directory that the executable is in, called ```pikmin2_<seed>.iso```.
 #### Step 5
-Turn the Memory Override setting on Dolphin settings (Settings -> Advanced -> Memory Override). Check the box that says "Enable Emulated Memory Size Override" and move the first slider (**marked MEM1**) to 64 MB.
+Turn the Memory Override setting on Dolphin settings (Config -> Advanced -> Memory Override). Check the box that says "Enable Emulated Memory Size Override" and move the first slider (**marked MEM1**) to 64 MB.
 
 #### Step 6
 Re-open the Archipelago Launcher, and click the ```Pikmin2Client``` button. You will be prompted for the patched Pikmin 2 .iso file and the Pikmin 2 setup file. If this is your first time running the client, you will also be asked for your Dolphin executable file; this path will be saved to your ```host.yaml``` so you don't need to select it each time.
@@ -62,13 +62,13 @@ If the .yaml file is missing in your ```Players/Templates``` folder, then please
 #### Step 1
 Place all of the players' ```.yaml``` files into the ```Players``` folder of your Archipelago installation (NOT the ```Players/Templates``` folder).
 #### Step 2
-Open the Archipelago Launcher (```ArchipelagoLauncher.exe```) and click the "Generate Button". If the generation succeeds, this should create a ```.zip``` archive in the ```output``` directory of your Archipelago installation.
+Open the Archipelago Launcher (```ArchipelagoLauncher.exe```) and click the ```Generate``` button. If the generation succeeds, this should create a ```.zip``` archive in the ```output``` directory of your Archipelago installation.
 #### Step 3
 Unzip the archive that was just generated. There should be an ```.appik2``` file inside called ```AP_<seed>_P<slot>_<name>.appik2```. This file will be referred to as the Pikmin 2 setup file for the rest of the guide.
 #### Step 4
 Using Wine, run the ```patcher.exe``` executable that was included with the Pikmin 2 APWorld release. It will prompt you for the Pikmin 2 setup file (the ```.appik2``` file from Step 3) and the Pikmin 2 USA .iso file. It will output a patched version of the game to the same directory that the executable is in, called ```pikmin2_<seed>.iso```.
 #### Step 5
-Turn the Memory Override setting on Dolphin settings (Settings -> Advanced -> Memory Override). Check the box that says "Enable Emulated Memory Size Override" and move the first slider (**marked MEM1**) to 64 MB.
+Turn the Memory Override setting on Dolphin settings (Config -> Advanced -> Memory Override). Check the box that says "Enable Emulated Memory Size Override" and move the first slider (**marked MEM1**) to 64 MB.
 #### Step 6
 Re-open the Archipelago Launcher, and click the ```Pikmin2Client``` button. You will be prompted for the patched Pikmin 2 .iso file and the Pikmin 2 setup file. The client will assume Dolphin can be executed by running the ```dolphin-emu``` command, as is the default - if this isn't the case you can create a command alias.
 #### Step 7
