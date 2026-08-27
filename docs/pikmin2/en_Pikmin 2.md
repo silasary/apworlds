@@ -27,7 +27,6 @@ Any item from another world currently looks like a marble with the AP logo insid
 The game will process the received treasure and add its value to the Poko count. If the treasure is part of the Explorer Kit, the player will immediately gain access to the upgrade. If the player is in the overworld, the game will notify the player every 1000 Pokos, as in vanilla. If the player is in a cave, the Poko count will come up in the top right corner of the screen and actually show the Pokos being added to the counter (this happens in vanilla if an enemy corpse is collected).
 
 ## Commands
-- /force_relink - Attempt to relink to the game if linking fails.  
 - /status - Check the current goal and the progress towards that goal.  
 - /cave <cave> - Check what a cave has been randomized to.
 

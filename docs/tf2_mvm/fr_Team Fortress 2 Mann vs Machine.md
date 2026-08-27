@@ -29,7 +29,7 @@ La seed fixe l'un de ces deux objectifs :
 ## Quels items peuvent se trouver dans le monde d'un autre joueur ?
 
 Tous : les tickets de mission, les classes de mercenaires, l'emplacement
-d'équipement progressif et les liasses d'argent.
+d'équipement progressif, les améliorations d'armes et les liasses d'argent.
 
 ## À quoi ressemble l'item d'un autre monde dans Mann vs Machine ?
 

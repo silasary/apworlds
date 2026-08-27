@@ -39,13 +39,6 @@ address this patcher writes was measured out of one revision, so a different
 disc would produce an image that boots and is quietly wrong. It is refused
 rather than patched.
 
-> **A note for anyone who was refused before.** 1.1.0 accepted only the raw
-> `.bin`, so a perfectly good `.iso` of the right game was turned away with
-> nothing but two hashes to go on. That was the most common thing to hit, and
-> **1.1.1 reads both.** Update the apworld and pick the same file again —
-> your existing `.apTAZ` still works, so there is nothing to re-roll and no
-> need to bother whoever is hosting your room.
-
 Then it patches — about thirty seconds, with a progress bar — and writes two
 files **beside your `.apTAZ`**:
 
@@ -136,13 +129,6 @@ Typed into the client:
 
 `/resync` is rarely needed — the client does it on connect — but it is the fix
 if the game ever looks out of step with what you own.
-
-## Saving and reloading
-
-The client is the source of truth, not the save file. It records what it has
-sent and rebuilds your unlocks from the server every time it connects, so
-reloading a file and reconnecting mid-session are both safe. You cannot lose
-an item by reloading, and you cannot send a check twice.
 
 ## Game modes
 

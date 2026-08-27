@@ -28,6 +28,22 @@
       "version_simple": "1.9.0",
       "world_version": "1.9.0r2"
     },
+    "nightlyr2": {
+      "created_at": "2026-08-27T08:53:32Z",
+      "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `d7b32eb40a08102ba2d10ff5fa0fc5ff902d45cc`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.10.0\n\n- fix(test): skip the game data test without the real ripext (apw-5tk)\n- chore(beads): apw-5tk, what PR #3 solves\n- Add Archipelago weapon buff upgrades\n- chore(beads): a restart must not cost the mission (apw)\n- chore(deps): bots v2.18.1 -> v2.19.0 (mvm-bha)\n- feat(launcher): build your own bot loadouts (mvm-e5r)\n- feat(launcher): resolve the loadouts a player builds (mvm-e5r)\n- docs: the Bot Switcher, in both languages (mvm-6dc)\n- feat(gamedata): a weapon catalogue, generated from the mod and the game (mvm-e5r)\n- feat(launcher): a Bot Switcher tab, and lineup changes without a restart (mvm-6dc)\n- chore(beads): update a bead\n- chore(beads): update apw-r85 The game server crashes with an access violation, and the la\u2026\n- chore(beads): update apw-hut RED gets nine bots when the mission loads\n- chore(beads): update apw-48u De-upgrading appears not to take\n- chore(beads): update apw-4cb A bundle is money the game never recorded\n",
+      "download_url": "https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fb7ec72549cfab1baf4d9ef9c923ad64e1b5eb7d89361e134c95bec6b07eb61e",
+      "html_url": "https://github.com/m-this/tf2-archipelago/releases/tag/nightly",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 178969,
+      "source_url": "https://api.github.com/repos/m-this/tf2-archipelago",
+      "tag": "nightlyr2",
+      "title": "nightly",
+      "version_simple": "1.10.0",
+      "world_version": "1.10.0r2"
+    },
     "v1.0.0": {
       "created_at": "2026-08-17T17:37:17Z",
       "description": "## Changes\n\nFirst release.\n\n- Mann vs Machine as an Archipelago randomiser: missions and waves are checks,\n  and your weapons start locked and arrive as items.\n- Chat in game talks to the multiworld.\n- A Docker stack that runs the server, the bridge and the game.\n\nEvery release attaches the same files. `gh release create --generate-notes`\nappends the commit list below this.\n\n## Run the stack without a clone\n\nDownload `compose.yaml` and `.env.example` into an empty directory:\n\n```sh\nmkdir mann-vs-archipelago && cd mann-vs-archipelago\nbase=https://github.com/m-this/tf2-archipelago/releases/latest/download\ncurl -fsSLO \"$base/compose.yaml\"\ncurl -fsSL -o .env \"$base/.env.example\"\n```\n\nSet `SRCDS_RCONPW` in `.env`, then make a session and start:\n\n```sh\ndocker compose --profile seed run --rm seed   # writes ./seed\ndocker compose up -d\n```\n\nUpload the file from `seed/` at [archipelago.gg/uploads](https://archipelago.gg/uploads),\ncreate a room, and write its port into `AP_PORT`.\n\nThe images come from `ghcr.io/m-this/tf2-archipelago`. `compose.yaml` pins them\nto this release; set `TF2AP_VERSION` in `.env` to run another one.\n\nTo host the session on this machine instead of on archipelago.gg, set\n`COMPOSE_PROFILES=selfhost`, `AP_HOST=archipelago`, `AP_PORT=38281` and\n`AP_TLS=false`. Then `docker compose up -d` needs no seed and no room.\n\n## The other files\n\n| File | What it is |\n| --- | --- |\n| `tf2_mvm.apworld` | The Archipelago world. Drop it in `custom_worlds/` of an Archipelago 0.6.7 install to generate a seed without Docker. |\n| `tf2_archipelago.smx` | The compiled SourceMod plugin, for an existing srcds that the compose file does not run. |\n| `meta.json`, `items.json`, `missions.json` | The item and location tables `gamedata/` exports. They are already inside the apworld; they are here to read. |\n\n[The book](https://m-this.github.io/tf2-archipelago/) covers the rest.\n\n\n**Full Changelog**: https://github.com/m-this/tf2-archipelago/commits/v1.0.0\n",

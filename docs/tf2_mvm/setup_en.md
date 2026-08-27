@@ -28,6 +28,16 @@ The options are under `Team Fortress 2 Mann vs Machine`:
   Haunted only.
 - `goal`: `final_boss` or `missionsanity`.
 - `missionsanity_percentage`: how much of the run Missionsanity asks for.
+- `mission_ticket_importance`, `class_unlock_importance`,
+  `weapon_slot_importance`, and `weapon_buff_importance`: choose `useful` or
+  `progression` independently. Tickets, classes and slots default to
+  progression; buffs default to useful.
+- `cash_rewards`: whether spare checks may award cash. This is off by default,
+  making every spare check a weapon buff.
+- `weapon_buff_percentage`: when cash is enabled, how much spare space becomes
+  weapon buffs instead of cash. The default is 75.
+- `weapon_buff_stack_chance`: how often another numeric level of a buff already
+  in the seed is drawn. Toggle effects never repeat. The default is 25.
 - `death_link`: off by default. A death here is a lost wave: losing one kills
   every linked player, and one of their deaths wipes your team, which loses
   the wave.

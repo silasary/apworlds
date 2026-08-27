@@ -8,6 +8,9 @@
 #### v1.0.0r2
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/pre-v1.0.1/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/pre-v1.0.1/mina_the_hollower.apworld</a>
 
+#### v1.0.0r2
+- <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.1/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.1/mina_the_hollower.apworld</a>
+
 #### v1.0.0
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.0/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v1.0.0/mina_the_hollower.apworld</a>
 

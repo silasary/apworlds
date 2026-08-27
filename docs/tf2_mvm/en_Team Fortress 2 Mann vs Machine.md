@@ -26,7 +26,7 @@ The seed sets one of two goals:
 ## Which items can be in another player's world?
 
 All of them: the mission tickets, the mercenary classes, the progressive weapon
-slot and the cash bundles.
+slot, weapon buffs and cash bundles.
 
 ## What does another world's item look like in Mann vs Machine?
 

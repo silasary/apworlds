@@ -272,6 +272,20 @@
       "title": "v0.7.3",
       "version_simple": "0.7.2",
       "world_version": "0.7.2r2"
+    },
+    "v0.8.0": {
+      "created_at": "2026-08-27T02:57:06Z",
+      "description": "**NOTE: This mod is still in the testing phase. Play at your own risk.**\r\n**NOTE 2: Games generated on earlier versions will NOT work on this version.**\r\n**NOTE 3: Setup for this version is much different (and hopefully much simpler) than previous versions - please reread the setup guide before playing!**\r\n\r\n## Changelog\r\n- Fix a bug that could cause generation to fail if multiple Pikmin 2 players were in a game (thank you KingDragonite for finding and fixing this)\r\n- Clarify the error message printed when the filler items dictionary is empty (thank you KingDragonite for finding and fixing this)\r\n- Completely rehaul the sending of items from the game to the client\r\n  - The save file path is no longer needed\r\n  - Linking now occurs at the title screen\r\n  - Linking works from any file, not just the leftmost one\r\n  - Linking works on Day 1\r\n  - Items can be received in menus and cutscenes (excluding the world map)\r\n  - Most crashes (e.g., collecting the Utter Scrap location on Day 2) are fixed\r\n  - **Memory Override is now required for the game to run properly**\r\n  - This may be buggy on Linux; please let me know if you encounter any issues\r\n- Completely rehaul the progress restore so that the save file is not necessary\r\n  - The duplicate item receipt bug should be permanently squashed\r\n- Enemy Randomizer and Boss + Enemy Randomizer now work on the overworld\r\n  - May still have lingering issues - please report any crashes with this setting\r\n- Add new YAML option: Boss + Enemy Rando Locations\r\n  - If either Enemy Randomizer or Boss + Enemy Randomizer is on, allows you to select which locations are randomized (cave, overworld, or both)\r\n- Change the game ID so it has a separate save file from vanilla Pikmin 2\r\n- Remove the /force-relink command as it is deprecated\r\n- Add the total debt to the /status command output\r\n\r\n## Known Bugs\r\n- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.\r\n- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.\r\n- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear\r\n- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.\r\n- Sometimes collecting Louie does not trigger the goal",
+      "download_url": "https://github.com/chpas0/Pikmin2Archipelago/releases/download/v0.8.0/pikmin2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "06831e6297c36c87edf5bda1814274f9376234562c56f7ba4e75084b8f580ed3",
+      "html_url": "https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.0",
+      "size": 1394937,
+      "source_url": "https://api.github.com/repos/chpas0/Pikmin2Archipelago",
+      "tag": "v0.8.0",
+      "title": "v0.8.0",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0"
     }
   }
 }
