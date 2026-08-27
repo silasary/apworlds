@@ -179,6 +179,9 @@
 #### v22
 - <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-22/borderlands2.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-22/borderlands2.apworld</a>
 
+#### v3
+- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/experiment-3/borderlands2.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/experiment-3/borderlands2.apworld</a>
+
 #### v2
 - <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/experiment-2/borderlands2.apworld">https://github.com/EdricY/Bouncy-Loot-God/releases/download/experiment-2/borderlands2.apworld</a>
 

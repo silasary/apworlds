@@ -1,9 +1,12 @@
 # Blender
 
 ## Latest
-- <a href="https://github.com/GBFound/BlenderArchipelago/releases/download/0.2.0/blender.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/GBFound/BlenderArchipelago/releases/download/1.0.0/blender.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
+
+#### v1.0.0
+- <a href="https://github.com/GBFound/BlenderArchipelago/releases/download/1.0.0/blender.apworld">https://github.com/GBFound/BlenderArchipelago/releases/download/1.0.0/blender.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/GBFound/BlenderArchipelago/releases/download/0.2.0/blender.apworld">https://github.com/GBFound/BlenderArchipelago/releases/download/0.2.0/blender.apworld</a>

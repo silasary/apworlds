@@ -34,11 +34,27 @@ the Archipelago Launcher's **Generate Template Options** button.
 
 The options worth knowing about:
 
-- **Modern Day Goal Type** — whether Modern Day unlocks on world trophies, world completions, or
-  world keys. Note that world trophies caps out at 10, because Kongfu Temple has no trophy in the
-  game data.
-- **Worlds Required for Modern Day** — how many worlds must satisfy that condition.
-- **Modern Day Victory** — which Modern Day level ends the run.
+- **Enabled Worlds** — a whitelist. A world is in the seed if and only if it is named here, and
+  Ancient Egypt is always in whether you name it or not. Leave the list empty to waive the
+  whitelist and let **World Count** pick at random instead.
+- **World Count** — a cap on top of that, never a target. It can only make the seed smaller: name
+  more worlds than it allows and the extras are dropped at random, but name fewer and you get
+  exactly the ones you named. Nothing outside **Enabled Worlds** is added to fill the gap.
+- **Goal Type** — what completing a world means: its **World Key** level, its **Zomboss**, or its
+  final level (**Completion**). Note that the zomboss goal cannot be satisfied by Kongfu Temple,
+  which has no Zomboss level in the game data.
+- **Worlds Required** — how many worlds must be completed to win. Every world in the seed counts,
+  Modern Day included. Asking for more than the seed contains clamps down to what it has, so a
+  two-world whitelist caps this at three however high you set it. Requiring fewer worlds than the
+  seed holds is fine and is left alone.
+
+Worlds open in three stages, and the currency is one item: **Progressive &lt;World&gt;**, three per
+world. The first opens the world as far as its World Key level, the second carries you to its
+Zomboss, the third to its final level. The game refuses to start a level you have not unlocked, so
+these are not just a logic gate. Ancient Egypt needs none to enter and so has two: 1-8 need nothing,
+9-25 want the first, 26-35 want the second. Egypt also expects a sun producer from level 6, the same
+place the game unlocks the store — that one is a logic requirement, not an unlock, so it never stops
+you starting a level.
 - **Skip Tutorial** — start on the world map and send the tutorial checks automatically. Also stops the game making you open the almanac, zen garden and store when each one unlocks.
 - **Shopsanity** — turn the store's one-time purchases into 39 extra checks.
 - **Trap Percentage** — how much of the filler pool becomes Lawn Mower Traps.

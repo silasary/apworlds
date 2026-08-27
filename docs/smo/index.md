@@ -4,7 +4,7 @@ Super Mario Odyssey is a 3-D Platformer where Mario sets off across the world wi
 
 
 ## Downloads
-- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld">Latest Version (1.7.6.post2)</a>
+- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld">Latest Version (1.7.6.post3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

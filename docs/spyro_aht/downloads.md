@@ -1,9 +1,12 @@
 # Spyro: A Hero&#x27;s Tail
 
 ## Latest
-- <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.0.2/spyro_aht.apworld">Latest Version (2.0.1r2)</a>
+- <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.1.0-PR/spyro_aht.apworld">Latest Version (2.1.0)</a>
 
 ## All Versions
+
+#### v2.1.0
+- <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.1.0-PR/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.1.0-PR/spyro_aht.apworld</a>
 
 #### v2.0.1r2
 - <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.0.2/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.0.2/spyro_aht.apworld</a>

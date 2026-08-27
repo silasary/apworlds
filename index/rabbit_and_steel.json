@@ -402,6 +402,20 @@
       "title": "v0.3.6",
       "version_simple": "0.3.6",
       "world_version": "0.3.6.post2"
+    },
+    "v0.3.7": {
+      "created_at": "2026-08-26T21:10:56Z",
+      "description": "added:\r\n- Ability to select Kingdom Outskirts/Crack in the Geode and The Pale Keep/Looping Hallway as guaranteed kingdom.\r\n  - The Pale Keep and Looping Hallway are their random kingdom type button.\r\n  - Kingdom Outskirts and Crack in the Geode are the true random and chaotic random buttons.\r\n  - Unobtained/OoL kingdoms will appear as \"?\" and have the text \"Random\" in the map selection.\r\n    - When it becomes in logic, will place it (iirc).\r\n- Recreate the route after the class is selected, so class weight calculation is applied without needing to adjust in map selection.\r\n\r\nfixed:\r\n- Fixed kingdom weights. \r\n  - Prioritizes your selection -> weighted random of the order that is being placed -> if there are no checks there, weighted random of unplaced kingdoms -> random.\r\n  - Picks the boss that still has goal condition kills needed and available for that class, otherwise random.\r\n- Selection from lobby page is respected.\r\n    - Default selection is respected.\r\n- Entering a treasuresphere or shop shouldn't lag anymore.\r\n\r\n# Changelog\r\n\r\nAll notable changes to this project will be documented in this file.\r\n\r\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)\r\nand this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\r\n\r\n## [v0.3.7](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.6...v0.3.7) - 2026-08-26\r\n\r\n### Commits\r\n\r\n- condensed hallkey, hallsubimg, and hallseed modification to 1 place [`14fea4c`](https://github.com/tjwombo/RNSArchipelago/commit/14fea4c4b1a74faa0fd8f7220a6af51625c804e6)\r\n- Increase weights, and remove checkless possibility [`19df6c2`](https://github.com/tjwombo/RNSArchipelago/commit/19df6c2d70958150220755b9aa76051884da573f)\r\n- Update route after selecting a character [`1049ed9`](https://github.com/tjwombo/RNSArchipelago/commit/1049ed98b471b68ab6b3c37b8eb4362b5df51866)\r\n- Properly respect the user selected kingdom [`feb658d`](https://github.com/tjwombo/RNSArchipelago/commit/feb658d72b375ca1af5cf1fd0aef24bf231f2763)\r\n- Fixed final boss weight & Allow selection for starting and penultimate hallway [`e996e65`](https://github.com/tjwombo/RNSArchipelago/commit/e996e65cfb082cc7b57682017648fbf4d6bdceea)\r\n- Fix the xsubimg expanding bug + cleanup [`ca993c6`](https://github.com/tjwombo/RNSArchipelago/commit/ca993c6c56c2afd9e5a5a2a576801ab09f48d684)\r\n- Prescout chest and shops to reduce lag on entering [`f501d7d`](https://github.com/tjwombo/RNSArchipelago/commit/f501d7d3a10c4f7ecc60a2e536d2dab4ed1abca2)\r\n- Prioritize kingdom order only if they have checks [`e119b34`](https://github.com/tjwombo/RNSArchipelago/commit/e119b342b876446c266fe428a8ef712a2b8773d3)\r\n",
+      "download_url": "https://github.com/tjwombo/RNSArchipelago/releases/download/v0.3.7/rabbit_and_steel.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d7233ab7d4ec62096e577cff0248ced46dc83170ca1f9642955db1d9cafd8a18",
+      "html_url": "https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.3.7",
+      "size": 25186,
+      "source_url": "https://api.github.com/repos/tjwombo/RNSArchipelago",
+      "tag": "v0.3.7",
+      "title": "v0.3.7",
+      "version_simple": "0.3.7",
+      "world_version": "0.3.7"
     }
   }
 }
