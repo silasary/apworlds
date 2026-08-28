@@ -1,9 +1,12 @@
 # Crypt of the NecroDancer
 
 ## Latest
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld">Latest Version (0.8.0)</a>
+- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld">Latest Version (0.8.0.post2)</a>
 
 ## All Versions
+
+#### v0.8.0.post2
+- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld</a>
 
 #### v0.8.0
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld</a>
