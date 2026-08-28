@@ -1,10 +1,10 @@
 # Mental Omega
 
-
+Full catalogue; each seed&#x27;s shape comes from one signed manifest.
 
 
 ## Downloads
-- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.30/mental_omega.apworld">Latest Version (0.6.1)</a>
+- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.31/mental_omega.apworld">Latest Version (0.6.1r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

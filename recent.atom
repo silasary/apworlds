@@ -2,31 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-28T02:48:50.925902+00:00</updated>
+  <updated>2026-08-28T09:15:26.345711+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.0.1</id>
-    <title>Mina The Hollower v1.0.0r2</title>
-    <updated>2026-08-25T19:34:43+00:00</updated>
-    <author>
-      <name>FyreDay, Axertin, ZXavier</name>
-    </author>
-    <content>Features:&#13;
-- Add requirement for at least attack 3 and defense 3 for all boss fights&#13;
-- Add Ossex bike sewer map&#13;
-&#13;
-Fixes:&#13;
-&#13;
-- Fix MM image&#13;
-- Fix Armond Fight logic&#13;
-- Fix SB and NB connection,&#13;
-- Update Pinky map, move Pinky locations&#13;
-- Fix Ossex West Wall logic</content>
-    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.3</id>
     <title>Factorio: Space Age v3.0.3</title>
@@ -261,7 +241,7 @@ The upgrade progress is shown in game as stars in the pause menu like in Zero 1 
 &#13;
 Randomize_weapons has been removed as an option. You can still give yourself each weapon to start with using the `starting_weapons` option.&#13;
 &#13;
-`starting_weapons: ['Buster', 'Z-Saber'. 'Recoil Rod', 'Shield Boomerang]` &#13;
+`starting_weapons: ['Buster', 'Z-Saber', 'Recoil Rod', 'Shield Boomerang']` &#13;
 &#13;
 ## Graphical Changes&#13;
 &#13;
@@ -1030,7 +1010,7 @@ unobtainable.
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `64bc333c61a4c70e5d84c2a0d67b64e92ff6f75e`.
+Built from `ca87f09f783e2647582594c644930774c7f34288`.
 
 ## Downloads
 
@@ -1039,6 +1019,9 @@ Built from `64bc333c61a4c70e5d84c2a0d67b64e92ff6f75e`.
 
 ## Since v1.10.0
 
+- chore(beads): Mannhunt plays in the test-bed at last
+- chore(beads): correct the wedge recovery record
+- chore(beads): record the launcher goroutine panic fix
 - chore(beads): record the wedged-bot kick on apw-eei
 - fix(launcher): a panic on a background goroutine no longer kills the launcher
 - test(launcher): keep the window and the terminal at the same features
@@ -1456,11 +1439,34 @@ Minor&#13;
     <author>
       <name>Chakraa</name>
     </author>
-    <content>### Fixed
-- A Northgard update renumbered the game's internal functions, which silently broke Chapter-lock enforcement -- the patch ended up targeting the wrong function, and Chapters could be entered without their unlock item in any save. The patcher now finds the function it needs to patch by name instead of a fixed number, so it keeps working across future Northgard updates instead of quietly patching the wrong thing.
-- The "already patched?" check used to just compare file bytes against a backup, which falsely reported "yes" right after that same update (a legitimate game update changes those bytes too) -- so the client's auto-heal never noticed anything was wrong and never reapplied. It now checks the actual patched code directly.
-
+    <content>### Fixed&#13;
+- Northgard's updates shuffled its internal function numbers, breaking chapter-lock enforcement. It's should now be fixed by having the patcher find functions by name instead of a fixed number, so it survives future updates.&#13;
+- The "already patched?" check just compared file bytes, so it falsely said "patched" right after the update and auto-heal never kicked in. It should now be fixed by checking the actual patched code directly instead, so it can't give that false positive again.&#13;
+&#13;
 **Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.16...2026.08.27</content>
     <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.08.27"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.31</id>
+    <title>Mental Omega v0.6.1r2</title>
+    <updated>2026-08-28T07:57:57+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- New Shopmode! Like many Roguelike/Roguelite/Whateverlite games we have now the shopmode, become stronger with every iteration! Buy units and buff them BEFORE the mission starts! 10 missions need to be beaten with choices, rewards, and increased difficulties depending on the path you take! &#13;
+&#13;
+Bugfixes:&#13;
+- Zero Signal issue&#13;
+- Red Dawn unit transfer &#13;
+- Add Randomizer Label for missing units&#13;
+- remove assistance buff for explosion units (So they do not explode in your army)&#13;
+- Fix weapon switch units (They turned into their original unit type)&#13;
+- Earthrise and Noise Severe fixes with unit transfer and duplicated unit access&#13;
+- Fix old demo truck, ivan cadet and ivan bike, range buff.&#13;
+- Fix Chaos access to buildings (Capturing an enemy MCV did not allow you to build defenses e.g.)&#13;
+- T1 units given incorrectly in chaos/standard/shop&#13;
+- Yuri Prime cloning vets removal (Broke the queue and cloning vets production)&#13;
+- Fix Buff of enemy AI killing units they are not supposed to kill (Shipwreck Humvee sniped the engineer softlocking the mission)</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.31"/>
   </entry>
 </feed>

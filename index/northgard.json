@@ -132,7 +132,7 @@
     },
     "2026.08.27": {
       "created_at": "2026-08-28T02:30:30Z",
-      "description": "### Fixed\n- A Northgard update renumbered the game's internal functions, which silently broke Chapter-lock enforcement -- the patch ended up targeting the wrong function, and Chapters could be entered without their unlock item in any save. The patcher now finds the function it needs to patch by name instead of a fixed number, so it keeps working across future Northgard updates instead of quietly patching the wrong thing.\n- The \"already patched?\" check used to just compare file bytes against a backup, which falsely reported \"yes\" right after that same update (a legitimate game update changes those bytes too) -- so the client's auto-heal never noticed anything was wrong and never reapplied. It now checks the actual patched code directly.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.16...2026.08.27",
+      "description": "### Fixed\r\n- Northgard's updates shuffled its internal function numbers, breaking chapter-lock enforcement. It's should now be fixed by having the patcher find functions by name instead of a fixed number, so it survives future updates.\r\n- The \"already patched?\" check just compared file bytes, so it falsely said \"patched\" right after the update and auto-heal never kicked in. It should now be fixed by checking the actual patched code directly instead, so it can't give that false positive again.\r\n\r\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.16...2026.08.27",
       "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.08.27/northgard.apworld",
       "has_manifest": true,
       "hash_sha256": "f803ef6484eb44badb0957204eabafee42a385f3b7a6ca5d8a96453896c568ec",
@@ -141,7 +141,7 @@
       "size": 10419444,
       "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
       "tag": "2026.08.27",
-      "title": "2026.08.27 - Patch Now Survives Northgard Updates",
+      "title": "2026.08.27 - Patch Should Survive Game Updates",
       "version_simple": "2026.8.27",
       "world_version": "2026.8.27"
     }
