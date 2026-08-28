@@ -4,14 +4,22 @@
     "Ishigh"
   ],
   "description": "The Legend of Zelda: Oracles of Seasons is one of the rare Capcom entries to the series.\nThe seasons in the world of Holodrum have been a mess since Onox captured Din, the Oracle of Seasons.\nGather the Essences of Nature, confront Onox and rescue Din to give nature some rest in Holodrum.",
+  "flags": [
+    "supports_deathlink",
+    "supports_movelink"
+  ],
   "game": "The Legend of Zelda - Oracle of Seasons",
   "github": "https://github.com/Dinopony/ArchipelagoOoS",
   "license": null,
   "manifest_fields": [
     "authors",
+    "flags",
     "minimum_ap_version",
+    "repo_url",
+    "tracker",
     "world_version"
   ],
+  "tracker": "https://github.com/OmegaZeron/Oracle-of-Seasons-AP-Poptracker-Pack/releases/latest",
   "versions": {
     "0.9a": {
       "created_at": "2024-02-27T18:00:55Z",
@@ -700,6 +708,22 @@
       "title": "Oracle of Seasons 20.1.9",
       "version_simple": "20.1.9",
       "world_version": "20.1.9"
+    },
+    "oos-22.0.0": {
+      "created_at": "2026-08-28T14:11:24Z",
+      "description": "## \ud83d\uddf3\ufe0f New Options\r\n- Added a start position option, that contains north horon and sunken city for now\r\n\r\n## \u23eb Miscellaneous Improvements\r\n- Shops items can now be bought more than once if it is local and makes sense to be bought more than once (potions, ore chunks, rupees)\r\n- Owl hints now try to give items that appear later in logic, and should stop constantly telling you how to get what you already have\r\n- You can now always put the 4 jewels in their slots if you want\r\n- Subrosia digging spots are now permanently dug up\r\n- Added a way to warp back to the ship after giving the bell to the pirate captain\r\n\r\n## \ud83e\udde0 Logic\r\n- Added logic requiring some amounts of heart containers before beating some bosses or doing skips. The amount depends on the logic difficulty\r\n- Breaking the blocks to the goron chest with bombchus is now hard logic\r\n- Added logic to jump on the button in d8, for the armos chest\r\n- Added bombchu jumps to hell logic (thanks omega)\r\n\r\n## \ud83d\udee0\ufe0f Bugfixes\r\n- Moved the mt cucco warp to between tarm ruins and sunken city\r\n- Fixed Switch Hook allowing to jump at the same time",
+      "download_url": "https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-22.0.0/tloz_oos.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ee3b4a0e82f6a3d8d51f2efe7b636798bc3bbebcfdafb417adcda38ec19261fb",
+      "html_url": "https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-22.0.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 262434,
+      "source_url": "https://api.github.com/repos/Dinopony/ArchipelagoOoS",
+      "tag": "oos-22.0.0",
+      "title": "Oracle of Seasons 22.0.0",
+      "version_simple": "22.0.0",
+      "world_version": "22.0.0"
     },
     "oos-6.0": {
       "created_at": "2024-04-14T20:03:22Z",

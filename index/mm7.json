@@ -78,6 +78,22 @@
       "title": "v0.3.0",
       "version_simple": "0.3.0",
       "world_version": "0.3.0"
+    },
+    "v0.4.0": {
+      "created_at": "2026-08-28T13:18:45Z",
+      "description": "# Mega Man 7 Archipelago v0.4.0\r\n\r\nThis release significantly expands both seed variety and endgame customization.\r\n\r\n## Highlights\r\n\r\n### Pickupsanity\r\n\r\nAdded an optional Pickupsanity mode that turns 72 fixed stage pickups into Archipelago locations.\r\n\r\nSupported pickup types include:\r\n\r\n* Health Energy\r\n* Weapon Energy\r\n* Bolts\r\n* 1-Ups\r\n* E-Tanks\r\n* W-Tanks\r\n* S-Tanks\r\n\r\nPickupsanity locations respect stage access, movement and weapon requirements, Boss Weakness Logic, and available methods of safely leaving a stage.\r\n\r\nCloses #21 \r\n\r\n### Boss Rush / Final Wily Stage layouts\r\n\r\nAdded configurable layouts for the original final Wily stage:\r\n\r\n* **Vanilla** \u2014 Boss Rush, Wily Machine, and Wily Capsule remain one continuous stage.\r\n* **Split** \u2014 Boss Rush becomes its own selectable stage with a dedicated Boss Rush Access Code and eight additional Robot Master rematch checks. The Final Wily Stage becomes a separate selectable stage.\r\n* **Skip** \u2014 Boss Rush is skipped and the Final Wily Stage starts immediately before Wily Machine.\r\n\r\nSplit Boss Rush progress is preserved when leaving the stage.\r\n\r\nCloses #19 \r\n\r\n### Defeat Proto Man requirement\r\n\r\nAdded **Defeat Proto Man** as a new Final Wily Stage requirement.\r\n\r\nThis requires completing the actual Proto Man encounter associated with the Proto Shield location. Simply receiving the randomized Proto Shield item does not satisfy the requirement.\r\n\r\nClose #10 \r\n\r\n### Paid Exit Unit indicator\r\n\r\nImproved the Paid Exit Unit feature by displaying the Exit Unit in the inventory when paid use is available, including the configured bolt cost.\r\n\r\nCloses #18\r\n\r\n## Additional changes\r\n\r\n* Expanded Wily-stage logic and configuration.\r\n* Added logic and regression tests for the new progression options.\r\n* Updated game documentation to cover Pickupsanity and the new Boss Rush / Final Stage behavior.\r\n",
+      "download_url": "https://github.com/SanchoBob8/Archipelago-MM7/releases/download/v0.4.0/mm7.apworld",
+      "has_manifest": true,
+      "hash_sha256": "41efcc632daaaff324eb52f9c21ae4f78e140f415e5a16e4abd666a06a3e5a8e",
+      "html_url": "https://github.com/SanchoBob8/Archipelago-MM7/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 2868203,
+      "source_url": "https://api.github.com/repos/SanchoBob8/Archipelago-MM7",
+      "tag": "v0.4.0",
+      "title": "v0.4.0",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
     }
   }
 }
