@@ -160,8 +160,7 @@ if you struggle with them just enable a few graphic packs to aid you.
 
 ## Important Items
 If you enable the option `IncludeImportantItems`, you will have many more missions that require items from AP.
-In general, you cannot obtain important items through the normal in-game methods. Be careful with affinity missions because they can lock you out
-(See `Known Issues`). In some quests you can skip steps because you bypass the original way to get these items.
+In general, you cannot obtain important items through the normal in-game methods. In some quests you can skip steps because you bypass the original way to get these items.
 `The Skell License` for example does only ask for the 8 certificates, you don't have to do any of the proficiency quests.
 When a cutscene would normally activate after you obtain a specific item, you will instead be teleported to the appropriate location if you fulfill the request.
 
@@ -196,7 +195,7 @@ But that does not replace a tracker which is currently not fully ready. So if yo
 There are a few in-game changes to facilitate faster gameplay. These are not there to remove gameplay aspects but rather to avoid tedium.
 Some of these are enabled through graphic packs. Some of them can be configured.
 - Skells refuel all the way in the Blade Barracks.
-- Augmenting your equipment no longer consumes the miranium. You still need to obtain the required amount.
+- Augmenting your equipment no longer consumes miranium. You still need to obtain the required amount.
 - Running speed is increased.
 - Tp are maxed on teleport and reload.
 - Damaged skells get recovered on teleport and party change.
@@ -205,7 +204,7 @@ Some of these are enabled through graphic packs. Some of them can be configured.
 - Segments are touchable by default.
 - Materials drop more often.
 - Drop boxes appear more often.
-- Affinity missions dont lock your party.
+- Affinity missions dont lock your party and you can accept as many as you want.
 
 ## What's next?
 - Add Shop items to the available locations.
@@ -216,8 +215,5 @@ Some of these are enabled through graphic packs. Some of them can be configured.
 - The `AS0115 Formula XT` can somehow not be configured in the garage.
 - The main inventory can display items of the weapon and armor categories for skells and characters incorrectly. They correctly appear in the corresponding equip menus though.
 - If you enable all the Items and disable all the Locations you will be unable to fit all the progression items into the Multiworld. The generation will fail.
-- You can softlock yourself, especially if you enabled `Important Items`, during Affinity Missions. Because some of them require `Important Items` and those can be placed behind other missions
-    that you can't start if you already started an Affinity Mission. There are two solutions either don't save during an Affinity Mission or make sure you have the required Items beforehand.
-    You can send the item to yourself if you are stuck to rectify the situation.
 - You might be unable to enter your skell for unkown reasons.
   

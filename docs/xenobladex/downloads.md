@@ -1,9 +1,12 @@
 # Xenoblade X
 
 ## Latest
-- <a href="https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.5/xenobladex.apworld">Latest Version (0.2.5)</a>
+- <a href="https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.6/xenobladex.apworld">Latest Version (0.2.5r2)</a>
 
 ## All Versions
+
+#### v0.2.5r2
+- <a href="https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.6/xenobladex.apworld">https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.6/xenobladex.apworld</a>
 
 #### v0.2.5
 - <a href="https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.5/xenobladex.apworld">https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.5/xenobladex.apworld</a>

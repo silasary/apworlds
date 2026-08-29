@@ -2,76 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-29T12:19:50.438382+00:00</updated>
+  <updated>2026-08-29T18:15:55.486039+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.4.2</id>
-    <title>The Legend of Zelda: A Link to the Past v1.4.2</title>
-    <updated>2026-08-26T21:50:24+00:00</updated>
-    <author>
-      <name>aurabot</name>
-    </author>
-    <content>Fixed a bug where dungeon potsanity + triforce hunt + priority locations would fail to generate.</content>
-    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SilicDev/Archipelago/releases/tag/scds-v0.2.4</id>
-    <title>Sonic Colours (DS) v0.2.4</title>
-    <updated>2026-08-26T22:01:49+00:00</updated>
-    <author>
-      <name>SilicDev</name>
-    </author>
-    <content>Game Patch Hotfix&#13;
-**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/scds-v0.2.3...scds-v0.2.4&#13;
-&#13;
-**Important**: Currently only a EU ROM with the md5 hash `406514E483EE092A89F4298F59FD53A9` is supported&#13;
-This game is played via the BizhawkClient using the `connector_bizhawk_generic.lua`&#13;
-&#13;
-Unfortunately due to an oversight during release building a broken dev patch slipped into the release</content>
-    <link href="https://github.com/SilicDev/Archipelago/releases/tag/scds-v0.2.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/silent-destroyer/tunic-randomizer/releases/tag/5.0.2</id>
-    <title>TUNIC v5.0.2</title>
-    <updated>2026-08-27T02:05:09+00:00</updated>
-    <author>
-      <name>silent-destroyer</name>
-    </author>
-    <author>
-      <name>ScipioWright</name>
-    </author>
-    <content>### Backwards compatibility with existing seeds: &#13;
-- Single Player: ❌&#13;
-- Archipelago: ✅&#13;
-  - The tunic apworld was updated in this version&#13;
-&#13;
-# Changes&#13;
-- Adjusted how Fox Prince determines entrance choices to hopefully improve performance in late game when there are fewer entrances remaining.&#13;
-- Fixed a freeze that could happen when choosing entrances in Fox Prince if Laurels were set to 10 Fairies.&#13;
-- Fixed a bug with Mystery Seeds where it could enable Fox Prince but _not_ Entrance Rando, causing various issues and softlocks.&#13;
-- Fixed a few instances of fairies in Ruined Atoll and Ziggurat that wouldn't aggro unless you threw a bomb or brought other enemies close to them; they should now wake up just from walking near them.&#13;
-- Various enemy soul-related logic fixes in the apworld:&#13;
-  - Shop checks now properly require the rudeling soul&#13;
-  - Bomb walls could rarely require the wrong enemy soul if ice grappling logic was set to hard&#13;
-  - The lower frog in the frog stairway scene could sometimes appear as in logic without the Ladders to Frog's Domain or the Magic Orb</content>
-    <link href="https://github.com/silent-destroyer/tunic-randomizer/releases/tag/5.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_10</id>
-    <title>Scooby-Doo! Night of 100 Frights v10</title>
-    <updated>2026-08-27T02:39:10+00:00</updated>
-    <author>
-      <name>vgm5</name>
-    </author>
-    <content># Bugfix Release&#13;
-&#13;
-## Starting Item Filling&#13;
-- Fixed an issue where if a starting item is provided by a player yaml the generation would fail</content>
-    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_3_10"/>
-  </entry>
   <entry>
     <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.1</id>
     <title>Mina The Hollower v1.0.0r2</title>
@@ -794,7 +729,7 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archip
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `59a04aa988d0cf4178d3fb4f0f9ec790ed0c9e0e`.
+Built from `d169934c422277511548a0b17f44c02b1002f21a`.
 
 ## Downloads
 
@@ -1444,5 +1379,61 @@ Maximum train length and station spread stop over-promising. The engine stores b
 Fast forward works again as a consequence of v2.1.4: Speed Boost is an item, and until items were applied at all it could never raise the limit.
 </content>
     <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.6</id>
+    <title>OpenTTD v2.4.0</title>
+    <updated>2026-08-29T13:01:27+00:00</updated>
+    <author>
+      <name>OpenTTD AP Team</name>
+    </author>
+    <content>Maps can be 4096x4096. That is the engine's own ceiling — map_type.h declares MAX_MAP_SIZE_BITS = 12, and the two axes are validated independently, so nothing stood in the way except the world only ever offering 2048. Sixteen point seven million tiles: generation takes minutes and the map alone wants gigabytes, so it is offered rather than recommended.
+
+Known cost on a map that size: the God of Wackens punishment levels 4 and 5 walk every tile to find your rail. With Wrath enabled on 4096x4096 that is a visible pause each time he strikes. Ruins and stars are unaffected — they pick random tiles rather than scanning.
+</content>
+    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.6</id>
+    <title>Xenoblade X v0.2.5r2</title>
+    <updated>2026-08-29T14:39:30+00:00</updated>
+    <author>
+      <name>Maragon</name>
+    </author>
+    <author>
+      <name>Nina</name>
+    </author>
+    <content>- Remove the limit for affinity quests</content>
+    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4</id>
+    <title>A Link Between Worlds v0.3.4</title>
+    <updated>2026-08-29T17:11:59+00:00</updated>
+    <author>
+      <name>randomsalience</name>
+    </author>
+    <content>**NOTE**: If you have an existing game generated on an earlier version 0.3.0-0.3.2 of the apworld, you must re-patch the game after installing this apworld version.&#13;
+&#13;
+### Fixes&#13;
+- Fix permission error on 3ds, hopefully for real this time.</content>
+    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.2</id>
+    <title>Mina The Hollower v1.1.0b2</title>
+    <updated>2026-08-29T17:22:54+00:00</updated>
+    <author>
+      <name>FyreDay, Axertin, ZXavier</name>
+    </author>
+    <content>Features:&#13;
+- Changed Yaml&#13;
+- Traps&#13;
+- Astral Orrey Mirror's End Switches&#13;
+- Generator Pool&#13;
+&#13;
+Bug Fixes:&#13;
+- Fix two Burrow tunnels in Kindlewood</content>
+    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.2"/>
   </entry>
 </feed>

@@ -289,6 +289,21 @@
       "title": "OpenTTD Archipelago v2.1.5",
       "version_simple": "2.3.0",
       "world_version": "2.3.0"
+    },
+    "v2.1.6": {
+      "created_at": "2026-08-29T13:01:27Z",
+      "description": "Maps can be 4096x4096. That is the engine's own ceiling \u2014 map_type.h declares MAX_MAP_SIZE_BITS = 12, and the two axes are validated independently, so nothing stood in the way except the world only ever offering 2048. Sixteen point seven million tiles: generation takes minutes and the map alone wants gigabytes, so it is offered rather than recommended.\n\nKnown cost on a map that size: the God of Wackens punishment levels 4 and 5 walk every tile to find your rail. With Wrath enabled on 4096x4096 that is a visible pause each time he strikes. Ruins and stars are unaffected \u2014 they pick random tiles rather than scanning.\n",
+      "download_url": "https://github.com/solida1987/openttd-archipelago/releases/download/v2.1.6/openttd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3bd7dcbb1dcd259da76a807d4e615f7c5e26a417ec1a03f198af80a87a801be6",
+      "html_url": "https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.6",
+      "minimum_ap_version": "0.5.0",
+      "size": 60689,
+      "source_url": "https://api.github.com/repos/solida1987/openttd-archipelago",
+      "tag": "v2.1.6",
+      "title": "OpenTTD Archipelago v2.1.6",
+      "version_simple": "2.4.0",
+      "world_version": "2.4.0"
     }
   }
 }
