@@ -2,41 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-29T06:14:04.420717+00:00</updated>
+  <updated>2026-08-29T12:19:50.438382+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.1.0-PR</id>
-    <title>Spyro: A Hero's Tail v2.1.0.post2</title>
-    <updated>2026-08-26T21:43:14+00:00</updated>
-    <author>
-      <name>mayaxtg</name>
-    </author>
-    <author>
-      <name>ebbeaht</name>
-    </author>
-    <author>
-      <name>PhoenixAki</name>
-    </author>
-    <content># v2.1.0: Various Misc. Things (Prerelease)&#13;
-*Intended for use with game mod version 14 (see attachments).*&#13;
-&#13;
-**This update is being posted as a prerelease, hopefully to be posted as a full release this coming weekend after people have a chance to do some test seeds. It has been internally tested to the best of my abilities and should be stable enough to not have major concerns. If you would prefer to play the latest non-prerelease update, you can find that [here](https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.0.2).**&#13;
-&#13;
-2 small parts of v2.1.0 were included in the v2.0.1 hotfix (death link amnesty and the new game mod versioning system). This release contains those, as well as the following additional things:&#13;
-- Fixed a missing glide requirement in Dragonfly Falls.&#13;
-- Added `automatic` setting to `boss_lair_forcing` which forces all goal bosses (if any are part of goal) to have collectively the highest cost(s).&#13;
-- Expanded location groups to include per-level and per-realm groups for Dark Gems, Dragon Eggs, Light Gems, Fireworks, and Locked Chests. Some other misc. groups added as well (such as "Starter Checks").&#13;
-- Tweaked `movement_randomization` to allow for individual toggling of each ability, instead of it being all or nothing.&#13;
-- Renamed `starting_breath` -&gt; `starting_breaths` and redesigned it to allow for starting with multiple breaths, none, or a random one if list is empty.&#13;
-  - `starting_realms` was made to match the above behavior i.e. random starting breath if list is empty. Neither requires `auto_corrections` to be set to `fix`.&#13;
-- "Generics" filler item selection process improved to be more uniform. Each will be picked once each before doubling any up, and same for tripling, quadrupling, etc.&#13;
-&#13;
-[Setup Guide](https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&amp;-FAQ)</content>
-    <link href="https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.1.0-PR"/>
-  </entry>
   <entry>
     <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.4.2</id>
     <title>The Legend of Zelda: A Link to the Past v1.4.2</title>
@@ -575,7 +545,7 @@ This patch provides the following fixes:&#13;
 &#13;
 --- &#13;
 &#13;
-AP Mod download: https://github.com/SilicDev/YohaneAPMod/releases/tag/v0.0.2&#13;
+AP Mod download: https://github.com/SilicDev/YohaneAPMod/releases/tag/v0.0.3&#13;
 Yohane BID mod loader download: https://github.com/SilicDev/YohaneBIDModLoader/releases/tag/v0.0.1</content>
     <link href="https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.3"/>
   </entry>
@@ -1429,5 +1399,50 @@ The window title tells the truth. The version stamp comes from a .ap_version fil
 If you load an existing save, your vehicles arrive on reconnect but already-consumed cash items do not — item replay skips consumables by design. Starting the seed's world fresh delivers everything, including the money.
 </content>
     <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8-pre.1</id>
+    <title>CrossCode v0.9.8rc1</title>
+    <updated>2026-08-29T06:15:11+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content>## Changes to Mod&#13;
+&#13;
+* Added more functionality to the Archipelago menus (@CodeTriangle, #98).&#13;
+  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.&#13;
+  * Text client now automatically jumps to the bottom.&#13;
+  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.&#13;
+&#13;
+### Internal Changes&#13;
+&#13;
+* Reformatted a large amount of input data (@Valkhiya, #93)&#13;
+&#13;
+## Changes to APWorld&#13;
+&#13;
+* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).&#13;
+  * This should ensure that generations with the same seed produce the same output.&#13;
+* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).&#13;
+  * This should speed up generation on large scales.&#13;
+&#13;
+### Internal Changes&#13;
+&#13;
+* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8-pre.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.5</id>
+    <title>OpenTTD v2.3.0</title>
+    <updated>2026-08-29T06:40:22+00:00</updated>
+    <author>
+      <name>OpenTTD AP Team</name>
+    </author>
+    <content>The seed's settings are now locked once the world exists. Map size, economy, vehicle limits, station spread and forty-one other settings the seed decides were all still editable in the settings window during a session — and the change is saved, so it survived for the rest of the multiworld while the game quietly disagreed with everyone else's. All 45 are refused now, in SettingDesc::IsEditable, which every route to a setting goes through: the window greys the entry out, the console refuses, and a network client cannot push it either.
+
+Maximum train length and station spread stop over-promising. The engine stores both in a uint8_t and its own table declares max 255 — already raised from vanilla's 64. The world offered up to 1000 and 1024, and those were silently clamped on arrival, so asking for a 1000-tile train got 255 with no warning anywhere. Both options now end at 255, which is what the engine can actually deliver.
+
+Fast forward works again as a consequence of v2.1.4: Speed Boost is an item, and until items were applied at all it could never raise the limit.
+</content>
+    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.5"/>
   </entry>
 </feed>

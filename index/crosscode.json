@@ -911,6 +911,21 @@
       "version_simple": "0.9.7",
       "world_version": "0.9.7"
     },
+    "0.9.8-pre.1": {
+      "created_at": "2026-08-29T06:15:11Z",
+      "description": "## Changes to Mod\r\n\r\n* Added more functionality to the Archipelago menus (@CodeTriangle, #98).\r\n  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.\r\n  * Text client now automatically jumps to the bottom.\r\n  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.\r\n\r\n### Internal Changes\r\n\r\n* Reformatted a large amount of input data (@Valkhiya, #93)\r\n\r\n## Changes to APWorld\r\n\r\n* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).\r\n  * This should ensure that generations with the same seed produce the same output.\r\n* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).\r\n  * This should speed up generation on large scales.\r\n\r\n### Internal Changes\r\n\r\n* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).",
+      "download_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.8-pre.1/crosscode.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ea54a4344a79e28ccbafb35276eb10cf3cc2dd812632a0b47805c53a39bdeb60",
+      "html_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8-pre.1",
+      "prerelease": true,
+      "size": 146479,
+      "source_url": "https://api.github.com/repos/CodeTriangle/CCMultiworldRandomizer",
+      "tag": "0.9.8-pre.1",
+      "title": "0.9.8 Prerelease 1",
+      "version_simple": "0.9.8",
+      "world_version": "0.9.8rc1"
+    },
     "crosscode-0.2.0": {
       "created_at": "2023-09-06T05:39:45Z",
       "download_url": "https://github.com/CodeTriangle/Archipelago/releases/download/crosscode-0.2.0/crosscode.apworld",
