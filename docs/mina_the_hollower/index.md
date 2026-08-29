@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/pre-v1.0.1/mina_the_hollower.apworld">Latest Version (1.0.0r2)</a>
+- <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/pre-v1.1.0-beta.1/mina_the_hollower.apworld">Latest Version (1.0.0r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

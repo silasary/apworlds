@@ -244,6 +244,36 @@
       "title": "OpenTTD Archipelago v2.1.2",
       "version_simple": "2.2.0",
       "world_version": "2.2.0"
+    },
+    "v2.1.3": {
+      "created_at": "2026-08-29T04:59:28Z",
+      "description": "Two questions this build can answer that the last one could not.\n\nAt session start the game now reports what the player can ACTUALLY build, by asking IsEngineBuildable for every engine \u2014 the same function the build window asks:\n\n    [AP] Buildable right now: 5 (trains=1 road=3 ships=0 aircraft=1)\n    [AP]   buildable engine ids: 15 132 219 253 345\n\nAnd the five-second engine lock sweep now says when it takes something away, and how many engines it is protecting. That set lives only in memory and is never saved, so if it were ever empty during a session the sweep would quietly remove the player's whole fleet:\n\n    [AP] LockSweep: relocked N engine(s); AP-unlocked set holds M\n\nThe engine is otherwise unchanged from v2.1.2.\n",
+      "download_url": "https://github.com/solida1987/openttd-archipelago/releases/download/v2.1.3/openttd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d3a6eddd0478555d956254d0ca23d7adee69179294cc25e8f522efbc3bcf68cf",
+      "html_url": "https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.3",
+      "minimum_ap_version": "0.5.0",
+      "size": 60241,
+      "source_url": "https://api.github.com/repos/solida1987/openttd-archipelago",
+      "tag": "v2.1.3",
+      "title": "OpenTTD Archipelago v2.1.3",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0r2"
+    },
+    "v2.1.4": {
+      "created_at": "2026-08-29T05:33:52Z",
+      "description": "Received items are actually applied now. Every item London relayed arrived carrying only its id \u2014 the name field was empty \u2014 and the code gave up on an empty name instead of resolving the id through slot_data's item_id_to_name table. Measured in a live session: five shop purchases and three stars all registered on the server, the items all came back, and not one was applied. No engine in the build list, no ferry, and a Cash Injection \u00a3200,000 that never became money. The starting vehicles masked it, because they are granted on a different path.\n\nAn item that cannot be resolved is now said out loud in the console log instead of vanishing.\n\nThe window title tells the truth. The version stamp comes from a .ap_version file that overrides git and had said v2.0.4 since the 20th; the packer now refuses an engine whose stamp does not match the release.\n\nIf you load an existing save, your vehicles arrive on reconnect but already-consumed cash items do not \u2014 item replay skips consumables by design. Starting the seed's world fresh delivers everything, including the money.\n",
+      "download_url": "https://github.com/solida1987/openttd-archipelago/releases/download/v2.1.4/openttd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d3a6eddd0478555d956254d0ca23d7adee69179294cc25e8f522efbc3bcf68cf",
+      "html_url": "https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.4",
+      "minimum_ap_version": "0.5.0",
+      "size": 60241,
+      "source_url": "https://api.github.com/repos/solida1987/openttd-archipelago",
+      "tag": "v2.1.4",
+      "title": "OpenTTD Archipelago v2.1.4",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0r3"
     }
   }
 }
