@@ -7,7 +7,7 @@ threat the Internet has ever faced (once again)!
 
 
 ## Downloads
-- <a href="https://github.com/RischDev/Archipelago/releases/download/v0.1.1/mmbn6.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/RischDev/Archipelago/releases/download/v0.2.0/mmbn6.apworld">Latest Version (0.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

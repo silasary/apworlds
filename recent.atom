@@ -2,55 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-30T00:20:08.042497+00:00</updated>
+  <updated>2026-08-30T06:20:38.524251+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.0</id>
-    <title>Pikmin 2 v0.8.0.post2</title>
-    <updated>2026-08-27T02:57:06+00:00</updated>
-    <author>
-      <name>chpas</name>
-    </author>
-    <content>**NOTE: This mod is still in the testing phase. Play at your own risk.**&#13;
-**NOTE 2: Games generated on earlier versions will NOT work on this version.**&#13;
-**NOTE 3: Setup for this version is much different (and hopefully much simpler) than previous versions - please reread the setup guide before playing!**&#13;
-**NOTE 4: This release has been patched as of 8/27/26 at 1:49 PM UTC - please redownload if downloaded before then.**&#13;
-&#13;
-## Changelog&#13;
-- Fix a bug that could cause generation to fail if multiple Pikmin 2 players were in a game (thank you KingDragonite for finding and fixing this)&#13;
-- Clarify the error message printed when the filler items dictionary is empty (thank you KingDragonite for finding and fixing this)&#13;
-- Completely rehaul the sending of items from the game to the client&#13;
-  - The save file path is no longer needed&#13;
-  - Linking now occurs at the title screen&#13;
-  - Linking works from any file, not just the leftmost one&#13;
-  - Linking works on Day 1&#13;
-  - Items can be received in menus and cutscenes (excluding the world map)&#13;
-  - Most crashes (e.g., collecting the Utter Scrap location on Day 2) are fixed&#13;
-  - **Memory Override is now required for the game to run properly**&#13;
-  - This may be buggy on Linux; please let me know if you encounter any issues&#13;
-- Completely rehaul the progress restore so that the save file is not necessary&#13;
-  - The duplicate item receipt bug should be permanently squashed&#13;
-- Enemy Randomizer and Boss + Enemy Randomizer now work on the overworld&#13;
-  - May still have lingering issues - please report any crashes with this setting&#13;
-- Add new YAML option: Boss + Enemy Rando Locations&#13;
-  - If either Enemy Randomizer or Boss + Enemy Randomizer is on, allows you to select which locations are randomized (cave, overworld, or both)&#13;
-- Change the game ID so it has a separate save file from vanilla Pikmin 2&#13;
-- Remove the /force-relink command as it is deprecated&#13;
-- Add the total debt to the /status command output&#13;
-&#13;
-Thanks to Sol for their help with tips on getting Memory Override to work, it made most of these features possible!&#13;
-&#13;
-## Known Bugs&#13;
-- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.&#13;
-- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.&#13;
-- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear&#13;
-- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.&#13;
-- Sometimes collecting Louie does not trigger the goal</content>
-    <link href="https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.0"/>
-  </entry>
   <entry>
     <id>https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.0</id>
     <title>Pikmin 2 v0.8.0.post3</title>
@@ -1495,5 +1451,88 @@ Known cost on a map that size: the God of Wackens punishment levels 4 and 5 walk
 Bug Fixes:&#13;
 - Fix two Burrow tunnels in Kindlewood</content>
     <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/RischDev/Archipelago/releases/tag/v0.2.0</id>
+    <title>MegaMan Battle Network 6 v0.2.0</title>
+    <updated>2026-08-29T23:48:58+00:00</updated>
+    <author>
+      <name>RischDev</name>
+    </author>
+    <content># Beta - v0.2.0&#13;
+&#13;
+&gt; [!WARNING]&#13;
+&gt; This has been tested and appears to be stable, but there could still be some unknown issues. Please save regularly, and report any bugs you encounter by opening up an issue, or via the Discord thread: https://discord.com/channels/731205301247803413/1242860924092682481&#13;
+&#13;
+- Game Page: [EN](https://github.com/RischDev/Archipelago/blob/main/worlds/mmbn6/docs/en_MegaMan%20Battle%20Network%206.md)&#13;
+- Setup Page: [EN](https://github.com/RischDev/Archipelago/blob/main/worlds/mmbn6/docs/setup_en.md)&#13;
+&#13;
+Compatibility Notes&#13;
+- AP version: v0.6.7&#13;
+  - Other versions have not been tested at this time.&#13;
+&#13;
+## Changelog&#13;
+**Full Changelog**: https://github.com/RischDev/Archipelago/compare/v0.1.1...v0.2.0&#13;
+&#13;
+### New Features&#13;
+- ROMless generation has been added. Now, the host of a multiworld does not require the base Gregar or Falzar ROM in order to generate a world with BN6 in it.&#13;
+- Multiple requests can now be selected at a time. Requests will still be locked by your rank, but this means that you can immediately start all 11 one-star requests, and once you reach rank B, you can select all two-star requests. This prevents softlocks due to grabbing the wrong request.&#13;
+- Bass BX and ProtoMan FZ have been added as potential checks. This also adds ColForce Q and HubBatch J (vanilla rewards for Bass BX in Gregar and Falzar respectively) to the pool.&#13;
+- Added a Progressive Link Navi Item to the pool. Each world will generate with 4 copies of this item, which will upgrade all of the link navi's levels as they would normally due to story progression.&#13;
+&#13;
+### Changes&#13;
+- Virus deletion counts will now start at 32. This means that once you get the BtlrCard, all rare viruses will become immediately available without additional grinding.&#13;
+&#13;
+### Bug Fixes&#13;
+- VacData is now a requirement before beginning GroundMan class. When you talk to Moliarty, if you don't have VacData, he will inform you that it is required and will not let you start the class. This prevents potential softlocks.&#13;
+&#13;
+## Status&#13;
+- ROMless generation has been added via APProcedurePatch&#13;
+- Gregar and Falzar both supported&#13;
+- Upcoming Features:&#13;
+  - Virus randomization.&#13;
+  - New checks like ProtoMan and other link navi fights.&#13;
+  - Optional goals, like Bass, Bass SP, Bass BX, Beast SP, or ProtoMan FZ.&#13;
+&#13;
+### Checks&#13;
+- Base pool: 297&#13;
+- Settings:&#13;
+  - Request Rewards: 38&#13;
+  - EX Bosses: 6&#13;
+  - SP Bosses: 6&#13;
+  - Graveyard checks: 8&#13;
+  - Virus Battler checks: 5&#13;
+  - Bass BX: 1&#13;
+  - ProtoMan FZ: 1&#13;
+- Total with all exclusions: 232&#13;
+- Locations per region (all options enabled):&#13;
+  - Central Town: 105&#13;
+  - Central Internet: 10&#13;
+  - Central 3/Underground: 11&#13;
+  - Seaside Town: 34&#13;
+  - Seaside Internet: 17&#13;
+  - Green Town: 21&#13;
+  - Green Internet: 17&#13;
+  - Sky Town: 31&#13;
+  - Sky Internet: 15&#13;
+  - ACDC Town: 3&#13;
+  - ACDC Internet: 6&#13;
+  - Undernet: 7&#13;
+  - Graveyard: 8&#13;
+  - Expo Site: 12&#13;
+&#13;
+## Known Issues&#13;
+- The client is required for certain location checks (specifically EX and SP bosses) to give items, and is required to set flags when receiving Crosses, BeastOut, and BtlrCard items. As such, playing offline will not fully work, so players cannot play on console for single player games yet, and you must be connected to the client to fully experience the game.&#13;
+- Skipping a cutscene that can give an item (such as after Link Navi classes or after Bass/Bass SP) can result in not receiving a local item. The location check will still be sent, but if it's a local item, it will need to be received via a `/send` command. Try to avoid skipping these cutscenes until after you see the `get item` textbox.&#13;
+- Certain checks that could theoretically scout their contents (such as WWW ID and BtlrCard navis) are not currently scoutable locations. As such, before buying the items, they will display the wrong item.&#13;
+- Fighting Bass always gives the BatKey, even if it is located elsewhere. You can still get the randomized item from this location (don't skip the cutscene for local items), but you will get BatKey as well.&#13;
+- Fighting Bass SP will always give the version-specific giga chip.You can still get the randomized item from this location (don't skip the cutscene for local items), but you will get the giga chip as well.&#13;
+- The puddle to Seaside Area from Central 3 is not a 2-way obstacle. As such, you can go from Seaside into Central 3 even without `ToolPrgm`, but you can't go from Central 3 to Seaside without it.&#13;
+- `AreaPass` does give access to ACDC Area, but the invisible obstacle can only be cleared during the right chapter of the story. You need to trigger the dialogue, then you can enter a menu and close it to re-load the map and clear the obstacle. &#13;
+- Request Points will still display the wrong number of request points under certain circumstances. However, the patch will correctly calculate the appropriate number of request points based on the completion flags, so this can be safely ignored. &#13;
+&#13;
+## Other info&#13;
+For a full list of area requirements of requests, you can reference this [Pastebin](https://pastebin.com/nmb1a562)</content>
+    <link href="https://github.com/RischDev/Archipelago/releases/tag/v0.2.0"/>
   </entry>
 </feed>
