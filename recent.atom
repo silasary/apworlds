@@ -2,35 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-29T18:15:55.486039+00:00</updated>
+  <updated>2026-08-30T00:20:08.042497+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.1</id>
-    <title>Mina The Hollower v1.0.0r2</title>
-    <updated>2026-08-27T02:48:25+00:00</updated>
-    <author>
-      <name>FyreDay, Axertin, ZXavier</name>
-    </author>
-    <content>Features:&#13;
-- Add requirement for at least attack 3 and defense 3 for all boss fights in addition to combat logic&#13;
-- Add Ossex bike sewer map&#13;
-&#13;
-Fixes:&#13;
-- Fixed some combat logic mismatch with roses and defeats&#13;
-- Fix MM image&#13;
-- Fix Armond Fight logic&#13;
-- Fix SB and NB connection,&#13;
-- Update Pinky map, move Pinky locations&#13;
-- Fix Ossex West Wall logic&#13;
-- Fix Loners Landing Requiring bounce for a 3 distance jump</content>
-    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.0.1"/>
-  </entry>
-  <entry>
     <id>https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.0</id>
-    <title>Pikmin 2 v0.8.0.post3</title>
+    <title>Pikmin 2 v0.8.0.post2</title>
     <updated>2026-08-27T02:57:06+00:00</updated>
     <author>
       <name>chpas</name>
@@ -73,8 +52,52 @@ Thanks to Sol for their help with tips on getting Memory Override to work, it ma
     <link href="https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.0"/>
   </entry>
   <entry>
+    <id>https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.0</id>
+    <title>Pikmin 2 v0.8.0.post3</title>
+    <updated>2026-08-27T02:57:06+00:00</updated>
+    <author>
+      <name>chpas</name>
+    </author>
+    <content>**NOTE: This mod is still in the testing phase. Play at your own risk.**&#13;
+**NOTE 2: Games generated on earlier versions will NOT work on this version.**&#13;
+**NOTE 3: Setup for this version is much different (and hopefully much simpler) than previous versions - please reread the setup guide before playing!**&#13;
+**NOTE 4: This release has been patched as of 8/27/26 at 1:49 PM UTC - please redownload if downloaded before then.**&#13;
+&#13;
+## Changelog&#13;
+- Fix a bug that could cause generation to fail if multiple Pikmin 2 players were in a game (thank you KingDragonite for finding and fixing this)&#13;
+- Clarify the error message printed when the filler items dictionary is empty (thank you KingDragonite for finding and fixing this)&#13;
+- Completely rehaul the sending of items from the game to the client&#13;
+  - The save file path is no longer needed&#13;
+  - Linking now occurs at the title screen&#13;
+  - Linking works from any file, not just the leftmost one&#13;
+  - Linking works on Day 1&#13;
+  - Items can be received in menus and cutscenes (excluding the world map)&#13;
+  - Most crashes (e.g., collecting the Utter Scrap location on Day 2) are fixed&#13;
+  - **Memory Override is now required for the game to run properly**&#13;
+  - This may be buggy on Linux; please let me know if you encounter any issues&#13;
+- Completely rehaul the progress restore so that the save file is not necessary&#13;
+  - The duplicate item receipt bug should be permanently squashed&#13;
+- Enemy Randomizer and Boss + Enemy Randomizer now work on the overworld&#13;
+  - May still have lingering issues - please report any crashes with this setting&#13;
+- Add new YAML option: Boss + Enemy Rando Locations&#13;
+  - If either Enemy Randomizer or Boss + Enemy Randomizer is on, allows you to select which locations are randomized (cave, overworld, or both)&#13;
+- Change the game ID so it has a separate save file from vanilla Pikmin 2&#13;
+- Remove the /force-relink command as it is deprecated&#13;
+- Add the total debt to the /status command output&#13;
+&#13;
+Thanks to Sol for their help with tips on getting Memory Override to work, it made most of these features possible!&#13;
+&#13;
+## Known Bugs&#13;
+- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.&#13;
+- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.&#13;
+- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear&#13;
+- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.&#13;
+- Sometimes collecting Louie does not trigger the goal</content>
+    <link href="https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.1</id>
-    <title>Pikmin 2 v0.8.1.post2</title>
+    <title>Pikmin 2 v0.8.1</title>
     <updated>2026-08-27T02:57:06+00:00</updated>
     <author>
       <name>chpas</name>
@@ -90,6 +113,25 @@ Thanks to Sol for their help with tips on getting Memory Override to work, it ma
 - Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.&#13;
 - Sometimes collecting Louie does not trigger the goal</content>
     <link href="https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.1</id>
+    <title>Pikmin 2 v0.8.1.post2</title>
+    <updated>2026-08-27T02:57:06+00:00</updated>
+    <author>
+      <name>chpas</name>
+    </author>
+    <content>**NOTE: This mod is still in the testing phase. Play at your own risk.**&#13;
+&#13;
+## Changelog&#13;
+- Fix a bug that caused the client to silently crash when collecting Louie&#13;
+## Known Bugs&#13;
+- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.&#13;
+- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.&#13;
+- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear&#13;
+- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.&#13;
+- Sometimes collecting Louie does not trigger the goal</content>
+    <link href="https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.1"/>
   </entry>
   <entry>
     <id>https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.3</id>
@@ -729,7 +771,7 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archip
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `d169934c422277511548a0b17f44c02b1002f21a`.
+Built from `7503e139a36d9c810bbc8383069e20d1e76091bf`.
 
 ## Downloads
 
@@ -738,6 +780,9 @@ Built from `d169934c422277511548a0b17f44c02b1002f21a`.
 
 ## Since v1.10.0
 
+- build(bots): the mod's generated SourcePawn comes from a go.mod pinned tool
+- chore(beads): the gamedata the Docker image never copies
+- feat(plugin): open the buff window from chat with !ap buffs
 - docs(changelog): the stock sniper and the hat that could not be worn
 - chore(deps): pin defenderbots v2.39.0
 - chore(deps): pin defenderbots v2.38.0
@@ -1413,16 +1458,31 @@ Known cost on a map that size: the God of Wackens punishment levels 4 and 5 walk
     <author>
       <name>randomsalience</name>
     </author>
-    <content>**NOTE**: If you have an existing game generated on an earlier version 0.3.0-0.3.2 of the apworld, you must re-patch the game after installing this apworld version.&#13;
+    <content>**EDIT**: Please use the hotfix update: https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4-hotfix&#13;
+&#13;
+**NOTE**: If you have an existing game generated on an earlier version 0.3.0-0.3.2 of the apworld, you must re-patch the game after installing this apworld version.&#13;
 &#13;
 ### Fixes&#13;
 - Fix permission error on 3ds, hopefully for real this time.</content>
     <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4"/>
   </entry>
   <entry>
+    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4-hotfix</id>
+    <title>A Link Between Worlds v0.3.4r2</title>
+    <updated>2026-08-29T17:11:59+00:00</updated>
+    <author>
+      <name>randomsalience</name>
+    </author>
+    <content>**NOTE**: If you have an existing game generated on an earlier version 0.3.0-0.3.2 of the apworld, you must re-patch the game after installing this apworld version.&#13;
+&#13;
+### Fixes&#13;
+- Fix permission error on 3ds, hopefully for real this time.</content>
+    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4-hotfix"/>
+  </entry>
+  <entry>
     <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.2</id>
-    <title>Mina The Hollower v1.1.0b2</title>
-    <updated>2026-08-29T17:22:54+00:00</updated>
+    <title>Mina The Hollower v1.1.0.post2</title>
+    <updated>2026-08-29T18:59:11+00:00</updated>
     <author>
       <name>FyreDay, Axertin, ZXavier</name>
     </author>
