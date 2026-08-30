@@ -2,93 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-30T06:20:38.524251+00:00</updated>
+  <updated>2026-08-30T12:20:03.250832+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.0</id>
-    <title>Pikmin 2 v0.8.0.post3</title>
-    <updated>2026-08-27T02:57:06+00:00</updated>
-    <author>
-      <name>chpas</name>
-    </author>
-    <content>**NOTE: This mod is still in the testing phase. Play at your own risk.**&#13;
-**NOTE 2: Games generated on earlier versions will NOT work on this version.**&#13;
-**NOTE 3: Setup for this version is much different (and hopefully much simpler) than previous versions - please reread the setup guide before playing!**&#13;
-**NOTE 4: This release has been patched as of 8/27/26 at 1:49 PM UTC - please redownload if downloaded before then.**&#13;
-&#13;
-## Changelog&#13;
-- Fix a bug that could cause generation to fail if multiple Pikmin 2 players were in a game (thank you KingDragonite for finding and fixing this)&#13;
-- Clarify the error message printed when the filler items dictionary is empty (thank you KingDragonite for finding and fixing this)&#13;
-- Completely rehaul the sending of items from the game to the client&#13;
-  - The save file path is no longer needed&#13;
-  - Linking now occurs at the title screen&#13;
-  - Linking works from any file, not just the leftmost one&#13;
-  - Linking works on Day 1&#13;
-  - Items can be received in menus and cutscenes (excluding the world map)&#13;
-  - Most crashes (e.g., collecting the Utter Scrap location on Day 2) are fixed&#13;
-  - **Memory Override is now required for the game to run properly**&#13;
-  - This may be buggy on Linux; please let me know if you encounter any issues&#13;
-- Completely rehaul the progress restore so that the save file is not necessary&#13;
-  - The duplicate item receipt bug should be permanently squashed&#13;
-- Enemy Randomizer and Boss + Enemy Randomizer now work on the overworld&#13;
-  - May still have lingering issues - please report any crashes with this setting&#13;
-- Add new YAML option: Boss + Enemy Rando Locations&#13;
-  - If either Enemy Randomizer or Boss + Enemy Randomizer is on, allows you to select which locations are randomized (cave, overworld, or both)&#13;
-- Change the game ID so it has a separate save file from vanilla Pikmin 2&#13;
-- Remove the /force-relink command as it is deprecated&#13;
-- Add the total debt to the /status command output&#13;
-&#13;
-Thanks to Sol for their help with tips on getting Memory Override to work, it made most of these features possible!&#13;
-&#13;
-## Known Bugs&#13;
-- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.&#13;
-- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.&#13;
-- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear&#13;
-- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.&#13;
-- Sometimes collecting Louie does not trigger the goal</content>
-    <link href="https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.1</id>
-    <title>Pikmin 2 v0.8.1</title>
-    <updated>2026-08-27T02:57:06+00:00</updated>
-    <author>
-      <name>chpas</name>
-    </author>
-    <content>**NOTE: This mod is still in the testing phase. Play at your own risk.**&#13;
-&#13;
-## Changelog&#13;
-- Fix a bug that caused the client to silently crash when collecting Louie&#13;
-## Known Bugs&#13;
-- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.&#13;
-- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.&#13;
-- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear&#13;
-- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.&#13;
-- Sometimes collecting Louie does not trigger the goal</content>
-    <link href="https://github.com/chpas0/Pikmin2Archipelago/releases/tag/v0.8.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.1</id>
-    <title>Pikmin 2 v0.8.1.post2</title>
-    <updated>2026-08-27T02:57:06+00:00</updated>
-    <author>
-      <name>chpas</name>
-    </author>
-    <content>**NOTE: This mod is still in the testing phase. Play at your own risk.**&#13;
-&#13;
-## Changelog&#13;
-- Fix a bug that caused the client to silently crash when collecting Louie&#13;
-## Known Bugs&#13;
-- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.&#13;
-- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.&#13;
-- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear&#13;
-- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.&#13;
-- Sometimes collecting Louie does not trigger the goal</content>
-    <link href="https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.8.1"/>
-  </entry>
   <entry>
     <id>https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.3</id>
     <title>Phantasy Star II v0.1.3</title>
@@ -727,7 +645,7 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archip
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `7503e139a36d9c810bbc8383069e20d1e76091bf`.
+Built from `c51333685240449955317973d23c9ea97f3b979e`.
 
 ## Downloads
 
@@ -736,6 +654,7 @@ Built from `7503e139a36d9c810bbc8383069e20d1e76091bf`.
 
 ## Since v1.10.0
 
+- chore(deps): defenderbots v2.42.0 and the generator v0.4.1
 - build(bots): the mod's generated SourcePawn comes from a go.mod pinned tool
 - chore(beads): the gamedata the Docker image never copies
 - feat(plugin): open the buff window from chat with !ap buffs
@@ -1534,5 +1453,46 @@ Compatibility Notes&#13;
 ## Other info&#13;
 For a full list of area requirements of requests, you can reference this [Pastebin](https://pastebin.com/nmb1a562)</content>
     <link href="https://github.com/RischDev/Archipelago/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.7</id>
+    <title>PokePark v1.2.7</title>
+    <updated>2026-08-30T09:00:58+00:00</updated>
+    <author>
+      <name>Joe Mama (Mekurushi)</name>
+    </author>
+    <content>- fixed and added option display names&#13;
+**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.6...1.2.7</content>
+    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.5</id>
+    <title>Ori and the Will of the Wisps v0.6.5</title>
+    <updated>2026-08-30T09:16:48+00:00</updated>
+    <author>
+      <name>Satisha</name>
+    </author>
+    <content>This release contains multiple improvements and fixes to the logic and generation, especially with random spawn and entrance randomizer. Huge thanks to @hellhound298 for implementing or suggesting most of these changes !&#13;
+&#13;
+Fixed bugs:&#13;
+- All spawn items should be sent when playing on a solo seed with random spawn.&#13;
+- Fix Teleporters not always being used in the logic.&#13;
+- Fix some `no_combat` options that were not taken into account in the logic.</content>
+    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.19</id>
+    <title>Total War Warhammer 3 v0.10.18r2</title>
+    <updated>2026-08-30T11:08:24+00:00</updated>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>Bugfixes&#13;
+&#13;
+**Full Changelog**: https://github.com/jordansds/Archipelago_TWW3_Alt/compare/v0.10.18...v0.10.19&#13;
+&#13;
+[Submod to allow recruitment of units without buildings](https://github.com/jordansds/TWW3-Recruit-Without-Buildings/releases/tag/v1.0.0)&#13;
+</content>
+    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.19"/>
   </entry>
 </feed>
