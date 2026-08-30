@@ -304,6 +304,21 @@
       "title": "OpenTTD Archipelago v2.1.6",
       "version_simple": "2.4.0",
       "world_version": "2.4.0"
+    },
+    "v2.2.0": {
+      "created_at": "2026-08-30T14:01:24Z",
+      "description": "**The seed's settings now reach the game.** World generation is deferred by a\nturn of the main loop, and the NewGRF scan's config reload landed in that gap\nand overwrote everything the seed had chosen \u2014 train length, station spread,\nvehicle limits and the rest, which were then baked into the savegame. The\nsettings are applied again at the moment the world is built, and a world\ngenerated with the wrong values is repaired when it is loaded.\n\n**Engine**\n- Reconnecting mid-session no longer replays every item (double money,\n  re-fired traps) and no longer loses mission progress.\n- Infrastructure locks only bind the player \u2014 towns can grow their roads and\n  industries can level ground again.\n- Server-synced missions and the Mission Check task reward now count toward\n  shop and tier unlocks.\n- Trap timers no longer run while paused; your own DeathLink no longer\n  bounces back onto you; the Colby event can no longer stall permanently.\n- Shop hints are requested at session start, so slots can show who holds what.\n\n**apworld 2.5.0** \u2014 new seeds need this version; existing seeds still play.\n- Every goal is clamped to what the seed can actually supply: missions,\n  vehicles, town counts.\n- Multiplayer mode really removes ruins, stars, Colby and demigods now.\n- Missions and Colby only name cargo that exists in the chosen landscape and\n  FIRS economy.\n- An unlock can no longer be placed behind the tier it unlocks.\n\n**Plugin 1.5.0** \u2014 needs launcher 3.21.2 or newer.\n- Standalone sessions connect properly; a game crash during startup no longer\n  hangs the launcher; a fresh install gets ruins and stars in its first seed.\n- The plugin source is back in this repository, under `plugin/`.\n\nThis release is machine-verified (generation proven at the option extremes)\nbut has not yet been played through \u2014 see KNOWN_BUGS.md, and report anything\non BetaHub.\n",
+      "download_url": "https://github.com/solida1987/openttd-archipelago/releases/download/v2.2.0/openttd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "015a03ea9a8647201ca6730e9a72a5ead494376997ffa0623e453faf1b0d5d4a",
+      "html_url": "https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.0",
+      "minimum_ap_version": "0.5.0",
+      "size": 66156,
+      "source_url": "https://api.github.com/repos/solida1987/openttd-archipelago",
+      "tag": "v2.2.0",
+      "title": "OpenTTD Archipelago v2.2.0",
+      "version_simple": "2.5.0",
+      "world_version": "2.5.0"
     }
   }
 }

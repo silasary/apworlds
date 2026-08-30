@@ -117,6 +117,22 @@
       "title": "v0.6.0",
       "version_simple": "0.6.0",
       "world_version": "0.6.0"
+    },
+    "v0.6.1": {
+      "created_at": "2026-08-30T09:10:35Z",
+      "description": "## What's Changed\r\n- Refactor of patching code under `PatchManager`\r\n- Hotfixes to APWorld\r\n  - Replacement of sets with lists to store world data and sort region data before placing in world -> Solves issues with world generation determinism\r\n  - Fix logic for access to Telescope and Observatory Cube: Check for either \"Turn Objects\" or for active link door between Throne and Observatory (which puts Gomez at the Telescope entrance level)\r\n    - Link doors are activated once the rooms holding both sides are visited, so the Observatory side of link door can be activated just by entering Observatory from Zu City Ruins\r\n\r\n## Pull Requests Merged\r\n* Update APWorld to v0.6.1 by @wataniyob in https://github.com/nhyldmar/fez-ap/pull/29\r\n* Refactor patches into PatchManager by @thearst3rd in https://github.com/nhyldmar/fez-ap/pull/24\r\n\r\nBugs should either be raised as issues here or tracked on the bugtracker here:\r\nhttps://docs.google.com/spreadsheets/d/1l2KPbde1qFznVFmOZbg8Ee7_sfi5h65sCRZXVndfLwk/edit?usp=sharing\r\n\r\n**Full Changelog**: https://github.com/nhyldmar/fez-ap/compare/v0.6.0...v0.6.1",
+      "download_url": "https://github.com/nhyldmar/fez-ap/releases/download/v0.6.1/fez.apworld",
+      "has_manifest": true,
+      "hash_sha256": "983a13e084fa06f740c3f614b2c6bfd13bf617ba3eedd8f74a612393224ec027",
+      "html_url": "https://github.com/nhyldmar/fez-ap/releases/tag/v0.6.1",
+      "minimum_ap_version": "0.6.3",
+      "prerelease": true,
+      "size": 16283,
+      "source_url": "https://api.github.com/repos/nhyldmar/fez-ap",
+      "tag": "v0.6.1",
+      "title": "v0.6.1",
+      "version_simple": "0.6.1",
+      "world_version": "0.6.1"
     }
   }
 }

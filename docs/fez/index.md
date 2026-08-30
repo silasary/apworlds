@@ -7,7 +7,7 @@ Use your ability to navigate 3D structures from 4 distinct classic 2D perspectiv
 
 
 ## Downloads
-- <a href="https://github.com/nhyldmar/fez-ap/releases/download/v0.6.0/fez.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/nhyldmar/fez-ap/releases/download/v0.6.1/fez.apworld">Latest Version (0.6.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

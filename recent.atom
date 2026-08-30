@@ -2,110 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-30T12:20:03.250832+00:00</updated>
+  <updated>2026-08-30T18:15:43.581197+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.3</id>
-    <title>Phantasy Star II v0.1.3</title>
-    <updated>2026-08-27T08:27:22+00:00</updated>
-    <author>
-      <name>lagdotcom</name>
-    </author>
-    <content>Bugfix for Jet Scooter and Spaceship not being rewarded in multiworld.</content>
-    <link href="https://github.com/lagdotcom/Archipelago/releases/tag/phst2-0.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0</id>
-    <title>Zoominoes v0.1.0.post5</title>
-    <updated>2026-08-27T13:41:57+00:00</updated>
-    <author>
-      <name>chickentuna</name>
-    </author>
-    <content>Community testing build. Feedback and bug reports welcome.
-
-## Install
-
-**1. BepInEx** — download **BepInEx 6 bleeding-edge, `Unity.Mono`, `win-x64`** from
-&lt;https://builds.bepinex.dev/projects/bepinex_be&gt; and unzip it into the game folder,
-next to `Zoominoes.exe`. Zoominoes is a Unity 6 Mono game; BepInEx 5 will not work.
-Run the game once so BepInEx creates its folders, then close it.
-
-e.g. for Windows:
-&lt;https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.Mono-win-x64-6.0.0-be.785%2B6abdba4.zip&gt;
-
-**2. The mod** — unzip `ZoominoesArchipelago.zip` into the same game folder. It drops
-into `BepInEx/plugins/`.
-
-**3. The world** — put `zoominoes.apworld` in your Archipelago install's
-`custom_worlds/` folder.
-
-On Linux the game runs under Proton with the same files. Add
-`WINEDLLOVERRIDES="winhttp=n,b" %command%` to the Steam launch options, or the
-loader will not inject.
-
-## Playing
-
-Press **F1** for the connection panel, enter your server address, port, slot name
-and password, and connect. The panel opens by itself until you do. Details are
-remembered for next launch.
-
-Runs are played on a dedicated **AP** profile. Your existing saves are not read or
-written while the mod is installed.
-
-## What is randomised
-
-Animals, snacks, souvenirs, zookeepers and difficulty tiers arrive as Archipelago
-items, along with extra starting gold, extra plays and hand size.
-
-`randomize_starter_zookeeper` and `randomize_starter_unlocks` extend that to what you
-open with: a random zookeeper in place of Marina, and a random 6 animals, 4 snacks and
-4 souvenirs in place of Starfish, Fennec and the rest. Whatever the draw passes over
-becomes an item like anything else.
-
-Checks come from Gift Shop slots and from finishing a day. **Every difficulty tier
-has its own set of both** — "Tier 3 - Shop 2 - Slot 1" is a different location from
-"Tier 5 - Shop 2 - Slot 1", so each tier you unlock opens 43 fresh checks: 24 across
-its eight shops and 19 across its playable days. On top of that, winning with each
-zookeeper and clearing each tier are checks in their own right.
-
-Three goals: clear a target difficulty tier, clear it with several different
-zookeepers, or collect Zoo Tickets scattered across the multiworld.
-
-Only normal runs take part — daily challenges, seeded runs and challenge runs are
-left alone.
-
-Items apply from your **next** run, since the game fixes its content pool when a run
-begins.
-
-## Options
-
-`Zoominoes-template.yaml` has every option, its documentation and its weights. Put it
-in your Archipelago `Players` folder and change the name at the top.
-
-Content the seed has no room for is unlocked from the start rather than left
-unobtainable.
-
-
-</content>
-    <link href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/tag/v0.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.13.0a</id>
-    <title>Paper Mario The Thousand Year Door v0.13.0a0</title>
-    <updated>2026-08-27T14:20:53+00:00</updated>
-    <author>
-      <name>jamesbrq</name>
-    </author>
-    <content># Fixes&#13;
-- Fix for controls while riding yoshi being reversed in mirror mode.&#13;
-- Fix for multiplayer not working at all even with it enabled.&#13;
-- Fix for rock in twilight trail being immovable in mirror mode.&#13;
-- Fix for crash in twilight trail when entering the background in the 3rd room multiple times.</content>
-    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.13.0a"/>
-  </entry>
   <entry>
     <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.0</id>
     <title>NSMBW v0.3.0</title>
@@ -1466,6 +1367,30 @@ For a full list of area requirements of requests, you can reference this [Pasteb
     <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.7"/>
   </entry>
   <entry>
+    <id>https://github.com/nhyldmar/fez-ap/releases/tag/v0.6.1</id>
+    <title>Fez v0.6.1</title>
+    <updated>2026-08-30T09:10:35+00:00</updated>
+    <author>
+      <name>Nolih</name>
+    </author>
+    <content>## What's Changed&#13;
+- Refactor of patching code under `PatchManager`&#13;
+- Hotfixes to APWorld&#13;
+  - Replacement of sets with lists to store world data and sort region data before placing in world -&gt; Solves issues with world generation determinism&#13;
+  - Fix logic for access to Telescope and Observatory Cube: Check for either "Turn Objects" or for active link door between Throne and Observatory (which puts Gomez at the Telescope entrance level)&#13;
+    - Link doors are activated once the rooms holding both sides are visited, so the Observatory side of link door can be activated just by entering Observatory from Zu City Ruins&#13;
+&#13;
+## Pull Requests Merged&#13;
+* Update APWorld to v0.6.1 by @wataniyob in https://github.com/nhyldmar/fez-ap/pull/29&#13;
+* Refactor patches into PatchManager by @thearst3rd in https://github.com/nhyldmar/fez-ap/pull/24&#13;
+&#13;
+Bugs should either be raised as issues here or tracked on the bugtracker here:&#13;
+https://docs.google.com/spreadsheets/d/1l2KPbde1qFznVFmOZbg8Ee7_sfi5h65sCRZXVndfLwk/edit?usp=sharing&#13;
+&#13;
+**Full Changelog**: https://github.com/nhyldmar/fez-ap/compare/v0.6.0...v0.6.1</content>
+    <link href="https://github.com/nhyldmar/fez-ap/releases/tag/v0.6.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.5</id>
     <title>Ori and the Will of the Wisps v0.6.5</title>
     <updated>2026-08-30T09:16:48+00:00</updated>
@@ -1494,5 +1419,119 @@ Fixed bugs:&#13;
 [Submod to allow recruitment of units without buildings](https://github.com/jordansds/TWW3-Recruit-Without-Buildings/releases/tag/v1.0.0)&#13;
 </content>
     <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.19"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.6.2</id>
+    <title>Pokemon Snap v0.6.0r2</title>
+    <updated>2026-08-30T12:28:19+00:00</updated>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <author>
+      <name>cobyw</name>
+    </author>
+    <content>## What's Changed&#13;
+* Use Archipelago repo to build apworld file&#13;
+* Fix Universal Tracker bugs&#13;
+* Fix PKMN Report Count Logic</content>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/APxiv/releases/tag/0.31.2</id>
+    <title>Final Fantasy XIV v0.31.2</title>
+    <updated>2026-08-30T13:36:59+00:00</updated>
+    <author>
+      <name>silasary</name>
+    </author>
+    <content>* Fixed bug where logic thought you could do duties as a Disciple of the Hand or Land.
+* This confused UT, but hopefully shouldn't have caused any unbeatable seeds.
+* That said, if you genned on 0.31.1, and your Fisher is higher than any of your combat classes... You may have to cheat some locations.
+(Only fisher though, because the rest of them will always be filler.)</content>
+    <link href="https://github.com/silasary/APxiv/releases/tag/0.31.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.0</id>
+    <title>OpenTTD v2.5.0</title>
+    <updated>2026-08-30T14:01:24+00:00</updated>
+    <author>
+      <name>OpenTTD AP Team</name>
+    </author>
+    <content>**The seed's settings now reach the game.** World generation is deferred by a
+turn of the main loop, and the NewGRF scan's config reload landed in that gap
+and overwrote everything the seed had chosen — train length, station spread,
+vehicle limits and the rest, which were then baked into the savegame. The
+settings are applied again at the moment the world is built, and a world
+generated with the wrong values is repaired when it is loaded.
+
+**Engine**
+- Reconnecting mid-session no longer replays every item (double money,
+  re-fired traps) and no longer loses mission progress.
+- Infrastructure locks only bind the player — towns can grow their roads and
+  industries can level ground again.
+- Server-synced missions and the Mission Check task reward now count toward
+  shop and tier unlocks.
+- Trap timers no longer run while paused; your own DeathLink no longer
+  bounces back onto you; the Colby event can no longer stall permanently.
+- Shop hints are requested at session start, so slots can show who holds what.
+
+**apworld 2.5.0** — new seeds need this version; existing seeds still play.
+- Every goal is clamped to what the seed can actually supply: missions,
+  vehicles, town counts.
+- Multiplayer mode really removes ruins, stars, Colby and demigods now.
+- Missions and Colby only name cargo that exists in the chosen landscape and
+  FIRS economy.
+- An unlock can no longer be placed behind the tier it unlocks.
+
+**Plugin 1.5.0** — needs launcher 3.21.2 or newer.
+- Standalone sessions connect properly; a game crash during startup no longer
+  hangs the launcher; a fresh install gets ruins and stars in its first seed.
+- The plugin source is back in this repository, under `plugin/`.
+
+This release is machine-verified (generation proven at the option extremes)
+but has not yet been played through — see KNOWN_BUGS.md, and report anything
+on BetaHub.
+</content>
+    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-23.0.0</id>
+    <title>The Legend of Zelda - Oracle of Seasons v23.0.0</title>
+    <updated>2026-08-30T17:35:26+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>## 🗳️ New Options&#13;
+- Added a start position option, that contains north horon, sunken city, tarm ruins, temple of seasons and samasa desert&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+- Shops items can now be bought more than once if it is local and makes sense to be bought more than once (potions, ore chunks, rupees)&#13;
+- Owl hints now try to give items that appear later in logic, and should stop constantly telling you how to get what you already have&#13;
+- You can now always put the 4 jewels in their slots if you want&#13;
+- Subrosia digging spots are now permanently dug up&#13;
+- Added a way to warp back to the ship after giving the bell to the pirate captain&#13;
+- Added bomb and bombchu upgrades to the pool, packs of bombs no longer increase the max bomb count&#13;
+&#13;
+## 🧠 Logic&#13;
+- Added logic requiring some amounts of heart containers before beating some bosses or doing skips. The amount depends on the logic difficulty&#13;
+- Breaking the blocks to the goron chest with bombchus is now hard logic&#13;
+- Added logic to jump on the button in d8, for the armos chest&#13;
+- Added bombchu jumps to hell logic (thanks omega)&#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+- Moved the mt cucco warp to between tarm ruins and sunken city&#13;
+- Fixed Switch Hook allowing to jump at the same time</content>
+    <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-23.0.0"/>
   </entry>
 </feed>
