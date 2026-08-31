@@ -6,7 +6,7 @@ puzzles to unlock the boss puzzles and win.
 
 
 ## Downloads
-- <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.17-prealpha/sgtpuzzles.apworld">Latest Version (0.1.17rc0)</a>
+- <a href="https://github.com/ishanpm/Archipelago-sgtpuzzles/releases/download/v0.1.19-prealpha/sgtpuzzles.apworld">Latest Version (0.1.19rc0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,15 +1,18 @@
 # Simon Tatham&#x27;s Portable Puzzle Collection
 
 ## Latest
-- <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.17-prealpha/sgtpuzzles.apworld">Latest Version (0.1.17rc0)</a>
+- <a href="https://github.com/ishanpm/Archipelago-sgtpuzzles/releases/download/v0.1.19-prealpha/sgtpuzzles.apworld">Latest Version (0.1.19rc0)</a>
 
 ## All Versions
+
+#### v0.1.19rc0
+- <a href="https://github.com/ishanpm/Archipelago-sgtpuzzles/releases/download/v0.1.19-prealpha/sgtpuzzles.apworld">https://github.com/ishanpm/Archipelago-sgtpuzzles/releases/download/v0.1.19-prealpha/sgtpuzzles.apworld</a>
 
 #### v0.1.17rc0
 - <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.17-prealpha/sgtpuzzles.apworld">https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.17-prealpha/sgtpuzzles.apworld</a>
 
 #### v0.1.16rc0
-- <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.16-prealpha/sgtpuzzles.apworld">https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.16-prealpha/sgtpuzzles.apworld</a>
+- <a href="https://github.com/ishanpm/Archipelago-sgtpuzzles/releases/download/v0.1.16-prealpha/sgtpuzzles.apworld">https://github.com/ishanpm/Archipelago-sgtpuzzles/releases/download/v0.1.16-prealpha/sgtpuzzles.apworld</a>
 
 #### v0.1.11r5
 - <a href="https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.15-prealpha/sgtpuzzles.apworld">https://github.com/ishanpm/ap-sgtpuzzles-web/releases/download/v0.1.15-prealpha/sgtpuzzles.apworld</a>

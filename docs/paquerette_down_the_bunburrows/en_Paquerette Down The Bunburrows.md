@@ -10,6 +10,12 @@
 - [Client Repository](https://github.com/SergeAzel/Bunject/releases/)
 
 
+## Compatibility
+
+This version of the APWorld targets **Paquerette Down The Bunburrows v1.1.4** and the
+**Bunject Archipelago client mod v1.3.0**. See the [Setup Guide](../../../tutorial/Paquerette%20Down%20The%20Bunburrows/setup_en) for details.
+
+
 ## What kind of game is this?
 
 Paquerette Down The Bunburrows is a sokoban-inspired top down puzzle game, about collecting bunnies.
@@ -79,12 +85,12 @@ Bunny identity **W-6-2** would be the **2nd** bunny in room **W-6**
 Unlocking **N-4** means you now have tools available in room **N-6**
 
 
-### Fluffle
+### Fluff
 
-**Fluffle** is the go-to junk item for this game.  If you capture a bunny and find Fluffle, the congratulations you get nothing!
+**Fluff** is the go-to junk item for this game.  If you capture a bunny and find Fluff, then congratulations you get nothing!
 
-**Golden Fluffle**, is specifically used for the **Golden Fluffle* victory condition, 
-where some number of **Golden Fluffles** are distributed through your world to be located.
+**Golden Fluff** is specifically used for the **Golden Fluff** victory condition,
+where some amount of **Golden Fluff** is distributed through your world to be located.
 
 These will only distribute within Paquerette Down The Bunburrows, so someone else cannot win your game for you.
 
@@ -126,12 +132,12 @@ Four options available, in order of length / difficulty:
 
 - Credits:  Reach the credits to win.  **This is the only beginner-friendly option**
 - Golden Bunny:  Reach the **Golden Bunny** to win.
-- Golden Fluffle:  Collect all **Golden Fluffles** to win.
+- Golden Fluff:  Collect all **Golden Fluff** to win.
 - Full Clear:  Collect all 134 bunnies to win.
 
 
-### Golden Fluffles:
-Determines the number of Golden Fluffles to generate for Golden Fluffle runs.
+### Golden Fluff:
+Determines how much Golden Fluff to generate for Golden Fluff runs.
 Does not affect games with other victory conditions.
 
 

@@ -10,6 +10,17 @@
 - [Client Repository](https://github.com/SergeAzel/Bunject/releases/)
 
 
+## Required Software
+
+- Paquerette Down The Bunburrows **v1.1.4** on Steam
+- [Bunject Archipelago mod **v1.3.0**](https://thunderstore.io/c/paquerette-down-the-bunburrows/p/BNYSmod/Bunject_Archipelago/)
+  (or the equivalent [GitHub release](https://github.com/SergeAzel/Bunject/releases/))
+
+This version of the APWorld requires mod **v1.3.0** or later. Older mod builds cannot
+connect to seeds generated with this APWorld, and newer mod releases are paired with
+newer APWorld releases hosted on the [APWorld Repository](https://github.com/SergeAzel/Archipelago_PDTB/releases).
+
+
 ## Instructions
 
 
