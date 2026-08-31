@@ -8,6 +8,9 @@
 #### v4
 - <a href="https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa_4_3/tloz_ooa.apworld">https://github.com/SenPierre/ArchipelagoOoA/releases/download/ooa_4_3/tloz_ooa.apworld</a>
 
+#### v1.1.0
+- <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.1.0/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.1.0/tloz_ooa.apworld</a>
+
 #### v1.0.2
 - <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.2/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.2/tloz_ooa.apworld</a>
 

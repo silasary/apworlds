@@ -1,9 +1,17 @@
 {
+  "authors": [
+    "Xylen",
+    "TylerJG92"
+  ],
   "description": "Say howdy to West of Loathing -- a single-player slapstick comedy adventure role-playing game set in the wild west \nof the Kingdom of Loathing universe. Traverse snake-infested gulches, punch skeletons wearing cowboy hats, grapple \nwith demon cows, and investigate a wide variety of disgusting spittoons. Explore a vast open world and encounter a \ncolorful cast of characters, some of whom are good, many of whom are bad, and a few of whom are ugly.",
   "game": "West of Loathing",
   "github": "https://github.com/Lucasvdm/WOLAP",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0-alpha": {
       "created_at": "2025-05-01T23:12:53Z",
@@ -159,6 +167,21 @@
       "title": "WOLAP v0.2.3",
       "version_simple": "0.2.3",
       "world_version": "0.2.3"
+    },
+    "v0.2.4-alpha": {
+      "created_at": "2026-08-30T23:00:15Z",
+      "description": "# APWorld Changes\r\n- Added an `archipelago.json` manifest file for future AP 7.0 support\r\n\r\n# Client Mod Changes\r\n- Added support for installation via Thunderstore/R2ModMan and updated documentation accordingly\r\n\r\n# Misc Changes\r\n- Added a new GitHub Issues template, which we'd encourage people to use for bug reports\r\n\r\nBeyond any code changes, the most significant update with this release is that @TylerJG92 has joined as a contributor, which is why this is being somewhat resurrected and there's been any work on it at all since the last release almost a full year ago. With the exception of the small new manifest file in the APWorld, he is to thank for all of the sudden new work.\r\n\r\nI (@Lucasvdm) am still around and plan on helping him out, sharing knowledge, reviewing changes and such, but at least for the foreseeable future @TylerJG92 will probably be the main developer on this project going forward. Who knows, maybe this will inspire me to get back into the swing of things too -- although I am only going to get much, much busier in the coming weeks, so no promises.\r\n\r\nIf you've already installed the mod, the patch can be applied just by overwriting the WOLAP.dll file with the new version. Note, however, that there are now also new installation options, which can take advantage of the contents of the new `Patcher` folder in `WOLAP_Mod`. Applying the new .apworld requires generating a new multiworld.",
+      "download_url": "https://github.com/Lucasvdm/WOLAP/releases/download/v0.2.4-alpha/westofloathing.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1664eb765dbf0d7248cd47793aaacbf666929527818fc72a452f6f973cb64d70",
+      "html_url": "https://github.com/Lucasvdm/WOLAP/releases/tag/v0.2.4-alpha",
+      "minimum_ap_version": "0.6.3",
+      "size": 30370,
+      "source_url": "https://api.github.com/repos/Lucasvdm/WOLAP",
+      "tag": "v0.2.4-alpha",
+      "title": "WOLAP v0.2.4",
+      "version_simple": "0.2.4",
+      "world_version": "0.2.4a0"
     }
   }
 }

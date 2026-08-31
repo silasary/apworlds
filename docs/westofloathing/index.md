@@ -7,7 +7,7 @@ colorful cast of characters, some of whom are good, many of whom are bad, and a 
 
 
 ## Downloads
-- <a href="https://github.com/Lucasvdm/WOLAP/releases/download/v0.2.3-alpha/westofloathing.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/Lucasvdm/WOLAP/releases/download/v0.2.4-alpha/westofloathing.apworld">Latest Version (0.2.4a0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
