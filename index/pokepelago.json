@@ -230,6 +230,21 @@
       "title": "v0.6.3",
       "version_simple": "0.6.3",
       "world_version": "0.6.3"
+    },
+    "v0.6.4": {
+      "created_at": "2026-08-31T16:27:22Z",
+      "description": "# Pokepelago v0.6.4\n\nIn this release, I've brought everything that was on beta during July and August to everyone.\n\n## Web client\n\n- **Sprite fix:** silhouettes no longer stop rendering after switching between Derpy and normal sprites, so you no longer need to refresh the page. (BUG-21)\n- **New-player onboarding:** I added a first-run \"What is Pokepelago?\" card and a guided tour of the interface. You can replay it from Settings.\n- **Tracker fix:** the Pokedex and Pokegear items were swapped in the tracker display, so a granted Pokedex appeared as a Pokegear and vice versa. This was display-only, and seeds were never affected. (BUG-24)\n- **Sound notifications**, contributed by AfiliaFrostfang: you can opt in to sounds for when a Pokemon becomes guessable and when a progressive item arrives, with support for custom sound files.\n- **Connection help:** the connect form now explains why an HTTPS page can only reach wss:// servers.\n- **Decode hardening:** route key and line unlock items now decode using explicit ID maps exported by the APWorld. This replaces client-side arithmetic that has caused drift bugs in the past.\n- I added search-engine metadata so the site can be found.\n- The client now reports a few anonymous operational events, including connection successes or failures and goal completions, so I can see recurring problems. There is no account linkage and no gameplay data. Details are at https://ap-pie.com/privacy.\n\n## APWorld\n\n- I fixed a rare generation failure (FillError) that happened when a random region roll landed on Hisui alone with a heavy lock stack. About 0.04% of random-region seeds were affected.\n- Generation now warns you when route locks or line locks force dexsanity on, instead of silently changing your YAML's setting.\n- Choosing Hisui as your only region together with two or more lock options is now rejected at the start of generation with a clear message naming the fix, instead of failing later with a cryptic FillError.\n- I added item name groups for YAML convenience.\n- Archipelago 0.6.7 or newer is required, unchanged since v0.6.1.\n\n## Also\n\nPokepelago is now also available at https://pokepelago.ap-pie.com. It is the same site. Just note that your browser's progress and settings stay with whichever address you use.\n",
+      "download_url": "https://github.com/dowlle/PokepelagoClient/releases/download/v0.6.4/pokepelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3c4db87e8b90b4af04087c9591060b87fa629834d1b394b6dfda0abf688ce87c",
+      "html_url": "https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 100398,
+      "source_url": "https://api.github.com/repos/dowlle/PokepelagoClient",
+      "tag": "v0.6.4",
+      "title": "v0.6.4",
+      "version_simple": "0.6.4",
+      "world_version": "0.6.4"
     }
   }
 }

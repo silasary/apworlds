@@ -65,15 +65,17 @@
 - NSMBW does not contain AI art.
 However, generative AI have been used for the following in this project:
 1) As a linter (line completer)
-2) To help with decompiling source code (unsuccessfully)
-3) Small PR have been made by IndyGibb using Caude, they have been thoroughly reviewed by humans
+2) To help with decompiling source code (unsuccessfully) (~ 10 lines of code, heavily modified by human afterward)
+3) Small PR have been made by IndyGibb using Caude, they have been thoroughly reviewed by humans ( ~ 50 lines of code, later modified by human)
 
 
 ## AI-usage
 Gemini & ChatGPT 
-  - decoding assembly and reading address maps
+  - decoding assembly and reading address maps (very minor usage, they are not good at this)
+
 Pycharm linter
-  - linter, a line completion tool built into py-charm
+  - linter, a line completion tool built into py-charm (extensive usage)
+
 Claude
   - Small PR have been made by IndyGibb using claude, they have been thoroughly reviewed by humans
 

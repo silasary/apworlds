@@ -319,6 +319,36 @@
       "title": "OpenTTD Archipelago v2.2.0",
       "version_simple": "2.5.0",
       "world_version": "2.5.0"
+    },
+    "v2.2.1": {
+      "created_at": "2026-08-31T12:15:31Z",
+      "description": "**Win targets recalibrated against a real session.** A 5.5-hour Hard game\nshowed three of the six goals finishing on time and three that never could.\n\n- **The profit goal is yearly now.** The old check read a single\n  `old_economy` entry and called it monthly \u2014 those entries are quarters, so\n  the label was wrong twice over. The engine sums the last four completed\n  quarters and the status window says *Yr. Profit*.\n- **The population goal respects the map.** The engine clamps it to 10,000\n  per town on the actual map, so a 30-town map is held to 300k, not 700k.\n  This applies to running seeds too.\n- **Preset table rescaled** (apworld 2.6.0): population 50k\u2013800k across the\n  difficulties, cargo 1.5M\u201335M (measured throughput was about 1.2M tonnes an\n  hour; the old Hard column was sixty hours of hauling), profit 1M\u201350M\n  yearly. Company value, vehicles and missions are unchanged.\n\n**Fixed: \"Buy any item from the shop\" never completed.** The apworld sends\nthat mission as type `purchase`; the engine matched three older strings and\nnone of them was that. The check now also counts shop locations already sent\nto the server, so purchases made before this fix complete the mission on the\nnext session.\n\nExisting seeds keep their baked cargo and value numbers; the profit unit and\nthe population clamp apply to them immediately. New seeds need apworld 2.6.0.\nPlugin 1.5.1 only updates the settings form (the profit slider says Yearly);\nexisting YAML files stay valid.\n",
+      "download_url": "https://github.com/solida1987/openttd-archipelago/releases/download/v2.2.1/openttd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e2c82d7207031d1ffe28638d480e75c2f2fdb1a223b0d620dc870cbfac40292a",
+      "html_url": "https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.1",
+      "minimum_ap_version": "0.5.0",
+      "size": 67081,
+      "source_url": "https://api.github.com/repos/solida1987/openttd-archipelago",
+      "tag": "v2.2.1",
+      "title": "OpenTTD Archipelago v2.2.1",
+      "version_simple": "2.6.0",
+      "world_version": "2.6.0"
+    },
+    "v2.2.2": {
+      "created_at": "2026-08-31T13:37:43Z",
+      "description": "Engine-only release \u2014 the apworld (2.6.0) and plugin (1.5.1) are unchanged\nfrom v2.2.1 and are re-attached here so `latest` stays complete.\n\n**The shop**\n- Bought items sink to the bottom; the list opens on what can still be\n  bought instead of a green wall of past purchases.\n- Slots unlock in batches of ten, the first ten are free, and a batch costs\n  its tier number in mission credits (1, 2, 3, ... capped at 100). The far\n  end of a 400-slot shop cost about 400 completed missions before; now 39.\n\n**The task board**\n- Ten active tasks instead of five, and expired tasks vanish and are\n  replaced instead of blocking their slot for a year.\n- Tasks are only offered on industries that actually produced last month,\n  with amounts that fit inside half their output over the deadline \u2014 no more\n  8,000-tonne pickups from a bank, or goods from a factory nobody supplies.\n- Passenger tasks pick towns big enough to carry them, and a task counts\n  only the cargo its text names.\n- Note the engine's own rule: pickup is credited when the cargo is finally\n  delivered, not when it is loaded.\n",
+      "download_url": "https://github.com/solida1987/openttd-archipelago/releases/download/v2.2.2/openttd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e2c82d7207031d1ffe28638d480e75c2f2fdb1a223b0d620dc870cbfac40292a",
+      "html_url": "https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.2",
+      "minimum_ap_version": "0.5.0",
+      "size": 67081,
+      "source_url": "https://api.github.com/repos/solida1987/openttd-archipelago",
+      "tag": "v2.2.2",
+      "title": "OpenTTD Archipelago v2.2.2",
+      "version_simple": "2.6.0",
+      "world_version": "2.6.0r2"
     }
   }
 }

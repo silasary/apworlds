@@ -1,9 +1,12 @@
 # NSMBW
 
 ## Latest
-- <a href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/download/v0.3.2/nsmbw.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/download/v0.3.3/nsmbw.apworld">Latest Version (0.3.3)</a>
 
 ## All Versions
+
+#### v0.3.3
+- <a href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/download/v0.3.3/nsmbw.apworld">https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/download/v0.3.3/nsmbw.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/download/v0.3.2/nsmbw.apworld">https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/download/v0.3.2/nsmbw.apworld</a>

@@ -2,409 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-31T12:19:38.191710+00:00</updated>
+  <updated>2026-08-31T18:21:05.576641+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.11.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.11.0r2</title>
-    <updated>2026-08-28T23:13:19+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-Change the bot team mid-run, build your own loadouts, scale robot health, and
-weapon buffs in place of spare cash. Two of them came from kelly-cs.
-
-### Change the team without ending the run
-
-- A **Bot Switcher** tab, between the mission list and the log, in the window
-  and in the terminal. It shows what each seat plays and carries, and one button
-  hands a new team to the server.
-- Saving a bot setting no longer restarts the server. Every other setting still
-  does, because the game reads those once at startup.
-- `!ap bots` opens the same team in the game, seat then class.
-- The bots keep the money they earned across a switch. Measured: every one came
-  back holding its full 400 credits and spent it within seconds.
-- A change made during a wave waits for the break. A bot pulled out mid-wave
-  drops its buildings, and its replacement starts again from spawn.
-
-### Build your own loadouts
-
-- A **Loadouts** page in the settings. Pick a class, pick a weapon per slot,
-  name it, save it. The saved ones join every weapon menu for that class.
-- 251 weapons, taken from what the bot mod can hand out and named from the
-  game's own files.
-- Remove a loadout and any seat still naming it plays stock. The team survives.
-
-### Balancing
-
-- A **Balancing** page with a robot health scale, and the old Balancing page is
-  **Rewards**. What the robots are worth and what the run hands out are
-  different questions.
-- Robot health is what the robots keep with one player on RED, rising back to
-  100 at six. A full team plays the mission as Valve wrote it. It starts at 100,
-  which changes nothing.
-- At 50 the bots killed 108 robots a wave, against 52 to 64 unscaled, and
-  cleared three waves in eight where twenty four attempts cleared none.
-
-### Weapon buffs, by kelly-cs
-
-- Spare checks award stackable weapon buffs instead of cash. Cash is spent
-  inside the wave it arrives in; a buff lasts the run.
-- Extra rockets, grenades, stickies, arrows, bolts, flares, syringes, energy
-  projectiles and thrown jars.
-- On by default, at three quarters of the spare checks.
-- Test mode hands out weapon buffs early enough to try them. They were last in a
-  list of seventeen thousand, so the first one arrived about sixty waves in.
-
-### Community maps, by kelly-cs
-
-- Optional community mission support. Nothing bundles third-party assets: the
-  launcher fetches what you choose, or imports a ZIP you already have.
-- The list keeps Valve and community missions apart.
-- A map with no bot navigation file shows red, and the list refuses it. The
-  bots cannot walk it.
-- The launcher checks the missions you picked can satisfy the run before it
-  generates anything.
-- Offer every stock-compatible mission found for the 19 supported community
-  maps. Mission source checks now also verify wave, tank, and giant metadata so
-  Archipelago cannot generate an objective the selected mission lacks.
-
-### The bots
-
-- Snipers with the stock rifle no longer stand where they shopped for the whole
-  mission. They were never given the sniper role, so the game never sent them to
-  a perch: a sniper carrying any other rifle worked, which is what made it look
-  like a weapon problem. Only servers with custom loadouts on were affected.
-- A bot hat the class cannot wear is turned down instead of throwing, which used
-  to cost that bot the rest of its cosmetics.
-- Engineers no longer freeze in one spot and build nothing. A bot stuck three
-  times in the same place is moved onto ground around him he can walk on. On
-  Mannworks that took a run from crashing before the first wave to four clean
-  waves, and a team that cleared none of six waves cleared six of nine.
-- The wave-start stutter on Mannhattan is gone with it. The worst frame in a
-  wave fell from 1833 ms to 141 ms, because a bot that cannot move asks the game
-  for a route every frame.
-- The mod moves a defender that cannot leave spawn to the objective. Some
-  community maps have navigation the bots will not use, and it happens on Valve
-  maps too. Also by kelly-cs.
-- One press of the build button makes one building. Engineers built a second
-  dispenser and a second sentry.
-- A sentry buster blowing itself up is no longer counted as a giant.
-- `sm_redbots_feature_watch_idle_bots` sets the switch it names. It set a
-  different one before.
-
-Stock snipers standing at the upgrade bench is still open. Nothing in this
-release changes it.
-
-### Under it
-
-- The settings window opens on a settings file written before the Balancing
-  page existed. It refused to open at all, because the robot health scale read
-  back as zero and the window will not take a number below ten.
-- The minus button at the upgrade station gives back credits that came from a
-  cash bundle. Taking one upgrade back used to leave you with less than you
-  started with.
-- A crash in the launcher's background work no longer closes the window and
-  stops the server you are playing on. It is caught and written to the log a
-  debug bundle carries.
-- The window and the terminal offer the same tabs and write the same settings.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* Add Archipelago weapon buff upgrades by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/3
-* Optional Community Map Support by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/2
-* Add all remaining community mission variants  by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/4
-
-## New Contributors
-* @kelly-cs made their first contribution in https://github.com/m-this/tf2-archipelago/pull/3
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.10.0...v1.11.0
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/ZjI5NzRiMjliZDkzMzEzODhjMWIxNzk3YmI2YjNmYWI6MTc4Nzk1ODk1MQ==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/OWRlZDlhNGJhMTYyMDNjYzBjYTQyYTVmMDZiY2NmY2M6MTc4Nzk1ODk1Ng==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.11.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.1</id>
-    <title>Mina The Hollower v1.0.0r3</title>
-    <updated>2026-08-28T23:23:03+00:00</updated>
-    <author>
-      <name>FyreDay, Axertin, ZXavier</name>
-    </author>
-    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.7.0</id>
-    <title>Yellow Taxi Goes Vroom v0.7.0</title>
-    <updated>2026-08-29T01:19:12+00:00</updated>
-    <author>
-      <name>soopercool101</name>
-    </author>
-    <content>[Mod](https://github.com/soopercool101/YellowTaxiAP/releases/tag/v0.7.0) | [Setup Guide](https://github.com/soopercool101/Archipelago/blob/YTGV.v0.7.0/worlds/yellowtaxi/docs/setup_en.md)&#13;
-&#13;
-## v0.7.0 - The "Randomization" Update&#13;
-&#13;
-- Add Crash Test Industries, with full logic&#13;
-- Shuffle Flip O' Will now has a per-level option&#13;
-- New options:&#13;
-  - Shuffle Spin Attack: Separated from Shuffle Flip O' Will, whether Spin Attack should be shuffled into the pool&#13;
-  - Psycho Taxi Unlock Condition: Replaces Shuffle Psycho Taxi, closer matches the other levels&#13;
-  - Mosk's Rocket Unlock Condition: Replaces Shuffle Mosk's Rocket, closer matches the other levels&#13;
-  - Allow Jumping in Top-Down Sections: Allows jumping in areas like Crash Test Industries which usually do not allow it&#13;
-  - Quick Pickups: Allows bypassing the collectable dance&#13;
-  - Taxi Skin: Allow selecting from a variety of cosmetic taxi skins&#13;
-  - Level Shuffle Options:&#13;
-    - Use Separate Entrance Pools: Splits levels into three separate pools when randomizing&#13;
-    - Allow Shuffling Removed Levels: Allows shuffling in levels that would normally not be included by options&#13;
-    - Portal Order: Whether portals use the vanilla game, internal code, or a shuffled order&#13;
-    - Shuffle Granny's Island Levels: Whether the three Granny's Island levels will be shuffled&#13;
-    - Shuffle Time Trial Entrances: Whether Time Trial entrances will be shuffled&#13;
-    - Shuffle Rocket Entrance: Whether the Mosk's Rocket entrance should be shuffled&#13;
-    - Shuffle Psycho Taxi Entrance: Whether Psycho Taxi's entrance should be shuffled&#13;
-- Add new item groups for each level's moves&#13;
-- Universal Tracker now uses deferred entrances, and will not show what's behind an entrance until you reveal it in-game&#13;
-- Various logic changes</content>
-    <link href="https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.5</id>
-    <title>Mega Man X2 v2.0.5</title>
-    <updated>2026-08-29T02:20:18+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>finally&#13;
-# Info&#13;
-* [General Information](https://thelx5.github.io/mmx2/index.html)&#13;
-* [Setup Guide](https://thelx5.github.io/mmx2/setup.html)&#13;
-# Changes&#13;
-* Fixed Crystal Snail sometimes being marked as complete after completing the intro stage and then resetting the game</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/mmx2-v2.0.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.15</id>
-    <title>Ratchet &amp; Clank: Size Matters v0.4.15</title>
-    <updated>2026-08-29T02:59:40+00:00</updated>
-    <author>
-      <name>Pangu</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <author>
-      <name>ImJustATester</name>
-    </author>
-    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.15
-
-**Branch:** main
-**Date:** 2026-08-29 03:41 UTC
-
-&lt;details&gt;
-&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.14&lt;/strong&gt;&lt;/summary&gt;
-
-- Merge branch 'main' of https://github.com/Panguu/Archipelago-RaCSM (d53ab5db)
-- fix(Rac5): location checks on incorrect planet, vendor logic purchase titans showing duplicate and being buggy (4645cdf6)
-- Fix README formatting and clarify Shrink Ray Skips (aae319e1)
-- Update README with design questions and Shrink Ray Skips (05b64ee1)
-
-&lt;/details&gt;
-
-**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.14...rac-size-matters/v0.4.15
-
-### Notes
-This release was automatically generated from the **main** branch.
-Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
-</content>
-    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.15"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.5.0</id>
-    <title>The Legend of Zelda: A Link to the Past v1.5.0</title>
-    <updated>2026-08-29T03:58:19+00:00</updated>
-    <author>
-      <name>aurabot</name>
-    </author>
-    <content>* New option trap_appearance to customize how traps appear in-game.&#13;
-* Traps now appear as progression items by default&#13;
-* Fixed a bug where generation failed alongside some other APWorlds</content>
-    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.3</id>
-    <title>OpenTTD v2.2.0r2</title>
-    <updated>2026-08-29T04:59:28+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content>Two questions this build can answer that the last one could not.
-
-At session start the game now reports what the player can ACTUALLY build, by asking IsEngineBuildable for every engine — the same function the build window asks:
-
-    [AP] Buildable right now: 5 (trains=1 road=3 ships=0 aircraft=1)
-    [AP]   buildable engine ids: 15 132 219 253 345
-
-And the five-second engine lock sweep now says when it takes something away, and how many engines it is protecting. That set lives only in memory and is never saved, so if it were ever empty during a session the sweep would quietly remove the player's whole fleet:
-
-    [AP] LockSweep: relocked N engine(s); AP-unlocked set holds M
-
-The engine is otherwise unchanged from v2.1.2.
-</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.4</id>
-    <title>OpenTTD v2.2.0r3</title>
-    <updated>2026-08-29T05:33:52+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content>Received items are actually applied now. Every item London relayed arrived carrying only its id — the name field was empty — and the code gave up on an empty name instead of resolving the id through slot_data's item_id_to_name table. Measured in a live session: five shop purchases and three stars all registered on the server, the items all came back, and not one was applied. No engine in the build list, no ferry, and a Cash Injection £200,000 that never became money. The starting vehicles masked it, because they are granted on a different path.
-
-An item that cannot be resolved is now said out loud in the console log instead of vanishing.
-
-The window title tells the truth. The version stamp comes from a .ap_version file that overrides git and had said v2.0.4 since the 20th; the packer now refuses an engine whose stamp does not match the release.
-
-If you load an existing save, your vehicles arrive on reconnect but already-consumed cash items do not — item replay skips consumables by design. Starting the seed's world fresh delivers everything, including the money.
-</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8-pre.1</id>
-    <title>CrossCode v0.9.8rc1</title>
-    <updated>2026-08-29T06:15:11+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Changes to Mod&#13;
-&#13;
-* Added more functionality to the Archipelago menus (@CodeTriangle, #98).&#13;
-  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.&#13;
-  * Text client now automatically jumps to the bottom.&#13;
-  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.&#13;
-&#13;
-### Internal Changes&#13;
-&#13;
-* Reformatted a large amount of input data (@Valkhiya, #93)&#13;
-&#13;
-## Changes to APWorld&#13;
-&#13;
-* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).&#13;
-  * This should ensure that generations with the same seed produce the same output.&#13;
-* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).&#13;
-  * This should speed up generation on large scales.&#13;
-&#13;
-### Internal Changes&#13;
-&#13;
-* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8-pre.1"/>
-  </entry>
   <entry>
     <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.5</id>
     <title>OpenTTD v2.3.0</title>
@@ -1436,5 +1038,267 @@ This is retro compatible with 1.0.0 and onward&#13;
 - Moved the mt cucco warp to between tarm ruins and sunken city&#13;
 - Fixed Switch Hook allowing to jump at the same time</content>
     <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-23.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.1</id>
+    <title>OpenTTD v2.6.0</title>
+    <updated>2026-08-31T12:15:31+00:00</updated>
+    <author>
+      <name>OpenTTD AP Team</name>
+    </author>
+    <content>**Win targets recalibrated against a real session.** A 5.5-hour Hard game
+showed three of the six goals finishing on time and three that never could.
+
+- **The profit goal is yearly now.** The old check read a single
+  `old_economy` entry and called it monthly — those entries are quarters, so
+  the label was wrong twice over. The engine sums the last four completed
+  quarters and the status window says *Yr. Profit*.
+- **The population goal respects the map.** The engine clamps it to 10,000
+  per town on the actual map, so a 30-town map is held to 300k, not 700k.
+  This applies to running seeds too.
+- **Preset table rescaled** (apworld 2.6.0): population 50k–800k across the
+  difficulties, cargo 1.5M–35M (measured throughput was about 1.2M tonnes an
+  hour; the old Hard column was sixty hours of hauling), profit 1M–50M
+  yearly. Company value, vehicles and missions are unchanged.
+
+**Fixed: "Buy any item from the shop" never completed.** The apworld sends
+that mission as type `purchase`; the engine matched three older strings and
+none of them was that. The check now also counts shop locations already sent
+to the server, so purchases made before this fix complete the mission on the
+next session.
+
+Existing seeds keep their baked cargo and value numbers; the profit unit and
+the population clamp apply to them immediately. New seeds need apworld 2.6.0.
+Plugin 1.5.1 only updates the settings form (the profit slider says Yearly);
+existing YAML files stay valid.
+</content>
+    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.1</id>
+    <title>Clair Obscur Expedition 33 v0.4.0r2</title>
+    <updated>2026-08-31T12:20:16+00:00</updated>
+    <author>
+      <name>Démorck</name>
+    </author>
+    <author>
+      <name>Yezzdia</name>
+    </author>
+    <author>
+      <name>Noeva</name>
+    </author>
+    <content>- Noco shop items is always excluded for now&#13;
+- Chroma pack is now a filler item</content>
+    <link href="https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.4</id>
+    <title>Pokemon Ranger (Quest) v1.0.4</title>
+    <updated>2026-08-31T12:44:02+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <content>## 1.0.4&#13;
+&#13;
+- Fixed compatibility with the Pokémon Ranger: Shadows of Almia apworld&#13;
+&#13;
+### Is this version compatible with older multiworld slots?&#13;
+Back to 1.0.1 yes, further back maybe but probably no (the client will tell you whether you have to downgrade)</content>
+    <link href="https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha6</id>
+    <title>Crash Team Racing v0.2.0a6</title>
+    <updated>2026-08-31T13:03:02+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content>This is an unstable prerelease for players who want to help test CTR Archipelago 0.2.0. It is not the finished stable release. If you prefer the established build, remain on v0.1.5.
+
+**[Setup guide](https://ap-pie.com/guides/ctr)** · **[Alpha6 YAML Builder](https://ap-pie.com/apworlds?build=ctr&amp;version=0.2.0-alpha6)** · **[SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.2.0-alpha6/SETUP.md)**
+
+Always use the Alpha6 client and APWorld together. Back up an existing Adventure save before testing. CTR-AP requires game data created from your own NTSC-U Crash Team Racing disc; no game or custom-track data is included.
+
+## Alpha6 highlights
+
+- Held 1st, 3rd and 5th checks now rearm for each real race attempt. Restarting, leaving an unfinished race or moving to another track no longer carries the previous race's best position forward and suppresses later checks.
+- The experimental Custom Content manager verifies the one recognized Alpha6 preview package and can guide players to its creator-provided download. Installing content does not opt a seed into using it.
+- Baby T Park can be used as an experimental seven-lap Adventure Trophy race replacing Purple Gem Cup. It has stable custom Trophy, podium and Reach 10 Wumpa identities, plus truthful scouted reward presentation.
+- Recorded AI lap validation rejects recordings whose start and finish boundary is open, preventing the visible finish-line jump seen in earlier preview data.
+- Cancel at Adventure name entry returns to the title in the Archipelago-owned flow.
+- Startup connection attempts stop after a small bounded retry budget. Manual Connect retries immediately, while an established session still recovers in the background.
+- Checks earned while disconnected are retained and sent after reconnecting to the same seed and slot.
+
+Alpha6 also contains the broader 0.2.0 preview work: AP item-box locations, Itemsanity, Lettersanity, character unlocks and racer-locked pads, Progressive Boost and Stats, randomized Gem Cup legs, composable goals, Wumpa progression, expanded presentation and recovery improvements.
+
+## Experimental custom-content boundary
+
+Custom content is off unless the generated seed explicitly selects it. Open Options &gt; Custom Content to inspect the recognized package and export the Alpha6 YAML fragment. The manager fails closed if required files, hashes or capabilities do not match.
+
+Alpha6 supports one curated Baby T Park package for one Adventure Trophy-race shape. General custom-track libraries, Arcade, Time Trial, multiplayer, custom Cups, letters, relic challenges and arbitrary package pools are future work.
+
+## Known limitations
+
+- This is an Alpha test build. The custom-content preview and its manager need broader community testing before stable 0.2.0.
+- Only NTSC-U game data is supported. PAL and Japanese discs are detected and refused.
+- A raw MODE2/2352 `.bin` or supported `.chd` is required. Cooked 2048-byte ISO files omit data the client needs.
+- The public package does not include Baby T Park or any other custom-track bytes. The manager points to the creator's source for the recognized preview package.
+- Community recorded-AI files are optional and are not bundled. Without them, ordinary engine AI remains available.
+
+## Reporting problems
+
+Run `support-bundle.bat` on Windows or `support-bundle.sh` on Linux after a crash or stuck seed. Attach the resulting archive, your platform, seed or YAML, and a short description to the [CTR-AP issue tracker](https://github.com/dowlle/ctr-native-ap/issues) or the Crash Team Racing channel in the Archipelago Discord.
+
+## Downloads and verification
+
+Choose one client archive:
+
+- Windows x86: `ctr-archipelago-v0.2.0-alpha6-windows-x86.zip`  
+  SHA-256: `2c3d316dc56358de186fbc51d4650bc8b303f1daf971b63216e5afa2b574483a`
+- Linux/Steam Deck x86: `ctr-archipelago-v0.2.0-alpha6-linux-x86.tar.gz`  
+  SHA-256: `32cab74dff01d5d7bfac3e218a87d1d84eda1ab95d4d80095448c8b283adeeaf`
+
+Room generators also need the standalone `ctr.apworld`:  
+SHA-256: `4a2fa41e0095f7b8b3514c412931010f19a01afe14cb46b8b0c183bb0aa2dedf`
+
+The release also includes a generated `Crash.Team.Racing.yaml`, checksum sidecars for every archive and symbol file, and separate Windows/Linux debug-symbol assets for crash analysis. The archives contain their own `MANIFEST.sha256` for verifying extracted files.
+
+Release verification completed against the exact paired source heads: 1,374 apworld tests with one skip, 14,000 successful fuzz generations across ten configurations, clean Windows AP/vanilla and Linux AP builds, and 13 of 13 native seed-verifier profiles reporting `seed OK` and `solo: definitive`.
+
+## What's next
+
+After Alpha6, the 0.2.0 line moves into release-candidate stabilization. General multi-package custom tracks, a full Arcade library and broader custom modes remain post-0.2.0 work.
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.2</id>
+    <title>OpenTTD v2.6.0r2</title>
+    <updated>2026-08-31T13:37:43+00:00</updated>
+    <author>
+      <name>OpenTTD AP Team</name>
+    </author>
+    <content>Engine-only release — the apworld (2.6.0) and plugin (1.5.1) are unchanged
+from v2.2.1 and are re-attached here so `latest` stays complete.
+
+**The shop**
+- Bought items sink to the bottom; the list opens on what can still be
+  bought instead of a green wall of past purchases.
+- Slots unlock in batches of ten, the first ten are free, and a batch costs
+  its tier number in mission credits (1, 2, 3, ... capped at 100). The far
+  end of a 400-slot shop cost about 400 completed missions before; now 39.
+
+**The task board**
+- Ten active tasks instead of five, and expired tasks vanish and are
+  replaced instead of blocking their slot for a year.
+- Tasks are only offered on industries that actually produced last month,
+  with amounts that fit inside half their output over the deadline — no more
+  8,000-tonne pickups from a bank, or goods from a factory nobody supplies.
+- Passenger tasks pick towns big enough to carry them, and a task counts
+  only the cargo its text names.
+- Note the engine's own rule: pickup is credited when the cargo is finally
+  delivered, not when it is loaded.
+</content>
+    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.3</id>
+    <title>NSMBW v0.3.3</title>
+    <updated>2026-08-31T15:03:58+00:00</updated>
+    <author>
+      <name>Miiroun</name>
+    </author>
+    <content># New Super Mario Bros Wii v0.3.3&#13;
+&#13;
+## Features&#13;
+- Shuffling of the Pa0_jyotyu tile sheet to have differently colored brick and ? blocks.&#13;
+- Spam error message if you are on wrong save file.&#13;
+- Better validation of dolphin folder.&#13;
+- background music and sound effects are no longer mixed&#13;
+&#13;
+&#13;
+## Fixes&#13;
+- Door being closed even thou level_elements were not enabled,.&#13;
+- Added generation error if enabled hint movies and level shuffle together. This is due to them causing crashes that I have been unable to fix.&#13;
+- Level shuffle confused 8-C and 8-A, so they had each others logic.&#13;
+- P-Switch disabling was not working.&#13;
+- Entering mushroom house sends death link.&#13;
+&#13;
+&#13;
+## Backwards compatibility&#13;
+This update is compatible with seeds generated on 0.3.X.&#13;
+&#13;
+&#13;
+## Links&#13;
+[Download](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.3)&#13;
+[Setup Guide](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md)</content>
+    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.08.30</id>
+    <title>Castlevania - Aria of Sorrow v2026.8.30</title>
+    <updated>2026-08-31T15:15:21+00:00</updated>
+    <author>
+      <name>dem1995</name>
+    </author>
+    <content>&lt;to be fleshed out&gt;&#13;
+&#13;
+Adds soul-shuffling options.&#13;
+&#13;
+Also adds some preliminary soul drop-chance multiplier options.</content>
+    <link href="https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.08.30"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.4</id>
+    <title>Pokepelago v0.6.4</title>
+    <updated>2026-08-31T16:27:22+00:00</updated>
+    <author>
+      <name>Appie</name>
+    </author>
+    <content># Pokepelago v0.6.4
+
+In this release, I've brought everything that was on beta during July and August to everyone.
+
+## Web client
+
+- **Sprite fix:** silhouettes no longer stop rendering after switching between Derpy and normal sprites, so you no longer need to refresh the page. (BUG-21)
+- **New-player onboarding:** I added a first-run "What is Pokepelago?" card and a guided tour of the interface. You can replay it from Settings.
+- **Tracker fix:** the Pokedex and Pokegear items were swapped in the tracker display, so a granted Pokedex appeared as a Pokegear and vice versa. This was display-only, and seeds were never affected. (BUG-24)
+- **Sound notifications**, contributed by AfiliaFrostfang: you can opt in to sounds for when a Pokemon becomes guessable and when a progressive item arrives, with support for custom sound files.
+- **Connection help:** the connect form now explains why an HTTPS page can only reach wss:// servers.
+- **Decode hardening:** route key and line unlock items now decode using explicit ID maps exported by the APWorld. This replaces client-side arithmetic that has caused drift bugs in the past.
+- I added search-engine metadata so the site can be found.
+- The client now reports a few anonymous operational events, including connection successes or failures and goal completions, so I can see recurring problems. There is no account linkage and no gameplay data. Details are at https://ap-pie.com/privacy.
+
+## APWorld
+
+- I fixed a rare generation failure (FillError) that happened when a random region roll landed on Hisui alone with a heavy lock stack. About 0.04% of random-region seeds were affected.
+- Generation now warns you when route locks or line locks force dexsanity on, instead of silently changing your YAML's setting.
+- Choosing Hisui as your only region together with two or more lock options is now rejected at the start of generation with a clear message naming the fix, instead of failing later with a cryptic FillError.
+- I added item name groups for YAML convenience.
+- Archipelago 0.6.7 or newer is required, unchanged since v0.6.1.
+
+## Also
+
+Pokepelago is now also available at https://pokepelago.ap-pie.com. It is the same site. Just note that your browser's progress and settings stay with whichever address you use.
+</content>
+    <link href="https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vegemiiBG/Archipelago-NepRb3/releases/tag/v0.2.0</id>
+    <title>Hyperdimension Neptunia Re;Birth3 V GENERATION v0.2.0</title>
+    <updated>2026-08-31T17:41:44+00:00</updated>
+    <author>
+      <name>vegemiiBG</name>
+    </author>
+    <content>****Huge release for the Neptunia Rebirth 3 Archipelago World****&#13;
+&#13;
+Nep RB3 APWorld update:&#13;
+&#13;
+- Quests are now added, please update to the latest Mod version from BlackSoulKnight for quests to function properly&#13;
+- All quests are available by default, they currently work in-logic through Universal Tracker (Currently no in Poptracker)&#13;
+- New Yaml Option regarding quests&#13;
+- Updated incorrect region requirements for a few dungeons</content>
+    <link href="https://github.com/vegemiiBG/Archipelago-NepRb3/releases/tag/v0.2.0"/>
   </entry>
 </feed>
