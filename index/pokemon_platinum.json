@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "ljtpetersen"
+  ],
   "description": "",
   "game": "Pokemon Platinum",
   "github": "https://github.com/ljtpetersen/platinum_archipelago",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.0.1": {
       "created_at": "2025-08-27T01:03:52Z",
@@ -158,6 +165,21 @@
       "title": "Release 0.1.8",
       "version_simple": "0.1.8",
       "world_version": "0.1.8"
+    },
+    "v0.2.0": {
+      "created_at": "2026-08-30T20:55:29Z",
+      "description": "## Changelog\r\n### Added\r\n* Universal tracker YAML-less support.\r\n* A location for the bag item.\r\n* GBA cartridge items and locations for them.\r\n* A linking cable item and a location for it.\r\n* TMs for Rollout, Ancient Power, Double Hit, and Mimic, and corresponding locations for them.\r\n* AP items now display their name and destination when picked up.\r\n* A location for the S.S. Ticket.\r\n* A location for the Marsh Pass.\r\n* Daytime and nighttime items.\r\n* An option to normalize encounter slot probabilities.\r\n* Dexsanity support, including partial.\r\n* Trainersanity support, including partial.\r\n* Instant text speed option.\r\n* Death Link support.\r\n* Starter randomization.\r\n* Encounter randomization, including special encounters.\r\n* Trainer party randomization.\r\n* Hold A to advance option.\r\n* Randomizing the species that Rowan shows during the intro.\r\n* A clerk in the fourth floor of the Veilstone Department Store, who sells non-reusable evolution items after they have been previously obtained.\r\nHe also sells TM70 Flash.\r\n* An option for reusable TMs.\r\n* An option to have a 100% catch rate.\r\n* Cheats in the client.\r\n* Swarms can now be attracted by berries.\r\n* AP Helper NPC to 2nd floors of all Pok\u00e9mon Centers.\r\n* Dowsing Machine Upgrades to identify munchlax honey trees and feebas fishing tiles.\r\n* An item to allow use of field moves without a party member knowing them.\r\n* An option to just talk to trainers. (useful for trainersanity)\r\n* Added option groups to the WebWorld and the template YAML ([@snowflav-goob](https://github.com/snowflav-goob))\r\n* The slot name is now stored in the ROM, so it does not need to be entered when BizHawk Client connects.\r\n* There is now an option to have \"relaxed\" player and rival name conversion, which replaces unknown characters and truncates\r\nappropriately.\r\n* An event for defeating Team Galactic at Stark Mountain.\r\n* The boat can now be taken between Canalave City, Pastoria City, and Snowpoint City.\r\n* More options for roadblocks in Routes 207, 210, and 215.\r\n* A Poketch app to modify the camera type and make the player invisible.\r\n* An option to include fly regions as locations.\r\n* An option to filter item notifications by classification.\r\n* The R button can be held to stop receiving items.\r\n* An option to add TM/HM compatibility.\r\n* An option for fast fishing.\r\n* Entries to the game credits.\r\n* Version number to title screen.\r\n* A QOL menu when pressing the select button.\r\n* An option to prevent the PopTracker from spoiling optional roadblocks, and client support for the option.\r\n* `Field Machines` item group.\r\n* `start_inventory_from_pool` option.\r\n* `game_debug` client command.\r\n### Changed\r\n* In-game game options option is now validated before generation.\r\n* Some evolution stones have been key-itemified, and are no longer consumed when used.\r\n* Honey trees no longer have a 6 hour delay for encounters. Honey trees no longer have bad odds when using the same tree twice in a row.\r\n* The trophy garden can now be quickly reset.\r\n* Locations that check for number of seen species now require the Pok\u00e9dex.\r\n* Pok\u00e9 Radar no longer needs to recharge.\r\n* Remote items now have more options regarding which items are remote.\r\n* There is no longer an option to show unrandomized progression items.\r\n* The Great Marsh binoculars now reset the special encounters in the Great Marsh when they are checked.\r\n* Up to 64 items can be received at once (when using none item notification).\r\n* The experience multiplier now supports fractional values. It is now modifiable in-game.\r\n* Changed to rule builder.\r\n* Scientist in Sunyshore no longer requires Pok\u00e9mon of specific natures.\r\n* A lot of item classification changes to better reflect their usefulness ([@Justior-l](https://github.com/Justior-l),  [@palex00](https://github.com/palex00))\r\n* The Pok\u00e9tch is now the requirement to access Route 203 from Jubilife, instead of the parcel and three coupons.\r\n* The bicycle can now be used indoors.\r\n* The escape rope can now be used in lost tower.\r\n* Title screen logo.\r\n* The female cyclist in the upper left of cycling road now moves around.\r\n* The journal is now a trap item.\r\n* Various location name changes.\r\n* VS Seeker location is now correctly classified as a `key_item` location.\r\n* Structure of version data in client now better supports backwards compatibility.\r\n### Fixed\r\n* Non-determinism of generation. (hopefully)\r\n* Elite Four rematch is triggered only if the game has been completed and stark mountain has been cleared.\r\n* The bag now shows the amount of collected unown file items.\r\n* Team Galactic Grunts now disappear if you defeat Mars before hitting the Route 205 South trigger.\r\n* Correct Rev. 0 ROM is now being used for diffs.\r\n* APWorld building is now compatible with Archipelago 7.\r\n* Triggering the second Galactic warehouse scene before defeating Maylene and doing the first scene is no longer possible.\r\n* Victory Road room after defeating Cynthia now requires Defog logically.\r\n* Fixed bug where received items can occasionally be lost.\r\n* Triggers cannot be walked through when receiving items.\r\n* The clown in front of Jubilife TV now moves immediately after the Team Galactic event in Jubuilife City, instead of requiring leaving and re-entering.\r\n* Fixed broken texture in Route 214.\r\n* Remove badge requirement option has incorrect effect.\r\n* The bag can no longer be used in the Great Marsh if it has not yet been obtained.\r\n### Removed\r\n* The `all` key item option no longer exists.\r\n* The `hm_badge_requirement` option no longer exists.",
+      "download_url": "https://github.com/ljtpetersen/platinum_archipelago/releases/download/v0.2.0/pokemon_platinum.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1fc5ab6c87e8be6728d2c6dbfa2d5516bc4abe1d0521b702feed6689f78396d9",
+      "html_url": "https://github.com/ljtpetersen/platinum_archipelago/releases/tag/v0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 1326960,
+      "source_url": "https://api.github.com/repos/ljtpetersen/platinum_archipelago",
+      "tag": "v0.2.0",
+      "title": "Release 0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }

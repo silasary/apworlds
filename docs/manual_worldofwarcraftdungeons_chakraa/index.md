@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.08.01/manual_worldofwarcraftdungeons_chakraa.apworld">Latest Version (2026.8.1)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.08.30/manual_worldofwarcraftdungeons_chakraa.apworld">Latest Version (2026.8.30)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

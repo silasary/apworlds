@@ -431,6 +431,21 @@
       "title": "v0.8.0",
       "version_simple": "0.8.0",
       "world_version": "0.8.0.post2"
+    },
+    "v0.8.1": {
+      "created_at": "2026-08-30T22:18:50Z",
+      "description": "### Changes\r\n- Add a proper Archipelago markdown guide to the docs. [Read this if you want to learn about randomization for this APWorld](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/en_Crypt_of_the_NecroDancer.md).\r\n- Add already established option groups property to CotNDWeb like it should have been in the first place.\r\n  - This allows for option groups to appear in Options Creator instead of the unorganized mess it was previously.\r\n- Add display name to `starting_inventory` option.\r\n- Fix issue related to All Zones speedrun times setting defaults showing up as `1` for each character in Options Creator. Changed the default to `-1` now to represent being disabled.\r\n  - [This issue was caused by Options Creator handling OptionCounter `0` values as falsy](https://github.com/ArchipelagoMW/Archipelago/pull/6221).\r\n  - If values are manually set to `0`, this is also treated as disabled. Any value less than `3` and greater than `0` are still set to `3` default. I understand 3 minutes is an absurd standard for completing an All Zones Mode run, but for now, if a player sets their speedrun timers to an unrealistic standard, that's on the player. If this turns out to be more of a problem in the future, logic can be added to set minimum speedrun timers for each character as opposed to a uniform 3 minutes.\r\n- Fix options descriptions to be more accurate and consistent with each other.\r\n\r\nPlease see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.\r\n\r\nPlease inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).",
+      "download_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.1/cotnd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a114a74fd2ab79be4ae298a20a628df29816a7039be6f222e712673587d303a3",
+      "html_url": "https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.8.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 21970574,
+      "source_url": "https://api.github.com/repos/lastingParadox/Archipelago-CotND",
+      "tag": "v0.8.1",
+      "title": "v0.8.1",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0r2"
     }
   }
 }

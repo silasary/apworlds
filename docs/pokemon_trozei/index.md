@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/WCutePy/ArchipelagoAlmia/releases/download/trozei_v0.0.2-beta/pokemon_trozei.apworld">Latest Version (0.0.1)</a>
+- <a href="https://github.com/WCutePy/ArchipelagoAlmia/releases/download/trozei_v0.0.3/pokemon_trozei.apworld">Latest Version (0.0.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

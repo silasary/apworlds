@@ -13,7 +13,7 @@ From: https://en.wikipedia.org/wiki/Aquaria_(video_game)
 
 
 ## Downloads
-- <a href="https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld">Latest Version (1.5.2.post6)</a>
+- <a href="https://github.com/tioui/Aquaria_Randomizer/releases/download/v1.5.2-Release/aquaria.apworld">Latest Version (1.5.2.post7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -21,6 +21,6 @@ From: https://en.wikipedia.org/wiki/Aquaria_(video_game)
 - <a href="en_Aquaria">English</a>
 
 ## Setup Guide
-- <a href="setup_fr">French</a>
 - <a href="setup_en">English</a>
+- <a href="setup_fr">French</a>
 

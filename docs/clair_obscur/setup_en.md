@@ -14,6 +14,11 @@
 * [Mod: a map tracker for COE33](https://www.nexusmods.com/clairobscurexpedition33/mods/383)
 * [Mod: a ping tracker to know where are the loots for COE33](https://www.nexusmods.com/clairobscurexpedition33/mods/215)
 
+## Untested / Issues with other mods
+
+* Standalone Randomizer (from Nexusmod) - Incompatible
+* Enemy Randomizer (from Nexusmod) - Can have issues
+
 ## Setup
 
 1. Find your Archipelago directory, and put `clair_obscur.apworld` in the `custom_worlds` folder
@@ -33,9 +38,7 @@
   * __Slot__ : MaelleLaPlusBelle
   * __Password__ :
 3. Click on "Connect" and wait until it says connected.
-4. Create a new save if you are connected for the first time. __NOTHING WILL HAPPEN UNTIL SPRING MEADOWS. WHEN YOU ARE IN SPRING MEADOWS, PRESS CTRL + F2__ (for now)
-
-# CONNECT TO AP AND DO THE PROLOGUE (JUST NEED TO TALK TO EMMA AT THE END), THIS IS A MUST HAVE FOR THE MOD TO WORK NOW BECAUSE A LOT OF THINGS HAPPENS WHEN THE FESTIVAL ENDS.
+4. Create a new save if you are connected for the first time. The prologue will be skipped, it's normal.
 
 ## Further Reading
 - [wiki](https://github.com/Demorck/ClairObscur_APWorld/wiki/)

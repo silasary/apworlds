@@ -8,6 +8,9 @@
 #### v0.3.5
 - <a href="https://github.com/YarRuin/LOBAP/releases/download/v0.3.5/lobap.apworld">https://github.com/YarRuin/LOBAP/releases/download/v0.3.5/lobap.apworld</a>
 
+#### v0.3.5b0
+- <a href="https://github.com/YarRuin/LOBAP/releases/download/0.3.5b/lobap.apworld">https://github.com/YarRuin/LOBAP/releases/download/0.3.5b/lobap.apworld</a>
+
 #### v0.3.1
 - <a href="https://github.com/YarRuin/LOBAP/releases/download/0.3.1/lobap.apworld">https://github.com/YarRuin/LOBAP/releases/download/0.3.1/lobap.apworld</a>
 

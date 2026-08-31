@@ -2,6 +2,10 @@
 
 Welcome to my project. Things are still under development, but here you will find my development of a custom Archipelago World for Mega Man Zero 3 on the GBA. You should probably read everything here so you know what to expect before playing!
 
+<div align="center">
+<img width="800" height="296" alt="logo" src="https://github.com/user-attachments/assets/0954b2d4-f197-4c53-8bff-699af4b382a5" />
+</div>
+
 ## General Information (IMPORTANT)
 - **Locations:** All 180 secret disks, stage clears, an A+ rank clear in each of the 15 stages, the nine armor chips, both sub tanks, Cerveau's Recoil Rod and Shield Boomerang, ten extra life pickups, and eleven miniboss fights.
 - **Item pool:** 180 secret disks, the four weapons as progressive upgrade unlocks, nine armor chips, twelve EX Skills, two sub tanks, fifteen stage access items and two Story Progress items. E-Crystals are filler.
@@ -44,13 +48,29 @@ Note: Anything you list in `starting_weapons`  begins at step 1. You will still 
   How many disks you need to be holding before the final stage will open (In addition to clearing every other level). Default is 120, max is 180.
 
 - `starting_weapons`:  
-  Which of the four you begin with. To give all, use `starting_weapons: ['Buster', 'Z-Saber'. 'Recoil Rod', 'Shield Boomerang]` 
+  Which of the four you begin with. To give all, use `starting_weapons: ['Buster', 'Z-Saber', 'Recoil Rod', 'Shield Boomerang']` 
 
 - `easy_ex_skill`:  
   Always sends the EX Skill location check at the end of a level, whatever your rank was.
 
 - `death_link`:  
   Standard DeathLink. Dying sends, and receiving kills you.
+
+## Hinting and Tracking
+
+Items and locations are sorted into groups. Try using `!hint`.
+
+| locations | |
+| --- | --- |
+| per stage | `Resistance Base` (all three mission sets), `Aegis Volcano Base`, `Sunken Library`, and so on |
+| by type | `Secret Disks`, `Stage Clears`, `Chips`, `A+ Rank Clears`, `Subtanks`, `Weapons`, `1-UPs`, `Minibosses` |
+
+| items | |
+| --- | --- |
+| by type | `Secret Disks`, `Stage Access`, `Chips`, `Body Chips`, `Foot Chips`, `Head Chips`, `EX Skills`, `Subtanks`, `Weapons` |
+
+For example: `!hint Stage Access` or `!missing Sub Arcadia`.
+
 
 ## Known Bugs.
 - There have been repeated issues of trackers reporting currently unobtainable items as obtainable. Be sure to report any instance of that.
@@ -66,8 +86,10 @@ Note: Anything you list in `starting_weapons`  begins at step 1. You will still 
 - Something to do with the minigames.
 
 ---
-If you have any questions, feel free to contact me on Discord: Stingrays110, though I'd prefer if you kept it to the Zero channel on the Archipelago Discord
+If you have any questions, feel free to contact me on Discord: Stingrays110, though I'd prefer if you kept it to the Zero channel on the Archipelago Discord.
 
 And if you'd like to see the source code for the ROM, [check it out here!](https://github.com/brodieberger/rmz3/tree/ap). 
 
 Huge thanks to akatsuki105, [whose WIP decompilation of RMZ3 laid the groundwork for this world!](https://github.com/mmzret/rmz3)
+
+And a thank you to Shadyrix Phantom (@OfficialPhantomX) for the logo artwork.

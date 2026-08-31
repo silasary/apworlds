@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "PhantomOfAres"
+  ],
   "description": "Insert description of the world/game here.",
   "flags": [
     "after_dark"
@@ -6,7 +9,11 @@
   "game": "Rimworld",
   "github": "https://github.com/PhantomOfAres/ArchipelagoRimworld",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0-alpha": {
       "created_at": "2025-03-30T18:18:50Z",
@@ -147,6 +154,21 @@
       "title": "v0.5.2-bugfix release",
       "version_simple": "0.5.2",
       "world_version": "0.5.2b0"
+    },
+    "v0.6.1-alpha": {
+      "created_at": "2026-08-30T17:57:02Z",
+      "description": "### Version 0.6.1 Release!\r\n\r\n## Features\r\n\r\n* Advanced setup improvements\r\n\r\n1. New folder functionality - no more hunting down the right Documents folder\r\n2. An \"Open folder\" button - open right to the folder with the new files\r\n3. An auto-package of the apworld - no more messing with zipped files \r\n\r\n* Version and ItemDef error handling\r\n\r\n1. An error will display if the versions don't match between client and apworld\r\n2. An error will display if ItemDefs don't match\r\n\r\n* Options to vary research costs\r\n\r\n1. ResearchCostVariance: The cost for each research will increase by a random number up to this amount\r\n2. ResearchCostIncreasePerTier: Each tier (column) will increase by this static amount.\r\n3. Both are optional.\r\n\r\n## Bugfixes\r\n\r\n* Universal Tracker craft locations were displaying incorrectly\r\n* Raid/trade location items could not be stockpiled\r\n\r\n## Decided not to fix\r\n\r\n* Tribute collectors will sell a trade location for 100 honor - I put together a fix for this, but it also prevented normal imperial traders from selling trade locations. It's a little messy this way, but fixing it for real is too much of a pain.",
+      "download_url": "https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v0.6.1-alpha/rimworld.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0470202f75bf770caadef5062f2a13945a1893ad70cf7be5832b74fcd44b6e8c",
+      "html_url": "https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/tag/v0.6.1-alpha",
+      "minimum_ap_version": "0.6.7",
+      "size": 29112,
+      "source_url": "https://api.github.com/repos/PhantomOfAres/ArchipelagoRimworld",
+      "tag": "v0.6.1-alpha",
+      "title": "Archipelago v0.6.1-alpha",
+      "version_simple": "0.6.1",
+      "world_version": "0.6.1a0"
     }
   }
 }

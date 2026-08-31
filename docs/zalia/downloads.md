@@ -1,9 +1,12 @@
 # ZALiA
 
 ## Latest
-- <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.2/zalia.apworld">Latest Version (1.0.2r2)</a>
 
 ## All Versions
+
+#### v1.0.2r2
+- <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.2/zalia.apworld">https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.2/zalia.apworld</a>
 
 #### v1.0.2
 - <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld">https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld</a>

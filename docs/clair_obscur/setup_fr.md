@@ -13,6 +13,10 @@
   * [La map tracker pour Poptracker](https://github.com/Demorck/ClairObscur-Archipelago-Poptracker/releases) (by @Yezzdia)
 * [Et une mini-map pour COE33](https://www.nexusmods.com/clairobscurexpedition33/mods/383)
 
+## Incompatibilité / Problèmes
+* Randomizer de Nexusmod - Incompatible
+* Randomizer d'ennemis de Nexusmod - Peu avoir des problèmes
+
 ## Installation
 
 1. Trouvez le répertoire d'Archipelago et mettez `clair_obscur.apworld` dans le dossier `custom_worlds`.
@@ -32,9 +36,7 @@
   * __Slot__ : MaelleLaPlusBelle
   * __Password__ :
 3. Cliquez sur "Connect" et patientez jusqu'à que ce soit écrit: "Connected".
-4. Créez une nouvelle sauvegarde si vous vous connectez à la salle pour la première fois. __RIEN NE SE PASSERA JUSQU'AUX VALLONS FLEURIS. QUAND VOUS Y ÊTES, PRESSEZ CTRL + F2__ (le temps que je trouve une correction de bug)
-
-# FAITES LE PROLOGUE EN ÉTANT CONNECTÉ A ARCHIPELAGO, CAR BEAUCOUP DE CHOSES SE PASSE AVEC LE MOD QUAND LE PROLOGUE SE TERMINE. IL Y A JUSTE BESOIN DE PARLER A EMMA AU FESTIVAL.
+4. Créez une nouvelle sauvegarde si vous vous connectez à la salle pour la première fois. Le prologue va être passé, c'est normal.
 
 ## Pour aller plus loin
 - [wiki](https://github.com/Demorck/ClairObscur_APWorld/wiki/)
