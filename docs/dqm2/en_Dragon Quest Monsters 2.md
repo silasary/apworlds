@@ -33,6 +33,8 @@ Monsters:
 - Co-Op Skills are usable regardless of the version of the game.
 - The Starry Night Shrine is accessible from the start.
 - When your inventory is full, items will go into the vault automatically.
+- Most cut scenes have been shortened or removed from story worlds.
+- Keys can be used to teleport to their worlds from anywhere.
 
 ## What features are planned?
 
@@ -40,20 +42,18 @@ A lot, but most will take a while to do. Hopefully you'll see these listed above
 These are not ordered in any specific way.
 
 - Randomize Keys
-- Random World Keys in the pool
+- Random Magic Keys in the pool
 - Scaling World difficulty
 - Additional goals
 - Access storage from anywhere
 - Quest items no longer are required in your inventory
 - Text modification
-- Sprite customization (in-game sprites only, to start)
 - Fully open GreatLog from the start
-- Shortened/removed cut scenes
+- Shortened/removed cut scenes in post game worlds and GreatLog
 - Offline play
 - Random Eggs as items
 
 ## Current Quirks
 
 - Items obtained from most NPCs and Locations will display the vanilla item in the dialogue. This will be fixed in the future.
-- Mom and Dad lie about giving items.
 - No post game content, unless you `!getitem` their keys. Items are not currently randomized, but the monsters are.

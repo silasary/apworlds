@@ -26,3 +26,15 @@ Be sure to select the correct version you own and dumped using the `game_version
 ## Important
 
 You must be connected to the server to receive items.
+
+## Setting Cosmetic Options
+
+You can edit cosmetic options in the "host.yaml" file found in the Archipelago main folder.
+
+1. Open "host.yaml" in a text editor
+2. Scroll down to "dqm2_options"
+3. Edit the values to your desired settings
+
+"**tara_sprite**" & "**cobi_sprite**" allow for the following choices:
+- cobi, tara, warubou, kameha, dad, mom
+- More to come in the future!

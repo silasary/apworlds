@@ -2,173 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-01T00:26:29.094538+00:00</updated>
+  <updated>2026-09-01T06:22:51.032521+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.2</id>
-    <title>Mina The Hollower v1.1.0.post2</title>
-    <updated>2026-08-29T18:59:11+00:00</updated>
-    <author>
-      <name>FyreDay, Axertin, ZXavier</name>
-    </author>
-    <content>Features:&#13;
-- Changed Yaml&#13;
-- Traps&#13;
-- Astral Orrey Mirror's End Switches&#13;
-- Generator Pool&#13;
-&#13;
-Bug Fixes:&#13;
-- Fix two Burrow tunnels in Kindlewood</content>
-    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/RischDev/Archipelago/releases/tag/v0.2.0</id>
-    <title>MegaMan Battle Network 6 v0.2.0</title>
-    <updated>2026-08-29T23:48:58+00:00</updated>
-    <author>
-      <name>RischDev</name>
-    </author>
-    <content># Beta - v0.2.0&#13;
-&#13;
-&gt; [!WARNING]&#13;
-&gt; This has been tested and appears to be stable, but there could still be some unknown issues. Please save regularly, and report any bugs you encounter by opening up an issue, or via the Discord thread: https://discord.com/channels/731205301247803413/1242860924092682481&#13;
-&#13;
-- Game Page: [EN](https://github.com/RischDev/Archipelago/blob/main/worlds/mmbn6/docs/en_MegaMan%20Battle%20Network%206.md)&#13;
-- Setup Page: [EN](https://github.com/RischDev/Archipelago/blob/main/worlds/mmbn6/docs/setup_en.md)&#13;
-&#13;
-Compatibility Notes&#13;
-- AP version: v0.6.7&#13;
-  - Other versions have not been tested at this time.&#13;
-&#13;
-## Changelog&#13;
-**Full Changelog**: https://github.com/RischDev/Archipelago/compare/v0.1.1...v0.2.0&#13;
-&#13;
-### New Features&#13;
-- ROMless generation has been added. Now, the host of a multiworld does not require the base Gregar or Falzar ROM in order to generate a world with BN6 in it.&#13;
-- Multiple requests can now be selected at a time. Requests will still be locked by your rank, but this means that you can immediately start all 11 one-star requests, and once you reach rank B, you can select all two-star requests. This prevents softlocks due to grabbing the wrong request.&#13;
-- Bass BX and ProtoMan FZ have been added as potential checks. This also adds ColForce Q and HubBatch J (vanilla rewards for Bass BX in Gregar and Falzar respectively) to the pool.&#13;
-- Added a Progressive Link Navi Item to the pool. Each world will generate with 4 copies of this item, which will upgrade all of the link navi's levels as they would normally due to story progression.&#13;
-&#13;
-### Changes&#13;
-- Virus deletion counts will now start at 32. This means that once you get the BtlrCard, all rare viruses will become immediately available without additional grinding.&#13;
-&#13;
-### Bug Fixes&#13;
-- VacData is now a requirement before beginning GroundMan class. When you talk to Moliarty, if you don't have VacData, he will inform you that it is required and will not let you start the class. This prevents potential softlocks.&#13;
-&#13;
-## Status&#13;
-- ROMless generation has been added via APProcedurePatch&#13;
-- Gregar and Falzar both supported&#13;
-- Upcoming Features:&#13;
-  - Virus randomization.&#13;
-  - New checks like ProtoMan and other link navi fights.&#13;
-  - Optional goals, like Bass, Bass SP, Bass BX, Beast SP, or ProtoMan FZ.&#13;
-&#13;
-### Checks&#13;
-- Base pool: 297&#13;
-- Settings:&#13;
-  - Request Rewards: 38&#13;
-  - EX Bosses: 6&#13;
-  - SP Bosses: 6&#13;
-  - Graveyard checks: 8&#13;
-  - Virus Battler checks: 5&#13;
-  - Bass BX: 1&#13;
-  - ProtoMan FZ: 1&#13;
-- Total with all exclusions: 232&#13;
-- Locations per region (all options enabled):&#13;
-  - Central Town: 105&#13;
-  - Central Internet: 10&#13;
-  - Central 3/Underground: 11&#13;
-  - Seaside Town: 34&#13;
-  - Seaside Internet: 17&#13;
-  - Green Town: 21&#13;
-  - Green Internet: 17&#13;
-  - Sky Town: 31&#13;
-  - Sky Internet: 15&#13;
-  - ACDC Town: 3&#13;
-  - ACDC Internet: 6&#13;
-  - Undernet: 7&#13;
-  - Graveyard: 8&#13;
-  - Expo Site: 12&#13;
-&#13;
-## Known Issues&#13;
-- The client is required for certain location checks (specifically EX and SP bosses) to give items, and is required to set flags when receiving Crosses, BeastOut, and BtlrCard items. As such, playing offline will not fully work, so players cannot play on console for single player games yet, and you must be connected to the client to fully experience the game.&#13;
-- Skipping a cutscene that can give an item (such as after Link Navi classes or after Bass/Bass SP) can result in not receiving a local item. The location check will still be sent, but if it's a local item, it will need to be received via a `/send` command. Try to avoid skipping these cutscenes until after you see the `get item` textbox.&#13;
-- Certain checks that could theoretically scout their contents (such as WWW ID and BtlrCard navis) are not currently scoutable locations. As such, before buying the items, they will display the wrong item.&#13;
-- Fighting Bass always gives the BatKey, even if it is located elsewhere. You can still get the randomized item from this location (don't skip the cutscene for local items), but you will get BatKey as well.&#13;
-- Fighting Bass SP will always give the version-specific giga chip.You can still get the randomized item from this location (don't skip the cutscene for local items), but you will get the giga chip as well.&#13;
-- The puddle to Seaside Area from Central 3 is not a 2-way obstacle. As such, you can go from Seaside into Central 3 even without `ToolPrgm`, but you can't go from Central 3 to Seaside without it.&#13;
-- `AreaPass` does give access to ACDC Area, but the invisible obstacle can only be cleared during the right chapter of the story. You need to trigger the dialogue, then you can enter a menu and close it to re-load the map and clear the obstacle. &#13;
-- Request Points will still display the wrong number of request points under certain circumstances. However, the patch will correctly calculate the appropriate number of request points based on the completion flags, so this can be safely ignored. &#13;
-&#13;
-## Other info&#13;
-For a full list of area requirements of requests, you can reference this [Pastebin](https://pastebin.com/nmb1a562)</content>
-    <link href="https://github.com/RischDev/Archipelago/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.0</id>
-    <title>Taylor Swift Discography v1.2.0</title>
-    <updated>2026-08-29T23:58:32+00:00</updated>
-    <author>
-      <name>benny-dreamly</name>
-    </author>
-    <content>This release adds the option to disable deluxe tracks via an option, and introduces full yamlless UT support. Have fun!&#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Archipelago/compare/ts-1.1.0...ts-1.2.0</content>
-    <link href="https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.7</id>
-    <title>PokePark v1.2.7</title>
-    <updated>2026-08-30T09:00:58+00:00</updated>
-    <author>
-      <name>Joe Mama (Mekurushi)</name>
-    </author>
-    <content>- fixed and added option display names&#13;
-**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.6...1.2.7</content>
-    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nhyldmar/fez-ap/releases/tag/v0.6.1</id>
-    <title>Fez v0.6.1</title>
-    <updated>2026-08-30T09:10:35+00:00</updated>
-    <author>
-      <name>Nolih</name>
-    </author>
-    <content>## What's Changed&#13;
-- Refactor of patching code under `PatchManager`&#13;
-- Hotfixes to APWorld&#13;
-  - Replacement of sets with lists to store world data and sort region data before placing in world -&gt; Solves issues with world generation determinism&#13;
-  - Fix logic for access to Telescope and Observatory Cube: Check for either "Turn Objects" or for active link door between Throne and Observatory (which puts Gomez at the Telescope entrance level)&#13;
-    - Link doors are activated once the rooms holding both sides are visited, so the Observatory side of link door can be activated just by entering Observatory from Zu City Ruins&#13;
-&#13;
-## Pull Requests Merged&#13;
-* Update APWorld to v0.6.1 by @wataniyob in https://github.com/nhyldmar/fez-ap/pull/29&#13;
-* Refactor patches into PatchManager by @thearst3rd in https://github.com/nhyldmar/fez-ap/pull/24&#13;
-&#13;
-Bugs should either be raised as issues here or tracked on the bugtracker here:&#13;
-https://docs.google.com/spreadsheets/d/1l2KPbde1qFznVFmOZbg8Ee7_sfi5h65sCRZXVndfLwk/edit?usp=sharing&#13;
-&#13;
-**Full Changelog**: https://github.com/nhyldmar/fez-ap/compare/v0.6.0...v0.6.1</content>
-    <link href="https://github.com/nhyldmar/fez-ap/releases/tag/v0.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.5</id>
-    <title>Ori and the Will of the Wisps v0.6.5</title>
-    <updated>2026-08-30T09:16:48+00:00</updated>
-    <author>
-      <name>Satisha</name>
-    </author>
-    <content>This release contains multiple improvements and fixes to the logic and generation, especially with random spawn and entrance randomizer. Huge thanks to @hellhound298 for implementing or suggesting most of these changes !&#13;
-&#13;
-Fixed bugs:&#13;
-- All spawn items should be sent when playing on a solo seed with random spawn.&#13;
-- Fix Teleporters not always being used in the logic.&#13;
-- Fix some `no_combat` options that were not taken into account in the logic.</content>
-    <link href="https://github.com/Satisha10/APwotw_release/releases/tag/v0.6.5"/>
-  </entry>
   <entry>
     <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.10.19</id>
     <title>Total War Warhammer 3 v0.10.18r2</title>
@@ -756,7 +594,7 @@ If you've already installed the mod, the patch can be applied just by overwritin
   </entry>
   <entry>
     <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.2</id>
-    <title>The Grinch v1.6.2</title>
+    <title>The Grinch v1.6.2.post2</title>
     <updated>2026-08-30T23:04:11+00:00</updated>
     <author>
       <name>MarioSpore</name>
@@ -1332,5 +1170,295 @@ This update is compatible with seeds generated on 0.3.X.&#13;
 ### Is this version compatible with older multiworld slots?&#13;
 Back to 1.0.1 yes, further back maybe but probably no (the client will tell you whether you have to downgrade)</content>
     <link href="https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Bartz24/ArchipelagoLR/releases/tag/0.5.1</id>
+    <title>Lightning Returns: Final Fantasy XIII v0.5.1</title>
+    <updated>2026-09-01T02:54:53+00:00</updated>
+    <author>
+      <name>Bartz24</name>
+    </author>
+    <content># Changelog&#13;
+- Added train pass items to unlock Wildlands, Yusnaan, Dead Dunes. An option to start with these has also been added&#13;
+- Changed Mystery Egg to now unlock Ultimate Lair access&#13;
+- Removed being able to access Ultimate Lair from the Ark, now must be reached from the Dead Dunes cactuar teleport&#13;
+- Added Max EP, Max ATB, Item Capacity items into the pool&#13;
+- Added Bhakti's Oil and Bhakti's rewards as items/locations&#13;
+- The Things She Lost quest now requires either the Red or Green Carbuncle Doll logically&#13;
+- Last One Standing quest is now completable. Does not require the Final Day omegas anymore&#13;
+- Luka's Tear quest can be completed all in one day&#13;
+- Soul Seeds are now given from the Loupe, replacing the junk medal items that used to be there&#13;
+- Pilgrim's Cruxes moved down to Useful&#13;
+&#13;
+# Notes&#13;
+- If you are upgrading Nova Chrysalia mod manager from 1.X to 2.X, uninstall all mods from Nova 1.X first, extract Nova 2.X to a new location, and install all your previous mods in Nova 2.X.&#13;
+- EN Text is required. Text for other languages is not supported due to maintainability concerns with the duplicated data.&#13;
+&#13;
+# Known Issues/Limits&#13;
+- Items sent to you are retrieved by holding the sprint button on the field (L2/R2 or LT/RT). This is a workaround to avoid crashes when trying to add automatically with no input.&#13;
+- Game overs are removed so you can technically get to the final day without completing the 5 main quests. This is safer for AP, but obviously that would be out of logic by skipping everything.&#13;
+- Recovery items received from AP while your recovery item bag is full will be lost&#13;
+&#13;
+# Troubleshooting&#13;
+- Do NOT use the File &gt; Reboot option in game, always close the game and relaunch through Nova&#13;
+- In Nova, always launch the game in Unpacked mode with "Voice Over Setting" set to the language you unpacked data for. &#13;
+&#13;
+If you still have issues without not seeing modded content:&#13;
+1. Delete unpacked game data in Nova&#13;
+2. Unpack game data again in Nova&#13;
+3. Regenerate the rando modpack&#13;
+4. Uninstall and remove the old modpack in Nova, and re-install the modpack&#13;
+5. Be sure to launch the game in Unpacked and in the same voice language as unpacked data (EN/JP)!&#13;
+&#13;
+# Setup Guide:&#13;
+&#13;
+Download the following:&#13;
+&#13;
+- lrff13.apworld&#13;
+- LRRandomizer#.#.#.#.7z&#13;
+- [Nova Chrysalia mod manager v2.0.3](https://mega.nz/file/24gyiB7b#nTIlktJb8ZCo8dXZDxCgwsdHAUDPURQhixSfucypIVg)&#13;
+&#13;
+### AP World and Seed Setup&#13;
+1. Double click the lrff13.apworld to install the custom world&#13;
+6. Run the Archipelago Launcher (ArchipelagoLauncher.exe)&#13;
+7. Click `Generate Template Options` to open the folder with the template yaml files&#13;
+8. Copy the `Lightning Returns Final Fantasy XIII.yaml` template to the `Players` folder&#13;
+9. Open your YAML file and edit the `name: Player{number}` to set your name.&#13;
+`{number}` is needed if there will others in the seed with a similar name, you can remove it otherwise.&#13;
+Modify any other options you want below.&#13;
+10. If hosting: Run the Archipelago Launcher (ArchipelagoLauncher.exe)&#13;
+11. Click `Generate`&#13;
+12. Go the `output` folder, and you will find your created `AP_#####.zip` file.&#13;
+13. To host the game, upload `AP_#####.zip` to: https://archipelago.gg/uploads&#13;
+&#13;
+### Randomizer Seed Setup&#13;
+&#13;
+1. Extract the Nova Chrysalia.7z to a folder of your choosing (using Windows, 7zip, etc).&#13;
+2. Run Nova Chrysalia for the first time and select under Global Installation: "Unpack Game Data (EN Audio)" or "Unpack Game Data (JP Audio)" for the language audio you prefer&#13;
+    - Note: You may need to launch LR normally from Steam first&#13;
+4. Once the AP room is created, click the "Download Patch File" link to download a .aplrff13 mod file.&#13;
+5. Extract `LRRandomizer#.#.#.#.7z` to a folder of your choosing.&#13;
+6. Open the extracted folder and run LRRando.exe&#13;
+7. On the `1. Setup` page and at the top, setup the paths to your Steam LR FFXIII folder and Nova.&#13;
+8. At the bottom of the `1. Setup` page, click `Load from ZIP/APLRFF13` and select your .aplrff13 file&#13;
+9. After you do this, the randomizer should switch to 'Archipelago Mode'&#13;
+14. On the `2. Flags` page, select any additional settings&#13;
+15. On the `3. Finish` page, click `Generate Modpack`&#13;
+16. Open Nova Chrysalia and install the generated .ncmp modpack. It will appear in the `packs` folder of LRRandomizer&#13;
+17. Launch the game from Nova Chrysalia in "Unpacked" mode with the "Voice Over Settings" matching the language you unpacked game data for.&#13;
+&#13;
+### AP LR FF13 Client&#13;
+&#13;
+1. Launch the game&#13;
+2. Run the Archipelago Launcher (ArchipelagoLauncher.exe)&#13;
+3. Click `Lightning Returns Final Fantasy XIII Client`&#13;
+4. Connect to your room with the correct port and player name&#13;
+&#13;
+**WARNING:** Loading any other saves while connected to the client may send some unexpected checks to the server. Be careful not load any other saves.</content>
+    <link href="https://github.com/Bartz24/ArchipelagoLR/releases/tag/0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.0</id>
+    <title>Rabbit and Steel v0.4.0</title>
+    <updated>2026-09-01T03:28:57+00:00</updated>
+    <author>
+      <name>tjwombo</name>
+    </author>
+    <content>added:&#13;
+- Unlocked kingdoms for that difficulty should be selectable now&#13;
+- Local multiplayer functionality (albeit a little rushed, but it should work™ )&#13;
+&#13;
+fixed:&#13;
+- Shop items don't reshuffle all the other items after buying one&#13;
+  - Depending on latency, the AP item will still be there. 'buying' it again after the server gets the location check should clear the AP item&#13;
+- Fixed starting hallway notch icons being misaligned if loaded into a class and then reselected a class with at least 1 treasuresphere item obtained&#13;
+- Fix final boss weighting&#13;
+- Fix character weight not being applied right after selecting a class&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.4.0](https://github.com/tjwombo/RNSArchipelago/compare/v0.3.9...v0.4.0) - 2026-08-31&#13;
+&#13;
+### Commits&#13;
+&#13;
+- Activate all kingdoms while on the AP lobby type [`4acb01c`](https://github.com/tjwombo/RNSArchipelago/commit/4acb01ce4bc4600eb7ea73b6a59fd4fd61ee2e7d)&#13;
+- Doesn't recreate whole shop on purchase [`cf16018`](https://github.com/tjwombo/RNSArchipelago/commit/cf16018121124aee7a14d10f86e86d87d2641859)&#13;
+- Fixed class reselection treasuresphere notch bug [`9cb1cdb`](https://github.com/tjwombo/RNSArchipelago/commit/9cb1cdbe01cc6726098c476b44f249ea8a68ac75)&#13;
+- Fix boss weighted random [`a8e784b`](https://github.com/tjwombo/RNSArchipelago/commit/a8e784b21873223f89ad7f710aea18eff1f42d68)&#13;
+- Fix character getting set in time for route update [`a65f104`](https://github.com/tjwombo/RNSArchipelago/commit/a65f1046cd89e0f135d2e5926a780160e7631b2f)&#13;
+- Item sent message matches player being sent [`b622cc8`](https://github.com/tjwombo/RNSArchipelago/commit/b622cc8585d676fe15debb74e634646fd99d0658)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.3</id>
+    <title>Valheim v0.2.3</title>
+    <updated>2026-09-01T03:48:00+00:00</updated>
+    <author>
+      <name>xyzzy44</name>
+    </author>
+    <content>- Fixed typos in some research/location names&#13;
+- Fixed bug that sometimes prevented locations from sending because the code tried to use global tags with spaces.&#13;
+- Implemented "Hide Completed Research" option in module config file to hide previously completed research items at the research bench.&#13;
+- Implemented "Enforce Research Prereqs" option in module config file. This defaults to false, removing research prerequisites other than having the required materials. Previous behavior can be restored if desired by changing value to true.&#13;
+- Updated apworld logic to ensure the ability to create meads has been gained before Bonemass and/or Mountain biomes are required.&#13;
+- Updated apworld logic to make sure that armor types in logic also have necessary workstation upgrades in logic to be able to craft.</content>
+    <link href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.3.0</id>
+    <title>Super Smash Bros. Brawl - The Subspace Emissary v0.2.7r2</title>
+    <updated>2026-09-01T04:05:17+00:00</updated>
+    <author>
+      <name>kenniky</name>
+    </author>
+    <content>Changelog&#13;
+&#13;
+- Adds an option to open Tabuu's door upon receiving a certain percentage of the fighter trophies&#13;
+- New command: `/tabuu_door_progress` tells you how close you are to opening the door&#13;
+- New command: `/toggle_debug` toggles a debug mode, which will log some debug stuff to a text file. Turn this on if you're having issues with the APWorld, and hopefully the file can help ironing out weird bugs.&#13;
+- some bugfixes&#13;
+&#13;
+**APWORLD COMPATIBILITY**: This APWorld is **NOT** backwards compatible with any generated worlds before v0.3.0!&#13;
+&#13;
+**SD CARD COMPATIBILITY**: This version **IS** backwards compatible with previously created SD cards, you **do not** need to redo the command if you've done it successfully in the past&#13;
+&#13;
+Info: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/en_SubspaceEmissary.md&#13;
+Setup: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/en_SubspaceEmissary_Setup.md&#13;
+FAQ: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/faq.md</content>
+    <link href="https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2</id>
+    <title>Civilization IV v0.0.1r2</title>
+    <updated>2026-09-01T04:39:31+00:00</updated>
+    <author>
+      <name>VincentSIFTD</name>
+    </author>
+    <content>The first major release is here! The main additions are adding Wondersanity options (both world and national separately) and spawning Great People when GPsanity is on. In particular I'd appreciate testing of the Wondersanity stuff, as it's hard to conclusively test that.&#13;
+&#13;
+### Changelog:&#13;
+- Two separate Wondersanity options add World Wonders and/or National Wonders into the location pool. Building the wonder sends a location check, and you can build the wonder even if it's obsolete (though you won't get any benefits other than the culture).&#13;
+- Great People are added to the itempool when GPsanity is enabled. The total number of added great people is half the GPsanity number rounded up per type (so at the default of 3 checks, 2 of each GP type are added). These aren't progression (just useful), so it doesn't fully solve the large check number possibility, but it should help a lot, especially at lower numbers.&#13;
+- You can't receive technologies from goody huts or normal GP bulbs if Techsanity is enabled.&#13;
+&#13;
+&#13;
+### Installation Instructions:&#13;
+1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.&#13;
+2. Install the APWorld as normal.&#13;
+&#13;
+### Play Instructions:&#13;
+1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)&#13;
+2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.&#13;
+3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking "Save and Connect." If the connection is successful you'll get a popup that says "Successfully Connected," and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**&#13;
+&#13;
+### Gameplay Issues:&#13;
+1. You can still receive techs in Techsanity from some ways that aren't traditional research: starting techs from your leader and tech trading, and this could lead to duplicates. These are planned to be removed in future updates. Let me know if things break because of them--they shouldn't, but I'm not 100% certain.&#13;
+2. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill (though the added Great People in the pool will help).&#13;
+3. There are a lot of debugging messages left in the mod. I removed some of them, but don't expect a clean feed.&#13;
+4. When you're trying to select an "obsolete" wonder to build in the city screen, the building options will jump to the top of the building list due to the hacky way I've implemented that ability. I want to fix it eventually, but for now the easiest way to mitigate it is to use the wonder filter on the right side of the city list (the star), which will have it jump back to the start of the wonders, which hopefully won't make it jump. You can also use the "choose what to build next" dialog, or just select it without moving your mouse (use the scroll wheel).&#13;
+&#13;
+### Technical Issues:&#13;
+1. I had generation errors when creating solo/near-solo multiworlds with high Techsanity Era Gates values--I never tested with higher values with locations other than Techsanity enabled but keep that in mind if you're having trouble generating.&#13;
+2. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.&#13;
+3. There have been bug reports of items received/obtained while offline not properly appearing in-game and/or being sent to the multiworld when reconnecting. I think this is related to mismatching either mod or APworld versions, but I haven't fully found the root cause yet.&#13;
+&#13;
+If you have any questions, bug reports, or things I forgot to mention, let me know in [the Civilization IV thread in the Archipelago Discord server](https://discord.com/channels/731205301247803413/1326231506682904576).&#13;
+&#13;
+Github for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/</content>
+    <link href="https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.0</id>
+    <title>Final Fantasy 1 PSP v0.2.0</title>
+    <updated>2026-09-01T05:03:17+00:00</updated>
+    <author>
+      <name>1-800-thewolf</name>
+    </author>
+    <content>&lt;img width="557" height="308" alt="image" src="https://github.com/user-attachments/assets/84cab890-79d9-4752-a4e7-6821e4f8b30c" /&gt;&#13;
+&#13;
+---&#13;
+&#13;
+# New Features&#13;
+&#13;
+## 📖 Bestiarysanity — monsters hold checks&#13;
+Turn a percentage of the seed's huntable monsters into AP locations. Kill one, get a check.&#13;
+&#13;
+- Logic handles which monsters are reachable with your items and yaml settings. &#13;
+&#13;
+**New Bestiary tab in the AP client**&#13;
+&#13;
+- Monsters grouped by where you can hunt them.&#13;
+- A section lights up when reachable right now, and grays out when you have cleared it.&#13;
+- Clear over half of a section to reveal the quality of items hidden behind the other monsters there.&#13;
+&#13;
+&lt;!-- IMAGE: Bestiary tab in the AP client --&gt;&#13;
+&#13;
+## 💣 Traps&#13;
+Replace some of your filler items with traps. &#13;
+&#13;
+Traps spring at the start of your next battle as a **real monster ability**, animated and announced the way the game does it normally. Available traps so far:&#13;
+&#13;
+- 🤐 **Silence Trap**&#13;
+- 🦑 **Ink Trap**&#13;
+- 🧪 **Poison Darts Trap**&#13;
+- 💀 **Death Trap**&#13;
+&#13;
+Because they are real abilities, they can be dodged and resisted like anything else a monster throws at you.&#13;
+&#13;
+&lt;img width="551" height="311" alt="Trap example" src="https://github.com/user-attachments/assets/5a6f07b1-45dc-4aec-a46a-129da10ee547" /&gt;&#13;
+&#13;
+## 👥 Missing Party Members&#13;
+**Choose Starting Party Size**&#13;
+&#13;
+- The rest go **MISSING**: fully removed from the party, and enter the multiworld item pool as items named for their job.&#13;
+- A joining member rapidly gains levels at their first battle victory.&#13;
+- Logic knows your party is short, so a 1-member start does not get asked to do 4-member things.&#13;
+&#13;
+&lt;img width="626" height="362" alt="image" src="https://github.com/user-attachments/assets/3ba4bef5-1c84-450a-9dad-6a4dd002b0a1" /&gt;&#13;
+&#13;
+## 🥷 Custom Job Sprite&#13;
+Special thanks to @✨-Prime-✨ for commissioning the fully custom Stealth Thief and Stealth Ninja Sprites.&#13;
+Get the scroll and your Thief sprite upgrades in game!&#13;
+&#13;
+&lt;img width="557" height="308" alt="image" src="https://github.com/user-attachments/assets/84cab890-79d9-4752-a4e7-6821e4f8b30c" /&gt;&#13;
+&#13;
+---&#13;
+&#13;
+### ⬆️ Quality of Life&#13;
+&#13;
+- **Item and location name groups.** `!hint`, `exclude_locations`, `priority_locations`, and plando now take group names instead of 323 item names and 452 location names typed out one at a time. 13 item groups (Party Members, Key Items, Weapons, Armor, Equipment, Consumables, Spell Tomes with a White/Black split, Job Scrolls, Vehicles, Assembly Pieces, Gil, Experience Bags) and 35 location groups (Chests, Shops, NPCs, one per dungeon or town, plus Bonus Dungeons).&#13;
+&#13;
+### 🪰 Bugfixes related to...&#13;
+&#13;
+- Thief steal crashes.&#13;
+- Vanishing party members.&#13;
+- Grand Master gaining attack by lethal attacks.*&#13;
+- Blood Knight lifesteal on undead.&#13;
+- Bonus dungeon chests past the 65th.*&#13;
+- Wrong-disc detection.&#13;
+- Battle turn-order wraparound fix, dynamic chest name fixes, and a pile of smaller client stability fixes.&#13;
+&#13;
+---&#13;
+&#13;
+⚠️ Not compatible with existing seeds. Finish the seed you're playing on the version that generated it and then upgrade.&#13;
+&#13;
+---&#13;
+&#13;
+## Something Broke?&#13;
+&#13;
+Run `/logs` in the client's command box and drop it into Discord for fastest results.&#13;
+&#13;
+- Bug reports: [Issues](https://github.com/1-800-thewolf/FF1PSP-Archipelago/issues)&#13;
+- Discussion and support: [FF1 PSP Archipelago Discord](https://discord.com/channels/731205301247803413/1500609270620885032)&#13;
+- Not in the main AP server yet? [Archipelago Discord](https://discord.gg/archipelago)&#13;
+&#13;
+**Full Changelog**: https://github.com/1-800-thewolf/FF1PSP-Archipelago/compare/v0.1.0...v0.2.0</content>
+    <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.0"/>
   </entry>
 </feed>
