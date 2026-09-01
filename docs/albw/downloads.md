@@ -1,9 +1,12 @@
 # A Link Between Worlds
 
 ## Latest
-- <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.4-hotfix/albw.apworld">Latest Version (0.3.4r2)</a>
+- <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.5/albw.apworld">Latest Version (0.3.5)</a>
 
 ## All Versions
+
+#### v0.3.5
+- <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.5/albw.apworld">https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.5/albw.apworld</a>
 
 #### v0.3.4r2
 - <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.4-hotfix/albw.apworld">https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.4-hotfix/albw.apworld</a>

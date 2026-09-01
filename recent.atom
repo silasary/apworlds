@@ -2,184 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-01T12:21:17.461276+00:00</updated>
+  <updated>2026-09-01T18:17:15.281835+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.0</id>
-    <title>metal_hellsinger v1.1.0</title>
-    <updated>2026-08-30T13:29:55+00:00</updated>
-    <author>
-      <name>DanielSchaack</name>
-    </author>
-    <content># Metal: Hellsinger AP World v1.1.0&#13;
-Content Update for both the AP World _and_ the client.&#13;
-**NOTE:** The client is not backward compatible with the previous version. Please make sure to update both&#13;
-&#13;
-- [Metal: Hellsinger AP World](https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/latest)&#13;
-- [Metal: Hellsinger Randomizer Mod](https://github.com/DanielSchaack/Metal-Hellsinger-AP-Mod/releases/latest)&#13;
-- [Setup Guide](https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/blob/main/worlds/metal_hellsinger/docs/setup_en.md)&#13;
-&#13;
-## ADDED&#13;
-- Mandatory "First Kill" checks for each enemy type and the bosses.&#13;
-- Optional "First Slaughter" checks for each enemy type.&#13;
-- Option for minimally required difficulty. Any difficulty below this one is not available and the client won't send any checks on lower difficulty. Logic respects this setting&#13;
-- Option (and client configuration) to activate all enemies from Archdevil for any difficulty. Note: These enemies are added _on top_ of the regular ones, even in places where the enemies would be replaced for Archdevil&#13;
-&#13;
-## CHANGED&#13;
-- Fury Combo Checks are now optional&#13;
-- Renamed Bestiary checks&#13;
-- Cutscenes no longer count as play time, meaning no items/deathlinks can be received while they are active  &#13;
-- Deathlink is no longer on by default &#13;
-&#13;
-## FIXED&#13;
-- Game crashing when finishing a Hell while not being connected&#13;
-- Sending Boon Checks when starting any Hell&#13;
-- Sheol shows as locked if found but not having met its requirements&#13;
-- Miscellaneous uncaught exception&#13;
-- DLC Songs and Outfits not being randomized before connecting to any slot&#13;
-&#13;
-## REMOVED&#13;
-- Option for Non-randomized Hells. Please use Plando to add the required hells to inventory or to set them as completion rewards instead.</content>
-    <link href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/silasary/APxiv/releases/tag/0.31.2</id>
-    <title>Final Fantasy XIV v0.31.2</title>
-    <updated>2026-08-30T13:36:59+00:00</updated>
-    <author>
-      <name>silasary</name>
-    </author>
-    <content>* Fixed bug where logic thought you could do duties as a Disciple of the Hand or Land.
-* This confused UT, but hopefully shouldn't have caused any unbeatable seeds.
-* That said, if you genned on 0.31.1, and your Fisher is higher than any of your combat classes... You may have to cheat some locations.
-(Only fisher though, because the rest of them will always be filler.)</content>
-    <link href="https://github.com/silasary/APxiv/releases/tag/0.31.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.0</id>
-    <title>OpenTTD v2.5.0</title>
-    <updated>2026-08-30T14:01:24+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content>**The seed's settings now reach the game.** World generation is deferred by a
-turn of the main loop, and the NewGRF scan's config reload landed in that gap
-and overwrote everything the seed had chosen — train length, station spread,
-vehicle limits and the rest, which were then baked into the savegame. The
-settings are applied again at the moment the world is built, and a world
-generated with the wrong values is repaired when it is loaded.
-
-**Engine**
-- Reconnecting mid-session no longer replays every item (double money,
-  re-fired traps) and no longer loses mission progress.
-- Infrastructure locks only bind the player — towns can grow their roads and
-  industries can level ground again.
-- Server-synced missions and the Mission Check task reward now count toward
-  shop and tier unlocks.
-- Trap timers no longer run while paused; your own DeathLink no longer
-  bounces back onto you; the Colby event can no longer stall permanently.
-- Shop hints are requested at session start, so slots can show who holds what.
-
-**apworld 2.5.0** — new seeds need this version; existing seeds still play.
-- Every goal is clamped to what the seed can actually supply: missions,
-  vehicles, town counts.
-- Multiplayer mode really removes ruins, stars, Colby and demigods now.
-- Missions and Colby only name cargo that exists in the chosen landscape and
-  FIRS economy.
-- An unlock can no longer be placed behind the tier it unlocks.
-
-**Plugin 1.5.0** — needs launcher 3.21.2 or newer.
-- Standalone sessions connect properly; a game crash during startup no longer
-  hangs the launcher; a fresh install gets ruins and stars in its first seed.
-- The plugin source is back in this repository, under `plugin/`.
-
-This release is machine-verified (generation proven at the option extremes)
-but has not yet been played through — see KNOWN_BUGS.md, and report anything
-on BetaHub.
-</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.4</id>
-    <title>Mega Man Zero 3 v0.3.4</title>
-    <updated>2026-08-30T17:32:38+00:00</updated>
-    <author>
-      <name>brodieberger</name>
-    </author>
-    <content>Tons of bug fixes from the reports on the last release. Biggest ones were the glitched NPC dialogue rewards and Cerveau disappearing and remaining inaccessible.&#13;
-&#13;
-[Check out the full readme before playing.](https://github.com/brodieberger/MMZero3Archipelago)&#13;
-&#13;
-# Features&#13;
-&#13;
-## Hint and track by group&#13;
-&#13;
-Items and locations are sorted into groups now, so commands like `!hint` can be used on a category.&#13;
-&#13;
-| locations | |&#13;
-| --- | --- |&#13;
-| by stage | `Resistance Base` (all three mission sets), `Aegis Volcano Base`, `Sunken Library`, ... |&#13;
-| by type | `Secret Disks`, `Stage Clears`, `Chips`, `A+ Rank Clears`, `Subtanks`, `Weapons`, `1-UPs`, `Minibosses` |&#13;
-&#13;
-| items | |&#13;
-| --- | --- |&#13;
-| by type | `Secret Disks`, `Stage Access`, `Chips`, `Body Chips`, `Foot Chips`, `Head Chips`, `EX Skills`, `Subtanks`, `Weapons` |&#13;
-&#13;
-Try using `!hint Stage Access` or `!missing Resistance Base`.&#13;
-&#13;
-Works in the Yaml too.&#13;
-```yaml&#13;
-Mega Man Zero 3:&#13;
-  exclude_locations: [1-Ups]&#13;
-  start_hints: [Stage Access]&#13;
-  local_items: [Weapons]&#13;
-```&#13;
-&#13;
-## Intermission cutscenes are reimplemented&#13;
-&#13;
-Some missions in the vanilla game start by a cutscene starting which forces you into the level. These have been brought back and will now play when you start the mission through the mission select screen.&#13;
-&#13;
-Mission include: Starting cutscenes from Missile Factory and Sub Arcadia. Ending cutscenes from Derelict Spacecraft, Missile Factory, and Area X-2.&#13;
-&#13;
-You are still able to skip these.&#13;
-&#13;
-## New NPC in Cerveau's room&#13;
-&#13;
-Cerveau leaves his room once the maintenance bay cutscene with Harpuia is supposed to be activated. There is now a resistance soldier standing in his spot waiting to direct you to his location. &#13;
-&lt;div align="center"&gt;&#13;
-&lt;img width="400" alt="Screenshot 2026-08-30 140321" src="https://github.com/user-attachments/assets/5b17a7a5-9c16-4a0c-a2a6-c40851179f71" /&gt;&#13;
-&lt;/div&gt;&#13;
-(The bug where that cutscene is inaccessible until clearing certain stages has also been fixed)&#13;
-&#13;
-## Starting weapons&#13;
-&#13;
-If you leave `starting_weapons` empty and you now get one random weapon.&#13;
-&#13;
-If you start with the Shield Boomerang only, another one gets added to your inventory so you can still attack with the charged attack.&#13;
-&#13;
-# Bug Fixes&#13;
-&#13;
-- Completing the game no longer prompts you to save the game. Effectively removing new game plus and any bugs it had. NG+ is not really that important anyway since you can replay levels with all your items regardless.&#13;
-- The cutscene with Harpuia in the maintenance room is no longer gated behind certain levels being cleared. Should now always be accessible once you have the second story progress item.&#13;
-- Cerveau, Hirondelle, Doigt and Rocinolle now give their items once Story Progress has been sent. Previously they would also check if Area X-2 was cleared in addition to the story progress. This has been fixed to be just the story progress item.&#13;
-- A+ Rank Clear: Sub Arcadia was in the Giant Elevator region for some reason.&#13;
-- Loading a save used to drop you into a level or replay a cutscene based on levels cleared. This has been fixed.&#13;
-- Talking to Ciel would launch Sub Arcadia. Also fixed.&#13;
-- The Sunken Library's disks are now represented properly on the mission select screen.&#13;
-- Fixed the item received indicator palettes being messed up on the mission select screen.&#13;
-&#13;
-# Known bugs&#13;
-&#13;
-- The game got a bit laggier the further you got into a run, since the game does all of the AP logic every frame. This has been optimized, but the game might still have a few stutters when you get late into a run. Will be improved more later.&#13;
-  - Note that the game still lags in vanilla, so its not all from this mod.&#13;
-&#13;
-Still aiming to move this world from unstable to stable, so keep reporting bugs :)&#13;
-</content>
-    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-23.0.0</id>
     <title>The Legend of Zelda - Oracle of Seasons v23.0.0</title>
@@ -1119,6 +946,33 @@ This update is compatible with seeds generated on 0.3.X.&#13;
     <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.4"/>
   </entry>
   <entry>
+    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.5</id>
+    <title>NSMBW v0.3.5</title>
+    <updated>2026-08-31T22:31:21+00:00</updated>
+    <author>
+      <name>Miiroun</name>
+    </author>
+    <content># New Super Mario Bros Wii v0.3.5&#13;
+&#13;
+## Features&#13;
+- No new features.&#13;
+&#13;
+&#13;
+## Fixes&#13;
+- World9 script was broken, this fixes it.&#13;
+For it to work on an already generated patch, run `/rm_tmp` in your client before connecting.&#13;
+&#13;
+&#13;
+## Backwards compatibility&#13;
+This update is compatible with seeds generated on 0.3.X.&#13;
+&#13;
+&#13;
+## Links&#13;
+[Download](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.5)&#13;
+[Setup Guide](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md)</content>
+    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.5"/>
+  </entry>
+  <entry>
     <id>https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.5</id>
     <title>Pokemon Ranger (Quest) v1.0.5</title>
     <updated>2026-08-31T23:45:15+00:00</updated>
@@ -1453,5 +1307,86 @@ Run `/logs` in the client's command box and drop it into Discord for fastest res
     </author>
     <content>A won seed now announces its goal to every session it connects to, instead of only the first. A goal the launcher was not listening for used to be lost for good, leaving the seed unfinished in the room with every location the player never reached still unreleased. The victory screen and the final play time still happen once, when the seed is won.</content>
     <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.0</id>
+    <title>La-Mulana 2 v1.0.0</title>
+    <updated>2026-09-01T09:45:30+00:00</updated>
+    <author>
+      <name>Crownmuri</name>
+    </author>
+    <author>
+      <name>Coookie93</name>
+    </author>
+    <content>## Supports: Mod v1.0.0+ -- Tracker v2.0.0+&#13;
+&#13;
+# Changelogs&#13;
+- NEW option: Include Expensive Shop Item (Requires Ganesha's Talisman &amp; Money Fairy or Harp in logic)&#13;
+- Fixed sphere scaled AP item pricing (50-100) and made ammo pricing match vanilla to balance with useful AP filler&#13;
+- Many, many Pot/Glossary/DLC logic fixes (thank you too everyone who reported them!)&#13;
+- Collapsed item labels ("Sacred Orb", "Crystal Skull", "Kosugi Research Papers", non-guardian specific "Ankh Jewel")&#13;
+- Fixed require_fdc option -- it was appending the logic to vanilla exits despite ER&#13;
+- Fixed several instances of world.random instead of self.random causing the same chests to be cursed when there are multiple LM2 players in one multiworld.&#13;
+- Offline seed option is fully compatible with the new AP settings&#13;
+&#13;
+# Generation improvements&#13;
+- Major overhaul of the ER ordering, regeneration and validation (fuzz results at 99.5% with 1000 fully randomized yamls)&#13;
+  - For example, making sure that Gate of Guidance and Mausoleum of Giants is not blocked by a 9 soul gate door with original shops&#13;
+  - For example, rejecting ER layouts where the only way out is through a soul gate but with no guardian in the accessible regions&#13;
+- The non-VoD start Starting Shop can now still have progression items even with original shops to prevent sphere 1 softlock.&#13;
+  - Annwfn and Immortal Battlefield start will reroll if the YAML has original shops but no ER settings due to Pepper being stuck in VoD&#13;
+- Reduce local reserved filler (pot / glossary filler) in sphere 1 locations to prevent softlock.&#13;
+- Set the max amount of the Glossary Hunt goal to 80% of available glossary due to progressive item bloat.&#13;
+  - The remaining glossaries are classified as Filler&#13;
+ </content>
+    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.5</id>
+    <title>A Link Between Worlds v0.3.5</title>
+    <updated>2026-09-01T13:05:05+00:00</updated>
+    <author>
+      <name>randomsalience</name>
+    </author>
+    <content>### Fixes&#13;
+- Fix a bug that prevented the apworld from loading if it failed to clean up old temporary directories</content>
+    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.0</id>
+    <title>Grand Theft Auto: San Andreas v0.8.0</title>
+    <updated>2026-09-01T14:55:57+00:00</updated>
+    <author>
+      <name>awaken</name>
+    </author>
+    <content>## New:&#13;
+- Added Fast Travel marker in CJ's House, Badlands Trailer, Doherty Garage and Four Dragons Casino. (#44)&#13;
+- Added a `.ini` settings file with the following options:&#13;
+	- Notification duration (#39)&#13;
+	- Collectible number and Mission counter size (#41)&#13;
+	- Item importance colors in Ammu-nation&#13;
+	- Disabling Fast Travel&#13;
+- Starting Point chosen is now shown in `GTA SA Client` upon connecting. (#45)&#13;
+- Added Freight Train levels as checks&#13;
+- Added Ammu-nation gun challenges as checks&#13;
+- Added 100% as an End Goal (#5)&#13;
+- Added Jetpack pick up next to Four Dragons Casino&#13;
+## Changes:&#13;
+- The entire map is now open (no barricades and wanted level). Every collectible is now in logic early. (#14)&#13;
+  (Thanks to @Lordmau5 for letting me use their code from ChaosModComplementaries)&#13;
+- Added gating items - every early available side activity (paramedic, taxi, tags, snapshots etc.) is now gated behind an item that unlocks that submission specifically. (#50 and #47)&#13;
+- Added an option to start with one unlock item.&#13;
+- Tags cannot be sprayed until `Tags Unlock` item was received, excluding Tagging Up Turf tags (#56 by @Lordmau5)&#13;
+- Submissions cannot be started until their respective item was received (#55 by @Lordmau5)&#13;
+- All submissions now resume from their highest level after failing and restarting (#23)&#13;
+  (Thanks to @Lordmau5 for creating a proof of concept)&#13;
+- Save files are now stored per world inside `GTA San Andreas User Files/archipelago`. (#42)&#13;
+- Starting point save files are now shipped inside `SanAndreasAP-vX.X.X.zip` and their installation is different.&#13;
+- Renamed story missions and side-activity location names to be more comprehensible (#46)&#13;
+- Removed On Completion mode for submissions.&#13;
+## Fixed:&#13;
+- CLEO no longer breaks the mod (#54)&#13;
+- Fixed `Bad Weather Trap` always being sandstorm (#51)</content>
+    <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.0"/>
   </entry>
 </feed>
