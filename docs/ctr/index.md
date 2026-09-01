@@ -7,7 +7,7 @@ power-ups and weapons.
 
 
 ## Downloads
-- <a href="https://github.com/dowlle/ctr-native-ap/releases/download/v0.2.0-alpha6/ctr.apworld">Latest Version (0.2.0a6)</a>
+- <a href="https://github.com/dowlle/ctr-native-ap/releases/download/v0.2.0-alpha7/ctr.apworld">Latest Version (0.2.0a7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
