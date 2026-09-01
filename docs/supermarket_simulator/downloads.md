@@ -1,9 +1,12 @@
 # Supermarket Simulator
 
 ## Latest
-- <a href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.3/supermarket_simulator.apworld">Latest Version (0.3.3)</a>
+- <a href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.4/supermarket_simulator.apworld">Latest Version (0.3.4)</a>
 
 ## All Versions
+
+#### v0.3.4
+- <a href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.4/supermarket_simulator.apworld">https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.4/supermarket_simulator.apworld</a>
 
 #### v0.3.3
 - <a href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.3/supermarket_simulator.apworld">https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.3/supermarket_simulator.apworld</a>

@@ -1,6 +1,13 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 1.0.5
+
+- Fixed not detecting the correct ROM due to the previous update
+
+### Is this version compatible with older multiworld slots?
+Back to 1.0.1 yes, further back maybe but probably no (the client will tell you whether you have to downgrade)
+
 ## 1.0.4
 
 - Fixed compatibility with the Pokémon Ranger: Shadows of Almia apworld

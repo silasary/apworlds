@@ -11,7 +11,7 @@ while waiting for the items you need to keep your shelves stocked and your custo
 
 
 ## Downloads
-- <a href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.3/supermarket_simulator.apworld">Latest Version (0.3.3)</a>
+- <a href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/download/v0.3.4/supermarket_simulator.apworld">Latest Version (0.3.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

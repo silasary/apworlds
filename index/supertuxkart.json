@@ -9,7 +9,8 @@
   "github": "https://github.com/Batknight21/stk-archipelago",
   "manifest_fields": [
     "authors",
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "versions": {
     "beta": {
@@ -26,6 +27,21 @@
       "title": "v0.9.0",
       "version_simple": "0.9.0",
       "world_version": "0.9.0"
+    },
+    "v0.9.1": {
+      "created_at": "2026-08-31T17:46:22Z",
+      "description": "**For the setup guide see [set up guide](/SET_UP_GUIDE.md)**\r\n\r\nSeveral bug fixes:\r\n- locked difficulty was still selected in select_challenge.cpp if higher difficulty was played somewhere else\r\n- all keys have to be unlocked and all challenges completed for the big door to fake open in the overworld\r\n- quitting to the menu now clears all messages\r\n- prelocated track items where also generated in the multiword\r\n- select_challenge was sometimes selecting easy difficulty or crashing when entering a race\r\n\r\n### Known bugs (still):\r\n- when your receive all the keys while in the overworld, the door looks open but you cannot enter it. Just join any challenge and quit as soon as you loaded in to fix this\r\n- game crashes when connecting. Just restart and delete the player with the same name as the slot name\r\n\r\n### Future todo:\r\n- show connection status in overworld gui\r\n- change messages\r\n- fix remaining bugs\r\n\r\nAPWorld repo: https://github.com/Batknight21/STK-APworld",
+      "download_url": "https://github.com/Batknight21/stk-archipelago/releases/download/v0.9.1/supertuxkart.apworld",
+      "has_manifest": true,
+      "hash_sha256": "45e6eb121553da2fe75f770ad52864dca4c868fbbac8c9fa171bc1e2dfd0395b",
+      "html_url": "https://github.com/Batknight21/stk-archipelago/releases/tag/v0.9.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 7575,
+      "source_url": "https://api.github.com/repos/Batknight21/stk-archipelago",
+      "tag": "v0.9.1",
+      "title": "v0.9.1",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0r2"
     }
   }
 }

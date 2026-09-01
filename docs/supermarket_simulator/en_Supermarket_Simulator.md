@@ -48,6 +48,8 @@ If traps are enabled, you may receive the following negative events:
 You can configure several options in your settings to customize and balance your playthrough:
 
 - **Exclude Licenses:** Exclude specific product licenses by name from the "All Licenses" victory goal. These licenses will still be in the item pool as useful items but are not required for victory.
+- **Percentage-based Day/Level Progression:** Generated Day and Store Level checks are each divided into five tiers. The first 20% are open; later tiers require 20%, 40%, 60%, and 80% of the relevant generated licenses, section upgrades, storage upgrades, and progressive employee items.
+- **Exclude Progression From Late Checks:** Optionally prevents every progression-classified item, including items owned by other players, from being placed in the final 20% of Day and Store Level checks. Useful-only items, filler, and traps remain valid there.
 - **Customer Checkout Locations & Chance:** Configure how many customer checkout checks exist in the multiworld (0–10000, default 100) and the percentage chance per checked-out customer to trigger a check (1–100%, default 5%).
 - **Checkout Income Multiplier:** Multiply checkout payouts received at cash registers/self-checkouts (from 10% to 1000%). Also mutliplies money boosts.
 - **Starting Cash:** Customize how much money you start with in a new save game (from $10 to $10,000).

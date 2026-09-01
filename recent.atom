@@ -2,80 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-08-31T18:21:05.576641+00:00</updated>
+  <updated>2026-09-01T00:26:29.094538+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.5</id>
-    <title>OpenTTD v2.3.0</title>
-    <updated>2026-08-29T06:40:22+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content>The seed's settings are now locked once the world exists. Map size, economy, vehicle limits, station spread and forty-one other settings the seed decides were all still editable in the settings window during a session — and the change is saved, so it survived for the rest of the multiworld while the game quietly disagreed with everyone else's. All 45 are refused now, in SettingDesc::IsEditable, which every route to a setting goes through: the window greys the entry out, the console refuses, and a network client cannot push it either.
-
-Maximum train length and station spread stop over-promising. The engine stores both in a uint8_t and its own table declares max 255 — already raised from vanilla's 64. The world offered up to 1000 and 1024, and those were silently clamped on arrival, so asking for a 1000-tile train got 255 with no warning anywhere. Both options now end at 255, which is what the engine can actually deliver.
-
-Fast forward works again as a consequence of v2.1.4: Speed Boost is an item, and until items were applied at all it could never raise the limit.
-</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.6</id>
-    <title>OpenTTD v2.4.0</title>
-    <updated>2026-08-29T13:01:27+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content>Maps can be 4096x4096. That is the engine's own ceiling — map_type.h declares MAX_MAP_SIZE_BITS = 12, and the two axes are validated independently, so nothing stood in the way except the world only ever offering 2048. Sixteen point seven million tiles: generation takes minutes and the map alone wants gigabytes, so it is offered rather than recommended.
-
-Known cost on a map that size: the God of Wackens punishment levels 4 and 5 walk every tile to find your rail. With Wrath enabled on 4096x4096 that is a visible pause each time he strikes. Ruins and stars are unaffected — they pick random tiles rather than scanning.
-</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.1.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.6</id>
-    <title>Xenoblade X v0.2.5r2</title>
-    <updated>2026-08-29T14:39:30+00:00</updated>
-    <author>
-      <name>Maragon</name>
-    </author>
-    <author>
-      <name>Nina</name>
-    </author>
-    <content>- Remove the limit for affinity quests</content>
-    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4</id>
-    <title>A Link Between Worlds v0.3.4</title>
-    <updated>2026-08-29T17:11:59+00:00</updated>
-    <author>
-      <name>randomsalience</name>
-    </author>
-    <content>**EDIT**: Please use the hotfix update: https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4-hotfix&#13;
-&#13;
-**NOTE**: If you have an existing game generated on an earlier version 0.3.0-0.3.2 of the apworld, you must re-patch the game after installing this apworld version.&#13;
-&#13;
-### Fixes&#13;
-- Fix permission error on 3ds, hopefully for real this time.</content>
-    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4-hotfix</id>
-    <title>A Link Between Worlds v0.3.4r2</title>
-    <updated>2026-08-29T17:11:59+00:00</updated>
-    <author>
-      <name>randomsalience</name>
-    </author>
-    <content>**NOTE**: If you have an existing game generated on an earlier version 0.3.0-0.3.2 of the apworld, you must re-patch the game after installing this apworld version.&#13;
-&#13;
-### Fixes&#13;
-- Fix permission error on 3ds, hopefully for real this time.</content>
-    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.4-hotfix"/>
-  </entry>
   <entry>
     <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/pre-v1.1.0-beta.2</id>
     <title>Mina The Hollower v1.1.0.post2</title>
@@ -824,6 +755,29 @@ If you've already installed the mod, the patch can be applied just by overwritin
     <link href="https://github.com/Lucasvdm/WOLAP/releases/tag/v0.2.4-alpha"/>
   </entry>
   <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.2</id>
+    <title>The Grinch v1.6.2</title>
+    <updated>2026-08-30T23:04:11+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>Grinch Archipelago’s one year mark is here! Hooray, hooray!&#13;
+A celebratory update to thank you for a wonderful year of play!&#13;
+&#13;
+## Changes&#13;
+- Multibind teleport now works through cutscenes and goo, so softlocks can’t catch you. Zip, zap, and zoom on through!&#13;
+- Max can now reach the check by logic, hooray! Through the Ski Resort and Dog’s Fence, he’ll find his way!&#13;
+- Strings are easier to view and edit with a click, a hardcode tweak makes managing them slick!&#13;
+- Collect every blueprint for a gadget in sight, and it’s now a randomizer check. What a delight!&#13;
+- Complete your missions, one by one, with glee, they’re now randomizer checks for all to see!&#13;
+  - Missionsanity’s now a toggle, ready to play. Regenerate your YAMLs to keep things on their way!&#13;
+- A Civic Center trick now lets you sneak past the cave-side door. No Sneak required, just clever logic to explore!</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/tag/2026.08.30</id>
     <title>Manual_WorldofWarcraftDungeons_Chakraa v2026.8.30</title>
     <updated>2026-08-31T00:09:52+00:00</updated>
@@ -1008,6 +962,25 @@ This is retro compatible with 1.0.0 and onward&#13;
     <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.1.0"/>
   </entry>
   <entry>
+    <id>https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.1.1</id>
+    <title>The Legend of Zelda - Oracle of Ages v1.1.0r2</title>
+    <updated>2026-08-31T09:35:53+00:00</updated>
+    <author>
+      <name>josephanimate2021</name>
+    </author>
+    <author>
+      <name>Glan9</name>
+    </author>
+    <author>
+      <name>Piapiou (SenPierre)</name>
+    </author>
+    <author>
+      <name>FlameStripe</name>
+    </author>
+    <content>Previous release got botched. Internal version isn't changed, as nothing changed really, but still did a new release so automatic apworld managers can have a properly good version.</content>
+    <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.1.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-23.0.3</id>
     <title>The Legend of Zelda - Oracle of Seasons v23.0.3</title>
     <updated>2026-08-31T11:55:32+00:00</updated>
@@ -1098,9 +1071,7 @@ existing YAML files stay valid.
     <author>
       <name>BlastSlimey</name>
     </author>
-    <content>## 1.0.4&#13;
-&#13;
-- Fixed compatibility with the Pokémon Ranger: Shadows of Almia apworld&#13;
+    <content>- Fixed compatibility with the Pokémon Ranger: Shadows of Almia apworld&#13;
 &#13;
 ### Is this version compatible with older multiworld slots?&#13;
 Back to 1.0.1 yes, further back maybe but probably no (the client will tell you whether you have to downgrade)</content>
@@ -1154,9 +1125,9 @@ Run `support-bundle.bat` on Windows or `support-bundle.sh` on Linux after a cras
 Choose one client archive:
 
 - Windows x86: `ctr-archipelago-v0.2.0-alpha6-windows-x86.zip`  
-  SHA-256: `2c3d316dc56358de186fbc51d4650bc8b303f1daf971b63216e5afa2b574483a`
+  SHA-256: `ef70315ac2dd8d588eeed91930c3967901dca1cf5a236531847718be415a1d26`
 - Linux/Steam Deck x86: `ctr-archipelago-v0.2.0-alpha6-linux-x86.tar.gz`  
-  SHA-256: `32cab74dff01d5d7bfac3e218a87d1d84eda1ab95d4d80095448c8b283adeeaf`
+  SHA-256: `23873cca784df1a0d85824b1e340ba30e9e482e8bc301bf175369f629a736ca2`
 
 Room generators also need the standalone `ctr.apworld`:  
 SHA-256: `4a2fa41e0095f7b8b3514c412931010f19a01afe14cb46b8b0c183bb0aa2dedf`
@@ -1300,5 +1271,66 @@ Nep RB3 APWorld update:&#13;
 - New Yaml Option regarding quests&#13;
 - Updated incorrect region requirements for a few dungeons</content>
     <link href="https://github.com/vegemiiBG/Archipelago-NepRb3/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.4</id>
+    <title>Supermarket Simulator v0.3.4</title>
+    <updated>2026-08-31T18:36:37+00:00</updated>
+    <author>
+      <name>Lemix028</name>
+    </author>
+    <content>### Added&#13;
+&#13;
+* Day and Store Level Progression Tiers: Checks are now divided into five progression tiers based on received progression items&#13;
+* Late Check Progression Exclusion: Added an option to prevent progression items from appearing in the latest Day and Store Level checks&#13;
+&#13;
+### Fixed&#13;
+&#13;
+* Filler Weights: Setting a filler weight to `0` now fully disables that filler item&#13;
+* Trap Frequency now works correctly when generating filler items&#13;
+* Fixed duplicate filler selection logic&#13;
+* Fixed Reach Highest Generated Store Level goal with non-divisible store level intervals&#13;
+&#13;
+</content>
+    <link href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.4</id>
+    <title>NSMBW v0.3.4</title>
+    <updated>2026-08-31T20:41:08+00:00</updated>
+    <author>
+      <name>Miiroun</name>
+    </author>
+    <content># New Super Mario Bros Wii v0.3.4&#13;
+&#13;
+## Features&#13;
+- New alternative goal : all levels.&#13;
+&#13;
+&#13;
+## Fixes&#13;
+- Forgot to update memory scrip after refactoring to work on frozen.&#13;
+&#13;
+&#13;
+## Backwards compatibility&#13;
+This update is compatible with seeds generated on 0.3.X.&#13;
+&#13;
+&#13;
+## Links&#13;
+[Download](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.4)&#13;
+[Setup Guide](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md)</content>
+    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.5</id>
+    <title>Pokemon Ranger (Quest) v1.0.5</title>
+    <updated>2026-08-31T23:45:15+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <content>- Fixed not detecting the correct ROM due to the previous update&#13;
+&#13;
+### Is this version compatible with older multiworld slots?&#13;
+Back to 1.0.1 yes, further back maybe but probably no (the client will tell you whether you have to downgrade)</content>
+    <link href="https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.5"/>
   </entry>
 </feed>

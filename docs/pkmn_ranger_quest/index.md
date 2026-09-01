@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/pkmn_ranger_quest_1.0.4/pkmn_ranger_quest.apworld">Latest Version (1.0.4)</a>
+- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/pkmn_ranger_quest_1.0.5/pkmn_ranger_quest.apworld">Latest Version (1.0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
