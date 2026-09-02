@@ -144,6 +144,21 @@
       "title": "2026.08.27 - Patch Should Survive Game Updates",
       "version_simple": "2026.8.27",
       "world_version": "2026.8.27"
+    },
+    "2026.09.02": {
+      "created_at": "2026-09-02T14:42:18Z",
+      "description": "### Fixed\n- Reconnecting the client to a different room could fail with \"The server is running a different multiworld than your client is. (invalid seed_name)\" and silently not log in. It should now be fixed by clearing the stale seed_name before each new connection attempt.\n- After a Northgard update, applying the patch could silently re-patch the stale pre-update backup and overwrite the freshly-updated game with a repatched OLD build, instead of patching the new one. It should now be fixed by re-checking whether the live install is fresh and vanilla before deciding what to patch.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.27...2026.09.02\n",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.09.02/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "01aca89152f0e1f9ead42357340109fc37eb45985957158a46c9d77a577a79b2",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.02",
+      "minimum_ap_version": "0.6.7",
+      "size": 10432302,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.09.02",
+      "title": "2026.09.02 - Fix Stale Backup Re-Patch & Room-Switch Reconnect",
+      "version_simple": "2026.9.2",
+      "world_version": "2026.9.2"
     }
   }
 }

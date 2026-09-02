@@ -2,116 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-02T12:16:13.162019+00:00</updated>
+  <updated>2026-09-02T18:14:46.716019+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.5.6</id>
-    <title>ULTRAKILL v3.5.6</title>
-    <updated>2026-08-30T22:15:35+00:00</updated>
-    <author>
-      <name>TRPG</name>
-    </author>
-    <content>- Fixed a logic issue for 0-2: Secret 3. #49&#13;
-- Fixed some issues with Gutterman shield logic. #50&#13;
-- Fixed the Blue Skull appearing in 7-S without having the item.&#13;
-- Adjusted logic for killing Idols in 7-4.</content>
-    <link href="https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.5.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.8.1</id>
-    <title>Crypt of the NecroDancer v0.8.0r2</title>
-    <updated>2026-08-30T22:18:50+00:00</updated>
-    <author>
-      <name>lastingParadox</name>
-    </author>
-    <content>### Changes&#13;
-- Add a proper Archipelago markdown guide to the docs. [Read this if you want to learn about randomization for this APWorld](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/en_Crypt_of_the_NecroDancer.md).&#13;
-- Add already established option groups property to CotNDWeb like it should have been in the first place.&#13;
-  - This allows for option groups to appear in Options Creator instead of the unorganized mess it was previously.&#13;
-- Add display name to `starting_inventory` option.&#13;
-- Fix issue related to All Zones speedrun times setting defaults showing up as `1` for each character in Options Creator. Changed the default to `-1` now to represent being disabled.&#13;
-  - [This issue was caused by Options Creator handling OptionCounter `0` values as falsy](https://github.com/ArchipelagoMW/Archipelago/pull/6221).&#13;
-  - If values are manually set to `0`, this is also treated as disabled. Any value less than `3` and greater than `0` are still set to `3` default. I understand 3 minutes is an absurd standard for completing an All Zones Mode run, but for now, if a player sets their speedrun timers to an unrealistic standard, that's on the player. If this turns out to be more of a problem in the future, logic can be added to set minimum speedrun timers for each character as opposed to a uniform 3 minutes.&#13;
-- Fix options descriptions to be more accurate and consistent with each other.&#13;
-&#13;
-Please see the [setup file](https://github.com/lastingParadox/Archipelago-CotND/blob/crypt-of-the-necrodancer/worlds/cotnd/docs/setup_en.md) for getting started.&#13;
-&#13;
-Please inform me of any issues through the associated [Crypt of the NecroDancer channel in the Archipelago Discord](https://discord.com/channels/731205301247803413/1192775219740422176) or through [GitHub Issues](https://github.com/lastingParadox/Archipelago-CotND/issues).</content>
-    <link href="https://github.com/lastingParadox/Archipelago-CotND/releases/tag/v0.8.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lucasvdm/WOLAP/releases/tag/v0.2.4-alpha</id>
-    <title>West of Loathing v0.2.4a0</title>
-    <updated>2026-08-30T23:00:15+00:00</updated>
-    <author>
-      <name>Xylen</name>
-    </author>
-    <author>
-      <name>TylerJG92</name>
-    </author>
-    <content># APWorld Changes&#13;
-- Added an `archipelago.json` manifest file for future AP 7.0 support&#13;
-&#13;
-# Client Mod Changes&#13;
-- Added support for installation via Thunderstore/R2ModMan and updated documentation accordingly&#13;
-&#13;
-# Misc Changes&#13;
-- Added a new GitHub Issues template, which we'd encourage people to use for bug reports&#13;
-&#13;
-Beyond any code changes, the most significant update with this release is that @TylerJG92 has joined as a contributor, which is why this is being somewhat resurrected and there's been any work on it at all since the last release almost a full year ago. With the exception of the small new manifest file in the APWorld, he is to thank for all of the sudden new work.&#13;
-&#13;
-I (@Lucasvdm) am still around and plan on helping him out, sharing knowledge, reviewing changes and such, but at least for the foreseeable future @TylerJG92 will probably be the main developer on this project going forward. Who knows, maybe this will inspire me to get back into the swing of things too -- although I am only going to get much, much busier in the coming weeks, so no promises.&#13;
-&#13;
-If you've already installed the mod, the patch can be applied just by overwriting the WOLAP.dll file with the new version. Note, however, that there are now also new installation options, which can take advantage of the contents of the new `Patcher` folder in `WOLAP_Mod`. Applying the new .apworld requires generating a new multiworld.</content>
-    <link href="https://github.com/Lucasvdm/WOLAP/releases/tag/v0.2.4-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.2</id>
-    <title>The Grinch v1.6.2.post2</title>
-    <updated>2026-08-30T23:04:11+00:00</updated>
-    <author>
-      <name>MarioSpore</name>
-    </author>
-    <author>
-      <name>SomeJakeGuy</name>
-    </author>
-    <content>Grinch Archipelago’s one year mark is here! Hooray, hooray!&#13;
-A celebratory update to thank you for a wonderful year of play!&#13;
-&#13;
-## Changes&#13;
-- Multibind teleport now works through cutscenes and goo, so softlocks can’t catch you. Zip, zap, and zoom on through!&#13;
-- Max can now reach the check by logic, hooray! Through the Ski Resort and Dog’s Fence, he’ll find his way!&#13;
-- Strings are easier to view and edit with a click, a hardcode tweak makes managing them slick!&#13;
-- Collect every blueprint for a gadget in sight, and it’s now a randomizer check. What a delight!&#13;
-- Complete your missions, one by one, with glee, they’re now randomizer checks for all to see!&#13;
-  - Missionsanity’s now a toggle, ready to play. Regenerate your YAMLs to keep things on their way!&#13;
-- A Civic Center trick now lets you sneak past the cave-side door. No Sneak required, just clever logic to explore!</content>
-    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/tag/2026.08.30</id>
-    <title>Manual_WorldofWarcraftDungeons_Chakraa v2026.8.30</title>
-    <updated>2026-08-31T00:09:52+00:00</updated>
-    <author>
-      <name>ChakraaThePanda</name>
-    </author>
-    <content>### REMOVED
-- Removed Atal'Dazar and Freehold from the dungeon pool. Both intermittently disappear from the Dungeon Finder queue for cross-faction groups, making them unreliable to complete as randomizer checks.
-
-### CHANGED
-- Reclassified Halls of Atonement as Free to Play compatible. It's fully queueable at level 20 and under, just like the rest of the Shadowlands Free to Play dungeons.
-
-### FIXED
-- Corrected the README's XP-lock warning: Waycrest Manor is fully queueable across its whole level range and no longer needs an XP lock, leaving only Plaguefall in that warning.
-- Updated dungeon pool counts (Free to Play: 70, All: 35 additional) to reflect the changes above.
-
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/compare/2026.08.01...2026.08.30
-</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/tag/2026.08.30"/>
-  </entry>
   <entry>
     <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.2</id>
     <title>Cursed Words v0.5.2</title>
@@ -1272,5 +1167,146 @@ Documentation:&#13;
 &#13;
 ### Refactor recipe unlock logic to use consistent naming for Mixing Station Mk2 and improve option condition checks</content>
     <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.1</id>
+    <title>Grand Theft Auto: San Andreas v0.8.1</title>
+    <updated>2026-09-02T12:16:41+00:00</updated>
+    <author>
+      <name>awaken</name>
+    </author>
+    <content>## Fixed:&#13;
+- Fixed `.asi` not receiving the world seed from GTA SA Client if Universal Tracker isn't installed.</content>
+    <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.4</id>
+    <title>YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.2.4</title>
+    <updated>2026-09-02T13:36:38+00:00</updated>
+    <author>
+      <name>SilicDev</name>
+    </author>
+    <content># Hard and easy logic logic &#13;
+**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.2.3...yohane_bitdb-v0.2.4&#13;
+&#13;
+## Changes&#13;
+- Added Fashion for Dummies as requirement for Infernal Altar and Sunken Volcano bosses on easy logic&#13;
+- Implemented an early version of hard logic, enabling damage boosting as a logically required step and force enabling you skips&#13;
+- Adjusted the death and damagelink messages&#13;
+&#13;
+## Internal: &#13;
+- Fixed an issue breaking generation on Linux&#13;
+&#13;
+AP Mod download: https://github.com/SilicDev/YohaneAPMod/releases/tag/v0.0.3&#13;
+Yohane BID mod loader download: https://github.com/SilicDev/YohaneBIDModLoader/releases/tag/v0.0.1</content>
+    <link href="https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.02</id>
+    <title>Northgard v2026.9.2</title>
+    <updated>2026-09-02T14:42:18+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Fixed
+- Reconnecting the client to a different room could fail with "The server is running a different multiworld than your client is. (invalid seed_name)" and silently not log in. It should now be fixed by clearing the stale seed_name before each new connection attempt.
+- After a Northgard update, applying the patch could silently re-patch the stale pre-update backup and overwrite the freshly-updated game with a repatched OLD build, instead of patching the new one. It should now be fixed by re-checking whether the live install is fresh and vanilla before deciding what to patch.
+
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.08.27...2026.09.02
+</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.02"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-23.0.4</id>
+    <title>The Legend of Zelda - Oracle of Seasons v23.0.4r2</title>
+    <updated>2026-09-02T15:02:22+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>## 🗳️ New Options&#13;
+- Added a start position option, that contains north horon, sunken city, tarm ruins, temple of seasons and samasa desert&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+- Shops items can now be bought more than once if it is local and makes sense to be bought more than once (potions, ore chunks, rupees)&#13;
+- Owl hints now try to give items that appear later in logic, and should stop constantly telling you how to get what you already have&#13;
+- You can now always put the 4 jewels in their slots if you want&#13;
+- Subrosia digging spots are now permanently dug up&#13;
+- Added a way to warp back to the ship after giving the bell to the pirate captain&#13;
+- Added bomb and bombchu upgrades to the pool, packs of bombs no longer increase the max bomb count&#13;
+&#13;
+## 🧠 Logic&#13;
+- Added logic requiring some amounts of heart containers before beating some bosses or doing skips. The amount depends on the logic difficulty&#13;
+- Breaking the blocks to the goron chest with bombchus is now hard logic&#13;
+- Added logic to jump on the button in d8, for the armos chest&#13;
+- Added bombchu jumps to hell logic (thanks omega)&#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+- Moved the mt cucco warp to between tarm ruins and sunken city&#13;
+- Fixed Switch Hook allowing to jump at the same time</content>
+    <link href="https://github.com/Dinopony/ArchipelagoOoS/releases/tag/oos-23.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/tag/nt_v1.5</id>
+    <title>Nuclear Throne v1.4.3r2</title>
+    <updated>2026-09-02T15:55:05+00:00</updated>
+    <author>
+      <name>RomanPenguin</name>
+    </author>
+    <content>### **New Feature**&#13;
+- Leaving a Crown Vault now sends hints for discovered crowns to AP Client</content>
+    <link href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/tag/nt_v1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.1</id>
+    <title>Final Fantasy 1 PSP v0.2.1</title>
+    <updated>2026-09-02T16:16:29+00:00</updated>
+    <author>
+      <name>1-800-thewolf</name>
+    </author>
+    <content>## New Traps&#13;
+&lt;img width="600" height="340" alt="Hold Trap" src="https://github.com/user-attachments/assets/57aafd62-c513-4554-b2b0-7465ad1bf271" /&gt;&#13;
+&#13;
+&gt; Hold Trap&#13;
+&#13;
+&lt;img width="600" height="309" alt="Temper Trap" src="https://github.com/user-attachments/assets/a6a39874-c376-41d4-ba03-f873d4278f19" /&gt;&#13;
+&#13;
+&gt; Temper Trap&#13;
+&#13;
+Now 27 available traps! Traps are shuffled like a deck of cards, so after you face the Death Trap, there won't be any more of them, unless there's over 27 traps in your world. Here's the full list right now:&#13;
+&#13;
+| | | |&#13;
+|---|---|---|&#13;
+| Blink | Blizzard | Break |&#13;
+| Death | Dispel | Excalipur |&#13;
+| Fire | Flash | Gaze |&#13;
+| Haste | Hold | Ink |&#13;
+| Invisira | NulAll | NulBlaze |&#13;
+| Poison Darts | Protect | Protera |&#13;
+| Saber | Scorch | Silence |&#13;
+| Sleep | Slow | Slowra |&#13;
+| Snort | Temper | Thunder |&#13;
+&#13;
+## Improved Bestiarysanity&#13;
+&lt;img width="593" height="418" alt="image" src="https://github.com/user-attachments/assets/b0377dc8-6902-42d2-8029-0601053c6c5d" /&gt;&#13;
+&#13;
+- Bestiary Tracker page is better organized and gives more helpful information on where to hunt particular monsters.&#13;
+- Improved bestiary logic to better account for all world/yaml settings&#13;
+- After clearing over 50% of monsters in a region, you automatically learn item rarities for the rest of the items.&#13;
+&#13;
+&#13;
+## Bug Fixes Related To&#13;
+- Stealth Ninja sprite while KO'd&#13;
+- Canal Bridge&#13;
+- Missing Party Members sometimes being targetable&#13;
+- Traps overriding preemptive strikes sometimes&#13;
+- Overly restrictive placement logic&#13;
+&#13;
+---&#13;
+&#13;
+👍🏻 Fully compatible with existing v0.2.0 seeds. Please upgrade mid-run for a better experience.</content>
+    <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.1"/>
   </entry>
 </feed>
