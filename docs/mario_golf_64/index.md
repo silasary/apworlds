@@ -1,6 +1,8 @@
-# None
+# Mario Golf 64
 
-
+Mario Golf 64 is a golf simulation game for the Nintendo 64. Play as one of
+fourteen characters across six tournaments, ring shot challenges, and mini
+golf courses. Unlock characters, clubs, and courses to conquer the Mario Open.
 
 
 ## Downloads
@@ -8,9 +10,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Mario Golf 64">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Mario Golf 64">en_Mario Golf 64</a>

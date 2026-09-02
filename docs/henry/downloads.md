@@ -1,9 +1,12 @@
 # The Henry Stickmin Collection
 
 ## Latest
-- <a href="https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/release1/henry.apworld">Latest Version (1.0.0r7)</a>
+- <a href="https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/release3/henry.apworld">Latest Version (3.post2)</a>
 
 ## All Versions
+
+#### v3.post2
+- <a href="https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/release3/henry.apworld">https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/release3/henry.apworld</a>
 
 #### v1.0.0r7
 - <a href="https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/release1/henry.apworld">https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/release1/henry.apworld</a>

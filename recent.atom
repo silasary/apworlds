@@ -2,180 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-02T00:21:24.060415+00:00</updated>
+  <updated>2026-09-02T06:23:11.623387+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.1</id>
-    <title>metal_hellsinger v1.1.1</title>
-    <updated>2026-08-30T20:07:08+00:00</updated>
-    <author>
-      <name>DanielSchaack</name>
-    </author>
-    <content># Metal: Hellsinger AP World v1.1.1&#13;
-&#13;
-Hotfix-Release&#13;
-## FIXED&#13;
-- Yhelm Max Multiplier being assigned the wrong encounter&#13;
-- Entering Sheol triggering 'Section Completed' checks&#13;
-- Lost Vulcan not being able to trigger 'First Kill' checks&#13;
-</content>
-    <link href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WCutePy/ArchipelagoAlmia/releases/tag/trozei_v0.0.3</id>
-    <title>Pokemon Trozei v0.0.3</title>
-    <updated>2026-08-30T20:41:33+00:00</updated>
-    <author>
-      <name>WCutePy</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## Added&#13;
-- Hard mode yaml option&#13;
-- Hard mode as trap yaml option</content>
-    <link href="https://github.com/WCutePy/ArchipelagoAlmia/releases/tag/trozei_v0.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ljtpetersen/platinum_archipelago/releases/tag/v0.2.0</id>
-    <title>Pokemon Platinum v0.2.0</title>
-    <updated>2026-08-30T20:55:29+00:00</updated>
-    <author>
-      <name>ljtpetersen</name>
-    </author>
-    <content>## Changelog&#13;
-### Added&#13;
-* Universal tracker YAML-less support.&#13;
-* A location for the bag item.&#13;
-* GBA cartridge items and locations for them.&#13;
-* A linking cable item and a location for it.&#13;
-* TMs for Rollout, Ancient Power, Double Hit, and Mimic, and corresponding locations for them.&#13;
-* AP items now display their name and destination when picked up.&#13;
-* A location for the S.S. Ticket.&#13;
-* A location for the Marsh Pass.&#13;
-* Daytime and nighttime items.&#13;
-* An option to normalize encounter slot probabilities.&#13;
-* Dexsanity support, including partial.&#13;
-* Trainersanity support, including partial.&#13;
-* Instant text speed option.&#13;
-* Death Link support.&#13;
-* Starter randomization.&#13;
-* Encounter randomization, including special encounters.&#13;
-* Trainer party randomization.&#13;
-* Hold A to advance option.&#13;
-* Randomizing the species that Rowan shows during the intro.&#13;
-* A clerk in the fourth floor of the Veilstone Department Store, who sells non-reusable evolution items after they have been previously obtained.&#13;
-He also sells TM70 Flash.&#13;
-* An option for reusable TMs.&#13;
-* An option to have a 100% catch rate.&#13;
-* Cheats in the client.&#13;
-* Swarms can now be attracted by berries.&#13;
-* AP Helper NPC to 2nd floors of all Pokémon Centers.&#13;
-* Dowsing Machine Upgrades to identify munchlax honey trees and feebas fishing tiles.&#13;
-* An item to allow use of field moves without a party member knowing them.&#13;
-* An option to just talk to trainers. (useful for trainersanity)&#13;
-* Added option groups to the WebWorld and the template YAML ([@snowflav-goob](https://github.com/snowflav-goob))&#13;
-* The slot name is now stored in the ROM, so it does not need to be entered when BizHawk Client connects.&#13;
-* There is now an option to have "relaxed" player and rival name conversion, which replaces unknown characters and truncates&#13;
-appropriately.&#13;
-* An event for defeating Team Galactic at Stark Mountain.&#13;
-* The boat can now be taken between Canalave City, Pastoria City, and Snowpoint City.&#13;
-* More options for roadblocks in Routes 207, 210, and 215.&#13;
-* A Poketch app to modify the camera type and make the player invisible.&#13;
-* An option to include fly regions as locations.&#13;
-* An option to filter item notifications by classification.&#13;
-* The R button can be held to stop receiving items.&#13;
-* An option to add TM/HM compatibility.&#13;
-* An option for fast fishing.&#13;
-* Entries to the game credits.&#13;
-* Version number to title screen.&#13;
-* A QOL menu when pressing the select button.&#13;
-* An option to prevent the PopTracker from spoiling optional roadblocks, and client support for the option.&#13;
-* `Field Machines` item group.&#13;
-* `start_inventory_from_pool` option.&#13;
-* `game_debug` client command.&#13;
-### Changed&#13;
-* In-game game options option is now validated before generation.&#13;
-* Some evolution stones have been key-itemified, and are no longer consumed when used.&#13;
-* Honey trees no longer have a 6 hour delay for encounters. Honey trees no longer have bad odds when using the same tree twice in a row.&#13;
-* The trophy garden can now be quickly reset.&#13;
-* Locations that check for number of seen species now require the Pokédex.&#13;
-* Poké Radar no longer needs to recharge.&#13;
-* Remote items now have more options regarding which items are remote.&#13;
-* There is no longer an option to show unrandomized progression items.&#13;
-* The Great Marsh binoculars now reset the special encounters in the Great Marsh when they are checked.&#13;
-* Up to 64 items can be received at once (when using none item notification).&#13;
-* The experience multiplier now supports fractional values. It is now modifiable in-game.&#13;
-* Changed to rule builder.&#13;
-* Scientist in Sunyshore no longer requires Pokémon of specific natures.&#13;
-* A lot of item classification changes to better reflect their usefulness ([@Justior-l](https://github.com/Justior-l),  [@palex00](https://github.com/palex00))&#13;
-* The Pokétch is now the requirement to access Route 203 from Jubilife, instead of the parcel and three coupons.&#13;
-* The bicycle can now be used indoors.&#13;
-* The escape rope can now be used in lost tower.&#13;
-* Title screen logo.&#13;
-* The female cyclist in the upper left of cycling road now moves around.&#13;
-* The journal is now a trap item.&#13;
-* Various location name changes.&#13;
-* VS Seeker location is now correctly classified as a `key_item` location.&#13;
-* Structure of version data in client now better supports backwards compatibility.&#13;
-### Fixed&#13;
-* Non-determinism of generation. (hopefully)&#13;
-* Elite Four rematch is triggered only if the game has been completed and stark mountain has been cleared.&#13;
-* The bag now shows the amount of collected unown file items.&#13;
-* Team Galactic Grunts now disappear if you defeat Mars before hitting the Route 205 South trigger.&#13;
-* Correct Rev. 0 ROM is now being used for diffs.&#13;
-* APWorld building is now compatible with Archipelago 7.&#13;
-* Triggering the second Galactic warehouse scene before defeating Maylene and doing the first scene is no longer possible.&#13;
-* Victory Road room after defeating Cynthia now requires Defog logically.&#13;
-* Fixed bug where received items can occasionally be lost.&#13;
-* Triggers cannot be walked through when receiving items.&#13;
-* The clown in front of Jubilife TV now moves immediately after the Team Galactic event in Jubuilife City, instead of requiring leaving and re-entering.&#13;
-* Fixed broken texture in Route 214.&#13;
-* Remove badge requirement option has incorrect effect.&#13;
-* The bag can no longer be used in the Great Marsh if it has not yet been obtained.&#13;
-### Removed&#13;
-* The `all` key item option no longer exists.&#13;
-* The `hm_badge_requirement` option no longer exists.</content>
-    <link href="https://github.com/ljtpetersen/platinum_archipelago/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.0</id>
-    <title>Clair Obscur Expedition 33 v0.4.0</title>
-    <updated>2026-08-30T20:56:16+00:00</updated>
-    <author>
-      <name>Démorck</name>
-    </author>
-    <author>
-      <name>Yezzdia</name>
-    </author>
-    <author>
-      <name>Noeva</name>
-    </author>
-    <content>- Adding 12 new options&#13;
-  - Chroma Pack type (fixed or random) with min and max range&#13;
-  - Shopsanity&#13;
-  - Location per shop [0, 8]&#13;
-  - Extra location per shop [0, 8]&#13;
-  - Fighting merchant&#13;
-  - Min, Max shop price&#13;
-  - Show shop items&#13;
-  - Auto hint shop items&#13;
-  - Auto hint extra shop items&#13;
-&#13;
-26 shops without fighting = 208 max locations&#13;
-19 shops with fighting = 323 max locations&#13;
-So this update can add at maximum 531 locations !&#13;
-&#13;
-- 19 new progressive items: Extra shop (by fighting merchant or in the pool)&#13;
-- 1 new filler: Chroma pack&#13;
-&#13;
-----&#13;
-&#13;
-**Full Changelog**: https://github.com/Demorck/ClairObscur_APWorld/compare/v0.2.1...v0.4.0</content>
-    <link href="https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.0"/>
-  </entry>
   <entry>
     <id>https://github.com/TRPG0/ArchipelagoULTRAKILL/releases/tag/3.5.6</id>
     <title>ULTRAKILL v3.5.6</title>
@@ -1303,7 +1134,7 @@ Bresha Ruins 5AF Locked Inside mog levels corrected</content>
   </entry>
   <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.33</id>
-    <title>Mental Omega v0.6.1r2</title>
+    <title>Mental Omega v0.6.1r3</title>
     <updated>2026-09-01T20:50:18+00:00</updated>
     <author>
       <name>Mental Omega Randomizer contributors</name>
@@ -1361,5 +1192,85 @@ Bresha Ruins 5AF Locked Inside mog levels corrected</content>
   - This should address situations where being disconnected from the AP server would leave games in a desynced state between client and server when it comes to upgrades. It also makes offline progress still work from a check perspective, but items won't be granted until reconnection.&#13;
   - Upgrades will now persist locally, meaning progress can still be made even if you're unable to connect to the server when loading the save file</content>
     <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.13.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03j</id>
+    <title>Cuphead v0.2.20020910</title>
+    <updated>2026-09-02T01:05:12+00:00</updated>
+    <author>
+      <name>JKLeckr</name>
+    </author>
+    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
+&#13;
+_Note: You need at least client version **alpha03h** or newer to be able to take advantage of this revision's enhancements._&#13;
+&#13;
+### Revision&#13;
+&#13;
+This revision adds an option to allow P. Sugar to be used in King's Leap. Logic is also adjusted for King's Leap in terms of P. Sugar.&#13;
+</content>
+    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03j"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.3.1</id>
+    <title>Pokemon Pinball Ruby &amp; Sapphire v0.3.1</title>
+    <updated>2026-09-02T02:16:58+00:00</updated>
+    <author>
+      <name>Silvris</name>
+    </author>
+    <content># New Features&#13;
+* 24/7 Shops&#13;
+  * When received, shops no longer close after buying from them.&#13;
+* Start Inventory from Pool support&#13;
+* Shop and Roulette checks now support collect behavior&#13;
+* Shop checks now visibly display when all have been sent for a certain type, and refuse purchase of any more.&#13;
+&#13;
+# Other Changes&#13;
+* The game will now deprioritize Pokémon that are in your current party when creating weights for Catch'em/Hatch modes.&#13;
+* The "Out of Stock" graphic will now display over the Whiscash/Pelipper shop item if they have not been received.&#13;
+&#13;
+# Bug Fixes&#13;
+* Fixed DeathLinks being sent with DeathLink disabled&#13;
+* Fixed a crash caused by purchasing the Whiscash/Pelipper minigame option.&#13;
+* Fixed AP shop items always costing the initial price on Sapphire Board.&#13;
+* Fixed Whiscash being unable to spawn naturally.&#13;
+* Fixed being able to DexNav basically any egg without the required Egg Bunch.&#13;
+* Fixed the Travel graphic being pure white if the Shop was left in AP mode.&#13;
+* Fixed roulette checks checking the wrong value to tell if they should stop appearing.&#13;
+* Fixed text display for receiving an item from start inventory/cheat console.&#13;
+* Fixed a missing sfx when moving over the Get Arrow on the Ruby Board.</content>
+    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.8</id>
+    <title>Flipwitch Forbidden Sex Hex v1.1.8</title>
+    <updated>2026-09-02T03:29:13+00:00</updated>
+    <author>
+      <name>Witchybun</name>
+    </author>
+    <content>Bugfix:&#13;
+- Fixes logic surrounding Lava Jump Top some more.&#13;
+&#13;
+Documentation:&#13;
+- Added a link to the apworld source code in the readme, for transparency.</content>
+    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.4</id>
+    <title>Schedule I v3.6.4</title>
+    <updated>2026-09-02T03:59:53+00:00</updated>
+    <author>
+      <name>MacH8s</name>
+    </author>
+    <content>### Refactored rule setting to check for people unlock vs other unlock.&#13;
+### Combined customers dealers and suppliers when setting rules. Issue was that the condition was OR'd with level unlocks, causing level unlocks alone to be able to unlock sampling, when it needed to be AND'd with a relation unlock.&#13;
+&#13;
+### Fixed cash for trash checks always being in the same region, mixing mania.&#13;
+&#13;
+### Refactor recipe unlock logic to use consistent naming for Mixing Station Mk2 and improve option condition checks&#13;
+&#13;
+### Fixed cash for trash checks always being in the sam eregion, mixing mania.&#13;
+&#13;
+### Refactor recipe unlock logic to use consistent naming for Mixing Station Mk2 and improve option condition checks</content>
+    <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.4"/>
   </entry>
 </feed>

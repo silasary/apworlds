@@ -1,6 +1,6 @@
-# None
+# Children of Morta
 
-
+Children of Morta - TODO: quick summary
 
 
 ## Downloads
@@ -8,9 +8,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Children of Morta">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Children of Morta">en_Children of Morta</a>

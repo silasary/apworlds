@@ -1,4 +1,4 @@
-# None
+# Mario Golf 64
 
 ## Latest
 - <a href="https://github.com/PangaeaPanga/mario_golf_64/releases/download/v0.1.0/mario_golf_64.apworld">Latest Version (0.1.0)</a>

@@ -1,4 +1,4 @@
-# None
+# Children of Morta
 
 ## Latest
 - <a href="https://github.com/BocikPG/Children-Of-Morta-Archipelago-Randomizer-Mod/releases/download/v0.2.0/children_of_morta.apworld">Latest Version (0.2.0)</a>
