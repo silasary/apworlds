@@ -102,6 +102,21 @@
       "version_simple": "0.12.2",
       "world_version": "0.12.2"
     },
+    "v0.13.0": {
+      "created_at": "2026-09-01T22:20:51Z",
+      "description": "## New Features\r\n- New Goal option: Prisma Shard Hunt\r\n  - General purpose MacGuffin hunt goal option - Collect the desired number of Prisma Shards and then clear the Prismacore encounter to win\r\n  - For the Prismacore encounter, all Harmonizers will automatically activate to accelerate your trip to the end of the game. You'll still need the Water Tank to beat the fight.\r\n- New Settings:\r\n  - `randomize_fabricator` - Allows you to turn off Fabricator location checks and make the upgrades vanilla\r\n  - `randomize_shadow_doors` - Either adds Shadow Plort doors/dispensers to the pool with the `locations` option or eliminates them entirely with the `disabled` option\r\n  - `shadow_plort_requirement` - Modifies the amount of shadow plorts needed for doors/dispensers to speed up (or slow down) progress through the Grey Labyrinth\r\n  - `item_notifications` - Allows you to customize what incoming items pop up on the in-game UI\r\n\r\n## Quality of Life\r\n- In-Game UI notifications on incoming items - Now it's easier to see when you get important items!\r\n<img width=\"875\" height=\"492\" alt=\"image\" src=\"https://github.com/user-attachments/assets/d8f8e585-9570-4b0a-97e9-b8ac1eca7e24\" />\r\n\r\n- Added clearer messaging and teleport guardrails if you find yourself in the wrong zone or in a softlocked position post-teleport\r\n \r\n## Logic Fixes\r\n- Flutter and Puddle Slimes now correctly require the Jetpack to access\r\n  - This also applies to their plorts and radiant variants\r\n- Fixed region access requirements for Treasure Pods in Rainbow Fields that required activating the 2nd teleporters in Ember Valley and Starlight Strand\r\n- Correctly classified the `Progressive Water Tank` as a Progression item\r\n\r\n## Bug Fixes\r\n- Refactored how offline checks/progress/repairs work\r\n  - This should address situations where being disconnected from the AP server would leave games in a desynced state between client and server when it comes to upgrades. It also makes offline progress still work from a check perspective, but items won't be granted until reconnection.\r\n  - Upgrades will now persist locally, meaning progress can still be made even if you're unable to connect to the server when loading the save file",
+      "download_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.13.0/slime_rancher_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d557559a2dc9fb9e87702cb5b593bbbcf830908f0343e0af595a0a0f12f12713",
+      "html_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.13.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 66029,
+      "source_url": "https://api.github.com/repos/Rhelys/SlimeRancher2-AP",
+      "tag": "v0.13.0",
+      "title": "v0.13.0",
+      "version_simple": "0.13.0",
+      "world_version": "0.13.0"
+    },
     "v0.2.0": {
       "created_at": "2026-04-17T19:03:35Z",
       "description": "Initial fixes for the Slime Rancher 2 v1.2 release - Radiant Slime Sanctuary\r\n\r\nNo new content in this release, just getting the mod working with the new game version. Updates to include the new features will be in a later update",

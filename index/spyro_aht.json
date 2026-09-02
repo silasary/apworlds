@@ -104,6 +104,21 @@
       "version_simple": "2.0.1",
       "world_version": "2.0.1r2"
     },
+    "AHT-v2.1.0": {
+      "created_at": "2026-09-01T18:49:30Z",
+      "description": "# v2.1.0: Various Misc. Things\r\n*Intended for use with game mod version 14 (see attachments).*\r\n\r\nv2.1.0 contains a handful of new settings, tweaks, and fixes without any particular theming. It's mostly stuff that came up during or shortly after development of v2.0.0 that were either low priority or I otherwise didn't manage to get into an update until now.\r\n\r\n\u26a0 Even if you downloaded the v2.1.0 prerelease, please update your .apworld file with the version here. A logic adjustment and some minor client bugfixes were added to this full version of v2.1.0 that you will miss out on if you don't install the new .apworld below. The game mod is unchanged and can be ignore if you already have version 14.0 of it. \u26a0\r\n\r\n### Additions/Expansions\r\n- New `automatic` setting to `boss_lair_forcing` which forces all goal boss to have collectively the highest cost(s).\r\n- Expanded location groups to include per-level and per-realm groups, as well as adding a \"Starter Checks\" group.\r\n- `movement_randomization` now allows for individual randomization of each ability, instead of being all or nothing.\r\n- Renamed `starting_breath` -> `starting_breaths` to reflect it now allowing for starting with multiple breaths. Can still start with none or with a random breath, if the list is left empty.\r\n  - Random breath does **not** require `auto_corrections` to be set to 'fix'. `starting_realms` was adjusted to be similar in not requiring `auto_corrections` anymore to get a random realm chosen.\r\n\r\n### Fixes\r\n- Fixed `vanilla_minigame_rewards` not working for turret minigames.\r\n- Fixed a missing glide requirement in Dragonfly Falls connecting the end of the level back to the start.\r\n- Improved error handling in `/check_goal` command.\r\n\r\n### Tweaks\r\n- Removed glide requirement from the locked chest in the entry area of Dragonfly Falls, as it can be reached from below with just Double Jump quite easily. Similarly adjusted the gem access rule for the Crocovile next to it.\r\n- \"Generics\" filler item selection process is improved to be more uniform. Each one will be picked once before any are doubled up, and similar as more are picked.\r\n\r\n[Setup Guide](https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&-FAQ)",
+      "download_url": "https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.1.0/spyro_aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b8d782fc24b552079f1d3b803389d3f4e1e51fcba7dda43f63ebd8259e436155",
+      "html_url": "https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 79468,
+      "source_url": "https://api.github.com/repos/PhoenixAki/PhoenixAP",
+      "tag": "AHT-v2.1.0",
+      "title": "Spyro: A Hero's Tail: v2.1.0",
+      "version_simple": "2.1.0",
+      "world_version": "2.1.0r2"
+    },
     "AHT-v2.1.0-PR": {
       "created_at": "2026-08-26T21:43:14Z",
       "description": "# v2.1.0: Various Misc. Things (Prerelease)\r\n*Intended for use with game mod version 14 (see attachments).*\r\n\r\n**This update is being posted as a prerelease, hopefully to be posted as a full release this coming weekend after people have a chance to do some test seeds. It has been internally tested to the best of my abilities and should be stable enough to not have major concerns. If you would prefer to play the latest non-prerelease update, you can find that [here](https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.0.2).**\r\n\r\n2 small parts of v2.1.0 were included in the v2.0.1 hotfix (death link amnesty and the new game mod versioning system). This release contains those, as well as the following additional things:\r\n- Fixed a missing glide requirement in Dragonfly Falls.\r\n- Added `automatic` setting to `boss_lair_forcing` which forces all goal bosses (if any are part of goal) to have collectively the highest cost(s).\r\n- Expanded location groups to include per-level and per-realm groups for Dark Gems, Dragon Eggs, Light Gems, Fireworks, and Locked Chests. Some other misc. groups added as well (such as \"Starter Checks\").\r\n- Tweaked `movement_randomization` to allow for individual toggling of each ability, instead of it being all or nothing.\r\n- Renamed `starting_breath` -> `starting_breaths` and redesigned it to allow for starting with multiple breaths, none, or a random one if list is empty.\r\n  - `starting_realms` was made to match the above behavior i.e. random starting breath if list is empty. Neither requires `auto_corrections` to be set to `fix`.\r\n- \"Generics\" filler item selection process improved to be more uniform. Each will be picked once each before doubling any up, and same for tripling, quadrupling, etc.\r\n\r\n[Setup Guide](https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&-FAQ)",
@@ -127,6 +142,7 @@
       "hash_sha256": "d8769b35e060bbfb6d2962e24a95d0aca32bfdcda041f2bd453ce1d172cdb90b",
       "html_url": "https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.1.0-PR",
       "minimum_ap_version": "0.6.7",
+      "prerelease": true,
       "size": 79325,
       "source_url": "https://api.github.com/repos/PhoenixAki/PhoenixAP",
       "tag": "AHT-v2.1.0-PRr2",
