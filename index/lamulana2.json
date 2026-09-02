@@ -296,6 +296,21 @@
       "title": "v1.0.0",
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
+    },
+    "v1.0.0r2": {
+      "created_at": "2026-09-01T09:45:30Z",
+      "description": "## Supports: Mod v1.0.0+ -- Tracker v2.0.0+\r\n\r\n# Changelogs\r\n- NEW option: Include Expensive Shop Item (Requires Ganesha's Talisman & Money Fairy or Harp in logic)\r\n- Fixed sphere scaled AP item pricing (50-100) and made ammo pricing match vanilla to balance with useful AP filler\r\n- Many, many Pot/Glossary/DLC logic fixes (thank you too everyone who reported them!)\r\n- Collapsed item labels (\"Sacred Orb\", \"Crystal Skull\", \"Kosugi Research Papers\", non-guardian specific \"Ankh Jewel\")\r\n- Fixed require_fdc option -- it was appending the logic to vanilla exits despite ER\r\n- Fixed several instances of world.random instead of self.random causing the same chests to be cursed when there are multiple LM2 players in one multiworld.\r\n- Offline seed option is fully compatible with the new AP settings\r\n\r\n# Generation improvements\r\n- Major overhaul of the ER ordering, regeneration and validation (fuzz results at 99.5% with 1000 fully randomized yamls)\r\n  - For example, making sure that Gate of Guidance and Mausoleum of Giants is not blocked by a 9 soul gate door with original shops\r\n  - For example, rejecting ER layouts where the only way out is through a soul gate but with no guardian in the accessible regions\r\n- The non-VoD start Starting Shop can now still have progression items even with original shops to prevent sphere 1 softlock.\r\n  - Annwfn and Immortal Battlefield start will reroll if the YAML has original shops but no ER settings due to Pepper being stuck in VoD\r\n- Reduce local reserved filler (pot / glossary filler) in sphere 1 locations to prevent softlock.\r\n- Available glossary that are below the set Glossary Hunt goal are automatically classified as filler (will still count towards progress)\r\n ",
+      "download_url": "https://github.com/Crownmuri/Archipelago/releases/download/v1.0.0/lamulana2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8ca1e04077476f0181bd988f6baded9f7d75d2e0ae6c37c888f79b1d1c8ac8cc",
+      "html_url": "https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 258340,
+      "source_url": "https://api.github.com/repos/Crownmuri/Archipelago",
+      "tag": "v1.0.0r2",
+      "title": "v1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0.post2"
     }
   }
 }
