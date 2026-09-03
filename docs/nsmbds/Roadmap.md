@@ -2,18 +2,14 @@
 
 ## Current
 
-Focus:
-- PopTracker
-- Add a No Turnaround Trap
-- Add a Remove Backup Power-Up Trap    
-- Client settings: Emulator feed options (Width, Position, Status, Fade Out)
-- Secondary Screen Background Randomizer
 
 ## Planned
 
 - Add minigame support
 - Warp Cannon Access item
 - Performance Optimization
+- Movesanity
+- PopTracker
 
 
 ## Later / Ideas

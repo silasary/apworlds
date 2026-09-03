@@ -68,9 +68,11 @@ finish every earlier level.
 
 ### Tower and Castle Keys
 
-When enabled, every world has a Tower Key and a Castle Key. You must receive
-the matching key before passing its locked route. This option can be disabled
-for a more vanilla-like overworld.
+When enabled, every Tower and Castle has its own matching Key. Worlds 6 and 8
+therefore have separate Keys for Tower 1 and Tower 2, while World 8 has separate
+Keys for its Castle and Bowser's Castle. You must receive the matching Key before
+passing its locked route. This option can be disabled for a more vanilla-like
+overworld.
 
 ### Star Coin gates
 
@@ -129,6 +131,22 @@ also use **Non-Progression** by default.
 
 The Blocksanity global percentage controls how many of these checks may hold
 items for other players. The remaining blocks contain local filler or traps.
+
+### Location groups
+
+For Archipelago options that accept location groups, such as
+`exclude_locations`, this world provides the following category names:
+
+- `Star Coins`
+- `Secret Exits`
+- `Red Coin Challenges`
+- `1-Up Blocks`
+- `Blocksanity`
+- `Toad Houses`
+
+These groups let you refer to a whole category instead of listing each location.
+They do not enable categories that are disabled in your seed options. Excluding
+a location from progression placement does not remove its check from the game.
 
 ## Traps
 
@@ -193,7 +211,7 @@ in-level lower-screen wallpapers or use one selected wallpaper in every level.
 The available fixed designs are White Bricks, Star Pattern, Blue Bricks, Mario
 Silhouette, and Classic Overworld.
 
-![Secondary Screen Background choices](images/secondary_screen_backgrounds.png)
+![Secondary Screen Background choices](secondary_screen_backgrounds.png)
 
 ## Client and emulator features
 

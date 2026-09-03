@@ -132,6 +132,21 @@
       "title": "Release 0.2.1 - The Building Update",
       "version_simple": "0.0.1",
       "world_version": "0.0.1r8"
+    },
+    "0.2.2": {
+      "created_at": "2026-09-02T18:15:47Z",
+      "description": "## What's Changed\r\n\r\n### AP World\r\nShould still be fully compatible with releases going back to 0.2.0.\r\n\r\n#### Generation\r\n- Castle now counts as either a military building or a defense building.\r\n- Typo on Attila 3 Green Dock locations.\r\n\r\n#### Logic\r\n- Attila 3 Build a Castle now requires Castle item.\r\n- Joan 5 Rendezvous and Escort Joan locations now expect that the scenario can be beaten.\r\n\r\n#### Client\r\n- Removed unused/dev commands.\r\n- Fixed set_user_folder again, allowing the folder to be set before connecting to the game.\r\n- Connecting and disconnecting should no longer give players access to items they unlocked from a different world.\r\n- Game Context now keeps track of the current scenario's collected locations.\r\n- Most game data is now loaded before establishing a connection with the game.\r\n- Campaign files now properly cleaned up upon disconnect.\r\n\r\n### Game\r\n\r\n#### General\r\n- The game will now send a received location until the server confirms that it is checked.\r\n- The game now keeps track of which locations have been collected according to the server.\r\n- The game now loads relevant locations before establishing a connection.\r\n- Completing a check before being connected now sends the location to the server.\r\n- Completing a check that gives an item before being connected now receives the item upon connection.\r\n\r\n#### Attila the Hun\r\n- Added Scenario Locations to the sidebar with detailed instructions in the Objectives menu.\r\n- **Attila 1:** Kill the Iron Boar, Betray Bleda, and Blow Bleda Off can now all be completed in a single playthrough, if done in the right order.\r\n- **Attila 1:** Kill the Scythian Scout and Free the Scythian Scout may both be completed in a single playthrough, if set up properly.\r\n- Fixed Attila 3, 4 and 6 declaring victory before the player researches the \"Declare Victory\" tech in the APavilion.",
+      "download_url": "https://github.com/dmwever/Ageipelago/releases/download/0.2.2/age2de.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0587b91838bc284a9dc5db0826fee610edaf5de22057976c9a91d53df083164a",
+      "html_url": "https://github.com/dmwever/Ageipelago/releases/tag/0.2.2",
+      "minimum_ap_version": "0.6.5",
+      "size": 2165171,
+      "source_url": "https://api.github.com/repos/dmwever/Ageipelago",
+      "tag": "0.2.2",
+      "title": "Release 0.2.2 - The Stability Update",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1r2"
     }
   }
 }
