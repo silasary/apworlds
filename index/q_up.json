@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "cxve"
+  ],
   "description": "Sick of long queues, unfair matchups, and arbitrary reflex tests? Try Q-UP, the coin flipping eSport. It's one part\nclicker, one part multiplayer strategy game, one part demented capitalism simulator, and 100% completely random.",
   "game": "Q-UP",
   "github": "https://github.com/cxve/q-ap-world",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v1.0.0": {
       "created_at": "2026-07-05T13:57:02Z",
@@ -77,6 +84,21 @@
       "title": "Q-AP v2.0.2 More Fixes (World Update!)",
       "version_simple": "2.0.2",
       "world_version": "2.0.2"
+    },
+    "v3.0.0": {
+      "created_at": "2026-09-02T16:30:57Z",
+      "description": "**Info** [Game Page](<https://github.com/cxve/q-ap-world/blob/main-q-up/worlds/q_up/docs/en_Q-UP.md>) - [Setup Guide](<https://github.com/cxve/q-ap-world/blob/main-q-up/worlds/q_up/docs/setup_en.md>)\r\n**Downloads** [World](<https://github.com/cxve/q-ap-world/releases/>) - [Mod](<https://github.com/cxve/q-ap-mod/releases/>) - [PopTracker](<https://github.com/cxve/q-ap-poptracker/releases/>)\r\n## Highlights\r\n- New: Recycling Set Sanity\r\n\t- Receive checks for submitting the requested recycling set\r\n- New: Trigger Combo Sanity\r\n\t- Get checks for your highest trigger count in one flip\r\n- New options to enforce stricter balancing rules\r\n- Positions for fixed skills are now reserved\r\n## Features & Changes\r\n- New Random Gear filler item\r\n- New option to remove content after goal\r\n- New option to put additional qblock breaker into the item pool\r\n- New option to automatically fix yamls with too many progression items\r\n- Received item notifications are now sent via mail\r\n- Optimized access_rules for drastically faster generation\r\n- The console can now be opened with F10\r\n## Balancing Changes\r\n- Replaced skill distribution mode option with skill distribution gates option\r\n\t- This option changes how often the randomizer will enforce skill distribution rules\r\n- Shop upgrade logic was completely reworked\r\n\t- Logic is now based on shop prices instead of shop depth\r\n\t- Corruption shards logic now works the same as crystal logic\r\n- Skill logic now takes trigger conditions into account\r\n- More checks were added to sphere 1\r\n- Challenges are now guarantueed to appear in earlier spheres\r\n- QBlock Breaker logic is now stricter\r\n- Shop Slots were promoted from filler to useful, as they increase chance for better shop items\r\n- Upgrade points were demoted from progression to useful\r\n- Gold filler was buffed significantly\r\n- Crystal drops were slightly nerfed\r\n## Fixes & Other Changes\r\n- 05_GOTO_03 now requires 03_GOTO_01 in the item pool\r\n- The amount of fixed skills in the item pool should now match the option\r\n- Save files now get properly deselected in the main menu\r\n- Added fail-safe for when duplicate items are received from MultiClient\r\n- Reload skill screen when receiving skills\r\n- Reload shop screen when receiving crystals\r\n- Challange sanity rewards are now properly displayed in-game\r\n- Locations are now properly synced when connecting to the server\r\n- Fixed a hypernode duplication bug\r\n\r\n**Full Changelog**: https://github.com/cxve/q-ap-world/compare/v2.0.2...v3.0.0",
+      "download_url": "https://github.com/cxve/q-ap-world/releases/download/v3.0.0/q_up.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d2c462977b3459ec685dd8c8c99aa7caa9ba471c30c055811654aaae6cc89b30",
+      "html_url": "https://github.com/cxve/q-ap-world/releases/tag/v3.0.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 25661,
+      "source_url": "https://api.github.com/repos/cxve/q-ap-world",
+      "tag": "v3.0.0",
+      "title": "Q-AP v3.0.0",
+      "version_simple": "3.0.0",
+      "world_version": "3.0.0"
     }
   }
 }

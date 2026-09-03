@@ -7,7 +7,11 @@
   "game": "Red Prince",
   "github": "https://github.com/Tincancrafter/Red-Prince-Releases",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v1.0.10": {
       "created_at": "2026-08-25T18:41:33Z",
@@ -54,6 +58,21 @@
       "title": "1.0.12",
       "version_simple": "1.0.12",
       "world_version": "1.0.12"
+    },
+    "v1.0.13": {
+      "created_at": "2026-09-03T16:59:18Z",
+      "description": "# Red Prince 1.0.13\n\n## Gameplay and logic\n\n- Receiving the Gemstone Caverns or Blackbridge progression unlock now opens\n  the corresponding area without also requiring its vanilla puzzle.\n- Starting-room selections now always include at least one path room.\n- Added explicit early-drafting access logic for the Garage, Tunnel,\n  Foundation, and Secret Passage.\n- Paper Crown logic now accounts for its five-coin cost through the renewable\n  Coin Purse route and sufficient reachable rooms.\n- Fixed exhausted unique rooms remaining in draft picker arrays and appearing\n  again after their allowed copies had already been drafted.\n\n## Commissary upgrade disk\n\n- The Commissary upgrade disk is an Archipelago location and item only when\n  Special Shop Sanity is enabled.\n- Its logic requires the Coin Purse as a renewable source for the purchase.\n- When Special Shop Sanity is disabled, the disk retains its vanilla behavior.\n\n## Performance\n\n- Removed the experimental unchecked-room draft border/highlight and its\n  recurring scene-wide TextMeshPro scan. The release contains no border or\n  highlight feature code.\n\n## Compatibility\n\n- Archipelago 0.6.7 or newer.\n- The 1.0.13 game plugin and 1.0.13 APWorld should be distributed together.\n",
+      "download_url": "https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.13/redprince.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b8a5c08eb0e4d4088a14ee0e4da1dfa54e508d9d21d03e89acc001c903df182f",
+      "html_url": "https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.13",
+      "minimum_ap_version": "0.6.7",
+      "size": 75128,
+      "source_url": "https://api.github.com/repos/Tincancrafter/Red-Prince-Releases",
+      "tag": "v1.0.13",
+      "title": "1.0.13",
+      "version_simple": "1.0.13",
+      "world_version": "1.0.13"
     },
     "v1.0.4": {
       "created_at": "2026-08-25T18:41:33Z",

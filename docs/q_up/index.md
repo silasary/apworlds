@@ -5,7 +5,7 @@ clicker, one part multiplayer strategy game, one part demented capitalism simula
 
 
 ## Downloads
-- <a href="https://github.com/cxve/q-ap-world/releases/download/v2.0.2/q_up.apworld">Latest Version (2.0.2)</a>
+- <a href="https://github.com/cxve/q-ap-world/releases/download/v3.0.0/q_up.apworld">Latest Version (3.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

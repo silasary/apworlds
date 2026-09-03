@@ -1,9 +1,12 @@
 # Red Prince
 
 ## Latest
-- <a href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.12/redprince.apworld">Latest Version (1.0.12)</a>
+- <a href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.13/redprince.apworld">Latest Version (1.0.13)</a>
 
 ## All Versions
+
+#### v1.0.13
+- <a href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.13/redprince.apworld">https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.13/redprince.apworld</a>
 
 #### v1.0.12
 - <a href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.12/redprince.apworld">https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.12/redprince.apworld</a>
