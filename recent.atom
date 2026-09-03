@@ -2,55 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-03T00:23:34.086434+00:00</updated>
+  <updated>2026-09-03T06:17:21.937810+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.1</id>
-    <title>Wynncraft v0.4.1</title>
-    <updated>2026-08-31T04:10:40+00:00</updated>
-    <author>
-      <name>EpicPuppy613</name>
-    </author>
-    <content>**Compatible with Wynnpelago v0.4.1+**&#13;
-&#13;
-- Add logical gear levels option&#13;
-  - This option ensures that you can access a certain level of gear before content above that level is in logic&#13;
-- Fix daze traps not generating&#13;
-- Fix various logic issues</content>
-    <link href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.8.0</id>
-    <title>Brave Fencer Musashi v0.8.0</title>
-    <updated>2026-08-31T04:33:39+00:00</updated>
-    <author>
-      <name>AegeusEvander</name>
-    </author>
-    <content>0.8.0 Added:&#13;
--full map tracker&#13;
--fixed bell logic (again)&#13;
--added commands&#13;
---/teleport [id]&#13;
----uses the debug menu to teleport the player to selected area (leave blank to teleport back to town)&#13;
----unstable and may crash if used&#13;
---/export_geometry&#13;
----exports the static geometry of the currently loaded level (if no folder was previously selected it will prompt and then run command again), creates an .obj, .mtl, and .png&#13;
---/export_all_geometry&#13;
----teleports player to next area that has yet to have an obj file exported and attempts to export until all are done&#13;
----unstable, but it remembers progress so keep running command if disconnected/timeout or restarting emulator if it crashes&#13;
-&#13;
-Note:&#13;
--Must use Archipelago v0.6.7 or newer&#13;
--Not compatible with XDelta Patches, must run unmodified game&#13;
--compatible with v0.7.1 generations&#13;
--map tracker with Universal Tracker https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.3&#13;
--setup guide:https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/blob/main/docs/setup_en.md&#13;
--Follow development and report bugs on the Archipelago gg Discord, -&gt; Future-game-design -&gt; Brave Fencer Musashi</content>
-    <link href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.8.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.32</id>
     <title>Mental Omega v0.6.1r2</title>
@@ -1390,5 +1346,52 @@ I plan to add more options in this release before its final. This'll be the yaml
  [ALTERNATE SIDELOADER](https://github.com/iris-cat-dev/mintcat)&#13;
  Mod file now included in releases for mint users.</content>
     <link href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/tag/0.20"/>
+  </entry>
+  <entry>
+    <id>https://github.com/drtchops/Archipelago-Astalon/releases/tag/v1.0.0-rc5</id>
+    <title>Astalon v0.99.5</title>
+    <updated>2026-09-03T03:55:56+00:00</updated>
+    <author>
+      <name>DrTChops</name>
+    </author>
+    <content>**This is a testing pre-release. See the latest release for the stable version.**&#13;
+&#13;
+- Added more detail to the new maps&#13;
+  - Fixed some incorrect placements on the maps&#13;
+- Added custom icons to replace the random ones I was using&#13;
+- Added trap weights option&#13;
+  - Wait, there's also a new trap? Uh oh, better be ready to run&#13;
+&#13;
+**More Information**: https://github.com/drtchops/Archipelago/blob/astalon/worlds/astalon/docs/en_Astalon.md&#13;
+**Setup Guide**: https://github.com/drtchops/Archipelago/blob/astalon/worlds/astalon/docs/setup_en.md&#13;
+**Full Changelog**: https://github.com/drtchops/Archipelago-Astalon/compare/v1.0.0-rc4...v1.0.0-rc5</content>
+    <link href="https://github.com/drtchops/Archipelago-Astalon/releases/tag/v1.0.0-rc5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.0</id>
+    <title>Baldur's Gate 3 v0.7.0</title>
+    <updated>2026-09-03T05:13:32+00:00</updated>
+    <author>
+      <name>Broney</name>
+    </author>
+    <content>0.7.0 Release&#13;
+&#13;
+Changes to mod in this version-&#13;
+* Removed Halsin's defense portal killsanity checks (they're missable)&#13;
+* Removed or fixed ~40 questsanity locations (no more nettie poisoning)&#13;
+* Added character allowlisting in the yaml- you can remove characters and you shouldn't get their quests in questsanity (experimental, unstable)&#13;
+* Added heartbeat / connection code (taken from Trials of Tav, thank you)&#13;
+* Added Killsanity Strictness option- allows monsters to send killsanity checks on death, not just kill (experimental)&#13;
+* Added Netherbrain goal handling (does not have killsanity or questsanity support yet, this is just the architecture for later)&#13;
+* Added act 3 regions&#13;
+* Fixed act 1 regions - goblin camp, hag's basement and zhentarim basement now properly separate their logic from behind the lockout item and past the lockout item&#13;
+* Fixed act 1 bug if you did halsin goal, hag basement checks could be unreachable&#13;
+* Fixed some duplicate location and item ids (no game effect)&#13;
+* Updated location counts in option file&#13;
+&#13;
+Known bugs:&#13;
+* Some containersanity coordinates were misgenerated. I will need to do a run to collect correct values, but it is a display-only issue at this time.&#13;
+* Killsanity strictness was left visibility.none. I'll fix it next release. The option would be "killsanity_strictness: "relaxed"" if anybody wants to just add it to their yaml.</content>
+    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.0"/>
   </entry>
 </feed>

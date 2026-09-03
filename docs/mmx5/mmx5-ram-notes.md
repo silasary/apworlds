@@ -1,4 +1,4 @@
-> Research notes mirrored from the mmx5-ap-research workspace (2026-08-15).
+> Research notes mirrored from the mmx5-ap-research workspace (2026-09-02).
 > Working copies live there and are updated as addresses are confirmed;
 > re-sync this mirror when they change. No game data included.
 
@@ -843,3 +843,123 @@ Enigma/shuttle by itself and making a `launch` seed unwinnable. It does not:
 So both features are safe to ship, and no goal-conditional restriction is
 needed. Instant text was never at risk either way: it completes the current
 box and never advances.
+
+## Player palette / CLUT — live session 2026-09-02
+
+**Sprite recolouring works, and the lever is the disc, not RAM.** Proven live:
+a copy of the disc with X's 16-colour CLUT overwritten renders X bright green
+in gameplay (`Scripts/shots/pal6_b_walking.png`).
+
+PS1 sprites are 4bpp textures indexing a 16-entry CLUT of BGR555
+(`0BBBBBGGGGGRRRRR`, bit 15 = STP) — the same colour format the SNES MMX
+apworlds use, so lx5's palette tables port directly.
+
+**X's live CLUT (normal armour, no parts):**
+
+```
+0000 CBBF A23D A195 94DD 8CAC FF9B DEB4 D22F B969 9CC4 EBC8 F669 EDE7 E124 C4A3
+```
+
+| entries | what they colour |
+|---|---|
+| 0 | transparent |
+| 1–5 | face / skin ramp (`#F8E890` → `#602818`) |
+| 6–10 | white armour trim (`#D8E0F8` → `#203038`) |
+| 11 | cyan highlight `#40F0D0` |
+| 12–15 | **body blues** (`#4898E8` → `#182888`) |
+
+- **On disc: 45 raw copies**, first at file offset `0x171F8` (sector 40), then
+  every 9 sectors (49, 58, 67, …) — inside `ROCK_X5.DAT`, uncompressed. Patch
+  them all (EDC/ECC regen per sector, as always) and the recolour is live
+  everywhere. 45/45 patched + booted = green X, verified.
+- **In VRAM: GPURAM `0x0F0860`** (VRAM x=48, y=481), and the address was
+  **identical across stages 0x01, 0x02 and 0x06** — one copy only, 16/16 exact.
+
+### Two decoys that cost a session — do not repeat them
+
+1. **`0x801051A0` in MainRAM is NOT X's palette.** It is an 84-CLUT bank
+   (2688 B) loaded from `ROCK_X5.DAT` at `0x34B0F8` / `0x54EB58`, resident in
+   every in-stage RAM dump, and it matches X's real CLUT in entries 0–11 —
+   only the four body blues differ. Writing it sticks (nothing rewrites it)
+   and changes nothing on screen; patching it on disc likewise changed the RAM
+   copy to green and left X blue. The gamehacking.org "Recolor Zero" cheat
+   writes here, which is what made it look authoritative.
+2. **Writing the live CLUT in GPURAM does not recolour anything**, even though
+   the write lands and persists for 30+ frames. This is the PS1 GPU's texture/
+   CLUT cache: a backdoor poke through BizHawk's memory domain never triggers
+   the invalidation a real GPU write would. **The control matters here** — a
+   green rectangle painted into the framebuffer at VRAM (16,16) DOES appear on
+   screen, so GPURAM writes are honoured in general; it is specifically CLUT
+   reads that come from the stale cache. Runtime client-side recolouring is
+   therefore not viable the naive way; palettes belong in the disc patch.
+
+### Emulator facts learned here
+
+- NymaShock exposes **`GPURAM` (1 MB VRAM)**, `SPURAM`, `BiosROM`, `DCache`,
+  `Memcard 1` and `MainRAM`. The AP BizHawk connector takes a domain string per
+  read/write, so a client *can* address VRAM — subject to the cache caveat above.
+- No colour correction: BGR555 `0x03E0` reads back as RGB `(0,248,0)` in a
+  screenshot, so on-screen pixels are palette values shifted `<<3`. That makes
+  "which CLUT is this sprite using" answerable from a screenshot alone.
+- BizHawk has **no Lua pixel-read API** (`drawPixel` only) — compare screenshots
+  offline instead.
+- Launch EmuHawk from bash, not PowerShell 5.1: `Start-Process -ArgumentList`
+  does not quote array elements, so `Game Modding` splits and BizHawk dies with
+  "Unrecognized command or argument".
+
+### The CLUT roster — VERIFIED IN GAME (2026-09-02)
+
+Every row below was confirmed by running the game, not inferred. Method: hold
+`0x800D1C49` (the character/armour selector) every frame through boot — the
+game equips the form at **stage load**, so poking it mid-stage does nothing —
+then read the CLUT it streamed into VRAM and match those bytes on disc. Zero is
+picked on the character-select screen rather than by that byte, so his came
+from a hand-played save.
+
+| target | disc offset | copies | notes |
+|---|---|---|---|
+| **X** | `0x00171F8` | 45 | also `0x00C6B98` inside the armour block |
+| **Zero** | `0x00174F8` | 29 | same stage bundle as X |
+| **Falcon** | `0x00C6BB8` | 2 | armour block, sector 346 |
+| **Gaea** | `0x00C6BD8` | 2 | armour block |
+| **Ultimate** | `0x00C6CF8` | 3 | armour block; differs from X only at entry 11 |
+
+**Fourth Armor has no palette of its own.** Its sprite is different artwork
+indexing X's CLUT — measured 900 px covering all 15 of X's opaque colours, and
+confirmed live: a disc with X recoloured gold renders Fourth Armor gold.
+Recolouring `x` covers it.
+
+X / Falcon / Gaea / Ultimate share entries 12–15 exactly; an armour's identity
+lives in its face (1–5), trim (6–10) and highlight (11). Zero's is wholly
+different: `#40C070 #187828 #0080F8` crystal, `#E86868 → #600000` red armour,
+white trim, `#F0C090` blond ramp.
+
+Live CLUTs as captured:
+
+```
+X / Fourth  0000 CBBF A23D A195 94DD 8CAC FF9B DEB4 D22F B969 9CC4 EBC8 F669 EDE7 E124 C4A3
+Falcon      0000 CBBF 865B A195 94DD 8CAC F7BD E272 C5CD AD4A 9484 8360 F669 EDE7 E124 C4A3
+Gaea        0000 83BF 829D EAD4 94DD 8CAC F7BD D230 C5EE B16B 9484 FB07 F669 EDE7 E124 C4A3
+Ultimate    0000 CBBF A23D A195 94DD 8CAC FF9B DEB4 D22F B969 9CC4 83E0 F669 EDE7 E124 C4A3
+Zero        0000 BB08 95E3 FE00 B5BD 805E 8012 800C FBDE E6D5 C1AC A4A4 CB1E B219 A173 9F3D
+```
+
+Builder: `Scripts/mmx5_palette_preset.py` (18 presets, per-target selection,
+seeded random). Verified end to end — X gold + Zero violet on one disc.
+
+#### Two structural guesses that were WRONG — do not resurrect them
+
+1. **`0x0017218` is not Zero.** It sits beside X in the stage bundle, shares
+   X's face ramp and has a red body, which made it look certain. Zero's real
+   record is `0x00174F8`, and its colours are nothing like it.
+2. **The four 9-record tables at `0x034AF78` / `0x0652298` / `0x0753698` /
+   `0x08553C8` are not the armours.** They carry an identical nine-body set,
+   and four different armours cannot share one body ramp. The armours live in
+   the block at sector 346 instead. (What those tables are is still open.)
+
+Both guesses came from reading colours off a disc dump. Colour reasoning
+generates candidates; only the selector-and-capture route settles them.
+
+A full-disc sweep finds 15 variant tables once byte-phase duplicates are
+collapsed — a naive scan reports 21, several being the same bytes matched at
+`+2`/`+4`. Machine-readable dump: `Scripts/mmx5_clut_roster.json`.

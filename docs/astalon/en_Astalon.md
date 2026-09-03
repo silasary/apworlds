@@ -1,14 +1,11 @@
 # Astalon: Tears of the Earth
 
-<!-- ## Where is the options page?
-
-The [player options page for this game](../player-options) contains all the options you need to configure and export a config file. -->
-
 ## What does randomization do to this game?
 
 Depending on settings, the following things may be randomized:
 
 - Playable characters
+- Starting location
 - All key items in your inventory except for Monster Ball
 - Health pickups
 - Attack pickups
@@ -17,14 +14,19 @@ Depending on settings, the following things may be randomized:
   - You can enable each color individually
 - Switches/magic crystals/faces
   - Activating switches will complete location checks and you will receive corresponding block toggles or door opens
-    as items
+      as items
 - Elevator destinations
 - Unique shop upgrades
 - Candles
+- How the 2-way void portal connect
+  - They can be coupled or decoupled
 
 ## What is the goal?
 
 The goal is to complete the main Tears of the Earth campaign. New Game Plus and the other campaigns are not supported.
+
+There is an additional option you can enable that requires you to collect an arbitrary number of Gold Gorgon Eyes from
+the mutliworld before you can ride the final elevator and defeat the final boss.
 
 ## What Astalon items can appear in other players' worlds?
 
@@ -32,10 +34,11 @@ Any items as noted above can appear in other players' worlds depending on which 
 
 ## What does another world's item look like in Astalon?
 
-Items for your world or another Astalon world will appear as the actual item, except for switches, which appear as
-frogs, and elevators, which appear as the old man's head.
+Items for your world or another Astalon world will appear as the actual item if there's an applicable icon. Switches,
+magic crystals, and faces are all represented by floor switches. Elevators have a custom new sprite.
 
-Items for other worlds will appear as a blue orb if they're a progression item, or a grey orb otherwise.
+Items for other worlds will appear as a custom AP logo. Progression+Useful are gold, Progression is default colors,
+Useful is blue, and filler is grey.
 
 ## Are there any unexpected bits of logic the randomizer uses?
 
@@ -49,3 +52,13 @@ Items for other worlds will appear as a blue orb if they're a progression item, 
 - Algus's Meteor Rain and Zeek's Magic Block can kill ghosts without Banish Spell
 - Zeek can get blocks stuck in walls, providing extra height
 - Athena's Bell is logically required to fight the final boss on easy difficulty
+
+## Is there a tracker?
+
+This APWorld fully supports Universal Tracker, which you can find via the setup guide. It contains maps and the
+`/get_logical_path` and `/explain` commands to aid you in navigation.
+
+## Anti-AI Statement
+
+AI sucks for a number of reasons and has no place in a community driven project. AI has not and never will be used in
+the creation of this implementation in any way.

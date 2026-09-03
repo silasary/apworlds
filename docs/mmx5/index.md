@@ -1,10 +1,12 @@
 # Mega Man X5
 
-
+Mega Man X5 is the fifth entry in Capcom&#x27;s Mega Man X series, released for the
+PlayStation in 2000. Play as X or Zero, defeat eight Mavericks in any order,
+and stop the colony drop before Sigma&#x27;s plan comes to fruition.
 
 
 ## Downloads
-- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.5.4/mmx5.apworld">Latest Version (0.5.4)</a>
+- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.6.0/mmx5.apworld">Latest Version (0.6.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

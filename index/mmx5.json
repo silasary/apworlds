@@ -283,9 +283,25 @@
       "size": 292771,
       "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
       "tag": "mmx5-v0.5.4",
-      "title": "MMX5 apworld v0.5.4",
+      "title": "MMX5 apworld v0.5.4 (superseded by v0.6.0)",
       "version_simple": "0.5.4",
       "world_version": "0.5.4"
+    },
+    "mmx5-v0.6.0": {
+      "created_at": "2026-09-03T00:40:47Z",
+      "description": "One new feature, and an unpatcher you should update. **No re-patch needed** unless you set a colour \u2014 leave them alone and the disc is byte-identical to what 0.5.4 produced, so an existing patched disc and an in-flight seed both stay valid.\n\n## New: player colours\n\nX, Zero, Falcon Armor, Gaea Armor and Ultimate Armor can each be recoloured independently, from 18 presets or `random`. Purely cosmetic \u2014 no logic, items or locations are touched, and two players in the same multiworld can pick different colours.\n\n> crimson \u00b7 scarlet \u00b7 amber \u00b7 gold \u00b7 olive \u00b7 forest \u00b7 emerald \u00b7 teal \u00b7 cyan \u00b7 azure \u00b7 blue \u00b7 indigo \u00b7 violet \u00b7 magenta \u00b7 rose \u00b7 silver \u00b7 black \u00b7 white\n\n**This is the only setting that is not in your YAML.** Colours live in Archipelago's own `host.yaml` under `mmx5_options`, and are applied while the patch is being opened:\n\n```yaml\nmmx5_options:\n  rom_file: \"Megaman X5.bin\"\n  x_palette: gold\n  zero_palette: violet\n  falcon_palette: vanilla\n  gaea_palette: vanilla\n  ultimate_palette: vanilla\n```\n\nThat means changing your mind never costs a new seed \u2014 but it is not a live toggle either. Set them **before** you open the patch. To change them afterwards, edit `host.yaml`, **delete the `.bin` and `.cue` you made last time**, and open the same `.apmmx5` again. If you skip the delete, the patcher sees a disc of that name already sitting there, does nothing, and does not warn you.\n\nDeleting the old disc and re-patching to the same filename is deliberate: BizHawk keys memory cards and savestates to the disc's filename, so keeping the name keeps your saves.\n\nPresets keep each colour's original brightness and change only hue and saturation, so shading and outlines survive rather than going flat. Faces and skin are never repainted, and Zero keeps his blond hair and his helmet crystal.\n\n**Fourth Armor has no setting of its own** \u2014 it is different artwork drawn from X's palette, so `x_palette` recolours it too. Confirmed in game rather than assumed.\n\n## Update your unpatcher\n\n**`MMX5-Unpatcher.exe` is v1.1 and you want it if you use colours.** It now restores the palette records as well, so a recoloured disc still unpatches back to a byte-verified clean dump. The v1.0 build cannot: it would fail its md5 check and refuse to write, leaving you unable to recover your dump from a recoloured disc. If you never touch the colour settings, v1.0 remains correct.\n\n## Also\n\nThe setup guide has a new section covering the colour options, how to change them afterwards, and why that step differs from every other setting. It ships as `MMX5-Setup-Guide.pdf` here, so you can read it before installing anything.\n\n---\n\n`mmx5.apworld` goes in your Archipelago install's `custom_worlds/` folder. `MMX5-Unpatcher.exe` restores an AP-patched disc to a clean dump if you have lost your original \u2014 drag a `.bin` onto it.\n\nRequires Archipelago 0.6.7 or newer. 540 tests, release gate 37/37.\n",
+      "download_url": "https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.6.0/mmx5.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4b5c16e3b3c55425f290c46f2dc6fc71d01ab089723da1147e6b08767429cba4",
+      "html_url": "https://github.com/Shinnuu/Archipelago/releases/tag/mmx5-v0.6.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 306772,
+      "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
+      "tag": "mmx5-v0.6.0",
+      "title": "MMX5 apworld v0.6.0",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0"
     }
   }
 }

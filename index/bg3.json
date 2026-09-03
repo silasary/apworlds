@@ -405,6 +405,21 @@
       "title": "0.6.4 BETA",
       "version_simple": "0.6.3",
       "world_version": "0.6.3r2"
+    },
+    "v0.7.0": {
+      "created_at": "2026-09-03T05:13:32Z",
+      "description": "0.7.0 Release\r\n\r\nChanges to mod in this version-\r\n* Removed Halsin's defense portal killsanity checks (they're missable)\r\n* Removed or fixed ~40 questsanity locations (no more nettie poisoning)\r\n* Added character allowlisting in the yaml- you can remove characters and you shouldn't get their quests in questsanity (experimental, unstable)\r\n* Added heartbeat / connection code (taken from Trials of Tav, thank you)\r\n* Added Killsanity Strictness option- allows monsters to send killsanity checks on death, not just kill (experimental)\r\n* Added Netherbrain goal handling (does not have killsanity or questsanity support yet, this is just the architecture for later)\r\n* Added act 3 regions\r\n* Fixed act 1 regions - goblin camp, hag's basement and zhentarim basement now properly separate their logic from behind the lockout item and past the lockout item\r\n* Fixed act 1 bug if you did halsin goal, hag basement checks could be unreachable\r\n* Fixed some duplicate location and item ids (no game effect)\r\n* Updated location counts in option file\r\n\r\nKnown bugs:\r\n* Some containersanity coordinates were misgenerated. I will need to do a run to collect correct values, but it is a display-only issue at this time.\r\n* Killsanity strictness was left visibility.none. I'll fix it next release. The option would be \"killsanity_strictness: \"relaxed\"\" if anybody wants to just add it to their yaml.",
+      "download_url": "https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.7.0/bg3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f450ddc921a1b3dae00dd38e21b11831196f70d783374c7110485181222699d1",
+      "html_url": "https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.0",
+      "minimum_ap_version": "0.6.2",
+      "size": 658926,
+      "source_url": "https://api.github.com/repos/zane31415/ArchipelagoBG3",
+      "tag": "v0.7.0",
+      "title": "0.7.0",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0"
     }
   }
 }

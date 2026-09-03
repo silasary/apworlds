@@ -58,6 +58,73 @@ expectations.
    at the file you verified above.
 4. This produces a patched `.cue` + `.bin` beside the patch file.
 
+## Player colours (optional)
+
+**This is the only setting that does not live in your YAML.** Every other
+option is decided when the seed is generated. Colours are decided on your own
+machine, at the moment the patch is opened.
+
+That is good news and bad news:
+
+- You never need a new seed to change a colour, and it never affects anyone
+  else in a multiworld.
+- But changing one is **not a toggle** — the colour is written into the disc as
+  it is built, so a disc you already made will never change. You re-open the
+  patch to get a new one.
+
+### Setting them
+
+Colours live in Archipelago's own `host.yaml` (the same file that remembers
+where your disc image is), under `mmx5_options`:
+
+```yaml
+mmx5_options:
+  rom_file: "Megaman X5.bin"
+  x_palette: gold
+  zero_palette: violet
+  falcon_palette: vanilla
+  gaea_palette: vanilla
+  ultimate_palette: vanilla
+```
+
+Each accepts `vanilla` (leave it alone), `random`, or one of:
+
+> crimson · scarlet · amber · gold · olive · forest · emerald · teal · cyan ·
+> azure · blue · indigo · violet · magenta · rose · silver · black · white
+
+Set them **before** you open the patch. If you have not patched yet, that is
+all there is to it — open the `.apmmx5` as usual and your disc comes out in
+those colours.
+
+### Changing them afterwards
+
+1. Edit `host.yaml` and save it.
+2. **Delete the `.bin` and `.cue` you made last time.** The patcher skips its
+   work if a disc of that name is already sitting there, so if you miss this
+   step nothing will happen and you will get no warning.
+3. Open the same `.apmmx5` again. You do not need to restart the Launcher, and
+   you do not need a new seed.
+4. You get a fresh disc, same seed, new colours.
+
+Deleting the old disc and patching to the **same filename** is deliberate:
+BizHawk keys memory cards to the disc's filename, so keeping the name means
+keeping your saves. If you patch to a new name instead, copy your old
+`.SaveRAM` file alongside under the new name or the game will look like it has
+no memory card.
+
+### Notes
+
+- **Fourth Armor follows X.** It is drawn from X's palette, so `x_palette`
+  recolours it too. It has no setting of its own.
+- Faces and skin are never repainted, and Zero keeps his blond hair and his
+  helmet crystal — only armour and trim change, so shading and outlines stay
+  intact.
+- `random` is tied to your player name, so re-patching gives you the same
+  colour again rather than re-rolling.
+- Nothing here touches items, locations or logic. Two players in the same
+  multiworld can pick different colours, and a seed generated before this
+  feature existed can still be recoloured.
+
 ## Playing
 
 1. Open **BizHawk** and load the patched **`.cue`** (not the original, and
@@ -152,8 +219,15 @@ standalone **MMX5-Unpatcher** from the apworld's release page and drag any
 AP-patched X5 .bin onto it — it restores a byte-verified clean copy next to
 the file.
 
+**I changed a colour and nothing happened.** The patcher does no work if a
+`.bin`/`.cue` of that name already exists — it says so in the log and stops.
+Delete the old pair and open the patch again. Remember too that colours are
+baked in as the disc is built: a disc you already made never changes, no matter
+what you edit afterwards.
+
 **Do I have to re-patch for every seed?** Usually no. The disc only changes
-with three options — `pickupsanity`, `text_skip` and `launch_odds`. Two seeds
+with three options — `pickupsanity`, `text_skip` and `launch_odds` — plus the
+player colours, which are set locally rather than in your YAML. Two seeds
 with the same values for those produce byte-identical discs, so you can keep
 one patched disc per option combo and reuse it. This is also kinder to your
 saves: BizHawk keys memory cards to the disc's filename, so a reused disc

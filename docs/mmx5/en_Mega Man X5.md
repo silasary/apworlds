@@ -92,6 +92,14 @@ Everything else, including all three goals, `boss_difficulty`,
 `rematch_checks`, `reploid_checks` and `dna_parts_in_pool`, is done entirely
 by the client, so it works on a disc you have already patched.
 
+**Player colours are the odd one out.** X, Zero, Falcon, Gaea and Ultimate can
+each be recoloured, but the choice is not in your YAML at all — it lives in
+your own `host.yaml` and is applied while the patch is being opened. So it
+costs nothing to change your mind (no new seed, no effect on anyone else in the
+multiworld), but it is not a live toggle either: delete your old `.bin`/`.cue`
+and open the same `.apmmx5` again to get a disc in the new colours. The setup
+guide has the details.
+
 ## Anything unusual I should know?
 
 - **Armor capsules still play Light's dialogue but grant nothing.** That is
