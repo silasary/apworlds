@@ -6,7 +6,7 @@ and stop the colony drop before Sigma&#x27;s plan comes to fruition.
 
 
 ## Downloads
-- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.6.0/mmx5.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.6.1/mmx5.apworld">Latest Version (0.6.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

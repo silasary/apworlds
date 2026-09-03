@@ -299,9 +299,25 @@
       "size": 306772,
       "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
       "tag": "mmx5-v0.6.0",
-      "title": "MMX5 apworld v0.6.0",
+      "title": "MMX5 apworld v0.6.0 (superseded by v0.6.1)",
       "version_simple": "0.6.0",
       "world_version": "0.6.0"
+    },
+    "mmx5-v0.6.1": {
+      "created_at": "2026-09-03T06:37:12Z",
+      "description": "**Player colours move into your YAML.**\n\n0.6.0 put them in `host.yaml`, and the feedback was consistent: people did not\nwant to edit a file they had never opened, and several never found out the\nfeature existed at all \u2014 `host.yaml` settings do not appear on the website\ngenerator.\n\nSo the five colours (X, Zero, Falcon, Gaea and Ultimate) are ordinary options\nnow. They show up on the generator with everything else, a typo is refused when\nthe seed is generated instead of quietly falling back to vanilla, and your\ncolour is recorded in the spoiler.\n\n## Nothing breaks, and nothing needs regenerating\n\n- **A colour already set in `host.yaml` keeps working exactly as before.** It\n  is an override now, and it still wins.\n- **YAMLs written for 0.6.0 still generate.** The new options default to\n  vanilla.\n- You only need a new seed if you want your colour to come from the YAML.\n  Anyone mid-seed can keep changing colours by re-patching, as now.\n\n## Two details worth knowing\n\n`random` is rolled when the seed is generated now, rather than from your player\nname. Your colour is fixed and appears in the spoiler. It picks from the whole\nlist, so it can land on vanilla.\n\n**`vanilla` in `host.yaml` does not override anything.** It means \"nothing set\nhere\". Archipelago writes those entries into your `host.yaml` by itself with\n`vanilla` already in them, so honouring it as a real choice would have quietly\noverridden the YAML of every existing player. To play in vanilla colours, pick\n`vanilla` in your YAML.\n\n---\n\n`mmx5.apworld` goes in your Archipelago install's `custom_worlds/` folder.\n`MMX5-Unpatcher.exe` restores an AP-patched disc (recoloured or not) to a clean\ndump if you have lost your original \u2014 drag a `.bin` onto it. It is unchanged\nfrom 0.6.0 and you do not need to replace it.\n`MMX5-Setup-Guide.pdf` is the setup guide, readable before anything is\ninstalled.\n\nRequires Archipelago 0.6.7 or newer. 563 tests, release gate 37/37.\n\nAll MMX5 releases: https://github.com/Shinnuu/Archipelago/releases?q=mmx5\n",
+      "download_url": "https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.6.1/mmx5.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d7a965761d225cb1236a6f622ef378b63fd4ef6b50c21e0cfbda777c8c51a21e",
+      "html_url": "https://github.com/Shinnuu/Archipelago/releases/tag/mmx5-v0.6.1",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 312044,
+      "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
+      "tag": "mmx5-v0.6.1",
+      "title": "MMX5 apworld v0.6.1",
+      "version_simple": "0.6.1",
+      "world_version": "0.6.1"
     }
   }
 }

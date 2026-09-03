@@ -20,23 +20,12 @@ From here, connecting to your HoloCure slot is easy. There are two scenarios.
 ### Webhost Room
 
 If your room is hosted on a WebHost (e.g. [archipelago.gg](https://archipelago.gg)),
-you should be able to simply click on your name in the player list.  
-This will open the Archipelago Launcher
-and ask you whether you want to connect with the Text Client or the HoloCure Client.  
-Choose "HoloCure Client". The rest should happen completely automatically and you should be able to play HoloCure.
+you should get the link and port (e.g. archipelago.gg:38281).
+Then you launch HoloCure, and a separate window named HoloCure Archipelago Mod will open. 
+There will be a window in the GUI named Connect, and you should put the address in the field named IP. For Player Name, you put the assigned player name that was set in the YAML file. Password is only required if the apworld is set to require one.
 
 ### Locally hosted room
 
 If your room does not have a WebHost room page available, you can launch HoloCure manually.  
 
-Open the Archipelago Launcher, and then select the HoloCure Client from the list.  
-After a short while, the HoloCure client should open.  
-Enter the server address at the top and click "Connect".  
-Then, enter your name. If a password exists, enter the password.  
-You should now be connected and able to play HoloCure.
-
-## Switching Rooms
-
-The HoloCure Client can seamlessly switch rooms without restarting.
-
-Simply click the "Disconnect" button, then connect to a different slot/room.
+Usually the address will be in the format of localhost:port number. Copy this into the IP field. The rest of the steps are the same as the Webhost Room.
