@@ -1,4 +1,4 @@
-> Research notes mirrored from the mmx5-ap-research workspace (2026-08-15).
+> Research notes mirrored from the mmx5-ap-research workspace (2026-09-04).
 > Working copies live there and are updated as addresses are confirmed;
 > re-sync this mirror when they change. No game data included.
 
@@ -952,6 +952,54 @@ commits `list[cursor]` to `0x800D1C2A`, which the Parts (`0x800F3E30`) and launc
 screens read. `0x800D1C29` gates all three list builders and appears to be a
 screen-mode flag.
 
+### The hub's screen/phase machine — and WHEN `0x800D1C0C` is read
+
+Derived 2026-09-03 from the same dump, chasing a live report: pick a stage,
+back out at the character select, enter a different stage, and the game loaded
+the FIRST one. Two nested dispatchers, both taking `a0 = 0x800D1C00`:
+
+```
+800F0C80  lb v0, 0x1(a0)      ; SCREEN = 0x800D1C01 -> table 0x800F5354
+800F10E0  lb v0, 0x2(a0)      ; PHASE  = 0x800D1C02 -> table 0x800F51B0   (screen 4)
+800F0E4C  lb v0, 0x2(a0)      ; same phase byte     -> table 0x800F51A4   (screen 3)
+```
+
+Screen 3 is the icon reveal; its last phase (`0x800EF2AC`) writes
+`0x1C01 = 4, 0x1C02 = 0` and hands over. **Screen 4 is the stage select**, and
+its phases are the whole entry sequence:
+
+| phase | fn | what it does |
+|---|---|---|
+| 0 | `0x800EF858` | cursor + confirm — **the only writer of `0x800D1C0C`** |
+| 1 | `0x800F0E88` | 10-frame hold, `0x1C27 = 31` |
+| 2 | `0x800EFE00` | zoom in, `0x1C27` 31 → 0 |
+| 3 | `0x800F0ED8` | build the character select (two portrait objects) |
+| 4 | `0x800F0F98` | `0x1C32 = 1` |
+| 5 | `0x800EFF4C` | **character select** — cursor `0x1C30` over the list at `0x800F6DF0`; confirm writes `0x1C2A`/`0x1C49` and `0x1C44 = 1` for Zero; **△ (`0x0010`) → phase 8 = back out** |
+| 6 | `0x800F0FE8` | `jal 0x800132F8(8)` |
+| 7 | `0x800F101C` | **reads `0x800D1C0C`** → `0x1C00 = 7` if stage ≥ 11 or its `0x1C4C` bit is set, else 5; `0x1C01 = 0`, hub ends, stage loads |
+| 8 | `0x800F0FB8` | back-out: `0x1C2B = 1`, `0x1C31 = 1`, `0x1C27 = 0` |
+| 9 | `0x800F00A4` | reverse zoom, then `0x1C01 = 4`, `0x1C02 = 0` — back at the cursor |
+
+Pad bits are the standard PS1 word BYTE-SWAPPED: `0x1000/0x2000/0x4000/0x8000`
+= up/right/down/left, `0x0800` start, `0x0040` ✕ (so confirm `0x840` = ✕ or
+Start), `0x0010` △, `0x0004`/`0x0008` L1/R1 (the two screen-switch buttons at
+phase 0, which set `0x1C01` to 5 / 7).
+
+**The consequence that matters:** `0x800D1C0C` is written at phase 0 and not
+read until phase 7, the hub overlay stays resident for all of it, and **the
+back-out path never clears it**. So between a confirm and the load — including
+for as long as the player sits at the character select — RAM holds a
+destination the game has latched but not consumed, and anything that writes
+that byte redirects the entry. Vanilla is safe (every confirm rewrites it, and
+nothing in the EXE writes it: 9 readers, 0 writers), but our client's
+stage-unlock restore was not — see the 2026-09-03 fix.
+
+Equally: **a blocked confirm can only ever happen at screen 4 phase 0**, and a
+successful one moves the phase off 0 on the same frame it writes the
+destination. That pair is what makes `(screen == 4 && phase == 0)` the exact
+window in which putting `0x0D` back is safe.
+
 ## 9.15 DNA Parts — full name/bit map, read from the game
 
 The 16 Parts of `0x800D1C84` (bits 2..17), paired to the mask table
@@ -1367,3 +1415,77 @@ time, so the client can write a per-stage bitmap into EXE free space at stage
 entry, and the stub can index it with
 `(recptr - *(0x80072EAC + stage*8 + area*4)) / 8` — roughly six instructions,
 using a table the client already reads.
+
+## 9.17 The stage-transition function `0x800205AC` — the ACT ladder, and the stage-result byte `0x800D1C0F`
+
+Found 2026-09-04 while widening `exit_stage_anytime` past the eight Maverick
+stages. **This is the only place in the game that advances the Zero Space
+progress counter**, and its gate is the fact any future work here needs.
+
+Called from one site (`0x80020EC8`), `a2 = 0x800D1C00`:
+
+```
+800205D4  lb   $v1, 0xF($a2)     ; STAGE RESULT = 0x800D1C0F
+800205DC  beqz $v1, 0x80020838   ;   0        -> elsewhere
+800205E4  blez $v1, 0x80020794   ;   negative -> elsewhere
+800205EC  lb   $v1, 0xC($a2)     ; positive: stage id, and the ladder below
+...
+800205F4  bnez $v1, 0x8002061C   ; stage 0 (intro) ->
+80020604  sb   $v1, 0x79($a2)    ;   ACT = 1, and 0x1C00 = 0x13 (the hub)
+...
+8002062C  sltiu $v0, $v0, 8      ; (stage-1) < 8 -> the Maverick/chapter path
+80020630  beqz  $v0, 0x8002068C  ; otherwise the ENDGAME LADDER:
+80020698  sb   $v0, 0x79($a2)    ;   leaving 0x10 (Zero Space 1) -> ACT = 6
+800206B0  sb   $v0, 0x79($a2)    ;   leaving 0x11 (Zero Space 2) -> ACT = 7
+800206C4  sb   $v0, 0x79($a2)    ;   leaving 0x12 (X vs Zero)    -> ACT = 8
+```
+
+The ladder is keyed **purely on the stage id you are leaving** — there is no
+"did you actually clear it" test on this path; that decision has already been
+made, upstream, by whatever wrote `0x800D1C0F`. And the hub's confirm handler
+picks the endgame destination straight back out of ACT (5 → `0x10`, 6 → `0x11`,
+7 → `0x12`, else `0x0C`, §9.14), so ACT *is* Zero Space progress.
+
+**ACT (`0x800D1C79`) writers, enumerated:** two in the EXE (`0x8001C94C`,
+`0x8001CC78`) which are memory-card load marshalling — field-by-field copies
+out of the save buffer, `lbu 0x1(buf)` → `sb 0x79(0x800D1C00)` — plus this
+ladder. **The results overlay does not write ACT at all** (extracted from disc
+sector 24073 and scanned: five `lbu` at offset `0x79`, zero stores; extraction
+method verified by byte-matching the hub overlay's `0x800EEF14` against
+`ramdump_hub_f22905.bin`).
+
+### The question, and its answer (live, 2026-09-04)
+
+`0x800D1C0F` is written from nine sites, none of them in the pause handler
+(`0x80033xxx` has no store at offset `0xF`), so an Exit Stage escape reaches
+the transition function through one of the existing setters. The guess here
+was `0x80023BE8` (`0x1C0F = 1` alongside `0x1C08 = 29`), which would have put
+an escape on the *positive* path and therefore into the ladder. **That guess
+was wrong.** Note `0x1C0F` also has a second, unrelated use as the boss-spawn
+"already beaten" flag (`0x8005702C`, overlay-findings:213) — do not read a
+single value of it as proof of one meaning.
+
+**Answer: an escape stores 0, so the ladder never runs.** Measured on the
+0.6.2 exit-test disc with `Scripts/mmx5_exit_watch.lua`:
+
+| escape | `0x800D1C0F` | ACT before → after | ladder |
+|---|---|---|---|
+| Zero Space 1 (`0x10`) at ACT 5 | `0` | 5 → 5 | did not run |
+| Zero Space 1 (`0x10`) again | `0` | 5 → 5 | did not run |
+| Squid Adler (`0x05`), uncleared | `0` | 5 → 5 | n/a (not a ladder stage) |
+| Squid Adler (`0x05`) again | `0` | 5 → 5 | n/a |
+
+The transition therefore takes the zero path at `0x80020838`, not the positive
+one at `0x800205D4` that carries the ladder. **Escaping a Zero Space stage
+does not advance ACT and does not skip the stage or its `endgame_checks`
+location.** The uncleared-Maverick escapes read 0 as well, so a zero result is
+what the escape path stores generally, not something particular to Zero Space.
+No suppression edit is needed, and 0.6.2's caution text was replaced with the
+result.
+
+Worth keeping for whoever revisits this: the same run also settled that
+`exit_stage_anytime` works in an uncleared Maverick stage (the 0.5.3 base
+feature) and in Zero Space (the 0.6.2 widening). An earlier session concluded
+the option "has probably never worked"; that conclusion came from a run whose
+every stage entry executed *vanilla* code, restored by savestates cloned from
+the vanilla disc. See the 2026-09-04 handoff.

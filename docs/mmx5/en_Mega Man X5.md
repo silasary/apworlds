@@ -140,6 +140,17 @@ override it when the patch is opened — the setup guide explains how.
   stage-select menu that this does not touch. Nothing that affects your run is
   answered for you. You will not be able to read the story at this speed, so
   leave it off for a first playthrough.
+- **`exit_stage_anytime` puts "Exit Stage" in the pause menu everywhere.**
+  Vanilla only offers it in a Maverick stage whose boss you have already
+  beaten, which is backwards for a randomizer: you are constantly entering a
+  stage for one check you can now reach, or one you cannot finish yet, and
+  without this the only way out is to die repeatedly. On by default. It now
+  covers every stage — the Maverick eight, the Enigma and Shuttle sorties,
+  Sigma's stage and Zero Space — with one exception: **the intro stage**,
+  where leaving early would strand your story progress and there is no stage
+  select to go back to. Escaping **Zero Space** is safe — it does not count as
+  having passed the stage, so the stage and its check are still there when you
+  come back.
 - **`stage_unlocks` turns the stage select into a progression gate.** With it
   on, exactly one Maverick stage is open at the start — the seed picks which —
   and the other seven each need their own "&lt;Boss&gt; Access Codes" item. A

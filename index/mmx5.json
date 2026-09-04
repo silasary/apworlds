@@ -318,6 +318,22 @@
       "title": "MMX5 apworld v0.6.1",
       "version_simple": "0.6.1",
       "world_version": "0.6.1"
+    },
+    "mmx5-v0.6.2": {
+      "created_at": "2026-09-04T09:08:53Z",
+      "description": "**Exit Stage now works in every stage, and escaping Zero Space is safe.**\n\nExit Stage was only ever offered in the eight Maverick stages \u2014 that is the\nrange vanilla's own check uses, and the randomizer had only removed vanilla's\n*other* condition, the one that made you beat the stage first. A playtester\nfound the gap the obvious way, in Zero Space 2. It now covers the Enigma and\nShuttle sorties, Sigma's stage and all of Zero Space too.\n\n**The intro stage is still excluded**, deliberately: leaving it early strands\nyour story progress, and there is no stage select to go back to yet.\n\n## Escaping Zero Space does not skip it\n\n0.6.2 was going to ship with a caution here. The game picks which Zero Space\nstage comes next from a counter it advances as you leave one, and vanilla can\nnever escape those stages, so there was no established behaviour to rely on \u2014\nescaping *might* have counted as passing the stage and skipped the check inside\nit.\n\nIt does not. An escape leaves that counter untouched, and the stage and its\ncheck are still there to come back to. Measured on a real disc, twice in Zero\nSpace 1 and twice in an uncleared Maverick stage. Escape freely.\n\n## Fixed: with Stage Unlocks on, entering a stage could drop you into a different one\n\nReported live \u2014 pick Squid Adler, back out at the character select, then enter\nMattrex, and the game loaded Squid Adler.\n\nThe stage select writes your destination into memory the moment you confirm,\nand the game does not read it back until the loading screen. In between sit the\nzoom, the character select and the back-out, and the randomizer was writing\ninto that byte during all of it. It had one legitimate reason to: confirming a\nlocked stage leaves a value there the game never writes itself, and the\nrandomizer puts a sane one back. But it was putting back *the last stage it had\nseen you choose* rather than the hub, and deciding to do so from a reading\ntaken a fraction of a second earlier \u2014 so a stage you picked before could land\non top of the one you had just picked.\n\nIt now writes only while you are actually on the stage-select cursor, only the\nhub's own value, and only after checking the byte still needs it. Nothing about\nhow Stage Unlocks plays has changed; locked stages still do nothing on confirm,\nexactly as before.\n\n## What you need to do\n\n**Re-patch.** This changes the disc. Generate a fresh `.apmmx5`, re-patch, and\ncarry on \u2014 your save and any in-flight seed are unaffected.\n\n**Replace `MMX5-Unpatcher.exe` as well.** Unlike 0.6.1, this one is not\noptional: 0.6.2 edits a disc location earlier unpatchers do not know about, so\nan older one will refuse a 0.6.2 disc rather than restore it. The version here\nhandles every AP disc revision to date, this one included.\n\n---\n\n`mmx5.apworld` goes in your Archipelago install's `custom_worlds/` folder.\n`MMX5-Unpatcher.exe` restores an AP-patched disc (recoloured or not) to a clean\ndump if you have lost your original \u2014 drag a `.bin` onto it.\n`MMX5-Setup-Guide.pdf` is the setup guide, readable before anything is\ninstalled.\n\nRequires Archipelago 0.6.7 or later.\n",
+      "download_url": "https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.6.2/mmx5.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7d40486df9691d0b774c9132dbbb9fe7aa7959b524cafa56749704ac0f0e2720",
+      "html_url": "https://github.com/Shinnuu/Archipelago/releases/tag/mmx5-v0.6.2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 319087,
+      "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
+      "tag": "mmx5-v0.6.2",
+      "title": "MMX5 apworld v0.6.2",
+      "version_simple": "0.6.2",
+      "world_version": "0.6.2"
     }
   }
 }
