@@ -6,7 +6,7 @@ getting a little bit stronger and doing a little more each loop.
 
 
 ## Downloads
-- <a href="https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.5/idleloops.apworld">Latest Version (0.4.5)</a>
+- <a href="https://github.com/IHaveNoFunnyName/Archipelago/releases/download/0.4.6/idleloops.apworld">Latest Version (0.4.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

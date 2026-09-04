@@ -2,186 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-04T00:18:22.851496+00:00</updated>
+  <updated>2026-09-04T06:15:45.687277+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.3</id>
-    <title>NSMBW v0.3.3</title>
-    <updated>2026-08-31T15:03:58+00:00</updated>
-    <author>
-      <name>Miiroun</name>
-    </author>
-    <content># New Super Mario Bros Wii v0.3.3&#13;
-&#13;
-## Features&#13;
-- Shuffling of the Pa0_jyotyu tile sheet to have differently colored brick and ? blocks.&#13;
-- Spam error message if you are on wrong save file.&#13;
-- Better validation of dolphin folder.&#13;
-- background music and sound effects are no longer mixed&#13;
-&#13;
-&#13;
-## Fixes&#13;
-- Door being closed even thou level_elements were not enabled,.&#13;
-- Added generation error if enabled hint movies and level shuffle together. This is due to them causing crashes that I have been unable to fix.&#13;
-- Level shuffle confused 8-C and 8-A, so they had each others logic.&#13;
-- P-Switch disabling was not working.&#13;
-- Entering mushroom house sends death link.&#13;
-&#13;
-&#13;
-## Backwards compatibility&#13;
-This update is compatible with seeds generated on 0.3.X.&#13;
-&#13;
-&#13;
-## Links&#13;
-[Download](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.3)&#13;
-[Setup Guide](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md)</content>
-    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.08.30</id>
-    <title>Castlevania - Aria of Sorrow v2026.8.30</title>
-    <updated>2026-08-31T15:15:21+00:00</updated>
-    <author>
-      <name>dem1995</name>
-    </author>
-    <content>&lt;to be fleshed out&gt;&#13;
-&#13;
-Adds soul-shuffling options.&#13;
-&#13;
-Also adds some preliminary soul drop-chance multiplier options.</content>
-    <link href="https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.08.30"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.4</id>
-    <title>Pokepelago v0.6.4</title>
-    <updated>2026-08-31T16:27:22+00:00</updated>
-    <author>
-      <name>Appie</name>
-    </author>
-    <content># Pokepelago v0.6.4
-
-In this release, I've brought everything that was on beta during July and August to everyone.
-
-## Web client
-
-- **Sprite fix:** silhouettes no longer stop rendering after switching between Derpy and normal sprites, so you no longer need to refresh the page. (BUG-21)
-- **New-player onboarding:** I added a first-run "What is Pokepelago?" card and a guided tour of the interface. You can replay it from Settings.
-- **Tracker fix:** the Pokedex and Pokegear items were swapped in the tracker display, so a granted Pokedex appeared as a Pokegear and vice versa. This was display-only, and seeds were never affected. (BUG-24)
-- **Sound notifications**, contributed by AfiliaFrostfang: you can opt in to sounds for when a Pokemon becomes guessable and when a progressive item arrives, with support for custom sound files.
-- **Connection help:** the connect form now explains why an HTTPS page can only reach wss:// servers.
-- **Decode hardening:** route key and line unlock items now decode using explicit ID maps exported by the APWorld. This replaces client-side arithmetic that has caused drift bugs in the past.
-- I added search-engine metadata so the site can be found.
-- The client now reports a few anonymous operational events, including connection successes or failures and goal completions, so I can see recurring problems. There is no account linkage and no gameplay data. Details are at https://ap-pie.com/privacy.
-
-## APWorld
-
-- I fixed a rare generation failure (FillError) that happened when a random region roll landed on Hisui alone with a heavy lock stack. About 0.04% of random-region seeds were affected.
-- Generation now warns you when route locks or line locks force dexsanity on, instead of silently changing your YAML's setting.
-- Choosing Hisui as your only region together with two or more lock options is now rejected at the start of generation with a clear message naming the fix, instead of failing later with a cryptic FillError.
-- I added item name groups for YAML convenience.
-- Archipelago 0.6.7 or newer is required, unchanged since v0.6.1.
-
-## Also
-
-Pokepelago is now also available at https://pokepelago.ap-pie.com. It is the same site. Just note that your browser's progress and settings stay with whichever address you use.
-</content>
-    <link href="https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vegemiiBG/Archipelago-NepRb3/releases/tag/v0.2.0</id>
-    <title>Hyperdimension Neptunia Re;Birth3 V GENERATION v0.2.0</title>
-    <updated>2026-08-31T17:41:44+00:00</updated>
-    <author>
-      <name>vegemiiBG</name>
-    </author>
-    <content>****Huge release for the Neptunia Rebirth 3 Archipelago World****&#13;
-&#13;
-Nep RB3 APWorld update:&#13;
-&#13;
-- Quests are now added, please update to the latest Mod version from BlackSoulKnight for quests to function properly&#13;
-- All quests are available by default, they currently work in-logic through Universal Tracker (Currently no in Poptracker)&#13;
-- New Yaml Option regarding quests&#13;
-- Updated incorrect region requirements for a few dungeons</content>
-    <link href="https://github.com/vegemiiBG/Archipelago-NepRb3/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.4</id>
-    <title>Supermarket Simulator v0.3.4</title>
-    <updated>2026-08-31T18:36:37+00:00</updated>
-    <author>
-      <name>Lemix028</name>
-    </author>
-    <content>### Added&#13;
-&#13;
-* Day and Store Level Progression Tiers: Checks are now divided into five progression tiers based on received progression items&#13;
-* Late Check Progression Exclusion: Added an option to prevent progression items from appearing in the latest Day and Store Level checks&#13;
-&#13;
-### Fixed&#13;
-&#13;
-* Filler Weights: Setting a filler weight to `0` now fully disables that filler item&#13;
-* Trap Frequency now works correctly when generating filler items&#13;
-* Fixed duplicate filler selection logic&#13;
-* Fixed Reach Highest Generated Store Level goal with non-divisible store level intervals&#13;
-&#13;
-</content>
-    <link href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.4</id>
-    <title>NSMBW v0.3.4</title>
-    <updated>2026-08-31T20:41:08+00:00</updated>
-    <author>
-      <name>Miiroun</name>
-    </author>
-    <content># New Super Mario Bros Wii v0.3.4&#13;
-&#13;
-## Features&#13;
-- New alternative goal : all levels.&#13;
-&#13;
-&#13;
-## Fixes&#13;
-- Forgot to update memory scrip after refactoring to work on frozen.&#13;
-&#13;
-&#13;
-## Backwards compatibility&#13;
-This update is compatible with seeds generated on 0.3.X.&#13;
-&#13;
-&#13;
-## Links&#13;
-[Download](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.4)&#13;
-[Setup Guide](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md)</content>
-    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.5</id>
-    <title>NSMBW v0.3.5</title>
-    <updated>2026-08-31T22:31:21+00:00</updated>
-    <author>
-      <name>Miiroun</name>
-    </author>
-    <content># New Super Mario Bros Wii v0.3.5&#13;
-&#13;
-## Features&#13;
-- No new features.&#13;
-&#13;
-&#13;
-## Fixes&#13;
-- World9 script was broken, this fixes it.&#13;
-For it to work on an already generated patch, run `/rm_tmp` in your client before connecting.&#13;
-&#13;
-&#13;
-## Backwards compatibility&#13;
-This update is compatible with seeds generated on 0.3.X.&#13;
-&#13;
-&#13;
-## Links&#13;
-[Download](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.5)&#13;
-[Setup Guide](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md)</content>
-    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.5"/>
-  </entry>
   <entry>
     <id>https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.5</id>
     <title>Pokemon Ranger (Quest) v1.0.5</title>
@@ -331,7 +156,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implemented "Hide Completed Research" option in module config file to hide previously completed research items at the research bench.&#13;
 - Implemented "Enforce Research Prereqs" option in module config file. This defaults to false, removing research prerequisites other than having the required materials. Previous behavior can be restored if desired by changing value to true.&#13;
 - Updated apworld logic to ensure the ability to create meads has been gained before Bonemass and/or Mountain biomes are required.&#13;
-- Updated apworld logic to make sure that armor types in logic also have necessary workstation upgrades in logic to be able to craft.</content>
+- Updated apworld logic to make sure that armor types in logic also have necessary workstation upgrades in logic to be able to craft.&#13;
+&#13;
+09/03/26: Uploaded hotfix1 mod file. The only change is capitalization of the k's in Mead Ketill in the accompanying research.tsv file. This typo prevented players from being able to build the mead ketill even after receiving the AP item.</content>
     <link href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.3"/>
   </entry>
   <entry>
@@ -1067,6 +894,30 @@ Should still be fully compatible with releases going back to 0.2.0.&#13;
     <link href="https://github.com/dmwever/Ageipelago/releases/tag/0.2.2"/>
   </entry>
   <entry>
+    <id>https://github.com/AllPoland/unbeatAP/releases/tag/v0.8.0-alpha</id>
+    <title>UNBEATABLE Arcade v0.8.0a0</title>
+    <updated>2026-09-02T18:54:47+00:00</updated>
+    <author>
+      <name>AllPoland</name>
+    </author>
+    <author>
+      <name>estradiol-valerate</name>
+    </author>
+    <content>This update catches up with patch 2.3, which adds 4 new songs:&#13;
+- cryogenic&#13;
+- moon child (unbeatable's loveadelic rpg adventure remix)&#13;
+- moon child (amiga mix)&#13;
+- moon child (windows mix)&#13;
+&#13;
+The **client** is **compatible** with v0.7.2, v0.7.1, v0.7.0, v0.6.0, v0.5.0 and v0.4.0 apworlds! You can update the mod even if you're currently in an async!&#13;
+The **apworld** is **not compatible** with v0.7.x clients!&#13;
+&#13;
+**Please read the YAML options carefully and test your options before joining a lobby**, since the pacing and difficulty of the apworld is very volatile. It's currently very easy to make a randomizer that is way too short or way too long.&#13;
+&#13;
+Any feedback or ideas are welcome in the "UNBEATABLE (PC)" thread in `#future-game-design` in the [Archipelago Discord](https://discord.gg/8Z65BR2)!</content>
+    <link href="https://github.com/AllPoland/unbeatAP/releases/tag/v0.8.0-alpha"/>
+  </entry>
+  <entry>
     <id>https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.4.6-alpha</id>
     <title>New Super Mario Bros. DS v0.4.6a0</title>
     <updated>2026-09-02T19:12:32+00:00</updated>
@@ -1206,7 +1057,7 @@ Known bugs:&#13;
   </entry>
   <entry>
     <id>https://github.com/Nebulea-dev/Archipelago-BlueFire/releases/tag/0.6.0</id>
-    <title>Blue Fire v0.1.0r3</title>
+    <title>Blue Fire v0.1.0r2</title>
     <updated>2026-09-03T12:18:20+00:00</updated>
     <author>
       <name>Nebulea</name>
@@ -1218,7 +1069,7 @@ Known bugs:&#13;
   </entry>
   <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.34</id>
-    <title>Mental Omega v0.6.1r2</title>
+    <title>Mental Omega v0.6.1r3</title>
     <updated>2026-09-03T13:31:53+00:00</updated>
     <author>
       <name>Mental Omega Randomizer contributors</name>
@@ -1340,12 +1191,119 @@ You will need to subscribe to and enable the [Mod](https://steamcommunity.com/sh
     - With the maximum Dynamic Scaling of 200%, there would be **66** checks in Disaster Shard 2 (and onward), and would require **2211 Fragment clears** to attain&#13;
     - At a *generously* estimated 40 seconds per Fragment, it would roughly **24.5 hours** to complete *just* D2's Fragmentsanity checks&#13;
     - With the same scaling, Shard 1's 26 checks would take **3.9 hours** to complete&#13;
-    - In total, from Shard 1 to D2, it would take at best ~120 hours to do all of the checks&#13;
+    - In total, from Shard 1 to D2, it would take at best **~120 hours** to do all 482 checks&#13;
     - **This is an unreasonable ask in basically any scenario**&#13;
+    - However, at 100% scaling, it would take **30 hours** to complete its 241 checks. This is still a large value, but could hypothetically be playable in long asyncs&#13;
 &#13;
 &#13;
 ## Bugfixes&#13;
 - Fixed Shopsanity Scaling accidentally using Fragmentsanity Scaling's value in the slot data</content>
     <link href="https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.4</id>
+    <title>stardew_valley_8.1.4 v8.1.4</title>
+    <updated>2026-09-04T01:53:30+00:00</updated>
+    <author>
+      <name>agilbert1412</name>
+    </author>
+    <content>## Apworld&#13;
+- Fixed pickling issues on webhost&#13;
+- Added Evelyn requirement to the Garden Pot cutscene&#13;
+- Cleanup in some tests&#13;
+&#13;
+## Mod&#13;
+- Ported changes from 7.4.27&#13;
+- Fixed spoiled trap accidentally setting items to the illegal "3" quality&#13;
+- Implemented fire visual effect (intended to be annoying) on the Burnt Trap on high difficulties&#13;
+- Fixed the nudged Stone Junimo not sending the location check properly. Now sends in a radius of 5 from the spawn point.&#13;
+- Implemented Grandpa's Trust Fund. A small allowance from Grandpa's Bequest given on the 28th of every month&#13;
+- Implemented Joja Capital Loans. Ability to take out loans of up to 500g. Interest rate scales with trap difficulty, same as the taxes trap.&#13;
+- Added ads</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.0</id>
+    <title>Funi Raccoon Game v1.7.0</title>
+    <updated>2026-09-04T04:50:20+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>- Updated the mod to the newest game version, adding the following new changes:&#13;
+  - 5 new dumpster items and subsequent locations: Gacha Machine, Robin P. Bobin, Good Engine, Lightning Rod, Outdoor Chair&#13;
+  - 5 new vehicles (can only be used with kei truck item): Tony, Forklift, Horse, Scooter, Trolly (normally unused ingame, I added it in)&#13;
+- Removed Village: Euro near Furnace check (was removed in the update)&#13;
+- Changed Coffee Shop (closed) to be logically accessible at Petrol Station&#13;
+- Added Factory Sign dumpster item as it was forgotten in a previous update&#13;
+- Changed the Hat Store euro check quest to be infinitely repeatable&#13;
+- Fixed Store Doggy and Store Real Football's IDs being swapped&#13;
+- Fixed multiple goals getting cut off when using the F2 goal check keybind&#13;
+- Renamed Mystical Gems to Mystical Jewels&#13;
+&#13;
+**NOTE: THE POPTRACKER IS NOT CURRENTLY UP TO DATE ON THIS VERSION YET, BUT WILL WORK. JUST WON'T SHOW ANYTHING NEW.**&#13;
+&#13;
+[Mod Link](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)&#13;
+[Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/main/worlds/funi_raccoon/docs/setup_en.md)</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-101</id>
+    <title>Borderlands The Pre-Sequel v101</title>
+    <updated>2026-09-04T05:09:28+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.5):&#13;
+- skip generic pizza spawn if check has been received&#13;
+- new travel targets at Hunter's Grotto Lodge and Windshear Start&#13;
+- new ramps to make DLCs more completable without jump&#13;
+- big reordering of checks&#13;
+- fully unlocked mode setting&#13;
+- base game story quests in fully unlocked mode</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-101"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.2</id>
+    <title>Wynncraft v0.4.2</title>
+    <updated>2026-09-04T05:23:20+00:00</updated>
+    <author>
+      <name>EpicPuppy613</name>
+    </author>
+    <content>**Compatible with Wynnpelago v0.4.2+**&#13;
+&#13;
+- Add level requirement to access regions&#13;
+- Exclude accessories from counting towards logical gear levels&#13;
+- **Increase max level to 120**&#13;
+  - Includes Canyon of the Lost, Molten Heights, Sky Islands, Corkus, The Silent Expanse, and The Province of Fruma</content>
+    <link href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.6</id>
+    <title>Idle Loops v0.4.6</title>
+    <updated>2026-09-04T05:42:30+00:00</updated>
+    <author>
+      <name>IHaveNoFunnyName</name>
+    </author>
+    <content>## IdleLoopsAP 0.4.6 ##&#13;
+&#13;
+### Minor update ###&#13;
+&#13;
+* Deathlink support&#13;
+  * Receiving a Deathlink ends the current loop&#13;
+  * For sending them, "Death" isn't a concept in this game, there's nothing that really fit so I made it local-only trap items.&#13;
+* Split Chrono/Pyromancy off from normal difficulty skills.&#13;
+  * i.e. Default max 200 &gt; 50&#13;
+* Remove "Fight Segments" option, thinking about it again there's kinda no reason for it.&#13;
+  * (It's always 5 now)&#13;
+* Added an option to have Throw Party logically required for 51%+ Meet People/Short Quest, defaults to off&#13;
+* Removed an accidental "Z1 - Shop (Expensive)" item that shouldn't have existed</content>
+    <link href="https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.6"/>
   </entry>
 </feed>

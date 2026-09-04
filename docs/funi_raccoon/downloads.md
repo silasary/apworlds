@@ -1,9 +1,12 @@
 # Funi Raccoon Game
 
 ## Latest
-- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.6.3/funi_raccoon.apworld">Latest Version (1.6.3)</a>
+- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.7.0/funi_raccoon.apworld">Latest Version (1.7.0)</a>
 
 ## All Versions
+
+#### v1.7.0
+- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.7.0/funi_raccoon.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.7.0/funi_raccoon.apworld</a>
 
 #### v1.6.3
 - <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.6.3/funi_raccoon.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.6.3/funi_raccoon.apworld</a>
