@@ -44,7 +44,7 @@ For detailed instructions regarding Generation and Hosting read
 
 ## Installation Troubleshooting
 
-This is a very early versions so expect issues.
+This is a very early version so expect issues.
 
 ### Supported Versions
 Currently only the PAL and latest US version of Xenoblade X is supported.

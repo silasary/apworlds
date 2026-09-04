@@ -2,171 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-03T18:16:35.741507+00:00</updated>
+  <updated>2026-09-04T00:18:22.851496+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.1</id>
-    <title>OpenTTD v2.6.0</title>
-    <updated>2026-08-31T12:15:31+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content>**Win targets recalibrated against a real session.** A 5.5-hour Hard game
-showed three of the six goals finishing on time and three that never could.
-
-- **The profit goal is yearly now.** The old check read a single
-  `old_economy` entry and called it monthly — those entries are quarters, so
-  the label was wrong twice over. The engine sums the last four completed
-  quarters and the status window says *Yr. Profit*.
-- **The population goal respects the map.** The engine clamps it to 10,000
-  per town on the actual map, so a 30-town map is held to 300k, not 700k.
-  This applies to running seeds too.
-- **Preset table rescaled** (apworld 2.6.0): population 50k–800k across the
-  difficulties, cargo 1.5M–35M (measured throughput was about 1.2M tonnes an
-  hour; the old Hard column was sixty hours of hauling), profit 1M–50M
-  yearly. Company value, vehicles and missions are unchanged.
-
-**Fixed: "Buy any item from the shop" never completed.** The apworld sends
-that mission as type `purchase`; the engine matched three older strings and
-none of them was that. The check now also counts shop locations already sent
-to the server, so purchases made before this fix complete the mission on the
-next session.
-
-Existing seeds keep their baked cargo and value numbers; the profit unit and
-the population clamp apply to them immediately. New seeds need apworld 2.6.0.
-Plugin 1.5.1 only updates the settings form (the profit slider says Yearly);
-existing YAML files stay valid.
-</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.1</id>
-    <title>Clair Obscur Expedition 33 v0.4.0r2</title>
-    <updated>2026-08-31T12:20:16+00:00</updated>
-    <author>
-      <name>Démorck</name>
-    </author>
-    <author>
-      <name>Yezzdia</name>
-    </author>
-    <author>
-      <name>Noeva</name>
-    </author>
-    <content>- Noco shop items is always excluded for now&#13;
-- Chroma pack is now a filler item</content>
-    <link href="https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.4</id>
-    <title>Pokemon Ranger (Quest) v1.0.4</title>
-    <updated>2026-08-31T12:44:02+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <content>- Fixed compatibility with the Pokémon Ranger: Shadows of Almia apworld&#13;
-&#13;
-### Is this version compatible with older multiworld slots?&#13;
-Back to 1.0.1 yes, further back maybe but probably no (the client will tell you whether you have to downgrade)</content>
-    <link href="https://github.com/BlastSlimey/Archipelago/releases/tag/pkmn_ranger_quest_1.0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha6</id>
-    <title>Crash Team Racing v0.2.0a6</title>
-    <updated>2026-08-31T13:03:02+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>This is an unstable prerelease for players who want to help test CTR Archipelago 0.2.0. It is not the finished stable release. If you prefer the established build, remain on v0.1.5.
-
-**[Setup guide](https://ap-pie.com/guides/ctr)** · **[Alpha6 YAML Builder](https://ap-pie.com/apworlds?build=ctr&amp;version=0.2.0-alpha6)** · **[SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.2.0-alpha6/SETUP.md)**
-
-Always use the Alpha6 client and APWorld together. Back up an existing Adventure save before testing. CTR-AP requires game data created from your own NTSC-U Crash Team Racing disc; no game or custom-track data is included.
-
-## Alpha6 highlights
-
-- Held 1st, 3rd and 5th checks now rearm for each real race attempt. Restarting, leaving an unfinished race or moving to another track no longer carries the previous race's best position forward and suppresses later checks.
-- The experimental Custom Content manager verifies the one recognized Alpha6 preview package and can guide players to its creator-provided download. Installing content does not opt a seed into using it.
-- Baby T Park can be used as an experimental seven-lap Adventure Trophy race replacing Purple Gem Cup. It has stable custom Trophy, podium and Reach 10 Wumpa identities, plus truthful scouted reward presentation.
-- Recorded AI lap validation rejects recordings whose start and finish boundary is open, preventing the visible finish-line jump seen in earlier preview data.
-- Cancel at Adventure name entry returns to the title in the Archipelago-owned flow.
-- Startup connection attempts stop after a small bounded retry budget. Manual Connect retries immediately, while an established session still recovers in the background.
-- Checks earned while disconnected are retained and sent after reconnecting to the same seed and slot.
-
-Alpha6 also contains the broader 0.2.0 preview work: AP item-box locations, Itemsanity, Lettersanity, character unlocks and racer-locked pads, Progressive Boost and Stats, randomized Gem Cup legs, composable goals, Wumpa progression, expanded presentation and recovery improvements.
-
-## Experimental custom-content boundary
-
-Custom content is off unless the generated seed explicitly selects it. Open Options &gt; Custom Content to inspect the recognized package and export the Alpha6 YAML fragment. The manager fails closed if required files, hashes or capabilities do not match.
-
-Alpha6 supports one curated Baby T Park package for one Adventure Trophy-race shape. General custom-track libraries, Arcade, Time Trial, multiplayer, custom Cups, letters, relic challenges and arbitrary package pools are future work.
-
-## Known limitations
-
-- This is an Alpha test build. The custom-content preview and its manager need broader community testing before stable 0.2.0.
-- Only NTSC-U game data is supported. PAL and Japanese discs are detected and refused.
-- A raw MODE2/2352 `.bin` or supported `.chd` is required. Cooked 2048-byte ISO files omit data the client needs.
-- The public package does not include Baby T Park or any other custom-track bytes. The manager points to the creator's source for the recognized preview package.
-- Community recorded-AI files are optional and are not bundled. Without them, ordinary engine AI remains available.
-
-## Reporting problems
-
-Run `support-bundle.bat` on Windows or `support-bundle.sh` on Linux after a crash or stuck seed. Attach the resulting archive, your platform, seed or YAML, and a short description to the [CTR-AP issue tracker](https://github.com/dowlle/ctr-native-ap/issues) or the Crash Team Racing channel in the Archipelago Discord.
-
-## Downloads and verification
-
-Choose one client archive:
-
-- Windows x86: `ctr-archipelago-v0.2.0-alpha6-windows-x86.zip`  
-  SHA-256: `ef70315ac2dd8d588eeed91930c3967901dca1cf5a236531847718be415a1d26`
-- Linux/Steam Deck x86: `ctr-archipelago-v0.2.0-alpha6-linux-x86.tar.gz`  
-  SHA-256: `23873cca784df1a0d85824b1e340ba30e9e482e8bc301bf175369f629a736ca2`
-
-Room generators also need the standalone `ctr.apworld`:  
-SHA-256: `4a2fa41e0095f7b8b3514c412931010f19a01afe14cb46b8b0c183bb0aa2dedf`
-
-The release also includes a generated `Crash.Team.Racing.yaml`, checksum sidecars for every archive and symbol file, and separate Windows/Linux debug-symbol assets for crash analysis. The archives contain their own `MANIFEST.sha256` for verifying extracted files.
-
-Release verification completed against the exact paired source heads: 1,374 apworld tests with one skip, 14,000 successful fuzz generations across ten configurations, clean Windows AP/vanilla and Linux AP builds, and 13 of 13 native seed-verifier profiles reporting `seed OK` and `solo: definitive`.
-
-## What's next
-
-After Alpha6, the 0.2.0 line moves into release-candidate stabilization. General multi-package custom tracks, a full Arcade library and broader custom modes remain post-0.2.0 work.
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.2</id>
-    <title>OpenTTD v2.6.0r2</title>
-    <updated>2026-08-31T13:37:43+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content>Engine-only release — the apworld (2.6.0) and plugin (1.5.1) are unchanged
-from v2.2.1 and are re-attached here so `latest` stays complete.
-
-**The shop**
-- Bought items sink to the bottom; the list opens on what can still be
-  bought instead of a green wall of past purchases.
-- Slots unlock in batches of ten, the first ten are free, and a batch costs
-  its tier number in mission credits (1, 2, 3, ... capped at 100). The far
-  end of a 400-slot shop cost about 400 completed missions before; now 39.
-
-**The task board**
-- Ten active tasks instead of five, and expired tasks vanish and are
-  replaced instead of blocking their slot for a year.
-- Tasks are only offered on industries that actually produced last month,
-  with amounts that fit inside half their output over the deadline — no more
-  8,000-tonne pickups from a bank, or goods from a factory nobody supplies.
-- Passenger tasks pick towns big enough to carry them, and a task counts
-  only the cargo its text names.
-- Note the engine's own rule: pickup is credited when the cargo is finally
-  delivered, not when it is loaded.
-</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.3.3</id>
     <title>NSMBW v0.3.3</title>
@@ -993,8 +833,8 @@ Documentation:&#13;
 ## Internal: &#13;
 - Fixed an issue breaking generation on Linux&#13;
 &#13;
-AP Mod download: https://github.com/SilicDev/YohaneAPMod/releases/tag/v0.0.3&#13;
-Yohane BID mod loader download: https://github.com/SilicDev/YohaneBIDModLoader/releases/tag/v0.0.1</content>
+AP Mod download: https://github.com/SilicDev/YohaneAPMod/releases/tag/v0.0.4&#13;
+Yohane BID mod loader download: https://github.com/SilicDev/YohaneBIDModLoader/releases/tag/v0.0.2</content>
     <link href="https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.4"/>
   </entry>
   <entry>
@@ -1366,7 +1206,7 @@ Known bugs:&#13;
   </entry>
   <entry>
     <id>https://github.com/Nebulea-dev/Archipelago-BlueFire/releases/tag/0.6.0</id>
-    <title>Blue Fire v0.1.0r2</title>
+    <title>Blue Fire v0.1.0r3</title>
     <updated>2026-09-03T12:18:20+00:00</updated>
     <author>
       <name>Nebulea</name>
@@ -1375,6 +1215,18 @@ Known bugs:&#13;
 &#13;
 [FIX] Locations in the firefall river and the steam house have the correct ID</content>
     <link href="https://github.com/Nebulea-dev/Archipelago-BlueFire/releases/tag/0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.34</id>
+    <title>Mental Omega v0.6.1r2</title>
+    <updated>2026-09-03T13:31:53+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Adjust Shopmode with selection for no build missions&#13;
+- Fix Seed Setup&#13;
+- Add Copy seed button (for races or events)</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.34"/>
   </entry>
   <entry>
     <id>https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.13</id>
@@ -1419,5 +1271,81 @@ Known bugs:&#13;
 - The 1.0.13 game plugin and 1.0.13 APWorld should be distributed together.
 </content>
     <link href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.13"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.7</id>
+    <title>Xenoblade X v0.2.7</title>
+    <updated>2026-09-03T17:44:42+00:00</updated>
+    <author>
+      <name>Maragon</name>
+    </author>
+    <author>
+      <name>Nina</name>
+    </author>
+    <content>- Fix ap graphic pack @jackisk98&#13;
+- Add lvl logic support for skells&#13;
+- Add universal tracker support&#13;
+- Improve logic for `The Skell License`</content>
+    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.6.0</id>
+    <title>Refunct v1.6.0</title>
+    <updated>2026-09-03T20:29:59+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content># New apworld and mod (and yaml)!&#13;
+- Added Defunct minigame, drown all platforms and win, but at what cost D:&#13;
+- Added option to warp back to start in block brawl, climb minigames and Defunct. (hold R)&#13;
+- Fixed that the mod would make the game less "red" than it is supposed to be.&#13;
+- Added the map editor and practice menu to the main menu (m). But CTRL+SHIFT+M and CTRL+SHIFT+P also still work.&#13;
+- Removed frogger and beat block test levels, maybe they'll return.</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/tag/0.3.5</id>
+    <title>Resident Evil 2 Remake v0.3.5</title>
+    <updated>2026-09-03T22:22:54+00:00</updated>
+    <author>
+      <name>FuzzyGamesOn</name>
+    </author>
+    <content>**List of updates in this release:**&#13;
+- "Enemy Kills" options renamed to "Killsanity"&#13;
+- Lots of killsanity logic revisions, courtesy of @RopeyRed &#13;
+- YAML options are now grouped into intuitive option groups, courtesy of @AmondoVagyok &#13;
+- Logic revisions with Supplies Storage Room in Sewers, courtesy of @AmondoVagyok </content>
+    <link href="https://github.com/FuzzyGamesOn/RE2R_AP_World/releases/tag/0.3.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.1</id>
+    <title>Haste v0.5.1</title>
+    <updated>2026-09-03T23:24:37+00:00</updated>
+    <author>
+      <name>JXJacob</name>
+    </author>
+    <author>
+      <name>WritingHusky</name>
+    </author>
+    <content>The first revision to the fifth major release of the Haste Archipelago&#13;
+&#13;
+You will need to subscribe to and enable the [Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3462307025) on Steam.&#13;
+&#13;
+&#13;
+## Logic Changes&#13;
+- The Triangular Distribution for Fragmentsanity can **no longer** be enabled with Dynamic Per-Shard Fragmentsanity, due to an emerging concern over seeds taking dozens of hours to finish a single late-game Shard's worth of fragment clears if the scaling was high enough&#13;
+  - Triangular Distribution can still be used with Static Per-Shard and Global Fragmentsanities, and Balanced Triangular is unaffected&#13;
+  - This restriction may be revisited at a later time, due to Triangular being a "landmine" setting that can catastrophically blow up expected seed times with certain combinations of settings&#13;
+  - As an example:&#13;
+    - With the maximum Dynamic Scaling of 200%, there would be **66** checks in Disaster Shard 2 (and onward), and would require **2211 Fragment clears** to attain&#13;
+    - At a *generously* estimated 40 seconds per Fragment, it would roughly **24.5 hours** to complete *just* D2's Fragmentsanity checks&#13;
+    - With the same scaling, Shard 1's 26 checks would take **3.9 hours** to complete&#13;
+    - In total, from Shard 1 to D2, it would take at best ~120 hours to do all of the checks&#13;
+    - **This is an unreasonable ask in basically any scenario**&#13;
+&#13;
+&#13;
+## Bugfixes&#13;
+- Fixed Shopsanity Scaling accidentally using Fragmentsanity Scaling's value in the slot data</content>
+    <link href="https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.1"/>
   </entry>
 </feed>

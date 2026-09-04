@@ -4,7 +4,7 @@ Join Zoe on an adventure in Haste.
 
 
 ## Downloads
-- <a href="https://github.com/WritingHusky/haste_apworld/releases/download/v0.5.0/haste.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/WritingHusky/haste_apworld/releases/download/v0.5.1/haste.apworld">Latest Version (0.5.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

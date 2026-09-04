@@ -164,6 +164,9 @@ In general, you cannot obtain important items through the normal in-game methods
 `The Skell License` for example does only ask for the 8 certificates, you don't have to do any of the proficiency quests.
 When a cutscene would normally activate after you obtain a specific item, you will instead be teleported to the appropriate location if you fulfill the request.
 
+## Universal Tracker
+This apworld does support universal tracker.
+
 ## Tips
 There are many things I could recommend here, but I will try to keep it brief.
 

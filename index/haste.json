@@ -67,6 +67,20 @@
       "title": "v0.5.0",
       "version_simple": "0.5.0",
       "world_version": "0.5.0"
+    },
+    "v0.5.1": {
+      "created_at": "2026-09-03T23:24:37Z",
+      "description": "The first revision to the fifth major release of the Haste Archipelago\r\n\r\nYou will need to subscribe to and enable the [Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3462307025) on Steam.\r\n\r\n\r\n## Logic Changes\r\n- The Triangular Distribution for Fragmentsanity can **no longer** be enabled with Dynamic Per-Shard Fragmentsanity, due to an emerging concern over seeds taking dozens of hours to finish a single late-game Shard's worth of fragment clears if the scaling was high enough\r\n  - Triangular Distribution can still be used with Static Per-Shard and Global Fragmentsanities, and Balanced Triangular is unaffected\r\n  - This restriction may be revisited at a later time, due to Triangular being a \"landmine\" setting that can catastrophically blow up expected seed times with certain combinations of settings\r\n  - As an example:\r\n    - With the maximum Dynamic Scaling of 200%, there would be **66** checks in Disaster Shard 2 (and onward), and would require **2211 Fragment clears** to attain\r\n    - At a *generously* estimated 40 seconds per Fragment, it would roughly **24.5 hours** to complete *just* D2's Fragmentsanity checks\r\n    - With the same scaling, Shard 1's 26 checks would take **3.9 hours** to complete\r\n    - In total, from Shard 1 to D2, it would take at best ~120 hours to do all of the checks\r\n    - **This is an unreasonable ask in basically any scenario**\r\n\r\n\r\n## Bugfixes\r\n- Fixed Shopsanity Scaling accidentally using Fragmentsanity Scaling's value in the slot data",
+      "download_url": "https://github.com/WritingHusky/haste_apworld/releases/download/v0.5.1/haste.apworld",
+      "has_manifest": true,
+      "hash_sha256": "93a753072917937ab24592fb4a50ed95122b6c18422f9cd08cc22739b1134d6a",
+      "html_url": "https://github.com/WritingHusky/haste_apworld/releases/tag/v0.5.1",
+      "size": 34940,
+      "source_url": "https://api.github.com/repos/WritingHusky/haste_apworld",
+      "tag": "v0.5.1",
+      "title": "v0.5.1",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1"
     }
   }
 }
