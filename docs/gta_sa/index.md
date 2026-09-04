@@ -6,7 +6,7 @@ Framed by corrupt cops, CJ travels across a massive fictional state to rebuild h
 
 
 ## Downloads
-- <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.1/gta_sa.apworld">Latest Version (0.8.1)</a>
+- <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld">Latest Version (0.8.1r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

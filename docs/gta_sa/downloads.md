@@ -1,9 +1,12 @@
 # Grand Theft Auto: San Andreas
 
 ## Latest
-- <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.1/gta_sa.apworld">Latest Version (0.8.1)</a>
+- <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld">Latest Version (0.8.1r2)</a>
 
 ## All Versions
+
+#### v0.8.1r2
+- <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld</a>
 
 #### v0.8.1
 - <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.1/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.1/gta_sa.apworld</a>
