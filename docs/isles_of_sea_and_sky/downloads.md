@@ -17,6 +17,9 @@
 #### v14
 - <a href="https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases/download/v0_0_14/isles_of_sea_and_sky.apworld">https://github.com/Kim-Delicious/Archipelago_IslesOfSeaAndSky/releases/download/v0_0_14/isles_of_sea_and_sky.apworld</a>
 
+#### v2.0.3
+- <a href="https://github.com/cuberyl-catastrophe/Archipelago/releases/download/iosas-ap-v2.1.0b/isles_of_sea_and_sky.apworld">https://github.com/cuberyl-catastrophe/Archipelago/releases/download/iosas-ap-v2.1.0b/isles_of_sea_and_sky.apworld</a>
+
 #### v2.0.3b0
 - <a href="https://github.com/cuberyl-catastrophe/Archipelago/releases/download/iosas-ap-v2.0.3b/isles_of_sea_and_sky.apworld">https://github.com/cuberyl-catastrophe/Archipelago/releases/download/iosas-ap-v2.0.3b/isles_of_sea_and_sky.apworld</a>
 

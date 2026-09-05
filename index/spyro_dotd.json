@@ -1,6 +1,7 @@
 {
   "authors": [
-    "IcyPenguin_"
+    "IcyPenguin_",
+    "Dragonsoul5000"
   ],
   "description": "The Legend of Spyro: Dawn of the Dragon is a 3D action-adventure game and the final installment of\nThe Legend of Spyro trilogy of games. Players control Spyro or Cynder to explore vast areas and collect items\nthat allow each dragon to get stronger.",
   "flags": [],
@@ -76,6 +77,22 @@
       "title": "ver. 0.1.1",
       "version_simple": "0.1.0",
       "world_version": "0.1.0r2"
+    },
+    "0.2.0": {
+      "created_at": "2026-09-05T03:50:52Z",
+      "description": "## Additions:\r\n- Elements can now be shuffled into the item pool (excluding Fire and Poison, which the game selects on level load by default)\r\n- Added options to handle how elements are added to the item pool for both Spyro and Cynder\r\n- The ability to climb walls can now be shuffled into the item pool\r\n- The ability to run on walls can now be shuffled into the item pool\r\n- Elite enemy mask elements can now be randomized\r\n- Objectives are now location checks\r\n- The client now has a new icon courtesy of wheezingteapot\r\n## Changes:\r\n- Health Gem S/Mana Gem S items have been renamed to Small Health Gem/Small Mana Gem\r\n- All instances of the French \"Remparts\" in the location names have been changed to the English \"Ramparts\"\r\n## Fixes:\r\n- Issues with Death Link's implementation have been fixed.\r\n- Small Health Gems and Small Mana Gems are now clamped to Spyro's and Cynder's respective current maximum capacties for those resources.\r\n- Catacombs lock/unlock state is not reset by accident after pressing New Game/Load Game\r\n- Reconnecting to the multiworld no longer gives excess EXP from out of nowhere\r\n## Known Bugs:\r\n- Patches are lost when rebooting the game (#14)\r\n- Client always writes patches and items to memory when connecting to Archipelago regardless of game version (#13)",
+      "download_url": "https://github.com/IcyPenguin28/DotDAP/releases/download/0.2.0/spyro_dotd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e21127a72f1cabd4d5cb10d0176f054d1d03ebb63aaa9254673341e16b64e7b0",
+      "html_url": "https://github.com/IcyPenguin28/DotDAP/releases/tag/0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 117376,
+      "source_url": "https://api.github.com/repos/IcyPenguin28/DotDAP",
+      "tag": "0.2.0",
+      "title": "ver. 0.2.0 - The Elemental Update",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }

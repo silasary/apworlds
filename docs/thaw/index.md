@@ -1,6 +1,6 @@
 # Tony Hawk&#x27;s American Wasteland
 
-
+Tony Hawk&#x27;s American Wasteland is an open world skateboarding game developed by Neversoft. It&#x27;s pretty rad.
 
 
 ## Downloads
