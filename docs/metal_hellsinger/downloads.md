@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/download/1.1.1/metal_hellsinger.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/download/1.1.2/metal_hellsinger.apworld">Latest Version (1.1.2)</a>
 
 ## All Versions
+
+#### v1.1.2
+- <a href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/download/1.1.2/metal_hellsinger.apworld">https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/download/1.1.2/metal_hellsinger.apworld</a>
 
 #### v1.1.1
 - <a href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/download/1.1.1/metal_hellsinger.apworld">https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/download/1.1.1/metal_hellsinger.apworld</a>

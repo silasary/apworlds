@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "TheNouillet"
+  ],
   "description": "Fly into a charming handcrafted world and go on an adventure that mixes up open exploration with crispy twin-stick shooter action. Fight your way from the shiny overworld to the deepest caves, improve your ship and overcome the dungeons' bosses to rescue your friends!",
   "game": "Minishoot Adventures",
   "github": "https://github.com/TheNooodle/MinishootRandomizer",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.3.0-rc1": {
       "created_at": "2025-01-12T20:13:23Z",
@@ -227,6 +234,21 @@
       "title": "v0.5.2",
       "version_simple": "0.5.2",
       "world_version": "0.5.2"
+    },
+    "v0.6.0": {
+      "created_at": "2026-09-05T09:10:41Z",
+      "description": "## [0.6.0] - 2026-09-05\r\n\r\n### Added\r\n\r\n- A new setting called \"Split Surf\" has been added.\r\n    - When enabled, each water type requires its own Surf item to be navigable.\r\n    - When disabled, the normal Surf item unlocks navigation on all water types.\r\n    - Will replace Surf and 4 filler items.\r\n    - Water types are: Normal, Blue, Soiled, Dungeon and Gold.\r\n    - Logic has been adjusted to accomodate this new setting.\r\n    - Each surf items will be visible in the inventory.\r\n- A new setting called \"Split Supershot\" has been added.\r\n    - When enabled, the Supershot is broken down into 2 distinct items.\r\n    - Blastshot allows you to break rocks and walls.\r\n    - Flameshot allows you to light torches.\r\n    - Having one these two items will unlock Supershot for combat usage.\r\n    - When enabled, Supershot and one filler item will be replaced.\r\n    - Logic has been adjusted to accomodate this new setting.\r\n    - Both of these items will be visible in the inventory.\r\n- A new setting called \"Primordial Crystal Activation Threshold\" has been added.\r\n    - Set the Primordial Crystal activation threshold.\r\n    - If your current HP percentage is greater than or equal to this value and you have the Primordial Crystal, it will activate.\r\n    - This allows for more flexibility in the use of the Primordial Crystal, especially in combination with the \"Enable Primordial Crystal Logic\" option.\r\n    - This option does not affect logic. The value must be between 10 and 100.\r\n- A new setting called \"Progressive Boost\" has been added.\r\n    - When enabled, the game will fuse the Boost and the Advanced Energy module into two cumulative progressive upgrades.\r\n    - The first upgrade will always allow you to boost, and the second will reduce the energy cost of boosting.\r\n    - Note that both instances of Progressive Boost are marked as \"Progression\", although the second upgrade does not unlock any location.\r\n- A new setting called \"Progressive Powers\" has been added.\r\n    - When enabled, the game will fuse all powers and the corresponding idols into two cumulative progressive upgrades.\r\n    - The first upgrade will always allow you to use the corresponding power, and the second will grant you the idol's effect.\r\n    - Note that both instances of Progressive Power of protection are marked as \"Progression\", although the second upgrade does not unlock any location.\r\n- The APWorld now has a manifest.\r\n\r\n### Changed\r\n\r\n- **IMPORTANT** Some settings and location names have been renamed. See [docs/dev/history/0-6-0-renames.md](docs/dev/history/0-6-0-renames.md) for the full list.\r\n    - This means that you must change your YAML settings file for Archipelago. Refer to the file above for the replacements.\r\n- Fixed \"Dungeon 3 - Behind North West doors\" logic : now properly check for a way to use springboards\r\n    - Necessary to unlock the door to said location.\r\n- All shop locations requiring Super Crystals are now locked behind the same conditions as clearing Dungeon 5.\r\n    - As of now, there is no guarantee to have a sufficient amount of Super Crystals to buy the items you need.\r\n    - This is temporary, as work on this very subject will begin soon-ish.\r\n- When the goal is set to \"Spirit Tower\", the Golden Crystal Heart will now replace a filler item, instead of an Ancient Tablet.\r\n\r\n### Known issues\r\n\r\n- Rarely, when hovering between a piece of land and a piece of water, Minishoot can fall.",
+      "download_url": "https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.0/minishoot.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d82f11af2f3952824b25582431b02fce1eca87e5b718cbc0f479ea374182f25f",
+      "html_url": "https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 36565,
+      "source_url": "https://api.github.com/repos/TheNooodle/MinishootRandomizer",
+      "tag": "v0.6.0",
+      "title": "v0.6.0",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0"
     }
   }
 }

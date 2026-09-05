@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/download/1.1.1/metal_hellsinger.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/download/1.1.2/metal_hellsinger.apworld">Latest Version (1.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

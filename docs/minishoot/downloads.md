@@ -1,9 +1,12 @@
 # Minishoot Adventures
 
 ## Latest
-- <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.5.2/minishoot.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.0/minishoot.apworld">Latest Version (0.6.0)</a>
 
 ## All Versions
+
+#### v0.6.0
+- <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.0/minishoot.apworld">https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.0/minishoot.apworld</a>
 
 #### v0.5.2
 - <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.5.2/minishoot.apworld">https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.5.2/minishoot.apworld</a>

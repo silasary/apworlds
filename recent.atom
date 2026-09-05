@@ -2,210 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-05T06:22:05.986234+00:00</updated>
+  <updated>2026-09-05T12:15:37.304231+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.2.0</id>
-    <title>Final Fantasy XIII-2 v0.1.3r2</title>
-    <updated>2026-09-01T20:35:27+00:00</updated>
+    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.1.4</id>
+    <title>Final Fantasy VIII v0.1.4</title>
+    <updated>2026-09-02T14:38:14+00:00</updated>
     <author>
-      <name>MLSTRM</name>
+      <name>ff8_arch</name>
     </author>
-    <content>Mostly a stabilisation pass to resolve reported issues. Requires the newest available FFModdingWPF Release for compatibility (0.8.2.53+)&#13;
-https://github.com/Bartz24/FFModdingWPF/releases/tag/pre-release-0.8&#13;
-&#13;
-AP fixes:&#13;
-Fix debug log prefix to actually say FF13-2 now to reduce confusion&#13;
-&#13;
-Associated core rando fixes:&#13;
-Correct issues with double time duration option on clock puzzles&#13;
-Add DLC check to generation of an AP modpack to prevent misconfiguration&#13;
-Script adjustments to ensure that Thorne's Information check can always be obtained even if the associated quest is handed in first&#13;
-Script adjustments to force that the Archylte sheep are interacted with before allowing the quest to be completed (preventing the checks becoming missable)&#13;
-&#13;
-Specific check logic fixes:&#13;
-Correct Yaschas 10 raised area logic&#13;
-Correct Archylte Grave Ridge (now correctly allows just chocobo access as an access possibility)&#13;
-Yaschas 1X -&gt; Serendipity area exit now correctly expects a Mog Level&#13;
-Bresha Ruins 5AF Locked Inside mog levels corrected</content>
-    <link href="https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.33</id>
-    <title>Mental Omega v0.6.1r3</title>
-    <updated>2026-09-01T20:50:18+00:00</updated>
-    <author>
-      <name>Mental Omega Randomizer contributors</name>
-    </author>
-    <content>- Fix shopmode first unit upgrade selection&#13;
-- Fix A Withershins enemy unit buff, makes the mission impossible.&#13;
-- Fix small screensizes for shopmode&#13;
-- Fix Stalin fists cannot produce units&#13;
-- Fix Gearchange in Happy Birthday and Exists to Exit&#13;
-- Fix Advance filtering in combination with Tier 1 unlocks settings&#13;
-- Add Tier 1 Naval unit in settings aswell</content>
-    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.33"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SergeAzel/Archipelago_PDTB/releases/tag/paquerette_down_the_bunburrows-0.2.0</id>
-    <title>Paquerette Down The Bunburrows v0.2.0.post2</title>
-    <updated>2026-09-01T21:33:51+00:00</updated>
-    <author>
-      <name>SergeAzel</name>
-    </author>
-    <content/>
-    <link href="https://github.com/SergeAzel/Archipelago_PDTB/releases/tag/paquerette_down_the_bunburrows-0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.13.0</id>
-    <title>Slime Rancher 2 v0.13.0</title>
-    <updated>2026-09-01T22:20:51+00:00</updated>
-    <author>
-      <name>Rhelys</name>
-    </author>
-    <content>## New Features&#13;
-- New Goal option: Prisma Shard Hunt&#13;
-  - General purpose MacGuffin hunt goal option - Collect the desired number of Prisma Shards and then clear the Prismacore encounter to win&#13;
-  - For the Prismacore encounter, all Harmonizers will automatically activate to accelerate your trip to the end of the game. You'll still need the Water Tank to beat the fight.&#13;
-- New Settings:&#13;
-  - `randomize_fabricator` - Allows you to turn off Fabricator location checks and make the upgrades vanilla&#13;
-  - `randomize_shadow_doors` - Either adds Shadow Plort doors/dispensers to the pool with the `locations` option or eliminates them entirely with the `disabled` option&#13;
-  - `shadow_plort_requirement` - Modifies the amount of shadow plorts needed for doors/dispensers to speed up (or slow down) progress through the Grey Labyrinth&#13;
-  - `item_notifications` - Allows you to customize what incoming items pop up on the in-game UI&#13;
-&#13;
-## Quality of Life&#13;
-- In-Game UI notifications on incoming items - Now it's easier to see when you get important items!&#13;
-&lt;img width="875" height="492" alt="image" src="https://github.com/user-attachments/assets/d8f8e585-9570-4b0a-97e9-b8ac1eca7e24" /&gt;&#13;
-&#13;
-- Added clearer messaging and teleport guardrails if you find yourself in the wrong zone or in a softlocked position post-teleport&#13;
- &#13;
-## Logic Fixes&#13;
-- Flutter and Puddle Slimes now correctly require the Jetpack to access&#13;
-  - This also applies to their plorts and radiant variants&#13;
-- Fixed region access requirements for Treasure Pods in Rainbow Fields that required activating the 2nd teleporters in Ember Valley and Starlight Strand&#13;
-- Correctly classified the `Progressive Water Tank` as a Progression item&#13;
-&#13;
-## Bug Fixes&#13;
-- Refactored how offline checks/progress/repairs work&#13;
-  - This should address situations where being disconnected from the AP server would leave games in a desynced state between client and server when it comes to upgrades. It also makes offline progress still work from a check perspective, but items won't be granted until reconnection.&#13;
-  - Upgrades will now persist locally, meaning progress can still be made even if you're unable to connect to the server when loading the save file</content>
-    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.13.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03j</id>
-    <title>Cuphead v0.2.20020910</title>
-    <updated>2026-09-02T01:05:12+00:00</updated>
-    <author>
-      <name>JKLeckr</name>
-    </author>
-    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
-&#13;
-_Note: You need at least client version **alpha03h** or newer to be able to take advantage of this revision's enhancements._&#13;
-&#13;
-### Revision&#13;
-&#13;
-This revision adds an option to allow P. Sugar to be used in King's Leap. Logic is also adjusted for King's Leap in terms of P. Sugar.&#13;
-</content>
-    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03j"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.3.1</id>
-    <title>Pokemon Pinball Ruby &amp; Sapphire v0.3.1</title>
-    <updated>2026-09-02T02:16:58+00:00</updated>
-    <author>
-      <name>Silvris</name>
-    </author>
-    <content># New Features&#13;
-* 24/7 Shops&#13;
-  * When received, shops no longer close after buying from them.&#13;
-* Start Inventory from Pool support&#13;
-* Shop and Roulette checks now support collect behavior&#13;
-* Shop checks now visibly display when all have been sent for a certain type, and refuse purchase of any more.&#13;
-&#13;
-# Other Changes&#13;
-* The game will now deprioritize Pokémon that are in your current party when creating weights for Catch'em/Hatch modes.&#13;
-* The "Out of Stock" graphic will now display over the Whiscash/Pelipper shop item if they have not been received.&#13;
-&#13;
-# Bug Fixes&#13;
-* Fixed DeathLinks being sent with DeathLink disabled&#13;
-* Fixed a crash caused by purchasing the Whiscash/Pelipper minigame option.&#13;
-* Fixed AP shop items always costing the initial price on Sapphire Board.&#13;
-* Fixed Whiscash being unable to spawn naturally.&#13;
-* Fixed being able to DexNav basically any egg without the required Egg Bunch.&#13;
-* Fixed the Travel graphic being pure white if the Shop was left in AP mode.&#13;
-* Fixed roulette checks checking the wrong value to tell if they should stop appearing.&#13;
-* Fixed text display for receiving an item from start inventory/cheat console.&#13;
-* Fixed a missing sfx when moving over the Get Arrow on the Ruby Board.</content>
-    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.8</id>
-    <title>Flipwitch Forbidden Sex Hex v1.1.8</title>
-    <updated>2026-09-02T03:29:13+00:00</updated>
-    <author>
-      <name>Witchybun</name>
-    </author>
-    <content>Bugfix:&#13;
-- Fixes logic surrounding Lava Jump Top some more.&#13;
-&#13;
-Documentation:&#13;
-- Added a link to the apworld source code in the readme, for transparency.</content>
-    <link href="https://github.com/Witchybun/FlipwitchAPClient/releases/tag/1.1.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.4</id>
-    <title>Schedule I v3.6.4</title>
-    <updated>2026-09-02T03:59:53+00:00</updated>
-    <author>
-      <name>MacH8s</name>
-    </author>
-    <content>### Refactored rule setting to check for people unlock vs other unlock.&#13;
-### Combined customers dealers and suppliers when setting rules. Issue was that the condition was OR'd with level unlocks, causing level unlocks alone to be able to unlock sampling, when it needed to be AND'd with a relation unlock.&#13;
-&#13;
-### Fixed cash for trash checks always being in the same region, mixing mania.&#13;
-&#13;
-### Refactor recipe unlock logic to use consistent naming for Mixing Station Mk2 and improve option condition checks&#13;
-&#13;
-### Fixed cash for trash checks always being in the sam eregion, mixing mania.&#13;
-&#13;
-### Refactor recipe unlock logic to use consistent naming for Mixing Station Mk2 and improve option condition checks</content>
-    <link href="https://github.com/MacH8s/Narcopelago/releases/tag/v3.6.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.1</id>
-    <title>Grand Theft Auto: San Andreas v0.8.1</title>
-    <updated>2026-09-02T12:16:41+00:00</updated>
-    <author>
-      <name>awaken</name>
-    </author>
-    <content>## Fixed:&#13;
-- Fixed `.asi` not receiving the world seed from GTA SA Client if Universal Tracker isn't installed.</content>
-    <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.4</id>
-    <title>YOHANE THE PARHELION -BLAZE in the DEEPBLUE- v0.2.4</title>
-    <updated>2026-09-02T13:36:38+00:00</updated>
-    <author>
-      <name>SilicDev</name>
-    </author>
-    <content># Hard and easy logic logic &#13;
-**Full Changelog**: https://github.com/SilicDev/Archipelago/compare/yohane_bitdb-v0.2.3...yohane_bitdb-v0.2.4&#13;
-&#13;
-## Changes&#13;
-- Added Fashion for Dummies as requirement for Infernal Altar and Sunken Volcano bosses on easy logic&#13;
-- Implemented an early version of hard logic, enabling damage boosting as a logically required step and force enabling you skips&#13;
-- Adjusted the death and damagelink messages&#13;
-&#13;
-## Internal: &#13;
-- Fixed an issue breaking generation on Linux&#13;
-&#13;
-AP Mod download: https://github.com/SilicDev/YohaneAPMod/releases/tag/v0.0.4&#13;
-Yohane BID mod loader download: https://github.com/SilicDev/YohaneBIDModLoader/releases/tag/v0.0.2</content>
-    <link href="https://github.com/SilicDev/Archipelago/releases/tag/yohane_bitdb-v0.2.4"/>
+    <content>## Install
+
+1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
+2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
+
+Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
+
+
+**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.1.3...v0.1.4</content>
+    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.1.4"/>
   </entry>
   <entry>
     <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.02</id>
@@ -600,7 +418,7 @@ Known bugs:&#13;
   </entry>
   <entry>
     <id>https://github.com/Nebulea-dev/Archipelago-BlueFire/releases/tag/0.6.0</id>
-    <title>Blue Fire v0.1.0r2</title>
+    <title>Blue Fire v0.1.0r3</title>
     <updated>2026-09-03T12:18:20+00:00</updated>
     <author>
       <name>Nebulea</name>
@@ -621,6 +439,42 @@ Known bugs:&#13;
 - Fix Seed Setup&#13;
 - Add Copy seed button (for races or events)</content>
     <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.34"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.2.0</id>
+    <title>Final Fantasy VIII v0.2.0</title>
+    <updated>2026-09-03T15:49:19+00:00</updated>
+    <author>
+      <name>ff8_arch</name>
+    </author>
+    <content>## Install
+
+1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
+2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
+
+Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
+
+
+**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.1.4...v0.2.0</content>
+    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.2.1</id>
+    <title>Final Fantasy VIII v0.2.1</title>
+    <updated>2026-09-03T16:15:32+00:00</updated>
+    <author>
+      <name>ff8_arch</name>
+    </author>
+    <content>## Install
+
+1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
+2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
+
+Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
+
+
+**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.2.0...v0.2.1</content>
+    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.2.1"/>
   </entry>
   <entry>
     <id>https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.13</id>
@@ -665,6 +519,37 @@ Known bugs:&#13;
 - The 1.0.13 game plugin and 1.0.13 APWorld should be distributed together.
 </content>
     <link href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.13"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.3.0</id>
+    <title>Final Fantasy VIII v0.3.0</title>
+    <updated>2026-09-03T17:28:16+00:00</updated>
+    <author>
+      <name>ff8_arch</name>
+    </author>
+    <content>## Install
+
+1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
+2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
+3. Optional: `ff8_visual_tracker.zip` is a map preset for the Archipelago Visual Tracker — see below.
+
+### Visual Tracker (new)
+
+`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) client. To use it:
+
+1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
+2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
+3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
+
+Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
+
+Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
+
+
+**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.2.1...v0.3.0
+
+</content>
+    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.3.0"/>
   </entry>
   <entry>
     <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.7</id>
@@ -969,7 +854,7 @@ If you had this issue on 0.8.1, you can change only the `.asi` and the mod will 
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.10</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r3</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
     <updated>2026-09-04T18:27:53+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1044,9 +929,127 @@ Fixes:&#13;
     <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.2.0-TEST"/>
   </entry>
   <entry>
+    <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2</id>
+    <title>Final Fantasy 1 PSP v0.2.2</title>
+    <updated>2026-09-04T23:01:40+00:00</updated>
+    <author>
+      <name>1-800-thewolf</name>
+    </author>
+    <content>## New World-Changing Items&#13;
+&#13;
+&lt;img width="479" height="468" alt="image" src="https://github.com/user-attachments/assets/90c907e7-9de8-4cfb-af44-7989e866cf47" /&gt;&#13;
+&#13;
+- Lufenia Bridge&#13;
+- Lufenia Nitro Powder&#13;
+- Gaia Nitro Powder&#13;
+- Mount Gulg Entrance Key&#13;
+&#13;
+&lt;img width="600" height="340" alt="Lufenia Bridge" src="https://github.com/user-attachments/assets/59e0184e-1fa6-48ca-8664-10ed7f039c4c" /&gt;&#13;
+&#13;
+&gt; Lufenia Bridge Links Northern Provoka to Lufenia&#13;
+&#13;
+&lt;img width="600" height="340" alt="Lufenia Nitro Powder" src="https://github.com/user-attachments/assets/61452caa-a858-4960-983d-c87d5e73e93a" /&gt;&#13;
+&#13;
+&gt; Lufenia Nitro Powder Creates a path from Lufenia to Gaia&#13;
+&#13;
+&lt;img width="600" height="340" alt="Gaia Nitro Powder" src="https://github.com/user-attachments/assets/27cc67d2-4019-4e1a-a17a-866a17a62974" /&gt;&#13;
+&#13;
+&gt; Gaia Nitro Powder Connects Gaia to Mirage Tower&#13;
+&#13;
+&lt;img width="600" height="340" alt="Foot Trail Demo" src="https://github.com/user-attachments/assets/ab5db50d-ea86-4773-ad54-c78be9a67269" /&gt;&#13;
+&#13;
+&gt; With all three, you can walk from Provoka all the way to Gaia or Mirage Tower&#13;
+&#13;
+&#13;
+&lt;img width="368" height="276" alt="image" src="https://github.com/user-attachments/assets/aabae848-4c3f-4e17-966e-800b49efd37d" /&gt;&#13;
+&#13;
+&gt; Also an option to lock Mount Gulg until you find the Mount Gulg Key&#13;
+&#13;
+## Better Client Messages&#13;
+- I had a lot of debug messages in the ap client window previously, but that's significantly cleaned up now.&#13;
+- Now the ap client actually says useful information for you (imagine that)!&#13;
+&#13;
+## Bugfixes&#13;
+- Rare game crash related to missing party members&#13;
+- Rare graphical bug with missing party members making it look like they've already learned a spell&#13;
+- Other improvements and bugfixes&#13;
+&#13;
+---&#13;
+&#13;
+👍🏻 Fully compatible with existing v0.2.0 seeds. Please upgrade mid-run for a better experience.</content>
+    <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04</id>
+    <title>Northgard v2026.9.4</title>
+    <updated>2026-09-05T00:07:37+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Fixed
+- Non-Linear Mode: the `chapter7_requirement` option was enforced only by the client against real in-game battle wins, invisible to Archipelago's own logic. Fill could freely place one of the other Chapters' own unlock items inside a Chapter 07 location, creating an unwinnable seed the client would never let you escape. Chapter 07's region is now also gated in logic on holding enough of the other Chapters' items, matching the client's count (Chapter 01's precollected item counts toward the requirement, same as in-game).
+
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.02...2026.09.04</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04"/>
+  </entry>
+  <entry>
+    <id>https://github.com/IcyPenguin28/DotDAP/releases/tag/0.2.0</id>
+    <title>The Legend of Spyro: Dawn of the Dragon v0.2.0</title>
+    <updated>2026-09-05T03:50:52+00:00</updated>
+    <author>
+      <name>IcyPenguin_</name>
+    </author>
+    <author>
+      <name>Dragonsoul5000</name>
+    </author>
+    <content>## Additions:&#13;
+- Elements can now be shuffled into the item pool (excluding Fire and Poison, which the game selects on level load by default)&#13;
+- Added options to handle how elements are added to the item pool for both Spyro and Cynder&#13;
+- The ability to climb walls can now be shuffled into the item pool&#13;
+- The ability to run on walls can now be shuffled into the item pool&#13;
+- Elite enemy mask elements can now be randomized&#13;
+- Objectives are now location checks&#13;
+- The client now has a new icon courtesy of wheezingteapot&#13;
+## Changes:&#13;
+- Health Gem S/Mana Gem S items have been renamed to Small Health Gem/Small Mana Gem&#13;
+- All instances of the French "Remparts" in the location names have been changed to the English "Ramparts"&#13;
+## Fixes:&#13;
+- Issues with Death Link's implementation have been fixed.&#13;
+- Small Health Gems and Small Mana Gems are now clamped to Spyro's and Cynder's respective current maximum capacties for those resources.&#13;
+- Catacombs lock/unlock state is not reset by accident after pressing New Game/Load Game&#13;
+- Reconnecting to the multiworld no longer gives excess EXP from out of nowhere&#13;
+## Known Bugs:&#13;
+- Patches are lost when rebooting the game (#14)&#13;
+- Client always writes patches and items to memory when connecting to Archipelago regardless of game version (#13)</content>
+    <link href="https://github.com/IcyPenguin28/DotDAP/releases/tag/0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-102</id>
+    <title>Borderlands The Pre-Sequel v102</title>
+    <updated>2026-09-05T06:20:48+00:00</updated>
+    <author>
+      <name>EdricY</name>
+    </author>
+    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
+Good luck out there, Slab!&#13;
+&#13;
+setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
+&#13;
+[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
+&#13;
+new stuff (since 0.5.5):&#13;
+- skip generic pizza spawn if check has been received&#13;
+- new travel targets at Hunter's Grotto Lodge and Windshear Start&#13;
+- new ramps to make DLCs more completable without jump&#13;
+- big reordering of checks&#13;
+- fully unlocked mode setting&#13;
+- base game story quests in fully unlocked mode</content>
+    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-102"/>
+  </entry>
+  <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.11.0r3</title>
-    <updated>2026-09-04T22:41:04+00:00</updated>
+    <title>Team Fortress 2 Mann vs Machine v1.11.0r2</title>
+    <updated>2026-09-05T07:30:36+00:00</updated>
     <author>
       <name>mathis</name>
     </author>
@@ -1054,7 +1057,7 @@ Fixes:&#13;
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `7b738a8ece0e69df4bd0645129b3a2ee5dc1b928`.
+Built from `9c8ea997b8997fe37fe20872df486221440d145b`.
 
 ## Downloads
 
@@ -1063,6 +1066,27 @@ Built from `7b738a8ece0e69df4bd0645129b3a2ee5dc1b928`.
 
 ## Since v1.10.0
 
+- chore(beads): Cowser's bundle and the crossbow fanout note
+- fix(fastdl): a quarter of an hour per download, and a test token that reads as fake
+- chore(beads): close the unlocks tab
+- feat(launcher): an Unlocks tab, in the window and the terminal
+- fix(server): the download address does not decide whether we serve
+- feat(server): serve maps over HTTP from the machine running the server
+- chore(beads): tonight's closes
+- test(integration): the resume lives on the missions response
+- fix(ci): the nightly and release builds pass the SigMod pin to the srcds image
+- fix(plugin): resolve the hit's weapon before the catalog lookup
+- test(integration): the bridge remembers where the team is, across a restart
+- chore(deps): golangci-lint v2.13.2, ruff 0.16.6, SourceMod git7253, Metamod git1226
+- docs: the stack plays a room that exists, and make seed is only for people without one
+- feat(apworld): a community_missions switch for the whole pool
+- chore(beads): close the beads fixed tonight
+- fix(plugin): a locked slot strips the wearable in it
+- fix(plugin): self-inflicted blast damage honours the run's buffs
+- feat(community): let a mission require a server mod
+- build(bots): defender mod v0.12.1
+- fix(buffs): take the sheet's cuts, and über on hit goes nowhere
+- fix(bridge): a version 3 state file without played takes its checks as played
 - fix(plugin): bleed lands once per enemy and melee fire rate stops at +50%
 - fix(buffs): three cuts to the pool from Kelly's issues
 - fix(bridge): ask for the item names one game at a time, and only once
@@ -1203,98 +1227,102 @@ Built from `7b738a8ece0e69df4bd0645129b3a2ee5dc1b928`.
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
   <entry>
-    <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2</id>
-    <title>Final Fantasy 1 PSP v0.2.2</title>
-    <updated>2026-09-04T23:01:40+00:00</updated>
+    <id>https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.0</id>
+    <title>Minishoot Adventures v0.6.0</title>
+    <updated>2026-09-05T09:10:41+00:00</updated>
     <author>
-      <name>1-800-thewolf</name>
+      <name>TheNouillet</name>
     </author>
-    <content>## New World-Changing Items&#13;
+    <content>## [0.6.0] - 2026-09-05&#13;
 &#13;
-&lt;img width="479" height="468" alt="image" src="https://github.com/user-attachments/assets/90c907e7-9de8-4cfb-af44-7989e866cf47" /&gt;&#13;
+### Added&#13;
 &#13;
-- Lufenia Bridge&#13;
-- Lufenia Nitro Powder&#13;
-- Gaia Nitro Powder&#13;
-- Mount Gulg Entrance Key&#13;
+- A new setting called "Split Surf" has been added.&#13;
+    - When enabled, each water type requires its own Surf item to be navigable.&#13;
+    - When disabled, the normal Surf item unlocks navigation on all water types.&#13;
+    - Will replace Surf and 4 filler items.&#13;
+    - Water types are: Normal, Blue, Soiled, Dungeon and Gold.&#13;
+    - Logic has been adjusted to accomodate this new setting.&#13;
+    - Each surf items will be visible in the inventory.&#13;
+- A new setting called "Split Supershot" has been added.&#13;
+    - When enabled, the Supershot is broken down into 2 distinct items.&#13;
+    - Blastshot allows you to break rocks and walls.&#13;
+    - Flameshot allows you to light torches.&#13;
+    - Having one these two items will unlock Supershot for combat usage.&#13;
+    - When enabled, Supershot and one filler item will be replaced.&#13;
+    - Logic has been adjusted to accomodate this new setting.&#13;
+    - Both of these items will be visible in the inventory.&#13;
+- A new setting called "Primordial Crystal Activation Threshold" has been added.&#13;
+    - Set the Primordial Crystal activation threshold.&#13;
+    - If your current HP percentage is greater than or equal to this value and you have the Primordial Crystal, it will activate.&#13;
+    - This allows for more flexibility in the use of the Primordial Crystal, especially in combination with the "Enable Primordial Crystal Logic" option.&#13;
+    - This option does not affect logic. The value must be between 10 and 100.&#13;
+- A new setting called "Progressive Boost" has been added.&#13;
+    - When enabled, the game will fuse the Boost and the Advanced Energy module into two cumulative progressive upgrades.&#13;
+    - The first upgrade will always allow you to boost, and the second will reduce the energy cost of boosting.&#13;
+    - Note that both instances of Progressive Boost are marked as "Progression", although the second upgrade does not unlock any location.&#13;
+- A new setting called "Progressive Powers" has been added.&#13;
+    - When enabled, the game will fuse all powers and the corresponding idols into two cumulative progressive upgrades.&#13;
+    - The first upgrade will always allow you to use the corresponding power, and the second will grant you the idol's effect.&#13;
+    - Note that both instances of Progressive Power of protection are marked as "Progression", although the second upgrade does not unlock any location.&#13;
+- The APWorld now has a manifest.&#13;
 &#13;
-&lt;img width="600" height="340" alt="Lufenia Bridge" src="https://github.com/user-attachments/assets/59e0184e-1fa6-48ca-8664-10ed7f039c4c" /&gt;&#13;
+### Changed&#13;
 &#13;
-&gt; Lufenia Bridge Links Northern Provoka to Lufenia&#13;
+- **IMPORTANT** Some settings and location names have been renamed. See [docs/dev/history/0-6-0-renames.md](docs/dev/history/0-6-0-renames.md) for the full list.&#13;
+    - This means that you must change your YAML settings file for Archipelago. Refer to the file above for the replacements.&#13;
+- Fixed "Dungeon 3 - Behind North West doors" logic : now properly check for a way to use springboards&#13;
+    - Necessary to unlock the door to said location.&#13;
+- All shop locations requiring Super Crystals are now locked behind the same conditions as clearing Dungeon 5.&#13;
+    - As of now, there is no guarantee to have a sufficient amount of Super Crystals to buy the items you need.&#13;
+    - This is temporary, as work on this very subject will begin soon-ish.&#13;
+- When the goal is set to "Spirit Tower", the Golden Crystal Heart will now replace a filler item, instead of an Ancient Tablet.&#13;
 &#13;
-&lt;img width="600" height="340" alt="Lufenia Nitro Powder" src="https://github.com/user-attachments/assets/61452caa-a858-4960-983d-c87d5e73e93a" /&gt;&#13;
+### Known issues&#13;
 &#13;
-&gt; Lufenia Nitro Powder Creates a path from Lufenia to Gaia&#13;
-&#13;
-&lt;img width="600" height="340" alt="Gaia Nitro Powder" src="https://github.com/user-attachments/assets/27cc67d2-4019-4e1a-a17a-866a17a62974" /&gt;&#13;
-&#13;
-&gt; Gaia Nitro Powder Connects Gaia to Mirage Tower&#13;
-&#13;
-&lt;img width="600" height="340" alt="Foot Trail Demo" src="https://github.com/user-attachments/assets/ab5db50d-ea86-4773-ad54-c78be9a67269" /&gt;&#13;
-&#13;
-&gt; With all three, you can walk from Provoka all the way to Gaia or Mirage Tower&#13;
-&#13;
-&#13;
-&lt;img width="368" height="276" alt="image" src="https://github.com/user-attachments/assets/aabae848-4c3f-4e17-966e-800b49efd37d" /&gt;&#13;
-&#13;
-&gt; Also an option to lock Mount Gulg until you find the Mount Gulg Key&#13;
-&#13;
-## Better Client Messages&#13;
-- I had a lot of debug messages in the ap client window previously, but that's significantly cleaned up now.&#13;
-- Now the ap client actually says useful information for you (imagine that)!&#13;
-&#13;
-## Bugfixes&#13;
-- Rare game crash related to missing party members&#13;
-- Rare graphical bug with missing party members making it look like they've already learned a spell&#13;
-- Other improvements and bugfixes&#13;
-&#13;
----&#13;
-&#13;
-👍🏻 Fully compatible with existing v0.2.0 seeds. Please upgrade mid-run for a better experience.</content>
-    <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2"/>
+- Rarely, when hovering between a piece of land and a piece of water, Minishoot can fall.</content>
+    <link href="https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.0"/>
   </entry>
   <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04</id>
-    <title>Northgard v2026.9.4</title>
-    <updated>2026-09-05T00:07:37+00:00</updated>
+    <id>https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.3</id>
+    <title>Clair Obscur Expedition 33 v0.4.3</title>
+    <updated>2026-09-05T10:51:35+00:00</updated>
     <author>
-      <name>Chakraa</name>
+      <name>Démorck</name>
     </author>
-    <content>### Fixed
-- Non-Linear Mode: the `chapter7_requirement` option was enforced only by the client against real in-game battle wins, invisible to Archipelago's own logic. Fill could freely place one of the other Chapters' own unlock items inside a Chapter 07 location, creating an unwinnable seed the client would never let you escape. Chapter 07's region is now also gated in logic on holding enough of the other Chapters' items, matching the client's count (Chapter 01's precollected item counts toward the requirement, same as in-game).
-
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.02...2026.09.04</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04"/>
+    <author>
+      <name>Yezzdia</name>
+    </author>
+    <author>
+      <name>Noeva</name>
+    </author>
+    <content/>
+    <link href="https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.3"/>
   </entry>
   <entry>
-    <id>https://github.com/IcyPenguin28/DotDAP/releases/tag/0.2.0</id>
-    <title>The Legend of Spyro: Dawn of the Dragon v0.2.0</title>
-    <updated>2026-09-05T03:50:52+00:00</updated>
+    <id>https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.2</id>
+    <title>metal_hellsinger v1.1.2</title>
+    <updated>2026-09-05T12:06:41+00:00</updated>
     <author>
-      <name>IcyPenguin_</name>
+      <name>DanielSchaack</name>
     </author>
-    <author>
-      <name>Dragonsoul5000</name>
-    </author>
-    <content>## Additions:&#13;
-- Elements can now be shuffled into the item pool (excluding Fire and Poison, which the game selects on level load by default)&#13;
-- Added options to handle how elements are added to the item pool for both Spyro and Cynder&#13;
-- The ability to climb walls can now be shuffled into the item pool&#13;
-- The ability to run on walls can now be shuffled into the item pool&#13;
-- Elite enemy mask elements can now be randomized&#13;
-- Objectives are now location checks&#13;
-- The client now has a new icon courtesy of wheezingteapot&#13;
-## Changes:&#13;
-- Health Gem S/Mana Gem S items have been renamed to Small Health Gem/Small Mana Gem&#13;
-- All instances of the French "Remparts" in the location names have been changed to the English "Ramparts"&#13;
-## Fixes:&#13;
-- Issues with Death Link's implementation have been fixed.&#13;
-- Small Health Gems and Small Mana Gems are now clamped to Spyro's and Cynder's respective current maximum capacties for those resources.&#13;
-- Catacombs lock/unlock state is not reset by accident after pressing New Game/Load Game&#13;
-- Reconnecting to the multiworld no longer gives excess EXP from out of nowhere&#13;
-## Known Bugs:&#13;
-- Patches are lost when rebooting the game (#14)&#13;
-- Client always writes patches and items to memory when connecting to Archipelago regardless of game version (#13)</content>
-    <link href="https://github.com/IcyPenguin28/DotDAP/releases/tag/0.2.0"/>
+    <content># Metal: Hellsinger AP World v1.1.2&#13;
+Hotfix for both the AP World _and_ the client.&#13;
+**NOTE:** The client may not correctly display available locations for seeds generated on 1.1.0 and 1.1.1, but is compatible with seeds generated on those.&#13;
+&#13;
+- [Metal: Hellsinger AP World](https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/latest)&#13;
+- [Metal: Hellsinger Randomizer Mod](https://github.com/DanielSchaack/Metal-Hellsinger-AP-Mod/releases/latest)&#13;
+- [Setup Guide](https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/blob/main/worlds/metal_hellsinger/docs/setup_en.md)&#13;
+&#13;
+## CHANGED&#13;
+- Enabling Archdevil enemies now sets the softlogic level onto Archdevil instead of Beast (The amount of enemies can be pretty overwhelming, even on lower difficulties, requiring more movement options to competently beat encounters)&#13;
+&#13;
+## FIXED&#13;
+- Five Endings fury combo location availability should now properly be shown in the client.&#13;
+- Fury Combos requiring Quick Reload now also require a reloadable weapon. (Having only Hellcrow made these locations impossible to access)&#13;
+- The Red Right Hand is now properly classed as a close range weapon &#13;
+- Terminus (Sword) is no longer classified as either a long or close range weapon (Soft logic for the final boss requires a close and long range weapon, this now allows for only ranged weapons for these requirements)&#13;
+- The boss avatars spawned in the final boss no longer grant their First Kill Locations (and no longer spam the logs on each frame)</content>
+    <link href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.2"/>
   </entry>
 </feed>

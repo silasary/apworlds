@@ -4,7 +4,7 @@ Borderlands 2 is a looter shooter we all love.
 
 
 ## Downloads
-- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-101/borderlands2.apworld">Latest Version (101)</a>
+- <a href="https://github.com/EdricY/Bouncy-Loot-God/releases/download/be-102/borderlands2.apworld">Latest Version (102)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
