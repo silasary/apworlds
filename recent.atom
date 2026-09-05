@@ -2,238 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-04T18:21:09.748836+00:00</updated>
+  <updated>2026-09-05T00:20:59.236903+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.3.0</id>
-    <title>Super Smash Bros. Brawl - The Subspace Emissary v0.2.7r2</title>
-    <updated>2026-09-01T04:05:17+00:00</updated>
-    <author>
-      <name>kenniky</name>
-    </author>
-    <content>Changelog&#13;
-&#13;
-- Adds an option to open Tabuu's door upon receiving a certain percentage of the fighter trophies&#13;
-- New command: `/tabuu_door_progress` tells you how close you are to opening the door&#13;
-- New command: `/toggle_debug` toggles a debug mode, which will log some debug stuff to a text file. Turn this on if you're having issues with the APWorld, and hopefully the file can help ironing out weird bugs.&#13;
-- some bugfixes&#13;
-&#13;
-**APWORLD COMPATIBILITY**: This APWorld is **NOT** backwards compatible with any generated worlds before v0.3.0!&#13;
-&#13;
-**SD CARD COMPATIBILITY**: This version **IS** backwards compatible with previously created SD cards, you **do not** need to redo the command if you've done it successfully in the past&#13;
-&#13;
-Info: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/en_SubspaceEmissary.md&#13;
-Setup: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/en_SubspaceEmissary_Setup.md&#13;
-FAQ: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/faq.md</content>
-    <link href="https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha7</id>
-    <title>Crash Team Racing v0.2.0a7</title>
-    <updated>2026-09-01T04:13:17+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content># CTR Archipelago v0.2.0-alpha7
-
-Alpha 7 corrects per-track Reach 10 Wumpa checks:
-
-- checks are created only for tracks with a playable race;
-- a track's check works from its standalone race or a Gem Cup leg;
-- standalone and Gem Cup routes stay replayable while their Wumpa checks remain unchecked.
-
-Read the [complete CTR Archipelago 0.2.0 release notes](https://ap-pie.com/ctr/reference/0-2-0-release-notes) for the full preview changelog, compatibility notes, known limitations, and verification results.
-
-**[Setup guide](https://ap-pie.com/guides/ctr)** · **[Build an Alpha 7 YAML](https://ap-pie.com/apworlds?build=ctr&amp;version=0.2.0-alpha7)**
-
-Use the Alpha 7 client and APWorld together. Back up an existing Adventure save before testing. No game or custom-track data is included.
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0-alpha7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2</id>
-    <title>Civilization IV v0.0.1r2</title>
-    <updated>2026-09-01T04:39:31+00:00</updated>
-    <author>
-      <name>VincentSIFTD</name>
-    </author>
-    <content>The first major release is here! The main additions are adding Wondersanity options (both world and national separately) and spawning Great People when GPsanity is on. In particular I'd appreciate testing of the Wondersanity stuff, as it's hard to conclusively test that.&#13;
-&#13;
-### Changelog:&#13;
-- Two separate Wondersanity options add World Wonders and/or National Wonders into the location pool. Building the wonder sends a location check, and you can build the wonder even if it's obsolete (though you won't get any benefits other than the culture).&#13;
-- Great People are added to the itempool when GPsanity is enabled. The total number of added great people is half the GPsanity number rounded up per type (so at the default of 3 checks, 2 of each GP type are added). These aren't progression (just useful), so it doesn't fully solve the large check number possibility, but it should help a lot, especially at lower numbers.&#13;
-- You can't receive technologies from goody huts or normal GP bulbs if Techsanity is enabled.&#13;
-&#13;
-&#13;
-### Installation Instructions:&#13;
-1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.&#13;
-2. Install the APWorld as normal.&#13;
-&#13;
-### Play Instructions:&#13;
-1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)&#13;
-2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.&#13;
-3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking "Save and Connect." If the connection is successful you'll get a popup that says "Successfully Connected," and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**&#13;
-&#13;
-### Gameplay Issues:&#13;
-1. You can still receive techs in Techsanity from some ways that aren't traditional research: starting techs from your leader and tech trading, and this could lead to duplicates. These are planned to be removed in future updates. Let me know if things break because of them--they shouldn't, but I'm not 100% certain.&#13;
-2. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill (though the added Great People in the pool will help).&#13;
-3. There are a lot of debugging messages left in the mod. I removed some of them, but don't expect a clean feed.&#13;
-4. When you're trying to select an "obsolete" wonder to build in the city screen, the building options will jump to the top of the building list due to the hacky way I've implemented that ability. I want to fix it eventually, but for now the easiest way to mitigate it is to use the wonder filter on the right side of the city list (the star), which will have it jump back to the start of the wonders, which hopefully won't make it jump. You can also use the "choose what to build next" dialog, or just select it without moving your mouse (use the scroll wheel).&#13;
-&#13;
-### Technical Issues:&#13;
-1. I had generation errors when creating solo/near-solo multiworlds with high Techsanity Era Gates values--I never tested with higher values with locations other than Techsanity enabled but keep that in mind if you're having trouble generating.&#13;
-2. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.&#13;
-3. There have been bug reports of items received/obtained while offline not properly appearing in-game and/or being sent to the multiworld when reconnecting. I think this is related to mismatching either mod or APworld versions, but I haven't fully found the root cause yet.&#13;
-&#13;
-If you have any questions, bug reports, or things I forgot to mention, let me know in [the Civilization IV thread in the Archipelago Discord server](https://discord.com/channels/731205301247803413/1326231506682904576).&#13;
-&#13;
-Github for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/</content>
-    <link href="https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.0</id>
-    <title>Final Fantasy 1 PSP v0.2.0</title>
-    <updated>2026-09-01T05:03:17+00:00</updated>
-    <author>
-      <name>1-800-thewolf</name>
-    </author>
-    <content>&lt;img width="557" height="308" alt="image" src="https://github.com/user-attachments/assets/84cab890-79d9-4752-a4e7-6821e4f8b30c" /&gt;&#13;
-&#13;
----&#13;
-&#13;
-# New Features&#13;
-&#13;
-## 📖 Bestiarysanity — monsters hold checks&#13;
-Turn a percentage of the seed's huntable monsters into AP locations. Kill one, get a check.&#13;
-&#13;
-- Logic handles which monsters are reachable with your items and yaml settings. &#13;
-&#13;
-**New Bestiary tab in the AP client**&#13;
-&#13;
-- Monsters grouped by where you can hunt them.&#13;
-- A section lights up when reachable right now, and grays out when you have cleared it.&#13;
-- Clear over half of a section to reveal the quality of items hidden behind the other monsters there.&#13;
-&#13;
-&lt;!-- IMAGE: Bestiary tab in the AP client --&gt;&#13;
-&#13;
-## 💣 Traps&#13;
-Replace some of your filler items with traps. &#13;
-&#13;
-Traps spring at the start of your next battle as a **real monster ability**, animated and announced the way the game does it normally. Available traps so far:&#13;
-&#13;
-- 🤐 **Silence Trap**&#13;
-- 🦑 **Ink Trap**&#13;
-- 🧪 **Poison Darts Trap**&#13;
-- 💀 **Death Trap**&#13;
-&#13;
-Because they are real abilities, they can be dodged and resisted like anything else a monster throws at you.&#13;
-&#13;
-&lt;img width="551" height="311" alt="Trap example" src="https://github.com/user-attachments/assets/5a6f07b1-45dc-4aec-a46a-129da10ee547" /&gt;&#13;
-&#13;
-## 👥 Missing Party Members&#13;
-**Choose Starting Party Size**&#13;
-&#13;
-- The rest go **MISSING**: fully removed from the party, and enter the multiworld item pool as items named for their job.&#13;
-- A joining member rapidly gains levels at their first battle victory.&#13;
-- Logic knows your party is short, so a 1-member start does not get asked to do 4-member things.&#13;
-&#13;
-&lt;img width="626" height="362" alt="image" src="https://github.com/user-attachments/assets/3ba4bef5-1c84-450a-9dad-6a4dd002b0a1" /&gt;&#13;
-&#13;
-## 🥷 Custom Job Sprite&#13;
-Special thanks to @✨-Prime-✨ for commissioning the fully custom Stealth Thief and Stealth Ninja Sprites.&#13;
-Get the scroll and your Thief sprite upgrades in game!&#13;
-&#13;
-&lt;img width="557" height="308" alt="image" src="https://github.com/user-attachments/assets/84cab890-79d9-4752-a4e7-6821e4f8b30c" /&gt;&#13;
-&#13;
----&#13;
-&#13;
-### ⬆️ Quality of Life&#13;
-&#13;
-- **Item and location name groups.** `!hint`, `exclude_locations`, `priority_locations`, and plando now take group names instead of 323 item names and 452 location names typed out one at a time. 13 item groups (Party Members, Key Items, Weapons, Armor, Equipment, Consumables, Spell Tomes with a White/Black split, Job Scrolls, Vehicles, Assembly Pieces, Gil, Experience Bags) and 35 location groups (Chests, Shops, NPCs, one per dungeon or town, plus Bonus Dungeons).&#13;
-&#13;
-### 🪰 Bugfixes related to...&#13;
-&#13;
-- Thief steal crashes.&#13;
-- Vanishing party members.&#13;
-- Grand Master gaining attack by lethal attacks.*&#13;
-- Blood Knight lifesteal on undead.&#13;
-- Bonus dungeon chests past the 65th.*&#13;
-- Wrong-disc detection.&#13;
-- Battle turn-order wraparound fix, dynamic chest name fixes, and a pile of smaller client stability fixes.&#13;
-&#13;
----&#13;
-&#13;
-⚠️ Not compatible with existing seeds. Finish the seed you're playing on the version that generated it and then upgrade.&#13;
-&#13;
----&#13;
-&#13;
-## Something Broke?&#13;
-&#13;
-Run `/logs` in the client's command box and drop it into Discord for fastest results.&#13;
-&#13;
-- Bug reports: [Issues](https://github.com/1-800-thewolf/FF1PSP-Archipelago/issues)&#13;
-- Discussion and support: [FF1 PSP Archipelago Discord](https://discord.com/channels/731205301247803413/1500609270620885032)&#13;
-- Not in the main AP server yet? [Archipelago Discord](https://discord.gg/archipelago)&#13;
-&#13;
-**Full Changelog**: https://github.com/1-800-thewolf/FF1PSP-Archipelago/compare/v0.1.0...v0.2.0</content>
-    <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.3</id>
-    <title>OpenTTD v2.6.0r2</title>
-    <updated>2026-09-01T08:58:12+00:00</updated>
-    <author>
-      <name>OpenTTD AP Team</name>
-    </author>
-    <content>A won seed now announces its goal to every session it connects to, instead of only the first. A goal the launcher was not listening for used to be lost for good, leaving the seed unfinished in the room with every location the player never reached still unreleased. The victory screen and the final play time still happen once, when the seed is won.</content>
-    <link href="https://github.com/solida1987/openttd-archipelago/releases/tag/v2.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.0</id>
-    <title>La-Mulana 2 v1.0.0.post2</title>
-    <updated>2026-09-01T09:45:30+00:00</updated>
-    <author>
-      <name>Crownmuri</name>
-    </author>
-    <author>
-      <name>Coookie93</name>
-    </author>
-    <content>## Supports: Mod v1.0.0+ -- Tracker v2.0.0+&#13;
-&#13;
-# Changelogs&#13;
-- NEW option: Include Expensive Shop Item (Requires Ganesha's Talisman &amp; Money Fairy or Harp in logic)&#13;
-- Fixed sphere scaled AP item pricing (50-100) and made ammo pricing match vanilla to balance with useful AP filler&#13;
-- Many, many Pot/Glossary/DLC logic fixes (thank you too everyone who reported them!)&#13;
-- Collapsed item labels ("Sacred Orb", "Crystal Skull", "Kosugi Research Papers", non-guardian specific "Ankh Jewel")&#13;
-- Fixed require_fdc option -- it was appending the logic to vanilla exits despite ER&#13;
-- Fixed several instances of world.random instead of self.random causing the same chests to be cursed when there are multiple LM2 players in one multiworld.&#13;
-- Offline seed option is fully compatible with the new AP settings&#13;
-&#13;
-# Generation improvements&#13;
-- Major overhaul of the ER ordering, regeneration and validation (fuzz results at 99.5% with 1000 fully randomized yamls)&#13;
-  - For example, making sure that Gate of Guidance and Mausoleum of Giants is not blocked by a 9 soul gate door with original shops&#13;
-  - For example, rejecting ER layouts where the only way out is through a soul gate but with no guardian in the accessible regions&#13;
-- The non-VoD start Starting Shop can now still have progression items even with original shops to prevent sphere 1 softlock.&#13;
-  - Annwfn and Immortal Battlefield start will reroll if the YAML has original shops but no ER settings due to Pepper being stuck in VoD&#13;
-- Reduce local reserved filler (pot / glossary filler) in sphere 1 locations to prevent softlock.&#13;
-- Available glossary that are below the set Glossary Hunt goal are automatically classified as filler (will still count towards progress)&#13;
- </content>
-    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.5</id>
-    <title>A Link Between Worlds v0.3.5</title>
-    <updated>2026-09-01T13:05:05+00:00</updated>
-    <author>
-      <name>randomsalience</name>
-    </author>
-    <content>### Fixes&#13;
-- Fix a bug that prevented the apworld from loading if it failed to clean up old temporary directories</content>
-    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.5"/>
-  </entry>
   <entry>
     <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.0</id>
     <title>Grand Theft Auto: San Andreas v0.8.0</title>
@@ -903,7 +676,7 @@ Known bugs:&#13;
   </entry>
   <entry>
     <id>https://github.com/Nebulea-dev/Archipelago-BlueFire/releases/tag/0.6.0</id>
-    <title>Blue Fire v0.1.0r2</title>
+    <title>Blue Fire v0.1.0r3</title>
     <updated>2026-09-03T12:18:20+00:00</updated>
     <author>
       <name>Nebulea</name>
@@ -915,7 +688,7 @@ Known bugs:&#13;
   </entry>
   <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.34</id>
-    <title>Mental Omega v0.6.1r3</title>
+    <title>Mental Omega v0.6.1r2</title>
     <updated>2026-09-03T13:31:53+00:00</updated>
     <author>
       <name>Mental Omega Randomizer contributors</name>
@@ -1155,6 +928,21 @@ new stuff (since 0.5.5):&#13;
     <link href="https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.6"/>
   </entry>
   <entry>
+    <id>https://github.com/ishanpm/Archipelago-sgtpuzzles/releases/tag/v0.1.20-prealpha</id>
+    <title>Simon Tatham's Portable Puzzle Collection v0.1.20rc0</title>
+    <updated>2026-09-04T05:55:11+00:00</updated>
+    <author>
+      <name>ishanpm</name>
+    </author>
+    <content>Changes:&#13;
+- Updated presets for Mines.&#13;
+&#13;
+Web client: https://ishanpm.github.io/ap-sgtpuzzles-web/&#13;
+&#13;
+Web client source code: https://github.com/ishanpm/ap-sgtpuzzles-web</content>
+    <link href="https://github.com/ishanpm/Archipelago-sgtpuzzles/releases/tag/v0.1.20-prealpha"/>
+  </entry>
+  <entry>
     <id>https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.2</id>
     <title>Clair Obscur Expedition 33 v0.4.0r2</title>
     <updated>2026-09-04T11:59:05+00:00</updated>
@@ -1238,5 +1026,304 @@ This is an early release and has not been extensively tested. Expect bugs and mi
 ## Notes:&#13;
 If you had this issue on 0.8.1, you can change only the `.asi` and the mod will send out pending checks.</content>
     <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.10</id>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
+    <updated>2026-09-04T18:27:53+00:00</updated>
+    <author>
+      <name>C@:\EM1NAL\</name>
+    </author>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>A continuous problem has been that the timing on White House is somewhat unfair and very tight, however in all my testing I tend to get Crude Awakening as the final heist instead so I was never really able to experience how rough it could be for myself. After replaying White House a couple times now (not in Criminal Dawn, just generally) I've realised that, yeah. White House *is* a lot longer than I previously thought it was - a well executed loud playthrough can take 20 minutes minimum.&#13;
+&#13;
+Because I kept getting Crude Awakening in testing, a lot of the timer balance was tailored around *that* heist instead - the issue with this is Crude Awakening can be easily completed in about *ten* minutes, half the time of White House. This creates a huge time gap, and makes White House incredibly unfair to get as the final heist, which is why a lot of people have (rightfully!!) complained about it.&#13;
+&#13;
+All this is to say White House now benefits from Objectivity when it's chosen as the final heist, *but* you only receive 50% of the bonus instead of the entire bonus. If you have 60% objective speed, you will get 30% on White House. 90% objective speed, you get 45% on White House - etc.&#13;
+&#13;
+_No APWorld changes since v1.0.4._</content>
+    <link href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0</id>
+    <title>TCG Card Shop Simulator v1.2.0</title>
+    <updated>2026-09-04T20:17:42+00:00</updated>
+    <author>
+      <name>FyreDay</name>
+    </author>
+    <content>- Fix Game 15 not sending&#13;
+- Fix Bulk box ids&#13;
+- Add Locking Grading</content>
+    <link href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.2.0-TEST</id>
+    <title>Kirby Air Ride v1.2.0</title>
+    <updated>2026-09-04T21:44:08+00:00</updated>
+    <author>
+      <name>DeDeDK</name>
+    </author>
+    <content>Additions:&#13;
+- Custom machine: Archipelago Star&#13;
+  - add options, goals, items, logic, etc. for archipelago star&#13;
+  - add archipelago sphere legendary assembly items&#13;
+- Archipelago patches + Archipelago box&#13;
+  - add options, locations, logic, etc. for ap patches + ap box&#13;
+- Add yaml-less Universal Tracker support&#13;
+  - Tracker tab now exists in the client if you have UT installed&#13;
+- Add message passing from client to mod&#13;
+  - hints, items, locations, player names, server messages, etc. will now show in-game &#13;
+- Options reworks and tweaks&#13;
+  - a few options are now more fine-grained, e.g. enabled city trial item gives&#13;
+  - checklist reward options simplified&#13;
+- simplified logging messages during connection&#13;
+- scripts refactoring&#13;
+- readme and setup guide updates&#13;
+- bump version to 1.2.0&#13;
+&#13;
+Fixes:&#13;
+- fix for air ride CSS menu hang&#13;
+- fix for crash on boot due to ap tab + checkbox reward item backfill&#13;
+- fix for deathlink loop due to HP death in city trial&#13;
+- fix for red checkboxes showing up in the ap tab on non-reward boxes&#13;
+- fixed deathlink/energylink/traplink toggle bouncing during connection&#13;
+- fix coral break check being per-player instead of global&#13;
+- fix CPU color picking&#13;
+- fix checks counting during the main menu auto-demo CT mode&#13;
+- fix legendary part give items not showing visually&#13;
+- misc logic fixes&#13;
+- many misc code improvements/cleanup&#13;
+&#13;
+## What's Changed&#13;
+* v1.2.0-TEST PR by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/56&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v1.1.1-TEST...v1.2.0-TEST</content>
+    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.2.0-TEST"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.11.0r2</title>
+    <updated>2026-09-04T22:41:04+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `7b738a8ece0e69df4bd0645129b3a2ee5dc1b928`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.10.0
+
+- fix(plugin): bleed lands once per enemy and melee fire rate stops at +50%
+- fix(buffs): three cuts to the pool from Kelly's issues
+- fix(bridge): ask for the item names one game at a time, and only once
+- fix(debugbundle): keep other programs' dumps out of crashes/
+- fix(docker): ship the plugin's gamedata in the srcds image
+- chore(beads): triage of the 1.11 feedback, two bundles and Kelly's issues
+- build(bots): defender mod v0.12.0
+- fix(bots): take the robot health fix from the module, not from a patch
+- Revert "fix(bots): restage module before patching"
+- fix(bots): restage module before patching
+- fix(bots): rebase health patch onto module layout
+- chore: retrigger CI
+- chore: retrigger CI
+- chore: retrigger CI
+- fix: the gate passes on the merged history
+- build(bots): defender mod v0.11.0
+- fix: make check passes, and the version check sees the new pin
+- build(bots): the defender mod is a Go module and nothing else
+- build(bots): the defender mod comes from tf2-mvm-bots-go
+- fix(debugbundle): resolve crash dump path at platform boundary
+- refactor(launcher): share robot health bounds
+- refactor(bots): scope health hook to robot spawn
+- fix(bots): override robot maximum health
+- feat(bots): allow direct robot health scaling
+- fix(bots): apply robot health scaling after templates
+- chore: format UI parity test
+- fix(installer): filter unsupported community missions
+- fix(bridge): reconnect when outbound pump stops
+- Keep Archipelago buffs player-owned by default
+- fix(plugin): apply substance buffs on direct hits
+- fix(plugin): restore active weapon health regeneration
+- docs(plugin): record isolated weapon buff behavior
+- fix(plugin): activate the private buff provider
+- fix(plugin): avoid stale provider SDK calls
+- fix(plugin): fully isolate Archipelago buffs from MvM
+- refactor(plugin): remove redundant wave buff reapply
+- fix(plugin): separate fire rate from MvM attributes
+- fix(plugin): isolate only station transactions
+- fix(plugin): restore buffs after wave transition
+- fix(plugin): preserve run buffs across refunds
+- fix(plugin): isolate run buffs from MvM shopping
+- chore(bots): defender bots v2.46.0, generator v0.8.0
+- chore(bots): defender bots v2.45.0, generator v0.7.0
+- style(launcher): a space after the slashes in the parity test
+- chore(bots): defender bots v2.44.0, generator v0.6.0
+- chore(deps): defenderbots v2.42.0 and the generator v0.4.1
+- build(bots): the mod's generated SourcePawn comes from a go.mod pinned tool
+- chore(beads): the gamedata the Docker image never copies
+- feat(plugin): open the buff window from chat with !ap buffs
+- docs(changelog): the stock sniper and the hat that could not be worn
+- chore(deps): pin defenderbots v2.39.0
+- chore(deps): pin defenderbots v2.38.0
+- chore(deps): pin defenderbots v2.37.0
+- chore(deps): pin defenderbots v2.36.0
+- chore(deps): pin defenderbots v2.35.0
+- test(uiparity): fail when the tabs and fields stop being found
+- fix(debugbundle): collect the dumps Windows writes, not only Breakpad's
+- chore(deps): pin defenderbots v2.34.0, sniper stall rescue on by default
+- chore(deps): pin defenderbots v2.33.0 for the sniper stall rescue
+- docs(changelog): state what v1.11.0 changes, not how it was built
+- chore(release): prepare v1.11.0
+- chore(beads): the crash mechanism is confirmed from a symbolised core
+- fix(launcher): contain a panic in the console probe
+- feat(launcher): the terminal shows the same tabs as the window
+- fix(bridge): contain a panic on the pump, the session and a listener
+- fix(launcher): contain a panic in every detached window task
+- feat(launcher): say in chat when a team change is applied
+- feat(launcher): split Rewards from Balancing
+- feat(launcher): saving a bot team applies it, so the button goes
+- chore(beads): apw-eei waits on a crash dump, and the next crash will leave one
+- fix(launcher): make a crash leave something readable
+- docs: prune comments that restate the code, and put three back on their function
+- chore(beads): the crash cause on apw-eei is refuted and reopened
+- docs(changelog): the unreleased section
+- chore(deploy): pin defenderbots v2.30.0
+- chore(beads): the recovery fix measured under load
+- chore(beads): the wedge escalation is measured and does not fire
+- chore(beads): bring the archipelago P0s up to date
+- chore(beads): the Mannhunt A/B does not test the crash
+- chore(beads): Mannhunt plays in the test-bed at last
+- chore(beads): correct the wedge recovery record
+- chore(beads): record the launcher goroutine panic fix
+- refactor(gamedata): split population validation
+- feat(community): add portable mission variants
+- chore(beads): record the wedged-bot kick on apw-eei
+- fix(launcher): a panic on a background goroutine no longer kills the launcher
+- test(launcher): keep the window and the terminal at the same features
+- chore(beads): record where apw-eei actually stands
+- feat(launcher): keep only the robot health scale
+- chore(beads): note the lever instrumentation on apw-d7u
+- chore(beads): close apw-d7u, the balancing levers are fixed and measured
+- docs(plugin): record why a Cash Bundle keeps the Scout heal (apw-jo7)
+- chore(beads): record the balancing and teleporter work
+- feat(plugin): restore the wave after a restart, and hide the empty buff window
+- fix(launcher): use strings.Cut in reselectLoadout
+- chore(beads): file the balancing levers as P0 (apw-d7u)
+- chore(beads): file the Cash Bundle heal (apw-jo7)
+- chore(beads): file the empty buff window as P0
+- fix(launcher): name a custom loadout in the Bot Switcher, and open the Bots tab
+- fix(launcher): refresh the loadout menus when one is saved or removed
+- docs(changelog): the fixes since the section was drafted (apw-u63, apw-6hf)
+- chore(beads): close apw-u63
+- fix(launcher): the settings window would not open at all (apw-u63)
+- feat(fakeroom): hand out weapon buffs early enough to try them
+- chore(deps): bots v2.20.0 -&gt; v2.21.0 (mvm-hnb)
+- chore(beads): mannhunt is a community map (apw-eei)
+- fix(test): use the real helpers in the resume test (apw-onf)
+- docs: credit k-kaneta, Cowser and Peppy as play-testers
+- chore(beads): mannhunt crashes, and the boots share the shield's hole (apw-7w9)
+- feat(bridge): remember where the run is, so a restart can put it back (apw-onf)
+- fix(plugin): refund the bundle credits the minus button loses (apw-6hf)
+- chore(beads): the shield bypasses a locked secondary (apw-7w9)
+- release: 1.11.0
+- chore(beads): the 2026-08-27 discord reports (apw-6hf, apw-8t6)
+- chore(deps): bots v2.19.0 -&gt; v2.20.0 (mvm-78m)
+- docs: credit kelly-cs, and file the community maps work (apw-4zk)
+- chore(beads): close apw-5tk, the buffs shipped
+- feat(launcher): a Balancing tab, with the robot levers on it (mvm-bha, apw-5tk)
+- fix(test): skip the game data test without the real ripext (apw-5tk)
+- chore(beads): apw-5tk, what PR #3 solves
+- Add Archipelago weapon buff upgrades
+- chore(beads): a restart must not cost the mission (apw)
+- chore(deps): bots v2.18.1 -&gt; v2.19.0 (mvm-bha)
+- feat(launcher): build your own bot loadouts (mvm-e5r)
+- feat(launcher): resolve the loadouts a player builds (mvm-e5r)
+- docs: the Bot Switcher, in both languages (mvm-6dc)
+- feat(gamedata): a weapon catalogue, generated from the mod and the game (mvm-e5r)
+- feat(launcher): a Bot Switcher tab, and lineup changes without a restart (mvm-6dc)
+- chore(beads): update a bead
+- chore(beads): update apw-r85 The game server crashes with an access violation, and the la…
+- chore(beads): update apw-hut RED gets nine bots when the mission loads
+- chore(beads): update apw-48u De-upgrading appears not to take
+- chore(beads): update apw-4cb A bundle is money the game never recorded
+- feat(launcher): validate Archipelago run capacity
+- feat(launcher): install selected community assets
+- feat(community): add portable MvM mission support
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2</id>
+    <title>Final Fantasy 1 PSP v0.2.2</title>
+    <updated>2026-09-04T23:01:40+00:00</updated>
+    <author>
+      <name>1-800-thewolf</name>
+    </author>
+    <content>## New World-Changing Items&#13;
+&#13;
+&lt;img width="479" height="468" alt="image" src="https://github.com/user-attachments/assets/90c907e7-9de8-4cfb-af44-7989e866cf47" /&gt;&#13;
+&#13;
+- Lufenia Bridge&#13;
+- Lufenia Nitro Powder&#13;
+- Gaia Nitro Powder&#13;
+- Mount Gulg Entrance Key&#13;
+&#13;
+&lt;img width="600" height="340" alt="Lufenia Bridge" src="https://github.com/user-attachments/assets/59e0184e-1fa6-48ca-8664-10ed7f039c4c" /&gt;&#13;
+&#13;
+&gt; Lufenia Bridge Links Northern Provoka to Lufenia&#13;
+&#13;
+&lt;img width="600" height="340" alt="Lufenia Nitro Powder" src="https://github.com/user-attachments/assets/61452caa-a858-4960-983d-c87d5e73e93a" /&gt;&#13;
+&#13;
+&gt; Lufenia Nitro Powder Creates a path from Lufenia to Gaia&#13;
+&#13;
+&lt;img width="600" height="340" alt="Gaia Nitro Powder" src="https://github.com/user-attachments/assets/27cc67d2-4019-4e1a-a17a-866a17a62974" /&gt;&#13;
+&#13;
+&gt; Gaia Nitro Powder Connects Gaia to Mirage Tower&#13;
+&#13;
+&lt;img width="600" height="340" alt="Foot Trail Demo" src="https://github.com/user-attachments/assets/ab5db50d-ea86-4773-ad54-c78be9a67269" /&gt;&#13;
+&#13;
+&gt; With all three, you can walk from Provoka all the way to Gaia or Mirage Tower&#13;
+&#13;
+&#13;
+&lt;img width="368" height="276" alt="image" src="https://github.com/user-attachments/assets/aabae848-4c3f-4e17-966e-800b49efd37d" /&gt;&#13;
+&#13;
+&gt; Also an option to lock Mount Gulg until you find the Mount Gulg Key&#13;
+&#13;
+## Better Client Messages&#13;
+- I had a lot of debug messages in the ap client window previously, but that's significantly cleaned up now.&#13;
+- Now the ap client actually says useful information for you (imagine that)!&#13;
+&#13;
+## Bugfixes&#13;
+- Rare game crash related to missing party members&#13;
+- Rare graphical bug with missing party members making it look like they've already learned a spell&#13;
+- Other improvements and bugfixes&#13;
+&#13;
+---&#13;
+&#13;
+👍🏻 Fully compatible with existing v0.2.0 seeds. Please upgrade mid-run for a better experience.</content>
+    <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04</id>
+    <title>Northgard v2026.9.4</title>
+    <updated>2026-09-05T00:07:37+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Fixed
+- Non-Linear Mode: the `chapter7_requirement` option was enforced only by the client against real in-game battle wins, invisible to Archipelago's own logic. Fill could freely place one of the other Chapters' own unlock items inside a Chapter 07 location, creating an unwinnable seed the client would never let you escape. Chapter 07's region is now also gated in logic on holding enough of the other Chapters' items, matching the client's count (Chapter 01's precollected item counts toward the requirement, same as in-game).
+
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.02...2026.09.04</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04"/>
   </entry>
 </feed>

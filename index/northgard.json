@@ -159,6 +159,21 @@
       "title": "2026.09.02 - Fix Stale Backup Re-Patch & Room-Switch Reconnect",
       "version_simple": "2026.9.2",
       "world_version": "2026.9.2"
+    },
+    "2026.09.04": {
+      "created_at": "2026-09-05T00:07:37Z",
+      "description": "### Fixed\n- Non-Linear Mode: the `chapter7_requirement` option was enforced only by the client against real in-game battle wins, invisible to Archipelago's own logic. Fill could freely place one of the other Chapters' own unlock items inside a Chapter 07 location, creating an unwinnable seed the client would never let you escape. Chapter 07's region is now also gated in logic on holding enough of the other Chapters' items, matching the client's count (Chapter 01's precollected item counts toward the requirement, same as in-game).\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.02...2026.09.04",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.09.04/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e83ba05537cdc2a03f2a215d5802217274b7117e27d76b5792053ef448f5e455",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04",
+      "minimum_ap_version": "0.6.7",
+      "size": 10432689,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.09.04",
+      "title": "2026.09.04 - Non-Linear Chapter 7 Requirement Logic Fix",
+      "version_simple": "2026.9.4",
+      "world_version": "2026.9.4"
     }
   }
 }

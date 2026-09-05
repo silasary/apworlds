@@ -1,12 +1,12 @@
 # Setup Guide for Kirby Air Ride Archipelago
 
-Welcome to Kirby Air Ride Archipelago! This guide will help you set up the game and play your first multiworld.
-If you're playing Kirby Air Ride, you must follow a few simple steps to get started.
+Welcome to Kirby Air Ride Archipelago! This guide will help you set up the game to play solo or in a multiworld.
 
 - [Setup Guide for Kirby Air Ride Archipelago](#setup-guide-for-kirby-air-ride-archipelago)
   - [Requirements](#requirements)
   - [Setting Up a YAML](#setting-up-a-yaml)
   - [Save files](#save-files)
+  - [Universal Tracker (optional)](#universal-tracker-optional)
   - [Connecting to a Room](#connecting-to-a-room)
   - [Troubleshooting](#troubleshooting)
 
@@ -20,16 +20,17 @@ You'll need the following components to be able to play Kirby Air Ride:
   * CRC32: f1a3e7a2
   * MD5: bd936616ba7f998d8d0a1eb3f553b634
   * SHA-1: b57132b1d0990264c271a1ad2168aa75b93b2f92
-* The Archipelago launcher
+* The Archipelago launcher (latest version always recommended)
   * https://github.com/ArchipelagoMW/Archipelago/releases/latest
 * The Kirby Air Ride APWorld
   * https://github.com/DeDeDeK/KARchipelago/releases/latest
-  * download the `kirby_air_ride.apworld` and `kirby_air_ride.yaml` files from the "Assets" section
+  * download the `kirby_air_ride.apworld` file from the "Assets" section
   * place the `kirby_air_ride.apworld` file into your `custom_worlds` folder in your Archipelago installation folder
+    * use `Browse Files` from the AP launcher as an easy way to get to this folder 
 * The Kirby Air Ride game mod
   * https://github.com/DeDeDeK/karchipelago-mod/releases/latest
-  * download the riivolution.zip file from the "Assets" section
-  * unzip the riivolution.zip
+  * download the `Riivolution.zip` file from the "Assets" section
+  * unzip the `Riivolution.zip`
   * find your Dolphin user folder (in Dolphin, `File->Open User Folder`)
   * copy the `KARchipelago.xml` file into your Dolphin install directory at `User/Load/Riivolution/riivolution/KARchipelago.xml`
   * copy the `KARchipelago/` folder into your Dolphin install directory at `User/Load/Riivolution/KARchipelago/`
@@ -48,11 +49,10 @@ Riivolution/
 
 All players playing Kirby Air Ride must provide the room host with a YAML file containing the settings for their world. 
 
-If you are running this on the web host (this will not be on the official website), you can visit the [Kirby Air Ride options page](/games/Kirby%20Air%20Ride/player-options) to generate a YAML with your desired options. Click the export button to save your yaml file. 
+Use the built-in options creator in the archipelago launcher. Select `"Options Creator"` in the AP launcher, and then select `Kirby Air Ride`.
+Choose your options and then click "Export".
 
-Another option is to use the built-in options creator in the archipelago launcher. Select `"Options Creator"` in the AP launcher, and then select `Kirby Air Ride`.
-
-Alternatively, you can manually edit the `kirby_air_ride.yaml` template YAML from the [releases page](https://github.com/DeDeDeK/KARchipelago/releases/latest), or you can run "Generate Template Options" from the Archipelago Launcher, and then edit the Kirby Air Ride yaml file in your `Players/` directory. The yaml file will contain descriptions of each option and what they affect in the game. 
+Alternatively, you can manually edit the `Kirby Air Ride.yaml` template YAML. Run "Generate Template Options" from the Archipelago Launcher, and then edit the Kirby Air Ride yaml file in your `Players/` directory. The yaml file will contain descriptions of each option and what they affect in the game. 
 
 Once you're happy with your settings, provide the room host with your YAML file and proceed to the next step.
 
@@ -67,23 +67,35 @@ To make sure you have a fresh save file:
 
 * In Dolphin, go to `Tools -> Memory Card Manager`
 * If you have Kirby Air Ride data in this menu, click on it and click `Export as` if you wish to keep the save file for later, or `Delete` if you wish to wipe the save.
-* **IMPORTANT:** You'll also see a `01-GKYE-hoshi` save here if you'e played before. This must be deleted as well! This can be hard to see!
+* **IMPORTANT:** You'll also see a `01-GKYE-hoshi` save here if you've played before. This must be deleted as well! This can be hard to see!
+
+## Universal Tracker (optional)
+
+[Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) adds a tracker tab that
+lists every checklist box you can reach right now, so you always know what is actually open to you.
+
+* download `tracker.apworld` from the newest `Tracker_v...` tag on the
+  [Universal Tracker releases page](https://github.com/FarisTheAncient/Archipelago/releases) (that page
+  hosts several apworlds, so check the tag) and put it in the same `custom_worlds` folder as
+  `kirby_air_ride.apworld`, then restart the launcher.
+* open `Kirby Air Ride Client` as usual. The tracker tab appears automatically.
+
+You do **not** need your YAML in the Players/ folder for UT for Kirby Air Ride.
+
+See the Universal Tracker repo for further usage instructions. 
 
 ## Connecting to a Room
 
-The multiworld host will provide you a link to your room or the server name and port number.
-
-Once you're ready, follow these steps to connect to the room:
 1. Open Dolphin and use it to run the Kirby Air Ride ISO with the mod enabled
    * in Dolphin, right click on Kirby Air Ride in your games list and `Start with Riivolution Patches...`
    * set KARchipelago to `Enabled`
    * press `Start`
-2. Start `ArchipelagoLauncher.exe` (without `.exe` on Linux) and choose `Kirby Air Ride Client`, which will open the text client. On launch it prints `Starting Dolphin connector. Use /dolphin for status information.` and then keeps trying to attach to Dolphin in the background.
-   * Once the ISO is running in Dolphin, the client prints `Dolphin connected.`.
-   * Until then it reports why it can't attach yet, for example `Dolphin not fully connected: no Dolphin process found` (Dolphin isn't open) or `Dolphin not fully connected: Dolphin open, but no emulated game readable yet` (the game hasn't booted). You can check the current state at any time with the `/dolphin` command.
-3. Connect to the room by entering the server name and port number in the client and pressing `Connect`. For rooms hosted on the website, this will be `archipelago.gg:<port>`, where `<port>` is the port number. If a game is hosted from the `ArchipelagoServer.exe` (without `.exe` on Linux), the port number will default to `38281` but may be changed in the `host.yaml`.
+2. Start the Archipelago Launcher and choose `Kirby Air Ride Client`, which will open the text client. It will begin attempting to connect to Dolphin.
+   * Once the ISO is running in Dolphin, and everything is operational, the client will print `Dolphin connected.`
+   * If it is not connecting successfully, use `/dolphin` to get the current status.
+3. Connect to the room by entering the server name and port number in the client and pressing `Connect`. For rooms hosted on the website, this will be `archipelago.gg:<port>`. 
    * You will be prompted to enter your slot name, which is the name you selected when creating your yaml. Type that in and press enter.
-4. Once you're connected to the room and have started a new save file in-game, the client finishes its handshake and prints `Location data written. Client fully operational.`. You are now connected and ready to play!
+4. Once you're connected to the room and have started a new save file in-game, the client finishes its handshake and prints `Handshake complete. Ready to play!`. You are now connected and ready to play!
 
 ## Troubleshooting
 

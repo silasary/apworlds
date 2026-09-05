@@ -1,4 +1,4 @@
-<img src="worlds/kirby_air_ride/assets/karchipelago-logo.png" alt="karchipelago logo" width="400"/>
+<img src="https://raw.githubusercontent.com/DeDeDeK/KARchipelago/main/worlds/kirby_air_ride/assets/karchipelago-logo.png" alt="karchipelago logo" width="400"/>
 
 # Kirby Air Ride APWorld
 
@@ -6,14 +6,15 @@
   - [What is this?](#what-is-this)
   - [How do I set this up?](#how-do-i-set-this-up)
   - [Poptracker](#poptracker)
+  - [Universal Tracker Support](#universal-tracker-support)
   - [Game modes and goals](#game-modes-and-goals)
     - [City Trial](#city-trial)
     - [Air Ride](#air-ride)
     - [Top Ride](#top-ride)
     - [Archipelago checklist](#archipelago-checklist)
+  - [AP Patches](#ap-patches)
   - [Access gating](#access-gating)
-  - [Shuffle checklist rewards](#shuffle-checklist-rewards)
-  - [Checklist rewards gated](#checklist-rewards-gated)
+  - [Checklist rewards](#checklist-rewards)
   - [What does randomization do to this game?](#what-does-randomization-do-to-this-game)
   - [What does another world's item look like in Kirby Air Ride?](#what-does-another-worlds-item-look-like-in-kirby-air-ride)
   - [What happens when the player receives an item?](#what-happens-when-the-player-receives-an-item)
@@ -55,19 +56,27 @@ Setting up the game and instructions on where to get the apworld file, yaml file
 
 ## Poptracker
 
-There is also a poptracker for this apworld, created by @lightning8282!
+There is also a poptracker for this apworld, created by @lighting8282!
 
 Get it [here!](https://github.com/lighting8282/KAR-Poptracker)
 
+## Universal Tracker Support
+
+The Kirby Air Ride client supports yaml-less Universal Tracker. If you have Universal Tracker installed in your `custom_worlds` folder, it will automatically add a Tracker tab to the client - no need to open UT as a separate client. No yaml file needed in the `Players` folder. 
+
+See the setup guide for more info.
+
 ## Game modes and goals
 
-Kirby Air Ride has three independent game modes: City Trial, Air Ride, and Top Ride. The mod adds a fourth checklist/mode of its own, the Archipelago checklist. 
+Kirby Air Ride has three independent game modes: City Trial, Air Ride, and Top Ride. 
+
+The mod also adds a fourth checklist/mode of its own, the Archipelago checklist. 
 
 You can enable any combination of them, each with its own goal, locations, and progression settings. 
 
-Setting a mode's goal to "None" disables that mode entirely, so none of its checklist locations will exist. 
+Setting a mode's goal to "None" disables that mode entirely, so none of its checklist locations will exist. AP Patches are the one exception: they are City Trial locations that exist whenever "AP Patches" is above 0, whatever the City Trial goal is. 
 
-When more than one mode has a goal, you only complete your game by completing every one of them, and your items share a single pool across your enabled modes: any of your items can land at any of your checklist locations, so an Air Ride unlock might be found on a City Trial checkbox, and vice versa.
+When more than one mode has a goal, you only complete your game by completing every one of them.
 
 ### City Trial
 
@@ -100,7 +109,17 @@ not work properly.
 
 - **Fill in N Checklist Boxes**
 - **Complete a specific list of checklist boxes** (via "Archipelago Goal Locations").
-- **None.** Disables the Archipelago checklist (default).
+- **Assemble the Archipelago Star.** Collect all six Archipelago spheres in one City Trial round.
+- **Assemble all three legendaries in one run.** Build Dragoon, Hydra and the Archipelago Star in the same City Trial round
+- **None.** Disables the Archipelago locations (default).
+
+## AP Patches
+
+Setting "AP Patches" above 0 adds that many AP patches to your world. These will spawn in City Trial, inside of AP Boxes. 
+
+These are locations, and so each collected AP patch is a check. AP patches are always collected in order, no matter which one you pick up. If you don't pick one up, it will continue to spawn until it is collected.
+
+"AP Patch Placement" chooses whether these locations can hold progression.
 
 ## Access gating
 
@@ -121,32 +140,17 @@ The gateable categories are:
 - **Top Ride items.**
 - **Kirby colors** Affects all modes.
 
-Generation will choose one starting unlock item for the following categories. Each is picked at random and given to you for free before your run begins:
+## Checklist rewards
 
-- **City Trial stadiums.** One of the 24 stadiums (never VS. KING DEDEDE when that is your goal). Only when stadiums are gated and City Trial is enabled.
-- **Air Ride machines.** One machine you can ride in City Trial and Air Ride (never the Hydra or Dragoon). Only when machines are gated and City Trial or Air Ride is enabled.
-- **Top Ride machines.** Free Star or Steer Star, since Top Ride cannot be entered without one of them. Only when machines are gated and Top Ride is enabled.
-- **Air Ride courses.** One course. Only when courses are gated and Air Ride is enabled.
-- **Top Ride courses.** One course. Only when courses are gated and Top Ride is enabled.
-- **Kirby colors.** One color. Only when colors are gated.
+Many checklist boxes (red boxes) award something when ticked in the base game. "Checklist Rewards" picks which of the minor extras among them get placed into the multiworld, one category at a time:
 
-If you already preset an unlock from one of these categories in your start inventory, generation keeps your choice and skips the random pick for that category. The remaining gateable categories - events, copy abilities, base abilities, patch types, game items, box types, and Top Ride items - are playable without any unlock, so they get no starting item.
+- **Sound Test** - sound test entries, 34 of them
+- **Music** - course and stadium music tracks
+- **Filler Boxes** - boxes awarding a checkbox filler
+- **Endings** - the ending movie for each mode
+- **Gameplay Extras** - Top Ride's extra rules, Air Ride's Special Machine Intros, City Trial's pause-screen power-up display
 
-## Shuffle checklist rewards
-
-Many checklist boxes (red boxes) award a specific reward when ticked in the base game: a machine, a Kirby color, a music track, a sound test, a Dragoon or Hydra part, and so on. "Shuffle Checklist Rewards" controls only those reward items.
-
-- **On (default):** each reward is shuffled into the multiworld like any other item, so it can turn up anywhere your items can, across any of your enabled modes.
-- **Off:** every reward is placed back on the box that awards it in the base game, so ticking that box gives what it gave in the original game.
-
-## Checklist rewards gated
-
-Some checklist boxes award a minor extra when ticked: a music track, a sound test entry, an ending, a Top Ride rule, and so on. "Checklist Rewards Gated" controls whether those non-progression rewards are part of the multiworld at all.
-
-- **Off (default):** none of these rewards are placed; the mod unlocks them all the instant you connect, and the checklist boxes that would have awarded them carry ordinary multiworld items instead. The unlocked rewards are not in the pool or the in-game checklist.
-- **On:** each such reward is an item you find in the multiworld, and "Shuffle Checklist Rewards" decides where it can land.
-
-The Dragoon and Hydra parts are never affected - they are progression (they build the legendary machines), so they always stay in the multiworld regardless of this option.
+A category you pick is shuffled into the multiworld like any other item, so it can turn up anywhere your items can, across any of your enabled modes. A category you leave out is not placed at all: the mod unlocks it the instant you connect, the boxes that award it in the base game carry ordinary multiworld items instead, and no reward shows on those checklist cells. The default is an empty list, so nothing is placed unless you ask for it.
 
 ## What does randomization do to this game?
 
@@ -165,17 +169,21 @@ The items you can receive include:
 - Permanent patch increase items (City Trial)
 - Spawn Rate Up items (City Trial / Top Ride)
 - Game item gives (boxes, food, copy abilities, legendary machine parts, All Up, etc.)
-- Cosmetic filler (Big Kirby and Small Kirby, which scale Kirby's size)
+- Cosmetic filler (Big Kirby and Small Kirby)
 - Access-gating unlock items [(Access gating)](#access-gating)
 - Traps (1 HP Trap, stat-down patches, fake patches)
 
 ### Checkbox filler items
 
-Receiving a checkbox filler item for a given checklist gives you a purple checkbox filler in-game for that checklist. Look to the side of the checklist for the purple boxes. The game only shows up to 5 of them at once, but if you have unlocked more they are still yours and you can keep using them as they run out. There is a separate filler item for each checklist (City Trial, Air Ride, Top Ride, Archipelago). **You cannot use these to unlock checkboxes that are goals.**
+Receiving a checkbox filler item for a given checklist gives you a purple checkbox filler in-game for that checklist. Look to the side of the checklist for the purple boxes. 
+
+The game only shows up to 5 of them at once, but if you have unlocked more they are still yours and you can keep using them as they run out. There is a separate filler item for each checklist (City Trial, Air Ride, Top Ride, Archipelago). **You cannot use these to unlock checkboxes that are goals.**
 
 ### Patch cap increase items
 
-When "Patch Cap Min" is below "Patch Cap Max", the per-stat patch cap starts at the min and each Patch Cap Increase item raises it by one, up to the max. This is tracked per stat. For example, with a cap of 6, collecting a 7th Top Speed will drop you back to 6 until you raise the cap. Set the min equal to the max (both default to the vanilla 18) for a flat cap with no Patch Cap Increase items.
+When "Patch Cap Min" is below "Patch Cap Max", the per-stat patch cap starts at the min and each Patch Cap Increase item raises it by one, up to the max. This is tracked per stat. 
+
+For example, with a cap of 6, collecting a 7th Top Speed will drop you back to 6 until you raise the cap. Set the min equal to the max (both default to the vanilla 18) for a flat cap with no Patch Cap Increase items.
 
 ### Permanent patch increase items
 
@@ -185,7 +193,9 @@ You can change which modes these will apply to in the in-game settings menu.
 
 ### Allowed item types
 
-"Allowed Item Types" controls which categories of optional (non-progression) give items appear in your pool. All categories are on by default; removing one keeps all of that category's items out of your pool. It is independent of "Trap Types" - trap items are governed only by that option, so a category here never adds or removes traps.
+"Allowed Item Types" controls which categories of optional (non-progression) give items appear in your pool. 
+
+Only "Permanent Patches" is on by default; add a category to put its gives in your pool, and removing one keeps all of that category's items out.
 
 ### Spawn Rate Up items
 
@@ -205,7 +215,9 @@ Items that don't apply directly to in-game modes (checkbox fillers, reward items
 
 ## Traps and TrapLink
 
-Set "Trap Chance" above 0 to turn a percentage of your non-progression item slots into traps. "Trap Types" chooses which categories are in play (all on by default), and the selected categories are drawn at equal weight: Direct Damage (1 HP Trap), Stat Debuff (All Down, stat-down patches, etc.), and Fake Patches (items that look like stat-ups but are harmful).
+Set "Trap Chance" above 0 to turn a percentage of your non-progression item slots into traps. 
+
+"Trap Types" chooses which categories are in play (all on by default).
 
 With "Trap Link" enabled, traps you receive are broadcast to other players who have TrapLink on, and you receive the traps they broadcast in return. This is independent of "Trap Chance": you can take part in TrapLink even with no traps in your own pool. 
 
@@ -239,31 +251,41 @@ You can enable or disable this in the in-game settings menu, or in your yaml.
 
 The mod includes a built-in scrolling textbox that lets you know what items your receiving and other information in real time!
 
-Configure it in the in-game settings menu.
+Configure how it looks - position, size, colors, how long a message stays - in the in-game settings menu under "Text Box".
+
+Which Archipelago messages appear is separate, under "Archipelago Settings -> Messages":
+
+- **Checks** - what a completed checkbox sent, and to whom.
+- **Items** - items arriving for you, and who found them
+- **Hints** - hints for your items, and hints telling someone else that your world holds theirs
+- **Status** - goal, release and collect announcements, plus a line when the client connects or drops.
+- **Chat** - player and server chat. Off by default.
+
+These lines come from the client, so they only appear while it is connected to both the server and Dolphin. With no client attached, a completed checkbox just reports "Check recorded".
 
 ### Reveal checklists
 
-Each mode has its own "Reveal Checklist" option ("City Trial Reveal Checklist", "Air Ride Reveal Checklist", "Top Ride Reveal Checklist", "Archipelago Reveal Checklist"). With one enabled, that checklist starts fully revealed instead of filling in around the squares you complete, so you can read every objective from the start. On the Archipelago checklist only the squares that carry an objective are revealed.
+Each mode has its own "Reveal Checklist" option. With one enabled, that checklist starts fully revealed instead of filling in around the squares you complete, so you can read every objective from the start.
 
 Revealing is visual only - it does not complete or unlock anything.
 
 ### Drop ability
 
-With "Drop Ability" on, pressing Z discards your current copy ability in City Trial and Air Ride, or your current ability-power item in Top Ride. There is no vanilla way to get rid of an ability you don't want, so this is handy when you are hunting a checkbox that needs a different one.
+With "Drop Ability" on, pressing Z discards your current copy ability in City Trial and Air Ride, or your current ability-power item in Top Ride.
 
 Off by default. Toggle it in the in-game settings menu.
 
 ### Air quick spin
 
-Vanilla only checks for the L/R-flick quick spin while you are grounded on your machine - flicking in the air does nothing. With "Air Quick Spin" on, the check runs airborne too, in City Trial and Air Ride, for Kirby, King Dedede, and Meta Knight alike.
+Allows you to quick-spin in the air in Air Ride and City Trial.
 
-It still respects [access gating](#access-gating): if base abilities are gated and you have not found "Unlock Base Ability: Quick Spin" yet, the spin stays locked in the air as well.
+It still respects [access gating](#access-gating): if base abilities are gated and you have not Quick Spin yet, it will not work in the air either.
 
 Off by default. Toggle it in the in-game settings menu.
 
 ### Random start machine
 
-With "Random Start Machine" on, City Trial starts you on a random machine you have unlocked instead of the Compact Star. If you pick a machine yourself from the Stadium or Free Run grid, your pick is kept.
+With "Random Start Machine" on, City Trial starts you on a random machine you have unlocked instead of the Compact Star.
 
 With it off you get the Compact Star as usual, falling back to a random unlocked machine when machines are gated and you have not found the Compact Star yet.
 
