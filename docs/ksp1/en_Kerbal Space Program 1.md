@@ -372,8 +372,15 @@ never make an unreachable check reachable.
 - **Buff Types** — Which buff categories appear (`isp`, `thrust`, `heat_tolerance`, `structural`, `control`,
   `power`, and the consumable `refuel`). All are enabled by default. This is a list, and writing it out
   **replaces** the default — any name you omit is switched off.
-- **Death Link** — **Off by default.** When on, losing a Kerbal broadcasts a death to everyone else on
-  DeathLink, and their deaths destroy your craft.
+- **Death Link** — **Off by default.** When on, losing a Kerbal *or* losing the craft you are flying
+  broadcasts a death to everyone else on DeathLink, and their deaths destroy your craft. Losing the
+  craft means the game itself counts the vessel as destroyed (its root part is gone) — shedding a
+  landing leg, a solar panel, or a spent booster on impact does **not** count, so you can still
+  lithobrake. Practice flights (the mod's simulation mode) neither send nor receive deaths.
+- **Death Link On Revert** — **Off by default.** Requires Death Link. Also broadcasts a death when you
+  Revert a flight, so a failure can't be save-scummed away for free. Reverting a craft that never
+  actually launched — still clamped on the pad, or on the runway before you taxi — is always free, and
+  a flight that already broadcast a death never sends a second one when you revert it.
 
 ## Tracking In-Logic Locations
 

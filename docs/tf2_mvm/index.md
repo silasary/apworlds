@@ -12,10 +12,6 @@ nobody installs a modification.
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Team Fortress 2 Mann vs Machine">English</a>
-- <a href="fr_Team Fortress 2 Mann vs Machine">French</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
-- <a href="setup_fr">French</a>
 

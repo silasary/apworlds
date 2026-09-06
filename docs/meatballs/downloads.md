@@ -62,17 +62,11 @@
 #### v0.1.0r4r2
 - <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.4.0/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.4.0/meatballs.apworld</a>
 
-#### v0.1.0r4
-- <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.2/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.2/meatballs.apworld</a>
-
 #### v0.1.0r3
 - <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v0.1.29-alpha/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v0.1.29-alpha/meatballs.apworld</a>
 
 #### v0.1.0r3r2
 - <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.4.1/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.4.1/meatballs.apworld</a>
-
-#### v0.1.0r3
-- <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.1/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.1/meatballs.apworld</a>
 
 #### v0.1.0r2
 - <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v0.1.28-alpha/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v0.1.28-alpha/meatballs.apworld</a>
@@ -82,6 +76,12 @@
 
 #### v0.1.0r2
 - <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.0/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.0/meatballs.apworld</a>
+
+#### v0.1.0r2
+- <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.1/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.1/meatballs.apworld</a>
+
+#### v0.1.0r2
+- <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.2/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.2/meatballs.apworld</a>
 
 #### v0.1.0
 - <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v0.1.27-alpha/meatballs.apworld">https://github.com/mdietz94/smo_archipelago/releases/download/v0.1.27-alpha/meatballs.apworld</a>
