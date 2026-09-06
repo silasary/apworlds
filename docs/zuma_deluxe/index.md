@@ -1,6 +1,8 @@
 # Zuma Deluxe
 
-
+Deep in the jungle lie hidden temples bursting with traps and trickery, and it&#x27;s up to you to uncover their treasures. 
+Fire magical balls from your stone frog idol to make matches of three or more and clear the deadly chain before it reaches
+  the golden skull.
 
 
 ## Downloads

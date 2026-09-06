@@ -20,6 +20,48 @@ After installing the `.apworld`, create your config from the Archipelago Launche
 
 See the setup guide for step-by-step instructions.
 
+Every option has a sensible default, so you only need to write down the ones you want to change. A config
+that tunes the goal and the filler pool looks like this:
+
+```yaml
+name: YourName
+game: Kerbal Space Program 1
+
+Kerbal Space Program 1:
+  goal: duna_return
+  starting_body: kerbin
+  difficulty: normal
+
+  # Traps, buffs and science packs share one filler pool: turning either up
+  # means fewer science packs.
+  trap_density: light
+  buff_density: normal
+
+  # A MAPPING. Any key you leave out is weight 0, so this disables every trap
+  # except the three listed.
+  trap_type_weights:
+    throttle: 1
+    timewarp: 1
+    comms_outage: 2      # twice as likely as the other two
+
+  # A LIST. Writing it out REPLACES the default (all of them), so this enables
+  # only these three and switches the other four off.
+  buff_types:
+    - isp
+    - thrust
+    - refuel
+```
+
+Those last two comments are the easiest thing to get wrong, and they behave differently:
+
+- **Mapping options** (`trap_type_weights`, `contract_type_weights`) treat an absent key as `0`. Listing one
+  trap does not "add" it to the defaults — it disables the other ten.
+- **List options** (`buff_types`, `enabled_part_packs`, the custom-goal body lists) replace the default set
+  outright. If you list `buff_types` at all, anything you omit is off — including `refuel`, which is easy to
+  forget because it is the only consumable.
+
+If you just want everything on, leave the option out entirely rather than writing out the full set.
+
 ## What does randomization do to this game?
 
 Rocket parts (engines, fuel tanks, capsules, decouplers, etc.) are removed from the normal tech tree and shuffled
@@ -31,8 +73,9 @@ launch, altitude records, orbits, landings, crew landings, flag plants, sample r
 bodies in the Kerbol system. Completing a harder mission awards multiple checks at once (e.g., a Mun Sample
 Return also counts as a Mun Landing, Crewed Landing, etc.).
 
-You also play **contracts**: native KSP contracts (orbit a body, rescue a stranded Kerbal, transmit science,
-plant a flag, and more) injected into your game as items. Accepting and completing a contract checks its
+You also play **contracts**: native KSP contracts (orbit a body, rescue a stranded Kerbal, gather science and
+bring it home or transmit it, fly by a body and return, orbit a body and return, plant a flag, and more)
+injected into your game as items. Accepting and completing a contract checks its
 reward location, and under the default goal mode, completing contracts is what unlocks your victory condition.
 The orbital and rescue contracts are randomized — each seed hands you different target orbits to fly.
 
@@ -79,7 +122,58 @@ world. See *Hidden bodies* below.
 **Other equipment** includes RTGs, batteries, docking ports, landing legs, ladders, reaction wheels, RCS,
 science instruments, and more.
 
-**Traps** are **NOT** implemented today but are planned for later.
+**Traps** replace part of the filler pool when *Trap Density* is above *none* (default: *light*, ~10% of
+filler). A trap fires some time after you receive it, one at a time, and never twice — reverting a save
+cannot bring a suffered trap back. Most traps need you in flight (*Time Slip* can also strike at the Space
+Center or Tracking Station), and timed trap effects run in **real time**: time warp does not shorten them.
+Traps never appear in the starting inventory. Which traps appear is controlled by *Trap Type Weights* (all
+equally likely by default; weight 0 disables one):
+
+- *Stage Fright* — a 15-second fuse (warning at ten, hard count from five), then your next stage fires.
+  No cancel — but a stage lock (Alt+L) engaged at zero wins.
+- *Gravity Storm* — local gravity runs 20–50% off for a while.
+- *Spin Cycle* — the craft is thrown into a random tumble.
+- *Radio Silence* — every antenna goes dead for a while.
+- *Short Circuit* — electric charge drains rapidly for a few seconds.
+- *Thermal Runaway* — one part heats toward (but not past) its failure point.
+- *Loose Bolts* — one peripheral part falls off. Permanently.
+- *Mandatory Spacewalk* — a kerbal decides to step outside. Right now.
+- *Time Slip* — time warp changes on its own.
+- *Sticky Throttle* — the throttle jumps to a random setting.
+- *Minor Kraken Attack* — solar panels, gear, and antennas all toggle. Yes, in atmosphere too.
+
+**Buffs** are the upside twin of traps, and also come out of the filler pool (so a higher *Buff Density*
+means fewer science packs). Most of them are **permanent**: they apply for the rest of the run the moment
+you receive them, and copies **stack additively** — three *Engine Efficiency I* is +3%, not +3.03%. Every permanent type ships as
+a three-rung ladder: **I** is +1%, **II** is +3%, **III** is +5%. At the default *normal* density you get
+3× I, 2× II and 1× III of each enabled type, so a single type can reach **+14%**; *light* caps it at +4%
+and *heavy* at +24%. *Structural Integrity* runs a steeper **5 / 15 / 25** ladder (so a **+70%** ceiling at
+*normal*) — the stats it scales are small enough in absolute terms that the standard rungs would be
+imperceptible. Unlike traps, buffs are allowed in the starting inventory. Which types appear is
+controlled by *Buff Types*.
+
+- *Engine Efficiency* — engines burn fuel more efficiently. Thrust is unchanged; you just get more Δv.
+- *Engine Thrust* — liquid engines push harder for better TWR. Solid boosters are deliberately excluded:
+  they cannot be throttled down, so buffing them would make ascents harder to fly, not easier.
+- *Heat Tolerance* — every part survives a higher temperature.
+- *Structural Integrity* — parts survive harder impacts, more joint stress, higher g, and greater
+  pressure (crush depth).
+- *Control Authority* — stronger reaction wheels and wider engine gimbal range.
+- *Power Generation* — solar panels, RTGs, and fuel cells all produce more electric charge. Worth most
+  in the outer system, where solar output has fallen off with distance.
+
+The rest are **consumables**: instead of applying themselves, each copy you receive banks one charge you
+spend from the AP mod menu at the moment you want it. *Buff Density* sets how many charges of each
+enabled consumable you get across the run — 1 at *light*, 3 at *normal*, 5 at *heavy*.
+
+- *Mid-Air Refuel* — refills the fuel tanks on the craft you are currently flying, wherever it is. It
+  tops up fuel only: ore and other ISRU resources are untouched. Spending a charge consumes it
+  **once and for all** — reverting the save does not hand it back, so bank it for a flight you would
+  otherwise have to abandon.
+
+Buffs are invisible to the randomizer's logic — permanent and consumable alike. A buff can never make an
+out-of-logic mission reachable; it only makes a mission you could already fly easier to fly. Nothing in
+the logic ever assumes you saved a charge.
 
 ### Locations
 
@@ -93,8 +187,11 @@ experiments; instead you complete missions and contracts:
   Only one per building, not each sub-building biome.
 - **Home-body Milestones** (11) — First Launch, First Landing, First Crash, altitude records, First Staging.
   Plus a single body-agnostic **Splashdown** check that fires on any ocean body (Kerbin / Eve / Laythe).
-- **Body Mission Events** (~231) — Per-body checks across all 17 bodies: Flyby, Orbit, Landing, Crewed Landing,
-  Flag Plant, Return, and Sample Return. Each event type has multiple slots.
+- **Body Mission Events** (~300) — Per-body checks across all 17 bodies: Flyby, Orbit, Landing, Crewed Landing,
+  Flag Plant, Sample Return, and three separate return tiers — **SOI Return** (fly by and come home),
+  **Orbit Return** (capture into orbit and come home) and **Return** (land and come home). Each event type
+  has multiple slots. The three return tiers are independent: a direct-entry landing awards SOI Return and
+  Return but not Orbit Return, because that craft never orbited.
 - **Tech Tree Nodes** (124–248) — Each of the 62 tech nodes has 2–4 location slots (scaled by difficulty).
   Purchasing a node with science points awards these checks.
 - **Contracts** (10 by default) — Native KSP contracts injected by the client; completing one checks its reward
@@ -255,6 +352,28 @@ won't contain items required for progression.
 - **Allow Undiscovered Bodies** — **On by default.** On: undiscovered bodies are visible-but-uninteractable and
   can be flown to out of logic (arriving reveals them). Off: they are invisible and flying into their SOI
   destroys your craft. Only meaningful when Body Visibility Mode is hiding bodies.
+
+### Filler pool options
+
+Science packs, traps and buffs all come out of the same filler pool, so turning traps or buffs up means
+fewer science packs. None of them affect logic — a trap can never make a check unreachable, and a buff can
+never make an unreachable check reachable.
+
+- **Trap Density** — How much of the filler pool becomes traps. `none`, `light` (**default**, ~10% of
+  filler), `moderate` (~25%), `heavy` (~50%), `hell` (every filler item is a trap). See *Traps* above for
+  what each one does.
+- **Trap Type Weights** — Relative weight of each trap type in the trap pool; weight `0` disables that trap
+  entirely. All eleven are enabled and equally likely by default. Note this is a mapping, and any key you
+  leave out counts as `0` — see the example above.
+- **Buff Density** — How many buff items are added. `none`, `light`, `normal` (**default**), `heavy`. This
+  sets both how many you find and how high one type can stack: **+4% / +14% / +24%** for the standard
+  ladder, or **+20% / +70% / +120%** for Structural Integrity's steeper one. It also sets how many
+  *Mid-Air Refuel* charges you get: **0 / 1 / 3 / 5** per run.
+- **Buff Types** — Which buff categories appear (`isp`, `thrust`, `heat_tolerance`, `structural`, `control`,
+  `power`, and the consumable `refuel`). All are enabled by default. This is a list, and writing it out
+  **replaces** the default — any name you omit is switched off.
+- **Death Link** — **Off by default.** When on, losing a Kerbal broadcasts a death to everyone else on
+  DeathLink, and their deaths destroy your craft.
 
 ## Tracking In-Logic Locations
 

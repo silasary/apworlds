@@ -76,10 +76,17 @@ Kerbal Space Program 1:
   exclude_late_tech_tree: true
   body_visibility_mode: auto        # hidden bodies unlock via Discover items; auto picks a scope from your goal
   allow_undiscovered_bodies: true   # false = flying into an undiscovered body's SOI destroys your craft
+  trap_density: light               # traps are on by default; `none` turns them off
+  buff_density: normal              # permanent stat buffs + Mid-Air Refuel charges; `none` turns them off
 ```
 
 Set `body_visibility_mode: all_visible` to play with the whole solar system visible from the start (the
 pre–hidden-bodies behaviour).
+
+Traps and buffs both come out of the same filler pool as science packs, so turning either up means fewer
+science packs. Which ones appear is controlled by `trap_type_weights` and `buff_types` — see **Filler pool
+options** on the game info page, which also covers the one gotcha worth knowing: those two options have
+different shapes, and writing either one out by hand disables everything you did not list.
 
 ### Verifying your config file
 
