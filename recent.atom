@@ -2,119 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-06T06:14:28.004533+00:00</updated>
+  <updated>2026-09-06T12:17:00.699485+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.13</id>
-    <title>Red Prince v1.0.13.post2</title>
-    <updated>2026-09-03T16:59:18+00:00</updated>
-    <author>
-      <name>deefdragon</name>
-    </author>
-    <author>
-      <name>BatmenzDW</name>
-    </author>
-    <content># Red Prince 1.0.13
-
-&gt; **Hotfix updated September 5, 2026:** If you downloaded 1.0.13 before this
-&gt; update, redownload and reinstall both `RedPrinceArchipelago.zip` and
-&gt; `redprince.apworld`. The updated files fix item-replay synchronization,
-&gt; same-seed fresh-room handling, and a Bunk Room generation failure.
-
-## September 5 hotfix
-
-- Fixed the game plugin reporting version 1.0.12 after installing 1.0.13.
-- Fixed received-item replay stopping on a missing AP item effect, most visibly
-  when receiving the Battery Pack after resetting or reloading a save.
-- A newly hosted Archipelago room that reuses the same generated seed no longer
-  receives cached checks from the previous room. Normal reconnect recovery is
-  unchanged when the server still contains checked locations.
-- Fixed generation failing when Archipelago's early-item pass had already filled
-  one of the two Bunk Room entrance checks. The second check now receives a
-  matching item as intended.
-
-## Gameplay and logic
-
-- Receiving the Gemstone Caverns or Blackbridge progression unlock now opens
-  the corresponding area without also requiring its vanilla puzzle.
-- Starting-room selections now always include at least one path room.
-- Added explicit early-drafting access logic for the Garage, Tunnel,
-  Foundation, and Secret Passage.
-- Paper Crown logic now accounts for its five-coin cost through the renewable
-  Coin Purse route and sufficient reachable rooms.
-- Fixed exhausted unique rooms remaining in draft picker arrays and appearing
-  again after their allowed copies had already been drafted.
-
-## Commissary upgrade disk
-
-- The Commissary upgrade disk is an Archipelago location and item only when
-  Special Shop Sanity is enabled.
-- Its logic requires the Coin Purse as a renewable source for the purchase.
-- When Special Shop Sanity is disabled, the disk retains its vanilla behavior.
-
-## Performance
-
-- Removed the experimental unchecked-room draft border/highlight and its
-  recurring scene-wide TextMeshPro scan. The release contains no border or
-  highlight feature code.
-
-## Compatibility
-
-- Archipelago 0.6.7 or newer.
-- The 1.0.13 game plugin and 1.0.13 APWorld should be distributed together.
-</content>
-    <link href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.13"/>
-  </entry>
-  <entry>
-    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.3.0</id>
-    <title>Final Fantasy VIII v0.3.0</title>
-    <updated>2026-09-03T17:28:16+00:00</updated>
-    <author>
-      <name>ff8_arch</name>
-    </author>
-    <content>## Install
-
-1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
-2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
-3. Optional: `ff8_visual_tracker.zip` is a map preset for the Archipelago Visual Tracker — see below.
-
-### Visual Tracker (new)
-
-`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) client. To use it:
-
-1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
-2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
-3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
-
-Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
-
-Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
-
-
-**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.2.1...v0.3.0
-
-</content>
-    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.7</id>
-    <title>Xenoblade X v0.2.7</title>
-    <updated>2026-09-03T17:44:42+00:00</updated>
-    <author>
-      <name>Maragon</name>
-    </author>
-    <author>
-      <name>Nina</name>
-    </author>
-    <content>- Fix ap graphic pack @jackisk98&#13;
-- Add lvl logic support for skells&#13;
-- Add universal tracker support&#13;
-- Improve logic for `The Skell License`</content>
-    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.7"/>
-  </entry>
   <entry>
     <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.6.0</id>
     <title>Refunct v1.6.0</title>
@@ -405,7 +297,7 @@ If you had this issue on 0.8.1, you can change only the `.asi` and the mod will 
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.10</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r3</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
     <updated>2026-09-04T18:27:53+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -887,9 +779,269 @@ If you were stuck on `High Stakes, Low Ryder`, `Burning Desire` or other mission
     <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.3"/>
   </entry>
   <entry>
+    <id>https://github.com/zane31415/APVerticalDropHeroesHD/releases/tag/v0.4.0</id>
+    <title>Vertical Drop Heroes HD v0.4.0</title>
+    <updated>2026-09-05T20:37:08+00:00</updated>
+    <author>
+      <name>Broney</name>
+    </author>
+    <content>* Added deathlink amnesty (both multiplicative and buffer)&#13;
+* Changed default shop cliff value to 0&#13;
+* Added shop colors to indicate progression/trap of things you might buy.</content>
+    <link href="https://github.com/zane31415/APVerticalDropHeroesHD/releases/tag/v0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lordlou/Archipelago/releases/tag/v0.119.4</id>
+    <title>Super Metroid Map Rando v0.119.4</title>
+    <updated>2026-09-05T21:23:06+00:00</updated>
+    <author>
+      <name>lordlou</name>
+    </author>
+    <content>## What's Changed&#13;
+- Fixed progression item that could be placed in unreachable (and inexistent) locations&#13;
+- Updated missing requirements.txt to v0.119.3 (for pysmmaprando lib)</content>
+    <link href="https://github.com/lordlou/Archipelago/releases/tag/v0.119.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03k</id>
+    <title>Cuphead v0.2.20021010</title>
+    <updated>2026-09-05T21:29:51+00:00</updated>
+    <author>
+      <name>JKLeckr</name>
+    </author>
+    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
+&#13;
+### Revision&#13;
+&#13;
+This revision allows P. Sugar to be used for parry logic in the tutorial level.&#13;
+</content>
+    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03k"/>
+  </entry>
+  <entry>
+    <id>https://github.com/drtchops/Archipelago-Astalon/releases/tag/v1.0.0-rc6</id>
+    <title>Astalon v0.99.6</title>
+    <updated>2026-09-05T22:57:31+00:00</updated>
+    <author>
+      <name>DrTChops</name>
+    </author>
+    <content>**This is a testing pre-release. See the latest release for the stable version.**&#13;
+&#13;
+- Fix up issues with displaying items&#13;
+- Oops, another trap&#13;
+&#13;
+**More Information**: https://github.com/drtchops/Archipelago/blob/astalon/worlds/astalon/docs/en_Astalon.md&#13;
+**Setup Guide**: https://github.com/drtchops/Archipelago/blob/astalon/worlds/astalon/docs/setup_en.md&#13;
+**Full Changelog**: https://github.com/drtchops/Archipelago-Astalon/compare/v1.0.0-rc5...v1.0.0-rc6</content>
+    <link href="https://github.com/drtchops/Archipelago-Astalon/releases/tag/v1.0.0-rc6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.1</id>
+    <title>Minishoot Adventures v0.6.0r2</title>
+    <updated>2026-09-06T00:02:21+00:00</updated>
+    <author>
+      <name>TheNouillet</name>
+    </author>
+    <content>## [0.6.1] - 2026-09-06&#13;
+&#13;
+### Changed&#13;
+&#13;
+- Fixed not being able to unlock Sunken Temple entrance with Split Supershot enabled and not having Flameshot.</content>
+    <link href="https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.15</id>
+    <title>Stardew Valley v8.1.5</title>
+    <updated>2026-09-06T01:41:14+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Apworld&#13;
+- Added logic requirement on Evelyn for the Cookie Clicker Bundle&#13;
+&#13;
+## Mod&#13;
+- Fixed Cookie Clicker Bundle crashing when Evelyn doesn't exist&#13;
+- Made Grandmas unavailable when Evelyn doesn't exist&#13;
+- Improved wording on bundles that are not scouted (saying if it's intentionally not scouted or if the scouting failed)</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.15"/>
+  </entry>
+  <entry>
+    <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2_1</id>
+    <title>Civilization IV v0.0.1r3</title>
+    <updated>2026-09-06T02:11:31+00:00</updated>
+    <author>
+      <name>VincentSIFTD</name>
+    </author>
+    <content>Thanks to Konzera taking the plunge to run this in an actual multiworld, I've fixed a couple of important bugs. You need both the new APWorld and mod for these changes. Check the previous release for more details on Wondersanity and other big changes from 0.2.&#13;
+&#13;
+### Changelog:&#13;
+- Changed some backend behavior so large lists of items are actually sent to the game.&#13;
+- Fixed a typo preventing the Mausoleum of Maussollos check from being sent&#13;
+&#13;
+### Installation Instructions:&#13;
+1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.&#13;
+2. Install the APWorld as normal.&#13;
+&#13;
+### Play Instructions:&#13;
+1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)&#13;
+2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.&#13;
+3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking "Save and Connect." If the connection is successful you'll get a popup that says "Successfully Connected," and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**&#13;
+&#13;
+### Gameplay Issues:&#13;
+1. You can still receive techs in Techsanity from some ways that aren't traditional research: starting techs from your leader and tech trading, and this could lead to duplicates. These are planned to be removed in future updates. Let me know if things break because of them--they shouldn't, but I'm not 100% certain.&#13;
+2. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill (though the added Great People in the pool will help).&#13;
+3. There are a lot of debugging messages left in the mod. I removed some of them, but don't expect a clean feed.&#13;
+4. When you're trying to select an "obsolete" wonder to build in the city screen, the building options will jump to the top of the building list due to the hacky way I've implemented that ability. I want to fix it eventually, but for now the easiest way to mitigate it is to use the wonder filter on the right side of the city list (the star), which will have it jump back to the start of the wonders, which hopefully won't make it jump. You can also use the "choose what to build next" dialog, or just select it without moving your mouse (use the scroll wheel).&#13;
+&#13;
+### Technical Issues:&#13;
+1. I had generation errors when creating solo/near-solo multiworlds with high Techsanity Era Gates values--I never tested with higher values with locations other than Techsanity enabled but keep that in mind if you're having trouble generating.&#13;
+2. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.&#13;
+3. There have been bug reports of items received/obtained while offline not properly appearing in-game and/or being sent to the multiworld when reconnecting. I think this is related to mismatching either mod or APworld versions, but I haven't fully found the root cause yet.&#13;
+&#13;
+If you have any questions, bug reports, or things I forgot to mention, let me know in [the Civilization IV thread in the Archipelago Discord server](https://discord.com/channels/731205301247803413/1326231506682904576).&#13;
+&#13;
+Github for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/</content>
+    <link href="https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2_1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.1.7-b</id>
+    <title>Zuma Deluxe v0.1.7b0</title>
+    <updated>2026-09-06T02:45:42+00:00</updated>
+    <author>
+      <name>Movido51</name>
+    </author>
+    <content>Small Release for the Archipelago of Zuma Deluxe&#13;
+&#13;
+A playable version of the randomizer for Zuma Deluxe, still changes to come.&#13;
+&#13;
+Only a client fix from the version 0.1.6.&#13;
+&#13;
+# Quick Fixes&#13;
+- Added some small fixes from 0.2 to 0.1.6 to make that build better while 0.2 becomes playable..&#13;
+- traps and filler fixes.&#13;
+- unlock all adventure.&#13;
+&#13;
+# Compatible Version&#13;
+This release is a hot fix of version [0.1.0](https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.1.6-b) its compatible with the games made in that version, and only affects the client.&#13;
+&#13;
+# Remainders&#13;
+You need to have the Zuma Deluxe Client and the Zuma Deluxe game open at the same time to play&#13;
+&#13;
+If you connect while you have a level open in Zuma go back to the menu.&#13;
+&#13;
+If the game is not found it probably is not being played on English&#13;
+&#13;
+To keep track of locations use universal tracker&#13;
+&#13;
+When entering a map, always use the new game, it might not recognize the mode otherwise&#13;
+&#13;
+Any question, Bug or idea, feel free to ask on the discord channel for the game.&#13;
+&#13;
+</content>
+    <link href="https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.1.7-b"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.9.0</id>
+    <title>Kerbal Space Program 1 v0.9.0</title>
+    <updated>2026-09-06T03:02:39+00:00</updated>
+    <author>
+      <name>nickdavies</name>
+    </author>
+    <content>This release adds:&#13;
+&#13;
+1. **Traps:** Many different trap types were added to the AP. Most are non-lethal and are meant to be more fun/challenging rather than mission ending.&#13;
+2. **Deathlink:** This enables deathlink, if you crash you kill your friends!&#13;
+3. **Buffs:** Add various positive buffs like ISP increases, thrust increases, electric generator buffs, thermal and structural buffs. These are permanent. There is also 1 temporary buff for "mid air refuling" which you can activate from the AP mod menu (after getting the item) to one-time fully refill all tanks on-board your craft.&#13;
+&#13;
+Also fixes the soft lock in the Tracking Station bug for non-Kopernicus games. Kopernicus will possibly come later but remains unsupported today.&#13;
+&#13;
+**Full Changelog**: https://github.com/nickdavies/KSP1-Archipelago-client/compare/v0.8.0...v0.9.0
+
+**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.8.4...v0.9.0</content>
+    <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.9.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0c</id>
+    <title>Isles of Trials v0.2.0rc0</title>
+    <updated>2026-09-06T05:08:07+00:00</updated>
+    <author>
+      <name>NyanMC</name>
+    </author>
+    <content>when sending a location, the game now tries to find a fitting icon for the player to hold above their head instead of the AP icon (with the AP icon being a fallback when no such icon exists)&#13;
+fixed a bug where receiving multiple heart containers in succession (such as in an async) wouldn't refill health correctly&#13;
+modified the victory jingle</content>
+    <link href="https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0c"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.5-Hotfix2</id>
+    <title>Hollow Knight: Silksong v0.4.5r2</title>
+    <updated>2026-09-06T06:42:24+00:00</updated>
+    <author>
+      <name>BatAtVideoGames</name>
+    </author>
+    <content>I promise this is the last bit of 0.4.5 &#13;
+&#13;
+- Shellwood -&gt; Widow doesn't have "nothing" as logic requirement anymore&#13;
+- First Sinner memory sequence gets properly skipped now (to avoid softlocks)&#13;
+- Added KnockbackLink option to make up for this blunder (so far only compatible with PixelDraw, Sweet Defeat, PEAK, Spark the Electric Jester 3, Noita and other Silksong players)&#13;
+- Also somehow forgot spelling bee wincon in premade YAML oopsie&#13;
+- Fixed Flea: Deep Docks - Weaver Burial Spire logic&#13;
+- Lower deep docks logic strenghtened&#13;
+- Greyroots curse can no longer be overwritten by new received AP crests&#13;
+- Silk skills: Shuffle in act 2 will look for pale nails and fail gen&#13;
+- 7 more locations removed from act 2/cursed wincon that should stay in act 3 only&#13;
+- Start with map filled option in YAML is no longer the "button that does nothing" (by Skai)</content>
+    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.5-Hotfix2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.4</id>
+    <title>Cursed Words v0.5.2r2</title>
+    <updated>2026-09-06T10:17:04+00:00</updated>
+    <author>
+      <name>JammyGeeza</name>
+    </author>
+    <content>## Information&#13;
+This archipelago implementation is in **early development** and is in public pre-release for testing, so may not be complete and/or may contain bugs that heavily disrupt the experience. It is not advised to include this in large multiworlds at this time, so only do so at your own risk and inform your host beforehand.&#13;
+&#13;
+## Setup Guide&#13;
+Please visit the [Setup Guide](https://github.com/JammyGeeza/CursedWords-Archipelago#setup-guide) for instructions on how to install the mod client.&#13;
+&#13;
+## Issue / Bug Reporting&#13;
+If you experience issues that are not already on the [known issues list](https://github.com/JammyGeeza/CursedWords-Archipelago/issues/views/12865), please raise a new issue or post in the [Cursed Words Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1499176806962692196)&#13;
+&#13;
+## Patch Notes&#13;
+This patch provides the following fixes:&#13;
+### APWorld&#13;
+- _None_&#13;
+### Client&#13;
+- Fixes an issue causing the goal condition not to trigger on successful completion.&#13;
+- Fixes an issue causing the `Supervillain` item to only scatter `?` and Currency items.</content>
+    <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.7</id>
+    <title>Idle Loops v0.4.7</title>
+    <updated>2026-09-06T10:23:30+00:00</updated>
+    <author>
+      <name>IHaveNoFunnyName</name>
+    </author>
+    <content>## Idle Loops AP 0.4.7 ##&#13;
+&#13;
+* Fixed logic for locations that require Guild membership</content>
+    <link href="https://github.com/IHaveNoFunnyName/Archipelago/releases/tag/0.4.7"/>
+  </entry>
+  <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.11.0r4</title>
-    <updated>2026-09-05T20:03:27+00:00</updated>
+    <title>Team Fortress 2 Mann vs Machine v1.11.0r2</title>
+    <updated>2026-09-06T12:00:14+00:00</updated>
     <author>
       <name>mathis</name>
     </author>
@@ -897,7 +1049,7 @@ If you were stuck on `High Stakes, Low Ryder`, `Burning Desire` or other mission
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `26d4fa76d9a46dd4ae81f659e50ebb58d96b95d2`.
+Built from `5733d05fe093cd02c7a5c2cd7a7c12c288466d03`.
 
 ## Downloads
 
@@ -906,6 +1058,32 @@ Built from `26d4fa76d9a46dd4ae81f659e50ebb58d96b95d2`.
 
 ## Since v1.10.0
 
+- chore(deps): the defender bots move to v0.14.0
+- chore(beads): the two open pull requests, and the buff eligibility issues
+- chore(beads): the format bump two item beads wait on may not be needed
+- feat(items): the Grappling Hook, a server setting the multiworld hands over
+- docs: record self-blast launcher coverage
+- fix(plugin): retain normal no-self-blast explosions
+- refactor(playeryaml): the launcher half of the unified player file
+- feat(launcher): the log says when a newer release is out
+- fix(plugin): preserve movement without self-blast damage
+- refactor(playeryaml): one player file renderer for the container and the exe
+- test(plugin): guard generic self-blast damage path
+- fix(plugin): Linux gamedata for the projectile-count natives
+- fix(build): compile plugin before launcher assets
+- fix(plugin): the station lists buffs in chat instead of opening a menu
+- lint(forbidigo): the os.Getenv rule says what it is about
+- docs(images): the drop shadow is Go
+- build(archipelago): the player file writer is Go
+- build(gamedata): the weapon catalogue and the schema import are Go
+- build(launcher): the ZIP packager is Go
+- build(rcon): make rcon runs the launcher's Go client
+- fix(fastdl): clean Funnel route at shutdown
+- feat(fastdl): support Linux and Compose Funnel
+- fix(launcher): order context argument first
+- fix(launcher): satisfy startup lint checks
+- fix(launcher): require configured Funnel at startup
+- feat(launcher): publish FastDL with Tailscale Funnel
 - chore(beads): close the launcher join failure, whose fix has shipped
 - feat(traps): team Jarate, and the wiring every later trap reuses
 - chore(beads): a pass over the tracker
@@ -1073,207 +1251,5 @@ Built from `26d4fa76d9a46dd4ae81f659e50ebb58d96b95d2`.
 - feat(community): add portable MvM mission support
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zane31415/APVerticalDropHeroesHD/releases/tag/v0.4.0</id>
-    <title>Vertical Drop Heroes HD v0.4.0</title>
-    <updated>2026-09-05T20:37:08+00:00</updated>
-    <author>
-      <name>Broney</name>
-    </author>
-    <content>* Added deathlink amnesty (both multiplicative and buffer)&#13;
-* Changed default shop cliff value to 0&#13;
-* Added shop colors to indicate progression/trap of things you might buy.</content>
-    <link href="https://github.com/zane31415/APVerticalDropHeroesHD/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lordlou/Archipelago/releases/tag/v0.119.4</id>
-    <title>Super Metroid Map Rando v0.119.4</title>
-    <updated>2026-09-05T21:23:06+00:00</updated>
-    <author>
-      <name>lordlou</name>
-    </author>
-    <content>## What's Changed&#13;
-- Fixed progression item that could be placed in unreachable (and inexistent) locations&#13;
-- Updated missing requirements.txt to v0.119.3 (for pysmmaprando lib)</content>
-    <link href="https://github.com/lordlou/Archipelago/releases/tag/v0.119.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03k</id>
-    <title>Cuphead v0.2.20021010</title>
-    <updated>2026-09-05T21:29:51+00:00</updated>
-    <author>
-      <name>JKLeckr</name>
-    </author>
-    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
-&#13;
-### Revision&#13;
-&#13;
-This revision allows P. Sugar to be used for parry logic in the tutorial level.&#13;
-</content>
-    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03k"/>
-  </entry>
-  <entry>
-    <id>https://github.com/drtchops/Archipelago-Astalon/releases/tag/v1.0.0-rc6</id>
-    <title>Astalon v0.99.6</title>
-    <updated>2026-09-05T22:57:31+00:00</updated>
-    <author>
-      <name>DrTChops</name>
-    </author>
-    <content>**This is a testing pre-release. See the latest release for the stable version.**&#13;
-&#13;
-- Fix up issues with displaying items&#13;
-- Oops, another trap&#13;
-&#13;
-**More Information**: https://github.com/drtchops/Archipelago/blob/astalon/worlds/astalon/docs/en_Astalon.md&#13;
-**Setup Guide**: https://github.com/drtchops/Archipelago/blob/astalon/worlds/astalon/docs/setup_en.md&#13;
-**Full Changelog**: https://github.com/drtchops/Archipelago-Astalon/compare/v1.0.0-rc5...v1.0.0-rc6</content>
-    <link href="https://github.com/drtchops/Archipelago-Astalon/releases/tag/v1.0.0-rc6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.1</id>
-    <title>Minishoot Adventures v0.6.0r2</title>
-    <updated>2026-09-06T00:02:21+00:00</updated>
-    <author>
-      <name>TheNouillet</name>
-    </author>
-    <content>## [0.6.1] - 2026-09-06&#13;
-&#13;
-### Changed&#13;
-&#13;
-- Fixed not being able to unlock Sunken Temple entrance with Split Supershot enabled and not having Flameshot.</content>
-    <link href="https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.15</id>
-    <title>Stardew Valley v8.1.5</title>
-    <updated>2026-09-06T01:41:14+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content>## Apworld&#13;
-- Added logic requirement on Evelyn for the Cookie Clicker Bundle&#13;
-&#13;
-## Mod&#13;
-- Fixed Cookie Clicker Bundle crashing when Evelyn doesn't exist&#13;
-- Made Grandmas unavailable when Evelyn doesn't exist&#13;
-- Improved wording on bundles that are not scouted (saying if it's intentionally not scouted or if the scouting failed)</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.15"/>
-  </entry>
-  <entry>
-    <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2_1</id>
-    <title>Civilization IV v0.0.1r2</title>
-    <updated>2026-09-06T02:11:31+00:00</updated>
-    <author>
-      <name>VincentSIFTD</name>
-    </author>
-    <content>Thanks to Konzera taking the plunge to run this in an actual multiworld, I've fixed a couple of important bugs. You need both the new APWorld and mod for these changes. Check the previous release for more details on Wondersanity and other big changes from 0.2.&#13;
-&#13;
-### Changelog:&#13;
-- Changed some backend behavior so large lists of items are actually sent to the game.&#13;
-- Fixed a typo preventing the Mausoleum of Maussollos check from being sent&#13;
-&#13;
-### Installation Instructions:&#13;
-1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.&#13;
-2. Install the APWorld as normal.&#13;
-&#13;
-### Play Instructions:&#13;
-1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)&#13;
-2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.&#13;
-3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking "Save and Connect." If the connection is successful you'll get a popup that says "Successfully Connected," and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**&#13;
-&#13;
-### Gameplay Issues:&#13;
-1. You can still receive techs in Techsanity from some ways that aren't traditional research: starting techs from your leader and tech trading, and this could lead to duplicates. These are planned to be removed in future updates. Let me know if things break because of them--they shouldn't, but I'm not 100% certain.&#13;
-2. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill (though the added Great People in the pool will help).&#13;
-3. There are a lot of debugging messages left in the mod. I removed some of them, but don't expect a clean feed.&#13;
-4. When you're trying to select an "obsolete" wonder to build in the city screen, the building options will jump to the top of the building list due to the hacky way I've implemented that ability. I want to fix it eventually, but for now the easiest way to mitigate it is to use the wonder filter on the right side of the city list (the star), which will have it jump back to the start of the wonders, which hopefully won't make it jump. You can also use the "choose what to build next" dialog, or just select it without moving your mouse (use the scroll wheel).&#13;
-&#13;
-### Technical Issues:&#13;
-1. I had generation errors when creating solo/near-solo multiworlds with high Techsanity Era Gates values--I never tested with higher values with locations other than Techsanity enabled but keep that in mind if you're having trouble generating.&#13;
-2. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.&#13;
-3. There have been bug reports of items received/obtained while offline not properly appearing in-game and/or being sent to the multiworld when reconnecting. I think this is related to mismatching either mod or APworld versions, but I haven't fully found the root cause yet.&#13;
-&#13;
-If you have any questions, bug reports, or things I forgot to mention, let me know in [the Civilization IV thread in the Archipelago Discord server](https://discord.com/channels/731205301247803413/1326231506682904576).&#13;
-&#13;
-Github for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/</content>
-    <link href="https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2_1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.1.7-b</id>
-    <title>Zuma Deluxe v0.1.7b0</title>
-    <updated>2026-09-06T02:45:42+00:00</updated>
-    <author>
-      <name>Movido51</name>
-    </author>
-    <content>Small Release for the Archipelago of Zuma Deluxe&#13;
-&#13;
-A playable version of the randomizer for Zuma Deluxe, still changes to come.&#13;
-&#13;
-Only a client fix from the version 0.1.6.&#13;
-&#13;
-# Quick Fixes&#13;
-- Added some small fixes from 0.2 to 0.1.6 to make that build better while 0.2 becomes playable..&#13;
-- traps and filler fixes.&#13;
-- unlock all adventure.&#13;
-&#13;
-# Compatible Version&#13;
-This release is a hot fix of version [0.1.0](https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.1.6-b) its compatible with the games made in that version, and only affects the client.&#13;
-&#13;
-# Remainders&#13;
-You need to have the Zuma Deluxe Client and the Zuma Deluxe game open at the same time to play&#13;
-&#13;
-If you connect while you have a level open in Zuma go back to the menu.&#13;
-&#13;
-If the game is not found it probably is not being played on English&#13;
-&#13;
-To keep track of locations use universal tracker&#13;
-&#13;
-When entering a map, always use the new game, it might not recognize the mode otherwise&#13;
-&#13;
-Any question, Bug or idea, feel free to ask on the discord channel for the game.&#13;
-&#13;
-</content>
-    <link href="https://github.com/Movido51/Archipelago/releases/tag/zuma-deluxe-v0.1.7-b"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nickdavies/Archipelago/releases/tag/v0.9.0</id>
-    <title>Kerbal Space Program 1 v0.9.0</title>
-    <updated>2026-09-06T03:02:39+00:00</updated>
-    <author>
-      <name>nickdavies</name>
-    </author>
-    <content>This release adds:&#13;
-&#13;
-1. **Traps:** Many different trap types were added to the AP. Most are non-lethal and are meant to be more fun/challenging rather than mission ending.&#13;
-2. **Deathlink:** This enables deathlink, if you crash you kill your friends!&#13;
-3. **Buffs:** Add various positive buffs like ISP increases, thrust increases, electric generator buffs, thermal and structural buffs. These are permanent. There is also 1 temporary buff for "mid air refuling" which you can activate from the AP mod menu (after getting the item) to one-time fully refill all tanks on-board your craft.&#13;
-&#13;
-Also fixes the soft lock in the Tracking Station bug for non-Kopernicus games. Kopernicus will possibly come later but remains unsupported today.&#13;
-&#13;
-**Full Changelog**: https://github.com/nickdavies/KSP1-Archipelago-client/compare/v0.8.0...v0.9.0
-
-**Full Changelog**: https://github.com/nickdavies/Archipelago/compare/v0.8.4...v0.9.0</content>
-    <link href="https://github.com/nickdavies/Archipelago/releases/tag/v0.9.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0c</id>
-    <title>Isles of Trials v0.2.0rc0</title>
-    <updated>2026-09-06T05:08:07+00:00</updated>
-    <author>
-      <name>NyanMC</name>
-    </author>
-    <content>when sending a location, the game now tries to find a fitting icon for the player to hold above their head instead of the AP icon (with the AP icon being a fallback when no such icon exists)&#13;
-fixed a bug where receiving multiple heart containers in succession (such as in an async) wouldn't refill health correctly&#13;
-modified the victory jingle</content>
-    <link href="https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0c"/>
   </entry>
 </feed>
