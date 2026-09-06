@@ -8,6 +8,9 @@
 #### v0.8.1r2
 - <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld</a>
 
+#### v0.8.1r2
+- <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.3/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.3/gta_sa.apworld</a>
+
 #### v0.8.1
 - <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.1/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.1/gta_sa.apworld</a>
 

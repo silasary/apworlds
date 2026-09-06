@@ -4,7 +4,7 @@ Fly into a charming handcrafted world and go on an adventure that mixes up open 
 
 
 ## Downloads
-- <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.0/minishoot.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.1/minishoot.apworld">Latest Version (0.6.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

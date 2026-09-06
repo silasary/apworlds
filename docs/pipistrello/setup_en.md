@@ -2,7 +2,7 @@
 
 ## Required Software
 
-* [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)
+* [Archipelago v0.6.7+](https://github.com/ArchipelagoMW/Archipelago/releases)
 * [MelonLoader](https://melonwiki.xyz/#/README?id=requirements)
   * Requires [Microsoft Visual C++ 2015-2019 Redistributable 64 Bit](https://aka.ms/vs/16/release/vc_redist.x64.exe)
   * Requires [dotnet 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0#runtime-desktop-6.0.19)
@@ -27,11 +27,16 @@
 
 1. Download `PipistrelloArchipelago.dll` from the latest release.
 2. Place the dll file into the `Mods/` folder under the game's installation folder.
-3. Launch the game. The mod is installed correclty if a **Connect** button appears on the main menu.
+3. Launch the game. The mod is installed correctly if a **Connect** button appears on the main menu.
+
+To disable the Archipelago mod:
+
+1. In Steam, right-click the game and click Properties > General
+2. In Launch Options, add "--no-mods"
 
 ### Archipelago tools
 
-1. Make sure the Archipelago software is installed.
+1. Make sure the Archipelago software (v0.6.7 or newer) is installed.
 2. Download `pipistrello.apworld` from the latest release.
 3. Double-click on `pipistrello.apworld`. Archipelago should install the apworld automatically.
 4. Open the Archipelago Launcher and run "Generate Template Options" to create the options template file.
@@ -47,10 +52,12 @@ Follow [the official instructions](https://archipelago.gg/tutorial/Archipelago/s
     1. Note: the password field is **not protected** and is fully visible.
 3. Press the **Connect** button in-game.
 4. Once connected, you can press **Load Game**.
-5. Start with a *new* save file. The game will stall for a few seconds before loading.
+5. Start with a *new* save file. The game will stall for a few seconds while loading.
 6. You should now be loaded directly into South Plaza!
 
 ## Hints and trackers
 
-There is no visual tracker yet, so please use Universal Tracker for now. In Universal Tracker. locations are sorted by
-area (in logical order).
+There is no visual tracker yet, so please use Universal Tracker for now. In Universal Tracker, locations are sorted by
+area in logical order, then by X and Y coordinates.
+
+If you are ever confused about how to reach a location, you can use /explain and /get_logical_path in Universal Tracker.

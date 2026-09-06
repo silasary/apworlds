@@ -29,7 +29,13 @@ La seed fixe l'un de ces deux objectifs :
 ## Quels items peuvent se trouver dans le monde d'un autre joueur ?
 
 Tous : les tickets de mission, les classes de mercenaires, l'emplacement
-d'équipement progressif, les améliorations d'armes et les liasses d'argent.
+d'équipement progressif, les améliorations d'armes, les liasses d'argent et
+les pièges.
+
+Un piège a un effet négatif. `trap_percentage` décide combien la partie en
+contient, et il vaut zéro par défaut. Le seul qui existe arrose toute l'équipe
+de Jarate pendant dix secondes. Un piège qui arrive entre deux vagues attend
+la suivante.
 
 ## À quoi ressemble l'item d'un autre monde dans Mann vs Machine ?
 

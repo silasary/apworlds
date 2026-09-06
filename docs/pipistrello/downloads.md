@@ -1,9 +1,12 @@
 # Pipistrello and the Cursed Yoyo
 
 ## Latest
-- <a href="https://github.com/CertifiedPyro/PipistrelloArchipelago/releases/download/v0.2.0/pipistrello.apworld">Latest Version (0.2.0.post2)</a>
+- <a href="https://github.com/CertifiedPyro/PipistrelloArchipelago/releases/download/v0.3.0/pipistrello.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/CertifiedPyro/PipistrelloArchipelago/releases/download/v0.3.0/pipistrello.apworld">https://github.com/CertifiedPyro/PipistrelloArchipelago/releases/download/v0.3.0/pipistrello.apworld</a>
 
 #### v0.2.0.post2
 - <a href="https://github.com/CertifiedPyro/PipistrelloArchipelago/releases/download/v0.2.0/pipistrello.apworld">https://github.com/CertifiedPyro/PipistrelloArchipelago/releases/download/v0.2.0/pipistrello.apworld</a>
