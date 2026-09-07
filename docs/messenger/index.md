@@ -6,7 +6,7 @@ adventure full of thrills, surprises, and humor.
 
 
 ## Downloads
-- <a href="https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.0-beta/messenger.apworld">Latest Version (0.16.0b0)</a>
+- <a href="https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.1-beta/messenger.apworld">Latest Version (0.16.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

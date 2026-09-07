@@ -2,222 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-07T12:19:07.528487+00:00</updated>
+  <updated>2026-09-07T18:13:38.615753+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2</id>
-    <title>Final Fantasy 1 PSP v0.2.2</title>
-    <updated>2026-09-04T23:01:40+00:00</updated>
-    <author>
-      <name>1-800-thewolf</name>
-    </author>
-    <content>## New World-Changing Items&#13;
-&#13;
-&lt;img width="479" height="468" alt="image" src="https://github.com/user-attachments/assets/90c907e7-9de8-4cfb-af44-7989e866cf47" /&gt;&#13;
-&#13;
-- Lufenia Bridge&#13;
-- Lufenia Nitro Powder&#13;
-- Gaia Nitro Powder&#13;
-- Mount Gulg Entrance Key&#13;
-&#13;
-&lt;img width="600" height="340" alt="Lufenia Bridge" src="https://github.com/user-attachments/assets/59e0184e-1fa6-48ca-8664-10ed7f039c4c" /&gt;&#13;
-&#13;
-&gt; Lufenia Bridge Links Northern Provoka to Lufenia&#13;
-&#13;
-&lt;img width="600" height="340" alt="Lufenia Nitro Powder" src="https://github.com/user-attachments/assets/61452caa-a858-4960-983d-c87d5e73e93a" /&gt;&#13;
-&#13;
-&gt; Lufenia Nitro Powder Creates a path from Lufenia to Gaia&#13;
-&#13;
-&lt;img width="600" height="340" alt="Gaia Nitro Powder" src="https://github.com/user-attachments/assets/27cc67d2-4019-4e1a-a17a-866a17a62974" /&gt;&#13;
-&#13;
-&gt; Gaia Nitro Powder Connects Gaia to Mirage Tower&#13;
-&#13;
-&lt;img width="600" height="340" alt="Foot Trail Demo" src="https://github.com/user-attachments/assets/ab5db50d-ea86-4773-ad54-c78be9a67269" /&gt;&#13;
-&#13;
-&gt; With all three, you can walk from Provoka all the way to Gaia or Mirage Tower&#13;
-&#13;
-&#13;
-&lt;img width="368" height="276" alt="image" src="https://github.com/user-attachments/assets/aabae848-4c3f-4e17-966e-800b49efd37d" /&gt;&#13;
-&#13;
-&gt; Also an option to lock Mount Gulg until you find the Mount Gulg Key&#13;
-&#13;
-## Better Client Messages&#13;
-- I had a lot of debug messages in the ap client window previously, but that's significantly cleaned up now.&#13;
-- Now the ap client actually says useful information for you (imagine that)!&#13;
-&#13;
-## Bugfixes&#13;
-- Rare game crash related to missing party members&#13;
-- Rare graphical bug with missing party members making it look like they've already learned a spell&#13;
-- Other improvements and bugfixes&#13;
-&#13;
----&#13;
-&#13;
-👍🏻 Fully compatible with existing v0.2.0 seeds. Please upgrade mid-run for a better experience.</content>
-    <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04</id>
-    <title>Northgard v2026.9.4</title>
-    <updated>2026-09-05T00:07:37+00:00</updated>
-    <author>
-      <name>Chakraa</name>
-    </author>
-    <content>### Fixed
-- Non-Linear Mode: the `chapter7_requirement` option was enforced only by the client against real in-game battle wins, invisible to Archipelago's own logic. Fill could freely place one of the other Chapters' own unlock items inside a Chapter 07 location, creating an unwinnable seed the client would never let you escape. Chapter 07's region is now also gated in logic on holding enough of the other Chapters' items, matching the client's count (Chapter 01's precollected item counts toward the requirement, same as in-game).
-
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.02...2026.09.04</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.04"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IcyPenguin28/DotDAP/releases/tag/0.2.0</id>
-    <title>The Legend of Spyro: Dawn of the Dragon v0.2.0</title>
-    <updated>2026-09-05T03:50:52+00:00</updated>
-    <author>
-      <name>IcyPenguin_</name>
-    </author>
-    <author>
-      <name>Dragonsoul5000</name>
-    </author>
-    <content>## Additions:&#13;
-- Elements can now be shuffled into the item pool (excluding Fire and Poison, which the game selects on level load by default)&#13;
-- Added options to handle how elements are added to the item pool for both Spyro and Cynder&#13;
-- The ability to climb walls can now be shuffled into the item pool&#13;
-- The ability to run on walls can now be shuffled into the item pool&#13;
-- Elite enemy mask elements can now be randomized&#13;
-- Objectives are now location checks&#13;
-- The client now has a new icon courtesy of wheezingteapot&#13;
-## Changes:&#13;
-- Health Gem S/Mana Gem S items have been renamed to Small Health Gem/Small Mana Gem&#13;
-- All instances of the French "Remparts" in the location names have been changed to the English "Ramparts"&#13;
-## Fixes:&#13;
-- Issues with Death Link's implementation have been fixed.&#13;
-- Small Health Gems and Small Mana Gems are now clamped to Spyro's and Cynder's respective current maximum capacties for those resources.&#13;
-- Catacombs lock/unlock state is not reset by accident after pressing New Game/Load Game&#13;
-- Reconnecting to the multiworld no longer gives excess EXP from out of nowhere&#13;
-## Known Bugs:&#13;
-- Patches are lost when rebooting the game (#14)&#13;
-- Client always writes patches and items to memory when connecting to Archipelago regardless of game version (#13)</content>
-    <link href="https://github.com/IcyPenguin28/DotDAP/releases/tag/0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-102</id>
-    <title>Borderlands The Pre-Sequel v102</title>
-    <updated>2026-09-05T06:20:48+00:00</updated>
-    <author>
-      <name>EdricY</name>
-    </author>
-    <content>Want to test on the frontlines? Get the latest developments here. Higher likelihood of showstopping issues.&#13;
-Good luck out there, Slab!&#13;
-&#13;
-setup instructions on the home page and [readme](https://github.com/EdricY/Bouncy-Loot-God/blob/main/README.md)&#13;
-&#13;
-[sample yamls](https://github.com/EdricY/Bouncy-Loot-God/tree/main/sample-yamls)&#13;
-&#13;
-new stuff (since 0.5.5):&#13;
-- skip generic pizza spawn if check has been received&#13;
-- new travel targets at Hunter's Grotto Lodge and Windshear Start&#13;
-- new ramps to make DLCs more completable without jump&#13;
-- big reordering of checks&#13;
-- fully unlocked mode setting&#13;
-- base game story quests in fully unlocked mode</content>
-    <link href="https://github.com/EdricY/Bouncy-Loot-God/releases/tag/be-102"/>
-  </entry>
-  <entry>
-    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.0</id>
-    <title>starship_titanic v0.2.0</title>
-    <updated>2026-09-05T06:48:11+00:00</updated>
-    <author>
-      <name>rescheer</name>
-    </author>
-    <content># v0.2.0 (Unstable)&#13;
-First release. I've completed a few runs with this now, so I think it's ready to be called unstable.&#13;
-## Known Issues in this release&#13;
-Minor cosmetic issues with items in the world sometimes&#13;
-A couple edge logic issues&#13;
-A softlock in the elevator I cannot reproduce for the life of me. If the LiftBot's head disappears and you're no longer able to leave the elevator, I'd love to get a save file from you&#13;
-&#13;
-## General Tips&#13;
-Ctrl+C opens the cheat menu, which allows teleporting around the ship. This shouldn't cause any major issues, but I would be careful spawning items, because that may get messy.&#13;
-&#13;
-Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
-    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.0</id>
-    <title>Minishoot Adventures v0.6.0</title>
-    <updated>2026-09-05T09:10:41+00:00</updated>
-    <author>
-      <name>TheNouillet</name>
-    </author>
-    <content>## [0.6.0] - 2026-09-05&#13;
-&#13;
-### Added&#13;
-&#13;
-- A new setting called "Split Surf" has been added.&#13;
-    - When enabled, each water type requires its own Surf item to be navigable.&#13;
-    - When disabled, the normal Surf item unlocks navigation on all water types.&#13;
-    - Will replace Surf and 4 filler items.&#13;
-    - Water types are: Normal, Blue, Soiled, Dungeon and Gold.&#13;
-    - Logic has been adjusted to accomodate this new setting.&#13;
-    - Each surf items will be visible in the inventory.&#13;
-- A new setting called "Split Supershot" has been added.&#13;
-    - When enabled, the Supershot is broken down into 2 distinct items.&#13;
-    - Blastshot allows you to break rocks and walls.&#13;
-    - Flameshot allows you to light torches.&#13;
-    - Having one these two items will unlock Supershot for combat usage.&#13;
-    - When enabled, Supershot and one filler item will be replaced.&#13;
-    - Logic has been adjusted to accomodate this new setting.&#13;
-    - Both of these items will be visible in the inventory.&#13;
-- A new setting called "Primordial Crystal Activation Threshold" has been added.&#13;
-    - Set the Primordial Crystal activation threshold.&#13;
-    - If your current HP percentage is greater than or equal to this value and you have the Primordial Crystal, it will activate.&#13;
-    - This allows for more flexibility in the use of the Primordial Crystal, especially in combination with the "Enable Primordial Crystal Logic" option.&#13;
-    - This option does not affect logic. The value must be between 10 and 100.&#13;
-- A new setting called "Progressive Boost" has been added.&#13;
-    - When enabled, the game will fuse the Boost and the Advanced Energy module into two cumulative progressive upgrades.&#13;
-    - The first upgrade will always allow you to boost, and the second will reduce the energy cost of boosting.&#13;
-    - Note that both instances of Progressive Boost are marked as "Progression", although the second upgrade does not unlock any location.&#13;
-- A new setting called "Progressive Powers" has been added.&#13;
-    - When enabled, the game will fuse all powers and the corresponding idols into two cumulative progressive upgrades.&#13;
-    - The first upgrade will always allow you to use the corresponding power, and the second will grant you the idol's effect.&#13;
-    - Note that both instances of Progressive Power of protection are marked as "Progression", although the second upgrade does not unlock any location.&#13;
-- The APWorld now has a manifest.&#13;
-&#13;
-### Changed&#13;
-&#13;
-- **IMPORTANT** Some settings and location names have been renamed. See [docs/dev/history/0-6-0-renames.md](docs/dev/history/0-6-0-renames.md) for the full list.&#13;
-    - This means that you must change your YAML settings file for Archipelago. Refer to the file above for the replacements.&#13;
-- Fixed "Dungeon 3 - Behind North West doors" logic : now properly check for a way to use springboards&#13;
-    - Necessary to unlock the door to said location.&#13;
-- All shop locations requiring Super Crystals are now locked behind the same conditions as clearing Dungeon 5.&#13;
-    - As of now, there is no guarantee to have a sufficient amount of Super Crystals to buy the items you need.&#13;
-    - This is temporary, as work on this very subject will begin soon-ish.&#13;
-- When the goal is set to "Spirit Tower", the Golden Crystal Heart will now replace a filler item, instead of an Ancient Tablet.&#13;
-&#13;
-### Known issues&#13;
-&#13;
-- Rarely, when hovering between a piece of land and a piece of water, Minishoot can fall.</content>
-    <link href="https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.3</id>
-    <title>Clair Obscur Expedition 33 v0.4.3</title>
-    <updated>2026-09-05T10:51:35+00:00</updated>
-    <author>
-      <name>Démorck</name>
-    </author>
-    <author>
-      <name>Yezzdia</name>
-    </author>
-    <author>
-      <name>Noeva</name>
-    </author>
-    <content/>
-    <link href="https://github.com/Demorck/ClairObscur_APWorld/releases/tag/v0.4.3"/>
-  </entry>
   <entry>
     <id>https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.2</id>
     <title>metal_hellsinger v1.1.2</title>
@@ -554,6 +343,31 @@ This revision allows P. Sugar to be used for parry logic in the tutorial level.&
 - Made Grandmas unavailable when Evelyn doesn't exist&#13;
 - Improved wording on bundles that are not scouted (saying if it's intentionally not scouted or if the scouting failed)</content>
     <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.15"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.5</id>
+    <title>Stardew Valley v8.1.5r2</title>
+    <updated>2026-09-06T01:41:14+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Apworld&#13;
+- Added logic requirement on Evelyn for the Cookie Clicker Bundle&#13;
+&#13;
+## Mod&#13;
+- Fixed Cookie Clicker Bundle crashing when Evelyn doesn't exist&#13;
+- Made Grandmas unavailable when Evelyn doesn't exist&#13;
+- Improved wording on bundles that are not scouted (saying if it's intentionally not scouted or if the scouting failed)</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.5"/>
   </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_2_1</id>
@@ -1033,9 +847,84 @@ prevent checking if plando options are valid (validation runs before I can add t
     <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.0"/>
   </entry>
   <entry>
+    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.14.0</id>
+    <title>Slime Rancher 2 v0.14.0</title>
+    <updated>2026-09-07T10:35:10+00:00</updated>
+    <author>
+      <name>Rhelys</name>
+    </author>
+    <content>## New Features&#13;
+- Added new settings for shop randomization&#13;
+  - `shop_catalog` enables splitting up the available shop checks behind new progression items. The first "batch" of shop checks is always available&#13;
+  - `shop_catalog_items` chooses how many of the new Progressive Shop Catalog items are added in the pool - maximum of 4 (20% chunks)</content>
+    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.14.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/pre-release-mp-2.2.0</id>
+    <title>Slay the Spire II v1.1.0</title>
+    <updated>2026-09-07T13:26:39+00:00</updated>
+    <author>
+      <name>Kirbyfanner</name>
+    </author>
+    <author>
+      <name>Platano Bailando</name>
+    </author>
+    <author>
+      <name>Lyxn</name>
+    </author>
+    <author>
+      <name>MartyredG</name>
+    </author>
+    <author>
+      <name>Terairk</name>
+    </author>
+    <content>Yes you will need a new APworld but your yaml only needs to change by one line from 1.0.1&#13;
+&#13;
+## Multiplayer Stuff&#13;
+- Testing was done on beta branch so please use that. I did ZERO testing on the main branch for this.&#13;
+- Universal Buffs don't work, this is normal - they're automatically turned into 5 gold.&#13;
+- If you want to use the website to generate the yaml you sort of can: but you need to add a line for "player_count: 1", value can be 1-4.&#13;
+- You can either make one yaml for each player with "player_count: 1" aka one slot per player and each person joins their own slot. Host determines what ascensions and ascension downs count. Everything else should be player dependent&#13;
+- Alternatively: you can set "player_count: 2" or "player_count: 3" or "player_count: 4" in your yaml and everyone connects to the same slot. THEN in game (before you connect to a slot): you can hit Archipelago Settings -&gt; Multiplayer settings and change your player number&#13;
+- Yes the above system can make you generate a big yaml with like 1000+ checks if you wanted to and you can play that in singleplayer.&#13;
+- There's too many multiplayer adjustments / design decisions that had to be done to get this working so just message in the discord channel if you're curious about something, thanks. Also if you need help setting up just ask.&#13;
+- Everyone needs the Archipelago mod installed, yes. Everyone must have the same mod list (if you've installed other mods like say character mods and discover a bug: your bugs will take less priority, try to only run RitsuLib and this Mod (and maybe BaseLib and modded characters but modded characters are also borked)&#13;
+- If you encounter a state divergence: just host again and try again. If this happens frequently: open the dev console with ` or shift+8 and type "ap report" and then send the zipfile (in discord) that it hopefully opens. state divergences are impossible to debug without this so without it: state divergences occur way way before it actually puts the message in game.&#13;
+- &#13;
+Manually Installing the Mod from GitHub&#13;
+Ensure that you have [RitsuLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3747602295) installed. The easiest way to obtain it is from Steam Workshop.&#13;
+Download the "Archipelago.zip" from&#13;
+Go to your Slay the Spire II directory (In Steam, click "Browse Local Files")&#13;
+If a folder called mods does not exist, create it&#13;
+Unzip the contents of Archipelago.zip into mods&#13;
+If you've done this step correctly, your directory structure should look like this: /&lt;slay-the-spire-2-local-files&gt;/mods/Archipelago/ and the contents of that folder should be a bunch of .dll files and a .pck file (there may be more files too, please don't touch anything in this folder)&#13;
+&#13;
+## Random Bug Fixes&#13;
+- Have 2 saves in multiplayer: recent natural AP checkpoint (ie chests and bosses) and one checkpoint at each floor (probably a temporary adjustment while bugs and state divergences are common so you lose less progress).&#13;
+- Allow disconnecting and connecting to different multiworlds without restarting your game.&#13;
+- Allow golden compass to appear in start of act mode in act 2.&#13;
+- Many many many other bug fixes such as campfire softlock&#13;
+- Controller Support but only for beta branch&#13;
+- Massively overhauled architecture and restructuring of how Beta-Main compatibility works so things might break.&#13;
+- Fix !collect support&#13;
+- Fix progressive ancients, smiths and rests not being cleared in singleplayer leading to more than expected.&#13;
+- Option descriptions should be improved / better&#13;
+- Add accessibility and progression balancing in the yaml template and options creator (note website isn't updated until this stuff becomes a non experimental thing) &#13;
+- Ascension when launching should be more accurate&#13;
+- Shop Checks page button should be more noticeable (looks ugly though)&#13;
+- Shops send out hints automatically&#13;
+- Maybe fix the checks sending between different multiworlds&#13;
+- Remove lasting candy because its too complicated to support properly&#13;
+- Fix bug with visual display of 'Press Start location' being wrong in the Character Tracker UI&#13;
+- Golden Compass is now available in start of act mode in act 2.&#13;
+&#13;
+</content>
+    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/pre-release-mp-2.2.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
     <title>Team Fortress 2 Mann vs Machine v1.11.0r2</title>
-    <updated>2026-09-07T09:38:32+00:00</updated>
+    <updated>2026-09-07T13:29:43+00:00</updated>
     <author>
       <name>mathis</name>
     </author>
@@ -1043,7 +932,7 @@ prevent checking if plando options are valid (validation runs before I can add t
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `ae74ae75b1f73b2892e607ee02f8dc57cf6fdeb3`.
+Built from `dadfc2181c4d1504f7a1a141c01ac3fdab1003fd`.
 
 ## Downloads
 
@@ -1052,6 +941,10 @@ Built from `ae74ae75b1f73b2892e607ee02f8dc57cf6fdeb3`.
 
 ## Since v1.10.0
 
+- chore(beads): the healing remark read but not actioned
+- fix(buffs): count a passive in every slot, not the three unlocks use
+- chore(beads): Cowser's decisions, and where the evidence for each came from
+- feat(buffs): the four answers from Cowser's reply on #32
 - style(gamedata): gofumpt the merged test file
 - Merge branch 'merge/pr36' into merge/pr37, one death handler
 - fix(plugin): apply stomp kill effects
@@ -1280,16 +1173,253 @@ Built from `ae74ae75b1f73b2892e607ee02f8dc57cf6fdeb3`.
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
   <entry>
-    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.14.0</id>
-    <title>Slime Rancher 2 v0.14.0</title>
-    <updated>2026-09-07T10:35:10+00:00</updated>
+    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.9</id>
+    <title>Black Ops 3 - Zombies v0.5.9</title>
+    <updated>2026-09-07T13:47:33+00:00</updated>
     <author>
-      <name>Rhelys</name>
+      <name>colin969</name>
     </author>
-    <content>## New Features&#13;
-- Added new settings for shop randomization&#13;
-  - `shop_catalog` enables splitting up the available shop checks behind new progression items. The first "batch" of shop checks is always available&#13;
-  - `shop_catalog_items` chooses how many of the new Progressive Shop Catalog items are added in the pool - maximum of 4 (20% chunks)</content>
-    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.14.0"/>
+    <content>**Apworld + Mod update**&#13;
+&#13;
+- Starting Maps list is now shown after connection validation&#13;
+- **Item Category changes**&#13;
+  - Shield parts and map specific machines now have unique item categories:&#13;
+    - e.g `(Gorod Krovi) Shield` can be used to hint for the next logical shield part&#13;
+    - e.g `(Shadows of Evil) Perk` can be used to hint the next logical Shadows specific perk machine&#13;
+  - `Machines` is now `Perk`&#13;
+  - Other categories now use singulars (e.g `Gifts` is now `Gift`)&#13;
+  - Weapons now have specific item groups based on their category&#13;
+    - `Assault Rifle`, `Submachine Gun`, `Light Machine Gun`, `Sniper Rifle`, `Shotgun`, `Pistol`, `Launcher`, `Melee`, `Wonder Weapon`, `Equipment`, `Other`&#13;
+- Added location list for Nacht der Untoten to menu&#13;
+- Fixed not being able to receive items from players or locations with backslashes or quotes in their name&#13;
+- Fixed Origins late EE steps not logically requiring Maxis drone parts&#13;
+- Fixed Gorod Krovi Monkey Bomb upgrade location not logically requiring shield</content>
+    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/tag/v0.16.1-beta</id>
+    <title>The Messenger v0.16.0</title>
+    <updated>2026-09-07T14:25:05+00:00</updated>
+    <author>
+      <name>alwaysintreble</name>
+    </author>
+    <content># Messenger Randomizer AP&#13;
+&#13;
+Beta release for Messenger AP with many, many not yet merged changes.&#13;
+&#13;
+## Mod Changelog since v0.15.2&#13;
+- Add 4 new locations for the generators in Elemental Skylands (disabled by default) alwaysintreble#23&#13;
+- Support for deferred entrances in UT alwaysintreble#24&#13;
+- Improve region tracking for UT and poptracker alwaysintreble#30&#13;
+- Fix some location names that were different from the Apworld alwaysintreble#29&#13;
+- Improve logging even more&#13;
+&#13;
+### New since v0.16.0-beta&#13;
+- Fix connection overlay sometimes not showing up, or not showing when disconnected alwaysintreble#32&#13;
+- Necro cutscene no longer triggers automatically; you need to grab him&#13;
+- Play a portal animation when entering a boss room from the wrong dimension&#13;
+- Add a dimension portal in *Autumn Hills right* instead of automatically switching&#13;
+- Rework the Lost Woods solve to be only temporarily in transition rando when arriving in *Howling Grotto bottom*&#13;
+- Rewrite transition rando to have only one loading instead of two&#13;
+&#13;
+## Apworld Changelog official release (no change since v0.16.0-beta)&#13;
+- Add 4 new locations for the generators in Elemental Skylands (disabled by default) ArchipelagoMW/Archipelago#6252&#13;
+- Fix UT not working with some options ArchipelagoMW/Archipelago#6132 ArchipelagoMW/Archipelago#6340&#13;
+- Add map integration and glitch logic to UT (requires poptracker pack) ArchipelagoMW/Archipelago#6030&#13;
+- Add deferred entrances in UT map integration to prevent transition shuffle spoilers&#13;
+- Support for UT explain command ArchipelagoMW/Archipelago#6278&#13;
+- Fix transition plando not working for some entrances ArchipelagoMW/Archipelago#6327&#13;
+- Many logic fixes ArchipelagoMW/Archipelago#6124 ArchipelagoMW/Archipelago#6194 ArchipelagoMW/Archipelago#6258 ArchipelagoMW/Archipelago#6337&#13;
+&#13;
+[Commit link](https://github.com/Jouramie/Archipelago/releases/tag/messenger%2F0.16.0-beta)&#13;
+&#13;
+# Installation Instructions (for Windows, but likely compatible with other systems)&#13;
+Mod installation steps are the same as usual.&#13;
+&#13;
+## Apworld&#13;
+- Install Archipelago (link below) with the generator enabled.&#13;
+- Place the new `messenger.apworld` file in your custom world folder.&#13;
+- Remove the old `messenger.apworld` file from your `lib/worlds` folder.&#13;
+- When connecting to a _The Messenger_ seed with UT, you will be prompted to locate a The Messenger Track Pack (downloadable [here](https://github.com/alwaysintreble/TheMessengerTrackPack/releases)). **Do not unzip it.** Link the zipped file. Dismiss the prompt if you do not wish to use the map. If needed, you can change the location in your `host.yaml` in your Archipelago installation.&#13;
+&#13;
+## How to play the new content&#13;
+From the AP Launcher, you can use Options Creator to create a yaml for the beta apworld. That's where you can enable the Elemental Skylands generators shuffle. Once you have your yaml, generate locally.&#13;
+&#13;
+## Compatibility&#13;
+This release is fully compatible with worlds generated with the official apworld or on the site. Be aware, however, that if you use the tracker from this release, it might show some locations in logic that were not meant to be when the game was generated. Following what's "in logic" in the tracker will not match the spheres server-side.&#13;
+&#13;
+# Troubleshooting&#13;
+- Make sure you removed your `messenger.apworld` from `lib/worlds` and added the new apworld in `custom_worlds`.&#13;
+- *I can't see the map in UT, even though I linked the track pack.* Make sure you linked **the zipped** track pack. It needs to be zipped. You can change the file by editing your `host.yaml`.&#13;
+- *UT says the local datapackage for the connected game does not match the server's datapackage. Should I be worried?* No. You are connected to a game generated with a previous version of the apworld, but this should not prevent the tracker from working.&#13;
+- Report any issue in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel in the Archipelago Discord. Make sure to ping @jouramie otherwise I won't read. &#13;
+&#13;
+# Known issues&#13;
+- Loading a saved game in Howling Grotto bottom when transition shuffle is enabled might not solve lost woods correctly. &#13;
+  - Going back and forth through the transition in *Howling Grotto bottom* should solve the issue. &#13;
+- When loading a save, if connection cannot be established right away and transition shuffle is enabled, the new *Autumn Hills portal* might be missing. Happens when the room is asleept.&#13;
+  - Leaving and reloading the save should fix the issue.&#13;
+- When loading a save right after updating the mod, Lost Woods might unsolve, even if it was before.&#13;
+  - Just solve it again.&#13;
+&#13;
+# We Need Your Help! &#13;
+If you'd like to help integrate this into the main Archipelago releases, drop a comment on one of the pull requests! :wink:&#13;
+Also, please mention in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel that you used it, and report any issues. This will help with the integration process if some players mention using the beta world! </content>
+    <link href="https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/tag/v0.16.1-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.0</id>
+    <title>DuckGame v0.1.0r2</title>
+    <updated>2026-09-07T14:46:53+00:00</updated>
+    <author>
+      <name>Marsavue</name>
+    </author>
+    <content># v0.1.0 Angel tear drop&#13;
+New [PopTracker](https://github.com/blakelmenakle/Duck-Game-Poptracker/releases/latest) Thanks to Blakel&#13;
+New APWorld rules Thanks to 1e1001&#13;
+## Changes&#13;
+- Added Death Link&#13;
+- Death Link Amnesty&#13;
+- 13 New Traps + 2 Anti-Traps&#13;
+- Traps (more info in yaml):&#13;
+  - Clumsy&#13;
+  - Stop Hitting Yourself&#13;
+  - FIREEE!&#13;
+  - FIREEE*&#13;
+  - Slippery Hands&#13;
+  - Whats Under There?&#13;
+  - Caught You!&#13;
+  - Duck Season&#13;
+  - Hot Potato&#13;
+  - Whats This?&#13;
+  - esreveR&#13;
+  - A Gift for you&#13;
+  - Don't look up&#13;
+  - Prot V&#13;
+  - Make it rain&#13;
+- Mace Collar &amp; Weight Ball is now a single item called Mace&#13;
+&#13;
+## APWorld Changes&#13;
+- Reworked logic so now each medal has requirements for certain items, should enhance randomisation&#13;
+- Death Link setting&#13;
+- Death Link Amnesty setting&#13;
+- Goal condition is reimplemented and Universal tracker now works correctly&#13;
+- Each trap can be weighted in the yaml&#13;
+&#13;
+## More Info&#13;
+&#13;
+Compatible with v0.1.0 Client&#13;
+Client: https://github.com/Marsavue/DuckGameArchipelago/releases</content>
+    <link href="https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gaithernOrg/ArchipelagoKHBBS/releases/tag/0.2.0</id>
+    <title>Kingdom Hearts Birth by Sleep v0.2.0</title>
+    <updated>2026-09-07T15:32:15+00:00</updated>
+    <author>
+      <name>gaithernOrg</name>
+    </author>
+    <content>### DISCLAIMER&#13;
+Always check for updates in OpenKH for the AP Companion mod every time you play!  &#13;
+&#13;
+- Click Settings &gt; Check Mods for Updates&#13;
+- If there are updates to the AP Mod, download them and rebuild your game using Mod Loader &gt; Build and Run&#13;
+&#13;
+The game is prone to crashing, PLEASE SAVE OFTEN&#13;
+&#13;
+### How to play:&#13;
+&#13;
+BEFORE MODDING, PLEASE INSTALL AND RUN KHBBS AT LEAST ONCE.&#13;
+&#13;
+1. Install OpenKH and the Lua Backend. &#13;
+- Download the latest release of OpenKH here: https://github.com/OpenKH/OpenKh/releases/tag/latest&#13;
+- Extract the files to a directory of your choosing.&#13;
+- Open OpenKh.Tools.ModsManager.exe and run first time set up.&#13;
+- When prompted for game edition, choose PC, choose which platform you are playing on (Steam or EGS), navigate to your KH I.5 + II.5 installation folder in the path box, then click "Next"&#13;
+- When prompted, install Panacea, then click "Next"&#13;
+- When prompted, check KHBBS plus any other AP game you play (KH2) and click "Install and configure Lua backend", then click "Next".&#13;
+- Extracting game data for KHBBS is unnecessary, but you may want to extract data for KH2 if you plan on playing KH2 AP.&#13;
+- Click "Finish"&#13;
+&#13;
+2. Open "OpenKh.Tools.ModsManager.exe"&#13;
+3. Click the drop down menu at the top-right and choose "Birth by Sleep"&#13;
+4. Click Mods&gt;Install a New Mod&#13;
+5. In "Add a new mod from GitHub" paste "gaithern/KH-BBS-AP-LUA"&#13;
+6. Click Install&#13;
+7. Navigate to Mod Loader and click "Build Only"&#13;
+8. Place your khbbs.apworld file in your worlds folder (usually /lib/worlds/)&#13;
+9. Run ArchipelagoLauncher.exe&#13;
+10. Click "Generate Template Settings".  This will open file explorer&#13;
+11. Find "Kingdom Hearts Birth by Sleep.yaml" and copy it to /Players/ (create this folder if it does not exist)&#13;
+12. Open the YAML file and change the line that says "name: Player{number}" to your desired player name.&#13;
+13. Adjust the settings in the YAML to your liking&#13;
+14. Run ArchipelagoGenerate.exe&#13;
+15. Take the newly created AP_XXX.zip file in /output/ in upload it here: https://archipelago.gg/uploads&#13;
+16. Open ArchipelagoLauncher.exe&#13;
+17. Click "KHBBS Client" and connect to your server hosted on archipelago.gg&#13;
+18. From the zip file mentioned above, retrieve the seed zip file (example: AP-95162914732603780136-P1-Player1_0.5.0.zip)&#13;
+19. In OpenKH, click the green plus to add a mod, then click "Select and install Mod Archive or Lua Script"&#13;
+20. Navigate to and select your seed zip.&#13;
+21. With both the companion and the seed checked, click "Mod Loader", then "Build and Run"&#13;
+22. Play!&#13;
+&#13;
+----------&#13;
+&#13;
+### How the randomizer works:&#13;
+&#13;
+- All chests, stickers, bonus rewards, and pop up story rewards are randomized.&#13;
+- You must collect 3 Wayfinders to open The Keyblade Graveyard and complete your seed.</content>
+    <link href="https://github.com/gaithernOrg/ArchipelagoKHBBS/releases/tag/0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.0.2</id>
+    <title>Taskipelago v1.0.2</title>
+    <updated>2026-09-07T15:58:36+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>Quick bug fix patch&#13;
+&#13;
+## Bug fixes&#13;
+* Fixed an issue where the offsets for item rows under a filler block were not being offset properly on export&#13;
+* Fixed pop-up windows on linux &#13;
+* Fixed a bug with drawer rendering on linux&#13;
+Note on linux fixes: I use wayland, need verification from other compositor/window manager users&#13;
+&#13;
+## Known Issues&#13;
+* Universal Tracker is unhappy with the structure of the datapackage because of the dynamic nature of Taskipelago's location names. This is aimed to be resolved in a future patch. This is an issue specifically with multiple taskipelago worlds in a single multiworld with shared item or location names.</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.8.1</id>
+    <title>Brave Fencer Musashi v0.8.1</title>
+    <updated>2026-09-07T17:25:50+00:00</updated>
+    <author>
+      <name>AegeusEvander</name>
+    </author>
+    <content>0.8.1 added:&#13;
+-fixed BP getting reset when reconnecting client when BP Sanity is False&#13;
+&#13;
+0.8.0 Added:&#13;
+-full map tracker&#13;
+-fixed bell logic (again)&#13;
+-added commands&#13;
+--/teleport [id]&#13;
+---uses the debug menu to teleport the player to selected area (leave blank to teleport back to town)&#13;
+---unstable and may crash if used&#13;
+--/export_geometry&#13;
+---exports the static geometry of the currently loaded level (if no folder was previously selected it will prompt and then run command again), creates an .obj, .mtl, and .png&#13;
+--/export_all_geometry&#13;
+---teleports player to next area that has yet to have an obj file exported and attempts to export until all are done&#13;
+---unstable, but it remembers progress so keep running command if disconnected/timeout or restarting emulator if it crashes&#13;
+&#13;
+Note:&#13;
+-Must use Archipelago v0.6.7 or newer&#13;
+-Not compatible with XDelta Patches, must run unmodified game&#13;
+-compatible with v0.7.1 generations&#13;
+-map tracker with Universal Tracker https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.3&#13;
+-setup guide:https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/blob/main/docs/setup_en.md&#13;
+-Follow development and report bugs on the Archipelago gg Discord, -&gt; Future-game-design -&gt; Brave Fencer Musashi</content>
+    <link href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.8.1"/>
   </entry>
 </feed>

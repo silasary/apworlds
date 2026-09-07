@@ -1,0 +1,3 @@
+# SUPER: MIND CONTROL DELETE Randomizer Setup Guide
+
+TODO: THIS

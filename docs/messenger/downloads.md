@@ -1,9 +1,12 @@
 # The Messenger
 
 ## Latest
-- <a href="https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.0-beta/messenger.apworld">Latest Version (0.16.0b0)</a>
+- <a href="https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.1-beta/messenger.apworld">Latest Version (0.16.0)</a>
 
 ## All Versions
+
+#### v0.16.0
+- <a href="https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.1-beta/messenger.apworld">https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.1-beta/messenger.apworld</a>
 
 #### v0.16.0b0
 - <a href="https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.0-beta/messenger.apworld">https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/download/v0.16.0-beta/messenger.apworld</a>
