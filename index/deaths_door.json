@@ -1,9 +1,20 @@
 {
+  "authors": [
+    "rose.as.romeo",
+    "ChrisIsAwesome"
+  ],
   "description": "Reaping souls of the dead and punching a clock might get monotonous but it's honest work for a Crow.\nThe job gets lively when your assigned soul is stolen and you must track down a desperate thief to a realm\nuntouched by death - where creatures grow far past their expiry.",
   "game": "Death's Door",
-  "github": "https://github.com/roseasromeo/DeathsDoorAPWorld",
+  "github": [
+    "https://github.com/roseasromeo/DeathsDoorAPWorld",
+    "https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer"
+  ],
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0": {
       "created_at": "2025-08-15T15:08:02Z",
@@ -32,6 +43,21 @@
       "title": "Death's Door Apworld v0.2.1",
       "version_simple": "0.2.1",
       "world_version": "0.2.1"
+    },
+    "v0.3.3": {
+      "created_at": "2026-07-06T22:56:28Z",
+      "description": "It's been a long time coming, but this will be the final release for the time being, as this project is on hiatus. Nonetheless, I hope everyone enjoys this update!\r\n\r\n**This project has now entered the beta phase.** It is considered stable, though there may be the rare crash or bug. I'll let this update simmer for awhile to see if anything major comes up.\r\n\r\n## To Use\r\nDownload the attached `plugins.zip` and extract it to `<DDInstallPath>\\BepInEx\\plugins`. This zip contains the latest versions of all required and recommended mods.\r\n\r\n## New Features\r\n- Added entrance randomizer! Supports coupled and decoupled entrances.\r\n- Added enemy randomizer! Toggle it in-game in the settings menu. There are no additional options for this at the moment, currently it randomizes every instance of an enemy randomly. There are enemy weights, so you shouldn't get too many high-difficulty enemies that often. Also, spider eggs are randomized, so good luck! :)\r\n\r\n## Bug Fixes/Adjustments\r\n- Fixed Lord of Doors ending being impossible (due to both entrance & enemy randos having bugs)\r\n- Fixed additional null ref with entrance rando regarding the Lord of Doors fight\r\n- Update mod version number to avoid confusion\r\n\r\n## Notes\r\nThis project is on hiatus with no details on when development might resume. But anyone is welcome to contribute, see the contributing section of the README for details!",
+      "download_url": "https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.3.3/deaths_door.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a435ccdd13218e201c9e4a8465d70a4c8f3ced4c4c627feb0e515735c5872db5",
+      "html_url": "https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/tag/v0.3.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 9850962,
+      "source_url": "https://api.github.com/repos/Chris-Is-Awesome/DDArchipelagoRandomizer",
+      "tag": "v0.3.3",
+      "title": "Death's Door Archipelago Client 0.3.3 (beta)",
+      "version_simple": "0.3.1",
+      "world_version": "0.3.1"
     }
   }
 }
