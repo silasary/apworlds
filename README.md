@@ -9,9 +9,9 @@ Where possible, I'll try to tag worlds as AD and remove those that can't be play
 ## Adding a world
 
 You have three options:
+* Open a Github Issue (Preferred)
 * Use `scripts/add_worlds.py https://github.com/ORG/REPO` to automatically scrape every release in that repo.
 * Manually create a yaml file in the index folder with the Game name and repo, and let the nightly script do the rest.
-* Open a Github Issue
 
 ## I want to add a game, but the creator only posts APWorlds on Discord
 
