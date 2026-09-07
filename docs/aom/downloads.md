@@ -1,9 +1,12 @@
 # Age Of Mythology Retold
 
 ## Latest
-- <a href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.6/aom.apworld">Latest Version (1.3.5r2)</a>
+- <a href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.7/aom.apworld">Latest Version (1.3.7)</a>
 
 ## All Versions
+
+#### v1.3.7
+- <a href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.7/aom.apworld">https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.7/aom.apworld</a>
 
 #### v1.3.5r2
 - <a href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.6/aom.apworld">https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.6/aom.apworld</a>

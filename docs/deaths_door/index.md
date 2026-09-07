@@ -6,7 +6,7 @@ untouched by death - where creatures grow far past their expiry.
 
 
 ## Downloads
-- <a href="https://github.com/roseasromeo/DeathsDoorAPWorld/releases/download/v0.2.1/deaths_door.apworld">Latest Version (0.2.1)</a>
+- <a href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.3.3/deaths_door.apworld">Latest Version (0.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
