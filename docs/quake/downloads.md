@@ -1,9 +1,12 @@
 # Quake 1
 
 ## Latest
-- <a href="https://github.com/randomcodegen/ironwail_ap/releases/download/1.1.9/quake.apworld">Latest Version (1.1.9)</a>
+- <a href="https://github.com/randomcodegen/ironwail_ap/releases/download/1.2.0/quake.apworld">Latest Version (1.2.0)</a>
 
 ## All Versions
+
+#### v1.2.0
+- <a href="https://github.com/randomcodegen/ironwail_ap/releases/download/1.2.0/quake.apworld">https://github.com/randomcodegen/ironwail_ap/releases/download/1.2.0/quake.apworld</a>
 
 #### v1.1.9
 - <a href="https://github.com/randomcodegen/ironwail_ap/releases/download/1.1.9/quake.apworld">https://github.com/randomcodegen/ironwail_ap/releases/download/1.1.9/quake.apworld</a>

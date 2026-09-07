@@ -2,123 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-07T06:20:00.907392+00:00</updated>
+  <updated>2026-09-07T12:19:07.528487+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.1.0</id>
-    <title>Ape Escape 3 v2.1.0.post2</title>
-    <updated>2026-09-04T14:39:06+00:00</updated>
-    <author>
-      <name>aidanii</name>
-    </author>
-    <content># Ape Escape 3 Archipelago v2.1.0&#13;
-&#13;
-:warning: **BREAKING LOGIC**&#13;
-## Changelog&#13;
-### Client&#13;
-- New Client UI displaying Channel Order and Progress in real time&#13;
-- Client will now also try to use XDG_DIRS on other unix-like systems outside of Linux (and except for MacOS) for detecting the PINE socket (e.g. FreeBSD)&#13;
-### Fixes&#13;
-- Improved Logic handling for Post-Game Condition-related entrances and locations&#13;
-&#13;
-## Refresh&#13;
-### 2026/09/06&#13;
-- Fixed division by zero scenarios when updating Overview Status of Shopping District when Shoppingsanity is set to Collection</content>
-    <link href="https://github.com/aidanii24/ae3-archipelago/releases/tag/v2.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.2</id>
-    <title>Grand Theft Auto: San Andreas v0.8.1r2</title>
-    <updated>2026-09-04T17:00:27+00:00</updated>
-    <author>
-      <name>awaken</name>
-    </author>
-    <content>## Fixed:&#13;
-- Fixed LV Air Street Races not sending out checks&#13;
-&#13;
-## Notes:&#13;
-If you had this issue on 0.8.1, you can change only the `.asi` and the mod will send out pending checks.</content>
-    <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.8.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.10</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r3</title>
-    <updated>2026-09-04T18:27:53+00:00</updated>
-    <author>
-      <name>C@:\EM1NAL\</name>
-    </author>
-    <author>
-      <name>jordansds</name>
-    </author>
-    <content>A continuous problem has been that the timing on White House is somewhat unfair and very tight, however in all my testing I tend to get Crude Awakening as the final heist instead so I was never really able to experience how rough it could be for myself. After replaying White House a couple times now (not in Criminal Dawn, just generally) I've realised that, yeah. White House *is* a lot longer than I previously thought it was - a well executed loud playthrough can take 20 minutes minimum.&#13;
-&#13;
-Because I kept getting Crude Awakening in testing, a lot of the timer balance was tailored around *that* heist instead - the issue with this is Crude Awakening can be easily completed in about *ten* minutes, half the time of White House. This creates a huge time gap, and makes White House incredibly unfair to get as the final heist, which is why a lot of people have (rightfully!!) complained about it.&#13;
-&#13;
-All this is to say White House now benefits from Objectivity when it's chosen as the final heist, *but* you only receive 50% of the bonus instead of the entire bonus. If you have 60% objective speed, you will get 30% on White House. 90% objective speed, you get 45% on White House - etc.&#13;
-&#13;
-_No APWorld changes since v1.0.4._</content>
-    <link href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.10"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0</id>
-    <title>TCG Card Shop Simulator v1.2.0</title>
-    <updated>2026-09-04T20:17:42+00:00</updated>
-    <author>
-      <name>FyreDay</name>
-    </author>
-    <content>- Fix Game 15 not sending&#13;
-- Fix Bulk box ids&#13;
-- Add Locking Grading</content>
-    <link href="https://github.com/FyreDay/Archipelago-TCGCardShopSimulator/releases/tag/v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.2.0-TEST</id>
-    <title>Kirby Air Ride v1.2.0</title>
-    <updated>2026-09-04T21:44:08+00:00</updated>
-    <author>
-      <name>DeDeDK</name>
-    </author>
-    <content>Additions:&#13;
-- Custom machine: Archipelago Star&#13;
-  - add options, goals, items, logic, etc. for archipelago star&#13;
-  - add archipelago sphere legendary assembly items&#13;
-- Archipelago patches + Archipelago box&#13;
-  - add options, locations, logic, etc. for ap patches + ap box&#13;
-- Add yaml-less Universal Tracker support&#13;
-  - Tracker tab now exists in the client if you have UT installed&#13;
-- Add message passing from client to mod&#13;
-  - hints, items, locations, player names, server messages, etc. will now show in-game &#13;
-- Options reworks and tweaks&#13;
-  - a few options are now more fine-grained, e.g. enabled city trial item gives&#13;
-  - checklist reward options simplified&#13;
-- simplified logging messages during connection&#13;
-- scripts refactoring&#13;
-- readme and setup guide updates&#13;
-- bump version to 1.2.0&#13;
-&#13;
-Fixes:&#13;
-- fix for air ride CSS menu hang&#13;
-- fix for crash on boot due to ap tab + checkbox reward item backfill&#13;
-- fix for deathlink loop due to HP death in city trial&#13;
-- fix for red checkboxes showing up in the ap tab on non-reward boxes&#13;
-- fixed deathlink/energylink/traplink toggle bouncing during connection&#13;
-- fix coral break check being per-player instead of global&#13;
-- fix CPU color picking&#13;
-- fix checks counting during the main menu auto-demo CT mode&#13;
-- fix legendary part give items not showing visually&#13;
-- misc logic fixes&#13;
-- many misc code improvements/cleanup&#13;
-&#13;
-## What's Changed&#13;
-* v1.2.0-TEST PR by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/56&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v1.1.1-TEST...v1.2.0-TEST</content>
-    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.2.0-TEST"/>
-  </entry>
   <entry>
     <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.2</id>
     <title>Final Fantasy 1 PSP v0.2.2</title>
@@ -945,9 +833,209 @@ Fixed an issue where save points could not be interacted with in heist mode&#13;
     <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.7.0"/>
   </entry>
   <entry>
+    <id>https://github.com/benny-dreamly/Manuals/releases/tag/GA-6.1.0</id>
+    <title>Manual_GlassAnimals_bennydreamly v6.1.0</title>
+    <updated>2026-09-06T21:21:49+00:00</updated>
+    <author>
+      <name>benny-dreamly</name>
+    </author>
+    <content>This release fixes the APWorld not loading because of the migration to the latest stable having left in the example events.json file from the stable APWorld&#13;
+&#13;
+**Full Changelog**: https://github.com/benny-dreamly/Manuals/compare/GA-6.0.0...GA-6.1.0</content>
+    <link href="https://github.com/benny-dreamly/Manuals/releases/tag/GA-6.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/benny-dreamly/Manuals/releases/tag/TS-6.3.0</id>
+    <title>Manual_TaylorSwiftDiscography_bennydreamly v6.3.0</title>
+    <updated>2026-09-06T21:26:35+00:00</updated>
+    <author>
+      <name>benny-dreamly</name>
+    </author>
+    <content>This release fixes the APWorld not loading because of an accidentally included example events.json from the stable manual APWorld.&#13;
+&#13;
+**Full Changelog**: https://github.com/benny-dreamly/Manuals/compare/TS-6.2.0...TS-6.3.0</content>
+    <link href="https://github.com/benny-dreamly/Manuals/releases/tag/TS-6.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/1.2.0</id>
+    <title>YARG v1.2.0</title>
+    <updated>2026-09-07T00:58:53+00:00</updated>
+    <author>
+      <name>Energymaster22</name>
+    </author>
+    <author>
+      <name>thedrummonger</name>
+    </author>
+    <content># Use Client Version 1.y.z.&#13;
+&#13;
+New:&#13;
+- Support for Go Down in History Setlist&#13;
+&#13;
+Changes:&#13;
+- Changed the format of the item and location names. &#13;
+&gt; [!WARNING]&#13;
+&gt; This change will cause any `.yaml` generated on earlier versions that used song names in any way to no longer work as expected. They will need to be updated to follow the new format of `"(Song name)" by (Artist name) from (source)`&#13;
+&#13;
+## What's Changed&#13;
+* 70 add go down in history setlist by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/71&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/1.1.0...1.2.0</content>
+    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.1</id>
+    <title>Taylor Swift Discography v1.2.1</title>
+    <updated>2026-09-07T01:41:48+00:00</updated>
+    <author>
+      <name>benny-dreamly</name>
+    </author>
+    <content>This release contains no new features or bug fixes, just small backend changes to the manifest and the addition of an actual license because I forgot one in the initial release.&#13;
+&#13;
+The zip file for the configuration is unchanged from the previous release, but is a new file regardless but the contents should be identical to the old one. &#13;
+&#13;
+**Full Changelog**: https://github.com/benny-dreamly/Archipelago/compare/ts-1.2.0...ts-1.2.1</content>
+    <link href="https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.2</id>
+    <title>La-Mulana 2 v1.0.2</title>
+    <updated>2026-09-07T01:49:54+00:00</updated>
+    <author>
+      <name>Crownmuri</name>
+    </author>
+    <author>
+      <name>Coookie93</name>
+    </author>
+    <content>## Supports: Mod v1.0.0+ -- Tracker v2.0.2+&#13;
+&#13;
+# Changelogs&#13;
+- Fixed a logic softlock due to AnnwfnOneWay not forcing HorizontalAttack despite a pot blocking the way&#13;
+- Fixed a logic issue where the Cog of Antiquity Chest (the Twin Statue chest in Heaven's Labyrinth) was considered accessible through Heaven's Labyrinth instead of the one-way exit above it. (Pots and glossary are now in a new HLStatue subregion in logic)</content>
+    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/rha-v1.0.1</id>
+    <title>Rhythm Heaven Advance v1.0.1</title>
+    <updated>2026-09-07T03:17:15+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content># Info&#13;
+* [Info](https://thelx5.github.io/rha/index.html)&#13;
+* [Setup](https://thelx5.github.io/rha/setup.html)&#13;
+# Changes&#13;
+* Added a label on the client that tells players how many medals they have and how many are required for goaling.&#13;
+# Notes&#13;
+* You need to reload the game menu to see any changes on the level grid, especially on the first load.</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/rha-v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.2</id>
+    <title>Rhythm Tengoku v1.0.2</title>
+    <updated>2026-09-07T03:17:43+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content># Info&#13;
+* [Info](https://thelx5.github.io/tengoku/index.html)&#13;
+* [Setup](https://thelx5.github.io/tengoku/setup.html)&#13;
+# Changes&#13;
+* Added a label on the client that tells players how many medals they have and how many are required for goaling.&#13;
+# Notes&#13;
+* You need to reload the game menu to see any changes on the level grid, especially on the first load.</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/1-800-thewolf/AoM-Archipelago/releases/tag/v1.3.7</id>
+    <title>Age Of Mythology Retold v1.3.7</title>
+    <updated>2026-09-07T03:55:46+00:00</updated>
+    <author>
+      <name>1.800.thewolf</name>
+    </author>
+    <content>## Suite of bug fixes and small qoL improvements.&#13;
+- New `/keys` command to see which keys go to which scenarios&#13;
+- Better key handling so keys don't pollute `!hint` points&#13;
+- New yaml option to disable Demeter and Freyr&#13;
+- New safety guard to prevent accidentally goaling on a new game&#13;
+- New `/logs` command for better troubleshooting/debugging&#13;
+&#13;
+### Bug Fixes including bugs related to&#13;
+- Aztecs being unable to Time Shift on Odin's Tower if you have the DLC&#13;
+- Aztec Villager Cary Capacity item&#13;
+- Atlantis Reborn Minor God Bug&#13;
+&#13;
+## 👍 Fully compatible with current games v1.1+</content>
+    <link href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/tag/v1.3.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.8</id>
+    <title>Modded Minecraft v3.0.8</title>
+    <updated>2026-09-07T04:33:07+00:00</updated>
+    <author>
+      <name>Stuff691734</name>
+    </author>
+    <content>fix issue where universal tracker says datapackage is different.&#13;
+ - manually writing item/location name groups.&#13;
+ - using a file to store location/item name to id between runs again&#13;
+&#13;
+prevent checking if plando options are valid (validation runs before I can add to the valid options)</content>
+    <link href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.1.2</id>
+    <title>The Legend of Zelda - Oracle of Ages v1.1.2</title>
+    <updated>2026-09-07T06:57:59+00:00</updated>
+    <author>
+      <name>josephanimate2021</name>
+    </author>
+    <author>
+      <name>Glan9</name>
+    </author>
+    <author>
+      <name>Piapiou (SenPierre)</name>
+    </author>
+    <author>
+      <name>FlameStripe</name>
+    </author>
+    <content>Hotfixes&#13;
+&#13;
+* Fix sea of storm  spot error that could appear when secrets were not enabled.&#13;
+* Fix generation error on minimal settings&#13;
+* Overall improvement on generation success rate&#13;
+* As a result, Rupees (20) &amp; Rupees (30) are not considered progression anymore&#13;
+* Fix a determinism error with the seed trees</content>
+    <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v1.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_4_0</id>
+    <title>Scooby-Doo! Night of 100 Frights v1r2</title>
+    <updated>2026-09-07T07:03:47+00:00</updated>
+    <author>
+      <name>vgm5</name>
+    </author>
+    <content># Major Release&#13;
+&#13;
+## Rev 1 Implementation&#13;
+- Patching and Runtime execution have been reworked to allow users with the Rev 1 version of the game to play the apworld&#13;
+- Current Expectation is that there are no fundamental differences for people playing on one or the other</content>
+    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_4_0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.0</id>
+    <title>Quake 1 v1.2.0</title>
+    <updated>2026-09-07T07:42:58+00:00</updated>
+    <author>
+      <name>randomcodegen</name>
+    </author>
+    <content>- Added ap_minnotify cvar to filter out notifications based on item (useful/filler/progression)&#13;
+- Forced vanilla items to spawn when a location is excluded</content>
+    <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
     <title>Team Fortress 2 Mann vs Machine v1.11.0r2</title>
-    <updated>2026-09-06T18:20:06+00:00</updated>
+    <updated>2026-09-07T09:38:32+00:00</updated>
     <author>
       <name>mathis</name>
     </author>
@@ -955,7 +1043,7 @@ Fixed an issue where save points could not be interacted with in heist mode&#13;
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `34fe8dd25c52e5c8b982cfa0fcae598c119a0039`.
+Built from `ae74ae75b1f73b2892e607ee02f8dc57cf6fdeb3`.
 
 ## Downloads
 
@@ -964,8 +1052,25 @@ Built from `34fe8dd25c52e5c8b982cfa0fcae598c119a0039`.
 
 ## Since v1.10.0
 
+- style(gamedata): gofumpt the merged test file
+- Merge branch 'merge/pr36' into merge/pr37, one death handler
+- fix(plugin): apply stomp kill effects
+- fix(plugin): pay jar hits and holstered kills the game does not
+- fix(plugin): stop announcing projectile destruction
+- style(gamedata): format projectile destruction test
+- fix(plugin): extend projectile destruction to guns
+- chore(beads): Cowser's retests, and the Linux launcher screen
+- docs(changelog): the extra Crossbow bolt heals
+- fix(gamedata): call SetLauncher at the Linux vtable slot
+- docs(changelog): the two engineers who landed inside each other
+- chore(bots): pin the mod at the engineer that no longer teleports onto another engineer
+- build(bots): refuse a bots pin that names no commit
+- feat(plugin): add stomp weapon buffs
 - chore(bots): pin the mod at the exit that walks in on Rottenburg
+- fix(plugin): complete ammo-on-hit handling
 - chore(bots): pin the mod at the engineer that climbs onto a rock spot
+- fix(plugin): award ammo on confirmed hits
+- fix(plugin): heal with extra Crossbow bolts
 - chore(beads): the sheet notes not yet picked up, and the issue comments
 - test(bridge): give the unrelated-change poll room for two disk writes
 - fix(apworld): a trap share above zero puts at least one trap in the run
@@ -1175,136 +1280,16 @@ Built from `34fe8dd25c52e5c8b982cfa0fcae598c119a0039`.
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
   <entry>
-    <id>https://github.com/benny-dreamly/Manuals/releases/tag/GA-6.1.0</id>
-    <title>Manual_GlassAnimals_bennydreamly v6.1.0</title>
-    <updated>2026-09-06T21:21:49+00:00</updated>
+    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.14.0</id>
+    <title>Slime Rancher 2 v0.14.0</title>
+    <updated>2026-09-07T10:35:10+00:00</updated>
     <author>
-      <name>benny-dreamly</name>
+      <name>Rhelys</name>
     </author>
-    <content>This release fixes the APWorld not loading because of the migration to the latest stable having left in the example events.json file from the stable APWorld&#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Manuals/compare/GA-6.0.0...GA-6.1.0</content>
-    <link href="https://github.com/benny-dreamly/Manuals/releases/tag/GA-6.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/benny-dreamly/Manuals/releases/tag/TS-6.3.0</id>
-    <title>Manual_TaylorSwiftDiscography_bennydreamly v6.3.0</title>
-    <updated>2026-09-06T21:26:35+00:00</updated>
-    <author>
-      <name>benny-dreamly</name>
-    </author>
-    <content>This release fixes the APWorld not loading because of an accidentally included example events.json from the stable manual APWorld.&#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Manuals/compare/TS-6.2.0...TS-6.3.0</content>
-    <link href="https://github.com/benny-dreamly/Manuals/releases/tag/TS-6.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/1.2.0</id>
-    <title>YARG v1.2.0</title>
-    <updated>2026-09-07T00:58:53+00:00</updated>
-    <author>
-      <name>Energymaster22</name>
-    </author>
-    <author>
-      <name>thedrummonger</name>
-    </author>
-    <content># Use Client Version 1.y.z.&#13;
-&#13;
-New:&#13;
-- Support for Go Down in History Setlist&#13;
-&#13;
-Changes:&#13;
-- Changed the format of the item and location names. &#13;
-&gt; [!WARNING]&#13;
-&gt; This change will cause any `.yaml` generated on earlier versions that used song names in any way to no longer work as expected. They will need to be updated to follow the new format of `"(Song name)" by (Artist name) from (source)`&#13;
-&#13;
-## What's Changed&#13;
-* 70 add go down in history setlist by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/71&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/1.1.0...1.2.0</content>
-    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.1</id>
-    <title>Taylor Swift Discography v1.2.1</title>
-    <updated>2026-09-07T01:41:48+00:00</updated>
-    <author>
-      <name>benny-dreamly</name>
-    </author>
-    <content>This release contains no new features or bug fixes, just small backend changes to the manifest and the addition of an actual license because I forgot one in the initial release.&#13;
-&#13;
-The zip file for the configuration is unchanged from the previous release, but is a new file regardless but the contents should be identical to the old one. &#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Archipelago/compare/ts-1.2.0...ts-1.2.1</content>
-    <link href="https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/rha-v1.0.1</id>
-    <title>Rhythm Heaven Advance v1.0.1</title>
-    <updated>2026-09-07T03:17:15+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content># Info&#13;
-* [Info](https://thelx5.github.io/rha/index.html)&#13;
-* [Setup](https://thelx5.github.io/rha/setup.html)&#13;
-# Changes&#13;
-* Added a label on the client that tells players how many medals they have and how many are required for goaling.&#13;
-# Notes&#13;
-* You need to reload the game menu to see any changes on the level grid, especially on the first load.</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/rha-v1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.2</id>
-    <title>Rhythm Tengoku v1.0.2</title>
-    <updated>2026-09-07T03:17:43+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content># Info&#13;
-* [Info](https://thelx5.github.io/tengoku/index.html)&#13;
-* [Setup](https://thelx5.github.io/tengoku/setup.html)&#13;
-# Changes&#13;
-* Added a label on the client that tells players how many medals they have and how many are required for goaling.&#13;
-# Notes&#13;
-* You need to reload the game menu to see any changes on the level grid, especially on the first load.</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/1-800-thewolf/AoM-Archipelago/releases/tag/v1.3.7</id>
-    <title>Age Of Mythology Retold v1.3.7</title>
-    <updated>2026-09-07T03:55:46+00:00</updated>
-    <author>
-      <name>1.800.thewolf</name>
-    </author>
-    <content>## Suite of bug fixes and small qoL improvements.&#13;
-- New `/keys` command to see which keys go to which scenarios&#13;
-- Better key handling so keys don't pollute `!hint` points&#13;
-- New yaml option to disable Demeter and Freyr&#13;
-- New safety guard to prevent accidentally goaling on a new game&#13;
-- New `/logs` command for better troubleshooting/debugging&#13;
-&#13;
-### Bug Fixes including bugs related to&#13;
-- Aztecs being unable to Time Shift on Odin's Tower if you have the DLC&#13;
-- Aztec Villager Cary Capacity item&#13;
-- Atlantis Reborn Minor God Bug&#13;
-&#13;
-## 👍 Fully compatible with current games v1.1+</content>
-    <link href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/tag/v1.3.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.8</id>
-    <title>Modded Minecraft v3.0.8</title>
-    <updated>2026-09-07T04:33:07+00:00</updated>
-    <author>
-      <name>Stuff691734</name>
-    </author>
-    <content>fix issue where universal tracker says datapackage is different.&#13;
- - manually writing item/location name groups.&#13;
- - using a file to store location/item name to id between runs again&#13;
-&#13;
-prevent checking if plando options are valid (validation runs before I can add to the valid options)</content>
-    <link href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.8"/>
+    <content>## New Features&#13;
+- Added new settings for shop randomization&#13;
+  - `shop_catalog` enables splitting up the available shop checks behind new progression items. The first "batch" of shop checks is always available&#13;
+  - `shop_catalog_items` chooses how many of the new Progressive Shop Catalog items are added in the pool - maximum of 4 (20% chunks)</content>
+    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.14.0"/>
   </entry>
 </feed>
