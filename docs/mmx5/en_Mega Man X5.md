@@ -80,16 +80,18 @@ X wears as the stage loads. **Black Zero** applies on the spot.
 
 ## Which options change the disc?
 
-Seven: **`text_skip`**, **`launch_odds`**, **`pickupsanity`**,
-**`exit_stage_anytime`**, **`water_stage_speed`**, **`weapon_damage`**
-and **`boss_damage`**. If
+Nine: **`text_skip`**, **`launch_odds`**, **`pickupsanity`**,
+**`exit_stage_anytime`**, **`water_stage_speed`**, **`weapon_damage`**,
+**`boss_damage`**, **`stage_music`** and — only when you set it **below 32** —
+**`starting_hp`**. If
 you change any of those, re-patch your disc — the `.apmmx5` you generate
 carries the difference. Note `exit_stage_anytime` is **on by default**, so a
 disc patched before it existed needs re-patching even if you changed nothing.
 
 Everything else, including all three goals, `boss_difficulty`,
 `boss_hp_randomization`, `secret_armors_in_pool`, `stage_unlocks`,
-`rematch_checks`, `reploid_checks` and `dna_parts_in_pool`, is done entirely
+`rematch_checks`, `reploid_checks`, `dna_parts_in_pool` and
+`heart_tank_value`, is done entirely
 by the client, so it works on a disc you have already patched.
 
 **Player colours** are five more options in your YAML: X, Zero, Falcon, Gaea
@@ -206,6 +208,33 @@ override it when the patch is opened — the setup guide explains how.
   share that stage's roll. The game caps HP at 127, so a very high roll on a
   late-game boss can hit that ceiling and come out lower than the multiplier
   suggests.
+- **`stage_music` shuffles the music between stages.** The thirteen themes the
+  stages already use are dealt back out among them, so every stage still gets a
+  real stage theme, every theme is still used somewhere, and **no stage keeps
+  the theme it started with**. There are seventeen places and thirteen themes,
+  so four themes turn up in two places. Places that share music in the base
+  game are **split**: Zero Space 1, Zero Space 2 and the X-vs-Zero duel each
+  get their own, as do the Enigma and shuttle sorties, and the intro keeps its
+  two-part theme as two parts. Only stages change — the hub, the stage select,
+  cutscenes, the results and transition screens, every jingle and the ending
+  all keep their vanilla music. Purely cosmetic: it moves no checks and changes
+  no logic.
+- **`starting_hp` sets how much life X and Zero begin with.** Vanilla is 32; you
+  can ask for anything from 1 to 127, which is the most the game can hold. It is
+  applied to a NEW save the first time the client sees it, so a save already
+  part of this seed keeps what it has. Above 64 the life bar runs past the end
+  of its own frame — the frame stops growing there while the fill keeps going.
+  That is normal for the genre and the extra life is real, so it is left as it
+  is. Below 32 the bar would draw unrelated HUD sprites, and that IS fixed, on
+  the disc — which is why only a value under 32 asks you to re-patch.
+- **`heart_tank_value` sets what each Heart Tank is worth.** Vanilla is 2, and
+  X5's eight tanks are what take a vanilla run from 32 to 48. 0 makes them
+  worth nothing — the check still sends, the gauge just does not move. The
+  total stops at 127. Alia's Life Up rewards are **not** affected: they are not
+  Archipelago items, they stay worth 2 each, and they still add on top. Heart
+  Tanks from the multiworld raise **both** characters, unlike the vanilla
+  pickup, which only helps whoever walked over it. Changing this mid-run
+  affects the tanks you receive afterwards, not the life you already have.
 - **`weapon_damage` rerolls how hard YOUR weapons hit.** `weak` is 50–90% of
   normal, `regular` 80–130%, `strong` 120–200%, `chaotic` 25–250%. Every attack
   X and Zero have is rolled separately and then fixed for the seed, so part of

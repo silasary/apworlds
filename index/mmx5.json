@@ -334,6 +334,22 @@
       "title": "MMX5 apworld v0.6.2",
       "version_simple": "0.6.2",
       "world_version": "0.6.2"
+    },
+    "mmx5-v0.7.0": {
+      "created_at": "2026-09-06T23:59:08Z",
+      "description": "**Three new options: stage music, starting life, and what a Heart Tank is worth.**\n\n## `stage_music` \u2014 shuffle the music between stages\n\nThe thirteen themes the stages already use are dealt back out among them, so\nevery stage still gets a real stage theme, every theme is still used somewhere,\nand no stage keeps the one it started with. Seventeen places, thirteen themes,\nso four themes turn up twice.\n\nPlaces that merely *shared* music in the base game are split: Zero Space 1,\nZero Space 2 and the X-vs-Zero duel each get their own theme, and so do the\nEnigma and Shuttle sorties.\n\n**Only stages change.** The hub, the stage select, cutscenes, results and\ntransition screens, every jingle and the ending keep their vanilla music. That\nis structural rather than a curated exclusion list \u2014 the game picks stage music\nthrough a cue table indexed by stage id, and only the rows that are stages are\nrewritten.\n\nPurely cosmetic: it moves no checks and changes no logic.\n\n## `starting_hp` \u2014 how much life X and Zero begin with\n\nVanilla is 32; anything from 1 to 127 is allowed. 127 is the ceiling because\nthe game reads the maximum with a *signed* byte load, so 128 would read as\nnegative.\n\nApplied to a **new save**, once, the first time the client adopts it. Life the\ngame itself granted you \u2014 Alia's Life Up rewards, which are not Archipelago\nitems \u2014 is kept rather than overwritten.\n\n**Above 64 the life bar overflows its own frame.** The frame has seventeen\nsizes covering 32 to 64 and stops growing there while the fill keeps going.\nThat is how the genre draws a bar past its vanilla maximum, the extra life is\nreal, and it is deliberately left alone.\n\n**Below 32 needed a disc fix.** The frame is a sprite index clamped at the top\nand *not* at the bottom, so a maximum under 32 indexed off the front of the\nartwork and drew unrelated HUD elements. Both copies of that code now floor the\nindex at the smallest real bar.\n\n## `heart_tank_value` \u2014 what each Heart Tank is worth\n\nVanilla is 2. 0 makes them worth nothing while the check still sends. The total\nnow stops at 127 rather than at vanilla's 64, which also fixes a quieter bug:\nHeart Tanks received past a maximum of 64 used to be silently worth nothing.\n\nAlia's Life Up rewards are **not** affected \u2014 they stay worth 2 each on top of\nwhatever you set. Client-side, so it works on a disc you have already patched.\n\n## Fixed: a save could stop sending checks without saying so\n\nThe client decided whether a save was resident by checking its maximum life\nagainst a fixed 16\u201364 window. Both new life options can legitimately leave that\nwindow, and a save judged not resident goes quiet. The window is now derived\nfrom the seed.\n\n## What you need to do\n\n**Re-patch only if you turn on `stage_music`, or set `starting_hp` below 32.**\nEverything else here is client-side. A seed using neither produces a disc\nbyte-identical to 0.6.2's, so it needs nothing \u2014 carry on with the disc you\nhave.\n\n**Replace `MMX5-Unpatcher.exe` if you do re-patch.** This release edits disc\nlocations earlier unpatchers do not know about, so an older one refuses a 0.7.0\ndisc rather than restoring it. The version here (v1.2) handles every AP disc\nrevision to date, this one included.\n\n---\n\n`mmx5.apworld` goes in your Archipelago install's `custom_worlds/` folder.\n`MMX5-Unpatcher.exe` restores an AP-patched disc (recoloured or not) to a clean\ndump if you have lost your original \u2014 drag a `.bin` onto it.\n`MMX5-Setup-Guide.pdf` is the setup guide, readable before anything is\ninstalled.\n\nRequires Archipelago 0.6.7 or later.\n",
+      "download_url": "https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.0/mmx5.apworld",
+      "has_manifest": true,
+      "hash_sha256": "11ef1c3ef9f0a40120177def49d7e096c2aff0e0b786138fcbf0c4835c5bc372",
+      "html_url": "https://github.com/Shinnuu/Archipelago/releases/tag/mmx5-v0.7.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 344482,
+      "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
+      "tag": "mmx5-v0.7.0",
+      "title": "MMX5 apworld v0.7.0",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0"
     }
   }
 }

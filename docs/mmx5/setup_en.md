@@ -233,7 +233,9 @@ are baked in as the disc is built: a disc you already made never changes, no
 matter what you edit afterwards.
 
 **Do I have to re-patch for every seed?** Usually no. The disc only changes
-with four options — `pickupsanity`, `text_skip`, `launch_odds` and the player
+with nine options — `text_skip`, `launch_odds`, `pickupsanity`,
+`exit_stage_anytime`, `water_stage_speed`, `weapon_damage`, `boss_damage`,
+`stage_music`, and `starting_hp` when you set it **below 32** — plus the player
 colours. Two seeds with the same values for those produce byte-identical discs,
 so you can keep one patched disc per option combo and reuse it. This is also kinder to your
 saves: BizHawk keys memory cards to the disc's filename, so a reused disc
