@@ -12,6 +12,21 @@
     "world_version"
   ],
   "versions": {
+    "0.0.9": {
+      "created_at": "2026-09-08T14:42:15Z",
+      "description": "# Splasher Archipelago (**v.0.0.9**) -- Checkpoint Sanity\r\n\r\n**This version requires to update the APWorld accordingly**\r\n\r\n**Don't forget to update your asset files**\r\n\r\n## Highlights\r\n\r\n### Checkpoint Sanity\r\n\r\nA new randomization layer has been added : checkpoints sanity. When enabled, each checkpoint in the game becomes a location and, optionally, needs a corresponding *item* to be triggered. Checkpoints items have different levels of relevance depending on your (*CheckpointSanity*) option :\r\n\r\n- `useful` : the item allows its checkpoint to save the level progression (essence, position). Upon dying, the player respawns to the farthest **unlocked** checkpoint. \r\n- `progression` : the item also allows to send uncollected splashers. With this option checkpoint items may appear in a seed's logic, although it is currently somewhat limited because level exits are not yet gated by items (this will be worked on in the next version).\r\n\r\nCheckpoint items, if enabled, can be added in the pool as :\r\n- **individual** items (one per checkpoint)\r\n- **level pack** items (one per level, unlocking all checkpoints in it)\r\n- **zone pack** items (one per zone, unlocking all checkpoints in it)\r\n\r\n### In-game item feedback\r\n\r\nA feature that I should've implemented way earlier, but the game finally shows a pop-up message when you receive an item. How this is implemented is quite similar to [Celeste Open World](https://archipelago.gg/games/Celeste%20(Open%20World)/info/en) : a pop-up appears for a few seconds on the top-center of your screen, lasting for a few seconds (defaults to 5s, can be adjusted in `connection.yaml`).\r\n\r\n## Additional features\r\n\r\n- Added an option to instantly collect splashers (without reaching a checkpoint). This is a **seed** option (not overridable in `connection.yaml`) because it affects the logic the randomizer.\r\n- You can know teleport towards the next checkpoint (if that checkpoint is unlocked), reducing runbacks.",
+      "download_url": "https://github.com/Frisk202020/Archipelago/releases/download/0.0.9/splasher.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d8d23a85b503d11208d2d02fe163246e9f90bf3dbd3969a053e9c67594a52ea8",
+      "html_url": "https://github.com/Frisk202020/Archipelago/releases/tag/0.0.9",
+      "minimum_ap_version": "0.6.7",
+      "size": 24482,
+      "source_url": "https://api.github.com/repos/Frisk202020/Archipelago",
+      "tag": "0.0.9",
+      "title": "Splasher APWorld (v.0.0.9)",
+      "version_simple": "0.0.9",
+      "world_version": "0.0.9"
+    },
     "Alpha": {
       "created_at": "2026-06-03T21:43:15Z",
       "description": "## Splasher APWorld (v.0.0.5)\r\n\r\nThis version adds the Speedrun Medals option. **It requires to update the [client](https://github.com/Frisk202020/SplasherArchipelago/releases/) as well**",

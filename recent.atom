@@ -2,25 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-08T12:23:02.635369+00:00</updated>
+  <updated>2026-09-08T18:21:47.060611+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_4_0</id>
-    <title>Scooby-Doo! Night of 100 Frights v1r2</title>
-    <updated>2026-09-07T07:03:47+00:00</updated>
-    <author>
-      <name>vgm5</name>
-    </author>
-    <content># Major Release&#13;
-&#13;
-## Rev 1 Implementation&#13;
-- Patching and Runtime execution have been reworked to allow users with the Rev 1 version of the game to play the apworld&#13;
-- Current Expectation is that there are no fundamental differences for people playing on one or the other</content>
-    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_4_0"/>
-  </entry>
   <entry>
     <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.0</id>
     <title>Quake 1 v1.2.0.post2</title>
@@ -946,7 +932,9 @@ add BUILD_EXE.bat and STALKER2_ARCHIPELAGO_Client.py into a folder called client
 - Fixed the DDD portal's visible barrier remaining forward after receiving the BITFS unlock.&#13;
 - Fixed the Metal Cap object inheriting custom Mario hat colors. Its metal display lists used the same mutable lights as&#13;
   the ordinary cap instead of dedicated neutral metal lighting.&#13;
-</content>
+&#13;
+## SM64ex hotfixes:&#13;
+- September 8: Fixed Tiny Island Impossible Coin assignment, was incorrectly mapped as Coin 3</content>
     <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.0"/>
   </entry>
   <entry>
@@ -1532,5 +1520,114 @@ Built from `15ccb088e40886efc7e2f0b677cef15d59113b58`.
 - Added `ap_vanilla_items`. Set an item type to `1` to spawn its vanilla pickup when excluded from the seed, or `0` to disable it.&#13;
 - Fixed excluded multiplayer-only items appearing in single-player maps.</content>
     <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Frisk202020/Archipelago/releases/tag/0.0.9</id>
+    <title>Splasher v0.0.9</title>
+    <updated>2026-09-08T14:42:15+00:00</updated>
+    <author>
+      <name>Frisk</name>
+    </author>
+    <content># Splasher Archipelago (**v.0.0.9**) -- Checkpoint Sanity&#13;
+&#13;
+**This version requires to update the APWorld accordingly**&#13;
+&#13;
+**Don't forget to update your asset files**&#13;
+&#13;
+## Highlights&#13;
+&#13;
+### Checkpoint Sanity&#13;
+&#13;
+A new randomization layer has been added : checkpoints sanity. When enabled, each checkpoint in the game becomes a location and, optionally, needs a corresponding *item* to be triggered. Checkpoints items have different levels of relevance depending on your (*CheckpointSanity*) option :&#13;
+&#13;
+- `useful` : the item allows its checkpoint to save the level progression (essence, position). Upon dying, the player respawns to the farthest **unlocked** checkpoint. &#13;
+- `progression` : the item also allows to send uncollected splashers. With this option checkpoint items may appear in a seed's logic, although it is currently somewhat limited because level exits are not yet gated by items (this will be worked on in the next version).&#13;
+&#13;
+Checkpoint items, if enabled, can be added in the pool as :&#13;
+- **individual** items (one per checkpoint)&#13;
+- **level pack** items (one per level, unlocking all checkpoints in it)&#13;
+- **zone pack** items (one per zone, unlocking all checkpoints in it)&#13;
+&#13;
+### In-game item feedback&#13;
+&#13;
+A feature that I should've implemented way earlier, but the game finally shows a pop-up message when you receive an item. How this is implemented is quite similar to [Celeste Open World](https://archipelago.gg/games/Celeste%20(Open%20World)/info/en) : a pop-up appears for a few seconds on the top-center of your screen, lasting for a few seconds (defaults to 5s, can be adjusted in `connection.yaml`).&#13;
+&#13;
+## Additional features&#13;
+&#13;
+- Added an option to instantly collect splashers (without reaching a checkpoint). This is a **seed** option (not overridable in `connection.yaml`) because it affects the logic the randomizer.&#13;
+- You can know teleport towards the next checkpoint (if that checkpoint is unlocked), reducing runbacks.</content>
+    <link href="https://github.com/Frisk202020/Archipelago/releases/tag/0.0.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/1.1.1</id>
+    <title>Slay the Spire II v1.1.0r2</title>
+    <updated>2026-09-08T15:13:41+00:00</updated>
+    <author>
+      <name>Kirbyfanner</name>
+    </author>
+    <author>
+      <name>Platano Bailando</name>
+    </author>
+    <author>
+      <name>Lyxn</name>
+    </author>
+    <author>
+      <name>MartyredG</name>
+    </author>
+    <author>
+      <name>Terairk</name>
+    </author>
+    <content># Fixes&#13;
+- Crash / blackscreen when save-quitting while AP menu is open&#13;
+- Kaleidoscope now correctly gives 3 card rewards from other characters (instead of 0, 1, 2 cards depending on your unlocked characters)&#13;
+- Hopefully fix the issue when connecting to an older APworld and not sending any checks (in my testing it didn't work for some reason and then worked when i restart - I would not be surprised if it showed up again&#13;
+- Fix the behaviour where Silver Crucible, Silken Tress etc did not work correctly - they now consume upon viewing a Card Reward for the first time - opposes base game behaviour&#13;
+- One of the above hopefully fixes the ancient relics breaking (I didn't notice them breaking in my testing)&#13;
+&#13;
+I didn't do a full 100% thorough test so maybe some other random features broke.&#13;
+&#13;
+# Mod Information&#13;
+&#13;
+## Pre-Requisites&#13;
+&#13;
+- **Your host MUST use Archipelago Client v0.6.7+**.&#13;
+- This version of the mod is intended to be used for **v0.107.1**  of Slay the Spire II&#13;
+  - While we have experimental support for the public beta branch **v0.111.0**, we recommend **the "Default Public/Main Version"** of the game to most players. Since the beta branch is updated more frequently and is more volatile, it's less likely to be bug-free. Please use it at your own risk. However numerous players have used it just fine, @Terairk is the maintainer for this and he mostly develops here.&#13;
+  - We will do our best to keep up with game updates as they release, so please be patient when encountering issues.&#13;
+&#13;
+## Installing the Mod from Steam Workshop (Recommended)&#13;
+&#13;
+1. Ensure that you have [RitsuLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3747602295) installed. The easiest way to obtain it is from Steam Workshop.&#13;
+2. Subscribe to the [Slay the Spire II Archipelago Client](https://steamcommunity.com/sharedfiles/filedetails/?id=3748826296) on Steam Workshop.&#13;
+3. Make sure that any other unnecessary mods are turned off, unless you're trying to use a specific modded character for your Archipelago session.&#13;
+4. Start the game&#13;
+&#13;
+## Manually Installing the Mod from GitHub&#13;
+&#13;
+1. Ensure that you have [RitsuLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3747602295) installed. The easiest way to obtain it is from Steam Workshop.&#13;
+2. Download the "Archipelago.zip" from the [Releases](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/latest) section of the Repo&#13;
+3. Go to your Slay the Spire II directory (In Steam, click "Browse Local Files")&#13;
+4. If a folder called `mods` does not exist, create it&#13;
+5. Copy the `Archipelago.zip` into `mods`. Then click `extract all` on your favourite ZIP tool.&#13;
+&#13;
+- If you've done this step correctly, your directory structure should look like this: `/&lt;slay-the-spire-2-local-files&gt;/mods/Archipelago/` and the contents of that folder should be a bunch of `.dll` files and a `.pck` file (there may be more files too, please don't touch anything in this folder)&#13;
+&#13;
+6. Start the game&#13;
+&#13;
+### Additional Steps for **Hosts**&#13;
+&#13;
+7. Download `spire2.apworld`&#13;
+8. Open your Archipelago Launcher&#13;
+9. Click "Install APWorld"&#13;
+10. Select `spire2.apworld` in the file dialog that pops up&#13;
+11. **Restart the Archipelago Launcher**&#13;
+12. Now you should be able to properly host/generate an Archipelago Session with StS 2&#13;
+&#13;
+- If you want to use `archipelago.gg` to host the game, generate it locally first following the steps above, then upload the `.zip` file from the `output` folder in your Archipelago installation&#13;
+&#13;
+&gt; [!IMPORTANT]&#13;
+&gt; You need to use Archipelago Version 0.6.7+ and CANNOT use earlier versions of Archipelago with this mod!&#13;
+</content>
+    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/1.1.1"/>
   </entry>
 </feed>
