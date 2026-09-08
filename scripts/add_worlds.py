@@ -4,6 +4,7 @@ import os
 import pathlib
 import re
 from time import sleep
+from typing import NamedTuple
 
 import gspread
 import manifest_manager
@@ -14,6 +15,12 @@ from manifest_manager import index_manager
 from worlds.apworld_manager.world_manager import RepositoryManager
 
 REPO_REGEX = r"(https://github\.com/[a-zA-Z0-9_\-\.]+/[a-zA-Z0-9_\-\.]+)"
+
+
+class TextWithHyperlink(NamedTuple):
+    text: str
+    hyperlink: str
+
 
 if os.path.exists("queue.txt"):
     with open("queue.txt") as f:
@@ -119,12 +126,13 @@ def fetch_spreadsheet_rows_xlsx(spreadsheet: str, tabs: list[int]) -> list[dict[
             rows.pop(0)
         headers = [c.value for c in rows[0]]
         rows.pop(0)
-        parsed = [{headers[i]: c.hyperlink.target if c.hyperlink else c.value for i, c in enumerate(row)} for row in rows]
+        parsed = [{headers[i]: TextWithHyperlink(text=c.value, hyperlink=c.hyperlink.target) if c.hyperlink else c.value for i, c in enumerate(row)} for row in rows]
         all_rows.extend(parsed)
     return all_rows
 
 
 games_without_links = set()
+game_info = {}
 if spreadsheet:
 
     def extract_apworld_link(row: dict[str, str]) -> str | None:
@@ -135,6 +143,8 @@ if spreadsheet:
             where_to_find = row.get("Where can you get the APWorld and Client?", "")
         if not where_to_find:
             where_to_find = row.get("Where can you get the APWorld or program?", "")
+        if isinstance(where_to_find, TextWithHyperlink):
+            where_to_find = where_to_find.hyperlink
         if where_to_find:
             return where_to_find.strip()
         return ""
@@ -161,6 +171,7 @@ if spreadsheet:
 
         if row.get("18+ / Unrated", False) or row.get("Playable in", "").lower() == "after dark":
             ad_games.append(row["Game"].strip())
+        game_info[row["Game"].strip()] = row
 
 if args.scan_file:
     print(f"Scanning {args.scan_file} for repo URLs")
@@ -190,6 +201,29 @@ def save():
             f.write("\n".join(failed))
 
 
+sheet_to_manifest_mapping = {
+    "Setup Guides": ("setup_guide_url", True),
+    "Disclosures": ("sheet_disclosure", False),
+    "Stability": ("sheet_stability", False),
+}
+
+
+def update_manifest_with_sheet_data(manifest: dict) -> None:
+    info = game_info.get(manifest.get("game"))
+    if info:
+        modified = False
+        for sheet_field, (manifest_field, flatten) in sheet_to_manifest_mapping.items():
+            value = info[sheet_field]
+            if flatten and isinstance(value, TextWithHyperlink):
+                value = value.hyperlink
+
+            if sheet_field in info and manifest.get(manifest_field) != value:
+                manifest[manifest_field] = value
+                modified = True
+        if modified:
+            manifest_manager.save_manifest(world=None, manifest=manifest)
+
+
 default_flags = {}
 if args.dark:
     default_flags["after_dark"] = True
@@ -207,9 +241,19 @@ for url in queue.copy():
     if m := filtered_url.match(github):
         github_url, game_name_filter = m.groups()
         manifest = index_manager.manifests_by_game.get(game_name_filter)
-        if manifest and manifest.get("github") == github_url:
+        if not manifest:
+            found = False
+        elif isinstance(manifest_url := manifest.get("github"), str) and manifest_url == github_url:  # noqa: SIM114
+            found = True
+        elif isinstance(manifest_url, list) and github_url in manifest_url:
+            found = True
+        else:
+            found = False
+
+        if manifest and found:
             print(f"Skipping {github_url} because it is already in the index for {game_name_filter}")
             queue.remove(url)
+            update_manifest_with_sheet_data(manifest)
             continue
 
     manifests = update_index_from_github(None, {}, github_url=github, default_flags=default_flags)
@@ -224,6 +268,7 @@ for url in queue.copy():
         if args.ready and "unready" in manifest.get("flags", []):
             manifest["flags"].remove("unready")
             manifest_manager.save_manifest(world=pathlib.Path("index", world + ".json"), manifest=manifest)
+        update_manifest_with_sheet_data(manifest)
     if not manifests:
         failed.append(github)
 

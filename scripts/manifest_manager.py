@@ -67,12 +67,16 @@ def load_manifest(file_path: pathlib.Path, github_url: str = "", default_flags=N
     return index_manager.load_manifest(file_path, github_url, default_flags)
 
 
-def save_manifest(world: pathlib.Path, manifest: dict) -> None:
+def save_manifest(world: pathlib.Path | None, manifest: dict) -> None:
     _manifest = manifest.copy()
     path = _manifest.pop("_filename", None)
     _manifest.pop("_new", None)
     if path:
         world = pathlib.Path(path)
+    elif world is None:
+        raise ValueError("World path must be specified for saving the manifest")
+    else:
+        manifest["_filename"] = str(world.absolute())
 
     if "upgrades_into" in manifest and world.parent.absolute() == index.absolute():
         world.unlink()
