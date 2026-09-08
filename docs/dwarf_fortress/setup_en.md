@@ -8,6 +8,11 @@
 
 ---
 
+> **Upgrading from 1.3.x?** 2.0 changed locations, items and logic, and added new
+> raws. Both halves have to be redone: **generate a new multiworld seed** (old seeds
+> are refused rather than allowed to fail mid-run) and **generate a new DF world**
+> (raws only enter a save at world-gen). Existing forts cannot be carried over.
+
 ## Installation
 
 ### 1. Install the AP World
@@ -24,38 +29,58 @@ Copy the `mods` folder from this repository into your Dwarf Fortress installatio
 <SteamLibrary>\steamapps\common\Dwarf Fortress\mods\
 ```
 
-This creates `mods\dwarfipelago\` inside your DF installation. The final layout should look like:
+`%AppData%\Roaming\Bay 12 Games\Dwarf Fortress\mods\` works too — the client
+writes to whichever copies it finds. Just don't keep one in both, or you will be
+guessing which one DF's mod manager is showing you.
+
+This creates `mods\dwarfipelago\`. The final layout should look like:
 
 ```
 mods\dwarfipelago\
   info.txt
+  objects\            <- raws: the Archipelago civilization and the shop materials
+  graphics\           <- raws: the AP item sprite
   scripts_modinstalled\
     dwarfipelago.lua
     internal\
       dwarfipelago\
+        apcaravan.lua
         checks.lua
         items.lua
         log.lua
         state.lua
 ```
 
-Then **enable the mod** in DF's in-game mod manager before generating or loading a world.
+The `objects\` and `graphics\` folders are not optional. They carry the
+`ARCHIPELAGO` civilization and the Merchant's Shop materials, and **raws only enter
+a save at world generation** — a world generated without them can never have the
+shop, no matter what you install afterwards.
 
-> **Important — installed_mods snapshot:**  
-> When DF enables a mod it copies it to a separate snapshot directory. If you update the mod files later you must also update the snapshot, or disable and re-enable the mod in DF's mod manager to regenerate it automatically.  
-> The snapshot lives at:
+> **installed_mods snapshot:** when DF enables a mod it copies it to a snapshot
+> directory, and that copy is what world-gen actually reads. **The client keeps this
+> in sync for you** — on connect it wipes any stale `dwarfipelago*` snapshots and
+> reinstalls a fresh one, so you no longer have to disable/re-enable the mod by hand
+> after an update. The snapshot lives at:
 > ```
-> %AppData%\Roaming\Bay 12 Games\Dwarf Fortress\data\installed_mods\dwarfipelago (1)\
+> %AppData%\Roaming\Bay 12 Games\Dwarf Fortress\data\installed_mods\dwarfipelago (15)\
 > ```
-> Paste that path into Explorer's address bar to open it directly.
 
 ### 3. Install the World Gen Preset
 
-Dwarfipelago works best with a specific world generation profile. Launch the **Dwarf Fortress Client** from the Archipelago launcher and run the following command **once, before generating a new world**, to add the preset to your world gen preset list:
+Dwarfipelago works best with a specific world generation profile. **The client
+installs this for you** whenever it connects, so in the normal flow you can skip
+straight to step 4.
+
+If you want to install it without connecting — or something went wrong — run this in
+the **Dwarf Fortress Client** from the Archipelago launcher:
 
 ```
 /dfinstall
 ```
+
+It adds the preset to your world gen list and reinstalls the mod snapshot.
+`/dfuninstall` reverses both, leaving your `mods\dwarfipelago\` copy and your saves
+untouched.
 
 > **Back up your world_gen.txt first** if you have custom presets you care about:
 > ```
@@ -109,11 +134,36 @@ Dwarf Fortress:
 
 ### 5. Launch and Connect
 
-1. In the Archipelago launcher, click **Dwarf Fortress** to launch the game
-2. Load or embark on a fortress
-3. Click **Dwarf Fortress Client** in the launcher and connect to your server
+**Connect the client before you open Dwarf Fortress.** On connect it installs the
+world gen preset, reinstalls the mod snapshot so world-gen reads current files, and
+then launches DF itself. If DF is already running it read its mod list at startup and
+will not see any of that.
 
-The mod starts automatically once a world is loaded — no DFHack console commands needed.
+1. Click **Dwarf Fortress Client** in the Archipelago launcher and connect to your server.
+2. Watch the client log for the install lines:
+   ```
+   World gen preset installed to: ...
+   Installed dwarfipelago (raws + scripts) for world-gen to: ...
+   Native caravan: baked 50 shop good(s), prices <lo>-<hi>, into: ...
+   ```
+   DF then opens on its own — you do not need the launcher's **Dwarf Fortress** button.
+3. In DF choose **Create New World**, and in the world gen screen:
+   - select the **DwarfipelagoWorld** preset, and
+   - **tick `Dwarfipelago` in the mod list.** This is the step people miss. Enabling
+     the mod here is what writes its raws into the save; a world generated without it
+     has no Archipelago civilization and no Merchant's Shop, permanently.
+4. Generate the world, then embark as normal.
+
+The mod starts automatically once a fortress loads — no DFHack console commands needed.
+Within a few ticks you should see the trade depot announcement below.
+
+> **Merchant's Shop goods** are named and priced by the mod while your fortress runs, so
+> any world generated with **Dwarfipelago enabled** shows them correctly no matter when
+> you connected. The client additionally bakes them into the raws before world gen as a
+> fallback. What the shop *does* require is that the world was generated with a mod build
+> that includes the shop materials — an older one leaves the goods unnamed at a flat
+> price, and the mod says so in `<Dwarf Fortress>/dwarfipelago.log`. The fix is to
+> generate a new world with the current mod enabled.
 
 ---
 
@@ -150,6 +200,7 @@ On the first poll tick after your fortress loads, the mod automatically places a
 | **Trade depot not appearing** | See the Trade Depot section above |
 | **Items not arriving** | Check the client log window; items are delivered via DFHack RPC once the depot is established |
 | **Checks fire immediately on world load** | Ensure you are running Archipelago 0.6.7 and the latest mod version |
+| **Shop goods have no names / all cost the same** | That world was generated with a mod build older than the shop materials. Check `dwarfipelago.log`, then generate a new world with the current mod enabled (see step 5) |
 
 ### Where to find errors
 
