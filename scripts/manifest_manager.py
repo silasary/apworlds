@@ -74,6 +74,10 @@ def save_manifest(world: pathlib.Path, manifest: dict) -> None:
     if path:
         world = pathlib.Path(path)
 
+    if "upgrades_into" in manifest and world.parent.absolute() == index.absolute():
+        world.unlink()
+        world = pathlib.Path(index.absolute(), "obsolete", world.name)
+
     should_be_yaml = len(manifest.get("versions", [])) == 0
     if should_be_yaml:
         write_yaml_file(world.with_suffix(".yaml"), _manifest)
