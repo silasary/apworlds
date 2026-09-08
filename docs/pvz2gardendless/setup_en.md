@@ -4,9 +4,10 @@
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) with the PvZ2 Gardendless
   `.apworld` installed.
-- [Git](https://git-scm.com/downloads) and [Node.js 18 or newer](https://nodejs.org/) — both must be
-  on your `PATH`. The installer builds the game client from source and will stop with an error if
-  either is missing.
+- [Git](https://git-scm.com/downloads) and [Node.js 18 or newer](https://nodejs.org/) — `git`, `node`
+  and `npm` must all be on your `PATH`. The installer builds the game client from source and will
+  stop with an error if any of them is missing. On Linux, `npm` is often packaged separately from
+  `node` (Arch's `nodejs` package is one example), so check for it specifically.
 - An internet connection for the first build. It clones roughly 300 MB of game source.
 
 ## Installing the game client
@@ -24,8 +25,36 @@ which clones the upstream game, injects the Archipelago client, and packages an 
    - inject the Archipelago client,
    - run `npm install` and package the app.
 
-The first build takes several minutes, mostly clone and `npm install` time. When it finishes you will
-have `PvZ Gardendless AP.exe` in the build directory.
+The first build takes several minutes, mostly clone and `npm install` time. When it finishes the
+build directory holds:
+
+| Platform | What you get |
+| --- | --- |
+| Windows | `PvZ Gardendless AP.exe` |
+| macOS | `PvZ Gardendless AP.dmg` |
+| Linux | `PvZ Gardendless AP.AppImage`, plus `PvZ Gardendless AP.sh` |
+
+On Linux you get two, because an AppImage needs a FUSE runtime to mount itself and not every system
+has one. If the AppImage will not start, run `PvZ Gardendless AP.sh` instead. It launches the same
+application from the unpacked build inside `PVZGE-Electron/release/`, which needs nothing extra.
+Because it points into that folder, keep the folder where it is.
+
+### Linux without a package manager
+
+Bazzite, SteamOS and other atomic distros have a read-only root, so `git`, `node` and `npm` have to
+come from somewhere else. Any of these work and none of them need root:
+
+- **nvm** or **fnm** — installs `node` and `npm` into your home directory.
+- **Homebrew** — preinstalled on Bazzite: `brew install node git`.
+- **distrobox** or **toolbx** — a mutable container that shares your home directory.
+
+If you build inside a container, run the finished app on the host rather than in the container.
+
+### Steam Deck
+
+Build in Desktop Mode. Add the AppImage (or `PvZ Gardendless AP.sh`) to Steam as a non-Steam game to
+launch it from Game Mode. The game is mouse-driven, so give it a controller layout with a trackpad
+mouse, or use a keyboard and mouse.
 
 ## Configuring your YAML
 
@@ -61,7 +90,7 @@ you starting a level.
 
 ## Joining a multiworld game
 
-1. Launch `PvZ Gardendless AP.exe`.
+1. Launch the app you built (`PvZ Gardendless AP.exe`, `.dmg`, `.AppImage` or `.sh`).
 2. Click the **AP** button in the top-left corner.
 3. Enter the server address, your slot name, and the password if the room has one.
 4. Click connect.

@@ -1,10 +1,10 @@
-# None
+# LostButFound
 
 ## Latest
-- <a href="https://github.com/Michimarii/LostButFoundAP/releases/download/v1.1.1/LostButFound.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/Michimarii/LostButFoundAP/releases/download/v0.0.1/lostbutfound.apworld">Latest Version (0.0.1)</a>
 
 ## All Versions
 
-#### v1.1.1
-- <a href="https://github.com/Michimarii/LostButFoundAP/releases/download/v1.1.1/LostButFound.apworld">https://github.com/Michimarii/LostButFoundAP/releases/download/v1.1.1/LostButFound.apworld</a>
+#### v0.0.1
+- <a href="https://github.com/Michimarii/LostButFoundAP/releases/download/v0.0.1/lostbutfound.apworld">https://github.com/Michimarii/LostButFoundAP/releases/download/v0.0.1/lostbutfound.apworld</a>
 

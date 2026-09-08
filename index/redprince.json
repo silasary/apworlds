@@ -89,6 +89,21 @@
       "version_simple": "1.0.13",
       "world_version": "1.0.13.post2"
     },
+    "v1.0.14": {
+      "created_at": "2026-09-08T03:25:16Z",
+      "description": "# Red Prince 1.0.14\n\n## Gameplay and logic\n\n- Fixed unreceived outer rooms appearing with Outer Room Sanity enabled.\n- Added Closet fallback choices when too few eligible outer rooms are\n  available for the draft.\n- Fixed selecting a Closet placing Tomb instead. Outer-room filtering and\n  Closet placement have been confirmed working in-game.\n- Added outer-draft logging to help diagnose selection and placement issues.\n\n## Inventory - attempted fixes\n\n- Attempted to prevent simple inventory items from being granted again while\n  carried or stored in Coat Check. In-game confirmation is still pending.\n- Attempted to suppress completed microchip world pickups after day-start\n  restoration. A user still saw the Blackbridge chip while holding all three\n  chips, so the duplication issue remains unresolved.\n- Added null checks around microchip pickup suppression when scene objects\n  are unavailable.\n- Upgrade-disk duplication through Coat Check remains unresolved; disks use\n  a separate persistence path from simple inventory items.\n\n## Known issues\n\n- A user reported a crash while attempting to place microchips. The user is\n  unsure what caused it, and the available logs do not establish a cause.\n- An extra Blackbridge chip was visible before the crash, but whether it was\n  collected is unknown. No causal link to duplication or the attempted fix\n  has been confirmed. This update does not claim to fix the crash.\n\n## Check names and documentation\n\n- Renamed the microchip checks to Microchip - West Path, Microchip - Front\n  Entrance, and Microchip - Blackbridge Grotto.\n- The plugin continues to recognize the previous microchip check names.\n- Corrected Common Locked Trunks documentation to clarify that Bedroom and\n  Den do not have trunk checks.\n\n## Compatibility\n\n- Archipelago 0.6.7 or newer.\n- The 1.0.14 game plugin and 1.0.14 APWorld should be distributed together.\n",
+      "download_url": "https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.14/redprince.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b3b4fbdce40d1e857dd0e652d294ae424cd35e479a5ff8bc8ddc82e9d541ecf3",
+      "html_url": "https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.14",
+      "minimum_ap_version": "0.6.7",
+      "size": 74457,
+      "source_url": "https://api.github.com/repos/Tincancrafter/Red-Prince-Releases",
+      "tag": "v1.0.14",
+      "title": "1.0.14",
+      "version_simple": "1.0.14",
+      "world_version": "1.0.14"
+    },
     "v1.0.4": {
       "created_at": "2026-08-25T18:41:33Z",
       "description": "Blue Prince Archipelago 1.0.4\n\nFixes plugin data being written to a second folder named `Red Prince Archipelago`. Session data is now stored under `RedPrinceArchipelago\\SessionData`, and existing data from the legacy spaced folder is migrated automatically.\n\nIncludes the current player YAML, BepInEx plugin package, and matching Archipelago world. Keep all three files from this release together.\n",

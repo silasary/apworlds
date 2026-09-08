@@ -5,7 +5,7 @@ combined with traditional Mario gameplay, visual style, and characters.
 
 
 ## Downloads
-- <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-0.2.3/sm64ex_spicy.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.0/sm64ex_spicy.apworld">Latest Version (1.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

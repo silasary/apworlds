@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.13/redprince.apworld">Latest Version (1.0.13.post2)</a>
+- <a href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/download/v1.0.14/redprince.apworld">Latest Version (1.0.14)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
