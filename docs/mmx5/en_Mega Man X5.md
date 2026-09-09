@@ -230,8 +230,10 @@ override it when the patch is opened — the setup guide explains how.
 - **`heart_tank_value` sets what each Heart Tank is worth.** Vanilla is 2, and
   X5's eight tanks are what take a vanilla run from 32 to 48. 0 makes them
   worth nothing — the check still sends, the gauge just does not move. The
-  total stops at 127. Alia's Life Up rewards are **not** affected: they are not
-  Archipelago items, they stay worth 2 each, and they still add on top. Heart
+  total stops at 127, and that ceiling now includes Alia's Life Up rewards —
+  they are not Archipelago items, they stay worth 2 each and they still add on
+  top, but they can no longer push the total past 127. (Before 0.7.1 they
+  could, and the game froze with its HUD drawn across the screen.) Heart
   Tanks from the multiworld raise **both** characters, unlike the vanilla
   pickup, which only helps whoever walked over it. Changing this mid-run
   affects the tanks you receive afterwards, not the life you already have.

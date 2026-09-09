@@ -49,17 +49,17 @@ configurable number of bacon soup cans to be received. The goal can be changed t
 with later chapters being discluded from randomization unless specifically included. Chapters preceding the
 goal chapter can also be set to be required for completion.
 
-## I received an item, but I can't place it where it needs to go?
+## I received an item, but I can't use it?
 
 Since Bendy and the Ink Machine doesn't have a real inventory, you still have to interact with an item to "pick it up". If
 you don't have an item yet, the interaction will only try to send out the location check, and you will need to interact
 with the object again after receiving the item to be able to use it fully.
 
-## I can't unclog the toy machine in chapter 3 or interact with the books in chapter 4?
+## I can't interact with something?
 
-Both the toys that clog the chapter 3 toy machine and the books needed to open the door in chapter 4 require an item to
-interact with them (CH3 Toys and CH4 Books respectively). Generally, if there is something that won't let you interact
-with it, it is probably an item you are missing, which can be found in the list above.
+Several spots in the game require you to interact with something that has now been locked behind an item in the mod.
+Generally, if there is something that won't let you interact with it, it is probably an item you are missing, which can
+be found in the list above.
 
 ## How does Deathlink work?
 

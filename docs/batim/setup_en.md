@@ -31,6 +31,11 @@ If installing manually:
 5. Extract the mod folder into the plugins folder of the BepInEx install
 6. Opening the game should now also bring up a BepInEx console
 
+### Steam Deck/Steam OS/Arch Linux?
+
+Check out this [guide by bonestennyson](https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/blob/master/docs/steam_deck_guide.md) for a
+better install guide.
+
 
 ## Joining a new MultiWorld
 

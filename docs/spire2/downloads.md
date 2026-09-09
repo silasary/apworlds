@@ -11,6 +11,9 @@
 #### v1.1.0r2
 - <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/1.1.1/spire2.apworld">https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/1.1.1/spire2.apworld</a>
 
+#### v1.1.0r2
+- <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/1.1.1/spire2.apworld">https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/1.1.1/spire2.apworld</a>
+
 #### v1.1.0
 - <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/pre-release-mp-2.2.0/spire2.apworld">https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/pre-release-mp-2.2.0/spire2.apworld</a>
 

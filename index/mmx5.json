@@ -350,6 +350,22 @@
       "title": "MMX5 apworld v0.7.0",
       "version_simple": "0.7.0",
       "world_version": "0.7.0"
+    },
+    "mmx5-v0.7.1": {
+      "created_at": "2026-09-09T00:06:29Z",
+      "description": "**Fixes a freeze: maximum life could overflow, taking the HUD with it.**\n\nReported from a live seed in Zero Space \u2014 frozen at the spawn point, HUD tiles\npainted across the screen, weapon menu still working, the other character fine.\n\n**No re-patch.** This is client-side only. Update the apworld and carry on with\nthe disc you have.\n\n## What was happening\n\nThe apworld's own life grants stop at 127, which is the most the game can hold.\nThe game's *own* grants do not check: Alia's Life Up reward and the vanilla\nHeart Tank pickup each add 2 with no ceiling, because vanilla tops out at 64\nand never needed one.\n\nLanding on top of a maximum already at 127, they pushed the byte to 129 \u2014 and\nthe life bar reads that byte as **signed**, so 129 read as \u2212127 and the bar's\nframe index landed 79 frames off the front of its own artwork, drawing whole\nsheets of unrelated tiles over the screen. You could still open the weapon\nmenu; you could not move.\n\nThose grants raise only the character you are playing, which is why the other\none was untouched and still playable.\n\n## The quieter half\n\nAn overflowed maximum also failed the client's \"is a save resident\" test, so\nthe client stopped sending checks and said nothing about it \u2014 and every path\nthat could have repaired the save ran behind that same test, which is why it\ncould not recover on its own.\n\n## What changed\n\nThe client corrects the maximum back to 127 as soon as it sees it, ahead of\nthe residency test, so checks keep flowing through the same poll. It restores\nthe life you were left with, and **a save that has already broken is repaired\non connect** \u2014 an affected run does not need restarting.\n\n`heart_tank_value` totals now stop at 127 *including* Alia's Life Ups, rather\nthan letting hers push past it.\n\nOnly reachable for seeds with a high `starting_hp` or `heart_tank_value`; a\ndefault seed could never get near it.\n\n---\n\n`mmx5.apworld` goes in your Archipelago install's `custom_worlds/` folder.\n`MMX5-Unpatcher.exe` is unchanged from 0.7.0 (v1.2) \u2014 keep the one you have.\n`MMX5-Setup-Guide.pdf` is the setup guide.\n\nRequires Archipelago 0.6.7 or later.\n",
+      "download_url": "https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.1/mmx5.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e78b8cae7efdbe5093f3090dbc4c1119756b09bac71e7572dea7c41edd079c63",
+      "html_url": "https://github.com/Shinnuu/Archipelago/releases/tag/mmx5-v0.7.1",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 348066,
+      "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
+      "tag": "mmx5-v0.7.1",
+      "title": "MMX5 apworld v0.7.1",
+      "version_simple": "0.7.1",
+      "world_version": "0.7.1"
     }
   }
 }

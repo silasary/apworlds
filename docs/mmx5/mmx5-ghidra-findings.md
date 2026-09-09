@@ -1,4 +1,4 @@
-> Research notes mirrored from the mmx5-ap-research workspace (2026-09-04).
+> Research notes mirrored from the mmx5-ap-research workspace (2026-09-08).
 > Working copies live there and are updated as addresses are confirmed;
 > re-sync this mirror when they change. No game data included.
 
@@ -124,6 +124,29 @@ finding no other copy):
   vanilla delivery rules, `0x80053E3C`.
 - **Full heal** — `FUN_80039bf0`: `P+0x5C = [0x800D1C00+charIdx+0x47]`.
 - **Virus DoT** — `FUN_8003a1fc`: `P+0x5C -= 2` every 300 frames when infected.
+
+**The engine's own max-HP grants are unbounded (2026-09-08).** The Heart Tank
+collect handler's tail:
+
+```
+800540DC  addiu $a2, $a2, 0x47     ; a2 = 0x800D1C47
+800540E0  addu  $a3, $a3, $a2      ; + charIdx  (CURRENT character only)
+800540E4  lbu   $v0, ($a3)         ; UNSIGNED load
+800540EC  addiu $v0, $v0, 2
+800540F4  sb    $v0, ($a3)         ; store back - no clamp, no compare
+```
+
+Written with `lbu`, read by the life bar with `lb`. Vanilla can only reach
+0x40 so the disagreement never surfaced; on top of the apworld's 0x7F clamp it
+writes 0x81 and every bar calculation runs backwards (frame index 0x39 against
+a legal 0x88..0x98). Alia's Life Up reward is the same `+2` on the same byte
+and **its applier is not yet located** - it is delivered from the pending-DNA
+buffer at `0x800D1D28` during the results sequence, possibly in overlay code.
+An EXE-wide scan for the `+0x47` idiom found 150 sites, of which only
+`0x800540DC` and `0x80053AA0` build `0x800D1C00`; the latter is the heal
+delivery path (`0x80053AB0 andi $v0,$a1,0x80` confirms bit 7 of `P+0x5C` is
+the damaged flag, not part of the value). Fixed client-side in apworld 0.7.1;
+an engine-side cap would need the Life Up site first.
 
 **Max HP: `0x800D1C47` (X) / `0x800D1C48` (Zero)** — confirmed both by the
 `charIdx + 0x47` code path and by the known "max energy" cheat addresses in
@@ -351,7 +374,7 @@ The collect table ends at `0x800110D8` where ASCII strings begin (`"SPU:"`,
 
 | kind | init | collect | identity | evidence |
 |---|---|---|---|---|
-| `0x00` | `0x800537B8` | `0x800540A0` | **Heart Tank** | writes `0x800D1C80` |
+| `0x00` | `0x800537B8` | `0x800540A0` | **Heart Tank** | writes `0x800D1C80`; also `+2` to max HP **with no ceiling** — see below |
 | `0x01` | `0x800537D4` | `0x80054100` | **EX item** | writes `0x800D1C80` |
 | `0x02` | `0x80053858` | `0x80054164` | **small HP** | heals 4, or 5 if `player+0xFC & 0x40` |
 | `0x03` | `0x80053858` | `0x80054198` | **large HP** | heals 16, or 20 with the same flag |
