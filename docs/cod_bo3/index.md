@@ -4,7 +4,7 @@ TODO: Game Description
 
 
 ## Downloads
-- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.9/cod_bo3.apworld">Latest Version (0.5.9)</a>
+- <a href="https://github.com/colin969/bo3_archipelago/releases/download/0.5.11/cod_bo3.apworld">Latest Version (0.5.11)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

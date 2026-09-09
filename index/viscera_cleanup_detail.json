@@ -46,6 +46,20 @@
       "title": "1.1.0",
       "version_simple": "1.1.0",
       "world_version": "1.1.0"
+    },
+    "1.2.0": {
+      "created_at": "2026-09-05T04:33:44Z",
+      "description": "# Viscera Cleanup Detail 1.2.0\r\n\r\n**New**\r\n- **Useful item: Lit lantern**, next to the bucket and bin. Screw you, Penumbra\r\n- **New yaml option `mop_start_self_cleaning_mop`** (on by default). With `random_starting_kit` on, a level that rolls the easy mop and Slosh-O-Matic start also starts with its Self-Cleaning Mop, so the mop never needs rinsing. It is the mirror of the hard start's Squeaky Clean Boots.\r\n- **`/deathlink` and `/traplink` client toggles.** Each takes `on`, `off` or `seed`, and a bare command flips the current state.\r\n- **`/autoplay` client toggle.**\r\n\r\n**Logic**\r\n- **Penumbra without hands tops out at 40 percent.** Level's too difficult man.\r\n\r\n**Fixes**\r\n- **Dirty buckets don't count negatively for the cleaned%.** While a level's incinerator is locked there is nowhere dispose of dirty buckets, so the buckets you fill no longer count against your cleaned percentage. They count again the moment the Incinerator item arrives.\r\n- **A co-op guest leaving no longer kills the rest.** Quitting out registered as a death and, with death link on, swept every janitor in the session, host included.\r\n- **Loading a save no longer banks milestone checks you did not earn.** A level restores its mess a moment after the load, and the old probe read that gap as a near-spotless room.\r\n- **Coming back from a break no longer floods the level.** A pending backlog now hands you the newest few of each supply and drops the rest, instead of dropping one item per second for as long as the queue lasts. (So if you are 200 items pending, youll only get the progression checks and some usefuls)\r\n\r\n**Upgrading**\r\n- Existing yamls keep working untouched. `mop_start_self_cleaning_mop` defaults on and only does anything with `random_starting_kit` on.",
+      "download_url": "https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/download/1.2.0/viscera_cleanup_detail.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f96dcad2d4c446f04c7e17a00f55703584903d81af196c8f82f737a338e27240",
+      "html_url": "https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.2.0",
+      "size": 279963,
+      "source_url": "https://api.github.com/repos/Kryen112/Viscera-Cleanup-Detail-AP",
+      "tag": "1.2.0",
+      "title": "1.2.0",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0"
     }
   }
 }

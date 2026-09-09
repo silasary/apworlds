@@ -2,127 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-09T06:18:40.983267+00:00</updated>
+  <updated>2026-09-09T12:19:07.597119+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/tag/v0.16.1-beta</id>
-    <title>The Messenger v0.16.0</title>
-    <updated>2026-09-07T14:25:05+00:00</updated>
-    <author>
-      <name>alwaysintreble</name>
-    </author>
-    <content># Messenger Randomizer AP&#13;
-&#13;
-Beta release for Messenger AP with many, many not yet merged changes.&#13;
-&#13;
-## Mod Changelog since v0.15.2&#13;
-- Add 4 new locations for the generators in Elemental Skylands (disabled by default) alwaysintreble#23&#13;
-- Support for deferred entrances in UT alwaysintreble#24&#13;
-- Improve region tracking for UT and poptracker alwaysintreble#30&#13;
-- Fix some location names that were different from the Apworld alwaysintreble#29&#13;
-- Improve logging even more&#13;
-&#13;
-### New since v0.16.0-beta&#13;
-- Fix connection overlay sometimes not showing up, or not showing when disconnected alwaysintreble#32&#13;
-- Necro cutscene no longer triggers automatically; you need to grab him&#13;
-- Play a portal animation when entering a boss room from the wrong dimension&#13;
-- Add a dimension portal in *Autumn Hills right* instead of automatically switching&#13;
-- Rework the Lost Woods solve to be only temporarily in transition rando when arriving in *Howling Grotto bottom*&#13;
-- Rewrite transition rando to have only one loading instead of two&#13;
-&#13;
-## Apworld Changelog official release (no change since v0.16.0-beta)&#13;
-- Add 4 new locations for the generators in Elemental Skylands (disabled by default) ArchipelagoMW/Archipelago#6252&#13;
-- Fix UT not working with some options ArchipelagoMW/Archipelago#6132 ArchipelagoMW/Archipelago#6340&#13;
-- Add map integration and glitch logic to UT (requires poptracker pack) ArchipelagoMW/Archipelago#6030&#13;
-- Add deferred entrances in UT map integration to prevent transition shuffle spoilers&#13;
-- Support for UT explain command ArchipelagoMW/Archipelago#6278&#13;
-- Fix transition plando not working for some entrances ArchipelagoMW/Archipelago#6327&#13;
-- Many logic fixes ArchipelagoMW/Archipelago#6124 ArchipelagoMW/Archipelago#6194 ArchipelagoMW/Archipelago#6258 ArchipelagoMW/Archipelago#6337&#13;
-&#13;
-[Commit link](https://github.com/Jouramie/Archipelago/releases/tag/messenger%2F0.16.0-beta)&#13;
-&#13;
-# Installation Instructions (for Windows, but likely compatible with other systems)&#13;
-Mod installation steps are the same as usual.&#13;
-&#13;
-## Apworld&#13;
-- Install Archipelago (link below) with the generator enabled.&#13;
-- Place the new `messenger.apworld` file in your custom world folder.&#13;
-- Remove the old `messenger.apworld` file from your `lib/worlds` folder.&#13;
-- When connecting to a _The Messenger_ seed with UT, you will be prompted to locate a The Messenger Track Pack (downloadable [here](https://github.com/alwaysintreble/TheMessengerTrackPack/releases)). **Do not unzip it.** Link the zipped file. Dismiss the prompt if you do not wish to use the map. If needed, you can change the location in your `host.yaml` in your Archipelago installation.&#13;
-&#13;
-## How to play the new content&#13;
-From the AP Launcher, you can use Options Creator to create a yaml for the beta apworld. That's where you can enable the Elemental Skylands generators shuffle. Once you have your yaml, generate locally.&#13;
-&#13;
-## Compatibility&#13;
-This release is fully compatible with worlds generated with the official apworld or on the site. Be aware, however, that if you use the tracker from this release, it might show some locations in logic that were not meant to be when the game was generated. Following what's "in logic" in the tracker will not match the spheres server-side.&#13;
-&#13;
-# Troubleshooting&#13;
-- Make sure you removed your `messenger.apworld` from `lib/worlds` and added the new apworld in `custom_worlds`.&#13;
-- *I can't see the map in UT, even though I linked the track pack.* Make sure you linked **the zipped** track pack. It needs to be zipped. You can change the file by editing your `host.yaml`.&#13;
-- *UT says the local datapackage for the connected game does not match the server's datapackage. Should I be worried?* No. You are connected to a game generated with a previous version of the apworld, but this should not prevent the tracker from working.&#13;
-- Report any issue in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel in the Archipelago Discord. Make sure to ping @jouramie otherwise I won't read. &#13;
-&#13;
-# Known issues&#13;
-- Loading a saved game in Howling Grotto bottom when transition shuffle is enabled might not solve lost woods correctly. &#13;
-  - Going back and forth through the transition in *Howling Grotto bottom* should solve the issue. &#13;
-- When loading a save, if connection cannot be established right away and transition shuffle is enabled, the new *Autumn Hills portal* might be missing. Happens when the room is asleept.&#13;
-  - Leaving and reloading the save should fix the issue.&#13;
-- When loading a save right after updating the mod, Lost Woods might unsolve, even if it was before.&#13;
-  - Just solve it again.&#13;
-&#13;
-# We Need Your Help! &#13;
-If you'd like to help integrate this into the main Archipelago releases, drop a comment on one of the pull requests! :wink:&#13;
-Also, please mention in the [_#messenger_](https://discord.com/channels/731205301247803413/1090822939697500243) channel that you used it, and report any issues. This will help with the integration process if some players mention using the beta world! </content>
-    <link href="https://github.com/Jouramie/TheMessengerRandomizerModAP/releases/tag/v0.16.1-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.0</id>
-    <title>DuckGame v0.1.0r2</title>
-    <updated>2026-09-07T14:46:53+00:00</updated>
-    <author>
-      <name>Marsavue</name>
-    </author>
-    <content># v0.1.0 Angel tear drop&#13;
-New [PopTracker](https://github.com/blakelmenakle/Duck-Game-Poptracker/releases/latest) Thanks to Blakel&#13;
-New APWorld rules Thanks to 1e1001&#13;
-## Changes&#13;
-- Added Death Link&#13;
-- Death Link Amnesty&#13;
-- 13 New Traps + 2 Anti-Traps&#13;
-- Traps (more info in yaml):&#13;
-  - Clumsy&#13;
-  - Stop Hitting Yourself&#13;
-  - FIREEE!&#13;
-  - FIREEE*&#13;
-  - Slippery Hands&#13;
-  - Whats Under There?&#13;
-  - Caught You!&#13;
-  - Duck Season&#13;
-  - Hot Potato&#13;
-  - Whats This?&#13;
-  - esreveR&#13;
-  - A Gift for you&#13;
-  - Don't look up&#13;
-  - Prot V&#13;
-  - Make it rain&#13;
-- Mace Collar &amp; Weight Ball is now a single item called Mace&#13;
-&#13;
-## APWorld Changes&#13;
-- Reworked logic so now each medal has requirements for certain items, should enhance randomisation&#13;
-- Death Link setting&#13;
-- Death Link Amnesty setting&#13;
-- Goal condition is reimplemented and Universal tracker now works correctly&#13;
-- Each trap can be weighted in the yaml&#13;
-&#13;
-## More Info&#13;
-&#13;
-Compatible with v0.1.0 Client&#13;
-Client: https://github.com/Marsavue/DuckGameArchipelago/releases</content>
-    <link href="https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/gaithernOrg/ArchipelagoKHBBS/releases/tag/0.2.0</id>
     <title>Kingdom Hearts Birth by Sleep v0.2.0</title>
@@ -1619,6 +1503,43 @@ I didn't do a full 100% thorough test so maybe some other random features broke.
     <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/1.1.1"/>
   </entry>
   <entry>
+    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.11.0</id>
+    <title>Harry Potter 2 PC v2.11.0</title>
+    <updated>2026-09-08T15:28:06+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content># HP2PC_AP v2.11.0&#13;
+Every link is now a command you can flip mid-run, auto-launch only fires when you ask for it, and Hold Shift runs faster. Plus an eleventh Diffindo plant pot and four logic corrections.&#13;
+&#13;
+### New&#13;
+- **Turn each link on or off during a run.** `/ringlink`, `/traplink` and `/deathlink` each take `on`, `off` or `seed`, and a bare command flips the current state. Your choice beats the seed setting on every reconnect, so dropping and rejoining keeps it.&#13;
+- **`/autoplay` overrides auto-launch for the client session.** It takes `on` or `off`, and a bare `/autoplay` flips it. Handy when you want one session to behave differently from your `auto_launch_game` setting.&#13;
+&#13;
+### Changed&#13;
+- **Auto-launch only fires on connects you made.** The Connect button, `/connect` and the startup connect arm the launch. A reconnect the client makes by itself after a dropped connection never launches. The game counts as already up when it is bridged or a `Game.exe` is visible, so closing the game at the launcher page no longer wedges auto-launch for the rest of the session. A skipped launch says so and points you at `/play`.&#13;
+- **Hold Shift now caps at 330 units per second**, up from 315. The cap scales off the live ground speed, so a boost the game gives you on its own still stacks on top.&#13;
+- **Blocker hints get a reach per site.** The Great Hall gate drops to 150 units and the Spongify and Skurge doorways to 100, about contact range, so those three stop announcing themselves from across the room. Everything else keeps the 500 unit reach.&#13;
+&#13;
+### Fixed&#13;
+- **A timed trap can no longer expire mid-climb.** Reducio and Engorgio rebuild Harry's collision cylinder when they run out, which corrupted it if he was on a ledge at the time. Expiry now waits until he is standing or walking. Leaving the level still ends the trap immediately.&#13;
+- **A container the engine refuses to swap comes back.** A rejected spawn retries through the engine's own outward search and slides back to the saved spot. A spot that still refuses gets the stock container instead of an empty gap.&#13;
+&#13;
+### Logic and content changes&#13;
+- **Diffindo Challenge has an eleventh plant pot.** The pot set into a wall sconce is a check again, as Plant Pot 8. The pots that were 8, 9 and 10 are now 9, 10 and 11, each keeping its own check.&#13;
+- **Gryffindor Challenge Cauldron 2** now needs **Alohomora** on top of (Diffindo or Running) + Spongify + Flipendo. Cauldron 1 is unchanged.&#13;
+- **Quidditch match 5** no longer needs **Spongify**. Match 6 unlocks at a later game state, past the Spongify lesson, so only match 6 carries the spell.&#13;
+- **Forbidden Forest Secret 4 and Card Scamander** now need **Flipendo**. Both need it to reach.&#13;
+- **Chamber of Secrets Wiggentree Bark Jar 1 and Flobberworm Mucous Jar 1** now need **Diffindo**. Both sit behind a cut.&#13;
+&#13;
+## Poptracker 1.0.8&#13;
+&#13;
+### Changed&#13;
+- Access rules regenerated for the Cauldron 2, Quidditch match 5, Forbidden Forest and Chamber of Secrets gates.&#13;
+- Diffindo Challenge Plant Pot 11 added, and the plant pot pins retargeted so each pin follows its pot rather than its number.</content>
+    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.11.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/jm771/apworld_crossword/releases/tag/v0.1.6</id>
     <title>Crossword v0.0.0r2</title>
     <updated>2026-09-09T00:01:09+00:00</updated>
@@ -1685,5 +1606,23 @@ Please inform me of any issues through the associated [Crypt of the NecroDancer 
 &#13;
 **Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.04...2026.09.08</content>
     <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.08"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.3</id>
+    <title>Easy Delivery Co. v0.2.3</title>
+    <updated>2026-09-09T10:00:06+00:00</updated>
+    <author>
+      <name>Aeromaze</name>
+    </author>
+    <content>## Changes&#13;
+Intercity deliveries shows the destination town&#13;
+Improved the in-game tracker&#13;
+The in-game tracker can now be closed like any other menu&#13;
+The in-game tracker now has menus to show what's in logic, and what's done. This is still WIP&#13;
+## Fixes&#13;
+Fix sending DeathLinks and improve receiving DeathLinks. Should no longer exit to main menu after receiving a death&#13;
+Fix logic when generating with lock towns without enabling payload deliveries&#13;
+Adjust yaml explanations</content>
+    <link href="https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.3"/>
   </entry>
 </feed>
