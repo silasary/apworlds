@@ -1,4 +1,4 @@
-# None
+# Super Mario Bros.
 
 ## Latest
 - <a href="https://github.com/JuanFunkin/Super-Mario-Bros.-NES---Archipelago/releases/download/SMB1_ARCHIPELAGO_0.2/smb1.apworld">Latest Version (1a0.post0)</a>

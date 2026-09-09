@@ -1,6 +1,7 @@
-# None
+# SUPERHOT: MIND CONTROL DELETE
 
-
+SUPERHOT: MIND CONTROL DELETE is a 2020 rogue like first person shooter game that was developed as the successor to the original SUPERHOT game released in 2016. 
+It&#x27;s the most innovative shooter released in years
 
 
 ## Downloads

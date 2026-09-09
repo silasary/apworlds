@@ -1,9 +1,12 @@
 # Bendy and the Ink Machine
 
 ## Latest
-- <a href="https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v2.0.0/batim.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v2.0.0/batim.apworld">Latest Version (2.0.0.post2)</a>
 
 ## All Versions
+
+#### v2.0.0.post2
+- <a href="https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v2.0.0/batim.apworld">https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v2.0.0/batim.apworld</a>
 
 #### v2.0.0
 - <a href="https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v2.0.0/batim.apworld">https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v2.0.0/batim.apworld</a>

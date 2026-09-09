@@ -50,7 +50,7 @@ Meeting your goal doesn't mean you've achieved victory by default. The **Victory
 
 - **Disabled**: you win as soon as the goal is met.
 - **Ensemble**: clear an AP Ensemble run with the characters you've unlocked.
-- **Boss Rush**: beat four zone bosses and four story bosses in sequence, or five and five with Amplified, The first boss room opens with a Red, Black, and Purple chest, and a shop exists midway into the run.
+- **Boss Rush**: beat four zone bosses and four story bosses in sequence, or five and five with Amplified. The first boss room opens with a Red, Black, and Purple chest, and a shop exists midway into the run.
 - **Expensive Purchase**: buy one very expensive item in the AP Lobby, at a diamond price you set.
 
 Ensemble and Boss Rush both need every zone unlocked first.

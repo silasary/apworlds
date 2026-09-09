@@ -1,4 +1,4 @@
-# None
+# Manual_SpaceEngine_JD
 
 ## Latest
 - <a href="https://github.com/JDLKMR/SpaceEngine-APManual/releases/download/v1.1.0/manual_spaceengine_jd.apworld">Latest Version (1.1.0)</a>

@@ -1,4 +1,4 @@
-# None
+# Manual_DonkeyKong_JD
 
 ## Latest
 - <a href="https://github.com/JDLKMR/Donkey-Kong-APManual/releases/download/v1.0.0-nes/manual_donkeykong_jd.apworld">Latest Version (1.0.0r2)</a>

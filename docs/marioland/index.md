@@ -1,6 +1,6 @@
-# None
+# Super Mario Land
 
-
+Archipelago implementation for Super Mario Land.
 
 
 ## Downloads

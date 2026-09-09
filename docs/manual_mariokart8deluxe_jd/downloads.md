@@ -1,4 +1,4 @@
-# None
+# Manual_MarioKart8Deluxe_JD
 
 ## Latest
 - <a href="https://github.com/JDLKMR/CTGP-Deluxe-APManual/releases/download/v1.1.0/manual_mariokart8deluxe_jd.apworld">Latest Version (1.1.0)</a>

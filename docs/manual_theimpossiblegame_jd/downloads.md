@@ -1,4 +1,4 @@
-# None
+# Manual_TheImpossibleGame_JD
 
 ## Latest
 - <a href="https://github.com/JDLKMR/The-Impossible-Game-APManual/releases/download/v1.0.3/manual_theimpossiblegame_jd.apworld">Latest Version (1.0.3)</a>

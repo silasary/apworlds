@@ -1,4 +1,4 @@
-# None
+# Manual_TearsoftheKingdom_JD
 
 ## Latest
 - <a href="https://github.com/JDLKMR/TotK-APManual/releases/download/v1.1.0/manual_tearsofthekingdom_jd.apworld">Latest Version (1.1.0)</a>
