@@ -1,9 +1,12 @@
 # Valheim
 
 ## Latest
-- <a href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/download/0.2.4/valheim.apworld">Latest Version (0.2.4)</a>
+- <a href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/download/0.2.5/valheim.apworld">Latest Version (0.2.5)</a>
 
 ## All Versions
+
+#### v0.2.5
+- <a href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/download/0.2.5/valheim.apworld">https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/download/0.2.5/valheim.apworld</a>
 
 #### v0.2.4
 - <a href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/download/0.2.4/valheim.apworld">https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/download/0.2.4/valheim.apworld</a>

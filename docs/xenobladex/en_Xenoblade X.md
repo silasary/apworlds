@@ -199,7 +199,7 @@ There are a few in-game changes to facilitate faster gameplay. These are not the
 Some of these are enabled through graphic packs. Some of them can be configured.
 - Skells refuel all the way in the Blade Barracks.
 - Augmenting your equipment no longer consumes miranium. You still need to obtain the required amount.
-- Running speed is increased.
+- Running speed is increased and there is a second running stage on RS.
 - Tp are maxed on teleport and reload.
 - Damaged skells get recovered on teleport and party change.
 - Battle point gain is increased.
@@ -208,6 +208,8 @@ Some of these are enabled through graphic packs. Some of them can be configured.
 - Materials drop more often.
 - Drop boxes appear more often.
 - Affinity missions dont lock your party and you can accept as many as you want.
+- Swim Speed is increased.
+- Flight Speed is increased.
 
 ## What's next?
 - Add Shop items to the available locations.

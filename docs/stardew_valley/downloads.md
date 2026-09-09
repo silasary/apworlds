@@ -8,6 +8,9 @@
 #### v8.1.5r2
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.5/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.5/stardew_valley.apworld</a>
 
+#### v8.1.5r2
+- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.6/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.6/stardew_valley.apworld</a>
+
 #### v8.1.5
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.15/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.15/stardew_valley.apworld</a>
 

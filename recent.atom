@@ -2,131 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-09T12:19:07.597119+00:00</updated>
+  <updated>2026-09-09T18:17:43.862610+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/gaithernOrg/ArchipelagoKHBBS/releases/tag/0.2.0</id>
-    <title>Kingdom Hearts Birth by Sleep v0.2.0</title>
-    <updated>2026-09-07T15:32:15+00:00</updated>
-    <author>
-      <name>gaithernOrg</name>
-    </author>
-    <content>### DISCLAIMER&#13;
-Always check for updates in OpenKH for the AP Companion mod every time you play!  &#13;
-&#13;
-- Click Settings &gt; Check Mods for Updates&#13;
-- If there are updates to the AP Mod, download them and rebuild your game using Mod Loader &gt; Build and Run&#13;
-&#13;
-The game is prone to crashing, PLEASE SAVE OFTEN&#13;
-&#13;
-### How to play:&#13;
-&#13;
-BEFORE MODDING, PLEASE INSTALL AND RUN KHBBS AT LEAST ONCE.&#13;
-&#13;
-1. Install OpenKH and the Lua Backend. &#13;
-- Download the latest release of OpenKH here: https://github.com/OpenKH/OpenKh/releases/tag/latest&#13;
-- Extract the files to a directory of your choosing.&#13;
-- Open OpenKh.Tools.ModsManager.exe and run first time set up.&#13;
-- When prompted for game edition, choose PC, choose which platform you are playing on (Steam or EGS), navigate to your KH I.5 + II.5 installation folder in the path box, then click "Next"&#13;
-- When prompted, install Panacea, then click "Next"&#13;
-- When prompted, check KHBBS plus any other AP game you play (KH2) and click "Install and configure Lua backend", then click "Next".&#13;
-- Extracting game data for KHBBS is unnecessary, but you may want to extract data for KH2 if you plan on playing KH2 AP.&#13;
-- Click "Finish"&#13;
-&#13;
-2. Open "OpenKh.Tools.ModsManager.exe"&#13;
-3. Click the drop down menu at the top-right and choose "Birth by Sleep"&#13;
-4. Click Mods&gt;Install a New Mod&#13;
-5. In "Add a new mod from GitHub" paste "gaithern/KH-BBS-AP-LUA"&#13;
-6. Click Install&#13;
-7. Navigate to Mod Loader and click "Build Only"&#13;
-8. Place your khbbs.apworld file in your worlds folder (usually /lib/worlds/)&#13;
-9. Run ArchipelagoLauncher.exe&#13;
-10. Click "Generate Template Settings".  This will open file explorer&#13;
-11. Find "Kingdom Hearts Birth by Sleep.yaml" and copy it to /Players/ (create this folder if it does not exist)&#13;
-12. Open the YAML file and change the line that says "name: Player{number}" to your desired player name.&#13;
-13. Adjust the settings in the YAML to your liking&#13;
-14. Run ArchipelagoGenerate.exe&#13;
-15. Take the newly created AP_XXX.zip file in /output/ in upload it here: https://archipelago.gg/uploads&#13;
-16. Open ArchipelagoLauncher.exe&#13;
-17. Click "KHBBS Client" and connect to your server hosted on archipelago.gg&#13;
-18. From the zip file mentioned above, retrieve the seed zip file (example: AP-95162914732603780136-P1-Player1_0.5.0.zip)&#13;
-19. In OpenKH, click the green plus to add a mod, then click "Select and install Mod Archive or Lua Script"&#13;
-20. Navigate to and select your seed zip.&#13;
-21. With both the companion and the seed checked, click "Mod Loader", then "Build and Run"&#13;
-22. Play!&#13;
-&#13;
-----------&#13;
-&#13;
-### How the randomizer works:&#13;
-&#13;
-- All chests, stickers, bonus rewards, and pop up story rewards are randomized.&#13;
-- You must collect 3 Wayfinders to open The Keyblade Graveyard and complete your seed.</content>
-    <link href="https://github.com/gaithernOrg/ArchipelagoKHBBS/releases/tag/0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.0.2</id>
-    <title>Taskipelago v1.0.2</title>
-    <updated>2026-09-07T15:58:36+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>Quick bug fix patch&#13;
-&#13;
-## Bug fixes&#13;
-* Fixed an issue where the offsets for item rows under a filler block were not being offset properly on export&#13;
-* Fixed pop-up windows on linux &#13;
-* Fixed a bug with drawer rendering on linux&#13;
-Note on linux fixes: I use wayland, need verification from other compositor/window manager users&#13;
-&#13;
-## Known Issues&#13;
-* Universal Tracker is unhappy with the structure of the datapackage because of the dynamic nature of Taskipelago's location names. This is aimed to be resolved in a future patch. This is an issue specifically with multiple taskipelago worlds in a single multiworld with shared item or location names.</content>
-    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.8.1</id>
-    <title>Brave Fencer Musashi v0.8.1</title>
-    <updated>2026-09-07T17:25:50+00:00</updated>
-    <author>
-      <name>AegeusEvander</name>
-    </author>
-    <content>0.8.1 added:&#13;
--fixed BP getting reset when reconnecting client when BP Sanity is False&#13;
-&#13;
-0.8.0 Added:&#13;
--full map tracker&#13;
--fixed bell logic (again)&#13;
--added commands&#13;
---/teleport [id]&#13;
----uses the debug menu to teleport the player to selected area (leave blank to teleport back to town)&#13;
----unstable and may crash if used&#13;
---/export_geometry&#13;
----exports the static geometry of the currently loaded level (if no folder was previously selected it will prompt and then run command again), creates an .obj, .mtl, and .png&#13;
---/export_all_geometry&#13;
----teleports player to next area that has yet to have an obj file exported and attempts to export until all are done&#13;
----unstable, but it remembers progress so keep running command if disconnected/timeout or restarting emulator if it crashes&#13;
-&#13;
-Note:&#13;
--Must use Archipelago v0.6.7 or newer&#13;
--Not compatible with XDelta Patches, must run unmodified game&#13;
--compatible with v0.7.1 generations&#13;
--map tracker with Universal Tracker https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.3&#13;
--setup guide:https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/blob/main/docs/setup_en.md&#13;
--Follow development and report bugs on the Archipelago gg Discord, -&gt; Future-game-design -&gt; Brave Fencer Musashi</content>
-    <link href="https://github.com/AegeusEvander/Brave-Fencer-Musashi-AP-World/releases/tag/v0.8.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.4</id>
-    <title>Valheim v0.2.4</title>
-    <updated>2026-09-07T20:10:57+00:00</updated>
-    <author>
-      <name>xyzzy44</name>
-    </author>
-    <content>This is a minor release, fixing the finewood recipes in the research file.</content>
-    <link href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.4"/>
-  </entry>
   <entry>
     <id>https://github.com/RischDev/Archipelago/releases/tag/v0.2.1</id>
     <title>MegaMan Battle Network 6 v0.2.1</title>
@@ -798,7 +678,8 @@ add BUILD_EXE.bat and STALKER2_ARCHIPELAGO_Client.py into a folder called client
   the ordinary cap instead of dedicated neutral metal lighting.&#13;
 &#13;
 ## SM64ex hotfixes:&#13;
-- September 8: Fixed Tiny Island Impossible Coin assignment, was incorrectly mapped as Coin 3</content>
+- September 8: Fixed Tiny Island Impossible Coin assignment, was incorrectly mapped as Coin 3.&#13;
+- September 9: Uncollect Random Coin Trap no longer affects the currently-loaded level, as intended.</content>
     <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.0"/>
   </entry>
   <entry>
@@ -1624,5 +1505,76 @@ Fix sending DeathLinks and improve receiving DeathLinks. Should no longer exit t
 Fix logic when generating with lock towns without enabling payload deliveries&#13;
 Adjust yaml explanations</content>
     <link href="https://github.com/Aeromaze/Archipelago/releases/tag/v0.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.5</id>
+    <title>Valheim v0.2.5</title>
+    <updated>2026-09-09T15:45:16+00:00</updated>
+    <author>
+      <name>xyzzy44</name>
+    </author>
+    <content>Note: This update was made with the pre-1.0 Valheim version, and may or may not work with Valheim 1.0. Testing with 1.0 will be done after the upstream dependencies this mod relies on have been updated, and if necessary an updated version for Valheim 1.0 compatibility will be made.&#13;
+&#13;
+- Artisan table fix in research.tsv&#13;
+- Fixed Mistlands logic in apworld</content>
+    <link href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.5</id>
+    <title>Supermarket Simulator v0.3.5</title>
+    <updated>2026-09-09T16:05:25+00:00</updated>
+    <author>
+      <name>Lemix028</name>
+    </author>
+    <content>### Added&#13;
+&#13;
+* Customer Checkout Tiers: Checks are now divided into five progression tiers based on received progression items.&#13;
+</content>
+    <link href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.8</id>
+    <title>Xenoblade X v0.2.8</title>
+    <updated>2026-09-09T16:13:55+00:00</updated>
+    <author>
+      <name>Maragon</name>
+    </author>
+    <author>
+      <name>Nina</name>
+    </author>
+    <content>- Fix universal tracker sending invalid item packages&#13;
+- Add a new second running state (press RS while running). Run speed increase is now part of the AP graphic pack&#13;
+- Increased swim speed&#13;
+- Fix missable enemy locations&#13;
+- Adjust logic for dlc friends&#13;
+- Improve chapter 3 region logic&#13;
+- Improve location names&#13;
+- Fix crashes caused by the enemy aggro range option</content>
+    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.6</id>
+    <title>Stardew Valley v8.1.5r2</title>
+    <updated>2026-09-09T16:56:53+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>- Made the debug flag "prevent sending checks" also prevent goal completions so I never accidentally goal a slot if I'm debugging it&#13;
+- Fixed FIBS not displaying the last page of fish&#13;
+- Prevent deleting NPCs due to ghost town while not connected to the server, to avoid accidentally deleting an NPC that is allowed to exist, and breaking things (ex: your spouse)&#13;
+- Made the Lingo Bundle let the player pick up the hint items from their inventory to try donating them, so they can get a hint as to what real item is needed&#13;
+- Added information about ability to earn mastery XP to `!!experience`&#13;
+- Added information about current mastery experience to `!!experience` (if you've started earning some)&#13;
+- Added an alias `!!xp` to the `!!experience` command</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.6"/>
   </entry>
 </feed>
