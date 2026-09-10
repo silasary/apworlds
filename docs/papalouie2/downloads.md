@@ -14,3 +14,6 @@
 #### v0.0.0+firstrelease
 - <a href="https://github.com/Lukeylion/Papa-Louie-2-AP/releases/download/FirstRelease/PapaLouie2.apworld">https://github.com/Lukeylion/Papa-Louie-2-AP/releases/download/FirstRelease/PapaLouie2.apworld</a>
 
+#### v0.0.0+clientfix
+- <a href="https://github.com/Lukeylion/Papa-Louie-2-AP/releases/download/ClientFix/PapaLouie2.apworld">https://github.com/Lukeylion/Papa-Louie-2-AP/releases/download/ClientFix/PapaLouie2.apworld</a>
+

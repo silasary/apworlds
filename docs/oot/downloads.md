@@ -1,9 +1,12 @@
 # Ocarina of Time
 
 ## Latest
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release/oot.apworld">Latest Version (9.1.0.post0)</a>
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release2/oot.apworld">Latest Version (9.1.0r2)</a>
 
 ## All Versions
+
+#### v9.1.0r2
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release2/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release2/oot.apworld</a>
 
 #### v9.1.0.post0
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release/oot.apworld</a>
