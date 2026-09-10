@@ -4,7 +4,7 @@ Xenoblade Chronicles X another 100+ hour game. Sounds like fun?
 
 
 ## Downloads
-- <a href="https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.8/xenobladex.apworld">Latest Version (0.2.8)</a>
+- <a href="https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.9/xenobladex.apworld">Latest Version (0.2.9)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
