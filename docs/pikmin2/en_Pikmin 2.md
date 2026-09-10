@@ -18,9 +18,19 @@ Any of the items which can be shuffled may also be placed into another player's 
 
 ## What does another world's item look like in Pikmin 2?
 
-Any item from another world currently looks like a marble with the AP logo inside it, made by fracta1fa1th.
+Items from another world look different depending on their classification and certain settings. All are marbles with the AP logo inside them, made by fracta1fa1th and lightly modified by me.
 
-![AP marble](https://github.com/chpas0/Pikmin2Archipelago/blob/main/docs/image.png "The Off-World Item in game.")
+Progression item:  
+![AP marble](https://github.com/chpas0/Pikmin2Archipelago/blob/main/docs/progression.png "The progression Off-World Item in game.")
+
+Useful item:  
+![AP marble](https://github.com/chpas0/Pikmin2Archipelago/blob/main/docs/useful.png "The useful Off-World Item in game.")
+
+Filler item:  
+![AP marble](https://github.com/chpas0/Pikmin2Archipelago/blob/main/docs/filler.png "The filler Off-World Item in game.")
+
+Mystery item (used if the Show Item Types setting is off):  
+![AP marble](https://github.com/chpas0/Pikmin2Archipelago/blob/main/docs/mystery.png "The mystery Off-World Item in game.")
 
 ## When the player receives an item, what happens?
 

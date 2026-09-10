@@ -1,6 +1,7 @@
 # Yakuza Gaiden
 
-
+Yakuza Like a Dragon: Gaiden is a modern day beat em up, mini game fest, rpg.
+Baka mi tai.
 
 
 ## Downloads

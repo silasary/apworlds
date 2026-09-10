@@ -147,6 +147,21 @@
       "title": "Release 0.2.2 - The Stability Update",
       "version_simple": "0.0.1",
       "world_version": "0.0.1r2"
+    },
+    "v0.2.3": {
+      "created_at": "2026-09-10T02:36:50Z",
+      "description": "## What's Changed\r\n\r\nMore Stable - Contains stables (when shuffled) (But hopefully more)\r\n\r\n## AP World\r\nShould still be fully compatible with releases going back to 0.2.0.\r\n\r\n**Logic**\r\n- Attila 3 - 6 victory events now require the scenario to be beaten\r\n\r\n**AP Client**\r\n- Invalid ping could, in extremely rare cases, freeze the client\r\n- Scenarios could be marked complete by a different Age2 world if the client switched worlds\r\n- Campaign, building, and message info could persist across sessions\r\n- Client would read previous game packet instead of current packet.\r\n- Game client now disconnects on all disconnections\r\n- AP Client now shuts down gracefully\r\n- Item IDs no longer leak across packets\r\n- Improper client read no longer corrupts latest packet\r\n- Items can no longer be skipped when sending more than 12 at once\r\n- Progressive scenarios received before their Campaign is unlocked unlock when the Campaign is given\r\n\r\n## Game\r\n\r\n**General**\r\n- Connect now attempts until connection and items received\r\n- \"Free Items\" now frees actual item\r\n- Game no longer tries to read four times the length of every file (ask your programmer friends \"why four times the length?\")",
+      "download_url": "https://github.com/dmwever/Ageipelago/releases/download/v0.2.3/age2de.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bb5126918cde73d78985c832b1a8db9a43ad984161aff3d75ee1111dd3191a98",
+      "html_url": "https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3",
+      "minimum_ap_version": "0.6.5",
+      "size": 2199149,
+      "source_url": "https://api.github.com/repos/dmwever/Ageipelago",
+      "tag": "v0.2.3",
+      "title": "Release 0.2.3 - The Stabilitier Update",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1r2"
     }
   }
 }

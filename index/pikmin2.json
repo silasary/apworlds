@@ -6,10 +6,7 @@
   "game": "Pikmin 2",
   "github": "https://github.com/chpas/Pikmin2Archipelago",
   "license": null,
-  "manifest_fields": [
-    "authors",
-    "world_version"
-  ],
+  "manifest_fields": [],
   "versions": {
     "v0.2.3": {
       "created_at": "2025-07-12T06:43:29Z",
@@ -342,6 +339,20 @@
       "title": "v0.8.1",
       "version_simple": "0.8.1",
       "world_version": "0.8.1.post2"
+    },
+    "v0.9.1": {
+      "created_at": "2026-09-08T20:12:36Z",
+      "description": "**NOTE: This mod is still in the testing phase. Play at your own risk.**\r\n\r\n## Changelog\r\n- Strip pyisotools of extraneous files and use its pure Python implementation instead of its compiled binary\r\n  - This greatly reduces the size of the APWorld, as well as making it universal again\r\n- Fix a bug where collecting the Professional Noisemaker after killing the Waterwraith in Submerged Castle on a non-boss floor would cause the client to silently crash\r\n- Fix a bug where triggering the \"You look lost\" cutscene would cause the game to crash\r\n- Increase enemy heap memory to (hopefully) fix issues with enemy traps\r\n- Change the client connection logic so that it reads the user's slot name from your patch file instead of the user having to type it\r\n- Add a better error message for when users try to open the client through the \"Pikmin 2 Client\" widget instead of the \"Open Patch\" widget\r\n\r\n## Known Bugs\r\n- Queen Candypop Buds sometimes show up as white instead of red, even if you have Red Pikmin unlocked. This means that you can't use them to generate Red Pikmin, but you can use them to generate White Pikmin.\r\n- Whatever cave is in Submerged Castle's location will always have the vanilla Submerged Castle music.\r\n- Sometimes starting items will not be received properly, if this happens usually restarting the game and client causes them to appear.\r\n- Sometimes the Pikmin can't break gates in caves. Usually resetting the cave fixes this.\r\n- Sometimes collecting Louie does not trigger the goal.\r\n- Pausing the game while receiving items can semi-rarely cause a crash.\r\n- Enemy traps have a slight chance to not spawn or crash the game.",
+      "download_url": "https://github.com/chpas/Pikmin2Archipelago/releases/download/v0.9.1/pikmin2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "bc09ac0a3a3eff36d99d8d6dc492fbcf40218f82361f56773112b5f173a89d9f",
+      "html_url": "https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.9.1",
+      "size": 5967624,
+      "source_url": "https://api.github.com/repos/chpas/Pikmin2Archipelago",
+      "tag": "v0.9.1",
+      "title": "v0.9.1",
+      "version_simple": "0.9.1",
+      "world_version": "0.9.1"
     }
   }
 }

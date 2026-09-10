@@ -122,7 +122,7 @@
       "tag": "v0.1.6-alpha",
       "title": "v0.1.6-alpha",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0r3"
+      "world_version": "1.0.0r2"
     },
     "v0.2-alpha": {
       "created_at": "2026-08-12T20:15:24Z",
@@ -138,7 +138,7 @@
       "tag": "v0.2-alpha",
       "title": "v0.2-alpha",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0r4"
+      "world_version": "1.0.0r2"
     },
     "v0.2.5-alpha": {
       "created_at": "2026-08-22T23:21:11Z",
@@ -153,6 +153,22 @@
       "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
       "tag": "v0.2.5-alpha",
       "title": "v0.2.5-alpha",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r3"
+    },
+    "v0.3": {
+      "created_at": "2026-09-10T03:23:40Z",
+      "description": "## Release Notes\r\n\r\n1. **Fjordur is here**. \r\n\r\n2. Midgard, Asgard, Jotunheim, and Vanaheim occupy the same world space at different elevations, so exploration regions now include altitude bands. \r\n\r\n   **81 exploration checks total:**\r\n   - Midgard: 38\r\n   - Asgard: 20\r\n   - Vanaheim: 14\r\n   - Jotunheim: 9\r\n\r\n3. **All 200 Fjordur Runes are now checks.** Runes are treated as Explorer Notes under the hood, so collecting one just works. Cave, underwater, and wyvern trench runes are gated behind the gear actually needed to reach them. The 45 runes in Asgard, Jotunheim, and Vanaheim currently contain filler only.\r\n\r\n4. **The Norse bosses are now supported as goals.** Beyla, Hati & Sk\u00f6ll, and Steinbj\u00f6rn lead into Fenris\u00falfr. Boss kills are detected using the relic dropped by each fight instead of the boss corpse, so the kill still counts if you relog, another player gets the killing blow, or the corpse despawns. Hati & Sk\u00f6ll requires both relics.\r\n\r\n5. **New goal setting:** choose any combination of bosses using a list.\r\n\r\n   ```yaml\r\n   goal: [broodmother, manticore, fenrisulfr]\r\n   ```\r\n\r\n   `all_bosses` means every boss available across your selected maps. The default remains the four Island bosses.\r\n\r\n   **BREAKING CHANGE:** The following goal options no longer parse:\r\n   - `all_bosses_all_maps`\r\n   - `broodmother_megapithecus`\r\n   - `broodmother_megapithecus_dragon`\r\n\r\n   Update your YAML accordingly.\r\n\r\n6. **Fixed 32 engrams** that could previously be received but would never actually unlock. This includes Clay, Tent, Vessel, the full Adobe set, the Desert Cloth set, Wind Turbine, Thorny Dragon Saddle, and Rock Golem Saddle.\r\n\r\n7. **Added 14 previously missing engrams:** Maewing, Velonasaur, Ravager, Amargasaurus, Roll Rat, Karkinos, Tropeognathus, Managarmr, and Magmasaur saddles, plus the full five-piece Hazard Suit. These saddles now correctly bundle with their associated tame when `bundle_saddles` is enabled. Previously, that setting did nothing for them.\r\n\r\n8. **Unlock messages now explain why something unlocked.**\r\n\r\n   Example:\r\n\r\n   ```text\r\n   Explore: The Savage Heights (Asgard) unlocked for everyone on the server: Engram: ...\r\n   ```\r\n\r\n9. **No more trap floods from `!release` or `!collect`.** Bulk deliveries now skip traps, keep useful filler, and send a single notification in chat.\r\n\r\n10. **Shared Slot + DeathLink now actually kills the entire server.** If one survivor dies, everyone dies. Previously, the death was sent to every other game in the multiworld while the survivors standing next to the corpse were left completely unaffected.\r\n\r\n11. **51 dead-end cosmetics are now filler instead of useful items.** This includes signs, flags, furniture, elevators, pipes, trophies, and similar items that previously diluted the useful item pool. Actual gear remains useful.\r\n\r\n12. **Added Mejoberry collection checks** and completed a broader food-tag pass.\r\n\r\n13. **Datapackage updates:**\r\n    - Engrams: 588 \u2192 610\r\n    - Creatures: 127 \u2192 142\r\n    - Exploration regions: 154 \u2192 235\r\n    - Plugin: v177 \u2192 v187\r\n\r\n14. **Generation sweep: 30/30 passing.** Configurations using `dossier_checks: 120` and `dossier_checks: 0` previously failed generation and now pass correctly.\r\n\r\n---\r\n\r\n## Tools\r\n\r\nAttached are **Avocado's Launcher** and **Lurch's PopTracker**.\r\n\r\n**Lurch's PopTracker:**  \r\nhttps://github.com/lurch9229/Arkipelago-Poptracker/releases\r\n\r\n**Avocado's Launcher:**  \r\nhttps://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher/releases\r\n\r\n\r\nI will be taking a break on adding new maps to the supported list as I am getting burnt out. I will be assisting Lurch with supporting the other released maps. I will continue working on bug fixes as they come up. ",
+      "download_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.3/ark_ase.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ed808da096073f1d5bf9c209b5b27c8780dde2c9563ac6262d218f35df058055",
+      "html_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3",
+      "maximum_ap_version": "0.9.99",
+      "minimum_ap_version": "0.6.0",
+      "size": 164627,
+      "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
+      "tag": "v0.3",
+      "title": "v0.3",
       "version_simple": "1.0.0",
       "world_version": "1.0.0r2"
     }
