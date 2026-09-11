@@ -1,9 +1,12 @@
 # Zoominoes
 
 ## Latest
-- <a href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/download/v0.1.1/zoominoes.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/download/v0.1.1/zoominoes.apworld">Latest Version (0.1.1.post2)</a>
 
 ## All Versions
+
+#### v0.1.1.post2
+- <a href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/download/v0.1.1/zoominoes.apworld">https://github.com/chickentuna/Archipelago-Zoominoes/releases/download/v0.1.1/zoominoes.apworld</a>
 
 #### v0.1.1
 - <a href="https://github.com/chickentuna/Archipelago-Zoominoes/releases/download/v0.1.1/zoominoes.apworld">https://github.com/chickentuna/Archipelago-Zoominoes/releases/download/v0.1.1/zoominoes.apworld</a>
