@@ -148,6 +148,21 @@
       "title": "Peggle Deluxe - 2.0.0",
       "version_simple": "2.0.0",
       "world_version": "2.0.0"
+    },
+    "peggle-deluxe-v2.1.0": {
+      "created_at": "2026-09-11T05:48:45Z",
+      "description": "This is an improvement release that also includes tweaks.\r\n\r\n**This release is NOT compatible with games generated on the previous version.**\r\n\r\n- **Improvement:** Instead of downgrading orange pegs once the board is already loaded (which mostly worked but was risky and had side effects.), levels now spawn the correct amount of orange pegs as they load. While this change required a lot of extra reverse engineering effort (on top of figuring out how to hook level loading, the game's multiplier system and the way the fever meter fills also had to be rewritten to match), it totally gets rid of _all_ weirdness that could be observed in 2.0.0. The implementation should feel rock solid now\r\n- **Tweak:** Because of this improvement, fever modes are forced to go back to triggering whenever the last orange peg is hit even if you don't have 25 for a given level\r\n- **Tweak:** To avoid reintroducing the confusion that was present in 1.x.x around getting fever mode and no completion check, Level Clear location checks will now unlock after any fever mode completes. They will require half your starting ball items logically, but nothing prevents them from triggering\r\n- **Tweak:** To preserve the relevance of the 4th Progressive Orange Pegs item now that level completions have moved to the early-mid game, new Fever Meter Full location checks have been added\r\n- **Tweak:** Permanent Fever Meter Bonus useful items have been removed. They also contributed to general weirdness and instability\r\n\r\n_No new YAML options. However, you will need to remove Permanent Fever Meter Bonus from your useful item weights for existing YAMLs to be valid_",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v2.1.0/peggle_deluxe.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0beb38eb2800ce8edbff7352368a6bff0ce251dd5058310d379f8d9044740607",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 1908720,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "peggle-deluxe-v2.1.0",
+      "title": "Peggle Deluxe - 2.1.0",
+      "version_simple": "2.1.0",
+      "world_version": "2.1.0"
     }
   }
 }

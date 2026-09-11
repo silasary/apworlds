@@ -2,23 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-11T06:18:55.279057+00:00</updated>
+  <updated>2026-09-11T12:19:25.878376+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/JDLKMR/Breaking-Bad-APManual/releases/tag/v1.0.2</id>
-    <title>Manual_BreakingBad_JD v1.0.2</title>
-    <updated>2026-09-08T07:47:19+00:00</updated>
-    <author>
-      <name>JDLKMR</name>
-    </author>
-    <content>- Item/location balance is fixed so it now successfully generates on its own without the need of other YAMLs&#13;
-- Added more key moments as locations&#13;
-- Added a couple items, including a character and a filler item: Minerals</content>
-    <link href="https://github.com/JDLKMR/Breaking-Bad-APManual/releases/tag/v1.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.2.1</id>
     <title>Deltarune v2.2.1</title>
@@ -1136,7 +1124,7 @@ The implementation now has proper [documentation](https://github.com/SerpentAI/A
   </entry>
   <entry>
     <id>https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3</id>
-    <title>Age Of Empires II: Definitive Edition v0.0.1r2</title>
+    <title>Age Of Empires II: Definitive Edition v0.0.1r3</title>
     <updated>2026-09-10T02:36:50+00:00</updated>
     <author>
       <name>dmwever</name>
@@ -1173,7 +1161,7 @@ Should still be fully compatible with releases going back to 0.2.0.&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3</id>
-    <title>ARK Survival Evolved v1.0.0r2</title>
+    <title>ARK Survival Evolved v1.0.0r5</title>
     <updated>2026-09-10T03:23:40+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1820,5 +1808,25 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
     </author>
     <content>Added logical requirements to stages, updated client.</content>
     <link href="https://github.com/silasary/Archipelago/releases/tag/ffxiitm-0.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.1.0</id>
+    <title>Peggle Deluxe v2.1.0</title>
+    <updated>2026-09-11T05:48:45+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is an improvement release that also includes tweaks.&#13;
+&#13;
+**This release is NOT compatible with games generated on the previous version.**&#13;
+&#13;
+- **Improvement:** Instead of downgrading orange pegs once the board is already loaded (which mostly worked but was risky and had side effects.), levels now spawn the correct amount of orange pegs as they load. While this change required a lot of extra reverse engineering effort (on top of figuring out how to hook level loading, the game's multiplier system and the way the fever meter fills also had to be rewritten to match), it totally gets rid of _all_ weirdness that could be observed in 2.0.0. The implementation should feel rock solid now&#13;
+- **Tweak:** Because of this improvement, fever modes are forced to go back to triggering whenever the last orange peg is hit even if you don't have 25 for a given level&#13;
+- **Tweak:** To avoid reintroducing the confusion that was present in 1.x.x around getting fever mode and no completion check, Level Clear location checks will now unlock after any fever mode completes. They will require half your starting ball items logically, but nothing prevents them from triggering&#13;
+- **Tweak:** To preserve the relevance of the 4th Progressive Orange Pegs item now that level completions have moved to the early-mid game, new Fever Meter Full location checks have been added&#13;
+- **Tweak:** Permanent Fever Meter Bonus useful items have been removed. They also contributed to general weirdness and instability&#13;
+&#13;
+_No new YAML options. However, you will need to remove Permanent Fever Meter Bonus from your useful item weights for existing YAMLs to be valid_</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.1.0"/>
   </entry>
 </feed>
