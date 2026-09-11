@@ -1,9 +1,12 @@
 # Uncanny Cat Golf
 
 ## Latest
-- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases/download/1.0.4/ucg.apworld">Latest Version (1.0.4)</a>
+- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases/download/1.0.5/ucg.apworld">Latest Version (1.0.5)</a>
 
 ## All Versions
+
+#### v1.0.5
+- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases/download/1.0.5/ucg.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases/download/1.0.5/ucg.apworld</a>
 
 #### v1.0.4
 - <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases/download/1.0.4/ucg.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases/download/1.0.4/ucg.apworld</a>

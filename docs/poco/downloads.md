@@ -1,9 +1,12 @@
 # Poco
 
 ## Latest
-- <a href="https://github.com/SWCreeperKing/Pocopelago/releases/download/v0.1.2/poco.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/SWCreeperKing/Pocopelago/releases/download/v0.1.3/poco.apworld">Latest Version (0.1.3)</a>
 
 ## All Versions
+
+#### v0.1.3
+- <a href="https://github.com/SWCreeperKing/Pocopelago/releases/download/v0.1.3/poco.apworld">https://github.com/SWCreeperKing/Pocopelago/releases/download/v0.1.3/poco.apworld</a>
 
 #### v0.1.2
 - <a href="https://github.com/SWCreeperKing/Pocopelago/releases/download/v0.1.2/poco.apworld">https://github.com/SWCreeperKing/Pocopelago/releases/download/v0.1.2/poco.apworld</a>

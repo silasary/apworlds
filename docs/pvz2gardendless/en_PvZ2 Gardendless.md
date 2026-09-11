@@ -56,7 +56,8 @@ Modern Day works exactly the same way, and so does every other world: what you a
 three copies of **Progressive &lt;World&gt;**.
 
 The first opens the world — that is the item the old World Key became. The second and third open its
-later stretches, because a world is cut into three and you get them one at a time. **The game
+later stretches, because a world is cut into three (Aerial Fortress, two) and you get them one at a
+time. **The game
 enforces this**: a level you have not unlocked cannot be started at all, not just cannot be logically
 required.
 
@@ -64,8 +65,11 @@ The cuts are the world's own milestones: its World Key level, then its Zomboss, 
 world splits at the same two places, which are the same levels the goal is measured on, so working
 toward the goal is always working toward your next unlock.
 
-Two worlds have no such milestone to use. Kongfu Temple has no Zomboss level, so its second cut is
-the midpoint of what is left; Aerial Fortress has neither, so it is cut into equal thirds.
+One world has no such milestone to use: Kongfu Temple has no Zomboss level, so its second cut is the
+midpoint of what is left.
+
+Aerial Fortress is cut into **two** stretches rather than three, so it ships two unlocks. Its Zomboss
+(added by game 0.14.0) is also its last level, so there is nothing left over for a third.
 
 Ancient Egypt has no key, so its opening is where every run starts — and it has one extra gate the
 other worlds do not: **from Egypt level 6 you need a sun producer and a cheap attacker.** That is the
@@ -112,22 +116,34 @@ Archipelago has sent you, and you do not keep what comes down the belt.
 Every level fields a different set of zombies. A level that sent Mummies might send Cowboys, Pirates
 or Jetpack Zombies instead.
 
-Swaps stay inside a tier, so a level keeps the difficulty it was built around. The tier comes from the
-game's own wave-point price for each zombie — what its wave generator pays to field one — so a basic
-zombie is traded for another basic zombie, never for a Gargantuar. Gargantuars only become
-Gargantuars, water zombies only become water zombies, and Zombosses are never touched, so every boss
-fight is the one the level intended.
+Swaps stay inside a tier, so a level keeps the difficulty it was built around. A tier is a set of
+zombies the game itself prices the same — its own wave-point price, what its wave generator pays to
+field one — that fight in the same lane and take about the same killing. So a basic zombie is traded
+for another basic zombie, never for a Gargantuar. Gargantuars only become Gargantuars, water zombies
+only become water zombies, and Zombosses are never touched, so every boss fight is the one the level
+intended.
+
+The level as a whole is weighed too. If a roll would leave a level noticeably tougher or softer than
+it shipped, it is rolled again, and a level with nothing fair to trade for simply keeps its own
+zombies. Across every level in the game, a shuffled lawn lands within a few percent of the health the
+level was built with.
 
 Zombies that need a specific plant to answer them stay where they are. The Jester still only turns up
-where a Jester turned up, and the ice-block carriers only where they already were. That is what keeps
+where a Jester turned up, the ice-block carriers only where they already were, and the same goes for
+the zombies that fly, that block your shots, and that summon more of their own. That is what keeps
 Dark Ages' Jester requirement and Frostbite Caves' warmth requirement meaningful — the shuffle cannot
 drop a threat into a world you have no answer for, and it cannot take one out of a world whose logic
 is built on it. Nothing about item placement or logic changes when this is on.
 
+Some zombies are not really walkers at all, and those stay exactly where the game put them: the
+camels, Sky City's airship crews, the imps that are meant to be thrown at you rather than to walk in,
+and the immobile props. A level that ships one still gets it, and no other level can ever gain one.
+
 Levels built around particular zombies are skipped entirely — the camel matching games in Ancient
 Egypt, the Pirate Seas cannon levels, Beghouled, bowling, Last Stand and the other set pieces. Those
 levels are won on their specific zombies rather than just spawning them, so a swap could leave one
-unbeatable. That is 84 of the game's 1134 levels; everything else shuffles.
+unbeatable. That is 73 of the game's levels; everything else shuffles, and about 70% of what those
+levels field changes.
 
 The roll is fixed per level, so retrying is not a reroll, and two players on the same seed get
 different lawns.
@@ -160,7 +176,8 @@ still counts — you just have to end up holding the item.
 Asking for more worlds than the seed contains is not a mistake — it clamps down to what is actually
 there, so a three-world seed asking for eleven needs three.
 
-Aerial Fortress is playable but never counts: it has neither a World Key level nor a Zomboss.
+Aerial Fortress counts toward all three now that game 0.14.0 gave it a Zomboss. Its Zomboss is also
+its final level, so its Zomboss and Completion goals are the same check.
 
 *Changed in this version.* The goal items are new: the win used to be measured off the goal
 locations directly, with nothing on them to collect.
@@ -223,8 +240,8 @@ unlocks it is, matching the game.
   | Sky Shield | 1 | — |
 - **Coins and gems** — filler, and the currency the store runs on.
 - **Random Plant Costume** — filler. Each one dresses a plant you already own in
-  a costume you do not have yet, picked at random from the 309 the game has
-  across 120 plants. Purely cosmetic. One arriving before you own any plant is
+  a costume you do not have yet, picked at random from the 312 the game has
+  across 121 plants. Purely cosmetic. One arriving before you own any plant is
   held and applied once you do.
 - **Lawn Mower Trap** — sets off every lawn mower on the field at once. They roll out and are spent,
   leaving those lanes with no last line of defence for the rest of the level. A trap received while

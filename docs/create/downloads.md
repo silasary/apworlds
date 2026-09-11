@@ -1,9 +1,12 @@
 # Create
 
 ## Latest
-- <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.2/create.apworld">Latest Version (0.1.2.post2)</a>
+- <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.3/create.apworld">Latest Version (0.1.3)</a>
 
 ## All Versions
+
+#### v0.1.3
+- <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.3/create.apworld">https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.3/create.apworld</a>
 
 #### v0.1.2.post2
 - <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.2/create.apworld">https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.2/create.apworld</a>

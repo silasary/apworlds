@@ -2,44 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-11T00:23:17.700564+00:00</updated>
+  <updated>2026-09-11T06:18:55.279057+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/JDLKMR/Donkey-Kong-APManual/releases/tag/v1.0.0-nes</id>
-    <title>Manual_DonkeyKong_JD v1.0.0r2</title>
-    <updated>2026-09-08T07:24:00+00:00</updated>
-    <author>
-      <name>JDLKMR</name>
-    </author>
-    <content/>
-    <link href="https://github.com/JDLKMR/Donkey-Kong-APManual/releases/tag/v1.0.0-nes"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JDLKMR/Breaking-Bad-APManual/releases/tag/v1.0.0</id>
-    <title>Manual_BreakingBad_JD v1.0.0</title>
-    <updated>2026-09-08T07:47:19+00:00</updated>
-    <author>
-      <name>JDLKMR</name>
-    </author>
-    <content/>
-    <link href="https://github.com/JDLKMR/Breaking-Bad-APManual/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JDLKMR/Breaking-Bad-APManual/releases/tag/v1.0.1</id>
-    <title>Manual_BreakingBad_JD v1.0.1</title>
-    <updated>2026-09-08T07:47:19+00:00</updated>
-    <author>
-      <name>JDLKMR</name>
-    </author>
-    <content>- Added starting checks&#13;
-- Balanced items and locations more&#13;
-&#13;
-Note that this fails to generate by itself and requires another YAML.</content>
-    <link href="https://github.com/JDLKMR/Breaking-Bad-APManual/releases/tag/v1.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/JDLKMR/Breaking-Bad-APManual/releases/tag/v1.0.2</id>
     <title>Manual_BreakingBad_JD v1.0.2</title>
@@ -1169,7 +1136,7 @@ The implementation now has proper [documentation](https://github.com/SerpentAI/A
   </entry>
   <entry>
     <id>https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3</id>
-    <title>Age Of Empires II: Definitive Edition v0.0.1r3</title>
+    <title>Age Of Empires II: Definitive Edition v0.0.1r2</title>
     <updated>2026-09-10T02:36:50+00:00</updated>
     <author>
       <name>dmwever</name>
@@ -1206,7 +1173,7 @@ Should still be fully compatible with releases going back to 0.2.0.&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3</id>
-    <title>ARK Survival Evolved v1.0.0r5</title>
+    <title>ARK Survival Evolved v1.0.0r2</title>
     <updated>2026-09-10T03:23:40+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1350,47 +1317,19 @@ Even after deletion, the "Open Patch" Workflow in AP currently still starts the 
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `7db994120e4ddcc8a8c2199510c569f52bf770dd`.
+Built from `b68b781c7a008806373cd8220c191662b05e7652`.
 
 ## Downloads
 
 - [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
 - [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
 
-## Since v1.12.0
+## Since v1.13.0
 
-- chore(release): v1.13.0
-- feat(web): the console under the missions, and the settings land on a page
-- test(web): name the header Join exactly, apart from Join with Steam
-- chore(beads): close the settings beads delivered in #56
-- feat(web): settings sections as tabs, a Bots overhaul, and one missions table
-- feat(launcher): one mark for the exe, the tray and the browser tab
-- fix(launcher): a saved loadout handed to a seat plays it, not stock
-- feat(launcher): a tray icon on Windows, and the settings open themselves
-- fix(web): keep the screens alive through a refusal, and the review's other findings
-- chore(launcher): untrack the fakelauncher binary
-- ci: name what a frontend target needs, once
-- ci: web-lint needs the generated code it lints against
-- ci: the web job needs the CA certificates to check anything out
-- fix(launcher): the archive a mission came from is the launcher's answer
-- fix(web): the settings footer follows the page on screen
-- fix(plugin): make disposable sentry buffs independent
-- fix(web): the screens now match the design they were drawn from
-- fix(webui): render session mission details
-- feat(launcher): find Archipelago on Linux
-- chore(beads): the browser launcher epic is done
-- fix(launcher): the policy refused the styles the log needs to scroll
-- docs: the launcher opens in a browser
-- test(web): vitest and Playwright over the fake launcher
-- feat(launcher): the browser is the only face
-- feat(web): the Admin Console design, the shell and the first screens
-- feat(launcher): the live state is a WebSocket
-- feat(launcher): ConnectRPC on the loopback mux
-- refactor(launcher): the launcher's core moves out of the web view
-- build: proto and the browser interface in the gate
-- feat(proto): the launcher's contract in proto/tf2ap/launcher/v1
-- feat(web): Angular 22 skeleton at launcher/web
-- fix(fastdl): clarify Linux Funnel onboarding
+- chore(beads): triage of Discord and the issue tracker since 1.12 (#61)
+- fix(bridge): a format version mismatch says what to do about it (#60)
+- fix(launcher): the Grappling Hook can be turned on, and shows when it lands (#59)
+- fix(plugin): PLUGIN_VERSION says 1.13.0, like the apworld
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
@@ -1568,7 +1507,13 @@ SM64ex updates:&#13;
 - Fixed an issue causing gray coins to not spawn.&#13;
 &#13;
 SM64ex hotfixes:&#13;
-- September 10: Fixed exiting a zone entered via Wiggler's Cave or Pyramid Top with Sub-Area shuffle enabled, whether by death or normal exit course. Wiggler's Cave water will be drained and the entrance reachable, and the Pyramid Top will be removed and you will be placed next to the hole.</content>
+&#13;
+September 10:&#13;
+- Fixed exiting a zone entered via Wiggler's Cave or Pyramid Top with Sub-Area shuffle enabled, whether by death or normal exit course. Wiggler's Cave water will be drained and the entrance reachable, and the Pyramid Top will be removed and you will be placed next to the hole.&#13;
+- Fixed CotMC entrance bringing you to CotMC when it is supposed to bring you to Castle Grounds.&#13;
+- The return stack now respects each entrance-shuffle option: Exit Course can return you to the CotMC entrance when Secret Course Shuffle is enabled, and to the level containing a shuffled castle-return entrance when Castle Return Shuffle is set to Mixed.&#13;
+- Server disconnects no longer erase the level return stack.&#13;
+</content>
     <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.1"/>
   </entry>
   <entry>
@@ -1825,5 +1770,55 @@ Free code signing for open source projects, provided by
 - [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MmU3N2Q5ZmNmY2Q3ZDI3NzcwZjE3ZDlkN2EwMWU0ZjA6MTc4OTA3Njk1MA==/detection)
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.13.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.2</id>
+    <title>Starship Titanic v0.2.2</title>
+    <updated>2026-09-11T00:57:26+00:00</updated>
+    <author>
+      <name>rescheer</name>
+    </author>
+    <content># v0.2.2 (Unstable)&#13;
+Bug fix release. Only .apworld updated, client is untouched.&#13;
+## Changes&#13;
+- Fixed Broken Elevator - Titania's Eye (Elevator) always being in logic&#13;
+- Fixed mix-up between left/right Maitre'D arms&#13;
+- Fixed logic rule for right Maitre'D arm&#13;
+## Known Issues in this release&#13;
+- Cosmetic issues with items in the world sometimes&#13;
+- A softlock in the elevator I cannot reproduce for the life of me. If the LiftBot's head disappears and you're no longer able to leave the elevator, I'd love to get a save file from you. You can teleport out of the elevator with the Ctrl-C menu, which fixes the issue&#13;
+&#13;
+## General Tips&#13;
+- Ctrl+C opens the cheat menu, which allows teleporting around the ship. This shouldn't cause any major issues, but I would be careful spawning items, because that may get messy.&#13;
+- No visual tracker yet, but for now I highly recommend Universal Tracker to see in-logic checks&#13;
+&#13;
+Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
+    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SWCreeperKing/Pocopelago/releases/tag/v0.1.3</id>
+    <title>Poco v0.1.3</title>
+    <updated>2026-09-11T01:15:29+00:00</updated>
+    <author>
+      <name>SW_CreeperKing</name>
+    </author>
+    <content>- [ApWorld] Maintenance and minor improvements&#13;
+- [ApWorld] Added `Achievent` location group&#13;
+- [ApWorld] Fixed logic bug with Gultch Quest&#13;
+- [Client] Maintenance and minor improvements</content>
+    <link href="https://github.com/SWCreeperKing/Pocopelago/releases/tag/v0.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/Archipelago/releases/tag/ffxiitm-0.1.0</id>
+    <title>Final Fantasy XII Trial Mode v0.1.0</title>
+    <updated>2026-09-11T03:59:33+00:00</updated>
+    <author>
+      <name>Silasary</name>
+    </author>
+    <author>
+      <name>Sheen</name>
+    </author>
+    <content>Added logical requirements to stages, updated client.</content>
+    <link href="https://github.com/silasary/Archipelago/releases/tag/ffxiitm-0.1.0"/>
   </entry>
 </feed>

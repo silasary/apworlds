@@ -4,7 +4,7 @@ Uncanny Cat Golf is a game about shooting a cat into various golf holes, with hi
 
 
 ## Downloads
-- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases/download/1.0.4/ucg.apworld">Latest Version (1.0.4)</a>
+- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-UCG/releases/download/1.0.5/ucg.apworld">Latest Version (1.0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
