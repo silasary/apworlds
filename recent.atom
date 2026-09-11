@@ -2,71 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-11T12:19:25.878376+00:00</updated>
+  <updated>2026-09-11T18:18:14.103129+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.2.1</id>
-    <title>Deltarune v2.2.1</title>
-    <updated>2026-09-08T08:17:42+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <author>
-      <name>theemeraldsword85</name>
-    </author>
-    <author>
-      <name>Tenebrosful</name>
-    </author>
-    <author>
-      <name>Vintagix</name>
-    </author>
-    <author>
-      <name>Deadzi</name>
-    </author>
-    <author>
-      <name>Charaster</name>
-    </author>
-    <author>
-      <name>Potato</name>
-    </author>
-    <author>
-      <name>TerraFail457</name>
-    </author>
-    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.2.0/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.2.0/worlds/deltarune/docs/en_DELTARUNE.md) - [Credits](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/DELTARUNEAP%20CREDITS.md)&#13;
-&#13;
-[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
-Or, alternatively,&#13;
-[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
-&#13;
-**INCOMPATIBLE WITH OLDER VERSION THAN 2.2.0**&#13;
-&#13;
-## All Chapters&#13;
-- 4rd Sanctuary and Knockdown (rhythm version) are no longer shuffled&#13;
-&#13;
-## Chapter 4 &amp; 5&#13;
-- Excluded Rock Video options now correctly works</content>
-    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.35</id>
-    <title>Mental Omega v0.6.3</title>
-    <updated>2026-09-08T11:53:38+00:00</updated>
-    <author>
-      <name>Mental Omega Randomizer contributors</name>
-    </author>
-    <content>- Fix broken AP world&#13;
-- Fix Caching and images &#13;
-- Fix Gear Change&#13;
-- Fix frozen GGI&#13;
-- Fix buffs vanishing on Vehicle 2nd Fire mode (like deploy, Watermode etc)&#13;
-- Fix Gem Dividend&#13;
-- Fix Parasomnia AI buff&#13;
-- Fix MCV not accessable in Foehn 06</content>
-    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.35"/>
-  </entry>
   <entry>
     <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.1</id>
     <title>Quake 1 v1.2.1</title>
@@ -1124,7 +1064,7 @@ The implementation now has proper [documentation](https://github.com/SerpentAI/A
   </entry>
   <entry>
     <id>https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3</id>
-    <title>Age Of Empires II: Definitive Edition v0.0.1r3</title>
+    <title>Age Of Empires II: Definitive Edition v0.0.1r2</title>
     <updated>2026-09-10T02:36:50+00:00</updated>
     <author>
       <name>dmwever</name>
@@ -1161,7 +1101,7 @@ Should still be fully compatible with releases going back to 0.2.0.&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3</id>
-    <title>ARK Survival Evolved v1.0.0r5</title>
+    <title>ARK Survival Evolved v1.0.0r2</title>
     <updated>2026-09-10T03:23:40+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1828,5 +1768,137 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
 &#13;
 _No new YAML options. However, you will need to remove Permanent Fever Meter Bonus from your useful item weights for existing YAMLs to be valid_</content>
     <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.15</id>
+    <title>Red Prince v1.0.15</title>
+    <updated>2026-09-11T13:20:09+00:00</updated>
+    <author>
+      <name>deefdragon</name>
+    </author>
+    <author>
+      <name>BatmenzDW</name>
+    </author>
+    <content># Red Prince 1.0.15
+
+## Gameplay and logic
+
+- Added optional first-observation checks for all 13 constellations through
+  `constellation_sanity`. Normal constellation effects still occur.
+- Added `exclude_north_star`: North Star remains a check but contains filler
+  when enabled. Other constellations can contain progression for any player.
+- Constellation logic assumes repeatable Observatory drafts across days to
+  gain stars, and Ink Well redraws to revisit skipped star counts. It models
+  eventual access, not the current night's sky; farming may take many days.
+- A supplied in-game log confirms North Star activation sent its check and
+  awarded Extra Dice 1. Multiple simultaneous constellations, controller input,
+  and repeat-observation persistence still need in-game confirmation.
+- Added warm-white, lightly yellow-tinted borders for undrafted room choices,
+  using the game's electricity-border geometry and bloom. Visual retest pending.
+- Pool trunk checks now require Gift Shop and Pump Room access. Corrected the
+  shared Pool rule that previously treated a location name as an item.
+- Planetarium trunk checks require telescope access. Trunks with unmodeled
+  luck or upgrade requirements remain excluded from progression placement.
+
+## Inventory - attempted fixes
+
+- Fixed the identified code path that restored Workshop recipe unlocks as
+  physical crafted items on the following day with Keep Simple Items Every Run.
+- Workshop rewards now remain recipe unlocks in the automatic grant path and
+  cannot auto-complete their crafting checks through item restoration.
+- The Workshop fix compiles; normal crafting and next-day behavior still need
+  in-game retesting. Previously sent checks are not rolled back.
+- Corrected runtime loading/reset of DeathLink protection and reporting of
+  constellation options and filler/trap distributions.
+
+## Known issues
+
+- Missing or unpickupable upgrade disks are not fixed by disk pickup-event
+  detection or by using the game's generic disk inventory object/icon.
+- Upgrade-disk duplication through Coat Check remains unresolved.
+- The previously reported microchip duplication and placement-time crash have
+  no confirmed resolution or established common cause.
+- Ordinary-item delivery delays remain under investigation; Workshop recipes
+  are distinct from physical-item delivery.
+- Runtime tests do not replace Unity playtesting. This release does not claim
+  to fix the remaining issues listed in UNRESOLVED_PROBLEMS.txt.
+
+## Check names and documentation
+
+- Published YAML includes both constellation options and all public world
+  options. Personal test starting stars, gems, and room unlocks are not included.
+- Existing location IDs remain stable. New checks use
+  `Constellation - &lt;name&gt; First Observation`.
+- Updated the attempted-fix and unresolved-issue logs to distinguish source
+  fixes, automated verification, confirmed gameplay, and pending playtests.
+
+## Compatibility
+
+- Minimum Archipelago version: 0.6.7. Compatibility with every newer version
+  has not been verified.
+- BepInEx 6 IL2CPP build 755; plugin target remains .NET 6.
+- The 1.0.15 game plugin and 1.0.15 APWorld should be distributed together.
+- Generate a new seed for constellation locations and changed generation rules.
+  Updating the plugin alone does not change an existing multiworld.
+
+## Verification
+
+- 92 world tests passed, public YAML generation succeeded, all 29 public options
+  are present, and runtime option tests passed on .NET 6.0.36.
+- Release compilation passed with existing dependency/analyzer warnings.
+  NuGet vulnerability metadata could not be fetched during the runtime-test restore.
+- Automated checks do not confirm resolution of the pending in-game issues above.
+</content>
+    <link href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.15"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.4</id>
+    <title>La-Mulana 2 v1.0.4</title>
+    <updated>2026-09-11T15:47:29+00:00</updated>
+    <author>
+      <name>Crownmuri</name>
+    </author>
+    <author>
+      <name>Coookie93</name>
+    </author>
+    <content>## Supports: Mod v1.0.0+ -- Tracker v2.0.4+&#13;
+&#13;
+# Changelogs&#13;
+- [SH C-5] Enemy Glossary (Skuld) - changed from `HorizontalAttack` to `Has(Feather) and Has(Grapple Claw)`&#13;
+- DLC boss missing a region requirement</content>
+    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.5.0</id>
+    <title>Final Fantasy VIII v0.5.0</title>
+    <updated>2026-09-11T15:50:07+00:00</updated>
+    <author>
+      <name>ff8_arch</name>
+    </author>
+    <content>## Install
+
+1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
+2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
+3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.
+
+### Visual Tracker
+
+`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:
+
+1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
+2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
+3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
+
+Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
+
+Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
+
+
+## What's Changed
+* v0.5.0: in-game check names, DeathLink fix, Sync preset by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/2
+
+
+**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.4.0...v0.5.0</content>
+    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.5.0"/>
   </entry>
 </feed>

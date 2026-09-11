@@ -1,6 +1,6 @@
 # Nova Lands
 
-
+Nova Lands is a farming and exploration game where you can grow crops, raise animals, mine for resources, and explore the world around you.
 
 
 ## Downloads

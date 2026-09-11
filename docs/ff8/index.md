@@ -6,7 +6,7 @@ multiworld; junction what the multiworld gives you and finish the war.
 
 
 ## Downloads
-- <a href="https://github.com/wilsonao/ff8_arch/releases/download/v0.4.0/ff8.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/wilsonao/ff8_arch/releases/download/v0.5.0/ff8.apworld">Latest Version (0.5.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Dawnsbury Days
 
 ## Latest
-- <a href="https://github.com/ordinary-magic/DawnsburyDaysArchipelago/releases/download/v1.5.0/dawnsbury.apworld">Latest Version (1.5.0)</a>
+- <a href="https://github.com/ordinary-magic/DawnsburyDaysArchipelago/releases/download/v.1.6.0/dawnsbury.apworld">Latest Version (1.6.0)</a>
 
 ## All Versions
+
+#### v1.6.0
+- <a href="https://github.com/ordinary-magic/DawnsburyDaysArchipelago/releases/download/v.1.6.0/dawnsbury.apworld">https://github.com/ordinary-magic/DawnsburyDaysArchipelago/releases/download/v.1.6.0/dawnsbury.apworld</a>
 
 #### v1.5.0
 - <a href="https://github.com/ordinary-magic/DawnsburyDaysArchipelago/releases/download/v1.5.0/dawnsbury.apworld">https://github.com/ordinary-magic/DawnsburyDaysArchipelago/releases/download/v1.5.0/dawnsbury.apworld</a>
