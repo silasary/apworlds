@@ -8,7 +8,7 @@ nobody installs a modification.
 
 
 ## Downloads
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.13.0/tf2_mvm.apworld">Latest Version (1.13.0)</a>
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">Latest Version (1.13.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

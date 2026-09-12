@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/download/2025.09.01/manual_thevault_chakraa.apworld">Latest Version (2025.9.1)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/download/2026.09.12/manual_thevault_chakraa.apworld">Latest Version (2026.9.12)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

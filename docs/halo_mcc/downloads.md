@@ -8,6 +8,9 @@
 #### v1.2.1r2
 - <a href="https://github.com/spencer2585/MCC-AP/releases/download/Alpha-1.2.2/halo_mcc.apworld">https://github.com/spencer2585/MCC-AP/releases/download/Alpha-1.2.2/halo_mcc.apworld</a>
 
+#### v1.2.1r2
+- <a href="https://github.com/spencer2585/MCC-AP/releases/download/Alpha-1.2.3/halo_mcc.apworld">https://github.com/spencer2585/MCC-AP/releases/download/Alpha-1.2.3/halo_mcc.apworld</a>
+
 #### v1.2.1
 - <a href="https://github.com/spencer2585/MCC-AP/releases/download/Alpha-1.2.1/halo_mcc.apworld">https://github.com/spencer2585/MCC-AP/releases/download/Alpha-1.2.1/halo_mcc.apworld</a>
 

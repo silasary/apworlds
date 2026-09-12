@@ -1,9 +1,12 @@
 # Manual_WorldofWarcraftDungeons_Chakraa
 
 ## Latest
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.08.30/manual_worldofwarcraftdungeons_chakraa.apworld">Latest Version (2026.8.30)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.09.12/manual_worldofwarcraftdungeons_chakraa.apworld">Latest Version (2026.9.12)</a>
 
 ## All Versions
+
+#### v2026.9.12
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.09.12/manual_worldofwarcraftdungeons_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.09.12/manual_worldofwarcraftdungeons_chakraa.apworld</a>
 
 #### v2026.8.30
 - <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.08.30/manual_worldofwarcraftdungeons_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.08.30/manual_worldofwarcraftdungeons_chakraa.apworld</a>

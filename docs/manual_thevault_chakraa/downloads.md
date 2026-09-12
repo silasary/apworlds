@@ -1,9 +1,12 @@
 # Manual_TheVault_Chakraa
 
 ## Latest
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/download/2025.09.01/manual_thevault_chakraa.apworld">Latest Version (2025.9.1)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/download/2026.09.12/manual_thevault_chakraa.apworld">Latest Version (2026.9.12)</a>
 
 ## All Versions
+
+#### v2026.9.12
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/download/2026.09.12/manual_thevault_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/download/2026.09.12/manual_thevault_chakraa.apworld</a>
 
 #### v2025.9.1
 - <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/download/2025.09.01/manual_thevault_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/download/2025.09.01/manual_thevault_chakraa.apworld</a>
