@@ -8,6 +8,9 @@
 #### v1
 - <a href="https://github.com/Hitmanty/S.T.A.L.K.E.R-2-Archipelago/releases/download/Releases/stalker2.apworld">https://github.com/Hitmanty/S.T.A.L.K.E.R-2-Archipelago/releases/download/Releases/stalker2.apworld</a>
 
+#### v0.0.3
+- <a href="https://github.com/Hitmanty/S.T.A.L.K.E.R-2-Archipelago/releases/download/Prereleasefix/stalker2.apworld">https://github.com/Hitmanty/S.T.A.L.K.E.R-2-Archipelago/releases/download/Prereleasefix/stalker2.apworld</a>
+
 #### v0.0.2
 - <a href="https://github.com/Hitmanty/S.T.A.L.K.E.R-2-Archipelago/releases/download/Bugfixpreagain/stalker2.apworld">https://github.com/Hitmanty/S.T.A.L.K.E.R-2-Archipelago/releases/download/Bugfixpreagain/stalker2.apworld</a>
 

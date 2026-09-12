@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Lukeylion/Papa-Louie-2-AP/releases/download/XdeltaRelease/PapaLouie2.apworld">Latest Version (0.0.0+xdeltarelease)</a>
+- <a href="https://github.com/Lukeylion/Papa-Louie-2-AP/releases/download/03-DoubleSendFix/PapaLouie2.apworld">Latest Version (3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
