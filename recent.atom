@@ -2,170 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-11T18:18:14.103129+00:00</updated>
+  <updated>2026-09-12T00:25:48.299765+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.1</id>
-    <title>Quake 1 v1.2.1</title>
-    <updated>2026-09-08T12:04:08+00:00</updated>
-    <author>
-      <name>randomcodegen</name>
-    </author>
-    <content>- Fixed YAML-less Universal Tracker support.&#13;
-- Added `ap_vanilla_items`. Set an item type to `1` to spawn its vanilla pickup when excluded from the seed, or `0` to disable it.&#13;
-- Fixed excluded multiplayer-only items appearing in single-player maps.</content>
-    <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Frisk202020/Archipelago/releases/tag/0.0.9</id>
-    <title>Splasher v0.0.9</title>
-    <updated>2026-09-08T14:42:15+00:00</updated>
-    <author>
-      <name>Frisk</name>
-    </author>
-    <content># Splasher Archipelago (**v.0.0.9**) -- Checkpoint Sanity&#13;
-&#13;
-**This version requires to update the APWorld accordingly**&#13;
-&#13;
-**Don't forget to update your asset files**&#13;
-&#13;
-## Highlights&#13;
-&#13;
-### Checkpoint Sanity&#13;
-&#13;
-A new randomization layer has been added : checkpoints sanity. When enabled, each checkpoint in the game becomes a location and, optionally, needs a corresponding *item* to be triggered. Checkpoints items have different levels of relevance depending on your (*CheckpointSanity*) option :&#13;
-&#13;
-- `useful` : the item allows its checkpoint to save the level progression (essence, position). Upon dying, the player respawns to the farthest **unlocked** checkpoint. &#13;
-- `progression` : the item also allows to send uncollected splashers. With this option checkpoint items may appear in a seed's logic, although it is currently somewhat limited because level exits are not yet gated by items (this will be worked on in the next version).&#13;
-&#13;
-Checkpoint items, if enabled, can be added in the pool as :&#13;
-- **individual** items (one per checkpoint)&#13;
-- **level pack** items (one per level, unlocking all checkpoints in it)&#13;
-- **zone pack** items (one per zone, unlocking all checkpoints in it)&#13;
-&#13;
-### In-game item feedback&#13;
-&#13;
-A feature that I should've implemented way earlier, but the game finally shows a pop-up message when you receive an item. How this is implemented is quite similar to [Celeste Open World](https://archipelago.gg/games/Celeste%20(Open%20World)/info/en) : a pop-up appears for a few seconds on the top-center of your screen, lasting for a few seconds (defaults to 5s, can be adjusted in `connection.yaml`).&#13;
-&#13;
-## Additional features&#13;
-&#13;
-- Added an option to instantly collect splashers (without reaching a checkpoint). This is a **seed** option (not overridable in `connection.yaml`) because it affects the logic the randomizer.&#13;
-- You can know teleport towards the next checkpoint (if that checkpoint is unlocked), reducing runbacks.</content>
-    <link href="https://github.com/Frisk202020/Archipelago/releases/tag/0.0.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/1.1.1</id>
-    <title>Slay the Spire II v1.1.0r3</title>
-    <updated>2026-09-08T15:13:41+00:00</updated>
-    <author>
-      <name>Kirbyfanner</name>
-    </author>
-    <author>
-      <name>Platano Bailando</name>
-    </author>
-    <author>
-      <name>Lyxn</name>
-    </author>
-    <author>
-      <name>MartyredG</name>
-    </author>
-    <author>
-      <name>Terairk</name>
-    </author>
-    <content># Fixes&#13;
-- Crash / blackscreen when save-quitting while AP menu is open&#13;
-- Kaleidoscope now correctly gives 3 card rewards from other characters (instead of 0, 1, 2 cards depending on your unlocked characters)&#13;
-- Hopefully fix the issue when connecting to an older APworld and not sending any checks (in my testing it didn't work for some reason and then worked when i restart - I would not be surprised if it showed up again&#13;
-- Fix the behaviour where Silver Crucible, Silken Tress etc did not work correctly - they now consume upon viewing a Card Reward for the first time - opposes base game behaviour&#13;
-- One of the above hopefully fixes the ancient relics breaking (I didn't notice them breaking in my testing)&#13;
-- Multiplayer scroll being able to be selected as a Neow Relic and it breaking (in Anytime mode)&#13;
-&#13;
-I didn't do a full 100% thorough test so maybe some other random features broke.&#13;
-&#13;
-# Mod Information&#13;
-&#13;
-## Pre-Requisites&#13;
-&#13;
-- **Your host MUST use Archipelago Client v0.6.7+**.&#13;
-- This version of the mod is intended to be used for **v0.107.1**  of Slay the Spire II&#13;
-  - While we have experimental support for the public beta branch **v0.111.0**, we recommend **the "Default Public/Main Version"** of the game to most players. Since the beta branch is updated more frequently and is more volatile, it's less likely to be bug-free. Please use it at your own risk. However numerous players have used it just fine, @Terairk is the maintainer for this and he mostly develops here.&#13;
-  - We will do our best to keep up with game updates as they release, so please be patient when encountering issues.&#13;
-&#13;
-## Installing the Mod from Steam Workshop (Recommended)&#13;
-&#13;
-1. Ensure that you have [RitsuLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3747602295) installed. The easiest way to obtain it is from Steam Workshop.&#13;
-2. Subscribe to the [Slay the Spire II Archipelago Client](https://steamcommunity.com/sharedfiles/filedetails/?id=3748826296) on Steam Workshop.&#13;
-3. Make sure that any other unnecessary mods are turned off, unless you're trying to use a specific modded character for your Archipelago session.&#13;
-4. Start the game&#13;
-&#13;
-## Manually Installing the Mod from GitHub&#13;
-&#13;
-1. Ensure that you have [RitsuLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3747602295) installed. The easiest way to obtain it is from Steam Workshop.&#13;
-2. Download the "Archipelago.zip" from the [Releases](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/latest) section of the Repo&#13;
-3. Go to your Slay the Spire II directory (In Steam, click "Browse Local Files")&#13;
-4. If a folder called `mods` does not exist, create it&#13;
-5. Copy the `Archipelago.zip` into `mods`. Then click `extract all` on your favourite ZIP tool.&#13;
-&#13;
-- If you've done this step correctly, your directory structure should look like this: `/&lt;slay-the-spire-2-local-files&gt;/mods/Archipelago/` and the contents of that folder should be a bunch of `.dll` files and a `.pck` file (there may be more files too, please don't touch anything in this folder)&#13;
-&#13;
-6. Start the game&#13;
-&#13;
-### Additional Steps for **Hosts**&#13;
-&#13;
-7. Download `spire2.apworld`&#13;
-8. Open your Archipelago Launcher&#13;
-9. Click "Install APWorld"&#13;
-10. Select `spire2.apworld` in the file dialog that pops up&#13;
-11. **Restart the Archipelago Launcher**&#13;
-12. Now you should be able to properly host/generate an Archipelago Session with StS 2&#13;
-&#13;
-- If you want to use `archipelago.gg` to host the game, generate it locally first following the steps above, then upload the `.zip` file from the `output` folder in your Archipelago installation&#13;
-&#13;
-&gt; [!IMPORTANT]&#13;
-&gt; You need to use Archipelago Version 0.6.7+ and CANNOT use earlier versions of Archipelago with this mod!&#13;
-</content>
-    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/1.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.11.0</id>
-    <title>Harry Potter 2 PC v2.11.0</title>
-    <updated>2026-09-08T15:28:06+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content># HP2PC_AP v2.11.0&#13;
-Every link is now a command you can flip mid-run, auto-launch only fires when you ask for it, and Hold Shift runs faster. Plus an eleventh Diffindo plant pot and four logic corrections.&#13;
-&#13;
-### New&#13;
-- **Turn each link on or off during a run.** `/ringlink`, `/traplink` and `/deathlink` each take `on`, `off` or `seed`, and a bare command flips the current state. Your choice beats the seed setting on every reconnect, so dropping and rejoining keeps it.&#13;
-- **`/autoplay` overrides auto-launch for the client session.** It takes `on` or `off`, and a bare `/autoplay` flips it. Handy when you want one session to behave differently from your `auto_launch_game` setting.&#13;
-&#13;
-### Changed&#13;
-- **Auto-launch only fires on connects you made.** The Connect button, `/connect` and the startup connect arm the launch. A reconnect the client makes by itself after a dropped connection never launches. The game counts as already up when it is bridged or a `Game.exe` is visible, so closing the game at the launcher page no longer wedges auto-launch for the rest of the session. A skipped launch says so and points you at `/play`.&#13;
-- **Hold Shift now caps at 330 units per second**, up from 315. The cap scales off the live ground speed, so a boost the game gives you on its own still stacks on top.&#13;
-- **Blocker hints get a reach per site.** The Great Hall gate drops to 150 units and the Spongify and Skurge doorways to 100, about contact range, so those three stop announcing themselves from across the room. Everything else keeps the 500 unit reach.&#13;
-&#13;
-### Fixed&#13;
-- **A timed trap can no longer expire mid-climb.** Reducio and Engorgio rebuild Harry's collision cylinder when they run out, which corrupted it if he was on a ledge at the time. Expiry now waits until he is standing or walking. Leaving the level still ends the trap immediately.&#13;
-- **A container the engine refuses to swap comes back.** A rejected spawn retries through the engine's own outward search and slides back to the saved spot. A spot that still refuses gets the stock container instead of an empty gap.&#13;
-&#13;
-### Logic and content changes&#13;
-- **Diffindo Challenge has an eleventh plant pot.** The pot set into a wall sconce is a check again, as Plant Pot 8. The pots that were 8, 9 and 10 are now 9, 10 and 11, each keeping its own check.&#13;
-- **Gryffindor Challenge Cauldron 2** now needs **Alohomora** on top of (Diffindo or Running) + Spongify + Flipendo. Cauldron 1 is unchanged.&#13;
-- **Quidditch match 5** no longer needs **Spongify**. Match 6 unlocks at a later game state, past the Spongify lesson, so only match 6 carries the spell.&#13;
-- **Forbidden Forest Secret 4 and Card Scamander** now need **Flipendo**. Both need it to reach.&#13;
-- **Chamber of Secrets Wiggentree Bark Jar 1 and Flobberworm Mucous Jar 1** now need **Diffindo**. Both sit behind a cut.&#13;
-&#13;
-## Poptracker 1.0.8&#13;
-&#13;
-### Changed&#13;
-- Access rules regenerated for the Cauldron 2, Quidditch match 5, Forbidden Forest and Chamber of Secrets gates.&#13;
-- Diffindo Challenge Plant Pot 11 added, and the plant pot pins retargeted so each pin follows its pot rather than its number.</content>
-    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.11.0"/>
-  </entry>
   <entry>
     <id>https://github.com/chpas/Pikmin2Archipelago/releases/tag/v0.9.1</id>
     <title>Pikmin 2 v0.9.1</title>
@@ -955,6 +796,7 @@ Free code signing for open source projects, provided by
       <name>Zorasknight</name>
     </author>
     <content>### Hotfix 1: Fixed Progressive Wires failing to send due to outdated progressive_items.json&#13;
+### Hotfix 2: Adds proper Compression, color codes commands in terminal, cleans up terminal text &#13;
 &#13;
 ## Update notes, and goals for the next build&#13;
 &#13;
@@ -1064,7 +906,7 @@ The implementation now has proper [documentation](https://github.com/SerpentAI/A
   </entry>
   <entry>
     <id>https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3</id>
-    <title>Age Of Empires II: Definitive Edition v0.0.1r2</title>
+    <title>Age Of Empires II: Definitive Edition v0.0.1r3</title>
     <updated>2026-09-10T02:36:50+00:00</updated>
     <author>
       <name>dmwever</name>
@@ -1101,7 +943,7 @@ Should still be fully compatible with releases going back to 0.2.0.&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3</id>
-    <title>ARK Survival Evolved v1.0.0r2</title>
+    <title>ARK Survival Evolved v1.0.0r5</title>
     <updated>2026-09-10T03:23:40+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1852,6 +1694,22 @@ _No new YAML options. However, you will need to remove Permanent Fever Meter Bon
     <link href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.15"/>
   </entry>
   <entry>
+    <id>https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.3.1</id>
+    <title>Factorio Modpacks v2.3.1</title>
+    <updated>2026-09-11T15:36:41+00:00</updated>
+    <author>
+      <name>Osiris32-and-a-half</name>
+    </author>
+    <content>Cosmicwolf has added the ability to show the normal tech tree in game based on in game options. There are 3 options hidden (this is how it was before), Broken tree (the technologies are viable but they aren't put into a tree) and Tech tree (This shows the full tech tree on the normal modpack, however due to how Factorio handles how we have disabled research the techs it is extremely laggy to the point of crashing, am looking at ways to fix this but suggestions are always wanted)&#13;
+&#13;
+He has also added the information to tooltips in factoriopedia so technology names can still be found for hinting while using hidden tree&#13;
+&#13;
+Lastly I have fix a number of bugs that should fix the bob's modpack and quality&#13;
+&#13;
+**Full Changelog**: https://github.com/Osiris32-and-a-half/BobFactorioAP/compare/V2.3.0...V2.3.1</content>
+    <link href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.3.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.4</id>
     <title>La-Mulana 2 v1.0.4</title>
     <updated>2026-09-11T15:47:29+00:00</updated>
@@ -1900,5 +1758,122 @@ Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). 
 
 **Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.4.0...v0.5.0</content>
     <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.3.0</id>
+    <title>Final Fantasy XIII-2 v0.3.0</title>
+    <updated>2026-09-11T18:57:49+00:00</updated>
+    <author>
+      <name>MLSTRM</name>
+    </author>
+    <content>Featural pass adding almost 30 new checks to the pool!&#13;
+&#13;
+Requires the newest available FFModdingWPF release for compatibility (version 0.8.2.57+)&#13;
+https://github.com/Bartz24/FFModdingWPF/releases/tag/pre-release-0.8&#13;
+&#13;
+Add all Oerba Temporal Rift rewards to the pool (20 checks)&#13;
+- This is all of the rift puzzles from Oerba 200, 300, and 400.&#13;
+- The final rift in each of 300 and 400 requires all but one of the fragment items from that area to be in your inventory, instead of just completing the rifts.&#13;
+- The Oerba 300 Aranaceous Artifact gate also requires 6 of the fragments from Oerba 300 to be in your inventory.&#13;
+&#13;
+Add all Serendipity fragments to the pool (5 checks, Lucky Coin added but marked as missable/excluded for now until easier adjustment of the success level is added. Casino Coin cost of the buyable fragments reduced significantly for easier logic, this will become an adjustable option in the future)&#13;
+- A single casino ticket will be enough to buy all of the 3 checks in the shop&#13;
+- The wild artefact has been removed from the pool due to being inaccessible as a treasure (and therefore not randomisable in the same way, will be added back in eventually).&#13;
+- Add missing Fragment Skills to the pool (Encounter Master and Chocobo Music have multiple parts that were not fully added, this is now resolved) (4 checks)&#13;
+&#13;
+Add text indicator in game when there are pending items to be obtained from the AP client&#13;
+&#13;
+Various logic fixes&#13;
+- Old Device marked as missable as handing in the fragment quest makes the location permanently inaccessible in a way that script modification is not currently resolving.&#13;
+- Corrected logic for Raised area in Yaschas Massif - Pass of Paddra (Access to non-10AF or 10AF+Hollow Artefact+Greens location)</content>
+    <link href="https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/tag/v0.6.0</id>
+    <title>Oblivion Remastered v0.6.0</title>
+    <updated>2026-09-11T19:02:37+00:00</updated>
+    <author>
+      <name>POD-io</name>
+    </author>
+    <content>## How to use&#13;
+&#13;
+For Archipelago instructions, see https://archipelago.gg/tutorial/&#13;
+&#13;
+1) Generate a new Archipelago multiworld.&#13;
+2) Launch the Oblivion Remastered Client from the ArchipelagoLauncher.exe.&#13;
+3) Connect to your server.&#13;
+4) Once connected, you can launch Oblivion Remastered through your mod manager and start playing.&#13;
+&#13;
+## v0.6.0 New Features&#13;
+&#13;
+- Bounty Contracts&#13;
+- Bounty Hunter Goal&#13;
+- Black Market&#13;
+- Weapon Lock&#13;
+- Oblivion Kill Checks&#13;
+- Wanted Trap&#13;
+- Skill XP Multiplier&#13;
+- New Unique Items&#13;
+- New Exploration Sidequests&#13;
+- Client Tracker Overhaul</content>
+    <link href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.6.0</id>
+    <title>Final Fantasy VIII v0.6.0</title>
+    <updated>2026-09-11T19:05:38+00:00</updated>
+    <author>
+      <name>ff8_arch</name>
+    </author>
+    <content>## Story Keys
+
+FF8 finally has doors. Twenty **"Key: &lt;area&gt;"** items, one per world-map entrance (Balamb, Dollet, Timber, Deling City, Winhill, Trabia Garden, Esthar City, Lunar Gate, the chocobo forests, ...). Without the key the town's entrance simply does not work: you walk onto it, nothing happens, and the client says `Locked: Key: Dollet`. The moment the key lands the door works again, right where you stand. No story faking, no file patching: the client rewrites one word of the table the game consults every step, and puts it back when the key arrives.
+
+- `story_keys: areas` — every key is a real door and the checks inside need it in logic, but the story path is never blocked.
+- `story_keys: story` — the doors the main line walks through stay shut too, so advancing the story needs keys other players hold. Balamb and Fire Cavern keys are yours from the start.
+- Keys carry their `/ff8warp` destination. New preset **Story Keys** (Staircase + `story_keys: story`).
+- Keys never open a town before the story does (early entry works, but town interiors assume the story state, so it stays off).
+- Also: the study panel credits both starter GFs when one is precollected (thanks Lexra), and the Jukebox trap picks from five tracks.
+
+Off by default while the feature is new. **Stability note:** v0.5.0 remains the stable release; report anything odd with `/ff8` output and the client log. Tracker pack 0.12.0 shows the keys and mirrors the rules.
+
+## Install
+
+1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
+2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
+3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.
+
+### Visual Tracker
+
+`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:
+
+1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
+2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
+3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
+
+Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
+
+Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
+
+
+## What's Changed
+* Story Keys: real world-map doors as key items (v0.6.0) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/3
+
+
+**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.5.0...v0.6.0
+</content>
+    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nepley/mof-apworld/releases/tag/v0.2.0</id>
+    <title>Touhou Fuujinroku ~ Mountain of Faith v0.2.0</title>
+    <updated>2026-09-11T21:37:23+00:00</updated>
+    <author>
+      <name>Nepley</name>
+    </author>
+    <content>* Deathlink added&#13;
+* Fix traps failing generation and speed related traps not working&#13;
+* Fix ending requirement not working when set to "all shot types"</content>
+    <link href="https://github.com/Nepley/mof-apworld/releases/tag/v0.2.0"/>
   </entry>
 </feed>

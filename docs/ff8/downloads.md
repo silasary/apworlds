@@ -1,9 +1,12 @@
 # Final Fantasy VIII
 
 ## Latest
-- <a href="https://github.com/wilsonao/ff8_arch/releases/download/v0.5.0/ff8.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/wilsonao/ff8_arch/releases/download/v0.6.0/ff8.apworld">Latest Version (0.6.0)</a>
 
 ## All Versions
+
+#### v0.6.0
+- <a href="https://github.com/wilsonao/ff8_arch/releases/download/v0.6.0/ff8.apworld">https://github.com/wilsonao/ff8_arch/releases/download/v0.6.0/ff8.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/wilsonao/ff8_arch/releases/download/v0.5.0/ff8.apworld">https://github.com/wilsonao/ff8_arch/releases/download/v0.5.0/ff8.apworld</a>

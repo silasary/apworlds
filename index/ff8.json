@@ -161,6 +161,21 @@
       "title": "FF8 Archipelago v0.5.0",
       "version_simple": "0.5.0",
       "world_version": "0.5.0"
+    },
+    "v0.6.0": {
+      "created_at": "2026-09-11T19:05:38Z",
+      "description": "## Story Keys\n\nFF8 finally has doors. Twenty **\"Key: <area>\"** items, one per world-map entrance (Balamb, Dollet, Timber, Deling City, Winhill, Trabia Garden, Esthar City, Lunar Gate, the chocobo forests, ...). Without the key the town's entrance simply does not work: you walk onto it, nothing happens, and the client says `Locked: Key: Dollet`. The moment the key lands the door works again, right where you stand. No story faking, no file patching: the client rewrites one word of the table the game consults every step, and puts it back when the key arrives.\n\n- `story_keys: areas` \u2014 every key is a real door and the checks inside need it in logic, but the story path is never blocked.\n- `story_keys: story` \u2014 the doors the main line walks through stay shut too, so advancing the story needs keys other players hold. Balamb and Fire Cavern keys are yours from the start.\n- Keys carry their `/ff8warp` destination. New preset **Story Keys** (Staircase + `story_keys: story`).\n- Keys never open a town before the story does (early entry works, but town interiors assume the story state, so it stays off).\n- Also: the study panel credits both starter GFs when one is precollected (thanks Lexra), and the Jukebox trap picks from five tracks.\n\nOff by default while the feature is new. **Stability note:** v0.5.0 remains the stable release; report anything odd with `/ff8` output and the client log. Tracker pack 0.12.0 shows the keys and mirrors the rules.\n\n## Install\n\n1. Archipelago **Launcher** \u2192 **Install APWorld** \u2192 pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.\n2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.\n3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) \u2014 see **Visual Tracker** below.\n\n### Visual Tracker\n\n`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:\n\n1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher \u2192 Install APWorld**, then restart the Launcher.\n2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.\n3. Launcher \u2192 **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.\n\nVisual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) \u2014 thank you!\n\nRequires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).\n\n\n## What's Changed\n* Story Keys: real world-map doors as key items (v0.6.0) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/3\n\n\n**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.5.0...v0.6.0\n",
+      "download_url": "https://github.com/wilsonao/ff8_arch/releases/download/v0.6.0/ff8.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2a8ba7d5d85dd65942cb49ffedc2f9051aef7a8a62ba05c02c128fa6d4cdeaba",
+      "html_url": "https://github.com/wilsonao/ff8_arch/releases/tag/v0.6.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 911240,
+      "source_url": "https://api.github.com/repos/wilsonao/ff8_arch",
+      "tag": "v0.6.0",
+      "title": "FF8 Archipelago v0.6.0",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0"
     }
   }
 }

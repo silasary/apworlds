@@ -105,6 +105,11 @@ The boss locations (as the fights may be randomised) included are:
 
 This list may be expanded in the future, if it is, options will also be introduced to adjust the number of bosses required to obtain the fragment
 
+### Oerba 300AF / 400AF
+The rewards from all Temporal Rifts in Oerba are now randomised. In Oerba 300AF and 400AF there is a final rift which can only be accessed once sufficient fragments
+from that area have been obtained.
+In the base game, the additional Oerba 400AF Rift can also be accessed by completing the rifts in Oerba 300, this is not the case in the randomiser.
+
 ## Known Issues/Limitations
 
 Gate Seals and closing gates has some known issues where it does not work as intended. For now all paradox endings are marked as excluded locations for AP purposes due to this. Re-opening the gate should generally restore any strange state that closing it causes.

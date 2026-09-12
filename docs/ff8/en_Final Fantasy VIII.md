@@ -51,7 +51,9 @@ Phoenix, and Gilgamesh.
 The GFs themselves, the key items, gil, and consumable packs are shuffled into the
 multiworld item pool. With **Trap Chance** above zero, some filler becomes traps: Gil
 Snatch (up to 1500 gil), Ambush (the party drops to 1 HP — heal before the next
-fight), and Magic Leak (10 of your most-stocked spell vanish). Traps apply on the
+fight), Magic Leak (10 of your most-stocked spell vanish), and Jukebox (the Triple Triad
+theme, a chocobo theme, or Laguna's silent-movie piano takes over the background music
+until the next scene change). Traps apply on the
 field, never mid-battle, and none can knock you out. When the vanilla game would hand you a GF or key item, the
 client intercepts it and sends a check instead; what you actually receive comes from
 the multiworld. Junction what you're given and make it work.

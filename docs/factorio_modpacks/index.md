@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.3.0/factorio_modpacks.apworld">Latest Version (2.3.0)</a>
+- <a href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/download/V2.3.1/factorio_modpacks.apworld">Latest Version (2.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

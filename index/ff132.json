@@ -82,6 +82,21 @@
       "title": "FF13-2 AP release 0.2.0",
       "version_simple": "0.1.3",
       "world_version": "0.1.3r2"
+    },
+    "ff132/0.3.0": {
+      "created_at": "2026-09-11T18:57:49Z",
+      "description": "Featural pass adding almost 30 new checks to the pool!\r\n\r\nRequires the newest available FFModdingWPF release for compatibility (version 0.8.2.57+)\r\nhttps://github.com/Bartz24/FFModdingWPF/releases/tag/pre-release-0.8\r\n\r\nAdd all Oerba Temporal Rift rewards to the pool (20 checks)\r\n- This is all of the rift puzzles from Oerba 200, 300, and 400.\r\n- The final rift in each of 300 and 400 requires all but one of the fragment items from that area to be in your inventory, instead of just completing the rifts.\r\n- The Oerba 300 Aranaceous Artifact gate also requires 6 of the fragments from Oerba 300 to be in your inventory.\r\n\r\nAdd all Serendipity fragments to the pool (5 checks, Lucky Coin added but marked as missable/excluded for now until easier adjustment of the success level is added. Casino Coin cost of the buyable fragments reduced significantly for easier logic, this will become an adjustable option in the future)\r\n- A single casino ticket will be enough to buy all of the 3 checks in the shop\r\n- The wild artefact has been removed from the pool due to being inaccessible as a treasure (and therefore not randomisable in the same way, will be added back in eventually).\r\n- Add missing Fragment Skills to the pool (Encounter Master and Chocobo Music have multiple parts that were not fully added, this is now resolved) (4 checks)\r\n\r\nAdd text indicator in game when there are pending items to be obtained from the AP client\r\n\r\nVarious logic fixes\r\n- Old Device marked as missable as handing in the fragment quest makes the location permanently inaccessible in a way that script modification is not currently resolving.\r\n- Corrected logic for Raised area in Yaschas Massif - Pass of Paddra (Access to non-10AF or 10AF+Hollow Artefact+Greens location)",
+      "download_url": "https://github.com/MLSTRM/ArchipelagoFF132/releases/download/ff132/0.3.0/ff132.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0779a8dd1a3d40aeba8d5d6447064d495565c9d4391bf5824bf0dcff21c40011",
+      "html_url": "https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.3.0",
+      "minimum_ap_version": "0.6.3",
+      "size": 346018,
+      "source_url": "https://api.github.com/repos/MLSTRM/ArchipelagoFF132",
+      "tag": "ff132/0.3.0",
+      "title": "FF13-2 AP release 0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }
