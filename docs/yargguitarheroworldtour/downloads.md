@@ -26,3 +26,6 @@
 #### v26.3.29
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.03.29/YARGGuitarHeroWorldTour.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.03.29/YARGGuitarHeroWorldTour.apworld</a>
 
+#### v1.0.0
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.09.13/YARGGuitarHeroWorldTour.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.09.13/YARGGuitarHeroWorldTour.apworld</a>
+

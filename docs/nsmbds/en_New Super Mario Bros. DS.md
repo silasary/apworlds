@@ -9,13 +9,8 @@ may be found anywhere in the multiworld.
 
 For installation and launch instructions, see the [Setup Guide](setup_en.md).
 
-> **Alpha:** Crashes and fatal errors are considered unlikely. Known types of
-> alpha issues include severe FPS drops in some levels, individual features or
-> checks no longer working, and location or item tracking unexpectedly
-> stopping. Seeds may also contain incorrect or missing logic requirements,
-> especially around Power-Up Permits and locations that need a specific
-> character form. If tracking stops, pause the game and verify the client and
-> BizHawk Lua connection before continuing.
+> **Unstable:** This unstable-release may contain severe performance, tracking,
+> feature, or logic issues. Report reproducible issues.
 
 ## What is randomized?
 
@@ -32,8 +27,10 @@ With the standard location settings, a seed includes:
 
 Most categories except level goals and Star Coins can be disabled in your
 player options. **Star Coins are always included.** Picking up a Star Coin in a
-level sends a check, while the Star Coin item found for you becomes currency
-for overworld signs and may count toward your goal.
+level immediately commits it to that level's save data and sends a check. It
+therefore stays collected even if you die or return to the map before reaching
+the goal. The Star Coin item found for you becomes currency for overworld signs
+and may count toward your goal.
 
 ### Blocksanity
 
@@ -76,14 +73,13 @@ overworld.
 
 ### Star Coin gates
 
-All gate modes use received Star Coin items as their currency. You can choose
-how access to the overworld signs works:
+In every mode, gates are arranged in tiers. Early tiers are cheaper and later
+tiers require more received Star Coins:
 
-- **Vanilla:** signs behave like the original game and cost Star Coins.
-- **Progressive:** each Progressive Gate Pass unlocks the next sign in order;
-  you also need the sign's Star Coin cost.
-- **Individual:** every sign has its own named Gate Pass and still requires its
-  Star Coin cost.
+- **Vanilla:** collect enough Star Coins to open each tier.
+- **Progressive:** collect Star Coins and Progressive Gate Passes to unlock the
+  tiers one after another.
+- **Individual:** collect Star Coins and the matching named Gate Pass for each tier.
 
 ### Power-Up Permits
 
@@ -105,7 +101,9 @@ Item-based Power-Ups are queued up until you unlock the permit.
 | Starman Buff | Grants 15 seconds of invincibility |
 | 1-Up Mushroom | Adds one life |
 | 3-Up Moon | Adds three lives |
-| Coin Bundle | Adds 50 Coins |
+| Small Coin Bundle | Adds 10 Coins |
+| Coin Bundle | Adds 25 Coins |
+| Large Coin Bundle | Adds 50 Coins |
 | Time Capsule | Adds 30 seconds to the current level |
 | Starman Lite | Grants five seconds of invincibility |
 | Trap Shield | Blocks the next trap; several charges can be stored (Cyan Shield) |
@@ -114,6 +112,13 @@ Item-based Power-Ups are queued up until you unlock the permit.
 
 If your reserve pocket is full, a received Power-Up waits until it can be
 delivered. It is not lost.
+
+The **Power-ups** list at the bottom of the client's Overview shows your
+waiting power-ups. Click **Next** to reserve one copy for the next
+empty pocket, or click the selected power-up again to cancel. After delivery,
+the oldest available power-up is next automatically. Power-ups awaiting a
+Permit stay queued and show their requirement. Your selection and backlog
+are saved for this seed and slot across client restarts.
 
 ## Item placement
 
@@ -151,7 +156,9 @@ a location from progression placement does not remove its check from the game.
 ## Traps
 
 The trap percentage controls how often traps replace ordinary non-progression
-items. Every trap can also be enabled or disabled separately.
+items. The `traps` YAML list selects the allowed types. An empty list disables
+all traps, regardless of the configured percentage. The `filler_items` list
+works the same way for positive filler categories, but must keep at least one entry.
 
 | Trap | Effect |
 |---|---|
@@ -194,6 +201,25 @@ When enabled, your death can defeat them and their deaths can defeat you.
 Life Insurance prevents the next local death from consuming a life. 
 The option Death Link: Trigger on Insured Deaths determines whether that insured death is still sent through Death Link. 
 It is disabled by default.
+
+Incoming Death Links can be customized with four additional options:
+
+- **Grace Percentage** is the chance to ignore an incoming Death Link completely.
+  It is rolled exactly once when the Death Link arrives. Eligible local deaths
+  are still always sent. The range is 0% to 75%, so even maximum grace lets one
+  quarter of incoming Death Links through on average. Use Death Link: Off to opt out entirely.
+- **Cooldown Seconds** ignores further incoming Death Links for the configured
+  time after an accepted effect is successfully applied. Death Links received
+  while an effect is already queued are also ignored rather than accumulated.
+- **Effect** can defeat Mario, apply normal damage, remove 100 seconds from the
+  level timer, remove all normal Coins, or randomly choose one of those four
+  effects. Damage removes a Power-Up and defeats Small Mario. Timer Drain can
+  reduce the timer to zero and therefore can also be lethal.
+- **Random Effects** selects which of the four concrete effects may be chosen
+  when Effect is set to Random. At least one effect must remain enabled in that mode.
+
+Incoming effects wait until Mario is in an active level. Any death caused by an
+incoming effect is suppressed locally and is never sent back as another Death Link.
 
 ## Cosmetic options
 
@@ -243,10 +269,10 @@ you will find there:
 - **Locations:** Red Coin Challenges, 1-Up Blocks, Secret Exits, Toad Houses,
   and Blocksanity.
 - **Progression:** Star Coin gate mode, Tower/Castle Keys, and Power-Up Permits.
-- **Filler:** choose which Power-Ups, lives, Coins, bonuses, and protection
-  items may appear.
-- **Traps:** set the overall percentage and toggle individual effects.
-- **Multiplayer:** enable Death Link and its Life Insurance behavior.
+- **Filler:** select which Power-Ups, lives, Coins, bonuses, and protection
+  items may appear through one list.
+- **Traps:** set the overall percentage and select allowed effects through one list.
+- **Multiplayer:** configure Death Link effects, grace, cooldown, and Life Insurance behavior.
 - **Cosmetics:** select separate Mario and Luigi palettes and optionally
   shuffle the in-level secondary-screen backgrounds.
 

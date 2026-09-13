@@ -1,9 +1,12 @@
 # New Super Mario Bros. DS
 
 ## Latest
-- <a href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.4.6-alpha/nsmbds.apworld">Latest Version (0.4.6a0)</a>
+- <a href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.5.0-unstable/nsmbds.apworld">Latest Version (0.5.0)</a>
 
 ## All Versions
+
+#### v0.5.0
+- <a href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.5.0-unstable/nsmbds.apworld">https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.5.0-unstable/nsmbds.apworld</a>
 
 #### v0.4.6a0
 - <a href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.4.6-alpha/nsmbds.apworld">https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.4.6-alpha/nsmbds.apworld</a>

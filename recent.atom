@@ -2,415 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-13T12:20:54.215623+00:00</updated>
+  <updated>2026-09-13T18:17:24.606712+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3</id>
-    <title>Age Of Empires II: Definitive Edition v0.0.1r3</title>
-    <updated>2026-09-10T02:36:50+00:00</updated>
-    <author>
-      <name>dmwever</name>
-    </author>
-    <content>## What's Changed&#13;
-&#13;
-More Stable - Contains stables (when shuffled) (But hopefully more)&#13;
-&#13;
-## AP World&#13;
-Should still be fully compatible with releases going back to 0.2.0.&#13;
-&#13;
-**Logic**&#13;
-- Attila 3 - 6 victory events now require the scenario to be beaten&#13;
-&#13;
-**AP Client**&#13;
-- Invalid ping could, in extremely rare cases, freeze the client&#13;
-- Scenarios could be marked complete by a different Age2 world if the client switched worlds&#13;
-- Campaign, building, and message info could persist across sessions&#13;
-- Client would read previous game packet instead of current packet.&#13;
-- Game client now disconnects on all disconnections&#13;
-- AP Client now shuts down gracefully&#13;
-- Item IDs no longer leak across packets&#13;
-- Improper client read no longer corrupts latest packet&#13;
-- Items can no longer be skipped when sending more than 12 at once&#13;
-- Progressive scenarios received before their Campaign is unlocked unlock when the Campaign is given&#13;
-&#13;
-## Game&#13;
-&#13;
-**General**&#13;
-- Connect now attempts until connection and items received&#13;
-- "Free Items" now frees actual item&#13;
-- Game no longer tries to read four times the length of every file (ask your programmer friends "why four times the length?")</content>
-    <link href="https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3</id>
-    <title>ARK Survival Evolved v1.0.0r5</title>
-    <updated>2026-09-10T03:23:40+00:00</updated>
-    <author>
-      <name>Jbaker16163</name>
-    </author>
-    <content>## Release Notes&#13;
-&#13;
-1. **Fjordur is here**. &#13;
-&#13;
-2. Midgard, Asgard, Jotunheim, and Vanaheim occupy the same world space at different elevations, so exploration regions now include altitude bands. &#13;
-&#13;
-   **81 exploration checks total:**&#13;
-   - Midgard: 38&#13;
-   - Asgard: 20&#13;
-   - Vanaheim: 14&#13;
-   - Jotunheim: 9&#13;
-&#13;
-3. **All 200 Fjordur Runes are now checks.** Runes are treated as Explorer Notes under the hood, so collecting one just works. Cave, underwater, and wyvern trench runes are gated behind the gear actually needed to reach them. The 45 runes in Asgard, Jotunheim, and Vanaheim currently contain filler only.&#13;
-&#13;
-4. **The Norse bosses are now supported as goals.** Beyla, Hati &amp; Sköll, and Steinbjörn lead into Fenrisúlfr. Boss kills are detected using the relic dropped by each fight instead of the boss corpse, so the kill still counts if you relog, another player gets the killing blow, or the corpse despawns. Hati &amp; Sköll requires both relics.&#13;
-&#13;
-5. **New goal setting:** choose any combination of bosses using a list.&#13;
-&#13;
-   ```yaml&#13;
-   goal: [broodmother, manticore, fenrisulfr]&#13;
-   ```&#13;
-&#13;
-   `all_bosses` means every boss available across your selected maps. The default remains the four Island bosses.&#13;
-&#13;
-   **BREAKING CHANGE:** The following goal options no longer parse:&#13;
-   - `all_bosses_all_maps`&#13;
-   - `broodmother_megapithecus`&#13;
-   - `broodmother_megapithecus_dragon`&#13;
-&#13;
-   Update your YAML accordingly.&#13;
-&#13;
-6. **Fixed 32 engrams** that could previously be received but would never actually unlock. This includes Clay, Tent, Vessel, the full Adobe set, the Desert Cloth set, Wind Turbine, Thorny Dragon Saddle, and Rock Golem Saddle.&#13;
-&#13;
-7. **Added 14 previously missing engrams:** Maewing, Velonasaur, Ravager, Amargasaurus, Roll Rat, Karkinos, Tropeognathus, Managarmr, and Magmasaur saddles, plus the full five-piece Hazard Suit. These saddles now correctly bundle with their associated tame when `bundle_saddles` is enabled. Previously, that setting did nothing for them.&#13;
-&#13;
-8. **Unlock messages now explain why something unlocked.**&#13;
-&#13;
-   Example:&#13;
-&#13;
-   ```text&#13;
-   Explore: The Savage Heights (Asgard) unlocked for everyone on the server: Engram: ...&#13;
-   ```&#13;
-&#13;
-9. **No more trap floods from `!release` or `!collect`.** Bulk deliveries now skip traps, keep useful filler, and send a single notification in chat.&#13;
-&#13;
-10. **Shared Slot + DeathLink now actually kills the entire server.** If one survivor dies, everyone dies. Previously, the death was sent to every other game in the multiworld while the survivors standing next to the corpse were left completely unaffected.&#13;
-&#13;
-11. **51 dead-end cosmetics are now filler instead of useful items.** This includes signs, flags, furniture, elevators, pipes, trophies, and similar items that previously diluted the useful item pool. Actual gear remains useful.&#13;
-&#13;
-12. **Added Mejoberry collection checks** and completed a broader food-tag pass.&#13;
-&#13;
-13. **Datapackage updates:**&#13;
-    - Engrams: 588 → 610&#13;
-    - Creatures: 127 → 142&#13;
-    - Exploration regions: 154 → 235&#13;
-    - Plugin: v177 → v187&#13;
-&#13;
-14. **Generation sweep: 30/30 passing.** Configurations using `dossier_checks: 120` and `dossier_checks: 0` previously failed generation and now pass correctly.&#13;
-&#13;
----&#13;
-&#13;
-## Tools&#13;
-&#13;
-Attached are **Avocado's Launcher** and **Lurch's PopTracker**.&#13;
-&#13;
-**Lurch's PopTracker:**  &#13;
-https://github.com/lurch9229/Arkipelago-Poptracker/releases&#13;
-&#13;
-**Avocado's Launcher:**  &#13;
-https://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher/releases&#13;
-&#13;
-&#13;
-I will be taking a break on adding new maps to the supported list as I am getting burnt out. I will be assisting Lurch with supporting the other released maps. I will continue working on bug fixes as they come up. </content>
-    <link href="https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.3</id>
-    <title>La-Mulana 2 v1.0.3</title>
-    <updated>2026-09-10T04:44:31+00:00</updated>
-    <author>
-      <name>Crownmuri</name>
-    </author>
-    <author>
-      <name>Coookie93</name>
-    </author>
-    <content>## Supports: Mod v1.0.0+ -- Tracker v2.0.3+&#13;
-&#13;
-# Changelogs&#13;
-- Fixed a generation issue where validation of pre-fill shop items post ER would do a multiworld access sweep instead of local, causing it to error if there are slots that have not yet finalized their own region connection (i.e. ER in later game slots)&#13;
-- Adjusted logic for the following locations:&#13;
-  - [IT F-3] Kimono Cowgirl Costume Chest: added `or CanReach(EPG)`&#13;
-  - [GOTD D-4] Little Demon Costume Chest: changed from `True` to `HorizontalAttack`&#13;
-  - [TS F-3] Flare Gun Weapon Vault: added tricky logic using Feather (no Gale Fibula or Lamp of Time)&#13;
-  - Takamagahara Shrine Bottom Gate: changed from `True` to `HorizontalAttack or Start(TSLeft)`&#13;
-  - [HL B-1] NPC Glossary (Baphomet): changed from `True` to `HorizontalAttack`&#13;
-  - [HL] Enemy Glossary (Lizardman): changed to `True` in HL/HLSpun (attackable from below in the War Mural rooms)&#13;
-  - [HL C-2] Middle Top Chest: added logic if top gate is accessible through ER&#13;
-  - [HL B-1] Heaven's Labyrinth Weapon Vault: added top gate access logic with `Has(Feather)` tricky logic&#13;
-  - [HL B-1] Weapon Vault Coin Pot: added top gate access logic with `Has(Feather)` tricky logic&#13;
-  - HLSpun to HLGate logic changed from `True` to `(Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas)`&#13;
-  - [EPG D-1] Gate with Glowing Eyes Item Pot: added `and Has(Grapple Claw)`&#13;
-  - [EPG E-3] Fourth Hell Gate Exit Coin Pot: changed an incorrect `and` gate to  `or` gate&#13;
-</content>
-    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release2</id>
-    <title>Ocarina of Time v9.1.0r2</title>
-    <updated>2026-09-10T09:34:44+00:00</updated>
-    <author>
-      <name>espeon65536</name>
-    </author>
-    <author>
-      <name>TreZ</name>
-    </author>
-    <content># OoT Randomizer APWorld v9.1.0 Full Release 2&#13;
-&#13;
-This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
-&#13;
-## Changes:&#13;
-- Fixed a few left faulty grotto item ids that caused items not to show there in certain settings&#13;
-- Fixed lag with RetroArch connector and risk of item duplication on connect.&#13;
-- Removed fork mentions from template to comply with AP rules&#13;
-&#13;
-Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.&#13;
-Even after deletion, the "Open Patch" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct "Ocarina of Time Client" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says "Archipelago Ocarina of Time Client 0.6.x" in the top bar with no info about the apworld version, you are using the old client.</content>
-    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4.1</id>
-    <title>Johnny Upgrade v1.4.1</title>
-    <updated>2026-09-10T12:28:52+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>## Bug fixes&#13;
-* Coin bundles should be more stable&#13;
-* Johnny will no longer go into crippling debt</content>
-    <link href="https://github.com/barretg/johnny-upgrade-ap/releases/tag/v1.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.9</id>
-    <title>Xenoblade X v0.2.9</title>
-    <updated>2026-09-10T13:14:12+00:00</updated>
-    <author>
-      <name>Maragon</name>
-    </author>
-    <author>
-      <name>Nina</name>
-    </author>
-    <content>- Fix generation issue without location locations&#13;
-- Fix error message during overfill</content>
-    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/pre-release-mp-2.3.0</id>
-    <title>Slay the Spire II v2.0.0</title>
-    <updated>2026-09-10T14:31:09+00:00</updated>
-    <author>
-      <name>Kirbyfanner</name>
-    </author>
-    <author>
-      <name>Platano Bailando</name>
-    </author>
-    <author>
-      <name>Lyxn</name>
-    </author>
-    <author>
-      <name>MartyredG</name>
-    </author>
-    <author>
-      <name>Terairk</name>
-    </author>
-    <content>## Patch Notes compared to the previous 2.2.0 PRE-RELEASE&#13;
-- Support Bonus Items feature (from the mainline 1.1.0 Release. If you want to use the website to generate the yaml you sort of can: but you need to add a line for "player_count: 1", value can be 1-4.&#13;
-- Port the 1.1.1 fixes onto this branch such as the compatibility such as the relic fixes such as silken tress and silver crucible etc and make this work on multiplayer. &#13;
-- New card syncing architecture for multiplayer - this should be more clean and easier for me to maintain&#13;
-- Add proper support for Kaleidoscope, Colourful Philosophers and Prismatic Gem, they should now be closer to what most people expect.&#13;
-- Add support for local saves in singleplayer mode and depreciate AP server saves (they're now opt in and available via client settings)&#13;
-- Have support for up to 6 local checkpoints with a selector instead of 1 checkpoint (plans for maybe 9 but not sure) - this would require a lot of testing to get campfire saves before boss.&#13;
-- Add a connection status icon (looks ugly ik)&#13;
-- Actually upload the correct apworld version and what not this time so the connection won't silently fail.&#13;
-&#13;
-Manually Installing the Mod from GitHub&#13;
-Ensure that you have [RitsuLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3747602295) installed. The easiest way to obtain it is from Steam Workshop.&#13;
-Download the "Archipelago.zip" from&#13;
-Go to your Slay the Spire II directory (In Steam, click "Browse Local Files")&#13;
-If a folder called mods does not exist, create it&#13;
-Unzip the contents of Archipelago.zip into mods&#13;
-If you've done this step correctly, your directory structure should look like this: /&lt;slay-the-spire-2-local-files&gt;/mods/Archipelago/ and the contents of that folder should be a bunch of .dll files and a .pck file (there may be more files too, please don't touch anything in this folder)&#13;
-</content>
-    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/pre-release-mp-2.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0</id>
-    <title>Crash Team Racing v0.2.0</title>
-    <updated>2026-09-10T14:36:33+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content># CTR-AP v0.2.0
-
-CTR Archipelago turns Crash Team Racing into a multiworld randomizer. A **check**, such as winning a race or breaking an AP box, awards an **item** that may go to you or another player. Your next character or kart upgrade can arrive from somebody else's game.
-
-## At a glance
-
-- Find AP boxes, individual CTR letters, weapon-use checks and Wumpa rewards.
-- Receive character unlocks, optional boost abilities and stat upgrades.
-- Shuffle Gem Cup tracks, add racer requirements to pads and combine Oxide, Boss and Gem goals.
-- Choose from twenty trap effects, with clearer pad displays, item messages and graphics settings.
-- AP-box contact is more forgiving, and secure connections now check both certificate trust and server name.
-
-[Read the full 0.2.0 release notes on AP-Pie](https://ap-pie.com/ctr/reference/0-2-0-release-notes) for the options, fixes and experimental features.
-
-## Where should I start?
-
-- **Joining an existing room:** follow the [CTR setup guide](https://ap-pie.com/guides/ctr). Download the client, add your own disc image and use the connection details from your host.
-- **Preparing for a new room:** [build a 0.2.0 YAML](https://ap-pie.com/yaml-builder/ctr?version=0.2.0), your player settings file, and send it to your host. The [YAML guide](https://ap-pie.com/guides/setting-up-your-yaml) explains the format.
-- **Generating or hosting:** install the matching `ctr.apworld`, the package that adds CTR to Archipelago, and follow the [hosting guide](https://ap-pie.com/guides/hosting-a-multiworld). You do not need to install the APWorld just to join as a player.
-
-Watch the [CTR setup video](https://youtu.be/9x63P6JP93E) or [hosting walkthrough](https://youtu.be/CpRbyRodayM). The setup video predates 0.2.0; use the current downloads and written guide alongside it. I'm also making a dedicated CTR 0.2.0 YAML explanation video, coming soon. The [CTR reference](https://ap-pie.com/ctr/reference) explains the available systems.
-
-## Upgrading and downloads
-
-For new games, use the matching 0.2.0 client, APWorld and YAML with a fresh seed. Back up your existing client folder, including settings and saves, before replacing it. For an ongoing room, check with the host before changing versions; older Alpha seeds are not automatically interchangeable with the final pair.
-
-Download the Windows ZIP or Linux/Steam Deck tarball below. The small archive is expected: it contains the client, matching APWorld and setup/support files. Your own North American (NTSC-U) CTR disc supplies the large game assets. Debug symbols are separate downloads for investigating crashes and are not needed to play.
-
-A raw `.bin` image works directly. `.chd` extraction needs Python and `chdman`. PAL/Japanese discs and cooked 2048-byte `.iso` images are not supported. Use the [current setup instructions](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) if you need more detail.
-
-## Practical limitations and testing
-
-Automated checks passed for the final release, including both platform builds, native and APWorld tests, all eleven generation fuzz checks and package verification. Some gameplay and connection scenarios still need community playtesting. Reports will feed into reproduced, verified fixes in matching 0.2.x releases.
-
-- **Steam Deck:** leave Fullscreen off if it causes heavy lag. See [#260](https://github.com/dowlle/ctr-native-ap/issues/260).
-- **Reconnecting:** large item backlogs may cause a long pause. Include the support bundle when reporting one.
-- **Podiums:** some characters can appear invisible; see [#282](https://github.com/dowlle/ctr-native-ap/issues/282).
-- **Recorded AI:** experimental and off by default. Opponents share up to three recorded lines, so names can repeat. Per-racer assignment, finish-line smoothing and ordinary-crate interaction need further work. AI cannot collect AP check boxes.
-- **Custom content:** the narrow Baby T Park preview is experimental and off by default. Generalized custom tracks are planned for 0.3.0.
-- **Planned for 0.2.1:** recorded-AI corrections, Nitro Drop/Red Potion balance improvements and optional checks for breaking every Relic Race time crate.
-
-## About this release
-
-With much of my attention on my partner's recovery, I've relied more than usual on AI assistance for this release. Astra coordinated implementation, reviews and release preparation around plans and priorities we had already agreed on.
-
-## Credits
-
-- The [CTR-tools CTR-ModSDK decompilation project](https://github.com/CTR-tools/CTR-ModSDK).
-- Icebound777 and Taor for the CTR randomizer work this integration builds on.
-- PsyCross for parts of the PlayStation platform layer.
-- SDL3 and the Archipelago client libraries.
-
-Crash Team Racing is a trademark of its respective rights holders. This is an unofficial fan project and is not affiliated with or endorsed by them.
-
-## Download checksums
-
-| Asset | SHA-256 |
-|---|---|
-| `ctr-archipelago-v0.2.0-windows-x86.zip` | `f0198aeaaea187de8a7e639121628a6f51fc5fb3e6ef3023e58a10e41f0dc0e6` |
-| `ctr-archipelago-v0.2.0-linux-x86.tar.gz` | `c1ae14997aecceaf11afbf855e66b73b81fdf3aef7b578e2b1ecde0267b2f384` |
-| `ctr.apworld` | `d40fba25eac9ddf88fe47cfed7b73825d2a32d4f004f7b6467952b1442f5c685` |
-
-## Reporting a problem
-
-[Open a GitHub issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) with your client version, platform, seed or YAML and what happened. Include the local support bundle when relevant: run `support-bundle.bat` on Windows or `support-bundle.sh` on Linux and inspect it before attaching it. It does not upload automatically.
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.4</id>
-    <title>Wynncraft v0.4.4</title>
-    <updated>2026-09-10T14:55:35+00:00</updated>
-    <author>
-      <name>EpicPuppy613</name>
-    </author>
-    <content>**Compatible with Wynnpelago v0.4.4+**&#13;
-&#13;
-- Slight options reorganization&#13;
-  - New category "QOL"&#13;
-- Various logic fixes</content>
-    <link href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.1</id>
-    <title>SM64: Spicy Mycena 64 v1.0.1</title>
-    <updated>2026-09-10T15:16:51+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>.apworld updates:&#13;
-- Coin Check Types option added by @ItzLoonie #15 &#13;
-- Various logic fixes including by @ItzLoonie in #20&#13;
-- Volcano First Ridge coins no longer incorrectly identified as a Coin Line in name or for logical purposes&#13;
-- FillError fix by @ItzLoonie in #19&#13;
-- Should no longer crash when generating with certain other games, fix started by @ItzLoonie in #19 and tweaked further by myself&#13;
-- Some generation optimizations&#13;
-&#13;
-SM64ex updates:&#13;
-- Tweaked the location you exit out of the CotMC entrance when Sub-Area Shuffle is enabled.&#13;
-- Fixed an issue causing gray coins to not spawn.&#13;
-&#13;
-SM64ex hotfixes:&#13;
-&#13;
-September 10:&#13;
-- Fixed exiting a zone entered via Wiggler's Cave or Pyramid Top with Sub-Area shuffle enabled, whether by death or normal exit course. Wiggler's Cave water will be drained and the entrance reachable, and the Pyramid Top will be removed and you will be placed next to the hole.&#13;
-- Fixed CotMC entrance bringing you to CotMC when it is supposed to bring you to Castle Grounds.&#13;
-- The return stack now respects each entrance-shuffle option: Exit Course can return you to the CotMC entrance when Secret Course Shuffle is enabled, and to the level containing a shuffled castle-return entrance when Castle Return Shuffle is set to Mixed.&#13;
-- Server disconnects no longer erase the level return stack.&#13;
-</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Nepley/eosd-apworld/releases/tag/v1.4.2</id>
-    <title>Touhou Koumakyou ~ the Embodiment of Scarlet Devil v1.4.2</title>
-    <updated>2026-09-10T18:28:49+00:00</updated>
-    <author>
-      <name>Nepley</name>
-    </author>
-    <content>* @AdalynBlack Improve linux compatibility</content>
-    <link href="https://github.com/Nepley/eosd-apworld/releases/tag/v1.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ragmoa/Archipelago/releases/tag/0.5.3</id>
-    <title>Okami HD v0.5.3</title>
-    <updated>2026-09-10T18:31:29+00:00</updated>
-    <author>
-      <name>Axertin</name>
-    </author>
-    <author>
-      <name>Ragmoa</name>
-    </author>
-    <content>- Hide Unimplemented Options&#13;
-- Add Debug option(s)&#13;
-- Fix Warps rules&#13;
-- Fix City Checkpoint Northern Island Chest Logic&#13;
-**Full Changelog**: https://github.com/Ragmoa/Archipelago/compare/0.5.2...0.5.3</content>
-    <link href="https://github.com/Ragmoa/Archipelago/releases/tag/0.5.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v.1.7.0</id>
-    <title>Refunct v1.7.0</title>
-    <updated>2026-09-10T18:48:31+00:00</updated>
-    <author>
-      <name>Spineraks</name>
-    </author>
-    <content>## New stuff&#13;
-- New minigame: **Defunct Rando**! Three buttons light up at a time. Keep pressing them until the entire game is gone D:&#13;
-- Pretty color-coded minigame list! You can now see which minigames have checks in green. [@nepcore &lt;3]&#13;
-&#13;
-## Kinda new stuff&#13;
-- Added my "smol" custom map to the mod, you can always select this map in "Custom Minigame" without having to download it.&#13;
-In the map, the entire world is half of the normal size. &#13;
-_Challenge: can you beat the current vanilla any% world record on it (2:40)?_ &#13;
-&#13;
-## Fixed stuff&#13;
-- Tweaked multiplayer a little bit, it doesn't send your location anymore when rising just after new game. This should prevent cases where you "scoop" idle players and drown them.&#13;
-- Added option to disable the downward dash in the mountain minigame and in block brawl (if you select dash there). It's in Archipelago Settings in the 'm' menu.&#13;
-- Nerfed Red Sky so it's not that bright.</content>
-    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v.1.7.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.36</id>
     <title>Mental Omega v0.6.3r2</title>
@@ -1402,45 +998,6 @@ If the Universal Tracker APWorld cannot be not found, the custom client tab will
     <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.37"/>
   </entry>
   <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.13.0r2</title>
-    <updated>2026-09-12T22:43:49+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `3a3724d25694992e8eabb8d815738720a9cd6fe5`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.13.0
-
-- fix(plugin): ignore self-damage for hostile buffs (#79)
-- chore(beads): triage Discord and the tracker, and open the SigMod port
-- Add SigMod community missions (for linux) (#73)
-- fix: merge equivalent weapon buff pools (#77)
-- Fix buffs for decorated weapons and functional reskins (#78)
-- chore(bots): pin v0.15.0 and drop the pin guard (#76)
-- feat: add static visual campaign tracker (#62)
-- feat(resume): a wave picker beside Play, and a mark kept per mission (#66)
-- fix(fastdl): advertise community wave icons (#72)
-- feat(launcher): unlock selected missions in test mode (#71)
-- fix(launcher): recover Steam relay address from console log (#70)
-- fix(launcher): name reward toggles plainly
-- chore(beads): triage of Discord and the issue tracker since 1.12 (#61)
-- fix(bridge): a format version mismatch says what to do about it (#60)
-- fix(launcher): the Grappling Hook can be turned on, and shows when it lands (#59)
-- fix(plugin): PLUGIN_VERSION says 1.13.0, like the apworld
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
     <id>https://github.com/seadoggie001/TFWR-APMod/releases/tag/v0.0.9-beta</id>
     <title>The Farmer Was Replaced v0.0.9b0</title>
     <updated>2026-09-13T04:23:52+00:00</updated>
@@ -1514,5 +1071,302 @@ Enjoy!&#13;
 ## Fix&#13;
 * Fixed issue with resolving ModPath for Steam</content>
     <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.5.0-beta</id>
+    <title>Dicey Dungeons v0.5.0b0</title>
+    <updated>2026-09-13T12:35:29+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>## What's Changed (since 0.4.4-beta)&#13;
+&#13;
+Play as the Inventor!&#13;
+&#13;
+- New options:&#13;
+  - Shop selection&#13;
+    - Replaces "Floor 5 Shop Selection"&#13;
+    - Any non-equipment shop items will be preserved (e.g. Warrior's Floor 5 heal/upgrades) if this is toggled. Otherwise, all shop items are AP checks / equipment / filler&#13;
+  - Inventor 3 - Remove Rust&#13;
+    - Make Inventor episode 3 work like any other inventor episode, rather than using the Rust mechanic&#13;
+  - Inventor 3 - Start with Grindstone&#13;
+    - Add Grindstone to your starting equipment for the Rust episode. Useful if playing with Levelsanity (which takes away your guaranteed Grindstone from leveling up)&#13;
+  - Randomize Gadgets&#13;
+    - Change the gadget of equipment to "Random Gadget", which produces a random gadget's effect when used in combat&#13;
+    - Can be set to vanilla (unused), filler only (all filler and AP checks will use it), or all equipment (every item uses it)&#13;
+  - Remove checks when sent&#13;
+    - Instead of AP checks being deleted from your equipment when you enter a battle, they are left there, as an option to spend to get Inventor gadgets&#13;
+    - Does not affect sending checks, they are still sent at beginning of combats&#13;
+- Game info page updated with recommendations for "Use equipment from any character" option, and Special Thanks&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.4.4-beta...v0.5.0-beta</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.5.0-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.0-unstable</id>
+    <title>New Super Mario Bros. DS v0.5.0</title>
+    <updated>2026-09-13T13:03:23+00:00</updated>
+    <author>
+      <name>Lemix028</name>
+    </author>
+    <content>### New features&#13;
+- Added **Death Link options**:&#13;
+  - Grace Percentage&#13;
+  - Cooldown&#13;
+  - Death, Damage, Timer Drain, Lose All Coins, or Random Effect&#13;
+  - Configurable pool of random effects&#13;
+- Added a persistent reserve **Power-Up backlog queue**&#13;
+  - Power-Ups are applied in received order, and the next Power-Up can be selected&#13;
+  from the client overview&#13;
+- Added Level Randomization as an *Alpha Preview* Feature:&#13;
+  - Global&#13;
+  - Within World&#13;
+- Added instant Star Coin collection (you no longer need to finish the level)&#13;
+&#13;
+### Changes &#13;
+- Overhauled the **client overview tab** and hotkey information&#13;
+- Added native ROM hooks for block hits&#13;
+- Consolidated filler and trap configuration into one list for each category&#13;
+- **Rebalanced filler** items:&#13;
+  - Added Small Coin Bundle (+10 Coins), Coin Bundle (+25 Coins) and Large Coin Bundle (+50 Coins)&#13;
+  - Reduced the weighting of Extra Lives and several common filler items for better variety&#13;
+- Changed **Blocksanity global check** selection to use **fully randomized** global sampling instead of round-robin distribution across levels.&#13;
+- Changed several defaults to provide a more casual first seed&#13;
+- Changed traps to be suspended while the game is paused, preventing their timers from progressing and their effects from applying in the pause menu&#13;
+- Performance improvements&#13;
+&#13;
+### Fixes&#13;
+&#13;
+- Fix Mini-Mario castle exits to Worlds 4 and 7 didn't triggered properly&#13;
+- Fixed the repeated Star Coin spending sound after returning to the world map&#13;
+- Fixed Hammer Bros and red flying ? Block actors when worlds are unlocked through access items&#13;
+- Fixed some traps preventing proper use of the pause menu&#13;
+- Fixed deathlinks sometimes being triggered when returning to the map from an already completed level under certain conditions.&#13;
+&#13;
+For a explanations of the randomizer and its features or installation and setup:&#13;
+* **[Game Info](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/tree/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md)**&#13;
+* **[Setup Guide](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/tree/nsmbds/worlds/nsmbds/docs/setup_en.md)**&#13;
+* **[Poptracker](https://github.com/Lemix028/NewSuperMarioBrosDS-poptracker/releases/latest)**</content>
+    <link href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.0-unstable"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.13.0r2</title>
+    <updated>2026-09-13T14:09:34+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `09491d7fd32994787328a97d1c3f40c83a7425ef`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.13.0
+
+- feat: add per-mission modifiers (#81)
+- fix(plugin): ignore self-damage for hostile buffs (#79)
+- chore(beads): triage Discord and the tracker, and open the SigMod port
+- Add SigMod community missions (for linux) (#73)
+- fix: merge equivalent weapon buff pools (#77)
+- Fix buffs for decorated weapons and functional reskins (#78)
+- chore(bots): pin v0.15.0 and drop the pin guard (#76)
+- feat: add static visual campaign tracker (#62)
+- feat(resume): a wave picker beside Play, and a mark kept per mission (#66)
+- fix(fastdl): advertise community wave icons (#72)
+- feat(launcher): unlock selected missions in test mode (#71)
+- fix(launcher): recover Steam relay address from console log (#70)
+- fix(launcher): name reward toggles plainly
+- chore(beads): triage of Discord and the issue tracker since 1.12 (#61)
+- fix(bridge): a format version mismatch says what to do about it (#60)
+- fix(launcher): the Grappling Hook can be turned on, and shows when it lands (#59)
+- fix(plugin): PLUGIN_VERSION says 1.13.0, like the apworld
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.2</id>
+    <title>SM64: Spicy Mycena 64 v1.0.2</title>
+    <updated>2026-09-13T14:36:59+00:00</updated>
+    <author>
+      <name>Alchav</name>
+    </author>
+    <content>.apworld updates:&#13;
+- Fixed Igloo Vanish Cap Block and frozen Coin logic #21&#13;
+- Added trick Snowman’s Land Igloo Vanish Cap Block with Spindrift #21 &#13;
+- Fixed Mixed entrance shuffle frequently creating two-step paths back to an entrance’s vanilla level&#13;
+- Entrance hints now appear only for entrance categories that were actually shuffled.&#13;
+- Fixed Secret Course Shuffle failing to provide entrance hints while unshuffled main courses received unnecessary hints.&#13;
+- Entrance hints now follow chains through shuffled sub-areas and report the outer course entrance.&#13;
+- Locations reachable from multiple entrances now list every valid entrance&#13;
+- Fixed a cause for generation failures.&#13;
+&#13;
+SM64ex updates:&#13;
+- Fixed same-area shuffled warps into the Castle First Floor potentially leaving Mario missing and the camera stuck, particularly when the Bowser in the Dark World entrance led back to the lobby.</content>
+    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.09.13</id>
+    <title>YARGGuitarHero2 v1.0.0</title>
+    <updated>2026-09-13T15:08:53+00:00</updated>
+    <author>
+      <name>Energymaster22</name>
+    </author>
+    <author>
+      <name>thedrummonger</name>
+    </author>
+    <author>
+      <name>GirlWithoutAFairy</name>
+    </author>
+    <content>Oh lord it has been 4 months. Here we go.&#13;
+&#13;
+All apworlds now require YARG AP Client 1.0.0 or newer.&#13;
+&#13;
+# New Release - Band Hero&#13;
+# New Release - Guitar Hero 3&#13;
+- Includes additional setlist "GH3 Co-op" containing 5 songs.&#13;
+-- Guitar Battle vs. Slash&#13;
+-- Guitar Battle vs. Tom Morello&#13;
+-- One (Co-op version)&#13;
+-- The Devil Went Down to Georgia&#13;
+-- Through the Fire and Flames (Co-op Version)&#13;
+# New Release - Guitar Hero Warriors of Rock&#13;
+# All Setlists - Big Content Update&#13;
+- Added Band Hero&#13;
+- Added Guitar Hero 3&#13;
+- Added GH3 Co-op&#13;
+- Added Guitar Hero Warriors of Rock&#13;
+- Added YARN Request Pack 2&#13;
+- Added Whiteweek 01&#13;
+- Added Luge 01&#13;
+- Added Pronoun Palace 01&#13;
+- Added YARN Request Pack 3&#13;
+- Added YARN Pack 5&#13;
+- Added Teto Pack 2&#13;
+- Added Variety Pack 1&#13;
+- Added Go Down in History&#13;
+- Updated YARG Official Setlist to add support for Wave 16&#13;
+&#13;
+With this update, there are now over 1,000 songs supported by this project.</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.09.13"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.10.0</id>
+    <title>Plants vs. Zombies: Replanted v1.10.0</title>
+    <updated>2026-09-13T17:00:13+00:00</updated>
+    <author>
+      <name>Bonzorio</name>
+    </author>
+    <content>- Added the ability to **randomise plants and zombies in Vasebreaker mode!** This also means you can now use plant stat randomisation in these levels.&#13;
+- Added an optional **"Rake"** filler item. This item instantly places a garden rake on the lawn, taking out the first zombie that steps on it.&#13;
+- Added an ability to shuffle a useful **"Butter Ability"** item. When obtained, this permanently grants you the power to butter any zombie of your choice. A cooldown applies after each use.&#13;
+- Added an option to create **randomised plant blacklists** for each level. You can specify the number of plants to be banned per level from 0-30. This can force you to spice up your strategy or find alternative plants in order to progress.&#13;
+- **Imp** can now be enabled for zombie randomisation.&#13;
+- Added the `harder_zombie_spawns` option. This option **increases the difficulty of the game** by adjusting how zombies are spawned. The initial grace period before zombies can start spawning is reduced, and the size and strength of waves is increased.&#13;
+- Added the **"Invisighoul Trap"** item. This trap turns all zombies on the lawn invisible.&#13;
+- Added the **"Seed Bank Randomiser Trap"** item. This trap randomises which seed packets are available in your seed bank.&#13;
+- Added the **"Ladder Trap"** item. This trap places a ladder on every active plant.&#13;
+- Added the **"Zombie Growth Serum Trap"** item. This trap causes zombies to grow, increasing their toughness.&#13;
+- Added the **"Paranoia Trap"** item. This trap plays the music associated with the Jack-in-the-Box zombie, and doesn't do anything else. Or does it?&#13;
+- Access new AP options via the title screen's options menu. You can adjust the following options, whenever you like: `death_link`, `ring_link`, `energy_link`, `seed_link`, `lawn_link`, `harder_zombie_spawns`, `imitater_behaviour` and `disable_storm_flashes`.&#13;
+- Corrected item groups.&#13;
+- Fixed an issue that was causing randomised plant stats to be applied in incorrect situations.&#13;
+- Wall-nut ricochets in "Adventure: Level 1-5" will now drop coins.&#13;
+- Made it clearer where Plants vs. Zombies-related information begins in the spoiler log.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.10.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.0</id>
+    <title>AEMinecraft v0.6.0</title>
+    <updated>2026-09-13T17:10:41+00:00</updated>
+    <author>
+      <name>KuroLynx</name>
+    </author>
+    <content>## AEMinecraft v0.6.0&#13;
+&#13;
+Two new options for how death and your inventory work, an advancement screen that tells&#13;
+you where your items are, and a round of fixes to what the randomizer asks of you.&#13;
+&#13;
+### New&#13;
+&#13;
+**Hints on the advancement screen.** Every unlock tile (structures, mobs, Knowledge) now&#13;
+shows the item the way Archipelago names it, in Archipelago's colour for how important it&#13;
+is. Hold a tile for a moment to ask for its hint: the screen closes, reopens on the same&#13;
+tab once the answer arrives, and the tile says where the item is waiting —&#13;
+`Structure Unlock: Ancient City @ Sky's the Limit in Steve's world`. Hints made anywhere&#13;
+in the multiworld show up. For a progressive item, each level shows its own hint.&#13;
+&#13;
+**See which advancements you actually earned.** When another player's release or collect&#13;
+sends one of your checks, that advancement used to turn gray like one you completed&#13;
+yourself. It now turns **blue**, so the gray tiles are the ones your world really earned,&#13;
+and the blue ones are still missing from your advancement goal. Tiles are now repainted&#13;
+in Minecraft's own text colours.&#13;
+&#13;
+**Progressive Keep Inventory** — new option `keep_inventory` (with&#13;
+`keep_inventory_pool_size`). Instead of choosing between losing everything on death and&#13;
+the `keepInventory` gamerule, you can make it something you unlock over a run.&#13;
+&#13;
+**Inventory Lock** — new option `inventory_lock`. Inventory slots start locked and open&#13;
+up as *Progressive Inventory Slot* items arrive.&#13;
+&#13;
+- The **Biome Finder** no longer takes up an item: open it with its keybind or the&#13;
+  compass button next to the recipe book.&#13;
+- A **chat filter** hides multiworld messages that have nothing to do with your slot.&#13;
+- Chat lines starting with `!` are sent to Archipelago as commands, e.g. `!hint`.&#13;
+- The advancement screen works with Better Advancements, Advancements Reloaded and&#13;
+  Paginated Advancements.&#13;
+&#13;
+### Fixed&#13;
+&#13;
+- Locked baby zombies could reappear riding chickens in trial chambers after a reload.&#13;
+- With DeathLink on, every incoming death reset the timer phantoms need, so they could&#13;
+  stop spawning entirely.&#13;
+- Sneaking with empty hands let you use something a Knowledge gate should have kept closed.&#13;
+- A locked structure is now rebuilt from the world when it unlocks, instead of keeping a&#13;
+  copy of its blocks in your save.&#13;
+- Generating a seed with glitch logic could run out of memory (18 GB → about 1 GB).&#13;
+&#13;
+### Logic&#13;
+&#13;
+- Blocks that only exist once placed, and have no recipe, are no longer handed out free.&#13;
+- Ores count as a source for their item. A crafted block is not something to mine.&#13;
+- A recipe needs its crafting station, not just permission to use one.&#13;
+- Emeralds come from villagers; pottery sherds are brushed out, not looted.&#13;
+- Villagers need a village; Mooshrooms need their biome.&#13;
+- Filled buckets and villager trades are priced properly.&#13;
+- The Wandering Trader and BlazeandCave reward items only count as glitch-logic routes.&#13;
+- Killing several mobs with one arrow requires Piercing.&#13;
+- Trimming armor requires armor, a trim template and a smithing table.&#13;
+&#13;
+### Upgrading&#13;
+&#13;
+- The mod and the apworld are released together. Use them as a matched set.&#13;
+- Requires Archipelago 0.6.7 or newer.&#13;
+- New YAML options `keep_inventory`, `keep_inventory_pool_size` and `inventory_lock`.&#13;
+  Take them from the new template. Leaving them out gives you the defaults.&#13;
+- Unlock tiles only get their Archipelago colour on seeds generated with v0.6.0.&#13;
+- Regenerating a v0.5.1 seed with v0.6.0 gives a different placement. Finish existing&#13;
+  seeds on the version they were generated with.</content>
+    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.2.6</id>
+    <title>Chibi Robo v1.2.6</title>
+    <updated>2026-09-13T17:48:09+00:00</updated>
+    <author>
+      <name>EverydaySimpleDev</name>
+    </author>
+    <content>- Updated Gen Logic / Rules / Bug Fixes&#13;
+- New Victory Goal (Let's Go Divorce)&#13;
+- Added Spider Queen Left Leg / Frog Ring Locations</content>
+    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.2.6"/>
   </entry>
 </feed>
