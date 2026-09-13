@@ -1,9 +1,12 @@
 # Mental Omega
 
 ## Latest
-- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.36/mental_omega.apworld">Latest Version (0.6.3r2)</a>
+- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.37/mental_omega.apworld">Latest Version (1.37)</a>
 
 ## All Versions
+
+#### v1.37
+- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.37/mental_omega.apworld">https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.37/mental_omega.apworld</a>
 
 #### v0.6.3r2
 - <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.36/mental_omega.apworld">https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.36/mental_omega.apworld</a>
@@ -17,14 +20,14 @@
 #### v0.6.1r3
 - <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.33/mental_omega.apworld">https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.33/mental_omega.apworld</a>
 
-#### v0.6.1r3
-- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.34/mental_omega.apworld">https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.34/mental_omega.apworld</a>
-
 #### v0.6.1r2
 - <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.31/mental_omega.apworld">https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.31/mental_omega.apworld</a>
 
 #### v0.6.1r2
 - <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.32/mental_omega.apworld">https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.32/mental_omega.apworld</a>
+
+#### v0.6.1r2
+- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.34/mental_omega.apworld">https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.34/mental_omega.apworld</a>
 
 #### v0.6.1
 - <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.30/mental_omega.apworld">https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.30/mental_omega.apworld</a>

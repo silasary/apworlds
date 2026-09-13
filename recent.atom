@@ -2,627 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-12T18:13:06.384520+00:00</updated>
+  <updated>2026-09-13T00:22:59.180551+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.4.7</id>
-    <title>Tomba! v1.4.7</title>
-    <updated>2026-09-09T19:34:26+00:00</updated>
-    <author>
-      <name>T4g1</name>
-    </author>
-    <author>
-      <name>bosshunter</name>
-    </author>
-    <content>This release marks the end of the beta phase of this project!&#13;
-I will continue to maintain it, fix bugs and implements new features or provide support in case of issues.&#13;
-&#13;
----&#13;
-&#13;
-## ✨ What's New&#13;
-&#13;
-### 🧪 Experimental feature&#13;
-It is now possible to activate the entrance randomizer. This is largely untested and will break your game, use it at your own risk or if you want to experience funny softlocks. Don't forget to save state and report issues as I will need a lot of those to make this stable&#13;
-&#13;
-### 🐛 Bug Fixes&#13;
-* Fix: Possible case for item duplication&#13;
-* Fix: We Need Power requierement lowered to be just the I Can't Swim event&#13;
-* Fix: Confusing location names for Death Fruit Juice event&#13;
-* Fix: Tears From a Flower can be cleared sooner&#13;
-* Fix: Let's Ride a Raft can also be cleared sooner&#13;
-* Fix: 10,000 Chest in Charity Square requires any Grapple now&#13;
-* Fix; Flower Tower in logic before Forest is purified&#13;
-* Fix #5 with a new Fast Motocross Retry setting&#13;
-* Fix: Jewel of fire required for second part of trap room&#13;
-* Fix: I Can't Swim when Jungle is purified or on second visit&#13;
-* Fix: I Can't Swim clear conditions&#13;
-* Fix #95 : Leaf Butterfly count error&#13;
-* Fix #88 : Add FAQ&#13;
-* Remove deathlink while not in game&#13;
-* Fix #90 : Coming with bell from Forest of All Beginning before clearing the fog caused issues&#13;
-* Fix #90 : Softlock upon entering the Ol' Pond from Trick Village too soon with bells&#13;
-* Fix Haunted Pig Bag event in logic too soon&#13;
-* Fix softlock if save the dwarves is cleared before beginner language&#13;
-* Typo for Basement&#13;
-* Fix #85 : Can't receive deaths in deathlink&#13;
-* Haunted Mansion access from Mushroom Forest and Old Tree Hill fixed&#13;
-* Baccus Village softlocked when cleared before accessing it&#13;
-&#13;
----&#13;
-&#13;
-## 🔧 Installation&#13;
-1. Download the source code or the `.apworld` file.&#13;
-2. Drop it into your Archipelago `custom_worlds/` directory.</content>
-    <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.4.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.4.0</id>
-    <title>Final Fantasy VIII v0.4.0</title>
-    <updated>2026-09-09T20:38:14+00:00</updated>
-    <author>
-      <name>ff8_arch</name>
-    </author>
-    <content>&gt; ## ⚠️ Stability note&#13;
-&gt; v0.4.0 carries the **early-Ragnarok** work (Vehicle Unlocks / Vehicle Gates), which manipulates the game's world map in ways no previous release did. It has been through one live test session, not a full playthrough, so expect rough edges: a ship parked somewhere odd, a spawn that needs one more battle, a save made aboard behaving strangely. Both vehicle options are **off by default**, and the sphere changes are generation-only. **If you want the most stable experience for a long multiworld, use [v0.3.0](https://github.com/wilsonao/ff8_arch/releases/tag/v0.3.0)** and report anything you hit on v0.4.0.&#13;
-&#13;
-## What's new in v0.4.0&#13;
-&#13;
-- **Story Gates** (new option, default `normal`): the story is split into 18 beats and each beat's checks count as in logic only once you hold a rising ladder of GFs and unlock items. A default seed now opens about 60 checks (all Disc 1) and plays as 8-13 real spheres instead of 220 checks in one plateau. `tight` for about 25, `off` for the old shape.&#13;
-- **Travel hubs:** the world-map draw points of Centra, Trabia, Esthar, and the islands open with the Ragnarok item *or* the story beat that grants it.&#13;
-- **Vehicle Unlocks** (experimental, off): the Ragnarok item spawns the ship beside you after a battle or town exit, on any disc, and you keep it for the whole game. The Balamb Garden item was removed (a mobile Garden locks you out of Balamb Garden).&#13;
-- **Vehicle Gates** (experimental, off): the story's own Ragnarok is parked out at sea until the item arrives.&#13;
-- New **Staircase** preset; PopTracker pack 0.10.0 mirrors the beats, hubs, and ladder; `tools/sphere_report.py` for measuring sphere shape.&#13;
-&#13;
-## Install&#13;
-&#13;
-1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.&#13;
-2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.&#13;
-3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.&#13;
-&#13;
-### Visual Tracker&#13;
-&#13;
-`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:&#13;
-&#13;
-1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.&#13;
-2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.&#13;
-3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.&#13;
-&#13;
-Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!&#13;
-&#13;
-Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).&#13;
-&#13;
-&#13;
-## What's Changed&#13;
-* v0.4.0: story-beat sphere gating, travel hubs, early Ragnarok by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/1&#13;
-&#13;
-## New Contributors&#13;
-* @wilsonao made their first contribution in https://github.com/wilsonao/ff8_arch/pull/1&#13;
-&#13;
-**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.3.0...v0.4.0&#13;
-</content>
-    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.12.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.12.0r2</title>
-    <updated>2026-09-09T20:51:47+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-Traps, a medal on every mission clear, a Grappling Hook the multiworld can hand
-you, maps that download over HTTP, thirty more community missions, and a long
-pass over the weapon buffs from Cowser's sheet and kelly-cs's issues. Bots at
-2.52.3. The settings screen says what it did with a Save and where it put the
-file, and a save stops ending the mission you are four waves into.
-
-### The run
-
-- **Traps.** A `trap_percentage` option puts traps in the pool, one percent by
-  default and zero for none. The one that exists soaks the whole team in
-  Jarate: ten seconds of 35% more damage taken and no crits, bots included. It
-  belongs to the multiworld like any other item, so it is another player
-  opening a chest that does it to you. One that arrives between waves waits
-  for the next one: Jarate on a team standing at the upgrade station is no
-  trap at all.
-- **Australium Medals.** `medal_on_clear`, off by default, locks a medal onto
-  every mission clear and takes those checks out of the pool. Both goals read
-  them: Final Boss asks for the goal mission's own, missionsanity counts them.
-- **The Grappling Hook.** Turn on `server_settings` in your YAML and the
-  multiworld can hand your team Mannpower's hook for the rest of the run. It is
-  useful, never progression: no wave needs it.
-- A `community_missions` option keeps every community mission out of a run in
-  one line, instead of naming each in `excluded_missions`.
-- Thirty community missions that play on a Valve map are on the lists. Every
-  mission in the catalogue named one of its own community maps, so Moonlight's
-  Trouble in Mann Town on Coaltown and Manntenance on Mannworks were in the
-  downloaded assets and on no list. They need their pack for the population
-  file and nothing else. A run that keeps every mission draws from 112 at the
-  normal floor instead of 82, and the defaults do not move: community missions
-  still start excluded. Reported by Glitch.
-- Community missions can name a server mod they need. The Docker image carries
-  SigMod and loads it with `SRCDS_MODS=sigsegv-mvm`; the seed's `server_mods`
-  option draws those missions only for a server that has it. The Windows
-  launcher shows them locked: SigMod has no Windows build.
-- Wicked Wizardry and Fiefdom Fiasco on Frostwynd are Medieval missions: the
-  map keeps only melee and medieval-era weapons, so most weapon slot unlocks do
-  nothing there. The launcher says so where you pick missions for the pool,
-  where you choose the starting mission, and on the session list, so a run
-  does not walk into one by surprise. By kelly-cs.
-- A server that restarts goes back to the wave the team had reached. The bridge
-  writes the wave down as checks come in, and the plugin reloads the mission and
-  jumps forward, never back, when the server comes up again. A crash cost the
-  team every wave it had cleared.
-- A run that crossed the 1.10 upgrade had every mission it had cleared read as
-  "collected", and a missionsanity goal counted none of them. The old state file
-  could not say which checks were yours, and they all were. kelly-cs's run.
-- The bridge no longer drops the room every second in a multiworld with many
-  games. It asked for every game's item names at once and the reply was too big
-  to read, so nothing you checked ever reached the room. EMann's bundle showed
-  it fifty-nine times.
-- Test mode draws its missions at random from the pool, the way a real seed
-  does. It took the first ones in the settings list, which looked like a
-  randomizer that does not randomize.
-
-### Weapon buffs
-
-- The run's buffs are yours and not the station's. Refunding an upgrade used to
-  take them, and they came back as purchased, infinitely refundable upgrade
-  levels that stacked again on each refund. They are held apart from MvM's
-  shopping now and survive refunds, wave transitions and loadout changes.
-- The upgrade station no longer opens the buff window by itself. That window
-  took the number keys, which are your weapon slots, for twenty seconds. The
-  station lists your loadout's buffs in chat, and `!ap buffs` opens the window
-  when you want it.
-- Explode on ignite is gone from the pool: on a minigun it ended a wave on its
-  own.
-- Über on hit is a Medic buff. It used to be offered on mediguns only, which
-  never land a hit, so it did nothing wherever it fell. It is on his syringe
-  guns, his saws and the Crusader's Crossbow now: 1% a syringe, because they
-  land far faster, and 5% everywhere else.
-- Ninety-six buff and weapon pairs that did nothing are out of the pool, from
-  Cowser's sheet: accuracy on weapons with no spread, reload and clip buffs on
-  weapons with no clip, kill buffs on the two jumpers, fire rate on sniper
-  rifles, and the like. Existing seeds keep their ids.
-- Eight pairs came in from the same sheet. A thrown jar counts as a hit, so
-  Jarate and Mad Milk draw ignite and heal on hit. The Gas Passer never fires
-  and still gets kills through its afterburn, so it draws the on-kill buffs.
-- Projectile penetration is no longer offered on explosives: a rocket that
-  penetrates does not explode where it was aimed. Armor piercing is a knife buff
-  only, since the game reads it on backstabs and nowhere else.
-- Bleed lands one stack per enemy instead of one per hit, which made a syringe
-  gun a wave-ender. Melee fire rate stops at +50%: past it the swing outran its
-  own animation and hit nothing.
-- "No self-inflicted blast damage" and rocket-jump protection work on rocket,
-  grenade and stickybomb launchers, and zero self-damage keeps the explosion and
-  the blast-jump push. The game reads both on the player, not the weapon, so the
-  buff on the weapon never reached them.
-- Bleed, milk, Jarate and the marks land on a direct hit with the jar itself.
-- A locked weapon slot takes the wearable in it too. A Demoman with a locked
-  secondary charged with a shield, and one with a locked primary kept the boots
-  and held nothing. Gunboats, Mantreads, the Razorback and the other
-  slot-filling wearables follow the same rule.
-- Linux servers get the extra arrows and flares. The projectile-count fanout had
-  Windows gamedata only, so a Docker server logged both fanouts disabled and
-  every extra bolt was a plain clone.
-- Extra Crusader's Crossbow bolts heal. The fanout built them as plain arrows,
-  which hurt a robot and do nothing for a teammate. They now come off the game's
-  own arrow factory with their launcher set, so a bolt that reaches a teammate
-  heals him, penetration carries over, and the weapon still fires one sound
-  however many bolts leave it. By kelly-cs.
-- Heal on hit and speed boost on hit work on Jarate and Mad Milk. The game
-  reads both off a weapon attack, and a jar splash is not one, so a soaked
-  robot gave the thrower nothing. The plugin pays them now, once per soaked
-  enemy.
-- The on-kill buffs credit the weapon that killed, not the one in hand. A robot
-  that burned down after the Pyro put the Gas Passer away paid the flamethrower's
-  buffs, or nothing.
-- `sm_ap_buff_slot` puts a test buff on a holstered weapon, a shield or a
-  watch, and `tf2ap_buffs_for_defender_bots` lets the bots carry the run's
-  buffs so a buff can be measured on a server with no player.
-- Movement speed, jump height and health regeneration are passive. They used to
-  work only while the weapon that carried them was out, which is not how MvM's
-  own class upgrades read; a Scout who rolls movement speed on his bat is faster
-  with the scattergun in his hands too, and two weapons carrying the same buff
-  add up.
-- Recharge speed is off the Gas Passer. It fills the item meter and the buff
-  scales the effect bar, which is a different meter, so it never reached it.
-- The Flying Guillotine no longer draws clip size, reserve ammo or reload speed.
-  It recharges, so it holds no rounds for any of them to act on.
-- A server where no buff applies at all says why in its log. The plugin hangs
-  the buffs off an attribute provider it attaches through VScript, because
-  TF2Utils' equip offset is stale on current Windows TF2, and a server with no
-  VScript VM refuses that input. The refusal was dropped and came back a step
-  later as the provider not providing attributes, which is a symptom no debug
-  bundle could explain. Nine of those lines in four minutes sat behind Likai's
-  screenshot.
-
-### Balancing
-
-- Robot health scaling works, and holds. Setting it above 100% left the robots
-  at the mission's health and setting it below moved nothing: the number was
-  written somewhere the game recomputes a moment later. It is a straight
-  multiplier now, 10% to 1000%, applied after the game finishes building the
-  robot, read back, and the server log says what each robot ended up worth.
-
-### Getting a server up
-
-- The server hands out maps over HTTP from the machine it runs on, so a friend
-  joining without a community map downloads it instead of watching Transmission
-  reach the end and start over. On the local network there is nothing to set up.
-  A friend joining from outside needs the download port forwarded and your
-  public address in `SRCDS_DOWNLOADURL`, or a Tailscale Funnel: the launcher
-  publishes the download through it when you have one, on Windows and Linux and
-  with the Compose stack. Without either they fall back to the old transfer.
-- The launcher says in its log when a newer release is out, with the link. It
-  still does not replace itself: download the new exe and run it.
-- A server whose Metamod or SourceMod went missing is repaired on the next start
-  instead of playing stock Mann vs Machine with every setting ignored, and a
-  debug bundle says so when it happened.
-- The Docker server plays the randomiser again. The image shipped without the
-  plugin's gamedata, so the plugin refused to load and the server came up as
-  plain Mann vs Machine with nothing saying so.
-- The Docker server writes its player file with the same code as the launcher,
-  so both carry the reward importance options and the same defaults.
-  `MVM_COMMUNITY_MISSIONS` reaches the launcher's settings too.
-- The game server starts with `-debug`, so a crash leaves a stack in
-  `debug.log` even when Breakpad never started, and the bundle carries it. Two
-  bundles arrived with an access violation and nothing naming the function.
-- A debug bundle only carries the game server's own crash dumps, not every
-  program's on the machine. Two bundles carried GameBar and a Tony Hawk game.
-- The community mission installer skips the missions a pack cannot support.
-
-### The launcher
-
-- An **Unlocks** tab, window and terminal, lists what the multiworld has handed
-  the run: classes, weapon slots, missions and weapon buffs, with the level a
-  repeated buff reached.
-- The install folder is a setting, with Browse beside it, instead of a choice
-  the installer screen made once and never offered again. Changing it does not
-  move what is already downloaded, and the help says so.
-- **Show the settings file** opens the folder holding `config.json`, which is
-  under the OS config directory and not in the install folder. Two players went
-  looking for it in the install folder, found nothing, and concluded that
-  nothing had saved.
-- A Save that is refused says so where you are looking: a message box, and the
-  page holding the reason. A refusal used to be a small label beside a box on
-  another tab, so a player could set a login token three times over while the
-  room address two pages away was what stopped every one of them. Every refusal
-  is in the log now as well, so a debug bundle carries it.
-- A failed write keeps the screen up with your answers on it and names the path
-  it could not write.
-- Save asks the room whether it is listening, and says which of "live", "not
-  there" or "did not answer" it got. None of the three refuses the save: a room
-  you have not made yet is not a mistake. Start used to be where you found out,
-  with "AP_PORT is not set", and one player spent seventeen minutes on that.
-- The mission count you may ask for is the number the seed can actually draw.
-  The ceiling counted every mission in the catalogue, including the community
-  ones a fresh settings file leaves out and any needing a server mod you do not
-  load, so the tier rows offered 82 missions at the normal floor where the run
-  held 29. Both numbers now count what the generator counts, and the generator
-  says in its log when the pool is smaller than the ask. Reported by [-SAM-].
-- The settings window is laid out like a settings window again. Moving the rows
-  into one declaration flattened it: the Bots page became one list of
-  thirty-nine rows where it had been four sub-tabs, every button took a line
-  with its own name in the label column beside it, Debug logs, Repair and Reset
-  settings left the bottom bar for a page, and a page of three settings spread
-  its rows down the window instead of leaving the space at the bottom. The
-  window nests, groups and lays out again: Bots holds Team, Classes, Looks and
-  Loadouts; the seats and the classes sit two to a line; buttons share a line;
-  numbers are the width of a number rather than of the window; and the three
-  buttons that are about the launcher are along the bottom where they were.
-- SourceMod's one automatic restart waits for the settings window to close. The
-  updater fetches gamedata and asks for a restart whenever it likes, so the
-  server came round in the middle of an edit and looked like the edit had done
-  it: Sirknobbles reported changing the bot team as restarting the server, but
-  only when the window had been open long enough. A save that restarts anyway
-  loads the new gamedata itself.
-- A save restarts the server only for a setting the server reads at startup.
-  Saving a mission count ended the mission the team was four waves into and
-  brought the server back exactly as it was. A **Restart on save** tick sits
-  beside Save and shows only when what is on screen would need one, never with
-  the server down, so a lineup changed between waves costs the run nothing.
-  Reported by Likai.
-- A run of nothing but community missions has missions again. The community
-  switch was absent from every settings file written before the option existed,
-  so it loaded as off, and no screen had a row to turn it back on once it was
-  the field that empties the pool. It has one on the Missions page, and a
-  community mission's Compatibility column reads "community missions are off"
-  while the switch is, so the table stops looking full over an empty pool.
-  Reported by Peppy.
-- A run selection the launcher refuses is reported as refused. The button
-  dropped the error naming the empty pool and printed "Selection is valid: 0
-  eligible mission(s) provide 0 checks for 0 unlocks" over it. From Peppy's
-  screenshot.
-- The mission table sorts on its headers, and a row it was told about redraws.
-  The "In the pool" column kept its old answer until the mouse passed over the
-  line, and a tick the launcher had refused was drawn as taken. The headers
-  looked pressable and did nothing, which with eighty-five missions makes
-  finding one a nightmare. The table opens sorted by mission name. Reported by
-  EZKSupernova.
-- The settings window opens on a number saved outside the bounds it has now.
-  The mission pool can shrink under a count already saved, and the window
-  refuses to build at all for one number box starting outside its range, so
-  nothing opened. The stale value sits on the nearest bound, where you can see
-  it and save it. By kelly-cs.
-- Terminal tabs that list more than fits scroll, and the last line counts what
-  is off the screen. The Unlocks and Bot Switcher lists were cut at the body
-  height and said nothing about the rest.
-- `-web` opts into an experimental browser interface, the same screens on
-  Windows and Linux, served on loopback by the launcher itself. The window and
-  the terminal interface stay the defaults until a later cutover. By kelly-cs.
-
-### The bots
-
-The mod moves from 2.39.0 to 2.52.3.
-
-- The medic answers a player who calls for him. A human pressed the call and
-  the bot medic carried on healing whichever bot it had picked; reported by
-  Cowser and by Peppy. Measured with a stand-in player calling on Decoy: the
-  caller held the beam up to a quarter of the time against 2% before, every
-  wave cleared either way.
-- The engineer's break is a plan, not a walk. Every engineer claims his four
-  spots before anybody moves, jumps to each rather than walking, and never
-  builds on another engineer's ground. On Decoy with two engineers the
-  teleporter entrance stands at 21 to 30 seconds of the break against 37 to 45,
-  and the exit at 26 to 38 against 50 to 58. The cost is on the record: the
-  wrench is what applies a level, and an engineer who jumps swings it less, so
-  the sentry sits at level three in 76% of samples rather than 85%.
-- Two engineers who pick the same nest no longer land inside each other. The
-  sentry was the one building whose jump onto its spot skipped the check for
-  room to stand, so a pair holding one nest were put on the same coordinate and
-  neither could move until the stuck recovery threw one of them out. Reported by
-  Cowser on Mannworks, where five engineers share four nest spots and the pair
-  spent the whole break wedged with no sentry between them.
-- A teleporter exit puts you down on a side with ground beside it. The exit
-  ring never looked down, so a player taking the teleporter could land where the
-  engineer never stood.
-- A bot's loadout slot is emptied only for an item the game can give. A Heavy
-  joined RED on Rottenburg with no weapon at all.
-- Halloween cosmetics are out of the bots' hat pool. The game refuses to attach
-  a holiday item out of season, and the refusal threw an error that cost the
-  bot the rest of its cosmetics.
-- A bot moved out of spawn is put where a standing player fits. The recovery
-  teleported onto anything and asked for a route in the same tick.
-- Five map spots stand on the ground. Four nest and dispenser spots on
-  Mannhattan and Mannworks sat in holes beside the mesh, and Rottenburg's fourth
-  sniper spot was written 213 units above it, so every side was refused.
-- A bot taking a seat no longer inherits the last bot's answers: the health,
-  ammo and revive searches around where the previous bot stood cleared with the
-  seat, so a new bot stops walking to a pack it cannot reach.
-- The server no longer crashes on a map change after a custom loadout file
-  was loaded. Two handles the mod had closed were read back after the change.
-- The final wave's send-off is a taunt. The last wave neither danced nor
-  kicked.
-
-Bigrock's rock-top nest and teleporter spots are still built at the foot of the
-rock: the engineer cannot climb, and the building goes where he stands. Open.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* fix(plugin): isolate Archipelago buffs from MvM upgrades / fix a refund bug related to it by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/7
-* fix(ci): clear baseline Go checks by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/14
-* fix(bridge): fix checks not sending to the archipelago server / retry without needing to restart server by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/11
-* fix(installer): filter unsupported community missions by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/10
-* feat(bots): scale robot maximum health by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/13
-* fix(plugin): apply substance buffs correctly w/ all weapons  by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/9
-* fix(plugin): restore active weapon health regeneration by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/8
-* fix(bots): take the robot health fix from the module, not from a patch by @m-this in https://github.com/m-this/tf2-archipelago/pull/29
-* feat(community): let a mission require a server mod by @m-this in https://github.com/m-this/tf2-archipelago/pull/28
-* feat(server): FastDL from the machine that runs the game by @m-this in https://github.com/m-this/tf2-archipelago/pull/27
-* fix(plugin): preserve self-blast jumps and explosions by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/31
-* feat(launcher): publish FastDL with Tailscale Funnel by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/30
-* feat(launcher): label medieval-loadout missions by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/12
-* fix(plugin): heal teammates with extra Crossbow bolts by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/34
-* fix(plugin): make ammo on hit reliable by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/35
-* feat(plugin): add stomp weapon buffs by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/36
-* fix(plugin): apply stomp kill effects by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/37
-* fix(plugin): extend projectile destruction to guns by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/38
-* Fix settings dialog with stale numeric values by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/40
-* feat(launcher): add an opt-in embedded web interface by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/41
-* test(launcher): cover community missions on Valve maps by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/43
-* feat(webui): sort mission table columns by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/44
-
-## New Contributors
-* @m-this made their first contribution in https://github.com/m-this/tf2-archipelago/pull/29
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.10.0...v1.12.0
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/OGJiMjdjZDI0YzM0ZDI5NWEzMGRiODNhMjBmY2E4ZDE6MTc4ODk4NzI3Ng==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/NDNkNTk4MmI3MjA3YTg0YTEzOGQ0MDAwNTQxNzcxZjE6MTc4ODk4NzI4MA==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.12.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/nepcore/RwbyAP/releases/tag/v0.2.1</id>
-    <title>RWBY Grimm Eclipse v0.2.1</title>
-    <updated>2026-09-09T21:38:39+00:00</updated>
-    <author>
-      <name>nepcore</name>
-    </author>
-    <content>* Added support for online co-op&#13;
-* Added death link&#13;
-* Added an option to change how many characters are unlocked at the start&#13;
-* Added an option to randomize the starting chapter&#13;
-* Make the in game chat able to send messages and commands to the AP server (prefix what you want to send to AP with a `!`, e.g. `!!hint Artifact`)&#13;
-* Fixed an issue that caused some locations and items to not properly be excluded from generation if some characters are excluded</content>
-    <link href="https://github.com/nepcore/RwbyAP/releases/tag/v0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/NathanW001/BTTHArchipelago/releases/tag/0.1.02</id>
-    <title>Bat to the Heavens v0.1.2</title>
-    <updated>2026-09-09T22:08:58+00:00</updated>
-    <author>
-      <name>NathanW001</name>
-    </author>
-    <content>### v0.1.02: a bit of an emergency patch, nothing new&#13;
-&#13;
-&#13;
-- Fixed a critical issue with DataPacks for games overloading the websocket and crashing the connection&#13;
-- Fixed a bug with the way that the game checks for checkpoint completion with All Checkpoints goal&#13;
-- Fixed an issue with focus being lost on the main menu when pressing ESC or hitting back on the Archipelago connection menu&#13;
-- No changes have been made to the APWorld or yaml, just client fixes</content>
-    <link href="https://github.com/NathanW001/BTTHArchipelago/releases/tag/0.1.02"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zorasknight/YakLaDGaiRando/releases/tag/Beta2</id>
-    <title>Yakuza Gaiden v0.6.0r2</title>
-    <updated>2026-09-09T22:31:18+00:00</updated>
-    <author>
-      <name>Zorasknight</name>
-    </author>
-    <content>### Hotfix 1: Fixed Progressive Wires failing to send due to outdated progressive_items.json&#13;
-### Hotfix 2: Adds proper Compression, color codes commands in terminal, cleans up terminal text &#13;
-&#13;
-## Update notes, and goals for the next build&#13;
-&#13;
-First a small aside, I name the builds based all around the myth of the carp climbing the waterfall to become a dragon, because c'mon this is a yakuza randomizer! We started with varieties of fish pre AP integration, then moved to monstrous fish, or dragon fish, since. And on release will likely move to dragon names! This one is named Akuru, which is named after a massive sea monster fish that could eat boats, symbolizing how crazy the bloat became on this build, as it truly became monstrous!&#13;
-&#13;
-Massive release, likely to be met with massive bugs, I swear the next builds will be smaller, and more focused on optimizations and bug fixes over new features, rather than waiting till the next massive feature release before fixing small issues. &#13;
-&#13;
-This build focuses on Akame tasks, logic changes, bug fixes, and some new features tied to requests from the awesome beta testing you all have done!&#13;
-&#13;
-The goal with the following major release will be focused on clean up and QoL features over new content. So consider this the "Last Main Feature" build for adding checks and complex features for at least some chunk of time. The goal for 0.8.0 is to look into trackers, visual displays of items when received, optimizations and code cleanup, and maybe some fun features like deathlink if time allows. And set us up well for the final pre 1.0.0 release which would mark my satisfaction and completion with the randomizer. &#13;
-&#13;
-To clarify, there will likely be a handful of post 1.0.0 changes as you would expect, or as I come up with new ideas. But that's when I can consider it at least "finished" for what that's worth. And that's still quite a ways away. &#13;
-&#13;
-That being said, there's no better time to play then now! Every build gets a bit more efficient, clean, and fun. So like always, if you test it out and have an issue, please reach out to me either through discord, submitting an issue through Github, or make a post on the AP Afterdark page for Gaiden.&#13;
-&#13;
-Anyway, here are the patch notes!&#13;
-&#13;
-## Yakuza Gaiden randomizer Version 0.7.0 (Akuru)&#13;
-&#13;
-- Akame Tasks now give checks! This can be adjusted using options to remove individual types of Akame Tasks if you want to avoid certain ones. Akame Tasks are split between:&#13;
-1. Fetch: Tasks where you must provide an item to the person&#13;
-3. Trial: Tasks where you must perform well at a certain game, or navigate and do some unique action&#13;
-4. Photo: Tasks where you take a photograph of the requested item&#13;
-5. Combat: Tasks where you defend the recipient or open an area blocked off to you&#13;
-6. Outift: Tasks where Kiryu must dress the part to receive the reward&#13;
-&#13;
-- Story moments now also present checks. Defeating notable fights, or completing a dungeon will provide a check to the player now to incentivize progression more than just as a way to finish the game. More of these may be added/deactivated per testing.&#13;
-- Hints have been added to shops and Akame Tasks. Purchasing an item from a store will hint the store for later quick reference, examining an Akame Task in the city that you cannot finish from just talking to them, will also hint that item to help you know if its worth pursuing. This feature has not been extensively tested, so please let me know if any locations fail to hint when you do not have the item in your inventory!&#13;
-- Pocket Circuit cars now contain 5 checks when acquired! This causes each pocket circuit car to be MUCH more valuable as a key item, as each on may contain the crucial parts you may need to finish your races! the remaining parts are still scattered across the worlds so this merely cuts down the amount of pocket circuit parts spread between worlds.&#13;
-- New goals and wincons. Added Defeat Shishido, and Defeat Pocket Circuit Owner Rival Race to the goal list alongside the existing Golden ball wincons. Multiple wincons can now be set at once! and all goals will need to be met to send the goal complete alert, this also has full go mode support too to let you know when its time!&#13;
-- Substories have checks! Completing a Substory now gives 1 check. Currently this is all but the Amon sub story, or the colosseum specific ones with the Kings.&#13;
-- Progressive wires now go up to the max possible in each region, in case you wanted to do just that!&#13;
-- All wires have been (likely) found! Giving us a total of 39 sotenbori, 29 Yokohama, and 19 colosseum&#13;
-- Clothing prices have been removed, all cosmetics are now free, requiring just the item to be sent to you, let those toes out without dropping 1 million yen!&#13;
-- South Poppo has been renamed to West Poppo to avoid confusion, Park Poppo remains as such&#13;
-- Your unique seed is actually unique now. Before if two Gaidens were in the same multiworld, all equipment would randomize the same stats + abilities. This has been changed to a per slot version of the seed now to avoid this hiccup.&#13;
-- swap invalid setting for YAML. If settings are invalid we now have backend validations in place to clean up and fix the yaml before run time. This should fix all min/max problems people were running into, and more importantly allow you to randomize all settings!&#13;
-- Shop keys are now separated into Shop Key and Minigame Key options. This allows you to lock one but not the other if preferred!&#13;
-- Unused key items are removed from the pool (for sure this time), for example if shop keys are on, but consumable shops are off, the consumable shop keys will not be included.&#13;
-- Shigano gains more checks... kind of? Shigano now contains a handful of infinite purchasable items that are required for Akame Tasks, and Akame Fetch tasks are only in logic if Shigano is open to purchase. The randomizer *should* give you the items you need within the pool, but this is a catch all to prevent those emergency bento boxes softlocking you.&#13;
-- Many bug fixes to edge case scenarios for saving and loading with AP items being sent.&#13;
-- Akame should no longer remove your shop keys if given a smoke&#13;
-- Multiple Prompt and console changes to hopefully clear up any confusion (for example /slot is now allowed alongside slot, there will likely be even more changes coming).</content>
-    <link href="https://github.com/zorasknight/YakLaDGaiRando/releases/tag/Beta2"/>
-  </entry>
   <entry>
     <id>https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.3</id>
     <title>Wynncraft v0.4.3</title>
@@ -687,7 +71,7 @@ The implementation now has proper [documentation](https://github.com/SerpentAI/A
   </entry>
   <entry>
     <id>https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3</id>
-    <title>Age Of Empires II: Definitive Edition v0.0.1r2</title>
+    <title>Age Of Empires II: Definitive Edition v0.0.1r3</title>
     <updated>2026-09-10T02:36:50+00:00</updated>
     <author>
       <name>dmwever</name>
@@ -724,7 +108,7 @@ Should still be fully compatible with releases going back to 0.2.0.&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3</id>
-    <title>ARK Survival Evolved v1.0.0r2</title>
+    <title>ARK Survival Evolved v1.0.0r5</title>
     <updated>2026-09-10T03:23:40+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1716,6 +1100,24 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archip
     <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.10"/>
   </entry>
   <entry>
+    <id>https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.0</id>
+    <title>Neon White v0.1.0</title>
+    <updated>2026-09-12T11:22:49+00:00</updated>
+    <author>
+      <name>Badhamknibbs</name>
+    </author>
+    <author>
+      <name>stxticOVFL</name>
+    </author>
+    <content>*Looking for the Neon White mod? Find it [here!](https://github.com/stxticOVFL/NWArchipelagoMod/releases/latest)*&#13;
+*Compatible with v0.1.x of the NWArchipelago mod.*&#13;
+&#13;
+## Initial formal release for the Neon White Archipelago!&#13;
+&#13;
+### **Check the [game info](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/en_NeonWhite.md) and [complete setup guide!](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/setup_en.md)**</content>
+    <link href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/niieli/Niko-Archipelago/releases/tag/0.8.5</id>
     <title>Here Comes Niko! v0.8.5</title>
     <updated>2026-09-12T12:19:26+00:00</updated>
@@ -1858,39 +1260,6 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archip
     <link href="https://github.com/niieli/Niko-Archipelago/releases/tag/0.8.5"/>
   </entry>
   <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.13.0r2</title>
-    <updated>2026-09-12T13:07:28+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `4373c87024026e41846869f359a760c0d7eb36ac`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.13.0
-
-- feat: add static visual campaign tracker (#62)
-- feat(resume): a wave picker beside Play, and a mark kept per mission (#66)
-- fix(fastdl): advertise community wave icons (#72)
-- feat(launcher): unlock selected missions in test mode (#71)
-- fix(launcher): recover Steam relay address from console log (#70)
-- fix(launcher): name reward toggles plainly
-- chore(beads): triage of Discord and the issue tracker since 1.12 (#61)
-- fix(bridge): a format version mismatch says what to do about it (#60)
-- fix(launcher): the Grappling Hook can be turned on, and shows when it lands (#59)
-- fix(plugin): PLUGIN_VERSION says 1.13.0, like the apworld
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
     <id>https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/tag/2026.09.12</id>
     <title>Manual_WorldofWarcraftDungeons_Chakraa v2026.9.12</title>
     <updated>2026-09-12T14:35:28+00:00</updated>
@@ -1984,34 +1353,152 @@ Even after deletion, the "Open Patch" Workflow in AP currently still starts the 
     </author>
     <content># CTR Archipelago v0.2.1-alpha1
 
-Setup guide: [ap-pie.com](https://ap-pie.com/guides/ctr). Contributor/fallback instructions: [SETUP.md](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md), also included in the ZIP.
+This prerelease adds more ways to race Turbo Track and Slide Coliseum, brings Cortex Vortex to the Oxide 2 showdown, and fixes a few frustrating hub issues.
 
-Use the Windows ZIP and the included matching `ctr.apworld`. Follow the packaged SETUP.md. Supply your own game disc; no retail game assets or personal data are included.
+It is available for testing and feedback. **0.2.0 remains the latest stable release.**
 
-This is the tested Artemis doors1 baseline plus the shorter `Track: Got CTR letters` notification. Both sides now use compatibility 0.2.1 and build label 0.2.1-alpha1. Old development YAMLs explicitly requiring world 0.3.0 must be regenerated or have that requirement deliberately changed. Existing 0.3.0 rooms may show an informational update notice but are not rejected by the client. Baby T Park descriptor identity strings are preserved for existing seed matching.
+## Getting started
 
-## Changes and testing
+Download `ctr-archipelago-0.2.1-alpha1-windows-x86.zip` below. It includes the client and matching `ctr.apworld`; use both together when setting up a new game.
 
-- Turbo Track and Slide Coliseum now support Trophy Races and CTR Token Challenges, including lettersanity and standard Trophy position/podium checks. CTR Challenges and Relic Races do not emit Trophy podium checks, matching other tracks. Slide Coliseum visuals/podium checks are user-confirmed; equivalent Turbo Track visual/podium Steam confirmation remains pending.
-- Opened hub doors now stay open after reloading, and changing characters in hub tunnels no longer freezes the game. Both fixes were confirmed in Steam testing.
-- Turbo Track / Slide Coliseum minimap colors: user-reported working. Slide Coliseum letter translucency and podium checks also passed user testing; equivalent Turbo Track checks remain pending Steam confirmation.
-- Receipt-based letters-ready notification, including the hub, only in item-bearing lettersanity modes. Shorter wording passed automated checks; the new wording still needs Steam confirmation.
-- Cortex Vortex is bundled as the default Oxide 2 venue. The full Steam win flow is user-reported working after a successful loss-path test, without the previous crash/hang. This is acceptance of the tested filler-mode seed, not all final-venue/chaos combinations.
-- `oxide_1_optional` supports `mandatory`, `optional` and `filler` when Oxide 2 is the goal. `optional` allows direct final entry but can leave useful progression on Oxide 1. `filler` guarantees a filler-class item there; winning Oxide 2 collects the skipped Oxide 1 check as well. Other goals retain mandatory behavior.
-- Baby T Park's existing Purple Gem Cup replacement configuration remains available. This is not full generalized custom-track relic/CTR/lettersanity support.
+Follow the [CTR setup guide](https://ap-pie.com/guides/ctr) or the `SETUP.md` included in the ZIP. [Setup instructions are also available here](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md). You will need your own game disc; the download does not include the original game's assets.
 
-## Known limitations
+## What's new
 
-- Boss-race AP boxes can still appear behind a locked regular pad; that fix is not included.
-- Legacy 0.2.0 YAMLs with relic count `all` fail generation with this world. Replace `all` with numeric `18`. The supplied AppieCTR numeric-count settings generated successfully, defaulting Oxide 2 to Cortex Vortex.
-- No antivirus clearance, code signing, or stable-release acceptance is claimed. Checksums and exact split debug symbols are attached.
+- **Turbo Track and Slide Coliseum:** Both now support Trophy Races and CTR Challenges, including lettersanity and the same position/podium checks as other tracks. Their hub minimap colors now follow the usual rules, and letters you have not unlocked appear translucent. Trophy podium checks only count in Trophy Races, just like on other tracks.
+- **Cortex Vortex:** This custom track is included in the download and is now the default track for Oxide 2. The crash encountered during this race has been fixed.
+- **Optional Oxide 1:** If your goal is Oxide 2, you can now choose whether you need to beat Oxide 1 first. See the settings below.
+- **Hub doors:** Doors between hubs and the door to the Gem Cup room now stay open after reloading your game.
+- **Character changes:** Changing characters in the hub transition tunnels no longer freezes the game.
+- **CTR letters notification:** With lettersanity set to send letters as items, the event timeline tells you when you have received all the letters needed for a track's CTR Challenge. For example: `Dragon Mines: Got CTR letters`. It can appear while you are in the hub, and letters you have already picked up still count. It is a reminder that you can go collect the CTR Token, not an automatic Token reward.
+- **Baby T Park:** The existing option to use Baby T Park in the Purple Gem Cup is still supported. Full CTR Challenge, relic and lettersanity support across custom tracks is not included yet.
 
-## Source provenance
+## Choosing whether to race Oxide 1
 
-Frozen source: native `d3ad4f05bb4121132d3b4906c7a20e03818d8cdb`, world `e3f62816673f6fd810329f44ed4ac135c3c67b64`, on paired `v0.2.1-alpha1` tags. Native advances the tested `5b91f603c` freeze by one test-extraction boundary correction only; no runtime source changed. Source provenance is recorded in the ZIP's BUILD.json, with maintainer archives preserved separately. Hosted world tests, native tests, and Windows and Linux client builds all passed. Main branches and Artemis were not changed by release publication preparation.
+Set `oxide_1_optional` in your YAML when your goal is Oxide 2:
 
-Fresh Windows build, native 64-harness gate, independent identity review and exact AppieCTR generation pass. Full world suite: 1522 passed, one skipped, 8407 subtests passed. Packed-world matrix: 17000 schedules across sixteen arms, 3994 successful generations and 13006 intentionally ignored, zero failures/timeouts. The corrected client is active in Artemis Testing. Existing room/save bytes were not rewritten; selecting the old room in the server chooser restores its registered archived 0.3.0 world. New Testing generation uses the corrected 0.2.1 world.
+- `mandatory`: Beat Oxide 1 before you can race Oxide 2. This is the default.
+- `optional`: You can race Oxide 2 as soon as its other requirements are met. Oxide 1 can still hold an item you need, so skipping it is not always practical.
+- `filler`: You can skip Oxide 1, and its reward is guaranteed to be filler rather than progression. Winning Oxide 2 also collects the skipped Oxide 1 location.
+
+For goals other than Oxide 2, Oxide 1 keeps its normal required behavior.
+
+## Before you play
+
+- **Older YAMLs:** The tested 0.2.0 settings with numeric relic counts generate successfully, with Cortex Vortex as the default Oxide 2 track. If a relic-count setting uses `all`, replace it with `18`; `all` currently causes generation to fail.
+- **Development seeds:** YAMLs explicitly requiring world version `0.3.0` need updating or regenerating for this `0.2.1` world. Existing development rooms may show a version notice without the client refusing the connection. Keep the apworld used to generate an existing room for its server and Universal Tracker.
+- **Known boss-box issue:** AP boxes can still appear in boss races when the track's regular warp pad is locked. This release does not fix that issue.
+- **Still being tested:** Hub doors, tunnel character changes, both tracks' minimap colors, Slide Coliseum letters/podium checks, and a complete Cortex Vortex Oxide 2 race have been confirmed in Steam testing. Turbo Track's letters/podium checks, the shorter notification text, and other Oxide 2 track/chaos combinations still need gameplay confirmation.
+
+If you find a problem, please report it through the repository's Issues tab with your client version, YAML, what happened, and `ctr-ap.log`.
+
+## Downloads and technical details
+
+The ZIP is the main player download. The separate `ctr.apworld` and YAML are provided for convenience. `.sha256` files let you check that downloads are intact; the `.debug` file is for diagnosing crashes and is not needed to play. The client is not code-signed, and no antivirus clearance is claimed.
+
+Both the client and apworld use compatibility version **0.2.1**, with build label **0.2.1-alpha1**. Automated world tests, native tests, and Windows/Linux builds all passed. The world tests include 1,522 passing tests and a 17,000-run generation matrix with no failures or timeouts.
+
+Source is tagged `v0.2.1-alpha1` in both repositories. Exact source revisions are recorded in the ZIP's `BUILD.json`.
 </content>
     <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.1-alpha1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/palex00/Archipelago/releases/tag/logic-test-0.3.1</id>
+    <title>Logic Test v0.3.1</title>
+    <updated>2026-09-12T18:19:53+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <author>
+      <name>palex00</name>
+    </author>
+    <content>Fixes generation crashing on current Archipelago main, which removed `per_slot_randoms` ([#6186](https://github.com/ArchipelagoMW/Archipelago/pull/6186)). No logic changes; 0.3.0 seeds remain valid.</content>
+    <link href="https://github.com/palex00/Archipelago/releases/tag/logic-test-0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.2.0</id>
+    <title>Peggle Deluxe v2.2.0</title>
+    <updated>2026-09-12T19:12:25+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is a feature release that also includes a fix.&#13;
+&#13;
+**This release IS compatible with games generated on the previous version (2.1.0)**&#13;
+&#13;
+- **Feature:** Added in / out of logic location counts under each level image in the Levels section of the custom client tab. Requires Universal Tracker to be installed&#13;
+- **Feature:** The section of the custom client tab showing information about the current level now lists what locations are accessible in / out of logic. Requires Universal Tracker to be installed&#13;
+- **Fix:** Added an extra guard around the detection of Fever Meter Full location checks&#13;
+&#13;
+If the Universal Tracker APWorld cannot be not found, the custom client tab will simply not display this new information.&#13;
+&#13;
+&lt;img width="697" height="642" alt="image" src="https://github.com/user-attachments/assets/f2ba7b28-39a8-4ab6-a76f-963f52a36ac7" /&gt;&#13;
+&lt;img width="768" height="356" alt="image" src="https://github.com/user-attachments/assets/5300faf4-7a7e-4107-9a5b-83e80f95f2f2" /&gt;&#13;
+</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nepcore/RwbyAP/releases/tag/v0.2.2</id>
+    <title>RWBY Grimm Eclipse v0.2.2</title>
+    <updated>2026-09-12T21:22:07+00:00</updated>
+    <author>
+      <name>nepcore</name>
+    </author>
+    <content>* Added a way to switch the open path in levels with a split path (after clearing the level once press F1 or left on the D-pad on subsequent visits)&#13;
+* Added a new goal condition requiring a certain amount of levels to be cleared (optional, can also be used in combination with artifacts)&#13;
+* Made UT sort the tracker list based on the order checks are found within their level by default instead of alphabetic sorting</content>
+    <link href="https://github.com/nepcore/RwbyAP/releases/tag/v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.37</id>
+    <title>Mental Omega v1.37</title>
+    <updated>2026-09-12T22:07:23+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Add Powers to shopmode (Perma Unlocks)&#13;
+- Fix yaml structure for Archipelago&#13;
+- Fix Popup for Shoprun (only shows once now)&#13;
+- Adjust UI and Namping in Shopmode&#13;
+- Adjust wording in Shopmode</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.37"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.13.0r2</title>
+    <updated>2026-09-12T22:43:49+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `771c4fb18b919381854759cb4c52c55172539cdf`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.13.0
+
+- chore(beads): triage Discord and the tracker, and open the SigMod port
+- Add SigMod community missions (for linux) (#73)
+- fix: merge equivalent weapon buff pools (#77)
+- Fix buffs for decorated weapons and functional reskins (#78)
+- chore(bots): pin v0.15.0 and drop the pin guard (#76)
+- feat: add static visual campaign tracker (#62)
+- feat(resume): a wave picker beside Play, and a mark kept per mission (#66)
+- fix(fastdl): advertise community wave icons (#72)
+- feat(launcher): unlock selected missions in test mode (#71)
+- fix(launcher): recover Steam relay address from console log (#70)
+- fix(launcher): name reward toggles plainly
+- chore(beads): triage of Discord and the issue tracker since 1.12 (#61)
+- fix(bridge): a format version mismatch says what to do about it (#60)
+- fix(launcher): the Grappling Hook can be turned on, and shows when it lands (#59)
+- fix(plugin): PLUGIN_VERSION says 1.13.0, like the apworld
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
 </feed>

@@ -21,4 +21,4 @@
 2. In the main menu select the `Archipelago` entry
 3. Enter the connection info and press the `Connect` button
 
-**Note:** The mod currently isn't expected to work correctly with online co-op
+To play co-op with others simply have all players connect to the same Archipelago slot.
