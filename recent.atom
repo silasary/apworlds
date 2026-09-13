@@ -2,63 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-13T06:19:04.599534+00:00</updated>
+  <updated>2026-09-13T12:20:54.215623+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.0.0</id>
-    <title>Peggle Deluxe v2.0.0</title>
-    <updated>2026-09-09T23:57:32+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is a major feature release that also includes improvements.&#13;
-&#13;
-**This release is NOT compatible with games generated on the previous version.**&#13;
-&#13;
-- **Feature:** In-Game Level Locking&#13;
-- **Feature:** In-Game Master Locking&#13;
-- **Feature:** Progressive Fever Meter Threshold items have been completely replaced by level-specific Progressive Orange Pegs items, leading to more interesting and layered progression, as well as requiring a bit more skill for the early game phase&#13;
-- **Feature:** Fever mode no longer starts upon hitting the last orange peg when you have less than 25 orange pegs on a given level which should lessen confusion around level clear locations, as well as allowing easier chasing of full clears&#13;
-- **Feature:** Purple Pegs are now unlockable by level&#13;
-- **Feature:** Each Peggle Master now has their own set of Progressive Green Pegs items, creating opportunities for suboptimal masters to now be optimal to play under certain circumstances&#13;
-- **Improvement:** Starting level count increased from 1 to 3&#13;
-- **Improvement:** Starting ball count is now set through a custom code patch instead of directly setting the memory value, meaning that the Ball-O-Tron will now always display the correct amount of balls&#13;
-- **Improvement:** Getting the required quantity of Gold Pegs is now all that's needed to access and clear the final level. No extra items to chase&#13;
-- **Improvement:** Added 3 extra copies of Progressive Starting Ball Increase and 1 extra copy of each Progressive Orange Pegs variant to allow for less restrictive progression and reaching the cap faster&#13;
-- **Improvement:** Slightly reworked logic, mainly around fever meter multipliers&#13;
-- **Improvement:** Custom client tab has been updated to reflect the new features&#13;
-&#13;
-_No new YAML options. Minimum level count is now 15 to make room for all the new items_&#13;
-&#13;
-The implementation now has proper [documentation](https://github.com/SerpentAI/Archipelago/blob/peggle/worlds/peggle_deluxe/docs/en_Peggle_Deluxe.md) and a [setup guide](https://github.com/SerpentAI/Archipelago/blob/peggle/worlds/peggle_deluxe/docs/setup_en.md)&#13;
-&#13;
-&lt;img width="781" height="594" alt="image" src="https://github.com/user-attachments/assets/64a29124-404c-49af-abb1-1e7909d17546" /&gt;&#13;
-&lt;img width="790" height="599" alt="Screenshot 2026-09-07 190657" src="https://github.com/user-attachments/assets/dbcb4d7e-ebc7-421e-9cff-57ac98057232" /&gt;&#13;
-&lt;img width="409" height="478" alt="Screenshot 2026-09-07 234852" src="https://github.com/user-attachments/assets/f58ad53d-e67d-4139-92fe-175bb744861e" /&gt;</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v1.0.0</id>
-    <title>pokemon_stadium v1.0.0</title>
-    <updated>2026-09-10T01:08:36+00:00</updated>
-    <author>
-      <name>jciii91</name>
-    </author>
-    <content>### Options Simplification &amp; Dynamic Box Upgrade Sizing&#13;
-- Options were complex and making development difficult. Simplified for now until users request more&#13;
-- Box Upgrade sizes go down if Trainersanity is on&#13;
-  - Reducing the box sizes allows for more boxes to be placed, reducing the amount of filler items&#13;
-&#13;
-### Bugfix - Enemy Health Being Misread&#13;
-- Enemy health is stored in 2 bytes, not 1. The client was only checking the 2nd of the 2 bytes</content>
-    <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
     <id>https://github.com/dmwever/Ageipelago/releases/tag/v0.2.3</id>
-    <title>Age Of Empires II: Definitive Edition v0.0.1r2</title>
+    <title>Age Of Empires II: Definitive Edition v0.0.1r3</title>
     <updated>2026-09-10T02:36:50+00:00</updated>
     <author>
       <name>dmwever</name>
@@ -95,7 +46,7 @@ Should still be fully compatible with releases going back to 0.2.0.&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3</id>
-    <title>ARK Survival Evolved v1.0.0r2</title>
+    <title>ARK Survival Evolved v1.0.0r5</title>
     <updated>2026-09-10T03:23:40+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1461,7 +1412,7 @@ If the Universal Tracker APWorld cannot be not found, the custom client tab will
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `771c4fb18b919381854759cb4c52c55172539cdf`.
+Built from `3a3724d25694992e8eabb8d815738720a9cd6fe5`.
 
 ## Downloads
 
@@ -1470,6 +1421,7 @@ Built from `771c4fb18b919381854759cb4c52c55172539cdf`.
 
 ## Since v1.13.0
 
+- fix(plugin): ignore self-damage for hostile buffs (#79)
 - chore(beads): triage Discord and the tracker, and open the SigMod port
 - Add SigMod community missions (for linux) (#73)
 - fix: merge equivalent weapon buff pools (#77)
@@ -1516,5 +1468,51 @@ Free hay actually works now. It gives you 25% of your current hay as a prize. It
 - Options have more description&#13;
 - More logic! Like bones require loops and stricter crop-randomization logic</content>
     <link href="https://github.com/seadoggie001/TFWR-APMod/releases/tag/v0.0.9-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.3</id>
+    <title>metal_hellsinger v1.1.3</title>
+    <updated>2026-09-13T09:18:05+00:00</updated>
+    <author>
+      <name>DanielSchaack</name>
+    </author>
+    <content># Metal: Hellsinger AP World v1.1.3&#13;
+Hotfix for both the AP World _and_ the client.&#13;
+**NOTE:** The client may not correctly display available locations for seeds generated on 1.1.0, 1.1.1 and 1.1.2, but is compatible with seeds generated on those.&#13;
+&#13;
+- [Metal: Hellsinger AP World](https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/latest)&#13;
+- [Metal: Hellsinger Randomizer Mod](https://github.com/DanielSchaack/Metal-Hellsinger-AP-Mod/releases/latest)&#13;
+- [Setup Guide](https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/blob/main/worlds/metal_hellsinger/docs/setup_en.md)&#13;
+&#13;
+## ADDED&#13;
+- A default-off option to include the Archdevil difficulty. A new YAML is not required, but Archdevil may not be included&#13;
+&#13;
+## FIXED&#13;
+- Ultimate Mastery Torments now always require atleast 2 ultimates of the torments' weapon. If weapons are required for the torments' unlock, then all ultimates are still required.&#13;
+- Already received items/traps are no longer received again when loading into the same slot after closing the game.</content>
+    <link href="https://github.com/DanielSchaack/ArchipelagoMetalHellsinger/releases/tag/1.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.3</id>
+    <title>Parkitect v1.6.3</title>
+    <updated>2026-09-13T09:36:52+00:00</updated>
+    <author>
+      <name>CrusherRL</name>
+    </author>
+    <content>Installation instructions can be found [[here](https://github.com/CrusherRL/AP_Parkitect?tab=readme-ov-file#-installation)].&#13;
+&#13;
+Enjoy!&#13;
+&#13;
+&gt; **Notes**&#13;
+&gt;&#13;
+&gt; * This release is **not** backward compatible with seeds generated **before v1.2.1**.&#13;
+&gt; * This release **may not** be fully compatible with seeds generated **before v1.5.0**.&#13;
+&gt; &#13;
+&#13;
+# Parkitect Archipelago — Release Notes&#13;
+&#13;
+## Fix&#13;
+* Fixed issue with resolving ModPath for Steam</content>
+    <link href="https://github.com/CrusherRL/AP_Parkitect/releases/tag/1.6.3"/>
   </entry>
 </feed>

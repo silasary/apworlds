@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 2.2.0   <-- must match the Toy Story 2 .apworld release.
+-- CONNECTOR VERSION: 2.3.0   <-- must match the Toy Story 2 .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "2.2.0"
+TS2_VERSION = "2.3.0"
 
 -- ── Debug logging (OFF by default) ──────────────────────────────────────────
 -- A player who hits a bug (a crash, a stuck connection, a wrong send) can set
@@ -149,7 +149,7 @@ local SHARED_COINS = {
     [13]=0x1FE979,[14]=0x1FE97A,
 }
 -- Coin bundle ITEMS received from AP (count of bundles granted, to convert to
--- coins to spend). SEPARATE from SHARED_COINS (coinsanity detection).
+-- a coin count). SEPARATE from SHARED_COINS (coinsanity detection).
 local SHARED_COIN_ITEMS = {
     [1]=0x1FE9E6,[2]=0x1FE9E7,[4]=0x1FE9E8,[5]=0x1FE9E9,
     [7]=0x1FE9EA,[8]=0x1FE9EB,[10]=0x1FE9EC,[11]=0x1FE9ED,
@@ -162,6 +162,133 @@ SHARED_HAMM_DONE = {
     [7]=0x1FE964,[8]=0x1FE965,[10]=0x1FE966,[11]=0x1FE967,
     [13]=0x1FE968,[14]=0x1FE969,
 }
+
+-- ============================================================
+-- HAMM'S SHOP  (Hamm Checks == Shopsanity)          [2.3.0]
+-- ============================================================
+-- Hamm stops being a one-time 50-coin toll and becomes a shop: talking to him
+-- renders a page of AP items with coin prices, and a button press claims one.
+--
+-- A PRICE IS A THRESHOLD. Hamm counts the coins you are holding and hands the
+-- item over; he never takes them. So claiming one slot can never cost you
+-- another, the order you claim in never matters, and reaching a number once
+-- opens every slot at or under it for the rest of the seed.
+--
+-- WHERE THE NUMBERS COME FROM. Nothing here is decided in Lua. Generation rolls
+-- every price, works out which slot needs how many coins, and the client
+-- publishes the result into the block below. Lua renders what it is given,
+-- reads the pad, and reports claims back. That split is deliberate: prices
+-- have to be identical on every reconnect and identical to what AP's logic
+-- believed when it placed items, and the only way to guarantee that is to roll
+-- them exactly once, at generation.
+--
+-- THE TWO CODE PATCHES. The game hard-codes "50 coins" in two places, both the
+-- same word, both taking the same patch:
+--     0x0750C0  hud prompt path   (HYPOTHESIS — never verified in play)
+--     0x0778D8  token award path  (CONFIRMED — probe round 3)
+--   vanilla 0x28420032  slti $v0, $v0, 50
+--   patched 0x28427FFF  slti $v0, $v0, 32767   always true, so the branch
+--                                              always skips the payload
+-- Both are re-asserted EVERY FRAME, never one-shot. A savestate reverts game
+-- RAM but not Lua variables, so a one-shot restore never re-fires and the game
+-- runs on with a hole in its code until it freezes solid — EmuHawk stays
+-- responsive and no Lua error ever prints, which is what makes that class of
+-- bug so expensive to find. shop_assert_patch also refuses to write over any
+-- word that is neither the vanilla nor the patched value: anything else means
+-- the code there is not what was disassembled, and guessing would be worse than
+-- stopping.
+--
+-- Site A being unverified is why the 0xFFFF write to the Hamm UI timer runs as
+-- well whenever the player is holding enough coins to trip the prompt. It is
+-- belt and braces, and it is what ts2.lua already did for the vanilla token.
+--
+-- MEMORY. The shop's own bytes sit in the gap between the health beacon and the
+-- coin tables, which nothing has ever used; the item-name buffer extends the
+-- shared block upward into the margin the 2.2.0 move left above it. See the
+-- SHARED BLOCK note near ts2_check_shared_block for what "free" has to mean.
+SHOP_MODE_ADDR    = 0x1FE8AA   -- client -> lua, magic-tagged 0xB0 + mode
+SHOP_ITEMS_ADDR   = 0x1FE8AB   -- client -> lua, slots stocked per level (1-10)
+-- free: 0x1FE8AC - 0x1FE8AE  (was the shop refusal channel; there is nothing
+--   left to refuse now that prices are thresholds and claiming is automatic)
+SHOP_HINT_LVL     = 0x1FE8AF   -- lua -> client, "the shop page just opened in
+                               --   this level" — the client turns it into real
+                               --   AP hints for that level's slots, once. Set
+                               --   on every render; the client clears it.
+SHOP_WALLET_BASE  = 0x1FE8B0   -- client -> lua, 10 bytes: coins COLLECTED per
+                               --   level index. Coinsanity-off only. Nothing is
+                               --   subtracted: claims cost no coins.
+SHOP_PRICES_BASE  = 0x1FE8BC   -- client -> lua, [li*SHOP_MAX_SLOTS + slot-1].
+                               --   60 bytes in use; the field keeps its old
+                               --   100-byte reservation so the addresses after
+                               --   it did not have to move when the stock
+                               --   ceiling came down from ten to six.
+SHOP_BOUGHT_BASE  = 0x1FE920   -- lua -> client, u16 LE per level index
+SHOP_SOLD_BASE    = 0x1FE934   -- client -> lua, u16 LE per level index
+COIN_TOTAL_BASE   = 0x1FE948   -- client -> lua, 10 bytes: what each level is
+                               --   WORTH in coins after the Coin Total Per
+                               --   Level option. Vanilla = what the level
+                               --   holds; Uniform 99 = 99 everywhere. Read
+                               --   instead of COIN_MAX wherever the question is
+                               --   "how many coins can this level give me",
+                               --   because with Uniform 99 the two differ.
+EJECT_SEQ         = 0x1FE952   -- lua -> client, ++ each time the level-lock
+                               --   failsafe throws a player out. A sequence
+                               --   byte rather than a flag, so being thrown out
+                               --   of the same level twice reads as two.
+EJECT_LVL         = 0x1FE953   -- lua -> client, the level they were thrown out of
+-- free: 0x1FE954 - 0x1FE95F
+SHOP_NAME_LVL     = 0x1FEB20   -- client -> lua, which level the names describe
+SHOP_NAMES_BASE   = 0x1FEB21   -- client -> lua, 6 x 36 bytes, NUL padded
+-- free: 0x1FEBF9 - 0x1FEC3F
+
+SHOP_NAME_W       = 36   -- the item name gets a whole line to itself
+SHOP_WIDTH        = 36
+-- TWO lines per slot: price and button prompt on one, the item name centred on
+-- the next. That buys back most of a long item name -- the old single-line
+-- layout cut names to 26 characters, which left almost nothing once a
+-- recipient was appended.
+--
+-- SIX is the ceiling, and it is not arbitrary. A dialog box renders fourteen
+-- lines; two header lines plus six slots at two lines each is exactly fourteen.
+-- Everything Hamm stocks is therefore on screen at once, with no paging.
+--
+-- (It used to matter for a second reason: six slots meant the shop could bind
+-- shoulder and face buttons only, never a direction, so walking into Hamm could
+-- not buy anything. There are no buttons now -- see the note below SHOP_LEVEL_INDEX
+-- -- but fourteen lines is still fourteen lines.)
+SHOP_MAX_SLOTS    = 6
+
+-- Level index must match __init__.COIN_LEVELS, because that is what the
+-- location IDs and every published table are keyed on.
+SHOP_LEVEL_INDEX = {
+    [1]=0, [2]=1, [4]=2, [5]=3, [7]=4,
+    [8]=5, [10]=6, [11]=7, [13]=8, [14]=9,
+}
+
+-- There are no buttons any more. A price is a threshold, so "press L1 to get"
+-- was asking the player to confirm a decision that had already been made for
+-- them: if they are holding the coins the item is theirs, and if they are not,
+-- no button helps. Talking to Hamm now hands over everything they qualify for
+-- in one go, which also retires the whole press-detection apparatus -- the arming
+-- delay, the stale-press rejection and the tap-not-hold test all existed only to
+-- stop a player buying something by walking into Hamm on a held direction.
+
+SHOP_PATCH_VANILLA = 0x28420032
+SHOP_PATCH_PATCHED = 0x28427FFF
+SHOP_PATCH_SITES = {
+    {name="A", addr=0x0750C0, note="hud prompt path"},
+    {name="B", addr=0x0778D8, note="token award path"},
+}
+SHOP_HAMM_UI = 0x0C2ADA
+
+-- Session state. Claims made this session live here and are republished to
+-- SHOP_BOUGHT_BASE every frame, exactly the way the hint mask is: the client
+-- reads them to send the checks, and writes the server's own answer back into
+-- SHOP_SOLD_BASE. Two separate addresses rather than one shared byte, so the
+-- client's authoritative rewrite can never erase a claim that has not been
+-- confirmed yet.
+shop_bought_masks = {}
+shop_patch_warned = {}
 -- Token checks collected, one byte per hover_id (7-20). Bits: 1=Hamm's,
 -- 2=Missing Toys, 4=Race, 8=Hidden, 16=Boss. Lua writes, client reads.
 local SHARED_TOKENS_COLLECTED = {
@@ -423,7 +550,7 @@ end
 -- Sanity settings (bit flags in a settings byte — we read SHARED_GAME_MODE area)
 -- The Python client writes slot_data settings; we read them from fixed addresses
 -- We use dedicated addresses just above our shared map for sanity toggles
-local SHARED_SETTINGS = 0x1FE9D3  -- 1 byte: bit0=coinsanity, bit1=lifesanity, bit2=batterysanity, bit3=laser_sanity, bit4=rexsanity, bit5=movesanity, bit6=hintsanity
+local SHARED_SETTINGS = 0x1FE9D3  -- 1 byte: bit0=coinsanity, bit1=lifesanity, bit2=batterysanity, bit3=laser_sanity, bit4=rexsanity, bit5=movesanity, bit6=hintsanity, bit7=coin_wallet
 local SHARED_MUSIC_MODE   = 0x1FE9D4  -- 0=off, 1=normal, 2=chaos, 3=oops
 local SHARED_MUSIC_TRACK  = 0x1FE9D5  -- oops all bangers track
 local SHARED_SKIP_SONG    = 0x1FE9D6  -- 1=enabled
@@ -440,6 +567,10 @@ function is_batterysanity() return setting(SHARED_SETTINGS, 2) end
 function is_lasersanity()   return setting(SHARED_SETTINGS, 3) end
 function is_rexsanity()     return setting(SHARED_SETTINGS, 4) end
 function is_hintsanity()    return setting(SHARED_SETTINGS, 6) end
+-- Bit 7: keep physical coins between visits and stop them respawning. Set for
+-- every Coinsanity-off seed; meaningless (and never set) with Coinsanity on,
+-- where the coin counter is driven by the items AP sent instead.
+function is_coin_wallet()   return setting(SHARED_SETTINGS, 7) end
 -- bit0 was the Auto Save option. The option is gone and the client now holds
 -- this bit at 0 for every seed, so is_auto_save() is always false and the
 -- savestate.saveslot(10) call in update_map never runs. Kept, not deleted, so
@@ -462,6 +593,12 @@ function skip_song_enabled()return mainmemory.read_u8(SHARED_SKIP_SONG) == 1 end
 local script_initialized = false
 local last_level        = -1
 local buzz_moved        = false
+-- Level-lock failsafe: one eject per visit, and the level it was armed for.
+-- Globals rather than locals: this file is already at Lua's 200-local ceiling for
+-- a main chunk, and two more would not load at all.
+eject_done  = false
+eject_level = -1
+eject_seq   = 0
 local last_buzz_x       = -1
 local last_buzz_y       = -1
 local buzz_baseline_set = false
@@ -1637,7 +1774,11 @@ COIN_ZERO_DEBOUNCE = 15
 function get_coin_ap_amount(level_id)
     local addr=SHARED_COIN_ITEMS[level_id]; if not addr then return 0 end
     local items_raw=mainmemory.read_u8(addr)
-    local maxc=COIN_MAX[level_id]
+    -- The AP total, not the physical one: under Uniform 99 a 63-coin level is
+    -- sent 99 coins' worth of bundles, and clamping to 63 here would have
+    -- silently thrown a third of the player's money away (and made every shop
+    -- slot priced above 63 unbuyable).
+    local maxc=coin_total_for(level_id)
     local recv=get_recv_bundle_size()
     local max_bundles = maxc and math.ceil(maxc/recv) or 255
 
@@ -1666,12 +1807,29 @@ function get_coin_ap_amount(level_id)
         coin_items_zero[level_id] = 0
     end
 
-    if maxc then
-        local amount=items*recv
-        if amount>maxc then amount=maxc end
-        return amount
-    end
-    return items*recv
+    local amount = items*recv
+    if maxc and amount>maxc then amount=maxc end
+    -- Nothing is deducted here any more. A shop price is a THRESHOLD -- Hamm
+    -- counts your coins and hands the item over, he never takes them -- so what
+    -- AP granted is what you are holding, for the rest of the seed. The
+    -- subtraction that used to live here was the spending model, and the
+    -- spending model is what let a player strand their own progression items by
+    -- claiming slots in an order the logic never allowed for.
+    return amount
+end
+
+-- The Coinsanity-OFF wallet: how many of this level's coins the player has
+-- picked up. The client owns the number -- it keeps the collected set in AP
+-- DataStorage and despawns what has been taken, so walking out and back in
+-- cannot refill the level.
+--
+-- Nothing is subtracted for the shop. Claiming a slot costs no coins, so this
+-- only ever goes up, which is also why re-entering a level now shows you the
+-- running total you built rather than resetting to zero.
+function get_coin_wallet_amount(level_id)
+    local amount = shop_wallet_collected(level_id)
+    if amount < 0 then amount = 0 end
+    return amount
 end
 
 function get_coin_next_threshold(level_id)
@@ -1689,6 +1847,399 @@ function get_coin_next_threshold(level_id)
         return nil
     end
     return next_t
+end
+
+-- ============================================================
+-- HAMM'S SHOP — runtime
+-- ============================================================
+
+function shop_mode()
+    -- Magic-tagged the same way the game-mode mirror is. Before the client
+    -- writes settings this address holds whatever the game left there, and a
+    -- bare 0/1/2 could easily match RAM garbage — 0xB0-0xB2 will not.
+    local v = mainmemory.read_u8(SHOP_MODE_ADDR)
+    if v < 0xB0 or v > 0xB2 then return 0 end
+    return v - 0xB0
+end
+
+function is_hamm_shop()    return shop_mode() == 2 end
+function is_hamm_vanilla() return shop_mode() == 1 end
+
+function shop_slot_count()
+    local n = mainmemory.read_u8(SHOP_ITEMS_ADDR)
+    if n < 1 or n > SHOP_MAX_SLOTS then return 0 end
+    return n
+end
+
+function shop_price(level, slot)
+    local li = SHOP_LEVEL_INDEX[level]
+    if not li then return 0 end
+    return mainmemory.read_u8(SHOP_PRICES_BASE + li * SHOP_MAX_SLOTS + (slot - 1))
+end
+
+-- Sold = bought this session (ours) OR checked on the server (theirs). ORing
+-- the two is what makes a claim show immediately AND survive a reconnect,
+-- and it is why the two masks live at different addresses.
+function shop_sold_mask(level)
+    local li = SHOP_LEVEL_INDEX[level]
+    if not li then return 0 end
+    local server = mainmemory.read_u16_le(SHOP_SOLD_BASE + li * 2)
+    return (shop_bought_masks[level] or 0) | server
+end
+
+function shop_is_sold(level, slot)
+    return (shop_sold_mask(level) & (1 << (slot - 1))) ~= 0
+end
+
+-- Coins COLLECTED in this level, for seeds where physical coins are the
+-- currency (shop on, Coinsanity off). The client owns this number: it watches
+-- each coin's own address, keeps the collected set in AP DataStorage and
+-- despawns what has been taken, so leaving and re-entering cannot refill the
+-- level. Lua reads it as-is -- claiming a slot costs nothing.
+function shop_wallet_collected(level)
+    local li = SHOP_LEVEL_INDEX[level]
+    if not li then return 0 end
+    local v = mainmemory.read_u8(SHOP_WALLET_BASE + li)
+    -- Two ceilings, and they are different things. COIN_MAX is how many coins
+    -- the level physically contains, so a reading above it is load-window
+    -- garbage and worth discarding outright. coin_total_for is how many the
+    -- ECONOMY recognises -- Alleys and Gullies holds 103 but the counter is two
+    -- digits, so 99 is the most anyone can be carrying, and a real count above
+    -- that is simply clamped rather than thrown away.
+    local phys = COIN_MAX[level] or 255
+    if v > phys then return 0 end
+    local cap = coin_total_for(level)
+    if cap > 0 and v > cap then v = cap end
+    return v
+end
+
+-- What this level is worth in coins, per the Coin Total Per Level option. Falls
+-- back to the level's real coin count, which is also what the client publishes
+-- for a Vanilla seed, so a stale or unwritten byte behaves like 2.2.0 did.
+function coin_total_for(level)
+    local li = SHOP_LEVEL_INDEX[level]
+    if not li then return COIN_MAX[level] or 0 end
+    local v = mainmemory.read_u8(COIN_TOTAL_BASE + li)
+    if v == 0 or v > 200 then return COIN_MAX[level] or 0 end
+    return v
+end
+
+function shop_publish_bought(level)
+    local li = SHOP_LEVEL_INDEX[level]
+    if not li then return end
+    mainmemory.write_u16_le(SHOP_BOUGHT_BASE + li * 2, shop_bought_masks[level] or 0)
+end
+
+-- ── The 50-coin suppression ─────────────────────────────────
+-- Idempotent, every frame, and it will not touch a word it does not recognise.
+function shop_assert_patch(site)
+    local cur = mainmemory.read_u32_le(site.addr)
+    if cur == SHOP_PATCH_PATCHED then return end
+    if cur ~= SHOP_PATCH_VANILLA then
+        if not shop_patch_warned[site.name] then
+            shop_patch_warned[site.name] = true
+            print(string.format(
+                "[TS2] *** Hamm's Shop: site %s at 0x%06X holds 0x%08X, expected 0x%08X or 0x%08X.",
+                site.name, site.addr, cur, SHOP_PATCH_VANILLA, SHOP_PATCH_PATCHED))
+            print("[TS2] That is not the code this patch was written against — leaving it alone.")
+            print("[TS2] Hamm may still award his vanilla token. Check your ROM is SLUS-00893.")
+        end
+        return
+    end
+    shop_patch_warned[site.name] = false
+    mainmemory.write_u32_le(site.addr, SHOP_PATCH_PATCHED)
+end
+
+function shop_assert_patches()
+    if not is_hamm_shop() then return end
+    for _, site in ipairs(SHOP_PATCH_SITES) do shop_assert_patch(site) end
+    -- Site A is a reading of the disassembly, not something anyone has watched
+    -- fail. Until it is verified, also hold the Hamm UI timer at 0xFFFF so the
+    -- prompt cannot appear even if that patch is doing nothing.
+    if mainmemory.read_u8(A.COIN) >= 50 then
+        mainmemory.write_u16_le(SHOP_HAMM_UI, 0xFFFF)
+    end
+end
+
+-- ── The page ────────────────────────────────────────────────
+-- 36 visible characters per line, 14 lines render, and the box auto-sizes to
+-- its text. '^' is a zero-width colour toggle and MUST be paired — an odd count
+-- leaves the span open and bleeds into whatever follows.
+
+function shop_visible_len(s)
+    return #((s:gsub("%^", "")))
+end
+
+function shop_pad_line(s)
+    local v = shop_visible_len(s)
+    if v < SHOP_WIDTH then s = s .. string.rep(" ", SHOP_WIDTH - v) end
+    return s
+end
+
+function shop_fit(s, w)
+    if #s <= w then return s end
+    if w <= 3 then return s:sub(1, w) end
+    return s:sub(1, w - 3) .. "..."
+end
+
+-- The item in a slot, as the client last published it. The name buffer only
+-- ever holds ONE level's worth, so it carries the level it describes; if the
+-- client has not caught up yet (the player sprinted to Hamm on entry) the page
+-- still renders, just with a generic label. Prices are always right regardless,
+-- because those are published for every level at once.
+-- The client packs two fields into the one 36-byte slot as "owner|item". A
+-- separator rather than a second buffer because the two share a budget anyway --
+-- the recipient is capped at 8 columns and the item keeps the rest -- and a
+-- second buffer would mean another 216 bytes out of a shared block whose tail is
+-- still unprobed. '|' never reaches the dialog: the client strips it from both
+-- halves before packing.
+function shop_slot_text(level, slot)
+    if mainmemory.read_u8(SHOP_NAME_LVL) ~= level then return nil end
+    local base = SHOP_NAMES_BASE + (slot - 1) * SHOP_NAME_W
+    local out = {}
+    for i = 0, SHOP_NAME_W - 1 do
+        local b = mainmemory.read_u8(base + i)
+        if b == 0 then break end
+        out[#out + 1] = string.char(b)
+    end
+    local s = table.concat(out):gsub("%s+$", "")
+    if s == "" then return nil end
+    return s
+end
+
+function shop_item_name(level, slot)
+    local s = shop_slot_text(level, slot)
+    if not s then return "ap item " .. slot end
+    local sep = s:find("|", 1, true)
+    if not sep then return s end
+    local item = s:sub(sep + 1):gsub("^%s+", "")
+    if item == "" then return "ap item " .. slot end
+    return item
+end
+
+-- Who the item in this slot belongs to. Empty when the client has not caught up
+-- yet, in which case the page simply leaves that column blank rather than
+-- printing a stand-in that looks like a player name.
+function shop_item_owner(level, slot)
+    local s = shop_slot_text(level, slot)
+    if not s then return "" end
+    local sep = s:find("|", 1, true)
+    if not sep then return "" end
+    return (s:sub(1, sep - 1):gsub("%s+$", ""))
+end
+
+-- Centre a line inside the 36 columns. A name that fills the width is left
+-- alone, which is the common case for a long item plus a recipient.
+function shop_centre(s)
+    local v = shop_visible_len(s)
+    if v >= SHOP_WIDTH then return s end
+    local left = (SHOP_WIDTH - v) // 2
+    return string.rep(" ", left) .. s .. string.rep(" ", SHOP_WIDTH - v - left)
+end
+
+function shop_write_page(level)
+    local n = shop_slot_count()
+    local t = {}
+
+    -- Claimed slots are dropped from the page entirely rather than greyed out.
+    -- There is nothing left to decide about them and nothing left to press, so
+    -- a row for one is just a line the player has to read past every time they
+    -- talk to Hamm -- and on a full shop those lines are the scarcest thing on
+    -- the page. Pressing the button of a slot that is gone still gets an answer
+    -- from the client, which is what makes removing
+    -- the row safe: the player cannot silently wonder whether the press landed.
+    local left = {}
+    for i = 1, n do
+        if not shop_is_sold(level, i) then left[#left + 1] = i end
+    end
+
+    if #left == 0 then
+        t[#t+1] = shop_pad_line("sorry, buzz! that's all i got!")
+    else
+        -- The greeting has one job beyond saying hello: tell the player the
+        -- coins are not going anywhere. Everything about the page reads as a
+        -- shop, and a shop that does not charge you is the sort of thing you
+        -- have to be told outright or you will hoard against a bill that never
+        -- comes.
+        t[#t+1] = shop_pad_line("hi buzz! got ^ap items^ here. gather")
+        t[#t+1] = shop_pad_line("enough coins and they're ^no charge^!")
+
+        for _, i in ipairs(left) do
+            local price = shop_price(level, i)
+            local name  = shop_item_name(level, i)
+            local owner = shop_item_owner(level, i)
+
+            -- Line 1: what it costs on the left, whose it is on the right.
+            --
+            -- The right-hand column used to be a button prompt. Nothing is
+            -- pressed any more, so the space went to the one thing the page
+            -- could not say before: who the item belongs to. In a multiworld
+            -- that is half of what you want to know about a shop slot, and it
+            -- was previously crammed onto the end of the name line where a long
+            -- item swallowed it.
+            --
+            -- Everything on this page is by definition unaffordable -- talking
+            -- to Hamm already took everything the player qualified for -- so
+            -- nothing here is ever highlighted. Green means "yours now", and
+            -- nothing on this page is.
+            local cost  = string.format("%d coin%s", price, price == 1 and "" or "s")
+            local whose = (owner ~= "") and (owner .. "'s") or ""
+            local gap = SHOP_WIDTH - #cost - #whose
+            if gap < 1 then gap = 1 end
+            t[#t+1] = shop_pad_line(cost .. string.rep(" ", gap) .. whose)
+
+            -- Line 2: the item name, centred, with the whole width to itself.
+            t[#t+1] = shop_pad_line(shop_centre(shop_fit(name, SHOP_NAME_W)))
+        end
+    end
+
+    local text = table.concat(t)
+    -- Close an unbalanced span rather than trusting the loop above: an odd
+    -- number of toggles leaves the colour open and it bleeds into whatever
+    -- follows.
+    if select(2, text:gsub("%^", "")) % 2 == 1 then text = text .. "^" end
+    -- A line ending on a colour toggle prints garbage if the string terminates
+    -- right after it. With this layout the last line of a page is always an item
+    -- name -- centred, so it ends in spaces, and item names never contain a
+    -- toggle because the client strips everything the font cannot draw. So the
+    -- blank guard line the old layout always carried is only appended in the
+    -- case it actually guards against, which is what buys the sixth slot: two
+    -- header lines plus six slots is exactly the 14 lines a box renders, and an
+    -- unconditional guard line would push a full shop to 15.
+    if text:sub(-1) == "^" then text = text .. string.rep(" ", SHOP_WIDTH) end
+    if #text > 1023 then text = text:sub(1, 1023) end
+    -- Clear the WHOLE field first. A shorter page otherwise leaves the tail of
+    -- a longer previous page sitting past our terminator, which prints as
+    -- garbage on the next talk -- and this page gets SHORTER every time the
+    -- player claims something, so that is now the normal case rather than an
+    -- edge one.
+    for i = 0, 1023 do mainmemory.write_u8(A.DIALOG + i, 0x00) end
+    for i = 1, #text do mainmemory.write_u8(A.DIALOG + i - 1, string.byte(text, i)) end
+    mainmemory.write_u8(A.DIALOG + #text, 0x00)
+end
+
+
+-- Why the player walked away from Hamm with nothing. Packed into the HIGH
+-- NIBBLE of the slot byte rather than given an address of its own: slots only
+-- ever run 1-6, so the top four bits of that byte were already dead space.
+--
+-- A price is a THRESHOLD, not a cost: Hamm counts the coins and hands the item
+-- over, and the player keeps every one of them. Nothing is deducted here, and
+-- that single fact is what makes the shop safe. While coins really were spent,
+-- claiming a slot took coins that the logic had already promised to a different
+-- slot -- so a player who claimed in an order the generator had not assumed
+-- could put a progression item permanently out of reach, in a currency there is
+-- no way to earn more of. With nothing consumed there is no order to get wrong.
+--
+-- And once there is no order to get wrong, there is nothing left to decide: if
+-- the player is holding the coins the item is already theirs, and if they are
+-- not, no button press changes that. So talking to Hamm takes everything they
+-- qualify for at once. Called on the rising edge of his dialog, immediately
+-- before the page is written, so the page the player reads is what is LEFT.
+function shop_claim_all(level, coins)
+    local n = shop_slot_count()
+    local got = 0
+    for i = 1, n do
+        if not shop_is_sold(level, i) then
+            local price = shop_price(level, i)
+            if price > 0 and coins >= price then
+                shop_bought_masks[level] = (shop_bought_masks[level] or 0) | (1 << (i - 1))
+                got = got + 1
+                ts2_debug(string.format("hamm shop: claimed level %d slot %d at %d coins (kept %d)",
+                    level, i, price, coins))
+            end
+        end
+    end
+    if got > 0 then shop_publish_bought(level) end
+    -- Nothing is said when the player qualifies for nothing. There is no refusal
+    -- to report: they did not try to buy anything, prices are thresholds, and the
+    -- page in front of them already lists every one of them.
+    return got
+end
+
+-- How long the counter may sit ABOVE the client's recorded total before Lua
+-- pulls it back down. This is a race, not a policy: the game raises the counter
+-- on the frame you touch a coin, and the client cannot possibly know yet.
+--
+-- The old value was 60 -- one second, which sounds generous and is not. The
+-- client ticks about twice a second, and recording a pickup takes a poll that
+-- sees the coin's address turn collected, then the wallet write on that same
+-- tick, then a Lua read. Two ticks is the ordinary case, which put the deadline
+-- exactly on top of the answer: the counter went up on pickup, got yanked down
+-- when the window expired, and went straight back up a frame later when the
+-- client's number finally arrived. Up, down, up -- the flicker reported in play,
+-- and it lands on whichever pickups happen to run slow. Enemy-drop coins are the
+-- usual victims: their byte has to be seen alive before it can be seen taken, so
+-- they need the extra tick more often than a coin lying on the floor does.
+--
+-- Four seconds is eight ticks of headroom, and it is nearly free: while nothing
+-- is spent, a counter that is briefly one too high can only let a threshold be
+-- met a moment early, and the next level entry re-floors it from the client's
+-- record anyway.
+COIN_WALLET_GRACE = 240
+coin_wallet_grace = 0
+coin_wallet_want  = -1   -- last `want` seen, to notice the client catching up
+coin_wallet_level = -1   -- level the two above belong to
+
+-- Holds the in-game counter at the player's wallet when physical coins are the
+-- currency (shop on, Coinsanity off). Only a floor and a ceiling: the game
+-- zeroes the coin counter on every level load, and without the floor the player
+-- would walk back into a level to find their savings gone.
+function update_coin_wallet(level)
+    -- Runs for EVERY Coinsanity-off seed, whatever Hamm is set to. Coins that
+    -- respawn every time you walk out and back in are the old behaviour, not a
+    -- feature; the shop is simply where it stopped being cosmetic.
+    if is_coinsanity() or not is_coin_wallet() then return end
+    if not COIN_LEVEL_IDS[level] then return end
+
+    -- The window belongs to one visit to one level. Carrying a half-spent one
+    -- across a level change would let a fresh pickup be snapped back almost
+    -- immediately.
+    if level ~= coin_wallet_level then
+        coin_wallet_level = level
+        coin_wallet_grace = 0
+        coin_wallet_want  = -1
+    end
+
+    local want = get_coin_wallet_amount(level)
+    local live = mainmemory.read_u8(A.COIN)
+
+    -- The client's number moving at all means it is still working through what
+    -- the player just did, so the window restarts. This is what covers a burst
+    -- of pickups: each one the client records pushes the deadline out again,
+    -- instead of the burst as a whole racing a single fixed timer.
+    if want ~= coin_wallet_want then
+        coin_wallet_want  = want
+        coin_wallet_grace = 0
+    end
+
+    if live < want then
+        mainmemory.write_u8(A.COIN, want)
+        coin_wallet_grace = 0
+    elseif live > want then
+        -- A pickup the client has not recorded yet. If it is STILL unaccounted
+        -- for after the window -- with the client's number sitting perfectly
+        -- still that whole time -- then nothing is going to account for it, and
+        -- the wallet wins. That case is a coin the despawn missed being
+        -- collected a second time, which is the farming hole this exists to
+        -- close; it is not a slow pickup.
+        coin_wallet_grace = coin_wallet_grace + 1
+        if coin_wallet_grace > COIN_WALLET_GRACE then
+            mainmemory.write_u8(A.COIN, want)
+            coin_wallet_grace = 0
+        end
+    else
+        coin_wallet_grace = 0
+    end
+end
+
+-- ── Per-frame ───────────────────────────────────────────────
+function update_hamm_shop(level)
+    -- All that is left of this is keeping the client's copy of what has been
+    -- claimed up to date. The claiming itself happens on the dialog edge, where
+    -- the page is written.
+    if not is_hamm_shop() or not SHOP_LEVEL_INDEX[level] then return end
+    shop_publish_bought(level)
 end
 
 function write_sanity_items(level)
@@ -2911,8 +3462,26 @@ function update_potato(level)
             end
         end
         if match_sig(bytes,DIALOG_SIGNATURES.hamm_uncollected) then
-            write_dialog(hamm_uncollected_idx==1 and NEW_DIALOG.hamm_uncollected1 or NEW_DIALOG.hamm_uncollected2)
-            hamm_uncollected_idx=(hamm_uncollected_idx%2)+1
+            -- Shopsanity: this is the ONLY moment the page can be written. The
+            -- game blits the dialog to VRAM once, on the rising edge of the open
+            -- tween, and ignores the buffer from then on -- which is also why
+            -- there is one page per talk and no scrolling menu.
+            if is_hamm_shop() and SHOP_LEVEL_INDEX[level] then
+                -- Claim FIRST. The page is a list of what the player still has
+                -- to save for, so anything they just qualified for must already
+                -- be off it by the time it is written.
+                local coins = mainmemory.read_u8(A.COIN)
+                shop_claim_all(level, coins)
+                shop_write_page(level)
+                -- Tell the client the shop was opened here. It hints this
+                -- level's slots the first time it sees a given level, so
+                -- walking up to Hamm reveals his stock to the whole multiworld
+                -- rather than only to the page in front of you.
+                mainmemory.write_u8(SHOP_HINT_LVL, level)
+            else
+                write_dialog(hamm_uncollected_idx==1 and NEW_DIALOG.hamm_uncollected1 or NEW_DIALOG.hamm_uncollected2)
+                hamm_uncollected_idx=(hamm_uncollected_idx%2)+1
+            end
         end
         if match_sig(bytes,DIALOG_SIGNATURES.hamm_collected) then
             write_dialog(NEW_DIALOG.hamm_collected)
@@ -3199,8 +3768,12 @@ function update_coins(level)
     -- across reconnects. When done AND the player has >=50 coins, suppress the prompt
     -- by writing 0xFFFF over the 2-byte UI field at 0x0C2ADA (cleaner than zeroing
     -- the single byte at 0x0C2ADB, which made the UI jitter).
+    -- Shopsanity has its own, unconditional version of this in
+    -- shop_assert_patches (the prompt must never appear, checked or not), so
+    -- only the vanilla token needs the "already turned in" test.
     local hamm_addr = SHARED_HAMM_DONE[level]
-    if hamm_addr and mainmemory.read_u8(hamm_addr)~=0 and mainmemory.read_u8(A.COIN)>=50 then
+    if not is_hamm_shop() and hamm_addr
+       and mainmemory.read_u8(hamm_addr)~=0 and mainmemory.read_u8(A.COIN)>=50 then
         mainmemory.write_u16_le(0x0C2ADA, 0xFFFF)
     end
 end
@@ -3660,6 +4233,11 @@ function on_level_change(new_level, prev_level)
     was_hint_dialog_open=false; hint_triggered=false
     mainmemory.write_u16_le(HINT_MASK_ADDR, hint_lua_mask[new_level] or 0)
 
+    -- Hamm's Shop: republish the new level's claims straight away, so the
+    -- client's per-level view is right on entry rather than one tick late.
+    coin_wallet_grace = 0
+    if SHOP_LEVEL_INDEX[new_level] then shop_publish_bought(new_level) end
+
     -- Potato/gadgets
     gadgets_written=false; part_watched=false; part_exchanged=false; toys_written=false
     potato_collect_streak={}
@@ -3817,6 +4395,14 @@ end
 ts2_title_init()
 
 function update_title_text()
+    -- Hold the vanilla menu until the CLIENT has been heard from, so the
+    -- rebranded title doubles as a handshake light: "start ap" and the version
+    -- only appear once ts2.lua is running AND the Python client has connected
+    -- and written settings. A player who loaded the Lua but never started the
+    -- client sees the stock menu, which is the truth -- nothing is tracking.
+    -- SETTINGS_SEEN latches on the game-mode magic tag (see ts2_main) and is
+    -- never cleared, so a later disconnect does not flicker the menu back.
+    if not SETTINGS_SEEN then return end
     local buf, first = ac_get_block_reader()(TITLE_BLOCK_LO, TITLE_BLOCK_LEN)
     for _, t in ipairs(TITLE_STRINGS) do
         local base  = (t.addr - TITLE_BLOCK_LO) + first
@@ -4055,6 +4641,12 @@ function ts2_main()
     -- two-phase sequence. (Only fires when a cutscene trap is queued/active.)
     update_cutscene(level)
 
+    -- Hamm's Shop code patches: EVERY frame, everywhere, never one-shot. A
+    -- savestate reverts game RAM but not Lua state, so a restore that only ever
+    -- fires once leaves a hole in the game's code and freezes it later with no
+    -- error printed. Cheap and idempotent, so it runs outside the level branch.
+    shop_assert_patches()
+
     -- Re-arm the map autosave whenever we are NOT on the map. This guarantees
     -- the save fires on every map entry, not just the first: relying on
     -- on_level_change to reset the flag missed cases where the transition into
@@ -4168,6 +4760,52 @@ function ts2_main()
     -- ══════════════════════════════════════════════════════
     elseif level>=1 and level<=15 then
 
+        -- ── LEVEL LOCK FAILSAFE ──────────────────────────
+        -- The map is supposed to refuse a locked level, and it does -- but the
+        -- refusal can be raced by hammering the cursor, and a player who gets
+        -- through is somewhere the seed's logic never accounted for. So the
+        -- level itself checks, and ends if the answer is no.
+        --
+        -- 0x0A136E is the level RESULT byte, and 5 is the game's OWN value for
+        -- "the player wants to leave" -- the same one the Never Game Over rescue
+        -- borrows. Using the game's own exit means every level behaves the way
+        -- quitting normally does, including the Final Showdown.
+        --
+        -- 1 was tried first and is wrong: it ends the level, but in the Final
+        -- Showdown it rolls the CREDITS, which looks for all the world like the
+        -- seed just ended. 4 avoided that by booting to the title screen, at the
+        -- cost of one level exiting somewhere different from every other. 5 needs
+        -- no special case at all.
+        --
+        -- Three guards, and every one of them matters:
+        --   SETTINGS_SEEN  -- before the client has written anything the unlock
+        --                     bitmask is all zeroes, which reads as "you own
+        --                     nothing" and would eject the player from every
+        --                     level in the game.
+        --   buzz_moved     -- the same gate collectible detection arms on. Firing
+        --                     during the load, the intro pan, or while the player
+        --                     is still holding X to start looks like a crash.
+        --   eject_done     -- once per visit. The result byte is not instant, so
+        --                     rewriting it every frame while the level winds down
+        --                     would fight the game's own exit.
+        if SETTINGS_SEEN and buzz_moved then
+            if eject_level ~= level then
+                eject_level, eject_done = level, false
+            end
+            local hover = LEVEL_TO_HOVER[level]
+            if hover and not eject_done and not is_level_unlocked(hover) then
+                eject_done = true
+                mainmemory.write_u8(0x0A136E, 5)
+                -- Tell the client, so it can say so where the player is actually
+                -- looking. Same shape as the shop's deny channel.
+                eject_seq = (eject_seq + 1) & 0xFF
+                if eject_seq == 0 then eject_seq = 1 end
+                mainmemory.write_u8(EJECT_LVL, level)
+                mainmemory.write_u8(EJECT_SEQ, eject_seq)
+                ts2_debug(string.format("level lock: ejected from level %d (hover %d)", level, hover))
+            end
+        end
+
         -- Authoritatively re-assert the sanity shared masks EVERY frame from our
         -- own (clean) masks. The game corrupts these shared addresses during the
         -- load window, and the client reads them every frame — so without a
@@ -4238,6 +4876,8 @@ function ts2_main()
             update_coins(level)
             update_rex(level)
             update_hints(level)
+            update_coin_wallet(level)
+            update_hamm_shop(level)
         end
         update_music()
 
@@ -4310,6 +4950,21 @@ print("[TS2] Waiting for Python client to write settings...")
 -- 0x1FE8A0-0x1FEB16 passes both tests for all 324 bytes, over 12 levels and 16
 -- dumps, inside a 3,456-byte free run: 2,208 bytes of margin below, 617 above.
 --
+-- 2.3.0 EXTENDED the block to 0x1FE8A0-0x1FEC3F (+297 bytes) to hold Hamm's
+-- Shop item-name buffer: six names at 36 characters each, 216 contiguous bytes,
+-- which could not fit in the gaps left inside the old range. The extension lies
+-- wholly inside the 617 bytes of margin the probe found above the old top
+-- (0x1FEB17-0x1FED7F), so it is covered by the same free run -- but it has NOT
+-- been through a probe run of its own, and the rule above is explicit that a
+-- region is only safe once it has been. Re-run shared_probe.lua (v3) over
+-- 0x1FEB17-0x1FEC3F before release. The symptom if this is wrong is silent and
+-- awful: traps firing on their own, settings reading as nonsense, phantom
+-- checks sending.
+--
+-- (Capping the shop at six rather than ten shrank this from 425 bytes to 297.
+-- If the ceiling ever goes back up, the buffer grows by 36 bytes per slot and
+-- the probe range has to grow with it.)
+--
 -- The block now opens with a 4-byte MAGIC. Without it the client cannot tell
 -- "this ts2.lua published version 0.0.0" from "this ts2.lua published nothing and
 -- I am reading the game's memory" -- which is exactly why an old ts2.lua produced
@@ -4330,7 +4985,7 @@ TS2_VER_ADDR     = 0x1FE8A6      -- major, minor, patch
 -- so look for exactly that, once, at load. Read-only, and it cannot false-fire
 -- on real connector data -- the client never writes long runs of 0x20/0x30.
 function ts2_check_shared_block()
-    local lo, hi = 0x1FE8A0, 0x1FEB16
+    local lo, hi = 0x1FE8A0, 0x1FEC3F
     local ok, buf = pcall(function()
         return (mainmemory.read_bytes_as_array or mainmemory.readbyterange)(lo, hi - lo + 1)
     end)
