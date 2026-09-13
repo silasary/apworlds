@@ -213,6 +213,8 @@ def update_manifest_with_sheet_data(manifest: dict) -> None:
     if info:
         modified = False
         for sheet_field, (manifest_field, flatten) in sheet_to_manifest_mapping.items():
+            if sheet_field not in info:
+                continue
             value = info[sheet_field]
             if flatten and isinstance(value, TextWithHyperlink):
                 value = value.hyperlink

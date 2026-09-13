@@ -1,0 +1,128 @@
+{
+  "authors": [
+    "ZigzagAwaka"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Dragon Quest III HD-2D Remake",
+  "github": "https://github.com/ZigzagAwaka/DQ3AP",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.1.0-alpha": {
+      "created_at": "2026-07-16T12:49:08Z",
+      "description": "### This is the first release of DQ3AP ! This is an alpha, meaning that issues are expected.\r\n\r\nTo setup, please check the README [here](https://github.com/ZigzagAwaka/DQ3AP/blob/main/README.md).\r\nAs we now reached testing phase, multiple fixes and improvements will be made in the following releases, along with some new apworld options to configure the generation process.",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.1.0-alpha/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0527a92be7c47f8b13eae86a9926edcbc4e3a839f22c2184aaa090fc7a89579c",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.1.0-alpha",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 34210,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.1.0-alpha",
+      "title": "v0.1.0-alpha : Alpha release",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0a0"
+    },
+    "v0.1.0-alpha.2": {
+      "created_at": "2026-07-16T18:42:30Z",
+      "description": "- Fixed missing runtime dll not being loaded/present during execution\r\n- The mod can now work on Linux ! Setup instructions have been updated on the README\r\n\r\nIf updating from alpha 1 : simply replace DQ3AP.asi by the new version and add the 3 new dlls in the game folder",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.1.0-alpha.2/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0527a92be7c47f8b13eae86a9926edcbc4e3a839f22c2184aaa090fc7a89579c",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.1.0-alpha.2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 34210,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.1.0-alpha.2",
+      "title": "v0.1.0-alpha.2 : Hotfix",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0a2"
+    },
+    "v0.1.1-alpha": {
+      "created_at": "2026-07-17T17:16:09Z",
+      "description": "- Fixed a crash sometimes happening when receiving a trap (Cannibox, Mimic or Pandora's Box)\r\n- Fixed a black screen softlock sometimes happening when successfully defeating an enemy received as a trap\r\n- Fixed receiving items from a warp transition sometimes not working as expected: it will now only receive the item from this event if the player warps outside of an area and not inside of it\r\n- Added an event to receive items when talking to a Priest by loading a file from the title screen\r\n- Added an event to receive items when talking to any Inn keeper in the game\r\n- Fixed some Romaria locations access logic and names\r\n- Other minor changes\r\n\r\nIf updating from v0.1.0 : replace `DQ3AP.asi` and `Game-WindowsNoEditor_P_DQ3AP.pak` by the new versions. Also `dq3.apworld` has been slightly changed.",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.1.1-alpha/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "aa1a2f2c4edf3b1a0b58da5673cec67a6eeecbc5169c585f4a33c07b57840643",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.1.1-alpha",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 34219,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.1.1-alpha",
+      "title": "v0.1.1-alpha : Some fixes",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1a0"
+    },
+    "v0.1.2-alpha": {
+      "created_at": "2026-07-21T19:57:34Z",
+      "description": "- Added support for spaces in arguments when using the `/connect` command. Use quotes \"player name\" when using the command. Arguments without quotes and spaces will still work just like the previous version\r\n- Patched the gifts from Aliahan King so speaking to him at the beginning of the game will give you the main World Map if you have not collected it before\r\n- Added a system to prevent the item queue to reset when losing connection to the Archipelago server and/or when re-connecting to your opened room. This also prevents the queue from clearing upon receiving an item when the game is closing so you are certain to not lose any items. The item queue will now clear when you get all items from the queue or when connecting to a new Archipelago hosted room\r\n- Other minor changes\r\n\r\nIf updating from v0.1.1 : replace `DQ3AP.asi` and `Game-WindowsNoEditor_P_DQ3AP.pak` by the new versions. Also `dq3.apworld` has been slightly changed.",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.1.2-alpha/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8f7aedaafe22f34896609633349c9571ecf834f60f4d7c5146a6c9a280a11938",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.1.2-alpha",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 34232,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.1.2-alpha",
+      "title": "v0.1.2-alpha : Client improvements",
+      "version_simple": "0.1.2",
+      "world_version": "0.1.2a0"
+    },
+    "v0.1.3-alpha": {
+      "created_at": "2026-07-26T13:14:46Z",
+      "description": "- Fixed the `medals` and `medals_postgame` options not sending a victory event upon getting all mini medals\r\n- Prevented the reception of items when exiting some specific maps that could play a cutscene at the same time\r\n- Improved options management in the client to properly receive new apworld options\r\n- Improved checking locations and getting items events looping/failing to load from story/NPC scenes related to any of the following items: all of the 6 Orbs, Ortega's Helm, Zenithium, Boatman's Bone and Black Pepper\r\n- Improved all other story/NPC scenes that give important items to not repeat or loop mulitple times, this will be in effect until a game restart\r\n- Other minor changes\r\n\r\nIf updating from v0.1.2 : replace `DQ3AP.asi` and `Game-WindowsNoEditor_P_DQ3AP.pak` by the new versions. Also `dq3.apworld` has been slightly changed.",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.1.3-alpha/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "080eb939fcd025c5a875d8318ea185940964b135bba5e5c065e4f2ff4fc5ffc5",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.1.3-alpha",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 34192,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.1.3-alpha",
+      "title": "v0.1.3-alpha : Better scenes and options management",
+      "version_simple": "0.1.3",
+      "world_version": "0.1.3a0"
+    },
+    "v0.2.0-alpha": {
+      "created_at": "2026-09-01T19:03:06Z",
+      "description": "- Added a `/reconnect` command that users can type in the client console to try to automatically reconnect to the latest valid Archipelago connection made with `/connect`. As this new command is automatic, you should be able to use it as a quick way to reconnect after a game restart, without needing to retype the connect arguments\r\n- Added a `/syncmedals` command that users can type in the client console to transfer the given previous server host's mini medals amount to the current host's mini medals amount. This should be used in a currently active mini medal run when Archipelago re-attributes the room's port to transfer the progress to the new port if the current run hasn't been completed yet [note that this is only related to mini medals run! other types of goals don't need to use this]\r\n- Added a `baramos` victory goal option, to be used for shorter games\r\n- Added an event to receive items when using the spell \"Peep\" _[this has a known partial compatibility issue with the mod \"Passive Snoop and Nose for Treasure\", check the [doc here](https://github.com/ZigzagAwaka/DQ3AP/blob/main/ModsCompatibility.md) to learn more about it]_\r\n- Improved all story/NPC scenes that give important items to not repeat or loop mulitple times, some will be fully fixed and some will be in effect until a game restart (this was partialy bugged in the previous release)\r\n- Prevented the receiving of items from story related checks not in a chest and not during a scene, as those can have other events happening at the same time and may cause black screen softlocks\r\n- Prevented the receiving of items during boss defeated events/scenes, as those can sometime cause black screen softlock or crash\r\n- Fixed a black screen softlock when entering the Old Man's house in Grimland with the Boatman's Bone already in the inventory before ever giving the Mod Rod to the Old Man\r\n- Fixed key logic for the following areas: the back room of Mur's market house, Asham's hotel, Asham's theater, Manoza Castle and Gaia's Navel\r\n- Fixed the coffin in the secret underground room of the Pyramid not being randomized\r\n- Fixed a crash that was happening when receiving a trap from the secret basement chest in Edina Castle\r\n- Fixed trapped chests (mimic chests in vanilla) not opening when getting their items\r\n- Fixed containers being able to be checked again if finding a trap inside it\r\n- Fixed the locations checks related to the following items not spawning if those were already in the inventory: Broken Blade, Orichalcum, Forging Hammer, Faerie Flute, Sphere of Light, Lovers' Locket and Dreamstone\r\n- Other minor changes\r\n\r\nIf updating from v0.1.3 : replace `DQ3AP.asi`, `Game-WindowsNoEditor_P_DQ3AP.pak` and `dq3.apworld` by the new versions.",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.2.0-alpha/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c448ed0e2c5f2ae847c06677a20b58a2c21e8ef3db91195ee54757576fa354d2",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.2.0-alpha",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 34880,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.2.0-alpha",
+      "title": "v0.2.0-alpha : Locations and logic fixes",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0a0"
+    },
+    "v0.3.0": {
+      "created_at": "2026-09-10T14:02:58Z",
+      "description": "### Beta phase of DQ3AP begins now !\r\n\r\nAs alpha fixing and testing have all been added since the first release, we have now reached the first Beta! The mod should be more stable now and with less issues. Next updates will focus on adding new checks as options or, if needed, other improvements and fixes.\r\n\r\nFor now, here is the latest changes:\r\n\r\n- Added 11 new options to configure how the game is generated\r\n- Added the victory event name and rules for it to show in the game's generation spoiler log\r\n- Various changes in the client to make Archipelago operations more stable\r\n- Other minor changes\r\n\r\nIf updating from v0.2.0 : replace `DQ3AP.asi`, `Game-WindowsNoEditor_P_DQ3AP.pak` and `dq3.apworld` by the new versions.\r\nOr else, follow the setup [here](https://github.com/ZigzagAwaka/DQ3AP#setup-guide).",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.3.0/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8b162bc30c9a969f3185458ac3635c65ed4bf3d61b6088cfd91dcf6c48bdea2f",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 37636,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.3.0",
+      "title": "v0.3.0 : Beta release, new options",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/chickentuna/WeddingWitchMod",
+  "manifest_fields": [],
+  "versions": {
+    "v0.1.0": {
+      "created_at": "2026-08-22T21:15:35Z",
+      "description": "Archipelago randomizer for **Wedding Witch**. The witch's upgrade shop stops selling\nupgrades \u2014 all 73 levels become Archipelago items \u2014 and its shelves are restocked with\nchecks instead, which is what Love Coins buy now.\n\nA default seed is 82 checks: the three potions offered after every stage, the boss beaten\nin each of the six witch forms on Nightmare (once in any form on the lower difficulties),\nand 20 shop shelves.\n\n## What's in this release\n\n| File | Where it goes |\n|---|---|\n| `WeddingWitchArchipelago-0.1.0.zip` | unzips into the game folder |\n| `wedding_witch.apworld` | your Archipelago install's `custom_worlds/` |\n| `WeddingWitch.yaml` | your Archipelago install's `Players/`, after editing |\n\n## 1. Install BepInEx\n\nWedding Witch is a Unity **Mono** build, so it needs the Mono flavour of BepInEx 6 from\nthe [bleeding-edge builds page](https://builds.bepinex.dev/projects/bepinex_be). The\nIL2CPP builds will not load. Take the newest one for your platform:\n\n- **Windows** \u2014 `BepInEx-Unity.Mono-win-x64-6.0.0-be.*.zip`\n- **Linux** \u2014 `BepInEx-Unity.Mono-linux-x64-6.0.0-be.*.zip`\n\nUnzip it into the game folder \u2014 the one holding `Wedding Witch.exe` on Windows or\n`Wedding Witch.x86_64` on Linux. Steam's *Manage \u2192 Browse local files* will take you\nthere.\n\nThen launch the game once and quit. That first run creates `BepInEx/plugins`, and it\nwill not create it until the game has actually started.\n\n**Linux only**, two extra steps:\n\n```sh\nchmod +x run_bepinex.sh\n```\n\nand set the game's Steam launch options to:\n\n```\n./run_bepinex.sh %command%\n```\n\nWithout the launch options BepInEx is never loaded and the game simply runs unmodded.\nWindows needs neither \u2014 its BepInEx hooks the executable directly.\n\n## 2. Install the mod\n\nUnzip `WeddingWitchArchipelago-0.1.0.zip` into the same game folder. It carries its own\n`BepInEx/plugins/...` path, so you should end up with:\n\n```\nWedding Witch/BepInEx/plugins/WeddingWitchArchipelago/WeddingWitchArchipelago.dll\n```\n\n## 3. Install the apworld\n\nDrop `wedding_witch.apworld` into `custom_worlds/` in your Archipelago install, then edit\n`WeddingWitch.yaml` and put it in `Players/`. Both the host generating the seed and anyone\ntracking it need the apworld.\n\n## 4. Play\n\nLaunch the game. The connection panel opens itself on the main menu; <kbd>F1</kbd>\ntoggles it. Fill in the server address, port, your slot name and the room password if\nthere is one, then press Connect. Your details are remembered for next launch.\n\nThe main menu gains a **Shop** button beside **Upgrades**: Upgrades lists the levels the\nmultiworld has sent you, unbuyable, and Shop sells Archipelago checks for Love Coins.\n\nYour upgrade levels, coins and stats are kept per room, so connecting neither reads nor\nwrites the save you play unconnected.\n\n## Notes\n\nUniversal Tracker is supported and needs no YAML of its own.\n\nWhich difficulties you can play comes from the multiworld rather than from clearing the\nprevious one, so expect Hard and Nightmare to be locked until the items turn up.\n\n---\n\ud83e\udd16 Release notes generated with [Claude Code](https://claude.com/claude-code)\n",
+      "download_url": "https://github.com/chickentuna/WeddingWitchMod/releases/download/v0.1.0/wedding_witch.apworld",
+      "has_manifest": false,
+      "hash_sha256": "19b41f2b7b8875f074e2a5cd9f1f57e23da8887eb5edb4e9c060695b03902f6e",
+      "html_url": "https://github.com/chickentuna/WeddingWitchMod/releases/tag/v0.1.0",
+      "size": 10689,
+      "source_url": "https://api.github.com/repos/chickentuna/WeddingWitchMod",
+      "tag": "v0.1.0",
+      "title": "Wedding Witch Archipelago 0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}
