@@ -223,6 +223,21 @@
       "title": "# 0.0.6.2 \u2014 Different World Token Fix",
       "version_simple": "0.6.2",
       "world_version": "0.6.2"
+    },
+    "v0.0.6.3": {
+      "created_at": "2026-09-14T07:47:04Z",
+      "description": "A quality-of-life release: you can now chat and ask for hints without leaving the game, out-of-logic fields tell you what logic expects you to beat first, the Game Elements window shows what is in and out of logic at a glance, and a batch of logic and tooltip bugs are gone. Seeds generated with 0.0.6.2 keep working.\r\n\r\n## What's new\r\n\r\n### In-game chat and hints\r\n- The message log panel (backtick key) now has a text box. Type **!hint <item>** or plain chat straight from the game, no text client needed.\r\n- Incoming chat and server messages show up in the same panel.\r\n\r\n### Knowing what to do next\r\n- Hovering an out-of-logic field now shows **\"Beat N more fields first\"**. When fewer than four fields are needed it names them, and lists any field token you are still missing.\r\n- The **Game Elements** window colours matching fields **green** when they are in logic and **red** when they are not.\r\n- The field tooltip now shows **Endurance XP** next to Journey XP, each with the XP multiplier that was recorded for that run.\r\n\r\n### Balance and options\r\n- The default **difficulty** is now **Medium** instead of Hard. Existing YAMLs that set it explicitly are unaffected.\r\n- **Extra shadow cores per wave** are now boosted by **Seeker Sense**, exactly like normal core drops (up to double at max rank).\r\n- Talisman fragments now come in varied jigsaw shapes instead of one repeated pattern.\r\n- The option descriptions in the YAML template were reworded for clarity.\r\n\r\n### Debug menu\r\n- New **Pouches** and **Keys** tabs so gem pouches and stash keys can be granted for testing.\r\n- A repeatable **+10000 shadow cores** button on the Cores tab.\r\n\r\n## Bug fixes since 0.0.6.2\r\n\r\n- With **per_tile_progressive** gem pouches and `non_local_items: Everything`, pouches could still be placed in your own world \u2014 fixed.\r\n- The field tooltip popped up through windows drawn over the map, such as the Debug or Game Elements panels \u2014 fixed.\r\n- Dragging the map with the mouse stopped working after fields were unlocked, while keyboard scrolling still worked \u2014 fixed.\r\n- A save that needed to reconnect was offered **\"Play without randomizer\"**. That choice is now only shown on a brand-new save \u2014 fixed.\r\n- The XP trait multiplier was not displayed correctly in the field tooltip \u2014 fixed.\r\n- Skills and traits toggled in the debug menu were reverted the next time the game saved \u2014 fixed.\r\n- The Game Elements grid scrolled underneath the icon strip at the top of the window \u2014 fixed.\r\n- Several achievements were reachable in logic far earlier than a player could realistically complete them. They now also require a suitable wizard level, wave count, or monster count. A few wrong requirements, such as the bolt-gem trap achievements, were corrected as well.\r\n\r\n## Known limitations\r\n- The Game Elements colours refresh when the window is opened or a filter is toggled, not while an item arrives with the window open.\r\n- Wizard-level gating can still feel like one field unlocking the next in the early game. A revised progression model is being evaluated.\r\n\r\n## Install\r\nSee the [install guide](https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/blob/main/README.md).",
+      "download_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.3/gcfw.apworld",
+      "has_manifest": true,
+      "hash_sha256": "89e0080e320a1a823f6e315a058cfa4fbc6a52deaba7bb9408a7914c304aed0d",
+      "html_url": "https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.3",
+      "minimum_ap_version": "0.6.4",
+      "size": 140490,
+      "source_url": "https://api.github.com/repos/Levisaxos/Archipelago_GemcraftFrostbornWrath",
+      "tag": "v0.0.6.3",
+      "title": "# 0.0.6.3 \u2014 Chat, Field Hints and Logic Fixes",
+      "version_simple": "0.6.2",
+      "world_version": "0.6.2r2"
     }
   }
 }

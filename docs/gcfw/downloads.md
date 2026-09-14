@@ -1,9 +1,12 @@
 # GemCraft: Frostborn Wrath
 
 ## Latest
-- <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.2/gcfw.apworld">Latest Version (0.6.2)</a>
+- <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.3/gcfw.apworld">Latest Version (0.6.2r2)</a>
 
 ## All Versions
+
+#### v0.6.2r2
+- <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.3/gcfw.apworld">https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.3/gcfw.apworld</a>
 
 #### v0.6.2
 - <a href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.2/gcfw.apworld">https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/download/v0.0.6.2/gcfw.apworld</a>
