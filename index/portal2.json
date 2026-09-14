@@ -4,13 +4,19 @@
   ],
   "description": "Portal 2 is a first person puzzle adventure where you shoot solve test chambers using portal mechanics and other map specific items",
   "game": "Portal 2",
-  "github": "https://github.com/GlassToadstool/Archipelago",
+  "github": [
+    "https://github.com/GlassToadstool/Archipelago",
+    "https://github.com/GlassToadstool/Portal2ArchipelagoMod"
+  ],
   "license": null,
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
     "world_version"
   ],
+  "setup_guide_url": "https://github.com/GlassToadstool/Portal2ArchipelagoMod/blob/main/README.md",
+  "sheet_disclosure": "Unknown",
+  "sheet_stability": "Stable",
   "versions": {
     "0.1": {
       "created_at": "2025-12-06T21:46:10Z",
@@ -296,6 +302,36 @@
       "title": "Portal 2 Archipelago v0.7.2",
       "version_simple": "0.7.2",
       "world_version": "0.7.2"
+    },
+    "0.8.0": {
+      "created_at": "2026-08-02T09:41:49Z",
+      "description": "From now on I'll release the Mod and APWorld in the same release on this repo.\r\n\r\n## Additions\r\n- Added client menu (should be used as default)\r\n - Selectable chapters and maps\r\n - Maps display sublocations and required items\r\n - Count of completed checks in each map and chapter\r\n - *NEW* checkbox to swap between auto load next map or return to menu between levels\r\n- Renamed sub locations to include map name for ease of finding\r\n\r\n## Bug Fixes\r\n- No longer get Upgraded Portal Gun in incinerator after pickup if item not received\r\n- Removed an orange gel that was missed\r\n\r\n### How to install\r\nSimply drag the contents of the zip (Portal2Archipelago) into the sourcemods folder as indicated in the [README](https://github.com/GlassToadstool/Portal2ArchipelagoMod/blob/main/README.md) in step 4 and then follow from **step 5** onwards\r\n\r\nFor the apworld just double click the file and it will be installed in your Archipelago (remember to restart Archipelago for it to show up)\r\n\r\n### How update the mod if you already have it\r\nDelete the old Portal2Archipelago mod folder and all it's contents and replace it with the this ZIP's contents.\r\n\r\n> NOTE: This version adds many new things so there are bound to be bugs, you can @ me in the discord if you find one",
+      "download_url": "https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/download/0.8.0/portal2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c1aeea308f9981a72d611b84dbea9ea6386372020807817ad28242b6f9777727",
+      "html_url": "https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.8.0",
+      "minimum_ap_version": "0.6.5",
+      "size": 56534,
+      "source_url": "https://api.github.com/repos/GlassToadstool/Portal2ArchipelagoMod",
+      "tag": "0.8.0",
+      "title": "Portal 2 Archipelago v0.8.0",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0"
+    },
+    "0.8.1": {
+      "created_at": "2026-08-16T15:01:55Z",
+      "description": "## Bug Fixes\r\n- Fixed Butter Fingers Trap breaking pickup after map transition\r\n- Changed spacing in client to stop longer named maps showing incorrectly\r\n\r\n## Removals\r\n- Removed in game map select for to avoid confusion\r\n\r\n### How to install\r\nSimply drag the contents of the zip (Portal2Archipelago) into the sourcemods folder as indicated in the [README](https://github.com/GlassToadstool/Portal2ArchipelagoMod/blob/main/README.md) in step 4 and then follow from **step 5** onwards\r\n\r\nFor the apworld just double click the file and it will be installed in your Archipelago (remember to restart Archipelago for it to show up)\r\n\r\n### How update the mod if you already have it\r\nDelete the old Portal2Archipelago mod folder and all it's contents and replace it with the this ZIP's contents.\r\n",
+      "download_url": "https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/download/0.8.1/portal2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c7c9cae7c164d71f85b5cba1649367859bf8efbdb4d20050eb3fe68afdb4523b",
+      "html_url": "https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.8.1",
+      "minimum_ap_version": "0.6.5",
+      "size": 52059,
+      "source_url": "https://api.github.com/repos/GlassToadstool/Portal2ArchipelagoMod",
+      "tag": "0.8.1",
+      "title": "Portal 2 Archipelago v0.8.1",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0r2"
     }
   }
 }
