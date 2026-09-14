@@ -8,6 +8,9 @@
 #### v2.2.0r2
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.0/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.0/toystory2.apworld</a>
 
+#### v2.2.0r2
+- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.1/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.1/toystory2.apworld</a>
+
 #### v2.2.0
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.2.0/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.2.0/toystory2.apworld</a>
 

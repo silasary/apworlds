@@ -2,58 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-14T12:22:23.601477+00:00</updated>
+  <updated>2026-09-14T18:16:59.295831+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.1</id>
-    <title>Ape Escape 2 v1.3.1</title>
-    <updated>2026-09-12T07:46:22+00:00</updated>
-    <author>
-      <name>dannybonz</name>
-    </author>
-    <content>- Added level order to slot data, enabling entrance tracker support for **[Terratoya's Poptracker Pack!](https://github.com/terratoya/ae2-poptracker-pack/releases/latest)**&#13;
-- Corrected behaviour of the Gotcha Box when playing with level-based item gating.&#13;
-- Corrected logic for a Bar room start in Casino City.&#13;
-- Corrected logic for backwards traversal of the Booby Traps room in Panic Pyramid.&#13;
-&#13;
-For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archipelago/blob/main/docs/setup.md)</content>
-    <link href="https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.10</id>
-    <title>Xenoblade X v0.2.10</title>
-    <updated>2026-09-12T10:48:17+00:00</updated>
-    <author>
-      <name>Maragon</name>
-    </author>
-    <author>
-      <name>Nina</name>
-    </author>
-    <content>- Add error messagebox for duplicate clients&#13;
-- Fix client crash on startup while game is already active</content>
-    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.2.10"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.0</id>
-    <title>Neon White v0.1.0</title>
-    <updated>2026-09-12T11:22:49+00:00</updated>
-    <author>
-      <name>Badhamknibbs</name>
-    </author>
-    <author>
-      <name>stxticOVFL</name>
-    </author>
-    <content>*Looking for the Neon White mod? Find it [here!](https://github.com/stxticOVFL/NWArchipelagoMod/releases/latest)*&#13;
-*Compatible with v0.1.x of the NWArchipelago mod.*&#13;
-&#13;
-## Initial formal release for the Neon White Archipelago!&#13;
-&#13;
-### **Check the [game info](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/en_NeonWhite.md) and [complete setup guide!](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/setup_en.md)**</content>
-    <link href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/niieli/Niko-Archipelago/releases/tag/0.8.5</id>
     <title>Here Comes Niko! v0.8.5</title>
@@ -1418,7 +1371,75 @@ Free code signing for open source projects, provided by
 # Refactors&#13;
 - Added location class&#13;
 - Moved chest item setting to object loop&#13;
-- Changed silent events to actual events</content>
+- Changed silent events to actual events&#13;
+&#13;
+Thanks to Junofa Fuwa for helping with playtesting!</content>
     <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.10.0-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.7</id>
+    <title>Tomba! v1.5.7</title>
+    <updated>2026-09-14T15:04:23+00:00</updated>
+    <author>
+      <name>T4g1</name>
+    </author>
+    <author>
+      <name>bosshunter</name>
+    </author>
+    <content>This release focusses on bringing the entrance randomization. In the previous release, it was not really possible to make it work. Those issues are now solved hopefully.&#13;
+&#13;
+&gt; [!WARNING]&#13;
+&gt; The entrance randomization feature is a higly unstable option right now. Any issues should be reported on this project tracker page: https://github.com/T4g1/ArchipelagoTomba/issues&#13;
+&#13;
+---&#13;
+&#13;
+## ✨ What's New&#13;
+&#13;
+### 🐛 Bug Fixes&#13;
+* Fix: Can't access Masakari River if Jungle purified before learning how to Swim&#13;
+* Fix: Chest in Swimming Room in Haunted Mansion in logic too soon&#13;
+* Fix Big Key is now required for Seven Friends event&#13;
+* Fix: Unable to deactivate chick randomization&#13;
+* Fix #96 : Every item is now tied to a memory address and a specific check (event cleared, specific count value or bitmask) so any savestate will synchronize the checks automaticaly&#13;
+* Various pre-fixes related to entrance randomization such as forcing some doors to be open and some cleared events to prevent loading issues&#13;
+* Baccus Lake and Baccus Lake Pier connection is enforced even for Randomized Entrances&#13;
+&#13;
+---&#13;
+&#13;
+## 🔧 Installation&#13;
+1. Download the source code or the `.apworld` file.&#13;
+2. Drop it into your Archipelago `custom_worlds/` directory.</content>
+    <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.14</id>
+    <title>Northgard v2026.9.14</title>
+    <updated>2026-09-14T16:26:42+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Fixed
+- Universal Tracker support (added in 2026.09.13) was making the server silently reject real progress: Universal Tracker's context class identifies its connections as tracker-only, and this client was inheriting that identity unchanged. Location checks and goal completion now go through correctly whether or not Universal Tracker is installed.
+
+### Changed
+- Shortened the `/savedir` and `/conquest` in-client help text for readability.
+
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.13...2026.09.14</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.14"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.1</id>
+    <title>Funi Raccoon Game v1.7.1</title>
+    <updated>2026-09-14T16:55:42+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>This is a small apworld specific release that removes glitched logic from Behrman Speedway, because I accidentally left that in&#13;
+&#13;
+[Mod Link](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)&#13;
+[Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/main/worlds/funi_raccoon/docs/setup_en.md)&#13;
+&#13;
+</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.1"/>
   </entry>
 </feed>

@@ -1,4 +1,4 @@
-# Funi Raccoon Game Randomizer Setup Guide
+# Funi Raccoon Game Archipelago Setup Guide
 
 ## Required Software
 

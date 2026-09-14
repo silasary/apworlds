@@ -210,6 +210,21 @@
       "title": "2026.09.13 - Universal Tracker Support",
       "version_simple": "2026.9.13",
       "world_version": "2026.9.13"
+    },
+    "2026.09.14": {
+      "created_at": "2026-09-14T16:26:42Z",
+      "description": "### Fixed\n- Universal Tracker support (added in 2026.09.13) was making the server silently reject real progress: Universal Tracker's context class identifies its connections as tracker-only, and this client was inheriting that identity unchanged. Location checks and goal completion now go through correctly whether or not Universal Tracker is installed.\n\n### Changed\n- Shortened the `/savedir` and `/conquest` in-client help text for readability.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.13...2026.09.14",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.09.14/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c2ef01740ecf3d99bc82270b83cebd085226029c45c0ffe096cc3a13f50a25fa",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.14",
+      "minimum_ap_version": "0.6.7",
+      "size": 10453764,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.09.14",
+      "title": "2026.09.14 - Universal Tracker Fix",
+      "version_simple": "2026.9.14",
+      "world_version": "2026.9.14"
     }
   }
 }
