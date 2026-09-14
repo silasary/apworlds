@@ -102,6 +102,20 @@
       "title": "v0.6.0",
       "version_simple": "0.6.0",
       "world_version": "0.6.0"
+    },
+    "v0.6.1": {
+      "created_at": "2026-09-13T23:44:14Z",
+      "description": "## AEMinecraft v0.6.1\r\n\r\nA hotfix release: generation no longer hangs with BlazeandCave's Advancements Pack.\r\n\r\n### Fixed\r\n\r\n**Generation froze at \"Beginning output...\" with BlazeandCave's Advancements Pack.**\r\nSeeds using BACAP together with the mob or structure locks could sit at \"Beginning\r\noutput...\" for 15 minutes or more, and on machines with less memory could fail outright.\r\nThese seeds now generate normally: the heaviest reported setup (BACAP, glitch logic, every\r\nlock and `challenge_sanity: all`) finishes in under a minute.\r\n\r\n### Improved\r\n\r\n**Generation is faster and uses far less memory.** The apworld stopped building millions of\r\nduplicate copies of the same logic. The reported seed went from about 9 GB of memory to\r\njust over 1 GB, and seeds without BACAP generate roughly twice as fast.\r\n\r\n### Upgrading\r\n\r\n- **Only the apworld changed.** The mod is identical to v0.6.0, so if you already installed\r\n  the v0.6.0 mod you can keep it and just replace the apworld.\r\n- **Seeds generated with v0.6.0 are unaffected** and can be finished as they are.\r\n- Item placement is unchanged: the same YAML and seed produce the same world in v0.6.0 and\r\n  v0.6.1.\r\n- No YAML changes are required.",
+      "download_url": "https://github.com/KuroLynx/AEMinecraft/releases/download/v0.6.1/minecraft_aem.apworld",
+      "has_manifest": false,
+      "hash_sha256": "79765063403c56d105fb2e7ebd39e641e66336a37950c10abb5ea55729fa183e",
+      "html_url": "https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.1",
+      "size": 476107,
+      "source_url": "https://api.github.com/repos/KuroLynx/AEMinecraft",
+      "tag": "v0.6.1",
+      "title": "v0.6.1",
+      "version_simple": "0.6.1",
+      "world_version": "0.6.1"
     }
   }
 }

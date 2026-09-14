@@ -1,31 +1,42 @@
 # Neon White
 
-## Where is the settings page?
+## What is this game?
 
-The [player settings page for this game](../player-settings) contains all the options you need to configure and export
-a config file.
+[**Neon White**](https://neonwhite.rip/), developed by Angel Matrix + Ben Esposito and published by Annapurna Interactive, is an FPS speedrunning platformer described as "by freaks, for freaks." 
+In this game, your goal is to defeat all the enemies and get to the end of the level as fast as possible, using gun-like cards with special abilities along the way.
 
 ## What does randomization do to this game?
 
-The ability to discard or fire a card (including the Katana, you start with fists) is randomized individually.
-Level unlocks are also randomized, starting with 1 random level that does not require any discards or firing.
+The ability to fire or discard a card (including the Katana; you start with fists) is randomized individually.
 
-Checks are completed by collecting the gift in each level and by collecting each levels' medals. The sidequests also
-count as levels to complete with no time requirement.
+Level unlocks are also randomized, grouped into missions where you must collect a set amount of Neon Ranks by default.
+This can be configured to be singular Mission Unlock or Level Unlock items.
 
-Checks from medals can be set up to either provide checks for every medal up to a specified quality, or only awarding
-1 check for beating a level and getting a specific medal (or better). By default, a check is provided for each medal
-up to Platinum.
+Locations are completed by collecting the gift in each level and by collecting each levels' medals, chosen by the configuration. 
+By default, a check is awarded for Bronze and Ace medals.
+Sidequests and gift pickups are also locations by default in this randomizer.
 
-Beating Absolution is the goal for the randomizer, which must be unlocked.
+Beating the three boss levels (The Clocktower, The Third Temple, Absolution) is currently the only goal for this randomizer.
 
-A difficulty setting is provided to change how extreme the intended solutions are for getting any given medal within a
-level, when 
-accounting for what discard and fire abilities are unlocked. These difficulties are:
+There are also two difficulty sliders in this randomizer to control how extreme the intended solutions are:
 
-- 1 > Easy, covers any intended vanilla path or relatively simple tricks to figure out for a casual player. Default
-option.
-- 2 > Normal, tricks that might need thinking out of the box or above average technical skill.
-- 3 > Hard, difficult tricks that are hard to perform or require deep technical knowledge of the game.
-- 4 > Brutal, absurd tricks that are borderline nonsense to understand and/or extremely demanding to perform.
-Not for the faint of heart.
+### Knowledge Difficulty:
+
+- Vanilla: *Only* allow cards and strats the basegame shows you.
+- Casual: Expects the bare minimum, only tricks that are taught with in-game tutorials to beat the vanilla game.
+- Standard: Incorporates hidden but usually intended or otherwise easy to intuit tech/ideas. (breaking red surfaces through damage, parrying, etc.)
+- Expert: Further includes some more advanced tech that is often only relevant to speedrunners. (coyote jumps, phantom boosts, conscious ammo conservation tactics, etc.)
+- Master: Encompasses everything else from level-specific tech to extremely niche game quirks or nuances.
+
+### Execution Difficulty:
+
+- Vanilla: *Only* allow cards and strats the basegame shows you.
+- Casual: Can be done by a brand-new player with minimal hassle.
+- Standard: Consistently doable by a player who has all aces, especially players with dev medals.
+- Expert: Doable by a player who has all dev medals and is competent with advanced tech.
+- Master: Unreasonably difficult solutions that are inconsistent/overly precise to the vast majority of players.
+
+
+## How can I get started?
+
+To get started playing Neon White in Archipelago, [go to the setup guide for this game](setup_en.md)

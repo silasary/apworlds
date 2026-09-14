@@ -1,9 +1,12 @@
 # Voices of the Void
 
 ## Latest
-- <a href="https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.6.1/votv.apworld">Latest Version (0.6.1)</a>
+- <a href="https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.6.2/votv.apworld">Latest Version (0.6.2)</a>
 
 ## All Versions
+
+#### v0.6.2
+- <a href="https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.6.2/votv.apworld">https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.6.2/votv.apworld</a>
 
 #### v0.6.1
 - <a href="https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.6.1/votv.apworld">https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.6.1/votv.apworld</a>

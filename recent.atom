@@ -2,254 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-13T18:17:24.606712+00:00</updated>
+  <updated>2026-09-14T00:27:29.454716+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.36</id>
-    <title>Mental Omega v0.6.3r2</title>
-    <updated>2026-09-10T20:39:37+00:00</updated>
-    <author>
-      <name>Mental Omega Randomizer contributors</name>
-    </author>
-    <content>- Fix shopmode guardrails&#13;
-- Fix nanofibre sync evolution&#13;
-- Speedcontrol removed from Ui &#13;
-- Fix Prism towers (Working with cloned version)&#13;
-- Fix Gear change being broken and tied to Industrial Plant.&#13;
-- Fix Archipelago being broken&#13;
-- Add Tooltip info for Shopmode&#13;
-- Adjust Ore Percentage (Shopmode)&#13;
-- Adjust Tooltips</content>
-    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.36"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.13.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.13.0</title>
-    <updated>2026-09-10T21:45:39+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-The launcher has one screen now, and it opens in your browser.
-
-### The new interface
-
-- Double-click the launcher and a browser opens on it. Same screen on Windows
-  and on Linux, so a screenshot in Discord is a screenshot of what you have.
-- Everything is on it: the connect line, the run and its missions, what the
-  multiworld has unlocked, your bot team, the log with a search over it, and
-  every setting.
-- The log holds twenty thousand lines and stays quick to scroll, and the search
-  narrows it as you type. The server command box is under it.
-- The mission table sorts on any column, searches, and says why a mission is not
-  ready rather than leaving it out.
-- Leaving the tab open behind the game costs nothing: it stops listening while
-  it is hidden and picks the state back up when you come back to it.
-- Closing the tab leaves the server running. On Windows the launcher sits in
-  the notification area while it does: click the icon to get the page back,
-  right-click it for Quit. Quit on the screen stops it too.
-- The settings open when you go to them. There is no button to press first.
-- A settings page with sections shows them as tabs across the top, one at a
-  time. Bots is Team, Classes, Looks and Loadouts, each a screen rather than
-  a scroll; a search still finds a setting whatever tab it is on.
-- The Team tab is a grid of six seats with the fill controls above it; the
-  Classes tab is one line per class, allowed or not and what it carries.
-- Loadouts is a builder: pick the class, a weapon per slot, name it. The
-  saved ones are a list with Load and Remove on each line.
-- The mission pool is one table, the same one the Play screen has, with a
-  tick per mission and the tier beside it. It was drawn twice.
-- The console is under the missions on the Play screen, the same width, with
-  the search, the command box, Save debug logs and Clear this view. There is
-  no Console tab.
-- Join is in the header, left of Start, and the Bot Switcher has Apply:
-  the seats are a draft, and a lineup built there was gone on the next
-  visit because nothing wrote it.
-- Star on GitHub, in a footer that stays put.
-
-### Gone
-
-- The old settings window and the terminal interface are both gone. The
-  browser is what you get.
-- `-tui` and `-web` are gone with them. `-console` still prints the log and
-  nothing over it, for a machine with no desktop; `-configure` still asks the
-  questions in a terminal.
-- New: `-no-browser` prints the address instead of opening one, and `-addr`
-  says where to serve.
-
-### If the browser does not open
-
-The address is printed either way. Open it yourself. On WSL the launcher asks
-the Windows browser rather than one inside the distribution, where you could
-not see it.
-
-### Fixed
-
-- A saved loadout handed to a seat or a class plays that loadout. It played
-  stock: the menu wrote the loadout's name where its key belongs. A settings
-  file written by 1.12 still works, the name is understood too.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* feat(launcher): find Archipelago on Linux by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/52
-* fix(plugin): fix disposable sentry ap buff by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/53
-* fix(webui): render session mission details by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/51
-* fix(fastdl): clarify Linux Funnel onboarding by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/45
-* Web UI by @m-this in https://github.com/m-this/tf2-archipelago/pull/49
-* fix(launcher): a saved loadout handed to a seat plays it, not stock by @m-this in https://github.com/m-this/tf2-archipelago/pull/55
-* feat(launcher): a tray icon on Windows, and the settings open themselves by @m-this in https://github.com/m-this/tf2-archipelago/pull/54
-* feat(web): settings sections as tabs, a Bots overhaul, one missions table, Join and Apply by @m-this in https://github.com/m-this/tf2-archipelago/pull/56
-* feat(web): the console under the missions, the settings land on a page, and the Join fix for main by @m-this in https://github.com/m-this/tf2-archipelago/pull/57
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.12.0...v1.13.0
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/NzU3YjMyOTMzMWY5MWNhOWQzZGM5NTU0NmI4ZTFiZTg6MTc4OTA3Njk0NA==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MmU3N2Q5ZmNmY2Q3ZDI3NzcwZjE3ZDlkN2EwMWU0ZjA6MTc4OTA3Njk1MA==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.13.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.2</id>
-    <title>Starship Titanic v0.2.2</title>
-    <updated>2026-09-11T00:57:26+00:00</updated>
-    <author>
-      <name>rescheer</name>
-    </author>
-    <content># v0.2.2 (Unstable)&#13;
-Bug fix release. Only .apworld updated, client is untouched.&#13;
-## Changes&#13;
-- Fixed Broken Elevator - Titania's Eye (Elevator) always being in logic&#13;
-- Fixed mix-up between left/right Maitre'D arms&#13;
-- Fixed logic rule for right Maitre'D arm&#13;
-## Known Issues in this release&#13;
-- Cosmetic issues with items in the world sometimes&#13;
-- A softlock in the elevator I cannot reproduce for the life of me. If the LiftBot's head disappears and you're no longer able to leave the elevator, I'd love to get a save file from you. You can teleport out of the elevator with the Ctrl-C menu, which fixes the issue&#13;
-&#13;
-## General Tips&#13;
-- Ctrl+C opens the cheat menu, which allows teleporting around the ship. This shouldn't cause any major issues, but I would be careful spawning items, because that may get messy.&#13;
-- No visual tracker yet, but for now I highly recommend Universal Tracker to see in-logic checks&#13;
-&#13;
-Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
-    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SWCreeperKing/Pocopelago/releases/tag/v0.1.3</id>
-    <title>Poco v0.1.3</title>
-    <updated>2026-09-11T01:15:29+00:00</updated>
-    <author>
-      <name>SW_CreeperKing</name>
-    </author>
-    <content>- [ApWorld] Maintenance and minor improvements&#13;
-- [ApWorld] Added `Achievent` location group&#13;
-- [ApWorld] Fixed logic bug with Gultch Quest&#13;
-- [Client] Maintenance and minor improvements</content>
-    <link href="https://github.com/SWCreeperKing/Pocopelago/releases/tag/v0.1.3"/>
-  </entry>
   <entry>
     <id>https://github.com/silasary/Archipelago/releases/tag/ffxiitm-0.1.0</id>
     <title>Final Fantasy XII Trial Mode v0.1.0</title>
@@ -1152,7 +909,7 @@ For a explanations of the randomizer and its features or installation and setup:
   </entry>
   <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.13.0r2</title>
+    <title>Team Fortress 2 Mann vs Machine v1.13.0r3</title>
     <updated>2026-09-13T14:09:34+00:00</updated>
     <author>
       <name>mathis</name>
@@ -1198,8 +955,8 @@ Built from `09491d7fd32994787328a97d1c3f40c83a7425ef`.
       <name>Alchav</name>
     </author>
     <content>.apworld updates:&#13;
-- Fixed Igloo Vanish Cap Block and frozen Coin logic #21&#13;
-- Added trick Snowman’s Land Igloo Vanish Cap Block with Spindrift #21 &#13;
+- Fixed Igloo Vanish Cap Block and frozen Coin logic #21 by @ItzLoonie&#13;
+- Added trick Snowman’s Land Igloo Vanish Cap Block with Spindrift #21 by @ItzLoonie&#13;
 - Fixed Mixed entrance shuffle frequently creating two-step paths back to an entrance’s vanilla level&#13;
 - Entrance hints now appear only for entrance categories that were actually shuffled.&#13;
 - Fixed Secret Course Shuffle failing to provide entrance hints while unshuffled main courses received unnecessary hints.&#13;
@@ -1208,7 +965,10 @@ Built from `09491d7fd32994787328a97d1c3f40c83a7425ef`.
 - Fixed a cause for generation failures.&#13;
 &#13;
 SM64ex updates:&#13;
-- Fixed same-area shuffled warps into the Castle First Floor potentially leaving Mario missing and the camera stuck, particularly when the Bowser in the Dark World entrance led back to the lobby.</content>
+- Fixed same-area shuffled warps into the Castle First Floor potentially leaving Mario missing and the camera stuck, particularly when the Bowser in the Dark World entrance led back to the lobby.&#13;
+&#13;
+SM64ex hotfixes:&#13;
+- September 13: Hopefully, finally fix coins respawning as real coins when transitioning to/from sub-areas. Bob-ombs should finally grant coins when falling to the death plan with No Despawns on.</content>
     <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.2"/>
   </entry>
   <entry>
@@ -1368,5 +1128,89 @@ up as *Progressive Inventory Slot* items arrive.&#13;
 - New Victory Goal (Let's Go Divorce)&#13;
 - Added Spider Queen Left Leg / Frog Ring Locations</content>
     <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.2.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.5.2</id>
+    <title>Dredge v0.5.0r2</title>
+    <updated>2026-09-13T18:19:13+00:00</updated>
+    <author>
+      <name>Alextric</name>
+    </author>
+    <content>Includes previous release changes&#13;
+Corrected some fish locations&#13;
+Added instant crab bait as a catch tool&#13;
+</content>
+    <link href="https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.13</id>
+    <title>Northgard v2026.9.13</title>
+    <updated>2026-09-13T19:14:35+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Added
+- Optional Universal Tracker support: if you have the Universal Tracker apworld installed, the client now shows a tracker tab with in-logic location/item state, derived directly from this world's own logic. No effect on the client if Universal Tracker isn't installed.
+
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.08...2026.09.13</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.13"/>
+  </entry>
+  <entry>
+    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.1</id>
+    <title>AEMinecraft v0.6.1</title>
+    <updated>2026-09-13T23:44:14+00:00</updated>
+    <author>
+      <name>KuroLynx</name>
+    </author>
+    <content>## AEMinecraft v0.6.1&#13;
+&#13;
+A hotfix release: generation no longer hangs with BlazeandCave's Advancements Pack.&#13;
+&#13;
+### Fixed&#13;
+&#13;
+**Generation froze at "Beginning output..." with BlazeandCave's Advancements Pack.**&#13;
+Seeds using BACAP together with the mob or structure locks could sit at "Beginning&#13;
+output..." for 15 minutes or more, and on machines with less memory could fail outright.&#13;
+These seeds now generate normally: the heaviest reported setup (BACAP, glitch logic, every&#13;
+lock and `challenge_sanity: all`) finishes in under a minute.&#13;
+&#13;
+### Improved&#13;
+&#13;
+**Generation is faster and uses far less memory.** The apworld stopped building millions of&#13;
+duplicate copies of the same logic. The reported seed went from about 9 GB of memory to&#13;
+just over 1 GB, and seeds without BACAP generate roughly twice as fast.&#13;
+&#13;
+### Upgrading&#13;
+&#13;
+- **Only the apworld changed.** The mod is identical to v0.6.0, so if you already installed&#13;
+  the v0.6.0 mod you can keep it and just replace the apworld.&#13;
+- **Seeds generated with v0.6.0 are unaffected** and can be finished as they are.&#13;
+- Item placement is unchanged: the same YAML and seed produce the same world in v0.6.0 and&#13;
+  v0.6.1.&#13;
+- No YAML changes are required.</content>
+    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.1</id>
+    <title>Neon White v0.1.1</title>
+    <updated>2026-09-13T23:53:41+00:00</updated>
+    <author>
+      <name>Badhamknibbs</name>
+    </author>
+    <author>
+      <name>stxticOVFL</name>
+    </author>
+    <content>*Looking for the Neon White mod? Find it [here!](https://github.com/stxticOVFL/NWArchipelagoMod/releases/latest)*&#13;
+*Compatible with v0.1.x of the NWArchipelago mod.*&#13;
+&#13;
+- **Universal Tracker support has been fixed** and is now **YAML-less**!&#13;
+  - Please let me know if issues arise, especially with using YAML-less!&#13;
+- Some errors have been changed to `OptionError`s, and some new ones were introduced to cover more bases.&#13;
+- Obligatory logic update.&#13;
+&#13;
+### **Check the [game info](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/en_NeonWhite.md) and [complete setup guide!](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/setup_en.md)**&#13;
+&#13;
+**Changelog compared to v0.1.0**: https://github.com/Badhamknibbs/ArchipelagoNeonWhite/compare/v0.1.0...v0.1.1</content>
+    <link href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.1"/>
   </entry>
 </feed>
