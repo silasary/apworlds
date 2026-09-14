@@ -1,9 +1,12 @@
 # Bomberman Quest
 
 ## Latest
-- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.2/bomberman_quest.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/Happyhappyism/Bomberman-Quest-Archipelago/releases/download/bombquest_v0.1.2/bomberman_quest.apworld">Latest Version (0.1.2.post2)</a>
 
 ## All Versions
+
+#### v0.1.2.post2
+- <a href="https://github.com/Happyhappyism/Bomberman-Quest-Archipelago/releases/download/bombquest_v0.1.2/bomberman_quest.apworld">https://github.com/Happyhappyism/Bomberman-Quest-Archipelago/releases/download/bombquest_v0.1.2/bomberman_quest.apworld</a>
 
 #### v0.1.2
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.2/bomberman_quest.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.2/bomberman_quest.apworld</a>

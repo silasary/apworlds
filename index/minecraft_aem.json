@@ -116,6 +116,20 @@
       "title": "v0.6.1",
       "version_simple": "0.6.1",
       "world_version": "0.6.1"
+    },
+    "v0.6.2": {
+      "created_at": "2026-09-14T02:26:49Z",
+      "description": "## AEMinecraft v0.6.2\r\n\r\n  A logic release. Many checks showed as reachable before the game, or the mod, would let you complete them. A few others were harder than they should have been.\r\n\r\n  ### Fixed\r\n\r\n  **Checks that were in logic too early.** Each of these could show as reachable while something the game requires, or something the mod locks, was still missing:\r\n\r\n  - **Villager and Wandering Trader trades.** Checks about the Wandering Trader (Travelling Merchant, Shady Deals, Florist, Rebuilding the Oceans) now need the Wandering Trader, not just any villager. Trading for locked items (All chained up, Retro Future Knight) now needs the Knowledge and Material Handling to take them out of the trade.\r\n  - **Tools and armor from trades, chests and mobs** now need their Material Handling tier, the same as the mod requires. A stone pickaxe bought from a toolsmith no longer counts with zero Material Handling.\r\n  - **Checks about a mob** need that mob unlocked:\r\n    - I'm in Lava With You, Death by Magic, Gas!, My eyes!, Spleaf\r\n    - Arbalistic, It Spreads, What's Up, Doc?, Surge Protector\r\n    - BACAP challenges such as Beef Moover, Overwarden, The World Is Ending and Why do I hear boss music?\r\n  - **Charcoal and composters.** Renewable Energy needs the smelting recipe; breaking a campfire no longer counts. Knowledge: Crafter only lets you craft together with Knowledge: Crafting Table.\r\n  - **Potion effects on mobs** are now required (Gas Bomb).\r\n  - **Mob Kabob** asks for a spear instead of a trident.\r\n\r\n  **Checks that were wrongly locked or unpriced.**\r\n\r\n  - **Kilometre Walk** no longer waits for the Biomes tab.\r\n  - **All the Items!, All the Blocks!, Pottery Exhibition, Tricky Treasures, sus** and a few others used to fall back to \"reach the previous advancement\". They now require what  they actually need:\r\n    - creeper-drop music discs\r\n    - Trial Chamber pottery sherds\r\n    - firework stars\r\n    - suspicious sand and gravel, which drop when they fall onto a cobweb\r\n  - **Levitation, Dolphin's Grace and Conduit Power** no longer require a brewing stand.\r\n\r\n  ### Biome Finder\r\n\r\n  - **Items that only grow in rare biomes** need the Biome Finder, or a structure that contains them, when the Biome Finder is enabled. That covers cocoa beans, glow berries, melons, jungle and pale oak wood, moss, dripleaves, sculk and mycelium.\r\n  - **Mobs that live in a rare biome** now show as possible-with-effort (yellow) without the Biome Finder, instead of out of logic, as long as the mob itself is unlocked.\r\n\r\n  ### Upgrading\r\n\r\n  - **Only the apworld changed for players.** The mod gains a developer dump command but nothing that affects play, so the v0.6.1 mod jar keeps working.\r\n  - **Seeds generated with v0.6.1 are unaffected** and can be finished as they are.\r\n  - **Regenerating a v0.6.1 seed with v0.6.2 gives a different placement**, because the logic is stricter.\r\n  - **No YAML changes are required.**",
+      "download_url": "https://github.com/KuroLynx/AEMinecraft/releases/download/v0.6.2/minecraft_aem.apworld",
+      "has_manifest": false,
+      "hash_sha256": "86dbd6dac8aec9a709df7eee90bdc06b219473010e3c04d7b208aaa5bee9d092",
+      "html_url": "https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.2",
+      "size": 485550,
+      "source_url": "https://api.github.com/repos/KuroLynx/AEMinecraft",
+      "tag": "v0.6.2",
+      "title": "v0.6.2",
+      "version_simple": "0.6.2",
+      "world_version": "0.6.2"
     }
   }
 }

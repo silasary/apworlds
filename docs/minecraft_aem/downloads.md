@@ -1,9 +1,12 @@
 # AEMinecraft
 
 ## Latest
-- <a href="https://github.com/KuroLynx/AEMinecraft/releases/download/v0.6.1/minecraft_aem.apworld">Latest Version (0.6.1)</a>
+- <a href="https://github.com/KuroLynx/AEMinecraft/releases/download/v0.6.2/minecraft_aem.apworld">Latest Version (0.6.2)</a>
 
 ## All Versions
+
+#### v0.6.2
+- <a href="https://github.com/KuroLynx/AEMinecraft/releases/download/v0.6.2/minecraft_aem.apworld">https://github.com/KuroLynx/AEMinecraft/releases/download/v0.6.2/minecraft_aem.apworld</a>
 
 #### v0.6.1
 - <a href="https://github.com/KuroLynx/AEMinecraft/releases/download/v0.6.1/minecraft_aem.apworld">https://github.com/KuroLynx/AEMinecraft/releases/download/v0.6.1/minecraft_aem.apworld</a>

@@ -2,309 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-14T00:27:29.454716+00:00</updated>
+  <updated>2026-09-14T06:17:54.175383+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/silasary/Archipelago/releases/tag/ffxiitm-0.1.0</id>
-    <title>Final Fantasy XII Trial Mode v0.1.0</title>
-    <updated>2026-09-11T03:59:33+00:00</updated>
-    <author>
-      <name>Silasary</name>
-    </author>
-    <author>
-      <name>Sheen</name>
-    </author>
-    <content>Added logical requirements to stages, updated client.</content>
-    <link href="https://github.com/silasary/Archipelago/releases/tag/ffxiitm-0.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.1.0</id>
-    <title>Peggle Deluxe v2.1.0</title>
-    <updated>2026-09-11T05:48:45+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is an improvement release that also includes tweaks.&#13;
-&#13;
-**This release is NOT compatible with games generated on the previous version.**&#13;
-&#13;
-- **Improvement:** Instead of downgrading orange pegs once the board is already loaded (which mostly worked but was risky and had side effects.), levels now spawn the correct amount of orange pegs as they load. While this change required a lot of extra reverse engineering effort (on top of figuring out how to hook level loading, the game's multiplier system and the way the fever meter fills also had to be rewritten to match), it totally gets rid of _all_ weirdness that could be observed in 2.0.0. The implementation should feel rock solid now&#13;
-- **Tweak:** Because of this improvement, fever modes are forced to go back to triggering whenever the last orange peg is hit even if you don't have 25 for a given level&#13;
-- **Tweak:** To avoid reintroducing the confusion that was present in 1.x.x around getting fever mode and no completion check, Level Clear location checks will now unlock after any fever mode completes. They will require half your starting ball items logically, but nothing prevents them from triggering&#13;
-- **Tweak:** To preserve the relevance of the 4th Progressive Orange Pegs item now that level completions have moved to the early-mid game, new Fever Meter Full location checks have been added&#13;
-- **Tweak:** Permanent Fever Meter Bonus useful items have been removed. They also contributed to general weirdness and instability&#13;
-&#13;
-_No new YAML options. However, you will need to remove Permanent Fever Meter Bonus from your useful item weights for existing YAMLs to be valid_</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.15</id>
-    <title>Red Prince v1.0.15</title>
-    <updated>2026-09-11T13:20:09+00:00</updated>
-    <author>
-      <name>deefdragon</name>
-    </author>
-    <author>
-      <name>BatmenzDW</name>
-    </author>
-    <content># Red Prince 1.0.15
-
-## Gameplay and logic
-
-- Added optional first-observation checks for all 13 constellations through
-  `constellation_sanity`. Normal constellation effects still occur.
-- Added `exclude_north_star`: North Star remains a check but contains filler
-  when enabled. Other constellations can contain progression for any player.
-- Constellation logic assumes repeatable Observatory drafts across days to
-  gain stars, and Ink Well redraws to revisit skipped star counts. It models
-  eventual access, not the current night's sky; farming may take many days.
-- A supplied in-game log confirms North Star activation sent its check and
-  awarded Extra Dice 1. Multiple simultaneous constellations, controller input,
-  and repeat-observation persistence still need in-game confirmation.
-- Added warm-white, lightly yellow-tinted borders for undrafted room choices,
-  using the game's electricity-border geometry and bloom. Visual retest pending.
-- Pool trunk checks now require Gift Shop and Pump Room access. Corrected the
-  shared Pool rule that previously treated a location name as an item.
-- Planetarium trunk checks require telescope access. Trunks with unmodeled
-  luck or upgrade requirements remain excluded from progression placement.
-
-## Inventory - attempted fixes
-
-- Fixed the identified code path that restored Workshop recipe unlocks as
-  physical crafted items on the following day with Keep Simple Items Every Run.
-- Workshop rewards now remain recipe unlocks in the automatic grant path and
-  cannot auto-complete their crafting checks through item restoration.
-- The Workshop fix compiles; normal crafting and next-day behavior still need
-  in-game retesting. Previously sent checks are not rolled back.
-- Corrected runtime loading/reset of DeathLink protection and reporting of
-  constellation options and filler/trap distributions.
-
-## Known issues
-
-- Missing or unpickupable upgrade disks are not fixed by disk pickup-event
-  detection or by using the game's generic disk inventory object/icon.
-- Upgrade-disk duplication through Coat Check remains unresolved.
-- The previously reported microchip duplication and placement-time crash have
-  no confirmed resolution or established common cause.
-- Ordinary-item delivery delays remain under investigation; Workshop recipes
-  are distinct from physical-item delivery.
-- Runtime tests do not replace Unity playtesting. This release does not claim
-  to fix the remaining issues listed in UNRESOLVED_PROBLEMS.txt.
-
-## Check names and documentation
-
-- Published YAML includes both constellation options and all public world
-  options. Personal test starting stars, gems, and room unlocks are not included.
-- Existing location IDs remain stable. New checks use
-  `Constellation - &lt;name&gt; First Observation`.
-- Updated the attempted-fix and unresolved-issue logs to distinguish source
-  fixes, automated verification, confirmed gameplay, and pending playtests.
-
-## Compatibility
-
-- Minimum Archipelago version: 0.6.7. Compatibility with every newer version
-  has not been verified.
-- BepInEx 6 IL2CPP build 755; plugin target remains .NET 6.
-- The 1.0.15 game plugin and 1.0.15 APWorld should be distributed together.
-- Generate a new seed for constellation locations and changed generation rules.
-  Updating the plugin alone does not change an existing multiworld.
-
-## Verification
-
-- 92 world tests passed, public YAML generation succeeded, all 29 public options
-  are present, and runtime option tests passed on .NET 6.0.36.
-- Release compilation passed with existing dependency/analyzer warnings.
-  NuGet vulnerability metadata could not be fetched during the runtime-test restore.
-- Automated checks do not confirm resolution of the pending in-game issues above.
-</content>
-    <link href="https://github.com/Tincancrafter/Red-Prince-Releases/releases/tag/v1.0.15"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.3.1</id>
-    <title>Factorio Modpacks v2.3.1</title>
-    <updated>2026-09-11T15:36:41+00:00</updated>
-    <author>
-      <name>Osiris32-and-a-half</name>
-    </author>
-    <content>Cosmicwolf has added the ability to show the normal tech tree in game based on in game options. There are 3 options hidden (this is how it was before), Broken tree (the technologies are viable but they aren't put into a tree) and Tech tree (This shows the full tech tree on the normal modpack, however due to how Factorio handles how we have disabled research the techs it is extremely laggy to the point of crashing, am looking at ways to fix this but suggestions are always wanted)&#13;
-&#13;
-He has also added the information to tooltips in factoriopedia so technology names can still be found for hinting while using hidden tree&#13;
-&#13;
-Lastly I have fix a number of bugs that should fix the bob's modpack and quality&#13;
-&#13;
-**Full Changelog**: https://github.com/Osiris32-and-a-half/BobFactorioAP/compare/V2.3.0...V2.3.1</content>
-    <link href="https://github.com/Osiris32-and-a-half/BobFactorioAP/releases/tag/V2.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.4</id>
-    <title>La-Mulana 2 v1.0.4</title>
-    <updated>2026-09-11T15:47:29+00:00</updated>
-    <author>
-      <name>Crownmuri</name>
-    </author>
-    <author>
-      <name>Coookie93</name>
-    </author>
-    <content>## Supports: Mod v1.0.0+ -- Tracker v2.0.4+&#13;
-&#13;
-# Changelogs&#13;
-- [SH C-5] Enemy Glossary (Skuld) - changed from `HorizontalAttack` to `Has(Feather) and Has(Grapple Claw)`&#13;
-- DLC boss missing a region requirement</content>
-    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.5.0</id>
-    <title>Final Fantasy VIII v0.5.0</title>
-    <updated>2026-09-11T15:50:07+00:00</updated>
-    <author>
-      <name>ff8_arch</name>
-    </author>
-    <content>## Install
-
-1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
-2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
-3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.
-
-### Visual Tracker
-
-`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:
-
-1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
-2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
-3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
-
-Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
-
-Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
-
-
-## What's Changed
-* v0.5.0: in-game check names, DeathLink fix, Sync preset by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/2
-
-
-**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.4.0...v0.5.0</content>
-    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.3.0</id>
-    <title>Final Fantasy XIII-2 v0.3.0</title>
-    <updated>2026-09-11T18:57:49+00:00</updated>
-    <author>
-      <name>MLSTRM</name>
-    </author>
-    <content>Featural pass adding almost 30 new checks to the pool!&#13;
-&#13;
-Requires the newest available FFModdingWPF release for compatibility (version 0.8.2.57+)&#13;
-https://github.com/Bartz24/FFModdingWPF/releases/tag/pre-release-0.8&#13;
-&#13;
-Add all Oerba Temporal Rift rewards to the pool (20 checks)&#13;
-- This is all of the rift puzzles from Oerba 200, 300, and 400.&#13;
-- The final rift in each of 300 and 400 requires all but one of the fragment items from that area to be in your inventory, instead of just completing the rifts.&#13;
-- The Oerba 300 Aranaceous Artifact gate also requires 6 of the fragments from Oerba 300 to be in your inventory.&#13;
-&#13;
-Add all Serendipity fragments to the pool (5 checks, Lucky Coin added but marked as missable/excluded for now until easier adjustment of the success level is added. Casino Coin cost of the buyable fragments reduced significantly for easier logic, this will become an adjustable option in the future)&#13;
-- A single casino ticket will be enough to buy all of the 3 checks in the shop&#13;
-- The wild artefact has been removed from the pool due to being inaccessible as a treasure (and therefore not randomisable in the same way, will be added back in eventually).&#13;
-- Add missing Fragment Skills to the pool (Encounter Master and Chocobo Music have multiple parts that were not fully added, this is now resolved) (4 checks)&#13;
-&#13;
-Add text indicator in game when there are pending items to be obtained from the AP client&#13;
-&#13;
-Various logic fixes&#13;
-- Old Device marked as missable as handing in the fragment quest makes the location permanently inaccessible in a way that script modification is not currently resolving.&#13;
-- Corrected logic for Raised area in Yaschas Massif - Pass of Paddra (Access to non-10AF or 10AF+Hollow Artefact+Greens location)</content>
-    <link href="https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/tag/v0.6.0</id>
-    <title>Oblivion Remastered v0.6.0</title>
-    <updated>2026-09-11T19:02:37+00:00</updated>
-    <author>
-      <name>POD-io</name>
-    </author>
-    <content>## How to use&#13;
-&#13;
-For Archipelago instructions, see https://archipelago.gg/tutorial/&#13;
-&#13;
-1) Generate a new Archipelago multiworld.&#13;
-2) Launch the Oblivion Remastered Client from the ArchipelagoLauncher.exe.&#13;
-3) Connect to your server.&#13;
-4) Once connected, you can launch Oblivion Remastered through your mod manager and start playing.&#13;
-&#13;
-## v0.6.0 New Features&#13;
-&#13;
-- Bounty Contracts&#13;
-- Bounty Hunter Goal&#13;
-- Black Market&#13;
-- Weapon Lock&#13;
-- Oblivion Kill Checks&#13;
-- Wanted Trap&#13;
-- Skill XP Multiplier&#13;
-- New Unique Items&#13;
-- New Exploration Sidequests&#13;
-- Client Tracker Overhaul</content>
-    <link href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.6.0</id>
-    <title>Final Fantasy VIII v0.6.0</title>
-    <updated>2026-09-11T19:05:38+00:00</updated>
-    <author>
-      <name>ff8_arch</name>
-    </author>
-    <content>## Story Keys
-
-FF8 finally has doors. Twenty **"Key: &lt;area&gt;"** items, one per world-map entrance (Balamb, Dollet, Timber, Deling City, Winhill, Trabia Garden, Esthar City, Lunar Gate, the chocobo forests, ...). Without the key the town's entrance simply does not work: you walk onto it, nothing happens, and the client says `Locked: Key: Dollet`. The moment the key lands the door works again, right where you stand. No story faking, no file patching: the client rewrites one word of the table the game consults every step, and puts it back when the key arrives.
-
-- `story_keys: areas` — every key is a real door and the checks inside need it in logic, but the story path is never blocked.
-- `story_keys: story` — the doors the main line walks through stay shut too, so advancing the story needs keys other players hold. Balamb and Fire Cavern keys are yours from the start.
-- Keys carry their `/ff8warp` destination. New preset **Story Keys** (Staircase + `story_keys: story`).
-- Keys never open a town before the story does (early entry works, but town interiors assume the story state, so it stays off).
-- Also: the study panel credits both starter GFs when one is precollected (thanks Lexra), and the Jukebox trap picks from five tracks.
-
-Off by default while the feature is new. **Stability note:** v0.5.0 remains the stable release; report anything odd with `/ff8` output and the client log. Tracker pack 0.12.0 shows the keys and mirrors the rules.
-
-## Install
-
-1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
-2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
-3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.
-
-### Visual Tracker
-
-`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:
-
-1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
-2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
-3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
-
-Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
-
-Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
-
-
-## What's Changed
-* Story Keys: real world-map doors as key items (v0.6.0) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/3
-
-
-**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.5.0...v0.6.0
-</content>
-    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Nepley/mof-apworld/releases/tag/v0.2.0</id>
-    <title>Touhou Fuujinroku ~ Mountain of Faith v0.2.0</title>
-    <updated>2026-09-11T21:37:23+00:00</updated>
-    <author>
-      <name>Nepley</name>
-    </author>
-    <content>* Deathlink added&#13;
-* Fix traps failing generation and speed related traps not working&#13;
-* Fix ending requirement not working when set to "all shot types"</content>
-    <link href="https://github.com/Nepley/mof-apworld/releases/tag/v0.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.3</id>
     <title>Final Fantasy 1 PSP v0.2.3</title>
@@ -973,7 +675,7 @@ SM64ex hotfixes:&#13;
   </entry>
   <entry>
     <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.09.13</id>
-    <title>YARGGuitarHero2 v1.0.0</title>
+    <title>YARGBandHero v1.0.0</title>
     <updated>2026-09-13T15:08:53+00:00</updated>
     <author>
       <name>Energymaster22</name>
@@ -1015,6 +717,17 @@ All apworlds now require YARG AP Client 1.0.0 or newer.&#13;
 &#13;
 With this update, there are now over 1,000 songs supported by this project.</content>
     <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.09.13"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Happyhappyism/Bomberman-64-Archipelago/releases/tag/bomberman64_v0.1.5</id>
+    <title>Bomberman 64 v0.1.5</title>
+    <updated>2026-09-13T16:44:29+00:00</updated>
+    <author>
+      <name>Happyhappyism</name>
+    </author>
+    <content>## Fixes&#13;
+- Removed an EEPROM write to allow for Project 64 Bizhawk client compatibility</content>
+    <link href="https://github.com/Happyhappyism/Bomberman-64-Archipelago/releases/tag/bomberman64_v0.1.5"/>
   </entry>
   <entry>
     <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.10.0</id>
@@ -1156,6 +869,77 @@ Added instant crab bait as a catch tool&#13;
     <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.13"/>
   </entry>
   <entry>
+    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.2</id>
+    <title>Chrono Trigger Rando-Dalton Imperial v0.0.2</title>
+    <updated>2026-09-13T19:19:15+00:00</updated>
+    <author>
+      <name>Anguirel86</name>
+    </author>
+    <content>## Updated to the latest version of the RDI randomizer.&#13;
+ - Options have been regenerated to pick up a few new/modified options&#13;
+ - ctrando.zip package has been updated to the newest version of the rando&#13;
+&#13;
+&#13;
+## Release notes copied from RDI:&#13;
+### QoL, Bugfixes, and Logic Tweaks,&#13;
+This week's update is mainly fixes and QoL stuff to (partially) implement some recent suggestions.  The QoL stuff is all about boss text matching the assigned bosses.  When a boss name occurs in-game we want it to match the actual boss rando assignment.&#13;
+* Azala will call out the correct boss name in the Reptite Lair.&#13;
+* The Dragon Tank replacement will be properly named in text.  The manual dropped by the prison supervisor will also be updated.  The manuals are mostly meant to be helpful to describe boss behavior.  I'm open to suggestions because these are a bit rough!&#13;
+&#13;
+There are a few optional logic tweaks that were asked for.  The main complaint with recent seeds was too many seeds funneled into Magus Ocean Palace for flight.&#13;
+* `force_early_flight = true/false` is actually a flag that's been around for a while, but it wasn't advertised.  When set to `true` *and* `jets_of_time=true` it forces the jets to be logically available before the blackbird dungeon is available.&#13;
+* `magus_sequence_break_ocean_palace = true/false` controls whether logic believes Magus being able to enter ocean palace is in logic or a sequence break.  The default (`false`) is how we've been playing previously.&#13;
+* `magus_logical_magus_castle = true/false` controls whether logic believes Magus is required to get to the back half of Magus's castle.  The default (`false`) is how we've been playing previously.&#13;
+* The starter reward `proto_door` can be given so that the door to the portal is unlocked without having to do factory.&#13;
+&#13;
+There are a few notable bugfixes.&#13;
+* Many issues with the gauntlet should be fixed now.  These include skipped phases and lack of rewards copying for some bosses.&#13;
+* The R-Series "beast toss" should never softlock now.&#13;
+* It was possible to assign midbosses to boss spots, and that was creating some problems.  This is no longer allowed.  If your old tomls break, remove flea plus and super slash from boss_pool.</content>
+    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Happyhappyism/Rune-Factory-4-Archipelago/releases/tag/rune4_v0.3.0</id>
+    <title>Rune Factory 4 v0.3.0</title>
+    <updated>2026-09-13T23:21:42+00:00</updated>
+    <author>
+      <name>Happyhappyism</name>
+    </author>
+    <author>
+      <name>Caidryn</name>
+    </author>
+    <content>### Notes&#13;
+Pretty massive update this time with a lot of help from [arryndoestech](https://github.com/arryndoestech) who is working on some pretty cool mod tools for the game and a [poptracker pack](https://github.com/rdpeake/rune4-poptracker) made by [rdpeake](https://github.com/rdpeake)&#13;
+&#13;
+## New Features&#13;
+- Completely reworked the Save/Load system so that it no longer touches your vanilla saves&#13;
+- Setup has been completely reworked to be simplier reduced down to a prompt to move a single file&#13;
+- Boxsanity&#13;
+- Barriersanity&#13;
+- Requestsanity (Some locations still need testing and fixing)&#13;
+&#13;
+## Fixes&#13;
+- Added a patch to fix a crash when reloading to the main menu&#13;
+- Fixed an issue where monster moveset and ai randomization slot data was swapped&#13;
+- Fixed a backwards compatibility issue with slot data&#13;
+- Fixed an issue where bad file names would cause the client not to connect&#13;
+- Fixed a bug where craft level ups weren't received while offline&#13;
+- Yokmir Forest D1 Chest tier was reduced from 10 to 0&#13;
+- Added two missing chest locations&#13;
+- Fixed some bugged logic for recipe bread shipments and a few chests&#13;
+&#13;
+## Changes&#13;
+- Added tiering checks for chest, barrier and box locations&#13;
+- Added tabs to the client&#13;
+ - Added seed info tab to display seed information upon connecting&#13;
+&#13;
+&#13;
+## Other&#13;
+- Added slot data for shipsanities&#13;
+- Hopefully sped up the client loop a bit, locations get checked less frequently though</content>
+    <link href="https://github.com/Happyhappyism/Rune-Factory-4-Archipelago/releases/tag/rune4_v0.3.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.1</id>
     <title>AEMinecraft v0.6.1</title>
     <updated>2026-09-13T23:44:14+00:00</updated>
@@ -1212,5 +996,122 @@ just over 1 GB, and seeds without BACAP generate roughly twice as fast.&#13;
 &#13;
 **Changelog compared to v0.1.0**: https://github.com/Badhamknibbs/ArchipelagoNeonWhite/compare/v0.1.0...v0.1.1</content>
     <link href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.2</id>
+    <title>Taylor Swift Discography v1.2.2</title>
+    <updated>2026-09-14T01:59:18+00:00</updated>
+    <author>
+      <name>benny-dreamly</name>
+    </author>
+    <content>This release adds a new option to further toggle songs that aren't included in the main deluxe releases of albums like the demo tracks and the voice memos. Not much else to say other than that. &#13;
+&#13;
+Zip file of config files has changed this release. &#13;
+&#13;
+**Full Changelog**: https://github.com/benny-dreamly/Archipelago/compare/ts-1.2.1...ts-1.2.2</content>
+    <link href="https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.2</id>
+    <title>Rabbit and Steel v0.4.2</title>
+    <updated>2026-09-14T02:04:26+00:00</updated>
+    <author>
+      <name>tjwombo</name>
+    </author>
+    <content>fixed:&#13;
+3 kingdom runs not handling the last 2 hallways correctly&#13;
+&#13;
+added:&#13;
+mod version is printed on connection&#13;
+generation check to ensure all kingdoms for that run type is present in kingdom order option list if kingdom order is being used&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.4.2](https://github.com/tjwombo/RNSArchipelago/compare/v0.4.1...v0.4.2) - 2026-09-13&#13;
+&#13;
+### Commits&#13;
+&#13;
+- Add mod version to info printed [`c22ec0b`](https://github.com/tjwombo/RNSArchipelago/commit/c22ec0b077a64ef319cb6b174e346166ef079948)&#13;
+- Fixed last 2 hallway check on 3 kingdom runs [`ecd1141`](https://github.com/tjwombo/RNSArchipelago/commit/ecd1141039d2d251bf58c51f02753a49bb3ddf63)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.2</id>
+    <title>AEMinecraft v0.6.2</title>
+    <updated>2026-09-14T02:26:49+00:00</updated>
+    <author>
+      <name>KuroLynx</name>
+    </author>
+    <content>## AEMinecraft v0.6.2&#13;
+&#13;
+  A logic release. Many checks showed as reachable before the game, or the mod, would let you complete them. A few others were harder than they should have been.&#13;
+&#13;
+  ### Fixed&#13;
+&#13;
+  **Checks that were in logic too early.** Each of these could show as reachable while something the game requires, or something the mod locks, was still missing:&#13;
+&#13;
+  - **Villager and Wandering Trader trades.** Checks about the Wandering Trader (Travelling Merchant, Shady Deals, Florist, Rebuilding the Oceans) now need the Wandering Trader, not just any villager. Trading for locked items (All chained up, Retro Future Knight) now needs the Knowledge and Material Handling to take them out of the trade.&#13;
+  - **Tools and armor from trades, chests and mobs** now need their Material Handling tier, the same as the mod requires. A stone pickaxe bought from a toolsmith no longer counts with zero Material Handling.&#13;
+  - **Checks about a mob** need that mob unlocked:&#13;
+    - I'm in Lava With You, Death by Magic, Gas!, My eyes!, Spleaf&#13;
+    - Arbalistic, It Spreads, What's Up, Doc?, Surge Protector&#13;
+    - BACAP challenges such as Beef Moover, Overwarden, The World Is Ending and Why do I hear boss music?&#13;
+  - **Charcoal and composters.** Renewable Energy needs the smelting recipe; breaking a campfire no longer counts. Knowledge: Crafter only lets you craft together with Knowledge: Crafting Table.&#13;
+  - **Potion effects on mobs** are now required (Gas Bomb).&#13;
+  - **Mob Kabob** asks for a spear instead of a trident.&#13;
+&#13;
+  **Checks that were wrongly locked or unpriced.**&#13;
+&#13;
+  - **Kilometre Walk** no longer waits for the Biomes tab.&#13;
+  - **All the Items!, All the Blocks!, Pottery Exhibition, Tricky Treasures, sus** and a few others used to fall back to "reach the previous advancement". They now require what  they actually need:&#13;
+    - creeper-drop music discs&#13;
+    - Trial Chamber pottery sherds&#13;
+    - firework stars&#13;
+    - suspicious sand and gravel, which drop when they fall onto a cobweb&#13;
+  - **Levitation, Dolphin's Grace and Conduit Power** no longer require a brewing stand.&#13;
+&#13;
+  ### Biome Finder&#13;
+&#13;
+  - **Items that only grow in rare biomes** need the Biome Finder, or a structure that contains them, when the Biome Finder is enabled. That covers cocoa beans, glow berries, melons, jungle and pale oak wood, moss, dripleaves, sculk and mycelium.&#13;
+  - **Mobs that live in a rare biome** now show as possible-with-effort (yellow) without the Biome Finder, instead of out of logic, as long as the mob itself is unlocked.&#13;
+&#13;
+  ### Upgrading&#13;
+&#13;
+  - **Only the apworld changed for players.** The mod gains a developer dump command but nothing that affects play, so the v0.6.1 mod jar keeps working.&#13;
+  - **Seeds generated with v0.6.1 are unaffected** and can be finished as they are.&#13;
+  - **Regenerating a v0.6.1 seed with v0.6.2 gives a different placement**, because the logic is stricter.&#13;
+  - **No YAML changes are required.**</content>
+    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/tag/v0.2.0</id>
+    <title>Signalis v0.2.0</title>
+    <updated>2026-09-14T04:11:47+00:00</updated>
+    <author>
+      <name>devoidlazarus</name>
+    </author>
+    <content>### New Features&#13;
+&#13;
+- Thank you to [pl4gue](https://github.com/pl4gue) for implementing a revamped Archipelago connection menu&#13;
+&#13;
+### Bug Fixes&#13;
+&#13;
+- An additional thank you to pl4gue for fixing deathlink&#13;
+- Several logic fixes&#13;
+&#13;
+### Known Issues&#13;
+- Goals associated with game endings are currently broken (selecting Artifact ending in the YAML options will still generate the Keys in the item pool, but beating the game by fighting FLKR will incorrectly Goal the slot)&#13;
+&#13;
+[README](https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/blob/main/README.md)*&#13;
+[Installation instructions](https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/blob/main/installation_instructions.md)&#13;
+&#13;
+*Please read the README before playing!</content>
+    <link href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/tag/v0.2.0"/>
   </entry>
 </feed>

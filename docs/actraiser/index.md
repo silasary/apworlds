@@ -5,7 +5,7 @@ the Majoras Mask and Donkey Kong Country 3 Apworlds.
 
 
 ## Downloads
-- <a href="https://github.com/Happyhappyism/Archipelago/releases/download/apraiser_v134/actraiser.apworld">Latest Version (1.3.4)</a>
+- <a href="https://github.com/Happyhappyism/Actraiser-Archipelago/releases/download/actraiser_v1.3.5/actraiser.apworld">Latest Version (1.3.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
