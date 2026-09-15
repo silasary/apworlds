@@ -2,33 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-15T06:17:18.578029+00:00</updated>
+  <updated>2026-09-15T12:22:15.646718+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.2.0</id>
-    <title>Peggle Deluxe v2.2.0</title>
-    <updated>2026-09-12T19:12:25+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is a feature release that also includes a fix.&#13;
-&#13;
-**This release IS compatible with games generated on the previous version (2.1.0)**&#13;
-&#13;
-- **Feature:** Added in / out of logic location counts under each level image in the Levels section of the custom client tab. Requires Universal Tracker to be installed&#13;
-- **Feature:** The section of the custom client tab showing information about the current level now lists what locations are accessible in / out of logic. Requires Universal Tracker to be installed&#13;
-- **Fix:** Added an extra guard around the detection of Fever Meter Full location checks&#13;
-&#13;
-If the Universal Tracker APWorld cannot be not found, the custom client tab will simply not display this new information.&#13;
-&#13;
-&lt;img width="697" height="642" alt="image" src="https://github.com/user-attachments/assets/f2ba7b28-39a8-4ab6-a76f-963f52a36ac7" /&gt;&#13;
-&lt;img width="768" height="356" alt="image" src="https://github.com/user-attachments/assets/5300faf4-7a7e-4107-9a5b-83e80f95f2f2" /&gt;&#13;
-</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/nepcore/RwbyAP/releases/tag/v0.2.2</id>
     <title>RWBY Grimm Eclipse v0.2.2</title>
@@ -219,7 +197,7 @@ For a explanations of the randomizer and its features or installation and setup:
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `feb36b006a86efcec8b222bb4f3958d25211f601`.
+Built from `9160adad8a2ee2bf6467ad9c1bddfd348b2886b4`.
 
 ## Downloads
 
@@ -228,6 +206,21 @@ Built from `feb36b006a86efcec8b222bb4f3958d25211f601`.
 
 ## Since v1.15.0
 
+- chore(beads): three bugs the Compose admin review turned up
+- fix(launcher): the shipped random start mission passes the run preflight
+- fix(docker): what running the Compose admin on a plain Docker Engine found
+- fix(settings): a room's string reads back as the same room
+- fix(docker): detect installed SigMod
+- fix(ui): report community archive extraction progress
+- fix(docker): show asset progress and handle server mods
+- fix(docker): install downloaded community assets
+- fix(docker): reload saved settings in admin
+- feat(docker): configure Funnel from admin UI
+- fix(docker): read Steam relay from srcds log
+- docs(docker): show the forced restart command
+- fix(ci): point fork nightlies at fork images
+- fix(docker): retry stalled Steam relay startup
+- feat(docker): serve persistent admin UI
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
@@ -1475,5 +1468,19 @@ Free code signing for open source projects, provided by
 - Various region connection adjustments&#13;
 - Various logic fixes</content>
     <link href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.4.6</id>
+    <title>Factorio: Platformer v0.4.6</title>
+    <updated>2026-09-15T07:40:46+00:00</updated>
+    <author>
+      <name>lepideble</name>
+    </author>
+    <content>## What's Changed&#13;
+* Fix typo in variable name by @lepideble in https://github.com/lepideble/factorio-apworld/pull/73&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.4.5...platformer-0.4.6</content>
+    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.4.6"/>
   </entry>
 </feed>
