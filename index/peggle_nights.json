@@ -122,6 +122,21 @@
       "title": "Peggle Nights - 1.2.0",
       "version_simple": "1.2.0",
       "world_version": "1.2.0"
+    },
+    "peggle-nights-v2.0.0": {
+      "created_at": "2026-09-15T02:27:06Z",
+      "description": "This is a major feature release that also includes improvements and tweaks. \r\nIt brings Peggle Nights to parity with the features of Peggle Deluxe 2.2.0.\r\n\r\n**This release is NOT compatible with games generated on the previous version.**\r\n\r\n- **Feature:** In-Game Level Locking\r\n- **Feature:** In-Game Master Locking\r\n- **Feature:** Progressive Fever Meter Threshold items have been completely replaced by level-specific Progressive Orange Pegs items, leading to more interesting and layered progression, as well as requiring a bit more skill for the early game phase\r\n- **Feature:** Purple Pegs are now unlockable by level\r\n- **Feature:** Each Peggle Master now has their own set of Progressive Green Pegs items, creating opportunities for suboptimal masters to now be optimal to play under certain circumstances\r\n- **Feature:** Added in / out of logic location counts under each level image in the Levels section of the custom client tab. Requires Universal Tracker to be installed\r\n- **Feature:** The section of the custom client tab showing information about the current level now lists what locations are accessible in / out of logic. Requires Universal Tracker to be installed\r\n- **Improvement:** To avoid the confusion that was present in 1.x.x around getting fever mode and no completion check, Level Clear location checks will now unlock after any fever mode completes. They will require half your starting ball items logically, but nothing prevents them from triggering\r\n- **Improvement:** To preserve the relevance of the 4th Progressive Orange Pegs item now that level completions have moved to the early-mid game, new Fever Meter Full location checks have been added\r\n- **Improvement:** Starting level count increased from 1 to 3\r\n- **Improvement:** Starting ball count is now set through a custom code patch instead of directly setting the memory value, meaning that the Ball-O-Tron will now always display the correct amount of balls\r\n- **Improvement:** Getting the required quantity of Shadow Pegs is now all that's needed to access and clear the final level. No extra items to chase\r\n- **Improvement:** Added 3 extra copies of Progressive Starting Ball Increase and 1 extra copy of each Progressive Orange Pegs variant to allow for less restrictive progression and reaching the cap faster\r\n- **Improvement:** Slightly reworked logic, mainly around fever meter multipliers\r\n- **Improvement:** Custom client tab has been updated to reflect the new features\r\n- **Tweak:** Permanent Fever Meter Bonus useful items have been removed\r\n\r\n_No new YAML options. Minimum level count is now 15 to make room for all the new items. You will need to remove Permanent Fever Meter Bonus from your useful item weights for existing YAMLs to be valid_\r\n\r\nThe implementation now has proper [documentation](https://github.com/SerpentAI/Archipelago/blob/peggle-nights/worlds/peggle_nights/docs/en_Peggle_Nights.md) and a [setup guide](https://github.com/SerpentAI/Archipelago/blob/peggle-nights/worlds/peggle_nights/docs/setup_en.md)",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/peggle-nights-v2.0.0/peggle_nights.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3c5ff103d782e2070312bf287d3754ec4badcc4695167fb599f1abde9f722f07",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v2.0.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 2471186,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "peggle-nights-v2.0.0",
+      "title": "Peggle Nights - 2.0.0",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0"
     }
   }
 }

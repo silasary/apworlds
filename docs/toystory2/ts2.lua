@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "2.3.0"
+TS2_VERSION = "2.3.1"
 
 -- ── Debug logging (OFF by default) ──────────────────────────────────────────
 -- A player who hits a bug (a crash, a stuck connection, a wrong send) can set
@@ -239,7 +239,14 @@ EJECT_LVL         = 0x1FE953   -- lua -> client, the level they were thrown out 
 -- free: 0x1FE954 - 0x1FE95F
 SHOP_NAME_LVL     = 0x1FEB20   -- client -> lua, which level the names describe
 SHOP_NAMES_BASE   = 0x1FEB21   -- client -> lua, 6 x 36 bytes, NUL padded
--- free: 0x1FEBF9 - 0x1FEC3F
+SHOP_PROG_MASK    = 0x1FEC1F   -- client -> lua, bit per slot: reads as progression
+-- Missing toy reward (2.3.1). Client -> lua, one level's worth at a time, the
+-- same shape as the shop's name buffer; and one byte back the other way so the
+-- client knows the offer was just read and can hint it.
+TOY_NAME_LVL  = 0x1FEBF9   -- level the buffer below describes (0 = nothing)
+TOY_NAME_BASE = 0x1FEBFA   -- 36 bytes, "owner|item", NUL padded
+TOY_HINT_LVL  = 0x1FEC1E   -- lua -> client, level whose offer was just shown
+-- free: 0x1FEC1F - 0x1FEC3F
 
 SHOP_NAME_W       = 36   -- the item name gets a whole line to itself
 SHOP_WIDTH        = 36
@@ -992,7 +999,94 @@ local DIALOG_SIGNATURES = {
     },
     hamm_uncollected={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x69,0x66,0x20,0x79,0x6F,0x75,0x20,0x63,0x61,0x6E,0x20,0x62,0x72,0x69,0x6E,0x67,0x20,0x6D,0x65,0x20,0x5E,0x66,0x69,0x66,0x74,0x79,0x5E},
     hamm_collected={0x77,0x65,0x6C,0x6C,0x20,0x64,0x6F,0x6E,0x65,0x20,0x62,0x75,0x7A,0x7A,0x21},
+    -- First 24 bytes of each missing-toy offer. Compared case-insensitively
+    -- (match_sig_ci): these came from a transcription, and losing a
+    -- replacement to one capital letter would be a silly way to fail.
+    toys = {
+        [1]={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x70,0x6C,0x65,0x61,0x73,0x65,0x20,0x66,0x69,0x6E,0x64,0x20,0x6D,0x79,0x20},   -- AH
+        [2]={0x69,0x20,0x6E,0x65,0x65,0x64,0x20,0x79,0x6F,0x75,0x72,0x20,0x68,0x65,0x6C,0x70,0x2C,0x20,0x73,0x70,0x61,0x63,0x65,0x20},   -- AN
+        [4]={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x69,0x66,0x20,0x79,0x6F,0x75,0x20,0x66,0x69,0x6E,0x64,0x20,0x6D,0x79,0x20},   -- CY
+        [5]={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x69,0x20,0x68,0x61,0x76,0x65,0x20,0x6C,0x6F,0x73,0x74,0x20,0x61,0x6C,0x6C},   -- AaG
+        [7]={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x69,0x66,0x20,0x79,0x6F,0x75,0x20,0x66,0x69,0x6E,0x64,0x20,0x6D,0x79,0x20},   -- ATB
+        [8]={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x69,0x66,0x20,0x79,0x6F,0x75,0x20,0x66,0x69,0x6E,0x64,0x20,0x6D,0x79,0x20},   -- ASL
+        [10]={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x69,0x66,0x20,0x79,0x6F,0x75,0x20,0x66,0x69,0x6E,0x64,0x20,0x6D,0x79,0x20},   -- EH
+        [11]={0x68,0x6F,0x77,0x64,0x79,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x61,0x6C,0x6C,0x20,0x6D,0x79,0x20,0x5E,0x63,0x72,0x69,0x74},   -- AP
+        [13]={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x69,0x66,0x20,0x79,0x6F,0x75,0x20,0x63,0x61,0x6E,0x20,0x66,0x69,0x6E,0x64},   -- AI
+        [14]={0x68,0x69,0x20,0x62,0x75,0x7A,0x7A,0x21,0x20,0x69,0x20,0x68,0x61,0x76,0x65,0x20,0x6C,0x6F,0x73,0x74,0x20,0x5E,0x66,0x69},   -- TT
+    },
 }
+
+-- ============================================================
+-- MISSING TOY REWARD DIALOG  (2.3.1)
+-- ============================================================
+-- The character who wants five toys offers "a pizza planet token". In a
+-- randomizer that is never what you get, so the offer is rewritten to name the
+-- reward -- who it is for and what it is -- exactly as Hamm's page does.
+--
+-- Composed at runtime rather than stored, because the reward is the client's to
+-- publish and its length varies: TOY_PREFIX is everything up to the offer, and
+-- toy_wrap re-flows the result to the box's 36 columns. Wrapping rather than
+-- hand-padding is the point -- a hand-padded string is only correct for one
+-- player name.
+--
+-- One caret was unbalanced in the vanilla Al's Penthouse line ("^five of them",
+-- no closing caret), which turned the rest of that box green. Balanced here.
+TOY_PREFIX = {
+    [1] = "hi buzz! please find my ^five^ missing ^sheep^. when you find them come back and see me for ",
+    [2] = "i need your help, space ranger! ^five^ of my ^troops^ are lost. look for the ^flares^ they are using to signal to you. locate them for me and i will give you ",
+    [4] = "hi buzz! if you find my ^five^ missing ^little tikes^ and come back and find me, i will give you ",
+    [5] = "hi buzz! i have lost all my ^baby ducklings^! if you can find all ^five^ of them and come and see me, i will give you ",
+    [7] = "hi buzz! if you find my ^five^ missing ^chicks^ and come back and find me, i will give you ",
+    [8] = "hi buzz! if you find my ^five^ missing ^aliens^ and come back and find me, i will give you ",
+    [10] = "hi buzz! if you find my ^five^ missing ^baby mice^ and come back and find me, i will give you ",
+    [11] = "howdy buzz! all my ^critters^ have escaped! if you can find all ^five^ of them and come and see me, i will give you ",
+    [13] = "hi buzz! if you can find ^five little toke passengers^ for my next flight i will give you ",
+    [14] = "hi buzz! i have lost ^five^ pieces of ^luggage^. if you can find them for me, i will give you ",
+}
+
+-- Greedy wrap to TOY_WIDTH VISIBLE columns. '^' is a zero-width colour toggle,
+-- so it must not count against the width -- shop_visible_len already knows that.
+TOY_WIDTH = 36
+function toy_wrap(text)
+    local out, line = {}, ""
+    for word in text:gmatch("%S+") do
+        local cand = (line == "") and word or (line .. " " .. word)
+        if shop_visible_len(cand) <= TOY_WIDTH then
+            line = cand
+        else
+            out[#out+1] = shop_pad_line(line)
+            line = word
+        end
+    end
+    if line ~= "" then out[#out+1] = line end
+    return table.concat(out)
+end
+
+-- What the client last published for this level, as "owner|item". Returns nil
+-- when it has not caught up (the player sprinted to the character on entry), and
+-- the caller then leaves the vanilla line alone rather than showing a blank.
+function toy_reward_label(level)
+    if mainmemory.read_u8(TOY_NAME_LVL) ~= level then return nil end
+    local b = {}
+    for i = 0, 35 do
+        local c = mainmemory.read_u8(TOY_NAME_BASE + i)
+        if c == 0 then break end
+        b[#b+1] = string.char(c)
+    end
+    local s = table.concat(b)
+    if s == "" then return nil end
+    local owner, item = s:match("^(.-)|(.*)$")
+    if not owner or owner == "" or item == "" then return nil end
+    return owner, item
+end
+
+-- The whole rewritten line, or nil to leave the vanilla text in place.
+function toy_dialog_for(level)
+    local prefix = TOY_PREFIX[level]; if not prefix then return nil end
+    local owner, item = toy_reward_label(level)
+    if not owner then return nil end
+    return toy_wrap(prefix .. owner .. "'s ^" .. item .. "^.")
+end
 
 local NEW_DIALOG = {
     potato_uncollected = {
@@ -1297,6 +1391,22 @@ end
 
 function match_sig(bytes,sig)
     for i,v in ipairs(sig) do if v~=0x00 and bytes[i]~=v then return false end end
+    return true
+end
+
+-- Case-insensitive variant, for signatures taken from a transcription rather
+-- than from the ROM. Only the missing-toy offers use it: their text was typed
+-- out by hand, and losing a replacement to one capital letter would be a silly
+-- way to fail.
+function match_sig_ci(bytes,sig)
+    for i,v in ipairs(sig) do
+        if v~=0x00 then
+            local a,b = bytes[i] or 0, v
+            if a>=0x41 and a<=0x5A then a=a+0x20 end
+            if b>=0x41 and b<=0x5A then b=b+0x20 end
+            if a~=b then return false end
+        end
+    end
     return true
 end
 
@@ -2020,6 +2130,13 @@ end
 -- Who the item in this slot belongs to. Empty when the client has not caught up
 -- yet, in which case the page simply leaves that column blank rather than
 -- printing a stand-in that looks like a player name.
+-- Does this slot read as a progressive item? Shares SHOP_NAME_LVL with the
+-- names, so a stale mask can never be paired with the current page.
+function shop_slot_is_prog(level, slot)
+    if mainmemory.read_u8(SHOP_NAME_LVL) ~= level then return false end
+    return (mainmemory.read_u8(SHOP_PROG_MASK) & (1 << (slot - 1))) ~= 0
+end
+
 function shop_item_owner(level, slot)
     local s = shop_slot_text(level, slot)
     if not s then return "" end
@@ -2080,8 +2197,9 @@ function shop_write_page(level)
             --
             -- Everything on this page is by definition unaffordable -- talking
             -- to Hamm already took everything the player qualified for -- so
-            -- nothing here is ever highlighted. Green means "yours now", and
-            -- nothing on this page is.
+            -- the COST is never highlighted. "Affordable" had no way to show
+            -- here: a slot you could pay for was claimed before the page was
+            -- drawn. Colour is spent on the item instead (see line 2).
             local cost  = string.format("%d coin%s", price, price == 1 and "" or "s")
             local whose = (owner ~= "") and (owner .. "'s") or ""
             local gap = SHOP_WIDTH - #cost - #whose
@@ -2089,7 +2207,22 @@ function shop_write_page(level)
             t[#t+1] = shop_pad_line(cost .. string.rep(" ", gap) .. whose)
 
             -- Line 2: the item name, centred, with the whole width to itself.
-            t[#t+1] = shop_pad_line(shop_centre(shop_fit(name, SHOP_NAME_W)))
+            -- Green when the slot reads as a PROGRESSIVE item, so the page says
+            -- at a glance which rows are worth combing the level for. A trap is
+            -- green too -- shop_class_name calls one "progressive item" on
+            -- purpose, and the highlight follows the lie rather than the truth.
+            --
+            -- Fitted one character shorter when highlighted, so the centred line
+            -- always keeps a trailing space. A line that ENDS on a toggle trips
+            -- the guard below, which appends a whole blank line -- and on a full
+            -- six-slot shop that is a fifteenth line in a box that renders
+            -- fourteen.
+            if shop_slot_is_prog(level, i) then
+                t[#t+1] = shop_pad_line(shop_centre(
+                    "^" .. shop_fit(name, SHOP_NAME_W - 1) .. "^"))
+            else
+                t[#t+1] = shop_pad_line(shop_centre(shop_fit(name, SHOP_NAME_W)))
+            end
         end
     end
 
@@ -2240,6 +2373,48 @@ function update_hamm_shop(level)
     -- the page is written.
     if not is_hamm_shop() or not SHOP_LEVEL_INDEX[level] then return end
     shop_publish_bought(level)
+end
+
+-- ── SERVER-SEEDED DESPAWN (2.3.1) ───────────────────────────
+-- Hide what the SERVER already says you collected, from the frame the level
+-- starts rather than from the frame you start moving.
+--
+-- The settle timer and buzz_moved exist to protect DETECTION: during the load
+-- these pickup addresses transiently read 5 ("collected"), and acting on that
+-- read is where phantom checks came from. This function never reads them. Its
+-- only input is SHARED_DESPAWN_*, which the client derives from
+-- checked_locations -- server truth that load garbage cannot corrupt -- so the
+-- reason for those gates simply does not apply to it.
+--
+-- It writes ONLY the collected value, never `uncollected`. That asymmetry is
+-- what makes it safe to run this early: it can hide a pickup but never reveal
+-- one, never fights the game's own spawn logic (which is why lasers are
+-- write-collected-only in write_sanity_items too), and cannot cause a check --
+-- check_sanity_pickups already ORs this same seed into its mask, so every bit
+-- written here was going to be set anyway.
+--
+-- Called every frame from level entry, because a write that lands before the
+-- game has placed the pickup is simply overwritten; re-asserting means it takes
+-- effect on the first frame the object actually exists.
+function apply_despawn_seeds(level)
+    if is_batterysanity() and BATTERIES[level] then
+        local seed = mainmemory.read_u8(SHARED_DESPAWN_BATTERY)
+        for i,item in ipairs(BATTERIES[level]) do
+            if (seed & (1<<(i-1))) ~= 0 then mainmemory.write_u8(item.addr,5) end
+        end
+    end
+    if is_lifesanity() and LIVES[level] then
+        local seed = mainmemory.read_u8(SHARED_DESPAWN_LIFE)
+        for i,item in ipairs(LIVES[level]) do
+            if (seed & (1<<(i-1))) ~= 0 then mainmemory.write_u8(item.addr,5) end
+        end
+    end
+    if is_lasersanity() and LASERS_SANITY[level] then
+        local seed = mainmemory.read_u8(SHARED_DESPAWN_LASER)
+        for i,item in ipairs(LASERS_SANITY[level]) do
+            if (seed & (1<<(i-1))) ~= 0 then mainmemory.write_u8(item.addr,5) end
+        end
+    end
 end
 
 function write_sanity_items(level)
@@ -3163,11 +3338,21 @@ function update_boss(level)
     if level==6 then
         -- Bombs Away. Like the other bosses, require having SEEN THE BOSS ALIVE
         -- (hp>0) at least once this entry before accepting hp==0 as a defeat.
+        --
+        -- 2.3.1: this branch is NOT trusted on its own any more. A.BOSS_HP was
+        -- only ever verified on the other three bosses -- the comment below says
+        -- as much, "Bombs Away's spawn value isn't known" -- and a run where the
+        -- boss was killed with Stomp registered no defeat at all: no early fire,
+        -- no late fire, nothing, which is what a byte that never reads alive in
+        -- this level looks like. bombs_seen_alive records whether it EVER reads
+        -- non-zero here, so the fallback in on_level_change can tell "the fight
+        -- happened and HP told us" from "this address is not the boss's HP".
         -- Without this gate, the transient hp==0 the game shows during the
         -- level-load window (before the boss object initializes) fired the defeat
         -- the instant the level loaded. The other boss branches gate on their exact
         -- spawn HP (99/26/29); Bombs Away's spawn value isn't known, so "seen alive"
         -- is the robust equivalent.
+        if hp>0 then bombs_seen_alive=true end
         if (defeats&(1<<0))==0 then
             if hp>0 then boss_started.bombs=true end
             if boss_started.bombs and hp==0 and not boss_defeated then
@@ -3461,6 +3646,26 @@ function update_potato(level)
                 end
             end
         end
+        -- ── MISSING TOY OFFER ────────────────────────────
+        -- Rewrite "a pizza planet token" into what the reward actually is. Runs
+        -- in every seed; the Missing Toy Reward Hint option only decides whether
+        -- the client publishes the item's NAME or its CLASS, and whether the
+        -- stamp below turns into a real multiworld hint.
+        --
+        -- Same one-shot timing as the shop: the game blits the dialog to VRAM on
+        -- the rising edge of the open tween and ignores the buffer afterwards.
+        if DIALOG_SIGNATURES.toys[level]
+           and match_sig_ci(bytes, DIALOG_SIGNATURES.toys[level]) then
+            local line = toy_dialog_for(level)
+            if line then
+                write_dialog(line)
+                -- Tell the client whose offer was just read. It decides what to
+                -- do with that -- a hint, or nothing at all.
+                mainmemory.write_u8(TOY_HINT_LVL, level)
+                ts2_debug("missing toy offer rewritten in level "..level)
+            end
+        end
+
         if match_sig(bytes,DIALOG_SIGNATURES.hamm_uncollected) then
             -- Shopsanity: this is the ONLY moment the page can be written. The
             -- game blits the dialog to VRAM once, on the rising edge of the open
@@ -3491,6 +3696,11 @@ function update_potato(level)
 end
 
 function update_sanity(level)
+    -- Server-seeded despawn first, and ungated: see apply_despawn_seeds. This is
+    -- the part that used to wait for the player to start moving, which is what
+    -- made already-collected pickups visibly pop out from under them.
+    apply_despawn_seeds(level)
+
     -- Wait for the level to settle after load before reading pickup state.
     -- During the load animation the pickup addresses can transiently read as
     -- collected (value 5), which would fire phantom life/battery/laser checks.
@@ -4119,6 +4329,10 @@ end
 -- ============================================================
 -- ON LEVEL CHANGE
 -- ============================================================
+-- Did A.BOSS_HP ever read non-zero during THIS visit to Bombs Away? Global, not
+-- local: the main chunk is at Lua's 200-local ceiling.
+bombs_seen_alive = false
+
 function reset_boss_detection()
     -- Volatile per-fight detection state. These are LUA variables, which a BizHawk
     -- savestate does NOT revert (it only reverts game RAM). So after a savestate
@@ -4132,10 +4346,36 @@ function reset_boss_detection()
     boss_started.bombs=false; boss_started.zurg=false
     prosp_loading=false
     toybarn_real_hit=false; toybarn_last_hp=-1
+    bombs_seen_alive=false
 end
 
 function on_level_change(new_level, prev_level)
     ts2_debug(string.format("level change: %d -> %d", prev_level, new_level))
+
+    -- ── BOMBS AWAY DEFEAT FALLBACK ───────────────────────
+    -- Reaching a boss's defeat screen is the game's own statement that the boss
+    -- was beaten -- you cannot get to 35 from Bombs Away without finishing it.
+    -- This is deliberately NOT the general mechanism: the other three bosses have
+    -- verified HP addresses and detect the kill during the fight, which is
+    -- earlier and better. Bombs Away does not, so it gets the coarser signal.
+    --
+    -- Guarded so it cannot fire on anything but a real fight:
+    --   prev_level==6            -- we were actually in Bombs Away
+    --   new_level is ITS screen  -- 35, not another boss's
+    --   buzz_moved               -- the level was played, not just loaded through
+    --   not bombs_seen_alive     -- HP never read alive, so update_boss had no
+    --                               chance to fire. If the HP address DOES work,
+    --                               this stays out of the way entirely.
+    -- Runs BEFORE reset_boss_detection(), which clears the flags it reads.
+    if prev_level==6 and new_level==35 and buzz_moved and not bombs_seen_alive then
+        local d = mainmemory.read_u8(SHARED_BOSS_DEFEATS)
+        if (d & (1<<0))==0 then
+            mainmemory.write_u8(SHARED_BOSS_DEFEATS, d|(1<<0))
+            ts2_debug("boss defeat detected: Bombs Away (bit 0) via defeat screen "
+                .. "-- A.BOSS_HP never read alive in this level")
+        end
+    end
+
     -- Cutscene trap: run its level-change state machine FIRST (it inspects the
     -- new level + hover to decide whether to cancel, keep alive, or chain).
     cs_on_level_change(new_level)

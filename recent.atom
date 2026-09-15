@@ -2,148 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-15T00:26:23.271324+00:00</updated>
+  <updated>2026-09-15T06:17:18.578029+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/tag/2026.09.12</id>
-    <title>Manual_Fellowship_Chakraa v2026.9.12</title>
-    <updated>2026-09-12T14:35:36+00:00</updated>
-    <author>
-      <name>ChakraaThePanda</name>
-    </author>
-    <content>### UPDATED&#13;
-- Updated the underlying Manual template to the latest stable release (2026.03.19). This is the first template sync since the project's initial release.&#13;
-&#13;
-### FIXED&#13;
-- The "Items Received" list no longer shows a Hero's category when that Hero is disabled via its include option. It used to keep listing them empty even when they could never appear in your pool.&#13;
-&#13;
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/compare/2026.02.23...2026.09.12</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-Fellowship/releases/tag/2026.09.12"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/tag/2026.09.12</id>
-    <title>Manual_TheVault_Chakraa v2026.9.12</title>
-    <updated>2026-09-12T14:35:53+00:00</updated>
-    <author>
-      <name>ChakraaThePanda</name>
-    </author>
-    <content>### UPDATED
-- Updated the underlying Manual template to the latest stable release (2026.03.19), previously on 2025.08.13.
-
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/compare/2025.09.01...2026.09.12</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-TheVault/releases/tag/2026.09.12"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/tag/2026.09.12</id>
-    <title>Manual_WatchAShow_Chakraa v2026.9.12</title>
-    <updated>2026-09-12T14:36:01+00:00</updated>
-    <author>
-      <name>ChakraaThePanda</name>
-    </author>
-    <content>### UPDATED
-- Updated the underlying Manual template to the latest stable release (2026.03.19), previously on 2025.08.13.
-
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/compare/2026.03.09...2026.09.12</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/tag/2026.09.12"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release3</id>
-    <title>Ocarina of Time v9.1.0r2</title>
-    <updated>2026-09-12T15:22:37+00:00</updated>
-    <author>
-      <name>espeon65536</name>
-    </author>
-    <author>
-      <name>TreZ</name>
-    </author>
-    <content># OoT Randomizer APWorld v9.1.0 Full Release 3&#13;
-&#13;
-This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
-&#13;
-## Changes:&#13;
-- Fixed a few wonderitem and pot id swaps that were also noticed in upstream during v9 development&#13;
-- Added an upstream like retry for invalid stone layouts with adult spawn&#13;
-&#13;
-Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.&#13;
-Even after deletion, the "Open Patch" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct "Ocarina of Time Client" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says "Archipelago Ocarina of Time Client 0.6.x" in the top bar with no info about the apworld version, you are using the old client.</content>
-    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.1-alpha1</id>
-    <title>Crash Team Racing v0.2.1a1</title>
-    <updated>2026-09-12T17:13:17+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content># CTR Archipelago v0.2.1-alpha1
-
-This prerelease adds more ways to race Turbo Track and Slide Coliseum, brings Cortex Vortex to the Oxide 2 showdown, and fixes a few frustrating hub issues.
-
-It is available for testing and feedback. **0.2.0 remains the latest stable release.**
-
-## Getting started
-
-Download `ctr-archipelago-0.2.1-alpha1-windows-x86.zip` (Windows) or `ctr-archipelago-0.2.1-alpha1-linux-x86.tar.gz` (Linux and Steam Deck) below. Each includes the client and matching `ctr.apworld`; use both together when setting up a new game.
-
-Follow the [CTR setup guide](https://ap-pie.com/guides/ctr) or the `SETUP.md` included in the ZIP. [Setup instructions are also available here](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md). You will need your own game disc; the download does not include the original game's assets.
-
-## What's new
-
-- **Turbo Track and Slide Coliseum:** Both now support Trophy Races and CTR Challenges, including lettersanity and the same position/podium checks as other tracks. Their hub minimap colors now follow the usual rules, and letters you have not unlocked appear translucent. Trophy podium checks only count in Trophy Races, just like on other tracks.
-- **Cortex Vortex:** This custom track is included in the download and is now the default track for Oxide 2. The crash encountered during this race has been fixed.
-- **Optional Oxide 1:** If your goal is Oxide 2, you can now choose whether you need to beat Oxide 1 first. See the settings below.
-- **Hub doors:** Doors between hubs and the door to the Gem Cup room now stay open after reloading your game.
-- **Character changes:** Changing characters in the hub transition tunnels no longer freezes the game.
-- **CTR letters notification:** With lettersanity set to send letters as items, the event timeline tells you when you have received all the letters needed for a track's CTR Challenge. For example: `Dragon Mines: Got CTR letters`. It can appear while you are in the hub, and letters you have already picked up still count. It is a reminder that you can go collect the CTR Token, not an automatic Token reward.
-- **Baby T Park:** The existing option to use Baby T Park in the Purple Gem Cup is still supported. Full CTR Challenge, relic and lettersanity support across custom tracks is not included yet.
-
-## Choosing whether to race Oxide 1
-
-Set `oxide_1_optional` in your YAML when your goal is Oxide 2:
-
-- `mandatory`: Beat Oxide 1 before you can race Oxide 2. This is the default.
-- `optional`: You can race Oxide 2 as soon as its other requirements are met. Oxide 1 can still hold an item you need, so skipping it is not always practical.
-- `filler`: You can skip Oxide 1, and its reward is guaranteed to be filler rather than progression. Winning Oxide 2 also collects the skipped Oxide 1 location.
-
-For goals other than Oxide 2, Oxide 1 keeps its normal required behavior.
-
-## Before you play
-
-- **Older YAMLs:** The tested 0.2.0 settings with numeric relic counts generate successfully, with Cortex Vortex as the default Oxide 2 track. If a relic-count setting uses `all`, replace it with `18`; `all` currently causes generation to fail.
-- **Development seeds:** YAMLs explicitly requiring world version `0.3.0` need updating or regenerating for this `0.2.1` world. Existing development rooms may show a version notice without the client refusing the connection. Keep the apworld used to generate an existing room for its server and Universal Tracker.
-- **Known boss-box issue:** AP boxes can still appear in boss races when the track's regular warp pad is locked. This release does not fix that issue.
-- **Still being tested:** Hub doors, tunnel character changes, both tracks' minimap colors, Slide Coliseum letters/podium checks, and a complete Cortex Vortex Oxide 2 race have been confirmed in Steam testing. Turbo Track's letters/podium checks, the shorter notification text, and other Oxide 2 track/chaos combinations still need gameplay confirmation.
-
-If you find a problem, please report it through the repository's Issues tab with your client version, YAML, what happened, and `ctr-ap.log`.
-
-## Downloads and technical details
-
-The ZIP (Windows) and tarball (Linux) are the player downloads. The Linux tarball was added on 2026-09-14, built by the tagged source's CI run from the same `v0.2.1-alpha1` source; it requires glibc 2.36 or newer. The separate `ctr.apworld` and YAML are provided for convenience. `.sha256` files let you check that downloads are intact; the `.debug` files are for diagnosing crashes and are not needed to play (`ctr_native_ap.exe.debug` for Windows, `ctr_native_ap.debug` for Linux). The client is not code-signed, and no antivirus clearance is claimed.
-
-Both the client and apworld use compatibility version **0.2.1**, with build label **0.2.1-alpha1**. Automated world tests, native tests, and Windows/Linux builds all passed. The world tests include 1,522 passing tests and a 17,000-run generation matrix with no failures or timeouts.
-
-Source is tagged `v0.2.1-alpha1` in both repositories. Exact source revisions are recorded in the ZIP's `BUILD.json`.
-
-
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.1-alpha1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/palex00/Archipelago/releases/tag/logic-test-0.3.1</id>
-    <title>Logic Test v0.3.1</title>
-    <updated>2026-09-12T18:19:53+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <author>
-      <name>palex00</name>
-    </author>
-    <content>Fixes generation crashing on current Archipelago main, which removed `per_slot_randoms` ([#6186](https://github.com/ArchipelagoMW/Archipelago/pull/6186)). No logic changes; 0.3.0 seeds remain valid.</content>
-    <link href="https://github.com/palex00/Archipelago/releases/tag/logic-test-0.3.1"/>
-  </entry>
   <entry>
     <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-deluxe-v2.2.0</id>
     <title>Peggle Deluxe v2.2.0</title>
@@ -356,32 +219,15 @@ For a explanations of the randomizer and its features or installation and setup:
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `09491d7fd32994787328a97d1c3f40c83a7425ef`.
+Built from `feb36b006a86efcec8b222bb4f3958d25211f601`.
 
 ## Downloads
 
 - [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
 - [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
 
-## Since v1.13.0
+## Since v1.15.0
 
-- feat: add per-mission modifiers (#81)
-- fix(plugin): ignore self-damage for hostile buffs (#79)
-- chore(beads): triage Discord and the tracker, and open the SigMod port
-- Add SigMod community missions (for linux) (#73)
-- fix: merge equivalent weapon buff pools (#77)
-- Fix buffs for decorated weapons and functional reskins (#78)
-- chore(bots): pin v0.15.0 and drop the pin guard (#76)
-- feat: add static visual campaign tracker (#62)
-- feat(resume): a wave picker beside Play, and a mark kept per mission (#66)
-- fix(fastdl): advertise community wave icons (#72)
-- feat(launcher): unlock selected missions in test mode (#71)
-- fix(launcher): recover Steam relay address from console log (#70)
-- fix(launcher): name reward toggles plainly
-- chore(beads): triage of Discord and the issue tracker since 1.12 (#61)
-- fix(bridge): a format version mismatch says what to do about it (#60)
-- fix(launcher): the Grappling Hook can be turned on, and shows when it lands (#59)
-- fix(plugin): PLUGIN_VERSION says 1.13.0, like the apworld
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
@@ -1364,5 +1210,270 @@ Contributors: @MrRedstone54 , @coehlrich , @qixils , @Seatori</content>
 &#13;
 *Please read the README before playing!</content>
     <link href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/tag/v0.2.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.2.6</id>
+    <title>Dark Souls Remastered v0.2.6</title>
+    <updated>2026-09-15T01:58:38+00:00</updated>
+    <author>
+      <name>Noka</name>
+    </author>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <content># **Dark Souls Remastered Archipelago v0.2.6**&#13;
+## Bigger Shops and Better Popups&#13;
+&#13;
+### Version update -&gt; 0.2.6. **Client is compatible with 0.2.x generated apworlds**. &#13;
+New options and locations are added, so older clients will not have access to the new locations and features.&#13;
+&#13;
+## Features&#13;
+* AP item names in Popups and in Shops will be in color based on AP category, using AP client default values. As rendered in game, Progression is roughly purplish, Useful is blue, Traps are Orange, and Filler is teal.&#13;
+* 64 AP locations added across several shops - added shop armor and weapons to the pool, and made their shop entries single-use&#13;
+* 20 more AP locations added to Domhnall's shop (in addition to the above) - boss armor sets, available after you kill the appropriate bosses.&#13;
+* New Yaml Option `unlimited_shop_item_shuffle` to shuffle merchant unlimited shop items (consumables and arrows) amongst each other (client-side, not AP checks).&#13;
+* Removed Domhnall's Master Key from the pool for a better experience - it makes too many other keys redundant/useless and opens up too many different parts of the map at once.&#13;
+&#13;
+## Fixes&#13;
+* Add in missing post-Quelaag lever bone for when boss_bone_shuffle is on&#13;
+* Tracker autotabbing detected wrong map in a part of Upper Undead Burg.&#13;
+* Better Version error messages&#13;
+* Force disconnect on sufficiently mismatched versions&#13;
+* Better messages for "new room" error&#13;
+* Better messages on failed connection&#13;
+* Fix multiple autotab problem areas: UP hallway, DA 1st seath encounter, and demon ruins ramp&#13;
+* Logic: fix `TotG: Soul of a Brave Warrior - Lower Giant Coffin` region to be before the white fog&#13;
+&#13;
+Known issues (will be addressed in a later release)&#13;
+1) Rare crash related to bonfire syncing code.&#13;
+2) Petrus may aggro on you if you hurt his companions.</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.2.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v2.0.0</id>
+    <title>Peggle Nights v2.0.0</title>
+    <updated>2026-09-15T02:27:06+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is a major feature release that also includes improvements and tweaks. &#13;
+It brings Peggle Nights to parity with the features of Peggle Deluxe 2.2.0.&#13;
+&#13;
+**This release is NOT compatible with games generated on the previous version.**&#13;
+&#13;
+- **Feature:** In-Game Level Locking&#13;
+- **Feature:** In-Game Master Locking&#13;
+- **Feature:** Progressive Fever Meter Threshold items have been completely replaced by level-specific Progressive Orange Pegs items, leading to more interesting and layered progression, as well as requiring a bit more skill for the early game phase&#13;
+- **Feature:** Purple Pegs are now unlockable by level&#13;
+- **Feature:** Each Peggle Master now has their own set of Progressive Green Pegs items, creating opportunities for suboptimal masters to now be optimal to play under certain circumstances&#13;
+- **Feature:** Added in / out of logic location counts under each level image in the Levels section of the custom client tab. Requires Universal Tracker to be installed&#13;
+- **Feature:** The section of the custom client tab showing information about the current level now lists what locations are accessible in / out of logic. Requires Universal Tracker to be installed&#13;
+- **Improvement:** To avoid the confusion that was present in 1.x.x around getting fever mode and no completion check, Level Clear location checks will now unlock after any fever mode completes. They will require half your starting ball items logically, but nothing prevents them from triggering&#13;
+- **Improvement:** To preserve the relevance of the 4th Progressive Orange Pegs item now that level completions have moved to the early-mid game, new Fever Meter Full location checks have been added&#13;
+- **Improvement:** Starting level count increased from 1 to 3&#13;
+- **Improvement:** Starting ball count is now set through a custom code patch instead of directly setting the memory value, meaning that the Ball-O-Tron will now always display the correct amount of balls&#13;
+- **Improvement:** Getting the required quantity of Shadow Pegs is now all that's needed to access and clear the final level. No extra items to chase&#13;
+- **Improvement:** Added 3 extra copies of Progressive Starting Ball Increase and 1 extra copy of each Progressive Orange Pegs variant to allow for less restrictive progression and reaching the cap faster&#13;
+- **Improvement:** Slightly reworked logic, mainly around fever meter multipliers&#13;
+- **Improvement:** Custom client tab has been updated to reflect the new features&#13;
+- **Tweak:** Permanent Fever Meter Bonus useful items have been removed&#13;
+&#13;
+_No new YAML options. Minimum level count is now 15 to make room for all the new items. You will need to remove Permanent Fever Meter Bonus from your useful item weights for existing YAMLs to be valid_&#13;
+&#13;
+The implementation now has proper [documentation](https://github.com/SerpentAI/Archipelago/blob/peggle-nights/worlds/peggle_nights/docs/en_Peggle_Nights.md) and a [setup guide](https://github.com/SerpentAI/Archipelago/blob/peggle-nights/worlds/peggle_nights/docs/setup_en.md)</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.3</id>
+    <title>Rabbit and Steel v0.4.3</title>
+    <updated>2026-09-15T03:56:40+00:00</updated>
+    <author>
+      <name>tjwombo</name>
+    </author>
+    <content>fixed:&#13;
+- not handling the last hallways correctly&#13;
+&#13;
+# Changelog&#13;
+&#13;
+All notable changes to this project will be documented in this file.&#13;
+&#13;
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
+&#13;
+## [v0.4.3](https://github.com/tjwombo/RNSArchipelago/compare/v0.4.2...v0.4.3) - 2026-09-14&#13;
+&#13;
+### Commits&#13;
+&#13;
+- fix last kingdom constant typo [`cfbae41`](https://github.com/tjwombo/RNSArchipelago/commit/cfbae4172646cad4f60d8c76b939965c10cb7e7b)&#13;
+- update mod config [`f51207d`](https://github.com/tjwombo/RNSArchipelago/commit/f51207da7a24c6e0e0cecad910812220a52b2902)&#13;
+</content>
+    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/tag/v0.5.1</id>
+    <title>Manual_MarioKartWorld_Greengamefire v0.5.1</title>
+    <updated>2026-09-15T04:51:41+00:00</updated>
+    <author>
+      <name>Greengamefire</name>
+    </author>
+    <content>Download the apworld into your "custom_worlds" folder or double click it and be sure to restart the AP client after doing this&#13;
+&#13;
+It is recommended that you use a completed save with all characters and karts unlocked with open world at any progress&#13;
+&#13;
+If you have any Questions, Bugs, or Additions that you may want to add or notify me of, please feel free to tell me them in the Manuals for Archipelago server thread for Mario Kart World and @greengamefire or dm me for anything relating to this&#13;
+&#13;
+Link to thread: https://discord.com/channels/1097532591650910289/1379985379939192975&#13;
+&#13;
+For any help with finding collectibles I HIGHLY recommend using this interactive map https://game8.co/games/Mario-Kart-World/archives/524298&#13;
+&#13;
+**Please use this map for reference to all Areas**&#13;
+![mario-kart-world-free-roam-world-map-with-regions](https://github.com/user-attachments/assets/2a764c13-f5bd-4e9e-8da6-1f2099731abe)&#13;
+&#13;
+**Patch Notes**&#13;
+- Added Propeller Rally and Turnip Rally</content>
+    <link href="https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.15.0</id>
+    <title>Team Fortress 2 Mann vs Machine v1.15.0</title>
+    <updated>2026-09-15T05:48:33+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+- The mission list could vanish mid-run. Any mission nobody had cleared a
+  wave in yet, which is most of them on a normal run, threw an error the
+  plugin never recovered from, leaving "the bridge has not answered" for the
+  rest of the session.
+- Rootless Podman, the default on Bazzite, could fail to write the server's
+  admin list on start and stop picking up plugin updates until the container
+  was restarted by hand.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`.env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/.env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.14.0...v1.15.0
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/OWUzNTgwZGE1MGNkNjc4MTk5ZmRiOWY3MzM1NzcyMGU6MTc4OTQ1MTYxNQ==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZjRjMmJiNDZjNzllNzQ5ZWMxMmUyNDQ5ODNkNWYwZTA6MTc4OTQ1MTYxNg==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.15.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.5</id>
+    <title>Wynncraft v0.4.5</title>
+    <updated>2026-09-15T05:53:50+00:00</updated>
+    <author>
+      <name>EpicPuppy613</name>
+    </author>
+    <content>**Compatible with Wynnpelago v0.4.5+**&#13;
+&#13;
+- Add additional QOL options&#13;
+  - Logical Grind Spots&#13;
+  - Logical Mounts&#13;
+- Logical level internal rework&#13;
+- Various region connection adjustments&#13;
+- Various logic fixes</content>
+    <link href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.5"/>
   </entry>
 </feed>

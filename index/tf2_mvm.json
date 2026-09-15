@@ -126,7 +126,7 @@
     },
     "nightlyr16": {
       "created_at": "2026-09-13T14:09:34Z",
-      "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `09491d7fd32994787328a97d1c3f40c83a7425ef`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.13.0\n\n- feat: add per-mission modifiers (#81)\n- fix(plugin): ignore self-damage for hostile buffs (#79)\n- chore(beads): triage Discord and the tracker, and open the SigMod port\n- Add SigMod community missions (for linux) (#73)\n- fix: merge equivalent weapon buff pools (#77)\n- Fix buffs for decorated weapons and functional reskins (#78)\n- chore(bots): pin v0.15.0 and drop the pin guard (#76)\n- feat: add static visual campaign tracker (#62)\n- feat(resume): a wave picker beside Play, and a mark kept per mission (#66)\n- fix(fastdl): advertise community wave icons (#72)\n- feat(launcher): unlock selected missions in test mode (#71)\n- fix(launcher): recover Steam relay address from console log (#70)\n- fix(launcher): name reward toggles plainly\n- chore(beads): triage of Discord and the issue tracker since 1.12 (#61)\n- fix(bridge): a format version mismatch says what to do about it (#60)\n- fix(launcher): the Grappling Hook can be turned on, and shows when it lands (#59)\n- fix(plugin): PLUGIN_VERSION says 1.13.0, like the apworld\n",
+      "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `feb36b006a86efcec8b222bb4f3958d25211f601`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.15.0\n\n",
       "download_url": "https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld",
       "has_manifest": true,
       "hash_sha256": "3a8e0bd259a889eb2465be135de0237bc8738611b1cc032a851e5e25d7d7bf21",
@@ -218,7 +218,7 @@
       "tag": "nightlyr6",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r3"
+      "world_version": "1.11.0r2"
     },
     "nightlyr7": {
       "created_at": "2026-09-06T18:20:06Z",
@@ -234,7 +234,7 @@
       "tag": "nightlyr7",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r4"
+      "world_version": "1.11.0r2"
     },
     "nightlyr8": {
       "created_at": "2026-09-06T12:00:14Z",
@@ -266,7 +266,7 @@
       "tag": "nightlyr9",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r2"
+      "world_version": "1.11.0r3"
     },
     "v1.0.0": {
       "created_at": "2026-08-17T17:37:17Z",
@@ -372,6 +372,21 @@
       "title": "v1.14.0",
       "version_simple": "1.14.0",
       "world_version": "1.14.0"
+    },
+    "v1.15.0": {
+      "created_at": "2026-09-15T05:48:33Z",
+      "description": "<p align=\"center\">\n  <a href=\"https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe\">\n    <img alt=\"Download tf2ap.exe for Windows\" src=\"https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&logo=windows&logoColor=white\">\n  </a>\n  <a href=\"https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64\">\n    <img alt=\"Download tf2ap-linux-amd64 for Linux\" src=\"https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&logo=linux&logoColor=white\">\n  </a>\n</p>\n\n## Changes\n\n- The mission list could vanish mid-run. Any mission nobody had cleared a\n  wave in yet, which is most of them on a normal run, threw an error the\n  plugin never recovered from, leaving \"the bridge has not answered\" for the\n  rest of the session.\n- Rootless Podman, the default on Bazzite, could fail to write the server's\n  admin list on start and stop picking up plugin updates until the container\n  was restarted by hand.\n\n\n## Windows\n\nDownload **`tf2ap.exe`** above. Run it. It installs everything else.\n\nWindows will warn you, and it is a false positive. The exe unpacks archives and\nstarts a game server without a code signature, which looks like a virus to a\nscanner. Click **More info**, then **Run anyway**, or check it below first.\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)\n\n## Linux\n\nDownload **`tf2ap-linux-amd64`**. Run it. It installs everything else.\n\n```sh\nchmod +x tf2ap-linux-amd64\n./tf2ap-linux-amd64\n```\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)\n\n## Docker\n\nDownload **`compose.yaml`** and **`.env.example`**:\n\n```sh\nmkdir mann-vs-archipelago && cd mann-vs-archipelago\nbase=https://github.com/m-this/tf2-archipelago/releases/latest/download\ncurl -fsSLO \"$base/compose.yaml\"\ncurl -fsSL -o .env \"$base/.env.example\"\n```\n\nSet `SRCDS_RCONPW` in `.env`, then:\n\n```sh\ndocker compose --profile seed run --rm seed   # writes ./seed\ndocker compose up -d\n```\n\nUpload the file from `seed/` at\n[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's\nport into `AP_PORT`.\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)\n\n## Other assets\n\n| File | For |\n| --- | --- |\n| `tf2_mvm.apworld` | The official Archipelago app. |\n| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |\n| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |\n| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |\n\n## Checking what you downloaded\n\n**`SHA256SUMS`** is attached to this release. It holds the hash of every file\nhere, computed by the workflow that built them.\n\n```powershell\nGet-FileHash tf2ap.exe -Algorithm SHA256    # Windows\n```\n\n```sh\nsha256sum -c SHA256SUMS --ignore-missing    # Linux\n```\n\nEach binary carries a signed record of the commit and the workflow that built\nit:\n\n```sh\ngh attestation verify tf2ap.exe --repo m-this/tf2-archipelago\n```\n\nThe binaries are scanned on VirusTotal, and the reports are linked at the end of\nthese notes. Expect a few heuristic detections and no named malware family. The\nsource is all in the repository, and `make launcher` rebuilds the exe on your\nown machine.\n\n## Code signing policy\n\nFree code signing for open source projects, provided by\n[SignPath.org](https://signpath.org), with a certificate from the\n[SignPath Foundation](https://signpath.org).\n\n> [!WARNING]\n> The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships\n> unsigned, and Windows warns about it until that changes.\n\n\n**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.14.0...v1.15.0\n\n## VirusTotal\n\n- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/OWUzNTgwZGE1MGNkNjc4MTk5ZmRiOWY3MzM1NzcyMGU6MTc4OTQ1MTYxNQ==/detection)\n- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZjRjMmJiNDZjNzllNzQ5ZWMxMmUyNDQ5ODNkNWYwZTA6MTc4OTQ1MTYxNg==/detection)\n",
+      "download_url": "https://github.com/m-this/tf2-archipelago/releases/download/v1.15.0/tf2_mvm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "344b0e69c1e727ebbb8ffa16f778586f7f3329a67383cea0612e18b6a6f34873",
+      "html_url": "https://github.com/m-this/tf2-archipelago/releases/tag/v1.15.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 219327,
+      "source_url": "https://api.github.com/repos/m-this/tf2-archipelago",
+      "tag": "v1.15.0",
+      "title": "v1.15.0",
+      "version_simple": "1.15.0",
+      "world_version": "1.15.0"
     },
     "v1.2.0": {
       "created_at": "2026-08-18T20:42:38Z",

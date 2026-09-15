@@ -9,7 +9,7 @@
 
 If installing manually:
 - [Bendy and the Archipelago Machine](https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases) mod
-- [BepInEx](https://github.com/BepInEx/BepInEx/releases)
+- The most recent bleeding edge build of [BepInEx 6](https://builds.bepinex.dev/projects/bepinex_be)
 
 ## Installation
 
