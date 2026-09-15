@@ -245,6 +245,36 @@
       "title": "v0.6.4",
       "version_simple": "0.6.4",
       "world_version": "0.6.4"
+    },
+    "v0.6.5": {
+      "created_at": "2026-09-15T12:47:15Z",
+      "description": "# Pokepelago v0.6.5\n\nIn this release, I added spoiler hiding and improved client links, warnings and documentation.\n\n## APWorld\n\n- **Spoiler hiding:** I added a `hide_spoilers` toggle under Display, off by default, for streams and shared screens. When enabled, every per-Pokemon location name uses its National Dex number, such as \"Guess Pokemon 1\", across hints, the Text Client, server console and WebHost tracker, while location IDs, logic, checks, item names and the spoiler log remain unchanged. (FEAT-20, issue #35)\n- Since datapackages are shared per game, enabling `hide_spoilers` for any Pokepelago player applies Dex numbers to every Pokepelago slot in that room. Universal Tracker still shows the real names.\n- **Client chooser:** slot links on the Archipelago WebHost room page now offer Text Client, Pokepelago Web Client or Pokepelago Desktop Client in the Archipelago Launcher. The web choice opens the site already connected, the desktop choice hands the connection to the desktop app through a `pokepelago://` link, and the Text Client is still launched alongside.\n- AfiliaFrostfang already added `pokepelago://` support to the desktop client, so the desktop option will work as soon as their next release is out. Until then, pick the web client or Text Client.\n- **Starting checks:** when `starting_location_count` is `0` with two or more lock options, generation still raises it to the number of active lock options, up to 8, so the lock items have free starting checks, but I now print a warning instead of changing it silently. With zero or one lock option, `0` is honoured. (BUG-22, issue #17)\n- **Trap and filler weights:** I clarified that leaving a category out of your YAML keeps its default weight, while only an explicit `0` disables it. The behaviour hasn't changed. (BUG-23, issue #18)\n- I updated the APWorld README and Launcher to use https://pokepelago.ap-pie.com as the main address.\n- Archipelago 0.6.7 or newer is still required.\n\n## Web client\n\n- There are no gameplay changes in the web client for this release.\n- I updated the README to link to https://pokepelago.ap-pie.com and the setup guide at https://ap-pie.com/guides/pokepelago.\n- I added GitHub issue forms for bug reports, stuck seeds and feature requests.\n- I added an AI usage disclosure to both repositories (`AI_USAGE.md` in the client, the README in the APWorld).\n\n## Also\n\n- The main address is now https://pokepelago.ap-pie.com. https://dowlle.github.io/PokepelagoClient/ still works and serves the same build, but your browser's progress and settings stay with whichever address you use.\n- **Desktop client:** if you'd rather run Pokepelago as a Windows app, AfiliaFrostfang maintains a desktop version at https://github.com/AfiliaFrostfang/PokepelagoDesktopClient. It wraps the web client, so it plays the same, and the two of us keep it in step with new releases. It's their project, so questions and bug reports about the app itself go to that repo. The installer isn't code-signed yet, so Windows SmartScreen may ask you to confirm on first run.\n\n[Full Changelog](https://github.com/dowlle/PokepelagoClient/compare/v0.6.4...v0.6.5)\n",
+      "download_url": "https://github.com/dowlle/PokepelagoClient/releases/download/v0.6.5/pokepelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f889c401cea04795f5d469f2393feee6a257468ca7f4d02eca19f9ffa5ae187e",
+      "html_url": "https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 103687,
+      "source_url": "https://api.github.com/repos/dowlle/PokepelagoClient",
+      "tag": "v0.6.5",
+      "title": "v0.6.5",
+      "version_simple": "0.6.5",
+      "world_version": "0.6.5"
+    },
+    "v0.6.6": {
+      "created_at": "2026-09-15T13:45:49Z",
+      "description": "# Pokepelago v0.6.6\n\nThis is a small same-day follow-up to v0.6.5, fixing the desktop client launch and restoring Twitch features.\n\n## APWorld\n\n- The Launcher now hands `pokepelago://` links to the operating system through Python's `webbrowser` module. Player behaviour is unchanged, but the APWorld no longer directly starts a helper process, which the AP-Pie index security audit flagged in v0.6.5.\n- If you installed v0.6.5, replace it with this version.\n- Everything else from v0.6.5 is unchanged, including `hide_spoilers`, the client chooser, starting-location warning and weight documentation.\n- Archipelago 0.6.7 or newer is required.\n\n## Web client\n\n- I switched Twitch integration back on in the deployed site. The toggle, settings tab and chat leaderboard are available again under Settings.\n- Twitch sign-in is now checked hourly and when you return to the tab. If it expires, you'll see \"Twitch sign-in expired, reconnect\" with the Connect button instead of chat guessing quietly stopping. Issue #27.\n- Twitch sign-in now works on https://pokepelago.ap-pie.com.\n\n[Full Changelog](https://github.com/dowlle/PokepelagoClient/compare/v0.6.5...v0.6.6)",
+      "download_url": "https://github.com/dowlle/PokepelagoClient/releases/download/v0.6.6/pokepelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "795e691d55ea97ab477149da0895fa29f1288ee20d4a7170181a02cbd467123d",
+      "html_url": "https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 103675,
+      "source_url": "https://api.github.com/repos/dowlle/PokepelagoClient",
+      "tag": "v0.6.6",
+      "title": "v0.6.6",
+      "version_simple": "0.6.6",
+      "world_version": "0.6.6"
     }
   }
 }

@@ -6,7 +6,7 @@ Type Keys gate access to Pokemon of that type (creates cross-player dependencies
 
 
 ## Downloads
-- <a href="https://github.com/dowlle/PokepelagoClient/releases/download/v0.6.4/pokepelago.apworld">Latest Version (0.6.4)</a>
+- <a href="https://github.com/dowlle/PokepelagoClient/releases/download/v0.6.6/pokepelago.apworld">Latest Version (0.6.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

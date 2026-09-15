@@ -1,9 +1,12 @@
 # Dragon Quest III HD-2D Remake
 
 ## Latest
-- <a href="https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.3.0/dq3.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.3.1/dq3.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.3.1/dq3.apworld">https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.3.1/dq3.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.3.0/dq3.apworld">https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.3.0/dq3.apworld</a>

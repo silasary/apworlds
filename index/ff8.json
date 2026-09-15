@@ -176,6 +176,21 @@
       "title": "FF8 Archipelago v0.6.0",
       "version_simple": "0.6.0",
       "world_version": "0.6.0"
+    },
+    "v0.7.0": {
+      "created_at": "2026-09-15T14:08:12Z",
+      "description": "## Early entry, Battle Assist, and the Story Keys of v0.6.0\r\n\r\n- **Early entry** (needs `vehicle_unlocks`): with the Ragnarok item in hand, the Tomb of the Unknown King, the Centra Ruins, the chocobo forests, **Winhill** and **Shumi Village** open before the story reaches them, and their first-opening checks join logic from the start (with `story_keys` on, the area's key is needed too). Winhill and Shumi were surveyed room by room on a Disc 1 save, including a save and reload inside. Other towns stay closed until surveyed (Deling City's hotel lounge soft-locks early).\r\n- **Battle Assist** (`/ff8assist`, client-side, off by default): `oneshot` leaves every enemy in a random encounter at 1 HP so the first hit ends it (bosses and scripted fights stay real), `enc` keeps Enc-None equipped for no random encounters from the first step, `atb` keeps ATB full, `hp` keeps HP topped up. DeathLink always takes priority.\r\n- **Story Keys** (from v0.6.0, `story_keys`, off by default): twenty \"Key: <area>\" items that physically lock the world-map entrances; `areas` never blocks the story, `story` makes the main-line doors hard gates. Keys carry their `/ff8warp` destination. Preset **Story Keys**.\r\n- The real Magical Lamp and Solomon Ring keep their names once they arrive; the Shumi warp lands beside the village dome.\r\n\r\nTracker pack 0.13.0 shows the keys and the early-entry areas and mirrors the rules. **Stability note:** the new options are experimental and off by default; leave them off and this is the safe upgrade over v0.5.0. Report anything odd with `/ff8` output and the client log.\r\n\r\n## Install\r\n\r\n1. Archipelago **Launcher** \u2192 **Install APWorld** \u2192 pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.\r\n2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.\r\n3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) \u2014 see **Visual Tracker** below.\r\n\r\n### Visual Tracker\r\n\r\n`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:\r\n\r\n1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher \u2192 Install APWorld**, then restart the Launcher.\r\n2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.\r\n3. Launcher \u2192 **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.\r\n\r\nVisual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) \u2014 thank you!\r\n\r\nRequires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).\r\n\r\n\r\n## What's Changed\r\n* Early entry: never-gated areas open with the Ragnarok item (C3) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/4\r\n* Release prep for v0.7.0 by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/5\r\n\r\n\r\n**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.6.0...v0.7.0\r\n",
+      "download_url": "https://github.com/wilsonao/ff8_arch/releases/download/v0.7.0/ff8.apworld",
+      "has_manifest": true,
+      "hash_sha256": "df5e6180d7654f1b1e829c75e68d82b09679381c9c4bc4add776ea646ef6d69b",
+      "html_url": "https://github.com/wilsonao/ff8_arch/releases/tag/v0.7.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 935615,
+      "source_url": "https://api.github.com/repos/wilsonao/ff8_arch",
+      "tag": "v0.7.0",
+      "title": "FF8 Archipelago v0.7.0",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0"
     }
   }
 }
