@@ -1,9 +1,12 @@
 # Signalis
 
 ## Latest
-- <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.2.0/signalis.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.2.5/signalis.apworld">Latest Version (0.2.5)</a>
 
 ## All Versions
+
+#### v0.2.5
+- <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.2.5/signalis.apworld">https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.2.5/signalis.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.2.0/signalis.apworld">https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.2.0/signalis.apworld</a>

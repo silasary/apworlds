@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Happyhappyism/Rune-Factory-4-Archipelago/releases/download/rune4_v0.3.0/rune4.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/Happyhappyism/Rune-Factory-4-Archipelago/releases/download/rune4_v0.3.1/rune4.apworld">Latest Version (0.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

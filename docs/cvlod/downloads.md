@@ -1,9 +1,12 @@
 # Castlevania - Legacy of Darkness
 
 ## Latest
-- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v2.0.1/cvlod.apworld">Latest Version (2.0.1)</a>
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v2.0.2/cvlod.apworld">Latest Version (2.0.2)</a>
 
 ## All Versions
+
+#### v2.0.2
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v2.0.2/cvlod.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v2.0.2/cvlod.apworld</a>
 
 #### v2.0.1
 - <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v2.0.1/cvlod.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v2.0.1/cvlod.apworld</a>

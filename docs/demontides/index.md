@@ -13,5 +13,3 @@ of the way!
 
 ## Setup Guide
 
-## Other Documentation files
-- <a href="setup">setup</a>

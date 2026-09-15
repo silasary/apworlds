@@ -1,9 +1,15 @@
 # Super Mario Land
 
 ## Latest
-- <a href="https://github.com/MarioGamer9871/Super-Mario-Land-Archipelago/releases/download/0.1.2/marioland.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/MarioGamer9871/Super-Mario-Land-Archipelago/releases/download/v0.2.0/marioland.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/MarioGamer9871/Super-Mario-Land-Archipelago/releases/download/v0.2.0/marioland.apworld">https://github.com/MarioGamer9871/Super-Mario-Land-Archipelago/releases/download/v0.2.0/marioland.apworld</a>
+
+#### v0.1.2r2
+- <a href="https://github.com/MarioGamer9871/Super-Mario-Land-Archipelago/releases/download/v0.1.2/marioland.apworld">https://github.com/MarioGamer9871/Super-Mario-Land-Archipelago/releases/download/v0.1.2/marioland.apworld</a>
 
 #### v0.1.2
 - <a href="https://github.com/MarioGamer9871/Super-Mario-Land-Archipelago/releases/download/0.1.2/marioland.apworld">https://github.com/MarioGamer9871/Super-Mario-Land-Archipelago/releases/download/0.1.2/marioland.apworld</a>
