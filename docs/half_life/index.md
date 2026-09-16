@@ -1,6 +1,7 @@
-# None
+# Half-Life
 
-
+Half-Life, with every mission and every weapon locked behind Archipelago
+items.
 
 
 ## Downloads
@@ -8,9 +9,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Half-Life">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Half-Life">en_Half-Life</a>

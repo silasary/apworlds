@@ -1,9 +1,12 @@
 # Sonic Adventure 2 Battle
 
 ## Latest
-- <a href="https://github.com/PoryGone/SA2B_Archipelago/releases/download/v2.4.2/sa2b.apworld">Latest Version (2.4.2)</a>
+- <a href="https://github.com/PoryGone/SA2B_Archipelago/releases/download/v2.4.6/sa2b.apworld">Latest Version (2.4.6)</a>
 
 ## All Versions
+
+#### v2.4.6
+- <a href="https://github.com/PoryGone/SA2B_Archipelago/releases/download/v2.4.6/sa2b.apworld">https://github.com/PoryGone/SA2B_Archipelago/releases/download/v2.4.6/sa2b.apworld</a>
 
 #### v2.4.2
 - <a href="https://github.com/PoryGone/SA2B_Archipelago/releases/download/v2.4.2/sa2b.apworld">https://github.com/PoryGone/SA2B_Archipelago/releases/download/v2.4.2/sa2b.apworld</a>

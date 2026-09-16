@@ -1,6 +1,8 @@
-# None
+# Wedding Witch
 
-
+A bullet-heaven roguelite about a witch gathering potions, flowers and
+gifts for her wedding. Her permanent upgrades come from the multiworld
+instead of her shop.
 
 
 ## Downloads
@@ -8,9 +10,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Wedding Witch">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Wedding Witch">en_Wedding Witch</a>

@@ -1,4 +1,4 @@
-# None
+# Wedding Witch
 
 ## Latest
 - <a href="https://github.com/chickentuna/WeddingWitchMod/releases/download/v0.1.0/wedding_witch.apworld">Latest Version (0.1.0)</a>

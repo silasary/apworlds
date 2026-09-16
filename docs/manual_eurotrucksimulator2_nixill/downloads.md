@@ -1,4 +1,4 @@
-# None
+# Manual_EuroTruckSimulator2_Nixill
 
 ## Latest
 - <a href="https://github.com/Nixill/APManual-ETS2/releases/download/ETS2-v4.0.0/Manual_EuroTruckSimulator2_Nixill.apworld">Latest Version (4.0.0)</a>
