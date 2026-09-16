@@ -12,6 +12,7 @@ Oh, and the raccoon's name is BK.
 The mod adds some quality-of-life settings to the menu:
 - You can makes some achievements easier / less tedious.
 - You can allow skipping through dialogue / texting.
+- You can enable/disable the indicator circles on uncollected trash.
 
 If you hate cutscenes, you can exit out of most levels as soon as they're completed.
 

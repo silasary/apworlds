@@ -1,15 +1,15 @@
 # PAYDAY 2: Criminal Dawn
 
 ## Latest
-- <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.6/pd2_crimdawn.apworld">Latest Version (1.0.4r3)</a>
+- <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.10/pd2_crimdawn.apworld">Latest Version (1.0.4r3)</a>
 
 ## All Versions
 
 #### v1.0.4r3
-- <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.6/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.6/pd2_crimdawn.apworld</a>
-
-#### v1.0.4r2
 - <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.10/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.10/pd2_crimdawn.apworld</a>
+
+#### v1.0.4r3
+- <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.6/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.6/pd2_crimdawn.apworld</a>
 
 #### v1.0.4r2
 - <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.5/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.5/pd2_crimdawn.apworld</a>
@@ -22,6 +22,9 @@
 
 #### v1.0.4r2
 - <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.9/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.9/pd2_crimdawn.apworld</a>
+
+#### v1.0.4r2
+- <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.11/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.11/pd2_crimdawn.apworld</a>
 
 #### v1.0.4
 - <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.4/pd2_crimdawn.apworld">https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.4/pd2_crimdawn.apworld</a>

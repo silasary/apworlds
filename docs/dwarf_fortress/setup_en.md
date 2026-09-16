@@ -100,7 +100,14 @@ After generating a world (and before embarking), run this command in the DFHack 
 dwarfipelago test worldcheck
 ```
 
-This checks world size, history length, the presence of Dwarf/Human/Elf/Goblin civilizations, and active volcano count. If any check fails, consider rerolling — a world missing a key civilization will make certain AP goals impossible.
+This checks world size, history length, the presence of Dwarf/Human/Elf/Goblin **and
+gorlak (Archipelago)** civilizations, and active volcano count. If any check fails,
+consider rerolling — a world missing a key civilization will make certain AP goals
+impossible, and a world with no gorlak civ has no Merchant's Shop at all.
+
+> `worldcheck` can only tell you the gorlaks **exist somewhere in the world**. Whether
+> they will actually trade with you depends on their being a *neighbor of your embark*,
+> which is a site-selection decision — see "Choosing an embark site" below.
 
 ---
 
@@ -152,9 +159,51 @@ will not see any of that.
    - **tick `Dwarfipelago` in the mod list.** This is the step people miss. Enabling
      the mod here is what writes its raws into the save; a world generated without it
      has no Archipelago civilization and no Merchant's Shop, permanently.
-4. Generate the world, then embark as normal.
+4. Generate the world.
+5. **Pick an embark site with the gorlaks as neighbors** — see below — then embark.
 
 The mod starts automatically once a fortress loads — no DFHack console commands needed.
+
+#### Choosing an embark site
+
+Dwarf Fortress only sends you caravans from civilizations whose territory borders your
+embark. The Merchant's Shop rides on a caravan from the **Archipelago civilization**, a
+gorlak trading people, so if they are not your neighbor **they will never visit and the
+entire shop is unreachable** — all 50 slots, for the whole fortress.
+
+On the embark site-selection screen, check the **Neighbors** panel and confirm
+**gorlaks** are listed alongside the usual dwarves/humans/elves/goblins. If they are
+missing, move the embark rectangle elsewhere on the map until they appear.
+
+The gorlaks settle **grassland, savanna and shrubland** and build cities, so embarking
+within reach of open temperate land is the reliable way to get them as a neighbor.
+A remote glacier or a deep mountain range is the usual way to lose them.
+
+#### If you got it wrong
+
+The two failure modes are **not** equally bad, and it is worth knowing which one you
+have before you throw anything away:
+
+| Problem | Recoverable? | What to do |
+|---------|--------------|------------|
+| The gorlaks exist in the world, but are **not a neighbor of your embark** | **Yes** | Retire or abandon the fortress and **re-embark elsewhere in the same world**, somewhere the Neighbors panel lists gorlaks. Your run is unaffected: the seed is stored against the *world*, not the site, so it still matches, and the mod re-delivers everything you had already received. |
+| The world has **no gorlak civilization at all** | No | A new world is required. The client refuses to bind your run to such a world, so the multiworld seed is unspent — generate a world with the mod ticked and reconnect with the same seed. |
+
+To tell them apart, run `dwarfipelago test worldcheck`: it reports whether the
+Archipelago civ exists in the world. Existing but never visiting is the neighbor
+problem; missing entirely is the world-gen problem.
+
+> A world with no gorlak civilization makes the client refuse to bind your run and keep
+> saying so, while the mod raises a popup and repeating warnings in game. That is
+> deliberate — it costs you only the time already spent, and nothing done inside that
+> fortress can fix it.
+
+> Receiving your first Merchant's Coffer asks the game to summon a gorlak caravan
+> immediately. That request can fail silently: if the gorlaks are not a neighbor the
+> caravan may be spawned off-map and never arrive, and if the civilization does not
+> exist at all nothing is summoned. Either way you get **no caravan and no shop**, so
+> do not count on the forced visit to rescue a bad site. The mod now says so in game
+> rather than only in the log, and retries on each later coffer.
 Within a few ticks you should see the trade depot announcement below.
 
 > **Merchant's Shop goods** are named and priced by the mod while your fortress runs, so

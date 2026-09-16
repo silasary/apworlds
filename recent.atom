@@ -2,35 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-15T18:21:15.694814+00:00</updated>
+  <updated>2026-09-16T00:22:12.534497+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.2</id>
-    <title>SM64: Spicy Mycena 64 v1.0.2</title>
-    <updated>2026-09-13T14:36:59+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content>.apworld updates:&#13;
-- Fixed Igloo Vanish Cap Block and frozen Coin logic #21 by @ItzLoonie&#13;
-- Added trick Snowman’s Land Igloo Vanish Cap Block with Spindrift #21 by @ItzLoonie&#13;
-- Fixed Mixed entrance shuffle frequently creating two-step paths back to an entrance’s vanilla level&#13;
-- Entrance hints now appear only for entrance categories that were actually shuffled.&#13;
-- Fixed Secret Course Shuffle failing to provide entrance hints while unshuffled main courses received unnecessary hints.&#13;
-- Entrance hints now follow chains through shuffled sub-areas and report the outer course entrance.&#13;
-- Locations reachable from multiple entrances now list every valid entrance&#13;
-- Fixed a cause for generation failures.&#13;
-&#13;
-SM64ex updates:&#13;
-- Fixed same-area shuffled warps into the Castle First Floor potentially leaving Mario missing and the camera stuck, particularly when the Bowser in the Dark World entrance led back to the lobby.&#13;
-&#13;
-SM64ex hotfixes:&#13;
-- September 13: Hopefully, finally fix coins respawning as real coins when transitioning to/from sub-areas. Bob-ombs should finally grant coins when falling to the death plan with No Despawns on.</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.09.13</id>
     <title>YARGBandHero v1.0.0</title>
@@ -1514,5 +1490,170 @@ Built from `b747ba3a1648090e6b722bd2a77f74ef4e893b61`.
 - feat(docker): serve persistent admin UI
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.2</id>
+    <title>Cyberpunk 2077 v0.7.0r2</title>
+    <updated>2026-09-15T19:51:45+00:00</updated>
+    <author>
+      <name>247Tossing</name>
+    </author>
+    <content>Renamed vendors to be more clear in the AP world.&#13;
+Fixed oversight where password field wasnt visible in the CET overlay client.</content>
+    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.0.1</id>
+    <title>Dwarf Fortress v2.0.1</title>
+    <updated>2026-09-15T21:10:01+00:00</updated>
+    <author>
+      <name>Dwarfipelago Contributors</name>
+    </author>
+    <content>Bugfix release. 2.0.0 seeds and worlds remain playable and installing this requires&#13;
+no regeneration — see **What carries over** for the two exceptions.&#13;
+&#13;
+### Merchant's Shop&#13;
+&#13;
+- **Goods you never bought were being marked as purchased.** Location checks fired&#13;
+  for items left behind in the caravan's stock, permanently consuming those slots&#13;
+  and releasing the items to their recipients for free. Two independent causes:&#13;
+  - A good counted as sold the moment its item left the map — which is also&#13;
+    exactly what happens when the caravan packs it up and takes it home. A sale&#13;
+    now requires the item to still exist, to have its trader flag cleared, and to&#13;
+    not be held by a merchant.&#13;
+  - Cleanup of a departed caravan's goods ran on a docked-to-undocked transition&#13;
+    held in memory, so a save/reload across the departure skipped it and stranded&#13;
+    the bookkeeping. Those entries then sat untouched until the *next* caravan&#13;
+    docked — a year later in one report — and were misread in a batch. Cleanup now&#13;
+    runs on any idle tick, so nothing can be stranded.&#13;
+- Unbought goods left in a caravan's stock return to the rotation properly and come&#13;
+  back around on a later visit.&#13;
+- Goods that a paused game failed to remove are retried, instead of being forgotten&#13;
+  and left in the fortress permanently.&#13;
+- **Runtime naming and pricing of shop goods never actually ran.** The lookup&#13;
+  that maps each slot to its material iterated `world.raws.inorganics`, but that&#13;
+  is a struct whose list lives in `.all` — iterating the struct yields nothing and&#13;
+  raises no error, so every slot looked absent. Goods fell back to unnamed iron at&#13;
+  a flat price and the mod wrongly reported "this world's raws predate the shop&#13;
+  materials" even on worlds that had them. Two other raws scans (diamond variants,&#13;
+  sand for glassmaking) had the same defect and silently found nothing.&#13;
+- **Shop goods were selectable as a crafting material, and leaked the whole shop.**&#13;
+  The per-slot materials carried `[IS_STONE]` and inherited `STONE_TEMPLATE`'s&#13;
+  `[ITEMS_HARD]`/`[ITEMS_QUERN]`, so every good turned up in stone and&#13;
+  hard-material pickers — "Make rock blocks" listed them between Alabaster and&#13;
+  Andesite. Those entries show each good's **real multiworld item name**, so the&#13;
+  entire shop could be read without buying anything. The materials now carry no&#13;
+  usage flags at all, so nothing in game can select them.&#13;
+&#13;
+### The Archipelago caravan&#13;
+&#13;
+- **Establishing contact with the gorlaks was a single silent attempt.** It ran only&#13;
+  on Merchant's Coffer #1, marked itself successful *before* checking whether the&#13;
+  civilization even existed, and reported failure to the DFHack console alone — so a&#13;
+  world without the Archipelago civ produced no caravan, no shop, and no visible&#13;
+  explanation for the rest of the run. Contact is now recorded only when it actually&#13;
+  succeeds, retried on each later coffer until it does, and both failure modes (no&#13;
+  civ / summon failed) announce themselves in game.&#13;
+- **A world with no Archipelago civilization no longer quietly consumes your run.**&#13;
+  With the shop enabled and no gorlak civ present — meaning the world was generated&#13;
+  without the mod ticked in DF's world-gen mod list — the client refuses to bind the&#13;
+  run's seed to that world and keeps saying why, while the mod raises a&#13;
+  screen-stopping popup followed by repeating reminders. The world stays unbound, so&#13;
+  the same multiworld seed is still usable once a correct world exists.&#13;
+- `dwarfipelago test worldcheck` now verifies the gorlak civilization exists, and&#13;
+  notes that they must additionally be a **neighbor of your embark** to send&#13;
+  caravans at all.&#13;
+- The setup guide gained a "Choosing an embark site" section, and an "If you got it&#13;
+  wrong" table separating the two failure modes: a non-neighbor embark is fixed by&#13;
+  **re-embarking elsewhere in the same world** (the seed is stored against the world,&#13;
+  so the run carries over and received items are re-delivered), while a missing civ&#13;
+  needs a new world. Neither was documented anywhere before.&#13;
+&#13;
+### Logic and checks&#13;
+&#13;
+- **Shield, Mace and Tactics skill checks never fired** — 45 locations dead, three&#13;
+  skills at 15 tiers each. The skill flag is maintained in two places, `df_item` in&#13;
+  the apworld's `locations.py` and `skill` in the mod's `checks.lua`, and three of&#13;
+  them disagreed by a letter (`shieldwarf`/`shielddwarf`, `macedwarf`/`macerdwarf`,&#13;
+  `tatics`/`tactics`). The client derives the storage key it polls from the seed, so&#13;
+  it was watching an address the mod never wrote to: no error, just silence. All 87&#13;
+  flags are now verified identical on both sides, and each list carries a comment&#13;
+  explaining the coupling.&#13;
+- **The Checks tab showed Mined Adamantine as reachable with no mining depth.** The&#13;
+  in-game tracker builds its options from `slot_data`, and its mapping table never&#13;
+  listed `mining_depth`; unmapped options read as 0, so the adamantine rule took its&#13;
+  "no depth system" branch and returned true outright. `trades_inlogic` had the same&#13;
+  hole and was missing from `slot_data` entirely. Both are carried through now, and&#13;
+  the table documents why anything a rule branches on has to be listed.&#13;
+&#13;
+### Traps&#13;
+&#13;
+- **The Lost Caravan trap no longer blanket-mutates every trade good.** It set&#13;
+  `flags.rotten` on *all* trader items — 400+ bars, stones and cages in one&#13;
+  report — on the untested assumption that this was "inert on non-organic goods",&#13;
+  and set wear on items that cannot be worn. Rot is now limited to genuinely&#13;
+  perishable item types and wear to wearable ones, and caged livestock is killed&#13;
+  the way DFHack's own `destroyUnit` does it, since draining blood alone does not&#13;
+  reliably finish a unit.&#13;
+&#13;
+### Install&#13;
+&#13;
+- **The mod was searching for in the wrong folder.** The DF data root was taken as&#13;
+  `dirname(game_path)`, but `game_path` may legitimately point at `dfhack.exe` —&#13;
+  and the standalone DFHack Steam app lives in `.../common/DFHack/hack/`, nowhere&#13;
+  near DF. The client now locates the real DF base folder by looking for DF's own&#13;
+  markers, then by checking the sibling install in the same Steam library.&#13;
+&#13;
+### What carries over&#13;
+&#13;
+| | |&#13;
+|---|---|&#13;
+| **Applies to existing seeds immediately** | Every Merchant's Shop fix, the Checks tab fix, caravan contact, the missing-civ failsafe, and the Mace skill checks — all client- and mod-side. |&#13;
+| **Needs a regenerated seed** | Shield and Tactics. Their flag lives in the apworld and is baked into `slot_data` at generation, so those 30 locations stay dead on a seed rolled under 2.0.0. |&#13;
+| **Needs a regenerated world** | The shop-material fix. Raws are written into a save at world generation, so an existing world keeps the selectable, name-leaking materials. |&#13;
+| **Cannot be recovered** | Shop slots already consumed by a false purchase. Those checks are server-side truth once sent. |&#13;
+</content>
+    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Happyhappyism/Rune-Factory-4-Archipelago/releases/tag/rune4_v0.3.2</id>
+    <title>Rune Factory 4 v0.3.2</title>
+    <updated>2026-09-15T21:50:29+00:00</updated>
+    <author>
+      <name>Happyhappyism</name>
+    </author>
+    <author>
+      <name>Caidryn</name>
+    </author>
+    <author>
+      <name>Arryndoestech</name>
+    </author>
+    <content>## Features&#13;
+- Added a file type association with .aprf4s to allow for a simple double click to run the apworld&#13;
+- Added a seed select menu prompt&#13;
+&#13;
+## Changes&#13;
+- Completely reworked the seed selection system&#13;
+- Removed Save Slot option</content>
+    <link href="https://github.com/Happyhappyism/Rune-Factory-4-Archipelago/releases/tag/rune4_v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.11</id>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
+    <updated>2026-09-16T00:06:19+00:00</updated>
+    <author>
+      <name>C@:\EM1NAL\</name>
+    </author>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>I get sick for a week and Sidetrack released a [new heist](https://store.steampowered.com/app/5149580/PAYDAY_2_Under_the_Hammer_Heist).&#13;
+- Added content for new heist to the relevant pools.&#13;
+  - Haven't had a chance to play the new heist yet, so I put it in tier 3 as a placeholder. Feel free to argue about where it should go (or let me know if this feels fine).&#13;
+- Fixed the Hotline Miami baseball bat being unlocked when you choose Lucille, and fixed the Hotline Miami baseball bat not unlocking *anything* when you chose it.&#13;
+  - Turns out the names of these weapons are not the same as their unlock ids. very cool thank you overkill&#13;
+&#13;
+no apworld update since v1.0.4 yada yada</content>
+    <link href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.11"/>
   </entry>
 </feed>

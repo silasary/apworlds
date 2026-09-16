@@ -7,7 +7,7 @@ Modern Day Zomboss.
 
 
 ## Downloads
-- <a href="https://github.com/kurt-cole/pvz2ge-ap/releases/download/v0.3/pvz2gardendless.apworld">Latest Version (0.3)</a>
+- <a href="https://github.com/kurt-cole/pvz2ge-ap/releases/download/v0.3.1/pvz2gardendless.apworld">Latest Version (0.3.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

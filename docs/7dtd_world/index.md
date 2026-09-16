@@ -1,6 +1,10 @@
 # 7 Days To Die
 
+Archipelago integration for 7 Days to Die.
 
+The initial implementation provides:
+- 60 tiered quest checks
+- 0-100 configurable level checks
 
 
 ## Downloads

@@ -6,7 +6,7 @@ send in return.
 
 
 ## Downloads
-- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/2.0.0/dwarf_fortress.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/EthanTheBrave/Dwarfipelago/releases/download/2.0.1/dwarf_fortress.apworld">Latest Version (2.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

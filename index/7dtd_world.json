@@ -59,6 +59,21 @@
       "title": "1.1 release",
       "version_simple": "0.1.0",
       "world_version": "0.1.0r2"
+    },
+    "1.1.1": {
+      "created_at": "2026-09-01T20:35:04Z",
+      "description": "# 7 Days To Die Archipelago \u2014 v1.1.1\r\n\r\nThis release improves Archipelago progression logic by adding logical level bands to the 7 Days To Die level checks. This prevents later-level checks from being treated as immediately reachable by Archipelago while leaving in-game leveling completely unrestricted.\r\n\r\n## New Features\r\n\r\n### Progressive Level Check Spheres\r\n\r\nThe 100 level checks are now divided into five logical progression bands consisting of 20 levels each.\r\n\r\nYou can still level normally in-game regardless of which logical sphere Archipelago has reached.\r\n\r\n### Improved Multiworld Progression\r\n\r\nLevel checks now have appropriate logical progression timing when used in multiworlds. Later-level checks will no longer be treated as immediately available simply because the player has no AP item prerequisite.\r\n\r\nThis helps prevent important progression items from being logically placed behind very late-game level checks while Archipelago still considers those checks immediately reachable.\r\n\r\n## Notes\r\n\r\nMinor issues may arise if checks are completed in game while not connected through the client to your room. In the event this happens, a full restart of both the game and client will solve this.\r\n\r\n### Due to the progression changes in this release, this release is NOT compatible with previous rooms/worlds. Please generate a new room and save file.\r\n\r\n## Installation\r\n\r\nInstallation/generation method remains the same as the one listed [Here](https://github.com/OrcThrowman/7-Days-to-Die-AP)\r\n\r\n## Changelog\r\n\r\n**v1.1.1**\r\n\r\n* Added logical five-band progression for level checks\r\n* Added hidden Archipelago events to control level-band progression\r\n* Prevented later-level checks from being treated as immediately reachable\r\n* Removed Progressive Biome Access and Talent Point prerequisites from level checks\r\n* Preserved unrestricted in-game leveling\r\n* Preserved existing biome and progression systems\r\n",
+      "download_url": "https://github.com/OrcThrowman/7-Days-to-Die-AP/releases/download/1.1.1/7dtd_world.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d33476e553b953c00452eb3be8c971aa9b6738221dd20a4d3a98feaaa2a218ee",
+      "html_url": "https://github.com/OrcThrowman/7-Days-to-Die-AP/releases/tag/1.1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 272110,
+      "source_url": "https://api.github.com/repos/OrcThrowman/7-Days-to-Die-AP",
+      "tag": "1.1.1",
+      "title": "1.1.1 release",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0r2"
     }
   }
 }
