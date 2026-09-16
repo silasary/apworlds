@@ -2,11 +2,13 @@
   "authors": [
     "jacksonstubblefield"
   ],
+  "description": "Elden Ring Nightreign is a co-op roguelike action game from FromSoftware.\nLocation checks are \"defeat Nightlord X\" (or, with bosses_with_characters set\nto boss_and_character, \"defeat Nightlord X as character Y\"), detected via\nread-only game memory polling. With the gate_boss_access option enabled,\nevery Nightlord other than the chosen starting_boss is gated behind\nreceiving that Nightlord's Access item - written into the running game\nprocess where the game supports it (all but Tricephalos, which has no\ngating flag and is tracked overlay-side only); otherwise received items\nare flavorful and have no in-game effect. The gate_character_access option works the same way\nfor playable characters instead of Nightlords - every character other than the chosen\nstarting_character is gated behind receiving that character's Character Access item, and with\nbosses_with_characters set to boss_and_character, a win as a not-yet-unlocked character also\ndoesn't send its check. Each Everdark Sovereign is its own separate entry in\nincluded_nightlords (e.g. \"Everdark Tricephalos\", excluded by default) - defeating one is a\nseparate, optional location, never required for the goal, since Everdark availability depends\non an external weekly rotation this world can't unlock or guarantee (see Options.py's\nIncludedNightlords disclaimer). Everdark Sovereigns are treated as entirely separate bosses\nfrom their base Nightlord: with gate_boss_access on, an Everdark location is gated behind its\nown \"Everdark X Access\" item, independent of whether the base Nightlord's own Access item has\nbeen received.",
   "flags": [
     "unready"
   ],
   "game": "Elden Ring Nightreign",
   "github": "https://github.com/jacksonstubblefield/nightreign-ap",
+  "license": null,
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
