@@ -12,6 +12,19 @@ A Stage would normally be unlocked by completing the previous Stage, but Stage u
 
 If enabled, acquiring a book for a stage for the first time sends a check, and enemies have a chance to drop an item that sends a check. Ranger classes can also be shuffled into the item pool, making you start with only 1 class. Classes can be changed at the Forget Tree, which is also unlocked when you have class randomiser on.
 
+## How do I know which stage I am supposed to do next?
+
+The dots on the world map are colour coded:
+
+- **White** — a town (Town, Village, Resort, Forget Tree, Island).
+- **Yellow** — unlocked and in logic. Archipelago expects you to be able to do this one.
+- **Orange** — unlocked, but out of logic. You can walk in and try anyway; the generator did not count on it.
+- **Dark red** — every check in this stage has been sent.
+
+The five boss stages (Castle, Submarine Shrine, Pyramid, Ice Castle, Hell Castle) also want a number of
+stage unlocks from the region in front of them, and a number of ranger classes. Both numbers come from
+your YAML, and the class count includes the class you started with.
+
 ## Which items can be in another player's world?
 
 Stage unlocks and class unlocks (if enabled) may be placed into another player's world. Filler items can be traps (if enabled) or any weapon or compo.

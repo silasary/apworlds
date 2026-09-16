@@ -3,6 +3,9 @@
 ## Required Software
 
 - A browser!
+- `stick_ranger.apworld` from the
+  [latest release](https://github.com/Kryen112/AP_Stick_Ranger/releases/latest), placed in the
+  `custom_worlds` folder of your Archipelago installation.
 - Optional for local installation and play: [Node.js and npm](https://nodejs.org/) installed on your computer, if you want to run the game locally.
 
 ## Configuring your YAML file
@@ -16,6 +19,13 @@ Your YAML file contains a set of configuration options which provide the generat
 You can customize your settings by visiting the 
 [Stick Ranger Player Options Page](/games/Stick%20Ranger/player-options).
 
+That page is only available on a host that has the Stick Ranger apworld installed. Otherwise, take the
+`Stick Ranger.yaml` template attached to the
+[latest release](https://github.com/Kryen112/AP_Stick_Ranger/releases/latest) and edit it by hand, or
+generate a fresh one from your own Archipelago install with **Generate Template Options** in the Launcher.
+
+Put the finished yaml in Archipelago's `Players` folder before you generate.
+
 ## Where to play the game
 
 ### Option 1: Play Online (Recommended)
@@ -27,11 +37,14 @@ You can customize your settings by visiting the
 
 If the website is unavailable, or you wish to use your own copy:
 
-1. Download the latest release:
-    - Visit [Stick Ranger Release](https://github.com/Kryen112/Kryen112.github.io/releases/latest).
-    - Download and extract the zip file containing the source code to a folder on your computer.
+1. Download the source:
+    - Visit the [Stick Ranger website repository](https://github.com/Kryen112/Kryen112.github.io) and choose
+      **Code → Download ZIP**, or take
+      [this direct link](https://github.com/Kryen112/Kryen112.github.io/archive/refs/heads/main.zip).
+    - This is the same code the website runs, so it is always current.
+    - Extract the zip to a folder on your computer.
 2. Install Node.js and npm (if not already installed):
-    - Download and install from [nodejs.org](https://nodejs.org/).
+    - Download and install from [nodejs.org](https://nodejs.org/). Version 20.19 or newer.
 3. Open a terminal/command prompt in the folder where you extracted the files.
 4. Install dependencies:
     ```sh

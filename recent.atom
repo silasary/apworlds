@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-16T06:23:44.003091+00:00</updated>
+  <updated>2026-09-16T12:18:43.546095+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
@@ -883,6 +883,26 @@ Thanks to Junofa Fuwa for helping with playtesting!</content>
     <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.1"/>
   </entry>
   <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.2</id>
+    <title>Funi Raccoon Game v1.7.1r2</title>
+    <updated>2026-09-14T16:55:42+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>- [Client] Fixed a major bug that allowed you to store items into the main storage using some specific methods, which let you basically skip needing to be sent anything with Archipelago at all. If you knew, you knew.&#13;
+- [APWorld] Changed the option errors from act thresholds to instead intelligently update your act thresholds to be inline with what is expected. For example, if you set Act 2 threshold to 25 items, and act 3 threshold to 15 items, it'll update act 3 threshold to be 5 above act 2's set threshold, so 30.&#13;
+- [APWorld] Changed the act 4 threshold being over set amount of dumpster items option error to also just change act 4 threshold's value.&#13;
+- [APWorld] Fixed "Store Fone" being in the Blimbo Village region, it's been moved to Blimbo City.&#13;
+- [APWorld] Fixed Purgatory being connected to Blimbo Village, it's now connected to Blimbo City.&#13;
+- [APWorld] Fixed the Behrman Speedway region still having an out of logic rule attached to it.&#13;
+&#13;
+It is **strongly** recommended to update to this version as soon as you can, on the client side. It is backwards compatible with v1.7.1 and v1.7.0 apworlds. &#13;
+&#13;
+[Mod Link](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)&#13;
+[Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/main/worlds/funi_raccoon/docs/setup_en.md)</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.2.0</id>
     <title>Minecraft v2.2.0</title>
     <updated>2026-09-14T20:05:15+00:00</updated>
@@ -1451,47 +1471,6 @@ Enjoying the mod? Consider joining our thread in the AP discord! We're close to 
     <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.38"/>
   </entry>
   <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.15.0r2</title>
-    <updated>2026-09-15T18:03:09+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `b747ba3a1648090e6b722bd2a77f74ef4e893b61`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.15.0
-
-- fix(apworld): a mission draws no modifier when the draw is zero (#86)
-- fix(gamedata): a flag the weapon already carries is not a buff (#87)
-- docs(changelog): the v1.16.0 section
-- chore(beads): three bugs the Compose admin review turned up
-- fix(launcher): the shipped random start mission passes the run preflight
-- fix(docker): what running the Compose admin on a plain Docker Engine found
-- fix(settings): a room's string reads back as the same room
-- fix(docker): detect installed SigMod
-- fix(ui): report community archive extraction progress
-- fix(docker): show asset progress and handle server mods
-- fix(docker): install downloaded community assets
-- fix(docker): reload saved settings in admin
-- feat(docker): configure Funnel from admin UI
-- fix(docker): read Steam relay from srcds log
-- docs(docker): show the forced restart command
-- fix(ci): point fork nightlies at fork images
-- fix(docker): retry stalled Steam relay startup
-- feat(docker): serve persistent admin UI
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
     <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.2</id>
     <title>Cyberpunk 2077 v0.7.0r2</title>
     <updated>2026-09-15T19:51:45+00:00</updated>
@@ -1639,7 +1618,7 @@ no regeneration — see **What carries over** for the two exceptions.&#13;
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.11</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r3</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
     <updated>2026-09-16T00:06:19+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1703,5 +1682,325 @@ Changelog since v2.4.3:&#13;
     <content>## Bug Fixes&#13;
 - Changed how the Region Gate protection identifies Region Switches (ID instead of loaded objects) to ensure none of the switches are misidentified during zone loading when `region_access_mode` is `bundled`</content>
     <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.14.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.0</id>
+    <title>Team Fortress 2 Mann vs Machine v1.16.0</title>
+    <updated>2026-09-16T11:07:33+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+The Docker stack gets the launcher's browser interface, five new ways to pay
+checks, and the bugs that came with running the stack on a plain Docker Engine.
+Nothing here changes a run in progress: a seed keeps the options it was made
+with. Bots at 0.15.2.
+
+### The admin page
+
+- **A browser interface for Compose.** `docker compose up -d` now serves the
+  same page the native launcher opens, on **http://127.0.0.1:8477**: the run
+  and its missions, what the multiworld has unlocked, your bot team, and the
+  server and bridge logs with the search over them. `docker compose logs admin`
+  prints the address, and `TF2AP_ADMIN_PORT` in `.env` moves it.
+- It stays on loopback, because the page can send server commands. For a
+  server on another machine, forward it: `ssh -L 8477:127.0.0.1:8477 user@host`.
+- Docker keeps the server's lifecycle. Start, Stop and Restart print the
+  Compose command to run rather than pretending to do it themselves: the page
+  has no Docker socket, and giving it one would give it the whole host.
+- The Settings tab writes `.env`, the file Compose already reads, keeping its
+  comments and everything in it the launcher does not own. Settings the
+  containers read apply on `docker compose up -d --force-recreate`; seed
+  options apply the next time the seed runs.
+- **Join address.** A setting for the address the Join button hands to players.
+  Blank discovers a local one. Name your public IP or DNS for a forwarded
+  server, or the WSL address when Docker runs in WSL and TF2 runs on Windows.
+- Community packs download from the page, with the progress on the page rather
+  than buried in the log, and the running server picks the extracted files up
+  within about thirty seconds. Nothing to rebuild.
+- SigMod ships in the image, and the page now recognises it as installed
+  instead of offering to install what is already there.
+- **Tailscale needs no auth key.** Set up / check Funnel signs the bundled
+  service in through a link in the browser, and the login survives restarts in
+  a volume of its own. Its Compose profile and `TAILSCALE_AUTHKEY` are both
+  gone; the switch on its own is enough.
+
+### More checks, without more missions
+
+Five options, all off by default. Each one adds checks to a seed, so a short
+run has something to fill it and a long one has more to find.
+
+- **Victory caches.** A mission clear is worth checks scaled by its tier: one
+  at normal, two at intermediate, three at advanced, five at expert and
+  haunted.
+- **Milestone checks.** Running totals over the whole run, whatever mission
+  they happened in: robots, giants and tanks destroyed. Something to grind when
+  a wave will not fall.
+- **Giantsanity** and **Tanksanity.** A check for every giant, and for every
+  tank, of every wave, beside the mission's own first of each. The counts come
+  out of Valve's own mission files, so community missions pay only their first.
+  Empire Escalation alone holds eighty-two giants, Cataclysm eleven tanks.
+- **Weapon slots per class.** Each class earns its own two slots instead of one
+  item opening a slot for everybody, and its first slot comes free with the
+  class: the Medigun for a Medic, the Knife for a Spy. Eighteen items in the
+  pool where there were three, so a run with few missions may not fit them.
+
+### The tracker has an address
+
+- The visual campaign tracker is published at
+  &lt;https://m-this.github.io/tf2-archipelago/tracker/&gt;. Paste a room or tracker
+  link and share the page; nobody has to host it.
+
+### The bots
+
+The mod moves to 0.15.2.
+
+- The mercenaries stopped shouting over each other in the break. A bot pressed
+  ready on every frame the game refused one, which is every frame for the first
+  seconds after a wave ends, and every press spoke its Ready line. It presses
+  once a second now.
+- In the Docker stack they stopped moving after a map change. The navigation
+  they read was emptied by the changelevel and nothing filled it again, so only
+  a restart brought them back. By kelly-cs.
+
+### Fixed
+
+- The Docker stack finds the Steam relay address, the way the launcher started
+  doing in v1.14.0: from the server's own console file, the only place it
+  lands. Join could say "waiting" for a whole session on a relay server that
+  was working perfectly.
+- On Docker Engine the page could not save anything at all: every Save and
+  every pack download failed with a permission error. Docker Desktop hides the
+  file ownership behind it, so testing there never hit it.
+- Saving any setting, against a multiworld hosted inside the stack, turned TLS
+  on for it. The bridge then never reconnected.
+- A stack that kept the example's `MVM_START_MISSION=random` could not generate
+  a seed. It had been refusing since v1.11.0.
+- A crash in the container leaves a `debug.log` with a stack in it. The image
+  asked the server for one and had no debugger to produce it.
+- Admins listed in `.env` got no permissions until somebody reloaded the admin
+  cache by hand. The server is told about the list as soon as it is written.
+- Test mode left missions locked until the starting inventory arrived, so the
+  first map change could be refused.
+- A mission drawn with zero modifiers still drew one.
+- Weapon buffs offered flags the weapon already carries, and five weapons were
+  offered buffs that do nothing on them. A buff in the pool now changes
+  something on the weapon it names.
+- Max health buffs followed the class rather than the player holding them.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* fix(docker): make the Compose admin workflow usable by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/84
+* fix(gamedata): a flag the weapon already carries is not a buff by @m-this in https://github.com/m-this/tf2-archipelago/pull/87
+* fix(apworld): a mission draws no modifier when the draw is zero by @m-this in https://github.com/m-this/tf2-archipelago/pull/86
+* fix(buffs): max health follows the player, and five pools lose inert buffs by @m-this in https://github.com/m-this/tf2-archipelago/pull/88
+* feat: milestone checks, running totals over the whole run by @m-this in https://github.com/m-this/tf2-archipelago/pull/90
+* feat: weapon slots per class, each class earning its own two by @m-this in https://github.com/m-this/tf2-archipelago/pull/91
+* Publish the visual campaign tracker on GitHub Pages by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/93
+* fix(web): align empty mission action cells by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/94
+* fix(test-mode): unlock every listed mission by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/95
+* fix(docker): reload SourceMod admins after install by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/97
+* feat: victory caches, a mission clear worth checks scaled by its tier by @m-this in https://github.com/m-this/tf2-archipelago/pull/89
+* feat: giantsanity and tanksanity, a check for every giant and tank of every wave by @m-this in https://github.com/m-this/tf2-archipelago/pull/92
+* fix(tracker): show per-class weapon slots by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/100
+* fix(docker): restore defender navigation after map changes by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/102
+* build(bots): bump defender plugin for silent readiness by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/99
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.15.0...v1.16.0
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/ZGZkNzcxYzg5NWVmNWU0NGI0ZjE4YTg3MzViOGMxMmQ6MTc4OTU1NzI1Nw==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ODkxZDhmYmQ3ZWI3OWE5OTFiZWY5NTg3ZDZlNTE4M2Y6MTc4OTU1NzI1OQ==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.16.0r2</title>
+    <updated>2026-09-16T11:07:33+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `00c6d475478f29dcb9f2bdf0a7d66689e65edf93`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.16.0
+
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.6.0</id>
+    <title>Stick Ranger v1.6.0</title>
+    <updated>2026-09-16T12:03:58+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content>## Installation
+
+-   Download the APworld for Stick Ranger
+-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
+-   Generate a yaml or download the one in here
+-   Customize the yaml and put it in the /players folder inside Archipelago
+-   Generate a game
+-   Connect to and play the game [here](https://kryen112.github.io/)
+
+## Heads up
+
+-   **Requires Archipelago 0.6.7 or newer.** The apworld now ships the
+    `archipelago.json` manifest that Archipelago 0.7.0 will require, which also
+    clears the "Invalid or missing manifest file" warning on generation.
+-   **Regenerate your yaml.** The five "Classes required for ..." options changed
+    meaning: they now count your starting class, so the range is 0-8 and a value
+    of 1 means "no extra classes needed". An old yaml still generates, it just
+    asks for one class fewer than it used to.
+
+## Changes
+
+### APWorld
+
+-   Volcano and Mountaintop no longer forget to require their own stage unlock.
+    Generation was free to place "Unlock Volcano" inside Volcano, which made the
+    seed impossible.
+-   With Class Randomizer off, the class requirements are now sent to the client
+    as 0. They were sent raw, so the client demanded 2-6 classes you could never
+    get and every boss stage stayed out of logic forever.
+-   Class requirements are clamped so a later boss never asks for fewer classes
+    than an earlier one, and the clamped values are what the client receives.
+-   Goal-based location exclusion now works. It compared location names against
+    item names, so it never excluded anything.
+-   Packaged with Archipelago's own "Build APWorlds" component: manifest
+    included, no stale __pycache__ in the archive (98 KB -&gt; 30 KB).
+-   Rewritten to current Archipelago world conventions, with item and location
+    name groups and a grouped player-options page.
+-   Real logic tests plus CI on every push.
+
+### Client
+
+-   The world map's stage colours now match Archipelago's logic. Six things were
+    wrong:
+    -   tallies counted stages **beaten** instead of unlocks **held**;
+    -   the town/boss/goal stage lists never matched, so Castle, Submarine
+        Shrine, Pyramid and Mountaintop counted as ordinary region stages;
+    -   Opening Street counted towards the Castle gate despite having no unlock;
+    -   region gates hung off "boss beaten" instead of that boss's own
+        requirements, so beating a boss early opened the next region;
+    -   boss gates never required their own stage unlock;
+    -   the unlocked-class list grew on every reconnect, so class gates were
+        effectively always satisfied.
+-   A stage dot no longer inherits the previous stage's colour.
+-   archipelago.js 2.0.4 -&gt; 2.1.0, vite 6 -&gt; 8.
+</content>
+    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.6.0"/>
   </entry>
 </feed>
