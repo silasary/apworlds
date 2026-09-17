@@ -2,36 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-17T06:22:38.579970+00:00</updated>
+  <updated>2026-09-17T12:16:18.373800+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/tag/v0.2.0</id>
-    <title>Signalis v0.2.0</title>
-    <updated>2026-09-14T04:11:47+00:00</updated>
-    <author>
-      <name>devoidlazarus</name>
-    </author>
-    <content>### New Features&#13;
-&#13;
-- Thank you to [pl4gue](https://github.com/pl4gue) for implementing a revamped Archipelago connection menu&#13;
-&#13;
-### Bug Fixes&#13;
-&#13;
-- An additional thank you to pl4gue for fixing deathlink&#13;
-- Several logic fixes&#13;
-&#13;
-### Known Issues&#13;
-- Goals associated with game endings are currently broken (selecting Artifact ending in the YAML options will still generate the Keys in the item pool, but beating the game by fighting FLKR will incorrectly Goal the slot)&#13;
-&#13;
-[README](https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/blob/main/README.md)*&#13;
-[Installation instructions](https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/blob/main/installation_instructions.md)&#13;
-&#13;
-*Please read the README before playing!</content>
-    <link href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/tag/v0.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.3</id>
     <title>GemCraft: Frostborn Wrath v0.6.2r2</title>
@@ -1228,7 +1203,7 @@ no regeneration - see **What carries over** for the two exceptions.&#13;
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.11</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r3</title>
     <updated>2026-09-16T00:06:19+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1254,6 +1229,19 @@ no apworld update since v1.0.4 yada yada</content>
     </author>
     <content>- Updated Rate Limit Warning&#13;
 &gt; Added a clarification when the global rate limit is hit.&#13;
+&#13;
+## Folded in updates&#13;
+v1.1.6&#13;
+- "Fixed" Urn Check&#13;
+&gt; Due to the multiple urn changes the check broke. This should future proof it against any possible urn changes however the fix did also cause the downside making the check much easier as its now just if ~~your team ever claims the urn~~ you claim at least 1 of the soul urn souls or if your team wins rift.&#13;
+&gt; **Note from Green:** Urn and rift used to award an accolade (badge/stat to track stuff like damage) but it no longer does so we can only tell by if you get a "treasure soul" but both rift and urn give this soul type so it became a lot easier.&#13;
+&#13;
+v1.1.5&#13;
+- Fixed Street Brawl Round Tracking&#13;
+&gt; Total Street Brawl Rounds played, 3-0 win, round win under 90s, and round win under 120s locations are all functional now.&#13;
+&#13;
+- Dynamic Error 429 Response&#13;
+&gt; Changed API Limit Reached to be dynamic now as the limit has been adjusted from 5 to 3 per hour in the past but the message was hard coded. This should future proof for any other possible limit changes.&#13;
 &#13;
 (Thanks to @GreenestJ for this release)</content>
     <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.7"/>
@@ -2210,5 +2198,27 @@ Built from `a960bb32e97e8a3452962f5445b146df2aa59de9`.
 
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.3</id>
+    <title>Quake 1 v1.2.3</title>
+    <updated>2026-09-17T11:11:24+00:00</updated>
+    <author>
+      <name>Rando</name>
+    </author>
+    <content>## Changes&#13;
+- Fixed WebSocket compression compatibility&#13;
+- Added AP commands to the in-game console, including !hint and !hint_location&#13;
+- Added item and location name autocomplete when using hint or hint_location&#13;
+- Updated the Ironwail engine base&#13;
+&#13;
+## Ironwail engine base 0.8.3-dev changes:&#13;
+- Stability/rendering fixes: console-copy crashes, texture-compression crashes, a GPU buffer leak, and shader issues on NVIDIA and older AMD hardware.&#13;
+- UI improvements: map names on the level-completion screen, mod-specific key-binding menus, and better center-message readability.&#13;
+- Improved model support: MD3 replacement models, faster MD3 loading, and reduced GPU memory usage.&#13;
+- Compatibility with Quake’s 30th-anniversary update, including upstream support for Dawn of the Machine.&#13;
+- Startup control: cl_startmenu lets players choose whether the menu opens at startup.&#13;
+- Better controller support: a modifier button provides a second layer of gamepad bindings, plus PlayStation Bluetooth gyro/rumble fixes and smoother flick-stick adjustments.</content>
+    <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.3"/>
   </entry>
 </feed>

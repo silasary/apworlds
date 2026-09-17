@@ -123,7 +123,7 @@
     },
     "1.1.7": {
       "created_at": "2026-09-16T00:37:50Z",
-      "description": "- Updated Rate Limit Warning\r\n> Added a clarification when the global rate limit is hit.\r\n\r\n(Thanks to @GreenestJ for this release)",
+      "description": "- Updated Rate Limit Warning\r\n> Added a clarification when the global rate limit is hit.\r\n\r\n## Folded in updates\r\nv1.1.6\r\n- \"Fixed\" Urn Check\r\n> Due to the multiple urn changes the check broke. This should future proof it against any possible urn changes however the fix did also cause the downside making the check much easier as its now just if ~~your team ever claims the urn~~ you claim at least 1 of the soul urn souls or if your team wins rift.\r\n> **Note from Green:** Urn and rift used to award an accolade (badge/stat to track stuff like damage) but it no longer does so we can only tell by if you get a \"treasure soul\" but both rift and urn give this soul type so it became a lot easier.\r\n\r\nv1.1.5\r\n- Fixed Street Brawl Round Tracking\r\n> Total Street Brawl Rounds played, 3-0 win, round win under 90s, and round win under 120s locations are all functional now.\r\n\r\n- Dynamic Error 429 Response\r\n> Changed API Limit Reached to be dynamic now as the limit has been adjusted from 5 to 3 per hour in the past but the message was hard coded. This should future proof for any other possible limit changes.\r\n\r\n(Thanks to @GreenestJ for this release)",
       "download_url": "https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.1.7/deadlock.apworld",
       "has_manifest": true,
       "hash_sha256": "b3e4ec8e6cc894845efeb0f611a9fdaea33a77e21a69dff84e944dce2e3abfc9",

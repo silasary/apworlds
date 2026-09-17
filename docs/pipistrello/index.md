@@ -7,7 +7,7 @@ using the weapon you know best: your prized yoyo!
 
 
 ## Downloads
-- <a href="https://github.com/CertifiedPyro/PipistrelloArchipelago/releases/download/v0.3.0/pipistrello.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/CertifiedPyro/PipistrelloArchipelago/releases/download/v0.3.1/pipistrello.apworld">Latest Version (0.3.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
