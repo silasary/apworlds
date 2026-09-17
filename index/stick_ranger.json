@@ -150,6 +150,21 @@
       "title": "1.7.0",
       "version_simple": "1.7.0",
       "world_version": "1.7.0"
+    },
+    "1.8.0": {
+      "created_at": "2026-09-17T13:07:07Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **A game already in progress will lose its map colours.** The website updates\n    for everyone at once, and from now on the seed itself tells the client what\n    is in logic. A seed generated before 1.8.0 does not carry that, so its stages\n    show simply as unlocked or completed. Everything else keeps working, and a\n    new seed gets the colours back.\n-   **Regenerate your yaml** for the new options below.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## New options\n\n-   **Enforce Logic** \u2014 stages that are out of logic cannot be entered at all.\n    They stay on the map, greyed out, so you can still see what you hold. There\n    is no override: the run cannot be broken by accident or on purpose.\n-   **Ring Link** \u2014 your gold is linked to every other Ring Link player's rings.\n    Gold you earn sends rings to the room, rings you receive become gold, and\n    spending sends a negative. **Ring Link Ratio** (default 100) sets how much\n    gold one ring is worth in both directions, because Stick Ranger's gold is\n    one to two orders of magnitude larger than the ring counts games like Sonic\n    deal in.\n-   **Gold per Thrown Ring** \u2014 every ring an Angel throws pays gold. Defaults to\n    50, and goes up to 1000. Set it to 0 to turn it off. It ignores the Gold\n    Multiplier and the Gold Medal, so the number you pick is the number you get.\n    Be aware that an Angel throws about two rings a second, or seven on a quick\n    ring, and four of them at the maximum out-earns every enemy in the game.\n\n## Changes\n\n### Logic now comes from the seed\n\nThe website used to carry its own copy of the apworld's rules, written by hand\nand kept in step by hand. That is what went wrong six different ways in 1.6.0.\n\nThe apworld now describes its own logic and sends it with the seed, and the\nwebsite evaluates that instead of a copy. There is no second set of rules left to\ndrift. Checked by comparing 25,500 stage verdicts against Archipelago's own\nanswer across 300 random item states.\n\nThis is why an older seed loses its colours: it never sent a description.\n\n### APWorld\n\n-   Universal Tracker gets the boss requirements the seed actually rolled, so it\n    stops rolling its own and disagreeing with the game.\n-   New: Enforce Logic, Ring Link, Ring Link Ratio, Gold per Thrown Ring.\n\n### Client\n\n-   Every movement of gold now goes through one place, which is what Ring Link\n    watches. What it reports is what actually happened, so a purchase you could\n    not afford or a pickup at the gold cap sends nothing.\n-   Ring Link batches: gold moves constantly here, so instead of a packet per\n    change it totals up and sends at most one every five seconds. The total is\n    added up before being divided, so ten $40 gun shots count as 4 rings rather\n    than ten lots of nothing, and the remainder carries to the next send.\n-   Gold arriving from Ring Link is never sent back out, so two linked Stick\n    Ranger players cannot amplify each other.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.0/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ffffa5aec4292178db741306419d3aecc8ca813d71af5c45578f9d8482aed799",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 42550,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.0",
+      "title": "1.8.0",
+      "version_simple": "1.8.0",
+      "world_version": "1.8.0"
     }
   }
 }

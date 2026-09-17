@@ -2,427 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-17T12:16:18.373800+00:00</updated>
+  <updated>2026-09-17T18:14:53.313764+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.3</id>
-    <title>GemCraft: Frostborn Wrath v0.6.2r2</title>
-    <updated>2026-09-14T07:47:04+00:00</updated>
-    <author>
-      <name>Levisaxos</name>
-    </author>
-    <content>A quality-of-life release: you can now chat and ask for hints without leaving the game, out-of-logic fields tell you what logic expects you to beat first, the Game Elements window shows what is in and out of logic at a glance, and a batch of logic and tooltip bugs are gone. Seeds generated with 0.0.6.2 keep working.&#13;
-&#13;
-## What's new&#13;
-&#13;
-### In-game chat and hints&#13;
-- The message log panel (backtick key) now has a text box. Type **!hint &lt;item&gt;** or plain chat straight from the game, no text client needed.&#13;
-- Incoming chat and server messages show up in the same panel.&#13;
-&#13;
-### Knowing what to do next&#13;
-- Hovering an out-of-logic field now shows **"Beat N more fields first"**. When fewer than four fields are needed it names them, and lists any field token you are still missing.&#13;
-- The **Game Elements** window colours matching fields **green** when they are in logic and **red** when they are not.&#13;
-- The field tooltip now shows **Endurance XP** next to Journey XP, each with the XP multiplier that was recorded for that run.&#13;
-&#13;
-### Balance and options&#13;
-- The default **difficulty** is now **Medium** instead of Hard. Existing YAMLs that set it explicitly are unaffected.&#13;
-- **Extra shadow cores per wave** are now boosted by **Seeker Sense**, exactly like normal core drops (up to double at max rank).&#13;
-- Talisman fragments now come in varied jigsaw shapes instead of one repeated pattern.&#13;
-- The option descriptions in the YAML template were reworded for clarity.&#13;
-&#13;
-### Debug menu&#13;
-- New **Pouches** and **Keys** tabs so gem pouches and stash keys can be granted for testing.&#13;
-- A repeatable **+10000 shadow cores** button on the Cores tab.&#13;
-&#13;
-## Bug fixes since 0.0.6.2&#13;
-&#13;
-- With **per_tile_progressive** gem pouches and `non_local_items: Everything`, pouches could still be placed in your own world — fixed.&#13;
-- The field tooltip popped up through windows drawn over the map, such as the Debug or Game Elements panels — fixed.&#13;
-- Dragging the map with the mouse stopped working after fields were unlocked, while keyboard scrolling still worked — fixed.&#13;
-- A save that needed to reconnect was offered **"Play without randomizer"**. That choice is now only shown on a brand-new save — fixed.&#13;
-- The XP trait multiplier was not displayed correctly in the field tooltip — fixed.&#13;
-- Skills and traits toggled in the debug menu were reverted the next time the game saved — fixed.&#13;
-- The Game Elements grid scrolled underneath the icon strip at the top of the window — fixed.&#13;
-- Several achievements were reachable in logic far earlier than a player could realistically complete them. They now also require a suitable wizard level, wave count, or monster count. A few wrong requirements, such as the bolt-gem trap achievements, were corrected as well.&#13;
-&#13;
-## Known limitations&#13;
-- The Game Elements colours refresh when the window is opened or a filter is toggled, not while an item arrives with the window open.&#13;
-- Wizard-level gating can still feel like one field unlocking the next in the early game. A revised progression model is being evaluated.&#13;
-&#13;
-## Install&#13;
-See the [install guide](https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/blob/main/README.md).</content>
-    <link href="https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.14.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.14.0</title>
-    <updated>2026-09-14T08:04:53+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-Missions that change their own rules, a tracker your spectators can open, SigMod
-missions the launcher installs itself, and the Grappling Hook fix the last
-release left on nightly. Bots at 0.15.1.
-
-### The run
-
-- **Mission modifiers.** A `mission_modifiers` option, off by default, gives
-  every drawn mission its own rules: low or high gravity, robots plated against
-  blast, fire or bullets, robots 15% faster or half size, robots that can crit,
-  tanks carrying an invulnerable sentry, waves that refill the moment a robot
-  dies, aim that wanders off the crosshair, ground with no grip, and
-  mercenaries who take a quarter more damage. The seed chooses once per mission
-  and keeps the combination, so a mission you return to plays the same twists
-  again. One or two a mission by default, and `minimum_mission_modifiers` and
-  `maximum_mission_modifiers` set the range.
-- **A tracker for spectators.** A web page anybody with the link can open:
-  which missions are cleared, what has been checked, what the multiworld has
-  unlocked, and the weapon buffs each class carries and at what level. Viewers
-  need no room password, the page needs no server of its own, and a live
-  tracker refreshes once a minute. The room has to have tracking enabled, and
-  a seed made with an older apworld cannot show its starting inventory.
-- Test mode hands you the missions you picked. The missions you ticked into
-  the pool are unlocked from the start, so `!mission` can switch to any of
-  them straight away instead of only the one you start on.
-- A wave picker beside Play on the mission list. Pick a wave and the mission
-  starts there, with the money the game gives for having won every wave
-  before it. It opens on the wave your team got to, so the mission you left
-  part way through is one click from where you left it.
-- The run remembers the highest wave you reached in every mission, not only
-  the one you were on. Going to look at another mission no longer throws the
-  first one's progress away.
-- The wave restore now waits for the game to agree before it says it worked.
-  It used to announce the wave it had asked for, which is why a player could
-  read "Restored: Quarry at wave 3 of 6" and be standing in wave one. If the
-  jump never takes, the log says so and names the wave the game is actually
-  on.
-
-### Weapon buffs
-
-- Skins and decorated weapons draw from the gun they are a copy of. A buff
-  rolled for the Holy Mackerel used to belong to the Holy Mackerel alone; it
-  is a Bat buff now, and the same goes for the decorated versions of weapons
-  you already own. The Self-Aware Beauty Mark counts as Jarate.
-- Weapons that are the same gun under different names share one pool. The
-  Saxxy, the Conscientious Objector and the other all-class melees draw one
-  "All-Class Melee" buff between them instead of one each, and the Bootlegger
-  draws what Ali Baba's Wee Booties draws. Fewer duplicate rolls, and every
-  roll lands on a weapon that can use it.
-- Your own explosions no longer bleed, ignite, milk or Jarate you. The hit
-  effects were written where the game could read them on self-inflicted blast
-  damage, so rocket jumping with a bleed rocket launcher bled its owner.
-
-### The launcher
-
-- SigMod community missions install themselves. On Linux the launcher
-  downloads SigMod, loads it, and the missions that need it come off their
-  lock. The Docker image already carried it. On Windows they stay locked:
-  SigMod has no Windows build, and porting it is its own project.
-- A seed made by a different apworld version says what to do about it. The
-  refusal named two numbers and no action, and two people a week apart asked
-  what they meant. It names the two ways out now: regenerate the seed with the
-  apworld that shipped with this launcher, or run the launcher the seed was
-  made for.
-- The Rewards toggles say what they switch. "Rewards" is "Grappling Hook", and
-  the labels read "enabled" and "disabled" instead of "in the pool" and
-  "include cash filler".
-- Joining from the launcher works when Steam's relay is in use. The relay
-  address sometimes reached the launcher and sometimes only the game's own
-  console log, which the launcher reads now.
-- Community missions hand their wave icons to joining players over the HTTP
-  download. They showed on the machine running the server and nowhere else.
-
-### Fixed
-
-- The Grappling Hook can be turned on. The launcher wrote every option the
-  apworld takes except that one, so a run generated from its tf2.yaml never
-  had the hook in it and hand-editing the file was the only way in. It is a
-  row on the Rewards page now, under Server levers.
-- A held Grappling Hook shows on the Unlocks screen. The screen listed four
-  kinds of unlock and the hook is a fifth, so it arrived, the plugin turned
-  it on, and nothing said so.
-
-### The bots
-
-The mod moves to 0.15.1.
-
-- A robot sent where the navigation mesh has no ground no longer takes the
-  wave down with it. The list of walkable tiles around a point came back
-  empty and was read as if it had entries. By kelly-cs.
-- The medic spends the break healing, so his über is full when the wave
-  starts. The charge never built: every wave opened with it empty, and a
-  mission got one über where it now gets seven. Measured on Decoy.
-- A released über keeps the beam on the player it started on, instead of
-  drifting to whoever was nearest when the button went down.
-- The medic heals the biggest body, and only a player who calls for him jumps
-  the queue. A quiet player standing in spawn used to hold the top of the
-  list for a whole wave while the beam landed on whoever was nearby.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* fix(plugin): PLUGIN_VERSION says 1.13.0, like the apworld by @m-this in https://github.com/m-this/tf2-archipelago/pull/58
-* fix(launcher): the Grappling Hook can be turned on, and shows when it lands by @m-this in https://github.com/m-this/tf2-archipelago/pull/59
-* fix(bridge): a format version mismatch says what to do about it by @m-this in https://github.com/m-this/tf2-archipelago/pull/60
-* chore(beads): triage of Discord and the issue tracker since 1.12 by @m-this in https://github.com/m-this/tf2-archipelago/pull/61
-* fix(launcher): make reward toggles intuitive by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/63
-* fix(launcher): recover Steam relay address from console log by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/70
-* feat(launcher): unlock selected missions in test mode by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/71
-* Fix FastDL downloads for community wave icons by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/72
-* feat(resume): a wave picker beside Play, and a mark kept per mission by @m-this in https://github.com/m-this/tf2-archipelago/pull/66
-* feat: add static visual campaign tracker by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/62
-* chore(bots): pin v0.15.0 and drop the pin guard by @m-this in https://github.com/m-this/tf2-archipelago/pull/76
-* Fix buffs for decorated weapons and functional reskins by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/78
-* Merge equivalent weapon buff pools by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/77
-* Add SigMod community missions (for linux) by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/73
-* Prevent hostile weapon buffs from triggering on self-damage by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/79
-* Add per-mission gameplay modifiers by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/81
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.13.0...v1.14.0
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/ZTI3NmQwNjA0NGU3NDczODcyMzllMWM3N2NiY2Y0MGE6MTc4OTM3MzQxOA==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/Nzg4YWY0ZDFhNjkzYTRjMjRhYjExZmYzMGIzN2I5MmQ6MTc4OTM3MzQyMQ==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.14.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.10.0-alpha</id>
-    <title>The Legend of Zelda - Phantom Hourglass v0.9.7</title>
-    <updated>2026-09-14T10:55:20+00:00</updated>
-    <author>
-      <name>carrotinator</name>
-    </author>
-    <author>
-      <name>Tanker50207</name>
-    </author>
-    <author>
-      <name>palex00</name>
-    </author>
-    <author>
-      <name>CelestialKitsune</name>
-    </author>
-    <author>
-      <name>DayKat</name>
-    </author>
-    <author>
-      <name>1313e</name>
-    </author>
-    <author>
-      <name>Catzador</name>
-    </author>
-    <content>❗ Not compatible with seeds generated in previous versions. ❗ &#13;
-[Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)&#13;
-&#13;
-## New Features&#13;
-- Added full shopsanity&#13;
-- Added keyrings&#13;
-- Added non-progressive variants of progressive items and spirits, and progressive fishing rod, with an option.&#13;
-- Added new options for spirit items, and an option for adding spirits to the boss reward pool&#13;
-- Added open_post_dungeon option, that unlocks post dungeon checks without completing their dungeons.&#13;
-- Added 2 new locations, temple of the ocean king flooded chamber chests, and made them always spawn&#13;
-- Added 2 new locations for stealing the square crystal and force gem from phantoms on B9 and B12 respectively&#13;
-- Switched to rulebuilder logic, allowing /explain in UT&#13;
-  - Added custom explain text to certain logics, like time logic&#13;
-- Added `remove` option to `exclude_non_required_dungeons`, removing the locations completely from gen.&#13;
-- Added `remove_locations` option, allowing you to completely remove locations and location groups&#13;
-- Added option salvage_count, in case 31 salvage spots is too many&#13;
-- Changed the instant goal option to a trigger, giving the metals to Zauz. Lore wise he makes the sword and defeats Bellum for you.&#13;
-- Added ship options:&#13;
-  - starting_ship&#13;
-  - ship_items&#13;
-  - (auto_)equip_ship&#13;
-    - there's also client command `/boat equip` to toggle auto equipping, in case you make a sick design&#13;
-- Added shield_in_pool option&#13;
-- Added plando_dungeon_pool option&#13;
-- /carrot_asked now prints in a single message, allowing for one click copy paste&#13;
-- Removed option `boss_key_behavior`, and added `vanilla_abstract` to `randomize_boss_keys` instead&#13;
-- Added backups for shortcuts, that unlock from a new file if you already got them&#13;
-- Rechecking already got locations now shows the nothing item animation&#13;
-- Added new boomerang skip in Courage Temple to logic&#13;
-&#13;
-## Bugs&#13;
-- Fixed smart key logic bug in ice temple&#13;
-- Fixed repeat acquisitions of max progressive items removing the last stage&#13;
-- Go mode indication in UT should show before defeating bosses for boss goal&#13;
-- Fixed logic bug for wizzrobe chest on TotOK B12&#13;
-- Fixed TotOK b9 flames only lowering from pedestal with vanilla crystals&#13;
-- Added grappling through fire to logic&#13;
-- TotOK and dongorongo (logic) boss events work correctly&#13;
-- Fixed typo in option Randomize Minigames&#13;
-- Fixed pirate ambush!!! Now spawns instantly when available&#13;
-- Randomizing salvage no longer gives adds an extra courage crest to the pool&#13;
-- Stowfish logic requires another fish to hand in.&#13;
-- All farmable minigame rewards are treasure&#13;
-- Fixed traveling ships giving free trade items&#13;
-- Added logical rupee requirements to minigames&#13;
-- Ruins NW bonk tree rupee can be picked up at any y level&#13;
-- Added backup goal sent on credits cause i couldn't figure out cases where bellum goal wouldn't send.&#13;
-&#13;
-# Refactors&#13;
-- Added location class&#13;
-- Moved chest item setting to object loop&#13;
-- Changed silent events to actual events&#13;
-&#13;
-Thanks to Junofa Fuwa for helping with playtesting!</content>
-    <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.10.0-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.7</id>
-    <title>Tomba! v1.5.7</title>
-    <updated>2026-09-14T15:04:23+00:00</updated>
-    <author>
-      <name>T4g1</name>
-    </author>
-    <author>
-      <name>bosshunter</name>
-    </author>
-    <content>This release focusses on bringing the entrance randomization. In the previous release, it was not really possible to make it work. Those issues are now solved hopefully.&#13;
-&#13;
-&gt; [!WARNING]&#13;
-&gt; The entrance randomization feature is a higly unstable option right now. Any issues should be reported on this project tracker page: https://github.com/T4g1/ArchipelagoTomba/issues&#13;
-&#13;
----&#13;
-&#13;
-## ✨ What's New&#13;
-&#13;
-### 🐛 Bug Fixes&#13;
-* Fix: Can't access Masakari River if Jungle purified before learning how to Swim&#13;
-* Fix: Chest in Swimming Room in Haunted Mansion in logic too soon&#13;
-* Fix Big Key is now required for Seven Friends event&#13;
-* Fix: Unable to deactivate chick randomization&#13;
-* Fix #96 : Every item is now tied to a memory address and a specific check (event cleared, specific count value or bitmask) so any savestate will synchronize the checks automaticaly&#13;
-* Various pre-fixes related to entrance randomization such as forcing some doors to be open and some cleared events to prevent loading issues&#13;
-* Baccus Lake and Baccus Lake Pier connection is enforced even for Randomized Entrances&#13;
-&#13;
----&#13;
-&#13;
-## 🔧 Installation&#13;
-1. Download the source code or the `.apworld` file.&#13;
-2. Drop it into your Archipelago `custom_worlds/` directory.</content>
-    <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.14</id>
-    <title>Northgard v2026.9.14</title>
-    <updated>2026-09-14T16:26:42+00:00</updated>
-    <author>
-      <name>Chakraa</name>
-    </author>
-    <content>### Fixed
-- Universal Tracker support (added in 2026.09.13) was making the server silently reject real progress: Universal Tracker's context class identifies its connections as tracker-only, and this client was inheriting that identity unchanged. Location checks and goal completion now go through correctly whether or not Universal Tracker is installed.
-
-### Changed
-- Shortened the `/savedir` and `/conquest` in-client help text for readability.
-
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.13...2026.09.14</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.14"/>
-  </entry>
   <entry>
     <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.1</id>
     <title>Funi Raccoon Game v1.7.1</title>
@@ -1203,7 +787,7 @@ no regeneration - see **What carries over** for the two exceptions.&#13;
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.11</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r3</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
     <updated>2026-09-16T00:06:19+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1231,12 +815,13 @@ no apworld update since v1.0.4 yada yada</content>
 &gt; Added a clarification when the global rate limit is hit.&#13;
 &#13;
 ## Folded in updates&#13;
-v1.1.6&#13;
+These versions were folded into 1.1.7 when forks merged&#13;
+### v1.1.6&#13;
 - "Fixed" Urn Check&#13;
 &gt; Due to the multiple urn changes the check broke. This should future proof it against any possible urn changes however the fix did also cause the downside making the check much easier as its now just if ~~your team ever claims the urn~~ you claim at least 1 of the soul urn souls or if your team wins rift.&#13;
 &gt; **Note from Green:** Urn and rift used to award an accolade (badge/stat to track stuff like damage) but it no longer does so we can only tell by if you get a "treasure soul" but both rift and urn give this soul type so it became a lot easier.&#13;
 &#13;
-v1.1.5&#13;
+### v1.1.5&#13;
 - Fixed Street Brawl Round Tracking&#13;
 &gt; Total Street Brawl Rounds played, 3-0 win, round win under 90s, and round win under 120s locations are all functional now.&#13;
 &#13;
@@ -2220,5 +1805,171 @@ Built from `a960bb32e97e8a3452962f5445b146df2aa59de9`.
 - Startup control: cl_startmenu lets players choose whether the menu opens at startup.&#13;
 - Better controller support: a modifier button provides a second layer of gamepad bindings, plus PlayStation Bluetooth gyro/rumble fixes and smoother flick-stick adjustments.</content>
     <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.0.3</id>
+    <title>Wikipelago v1.0.3</title>
+    <updated>2026-09-17T12:19:24+00:00</updated>
+    <author>
+      <name>Dreskn (continued)</name>
+    </author>
+    <author>
+      <name>Skrumptily69 (original)</name>
+    </author>
+    <content>Requires Archipelago **0.6.7** (or compatible). Web client: https://wikipelago.dreskn.fr/&#13;
+&#13;
+---&#13;
+&#13;
+### Apworld / YAML&#13;
+&#13;
+- Option Creator tooltips now match the comments in the release YAML, so a launcher-generated template reads the same as this one.&#13;
+&#13;
+---&#13;
+&#13;
+### Web client&#13;
+&#13;
+**Bingo**&#13;
+- Diagonal and anti-diagonal are marked with **D** / **AD** ticks.&#13;
+- Larger grids keep the same cell and font size as a 5×5. You can also click the board to enlarge it.&#13;
+&#13;
+**Journey**&#13;
+- Full screen from the Journey window or pop out into its own window.&#13;
+&#13;
+**Bug fixes**&#13;
+- Reaching the Grand Goal no longer auto-sends leftover rounds. Remaining checks follow the room **Release** setting (`!release` / auto-release). The HUD updates from Archipelago’s checked locations after a release.&#13;
+- Redirects and short titles now resolve to the real Wikipedia page name before a check is sent (e.g. `Task Scheduler` → `Windows Task Scheduler`).</content>
+    <link href="https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.0</id>
+    <title>Stick Ranger v1.8.0</title>
+    <updated>2026-09-17T13:07:07+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content>## Installation
+
+-   Download the APworld for Stick Ranger
+-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
+-   Generate a yaml or download the one in here
+-   Customize the yaml and put it in the /players folder inside Archipelago
+-   Generate a game
+-   Connect to and play the game [here](https://kryen112.github.io/)
+
+## Heads up
+
+-   **A game already in progress will lose its map colours.** The website updates
+    for everyone at once, and from now on the seed itself tells the client what
+    is in logic. A seed generated before 1.8.0 does not carry that, so its stages
+    show simply as unlocked or completed. Everything else keeps working, and a
+    new seed gets the colours back.
+-   **Regenerate your yaml** for the new options below.
+-   Requires Archipelago **0.6.7 or newer**.
+
+## New options
+
+-   **Enforce Logic** — stages that are out of logic cannot be entered at all.
+    They stay on the map, greyed out, so you can still see what you hold. There
+    is no override: the run cannot be broken by accident or on purpose.
+-   **Ring Link** — your gold is linked to every other Ring Link player's rings.
+    Gold you earn sends rings to the room, rings you receive become gold, and
+    spending sends a negative. **Ring Link Ratio** (default 100) sets how much
+    gold one ring is worth in both directions, because Stick Ranger's gold is
+    one to two orders of magnitude larger than the ring counts games like Sonic
+    deal in.
+-   **Gold per Thrown Ring** — every ring an Angel throws pays gold. Defaults to
+    50, and goes up to 1000. Set it to 0 to turn it off. It ignores the Gold
+    Multiplier and the Gold Medal, so the number you pick is the number you get.
+    Be aware that an Angel throws about two rings a second, or seven on a quick
+    ring, and four of them at the maximum out-earns every enemy in the game.
+
+## Changes
+
+### Logic now comes from the seed
+
+The website used to carry its own copy of the apworld's rules, written by hand
+and kept in step by hand. That is what went wrong six different ways in 1.6.0.
+
+The apworld now describes its own logic and sends it with the seed, and the
+website evaluates that instead of a copy. There is no second set of rules left to
+drift. Checked by comparing 25,500 stage verdicts against Archipelago's own
+answer across 300 random item states.
+
+This is why an older seed loses its colours: it never sent a description.
+
+### APWorld
+
+-   Universal Tracker gets the boss requirements the seed actually rolled, so it
+    stops rolling its own and disagreeing with the game.
+-   New: Enforce Logic, Ring Link, Ring Link Ratio, Gold per Thrown Ring.
+
+### Client
+
+-   Every movement of gold now goes through one place, which is what Ring Link
+    watches. What it reports is what actually happened, so a purchase you could
+    not afford or a pickup at the gold cap sends nothing.
+-   Ring Link batches: gold moves constantly here, so instead of a packet per
+    change it totals up and sends at most one every five seconds. The total is
+    added up before being divided, so ten $40 gun shots count as 4 rings rather
+    than ten lots of nothing, and the remainder carries to the next send.
+-   Gold arriving from Ring Link is never sent back out, so two linked Stick
+    Ranger players cannot amplify each other.
+</content>
+    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9h</id>
+    <title>Warioworld v0.1.9r2</title>
+    <updated>2026-09-17T14:05:19+00:00</updated>
+    <author>
+      <name>moester_</name>
+    </author>
+    <content># Warioworld Archipelago v0.1.9 hotfix&#13;
+&#13;
+### Fixes&#13;
+&gt; Fixed Level Gates not opening if the player did not manually clear the cache (usually by savestating)&#13;
+&gt; Fixed some items being given incorrectly&#13;
+&gt; Fixed the Save Prompt being incorrectly brought up after exiting a level or punching a Save Book&#13;
+&#13;
+### Known Bugs&#13;
+&gt;The most recent item will be given to you again if it is a Filler/Trap item on reloading the savefile (this can softlock you if you have been given the Death Trap last, being sent another item will fix this)&#13;
+&gt; Some checks need to be collected twice to register (this is random and inconsistent, even across savestates)</content>
+    <link href="https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9h"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.1.0</id>
+    <title>Taskipelago v1.1.0</title>
+    <updated>2026-09-17T14:59:00+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>*One client to rule them all*&#13;
+&#13;
+## What's new&#13;
+* One unified web client that hosts itself from the apworld, or is hosted at the [usual web address](https://barretg.github.io/Taskipelago/web-client/).&#13;
+* Hints tab&#13;
+* Deathlink alerts with noises that can be turned on and off&#13;
+* Deathlink lock mode&#13;
+* Deathlink task rows&#13;
+* Item filtering on items tab&#13;
+* Find/replace on YAML Generator&#13;
+* Renaming something optionally updates all references for your convenience&#13;
+* Reordering of tasks/items is now supported&#13;
+* Progressive groups now have colors tied to them&#13;
+* Bingo now generates filler if no items are listed&#13;
+* Fixed case where names with trailing special characters made things a little funky&#13;
+&#13;
+Note: should be fully backwards compatible with worlds generated at v1.0.2. Also Universal Tracker is still incompatible.</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ethentianknight/shellipelago/releases/tag/1.15</id>
+    <title>Shellipelago v1.15.0</title>
+    <updated>2026-09-17T15:14:59+00:00</updated>
+    <author>
+      <name>ethentianknight</name>
+    </author>
+    <content>- Removed Plando settings from slot data to allow Plando to do whatever it does.</content>
+    <link href="https://github.com/ethentianknight/shellipelago/releases/tag/1.15"/>
   </entry>
 </feed>

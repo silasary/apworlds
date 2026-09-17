@@ -5,11 +5,7 @@
   "game": "Warioworld",
   "github": "https://github.com/m0ester/WarioworldAP",
   "license": "GPL-3.0",
-  "manifest_fields": [
-    "authors",
-    "minimum_ap_version",
-    "world_version"
-  ],
+  "manifest_fields": [],
   "versions": {
     "v0.1.1": {
       "created_at": "2026-02-06T20:10:10Z",
@@ -171,6 +167,20 @@
       "version_simple": "0.1.9",
       "world_version": "0.1.9"
     },
+    "v0.1.9h": {
+      "created_at": "2026-09-17T14:05:19Z",
+      "description": "# Warioworld Archipelago v0.1.9 hotfix\r\n\r\n### Fixes\r\n> Fixed Level Gates not opening if the player did not manually clear the cache (usually by savestating)\r\n> Fixed some items being given incorrectly\r\n> Fixed the Save Prompt being incorrectly brought up after exiting a level or punching a Save Book\r\n\r\n### Known Bugs\r\n>The most recent item will be given to you again if it is a Filler/Trap item on reloading the savefile (this can softlock you if you have been given the Death Trap last, being sent another item will fix this)\r\n> Some checks need to be collected twice to register (this is random and inconsistent, even across savestates)",
+      "download_url": "https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9h/WarioworldAP.apworld",
+      "has_manifest": false,
+      "hash_sha256": "3fd338bbb4a4a70d97c41acbd8aad3bd0d8b3c278e9aca1cc285dff0cfd3d1e0",
+      "html_url": "https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9h",
+      "size": 104918,
+      "source_url": "https://api.github.com/repos/m0ester/WarioworldAP",
+      "tag": "v0.1.9h",
+      "title": "Warioworld APWorld v0.1.9hotfix",
+      "version_simple": "0.1.9",
+      "world_version": "0.1.9r2"
+    },
     "v0.1.9r2": {
       "created_at": "2026-03-27T23:00:30Z",
       "description": "#  Warioworld Archipelago v0.1.9\r\n### Additions\r\n> Added RingLink\r\n> Added SFX functionality for RingLink\r\n> Added PAL support (the Client will also apply a different patch depending on PAL or NTSC)\r\n# Fixes\r\n> Fixed going into/out of a Sublevel sending a DeathLink to other players\r\n> Fixed DeathLink not being received by Wario (no more favourable exchange rates for you sir!)\r\n> Fixed miscellaneous checks being given to you when they shouldn't\r\n> Fixed Chests randomly spawning without you hitting the Button\r\n> Fixed the logic for Clown-a-Round being incorrect (leading to the game thinking you had access when you did not)\r\n> Closing the game before the Client can sometimes send random checks and crash the Client\r\n# Known Bugs\r\n> The most recent item will be given to you again if it is a Filler/Trap item on reloading the savefile (this can softlock you if you have been given the Death Trap last, being sent another item will fix this)\r\n> Some checks need to be collected twice to register (this is random and inconsistent, even across savestates)\r\n",
@@ -205,7 +215,7 @@
     },
     "v0.1.9r4": {
       "created_at": "2026-03-27T23:00:30Z",
-      "description": "#  Warioworld Archipelago v0.1.9\r\n### Additions\r\n> Added RingLink (all coins will count as 1 for balance purposes, you still lose the same amount of coins however)\r\n> Added SFX functionality for RingLink\r\n> Added PAL support (the Client will also apply a different patch depending on PAL or NTSC)\r\n# Fixes\r\n> Fixed going into/out of a Sublevel sending a DeathLink to other players\r\n> Fixed DeathLink not being received by Wario (no more favourable exchange rates for you sir!)\r\n> Fixed miscellaneous checks being given to you when they shouldn't\r\n> Fixed Chests randomly spawning without you hitting the Button\r\n> Fixed the logic for Clown-a-Round being incorrect (leading to the game thinking you had access when you did not)\r\n> Closing the game before the Client can sometimes send random checks and crash the Client\r\n> Fixed Client disconnecting when your Coin count goes below 0 \r\n# Known Bugs\r\n> The most recent item will be given to you again if it is a Filler/Trap item on reloading the savefile (this can softlock you if you have been given the Death Trap last, being sent another item will fix this)\r\n> Some checks need to be collected twice to register (this is random and inconsistent, even across savestates)\r\n",
+      "description": "#  Warioworld Archipelago v0.1.9\r\n### Additions\r\n> Added RingLink (all coins will count as 1 for balance purposes, you still lose the same amount of coins however)\r\n> Added SFX functionality for RingLink\r\n> Added PAL support (the Client will also apply a different patch depending on PAL or NTSC)\r\n### Fixes\r\n> Fixed going into/out of a Sublevel sending a DeathLink to other players\r\n> Fixed DeathLink not being received by Wario (no more favourable exchange rates for you sir!)\r\n> Fixed miscellaneous checks being given to you when they shouldn't\r\n> Fixed Chests randomly spawning without you hitting the Button\r\n> Fixed the logic for Clown-a-Round being incorrect (leading to the game thinking you had access when you did not)\r\n> Closing the game before the Client can sometimes send random checks and crash the Client\r\n> Fixed Client disconnecting when your Coin count goes below 0 \r\n### Known Bugs\r\n> The most recent item will be given to you again if it is a Filler/Trap item on reloading the savefile (this can softlock you if you have been given the Death Trap last, being sent another item will fix this)\r\n> Some checks need to be collected twice to register (this is random and inconsistent, even across savestates)\r\n",
       "download_url": "https://github.com/m0ester/WarioworldAP/releases/download/v0.1.9/WarioworldAP.apworld",
       "has_manifest": true,
       "hash_sha256": "9efba6a8225d8c0efe445224ae89a2156a6656e6e91898d31a109663cbaa37c3",

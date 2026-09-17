@@ -126,6 +126,21 @@
       "title": "Grunnchipelago 1.1.3",
       "version_simple": "1.1.3",
       "world_version": "1.1.3"
+    },
+    "v1.1.4": {
+      "created_at": "2026-09-17T15:15:21Z",
+      "description": "Another round of logic fixes, this one from a player report. Seeds rolled on 1.1.3 can expect you to pick things up in places you cannot reach yet, so this is worth taking.\n\n## Fixed\n\n**Two pickups that only exist in the demo were treated as real.** The scene data holds three objects with a `_demo` suffix, and back when I wrote the logic I kept them as valid sources because nothing in the data marked them as demo content. Two of them are simply not in the shipped game:\n\n* the Trowel in the toilet does not exist, so the Bunker is the only source\n* the watering can in the gnome passage does not exist either, the park is the only source\n\nThe third one, the Strange Key on the magpie, is real. That rule already asked for the Worm and a garden at 30 percent, so nothing changed there.\n\n**The Intratuin coin was free from the start.** It sits in the gnome greenhouse right next to the Flower Gem, behind the door that only opens once you have watered every strange flower. Intratuin is part of the garden region, so the logic thought you could just walk in and grab it. Watering can or blue coin down the well, either works, same as everywhere else.\n\n**The garden gnome coin needed the hammer.** Gulden #10 is inside the gnome and only drops when you smash it, which takes the hammer and nothing else. It was sitting there as a free garden check. The other two coins in the start garden really are just lying around, those are unchanged.\n\nTogether those made `Obtain Trowel` and a few garden checks show up in logic with nothing but the Bridge Key, which is what got reported.\n\n## Install\n\nUnzip `Grunnchipelago-client-1.1.4.zip` into `Grunn/BepInEx/plugins/`, and drop `grunn.apworld` in `Archipelago/custom_worlds/` if you're generating.\n\nIf you have a 1.1.3 seed running, regenerating is the safe call.\n\nSetup guides (EN/FR) and the full option list are in the repo.\n",
+      "download_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.4/grunn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "cf4a46e16267235e37d4dd5fab3d2db8b917bfffa851da11620a64f0a7589302",
+      "html_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/tag/v1.1.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 53130,
+      "source_url": "https://api.github.com/repos/Serial-Developer/Grunnchipelago",
+      "tag": "v1.1.4",
+      "title": "Grunnchipelago 1.1.4",
+      "version_simple": "1.1.4",
+      "world_version": "1.1.4"
     }
   }
 }

@@ -1,9 +1,12 @@
 # Shellipelago
 
 ## Latest
-- <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.14b/shellipelago.apworld">Latest Version (1.14.0r2)</a>
+- <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.15/shellipelago.apworld">Latest Version (1.15.0)</a>
 
 ## All Versions
+
+#### v1.15.0
+- <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.15/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.15/shellipelago.apworld</a>
 
 #### v1.14.0r2
 - <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.14b/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.14b/shellipelago.apworld</a>
