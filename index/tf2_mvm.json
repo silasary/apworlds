@@ -172,6 +172,22 @@
       "version_simple": "1.16.0",
       "world_version": "1.16.0r2"
     },
+    "nightlyr19": {
+      "created_at": "2026-09-17T06:04:12Z",
+      "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `a960bb32e97e8a3452962f5445b146df2aa59de9`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.16.2\n\n",
+      "download_url": "https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d7610594cbe1cc99e49d1b0de8e5c489be563d13a826facf01315550c9a8e5a0",
+      "html_url": "https://github.com/m-this/tf2-archipelago/releases/tag/nightly",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 237340,
+      "source_url": "https://api.github.com/repos/m-this/tf2-archipelago",
+      "tag": "nightlyr19",
+      "title": "nightly",
+      "version_simple": "1.16.2",
+      "world_version": "1.16.2r2"
+    },
     "nightlyr2": {
       "created_at": "2026-08-27T08:53:32Z",
       "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `d7b32eb40a08102ba2d10ff5fa0fc5ff902d45cc`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.10.0\n\n- fix(test): skip the game data test without the real ripext (apw-5tk)\n- chore(beads): apw-5tk, what PR #3 solves\n- Add Archipelago weapon buff upgrades\n- chore(beads): a restart must not cost the mission (apw)\n- chore(deps): bots v2.18.1 -> v2.19.0 (mvm-bha)\n- feat(launcher): build your own bot loadouts (mvm-e5r)\n- feat(launcher): resolve the loadouts a player builds (mvm-e5r)\n- docs: the Bot Switcher, in both languages (mvm-6dc)\n- feat(gamedata): a weapon catalogue, generated from the mod and the game (mvm-e5r)\n- feat(launcher): a Bot Switcher tab, and lineup changes without a restart (mvm-6dc)\n- chore(beads): update a bead\n- chore(beads): update apw-r85 The game server crashes with an access violation, and the la\u2026\n- chore(beads): update apw-hut RED gets nine bots when the mission loads\n- chore(beads): update apw-48u De-upgrading appears not to take\n- chore(beads): update apw-4cb A bundle is money the game never recorded\n",
@@ -250,7 +266,7 @@
       "tag": "nightlyr6",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r2"
+      "world_version": "1.11.0r3"
     },
     "nightlyr7": {
       "created_at": "2026-09-06T18:20:06Z",
@@ -266,7 +282,7 @@
       "tag": "nightlyr7",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r2"
+      "world_version": "1.11.0r4"
     },
     "nightlyr8": {
       "created_at": "2026-09-06T12:00:14Z",
@@ -298,7 +314,7 @@
       "tag": "nightlyr9",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r3"
+      "world_version": "1.11.0r2"
     },
     "v1.0.0": {
       "created_at": "2026-08-17T17:37:17Z",
@@ -434,6 +450,36 @@
       "title": "v1.16.0",
       "version_simple": "1.16.0",
       "world_version": "1.16.0"
+    },
+    "v1.16.1": {
+      "created_at": "2026-09-16T20:09:03Z",
+      "description": "<p align=\"center\">\n  <a href=\"https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe\">\n    <img alt=\"Download tf2ap.exe for Windows\" src=\"https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&logo=windows&logoColor=white\">\n  </a>\n  <a href=\"https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64\">\n    <img alt=\"Download tf2ap-linux-amd64 for Linux\" src=\"https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&logo=linux&logoColor=white\">\n  </a>\n</p>\n\n## Changes\n\n### Weapon slots, found in any order\n\n- **Weapon slots per class is now three ways, not two.** Off is one progressive\n  item for everybody. Progressive is what v1.16.0 shipped: an item per class,\n  opening that class's slots in its own order. **Any order** is the same\n  eighteen slots as items that name them, found in whatever order the\n  multiworld puts them in, so a Scout can find his melee before his secondary.\n- Safe because the slot a class is played with still comes free with the class:\n  the Medigun for a Medic, the Knife for a Spy. Nobody is left holding only\n  their worst weapon.\n- The items read as what they are: \"Spy Revolver Slot\" in somebody else's\n  spoiler log, rather than a progressive item nobody outside the run can place.\n- Same eighteen items either way, so a run needs no more room for them than it\n  did. A yaml saying `true` still means progressive.\n\n### Fixed\n\n- A mission whose file this server does not have is said so and skipped, rather\n  than loading its map and sitting on wave 0 for ever. TF2 ignores a mission\n  file it cannot find and keeps the map's own, so a run that drew a community\n  mission without the pack that carries it stopped dead with nothing saying\n  why. `!missions` marks those `[not installed]`.\n\n### The bots have names you choose\n\n- **A Names section on the Bots page.** The bots draw from a pool of names as\n  they take their seats, and the pool is yours: add your own, and leave out any\n  of the ones this launcher ships. The list is kept as what you changed rather\n  than as a copy, so names added in a later release still reach you.\n- It works the same in the Docker stack, through `SRCDS_BOT_NAMES_EXCLUDED` and\n  `SRCDS_BOT_NAMES_ADDED` in `.env`.\n- **A name for a seat.** Seat 3 can be called Gravel Pit Gary every run: the bot\n  that sits there is given the name instead of drawing one. The rest of the\n  seats keep drawing.\n- Renaming a seat costs the team nothing. The bots are renamed where they stand,\n  rather than rebuilt: a new team would lose the upgrades it had bought, which\n  is a steep price for a change of name. Bots at 0.16.0.\n- The pool itself is read when a map starts, so adding or removing a name\n  reaches the bots on the next mission.\n\n### Fixed\n\n- In the Docker stack the bots played stock weapons whatever the admin page\n  said. The loadouts reached `.env` and stopped there: nothing wrote the file\n  the mod reads, and nothing turned on the setting that makes it read one. A\n  loadout built on the Loadouts page was also forgotten at the next restart,\n  because `.env` is the whole of what the page remembers and the built ones\n  were never written to it.\n- A team saved on the admin page was forgotten the same way, for the same\n  reason.\n\n\n## Windows\n\nDownload **`tf2ap.exe`** above. Run it. It installs everything else.\n\nWindows will warn you, and it is a false positive. The exe unpacks archives and\nstarts a game server without a code signature, which looks like a virus to a\nscanner. Click **More info**, then **Run anyway**, or check it below first.\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)\n\n## Linux\n\nDownload **`tf2ap-linux-amd64`**. Run it. It installs everything else.\n\n```sh\nchmod +x tf2ap-linux-amd64\n./tf2ap-linux-amd64\n```\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)\n\n## Docker\n\nDownload **`compose.yaml`** and **`env.example`**:\n\n```sh\nmkdir mann-vs-archipelago && cd mann-vs-archipelago\nbase=https://github.com/m-this/tf2-archipelago/releases/latest/download\ncurl -fsSLO \"$base/compose.yaml\"\ncurl -fsSL -o .env \"$base/env.example\"\n```\n\nSet `SRCDS_RCONPW` in `.env`, then:\n\n```sh\ndocker compose --profile seed run --rm seed   # writes ./seed\ndocker compose up -d\n```\n\nUpload the file from `seed/` at\n[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's\nport into `AP_PORT`.\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)\n\n## Other assets\n\n| File | For |\n| --- | --- |\n| `tf2_mvm.apworld` | The official Archipelago app. |\n| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |\n| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |\n| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |\n\n## Checking what you downloaded\n\n**`SHA256SUMS`** is attached to this release. It holds the hash of every file\nhere, computed by the workflow that built them.\n\n```powershell\nGet-FileHash tf2ap.exe -Algorithm SHA256    # Windows\n```\n\n```sh\nsha256sum -c SHA256SUMS --ignore-missing    # Linux\n```\n\nEach binary carries a signed record of the commit and the workflow that built\nit:\n\n```sh\ngh attestation verify tf2ap.exe --repo m-this/tf2-archipelago\n```\n\nThe binaries are scanned on VirusTotal, and the reports are linked at the end of\nthese notes. Expect a few heuristic detections and no named malware family. The\nsource is all in the repository, and `make launcher` rebuilds the exe on your\nown machine.\n\n## Code signing policy\n\nFree code signing for open source projects, provided by\n[SignPath.org](https://signpath.org), with a certificate from the\n[SignPath Foundation](https://signpath.org).\n\n> [!WARNING]\n> The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships\n> unsigned, and Windows warns about it until that changes.\n\n\n**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.16.0...v1.16.1\n\n## VirusTotal\n\n- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/Yjg2NmNlMDA1OGNhM2JmODkwNWNlMTYxNzI0NDNkZDk6MTc4OTU4OTc0MQ==/detection)\n- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ODAyODkyNDFhNjhlYTBiYTFkZGExMzE0MmZmODk1ZTc6MTc4OTU4OTc0Mw==/detection)\n",
+      "download_url": "https://github.com/m-this/tf2-archipelago/releases/download/v1.16.1/tf2_mvm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "26e509008fdda50bb07d85a695d3c31f7463f320588258d89d073440a866ad61",
+      "html_url": "https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 237334,
+      "source_url": "https://api.github.com/repos/m-this/tf2-archipelago",
+      "tag": "v1.16.1",
+      "title": "v1.16.1",
+      "version_simple": "1.16.1",
+      "world_version": "1.16.1"
+    },
+    "v1.16.2": {
+      "created_at": "2026-09-17T06:04:12Z",
+      "description": "<p align=\"center\">\n  <a href=\"https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe\">\n    <img alt=\"Download tf2ap.exe for Windows\" src=\"https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&logo=windows&logoColor=white\">\n  </a>\n  <a href=\"https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64\">\n    <img alt=\"Download tf2ap-linux-amd64 for Linux\" src=\"https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&logo=linux&logoColor=white\">\n  </a>\n</p>\n\n## Changes\n\n### Fixed\n\n- Turning off SigMod or Community missions on the Missions page now takes their\n  missions out of the pool. Before, they stayed ticked: the pool looked full,\n  and Check Run Selection still asked for SigMod after you had turned it off.\n  If the start mission was one of them, the start goes back to Any and the\n  server boots on its default map again. By kelly-cs.\n- A mission that stayed ticked after its requirement went away can be unticked.\n  Its row used to be locked, so it could not be taken out of the pool.\n- All in the pool no longer puts community missions back while Community\n  missions is off.\n\n\n## Windows\n\nDownload **`tf2ap.exe`** above. Run it. It installs everything else.\n\nWindows will warn you, and it is a false positive. The exe unpacks archives and\nstarts a game server without a code signature, which looks like a virus to a\nscanner. Click **More info**, then **Run anyway**, or check it below first.\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)\n\n## Linux\n\nDownload **`tf2ap-linux-amd64`**. Run it. It installs everything else.\n\n```sh\nchmod +x tf2ap-linux-amd64\n./tf2ap-linux-amd64\n```\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)\n\n## Docker\n\nDownload **`compose.yaml`** and **`env.example`**:\n\n```sh\nmkdir mann-vs-archipelago && cd mann-vs-archipelago\nbase=https://github.com/m-this/tf2-archipelago/releases/latest/download\ncurl -fsSLO \"$base/compose.yaml\"\ncurl -fsSL -o .env \"$base/env.example\"\n```\n\nSet `SRCDS_RCONPW` in `.env`, then:\n\n```sh\ndocker compose --profile seed run --rm seed   # writes ./seed\ndocker compose up -d\n```\n\nUpload the file from `seed/` at\n[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's\nport into `AP_PORT`.\n\n[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)\n\n## Other assets\n\n| File | For |\n| --- | --- |\n| `tf2_mvm.apworld` | The official Archipelago app. |\n| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |\n| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |\n| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |\n\n## Checking what you downloaded\n\n**`SHA256SUMS`** is attached to this release. It holds the hash of every file\nhere, computed by the workflow that built them.\n\n```powershell\nGet-FileHash tf2ap.exe -Algorithm SHA256    # Windows\n```\n\n```sh\nsha256sum -c SHA256SUMS --ignore-missing    # Linux\n```\n\nEach binary carries a signed record of the commit and the workflow that built\nit:\n\n```sh\ngh attestation verify tf2ap.exe --repo m-this/tf2-archipelago\n```\n\nThe binaries are scanned on VirusTotal, and the reports are linked at the end of\nthese notes. Expect a few heuristic detections and no named malware family. The\nsource is all in the repository, and `make launcher` rebuilds the exe on your\nown machine.\n\n## Code signing policy\n\nFree code signing for open source projects, provided by\n[SignPath.org](https://signpath.org), with a certificate from the\n[SignPath Foundation](https://signpath.org).\n\n> [!WARNING]\n> The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships\n> unsigned, and Windows warns about it until that changes.\n\n\n## What's Changed\n* Fix mission pool toggles when SigMod or community missions turn off by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/105\n\n\n**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.16.1...v1.16.2\n\n## VirusTotal\n\n- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/MjAwZGMzMDQ2OWNjZWJhODAwZGFhMTU0N2QxNmYyZDY6MTc4OTYyNTUwMg==/detection)\n- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MjQ4NWRjYThkMmNjZjgyOGI0NzNkZTU0Mzc3OGU1YzY6MTc4OTYyNTUwNA==/detection)\n",
+      "download_url": "https://github.com/m-this/tf2-archipelago/releases/download/v1.16.2/tf2_mvm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1bae092e461d5ed50d7b4c3988aa7f0062cc1f9b03fa3501fd3c0ebee99f74ec",
+      "html_url": "https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 237340,
+      "source_url": "https://api.github.com/repos/m-this/tf2-archipelago",
+      "tag": "v1.16.2",
+      "title": "v1.16.2",
+      "version_simple": "1.16.2",
+      "world_version": "1.16.2"
     },
     "v1.2.0": {
       "created_at": "2026-08-18T20:42:38Z",

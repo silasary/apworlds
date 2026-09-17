@@ -11,79 +11,61 @@ This mod turns GTA: Vice City into an Archipelago game. Your progress unlocks an
 your rewards come from the multiworld, and your checks send items to the other
 players in your session.
 
-Setup is three parts: install the Archipelago world, prepare your game folder,
-then connect the client. The client installs the in-game mod for you.
+Vice City connects directly to Archipelago using APCpp. No external Python client
+needs to run while you play.
+
+## Standalone Windows setup
+
+Download **GTA-Vice-City-AP-Setup.exe** from the
+[releases page](https://github.com/Kryen112/GTA-Vice-City-AP/releases). It installs
+the mod without a separate Python or Archipelago installation:
+
+1. Close Vice City and run the setup file. Allow its Windows administrator prompt.
+2. Select the folder containing `gta-vc.exe` from the classic PC version 1.0.
+   Setup checks the executable itself and confirms **1.0 English**. Other versions
+   and files it cannot identify are refused before any downloads or installation.
+3. Setup installs the mod and downloads missing runtimes: [Ultimate ASI Loader's
+   Win32 dinput8 archive](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/download/Win32-latest/dinput8-Win32.zip)
+   and CLEO 2.1.1. ASI Loader is checked against GitHub's published SHA-256;
+   CLEO uses a pinned SHA-256. A fresh installation needs internet; no room connection is needed.
+4. Setup creates `%LOCALAPPDATA%\GtaVcAp\connection.ini` and adds
+   **Archipelago Connection Settings.lnk** beside `gta-vc.exe`. Open the shortcut
+   to edit your server and slot, or launch Vice City and configure them with **F8**.
+
+Existing loader/CLEO files, connection settings, and saves are kept. Run setup again
+to update or uninstall the mod. Uninstall restores backed-up game files and leaves
+the shared loader and CLEO installed for other mods. This build is unsigned, so
+Windows may show an unknown-publisher warning.
+
+Your host still needs the matching `gta_vice_city.apworld` to generate the session.
 
 ## What you need first
 
-- **Archipelago 0.6.7 or newer.**
-- **GTA: Vice City, the original classic PC release, executable 1.0**
-  (`gta-vc.exe`), with its original `data/main.scm`. This is the classic game,
-  not the Definitive Edition, which is a different game the mod does not run on.
-  The client checks both and refuses to install when either is wrong, naming
-  which build of the game it found and what it wanted.
-- **[Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader)**,
-  installed in your game folder as `dinput8.dll`. Vice City does not load `.asi`
-  plugins on its own, so this is required.
-- **[CLEO for Vice City](https://github.com/cleolibrary/III.VC.CLEO)**,
-  installed in your game folder.
-- **Optional, and strongly recommended:
-  [Windowed Mode](https://github.com/ThirteenAG/III.VC.SA.WindowedMode)**, which
-  runs the game in a window, or in borderless fullscreen, instead of the
-  fullscreen mode Vice City uses on its own. On a modern PC that fullscreen mode
-  can make the game very slow, and it can cause crashes. This plugin fixes both,
-  and it does not change anything in the game itself.
+- **64-bit Windows** to run the standalone installer.
+- **GTA: Vice City, classic PC version 1.0 English**, with its original
+  `data/main.scm`. Setup checks the executable and script before installing.
+  The Definitive Edition is not supported.
+- **Internet access** for setup to download ASI Loader and CLEO when missing.
+- **Archipelago 0.6.7 or newer** on the machine generating or hosting the session.
 
-All three are free community tools, and each link goes to the project's own
-GitHub, where the downloads and the source both live. Section 2 says which
-download to take from each.
+Optional: [Windowed Mode](https://github.com/ThirteenAG/III.VC.SA.WindowedMode)
+adds windowed and borderless fullscreen modes. Extract
+`III.VC.SA.WindowedMode.asi` beside `gta-vc.exe` and press **Alt+Enter** to switch.
 
-## 1. Install the Archipelago world
+## Updating or uninstalling
 
-You need one file, `gta_vice_city.apworld`, from the
-[releases page](https://github.com/Kryen112/GTA-Vice-City-AP/releases). Whoever
-is hosting your session may hand it to you directly instead.
+Close Vice City and run **GTA-Vice-City-AP-Setup.exe** again. Select your game
+folder and choose to install/update or uninstall. Updates preserve connection
+settings and saves. Existing seeds do not need to be regenerated for this update.
 
-- Double-click it and let the Archipelago Launcher install it, **or**
-- copy it into the `custom_worlds` folder of your Archipelago installation.
+## Install the Archipelago world for generation and hosting
 
-That single file contains the world, the client, and the in-game mod. You do not
-download the mod separately.
+Download the matching `gta_vice_city.apworld` from the same release. Install it
+on the machine generating or hosting your session by double-clicking it with
+Archipelago installed, or by copying it into Archipelago's `custom_worlds` folder.
+Players install the game mod with **GTA-Vice-City-AP-Setup.exe** as described above.
 
-## 2. Prepare your game folder
-
-1. Confirm your `gta-vc.exe` is the original 1.0 build. The client checks this
-   before it installs and before it launches the game, and tells you which build
-   it found, so you do not have to know how to look; the mod attaches to 1.0 and
-   to nothing else.
-2. Install Ultimate ASI Loader into the folder that holds `gta-vc.exe`. Take
-   `Ultimate-ASI-Loader.zip` from its
-   [releases page](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases).
-   Vice City is a 32-bit game, so every `_x64` asset there is the wrong one. The
-   archive holds a single `dinput8.dll`, already under the name Vice City needs,
-   so extract it next to the executable and you are done.
-3. Install CLEO into the same folder. Take the Vice City archive from its
-   [releases page](https://github.com/cleolibrary/III.VC.CLEO/releases), not the
-   GTA III one, since that page serves both games from the same release, and
-   extract it there. It brings `VC.CLEO.asi` and a `CLEO` folder. The mod is
-   verified against CLEO 2.1.1; if a newer release misbehaves, that is the one
-   to fall back to.
-4. Optional, and strongly recommended: install Windowed Mode into the same
-   folder. Take the archive from its
-   [releases page](https://github.com/ThirteenAG/III.VC.SA.WindowedMode/releases)
-   and extract `III.VC.SA.WindowedMode.asi` next to the executable. One file
-   covers GTA III, Vice City and San Andreas, so you do not have to pick a
-   version. Press **Alt+Enter** in game to switch between a window and
-   borderless fullscreen. Newer releases also add an ini file next to the
-   plugin, which sets which of the two the game starts in. Archipelago does not
-   need this plugin, but the entry **The game is very slow, or it crashes when
-   you Alt+Tab away from it**, under **If something goes wrong** at the end of
-   this page, explains what it fixes.
-
-You do not copy any Archipelago mod files by hand. The client does that in
-section 4, Connect and play.
-
-## 3. Create or join a multiworld
+## Create or join a multiworld
 
 This is the standard Archipelago flow. If you have played Archipelago before, it
 is the same here; the game name is **Grand Theft Auto Vice City**.
@@ -98,31 +80,57 @@ is the same here; the game name is **Grand Theft Auto Vice City**.
 3. Send your YAML to whoever is hosting the session, or host the generation
    yourself. The host produces the room you connect to.
 
-## 4. Connect and play
+## Connection settings
 
-1. In the Archipelago Launcher, open the **GTA Vice City Client**.
-2. Connect it to the room address, using your slot name from the YAML.
-3. **First connection only:** a folder picker opens. Choose the folder that holds
-   `gta-vc.exe`. The choice is saved, so later connections skip this.
-4. The client installs the in-game mod into that folder and launches the game for
-   you. Start a **New Game** to begin the seed.
+You can configure the connection entirely in game: press **F8**, enter
+`/server HOST:PORT`, `/slot NAME`, optional `/password PASSWORD`, then `/connect`.
+The console remembers server and slot in `%LOCALAPPDATA%\GtaVcAp\connection.ini`.
+Passwords entered with `/password` stay in memory for the run. Changing the server
+or slot through F8 also clears any password saved in the file.
+Unacknowledged checks are also kept in this user folder and replayed on reconnect.
+Old check files beside the ASI are copied there automatically.
+
+To edit the same settings outside the game:
+
+1. Close Vice City. Open **Archipelago Connection Settings.lnk** in the game folder,
+   or paste `%LOCALAPPDATA%\GtaVcAp` into File Explorer's address bar and open
+   `connection.ini`. Setup creates the folder and file; if updating manually,
+   create them with this section:
+
+   ```ini
+   [archipelago]
+   server=127.0.0.1:38281
+   slot=YourSlotName
+   password=
+   ```
+
+   Replace the address and slot with your room's details. Leave the password
+   empty unless the room requires one. 
+   When changing rooms manually, don't forget to replace or clear the old password too.
+   `host:port` uses TLS for remote hosts;
+   use `ws://host:port` for an explicitly unencrypted remote server.
+2. Launch Vice City directly. The ASI connects, loads slot data, and reconnects
+   automatically. Start a **New Game** for a new seed, or load your existing
+   save for this seed. The Python client does not need to run while playing.
+
+Setup and the updated client copy connection details from the old `GtaVcAp.VC.ini`
+only when `connection.ini` does not exist. Existing `connection.ini` files are kept.
+Future connection edits belong in `connection.ini`. If shortcut creation fails,
+setup shows the file's full path.
+
+Enabled, unfinished checks have colored dots on the minimap and pause-menu map:
+packages green, robberies light red, rampages dark red, pickups orange,
+stunt jumps blue, properties yellow, side events cyan, and shop stock purple.
+Each dot has a 5x5 pixel center and a one-pixel black outline.
+Missions retain their existing markers. Current seeds work without regeneration.
+
+Items, goals, and DeathLink use the room's slot data. Pending checks remain in
+`%LOCALAPPDATA%/GtaVcAp/GtaVcAp.<seed-hash>.json` until the server acknowledges
+them, so moving the mod to another folder preserves them.
 
 If your goal is the hidden-package hunt, the last Package Fragment you receive
 ends the game for you: whatever you are doing at the time, Tommy goes straight
 into the ending of *Keep Your Friends Close...*, credits and all.
-
-### Client commands
-
-Type these in the client console:
-
-| Command | What it does |
-| --- | --- |
-| `/play` | Launch the game, or relaunch it after quitting. |
-| `/setfolder` | Re-pick the install folder (the one holding `gta-vc.exe`). |
-| `/installmod` | Reinstall or update the bundled mod. Close the game first. |
-| `/restore` | Restore your normal saves and stop Archipelago save isolation. Close the game first. |
-| `/uninstall` | Take the mod out of the game folder, put your original `main.scm` back, and restore your normal saves. Close the game first. |
-| `/deathlink` | Turn DeathLink on or off for this session, or hand it back to your YAML with `/deathlink seed`. |
 
 ## The Archipelago page
 
@@ -137,57 +145,76 @@ radar is hidden.
 ## What the mod does to your game folder
 
 The mod's mission gating lives in the game's own script file, `data/main.scm`.
-The apworld does not carry a copy of that file: it carries the differences, and
-the client builds the modded script from **your** copy when it installs.
+The installer carries only the differences from that file, and
+the setup tool builds the modded script from **your** copy when it installs.
 
 Two things follow from that.
 
-- Your `data/main.scm` has to be the original 1.0 one. If it is not, the client
+- Your `data/main.scm` has to be the original 1.0 one. If it is not, the setup tool
   says so, prints the fingerprint it found, and installs nothing. Restore
-  `data/main.scm` from your own copy of the game files and connect again. It also
+  `data/main.scm` from your own copy of the game files and run setup again. It also
   refuses when `AP_mod_backup\main.scm` exists and is not the original; delete
-  that file and reconnect.
+  that file and run setup again.
 - The mod backs your original script up to `AP_mod_backup\main.scm` in the game
   folder the first time it installs, and that backup is the copy it patches from
-  every time after. Leave the folder alone. `/uninstall` puts the backup back and
-  then removes it; if you delete it yourself, restore `data/main.scm` from your
+  every time after. Leave the folder alone. If you delete it, restore `data/main.scm` from your
   own copy of the game files.
 
-The client will not launch the game when the install is refused, since a Vice
-City running on an unpatched script sends no checks and receives no items.
+Resolve any setup error before launching the game: an unpatched script cannot
+provide the Archipelago mission gating and check detection.
 
-## Saves are kept separate
+## Saves and seed changes
 
-Each seed gets its own save slots, and your existing Vice City saves are left
-untouched. Run `/restore` (with the game closed) to switch back to your normal
-saves.
+Connect from the main menu using **F8**, `/server HOST:PORT`, `/slot NAME`,
+optional `/password PASSWORD`, and `/connect`. Connection settings can also be
+set in `%LOCALAPPDATA%\GtaVcAp\connection.ini`. Type `/help` for local commands, `!help` for server commands, or
+chat normally. `/hint [item]` asks for hints; `/deathlink [on|off]` controls DeathLink.
+Other players' messages, hints, countdowns, releases and goals appear in the console.
+
+Saves select themselves automatically under `AP_Seeds/<seed-and-slot-hash>` in
+`GTA Vice City User Files`. Existing career saves and `gta_vc.set` stay in place.
+Save access is blocked until the server identifies the seed; connect before
+loading or saving. After disconnection, this seed's saves remain available.
+Restart Vice City before switching to another seed or slot.
+
+The legacy Python client is no longer included. If it previously moved your
+saves, close the game and back up the entire `GTA Vice City User Files` folder
+in Documents. Your normal saves are in `AP_Career`, stored seed saves are in
+`AP_Seeds/<seed>`, and the active seed's saves are the loose `.b` files in the
+main folder. To restore a set, move the loose `.b` files to a separate backup
+folder first, then copy the desired set into the main folder. Keep the source
+folders and `gta_vc.set`; do not overwrite saves you want to keep.
 
 ## If something goes wrong
 
-- **The client says your `gta-vc.exe` is another build.** It names the build it
+- **Setup says your `gta-vc.exe` is another build.** It names the build it
   found. The mod attaches to the classic 1.0 executable and to no other, so no
   other build can run it, patched or not.
-- **The client says it could not tell which build your `gta-vc.exe` is.** It
-  installs anyway and this may be nothing: a compressed or repacked executable
-  is unreadable from the outside and unpacks to a perfectly good 1.0 once the
-  game starts. It is worth remembering only if nothing Archipelago then happens
-  in game.
+- **Setup says it could not confirm your `gta-vc.exe` as 1.0 English.** Installation
+  stops without changing the game. Compressed, modified, damaged, or unknown
+  executables may fail detection even if they launch. Choose an installation with
+  a recognizable classic 1.0 English executable; renaming another version's file
+  to `gta-vc.exe` does not make it compatible.
 - **The game starts but nothing Archipelago happens.** Confirm Ultimate ASI
   Loader is present as `dinput8.dll` and CLEO is installed, both covered in
-  section 2, then run `/installmod` with the game closed and relaunch. CLEO
+  the installation instructions above, then run **GTA-Vice-City-AP-Setup.exe**
+  with the game closed and relaunch. CLEO
   prints its version in the bottom left corner of the main menu, so no banner
   there sends you back to those two before anything else.
-- **The client says your `main.scm` is not the original 1.0 script.** It prints
+- **Setup says your `main.scm` is not the original 1.0 script.** It prints
   the fingerprint it found and the one it wants. Restore `data/main.scm` from
   your own copy of the game files, and remove `AP_mod_backup\main.scm` if it is
   there and is not the original. Another Vice City mod that replaces the script
   is the usual cause.
-- **The client cannot find the game.** Run `/setfolder` and pick the folder that
-  holds `gta-vc.exe`.
-- **You started before connecting.** Progress re-derives from the server on every
-  load and reconnect, so connect the client and reload your save.
+- **Setup cannot find the game.** Pick the folder that holds `gta-vc.exe`.
+- **The built-in client does not connect.** Check `[archipelago]` in
+  `%LOCALAPPDATA%\GtaVcAp\connection.ini` and the room address. Restart the game
+  after editing the file, or change settings through F8 and use `/connect`. The pause menu and
+  `gtavc_ap_asi.log` report connection errors. The room must be running.
+- **Wrong seed save loaded.** Load a save from this room or start a new game.
+  Restart Vice City if the server was changed to another seed.
 - **The game is very slow, or it crashes when you Alt+Tab away from it.**
-  Install Windowed Mode from section 2 and press Alt+Enter. Vice City's own
+  Install Windowed Mode linked above and press Alt+Enter. Vice City's own
   fullscreen mode takes over your whole screen, which modern PCs handle badly.
   It is worse if your screen has a high refresh rate, or if you have more than
   one screen. That same fullscreen mode can also crash the game when you switch

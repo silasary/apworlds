@@ -72,6 +72,21 @@
       "title": "V0.2.4 Stable ? ",
       "version_simple": "0.9.0",
       "world_version": "0.9.0"
+    },
+    "v0.2.4-hotfix": {
+      "created_at": "2026-09-17T05:21:09Z",
+      "description": "# Pokemon HeartGold / SoulSilver APWorld - v0.2.4-hotfix\r\n\r\nBug-fix release on top of v0.2.4, based on playtester reports. **Compatible with games already in progress**\r\n\r\n## How to update\r\n\r\n1. Replace `pokemon_hgss.apworld` in your Archipelago `custom_worlds` folder with the one attached below.\r\n2. Re-open your existing `.apheartgold` file as usual. Your save is kept.\r\n\r\n- **Client fixes** apply as soon as the apworld is updated.\r\n- **ROM fixes** apply when you re-open your `.apheartgold` with this version.\r\n- **Logic fixes** only affect newly generated seeds.\r\n\r\n## Fixes\r\n\r\n### Logic (new seeds)\r\n- **Cliff Edge Gate no longer requires Rock Climb.** The gate between Cianwood and Route 47 is a plain walk-through: only the Secret Potion is needed, as in vanilla. Route 47, Route 48 and their checks are no longer pushed to the late game.\r\n- **Dead seeds through the Magnet Train.** The train also needs the Kanto Power Plant repaired, which the logic ignored (a real seed put HM03 Surf on Route 12).\r\n  - `magnet_train` on (default): the Power Plant counts as repaired from the start. The train works as soon as you have the Pass, and the Machine Part quest is skipped along with its TM57 location. Requires the matching client.\r\n  - `magnet_train` off: the train only counts once the Power Plant has really been repaired.\r\n- **The Copycat's Pass** now requires the Power Plant repair when `magnet_train` is off, since her Lost Item only appears after it.\r\n- **Bell Tower and Lugia monks.** The monks never check your bag: each one only lets you through once the NPC who hands out that wing has done so. The logic now requires talking to that NPC:\r\n  - HeartGold: the Radio Tower director (Goldenrod) for the Rainbow Wing, the old man in Pewter City for the Silver Wing.\r\n  - SoulSilver: the other way round.\r\n\r\n  Both wings are now merely useful items.\r\n\r\n### Client (games in progress included)\r\n- **Goal is now reported to the server**, so \"release on goal\" and other goal-based settings finally trigger. This covers `elite_four`, `champion_red` and `n_badges`.\r\n- **Vermilion Gym could become impossible** if the Thunder Badge arrived before beating Lt. Surge. The client now hides the badge while you are in Vermilion City or its gym, until Surge is beaten. If you are stuck inside the gym, walk out and back in.\r\n- **Whiteout sent you back to New Bark** with `randomize_start_location` before your first Pokemon Center visit. You now wake up at your starting town's Pokemon Center. This fix only works on seeds generated with this version.\r\n\r\n### ROM (re-open your .apheartgold)\r\n- **The Pass trade chain could break.** The Fan Club chairman refused the Lost Item if you already held a Pass, and the Copycat could stop offering her trade after your first talk.\r\n- **HeartGold: the Pewter City old man always gave a real Silver Wing** instead of the item placed there.\r\n\r\n## Workarounds for games in progress\r\n- **Stuck at a wing monk:** talk to the NPC who hands out that wing in your version (listed above), even if you already hold the wing.\r\n- **Stuck by the Magnet Train on an older seed:** ask the host for the missing item (`/send` or `!getitem`).",
+      "download_url": "https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.4-hotfix/pokemon_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6c3752a2c82c55e7adabffa94250b374f4d1d8d658be66e1347334a3b3be8298",
+      "html_url": "https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.4-hotfix",
+      "minimum_ap_version": "0.6.7",
+      "size": 439367,
+      "source_url": "https://api.github.com/repos/SingeKiller/Pok-HeartGold_Apworld",
+      "tag": "v0.2.4-hotfix",
+      "title": "v0.2.4-hotfix",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0r2"
     }
   }
 }

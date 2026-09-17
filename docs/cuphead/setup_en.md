@@ -8,8 +8,8 @@ SPDX-License-Identifier: MPL-2.0
 ## Required Software
 - **Cuphead** ([Steam](https://store.steampowered.com/app/268910/Cuphead/), [GOG](https://www.gog.com/en/game/cuphead))
   - PC: Tested
-  - Mac: Not Tested - Use at your own risk
-  - Linux via Proton: Tested - Might require extra setup
+  - Mac: Tested
+  - Linux via Proton: Tested
 - **CupheadArchipelagoMod** ([Github](https://github.com/JKLeckr/CupheadArchipelagoMod))
 
 ## Optional Software
@@ -17,32 +17,22 @@ SPDX-License-Identifier: MPL-2.0
 
 ## Setting up
 
-*Note: The install process is WIP, so it is not the most user-friendly.*
+These instructions are for using the Gale Mod Manager. If you are using the macOS version of Cuphead or are not using Gale, refer to the [Github README](https://github.com/JKLeckr/CupheadArchipelagoMod/blob/main/README.md) for other install options.
 
-Refer to [Github](https://github.com/JKLeckr/CupheadArchipelagoMod) for more details.
+More details about the mod are on the [Github Page](https://github.com/JKLeckr/CupheadArchipelagoMod).
 
 ### Prerequisites
 - A legal copy of Cuphead
-- [BepInEx](https://github.com/BepInEx/BepInEx/releases) 5.x
-- [CupheadArchipelago](https://github.com/JKLeckr/CupheadArchipelagoMod/releases)
+- [Gale Mod Manager](https://github.com/Kesomannen/gale)
 
 ### Instructions
-1. Download the CupheadArchipelago mod from the [releases page](https://github.com/JKLeckr/CupheadArchipelagoMod/releases).
+1. In the Gale Mod Manager, select Cuphead as the game to mod.
 
-2. Place the extracted contents of BepInEx 5.x x64 for your OS into the Cuphead installation folder (the folder with `cuphead.exe` in it).
+2. Install CupheadArchipelago in Gale. You can either use built in browse mods function to download and install, or you can go to the [Thunderstore Page](https://thunderstore.io/c/cuphead/p/JKLeckr/CupheadArchipelago/) and select Install with App.
 
-3. Place the contents of the extracted CupheadArchipelago folder into the `BepInEx/plugins` folder.
+3. Select "Launch Modded" in Gale.
 
-4. Launch game.
-
-### Extra Notes
-- Make sure you are installing the binary build of the mod and not the source code. Don't be one of those fellas!
-- After doing step 2, there should be a `winhttp.dll` and a `doorstop_config` along with a `BepInEx` folder and some other files in the same directory as `cuphead.exe`. If this isn't the case, make sure you are placing all of the contents of the extracted BepInEx zip in the Cuphead installation folder.
-- If `BepInEx/plugins` does not exist, you can launch the game with BepInEx once, or create the folder yourself.
-- If you are on the Steam version, and the mod does not load, launch the game directly from Steam.
-- If you are on Linux using Wine/Proton, use the Windows build of BepInEx.
-- If you are using Steam on Linux or SteamOS, make sure to put `WINEDLLOVERRIDES="winhttp=n,b" %command%` in the launch arguments.
-- There are no binary builds of CupheadArchipelago for macOS. You can build from source, but you are on your own. 
+4. Enjoy!
 
 ## Setting up Archipelago
 

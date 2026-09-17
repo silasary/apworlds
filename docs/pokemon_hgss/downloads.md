@@ -1,9 +1,12 @@
 # Pokemon HGSS
 
 ## Latest
-- <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.4/pokemon_hgss.apworld">Latest Version (0.9.0)</a>
+- <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.4-hotfix/pokemon_hgss.apworld">Latest Version (0.9.0r2)</a>
 
 ## All Versions
+
+#### v0.9.0r2
+- <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.4-hotfix/pokemon_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.4-hotfix/pokemon_hgss.apworld</a>
 
 #### v0.9.0
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.4/pokemon_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.4/pokemon_hgss.apworld</a>

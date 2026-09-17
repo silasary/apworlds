@@ -1,9 +1,12 @@
 # Cuphead
 
 ## Latest
-- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03k/cuphead.apworld">Latest Version (0.2.20021010)</a>
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03l/cuphead.apworld">Latest Version (0.2.20021110)</a>
 
 ## All Versions
+
+#### v0.2.20021110
+- <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03l/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03l/cuphead.apworld</a>
 
 #### v0.2.20021010
 - <a href="https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03k/cuphead.apworld">https://github.com/JKLeckr/Archipelago-cuphead/releases/download/alpha03k/cuphead.apworld</a>

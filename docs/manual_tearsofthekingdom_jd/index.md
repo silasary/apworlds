@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/JDLKMR/TotK-APManual/releases/download/v1.1.0/manual_tearsofthekingdom_jd.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/JDLKMR/TotK-APManual/releases/download/v1.1.1/manual_tearsofthekingdom_jd.apworld">Latest Version (1.1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

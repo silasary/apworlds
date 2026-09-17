@@ -2,347 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-16T18:17:43.745086+00:00</updated>
+  <updated>2026-09-17T06:22:38.579970+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.0</id>
-    <title>AEMinecraft v0.6.0</title>
-    <updated>2026-09-13T17:10:41+00:00</updated>
-    <author>
-      <name>KuroLynx</name>
-    </author>
-    <content>## AEMinecraft v0.6.0&#13;
-&#13;
-Two new options for how death and your inventory work, an advancement screen that tells&#13;
-you where your items are, and a round of fixes to what the randomizer asks of you.&#13;
-&#13;
-### New&#13;
-&#13;
-**Hints on the advancement screen.** Every unlock tile (structures, mobs, Knowledge) now&#13;
-shows the item the way Archipelago names it, in Archipelago's colour for how important it&#13;
-is. Hold a tile for a moment to ask for its hint: the screen closes, reopens on the same&#13;
-tab once the answer arrives, and the tile says where the item is waiting —&#13;
-`Structure Unlock: Ancient City @ Sky's the Limit in Steve's world`. Hints made anywhere&#13;
-in the multiworld show up. For a progressive item, each level shows its own hint.&#13;
-&#13;
-**See which advancements you actually earned.** When another player's release or collect&#13;
-sends one of your checks, that advancement used to turn gray like one you completed&#13;
-yourself. It now turns **blue**, so the gray tiles are the ones your world really earned,&#13;
-and the blue ones are still missing from your advancement goal. Tiles are now repainted&#13;
-in Minecraft's own text colours.&#13;
-&#13;
-**Progressive Keep Inventory** — new option `keep_inventory` (with&#13;
-`keep_inventory_pool_size`). Instead of choosing between losing everything on death and&#13;
-the `keepInventory` gamerule, you can make it something you unlock over a run.&#13;
-&#13;
-**Inventory Lock** — new option `inventory_lock`. Inventory slots start locked and open&#13;
-up as *Progressive Inventory Slot* items arrive.&#13;
-&#13;
-- The **Biome Finder** no longer takes up an item: open it with its keybind or the&#13;
-  compass button next to the recipe book.&#13;
-- A **chat filter** hides multiworld messages that have nothing to do with your slot.&#13;
-- Chat lines starting with `!` are sent to Archipelago as commands, e.g. `!hint`.&#13;
-- The advancement screen works with Better Advancements, Advancements Reloaded and&#13;
-  Paginated Advancements.&#13;
-&#13;
-### Fixed&#13;
-&#13;
-- Locked baby zombies could reappear riding chickens in trial chambers after a reload.&#13;
-- With DeathLink on, every incoming death reset the timer phantoms need, so they could&#13;
-  stop spawning entirely.&#13;
-- Sneaking with empty hands let you use something a Knowledge gate should have kept closed.&#13;
-- A locked structure is now rebuilt from the world when it unlocks, instead of keeping a&#13;
-  copy of its blocks in your save.&#13;
-- Generating a seed with glitch logic could run out of memory (18 GB → about 1 GB).&#13;
-&#13;
-### Logic&#13;
-&#13;
-- Blocks that only exist once placed, and have no recipe, are no longer handed out free.&#13;
-- Ores count as a source for their item. A crafted block is not something to mine.&#13;
-- A recipe needs its crafting station, not just permission to use one.&#13;
-- Emeralds come from villagers; pottery sherds are brushed out, not looted.&#13;
-- Villagers need a village; Mooshrooms need their biome.&#13;
-- Filled buckets and villager trades are priced properly.&#13;
-- The Wandering Trader and BlazeandCave reward items only count as glitch-logic routes.&#13;
-- Killing several mobs with one arrow requires Piercing.&#13;
-- Trimming armor requires armor, a trim template and a smithing table.&#13;
-&#13;
-### Upgrading&#13;
-&#13;
-- The mod and the apworld are released together. Use them as a matched set.&#13;
-- Requires Archipelago 0.6.7 or newer.&#13;
-- New YAML options `keep_inventory`, `keep_inventory_pool_size` and `inventory_lock`.&#13;
-  Take them from the new template. Leaving them out gives you the defaults.&#13;
-- Unlock tiles only get their Archipelago colour on seeds generated with v0.6.0.&#13;
-- Regenerating a v0.5.1 seed with v0.6.0 gives a different placement. Finish existing&#13;
-  seeds on the version they were generated with.</content>
-    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.2.6</id>
-    <title>Chibi Robo v1.2.6</title>
-    <updated>2026-09-13T17:48:09+00:00</updated>
-    <author>
-      <name>EverydaySimpleDev</name>
-    </author>
-    <content>- Updated Gen Logic / Rules / Bug Fixes&#13;
-- New Victory Goal (Let's Go Divorce)&#13;
-- Added Spider Queen Left Leg / Frog Ring Locations</content>
-    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.2.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.5.2</id>
-    <title>Dredge v0.5.0r2</title>
-    <updated>2026-09-13T18:19:13+00:00</updated>
-    <author>
-      <name>Alextric</name>
-    </author>
-    <content>Includes previous release changes&#13;
-Corrected some fish locations&#13;
-Added instant crab bait as a catch tool&#13;
-</content>
-    <link href="https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.5.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.13</id>
-    <title>Northgard v2026.9.13</title>
-    <updated>2026-09-13T19:14:35+00:00</updated>
-    <author>
-      <name>Chakraa</name>
-    </author>
-    <content>### Added
-- Optional Universal Tracker support: if you have the Universal Tracker apworld installed, the client now shows a tracker tab with in-logic location/item state, derived directly from this world's own logic. No effect on the client if Universal Tracker isn't installed.
-
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.08...2026.09.13</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.09.13"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.2</id>
-    <title>Chrono Trigger Rando-Dalton Imperial v0.0.2</title>
-    <updated>2026-09-13T19:19:15+00:00</updated>
-    <author>
-      <name>Anguirel86</name>
-    </author>
-    <content>## Updated to the latest version of the RDI randomizer.&#13;
- - Options have been regenerated to pick up a few new/modified options&#13;
- - ctrando.zip package has been updated to the newest version of the rando&#13;
-&#13;
-&#13;
-## Release notes copied from RDI:&#13;
-### QoL, Bugfixes, and Logic Tweaks,&#13;
-This week's update is mainly fixes and QoL stuff to (partially) implement some recent suggestions.  The QoL stuff is all about boss text matching the assigned bosses.  When a boss name occurs in-game we want it to match the actual boss rando assignment.&#13;
-* Azala will call out the correct boss name in the Reptite Lair.&#13;
-* The Dragon Tank replacement will be properly named in text.  The manual dropped by the prison supervisor will also be updated.  The manuals are mostly meant to be helpful to describe boss behavior.  I'm open to suggestions because these are a bit rough!&#13;
-&#13;
-There are a few optional logic tweaks that were asked for.  The main complaint with recent seeds was too many seeds funneled into Magus Ocean Palace for flight.&#13;
-* `force_early_flight = true/false` is actually a flag that's been around for a while, but it wasn't advertised.  When set to `true` *and* `jets_of_time=true` it forces the jets to be logically available before the blackbird dungeon is available.&#13;
-* `magus_sequence_break_ocean_palace = true/false` controls whether logic believes Magus being able to enter ocean palace is in logic or a sequence break.  The default (`false`) is how we've been playing previously.&#13;
-* `magus_logical_magus_castle = true/false` controls whether logic believes Magus is required to get to the back half of Magus's castle.  The default (`false`) is how we've been playing previously.&#13;
-* The starter reward `proto_door` can be given so that the door to the portal is unlocked without having to do factory.&#13;
-&#13;
-There are a few notable bugfixes.&#13;
-* Many issues with the gauntlet should be fixed now.  These include skipped phases and lack of rewards copying for some bosses.&#13;
-* The R-Series "beast toss" should never softlock now.&#13;
-* It was possible to assign midbosses to boss spots, and that was creating some problems.  This is no longer allowed.  If your old tomls break, remove flea plus and super slash from boss_pool.</content>
-    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Happyhappyism/Rune-Factory-4-Archipelago/releases/tag/rune4_v0.3.0</id>
-    <title>Rune Factory 4 v0.3.0</title>
-    <updated>2026-09-13T23:21:42+00:00</updated>
-    <author>
-      <name>Happyhappyism</name>
-    </author>
-    <author>
-      <name>Caidryn</name>
-    </author>
-    <author>
-      <name>Arryndoestech</name>
-    </author>
-    <content>### Notes&#13;
-Pretty massive update this time with a lot of help from [arryndoestech](https://github.com/arryndoestech) who is working on some pretty cool mod tools for the game and a [poptracker pack](https://github.com/rdpeake/rune4-poptracker) made by [rdpeake](https://github.com/rdpeake)&#13;
-&#13;
-## New Features&#13;
-- Completely reworked the Save/Load system so that it no longer touches your vanilla saves&#13;
-- Setup has been completely reworked to be simplier reduced down to a prompt to move a single file&#13;
-- Boxsanity&#13;
-- Barriersanity&#13;
-- Requestsanity (Some locations still need testing and fixing)&#13;
-&#13;
-## Fixes&#13;
-- Added a patch to fix a crash when reloading to the main menu&#13;
-- Fixed an issue where monster moveset and ai randomization slot data was swapped&#13;
-- Fixed a backwards compatibility issue with slot data&#13;
-- Fixed an issue where bad file names would cause the client not to connect&#13;
-- Fixed a bug where craft level ups weren't received while offline&#13;
-- Yokmir Forest D1 Chest tier was reduced from 10 to 0&#13;
-- Added two missing chest locations&#13;
-- Fixed some bugged logic for recipe bread shipments and a few chests&#13;
-&#13;
-## Changes&#13;
-- Added tiering checks for chest, barrier and box locations&#13;
-- Added tabs to the client&#13;
- - Added seed info tab to display seed information upon connecting&#13;
-&#13;
-&#13;
-## Other&#13;
-- Added slot data for shipsanities&#13;
-- Hopefully sped up the client loop a bit, locations get checked less frequently though</content>
-    <link href="https://github.com/Happyhappyism/Rune-Factory-4-Archipelago/releases/tag/rune4_v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.1</id>
-    <title>AEMinecraft v0.6.1</title>
-    <updated>2026-09-13T23:44:14+00:00</updated>
-    <author>
-      <name>KuroLynx</name>
-    </author>
-    <content>## AEMinecraft v0.6.1&#13;
-&#13;
-A hotfix release: generation no longer hangs with BlazeandCave's Advancements Pack.&#13;
-&#13;
-### Fixed&#13;
-&#13;
-**Generation froze at "Beginning output..." with BlazeandCave's Advancements Pack.**&#13;
-Seeds using BACAP together with the mob or structure locks could sit at "Beginning&#13;
-output..." for 15 minutes or more, and on machines with less memory could fail outright.&#13;
-These seeds now generate normally: the heaviest reported setup (BACAP, glitch logic, every&#13;
-lock and `challenge_sanity: all`) finishes in under a minute.&#13;
-&#13;
-### Improved&#13;
-&#13;
-**Generation is faster and uses far less memory.** The apworld stopped building millions of&#13;
-duplicate copies of the same logic. The reported seed went from about 9 GB of memory to&#13;
-just over 1 GB, and seeds without BACAP generate roughly twice as fast.&#13;
-&#13;
-### Upgrading&#13;
-&#13;
-- **Only the apworld changed.** The mod is identical to v0.6.0, so if you already installed&#13;
-  the v0.6.0 mod you can keep it and just replace the apworld.&#13;
-- **Seeds generated with v0.6.0 are unaffected** and can be finished as they are.&#13;
-- Item placement is unchanged: the same YAML and seed produce the same world in v0.6.0 and&#13;
-  v0.6.1.&#13;
-- No YAML changes are required.</content>
-    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.1</id>
-    <title>Neon White v0.1.1</title>
-    <updated>2026-09-13T23:53:41+00:00</updated>
-    <author>
-      <name>Badhamknibbs</name>
-    </author>
-    <author>
-      <name>stxticOVFL</name>
-    </author>
-    <content>*Looking for the Neon White mod? Find it [here!](https://github.com/stxticOVFL/NWArchipelagoMod/releases/latest)*&#13;
-*Compatible with v0.1.x of the NWArchipelago mod.*&#13;
-&#13;
-- **Universal Tracker support has been fixed** and is now **YAML-less**!&#13;
-  - Please let me know if issues arise, especially with using YAML-less!&#13;
-- Some errors have been changed to `OptionError`s, and some new ones were introduced to cover more bases.&#13;
-- Obligatory logic update.&#13;
-&#13;
-### **Check the [game info](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/en_NeonWhite.md) and [complete setup guide!](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/setup_en.md)**&#13;
-&#13;
-**Changelog compared to v0.1.0**: https://github.com/Badhamknibbs/ArchipelagoNeonWhite/compare/v0.1.0...v0.1.1</content>
-    <link href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.2</id>
-    <title>Taylor Swift Discography v1.2.2</title>
-    <updated>2026-09-14T01:59:18+00:00</updated>
-    <author>
-      <name>benny-dreamly</name>
-    </author>
-    <content>This release adds a new option to further toggle songs that aren't included in the main deluxe releases of albums like the demo tracks and the voice memos. Not much else to say other than that. &#13;
-&#13;
-Zip file of config files has changed this release. &#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Archipelago/compare/ts-1.2.1...ts-1.2.2</content>
-    <link href="https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.2</id>
-    <title>Rabbit and Steel v0.4.2</title>
-    <updated>2026-09-14T02:04:26+00:00</updated>
-    <author>
-      <name>tjwombo</name>
-    </author>
-    <content>fixed:&#13;
-3 kingdom runs not handling the last 2 hallways correctly&#13;
-&#13;
-added:&#13;
-mod version is printed on connection&#13;
-generation check to ensure all kingdoms for that run type is present in kingdom order option list if kingdom order is being used&#13;
-&#13;
-# Changelog&#13;
-&#13;
-All notable changes to this project will be documented in this file.&#13;
-&#13;
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
-&#13;
-## [v0.4.2](https://github.com/tjwombo/RNSArchipelago/compare/v0.4.1...v0.4.2) - 2026-09-13&#13;
-&#13;
-### Commits&#13;
-&#13;
-- Add mod version to info printed [`c22ec0b`](https://github.com/tjwombo/RNSArchipelago/commit/c22ec0b077a64ef319cb6b174e346166ef079948)&#13;
-- Fixed last 2 hallway check on 3 kingdom runs [`ecd1141`](https://github.com/tjwombo/RNSArchipelago/commit/ecd1141039d2d251bf58c51f02753a49bb3ddf63)&#13;
-</content>
-    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.2</id>
-    <title>AEMinecraft v0.6.2</title>
-    <updated>2026-09-14T02:26:49+00:00</updated>
-    <author>
-      <name>KuroLynx</name>
-    </author>
-    <content>## AEMinecraft v0.6.2&#13;
-&#13;
-  A logic release. Many checks showed as reachable before the game, or the mod, would let you complete them. A few others were harder than they should have been.&#13;
-&#13;
-  ### Fixed&#13;
-&#13;
-  **Checks that were in logic too early.** Each of these could show as reachable while something the game requires, or something the mod locks, was still missing:&#13;
-&#13;
-  - **Villager and Wandering Trader trades.** Checks about the Wandering Trader (Travelling Merchant, Shady Deals, Florist, Rebuilding the Oceans) now need the Wandering Trader, not just any villager. Trading for locked items (All chained up, Retro Future Knight) now needs the Knowledge and Material Handling to take them out of the trade.&#13;
-  - **Tools and armor from trades, chests and mobs** now need their Material Handling tier, the same as the mod requires. A stone pickaxe bought from a toolsmith no longer counts with zero Material Handling.&#13;
-  - **Checks about a mob** need that mob unlocked:&#13;
-    - I'm in Lava With You, Death by Magic, Gas!, My eyes!, Spleaf&#13;
-    - Arbalistic, It Spreads, What's Up, Doc?, Surge Protector&#13;
-    - BACAP challenges such as Beef Moover, Overwarden, The World Is Ending and Why do I hear boss music?&#13;
-  - **Charcoal and composters.** Renewable Energy needs the smelting recipe; breaking a campfire no longer counts. Knowledge: Crafter only lets you craft together with Knowledge: Crafting Table.&#13;
-  - **Potion effects on mobs** are now required (Gas Bomb).&#13;
-  - **Mob Kabob** asks for a spear instead of a trident.&#13;
-&#13;
-  **Checks that were wrongly locked or unpriced.**&#13;
-&#13;
-  - **Kilometre Walk** no longer waits for the Biomes tab.&#13;
-  - **All the Items!, All the Blocks!, Pottery Exhibition, Tricky Treasures, sus** and a few others used to fall back to "reach the previous advancement". They now require what  they actually need:&#13;
-    - creeper-drop music discs&#13;
-    - Trial Chamber pottery sherds&#13;
-    - firework stars&#13;
-    - suspicious sand and gravel, which drop when they fall onto a cobweb&#13;
-  - **Levitation, Dolphin's Grace and Conduit Power** no longer require a brewing stand.&#13;
-&#13;
-  ### Biome Finder&#13;
-&#13;
-  - **Items that only grow in rare biomes** need the Biome Finder, or a structure that contains them, when the Biome Finder is enabled. That covers cocoa beans, glow berries, melons, jungle and pale oak wood, moss, dripleaves, sculk and mycelium.&#13;
-  - **Mobs that live in a rare biome** now show as possible-with-effort (yellow) without the Biome Finder, instead of out of logic, as long as the mob itself is unlocked.&#13;
-&#13;
-  ### Upgrading&#13;
-&#13;
-  - **Only the apworld changed for players.** The mod gains a developer dump command but nothing that affects play, so the v0.6.1 mod jar keeps working.&#13;
-  - **Seeds generated with v0.6.1 are unaffected** and can be finished as they are.&#13;
-  - **Regenerating a v0.6.1 seed with v0.6.2 gives a different placement**, because the logic is stricter.&#13;
-  - **No YAML changes are required.**</content>
-    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.6.2"/>
-  </entry>
   <entry>
     <id>https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/tag/v0.2.0</id>
     <title>Signalis v0.2.0</title>
@@ -818,6 +482,35 @@ It is **strongly** recommended to update to this version as soon as you can, on 
 [Mod Link](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)&#13;
 [Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/main/worlds/funi_raccoon/docs/setup_en.md)</content>
     <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.3</id>
+    <title>Funi Raccoon Game v1.7.3</title>
+    <updated>2026-09-14T16:55:42+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>- [Mod] Adjusted the Gacha Machine to spit out items from what you've thrown into the dumpster, rather than items you've been sent.&#13;
+- [Mod] Adjusted the museum/atm to display items you have thrown into the dumpster, even if they haven't been sent to you.&#13;
+- [Mod] Fixed a major bug where quitting to menu or dumpster while the ATM animation is playing would fully erase all stored items in your save file.&#13;
+- [Mod] Changed the popup blocker keybind from F3 to F5, because the new game update added an action to F3.&#13;
+- [APWorld] Changed the glitched logic for purchasing kei truck boost/toaster/radio to require kei truck.&#13;
+&#13;
+[Mod Link](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)&#13;
+[Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/main/worlds/funi_raccoon/docs/setup_en.md)</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.7.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JDLKMR/TotK-APManual/releases/tag/v1.1.1</id>
+    <title>Manual_TearsoftheKingdom_JD v1.1.1</title>
+    <updated>2026-09-14T19:37:39+00:00</updated>
+    <author>
+      <name>JDLKMR</name>
+    </author>
+    <content>&lt;img width="220" height="220" alt="patrick-star-minor-s" src="https://github.com/user-attachments/assets/23de7f00-d4e5-48f6-8ce7-9ca7c9505f8f" /&gt;&#13;
+&#13;
+- Fixed typo in the Popla Foothills Tower location's category</content>
+    <link href="https://github.com/JDLKMR/TotK-APManual/releases/tag/v1.1.1"/>
   </entry>
   <entry>
     <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.2.0</id>
@@ -1535,7 +1228,7 @@ no regeneration - see **What carries over** for the two exceptions.&#13;
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.11</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r3</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
     <updated>2026-09-16T00:06:19+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1834,35 +1527,6 @@ Free code signing for open source projects, provided by
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.0"/>
   </entry>
   <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.16.0r2</title>
-    <updated>2026-09-16T11:07:33+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `01a3391e9e6db5aacbc7fdbc2e84268cb9d8c9f2`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.16.0
-
-- style: gofumpt the two files the gate flagged
-- chore(beads): close the bot names epic
-- feat(bots): a seat can be given a name, and saved teams remember them
-- chore(beads): close the Compose loadout gap
-- feat(bots): a pool of names you choose
-- fix(deploy): the Compose stack hands the bots the loadouts it was given
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
     <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.6.0</id>
     <title>Stick Ranger v1.6.0</title>
     <updated>2026-09-16T12:03:58+00:00</updated>
@@ -2082,5 +1746,469 @@ Built from `01a3391e9e6db5aacbc7fdbc2e84268cb9d8c9f2`.
     <content>UT should detect when you have all of your letters now.&#13;
 I straight up forgot to add some commas in the password list. that has been fixed.</content>
     <link href="https://github.com/blitzashspear/ap-yhtwtg/releases/tag/release-1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.3</id>
+    <title>Pokemon FireRed and LeafGreen v1.1.3</title>
+    <updated>2026-09-16T19:20:02+00:00</updated>
+    <author>
+      <name>Vyneras</name>
+    </author>
+    <content>ROM CHECKSUM: `00939B09`&#13;
+&#13;
+[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.1.3/worlds/pokemon_frlg/docs/setup_en.md)&#13;
+[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.1.3/worlds/pokemon_frlg/docs/rom%20changes.md)&#13;
+&#13;
+**Bug Fixes**&#13;
+- Fixed `fly_destination_plando` being completely ignored when randomizing fly destinations&#13;
+- Fixed ER generation failing excessively with certain settings&#13;
+- Fixed UT failing to load the Poptracker pack with some settings (@siv-v )&#13;
+</content>
+    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.1</id>
+    <title>Team Fortress 2 Mann vs Machine v1.16.1</title>
+    <updated>2026-09-16T20:09:03+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Weapon slots, found in any order
+
+- **Weapon slots per class is now three ways, not two.** Off is one progressive
+  item for everybody. Progressive is what v1.16.0 shipped: an item per class,
+  opening that class's slots in its own order. **Any order** is the same
+  eighteen slots as items that name them, found in whatever order the
+  multiworld puts them in, so a Scout can find his melee before his secondary.
+- Safe because the slot a class is played with still comes free with the class:
+  the Medigun for a Medic, the Knife for a Spy. Nobody is left holding only
+  their worst weapon.
+- The items read as what they are: "Spy Revolver Slot" in somebody else's
+  spoiler log, rather than a progressive item nobody outside the run can place.
+- Same eighteen items either way, so a run needs no more room for them than it
+  did. A yaml saying `true` still means progressive.
+
+### Fixed
+
+- A mission whose file this server does not have is said so and skipped, rather
+  than loading its map and sitting on wave 0 for ever. TF2 ignores a mission
+  file it cannot find and keeps the map's own, so a run that drew a community
+  mission without the pack that carries it stopped dead with nothing saying
+  why. `!missions` marks those `[not installed]`.
+
+### The bots have names you choose
+
+- **A Names section on the Bots page.** The bots draw from a pool of names as
+  they take their seats, and the pool is yours: add your own, and leave out any
+  of the ones this launcher ships. The list is kept as what you changed rather
+  than as a copy, so names added in a later release still reach you.
+- It works the same in the Docker stack, through `SRCDS_BOT_NAMES_EXCLUDED` and
+  `SRCDS_BOT_NAMES_ADDED` in `.env`.
+- **A name for a seat.** Seat 3 can be called Gravel Pit Gary every run: the bot
+  that sits there is given the name instead of drawing one. The rest of the
+  seats keep drawing.
+- Renaming a seat costs the team nothing. The bots are renamed where they stand,
+  rather than rebuilt: a new team would lose the upgrades it had bought, which
+  is a steep price for a change of name. Bots at 0.16.0.
+- The pool itself is read when a map starts, so adding or removing a name
+  reaches the bots on the next mission.
+
+### Fixed
+
+- In the Docker stack the bots played stock weapons whatever the admin page
+  said. The loadouts reached `.env` and stopped there: nothing wrote the file
+  the mod reads, and nothing turned on the setting that makes it read one. A
+  loadout built on the Loadouts page was also forgotten at the next restart,
+  because `.env` is the whole of what the page remembers and the built ones
+  were never written to it.
+- A team saved on the admin page was forgotten the same way, for the same
+  reason.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.16.0...v1.16.1
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/Yjg2NmNlMDA1OGNhM2JmODkwNWNlMTYxNzI0NDNkZDk6MTc4OTU4OTc0MQ==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ODAyODkyNDFhNjhlYTBiYTFkZGExMzE0MmZmODk1ZTc6MTc4OTU4OTc0Mw==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03l</id>
+    <title>Cuphead v0.2.20021110</title>
+    <updated>2026-09-16T20:53:05+00:00</updated>
+    <author>
+      <name>JKLeckr</name>
+    </author>
+    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
+&#13;
+### Revision&#13;
+&#13;
+This revision updates the setup doc in the APWorld. The webhosts and the people viewing them will mainly see these changes.&#13;
+</content>
+    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03l"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.9</id>
+    <title>Modded Minecraft v3.0.9</title>
+    <updated>2026-09-17T00:45:37+00:00</updated>
+    <author>
+      <name>Stuff691734</name>
+    </author>
+    <content>added start_inventory_from_pool option to yaml.&#13;
+&#13;
+fixed issues preventing generation when using roots_unlocked = false</content>
+    <link href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.3</id>
+    <title>Chrono Trigger Rando-Dalton Imperial v0.0.3</title>
+    <updated>2026-09-17T00:58:53+00:00</updated>
+    <author>
+      <name>Anguirel86</name>
+    </author>
+    <content>## Updated to the latest version of the RDI randomizer.&#13;
+&#13;
+ -  ctrando.zip package has been updated to the newest version of the rando&#13;
+ - Fixes a bug with custom Lavos gauntlet bosses that could cause map corruption in unrelated maps&#13;
+ - Text fixes for a recent update to add correct boss names to various dialog when bosses are randomized  &#13;
+ -  Options have been regenerated to fix  a typo in the timegauge objectives option&#13;
+&#13;
+</content>
+    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.0</id>
+    <title>WarioWare, Inc. - Mega Microgame$! v1.1.0</title>
+    <updated>2026-09-17T04:39:34+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>Wario just released a shiny new update for you to play! Wahahahaha!&#13;
+# Info&#13;
+* [Info](https://thelx5.github.io/wario_ware_inc/index.html)&#13;
+* [Setup](https://thelx5.github.io/wario_ware_inc/setup.html)&#13;
+# Changes&#13;
+* Microgames now tell you which items they contain in their description&#13;
+* Added an option that allows players to start with a certain number of microgames unlocked&#13;
+* Players will **always** start with a minimum of 4 microgames unlocked&#13;
+* Added an option that allows players to exclude microgames from ever appearing&#13;
+* Added an option to select which stage will be unlocked at the start&#13;
+* Players are now able to disable the Introduction Stage&#13;
+* Allow players to disable stages completely from being added to the pool&#13;
+* Cutscenes are instantly skipped, this also includes ending cutscenes&#13;
+* Added several new location groups&#13;
+&#13;
+# Notes&#13;
+* The game UI doesn't update until you enter a stage or microgame.&#13;
+* There's _may_ be a crash (couldn't reproduce) when navigating the microgame menu. Resetting the save will fix any anomalies.</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.4-hotfix</id>
+    <title>Pokemon HGSS v0.9.0r2</title>
+    <updated>2026-09-17T05:21:09+00:00</updated>
+    <author>
+      <name>Olivier</name>
+    </author>
+    <content># Pokemon HeartGold / SoulSilver APWorld - v0.2.4-hotfix&#13;
+&#13;
+Bug-fix release on top of v0.2.4, based on playtester reports. **Compatible with games already in progress**&#13;
+&#13;
+## How to update&#13;
+&#13;
+1. Replace `pokemon_hgss.apworld` in your Archipelago `custom_worlds` folder with the one attached below.&#13;
+2. Re-open your existing `.apheartgold` file as usual. Your save is kept.&#13;
+&#13;
+- **Client fixes** apply as soon as the apworld is updated.&#13;
+- **ROM fixes** apply when you re-open your `.apheartgold` with this version.&#13;
+- **Logic fixes** only affect newly generated seeds.&#13;
+&#13;
+## Fixes&#13;
+&#13;
+### Logic (new seeds)&#13;
+- **Cliff Edge Gate no longer requires Rock Climb.** The gate between Cianwood and Route 47 is a plain walk-through: only the Secret Potion is needed, as in vanilla. Route 47, Route 48 and their checks are no longer pushed to the late game.&#13;
+- **Dead seeds through the Magnet Train.** The train also needs the Kanto Power Plant repaired, which the logic ignored (a real seed put HM03 Surf on Route 12).&#13;
+  - `magnet_train` on (default): the Power Plant counts as repaired from the start. The train works as soon as you have the Pass, and the Machine Part quest is skipped along with its TM57 location. Requires the matching client.&#13;
+  - `magnet_train` off: the train only counts once the Power Plant has really been repaired.&#13;
+- **The Copycat's Pass** now requires the Power Plant repair when `magnet_train` is off, since her Lost Item only appears after it.&#13;
+- **Bell Tower and Lugia monks.** The monks never check your bag: each one only lets you through once the NPC who hands out that wing has done so. The logic now requires talking to that NPC:&#13;
+  - HeartGold: the Radio Tower director (Goldenrod) for the Rainbow Wing, the old man in Pewter City for the Silver Wing.&#13;
+  - SoulSilver: the other way round.&#13;
+&#13;
+  Both wings are now merely useful items.&#13;
+&#13;
+### Client (games in progress included)&#13;
+- **Goal is now reported to the server**, so "release on goal" and other goal-based settings finally trigger. This covers `elite_four`, `champion_red` and `n_badges`.&#13;
+- **Vermilion Gym could become impossible** if the Thunder Badge arrived before beating Lt. Surge. The client now hides the badge while you are in Vermilion City or its gym, until Surge is beaten. If you are stuck inside the gym, walk out and back in.&#13;
+- **Whiteout sent you back to New Bark** with `randomize_start_location` before your first Pokemon Center visit. You now wake up at your starting town's Pokemon Center. This fix only works on seeds generated with this version.&#13;
+&#13;
+### ROM (re-open your .apheartgold)&#13;
+- **The Pass trade chain could break.** The Fan Club chairman refused the Lost Item if you already held a Pass, and the Copycat could stop offering her trade after your first talk.&#13;
+- **HeartGold: the Pewter City old man always gave a real Silver Wing** instead of the item placed there.&#13;
+&#13;
+## Workarounds for games in progress&#13;
+- **Stuck at a wing monk:** talk to the NPC who hands out that wing in your version (listed above), even if you already hold the wing.&#13;
+- **Stuck by the Magnet Train on an older seed:** ask the host for the missing item (`/send` or `!getitem`).</content>
+    <link href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.4-hotfix"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.2</id>
+    <title>Team Fortress 2 Mann vs Machine v1.16.2</title>
+    <updated>2026-09-17T06:04:12+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Fixed
+
+- Turning off SigMod or Community missions on the Missions page now takes their
+  missions out of the pool. Before, they stayed ticked: the pool looked full,
+  and Check Run Selection still asked for SigMod after you had turned it off.
+  If the start mission was one of them, the start goes back to Any and the
+  server boots on its default map again. By kelly-cs.
+- A mission that stayed ticked after its requirement went away can be unticked.
+  Its row used to be locked, so it could not be taken out of the pool.
+- All in the pool no longer puts community missions back while Community
+  missions is off.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* Fix mission pool toggles when SigMod or community missions turn off by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/105
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.16.1...v1.16.2
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/MjAwZGMzMDQ2OWNjZWJhODAwZGFhMTU0N2QxNmYyZDY6MTc4OTYyNTUwMg==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MjQ4NWRjYThkMmNjZjgyOGI0NzNkZTU0Mzc3OGU1YzY6MTc4OTYyNTUwNA==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.16.2r2</title>
+    <updated>2026-09-17T06:04:12+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `a960bb32e97e8a3452962f5445b146df2aa59de9`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.16.2
+
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
 </feed>

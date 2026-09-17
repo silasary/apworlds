@@ -1,12 +1,18 @@
 # Scooby-Doo! Night of 100 Frights
 
 ## Latest
-- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_10/no100f.apworld">Latest Version (10)</a>
+- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_4_0/no100f.apworld">Latest Version (1.4.0)</a>
 
 ## All Versions
 
-#### v10
+#### v1.4.0
+- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_4_0/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_4_0/no100f.apworld</a>
+
+#### v1.3.10
 - <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_10/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_10/no100f.apworld</a>
+
+#### v1.3.9
+- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_9/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_9/no100f.apworld</a>
 
 #### v1.3.8
 - <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_8/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_8/no100f.apworld</a>
@@ -49,10 +55,4 @@
 
 #### v1.3.0
 - <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_0/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_0/no100f.apworld</a>
-
-#### v1r2
-- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_4_0/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_4_0/no100f.apworld</a>
-
-#### v1
-- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_9/no100f.apworld">https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_3_9/no100f.apworld</a>
 

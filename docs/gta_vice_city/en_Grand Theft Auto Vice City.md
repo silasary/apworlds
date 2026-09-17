@@ -40,6 +40,14 @@ Tommy can be four missions into the Colonel's work and still waiting to be
 allowed to phone Mr. Black. The one mission that needs no item is the first
 Rosenberg meeting, which is open on a new game and is where every seed starts.
 
+Set `mission_shuffle: true` to shuffle the order within each mission giver. 
+A Progressive Cortez item still unlocks a Cortez mission, but the next mission follows the seed's shuffled order. 
+The spoiler log lists the order, and trackers restore the same order from the seed.
+
+An Old Friend stays first. 
+All Hands On Deck!, Rub Out, the asset-ending missions and Keep Your Friends Close stay last in their own strands. 
+Other prerequisites such as `Death Row` before `Rub Out` still apply.
+
 Crossing to the mainland is an item too, and so is Starfish Island. The vanilla
 bridges stay shut until the multiworld hands you the way over.
 
@@ -50,8 +58,10 @@ somebody's filler, yours or another player's.
 Options can go further: abilities can be locked away (sprint, jump, crouch,
 vehicles, weapons, and the ability to hold money at all), whole content classes
 can be held inert until their item arrives, the radar can start hidden, the
-radio can start with one station, and the ambient pickups scattered around the
-city can be shuffled among themselves.
+radio can start with one station, and the world pickups scattered around the
+city can be shuffled among themselves. Emergency vehicle activities can also
+remember how far you got, so leaving one and coming back resumes at the level
+you stopped at instead of restarting at level 1.
 
 ## What is a check?
 
@@ -63,24 +73,68 @@ arrives whether or not that class is a check class, and shuffling the emergency
 rewards takes those payouts into the item pool whether or not the levels are
 checks, so with the class off the chains still play and simply stop paying.
 
-| Check class | Checks |
+| Check class | Maximum checks |
 | --- | --- |
 | Story missions | 44 |
 | Hidden packages | 100 |
 | Rampages | 35 |
 | Unique stunt jumps | 36 |
-| Emergency vehicle milestones | 56 |
+| Emergency vehicle milestones | 146 |
 | Properties and venue missions | 40 |
 | Robbable stores | 15 |
 | Side events | 14 |
-| Ambient pickups | 116 |
+| World pickups | 116 |
 | Shop items | 36 |
 
-With every class enabled that is 492 checks. The emergency milestones are per
-level rather than per fare or per kill: paramedic, vigilante and firefighter
-levels 1 to 12, taxi every tenth fare, and pizza deliveries 1 to 10. The side
-events are the stadium events, the chopper checkpoints, the RC missions, Cone
-Crazy, PCJ Playground, Trial by Dirt and Test Track.
+With every class enabled and taxi spacing 1, that is 582 checks. 
+The emergency milestones are per level rather than per fare or per kill: paramedic, vigilante and firefighter levels 1 to 12, taxi every tenth fare, and pizza deliveries 1 to 10. 
+Vanilla restarts all of those but taxi at level 1 every time you re-enter one, however far you got. 
+`remember_emergency_progress` resumes at the level you stopped at instead and is on by default. 
+The side events are the stadium events, the chopper checkpoints, the RC missions, Cone Crazy, Playground, Trial by Dirt and Test Track.
+
+Use `location_percentages` to select only part of an enabled class of locations:
+
+```yaml
+enable_pickups: true
+location_percentages:
+  pickups: 80
+  stunt_jumps: 50
+```
+
+This keeps 93 of the 116 pickups and 18 of the 36 stunt jumps, chosen randomly on every seed. Unlisted classes stay at 100%, `0` removes every check of that class. 
+The class's toggle option must also be enabled. 
+Valid keys are `hidden_packages`, `rampages`, `stunt_jumps`, `properties`, `robbable_stores`, `side_events`, `pickups`, `shops`, `paramedic`, `vigilante`, `firefighter`, `taxi`, and `pizza`. 
+
+Emergency vehicles keep the first milestones of each activity instead of a random selection. Configure their percentages independently:
+
+```yaml
+location_percentages:
+  paramedic: 50     # Levels 1-6 of 12
+  vigilante: 25     # Levels 1-3 of 12
+  firefighter: 100  # All 12 levels
+  pizza: 50         # Levels 1-5 of 10
+  taxi: 30          # The 10, 20 and 30 fare milestones
+```
+
+Later levels hold no AP checks, so you can stop after the selected milestones.
+The activities still end and award their completion rewards at the usual
+levels, unless`shuffle_emergency_rewards` is active.
+
+Taxi milestone spacing is separately configurable:
+
+```yaml
+milestone_spacing:
+  taxi: 5
+location_percentages:
+  taxi: 50
+```
+
+This keeps ten taxi checks at 5, 10, ... 50 fares. The percentage reduces the
+100-fare target first, then spacing determines the number of checks.
+For example, taxi 10% with spacing 1 gives ten checks over ten fares.Other activities use one level per check.
+
+The 100% goal requires 100% of every completion-related class. 
+Only pickups and shops can be reduced for that goal.
 
 ## What items can appear in other players' worlds?
 
@@ -105,7 +159,7 @@ Crazy, PCJ Playground, Trial by Dirt and Test Track.
 
 Mostly it does not look like anything: a check is an activity you complete, so
 the world is the vanilla city with vanilla scenery. The two exceptions are the
-optional classes that put a check on an object. An ambient pickup that still
+optional classes that put a check on an object. A world pickup that still
 holds its check spins as a GTA III logo instead of the weapon or the health it
 normally is, which is the one sprite the game itself never uses, and a shop
 stand holding its check sells "AP Item" in place of its stock.
