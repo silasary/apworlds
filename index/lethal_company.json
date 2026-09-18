@@ -1,6 +1,6 @@
 {
   "authors": [
-    "T0r1nn"
+    "T0r1nn, ThisGuyHere"
   ],
   "description": "Placeholder description",
   "game": "Lethal Company",
@@ -549,6 +549,21 @@
       "title": "v0.8.0-pre-release-1",
       "version_simple": "0.8.0",
       "world_version": "0.8.0rc1"
+    },
+    "v0.8.0-rc1": {
+      "created_at": "2026-09-17T21:04:48Z",
+      "description": "# This release is meant for testing and is likely to have issues. DO NOT use in public games without prior approval from the host\r\n# THIS AND ALL FUTURE VERSIONS ARE NOT COMPATIBLE WITH WORLDS CREATED PRIOR TO 0.8.0\r\n\r\nBecause this version is meant for testing, the mod must be installed/updated manually.\r\n\r\nTo use this version in a new mod profile, look for an option to import a local mod. r2modman users can find this option under Settings > Profile > Import local mod. Gale users can find the option under Import > ..local mod. If your mod manager does not automatically install the required dependencies, you will need to install the latest versions of BepInEx, Archipelago Scrap, and DawnLib.\r\n\r\nTo use this version in an existing mod profile, navigate to wherever you have this mod installed, delete the old APLC.dll, and replace it with the version in the attached .zip file. r2modman users can find their profile folder by clicking Settings -> Browse profile folder, and Gale users can find it under File -> Open profile folder. From there, navigate to BepInEx/plugins/APLC-APLC and you should see APLC.dll. For users of Gale Mod Manager, it is especially important to DELETE the old dll FIRST to avoid overwriting the mod in other profiles.\r\n\r\nMod:\r\n* completely switched from LethalLevelLoader to DawnLib and replaced commands that used LethalAPI Terminal with Dawn commands\r\n* updated MultiClient.Net to the latest stable version\r\n* made custom company moons (Galetry, Oxyde, etc.) share logic with Gordion\r\n* scrap that spawns in custom interiors is now in logic\r\n* fixed an issue where non-scrap (flashlights, spray paint, etc.) in a custom moon's scrap pool could have locations\r\n* MASSIVELY reduced the time taken to connect to a multiworld slot\r\n* collecting a goal item now displays a notification in the ship (this may be blocked by the report card)\r\n* fixed moon difficulty calculation (i.e. 'hard' moons now reference the correct yaml setting for grade locations)\r\n* added a new option for calculating moon difficulty\r\n* added the moon grade required for grade locations to the in-game tracker\r\n* fixed an issue where some moons incorrectly cost credits to visit\r\n* added a mod config option to reduce the amount of scrap that spawns on Dine\r\n\r\nApworld:\r\n* changed moon checks to grade locations (ex. 'Vow check 1' is now 'Vow Grade Location 1')\r\n* for the sake of clarity, locations and items are no longer referred to as 'checks' anywhere in the mod or apworld\r\n* reworked the Collectathon goal\r\n  * it now requires the player to collect an assortment of random scrap in addition to the ap chests\r\n* players can now set min_scrap_chance and min_monster_chance to 0 without encountering issues\r\n* fixed a logic issue where rare scrap and monsters could still have certain progression items\r\n\r\nKnown issues:\r\n* If a player connects to a slot that has modify_scrap_spawns, scrap spawns will remain modified for until the player closes the game, even if the player opens a different save file.\r\n* if another mod grants extra inventory slots, those slots are not usable",
+      "download_url": "https://github.com/T0r1nn/APLC/releases/download/v0.8.0-rc1/lethal_company.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d570a59a9cdd5ccc7f7d656c832006399b6e8d104c5ab4efe9abdefc51cd4818",
+      "html_url": "https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-rc1",
+      "prerelease": true,
+      "size": 456047,
+      "source_url": "https://api.github.com/repos/T0r1nn/APLC",
+      "tag": "v0.8.0-rc1",
+      "title": "v0.8.0-rc1",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0r2"
     }
   }
 }

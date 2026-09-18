@@ -1,9 +1,12 @@
 # Mega Man Legends
 
 ## Latest
-- <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.0/mml.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.1/mml.apworld">Latest Version (0.3.0r2)</a>
 
 ## All Versions
+
+#### v0.3.0r2
+- <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.1/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.3.1/mml.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.0/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.3.0/mml.apworld</a>

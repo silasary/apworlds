@@ -5,7 +5,7 @@ that never quite ends. Tend the garden, follow the disc, and find your way out.
 
 
 ## Downloads
-- <a href="https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.4/grunn.apworld">Latest Version (1.1.4)</a>
+- <a href="https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.5/grunn.apworld">Latest Version (1.1.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

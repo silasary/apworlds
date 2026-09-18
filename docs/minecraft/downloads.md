@@ -1,9 +1,12 @@
 # Minecraft
 
 ## Latest
-- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.2.0/minecraft.apworld">Latest Version (2.2.0)</a>
+- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.2.1/minecraft.apworld">Latest Version (2.2.0r2)</a>
 
 ## All Versions
+
+#### v2.2.0r2
+- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.2.1/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.2.1/minecraft.apworld</a>
 
 #### v2.2.0
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.2.0/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.2.0/minecraft.apworld</a>

@@ -1,9 +1,12 @@
 # HoloCure
 
 ## Latest
-- <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.1/holocure.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.2/holocure.apworld">Latest Version (0.1.1r2)</a>
 
 ## All Versions
+
+#### v0.1.1r2
+- <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.2/holocure.apworld">https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.2/holocure.apworld</a>
 
 #### v0.1.1
 - <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.1/holocure.apworld">https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.1/holocure.apworld</a>
