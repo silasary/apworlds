@@ -1,9 +1,12 @@
 # Vex2
 
 ## Latest
-- <a href="https://github.com/rsa17826/vex2-ap/releases/download/15/vex2.apworld">Latest Version (15.0.0)</a>
+- <a href="https://github.com/rsa17826/vex2-ap/releases/download/16/vex2.apworld">Latest Version (16.0.0)</a>
 
 ## All Versions
+
+#### v16.0.0
+- <a href="https://github.com/rsa17826/vex2-ap/releases/download/16/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/16/vex2.apworld</a>
 
 #### v15.0.0
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/15/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/15/vex2.apworld</a>

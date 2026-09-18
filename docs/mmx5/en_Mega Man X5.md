@@ -227,13 +227,22 @@ override it when the patch is opened — the setup guide explains how.
   That is normal for the genre and the extra life is real, so it is left as it
   is. Below 32 the bar would draw unrelated HUD sprites, and that IS fixed, on
   the disc — which is why only a value under 32 asks you to re-patch.
+  **The last 16 points arrive as you earn them.** Alia's eight Life Up rewards
+  are worth 2 each and the game grants them without checking its own ceiling,
+  so from 0.7.3 the client holds 2 back for every Life Up you have not
+  collected yet and releases each one as it lands. A 127 start shows 111 on a
+  new save and reaches 127 once all eight are in — deferred, not lost.
 - **`heart_tank_value` sets what each Heart Tank is worth.** Vanilla is 2, and
   X5's eight tanks are what take a vanilla run from 32 to 48. 0 makes them
   worth nothing — the check still sends, the gauge just does not move. The
-  total stops at 127, and that ceiling now includes Alia's Life Up rewards —
-  they are not Archipelago items, they stay worth 2 each and they still add on
-  top, but they can no longer push the total past 127. (Before 0.7.1 they
-  could, and the game froze with its HUD drawn across the screen.) Heart
+  total stops at 127, and Alia's Life Up rewards are counted against that
+  ceiling rather than added past it — they are not Archipelago items, they
+  stay worth 2 each, and the client now reserves room for the ones you have
+  not collected yet instead of letting them overflow the byte the game reads.
+  (Before 0.7.1 they could overflow it and the game froze with its HUD drawn
+  across the screen. 0.7.1 and 0.7.2 corrected it after the fact, which left a
+  broken moment on every stage clear that granted life; 0.7.3 reserves the
+  room up front so the state never happens.) Heart
   Tanks from the multiworld raise **both** characters, unlike the vanilla
   pickup, which only helps whoever walked over it. Changing this mid-run
   affects the tanks you receive afterwards, not the life you already have.
@@ -282,8 +291,10 @@ override it when the patch is opened — the setup guide explains how.
   collected capsule's energy under `pickupsanity`.
 - **The Enigma/Shuttle parts screen lies to you.** It shows parts the original
   game hands out for beating Mavericks, not the ones Archipelago sent you.
-  Only the parts you actually received count toward the **launch** goal, and
-  the client will tell you your real count in its log. Under the launch goal
+  Only the parts you actually received count toward the **launch** goal. From
+  0.7.3 the client prints your real count in its log **every time you return
+  to stage select** (`Enigma Parts 2/4, Shuttle Parts 1/4`), so you never have
+  to scroll back through the run to find it. Under the launch goal
   the story's own shuttle launch — which happens automatically once all eight
   Mavericks are down — does **not** finish your run; you still need all 8
   parts.

@@ -145,8 +145,25 @@ buffer at `0x800D1D28` during the results sequence, possibly in overlay code.
 An EXE-wide scan for the `+0x47` idiom found 150 sites, of which only
 `0x800540DC` and `0x80053AA0` build `0x800D1C00`; the latter is the heal
 delivery path (`0x80053AB0 andi $v0,$a1,0x80` confirms bit 7 of `P+0x5C` is
-the damaged flag, not part of the value). Fixed client-side in apworld 0.7.1;
-an engine-side cap would need the Life Up site first.
+the damaged flag, not part of the value).
+
+**On an AP disc this handler never executes** — pickup kind 0 is retargeted to
+the record stub, whose tail consumes with no vanilla effect (`disc.py`,
+`RANDOMIZED_KINDS`). Alia's Life Up is therefore the ONLY unclamped writer of
+the byte that can still run, and there are exactly eight of them: reward ids
+0-7, one bit each in bits 8-15 of the u32 at `0x800D1C80` (overlay-findings
+§1.3).
+
+Fixed client-side, and the shape of the fix changed twice before it held.
+0.7.1 repaired the byte after the fact but gated the repair on gameplay/results
+modes, which the bug prevents the game from reaching; 0.7.2 un-gated it. A
+playtester still hit the freeze repeatedly on 0.7.2 — a repair is a poll behind
+(`watcher_timeout` 0.5s), so a run parked on the 0x7F clamp re-enters the broken
+window on EVERY stage clear that grants a Life Up. **0.7.3 reserves the headroom
+instead**: the client writes at most `0x7F - 2 × (Life Ups not yet collected)`
+(`life_ceiling`), so the illegal value is unreachable rather than corrected, and
+each reward releases its own 2 points as it lands. The repair stays as the net.
+An engine-side cap would still need the Life Up site first.
 
 **Max HP: `0x800D1C47` (X) / `0x800D1C48` (Zero)** — confirmed both by the
 `charIdx + 0x47` code path and by the known "max energy" cheat addresses in

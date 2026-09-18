@@ -1,10 +1,12 @@
 # YARGGuitarHeroWarriorsOfRock
 
-
+YARG is an Open-Source plastic band rhythm game! 
+Play through the YARG Official Setlist for the crowd,
+and maybe get some free items from your fans!
 
 
 ## Downloads
-- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.09.13/YARGGuitarHeroWarriorsOfRock.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.09.17/YARGGuitarHeroWarriorsOfRock.apworld">Latest Version (26.9.17)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

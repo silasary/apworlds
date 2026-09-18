@@ -385,6 +385,22 @@
       "title": "MMX5 apworld v0.7.2",
       "version_simple": "0.7.2",
       "world_version": "0.7.2"
+    },
+    "mmx5-v0.7.3": {
+      "created_at": "2026-09-18T04:54:39Z",
+      "description": "**Client-side only \u2014 no re-patch.** Update the apworld and carry on with the disc you already have. Existing seeds are unaffected; nothing here changes generation.\n\n## Fixed: the life overflow is now unreachable instead of repaired afterwards\n\nA playtester on 0.7.2 kept freezing on stage entry. Every stage clear that handed out one of Alia's Life Up rewards broke the game again, and the only way out was to have a Heart Tank sent \u2014 which forced the maximum back under the ceiling.\n\n0.7.1 and 0.7.2 both treated this as something to correct *after* it happened. A correction is a poll behind, so a run parked on the 127 cap re-entered the broken window on **every** stage clear that granted life.\n\nThe client now stops short of the cap instead. Alia has eight Life Up rewards worth 2 each, and the game hands them out without checking the highest number it can actually read \u2014 so **2 points are held in reserve for every Life Up you have not collected yet, and each one is released as it lands.** A full run still finishes on 127: the life is deferred, never lost. A save already sitting at the old cap is brought down once, when you connect.\n\nIf you asked for a high starting life and see a slightly lower number, that is this, and you get all of it.\n\nThe after-the-fact repair stays as the net underneath, unchanged.\n\n## Fixed: a frozen player could stay frozen after the maximum was corrected\n\nThe stage spawn copies your maximum into your live health, and it can do that before the correction lands. Once the maximum read sane again, nothing was left to put the live copy back \u2014 so the player stayed stuck behind a health bar that now looked perfectly normal. The client remembers what overflowed and restores the live copy on the next poll it sees it.\n\n## New: a status line every time you return to stage select\n\nLauncher parts have no in-game display of any kind \u2014 the game's launch menu shows a success percentage, not a count, and its parts screen shows the parts *it* would have given you rather than the ones Archipelago sent. So the only way to know where you stood was to scroll the client log back through the whole run:\n\n```\nMMX5: at stage select - Enigma Parts 2/4, Shuttle Parts 1/4\nMMX5: stages unlocked (3/8): Crescent Grizzly, Duff McWhalen, Volt Kraken\n```\n\nThe second line appears only if your seed uses `stage_unlocks`.\n\n## Assets\n\n| file | what it is |\n| --- | --- |\n| `mmx5.apworld` | the world \u2014 drop it in your Archipelago `custom_worlds/` folder |\n| `MMX5-Setup-Guide.pdf` | read this first if you are setting up for the first time |\n| `MMX5-Unpatcher.exe` | returns a patched disc to vanilla; **unchanged from 0.7.1/0.7.2**, since this release touches no disc bytes |\n\nRequires Archipelago 0.6.7 or newer.\n",
+      "download_url": "https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.3/mmx5.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8a9add12e4f23c20a38552f1230565f4342cbdea6f198e8bd5c0d6439cefc76b",
+      "html_url": "https://github.com/Shinnuu/Archipelago/releases/tag/mmx5-v0.7.3",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 367208,
+      "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
+      "tag": "mmx5-v0.7.3",
+      "title": "MMX5 apworld v0.7.3",
+      "version_simple": "0.7.3",
+      "world_version": "0.7.3"
     }
   }
 }

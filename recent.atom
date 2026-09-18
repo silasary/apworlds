@@ -2,461 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-18T00:19:08.686561+00:00</updated>
+  <updated>2026-09-18T06:16:44.438024+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/tathxo/DSAP/releases/tag/v0.2.6</id>
-    <title>Dark Souls Remastered v0.2.6</title>
-    <updated>2026-09-15T01:58:38+00:00</updated>
-    <author>
-      <name>Noka</name>
-    </author>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <content># **Dark Souls Remastered Archipelago v0.2.6**&#13;
-## Bigger Shops and Better Popups&#13;
-&#13;
-### Version update -&gt; 0.2.6. **Client is compatible with 0.2.x generated apworlds**. &#13;
-New options and locations are added, so older clients will not have access to the new locations and features.&#13;
-&#13;
-## Features&#13;
-* AP item names in Popups and in Shops will be in color based on AP category, using AP client default values. As rendered in game, Progression is roughly purplish, Useful is blue, Traps are Orange, and Filler is teal.&#13;
-* 64 AP locations added across several shops - added shop armor and weapons to the pool, and made their shop entries single-use&#13;
-* 20 more AP locations added to Domhnall's shop (in addition to the above) - boss armor sets, available after you kill the appropriate bosses.&#13;
-* New Yaml Option `unlimited_shop_item_shuffle` to shuffle merchant unlimited shop items (consumables and arrows) amongst each other (client-side, not AP checks).&#13;
-* Removed Domhnall's Master Key from the pool for a better experience - it makes too many other keys redundant/useless and opens up too many different parts of the map at once.&#13;
-&#13;
-## Fixes&#13;
-* Add in missing post-Quelaag lever bone for when boss_bone_shuffle is on&#13;
-* Tracker autotabbing detected wrong map in a part of Upper Undead Burg.&#13;
-* Better Version error messages&#13;
-* Force disconnect on sufficiently mismatched versions&#13;
-* Better messages for "new room" error&#13;
-* Better messages on failed connection&#13;
-* Fix multiple autotab problem areas: UP hallway, DA 1st seath encounter, and demon ruins ramp&#13;
-* Logic: fix `TotG: Soul of a Brave Warrior - Lower Giant Coffin` region to be before the white fog&#13;
-&#13;
-Known issues (will be addressed in a later release)&#13;
-1) Rare crash related to bonfire syncing code.&#13;
-2) Petrus may aggro on you if you hurt his companions.</content>
-    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.2.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v2.0.0</id>
-    <title>Peggle Nights v2.0.0</title>
-    <updated>2026-09-15T02:27:06+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is a major feature release that also includes improvements and tweaks. &#13;
-It brings Peggle Nights to parity with the features of Peggle Deluxe 2.2.0.&#13;
-&#13;
-**This release is NOT compatible with games generated on the previous version.**&#13;
-&#13;
-- **Feature:** In-Game Level Locking&#13;
-- **Feature:** In-Game Master Locking&#13;
-- **Feature:** Progressive Fever Meter Threshold items have been completely replaced by level-specific Progressive Orange Pegs items, leading to more interesting and layered progression, as well as requiring a bit more skill for the early game phase&#13;
-- **Feature:** Purple Pegs are now unlockable by level&#13;
-- **Feature:** Each Peggle Master now has their own set of Progressive Green Pegs items, creating opportunities for suboptimal masters to now be optimal to play under certain circumstances&#13;
-- **Feature:** Added in / out of logic location counts under each level image in the Levels section of the custom client tab. Requires Universal Tracker to be installed&#13;
-- **Feature:** The section of the custom client tab showing information about the current level now lists what locations are accessible in / out of logic. Requires Universal Tracker to be installed&#13;
-- **Improvement:** To avoid the confusion that was present in 1.x.x around getting fever mode and no completion check, Level Clear location checks will now unlock after any fever mode completes. They will require half your starting ball items logically, but nothing prevents them from triggering&#13;
-- **Improvement:** To preserve the relevance of the 4th Progressive Orange Pegs item now that level completions have moved to the early-mid game, new Fever Meter Full location checks have been added&#13;
-- **Improvement:** Starting level count increased from 1 to 3&#13;
-- **Improvement:** Starting ball count is now set through a custom code patch instead of directly setting the memory value, meaning that the Ball-O-Tron will now always display the correct amount of balls&#13;
-- **Improvement:** Getting the required quantity of Shadow Pegs is now all that's needed to access and clear the final level. No extra items to chase&#13;
-- **Improvement:** Added 3 extra copies of Progressive Starting Ball Increase and 1 extra copy of each Progressive Orange Pegs variant to allow for less restrictive progression and reaching the cap faster&#13;
-- **Improvement:** Slightly reworked logic, mainly around fever meter multipliers&#13;
-- **Improvement:** Custom client tab has been updated to reflect the new features&#13;
-- **Tweak:** Permanent Fever Meter Bonus useful items have been removed&#13;
-&#13;
-_No new YAML options. Minimum level count is now 15 to make room for all the new items. You will need to remove Permanent Fever Meter Bonus from your useful item weights for existing YAMLs to be valid_&#13;
-&#13;
-The implementation now has proper [documentation](https://github.com/SerpentAI/Archipelago/blob/peggle-nights/worlds/peggle_nights/docs/en_Peggle_Nights.md) and a [setup guide](https://github.com/SerpentAI/Archipelago/blob/peggle-nights/worlds/peggle_nights/docs/setup_en.md)</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/peggle-nights-v2.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.3</id>
-    <title>Rabbit and Steel v0.4.3</title>
-    <updated>2026-09-15T03:56:40+00:00</updated>
-    <author>
-      <name>tjwombo</name>
-    </author>
-    <content>fixed:&#13;
-- not handling the last hallways correctly&#13;
-&#13;
-# Changelog&#13;
-&#13;
-All notable changes to this project will be documented in this file.&#13;
-&#13;
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)&#13;
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).&#13;
-&#13;
-## [v0.4.3](https://github.com/tjwombo/RNSArchipelago/compare/v0.4.2...v0.4.3) - 2026-09-14&#13;
-&#13;
-### Commits&#13;
-&#13;
-- fix last kingdom constant typo [`cfbae41`](https://github.com/tjwombo/RNSArchipelago/commit/cfbae4172646cad4f60d8c76b939965c10cb7e7b)&#13;
-- update mod config [`f51207d`](https://github.com/tjwombo/RNSArchipelago/commit/f51207da7a24c6e0e0cecad910812220a52b2902)&#13;
-</content>
-    <link href="https://github.com/tjwombo/RNSArchipelago/releases/tag/v0.4.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/tag/v0.5.1</id>
-    <title>Manual_MarioKartWorld_Greengamefire v0.5.1</title>
-    <updated>2026-09-15T04:51:41+00:00</updated>
-    <author>
-      <name>Greengamefire</name>
-    </author>
-    <content>Download the apworld into your "custom_worlds" folder or double click it and be sure to restart the AP client after doing this&#13;
-&#13;
-It is recommended that you use a completed save with all characters and karts unlocked with open world at any progress&#13;
-&#13;
-If you have any Questions, Bugs, or Additions that you may want to add or notify me of, please feel free to tell me them in the Manuals for Archipelago server thread for Mario Kart World and @greengamefire or dm me for anything relating to this&#13;
-&#13;
-Link to thread: https://discord.com/channels/1097532591650910289/1379985379939192975&#13;
-&#13;
-For any help with finding collectibles I HIGHLY recommend using this interactive map https://game8.co/games/Mario-Kart-World/archives/524298&#13;
-&#13;
-**Please use this map for reference to all Areas**&#13;
-![mario-kart-world-free-roam-world-map-with-regions](https://github.com/user-attachments/assets/2a764c13-f5bd-4e9e-8da6-1f2099731abe)&#13;
-&#13;
-**Patch Notes**&#13;
-- Added Propeller Rally and Turnip Rally</content>
-    <link href="https://github.com/Greengamefire/Mario-Kart-World-Manual-AP/releases/tag/v0.5.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.15.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.15.0</title>
-    <updated>2026-09-15T05:48:33+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-- The mission list could vanish mid-run. Any mission nobody had cleared a
-  wave in yet, which is most of them on a normal run, threw an error the
-  plugin never recovered from, leaving "the bridge has not answered" for the
-  rest of the session.
-- Rootless Podman, the default on Bazzite, could fail to write the server's
-  admin list on start and stop picking up plugin updates until the container
-  was restarted by hand.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`.env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/.env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.14.0...v1.15.0
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/OWUzNTgwZGE1MGNkNjc4MTk5ZmRiOWY3MzM1NzcyMGU6MTc4OTQ1MTYxNQ==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZjRjMmJiNDZjNzllNzQ5ZWMxMmUyNDQ5ODNkNWYwZTA6MTc4OTQ1MTYxNg==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.15.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.5</id>
-    <title>Wynncraft v0.4.5</title>
-    <updated>2026-09-15T05:53:50+00:00</updated>
-    <author>
-      <name>EpicPuppy613</name>
-    </author>
-    <content>**Compatible with Wynnpelago v0.4.5+**&#13;
-&#13;
-- Add additional QOL options&#13;
-  - Logical Grind Spots&#13;
-  - Logical Mounts&#13;
-- Logical level internal rework&#13;
-- Various region connection adjustments&#13;
-- Various logic fixes</content>
-    <link href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.4.6</id>
-    <title>Factorio: Platformer v0.4.6</title>
-    <updated>2026-09-15T07:40:46+00:00</updated>
-    <author>
-      <name>lepideble</name>
-    </author>
-    <content>## What's Changed&#13;
-* Fix typo in variable name by @lepideble in https://github.com/lepideble/factorio-apworld/pull/73&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.4.5...platformer-0.4.6</content>
-    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.4.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.5</id>
-    <title>Pokepelago v0.6.5</title>
-    <updated>2026-09-15T12:47:15+00:00</updated>
-    <author>
-      <name>Appie</name>
-    </author>
-    <content># Pokepelago v0.6.5
-
-In this release, I added spoiler hiding and improved client links, warnings and documentation.
-
-## APWorld
-
-- **Spoiler hiding:** I added a `hide_spoilers` toggle under Display, off by default, for streams and shared screens. When enabled, every per-Pokemon location name uses its National Dex number, such as "Guess Pokemon 1", across hints, the Text Client, server console and WebHost tracker, while location IDs, logic, checks, item names and the spoiler log remain unchanged. (FEAT-20, issue #35)
-- Since datapackages are shared per game, enabling `hide_spoilers` for any Pokepelago player applies Dex numbers to every Pokepelago slot in that room. Universal Tracker still shows the real names.
-- **Client chooser:** slot links on the Archipelago WebHost room page now offer Text Client, Pokepelago Web Client or Pokepelago Desktop Client in the Archipelago Launcher. The web choice opens the site already connected, the desktop choice hands the connection to the desktop app through a `pokepelago://` link, and the Text Client is still launched alongside.
-- AfiliaFrostfang already added `pokepelago://` support to the desktop client, so the desktop option will work as soon as their next release is out. Until then, pick the web client or Text Client.
-- **Starting checks:** when `starting_location_count` is `0` with two or more lock options, generation still raises it to the number of active lock options, up to 8, so the lock items have free starting checks, but I now print a warning instead of changing it silently. With zero or one lock option, `0` is honoured. (BUG-22, issue #17)
-- **Trap and filler weights:** I clarified that leaving a category out of your YAML keeps its default weight, while only an explicit `0` disables it. The behaviour hasn't changed. (BUG-23, issue #18)
-- I updated the APWorld README and Launcher to use https://pokepelago.ap-pie.com as the main address.
-- Archipelago 0.6.7 or newer is still required.
-
-## Web client
-
-- There are no gameplay changes in the web client for this release.
-- I updated the README to link to https://pokepelago.ap-pie.com and the setup guide at https://ap-pie.com/guides/pokepelago.
-- I added GitHub issue forms for bug reports, stuck seeds and feature requests.
-- I added an AI usage disclosure to both repositories (`AI_USAGE.md` in the client, the README in the APWorld).
-
-## Also
-
-- The main address is now https://pokepelago.ap-pie.com. https://dowlle.github.io/PokepelagoClient/ still works and serves the same build, but your browser's progress and settings stay with whichever address you use.
-- **Desktop client:** if you'd rather run Pokepelago as a Windows app, AfiliaFrostfang maintains a desktop version at https://github.com/AfiliaFrostfang/PokepelagoDesktopClient. It wraps the web client, so it plays the same, and the two of us keep it in step with new releases. It's their project, so questions and bug reports about the app itself go to that repo. The installer isn't code-signed yet, so Windows SmartScreen may ask you to confirm on first run.
-
-[Full Changelog](https://github.com/dowlle/PokepelagoClient/compare/v0.6.4...v0.6.5)
-</content>
-    <link href="https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.6</id>
-    <title>Pokepelago v0.6.6</title>
-    <updated>2026-09-15T13:45:49+00:00</updated>
-    <author>
-      <name>Appie</name>
-    </author>
-    <content># Pokepelago v0.6.6
-
-This is a small same-day follow-up to v0.6.5, fixing the desktop client launch and restoring Twitch features.
-
-## APWorld
-
-- The Launcher now hands `pokepelago://` links to the operating system through Python's `webbrowser` module. Player behaviour is unchanged, but the APWorld no longer directly starts a helper process, which the AP-Pie index security audit flagged in v0.6.5.
-- If you installed v0.6.5, replace it with this version.
-- Everything else from v0.6.5 is unchanged, including `hide_spoilers`, the client chooser, starting-location warning and weight documentation.
-- Archipelago 0.6.7 or newer is required.
-
-## Web client
-
-- I switched Twitch integration back on in the deployed site. The toggle, settings tab and chat leaderboard are available again under Settings.
-- Twitch sign-in is now checked hourly and when you return to the tab. If it expires, you'll see "Twitch sign-in expired, reconnect" with the Connect button instead of chat guessing quietly stopping. Issue #27.
-- Twitch sign-in now works on https://pokepelago.ap-pie.com.
-
-[Full Changelog](https://github.com/dowlle/PokepelagoClient/compare/v0.6.5...v0.6.6)</content>
-    <link href="https://github.com/dowlle/PokepelagoClient/releases/tag/v0.6.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JBtheShadow/APManuals/releases/tag/v1.1.0</id>
-    <title>Manual_FantasyLife_JBtheShadow v1.1.0</title>
-    <updated>2026-09-15T13:50:46+00:00</updated>
-    <author>
-      <name>JBtheShadow</name>
-    </author>
-    <content>I'd say this is a sort of small update even though it's been 3 months since the last release.&#13;
-&#13;
-## Changes&#13;
-* Switched to the [latest unstable](https://github.com/ManualForArchipelago/Manual/releases/tag/manual_unstable_20260815);&#13;
-* This manual now supports Rulebuilder;&#13;
-* Shop items are now scoutable;&#13;
-  * Intended to use once you reach a shop to scout only items in logic, to know which ones are worth buying;&#13;
-&#13;
-## Bug fixes&#13;
-* Small typos in requests.csv;&#13;
-* Certain price categories still displaying rather than being hidden;&#13;
-  * In particular any shop items costing a non-multiple of 10 dosh;&#13;
-* Wrong behavior for shop keys when shops are restricted;&#13;
-  *  Wrong dosh filter for which shop items to *be* in logic leading to more keys than expected being removed while locations remained, making those shops in logic without their expected restriction;&#13;
-  * Also tried removing the keys *twice*, took away the second removal;&#13;
-&#13;
-## TODO&#13;
-Still the same as before:&#13;
-* [ ] Review requirements for challenges and crafting recipes;&#13;
-* [ ] Include other types of chests (purple, invisible, master);&#13;
-* [ ] Include an alternative to challenges or crafting locations in the form of tasks;&#13;
-  * Similar scope, collect X items or fight X enemies and the like;&#13;
-* [ ] Add more goal requirements;&#13;
-* [ ] Add template yamls for different setups, like different game modes;&#13;
-* [ ] Look into other ways to allow a playthrough from an existing save;&#13;
-* [ ] Look into other improvements;</content>
-    <link href="https://github.com/JBtheShadow/APManuals/releases/tag/v1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.7.0</id>
-    <title>Final Fantasy VIII v0.7.0</title>
-    <updated>2026-09-15T14:08:12+00:00</updated>
-    <author>
-      <name>ff8_arch</name>
-    </author>
-    <content>## Early entry, Battle Assist, and the Story Keys of v0.6.0&#13;
-&#13;
-- **Early entry** (needs `vehicle_unlocks`): with the Ragnarok item in hand, the Tomb of the Unknown King, the Centra Ruins, the chocobo forests, **Winhill** and **Shumi Village** open before the story reaches them, and their first-opening checks join logic from the start (with `story_keys` on, the area's key is needed too). Winhill and Shumi were surveyed room by room on a Disc 1 save, including a save and reload inside. Other towns stay closed until surveyed (Deling City's hotel lounge soft-locks early).&#13;
-- **Battle Assist** (`/ff8assist`, client-side, off by default): `oneshot` leaves every enemy in a random encounter at 1 HP so the first hit ends it (bosses and scripted fights stay real), `enc` keeps Enc-None equipped for no random encounters from the first step, `atb` keeps ATB full, `hp` keeps HP topped up. DeathLink always takes priority.&#13;
-- **Story Keys** (from v0.6.0, `story_keys`, off by default): twenty "Key: &lt;area&gt;" items that physically lock the world-map entrances; `areas` never blocks the story, `story` makes the main-line doors hard gates. Keys carry their `/ff8warp` destination. Preset **Story Keys**.&#13;
-- The real Magical Lamp and Solomon Ring keep their names once they arrive; the Shumi warp lands beside the village dome.&#13;
-&#13;
-Tracker pack 0.13.0 shows the keys and the early-entry areas and mirrors the rules. **Stability note:** the new options are experimental and off by default; leave them off and this is the safe upgrade over v0.5.0. Report anything odd with `/ff8` output and the client log.&#13;
-&#13;
-## Install&#13;
-&#13;
-1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.&#13;
-2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.&#13;
-3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.&#13;
-&#13;
-### Visual Tracker&#13;
-&#13;
-`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:&#13;
-&#13;
-1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.&#13;
-2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.&#13;
-3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.&#13;
-&#13;
-Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!&#13;
-&#13;
-Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).&#13;
-&#13;
-&#13;
-## What's Changed&#13;
-* Early entry: never-gated areas open with the Ragnarok item (C3) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/4&#13;
-* Release prep for v0.7.0 by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/5&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.6.0...v0.7.0&#13;
-</content>
-    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Cynichill/DivaAPworld/releases/tag/1.5.2B</id>
-    <title>Hatsune Miku Project Diva Mega Mix+ v1.5.2b0</title>
-    <updated>2026-09-15T14:30:25+00:00</updated>
-    <author>
-      <name>Cynichill</name>
-    </author>
-    <author>
-      <name>repod</name>
-    </author>
-    <content># Changelog:&#13;
-&#13;
-# World&#13;
-- New goal mode: Location Percentage&#13;
-- Added Stutter, Slow, and PSP Traps&#13;
-- Song IDs (`123`) can be used for include, exclude, and goal song options&#13;
-&#13;
-# Mod&#13;
-- Support the AP World changes&#13;
-- Trap Link&#13;
-- Improved right-click menus and sortable tables for Tracker and Hints tab&#13;
-- Automatic retry on death&#13;
-- Various bug fixes and quality of life improvements&#13;
-&#13;
-Enjoying the mod? Consider joining our thread in the AP discord! We're close to a channel!</content>
-    <link href="https://github.com/Cynichill/DivaAPworld/releases/tag/1.5.2B"/>
-  </entry>
   <entry>
     <id>https://github.com/BuffYoda21/ap-glyphs/releases/tag/v1.3.0</id>
     <title>GLYPHS v1.3.0</title>
@@ -642,7 +192,7 @@ no regeneration - see **What carries over** for the two exceptions.&#13;
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.11</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r3</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
     <updated>2026-09-16T00:06:19+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1883,7 +1433,7 @@ Delete the old Portal2Archipelago mod folder and all it's contents and replace i
   </entry>
   <entry>
     <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.4</id>
-    <title>Laika: Aged Through Blood v0.1.0r2</title>
+    <title>Laika: Aged Through Blood v0.1.0r3</title>
     <updated>2026-09-17T19:24:12+00:00</updated>
     <author>
       <name>Seras</name>
@@ -2038,5 +1588,80 @@ Added a new option under "hidden_blocks_revealed" to ALSO color guaranteed coin 
 - Fixed an issue where a third buster slot appeared upon entering Wily's Boat and dissppeared after exiting the area.&#13;
 - Fixed an issue where the "2 box ledge chest" location was empty if the player had already checked the "Main gate entrance chest" location.</content>
     <link href="https://github.com/functorial/MMLAP/releases/tag/v0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.16.0</id>
+    <title>Brotato v0.15.0r2</title>
+    <updated>2026-09-18T01:36:39+00:00</updated>
+    <author>
+      <name>Rampaging Hippy</name>
+    </author>
+    <content>## Added&#13;
+- New Feature: Progressive Wave Caps&#13;
+  - The game now has a cap on the highest wave that can be played from the start.&#13;
+  - A set of new items, "Progressive Wave Cap (\&lt;character\&gt;)", has been added which, when received, increases the maximum playable wave for each character.&#13;
+  - The logic for Wave Completed and Run Won locations now requires that the wave cap be greater than the wave number or 20, respectively.&#13;
+  - Controlled by a new option, `wave_caps`, which sets the number Progressive Wave Cap Increase items for each character and the increase given by each one.&#13;
+  - There are predefined values for `wave_caps`:&#13;
+    - `one`: One wave cap, all 20 waves are reachable from the start (matches previous apworld behavior).&#13;
+    - `two`: Waves 1-10 are playable from the start, waves 11-20 require a cap increase.&#13;
+    - `four`: Waves 1-5 are playable from the start, 6-10 require a single increase, 11-15 require two, 16-20 require three.&#13;
+    - `ten`: Waves 1-2 are playable from the start, 3-4 require one increase, etc.&#13;
+    - `twenty`: Every wave past wave 1 requires a cap increase.&#13;
+- Added Universal Tracker hooks to the apworld so it now uses the same characters as the actual slot.&#13;
+&#13;
+## Changed&#13;
+&#13;
+- Reduced the maximum values of some options that were unfun at larger values:&#13;
+  - `num_victories` is now 25 instead of matching the total number of characters.&#13;
+  - `num_common_crate_drops` is now 25 instead of 50.&#13;
+  - `num_legendary_crate_drops` is now 10 instead of 50.&#13;
+- The amount of wins to unlock each group of loot crate checks has been adjusted so the thresholds are evenly distributed over the number of wins needed to goal.&#13;
+  - Before, the last group could be unlocked much earlier in logic if the number of groups did not evenly divide into the number of wins needed.</content>
+    <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.16.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.09.17</id>
+    <title>YARGBandHero v26.9.17</title>
+    <updated>2026-09-18T01:47:34+00:00</updated>
+    <author>
+      <name>Energymaster22</name>
+    </author>
+    <author>
+      <name>thedrummonger</name>
+    </author>
+    <author>
+      <name>GirlWithoutAFairy</name>
+    </author>
+    <content>This release contains a backend change that will allow me to more easily identify which apworld version is being used.</content>
+    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.09.17"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/tag/0.4.0</id>
+    <title>Hunie Cam Studio v0.4.0</title>
+    <updated>2026-09-18T05:05:09+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- (APWorld/Client) added option to disable getting trophy locations when they are outside of logic&#13;
+- (APWorld) added options for locking trophy logic behind girls unlocked, girl slots unlocked and accounting upgrades gotten&#13;
+- (APWorld) moved all logic over to Rule Builder so "/explain" and "/get_logical_path" work in UT&#13;
+- (Client) added code "$trophylogic" to show simple overview of trophy logic&#13;
+&#13;
+&#13;
+INSTALLATION INSTRUCTIONS:&#13;
+&#13;
+CLIENT:&#13;
+- Have Hunie Cam Studio Installed&#13;
+- Download Hunie Cam Studio Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Hunie Cam Studio Archipelago Client v#.#.#.zip" to the directory where "HunieCamStudio.exe" is&#13;
+&#13;
+APWORLD (needed for generating archieplago game):&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Spirit Valley APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Hunie Cam Studio APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recomended)Select "Generate Template Options" to generate default Hunie Cam Studio YMAL</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/tag/0.4.0"/>
   </entry>
 </feed>

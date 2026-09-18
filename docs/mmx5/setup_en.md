@@ -181,6 +181,24 @@ connected, play normally — checks send themselves and items arrive as you go.
   working** — the game decides which armor to wear when the stage loads, and
   the client only withholds afterwards — so this costs you nothing beyond the
   pause menu showing one fewer part until you collect that check.
+- **Your maximum life stops short of 127 until Alia has paid out.** Her eight
+  Life Up rewards are worth 2 each, and the game hands them over without
+  checking the highest number it can actually read — a run already sitting at
+  127 when one lands breaks the life bar and leaves you unable to move. So the
+  client keeps 2 points in reserve for every Life Up you have not collected
+  yet and releases each one as it arrives. If you asked for a high starting
+  life and see a slightly lower number, that is this, and you get all of it.
+- **The client prints where you stand each time you return to stage select**,
+  because the game has nowhere to show it:
+
+  ```
+  MMX5: at stage select - Enigma Parts 2/4, Shuttle Parts 1/4
+  MMX5: stages unlocked (3/8): Crescent Grizzly, Duff McWhalen, Volt Kraken
+  ```
+
+  The second line appears only if your seed uses `stage_unlocks`. The game's
+  own Enigma/Shuttle parts screen shows the parts *it* would have given you,
+  not the ones Archipelago sent — the log line is the one to trust.
 - **"Small Energy" filler heals 4 HP**, delivered through the game's own
   refill counter — the same trickle a sub-tank uses. One that arrives while
   you are in the hub is applied when you next enter a stage.
