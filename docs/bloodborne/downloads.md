@@ -1,9 +1,12 @@
 # Bloodborne
 
 ## Latest
-- <a href="https://github.com/4laric/bb-archipelago/releases/download/v0.1.0.2/bloodborne.apworld">Latest Version (0.1.0.2)</a>
+- <a href="https://github.com/4laric/bb-archipelago/releases/download/v0.1.0.3/bloodborne.apworld">Latest Version (0.1.0.3)</a>
 
 ## All Versions
+
+#### v0.1.0.3
+- <a href="https://github.com/4laric/bb-archipelago/releases/download/v0.1.0.3/bloodborne.apworld">https://github.com/4laric/bb-archipelago/releases/download/v0.1.0.3/bloodborne.apworld</a>
 
 #### v0.1.0.2
 - <a href="https://github.com/4laric/bb-archipelago/releases/download/v0.1.0.2/bloodborne.apworld">https://github.com/4laric/bb-archipelago/releases/download/v0.1.0.2/bloodborne.apworld</a>

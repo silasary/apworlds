@@ -1,10 +1,10 @@
 # Final Fantasy VII
 
-
+FF7 IronMog world — Archipelago controls item/location placement.
 
 
 ## Downloads
-- <a href="https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.5/ff7.apworld">Latest Version (0.0.5)</a>
+- <a href="https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.6/ff7.apworld">Latest Version (0.0.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

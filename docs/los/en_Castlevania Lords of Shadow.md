@@ -29,7 +29,9 @@ With trials disabled, the reward pool returns all 30 gems of each type as paired
 trials enabled, it instead uses 30 individual rewards of each gem type. Those 45 extra gem slots
 balance 45 trials; Besieged Village's 46th trial adds one refill/trap-family slot. Six Progressive Daggers and
 four each of Progressive Holy Water/Fairies combine unlocks with every capacity upgrade. Every seed
-contains exactly 25 large XP rewards. By default, all remaining filler slots become Consumables
+contains exactly 25 large XP rewards totaling 65,000 XP. With paid skill checks enabled, two
+3,000-XP rewards are guaranteed on early reachable local checks; starting-level selection remains
+random. By default, all remaining filler slots become Consumables
 Refill items. Each Consumables Refill restores owned Light/Shadow Magic, Daggers, Holy Water,
 Fairies, and Dark Crystal, but never health. `trap_frequency` can replace 0%, 10%, 30%, or 50% of
 only those refill slots with an even mix of Magic Drain and Poison traps. Magic Drain empties the

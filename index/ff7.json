@@ -104,6 +104,21 @@
       "title": "V0.0.5a FF7 APWorld",
       "version_simple": "0.0.5",
       "world_version": "0.0.5a0"
+    },
+    "v0.0.6": {
+      "created_at": "2026-09-09T21:34:27Z",
+      "description": "FF7 AP World V0.0.6\r\n\r\nAPWorld Changes:\r\n\r\nProgressive Limits (progressive_limits, default on). Five copies per character teach 1-2, 2-1, 2-2, 3-1, 3-2; level 4 keeps its manual item. The client also stops the game teaching limits off kill and use counts.\r\n\r\nCharacters item group, so !hint Characters aims at the roster and returns the lowest-sphere member.\r\n\r\nThe Temple of the Ancients is a real dungeon in Free Roam \u2014 16 checks across kuro_1/2/3/5/6/7/82, gated on ocean traversal and the Keystone, which is enforced in game rather than only in logic.\r\n\r\nEndgame areas want a real squad. All three Weapons, the sunken Gelnika, Northern Crater and the Underwater Reactor each need three characters on top of their traversal rule \u2014 This is soft logic so a solo Cloud can still access these areas should you wish to.\r\n\r\nScalable AP shop slots (shop_slots_per_shop, default 0). 0 keeps the hand-authored 1-6 per shop; 1-10 overrides uniformly.\r\nProgressive Chocobos (progressive_chocobos, off by default). Four copies of one item grant Yellow \u2192 Green \u2192 Black \u2192 Gold in order.\r\n\r\nCharacters join at the party leader's level (party_level_sync, on by default). Filed as a feature, but really a bug: the record clone left new members at whatever level the template carried.\r\n\r\nTwo new YAML opt-outs for check categories, (disable_gil_dump_checks disables the Villa Purchase and Wall Market Weapons store Purchase checks. disable_bone_village_digs disables the bone village dig checks.\r\n\r\nHero Drink is useful, not filler.\r\n\r\nNorthern Crater Change , The Northern Crater entry has been changed to just requiring the 4 Huge Materia + Highwind. There is now a block at the end of the Northern Crater preventing you from going down the steps to Sephiroth unless you have the 6 required Characters (Tifa, Barret, Red XIII, Cid, Cait Sith, Aerith)\r\n\r\nUniversal Tracker map publishing The client publishes the current field to data storage for those working with UT and Visual Mapper.\r\n\r\nFort Condor Loss Reset The client will now auto reset the Fort Condor progress if you lose the boss fight once you hit the world map again allowing you to reattempt the final stage minigame and boss fight.\r\n\r\nKnown Issues:\r\nMinor text display issues in Temple of Ancients",
+      "download_url": "https://github.com/blazerwazey/FF7pelago/releases/download/v0.0.6/ff7.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8d6a1da2d5ed9fc15a2f72301304cdf249e3fb9efed34c55bcf645c707d2ce20",
+      "html_url": "https://github.com/blazerwazey/FF7pelago/releases/tag/v0.0.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 233383,
+      "source_url": "https://api.github.com/repos/blazerwazey/FF7pelago",
+      "tag": "v0.0.6",
+      "title": "v0.0.6 FF7 APworld",
+      "version_simple": "0.0.6",
+      "world_version": "0.0.6"
     }
   }
 }

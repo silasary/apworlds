@@ -24,3 +24,27 @@ command state is not saved in the profile. Logic corrections apply to newly gene
 For another seed, manually archive/remove the AP `Castlevania.profile` again. To return to the normal
 campaign, close the game and restore the profile you backed up. The mod includes no custom executable,
 launcher, save manager, or replacement level selector and never changes `Castlevania.cfg`.
+# Optional paid skill checks (0.7.1 alpha)
+
+Set `skills_as_checks: enabled` to add all 31 purchasable skill entries as
+checks and shuffle their move unlocks. Starting/free moves, riding abilities,
+story rewards and automatic relic/tool moves are excluded. Each purchase costs
+its retail XP amount. Buying an upgrade requires buying its predecessor check;
+using the move still requires receiving the appropriate skill item(s) and relics.
+Starting levels remain fully random. Skill mode places two 3,000-XP rewards on
+early reachable checks, and the shop checks cannot contain those prerequisite
+rewards. Normal combat in any reachable level supplies renewable XP. The fixed
+25-package AP XP pool totals 65,000 XP; no separate shop budget is added.
+
+Set `reveal_skill_rewards: enabled` to read each purchase's actual AP item and
+recipient before buying it. This works with items from other games. Long names
+cycle through overlapping segments. It does not create AP hints. Both options
+default to disabled; the preview option has no effect when skill checks are off.
+These options require a newly generated seed.
+
+The three-entry native menu pilot is tested; the full catalog, previews and
+replay farming are new alpha coverage. Report problems with the purchase journal
+and client log intact. If a game reload interrupts an uncertain XP debit, skill
+purchases pause instead of automatically charging again. Keep the per-seed journal
+under `%LOCALAPPDATA%/Archipelago/LordsOfShadow/skill-purchases` for diagnosis.
+Do not run a standalone prototype helper alongside the public AP client.

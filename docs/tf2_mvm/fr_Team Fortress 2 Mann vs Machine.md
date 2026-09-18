@@ -1,66 +1,66 @@
 # Team Fortress 2 Mann vs Machine
 
-## Qu'est-ce que le randomizer change à ce jeu ?
+## Que fait la randomisation à ce jeu ?
 
 Mann vs Machine est le mode coopératif de Team Fortress 2. Six joueurs
 défendent une trappe contre des vagues de robots. Entre les vagues, les
 joueurs achètent des améliorations.
 
-Une partie utilise une partie des 29 missions Valve. Chaque vague que l'équipe
-réussit est une check. Chaque mission que l'équipe réussit est une check.
+Une partie utilise une partie des missions. Chaque vague que l'équipe réussit
+est un check. Chaque mission que l'équipe réussit est un check. Le premier
+tank et le premier géant de chaque mission sont aussi des checks.
 
-Vous ne commencez pas avec le jeu complet. Les classes de mercenaires sont des
-items. Les emplacements d'équipement sont des items. Le ticket qui ouvre une
-mission est aussi un item.
+Vous ne commencez pas avec le jeu complet :
 
-Chaque palier de difficulté demande plus de classes et plus d'emplacements que
-le palier en dessous. Une mission Expert reste fermée tant que la partie ne
-vous a pas donné la plupart des classes.
+- Les neuf classes sont des objets.
+- Les trois emplacements d'arme sont des objets. Un emplacement verrouillé
+  est vide.
+- Le ticket qui ouvre une mission est un objet.
+- Les bonus d'arme, les paquets de crédits et les pièges remplissent le reste.
 
-## Quel est l'objectif ?
+Chaque palier de difficulté demande plus de classes et d'emplacements que le
+palier en dessous.
 
-La seed fixe l'un de ces deux objectifs :
+## Quel est l'objectif ?
 
-- **Final Boss** : la partie marque la mission la plus difficile qu'elle a
-  tirée. Réussissez cette mission pour gagner.
-- **Missionsanity** : réussissez une partie des missions tirées, dans
-  n'importe quel ordre.
+La seed fixe un des deux objectifs :
 
-`medal_on_clear` change ce que l'objectif lit. La seed le laisse à zéro par
-défaut. Activez-le : chaque mission réussie contient alors une médaille en
-australium qui n'appartient qu'à vous. L'objectif compte les médailles que
-vous détenez. Le prix est d'un check par mission, car ces réussites ne portent
-plus l'item d'un autre joueur.
+- **Final Boss** : la partie marque la mission la plus dure qu'elle a
+  piochée. Réussissez-la pour gagner.
+- **Missionsanity** : réussissez une part des missions, dans n'importe quel
+  ordre.
 
-## Quels items peuvent se trouver dans le monde d'un autre joueur ?
+`medal_on_clear` met une Australium Medal sur chaque mission réussie.
+L'objectif compte alors les médailles que vous avez, donc un `!collect` d'un
+autre joueur ne peut pas terminer votre partie à votre place.
 
-Tous : les tickets de mission, les classes de mercenaires, l'emplacement
-d'équipement progressif, les améliorations d'armes, les liasses d'argent et
-les pièges. Les médailles en australium font exception, et seule une partie
-avec `medal_on_clear` en contient.
+## Quels objets peuvent être dans le monde d'un autre joueur ?
 
-Un piège a un effet négatif. `trap_percentage` décide combien la partie en
-contient, et il vaut zéro par défaut. Le seul qui existe arrose toute l'équipe
-de Jarate pendant dix secondes. Un piège qui arrive entre deux vagues attend
-la suivante.
+Tous : les tickets de mission, les classes, les emplacements d'arme, les bonus
+d'arme, les paquets de crédits et les pièges. Seules les Australium Medals
+restent dans votre propre monde.
 
-## À quoi ressemble l'item d'un autre monde dans Mann vs Machine ?
+Un piège a un mauvais effet. `trap_percentage` décide combien la partie en
+contient, un pour cent par défaut. Le seul piège pour l'instant couvre toute
+l'équipe de Jarate pendant dix secondes. Un piège qui arrive entre deux
+vagues attend la suivante.
 
-Le serveur écrit l'item dans le chat. Il n'y a pas de modèle pour l'item d'un
-autre joueur. Le plugin n'arrête pas une vague pour en montrer un.
+## À quoi ressemble l'objet d'un autre monde dans Mann vs Machine ?
 
-## Dois-je installer quelque chose ?
+Le serveur écrit l'objet dans le chat. Il n'a pas de modèle, et le plugin
+n'arrête jamais une vague pour en montrer un.
 
-Non. Le randomizer reste sur le serveur. Un plugin SourceMod lit la partie.
-Un processus bridge parle au serveur Archipelago. Connectez-vous avec un
-client Team Fortress 2 standard.
+## Dois-je installer quelque chose ?
 
-L'hébergeur, lui, a plus de travail. Lisez le guide d'installation.
+Non. Le randomizer reste sur le serveur. Connectez-vous avec un client Team
+Fortress 2 normal.
 
-## Une remarque sur le slot
+L'hébergeur installe le serveur. Lisez le guide d'installation.
 
-Un seul slot Archipelago couvre le serveur entier. Tous les joueurs partagent
+## Un slot pour tout le serveur
+
+Un seul slot Archipelago couvre tout le serveur. Tout le monde dessus partage
 les mêmes classes, emplacements et missions.
 
-Valve équilibre Mann vs Machine pour une équipe de six. Un slot par joueur
-laisserait un joueur sans arme principale et un autre sans arme de mêlée.
+Valve calibre Mann vs Machine pour une équipe de six. Avec un slot par joueur,
+un joueur n'a pas d'arme primaire et un autre n'a pas d'arme de mêlée.

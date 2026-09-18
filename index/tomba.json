@@ -228,6 +228,21 @@
       "title": "Tomba! APWorld 1.5.7",
       "version_simple": "1.5.7",
       "world_version": "1.5.7"
+    },
+    "v1.5.8": {
+      "created_at": "2026-09-18T13:54:02Z",
+      "description": "This release is mostly focussed on ER (entrance randomization): It brings various stability fixes to prevent desynchronization with the various randomized entrances.\r\n\r\n> [!WARNING]\r\n> The entrance randomization feature is a higly unstable option right now. Any issues should be reported on this project tracker page: https://github.com/T4g1/ArchipelagoTomba/issues\r\n\r\n---\r\n\r\n## \u2728 What's New\r\n\r\n### \ud83d\udc1b Bug Fixes\r\n* Queue event actions so its not done too soon and overriden by the game's code: Fix A Drink For Grownup not being forced clear from the start\r\n* Removed Ol' Pond entrance from randomized entrances to allow clearing the Take me home event\r\n* Removed flower tower entrance from randomized entrances to avoid softlock with flower tears\r\n* Typo in Death Fuit missing an R\r\n* Better transition updates handling: The updates are now handled at first frame of being out of loading. Going in inventory reloads the transitions too and leaving boss fights also updates them\r\n* Yan Father giving the lunch box location was no longer working\r\n* Removed Lava Caves exits from randomized entrances to avoid glitch when getting there before having purified it.\r\n* Fix being killed for some reason when going to Stormy Mountains: Issue in transition being modified\r\n* Fix Baccus Door not unlocked as it should because the change was overwritten by the game being loaded\r\n* Clock Tower cutscene causes randomization to be overriden by original destination\r\n* Clear the fog event was never cleared upon entering the 100 YOM's hut due to game state never being out of dialog\r\n* Blue Powder and Healing Mushrooms no longer dispatched as they should\r\n* Masakari River is no longer randomized except for the Old Tree Hill\r\n* Clear the Fog and Furious Tornado are no longer randomized in entrance randomization runs\r\n* Removes rewards and notifications for event that are force cleared in entrance randomization mode\r\n* Clear the Fog is now cleared in ER but the furious tornado is still accessible at the start of the run as the Fog can't be removed dynamically yet\r\n* Underground prison removed from ER pool to avoid softlocks\r\n* Fix issue where Saving/Loading the game would reset ER\r\n\r\n---\r\n\r\n## \ud83d\udd27 Installation\r\n1. Download the source code or the `.apworld` file.\r\n2. Drop it into your Archipelago `custom_worlds/` directory.",
+      "download_url": "https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.5.8/tomba.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c99e2610ec5f673a11c177a42d98ac7c0fb0f425d6e9c503964164b3fe0573a4",
+      "html_url": "https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.8",
+      "minimum_ap_version": "0.6.7",
+      "size": 4066225,
+      "source_url": "https://api.github.com/repos/T4g1/ArchipelagoTomba",
+      "tag": "v1.5.8",
+      "title": "Tomba! APWorld 1.5.8",
+      "version_simple": "1.5.8",
+      "world_version": "1.5.8"
     }
   }
 }

@@ -4,7 +4,7 @@ beat.
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/rha-v1.0.1/rhythm_heaven_advance.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/rha-v1.0.2/rhythm_heaven_advance.apworld">Latest Version (1.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
