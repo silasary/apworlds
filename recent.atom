@@ -2,214 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-19T00:21:25.909171+00:00</updated>
+  <updated>2026-09-19T06:20:03.162731+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.3</id>
-    <title>Pokemon FireRed and LeafGreen v1.1.3</title>
-    <updated>2026-09-16T19:20:02+00:00</updated>
-    <author>
-      <name>Vyneras</name>
-    </author>
-    <content>ROM CHECKSUM: `00939B09`&#13;
-&#13;
-[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.1.3/worlds/pokemon_frlg/docs/setup_en.md)&#13;
-[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.1.3/worlds/pokemon_frlg/docs/rom%20changes.md)&#13;
-&#13;
-**Bug Fixes**&#13;
-- Fixed `fly_destination_plando` being completely ignored when randomizing fly destinations&#13;
-- Fixed ER generation failing excessively with certain settings&#13;
-- Fixed UT failing to load the Poptracker pack with some settings (@siv-v )&#13;
-</content>
-    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.1</id>
-    <title>Team Fortress 2 Mann vs Machine v1.16.1</title>
-    <updated>2026-09-16T20:09:03+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Weapon slots, found in any order
-
-- **Weapon slots per class is now three ways, not two.** Off is one progressive
-  item for everybody. Progressive is what v1.16.0 shipped: an item per class,
-  opening that class's slots in its own order. **Any order** is the same
-  eighteen slots as items that name them, found in whatever order the
-  multiworld puts them in, so a Scout can find his melee before his secondary.
-- Safe because the slot a class is played with still comes free with the class:
-  the Medigun for a Medic, the Knife for a Spy. Nobody is left holding only
-  their worst weapon.
-- The items read as what they are: "Spy Revolver Slot" in somebody else's
-  spoiler log, rather than a progressive item nobody outside the run can place.
-- Same eighteen items either way, so a run needs no more room for them than it
-  did. A yaml saying `true` still means progressive.
-
-### Fixed
-
-- A mission whose file this server does not have is said so and skipped, rather
-  than loading its map and sitting on wave 0 for ever. TF2 ignores a mission
-  file it cannot find and keeps the map's own, so a run that drew a community
-  mission without the pack that carries it stopped dead with nothing saying
-  why. `!missions` marks those `[not installed]`.
-
-### The bots have names you choose
-
-- **A Names section on the Bots page.** The bots draw from a pool of names as
-  they take their seats, and the pool is yours: add your own, and leave out any
-  of the ones this launcher ships. The list is kept as what you changed rather
-  than as a copy, so names added in a later release still reach you.
-- It works the same in the Docker stack, through `SRCDS_BOT_NAMES_EXCLUDED` and
-  `SRCDS_BOT_NAMES_ADDED` in `.env`.
-- **A name for a seat.** Seat 3 can be called Gravel Pit Gary every run: the bot
-  that sits there is given the name instead of drawing one. The rest of the
-  seats keep drawing.
-- Renaming a seat costs the team nothing. The bots are renamed where they stand,
-  rather than rebuilt: a new team would lose the upgrades it had bought, which
-  is a steep price for a change of name. Bots at 0.16.0.
-- The pool itself is read when a map starts, so adding or removing a name
-  reaches the bots on the next mission.
-
-### Fixed
-
-- In the Docker stack the bots played stock weapons whatever the admin page
-  said. The loadouts reached `.env` and stopped there: nothing wrote the file
-  the mod reads, and nothing turned on the setting that makes it read one. A
-  loadout built on the Loadouts page was also forgotten at the next restart,
-  because `.env` is the whole of what the page remembers and the built ones
-  were never written to it.
-- A team saved on the admin page was forgotten the same way, for the same
-  reason.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.16.0...v1.16.1
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/Yjg2NmNlMDA1OGNhM2JmODkwNWNlMTYxNzI0NDNkZDk6MTc4OTU4OTc0MQ==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ODAyODkyNDFhNjhlYTBiYTFkZGExMzE0MmZmODk1ZTc6MTc4OTU4OTc0Mw==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03l</id>
-    <title>Cuphead v0.2.20021110</title>
-    <updated>2026-09-16T20:53:05+00:00</updated>
-    <author>
-      <name>JKLeckr</name>
-    </author>
-    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
-&#13;
-### Revision&#13;
-&#13;
-This revision updates the setup doc in the APWorld. The webhosts and the people viewing them will mainly see these changes.&#13;
-</content>
-    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03l"/>
-  </entry>
   <entry>
     <id>https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.9</id>
     <title>Modded Minecraft v3.0.9</title>
@@ -768,7 +565,7 @@ Delete the old Portal2Archipelago mod folder and all it's contents and replace i
   </entry>
   <entry>
     <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.4</id>
-    <title>Laika: Aged Through Blood v0.1.0r2</title>
+    <title>Laika: Aged Through Blood v0.1.0r3</title>
     <updated>2026-09-17T19:24:12+00:00</updated>
     <author>
       <name>Seras</name>
@@ -1472,7 +1269,7 @@ Free code signing for open source projects, provided by
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `73759e844065dcf1a584c7da3f96c7087a9cfde3`.
+Built from `f40022e4d81769284058ac0bc4439e9f17bda759`.
 
 ## Downloads
 
@@ -1481,6 +1278,7 @@ Built from `73759e844065dcf1a584c7da3f96c7087a9cfde3`.
 
 ## Since v1.17.2
 
+- fix(plugin): Windows signatures for 13 hooks that only had Linux symbols
 - feat(missions): a server mod is off, needed, or always, and SigMod returns to Windows
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
@@ -1779,5 +1577,92 @@ v2.2 contains *way* more than originally planned for it. It transitioned from "t
 &#13;
 - Fixed logic bug to properly prevent access into the Flutter if the player doesn't have the Red refractor.</content>
     <link href="https://github.com/functorial/MMLAP/releases/tag/v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2</id>
+    <title>IslesOfSeaAndSky v2.1.1r2</title>
+    <updated>2026-09-19T01:05:28+00:00</updated>
+    <author>
+      <name>KimDelicious</name>
+    </author>
+    <author>
+      <name>Angrevol</name>
+    </author>
+    <author>
+      <name>Woli</name>
+    </author>
+    <author>
+      <name>Cuberyl</name>
+    </author>
+    <content>Fixes:&#13;
+- Fixed AP mod not working on Linux (hopefully)&#13;
+&#13;
+Logic Fixes:&#13;
+- Fixed an issue with Stony Cliffs B4 logic not requiring Earth Elementals&#13;
+- Fixed Sea Nunatak B0 Pyramidion not requiring Ancient Rune Stone </content>
+    <link href="https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.3</id>
+    <title>Starship Titanic v0.2.3</title>
+    <updated>2026-09-19T01:40:53+00:00</updated>
+    <author>
+      <name>rescheer</name>
+    </author>
+    <content># v0.2.3 (Unstable)&#13;
+Bug fix for client only. .apworld is unchanged. Compatible with existing seeds.&#13;
+## Fixes&#13;
+- Seed detection was writing the wrong size data into the save file. The game ignored it on load, which caused the client to assume any loaded save was a fresh save.&#13;
+## Changes&#13;
+- none&#13;
+## Known Issues in this release&#13;
+- Cosmetic issues with items in the world sometimes&#13;
+&#13;
+## General Tips&#13;
+- Ctrl+C opens the cheat menu, which allows teleporting around the ship. This shouldn't cause any major issues, but I would be careful spawning items, because that may get messy.&#13;
+- No visual tracker yet, but for now I highly recommend Universal Tracker to see in-logic checks&#13;
+&#13;
+Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
+    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Temperz87/SUPERHOT_MCD_Archipelago/releases/tag/0.01</id>
+    <title>SUPERHOT: MIND CONTROL DELETE v0.1</title>
+    <updated>2026-09-19T02:51:28+00:00</updated>
+    <author>
+      <name>Temperz87</name>
+    </author>
+    <content># SUPERHOT: MIND CONTROL DELETE ARCHIPELAGO 0.01 Prerelease&#13;
+&#13;
+## Changelog&#13;
+- Added deathlink&#13;
+- Made the HACK unlock view show what actually got unlocked&#13;
+- Added a GUI for connecting (accessible in the settings menu)&#13;
+- Stopped the CORE unlock view from ever appearing&#13;
+- Fixed some levels not unlocking the correct paths&#13;
+&#13;
+## Requirements&#13;
+[BepInEx x86](https://github.com/BepInEx/BepInEx/releases/tag/5.4.23.5), verified to work with version 5.4.23.5. NOTE: Most SUPERHOT mods use MelonLoader, however this mod is not compatible with MelonLoader at the moment, however a [tool exists to try and resolves this](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard). I have not verified this tool&#13;
+&#13;
+## Install guide&#13;
+- Client: Follow the [BepInEx install guide](https://docs.bepinex.dev/articles/user_guide/installation/index.html), then move the folder listed in the zip under plugins into BepInEx's plugins.&#13;
+- [APWorld install guide](https://archipelago.gg/tutorial/Archipelago/setup_en)&#13;
+&#13;
+For usage on this mod on this mod, please refer to the [README](https://github.com/Temperz87/SUPERHOT_MCD_Archipelago) on the repositories main page.&#13;
+&#13;
+## Known bugs&#13;
+If you find any bugs that are not listed here, please report them in the [SHMCD thread in the Archipelago discord](https://discord.com/channels/731205301247803413/1544356897958658059).&#13;
+- CACHE levels do not display outgoing edges when they have not been completed yet&#13;
+- The discs in CACHE levels do not report what hacks you unlock, only what hack the level would unlock if the game was not randomized&#13;
+- Nodes 1A, 1B, and 1C will always appear on the map, even if they are not unreachable&#13;
+- Disconnection from a multiworld will cause unintended side effects&#13;
+- The hack unlock view will pop up, even if nothing got unlocked&#13;
+&#13;
+&gt; [!NOTE]&#13;
+&gt; This mod natively works on Linux using `Proton Hotfix`, and following [this guide](https://docs.bepinex.dev/articles/advanced/proton_wine.html) to add `winhttp` to your default wineprefix&#13;
+&#13;
+&gt; [!WARNING]&#13;
+&gt; This mod generates it's own save files in the save directory as the .dll, and does not dip into the main save file at all. However, I take no responsibility if your save file gets somehow deleted or altered.</content>
+    <link href="https://github.com/Temperz87/SUPERHOT_MCD_Archipelago/releases/tag/0.01"/>
   </entry>
 </feed>
