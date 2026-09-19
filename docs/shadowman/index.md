@@ -8,7 +8,7 @@ reports it to the server (see client.py&#x27;s _goal_watcher_loop).
 
 
 ## Downloads
-- <a href="https://github.com/bropacman/shadow-man-remastered-ap-world/releases/download/v0.1.1/shadowman.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/bropacman/shadow-man-remastered-ap-world/releases/download/v0.1.3/shadowman.apworld">Latest Version (0.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

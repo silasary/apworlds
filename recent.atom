@@ -2,232 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-18T18:22:15.017741+00:00</updated>
+  <updated>2026-09-19T00:21:25.909171+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.6.0</id>
-    <title>Stick Ranger v1.6.0</title>
-    <updated>2026-09-16T12:03:58+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content>## Installation
-
--   Download the APworld for Stick Ranger
--   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
--   Generate a yaml or download the one in here
--   Customize the yaml and put it in the /players folder inside Archipelago
--   Generate a game
--   Connect to and play the game [here](https://kryen112.github.io/)
-
-## Heads up
-
--   **Requires Archipelago 0.6.7 or newer.** The apworld now ships the
-    `archipelago.json` manifest that Archipelago 0.7.0 will require, which also
-    clears the "Invalid or missing manifest file" warning on generation.
--   **Regenerate your yaml.** The five "Classes required for ..." options changed
-    meaning: they now count your starting class, so the range is 0-8 and a value
-    of 1 means "no extra classes needed". An old yaml still generates, it just
-    asks for one class fewer than it used to.
-
-## Changes
-
-### APWorld
-
--   Volcano and Mountaintop no longer forget to require their own stage unlock.
-    Generation was free to place "Unlock Volcano" inside Volcano, which made the
-    seed impossible.
--   With Class Randomizer off, the class requirements are now sent to the client
-    as 0. They were sent raw, so the client demanded 2-6 classes you could never
-    get and every boss stage stayed out of logic forever.
--   Class requirements are clamped so a later boss never asks for fewer classes
-    than an earlier one, and the clamped values are what the client receives.
--   Goal-based location exclusion now works. It compared location names against
-    item names, so it never excluded anything.
--   Packaged with Archipelago's own "Build APWorlds" component: manifest
-    included, no stale __pycache__ in the archive (98 KB -&gt; 30 KB).
--   Rewritten to current Archipelago world conventions, with item and location
-    name groups and a grouped player-options page.
--   Real logic tests plus CI on every push.
-
-### Client
-
--   The world map's stage colours now match Archipelago's logic. Six things were
-    wrong:
-    -   tallies counted stages **beaten** instead of unlocks **held**;
-    -   the town/boss/goal stage lists never matched, so Castle, Submarine
-        Shrine, Pyramid and Mountaintop counted as ordinary region stages;
-    -   Opening Street counted towards the Castle gate despite having no unlock;
-    -   region gates hung off "boss beaten" instead of that boss's own
-        requirements, so beating a boss early opened the next region;
-    -   boss gates never required their own stage unlock;
-    -   the unlocked-class list grew on every reconnect, so class gates were
-        effectively always satisfied.
--   A stage dot no longer inherits the previous stage's colour.
--   archipelago.js 2.0.4 -&gt; 2.1.0, vite 6 -&gt; 8.
-</content>
-    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.1</id>
-    <title>Pokemon Crystal Prerelease v1.31.0</title>
-    <updated>2026-09-16T13:17:04+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## Features&#13;
-- New phone traps by @snowflav-goob, @f-raZ0R and myself&#13;
-- Add Surf block option to Route 12 (thanks @snowflav-goob)&#13;
-- Add shared wild encounters option, this lets multiple slots in the multiworld have the same wild encounters&#13;
-- Using Rare Candies or vitamins will now ask how many if you can use more than one&#13;
-- Intermediate levels are now skipped when levelling up&#13;
-- All balls are now allowed in the Pokecenter 2F shop&#13;
-- Add a location group for Kanto locations&#13;
-- Add extended hint data for ER (thanks @snowflav-goob)&#13;
-- Add fly destination plando (thanks @snowflav-goob)&#13;
-- Add evolution level as an option to force fully evolved, this will evolve trainer Pokemon at their usual evolution level&#13;
-- The lucky number show now shows you the winning IDs for the seed&#13;
-- Sage Li is now a possible trainersanity location&#13;
-- Add base stats evolution mode option, this allows you to specify if randomized evolutions should be allowed to have decreasing stats&#13;
-- :3&#13;
-&#13;
-## Bug Fixes&#13;
-- Fix item sounds for trainer rematch items&#13;
-- Fix UT glitched logic for Celebi&#13;
-- Fix E4 skip logically ignoring the E4 badge check&#13;
-- Fix exp values above 65535 granting very small amounts of exp&#13;
-- Fix the EXPN Card location not logically requiring power restored when remote items were enabled&#13;
-- Fix partial save file corruption if your first ever save was not through the start menu&#13;
-- Evolution items are now only progression if they are logically required&#13;
-- Fix being able to buffer an input and move between the auto HM script and the wall open script in the Aerodactyl chamber&#13;
-- Fix trainer rematch items being permanently lost if the bag was full&#13;
-- Phone traps and deathlinks will now trigger immediately, you no longer need to take a step&#13;
-- Fix a game startup crash if too many items are added to start inventory, the APWorld will now refuse to generate if you provide too many&#13;
-- Fix invalid traplink packages crashing the client</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.7.0</id>
-    <title>Stick Ranger v1.7.0</title>
-    <updated>2026-09-16T17:39:19+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content>## Installation
-
--   Download the APworld for Stick Ranger
--   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
--   Generate a yaml or download the one in here
--   Customize the yaml and put it in the /players folder inside Archipelago
--   Generate a game
--   Connect to and play the game [here](https://kryen112.github.io/)
-
-## Heads up
-
--   **Requires Archipelago 0.6.7 or newer.** The apworld now ships the
-    `archipelago.json` manifest that Archipelago 0.7.0 will require, which also
-    clears the "Invalid or missing manifest file" warning on generation.
--   **Regenerate your yaml.** Two options changed meaning since 1.5.0:
-    -   `traps` now takes `none / 5 / 10 / 20 / 50 / 100`. The old `some`,
-        `half`, `most` and `all` are gone, so an old yaml fails generation with
-        an unknown-value error rather than silently doing something different.
-    -   the five "Classes required for ..." options now count your starting
-        class, so the range is 0-8 and 1 means "no extra classes needed".
--   Item names are now capitalised and carry their tier, e.g. `lightsaber` is
-    `Lightsaber 2`. If your yaml names items in `start_inventory` or
-    `local_items`, update them.
-
-## New options
-
--   **Shop Checks** — buying each of the 462 shop items for the first time is a
-    check. The shop shows an Archipelago logo until you have collected it, and
-    the real item afterwards. Buying drops the logo on the floor; leave town
-    without picking it up and the check does not count (the gold is still spent).
--   **Progressive Shop** — the shop's stock is opened by 32 Progressive Shop
-    items instead of by beating stages, in every town rather than just the first.
--   **Free Respec** — the Forget Tree is always free, not only with Class
-    Randomizer on.
-
-## Changes
-
-### APWorld
-
--   Volcano and Mountaintop no longer forget to require their own stage unlock.
-    Generation was free to place "Unlock Volcano" inside Volcano, which made the
-    seed impossible.
--   With Class Randomizer off, the class requirements are now sent to the client
-    as 0. They were sent raw, so the client demanded 2-6 classes you could never
-    get and every boss stage stayed out of logic forever.
--   Class requirements are clamped so a later boss never asks for fewer classes
-    than an earlier one, and the clamped values are what the client receives.
--   The boss requirements rolled at generation are handed back to Universal
-    Tracker, so the tracker stops rolling its own numbers and disagreeing with
-    the seed about what is in logic.
--   Four lightsabers shared one name, and the item table is keyed by name, so
-    three of them could never be created or sent. Names now carry their tier.
--   Goal-based location exclusion now works. It compared location names against
-    item names, so it never excluded anything.
--   Packaged with Archipelago's own "Build APWorlds" component: manifest
-    included, no stale `__pycache__` in the archive.
--   Rewritten to current Archipelago world conventions, with item and location
-    name groups and a grouped player-options page.
-
-### Client
-
--   The world map's stage colours now match Archipelago's logic. Six things were
-    wrong:
-    -   tallies counted stages **beaten** instead of unlocks **held**;
-    -   the town/boss/goal stage lists never matched, so Castle, Submarine
-        Shrine, Pyramid and Mountaintop counted as ordinary region stages;
-    -   Opening Street counted towards the Castle gate despite having no unlock;
-    -   region gates hung off "boss beaten" instead of that boss's own
-        requirements, so beating a boss early opened the next region;
-    -   boss gates never required their own stage unlock;
-    -   the unlocked-class list grew on every reconnect, so class gates were
-        effectively always satisfied.
-
-    If you previously saw Mountaintop and Volcano sitting yellow while Universal
-    Tracker disagreed, or Submarine Shrine in logic while Submarine 4 was not,
-    those should be gone. Please report it if you still see either.
--   **Level 99 is reachable again.** The guard that stops a kill granting two
-    levels assumed the XP curve continued past level 98, and capped the team at
-    4,949,999 when reaching 99 needs 9,999,999.
--   **Town is no longer a softlock.** Reviving required someone already standing,
-    leaving town needs a living ranger to walk to the sign, and Game Over only
-    restores LP inside a stage — so a party wiped in town by the Kill a Ranger
-    trap was stuck for good. A wiped party can revive now, free if it cannot pay.
--   Item names in the message log are coloured by flag bits, so an item that is
-    both progression and useful no longer renders as filler.
--   The Gold Medal multiplies the gold multiplier instead of being added to it:
-    5x with a +100% medal is 10x, not 6x.
--   The Bronze Medal raises the AP check drop rate as well as normal loot.
--   The spawn-enemies trap no longer spawns diggers, which could burrow away
-    unkillable.
--   The Forget Tree is genuinely free with Class Randomizer on; it charged $1.
--   Connection details are remembered between sessions.
--   Mouse and touch handlers use `addEventListener`, so browser extensions that
-    assign `document.on*` can no longer break the game. Thanks to
-    **SunsetQuasar** ([#1](https://github.com/Kryen112/Kryen112.github.io/pull/1)).
--   archipelago.js 2.0.4 -&gt; 2.1.0, vite 6 -&gt; 8.
-</content>
-    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/blitzashspear/ap-yhtwtg/releases/tag/release-1.1.0</id>
-    <title>You Have to Win the Game v1.1.0</title>
-    <updated>2026-09-16T17:45:49+00:00</updated>
-    <author>
-      <name>blitzashspear</name>
-    </author>
-    <content>UT should detect when you have all of your letters now.&#13;
-I straight up forgot to add some commas in the password list. that has been fixed.</content>
-    <link href="https://github.com/blitzashspear/ap-yhtwtg/releases/tag/release-1.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.3</id>
     <title>Pokemon FireRed and LeafGreen v1.1.3</title>
@@ -989,7 +768,7 @@ Delete the old Portal2Archipelago mod folder and all it's contents and replace i
   </entry>
   <entry>
     <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.4</id>
-    <title>Laika: Aged Through Blood v0.1.0r3</title>
+    <title>Laika: Aged Through Blood v0.1.0r2</title>
     <updated>2026-09-17T19:24:12+00:00</updated>
     <author>
       <name>Seras</name>
@@ -1625,6 +1404,22 @@ Free code signing for open source projects, provided by
     <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.8"/>
   </entry>
   <entry>
+    <id>https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.6</id>
+    <title>League of Legends v0.2.6</title>
+    <updated>2026-09-18T14:45:34+00:00</updated>
+    <author>
+      <name>kbab</name>
+    </author>
+    <content>### Features&#13;
+- Added support for Archipelago’s URI launch feature. The Archipelago Launcher can now offer the LoL Client when launching from a room link.&#13;
+- Added a public League of Legends setup guide to the repo.&#13;
+###  Bugfixes&#13;
+- Fixed the Connector crashing when non-champion items appeared in the received item list.&#13;
+- Fixed the tracked teammates list resetting to the top while scrolling.&#13;
+- Fixed received items failing to be written after disconnecting and reconnecting to a server. (thanks to @Neverified for the fix proposition)</content>
+    <link href="https://github.com/kbab13reel/Archipelago/releases/tag/lol_0.2.6"/>
+  </entry>
+  <entry>
     <id>https://github.com/TheLX5/Archipelago/releases/tag/tengoku-v1.0.3</id>
     <title>Rhythm Tengoku v1.0.3</title>
     <updated>2026-09-18T15:45:17+00:00</updated>
@@ -1677,7 +1472,7 @@ Free code signing for open source projects, provided by
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `fd4dd77a9a666bd13ed6796e840fbe06ffff3cf3`.
+Built from `73759e844065dcf1a584c7da3f96c7087a9cfde3`.
 
 ## Downloads
 
@@ -1686,6 +1481,7 @@ Built from `fd4dd77a9a666bd13ed6796e840fbe06ffff3cf3`.
 
 ## Since v1.17.2
 
+- feat(missions): a server mod is off, needed, or always, and SigMod returns to Windows
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
@@ -1825,5 +1621,163 @@ Free code signing for open source projects, provided by
 - [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZThjOTZkY2I5OWJmNjc3NTcxMGRiNjA4ZmIyM2MyOTA6MTc4OTc1MzIyNA==/detection)
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.1.1</id>
+    <title>Taskipelago v1.1.1</title>
+    <updated>2026-09-18T18:41:25+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>*One client to rule them all... and also I fixed the bug with item count syntax*&#13;
+&#13;
+Quick bug fix patch because * syntax wasn't supported for duplicate items.&#13;
+&#13;
+## What's new (v1.1.0)&#13;
+* One unified web client that hosts itself from the apworld, or is hosted at the [usual web address](https://barretg.github.io/Taskipelago/web-client/).&#13;
+* Hints tab&#13;
+* Deathlink alerts with noises that can be turned on and off&#13;
+* Deathlink lock mode&#13;
+* Deathlink task rows&#13;
+* Item filtering on items tab&#13;
+* Find/replace on YAML Generator&#13;
+* Renaming something optionally updates all references for your convenience&#13;
+* Reordering of tasks/items is now supported&#13;
+* Progressive groups now have colors tied to them&#13;
+* Bingo now generates filler if no items are listed&#13;
+* Fixed case where names with trailing special characters made things a little funky&#13;
+&#13;
+Note: should be fully backwards compatible with worlds generated at v1.0.2. Also Universal Tracker is still incompatible.</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.6</id>
+    <title>Hollow Knight: Silksong v0.4.6</title>
+    <updated>2026-09-18T20:18:01+00:00</updated>
+    <author>
+      <name>BatAtVideoGames</name>
+    </author>
+    <content>Probably the most massive update in terms of logic, also lots of other new randomization options and fixes&#13;
+**Already started runs do not work if you update. You'll either have to start a new seed or wait with updating until old one is done**&#13;
+(Also as usual if you like what I do and wann [buy me a coffee](https://streamlabs.com/batatvideogames/tip) I'd appreciate it)&#13;
+&#13;
+## Changelog &#13;
+&#13;
+### Big Changes&#13;
+&#13;
+- **Massive logic overhaul, 794 of 863 locations now have logic and improved graphs**&#13;
+- Old Hearts rando option added (conjoined hearts remains vanilla until verdania is mapped)&#13;
+- Hermit Soul, Maiden Soul and Seeker Soul rando option added&#13;
+- Eva and her 5 rewards are now options (for crest slot rando it does in fact depend on how many of those you get)&#13;
+- Bellshrine-sanity: the shrine doors are closed/open not depending on if you hit the lever but if you own the respective bell item&#13;
+- Fixed Diving Bell progression, the Shamans at the beginning of Act 3 properly give the quest needed&#13;
+- Complete rework of Vog hints. You buy information on how many progression items are left in an area rather than WotH/Foolish/General hints&#13;
+(they also no longer bog down multiworlds)&#13;
+- Act 2 and 3 items now in Act 1 wincon pool, Act 3 items now in pool of Act 2/Cursed wincon&#13;
+- New option to determined Silk and Soul points needed (between 0-24). This does not get rid of the other requirements needed&#13;
+- Full map has a crosshair now so people don't struggle with seeing where their cursor is&#13;
+- (by Skai) Received items now have icons that properly display what item they are rather than the generic rosary-AP symbol&#13;
+&#13;
+&#13;
+### Bugfixes / Other&#13;
+&#13;
+* Needle Phial becomes usable again when reissued for Advanced Alchemy&#13;
+* Removed Needle Phial from the Huntress’s skewered-organ logic, new games require Sting Shard or Longpin&#13;
+* Cursed Crest traps survive autosaves without saving the temporary curse permanently&#13;
+* Bellhome’s act 3 &lt;-&gt; 2 rollback prompt now blocks movement&#13;
+* "Dead" 12th Architect reactivates if Silkshot check not done&#13;
+* Added 5 missing boss-sanity checks and 3 missing wish-sanity checks&#13;
+* Removed Verdania Lake Plaque because it's missable&#13;
+* Moved Putrified Ducts Shell Shard Cache 6 onto the floor beside 7&#13;
+* Stopped randomized spool reward animations from incorrectly refilling silk&#13;
+* Fixed Choir cloaks remaining in inventory after quest completion&#13;
+* Preserved equipped tools after curing the Witch’s curse&#13;
+* Fixed Naked Trap equipping incorrect crests after reloading and blocking crafting&#13;
+* Fixed Covetous Pilgrim drops ignoring the rosary multiplier&#13;
+* Corrected progression requirements for My Missing Brother wish&#13;
+* Removed the nonexistent Whispering Vaults necklace check from new games&#13;
+* Blocked F4 during the Witch Chapel escape to prevent permanently losing access to checks&#13;
+* Fixed double-jumping while holding Sprint without Drifter’s Cloak&#13;
+* Fixed Architect’s Melody leaving the HUD hidden and pause controls disabled&#13;
+* Fixed Silk and Soul’s quest display requiring the Snare Setter location instead of the item. The caregiver also needs AP-owned Snaresetter instead of vanilla location&#13;
+  * This was supposed to be fixed in previous version. TC made it so it checks inventory during dialog (already intercepted) and then CHECKS AGAIN during the yes/no prompt&#13;
+* Fixed Grand Gate quest checklist to reflect received bells&#13;
+* Red Memory sequence gets skipped without skipping story/everbloom acquisition&#13;
+* Added Proficient Combat option&#13;
+* Added Proficient Movement option&#13;
+* Moved Shakras map marker in Hunters March to her 2nd place&#13;
+* Craw Summons couldn't be obtained if player already owned the item&#13;
+* Spelling Bee goal failed if punctuation marks were in the winning phrase&#13;
+* Fixed a super niche save desync issue only insane people would've recreated organically&#13;
+* Fixed the wish "Torment, Anguish and Misery" to have its correct name "Pain, Anguish and Misery" in its location name&#13;
+* Reduced Cursed/Naked trap timer from 120s to 90s&#13;
+* Removed "shuffle" options for rosary caches, shell shard caches, lore tablets and relics (vanilla and anywhere still work)&#13;
+* Fixed caged slab frayed rosary string and shard bundle not dropping&#13;
+* (by Sergio) Bone Bottom &lt;-&gt; Mossgrave door now opens/closes slowly instead of being permanently after opening it from Mossgrave side to not destroy the Cling Grip route</content>
+    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0-PR</id>
+    <title>Spyro: A Hero's Tail v2.2.0</title>
+    <updated>2026-09-18T21:40:35+00:00</updated>
+    <author>
+      <name>mayaxtg</name>
+    </author>
+    <author>
+      <name>ebbeaht</name>
+    </author>
+    <author>
+      <name>PhoenixAki</name>
+    </author>
+    <content># v2.2.0 (Prerelease): I Think I Like AHT Too Much...&#13;
+*Intended for use with game mod version 17 (see attachments).*&#13;
+&#13;
+v2.2 contains *way* more than originally planned for it. It transitioned from "the next few things on my mind" to "do everything I can before I feel OK with putting it down for a bit". The to-do list still isn't totally empty, so there may still be a v2.3 in the relatively near future, but I don't anticipate any more *big* updates as there really aren't many other moderate-to-big sized features left to add at this point.&#13;
+# Changelog&#13;
+## Multiple New or Redesigned/Expanded Features&#13;
+* The PAL GC version of the game is now supported by the game mod! Shoutouts to @BrinchEbsen for tons of work on the game mod in this update.&#13;
+* Logging system redesigned to be a single choice of level of detail. Warning messages from YAML issues are now always logged.&#13;
+* The randomized shop system has been moderately redesigned to take more advantage of the gem logic system introduced in v2.0.&#13;
+  - `gem_logic` is now `shop_logic` and comes in 2 forms:&#13;
+    - `ordered` works identically to `gem_logic = true`.&#13;
+    - `unordered` is a replacement for `gem_logic = false` which completely removes the situation of having all shop items in logic in sphere 1. `unordered` will instead expect you to buy shop items in order as you gain access to enough gems to do them, but will not *restrict* you from buying them in another order if desired.&#13;
+  - Also, `shop_item_count` lets you customize how many shop items you have, now separated from `key_rings`.&#13;
+* The goal system has been expanded to allow for customization of how many AHT checks you must do for each, instead of all-or-nothing. AHT is now capable of a much wider variety of seeds, and is better suited for shorter goal syncs now. 2 new types of goals were added, as well (talking to elders, and minigames). `/check_goal` was redesigned to better suit this redesign.&#13;
+* `auto_corrections` expanded to `fix_minor` and `fix_major`. Minor fixes are things that are relatively inconsequential, major have a more notable impact on the seed.&#13;
+* Added support for 4 traps (Spam Call, Reverse Controls, Gem Tax, and Damage Sparx)! The first 2 have a customizable length of time they last, and you can customize how much of the junk pool will be traps vs. filler.&#13;
+## Other Things&#13;
+- Refactored/organized significant chunks of the codebase to be more smartly designed, particularly the item creation process.&#13;
+- Client commands have slightly better error checking now. Also added `/costs` as a convenience command that outputs various costs separately from `/list_options`.&#13;
+- Made an updated logic spreadsheet which lists every region and location access rule. May or may not be useful to the average person, but it's [here](&lt;https://tinyurl.com/ahtapsheet&gt;) for those interested in the internal logic rules (also pinned in the thread).&#13;
+- Map icons now render as red = unreachable, yellow = reachable, green = checked.&#13;
+- Every location was renamed to be less verbose, and they have a new ID mapping system which makes some features *way* easier to code.&#13;
+- Partially undid the custom sorting of locations in the tracker page. Locations are now sorted first in order of vanilla game levels, then alphabetically by logical region, then alphabetically by location.&#13;
+- "Generics" filler category is now called "Shinies". Same thing, they do nothing, just treat them like little shiny trinkets.&#13;
+- Added "Sent &lt;item&gt; to &lt;player&gt;" notifications in-game. None of us have any idea why they weren't there already, either...also added a small Easter egg when you receive a specific type of item from yourself :slight_smile:&#13;
+- Did you know there's some barrels and crates in Stormy Beach you can headbash? I didn't...their gems (270 total) are added to the gem logic system now.&#13;
+- `hint_boss_rewards` now hints all boss locations, not just the breath rewards.&#13;
+- Added location groups for Light Gem doors and gadgets.&#13;
+- Fixed an inconsequential logic bug in Magma Falls Bottom.&#13;
+&#13;
+[Setup Guide](https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&amp;-FAQ)</content>
+    <link href="https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0-PR"/>
+  </entry>
+  <entry>
+    <id>https://github.com/functorial/MMLAP/releases/tag/v0.3.2</id>
+    <title>Mega Man Legends v0.3.0r2</title>
+    <updated>2026-09-18T22:19:36+00:00</updated>
+    <author>
+      <name>functorial</name>
+    </author>
+    <author>
+      <name>aztro</name>
+    </author>
+    <author>
+      <name>Uroogla</name>
+    </author>
+    <content>## Bug Fixes&#13;
+&#13;
+- Fixed logic bug to properly prevent access into the Flutter if the player doesn't have the Red refractor.</content>
+    <link href="https://github.com/functorial/MMLAP/releases/tag/v0.3.2"/>
   </entry>
 </feed>
