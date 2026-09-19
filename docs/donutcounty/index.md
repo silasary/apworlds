@@ -9,7 +9,7 @@ Oh, and the raccoon&#x27;s name is BK.
 
 
 ## Downloads
-- <a href="https://github.com/1e1001/DonutCountyAP/releases/download/v0.2.0-preview.1/donutcounty.apworld">Latest Version (0.2.0rc1)</a>
+- <a href="https://github.com/1e1001/DonutCountyAP/releases/download/v0.2.0-preview.2/donutcounty.apworld">Latest Version (0.2.0rc2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

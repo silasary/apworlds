@@ -11,6 +11,9 @@
 #### v6.0.2r2
 - <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v3hotfix2/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v3hotfix2/alttp_beta.apworld</a>
 
+#### v6.0.2r2
+- <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v5/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v5/alttp_beta.apworld</a>
+
 #### v6.0.2
 - <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v2/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v2/alttp_beta.apworld</a>
 

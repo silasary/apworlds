@@ -2,144 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-19T12:20:55.550625+00:00</updated>
+  <updated>2026-09-19T18:16:08.313116+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.3</id>
-    <title>Quake 1 v1.2.3</title>
-    <updated>2026-09-17T11:11:24+00:00</updated>
-    <author>
-      <name>Rando</name>
-    </author>
-    <content>## Changes&#13;
-- Fixed WebSocket compression compatibility&#13;
-- Added AP commands to the in-game console, including !hint and !hint_location&#13;
-- Added item and location name autocomplete when using hint or hint_location&#13;
-- Updated the Ironwail engine base&#13;
-&#13;
-## Ironwail engine base 0.8.3-dev changes:&#13;
-- Stability/rendering fixes: console-copy crashes, texture-compression crashes, a GPU buffer leak, and shader issues on NVIDIA and older AMD hardware.&#13;
-- UI improvements: map names on the level-completion screen, mod-specific key-binding menus, and better center-message readability.&#13;
-- Improved model support: MD3 replacement models, faster MD3 loading, and reduced GPU memory usage.&#13;
-- Compatibility with Quake’s 30th-anniversary update, including upstream support for Dawn of the Machine.&#13;
-- Startup control: cl_startmenu lets players choose whether the menu opens at startup.&#13;
-- Better controller support: a modifier button provides a second layer of gamepad bindings, plus PlayStation Bluetooth gyro/rumble fixes and smoother flick-stick adjustments.</content>
-    <link href="https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.0.3</id>
-    <title>Wikipelago v1.0.3</title>
-    <updated>2026-09-17T12:19:24+00:00</updated>
-    <author>
-      <name>Dreskn (continued)</name>
-    </author>
-    <author>
-      <name>Skrumptily69 (original)</name>
-    </author>
-    <content>Requires Archipelago **0.6.7** (or compatible). Web client: https://wikipelago.dreskn.fr/&#13;
-&#13;
----&#13;
-&#13;
-### Apworld / YAML&#13;
-&#13;
-- Option Creator tooltips now match the comments in the release YAML, so a launcher-generated template reads the same as this one.&#13;
-&#13;
----&#13;
-&#13;
-### Web client&#13;
-&#13;
-**Bingo**&#13;
-- Diagonal and anti-diagonal are marked with **D** / **AD** ticks.&#13;
-- Larger grids keep the same cell and font size as a 5×5. You can also click the board to enlarge it.&#13;
-&#13;
-**Journey**&#13;
-- Full screen from the Journey window or pop out into its own window.&#13;
-&#13;
-**Bug fixes**&#13;
-- Reaching the Grand Goal no longer auto-sends leftover rounds. Remaining checks follow the room **Release** setting (`!release` / auto-release). The HUD updates from Archipelago’s checked locations after a release.&#13;
-- Redirects and short titles now resolve to the real Wikipedia page name before a check is sent (e.g. `Task Scheduler` → `Windows Task Scheduler`).</content>
-    <link href="https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.0</id>
-    <title>Stick Ranger v1.8.0</title>
-    <updated>2026-09-17T13:07:07+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content>## Installation
-
--   Download the APworld for Stick Ranger
--   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
--   Generate a yaml or download the one in here
--   Customize the yaml and put it in the /players folder inside Archipelago
--   Generate a game
--   Connect to and play the game [here](https://kryen112.github.io/)
-
-## Heads up
-
--   **A game already in progress will lose its map colours.** The website updates
-    for everyone at once, and from now on the seed itself tells the client what
-    is in logic. A seed generated before 1.8.0 does not carry that, so its stages
-    show simply as unlocked or completed. Everything else keeps working, and a
-    new seed gets the colours back.
--   **Regenerate your yaml** for the new options below.
--   Requires Archipelago **0.6.7 or newer**.
-
-## New options
-
--   **Enforce Logic** — stages that are out of logic cannot be entered at all.
-    They stay on the map, greyed out, so you can still see what you hold. There
-    is no override: the run cannot be broken by accident or on purpose.
--   **Ring Link** — your gold is linked to every other Ring Link player's rings.
-    Gold you earn sends rings to the room, rings you receive become gold, and
-    spending sends a negative. **Ring Link Ratio** (default 100) sets how much
-    gold one ring is worth in both directions, because Stick Ranger's gold is
-    one to two orders of magnitude larger than the ring counts games like Sonic
-    deal in.
--   **Gold per Thrown Ring** — every ring an Angel throws pays gold. Defaults to
-    50, and goes up to 1000. Set it to 0 to turn it off. It ignores the Gold
-    Multiplier and the Gold Medal, so the number you pick is the number you get.
-    Be aware that an Angel throws about two rings a second, or seven on a quick
-    ring, and four of them at the maximum out-earns every enemy in the game.
-
-## Changes
-
-### Logic now comes from the seed
-
-The website used to carry its own copy of the apworld's rules, written by hand
-and kept in step by hand. That is what went wrong six different ways in 1.6.0.
-
-The apworld now describes its own logic and sends it with the seed, and the
-website evaluates that instead of a copy. There is no second set of rules left to
-drift. Checked by comparing 25,500 stage verdicts against Archipelago's own
-answer across 300 random item states.
-
-This is why an older seed loses its colours: it never sent a description.
-
-### APWorld
-
--   Universal Tracker gets the boss requirements the seed actually rolled, so it
-    stops rolling its own and disagreeing with the game.
--   New: Enforce Logic, Ring Link, Ring Link Ratio, Gold per Thrown Ring.
-
-### Client
-
--   Every movement of gold now goes through one place, which is what Ring Link
-    watches. What it reports is what actually happened, so a purchase you could
-    not afford or a pickup at the gold cap sends nothing.
--   Ring Link batches: gold moves constantly here, so instead of a packet per
-    change it totals up and sends at most one every five seconds. The total is
-    added up before being divided, so ten $40 gun shots count as 4 rings rather
-    than ten lots of nothing, and the remainder carries to the next send.
--   Gold arriving from Ring Link is never sent back out, so two linked Stick
-    Ranger players cannot amplify each other.
-</content>
-    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.0"/>
-  </entry>
   <entry>
     <id>https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9h</id>
     <title>Warioworld v0.1.9r2</title>
@@ -327,7 +194,7 @@ Delete the old Portal2Archipelago mod folder and all it's contents and replace i
   </entry>
   <entry>
     <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.4</id>
-    <title>Laika: Aged Through Blood v0.1.0r2</title>
+    <title>Laika: Aged Through Blood v0.1.0r3</title>
     <updated>2026-09-17T19:24:12+00:00</updated>
     <author>
       <name>Seras</name>
@@ -1031,7 +898,7 @@ Free code signing for open source projects, provided by
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `f40022e4d81769284058ac0bc4439e9f17bda759`.
+Built from `de7df720114537239a531cf2fc0dd4613d9286e0`.
 
 ## Downloads
 
@@ -1040,6 +907,7 @@ Built from `f40022e4d81769284058ac0bc4439e9f17bda759`.
 
 ## Since v1.17.2
 
+- feat(missions): the Windows SigMod row says beta, and the docs say why
 - fix(plugin): Windows signatures for 13 hooks that only had Linux symbols
 - feat(missions): a server mod is off, needed, or always, and SigMod returns to Windows
 </content>
@@ -1514,10 +1382,86 @@ Yeah that's all... 3.1.0 is coming I promise!!! (Hopefully within the next month
     </author>
     <content>- The "Butter Ability" item will no longer appear giant-sized when dropped as a reward.&#13;
 - The "Seed Bank Randomiser Trap" is no longer capable of picking repeat seeds.&#13;
+- Added additional location and item groups.&#13;
 - Logic improvements.&#13;
 - Improved generation success rate.&#13;
 &#13;
 For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
     <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.10.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.6-Hotfix</id>
+    <title>Hollow Knight: Silksong v0.4.6r2</title>
+    <updated>2026-09-19T16:38:01+00:00</updated>
+    <author>
+      <name>BatAtVideoGames</name>
+    </author>
+    <content>"There won't be any hotfix" - arrogant devs before being hit by some shnasty bugreports&#13;
+Now there won't be anything til next weekend for real no matter how severe, have fun&#13;
+&#13;
+- Greymoor → Far Fields now requires opening the shortcut from Far Fields first&#13;
+- Fixed Forebrothers appearing in logic through aforementioned unopened shortcut&#13;
+- Fixed map tracking of completed Last Judge/Phantom fights and Act 2 access&#13;
+- Fixed early Rune Rage receipt preventing First Sinner activation&#13;
+- Moved Reserve Bind’s marker to its actual reward location. Its logic remains unresolved until that room is mapped&#13;
+- Fixed Phantom’s approach and Act 1 goal logic&#13;
+- Fixed missing requirements for the second flea reward, Ruined Tool and lower Wormways checks&#13;
+- Fixed Curvesickle being rejected by the Mottled Child’s throwing challenge&#13;
+- Added Flea Brew’s Marrow caravan marker alongside its Greymoor marker. Both clear together&#13;
+- Fixed first-opening map-pin initialization and objective-marker visibility during loading&#13;
+- Fixed Bone Bottom Bellway access logic&#13;
+- Added Proficient Movement to two Songclave Flea and westward Mount Fay routes&#13;
+- Replaced UUID event names in diagnostics with readable room/event labels&#13;
+- Silk and Soul Points option now caps at 19. Higher numbers automatically clamp to 19&#13;
+     - This is until the logic for the other 6 potential quests is secure&#13;
+- Cleared unfinished Bellway arrival state when using F4 to prevent wrongwarps</content>
+    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.6-Hotfix"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v5</id>
+    <title>A Link to the Past Beta v6.0.2r2</title>
+    <updated>2026-09-19T17:23:24+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <content>- Removed an impossible puzzle solution from Ganon's Tower.&#13;
+- The Triforce room doorway now directly checks that Ganon has been defeated (unless glitches_required is no_logic), instead of requiring Master Sword, or Hammer if Swordless mode is on.&#13;
+- Fixed crashes that could occur when transforming enemies carrying active weapon sprites.&#13;
+- Improvements for Universal Tracker.&#13;
+- Might work when the core alttp world is missing now.</content>
+    <link href="https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.8</id>
+    <title>Ender Magnolia v0.1.8</title>
+    <updated>2026-09-19T17:23:40+00:00</updated>
+    <author>
+      <name>Trex</name>
+    </author>
+    <content>**Archipelago** world for **Ender Magnolia**&#13;
+&#13;
+## Update&#13;
+- Logic update&#13;
+- Added option to shuffle bosses&#13;
+- Added option to configure number of Steles requirements for Aegis Curio&#13;
+&#13;
+## Requirements&#13;
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
+- [Ender Magnolia Randomizer](https://github.com/Trexounay/EnderMagnolia.Randomizer/releases/tag/endermagnolia-v0.1.8)&#13;
+&#13;
+## Current Features&#13;
+- 340 checks&#13;
+- 2 Goals: **Ending A** **Ending B**&#13;
+- Starting Skill option (except non breaking walls weapon)&#13;
+- Shuffle relic costs&#13;
+- Progressive Aptitudes&#13;
+- Start with heal/fast travel&#13;
+- min/max chapters&#13;
+- Central Elevator Fix option&#13;
+- Starting respite&#13;
+&#13;
+## Notes&#13;
+This is an early release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
+    <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.8"/>
   </entry>
 </feed>

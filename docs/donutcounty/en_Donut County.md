@@ -16,7 +16,19 @@ The mod adds some quality-of-life settings to the menu:
 
 If you hate cutscenes, you can exit out of most levels as soon as they're completed.
 
-For the early releases of the mod, you can press `F3` to enter a debug session or open the debug menu, useful for reproducing logic bugs.
+## Debug tools
+
+For the early releases of the mod, some debug tools are available:
+
+Press `F3` while connected to open a debug menu. you can scroll or use Page Up/Down to go between the pages.
+It has your current slotdata and a list of every item/location in the game.
+
+While the debug menu is open, you can press `F4` to temporarily unlock every trash soul, but it disables the ability to collect trash locations.
+
+While the debug menu is open, you can press `F5` to label every object in the scene. This is probably not useful to users.
+
+Additionally, you can press `F3` when disconnected to start a debug session without connecting to AP.
+
 The game's built-in debug menu is also enabled, on the <code>`</code> key. This can probably do some cool things but I haven't looked into it.
 
 <!-- TODO: some more info on kinds of items/locations -->

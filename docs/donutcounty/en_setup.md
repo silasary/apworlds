@@ -22,9 +22,15 @@ Install the mod:
 2. Start the game.
 3. If the game is successfully modified, you will see a "Connect" button on the titlescreen, among other modified UI elements.
 
+Once you've installed everything it should look like this:
+
+![post-install diagram](./postinstall.png)
+
+(1) From Donut County. (2) From BepInEx. (3) From DonutCountyAP.
+
 ## Usage
 
 To connect, simply enter your connection info on the titlescreen and press "Connect".
 Once connected, you can use the level select to play the game.
 
-The mod stores an additional `randomizer.xml` save file in the game save folder, but this data is relatively small.
+The mod stores an additional `randomizer.json` save file in the game save folder, but this data is relatively small.
