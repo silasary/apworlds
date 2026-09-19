@@ -4,7 +4,7 @@
 * [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) (0.6.7 or newer)
 * [Latest version of this APWorld](https://github.com/ElectroStarz/ArchipelagoMSM/releases)
 * [Dolphin Emulator](https://dolphin-emu.org/download/?ref=btn)
-* Your ROM of Mario Sports Mix (NTSC-J (Japanese) isn't supported)
+* Your copy of Mario Sports Mix (NTSC-J (Japanese) isn't supported)
 
 
 ## How to install

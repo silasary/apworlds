@@ -2,249 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-19T06:20:03.162731+00:00</updated>
+  <updated>2026-09-19T12:20:55.550625+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.9</id>
-    <title>Modded Minecraft v3.0.9</title>
-    <updated>2026-09-17T00:45:37+00:00</updated>
-    <author>
-      <name>Stuff691734</name>
-    </author>
-    <content>added start_inventory_from_pool option to yaml.&#13;
-&#13;
-fixed issues preventing generation when using roots_unlocked = false</content>
-    <link href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.3</id>
-    <title>Chrono Trigger Rando-Dalton Imperial v0.0.3</title>
-    <updated>2026-09-17T00:58:53+00:00</updated>
-    <author>
-      <name>Anguirel86</name>
-    </author>
-    <content>## Updated to the latest version of the RDI randomizer.&#13;
-&#13;
- -  ctrando.zip package has been updated to the newest version of the rando&#13;
- - Fixes a bug with custom Lavos gauntlet bosses that could cause map corruption in unrelated maps&#13;
- - Text fixes for a recent update to add correct boss names to various dialog when bosses are randomized  &#13;
- -  Options have been regenerated to fix  a typo in the timegauge objectives option&#13;
-&#13;
-</content>
-    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.0</id>
-    <title>WarioWare, Inc. - Mega Microgame$! v1.1.0</title>
-    <updated>2026-09-17T04:39:34+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>Wario just released a shiny new update for you to play! Wahahahaha!&#13;
-# Info&#13;
-* [Info](https://thelx5.github.io/wario_ware_inc/index.html)&#13;
-* [Setup](https://thelx5.github.io/wario_ware_inc/setup.html)&#13;
-# Changes&#13;
-* Microgames now tell you which items they contain in their description&#13;
-* Added an option that allows players to start with a certain number of microgames unlocked&#13;
-* Players will **always** start with a minimum of 4 microgames unlocked&#13;
-* Added an option that allows players to exclude microgames from ever appearing&#13;
-* Added an option to select which stage will be unlocked at the start&#13;
-* Players are now able to disable the Introduction Stage&#13;
-* Allow players to disable stages completely from being added to the pool&#13;
-* Cutscenes are instantly skipped, this also includes ending cutscenes&#13;
-* Added several new location groups&#13;
-&#13;
-# Notes&#13;
-* The game UI doesn't update until you enter a stage or microgame.&#13;
-* There's _may_ be a crash (couldn't reproduce) when navigating the microgame menu. Resetting the save will fix any anomalies.</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.4-hotfix</id>
-    <title>Pokemon HGSS v0.9.0r2</title>
-    <updated>2026-09-17T05:21:09+00:00</updated>
-    <author>
-      <name>Olivier</name>
-    </author>
-    <content># Pokemon HeartGold / SoulSilver APWorld - v0.2.4-hotfix&#13;
-&#13;
-Bug-fix release on top of v0.2.4, based on playtester reports. **Compatible with games already in progress**&#13;
-&#13;
-## How to update&#13;
-&#13;
-1. Replace `pokemon_hgss.apworld` in your Archipelago `custom_worlds` folder with the one attached below.&#13;
-2. Re-open your existing `.apheartgold` file as usual. Your save is kept.&#13;
-&#13;
-- **Client fixes** apply as soon as the apworld is updated.&#13;
-- **ROM fixes** apply when you re-open your `.apheartgold` with this version.&#13;
-- **Logic fixes** only affect newly generated seeds.&#13;
-&#13;
-## Fixes&#13;
-&#13;
-### Logic (new seeds)&#13;
-- **Cliff Edge Gate no longer requires Rock Climb.** The gate between Cianwood and Route 47 is a plain walk-through: only the Secret Potion is needed, as in vanilla. Route 47, Route 48 and their checks are no longer pushed to the late game.&#13;
-- **Dead seeds through the Magnet Train.** The train also needs the Kanto Power Plant repaired, which the logic ignored (a real seed put HM03 Surf on Route 12).&#13;
-  - `magnet_train` on (default): the Power Plant counts as repaired from the start. The train works as soon as you have the Pass, and the Machine Part quest is skipped along with its TM57 location. Requires the matching client.&#13;
-  - `magnet_train` off: the train only counts once the Power Plant has really been repaired.&#13;
-- **The Copycat's Pass** now requires the Power Plant repair when `magnet_train` is off, since her Lost Item only appears after it.&#13;
-- **Bell Tower and Lugia monks.** The monks never check your bag: each one only lets you through once the NPC who hands out that wing has done so. The logic now requires talking to that NPC:&#13;
-  - HeartGold: the Radio Tower director (Goldenrod) for the Rainbow Wing, the old man in Pewter City for the Silver Wing.&#13;
-  - SoulSilver: the other way round.&#13;
-&#13;
-  Both wings are now merely useful items.&#13;
-&#13;
-### Client (games in progress included)&#13;
-- **Goal is now reported to the server**, so "release on goal" and other goal-based settings finally trigger. This covers `elite_four`, `champion_red` and `n_badges`.&#13;
-- **Vermilion Gym could become impossible** if the Thunder Badge arrived before beating Lt. Surge. The client now hides the badge while you are in Vermilion City or its gym, until Surge is beaten. If you are stuck inside the gym, walk out and back in.&#13;
-- **Whiteout sent you back to New Bark** with `randomize_start_location` before your first Pokemon Center visit. You now wake up at your starting town's Pokemon Center. This fix only works on seeds generated with this version.&#13;
-&#13;
-### ROM (re-open your .apheartgold)&#13;
-- **The Pass trade chain could break.** The Fan Club chairman refused the Lost Item if you already held a Pass, and the Copycat could stop offering her trade after your first talk.&#13;
-- **HeartGold: the Pewter City old man always gave a real Silver Wing** instead of the item placed there.&#13;
-&#13;
-## Workarounds for games in progress&#13;
-- **Stuck at a wing monk:** talk to the NPC who hands out that wing in your version (listed above), even if you already hold the wing.&#13;
-- **Stuck by the Magnet Train on an older seed:** ask the host for the missing item (`/send` or `!getitem`).</content>
-    <link href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.4-hotfix"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.2</id>
-    <title>Team Fortress 2 Mann vs Machine v1.16.2</title>
-    <updated>2026-09-17T06:04:12+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Fixed
-
-- Turning off SigMod or Community missions on the Missions page now takes their
-  missions out of the pool. Before, they stayed ticked: the pool looked full,
-  and Check Run Selection still asked for SigMod after you had turned it off.
-  If the start mission was one of them, the start goes back to Any and the
-  server boots on its default map again. By kelly-cs.
-- A mission that stayed ticked after its requirement went away can be unticked.
-  Its row used to be locked, so it could not be taken out of the pool.
-- All in the pool no longer puts community missions back while Community
-  missions is off.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* Fix mission pool toggles when SigMod or community missions turn off by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/105
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.16.1...v1.16.2
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/MjAwZGMzMDQ2OWNjZWJhODAwZGFhMTU0N2QxNmYyZDY6MTc4OTYyNTUwMg==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MjQ4NWRjYThkMmNjZjgyOGI0NzNkZTU0Mzc3OGU1YzY6MTc4OTYyNTUwNA==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.16.2"/>
-  </entry>
   <entry>
     <id>https://github.com/randomcodegen/ironwail_ap/releases/tag/1.2.3</id>
     <title>Quake 1 v1.2.3</title>
@@ -565,7 +327,7 @@ Delete the old Portal2Archipelago mod folder and all it's contents and replace i
   </entry>
   <entry>
     <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.4</id>
-    <title>Laika: Aged Through Blood v0.1.0r3</title>
+    <title>Laika: Aged Through Blood v0.1.0r2</title>
     <updated>2026-09-17T19:24:12+00:00</updated>
     <author>
       <name>Seras</name>
@@ -1516,7 +1278,7 @@ Note: should be fully backwards compatible with worlds generated at v1.0.2. Also
   </entry>
   <entry>
     <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0-PR</id>
-    <title>Spyro: A Hero's Tail v2.2.0</title>
+    <title>Spyro: A Hero's Tail v2.2.0.post2</title>
     <updated>2026-09-18T21:40:35+00:00</updated>
     <author>
       <name>mayaxtg</name>
@@ -1528,10 +1290,17 @@ Note: should be fully backwards compatible with worlds generated at v1.0.2. Also
       <name>PhoenixAki</name>
     </author>
     <content># v2.2.0 (Prerelease): I Think I Like AHT Too Much...&#13;
-*Intended for use with game mod version 17 (see attachments).*&#13;
+*Intended for use with game mod version 18 (see attachments).*&#13;
 &#13;
 v2.2 contains *way* more than originally planned for it. It transitioned from "the next few things on my mind" to "do everything I can before I feel OK with putting it down for a bit". The to-do list still isn't totally empty, so there may still be a v2.3 in the relatively near future, but I don't anticipate any more *big* updates as there really aren't many other moderate-to-big sized features left to add at this point.&#13;
 # Changelog&#13;
+## Hotfix 1 (~7:30am EDT Sept. 19th)&#13;
+* Updated game mod from v17 -&gt; v18, which contains a fix for a PAL-exclusive game-breaking bug in Gloomy Glacier (collectibles were not being tracked). Even if using NTSC, you need to update your mod to v18 to avoid the client giving a warning about incompatibility.&#13;
+* Fixed a few bugs with the in-game notifications, mainly affecting "sent \&lt;item\&gt; to \&lt;player\&gt;" messages.&#13;
+* Fixed a small typo that resulted in randomized costs for boss lairs/light gem doors/gadgets not actually being randomized.&#13;
+* Refactored the client's in-game map icon updating code to be more robust and easier to maintain.&#13;
+* Removed leftover text from the YAML referencing a scrapped feature idea.&#13;
+&#13;
 ## Multiple New or Redesigned/Expanded Features&#13;
 * The PAL GC version of the game is now supported by the game mod! Shoutouts to @BrinchEbsen for tons of work on the game mod in this update.&#13;
 * Logging system redesigned to be a single choice of level of detail. Warning messages from YAML issues are now always logged.&#13;
@@ -1626,6 +1395,39 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
     <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.3"/>
   </entry>
   <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.16</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.16</title>
+    <updated>2026-09-19T01:49:54+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.16&#13;
+&#13;
+**Branch:** main&#13;
+**Date:** 2026-09-19 11:18 UTC&#13;
+&#13;
+&lt;details&gt;&#13;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.15&lt;/strong&gt;&lt;/summary&gt;&#13;
+&#13;
+- feat(SM): Redesign of SM logic to include live patching (cdbad74b)&#13;
+&#13;
+&lt;/details&gt;&#13;
+&#13;
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.15...rac-size-matters/v0.4.16&#13;
+&#13;
+### Notes&#13;
+This release was automatically generated from the **main** branch.&#13;
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
+</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.16"/>
+  </entry>
+  <entry>
     <id>https://github.com/Temperz87/SUPERHOT_MCD_Archipelago/releases/tag/0.01</id>
     <title>SUPERHOT: MIND CONTROL DELETE v0.1</title>
     <updated>2026-09-19T02:51:28+00:00</updated>
@@ -1664,5 +1466,58 @@ If you find any bugs that are not listed here, please report them in the [SHMCD 
 &gt; [!WARNING]&#13;
 &gt; This mod generates it's own save files in the save directory as the .dll, and does not dip into the main save file at all. However, I take no responsibility if your save file gets somehow deleted or altered.</content>
     <link href="https://github.com/Temperz87/SUPERHOT_MCD_Archipelago/releases/tag/0.01"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.2</id>
+    <title>Ape Escape 2 v1.3.2</title>
+    <updated>2026-09-19T07:32:06+00:00</updated>
+    <author>
+      <name>dannybonz</name>
+    </author>
+    <content>- Added level information to data storage, enabling tab auto-switching for **[Terratoya's PopTracker Pack.](https://github.com/terratoya/ae2-poptracker-pack/releases/)**&#13;
+- "Enter The Monkey: Johnny" no longer logically requires the Water Net.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archipelago/blob/main/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.0.1</id>
+    <title>Mario Sports Mix v3.0.1</title>
+    <updated>2026-09-19T11:18:16+00:00</updated>
+    <author>
+      <name>ElectroStarz</name>
+    </author>
+    <author>
+      <name>Puffy</name>
+    </author>
+    <content>## What's Changed?&#13;
+* Fixed an issue with Party Palooza tracking&#13;
+&#13;
+Yeah that's all... 3.1.0 is coming I promise!!! (Hopefully within the next month or so, tryna get this stable enough for Ionium)</content>
+    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.09.19</id>
+    <title>Archipeladoku v2026.9.19</title>
+    <updated>2026-09-19T11:46:10+00:00</updated>
+    <author>
+      <name>Galdiuz</name>
+    </author>
+    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.09.19"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.10.1</id>
+    <title>Plants vs. Zombies: Replanted v1.10.1</title>
+    <updated>2026-09-19T12:10:43+00:00</updated>
+    <author>
+      <name>Bonzorio</name>
+    </author>
+    <content>- The "Butter Ability" item will no longer appear giant-sized when dropped as a reward.&#13;
+- The "Seed Bank Randomiser Trap" is no longer capable of picking repeat seeds.&#13;
+- Logic improvements.&#13;
+- Improved generation success rate.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.10.1"/>
   </entry>
 </feed>

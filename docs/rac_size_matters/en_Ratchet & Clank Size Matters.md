@@ -57,7 +57,7 @@ of everything specific to this game:
 |---|---|---|
 | Starting Weapons | 2 | Number of random weapons precollected at the start. |
 | Starting Gadgets | 1 | Number of random gadgets precollected at the start (1 grants the Hypershot). |
-| Random Starting Planet | Off | Off: always start on Pokitaru and Ryllus, as in vanilla. Logic: two of the seven eligible planets are chosen at random, weighted by how many locations they offer under your other settings. No Logic: the same two-planet pick, but uniformly random instead of weighted. Dreamtime, Inside Clank, and Quodrona are never candidates. |
+| Random Starting Planet | Off | Off: start on Pokitaru; Ryllus requires its own infobot. Logic: two of the seven eligible planets are chosen at random, weighted by how many locations they offer under your other settings. No Logic: the same two-planet pick, but uniformly random instead of weighted. Dreamtime, Inside Clank, and Quodrona are never candidates. |
 | Starting Bolts | 45,000 | Bolts precollected at the start. |
 | Progressive Weapons | Off | Off: weapons are individual items, leveling works as in vanilla. Manual: a single Progressive Weapon item per weapon caps how far you can level by playing. Automatic: level is set directly from Progressive Weapon items received, no need to play to level up. With Challenge Mode 1+, the 5th Progressive Weapon copy also lets a weapon climb past level 4 organically once it's actually reached level 4 — no Titan vendor purchase required (though buying it is still an equally valid, and equivalent, way to get there). |
 | Progressive Mods | Off | On: one Progressive Mod item per weapon grants mod slots in sequence, instead of each slot being its own item. |

@@ -6,6 +6,7 @@ Go ape and track down 300 cheeky monkeys in this Archipelago implementation of "
 - [PCSX2](https://pcsx2.net/)
 - [The latest `ae2.apworld` file.](https://github.com/dannybonz/ae2_archipelago/releases/latest)
 - An Ape Escape 2 ISO. The European PAL release (SCES-50885) and American NTSC release (SLUS-20685) are both compatible.
+- (Optional) [Terratoya's PopTracker Pack](https://github.com/terratoya/ae2-poptracker-pack/releases/latest)
 
 ## Installing the APWorld
 - To install the APWorld, open the Archipelago Launcher and click on "Install APWorld", then select your `ae2.apworld` file.
