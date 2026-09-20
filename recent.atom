@@ -2,61 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-20T06:21:19.330983+00:00</updated>
+  <updated>2026-09-20T12:14:10.948632+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/functorial/MMLAP/releases/tag/v0.3.1</id>
-    <title>Mega Man Legends v0.3.0r2</title>
-    <updated>2026-09-17T22:35:57+00:00</updated>
-    <author>
-      <name>functorial</name>
-    </author>
-    <author>
-      <name>aztro</name>
-    </author>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>## Bug Fixes:&#13;
-- Fixed an issue where the boat was unable to be fixed if the player entered the boat dock area before going to the worker area at Wily's Boat.&#13;
-- Fixed an issue where a third buster slot appeared upon entering Wily's Boat and dissppeared after exiting the area.&#13;
-- Fixed an issue where the "2 box ledge chest" location was empty if the player had already checked the "Main gate entrance chest" location.</content>
-    <link href="https://github.com/functorial/MMLAP/releases/tag/v0.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.16.0</id>
-    <title>Brotato v0.15.0r3</title>
-    <updated>2026-09-18T01:36:39+00:00</updated>
-    <author>
-      <name>Rampaging Hippy</name>
-    </author>
-    <content>## Added&#13;
-- New Feature: Progressive Wave Caps&#13;
-  - The game now has a cap on the highest wave that can be played from the start.&#13;
-  - A set of new items, "Progressive Wave Cap (\&lt;character\&gt;)", has been added which, when received, increases the maximum playable wave for each character.&#13;
-  - The logic for Wave Completed and Run Won locations now requires that the wave cap be greater than the wave number or 20, respectively.&#13;
-  - Controlled by a new option, `wave_caps`, which sets the number Progressive Wave Cap Increase items for each character and the increase given by each one.&#13;
-  - There are predefined values for `wave_caps`:&#13;
-    - `one`: One wave cap, all 20 waves are reachable from the start (matches previous apworld behavior).&#13;
-    - `two`: Waves 1-10 are playable from the start, waves 11-20 require a cap increase.&#13;
-    - `four`: Waves 1-5 are playable from the start, 6-10 require a single increase, 11-15 require two, 16-20 require three.&#13;
-    - `ten`: Waves 1-2 are playable from the start, 3-4 require one increase, etc.&#13;
-    - `twenty`: Every wave past wave 1 requires a cap increase.&#13;
-- Added Universal Tracker hooks to the apworld so it now uses the same characters as the actual slot.&#13;
-&#13;
-## Changed&#13;
-&#13;
-- Reduced the maximum values of some options that were unfun at larger values:&#13;
-  - `num_victories` is now 25 instead of matching the total number of characters.&#13;
-  - `num_common_crate_drops` is now 25 instead of 50.&#13;
-  - `num_legendary_crate_drops` is now 10 instead of 50.&#13;
-- The amount of wins to unlock each group of loot crate checks has been adjusted so the thresholds are evenly distributed over the number of wins needed to goal.&#13;
-  - Before, the last group could be unlocked much earlier in logic if the number of groups did not evenly divide into the number of wins needed.</content>
-    <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.16.0"/>
-  </entry>
   <entry>
     <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.09.17</id>
     <title>YARGBandHero v26.9.17</title>
@@ -822,7 +772,7 @@ Note: should be fully backwards compatible with worlds generated at v1.0.2. Also
   </entry>
   <entry>
     <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0-PR</id>
-    <title>Spyro: A Hero's Tail v2.2.0.post2</title>
+    <title>Spyro: A Hero's Tail v2.2.0.post3</title>
     <updated>2026-09-18T21:40:35+00:00</updated>
     <author>
       <name>mayaxtg</name>
@@ -838,6 +788,9 @@ Note: should be fully backwards compatible with worlds generated at v1.0.2. Also
 &#13;
 v2.2 contains *way* more than originally planned for it. It transitioned from "the next few things on my mind" to "do everything I can before I feel OK with putting it down for a bit". The to-do list still isn't totally empty, so there may still be a v2.3 in the relatively near future, but I don't anticipate any more *big* updates as there really aren't many other moderate-to-big sized features left to add at this point.&#13;
 # Changelog&#13;
+## Hotfix 2 (~2:30am EDT Sept. 20th)&#13;
+* Fixed a secondary issue relating to costs for boss lairs/light gem doors/gadgets not getting appropriately randomized/shuffled. Only the .apworld file needs to be updated for this fix (game mod and YAML are unchanged).&#13;
+&#13;
 ## Hotfix 1 (~7:30am EDT Sept. 19th)&#13;
 * Updated game mod from v17 -&gt; v18, which contains a fix for a PAL-exclusive game-breaking bug in Gloomy Glacier (collectibles were not being tracked). Even if using NTSC, you need to update your mod to v18 to avoid the client giving a warning about incompatibility.&#13;
 * Fixed a few bugs with the in-game notifications, mainly affecting "sent \&lt;item\&gt; to \&lt;player\&gt;" messages.&#13;
@@ -1356,7 +1309,7 @@ When a secret disk arrives from Archipelago the game's message box displays its 
   </entry>
   <entry>
     <id>https://github.com/TheLivingShadow97/THAWAP/releases/tag/Small-Logic-Fixes</id>
-    <title>Tony Hawk's American Wasteland v0.0.1r2</title>
+    <title>Tony Hawk's American Wasteland v0.0.1r3</title>
     <updated>2026-09-20T01:05:32+00:00</updated>
     <author>
       <name>TheLivingShadow</name>
@@ -1403,5 +1356,62 @@ Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
 &#13;
 **Full Changelog**: https://github.com/jamesbrq/GauntletLegendsAP/compare/v2.1.6...v2.1.7</content>
     <link href="https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.3.2</id>
+    <title>Pokemon Pinball Ruby &amp; Sapphire v0.3.2</title>
+    <updated>2026-09-20T07:07:07+00:00</updated>
+    <author>
+      <name>Silvris</name>
+    </author>
+    <content># Bug Fixes&#13;
+* Fixed an issue where an invalid song would make the game lock up on music shuffle.&#13;
+* Fixed an issue where the Get Arrow on the Ruby Board wouldn't increment.&#13;
+* Fixed an issue where Travel mode on the Ruby Board would display corrupted graphics and distort audio.&#13;
+* Fixed an issue where attempting to buy an extra life after having previously bought one would cause undefined behavior.&#13;
+* Attempted to make deathlink more resilient to self-sends.</content>
+    <link href="https://github.com/Silvris/Archipelago/releases/tag/pbrs_0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.9</id>
+    <title>Tomba! v1.5.9</title>
+    <updated>2026-09-20T08:02:00+00:00</updated>
+    <author>
+      <name>T4g1</name>
+    </author>
+    <author>
+      <name>bosshunter</name>
+    </author>
+    <content>This one is mostly for entrance randomization (ER) but it also brings some necessary fixes for "normal" runs so be sure to not skip this one&#13;
+&#13;
+---&#13;
+&#13;
+## ✨ What's New&#13;
+&#13;
+### 🛠️ New feature&#13;
+* **Inifinite Charity Wings**: While entrance randomization is active, the client will automatically make sure you never run out of Charity Wings in order to avoid softlocks. This is required by the Archipelago algorithm as it assumes that you can always go back to the first area of the game&#13;
+* **Multiplayer display**: The game will now display a notification when you have found items that belong to another world (#100)&#13;
+&#13;
+### 🐛 Bug Fixes&#13;
+* Fix: Baccus Lake entrance leading to vanilla location in ER&#13;
+* Fix: Haunted Mansion South to Baccus Village leading to vanilla location in ER&#13;
+* Fix: Weird slope when entering Iron Castle rooms&#13;
+* Fix: Softlock when entering underground prison for the first time&#13;
+* Fix: Regression with RetroArch communication&#13;
+* Fix: Transition from the Lake to the mansion by boat was wrongly tagged as a two way door&#13;
+* Removed the left door of the mansion beach from ER to avoid being softlock when the player does not have the pig bag anymore&#13;
+* Fix: Crystal balls location given too soon&#13;
+* Enhance game status management&#13;
+* Fix inverted doors under the Mansion on the beach&#13;
+* Various Stormy Mountains location were wrongly reported in the first part of that area eventually leading to softlock in ER&#13;
+* Fix regression in the fix for correct entrance animations&#13;
+* Fix: Clear related events from Baccus Village when it's cleared early&#13;
+&#13;
+---&#13;
+&#13;
+## 🔧 Installation&#13;
+1. Download the source code or the `.apworld` file.&#13;
+2. Drop it into your Archipelago `custom_worlds/` directory.</content>
+    <link href="https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.9"/>
   </entry>
 </feed>

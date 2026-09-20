@@ -243,6 +243,21 @@
       "title": "Tomba! APWorld 1.5.8",
       "version_simple": "1.5.8",
       "world_version": "1.5.8"
+    },
+    "v1.5.9": {
+      "created_at": "2026-09-20T08:02:00Z",
+      "description": "This one is mostly for entrance randomization (ER) but it also brings some necessary fixes for \"normal\" runs so be sure to not skip this one\r\n\r\n---\r\n\r\n## \u2728 What's New\r\n\r\n### \ud83d\udee0\ufe0f New feature\r\n* **Inifinite Charity Wings**: While entrance randomization is active, the client will automatically make sure you never run out of Charity Wings in order to avoid softlocks. This is required by the Archipelago algorithm as it assumes that you can always go back to the first area of the game\r\n* **Multiplayer display**: The game will now display a notification when you have found items that belong to another world (#100)\r\n\r\n### \ud83d\udc1b Bug Fixes\r\n* Fix: Baccus Lake entrance leading to vanilla location in ER\r\n* Fix: Haunted Mansion South to Baccus Village leading to vanilla location in ER\r\n* Fix: Weird slope when entering Iron Castle rooms\r\n* Fix: Softlock when entering underground prison for the first time\r\n* Fix: Regression with RetroArch communication\r\n* Fix: Transition from the Lake to the mansion by boat was wrongly tagged as a two way door\r\n* Removed the left door of the mansion beach from ER to avoid being softlock when the player does not have the pig bag anymore\r\n* Fix: Crystal balls location given too soon\r\n* Enhance game status management\r\n* Fix inverted doors under the Mansion on the beach\r\n* Various Stormy Mountains location were wrongly reported in the first part of that area eventually leading to softlock in ER\r\n* Fix regression in the fix for correct entrance animations\r\n* Fix: Clear related events from Baccus Village when it's cleared early\r\n\r\n---\r\n\r\n## \ud83d\udd27 Installation\r\n1. Download the source code or the `.apworld` file.\r\n2. Drop it into your Archipelago `custom_worlds/` directory.",
+      "download_url": "https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.5.9/tomba.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8b25772629d76153f174f7b716accce0ad2086bb56ae99bb378fb2248a62ead0",
+      "html_url": "https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.5.9",
+      "minimum_ap_version": "0.6.7",
+      "size": 4067818,
+      "source_url": "https://api.github.com/repos/T4g1/ArchipelagoTomba",
+      "tag": "v1.5.9",
+      "title": "Tomba! APWorld 1.5.9",
+      "version_simple": "1.5.9",
+      "world_version": "1.5.9"
     }
   }
 }

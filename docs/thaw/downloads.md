@@ -1,18 +1,18 @@
 # Tony Hawk&#x27;s American Wasteland
 
 ## Latest
-- <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Beverly-Hills/thaw.apworld">Latest Version (0.0.1r2)</a>
+- <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Small-Logic-Fixes/thaw.apworld">Latest Version (0.0.1r3)</a>
 
 ## All Versions
+
+#### v0.0.1r3
+- <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Small-Logic-Fixes/thaw.apworld">https://github.com/TheLivingShadow97/THAWAP/releases/download/Small-Logic-Fixes/thaw.apworld</a>
 
 #### v0.0.1r2
 - <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Beverly-Hills/thaw.apworld">https://github.com/TheLivingShadow97/THAWAP/releases/download/Beverly-Hills/thaw.apworld</a>
 
 #### v0.0.1r2
 - <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Downtown/Deathlink/thaw.apworld">https://github.com/TheLivingShadow97/THAWAP/releases/download/Downtown/Deathlink/thaw.apworld</a>
-
-#### v0.0.1r2
-- <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Small-Logic-Fixes/thaw.apworld">https://github.com/TheLivingShadow97/THAWAP/releases/download/Small-Logic-Fixes/thaw.apworld</a>
 
 #### v0.0.1
 - <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Latest/thaw.apworld">https://github.com/TheLivingShadow97/THAWAP/releases/download/Latest/thaw.apworld</a>

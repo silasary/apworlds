@@ -4,7 +4,7 @@ Tony Hawk&#x27;s American Wasteland is an open world skateboarding game develope
 
 
 ## Downloads
-- <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Beverly-Hills/thaw.apworld">Latest Version (0.0.1r2)</a>
+- <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Small-Logic-Fixes/thaw.apworld">Latest Version (0.0.1r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
