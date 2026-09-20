@@ -1,9 +1,12 @@
 # Dynamic Pine
 
 ## Latest
-- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/dynamicpine/v99.0.2/dynamicpine.apworld">Latest Version (99.0.2)</a>
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/dynamicpine/v99.0.3/dynamicpine.apworld">Latest Version (99.0.3)</a>
 
 ## All Versions
+
+#### v99.0.3
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/dynamicpine/v99.0.3/dynamicpine.apworld">https://github.com/Panguu/Archipelago-RaCSM/releases/download/dynamicpine/v99.0.3/dynamicpine.apworld</a>
 
 #### v99.0.2
 - <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/dynamicpine/v99.0.2/dynamicpine.apworld">https://github.com/Panguu/Archipelago-RaCSM/releases/download/dynamicpine/v99.0.2/dynamicpine.apworld</a>

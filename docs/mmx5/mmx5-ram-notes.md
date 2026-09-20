@@ -1,4 +1,4 @@
-> Research notes mirrored from the mmx5-ap-research workspace (2026-09-08).
+> Research notes mirrored from the mmx5-ap-research workspace (2026-09-19).
 > Working copies live there and are updated as addresses are confirmed;
 > re-sync this mirror when they change. No game data included.
 
@@ -174,7 +174,7 @@ Valid only during active gameplay (holds garbage in menus/transitions).
 | Address | Offset | Meaning | Status |
 |---|---|---|---|
 | `0x8009A0A2` | +0x02 | Character index (X / Zero) | ⚠️ Ghidra |
-| `0x8009A0FC` | +0x5C | **Current HP** (authoritative per Ghidra: all damage/heal paths RMW this byte; bit7 = "just damaged", 0x80 = death sentinel). ⚠️ Live experiments: naive Lua writes appeared not to stick / caused hit-loops — unresolved discrepancy (suspected overlay writer); treat as read-mostly until re-tested | ⚠️ |
+| `0x8009A0FC` | +0x5C | **Current HP** (authoritative per Ghidra: all damage/heal paths RMW this byte; bit7 = "just damaged", **`0x80` exactly = death sentinel**). ~~⚠️ naive Lua writes appeared not to stick / caused hit-loops; treat as read-mostly~~ — **WRITABLE, corrected 2026-09-19.** The shipping client has written this byte every poll since 0.7.x (the life-overflow repair, `client.py:1766`/`1806`/`3145`) and it sticks. The old hit-loop symptom is explained: **`0x80` is the only value the death check accepts** (`0x80038A88: lb $v1,0x5c($s0)` / `bne $v1,-0x80`), so writing `0` leaves the player alive at zero HP and the damage handler re-runs against it forever. Write `0x80` to kill — that is precisely what the engine's own pit kill does, hardcoded, at `0x800292CC`. **`+0x04` (`0x8009A0A4`) `== 2` is the death DETECTOR**; the sentinel lasts one frame and is invisible to a 0.5 s poll. Full route enumeration in `mmx5-ghidra-findings.md` §4.1 | ✅ disasm 2026-09-19 |
 | `0x8009A0FD` | +0x5D | Displayed health bar (chases 0xA0FC) | ✅ |
 | `0x8009A101` | +0x61 | **Mercy i-frame timer**: nonzero ⇒ contact collision skipped entirely incl. spike death. Set from table `0x80074818` (0x4B normal / 0x64 heavy), −1/frame. **God mode: pin to 2 every frame — verified working** | ✅ |
 | `0x8009A198` | +0xF8 | Knockback timer | ⚠️ Ghidra |
@@ -684,7 +684,7 @@ wanted, none yet disambiguated:
 | `0x800D1CC0` | 11 → 60 | |
 | `0x800D1CA2` | 50 → 7F | |
 | `0x800D1CBC` | 01 → 07 | Zero duel moved it 00 → 05 — looks like a progressing event id, not a boolean |
-| `0x800D1C1C` | 00 → 01 | ALSO moved across the Zero duel ⇒ **not Sigma-specific**; this is the suspected DeathLink flag and must be disambiguated before use |
+| `0x800D1C1C` | 00 → 01 | **DISAMBIGUATED 2026-09-19: it is the PLAYER-DEATH flag.** Set to 1 by the death commit (`0x80038C08`) and by both lethal-damage paths (`0x800318F4`, `0x80031B50`). It moved in these dumps because the player died during those fights, not because it marks a boss. It is a **latch, not an edge** — nothing in the death path clears it — so it corroborates a death but is a poor primary detector. For DeathLink use `+0x04` (`0x8009A0A4`) `== 2` instead; see `mmx5-ghidra-findings.md` §4.1 |
 
 **Candidate defeat markers** — bytes that changed across the Zero duel
 (dump `pre_zero_f3239321` taken at fight start, `post_zero_f3243474` right
@@ -692,7 +692,7 @@ after the kill, both still mode 0x0A so the cutscene had not yet run):
 
 | addr | change | note |
 |---|---|---|
-| `0x800D1C1C` | 00 → 01 | also the suspected DeathLink damage/death flag — disambiguate before trusting |
+| `0x800D1C1C` | 00 → 01 | **Resolved: the player-death flag** (see the row above and `mmx5-ghidra-findings.md` §4.1). Its movement here means the player died in the fight, so it is NOT a defeat marker for the boss |
 | `0x800D1C2A` | 00 → 01 | |
 | `0x800D1CB4` | 00 → 01 | |
 | `0x800D1CBC` | 00 → 05 | value 5, not a boolean — counter or id? |

@@ -51,8 +51,9 @@ the delivery journal. Existing seeds can use this bolt reward fix.
 All Keycards and All Alien Codes only add optional AP reward locations. They do not change the selected goal.
 
 
-Progressive Wrench requires a new seed. Five copies are generated when
-Ratchet is enabled: normal wrench, Fire-Bomb, Triple Wave, Crystalix, and
+Progressive Wrench is off by default; enable it via the Progressive Wrench
+option. It requires a new seed. Five copies are generated when both it and
+Ratchet are enabled: normal wrench, Fire-Bomb, Triple Wave, Crystalix, and
 Wild Burst. Tier zero blocks Ratchet's wrench input; the first copy restores
 all standard wrench attacks together. Later copies cumulatively unlock
 native mods for selection in the wrench menu. Other characters' attacks
@@ -77,7 +78,7 @@ this system; single-level tools keep their individual unlocks. Combat weapon
 XP is disabled while AP controls levels. With the option off, combat leveling
 works normally.
 
-NG+ seeds add 14 shared `Titan Vendor: <weapon>` purchase locations, excluding
+NG+ seeds add 14 shared `Vendor: <weapon>` purchase locations, excluding
 RYNO. They are recorded independently of base-weapon purchases and ownership.
 NG+ 0 generates no Titan locations and explicitly skips both native Titan
 offer lists at the loader gate. NG+ 1 and 2 enable Titan purchase checks.

@@ -1,9 +1,12 @@
 # Dredge
 
 ## Latest
-- <a href="https://github.com/alextric234/ArchipelagoDredge/releases/download/dredge_0.5.1/dredge.apworld">Latest Version (0.5.0r2)</a>
+- <a href="https://github.com/alextric234/ArchipelagoDredge/releases/download/dredge_0.6.0/dredge.apworld">Latest Version (0.6.0)</a>
 
 ## All Versions
+
+#### v0.6.0
+- <a href="https://github.com/alextric234/ArchipelagoDredge/releases/download/dredge_0.6.0/dredge.apworld">https://github.com/alextric234/ArchipelagoDredge/releases/download/dredge_0.6.0/dredge.apworld</a>
 
 #### v0.5.0r2
 - <a href="https://github.com/alextric234/ArchipelagoDredge/releases/download/dredge_0.5.1/dredge.apworld">https://github.com/alextric234/ArchipelagoDredge/releases/download/dredge_0.5.1/dredge.apworld</a>

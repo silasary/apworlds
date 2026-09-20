@@ -401,6 +401,22 @@
       "title": "MMX5 apworld v0.7.3",
       "version_simple": "0.7.3",
       "world_version": "0.7.3"
+    },
+    "mmx5-v0.7.4": {
+      "created_at": "2026-09-19T23:37:13Z",
+      "description": "**Client-side only \u2014 no re-patch.** Update the apworld and carry on with the disc you already have. Existing seeds are unaffected; nothing here changes generation.\n\n## New: DeathLink\n\nTurn on `death_link` in your YAML and your deaths are shared with everyone else in the multiworld who has it on \u2014 when one of you dies, you all do.\n\n**Every way of dying counts.** Running out of health, spikes, being crushed, the Zero Virus, and falling down a pit. That is not a list of cases that were handled one at a time: every death route in the game funnels through a single byte, so anything that kills you sends, including ones nobody thought to test.\n\nA DeathLink that arrives while you are **not actually in a stage** is discarded rather than saved for later, so one can never land on you during a loading screen, the results screen or stage select. If you get a game over, the client sits out the continue screens and picks up again when you are back in a stage.\n\nVerified in live multiworlds rather than only in tests \u2014 including X5 linked to X6, which now has the same feature.\n\n## Assets\n\n| file | what it is |\n| --- | --- |\n| `mmx5.apworld` | the world \u2014 drop it in your Archipelago `custom_worlds/` folder |\n| `MMX5-Setup-Guide.pdf` | read this first if you are setting up for the first time |\n| `MMX5-Unpatcher.exe` | returns a patched disc to vanilla; unchanged in behaviour, rebuilt from source this release |\n\nRequires Archipelago 0.6.7 or newer.\n",
+      "download_url": "https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.4/mmx5.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8ccbf6ce5e56f87a3f6b16d0a1f119016485f92665f71be05d4968a194bb3eea",
+      "html_url": "https://github.com/Shinnuu/Archipelago/releases/tag/mmx5-v0.7.4",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 376530,
+      "source_url": "https://api.github.com/repos/Shinnuu/Archipelago",
+      "tag": "mmx5-v0.7.4",
+      "title": "MMX5 apworld v0.7.4",
+      "version_simple": "0.7.4",
+      "world_version": "0.7.4"
     }
   }
 }

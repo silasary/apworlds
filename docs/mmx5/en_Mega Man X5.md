@@ -298,3 +298,10 @@ override it when the patch is opened — the setup guide explains how.
   the story's own shuttle launch — which happens automatically once all eight
   Mavericks are down — does **not** finish your run; you still need all 8
   parts.
+- **`death_link`** shares your deaths with everyone else in the multiworld who
+  has it switched on: when one of you dies, you all do. Every way of dying
+  counts — running out of health, spikes, being crushed, the Zero Virus, and
+  falling down a pit. It is a client feature, so turning it on does not change
+  your disc and does not need a re-patch. A death that arrives while you are
+  not actually in a stage is discarded rather than saved up, so one can never
+  land on you during a loading screen, the results screen or stage select.

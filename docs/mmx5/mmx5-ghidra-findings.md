@@ -1,4 +1,4 @@
-> Research notes mirrored from the mmx5-ap-research workspace (2026-09-08).
+> Research notes mirrored from the mmx5-ap-research workspace (2026-09-19).
 > Working copies live there and are updated as addresses are confirmed;
 > re-sync this mirror when they change. No game data included.
 
@@ -72,7 +72,9 @@ FUN_8002ecb0 (collision, overlap test):        FUN_80032844:
 | Offset | Address | Size | Meaning | Evidence |
 |---|---|---|---|---|
 | +0x02 | 0x8009A0A2 | s8 | **Character index** (0 = X, nonzero = Zero) | added to 0x800D1C00 before reading max HP at +0x47 → 0x800D1C47 (X) / 0x800D1C48 (Zero), matching the known cheat addresses |
-| +0x04/05/06 | 0x8009A0A4.. | u8 | state bytes; +5 = action state (0x11 = hurt/knockback, written by FUN_80038d44; dispatched via jump table `PTR_800745f0` in FUN_800352a8) | |
+| **+0x04** | **0x8009A0A4** | **u8** | **TOP-LEVEL player state — the state machine's selector.** Dispatched at `0x80035274` (`lb $v1,4($s0)` / `sll 2` / jump table **`0x800745E0`** / `jalr`). `[1]` = `0x800352A8`, the normal per-frame tick; **`[2]` = `0x8003CCC4` = DEATH**. `2` here is not a value that correlates with death — it IS the state that runs the death animation through to respawn, so it is the client's death detector. See §4.1 | ✅ disasm 2026-09-19 |
+| +0x05 | 0x8009A0A5 | u8 | **SUB-state within the current +0x04 state**, not a state in its own right. Each top-level handler re-dispatches on it: the death handler `0x8003CCC4` does `lb $v0,5($a0)` through table `0x800748A0`. `0x11` = hurt/knockback (written by FUN_80038d44). **This row used to claim +0x05 was "the" action state dispatched via `PTR_800745f0` in FUN_800352a8 — that was wrong on both counts:** the dispatch is on **+0x04**, and `0x800745F0` is merely entry `[4]` of the `0x800745E0` table. The death commit zeroes +0x05, which is what makes the damage handler's own early-out (`lb $v1,5($s0)`; bail if 0 or 1) stop you being killed twice | ✅ disasm 2026-09-19 |
+| +0x06 | 0x8009A0A6 | u8 | third state byte; zeroed alongside +0x05 by the death commit | |
 | +0x2F | 0x8009A0CF | u8 | state byte (user-verified; cleared… note FUN_800352a8 clears +0xCF=0x8009A16F each frame, a different field) | |
 | **+0x5C** | **0x8009A0FC** | **u8** | **Authoritative current HP.** Bit 7 = "damage event" flag (value is always masked `& 0x7F` when read). `0x80` exactly = death sentinel | see §4 |
 | +0x60 | 0x8009A100 | u8 | contact damage this object deals (generic object field; on enemies this is what hits you) | FUN_8002ecb0 |
@@ -107,8 +109,19 @@ finding no other copy):
          _DAT_800d1cb8 += *(char*)(P+0xf9); }    // ranking damage stat += dmg
   ```
   Crush/instadeath paths: `dmg_stat += HP & 0x7F; P+0x5C = 0x80`.
-- **Death detection** (same function): `if (*(s8*)(P+0x5c) == -0x80) { P+0x5c=0;
-  DAT_800d1c1c = 1; ... state=2 (death) }`.
+- **Death detection** (same function, commit block at `0x80038BF8`): the exact
+  instructions, off the disc 2026-09-19 —
+  ```
+  80038BF0  bne   $v1, $v0, ...      ; $v0 = -0x80; fall through = dead
+  80038C00  sb    $zero, 0x5c($s0)   ; HP = 0
+  80038C08  sb    $v0,  0x1c1c($v1)  ; 0x800D1C1C = 1
+  80038C24  sb    $v0,  4($s0)       ; +0x04 = 2  <- TOP-LEVEL DEATH STATE
+  80038C28  sb    $zero, 5($s0)      ; +0x05 = 0
+  80038C2C  sb    $zero, 6($s0)      ; +0x06 = 0
+  80038C34  sb    $zero, 0x14b($s0)  ; clears virus state
+  ```
+  The "state=2" in the old one-line summary is **+0x04**, not +0x05 — see the
+  field map.
 - **Pit/scroll kill** — `FUN_80029184`: sets `DAT_8009a0fc = 0x80` directly
   (hardcoded), `dmg_stat += old & 0x7F`.
 - **Sub-tank consumption** — `FUN_80034140` (0x80034140): drains the fill of
@@ -124,6 +137,20 @@ finding no other copy):
   vanilla delivery rules, `0x80053E3C`.
 - **Full heal** — `FUN_80039bf0`: `P+0x5C = [0x800D1C00+charIdx+0x47]`.
 - **Virus DoT** — `FUN_8003a1fc`: `P+0x5C -= 2` every 300 frames when infected.
+  **It DOES bounds-check (verified off the disc 2026-09-19)** — this line used to
+  read as a bare subtract, which made the DoT look like the one path that could
+  drive HP below zero without setting the sentinel. It cannot; the guard was
+  simply dropped from the decompiler summary:
+  ```
+  8003A254  lbu   $v0, 0x5c($a1)
+  8003A25C  addiu $v0, $v0, -2
+  8003A260  sb    $v0, 0x5c($a1)
+  8003A264  sll   $v0, $v0, 0x18     ; treat the low byte as signed
+  8003A268  bgtz  $v0, 0x8003a278    ; still > 0 -> done
+  8003A270  sb    $v0, 0x5c($a1)     ; else 0x80 = sentinel
+  ```
+  `sll 24` + `bgtz` is the standard R3000 s8 compare. **The death funnel has no
+  exceptions** — see §4.1.
 
 **The engine's own max-HP grants are unbounded (2026-09-08).** The Heart Tank
 collect handler's tail:
@@ -180,6 +207,49 @@ runs in that range), or (b) the poke interacted with the bit-7 flag protocol
 `P+0x5C &= 0x7F` on hit-reaction entry). Confidence that 0x8009A0FC is the
 authoritative value the game *uses* (damage, death check, heal clamp): **high**.
 Identity of the frame-writer observed live: **unverified** (see §7).
+
+## 4.1 The death funnel — EVERY death route, enumerated (2026-09-19)
+
+An EXE-wide scan for byte stores to player `+0x5C` finds **49 sites, of which
+exactly 8 write the sentinel `0x80`**. That is the complete set of ways to die:
+
+| site | route |
+|---|---|
+| `0x800292CC` | **pit / scroll kill** (`FUN_80029184`) |
+| `0x800318F8` | lethal damage path A — also sets `0x800D1C1C = 1` |
+| `0x80031B54` | lethal damage path B — also sets `0x800D1C1C = 1` |
+| `0x80038A50` | crush (`+0x89 & 0x0C == 0x0C`) |
+| `0x80038A84` | instadeath flags (`+0x89 & 0x03 == 0x03`) |
+| `0x80038B90` | normal damage reaching 0 |
+| `0x80038BE4` | spike contact (`+0x79` set, i-frames 0, `+0x7A != 1`) |
+| `0x8003A270` | virus DoT |
+
+**No route bypasses it, and none of them writes plain `0`.** A pit death is the
+clearest case: it never subtracts a point of HP, it jumps straight to the
+sentinel at full health. `0` is only ever written *afterwards*, by the death
+commit itself (`0x80038C00`).
+
+Consequences:
+
+- **To kill the player, write `0x80` to `0x8009A0FC`.** This is exactly what the
+  engine's own pit kill does, hardcoded. Prefer it over writing `+0x04 = 2`
+  directly: the sentinel lets the engine do its own bookkeeping (zero HP, set
+  `0x800D1C1C`, clear virus state and the spike-immunity flag). Writing `0` does
+  **nothing** — the check is `== -0x80`.
+- **To detect a death, poll `+0x04 == 2`, not the HP byte.** The sentinel exists
+  for at most one frame (the damage tick that reads it zeroes it in the same
+  breath), so a 0.5 s client poll will never see it. `+0x04 == 2` holds for the
+  whole explosion → fade → respawn.
+- `0x800D1C1C` is a **latch, not an edge** — set by the death commit and by both
+  lethal-damage paths, and cleared elsewhere. Usable as corroboration, poor as a
+  primary signal. This disambiguates the warning in `mmx5-ram-notes.md`.
+
+**X6 is identical.** Same sentinel, same commit block instruction-for-instruction
+(`0x80039454`..`0x80039490`, ~+0xA00 from X5), same `+0x04 = 2`, dispatch table
+`0x80073ABC`, death flag `0x800CCEEC`. See
+`ai-docs/plans/2026-09-19_deathlink-x5-x6.md` §5 — and note this retroactively
+explains `mmx6-external-findings.md` §12.3, where writing `0` produced a
+permanent soft-lock rather than a death.
 
 ## 5. Mercy invincibility (i-frames) — timer at 0x8009A101 (P+0x61)
 

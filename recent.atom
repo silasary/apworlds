@@ -2,174 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-19T18:16:08.313116+00:00</updated>
+  <updated>2026-09-20T00:19:58.489638+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9h</id>
-    <title>Warioworld v0.1.9r2</title>
-    <updated>2026-09-17T14:05:19+00:00</updated>
-    <author>
-      <name>moester_</name>
-    </author>
-    <content># Warioworld Archipelago v0.1.9 hotfix&#13;
-&#13;
-### Fixes&#13;
-&gt; Fixed Level Gates not opening if the player did not manually clear the cache (usually by savestating)&#13;
-&gt; Fixed some items being given incorrectly&#13;
-&gt; Fixed the Save Prompt being incorrectly brought up after exiting a level or punching a Save Book&#13;
-&#13;
-### Known Bugs&#13;
-&gt;The most recent item will be given to you again if it is a Filler/Trap item on reloading the savefile (this can softlock you if you have been given the Death Trap last, being sent another item will fix this)&#13;
-&gt; Some checks need to be collected twice to register (this is random and inconsistent, even across savestates)</content>
-    <link href="https://github.com/m0ester/WarioworldAP/releases/tag/v0.1.9h"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.1.0</id>
-    <title>Taskipelago v1.1.0</title>
-    <updated>2026-09-17T14:59:00+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>*One client to rule them all*&#13;
-&#13;
-## What's new&#13;
-* One unified web client that hosts itself from the apworld, or is hosted at the [usual web address](https://barretg.github.io/Taskipelago/web-client/).&#13;
-* Hints tab&#13;
-* Deathlink alerts with noises that can be turned on and off&#13;
-* Deathlink lock mode&#13;
-* Deathlink task rows&#13;
-* Item filtering on items tab&#13;
-* Find/replace on YAML Generator&#13;
-* Renaming something optionally updates all references for your convenience&#13;
-* Reordering of tasks/items is now supported&#13;
-* Progressive groups now have colors tied to them&#13;
-* Bingo now generates filler if no items are listed&#13;
-* Fixed case where names with trailing special characters made things a little funky&#13;
-&#13;
-Note: should be fully backwards compatible with worlds generated at v1.0.2. Also Universal Tracker is still incompatible.</content>
-    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ethentianknight/shellipelago/releases/tag/1.15</id>
-    <title>Shellipelago v1.15.0</title>
-    <updated>2026-09-17T15:14:59+00:00</updated>
-    <author>
-      <name>ethentianknight</name>
-    </author>
-    <content>- Removed Plando settings from slot data to allow Plando to do whatever it does.</content>
-    <link href="https://github.com/ethentianknight/shellipelago/releases/tag/1.15"/>
-  </entry>
-  <entry>
-    <id>https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.1</id>
-    <title>IslesOfSeaAndSky v2.1.1</title>
-    <updated>2026-09-17T18:09:17+00:00</updated>
-    <author>
-      <name>KimDelicious</name>
-    </author>
-    <author>
-      <name>Angrevol</name>
-    </author>
-    <author>
-      <name>Woli</name>
-    </author>
-    <author>
-      <name>Cuberyl</name>
-    </author>
-    <content>Additions:&#13;
-- Snakesanity option returns! When enabled, every snakeblock will send a check when broken.&#13;
-&#13;
-Changes:&#13;
-- Renamed RequireSerpentClues to SerpentPuzzleMemorization and inverted its true/false values&#13;
-- The standard for logic options from here on out will be for logic to be made harder when options are set to true&#13;
-- Marked Shuffle Meteroites and Traps yaml options with an [EXPERIMENTAL] label, they're functional but need polish in some places.&#13;
-- Updated docs to fix outdated links&#13;
-&#13;
-Logic Fixes:&#13;
-- Fixed Water A2 - N - Star Piece not having any logic rules apart from reaching its region&#13;
-- Fixed the Seashell Puzzle not requiring Water Elementals, 1 of the potential shell locations is locked behind them.&#13;
-- Fixed Fire D1 - Ruby checking if the player can reach the wrong entrance (causing this check to not be in logic when it should be)&#13;
-- Fixed Wind E4 - E - Ancient Key requiring Kite Cloak (it only needs Wind Elementals)</content>
-    <link href="https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.0</id>
-    <title>Dwarf Fortress v2.1.0</title>
-    <updated>2026-09-17T18:42:22+00:00</updated>
-    <author>
-      <name>Dwarfipelago Contributors</name>
-    </author>
-    <content>A feature release: manual send mode, a reworked Status tab, and a round of check&#13;
-and poll refactors. **2.0.x seeds and worlds remain playable**; the location and&#13;
-item tables are unchanged and the in-fort win condition is the same, so nothing&#13;
-needs regenerating to install this.&#13;
-&#13;
-### Features&#13;
-&#13;
-- **Manual send mode.** See Performance below. The Status tab gained a&#13;
-  `Manual send` toggle and a `Send now` button, and the **Controls** tab was&#13;
-  folded into **Status** now that it has the room. `Reset all AP state` and&#13;
-  `Reset seed` ask for confirmation before firing.&#13;
-&#13;
-### Logic&#13;
-&#13;
-- **The Legendary Wealth goal now requires the means to produce a treasury.** The&#13;
-  goal is measured in minted coins and cut gems, but its completion condition&#13;
-  asked only for the Codex, five coffers and immigration waves. The metal chain&#13;
-  (Smelter + fuel or magma smelting, plus a Forge or magma forge, and the Coins&#13;
-  permit when permits are on) and the Jeweler's Workshop blueprint are now part of&#13;
-  it, so those blueprints are treated as goal progression and land in the&#13;
-  progression spheres instead of looking optional to the fill.&#13;
-&#13;
-### Performance&#13;
-&#13;
-- The **Controls** tab is gone; its three buttons moved onto **Status**, which had&#13;
-  the room. `Reset all AP state` and `Reset seed` now ask for confirmation first -&#13;
-  they fired on a single keypress before, and they now sit on the tab the panel&#13;
-  opens on.&#13;
-- **Manual send mode.** A fort paying more FPS for live checks than it wants can&#13;
-  now switch the mod's scanning off entirely: the Status tab has a `Manual send`&#13;
-  toggle (Shift-M) and a `Send now` button (Shift-N) that runs exactly one check&#13;
-  pass. Also available as `dwarfipelago manual-send on|off` and&#13;
-  `dwarfipelago send-now`. Item delivery and the client link are unaffected.&#13;
-  Three things stay live while paused: trade-depot placement (it gates all AP&#13;
-  item delivery), incoming DeathLinks, and the Archipelago caravan, so a docked&#13;
-  caravan still stocks its goods and still registers purchases. The event hooks&#13;
-  that record production, crafts and deaths are not part of the poll and keep&#13;
-  running too, so a `Send now` flushes real progress rather than starting cold.&#13;
-  While it is on, the Checks tab paints every open check **blue** and reports how&#13;
-  many are being held, so it is obvious the list is frozen by choice rather than&#13;
-  stalled. Locked checks stay red - AP logic blocks those regardless.&#13;
-&#13;
-- **The completed-check guard was re-reading and re-parsing the whole&#13;
-  checked-locations set on every check, every poll.** `is_location_checked` did a&#13;
-  persistent read plus a full JSON decode per call, and the poll calls it once per&#13;
-  check - 122 static ones plus every craft and skill check. That is&#13;
-  O(checks x checked) per tick, and it grows as a run progresses, so it was worst&#13;
-  on large craftsanity/skillsanity seeds where the fort is already struggling. The&#13;
-  set is now decoded once per frame and kept coherent on write: **122 reads and&#13;
-  122 decodes per poll become 1 and 1**.&#13;
-- **Skillsanity kept scanning every citizen for skills that were already maxed.**&#13;
-  `update_skill_levels` walked all ~87 tracked skills against every living citizen&#13;
-  on every poll, including skills already recorded at `skillsanity_max_level`,&#13;
-  which can never rise again. Maxed skills are now filtered out before any unit is&#13;
-  touched, so the cost falls as a run progresses instead of staying flat: with 113&#13;
-  citizens, **9,831 unit lookups per poll drop to 5,311 at half maxed and to zero&#13;
-  once all are.** The skill-lowering behaviour still scans, since it actively caps&#13;
-  units rather than only observing them.&#13;
-- **The FPS backoff only engaged below 30 FPS**, so a fort that had dropped from&#13;
-  100 to 50-60 - the range people actually report - kept polling at full rate.&#13;
-  Anything under 60 now polls at half rate. The low-end factors are unchanged on&#13;
-  purpose: the poll interval is measured in ticks, so a slow fort already stretches&#13;
-  each poll in real time, and raising them further would delay checks more than it&#13;
-  saves.&#13;
-- The client no longer resolves every received item's name on each poll merely to&#13;
-  decide that nothing had changed; the change signature is keyed on item ids and&#13;
-  names are resolved only when a recompute actually happens.</content>
-    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.8.2</id>
     <title>Portal 2 v0.8.2</title>
@@ -194,7 +31,7 @@ Delete the old Portal2Archipelago mod folder and all it's contents and replace i
   </entry>
   <entry>
     <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.4</id>
-    <title>Laika: Aged Through Blood v0.1.0r3</title>
+    <title>Laika: Aged Through Blood v0.1.0r2</title>
     <updated>2026-09-17T19:24:12+00:00</updated>
     <author>
       <name>Seras</name>
@@ -1463,5 +1300,144 @@ Now there won't be anything til next weekend for real no matter how severe, have
 ## Notes&#13;
 This is an early release and has not been extensively tested. Expect bugs and missing features, and please report any issues or feedback.</content>
     <link href="https://github.com/Trexounay/EnderLilies.Archipelago/releases/tag/endermagnolia-v0.1.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.17</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.17</title>
+    <updated>2026-09-19T19:20:11+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.17&#13;
+&#13;
+**Branch:** main&#13;
+**Date:** 2026-09-19 19:22 UTC&#13;
+&#13;
+&lt;details&gt;&#13;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.16&lt;/strong&gt;&lt;/summary&gt;&#13;
+&#13;
+- fix(SM): failing tests (39b643f0)&#13;
+- fix(SM): incorrect rules (d2f7c756)&#13;
+- fix(SM): rules mismatch for pokitaru (548a7e27)&#13;
+&#13;
+&lt;/details&gt;&#13;
+&#13;
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.16...rac-size-matters/v0.4.17&#13;
+&#13;
+### Notes&#13;
+This release was automatically generated from the **main** branch.&#13;
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
+</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.17"/>
+  </entry>
+  <entry>
+    <id>https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.6.0</id>
+    <title>Dredge v0.6.0</title>
+    <updated>2026-09-19T20:43:39+00:00</updated>
+    <author>
+      <name>Alextric</name>
+    </author>
+    <author>
+      <name>fight4day</name>
+    </author>
+    <content>- added fishing licenses and logic&#13;
+- added passage items and logic&#13;
+- removed the builder item and locations&#13;
+  - This is an early scaffolding for pursuits as locations, but there's still plenty of work to be done&#13;
+- filtering item creation differently&#13;
+- fixed ironhaven crate expansion</content>
+    <link href="https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/UFO-50-Archipelago/Archipelago/releases/tag/0.3.0</id>
+    <title>UFO 50 v0.3.0</title>
+    <updated>2026-09-19T23:12:45+00:00</updated>
+    <author>
+      <name>UFO-50-Archipelago</name>
+    </author>
+    <content>Divers has been added thanks to SSBStew!&#13;
+Also some minor bug fixes.&#13;
+&#13;
+## What's Changed&#13;
+* UFO 50 - Divers Implementation by @SSBStew in https://github.com/UFO-50-Archipelago/Archipelago/pull/26&#13;
+* UFO 50 - Divers item and location adjustment by @SSBStew in https://github.com/UFO-50-Archipelago/Archipelago/pull/27&#13;
+&#13;
+## New Contributors&#13;
+* @SSBStew made their first contribution in https://github.com/UFO-50-Archipelago/Archipelago/pull/26&#13;
+&#13;
+**Full Changelog**: https://github.com/UFO-50-Archipelago/Archipelago/compare/0.2.1...0.3.0</content>
+    <link href="https://github.com/UFO-50-Archipelago/Archipelago/releases/tag/0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.18</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.18</title>
+    <updated>2026-09-19T23:41:58+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.18&#13;
+&#13;
+**Branch:** main&#13;
+**Date:** 2026-09-19 23:44 UTC&#13;
+&#13;
+&lt;details&gt;&#13;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.17&lt;/strong&gt;&lt;/summary&gt;&#13;
+&#13;
+- fix(SM): vendor now displays ap icon and displays appropriate text for items in vendor (b40b2295)&#13;
+&#13;
+&lt;/details&gt;&#13;
+&#13;
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.17...rac-size-matters/v0.4.18&#13;
+&#13;
+### Notes&#13;
+This release was automatically generated from the **main** branch.&#13;
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
+</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.18"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.19</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.19</title>
+    <updated>2026-09-19T23:56:24+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.19
+
+**Branch:** main
+**Date:** 2026-09-19 23:58 UTC
+
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.18&lt;/strong&gt;&lt;/summary&gt;
+
+- fix(SM): failing import of archipelago icons (f77dd072)
+
+&lt;/details&gt;
+
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.18...rac-size-matters/v0.4.19
+
+### Notes
+This release was automatically generated from the **main** branch.
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
+</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.19"/>
   </entry>
 </feed>

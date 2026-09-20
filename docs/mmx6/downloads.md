@@ -1,9 +1,12 @@
 # Mega Man X6
 
 ## Latest
-- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx6-v0.4.0/mmx6.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx6-v0.4.1/mmx6.apworld">Latest Version (0.4.1)</a>
 
 ## All Versions
+
+#### v0.4.1
+- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx6-v0.4.1/mmx6.apworld">https://github.com/Shinnuu/Archipelago/releases/download/mmx6-v0.4.1/mmx6.apworld</a>
 
 #### v0.4.0
 - <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx6-v0.4.0/mmx6.apworld">https://github.com/Shinnuu/Archipelago/releases/download/mmx6-v0.4.0/mmx6.apworld</a>

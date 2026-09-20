@@ -299,6 +299,13 @@ when the patch is opened — the setup guide explains how.
   Lives — pad the pool when there are more locations than real items. A heal
   arriving between stages waits until you are in one, rather than being thrown
   away.
+- **`death_link`** shares your deaths with everyone else in the multiworld who
+  has it switched on: when one of you dies, you all do. Every way of dying
+  counts — running out of health, spikes, being crushed, and falling down a
+  pit. It is a client feature, so turning it on does not change your disc and
+  does not need a re-patch. A death that arrives while you are not actually in
+  a stage is discarded rather than saved up, so one can never land on you
+  during a loading screen, the Mission Report or the stage select.
 
 ## What does another world's item look like in Mega Man X6?
 

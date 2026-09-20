@@ -85,3 +85,9 @@ AP recipient lookup, base/Titan separation, ammo preservation, purchase identity
 price preservation, and exact restoration of cosmetic changes. The separate
 mod-vendor display is not changed by this weapon-vendor implementation.
 Live visual verification of the icon and mapped text is still pending.
+
+The display binding waits until the planet is ready before becoming active.
+This preserves it through loader stage 5, which previously discarded the newly
+prepared binding before it could update any vendor icons or text. A regression
+test covers relocation, stage 5, and the first ready vendor poll. Display failures
+are logged as warnings even when client debug messages are disabled.

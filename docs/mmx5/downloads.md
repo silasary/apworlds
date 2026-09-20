@@ -1,9 +1,12 @@
 # Mega Man X5
 
 ## Latest
-- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.3/mmx5.apworld">Latest Version (0.7.3)</a>
+- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.4/mmx5.apworld">Latest Version (0.7.4)</a>
 
 ## All Versions
+
+#### v0.7.4
+- <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.4/mmx5.apworld">https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.4/mmx5.apworld</a>
 
 #### v0.7.3
 - <a href="https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.3/mmx5.apworld">https://github.com/Shinnuu/Archipelago/releases/download/mmx5-v0.7.3/mmx5.apworld</a>
