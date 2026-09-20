@@ -11,6 +11,9 @@
 #### v0.0.1r2
 - <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Downtown/Deathlink/thaw.apworld">https://github.com/TheLivingShadow97/THAWAP/releases/download/Downtown/Deathlink/thaw.apworld</a>
 
+#### v0.0.1r2
+- <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Small-Logic-Fixes/thaw.apworld">https://github.com/TheLivingShadow97/THAWAP/releases/download/Small-Logic-Fixes/thaw.apworld</a>
+
 #### v0.0.1
 - <a href="https://github.com/TheLivingShadow97/THAWAP/releases/download/Latest/thaw.apworld">https://github.com/TheLivingShadow97/THAWAP/releases/download/Latest/thaw.apworld</a>
 

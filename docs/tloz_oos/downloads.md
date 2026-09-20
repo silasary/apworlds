@@ -1,9 +1,21 @@
 # The Legend of Zelda - Oracle of Seasons
 
 ## Latest
-- <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-23.0.4/tloz_oos.apworld">Latest Version (23.0.4r2)</a>
+- <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.7/tloz_oos.apworld">Latest Version (24.0.7)</a>
 
 ## All Versions
+
+#### v24.0.7
+- <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.7/tloz_oos.apworld">https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.7/tloz_oos.apworld</a>
+
+#### v24.0.3
+- <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.3/tloz_oos.apworld">https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.3/tloz_oos.apworld</a>
+
+#### v24.0.2
+- <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.2/tloz_oos.apworld">https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.2/tloz_oos.apworld</a>
+
+#### v24.0.0
+- <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.0/tloz_oos.apworld">https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.0/tloz_oos.apworld</a>
 
 #### v23.0.4r2
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-23.0.4/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-23.0.4/tloz_oos.apworld</a>

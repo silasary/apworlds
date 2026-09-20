@@ -1,4 +1,7 @@
 {
+  "authors": [
+    "hl1-anniversary-ap"
+  ],
   "description": "Half-Life, with every mission and every weapon locked behind Archipelago\nitems.",
   "flags": [
     "unready"
@@ -6,7 +9,11 @@
   "game": "Half-Life",
   "github": "https://github.com/barretg/hl1-anniversary-ap",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.2": {
       "created_at": "2026-08-29T21:56:52Z",
@@ -21,6 +28,21 @@
       "title": "Half-Life (Sven Backport) Release v0.2",
       "version_simple": "0.2",
       "world_version": "0.2"
+    },
+    "v0.2.1": {
+      "created_at": "2026-09-20T01:56:36Z",
+      "description": "Quick bug patch to pass stability tests: removed unused empty location group",
+      "download_url": "https://github.com/barretg/hl1-anniversary-ap/releases/download/v0.2.1/half_life.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a13b344c8471d5d71c24ac04ce738ea59908b0740271c85e6d765c65c76b24c9",
+      "html_url": "https://github.com/barretg/hl1-anniversary-ap/releases/tag/v0.2.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 229450,
+      "source_url": "https://api.github.com/repos/barretg/hl1-anniversary-ap",
+      "tag": "v0.2.1",
+      "title": "Half-Life (Sven Backport) Release v0.2.1",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
     }
   }
 }

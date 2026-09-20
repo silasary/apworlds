@@ -2,172 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-20T00:19:58.489638+00:00</updated>
+  <updated>2026-09-20T06:21:19.330983+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.8.2</id>
-    <title>Portal 2 v0.8.2</title>
-    <updated>2026-09-17T19:03:22+00:00</updated>
-    <author>
-      <name>GlassToadstool</name>
-    </author>
-    <content>## Bug Fixes&#13;
-- Fixed Butter Fingers Trap breaking pickup after map transition&#13;
-- Fixed the map names removing the first two characters&#13;
-- Fixed loading saves creating holograms that block paths&#13;
-&#13;
-### How to install&#13;
-Simply drag the contents of the zip (Portal2Archipelago) into the sourcemods folder as indicated in the [README](https://github.com/GlassToadstool/Portal2ArchipelagoMod/blob/main/README.md) in step 4 and then follow from **step 5** onwards&#13;
-&#13;
-For the apworld just double click the file and it will be installed in your Archipelago (remember to restart Archipelago for it to show up)&#13;
-&#13;
-### How update the mod if you already have it&#13;
-Delete the old Portal2Archipelago mod folder and all it's contents and replace it with the this ZIP's contents.&#13;
-</content>
-    <link href="https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/tag/0.8.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.4</id>
-    <title>Laika: Aged Through Blood v0.1.0r2</title>
-    <updated>2026-09-17T19:24:12+00:00</updated>
-    <author>
-      <name>Seras</name>
-    </author>
-    <content>A fix to the traveling merchant camera bug, contributed by @kennethbchen.&#13;
-&#13;
-This should completely fix the traveling merchant's shop breaking the zoom functionality, as well as working with any existing run. &#13;
-&#13;
-You only need to replace LaikaMod.dll for this fix. </content>
-    <link href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-rc1</id>
-    <title>Lethal Company v0.8.0r2</title>
-    <updated>2026-09-17T21:04:48+00:00</updated>
-    <author>
-      <name>T0r1nn, ThisGuyHere</name>
-    </author>
-    <content># This release is meant for testing and is likely to have issues. DO NOT use in public games without prior approval from the host&#13;
-# THIS AND ALL FUTURE VERSIONS ARE NOT COMPATIBLE WITH WORLDS CREATED PRIOR TO 0.8.0&#13;
-&#13;
-Because this version is meant for testing, the mod must be installed/updated manually.&#13;
-&#13;
-To use this version in a new mod profile, look for an option to import a local mod. r2modman users can find this option under Settings &gt; Profile &gt; Import local mod. Gale users can find the option under Import &gt; ..local mod. If your mod manager does not automatically install the required dependencies, you will need to install the latest versions of BepInEx, Archipelago Scrap, and DawnLib.&#13;
-&#13;
-To use this version in an existing mod profile, navigate to wherever you have this mod installed, delete the old APLC.dll, and replace it with the version in the attached .zip file. r2modman users can find their profile folder by clicking Settings -&gt; Browse profile folder, and Gale users can find it under File -&gt; Open profile folder. From there, navigate to BepInEx/plugins/APLC-APLC and you should see APLC.dll. For users of Gale Mod Manager, it is especially important to DELETE the old dll FIRST to avoid overwriting the mod in other profiles.&#13;
-&#13;
-Mod:&#13;
-* completely switched from LethalLevelLoader to DawnLib and replaced commands that used LethalAPI Terminal with Dawn commands&#13;
-* updated MultiClient.Net to the latest stable version&#13;
-* made custom company moons (Galetry, Oxyde, etc.) share logic with Gordion&#13;
-* scrap that spawns in custom interiors is now in logic&#13;
-* fixed an issue where non-scrap (flashlights, spray paint, etc.) in a custom moon's scrap pool could have locations&#13;
-* MASSIVELY reduced the time taken to connect to a multiworld slot&#13;
-* collecting a goal item now displays a notification in the ship (this may be blocked by the report card)&#13;
-* fixed moon difficulty calculation (i.e. 'hard' moons now reference the correct yaml setting for grade locations)&#13;
-* added a new option for calculating moon difficulty&#13;
-* added the moon grade required for grade locations to the in-game tracker&#13;
-* fixed an issue where some moons incorrectly cost credits to visit&#13;
-* added a mod config option to reduce the amount of scrap that spawns on Dine&#13;
-&#13;
-Apworld:&#13;
-* changed moon checks to grade locations (ex. 'Vow check 1' is now 'Vow Grade Location 1')&#13;
-* for the sake of clarity, locations and items are no longer referred to as 'checks' anywhere in the mod or apworld&#13;
-* reworked the Collectathon goal&#13;
-  * it now requires the player to collect an assortment of random scrap in addition to the ap chests&#13;
-* players can now set min_scrap_chance and min_monster_chance to 0 without encountering issues&#13;
-* fixed a logic issue where rare scrap and monsters could still have certain progression items&#13;
-&#13;
-Known issues:&#13;
-* If a player connects to a slot that has modify_scrap_spawns, scrap spawns will remain modified for until the player closes the game, even if the player opens a different save file.&#13;
-* if another mod grants extra inventory slots, those slots are not usable</content>
-    <link href="https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-rc1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/qixils/NeoForgeAP/releases/tag/v2.2.1</id>
-    <title>Minecraft v2.2.0r2</title>
-    <updated>2026-09-17T21:38:15+00:00</updated>
-    <author>
-      <name>qixils</name>
-    </author>
-    <author>
-      <name>Seafo</name>
-    </author>
-    <author>
-      <name>cjmang</name>
-    </author>
-    <content>[mod] Fix "Uh Oh" Advancement not being triggered.</content>
-    <link href="https://github.com/qixils/NeoForgeAP/releases/tag/v2.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/tag/v0.7.0</id>
-    <title>Wario Land 3 v0.7.0</title>
-    <updated>2026-09-17T22:09:29+00:00</updated>
-    <author>
-      <name>RvPA-Roopa</name>
-    </author>
-    <content>This is a BIG update with A LOT of new features/fixes. This has been tested, but since it's such a big update, there may be (and probably will be) some bugs. It shouldn't be anything gamebreaking, but please let me know if there is. I will label this a pre-release until we've done a bit more testing. This shouldn't be brought to public syncs just yet, but I will add it as stable when it should be. &#13;
-&#13;
-## New Features&#13;
-&#13;
-### Shopsanity &#13;
-Adds an entirely new shop to the right of the temple! The options for this include different price tiers: cheap, normal and expensive. Each have weighted prices with 2 at the lower end, 2 towards the top, and 6 in the middle. (There's currently no hard set logic for these checks, as you're able to grind out coins in level as needed). &#13;
-&#13;
-### New Victory Condition&#13;
-Adds the 10 bosses as a potential win condition. There is also a new option of "bosses_required" (similar to music_boxes_required) where you can choose how many bosses you want as your win condition. This CAN be used in conjunction with boss_defeats granting items.&#13;
-&#13;
-### Hidden blocks and coins&#13;
-Added a new option under "hidden_blocks_revealed" to ALSO color guaranteed coin blocks differently than normal blocks. This will be useful for grinding out coins... and maybe for something in the future? 👀 &#13;
-&#13;
-## QoL Updates&#13;
-&#13;
-### Temple update&#13;
-- You can now enter the temple before being able to beat Rudy. He will tell you how many bosses/music boxes you have left before you can fight him.&#13;
-&#13;
-### Pause Menu Treasure Tracker&#13;
-- Updated the treasure count at the top of the treasure tracker to dynamically show how many locations you've checked (i.e. 10/410). &#13;
-- Replaced the page count at the top right with the win condition requirements you've collected so far.&#13;
-- Added multiple new pages to the treasure tracker menu:&#13;
-  - Musical Coin tracker&#13;
-  - Keys, bosses and chests tracker (tracks how many you've collected per level)&#13;
-  - Transformations treasure page&#13;
-  - Shows your "Owned Keys" per level, so you can see what keys you have (G R G B = Grey, Red, Green, Blue)&#13;
-&#13;
-### Misc. &#13;
-&#13;
-- Keys are now their vanilla sprites, with a large ACTUALLY readable letter/number for their corresponding level.&#13;
-- Changed a few palettes for in-game text, as well as increasing the text size to be more uniform.&#13;
-- Roll/ice skatin' without transformations on now returns them back to their vanilla states (can't turn)&#13;
-- Pauses are now allowed in boss rooms, so on the off-chance you get soft locked, you can return to the overworld.&#13;
-- Palette shuffle updates to include more saturation randomization. This helps with the lack of colors to choose from, adds a bit more variety.&#13;
-- Crests now replaced by coins. 1 Coin = 1 Coin, 2 slimmer coins = 10, 3 sideways coins = 25 and 4 sideways coins = 50. &#13;
-- Made some yaml changes for conciseness&#13;
-&#13;
-### Bug Fixes&#13;
-- Scowler blocks finally fixed. &#13;
-- Gold magic spawning waves in N1 fixed.&#13;
-- Glass Eyes door, Golden eyes door and fence all adjusted in Tower of Revival to look as they should if you do not own their items.&#13;
-- Vast Plains finally don't have empty space when you have chemicals but no magic seeds. Coin 6 still needs chemicals or magic seeds to spawn.&#13;
-- Cave of Flames now actually shows rusted blocks correctly, regardless of variant.&#13;
-- Removed a few dust/particles that were still being overwritten by lettering.&#13;
-- Overworld crash now gated so you can't spam right or left in the transition. Should no longer crash&#13;
-- Large blocks are now breakable from above without Garlic. &#13;
-- You should no longer get spammed with item popups after re-connecting.&#13;
-- Probably so much more that I'm forgetting&#13;
-&#13;
-### Lizzie's Logic Fixes&#13;
-&#13;
-- Out of the Woods Coin 3 now requires Puffy Form&#13;
-- Added flying past the climbable fencing back to Tower of Revival&#13;
-- Added rolling past currents into easy glitches logic&#13;
-- Added using the blue key/chest door to get past the warps without warp removal apparatus into knowledge check logic&#13;
-- Added getting Castle of Illusions coins 2 and 3 via wall jump to all glitches logic&#13;
-</content>
-    <link href="https://github.com/RvPA-Roopa/Wario-Land-3-Archipelago/releases/tag/v0.7.0"/>
-  </entry>
   <entry>
     <id>https://github.com/functorial/MMLAP/releases/tag/v0.3.1</id>
     <title>Mega Man Legends v0.3.0r2</title>
@@ -1054,7 +893,7 @@ v2.2 contains *way* more than originally planned for it. It transitioned from "t
   </entry>
   <entry>
     <id>https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2</id>
-    <title>IslesOfSeaAndSky v2.1.1r2</title>
+    <title>IslesOfSeaAndSky v2.1.2.post2</title>
     <updated>2026-09-19T01:05:28+00:00</updated>
     <author>
       <name>KimDelicious</name>
@@ -1439,5 +1278,130 @@ This release was automatically generated from the **main** branch.
 Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
 </content>
     <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.19"/>
+  </entry>
+  <entry>
+    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.5</id>
+    <title>Mega Man Zero 3 v0.3.5</title>
+    <updated>2026-09-20T01:00:44+00:00</updated>
+    <author>
+      <name>brodieberger</name>
+    </author>
+    <content>Cerveau now has an item shop, the disk analysis screen got an open all button, and there are a bunch of new yaml options including itemsanity, randomized palettes, and more select button features.&#13;
+&#13;
+[Full Readme here](https://github.com/brodieberger/MMZero3Archipelago)&#13;
+&#13;
+## Features&#13;
+&#13;
+### Cerveau's shop&#13;
+&#13;
+Cerveau now has a shop menu. Open his secret disk analysis screen and press L or R to access the shop page. Every slot is an Archipelago location, and buying one with E-Crystals sends the check. Items from other games appear as the Archipelago logo, with the background color indicating the progression type.&#13;
+&#13;
+&lt;div align="center"&gt;&#13;
+  &lt;img&#13;
+    height="250"&#13;
+    alt="image"&#13;
+    src="https://github.com/user-attachments/assets/469a0044-1db3-43af-87cc-22d8649a138a"&#13;
+  /&gt;&#13;
+&lt;/div&gt;&#13;
+&#13;
+The `Shop` location group works with `!hint` and `!missing`. Prices and shop slots are also configurable.&#13;
+&#13;
+### Open all disks&#13;
+Pressing SELECT on the analysis screen now opens every disk you own at once.&#13;
+&#13;
+### Itemsanity (option)&#13;
+&#13;
+Every static life capsule and E-Crystal pickup in the game can now be a location check, 82 in total. Enabled with the itemsanity option.&#13;
+&#13;
+The ten 1-UP checks are now an option too (`extra_life_sanity`), on by default.&#13;
+&#13;
+### Randomized palettes (option)&#13;
+&#13;
+Randomized palettes draws every stage in a randomly picked color scheme. Enabled with its option.&#13;
+&#13;
+&lt;div align="center"&gt;&#13;
+&lt;img height="250" alt="image" src="https://github.com/user-attachments/assets/46d6d829-235e-4504-9b07-f45436c7f607" /&gt;&#13;
+&lt;img height="250" alt="image" src="https://github.com/user-attachments/assets/eea24771-fc51-4b83-868c-6b12d00be5c4" /&gt;&#13;
+&#13;
+&lt;/div&gt;&#13;
+&#13;
+### Cyber elf (option)&#13;
+&#13;
+`cyber_elves` has three settings. Affects fusion elves only, Satellite elves unchanged.&#13;
+&#13;
+- `vanilla`: how the game normally works. Upgrading elves costs crystals and fusing one hurts your rank.&#13;
+- `no_penalty`: fusing an elf doesn't affect your rank.&#13;
+- `auto`: every passive elf you receive from a disk is opened and applied on arrival, and Artan and Zictan just give you their sub tanks. No rank penalty. Makes the game a lot easier but gives it a nice sense of progression.&#13;
+&#13;
+### SELECT button (option)&#13;
+&#13;
+The select button's functionality. Choose between Cycling the sub weapon (default), the main weapon, the head, body or foot chip, or use the fullest subtank. &#13;
+&#13;
+### Disk name popup (option)&#13;
+&#13;
+When a secret disk arrives from Archipelago the game's message box displays its name and short description. &#13;
+&#13;
+### Smaller stuff&#13;
+&#13;
+- `weapon_damage_upgrades` new option that turns off the last three steps of each progressive weapon (the damage boosts).&#13;
+- `start_inventory_from_pool` is supported.&#13;
+- Secret disk items are named `Disk 001: ...` instead of `Secret Disk 001: ...`. Some location names got shortened too, so heads up to anyone who has this names in their yaml. Sorry to @ambibii and their poptracker...&#13;
+&#13;
+## Bug Fixes&#13;
+&#13;
+- Fixed bug where another player using `!collect` on your world could open the final stage even if you hadn't cleared every stage yourself.&#13;
+- Fix bug where the client would reporting "unknown location id 0" on killing a boss sometimes.&#13;
+- Boss portraits on the mission select screen would spin around as they faded in once you had cleared a stage.</content>
+    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLivingShadow97/THAWAP/releases/tag/Small-Logic-Fixes</id>
+    <title>Tony Hawk's American Wasteland v0.0.1r2</title>
+    <updated>2026-09-20T01:05:32+00:00</updated>
+    <author>
+      <name>TheLivingShadow</name>
+    </author>
+    <content>- Fixes the regions for the "Big Lip", "Overpass Air", and "Pyramid Drop" gaps so it expects you to have entered the part of the story when you can remove the cars from the freeway before they're in logic, so that you can do those gaps.</content>
+    <link href="https://github.com/TheLivingShadow97/THAWAP/releases/tag/Small-Logic-Fixes"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/severed-steel-v1.0.1</id>
+    <title>Severed Steel v1.0.1</title>
+    <updated>2026-09-20T02:58:39+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is a minor fix release.&#13;
+&#13;
+**This release IS compatible with games generated on the previous version.**&#13;
+&#13;
+- **Fix:** Updated a handful of offsets to support the recent 5 Year Anniversary update</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/severed-steel-v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.7</id>
+    <title>Gauntlet Legends v2.1.7</title>
+    <updated>2026-09-20T04:16:31+00:00</updated>
+    <author>
+      <name>jamesbrq</name>
+    </author>
+    <content>REQUIRED: Archipelago -&gt; https://github.com/ArchipelagoMW/Archipelago/releases&#13;
+REQUIRED: Retroarch -&gt; https://www.retroarch.com/?page=platforms&#13;
+Drag and drop gl.apworld into your custom_worlds folder in your Archipelago install.&#13;
+&#13;
+You can launch the client from ArchipelagoLauncher, just click on the Gauntlet Legends Client button.&#13;
+&#13;
+To patch the game, you are required to have a US copy of Gauntlet Legends for the N64.&#13;
+Either drag the patch onto ArchipelagoLauncher.exe or Right click the patch and 'Open With...' ArchipelagoLauncher.exe&#13;
+The host does not need to have a copy of the game to generate.&#13;
+&#13;
+RETROARCH IS REQUIRED IT IS THE ONLY EMULATOR THAT WILL WORK.&#13;
+&#13;
+IN RETROARCH: You must go to Settings-&gt;User Interface and turn the Show Advanced Settings ON. Then in Settings-&gt; Network, you must also turn ON Network Commands. Leave the port the default.&#13;
+&#13;
+Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
+&#13;
+**Full Changelog**: https://github.com/jamesbrq/GauntletLegendsAP/compare/v2.1.6...v2.1.7</content>
+    <link href="https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.7"/>
   </entry>
 </feed>
