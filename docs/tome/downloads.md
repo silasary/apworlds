@@ -1,9 +1,12 @@
 # Tales of Maj&#x27;Eyal
 
 ## Latest
-- <a href="https://github.com/rosen200/Archipelago/releases/download/v0.0.6/tome.apworld">Latest Version (0.0.5r2)</a>
+- <a href="https://github.com/rosen200/Archipelago/releases/download/v0.0.7/tome.apworld">Latest Version (0.0.7)</a>
 
 ## All Versions
+
+#### v0.0.7
+- <a href="https://github.com/rosen200/Archipelago/releases/download/v0.0.7/tome.apworld">https://github.com/rosen200/Archipelago/releases/download/v0.0.7/tome.apworld</a>
 
 #### v0.0.5r2
 - <a href="https://github.com/rosen200/Archipelago/releases/download/v0.0.6/tome.apworld">https://github.com/rosen200/Archipelago/releases/download/v0.0.6/tome.apworld</a>

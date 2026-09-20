@@ -93,6 +93,17 @@ In addition, the rewards that you get from the main missions are scattered acros
 - War Amulet Piece 2
 - War Amulet Piece 3
 
+
+## Is there any other checks?
+
+Yes! as of 1.4.0
+
+The secrets menu will now be checks. You will have to get orbs to purchase them to send the checks. Use X or O 
+(if you are given the secret but haven't bought it) to purchase secrets!
+
+### OrbStanity will be added next.
+
+
 ## How do I know what Special Items I have?
 
 Use the built-in Inventory Screen in the Pause Menu to see what items you have.
@@ -127,42 +138,32 @@ Multiple traps can be active at the same time, and they may interact with each o
 
 ## What kind of traps are there?
 
-## Jak and Daxter Traps
-### "(almost) All the traps you love, back for more mischief!"
+## Traps from Jak and Daxter, Jak 2, and some new ones!
 
-| Trap Name        | Effect                                                                           |
-|------------------|----------------------------------------------------------------------------------|
-| Trip Trap        | Jak trips and falls                                                              |
-| Slip Trap        | The world gains the properties of a _strangely familiar_ mountain's ice lake...  |
-| Gravity Trap     | Jak falls to the ground faster and takes fall damage more easily                 |
-| Camera Trap      | The camera remains fixed in place, no matter how far away Jak moves              |
-| Darkness Trap    | The world gains the properties of a _creepy_ cave...                             |
-| Earthquake Trap  | The world and camera shake profusely                                             |
-| Teleport Trap    | Jak immediately teleports to the Underground Hideout                             |
-| ~~Despair Trap~~ | ~~The Warrior sobs profusely~~ Coming Soon...                                    |
-| Pacifism Trap    | Jak's physical attacks have no effect on enemies, crates or buttons              |
-| ~~Ecoless Trap~~ | ~~Jak's eco is drained and he cannot collect new eco~~                           |
-| Health Trap      | Jak's health is set to 0 - not dead yet, but he will die to any attack or bonk   |
-| Ledge Trap       | Jak cannot grab onto ledges                                                      |
-| ~~Zoomer Trap~~  | ~~Jak mounts an invisible zoomer (model loads properly depending on the level)~~ |
-| Mirror Trap      | The world is mirrored                                                            |
-
-## Jak II Traps
-### "More fun for the whole multiworld!"
-
-| Trap Name  | Effect                                                                |
-|------------|-----------------------------------------------------------------------|
-| Ammo Trap  | Jak has all of his ammo taken away from him, making his guns unusable |
-| Dark Trap  | Jak gives into his anger, forcefully transforming into Dark Jak       |
-| Speed Trap | Jak and the world around him are suddenly extremely fast              |
-| Slow Trap  | Jak and the world around him are suddenly at a snail's pace           |
-| Hero Trap  | The world gains the properties of the game's "Hero Mode" difficulty   |
+| Trap Name         | Effect                                                                          |
+|-------------------|---------------------------------------------------------------------------------|
+| Trip Trap         | Jak trips and falls                                                             |
+| Slip Trap         | The world gains the properties of a _strangely familiar_ mountain's ice lake... |
+| Gravity Trap      | Jak falls to the ground faster and takes fall damage more easily                |
+| Camera Trap       | The camera remains fixed in place, no matter how far away Jak moves             |
+| Darkness Trap     | The world gains the properties of a _creepy_ cave...                            |
+| Earthquake Trap   | The world and camera shake profusely                                            |
+| Teleport Trap     | Jak immediately teleports to the Underground Hideout                            |
+| Despair Trap      | Sig turnings into Mario                                                         |
+| Pacifism Trap     | Jak's physical attacks have no effect on enemies, crates or buttons             |
+| No Light Eco Trap | ~~Jak's light eco is drained and he cannot collect new light eco                |
+| Health Trap       | Jak's health is set to 0 - not dead yet, but he will die to any attack or bonk  |
+| Ledge Trap        | Jak cannot grab onto ledges                                                     |
+| Reverse Trap      | Jak's controls get reversed                                                     |
+| Mirror Trap       | The world is mirrored                                                           |
+| Ammo Trap         | Jak has all of his ammo taken away from him, making his guns unusable           |
+| Dark Trap         | Jak gives into his anger, forcefully transforming into Dark Jak                 |
+| Hero Trap         | The world gains the properties of the game's "Hero Mode" difficulty             |
 
 ## I got soft-locked and I can't leave, how do I get out of this?
 
-Open the pause menu, navigate to `Restart/Quit`, then `Go to Spargus`, then `Yes`.
-Selecting this option will put you back into Spargus. From there, you can make your way
-back to where you were prior to getting stuck.
+Open the Game options, Go to Archipelago Options, Then select a Place to teleport
+besides Spargus Garage, each other place needs the required passes to get to.
 
 ## How do I reach certain areas like Volcano, Eco Mines, or War Factory?
 

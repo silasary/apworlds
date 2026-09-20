@@ -1,6 +1,7 @@
 # Super Tux Kart
 
-
+SuperTuxKart is an open source racing game with a story mode unlike many others.
+Can you beat nolok in a race?
 
 
 ## Downloads

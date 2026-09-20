@@ -1,10 +1,10 @@
 # Tales of Maj&#x27;Eyal
 
-
+Tales of Maj&#x27;Eyal is an open-source roguelike set in a completely original world.
 
 
 ## Downloads
-- <a href="https://github.com/rosen200/Archipelago/releases/download/v0.0.6/tome.apworld">Latest Version (0.0.5r2)</a>
+- <a href="https://github.com/rosen200/Archipelago/releases/download/v0.0.7/tome.apworld">Latest Version (0.0.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

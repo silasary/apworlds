@@ -1,9 +1,12 @@
 # Archipelago Visual Tracker
 
 ## Latest
-- <a href="https://github.com/Wakamu/Archipelago/releases/download/0.3.20/visualtracker.apworld">Latest Version (0.3.20)</a>
+- <a href="https://github.com/Wakamu/Archipelago/releases/download/0.3.30/visualtracker.apworld">Latest Version (0.3.30)</a>
 
 ## All Versions
+
+#### v0.3.30
+- <a href="https://github.com/Wakamu/Archipelago/releases/download/0.3.30/visualtracker.apworld">https://github.com/Wakamu/Archipelago/releases/download/0.3.30/visualtracker.apworld</a>
 
 #### v0.3.20
 - <a href="https://github.com/Wakamu/Archipelago/releases/download/0.3.20/visualtracker.apworld">https://github.com/Wakamu/Archipelago/releases/download/0.3.20/visualtracker.apworld</a>
