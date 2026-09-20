@@ -1,6 +1,6 @@
 {
   "authors": [
-    "Olivier"
+    "ljtpetersen"
   ],
   "description": "Pokemon HeartGold & SoulSilver -- registered game name \"Pokemon\nHGSS\" (renamed 2026-08-15 from \"Pokemon HeartGold\" now that both\nversions are equally first-class; see docs/architecture.md's\n\"SoulSilver support\" entry).",
   "flags": [],
@@ -13,6 +13,96 @@
     "world_version"
   ],
   "versions": {
+    "v0.0.1": {
+      "created_at": "2026-08-23T23:40:51Z",
+      "description": "First release.",
+      "download_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.1/pokemon_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e42ef198661caabd2a64d8a6dd3d67075e300a03baf6ed3f00fb6f6077cb9a45",
+      "html_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/tag/v0.0.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 3953505,
+      "source_url": "https://api.github.com/repos/ljtpetersen/hgss_archipelago",
+      "tag": "v0.0.1",
+      "title": "Release 0.0.1",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "v0.0.2": {
+      "created_at": "2026-08-24T00:53:59Z",
+      "description": "## Changelog\r\n### Fixed\r\n* Necessary options are properly added to slot data for UT regen.",
+      "download_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.2/pokemon_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d01c462b9e3ba58cdb1a4543191bb37ebfcf855a11de8a95a631695194bc736e",
+      "html_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/tag/v0.0.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 3953931,
+      "source_url": "https://api.github.com/repos/ljtpetersen/hgss_archipelago",
+      "tag": "v0.0.2",
+      "title": "Release 0.0.2",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1r2"
+    },
+    "v0.0.3": {
+      "created_at": "2026-08-25T03:12:26Z",
+      "description": "## Changelog\r\n### Fixed\r\n* Requirement of defeating the league to travel upwards through the Route 40 Battle Frontier gatehouse has been added.\r\n* Requirement of obtaining the Mystery Egg to reach the northwest part of Route 30 has been added.\r\n* Logic can now expect obtaining Escape Ropes from Celadon Department Store.\r\n* Logic can now expect obtaining Vitamins from Celadon Department Store and Safari Zone Gate.\r\n* Corrected the description of the `icy_rock_locations` option to mention Seafoam Islands and Ice Path.\r\n* Requirement of using Surf to reach Cerulean City - Hidden Item in Water Near Cerulean Cave has been added.\r\n* Correct remote items option is now loaded in client.\r\n* Mr. Pok\u00e9mon now checks for the Red Scale itself, instead of the location where it is received.\r\n* The magnet train stations now respect the `require_restored_power_for_magnet_train` option.",
+      "download_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.3/pokemon_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e8073619f34c00ce843949dc0e8491449e02db8b008c60dc42e7623631d01fdd",
+      "html_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/tag/v0.0.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 3954228,
+      "source_url": "https://api.github.com/repos/ljtpetersen/hgss_archipelago",
+      "tag": "v0.0.3",
+      "title": "Release 0.0.3",
+      "version_simple": "0.0.3",
+      "world_version": "0.0.3"
+    },
+    "v0.0.4": {
+      "created_at": "2026-08-26T13:56:29Z",
+      "description": "### Fixed\r\n* Corrected logic rules on connections between Viridian Forest, Route 2, and Pewter City.\r\n* Client now supports proper versions.\r\n* TM moves for species learnsets are properly obtained.",
+      "download_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.4/pokemon_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c752fd2314adb338c4effa5b538704b065b0151c2a2219924a38eddc21d78c7f",
+      "html_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/tag/v0.0.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 3961545,
+      "source_url": "https://api.github.com/repos/ljtpetersen/hgss_archipelago",
+      "tag": "v0.0.4",
+      "title": "Release 0.0.4",
+      "version_simple": "0.0.4",
+      "world_version": "0.0.4"
+    },
+    "v0.0.5": {
+      "created_at": "2026-08-30T05:54:55Z",
+      "description": "## Changelog\r\n### Added\r\n* `game_debug` client command.\r\n### Fixed\r\n* Removed holdovers from Platinum in some option descriptions.\r\n* Fixed `legendaries` blacklist shorthand not working.\r\n* Fixed various minor typographical errors in some option descriptions.\r\n* Fixed description of `dexsanity_required` inaccurately describing the effect of the `legendaries` keyword.\r\n* Requirement of using Cut to access Route 14 - Item from Woman in Grass Patch after Showing Chansey has been added.\r\n* Fixed issues relating to New Bark East exit.\r\n* Fixed Kimono Girls' trainersanity locations.\r\n* Fixed S.S. Anne softlock if initially travelling from Vermilion.\r\n* Fixed the crash with the \"SET TIME\" menu when within the starting room, before receiving the starting items.\r\n* Fixed issues relating to Copycat and the Lost Item.\r\n* Fixed issues regarding receiving the Clear/Tidal bell in the rooms containing to their legendaries.\r\n* Fixed issue with Ethan/Lyra's theme after the catching tutorial.\r\n* Fixed hardlock when talking to NPC in Fuchsia Pok\u00e9mon Center.\r\n* Fixed S.S. Ticket location in Prof. Elm's lab.",
+      "download_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.5/pokemon_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f8ecdea0564ff337c1612201c647cf7730f3aed631a3ad75065df1a3369821a2",
+      "html_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/tag/v0.0.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 3976563,
+      "source_url": "https://api.github.com/repos/ljtpetersen/hgss_archipelago",
+      "tag": "v0.0.5",
+      "title": "Release 0.0.5",
+      "version_simple": "0.0.5",
+      "world_version": "0.0.5"
+    },
+    "v0.0.6": {
+      "created_at": "2026-09-03T01:32:04Z",
+      "description": "### Added\r\n* Event, position, species tracking to the client.\r\n### Fixed\r\n* Fixed a part of the setup guide mentioning Platinum instead of HeartGold/SoulSilver.\r\n* Removed references to Pok\u00e9mon Platinum in a few places.\r\n* Night fishing encounters are now properly handled.\r\n* HM accessibility is now properly checked.\r\n* NPCs in Goldenrod Tunnel B1F are now accessible during the Team Rocket Radio Tower Event.\r\n* Trainers in S.S. Aqua that originally disappeared after the first voyage now remain.\r\n* OOL encounters in slot data are now filled correctly.\r\n* Seeds with unrandomized badges now generate properly.",
+      "download_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.6/pokemon_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9683d2b844d71def8ab1fdf0bc37ea53a0c201db30e3692e918a15d6e8e4ab03",
+      "html_url": "https://github.com/ljtpetersen/hgss_archipelago/releases/tag/v0.0.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 4039896,
+      "source_url": "https://api.github.com/repos/ljtpetersen/hgss_archipelago",
+      "tag": "v0.0.6",
+      "title": "Release 0.0.6",
+      "version_simple": "0.0.6",
+      "world_version": "0.0.6"
+    },
     "v0.2.1": {
       "created_at": "2026-08-15T22:46:01Z",
       "description": "# Major Fix and Implementation\r\n\r\n## Added\r\n- **Real badge randomization.** Badges are now tradeable/shufflable AP items instead of a fixed logic milestone.\r\n- **Trainersanity, made real.** 390 real, fillable trainer-battle locations, off by default via the `trainersanity` option.\r\n- **A 4th wild-encounter randomization mode**, `zone_method_mapping`: assigns one consistent replacement species per (zone, encounter method) group.\r\n- **Ho-Oh and Lugia as real, checkable locations.** Only reachable after defeating the Elite Four/Champion, matching vanilla; losing/fleeing never blocks anything.\r\n- **Quality-of-life options**: `fast_text_speed` 1 frame / character and `skip_battle_animations`, live-verified against a real BizHawk session. Both off by default.\r\n- **Reusable TMs** option: a consumed TM reappears in the Bag on the client's next poll. ( 1 sec reset )\r\n- **DeathLink support.**\r\n- **Dexsanity** adapt with Randomizer pokemon encounter\r\n- **Convert trade/friendship evolutions** option: rewrites trade-/friendship-based evolutions into plain level-up evolutions at a configurable level.\r\n- The garbled \"???\" placeholder name shown when picking up another player's item is now a real, readable message.\r\n- **legendarysanity**\r\n\r\n## Changed\r\n- **Renamed the world from \"Pokemon HeartGold\" to \"Pokemon HGSS\"** (built file is now `pokemon_hgss.apworld`), reflecting dual HeartGold/SoulSilver support. Patch file extension and settings key are kept unchanged for backward compatibility.\r\n- The starter-choice screen now shows the actually-randomized species' name instead of always showing Chikorita/Cyndaquil/Totodile.\r\n- Randomized starters are now restricted to species with at least one evolution, matching vanilla.\r\n\r\n## Fixed\r\n- **Region graph logic bugs** found via real tester spoiler-log feedback: two missing vanilla HM/item gates, and a one-way ledge that wrongly let players climb back up.\r\n\r\n## Planned for a future release\r\n- Trainer level matching (blocked on a live battle-state ARM hook this project has no toolchain for)\r\n- Randomized start location + starter kit (same class of blocker)\r\n- Human-readable location display names\r\n- Optional extra-difficulty mode: artificial route/passage blockers beyond the existing HM/badge/item gates\r\n\r\n##Updrating\r\nDelete the old pokemon_heartgold.apworld from your custom_worlds folder before installing this one.\r\n\r\nFull details: [CHANGELOG.md](https://github.com/SingeKiller/Pok-HeartGold_Apworld/blob/main/CHANGELOG.md)\r\n\r\n",
