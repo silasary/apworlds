@@ -85,7 +85,7 @@ of everything specific to this game:
 | NG+ Items | On | Off: removes RYNO and the Chameleon/Hyperborean armour sets from generation (along with their Weapon Level and Armour Set checks, and Stalker/Ice II, which need a Chameleon or Hyperborean piece), since these are New Game Plus exclusives that would be unobtainable on a fresh playthrough. |
 | Challenge Mode | 0 | Enables the game's Challenge Mode (New Game Plus) tier and controls how far generation reaches into it. 0: vanilla, no Challenge Mode content. 1: adds the RYNO vendor purchase, 10 Challenge-Mode-only weapon mod purchases, and the 4 Hyperborean armour pieces. 2: everything from tier 1, plus the 4 Chameleon armour pieces. Everything this unlocks is still gated by NG+ Items — with that off, this option alone has no effect. |
 | Death Amnesty | 0 | Number of deaths allowed before items are removed from your inventory on death. Higher is more forgiving. |
-| Starting Skin | Default | Cosmetic skin for Ratchet, applied automatically on each planet load. All skins are unlocked in-game regardless of this choice. **If you've set this to anything other than Default, open the in-game Skins menu and close it again after each planet load** — skipping this step can leave Ratchet's model invisible instead of showing the chosen skin. |
+| Starting Skin | Default | Cosmetic skin for Ratchet, applied automatically on each planet load. Includes the seven single-player skins and thirteen red multiplayer skins, with no blue variants. All skins are unlocked in-game regardless of this choice. |
 
 ### Game Links
 
