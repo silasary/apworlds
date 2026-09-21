@@ -1,9 +1,12 @@
 # Castlevania: Order of Ecclesia
 
 ## Latest
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe2.0/cv_ooe.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe2.0.1/cv_ooe.apworld">Latest Version (2.0.1)</a>
 
 ## All Versions
+
+#### v2.0.1
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe2.0.1/cv_ooe.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvooe2.0.1/cv_ooe.apworld</a>
 
 #### v2.0.0
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe2.0/cv_ooe.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvooe2.0/cv_ooe.apworld</a>

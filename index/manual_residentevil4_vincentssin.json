@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "VincentsSin"
+  ],
   "description": "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.\nThis allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.\nThe key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,\nthe player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent.",
   "game": "Manual_ResidentEvil4_VincentsSin",
   "github": "https://github.com/VincentsSin/Resident-Evil-4-Manual-AP",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v1.2.0": {
       "created_at": "2025-01-11T01:50:27Z",
@@ -281,6 +288,21 @@
       "title": "Resident Evil 4 (2005) Manual APWorld v2.1.4",
       "version_simple": "2.1.4",
       "world_version": "2.1.4"
+    },
+    "v2.2.0": {
+      "created_at": "2026-09-21T05:25:57Z",
+      "description": "Changes:\r\n- Reorganized location names to break alphabetical sorting, instead using mostly numerical to maintain story order listing.\r\n  - Memos are excluded due to their unique names and small amount.\r\n- Added `Infinite Launcher`, `Chicago Typewriter`, and `P.R.L. 412` to Merchant locations.\r\n  - Will only populate if relative weapons are enabled in yaml settings.\r\n- Healing items are now their own singular item to find. Does not affect logic; all are marked `useful`.\r\n\r\nFixes:\r\n- Added missing `Stock (Red9)` and `Punisher` locations from Merchant checks.\r\n- Fixed `Chapter 1-2` region connection ignoring progressive chapter requirement through incorrect connection from `Chapter 1-1 Merchant` if `New Game Plus` was enabled.",
+      "download_url": "https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/download/v2.2.0/manual_residentevil4_vincentssin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "292b0662df68f85a173e75008a5a20519894df222a44777a2baf31c4ed5c7977",
+      "html_url": "https://github.com/VincentsSin/Resident-Evil-4-Manual-AP/releases/tag/v2.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 97840,
+      "source_url": "https://api.github.com/repos/VincentsSin/Resident-Evil-4-Manual-AP",
+      "tag": "v2.2.0",
+      "title": "Resident Evil 4 (2005) Manual APWorld v2.2.0",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0"
     }
   }
 }
