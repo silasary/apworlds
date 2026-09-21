@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-20T18:16:21.527603+00:00</updated>
+  <updated>2026-09-21T00:23:18.310969+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
@@ -514,32 +514,6 @@ Free code signing for open source projects, provided by
     <link href="https://github.com/Haywire32/LoS-Archipelago/releases/tag/v0.7.0"/>
   </entry>
   <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.17.2</title>
-    <updated>2026-09-18T17:34:19+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `de7df720114537239a531cf2fc0dd4613d9286e0`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.17.2
-
-- feat(missions): the Windows SigMod row says beta, and the docs say why
-- fix(plugin): Windows signatures for 13 hooks that only had Linux symbols
-- feat(missions): a server mod is off, needed, or always, and SigMod returns to Windows
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.2</id>
     <title>Team Fortress 2 Mann vs Machine v1.17.2r2</title>
     <updated>2026-09-18T17:34:25+00:00</updated>
@@ -789,7 +763,7 @@ Note: should be fully backwards compatible with worlds generated at v1.0.2. Also
 v2.2 contains *way* more than originally planned for it. It transitioned from "the next few things on my mind" to "do everything I can before I feel OK with putting it down for a bit". The to-do list still isn't totally empty, so there may still be a v2.3 in the relatively near future, but I don't anticipate any more *big* updates as there really aren't many other moderate-to-big sized features left to add at this point.&#13;
 # Changelog&#13;
 ## Hotfix 2 (~2:30am EDT Sept. 20th)&#13;
-* Fixed a secondary issue relating to costs for boss lairs/light gem doors/gadgets not getting appropriately randomized/shuffled. Only the .apworld file needs to be updated for this fix (game mod and YAML are unchanged).&#13;
+* Fixed a secondary issue relating to costs for boss lairs/light gem doors/gadgets not getting appropriately randomized/shuffled. If you have hotfix 1, only the .apworld file needs to be updated for this fix (game mod and YAML are unchanged).&#13;
 &#13;
 ## Hotfix 1 (~7:30am EDT Sept. 19th)&#13;
 * Updated game mod from v17 -&gt; v18, which contains a fix for a PAL-exclusive game-breaking bug in Gloomy Glacier (collectibles were not being tracked). Even if using NTSC, you need to update your mod to v18 to avoid the client giving a warning about incompatibility.&#13;
@@ -843,30 +817,6 @@ v2.2 contains *way* more than originally planned for it. It transitioned from "t
 &#13;
 - Fixed logic bug to properly prevent access into the Flutter if the player doesn't have the Red refractor.</content>
     <link href="https://github.com/functorial/MMLAP/releases/tag/v0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2</id>
-    <title>IslesOfSeaAndSky v2.1.2.post2</title>
-    <updated>2026-09-19T01:05:28+00:00</updated>
-    <author>
-      <name>KimDelicious</name>
-    </author>
-    <author>
-      <name>Angrevol</name>
-    </author>
-    <author>
-      <name>Woli</name>
-    </author>
-    <author>
-      <name>Cuberyl</name>
-    </author>
-    <content>Fixes:&#13;
-- Fixed AP mod not working on Linux (hopefully)&#13;
-&#13;
-Logic Fixes:&#13;
-- Fixed an issue with Stony Cliffs B4 logic not requiring Earth Elementals&#13;
-- Fixed Sea Nunatak B0 Pyramidion not requiring Ancient Rune Stone </content>
-    <link href="https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2"/>
   </entry>
   <entry>
     <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.3</id>
@@ -1331,7 +1281,7 @@ When a secret disk arrives from Archipelago the game's message box displays its 
   </entry>
   <entry>
     <id>https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.7</id>
-    <title>Gauntlet Legends v2.1.7</title>
+    <title>Gauntlet Legends v2.1.7.post2</title>
     <updated>2026-09-20T04:16:31+00:00</updated>
     <author>
       <name>jamesbrq</name>
@@ -1456,5 +1406,131 @@ Make sure you use Mupen64-plus-next in Retroarch as your core.&#13;
     <content>## Fixes&#13;
 - Removed debug logging during generation.</content>
     <link href="https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/tag/bomberman_tsa_v1.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2</id>
+    <title>IslesOfSeaAndSky v2.1.2.post3</title>
+    <updated>2026-09-20T18:14:59+00:00</updated>
+    <author>
+      <name>KimDelicious</name>
+    </author>
+    <author>
+      <name>Angrevol</name>
+    </author>
+    <author>
+      <name>Woli</name>
+    </author>
+    <author>
+      <name>Cuberyl</name>
+    </author>
+    <content>Changes:&#13;
+- Added an error message when the apOptions file cannot be found by the game (It means that client is not writing to the right folder)&#13;
+- The error message will tell the user to use user to use the /savepath command to configure the client to target the correct folder&#13;
+&#13;
+Logic Fixes:&#13;
+- Fixed an issue with Stony Cliffs B4 logic not requiring Earth Elementals&#13;
+- Fixed Sea Nunatak B0 Pyramidion not requiring Ancient Rune Stone </content>
+    <link href="https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release4</id>
+    <title>Ocarina of Time v9.1.0r2</title>
+    <updated>2026-09-20T19:07:42+00:00</updated>
+    <author>
+      <name>espeon65536</name>
+    </author>
+    <author>
+      <name>TreZ</name>
+    </author>
+    <content># OoT Randomizer APWorld v9.1.0 Full Release 4&#13;
+&#13;
+This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
+&#13;
+## Changes:&#13;
+- Fixed TCG doors handling with small key removal&#13;
+- Missing Silver Rupee Flag Patches&#13;
+&#13;
+Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.&#13;
+Even after deletion, the "Open Patch" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct "Ocarina of Time Client" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says "Archipelago Ocarina of Time Client 0.6.x" in the top bar with no info about the apworld version, you are using the old client.</content>
+    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/z3xox/Budokai3AP/releases/tag/v0.2.4</id>
+    <title>Dragon Ball Z Budokai 3 v0.2.4</title>
+    <updated>2026-09-20T21:24:39+00:00</updated>
+    <author>
+      <name>z3xox</name>
+    </author>
+    <content>**⚠️ Existing seeds must be regenerated.** Location names and item classifications changed, so a run generated on v0.2.3 or earlier will not work with this build. Finish it on the old version or reroll.
+
+### Fixed
+
+- **The Skill Shop sometimes opened as the normal shop instead of the AP shop** — capsule purchases didn't send checks, and the client froze for several seconds at a time. The shop now loads AP stock reliably and without the stall.
+- **Crash when entering your first Dragon Arena fight** after picking a stage.
+- **Winning a fight sometimes sent a DeathLink death.** If the KO registered just before the results screen appeared, your win was reported as a death.
+- **Quitting a Dragon Arena fight sent its death at the wrong moment** — it stayed queued and fired later, usually when you next walked into the arena. It now fires when you quit.
+- **Seeds with ShopSanity off:** the Skill Shop was emptied on every entry, so you couldn't buy anything with your Zeni.
+- **Kid Gohan's Frieza fight was mislabeled** as First Form — it's Third Form.
+
+### Changed
+
+- **Fight names are consistent.** Frieza uses ordinals (`Frieza 1st/2nd/3rd/Final Form`); Cell uses his real form names (`Imperfect Cell`, `Semi-Perfect Cell`, `Perfect Cell`) instead of a mix of numbers and parentheticals.
+- **Skill capsules are now `useful` instead of filler** — all 11 Breakthroughs plus every DU character ability (transformations, signature attacks, Unlock Potential, fusions). They're weighted better in placement and surface in trackers and hints. They still aren't required by logic.
+
+### New
+
+- **`/deathlink`** toggles DeathLink on or off mid-run from the client, and it sticks across reconnects.
+</content>
+    <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.17.2r2</title>
+    <updated>2026-09-20T22:37:44+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `69d2afa79ecc0918682cdc079936f9cbbac09894`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.17.2
+
+- feat(launcher): mirror the pinned community archives on GitHub
+- Cap stock Caliginous extraction retries during startup
+- fix(deploy): handle popfile cleanup errors explicitly
+- style(deploy): format stock popfile installer
+- fix(mvm): repair stock Caliginous Caper wave 666
+- Avoid archive rehash in settings and clear stale import markers
+- Fix archive hash PR lint and browser expectations
+- Pin community archive hashes and require explicit mismatch approval
+- Keep SigMod server config conditional and test both modes
+- fix(mvm): exclude RED defenders from invader limit
+- Log stalled invader removals and make timeout configurable
+- fix(plugin): clear invaders stuck protected in spawn
+- Derive Medic-only catalog label from population ClassLimit
+- feat(missions): label Remedic as Medic only
+- Keep Bot Surge acceleration for high-capacity TFBot spawns
+- fix(bot surge): preserve scripted wave timers
+- Poll run seed only for Docker test rooms
+- fix: refresh plugin missions when Docker test run changes
+- fix: honor full eligible mission pool in Docker test mode
+- Scope SigMod includes to each archive and refresh catalog counts
+- fix(gamedata): mark missions using shared SigMod extensions
+- Share missing mod wording and name mission table inputs
+- fix: keep edited SigMod config from hiding missions
+- Fix mission checkbox assertion for SigMod choice
+- feat(missions): the Windows SigMod row says beta, and the docs say why
+- fix(plugin): Windows signatures for 13 hooks that only had Linux symbols
+- feat(missions): a server mod is off, needed, or always, and SigMod returns to Windows
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
 </feed>

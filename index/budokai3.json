@@ -200,6 +200,20 @@
       "title": "v0.2.3",
       "version_simple": "0.2.3",
       "world_version": "0.2.3"
+    },
+    "v0.2.4": {
+      "created_at": "2026-09-20T21:24:39Z",
+      "description": "**\u26a0\ufe0f Existing seeds must be regenerated.** Location names and item classifications changed, so a run generated on v0.2.3 or earlier will not work with this build. Finish it on the old version or reroll.\n\n### Fixed\n\n- **The Skill Shop sometimes opened as the normal shop instead of the AP shop** \u2014 capsule purchases didn't send checks, and the client froze for several seconds at a time. The shop now loads AP stock reliably and without the stall.\n- **Crash when entering your first Dragon Arena fight** after picking a stage.\n- **Winning a fight sometimes sent a DeathLink death.** If the KO registered just before the results screen appeared, your win was reported as a death.\n- **Quitting a Dragon Arena fight sent its death at the wrong moment** \u2014 it stayed queued and fired later, usually when you next walked into the arena. It now fires when you quit.\n- **Seeds with ShopSanity off:** the Skill Shop was emptied on every entry, so you couldn't buy anything with your Zeni.\n- **Kid Gohan's Frieza fight was mislabeled** as First Form \u2014 it's Third Form.\n\n### Changed\n\n- **Fight names are consistent.** Frieza uses ordinals (`Frieza 1st/2nd/3rd/Final Form`); Cell uses his real form names (`Imperfect Cell`, `Semi-Perfect Cell`, `Perfect Cell`) instead of a mix of numbers and parentheticals.\n- **Skill capsules are now `useful` instead of filler** \u2014 all 11 Breakthroughs plus every DU character ability (transformations, signature attacks, Unlock Potential, fusions). They're weighted better in placement and surface in trackers and hints. They still aren't required by logic.\n\n### New\n\n- **`/deathlink`** toggles DeathLink on or off mid-run from the client, and it sticks across reconnects.\n",
+      "download_url": "https://github.com/z3xox/Budokai3AP/releases/download/v0.2.4/budokai3.apworld",
+      "has_manifest": false,
+      "hash_sha256": "499128f7dbeeb9e79b9c5df717f727193153062c779e1800bf42026be5afb0ca",
+      "html_url": "https://github.com/z3xox/Budokai3AP/releases/tag/v0.2.4",
+      "size": 71907,
+      "source_url": "https://api.github.com/repos/z3xox/Budokai3AP",
+      "tag": "v0.2.4",
+      "title": "v0.2.4",
+      "version_simple": "0.2.4",
+      "world_version": "0.2.4"
     }
   }
 }
