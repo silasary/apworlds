@@ -5,7 +5,7 @@ tasks to send items to their multiworld allies.
 
 
 ## Downloads
-- <a href="https://github.com/barretg/Taskipelago/releases/download/v1.1.1/taskipelago.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/barretg/Taskipelago/releases/download/v1.2.0-pre/taskipelago.apworld">Latest Version (1.2.0rc0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

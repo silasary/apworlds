@@ -2,298 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-21T18:21:51.766536+00:00</updated>
+  <updated>2026-09-22T00:21:38.006151+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.2</id>
-    <title>Team Fortress 2 Mann vs Machine v1.17.2r2</title>
-    <updated>2026-09-18T17:34:25+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Added
-
-- **A Documentation link in the launcher's footer.** It opens the book, which
-  now walks every tab and every settings page with a picture of each, and has a
-  page on the campaign tracker.
-
-### Fixed
-
-- **SigMod is off on Windows again, and a Windows server that has it installed
-  starts.** v1.17.0 offered SigMod on the Missions page on Windows. Ticking it
-  installed a build whose game server died with a corrupted heap before it
-  finished loading, on every start, and the launcher only said the server had
-  crashed. Unticking the mod could not undo it: the extension installs a file
-  that makes the server load it whatever the launcher's settings say, so the
-  crash outlived the setting. Start now takes that installation off the disk
-  and runs without it, the row on the Missions page says there is no Windows
-  build, and a run whose missions need SigMod no longer refuses to start on a
-  machine that cannot have it. Linux is unchanged. Reported by [-SAM-].
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.17.1...v1.17.2
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/NjQ0ZjQ4ZjdhZDQwYjE3ZjUzYWYyNzJhYjdmZGNlYjE6MTc4OTc1MzIyMg==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZThjOTZkY2I5OWJmNjc3NTcxMGRiNjA4ZmIyM2MyOTA6MTc4OTc1MzIyNA==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.1.1</id>
-    <title>Taskipelago v1.1.1</title>
-    <updated>2026-09-18T18:41:25+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>*One client to rule them all... and also I fixed the bug with item count syntax*&#13;
-&#13;
-Quick bug fix patch because * syntax wasn't supported for duplicate items.&#13;
-&#13;
-## What's new (v1.1.0)&#13;
-* One unified web client that hosts itself from the apworld, or is hosted at the [usual web address](https://barretg.github.io/Taskipelago/web-client/).&#13;
-* Hints tab&#13;
-* Deathlink alerts with noises that can be turned on and off&#13;
-* Deathlink lock mode&#13;
-* Deathlink task rows&#13;
-* Item filtering on items tab&#13;
-* Find/replace on YAML Generator&#13;
-* Renaming something optionally updates all references for your convenience&#13;
-* Reordering of tasks/items is now supported&#13;
-* Progressive groups now have colors tied to them&#13;
-* Bingo now generates filler if no items are listed&#13;
-* Fixed case where names with trailing special characters made things a little funky&#13;
-&#13;
-Note: should be fully backwards compatible with worlds generated at v1.0.2. Also Universal Tracker is still incompatible.</content>
-    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.6</id>
-    <title>Hollow Knight: Silksong v0.4.6</title>
-    <updated>2026-09-18T20:18:01+00:00</updated>
-    <author>
-      <name>BatAtVideoGames</name>
-    </author>
-    <content>Probably the most massive update in terms of logic, also lots of other new randomization options and fixes&#13;
-**Already started runs do not work if you update. You'll either have to start a new seed or wait with updating until old one is done**&#13;
-(Also as usual if you like what I do and wann [buy me a coffee](https://streamlabs.com/batatvideogames/tip) I'd appreciate it)&#13;
-&#13;
-## Changelog &#13;
-&#13;
-### Big Changes&#13;
-&#13;
-- **Massive logic overhaul, 794 of 863 locations now have logic and improved graphs**&#13;
-- Old Hearts rando option added (conjoined hearts remains vanilla until verdania is mapped)&#13;
-- Hermit Soul, Maiden Soul and Seeker Soul rando option added&#13;
-- Eva and her 5 rewards are now options (for crest slot rando it does in fact depend on how many of those you get)&#13;
-- Bellshrine-sanity: the shrine doors are closed/open not depending on if you hit the lever but if you own the respective bell item&#13;
-- Fixed Diving Bell progression, the Shamans at the beginning of Act 3 properly give the quest needed&#13;
-- Complete rework of Vog hints. You buy information on how many progression items are left in an area rather than WotH/Foolish/General hints&#13;
-(they also no longer bog down multiworlds)&#13;
-- Act 2 and 3 items now in Act 1 wincon pool, Act 3 items now in pool of Act 2/Cursed wincon&#13;
-- New option to determined Silk and Soul points needed (between 0-24). This does not get rid of the other requirements needed&#13;
-- Full map has a crosshair now so people don't struggle with seeing where their cursor is&#13;
-- (by Skai) Received items now have icons that properly display what item they are rather than the generic rosary-AP symbol&#13;
-&#13;
-&#13;
-### Bugfixes / Other&#13;
-&#13;
-* Needle Phial becomes usable again when reissued for Advanced Alchemy&#13;
-* Removed Needle Phial from the Huntress’s skewered-organ logic, new games require Sting Shard or Longpin&#13;
-* Cursed Crest traps survive autosaves without saving the temporary curse permanently&#13;
-* Bellhome’s act 3 &lt;-&gt; 2 rollback prompt now blocks movement&#13;
-* "Dead" 12th Architect reactivates if Silkshot check not done&#13;
-* Added 5 missing boss-sanity checks and 3 missing wish-sanity checks&#13;
-* Removed Verdania Lake Plaque because it's missable&#13;
-* Moved Putrified Ducts Shell Shard Cache 6 onto the floor beside 7&#13;
-* Stopped randomized spool reward animations from incorrectly refilling silk&#13;
-* Fixed Choir cloaks remaining in inventory after quest completion&#13;
-* Preserved equipped tools after curing the Witch’s curse&#13;
-* Fixed Naked Trap equipping incorrect crests after reloading and blocking crafting&#13;
-* Fixed Covetous Pilgrim drops ignoring the rosary multiplier&#13;
-* Corrected progression requirements for My Missing Brother wish&#13;
-* Removed the nonexistent Whispering Vaults necklace check from new games&#13;
-* Blocked F4 during the Witch Chapel escape to prevent permanently losing access to checks&#13;
-* Fixed double-jumping while holding Sprint without Drifter’s Cloak&#13;
-* Fixed Architect’s Melody leaving the HUD hidden and pause controls disabled&#13;
-* Fixed Silk and Soul’s quest display requiring the Snare Setter location instead of the item. The caregiver also needs AP-owned Snaresetter instead of vanilla location&#13;
-  * This was supposed to be fixed in previous version. TC made it so it checks inventory during dialog (already intercepted) and then CHECKS AGAIN during the yes/no prompt&#13;
-* Fixed Grand Gate quest checklist to reflect received bells&#13;
-* Red Memory sequence gets skipped without skipping story/everbloom acquisition&#13;
-* Added Proficient Combat option&#13;
-* Added Proficient Movement option&#13;
-* Moved Shakras map marker in Hunters March to her 2nd place&#13;
-* Craw Summons couldn't be obtained if player already owned the item&#13;
-* Spelling Bee goal failed if punctuation marks were in the winning phrase&#13;
-* Fixed a super niche save desync issue only insane people would've recreated organically&#13;
-* Fixed the wish "Torment, Anguish and Misery" to have its correct name "Pain, Anguish and Misery" in its location name&#13;
-* Reduced Cursed/Naked trap timer from 120s to 90s&#13;
-* Removed "shuffle" options for rosary caches, shell shard caches, lore tablets and relics (vanilla and anywhere still work)&#13;
-* Fixed caged slab frayed rosary string and shard bundle not dropping&#13;
-* (by Sergio) Bone Bottom &lt;-&gt; Mossgrave door now opens/closes slowly instead of being permanently after opening it from Mossgrave side to not destroy the Cling Grip route</content>
-    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0-PR</id>
-    <title>Spyro: A Hero's Tail v2.2.0.post3</title>
-    <updated>2026-09-18T21:40:35+00:00</updated>
-    <author>
-      <name>mayaxtg</name>
-    </author>
-    <author>
-      <name>ebbeaht</name>
-    </author>
-    <author>
-      <name>PhoenixAki</name>
-    </author>
-    <content># v2.2.0 (Prerelease): I Think I Like AHT Too Much...&#13;
-*Intended for use with game mod version 18 (see attachments).*&#13;
-&#13;
-v2.2 contains *way* more than originally planned for it. It transitioned from "the next few things on my mind" to "do everything I can before I feel OK with putting it down for a bit". The to-do list still isn't totally empty, so there may still be a v2.3 in the relatively near future, but I don't anticipate any more *big* updates as there really aren't many other moderate-to-big sized features left to add at this point.&#13;
-# Changelog&#13;
-## Hotfix 2 (~2:30am EDT Sept. 20th)&#13;
-* Fixed a secondary issue relating to costs for boss lairs/light gem doors/gadgets not getting appropriately randomized/shuffled. If you have hotfix 1, only the .apworld file needs to be updated for this fix (game mod and YAML are unchanged).&#13;
-&#13;
-## Hotfix 1 (~7:30am EDT Sept. 19th)&#13;
-* Updated game mod from v17 -&gt; v18, which contains a fix for a PAL-exclusive game-breaking bug in Gloomy Glacier (collectibles were not being tracked). Even if using NTSC, you need to update your mod to v18 to avoid the client giving a warning about incompatibility.&#13;
-* Fixed a few bugs with the in-game notifications, mainly affecting "sent \&lt;item\&gt; to \&lt;player\&gt;" messages.&#13;
-* Fixed a small typo that resulted in randomized costs for boss lairs/light gem doors/gadgets not actually being randomized.&#13;
-* Refactored the client's in-game map icon updating code to be more robust and easier to maintain.&#13;
-* Removed leftover text from the YAML referencing a scrapped feature idea.&#13;
-&#13;
-## Multiple New or Redesigned/Expanded Features&#13;
-* The PAL GC version of the game is now supported by the game mod! Shoutouts to @BrinchEbsen for tons of work on the game mod in this update.&#13;
-* Logging system redesigned to be a single choice of level of detail. Warning messages from YAML issues are now always logged.&#13;
-* The randomized shop system has been moderately redesigned to take more advantage of the gem logic system introduced in v2.0.&#13;
-  - `gem_logic` is now `shop_logic` and comes in 2 forms:&#13;
-    - `ordered` works identically to `gem_logic = true`.&#13;
-    - `unordered` is a replacement for `gem_logic = false` which completely removes the situation of having all shop items in logic in sphere 1. `unordered` will instead expect you to buy shop items in order as you gain access to enough gems to do them, but will not *restrict* you from buying them in another order if desired.&#13;
-  - Also, `shop_item_count` lets you customize how many shop items you have, now separated from `key_rings`.&#13;
-* The goal system has been expanded to allow for customization of how many AHT checks you must do for each, instead of all-or-nothing. AHT is now capable of a much wider variety of seeds, and is better suited for shorter goal syncs now. 2 new types of goals were added, as well (talking to elders, and minigames). `/check_goal` was redesigned to better suit this redesign.&#13;
-* `auto_corrections` expanded to `fix_minor` and `fix_major`. Minor fixes are things that are relatively inconsequential, major have a more notable impact on the seed.&#13;
-* Added support for 4 traps (Spam Call, Reverse Controls, Gem Tax, and Damage Sparx)! The first 2 have a customizable length of time they last, and you can customize how much of the junk pool will be traps vs. filler.&#13;
-## Other Things&#13;
-- Refactored/organized significant chunks of the codebase to be more smartly designed, particularly the item creation process.&#13;
-- Client commands have slightly better error checking now. Also added `/costs` as a convenience command that outputs various costs separately from `/list_options`.&#13;
-- Made an updated logic spreadsheet which lists every region and location access rule. May or may not be useful to the average person, but it's [here](&lt;https://tinyurl.com/ahtapsheet&gt;) for those interested in the internal logic rules (also pinned in the thread).&#13;
-- Map icons now render as red = unreachable, yellow = reachable, green = checked.&#13;
-- Every location was renamed to be less verbose, and they have a new ID mapping system which makes some features *way* easier to code.&#13;
-- Partially undid the custom sorting of locations in the tracker page. Locations are now sorted first in order of vanilla game levels, then alphabetically by logical region, then alphabetically by location.&#13;
-- "Generics" filler category is now called "Shinies". Same thing, they do nothing, just treat them like little shiny trinkets.&#13;
-- Added "Sent &lt;item&gt; to &lt;player&gt;" notifications in-game. None of us have any idea why they weren't there already, either...also added a small Easter egg when you receive a specific type of item from yourself :slight_smile:&#13;
-- Did you know there's some barrels and crates in Stormy Beach you can headbash? I didn't...their gems (270 total) are added to the gem logic system now.&#13;
-- `hint_boss_rewards` now hints all boss locations, not just the breath rewards.&#13;
-- Added location groups for Light Gem doors and gadgets.&#13;
-- Fixed an inconsequential logic bug in Magma Falls Bottom.&#13;
-&#13;
-[Setup Guide](https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&amp;-FAQ)</content>
-    <link href="https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0-PR"/>
-  </entry>
   <entry>
     <id>https://github.com/functorial/MMLAP/releases/tag/v0.3.2</id>
     <title>Mega Man Legends v0.3.0r2</title>
@@ -1235,6 +948,19 @@ Fixes:&#13;
     <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/2.3.4"/>
   </entry>
   <entry>
+    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/2.3.5</id>
+    <title>Manual_OneMoreNight_WolfBoi008 v2.3.5</title>
+    <updated>2026-09-21T14:01:22+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+#43: Memory Achievements Do Not Consider Unique Cases - I could use some help refining this since doing it alone would be annoying...&#13;
+# Changelog&#13;
+- Take a guess. Yep, changed the logic for Emptiness AGAIN. This should be the actual last time, I promise. I even refined it a little, too.</content>
+    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/2.3.5"/>
+  </entry>
+  <entry>
     <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.3</id>
     <title>Taylor Swift Discography v1.2.3</title>
     <updated>2026-09-21T14:59:47+00:00</updated>
@@ -1297,25 +1023,122 @@ Latest (main) releases are recommended, as pre-releases (staging) may contain ex
     <author>
       <name>ImJustATester</name>
     </author>
-    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.21
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.21&#13;
+&#13;
+**Branch:** main&#13;
+**Date:** 2026-09-21 18:01 UTC&#13;
+&#13;
+&lt;details&gt;&#13;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.20&lt;/strong&gt;&lt;/summary&gt;&#13;
+&#13;
+- fix(SM): fix rules error for shrink ray locations (41892199)&#13;
+- fix(SM): if mootator weapon is disabled disable crabby skill point (b64459e0)&#13;
+&#13;
+&lt;/details&gt;&#13;
+&#13;
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.20...rac-size-matters/v0.4.21&#13;
+&#13;
+### Notes&#13;
+This release was automatically generated from the **main** branch.&#13;
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
+</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.21"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.22</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.22</title>
+    <updated>2026-09-21T19:24:02+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## RaC Size Matters APWorld rac-size-matters/v0.4.22
 
 **Branch:** main
-**Date:** 2026-09-21 18:01 UTC
+**Date:** 2026-09-21 20:16 UTC
 
 &lt;details&gt;
-&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.20&lt;/strong&gt;&lt;/summary&gt;
+&lt;summary&gt;&lt;strong&gt;Changes since rac-size-matters/v0.4.21&lt;/strong&gt;&lt;/summary&gt;
 
-- fix(SM): fix rules error for shrink ray locations (41892199)
-- fix(SM): if mootator weapon is disabled disable crabby skill point (b64459e0)
+- fix(sm): weapon levels not persisting across levels (1cb8355c)
 
 &lt;/details&gt;
 
-**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.20...rac-size-matters/v0.4.21
+**Full changelog and compare**: https://github.com/Panguu/Archipelago-RaCSM/compare/rac-size-matters/v0.4.21...rac-size-matters/v0.4.22
 
 ### Notes
 This release was automatically generated from the **main** branch.
 Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
 </content>
-    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.21"/>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.22"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.2.0-pre</id>
+    <title>Taskipelago v1.2.0rc0</title>
+    <updated>2026-09-21T19:43:00+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>*The big region overhaul (and also clicker game mode)*&#13;
+&#13;
+## What's new (v1.2.0)&#13;
+* New types of item grouping definitions. Now progressive, aesthetic, or random-choice&#13;
+  * aesthetic groups merely group things aesthetically with no effect on progression or not.&#13;
+  * random-choice groups randomly choose N or N% as you define items from within the group to be included in the world. No tasks may depend on individual items in these groups since they aren't guaranteed to exist, but depending on the randomized group as a whole or by percentage/count is supported.&#13;
+  * progressive groups function the same as always&#13;
+* Regions can now also be randomized to include N or N% of tasks within that region. May optionally also shuffle the order in which such tasks appear.&#13;
+* Subregions can now be defined within regions that aren't randomized (subregions may be randomized).&#13;
+* Regions may now depend on items and tasks via the syntax item(expr) and task(expr) where expr is any valid task or item dependency expression&#13;
+* Tasclickpelago toggle on the yaml generator that enables a bunch of features for building out an idle game because the concept was funny and I thought of a way to do it well.&#13;
+* Style tab added to the YAML generator so you can recolor the entire application at will while connected to the slot in question. Pretty colors are pretty.&#13;
+&#13;
+Note: should be fully backwards compatible with worlds generated from 1.0 onwards. Also Universal Tracker is still incompatible.</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.2.0-pre"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.39</id>
+    <title>Mental Omega v1.39</title>
+    <updated>2026-09-21T19:59:40+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Fix Archipelago Crash and error when generating a map&#13;
+- Fix T1 Standard units were not assigned correctly&#13;
+- Adjust Elite Force Modification&#13;
+- Add MCV as unlocks&#13;
+- Adjust and Improve UI for Shopmode&#13;
+- Fix Nanofibre Sync not working correctly and crashing on some maps&#13;
+- Fix Weapon switching units loosing their buffs</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.39"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Happyhappyism/Bomberman-Hero-Archipelago/releases/tag/bomberman_hero_v0.2.4</id>
+    <title>Bomberman Hero v0.2.4</title>
+    <updated>2026-09-21T20:27:41+00:00</updated>
+    <author>
+      <name>Happyhappyism</name>
+    </author>
+    <content>## Fixes&#13;
+- Fixed an issue where the gem check count option didn't do anything.</content>
+    <link href="https://github.com/Happyhappyism/Bomberman-Hero-Archipelago/releases/tag/bomberman_hero_v0.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.8.1</id>
+    <title>Bloons TD6 v0.8.1</title>
+    <updated>2026-09-21T21:49:08+00:00</updated>
+    <author>
+      <name>Matt41321</name>
+    </author>
+    <content># Bloons AP v(0.10.0/0.8.1) (Mod/APWorld)&#13;
+&#13;
+- Fixed some Category Lock logic&#13;
+- Clearer option errors during generation&#13;
+- Fixed item count sometimes not matching locations</content>
+    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.8.1"/>
   </entry>
 </feed>
