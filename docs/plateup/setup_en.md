@@ -2,7 +2,7 @@
 
 ## Required Software
 
-- [Archipelago](github.com/ArchipelagoMW/Archipelago/releases/latest)
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
 - [The PlateUp apworld](https://github.com/CazIsABoi/Archipelago/releases), 
   if not bundled with your version of Archipelago
 - [PlateUp Archipelago Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3484431423) 
@@ -15,8 +15,8 @@ First, you need a room to connect to. For this, you or someone you know has to g
 This will not be explained here,
 but you can check the [Archipelago Setup Guide](https://archipelago.gg/tutorial/Archipelago/setup_en#generating-a-game).
 
-You also need to have [Archipelago](github.com/ArchipelagoMW/Archipelago/releases/latest) installed
-and the [The APQuest apworld](https://github.com/CazIsABoi/Archipelago/releases) installed into Archipelago.
+You also need to have [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest) installed
+and the [apworld](https://github.com/CazIsABoi/Archipelago/releases) installed into Archipelago.
 
 ## How to install
 
