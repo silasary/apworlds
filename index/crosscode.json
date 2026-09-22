@@ -917,6 +917,20 @@
       "version_simple": "0.9.7",
       "world_version": "0.9.7"
     },
+    "0.9.8": {
+      "created_at": "2026-09-22T07:26:10Z",
+      "description": "# Changes since 0.9.8 Prerelease 1\r\n\r\n## Changes to Mod\r\n\r\n* Map markers that had significant overlap with other map markers have had their position manually adjusted to improve legibility (@CodeTriangle, #102).\r\n  * In particular, this targets the overlapping chests in **Bergen Trail**, **Temple Mine**, **Faj'ro Temple**, and **So'najiz Temple**.\r\n  * If any incidences remain of overlapping markers, please make me aware.\r\n* Map markers are now shown for chests added by the mod, such as the ones in the lobbies of **Faj'ro Temple** and **Grand Krys'kajo** (@CodeTriangle, #102).\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where shop hints would not send unless both **Shop Dialog Hints** and **Quest Dialog Hints** were enabled (@CodeTriangle, #100).\r\n* Fixed an issue where botanics would not send immediately if the plant hit was an alternate form of the plant in question (@CodeTriangle, #100).\r\n* Map markers for chests that in the vanilla game contain chests keys no longer always display as unlocked.\r\n\r\n## Fixes to Logic\r\n\r\n* **Trial of Persistance Lower Left** no longer requires four So'najiz Keys to access (@CodeTriangle, #101).\r\n\r\n# Changes since 0.9.7\r\n\r\n## Changes to Mod\r\n\r\n* Added more functionality to the Archipelago menus (@CodeTriangle, #98).\r\n  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.\r\n  * Text client now automatically jumps to the bottom.\r\n  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.\r\n\r\n### Internal Changes\r\n\r\n* Reformatted a large amount of input data (@Valkhiya, #93)\r\n\r\n## Changes to APWorld\r\n\r\n* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).\r\n  * This should ensure that generations with the same seed produce the same output.\r\n* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).\r\n  * This should speed up generation on large scales.\r\n\r\n### Internal Changes\r\n\r\n* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).\r\n",
+      "download_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.8/crosscode.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d4df2d66cbb0d34ddd74a57c2102cec1addf4df24ebe32b418cd0a577870a600",
+      "html_url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8",
+      "size": 146547,
+      "source_url": "https://api.github.com/repos/CodeTriangle/CCMultiworldRandomizer",
+      "tag": "0.9.8",
+      "title": "0.9.8",
+      "version_simple": "0.9.8",
+      "world_version": "0.9.8"
+    },
     "0.9.8-pre.1": {
       "created_at": "2026-08-29T06:15:11Z",
       "description": "## Changes to Mod\r\n\r\n* Added more functionality to the Archipelago menus (@CodeTriangle, #98).\r\n  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.\r\n  * Text client now automatically jumps to the bottom.\r\n  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.\r\n\r\n### Internal Changes\r\n\r\n* Reformatted a large amount of input data (@Valkhiya, #93)\r\n\r\n## Changes to APWorld\r\n\r\n* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).\r\n  * This should ensure that generations with the same seed produce the same output.\r\n* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).\r\n  * This should speed up generation on large scales.\r\n\r\n### Internal Changes\r\n\r\n* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).",

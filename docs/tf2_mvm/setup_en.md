@@ -34,11 +34,13 @@ then **Generate seed**. To write it by hand, the options are under
 - `class_weapon_slots`: `off`, `progressive` or `any_order`. Each class earns
   its own slots.
 - `mission_ticket_importance`, `class_unlock_importance`,
-  `weapon_slot_importance`, `weapon_buff_importance`: `progression` or
-  `useful`. Tickets, classes and slots default to progression, buffs to
-  useful.
+  `weapon_slot_importance`, `weapon_buff_importance`: `progression`,
+  `useful`, or `disabled`. Disabled tickets, classes and slots are all unlocked
+  from the start and absent from the reward pool. Disabled buffs never appear;
+  spare checks pay cash instead. Tickets, classes and slots default to
+  progression, buffs to useful.
 - `cash_rewards`: whether spare checks pay cash. Off by default, so every
-  spare check pays a weapon buff.
+  spare check pays a weapon buff unless buffs are disabled.
 - `weapon_buff_percentage`: with cash on, the share of spare checks that pay a
   buff. The default is 75.
 - `weapon_buff_stack_chance`: how often a buff adds a level to one already in

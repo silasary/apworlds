@@ -2,34 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-22T06:16:54.243285+00:00</updated>
+  <updated>2026-09-22T12:15:56.048144+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.3</id>
-    <title>Starship Titanic v0.2.3</title>
-    <updated>2026-09-19T01:40:53+00:00</updated>
-    <author>
-      <name>rescheer</name>
-    </author>
-    <content># v0.2.3 (Unstable)&#13;
-Bug fix for client only. .apworld is unchanged. Compatible with existing seeds.&#13;
-## Fixes&#13;
-- Seed detection was writing the wrong size data into the save file. The game ignored it on load, which caused the client to assume any loaded save was a fresh save.&#13;
-## Changes&#13;
-- none&#13;
-## Known Issues in this release&#13;
-- Cosmetic issues with items in the world sometimes&#13;
-&#13;
-## General Tips&#13;
-- Ctrl+C opens the cheat menu, which allows teleporting around the ship. This shouldn't cause any major issues, but I would be careful spawning items, because that may get messy.&#13;
-- No visual tracker yet, but for now I highly recommend Universal Tracker to see in-logic checks&#13;
-&#13;
-Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
-    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.3"/>
-  </entry>
   <entry>
     <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac-size-matters/v0.4.16</id>
     <title>Ratchet &amp; Clank: Size Matters v0.4.16</title>
@@ -671,56 +648,6 @@ Even after deletion, the "Open Patch" Workflow in AP currently still starts the 
     <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.2.4"/>
   </entry>
   <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.17.2r2</title>
-    <updated>2026-09-20T22:37:44+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `69d2afa79ecc0918682cdc079936f9cbbac09894`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.17.2
-
-- feat(launcher): mirror the pinned community archives on GitHub
-- Cap stock Caliginous extraction retries during startup
-- fix(deploy): handle popfile cleanup errors explicitly
-- style(deploy): format stock popfile installer
-- fix(mvm): repair stock Caliginous Caper wave 666
-- Avoid archive rehash in settings and clear stale import markers
-- Fix archive hash PR lint and browser expectations
-- Pin community archive hashes and require explicit mismatch approval
-- Keep SigMod server config conditional and test both modes
-- fix(mvm): exclude RED defenders from invader limit
-- Log stalled invader removals and make timeout configurable
-- fix(plugin): clear invaders stuck protected in spawn
-- Derive Medic-only catalog label from population ClassLimit
-- feat(missions): label Remedic as Medic only
-- Keep Bot Surge acceleration for high-capacity TFBot spawns
-- fix(bot surge): preserve scripted wave timers
-- Poll run seed only for Docker test rooms
-- fix: refresh plugin missions when Docker test run changes
-- fix: honor full eligible mission pool in Docker test mode
-- Scope SigMod includes to each archive and refresh catalog counts
-- fix(gamedata): mark missions using shared SigMod extensions
-- Share missing mod wording and name mission table inputs
-- fix: keep edited SigMod config from hiding missions
-- Fix mission checkbox assertion for SigMod choice
-- feat(missions): the Windows SigMod row says beta, and the docs say why
-- fix(plugin): Windows signatures for 13 hooks that only had Linux symbols
-- feat(missions): a server mod is off, needed, or always, and SigMod returns to Windows
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
     <id>https://github.com/nmize1/Archipelago/releases/tag/v0.5.5-b</id>
     <title>The Simpsons Hit And Run v0.5.5b0</title>
     <updated>2026-09-21T00:39:10+00:00</updated>
@@ -1137,5 +1064,151 @@ Note: should be fully backwards compatible with worlds generated from 1.0 onward
 # Changes&#13;
 * Makes ionium happier</content>
     <link href="https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8</id>
+    <title>CrossCode v0.9.8</title>
+    <updated>2026-09-22T07:26:10+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content># Changes since 0.9.8 Prerelease 1&#13;
+&#13;
+## Changes to Mod&#13;
+&#13;
+* Map markers that had significant overlap with other map markers have had their position manually adjusted to improve legibility (@CodeTriangle, #102).&#13;
+  * In particular, this targets the overlapping chests in **Bergen Trail**, **Temple Mine**, **Faj'ro Temple**, and **So'najiz Temple**.&#13;
+  * If any incidences remain of overlapping markers, please make me aware.&#13;
+* Map markers are now shown for chests added by the mod, such as the ones in the lobbies of **Faj'ro Temple** and **Grand Krys'kajo** (@CodeTriangle, #102).&#13;
+&#13;
+## Fixes to Mod&#13;
+&#13;
+* Fixed an issue where shop hints would not send unless both **Shop Dialog Hints** and **Quest Dialog Hints** were enabled (@CodeTriangle, #100).&#13;
+* Fixed an issue where botanics would not send immediately if the plant hit was an alternate form of the plant in question (@CodeTriangle, #100).&#13;
+* Map markers for chests that in the vanilla game contain chests keys no longer always display as unlocked.&#13;
+&#13;
+## Fixes to Logic&#13;
+&#13;
+* **Trial of Persistance Lower Left** no longer requires four So'najiz Keys to access (@CodeTriangle, #101).&#13;
+&#13;
+# Changes since 0.9.7&#13;
+&#13;
+## Changes to Mod&#13;
+&#13;
+* Added more functionality to the Archipelago menus (@CodeTriangle, #98).&#13;
+  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.&#13;
+  * Text client now automatically jumps to the bottom.&#13;
+  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.&#13;
+&#13;
+### Internal Changes&#13;
+&#13;
+* Reformatted a large amount of input data (@Valkhiya, #93)&#13;
+&#13;
+## Changes to APWorld&#13;
+&#13;
+* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).&#13;
+  * This should ensure that generations with the same seed produce the same output.&#13;
+* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).&#13;
+  * This should speed up generation on large scales.&#13;
+&#13;
+### Internal Changes&#13;
+&#13;
+* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).&#13;
+</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.1</id>
+    <title>Baldur's Gate 3 v0.7.1</title>
+    <updated>2026-09-22T08:13:34+00:00</updated>
+    <author>
+      <name>Broney</name>
+    </author>
+    <content>Baldur's Gate 3 v0.7.1 release!&#13;
+&#13;
+In this version:&#13;
+New YAML options:&#13;
+* Added additional traps (confusion/sussur/clown/blinded)&#13;
+* Made monster traps scale with your level (experimental)&#13;
+* local_fill_percent keeps a share of your filler in your own world&#13;
+* Killsanity strictness (relaxed killsanity means that if a monster dies, it counts as a kill, regardless of whether you killed them or not. Note: there are some exceptions that hard-require killing because the game kills them as level setup, like the skeletons in Wither's crypt)&#13;
+&#13;
+Logic gating changes:&#13;
+* Moonlight Towers now only has three gates, not 5 - the tower, the roof, the colony&#13;
+* Mason's Guild, Last Light Inn Basement and Moonrise Rooftop are now handled as additional regions, allowing logic to treat locations as properly accessible&#13;
+* Added some backups for various questsanity locations (learn goblin leader names, barcus' reunion, halsin rescue, moonlantern pickup, notice artefact)&#13;
+* Renamed some locations for clarity (Talk to Ethel about Tadpole, Build a Kuotoa Army)&#13;
+* Removed questsanity checks: Put flowers on pet grave, wake art, hear minthara/ragzlin talk about artefact&#13;
+&#13;
+Removed some killsanity checks (they were missable)&#13;
+* Giant Spiders in goblin camp&#13;
+* Redcaps in Hag's swamp&#13;
+Added a killsanity check (how did I miss him?):&#13;
+* Brawler Rancer in the Goblin Camp&#13;
+&#13;
+Oh so many containersanity changes&#13;
+* Containers now trigger on destruction&#13;
+* Data quality pass- containersanity should be entirely playable for Halsin goal (I am not willing to call it stable yet)&#13;
+&#13;
+Client / mod data changes:&#13;
+* Client and mod can now recover from a corrupted data file on its own without needing my help for it&#13;
+* Does better about regenerating the ap_in file instead of waiting for a new intake item to do so&#13;
+* If the wrong BG3 folder is chosen on setup, don't write it to host.yaml&#13;
+* BG3 mod in-game window now shows window/client/server build information to aid debugging. This may have an init issue and want you to click 'resync' in the window but said resync is harmless.&#13;
+* There is a hidden YAML option called "DevDebugOn" that when set to true will tell the mod to write a debug.json about various game events (mostly used for dev situations like containersanity)</content>
+    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.17.2r2</title>
+    <updated>2026-09-22T09:00:52+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `442283bd8d2e18107a54ba9d3a0ee3d2090a91cd`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.17.2
+
+- feat(apworld): reward families can be turned off entirely
+- fix(launcher): the item server line drops its terminal colors
+- fix(missions): SigMod's extra loadout menu shows its labels
+- feat(launcher): mirror the pinned community archives on GitHub
+- Cap stock Caliginous extraction retries during startup
+- fix(deploy): handle popfile cleanup errors explicitly
+- style(deploy): format stock popfile installer
+- fix(mvm): repair stock Caliginous Caper wave 666
+- Avoid archive rehash in settings and clear stale import markers
+- Fix archive hash PR lint and browser expectations
+- Pin community archive hashes and require explicit mismatch approval
+- Keep SigMod server config conditional and test both modes
+- fix(mvm): exclude RED defenders from invader limit
+- Log stalled invader removals and make timeout configurable
+- fix(plugin): clear invaders stuck protected in spawn
+- Derive Medic-only catalog label from population ClassLimit
+- feat(missions): label Remedic as Medic only
+- Keep Bot Surge acceleration for high-capacity TFBot spawns
+- fix(bot surge): preserve scripted wave timers
+- Poll run seed only for Docker test rooms
+- fix: refresh plugin missions when Docker test run changes
+- fix: honor full eligible mission pool in Docker test mode
+- Scope SigMod includes to each archive and refresh catalog counts
+- fix(gamedata): mark missions using shared SigMod extensions
+- Share missing mod wording and name mission table inputs
+- fix: keep edited SigMod config from hiding missions
+- Fix mission checkbox assertion for SigMod choice
+- feat(missions): the Windows SigMod row says beta, and the docs say why
+- fix(plugin): Windows signatures for 13 hooks that only had Linux symbols
+- feat(missions): a server mod is off, needed, or always, and SigMod returns to Windows
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
 </feed>

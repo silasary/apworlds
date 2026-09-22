@@ -36,11 +36,14 @@ puis **Generate seed**. Pour l'écrire à la main, les options sont sous
 - `class_weapon_slots` : `off`, `progressive` ou `any_order`. Chaque classe
   gagne ses propres emplacements.
 - `mission_ticket_importance`, `class_unlock_importance`,
-  `weapon_slot_importance`, `weapon_buff_importance` : `progression` ou
-  `useful`. Les tickets, les classes et les emplacements sont en progression
-  par défaut, les bonus en useful.
+  `weapon_slot_importance`, `weapon_buff_importance` : `progression`,
+  `useful` ou `disabled`. Désactiver les tickets, les classes ou les emplacements
+  les débloque tous dès le départ et les retire des récompenses. Désactiver les
+  bonus d'arme les retire des récompenses ; les checks libres donnent alors des
+  crédits. Les tickets, les classes et les emplacements sont en progression par
+  défaut, les bonus en useful.
 - `cash_rewards` : si les checks libres paient des crédits. Désactivé par
-  défaut, donc chaque check libre paie un bonus d'arme.
+  défaut, donc chaque check libre paie un bonus d'arme, sauf si les bonus sont désactivés.
 - `weapon_buff_percentage` : avec les crédits activés, la part des checks
   libres qui paient un bonus. La valeur par défaut est 75.
 - `weapon_buff_stack_chance` : la fréquence à laquelle un bonus ajoute un

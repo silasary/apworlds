@@ -426,6 +426,21 @@
       "title": "0.7.0",
       "version_simple": "0.7.0",
       "world_version": "0.7.0"
+    },
+    "v0.7.1": {
+      "created_at": "2026-09-22T08:13:34Z",
+      "description": "Baldur's Gate 3 v0.7.1 release!\r\n\r\nIn this version:\r\nNew YAML options:\r\n* Added additional traps (confusion/sussur/clown/blinded)\r\n* Made monster traps scale with your level (experimental)\r\n* local_fill_percent keeps a share of your filler in your own world\r\n* Killsanity strictness (relaxed killsanity means that if a monster dies, it counts as a kill, regardless of whether you killed them or not. Note: there are some exceptions that hard-require killing because the game kills them as level setup, like the skeletons in Wither's crypt)\r\n\r\nLogic gating changes:\r\n* Moonlight Towers now only has three gates, not 5 - the tower, the roof, the colony\r\n* Mason's Guild, Last Light Inn Basement and Moonrise Rooftop are now handled as additional regions, allowing logic to treat locations as properly accessible\r\n* Added some backups for various questsanity locations (learn goblin leader names, barcus' reunion, halsin rescue, moonlantern pickup, notice artefact)\r\n* Renamed some locations for clarity (Talk to Ethel about Tadpole, Build a Kuotoa Army)\r\n* Removed questsanity checks: Put flowers on pet grave, wake art, hear minthara/ragzlin talk about artefact\r\n\r\nRemoved some killsanity checks (they were missable)\r\n* Giant Spiders in goblin camp\r\n* Redcaps in Hag's swamp\r\nAdded a killsanity check (how did I miss him?):\r\n* Brawler Rancer in the Goblin Camp\r\n\r\nOh so many containersanity changes\r\n* Containers now trigger on destruction\r\n* Data quality pass- containersanity should be entirely playable for Halsin goal (I am not willing to call it stable yet)\r\n\r\nClient / mod data changes:\r\n* Client and mod can now recover from a corrupted data file on its own without needing my help for it\r\n* Does better about regenerating the ap_in file instead of waiting for a new intake item to do so\r\n* If the wrong BG3 folder is chosen on setup, don't write it to host.yaml\r\n* BG3 mod in-game window now shows window/client/server build information to aid debugging. This may have an init issue and want you to click 'resync' in the window but said resync is harmless.\r\n* There is a hidden YAML option called \"DevDebugOn\" that when set to true will tell the mod to write a debug.json about various game events (mostly used for dev situations like containersanity)",
+      "download_url": "https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.7.1/bg3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c64f909f69d82b828234e78da29abc306fc79afe697db8cad5a7c13854235649",
+      "html_url": "https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.1",
+      "minimum_ap_version": "0.6.2",
+      "size": 691469,
+      "source_url": "https://api.github.com/repos/zane31415/ArchipelagoBG3",
+      "tag": "v0.7.1",
+      "title": "0.7.1",
+      "version_simple": "0.7.1",
+      "world_version": "0.7.1"
     }
   }
 }
