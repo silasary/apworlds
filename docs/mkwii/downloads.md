@@ -1,9 +1,12 @@
 # Mario Kart Wii
 
 ## Latest
-- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/pre0.2.4/mkwii.apworld">Latest Version (0.2.4)</a>
+- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.3.0/mkwii.apworld">Latest Version (0.3.0)</a>
 
 ## All Versions
+
+#### v0.3.0
+- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.3.0/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.3.0/mkwii.apworld</a>
 
 #### v0.2.4
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/pre0.2.4/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/pre0.2.4/mkwii.apworld</a>

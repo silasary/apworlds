@@ -93,7 +93,7 @@ the DLC is a gate rather than a side area — with `include_dlc` off, none of it
   validated. Check the title id and the update version first; this is almost always a dump
   problem, not a client one.
 - **Nothing is delivered, but the client says it is connected**: open the launcher's
-  **Open Diagnostics** and look at the newest `sessions\<id>` folder.
+  **Advanced** page, click **Open Diagnostics** and look at the newest `sessions\<id>` folder.
 - **Anything else**: [report it](https://peliarch.ca/bb/report.html), and attach the session
   folder — `client.log`, `delivery-diagnostics.jsonl`, `ledger.json`, and
   `rescue-diagnostics.json` are what a diagnosis is actually made from.

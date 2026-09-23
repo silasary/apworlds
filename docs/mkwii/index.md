@@ -5,7 +5,7 @@ multiple engine classes, unlocking characters, vehicles, and new cups along the 
 
 
 ## Downloads
-- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/pre0.2.4/mkwii.apworld">Latest Version (0.2.4)</a>
+- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.3.0/mkwii.apworld">Latest Version (0.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

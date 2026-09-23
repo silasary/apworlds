@@ -27,6 +27,21 @@
       "title": "v0.2.5",
       "version_simple": "0.10.0",
       "world_version": "0.10.0"
+    },
+    "v0.2.5r2": {
+      "created_at": "2026-09-18T18:54:49Z",
+      "description": "# Pokemon HGSS Singe APWorld   v0.2.5\r\n\r\n**Breaking release**  Seeds generated with v0.2.4 or earlier cannot be played with this version: finish them with the v0.2.4-hotfix apworld.\r\n\r\n## Files\r\n\r\n- `poke_hgss.apworld`: the world. Put it in your Archipelago `custom_worlds` folder.\r\n- `Poke_HGSS.yaml`: the default options file, ready to edit.\r\n- `poke_hgss_tracker.html`: web tracker, open it in your browser (double-click).\r\n\r\n## How to update\r\n\r\n1. Remove `pokemon_hgss.apworld` from `custom_worlds` and add `poke_hgss.apworld`. The world was renamed, so it can now sit next to the other HGSS world.\r\n2. Update your YAML: the `game:` line and the options section header become `Pokemon HGSS Singe` (or start from `Poke_HGSS.yaml`).\r\n3. Generate a new seed. Patch files now end in `.appokehgss`.\r\n\r\n## Highlights\r\n\r\n- **No more slot name to type.** The patched ROM carries your slot, and the BizHawk Client logs in on its own. You still enter the server address once per session (the client reminds you if you forget).\r\n- **Global Exp. Share** (`global_exp_share`) and an **Exp. multiplier** (`exp_multiplier`, 10 to 1000 %).\r\n- **Headbutt trees are randomized** with `randomize_wild_pokemon`, and count for Dexsanity (`dexsanity_encounter_types: headbutt`).\r\n- **Web tracker**: a Pokegear-style map where towns, routes and caves turn green, orange or red by what you can reach, lists by region that fold out down to each check, a \"?\" that shows what a check holds (without hints), goal, key items, badges, gym leaders beaten and HMs at the top. French or English. Same logic as the world.\r\n- **PopTracker pack**, in French or English, with autotracking and the world's own logic.\r\n- **The Bell Tower and Whirl Islands monks** let you through with the wing in your Bag, wherever it came from.\r\n- New client commands: `/pending` (items sent to you that are not in your game yet) and `/restore_power`.\r\n\r\n## Fixes\r\n\r\n- Audit of all 92 NPC gifts: gifts that are only handed out after an event (S.S. Ticket, Squirtbottle, SecretPotion, Exp. Share, TM59, the Bells, HM02, HM08, PP Max, GB Sounds) are no longer expected too early, and four post-game or missable gifts can no longer hold progression items.\r\n- Bag items could stop arriving while badges still did: the client now finds your save data again on its own, and tells you when a pocket is full.\r\n- Viridian Gym and Cerulean Cave now follow the Kanto Leaders you really beat, not badge items.\r\n- Route 12 and Route 14 logic corrected.",
+      "download_url": "https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4275a64968f1a65dae74187bef8831c25d0f8a7cc8a0c83c891cffdf345fc66e",
+      "html_url": "https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 464318,
+      "source_url": "https://api.github.com/repos/SingeKiller/Pok-HeartGold_Apworld",
+      "tag": "v0.2.5r2",
+      "title": "v0.2.5",
+      "version_simple": "0.10.0",
+      "world_version": "0.10.0r2"
     }
   }
 }

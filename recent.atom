@@ -2,25 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-23T12:18:23.311744+00:00</updated>
+  <updated>2026-09-23T18:21:33.397041+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/severed-steel-v1.0.1</id>
-    <title>Severed Steel v1.0.1</title>
-    <updated>2026-09-20T02:58:39+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is a minor fix release.&#13;
-&#13;
-**This release IS compatible with games generated on the previous version.**&#13;
-&#13;
-- **Fix:** Updated a handful of offsets to support the recent 5 Year Anniversary update</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/severed-steel-v1.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/jamesbrq/GauntletLegendsAP/releases/tag/v2.1.7</id>
     <title>Gauntlet Legends v2.1.7.post2</title>
@@ -1279,5 +1265,33 @@ New to the game? Check out the [FAQ](https://discord.com/channels/73120530124780
 &#13;
 * Some refactoring for items and locations, to make it easier to work with in the future</content>
     <link href="https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.3.0</id>
+    <title>Mario Kart Wii v0.3.0</title>
+    <updated>2026-09-23T12:51:40+00:00</updated>
+    <author>
+      <name>toent</name>
+    </author>
+    <content>## Release Version 0.3.0: Character &amp; Vehicle Randomizing&#13;
+The long awaited update is finally here! From now on default unlocked Characters and Vehicles will be locked from the start. A run will start with 2 starting characters: one with a kart unlocked and one with a bike unlocked. If you make a combo that you dont have unlocked the client will automatically set your Character and Vehicle to a random legal combo for that engine class (so it will only allow you to use both karts and bikes when you have the item for it on 50cc and 100cc).&#13;
+&#13;
+### Changelog:&#13;
+- [APWorld] Added 2 new options for enabling and disabling default character/vehicle inclusion seperately.&#13;
+- [APWorld] Added the default characters and vehicles as items.&#13;
+- [APWorld] Updated the rules of the generator to keep the new options in mind.&#13;
+- [Client] Implemented unlock handling for default unlocked characters and vehicles.&#13;
+- [Client] Implemented safeguard for if the user tries to select an illegal combo anyways.&#13;
+- [Client] Includes the Victory Trophy handling rework of [pre0.2.4](https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.2.4).&#13;
+- [Tracker] Added new tab for characters and their icons to display availability.&#13;
+- [Tracker] Added new tab for vehicles, grouped by weight class to display availability.&#13;
+- [Tracker] Fixed an issue where the hitbox for the eye icon to hide your AP server ip stretched too far downwards, causing accidental clicks.&#13;
+ &#13;
+**REQUIRES THIS NEW APWORLD**&#13;
+&#13;
+_Linux users, download the source code here to run the client._&#13;
+&#13;
+**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.2.3...v0.3.0</content>
+    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.3.0"/>
   </entry>
 </feed>
