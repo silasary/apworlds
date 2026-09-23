@@ -2,94 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-23T06:23:32.815800+00:00</updated>
+  <updated>2026-09-23T12:18:23.311744+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.5</id>
-    <title>Mega Man Zero 3 v0.3.5</title>
-    <updated>2026-09-20T01:00:44+00:00</updated>
-    <author>
-      <name>brodieberger</name>
-    </author>
-    <content>Cerveau now has an item shop, the disk analysis screen got an open all button, and there are a bunch of new yaml options including itemsanity, randomized palettes, and more select button features.&#13;
-&#13;
-[Full Readme here](https://github.com/brodieberger/MMZero3Archipelago)&#13;
-&#13;
-## Features&#13;
-&#13;
-### Cerveau's shop&#13;
-&#13;
-Cerveau now has a shop menu. Open his secret disk analysis screen and press L or R to access the shop page. Every slot is an Archipelago location, and buying one with E-Crystals sends the check. Items from other games appear as the Archipelago logo, with the background color indicating the progression type.&#13;
-&#13;
-&lt;div align="center"&gt;&#13;
-  &lt;img&#13;
-    height="250"&#13;
-    alt="image"&#13;
-    src="https://github.com/user-attachments/assets/469a0044-1db3-43af-87cc-22d8649a138a"&#13;
-  /&gt;&#13;
-&lt;/div&gt;&#13;
-&#13;
-### Open all disks&#13;
-Pressing SELECT on the analysis screen now opens every disk you own at once.&#13;
-&#13;
-### Itemsanity (option)&#13;
-&#13;
-Every static life capsule and E-Crystal pickup in the game can now be a location check, 82 in total. Enabled with the itemsanity option.&#13;
-&#13;
-The ten 1-UP checks are now an option too (`extra_life_sanity`), on by default.&#13;
-&#13;
-### Randomized palettes (option)&#13;
-&#13;
-Randomized palettes draws every stage in a randomly picked color scheme. Enabled with its option.&#13;
-&#13;
-&lt;div align="center"&gt;&#13;
-&lt;img height="250" alt="image" src="https://github.com/user-attachments/assets/46d6d829-235e-4504-9b07-f45436c7f607" /&gt;&#13;
-&lt;img height="250" alt="image" src="https://github.com/user-attachments/assets/eea24771-fc51-4b83-868c-6b12d00be5c4" /&gt;&#13;
-&#13;
-&lt;/div&gt;&#13;
-&#13;
-### Cyber elf (option)&#13;
-&#13;
-`cyber_elves` has three settings. Affects fusion elves only, Satellite elves unchanged.&#13;
-&#13;
-- `vanilla`: how the game normally works. Upgrading elves costs crystals and fusing one hurts your rank.&#13;
-- `no_penalty`: fusing an elf doesn't affect your rank.&#13;
-- `auto`: every passive elf you receive from a disk is opened and applied on arrival, and Artan and Zictan just give you their sub tanks. No rank penalty. Makes the game a lot easier but gives it a nice sense of progression.&#13;
-&#13;
-### SELECT button (option)&#13;
-&#13;
-The select button's functionality. Choose between Cycling the sub weapon (default), the main weapon, the head, body or foot chip, or use the fullest subtank. &#13;
-&#13;
-### Disk name popup (option)&#13;
-&#13;
-When a secret disk arrives from Archipelago the game's message box displays its name and short description. &#13;
-&#13;
-### Smaller stuff&#13;
-&#13;
-- `weapon_damage_upgrades` new option that turns off the last three steps of each progressive weapon (the damage boosts).&#13;
-- `start_inventory_from_pool` is supported.&#13;
-- Secret disk items are named `Disk 001: ...` instead of `Secret Disk 001: ...`. Some location names got shortened too, so heads up to anyone who has this names in their yaml. Sorry to @ambibii and their poptracker...&#13;
-&#13;
-## Bug Fixes&#13;
-&#13;
-- Fixed bug where another player using `!collect` on your world could open the final stage even if you hadn't cleared every stage yourself.&#13;
-- Fix bug where the client would reporting "unknown location id 0" on killing a boss sometimes.&#13;
-- Boss portraits on the mission select screen would spin around as they faded in once you had cleared a stage.</content>
-    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLivingShadow97/THAWAP/releases/tag/Small-Logic-Fixes</id>
-    <title>Tony Hawk's American Wasteland v0.0.1r3</title>
-    <updated>2026-09-20T01:05:32+00:00</updated>
-    <author>
-      <name>TheLivingShadow</name>
-    </author>
-    <content>- Fixes the regions for the "Big Lip", "Overpass Air", and "Pyramid Drop" gaps so it expects you to have entered the part of the story when you can remove the cars from the freeway before they're in logic, so that you can do those gaps.</content>
-    <link href="https://github.com/TheLivingShadow97/THAWAP/releases/tag/Small-Logic-Fixes"/>
-  </entry>
   <entry>
     <id>https://github.com/SerpentAI/Archipelago/releases/tag/severed-steel-v1.0.1</id>
     <title>Severed Steel v1.0.1</title>
@@ -528,7 +445,7 @@ Fixes:&#13;
 Been a while! Got a bunch of reports of Victory Trophies not being counted properly on reconnect. So I reworked the handling of them. It is currently untested, and thus marked as a pre-release. Please let me know in the discord how your experience with it is!&#13;
 &#13;
 ### Changelog:&#13;
-- Reworked victory trophy handling.&#13;
+- [Client] Reworked victory trophy handling.&#13;
 &#13;
 **REQUIRES APWORLD VERSION 0.2.0 - 0.2.4**&#13;
 &#13;
@@ -885,7 +802,7 @@ Client / mod data changes:&#13;
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `b6afe12ac346a1249b8cfd40eb73e8995d61ddfe`.
+Built from `ed261386ef51cf6a77b51dd981ea51ee2c1d56bf`.
 
 ## Downloads
 
@@ -894,6 +811,8 @@ Built from `b6afe12ac346a1249b8cfd40eb73e8995d61ddfe`.
 
 ## Since v1.17.3
 
+- fix(buffs): no-self-blast keeps the blast-jump push and refunds the health (#146)
+- chore(deps): tf2-mvm-bots-go v0.17.0
 - feat(bots): Villa defender orders and the roof transfer for Recalled to Life (#142)
 - feat(tracker): link the admin to the room's tracker, and show each class's slot order (#148)
 - fix(buffs): Cow Mangler bonus shots start clear of the shooter and deal damage (#145)
@@ -1278,7 +1197,7 @@ that is already gone.
     </author>
     <content>**THIS IS A PRE-RELEASE. IT IS HERE IF YOU WOULD LIKE TO HELP TEST NEW FEATURES!**&#13;
 `New:`&#13;
-- Completely reworked how the mod loads itself and builds itself. This does mean there is a completely new process for setting up the mod. Please refer to the setup guide.&#13;
+- Completely reworked how the mod loads itself and builds itself. This does mean there is a completely new process for setting up the mod. Please refer to the [newly updated setup guide.](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/reformatted-mod/worlds/funi_raccoon/docs/setup_en.md)&#13;
 - Added an in game tracker menu, built into the settings menu on the "AP" tab. This also displays some information about the Archipelago slot, and your goals.&#13;
 - Added an Archipelago logo icon to held items on the UI, to show if you have sent the check for them or not.&#13;
 - Added an option under `F7` to mute the monitor sound in the settings menu.&#13;
@@ -1288,7 +1207,77 @@ that is already gone.
 - Moved the connection info text a bit higher and made it wavy to match the UI better.&#13;
 &#13;
 `Fixes:`&#13;
-- Fixed a minor id bug with a few brazil items and hintblo on the apworld</content>
+- Fixed hintblo and doggy's ids being swapped</content>
     <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0-prerelease1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.2</id>
+    <title>Stick Ranger v1.8.2</title>
+    <updated>2026-09-23T07:05:47+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content>## Installation
+
+-   Download the APworld for Stick Ranger
+-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
+-   Generate a yaml or download the one in here
+-   Customize the yaml and put it in the /players folder inside Archipelago
+-   Generate a game
+-   Connect to and play the game [here](https://kryen112.github.io/)
+
+## Heads up
+
+-   **Nothing to do.** No gameplay change, no option change, no seed change. If
+    you are on 1.8.1 you are already up to date; the website has updated itself.
+-   The APworld is identical to 1.8.1 apart from its version number, so there is
+    no need to re-download it or regenerate anything.
+-   Requires Archipelago **0.6.7 or newer**.
+
+## Changes
+
+### Client
+
+-   Removed ten leftover values the website set on connect and then never read.
+    They were the boss class and stage requirements, which the website stopped
+    using in 1.8.0 when it started evaluating the logic the seed ships. Leaving
+    them in made it look like those gates were still wired up by hand, which is
+    exactly the confusion that caused the 1.6.0 logic bugs.
+-   The save is no longer fetched with an argument that was being read as a
+    "watch this key" flag, so the server stops echoing a notification back on
+    every single save.
+
+Both are housekeeping following the 1.8.1 audit. Nothing you can see changed.
+</content>
+    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.2</id>
+    <title>Dragon Quest IX v0.1.2</title>
+    <updated>2026-09-23T07:55:20+00:00</updated>
+    <author>
+      <name>kid2407</name>
+    </author>
+    <content># Dragon Quest IX - Beta Release (Version 0.1.2)&#13;
+&#13;
+**This is a beta release. Things can possibly break, though the core gameplay should run normally.**&#13;
+&#13;
+*This requires Archipelago **0.6.7 or newer!***&#13;
+*This is most likely **NOT** compatible with seeds generated on an earlier version*&#13;
+&#13;
+New to the game? Check out the [FAQ](https://discord.com/channels/731205301247803413/1427594624389742716/1491731616068800543)&#13;
+## Bugs fixed&#13;
+&#13;
+* Removed old mans bath, since it is not accessible until postgame&#13;
+* Fixed incorrect logic for Realm of the Mighty&#13;
+&#13;
+## Added or Updated Features&#13;
+&#13;
+* When reloading from a save, missing items should now be re-granted instead of being lost (experimental)&#13;
+&#13;
+## Dev Stuff&#13;
+&#13;
+* Some refactoring for items and locations, to make it easier to work with in the future</content>
+    <link href="https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.2"/>
   </entry>
 </feed>

@@ -5,7 +5,7 @@ Assemble a team of rangers, customize their classes, and battle through a variet
 
 
 ## Downloads
-- <a href="https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.1/stick_ranger.apworld">Latest Version (1.8.1)</a>
+- <a href="https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.2/stick_ranger.apworld">Latest Version (1.8.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
