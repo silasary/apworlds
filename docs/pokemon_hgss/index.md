@@ -7,7 +7,7 @@ versions are equally first-class; see docs/architecture.md&#x27;s
 
 
 ## Downloads
-- <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.4-hotfix/pokemon_hgss.apworld">Latest Version (0.9.0r2)</a>
+- <a href="https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.7/pokemon_hgss.apworld">Latest Version (0.0.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -16,4 +16,4 @@ versions are equally first-class; see docs/architecture.md&#x27;s
 - <a href="setup_en">English</a>
 
 ## Other Documentation files
-- <a href="en_Pokemon HeartGold">en_Pokemon HeartGold</a>
+- <a href="en_Pokemon HeartGold and SoulSilver">en_Pokemon HeartGold and SoulSilver</a>

@@ -53,9 +53,9 @@ This section is for players who want to host a solo or multiplayer game.
 
 1. Launch the **R&C: Size Matters Client** from the Archipelago launcher.
 2. Connect to your Archipelago server with your slot name.
-3. In PCSX2, load `SCUS-97615` and start a **New Game**.
-4. Play through the opening until you reach **Pokitaru** and have control of Ratchet.
-5. The client will automatically connect to PCSX2 once the correct game ID is detected.
+3. In PCSX2, load `SCUS-97615` and wait at the **main menu** for the client to connect.
+4. With Random Starting Planet enabled, wait for the client's **Ready to start a new game** message before selecting **New Game**. The frontend patch starts the new save directly on the selected planet, without first loading Pokitaru.
+5. With Random Starting Planet off (or Pokitaru selected), start a **New Game** normally on Pokitaru.
 
 
 > **Important:** Always start from a New Game at the beginning of a seed. Loading a save from a previous run will cause inventory and location state to be out of sync. To continue an ongoing session, simply reconnect to the same Archipelago connection address and load the save file you used for that session.

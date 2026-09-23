@@ -16,6 +16,12 @@ Randomizer launcher. The launcher and APWorld catalogue checksums must match.
 Player YAML contains reusable settings only. Archipelago generates a fresh
 mission order, Grid, starters, rewards, and signed run manifest for each room.
 
+You can instead open Archipelago's **Options Creator**, select **C&C Reloaded**,
+configure the grouped Randomizer options, enter the slot name, and select
+**Export Options**. This creates a valid Player YAML without opening the
+Randomizer executable. Launcher-exported `launcher_settings` YAML remains
+supported for advanced launcher configuration and old player files.
+
 The world supports standard objective/victory runs and Shop Mode purchase/run
 locations. Mental Omega YAML, rooms, saves, items, and locations are not
 compatible.

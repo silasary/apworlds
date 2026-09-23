@@ -690,6 +690,20 @@
       "version_simple": "0.2.7.0",
       "world_version": "0.2.7.0"
     },
+    "0.2.7.1": {
+      "created_at": "2026-09-22T14:06:43Z",
+      "description": "## What's New?\r\n\r\n* Fixed achievement checks not being included in the location pool \u2014 `achievement_check_mode` now actually adds achievement checks to your run, gated by day count and (for `earned_only`) by whether `appliance_unlocks` is enabled\r\n* Fixed dish-specific Day Leases wrongly chaining dishes together \u2014 each dish's day progression is now fully independent, instead of requiring an earlier-selected dish to be fully leased before a later dish could even start Day 1\r\n* Fixed franchise runs under dish-specific Day Lease mode needing an ever-growing number of leases as `franchise_count` increased \u2014 leasing now correctly resets each franchise run instead of accumulating across all of them (thanks to Mike Lydeamore)\r\n\r\n## Balance Changes\r\n\r\n* `Complete Day N` and franchise-goal completions could previously become reachable with very few or zero items when using dish-specific Day Leases \u2014 some `complete_x_days` and `reach_day_x_with_dishes` goals could resolve almost immediately. This is fixed: a Day Lease pool sized to your goal's day count now always paces the day chain, independent of Day Lease mode\r\n* Franchise goal + dish-specific leasing now requires an available, sufficiently-leased dish for each individual run rather than pulling from one global cumulative lease pool, so high `franchise_count` values no longer demand disproportionately more leases\r\n\r\n[Mod Update 2.7.1](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/2.7.1)\r\n",
+      "download_url": "https://github.com/CazIsABoi/Archipelago/releases/download/0.2.7.1/plateup.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ba767e83cf808eb6b27f7887d12a2bb75ed15d3a651545130c1e4e8ad4cabd9c",
+      "html_url": "https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.1",
+      "size": 35762,
+      "source_url": "https://api.github.com/repos/CazIsABoi/Archipelago",
+      "tag": "0.2.7.1",
+      "title": "PlateupAP apworld v0.2.7-beta.1",
+      "version_simple": "0.2.7.1",
+      "world_version": "0.2.7.1"
+    },
     "v0.1.4.2": {
       "created_at": "2025-02-26T20:49:30Z",
       "description": "### This is directly correlated with the updates for the mod\r\nhttps://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.1.4.2\r\n\r\n### The apworld and attached yaml are what SHOULD be used when generating a world, generating template right now makes a faulty one which doesn't work so don't use it",

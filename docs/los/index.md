@@ -4,7 +4,7 @@ Research build for the Lords of Shadow Archipelago integration.
 
 
 ## Downloads
-- <a href="https://github.com/Haywire32/LoS-Archipelago/releases/download/v0.7.0/los.apworld">Latest Version (0.7.0)</a>
+- <a href="https://github.com/Haywire32/LoS-Archipelago/releases/download/v0.7.1/los.apworld">Latest Version (0.7.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
