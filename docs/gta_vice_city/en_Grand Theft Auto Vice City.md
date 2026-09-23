@@ -40,13 +40,20 @@ Tommy can be four missions into the Colonel's work and still waiting to be
 allowed to phone Mr. Black. The one mission that needs no item is the first
 Rosenberg meeting, which is open on a new game and is where every seed starts.
 
-Set `mission_shuffle: true` to shuffle the order within each mission giver. 
-A Progressive Cortez item still unlocks a Cortez mission, but the next mission follows the seed's shuffled order. 
-The spoiler log lists the order, and trackers restore the same order from the seed.
+Set `mission_shuffle` to `off`, `within_giver`, or `full`.
+Within giver changes each giver's mission order while keeping their end missions.
+Full shuffle assigns story and enabled business missions across giver slots.
+A Progressive Cortez item unlocks a Cortez slot, and completing its assigned
+mission sends that mission's original check.
+An Old Friend, Distribution, Checkpoint Charlie, Sunshine Autos import
+lists and other activities keep their native entrances.
 
-An Old Friend stays first. 
-All Hands On Deck!, Rub Out, the asset-ending missions and Keep Your Friends Close stay last in their own strands. 
-Other prerequisites such as `Death Row` before `Rub Out` still apply.
+In full shuffle, `world_event_timing: quest_giver_progress` makes business sales,
+mansion takeover and Cortez's departure follow their original slots.
+`mission_completion` makes those events follow their missions wherever assigned.
+
+Moved missions temporarily open the crossings needed for gameplay and restore
+the current item-controlled barriers when they end.
 
 Crossing to the mainland is an item too, and so is Starfish Island. The vanilla
 bridges stay shut until the multiworld hands you the way over.
@@ -59,7 +66,12 @@ Options can go further: abilities can be locked away (sprint, jump, crouch,
 vehicles, weapons, and the ability to hold money at all), whole content classes
 can be held inert until their item arrives, the radar can start hidden, the
 radio can start with one station, and the world pickups scattered around the
-city can be shuffled among themselves. Emergency vehicle activities can also
+city can be shuffled among themselves. 
+The player model randomizer picks one of the 12 player outfits and 62 special-character models for the whole seed.
+Remove unwanted entries from `player_models` to limit its choices.
+The car color randomizer replaces the vehicle palette with colors chosen for
+the seed.
+Emergency vehicle activities can also
 remember how far you got, so leaving one and coming back resumes at the level
 you stopped at instead of restarting at level 1.
 
@@ -180,9 +192,13 @@ setting the seed configured, plus the last messages in full.
 
 ## What are the goals?
 
-Three, chosen in the YAML.
+Four, chosen in the YAML.
 
-- **Final mission.** Complete "Keep Your Friends Close...".
+- **Final mission.** In full shuffle, complete Vercetti Finale slot 2 and its
+  assigned mission after meeting the asset requirements. A shuffled early
+  "Keep Your Friends Close..." sends its check without ending the seed.
+- **Keep Your Friends Close.** Complete that mission wherever it appears in the
+  shuffled world. Select `goal: keep_your_friends_close`.
 - **Hidden package hunt.** Receive a configurable number of Package Fragments
   from the multiworld. Collecting a package in game is an ordinary check, never
   goal progress. The last fragment plays the story's ending wherever you are
@@ -190,6 +206,20 @@ Three, chosen in the YAML.
 - **The game's own 100 percent.** The completion percentage Vice City itself
   tracks. Generation refuses this goal unless every check class the stat counts
   is enabled.
+
+Set `finale_assets_required` from `0` to `9` (default `7`). Any completed income
+assets count, the upstairs finale still requires mansion access.
+
+To reveal the shuffled goal marker at the start, add this to the YAML:
+
+```yaml
+start_location_hints:
+  - Keep Your Friends Close...
+```
+
+Enable `require_printworks_and_estate: true` to make Printworks mandatory at
+one required asset, and both Printworks and Vercetti Estate mandatory at two
+or more.
 
 ## Other things worth knowing
 

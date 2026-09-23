@@ -4,7 +4,7 @@ Against the Storm is a roguelite city builder
 
 
 ## Downloads
-- <a href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.1/against_the_storm.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.2/against_the_storm.apworld">Latest Version (1.2.1r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

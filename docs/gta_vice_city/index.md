@@ -7,7 +7,7 @@ from the multiworld open each giver&#x27;s next mission in vanilla order.
 
 
 ## Downloads
-- <a href="https://github.com/Kryen112/GTA-Vice-City-AP/releases/download/untagged-0c5cb2ea65afc6073d8b/gta_vice_city.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/Kryen112/GTA-Vice-City-AP/releases/download/2.1.0/gta_vice_city.apworld">Latest Version (2.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

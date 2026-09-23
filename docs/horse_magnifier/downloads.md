@@ -1,9 +1,12 @@
 # Horse Magnifier
 
 ## Latest
-- <a href="https://github.com/DannySchultzDev/Archipelago-Horse-Magnifier-Client/releases/download/V1.3.0/horse_magnifier.apworld">Latest Version (1.3.0)</a>
+- <a href="https://github.com/DannySchultzDev/Archipelago-Horse-Magnifier-Client/releases/download/V1.3.1/horse_magnifier.apworld">Latest Version (1.3.1)</a>
 
 ## All Versions
+
+#### v1.3.1
+- <a href="https://github.com/DannySchultzDev/Archipelago-Horse-Magnifier-Client/releases/download/V1.3.1/horse_magnifier.apworld">https://github.com/DannySchultzDev/Archipelago-Horse-Magnifier-Client/releases/download/V1.3.1/horse_magnifier.apworld</a>
 
 #### v1.3.0
 - <a href="https://github.com/DannySchultzDev/Archipelago-Horse-Magnifier-Client/releases/download/V1.3.0/horse_magnifier.apworld">https://github.com/DannySchultzDev/Archipelago-Horse-Magnifier-Client/releases/download/V1.3.0/horse_magnifier.apworld</a>

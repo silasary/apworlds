@@ -4,7 +4,7 @@ Funi Raccoon Game is a game about a Funi Raccoon who steals things.
 
 
 ## Downloads
-- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.7.3/funi_raccoon.apworld">Latest Version (1.7.3)</a>
+- <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/download/1.8.0-prerelease1/funi_raccoon.apworld">Latest Version (1.8.0rc0.post0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -165,6 +165,21 @@
       "title": "1.8.0",
       "version_simple": "1.8.0",
       "world_version": "1.8.0"
+    },
+    "1.8.1": {
+      "created_at": "2026-09-23T05:43:50Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **If you are playing a seed with Shop Checks right now, reload the page and\n    carry on.** You do not need a new seed, a new yaml, or the new APworld. The\n    website has already updated.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## Shop Checks never worked\n\nShop Checks has been broken since it was added in 1.7.0, for everyone, on every\nseed. Buying an item never sent its check.\n\nThe APworld built all 462 shop locations correctly, which is why they showed up\nin the tracker and could be released by hand. But it never told the website the\noption was on, and the website treats an option it was not told about as off. So\nthe shop behaved exactly like vanilla and quietly sent nothing.\n\nThanks to the player who reported this.\n\n### Your run is not lost\n\nA seed generated before this release still does not say whether Shop Checks is\non, so the website now works it out from the seed itself: only Shop Checks\ncreates locations in the shop range. If they are there, the feature is on.\n\nSo an in-progress run recovers on its own. Reload the page and buying starts\nsending checks. **No regeneration.**\n\nIf you already released your shop checks by hand, the website now takes the\nserver's word for which ones are done, so those items go back to being ordinary\npurchases instead of asking to be checked again. You will not pay for something\nthat is already gone.\n\n### Also\n\n-   New APworld tests assert that every option the website acts on actually\n    reaches it. That is the check that was missing, and it is what let this ship\n    in the first place.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.1/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1d6808efcb46b19918452510f51bc3c6d6fc82ea3386c61b2aab957671c490b6",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 43088,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.1",
+      "title": "1.8.1",
+      "version_simple": "1.8.1",
+      "world_version": "1.8.1"
     }
   }
 }
