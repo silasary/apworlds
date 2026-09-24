@@ -7,7 +7,7 @@ Set years after the original, the player finds himself in a Stilwater both famil
 
 
 ## Downloads
-- <a href="https://github.com/hoXyy/SaintsRow2Archipelago/releases/download/0.2.0/saints_row_2.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/hoXyy/SaintsRow2Archipelago/releases/download/0.3.0/saints_row_2.apworld">Latest Version (0.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
