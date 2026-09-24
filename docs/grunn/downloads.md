@@ -1,9 +1,12 @@
 # Grunn
 
 ## Latest
-- <a href="https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.5/grunn.apworld">Latest Version (1.1.5)</a>
+- <a href="https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.6/grunn.apworld">Latest Version (1.1.6)</a>
 
 ## All Versions
+
+#### v1.1.6
+- <a href="https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.6/grunn.apworld">https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.6/grunn.apworld</a>
 
 #### v1.1.5
 - <a href="https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.5/grunn.apworld">https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.5/grunn.apworld</a>

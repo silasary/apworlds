@@ -41,7 +41,7 @@ Unsupported older slots are rejected with an explanatory message.
 - **randomize_dungeon_rooms** — Randomize dungeon room layouts (default: off)
 - **randomize_dungeon_locations** — Shuffle all seven Quest 1 palaces among palace tiles
 - **randomize_dungeon_boss** — Shuffle bosses among the six crystal palaces (default: off)
-- **boss_item_locations** — Add a randomized AP check alongside each crystal boss reward (default: off)
+- **boss_item_locations** — Add a randomized AP check at each crystal boss and Thunderbird (default: off)
 - **randomize_town_locations** — Shuffle all eight Quest 1 towns among town tiles (default: off)
 - **randomize_dungeon_tileset** — Shuffle original and custom palace graphics (default: off)
 

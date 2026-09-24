@@ -2,36 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-24T06:20:35.534805+00:00</updated>
+  <updated>2026-09-24T12:16:07.752636+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2</id>
-    <title>IslesOfSeaAndSky v2.1.2.post3</title>
-    <updated>2026-09-20T18:14:59+00:00</updated>
-    <author>
-      <name>KimDelicious</name>
-    </author>
-    <author>
-      <name>Angrevol</name>
-    </author>
-    <author>
-      <name>Woli</name>
-    </author>
-    <author>
-      <name>Cuberyl</name>
-    </author>
-    <content>Changes:&#13;
-- Added an error message when the apOptions file cannot be found by the game (It means that client is not writing to the right folder)&#13;
-- The error message will tell the user to use user to use the /savepath command to configure the client to target the correct folder&#13;
-&#13;
-Logic Fixes:&#13;
-- Fixed an issue with Stony Cliffs B4 logic not requiring Earth Elementals&#13;
-- Fixed Sea Nunatak B0 Pyramidion not requiring Ancient Rune Stone </content>
-    <link href="https://github.com/cuberyl-catastrophe/Archipelago/releases/tag/iosas-ap-v2.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release4</id>
     <title>Ocarina of Time v9.1.0r3</title>
@@ -1339,5 +1314,24 @@ Additionally, there are bonus locations for rows, columns and diagonals, which a
     </author>
     <content>* More error handling when a repo has invalid data.</content>
     <link href="https://github.com/silasary/Archipelago/releases/tag/apworld_manager-0.0.26"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0-prerelease2</id>
+    <title>Funi Raccoon Game v1.8.0r2</title>
+    <updated>2026-09-24T09:48:04+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>- Changed the mod loading order so it loads the modloader before anthing else. This makes it easier to work with, but may introduce some new bugs. Please report back with any bugs found.&#13;
+- Added object ids to the CHEESE in the trasco train.&#13;
+- Cleaned up a lot of internal code to de-sloppify some bits&#13;
+- Changed the function key hotkeys to instead be settings in the AP tab on the settings menu. The monitor sound toggle was also moved to the audio settings.&#13;
+- Changed "F1" to quick open the AP tab.&#13;
+- Changed Mystical Jewels to be "Progressive Mystical Jewel" rather than 4 separate items&#13;
+- Removed the Orb requirement for using the Orb Store in the gully both from logic and the mod.&#13;
+- (Theoretically???) fixed the race in blimbo village crashing the game (maybe??)&#13;
+- Fixed a few kei truck bypass exploits&#13;
+- Fixed (if you can call it a fix) the vanilla game adding PURGATORY to found levels early, and Cricket having a 1% chance from a fish vore door, making it impossible to use Fish Vore to enter these levels early.</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0-prerelease2"/>
   </entry>
 </feed>

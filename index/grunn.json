@@ -156,6 +156,21 @@
       "title": "Grunnchipelago 1.1.5",
       "version_simple": "1.1.5",
       "world_version": "1.1.5"
+    },
+    "v1.1.6": {
+      "created_at": "2026-09-24T09:59:41Z",
+      "description": "Two fixes from player reports, one of them in the mod itself.\n\n## Fixed\n\n**Receiving the doorknob from the multiworld killed its own check.** If the doorknob arrived before you got to its spot, the game hid the pickup and `Obtain Doorknob` could never be sent. This is the same possession-versus-check-state problem I have fixed a few times now, but through a path I had not covered: the object the hider points at is a child of the pickup rather than a parent, so the code that flips those hiders never found it. Both sources are covered now, the tree hole and the grass.\n\n**The garden's 100 percent needed the toilet key.** Five pieces of litter sit inside the toilet building and count towards the garden's completion, so you cannot finish the garden without getting in there. That gate is what opens the picnic area, which meant `Ending: Picnic` and everything out there was showing up in logic far too early. The church and the park have no equivalent trap, I checked.\n\n## Install\n\nUnzip `Grunnchipelago-client-1.1.6.zip` into `Grunn/BepInEx/plugins/`, and drop `grunn.apworld` in `Archipelago/custom_worlds/` if you're generating.\n\nThe doorknob fix is client side, so updating the mod is enough for that one. The picnic fix is logic, so a 1.1.5 seed needs regenerating to benefit from it.\n\nSetup guides (EN/FR) and the full option list are in the repo.\n",
+      "download_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/download/v1.1.6/grunn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e25eb4c591c297c5cdcf2ba535e76d305b39ffeef74447df63d8d449bcb93210",
+      "html_url": "https://github.com/Serial-Developer/Grunnchipelago/releases/tag/v1.1.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 59868,
+      "source_url": "https://api.github.com/repos/Serial-Developer/Grunnchipelago",
+      "tag": "v1.1.6",
+      "title": "Grunnchipelago 1.1.6",
+      "version_simple": "1.1.6",
+      "world_version": "1.1.6"
     }
   }
 }
