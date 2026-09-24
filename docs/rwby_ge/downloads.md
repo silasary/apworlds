@@ -1,9 +1,12 @@
 # RWBY Grimm Eclipse
 
 ## Latest
-- <a href="https://github.com/nepcore/RwbyAP/releases/download/v0.2.3/rwby_ge.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/nepcore/RwbyAP/releases/download/v0.2.3/rwby_ge.apworld">Latest Version (0.2.3.post2)</a>
 
 ## All Versions
+
+#### v0.2.3.post2
+- <a href="https://github.com/nepcore/RwbyAP/releases/download/v0.2.3/rwby_ge.apworld">https://github.com/nepcore/RwbyAP/releases/download/v0.2.3/rwby_ge.apworld</a>
 
 #### v0.2.3
 - <a href="https://github.com/nepcore/RwbyAP/releases/download/v0.2.3/rwby_ge.apworld">https://github.com/nepcore/RwbyAP/releases/download/v0.2.3/rwby_ge.apworld</a>

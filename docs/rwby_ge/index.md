@@ -4,7 +4,7 @@ RWBY Grimm Eclipse is a 4 player, online co-op, hack and slash game based upon R
 
 
 ## Downloads
-- <a href="https://github.com/nepcore/RwbyAP/releases/download/v0.2.3/rwby_ge.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/nepcore/RwbyAP/releases/download/v0.2.3/rwby_ge.apworld">Latest Version (0.2.3.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

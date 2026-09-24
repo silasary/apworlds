@@ -1,9 +1,12 @@
 # Manual_FantasyLife_JBtheShadow
 
 ## Latest
-- <a href="https://github.com/JBtheShadow/APManuals/releases/download/v1.1.0/manual_fantasylife_jbtheshadow.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/JBtheShadow/APManuals/releases/download/v1.2.0/manual_fantasylife_jbtheshadow.apworld">Latest Version (1.2.0)</a>
 
 ## All Versions
+
+#### v1.2.0
+- <a href="https://github.com/JBtheShadow/APManuals/releases/download/v1.2.0/manual_fantasylife_jbtheshadow.apworld">https://github.com/JBtheShadow/APManuals/releases/download/v1.2.0/manual_fantasylife_jbtheshadow.apworld</a>
 
 #### v1.1.0
 - <a href="https://github.com/JBtheShadow/APManuals/releases/download/v1.1.0/manual_fantasylife_jbtheshadow.apworld">https://github.com/JBtheShadow/APManuals/releases/download/v1.1.0/manual_fantasylife_jbtheshadow.apworld</a>
