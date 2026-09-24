@@ -125,9 +125,9 @@ Landmarks are added only after the item lot, acquisition flag, map placement, an
 - Central Yharnam - Blood Stone Shard #1 (bridge side)
 - Central Yharnam - Blood Stone Shard #2 (bridge side)
 - Central Yharnam - Blood Stone Shard #3 (bridge side)
-- Central Yharnam - Blood Stone Shard #4 (bridge side)
+- Central Yharnam - Blood Stone Shard #4 (final canal beam) — final canal beam.
 - Central Yharnam - Blood Stone Shard #5 (bridge side)
-- Central Yharnam - Blood Stone Shard #6 (sewer side)
+- Central Yharnam - Blood Stone Shard #6 (alcove before Boar Tunnel) — alcove before Boar Tunnel.
 - Central Yharnam - Blood Stone Shard #7 (bridge side)
 - Central Yharnam - Blood Stone Shard #8 (bridge side)
 - Central Yharnam - Blood Stone Shard x2 (sewer channel beam)
@@ -138,37 +138,37 @@ Landmarks are added only after the item lot, acquisition flag, map placement, an
 - Central Yharnam - Blood Vial x4 (bridge side)
 - Central Yharnam - Blood Vial x6 (bridge side)
 - Central Yharnam - Bold Hunter's Mark
-- Central Yharnam - Bold Hunter's Mark x2 (sewer side)
+- Central Yharnam - Bold Hunter's Mark x2 (statue before Tomb of Oedon) — statue before Tomb of Oedon.
 - Central Yharnam - Coldblood Dew (1) #1 (clinic backstreets)
 - Central Yharnam - Coldblood Dew (1) #2 (bridge side)
-- Central Yharnam - Coldblood Dew (1) #3 (sewer side)
-- Central Yharnam - Coldblood Dew (1) #4 (sewer side)
-- Central Yharnam - Coldblood Dew (1) #5 (sewer side)
+- Central Yharnam - Coldblood Dew (1) #3 (Canal Walkways dead end) — Canal Walkways dead end.
+- Central Yharnam - Coldblood Dew (1) #4 (Dry Dock rafters) — Dry Dock rafters.
+- Central Yharnam - Coldblood Dew (1) #5 (Dry Dock upper floor) — Dry Dock upper floor.
 - Central Yharnam - Coldblood Dew (1) #6 (bridge side)
 - Central Yharnam - Coldblood Dew (1) #7 (bridge side)
-- Central Yharnam - Coldblood Dew (1) #8 (sewer side)
-- Central Yharnam - Coldblood Dew (2) (sewer side)
-- Central Yharnam - Coldblood Dew (3) (sewer side)
+- Central Yharnam - Coldblood Dew (1) #8
+- Central Yharnam - Coldblood Dew (2) (Maneater Boar tunnel) — Maneater Boar tunnel.
+- Central Yharnam - Coldblood Dew (3) (Dog Kennels side path) — Dog Kennels side path.
 - Central Yharnam - Hunter Set (Aqueduct drop near Large Huntsman) — Aqueduct drop near Large Huntsman.
 - Central Yharnam - Iosefka Courtyard Quicksilver Bullets x10 (bridge side)
 - Central Yharnam - Kin Coldblood (12) (chest)
-- Central Yharnam - Madman's Knowledge #1 (bridge side)
-- Central Yharnam - Madman's Knowledge #2 (sewer side)
+- Central Yharnam - Madman's Knowledge #1 (Dry Dock lower canal dead end) — Dry Dock lower canal dead end.
+- Central Yharnam - Madman's Knowledge #2 (dead end behind four crows) — dead end behind four crows.
 - Central Yharnam - Molotov Cocktail x4 #1 (Plaza gate) — Plaza gate.
 - Central Yharnam - Molotov Cocktail x4 #2 (bridge side)
 - Central Yharnam - Molotov Cocktail x6 (bridge side)
 - Central Yharnam - Oil Urn x2 #1 (bridge side)
-- Central Yharnam - Oil Urn x2 #2 (sewer side)
+- Central Yharnam - Oil Urn x2 #2 (Canal Walkways coffins) — Canal Walkways coffins.
 - Central Yharnam - Pebble x10 (bridge side)
 - Central Yharnam - Pebble x8 (bridge side)
 - Central Yharnam - Pungent Blood Cocktail x2 (bridge side)
-- Central Yharnam - Quicksilver Bullets x10 #1 (sewer side)
+- Central Yharnam - Quicksilver Bullets x10 #1 (Canal rotted corpses) — Canal rotted corpses.
 - Central Yharnam - Quicksilver Bullets x10 #2 (bridge side)
 - Central Yharnam - Quicksilver Bullets x5 (bridge side)
 - Central Yharnam - Red Jeweled Brooch
 - Central Yharnam - Saw Hunter Badge (Maneater Boar tunnel) — Maneater Boar tunnel.
 - Central Yharnam - Saw Spear (Dry Dock hanging corpse) — Dry Dock hanging corpse.
-- Central Yharnam - Thick Coldblood (5) (sewer side)
+- Central Yharnam - Thick Coldblood (5) (Aqueduct final rafter) — Aqueduct final rafter.
 - Central Yharnam - Torch (Plaza gate) — Plaza gate.
 - Central Yharnam - White Messenger Ribbon
 - Cleric Beast

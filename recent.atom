@@ -2,33 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-24T12:16:07.752636+00:00</updated>
+  <updated>2026-09-24T18:19:34.173041+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release4</id>
-    <title>Ocarina of Time v9.1.0r3</title>
-    <updated>2026-09-20T19:07:42+00:00</updated>
-    <author>
-      <name>espeon65536</name>
-    </author>
-    <author>
-      <name>TreZ</name>
-    </author>
-    <content># OoT Randomizer APWorld v9.1.0 Full Release 4&#13;
-&#13;
-This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
-&#13;
-## Changes:&#13;
-- Fixed TCG doors handling with small key removal&#13;
-- Missing Silver Rupee Flag Patches&#13;
-&#13;
-Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.&#13;
-Even after deletion, the "Open Patch" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct "Ocarina of Time Client" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says "Archipelago Ocarina of Time Client 0.6.x" in the top bar with no info about the apworld version, you are using the old client.</content>
-    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release4"/>
-  </entry>
   <entry>
     <id>https://github.com/BlastSlimey/Archipelago/releases/tag/dexsanitysanity_1.0.1</id>
     <title>Pokemon BW Dexsanitysanity v1.0.0r2</title>
@@ -1333,5 +1311,36 @@ Additionally, there are bonus locations for rows, columns and diagonals, which a
 - Fixed a few kei truck bypass exploits&#13;
 - Fixed (if you can call it a fix) the vanilla game adding PURGATORY to found levels early, and Cricket having a 1% chance from a fish vore door, making it impossible to use Fish Vore to enter these levels early.</content>
     <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0-prerelease2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.2</id>
+    <title>Pokemon Crystal Prerelease v1.31.1</title>
+    <updated>2026-09-24T15:35:08+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+## Features&#13;
+- Tier and battle number are now added to Battle Tower Sanity trainers extended hint data (thanks @snowflav-goob)&#13;
+- The documentation has been updated to be consistent for 6.0.0 (thanks @snowflav-goob and @palex00)&#13;
+&#13;
+## Bug Fixes&#13;
+- Skip Elite 4 can no longer be overridden at patch time if those entrances are participating in ER&#13;
+- Releasing the beasts now breaks level scaling spheres&#13;
+- Lake of Rage start is now allowed when Gates are not participating in ER&#13;
+- Fix various logic issues with Headbutt trees revealed by ER&#13;
+- Fix ER overwriting dexsanity extended hint data (thanks @snowflav-goob)&#13;
+- Fix some of the /fishing command not being dynamic based on Johto Only&#13;
+- Make friendly region names dynamic based on Johto only&#13;
+- Time of day no longer changes when receiving a time of day item without the Pokegear&#13;
+- You can no longer change time of day in options without the Pokegear when time of day unlocks are enabled&#13;
+- Fruit trees with filler items are no longer forced as locations when remote items and Apricorn shopsanity is enabled&#13;
+- Add some missing warnings around settings which affect sphere 1&#13;
+- Do not show the Pokedex registration screen for game corner Pokemon without the Pokedex&#13;
+- Fix various issues with music rando&#13;
+&#13;
+_This release is backwards compatible down to 6.0.0-rc.1, re-patch your ROM to benefit from in-game fixes_</content>
+    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.2"/>
   </entry>
 </feed>

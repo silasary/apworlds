@@ -74,7 +74,9 @@ Windows and Linux alike.
 3. Click **Generate Launch Plan** once.
 4. Click **Doctor**. Every line should read `PASS`. A `FAIL` prints a `->` remedy underneath it;
    follow that before going any further.
-5. Click **Randomize & Launch**.
+5. Under **Enemies**, keep **Randomize enemies** (recommended), or choose **Randomize all enemies
+   (experimental)** or **Vanilla**. Click **Launch**. (**Randomize** on its own builds
+   and checks the seed without starting the game.)
 
 ## Joining a MultiWorld game
 

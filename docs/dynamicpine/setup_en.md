@@ -11,7 +11,11 @@ dynamic_pine_options:
   pcsx2_data_path: "dynamic_pine_pcsx2_data"
   bios_path: "C:/Users/you/Documents/PCSX2/bios"
   game_files:
-    SCUS-97615: "C:/isos/Ratchet and Clank Size Matters.iso"
+    SCUS-97615:
+      US: "C:/isos/Ratchet and Clank Size Matters (US).iso"
+      EU: "C:/isos/Ratchet and Clank Size Matters (EU).iso"
+  selected_isos:
+    SCUS-97615: "US"
 ```
 
 | Setting | Meaning |
@@ -19,7 +23,8 @@ dynamic_pine_options:
 | `pcsx2_path` | Path to your PCSX2 executable. Shared by every Dynamic Pine game - if missing, you'll be prompted to browse for it once and the choice is remembered. |
 | `pcsx2_data_path` | Root folder for PCSX2's portable per-instance settings data. A subfolder per game serial, then per connecting slot name, is created here - kept separate from your regular PCSX2 install so multiple games/slots can run at once. |
 | `bios_path` | Folder containing your PCSX2 BIOS file(s), shared across every instance. Leave unset to be prompted the first time an instance needs one. |
-| `game_files` | Your own ISOs, keyed by each game's PS2 serial. A game with no entry here can still be played - Dynamic Pine just can't auto-launch PCSX2 for it (you'd start PCSX2 yourself). |
+| `game_files` | Your own ISOs, keyed by each game's PS2 serial, as named entries (e.g. US/EU versions). Easiest managed from the hub's ISO dropdown, which can add, name, select and remove them. A plain `SERIAL: path` entry still works as a single ISO named after its serial. A game with no entry here can still be played - Dynamic Pine just can't auto-launch PCSX2 for it (you'd start PCSX2 yourself). |
+| `selected_isos` | Which named ISO each game launches with, set by the hub's ISO dropdown. Defaults to the first one. |
 
 None of these are required up front - `pcsx2_path`, `bios_path`, and each
 game's ISO will each prompt you with a native file/folder picker the first

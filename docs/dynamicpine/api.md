@@ -80,7 +80,12 @@ and returns `(display name, spec)`. Raises `ValueError` for unknown games.
 
 ### `get_iso_path(spec) -> Path | None`
 
-The user's configured ISO for this game from `game_files`, or `None`.
+The ISO currently selected in the hub's dropdown for this game (from `game_files` /
+`selected_isos`), falling back to the first configured one, or `None`.
+
+### `get_iso_options(spec) -> dict[str, Path]` / `get_selected_iso_name(spec) -> str | None`
+
+Every named ISO configured for this game, and which one is selected.
 
 ### `get_bios_path() -> Path | None`
 
@@ -115,7 +120,9 @@ button and `/clear` command use.
 These back the hub's own prompts/settings screen - most integrations won't
 need to call them directly.
 
-- `prompt_for_iso(game_name, spec) -> Path | None` / `set_iso_path(spec, path)`
+- `prompt_for_iso(game_name, spec, name=None) -> Path | None` / `set_iso_path(spec, path, name=None) -> str`
+  — adds (and selects) a named ISO; the name defaults to the file name
+- `set_selected_iso(spec, name)` / `remove_iso(spec, name) -> bool`
 - `prompt_for_bios() -> Path | None` / `set_bios_path(path)`
 - `dynamic_pine_settings()` — the raw `dynamic_pine_options` settings group
   from host.yaml.
