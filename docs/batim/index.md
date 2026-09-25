@@ -7,7 +7,7 @@ nostalgia for classic cartoons, creating a unique and eerie experience.
 
 
 ## Downloads
-- <a href="https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v2.0.0/batim.apworld">Latest Version (2.0.1)</a>
+- <a href="https://github.com/Lorecrafter703/BendyAndTheArchipelagoMachine/releases/download/v2.0.1/batim.apworld">Latest Version (2.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

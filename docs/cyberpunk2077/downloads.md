@@ -11,6 +11,9 @@
 #### v0.7.0r2
 - <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.2/cyberpunk2077.apworld">https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.2/cyberpunk2077.apworld</a>
 
+#### v0.7.0r2
+- <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.3/cyberpunk2077.apworld">https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.3/cyberpunk2077.apworld</a>
+
 #### v0.7.0
 - <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.0/cyberpunk2077.apworld">https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.0/cyberpunk2077.apworld</a>
 

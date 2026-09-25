@@ -13,6 +13,7 @@
     - [Top Ride](#top-ride)
     - [Archipelago checklist](#archipelago-checklist)
   - [AP Patches](#ap-patches)
+  - [Progression categories](#progression-categories)
   - [Access gating](#access-gating)
   - [Checklist rewards](#checklist-rewards)
   - [What does randomization do to this game?](#what-does-randomization-do-to-this-game)
@@ -121,6 +122,24 @@ These are locations, and so each collected AP patch is a check. AP patches are a
 
 "AP Patch Placement" chooses whether these locations can hold progression.
 
+## Progression categories
+
+Each mode has a "Progression Categories" option listing categories of checkboxes, and only the ones you select may hold progression.
+
+The categories are:
+
+- **High Effort** - long grinds, such as breaking 1000 boxes or driving for two hours (all four checklists)
+- **Multiplayer** - boxes that need a second player (City Trial, Top Ride)
+- **Free Run** - boxes you can only fill in Free Run (City Trial, Air Ride, Top Ride)
+- **Time Attack** - boxes you can only fill in Time Attack (Air Ride, Top Ride)
+- **Bust Vehicle on Vehicle** - busting one machine with another (City Trial)
+- **RNG: Events** - City Trial events (City Trial)
+- **RNG: Food** - eating X food items in one CT run (City Trial, Archipelago)
+- **RNG: Copy Chance Wheel** - abilities the wheel has to land on (City Trial, Archipelago)
+- **RNG: Rivals** - boxes that depend on what your rivals happen to do (Air Ride, Archipelago)
+
+"Non-Progression Checkboxes" decides what happens to the rest. **Excluded** (the default) keeps them asclocations that only ever hold filler, so you can still fill them in-game for a check. **Removed** takes them out of your world entirely: nothing is placed there and filling them in-game sends nothing.
+
 ## Access gating
 
 Most categories of content can be locked behind AP items. When a category is gated, that content starts locked and you must find its unlock items to access it; the checkboxes and races that depend on it become logically reachable only once you have the unlock. When a category is not gated, that content is available from the start and no unlock items are placed for it.
@@ -144,7 +163,7 @@ The gateable categories are:
 
 Many checklist boxes (red boxes) award something when ticked in the base game. "Checklist Rewards" picks which of the minor extras among them get placed into the multiworld, one category at a time:
 
-- **Sound Test** - sound test entries, 34 of them
+- **Sound Test** - sound test entries
 - **Music** - course and stadium music tracks
 - **Filler Boxes** - boxes awarding a checkbox filler
 - **Endings** - the ending movie for each mode

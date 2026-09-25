@@ -1,10 +1,17 @@
 {
+  "authors": [
+    "Broney"
+  ],
   "description": "Angband is a classic roguelike dungeon crawl set in Tolkien's Middle-earth.\nDescend a hundred dungeon levels, slay the unique foes lurking there, and\nultimately defeat Morgoth, Lord of Darkness.",
   "flags": [],
   "game": "Angband",
   "github": "https://github.com/zane31415/APangband",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/zane31415/APangband/blob/master/angband/docs/setup_en.md",
   "sheet_disclosure": [
     "Extensive",
@@ -67,6 +74,21 @@
       "title": "0.2.0",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "v0.4.0": {
+      "created_at": "2026-08-14T04:59:22Z",
+      "description": "AP Angband 0.4.0 Release!\r\n\r\nChanges since 0.3.0-\r\n* Equipment Traits no longer locks the weapon slot, it instead adds an \"Archipelago Sigil\". This makes finding weapons more relevant and gives warriors less of a crummy early game.\r\n* This means the Weapon Dice / Dice Count / Lightness are no longer applicable, and are replaced with some Extra Shot and Extra Blow traits. The weapon to-hit/dam still apply to your weapon.\r\n* New consumables added to received items: Rod of Magic Mapping, Staff of Power, Staff of Healing, Staff of Holiness, Staff of the Magi\r\n* Potion of *healing* added into filler\r\n* Expanded Starting Shop Books shifted to Expanded Shops- Alchemist and Magic shops expand their offerings as well (Cure Crit potions and Potions of Healing, Wand of Fireballs, Staff of Dispel Evil, Wand of Annihilation)\r\n* Pick of Erebor / Mattock of Nain fixed for 1:1 artifacts\r\n* Fixed some general issues with racial traits, verified the Archipelago race should now work (haven't tried it myself, though)",
+      "download_url": "https://github.com/zane31415/APangband/releases/download/v0.4.0/angband.apworld",
+      "has_manifest": true,
+      "hash_sha256": "66f7f20881858318ca0a355d0e1cc843c76342b81ad2d6bf407511eadcb10d3b",
+      "html_url": "https://github.com/zane31415/APangband/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 28846,
+      "source_url": "https://api.github.com/repos/zane31415/APangband",
+      "tag": "v0.4.0",
+      "title": "0.4.0",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
     }
   }
 }
