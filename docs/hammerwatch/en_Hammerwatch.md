@@ -50,6 +50,11 @@ There are a few goals that can be chosen in your YAML:
 * Unlock and complete the Pyramid of Fear in the Temple of the Sun campaign
 * Collect a certain number of strange planks in either campaign
 
+In the Plank Hunt goal modes, to send your goal completion after collecting all required planks you must go to
+the following locations:
+- Castle: go to the broken bridge on floor 1 of the prison
+- Temple: talk to Cain outside the Temple of the Sun
+
 ## What does another world's item look like in Hammerwatch?
 
 Items belonging to other players will have a Hammerwatch sprite matched to the name of the item, or a sprite resembling 

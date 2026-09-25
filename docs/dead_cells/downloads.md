@@ -1,9 +1,12 @@
 # Dead Cells
 
 ## Latest
-- <a href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.8/dead_cells.apworld">Latest Version (0.1.8)</a>
+- <a href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.9/dead_cells.apworld">Latest Version (0.1.9)</a>
 
 ## All Versions
+
+#### v0.1.9
+- <a href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.9/dead_cells.apworld">https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.9/dead_cells.apworld</a>
 
 #### v0.1.8
 - <a href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.8/dead_cells.apworld">https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.1.8/dead_cells.apworld</a>

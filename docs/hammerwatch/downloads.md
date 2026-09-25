@@ -1,9 +1,12 @@
 # Hammerwatch
 
 ## Latest
-- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v4.1.3/hammerwatch.apworld">Latest Version (4.1.3)</a>
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v4.1.4/hammerwatch.apworld">Latest Version (4.1.4)</a>
 
 ## All Versions
+
+#### v4.1.4
+- <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v4.1.4/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v4.1.4/hammerwatch.apworld</a>
 
 #### v4.1.3
 - <a href="https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v4.1.3/hammerwatch.apworld">https://github.com/Parcosmic/Hammerwatch-Archipelago/releases/download/v4.1.3/hammerwatch.apworld</a>
