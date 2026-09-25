@@ -8,6 +8,9 @@
 #### v0.7.0.post2
 - <a href="https://github.com/Haywire32/DD1-AP/releases/download/v0.7.0/dungeon_defenders.apworld">https://github.com/Haywire32/DD1-AP/releases/download/v0.7.0/dungeon_defenders.apworld</a>
 
+#### v0.7.0r2
+- <a href="https://github.com/Haywire32/DD1-AP/releases/download/v0.7.1/dungeon_defenders.apworld">https://github.com/Haywire32/DD1-AP/releases/download/v0.7.1/dungeon_defenders.apworld</a>
+
 #### v0.7.0
 - <a href="https://github.com/Haywire32/DD1-AP/releases/download/v0.7.0/dungeon_defenders.apworld">https://github.com/Haywire32/DD1-AP/releases/download/v0.7.0/dungeon_defenders.apworld</a>
 

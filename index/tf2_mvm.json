@@ -268,6 +268,22 @@
       "version_simple": "1.17.2",
       "world_version": "1.17.2r3"
     },
+    "nightlyr24": {
+      "created_at": "2026-09-25T15:09:41Z",
+      "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `1244b79dad2b309aec14e8e395b4a03b6e8e2b08`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.17.3\n\n- Bot cards 4/5: the launcher's bot-card squad (#163)\n- Bot cards 3/5: cards on the game server (plugin) (#162)\n- Bot cards 2/5: the bridge grants a card and still reads v6 seeds (#161)\n- Bot cards 1/5: optional bot-card rewards in the seed (apworld) (#160)\n- fix(buffs): no-self-blast keeps the blast-jump push and refunds the health (#146)\n- chore(deps): tf2-mvm-bots-go v0.17.0\n- feat(bots): Villa defender orders and the roof transfer for Recalled to Life (#142)\n- feat(tracker): link the admin to the room's tracker, and show each class's slot order (#148)\n- fix(buffs): Cow Mangler bonus shots start clear of the shooter and deal damage (#145)\n- feat(missions): label Villa's Forgotten and Recalled to Life as Medic only (#144)\n- fix(launcher): Play and Replay start at the wave picked beside them (#141)\n",
+      "download_url": "https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "23e25e5add0e6ccf0a72c18ec3af783865f66935073f678b6414b021b6ae295f",
+      "html_url": "https://github.com/m-this/tf2-archipelago/releases/tag/nightly",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 241386,
+      "source_url": "https://api.github.com/repos/m-this/tf2-archipelago",
+      "tag": "nightlyr24",
+      "title": "nightly",
+      "version_simple": "1.17.3",
+      "world_version": "1.17.3r2"
+    },
     "nightlyr3": {
       "created_at": "2026-08-27T15:36:05Z",
       "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `ca87f09f783e2647582594c644930774c7f34288`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.10.0\n\n- chore(beads): Mannhunt plays in the test-bed at last\n- chore(beads): correct the wedge recovery record\n- chore(beads): record the launcher goroutine panic fix\n- chore(beads): record the wedged-bot kick on apw-eei\n- fix(launcher): a panic on a background goroutine no longer kills the launcher\n- test(launcher): keep the window and the terminal at the same features\n- chore(beads): record where apw-eei actually stands\n- feat(launcher): keep only the robot health scale\n- chore(beads): note the lever instrumentation on apw-d7u\n- chore(beads): close apw-d7u, the balancing levers are fixed and measured\n- docs(plugin): record why a Cash Bundle keeps the Scout heal (apw-jo7)\n- chore(beads): record the balancing and teleporter work\n- feat(plugin): restore the wave after a restart, and hide the empty buff window\n- fix(launcher): use strings.Cut in reselectLoadout\n- chore(beads): file the balancing levers as P0 (apw-d7u)\n- chore(beads): file the Cash Bundle heal (apw-jo7)\n- chore(beads): file the empty buff window as P0\n- fix(launcher): name a custom loadout in the Bot Switcher, and open the Bots tab\n- fix(launcher): refresh the loadout menus when one is saved or removed\n- docs(changelog): the fixes since the section was drafted (apw-u63, apw-6hf)\n- chore(beads): close apw-u63\n- fix(launcher): the settings window would not open at all (apw-u63)\n- feat(fakeroom): hand out weapon buffs early enough to try them\n- chore(deps): bots v2.20.0 -> v2.21.0 (mvm-hnb)\n- chore(beads): mannhunt is a community map (apw-eei)\n- fix(test): use the real helpers in the resume test (apw-onf)\n- docs: credit k-kaneta, Cowser and Peppy as play-testers\n- chore(beads): mannhunt crashes, and the boots share the shield's hole (apw-7w9)\n- feat(bridge): remember where the run is, so a restart can put it back (apw-onf)\n- fix(plugin): refund the bundle credits the minus button loses (apw-6hf)\n- chore(beads): the shield bypasses a locked secondary (apw-7w9)\n- release: 1.11.0\n- chore(beads): the 2026-08-27 discord reports (apw-6hf, apw-8t6)\n- chore(deps): bots v2.19.0 -> v2.20.0 (mvm-78m)\n- docs: credit kelly-cs, and file the community maps work (apw-4zk)\n- chore(beads): close apw-5tk, the buffs shipped\n- feat(launcher): a Balancing tab, with the robot levers on it (mvm-bha, apw-5tk)\n- fix(test): skip the game data test without the real ripext (apw-5tk)\n- chore(beads): apw-5tk, what PR #3 solves\n- Add Archipelago weapon buff upgrades\n- chore(beads): a restart must not cost the mission (apw)\n- chore(deps): bots v2.18.1 -> v2.19.0 (mvm-bha)\n- feat(launcher): build your own bot loadouts (mvm-e5r)\n- feat(launcher): resolve the loadouts a player builds (mvm-e5r)\n- docs: the Bot Switcher, in both languages (mvm-6dc)\n- feat(gamedata): a weapon catalogue, generated from the mod and the game (mvm-e5r)\n- feat(launcher): a Bot Switcher tab, and lineup changes without a restart (mvm-6dc)\n- chore(beads): update a bead\n- chore(beads): update apw-r85 The game server crashes with an access violation, and the la\u2026\n- chore(beads): update apw-hut RED gets nine bots when the mission loads\n- chore(beads): update apw-48u De-upgrading appears not to take\n- chore(beads): update apw-4cb A bundle is money the game never recorded\n- feat(launcher): validate Archipelago run capacity\n- feat(launcher): install selected community assets\n- feat(community): add portable MvM mission support\n",
@@ -330,7 +346,7 @@
       "tag": "nightlyr6",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r3"
+      "world_version": "1.11.0r2"
     },
     "nightlyr7": {
       "created_at": "2026-09-06T18:20:06Z",
@@ -346,7 +362,7 @@
       "tag": "nightlyr7",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r4"
+      "world_version": "1.11.0r2"
     },
     "nightlyr8": {
       "created_at": "2026-09-06T12:00:14Z",
@@ -378,7 +394,7 @@
       "tag": "nightlyr9",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r2"
+      "world_version": "1.11.0r3"
     },
     "v1.0.0": {
       "created_at": "2026-08-17T17:37:17Z",

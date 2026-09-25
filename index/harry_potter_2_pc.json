@@ -91,6 +91,20 @@
       "version_simple": "2.11.0",
       "world_version": "2.11.0"
     },
+    "v2.11.1": {
+      "created_at": "2026-09-25T14:26:18Z",
+      "description": "# HP2PC_AP v2.11.1\r\nA new open castle option, two Jelly-Legs Jinx fixes, and a boss check fix.\r\n\r\n### New\r\n- **Always Goyle in Slytherin Common Room** (`always_goyle_in_slytherin_common_room`, open castle only, on by default). Harry wears the Goyle disguise for the whole room, so the Slytherins never chase him. A Polyjuice Potion Trap has no effect there, and the disguise comes off when you leave the level.\r\n\r\n### Fixed\r\n- **Spongify pads work during the Jelly-Legs Jinx.** Landing on an active pad bounces you as normal.\r\n- **Whomping Willow roots knock you back during the Jelly-Legs Jinx.** A root hit throws Harry clear again, instead of pinning him in place and hitting him every frame.\r\n- **Killing the Basilisk or Aragog always sends its check.** Holding the cutscene skip button could carry you out of the level before the kill registered, so Chamber of Secrets - Complete (or Forbidden Forest - Complete) never sent. The kill now also counts the moment its victory cutscene starts.\r\n",
+      "download_url": "https://github.com/Kryen112/HP2PC_AP/releases/download/v2.11.1/harry_potter_2_pc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4f814dc26f1b1409886aaa626f8230b34ccc1f8631ab7b9a10613484e8a5019a",
+      "html_url": "https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.11.1",
+      "size": 589306,
+      "source_url": "https://api.github.com/repos/Kryen112/HP2PC_AP",
+      "tag": "v2.11.1",
+      "title": "v2.11.1",
+      "version_simple": "2.11.1",
+      "world_version": "2.11.1"
+    },
     "v2.2.0": {
       "created_at": "2026-05-29T15:12:10Z",
       "description": "## v2.2.0\r\n\r\n### **New**\r\n- Sound randomizer: per-seed shuffle of in-game sound effects, with an optional no_footsteps mode that leaves Harry's footsteps unshuffled. Feedback cues (found-secret jingle, card pickups, AP toasts) are never randomized. Commands: /reroll_sounds, /restore_sounds.\r\n- Music randomizer: per-seed shuffle of music and jingles via on-disk file swap, now covering cutscene and menu music. Jingles only swap with jingles. Commands: /reroll_music, /restore_music.\r\n- Dialogue randomizer: shuffles voice lines within a single character or across all, with subtitles re-matched so captions read what you actually hear. Commands: /reroll_dialogue, /restore_dialogue.\r\n\r\n### Changes\r\n- Fred & George purchases now morph in place like the ingredient traders; the thrown Nimbus and Quidditch Armour keep their vanilla throw arc, so they no longer drop straight down and go missing (gated on quidditch upgrades).\r\n- Recurring in-game toast while the mod is disconnected from the client.\r\n- Client window now shows game connect/disconnect, and logs a loud error if the IPC listener port can't bind.\r\n- Moved the game IPC port to 42779 so a local Archipelago server no longer blocks the listener.\r\n\r\n### Fixes\r\n- Vanilla seeds now force Lumos and Flipendo into starting spells, fixing frequent generation failures (~22% -> <1%).\r\n- Fixed two open-castle logic bugs involving Flipendo.\r\n- Inbound DeathLink now waits out a settle window so it can no longer fire mid-cutscene and break movement.\r\n- Stuck ectoplasm is released so phase-through damage no longer persists.\r\n- \"Return to Entry Hall\" button is hidden during cutscenes and the vanilla intro.\r\n- Disconnect button now correctly reverts to Connect.",
