@@ -12,7 +12,7 @@
 
 ## Optional Software
 
-* None yet, but I'll create a poptracker pack eventually
+* For tracking, use the Universal Tracker, which you can find on the Archipelago discord.
 
 ## Overview
 
@@ -80,11 +80,6 @@ Alternatively, you can use the `Options Creator` from the Archipelago Launcher f
 it can't enter 0 as an amount in the lists for required population and required skyscrapers, so you have to remove the
 ones you don't want if you intend to change any from the default.
 
-#### Verifying Your Config File
-
-If you would like to validate your config file to make sure it works, you may do so on the
-[Yaml Validation Page](https://archipelago.gg/check)<!--(/check)-->.
-
 ### Installing the Archipelago Mod
 
 The host of the Archipelago multiworld should supply you with a zip file name `AP-%1-P%2-%3-%4.zip`, where `%1` is the
@@ -132,8 +127,8 @@ Also, for all game settings available as player options in your yaml file, match
 Currently, the other starting conditions do not really matter, but here are a few recommendations:
 * Turn off all other DLCs. Should you keep any on, they will unlock as normal
   * Especially don't turn on Docklands, unless you want the option to skip everything
-* Turn off all NPC players - you are not guarantueed to get weapons and may not be able to defend yourself
-* Turn off pirates - you are not guarantueed to get luxury goods and money might be tight
+* Turn off all NPC players - you are not guaranteed to get weapons and may not be able to defend yourself
+* Turn off pirates - you are not guaranteed to get luxury goods and money might be tight
 * With the exception of some expedition items, you probably shouldn't buy goods at NPC shops, as this also
 circumvents logic
 * You probably don't want to set any victory conditions in Anno itself - or at least continue playing afterwards if your
@@ -143,20 +138,21 @@ Be careful not to load into vanilla savegames or those from other modding setups
 irreversible unlocks. Once loaded into the savegame, the client should print that it is connected to the game within a
 few seconds. 
 
-Then start the Archipelago Client. If it's your first time launching, it will ask for the Anno 1800 mods folder. Point
-it to the folder you installed the mod to [above](#installing-the-archipelago-mod). On Windows, if Anno is located in
-a protected folder, it may be necessary to start the client as administrator.
+In parallel, start the Archipelago Client. If it's your first time launching, it will ask for the Anno 1800 mods
+folder. Point it to the folder you installed the mod to [above](#installing-the-archipelago-mod). On Windows, if Anno
+1800 is located in a protected folder, it may be necessary to start the client as administrator.
 
 If you ever need to change this path, you can find it in your Archipelago folder in the `host.yaml` file under
-`a1800_options`, named `a1800_mods_folder_path`.
+`a1800_options`, named `a1800_mods_folder_path`. Note that you must use normal slashes `/` in this path, backslashes do
+not work. You can also delete it in order to have the client ask with the usual file browser again.
 
 Due to the way Anno 1800 simulates game ticks, the client will only be able to connect to the game while the game is
-running and not paused (neither gamespeed pause nor menu pause). If you pause, it will disconnect. This not a problem
-and the client will reconnect briefly after unpausing the game.
+running and not paused (neither gamespeed pause nor menu pause; some expedition screen also pause the game). If you
+pause, it will disconnect. This not a problem and the client will reconnect briefly after unpausing the game.
 
 Once the client has successfully connected to Anno 1800, you can connect to the Archipelago Server by entering the
 server's ip and port and clicking `Connect` or typing `/connect <ip>:<port>` in the client. If you haven't connected
-the client to Anno during this session yet, you will receive an error telling you to do so first.
+the client to Anno 1800 during this session yet, you will receive an error telling you to do so first.
 
 It's also possible to play the game asynchronously without server or client. In this case, everything will be synced
 once you connect the next time. If Anno 1800 is the only slot in the multiworld, you can even forgo the client and
@@ -188,7 +184,10 @@ Note: Co-op was successfully tested, but multiplayer with separate players is as
 ## Other Mods
 
 Find other mods mostly on [mod.io](https://mod.io/g/anno-1800), with some on nexus or github. The following lists
-always refer to the name on mod.io. Note that many mods assume the player has all DLCs.
+always refer to the name on mod.io. Please make sure to use the exact versions listed here, otherwise compatibility
+is not guaranteed. Also note that many mods assume the player has all DLCs.
+
+If you have issues with the mods while using Archipelago, please don't contact the mod authors, contact me first.
 
 ### Supported Mods
 
@@ -197,7 +196,7 @@ The following mods are supported, but must be enabled in the config yaml:
 
 ### Compatible Mods
 
-The following mods are compatible with the randomizer and should not cause any issues:
+The following mods are compatible with the randomizer and should not cause any issues.:
 * Adjustments for HighLife Goods (Taludas) - v1.1
 * Attractiveness Rebalancing \[Spice It Up\] - v1.0.2
 * Bigger Gas Pump Radius \[Spice It Up\] - v1.0.1
@@ -208,7 +207,7 @@ The following mods are compatible with the randomizer and should not cause any i
 * Fam's More Unique Icons - v1.0.0
 * Fancy Billiardtables (Taludas) - v1.0.0
 * Faster Constructions (Kurila) - v1.6.1
-* \[Fix\] Community Patch - v1.025-v1.0261
+* \[Fix\] Community Patch - v1.025-v1.0262
 * Fix for feedbackunit Texture bugs (Taludas) - v1.0.0
 * Free Farmfield Placement (Taludas) - v3.1.1
 * Harbor Blocking \[Spice it Up\] - v1.0.1
@@ -227,17 +226,3 @@ If you managed to get your Anno 1800 running under Linux, the mods folder in the
 1800's wine prefix. Everything else should behave the same as under Windows. The Archipelago client will expect a Linux
 path to your mods folder, which might be inside the same wine prefix. The file browser should work for selecting the
 path correctly.
-
-## Troubleshooting
-
-### Connectivity Issues
-
-If you have issues connecting the Archpelago Client to the game, especially on Windows, make sure to do everything in
-the right order:
-* Close the Archipelago Client and Launcher if they are still open.
-* Open the game and load a save file. Explicitly reload the savefile if it is already open from previous attempts.
-  * Leave the game unpaused until a connection is established.
-  * Waiting on a finihsed loading screen is not enough, the actual game must be running.
-* Open the Archipelago Launcher and start the Anno 1800 Client.
-  * The Client should now connect and tell you that it got "world information" after a short moment.
-* Connect the Client to the Archipelago Server by entering the Server's IP and port.

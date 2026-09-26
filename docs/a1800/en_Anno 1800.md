@@ -75,9 +75,9 @@ There are exeptions for some specific recipe unlocks where the vanilla requireme
 ## The game shows (strange) unlock requirements. Why and what do they mean?
 
 Anno 1800 automatically shows the player how to unlock revealed but locked buildings. This is not preventable without
-breaking local (=serverless) play. It is planned to show these revealed buildings as proper hints to Archipelago at
-some point. Strange requirements, like empty strings, "continue your journey", or populations from disabled DLCs occur
-when the building unlock is not located locally or at a non-standard locations.
+breaking local (=serverless) play. There is an option called `Hint Mode` to send these revealed buildings as proper
+hints to Archipelago. Strange requirements, like empty strings, "continue your journey", or populations from disabled
+DLCs occur when the building unlock is not located locally or at a non-standard locations.
 
 Similarly, some location names in Archipelago may still include names from disabled DLCs.
 

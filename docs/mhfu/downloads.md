@@ -1,9 +1,12 @@
 # Monster Hunter Freedom Unite
 
 ## Latest
-- <a href="https://github.com/Silvris/Archipelago/releases/download/mhfu_0.0.2/mhfu.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/Silvris/Archipelago/releases/download/mhfu_0.0.3/mhfu.apworld">Latest Version (0.0.3)</a>
 
 ## All Versions
+
+#### v0.0.3
+- <a href="https://github.com/Silvris/Archipelago/releases/download/mhfu_0.0.3/mhfu.apworld">https://github.com/Silvris/Archipelago/releases/download/mhfu_0.0.3/mhfu.apworld</a>
 
 #### v0.0.2
 - <a href="https://github.com/Silvris/Archipelago/releases/download/mhfu_0.0.2/mhfu.apworld">https://github.com/Silvris/Archipelago/releases/download/mhfu_0.0.2/mhfu.apworld</a>

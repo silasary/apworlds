@@ -8,6 +8,9 @@
 #### v0.6.0r2
 - <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.1/minishoot.apworld">https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.1/minishoot.apworld</a>
 
+#### v0.6.0r2
+- <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.2/minishoot.apworld">https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.2/minishoot.apworld</a>
+
 #### v0.6.0
 - <a href="https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.0/minishoot.apworld">https://github.com/TheNooodle/MinishootRandomizer/releases/download/v0.6.0/minishoot.apworld</a>
 

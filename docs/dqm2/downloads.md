@@ -1,9 +1,12 @@
 # Dragon Quest Monsters 2
 
 ## Latest
-- <a href="https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.1.1/dqm2.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.1.2/dqm2.apworld">Latest Version (0.1.2)</a>
 
 ## All Versions
+
+#### v0.1.2
+- <a href="https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.1.2/dqm2.apworld">https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.1.2/dqm2.apworld</a>
 
 #### v0.1.1
 - <a href="https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.1.1/dqm2.apworld">https://github.com/Whizzlefern/Archipelago/releases/download/dqm2-v0.1.1/dqm2.apworld</a>

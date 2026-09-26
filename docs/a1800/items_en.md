@@ -153,8 +153,45 @@ A few items are forced to appear early and always in Anno, so the player doesn't
 * OW: Fishery
 * OW: Sheep Farm
 * OW: Framework Knitters
-* OW: Fire Station
+* OW: Fire Station (unless incident difficulty is set to `brutal`)
 * OW: Worker Residence
+
+## Useful Items
+
+A few items are marked as useful if they are not progression so that the randomizer knows not to place them in 
+excluded locations. These are:
+* All trading posts and their upgrades
+* OW: Paved Street
+* OW: Depot
+* OW: Silo
+* OW: Trade Union
+* OW: Town Hall
+* OW: Communter Pier
+* NW: Paved Street
+* NW: Depot
+* NW: Silo
+* NW: Trade Union
+* NW: Town Hall
+* NW: Hacienda
+* NW: Hacienda Storeroom
+* NW: Bauxite Mine (to facilitate airship platforms)
+* NW: Aluminium Smelter (to facilitate airship platforms)
+* NW: Airship Platform
+* NW: Commuter Station
+* NW: Dam (all stages)
+* Clipper
+* Cargo Ship
+* Colibri
+* Alicanto
+* Quetzalcoatl
+* Harpy
+* Hermes
+* Zephyr
+* Expedition: Cape Trelawney
+* AR: Arctic Lodge
+* AR: Depot
+* EN: Depot
+* EN: Paved Street
 
 ## Progressive Items
 

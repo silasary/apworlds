@@ -239,6 +239,41 @@ Tourist Season and The High Life DLCs. Below, there is an exact list of tasks to
 | OW: Drug Store:<br>Face Cream | The High Life<br>&<br>The Passage | **– THIS NEVER CONTAINS A PROGRESSIVE ITEM –**<br>After building any drug store, complete the set 'Icebound' in an OW: Museum<br>(Items: Collection Of Lost Expedition Relics, Frozen Woolly Mammoth, Wolf Pup Mummy) |
 | OW: Drug Store:<br>Pomade | The High Life<br>&<br>Land of Lions | After building any drug store, build an EN: Hibiscus Farm within 8 squares of an EN: Apiary |
 
+## Location Name Groups
+
+Locations are also assigned to name groups for easier usage with the `exclude_locations` option. The available groups
+are defined as follows:
+
+| Group | Description |
+| --- | --- |
+| Farmers | All locations that need or can use farmers to unlock. |
+| Workers | All locations that need or can use workers to unlock. |
+| Artisans | All locations that need or can use artisans to unlock. |
+| Engineers | All locations that need or can use engineers to unlock - excluding skyscrapers. |
+| Investors | All locations that need or can use investors to unlock - excluding skyscrapers. |
+| Tourists | All locations that need or can use tourists to unlock, plus the unlocks on building the Tourist Mooring. |
+| Jornaleros | All locations that need or can use jornaleros to unlock. |
+| Obreros | All locations that need or can use obreros to unlock. |
+| Artistas | All locations that need or can use artistas to unlock. |
+| Explorers | All locations that need or can use explorers to unlock. |
+| Technicians | All locations that need or can use technicians to unlock. |
+| Shepherds | All locations that need or can use shepherds to unlock. |
+| Elders | All locations that need or can use elders to unlock. |
+| Scholars | All locations that need or can use scholars to unlock. |
+| Skyscrapers | All locations that need or can use skyscrapers to unlock. |
+| Skyscrapers: Level 5 | All locations that need or can use level 5 skyscrapers to unlock. |
+| Enter: New World | All locations unlocked upon entering the New World. |
+| Enter: The Arctic | All locations unlocked upon entering The Arctic. |
+| Enter: Enbesa | All locations unlocked upon entering Enbesa. |
+| Recipes | All locations containing recipes in vanilla. |
+| Restaurant Recipes | All locations containing restaurant recipes in vanilla. |
+| Cafe Recipes | All locations containing cafe recipes in vanilla. |
+| Bar Recipes | All locations containing bar recipes in vanilla. |
+| The Iron Tower Recipes | All locations containing The Iron Tower recipes in vanilla. |
+| Department Store Recipes | All locations containing department store recipes in vanilla. |
+| Furniture Store Recipes | All locations containing furniture store recipes in vanilla. |
+| Drug Store Recipes | All locations containing drug store recipes in vanilla. |
+
 ## Number of Locations by DLC
 
 | DLC | Total # Checks | Subdivision | # Checks
