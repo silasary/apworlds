@@ -12,7 +12,7 @@ Welcome to my project. Things are still under development, but here you will fin
 - There's a modified mission select screen, which allows you to select from any level as long as you have its access item.
   - Boss portraits are in groups of four like in vanilla, but now you can tab between the pages with left and right on the d-pad (the shoulder buttons work too).
   - Hovering a level tells you its name, how many of its disks you have found, whether it's LOCKED / OPEN / CLEARED, as well as your best rank on that stage if it has been cleared.
-  - Picking a level you have already beaten asks you how you want to run it. EXPLORE is the vanilla revisit for picking up disks you missed. RETRY MISSION plays the level as a real mission again, so the boss is back and you get another attempt at the A+ rank check.
+  - Picking a level you have already beaten asks you how you want to run it. EXPLORE is the vanilla revisit for picking up disks you missed. RETRY MISSION plays the level as a real mission again, so the boss is back and you get another attempt at the A rank check.
 - To beat the game, clear the Abandoned Research Laboratory. It won't open until you have cleared every other stage AND you are holding a configurable number of secret disks (default: 120)
 - Later NPC conversations, and the checks attached to them, are gated behind the two Story Progress items.
 - EX Skills are awarded based on your score on the level you just completed, rather than on your average score going into that level. (Yes, that's how they worked in the vanilla game). Your global rank score is calculated based on your average of all of your highest scores on completed levels.
@@ -42,7 +42,7 @@ Cerveau now has a shop, visit it by pressing L or R on his secret disk analysis 
 - All skippable cutscenes are skippable by default.
 - You can leave any level at any time.
 - Pressing SELECT during gameplay does one thing of your choosing. By default it swaps sub weapons, configurable by an option.
-- When Archipelago gives you an item, a small icon pops up over Zero's head with a unique icon displayed for each item, and for a secret disk the game's own message box describes it along the bottom of the screen.
+- When Archipelago gives you an item, a small icon pops up over Zero's head with a unique icon displayed for each item, and for a secret disk the game's own message box names it along the bottom of the screen for a moment.
 - Collecting certain lore related secret disks will simultaneously unlock a random e-Reader graphical change. A full list can be seen [here](https://tcrf.net/Mega_Man_Zero_3/e-Reader_Functions).
 - Your player rank is based on the average of your best clear in each stage.
 - Pressing select on the secret disk analysis screen will open all of the disks that you own.
@@ -51,11 +51,14 @@ Cerveau now has a shop, visit it by pressing L or R on his secret disk analysis 
 - `required_secret_disks`:  
   How many disks you need to be holding before the final stage will open (In addition to clearing every other level). Default is 120, max is 180.
 
+- `final_stage_rank`:  
+  The rank every other stage's best clear must reach before the final stage opens. Default is F, which means any clear will do. `none` drops the clears entirely: the final stage opens as soon as you hold the required secret disks.
+
 - `starting_weapons`:  
   Which of the four you begin with. To give all, use `starting_weapons: ['Buster', 'Z-Saber', 'Recoil Rod', 'Shield Boomerang']` 
 
-- `easy_ex_skill`:  
-  Always sends the EX Skill location check at the end of a level, whatever your rank was.
+- `ex_skill_rank`:  
+  The rank a stage clear needs to send that stage's EX Skill check (the "A+ Rank Clear" locations). Default is A, matching vanilla. Set to F to get the check on any clear. The fusion elf that increases your rank works to unlock that check on one stage per fuse.
 
 - `extra_life_sanity`:  
   The game's ten static 1-UPs become location checks. Unchecked ones display in game with the Archipelago logo.
@@ -77,8 +80,12 @@ Cerveau now has a shop, visit it by pressing L or R on his secret disk analysis 
   - No Penalty: Fusing an elf does not affect rank.
   - Auto: Every passive elf received via disk is automatically opened and applied. Does not affect rank. Gives the game a nice sense of progresion, but makes it a lot easier.
 
+
+- `infinite_lives`:  
+  Infinite Lives.
+
 - `disk_name_popup`:  
-  On by default. When a Secret Disk arrives from Archipelago, a small message box names it for a moment.
+  On by default. When a Secret Disk arrives from Archipelago, a small message box names it for a moment. Every other item is obvious in game.
 
 - `randomized_palettes`:  
   Every stage is drawn in a randomly chosen color scheme.

@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "Stingrays110"
+  ],
   "description": "Play as Zero, kill the robots and save the day",
   "game": "Mega Man Zero 3",
   "github": "https://github.com/brodieberger/MMZero3Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/brodieberger/MMZero3Archipelago/blob/main/mmzero3/docs/setup_en.md",
   "sheet_disclosure": [
     "Consulted",
@@ -332,6 +339,21 @@
       "title": "Mega Man Zero 3 APWorld v0.3.5",
       "version_simple": "0.3.5",
       "world_version": "0.3.5"
+    },
+    "v0.3.6": {
+      "created_at": "2026-09-25T02:25:48Z",
+      "description": "Small update. New yaml options for rank requirements and infinite lives, and the apworld now has an archipelago.json.\r\n\r\n[Full Readme here](https://github.com/brodieberger/MMZero3Archipelago)\r\n[Link to poptracker pack here](https://github.com/ambibii/mmz3-poptracker/releases/tag/v3.5.1)\r\n\r\n## Features\r\n\r\n### EX Skill rank (option)\r\n`ex_skill_rank` sets the rank you need on a stage clear to get that stage's EX Skill check.\r\n\r\nThis replaces `easy_ex_skill`, with `ex_skill_rank: f` doing the same thing.\r\n\r\n### Final stage rank (option)\r\n`final_stage_rank` sets the required rank you need for every stage before the final stage opens. Default is F, which means clearing the final level in any way would unlock the final boss.\r\n\r\nIt also has a `none` setting that drops the stage clears entirely. The final stage opens as soon as you are holding the required secret disks.\r\n\r\nYour best rank on each stage is shown when you hover it on the mission select screen.\r\n\r\n### Infinite lives (option)\r\nDoes what you think it would.",
+      "download_url": "https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.3.6/mmzero3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "518ce5a125d711c02b37129bf0e947c3626a4d88b703dffadbbc87b523e591f5",
+      "html_url": "https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 114695,
+      "source_url": "https://api.github.com/repos/brodieberger/MMZero3Archipelago",
+      "tag": "v0.3.6",
+      "title": "Mega Man Zero 3 APWorld v0.3.6",
+      "version_simple": "0.3.6",
+      "world_version": "0.3.6"
     }
   }
 }

@@ -2,119 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-26T12:16:36.700571+00:00</updated>
+  <updated>2026-09-26T18:14:27.608399+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.1</id>
-    <title>WarioWare, Inc. - Mega Microgame$! v1.1.1</title>
-    <updated>2026-09-22T05:28:13+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>wa&#13;
-# Info&#13;
-* [Info](https://thelx5.github.io/wario_ware_inc/index.html)&#13;
-* [Setup](https://thelx5.github.io/wario_ware_inc/setup.html)&#13;
-# Changes&#13;
-* Makes ionium happier</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8</id>
-    <title>CrossCode v0.9.8</title>
-    <updated>2026-09-22T07:26:10+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content># Changes since 0.9.8 Prerelease 1&#13;
-&#13;
-## Changes to Mod&#13;
-&#13;
-* Map markers that had significant overlap with other map markers have had their position manually adjusted to improve legibility (@CodeTriangle, #102).&#13;
-  * In particular, this targets the overlapping chests in **Bergen Trail**, **Temple Mine**, **Faj'ro Temple**, and **So'najiz Temple**.&#13;
-  * If any incidences remain of overlapping markers, please make me aware.&#13;
-* Map markers are now shown for chests added by the mod, such as the ones in the lobbies of **Faj'ro Temple** and **Grand Krys'kajo** (@CodeTriangle, #102).&#13;
-&#13;
-## Fixes to Mod&#13;
-&#13;
-* Fixed an issue where shop hints would not send unless both **Shop Dialog Hints** and **Quest Dialog Hints** were enabled (@CodeTriangle, #100).&#13;
-* Fixed an issue where botanics would not send immediately if the plant hit was an alternate form of the plant in question (@CodeTriangle, #100).&#13;
-* Map markers for chests that in the vanilla game contain chests keys no longer always display as unlocked.&#13;
-&#13;
-## Fixes to Logic&#13;
-&#13;
-* **Trial of Persistance Lower Left** no longer requires four So'najiz Keys to access (@CodeTriangle, #101).&#13;
-&#13;
-# Changes since 0.9.7&#13;
-&#13;
-## Changes to Mod&#13;
-&#13;
-* Added more functionality to the Archipelago menus (@CodeTriangle, #98).&#13;
-  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.&#13;
-  * Text client now automatically jumps to the bottom.&#13;
-  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.&#13;
-&#13;
-### Internal Changes&#13;
-&#13;
-* Reformatted a large amount of input data (@Valkhiya, #93)&#13;
-&#13;
-## Changes to APWorld&#13;
-&#13;
-* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).&#13;
-  * This should ensure that generations with the same seed produce the same output.&#13;
-* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).&#13;
-  * This should speed up generation on large scales.&#13;
-&#13;
-### Internal Changes&#13;
-&#13;
-* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).&#13;
-</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.1</id>
-    <title>Baldur's Gate 3 v0.7.1</title>
-    <updated>2026-09-22T08:13:34+00:00</updated>
-    <author>
-      <name>Broney</name>
-    </author>
-    <content>Baldur's Gate 3 v0.7.1 release!&#13;
-&#13;
-In this version:&#13;
-New YAML options:&#13;
-* Added additional traps (confusion/sussur/clown/blinded)&#13;
-* Made monster traps scale with your level (experimental)&#13;
-* local_fill_percent keeps a share of your filler in your own world&#13;
-* Killsanity strictness (relaxed killsanity means that if a monster dies, it counts as a kill, regardless of whether you killed them or not. Note: there are some exceptions that hard-require killing because the game kills them as level setup, like the skeletons in Wither's crypt)&#13;
-&#13;
-Logic gating changes:&#13;
-* Moonlight Towers now only has three gates, not 5 - the tower, the roof, the colony&#13;
-* Mason's Guild, Last Light Inn Basement and Moonrise Rooftop are now handled as additional regions, allowing logic to treat locations as properly accessible&#13;
-* Added some backups for various questsanity locations (learn goblin leader names, barcus' reunion, halsin rescue, moonlantern pickup, notice artefact)&#13;
-* Renamed some locations for clarity (Talk to Ethel about Tadpole, Build a Kuotoa Army)&#13;
-* Removed questsanity checks: Put flowers on pet grave, wake art, hear minthara/ragzlin talk about artefact&#13;
-&#13;
-Removed some killsanity checks (they were missable)&#13;
-* Giant Spiders in goblin camp&#13;
-* Redcaps in Hag's swamp&#13;
-Added a killsanity check (how did I miss him?):&#13;
-* Brawler Rancer in the Goblin Camp&#13;
-&#13;
-Oh so many containersanity changes&#13;
-* Containers now trigger on destruction&#13;
-* Data quality pass- containersanity should be entirely playable for Halsin goal (I am not willing to call it stable yet)&#13;
-&#13;
-Client / mod data changes:&#13;
-* Client and mod can now recover from a corrupted data file on its own without needing my help for it&#13;
-* Does better about regenerating the ap_in file instead of waiting for a new intake item to do so&#13;
-* If the wrong BG3 folder is chosen on setup, don't write it to host.yaml&#13;
-* BG3 mod in-game window now shows window/client/server build information to aid debugging. This may have an init issue and want you to click 'resync' in the window but said resync is harmless.&#13;
-* There is a hidden YAML option called "DevDebugOn" that when set to true will tell the mod to write a debug.json about various game events (mostly used for dev situations like containersanity)</content>
-    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.1"/>
-  </entry>
   <entry>
     <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.1</id>
     <title>plateup v0.2.7.1</title>
@@ -1036,6 +928,36 @@ Fixes:&#13;
     <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.2.1-TEST"/>
   </entry>
   <entry>
+    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.6</id>
+    <title>Mega Man Zero 3 v0.3.6</title>
+    <updated>2026-09-25T02:25:48+00:00</updated>
+    <author>
+      <name>Stingrays110</name>
+    </author>
+    <content>Small update. New yaml options for rank requirements and infinite lives, and the apworld now has an archipelago.json.&#13;
+&#13;
+[Full Readme here](https://github.com/brodieberger/MMZero3Archipelago)&#13;
+[Link to poptracker pack here](https://github.com/ambibii/mmz3-poptracker/releases/tag/v3.5.1)&#13;
+&#13;
+## Features&#13;
+&#13;
+### EX Skill rank (option)&#13;
+`ex_skill_rank` sets the rank you need on a stage clear to get that stage's EX Skill check.&#13;
+&#13;
+This replaces `easy_ex_skill`, with `ex_skill_rank: f` doing the same thing.&#13;
+&#13;
+### Final stage rank (option)&#13;
+`final_stage_rank` sets the required rank you need for every stage before the final stage opens. Default is F, which means clearing the final level in any way would unlock the final boss.&#13;
+&#13;
+It also has a `none` setting that drops the stage clears entirely. The final stage opens as soon as you are holding the required secret disks.&#13;
+&#13;
+Your best rank on each stage is shown when you hover it on the mission select screen.&#13;
+&#13;
+### Infinite lives (option)&#13;
+Does what you think it would.</content>
+    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.6"/>
+  </entry>
+  <entry>
     <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.37</id>
     <title>Muse Dash v1.5.37.post2</title>
     <updated>2026-09-25T09:39:06+00:00</updated>
@@ -1088,7 +1010,7 @@ Fixes:&#13;
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `d89acca611cb667ac84258d8014cbf999544c5c3`.
+Built from `bc66c79c56abb0a9d5b7123a30771c7e7948a092`.
 
 ## Downloads
 
@@ -1097,12 +1019,18 @@ Built from `d89acca611cb667ac84258d8014cbf999544c5c3`.
 
 ## Since v1.17.3
 
+- beads: the Windows SigMod port's state after the bed sweeps
+- plugin: log the first GetMaxAmmo hook call on each map
+- fix(plugin): stop resending every queued objective while the bridge fails
 - feat(bots): "Shop where they stand", an option for every bot (#165)
-- Bot cards 5/5: the card deck and the tracker (browser) (#164)
-- Bot cards 4/5: the launcher's bot-card squad (#163)
-- Bot cards 3/5: cards on the game server (plugin) (#162)
-- Bot cards 2/5: the bridge grants a card and still reads v6 seeds (#161)
-- Bot cards 1/5: optional bot-card rewards in the seed (apworld) (#160)
+- feat(web): the card deck and the tracker (#164)
+- feat(launcher): the bot-card squad (#163)
+- feat(plugin): bot cards on the game server (#162)
+- feat(bridge): grant bot cards and keep reading v6 seeds (#161)
+- feat(apworld): optional bot-card rewards in the seed (#160)
+- fix(rcon): read a full 4096 byte body
+- fix(plugin): Make it Count finds the dispenser on Windows
+- feat(waveprobe): a Windows bed for the SigMod missions
 - fix(buffs): no-self-blast keeps the blast-jump push and refunds the health (#146)
 - chore(deps): tf2-mvm-bots-go v0.17.0
 - feat(bots): Villa defender orders and the roof transfer for Recalled to Life (#142)
@@ -1616,5 +1544,70 @@ Once your friends are in game with you (they can just join!), you can type !ap t
 ## Known Issues&#13;
 * Sound cacheing bug: sometimes when another player joins the lobby, their sounds are all mixed up. This will self resolve once you get into a mission. I am under the impression that if they install the plugin too that helps, but I'm unsure. This one is kind of complicated to diagnose.</content>
     <link href="https://github.com/barretg/hl1-sven-ap/releases/tag/v0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.4.27</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.4.27</title>
+    <updated>2026-09-26T13:59:11+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## Installation &amp; Setup
+
+- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.
+- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.
+- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.
+- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.
+- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)
+- Click **Generate** to create a multiworld `.zip` in the `output` folder.
+- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.
+- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).
+- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.
+- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2
+
+
+
+## Changelog
+
+- fix(SM): rules and removal of shrink ray softlock prevention on Outpost Omega 1 (a1b0bc0e)
+
+Full comparison:
+https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.4.26...rac_size_matters-v0.4.27</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.4.27"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.6</id>
+    <title>Factorio: Space Age v3.0.6</title>
+    <updated>2026-09-26T15:06:23+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 3.0.6&#13;
+&#13;
+* Fix `goal: aquilo_orbit` causing Factorio crashes with missing `railgun_location` prerequisite. Thanks HandleWithKERR and d_a_v_e_2000 for the bug reports.&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.09.26</id>
+    <title>Archipeladoku v2026.9.26</title>
+    <updated>2026-09-26T17:58:05+00:00</updated>
+    <author>
+      <name>Galdiuz</name>
+    </author>
+    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.09.26"/>
   </entry>
 </feed>
