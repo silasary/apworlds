@@ -374,6 +374,21 @@
       "title": "v1.0.4",
       "version_simple": "1.0.4",
       "world_version": "1.0.4"
+    },
+    "v1.0.5": {
+      "created_at": "2026-09-26T03:55:44Z",
+      "description": "## Supports: Mod v1.0.0+ -- Tracker v2.0.5+\r\n\r\n# Changelogs\r\n- Fixed UT not taking pre_fill logic appends like FDC logic post ER into regard\r\n- Fixed UT showing logic events like `White Pedestals` with the `/next_progression` command \r\n- Fixed UT showing a KeyError for some collapsed item labels.\r\n- Removed IBLadder from the Bat / Skeleton glossary region list\r\n- Added TrickyLogic for some checks next to ladders through self-damaging\r\n- Corrected logic for the following checks relating to Bergelmir and AC hot spring area:\r\n  - Bergelmir logic event:\r\n    - Was: `CanChant(Earth) and CanChant(Moon) and CanChant(Heaven)`\r\n    - Now: `(Has(Feather) or HorizontalAttack) and CanChant(Earth) and CanChant(Moon) and CanChant(Heaven)`\r\n  - [SFG A-3] Top-Left Breakable Ceiling Chest (Gauntlet)\r\n    - Was: `Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare Gun)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb))`\r\n    - Now: `Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare Gun)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops))`\r\n  - [SFG A-4] Left Snow Drop Coin Pot / Glossary\r\n    - Was: `Has(Katana) or Has(Axe) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and Has(Vajra)) or (CanUse(Flare Gun) and (Has(Rapier) or Has(Knife) or CanUse(Rolling Shuriken)))`\r\n    - Now: `MeleeAttack or Has(Claydoll Suit) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or (CanUse(Flare Gun) and Has(Feather))`\r\n  - [SFG A-5] Hydlit checks\r\n    - Added TrickyLogic with just `PuzzleFinished(Bergelmir)`\r\n  - [AC D-7] (lava traversal logic for all checks)\r\n    - Was: `... and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(2)))`\r\n    - Now: `... and (Has(Claydoll Suit) or Has(Feather) or (Has(Ice Cloak) and OrbCount(2)))`",
+      "download_url": "https://github.com/Crownmuri/Archipelago/releases/download/v1.0.5/lamulana2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1aeffeef33b6a0be37a418e2d959627000d0a52c63837ce317d52384735c1dd5",
+      "html_url": "https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 260445,
+      "source_url": "https://api.github.com/repos/Crownmuri/Archipelago",
+      "tag": "v1.0.5",
+      "title": "v1.0.5",
+      "version_simple": "1.0.5",
+      "world_version": "1.0.5"
     }
   }
 }

@@ -7,7 +7,7 @@ Defeat Otto Destruct on Quodrona to complete your goal.
 
 
 ## Downloads
-- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/rac_size_matters-v0.4.24/rac_size_matters.apworld">Latest Version (0.4.23)</a>
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/rac_size_matters-v0.4.26/rac_size_matters.apworld">Latest Version (0.4.25)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

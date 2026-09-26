@@ -1,9 +1,12 @@
 # La-Mulana 2
 
 ## Latest
-- <a href="https://github.com/Crownmuri/Archipelago/releases/download/v1.0.4/lamulana2.apworld">Latest Version (1.0.4)</a>
+- <a href="https://github.com/Crownmuri/Archipelago/releases/download/v1.0.5/lamulana2.apworld">Latest Version (1.0.5)</a>
 
 ## All Versions
+
+#### v1.0.5
+- <a href="https://github.com/Crownmuri/Archipelago/releases/download/v1.0.5/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v1.0.5/lamulana2.apworld</a>
 
 #### v1.0.4
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v1.0.4/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v1.0.4/lamulana2.apworld</a>
