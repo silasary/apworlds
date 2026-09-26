@@ -17,6 +17,9 @@
 #### v9.1.0.post0
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release/oot.apworld</a>
 
+#### v9.1.0
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.10-release5/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.10-release5/oot.apworld</a>
+
 #### v9.1.0b12
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta12/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta12/oot.apworld</a>
 

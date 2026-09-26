@@ -7,7 +7,7 @@ The following are required in order to play Ratchet & Clank: Size Matters in Arc
 - Installed the latest version of [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)
 - The latest version of the Ratchet & Clank: Size Matters apworld
 - [PCSX2 emulator](https://pcsx2.net/downloads/) (2.x or later recommended for the required PINE support)
-- A copy of **Ratchet & Clank: Size Matters** — NTSC-U disc or ISO (`SCUS-97615`)
+- A copy of **Ratchet & Clank: Size Matters** — US (`SCUS-97615`), EU (`SCES-55019`), or JP (`SCPS-15120`).
 ---
 
 ## Enabling PINE in PCSX2
@@ -53,7 +53,7 @@ This section is for players who want to host a solo or multiplayer game.
 
 1. Launch the **R&C: Size Matters Client** from the Archipelago launcher.
 2. Connect to your Archipelago server with your slot name.
-3. In PCSX2, load `SCUS-97615` and wait at the **main menu** for the client to connect.
+3. In PCSX2, load the game and wait at the **main menu** for the client to connect. The same client automatically selects the address map from the disc serial.
 4. With Random Starting Planet enabled, wait for the client's **Ready to start a new game** message before selecting **New Game**. The frontend patch starts the new save directly on the selected planet, without first loading Pokitaru.
 5. With Random Starting Planet off (or Pokitaru selected), start a **New Game** normally on Pokitaru.
 
@@ -88,7 +88,7 @@ Toggling a Link on/off client-side is only half the picture — the matching YAM
 ## Troubleshooting
 
 **Client says "Wrong game in PCSX2"**
-Make sure you are running `SCUS-97615` (NTSC-U). PAL and other regional versions are not supported.
+Make sure you are running a recognized serial: `SCUS-97615` (US), `SCES-55019` (EU), or `SCPS-15120` (JP). Restart the client after updating so it loads the regional detection code.
 
 **Weapons are not appearing after receiving items**
 Use `/reconnect` in the client console to re-apply everything received so far. If that doesn't help, use `/force_sync`.

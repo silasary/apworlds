@@ -56,6 +56,7 @@ of everything specific to this game:
 | Option | Default | What it does |
 |---|---|---|
 | Starting Weapons | 2 | Number of random weapons precollected at the start. |
+| Clank Pack | Off | Adds one Clank Pack unlock item. Ratchet starts without Clank's backpack abilities and regains them when it arrives. This is not a progressive item. |
 | Starting Gadgets | 1 | Number of random gadgets precollected at the start (1 grants the Hypershot). |
 | Random Starting Planet | Off | Off: start on Pokitaru; Ryllus requires its own infobot. Logic: two of the seven eligible planets are chosen at random, weighted by how many locations they offer under your other settings. No Logic: the same two-planet pick, but uniformly random instead of weighted. Dreamtime, Inside Clank, and Quodrona are never candidates. |
 | Starting Bolts | 45,000 | Bolts precollected at the start. |
@@ -86,6 +87,21 @@ of everything specific to this game:
 | Challenge Mode | 0 | Enables the game's Challenge Mode (New Game Plus) tier and controls how far generation reaches into it. 0: vanilla, no Challenge Mode content. 1: adds the RYNO vendor purchase, 10 Challenge-Mode-only weapon mod purchases, and the 4 Hyperborean armour pieces. 2: everything from tier 1, plus the 4 Chameleon armour pieces. Everything this unlocks is still gated by NG+ Items — with that off, this option alone has no effect. |
 | Death Amnesty | 0 | Number of deaths allowed before items are removed from your inventory on death. Higher is more forgiving. |
 | Starting Skin | Default | Cosmetic skin for Ratchet, applied automatically on each planet load. Includes the seven single-player skins and thirteen red multiplayer skins, with no blue variants. All skins are unlocked in-game regardless of this choice. |
+
+### Clank Pack and No Clank trap
+
+The optional `clank_pack: true` setting removes Clank from Ratchet's back until the
+single **Clank Pack** item is received. It unlocks the backpack high and long jumps.
+Normal movement and jumping still work, and playable Clank sections are unaffected.
+Placement logic conservatively requires the pack for field checks; shops, armour
+set checks, and Clank challenges retain their existing requirements.
+
+**Trap: No Clank** remains available independently of this option. It temporarily
+removes the pack for 20 seconds by default (configurable through Trap Duration).
+Repeated traps add time. Receiving Clank Pack during a trap unlocks it once the
+trap ends; a trap expiring before the item arrives does not grant the pack.
+Removal waits until Ratchet is safely on the ground, and follows him across level
+changes. The client must be connected to enforce these effects.
 
 ### Game Links
 

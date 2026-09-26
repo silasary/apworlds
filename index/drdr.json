@@ -9,7 +9,11 @@
   "game": "Dead Rising Deluxe Remaster",
   "github": "https://github.com/Str8UpWHITE64/DRAP",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.0.10": {
       "created_at": "2026-01-02T11:53:50Z",
@@ -365,6 +369,21 @@
       "title": "1.1.0 Release",
       "version_simple": "1.1.0",
       "world_version": "1.1.0"
+    },
+    "1.1.1": {
+      "created_at": "2026-09-25T20:08:55Z",
+      "description": "A small apworld fix release so 1.1 can be listed on the Archipelago Index. Nothing changes in game.\r\n\r\n## Fixes\r\n\r\n- **The apworld now loads in stricter Archipelago builds.** The manifest (`archipelago.json`) declared the apworld container format as version 8, which Archipelago doesn't support. Current releases logged an \"invalid manifest\" error and loaded it anyway; the Archipelago Index's loader refused it outright, and Archipelago 0.7.0 would too. It's back to 7.\r\n- **Generation is deterministic again.** With **Guaranteed Items** set or **Restricted Item Mode** on, the same seed could build a different item pool from one run to the next, because those items were read in an unstable order before the pool was shuffled. They're now read in a fixed order.\r\n\r\n## Testing\r\n\r\nThis build passes the full Archipelago Index test suite: unit tests, the options template check, and all eleven fuzz variants at the index's run counts (5,000 generations for the standard runs, 500 for each check), with no failures.\r\n\r\n## Upgrading\r\n\r\n- Replace `drdr.apworld` in your Archipelago `custom_worlds` folder. That's the only change that matters.\r\n- The mod itself is unchanged apart from its version number. Extracting the new zip over your install is optional, and only updates the version shown in session logs.\r\n- Seeds generated with 1.1.0 keep working.",
+      "download_url": "https://github.com/Str8UpWHITE64/DRAP/releases/download/1.1.1/drdr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "22f4d53e4e34531384edc6095e833b3c70515516d03acfaae4735a48bb3d1008",
+      "html_url": "https://github.com/Str8UpWHITE64/DRAP/releases/tag/1.1.1",
+      "minimum_ap_version": "0.6.4",
+      "size": 460696,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/DRAP",
+      "tag": "1.1.1",
+      "title": "1.1.1. Release",
+      "version_simple": "1.1.1",
+      "world_version": "1.1.1"
     }
   }
 }

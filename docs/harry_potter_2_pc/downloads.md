@@ -1,9 +1,12 @@
 # Harry Potter 2 PC
 
 ## Latest
-- <a href="https://github.com/Kryen112/HP2PC_AP/releases/download/v2.11.1/harry_potter_2_pc.apworld">Latest Version (2.11.1)</a>
+- <a href="https://github.com/Kryen112/HP2PC_AP/releases/download/v2.11.1/harry_potter_2_pc.apworld">Latest Version (2.11.1.post2)</a>
 
 ## All Versions
+
+#### v2.11.1.post2
+- <a href="https://github.com/Kryen112/HP2PC_AP/releases/download/v2.11.1/harry_potter_2_pc.apworld">https://github.com/Kryen112/HP2PC_AP/releases/download/v2.11.1/harry_potter_2_pc.apworld</a>
 
 #### v2.11.1
 - <a href="https://github.com/Kryen112/HP2PC_AP/releases/download/v2.11.1/harry_potter_2_pc.apworld">https://github.com/Kryen112/HP2PC_AP/releases/download/v2.11.1/harry_potter_2_pc.apworld</a>
