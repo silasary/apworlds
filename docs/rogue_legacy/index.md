@@ -6,7 +6,7 @@ But that&#x27;s OK, because no one is perfect, and you don&#x27;t have to be to 
 
 
 ## Downloads
-- <a href="https://github.com/ThePhar/RogueLegacyRandomizer/releases/download/1.0.0-alpha6/rogue_legacy.apworld">Latest Version (1.0.0a6)</a>
+- <a href="https://github.com/thephar/RogueLegacyRandomizer/releases/download/1.0.0-alpha6/rogue_legacy.apworld">Latest Version (1.0.0a6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

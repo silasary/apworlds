@@ -5,13 +5,13 @@
 Each of the following steps only needs to be done once when you first set up the mod, or when the part relevant to 
 that step is updated.
 
-1. Currently, the self set up method for Godot Mod Loader does not work. Until either that is fixed or official mod
-   support is added to Chrono Gear, there's no way to add the mod without decompiling the game and running it through
-   the Godot editor.
+1. Install Godot Mod Loader through the [mod loader created by tryptech](https://github.com/tryptech/cg-mod-manager)
 
-2. See above.
+2. Once the Mod Loader has been installed, select Add in the center column, and put "Kalithar/ChronoGearArchipelagoMod" (without the quotes) into the "Add a mod from GitHub" field, then press Install.
 
-3. The host of the multiworld will need to install the Chrono Gear AP World available at the releases page of the 
+3. Once the mod is installed, it will appear on the left, and will have details shown on the right. The first version of the mod is installed by default, make sure to update it from the Mod Loader.
+
+4. The host of the multiworld will need to install the Chrono Gear AP World available at the releases page of the 
    [AP World's repo](https://github.com/Kalithar/ArchipelagoChronoGear). If you are playing the game, but not hosting, you do not need to install this.
 
 ## YAML File
