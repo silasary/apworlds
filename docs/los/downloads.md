@@ -1,9 +1,12 @@
 # Castlevania: Lords of Shadow
 
 ## Latest
-- <a href="https://github.com/Haywire32/LoS-Archipelago/releases/download/v0.7.2/los.apworld">Latest Version (0.7.2)</a>
+- <a href="https://github.com/Haywire32/LoS-Archipelago/releases/download/v0.7.3/los.apworld">Latest Version (0.7.3)</a>
 
 ## All Versions
+
+#### v0.7.3
+- <a href="https://github.com/Haywire32/LoS-Archipelago/releases/download/v0.7.3/los.apworld">https://github.com/Haywire32/LoS-Archipelago/releases/download/v0.7.3/los.apworld</a>
 
 #### v0.7.2
 - <a href="https://github.com/Haywire32/LoS-Archipelago/releases/download/v0.7.2/los.apworld">https://github.com/Haywire32/LoS-Archipelago/releases/download/v0.7.2/los.apworld</a>
