@@ -1,9 +1,12 @@
 # Crab Champions
 
 ## Latest
-- <a href="https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/download/1.3.1/crabchampions.apworld">Latest Version (0.0.1r12)</a>
+- <a href="https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/download/1.4.0/crabchampions.apworld">Latest Version (1.4.0)</a>
 
 ## All Versions
+
+#### v1.4.0
+- <a href="https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/download/1.4.0/crabchampions.apworld">https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/download/1.4.0/crabchampions.apworld</a>
 
 #### v0.0.1r12
 - <a href="https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/download/1.3.1/crabchampions.apworld">https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/download/1.3.1/crabchampions.apworld</a>

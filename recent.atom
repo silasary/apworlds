@@ -2,243 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-27T12:14:41.195682+00:00</updated>
+  <updated>2026-09-27T18:14:03.894991+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.3</id>
-    <title>Team Fortress 2 Mann vs Machine v1.17.3</title>
-    <updated>2026-09-22T19:44:42+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Added
-
-- **Server mods have three answers instead of a tick: off, only when a mission
-  needs it, or always.** Installing a mod used to be the same thing as loading
-  it, because the game server loads an extension whenever its file is on the
-  disk. They are separate now. The default loads a mod only while your mission
-  pool holds a mission that names it, so a run that never asks for SigMod
-  never has it in the server. Turning a mod off leaves the download in place,
-  so turning it back on costs nothing.
-- **SigMod is offered on Windows again**, through this project's own port,
-  since upstream publishes no Windows build. It is off by default and the row
-  reads **SigMod (beta)**: the port crashed one player's server, and the new
-  loading setting is what makes it safe to offer. Leave it on **only when a
-  mission needs it** unless you are testing it. Linux, Docker and WSL download
-  upstream's build and are the safe way to play those missions today.
-- **Each reward family can be turned off.** Mission Ticket, Class Unlock and
-  Weapon Slot Importance take **Disabled - All Unlocked**: everything starts
-  unlocked and leaves the item pool, per-class slots included. Weapon Buff
-  Importance takes **Disabled - No Buffs**, and the spare checks become cash.
-  The defaults are unchanged. By kelly-cs.
-- **Remedic is labelled Medic only** in the mission table, the mission pool and
-  the start-mission choices, since its population file bans every other class.
-  By kelly-cs.
-- **Community archives are checked against a pinned hash.** The Potato and
-  Moonlight snapshots now download from this project's GitHub release first,
-  with the Potato servers as fallback, and a file whose hash differs is held
-  back until you press **Ignore hash mismatch** on the Missions page. By
-  kelly-cs.
-
-### Fixed
-
-- **A server mod can be turned off.** Whether you run the launcher or the
-  Docker stack, taking a mod out of the settings left it loading from the game
-  files it had already been installed into, with nothing on screen admitting
-  it. Both now take the marker away.
-- **Modifiers work on a Windows server.** Thirteen of the plugin's game hooks
-  had no Windows signature, so a modifier could be drawn and announced while
-  half of it did nothing. Faulty Calibration and Mental's cloak now work there,
-  and a refused mission file is reported. Bot Surge's support fillers and Make
-  it Count's dispenser limit still do nothing on Windows.
-- **A robot stuck protected in its spawn no longer holds the wave open.** After
-  two minutes the plugin removes it. Condemned Trespasser wave 2 could not end
-  without this. By kelly-cs.
-- **Bot Surge no longer loses scripted waves at once.** It shortened every
-  spawn delay, including the timers some missions use to open the hatch, so
-  Homestead Happenings wave 5 was lost after seven seconds. Only robot spawns
-  are sped up now. By kelly-cs.
-- **Caliginous Caper wave 666 has its tanks and its Halloween look.** The stock
-  file sends its tanks down a path the map does not have. The server now
-  repairs it from your game files at start. By kelly-cs.
-- **SigMod no longer kicks RED defender bots.** Its robot limit counted them,
-  so a crowded wave kicked one and the bots added it back, over and over. By
-  kelly-cs.
-- **Ten community missions are marked as needing SigMod**, among them Bionic
-  Breach, Nuclear Threat and Twilight Of Terror. They were offered without it
-  and could not run. By kelly-cs.
-- **SigMod's extra loadout menu shows its item names and title** instead of
-  `%t: %s %s %t`. On the Windows and Linux launchers, SigMod shows as not ready
-  once after this update: press **Download / set up selected server mods** to
-  apply the fix. By kelly-cs.
-- **Docker: editing SigMod's config no longer hides its missions**, and the
-  settings page no longer points at a setup button that does nothing in Docker.
-  By kelly-cs.
-- **Docker: Test mode uses the whole mission pool you asked for**, not eight,
-  and the server picks up a new test run without a restart. By kelly-cs.
-- **The item server line no longer shows terminal color codes.** By kelly-cs.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* Fix mission table checkbox assertion for SigMod choice by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/136
-* Fix Caliginous Caper wave 666 tanks and Halloween mode by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/120
-* Stop RED defenders counting toward the invader limit by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/121
-* Fix SigMod mission availability after editing server config by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/123
-* fix(gamedata): mark missions using shared SigMod extensions by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/125
-* Fix Docker test mission selection and stale plugin list by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/126
-* Fix Bot Surge triggering scripted wave timers early by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/127
-* Label Remedic as Medic only in mission lists by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/128
-* fix(plugin): clear invaders stuck protected in spawn for &gt;2 mins by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/129
-* Pin community archive hashes and require mismatch approval by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/132
-* Mirror pinned community archives on GitHub with Potato fallback by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/133
-* Fix SigMod extra loadout item labels and title by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/134
-* Fix terminal color codes in item server status by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/139
-* Add explicit disabled modes for reward families by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/138
-* Add an optional all-wave MvM smoke probe for docker by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/124
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.17.2...v1.17.3
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/Njk2NzFlZTc2YzM3YzhiMzdjYTQ3NjI5YTY2YjAzZTM6MTc5MDEwNjYyMw==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZmJjMjk0MDY3ZTM2NjQyY2NlZDE2N2Y1MDY4MjU4YjE6MTc5MDEwNjYyNQ==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DannySchultzDev/Archipelago-Horse-Magnifier-Client/releases/tag/V1.3.1</id>
-    <title>Horse Magnifier v1.3.1</title>
-    <updated>2026-09-23T00:16:38+00:00</updated>
-    <author>
-      <name>WaluigiGoesWa</name>
-    </author>
-    <content>Remove unused Using statements. (There was a LADX reference that was causing failures submitting the world to Ionium)</content>
-    <link href="https://github.com/DannySchultzDev/Archipelago-Horse-Magnifier-Client/releases/tag/V1.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.4</id>
-    <title>Universal Tracker v0.3.4</title>
-    <updated>2026-09-23T03:05:11+00:00</updated>
-    <author>
-      <name>FarisTheAncient</name>
-    </author>
-    <content>## What's Changed&#13;
-* Add zoom and pan to map tracker by @espaspw in https://github.com/FarisTheAncient/Archipelago/pull/146&#13;
-* Added Yamlless fuzzer hook&#13;
-* added message to the tracker tab about /faris_asked... hopefully&#13;
-* Hide excluded locations on the map if we're hiding them from the tracker tab&#13;
-&#13;
-## New Contributors&#13;
-* @espaspw made their first contribution in https://github.com/FarisTheAncient/Archipelago/pull/146&#13;
-&#13;
-**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.3.3...Tracker_v0.3.4</content>
-    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.4"/>
-  </entry>
   <entry>
     <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_Addons_v0.1.2</id>
     <title>Universal Tracker Addons v0.1.2</title>
@@ -1720,5 +1488,92 @@ A **newly generated 0.5.1 patch is recommended** because several native ROM hook
 &#13;
 Note: should be fully backwards compatible with worlds generated from 1.0 onwards. Also Universal Tracker is still incompatible.</content>
     <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.3</id>
+    <title>Ape Escape 2 v1.3.3</title>
+    <updated>2026-09-27T10:25:39+00:00</updated>
+    <author>
+      <name>dannybonz</name>
+    </author>
+    <content>- Various logic fixes.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archipelago/blob/main/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.4</id>
+    <title>Pokemon Crystal Prerelease v1.33.0</title>
+    <updated>2026-09-27T14:33:49+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+## Features&#13;
+- The Tyrogue from Blackbelt Kiyo will now be sent to your PC if your party is full&#13;
+&#13;
+## Bug Fixes&#13;
+- Fix the Route 43 Rocket shakedown script sometimes pushing you out of bounds in ER&#13;
+- Fix the logic for the hidden item in the southwest Whirl Island&#13;
+- Fix Apricorn trees being forced as locations when Apricorn shopsanity was not enabled&#13;
+- Fix Sailor Huey not logically requiring all rematches to give his item when rematchsanity was enabled&#13;
+- Fix Exp. Share holders getting both participant and non-participant exp when gen 6 or 8 exp distribution was enabled&#13;
+- Fix reductions in exp (from being a non participant or from exp splitting) not applying when scaling exp was enabled&#13;
+- Seen species and seen Unown signs will now not be overwritten on the tracker if you revert to an earlier save without remote items enabled&#13;
+- Fly unlocks are now always synced when remote items are enabled&#13;
+- Fix a potential game crash when receiving a deathlink at the end of a battle you can lose&#13;
+- Fix GER not accounting for simple item plando and sometimes producing impossible seeds&#13;
+- The Unown dex scientist now no longer requires a local puzzle to be solved to give you the Unown dex, just enough caught Unown forms&#13;
+&#13;
+**This release is not backwards compatible with 6.0.0-rc.3**</content>
+    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/tag/1.4.0</id>
+    <title>Crab Champions v1.4.0</title>
+    <updated>2026-09-27T15:39:18+00:00</updated>
+    <author>
+      <name>Str8UpWHITE64</name>
+    </author>
+    <content>## Highlights
+
+Every weapon, melee weapon and ability can now go in the pool, only pool equipment counts toward your goal, and received perks and mods are applied as whole stacks.
+
+**Compatible with 1.3 seeds.** Update the apworld and the mod together.
+
+## Changes
+
+### Full equipment pools
+`weapons_in_pool`, `melee_in_pool` and `abilities_in_pool` now go up to 20, 5 and 7, which puts every item of that kind in the pool. When a pool is full you start with one random item from it, so you always have something to use. `starting_weapons` is forced to at least 1 when `weapons_in_pool` is 20.
+
+### Completion only counts pool equipment
+Equipment you have from the start no longer counts toward `weapons_for_completion`, `melee_for_completion` or `ability_for_completion`. With `equipment_check_mode` set to `regular` or `filler_only`, the goal could previously be finished without receiving a single AP item. Runs with non-pool equipment are still location checks under `equipment_check_mode`, they just don't advance the goal.
+
+Seeds made with 1.3 keep the old rule, so updating mid-seed won't change your goal.
+
+### Starting equipment isn't duplicated
+Equipment you start with is no longer also placed in the item pool. That slot goes to filler instead of a second copy of something you already have.
+
+### `guaranteed_items` copy counts
+Counts are now honored for perks and mods, so `Time Bolt: 2` gives two copies. Relics and equipment are unique and still get one.
+
+## Bug Fixes
+
+- Received perks and mods are now applied as one stack per item. Duplicates that arrived after your inventory filled up no longer get stuck behind other items, and items you already have still stack when the inventory is full.
+- Fixed reconnecting mid-session leaving stale state behind, which could grant pending crystals twice or stop overflowed items from retrying.
+- The mod now refuses to connect to a seed made for a different major version instead of sending checks for the wrong locations, and the overlay says why.
+
+## For Developers
+
+- F9 writes a full pickup dump (`pickup_dump_&lt;time&gt;.txt`) with every item's rarity, loot pool and tag, and flags new and greed items.
+- `tools/check_sync.py` checks the Lua client's item tables against the apworld.
+
+## Download
+
+- Archipelago world: `crabchampions.apworld` → place in your Archipelago `custom_worlds/` directory
+- In-game mod: `CrabChampionsAP.zip` → extract into your Crab Champions `Mods/` directory (UE4SS required)
+</content>
+    <link href="https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/tag/1.4.0"/>
   </entry>
 </feed>

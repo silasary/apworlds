@@ -27,7 +27,7 @@
       "size": 17592,
       "source_url": "https://api.github.com/repos/Str8UpWHITE64/CrabChampionsAP",
       "tag": "0.1.0",
-      "title": "",
+      "title": "0.1.0",
       "version_simple": "0.0.1",
       "world_version": "0.0.1"
     },
@@ -195,6 +195,21 @@
       "title": "1.3.1",
       "version_simple": "0.0.1",
       "world_version": "0.0.1r12"
+    },
+    "1.4.0": {
+      "created_at": "2026-09-27T15:39:18Z",
+      "description": "## Highlights\n\nEvery weapon, melee weapon and ability can now go in the pool, only pool equipment counts toward your goal, and received perks and mods are applied as whole stacks.\n\n**Compatible with 1.3 seeds.** Update the apworld and the mod together.\n\n## Changes\n\n### Full equipment pools\n`weapons_in_pool`, `melee_in_pool` and `abilities_in_pool` now go up to 20, 5 and 7, which puts every item of that kind in the pool. When a pool is full you start with one random item from it, so you always have something to use. `starting_weapons` is forced to at least 1 when `weapons_in_pool` is 20.\n\n### Completion only counts pool equipment\nEquipment you have from the start no longer counts toward `weapons_for_completion`, `melee_for_completion` or `ability_for_completion`. With `equipment_check_mode` set to `regular` or `filler_only`, the goal could previously be finished without receiving a single AP item. Runs with non-pool equipment are still location checks under `equipment_check_mode`, they just don't advance the goal.\n\nSeeds made with 1.3 keep the old rule, so updating mid-seed won't change your goal.\n\n### Starting equipment isn't duplicated\nEquipment you start with is no longer also placed in the item pool. That slot goes to filler instead of a second copy of something you already have.\n\n### `guaranteed_items` copy counts\nCounts are now honored for perks and mods, so `Time Bolt: 2` gives two copies. Relics and equipment are unique and still get one.\n\n## Bug Fixes\n\n- Received perks and mods are now applied as one stack per item. Duplicates that arrived after your inventory filled up no longer get stuck behind other items, and items you already have still stack when the inventory is full.\n- Fixed reconnecting mid-session leaving stale state behind, which could grant pending crystals twice or stop overflowed items from retrying.\n- The mod now refuses to connect to a seed made for a different major version instead of sending checks for the wrong locations, and the overlay says why.\n\n## For Developers\n\n- F9 writes a full pickup dump (`pickup_dump_<time>.txt`) with every item's rarity, loot pool and tag, and flags new and greed items.\n- `tools/check_sync.py` checks the Lua client's item tables against the apworld.\n\n## Download\n\n- Archipelago world: `crabchampions.apworld` \u2192 place in your Archipelago `custom_worlds/` directory\n- In-game mod: `CrabChampionsAP.zip` \u2192 extract into your Crab Champions `Mods/` directory (UE4SS required)\n",
+      "download_url": "https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/download/1.4.0/crabchampions.apworld",
+      "has_manifest": true,
+      "hash_sha256": "45a690e4818ad2b44caf1a96aa73784fe59ce66fa8902cafc720ad5cf2bd2a74",
+      "html_url": "https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/tag/1.4.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 25003,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/CrabChampionsAP",
+      "tag": "1.4.0",
+      "title": "1.4.0",
+      "version_simple": "1.4.0",
+      "world_version": "1.4.0"
     }
   }
 }
