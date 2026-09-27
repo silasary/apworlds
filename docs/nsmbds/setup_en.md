@@ -99,6 +99,16 @@ manually:
 Opening the **Launch Game** tab once materializes the bundled Lua files and displays the
 exact path.
 
+## Reporting a problem
+
+In the NSMBDS Client's **Archipelago** tab, enter `/nsmbds_diag full` to show
+the current client, connection, BizHawk, ROM, and item/location sync state.
+Include that output, the steps to reproduce the problem, and any relevant error
+message when reporting a bug. `/nsmbds_diag short` gives a smaller overview.
+
+For a problem that needs more detailed logs, enter `/nsmbds_debug on`, reproduce
+it. Logs can be found in your Archipelago Folder in `/logs/BizHawkClient_xxxx.txt`.
+
 ## Verify the original ROM
 
 Before patching, you can check the ROM's MD5 hash in PowerShell with this simple

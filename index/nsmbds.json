@@ -107,6 +107,21 @@
       "title": "New Super Mario Bros. DS v0.5.0-unstable",
       "version_simple": "0.5.0",
       "world_version": "0.5.0"
+    },
+    "nsmbds-v0.5.1-unstable": {
+      "created_at": "2026-09-26T19:58:20Z",
+      "description": "This update focuses heavily on **performance, stability, and bug fixes**. A lot of work went into reducing emulator stutters and improving the Lua runtime, HUD rendering, Traps, and client communication.\r\n\r\nIt also adds **Music Randomization**, **Death Link Amnesty**, and a new **Star Coin Tracking** option.\r\n\r\n## Added\r\n\r\n- Added **Music Randomization** with four modes:\r\n  - Off\r\n  - Level music\r\n  - Level + World Map music\r\n  - Mixed Level + World Map music\r\n- Added **Death Link Amnesty**\r\n  - Controls how many local deaths are required before sending a Death Link\r\n  - For example, a value of 5 sends every fifth eligible local death\r\n- Added a **Star Coin Tracking** option:\r\n  - Instant collection\r\n  - Vanilla behavior, where Star Coins are only saved after completing the level\r\n- Added new troubleshooting commands:\r\n  - /nsmbds_diag [short|full] displays client, BizHawk, synchronization, and runtime information\r\n  - /nsmbds_debug [on|off] enables or disables detailed NSMBDS debug logging\r\n\r\n## Performance & Compatibility\r\n\r\n- Significantly improved **runtime performance**\r\n- Reduced stuttering when sending and receiving items\r\n- Improved notification, Trap status, and protection HUD rendering\r\n- Improved performance of several Traps, especially **Pixelation**\r\n- Reduced unnecessary Lua and client processing\r\n- Improved **melonDS JIT compatibility**\r\n  - Red Coin Challenges now work with JIT enabled\r\n  - Several Trap and input systems now use native ROM hooks\r\n- Improved **Universal Tracker compatibility**\r\n- Improved **Ionium compatibility**\r\n  - High randomized percentage values are now safely capped instead of causing generation failures\r\n  - Empty filler selections are now supported\r\n\r\n> **JIT Recompiler is recommended for better performance.**\r\n\r\n## Logic & Fixes\r\n\r\n- Fixed Red Coin Challenges not triggering with melonDS JIT enabled\r\n- Fixed several Star Coin Gate logic issues\r\n- Fixed incorrect Star Coin Gate ordering in some worlds\r\n- Fixed chained Star Coin Gates not accounting for earlier required gates\r\n- Fixed some collected Star Coins not counting correctly toward gate requirements\r\n- Fixed World 3-Tower Star Coin 3 missing its Mushroom Permit requirement\r\n- Fixed several BizHawk launcher and saved path issues\r\n- Improved handling of temporary client/BizHawk communication problems\r\n- Reduced unnecessary logging and repeated warnings\r\n- Various smaller runtime and stability fixes\r\n\r\n## Important\r\n\r\nA **newly generated 0.5.1 patch is recommended** because several native ROM hooks have changed.\r\n\r\n## Links\r\n\r\n- **Game Info:** https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/tree/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS\r\n- **Setup Guide:** https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/tree/nsmbds/worlds/nsmbds/docs/setup_en.md\r\n- **PopTracker:** https://github.com/Lemix028/NewSuperMarioBrosDS-poptracker/releases/latest",
+      "download_url": "https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.5.1-unstable/nsmbds.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ac22d879636f2009d2a20f84fb9ef80498612f5e7a98ffe7fea8349578a67684",
+      "html_url": "https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.1-unstable",
+      "minimum_ap_version": "0.6.7",
+      "size": 1587430,
+      "source_url": "https://api.github.com/repos/Lemix028/Archipelago-NewSuperMarioBrosDS",
+      "tag": "nsmbds-v0.5.1-unstable",
+      "title": "New Super Mario Bros. DS v0.5.1-unstable",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1"
     }
   }
 }

@@ -26,11 +26,17 @@ With the standard location settings, a seed includes:
   World 5 castles.
 
 Most categories except level goals and Star Coins can be disabled in your
-player options. **Star Coins are always included.** Picking up a Star Coin in a
-level immediately commits it to that level's save data and sends a check. It
-therefore stays collected even if you die or return to the map before reaching
-the goal. The Star Coin item found for you becomes currency for overworld signs
-and may count toward your goal.
+player options. **Star Coins are always included.** The **Star Coin Tracking**
+option controls when a pickup is saved and reported as a check:
+
+- **Instant (default):** picking up a Star Coin immediately commits it to the
+  level's save data and sends the check. It stays collected if you die or leave
+  the level before reaching the goal.
+- **After Level Completion:** a Star Coin is saved and reported only when you
+  successfully finish the level, as in the original game.
+
+The Star Coin item found for you becomes currency for overworld signs and may
+count toward your goal.
 
 ### Blocksanity
 
@@ -88,6 +94,25 @@ Mushrooms, Mega Mushrooms, and the touchscreen reserve pocket. When a Permit
 option is enabled, you must find that Permit before using the ability.
 Power-Ups simply disappear when collected if you don't own the permit yet. 
 Item-based Power-Ups are queued up until you unlock the permit.
+
+### Music Randomization
+
+Music randomization changes the background music without affecting gameplay. 
+It is disabled by default, and the selected tracks remain consistent for the entire seed. 
+Each level also keeps the same music across all of its normal areas.
+
+Boss music, ambience, power-up themes, jingles, menus, minigames, sound effects,
+ and unidentified tracks are not randomized.
+
+* `off`: Keeps all music unchanged.
+* `level`: Randomizes the 11 regular level themes across the 80 levels.
+* `level_and_worlds`: Randomizes level music and world-map music separately. 
+The 11 level themes are distributed across the story levels, while the eight 
+world-map themes are shuffled among the world maps.
+* `mixed_level_and_worlds`: Mixes all 19 level and world-map themes into one shared pool. 
+This means level music can play on a world map, and world-map music can play inside a level.
+
+
 
 ## Items you can receive
 
@@ -202,6 +227,11 @@ Life Insurance prevents the next local death from consuming a life.
 The option Death Link: Trigger on Insured Deaths determines whether that insured death is still sent through Death Link. 
 It is disabled by default.
 
+**Death Link: Amnesty** controls how often eligible local deaths are shared.
+The default value of 1 sends every death; a value of 5 sends only every fifth
+eligible death. Deaths caused by an incoming Death Link and Return to Map life
+losses neither send nor advance the amnesty counter.
+
 Incoming Death Links can be customized with four additional options:
 
 - **Grace Percentage** is the chance to ignore an incoming Death Link completely.
@@ -266,15 +296,15 @@ The generated YAML explains every available setting. These are the main groups
 you will find there:
 
 - **Goal:** victory condition and required Star Coin total.
-- **Locations:** Red Coin Challenges, 1-Up Blocks, Secret Exits, Toad Houses,
-  and Blocksanity.
+- **Locations:** Star Coin tracking, Red Coin Challenges, 1-Up Blocks, Secret
+  Exits, Toad Houses, and Blocksanity.
 - **Progression:** Star Coin gate mode, Tower/Castle Keys, and Power-Up Permits.
 - **Filler:** select which Power-Ups, lives, Coins, bonuses, and protection
   items may appear through one list.
 - **Traps:** set the overall percentage and select allowed effects through one list.
-- **Multiplayer:** configure Death Link effects, grace, cooldown, and Life Insurance behavior.
-- **Cosmetics:** select separate Mario and Luigi palettes and optionally
-  shuffle the in-level secondary-screen backgrounds.
+- **Multiplayer:** configure Death Link amnesty, effects, grace, cooldown, and Life Insurance behavior.
+- **Cosmetics:** select separate Mario and Luigi palettes, secondary-screen
+  backgrounds, and music randomization.
 
 Normal host safety limits allow up to 30% global Blocksanity checks and a 50%
 trap rate. Higher values require the host to explicitly allow unsafe NSMBDS

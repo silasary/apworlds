@@ -2,77 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-26T18:14:27.608399+00:00</updated>
+  <updated>2026-09-27T00:22:45.012326+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.1</id>
-    <title>plateup v0.2.7.1</title>
-    <updated>2026-09-22T14:06:43+00:00</updated>
-    <author>
-      <name>CazIsABoi</name>
-    </author>
-    <content>## What's New?&#13;
-&#13;
-* Fixed achievement checks not being included in the location pool — `achievement_check_mode` now actually adds achievement checks to your run, gated by day count and (for `earned_only`) by whether `appliance_unlocks` is enabled&#13;
-* Fixed dish-specific Day Leases wrongly chaining dishes together — each dish's day progression is now fully independent, instead of requiring an earlier-selected dish to be fully leased before a later dish could even start Day 1&#13;
-* Fixed franchise runs under dish-specific Day Lease mode needing an ever-growing number of leases as `franchise_count` increased — leasing now correctly resets each franchise run instead of accumulating across all of them (thanks to Mike Lydeamore)&#13;
-&#13;
-## Balance Changes&#13;
-&#13;
-* `Complete Day N` and franchise-goal completions could previously become reachable with very few or zero items when using dish-specific Day Leases — some `complete_x_days` and `reach_day_x_with_dishes` goals could resolve almost immediately. This is fixed: a Day Lease pool sized to your goal's day count now always paces the day chain, independent of Day Lease mode&#13;
-* Franchise goal + dish-specific leasing now requires an available, sufficiently-leased dish for each individual run rather than pulling from one global cumulative lease pool, so high `franchise_count` values no longer demand disproportionately more leases&#13;
-&#13;
-[Mod Update 2.7.1](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/2.7.1)&#13;
-</content>
-    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.5</id>
-    <title>Factorio: Space Age v3.0.5</title>
-    <updated>2026-09-22T14:31:54+00:00</updated>
-    <author>
-      <name>Berserker</name>
-    </author>
-    <author>
-      <name>Josh Wolfe</name>
-    </author>
-    <content># Factorio: Space Age apworld 3.0.5&#13;
-&#13;
-* Better error reporting when creating save files in directories with problematic permissions. Thanks @lepideble for the suggestion.&#13;
-&#13;
-download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
-general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
-setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
-source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
-    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.7-Linux</id>
-    <title>Deadlock v1.1.7r2</title>
-    <updated>2026-09-22T15:15:58+00:00</updated>
-    <author>
-      <name>ArchipelagoBrad</name>
-    </author>
-    <content>Bring Linux version to be in parity with version 1.1.7 while retaining the SSL fix needed for Linux.&#13;
-[Read 1.1.7 Changes Here](https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.7)&#13;
-&#13;
-**This is meant as an attempt for a fix on some Linux distros. For most other purposes, please download the [standard 1.1.7 release](https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.7) instead.**</content>
-    <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.7-Linux"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ljtpetersen/platinum_archipelago/releases/tag/v0.2.2</id>
-    <title>Pokemon Platinum v0.2.2</title>
-    <updated>2026-09-22T18:47:38+00:00</updated>
-    <author>
-      <name>ljtpetersen</name>
-    </author>
-    <content>### Fixed&#13;
-* Using old patches with the new version now works.</content>
-    <link href="https://github.com/ljtpetersen/platinum_archipelago/releases/tag/v0.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.3</id>
     <title>Team Fortress 2 Mann vs Machine v1.17.3</title>
@@ -1010,7 +944,7 @@ Does what you think it would.</content>
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `bc66c79c56abb0a9d5b7123a30771c7e7948a092`.
+Built from `7e3cf749b7815eb13e25752246c47ae662f45e9c`.
 
 ## Downloads
 
@@ -1019,6 +953,12 @@ Built from `bc66c79c56abb0a9d5b7123a30771c7e7948a092`.
 
 ## Since v1.17.3
 
+- fix(launcher): redownload mismatched community packs during Repair (#151)
+- Prevent replayed weapon buffs from increasing levels (#168)
+- feat(waveprobe): measure how the defender bots move (#149)
+- chore(deps): tf2-mvm-bots-go v0.18.1 (#169)
+- beads: the share of SigMod still unresolved on Windows, measured
+- beads: close apw-5g4.29, the plugin's GetMaxAmmo hook runs on every map
 - beads: the Windows SigMod port's state after the bed sweeps
 - plugin: log the first GetMaxAmmo hook call on each map
 - fix(plugin): stop resending every queued objective while the bridge fails
@@ -1602,6 +1542,68 @@ source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/f
     <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.6"/>
   </entry>
   <entry>
+    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.7</id>
+    <title>Hollow Knight: Silksong v0.4.7</title>
+    <updated>2026-09-26T17:03:54+00:00</updated>
+    <author>
+      <name>BatAtVideoGames</name>
+    </author>
+    <content>Another week another big update. Can you believe it, only 33 of the 862 locations are not fully mapped? The progress is insane and I want to express my gratitude to all who've been with this project whether it's just playing, reporting bugs or otherwise giving input on the matter. And ultra big shoutout to the mappers (who are all credited in the README), they've been doing an insane part in all this. I can safely say that logic will be extremely solid by the time 0.5.0 rolls out but also that I got something huge planned for it. (Also as usual if you like what I do and wanna [buy me a coffee](https://streamlabs.com/batatvideogames/tip) I'd appreciate it 👍)&#13;
+&#13;
+# Changelog&#13;
+&#13;
+### General updates: &#13;
+&#13;
+- **Updated traversal, combat and wish logic in 244 existing rooms across 29 areas**&#13;
+- Added combat requirements to 77 mapped bosses/gauntlets&#13;
+- Shops and wishes now display matching Silksong item icons&#13;
+- Pressing A on needle in inventory allows to toggle between the upgrades unlocked so far&#13;
+- Made courier deliveries unbreakable but they instead need to logically satisfy being able to pick up the quest and getting to their delivery spot&#13;
+- Universal Tracker now supports newly generated seeds without a player YAML, automatically loading their settings and entrance layout&#13;
+- Reduced connection data size (by a lot)&#13;
+- Kept Skarr’s unchecked randomized shop items available after his story death&#13;
+&#13;
+### Option updates&#13;
+&#13;
+- Removed the bs "skips" option and instead separated it into proper categories (red tool stall, crest pogo skips, needle strike logic, heal stall logic, hazard respawn logic). The attached YAML and the built in AP Options Creator describe what these entail&#13;
+- Changed Proficient Combat from true (bypass combat reqs) and false (keep combat reqs) to off, goated (lower combat reqs by 1 tier) and hell (bypass combat reqs)&#13;
+- Silk and Soul Points now caps at 23. Higher numbers automatically clamp to 23&#13;
+- Added optional trap disguises with mirrored shop/wish icons and subtly misspelled shop/crest names&#13;
+- Added independent Quill and Compass randomization settings. Kept Automatic Compass and Start Fully Mapped as separate conveniences&#13;
+&#13;
+### Fixes: &#13;
+&#13;
+- Fixed the randomized Egg of Flealia not being recognized when unlocking Flea Games and Ecstasy of the End&#13;
+- Fixed Peak_04d, Shellwood_13, Shellwood_25 and Crawl_09 screen being black when entering from "wrong" side when breakable walls are still present&#13;
+- Fixed Flick becoming non-interactable at Bone Bottoms wish wall, blocking courier turn-ins&#13;
+- Fixed Memorium - Shard Bundle incorrectly appearing in Act 1 goals&#13;
+- Threefold Pin now randomizes in Act 1 goals when tool randomization is enabled&#13;
+- Final Audience wish name correction (accidentally named it Last Audience)&#13;
+- Fixed the long pause when completing free randomized donations&#13;
+- Eva became inactive when Sylphsong gets sent (via other game release). Fixed that and also chapel doors remain open now&#13;
+- Fixed incorrect access to lower Whispering Vaults through the rotating-tunnel route&#13;
+- Fixed a Skill Shuffle starting layout that could prevent generation&#13;
+- General game generation updates (genuinely)&#13;
+- Corrected The Slab Memory Locket’s map marker position&#13;
+- Renamed "Progressive Compass" back to Quill&#13;
+- Fixed swapped entrance connections in the Sacred Cylinder room&#13;
+- Fixed Universal Tracker disconnecting when Silk &amp; Soul points are set to random&#13;
+- Fixed swapped access logic for Memorium - Map Purchase and Memorium - Shard Bundle&#13;
+- Moved Putrified Ducts Shell Shard Cache 6 out of the ceiling to floor level&#13;
+- Grouped Blasted Steps Shell Shard Caches 4–5 with the Beast Shard marker&#13;
+- Fixed Sacred Cylinder moving randomized melody markers back to their vanilla position&#13;
+- Improved AP check visibility over other map pins&#13;
+- Fixed the Deep Docks lower climb’s movement requirements&#13;
+- Fixed shop stock getting stuck displaying generic “AP Item” text until reconnecting&#13;
+- Prevented Chapel Maid from appearing during an unfinished Moss Mother fight (lmao)&#13;
+- Fixed off-screen objective bubbles following vanilla locations instead of randomized bells and melodies&#13;
+- Corrected access logic for the Whispering Vaults map and Pale Oil, Whiteward Spool Fragment and Cogwork Core map&#13;
+- Fixed early Rune Rage receipt preventing First Sinner activation&#13;
+- Fixed Hunter's March big shaft room only needing ledgegrab to get to the treasure room with the Blowjob Brothers&#13;
+- Fixed Curvesickle being rejected by the Mottled Child’s throwing challenge (this time for real)</content>
+    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.7"/>
+  </entry>
+  <entry>
     <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.09.26</id>
     <title>Archipeladoku v2026.9.26</title>
     <updated>2026-09-26T17:58:05+00:00</updated>
@@ -1609,5 +1611,111 @@ source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/f
       <name>Galdiuz</name>
     </author>
     <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.09.26"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.1-unstable</id>
+    <title>New Super Mario Bros. DS v0.5.1</title>
+    <updated>2026-09-26T19:58:20+00:00</updated>
+    <author>
+      <name>Lemix028</name>
+    </author>
+    <content>This update focuses heavily on **performance, stability, and bug fixes**. A lot of work went into reducing emulator stutters and improving the Lua runtime, HUD rendering, Traps, and client communication.&#13;
+&#13;
+It also adds **Music Randomization**, **Death Link Amnesty**, and a new **Star Coin Tracking** option.&#13;
+&#13;
+## Added&#13;
+&#13;
+- Added **Music Randomization** with four modes:&#13;
+  - Off&#13;
+  - Level music&#13;
+  - Level + World Map music&#13;
+  - Mixed Level + World Map music&#13;
+- Added **Death Link Amnesty**&#13;
+  - Controls how many local deaths are required before sending a Death Link&#13;
+  - For example, a value of 5 sends every fifth eligible local death&#13;
+- Added a **Star Coin Tracking** option:&#13;
+  - Instant collection&#13;
+  - Vanilla behavior, where Star Coins are only saved after completing the level&#13;
+- Added new troubleshooting commands:&#13;
+  - /nsmbds_diag [short|full] displays client, BizHawk, synchronization, and runtime information&#13;
+  - /nsmbds_debug [on|off] enables or disables detailed NSMBDS debug logging&#13;
+&#13;
+## Performance &amp; Compatibility&#13;
+&#13;
+- Significantly improved **runtime performance**&#13;
+- Reduced stuttering when sending and receiving items&#13;
+- Improved notification, Trap status, and protection HUD rendering&#13;
+- Improved performance of several Traps, especially **Pixelation**&#13;
+- Reduced unnecessary Lua and client processing&#13;
+- Improved **melonDS JIT compatibility**&#13;
+  - Red Coin Challenges now work with JIT enabled&#13;
+  - Several Trap and input systems now use native ROM hooks&#13;
+- Improved **Universal Tracker compatibility**&#13;
+- Improved **Ionium compatibility**&#13;
+  - High randomized percentage values are now safely capped instead of causing generation failures&#13;
+  - Empty filler selections are now supported&#13;
+&#13;
+&gt; **JIT Recompiler is recommended for better performance.**&#13;
+&#13;
+## Logic &amp; Fixes&#13;
+&#13;
+- Fixed Red Coin Challenges not triggering with melonDS JIT enabled&#13;
+- Fixed several Star Coin Gate logic issues&#13;
+- Fixed incorrect Star Coin Gate ordering in some worlds&#13;
+- Fixed chained Star Coin Gates not accounting for earlier required gates&#13;
+- Fixed some collected Star Coins not counting correctly toward gate requirements&#13;
+- Fixed World 3-Tower Star Coin 3 missing its Mushroom Permit requirement&#13;
+- Fixed several BizHawk launcher and saved path issues&#13;
+- Improved handling of temporary client/BizHawk communication problems&#13;
+- Reduced unnecessary logging and repeated warnings&#13;
+- Various smaller runtime and stability fixes&#13;
+&#13;
+## Important&#13;
+&#13;
+A **newly generated 0.5.1 patch is recommended** because several native ROM hooks have changed.&#13;
+&#13;
+## Links&#13;
+&#13;
+- **Game Info:** https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/tree/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS&#13;
+- **Setup Guide:** https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/tree/nsmbds/worlds/nsmbds/docs/setup_en.md&#13;
+- **PopTracker:** https://github.com/Lemix028/NewSuperMarioBrosDS-poptracker/releases/latest</content>
+    <link href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.1-unstable"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nepley/eosd-apworld/releases/tag/v1.5.0</id>
+    <title>Touhou Koumakyou ~ the Embodiment of Scarlet Devil v1.5.0</title>
+    <updated>2026-09-26T20:34:52+00:00</updated>
+    <author>
+      <name>Nepley</name>
+    </author>
+    <content>* Added support for the classic re-release version</content>
+    <link href="https://github.com/Nepley/eosd-apworld/releases/tag/v1.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.2.0</id>
+    <title>Taskipelago v1.2.0</title>
+    <updated>2026-09-26T22:11:52+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>*The big region overhaul (and also clicker game mode)*&#13;
+&#13;
+## What's new&#13;
+* New types of item grouping definitions. Now progressive, aesthetic, or random-choice&#13;
+  * aesthetic groups merely group things aesthetically with no effect on progression or not.&#13;
+  * random-choice groups randomly choose N or N% as you define items from within the group to be included in the world. No tasks may depend on individual items in these groups since they aren't guaranteed to exist, but depending on the randomized group as a whole or by percentage/count is supported.&#13;
+  * progressive groups function the same as always&#13;
+* Regions can now also be randomized to include N or N% of tasks within that region. May optionally also shuffle the order in which such tasks appear.&#13;
+* Subregions can now be defined within regions that aren't randomized (subregions may be randomized).&#13;
+* Regions may now depend on items and tasks via the syntax item(expr) and task(expr) where expr is any valid task or item dependency expression&#13;
+* Tasclickpelago toggle on the yaml generator that enables a bunch of features for building out an idle game because the concept was funny and I thought of a way to do it well.&#13;
+* Style tab added to the YAML generator so you can recolor the entire application at will while connected to the slot in question. Pretty colors are pretty.&#13;
+* Added syntax `item(...) and task(...)` to reference an item or task from within task prereqs and item prereqs fields respectively. This also works in the goal requirements, so you can now depend on receiving items to goal. The other benefit here is using OR operators on tasks and items together allowing for some interesting new logic.&#13;
+* Added a setting for filler items to grant a hint/scout for a random item (See the hint/scout dropdown).&#13;
+* Fix browser choice to use user's default where possible and never prefer Edge otherwise&#13;
+* Fix OR not working properly with region dependencies&#13;
+&#13;
+Note: should be fully backwards compatible with worlds generated from 1.0 onwards. Also Universal Tracker is still incompatible.</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.2.0"/>
   </entry>
 </feed>
