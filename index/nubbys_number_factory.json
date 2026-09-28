@@ -1,0 +1,111 @@
+{
+  "game": "Nubby's Number Factory",
+  "github": "https://github.com/SsL2727/nubbys-number-factory-apworld",
+  "manifest_fields": [],
+  "setup_guide_url": "https://github.com/SsL2727/nubbys-number-factory-apworld/releases/latest",
+  "sheet_disclosure": [
+    "Extensive",
+    "https://discord.com/channels/731205301247803413/1358493936829730837/1544206477349363752"
+  ],
+  "sheet_stability": "Unstable",
+  "versions": {
+    "v1.0.0": {
+      "created_at": "2026-09-01T04:36:06Z",
+      "description": "Everything needed to set up the randomizer, per the README:\n\n- **nubbys_number_factory.apworld** - install into your Archipelago custom_worlds folder.\n- **PatchApItemLockV30_MASTER.csx** - UndertaleModTool script to patch your own, legally-owned data.win.\n- **nnf_poptracker_pack.zip** - PopTracker pack for visual check tracking.\n\nSee the README for full setup steps.",
+      "download_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/download/v1.0.0/nubbys_number_factory.apworld",
+      "has_manifest": false,
+      "hash_sha256": "a98e3ac54494c9e052571c348d844a960d07e4911b52d000431725a90ed017ce",
+      "html_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/tag/v1.0.0",
+      "size": 255380,
+      "source_url": "https://api.github.com/repos/SsL2727/nubbys-number-factory-archipelago",
+      "tag": "v1.0.0",
+      "title": "v1.0.0 - Setup files",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "v1.1.0": {
+      "created_at": "2026-09-02T00:35:46Z",
+      "description": "Adds a `/patch` command to the in-game client - patches your own data.win directly (downloads UndertaleModCli automatically on first use), no manual UndertaleModTool steps needed. See the README for the updated setup flow; the old manual method still works and is documented under Advanced setup.\n\n- **nubbys_number_factory.apworld** - install into your Archipelago custom_worlds folder, then run /patch from the client.\n- **PatchApItemLockV30_MASTER.csx** - for manual/advanced patching only.\n- **nnf_poptracker_pack.zip** - PopTracker pack for visual check tracking.",
+      "download_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/download/v1.1.0/nubbys_number_factory.apworld",
+      "has_manifest": false,
+      "hash_sha256": "33523890a27bf484fe8c2b4f4d5799c6974bc5861b635455e9fad087159f507b",
+      "html_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/tag/v1.1.0",
+      "size": 299395,
+      "source_url": "https://api.github.com/repos/SsL2727/nubbys-number-factory-archipelago",
+      "tag": "v1.1.0",
+      "title": "v1.1.0 - /patch command",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
+    },
+    "v1.2.0": {
+      "created_at": "2026-09-02T01:51:25Z",
+      "description": "Fixes two accessibility bugs caught by fuzz-testing this apworld with Eijebong's Archipelago fuzzer (300/300 clean generations after these fixes):\n\n- **Unreachable supervisor locations**: regions were built for all 11 supervisors regardless of the `supervisors_in_pool` option, but only that many ever get an unlock item - any excluded supervisor's Win location was permanently unreachable.\n- **Supervisor Unlock items getting randomly trimmed**: when the item pool exceeded the location count, the whole pool was shuffled and truncated with no protection for progression items, so a needed Supervisor Unlock could get discarded.\n\nAlso adds an `archipelago.json` manifest (current Archipelago logs a deprecation warning without one).\n\n- **nubbys_number_factory.apworld** - install into your Archipelago custom_worlds folder, then run /patch from the client.\n- **PatchApItemLockV30_MASTER.csx** - for manual/advanced patching only.\n- **nnf_poptracker_pack.zip** - PopTracker pack for visual check tracking.\n",
+      "download_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/download/v1.2.0/nubbys_number_factory.apworld",
+      "has_manifest": true,
+      "hash_sha256": "de9107779fba620a8e3c5b5a37f97d391f9d3303ab0acb6ee3e210d6fec62b86",
+      "html_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/tag/v1.2.0",
+      "size": 300805,
+      "source_url": "https://api.github.com/repos/SsL2727/nubbys-number-factory-archipelago",
+      "tag": "v1.2.0",
+      "title": "v1.2.0 - Fuzzer-caught accessibility fixes",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0"
+    },
+    "v1.2.1": {
+      "created_at": "2026-09-03T07:33:49Z",
+      "description": "Hardens the synchronous supervisor-save sync (used in the supervisor select screen, the arrow-switch buttons, and a periodic refresh) against a crash: two players hit `Variable <unknown_object>.SVCost(...) not set before reading it` in `obj_SupervisorMGMT_Create_0` after clicking through Classic Mode, on v1.2.0, patched via `/patch`.\n\nThe SVCost fix itself (from very early in this project) was independently re-verified correct and present in the exact shipped build via a fresh decompile - so this wraps the adjacent save-file read/JSON-parse in try/catch, since an uncaught exception there would abort the whole Create event (including code that runs after it) and could surface exactly like this given GameMaker's unreliable post-recompile line info.\n\n- **nubbys_number_factory.apworld** - install into your Archipelago custom_worlds folder, then run /patch from the client.\n- **PatchApItemLockV30_MASTER.csx** - for manual/advanced patching only.\n- **nnf_poptracker_pack.zip** - PopTracker pack for visual check tracking (unchanged this release).\n",
+      "download_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/download/v1.2.1/nubbys_number_factory.apworld",
+      "has_manifest": true,
+      "hash_sha256": "785d38b67dfc65145667f489b799bd7f3cfd945a544dae3f7fa539235d4b36af",
+      "html_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/tag/v1.2.1",
+      "size": 301447,
+      "source_url": "https://api.github.com/repos/SsL2727/nubbys-number-factory-archipelago",
+      "tag": "v1.2.1",
+      "title": "v1.2.1 - Harden supervisor-save sync",
+      "version_simple": "1.2.1",
+      "world_version": "1.2.1"
+    },
+    "v1.2.2": {
+      "created_at": "2026-09-03T08:28:33Z",
+      "description": "Root-caused the crash reported after v1.2.1: decompiled the affected player's actual `data.win` and confirmed it was 100% unpatched vanilla (no trace of the AP patch anywhere), while their save file had a supervisor locked - which only happens via this client's own logic. `/patch` had silently failed for them, most likely because the game got launched during the multi-minute operation and the final swap raced a locked file - the running-game check only happened once, at the very start.\n\n- `/patch` now re-checks right before swapping data.win, wraps the swap in try/except, and verifies the patch marker is actually present in the output (and the live file) before reporting success. On any failure the correctly-patched file is preserved so nothing needs to be redone from scratch.\n- The client now checks on every connect/reconnect and prints a loud, hard-to-miss warning if your live `data.win` doesn't look patched.\n\nVerified for real by running the actual patch code end-to-end against a fake install, both the success path and the game-launched-mid-patch failure path.\n\n- **nubbys_number_factory.apworld** - install into your Archipelago custom_worlds folder, then run /patch from the client.\n- **PatchApItemLockV30_MASTER.csx** - for manual/advanced patching only.\n- **nnf_poptracker_pack.zip** - PopTracker pack for visual check tracking (unchanged this release).\n",
+      "download_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/download/v1.2.2/nubbys_number_factory.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e6f3fd4261341ad80f9f8a6a79e4966eff515c4fb257da56c28defa9f132d9d0",
+      "html_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/tag/v1.2.2",
+      "size": 302815,
+      "source_url": "https://api.github.com/repos/SsL2727/nubbys-number-factory-archipelago",
+      "tag": "v1.2.2",
+      "title": "v1.2.2 - /patch verifies its own success",
+      "version_simple": "1.2.2",
+      "world_version": "1.2.2"
+    },
+    "v1.3.0": {
+      "created_at": "2026-09-04T00:30:12Z",
+      "description": "Removes `/patch`.\r\n\r\n`/patch` (in-client self-patching via a downloaded UndertaleModCli) had two independent real-world failure reports trace back to it - the fix for the second one (v1.2.2) held up in testing, but the automated self-patch approach itself proved too fragile in practice. Distribution now works the same way most game mods do: download the already-patched `data.win` from this release and swap it in yourself.\r\n\r\n**Before you do anything**, back up your own `data.win` and your save folder (`%LOCALAPPDATA%\\NNF_FullVersion\\`) - see the README for exact steps and how to revert back to a normal game later.\r\n\r\n\r\n- **nubbys_number_factory.apworld** - install into your Archipelago custom_worlds folder.\r\n- **PatchApItemLockV30_MASTER.csx** - the source this data.win was built from, for anyone who wants to verify or rebuild it themselves.\r\n- **nnf_poptracker_pack.zip** - PopTracker pack for visual check tracking (unchanged this release).\r\n",
+      "download_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/download/v1.3.0/nubbys_number_factory.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e97456236cf3261ec3e9bac781f3bcf29cfc71fdbf8fcf231f084739386a9e96",
+      "html_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/tag/v1.3.0",
+      "size": 257591,
+      "source_url": "https://api.github.com/repos/SsL2727/nubbys-number-factory-archipelago",
+      "tag": "v1.3.0",
+      "title": "v1.3.0 - Pre-patched data.win, no more /patch",
+      "version_simple": "1.3.0",
+      "world_version": "1.3.0"
+    },
+    "v1.3.1": {
+      "created_at": "2026-09-04T23:59:55Z",
+      "description": "The fresh-room lock (which zeroes exactly these fields for a brand new room) only ran when a connection *also* looked like a room switch. If an earlier connection attempt got interrupted after `active_room.json` was written but before room setup finished, the next attempt skipped the lock entirely - the player's current, already-progressed save got copied straight into the \"new\" room unlocked. Fixed: fresh-room setup now runs whenever the room's own save folder doesn't exist yet, independent of whether the connection looks like a \"switch.\"\r\n\r\nThis is a client-only fix (no `data.win` changes) - existing patched games don't need re-patching.\r\n\r\n- **nubbys_number_factory.apworld** - install into your Archipelago custom_worlds folder.\r\n- **PatchApItemLockV30_MASTER.csx** - unchanged, for anyone rebuilding it themselves.\r\n- **nnf_poptracker_pack.zip** - unchanged.\r\n",
+      "download_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/download/v1.3.1/nubbys_number_factory.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6f75357720327747a1c6073bb704af4d6a197b70237956b5c0b38bddb9b8b053",
+      "html_url": "https://github.com/SsL2727/nubbys-number-factory-archipelago/releases/tag/v1.3.1",
+      "size": 258089,
+      "source_url": "https://api.github.com/repos/SsL2727/nubbys-number-factory-archipelago",
+      "tag": "v1.3.1",
+      "title": "v1.3.1 - Fix fresh-room lock skip bug",
+      "version_simple": "1.3.1",
+      "world_version": "1.3.1"
+    }
+  }
+}
