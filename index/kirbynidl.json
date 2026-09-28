@@ -1,0 +1,38 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": null,
+  "github": "https://github.com/VizCount467/Kirby-NIDL-AP",
+  "manifest_fields": [],
+  "versions": {
+    "v0.0.0": {
+      "created_at": "2026-09-26T01:26:05Z",
+      "description": "This release patches up a few more bugs, some discovered on initial public preview, some lingering from earlier development. Given reports of others playing and completing full games, removed \"beta\" and \"unstable\" language from the .md file. Thus, this can be considered the first \"full\" and stable release of the implementation. Not saying there won't be more bugs to find though!\r\n\r\n### Changelog\r\n - 9/25/26: Fixed bugs found in previous release. Removed \"beta\" and \"unstable\" language.\r\n    - Warp Star stations are no longer always boarded up before restart, and have the appropriate destinations unlocked for currently unlocked worlds\r\n    - Added failsafe for missing boss checks -- on initialization, the client checks in-game values and awards all cleared boss locations, if necessary.\r\n    - Fixed door lock bug in ASM allowing \"locked\" OW doors to be entered\r\n    - Clean up 7-1 Big Switch Rules\r\n    - Rename various locations to give them more personality\r\n",
+      "download_url": "https://github.com/VizCount467/Kirby-NIDL-AP/releases/download/v0.0.0/kirbynidl.apworld",
+      "has_manifest": false,
+      "hash_sha256": "81a2ade81402d264617b2b743554bff9e827d7cc51d731ca9a55f7ffd75eb0a6",
+      "html_url": "https://github.com/VizCount467/Kirby-NIDL-AP/releases/tag/v0.0.0",
+      "size": 89712,
+      "source_url": "https://api.github.com/repos/VizCount467/Kirby-NIDL-AP",
+      "tag": "v0.0.0",
+      "title": "0.0.0 First Stable Release",
+      "version_simple": "0.0.0",
+      "world_version": "0.0.0"
+    },
+    "v0.0.0-b1": {
+      "created_at": "2026-09-23T17:25:02Z",
+      "description": "# Initial Release of Kirby Nightmare in Dream Land AP\r\n\r\n## Features Implemented\r\n- Locations\r\n    - All level clears\r\n    - All world boss clears\r\n    - All in-level consumable items (Pep Drinks, 1ups, Candy, Maxim Tomatoes)\r\n    - All Big Switches\r\n    - All Arenas\r\n- Items\r\n    - Consumable Pickups (Pep Drinks, 1ups, Maxim Tomatoes, Invincibility Candy)\r\n        - Health items are not awarded immediately, but added to a \"Bank\". HP is automatically restored from the bank as you take damage.\r\n        - Consumable items are single-use. If you quit and re-open the same save file on the same saved game, you will not receive items received during the last session (the HP bank also resets)\r\n    - Star Rod Piece - unlocks world Boss and next world\r\n    - Unlock Copy Abilities \r\n    - Unlock Minigames (Bomb Rally, Air Grind, Quick Draw) and other side doors (Arena, Museum, Warp Station) for each world\r\n    - Vitality (Max HP Upgrades) - currently fixed at 3 upgrades with 3 Max HP to start, configurable in the options\r\n    \r\n- Options\r\n    - Variable number of existing and required Star Rod Pieces\r\n    - Variable starting health and number of health upgrades\r\n    - Start with all Copy Abilities and/or bonus doors unlocked, if desired\r\n    - Toggle obscure/difficult tricks in location logic\r\n\r\n## Changelog\r\n\r\n- 8/3/26: Added \"HP Bank\" feature modeled off the Mega Man 1/2/3 AP that stores HP items if you don't immediately them, and gives HP 1 segment as a time as you take damage\r\n- 8/5/26: Added Detection for boss defeat via the Kirby Dance BGM. Attempted to add SFX for the Star Rod piece.\r\n- 8/10/26: Added Vitality and Copy Ability unlocks (currently 1 vitality, and just Sword). Fixed SFX for all awarded items\r\n- 8/13/26: Added (untested) big switch detection logic. Attempted to fix EVERY FRAME door SFX issue. Added (soon to be useless) coordinate logic for in-level pickups\r\n- 8/14/26: Overhauled item detection to use collection flags in RAM rather than coordinates. Added (untested) Arena clear detection\r\n- 8/20/26: Add full-game locations, items and logic rules\r\n- 8/26/26: Overhaul Door locking system to go in-game instead of client side. Debug Big Switch Checks\r\n- 8/28/26: Fix client sync counter bug. Update guide in apworld docs. Other misc bug-squashing.\r\n- 9/3/26: Overhaul Ability locking system to go in-game, fixing issues concerning copy abilities and the mix roulette. Fixed door lock edge case\r\n- 9/4/26: Add functional options to client and world\r\n- 9/13/26: Add Tests. Fix logic bug with Star Rod progression\r\n- 9/15/26: Polishing and bug squashing. Fixes attempted for following bugs:\r\n    - Overworld door locking does not lock doors in levels (re: 4-6 stake room, 6-2 rocky room)\r\n    - Item awarding no longer attempted in Nightmare Orb phase (healing is impossible) \r\n    - Big Switch state partly moved game side to ensure Overworld is always open. Client sets \"all switches pressed\" while game always reads \"no switches pressed\" in Big Switch rooms. \r\n    - Fixed 5-1 location ID's\r\n    - Expanded 5-5 Big Switch Logic. \r\n- 9/17/26: Further Polishing. Update Docs with implementation details. Added All essential Tests and tightened Rules.py logic. Fixes Attempted for following bugs\r\n    - Add missing Pep Drink in 4-3 to locations\r\n    - Client \"sync counter\" goes to length of items received if internal counter somehow greater than network instead of resetting\r\n- 9/18/26: Polishing. Add Vitality Count Tests. Attempted following bug fixes\r\n    - 6-6 UFO's trigger the \"level clear\" check due to detection oversights\r\n    - Location checks now allow multiple ID's to be sent in one tick of the client instead of assuming only 1 (checks would be eaten)\r\n    - Healing should NOT be attempted in the Nightmare Orb phase (again)\r\n    - Healing SHOULD be allowed in Arenas\r\n    - Healing should NOT be attempted in the event of a pit death (HP = 0)\r\n- 9/19/26: Bug testing. Attempted following bug fixes\r\n    - Warp Star stations are all initially barred, then have all 7 worlds unlocked upon reset\r\n    - Useless healing attempts in the intro to the Nightmare Wizard fight (getting there!)\r\n- 9/21/26: Final Bug Testing. Following Fixes applied\r\n    - Warp Star stations will not have all 7 worlds unlocked to start, even after a reset\r\n    - Added missing spike room 1up in 3-3\r\n    - Fixed Arena Key logic and added Arena Key test\r\n- 9/22/26: Final-er Bug Testing. Preparations for release\r\n    - Update docs to prep for release\r\n    - Enable automatic patching from patch file and prompt for initial ROM file selection\r\n    - Fix implementation of copy abilities and side doors initially unlocked options\r\n    - Fix Arena checks being awarded immediately at the start of the fight\r\n",
+      "download_url": "https://github.com/VizCount467/Kirby-NIDL-AP/releases/download/v0.0.0-b1/kirbynidl.apworld",
+      "has_manifest": false,
+      "hash_sha256": "ce49b1b0ce8c1cf97d7e696eaf46d8b258b4ecd3665b2cd98c405cf500cbbe2d",
+      "html_url": "https://github.com/VizCount467/Kirby-NIDL-AP/releases/tag/v0.0.0-b1",
+      "size": 89168,
+      "source_url": "https://api.github.com/repos/VizCount467/Kirby-NIDL-AP",
+      "tag": "v0.0.0-b1",
+      "title": "0.0.0-beta1 Initial Release",
+      "version_simple": "0.0.0",
+      "world_version": "0.0.0b1"
+    }
+  }
+}
