@@ -1,17 +1,22 @@
 {
   "authors": [
-    "Deadlydiamond98"
+    "Deadlydiamond98",
+    "ThreeCrows",
+    "VoidedMoth"
   ],
   "flags": [],
   "game": "Minecraft Fabric",
-  "github": "https://github.com/Deadlydiamond98/MinecraftFabricAPWorld",
+  "github": [
+    "https://github.com/Deadlydiamond98/MinecraftFabricAPWorld",
+    "https://github.com/threecrowsinatrenchcrowt/MinecraftFabricAPWorld"
+  ],
   "license": null,
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
     "world_version"
   ],
-  "setup_guide_url": "https://modrinth.com/mod/archipelago-mod",
+  "setup_guide_url": "https://modded.wiki/w/Fabric_Archipelago_Mod",
   "sheet_disclosure": "Unknown",
   "sheet_stability": "Unstable",
   "versions": {
@@ -231,6 +236,21 @@
       "title": "Minecraft Fabric AP (1.1.2)",
       "version_simple": "1.1.2",
       "world_version": "1.1.2"
+    },
+    "v1.2.0": {
+      "created_at": "2026-08-20T00:04:10Z",
+      "description": "# Minecraft Fabric AP v1.2.0\r\n\r\nReleasing a build with the fixes and improvements we've done so far before we get around to implementing major new content in the next update.\r\n\r\n## Improvements\r\n\r\n* Added several new logic options to make the first few spheres of itemsanity more playable\r\n    * Added options to logically integrate Nature's Compass and Explorer's Compass, locking items that require specific\r\n      biomes or structures behind the ability to search for them with the compass mods\r\n    * Added options to make movement abilities (jump, sprint, swim) and the ability to sleep to set your spawn point\r\n      logically required for checks that require exploration\r\n* Finished implementing the Totem of Meteorology, a custom item that allows players to quickly change the weather\r\n* Changed the APWorld logic entirely to use the RuleBuilder library\r\n\r\n## Fixes\r\n\r\n### Mod\r\n* Prevented mod persistent state from accumulating duplicate advancement IDs\r\n* Fixed thread race error in checking advancement criteria\r\n* Client now batches location check packets sent to Archipelago server\r\n* Added a failsafe to prevent hard crashes due to a missing mod\r\n* Fixed several typos that allowed certain items to be crafted without the required progression\r\n\r\n### APWorld\r\n* Enchanting now logically requires diamonds to craft an Enchanting Table\r\n",
+      "download_url": "https://github.com/threecrowsinatrenchcrowt/MinecraftFabricAPWorld/releases/download/v1.2.0/minecraft_fabric.apworld",
+      "has_manifest": true,
+      "hash_sha256": "177350c2f140c4c43baa1c51c370bb64b194a842eeef9a1d32343880b9830d38",
+      "html_url": "https://github.com/threecrowsinatrenchcrowt/MinecraftFabricAPWorld/releases/tag/v1.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 62132,
+      "source_url": "https://api.github.com/repos/threecrowsinatrenchcrowt/MinecraftFabricAPWorld",
+      "tag": "v1.2.0",
+      "title": "Minecraft Fabric AP v1.2.0",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0"
     }
   }
 }

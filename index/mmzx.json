@@ -1,0 +1,36 @@
+{
+  "flags": [],
+  "game": null,
+  "github": "https://github.com/Nekusen/Archipelago-MegaManZX",
+  "manifest_fields": [],
+  "versions": {
+    "v0.1.0": {
+      "created_at": "2026-09-17T17:36:15Z",
+      "description": "First release of the project.\r\n\r\nWARNING:\r\nIt's an early version. While there's been a lot of testing, many issues may still happen. Be ready to ask the host of the multiworld for a send_location command or an eventual release if things go wrong. Any feedback is appreciated.\r\n\r\nMake sure you read the [documentation](https://github.com/Nekusen/Archipelago-MegaManZX/blob/main/docs/en_Mega%20Man%20ZX.md) to understand how the randomizer works and what to expect",
+      "download_url": "https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.1.0/mmzx.apworld",
+      "has_manifest": false,
+      "hash_sha256": "446214987c341e2c3c3a6f74409e5e0ce002b99331f30cc3d03c1f9a3a3fe8d1",
+      "html_url": "https://github.com/Nekusen/Archipelago-MegaManZX/releases/tag/v0.1.0",
+      "size": 190361,
+      "source_url": "https://api.github.com/repos/Nekusen/Archipelago-MegaManZX",
+      "tag": "v0.1.0",
+      "title": "Release 0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v0.2.0": {
+      "created_at": "2026-09-24T10:16:13Z",
+      "description": "### Added\r\n\r\n- Added \"configurable goal requirements\".\r\n  - Goal Requirement \"Biometals\": Collect a specific ammount of models from the pool\r\n  - Secret Disk: A macguffin style goal that requires collecting a specific ammount of secret disks from the pool.\r\n  - Missions: Complete a chosen number of the 14 story missions.\r\n- The STATUS tab of the pause menu shows the progress towards the goal requirements.\r\n  - A `/mmzx_goal` has been added to the client as well, that prints the goal requirements and your progress.\r\n- Added `progressive_models` as an option: each of the biometals H, F, L and P comes either as two halves (as before) or as one item that gives the whole model at once.\r\n- Added `require_full_models`: the Biometals goal requirement can ask for both halves of a progressive model or just one of them.\r\n- Added `skip_minibosses`: a QoL change so mini bosses can be skipped.\r\n  - `after_first_defeat`: you have to beat them once. But reloading the area will not respawn them.\r\n  - `always`: all of them count as beaten from the start, so their fights never start.\r\n\r\n### Changed\r\n\r\n- The item icons of the pickups are now part of the patched ROM instead of swapped by the client, so they show correctly even while the client is disconnected or not running.\r\n\r\n### Fixed\r\n\r\n- The trigger for \"Protect HQ\" was lost when another area's mission was started, and there was no way to re-trigger it. Entering Area X now resumes Protect HQ once four area missions are completed.\r\n- Checks collected while the client was reconnecting to the server were not sent until collecting the next check. Now they send right after reconnecting.\r\n- Reconnecting to the server no longer removes the Card Keys, the Life Up and Sub Tank capacity and the max HP for a moment.\r\n- A pickup that holds a multiworld item can no longer be sliced into small pieces with a weapon.",
+      "download_url": "https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.2.0/mmzx.apworld",
+      "has_manifest": false,
+      "hash_sha256": "0c3ffb098b6220f8e8b04acc202c3d505b28578137de0888f01b69cb604faecd",
+      "html_url": "https://github.com/Nekusen/Archipelago-MegaManZX/releases/tag/v0.2.0",
+      "size": 209131,
+      "source_url": "https://api.github.com/repos/Nekusen/Archipelago-MegaManZX",
+      "tag": "v0.2.0",
+      "title": "Release 0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    }
+  }
+}
