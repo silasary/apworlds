@@ -195,6 +195,36 @@
       "title": "1.8.2",
       "version_simple": "1.8.2",
       "world_version": "1.8.2"
+    },
+    "1.8.3": {
+      "created_at": "2026-09-28T07:16:49Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **Just reload the page.** No new seed, no new yaml, no re-download. The\n    APworld is identical to 1.8.2 apart from its version number.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## Angels no longer crash the game\n\nAn Angel froze the game as soon as a thrown ring landed. Gold per Thrown Ring\ndefaults to 50, so this hit every seed with an Angel in it.\n\nStick Ranger checks that your gold still matches what it last recorded, and\ndestroys the game window if it does not. Every other place that moves gold tells\nit to record the new value. The ring payout, added in 1.8.0, did not \u2014 so the\nnext check saw gold it had not agreed to and killed the window.\n\nThanks to everyone who reported it.\n\n## Also fixed\n\n-   The -50% gold trap changed your gold without going through the one place\n    Ring Link watches, so a trap taking half your money broadcast nothing to the\n    room.\n-   With Ring Link off, the running total of unsent gold was never emptied and\n    grew for the whole session.\n\n## Changes\n\n### Client\n\n-   Every gold movement is now checked against the anti-cheat by a test, at\n    every place in the game that moves gold, so this cannot come back at a new\n    one.\n-   A second test asserts nothing moves gold behind Ring Link's back.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.3/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b36792ad26b43fb25b22882d6ec869f05af94ca050bf0da3ef136fdbb668ed5d",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 43088,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.3",
+      "title": "1.8.3",
+      "version_simple": "1.8.3",
+      "world_version": "1.8.3"
+    },
+    "1.8.4": {
+      "created_at": "2026-09-28T11:26:11Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **Just reload the page.** No new seed, no new yaml, no re-download. The\n    APworld is identical to 1.8.3 apart from its version number.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## Rangers walking off on their own\n\nA ranger would sometimes wander towards enemies while still attacking, most\nvisibly a Sniper strolling into melee. It was a movement key stuck on.\n\nOnly the selected ranger responds to the walk keys, and that walk runs\nindependently of attacking, so a stuck key is the one thing that makes a ranger\nwalk and shoot at the same time. Three ways it got stuck, all fixed:\n\n-   Releasing `a` or `d` while holding Shift cleared the wrong key and left the\n    original held for good.\n-   A key held while the window lost focus never got a release at all, so\n    alt-tabbing mid-walk left the ranger walking.\n-   Anything typed into the Archipelago chat box also reached the game, so\n    chatting a word with an `a` or `d` in it walked whoever was selected.\n\n## Shop checks\n\n-   Shop cells now show the Archipelago logo. The logo is a separate image and\n    the shop was looking for it in the item sheet, where it does not exist, so\n    the cell came out blank.\n-   The Shop Hints line no longer overlaps. It sat four pixels above the stat\n    rows and ran sideways over the item grid; it now wraps into the space the\n    stats used to take.\n-   An uncollected check no longer lists the weapon's AT, AGI and Range. Buying\n    it sends a check rather than the weapon, so those numbers never described\n    what you were buying. They come back once the check is collected and the\n    cell sells the real item again.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.4/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9bdb9feaa74d2deceb2e10bb95f7696d88ce56f1ccffde8552140d1cd073bb5c",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 43088,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.4",
+      "title": "1.8.4",
+      "version_simple": "1.8.4",
+      "world_version": "1.8.4"
     }
   }
 }

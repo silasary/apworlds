@@ -2,132 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-28T06:21:08.808592+00:00</updated>
+  <updated>2026-09-28T12:23:09.048208+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.3.0</id>
-    <title>Mario Kart Wii v0.3.0</title>
-    <updated>2026-09-23T12:51:40+00:00</updated>
-    <author>
-      <name>toent</name>
-    </author>
-    <content>## Release Version 0.3.0: Character &amp; Vehicle Randomizing&#13;
-The long awaited update is finally here! From now on default unlocked Characters and Vehicles will be locked from the start. A run will start with 2 starting characters: one with a kart unlocked and one with a bike unlocked. If you make a combo that you dont have unlocked the client will automatically set your Character and Vehicle to a random legal combo for that engine class (so it will only allow you to use both karts and bikes when you have the item for it on 50cc and 100cc).&#13;
-&#13;
-### Changelog:&#13;
-- [APWorld] Added 2 new options for enabling and disabling default character/vehicle inclusion seperately.&#13;
-- [APWorld] Added the default characters and vehicles as items.&#13;
-- [APWorld] Updated the rules of the generator to keep the new options in mind.&#13;
-- [Client] Implemented unlock handling for default unlocked characters and vehicles.&#13;
-- [Client] Implemented safeguard for if the user tries to select an illegal combo anyways.&#13;
-- [Client] Includes the Victory Trophy handling rework of [pre0.2.4](https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.2.4).&#13;
-- [Tracker] Added new tab for characters and their icons to display availability.&#13;
-- [Tracker] Added new tab for vehicles, grouped by weight class to display availability.&#13;
-- [Tracker] Fixed an issue where the hitbox for the eye icon to hide your AP server ip stretched too far downwards, causing accidental clicks.&#13;
- &#13;
-**REQUIRES THIS NEW APWORLD**&#13;
-&#13;
-_Linux users, download the source code here to run the client._&#13;
-&#13;
-**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.2.3...v0.3.0</content>
-    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JBtheShadow/APManuals/releases/tag/v1.2.0</id>
-    <title>Manual_FantasyLife_JBtheShadow v1.2.0</title>
-    <updated>2026-09-23T15:45:39+00:00</updated>
-    <author>
-      <name>JBtheShadow</name>
-    </author>
-    <content>## New: Deathlink and Filler Traps&#13;
-These options used to be disabled before. You _can_ die in Fantasy Life but it mostly asks if you wanna use a Life Cure on the spot or get revived back at your home, so I figure similarly you can choose to discard a Life Cure (as if you had used it) or teleport back home if you wanna play with deathlink on but would rather not force yourself into losing to an enemy.&#13;
-&#13;
-As for traps, here are some I came up with, subject to change in the future:&#13;
-* **Sneak Trap:** replenish your stamina gauge then sneak around in place until it's fully depleted;&#13;
-* **Run Trap:** replenish your stamina gauge then run around in place until it's fully depleted;&#13;
-* **Sit Trap:** first drain your entire stamina gauge then sit down until it's fully recovered;&#13;
-* **Pacifist Trap:** you're not allowed to harm enemies for X time;&#13;
-* **No Gathering Trap:** you're not allowed to mine, chop, fish or pick up items for X time;&#13;
-* **No Crafting Trap:** you're not allowed to create items via artisan stations for X time;&#13;
-* **No Items Trap:** you're not allowed to use consumables for X time;&#13;
-* **No Shopping Trap:** you're not allowed to purchase anything for X time;&#13;
-* **Life Change Trap:** you're forced to switch into one of your available lives and be unable to switch them again for X time;&#13;
-* **Teleport Trap:** you're forced to teleport to one of your available fast travel points and cannot use them again for X time;&#13;
-* **Famine Trap:** you're forced to consume a food item;&#13;
-* **Hydration Trap:** you're forced to consume a potion or other drinkable item;&#13;
-&#13;
-I'm not sure what amount of time can work for the traps that specify something. 1 minute? 5? So I left it open. It is a manual after all.&#13;
-&#13;
-## New: Bingo Goal&#13;
-A new goal objective has been added, named Bingo. You can create 3x3, 5x5, 7x7 or 9x9 board of locations logically required as part of the goal. These locations are all named Bingo Board Row A Column B, and their requirements are copied from random existing locations in the APWorld.&#13;
-&#13;
-Each board tile also has the original location marked as their "entrance" to make it easier to visualize which location you're supposed to do first before you're allowed to check that tile:&#13;
-&lt;img width="1914" height="641" alt="image" src="https://github.com/user-attachments/assets/43c1e22d-d4d8-48f7-86e5-1c15215116d9" /&gt;&#13;
-&#13;
-Ideally there should have been some visual aid on the locations and board tiles but for the time being the hinted locations should help. &#13;
-&#13;
-Additionally, there are bonus locations for rows, columns and diagonals, which also may only be checked once their corresponding tiles have also been checked out.&#13;
-&#13;
-## New: Additional Filters for Shops and Chests&#13;
-* You can now toggle Castele, Port Puerto, Al Maajik or Other shops;&#13;
-* You can now specify which areas in game to consider for chest locations;&#13;
-&#13;
-## Changes:&#13;
-* Not all but several locations have been renamed to be easier to spot at a glance where they're from;&#13;
-* Some csv files have been removed in favor of readding that info into the respective json files;&#13;
-* Locations for unlocking bliss bonuses have had their requirements tweaked to require progressive chapters too;&#13;
-* Temporarily removed locations for finding and equipping item rarities&#13;
-  * Needs some rework&#13;
-&#13;
-## Fixes:&#13;
-* Restricted shop location logic was not respecting the spoiler log&#13;
-&#13;
-## TODO:&#13;
-- [ ] Review requirements for challenges and crafting recipes;&#13;
-- [ ] Include other types of chests (purple, invisible, master);&#13;
-- [ ] Include an alternative to challenges or crafting locations in the form of tasks;&#13;
-  - Similar scope, collect X items or fight X enemies and the like;&#13;
-- [x] Add more goal requirements;&#13;
-  - I like the Bingo one; it sorta works as a task list too; &#13;
-- [ ] Add template yamls for different setups, like different game modes;&#13;
-- [ ] Fix item rarities&#13;
-- [ ] Look into other ways to allow a playthrough from an existing save;&#13;
-- [ ] Look into other improvements;&#13;
-- [ ] Look into any other issues caused by upgrading the manual to the unstable version;</content>
-    <link href="https://github.com/JBtheShadow/APManuals/releases/tag/v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.9.0</id>
-    <title>Grand Theft Auto: San Andreas v0.9.0</title>
-    <updated>2026-09-23T18:29:11+00:00</updated>
-    <author>
-      <name>awaken</name>
-    </author>
-    <content>## New:&#13;
-- Wang Cars now unlocks at any point in the game with an unlock item and is blocked otherwise (#57 by @Lordmau5)&#13;
-- Added Stunt Jumps as checks and an unlock item for them (#59 by @Lordmau5)&#13;
-- Added collectible height indicator on the radar (#67 by @Lordmau5)&#13;
-- Added Courier unlock item&#13;
-&#13;
-## Changes:&#13;
-- All submissions can now be turned off (#60)&#13;
-- Corrected gating on side activities that are now available early (Courier missions, Stadium events, Schools etc.) (#65)&#13;
-- The mod now shows an error message and prevents new game from starting if CLEO 4 is installed.&#13;
-&#13;
-## Fixed:&#13;
-- Radar numbers are not shown anymore whenever radar/blips are not drawn (#58)&#13;
-- Fixed Driving Schools sending checks for the wrong tests&#13;
-- Fixed `High Stakes, Low Ryder` not sending out a check if its Street Race was completed first (#66)&#13;
-- Fixed `High Stakes, Low Ryder` crashing the game if the player dies right after the cutscene (#79)&#13;
-- Fixed Flying School becoming blocked after completing it. (#71)&#13;
-- Fixed Quarry Level 7 not sending out a check&#13;
-- Detection of snapshots is now far more reliable (#80 by @Lordmau5)&#13;
-- CLEO version is not overlapped by Archipelago text in the main menu anymore (#10)</content>
-    <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v0.9.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.40</id>
     <title>Mental Omega v1.40</title>
@@ -1588,5 +1467,136 @@ https://github.com/aurabot24/Archipelago-ALttPR/releases/latest&#13;
 [Mod Link](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)&#13;
 [Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/main/worlds/funi_raccoon/docs/setup_en.md)</content>
     <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.3</id>
+    <title>Stick Ranger v1.8.3</title>
+    <updated>2026-09-28T07:16:49+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content>## Installation
+
+-   Download the APworld for Stick Ranger
+-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
+-   Generate a yaml or download the one in here
+-   Customize the yaml and put it in the /players folder inside Archipelago
+-   Generate a game
+-   Connect to and play the game [here](https://kryen112.github.io/)
+
+## Heads up
+
+-   **Just reload the page.** No new seed, no new yaml, no re-download. The
+    APworld is identical to 1.8.2 apart from its version number.
+-   Requires Archipelago **0.6.7 or newer**.
+
+## Angels no longer crash the game
+
+An Angel froze the game as soon as a thrown ring landed. Gold per Thrown Ring
+defaults to 50, so this hit every seed with an Angel in it.
+
+Stick Ranger checks that your gold still matches what it last recorded, and
+destroys the game window if it does not. Every other place that moves gold tells
+it to record the new value. The ring payout, added in 1.8.0, did not — so the
+next check saw gold it had not agreed to and killed the window.
+
+Thanks to everyone who reported it.
+
+## Also fixed
+
+-   The -50% gold trap changed your gold without going through the one place
+    Ring Link watches, so a trap taking half your money broadcast nothing to the
+    room.
+-   With Ring Link off, the running total of unsent gold was never emptied and
+    grew for the whole session.
+
+## Changes
+
+### Client
+
+-   Every gold movement is now checked against the anti-cheat by a test, at
+    every place in the game that moves gold, so this cannot come back at a new
+    one.
+-   A second test asserts nothing moves gold behind Ring Link's back.
+</content>
+    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v4.0.0</id>
+    <title>Factorio: Space Age v4.0.0</title>
+    <updated>2026-09-28T09:39:32+00:00</updated>
+    <author>
+      <name>Berserker</name>
+    </author>
+    <author>
+      <name>Josh Wolfe</name>
+    </author>
+    <content># Factorio: Space Age apworld 4.0.0&#13;
+&#13;
+* MAJOR FEATURE: Add `starting_planet: aquilo_orbit`, which integrates my brand new [aquilo-orbit-start](https://mods.factorio.com/mod/aquilo-orbit-start) mod.&#13;
+    * This is flagged as a major feature with a major version bump because it is dramatically different from the other `starting_planet` options. If you've been putting `random` as your starting planet, you should probably read that mod's description before you dive in again.&#13;
+    * I think the aquilo-orbit-start idea is super fun, but others may find it somewhere between tedious and overpowered. I recommend giving it a try to see if you enjoy it.&#13;
+    * Added a new option `aquilo_orbit_start_settings` to adjust the balance. The default is designed to progress very fast. Please let me know if the defaults are buffed too hard.&#13;
+    * Starting in Aquilo orbit interacts with these other options: `goal`, `space_technology_level`, `require_electric_mining_drill`,&#13;
+    * The mod has been tested, but is still pretty new. Please report bugs, balance suggestions, or any other feedback!&#13;
+&#13;
+download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
+general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
+setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
+source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
+    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v4.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.4</id>
+    <title>Stick Ranger v1.8.4</title>
+    <updated>2026-09-28T11:26:11+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content>## Installation
+
+-   Download the APworld for Stick Ranger
+-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
+-   Generate a yaml or download the one in here
+-   Customize the yaml and put it in the /players folder inside Archipelago
+-   Generate a game
+-   Connect to and play the game [here](https://kryen112.github.io/)
+
+## Heads up
+
+-   **Just reload the page.** No new seed, no new yaml, no re-download. The
+    APworld is identical to 1.8.3 apart from its version number.
+-   Requires Archipelago **0.6.7 or newer**.
+
+## Rangers walking off on their own
+
+A ranger would sometimes wander towards enemies while still attacking, most
+visibly a Sniper strolling into melee. It was a movement key stuck on.
+
+Only the selected ranger responds to the walk keys, and that walk runs
+independently of attacking, so a stuck key is the one thing that makes a ranger
+walk and shoot at the same time. Three ways it got stuck, all fixed:
+
+-   Releasing `a` or `d` while holding Shift cleared the wrong key and left the
+    original held for good.
+-   A key held while the window lost focus never got a release at all, so
+    alt-tabbing mid-walk left the ranger walking.
+-   Anything typed into the Archipelago chat box also reached the game, so
+    chatting a word with an `a` or `d` in it walked whoever was selected.
+
+## Shop checks
+
+-   Shop cells now show the Archipelago logo. The logo is a separate image and
+    the shop was looking for it in the item sheet, where it does not exist, so
+    the cell came out blank.
+-   The Shop Hints line no longer overlaps. It sat four pixels above the stat
+    rows and ran sideways over the item grid; it now wraps into the space the
+    stats used to take.
+-   An uncollected check no longer lists the weapon's AT, AGI and Range. Buying
+    it sends a check rather than the weapon, so those numbers never described
+    what you were buying. They come back once the check is collected and the
+    cell sells the real item again.
+</content>
+    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.4"/>
   </entry>
 </feed>
