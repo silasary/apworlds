@@ -2,102 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-27T18:14:03.894991+00:00</updated>
+  <updated>2026-09-28T00:20:51.311811+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_Addons_v0.1.2</id>
-    <title>Universal Tracker Addons v0.1.2</title>
-    <updated>2026-09-23T03:19:04+00:00</updated>
-    <author>
-      <name>FarisTheAncient</name>
-    </author>
-    <content>* Added some error checking to next prog&#13;
-&#13;
-**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.3.4...Tracker_Addons_v0.1.2</content>
-    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_Addons_v0.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.1</id>
-    <title>Stick Ranger v1.8.1</title>
-    <updated>2026-09-23T05:43:50+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content>## Installation
-
--   Download the APworld for Stick Ranger
--   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
--   Generate a yaml or download the one in here
--   Customize the yaml and put it in the /players folder inside Archipelago
--   Generate a game
--   Connect to and play the game [here](https://kryen112.github.io/)
-
-## Heads up
-
--   **If you are playing a seed with Shop Checks right now, reload the page and
-    carry on.** You do not need a new seed, a new yaml, or the new APworld. The
-    website has already updated.
--   Requires Archipelago **0.6.7 or newer**.
-
-## Shop Checks never worked
-
-Shop Checks has been broken since it was added in 1.7.0, for everyone, on every
-seed. Buying an item never sent its check.
-
-The APworld built all 462 shop locations correctly, which is why they showed up
-in the tracker and could be released by hand. But it never told the website the
-option was on, and the website treats an option it was not told about as off. So
-the shop behaved exactly like vanilla and quietly sent nothing.
-
-Thanks to the player who reported this.
-
-### Your run is not lost
-
-A seed generated before this release still does not say whether Shop Checks is
-on, so the website now works it out from the seed itself: only Shop Checks
-creates locations in the shop range. If they are there, the feature is on.
-
-So an in-progress run recovers on its own. Reload the page and buying starts
-sending checks. **No regeneration.**
-
-If you already released your shop checks by hand, the website now takes the
-server's word for which ones are done, so those items go back to being ordinary
-purchases instead of asking to be checked again. You will not pay for something
-that is already gone.
-
-### Also
-
--   New APworld tests assert that every option the website acts on actually
-    reaches it. That is the check that was missing, and it is what let this ship
-    in the first place.
-</content>
-    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0-prerelease1</id>
-    <title>Funi Raccoon Game v1.8.0rc0.post0</title>
-    <updated>2026-09-23T06:03:18+00:00</updated>
-    <author>
-      <name>Jeffdev</name>
-    </author>
-    <content>**THIS IS A PRE-RELEASE. IT IS HERE IF YOU WOULD LIKE TO HELP TEST NEW FEATURES!**&#13;
-`New:`&#13;
-- Completely reworked how the mod loads itself and builds itself. This does mean there is a completely new process for setting up the mod. Please refer to the [newly updated setup guide.](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/reformatted-mod/worlds/funi_raccoon/docs/setup_en.md)&#13;
-- Added an in game tracker menu, built into the settings menu on the "AP" tab. This also displays some information about the Archipelago slot, and your goals.&#13;
-- Added an Archipelago logo icon to held items on the UI, to show if you have sent the check for them or not.&#13;
-- Added an option under `F7` to mute the monitor sound in the settings menu.&#13;
-&#13;
-`Changes:`&#13;
-- Changed the vanilla game item tracker popup to always display items sprites fully instead of showing black shades, to make it easier to use.&#13;
-- Moved the connection info text a bit higher and made it wavy to match the UI better.&#13;
-&#13;
-`Fixes:`&#13;
-- Fixed hintblo and doggy's ids being swapped</content>
-    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0-prerelease1"/>
-  </entry>
   <entry>
     <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.2</id>
     <title>Stick Ranger v1.8.2</title>
@@ -1575,5 +1484,107 @@ Counts are now honored for perks and mods, so `Time Bolt: 2` gives two copies. R
 - In-game mod: `CrabChampionsAP.zip` → extract into your Crab Champions `Mods/` directory (UE4SS required)
 </content>
     <link href="https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/tag/1.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.10</id>
+    <title>Dead Cells v0.1.10</title>
+    <updated>2026-09-27T20:54:13+00:00</updated>
+    <author>
+      <name>Max_lamenace572</name>
+    </author>
+    <author>
+      <name>OnlyLeafeon</name>
+    </author>
+    <author>
+      <name>Rayze</name>
+    </author>
+    <content>Quality of Life:&#13;
+- Add a pop-up when entering a biome, displaying the number of blueprints on mobs if there are any.&#13;
+&#13;
+Bug Fixes:&#13;
+- A crash when using the biome reload feature when the difficulty bonus scroll is taken.&#13;
+- The error pop-up displaying its icon on other pop-ups.&#13;
+- Lore rooms not being correctly regenerated upon using the reload feature.</content>
+    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.6.0</id>
+    <title>The Legend of Zelda: A Link to the Past v1.6.0</title>
+    <updated>2026-09-27T21:11:47+00:00</updated>
+    <author>
+      <name>aurabot</name>
+    </author>
+    <content>## The Legend of Zelda: A Link to the Past OWR 1.6.0&#13;
+&#13;
+https://github.com/aurabot24/Archipelago-ALttPR/releases/latest&#13;
+&#13;
+### Improvements&#13;
+* Swordless mode&#13;
+* Pots can now have any number of multiworld items, and no longer prioritize your own filler items&#13;
+* Nothing/Arrows (5) items are now replaced with Rupee (1)/Arrows (10), respectively, when not found under a pot in your own world&#13;
+* Reworked custom sprites&#13;
+  * Custom sprites are now downloaded as a temp file when the player runs the patch, not during generation&#13;
+  * If a sprite is not patched correctly, rerunning the patch file will attempt to apply the sprite again&#13;
+  * Fixed a bug where sprites failed to load if the APWorld was installed in an unexpected directory&#13;
+* Added item groups Maps and Compasses&#13;
+* Added a new option to disable quickswap&#13;
+&#13;
+### Bug Fixes&#13;
+* Updated the underlying randomizer to the newest OWR version, with faster generation times and too many bug fixes to list&#13;
+* Fixed GT Tile Room/enemizer logic&#13;
+* Fixed Cape being ignored by the logic when in your starting inventory&#13;
+* Fixed filler items being incorrectly removed from the item pool when a duplicate item was placed under a pot (thanks @4laric)&#13;
+* Using Universal Tracker with door shuffle is now less unreliable&#13;
+* Fixed the slot data for trackers not setting the number of crystals required for GT/Ganon</content>
+    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0</id>
+    <title>Funi Raccoon Game v1.8.0</title>
+    <updated>2026-09-27T22:56:40+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>#  Funi Raccoon Game Archipelago v1.8.0&#13;
+*What kind of QoL update has as many lines as a content update...?*&#13;
+&#13;
+`New:`&#13;
+- Completely reworked how the mod loads itself and builds itself. This does mean there is a completely new process for setting up the mod. Please refer to the setup guide.&#13;
+- Added an in game tracker menu, built into the settings menu on the "AP" tab. This also displays some information about the Archipelago slot, and your goals.&#13;
+- Added an Archipelago logo icon to held items on the UI, to show if you have sent the check for them or not.&#13;
+- Added an option to mute the monitor sound in the audio settings.&#13;
+- Added more info to the vanilla game tracker popup about euros/cats.&#13;
+- Added object ids to the CHEESE in the trasco train.&#13;
+- Added a hat selector menu into Photoautomat in the dumpster, usable after you hit your act 2 threshold!&#13;
+- Added a 1/4 chance for the funi marketable plushie spawner in The Process to spawn a beenie the birthday boy.&#13;
+&#13;
+`Changes:`&#13;
+- Removed kei truck dumpster weight blocking as an option. This is now forcefully on, so the kei truck cannot store things that would've been too heavy for you to hold. This simplifies logic a bit.&#13;
+- Changed the function key settings to be a proper checkbox setting on the AP tab in the settings menu.&#13;
+- Changed `F1` to quick open the AP tab in the settings menu.&#13;
+- Changed the objective list to properly check off items collected by Collect&#13;
+- Changed logic for a few items that are accessible in a few other places.&#13;
+- Changed multiple maps to include multiple items that were missing in their vanilla in game tracker.&#13;
+- Changed euro items to use the in game euro popup when receiving them.&#13;
+- Changed Rackheath to not display the tutorial and intro cutscene every single time you enter it, only showing it the first time. Also adjusted the pause menu to allow for going straight to the dumpster.&#13;
+- Changed the hat store to not require you to buy obtained hats.&#13;
+- Renamed the "Checks Sent" in the level select orb and objective list to "Dumpster Items Sent" to make it clearer what the counter is.&#13;
+- Removed the requirement to be sent Orb in order to open the Orb store, as it doesn't line up with how every other shop works in the game&#13;
+- Changed the vanilla game item tracker popup to always display items sprites fully instead of showing black shades, to make it easier to use.&#13;
+- Moved the connection info text a bit higher and made it wavy to match the UI better.&#13;
+- Changed the mystical jewel items into "Progressive Mystical Jewels" to make it easier to understand.&#13;
+&#13;
+`Fixes:`&#13;
+- Fixed a minor id bug with a few brazil items and hintblo on the apworld end.&#13;
+- Fixed boingler requiring Pickaxe when it does not.&#13;
+- Fixed kei truck being removed from hand making your character show as holding nothing&#13;
+- Fixed a few kei truck bypass exploits&#13;
+- Fixed the game hard crashing after the Blimbo Village race sequence.&#13;
+- Fixed (if you can call it a fix) the vanilla game adding PURGATORY to found levels early, and Cricket having a 1% chance from a fish vore door, making it impossible to use Fish Vore to enter these levels early.&#13;
+- Fixed Kei Truck Radio sometimes being removed from the generation.&#13;
+&#13;
+[Mod Link](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)&#13;
+[Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/main/worlds/funi_raccoon/docs/setup_en.md)</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0"/>
   </entry>
 </feed>

@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/4laric/bb-archipelago/releases/download/v0.2.0.5/bloodborne.apworld">Latest Version (0.2.0.5)</a>
+- <a href="https://github.com/4laric/bb-archipelago/releases/download/v0.2.0.7/bloodborne.apworld">Latest Version (0.2.0.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
