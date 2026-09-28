@@ -1,5 +1,9 @@
 # Pokémon Crystal
 
+## Game page in other languages:
+* [Français](/games/Pokemon%20Crystal%20Prerelease/info/fr)
+* [Polski](/games/Pokemon%20Crystal%20Prerelease/info/pl)
+
 ## What does randomization do to this game?
 
 Some changes have been made to the base game for this randomizer:

@@ -225,6 +225,51 @@
       "title": "1.8.4",
       "version_simple": "1.8.4",
       "world_version": "1.8.4"
+    },
+    "1.8.5": {
+      "created_at": "2026-09-28T12:46:29Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **Regenerate your yaml.** Progressive Shop is now four separate items and\n    there is a new option below.\n-   **A seed already in progress keeps working**, but it keeps the old shop\n    behaviour: one shared Progressive Shop item and no logic on the shop rows.\n    Only a new seed gets any of this.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## The shop was not in logic at all\n\nWith Progressive Shop off, shop checks had no requirement beyond walking into\nthe town. The game only stocks a row once you have beaten a stage that sells it,\nso Archipelago was free to put a stage unlock thirty rows deep and call it\nreachable from the start.\n\nShop rows now sit behind the same progress the game asks for:\n\n-   rows 0-8 need nothing\n-   rows 9-13 need Castle\n-   rows 14-17 need Submarine Shrine\n-   rows 18-22 need Pyramid\n-   rows 23-32 need Ice Castle\n\nThose come from the game's own stock table, not from a number picked here.\n\nThe effect on a Shop Checks seed: with every Progressive Shop item and no world\nprogress, the number of shop checks Archipelago considers reachable drops from\nall 462 to 145. That is what stops a seed handing out nothing but Progressive\nShop while you wait for it to cough up a stage.\n\n## A progressive track per shop\n\nProgressive Shop was one item that opened all four shops at once. Each shop now\nhas its own:\n\n-   **Progressive Town Shop** x32\n-   **Progressive Village Shop** x15\n-   **Progressive Resort Shop** x9\n-   **Progressive Island Shop** x33\n\nTown keeps its first row stocked, because that is where you start. Village,\nResort and Island hold nothing at all until their first item arrives, and say\n**No items in stock** rather than showing an empty grid.\n\n## New option\n\n-   **Enforce Shop Logic** \u2014 a shop row Archipelago does not consider reachable\n    yet is greyed out and cannot be bought. This is the shop's half of Enforce\n    Logic. Leave it off and the shop still sells anything it has stocked; logic\n    simply does not count on you buying it.\n\n## Also fixed\n\n-   Shop hints are coloured by what the item is, the same as the message log.\n-   Book hints were coloured by comparing the whole classification against one\n    value at a time, so an item that was both progression and useful came out\n    white. Books, the shop and the message log now share one table.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.5/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "308eddb3b4195a38b1834235b96f24f67b47dfb6fce5134d62b4947c3af4c6c4",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 46340,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.5",
+      "title": "1.8.5",
+      "version_simple": "1.8.5",
+      "world_version": "1.8.5"
+    },
+    "1.8.6": {
+      "created_at": "2026-09-28T14:13:15Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **Just reload the page and reconnect.** No new seed, no new yaml, no\n    re-download. The APworld is identical to 1.8.5 apart from its version\n    number.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## Village, Resort and Island never opened\n\nWith Progressive Shop on, Village, Resort and Island said **No items in stock**\nhowever many of their Progressive items you held.\n\n1.8.5 gave each shop its own item, but when one arrived the client only\nrecorded Town's. A shop's stock is counted from what the client has recorded,\nso the other three shops stayed at zero for good.\n\nEvery shop's item is recorded now. The items you already hold were never\nwritten down, so reconnecting once picks them up as new and the shop opens to\nwhere it should be.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.6/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "33bd0d643f68cb70aa16406f03f5a3fc8050f7ae2eb97bfe3992dcda88b5f2a2",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 46340,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.6",
+      "title": "1.8.6",
+      "version_simple": "1.8.6",
+      "world_version": "1.8.6"
+    },
+    "1.8.7": {
+      "created_at": "2026-09-28T15:02:45Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **Just reload the page.** No new seed, no new yaml, no re-download. The\n    APworld is identical to 1.8.6 apart from its version number.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## Ring Link died the moment both players had been in a shop\n\nRing Link worked for a few minutes, then went silent for good. No error, no\nmessage, gold simply stopped crossing.\n\nEvery client tags its own packets with an id so the server's echo of its own\ngold can be ignored. Walking out of a shop wiped that id, because a copy of the\nconnect-time setup had ended up in the shop-exit branch. Both players then sent\npackets with no id, and every client compared an empty id against its own empty\nid and threw the other player's gold away as its own echo.\n\nIt needed both players to have visited a shop, which is why it always worked at\nfirst. This has been broken since Ring Link shipped in 1.8.0.\n\nAn id is never reused or left empty now, nothing goes out without one, and an\nempty id can no longer match anything.\n\n## Ring Link could also stop sending on a long session\n\nThe outgoing batch was the last step of the client's tick, behind four saves and\ntwo location sends. If any of those was slow the batch did not run at all, and\nsaves get slower the longer you play. It now runs on its own, and the five\nsecond window is only spent when something is actually sent.\n\n## Ring Link counters\n\n`window.ArchipelagoMod.ringLinkStats` in the browser console now reports what\nwas sent, what was received, and every reason a packet was dropped or a send\nskipped. If the link ever goes quiet again, that says why in one line instead of\nan evening of guessing.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.7/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4eef6e0f3e32f3a93f162ef1ef6995bbbb945c63dddd3ee5297a29899c9860bc",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.7",
+      "minimum_ap_version": "0.6.7",
+      "size": 46338,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.7",
+      "title": "1.8.7",
+      "version_simple": "1.8.7",
+      "world_version": "1.8.7"
     }
   }
 }
