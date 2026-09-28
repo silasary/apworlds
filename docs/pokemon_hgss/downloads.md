@@ -1,9 +1,12 @@
 # Pokemon HGSS
 
 ## Latest
-- <a href="https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.7/pokemon_hgss.apworld">Latest Version (0.0.7)</a>
+- <a href="https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.8/pokemon_hgss.apworld">Latest Version (0.0.8)</a>
 
 ## All Versions
+
+#### v0.0.8
+- <a href="https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.8/pokemon_hgss.apworld">https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.8/pokemon_hgss.apworld</a>
 
 #### v0.0.7
 - <a href="https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.7/pokemon_hgss.apworld">https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.7/pokemon_hgss.apworld</a>

@@ -1,9 +1,12 @@
 # PvZ2 Gardendless
 
 ## Latest
-- <a href="https://github.com/kurt-cole/pvz2ge-ap/releases/download/v0.3.1/pvz2gardendless.apworld">Latest Version (0.3.1.post2)</a>
+- <a href="https://github.com/kurt-cole/pvz2ge-ap/releases/download/v0.4/pvz2gardendless.apworld">Latest Version (0.4)</a>
 
 ## All Versions
+
+#### v0.4
+- <a href="https://github.com/kurt-cole/pvz2ge-ap/releases/download/v0.4/pvz2gardendless.apworld">https://github.com/kurt-cole/pvz2ge-ap/releases/download/v0.4/pvz2gardendless.apworld</a>
 
 #### v0.3.1.post2
 - <a href="https://github.com/kurt-cole/pvz2ge-ap/releases/download/v0.3.1/pvz2gardendless.apworld">https://github.com/kurt-cole/pvz2ge-ap/releases/download/v0.3.1/pvz2gardendless.apworld</a>

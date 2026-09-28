@@ -2,81 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-28T00:20:51.311811+00:00</updated>
+  <updated>2026-09-28T06:21:08.808592+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.2</id>
-    <title>Stick Ranger v1.8.2</title>
-    <updated>2026-09-23T07:05:47+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content>## Installation
-
--   Download the APworld for Stick Ranger
--   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
--   Generate a yaml or download the one in here
--   Customize the yaml and put it in the /players folder inside Archipelago
--   Generate a game
--   Connect to and play the game [here](https://kryen112.github.io/)
-
-## Heads up
-
--   **Nothing to do.** No gameplay change, no option change, no seed change. If
-    you are on 1.8.1 you are already up to date; the website has updated itself.
--   The APworld is identical to 1.8.1 apart from its version number, so there is
-    no need to re-download it or regenerate anything.
--   Requires Archipelago **0.6.7 or newer**.
-
-## Changes
-
-### Client
-
--   Removed ten leftover values the website set on connect and then never read.
-    They were the boss class and stage requirements, which the website stopped
-    using in 1.8.0 when it started evaluating the logic the seed ships. Leaving
-    them in made it look like those gates were still wired up by hand, which is
-    exactly the confusion that caused the 1.6.0 logic bugs.
--   The save is no longer fetched with an argument that was being read as a
-    "watch this key" flag, so the server stops echoing a notification back on
-    every single save.
-
-Both are housekeeping following the 1.8.1 audit. Nothing you can see changed.
-</content>
-    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.2</id>
-    <title>Dragon Quest IX v0.1.2</title>
-    <updated>2026-09-23T07:55:20+00:00</updated>
-    <author>
-      <name>kid2407</name>
-    </author>
-    <content># Dragon Quest IX - Beta Release (Version 0.1.2)&#13;
-&#13;
-**This is a beta release. Things can possibly break, though the core gameplay should run normally.**&#13;
-&#13;
-*This requires Archipelago **0.6.7 or newer!***&#13;
-*This is most likely **NOT** compatible with seeds generated on an earlier version*&#13;
-&#13;
-New to the game? Check out the [FAQ](https://discord.com/channels/731205301247803413/1427594624389742716/1491731616068800543)&#13;
-## Bugs fixed&#13;
-&#13;
-* Removed old mans bath, since it is not accessible until postgame&#13;
-* Fixed incorrect logic for Realm of the Mighty&#13;
-&#13;
-## Added or Updated Features&#13;
-&#13;
-* When reloading from a save, missing items should now be re-granted instead of being lost (experimental)&#13;
-&#13;
-## Dev Stuff&#13;
-&#13;
-* Some refactoring for items and locations, to make it easier to work with in the future</content>
-    <link href="https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.3.0</id>
     <title>Mario Kart Wii v0.3.0</title>
@@ -282,6 +212,39 @@ Additionally, there are bonus locations for rows, columns and diagonals, which a
     <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.0-prerelease2"/>
   </entry>
   <entry>
+    <id>https://github.com/Nekusen/Archipelago-MegaManZX/releases/tag/v0.2.0</id>
+    <title>mmzx v0.2.0</title>
+    <updated>2026-09-24T10:16:13+00:00</updated>
+    <author>
+      <name>Nekusen</name>
+    </author>
+    <content>### Added&#13;
+&#13;
+- Added "configurable goal requirements".&#13;
+  - Goal Requirement "Biometals": Collect a specific ammount of models from the pool&#13;
+  - Secret Disk: A macguffin style goal that requires collecting a specific ammount of secret disks from the pool.&#13;
+  - Missions: Complete a chosen number of the 14 story missions.&#13;
+- The STATUS tab of the pause menu shows the progress towards the goal requirements.&#13;
+  - A `/mmzx_goal` has been added to the client as well, that prints the goal requirements and your progress.&#13;
+- Added `progressive_models` as an option: each of the biometals H, F, L and P comes either as two halves (as before) or as one item that gives the whole model at once.&#13;
+- Added `require_full_models`: the Biometals goal requirement can ask for both halves of a progressive model or just one of them.&#13;
+- Added `skip_minibosses`: a QoL change so mini bosses can be skipped.&#13;
+  - `after_first_defeat`: you have to beat them once. But reloading the area will not respawn them.&#13;
+  - `always`: all of them count as beaten from the start, so their fights never start.&#13;
+&#13;
+### Changed&#13;
+&#13;
+- The item icons of the pickups are now part of the patched ROM instead of swapped by the client, so they show correctly even while the client is disconnected or not running.&#13;
+&#13;
+### Fixed&#13;
+&#13;
+- The trigger for "Protect HQ" was lost when another area's mission was started, and there was no way to re-trigger it. Entering Area X now resumes Protect HQ once four area missions are completed.&#13;
+- Checks collected while the client was reconnecting to the server were not sent until collecting the next check. Now they send right after reconnecting.&#13;
+- Reconnecting to the server no longer removes the Card Keys, the Life Up and Sub Tank capacity and the max HP for a moment.&#13;
+- A pickup that holds a multiworld item can no longer be sliced into small pieces with a weapon.</content>
+    <link href="https://github.com/Nekusen/Archipelago-MegaManZX/releases/tag/v0.2.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.2</id>
     <title>Pokemon Crystal Prerelease v1.31.1</title>
     <updated>2026-09-24T15:35:08+00:00</updated>
@@ -327,6 +290,45 @@ _This release is backwards compatible down to 6.0.0-rc.1, re-patch your ROM to b
 - Pretty Relocate thumbnail! @nepcore&#13;
 - You can now play Block Brawl &amp; Blub offline without Archipelago and tweak a few options.</content>
     <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/dott-v1.0.0</id>
+    <title>Day of the Tentacle v1.0.0</title>
+    <updated>2026-09-24T20:26:13+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>_A classic time-traveling point-and-click adventure where three misfits stop a mutant tentacle from conquering the world by LucasArts_&#13;
+&#13;
+**Randomizer Features**&#13;
+- 2 Goals to choose from:&#13;
+  - `Stop Purple Tentacle`: Collect enough Swiss Deposits for Bernard to order the diamond, then power the Chron-O-Johns and stop Purple Tentacle&#13;
+  - `Swiss Bank Heist`: Collect enough Swiss Deposits and the Swiss Bankbook, then have Bernard walk out of the motel's front door with the bankbook, abandoning his friends&#13;
+- Ability to include Room Visit locations (+49 locations)&#13;
+- Ability to include a subset of Voice Lines as locations (+39 locations)&#13;
+- Ability to select / randomize your Starting Character (and therefore era)&#13;
+- Custom client UI that displays important information and updates in real-time&#13;
+- No manual mod installation required! The Archipelago client hooks into the game at runtime. Nothing else to download, install, or configure.&#13;
+- Feature-complete and tested&#13;
+&#13;
+**Locations**&#13;
+- Picking Up Items&#13;
+- Solving Puzzles&#13;
+- Visiting Rooms (Optional)&#13;
+- Triggering Unique Voice Lines (Optional)&#13;
+&#13;
+**Items**&#13;
+- Inventory Items&#13;
+- Characters&#13;
+- Swiss Deposits&#13;
+&#13;
+**Setup Guide:** [Here](https://github.com/SerpentAI/Archipelago/blob/dott/worlds/day_of_the_tentacle/docs/setup_en.md)&#13;
+&#13;
+**Website for my AP implementations:** https://rando.serpent.ai&#13;
+&#13;
+&lt;img width="795" height="1260" alt="Screenshot 2026-09-23 024420" src="https://github.com/user-attachments/assets/c45d620a-89f8-4ebb-8a21-b793496b8f79" /&gt;&#13;
+</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/dott-v1.0.0"/>
   </entry>
   <entry>
     <id>https://github.com/neverhelios/Archipelago/releases/tag/v0.3.0</id>
