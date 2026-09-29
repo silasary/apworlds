@@ -60,14 +60,16 @@ leaves locations off the required path.
 
 A correct game flows sphere by sphere to completion. A leak = `/proceed` never
 becomes available because a key is unreachable in-game.
+`/keys [sphere]` lists the locations still holding that sphere's keys (the
+current sphere by default), to find the one that's stuck.
 
 > Only real, networkable progression is gated. Event-style logic (gym clears,
 > flags) stays in the under-test game and resolves through normal play.
 
 ## Limitations
 
-The Logic Test relocates the under-test game's progression out of the main fill. If a
-game places **real (networked) progression items in its own `pre_fill`** (some
-worlds lock dungeon items or boss rewards there), generation will fail loudly,
-since the Logic Test can't relocate an item that's already locked. Games that
-place only *events* in `pre_fill` (the common case) are unaffected.
+The Logic Test relocates the under-test games' items at the start of the main fill,
+after every game's pre-fill. Items a game locks in place before that (dungeon items,
+boss rewards, shuffled badges) stay in that game, arranged exactly as in the
+generation the spheres were read from. A game that places items later, inside
+the main fill itself, isn't reproduced and may make generation fail.
