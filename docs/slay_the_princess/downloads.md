@@ -1,9 +1,12 @@
 # Slay The Princess
 
 ## Latest
-- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.4/slay_the_princess.apworld">Latest Version (0.8.0r3)</a>
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.9.0b/slay_the_princess.apworld">Latest Version (0.9.0b0)</a>
 
 ## All Versions
+
+#### v0.9.0b0
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.9.0b/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.9.0b/slay_the_princess.apworld</a>
 
 #### v0.8.0r3
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.4/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.4/slay_the_princess.apworld</a>

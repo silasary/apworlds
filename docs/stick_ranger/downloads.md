@@ -1,9 +1,12 @@
 # Stick Ranger
 
 ## Latest
-- <a href="https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.10/stick_ranger.apworld">Latest Version (1.8.10)</a>
+- <a href="https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.11/stick_ranger.apworld">Latest Version (1.8.11)</a>
 
 ## All Versions
+
+#### v1.8.11
+- <a href="https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.11/stick_ranger.apworld">https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.11/stick_ranger.apworld</a>
 
 #### v1.8.10
 - <a href="https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.10/stick_ranger.apworld">https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.10/stick_ranger.apworld</a>

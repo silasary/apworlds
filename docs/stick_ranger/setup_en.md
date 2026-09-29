@@ -32,6 +32,9 @@ Put the finished yaml in Archipelago's `Players` folder before you generate.
 
 - Go to the [Stick Ranger Website](https://kryen112.github.io/).
   - This is the easiest option—no installation required. If the website is unavailable, use the next option.
+  - If Archipelago and the apworld are installed on your computer, clicking your name on the room page
+    opens the website with the host, port and slot name already filled in. Pick "Stick Ranger Client"
+    when the Launcher asks which client to open.
 
 ### Option 2: Run the Game Locally
 
