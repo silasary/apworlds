@@ -181,6 +181,21 @@
       "version_simple": "1.8.1",
       "world_version": "1.8.1"
     },
+    "1.8.10": {
+      "created_at": "2026-09-29T09:11:31Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **Just reload the page.** No new seed, no new yaml, no re-download. The\n    APworld is identical to 1.8.9 apart from its version number.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## The marked shop tile covers more\n\n1.8.9 gave the Archipelago tile with the arrow only to Progressive Shop items,\nwhich was narrower than it looked.\n\nAny check holding **progression or a trap** now wears it, whatever game the item\nbelongs to. Useful and filler items keep the plain logo, so the tile means \"this\none matters\" rather than marking most of the shelf.\n\nProgression and traps share the one tile deliberately. A disguised trap poses as\na progression item, and a tile of its own would have handed it straight back.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.10/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6b0540e0b12f2252e79072f08de3234281c628ec651095f44d33613fd6a12546",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.10",
+      "minimum_ap_version": "0.6.7",
+      "size": 48008,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.10",
+      "title": "1.8.10",
+      "version_simple": "1.8.10",
+      "world_version": "1.8.10"
+    },
     "1.8.2": {
       "created_at": "2026-09-23T07:05:47Z",
       "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **Nothing to do.** No gameplay change, no option change, no seed change. If\n    you are on 1.8.1 you are already up to date; the website has updated itself.\n-   The APworld is identical to 1.8.1 apart from its version number, so there is\n    no need to re-download it or regenerate anything.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## Changes\n\n### Client\n\n-   Removed ten leftover values the website set on connect and then never read.\n    They were the boss class and stage requirements, which the website stopped\n    using in 1.8.0 when it started evaluating the logic the seed ships. Leaving\n    them in made it look like those gates were still wired up by hand, which is\n    exactly the confusion that caused the 1.6.0 logic bugs.\n-   The save is no longer fetched with an argument that was being read as a\n    \"watch this key\" flag, so the server stops echoing a notification back on\n    every single save.\n\nBoth are housekeeping following the 1.8.1 audit. Nothing you can see changed.\n",
@@ -285,6 +300,21 @@
       "title": "1.8.8",
       "version_simple": "1.8.8",
       "world_version": "1.8.8"
+    },
+    "1.8.9": {
+      "created_at": "2026-09-29T08:50:31Z",
+      "description": "## Installation\n\n-   Download the APworld for Stick Ranger\n-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago\n-   Generate a yaml or download the one in here\n-   Customize the yaml and put it in the /players folder inside Archipelago\n-   Generate a game\n-   Connect to and play the game [here](https://kryen112.github.io/)\n\n## Heads up\n\n-   **Regenerate your yaml** for the two new options below.\n-   **A game already in progress keeps working** and does not need a new seed.\n    Everything here except the two options is on the website, so reload and\n    carry on.\n-   Shop checks are named for their town now, so a new seed reads\n    \"Island Shop: Guide Card 1\" rather than \"Shop: Guide Card 1\". A seed already\n    running keeps the names it was made with.\n-   Requires Archipelago **0.6.7 or newer**.\n\n## Your game was not being saved\n\nSaving only happened when something crossed the network: a check sent, an item\nreceived, a shop scouted. Play a run of stages with none of those and nothing\nwas ever written, so a refresh threw away every level, item and coin earned\nsince the last one.\n\nLeaving a stage, or moving to a different one, now saves as well.\n\n## New options\n\n-   **Trap Disguise** \u2014 a trap waiting in a shop or a book wears the name of\n    some other item in the room, misspelled: \"Unlock Laek\", \"Progressive Eisland\n    Shoppe\", \"Mothwing Cloack\". It reads as a real item at a glance and gives\n    itself away only if you look properly. Only you are fooled; anyone else\n    scouting that location still sees the trap for what it is.\n-   **Removable Compos** \u2014 a compo already fitted to a weapon can be taken back\n    out by clicking its slot with an empty hand. In the base game a compo is in\n    for good once fitted, so a good one sunk into a starter weapon is gone. The\n    cross blocking a store-bought slot stays where it is.\n\n## The shop\n\n-   A shop check holding a Stick Ranger item now shows that item rather than the\n    Archipelago logo, so a shelf reads at a glance. It works for any Stick\n    Ranger player's item, not only your own.\n-   A check holding a Progressive Shop item wears its own Archipelago tile with\n    an arrow, so you can pick those out without reading.\n-   A row that opens while you are standing in the shop is scouted straight\n    away. It used to show a logo with nothing behind it until you walked out and\n    back in.\n-   Shop checks are named for their town: \"Island Shop: Guide Card 1\".\n\n## Also\n\n-   Every ring an Angel throws floats its payout over the angel's head, the same\n    yellow number a gold pickup gives you. Nothing floats up once you are at the\n    gold cap, because nothing is landing.\n",
+      "download_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/download/1.8.9/stick_ranger.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b51d9c3ee7a4b1974b59e26239eb539b1c803aa79c76e43f122e4abe0cacdb30",
+      "html_url": "https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.9",
+      "minimum_ap_version": "0.6.7",
+      "size": 48007,
+      "source_url": "https://api.github.com/repos/Kryen112/AP_Stick_Ranger",
+      "tag": "1.8.9",
+      "title": "1.8.9",
+      "version_simple": "1.8.9",
+      "world_version": "1.8.9"
     }
   }
 }
