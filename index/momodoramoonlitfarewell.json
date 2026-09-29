@@ -175,7 +175,7 @@
     },
     "AP-v1.7.5.1": {
       "created_at": "2025-08-22T13:22:18Z",
-      "description": "# Fixes\r\n- Added logic to make Lumen Fairies classified as progression when the Oracle Sigil setting is on\r\n\r\n# Install Notes\r\n## Updating\r\nThis is an update to the **apworld** file, so if you already have the mod installed, you don't need to download the **APMomodoraMoonlitFarewell.dll** file, only the apworld if you're the host, or whoever is hosting the room\r\n\r\n## First TIme Installing\r\nYou can follow the instructions in the [README](https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/blob/Archipelago-Randomizer/README.md) for detailed instructions. However, if you already have MelonLoader installed in the game:\r\n\r\n- Download **APMomodoraMoonlitFarewell.dll** and **extra-files.zip**, and place the dll and the extracted files from the zip in the game's Mods folder.",
+      "description": "I ACCIDENTALLY OVERWROTE THE FILES IN HERE THESE ARE NOW 1.8.0 FILES PLEASE I'TS BEEN TOO LONG SINCE I MADE A RELEASE I'M DUMB BUT THE APWORLD SHOULD BE BACK AT LEAST",
       "download_url": "https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/download/AP-v1.7.5.1/momodoramoonlitfarewell.apworld",
       "has_manifest": false,
       "hash_sha256": "3ffaf7ba0770254804ffbc2cddbe63eda73f8fe7eba3d21622a8a1c895030599",
@@ -186,6 +186,20 @@
       "title": "Archipelago Randomizer v1.7.5.1",
       "version_simple": "1.7.5.1",
       "world_version": "1.7.5.1"
+    },
+    "AP-v1.8.0": {
+      "created_at": "2026-09-29T02:14:28Z",
+      "description": "# What's New?\r\n- Joined all three separate berry settings into a single **Berrysanity** setting\r\n- Added Black Berries to the **Berrysanity** setting\r\n- Added a new **Companionsanity** setting for Companions, except for Dora and Lineth\r\n- Added a new **Lunar Crystal Branch Shuffle** setting to add Lunar Crystal Branches (those things that give you money when destroyed) as item location checks\r\n- Added custom in-game notifications when sending or receiving items\r\n\r\n# What Changed?\r\n## YAML Stuff\r\n- Upadted naming convention for Progressive Damage Upgrade (**Lilysanity**), Progressive Lumen Fairies (**Fairysanity**), Progressive Final Boss Key (**Selin Door Keysanity**) (I like the Sanity naming convention)\r\n\r\n## World Stuff\r\n- **Open Springleaf Path** setting now only affects areas that connect Springleaf Path within itself or with other areas, and no longer removes Demon Strings in the entire world. This means that items that previously had their Demon Strings removed with this setting on, even if they were in Springleaf Path, will now have their Demon Strings at all times, requiring the need for the Awakened Sacred Leaf to get them. The only affected item in Springleaf Path is the Lun Berry, which you can still get in other ways\r\n- Updated rules in world generation to try to match mostly vanilla stuff (or **Bell Hover Generation** if enabled) needed to access certain areas/items\r\n\r\n## Game Stuff\r\n- Changed the amount of Lunar Crystals you receive on filler, from 100 to 10. This was so money generating companions or The Profiteer Sigil can be more important\r\n- Removed the green bubbles in Lun Tree Roots that appear after clearing Fairy Springs. I did this in order to have Lun Tree Roots more open in case you don't have some skills that could be needed to traverse Lun Tree Roots in that state\r\n- Connection attempts now happen when entering a save file. At least now if you forget to modify your config.json file you don't need to close and reopen the game, you can quit to menu and open your save file. Note that this still doesn't work properly in case of disconnect, you still need to close and reopen the game (networking stuff is hard I'm sorry)\r\n- Fixed connection stuff (I hope it remains this way), now the game won't freeze when sending an item, and it overall runs better than before\r\n\r\n# Install Notes\r\n## Updating\r\nThis is an update to the entire project, including an update for the NuGet package for Archipelago. \r\n- Download **APMomodoraMoonlitFarewell.zip** and place the extracted files from the zip in the game's **Mods** folder, replacing old files if asked\r\n- Download **momodoramoonlitfarewell.apworld** and place it in the custom_worlds folder of your Archipelago install, replacing the old world if asked\r\n- Download **MomodoraMoonlitFarewell.yaml** and modify it as necessary.\r\n\r\n## First TIme Installing\r\nYou can follow the instructions in the [README](https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/blob/Archipelago-Randomizer/README.md) for detailed instructions. However, if you already have MelonLoader installed in the game:\r\n\r\n- Download **APMomodoraMoonlitFarewell.zip** and place the extracted files from the zip in the game's Mods folder.",
+      "download_url": "https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/download/AP-v1.8.0/momodoramoonlitfarewell.apworld",
+      "has_manifest": false,
+      "hash_sha256": "dd2ed383e096ed846cf3b465bd1155cd1c4d980c07ce2b041f404b7a578b8c55",
+      "html_url": "https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/tag/AP-v1.8.0",
+      "size": 11726,
+      "source_url": "https://api.github.com/repos/alditoOt/Momodora-Moonlit-Farewell-Randomizer",
+      "tag": "AP-v1.8.0",
+      "title": "Archipelago Randomizer v1.8.0",
+      "version_simple": "1.8.0",
+      "world_version": "1.8.0"
     }
   }
 }

@@ -293,6 +293,21 @@
       "title": "Zork Grand Inquisitor - 2.2.0",
       "version_simple": "2.2.0",
       "world_version": "2.2.0"
+    },
+    "zgi-v2.2.0r2": {
+      "created_at": "2026-06-20T02:50:48Z",
+      "description": "This is an improvement release.\r\n\r\n**This release IS compatible with games generated on the previous version**\r\n\r\n- **Improvement:** Switched supported ScummVM version from 2.7.1 (March 2023) to 2026.2.0 (March 2026)\r\n  - This up-to-date ScummVM version feature numerous improvements for ZVision (the Zork Grand Inquisitor game engine):\r\n    - Completely overhauled rendering + proper widescreen support\r\n    - Improvements to quality of 3D directional audio & nonlinear volume scaling\r\n    - Restored functionality of some in-game options controls\r\n    - Game script fixes\r\n    \r\n**IMPORTANT**\r\n\r\nA vanilla game script refers to a non-existent file regardless of the game version you own. That file will need to be created to avoid ScummVM crashing when operating the totemizer. Locate `me00h64p.raw` (for GOG, it's in `zassetse\\eng_aud`; for Steam, it's in `ZASSETS2\\MONAST2`). Make a copy and rename it to `me00h62p.raw`. The file has always been missing, but later ScummVM versions started crashing instead of ignoring the exception",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.2.0/zork_grand_inquisitor.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d68210bd15b431f88fd9290542e77bcb4a86625ac91aa8969cbdb42a458699a2",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v2.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 1144443,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "zgi-v2.2.0r2",
+      "title": "Zork Grand Inquisitor - 2.2.0",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0.post2"
     }
   }
 }

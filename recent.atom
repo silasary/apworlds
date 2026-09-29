@@ -2,210 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-29T00:24:24.179546+00:00</updated>
+  <updated>2026-09-29T06:20:29.551190+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.8</id>
-    <title>PokePark v1.2.8</title>
-    <updated>2026-09-24T22:24:03+00:00</updated>
-    <author>
-      <name>Joe Mama (Mekurushi)</name>
-    </author>
-    <content>- fixed determinism breaking logic&#13;
-&#13;
-**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.7...1.2.8</content>
-    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.9</id>
-    <title>Dead Cells v0.1.9</title>
-    <updated>2026-09-24T22:57:15+00:00</updated>
-    <author>
-      <name>Max_lamenace572</name>
-    </author>
-    <author>
-      <name>OnlyLeafeon</name>
-    </author>
-    <author>
-      <name>Rayze</name>
-    </author>
-    <content>New Features:&#13;
-- Improved the biome warp system by adding a biome reload&#13;
-  - Reloading a biome will warp you to the start of your biome and generate a new one, allowing for easier farming of mobs or lore rooms in the targeted biome&#13;
-  - For balance purposes, scrolls of power obtained won't appear again upon reload&#13;
-- Upon restart, your current cells are now automatically sent to the bank&#13;
-&#13;
-Quality of Life:&#13;
-- Added a search bar to find items in the tracker&#13;
-  - As this was added mostly for searching for an item name after receiving a hint, the search is based on the apworld name, no matter what language you are using&#13;
-- Removed redundant requirement rules left on the biome tracker, as icons are removed dynamically&#13;
-- Added possible biomes for an item in the item's description&#13;
-- The check counter now turns gray when there are no checks to do for that biome/BSC difficulty&#13;
-- Added descriptions for items that can be found in the bank, along with the possible depth&#13;
-&#13;
-Bug Fixes:&#13;
-- Distillery icon in the tracker never showing as accessible&#13;
-- Some obscure exploits that could be done with some exit doors&#13;
-- Energy link not being updated in real time&#13;
-- Description for Guillian's head not showing&#13;
-- Crash for some versions of DCCM upon receiving the boss rush statue&#13;
-&#13;
-Other:&#13;
-- The mod is now also available in the Steam Workshop&#13;
-- Changed the save data path, using the new norm for DCCM&#13;
-- Improved the sync system (useful if your friend inadvertently deletes the server save TWICE...)&#13;
-- Updated the ninja outfit, which is now a 2 BSC blueprint (since the last Dead Cells hotfix)&#13;
-&#13;
-Rayze's Changes:&#13;
-- Aspects now have a dedicated setting: "false" means your first 13 deaths are no longer AP locations and you will start with all of them in start inventory&#13;
-- Magma Blob and Familiar Outfit rule fixed to require any lava&#13;
-- Luchador Outfit now mapped specifically to Forgotten Sepulcher&#13;
-- No more preemptive item culling, AP handles overfill now and will notify when applicable (shouldnt be anymore though)&#13;
-- Giant Comb and Sewing Scissors locations no longer generate with Outfits disabled&#13;
-- Biter Head now properly looks for the Swarm grenade&#13;
-- Fixed most items with new Progression tags failing accessibility checks</content>
-    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.3</id>
-    <title>Cyberpunk 2077 v0.7.0r3</title>
-    <updated>2026-09-25T00:15:42+00:00</updated>
-    <author>
-      <name>247Tossing</name>
-    </author>
-    <content>Addressed fill errors in edge cases.</content>
-    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.5</id>
-    <title>Laika: Aged Through Blood v0.1.5</title>
-    <updated>2026-09-25T00:17:24+00:00</updated>
-    <author>
-      <name>Seras</name>
-    </author>
-    <content># V-0.1.5 IS OFFICIALLY RELEASED!&#13;
-Hope everyone is ready for a **MASSIVE** update coming your way! &#13;
-&#13;
-The Wasteland has improved a lot since v-0.1.4, and I have a lot of new and exciting fixes for you guys to try out. So take a seat and share this excitement with me as I give you all the juicy things I have been working on in the background!&#13;
-&#13;
-&lt;img width="187" height="453" alt="Explorer_idle_1" src="https://github.com/user-attachments/assets/9223892d-0b71-4c1b-9c70-e11741a203ca" /&gt;&#13;
-&#13;
-&#13;
-# Fixes&#13;
-### Plenty of bug fixes, including newer... and longstanding bugs! Let's do some (late) spring-cleaning!&#13;
-&#13;
-* **Hectist and The Bonehead’s Hook:** Receiving the grappling hook early no longer lets you interact with her stale exterior dialogue. Added recovery for quest progression when you destroy the debris before completing the expected bomb step.&#13;
-* **Hook Head:** Completing The Bonehead’s Hook now recovers the location if early Hook access made its pickup unavailable.&#13;
-* **Harpoon parts:** Turning in AP-provided items `Key Item: Carved Whale Tooth` and `Key Item: Long Rope` now sends their locations, preventing those checks from being lost when vanilla removes the pickups.&#13;
-* **Magical Book:** Receiving the book early no longer leaves its shop location unchecked. The check sends after completing its book dialogue, with recovery for saves where that dialogue already happened.&#13;
-* **Shop cleanup:** Added location recovery for consumed AP key items before removing remaining shop stock.&#13;
-* **Gargantuan Swimcrab:** Corrected its logic to follow the antenna-route requirements instead of requiring Radio Silence completion. Updated the tracker explanation to match.&#13;
-* **Logic Tweaks:** The Wastelanders and `Boss Defeated: A Gargantuan Swimcrab` have had their logic tightened to ensure more runs are possible. More logic tweaks are necessary, but these are the two biggest that have been fixed.&#13;
-&#13;
-# Downtime Adjustment&#13;
-### Good news (and some) bad news.&#13;
-&#13;
-* Laika no longer begins the run with her pistol. This is due to a potential contribution to how enemies spawn later on the level *Where Birds Lurk* level. Players can receive AP weapons early, but Laika will be required to grab her pistol from Jakob&#13;
-  * If a player receives a weapon early enough to avoid the need of acquiring the pistol, the game will distribute the pistol alongside that weapon to ensure Laika still receives the pistol.&#13;
-* The long road sequence after speaking to Orella following the Pope fight is now completely skipped, using the game’s normal return transition. Less time for you to wait for dialogue to pass!&#13;
-* Roy’s lengthy outbound boat ride and dialogue sequence during Radio Silence is now also COMPLETELY SKIPPED! Yes, this includes first meeting him, all the way through getting caught at the last gate. Hopefully this makes up for losing the pistol at the start &lt;3.&#13;
-&#13;
-# Client and UI&#13;
-### Our older versions had broken or outright messy UI, leading to confusion or messy user display. That, however, has since been fixed!&#13;
-&#13;
-* Fixed incorrect PrintJSON colors for items from other games.&#13;
-* Standardized Laika’s item colors and improved support for Archipelago events, including chat and players joining or leaving.&#13;
-* Updated the “Archipelago Edition” menu text and added a version display in the bottom-left corner.&#13;
-* Updated the advertised Archipelago client version to 0.6.7 and aligned build/deployment dependencies.&#13;
-&#13;
-# Diagnostics&#13;
-### Mostly backend stuff for me to fix future problems easier. This should provide little impact to gameplay and narrow down issues to squash them sooner.&#13;
-&#13;
-* Added automatic boat and grapple diagnostics without additional hotkeys.&#13;
-* Diagnostic output now uses one `LaikaBoatTrace.log` instead of creating timestamped files. Save reloads preserve the current run’s evidence, and recording has a cap to verify any potential issues/improvements that can be made from our new boat transition scene.&#13;
-&#13;
-# Known issues&#13;
-### Only one minor bug. However, how long will that last for?&#13;
-&#13;
-*  **[Minor]:** Discovered a strange interaction where the player may temporarily lose the `Bike Upgrade: Grappling Hook` during Hectist's bomb sequence. Reloading your save grants the grappling hook back. Attempting to reciprocate this in testing yielded little results (If this happens, please include `LogOutput.log` and `LaikaBoatTrace.log` from the BepInEx folder in your report. Copy them before restarting the game).&#13;
-&#13;
-# Updating&#13;
-### As always, please read below before immediately attempting to update/replacing files!&#13;
-&#13;
-The AP World and LaikaMod both require updates, as logic has been tweaked and *plenty* of modifications have been done to LaikaMod specifically. As always, you are advised to start new runs when updating due to the sheer amount of tweaks and updates done compared to the previous version. The other files included are not required to update, but are present regardless to provide a seamless onboarding experience for those interested.&#13;
-&#13;
-# Closing Thoughts/Notes&#13;
-That's all for now! You have no idea how happy I am to finally bring this update after all this time. These fixes and tweaks have made me feel confidant to change the `Alpha` tag... to `Beta`! This is a massive deal, and here is to hoping to eventually removing `Beta` and changing `Unstable` to `Stable` very soon!&#13;
-&#13;
-Yes, you read that right...&#13;
-&#13;
-We're out of Alpha, and officially in Beta! I think now is a better time than ever, especially now that our little AP is shaping up to be a proper and more stable AP.&#13;
-&#13;
-I'm excited for what comes next, and hope all of y'all are as well.&#13;
-&#13;
-Stay safe out in the Wasteland, and make sure to make those birds pay!&#13;
-&#13;
-&lt;img width="1229" height="690" alt="Laika-Aged-Through-Blood-trailer" src="https://github.com/user-attachments/assets/81a4c511-5f19-4690-a616-cbab3fb9b2c4" /&gt;&#13;
-&#13;
-**Full Changelog**: https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/compare/v-0.1.4...v-0.1.5</content>
-    <link href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.2.1-TEST</id>
-    <title>Kirby Air Ride v1.2.1</title>
-    <updated>2026-09-25T00:25:40+00:00</updated>
-    <author>
-      <name>DeDeDK</name>
-    </author>
-    <content>Changes:&#13;
-- reworked per-mode progression category options (replaces the old progression toggles)&#13;
-- added option to exclude or fully remove non-progression checkbox locations&#13;
-- added setting for AP box spawn rate&#13;
-- added Archipelago checklist location groups&#13;
-- added "get 10 Offense Patches" check&#13;
-- removed "Go out of bounds" check (too hard to monitor)&#13;
-- added AP mod version on the title screen&#13;
-- tweak AP sphere tracker icons&#13;
-- gated the garage machines in Free Run&#13;
-- drop ability, air quick spin and on-foot zoom settings now default to enabled&#13;
-- split trap categories&#13;
-- renamed patch items to "X Up Patch"&#13;
-- permanent patches can now appear in Air Ride-only seeds&#13;
-- tweaked permanent patch item counting&#13;
-- reworked some item classifications&#13;
-- code cleanup, test and fuzz improvements&#13;
-&#13;
-Fixes:&#13;
-- fixed Top Ride machines not being unlocked when Top Ride is disabled&#13;
-- fixed sphere piece tracker not removing dropped spheres&#13;
-- fixed once-only events not being checked&#13;
-- fixed Top Ride item spawn crash&#13;
-- fixed Hydra part reward display on AP checklist&#13;
-- fixed sis text issue with debug menu&#13;
-- fixed small issue with EnergyLink counter&#13;
-- fixed check backfill race condition&#13;
-- logic fixes:&#13;
-  - legendary pieces/spheres need Red box&#13;
-  - fix tac items check logic&#13;
-  - City Trial Free Run and machine swaps&#13;
-  - mileage checks need a machine&#13;
-  - highest point needs a flight machine&#13;
-  - Destruction Derby 5 damage sources&#13;
-  - Air Glider needs a good glider or Glide patch&#13;
-  - KM1 100 KOs needs abilities + Inhale&#13;
-  - Drag Race photo finish opens from any Drag Race&#13;
-  - high effort / RNG category adjustments&#13;
-&#13;
-## What's Changed&#13;
-* v1.2.1-TEST PR by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/57&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v1.2.0-TEST...v1.2.1-TEST</content>
-    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.2.1-TEST"/>
-  </entry>
   <entry>
     <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.3.6</id>
     <title>Mega Man Zero 3 v0.3.6</title>
@@ -1746,5 +1547,122 @@ shop.
     shop items, and hinting all of them buries every other player's hints.
 </content>
     <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Matt41321/Archipelago/releases/tag/v0.8.2</id>
+    <title>Bloons TD6 v0.8.2</title>
+    <updated>2026-09-29T01:33:51+00:00</updated>
+    <author>
+      <name>Matt41321</name>
+    </author>
+    <content>## Added&#13;
+- New option for knowledge behaviour&#13;
+- Fixed Ascent and Skull Peak not being options in blacklist/whitelist</content>
+    <link href="https://github.com/Matt41321/Archipelago/releases/tag/v0.8.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/silasary/Archipelago/releases/tag/factorio_saws-0.9.5</id>
+    <title>Factorio - Space Age Without Space v0.9.5</title>
+    <updated>2026-09-29T01:52:08+00:00</updated>
+    <author>
+      <name>Silasary</name>
+    </author>
+    <content>## 0.9.5
+* Fixed leak in mod title when multiple SAWS slots were in a multiworld
+
+## 0.9.4
+* Added the Quality Trap.  This lovely trap will hide a Quality Module 3 in a random machine.  Everyone loves free gifts, right?
+
+## 0.9.3
+* Fixed a cross-slot bleed involving custom recipes that use fluoroketone.
+* Added a better error message for impossible yaml combinations.
+
+## 0.9.2
+* Made Energy Bridge recipe actually random
+* Made fish immune to lightning strikes.
+* Adjusted recipe costs to be more accurate, which should lead to more interesting seeds.
+* Fixed CLI not working.
+* Updated the way the mod handles text localisation.
+
+## 0.9.1
+* Science Packs are now given randomised names.
+* Changed the 'Vanilla' yellow science pack to be crafted in a centrifuge, then added it to the machine shuffle.
+* Fixed a bug with Universal Tracker compatibility.
+* Made fruit trees immune to lightning strikes.</content>
+    <link href="https://github.com/silasary/Archipelago/releases/tag/factorio_saws-0.9.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.3</id>
+    <title>The Grinch v1.6.3</title>
+    <updated>2026-09-29T02:03:03+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>## Changes&#13;
+- A couple new advanced logic tricks have come to light, fresh discoveries now make your routes just right!&#13;
+&#13;
+## Bugfixes&#13;
+- A catastrophic bug made `exclude_environments` miss its cue. it excluded absolutely nothing, now we know what to do!&#13;
+- Debug logs during generation now quietly disappear, less noisy output means a cleaner path is clear!&#13;
+- Mission items no longer start inventoried when both toggles are off, a recent mission-check change had them starting aloft!</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/tag/AP-v1.8.0</id>
+    <title>Momodora Moonlit Farewell v1.8.0</title>
+    <updated>2026-09-29T02:14:28+00:00</updated>
+    <author>
+      <name>alditoOt</name>
+    </author>
+    <content># What's New?&#13;
+- Joined all three separate berry settings into a single **Berrysanity** setting&#13;
+- Added Black Berries to the **Berrysanity** setting&#13;
+- Added a new **Companionsanity** setting for Companions, except for Dora and Lineth&#13;
+- Added a new **Lunar Crystal Branch Shuffle** setting to add Lunar Crystal Branches (those things that give you money when destroyed) as item location checks&#13;
+- Added custom in-game notifications when sending or receiving items&#13;
+&#13;
+# What Changed?&#13;
+## YAML Stuff&#13;
+- Upadted naming convention for Progressive Damage Upgrade (**Lilysanity**), Progressive Lumen Fairies (**Fairysanity**), Progressive Final Boss Key (**Selin Door Keysanity**) (I like the Sanity naming convention)&#13;
+&#13;
+## World Stuff&#13;
+- **Open Springleaf Path** setting now only affects areas that connect Springleaf Path within itself or with other areas, and no longer removes Demon Strings in the entire world. This means that items that previously had their Demon Strings removed with this setting on, even if they were in Springleaf Path, will now have their Demon Strings at all times, requiring the need for the Awakened Sacred Leaf to get them. The only affected item in Springleaf Path is the Lun Berry, which you can still get in other ways&#13;
+- Updated rules in world generation to try to match mostly vanilla stuff (or **Bell Hover Generation** if enabled) needed to access certain areas/items&#13;
+&#13;
+## Game Stuff&#13;
+- Changed the amount of Lunar Crystals you receive on filler, from 100 to 10. This was so money generating companions or The Profiteer Sigil can be more important&#13;
+- Removed the green bubbles in Lun Tree Roots that appear after clearing Fairy Springs. I did this in order to have Lun Tree Roots more open in case you don't have some skills that could be needed to traverse Lun Tree Roots in that state&#13;
+- Connection attempts now happen when entering a save file. At least now if you forget to modify your config.json file you don't need to close and reopen the game, you can quit to menu and open your save file. Note that this still doesn't work properly in case of disconnect, you still need to close and reopen the game (networking stuff is hard I'm sorry)&#13;
+- Fixed connection stuff (I hope it remains this way), now the game won't freeze when sending an item, and it overall runs better than before&#13;
+&#13;
+# Install Notes&#13;
+## Updating&#13;
+This is an update to the entire project, including an update for the NuGet package for Archipelago. &#13;
+- Download **APMomodoraMoonlitFarewell.zip** and place the extracted files from the zip in the game's **Mods** folder, replacing old files if asked&#13;
+- Download **momodoramoonlitfarewell.apworld** and place it in the custom_worlds folder of your Archipelago install, replacing the old world if asked&#13;
+- Download **MomodoraMoonlitFarewell.yaml** and modify it as necessary.&#13;
+&#13;
+## First TIme Installing&#13;
+You can follow the instructions in the [README](https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/blob/Archipelago-Randomizer/README.md) for detailed instructions. However, if you already have MelonLoader installed in the game:&#13;
+&#13;
+- Download **APMomodoraMoonlitFarewell.zip** and place the extracted files from the zip in the game's Mods folder.</content>
+    <link href="https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/tag/AP-v1.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.6</id>
+    <title>Wynncraft v0.4.6</title>
+    <updated>2026-09-29T04:54:22+00:00</updated>
+    <author>
+      <name>EpicPuppy613</name>
+    </author>
+    <content>**Compatible with Wynnpelago v0.4.8+**&#13;
+&#13;
+- Rework how levels and gear levels work internally&#13;
+  - Should significantly improve generation performance and consistency&#13;
+- Rework restricted areas internally</content>
+    <link href="https://github.com/EpicPuppy613/Wynncraft-APWorld/releases/tag/v0.4.6"/>
   </entry>
 </feed>

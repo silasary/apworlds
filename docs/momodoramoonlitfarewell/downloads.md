@@ -1,9 +1,12 @@
 # Momodora Moonlit Farewell
 
 ## Latest
-- <a href="https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/download/AP-v1.7.5.1/momodoramoonlitfarewell.apworld">Latest Version (1.7.5.1)</a>
+- <a href="https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/download/AP-v1.8.0/momodoramoonlitfarewell.apworld">Latest Version (1.8.0)</a>
 
 ## All Versions
+
+#### v1.8.0
+- <a href="https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/download/AP-v1.8.0/momodoramoonlitfarewell.apworld">https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/download/AP-v1.8.0/momodoramoonlitfarewell.apworld</a>
 
 #### v1.7.5.1
 - <a href="https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/download/AP-v1.7.5.1/momodoramoonlitfarewell.apworld">https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/download/AP-v1.7.5.1/momodoramoonlitfarewell.apworld</a>
