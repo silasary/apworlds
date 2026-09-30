@@ -2,207 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-30T12:17:21.403283+00:00</updated>
+  <updated>2026-09-30T18:23:54.078570+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.4.27</id>
-    <title>Ratchet &amp; Clank: Size Matters v0.4.27</title>
-    <updated>2026-09-26T13:59:11+00:00</updated>
-    <author>
-      <name>Pangu</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <author>
-      <name>ImJustATester</name>
-    </author>
-    <content>## Installation &amp; Setup
-
-- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.
-- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.
-- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.
-- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.
-- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)
-- Click **Generate** to create a multiworld `.zip` in the `output` folder.
-- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.
-- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).
-- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.
-- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2
-
-
-
-## Changelog
-
-- fix(SM): rules and removal of shrink ray softlock prevention on Outpost Omega 1 (a1b0bc0e)
-
-Full comparison:
-https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.4.26...rac_size_matters-v0.4.27</content>
-    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.4.27"/>
-  </entry>
-  <entry>
-    <id>https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.6</id>
-    <title>Factorio: Space Age v3.0.6</title>
-    <updated>2026-09-26T15:06:23+00:00</updated>
-    <author>
-      <name>Berserker</name>
-    </author>
-    <author>
-      <name>Josh Wolfe</name>
-    </author>
-    <content># Factorio: Space Age apworld 3.0.6&#13;
-&#13;
-* Fix `goal: aquilo_orbit` causing Factorio crashes with missing `railgun_location` prerequisite. Thanks HandleWithKERR and d_a_v_e_2000 for the bug reports.&#13;
-&#13;
-download: https://github.com/thejoshwolfe/Archipelago/releases .&#13;
-general docs: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/en_Factorio_Space_Age.md .&#13;
-setup guide: https://github.com/thejoshwolfe/Archipelago/blob/space-age/worlds/factorio_space_age/docs/setup_en.md .&#13;
-source code: https://github.com/thejoshwolfe/Archipelago/tree/space-age/worlds/factorio_space_age .</content>
-    <link href="https://github.com/thejoshwolfe/Archipelago/releases/tag/space-age-v3.0.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.7</id>
-    <title>Hollow Knight: Silksong v0.4.7</title>
-    <updated>2026-09-26T17:03:54+00:00</updated>
-    <author>
-      <name>BatAtVideoGames</name>
-    </author>
-    <content>Another week another big update. Can you believe it, only 33 of the 862 locations are not fully mapped? The progress is insane and I want to express my gratitude to all who've been with this project whether it's just playing, reporting bugs or otherwise giving input on the matter. And ultra big shoutout to the mappers (who are all credited in the README), they've been doing an insane part in all this. I can safely say that logic will be extremely solid by the time 0.5.0 rolls out but also that I got something huge planned for it. (Also as usual if you like what I do and wanna [buy me a coffee](https://streamlabs.com/batatvideogames/tip) I'd appreciate it 👍)&#13;
-&#13;
-# Changelog&#13;
-&#13;
-### General updates: &#13;
-&#13;
-- **Updated traversal, combat and wish logic in 244 existing rooms across 29 areas**&#13;
-- Added combat requirements to 77 mapped bosses/gauntlets&#13;
-- Shops and wishes now display matching Silksong item icons&#13;
-- Pressing A on needle in inventory allows to toggle between the upgrades unlocked so far&#13;
-- Made courier deliveries unbreakable but they instead need to logically satisfy being able to pick up the quest and getting to their delivery spot&#13;
-- Universal Tracker now supports newly generated seeds without a player YAML, automatically loading their settings and entrance layout&#13;
-- Reduced connection data size (by a lot)&#13;
-- Kept Skarr’s unchecked randomized shop items available after his story death&#13;
-&#13;
-### Option updates&#13;
-&#13;
-- Removed the bs "skips" option and instead separated it into proper categories (red tool stall, crest pogo skips, needle strike logic, heal stall logic, hazard respawn logic). The attached YAML and the built in AP Options Creator describe what these entail&#13;
-- Changed Proficient Combat from true (bypass combat reqs) and false (keep combat reqs) to off, goated (lower combat reqs by 1 tier) and hell (bypass combat reqs)&#13;
-- Silk and Soul Points now caps at 23. Higher numbers automatically clamp to 23&#13;
-- Added optional trap disguises with mirrored shop/wish icons and subtly misspelled shop/crest names&#13;
-- Added independent Quill and Compass randomization settings. Kept Automatic Compass and Start Fully Mapped as separate conveniences&#13;
-&#13;
-### Fixes: &#13;
-&#13;
-- Fixed the randomized Egg of Flealia not being recognized when unlocking Flea Games and Ecstasy of the End&#13;
-- Fixed Peak_04d, Shellwood_13, Shellwood_25 and Crawl_09 screen being black when entering from "wrong" side when breakable walls are still present&#13;
-- Fixed Flick becoming non-interactable at Bone Bottoms wish wall, blocking courier turn-ins&#13;
-- Fixed Memorium - Shard Bundle incorrectly appearing in Act 1 goals&#13;
-- Threefold Pin now randomizes in Act 1 goals when tool randomization is enabled&#13;
-- Final Audience wish name correction (accidentally named it Last Audience)&#13;
-- Fixed the long pause when completing free randomized donations&#13;
-- Eva became inactive when Sylphsong gets sent (via other game release). Fixed that and also chapel doors remain open now&#13;
-- Fixed incorrect access to lower Whispering Vaults through the rotating-tunnel route&#13;
-- Fixed a Skill Shuffle starting layout that could prevent generation&#13;
-- General game generation updates (genuinely)&#13;
-- Corrected The Slab Memory Locket’s map marker position&#13;
-- Renamed "Progressive Compass" back to Quill&#13;
-- Fixed swapped entrance connections in the Sacred Cylinder room&#13;
-- Fixed Universal Tracker disconnecting when Silk &amp; Soul points are set to random&#13;
-- Fixed swapped access logic for Memorium - Map Purchase and Memorium - Shard Bundle&#13;
-- Moved Putrified Ducts Shell Shard Cache 6 out of the ceiling to floor level&#13;
-- Grouped Blasted Steps Shell Shard Caches 4–5 with the Beast Shard marker&#13;
-- Fixed Sacred Cylinder moving randomized melody markers back to their vanilla position&#13;
-- Improved AP check visibility over other map pins&#13;
-- Fixed the Deep Docks lower climb’s movement requirements&#13;
-- Fixed shop stock getting stuck displaying generic “AP Item” text until reconnecting&#13;
-- Prevented Chapel Maid from appearing during an unfinished Moss Mother fight (lmao)&#13;
-- Fixed off-screen objective bubbles following vanilla locations instead of randomized bells and melodies&#13;
-- Corrected access logic for the Whispering Vaults map and Pale Oil, Whiteward Spool Fragment and Cogwork Core map&#13;
-- Fixed early Rune Rage receipt preventing First Sinner activation&#13;
-- Fixed Hunter's March big shaft room only needing ledgegrab to get to the treasure room with the Blowjob Brothers&#13;
-- Fixed Curvesickle being rejected by the Mottled Child’s throwing challenge (this time for real)</content>
-    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.4.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/galdiuz/archipeladoku/releases/tag/v2026.09.26</id>
-    <title>Archipeladoku v2026.9.26</title>
-    <updated>2026-09-26T17:58:05+00:00</updated>
-    <author>
-      <name>Galdiuz</name>
-    </author>
-    <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.09.26"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.1-unstable</id>
-    <title>New Super Mario Bros. DS v0.5.1</title>
-    <updated>2026-09-26T19:58:20+00:00</updated>
-    <author>
-      <name>Lemix028</name>
-    </author>
-    <content>This update focuses heavily on **performance, stability, and bug fixes**. A lot of work went into reducing emulator stutters and improving the Lua runtime, HUD rendering, Traps, and client communication.&#13;
-&#13;
-It also adds **Music Randomization**, **Death Link Amnesty**, and a new **Star Coin Tracking** option.&#13;
-&#13;
-## Added&#13;
-&#13;
-- Added **Music Randomization** with four modes:&#13;
-  - Off&#13;
-  - Level music&#13;
-  - Level + World Map music&#13;
-  - Mixed Level + World Map music&#13;
-- Added **Death Link Amnesty**&#13;
-  - Controls how many local deaths are required before sending a Death Link&#13;
-  - For example, a value of 5 sends every fifth eligible local death&#13;
-- Added a **Star Coin Tracking** option:&#13;
-  - Instant collection&#13;
-  - Vanilla behavior, where Star Coins are only saved after completing the level&#13;
-- Added new troubleshooting commands:&#13;
-  - /nsmbds_diag [short|full] displays client, BizHawk, synchronization, and runtime information&#13;
-  - /nsmbds_debug [on|off] enables or disables detailed NSMBDS debug logging&#13;
-&#13;
-## Performance &amp; Compatibility&#13;
-&#13;
-- Significantly improved **runtime performance**&#13;
-- Reduced stuttering when sending and receiving items&#13;
-- Improved notification, Trap status, and protection HUD rendering&#13;
-- Improved performance of several Traps, especially **Pixelation**&#13;
-- Reduced unnecessary Lua and client processing&#13;
-- Improved **melonDS JIT compatibility**&#13;
-  - Red Coin Challenges now work with JIT enabled&#13;
-  - Several Trap and input systems now use native ROM hooks&#13;
-- Improved **Universal Tracker compatibility**&#13;
-- Improved **Ionium compatibility**&#13;
-  - High randomized percentage values are now safely capped instead of causing generation failures&#13;
-  - Empty filler selections are now supported&#13;
-&#13;
-&gt; **JIT Recompiler is recommended for better performance.**&#13;
-&#13;
-## Logic &amp; Fixes&#13;
-&#13;
-- Fixed Red Coin Challenges not triggering with melonDS JIT enabled&#13;
-- Fixed several Star Coin Gate logic issues&#13;
-- Fixed incorrect Star Coin Gate ordering in some worlds&#13;
-- Fixed chained Star Coin Gates not accounting for earlier required gates&#13;
-- Fixed some collected Star Coins not counting correctly toward gate requirements&#13;
-- Fixed World 3-Tower Star Coin 3 missing its Mushroom Permit requirement&#13;
-- Fixed several BizHawk launcher and saved path issues&#13;
-- Improved handling of temporary client/BizHawk communication problems&#13;
-- Reduced unnecessary logging and repeated warnings&#13;
-- Various smaller runtime and stability fixes&#13;
-&#13;
-## Important&#13;
-&#13;
-A **newly generated 0.5.1 patch is recommended** because several native ROM hooks have changed.&#13;
-&#13;
-## Links&#13;
-&#13;
-- **Game Info:** https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/tree/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS&#13;
-- **Setup Guide:** https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/tree/nsmbds/worlds/nsmbds/docs/setup_en.md&#13;
-- **PopTracker:** https://github.com/Lemix028/NewSuperMarioBrosDS-poptracker/releases/latest</content>
-    <link href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.1-unstable"/>
-  </entry>
   <entry>
     <id>https://github.com/Nepley/eosd-apworld/releases/tag/v1.5.0</id>
     <title>Touhou Koumakyou ~ the Embodiment of Scarlet Devil v1.5.0</title>
@@ -251,6 +55,97 @@ Note: should be fully backwards compatible with worlds generated from 1.0 onward
 &#13;
 For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archipelago/blob/main/docs/setup.md)</content>
     <link href="https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLynk/Archipelago/releases/tag/Pikmin_apworld_V0.6.0</id>
+    <title>Pikmin v0.6.0</title>
+    <updated>2026-09-27T13:09:39+00:00</updated>
+    <author>
+      <name>TheLynk</name>
+    </author>
+    <content># Pikmin Archipelago — Changelog&#13;
+&#13;
+Mod information can be found : https://github.com/TheLynk/Archipelago/blob/Apworld-Pikmin/worlds/pikmin/docs/en_pikmin1.md&#13;
+Setup Guide : https://github.com/TheLynk/Archipelago/blob/Apworld-Pikmin/worlds/pikmin/docs/setup_en.md&#13;
+&#13;
+## v0.6.0 - QOL Update&#13;
+&#13;
+### Add :&#13;
+#### New Setting :&#13;
+- DeathLink&#13;
+- Trap :&#13;
+  - Time Trap&#13;
+  - End Day Trap&#13;
+  - Damage Trap&#13;
+    - Damage Trap Can Kill&#13;
+    - Damage Trap Amount&#13;
+  - Teleport Trap&#13;
+  - Disbanding Trap&#13;
+  - Trip Trap&#13;
+- TrapLink&#13;
+- Normal First Day&#13;
+- Disable Pikmin Trip&#13;
+- Skip Events :&#13;
+  - Cutscenes:&#13;
+    -  Onion Discovery &#13;
+    - New Pikmin   &#13;
+    - Main Engine Discovery&#13;
+    - First Pellet &#13;
+    - Part Collection&#13;
+    - Ship Upgrade &#13;
+    - Box Push &#13;
+    - First Bomb   &#13;
+  - Tutorial messages:&#13;
+    - Pikmin Limit&#13;
+    - Bomb Explosion&#13;
+    - Olimar Damage&#13;
+    - Carry Path&#13;
+    - First Noon &#13;
+    - Onion Followed&#13;
+    - Nectar   &#13;
+    - Sunset Warning&#13;
+- Always Min One Leaf&#13;
+- TrapLink Conversion&#13;
+- TrapLink Conversion Traps&#13;
+- Pikmin Bond&#13;
+  - Pikmin Bond Damage&#13;
+- Olimar Bond&#13;
+  - Olimar Bond Heal&#13;
+&#13;
+#### New Content :&#13;
+- Collect Ship Part when if another game is collect or if this locations already checked&#13;
+- Custom Save (Above all, it allows you to reapply the bonus pikmin if you play again during the run or to re-receive the unreceived bonus pikmin if the game crashes.)&#13;
+- More Data in "fill_slot_data" for poptracker&#13;
+- Support Universal Tracker&#13;
+- Add Slot name in room patched for client auto get slot name by room patched&#13;
+- Added Option Groups to make the YAML cleaner and more readable&#13;
+- Improved descriptions for pikmin locations&#13;
+- Add New message in Pikmin Client if you have "Enable Emulated Memory Size Override" which tells you to deactivate it and restart the game&#13;
+- Data for Poptracker auto Tab Swapper&#13;
+&#13;
+### Update :&#13;
+- Setup Guide&#13;
+&#13;
+### Remove :&#13;
+- Nothing&#13;
+&#13;
+### Bug Fixes :&#13;
+- Client crashes when attempting to close it #2 &#13;
+- Incorrect total number of Pikmin when receiving a bonus Pikmin #6 &#13;
+- The visuals for the S.S. Dolphin linked to the ship part milestone are not working. #8 &#13;
+- The level selection menu does not refresh if you are already on it. #12 &#13;
+- Sprouted pikmin number counter at the end of the day is wrong after receiving bonus pikmin #33 &#13;
+- put this message under /debugmenu "[DEBUG] Retrying LocationScouts (no response after 5s, scouted=0) #41 &#13;
+- translation for message error And Upgrade Message Error #35 &#13;
+- On the zone choice menu, the pikmin counter of each color is not updated #45 &#13;
+- at the end of the day the games do not save (NTSC Only) #51&#13;
+&#13;
+**Full Changelog**: https://github.com/TheLynk/Archipelago/compare/Pikmin_apworld_V0.5.1...Pikmin_apworld_V0.6.0&#13;
+&#13;
+# NOTE FOR USERS :&#13;
+- This version of apworld is incompatible with all current runs of other versions (so if you have current runs, make sure you finish them before updating)&#13;
+- Be sure to regenerate your YAML from 0 to avoid any bugs and take advantage of the new options in this version</content>
+    <link href="https://github.com/TheLynk/Archipelago/releases/tag/Pikmin_apworld_V0.6.0"/>
   </entry>
   <entry>
     <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.4</id>
@@ -1545,5 +1440,112 @@ This release is compatible with version 1.4.0 onwards.&#13;
 &#13;
 Find the apworld and several template yamls below.</content>
     <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.9.0</id>
+    <title>Final Fantasy X v0.9.0</title>
+    <updated>2026-09-30T13:01:06+00:00</updated>
+    <author>
+      <name>Rurusachi</name>
+    </author>
+    <author>
+      <name>Andrewki</name>
+    </author>
+    <content>## FFX Apworld v0.9.0&#13;
+&#13;
+### Feature&#13;
+- Add Deathlink options to the yaml (@EvelynTSMG)&#13;
+- Gear Customization options for recipe unlocks instead of free uses (@EvelynTSMG)&#13;
+&#13;
+### Enhancement&#13;
+- Add Apworld version to patch file &amp; slot data (@Rurusachi)&#13;
+&#13;
+### Bug Fixes&#13;
+- Fixed inaccurate Djose Highroad primer name (@Andrewki44)</content>
+    <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.9.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.8.0</id>
+    <title>Final Fantasy VIII v0.8.0</title>
+    <updated>2026-09-30T14:05:21+00:00</updated>
+    <author>
+      <name>ff8_arch</name>
+    </author>
+    <content>## Install
+
+1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
+2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
+3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.
+
+### Visual Tracker
+
+`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:
+
+1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
+2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
+3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
+
+Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
+
+Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
+
+
+## What's Changed
+* Release v0.8.0: beta-feedback fixes (moment-leak repair, per-seed saves, First Draw attribution, softlock logic) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/6
+
+
+**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.7.0...v0.8.0</content>
+    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4</id>
+    <title>Half-Life (Sven Co-op) v0.1.0r2</title>
+    <updated>2026-09-30T18:03:05+00:00</updated>
+    <author>
+      <name>hl1-sven-ap</name>
+    </author>
+    <content>Note that this is an early build of the apworld. Please report any problems in Discord or the Issues page on github (with reproduction steps please and thank you!)&#13;
+&#13;
+Sven Co-op's Half-Life campaign is meant to be played in multiplayer. No support will be offered to players attempting to circumvent this restriction. (The map "Suspension" is an exception to this rule)&#13;
+&#13;
+**Important**: Run /install to update the plugin after you update your apworld.&#13;
+&#13;
+## New Features&#13;
+* !menu GUI added&#13;
+* Melee Throw can now be added to the item pool, allowing you to throw the crowbar, knife, and umbrella via right click.&#13;
+* Bot Swarm Trap&#13;
+* PCV and Security Armor are now randomized separate from the HEV suit&#13;
+* Flashlight can now be randomized&#13;
+* Xen Healing pools added to chargesanity&#13;
+* Locations not present in a seed no longer display in game&#13;
+* When LJM is unshuffled, it now sits at its vanilla location rather than being always active&#13;
+&#13;
+## Bug Fixes/Improvements&#13;
+* Various stability and consistency patches&#13;
+* Fixed an edge case crash related to pre-cacheing&#13;
+&#13;
+## Setup&#13;
+As the game host:&#13;
+Install the apworld by downloading and double clicking (or placing it in your custom_worlds folder)&#13;
+Open the Half-Life (Sven Co-op) Client and select your install directory&#13;
+Run /install in the client&#13;
+Connect the client to the multiworld, and open a server on the map -sp_campaign_lobby&#13;
+Once your friends are in game with you (they can just join!), you can type !ap to see unlocked missions in the console, and !warp to change maps to the unlocked mission. (The lobby's mission panels also work). &#13;
+In addition, !menu opens an interface to warp, return to hub, find the nearest check, track remaining checks in a map, or locate a specific check.&#13;
+&#13;
+## Known Issues&#13;
+* Sound cacheing bug: sometimes when another player joins the lobby, their sounds are all mixed up. This will self resolve once you get into a mission. I am under the impression that if they install the plugin too that helps, but either way, loading a new map should fix the issue.</content>
+    <link href="https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.3.0</id>
+    <title>Chibi Robo v1.3.0</title>
+    <updated>2026-09-30T18:06:52+00:00</updated>
+    <author>
+      <name>EverydaySimpleDev</name>
+    </author>
+    <content>- New GBA Link Cable Option!&#13;
+- Changed how key items like door keys, chibi gear, etc are handled via code</content>
+    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.3.0"/>
   </entry>
 </feed>
