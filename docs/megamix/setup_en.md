@@ -13,8 +13,8 @@ This is a minimal mod setup. **Mod managers are used at your discretion.**
 1. [Install DivaModLoader.](https://github.com/blueskythlikesclouds/DivaModLoader?tab=readme-ov-file#installation)
 2. Download and extract the Archipelago Mod listed under [Requirements.](#requirements)
 3. Place the extracted `ArchipelagoMod` folder into the `mods` folder. 
-
-If your **mod loader config** (see below) has a `priority` line, add `"ArchipelagoMod",` to it.
+4. If your **mod loader config** (see below) has a `priority` line, add `"ArchipelagoMod",` to it.
+5. Start the game. You should see a one-time popup and the in-game client.
 
 #### Resulting mod file structure
 ```

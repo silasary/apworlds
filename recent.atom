@@ -2,75 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-29T18:23:30.878249+00:00</updated>
+  <updated>2026-09-30T00:27:19.953342+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.11.1</id>
-    <title>Harry Potter 2 PC v2.11.1.post2</title>
-    <updated>2026-09-25T23:03:50+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content># HP2PC_AP v2.11.1&#13;
-A new open castle option, two Jelly-Legs Jinx fixes, and a boss check fix.&#13;
-&#13;
-### New&#13;
-- **Always Goyle in Slytherin Common Room** (`always_goyle_in_slytherin_common_room`, open castle only, on by default). Harry wears the Goyle disguise for the whole room, so the Slytherins never chase him. A Polyjuice Potion Trap has no effect there, and the disguise comes off when you leave the level.&#13;
-&#13;
-### Fixed&#13;
-- **Spongify pads work during the Jelly-Legs Jinx.** Landing on an active pad bounces you as normal.&#13;
-- **Whomping Willow roots knock you back during the Jelly-Legs Jinx.** A root hit throws Harry clear again, instead of pinning him in place and hitting him every frame.&#13;
-- **Killing the Basilisk or Aragog always sends its check.** Holding the cutscene skip button could carry you out of the level before the kill registered, so Chamber of Secrets - Complete (or Forbidden Forest - Complete) never sent. The kill now also counts the moment its victory cutscene starts.&#13;
-</content>
-    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.11.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-24.2.0</id>
-    <title>The Legend of Zelda - Oracle of Seasons v24.2.0</title>
-    <updated>2026-09-26T03:07:18+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>### This version requires Archipelago 0.6.8, which is only available through running its source code or being on an updated fork&#13;
-&#13;
-## 🗳️ New Options&#13;
-- Added a start position option, that contains north horon, sunken city, tarm ruins, temple of seasons and samasa desert&#13;
-- Added a boss rando option&#13;
-&#13;
-## ⏫ Miscellaneous Improvements&#13;
-- Shops items can now be bought more than once if it is local and makes sense to be bought more than once (potions, ore chunks, rupees)&#13;
-- Owl hints now try to give items that appear later in logic, and should stop constantly telling you how to get what you already have&#13;
-- You can now always put the 4 jewels in their slots if you want&#13;
-- Subrosia digging spots are now permanently dug up&#13;
-- Added a way to warp back to the ship after giving the bell to the pirate captain&#13;
-- Added bomb and bombchu upgrades to the pool, packs of bombs no longer increase the max bomb count&#13;
-- Added Ricky's Gloves&#13;
-- Only the amount of required jewels is progression&#13;
-- Excludable items are now cheaper, since they are rarely bought&#13;
-- Packs of 100 ore chunks now exist to support outrageous shop prices better&#13;
-&#13;
-## 🧠 Logic&#13;
-- Added logic requiring some amounts of heart containers before beating some bosses or doing skips. The amount depends on the logic difficulty&#13;
-- Breaking the blocks to the goron chest with bombchus is now hard logic&#13;
-- Added logic to jump on the button in d8, for the armos chest&#13;
-- Added bombchu jumps to hell logic (thanks omega)&#13;
-- Removed the need to have 2 satchels to use gale seeds on beetles&#13;
-- Switch hooking requiring precise positioning is now hard logic&#13;
-- Cane can be used to push hardhats into holes&#13;
-- Bombchus can be used in hard logic to kill vire&#13;
-- Biggoron sword can now be used to kill Vire&#13;
-&#13;
-## 🛠️ Bugfixes&#13;
-- Moved the mt cucco warp to between tarm ruins and sunken city&#13;
-- Fixed Switch Hook allowing to jump at the same time</content>
-    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-24.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.5</id>
     <title>La-Mulana 2 v1.0.5</title>
@@ -1498,7 +1434,7 @@ _This release is backwards compatible down to 6.0.0-rc.5_</content>
   </entry>
   <entry>
     <id>https://github.com/T4g1/ArchipelagoTomba/releases/tag/v1.6.0</id>
-    <title>Tomba! v1.6.0</title>
+    <title>Tomba! v1.6.0.post2</title>
     <updated>2026-09-29T14:51:56+00:00</updated>
     <author>
       <name>T4g1</name>
@@ -1520,6 +1456,7 @@ _This release is backwards compatible down to 6.0.0-rc.5_</content>
 * Fix: Leaf Slider removed from ER as it does not uses the transition config for some reason&#13;
 * Enh: Camera transition animations are now understood and will always apply the fade to black animation&#13;
 * Fix an issue preventing Yan event to progress&#13;
+* Fix: Issue with bonus chest randomization setting&#13;
 &#13;
 ---&#13;
 &#13;
@@ -1640,5 +1577,18 @@ Problem fix:&#13;
 Others:&#13;
 - Renaming items by removing all the "()": "The Adversary (Princess)" → "Princess - The Adversary"</content>
     <link href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-0.9.0b"/>
+  </entry>
+  <entry>
+    <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.4.6</id>
+    <title>Links Awakening DX Beta v13.4.6</title>
+    <updated>2026-09-29T20:02:25+00:00</updated>
+    <author>
+      <name>zig</name>
+    </author>
+    <author>
+      <name>threeandthree</name>
+    </author>
+    <content>Fixes the text after stealing from the shop.</content>
+    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.4.6"/>
   </entry>
 </feed>
