@@ -1,4 +1,4 @@
-# None
+# Mega Man ZX
 
 ## Latest
 - <a href="https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.2.0/mmzx.apworld">Latest Version (0.2.0)</a>

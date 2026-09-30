@@ -2,215 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-30T00:27:19.953342+00:00</updated>
+  <updated>2026-09-30T06:24:27.645805+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.5</id>
-    <title>La-Mulana 2 v1.0.5</title>
-    <updated>2026-09-26T03:55:44+00:00</updated>
-    <author>
-      <name>Crownmuri</name>
-    </author>
-    <author>
-      <name>Coookie93</name>
-    </author>
-    <content>## Supports: Mod v1.0.0+ -- Tracker v2.0.5+&#13;
-&#13;
-# Changelogs&#13;
-- Fixed UT not taking pre_fill logic appends like FDC logic post ER into regard&#13;
-- Fixed UT showing logic events like `White Pedestals` with the `/next_progression` command &#13;
-- Fixed UT showing a KeyError for some collapsed item labels.&#13;
-- Removed IBLadder from the Bat / Skeleton glossary region list&#13;
-- Added TrickyLogic for some checks next to ladders through self-damaging&#13;
-- Corrected logic for the following checks relating to Bergelmir and AC hot spring area:&#13;
-  - Bergelmir logic event:&#13;
-    - Was: `CanChant(Earth) and CanChant(Moon) and CanChant(Heaven)`&#13;
-    - Now: `(Has(Feather) or HorizontalAttack) and CanChant(Earth) and CanChant(Moon) and CanChant(Heaven)`&#13;
-  - [SFG A-3] Top-Left Breakable Ceiling Chest (Gauntlet)&#13;
-    - Was: `Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare Gun)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb))`&#13;
-    - Now: `Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare Gun)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops))`&#13;
-  - [SFG A-4] Left Snow Drop Coin Pot / Glossary&#13;
-    - Was: `Has(Katana) or Has(Axe) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and Has(Vajra)) or (CanUse(Flare Gun) and (Has(Rapier) or Has(Knife) or CanUse(Rolling Shuriken)))`&#13;
-    - Now: `MeleeAttack or Has(Claydoll Suit) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or (CanUse(Flare Gun) and Has(Feather))`&#13;
-  - [SFG A-5] Hydlit checks&#13;
-    - Added TrickyLogic with just `PuzzleFinished(Bergelmir)`&#13;
-  - [AC D-7] (lava traversal logic for all checks)&#13;
-    - Was: `... and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(2)))`&#13;
-    - Now: `... and (Has(Claydoll Suit) or Has(Feather) or (Has(Ice Cloak) and OrbCount(2)))`</content>
-    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.0.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.2.0-pre2</id>
-    <title>Taskipelago v1.2.0rc2</title>
-    <updated>2026-09-26T04:11:22+00:00</updated>
-    <author>
-      <name>barretg</name>
-    </author>
-    <content>*The big region overhaul (and also clicker game mode)*&#13;
-&#13;
-## What's new (v1.2.0)&#13;
-* New types of item grouping definitions. Now progressive, aesthetic, or random-choice&#13;
-  * aesthetic groups merely group things aesthetically with no effect on progression or not.&#13;
-  * random-choice groups randomly choose N or N% as you define items from within the group to be included in the world. No tasks may depend on individual items in these groups since they aren't guaranteed to exist, but depending on the randomized group as a whole or by percentage/count is supported.&#13;
-  * progressive groups function the same as always&#13;
-* Regions can now also be randomized to include N or N% of tasks within that region. May optionally also shuffle the order in which such tasks appear.&#13;
-* Subregions can now be defined within regions that aren't randomized (subregions may be randomized).&#13;
-* Regions may now depend on items and tasks via the syntax item(expr) and task(expr) where expr is any valid task or item dependency expression&#13;
-* Tasclickpelago toggle on the yaml generator that enables a bunch of features for building out an idle game because the concept was funny and I thought of a way to do it well.&#13;
-* Style tab added to the YAML generator so you can recolor the entire application at will while connected to the slot in question. Pretty colors are pretty.&#13;
-* Fix browser choice to use user's default where possible and never prefer Edge otherwise&#13;
-&#13;
-Note: should be fully backwards compatible with worlds generated from 1.0 onwards. Also Universal Tracker is still incompatible.</content>
-    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.2.0-pre2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.4.26</id>
-    <title>Ratchet &amp; Clank: Size Matters v0.4.25</title>
-    <updated>2026-09-26T05:13:33+00:00</updated>
-    <author>
-      <name>Pangu</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <author>
-      <name>ImJustATester</name>
-    </author>
-    <content>## Installation &amp; Setup&#13;
-&#13;
-- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.&#13;
-- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.&#13;
-- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.&#13;
-- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.&#13;
-- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)&#13;
-- Click **Generate** to create a multiworld `.zip` in the `output` folder.&#13;
-- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.&#13;
-- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).&#13;
-- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.&#13;
-- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2&#13;
-&#13;
-&#13;
-&#13;
-## Changelog&#13;
-&#13;
-- fix(SM): small fix to size matters rules for clank pack (5067470e)&#13;
-- fix(SM): make json match current world version (a5c56c8e)&#13;
-- fix(SM): clankpack rules (24d39fcb)&#13;
-&#13;
-Full comparison:&#13;
-https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.4.24...rac_size_matters-v0.4.26</content>
-    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.4.26"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.4.0</id>
-    <title>Anno 1800 v1.4.0</title>
-    <updated>2026-09-26T06:29:13+00:00</updated>
-    <author>
-      <name>DarkListener</name>
-    </author>
-    <content>After a bit of a break, I'm finally back with another update for Anno 1800!&#13;
-&#13;
-### Changes&#13;
-* Introduced hint system&#13;
-  * Send hints for visible, but locked items to the AP server&#13;
-  * Option to just send hints for items for which Anno 1800 already tells you the unlock requirement&#13;
-* Client Improvements&#13;
-  * Finally fixed the long-standing issue with order of opening the game and client on Windows (I hope)&#13;
-    * If this still doesn't work, yell at me&#13;
-  * Added version check - the client will now warn you when connecting to an incompatible mod version&#13;
-  * Client messages should be clearer&#13;
-* Added option to enforce Cape Trelawney access&#13;
-* Added location name groups that can be used to exclude locations more easily (see Locations page below)&#13;
-  * Removed option to exclude recipe unlocks due to redundancy&#13;
-* Reduced number of early spheres slightly, now starting checks off in sphere 1&#13;
-* Marked several items as 'useful' (see Items page below)&#13;
-* Fixed ingame notifications for items with square brackets in their name - they will be replaced by '|' instead&#13;
-* Fixed some minor issues in the documentation&#13;
-&#13;
-This release is **not** compatible with earlier versions.&#13;
-&#13;
-### [Game Page](&lt;https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.0/worlds/a1800/docs/en_Anno%201800.md&gt;) | [Setup](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.0/worlds/a1800/docs/setup_en.md) | [Items](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.0/worlds/a1800/docs/items_en.md) | [Locations](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.0/worlds/a1800/docs/locations_en.md) | [Roadmap](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.0/worlds/a1800/docs/roadmap_en.md)&#13;
-&#13;
-Find the apworld and several template yamls below.</content>
-    <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Silvris/Archipelago/releases/tag/mhfu_0.0.3</id>
-    <title>Monster Hunter Freedom Unite v0.0.3</title>
-    <updated>2026-09-26T07:15:43+00:00</updated>
-    <author>
-      <name>Silvris</name>
-    </author>
-    <author>
-      <name>IncognitoMan</name>
-    </author>
-    <content># Changes&#13;
-* Added a new client command `/check_goal` to display the goal quest, required key quest amount, and rank requirements&#13;
-* Key Quest label now displays `All Quests` if enough key quests have been received to access all randomized quests.&#13;
-&#13;
-# Bug Fixes&#13;
-* Fixed an issue where newer versions of PPSSPP would freeze on loading a quest.</content>
-    <link href="https://github.com/Silvris/Archipelago/releases/tag/mhfu_0.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.2</id>
-    <title>Minishoot Adventures v0.6.0r2</title>
-    <updated>2026-09-26T09:40:05+00:00</updated>
-    <author>
-      <name>TheNouillet</name>
-    </author>
-    <content>## [0.6.2] - 2026-09-26&#13;
-&#13;
-### Added&#13;
-&#13;
-- The map screen can now show the interior of various ingame locations, as well as location markers.&#13;
-    - The game automatically switch the displayed map to the one corresponding to the player current location.&#13;
-    - You can use the "Power of time" and "Power of protection" keybindings to switch from one map to another.&#13;
-- The map screen now shows the goal of the current seed at the top right corner of the screen (e.g. "Objective : Dungeon 5 &amp; Snow").&#13;
-- The map screen now shows the Locations of the marker pointed at in the top right corner of the screen.&#13;
-    - You can hover on markers with your mouse, or with the cursor at the center of the screen when on gamepad.&#13;
-    - Already found Locations are hidden, and the remaining ones are color coded: white when in logic, yellow when out of logic, and dark gray when inaccessible.&#13;
-&#13;
-### Changed&#13;
-&#13;
-- Changed the way the map markers are loaded to minimize game freeze.</content>
-    <link href="https://github.com/TheNooodle/MinishootRandomizer/releases/tag/v0.6.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.3</id>
-    <title>Pokemon Crystal Prerelease v1.32.0</title>
-    <updated>2026-09-26T11:05:42+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## Features&#13;
-- The client will now warn when it attempts to deliver an item but the bag is full&#13;
-- Unlocked flypoints are now fully synced when remote items are enabled&#13;
-- Progress with Bills grandpa is now synced when remote items are enabled&#13;
-- Mom calling you on route 31 is now synced when remote items are enabled&#13;
-- Agreeing to help lance at the Lake of Rage is now synced when remote items are enabled&#13;
-- Send completed trades and seeing request species to the tracker&#13;
-- Receiving the odd egg will now grant the seen dex entry for Ditto&#13;
-- :3&#13;
-&#13;
-## Bug Fixes&#13;
-- Species which evolve via stats (currently only Tyrogue) will now always have equal attack and defense under BST rando&#13;
-- The catch tutorial and roamers no longer count towards unique statics&#13;
-- Fix the entrance to Lance's room being pinned to vanilla when skip E4 was enabled (for real this time)&#13;
-- Fix held evolution items not being able to be given from the party menu&#13;
-- Prevent ER from generating impossible sphere 1 escapes&#13;
-- Fix a starter that was swapped with an Unown into sphere 1 inheriting logic requiring a puzzle solve&#13;
-- Fix the Goldenrod underground switch room not resetting on reentry in ER&#13;
-- Fix completed battle tower tiers only being sent to the tracker when remote items was enabled&#13;
-&#13;
-**This release is not backwards compatible with 6.0.0-rc.2**</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.3"/>
-  </entry>
   <entry>
     <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.3.1</id>
     <title>Half-Life (Sven Co-op) v0.1.0</title>
@@ -575,6 +371,52 @@ Counts are now honored for perks and mods, so `Time Bolt: 2` gives two copies. R
 - In-game mod: `CrabChampionsAP.zip` → extract into your Crab Champions `Mods/` directory (UE4SS required)
 </content>
     <link href="https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/tag/1.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/chikakoo/Turok-2-AP-World/releases/tag/v0.6.0</id>
+    <title>Turok 2 v0.6.0</title>
+    <updated>2026-09-27T19:50:22+00:00</updated>
+    <author>
+      <name>Chikakoo</name>
+    </author>
+    <content>Alpha of the Turok 2 Randomizer with [Archipelago](https://archipelago.gg/) support. Expect general instability. &#13;
+&#13;
+**[Non-Windows needs additional setup](https://discord.com/channels/731205301247803413/1238135254947074129/1544566143203676180)**.  _There's no doc page for it at the moment._&#13;
+&#13;
+_(optional)_ [Poptracker pack.](https://github.com/chikakoo/Turok-2-Poptracker/releases/tag/v1.0.0)&#13;
+_(optional)_ [Hue shifter script (version agnostic)](https://github.com/chikakoo/Turok-2-Randomizer/blob/main/hue_shifter.py). [_Read about it here!_](https://github.com/chikakoo/Turok-2-AP-World/blob/main/worlds/turok2/docs/hue_shifter.md)&#13;
+See the [documentation](https://github.com/chikakoo/Turok-2-AP-World/tree/main/worlds/turok2/docs) for more details _(including the setup guide and changelog)_!&#13;
+Link to the [randomizer repo](https://github.com/chikakoo/Turok-2-Randomizer) for reference.&#13;
+&#13;
+**Expected mod version is 0.6.0.**&#13;
+&#13;
+- Background changes to support the poptracker and auto tabbing&#13;
+- Support yamless for Universal Tracker&#13;
+- Starting inventory is now received from the AP server&#13;
+  - Added a generate_for_offline setting if you don't want to connect to AP (you'll get the starting inventory like before)&#13;
+- Fixed a couple item classifications and non-breaking logic bugs&#13;
+- Various location name fixes/adjustments&#13;
+- Combined various item weight settings for clarity and simplicity&#13;
+- Added seed validation to prevent playing with the wrong save. This handles:&#13;
+  - Loading a save file from a different patch file than it was saved with&#13;
+  - Loading a save file for the incorrect slot/multiworld&#13;
+- Error fixes found by the fuzzer:&#13;
+  - Generation failure when starting with every weapon with force_early_weapon on&#13;
+  - Generation failure when level unlock method is one_progressive_warp with starting_progressive_warps set to 0&#13;
+  - Unit test failure caused by adding to local_items after generate_early&#13;
+- Attempted fix for very rare, hard to reproduce enemizer(?) crash&#13;
+- Updated the hue_shifter.py script&#13;
+  - Hue now goes up to 180, and rolls a value from -X to X&#13;
+  - Brightness/saturation can now go up to 1000%, if you want to be that insane&#13;
+  - Added a GROUPS property with some defaults to prevent annoying flashing textures&#13;
+&#13;
+**tl;dr setup (see the guide for details):**&#13;
+1. Install the AP world.&#13;
+2. Download the mod, unzip into the "mods" folder of your Turok 2 install (create it if it doesn't exist; overwrite all existing files).&#13;
+3. Generate the seed.&#13;
+4. Get your patch file, **unzip it**, and place **rando.kpf** into the mods folder as well.&#13;
+5. You're good to go! If solo, no need to run AP. Otherwise, you can connect the client and open the game in any order.</content>
+    <link href="https://github.com/chikakoo/Turok-2-AP-World/releases/tag/v0.6.0"/>
   </entry>
   <entry>
     <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.10</id>
@@ -1590,5 +1432,137 @@ Others:&#13;
     </author>
     <content>Fixes the text after stealing from the shop.</content>
     <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.4.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.7</id>
+    <title>Pokemon Crystal Prerelease v1.35.0</title>
+    <updated>2026-09-30T00:39:44+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+## Features&#13;
+- :3&#13;
+&#13;
+## Bug Fixes&#13;
+- Invalid values for game options are now rejected at generation or patch time&#13;
+- Use an event for Mom calling you on Route 31 so it shows in the playthrough&#13;
+- Fix sometimes being shoved when exiting an NPC blocked door that was unblocked&#13;
+- S.S. Aqua trainers not always present on the first voyage now logically require the first voyage story&#13;
+&#13;
+**This release is not backwards compatible with 6.0.0-rc.6**</content>
+    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/toluca-v1.0.4</id>
+    <title>Donkey Kong Toluca v1.0.4</title>
+    <updated>2026-09-30T01:12:02+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>cog&#13;
+# Info&#13;
+* [General Information](https://thelx5.github.io/dkc3/index.html)&#13;
+* [Setup Guide](https://thelx5.github.io/dkc3/setup.html)&#13;
+# Changes&#13;
+* Cogs are now limited to 5 inside the game to avoid crashes with the bear brother in Krematoa&#13;
+    * Generation still allows having extra cogs, don't worry</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/toluca-v1.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v3.0.0</id>
+    <title>Zork Grand Inquisitor v3.0.0</title>
+    <updated>2026-09-30T02:55:25+00:00</updated>
+    <author>
+      <name>SerpentAI</name>
+    </author>
+    <content>This is a major feature release that also includes improvements, tweaks and fixes.&#13;
+&#13;
+**This release is NOT compatible with games generated on the previous version.**&#13;
+&#13;
+- **Feature:** 43 new locations. Item pickups (+41). Misc (+2)&#13;
+- **Feature:** 2 new areas. Flathead Mesa (+4). Outside the Monastery Exhibit (+1). Flathead Mesa is accessed by casting VOXAM in the Walking Castle&#13;
+- **Feature:** 12 new Deathsanity / Landmarksanity locations. Deaths (+9). Landmarks (+3)&#13;
+- **Feature:** Shuffle Time Tunnels option. Randomizes the destinations of the three time tunnels&#13;
+- **Feature:** Death return. After dying, you're sent back to the previous screen, as it was, and you can keep playing. No need to juggle saves&#13;
+- **Feature:** In-Game Overlay option. Shows goal progress, item notifications, traps, death links and optionally the locations in logic. Can be toggled while playing with `/overlay` and `/overlay_tracker`&#13;
+- **Feature:** Universal Tracker integration. UT's tabs are now part of the client, and the `?` buttons explaining how to check each location have been moved to UT's Tracker Page&#13;
+- **Improvement:** The client now hooks directly into ZVision and as a result is lighter and more responsive. No more jank, glitches or crash risks from memory writes&#13;
+- **Improvement:** Entrance randomizer transitions now go straight to their destination&#13;
+- **Improvement:** Received items are now recorded in your save&#13;
+- **Improvement:** Trap management reworked. Reverse Controls and ZVision traps can be active at the same time&#13;
+- **Improvement:** Optional granting of missable locations reworked. Missables are granted as soon as they become unobtainable while in logic. Now works with ER. Requires UT&#13;
+- **Tweak:** The client's Tracker tab is now the Items tab, without a location list. The Entrances tab now only appears when playing with ER&#13;
+- **Tweak:** The bottom of the well can now be exited by casting VOXAM&#13;
+- **Tweak:** Activating the Zork Rocks now starts the 10-second countdown right away&#13;
+- **Tweak:** The ZVision trap now uses a fisheye view instead of scrambling the screen&#13;
+- **Fix:** Addressed a vanilla totemizer crash due to a missing audio file&#13;
+- **Fix:** Goal completion is no longer sent to the server repeatedly&#13;
+- **Fix:** _I Spit on Your Filthy Coinage_, _That's Still a Rope_ and _Your Puny Weapons Don't Phase Me, Baby!_ no longer trigger without fully performing the action&#13;
+- **Fix:** Addressed an issue where _Make Love, Not War_, _Death: Old Age_ and _Death: Expressly Forbidden_ were only in logic from one side&#13;
+- **Fix:** VOXAM can no longer remain in a stuck state&#13;
+- **Fix:** Removed items can no longer briefly reappear in the inventory&#13;
+- **Fix:** Addressed a rare issue where scroll fragments could end up incorrectly mirrored&#13;
+- **Fix:** Leaving Hades through ER or VOXAM now always correctly clears active SNAVIG casts&#13;
+- **Fix:** The Port Foozle propaganda lines no longer follow you to other starting locations&#13;
+- **Fix:** The Old Scratch card death now has its own death link message&#13;
+- **Fix:** Addressed an issue where connecting would fail when running the client with `--nogui`&#13;
+&#13;
+_YAML changes:_&#13;
+- _New options: Shuffle Time Tunnels and In-Game Overlay_&#13;
+- _Artifacts of Magic Total and Required now go up to 20 (defaults are now 20 and 15)_&#13;
+- _Deaths Required now goes up to 31 and Landmarks Required up to 23_&#13;
+- _Starting Location now defaults to random_&#13;
+&#13;
+A new version of ScummVM is required. Follow the updated [setup guide](https://github.com/SerpentAI/Archipelago/blob/zgi-v2-post-removal/worlds/zork_grand_inquisitor/docs/setup_en.md)&#13;
+&#13;
+&lt;img width="2552" height="1392" alt="Screenshot 2026-09-29 163443" src="https://github.com/user-attachments/assets/977f7e53-d61e-4cbf-be44-b39c7a1b5d5a" /&gt;&#13;
+</content>
+    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v3.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/2.4.1</id>
+    <title>Manual_OneMoreNight_WolfBoi008 v2.4.1</title>
+    <updated>2026-09-30T03:17:20+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+- #43: Memory Achievements Do Not Consider Unique Cases - I could use some help refining this, since doing it alone would be annoying...&#13;
+# Changelog&#13;
+- Fixed a bug that caused the Buttonsanity Checks to not require their dedicated Item.</content>
+    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/2.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/2.4.2</id>
+    <title>Manual_OneMoreNight_WolfBoi008 v2.4.2</title>
+    <updated>2026-09-30T04:34:42+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+#43: Memory Achievements Do Not Consider Unique Cases - I could use some help refining this, since doing it alone would be annoying...&#13;
+# Changelog&#13;
+- Removed Mart Death Check. Oops.</content>
+    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/2.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.1</id>
+    <title>DuckGame v0.1.0r2</title>
+    <updated>2026-09-30T05:05:38+00:00</updated>
+    <author>
+      <name>Marsavue</name>
+    </author>
+    <content># v0.1.1&#13;
+&#13;
+## APWorld Changes&#13;
+- VARIETY ZONE FINAL - SWING MACE: Helmet is now required for Silver instead of Gold (I am bad at the game)&#13;
+- Yaml Medal Count for Goal defaults to 90 instead of 120&#13;
+&#13;
+## More Info&#13;
+&#13;
+Client: https://github.com/Marsavue/DuckGameArchipelago/releases</content>
+    <link href="https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.1"/>
   </entry>
 </feed>

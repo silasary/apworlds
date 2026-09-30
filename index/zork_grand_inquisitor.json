@@ -3,9 +3,7 @@
     "SerpentAI"
   ],
   "description": "Zork: Grand Inquisitor is a 1997 point-and-click adventure game for PC.\nMagic has been banned from the great Underground Empire of Zork. By edict of the Grand Inquisitor Mir Yannick, the\nEmpire has been sealed off and the practice of mystic arts declared punishable by \"Totemization\" (a very bad thing).\nThe only way to restore magic to the kingdom is to find three hidden artifacts: The Coconut of Quendor, The Cube of\nFoundation, and The Skull of Yoruk.",
-  "flags": [
-    "tracker_included"
-  ],
+  "flags": [],
   "game": "Zork Grand Inquisitor",
   "github": "https://github.com/SerpentAI/Archipelago",
   "license": null,
@@ -308,6 +306,21 @@
       "title": "Zork Grand Inquisitor - 2.2.0",
       "version_simple": "2.2.0",
       "world_version": "2.2.0.post2"
+    },
+    "zgi-v3.0.0": {
+      "created_at": "2026-09-30T02:55:25Z",
+      "description": "This is a major feature release that also includes improvements, tweaks and fixes.\r\n\r\n**This release is NOT compatible with games generated on the previous version.**\r\n\r\n- **Feature:** 43 new locations. Item pickups (+41). Misc (+2)\r\n- **Feature:** 2 new areas. Flathead Mesa (+4). Outside the Monastery Exhibit (+1). Flathead Mesa is accessed by casting VOXAM in the Walking Castle\r\n- **Feature:** 12 new Deathsanity / Landmarksanity locations. Deaths (+9). Landmarks (+3)\r\n- **Feature:** Shuffle Time Tunnels option. Randomizes the destinations of the three time tunnels\r\n- **Feature:** Death return. After dying, you're sent back to the previous screen, as it was, and you can keep playing. No need to juggle saves\r\n- **Feature:** In-Game Overlay option. Shows goal progress, item notifications, traps, death links and optionally the locations in logic. Can be toggled while playing with `/overlay` and `/overlay_tracker`\r\n- **Feature:** Universal Tracker integration. UT's tabs are now part of the client, and the `?` buttons explaining how to check each location have been moved to UT's Tracker Page\r\n- **Improvement:** The client now hooks directly into ZVision and as a result is lighter and more responsive. No more jank, glitches or crash risks from memory writes\r\n- **Improvement:** Entrance randomizer transitions now go straight to their destination\r\n- **Improvement:** Received items are now recorded in your save\r\n- **Improvement:** Trap management reworked. Reverse Controls and ZVision traps can be active at the same time\r\n- **Improvement:** Optional granting of missable locations reworked. Missables are granted as soon as they become unobtainable while in logic. Now works with ER. Requires UT\r\n- **Tweak:** The client's Tracker tab is now the Items tab, without a location list. The Entrances tab now only appears when playing with ER\r\n- **Tweak:** The bottom of the well can now be exited by casting VOXAM\r\n- **Tweak:** Activating the Zork Rocks now starts the 10-second countdown right away\r\n- **Tweak:** The ZVision trap now uses a fisheye view instead of scrambling the screen\r\n- **Fix:** Addressed a vanilla totemizer crash due to a missing audio file\r\n- **Fix:** Goal completion is no longer sent to the server repeatedly\r\n- **Fix:** _I Spit on Your Filthy Coinage_, _That's Still a Rope_ and _Your Puny Weapons Don't Phase Me, Baby!_ no longer trigger without fully performing the action\r\n- **Fix:** Addressed an issue where _Make Love, Not War_, _Death: Old Age_ and _Death: Expressly Forbidden_ were only in logic from one side\r\n- **Fix:** VOXAM can no longer remain in a stuck state\r\n- **Fix:** Removed items can no longer briefly reappear in the inventory\r\n- **Fix:** Addressed a rare issue where scroll fragments could end up incorrectly mirrored\r\n- **Fix:** Leaving Hades through ER or VOXAM now always correctly clears active SNAVIG casts\r\n- **Fix:** The Port Foozle propaganda lines no longer follow you to other starting locations\r\n- **Fix:** The Old Scratch card death now has its own death link message\r\n- **Fix:** Addressed an issue where connecting would fail when running the client with `--nogui`\r\n\r\n_YAML changes:_\r\n- _New options: Shuffle Time Tunnels and In-Game Overlay_\r\n- _Artifacts of Magic Total and Required now go up to 20 (defaults are now 20 and 15)_\r\n- _Deaths Required now goes up to 31 and Landmarks Required up to 23_\r\n- _Starting Location now defaults to random_\r\n\r\nA new version of ScummVM is required. Follow the updated [setup guide](https://github.com/SerpentAI/Archipelago/blob/zgi-v2-post-removal/worlds/zork_grand_inquisitor/docs/setup_en.md)\r\n\r\n<img width=\"2552\" height=\"1392\" alt=\"Screenshot 2026-09-29 163443\" src=\"https://github.com/user-attachments/assets/977f7e53-d61e-4cbf-be44-b39c7a1b5d5a\" />\r\n",
+      "download_url": "https://github.com/SerpentAI/Archipelago/releases/download/zgi-v3.0.0/zork_grand_inquisitor.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c93047be42cf43df8eab529126289d6d8c3b90bcd8d54d980ffcb6370e0b91f9",
+      "html_url": "https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v3.0.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 1168064,
+      "source_url": "https://api.github.com/repos/SerpentAI/Archipelago",
+      "tag": "zgi-v3.0.0",
+      "title": "Zork Grand Inquisitor - 3.0.0",
+      "version_simple": "3.0.0",
+      "world_version": "3.0.0"
     }
   }
 }
