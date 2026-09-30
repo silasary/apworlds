@@ -44,4 +44,3 @@ Breaks compatibility with existing games
 lady marmelade message on lemonade building - check unlock, fix
 electricity artista unhide at 1 artista
 check ice cream machine only available with boreas (check ingame if boreas or hangar)
-Fix road upgrade via upgrade tool?

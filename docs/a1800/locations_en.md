@@ -210,7 +210,7 @@ Tourist Season and The High Life DLCs. Below, there is an exact list of tasks to
 | OW: Restaurant:<br>Lobster Cheminee | Tourist Season<br>&<br>Land of Lions | After building any restaurant, supply Scholars with Clay Pipes for 5 minutes |
 | OW: Cafe:<br>Donut Fourre | Tourist Season | Unlock OW: Cafe |
 | OW: Cafe:<br>Eclair | Tourist Season | After building any cafe, supply Tourists with any cafe for 5 minutes |
-| OW: Cafe:<br>Palmier Biscuit | Tourist Season | **– THIS NEVER CONTAINS A PROGRESSIVE ITEM –**<br>After building any cafe, have 1 Elephant Enclosure in a Zoo (Items: Elephant, Eastern Elephant) |
+| OW: Cafe:<br>Palmier Biscuit | Tourist Season | **– EXCLUDED PER DEFAULT (RNG) –**<br>After building any cafe, have 1 Elephant Enclosure in a Zoo (Items: Elephant, Eastern Elephant) |
 | OW: Cafe:<br>Venison Tartare | Tourist Season<br>&<br>The Passage | After building any cafe, build an AR: Post Office in the Arctic |
 | OW: Cafe:<br>Banana Surprise | Tourist Season<br>&<br>Land of Lions | After building any cafe, have 1 ton of Plantains in Enbesan trading posts |
 | OW: Bar:<br>Daiquiri Tropic | Tourist Season | Unlock OW: Bar |
@@ -221,22 +221,22 @@ Tourist Season and The High Life DLCs. Below, there is an exact list of tasks to
 | OW: The Iron Tower:<br>Brioche Royale | Tourist Season | Build OW: The Iron Tower |
 | OW: The Iron Tower:<br>Trifle Tower | Tourist Season | After building OW: The Iron Tower, supply Tourists with The Iron Tower for 5 minutes |
 | OW: The Iron Tower:<br>Lady Marmelade | Tourist Season | After building OW: The Iron Tower, build 3 OW: Variety Theatres and an OW: Chemical Plant: Lemonade<br>(sometimes, moving a building also counts as building one for some reason) |
-| OW: The Iron Tower:<br>Age of Exploration | Tourist Season<br>&<br>The Passage | **– THIS NEVER CONTAINS A PROGRESSIVE ITEM –**<br>After building OW: The Iron Tower, complete the 'Polar Circle' set in an OW: Zoo<br>(Items: Arctic Fox, Great Auk, Narwhal, Polar Bear, Ringed Seal, Walrus) |
-| OW: The Iron Tower:<br>Homard Lit de Terroir | Tourist Season<br>&<br>Land of Lions | **– THIS NEVER CONTAINS A PROGRESSIVE ITEM –**<br>After building OW: The Iron Tower, socket a 'Lobsterman' in an EN: Harbourmaster's Office |
+| OW: The Iron Tower:<br>Age of Exploration | Tourist Season<br>&<br>The Passage | **– EXCLUDED PER DEFAULT (RNG) –**<br>After building OW: The Iron Tower, complete the 'Polar Circle' set in an OW: Zoo<br>(Items: Arctic Fox, Great Auk, Narwhal, Polar Bear, Ringed Seal, Walrus) |
+| OW: The Iron Tower:<br>Homard Lit de Terroir | Tourist Season<br>&<br>Land of Lions | **– EXCLUDED PER DEFAULT (RNG) –**<br>After building OW: The Iron Tower, socket a 'Lobsterman' in an EN: Harbourmaster's Office |
 | OW:&nbsp;Department&nbsp;Store:<br>Toasters | The High Life | Unlock OW: Department Store |
 | OW: Department Store:<br>Vacuum Cleaners | The High Life | After building any department store, build 5 OW: Investor Skyscrapers: Level 3 |
 | OW: Department Store:<br>Crockery | The High Life | After building any department store, build an OW: Pub within 10 squares of an OW: Members Club |
 | OW: Department Store:<br>Refrigerators | The High Life<br>&<br>The Passage | *– Crafting costs change: needs less Lost Expedition Scrap and more other materials –*<br>After building any department store, socket 'The "Magnificone" Ice Cream Maker' in an OW: Town Hall (see Arctic Nate) |
 | OW: Department Store:<br>Briefcases | The High Life<br>&<br>Land of Lions | After building any department store, build any OW: Department Store within 8 squares of an OW: Scholar Residence |
 | OW: Furniture Store:<br>Banker's Lamps | The High Life | Unlock OW: Furniture Store |
-| OW: Furniture Store:<br>Vanity Screens | The High Life | **– THIS NEVER CONTAINS A PROGRESSIVE ITEM –**<br>After building any furniture store, complete the set 'Eastern Jungle' in an OW: Zoo<br>(Items: Eastern Elephant, Chital, Eastern Water Buffalo, Crocodile, Peacock, Tiger) |
+| OW: Furniture Store:<br>Vanity Screens | The High Life | **– EXCLUDED PER DEFAULT (RNG) –**<br>After building any furniture store, complete the set 'Eastern Jungle' in an OW: Zoo<br>(Items: Eastern Elephant, Chital, Eastern Water Buffalo, Crocodile, Peacock, Tiger) |
 | OW: Furniture Store:<br>Writing Desks | The High Life | After building any furniture store, reach 100% productivity in an OW:<br>Furniture Store: Banker's Lamps |
 | OW: Furniture Store:<br>Four-Poster Beds | The High Life<br>&<br>The Passage | After building any furniture store, have 1 ton of Bear Fur and 1 ton of Goose Feathers in Old World trading posts |
 | OW: Furniture Store:<br>Lounge Seating | The High Life<br>&<br>Land of Lions | After building any furniture store, build 2 OW: Radio Towers |
 | OW: Drug Store:<br>Toothpaste | The High Life | Unlock OW: Drug Store |
 | OW: Drug Store:<br>Detergent | The High Life | After building any drug store, build 40 OW: Investor Skyscrapers: Level 5 |
 | OW: Drug Store:<br>Lipstick | The High Life | After building any drug store, build an OW: Variety Theatre within 8 squares of an OW: Investor Skyscraper: Level 5 |
-| OW: Drug Store:<br>Face Cream | The High Life<br>&<br>The Passage | **– THIS NEVER CONTAINS A PROGRESSIVE ITEM –**<br>After building any drug store, complete the set 'Icebound' in an OW: Museum<br>(Items: Collection Of Lost Expedition Relics, Frozen Woolly Mammoth, Wolf Pup Mummy) |
+| OW: Drug Store:<br>Face Cream | The High Life<br>&<br>The Passage | **– EXCLUDED PER DEFAULT (RNG) –**<br>After building any drug store, complete the set 'Icebound' in an OW: Museum<br>(Items: Collection Of Lost Expedition Relics, Frozen Woolly Mammoth, Wolf Pup Mummy) |
 | OW: Drug Store:<br>Pomade | The High Life<br>&<br>Land of Lions | After building any drug store, build an EN: Hibiscus Farm within 8 squares of an EN: Apiary |
 
 ## Location Name Groups

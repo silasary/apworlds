@@ -2,56 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-09-30T06:24:27.645805+00:00</updated>
+  <updated>2026-09-30T12:17:21.403283+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.3.1</id>
-    <title>Half-Life (Sven Co-op) v0.1.0</title>
-    <updated>2026-09-26T11:25:34+00:00</updated>
-    <author>
-      <name>hl1-sven-ap</name>
-    </author>
-    <content>Note that this is a very early build of the apworld. Please report any problems in Discord or the Issues page on github (with reproduction steps please and thank you!)&#13;
-&#13;
-Sven Co-op's Half-Life campaign is meant to be played in multiplayer. No support will be offered to players attempting to circumvent this restriction. (The map "Suspension" is an exception to this rule)&#13;
-&#13;
-**Important**: Run /install to update the plugin after you update your apworld.&#13;
-&#13;
-## New Features&#13;
-* Added the map "suspension" as an option to be enabled in the YAML. This is a co-op class-based arcade shooter where you fight your way across a bridge. Quite fun, and works well for archipelago.&#13;
-* Added new, more refined, deathlink settings.&#13;
-* Commands now work in console with the . prefix: `.ap`, `.ap_tracker`, `.ap_warp`, etc.&#13;
-&#13;
-## Bug Fixes/Improvements&#13;
-* Fixed the completion checks on Blue Shift and OpFor being wonky.&#13;
-* Chargesanity being off would still display text on the user's screen when interacting with a charger.&#13;
-* Held weapons no longer send weapon checks if held on the map corresponding to their location.&#13;
-* Fixed a bug where finishing a mission and having the next mission unlocked would send an extra check that's not meant to be sent until that mission is actually loaded into.&#13;
-* Fixed a bug where chargesanity being disabled would also block weapon checks from being sent.&#13;
-* Made receiving ammo for the weapons you receive less annoying.&#13;
-* Some refinement of what and how information is displayed by commands.&#13;
-* Disconnecting and reconnecting or changing slots is now handled much more cleanly.&#13;
-* Game now syncs completion both ways, so collected checks propogate back to the game now.&#13;
-* Traps now queue up and trigger only after a 5 second gap of stability (not loading or dead).&#13;
-* New logic gating on the Barnacle Grapple for reaching Part 4 of Pit Worm's Nest and through the rest of the campaign.&#13;
-* Removed unreachable chargers on Pit Worm's Nest&#13;
-* Fixed an issue with mission completion for Duty Calls and Power Struggle&#13;
-&#13;
-## Setup&#13;
-As the game host:&#13;
-Install the apworld by downloading and double clicking (or placing it in your custom_worlds folder)&#13;
-Open the Half-Life (Sven Co-op) Client and select your install directory&#13;
-Run /install in the client&#13;
-Connect the client to the multiworld, and open a server on the map -sp_campaign_lobby&#13;
-Once your friends are in game with you (they can just join!), you can type !ap to see unlocked missions in the console, and !warp to change maps to the unlocked mission. (The in-game panels also work)&#13;
-&#13;
-## Known Issues&#13;
-* Sound cacheing bug: sometimes when another player joins the lobby, their sounds are all mixed up. This will self resolve once you get into a mission. I am under the impression that if they install the plugin too that helps, but I'm unsure. This one is kind of complicated to diagnose.</content>
-    <link href="https://github.com/barretg/hl1-sven-ap/releases/tag/v0.3.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.4.27</id>
     <title>Ratchet &amp; Clank: Size Matters v0.4.27</title>
@@ -1564,5 +1519,31 @@ A new version of ScummVM is required. Follow the updated [setup guide](https://g
 &#13;
 Client: https://github.com/Marsavue/DuckGameArchipelago/releases</content>
     <link href="https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.4.1</id>
+    <title>Anno 1800 v1.4.1</title>
+    <updated>2026-09-30T08:12:04+00:00</updated>
+    <author>
+      <name>DarkListener</name>
+    </author>
+    <content>Small update with improvements to the default goal, default exclusions and bugfixes.&#13;
+&#13;
+### Changes&#13;
+* Changed default goal to 5000 investors, 1500 obreros, 4000 artistas, 750 technicians, 1000 scholars, 1500&#13;
+tourists and 15 level 5 investor skyscrapers&#13;
+  * That means -2000 artistas, -6000 scholars, -2500 tourists compared to before&#13;
+* Added default exclusions for the different presets, so that checks behind the default victory condition are now excluded&#13;
+  * For example, with 1000 scholars now being the goal, the unlocks at 4000 and 7000 scholars are excluded from having progression items&#13;
+* Moved excluded RNG recipe unlocks to excluded locations option per default, effectively making their exclusion configurable&#13;
+* Fixed incorrect logical requirements for tourist mooring&#13;
+* Fixed a critical bug that caused generation failure when multiple Anno 1800 worlds with different DLC settings were present in a multiworld&#13;
+&#13;
+This release is compatible with version 1.4.0 onwards.&#13;
+&#13;
+### [Game Page](&lt;https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/en_Anno%201800.md&gt;) | [Setup](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/setup_en.md) | [Items](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/items_en.md) | [Locations](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/locations_en.md) | [Roadmap](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/roadmap_en.md)&#13;
+&#13;
+Find the apworld and several template yamls below.</content>
+    <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.4.1"/>
   </entry>
 </feed>

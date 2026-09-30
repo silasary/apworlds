@@ -22,7 +22,7 @@ Note: Ornaments are currently excluded.
 
 ## What's the goal?
 
-By default, the goal is to reach 5000 investors, 1500 obreros, 6000 artistas, 750 technicians, 7000 scholars, 4000
+By default, the goal is to reach 5000 investors, 1500 obreros, 4000 artistas, 750 technicians, 1000 scholars, 1500
 tourists and 15 level 5 investor skyscrapers. This is, of course, configurable.
 
 ## What are locations?
@@ -35,9 +35,10 @@ Also, any ship unlocks are also location checks, which can then be used to go on
 ... And if they would unlock a new session, receiving them is also a location check. Expedition difficulty is taken
 into account against your unlocked ships to check if you can complete it.
 
-Certain recipe buildings also have location checks for their recipe unlocks (specifically Restaurant, Cafe, Bar and
-The Iron Tower). These have various interesting requirements and become available with the Tourist Season DLC.
-RNG-heavy recipe unlocks are excluded from having progression items.
+Certain recipe buildings also have location checks for their recipe unlocks (specifically Restaurant, Cafe, Bar, The
+Iron Tower, Department Store, Furniture Store and Drug Store). These have various interesting requirements and become
+available with the Tourist Season DLC or High Life DLC. RNG-heavy recipe unlocks are excluded from having progression
+items per default.
 
 For further information, check [the locations page](locations_en.md)<!--(/tutorial/Anno%201800/locations/en)-->.
 
