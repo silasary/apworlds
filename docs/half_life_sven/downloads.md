@@ -17,7 +17,7 @@
 #### v0.2
 - <a href="https://github.com/barretg/hl1-sven-ap/releases/download/v0.2/half_life_sven.apworld">https://github.com/barretg/hl1-sven-ap/releases/download/v0.2/half_life_sven.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0r3
 - <a href="https://github.com/barretg/hl1-sven-ap/releases/download/v0.4/half_life_sven.apworld">https://github.com/barretg/hl1-sven-ap/releases/download/v0.4/half_life_sven.apworld</a>
 
 #### v0.1.0r2
