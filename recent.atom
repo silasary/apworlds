@@ -2,132 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-01T00:25:25.129034+00:00</updated>
+  <updated>2026-10-01T06:19:26.404808+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.4</id>
-    <title>Pokemon Crystal Prerelease v1.33.0</title>
-    <updated>2026-09-27T14:33:49+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## Features&#13;
-- The Tyrogue from Blackbelt Kiyo will now be sent to your PC if your party is full&#13;
-&#13;
-## Bug Fixes&#13;
-- Fix the Route 43 Rocket shakedown script sometimes pushing you out of bounds in ER&#13;
-- Fix the logic for the hidden item in the southwest Whirl Island&#13;
-- Fix Apricorn trees being forced as locations when Apricorn shopsanity was not enabled&#13;
-- Fix Sailor Huey not logically requiring all rematches to give his item when rematchsanity was enabled&#13;
-- Fix Exp. Share holders getting both participant and non-participant exp when gen 6 or 8 exp distribution was enabled&#13;
-- Fix reductions in exp (from being a non participant or from exp splitting) not applying when scaling exp was enabled&#13;
-- Seen species and seen Unown signs will now not be overwritten on the tracker if you revert to an earlier save without remote items enabled&#13;
-- Fly unlocks are now always synced when remote items are enabled&#13;
-- Fix a potential game crash when receiving a deathlink at the end of a battle you can lose&#13;
-- Fix GER not accounting for simple item plando and sometimes producing impossible seeds&#13;
-- The Unown dex scientist now no longer requires a local puzzle to be solved to give you the Unown dex, just enough caught Unown forms&#13;
-&#13;
-**This release is not backwards compatible with 6.0.0-rc.3**</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/tag/1.4.0</id>
-    <title>Crab Champions v1.4.0</title>
-    <updated>2026-09-27T15:39:18+00:00</updated>
-    <author>
-      <name>Str8UpWHITE64</name>
-    </author>
-    <content>## Highlights
-
-Every weapon, melee weapon and ability can now go in the pool, only pool equipment counts toward your goal, and received perks and mods are applied as whole stacks.
-
-**Compatible with 1.3 seeds.** Update the apworld and the mod together.
-
-## Changes
-
-### Full equipment pools
-`weapons_in_pool`, `melee_in_pool` and `abilities_in_pool` now go up to 20, 5 and 7, which puts every item of that kind in the pool. When a pool is full you start with one random item from it, so you always have something to use. `starting_weapons` is forced to at least 1 when `weapons_in_pool` is 20.
-
-### Completion only counts pool equipment
-Equipment you have from the start no longer counts toward `weapons_for_completion`, `melee_for_completion` or `ability_for_completion`. With `equipment_check_mode` set to `regular` or `filler_only`, the goal could previously be finished without receiving a single AP item. Runs with non-pool equipment are still location checks under `equipment_check_mode`, they just don't advance the goal.
-
-Seeds made with 1.3 keep the old rule, so updating mid-seed won't change your goal.
-
-### Starting equipment isn't duplicated
-Equipment you start with is no longer also placed in the item pool. That slot goes to filler instead of a second copy of something you already have.
-
-### `guaranteed_items` copy counts
-Counts are now honored for perks and mods, so `Time Bolt: 2` gives two copies. Relics and equipment are unique and still get one.
-
-## Bug Fixes
-
-- Received perks and mods are now applied as one stack per item. Duplicates that arrived after your inventory filled up no longer get stuck behind other items, and items you already have still stack when the inventory is full.
-- Fixed reconnecting mid-session leaving stale state behind, which could grant pending crystals twice or stop overflowed items from retrying.
-- The mod now refuses to connect to a seed made for a different major version instead of sending checks for the wrong locations, and the overlay says why.
-
-## For Developers
-
-- F9 writes a full pickup dump (`pickup_dump_&lt;time&gt;.txt`) with every item's rarity, loot pool and tag, and flags new and greed items.
-- `tools/check_sync.py` checks the Lua client's item tables against the apworld.
-
-## Download
-
-- Archipelago world: `crabchampions.apworld` → place in your Archipelago `custom_worlds/` directory
-- In-game mod: `CrabChampionsAP.zip` → extract into your Crab Champions `Mods/` directory (UE4SS required)
-</content>
-    <link href="https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/tag/1.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/chikakoo/Turok-2-AP-World/releases/tag/v0.6.0</id>
-    <title>Turok 2 v0.6.0</title>
-    <updated>2026-09-27T19:50:22+00:00</updated>
-    <author>
-      <name>Chikakoo</name>
-    </author>
-    <content>Alpha of the Turok 2 Randomizer with [Archipelago](https://archipelago.gg/) support. Expect general instability. &#13;
-&#13;
-**[Non-Windows needs additional setup](https://discord.com/channels/731205301247803413/1238135254947074129/1544566143203676180)**.  _There's no doc page for it at the moment._&#13;
-&#13;
-_(optional)_ [Poptracker pack.](https://github.com/chikakoo/Turok-2-Poptracker/releases/tag/v1.0.0)&#13;
-_(optional)_ [Hue shifter script (version agnostic)](https://github.com/chikakoo/Turok-2-Randomizer/blob/main/hue_shifter.py). [_Read about it here!_](https://github.com/chikakoo/Turok-2-AP-World/blob/main/worlds/turok2/docs/hue_shifter.md)&#13;
-See the [documentation](https://github.com/chikakoo/Turok-2-AP-World/tree/main/worlds/turok2/docs) for more details _(including the setup guide and changelog)_!&#13;
-Link to the [randomizer repo](https://github.com/chikakoo/Turok-2-Randomizer) for reference.&#13;
-&#13;
-**Expected mod version is 0.6.0.**&#13;
-&#13;
-- Background changes to support the poptracker and auto tabbing&#13;
-- Support yamless for Universal Tracker&#13;
-- Starting inventory is now received from the AP server&#13;
-  - Added a generate_for_offline setting if you don't want to connect to AP (you'll get the starting inventory like before)&#13;
-- Fixed a couple item classifications and non-breaking logic bugs&#13;
-- Various location name fixes/adjustments&#13;
-- Combined various item weight settings for clarity and simplicity&#13;
-- Added seed validation to prevent playing with the wrong save. This handles:&#13;
-  - Loading a save file from a different patch file than it was saved with&#13;
-  - Loading a save file for the incorrect slot/multiworld&#13;
-- Error fixes found by the fuzzer:&#13;
-  - Generation failure when starting with every weapon with force_early_weapon on&#13;
-  - Generation failure when level unlock method is one_progressive_warp with starting_progressive_warps set to 0&#13;
-  - Unit test failure caused by adding to local_items after generate_early&#13;
-- Attempted fix for very rare, hard to reproduce enemizer(?) crash&#13;
-- Updated the hue_shifter.py script&#13;
-  - Hue now goes up to 180, and rolls a value from -X to X&#13;
-  - Brightness/saturation can now go up to 1000%, if you want to be that insane&#13;
-  - Added a GROUPS property with some defaults to prevent annoying flashing textures&#13;
-&#13;
-**tl;dr setup (see the guide for details):**&#13;
-1. Install the AP world.&#13;
-2. Download the mod, unzip into the "mods" folder of your Turok 2 install (create it if it doesn't exist; overwrite all existing files).&#13;
-3. Generate the seed.&#13;
-4. Get your patch file, **unzip it**, and place **rando.kpf** into the mods folder as well.&#13;
-5. You're good to go! If solo, no need to run AP. Otherwise, you can connect the client and open the game in any order.</content>
-    <link href="https://github.com/chikakoo/Turok-2-AP-World/releases/tag/v0.6.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.1.10</id>
     <title>Dead Cells v0.1.10</title>
@@ -1697,5 +1576,56 @@ Free code signing for open source projects, provided by
 - [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/YjhiNjBhYTNmMDUyZmE4N2NmNWM0NzY2ZTE1OTI1N2E6MTc5MDgwMzQxMA==/detection)
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-rc2</id>
+    <title>Lethal Company v0.8.0rc2</title>
+    <updated>2026-10-01T01:45:14+00:00</updated>
+    <author>
+      <name>T0r1nn, ThisGuyHere</name>
+    </author>
+    <content># This release is meant for testing and is likely to have issues. DO NOT use in public games without prior approval from the host&#13;
+# THIS AND ALL FUTURE VERSIONS ARE NOT COMPATIBLE WITH WORLDS CREATED PRIOR TO 0.8.0&#13;
+&#13;
+Because this version is meant for testing, the mod must be installed/updated manually. Read the instructions in rc1.&#13;
+&#13;
+Mod:&#13;
+* custom world names (set when using the 'apworld' command) are now saved&#13;
+* added more space after the locked moon text&#13;
+* GetGameLogic is no longer called twice when connecting to a multiworld&#13;
+* added a terminal command that gets the logic string without UnityExplorer&#13;
+&#13;
+Apworld:&#13;
+* the gold bar scrap is no longer always excluded&#13;
+* slightly tweaked custom content instructions for clarity</content>
+    <link href="https://github.com/T0r1nn/APLC/releases/tag/v0.8.0-rc2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Phenra/RoadTripAdventure-AP/releases/tag/v0.3.0</id>
+    <title>Road Trip Adventure v0.3.0</title>
+    <updated>2026-10-01T02:27:13+00:00</updated>
+    <author>
+      <name>Phenra</name>
+    </author>
+    <content>**Randomizer info page:**&#13;
+https://github.com/Phenra/RoadTripAdventure-AP/blob/main/docs/en_Road%20Trip%20Adventure.md&#13;
+**Setup guide:**&#13;
+https://github.com/Phenra/RoadTripAdventure-AP/blob/main/docs/setup_en.md&#13;
+&#13;
+&#13;
+### New YAML options:&#13;
+- **Randomize Q Coins**: All Q coins in the overworld become locations, and all 100 coins are randomized into the multiworld as items.&#13;
+- **Q Coins Needed Per Coine Reward**: Can be set to any number between 1 and 10, defaults to 10 (vanilla behavior).&#13;
+  - All coins beyond the max needed (i.e. the number set for this option * 10) are considered filler.&#13;
+- **Money Filler Amount**: Defaults to 500, but can now be set to any number between 100 and 10,000.&#13;
+  - Filler item is now called 'Money' instead of '500G'.&#13;
+- **Require World Grand Prix**: Defaults to True. If set to False, acquiring all 3 Progressive License items will immediately open the gate to the president's mansion, meaning World GP can be skipped.&#13;
+- 'Visit All Houses Stamps' added as a location group (helps easily exclude these locations).&#13;
+### Gameplay changes:&#13;
+- Decorations mode: Changed the item names for the area unlock keys to include the town unlocked, e.g. "Gold Ornament (*Fuji City* Key)".&#13;
+### Bug fixes:&#13;
+- Stamp 72 access now requires that the player has Uzumasa's Autograph, and can talk to Shirley in White Mountain (since she must be home for visiting her house to count).&#13;
+- Trade Quest 5 (Rice Ball) fixed to check for access to the Shirley NPC in White Mountain (was mistakenly checking for access to Shirley's home in Papaya instead).</content>
+    <link href="https://github.com/Phenra/RoadTripAdventure-AP/releases/tag/v0.3.0"/>
   </entry>
 </feed>

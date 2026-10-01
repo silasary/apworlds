@@ -6,7 +6,7 @@ chance to become the next President!
 
 
 ## Downloads
-- <a href="https://github.com/Phenra/RoadTripAdventure-AP/releases/download/v0.2.0/roadtrip.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/Phenra/RoadTripAdventure-AP/releases/download/v0.3.0/roadtrip.apworld">Latest Version (0.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
