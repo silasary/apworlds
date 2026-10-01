@@ -7,7 +7,7 @@ Defeat Otto Destruct on Quodrona to complete your goal.
 
 
 ## Downloads
-- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/rac_size_matters-v0.4.27/rac_size_matters.apworld">Latest Version (0.4.27)</a>
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/rac_size_matters-v0.5.0/rac_size_matters.apworld">Latest Version (0.5.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -16,5 +16,4 @@ Defeat Otto Destruct on Quodrona to complete your goal.
 - <a href="setup_en">English</a>
 
 ## Other Documentation files
-- <a href="clank-trap-research">clank-trap-research</a>
 - <a href="en_Ratchet &amp; Clank Size Matters">en_Ratchet &amp; Clank Size Matters</a>

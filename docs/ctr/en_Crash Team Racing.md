@@ -73,8 +73,9 @@ have not hit yet get a seat first.
 
 Each Relic Race gets one check, paid when the race ends with every time crate
 broken (the crate counter reads full). It needs the same access as that
-track's Sapphire Time Trial. With Progressive Boost on, N. Gin Labs also needs
-Ultimate Sacred Fire, because two of its crates cannot be reached without it.
+track's Sapphire Time Trial. With Progressive Boost on, every perfect check
+also needs Ultimate Sacred Fire at every Logic Difficulty, because some time
+crates sit on routes that need boost.
 If Cortex Vortex Track takes a track's pad, that track has no Relic Race and
 no perfect check.
 
