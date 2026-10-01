@@ -191,6 +191,10 @@ def cleanup_manifest(manifest):
         manifest["flags"] = manifest.get("flags", []) + manifest.pop("tags")
         del manifest["tags"]
 
+    if manifest.get("ignored", False):
+        manifest["ignore"] = manifest["ignored"]
+        del manifest["ignored"]
+
     if isinstance(manifest.get("flags", []), dict):
         manifest["flags"] = [flag for flag, enabled in manifest["flags"].items() if enabled]
     elif isinstance(manifest.get("flags", []), str):
