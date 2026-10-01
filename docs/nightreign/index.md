@@ -29,8 +29,4 @@ been received.
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Nightreign">en_Nightreign</a>
-- <a href="roadmap">roadmap</a>
