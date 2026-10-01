@@ -55,6 +55,9 @@ if args.scan_forks:
         forks = repo.fetch(repo.url + "/forks?per_page=100&page=" + str(page))
         while forks:
             for fork in forks:
+                if "html_url" not in fork:
+                    print(f"Skipping fork without html_url: {fork}")
+                    continue
                 queue.append(fork["html_url"])
                 if fork["html_url"] not in parents:
                     parents.append(fork["html_url"])
