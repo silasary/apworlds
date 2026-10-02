@@ -6,7 +6,7 @@ If you don&#x27;t, it will be the end of the world.
 
 
 ## Downloads
-- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.9.0b/slay_the_princess.apworld">Latest Version (0.9.0b0)</a>
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.0.0/slay_the_princess.apworld">Latest Version (1.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,9 +1,12 @@
 # Team Fortress 2 Mann vs Machine
 
 ## Latest
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.17.5/tf2_mvm.apworld">Latest Version (1.17.5)</a>
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.17.6/tf2_mvm.apworld">Latest Version (1.17.6)</a>
 
 ## All Versions
+
+#### v1.17.6
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.17.6/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.17.6/tf2_mvm.apworld</a>
 
 #### v1.17.5
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.17.5/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.17.5/tf2_mvm.apworld</a>
@@ -92,13 +95,13 @@
 #### v1.11.0r4
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r3
+#### v1.11.0r4
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.11.0r3
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r2
+#### v1.11.0r3
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.11.0r2
