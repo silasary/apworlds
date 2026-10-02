@@ -27,6 +27,8 @@ The following items are available in the Randomizer:
 - Elements (filler items, last one turn)
 - Friendly greetings from spirits (filler items)
 
+There is also an additional item called `Shard of the island`, which tracks how many of your victory goals you have completed. These items are only rewarded at your goal locations.
+
 ## Locations
 
 Locations can be checked in the following ways:

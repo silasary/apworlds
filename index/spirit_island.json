@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "Wouter17"
+  ],
   "description": "Spirit island is a boardgame where players play spirits to prevent the invaders from destroying the island.",
   "game": "Spirit Island",
   "github": "https://github.com/Wouter17/Spirit-Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/Wouter17/Spirit-Archipelago?tab=readme-ov-file",
   "sheet_disclosure": "Unknown",
   "sheet_stability": "Unstable",
@@ -91,6 +98,21 @@
       "title": "V0.1.4",
       "version_simple": "0.1.4",
       "world_version": "0.1.4"
+    },
+    "0.1.5": {
+      "created_at": "2026-10-02T09:55:03Z",
+      "description": "## V0.1.5\r\n\r\n### Client & APworld\r\n- Added single victory item (_shard of the island_) instead of checking completed goals\r\n\r\n### Client\r\n- Added world versioning check\r\n- Added sh scripts and manual for Linux (Proton) install/uninstall. by @sourlemon11 in https://github.com/Wouter17/Spirit-Archipelago/pull/1\r\n- Fixed deathlink not being sent\r\n\r\n### APworld\r\n- Fixed locations being marked as priority\r\n- Fixed access rules not respecting aspect-only uniques\r\n- Added adjustment option for the number of goals to complete\r\n- Fixed card unlock for aspects adding cards\r\n- Added world versioning (archipelago.json)\r\n\r\n## New Contributors\r\n* @sourlemon11 made their first contribution in https://github.com/Wouter17/Spirit-Archipelago/pull/1\r\n\r\n---\r\n\r\n**Full Changelog**: https://github.com/Wouter17/Spirit-Archipelago/compare/0.1.4...0.1.5",
+      "download_url": "https://github.com/Wouter17/Spirit-Archipelago/releases/download/0.1.5/spirit_island.apworld",
+      "has_manifest": true,
+      "hash_sha256": "67cf75b8271a384e5cd633da60c94e7bd689e490a63eafffa4201dbcfca72707",
+      "html_url": "https://github.com/Wouter17/Spirit-Archipelago/releases/tag/0.1.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 28941,
+      "source_url": "https://api.github.com/repos/Wouter17/Spirit-Archipelago",
+      "tag": "0.1.5",
+      "title": "V0.1.5",
+      "version_simple": "0.1.5",
+      "world_version": "0.1.5"
     }
   }
 }
