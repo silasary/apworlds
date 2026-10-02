@@ -89,7 +89,7 @@
       "tag": "v0.3-pre",
       "title": "Half Life Trilogy Beta v0.3 Pre-release",
       "version_simple": "0.1.0",
-      "world_version": "0.1.0r2"
+      "world_version": "0.1.0r3"
     },
     "v0.3-pre2": {
       "created_at": "2026-09-29T23:19:02Z",
@@ -105,7 +105,7 @@
       "tag": "v0.3-pre2",
       "title": "Half-Life Trilogy Beta v0.3 Pre-release 2",
       "version_simple": "0.1.0",
-      "world_version": "0.1.0r3"
+      "world_version": "0.1.0r2"
     },
     "v0.3-pre3": {
       "created_at": "2026-10-01T04:01:41Z",
@@ -122,6 +122,21 @@
       "title": "Half Life Trilogy Beta v0.3 Pre-release 3",
       "version_simple": "0.1.0",
       "world_version": "0.1.0r4"
+    },
+    "v0.3.1": {
+      "created_at": "2026-10-01T22:22:57Z",
+      "description": "Quick patch to fix issues with raw mouse input\r\n\r\nv0.3.0 Patch notes:\r\n## What's New\r\n* Expanded apworld scope to include Blue Shift and Opposing Force (must own each game and have it downloaded)\r\n* Added YAML options specific to Blue Shift and Opposing Force, including randomized starting melee across games, and viewmodel options to optionally override with Gordon's viewmodel where applicable.\r\n* Added flashlight randomization\r\n* Added an option to include \"Melee throw\" in the item pool (credit to @MetaPrism for the physics of that)\r\n* A fun new trap >:)\r\n* New lobby map with themed entrances for missions 1 - 13 (No Xen, Blue Shift, or OpFor yet. work-in-progress)\r\n  * Credits to @MetaPrism for making the map (you're awesome, thanks)\r\n* Fixes for some checks being locked out of bounds due to loading zones.\r\n* Fun community submitted whiteboard textures in the lobby\r\n  * Credits (usernames from AP discord): Mial the Tanuki,  Flowey, vertsi, Iris, Aresse\r\n* Completely overhauled weapon pickup logic\r\n* Added YAML option for ally weapon drops are counted in logic or not\r\n* Ammo caches now apply to all weapons in inventory, not just held weapon\r\n* Deathlink and trap messages spiced up a bit\r\n* Locations renamed to use colons instead of dashes\r\n* Various architecture tweaks to match the Sven apworld more closely\r\n* Various logic and stability tweaks\r\n\r\n## Changes to commands: (`!help` to list all to console)\r\n* `!menu` command pulls up a useful GUI for warp and tracker commands\r\n* `!warp` text filtering a bit looser, more variations of names should be identified and take you to the right place\r\n* `!tracker` now has a separate block for weapons in each campaign\r\n* `!find` refined, and `!trace` added to draw a trace line to a specific (or defaults to nearest) check\r\n\r\n## Setup\r\n1. Install the apworld below\r\n2. Ensure Half-Life (25th Anniversary branch) is installed\r\n3. Open the Half-Life client and run `/install`\r\n4. After installing, you can either launch half-life with the launch argument `-game hlap` or you can restart steam and \"Half-Life Archipelago\" should appear in your steam library.\r\n5. Connect the text client to the server, open the game, press New Game and Start, then play!",
+      "download_url": "https://github.com/barretg/hl1-anniversary-ap/releases/download/v0.3.1/half_life.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7dd92b8c65217f78b9cf5776bb324364e439c891c28ca815538d7b3ccfcbc02a",
+      "html_url": "https://github.com/barretg/hl1-anniversary-ap/releases/tag/v0.3.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 2503023,
+      "source_url": "https://api.github.com/repos/barretg/hl1-anniversary-ap",
+      "tag": "v0.3.1",
+      "title": "Half-Life Trilogy Beta v0.3.1",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0r2"
     },
     "v0.3r2": {
       "created_at": "2026-09-20T15:31:25Z",

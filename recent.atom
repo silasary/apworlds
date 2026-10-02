@@ -2,119 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-02T00:23:01.005428+00:00</updated>
+  <updated>2026-10-02T06:24:22.640191+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/vyneras/Archipelago/releases/tag/1.1.4</id>
-    <title>Pokemon FireRed and LeafGreen v1.1.4</title>
-    <updated>2026-09-28T16:44:01+00:00</updated>
-    <author>
-      <name>Vyneras</name>
-    </author>
-    <content>ROM CHECKSUM: `00939B09`&#13;
-&#13;
-[Setup Guide](https://github.com/vyneras/Archipelago/blob/1.1.4/worlds/pokemon_frlg/docs/setup_en.md)&#13;
-[Rom Changes](https://github.com/vyneras/Archipelago/blob/1.1.4/worlds/pokemon_frlg/docs/rom%20changes.md)&#13;
-&#13;
-**Bug Fixes**&#13;
-- Fixed an issue where the client could overwrite the entrances in data storage across multiple sessions</content>
-    <link href="https://github.com/vyneras/Archipelago/releases/tag/1.1.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.2</id>
-    <title>Crash Team Racing v0.2.2</title>
-    <updated>2026-09-28T18:46:35+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>
-CTR Archipelago 0.2.2 is out. Here's the quick list; the [full release notes are on AP-Pie](https://ap-pie.com/ctr/releases/0-2-2).
-
-[Setup guide (ap-pie.com)](https://ap-pie.com/guides/ctr) · [SETUP.md](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) · [SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.2.2/SETUP.md)
-
-## What changed since 0.2.1
-
-- **New YAML options:** Remove Playable Oxide, Relic Race Perfect Checks, and DeathLink `race_loss`, where a death costs you the race.
-- **Held 1st logic:** needs your first boost, or one useful weapon with Itemsanity. Held 1st on Cortex Castle and Hot Air Skyway needs Ultimate Sacred Fire.
-- **Easy and medium:** with Itemsanity off, Trophy Races on the harder tracks now need your first boost.
-- **Skip Cutscenes:** new local option under Options &gt; Gameplay.
-- **Discord Status:** new local option under Options &gt; Archipelago, off by default. Shows your track, mode, check count and race clock; no room, slot or seed details.
-- **Freezes:** the one-second freezes while racing are fixed. Short pauses on screen changes remain.
-- **Steam Deck:** Fullscreen no longer lags.
-- **Cutscenes:** the boss door scene plays once per hub and the Oxide Final Challenge scene once per seed.
-- **Fresh rooms:** traps and Wumpa from an old room of the same seed no longer carry over.
-- **Traps:** Flatten waits for a race instead of firing in the hub, and a Mask no longer drops queued traps.
-- **Title screen:** Archipelago colours on the ring and an ARCHIPELAGO line.
-- **Signed downloads:** `manifest.json` and its minisign signature let you check the client archives.
-
-## Downloads
-
-Get `ctr-archipelago-v0.2.2-windows-x86.zip` for Windows or `ctr-archipelago-v0.2.2-linux-x86.tar.gz` for Linux and Steam Deck (glibc 2.36 or newer). Each has the client and the matching `ctr.apworld`. A 0.2.1 room can be played on the 0.2.2 client; for new seeds use the 0.2.2 client and APWorld together. Archipelago 0.6.7 or newer is needed to host. The separate `ctr.apworld` and `Crash.Team.Racing.yaml` are for hosts and generators. The `.sha256` files check your downloads, `manifest.json` and `manifest.json.minisig` are the signed manifest (how to check it is in the full notes), and the `.debug` files help with crash reports; you don't need them to play. You need your own NTSC-U disc; no game data is included. The client isn't code-signed.
-
-Known issues: short pauses on screen changes and low frame rate in Gem Stone Valley ([#376](https://github.com/dowlle/ctr-native-ap/issues/376)), large reconnect backlogs can stall the game ([#147](https://github.com/dowlle/ctr-native-ap/issues/147)), and some podium characters can show up invisible ([#282](https://github.com/dowlle/ctr-native-ap/issues/282)). The final Linux build passed its automated checks; earlier 0.2.2 test builds ran on the Steam Deck.
-
-## Download checksums
-
-| Asset | SHA-256 |
-|---|---|
-| `ctr-archipelago-v0.2.2-windows-x86.zip` | `df6c5fac4d5c823a71374de322e43536514fdf91d3e614f2d396a8bd142adc9b` |
-| `ctr-archipelago-v0.2.2-linux-x86.tar.gz` | `e52a20500152350aaa038b674aee0060fa4acd19e3f8f6878923fd9424c5f511` |
-| `ctr.apworld` | `f939d2dd02e5b84261a1fb683ad786a2b9921eae1f0ce6d1dfabe45e729a0a0c` |
-| `manifest.json` | `9e94cd5afaba7e1cdbecca8f51d3826dc483ec5568d4c06647211d527a13f2a0` |
-
-## Reporting a problem
-
-[Open a GitHub issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) with your client version, platform, seed or YAML and what happened. Include the support bundle when it helps: run `support-bundle.bat` on Windows or `support-bundle.sh` on Linux and check it before attaching; it doesn't upload anything by itself. Questions are welcome in the [Crash Team Racing channel](https://discord.com/channels/731205301247803413/1222304293751750777) on the Archipelago Discord.
-
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/palex00/Archipelago/releases/tag/logic-test-0.4.0</id>
-    <title>Logic Test v0.4.0</title>
-    <updated>2026-09-28T19:02:24+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <author>
-      <name>palex00</name>
-    </author>
-    <content>- Items whose own location's rule depends on them (self-locking placements) now stay in the under-test game instead of being gated.
-- New `/keys [sphere]` client command lists the locations still holding a sphere's keys (current sphere by default).
-- Quieter client console: the full sphere table only prints on `/status`; leaks and "ready" are announced once.
-- Opened spheres show as done even if their key leaked, with the leak sphere noted in red.
-- Fixed a stale "waiting" status after the client reconnects.
-
-Regenerate seeds to use `/keys`.</content>
-    <link href="https://github.com/palex00/Archipelago/releases/tag/logic-test-0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.4</id>
-    <title>R.E.P.O v0.4.4</title>
-    <updated>2026-09-28T20:14:35+00:00</updated>
-    <author>
-      <name>Automagic</name>
-    </author>
-    <content>Mod:&#13;
-* turned the internal debug binds into debug commands which can be used by turning on 'Developer mode' in the RepoLib config&#13;
-* added a config option to prevent cosmetic crates from spawning&#13;
-* reduced default money deducted by audit traps to 33%&#13;
-* if a player accidentally connected to a multiworld before joining someone else's lobby, they will now automatically disconnect from that multiworld when joining&#13;
-* fixed an issue where the truck screen thought that some goal conditions weren't completed if the player obtained more items than required&#13;
-* improved error handling when ap shop items can't spawn (it should no longer lock up the game when traveling to the shop)&#13;
-&#13;
-Apworld: &#13;
-* reduced the default weight of moon phase traps from 3 to 2&#13;
-* added a new option to set the percentage of money lost when receiving an audit trap (default is 33%)&#13;
-* fixed a minor logic issue with monster souls&#13;
-* shop locations greater than shop_upgrade_logical are now correctly excluded&#13;
-&#13;
-This version will work with multiworlds from 0.4.1 and above.</content>
-    <link href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.8</id>
     <title>Stick Ranger v1.8.8</title>
@@ -1616,7 +1508,7 @@ Since this is a pre-release, I am leaving in some debug commands (to be used RES
   </entry>
   <entry>
     <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4-pre1</id>
-    <title>Half-Life (Sven Co-op) v0.1.0r2</title>
+    <title>Half-Life (Sven Co-op) v0.1.0r3</title>
     <updated>2026-10-01T20:52:46+00:00</updated>
     <author>
       <name>hl1-sven-ap</name>
@@ -1704,7 +1596,7 @@ In addition, !menu opens an interface to warp, return to hub, find the nearest c
   </entry>
   <entry>
     <id>https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v6</id>
-    <title>A Link to the Past Beta v6.0.2r2</title>
+    <title>A Link to the Past Beta v6.0.2r3</title>
     <updated>2026-10-01T23:07:49+00:00</updated>
     <author>
       <name>Berserker</name>
@@ -1727,5 +1619,145 @@ In addition, !menu opens an interface to warp, return to hub, find the nearest c
 - The client now actually checks if ability lock is enabled&#13;
 - Fixed one instance where I didn't change `Crash2` to `Crash 2`</content>
     <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre1-1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Wakamu/Archipelago/releases/tag/0.4.0</id>
+    <title>Archipelago Visual Tracker v0.4.0</title>
+    <updated>2026-10-02T01:09:25+00:00</updated>
+    <author>
+      <name>Wakamu</name>
+    </author>
+    <content>- Added "Show Missing" to out of logic pin details to retrieve the missing progression item required to put that check in logic (doesn't work if more than 1 progression item is needed).&#13;
+- Added "Uncollected" filter to the Item tab , allowing you to look through items you have no collected / received yet (can also be filtered by type).</content>
+    <link href="https://github.com/Wakamu/Archipelago/releases/tag/0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.10.0</id>
+    <title>Hades2Rogue v0.10.0</title>
+    <updated>2026-10-02T01:53:51+00:00</updated>
+    <author>
+      <name>BrittisH39</name>
+    </author>
+    <content>## Biggest changes:&#13;
+- Enemy_locations replaced with Enemysanity option, which allows players to shuffle or randomize enemies in addition to setting them as locations. The shuffle and random modes are still experimental, so expect some major bugs if you select those options.&#13;
+- Dream route added! Along with options to make it feel unique. Shoutout to zerp and their DreamDiveTweaks mod for allowing runs to go past 4 regions.&#13;
+- Added progressive_per to Keepsakesanity and Petsanity, which adds progressive checks for each individual keepsake/pet.&#13;
+- Minibosses aren't shuffled like normal enemies. Instead include_minibosses shuffles the miniboss rooms, so you might walk into a miniboss room in Erebus and find Charybdis.&#13;
+- Room locations are now numbered per region instead of per route, and defeating a region's boss sends any room locations you have left in that region.&#13;
+- Added Chaos to GodSanity.&#13;
+- Chaos Gates can now show up in every region of the Underworld and Surface, instead of only a few.&#13;
+- Reworked the Hades 2 tab in the client. It now shows your progress through each region, your goal progress, and lists of what you've checked. It also no longer relies on color to tell you things.&#13;
+- Reworked DeathLink so deaths no longer queue up.&#13;
+&#13;
+## Other Changes:&#13;
+- Legendary and Duo boons are now more likely with more rarity increases.&#13;
+- NPCs that spawn in different ways should now send their keepsakes regardless of where you give them nectar.&#13;
+- Tried to fix some issues with when the Daedalus Upgrade item is applying.&#13;
+- Fixed location issues in Fields of Mourning and Tartarus. Primarily that Fields of Mourning wasn't sending locations for each encounter, instead only sending them when you walk through the door. Tartarus was only sending locations when completing a bonus side room.&#13;
+- Fixed players who had things set up incorrectly being permanently locked out of checks. Once the issue is corrected, locations should send as normal.&#13;
+- Overlay now notes who you received items from.&#13;
+- Attempted suppression of some camera takeovers when first entering the Crossroads hub. I will be working on this more as I catch more.&#13;
+- Tried a really simple fix to hopefully stop armor from continuing to show as the screen blacks out during deaths.&#13;
+- Zagreus Journey failed to install correctly message should now be suppressed if players have Zagreus Journey disabled in the YAML.&#13;
+- Split Met and Defeated checks for Scylla and the Sirens into Scylla, Roxy, and Jetty.&#13;
+- Added a seed-identity guard so starting a new Archipelago without closing the game shouldn't ever send locations from a previous archipelago connection.&#13;
+- Chaos Gates should now count as rooms, since my previous assumption that they were extra is not correct.&#13;
+- Room counter should now always show the room you're in instead of the last room you sent.&#13;
+- Removed the hide and seek locations, and suppressed that flashback from ever happening.&#13;
+- Vow of Menace can now pull enemies from regions you haven't visited yet.&#13;
+- Suppressed all resource-gathering spots since there isn't a way to use them in the AP, and I don't intend to use them for anything.&#13;
+- Suppressed the "Divination of the Elements" pop-up the first time a player collects a boon.&#13;
+- Added 0.10.0 stuff to the Guided YAML and YAML Creator.&#13;
+- Fixed an issue where Nightmare route was still locked until an unlock was sent even if players disabled lock_routes.&#13;
+- Made ZJ an optional dependency. It's no longer downloaded with the mod, so if you want the Nightmare route, download it yourself in r2modman.&#13;
+- DreamDiveTweaks is now a dependency, and is downloaded with the mod.&#13;
+- Fixed room locations not sending if a later room in that region had already been sent by someone else (a collect, a release, or an admin).&#13;
+- Room logic is more forgiving, the last rooms of a region aren't expected until you can beat its boss.&#13;
+- Fixed per_aspect_room_based with combine_pools not creating any aspect room locations.&#13;
+- Final Challenge now ends the run right after the victory screen when you defeat Zagreus, and fixed a few issues with where the Zagreus contract sent you afterwards.&#13;
+- Fixed a crash in GodSanity when a boon was offered while you had no gods unlocked.&#13;
+- Fixed gods you hadn't unlocked yet showing up in the first room of Ephyra.&#13;
+- Fixed Daedalus Hammers rarely showing up in runs with GodSanity.&#13;
+- Fixed some Starting NPC gifts not doing anything.&#13;
+- Grasp can no longer be bought at the altar, since it comes from items.&#13;
+- Helper story rooms should no longer show up as the very first room of a Nightmare region.&#13;
+- Keepsake and Met locations can all be sent from a Dream Dive.&#13;
+- If you win while the client is disconnected, the win is now saved and sent once you reconnect.&#13;
+- start_inventory_from_pool now works with Grasp, Arcana, Keepsakes, and Vow Removals.&#13;
+- Setting a filler's percentage to 0 now actually means you get none of it. Nectar was sneaking in anyway.&#13;
+- Item and location IDs are now locked in place, so future updates shouldn't break seeds generated on older versions.&#13;
+- The Surface door now opens as soon as you receive access to it, instead of needing to leave the room and come back.&#13;
+- Fixed a crash that could happen when a combat helper showed up somewhere they normally don't.&#13;
+- Fixed a rare case where the same room could repeat forever.&#13;
+- With combine_pools, the shared pool is no longer sent early when your goal needs more than one route.&#13;
+- Fixed some option combinations failing to generate correctly.&#13;
+- Fixed Universal Tracker not counting some items towards logic.</content>
+    <link href="https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.10.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.7</id>
+    <title>Stardew Valley v8.1.7</title>
+    <updated>2026-10-02T03:30:57+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content># First version submitted as a PR to Archipelago Core: https://github.com/ArchipelagoMW/Archipelago/pull/6477&#13;
+&#13;
+## Apworld&#13;
+- Fixed logic issues with many entrances (Alec, Cellar, etc)&#13;
+- Fixed multiple bugs with same type and same direction ER&#13;
+- Fixed a bug with dynamic item classifications confusing UT (particularly allsanity goal)&#13;
+- Added a condition to the witch warp from wizard to be able to have reached the other side&#13;
+- Forbid all farming-based artisan goods to appear in seed prices to avoid logic loops&#13;
+- Fixed an issue with Starter sources not properly taking into account extra requirements (Notably, furnace and garden pot requiring the NPC)&#13;
+- Fixed strawberry seeds DR price not accounting for the expected x10 in the mod&#13;
+- Big update to all documentation&#13;
+- Fixed an issue where Max prices shuffled bundles can theoretically require more items than there are unique items. Allow picking duplicates when that happens&#13;
+- Added using Marnie's shop through the animal catalogue to logic&#13;
+&#13;
+## Mod&#13;
+- Fixed a Lingo hint that was being given in reverse&#13;
+- Added a safeguard against modded maps with null forage accidentally crashing the help wanted board&#13;
+- Exit the fishing trap early when the player does not own a rod, to avoid triggering other fishing statistics such as walnuts&#13;
+- Added a baby name who did nothing to deserve it&#13;
+- Updated Meme bundle hints with the new 8.x.x meme bundles</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FeluciaPS/GarfieldKartAP/releases/tag/1.1.0</id>
+    <title>Garfield Kart - Furious Racing v1.1.0</title>
+    <updated>2026-10-02T05:49:37+00:00</updated>
+    <author>
+      <name>FeluciaPS</name>
+    </author>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>- Added a proper connection menu to the game, replacing the basic unity UI one&#13;
+- Added new art by Flow for the main logo, thunderstore logo, and time trial medals!&#13;
+- Added text tracker info for Grand Prix, displaying victory and spoiler unlocks.&#13;
+- Added better handling for losing connection midgame. It now brings up a popup that lets you try to reconnect, and if dismissed, brings you back to the connection screen.&#13;
+- Changed the victory tracker display on the track/cup select to be based on your local win state, rather than based on the location, to fix collect issues.&#13;
+- Changed the notification display on the top to not display debug log messages about the filler items being used&#13;
+- Changed Sneak-A-Peak to have a higher chance of giving you Lasagna alongside spring, if all puzzle pieces haven't been collected. This is due to Sneak-A-Peak having lasagna as a logical requirement for puzzle piece 3.&#13;
+- Changed Blazing Oasis Puzzle Piece 3 to only require Spring, rather than Lasagna/Spring.&#13;
+- Fixed cups_and_races expecting either the cup or race unlock. It now just expects the race unlock for logic.&#13;
+- Fixed the item display acting wonky with itemsanity item removals.&#13;
+- Fixed progression_balancing and accessibility not being added into the yaml.&#13;
+- Fixed some messy behavior with re-enabling the grand prix button in some cases.&#13;
+- Updated the Archipelago client to connect to 0.6.7.&#13;
+&#13;
+[Mod Download](https://github.com/robotzurg/GarfieldKartAPMod/releases/latest)&#13;
+[Setup Guide](https://github.com/FeluciaPS/GarfieldKartAP/blob/main/docs/setup_en.md)</content>
+    <link href="https://github.com/FeluciaPS/GarfieldKartAP/releases/tag/1.1.0"/>
   </entry>
 </feed>

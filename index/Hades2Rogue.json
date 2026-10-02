@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "BrittisH39"
+  ],
   "description": "Hades 2 is a rogue-like dungeon crawler in which the witch Melinoe battles\nthrough the Underworld to defeat the Titan of Time, Chronos.",
   "game": "Hades2Rogue",
   "github": "https://github.com/BrittisH39/Hades2Archipelago",
   "license": "GPL-3.0",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.2.0": {
       "created_at": "2026-07-01T18:00:18Z",
@@ -18,6 +25,21 @@
       "title": "v0.2.0",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "v0.10.0": {
+      "created_at": "2026-10-02T01:53:51Z",
+      "description": "## Biggest changes:\r\n- Enemy_locations replaced with Enemysanity option, which allows players to shuffle or randomize enemies in addition to setting them as locations. The shuffle and random modes are still experimental, so expect some major bugs if you select those options.\r\n- Dream route added! Along with options to make it feel unique. Shoutout to zerp and their DreamDiveTweaks mod for allowing runs to go past 4 regions.\r\n- Added progressive_per to Keepsakesanity and Petsanity, which adds progressive checks for each individual keepsake/pet.\r\n- Minibosses aren't shuffled like normal enemies. Instead include_minibosses shuffles the miniboss rooms, so you might walk into a miniboss room in Erebus and find Charybdis.\r\n- Room locations are now numbered per region instead of per route, and defeating a region's boss sends any room locations you have left in that region.\r\n- Added Chaos to GodSanity.\r\n- Chaos Gates can now show up in every region of the Underworld and Surface, instead of only a few.\r\n- Reworked the Hades 2 tab in the client. It now shows your progress through each region, your goal progress, and lists of what you've checked. It also no longer relies on color to tell you things.\r\n- Reworked DeathLink so deaths no longer queue up.\r\n\r\n## Other Changes:\r\n- Legendary and Duo boons are now more likely with more rarity increases.\r\n- NPCs that spawn in different ways should now send their keepsakes regardless of where you give them nectar.\r\n- Tried to fix some issues with when the Daedalus Upgrade item is applying.\r\n- Fixed location issues in Fields of Mourning and Tartarus. Primarily that Fields of Mourning wasn't sending locations for each encounter, instead only sending them when you walk through the door. Tartarus was only sending locations when completing a bonus side room.\r\n- Fixed players who had things set up incorrectly being permanently locked out of checks. Once the issue is corrected, locations should send as normal.\r\n- Overlay now notes who you received items from.\r\n- Attempted suppression of some camera takeovers when first entering the Crossroads hub. I will be working on this more as I catch more.\r\n- Tried a really simple fix to hopefully stop armor from continuing to show as the screen blacks out during deaths.\r\n- Zagreus Journey failed to install correctly message should now be suppressed if players have Zagreus Journey disabled in the YAML.\r\n- Split Met and Defeated checks for Scylla and the Sirens into Scylla, Roxy, and Jetty.\r\n- Added a seed-identity guard so starting a new Archipelago without closing the game shouldn't ever send locations from a previous archipelago connection.\r\n- Chaos Gates should now count as rooms, since my previous assumption that they were extra is not correct.\r\n- Room counter should now always show the room you're in instead of the last room you sent.\r\n- Removed the hide and seek locations, and suppressed that flashback from ever happening.\r\n- Vow of Menace can now pull enemies from regions you haven't visited yet.\r\n- Suppressed all resource-gathering spots since there isn't a way to use them in the AP, and I don't intend to use them for anything.\r\n- Suppressed the \"Divination of the Elements\" pop-up the first time a player collects a boon.\r\n- Added 0.10.0 stuff to the Guided YAML and YAML Creator.\r\n- Fixed an issue where Nightmare route was still locked until an unlock was sent even if players disabled lock_routes.\r\n- Made ZJ an optional dependency. It's no longer downloaded with the mod, so if you want the Nightmare route, download it yourself in r2modman.\r\n- DreamDiveTweaks is now a dependency, and is downloaded with the mod.\r\n- Fixed room locations not sending if a later room in that region had already been sent by someone else (a collect, a release, or an admin).\r\n- Room logic is more forgiving, the last rooms of a region aren't expected until you can beat its boss.\r\n- Fixed per_aspect_room_based with combine_pools not creating any aspect room locations.\r\n- Final Challenge now ends the run right after the victory screen when you defeat Zagreus, and fixed a few issues with where the Zagreus contract sent you afterwards.\r\n- Fixed a crash in GodSanity when a boon was offered while you had no gods unlocked.\r\n- Fixed gods you hadn't unlocked yet showing up in the first room of Ephyra.\r\n- Fixed Daedalus Hammers rarely showing up in runs with GodSanity.\r\n- Fixed some Starting NPC gifts not doing anything.\r\n- Grasp can no longer be bought at the altar, since it comes from items.\r\n- Helper story rooms should no longer show up as the very first room of a Nightmare region.\r\n- Keepsake and Met locations can all be sent from a Dream Dive.\r\n- If you win while the client is disconnected, the win is now saved and sent once you reconnect.\r\n- start_inventory_from_pool now works with Grasp, Arcana, Keepsakes, and Vow Removals.\r\n- Setting a filler's percentage to 0 now actually means you get none of it. Nectar was sneaking in anyway.\r\n- Item and location IDs are now locked in place, so future updates shouldn't break seeds generated on older versions.\r\n- The Surface door now opens as soon as you receive access to it, instead of needing to leave the room and come back.\r\n- Fixed a crash that could happen when a combat helper showed up somewhere they normally don't.\r\n- Fixed a rare case where the same room could repeat forever.\r\n- With combine_pools, the shared pool is no longer sent early when your goal needs more than one route.\r\n- Fixed some option combinations failing to generate correctly.\r\n- Fixed Universal Tracker not counting some items towards logic.",
+      "download_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.10.0/Hades2Rogue.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5d1d2cc0a27656478ed64e9c868a0ed834f3a5e3072f426090f336f579f5f8fc",
+      "html_url": "https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.10.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 145330,
+      "source_url": "https://api.github.com/repos/BrittisH39/Hades2Archipelago",
+      "tag": "v0.10.0",
+      "title": "Hades 2 Rogue v0.10.0",
+      "version_simple": "0.10.0",
+      "world_version": "0.10.0"
     },
     "v0.3.0": {
       "created_at": "2026-07-02T00:33:13Z",

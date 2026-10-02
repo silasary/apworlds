@@ -5,7 +5,7 @@ items.
 
 
 ## Downloads
-- <a href="https://github.com/barretg/hl1-anniversary-ap/releases/download/v0.3/half_life.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/barretg/hl1-anniversary-ap/releases/download/v0.3.1/half_life.apworld">Latest Version (0.3.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
