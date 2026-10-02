@@ -44,9 +44,9 @@ Otherwise, install `qt6`, `patch`, `git`, `sdl2`, `glew`, `cmake`, `python` and 
       - Press the `Download Files` button.
       - Set Make Flags, e.g. `-j8 BETTERCAMERA=1 NODRAWINGDISTANCE=1` to enable Better Camera and No Drawing Distance.
       - Press `Apply Patches` to select patches to apply. Example patches include:
+        - Automatic Bowser Spin: Hold the joystick in any direction to spin Bowser automatically. Holding it farther from the center accelerates the spin faster, up to vanilla acceleration and maximum-speed limits.
         - 60FPS: Improves frame rate.
-        - Enhanced Moveset: Gives Mario new abilities. [Details here](https://github.com/TheGag96/sm64-port).
-        - Nonstop Mode: Makes it possible to fetch multiple stars in a level without exiting the level first.
+        - Enhanced Moveset: Gives Mario new abilities. [Details here](https://github.com/TheGag96/sm64-port#extended-moveset-for-sm64).
       - Press `Create Build`. This will take several minutes.
       - You can also use the Repository and Branch fields to build with different repos or branches if you want to build using a fork or development version of SM64AP.
       - For more details, see:

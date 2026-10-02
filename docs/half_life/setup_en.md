@@ -1,19 +1,24 @@
-# Half-Life Archipelago Setup Guide
+# Half-Life Trilogy Archipelago Setup Guide
+
+Half-Life Trilogy is Half-Life, Opposing Force and Blue Shift as one
+Archipelago world. In the Archipelago game list, YAMLs and the Launcher it is
+still called **Half-Life**; the name there is unchanged so existing YAMLs and
+seeds keep working.
 
 ## What you need
 
 - **Half-Life** on Steam, current build. Not the `steam_legacy` beta branch.
 - **Archipelago** 0.6.7 or newer.
-- The **Half-Life apworld**, in `<Archipelago>/custom_worlds/`.
+- The **Half-Life Trilogy apworld**, `half_life.apworld`, in
+  `<Archipelago>/custom_worlds/`.
+- Optionally **Opposing Force** and/or **Blue Shift** on Steam, in the same
+  library as Half-Life, for a seed that includes them. Install them *before*
+  running `/install`, or run it again after buying one.
 
 The mod installs as its own game folder, `hlap`, alongside `valve`. Your own
 Half-Life is never modified: the mod folder inherits every map, model and sound
 from it through `fallback_dir "valve"`. Removing the mod is deleting one folder,
 and the client's `/uninstall` does exactly that.
-
-> **Early days.** This is playable but has not had a full run-through. Expect
-> rough edges past the first few missions, and see `docs/PORT_PLAN.md` in the
-> repository for what has been confirmed working and what has not.
 
 ## Installing
 
@@ -35,7 +40,11 @@ is not connected -- otherwise closing the client would be a way past every lock
 in the game.
 
 Start a New Game and you arrive in the hub rather than on the tram. Every mission
-is reached from there.
+is reached from there: walk into a mission's entrance, or press its button, and
+the game says "Warping to <mission>" and takes you there a couple of seconds
+later. A mission that is still locked says why instead. The hub has entrances
+for Half-Life's missions; Opposing Force and Blue Shift missions are reached with
+`!warp`.
 
 Commands work in two places: **chat** (`Y`), with a `!` in front, or the
 **console** (`~`, which needs `-console`) without it. Chat is usually the one you
@@ -45,13 +54,15 @@ want -- one key, no pause, no `ap_` prefix to type.
 | --- | --- | --- |
 | `!ap` | `ap` | every mission and its unlock status |
 | `!warp <number or name>` | `ap_warp …` | travel to an unlocked mission |
-| `!warp <mission> <part>` | `ap_warp …` | to a part you have already reached |
+| `!warp <mission> <part>` | `ap_warp …` | to a part you have already reached; the part as `3`, `p3`, `part 3` or `pt 3` |
+| `!warp <map>` | `ap_warp …` | that map's part of its mission, such as `!warp c2a3b` |
 | `!warp <name>` | `ap_warp …` | to a warp point of your own |
 | `!setwarp [name]` | `ap_setwarp …` | make a warp point where you stand |
 | `!warps` | `ap_warps` | the warp points you have made |
 | `!hub` | `ap_hub` | return to the hub |
-| `!tracker [map]` | `ap_tracker …` | locations found and still out there |
+| `!tracker [filter]` | `ap_tracker …` | locations found and still out there; the filter is a mission, a map, or `weapons` for each game's weapon checks |
 | `!find [text]` | `ap_find …` | point at the nearest unfound check |
+| `!menu` | `ap_menu` | the warp and tracker as a menu, picked with the number keys (`0` closes it) |
 | `!help` | `ap_help` | these, in game |
 
 A `/` works in chat too, if that is what your fingers do.
@@ -148,7 +159,8 @@ has sent them: walking over a shotgun you have not been sent leaves it where it
 is, and the check for it still fires.
 
 Nihilanth is not unlocked by an item. It opens once you have finished
-`missions_required` other missions, and clearing it wins your slot.
+`missions_required` other missions. Clearing it wins your slot when Half-Life is
+the only game in the seed; with more than one, see below.
 
 Warping into a mission loads the map fresh, so you always arrive with exactly
 what the seed says you should have and can replay a mission freely. Transitions
@@ -163,32 +175,32 @@ server.
 | Option | Default | What it does |
 | --- | --- | --- |
 | `missions_required` | all of them | how many missions open Nihilanth |
-| `chargesanity` | on | every health and HEV wall unit, and every Xen healing pool, is a check (123 of them) |
+| `chargesanity` | on | every health and HEV wall unit, and every Xen healing pool, is a check (122 in Half-Life) |
 | `exclude_intro_missions` | on | drop Black Mesa Inbound, the tram ride |
 | `logic_difficulty` | strict | whether logic expects a suitable weapon per mission |
 | `shuffle_hev_suit` | off | armour stays at zero until the item arrives |
 | `shuffle_longjump` | off | on: the module is an item. Off: Half-Life hands it out as it always did |
-| `ammo_relief` | off | **experimental:** a gun the level stocks no ammo for is refilled five minutes after it runs dry |
+| `shuffle_flashlight` | off | on: the flashlight key does nothing until the Flashlight arrives; with Opposing Force in, its maps need the Night Vision Goggles instead. The hub is always lit |
+| `melee_throw` | off | on: adds Melee Throw, which lets secondary fire throw the crowbar or knife. Walk over it to pick it up, or it comes back after ten seconds |
 | `trap_percentage` | 15 | share of your filler replaced by traps |
+| `include_half_life` | on | Half-Life's missions. Turning every game off turns this back on |
+| `include_opposing_force` | off | Opposing Force's 12 missions and 7 weapons. Needs the game installed |
+| `include_blue_shift` | off | Blue Shift's 6 missions. Needs the game installed |
+| `opposing_force_missions_required` | all of them | how many Opposing Force missions open Worlds Collide |
+| `blue_shift_missions_required` | all of them | how many Blue Shift missions open Power Struggle |
+| `random_starting_weapon` | on | with Opposing Force in, start with the crowbar, knife or pipe wrench at random; the others become items |
+| `viewmodel_style` | per_campaign | `always_gordon` keeps Gordon's hands on every game's maps |
 | `death_link_amnesty` | 4 | deaths forgiven before one goes out to the multiworld |
+
+With more than one game in the seed, you win by finishing every included
+game's finale; each opens on its own game's mission count. `shuffle_hev_suit`
+also covers each game's own armour item: the PCV on Opposing Force's maps, the
+Security Armor (Barney's vest and helmet) on Blue Shift's. `!ap` lists missions
+by game, and `!warp of 3` or `!warp bs 2` warps by a game's own mission number.
 
 The HEV suit is never taken away from you, whatever `shuffle_hev_suit` says: in
 GoldSrc the suit draws the weapon HUD and owns weapon switching, so a player
 without one cannot use what they are holding. What the item controls is armour.
-
-`ammo_relief` sits under **Experimental Features** in the YAML and is exactly
-that: it works, and its timing is still rough in ways listed in the template's
-own description. Nothing it does can take anything away from you -- it only ever
-adds ammo -- so the worst case is a refill arriving when you did not need one.
-
-It is for the seed that hands you the crossbow in a map with no bolts
-in it. With it on, a gun that runs dry on ammo the level does not stock anywhere
-says so, and the suit synthesises more five minutes later; if it is empty again
-within ten seconds of a refill you get one more for free, which covers dying and
-reloading a save from before it. The wait follows you through a mission's own
-transitions -- the next map has no bolts either -- but going to the hub or
-loading a save starts it again, since either can put ammo back in your hands. Off by default, because with it on a patient
-player is never really out of ammo.
 
 DeathLink counts the deaths Half-Life does not treat as deaths, too: falling into
 the void on Xen and losing a scientist you were supposed to protect both end in a
@@ -198,6 +210,12 @@ fade to black and a reloaded save rather than in a corpse, and both are sent.
 
 **The client says the mod folder is not installed.** Run `/install`. If it says
 there is no server dll, this build of the apworld does not ship one yet.
+
+**A mission says it needs Opposing Force or Blue Shift, which is not
+installed.** The seed includes a game this Half-Life folder does not have. Install
+it from Steam into the same library, then run `/install` again. The rest of the
+seed plays meanwhile. If the client says the game is installed but was not linked
+in, you bought it after your last `/install`; run `/install` again.
 
 **The game starts on the wrong content.** Check the launch option is `-game
 hlap`, and that `<Half-Life>/hlap/liblist.gam` exists.

@@ -198,6 +198,38 @@
       "title": "Release v0.4.1",
       "version_simple": "0.4.0",
       "world_version": "0.4.0r2"
+    },
+    "v0.5.0-pre1": {
+      "created_at": "2026-10-01T19:16:44Z",
+      "description": "# New Stuff:\r\n\r\n## Ability Lock:\r\n- Adds 9 items to the pool that unlock Crash's abilities\r\n- Crash is at minimum able to run, jump, and crouch\r\n- The abilities are: Crawl, Slide, Ground Spin, Slide Spin, Jump Spin, High Jump Spin, Slam, Crouch Jump, Slide Jump\r\n- Logic was added **ONLY** for warp room 1, the rest is the wild west\r\n  - You might end up needing to use debug commands to unlock abilities or cheat them in from the server\r\n\r\n## Death Link Amnesty:\r\n- Set an _x_ amount of deaths required to send a deathlink to the server\r\n\r\n## General Client Updates/Fixes:\r\n- Updated the Archipelago Core Library to 2.0.3\r\n  - This changes how the UI looks a bit\r\n  - There's now a disconnect and an unstuck button that I did NOT implement functionality for just yet\r\n- `/help` now lists all commands\r\n- `/warps` shows all discovered warp room destinations when warp randomizer is enabled\r\n- Client now checks that inserted assembly code is actually run\r\n  - You should now get an error when not on \"Interpreter\" mode\r\n- Client now attaches an ID into the game's memory that is based on the multiworld seed\r\n  - This ID is used to prevent checks from being released when loading a save state that has no ID or a different ID\r\n- Added a space in the game's name `Crash2` -> `Crash 2`\r\n- Client should now more cleanly connect into a game that was connected to before\r\n- Other internal optimizations/improvements\r\n\r\n## Apworld Fixes:\r\n- Fixed the generation error when you have multiple Crash 2's in a multiworld\r\n- Fixed life/wumpa checks from containing `^` and `&` symbols in their name\r\n\r\n### Note:\r\nSince this is a pre-release, I am leaving in some debug commands (to be used RESPONSIBLY) if you want to test some things out yourself. You will type these in the client:\r\n- /debug_openwarproom\r\n  - Fully opens the warp room and all secret entrances (**and sends checks**)\r\n- /debug_unlockAbilities, /debug_lockAbilities, and /debug_unlock (ability name)\r\n  - Used to unlock/lock abilities\r\n- /syncCrashGameState\r\n  - This will sync the current game state to what the game state should be based on all received items\r\n  - Use this to undo the debug lock/unlock commands\r\n\r\n### Known Issues:\r\n- The client prints the warning `ReadByteArray failed at ...` when switching levels, don't worry about it\r\n- Connecting, then loading a save that has no connection ID will cause the client to spam an incorrect error message, kinda forcing you to restart the client\r\n- Some other older issues are still present\r\n- Probably something else because this update changes a lot of code and I haven't done too much testing",
+      "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre1/crash2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a8c74a63f4f33183f64df160c1eac869fc0d4471e6106ab2f72e4d4851bff0d6",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre1",
+      "minimum_ap_version": "0.6.5",
+      "prerelease": true,
+      "size": 49142,
+      "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
+      "tag": "v0.5.0-pre1",
+      "title": "v0.5.0 Pre Release 1",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0rc1"
+    },
+    "v0.5.0-pre1-1": {
+      "created_at": "2026-10-01T23:38:27Z",
+      "description": "Bug fixes:\r\n- The client now actually checks if ability lock is enabled\r\n- Fixed one instance where I didn't change `Crash2` to `Crash 2`",
+      "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre1-1/crash2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a8c74a63f4f33183f64df160c1eac869fc0d4471e6106ab2f72e4d4851bff0d6",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre1-1",
+      "minimum_ap_version": "0.6.5",
+      "prerelease": true,
+      "size": 49142,
+      "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
+      "tag": "v0.5.0-pre1-1",
+      "title": "v0.5.0 Pre Release 1-1",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0rc1.post1"
     }
   }
 }

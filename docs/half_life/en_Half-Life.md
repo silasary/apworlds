@@ -1,4 +1,7 @@
-# Half-Life
+# Half-Life Trilogy
+
+Half-Life, Opposing Force and Blue Shift on retail Steam, as one world. It is
+listed as **Half-Life** in the game list and in YAMLs.
 
 ## Quick links
 
@@ -8,7 +11,8 @@
 
 Half-Life's campaign is cut into its own 18 missions, from Black Mesa Inbound to
 Nihilanth, using the game's own chapter boundaries. Instead of playing straight
-through, you travel to a mission from a hub, and a mission is locked until the
+through, you travel to a mission from a hub by walking into its entrance or
+pressing its button, and a mission is locked until the
 multiworld sends its unlock item.
 
 Weapons are locked too. Every weapon but the crowbar has to be received before
@@ -20,14 +24,14 @@ number of other missions.
 
 ## What items and locations get shuffled?
 
-**Items:** one unlock per mission, one per weapon, optionally the HEV suit and
-the long jump module, plus filler (ammo, medkits, armour batteries) and three
-traps.
+**Items:** one unlock per mission, one per weapon, optionally the HEV suit, the
+long jump module, the flashlight (and Opposing Force's night vision goggles) and
+Melee Throw, plus filler (ammo, medkits, armour batteries) and traps.
 
-**Locations:** 253 of them.
+**Locations:** 252 for Half-Life.
 
 - reaching each map division of a mission, and finishing the mission
-- pressing use on each of the 108 health chargers and HEV charge panels, empty or
+- pressing use on each of the 107 health chargers and HEV charge panels, empty or
   not, and standing in each of Xen's 15 healing pools -- these can be switched
   off with `chargesanity`
 - reaching each weapon at the place Half-Life would first have given it to you
@@ -46,16 +50,39 @@ after the level has settled.
 
 ## What is the goal?
 
-Kill Nihilanth. It becomes available once `missions_required` other missions have
-been finished.
+Finish the finale of every game in the seed:
+
+| Game | Finale | Opens after |
+| --- | --- | --- |
+| Half-Life | Nihilanth: kill Nihilanth | `missions_required` other Half-Life missions |
+| Opposing Force | Worlds Collide | `opposing_force_missions_required` other Opposing Force missions |
+| Blue Shift | Power Struggle: reach the ending | `blue_shift_missions_required` other Blue Shift missions |
+
+A finale has no unlock item; it opens on its own game's mission count, and only
+missions of that game count toward it. With one game in the seed, its finale is
+the whole goal.
+
+## Opposing Force and Blue Shift
+
+Either game can be added to a seed, or played alone, if you own it. Each brings
+its own missions, its own finale and its own armour item (the PCV, the Security
+Armor), and Opposing Force brings seven weapons and two more melee weapons. The
+goal is then every included game's finale. Half-Life's weapons are items in
+every seed, since all three games place them.
 
 ## Unique local commands
 
-Typed in the game console (`~`):
+Typed in the game console (`~`), or in chat (`Y`) with `!` in place of `ap_`
+(`!warp 3`, and `!ap` for the first):
 
 - `ap` -- every mission and its unlock status
 - `ap_warp <number or name>` -- travel to an unlocked mission
+- `ap_warp <mission> <part>` -- travel to a part of a mission you have reached
+  (the part as `3`, `p3`, `part 3` or `pt 3`)
+- `ap_warp <map>`, such as `ap_warp c2a3b`: that map's part of its mission
+- `ap_setwarp [name]`, `ap_warps` -- make and list warp points of your own
 - `ap_hub` -- return to the hub
 - `ap_tracker [map]` -- locations found and still out there
 - `ap_find [text]` -- point at the nearest unfound check, or one you name
+- `ap_menu`: the warp and tracker as a menu, picked with the number keys
 - `ap_help` -- these, in game

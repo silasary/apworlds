@@ -14,7 +14,7 @@ want Half-Life on its own, buy Half-Life.
 
 ## Requirements
 
-- Sven Co-op (free on Steam). The Half-Life campaign maps ship with it — there is
+- Sven Co-op (free on Steam). The Half-Life campaign maps ship with it: there is
   nothing extra to download.
 - Archipelago 0.6.7 or newer.
 - The `half_life_sven.apworld` file.
@@ -70,8 +70,8 @@ are in logic right now. Nothing to configure: the client uses Universal Tracker'
 window when it finds it and its own when it does not.
 
 Two of this world's decisions are rolled at generation rather than derived from
-your YAML — which mission each campaign opens with, and what the run starts you
-holding — so the world hands the real seed's answers back to the tracker rather
+your YAML: which mission the seed opens with, and what the run starts you
+holding: so the world hands the real seed's answers back to the tracker rather
 than letting it roll its own. Without that its view would drift from the server's
 by a whole starting mission.
 
@@ -129,7 +129,7 @@ campaign has a panel for its intro, and Opposing Force has two more gaps besides
 | Crush Depth | Opposing Force | `!warp 25` | no |
 | Living Quarters Outbound | Blue Shift | `!warp 31` | yes |
 
-Opposing Force's panels run 01-05 and 07-11 with no sixth — that gap is Crush
+Opposing Force's panels run 01-05 and 07-11 with no sixth: that gap is Crush
 Depth. `exclude_intro_missions` drops the three intros and leaves Boot Camp and
 Crush Depth in, console-less, reached by `!warp`.
 
@@ -166,7 +166,7 @@ in Half-Life's or Opposing Force's logic ever expects one.
 **They Hunger also reskins the weapons it borrows**, so a few checks are named
 for what you see rather than what the engine calls it. The crowbar is an
 umbrella, the pipe wrench is a shovel, and hand grenades are sticks of TNT. They
-are the same items as everywhere else — send someone the Pipe Wrench and they
+are the same items as everywhere else: send someone the Pipe Wrench and they
 swing a shovel in Episode 1 and a wrench in Black Mesa.
 
 **Missions Required is per campaign and the settings are independent.**
@@ -182,8 +182,8 @@ campaign almost all of its checks come from reaching maps.
 
 ## Playing the randomizer
 
-You start with the crowbar, the medkit, and **one random mission unlock per
-campaign in the seed**.
+You start with the crowbar, the medkit, and **one random mission unlock**,
+drawn from every campaign in the seed.
 
 **`random_starting_weapon`** swaps the crowbar for a random melee weapon from the
 campaigns you enabled: Opposing Force's pipe wrench or combat knife, They
@@ -192,7 +192,7 @@ there is nothing else to pick and the setting changes nothing.
 
 Whatever it lands on replaces the crowbar rather than joining it. Crowbars in the
 levels are then refused the way any ungranted weapon is, until somebody sends you
-the Crowbar — it is an ordinary item like the wrench, and a wrench start puts it
+the Crowbar: it is an ordinary item like the wrench, and a wrench start puts it
 in the pool. Whichever melee weapon the roll chose leaves the pool instead:
 nobody is going to send you a wrench you are already holding. The medkit is yours
 either way.
@@ -201,7 +201,7 @@ Walk up to a chapter's console in the portal room and press either button. The
 plugin rewires the consoles: one press travels to that mission if you have its
 unlock, or tells you it is locked.
 
-There is no console for Black Mesa Inbound — the portal map does not have one.
+There is no console for Black Mesa Inbound: the portal map does not have one.
 `!warp 0` is the only way to reach mission 0. If you would rather not have a
 mission that can only be reached by typing a command, set
 `include_black_mesa_inbound: false` in your YAML and it is left out of the seed
@@ -221,17 +221,20 @@ Chat commands (press `Y` in game, not the console):
 | `!warp <name>` | the same by name, e.g. `!warp office` |
 | `!warp <name> <part>` | back to one part of it, e.g. `!warp surface tension 3` |
 | `!warp <map>` | the same by map name, e.g. `!warp hl_c11_a3` |
+| `!warp <game> <number>` | a mission counted within one game, e.g. `!warp of 3` (with a part: `!warp of 3 2`) |
+| `!menu` | numbered menus for warping and the tracker, picked with the number keys |
+| `!aphud` | toggle an on-screen counter of checks found on this map, mission and seed |
 | `!hub` | return to the campaign portal |
 
 Every one of these also works **in the console** (`~`), which saves opening chat
 and losing mouse look just to ask where a charger is.
 
 **Mind the leading dot.** Sven Co-op namespaces a plugin's console commands, and
-with no namespace set the separator dot is still there — so it is `.ap`, not
+with no namespace set the separator dot is still there: so it is `.ap`, not
 `ap`. The server prints the exact list at load:
 
 ```
-[AP] console commands ready (6): .ap, .ap_tracker, .ap_find, .ap_warp, .ap_hub, .ap_help
+[AP] console commands ready (8): .ap, .ap_tracker, .ap_find, .ap_warp, .ap_hub, .ap_help, .ap_menu, .ap_hud
 ```
 
 | Chat | Console |
@@ -242,6 +245,8 @@ with no namespace set the separator dot is still there — so it is `.ap`, not
 | `!warp <number or name>` | `.ap_warp <number or name>` |
 | `!hub` | `.ap_hub` |
 | `!help` | `.ap_help` |
+| `!menu` | `.ap_menu` |
+| `!aphud` | `.ap_hud` |
 
 The `!` versions are chat commands: they only work typed into chat (`Y`), not
 into the console. The `.` versions are the reverse.
@@ -257,7 +262,10 @@ before, so this is for going back, never for skipping ahead.
 
 `!warp` numbers run across all campaigns: 0-17 Half-Life, 18-27 Opposing Force,
 28-33 Blue Shift, 34-36 They Hunger. Half-Life's are unchanged, and `!ap` prints
-the numbers grouped by campaign.
+the numbers grouped by campaign. Each mission is also numbered within its own
+game, which is what `!warp hl 5`, `!warp of 3`, `!warp bs 2` and `!warp th 1`
+take: from 0 for a game with an intro mission (so the number matches its hub
+console), from 1 for They Hunger.
 
 `!tracker` only lists checks the seed actually contains, so `chargesanity: false`
 means no charger lines rather than two hundred that can never be ticked.
@@ -268,20 +276,21 @@ Finishing a mission sends you back to the hub automatically and sends its
 completion check. Trying to enter a locked mission is refused.
 
 **Weapons are items.** A weapon lying in the world still sends its check the first
-time you walk over it — anywhere in the campaign, and whether or not you are
+time you walk over it: anywhere in the campaign, and whether or not you are
 allowed to keep it. You cannot hold it until the multiworld gives you that weapon.
 The campaign's own per-map loadouts are stripped for the same reason.
 
 **Chargers are checks.** Every health charger and HEV charge panel sends a check
-the first time someone presses use on it, even an empty one. That is 107 of
-Half-Life's 173 locations, and 143 of the 353 across all four campaigns;
+the first time someone presses use on it, even an empty one. Every Xen healing
+pool sends one the first time someone steps into it. That is 120 of
+Half-Life's 189 locations, and 162 of the 378 across all four campaigns;
 `chargesanity: false` in your YAML removes them all for a much shorter run. The
-other campaigns have far fewer: 23 in Opposing Force, 12 in Blue Shift, 3 in the
+other campaigns have far fewer: 22 in Opposing Force, 18 in Blue Shift, 2 in the
 whole of They Hunger.
 
 **The HEV suit is armour, not the suit.** With `shuffle_hev_suit: true` you keep
-the suit and its HUD from the start — you would not be able to switch weapons
-without it — but your armour is held at zero until the HEV Suit item arrives.
+the suit and its HUD from the start: you would not be able to switch weapons
+without it: but your armour is held at zero until the HEV Suit item arrives.
 Batteries, wall chargers and Armor Battery filler all do nothing until then, and
 the game says so in chat when the item lands.
 

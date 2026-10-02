@@ -51,6 +51,10 @@ Lorsque vous le collectez, le jeu vous informe que vous venez d'envoyer un item 
 > 
 > \*Zunawe a aussi créé un connecteur pour utiliser mgba à la place. Les instructions (en anglais) sur comment le télécharger sont [ici](https://discord.com/channels/731205301247803413/1501334852556034059/1501334956549472436), sur le serveur Discord d'Archipelago
 
+**Comment équiper des anneaux sans avoir accès à Vasu ?**
+
+> Appuyer sur A sur la Boîte à Anneaux dans le deuxième menu d'inventaire ouvre la liste d'anneau.
+
 **Comment est-ce que je peux directement changer la saison pour une saison particulière plutôt que de devoir faire le cycle complet à chaque fois ?**
 
 > Vous pouvez maintenir une diagonale sur votre pavé directionnel just après avoir utilisé le sceptre des saisons. Cela transitionnera vers la saison dont l'icône est placée dans cette direction à côté de l'icône du sceptre des saisons, en haut de votre écran. 

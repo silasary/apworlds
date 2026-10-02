@@ -1,6 +1,6 @@
 # Core Keeper Multiworld Setup
 
-This package is the evidence-validated Core Keeper Archipelago 1.1.0 release.
+This is the Core Keeper Archipelago 1.2.0-rc.2 test candidate for Core Keeper 1.3.0.4 (Steam build 25625027). Gameplay validation is still required before release. Existing AP worlds keep their original checks; generate a new AP world to use the new checks.
 
 1. Install `core_keeper.apworld` with **Install APWorld** in the Archipelago
    Launcher, then restart Archipelago if prompted.

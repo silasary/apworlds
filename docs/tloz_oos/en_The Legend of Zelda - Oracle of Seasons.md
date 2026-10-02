@@ -49,6 +49,10 @@ When collecting it, the game will inform you that you just sent an item to anoth
 > 
 > \*Zunawe also made a connector to use mgba instead. Instructions on how to download and use it are [here](https://discord.com/channels/731205301247803413/1501334852556034059/1501334956549472436) on the Archipelago Discord server
 
+**How do I equip rings without going to Vasu?**
+
+> Pressing A on the Ring Box in the second inventory menu opens the ring list as if you opened it at Vasu's
+
 **How can I switch directly to a specific season instead of cycling all seasons everytime?**
 
 > You can hold a diagonal on your directional pad right after having used the rod. This will switch directly to the season whose icon is placed in that direction next to the Rod of Seasons icon at the top of your screen. Timing is tight, but with some practice you will be able to save precious seconds.

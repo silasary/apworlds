@@ -9,7 +9,11 @@
   "game": "Core Keeper",
   "github": "https://github.com/URAQTDev/Core-Keeper-Archipelago-APWorld-Tracker",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.9.0-rc.8": {
       "created_at": "2026-08-21T02:47:18Z",
@@ -69,6 +73,22 @@
       "title": "Core Keeper Archipelago APWorld and Tracker 1.1.0",
       "version_simple": "1.1.0",
       "world_version": "1.1.0"
+    },
+    "v1.2.0-rc.2": {
+      "created_at": "2026-10-01T21:04:37Z",
+      "description": "# Core Keeper Archipelago 1.2.0-rc.2\n\nPrerelease for Core Keeper 1.3.0.4 (Steam build 25625027).\n\n- Adds 67 checks for the new equipment, pets, enemies, food, blocks, saddles, and Orex content, bringing the catalog to 1,182 checks.\n- Adds Veil Crux Cache as a legendary reward. Legendary acquisition does not create checks; Orex and its truffle are available before the wall.\n- Updates Core Rewards for the game's native chest UI changes.\n- Updates the tracker for the new checks and fixes cattle and pet color palettes.\n- Fixes the local texture installer to extract all twelve skill icons at the main menu, producing all 120 skill-level icons automatically.\n- Fixes the APWorld manifest version format accepted by Archipelago.\n\nGenerate a new AP room to include the new checks. Existing published item and location IDs are preserved. Back up saves before testing.\n\nInstall core_keeper.apworld through Archipelago's Install APWorld option. The texture-free tracker works directly; the optional Windows tracker installer generates game artwork locally. Close Core Keeper before running it.\n\nValidation: mod and extractor compile; catalog, generation, client-state and tracker checks passed during candidate preparation. The packaged tracker installer was tested against a fresh game export, including all twelve skill sprites and cattle palettes. The APWorld passes Archipelago's manifest parser. Most gameplay tests have been confirmed by the maintainer; remaining gameplay coverage is why this release is marked prerelease.\n\nEnemy randomizer additions are outside this update's scope.\n",
+      "download_url": "https://github.com/URAQTDev/Core-Keeper-Archipelago-APWorld-Tracker/releases/download/v1.2.0-rc.2/core_keeper.apworld",
+      "has_manifest": true,
+      "hash_sha256": "cb4f4526b5802e7492cb375c3cfa90e732d408ae2c180c9f1074059e5bafac98",
+      "html_url": "https://github.com/URAQTDev/Core-Keeper-Archipelago-APWorld-Tracker/releases/tag/v1.2.0-rc.2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 67321,
+      "source_url": "https://api.github.com/repos/URAQTDev/Core-Keeper-Archipelago-APWorld-Tracker",
+      "tag": "v1.2.0-rc.2",
+      "title": "Core Keeper Archipelago APWorld and Tracker 1.2.0-rc.2",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0rc2"
     }
   }
 }
