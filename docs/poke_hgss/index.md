@@ -9,7 +9,7 @@ two worlds with the same game name).
 
 
 ## Downloads
-- <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">Latest Version (0.10.0r2)</a>
+- <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">Latest Version (0.10.0r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

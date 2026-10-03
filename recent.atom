@@ -2,67 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-03T13:38:13.417381+00:00</updated>
+  <updated>2026-10-03T18:46:14.712502+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.9.0</id>
-    <title>Final Fantasy X v0.9.0</title>
-    <updated>2026-09-30T13:01:06+00:00</updated>
-    <author>
-      <name>Rurusachi</name>
-    </author>
-    <author>
-      <name>Andrewki</name>
-    </author>
-    <content>## FFX Apworld v0.9.0&#13;
-&#13;
-### Feature&#13;
-- Add Deathlink options to the yaml (@EvelynTSMG)&#13;
-- Gear Customization options for recipe unlocks instead of free uses (@EvelynTSMG)&#13;
-&#13;
-### Enhancement&#13;
-- Add Apworld version to patch file &amp; slot data (@Rurusachi)&#13;
-&#13;
-### Bug Fixes&#13;
-- Fixed inaccurate Djose Highroad primer name (@Andrewki44)</content>
-    <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.9.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.8.0</id>
-    <title>Final Fantasy VIII v0.8.0</title>
-    <updated>2026-09-30T14:05:21+00:00</updated>
-    <author>
-      <name>ff8_arch</name>
-    </author>
-    <content>## Install
-
-1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
-2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
-3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.
-
-### Visual Tracker
-
-`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:
-
-1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
-2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
-3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
-
-Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
-
-Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
-
-
-## What's Changed
-* Release v0.8.0: beta-feedback fixes (moment-leak repair, per-seed saves, First Draw attribution, softlock logic) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/6
-
-
-**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.7.0...v0.8.0</content>
-    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.8.0"/>
-  </entry>
   <entry>
     <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4</id>
     <title>Half-Life (Sven Co-op) v0.4.0</title>
@@ -883,7 +827,7 @@ Since this is a pre-release, I am leaving in some debug commands (to be used RES
   </entry>
   <entry>
     <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4-pre1</id>
-    <title>Half-Life (Sven Co-op) v0.1.0r2</title>
+    <title>Half-Life (Sven Co-op) v0.1.0r3</title>
     <updated>2026-10-01T20:52:46+00:00</updated>
     <author>
       <name>hl1-sven-ap</name>
@@ -971,7 +915,7 @@ In addition, !menu opens an interface to warp, return to hub, find the nearest c
   </entry>
   <entry>
     <id>https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v6</id>
-    <title>A Link to the Past Beta v6.0.2r2</title>
+    <title>A Link to the Past Beta v6.0.2r3</title>
     <updated>2026-10-01T23:07:49+00:00</updated>
     <author>
       <name>Berserker</name>
@@ -1519,6 +1463,11 @@ Free code signing for open source projects, provided by
 &#13;
 * Fixed a packaging issue where certain files would not be included, causing the world to fail to load (@buanjautista, #108)&#13;
 &#13;
+## Changes to Logic&#13;
+&#13;
+* Renamed all regions to more readable names and split regions into more granular chunks reflecting their actual location (@Valkhiya, #107)&#13;
+  * This will also improve the user experience for the small minority of worlds that use region names for hints.&#13;
+&#13;
 ## Fixes to Logic&#13;
 &#13;
 * Fixed many logic issues discovered while changing regions (@Valkhiya, #107)&#13;
@@ -1534,12 +1483,7 @@ Free code signing for open source projects, provided by
 * Added bidirectional region connectors (@Valkhiya, #107)&#13;
   * Passage from trail to valley now requires green leaf and blue ice instead of just blue ice&#13;
   * Passage from fall to garden now requires red flame and green seed instead of just green seed&#13;
-  * Passage from fall to ridge now requires red flame and star instead of just star&#13;
-&#13;
-## Internal Changes&#13;
-&#13;
-* Renamed all the regions to more readable names (@Valkhiya, #107)&#13;
-  * This will also improve the user experience for the small minority of worlds that use region names for hints.</content>
+  * Passage from fall to ridge now requires red flame and star instead of just star</content>
     <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0-pre.2"/>
   </entry>
   <entry>
@@ -2135,5 +2079,279 @@ New:&#13;
 * [SlotLock] Set free items to default to false, for the recommended slotlock experience.&#13;
 **Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.10.4...slotlockv0.11.0</content>
     <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.9</id>
+    <title>Team Fortress 2 Mann vs Machine v1.17.9</title>
+    <updated>2026-10-03T16:09:18+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Fixed
+
+- **A Windows server with SigMod runs again after the second 2026-10-02 TF2
+  update.** Valve shipped another update the same evening. SigMod for Windows
+  only knows the TF2 build it was made for, so on the new one the server
+  crashed at start, when anybody bought an upgrade (bots included), or when a
+  player inspected a weapon. The launcher now installs a SigMod build made for
+  the new TF2.
+- **The debug bundle no longer carries your RCON password.** It promised it
+  did not, but the server's crash log repeats its command line, password
+  included, and `server.cfg` sets it. Every text file in the bundle now has the
+  passwords taken out. If you posted a bundle before, change your RCON password
+  in the launcher.
+- **The first server start after updating the launcher uses the new
+  launcher.** A launcher from before the update, still running in the
+  background, kept its connection to the room, and the server spent that start
+  unable to read what the room had unlocked. The new launcher now closes the
+  old one's connection before the server starts.
+- **A bot's upgrade the game refused is no longer announced as bought.** The
+  chat and the log said a bot bought an upgrade even when the game turned the
+  purchase down. They now only report the purchases that happened, and the log
+  names the ones the game refused.
+- **Defender bots no longer take down a busy server in four ways we caught in
+  testing.** A bot leaving in the middle of shopping, a bot asked what it sees
+  before it had finished spawning, a check that treated any bot-controlled
+  player as a robot, and a few route searches with no limit could each crash
+  or freeze the server, most often on missions with many robots.
+
+### Changed
+
+- **After a TF2 update, SigMod for Windows switches itself off instead of
+  crashing the server.** Until a launcher release brings a SigMod build for the
+  new TF2, the server runs without it: missions that need SigMod are refused
+  and the run moves on, and the debug bundle says why.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* fix(sigmod): Windows build 20261005 for TF2 build 11076587 by @m-this in https://github.com/m-this/tf2-archipelago/pull/180
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.17.8...v1.17.9
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/YWU0NmNjZjRiZGFlZjM5ZmQ2ZDMzYjM5M2FiNDZiOGM6MTc5MTA0NDI1Ng==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MDdmMDc5NjNjMmM4OGExY2ZkMjEyYTRlN2IyMmY1YTM6MTc5MTA0NDI1OA==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.4</id>
+    <title>Starship Titanic v0.2.4</title>
+    <updated>2026-10-03T16:18:24+00:00</updated>
+    <author>
+      <name>rescheer</name>
+    </author>
+    <content># v0.2.4 (Unstable) - Client Only Update&#13;
+Update for client only. .apworld is unchanged. Compatible with existing seeds back to v0.2.2&#13;
+## Fixes&#13;
+- The client now detaches properly when the game is exited&#13;
+- Memory addresses are now correctly recalculated when a save file is loaded during gameplay&#13;
+## Changes&#13;
+- The television will always display the channel 4 and 5 (each of Titania's Eyes) puzzle hints, even after these items are acquired&#13;
+## Known Issues in this release&#13;
+- Cosmetic issues with items in the world sometimes&#13;
+&#13;
+## General Tips&#13;
+- Ctrl+C opens the cheat menu, which allows teleporting around the ship. This shouldn't cause any major issues, but I would be careful spawning items, because that may get messy.&#13;
+- No visual tracker yet, but for now I highly recommend Universal Tracker to see in-logic checks&#13;
+&#13;
+Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
+    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.8-beta</id>
+    <title>Paper Mario v0.6.8b0</title>
+    <updated>2026-10-03T16:46:33+00:00</updated>
+    <author>
+      <name>icebound777</name>
+    </author>
+    <content>## Other&#13;
+&#13;
+* Migrate logic to AP's RuleBuilder system&#13;
+  * This change aims to make maintaining and understanding the logic easier.&#13;
+* Manifest&#13;
+  * Add `"minimum_ap_version": "0.6.7"` to the manifest, as Archipelago version 0.6.7 or newer is required for the newly added Rule Builder system&#13;
+</content>
+    <link href="https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.8-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release6</id>
+    <title>Ocarina of Time v9.1.0r2</title>
+    <updated>2026-10-03T17:21:37+00:00</updated>
+    <author>
+      <name>espeon65536</name>
+    </author>
+    <author>
+      <name>TreZ</name>
+    </author>
+    <content># OoT Randomizer APWorld v9.1.0 Full Release 6&#13;
+&#13;
+This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
+Note: The default template changed with this version. &#13;
+&#13;
+## Changes:&#13;
+- Fixed some edge cases with silver rupees not being handled properly by the savecontext&#13;
+- Restored several changes in patches.py to match upstream more closely&#13;
+- Cleaned up entrance warp safety list between children transitions and adult blue warps (fixes Owl crash)&#13;
+- Updated compressor/decompressor with a minor fix from upstream for bigger file sizes&#13;
+&#13;
+Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.&#13;
+Even after deletion, the "Open Patch" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct "Ocarina of Time Client" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says "Archipelago Ocarina of Time Client 0.6.x" in the top bar with no info about the apworld version, you are using the old client.</content>
+    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.8.4</id>
+    <title>The Legend of Zelda - Spirit Tracks v0.8.4</title>
+    <updated>2026-10-03T17:39:03+00:00</updated>
+    <author>
+      <name>DayKat</name>
+    </author>
+    <author>
+      <name>1313e</name>
+    </author>
+    <author>
+      <name>Carrotinator</name>
+    </author>
+    <author>
+      <name>TriforceDrummer</name>
+    </author>
+    <author>
+      <name>Nepecute</name>
+    </author>
+    <author>
+      <name>Catzador</name>
+    </author>
+    <content>Compatible with seeds generated in v8.x&#13;
+[Setup Guide](https://github.com/DayKat/spirit-tracks/blob/main/worlds/tloz_st/docs/setup.md)&#13;
+&#13;
+- Fixed some respawn bugs. Saving and quitting/dying on the train will now always respawn you at a station&#13;
+- Fixed buy mega ice not sending&#13;
+- Fixed City Goron spawning before they're suppose to&#13;
+- Prevented Desert Temple 2F pot treasures from triggering locations&#13;
+- Fixed repeat acquisitions of max progressive items removing the last stage&#13;
+- Added backup for Goron geyser 2&#13;
+- Removed demon train blocking Goron Target Range cause it won't let you past&#13;
+- Re-acquiring non-farmable chests now remove their vanilla items as intended&#13;
+- Added ToS 8F bomb flower in the dark to hard logic without boomerang&#13;
+- Snowdrift Station reward in normal logic now requires the items to learn the sequence&#13;
+- Fixed goal logic for `dark_realm_access` with `both` option&#13;
+- Fixed logic for reverse Snow Sanctuary rocktite cave&#13;
+- Added redirect for snow rocktite fight to snow sanc with entrance rando&#13;
+- Fixed vanilla keys logic impossibility with boss shuffle&#13;
+- Fixed gen error with excluded blizzard temple&#13;
+- Fixed some gen errors involving stamps&#13;
+- Fixed filler pool adding progression items&#13;
+- Fixed rabbit rewards not being reachable in gen&#13;
+- Limited rupee item calculator to not count shop locations&#13;
+- Fixed some UT connection regions for Desert Temple boss event&#13;
+- Fixed a case of a randomized entrance making link fall out of bounds&#13;
+- Fixed a case of saving sending locations&#13;
+- /carrot_asked now prints in a single message, allowing for one click copy paste&#13;
+- Updated to new location class&#13;
+- Boss reward locations are restricted to local items, preventing collect from unlocking your goal early</content>
+    <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.8.4"/>
   </entry>
 </feed>

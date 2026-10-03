@@ -1,9 +1,12 @@
 # Dungeon Defenders
 
 ## Latest
-- <a href="https://github.com/Haywire32/DD1-AP/releases/download/v0.7.5/dungeon_defenders.apworld">Latest Version (0.7.5)</a>
+- <a href="https://github.com/Haywire32/DD1-AP/releases/download/v0.7.6/dungeon_defenders.apworld">Latest Version (0.7.6)</a>
 
 ## All Versions
+
+#### v0.7.6
+- <a href="https://github.com/Haywire32/DD1-AP/releases/download/v0.7.6/dungeon_defenders.apworld">https://github.com/Haywire32/DD1-AP/releases/download/v0.7.6/dungeon_defenders.apworld</a>
 
 #### v0.7.5
 - <a href="https://github.com/Haywire32/DD1-AP/releases/download/v0.7.5/dungeon_defenders.apworld">https://github.com/Haywire32/DD1-AP/releases/download/v0.7.5/dungeon_defenders.apworld</a>
