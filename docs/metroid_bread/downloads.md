@@ -1,9 +1,12 @@
 # Metroid Bread
 
 ## Latest
-- <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.8.4/metroid_bread.apworld">Latest Version (1.8.4)</a>
+- <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.8.5/metroid_bread.apworld">Latest Version (1.8.4r2)</a>
 
 ## All Versions
+
+#### v1.8.4r2
+- <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.8.5/metroid_bread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.8.5/metroid_bread.apworld</a>
 
 #### v1.8.4
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.8.4/metroid_bread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.8.4/metroid_bread.apworld</a>

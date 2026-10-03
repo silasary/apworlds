@@ -206,6 +206,21 @@
       "title": "FF8 Archipelago v0.8.0",
       "version_simple": "0.8.0",
       "world_version": "0.8.0"
+    },
+    "v0.9.0": {
+      "created_at": "2026-10-02T23:06:32Z",
+      "description": "## What's new in v0.9.0\n\n- **Early Ragnarok no longer opens later-disc towns.** The world map kept a Disc 3 story value for its doors after every fight; the client now restores the real one, so towns open only when your story reaches them.\n- **Story-jump guard:** if a scene pushes the story several chapters ahead at once, story checks and the goal are held (reload an earlier save, or `/ff8keepstory`). Save loads are now detected reliably.\n- **Fixes:** Death x5 / Pain x5 gave the wrong spells; a status-attack junction was wiped while Elemental Defense was locked; drawn magic was taken from Squall; Card Club checks fired mid-dialogue; Monsters Felled counted late; the Magical Lamp works with Diablos owned; fast-travel labels and battle Potions.\n- **Logic (new seeds):** GF ability prerequisite chains, Tonberries need Key: Centra Ruins, Bika Snowfield Flare #2 needs the Ragnarok, no keys in Ultimecia's Castle.\n- **New options (off by default):** Enemy Power and AP Multiplier (experimental), Triple Triad Rules (no Random / Open), Triple Triad Rule Checks.\n- **Tracker 0.15.0:** a toggle per junction and command lock.\n\nv0.8.0 seeds keep working with this client; the logic fixes need a new seed. Full list: [player guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md) and the PR below.\n\n## Install\n\n1. Archipelago **Launcher** \u2192 **Install APWorld** \u2192 pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.\n2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.\n3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) \u2014 see **Visual Tracker** below.\n\n### Visual Tracker\n\n`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:\n\n1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher \u2192 Install APWorld**, then restart the Launcher.\n2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.\n3. Launcher \u2192 **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.\n\nVisual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) \u2014 thank you!\n\nRequires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).\n\n\n## What's Changed\n* Gil Snatch: remove the 3000 gil floor by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/7\n* Phase 4 options: Enemy Power, AP Multiplier, Triple Triad rules + rule-check toggle by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/8\n* Docs: live test plan (Phase 4 options, Lamp, FH, LP) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/9\n* Release v0.9.0: early-Ragnarok door fix, story-jump guard, learn-prerequisite logic, Phase 4 options by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/10\n\n\n**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.8.0...v0.9.0\n",
+      "download_url": "https://github.com/wilsonao/ff8_arch/releases/download/v0.9.0/ff8.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d97cd76774916dee128665021e52507e617fb8d0edd1e9364bdeb975f2b1bf0e",
+      "html_url": "https://github.com/wilsonao/ff8_arch/releases/tag/v0.9.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 960657,
+      "source_url": "https://api.github.com/repos/wilsonao/ff8_arch",
+      "tag": "v0.9.0",
+      "title": "FF8 Archipelago v0.9.0",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0"
     }
   }
 }
