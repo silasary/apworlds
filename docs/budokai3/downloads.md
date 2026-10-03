@@ -1,9 +1,15 @@
 # Dragon Ball Z Budokai 3
 
 ## Latest
-- <a href="https://github.com/z3xox/Budokai3AP/releases/download/v0.4.1/budokai3.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/z3xox/Budokai3AP/releases/download/v0.4.3/budokai3.apworld">Latest Version (0.4.3)</a>
 
 ## All Versions
+
+#### v0.4.3
+- <a href="https://github.com/z3xox/Budokai3AP/releases/download/v0.4.3/budokai3.apworld">https://github.com/z3xox/Budokai3AP/releases/download/v0.4.3/budokai3.apworld</a>
+
+#### v0.4.2
+- <a href="https://github.com/z3xox/Budokai3AP/releases/download/v0.4.2/budokai3.apworld">https://github.com/z3xox/Budokai3AP/releases/download/v0.4.2/budokai3.apworld</a>
 
 #### v0.4.1
 - <a href="https://github.com/z3xox/Budokai3AP/releases/download/v0.4.1/budokai3.apworld">https://github.com/z3xox/Budokai3AP/releases/download/v0.4.1/budokai3.apworld</a>

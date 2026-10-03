@@ -6,7 +6,7 @@ Play as Goku, Vegeta, Piccolo and more across all four sagas.
 
 
 ## Downloads
-- <a href="https://github.com/z3xox/Budokai3AP/releases/download/v0.4.1/budokai3.apworld">Latest Version (0.4.1)</a>
+- <a href="https://github.com/z3xox/Budokai3AP/releases/download/v0.4.3/budokai3.apworld">Latest Version (0.4.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -2,125 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-03T00:22:09.881248+00:00</updated>
+  <updated>2026-10-03T06:21:04.549345+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.7</id>
-    <title>Pokemon Crystal Prerelease v1.35.0</title>
-    <updated>2026-09-30T00:39:44+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## Features&#13;
-- :3&#13;
-&#13;
-## Bug Fixes&#13;
-- Invalid values for game options are now rejected at generation or patch time&#13;
-- Use an event for Mom calling you on Route 31 so it shows in the playthrough&#13;
-- Fix sometimes being shoved when exiting an NPC blocked door that was unblocked&#13;
-- S.S. Aqua trainers not always present on the first voyage now logically require the first voyage story&#13;
-&#13;
-**This release is not backwards compatible with 6.0.0-rc.6**</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.0-rc.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/toluca-v1.0.4</id>
-    <title>Donkey Kong Toluca v1.0.4</title>
-    <updated>2026-09-30T01:12:02+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>cog&#13;
-# Info&#13;
-* [General Information](https://thelx5.github.io/dkc3/index.html)&#13;
-* [Setup Guide](https://thelx5.github.io/dkc3/setup.html)&#13;
-# Changes&#13;
-* Cogs are now limited to 5 inside the game to avoid crashes with the bear brother in Krematoa&#13;
-    * Generation still allows having extra cogs, don't worry</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/toluca-v1.0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v3.0.0</id>
-    <title>Zork Grand Inquisitor v3.0.0</title>
-    <updated>2026-09-30T02:55:25+00:00</updated>
-    <author>
-      <name>SerpentAI</name>
-    </author>
-    <content>This is a major feature release that also includes improvements, tweaks and fixes.&#13;
-&#13;
-**This release is NOT compatible with games generated on the previous version.**&#13;
-&#13;
-- **Feature:** 43 new locations. Item pickups (+41). Misc (+2)&#13;
-- **Feature:** 2 new areas. Flathead Mesa (+4). Outside the Monastery Exhibit (+1). Flathead Mesa is accessed by casting VOXAM in the Walking Castle&#13;
-- **Feature:** 12 new Deathsanity / Landmarksanity locations. Deaths (+9). Landmarks (+3)&#13;
-- **Feature:** Shuffle Time Tunnels option. Randomizes the destinations of the three time tunnels&#13;
-- **Feature:** Death return. After dying, you're sent back to the previous screen, as it was, and you can keep playing. No need to juggle saves&#13;
-- **Feature:** In-Game Overlay option. Shows goal progress, item notifications, traps, death links and optionally the locations in logic. Can be toggled while playing with `/overlay` and `/overlay_tracker`&#13;
-- **Feature:** Universal Tracker integration. UT's tabs are now part of the client, and the `?` buttons explaining how to check each location have been moved to UT's Tracker Page&#13;
-- **Improvement:** The client now hooks directly into ZVision and as a result is lighter and more responsive. No more jank, glitches or crash risks from memory writes&#13;
-- **Improvement:** Entrance randomizer transitions now go straight to their destination&#13;
-- **Improvement:** Received items are now recorded in your save&#13;
-- **Improvement:** Trap management reworked. Reverse Controls and ZVision traps can be active at the same time&#13;
-- **Improvement:** Optional granting of missable locations reworked. Missables are granted as soon as they become unobtainable while in logic. Now works with ER. Requires UT&#13;
-- **Tweak:** The client's Tracker tab is now the Items tab, without a location list. The Entrances tab now only appears when playing with ER&#13;
-- **Tweak:** The bottom of the well can now be exited by casting VOXAM&#13;
-- **Tweak:** Activating the Zork Rocks now starts the 10-second countdown right away&#13;
-- **Tweak:** The ZVision trap now uses a fisheye view instead of scrambling the screen&#13;
-- **Fix:** Addressed a vanilla totemizer crash due to a missing audio file&#13;
-- **Fix:** Goal completion is no longer sent to the server repeatedly&#13;
-- **Fix:** _I Spit on Your Filthy Coinage_, _That's Still a Rope_ and _Your Puny Weapons Don't Phase Me, Baby!_ no longer trigger without fully performing the action&#13;
-- **Fix:** Addressed an issue where _Make Love, Not War_, _Death: Old Age_ and _Death: Expressly Forbidden_ were only in logic from one side&#13;
-- **Fix:** VOXAM can no longer remain in a stuck state&#13;
-- **Fix:** Removed items can no longer briefly reappear in the inventory&#13;
-- **Fix:** Addressed a rare issue where scroll fragments could end up incorrectly mirrored&#13;
-- **Fix:** Leaving Hades through ER or VOXAM now always correctly clears active SNAVIG casts&#13;
-- **Fix:** The Port Foozle propaganda lines no longer follow you to other starting locations&#13;
-- **Fix:** The Old Scratch card death now has its own death link message&#13;
-- **Fix:** Addressed an issue where connecting would fail when running the client with `--nogui`&#13;
-&#13;
-_YAML changes:_&#13;
-- _New options: Shuffle Time Tunnels and In-Game Overlay_&#13;
-- _Artifacts of Magic Total and Required now go up to 20 (defaults are now 20 and 15)_&#13;
-- _Deaths Required now goes up to 31 and Landmarks Required up to 23_&#13;
-- _Starting Location now defaults to random_&#13;
-&#13;
-A new version of ScummVM is required. Follow the updated [setup guide](https://github.com/SerpentAI/Archipelago/blob/zgi-v2-post-removal/worlds/zork_grand_inquisitor/docs/setup_en.md)&#13;
-&#13;
-&lt;img width="2552" height="1392" alt="Screenshot 2026-09-29 163443" src="https://github.com/user-attachments/assets/977f7e53-d61e-4cbf-be44-b39c7a1b5d5a" /&gt;&#13;
-</content>
-    <link href="https://github.com/SerpentAI/Archipelago/releases/tag/zgi-v3.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/2.4.1</id>
-    <title>Manual_OneMoreNight_WolfBoi008 v2.4.1</title>
-    <updated>2026-09-30T03:17:20+00:00</updated>
-    <author>
-      <name>WolfBoi008</name>
-    </author>
-    <content># Known Issues&#13;
-- #43: Memory Achievements Do Not Consider Unique Cases - I could use some help refining this, since doing it alone would be annoying...&#13;
-# Changelog&#13;
-- Fixed a bug that caused the Buttonsanity Checks to not require their dedicated Item.</content>
-    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/2.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/2.4.2</id>
-    <title>Manual_OneMoreNight_WolfBoi008 v2.4.2</title>
-    <updated>2026-09-30T04:34:42+00:00</updated>
-    <author>
-      <name>WolfBoi008</name>
-    </author>
-    <content># Known Issues&#13;
-#43: Memory Achievements Do Not Consider Unique Cases - I could use some help refining this, since doing it alone would be annoying...&#13;
-# Changelog&#13;
-- Removed Mart Death Check. Oops.</content>
-    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/2.4.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.1</id>
     <title>DuckGame v0.1.0r2</title>
@@ -1041,7 +927,7 @@ Since this is a pre-release, I am leaving in some debug commands (to be used RES
   </entry>
   <entry>
     <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4-pre1</id>
-    <title>Half-Life (Sven Co-op) v0.1.0r2</title>
+    <title>Half-Life (Sven Co-op) v0.1.0r3</title>
     <updated>2026-10-01T20:52:46+00:00</updated>
     <author>
       <name>hl1-sven-ap</name>
@@ -1129,7 +1015,7 @@ In addition, !menu opens an interface to warp, return to hub, find the nearest c
   </entry>
   <entry>
     <id>https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v6</id>
-    <title>A Link to the Past Beta v6.0.2r2</title>
+    <title>A Link to the Past Beta v6.0.2r3</title>
     <updated>2026-10-01T23:07:49+00:00</updated>
     <author>
       <name>Berserker</name>
@@ -2168,5 +2054,86 @@ Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). 
 - **Some map points stayed hidden even with the map helper on.** The game can tie a point to a story variable so that it only shows for one value. Piccolo's two Central City talks in the Saiyan saga are set up that way, so only one of them ever appeared. Ten points are affected in all, for Piccolo, Vegeta, Yamcha and Broly; the map helper now shows them all.
 </content>
     <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.2</id>
+    <title>Dragon Ball Z Budokai 3 v0.4.2</title>
+    <updated>2026-10-03T00:13:53+00:00</updated>
+    <author>
+      <name>z3xox</name>
+    </author>
+    <content>Seeds made with v0.4.0 or v0.4.1 work with this version.
+
+### Fixed
+
+- **The Skill Shop forgot what you had bought when the client restarted.** It showed the first ten capsules again, including ones already bought, and you had to buy them a second time before the later ones appeared. Bought capsules now stay gone.
+</content>
+    <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.3</id>
+    <title>Dragon Ball Z Budokai 3 v0.4.3</title>
+    <updated>2026-10-03T00:44:36+00:00</updated>
+    <author>
+      <name>z3xox</name>
+    </author>
+    <content>Seeds made with v0.4.0 or later work with this version.
+
+### Fixed
+
+- **Saga locks: Piccolo could reach the Cell saga without its unlock.** Winning his "Frieza Final Form" fight moved him on to the next saga straight away. He now stays on Namek until you take the white marker, as everyone else does.
+
+If this happened to you, take the grey marker on the first chapter of Piccolo's Cell saga to go back.
+</content>
+    <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.8</id>
+    <title>Deadlock v1.1.8</title>
+    <updated>2026-10-03T02:11:00+00:00</updated>
+    <author>
+      <name>ArchipelagoBrad</name>
+    </author>
+    <content># The City Never Sleeps Update&#13;
+- Added Ratking&#13;
+- Waiting on Solomon, Deadman Danny, Violet, Baba, Nurse Harrow</content>
+    <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.8-Linux</id>
+    <title>Deadlock v1.1.8r2</title>
+    <updated>2026-10-03T02:13:29+00:00</updated>
+    <author>
+      <name>ArchipelagoBrad</name>
+    </author>
+    <content># The City Never Sleeps Update&#13;
+- Added Ratking&#13;
+- Waiting on Solomon, Deadman Danny, Violet, Baba, Nurse Harrow&#13;
+&#13;
+**This is meant as an attempt for a fix on some Linux distros. For most other purposes, please download the [standard 1.1.7 release](https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.7) instead.**</content>
+    <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.8-Linux"/>
+  </entry>
+  <entry>
+    <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/1.3.0</id>
+    <title>YARG v1.3.0</title>
+    <updated>2026-10-03T05:17:55+00:00</updated>
+    <author>
+      <name>Energymaster22</name>
+    </author>
+    <author>
+      <name>thedrummonger</name>
+    </author>
+    <content># Use Client Version 1.y.z.&#13;
+&#13;
+New:&#13;
+- Support for Classical Keys 3 Setlist&#13;
+- Support for Children's Keys 3 Setlist&#13;
+&#13;
+## What's Changed&#13;
+* 72 classical and childrens keys 03 by @energymaster22 in https://github.com/energymaster22/YARGArchipelago/pull/73&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/1.2.0...1.3.0</content>
+    <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/1.3.0"/>
   </entry>
 </feed>
