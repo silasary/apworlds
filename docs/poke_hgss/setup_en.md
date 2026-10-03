@@ -76,6 +76,10 @@ perfectly safe to make progress offline; everything will re-sync when you reconn
 - `/pending`: lists the items the server sent you that are not in your game yet. Compare with `/received` (the
   full list from the server). An item stays pending while its Bag pocket is full; the client also says so in its
   log.
+- `/resend <item>`: gives you one more copy of an item the server already sent you, for example
+  `/resend Expert Belt`. Use it for an item that never reached your Bag with an older client (game closed or
+  reloaded right after it arrived). Key items and HMs come back on their own. It never gives more copies than the
+  server sent you. Save in-game afterwards.
 - `/restore_power`: repairs the Kanto Power Plant in your save, so the Magnet Train runs as soon as you hold the
   Pass. With `magnet_train` on this already happens automatically; use it only if you are stuck with the option
   off. Save in-game afterwards. With `magnet_train` off, the Power Plant manager's TM57 check can no longer be
@@ -119,8 +123,12 @@ need the slot's YAML.
 2. **Problem**: The BizHawk Client never recognizes the game. **Solution**: load the `.nds` produced by
    opening your `.appokehgss` file with this version. The client ignores unpatched ROMs, and ROMs patched by
    another HGSS world or by an older version of this one (anything before v0.2.5).
-3. **Problem**: The client says my ROM doesn't match. **Solution**: Make sure you're patching a US Pokémon HeartGold
-   or SoulSilver ROM, not another region or another revision.
+3. **Problem**: "File hash does not match" (or the client says my ROM doesn't match) when applying the patch.
+   **Solution**: you need a US Pokémon HeartGold (game code IPKE) or SoulSilver (IPGE) ROM, not another region; the
+   error says which ROM it found. Archipelago keeps a copy of the first ROM you gave it, in your Archipelago folder as
+   `Pokemon - HeartGold Version (USA).nds` / `Pokemon - SoulSilver Version (USA).nds` (or at the path set in
+   `host.yaml` under `pokemon_heartgold_settings`): delete that file, then open the patch again to pick the right
+   ROM. Reinstalling the APWorld does not change it. Trimmed US ROMs are accepted.
 4. **Problem**: Pokémon HGSS never shows up in `Generate Template Options` / `Option Creator`, even after
    installing the `.apworld`. **Solution**: check your `logs/Launcher_*.txt` for a traceback naming this world --
    it'll say exactly what failed to import. If you replaced an existing `poke_hgss.apworld`, make sure

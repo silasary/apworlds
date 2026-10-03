@@ -2,55 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-03T06:21:04.549345+00:00</updated>
+  <updated>2026-10-03T13:38:13.417381+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.1</id>
-    <title>DuckGame v0.1.0r2</title>
-    <updated>2026-09-30T05:05:38+00:00</updated>
-    <author>
-      <name>Marsavue</name>
-    </author>
-    <content># v0.1.1&#13;
-&#13;
-## APWorld Changes&#13;
-- VARIETY ZONE FINAL - SWING MACE: Helmet is now required for Silver instead of Gold (I am bad at the game)&#13;
-- Yaml Medal Count for Goal defaults to 90 instead of 120&#13;
-&#13;
-## More Info&#13;
-&#13;
-Client: https://github.com/Marsavue/DuckGameArchipelago/releases</content>
-    <link href="https://github.com/Marsavue/Archipelago-DuckGame/releases/tag/v0.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.4.1</id>
-    <title>Anno 1800 v1.4.1</title>
-    <updated>2026-09-30T08:12:04+00:00</updated>
-    <author>
-      <name>DarkListener</name>
-    </author>
-    <content>Small update with improvements to the default goal, default exclusions and bugfixes.&#13;
-&#13;
-### Changes&#13;
-* Changed default goal to 5000 investors, 1500 obreros, 4000 artistas, 750 technicians, 1000 scholars, 1500&#13;
-tourists and 15 level 5 investor skyscrapers&#13;
-  * That means -2000 artistas, -6000 scholars, -2500 tourists compared to before&#13;
-* Added default exclusions for the different presets, so that checks behind the default victory condition are now excluded&#13;
-  * For example, with 1000 scholars now being the goal, the unlocks at 4000 and 7000 scholars are excluded from having progression items&#13;
-* Moved excluded RNG recipe unlocks to excluded locations option per default, effectively making their exclusion configurable&#13;
-* Fixed incorrect logical requirements for tourist mooring&#13;
-* Fixed a critical bug that caused generation failure when multiple Anno 1800 worlds with different DLC settings were present in a multiworld&#13;
-&#13;
-This release is compatible with version 1.4.0 onwards.&#13;
-&#13;
-### [Game Page](&lt;https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/en_Anno%201800.md&gt;) | [Setup](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/setup_en.md) | [Items](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/items_en.md) | [Locations](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/locations_en.md) | [Roadmap](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.4.1/worlds/a1800/docs/roadmap_en.md)&#13;
-&#13;
-Find the apworld and several template yamls below.</content>
-    <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.4.1"/>
-  </entry>
   <entry>
     <id>https://github.com/FFX-AP/Archipelago/releases/tag/v0.9.0</id>
     <title>Final Fantasy X v0.9.0</title>
@@ -927,7 +883,7 @@ Since this is a pre-release, I am leaving in some debug commands (to be used RES
   </entry>
   <entry>
     <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4-pre1</id>
-    <title>Half-Life (Sven Co-op) v0.1.0r3</title>
+    <title>Half-Life (Sven Co-op) v0.1.0r2</title>
     <updated>2026-10-01T20:52:46+00:00</updated>
     <author>
       <name>hl1-sven-ap</name>
@@ -1015,7 +971,7 @@ In addition, !menu opens an interface to warp, return to hub, find the nearest c
   </entry>
   <entry>
     <id>https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v6</id>
-    <title>A Link to the Past Beta v6.0.2r3</title>
+    <title>A Link to the Past Beta v6.0.2r2</title>
     <updated>2026-10-01T23:07:49+00:00</updated>
     <author>
       <name>Berserker</name>
@@ -1562,6 +1518,23 @@ Free code signing for open source projects, provided by
     <content>## Fixes to Mod&#13;
 &#13;
 * Fixed a packaging issue where certain files would not be included, causing the world to fail to load (@buanjautista, #108)&#13;
+&#13;
+## Fixes to Logic&#13;
+&#13;
+* Fixed many logic issues discovered while changing regions (@Valkhiya, #107)&#13;
+  * **Ba'kii Kum Shade Statue** no longer requires **Maroon Cave Pass**.&#13;
+  * **Encrypted Key: A Switch in Altitude** was moved to fall from rise.&#13;
+  * **Crocus Pocus** moved to harbor from rise.&#13;
+  * **The Observatory** moved to rise from wasteland.&#13;
+  * **Heating the Hermit** moved to bergen from of mine.1, now requires mine.2 as condition (mine.1 doesn't contain carritrichs).&#13;
+  * **Building a Base** moved to bergen from mine.1, now requires mine.4 as condition instead of heat (bringing it in line with egg pot botanics region).&#13;
+  * **Raising the Steaks** now required garden.mid access instead of garden (garden doesn't contain bee hives).&#13;
+  * Observatory goal moved to rise from harbor&#13;
+  * Facility X goal moved to ridge from ridge.north&#13;
+* Added bidirectional region connectors (@Valkhiya, #107)&#13;
+  * Passage from trail to valley now requires green leaf and blue ice instead of just blue ice&#13;
+  * Passage from fall to garden now requires red flame and green seed instead of just green seed&#13;
+  * Passage from fall to ridge now requires red flame and star instead of just star&#13;
 &#13;
 ## Internal Changes&#13;
 &#13;
@@ -2135,5 +2108,32 @@ New:&#13;
 &#13;
 **Full Changelog**: https://github.com/energymaster22/YARGArchipelago/compare/1.2.0...1.3.0</content>
     <link href="https://github.com/energymaster22/YARGArchipelago/releases/tag/1.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.6</id>
+    <title>Valheim v0.2.6</title>
+    <updated>2026-10-03T07:25:48+00:00</updated>
+    <author>
+      <name>xyzzy44</name>
+    </author>
+    <content>This version is compatible with Valheim 1.0. Basic compatibility with 1.0 is all this version is intended to achieve. Full support for all of the new 1.0 content will come in a later update. Until that time, Fader is still the end of content supported by the randomizer, and some new build items added in 1.0 will not be AP items. (Drawbridges, for example, but there are others.)&#13;
+&#13;
+- Artisan table fix in research.tsv (For real this time)&#13;
+- Mod has been built against Valheim 1.0&#13;
+- New 67 degree and storage piles have been added to research.tsv</content>
+    <link href="https://github.com/xyzzy44/ValheimArchipelagoRandomizer/releases/tag/0.2.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.0</id>
+    <title>SlotLock v0.11.0</title>
+    <updated>2026-10-03T07:33:44+00:00</updated>
+    <author>
+      <name>Sandra (TheSandromatic)</name>
+    </author>
+    <content>* [SlotLock] Sort slots_to_lock list, this will ensure generation is deterministic.&#13;
+* [SlotLock] Added an experimental linear fill for locked slots: This ensures that all items for locked slots are in those slots or later. This is an experimental feature.&#13;
+* [SlotLock] Set free items to default to false, for the recommended slotlock experience.&#13;
+**Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.10.4...slotlockv0.11.0</content>
+    <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.0"/>
   </entry>
 </feed>
