@@ -104,6 +104,21 @@
       "title": "The \"maybe we shouldn't have balled yet\" release",
       "version_simple": "1.1.7",
       "world_version": "1.1.7"
+    },
+    "v1.1.8": {
+      "created_at": "2026-10-04T14:49:15Z",
+      "description": "BIG CHANGES\r\nWhat is tested:\r\nBizhawk authenticates on its own with a patched ROM.\r\nChecks send.\r\nBubble bounce is blocked.\r\nAt least lightning bubbles are blocked from spawning.\r\n\r\nWhat's not tested:\r\nA lot of changes to how it writes to RAM, including things that worked before and should still work now, but slightly differently and hopefully more efficiently.\r\nOther elements should be blocked the same way lightning is.\r\nHopefully the code added to make sending checks work will work more consistently before.\r\nThoroughly rewrote how completion is sent, but do not have time to do a full run right now and try it yet.\r\nAdded code to lock powerups (the candies, speedy shoes, and drug of thunder), which will hopefully work just light the lightning bubble block does.\r\nNew code for increasing starting lives.\r\nDeath link.\r\nProbably more stuff I can't remember.\r\n\r\nBIGGEST THANKS EVER to HappyHappyism.  Could not have gotten 1/4 of what I've done without his help.  Check out his ActRaiser apworld; it's a lot of fun.",
+      "download_url": "https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.1.8/bubblebobble.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5a81e77317a2f0d5f128656fdd5b01f72af833c9581abf5164ee30f7cc1ae78c",
+      "html_url": "https://github.com/sensokaeru/bubblebobbleAP/releases/tag/v1.1.8",
+      "minimum_ap_version": "0.6.7",
+      "size": 24094,
+      "source_url": "https://api.github.com/repos/sensokaeru/bubblebobbleAP",
+      "tag": "v1.1.8",
+      "title": "The \"I think version numbers are meaningless\" update",
+      "version_simple": "1.1.8",
+      "world_version": "1.1.8"
     }
   }
 }

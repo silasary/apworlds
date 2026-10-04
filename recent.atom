@@ -2,182 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-04T14:00:28.074792+00:00</updated>
+  <updated>2026-10-04T18:42:04.880598+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Wouter17/Spirit-Archipelago/releases/tag/0.1.5</id>
-    <title>Spirit Island v0.1.5</title>
-    <updated>2026-10-02T09:55:03+00:00</updated>
-    <author>
-      <name>Wouter17</name>
-    </author>
-    <content>## V0.1.5&#13;
-&#13;
-### Client &amp; APworld&#13;
-- Added single victory item (_shard of the island_) instead of checking completed goals&#13;
-&#13;
-### Client&#13;
-- Added world versioning check&#13;
-- Added sh scripts and manual for Linux (Proton) install/uninstall. by @sourlemon11 in https://github.com/Wouter17/Spirit-Archipelago/pull/1&#13;
-- Fixed deathlink not being sent&#13;
-&#13;
-### APworld&#13;
-- Fixed locations being marked as priority&#13;
-- Fixed access rules not respecting aspect-only uniques&#13;
-- Added adjustment option for the number of goals to complete&#13;
-- Fixed card unlock for aspects adding cards&#13;
-- Added world versioning (archipelago.json)&#13;
-&#13;
-## New Contributors&#13;
-* @sourlemon11 made their first contribution in https://github.com/Wouter17/Spirit-Archipelago/pull/1&#13;
-&#13;
----&#13;
-&#13;
-### Hotfix 1 (hf1):&#13;
-- Fix UI not showing&#13;
-&#13;
----&#13;
-&#13;
-**Full Changelog**: https://github.com/Wouter17/Spirit-Archipelago/compare/0.1.4...0.1.5</content>
-    <link href="https://github.com/Wouter17/Spirit-Archipelago/releases/tag/0.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.5</id>
-    <title>Team Fortress 2 Mann vs Machine v1.17.5</title>
-    <updated>2026-10-02T11:04:12+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Fixed
-
-- **SigMod missions run again on a Linux or Docker server after the
-  2026-10-02 TF2 update.** The update changed how the game stores its key and
-  value data, and the SigMod build the server used crashed it on every start.
-  The server now installs a SigMod rebuilt for the new game. SigMod on a Windows
-  server still crashes on this TF2 update: leave SigMod missions out of the run
-  there until a Windows build follows.
-- **A run generated with v1.11 to v1.13 keeps going on this release.** The
-  server refused it at connect, so updating meant losing the run. It now plays
-  it with the options it was generated with, and every check counts.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* fix(sigmod): a Linux build for the 2026-10-02 TF2 update by @m-this in https://github.com/m-this/tf2-archipelago/pull/175
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.17.4...v1.17.5
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/ODY3MDY0NThjYjQyODVhMWE2NGI5YmQwOWU3OTJhNDI6MTc5MDkzOTYzNQ==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZjJmNDBjNTllOGE4MWI3NjM2M2ZiMjg2YjUyZmJjNDc6MTc5MDkzOTYzOA==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.17.5"/>
-  </entry>
   <entry>
     <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.1</id>
     <title>Pokemon Crystal v6.0.1</title>
@@ -1204,7 +1033,7 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release6</id>
-    <title>Ocarina of Time v9.1.0r3</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-10-03T17:21:37+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1666,7 +1495,7 @@ v2.2 contains *way* more than originally planned (sorry for the long changelog..
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `8a209791caf2510f743c11cffc949306f8d67c74`.
+Built from `8a5c6b0182d51d0efd6a71a822ba8575061d2839`.
 
 ## Downloads
 
@@ -1675,9 +1504,59 @@ Built from `8a209791caf2510f743c11cffc949306f8d67c74`.
 
 ## Since v1.18.0
 
+- fix(plugin): pause Bot Surge before the map runs out of edicts (#190)
 - feat(github): issue forms for bugs and suggestions (#188)
 - feat(botprobe): a release gate over every wave, with and without Bot Surge (#189)
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.2</id>
+    <title>Pokemon Crystal v6.0.2</title>
+    <updated>2026-10-04T15:24:29+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+## Bug Fixes&#13;
+- Fix generation failures when the stable and pre-release APWorlds were both installed.&#13;
+- Fix HM Compatibility Override not accepting Headbutt or Rock Smash.&#13;
+&#13;
+_This release is backwards compatible down to 6.0.0_</content>
+    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.4</id>
+    <title>Nine Sols v0.6.4</title>
+    <updated>2026-10-04T15:50:23+00:00</updated>
+    <author>
+      <name>Ixrec</name>
+    </author>
+    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
+&#13;
+- Fixed the Teleport menu not working on new randomizer games until you sit down at the FSP node&#13;
+- Rewrote arrow item application. This should fix some corner cases where multiple tiers of the same arrow type ended up enabled simultaneously. It also fixes disabling arrows from the debug tools.&#13;
+- Previously, if the in-game console received more than 5 messages "at the same time", it would display only a summary message telling you to read them on the pause console. This limit has been raised to 10.&#13;
+- `vanilla` logic:&#13;
+	- Re-added TCK to the GoSE worm arena logic before Yin Jifu's Tomb.&#13;
+	- Change shop/skill logic to check 9 regions instead of just 3 to decide when low/medium/high cost locations are in logic. This is mostly intended as ER prep, but it should also solve RP spawn putting low cost locations immediately in logic.&#13;
+	- "AM - Above Left Exit" to "Root Node" is now in logic with CL &amp; AD &amp; LG to bypass the 2nd slider, instead of using Grapple.&#13;
+	- Refactored a lot of the logic for the bottom left chunk of Abandoned Mines, including renaming regions, adding new regions, and correcting connections that won't matter until we have ER.&#13;
+- `medium` logic:&#13;
+	- Multiple connections around "AM - Above Left Exit" now account for CS-dashes and Swift Runner.&#13;
+	- "AM: Above Left Exit" is now reachable with bow hover&#13;
+	- "AM - Tao Fruit" to "After Tao Fruit" now allows just Grapple by T-dashing over the spikes&#13;
+	- "CTH - Under Root Node" to "Lower Right Vents" now allows CL &amp; T-dash&#13;
+	- "PR (Central): Near Left Transporter" is now reachable with (CL &amp; bow hover) as well as (AD &amp; T-dash &amp; CS-dash &amp; LG)&#13;
+- `ledge_storage` logic:&#13;
+	- "AM: Above Left Exit" is now reachable with parry hover (using AD setup)&#13;
+	- "AM - Tao Fruit" to "After Tao Fruit" now allows AD &amp; CL &amp; LG &amp; (CS OR SR) by wall sliding past the grapple targets and using everything else to bypass the zipline&#13;
+- Debug Tools (ctrl+shift+alt+d):&#13;
+	- Added buttons for refilling qi and arrows.&#13;
+	- Added my entrance remapping prototype. Nothing else uses this code yet, but I'm mentioning it in case it leads to unexpected bugs, or some of you want to mess around with it.&#13;
+	- Rearranged and renamed several things so that all of it fits inside the popup.&#13;
+</content>
+    <link href="https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.4"/>
   </entry>
 </feed>

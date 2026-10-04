@@ -11,11 +11,11 @@
 #### v2.2.0.post3
 - <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld</a>
 
-#### v2.2.0.post2
-- <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld</a>
-
 #### v2.2.0r2
 - <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0/spyro_aht.apworld</a>
+
+#### v2.2.0.post2
+- <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld</a>
 
 #### v2.2.0
 - <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld</a>

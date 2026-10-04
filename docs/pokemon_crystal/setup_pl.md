@@ -8,7 +8,7 @@
 - Jedno z poniższych:
     - [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) 2.7 lub nowszy. Zalecana jest wersja 2.10.
     - [mGBA](https://mgba.io) 0.10.3 lub nowszy.
-        - Potrzebny będzie również skrypt [mGBA to Bizhawk Client connector](https://gist.github.com/gerbiljames/7b92dc62843794bd5902aad191b65efc).
+        - Potrzebny będzie również skrypt [mGBA to Bizhawk Client connector](https://github.com/Zunawe/bhc-substitutes/tree/main/mgba).
           Należy go dodać do katalogu `data/lua/` w instalacji Archipelago.
 
 ### Konfiguracja BizHawk

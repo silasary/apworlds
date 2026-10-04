@@ -547,6 +547,21 @@
       "title": "0.6.3",
       "version_simple": "0.6.3",
       "world_version": "0.6.3"
+    },
+    "0.6.4": {
+      "created_at": "2026-10-04T15:50:23Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- Fixed the Teleport menu not working on new randomizer games until you sit down at the FSP node\r\n- Rewrote arrow item application. This should fix some corner cases where multiple tiers of the same arrow type ended up enabled simultaneously. It also fixes disabling arrows from the debug tools.\r\n- Previously, if the in-game console received more than 5 messages \"at the same time\", it would display only a summary message telling you to read them on the pause console. This limit has been raised to 10.\r\n- `vanilla` logic:\r\n\t- Re-added TCK to the GoSE worm arena logic before Yin Jifu's Tomb.\r\n\t- Change shop/skill logic to check 9 regions instead of just 3 to decide when low/medium/high cost locations are in logic. This is mostly intended as ER prep, but it should also solve RP spawn putting low cost locations immediately in logic.\r\n\t- \"AM - Above Left Exit\" to \"Root Node\" is now in logic with CL & AD & LG to bypass the 2nd slider, instead of using Grapple.\r\n\t- Refactored a lot of the logic for the bottom left chunk of Abandoned Mines, including renaming regions, adding new regions, and correcting connections that won't matter until we have ER.\r\n- `medium` logic:\r\n\t- Multiple connections around \"AM - Above Left Exit\" now account for CS-dashes and Swift Runner.\r\n\t- \"AM: Above Left Exit\" is now reachable with bow hover\r\n\t- \"AM - Tao Fruit\" to \"After Tao Fruit\" now allows just Grapple by T-dashing over the spikes\r\n\t- \"CTH - Under Root Node\" to \"Lower Right Vents\" now allows CL & T-dash\r\n\t- \"PR (Central): Near Left Transporter\" is now reachable with (CL & bow hover) as well as (AD & T-dash & CS-dash & LG)\r\n- `ledge_storage` logic:\r\n\t- \"AM: Above Left Exit\" is now reachable with parry hover (using AD setup)\r\n\t- \"AM - Tao Fruit\" to \"After Tao Fruit\" now allows AD & CL & LG & (CS OR SR) by wall sliding past the grapple targets and using everything else to bypass the zipline\r\n- Debug Tools (ctrl+shift+alt+d):\r\n\t- Added buttons for refilling qi and arrows.\r\n\t- Added my entrance remapping prototype. Nothing else uses this code yet, but I'm mentioning it in case it leads to unexpected bugs, or some of you want to mess around with it.\r\n\t- Rearranged and renamed several things so that all of it fits inside the popup.\r\n",
+      "download_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/download/0.6.4/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "95881e42ad59deec954a0e036d8150c0e65f339b61223225bb139d80e0a56e6f",
+      "html_url": "https://github.com/Ixrec/NineSolsArchipelagoRandomizer/releases/tag/0.6.4",
+      "minimum_ap_version": "0.6.4",
+      "size": 3661548,
+      "source_url": "https://api.github.com/repos/Ixrec/NineSolsArchipelagoRandomizer",
+      "tag": "0.6.4",
+      "title": "0.6.4",
+      "version_simple": "0.6.4",
+      "world_version": "0.6.4"
     }
   }
 }
