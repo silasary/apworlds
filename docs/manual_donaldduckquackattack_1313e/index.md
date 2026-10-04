@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v0.0.2/manual_donaldduckquackattack_1313e.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v0.1.0/manual_donaldduckquackattack_1313e.apworld">Latest Version (0.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

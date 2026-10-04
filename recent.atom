@@ -2,138 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-03T18:46:14.712502+00:00</updated>
+  <updated>2026-10-04T01:11:11.745853+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4</id>
-    <title>Half-Life (Sven Co-op) v0.4.0</title>
-    <updated>2026-09-30T18:03:05+00:00</updated>
-    <author>
-      <name>hl1-sven-ap</name>
-    </author>
-    <content>Sven Co-op's Half-Life campaign is meant to be played in multiplayer. No support will be offered to players attempting to circumvent this restriction. (The map "Suspension" is an exception to this rule)&#13;
-&#13;
-**Important**: Run /install to update the plugin after you update your apworld.&#13;
-&#13;
-## New Features&#13;
-* !menu GUI added&#13;
-* Melee Throw can now be added to the item pool, allowing you to throw the crowbar, knife, and umbrella via right click.&#13;
-* Bot Swarm Trap&#13;
-  * Bots will use any player models the server host has available&#13;
-* PCV and Security Armor are now randomized separate from the HEV suit&#13;
-* Flashlight can now be randomized&#13;
-* Xen Healing pools added to chargesanity&#13;
-* Shock roach now accounted for in OpFor&#13;
-* Item receipt notifications show in chat&#13;
-&#13;
-## Bug Fixes/Improvements&#13;
-* Fixed an edge case crash related to pre-cacheing&#13;
-* Fixed access to various location &#13;
-* Locations not present in a seed no longer display in game&#13;
-* When LJM is unshuffled, it now sits at its vanilla location rather than being always active&#13;
-* Gate access to some checks behind the displacement cannon and other weapons&#13;
-* Only one mission given to start across all campaigns&#13;
-* Major weapon logic overhaul&#13;
-  * The first occurence of each weapon in each mission it appears can be a valid "First (Weapon)" check logically&#13;
-* Some inaccessible checks removed: old seeds will grant them on entering the map they were on&#13;
-* Changed location prefix to use colons instead of dashes&#13;
-* Goal no longer sent on the final mission's location being collected by the server. You have to physically play through it still.&#13;
-* Restarting the client no longer re-delivers all of the filler and trap items&#13;
-* Various stability and parity patches to match the HL Trilogy apworld&#13;
-&#13;
-## Updates to commands: (use `!help` to list all):&#13;
-* `!menu` provides a helpful GUI for various tracking and warp commands&#13;
-* `!find` is now further refined to punish height more so that the nearest check is more frequently the closest accessible check.&#13;
-* `!tracker` now filters better&#13;
-&#13;
-## Setup&#13;
-As the game host:&#13;
-Install the apworld by downloading and double clicking (or placing it in your custom_worlds folder)&#13;
-Open the Half-Life (Sven Co-op) Client and select your install directory&#13;
-Run /install in the client&#13;
-Connect the client to the multiworld, and open a server on the map -sp_campaign_lobby&#13;
-Once your friends are in game with you (they can just join!), you can type !ap to see unlocked missions in the console, and !warp to change maps to the unlocked mission. (The lobby's mission panels also work). &#13;
-In addition, !menu opens an interface to warp, return to hub, find the nearest check, track remaining checks in a map, or locate a specific check.&#13;
-&#13;
-## Known Issues&#13;
-* Sound cacheing bug: sometimes when another player joins the lobby, their sounds are all mixed up. This will self resolve once you get into a mission. I am under the impression that if they install the plugin too that helps, but either way, loading a new map should fix the issue.&#13;
-&#13;
-&#13;
-Note: This apworld is fully backwards compatible with previous versions</content>
-    <link href="https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.3.0</id>
-    <title>Chibi Robo v1.3.0</title>
-    <updated>2026-09-30T18:06:52+00:00</updated>
-    <author>
-      <name>EverydaySimpleDev</name>
-    </author>
-    <content>- New GBA Link Cable Option!&#13;
-- Changed how key items like door keys, chibi gear, etc are handled via code</content>
-    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.0</id>
-    <title>Ratchet &amp; Clank: Size Matters v0.5.0</title>
-    <updated>2026-09-30T20:36:24+00:00</updated>
-    <author>
-      <name>Pangu</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <author>
-      <name>ImJustATester</name>
-    </author>
-    <content>## Installation &amp; Setup
-
-- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.
-- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.
-- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.
-- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.
-- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)
-- Click **Generate** to create a multiworld `.zip` in the `output` folder.
-- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.
-- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).
-- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.
-- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2
-
-
-
-## Changelog
-
-- fix(SM): skin patch on pirate skin not reloading textures (4b1b790e)
-- chore(SM): added experimenetal skins troubleshooting and to known issues (54228de6)
-- chore(SM): update docs added thank yous to those who helped (a2f9d02a)
-- fix(SM): outpost omega interior decorating gated behind incorrect planet id (7aadab35)
-- fix(SM): kalidon shrink ray rules now include hypershot (3b3952f3)
-- fix(SM): vendor and pda fixes (d8acf710)
-- fix(SM): patch load reorder and vendor fixes (b2b17d38)
-- fix(SM): force trap state every tick (39257cb4)
-- fix(SM): options for enabling balance patch in generic (19876820)
-- fix(SM): remove unnecessary docs (f481d110)
-- feat(SM): bring in balance patch as part of client patches toggleable from options menu (95e1c0b1)
-- chore(SM): update the goats balance patch to setup docs (d4aee8e0)
-- fix(SM): remove sprout-o-matic check for dreamtime and decreased grant bolt (d3fd54ec)
-- fix(SM): version challenge mode not linked to correct address, vendor titan weapons showing original names instead of ap item (68f2f991)
-- fix(SM): map locations for ng+ items and shrink ray locations (348f7b29)
-- fix(SM): progressive level cap and cli removal of ghostlink (c66adf99)
-- fix(SM): rule for allowing skillpoint if challenge mode +2 removed you still need mootator for skill point (2d140004)
-- fix(SM): weapon levels were all tide to pokitaru instead of Menu they are acessible as long as player has the weapon (5a0ffcab)
-- fix(SM): update gen rules to prevent shrink ray and skyboard cutscenes from being active unless skyboard races are enabled (9ec220c3)
-- chore(SM): update readme for new acknowledgements (cdf1e625)
-- fix(SM): build apworlds to use github style ignoring and ignoring tools folder (d559549f)
-- fix(SM): update rules to include hypershot for kalidon (a6fe09e0)
-- fix(SM): incorrect logic for plaents without access to enemies and fuzz errors (12c9263f)
-
-Full comparison:
-https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.4.27...rac_size_matters-v0.5.0</content>
-    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.0"/>
-  </entry>
   <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.3</id>
     <title>Crash Team Racing v0.2.3</title>
@@ -827,7 +700,7 @@ Since this is a pre-release, I am leaving in some debug commands (to be used RES
   </entry>
   <entry>
     <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4-pre1</id>
-    <title>Half-Life (Sven Co-op) v0.1.0r3</title>
+    <title>Half-Life (Sven Co-op) v0.1.0r2</title>
     <updated>2026-10-01T20:52:46+00:00</updated>
     <author>
       <name>hl1-sven-ap</name>
@@ -915,7 +788,7 @@ In addition, !menu opens an interface to warp, return to hub, find the nearest c
   </entry>
   <entry>
     <id>https://github.com/Alchav/Archipelago/releases/tag/alttp2026-v6</id>
-    <title>A Link to the Past Beta v6.0.2r3</title>
+    <title>A Link to the Past Beta v6.0.2r2</title>
     <updated>2026-10-01T23:07:49+00:00</updated>
     <author>
       <name>Berserker</name>
@@ -2279,7 +2152,7 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release6</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r3</title>
     <updated>2026-10-03T17:21:37+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -2353,5 +2226,63 @@ Even after deletion, the "Open Patch" Workflow in AP currently still starts the 
 - Updated to new location class&#13;
 - Boss reward locations are restricted to local items, preventing collect from unlocking your goal early</content>
     <link href="https://github.com/DayKat/spirit-tracks/releases/tag/st-v0.8.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.5</id>
+    <title>Taylor Swift Discography v1.2.5</title>
+    <updated>2026-10-03T19:34:55+00:00</updated>
+    <author>
+      <name>benny-dreamly</name>
+    </author>
+    <content>This release fixes the config files for the client to include the include_&lt;album&gt;_tv options, which fixes them showing up in the music client. A corresponding music client update is required for fixing the vault tracks not working properly.&#13;
+&#13;
+**Full Changelog**: https://github.com/benny-dreamly/Archipelago/compare/ts-1.2.4...ts-1.2.5</content>
+    <link href="https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.11.3</id>
+    <title>Void Stranger v0.11.3</title>
+    <updated>2026-10-03T20:13:20+00:00</updated>
+    <author>
+      <name>CriminalPancake</name>
+    </author>
+    <content># What's Changed for v0.11.3&#13;
+&#13;
+* 0.11.3 by @Cavin856 in https://github.com/CriminalPancake/void-stranger-ap/pull/21&#13;
+## Main features:&#13;
+- Dead End, Whitevoid, and Beehole dungeons added as options&#13;
+- Lev and Cif room chests added&#13;
+- Short Dis is now an option&#13;
+- Logic Complexity implemented&#13;
+- Brandsanity now always on&#13;
+- Removed checks from consulting statues in Idolsanity&#13;
+## Hotfixes&#13;
+- Fixed some issues with Dead End&#13;
+- Fixed a critical generation error with Idolsanity&#13;
+- Fixed a typo causing Beehole Reward 1 to always be in logic&#13;
+&#13;
+Many more changes included, see changelog for full details&#13;
+&#13;
+**Full Changelog**: https://github.com/CriminalPancake/void-stranger-ap/compare/v0.10.2...v0.11.3</content>
+    <link href="https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.11.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/tag/v0.1.0</id>
+    <title>Manual_DonaldDuckQuackAttack_1313e v0.1.0</title>
+    <updated>2026-10-03T22:14:19+00:00</updated>
+    <author>
+      <name>1313e</name>
+    </author>
+    <content>Added the following locations as checks:&#13;
+- Extra lives in levels&#13;
+- Purple presents in levels&#13;
+- Using a special move for the first time&#13;
+- Secret areas in the bonus levels&#13;
+- Outfits&#13;
+&#13;
+Starting items was reduced to just 1 map now.&#13;
+&#13;
+**Full Changelog**: https://github.com/1313e/manual_donaldduckquackattack_1313e/compare/v0.0.2...v0.1.0</content>
+    <link href="https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/tag/v0.1.0"/>
   </entry>
 </feed>

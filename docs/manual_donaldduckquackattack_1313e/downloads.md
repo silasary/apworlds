@@ -1,9 +1,12 @@
 # Manual_DonaldDuckQuackAttack_1313e
 
 ## Latest
-- <a href="https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v0.0.2/manual_donaldduckquackattack_1313e.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v0.1.0/manual_donaldduckquackattack_1313e.apworld">Latest Version (0.1.0)</a>
 
 ## All Versions
+
+#### v0.1.0
+- <a href="https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v0.1.0/manual_donaldduckquackattack_1313e.apworld">https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v0.1.0/manual_donaldduckquackattack_1313e.apworld</a>
 
 #### v0.0.2
 - <a href="https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v0.0.2/manual_donaldduckquackattack_1313e.apworld">https://github.com/1313e/manual_donaldduckquackattack_1313e/releases/download/v0.0.2/manual_donaldduckquackattack_1313e.apworld</a>
