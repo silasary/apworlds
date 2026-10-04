@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "IanCichy"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Cult of the Lamb",
+  "github": "https://github.com/IanCichy/CultOfTheLamb_Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.9.0-beta.1": {
+      "created_at": "2026-09-26T14:37:16Z",
+      "description": "The first public beta. Play Cult of the Lamb in an Archipelago multiworld.\n\n## What to download\n\n| File | Who needs it |\n|------|--------------|\n| `Archipelago_CultOfTheLamb-0.9.0.zip` | Every player. Install through r2modman, or drop it into `BepInEx/plugins`. Also on [Thunderstore](https://thunderstore.io/c/cult-of-the-lamb/). |\n| `cult_of_the_lamb.apworld` | Whoever generates the seed. Goes in `custom_worlds/` in your Archipelago install. |\n\nRequires BepInEx 5.4.2101 for Cult of the Lamb, and Archipelago 0.6.6 or newer.\n\nThe [README](https://github.com/IanCichy/CultOfTheLamb_Archipelago#readme) has the full setup, every option, and how to write your YAML.\n\n## What's in it\n\n- Region access gated behind Progressive Bishop's Domain items\n- Weapons, curses, sermon upgrades, tarot cards and Divine Inspiration as multiworld items and checks\n- Optional checks for follower milestones, Snail Shrine offerings, tarot shop slots, buildings and sweeping\n- Three goals: a number of Bishops, a number of Witnesses, or Narinder\n- Woolhaven DLC support behind `include_woolhaven`\n- Pacing caps so a seed fits in a session rather than the game's own curve\n- Connect from the pause menu, an AP checklist in the quest log, a popup for every check, and base displays for your collections\n\nThe [changelog](https://github.com/IanCichy/CultOfTheLamb_Archipelago/blob/main/CHANGELOG.md) lists all of it.\n\n## Before you start\n\n**Use a save dedicated to Archipelago.** With `randomize_tarot_cards` on, connecting takes the managed cards out of your collection and hands them back as items. Adding the mod to an existing game has not been tested.\n\n**Connect after your save has loaded**, not from the main menu. Right after you load into your cult is the best time.\n\n**Tarot cards are the one thing offline play loses.** Everything else you do while disconnected gets sent when you reconnect, but a card unlocked offline sends no check and is taken back. Earn cards while connected.\n\n## It's a beta\n\nMultiple full multiworlds have been played and completed on this, but it hasn't had many hands on it yet. If something looks wrong, press **F9** in game to dump the mod's state to the log, then [open an issue](https://github.com/IanCichy/CultOfTheLamb_Archipelago/issues) with `LogOutput.log` and your YAML.\n",
+      "download_url": "https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/download/v0.9.0-beta.1/cult_of_the_lamb.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c5e910a1fa4e658de57501d8c9534afec4dd2590e18d38397519eae2b9206e91",
+      "html_url": "https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/tag/v0.9.0-beta.1",
+      "minimum_ap_version": "0.6.6",
+      "size": 70778,
+      "source_url": "https://api.github.com/repos/IanCichy/CultOfTheLamb_Archipelago",
+      "tag": "v0.9.0-beta.1",
+      "title": "v0.9.0-beta.1: First public beta",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0b1"
+    }
+  }
+}
