@@ -2,169 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-04T08:09:26.076836+00:00</updated>
+  <updated>2026-10-04T14:00:28.074792+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.10.0</id>
-    <title>Hades2Rogue v0.10.0</title>
-    <updated>2026-10-02T01:53:51+00:00</updated>
-    <author>
-      <name>BrittisH39</name>
-    </author>
-    <content>## Biggest changes:&#13;
-- Enemy_locations replaced with Enemysanity option, which allows players to shuffle or randomize enemies in addition to setting them as locations. The shuffle and random modes are still experimental, so expect some major bugs if you select those options.&#13;
-- Dream route added! Along with options to make it feel unique. Shoutout to zerp and their DreamDiveTweaks mod for allowing runs to go past 4 regions.&#13;
-- Added progressive_per to Keepsakesanity and Petsanity, which adds progressive checks for each individual keepsake/pet.&#13;
-- Minibosses aren't shuffled like normal enemies. Instead include_minibosses shuffles the miniboss rooms, so you might walk into a miniboss room in Erebus and find Charybdis.&#13;
-- Room locations are now numbered per region instead of per route, and defeating a region's boss sends any room locations you have left in that region.&#13;
-- Added Chaos to GodSanity.&#13;
-- Chaos Gates can now show up in every region of the Underworld and Surface, instead of only a few.&#13;
-- Reworked the Hades 2 tab in the client. It now shows your progress through each region, your goal progress, and lists of what you've checked. It also no longer relies on color to tell you things.&#13;
-- Reworked DeathLink so deaths no longer queue up.&#13;
-&#13;
-## Other Changes:&#13;
-- Legendary and Duo boons are now more likely with more rarity increases.&#13;
-- NPCs that spawn in different ways should now send their keepsakes regardless of where you give them nectar.&#13;
-- Tried to fix some issues with when the Daedalus Upgrade item is applying.&#13;
-- Fixed location issues in Fields of Mourning and Tartarus. Primarily that Fields of Mourning wasn't sending locations for each encounter, instead only sending them when you walk through the door. Tartarus was only sending locations when completing a bonus side room.&#13;
-- Fixed players who had things set up incorrectly being permanently locked out of checks. Once the issue is corrected, locations should send as normal.&#13;
-- Overlay now notes who you received items from.&#13;
-- Attempted suppression of some camera takeovers when first entering the Crossroads hub. I will be working on this more as I catch more.&#13;
-- Tried a really simple fix to hopefully stop armor from continuing to show as the screen blacks out during deaths.&#13;
-- Zagreus Journey failed to install correctly message should now be suppressed if players have Zagreus Journey disabled in the YAML.&#13;
-- Split Met and Defeated checks for Scylla and the Sirens into Scylla, Roxy, and Jetty.&#13;
-- Added a seed-identity guard so starting a new Archipelago without closing the game shouldn't ever send locations from a previous archipelago connection.&#13;
-- Chaos Gates should now count as rooms, since my previous assumption that they were extra is not correct.&#13;
-- Room counter should now always show the room you're in instead of the last room you sent.&#13;
-- Removed the hide and seek locations, and suppressed that flashback from ever happening.&#13;
-- Vow of Menace can now pull enemies from regions you haven't visited yet.&#13;
-- Suppressed all resource-gathering spots since there isn't a way to use them in the AP, and I don't intend to use them for anything.&#13;
-- Suppressed the "Divination of the Elements" pop-up the first time a player collects a boon.&#13;
-- Added 0.10.0 stuff to the Guided YAML and YAML Creator.&#13;
-- Fixed an issue where Nightmare route was still locked until an unlock was sent even if players disabled lock_routes.&#13;
-- Made ZJ an optional dependency. It's no longer downloaded with the mod, so if you want the Nightmare route, download it yourself in r2modman.&#13;
-- DreamDiveTweaks is now a dependency, and is downloaded with the mod.&#13;
-- Fixed room locations not sending if a later room in that region had already been sent by someone else (a collect, a release, or an admin).&#13;
-- Room logic is more forgiving, the last rooms of a region aren't expected until you can beat its boss.&#13;
-- Fixed per_aspect_room_based with combine_pools not creating any aspect room locations.&#13;
-- Final Challenge now ends the run right after the victory screen when you defeat Zagreus, and fixed a few issues with where the Zagreus contract sent you afterwards.&#13;
-- Fixed a crash in GodSanity when a boon was offered while you had no gods unlocked.&#13;
-- Fixed gods you hadn't unlocked yet showing up in the first room of Ephyra.&#13;
-- Fixed Daedalus Hammers rarely showing up in runs with GodSanity.&#13;
-- Fixed some Starting NPC gifts not doing anything.&#13;
-- Grasp can no longer be bought at the altar, since it comes from items.&#13;
-- Helper story rooms should no longer show up as the very first room of a Nightmare region.&#13;
-- Keepsake and Met locations can all be sent from a Dream Dive.&#13;
-- If you win while the client is disconnected, the win is now saved and sent once you reconnect.&#13;
-- start_inventory_from_pool now works with Grasp, Arcana, Keepsakes, and Vow Removals.&#13;
-- Setting a filler's percentage to 0 now actually means you get none of it. Nectar was sneaking in anyway.&#13;
-- Item and location IDs are now locked in place, so future updates shouldn't break seeds generated on older versions.&#13;
-- The Surface door now opens as soon as you receive access to it, instead of needing to leave the room and come back.&#13;
-- Fixed a crash that could happen when a combat helper showed up somewhere they normally don't.&#13;
-- Fixed a rare case where the same room could repeat forever.&#13;
-- With combine_pools, the shared pool is no longer sent early when your goal needs more than one route.&#13;
-- Fixed some option combinations failing to generate correctly.&#13;
-- Fixed Universal Tracker not counting some items towards logic.</content>
-    <link href="https://github.com/BrittisH39/Hades2Archipelago/releases/tag/v0.10.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.7</id>
-    <title>Stardew Valley v8.1.7</title>
-    <updated>2026-10-02T03:30:57+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content># First version submitted as a PR to Archipelago Core: https://github.com/ArchipelagoMW/Archipelago/pull/6477&#13;
-&#13;
-## Apworld&#13;
-- Fixed logic issues with many entrances (Alec, Cellar, etc)&#13;
-- Fixed multiple bugs with same type and same direction ER&#13;
-- Fixed a bug with dynamic item classifications confusing UT (particularly allsanity goal)&#13;
-- Added a condition to the witch warp from wizard to be able to have reached the other side&#13;
-- Forbid all farming-based artisan goods to appear in seed prices to avoid logic loops&#13;
-- Fixed an issue with Starter sources not properly taking into account extra requirements (Notably, furnace and garden pot requiring the NPC)&#13;
-- Fixed strawberry seeds DR price not accounting for the expected x10 in the mod&#13;
-- Big update to all documentation&#13;
-- Fixed an issue where Max prices shuffled bundles can theoretically require more items than there are unique items. Allow picking duplicates when that happens&#13;
-- Added using Marnie's shop through the animal catalogue to logic&#13;
-&#13;
-## Mod&#13;
-- Fixed a Lingo hint that was being given in reverse&#13;
-- Added a safeguard against modded maps with null forage accidentally crashing the help wanted board&#13;
-- Exit the fishing trap early when the player does not own a rod, to avoid triggering other fishing statistics such as walnuts&#13;
-- Added a baby name who did nothing to deserve it&#13;
-- Updated Meme bundle hints with the new 8.x.x meme bundles</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FeluciaPS/GarfieldKartAP/releases/tag/1.1.0</id>
-    <title>Garfield Kart - Furious Racing v1.1.0</title>
-    <updated>2026-10-02T05:49:37+00:00</updated>
-    <author>
-      <name>FeluciaPS</name>
-    </author>
-    <author>
-      <name>Jeffdev</name>
-    </author>
-    <content>- Added a proper connection menu to the game, replacing the basic unity UI one&#13;
-- Added new art by Flow for the main logo, thunderstore logo, and time trial medals!&#13;
-- Added text tracker info for Grand Prix, displaying victory and spoiler unlocks.&#13;
-- Added better handling for losing connection midgame. It now brings up a popup that lets you try to reconnect, and if dismissed, brings you back to the connection screen.&#13;
-- Changed the victory tracker display on the track/cup select to be based on your local win state, rather than based on the location, to fix collect issues.&#13;
-- Changed the notification display on the top to not display debug log messages about the filler items being used&#13;
-- Changed Sneak-A-Peak to have a higher chance of giving you Lasagna alongside spring, if all puzzle pieces haven't been collected. This is due to Sneak-A-Peak having lasagna as a logical requirement for puzzle piece 3.&#13;
-- Changed Blazing Oasis Puzzle Piece 3 to only require Spring, rather than Lasagna/Spring.&#13;
-- Fixed cups_and_races expecting either the cup or race unlock. It now just expects the race unlock for logic.&#13;
-- Fixed the item display acting wonky with itemsanity item removals.&#13;
-- Fixed progression_balancing and accessibility not being added into the yaml.&#13;
-- Fixed some messy behavior with re-enabling the grand prix button in some cases.&#13;
-- Updated the Archipelago client to connect to 0.6.7.&#13;
-&#13;
-[Mod Download](https://github.com/robotzurg/GarfieldKartAPMod/releases/latest)&#13;
-[Setup Guide](https://github.com/FeluciaPS/GarfieldKartAP/blob/main/docs/setup_en.md)</content>
-    <link href="https://github.com/FeluciaPS/GarfieldKartAP/releases/tag/1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0-pre.1</id>
-    <title>CrossCode v0.10.0rc1</title>
-    <updated>2026-10-02T06:59:14+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content>## Additions&#13;
-&#13;
-* Added platform quest locations and Facility X goal (@buanjautista, #103)&#13;
-  * Platform quests are in the pool when Quest Randomization is enabled.&#13;
-  * Quest Randomization is required for Facility X goal.&#13;
-* Added trap support and initial set of traps (@buanjautista, #105)&#13;
-  * Full list of traps is available in the template YAML and on Discord.&#13;
-&#13;
-## Changes to Generation&#13;
-&#13;
-* The number of SP upgrades in the pool is now decided by an option, `progressive_sp_unlocks` (@buanjautista, #102)&#13;
-&#13;
-## Internal Changes&#13;
-&#13;
-* Merge Open World into CCMultiworldRandomizer (@CodeTriangle, #73)&#13;
- * The mod will prompt you to uninstall and disable CC-Open-World.&#13;
-&#13;
-## Migration Guide&#13;
-&#13;
-While this version is backwards compatible with previous versions, I **do not** recommend migrating to this release if your game was generated on 0.9.x or earlier and I **do not** recommend submitting this APWorld version to a serious game unless your friends are okay with things potentially breaking.</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0-pre.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Wouter17/Spirit-Archipelago/releases/tag/0.1.5</id>
     <title>Spirit Island v0.1.5</title>
@@ -1362,7 +1204,7 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release6</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r3</title>
     <updated>2026-10-03T17:21:37+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1566,5 +1408,276 @@ Adds new apworld: YARGGreenDayRockBand.apworld&#13;
 * [SlotLock] Added a percentage option for linear fill, to only fill a certain percentage of items at each sphere step. Also *always* fills slotlock slot unlock items first, for all slotlock slots. Also makes sure that linear fill works fine with multiple slotlock worlds (Although it does seem to have weird gen failures?)&#13;
 **Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.11.0...slotlockv0.11.1</content>
     <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.2</id>
+    <title>Baldur's Gate 3 v0.7.2</title>
+    <updated>2026-10-04T07:58:00+00:00</updated>
+    <author>
+      <name>Broney</name>
+    </author>
+    <content>Changes in this release:&#13;
+* Containersanity revamp for Act 1 + 2. Too many changes to list. All locations in Act 1+2 _should_ now have accurate region names, x/y coords, and have been legitimately found in a real playthrough. This remains unstable until I get confirmation that somebody else has played through it.&#13;
+* "Container Highlight" yaml option added. When true, unlooted containers glow. Some glowing containers are not actually locations due to bugs or unreachableness or invalid whatever, but every location in containersanity does glow.&#13;
+* Fixed a change to the Mod to better handle connect stability. The "server mod mismatch" error should fire less often now.&#13;
+* Replaced monster trap minotaur with Meenlock.&#13;
+* Added companion clothes shuffle (no game effect, I just think it's funny)&#13;
+* Added companion class randomization (not recommended currently, I didn't modify starting stats, so they'll be wildly inappropriate)&#13;
+* Removed some killsanity checks that are actually missable that I didn't realize was true (the first five shar skeletons, three moonrise prisoner Master of Souls).&#13;
+* Renamed a few killsanity checks (I think all TBD's are now labelled correctly, Colony: Kill Mindflayer is Colony Showdown: Kill Mindflayer, and the 8 necromites on the Moonrise roof became "Kill Roof Necromite" (because audience guards would clash with the name)).&#13;
+* Changed the heavy supply pack to a normal supply pack. Farewell, overburdened trap, some of us were fond of you.</content>
+    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.0</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.0</title>
+    <updated>2026-10-04T09:14:31+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Fixed
+
+- **The bots can buy upgrades again, and an existing server gets SourceMod's
+  fix for the upgrade station crash.** The 2026-10-02 TF2 update changed how
+  the game stores the messages the upgrade station sends, and the SourceMod we
+  shipped read them the old way. A player opening the station crashed the
+  server, and the game refused every upgrade a bot asked for. SourceMod
+  1.12.0-git7255 reads the new layout, and the launcher and the Docker image
+  now upgrade a server that already has an older SourceMod at its next start.
+  Your own edits to SourceMod's configs are kept. We measured the bots: 35 of
+  35 purchases refused before, 44 bought after, and a player confirmed the
+  station no longer crashes their server.
+- **The debug bundle stops pointing at the wrong thing when SigMod cannot find
+  the game.** When SigMod was made for the TF2 build your server reports and
+  still finds none of the game's addresses, the game files are usually half
+  updated, and `summary.txt` now says so and tells you to press Repair, which
+  checks every game file on the next start. It used to tell you to compare two
+  version numbers that already matched. And when every bot purchase is refused
+  on a SourceMod that already has the fix, it no longer blames SourceMod.
+
+### Changed
+
+- **The debug bundle names the TF2 build the server is running.** It listed
+  every version the launcher installs and not the one they are all built
+  against, which is the version that matters most on the evening TF2 updates.
+- **The debug bundle says when two of those versions cannot work together.**
+  Above the logs it now names, in plain words, a SigMod built for a different
+  TF2 build, a SourceMod too old for the upgrade station on this one, and a run
+  where the game refused every upgrade the bots tried to buy. It compares what
+  the file already said; it still does not claim to have found your bug.
+- **The debug bundle stops sending you after a crash dump that does not
+  exist.** When SigMod catches the fault and closes the server itself, Windows
+  writes no dump, and the summary now says so and points at the two stacks
+  SigMod printed into the log instead. When a dump should exist it names the
+  folders it looked in.
+- **The debug bundle lists what it could not collect.** Two bundles from the
+  same evening held different files and there was no way to tell a missing file
+  from a file that never existed. `collected.txt` in the zip now says which it
+  was, and why.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* feat(ci): alert on a new TF2 build before players do by @m-this in https://github.com/m-this/tf2-archipelago/pull/181
+* fix(versions): pin the defender mod's compiler once, and record the TF2 build by @m-this in https://github.com/m-this/tf2-archipelago/pull/182
+* fix(deploy): pin SourceMod 1.12.0-git7255 by @m-this in https://github.com/m-this/tf2-archipelago/pull/183
+* feat(debugbundle): record the TF2 build and cross-check the pins against it by @m-this in https://github.com/m-this/tf2-archipelago/pull/184
+* chore(deps): tf2-mvm-bots-go v0.18.4, and drop SM_Stock_OfficerSpy from the build by @m-this in https://github.com/m-this/tf2-archipelago/pull/185
+* fix(install): bring an installed SourceMod and Metamod to the pins by @m-this in https://github.com/m-this/tf2-archipelago/pull/186
+* fix(debugbundle): point at the game files when SigMod fails on its own build by @m-this in https://github.com/m-this/tf2-archipelago/pull/187
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.17.9...v1.18.0
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/NzM4ZmE0MThiNjhmNjQ5OGY0OGUzMWU0NzA0ZTZkNTM6MTc5MTEwNTU2OQ==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MDdmNmEzNmJkYmE3NmNiZjhhN2Q2Mjg5ZDEzZjgzZWQ6MTc5MTEwNTU3Mg==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0</id>
+    <title>Spyro: A Hero's Tail v2.2.0r2</title>
+    <updated>2026-10-04T10:04:33+00:00</updated>
+    <author>
+      <name>mayaxtg</name>
+    </author>
+    <author>
+      <name>ebbeaht</name>
+    </author>
+    <author>
+      <name>PhoenixAki</name>
+    </author>
+    <content># Spyro: A Hero's Tail v2.2.0: I Can't Think of a Good Subtitle! You Get This Instead!&#13;
+*AHT v2.2 is only compatible with game mod version 20, which is included below (both NTSC + PAL).*&#13;
+&#13;
+v2.2 contains *way* more than originally planned (sorry for the long changelog...). There's enough left on our to-do list to justify at least a v2.3, though I'm not sure how quick it'll happen. But who are we kidding, I'm scarily addicted to working on AHT...&#13;
+&#13;
+[Setup Guide](https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&amp;-FAQ)&#13;
+# Changelog (compared to v2.1.0)&#13;
+## Most Notable&#13;
+### Features&#13;
+* The PAL GC version of the game is now supported by the game mod!&#13;
+* The randomized shop system has been moderately redesigned:&#13;
+  - `gem_logic` is now `shop_logic` and comes in 2 forms. `ordered` works identically to `gem_logic = true`. `unordered` is a replacement for `gem_logic = false` which avoids all shop items being in sphere 1. `unordered` assumes you will buy items in order, but doesn't restrict you from doing otherwise at your own risk, whereas `ordered` does enforce the order.&#13;
+  - Number of shop items is now determined by `shop_item_count` instead of `key_rings`.&#13;
+* The goal system has been heavily expanded.&#13;
+* `auto_corrections` has been expanded to `halt`, `fix_minor`, `fix_major`, and `chaos`. `halt` halts generation on problems. `fix_minor` fixes relatively inconsequential problems. `fix_major` fixes problems with a more notable impact. `chaos` continues generation instead of fixing or halting.&#13;
+* Added support for 5 traps (Spam Call, Reverse Controls, Bounce, Gem Tax, and Damage Sparx)!&#13;
+* You can now teleport across the orbiting platform sections in Cloudy Domain with a button prompt.&#13;
+### Logic&#13;
+* Added a logical requirement for the critters in Red's boss fight.&#13;
+* The rising statue room in Sunken Ruins now requires Electric Breath to get to anything, instead of only Double Jump.&#13;
+* `RL: Dark Gem in Northeast` now requires the ability to kill the huge robo-gnorcs guarding it.&#13;
+* Fixed a rare math precision error that could make the final shop item never be in logic.&#13;
+* Made a [reference spreadsheet](&lt;https://tinyurl.com/ahtapsheet&gt;) which lists every region and location access rule, to help with troubleshooting.&#13;
+## Less Notable&#13;
+### Fixes/Tweaks&#13;
+* `auto_corrections` will now fix or halt if you attempt to generate a seed with no goal, or if you randomize Light Gem door or Gadget costs to be above 90 while `open_world_mode` is `vanilla`.&#13;
+* Fixed a goal bug that hurt Go Mode accuracy and harmed the quality of calculated playthroughs.&#13;
+* Map icons now render as red = unreachable, yellow = reachable, and green = checked.&#13;
+* The pause menu's gem information no longer includes out-of-logic gems (those from Gem Packs/Taxes and Double Gems).&#13;
+* Fixed multiple bugs with how shop unlock items are created and handled logically.&#13;
+* Added location groups for Light Gem doors and gadgets.&#13;
+* In-game notifications now include item sends, and a small Easter egg when you receive specific items from yourself.&#13;
+* `hint_boss_rewards` now hints all boss locations, not just the breath rewards.&#13;
+* `logging_level` is now a single choice of level of detail.&#13;
+* The pause menu's item list now correctly identifies Pole Spin, and "Health Unit+" is no longer missing from it.&#13;
+* Gem count in minigames is no longer separate from your full count, meaning you don't need to finish a minigame to get its gems.&#13;
+### Misc.&#13;
+* Significantly refactored chunks of the codebase to be better designed and easier to maintain.&#13;
+* Added client command `/costs`.&#13;
+* Nearly every location has been renamed for less verbosity.&#13;
+* "Generics" filler items are now "Shinies".&#13;
+* Added 270 gems from Stormy Beach to the gem logic system that were missed.&#13;
+* Condensed a few YAML options for simplicity.&#13;
+* Locations are now sorted on the tracker page in order of vanilla game levels, then alphabetically by logical region, then alphabetically by location.</content>
+    <link href="https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.0r2</title>
+    <updated>2026-10-04T10:36:29+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `8a209791caf2510f743c11cffc949306f8d67c74`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.18.0
+
+- feat(github): issue forms for bugs and suggestions (#188)
+- feat(botprobe): a release gate over every wave, with and without Bot Surge (#189)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
 </feed>

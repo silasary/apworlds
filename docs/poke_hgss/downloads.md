@@ -8,7 +8,7 @@
 #### v0.10.0r3
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld</a>
 
-#### v0.10.0r3
+#### v0.10.0r2
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld</a>
 
 #### v0.10.0r2
