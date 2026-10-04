@@ -120,6 +120,21 @@
       "title": "v0.28.1 - First Verified Victory",
       "version_simple": "0.28.1",
       "world_version": "0.28.1"
+    },
+    "v0.28.2": {
+      "created_at": "2026-09-29T20:44:21Z",
+      "description": "# v0.28.2 - Generation and Multiworld Compatibility\r\n\r\n**APWorld v0.28.2 / Client v0.75.13 - September 29, 2026**\r\n\r\nThis APWorld-only update fixes compatibility and seed-generation failures found\r\nby Ionium APTests. The game client is unchanged.\r\n\r\n## Fixed\r\n\r\n- Fixed APWorld loading failures caused by declaring the reserved `random` option.\r\n- Removed unsupported starting-area choices. Roots remains the supported start;\r\n  standard YAML `random` still works, and `validated_random` retains legacy value 0.\r\n- Improved reverse-fill ordering for Stars, Music Lab points, song unlocks,\r\n  Car Battery and Old Game Data to prevent reported generation dead ends.\r\n- Fixed restricted checks rejecting filler from other games. They now accept\r\n  filler/traps from any world while continuing to exclude progression and useful\r\n  items. Progression-safe checks still accept progression from other games.\r\n- Updated option descriptions, documentation and regression coverage.\r\n\r\n## Validation\r\n\r\n- 205 Ionium unit tests and all 150 local regression tests passed.\r\n- All 14,500 fuzz runs passed across 11 variants, including 500 Universal Tracker\r\n  checks, with zero failures or timeouts.\r\n- All reported failing seeds were reproduced and repaired.\r\n- Independent code review found no blocking correctness issues.\r\n\r\nThe index CI remains authoritative; browser results do not constitute index\r\napproval. This is not a live 1,900-player test.\r\n\r\n## Updating\r\n\r\nInstall the new **scrc.apworld** on the computer generating seeds or running\r\nUniversal Tracker. Keep your player YAML in the location required by your tracker\r\nsetup. Existing client v0.75.13 users do not need to replace game DLLs. The same\r\nclient archive is included for new installations.\r\n\r\nItem/check IDs and schema 19 are unchanged. Existing seeds and saves remain\r\ncompatible; this update does not rewrite their placements. Generation repairs\r\napply to newly generated seeds.\r\n\r\n## Known issues and next steps\r\n\r\nExisting movement, frame-pacing and delayed cassette-delivery investigations\r\nremain open. See the [known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.28.2/docs/KNOWN_ISSUES.md)\r\nand [full changelog](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.28.2/CHANGELOG.md).\r\nNext: broader real multiworld playtesting and continued investigation of those\r\nclient issues.\r\n",
+      "download_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.28.2/scrc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "158c95e55dd96c76d07fb0bc4e06669741b7febd11c36f257aee625587050f1e",
+      "html_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.28.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 38887,
+      "source_url": "https://api.github.com/repos/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago",
+      "tag": "v0.28.2",
+      "title": "v0.28.2 - Generation and Multiworld Compatibility",
+      "version_simple": "0.28.2",
+      "world_version": "0.28.2"
     }
   }
 }

@@ -1,9 +1,12 @@
 # SlotLock
 
 ## Latest
-- <a href="https://github.com/gjgfuj/SlotLock/releases/download/slotlockv0.11.0/slotlock.apworld">Latest Version (0.11.0)</a>
+- <a href="https://github.com/gjgfuj/SlotLock/releases/download/slotlockv0.11.1/slotlock.apworld">Latest Version (0.11.1)</a>
 
 ## All Versions
+
+#### v0.11.1
+- <a href="https://github.com/gjgfuj/SlotLock/releases/download/slotlockv0.11.1/slotlock.apworld">https://github.com/gjgfuj/SlotLock/releases/download/slotlockv0.11.1/slotlock.apworld</a>
 
 #### v0.11.0
 - <a href="https://github.com/gjgfuj/SlotLock/releases/download/slotlockv0.11.0/slotlock.apworld">https://github.com/gjgfuj/SlotLock/releases/download/slotlockv0.11.0/slotlock.apworld</a>
