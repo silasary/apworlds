@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 2.3.0   <-- must match the Toy Story 2 .apworld release.
+-- CONNECTOR VERSION: 2.3.2   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,11 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "2.3.1"
+TS2_VERSION = "2.3.2"
+-- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
+-- the client and the title screen only ever read TS2_VERSION, so a hotfix can
+-- be told apart in a player's console without tripping the version check.
+TS2_BUILD = nil
 
 -- ── Debug logging (OFF by default) ──────────────────────────────────────────
 -- A player who hits a bug (a crash, a stuck connection, a wrong send) can set
@@ -60,6 +64,144 @@ function ts2_debug(msg)
         ts2_dbg_handle:write(string.format("[f%d] %s\n", fr, msg))
         ts2_dbg_handle:flush()
     end
+end
+
+-- ── Pad trace (OFF by default) ──────────────────────────────────────────────
+-- Diagnostic for "the controller stops responding". Set
+--   TS2_PAD_TRACE = true
+-- reproduce the problem, close the script, and send ts2_padtrace.txt (written
+-- next to EmuHawk.exe). It records two things:
+--
+--   1. Once a second: the raw bytes around the game's pad buffer, the two
+--      button words the game's own code tests, and what the emulator says is
+--      actually pressed (including analog stick values when the pad has them).
+--      Read side by side, those show what analog mode changes in memory.
+--
+--   2. Every write -- from this script OR from the AP client, which writes
+--      through the connector -- that lands inside those same ranges, with the
+--      function and line it came from. That shows which of OUR writes touches
+--      the input path, and from which frame.
+--
+-- Off, it installs nothing and costs one flag check. On, it routes memory
+-- writes through a thin proxy, so leave it off for normal play.
+TS2_PAD_TRACE = false
+TS2_PAD_TRACE_FILE = "ts2_padtrace.txt"
+TS2_PAD_TRACE_WATCH = {
+    {0x0A3DC0, 0x0A3DFF, "pad"},       -- raw pad buffer (0x0A3DDA/DB = button bytes)
+    {0x0A12A8, 0x0A12C7, "visorw"},    -- button word the visor code tests (0x0A12B4)
+    {0x0A15B0, 0x0A15CF, "jumpw"},     -- button word the jump code tests  (0x0A15BC)
+}
+-- Globals, not locals: the main chunk is at Lua's 200-local ceiling.
+ts2_pt = { fh = nil, frame = 0, seen = {}, counts = {}, skip = {} }
+
+function ts2_pt_log(line)
+    if not ts2_pt.fh then
+        ts2_pt.fh = io.open(TS2_PAD_TRACE_FILE, "a")
+        if ts2_pt.fh then
+            ts2_pt.fh:write("\n==== ts2 pad trace (connector " .. tostring(TS2_VERSION) .. ") ====\n")
+            ts2_pt.fh:write("Reproduce: play a few seconds, press some buttons, toggle ANALOG,\n")
+            ts2_pt.fh:write("press buttons again, wait 5s, close the script. Attach this file.\n\n")
+        end
+    end
+    if ts2_pt.fh then ts2_pt.fh:write(line .. "\n"); ts2_pt.fh:flush() end
+    print("[padtrace] " .. line)
+end
+
+function ts2_pt_hit(addr, size)
+    for _, w in ipairs(TS2_PAD_TRACE_WATCH) do
+        if addr <= w[2] and addr + size - 1 >= w[1] then return w[3] end
+    end
+    return nil
+end
+
+function ts2_pt_where()
+    -- Walk up until we leave the tracer itself. A fixed depth is wrong the
+    -- moment anything (pcall, a wrapper) adds a frame, and naming the tracer's
+    -- own function as the culprit would send the investigation the wrong way.
+    if type(debug) ~= "table" or type(debug.getinfo) ~= "function" then return "?" end
+    for level = 2, 12 do
+        local info = debug.getinfo(level, "Slnf")
+        if not info then break end
+        if info.what ~= "C" and not ts2_pt.skip[info.func] then
+            return string.format("%s:%s", tostring(info.name or "main"),
+                                 tostring(info.currentline or "?"))
+        end
+    end
+    return "?"
+end
+
+function ts2_pt_record(kind, addr, size, value, domain)
+    if domain and domain ~= "MainRAM" then return end
+    local tag = ts2_pt_hit(addr, size)
+    if not tag then return end
+    local where = ts2_pt_where()
+    local key = string.format("%s %06X %s", kind, addr, where)
+    ts2_pt.counts[key] = (ts2_pt.counts[key] or 0) + 1
+    if not ts2_pt.seen[key] then
+        ts2_pt.seen[key] = true
+        ts2_pt_log(string.format("[f%d] FIRST WRITE %-6s %s 0x%06X = %s  from %s",
+            ts2_pt.frame, tag, kind, addr, tostring(value), where))
+    end
+end
+
+if TS2_PAD_TRACE then
+    -- Proxy the globals rather than poking fields on BizHawk's own library
+    -- tables, which may not accept assignment. Every call site looks
+    -- `mainmemory` / `memory` up by name at call time, so this catches them all.
+    TS2_REAL_MAINMEMORY = mainmemory
+    TS2_REAL_MEMORY = memory
+    mainmemory = setmetatable({
+        write_u8 = function(a, v)
+            ts2_pt_record("u8", a, 1, v); return TS2_REAL_MAINMEMORY.write_u8(a, v) end,
+        write_u16_le = function(a, v)
+            ts2_pt_record("u16", a, 2, v); return TS2_REAL_MAINMEMORY.write_u16_le(a, v) end,
+        write_u32_le = function(a, v)
+            ts2_pt_record("u32", a, 4, string.format("0x%08X", v))
+            return TS2_REAL_MAINMEMORY.write_u32_le(a, v) end,
+    }, { __index = TS2_REAL_MAINMEMORY })
+    memory = setmetatable({
+        write_bytes_as_array = function(a, bytes, domain)
+            -- The AP client's writes arrive here; tag them as such.
+            if type(bytes) == "table" then
+                ts2_pt_record("client", a, #bytes, #bytes .. "b", domain)
+            end
+            return TS2_REAL_MEMORY.write_bytes_as_array(a, bytes, domain)
+        end,
+    }, { __index = TS2_REAL_MEMORY })
+
+    event.onframestart(function()
+        ts2_pt.frame = ts2_pt.frame + 1
+        if ts2_pt.frame % 60 ~= 0 then return end
+        local rd = TS2_REAL_MAINMEMORY
+        local hex = {}
+        for a = 0x0A3DD4, 0x0A3DE7 do hex[#hex+1] = string.format("%02X", rd.read_u8(a)) end
+        local pressed, axes = {}, {}
+        local ok, pad = pcall(joypad.get)
+        if ok and type(pad) == "table" then
+            for k, v in pairs(pad) do
+                if v == true then pressed[#pressed+1] = tostring(k)
+                elseif type(v) == "number" then axes[#axes+1] = string.format("%s=%s", tostring(k), tostring(v)) end
+            end
+        end
+        table.sort(pressed); table.sort(axes)
+        ts2_pt_log(string.format("[f%d] pad[DD4..DE7]=%s  visorw=%04X jumpw=%04X  held={%s}  axes={%s}",
+            ts2_pt.frame, table.concat(hex, " "),
+            rd.read_u16_le(0x0A12B4), rd.read_u16_le(0x0A15BC),
+            table.concat(pressed, ","), table.concat(axes, ",")))
+        -- and how often each traced write fired in the last second
+        local n = 0
+        for key, c in pairs(ts2_pt.counts) do
+            ts2_pt_log(string.format("           x%-4d %s", c, key)); n = n + 1
+        end
+        ts2_pt.counts = {}
+    end)
+    ts2_pt.skip[ts2_pt_where] = true
+    ts2_pt.skip[ts2_pt_record] = true
+    for _, f in pairs({mainmemory.write_u8, mainmemory.write_u16_le,
+                       mainmemory.write_u32_le, memory.write_bytes_as_array}) do
+        ts2_pt.skip[f] = true
+    end
+    ts2_pt_log("pad trace ON -- writes into the pad and button-word ranges are being recorded")
 end
 
 do
@@ -246,7 +388,7 @@ SHOP_PROG_MASK    = 0x1FEC1F   -- client -> lua, bit per slot: reads as progress
 TOY_NAME_LVL  = 0x1FEBF9   -- level the buffer below describes (0 = nothing)
 TOY_NAME_BASE = 0x1FEBFA   -- 36 bytes, "owner|item", NUL padded
 TOY_HINT_LVL  = 0x1FEC1E   -- lua -> client, level whose offer was just shown
--- free: 0x1FEC1F - 0x1FEC3F
+-- 0x1FEC20: quick-load switch (client -> lua). free: 0x1FEC21 - 0x1FEC3F
 
 SHOP_NAME_W       = 36   -- the item name gets a whole line to itself
 SHOP_WIDTH        = 36
@@ -648,6 +790,9 @@ local boss_started = {slime=false, toybarn=false, zurg=false, bombs=false}
 -- chunk is at the 200-local ceiling, so new module state must be global.
 toybarn_real_hit = false
 toybarn_last_hp = -1
+-- Bombs Away (2.3.2): same "a real hit happened" gate as Toy Barn Encounter.
+bombs_real_hit = false
+bombs_last_hp = -1
 local prosp_loading       = false
 
 -- ============================================================
@@ -1695,6 +1840,40 @@ function tick_lock_flash()
     end
 end
 
+-- ── PAD BUFFER GUARD (2.3.1 hotfix) ─────────────────────────────────────────
+-- 0x0A3DD8.. is the game's raw controller buffer: [ID][0x5A][buttons lo][buttons
+-- hi], plus four stick bytes in analog mode. The bytes at 0x0A3DDA/DB are only
+-- BUTTONS while the pad is answering a normal poll -- ID 0x41 (digital), 0x73
+-- (DualShock analog) or 0x53 (analog stick).
+--
+-- When a player presses ANALOG, the game takes the pad into CONFIGURATION mode
+-- (ID 0xF3) to set it up, and for that exchange those same bytes carry config
+-- replies, not buttons. Every move lock here reads A.INPUT, sees a "pressed" bit
+-- in that config data, and writes it "released" -- and a pad buffer being written
+-- under the game mid-handshake never finishes the handshake. The pad stays in
+-- config mode, so the game never polls buttons again: every input dead, and back
+-- the instant the script closes. Self-sustaining, too: stuck in config mode, the
+-- bytes keep looking pressed, so the locks keep writing.
+--
+-- Only seen without Laser or Visor, because those are the locks that write when
+-- their bit reads clear. Any pad write could do it, so all of them come here.
+PAD_ID_ADDR, PAD_SYNC_ADDR = 0x0A3DD8, 0x0A3DD9
+PAD_POLL_IDS = { [0x41] = true, [0x73] = true, [0x53] = true }
+
+function pad_report_ok()
+    return PAD_POLL_IDS[mainmemory.read_u8(PAD_ID_ADDR)] == true
+       and mainmemory.read_u8(PAD_SYNC_ADDR) == 0x5A
+end
+
+-- The ONLY way this script writes the pad buffer. Returns whether it wrote.
+-- Skipping a write costs one frame of a move lock -- which is not even the real
+-- lock (the game tests 0x0A15BC / 0x0A12B4) -- so declining is always safe.
+function pad_write(addr, value)
+    if not pad_report_ok() then return false end
+    mainmemory.write_u8(addr, value)
+    return true
+end
+
 function is_x_pressed(input)
     -- X (cross) is bit 6 (0x40), active-low: pressed when the bit is CLEAR.
     return (input & 0x40) == 0
@@ -1702,7 +1881,7 @@ end
 
 function block_x(input)
     -- Release X by setting bit 6 back to 1, leaving all other bits intact.
-    mainmemory.write_u8(A.INPUT, input | 0x40)
+    pad_write(A.INPUT, input | 0x40)
 end
 
 function dj_pad_x()
@@ -1714,8 +1893,8 @@ function dj_pad_x()
     local ok, pad = pcall(joypad.get)
     if ok and type(pad) == "table" then
         for name, val in pairs(pad) do
-            if type(name) == "string" and dj_is_cross_name(name) then
-                return val and true or false
+            if type(name) == "string" and type(val) == "boolean" and dj_is_cross_name(name) then
+                return val
             end
         end
     end
@@ -1732,6 +1911,11 @@ end
 -- other PSX cores (which do say "Cross") keep working. Anchored to the end so
 -- nothing else in the pad table -- "Disk Index", "P1 Analog" -- can collide.
 function dj_is_cross_name(n)
+    -- Never an analog axis: "P1 LStick X" also ends in " X". (2.3.2: Quick
+    -- Loads found X by this name and could land on the stick axis instead.)
+    if n:find("Stick", 1, true) or n:find("Analog", 1, true) or n:find("Axis", 1, true) then
+        return false
+    end
     return n:find("Cross", 1, true) ~= nil or n == "X" or n:sub(-2) == " X"
 end
 
@@ -2553,7 +2737,7 @@ function update_moves()
             -- stamping down a stale copy silently undoes the others' work.
             local cur = mainmemory.read_u8(A.INPUT)
             if (cur & LZ.SQUARE_BIT) == 0 then
-                mainmemory.write_u8(A.INPUT, cur | LZ.SQUARE_BIT)
+                pad_write(A.INPUT, cur | LZ.SQUARE_BIT)
             end
             mainmemory.write_u32_le(A.LASER_PROG,LZ.PROG_DEFAULT)
             mainmemory.write_u32_le(A.LASER_SUPER,0)
@@ -2740,7 +2924,7 @@ function update_moves()
                 -- Re-read: earlier blocks this frame may have written A.INPUT.
                 local dj_in = mainmemory.read_u8(A.INPUT)
                 if (dj_in & 0x40) == 0 then
-                    mainmemory.write_u8(A.INPUT, dj_in | 0x40)
+                    pad_write(A.INPUT, dj_in | 0x40)
                 end
             end
         end
@@ -2787,7 +2971,7 @@ function update_moves()
         -- frame. Read-modify-write, and only ever touch our own bit.
         local cur = mainmemory.read_u8(A.INPUT)
         if (cur & LZ.VISOR_L1_BIT) == 0 then
-            mainmemory.write_u8(A.INPUT, cur | LZ.VISOR_L1_BIT)
+            pad_write(A.INPUT, cur | LZ.VISOR_L1_BIT)
         end
         mainmemory.write_u32_le(VISOR_OP_A, 0x00000000)
         mainmemory.write_u32_le(VISOR_OP_B, 0x00000000)
@@ -2889,8 +3073,8 @@ function cs_trigger()
 end
 
 function cs_freeze_input()
-    mainmemory.write_u8(A.INPUT,255)
-    mainmemory.write_u8(CS_START_ADDR,255)
+    pad_write(A.INPUT,255)
+    pad_write(CS_START_ADDR,255)
 end
 
 -- ── CUTSCENE SPEED LOCK (Option C) ──────────────────────────────────────────
@@ -3146,7 +3330,7 @@ function update_traps(level)
         -- freeze the controller input (255 = no buttons) like the original, so the
         -- player genuinely can't act during the freeze.
         mainmemory.write_u8(A.FREEZE,2)
-        mainmemory.write_u8(A.INPUT,255)
+        pad_write(A.INPUT,255)
         freeze_frames=freeze_frames-1
         if freeze_frames<=0 then mainmemory.write_u8(A.FREEZE,0); freeze_active=false end
     end
@@ -3237,7 +3421,7 @@ function update_traps(level)
         else
             if level>=1 and level<=15 then
                 mainmemory.write_u8(A.FREEZE, 2)
-                mainmemory.write_u8(0x0A3DDA, 255)
+                pad_write(0x0A3DDA, 255)
                 mainmemory.write_u8(0x0B221C, 255)
             end
             DEATH_A_FRAMES = DEATH_A_FRAMES + 1
@@ -3336,26 +3520,27 @@ function update_boss(level)
     local hp=mainmemory.read_u8(A.BOSS_HP)
     local defeats=mainmemory.read_u8(SHARED_BOSS_DEFEATS)
     if level==6 then
-        -- Bombs Away. Like the other bosses, require having SEEN THE BOSS ALIVE
-        -- (hp>0) at least once this entry before accepting hp==0 as a defeat.
+        -- Bombs Away (2.3.2): armed the way Toy Barn Encounter is -- by a REAL HIT.
         --
-        -- 2.3.1: this branch is NOT trusted on its own any more. A.BOSS_HP was
-        -- only ever verified on the other three bosses -- the comment below says
-        -- as much, "Bombs Away's spawn value isn't known" -- and a run where the
-        -- boss was killed with Stomp registered no defeat at all: no early fire,
-        -- no late fire, nothing, which is what a byte that never reads alive in
-        -- this level looks like. bombs_seen_alive records whether it EVER reads
-        -- non-zero here, so the fallback in on_level_change can tell "the fight
-        -- happened and HP told us" from "this address is not the boss's HP".
-        -- Without this gate, the transient hp==0 the game shows during the
-        -- level-load window (before the boss object initializes) fired the defeat
-        -- the instant the level loaded. The other boss branches gate on their exact
-        -- spawn HP (99/26/29); Bombs Away's spawn value isn't known, so "seen alive"
-        -- is the robust equivalent.
+        -- Probe runs (ts2_bombs_probe.lua, three fights) settled it: 0x0C2F1A IS
+        -- Bombs Away's HP. It reads 0 through the load, jumps to 20 about 5.7 s in
+        -- (before Buzz can move), then only ever steps DOWN as the boss is hit --
+        -- by however much that attack does (20->19, 20->16, 19->15, 14->10 ...) --
+        -- and finally to 0. "Seen above 0, then 0" was not enough: anything that
+        -- reads 0 after a non-zero flicker fired the defeat, which is how the
+        -- rewards went out the moment the boss spawned.
+        --
+        -- Now: after Buzz has moved, HP must step down between two live readings
+        -- (positive -> smaller positive) before a 0 counts. Load garbage snaps
+        -- between 0 and a value; it never makes that step. Any attack, any damage.
         if hp>0 then bombs_seen_alive=true end
-        if (defeats&(1<<0))==0 then
+        if (defeats&(1<<0))==0 and buzz_moved then
             if hp>0 then boss_started.bombs=true end
-            if boss_started.bombs and hp==0 and not boss_defeated then
+            if boss_started.bombs and bombs_last_hp>0 and hp>0 and hp<bombs_last_hp then
+                bombs_real_hit=true
+            end
+            bombs_last_hp=hp
+            if boss_started.bombs and bombs_real_hit and hp==0 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<0))
                 ts2_debug("boss defeat detected: Bombs Away (bit 0) at level="..level..", hp="..hp)
@@ -3535,7 +3720,16 @@ function update_potato(level)
         for i,toy in ipairs(TOYS[level]) do
             local bit=2^(i-1)
             local already=(toy_collected_masks[level]&bit)~=0
-            if not already and mainmemory.read_u8(toy.addr)==0 then
+            -- Logic Lab only: toys have no "seen present" guard in a seed (the
+            -- server's despawn seed covers re-entry), but the Lab loads
+            -- savestates where a toy is already gone. Require seeing it first.
+            local lab_ok = true
+            if TS2_LOGIC_LAB then
+                LAB_TOY_SEEN = LAB_TOY_SEEN or {}
+                if mainmemory.read_u8(toy.addr)~=0 then LAB_TOY_SEEN[level*16+i]=true end
+                lab_ok = LAB_TOY_SEEN[level*16+i] == true
+            end
+            if not already and lab_ok and mainmemory.read_u8(toy.addr)==0 then
                 toy_collected_masks[level]=toy_collected_masks[level]|bit
                 mainmemory.write_u8(SHARED_TOY_COLLECTED[level],toy_collected_masks[level])
             end
@@ -4346,6 +4540,7 @@ function reset_boss_detection()
     boss_started.bombs=false; boss_started.zurg=false
     prosp_loading=false
     toybarn_real_hit=false; toybarn_last_hp=-1
+    bombs_real_hit=false; bombs_last_hp=-1
     bombs_seen_alive=false
 end
 
@@ -4354,25 +4549,23 @@ function on_level_change(new_level, prev_level)
 
     -- ── BOMBS AWAY DEFEAT FALLBACK ───────────────────────
     -- Reaching a boss's defeat screen is the game's own statement that the boss
-    -- was beaten -- you cannot get to 35 from Bombs Away without finishing it.
-    -- This is deliberately NOT the general mechanism: the other three bosses have
-    -- verified HP addresses and detect the kill during the fight, which is
-    -- earlier and better. Bombs Away does not, so it gets the coarser signal.
+    -- was beaten. Bombs Away's is level 38 -- the probe logged 6 -> 38 after all
+    -- three kills. (2.3.1 looked for 35, so this fallback never once fired.)
     --
-    -- Guarded so it cannot fire on anything but a real fight:
-    --   prev_level==6            -- we were actually in Bombs Away
-    --   new_level is ITS screen  -- 35, not another boss's
-    --   buzz_moved               -- the level was played, not just loaded through
-    --   not bombs_seen_alive     -- HP never read alive, so update_boss had no
-    --                               chance to fire. If the HP address DOES work,
-    --                               this stays out of the way entirely.
-    -- Runs BEFORE reset_boss_detection(), which clears the flags it reads.
-    if prev_level==6 and new_level==35 and buzz_moved and not bombs_seen_alive then
+    -- The in-fight gate above is the primary signal and normally sets the bit a
+    -- few seconds earlier. This is the safety net for a fight it could not see:
+    -- a single hit big enough to take 20 straight to 0 never shows the
+    -- "stepped down" reading the gate arms on.
+    --   prev_level==6   -- we were in Bombs Away
+    --   new_level==38   -- ITS defeat screen, not another boss's
+    --   buzz_moved      -- the level was actually played
+    -- Runs BEFORE reset_boss_detection(), which clears buzz_moved's companions.
+    if prev_level==6 and new_level==38 and buzz_moved then
         local d = mainmemory.read_u8(SHARED_BOSS_DEFEATS)
         if (d & (1<<0))==0 then
             mainmemory.write_u8(SHARED_BOSS_DEFEATS, d|(1<<0))
-            ts2_debug("boss defeat detected: Bombs Away (bit 0) via defeat screen "
-                .. "-- A.BOSS_HP never read alive in this level")
+            ts2_debug("boss defeat detected: Bombs Away (bit 0) via its defeat screen (38)"
+                .. (bombs_seen_alive and "" or " -- HP never read alive"))
         end
     end
 
@@ -4824,6 +5017,331 @@ function update_map(input, hovered)
     update_music()
 end
 
+-- ── QUICK LOADS (2.3.2) ─────────────────────────────────────────────────────
+-- Fast-forwards the loading screens between the level select and a COIN level,
+-- both ways, and presses X for the player where the game waits for it. Toggled
+-- from the client with /speedup (on by default).
+--
+-- What a load looks like (ts2_load_probe.lua, four trips): the load counter
+-- A.LEVEL_READY climbs by a fixed step per screen, then the game waits.
+--   ENTER  map(16) -> coin level      counter +6, then waits for X; Buzz flies in
+--   LEAVE  coin level -> 0            counter +4, then waits for X
+--          0 -> map(16)               counter +4, then the map is usable (no X)
+-- So: speed up on the level change, press X once the counter has climbed and
+-- the game is waiting, and put the speed back once the game took the press (on
+-- the way in) or the map has finished its +4 (on the way out).
+--
+-- Bosses: on the way IN only (2.3.2 follow-up). Leaving a boss goes through its
+-- defeat screen and the rewards, which are left alone. Never while a cutscene is playing
+-- or queued (the cutscene trap holds 100% speed and must not inherit 6400% as
+-- the speed to return to), and never past QS_MAX_FRAMES of game time -- whatever
+-- happens, the player's own speed comes back.
+--
+-- X goes through BizHawk's controller input (joypad.set), NOT the pad buffer in
+-- RAM: writing that buffer is what broke analog controllers in 2.3.1.
+-- Globals: the main chunk is at Lua's 200-local ceiling.
+QS_ADDR       = 0x1FEC20   -- client -> lua: 0xC0 = off, 0xC1 = on. Anything else = on
+QS_SPEED      = 6400
+QS_MAX_FRAMES = 1800       -- 30 s of game time, worst case, before giving up
+QS_COIN       = {[1]=true,[2]=true,[4]=true,[5]=true,[7]=true,[8]=true,
+                 [10]=true,[11]=true,[13]=true,[14]=true}
+QS_BOSS       = {[3]=true,[6]=true,[9]=true,[12]=true,[15]=true}   -- entry only
+-- The load is "done" at +6 (measured on coin levels). If a load climbs by some
+-- other amount, the counter simply stops: QS_STILL frames without a change after
+-- it has moved at all counts as done too, so a different-shaped load can never
+-- leave the level itself running at 6400%. The probe's slowest step was 108.
+QS_STILL      = 240
+-- After a boss WIN (not Prospector): boss -> its victory screen (35/38/41/44,
+-- counter +1, waits for X) -> level 16 shows the SAVE screen (+6, waits for
+-- Right then X -- Right moves to "don't save"; the cursor does not wrap, so extra
+-- Rights are harmless) -> level select (+4 more). A pause-menu exit from a boss
+-- goes straight to 16 with +6 and needs no button at all. (ts2_load_probe.lua,
+-- Bombs Away and Zurg.)
+QS_WIN_BOSS   = {[3]=true,[6]=true,[9]=true,[12]=true}       -- never Prospector
+QS_VICTORY    = {[35]=true,[38]=true,[41]=true,[44]=true}
+-- 0x0A12F4 reads 128 while the game waits on a prompt and 0 once it takes the
+-- press -- every victory-screen and save-screen X in the probe did exactly that.
+-- Nothing on the save screen is pressed until it reads 128.
+QS_PROMPT     = 0x0A12F4
+QS_SAVE_SETTLE = 60        -- frames after the save screen is up before touching it
+-- Entering: both of these flip on the frame the game takes the X (probe: 2 of 2
+-- entries, and on no gameplay press). Either one ends the pressing.
+QS_TOOK_A, QS_TOOK_B = 0x0A12F4, 0x0A1701   -- 128 -> 0, 64 -> 0
+qs = {phase=nil, last=-1, snap=0, frames=0, sped=false, prev=nil, pulse=0,
+      pulses=0, a0=nil, b0=nil, cross=nil}
+
+function qs_enabled() return mainmemory.read_u8(QS_ADDR) ~= 0xC0 end
+function qs_cutscene_busy()
+    return CS.active or CS.pending or CS_PLAYING or mainmemory.read_u8(SHARED_TRAP_CUTSCENE) > 0
+end
+-- Why quick loads are (not) running right now -- for the test script's panel.
+function qs_status()
+    if qs.phase then return "RUNNING: "..qs.phase end
+    local r = {}
+    if not qs_enabled() then r[#r+1] = "switched off" end
+    if CS.active then r[#r+1] = "cutscene active" end
+    if CS.pending then r[#r+1] = "cutscene pending" end
+    if CS_PLAYING then r[#r+1] = "cutscene playing" end
+    local q = mainmemory.read_u8(SHARED_TRAP_CUTSCENE)
+    if q > 0 then r[#r+1] = "cutscene trap queued ("..q..")" end
+    if #r == 0 then return "ready (into any level; out of coin levels; out of bosses but Prospector)" end
+    return "BLOCKED: "..table.concat(r, ", ")
+end
+-- BizHawk versions differ on the top speed client.speedmode accepts; ask for the
+-- most and step down until one sticks (checked where the speed is readable).
+QS_SPEED_TRIES = {6400, 6399, 3200, 1600, 800}
+function qs_speed_up()
+    for _, v in ipairs(QS_SPEED_TRIES) do
+        pcall(client.speedmode, v)
+        local now = cs_read_speed()
+        if now == nil or now == v then return v end
+    end
+    return nil
+end
+-- Sound: muted for the fast-forward (6400% audio is noise), and put back to
+-- exactly what the player had -- someone who plays muted stays muted. Guarded:
+-- older BizHawk builds have no sound switch for scripts, and then sound is just
+-- left alone.
+function qs_mute()
+    if qs.muted then return end
+    if not (client.GetSoundOn and client.SetSoundOn) then return end
+    local ok, on = pcall(client.GetSoundOn)
+    if not ok then return end
+    qs.sound_prev = on and true or false
+    if qs.sound_prev then pcall(client.SetSoundOn, false) end
+    qs.muted = true
+end
+function qs_unmute()
+    if not qs.muted then return end
+    if qs.sound_prev and client.SetSoundOn then pcall(client.SetSoundOn, true) end
+    qs.muted, qs.sound_prev = false, nil
+end
+function qs_restore(why)
+    if qs.sped then
+        pcall(client.speedmode, qs.prev or 100)
+        qs.sped = false
+    end
+    qs_unmute()
+    if qs.phase then ts2_debug("quick load: done ("..tostring(why)..") after "..qs.frames.." frames") end
+    qs.why = why
+    qs.phase, qs.frames, qs.pulse, qs.pulses = nil, 0, 0, 0
+end
+function qs_start(phase)
+    qs.phase, qs.frames, qs.pulse, qs.pulses = phase, 0, 0, 0
+    qs.snap = mainmemory.read_u8(A.LEVEL_READY)
+    qs.a0, qs.b0 = nil, nil
+    qs.ctr, qs.still = qs.snap, 0
+    qs.prompt_seen, qs.save_x, qs.t, qs.rf, qs.xf, qs.wait = false, false, 0, 0, 0, 0
+    if not qs.sped then
+        qs.prev = cs_read_speed()          -- the player's own speed, to put back
+        for _, v in ipairs(QS_SPEED_TRIES) do if qs.prev == v then qs.prev = 100 end end
+        qs.got = qs_speed_up()
+        qs.sped = true
+        qs_mute()
+    end
+    ts2_debug("quick load: "..phase.." (counter "..qs.snap..", speed "..tostring(qs.got)..")")
+end
+-- The pad's own name for X. Cores differ: Nymashock calls it "P1 X", others
+-- "P1 Cross" -- dj_is_cross_name accepts both. Every X press goes through here.
+function qs_cross()
+    if not qs.cross then
+        local ok, pad = pcall(joypad.get)
+        if ok and type(pad) == "table" then
+            for name, v in pairs(pad) do
+                if type(name) == "string" and type(v) == "boolean" and dj_is_cross_name(name) then
+                    qs.cross = name; break
+                end
+            end
+        end
+    end
+    return qs.cross
+end
+function qs_press()
+    -- 3 frames down, 3 up: a press the game sees as a press, repeated
+    if not qs_cross() then return end
+    if qs.pulse == 0 then qs.pulses = qs.pulses + 1 end
+    if qs.pulse < 3 then pcall(joypad.set, {[qs.cross] = true}) end
+    qs.pulse = (qs.pulse + 1) % 6
+end
+
+-- Every digital button on the pad, learned once from joypad.get().
+function qs_buttons()
+    if qs.btns then return qs.btns end
+    local ok, pad = pcall(joypad.get)
+    local list = {}
+    if ok and type(pad) == "table" then
+        for name, v in pairs(pad) do
+            if type(name) == "string" and type(v) == "boolean" then list[#list+1] = name end
+        end
+    end
+    if #list > 0 then qs.btns = list end
+    return list
+end
+function qs_right()          -- the pad's own name for D-Pad Right, or nil
+    if qs.right then return qs.right end
+    for _, n in ipairs(qs_buttons()) do
+        if n:find("Right", 1, true) and (n:find("D-Pad", 1, true) or n:find("Dpad", 1, true)
+                                         or n == "P1 Right" or n == "Right") then
+            qs.right = n; return n
+        end
+    end
+    return nil
+end
+-- Hold every button released except `name` (pressed) this frame: on the save
+-- screen nothing the player does can land on "Yes".
+function qs_lock(name)
+    local t = {}
+    for _, n in ipairs(qs_buttons()) do t[n] = false end
+    if name then t[name] = true end
+    pcall(joypad.set, t)
+end
+
+function qs_update(level)
+    local prev = qs.last
+    qs.last = level
+    if qs.phase then
+        qs.frames = qs.frames + 1
+        if qs_cutscene_busy() then qs_restore("cutscene"); return end
+        if not qs_enabled() then qs_restore("turned off"); return end
+        if qs.frames > QS_MAX_FRAMES then qs_restore("timed out"); return end
+    end
+    if level ~= prev then
+        if qs.phase == "leave" and level == MAP_LEVEL_ID then
+            qs.phase, qs.snap = "map", mainmemory.read_u8(A.LEVEL_READY)
+        elseif (qs.phase == "victory" or qs.phase == "victory_out") and level == MAP_LEVEL_ID then
+            qs.phase, qs.snap, qs.pulse, qs.pulses = "save", mainmemory.read_u8(A.LEVEL_READY), 0, 0
+            qs.t, qs.rf, qs.xf, qs.wait, qs.save_x = 0, 0, 0, 0, false
+        elseif qs.phase then
+            qs_restore("unexpected level "..level)
+        end
+        if not qs.phase and qs_enabled() and not qs_cutscene_busy() then
+            if prev == MAP_LEVEL_ID and (QS_COIN[level] or QS_BOSS[level]) then qs_start("enter")
+            elseif QS_COIN[prev] and level == 0 then qs_start("leave")
+            elseif QS_WIN_BOSS[prev] and QS_VICTORY[level] then qs_start("victory")
+            elseif QS_WIN_BOSS[prev] and level == MAP_LEVEL_ID then qs_start("boss_menu") end
+        end
+    end
+    if not qs.phase then return end
+    local ctr = mainmemory.read_u8(A.LEVEL_READY)
+    local climbed = (ctr - qs.snap) % 256
+    if ctr ~= qs.ctr then qs.ctr, qs.still = ctr, 0 else qs.still = qs.still + 1 end
+    if qs.phase == "enter" then
+        -- (and if the counter never moves at all, give up waiting for it after
+        -- 10 s of game time -- every load measured so far is under that)
+        local done = climbed >= 6 or (qs.still >= QS_STILL and (climbed >= 1 or qs.frames >= 600))
+        if not done then return end
+        local a, b = mainmemory.read_u8(QS_TOOK_A), mainmemory.read_u8(QS_TOOK_B)
+        if qs.a0 == nil then qs.a0, qs.b0 = a, b end
+        if (qs.a0 ~= 0 and a == 0) or (qs.b0 ~= 0 and b == 0) then qs_restore("X taken"); return end
+        if qs.pulses >= 10 and qs.pulse == 0 then qs_restore("10 presses, no sign"); return end
+        qs_press()
+    elseif qs.phase == "leave" then
+        -- the level change to the map is the proof this press was taken
+        if climbed >= 4 and qs.pulses < 40 then qs_press() end
+    elseif qs.phase == "map" then
+        if climbed >= 4 then qs_restore("level select ready") end
+    elseif qs.phase == "boss_menu" then
+        -- straight to the level select: no button, just its +6
+        if climbed >= 6 or (climbed >= 1 and qs.still >= QS_STILL) then qs_restore("level select ready") end
+    elseif qs.phase == "victory" then
+        -- +1, then X once the prompt is up; stop the moment it is taken, so no
+        -- X can carry over towards the save screen
+        if climbed < 1 then return end
+        local pr = mainmemory.read_u8(QS_PROMPT)
+        if pr == 128 then qs.prompt_seen = true end
+        if qs.prompt_seen and pr == 0 then qs.phase = "victory_out"; return end
+        if qs.prompt_seen or qs.still >= QS_STILL then
+            if qs.pulses < 10 or qs.pulse ~= 0 then qs_press() end
+        end
+    elseif qs.phase == "victory_out" then
+        -- taken; nothing pressed while it changes over to the save screen
+    elseif qs.phase == "save" then
+        -- Every button held released for the whole save screen, except ours.
+        if climbed < 6 then qs_lock(nil); return end
+        qs.t = qs.t + 1
+        local pr = mainmemory.read_u8(QS_PROMPT)
+        if qs.t <= QS_SAVE_SETTLE then qs_lock(nil); return end
+        -- Both buttons must be real names on THIS pad, or nothing is pressed
+        -- here at all: a guessed name is silently ignored by BizHawk, which is
+        -- how a Right could land and its X not.
+        if not (qs_right() and qs_cross()) then qs_restore("save screen: pad button names not found"); return end
+        if not qs.save_x then
+            -- Right x3, counted ONLY on frames the prompt is up, so X can never
+            -- go out unless three Rights really reached a waiting menu first.
+            if pr ~= 128 then
+                qs_lock(nil)
+                qs.wait = qs.wait + 1
+                -- never recognised: give the screen back to the player at normal speed
+                if qs.wait > 300 then qs_restore("save screen not recognised") end
+                return
+            end
+            qs.rf = qs.rf + 1
+            if qs.rf <= 18 then qs_lock(((qs.rf - 1) % 6) < 3 and qs_right() or nil); return end
+            if qs.rf <= 24 then qs_lock(nil); return end      -- a beat between Right and X
+            qs.save_x, qs.xf = true, 0
+        end
+        if pr == 0 then                                       -- taken
+            qs.phase, qs.snap = "save_out", ctr
+            qs_lock(nil)
+            return
+        end
+        qs.xf = qs.xf + 1
+        if qs.xf > 60 then qs_restore("save screen did not take X"); return end
+        qs_lock(((qs.xf - 1) % 6) < 3 and qs_cross() or nil)
+    elseif qs.phase == "save_out" then
+        if climbed >= 4 then qs_restore("level select ready") end
+    end
+end
+
+if event and event.onexit then
+    event.onexit(function()
+        if qs.sped then pcall(client.speedmode, qs.prev or 100) end
+        if qs.muted and qs.sound_prev and client.SetSoundOn then pcall(client.SetSoundOn, true) end
+    end, "ts2_quickload")
+end
+
+-- ── LOGIC LAB SUPPORT (2.3.2) ───────────────────────────────────────────────
+-- ts2_logic_lab.lua sets TS2_LOGIC_LAB and TS2_LAB_HOOK, then runs this file.
+-- Nothing here does anything in a normal session: TS2_LAB_HOOK is nil, so the
+-- one call in ts2_main is skipped, and ts2_lab_forget is only ever called by the
+-- Lab. Globals, not locals: the main chunk is at the 200-local ceiling.
+--
+-- ts2_lab_forget: in a seed, a collected check stays collected -- the masks
+-- below remember it for the session so it is never sent twice. The Lab wants
+-- the opposite: every visit is a fresh attempt with a possibly different set of
+-- moves, so on entering a level it wipes what this script remembers for THAT
+-- level and lets detection run from zero again.
+function ts2_lab_forget(level)
+    battery_masks[level] = 0; life_masks[level] = 0; laser_masks[level] = 0
+    if toy_collected_masks[level] then toy_collected_masks[level] = 0 end
+    if SHARED_TOY_COLLECTED[level] then mainmemory.write_u8(SHARED_TOY_COLLECTED[level], 0) end
+    token_checks_sent[level] = nil
+    local hover = LEVEL_TO_HOVER[level]
+    if hover and SHARED_TOKENS_COLLECTED[hover] then
+        mainmemory.write_u8(SHARED_TOKENS_COLLECTED[hover], 0)
+    end
+    hint_lua_mask[level] = 0
+    rex_lua_mask.lo = 0; rex_lua_mask.hi = 0
+    for k, _ in pairs(rex_state) do rex_state[k] = 0 end
+    mainmemory.write_u8(SHARED_REX_LOW, 0); mainmemory.write_u8(SHARED_REX_HIGH, 0)
+    potato_collected_latch[level] = nil; potato_exchanged_latch[level] = nil
+    local part = ({[1] = {SHARED_EAR_COLLECTED, SHARED_EAR_EXCHANGED},
+                   [4] = {SHARED_EYE_COLLECTED, SHARED_EYE_EXCHANGED},
+                   [7] = {SHARED_ARM_COLLECTED, SHARED_ARM_EXCHANGED},
+                   [10] = {SHARED_FOOT_COLLECTED, SHARED_FOOT_EXCHANGED},
+                   [13] = {SHARED_MOUTH_COLLECTED, SHARED_MOUTH_EXCHANGED}})[level]
+    if part then mainmemory.write_u8(part[1], 0); mainmemory.write_u8(part[2], 0) end
+    mainmemory.write_u8(SHARED_BOSS_DEFEATS, 0)
+    reset_boss_detection()
+    -- The "seen it present first" guards. A savestate taken after a pickup puts
+    -- the level back with that pickup already gone; without these cleared, the
+    -- first frame after the load would read "gone" and call it a fresh find.
+    part_seen_present = {}; life_seen_present = {}
+    battery_seen_present = {}; laser_seen_present = {}
+    potato_collect_streak = {}
+    LAB_TOY_SEEN = {}
+end
+
 function ts2_main()
     -- No ROM loaded yet (script started before a game booted): do nothing. The
     -- bundled connector below waits for a ROM; touching mainmemory here would error.
@@ -4839,6 +5357,8 @@ function ts2_main()
     -- forever on "Waiting for Python client to write settings". Re-asserting it here
     -- makes validation reliable regardless of when the player connects.
     mainmemory.write_u8(0x1FFFD0, 0xAB)
+    -- Logic Lab only (nil in a normal session): stands in for the client.
+    if TS2_LAB_HOOK then TS2_LAB_HOOK() end
     -- One-time positive confirmation that the client wrote settings (game-mode
     -- mirror is magic-tagged 0xA0/0xA1). Lets a player tell "settings never arrived"
     -- (client/slot_data problem) apart from "settings arrived fine".
@@ -4874,6 +5394,10 @@ function ts2_main()
         on_level_change(level, last_level)
         last_level=level
     end
+
+    -- Quick loads: before the cutscene machine, so a cutscene that starts on this
+    -- frame finds the player's own speed back in place, not 6400%.
+    qs_update(level)
 
     -- Cutscene trap state machine: run EVERY frame regardless of level. It must
     -- keep ticking on the map (16) and boss-defeat screens (35/38/41/44) to track
@@ -5127,8 +5651,9 @@ end
 -- ============================================================
 -- START
 -- ============================================================
-print("[TS2] Archipelago combined script loaded!  (connector v"..TS2_VERSION..")")
-print("[TS2] Waiting for Python client to write settings...")
+print("[TS2] Archipelago combined script loaded!  (connector v"..TS2_VERSION..
+      (TS2_BUILD and (", " .. TS2_BUILD) or "") .. ")")
+if not TS2_LOGIC_LAB then print("[TS2] Waiting for Python client to write settings...") end
 -- ── HEALTH BEACON ───────────────────────────────────────────────────────────
 -- Correcting an assumption the old comment here made: BizHawk does NOT stop the
 -- script when a callback throws. NamedLuaFunction.Call wraps every event handler
@@ -5309,6 +5834,8 @@ end, "ts2")
 -- from the restored RAM exactly as if the script had just attached.
 if event and event.onloadstate then
     event.onloadstate(function()
+        -- A savestate can land mid-load or mid-level: never leave it fast.
+        qs_restore("savestate"); qs.last = mainmemory.read_u8(A.LEVEL)
         -- Fix (runs regardless of debug): a savestate is a photograph of RAM and
         -- can carry a stale boss-defeat bit -- set before the current code, or by
         -- an earlier false trigger. Loading re-introduces it and the client would
@@ -6527,32 +7054,40 @@ else
 
     rom_hash = gameinfo.getromhash()
 
-    print("Waiting for client to connect. This may take longer the more instances of this script you have open at once.\n")
-
-    local co = coroutine.create(main)
-    function tick ()
-        local status, err = coroutine.resume(co)
-
-        if not status and err ~= "cannot resume dead coroutine" then
-            print("\nERROR: "..err)
-            print("Consider reporting this crash.\n")
-    
-            if server ~= nil then
-                server:close()
-            end
-
-            co = coroutine.create(main)
-        end
-    end
-
-    -- Gambatte has a setting which can cause script execution to become
-    -- misaligned, so for GB and GBC we explicitly set the callback on
-    -- vblank instead.
-    -- https://github.com/TASEmulators/BizHawk/issues/3711
-    if emu.getsystemid() == "GB" or emu.getsystemid() == "GBC" or emu.getsystemid() == "SGB" then
-        event.onmemoryexecute(tick, 0x40, "tick", "System Bus")
+    -- The Logic Lab stands in for the client itself, so it never opens the
+    -- connector socket: a client that connected would overwrite the Lab's
+    -- moves with the seed's every half second.
+    if TS2_LOGIC_LAB then
+        print("[TS2] Logic Lab mode -- not connecting to a client.")
     else
-        event.onframeend(tick)
+        print("Waiting for client to connect. This may take longer the more instances of this script you have open at once.\n")
+
+        local co = coroutine.create(main)
+        function tick ()
+            local status, err = coroutine.resume(co)
+
+            if not status and err ~= "cannot resume dead coroutine" then
+                print("\nERROR: "..err)
+                print("Consider reporting this crash.\n")
+    
+                if server ~= nil then
+                    server:close()
+                end
+
+                co = coroutine.create(main)
+            end
+        end
+
+        -- Gambatte has a setting which can cause script execution to become
+        -- misaligned, so for GB and GBC we explicitly set the callback on
+        -- vblank instead.
+        -- https://github.com/TASEmulators/BizHawk/issues/3711
+        if emu.getsystemid() == "GB" or emu.getsystemid() == "GBC" or emu.getsystemid() == "SGB" then
+            event.onmemoryexecute(tick, 0x40, "tick", "System Bus")
+        else
+            event.onframeend(tick)
+        end
+
     end
 
     while true do

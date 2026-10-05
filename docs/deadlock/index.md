@@ -8,8 +8,6 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Deadlock">English</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
