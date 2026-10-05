@@ -10,7 +10,9 @@ The [player options page for Stick Ranger](../player-options) contains all the c
 
 A Stage would normally be unlocked by completing the previous Stage, but Stage unlocks are now moved around. There is some logic available to make sure you do not end up with needing to complete late-game stages as your first in-logic check, so the game should always be completable.
 
-If enabled, acquiring a book for a stage for the first time sends a check, and enemies have a chance to drop an item that sends a check. Ranger classes can also be shuffled into the item pool, making you start with only 1 class. Classes can be changed at the Forget Tree, which is also unlocked when you have class randomiser on.
+If enabled, acquiring a book for a stage for the first time sends a check, enemies have a chance to drop an item that sends a check, and buying each item in a shop for the first time sends a check. Ranger classes can also be shuffled into the item pool, making you start with only 1 class. Classes can be changed at the Forget Tree, which is also unlocked when you have class randomiser on.
+
+With Progressive Shop on, each town's shop opens a row at a time as you receive that town's Progressive Shop items, instead of as you beat stages.
 
 ## How do I know which stage I am supposed to do next?
 
@@ -20,6 +22,7 @@ The dots on the world map are colour coded:
 - **Yellow** — unlocked and in logic. Archipelago expects you to be able to do this one.
 - **Orange** — unlocked, but out of logic. You can walk in and try anyway; the generator did not count on it.
 - **Dark red** — every check in this stage has been sent.
+- **Grey** — out of logic and barred, when Enforce Logic is on.
 
 The five boss stages (Castle, Submarine Shrine, Pyramid, Ice Castle, Hell Castle) also want a number of
 stage unlocks from the region in front of them, and a number of ranger classes. Both numbers come from
@@ -27,21 +30,22 @@ your YAML, and the class count includes the class you started with.
 
 ## Which items can be in another player's world?
 
-Stage unlocks and class unlocks (if enabled) may be placed into another player's world. Filler items can be traps (if enabled) or any weapon or compo.
+Stage unlocks, class unlocks and Progressive Shop items (if enabled) may be placed into another player's world. Filler items can be traps (if enabled) or any weapon or compo.
 
 ## What does another world’s item look like in Stick Ranger?
 
-Enemies that drop a check drop a small AP logo. Stage exits and books do not have anything different than normal.
+Enemies that drop a check drop a small AP logo. Stage exits and books do not have anything different than normal. In a shop, a check shows the Archipelago logo until it is bought, or the item it holds when Shop Hints is on; a check holding progression or a trap wears a marked logo.
 
 ## What is considered a location check in Stick Ranger?
 
 - **Stage Exits:** Beating a stage for the first time sends a check.
 - **Books:** Acquiring a book for a stage sends a check.
 - **Enemy Defeats:** Enemies have a chance to drop a check item, depending on settings.
+- **Shop Purchases:** Buying each item in a shop for the first time sends a check, when Shop Checks is on.
 
 ## When the player receives an item, what happens?
 
-Stage unlocks and class unlocks are applied immediately.
+Stage unlocks and class unlocks are applied immediately, and a Progressive Shop item opens the next row of its town's shop.
 Traps are only activated if you are in a playable state (so inside any stage, also shop stages).
 Weapons and compos are given to you when you have space in your inventory.
 
