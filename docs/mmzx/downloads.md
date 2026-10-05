@@ -1,9 +1,12 @@
 # Mega Man ZX
 
 ## Latest
-- <a href="https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.2.0/mmzx.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.2.1/mmzx.apworld">Latest Version (0.2.1)</a>
 
 ## All Versions
+
+#### v0.2.1
+- <a href="https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.2.1/mmzx.apworld">https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.2.1/mmzx.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.2.0/mmzx.apworld">https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.2.0/mmzx.apworld</a>

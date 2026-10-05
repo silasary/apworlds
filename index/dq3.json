@@ -140,6 +140,21 @@
       "title": "v0.3.1 : Scenes flags fix",
       "version_simple": "0.3.1",
       "world_version": "0.3.1"
+    },
+    "v0.4.0": {
+      "created_at": "2026-10-05T11:30:01Z",
+      "description": "This update adds an option in the apworld to randomize Shiny Spots ! If enable, this can add a lot more checks in your run so make sure to be prepared for checking every single corner of the map ! Or leave it disabled to keep the number of checks just like before.\r\nAlso, as usual, the update fixes some issues.\r\n\r\n- Added `shiny_spots_sanity` option with 3 modes: vanilla(default), one check or max checks\r\n- Added 4 new options to configure how items are selected when the game is generated\r\n- Improved getting items during scene transition so it should now avoid getting items during minor or major scenes happening at the same time: this means that items can now be obtained during any transition (even entering a house) as long as this transition does not have anything happening in the background (tutorials, flags, events)\r\n- Fixed both mini medals goals to sometimes lose track of your number of collected mini medals when Archipelago re-attributes your current game's port. These goal options now work like any others and will not require the use of the /syncmedals command anymore (which has now been removed)\r\n- Fixed the Trader in Alltrades Abbey not spawning if the player has already unlocked the Ship before starting the Trader side quest\r\n- Other minor fixes and changes\r\n\r\nIf updating from v0.3.1 : replace `DQ3AP.asi`, `Game-WindowsNoEditor_P_DQ3AP.pak` and `dq3.apworld` by the new versions.\r\nOr else, follow the setup [here](https://github.com/ZigzagAwaka/DQ3AP#setup-guide).",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.4.0/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a545fba44ca6f9be39cae2c68871766f09797a8ea38526f72eced7cd2966c78e",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 55099,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.4.0",
+      "title": "v0.4.0 : Shiny Spots sanity and improvements",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
     }
   }
 }

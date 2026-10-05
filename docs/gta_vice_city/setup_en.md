@@ -211,6 +211,12 @@ folders and `gta_vc.set`; do not overwrite saves you want to keep.
   `%LOCALAPPDATA%\GtaVcAp\connection.ini` and the room address. Restart the game
   after editing the file, or change settings through F8 and use `/connect`. The pause menu and
   `gtavc_ap_asi.log` report connection errors. The room must be running.
+  The log is beside `gta-vc.exe`, or at
+  `%LOCALAPPDATA%\GtaVcAp\gtavc_ap_asi.log` if the game folder is not writable.
+  F8 shows the selected log path. It records startup paths, file hashes and Windows version,
+  mission/control state changes, and a snapshot every ten seconds while a
+  seed-configured game is loaded. After reproducing a problem, close the game
+  and copy the log before launching again, as a launch replaces the previous log.
 - **Wrong seed save loaded.** Load a save from this room or start a new game.
   Restart Vice City if the server was changed to another seed.
 - **The game is very slow, or it crashes when you Alt+Tab away from it.**

@@ -7,7 +7,7 @@ colorful cast of characters, some of whom are good, many of whom are bad, and a 
 
 
 ## Downloads
-- <a href="https://github.com/TylerJG92/Archipelago-WOL/releases/download/v0.3.0a/westofloathing.apworld">Latest Version (0.3.0a0)</a>
+- <a href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.0a/westofloathing.apworld">Latest Version (0.3.0a0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

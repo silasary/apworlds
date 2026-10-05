@@ -2,131 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-05T06:22:35.278805+00:00</updated>
+  <updated>2026-10-05T12:24:21.248258+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.0</id>
-    <title>Dragon Ball Z Budokai 3 v0.4.0</title>
-    <updated>2026-10-02T22:41:24+00:00</updated>
-    <author>
-      <name>z3xox</name>
-    </author>
-    <content>**⚠️ Existing seeds must be regenerated.** Fight location names changed, so a seed made with v0.3.1 or earlier will not work with this build.
-
-### Changed
-
-- **Fight locations are named by saga and chapter**, like the talk scenes and pickups already were. You can tell where a fight is from its name:
-  - `Goku DU - Raditz` is now `Goku DU - Saiyan Saga - Ch.1 - Raditz`
-  - `Adult Gohan DU - Piccolo` is now `Adult Gohan DU - Buu Saga - Ch.2 - Piccolo`
-
-### Fixed
-
-- **`Teen Gohan DU - Cell Saga - Ch.2 - ??? Talk 1` could not be reached.** It is a hidden spot in the far north-west corner of the map, so small that flying over it never triggered it. With the map helper on it now responds like any other point.
-
-Both game versions are supported, as in v0.3.1: Greatest Hits (CRC `c97ef0a4`) and Black Label (CRC `2a4b60eb`).
-</content>
-    <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/wilsonao/ff8_arch/releases/tag/v0.9.0</id>
-    <title>Final Fantasy VIII v0.9.0</title>
-    <updated>2026-10-02T23:06:32+00:00</updated>
-    <author>
-      <name>ff8_arch</name>
-    </author>
-    <content>## What's new in v0.9.0
-
-- **Early Ragnarok no longer opens later-disc towns.** The world map kept a Disc 3 story value for its doors after every fight; the client now restores the real one, so towns open only when your story reaches them.
-- **Story-jump guard:** if a scene pushes the story several chapters ahead at once, story checks and the goal are held (reload an earlier save, or `/ff8keepstory`). Save loads are now detected reliably.
-- **Fixes:** Death x5 / Pain x5 gave the wrong spells; a status-attack junction was wiped while Elemental Defense was locked; drawn magic was taken from Squall; Card Club checks fired mid-dialogue; Monsters Felled counted late; the Magical Lamp works with Diablos owned; fast-travel labels and battle Potions.
-- **Logic (new seeds):** GF ability prerequisite chains, Tonberries need Key: Centra Ruins, Bika Snowfield Flare #2 needs the Ragnarok, no keys in Ultimecia's Castle.
-- **New options (off by default):** Enemy Power and AP Multiplier (experimental), Triple Triad Rules (no Random / Open), Triple Triad Rule Checks.
-- **Tracker 0.15.0:** a toggle per junction and command lock.
-
-v0.8.0 seeds keep working with this client; the logic fixes need a new seed. Full list: [player guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md) and the PR below.
-
-## Install
-
-1. Archipelago **Launcher** → **Install APWorld** → pick `ff8.apworld` (or copy it into `custom_worlds/`), then restart the Launcher.
-2. Optional: drop `ff8_ap_tracker.zip` into PopTracker's `packs/` folder.
-3. Optional: `ff8_visual_tracker.zip` is a map preset for the [Archipelago Visual Tracker](https://github.com/Wakamu/Archipelago/releases/latest) — see **Visual Tracker** below.
-
-### Visual Tracker
-
-`ff8_visual_tracker.zip` pins every FF8 check on clickable world / extras / GF-ability maps inside the Archipelago Visual Tracker client. To use it:
-
-1. Install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) (`tracker.apworld`) and [`visualtracker.apworld`](https://github.com/Wakamu/Archipelago/releases/latest) via **Launcher → Install APWorld**, then restart the Launcher.
-2. Copy `ff8_visual_tracker.zip` into the `visual_packs/` folder of your Archipelago install (create it next to `custom_worlds/` if missing). Do **not** unzip it.
-3. Launcher → **Visual Tracker**, connect to your server/slot; the FF8 preset is picked up automatically.
-
-Visual Tracker support grew out of a community map layout contributed by **caedesender** (Discord) — thank you!
-
-Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). Setup guide: the **Final Fantasy VIII** page on your WebHost, or the [Player Guide](https://github.com/wilsonao/ff8_arch/blob/main/docs/player-guide.md).
-
-
-## What's Changed
-* Gil Snatch: remove the 3000 gil floor by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/7
-* Phase 4 options: Enemy Power, AP Multiplier, Triple Triad rules + rule-check toggle by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/8
-* Docs: live test plan (Phase 4 options, Lamp, FH, LP) by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/9
-* Release v0.9.0: early-Ragnarok door fix, story-jump guard, learn-prerequisite logic, Phase 4 options by @wilsonao in https://github.com/wilsonao/ff8_arch/pull/10
-
-
-**Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.8.0...v0.9.0
-</content>
-    <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.9.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.1</id>
-    <title>Dragon Ball Z Budokai 3 v0.4.1</title>
-    <updated>2026-10-02T23:19:58+00:00</updated>
-    <author>
-      <name>z3xox</name>
-    </author>
-    <content>Seeds made with v0.4.0 work with this version.
-
-### Fixed
-
-- **Some map points stayed hidden even with the map helper on.** The game can tie a point to a story variable so that it only shows for one value. Piccolo's two Central City talks in the Saiyan saga are set up that way, so only one of them ever appeared. Ten points are affected in all, for Piccolo, Vegeta, Yamcha and Broly; the map helper now shows them all.
-</content>
-    <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.2</id>
-    <title>Dragon Ball Z Budokai 3 v0.4.2</title>
-    <updated>2026-10-03T00:13:53+00:00</updated>
-    <author>
-      <name>z3xox</name>
-    </author>
-    <content>Seeds made with v0.4.0 or v0.4.1 work with this version.
-
-### Fixed
-
-- **The Skill Shop forgot what you had bought when the client restarted.** It showed the first ten capsules again, including ones already bought, and you had to buy them a second time before the later ones appeared. Bought capsules now stay gone.
-</content>
-    <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.3</id>
-    <title>Dragon Ball Z Budokai 3 v0.4.3</title>
-    <updated>2026-10-03T00:44:36+00:00</updated>
-    <author>
-      <name>z3xox</name>
-    </author>
-    <content>Seeds made with v0.4.0 or later work with this version.
-
-### Fixed
-
-- **Saga locks: Piccolo could reach the Cell saga without its unlock.** Winning his "Frieza Final Form" fight moved him on to the next saga straight away. He now stays on Namek until you take the white marker, as everyone else does.
-
-If this happened to you, take the grey marker on the first chapter of Piccolo's Cell saga to go back.
-</content>
-    <link href="https://github.com/z3xox/Budokai3AP/releases/tag/v0.4.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TylerJG92/Archipelago-WOL/releases/tag/v0.3.0a</id>
+    <id>https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/tag/v0.3.0a</id>
     <title>West of Loathing v0.3.0a0</title>
     <updated>2026-10-03T00:55:07+00:00</updated>
     <author>
@@ -158,7 +40,7 @@ If this happened to you, take the grey marker on the first chapter of Piccolo's 
 - Reworked a large number of item classifications to provide a healthier filler pool and more flexibility with excluded locations.&#13;
 - Renamed several locations for clarity and corrected `Kaye Ridge Mine` and the Deepest Delve bracelet location.&#13;
 </content>
-    <link href="https://github.com/TylerJG92/Archipelago-WOL/releases/tag/v0.3.0a"/>
+    <link href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/tag/v0.3.0a"/>
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.8</id>
@@ -197,20 +79,6 @@ If this happened to you, take the grey marker on the first chapter of Piccolo's 
 &#13;
 **This is meant as an attempt for a fix on some Linux distros. For most other purposes, please download the [standard 1.1.7 release](https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.7) instead.**</content>
     <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.8-Linux"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-Linux</id>
-    <title>Deadlock v1.2.0r2</title>
-    <updated>2026-10-03T02:13:29+00:00</updated>
-    <author>
-      <name>ArchipelagoBrad</name>
-    </author>
-    <content># The City Never Sleeps Update&#13;
-- Added Ratking&#13;
-- Waiting on Solomon, Deadman Danny, Violet, Baba, Nurse Harrow&#13;
-&#13;
-**This is meant as an attempt for a fix on some Linux distros. For most other purposes, please download the [standard 1.1.7 release](https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.1.7) instead.**</content>
-    <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-Linux"/>
   </entry>
   <entry>
     <id>https://github.com/energymaster22/YARGArchipelago/releases/tag/1.3.0</id>
@@ -461,7 +329,7 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release6</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r3</title>
     <updated>2026-10-03T17:21:37+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1219,5 +1087,171 @@ If you report issues from any 0.4.x versions that don't apply to this I am not p
 &#13;
 - Fixed plug fuse not properly being disabled through shell rando, and its chutes not working properly when plug fuse was set not to be randomized.</content>
     <link href="https://github.com/Automagic00/ACT-AP-Client-Plugin/releases/tag/0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.12</id>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
+    <updated>2026-10-05T07:29:38+00:00</updated>
+    <author>
+      <name>C@:\EM1NAL\</name>
+    </author>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>Fixed ziplines being incredibly slow and speeding up to default speed with objective items - they now start at default speed and increase to double speed as objective items are obtained.&#13;
+&#13;
+No APWorld updates since v1.0.4.</content>
+    <link href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.12"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.41</id>
+    <title>Mental Omega v0.6.6</title>
+    <updated>2026-10-05T07:39:30+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Fix Megaarena not working&#13;
+- Rejuvenator gains healing&#13;
+- Splatter gains damage and fire rate upgrade&#13;
+- Irkalla gains Self healing&#13;
+- Irkalla and Paradox engine gain speed&#13;
+- Add mission choice in advanced tab and endless mode&#13;
+- Add new modifier and Perma buffs&#13;
+- Add Capacity for mind control units&#13;
+- Fix great tempest buffs&#13;
+- Hovracoon fixed&#13;
+- Opus Custom Tank fixes&#13;
+- Shop mode Noise Server gets stuck&#13;
+- Advanced filters for enemy buffs&#13;
+- Superpowers arrow buff&#13;
+- Add engineer to shopmode for buffs&#13;
+- Super Secret thing that still need to be tested&#13;
+- Update APworld to 0.6.8</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.41"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0-pre.3</id>
+    <title>CrossCode v0.10.0rc3</title>
+    <updated>2026-10-05T08:05:31+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content>## Changes to Locations&#13;
+&#13;
+* Renamed Maroon Valley locations to "Valley" to make it consistent with other region names (@Valkhiya, #112)&#13;
+&#13;
+## Fixes to Mod&#13;
+&#13;
+* Fixed crashes when receiving **Laser of Doom Trap** and **Bomb Trap** (@buanjautista, #109)&#13;
+&#13;
+## Fixes to Logic&#13;
+&#13;
+* Fixed some unexpected behavior with backtracking to regions when **Rhombus Hub Unlock** is on (@CodeTriangle, CodeTriangle/Archipelago#34)&#13;
+* Fixed some logic errors with botanics in Gaia's Garden causing occasional generation failures (@Valkhiya, #110, #111)&#13;
+</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0-pre.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.10.1</id>
+    <title>The Legend of Zelda - Phantom Hourglass v0.10.1</title>
+    <updated>2026-10-05T08:27:22+00:00</updated>
+    <author>
+      <name>carrotinator</name>
+    </author>
+    <author>
+      <name>Tanker50207</name>
+    </author>
+    <author>
+      <name>palex00</name>
+    </author>
+    <author>
+      <name>CelestialKitsune</name>
+    </author>
+    <author>
+      <name>DayKat</name>
+    </author>
+    <author>
+      <name>1313e</name>
+    </author>
+    <author>
+      <name>Catzador</name>
+    </author>
+    <content>Compatible with seeds generated in versions v10.x&#13;
+[Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)&#13;
+&#13;
+- Fixed duplicate fishing items in pool&#13;
+- Fixed logic crash from certain spirit items in pool options&#13;
+- Fixed client crash from map object loop triggering early from save and quit?&#13;
+- Made boss locations local, to prevent other player's collect from giving your goals early&#13;
+- Vanilla pedestal items can be collected multiple times&#13;
+- Fixed shield from like-likes in Goron Temple causing location detection conflicts&#13;
+- Fixed logic error in TotOK with non-progressive items&#13;
+- Bellum's stairs are now blocked without Phantom Sword and Spirit of Courage&#13;
+- Fixed client crash from map warping to islands with complicated unlock conditions&#13;
+- The cutscene for the first door in Goron Temple is no longer skipped, so you can do the cool switch puzzle skip with hammer&#13;
+- Fixed chests in ruins NE having each other's items&#13;
+- Beedle ship part restocks can be in multiple slots, AP now accounts for that.</content>
+    <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.10.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.15.0</id>
+    <title>Slime Rancher 2 v0.15.0</title>
+    <updated>2026-10-05T09:13:16+00:00</updated>
+    <author>
+      <name>Rhelys</name>
+    </author>
+    <content>## Update 1.3 Support&#13;
+- Updated how Shop UI icons are rendered&#13;
+- Updated setting: `randomize_shop` - The Vac Palette locations in the Polestar Provisions shop are now added to the pool of potential shop checks, meaning they'll be subject to their regional unlock requirements.&#13;
+- Added the Portable Fabricator item to the pool&#13;
+&#13;
+## New Features&#13;
+- New setting: `palette_items` - Adds the new Vac Palettes to the pool as filler items&#13;
+- New setting: `newbucks_multiplier` - Self-explanatory, but adds a multiplier on top of all Newbucks gains (excluding Newbucks filler items received from the Archipelago game)&#13;
+- Added the Refinery Link to the pool&#13;
+&#13;
+## Logic Fixes&#13;
+- Jetpack logic fixes&#13;
+  - `Slimepedia: Moondew Nectar` now correctly requires the Jetpack&#13;
+  - Boom, Honey, and Hunter Gordos no longer require the Jetpack&#13;
+- Conservatory treasure pods now require the corresponding Conservatory Expansion unlocks&#13;
+- Grey Labyrinth Craft Caches are no longer added to the pool when the Grey Labyrinth isn't accessible because of the chosen goal&#13;
+&#13;
+## Quality of Life&#13;
+- Reduced the time it takes for Gadgets to build down to 5 seconds&#13;
+- Doubled the speed that items shoot out of the Vacpack&#13;
+&#13;
+## Bug Fixes&#13;
+- Fixed an issue where 2 Tarr Rain traps back to back would make Tarr Rain exist until reloading the save file&#13;
+- Fixed an issue where the upgrade repair would fail to run successfully under certain conditions&#13;
+- Reduced the number of disk writes when receiving new items and newbucks&#13;
+- Fixed an issue where completing the goal while disconnected would not send the state back to the Archipelago server on reconnect&#13;
+- Fixed an issue that would stop some sounds from playing after conversations&#13;
+- Fixed an issue where plorts sold from the Quantum Cloud weren't counting towards the Newbucks goal&#13;
+- The `labyrinth_open` goal now no longer expects both doors to be opened in the same session&#13;
+- Newbucks now correctly count towards the Newbucks goal even when not connected to the server&#13;
+- Deathlink signals are now no longer lost if they come in during a loading screen&#13;
+- The Shop UI now shows the Sold Out icon immediately after buying the item&#13;
+- The Shop UI now shows the Archipelago item on the purchase confirmation modal&#13;
+&#13;
+&lt;img width="554" height="316" alt="image" src="https://github.com/user-attachments/assets/6bbf18ba-9947-46f4-b28a-2067f2040938" /&gt;&#13;
+</content>
+    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.15.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nekusen/Archipelago-MegaManZX/releases/tag/v0.2.1</id>
+    <title>Mega Man ZX v0.2.1</title>
+    <updated>2026-10-05T10:59:52+00:00</updated>
+    <author>
+      <name>Nekusen</name>
+    </author>
+    <content>### Fixed&#13;
+&#13;
+- Universal Tracker showed checks in logic that were not reachable yet when the YAML had random options, such as a random `starting_model` with `hu_in_pool`. It now reads the options of your seed from the server, so it should always be consistent.&#13;
+&#13;
+### Changed&#13;
+&#13;
+- As a bonus due to the changes on this fix, Universal Tracker no longer needs your YAML for this game.</content>
+    <link href="https://github.com/Nekusen/Archipelago-MegaManZX/releases/tag/v0.2.1"/>
   </entry>
 </feed>
