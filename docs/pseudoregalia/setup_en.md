@@ -22,8 +22,6 @@
 
 Before installing:
 
-* If you want to play on full gold instead of map patch,
-  read the [Playing on Full Gold](#playing-on-full-gold) section below.
 * If you already have any other mods installed,
   read the [Compatibility with Other Mods](#compatibility-with-other-mods) section below.
 * If you are playing on Steam Deck or Linux, use the next section instead.
@@ -50,6 +48,11 @@ Installation steps:
       The zip can be removed afterwards.
     * Right click the zip and choose Extract files, then navigate to and select Pseudoregalia_AP, then click OK.
 
+   Note: after extracting the zip, the Pseudoregalia_AP folder should look the same. There should **NOT** be a
+   `Pseudoregalia_AP/pseudoregalia-archipelago` folder after installation. You can make sure you installed
+   correctly by checking that this file exists:
+   `Pseudoregalia_AP/pseudoregalia/Content/Paks/AP_Randomizer_p.pak`.
+
 The mod is now installed! To connect to a multiworld slot, create a new file in the modded main menu,
 enter your connect information and click Start.
 
@@ -68,40 +71,24 @@ Just ignore anything that is Steam Deck specific or that doesn't apply to you.
    You should notice no change to the root folder, but the mod files will be added to the subfolders.
 4. Open the Steam Client, Add a Non-Steam Game,
    then go to Pseudoregalia_AP folder and select `pseudoregalia.exe`.
-5. Open Properties, then ensure that you check compatibility to Force Proton Experimental.
-    * If Experimental doesn't work, try a different version (8.0-5 was verified to work)
+5. Open Properties. You will need to change:
+    * `Shortcut` > `Launch Options` > Copy in `WINEDLLOVERRIDES="dwmapi=n,b" %command%`
+    * `Compatibility` > Check `Force the use of a specific Steam Play compatibility tool`
+      > Select `Proton 8.0-5` in the dropdown.
+    * (Optional) `Shortcut` > The field at the top that is by default `pseudoregalia.exe` to something more distinct
+      (Necessary for having multiple Non-Steam Games with the same .exe name).
 6. Lastly, Pseudoregalia utilizes Visual C++ Runtime 2022.
-   Download Protontricks if you have not already.
-   This is located within Discovery.
-   After launching Protontricks, select Non-Steam Shortcut: pseudoregalia.exe.
-   Select the default wineprefix, install a Windows DLL or component, then scroll down and select vcrun2022.
-   Wait and follow the prompts until it has installed twice.
-   You can go through this process twice if you are unsure.
-   When you scroll down to vcrun2022 again, it should already be checked. It has installed correctly.
+    1. Download Protontricks if you have not already. This is located within Discovery.
+    2. Launch Protontricks, and select Non-Steam Shortcut: pseudoregalia.exe.
+    3. Select the default wineprefix > install a Windows DLL or component > scroll down and select vcrun2022.
+    4. Wait and follow the prompts until it has installed twice.
+    5. You can go through this process twice if you are unsure,
+       when you scroll down to vcrun2022 again, it should already be checked. It has installed correctly.
 7. Launch in Game Mode which should open Pseudoregalia. Select a new file.
 8. Enter the connect info and select Start. You will need to edit your controls to include show keyboard.
 
 Note: In order to use the in-game console once you've loaded into the game,
 you'll also need to add `enter` to your controls.
-
-
-## Playing on Full Gold
-
-The full gold patch is a previous version of the game that is also supported by the randomizer.
-The game was updated after release to add the map item and other significant changes,
-but the randomizer supports the earlier version for people who prefer it.
-
-To play on full gold, switch the Steam version of Pseudoregalia before following the installation steps:
-
-1. Right click Pseudoregalia in Steam and select Properties.
-2. Click Game Versions & Betas.
-3. In the Private Versions box, enter `fullgoldjump` and click Check Code.
-4. Click Opt into: fullgold.
-
-You will then be able to switch back and forth between both versions in Steam.
-If you want to be able to play both versions with the randomizer,
-follow the installation steps for each version and make two separate folders,
-e.g. Pseudoregalia_AP_MapPatch and Pseudoregalia_AP_FullGold.
 
 
 ## Compatibility with Other Mods
@@ -127,16 +114,18 @@ This will result in the Pseudoregalia folder only having the vanilla game files.
 
 ## Client Customization
 
-Client settings can be found here:
-`Pseudoregalia_AP/pseudoregalia/Binaries/Win64/ue4ss/Mods/AP_Randomizer/settings.toml`.
-The mod zip includes a file called `settings.tmpl.toml` in that location,
-so you'll have to rename it by removing the `.tmpl` before any changes will take effect.
-(The settings file is included as a template in releases
-so that you don't overwrite your settings when installing updates.)
-
 Client settings allow you to customize how certain things behave in the mod.
-The death link option is also configured here.
-The template file explains what each option does.
+Adjustable settings include:
 
-The settings file is only read when starting the executable,
-so any changes you make require closing and reopening the game.
+* Death link
+* The solar wind toggle input
+* How items are displayed
+* Popup behavior
+* Console messages filters
+
+The AP mod utilizes the Custom Options Framework mod to show client settings.
+This mod adds a new "Mods" tab to the options menu, accessible from the main menu or when the game is paused.
+Make sure to click Apply or your changes will not be saved!
+
+Releases include the Custom Options Framework mod for convenience,
+but you can find the original posting [on nexusmods](https://www.nexusmods.com/pseudoregalia/mods/66).

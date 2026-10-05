@@ -4,7 +4,7 @@ Hollow Knight: Silksong item randomizer support for the uploaded BepInEx client.
 
 
 ## Downloads
-- <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.7/silksong.apworld">Latest Version (0.4.7)</a>
+- <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.5.0/silksong.apworld">Latest Version (0.5.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

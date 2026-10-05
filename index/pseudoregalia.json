@@ -89,6 +89,21 @@
       "version_simple": "0.10.2",
       "world_version": "0.10.2"
     },
+    "0.11.0": {
+      "created_at": "2026-10-04T22:00:34Z",
+      "description": "### Summary\r\n* Moved client settings to the in-game options menu and made the Solar Wind toggle remappable\r\n* Removed full gold support\r\n* Added an option to make ultras work like in full gold\r\n* Logic updates/bug fixes/other small client improvements\r\n\r\n### General\r\n* <ins>**IMPORTANT:**</ins> Removed support for the full gold version and removed the Game Version yaml option\r\n  * Using full gold with this mod version will cause you to run into issues, like the Surrounded By Holes check being misplaced and inaccessible\r\n* Added a new Ultra Cap yaml option to make ultras work like in full gold, meaning ultras always have the higher gold cap\r\n\r\n### APWorld\r\n* Reworked logic to use rule builder\r\n* Added some clauses to logic. See these PRs for more details: https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/pull/50, https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/pull/58, https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/pull/59\r\n\r\n### Client\r\n* Moved client settings from the `settings.toml` file to the in-game options menu\r\n  * The mod no longer uses `settings.toml`. The template file will still be included for this release only with a comment that it is no longer used. It's safe to delete `settings.tmpl.toml` (and `settings.toml`, if it exists) after installing this version.\r\n  * Added a setting for remapping the Solar Wind toggle\r\n  * The mod uses the Custom Options Framework mod to show the client settings widget in the options menu. This is included in the release, but you can find the original mod [here](https://www.nexusmods.com/pseudoregalia/mods/66).\r\n* Added an error to the file select screen if the UE4SS part of the mod isn't running\r\n* Minor performance improvements\r\n\r\n### Bug Fixes\r\n* Healing and Magic power did nothing when cheated (i.e. with `!getitem` or `/send`)\r\n* Dream Breaker would despawn in very specific circumstances",
+      "download_url": "https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.11.0/pseudoregalia.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9d38052319dae0ad26a3039b03ff710832defa4b8d4239d5c20ffa50d00dabcc",
+      "html_url": "https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/tag/0.11.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 44268,
+      "source_url": "https://api.github.com/repos/pseudoregalia-modding/pseudoregalia-archipelago",
+      "tag": "0.11.0",
+      "title": "In-Game Client Settings",
+      "version_simple": "0.11.0",
+      "world_version": "0.11.0"
+    },
     "0.2.0": {
       "created_at": "2023-09-22T16:19:39Z",
       "description": "## Changes:\r\n- Added small keys and minor upgrades to the item pool\r\n\r\n## Bug Additions:\r\n- Consumed small keys will be restored on every scene transition",

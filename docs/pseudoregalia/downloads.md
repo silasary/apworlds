@@ -1,9 +1,12 @@
 # Pseudoregalia
 
 ## Latest
-- <a href="https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.10.2/pseudoregalia.apworld">Latest Version (0.10.2)</a>
+- <a href="https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.11.0/pseudoregalia.apworld">Latest Version (0.11.0)</a>
 
 ## All Versions
+
+#### v0.11.0
+- <a href="https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.11.0/pseudoregalia.apworld">https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.11.0/pseudoregalia.apworld</a>
 
 #### v0.10.2
 - <a href="https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.10.2/pseudoregalia.apworld">https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.10.2/pseudoregalia.apworld</a>

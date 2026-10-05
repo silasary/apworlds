@@ -165,6 +165,22 @@
       "title": "VotV v0.6.2: Emergency fix",
       "version_simple": "0.6.2",
       "world_version": "0.6.2"
+    },
+    "votv-v0.7.0": {
+      "created_at": "2026-10-04T21:41:29Z",
+      "description": "### Added\r\n- World Items option: controls items that are out in the world based on how hidden they are. Tiers are None, Base (items that are impossible to miss), Hidden (items that you are likely to find in a normal playthrough), and Extreme (almost requires having read about the item on the wiki)\r\n- Black Fog Trap, and Alien Cutout Trap if the funny setting is enabled\r\n\r\n### Changed\r\n- Fence Climbing option has been upgraded to Climbing Accessibility, which now includes a higher tier (full) that assumes the player will climb anything technically climbable (on top of Alpha Base, reaching the Stolas Church Tile)\r\n- Item hints are now collated into one single hint\r\n- Options description have been updated\r\n- The \"You have received all items\" hint is now shown when pressing F9 with an empty item list\r\n\r\n### Removed\r\n- Chicken Sandwich options, now controlled by the World Items option\r\n\r\n### Fixed\r\n- Argemia plushes not generating\r\n- Fire Tablet not being classified as time sensitive for the item\r\n- Lifecrystal Signal enabling conditions\r\n- Breakers tripping when reloading a save while not restarting the game if Breakers As Items was enabled\r\n- Bunker Keycard and Kerfur Omega Documents item not generating in some cases\r\n- Save data is now stored within the script, which means it can try again when it loses the notebook and shouldn't reset the item list anymore\r\n- Previously auto claimed items are now replayed correctly when reloading a save\r\n- Containers are now collected when opened\r\n- Archipelago reminder hint stops showing when in the main menu\r\n\r\nThis version is NOT backwards compatible with worlds generated with v0.6.x\r\n\r\nPlease read the [docs](https://github.com/Nathan-R-Og/Archipelago/tree/votv/worlds/votv/docs) on how to install the mod and prepare a run.\r\nYou can use the Options Creator built into the Archipelago Launcher to create your YAML.",
+      "download_url": "https://github.com/Nathan-R-Og/Archipelago/releases/download/votv-v0.7.0/votv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4d1cb14cfa54b90c758438aa9cf35c670d2a3889139a4859350604195c1cc711",
+      "html_url": "https://github.com/Nathan-R-Og/Archipelago/releases/tag/votv-v0.7.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 48280,
+      "source_url": "https://api.github.com/repos/Nathan-R-Og/Archipelago",
+      "tag": "votv-v0.7.0",
+      "title": "VotV v0.7.0: World items",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0"
     }
   }
 }

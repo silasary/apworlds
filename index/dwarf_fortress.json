@@ -258,6 +258,21 @@
       "title": "Dwarfipelago 2.1.0-beta Release Notes",
       "version_simple": "2.1.0",
       "world_version": "2.1.0"
+    },
+    "2.1.1": {
+      "created_at": "2026-10-04T19:17:54Z",
+      "description": "A fix-only release. **2.1.0 and 2.0.x seeds and worlds stay playable** - the item\r\nand location tables are untouched, so nothing needs regenerating to install this.\r\n\r\n### Fixes\r\n\r\n- **Fixed the crash when cancelling a workshop job** (#184). The JOB_COMPLETED\r\n  event was registered at frequency 1, but DFHack requires 0 to tell a job the\r\n  player cancelled from one that finished - at 1 both arrive as \"completed\". The\r\n  handler then walked the job's item refs, which DF has already freed on a\r\n  cancel, and dereferencing those crashed the game. The same bug also let a\r\n  cancelled job increment the craftsanity counts.\r\n- Deferred job and building removals no longer hold a raw pointer across their\r\n  one-tick delay; cancelling the job inside that window left the callback\r\n  dereferencing freed memory, which `pcall` cannot catch. They now re-find by id.\r\n- **Fixed the empty AP shop.** A material lookup indexed `world.raws.inorganics`\r\n  instead of its `.all` list, which raises rather than returning nil, aborting the\r\n  caravan poll step before any goods were injected. Only worlds whose raws contain\r\n  the AP_SHOP materials were affected, which is every world generated with 2.1.0.\r\n- **Fixed the shop being skipped when two caravans share the depot.** Every shop\r\n  decision keyed off whichever merchant happened to be first in `units.active`, so\r\n  a dwarf caravan arriving alongside the gorlaks silently cost the whole visit.\r\n- AP goods are never removed from a unit's inventory, which closes the one way the\r\n  caravan code could corrupt a live unit, and a stolen good no longer registers as\r\n  a purchase. Wildlife that steals a good is struck down so the good is recovered.\r\n- Each caravan poll step is guarded on its own, so a failure in the cosmetic\r\n  naming pass can no longer stop goods being injected or purchases detected. This\r\n  should resolve the issue of Gorlak caravan's coming without any AP goods, as well.",
+      "download_url": "https://github.com/EthanTheBrave/Dwarfipelago/releases/download/2.1.1/dwarf_fortress.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3f592e0fbaf9785ce516141e650019027b176c13bdb2db8e0e936a3174446869",
+      "html_url": "https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.1",
+      "minimum_ap_version": "0.4.0",
+      "size": 309864,
+      "source_url": "https://api.github.com/repos/EthanTheBrave/Dwarfipelago",
+      "tag": "2.1.1",
+      "title": "Dwarfipelago 2.1.1 Release Notes",
+      "version_simple": "2.1.1",
+      "world_version": "2.1.1"
     }
   }
 }
