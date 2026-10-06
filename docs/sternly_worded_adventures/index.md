@@ -1,6 +1,8 @@
 # Sternly Worded Adventures
 
-
+Sternly Worded Adventures is a roguelite word puzzle RPG inspired by Bookworm Adventures
+where you travel through a forested peninsula with Yorkshire-sounding place names
+fighting monsters with the power of words to uncover whatever dark secrets may be lurking beyond.
 
 
 ## Downloads
