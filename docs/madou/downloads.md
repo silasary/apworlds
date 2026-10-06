@@ -1,9 +1,12 @@
 # Madou Monogatari Hanamaru Daiyouchienji
 
 ## Latest
-- <a href="https://github.com/Witchybun/Archipelago/releases/download/MadouMonogatari106/madou.apworld">Latest Version (106)</a>
+- <a href="https://github.com/Witchybun/Archipelago/releases/download/MadouMonogatari107/madou.apworld">Latest Version (107)</a>
 
 ## All Versions
+
+#### v107
+- <a href="https://github.com/Witchybun/Archipelago/releases/download/MadouMonogatari107/madou.apworld">https://github.com/Witchybun/Archipelago/releases/download/MadouMonogatari107/madou.apworld</a>
 
 #### v106
 - <a href="https://github.com/Witchybun/Archipelago/releases/download/MadouMonogatari106/madou.apworld">https://github.com/Witchybun/Archipelago/releases/download/MadouMonogatari106/madou.apworld</a>

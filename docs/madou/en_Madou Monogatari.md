@@ -18,6 +18,7 @@ softlock.  These include:
 - Headmaster is possessed immediately, and will not be un-possessed for continual entries to the maze.
 - Upon clearing Building Block Maze, you are given the Dictionary.
 - Picking incorrectly in Ancient Village doesn't impact you, so you can get everything.
+- The girl in the school which lets you combine items is never turned to stone, so can always be interacted with.
 
 ## What is considered a location check in Madou Monogatari
 - Opening chests,
