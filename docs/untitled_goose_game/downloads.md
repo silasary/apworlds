@@ -1,4 +1,4 @@
-# 
+# Untitled Goose Game
 
 ## Latest
 - <a href="https://github.com/PixelShake92/Untitled-Goose-Game-Archipelago/releases/download/Alpha_2.2/untitled_goose_game.apworld">Latest Version (2.2)</a>
@@ -16,6 +16,9 @@
 
 #### v2.0
 - <a href="https://github.com/PixelShake92/Untitled-Goose-Game-Archipelago/releases/download/Alpha_2.0/untitled_goose_game.apworld">https://github.com/PixelShake92/Untitled-Goose-Game-Archipelago/releases/download/Alpha_2.0/untitled_goose_game.apworld</a>
+
+#### v1.2.1
+- <a href="https://github.com/PixelShake92/Untitled-Goose-Game-Archipelago/releases/download/Alpha_2.2.1/untitled_goose_game.apworld">https://github.com/PixelShake92/Untitled-Goose-Game-Archipelago/releases/download/Alpha_2.2.1/untitled_goose_game.apworld</a>
 
 #### v1.1
 - <a href="https://github.com/PixelShake92/Untitled-Goose-Game-Archipelago/releases/download/Alpha_1.1/untitled_goose_game.apworld">https://github.com/PixelShake92/Untitled-Goose-Game-Archipelago/releases/download/Alpha_1.1/untitled_goose_game.apworld</a>
