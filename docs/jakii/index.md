@@ -11,7 +11,7 @@ and Jak has only one thought on his mind: vengeance.
 
 
 ## Downloads
-- <a href="https://github.com/narramoment/Archipelago/releases/download/0.2.3/jakii.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/narramoment/Archipelago/releases/download/1.0.0/jakii.apworld">Latest Version (1.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

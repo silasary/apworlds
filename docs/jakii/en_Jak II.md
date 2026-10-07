@@ -5,6 +5,7 @@
 The game currently contains the following Location Checks:
 - All 65 Main Missions
 - All 27 Side Missions (all the ones listed on the wiki, plus two races and the jet board challenge)
+- All story-relevant items
 
 These may contain items for different games, as well as items within Jak II.
 In addition, the rewards that you get from the main missions are scattered across the multiworld!
@@ -85,6 +86,12 @@ mission list, and your Jak II client will tell you what item you sent out or rec
 In the case of the side missions, a similar case will occur, in that you will receive the respective precursor orbs in 
 game, as well as your text client telling you what you found and who it belongs to.
 
+## What happens when I come across an item location from vanilla?
+
+When you check an item location, you'll send out the check for that location, and, if it completes a mission, it'll also
+send out the check for the mission. For example, helping out Kor and the kid after escaping prison has two checks: one
+for Dark Jak, and one for the mission completion itself!
+
 ## What do traps do?
 
 When creating your player YAML file, you have the option of replacing a certain percentage of filler items with traps.
@@ -109,7 +116,7 @@ Multiple traps can be active at the same time, and they may interact with each o
 | Darkness Trap    | The world gains the properties of a _creepy_ cave...                             |
 | Earthquake Trap  | The world and camera shake profusely                                             |
 | Teleport Trap    | Jak immediately teleports to the Underground Hideout                             |
-| ~~Despair Trap~~ | ~~The Warrior sobs profusely~~ Coming Soon...                                    |
+| Despair Trap     | The Baron moans profusely                                                        |
 | Pacifism Trap    | Jak's physical attacks have no effect on enemies, crates or buttons              |
 | ~~Ecoless Trap~~ | ~~Jak's eco is drained and he cannot collect new eco~~                           |
 | Health Trap      | Jak's health is set to 0 - not dead yet, but he will die to any attack or bonk   |
@@ -130,9 +137,24 @@ Multiple traps can be active at the same time, and they may interact with each o
 
 ## I got soft-locked and I can't leave, how do I get out of this?
 
-Open the pause menu, navigate to `Restart/Quit`, then `Go to Hideout`, then `Yes`.
-Selecting this option will put you in the alleyway outside the Underground Hideout. From there, you can make your way
-back to where you were prior to getting stuck.
+Open the pause menu and navigate it to `Game Options`. Then, open it and `Archipelago Options`. Once that menu is open,
+you can then select `Go to...` and then pick your destination, based on what locations you have unlocked. Additional
+note, if you don't have the correct items to go to a specific place, you cannot warp there until you get them.
+
+## What items do I need to utilize the warp menu?
+
+| Location Name                        | Items Required                                             |
+|--------------------------------------|------------------------------------------------------------|
+| Underground Hideout                  | N/A                                                        |
+| Hip-Hog Saloon                       | Red Security Pass or BOTH Green and Yellow Security Passes |
+| The Power Station                    | Items required for the Slums to Port Route                 |
+| Onin's Tent                          | Items required for the Slums to Market Route               |
+| The Stadium                          | Items required for the Slums to Stadium Route              |
+| The entrance of Baron Praxis' Palace | Items required for the Slums to Market Route               |
+| The Landing Pad                      | Items required for the Slums to Landing Route              |
+
+NOTE: Documentation for each route can be found on the logic spreadsheet in the Jak II Discord thread, or you can just
+use Pop Tracker to track each route individually.
 
 ## I think I found a bug, where should I report it?
 

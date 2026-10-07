@@ -143,5 +143,10 @@ If the client cannot open a REPL (compiler) connection to the game, you may need
 - Ensure that you only opened those ports for your local network, not the wider internet.
 
 ## Known Issues
-
-- Linux support currenty does not exist, this will be implemented in the near future
+- The game needs to boot in debug mode in order to allow the compiler to connect to it. Clicking "Play" on the mod page
+in the OpenGOAL Launcher will not work.
+- The Compiler console window is orphaned once you close the game - you will have to kill it manually when you stop
+playing.
+- The console windows cannot be run as background processes due to how the compiler works, so the best we can do is
+minimize them.
+- Linux support may not function as intended, please report them as you see them!
