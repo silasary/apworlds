@@ -23,7 +23,7 @@ been received.
 
 
 ## Downloads
-- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.5/nightreign.apworld">Latest Version (0.3.2r3)</a>
+- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.2/nightreign.apworld">Latest Version (0.4.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

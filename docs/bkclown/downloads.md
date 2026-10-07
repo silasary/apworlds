@@ -11,6 +11,9 @@
 #### v0.0.1r2
 - <a href="https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/download/BKClown-v1.1.0/BKClown.apworld">https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/download/BKClown-v1.1.0/BKClown.apworld</a>
 
+#### v0.0.1r2
+- <a href="https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/download/bkclown-v1.1.2/BKClown.apworld">https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/download/bkclown-v1.1.2/BKClown.apworld</a>
+
 #### v0.0.1
 - <a href="https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/download/bkclown-v1.0.0/BKClown.apworld">https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/download/bkclown-v1.0.0/BKClown.apworld</a>
 

@@ -7,7 +7,7 @@ It adds new weapons, devices and playable areas.
 
 
 ## Downloads
-- <a href="https://github.com/Blake645/Archipelago/releases/download/2.0.3/jak3.apworld">Latest Version (2.0.3)</a>
+- <a href="https://github.com/Blake645/Archipelago/releases/download/2.1.0/jak3.apworld">Latest Version (2.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
