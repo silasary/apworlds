@@ -2,49 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-07T18:20:59.870969+00:00</updated>
+  <updated>2026-10-08T00:22:54.081369+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.10.03</id>
-    <title>YARGGuitarHeroWarriorsOfRock v26.9.17r2</title>
-    <updated>2026-10-04T02:57:25+00:00</updated>
-    <author>
-      <name>Energymaster22</name>
-    </author>
-    <author>
-      <name>thedrummonger</name>
-    </author>
-    <author>
-      <name>GirlWithoutAFairy</name>
-    </author>
-    <content># Green Day Rock Band Release&#13;
-&#13;
-Adds new apworld: YARGGreenDayRockBand.apworld&#13;
-&#13;
-## YARGAllSetlists&#13;
-- Added Green Day Rock Band&#13;
-- Added Classical Keys Pack 3&#13;
-- Added Children's Keys Pack 3&#13;
-&#13;
-### No changes made to other apworlds</content>
-    <link href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/tag/26.10.03"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.1</id>
-    <title>SlotLock v0.11.1</title>
-    <updated>2026-10-04T03:41:53+00:00</updated>
-    <author>
-      <name>Sandra (TheSandromatic)</name>
-    </author>
-    <content>* [SlotLock] Only include the first instance of a slot unlock item for sphere_unlocks calculations in linear fill.&#13;
-* [SlotLock] Now use the proper loggger to log information, rather than just print. &#13;
-* [SlotLock] Added a percentage option for linear fill, to only fill a certain percentage of items at each sphere step. Also *always* fills slotlock slot unlock items first, for all slotlock slots. Also makes sure that linear fill works fine with multiple slotlock worlds (Although it does seem to have weird gen failures?)&#13;
-**Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.11.0...slotlockv0.11.1</content>
-    <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.1"/>
-  </entry>
   <entry>
     <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.2</id>
     <title>Baldur's Gate 3 v0.7.2</title>
@@ -1340,6 +1302,16 @@ The first major patch to the mod, adding various new features, fixing several bu
     <link href="https://github.com/ChaoskillerSR/Sternly-Worded-Peninsula/releases/tag/V1.1"/>
   </entry>
   <entry>
+    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta.0.0.2</id>
+    <title>Final Fantasy Crystal Chronicles v0.0.2</title>
+    <updated>2026-10-06T17:18:40+00:00</updated>
+    <author>
+      <name>EverydaySimpleDev</name>
+    </author>
+    <content>New Options / Bug Fixes / Logic Updates / Code Updates</content>
+    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta.0.0.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.5</id>
     <title>Ratchet &amp; Clank: Size Matters v0.5.5</title>
     <updated>2026-10-06T19:46:00+00:00</updated>
@@ -1612,5 +1584,135 @@ Anyways, that's it. Go play now.&#13;
 - Victory condition rules were not being respected during randomization, resulted in things like needing to Beat Rival and both Cups to get a badge needed for beating the Rival&#13;
 - Trainersanity rules for the Cups were not being applied to all Cup locations</content>
     <link href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/tag/v1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/3.0.0</id>
+    <title>Librarian Tidy Up the Arcane Library v3.0.0</title>
+    <updated>2026-10-07T18:10:38+00:00</updated>
+    <author>
+      <name>Str8UpWHITE64</name>
+    </author>
+    <content># Librarian-AP v3.0.0&#13;
+&#13;
+# Choose how books arrive, and what earns a check&#13;
+&#13;
+How books reach you and what earns a check are now two settings, `unlock_mode` and&#13;
+`check_mode`, and every pairing works. One exception: `individual_book_unlocks` with&#13;
+`series` checks is switched to booksanity, since 3,072 items cannot sit in 400 row checks.&#13;
+&#13;
+**2.x YAMLs do not carry over: regenerate your template.** `unlock_mode: booksanity` is&#13;
+now `unlock_mode: individual_book_unlocks` with `check_mode: booksanity`. A 2.0.3 run in&#13;
+progress keeps working on 3.0.0.&#13;
+&#13;
+## New&#13;
+&#13;
+- **`unlock_mode: random_book_bundle`**: each bundle hands you the next `books_per_bundle`&#13;
+  books, drawn from anywhere in the library. `numbered_book_bundles` makes each one its&#13;
+  own item (host must allow it).&#13;
+- **`check_mode: count`**: a `Shelved N Books` check every `check_interval` correctly&#13;
+  shelved books. Taking a book off a shelf takes it off the count.&#13;
+- **Numbered series bundles**: `Series Bundle 3` and so on, so you can hint the one you want.&#13;
+- **`bookcase_unlocks`**: bookcases open one at a time, a section at a time, or all at once.&#13;
+- **`magic_skills_enabled`**: leave out any magic skill, with its Mastery and Fatigue.&#13;
+- **`count_bundle_preference`**: with book bundles and count checks, pick whether the&#13;
+  bundle size or the check interval gives way.&#13;
+- **The game's real ending**: reaching your goal opens the way to the library door. Use&#13;
+  it to play the ending and send the goal; otherwise it sends on its own after five&#13;
+  minutes, with a reminder each minute.&#13;
+- **Universal Tracker**: `/get_logical_path` names the bundle behind any book or row check.&#13;
+- **F8** writes a report of every section to the log, and the HUD shows a summary.&#13;
+- **Count checks name a book that does not count**: a book left in a wrong slot, or on&#13;
+  another section's shelf, is named on the HUD until it moves.&#13;
+- **Out-of-order full rows** are named on the HUD.&#13;
+- **Books that spawn on a shelf** land on the floor in front of it when revealed.&#13;
+- **One log file per launch** in `Mods\Librarian-AP\logs\`.&#13;
+- **Host settings** in `host.yaml`: `allow_individual_book_unlocks` and&#13;
+  `allow_numbered_book_bundles`, for the two shapes that are slow to generate.&#13;
+- **Grouped options** in the template and the web options page.&#13;
+- **The connect shortcut is now F9**, not F12, which Steam uses for screenshots.&#13;
+&#13;
+## Fixes since 2.0.3&#13;
+&#13;
+- Assemble no longer pulls locked books into your bag, only for the mod to take them&#13;
+  straight back out.&#13;
+- "Correctly shelve N books", Section Complete, Floor Complete and a book-counted custom&#13;
+  goal could fire from locations other players collected in your world. They now count&#13;
+  only books and rows actually on your shelves.&#13;
+- A Reached Level check could wait for the next load. Levels now read the bookcases.&#13;
+- A custom goal under booksanity showed its progress in rows; it now counts books.&#13;
+- A save the mod refused could still send the goal; it now follows the same rule as checks.&#13;
+- A refused save says what to do. If only its book layout differs from the run's last&#13;
+  save, F7 accepts it.&#13;
+- With every AP save slot in use, a new run could overwrite one of your saves; it now&#13;
+  refuses and says which to delete.&#13;
+- The connect window no longer collapses on some screens, and reopening it with F4 fills&#13;
+  in your saved server and slot again.&#13;
+- Green ghost books no longer show on every shelf.&#13;
+- Row checks send as soon as a swap lands, not up to 12 seconds later.&#13;
+- The HUD no longer shows bare location numbers (`→ loc 1910133`) for some checks.&#13;
+- Universal Tracker now matches seeds with `series_per_unlock` of 3 and custom goals.&#13;
+&#13;
+## Updating&#13;
+&#13;
+&gt; Extract the zip and drop `Librarian/` into your Steam install (overwrite). Drop&#13;
+&gt; `librarian.apworld` into your Archipelago `custom_worlds/` folder. **Both are&#13;
+&gt; required.** The title screen should read `LibAP v3.0.0`.&#13;
+&#13;
+## If something breaks&#13;
+&#13;
+Press F8, then send that session's log from `Mods\Librarian-AP\logs\`, your YAML's&#13;
+`Librarian:` section, and one line on what you were doing.&#13;
+</content>
+    <link href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/3.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.4</id>
+    <title>Ape Escape 2 v1.3.4</title>
+    <updated>2026-10-07T20:44:47+00:00</updated>
+    <author>
+      <name>dannybonz</name>
+    </author>
+    <content>- Added five new item groups: "Filler", "Traps", "Coins", "Ammo" and "Health".&#13;
+- Fixed Universal Tracker and the built-in client display showing incorrect information when playing with the "Progressive Catapult" setting enabled.&#13;
+- Improved logic for backwards traversal of the "Code C.H.I.M.P." stage.&#13;
+&#13;
+For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archipelago/blob/main/docs/setup.md)</content>
+    <link href="https://github.com/dannybonz/ae2_archipelago/releases/tag/v1.3.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.6</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.5.6</title>
+    <updated>2026-10-07T23:20:53+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## Installation &amp; Setup
+
+- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.
+- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.
+- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.
+- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.
+- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)
+- Click **Generate** to create a multiworld `.zip` in the `output` folder.
+- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.
+- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).
+- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.
+- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2
+
+
+
+## Changelog
+
+- fix(SM): rules error and added in logic for long projectile weapon instead of limited to projectile weapon (7d5c6df4)
+
+Full comparison:
+https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.5...rac_size_matters-v0.5.6</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.6"/>
   </entry>
 </feed>

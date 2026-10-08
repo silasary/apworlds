@@ -8,6 +8,6 @@
 
 ## Joining a MultiWorld Game
 
-1. After using the Chibi Robo Rando application launch the Chibi Robo Client
+1. After using the FFCC Modding application launch the FFCC Client
 2. Connect the Client to the Archipelago server
 3. The client will ask for your player name when joining

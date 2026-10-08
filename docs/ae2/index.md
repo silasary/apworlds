@@ -4,7 +4,7 @@ Ape Escape 2
 
 
 ## Downloads
-- <a href="https://github.com/dannybonz/ae2_archipelago/releases/download/v1.3.3/ae2.apworld">Latest Version (1.3.3)</a>
+- <a href="https://github.com/dannybonz/ae2_archipelago/releases/download/v1.3.4/ae2.apworld">Latest Version (1.3.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
