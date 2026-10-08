@@ -235,6 +235,20 @@
       "title": "1.2.1",
       "version_simple": "1.2.1",
       "world_version": "1.2.1"
+    },
+    "release/1.2.2": {
+      "created_at": "2026-10-08T11:59:11Z",
+      "description": "Took a short break from game development to make a small update. I know they are few and far between, but I'm always paying attention!\r\n\r\n# New Features\r\n\r\n- CAT now has proper reactions to received Deathlinks. Thanks again to Mufflebuns for writing and designing these!\r\n- Added the `additional_traps` YAML option to, well, add traps. The generator will add as many cards/artifacts to compensate for the item amount.\r\n- Added the `forced_starting_cards` YAML option, which allows you to force, in part or in full, which cards each character starts with. Works in tandem with `randomize_starting_cards`.\r\n- The progress screen at the end of a run now show you AP progress bars, instead of the Codex like in vanilla.\r\n- Added some SFX/VFX feedback to AP cards. I didn't like that they just disappeared into the ether, checking a location should feel good!\r\n- Upgrades to AP cards are now character-dependent.\r\n  - I'm looking for feedback on the balancing of these, as well as the idea itself in general.\r\n\r\n# Tweaks\r\n\r\n- Reworked how the goal is defined.\r\n  - Removed `win_condition`: it is now deduced from the other options.\r\n  - `memories_required_total` and `memories_required_per_character` can now be active at the same time for a mixed goal.\r\n  - Added `characters_required`, defining how many characters need to have the amount of memories defined by `memories_required_per_character`, if you only want to use 7 characters for example.\r\n  - Removed `add_character_memories`, it is now forced on. This is easier for me to manage and the off state is covered by `characters_required`.\r\n- Added the `unlocked_card_boot_option` and `unlocked_artifact_boot_option` YAML options, which define whether and how you can pick unlocked items at the start of a run, instead of having a single predefined behavior.\r\n  - `unlocked_artifact_boot_option` can be set to `limited`, which means you only get to pick 1 of 8 random artifacts.\r\n- `pick_missed_items_from_every_run` is now `seen_items_at_shop`, with more granular settings.\r\n- `starting_characters` has been renamed to `forced_starting_characters` to better reflect its behavior.\r\n- The generator will now guarantee that a second ship can be found early on.\r\n- The connection info screen now has helpful tooltips for its various buttons and text fields.\r\n- Added the `super_secret_special_cards` option, to deactivate them if you want to (particularly in asyncs)\r\n  - I may or may not have added a new one of those. I'm sorry. It will happen again\r\n\r\n# Fixes\r\n\r\n- Fixed an extremely rare issue where generation could fail if you started with solo CAT.\r\n- Added some logs to hopefully catch some of the elusive mysterious bugs I've been seeing if they happen again in the future.\r\n\r\nThe APWorld and YAML options must both be updated.",
+      "download_url": "https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/download/release/1.2.2/cobalt_core.apworld",
+      "has_manifest": true,
+      "hash_sha256": "787ef0fab510cd34b1609adaaebfeb4d7e20c6bafd07078105ae0e00eaf32648",
+      "html_url": "https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.2",
+      "size": 25268,
+      "source_url": "https://api.github.com/repos/Isaac-SOL/CobaltCoreArchipelagoMod",
+      "tag": "release/1.2.2",
+      "title": "1.2.2",
+      "version_simple": "1.2.2",
+      "world_version": "1.2.2"
     }
   }
 }

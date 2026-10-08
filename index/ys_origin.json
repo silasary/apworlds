@@ -271,7 +271,7 @@
       "tag": "v2.0.0-beta.4",
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 4 \u2014 Evil Ring, generation fix, seed fuzzer",
       "version_simple": "1.9.2",
-      "world_version": "1.9.2r3"
+      "world_version": "1.9.2r2"
     },
     "v2.0.0-beta.5": {
       "created_at": "2026-10-06T12:45:22Z",
@@ -288,6 +288,38 @@
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 5 \u2014 Room logic rebuilt from the game's data",
       "version_simple": "1.9.2",
       "world_version": "1.9.2r4"
+    },
+    "v2.0.0-beta.6": {
+      "created_at": "2026-10-08T17:40:25Z",
+      "description": "> \ud83e\uddea **Still a beta.** Requires **Archipelago 0.6.7 or newer**.\n>\n> \u26a0\ufe0f **Copy all three files, and start a fresh seed.** Two item names changed meaning (Ruby and Topaz, see below), so a beta 5 seed won't line up with this apworld. Players mid-run on a beta 5 seed can still take the **DLL** alone: it brings every mod-side fix below except the Roda Fruit one, which needs a seed from this apworld.\n>\n> The mod fixes in this beta were reviewed and built, but **not yet played in-game**. Please report anything odd.\n\nSee [beta 1](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.1) for the full 2.0 change list. Everything since then is included.\n\n## \ud83d\udd25\u26a1 Torches need fire, cracked walls need thunder\n\nSome gates are not in any script: the engine itself makes a torch ignore everything but fire and a crumbling wall ignore everything but thunder. Every room's object table was scanned for these, and the logic now requires what the game requires:\n\n- **Flooded Prison 8F:** the wall hiding the **Arthropod Medallion** chest and the wall on the way up to the Roo both need the **Levinstrike Warhammer**. The red Menoaks holding the barrier shrug off weapons and wind, so that barrier needs thunder or fire.\n- **Flames of Guilt 11F:** the far side of the moving-platform room (its second chest, and the way on to 12F) needs the **Crimson Lotusblade** and the **Cerulean Flabellum**.\n- **Flames of Guilt 12F:** the **Construct Medallion** chest needs the Lotusblade for its four torches.\n- **Silent Sands 15F:** the cracked wall on the way to the **Creeper Medallion** needs the Warhammer.\n\nBefore this, a seed could put the Warhammer or the Lotusblade behind the very wall or torch it opens.\n\n## \ud83d\udc8e Ruby and Topaz were the wrong way round\n\nThe gem called Ruby upgraded thunder and the one called Topaz upgraded fire. The names now match the game: **Topaz is thunder, Ruby is fire**. Nothing else about them changed.\n\n## \u2699\ufe0f Options\n\n- **Progressive elemental skills are always on.** The first one you find is the skill itself, the next three are its upgrades. The option is gone from the template; old yamls still load.\n- **Random start now turns Statue warp locks on by itself.** Without them the mod never warped you to your spawn, while the logic assumed it had.\n- Finding a Cleria Ore upgrades your weapon whatever `weapon_requirements` is set to (it always did; the option only controls whether zones wait for it).\n\n## \ud83d\udee0\ufe0f Mod fixes\n\n- **Thrown back to your start statue at the summit.** Loading a save and walking into the Tower Summit triggered the New Game spawn warp once. Fixed.\n- **Reconnects no longer hand out extra tiers.** Progressive Armor, Boots, skills and blessings moved up a tier every time the connection dropped and came back.\n- **Items sent while you were at the title screen are no longer lost.** SP, Celcetan Panaceas, blessing effects and skill levels were written before your save loaded, then overwritten by it. They now wait until you are in the game.\n- **Per-seed saves work without touching the config.** The default file pattern never matched the game's save files, so every seed shared one set of saves unless you had set `save_pattern=.bin` yourself. That is now the default.\n- **Roda Fruit can't be wasted.** The Roos can be fed in any order, and feeding a late one first could leave an early one (that the logic had promised you) without its fruit. The mod now keeps your fruit count at \"Roos still unfed among the ones you have fruits for\", so that can't happen.\n- **Switching rooms from the F8 menu** no longer carries over the previous seed's locked statues and suppressed items.\n- **No more repeated \"Found\" toasts** for old checks after a reconnect or on re-entering a room, and a statue purchase no longer reports twice.\n- **F9** (manual spawn warp) only works while the game window has focus.\n\n## Known issues\n\n- Some vanilla \"you got it!\" dialogue still plays when the real item is elsewhere (for example the Evil Ring charging).\n",
+      "download_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v2.0.0-beta.6/ys_origin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b61bafff3852a5997f20dd0c1f34699ba8f7616a7c490039851ec17c618269ad",
+      "html_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.6",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 81502,
+      "source_url": "https://api.github.com/repos/4rtefakt/ys-origin-archipelago",
+      "tag": "v2.0.0-beta.6",
+      "title": "Ys Origin \u00d7 Archipelago 2.0 beta 6 \u2014 Fire and thunder gates, reconnect and save fixes",
+      "version_simple": "1.9.2",
+      "world_version": "1.9.2r2"
+    },
+    "v2.0.0-beta.7": {
+      "created_at": "2026-10-08T18:10:00Z",
+      "description": "> \ud83e\uddea **Still a beta.** Requires **Archipelago 0.6.7 or newer**.\n>\n> \u26a0\ufe0f **Copy all three files, and start a fresh seed.** The logic changed again, so a seed made with beta 6 can ask for things in a different order than this apworld expects. Players mid-run on a beta 6 seed can still take the **DLL** alone.\n>\n> The mod changes in beta 6 and beta 7 were reviewed and built, but **not yet played in-game**. Please report anything odd.\n\nSee [beta 1](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.1) for the full 2.0 change list and [beta 6](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.6) for the fire and thunder gates. Everything since then is included.\n\n## \ud83d\udd14 Undead barriers need the Silver Chimes\n\nZeruenas, Karons, Zarues, Bazeraenas and Zelkarons get back up unless the Silver Chimes are equipped. Two barriers in the tower are held by them. The Zarue pit on 15F was already in the logic; the other was not:\n\n- **Corrupted Blood 20F:** the four red Zeruenas in the room past the 20F statue hold the barrier in front of the **Dragonbone Key** chest and the story scene there. The chest now needs the **Silver Chimes**, and so does Yunica's 1F Dreaming Idol check, which waits on that scene.\n\n## \ud83e\udd98 Jumps the logic didn't know about\n\nChecked against the walkthrough for all three characters:\n\n- **Corrupted Blood 18F:** the spike-and-gate room right after the statue takes three double-jumps. Going past it now needs the **Gold Bracelet**. Before this, a seed could send you into Corrupted Blood without it.\n- **Demonic Core 22F:** the Roda Fruit chest across the gap needs the **Gold Bracelet** and the **Cerulean Flabellum**. The last Roo needs the **Gold Bracelet**.\n- **Flames of Guilt 10F:** the Roda Fruit chest needs the **Mask of Eyes** (the hidden bridge leads to the switch that raises its platform).\n\n## \u2699\ufe0f Options\n\n- **Catch-up EXP now defaults to 60** (it was 20, the same as the base rate, so it did nothing). Levels ramp steeply from 18F and a player on pace at 17F was falling a dozen levels behind. Set it equal to `exp_multiplier_base` if you want one flat rate.\n\n## \ud83d\udee0\ufe0f Mod fixes\n\n- **\"You got it!\" when you didn't.** When a story scene hands over an item that the randomizer has moved (the Zelkarons charging the Evil Ring, for example), the dialogue still plays. The feed now tells you the game's own copy was withheld and yours comes from the multiworld.\n- **`!alias` no longer confuses the toasts.** Your own items showed as someone else's and popped twice once you had set an alias.\n- The weapon upgrade can no longer be re-applied on the title screen, and a few things the network thread shared with the game thread (the log file, item colours, blessing grants) are now properly guarded.\n\n## Known issues\n\n- Used medallions, keys and Moon Crests come back into the inventory after use. The doors they opened stay open; it is cosmetic.\n",
+      "download_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v2.0.0-beta.7/ys_origin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bf1a2db0a05324d12e7dbd91f8e221a8c3f335603bbdc7a7cacf91421705e561",
+      "html_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.7",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 82142,
+      "source_url": "https://api.github.com/repos/4rtefakt/ys-origin-archipelago",
+      "tag": "v2.0.0-beta.7",
+      "title": "Ys Origin \u00d7 Archipelago 2.0 beta 7 \u2014 Silver Chimes barrier, double-jump gates, catch-up EXP",
+      "version_simple": "1.9.2",
+      "world_version": "1.9.2r3"
     }
   }
 }
