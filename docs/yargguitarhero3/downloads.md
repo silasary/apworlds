@@ -8,6 +8,9 @@
 #### v26.9.17r2
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.03/YARGGuitarHero3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.03/YARGGuitarHero3.apworld</a>
 
+#### v26.9.17r2
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.08/YARGGuitarHero3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.08/YARGGuitarHero3.apworld</a>
+
 #### v26.9.17
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.09.17/YARGGuitarHero3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.09.17/YARGGuitarHero3.apworld</a>
 

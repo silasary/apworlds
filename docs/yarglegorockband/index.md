@@ -12,7 +12,4 @@ and maybe get some free items from your fans!
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_YARG">en_YARG</a>

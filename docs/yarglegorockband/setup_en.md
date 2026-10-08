@@ -1,1 +1,0 @@
-# YARG Randomizer Setup Guide
