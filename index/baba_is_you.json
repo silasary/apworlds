@@ -139,6 +139,21 @@
       "title": "beta v3.0h",
       "version_simple": "0.3.0",
       "world_version": "0.3.0r2"
+    },
+    "b3.5": {
+      "created_at": "2026-10-08T03:02:41Z",
+      "description": "Finally, a new update! This update lets you play up to Meta. Sadly, I haven't gotten around to implementing Meta yet. There's also some new QoL features in this update, and many logic/bug fixes. There's also a new [explanation page](worlds/baba_is_you/BABAPELAGO_README.md) for the game.\r\n\r\nNOTE: v0.6.7 or higher of Archipelago is required due to the use of Rule Builder. Not compatible with worlds generated prior to this version.\r\n\r\n## New features:\r\n- (All) Added levels from Depths\r\n- (All) Implemented \"Depths\" area access and \"Reach Meta\" goal\r\n- (APWorld) Split hard logic into \"Hard\" and \"Advanced\" logic\r\n  - Advanced Logic is what hard logic was in the prior version, requiring advanced game knowledge like movement priority.\r\n  - Hard Logic includes solutions that were considered particularly difficult (Sorting Facility, Jump, etc.)\r\n- (Client) The client now saves where the Baba Is You executable/app is stored\r\n- (Misc) Added a new explanation page\r\n\r\n## Adjustments/fixes:\r\n- (APWorld) Increased the selectable range of Blossoms and Blossom Petals (as well as gate and goal requirements)\r\n- (APWorld) Some normal logic changes (Solitude, Lovely House, Not Quite)\r\n- (APWorld) Fixed logic for Stardrop\r\n- (APWorld) Items that don't appear in the selected area no longer appear as items in the multiworld\r\n- (APWorld) Fixed GoalLevels being set to GoalBlossoms when the cap is hit\r\n- (APWorld) Fixed Fall-A not being logically connected to Fall-C\r\n- (Client) Made many stability improvements.\r\n- (Client) HOPEFULLY fixed crash when other players use non-ascii characters in their slot name\r\n- (Levelpack) Fixed manual mode creating permanent transformations in save files\r\n- (Levelpack) All win locations now re-send when connecting to the multiworld\r\n- (Levelpack) Fixed crashes when sending many locations at once\r\n- (Levelpack) Fixed the wrong location being displayed occasionally when receiving Blossoms or Bonus Orbs\r\n- (Tracker) Fixed Ruins-9 not appearing in Ruins on the world map\r\n\r\nThis contains the Baba Is You APWorld, the Babapelago levelpack, and extraslot.lua. ONLY THE APWORLD IS REQUIRED! It contains the levelpack as well and will automatically install the pack when starting. The levelpack is included in case this feature doesn't work for whatever reason, and extraslot.lua is a global mod needed to play more than three slots at once, if you wish to do so. The host only needs the APWorld no matter what.\r\n\r\nFor installation instructions and other information about this mod, PLEASE check out the [explanation page](worlds/baba_is_you/BABAPELAGO_README.md). Very important!\r\n\r\nKNOWN ISSUES:\r\n- I think this is fixed by now (have not encountered this in quite some time), but the client may suddenly stop sending checks in some situations. Closing and re-opening the client should fix the issue.\r\n- There may be issues on Mac and Linux, since I haven't been able to test those myself. Please report any issues you experience.\r\n- Logic has been well tested, although It was not feasible to test every possible combination of items. Please report any issues. In particular, Ultimate Maze's transforms are a complicated case.",
+      "download_url": "https://github.com/EmilyEmmi/Babapelago/releases/download/b3.5/baba_is_you.apworld",
+      "has_manifest": true,
+      "hash_sha256": "91f6b0d7f61a20e4b4c4b4be54518b7525bd7b8d1f3a7dd4b75d668b4892b5b2",
+      "html_url": "https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 684350,
+      "source_url": "https://api.github.com/repos/EmilyEmmi/Babapelago",
+      "tag": "b3.5",
+      "title": "beta v3.5",
+      "version_simple": "0.3.5",
+      "world_version": "0.3.5"
     }
   }
 }

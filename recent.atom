@@ -2,198 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-08T00:22:54.081369+00:00</updated>
+  <updated>2026-10-08T06:25:11.750924+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.2</id>
-    <title>Baldur's Gate 3 v0.7.2</title>
-    <updated>2026-10-04T07:58:00+00:00</updated>
-    <author>
-      <name>Broney</name>
-    </author>
-    <content>Changes in this release:&#13;
-* Containersanity revamp for Act 1 + 2. Too many changes to list. All locations in Act 1+2 _should_ now have accurate region names, x/y coords, and have been legitimately found in a real playthrough. This remains unstable until I get confirmation that somebody else has played through it.&#13;
-* "Container Highlight" yaml option added. When true, unlooted containers glow. Some glowing containers are not actually locations due to bugs or unreachableness or invalid whatever, but every location in containersanity does glow.&#13;
-* Fixed a change to the Mod to better handle connect stability. The "server mod mismatch" error should fire less often now.&#13;
-* Replaced monster trap minotaur with Meenlock.&#13;
-* Added companion clothes shuffle (no game effect, I just think it's funny)&#13;
-* Added companion class randomization (not recommended currently, I didn't modify starting stats, so they'll be wildly inappropriate)&#13;
-* Removed some killsanity checks that are actually missable that I didn't realize was true (the first five shar skeletons, three moonrise prisoner Master of Souls).&#13;
-* Renamed a few killsanity checks (I think all TBD's are now labelled correctly, Colony: Kill Mindflayer is Colony Showdown: Kill Mindflayer, and the 8 necromites on the Moonrise roof became "Kill Roof Necromite" (because audience guards would clash with the name)).&#13;
-* Changed the heavy supply pack to a normal supply pack. Farewell, overburdened trap, some of us were fond of you.</content>
-    <link href="https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.7.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.0</id>
-    <title>Team Fortress 2 Mann vs Machine v1.18.0</title>
-    <updated>2026-10-04T09:14:31+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Fixed
-
-- **The bots can buy upgrades again, and an existing server gets SourceMod's
-  fix for the upgrade station crash.** The 2026-10-02 TF2 update changed how
-  the game stores the messages the upgrade station sends, and the SourceMod we
-  shipped read them the old way. A player opening the station crashed the
-  server, and the game refused every upgrade a bot asked for. SourceMod
-  1.12.0-git7255 reads the new layout, and the launcher and the Docker image
-  now upgrade a server that already has an older SourceMod at its next start.
-  Your own edits to SourceMod's configs are kept. We measured the bots: 35 of
-  35 purchases refused before, 44 bought after, and a player confirmed the
-  station no longer crashes their server.
-- **The debug bundle stops pointing at the wrong thing when SigMod cannot find
-  the game.** When SigMod was made for the TF2 build your server reports and
-  still finds none of the game's addresses, the game files are usually half
-  updated, and `summary.txt` now says so and tells you to press Repair, which
-  checks every game file on the next start. It used to tell you to compare two
-  version numbers that already matched. And when every bot purchase is refused
-  on a SourceMod that already has the fix, it no longer blames SourceMod.
-
-### Changed
-
-- **The debug bundle names the TF2 build the server is running.** It listed
-  every version the launcher installs and not the one they are all built
-  against, which is the version that matters most on the evening TF2 updates.
-- **The debug bundle says when two of those versions cannot work together.**
-  Above the logs it now names, in plain words, a SigMod built for a different
-  TF2 build, a SourceMod too old for the upgrade station on this one, and a run
-  where the game refused every upgrade the bots tried to buy. It compares what
-  the file already said; it still does not claim to have found your bug.
-- **The debug bundle stops sending you after a crash dump that does not
-  exist.** When SigMod catches the fault and closes the server itself, Windows
-  writes no dump, and the summary now says so and points at the two stacks
-  SigMod printed into the log instead. When a dump should exist it names the
-  folders it looked in.
-- **The debug bundle lists what it could not collect.** Two bundles from the
-  same evening held different files and there was no way to tell a missing file
-  from a file that never existed. `collected.txt` in the zip now says which it
-  was, and why.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* feat(ci): alert on a new TF2 build before players do by @m-this in https://github.com/m-this/tf2-archipelago/pull/181
-* fix(versions): pin the defender mod's compiler once, and record the TF2 build by @m-this in https://github.com/m-this/tf2-archipelago/pull/182
-* fix(deploy): pin SourceMod 1.12.0-git7255 by @m-this in https://github.com/m-this/tf2-archipelago/pull/183
-* feat(debugbundle): record the TF2 build and cross-check the pins against it by @m-this in https://github.com/m-this/tf2-archipelago/pull/184
-* chore(deps): tf2-mvm-bots-go v0.18.4, and drop SM_Stock_OfficerSpy from the build by @m-this in https://github.com/m-this/tf2-archipelago/pull/185
-* fix(install): bring an installed SourceMod and Metamod to the pins by @m-this in https://github.com/m-this/tf2-archipelago/pull/186
-* fix(debugbundle): point at the game files when SigMod fails on its own build by @m-this in https://github.com/m-this/tf2-archipelago/pull/187
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.17.9...v1.18.0
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/NzM4ZmE0MThiNjhmNjQ5OGY0OGUzMWU0NzA0ZTZkNTM6MTc5MTEwNTU2OQ==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MDdmNmEzNmJkYmE3NmNiZjhhN2Q2Mjg5ZDEzZjgzZWQ6MTc5MTEwNTU3Mg==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.0"/>
-  </entry>
   <entry>
     <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.0</id>
     <title>Spyro: A Hero's Tail v2.2.0r2</title>
@@ -1714,5 +1527,62 @@ For instructions, see the [Setup Guide.](https://github.com/dannybonz/ae2_archip
 Full comparison:
 https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.5...rac_size_matters-v0.5.6</content>
     <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jmarcs27/StreetsOfRogueArchipelago/releases/tag/v0.03</id>
+    <title>Streets of Rogue v0.3</title>
+    <updated>2026-10-08T02:46:25+00:00</updated>
+    <author>
+      <name>Jmarcs27</name>
+    </author>
+    <content>[setup guide](https://github.com/Jmarcs27/StreetsOfRogueArchipelago/blob/main/setup_en.md)&#13;
+&#13;
+This release is primarily to add logic to the game. Previous releases did not have any. I also made it so connection details will save between sessions as that was highly requested and is definitely a good QoL feature.</content>
+    <link href="https://github.com/Jmarcs27/StreetsOfRogueArchipelago/releases/tag/v0.03"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.5</id>
+    <title>Baba Is You v0.3.5</title>
+    <updated>2026-10-08T03:02:41+00:00</updated>
+    <author>
+      <name>EmilyEmmi</name>
+    </author>
+    <content>Finally, a new update! This update lets you play up to Meta. Sadly, I haven't gotten around to implementing Meta yet. There's also some new QoL features in this update, and many logic/bug fixes. There's also a new [explanation page](worlds/baba_is_you/BABAPELAGO_README.md) for the game.&#13;
+&#13;
+NOTE: v0.6.7 or higher of Archipelago is required due to the use of Rule Builder. Not compatible with worlds generated prior to this version.&#13;
+&#13;
+## New features:&#13;
+- (All) Added levels from Depths&#13;
+- (All) Implemented "Depths" area access and "Reach Meta" goal&#13;
+- (APWorld) Split hard logic into "Hard" and "Advanced" logic&#13;
+  - Advanced Logic is what hard logic was in the prior version, requiring advanced game knowledge like movement priority.&#13;
+  - Hard Logic includes solutions that were considered particularly difficult (Sorting Facility, Jump, etc.)&#13;
+- (Client) The client now saves where the Baba Is You executable/app is stored&#13;
+- (Misc) Added a new explanation page&#13;
+&#13;
+## Adjustments/fixes:&#13;
+- (APWorld) Increased the selectable range of Blossoms and Blossom Petals (as well as gate and goal requirements)&#13;
+- (APWorld) Some normal logic changes (Solitude, Lovely House, Not Quite)&#13;
+- (APWorld) Fixed logic for Stardrop&#13;
+- (APWorld) Items that don't appear in the selected area no longer appear as items in the multiworld&#13;
+- (APWorld) Fixed GoalLevels being set to GoalBlossoms when the cap is hit&#13;
+- (APWorld) Fixed Fall-A not being logically connected to Fall-C&#13;
+- (Client) Made many stability improvements.&#13;
+- (Client) HOPEFULLY fixed crash when other players use non-ascii characters in their slot name&#13;
+- (Levelpack) Fixed manual mode creating permanent transformations in save files&#13;
+- (Levelpack) All win locations now re-send when connecting to the multiworld&#13;
+- (Levelpack) Fixed crashes when sending many locations at once&#13;
+- (Levelpack) Fixed the wrong location being displayed occasionally when receiving Blossoms or Bonus Orbs&#13;
+- (Tracker) Fixed Ruins-9 not appearing in Ruins on the world map&#13;
+&#13;
+This contains the Baba Is You APWorld, the Babapelago levelpack, and extraslot.lua. ONLY THE APWORLD IS REQUIRED! It contains the levelpack as well and will automatically install the pack when starting. The levelpack is included in case this feature doesn't work for whatever reason, and extraslot.lua is a global mod needed to play more than three slots at once, if you wish to do so. The host only needs the APWorld no matter what.&#13;
+&#13;
+For installation instructions and other information about this mod, PLEASE check out the [explanation page](worlds/baba_is_you/BABAPELAGO_README.md). Very important!&#13;
+&#13;
+KNOWN ISSUES:&#13;
+- I think this is fixed by now (have not encountered this in quite some time), but the client may suddenly stop sending checks in some situations. Closing and re-opening the client should fix the issue.&#13;
+- There may be issues on Mac and Linux, since I haven't been able to test those myself. Please report any issues you experience.&#13;
+- Logic has been well tested, although It was not feasible to test every possible combination of items. Please report any issues. In particular, Ultimate Maze's transforms are a complicated case.</content>
+    <link href="https://github.com/EmilyEmmi/Babapelago/releases/tag/b3.5"/>
   </entry>
 </feed>
