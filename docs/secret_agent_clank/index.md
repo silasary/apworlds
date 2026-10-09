@@ -9,11 +9,14 @@ are all placeholder content and every game-memory address is unconfirmed
 
 
 ## Downloads
-- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.4/secret_agent_clank.apworld">Latest Version (0.0.4)</a>
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.5/secret_agent_clank.apworld">Latest Version (0.0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Secret Agent Clank">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
+## Other Documentation files
+- <a href="ai-disclosure">ai-disclosure</a>
