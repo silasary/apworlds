@@ -8,7 +8,7 @@ a vast interconnected world.
 
 
 ## Downloads
-- <a href="https://github.com/LonLon-Labs/SSHD_APWorld/releases/download/Continuous/sshd.apworld">Latest Version (0.7.4r12)</a>
+- <a href="https://github.com/LonLon-Labs/SSHD_APWorld/releases/download/Continuous/sshd.apworld">Latest Version (0.7.4r13)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

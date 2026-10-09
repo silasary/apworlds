@@ -4,7 +4,7 @@ Glass Animals&#x27; discography as an archipelago integration where you get chec
 
 
 ## Downloads
-- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ga-1.0.1/glassanimals.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ga-1.1.0/glassanimals.apworld">Latest Version (1.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

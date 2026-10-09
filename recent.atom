@@ -2,168 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-09T12:20:45.234794+00:00</updated>
+  <updated>2026-10-09T18:17:56.683305+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-24.2.4</id>
-    <title>The Legend of Zelda - Oracle of Seasons v24.2.4</title>
-    <updated>2026-10-05T12:00:00+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>## 🛠️ Bugfixes&#13;
-- Fixed a vanilla bug making a zora not spawn 33% of the time in the linked hero's cave pool room&#13;
-- Fixed a visual issue with the 25 ore chunk pack&#13;
-- Fixed Ricky's Gloves not appearing in the passive items submenu&#13;
-&#13;
-If you want to see the 24.2.x changelog, it can be found [here](https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-24.2.2)</content>
-    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-24.2.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v1.0.0-beta</id>
-    <title>Grand Theft Auto: San Andreas v0.10.0</title>
-    <updated>2026-10-05T14:48:02+00:00</updated>
-    <author>
-      <name>awaken</name>
-    </author>
-    <content>## New:&#13;
-- Out of order missions - any mission can be started as soon as their respective progressive item is received.&#13;
-- End of the Line early start - EOTL can now be started early after X amount of missions completed, configurable in the yaml. (Only in Out of Order)&#13;
-## Changes:&#13;
-- Progressive Return was renamed to Progressive Mansion&#13;
-- Progressive Garage is now shown as Garage Mission in-game instead of CJ Mission.&#13;
-- Changed Riot to be a part of the Mansion branch instead of Sweet.&#13;
-- Collectibles that have been checked in the multiworld remove their blips. (#86)&#13;
-## Fixed:&#13;
-- Fixed latest Widescreen Fix version breaking blips on the pause menu map. (#84)&#13;
-- Fixed submission NPCs not spawning in regions where story hasn't reached yet. (#89)&#13;
-- Fixed text fading out/losing outline. (#88)&#13;
-## Notes:&#13;
-This is an unstable beta release. Be aware that you might not be able to finish a run. &#13;
-Feel free to bug report through the [GTA SA thread](https://discord.com/channels/1085716850370957462/1098055987648282717) in AP After Dark.&#13;
-&#13;
-[Currently known issues.](https://github.com/awakenbad/SanAndreasAP/issues?q=state%3Aopen%20label%3A%22out%20of%20order%22)</content>
-    <link href="https://github.com/awakenbad/SanAndreasAP/releases/tag/v1.0.0-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.12</id>
-    <title>Stick Ranger v1.8.12</title>
-    <updated>2026-10-05T15:07:23+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content>## Installation
-
--   Download the APworld for Stick Ranger
--   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
--   Generate a yaml or download the one in here
--   Customize the yaml and put it in the /players folder inside Archipelago
--   Generate a game
--   Connect to and play the game [here](https://kryen112.github.io/), or click your name on the room page
-    to open it with the host, port and slot name already filled in
-
-## Heads up
-
--   **Regenerate your yaml.** Two options changed shape: `traps` is now `trap_percentage`, any number
-    from 0 to 100, and `shop_hints` is a choice of `off`, `important_only` or `all` that replaces
-    Important Hints Only. A yaml still carrying the old keys keeps working for this release and is read
-    the way it always was.
--   **A game already in progress keeps working.** Reload the site. A seed generated before 1.8.12
-    keeps its old shop rules; support for those seeds ends in November 2026, after which you will
-    need a new seed.
--   Requires Archipelago **0.6.7 or newer**.
--   The apworld and the site are versioned separately from here on. The seed now says which apworld
-    made it, and the site says so when that is newer than the site.
-
-## Shop Checks seeds could be unbeatable
-
-With Shop Checks on and Progressive Shop off, logic treated the first nine rows of Town's shop as
-free and later rows as needing only a boss gate. The game stocks a Town row only once a specific
-stage has been beaten, so about one seed in three put a stage unlock in a row that could never open.
-
-Logic now follows the game's own stock table exactly: a Town row needs a stage that stocks it to be
-beatable, and Village, Resort and Island are stocked the moment you can walk in, as they are in the
-base game. A test fills seeds and sweeps them under the game's rule.
-
-## Options
-
--   **Trap Percentage** replaces Traps. The old choice could be typed as `traps: 5` and be read as
-    the fifth choice, which was 100 percent.
--   **Shop Hints** is one choice: `off`, `important_only`, `all`.
--   **Progressive Shop** and **Enforce Shop Logic** do nothing unless Shop Checks is on.
--   **Gold per Thrown Ring** is Ring Link's payout and does nothing without Ring Link.
--   The options page is grouped by theme, and the yaml template follows the same order.
--   Every option's help text lives in the template and on the options page; the README no longer
-    keeps its own list.
-
-## Universal Tracker
-
-The tracker can rebuild the world from the seed alone; it no longer needs your yaml.
-
-## The site
-
--   Clicking the game after chatting gives the keyboard back. Escape leaves the chat, and the Send
-    button no longer keeps focus, which is what made a space pause the game.
--   With Enforce Logic on, clicking a barred stage says which gate it waits on and what that gate
-    still needs. The site also says so when a seed carries no logic to enforce.
--   `!hint stage` and `!hint class` skip what the room has already been told. A plain `!hint` goes
-    to the server again.
--   Trap Disguise never hints a disguised trap, a trap wears a different face in every seed, and
-    never the name of another trap.
--   The -50% gold trap no longer broadcasts over Ring Link.
--   Iron and Bronze Medals multiply the XP and drop multipliers, the way the Gold Medal already did
-    for gold.
--   A fully wiped party revives for free.
--   Switching tabs mid-walk no longer leaves a ranger walking.
--   Shop checks sent from another client on your slot, or by a collect, are picked up as they happen.
--   A shop check holding progression or a trap wears its own tile; the art is now named for what it
-    means.
-</content>
-    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/1.8.12"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.2</id>
-    <title>WarioWare, Inc. - Mega Microgame$! v1.1.2</title>
-    <updated>2026-10-05T17:36:54+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>a few extra (free) locations, some fixes and ut additions thanks to wario twisted&#13;
-# Info&#13;
-* [Info](https://thelx5.github.io/wario_ware_inc/index.html)&#13;
-* [Setup](https://thelx5.github.io/wario_ware_inc/setup.html)&#13;
-## Changes&#13;
-* Adds new point locations for character stages to aid with generation success rate&#13;
-  * Those are below the Clear point rank, so they're basically free to get alongside the Clear location&#13;
-* Removes starting microgames from the pool when unlocking them separately&#13;
-* No longer excludes some microgames at random when playing with individual level unlocks and more than 113 microgames in the pool&#13;
-* Adjusted some text in the game&#13;
-* [Universal Tracker] The tracker tab will now tell players which character holds the microgame as an alias&#13;
-* [Universal Tracker] Microgames now show in their alias string how many points are required to get a flower rank</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/wariowareinc-v1.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.10.2</id>
-    <title>Plants vs. Zombies: Replanted v1.10.2</title>
-    <updated>2026-10-05T18:14:40+00:00</updated>
-    <author>
-      <name>Bonzorio</name>
-    </author>
-    <content>- Further improved generation success rate.&#13;
-- Renamed item groups to prevent group names being shared with individual items.&#13;
-- Fixed a problem with Vasebreaker randomisation that could cause crashes when playing with the GOTY client.&#13;
-&#13;
-This update only affects the .apworld file. The client mod is unchanged from v1.10.1.&#13;
-&#13;
-For instructions, see the [Setup Guide.](https://github.com/dannybonz/replanted_archipelago/blob/main/apworld/docs/setup.md)</content>
-    <link href="https://github.com/dannybonz/replanted_archipelago/releases/tag/v1.10.2"/>
-  </entry>
   <entry>
     <id>https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.2</id>
     <title>SlotLock v0.11.2</title>
@@ -1109,7 +952,7 @@ New to the game? Check out the [FAQ](https://discord.com/channels/73120530124780
   </entry>
   <entry>
     <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.6</id>
-    <title>Ys Origin v1.9.2r4</title>
+    <title>Ys Origin v1.9.2r2</title>
     <updated>2026-10-08T17:40:25+00:00</updated>
     <author>
       <name>4rtefakt</name>
@@ -1162,7 +1005,7 @@ The gem called Ruby upgraded thunder and the one called Topaz upgraded fire. The
   </entry>
   <entry>
     <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.7</id>
-    <title>Ys Origin v1.9.2r2</title>
+    <title>Ys Origin v1.9.2r3</title>
     <updated>2026-10-08T18:10:00+00:00</updated>
     <author>
       <name>4rtefakt</name>
@@ -1207,7 +1050,7 @@ Checked against the walkthrough for all three characters:
   </entry>
   <entry>
     <id>https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-1.2.2</id>
-    <title>Slay The Princess v1.0.0r2</title>
+    <title>Slay The Princess v1.0.0r3</title>
     <updated>2026-10-08T18:50:37+00:00</updated>
     <author>
       <name>Onilaf</name>
@@ -1603,6 +1446,20 @@ The game only offers windowed and exclusive fullscreen. With `borderless=1` in `
     <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.1"/>
   </entry>
   <entry>
+    <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.6</id>
+    <title>Taylor Swift Discography v1.2.6</title>
+    <updated>2026-10-08T23:37:04+00:00</updated>
+    <author>
+      <name>benny-dreamly</name>
+    </author>
+    <content>This release fixes the vault tracks being included when the vault tracks option is disabled. Which was a silly dumb mistake on my part but at least it wasn't as bad as releasing this once before without the files attached!&#13;
+&#13;
+The zip has not changed this release and is the same file as the previous release.&#13;
+&#13;
+**Full Changelog**: https://github.com/benny-dreamly/Archipelago/compare/ts-1.2.5...ts-1.2.6</content>
+    <link href="https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.6"/>
+  </entry>
+  <entry>
     <id>https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.3</id>
     <title>Cobalt Core v1.2.3</title>
     <updated>2026-10-09T07:33:56+00:00</updated>
@@ -1617,5 +1474,83 @@ The game only offers windowed and exclusive fullscreen. With `borderless=1` in `
 The APWorld and YAML options are identical to 1.2.2, and do not need to be updated.&#13;
 This version is compatible with multiworlds generated with 1.2.2.</content>
     <link href="https://github.com/Isaac-SOL/CobaltCoreArchipelagoMod/releases/tag/release/1.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.6</id>
+    <title>A Link Between Worlds v0.3.6</title>
+    <updated>2026-10-09T14:13:12+00:00</updated>
+    <author>
+      <name>randomsalience</name>
+    </author>
+    <content>This release is backward compatible with apworld version 0.3.3+&#13;
+&#13;
+### Fixes&#13;
+- Updated for compatibility with Azahar 2126.2</content>
+    <link href="https://github.com/randomsalience/albw-archipelago/releases/tag/v0.3.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.3.2</id>
+    <title>Chibi Robo v1.3.2</title>
+    <updated>2026-10-09T14:51:10+00:00</updated>
+    <author>
+      <name>EverydaySimpleDev</name>
+    </author>
+    <content>- Bug Fixes For Kitchen Spoon / Backyard Frog Ring&#13;
+- Bug Fix For Ghost Suit&#13;
+- APCR file / auto connect feature&#13;
+- Kitchen Cookie / backyard ship locations are locked items / locations added</content>
+    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/1.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.12.0</id>
+    <title>Harry Potter 2 PC v2.12.0</title>
+    <updated>2026-10-09T15:28:12+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content># HP2PC_AP v2.12.0
+The other Harry Potter 2 players in your room show up as ghosts, the client says exactly what is blocking a launch or a mod update, and a Gold Card Room logic fix.
+
+### New
+- **Ghost players** (`ghost_players`, on by default). Other Harry Potter 2 players in the room who are on the same map appear in your game as translucent Harrys, moving and animating as they play, and your Harry appears in theirs. Each ghost carries its slot name over its head in a colour of its own, and mirrors the peer's disguise, size, wand and upside-down state. Cosmetic only: a ghost has no collision and cannot be targeted. `/ghosts` takes `on`, `off` or `seed` like the other link commands, and a bare `/ghosts` flips it. Off also stops sharing your own position.
+
+### Changed
+- **The client tells the launcher window from a running game.** When a connect skips the auto-launch or a mod update because something is up, the message now says whether that is Harry Potter itself or the New Game / Load Game launcher window, and which one to close.
+- **A mod update that could not land holds the auto-launch.** When the apworld carries a newer mod build than your install and the update is refused (a game or the launcher window is up) or fails, the client no longer starts a game on the old build. Fix it and reconnect, or type `/play` to start the game as it is. While an older build is still bridged, the game shows an `AP: mod update ...` reminder every ten seconds.
+- **A refused write raises a popup.** When Windows will not let the client write into the install (almost always a `Program Files` install with the launcher not run as administrator), the client raises an error popup naming the folder and the fix, instead of a line in the log. The sound and music randomizers get the same popup.
+- **The WRONG INSTALL warning repeats.** A seed on the wrong install (an open castle seed on vanilla maps, or the reverse) now shows its warning every ten seconds, not once per level.
+
+### Logic and content changes
+- **Every Gold Card Room card needs Spongify, or Rictusempra with Flipendo.** That is the gate on the room's first room. In open castle, Rictusempra alone used to pass. Vanilla is unaffected in practice, since entering the room there already needs Flipendo.
+
+## Poptracker 1.0.9
+
+### Changed
+- Access rules regenerated for the Gold Card Room gate: Spongify, or Rictusempra with Flipendo.
+</content>
+    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v2.12.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.3.1</id>
+    <title>Mario Kart Wii v0.3.1</title>
+    <updated>2026-10-09T17:38:09+00:00</updated>
+    <author>
+      <name>toent</name>
+    </author>
+    <content>## Release Version 0.3.1: Deathlink&#13;
+Deathlink is here! Enabling it will send a death when you fall off the track. For receiving a death you will be picked up by lakitu and be respawned, respawn time is set in the YAML, of course the longer the respawn time the more punishing a death is. In future updates I will add an option for deathlink amnesty to make falling off a little less punishing for other players.&#13;
+&#13;
+### Changelog:&#13;
+- [APWorld] Added support for deathlink.&#13;
+- [APWorld] Added option to enable deathlink.&#13;
+- [APWorld] Added option to set deathlink respawn time.&#13;
+- [Client] Added support for deathlink.&#13;
+ &#13;
+**REQUIRES THIS NEW APWORLD**&#13;
+&#13;
+_Linux users, download the source code here to run the client._&#13;
+&#13;
+**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.3.0...v0.3.1</content>
+    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.3.1"/>
   </entry>
 </feed>

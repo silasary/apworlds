@@ -1,7 +1,8 @@
 # Chibi Robo Setup Guide
 
 ## Required Software
-- Archipelago Build of Chibi Robo from: [Chibi-Robo: Unplugged Randomization App](https://github.com/EverydaySimpleDev/Chibi-Robo-Randomizer)
+- Archipelago Build of Chibi Robo from: [Chibi-Robo: Plug Into Adventure AP World](https://github.com/EverydaySimpleDev/Archipelago)
+- Chibi Robo: Unplugged from: [Chibi-Robo: Unplugged Randomization App](https://github.com/EverydaySimpleDev/Chibi-Robo-Randomizer)
 
 ## Installation Procedures (Windows)
 
@@ -13,5 +14,5 @@
 ## Joining a MultiWorld Game
 
 1. After using the Chibi Robo Rando application launch the Chibi Robo Client
-2. Connect the Client to the Archipelago server
-3. The client will ask for your player name when joining
+   - You can now have the AP app open the .apcr file to auto open the current client 
+2. The client will autodetect your player info and connect to the server

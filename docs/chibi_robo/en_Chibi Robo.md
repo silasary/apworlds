@@ -18,7 +18,3 @@ You will need an NTSC-U (GGTE01) Chibi-Robo! Plug Into Adventure! ISO. Other ver
 Item flags / throwable junk are the only locations that are randomized. Coins and Coin locations are not included.
 
 I would recommend keeping open the upstairs areas to help with keeping play time shorter
-
-Know Issues
-- Some objects will respawn after picking them up. This is due to how the game handles its 'Junk / Waste' locations. Picking the item up a second time will not resend the check but still give you a copy of the item so using the tracker might make it easier to remember what items you picked up better.
-- If you pick up a key item (toothbrush, spoon, ship, etc) you need to first double-check the normal location for those items do not hold an important item otherwise the items that are placed there will not show up in game.

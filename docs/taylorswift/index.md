@@ -4,7 +4,7 @@ Taylor Swift&#x27;s discography as an archipelago integration where you get chec
 
 
 ## Downloads
-- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.2.5/taylorswift.apworld">Latest Version (1.2.5)</a>
+- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.2.6/taylorswift.apworld">Latest Version (1.2.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
