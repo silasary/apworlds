@@ -3,37 +3,63 @@
 
 ## Important
 
-As we are using BizHawk, this guide is only applicable to Windows and Linux systems.
+This guide is only applicable to Windows and Linux systems.
+To run this implementation, you need to run the following in order:
+ - Open the Shadowgate64 Client
+ - Patch your ROM
+ - Open your Emulator and wait until its connected
+ - Connect to your slot (AFTER your emulator is connected)
 
 ## Required Software and Hardware
 
--   BizHawk:  [BizHawk Releases from TASVideos](https://tasvideos.org/BizHawk/ReleaseHistory)
-    -   Version <b>2.9.1</b> and later are supported.
-    -   Detailed installation instructions for BizHawk can be found at the above link.
-    -   Windows users must run the prereq installer first, which can also be found at the above link.
--   A Shadowgate 64 ROM (English).
--   The github releases contains the shadowgate64 connector. Put this in your <b>Archipelago\data\lua</b> folder.
+- PC Emulation:
+    - Tested emulators and recommended settings:
+        -   BizHawk:  [BizHawk Releases](https://tasvideos.org/BizHawk/ReleaseHistory)
+            -   Version **2.10** and later are supported
+            -   Detailed installation instructions for BizHawk can be found at the above link
+            -   Windows users must run the prereq installer first, which can also be found at the above link
+        -   Project64 3.0: [Public Releases](https://www.pj64-emu.com/public-releases)
+            -   Version **3.0.1** supported
+            -   Default settings should work.
+            -   enable Input Plugin N-Rage if you are having issues setting up your controller.
+            -   disable debugging in Options > configuration > Debugging
+            -   to reduce lag:
+                1. Open the ROM
+                2. Options > Config: > Counter Factor = 0 or 1
+        -   Luna64: [Latest Releases](https://github.com/Luna-Project64/Luna-Project64/releases)
+            -   Version **3.6.5** tested
+            -   Emulate Frame Buffer need to be enabled:
+                - Options > Graphic Settings > Frame Buffer > Emulate Frame Buffer
+                - disable debugging in Options > configuration > Debugging
+            -   to reduce lag:
+                1. Open the ROM
+                2. Options > Config: > Counter Factor = 0 or 1
+        -   RMG: [Latest Releases](https://github.com/Rosalie241/RMG/releases)
+            -   Version **0.8.9** tested
+            -   Default settings should work.
+            -   to reduce lag:
+                1. Open the ROM
+                2. Settings > Game > Counter Factor = 0 or 1
+
+    - Supported emulators but untested (use at your own discretion)
+        -   simple64
+        -   Parallel Launcher
+        -   RetroArch (mupen64plus_next):
+            - For MacOS users, enable Settings > Network > Network Commands and leave the Network Command Port at 55355.
+        -   Gopher64
+        -   Ares
+        -   Project64 4.0
 
 ## Playing on BizHawk
-### Configuring BizHawk
 
 Once BizHawk has been installed, open EmuHawk and change the following settings:
 
--   Under Config > Customize, check the "Run in background" and "Accept background input" boxes. This will allow you to continue playing in the background, even if another window is selected.
--   Under Config > Hotkeys, many hotkeys are listed, with many bound to common keys on the keyboard. You will likely want to disable most of these, which you can do quickly using  `Esc`.
--   If playing with a controller, when you bind controls, disable "P1 A Up", "P1 A Down", "P1 A Left", and "P1 A Right" as these interfere with aiming if bound. Set directional input using the Analog tab instead.
--   Under N64 enable "Use Expansion Slot". (The N64 menu only appears after loading a ROM.)
--   Under Config -> Speed/Skip, I recommend playing on speeds between 150% or 200%.
+- Under Config > Customize, check the "Run in background" and "Accept background input" boxes. This will allow you to continue playing in the background, even if another window is selected
+- Under Config > Hotkeys, many hotkeys are listed, with many bound to common keys on the keyboard. You will likely want to disable most of these, which you can do quickly using  `Esc`
+- If playing with a controller, when you bind controls, disable "P1 A Up", "P1 A Down", "P1 A Left", and "P1 A Right" as these interfere with aiming if bound. Set directional input using the Analog tab instead
+- Under N64 enable "Use Expansion Slot". (The N64 menu only appears after loading a ROM.)
+- Under Config -> Speed/Skip, click "Audio Throttle" as this will fix the off pitch sounds while playing
 
 It is strongly recommended to associate N64 rom extensions (*.n64, *.z64) to the EmuHawk we've just installed. To do so, we simply have to search any N64 rom we happened to own, right click and select "Open with…", unfold the list that appears and select the bottom option "Look for another application", then browse to the BizHawk folder and select EmuHawk.exe.
 
-### Setup - BizHawk
-- Run Launcher.exe and select Shadowgate 64 Client
-- If this is your first time running this version, it will prompt for your Shadowgate 64 ROM
-- The patched rom is located in your Archipelago root folder
-    - The exact path is also printed on the Shadowgate 64 Client
-    - You can also click "Browse Files" in the Launcher which will take you to this folder
-- Connect the Archipelago Client with the server.
-    - To connect the client to the multiserver simply put  `<address>:<port>`  on the textfield on top and press `connect` (if the server uses password, then it will prompt after connection).
-- Open Bizhawk (2.9.1+) and open your patched Shadowgate 64 game
-- Once you are in the game title menu or game select screen, drag and drop the shadowgate64_connector lua script (which should be data/lua folder of Archipelago) onto the Lua console window.
+

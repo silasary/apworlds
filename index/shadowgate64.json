@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "jjjj12212"
+  ],
   "description": "Shadowgate 64: Trials of the Four Towers, also known simply as Shadowgate 64 is a sequel to the original Shadowgate.\nIts a first person puzzle solving adventure game.",
   "game": "Shadowgate 64",
   "github": "https://github.com/jjjj12212/Archipelago-Shadowgate64",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "V0.1": {
       "created_at": "2025-04-03T14:31:19Z",
@@ -18,6 +25,21 @@
       "title": "V0.1",
       "version_simple": "0.1",
       "world_version": "0.1"
+    },
+    "V1.0.1": {
+      "created_at": "2026-10-08T21:32:40Z",
+      "description": "\r\n# SETUP GUIDE FOR SHADOWGATE 64 ARCHIPELAGO\r\n\r\n## Important\r\n\r\nThis guide is only applicable to Windows and Linux systems.\r\nTo run this implementation, you need to run the following in order:\r\n - Open the Shadowgate64 Client\r\n - Patch your ROM\r\n - Open your Emulator and wait until its connected\r\n - Connect to your slot (AFTER your emulator is connected)\r\n\r\n## Required Software and Hardware\r\n\r\n- PC Emulation:\r\n    - Tested emulators and recommended settings:\r\n        -   BizHawk:  [BizHawk Releases](https://tasvideos.org/BizHawk/ReleaseHistory)\r\n            -   Version **2.10** and later are supported\r\n            -   Detailed installation instructions for BizHawk can be found at the above link\r\n            -   Windows users must run the prereq installer first, which can also be found at the above link\r\n        -   Project64 3.0: [Public Releases](https://www.pj64-emu.com/public-releases)\r\n            -   Version **3.0.1** supported\r\n            -   Default settings should work.\r\n            -   enable Input Plugin N-Rage if you are having issues setting up your controller.\r\n            -   disable debugging in Options > configuration > Debugging\r\n            -   to reduce lag:\r\n                1. Open the ROM\r\n                2. Options > Config: > Counter Factor = 0 or 1\r\n        -   Luna64: [Latest Releases](https://github.com/Luna-Project64/Luna-Project64/releases)\r\n            -   Version **3.6.5** tested\r\n            -   Emulate Frame Buffer need to be enabled:\r\n                - Options > Graphic Settings > Frame Buffer > Emulate Frame Buffer\r\n                - disable debugging in Options > configuration > Debugging\r\n            -   to reduce lag:\r\n                1. Open the ROM\r\n                2. Options > Config: > Counter Factor = 0 or 1\r\n        -   RMG: [Latest Releases](https://github.com/Rosalie241/RMG/releases)\r\n            -   Version **0.8.9** tested\r\n            -   Default settings should work.\r\n            -   to reduce lag:\r\n                1. Open the ROM\r\n                2. Settings > Game > Counter Factor = 0 or 1\r\n\r\n    - Supported emulators but untested (use at your own discretion)\r\n        -   simple64\r\n        -   Parallel Launcher\r\n        -   RetroArch (mupen64plus_next):\r\n            - For MacOS users, enable Settings > Network > Network Commands and leave the Network Command Port at 55355.\r\n        -   Gopher64\r\n        -   Ares\r\n        -   Project64 4.0\r\n\r\n## Playing on BizHawk\r\n\r\nOnce BizHawk has been installed, open EmuHawk and change the following settings:\r\n\r\n- Under Config > Customize, check the \"Run in background\" and \"Accept background input\" boxes. This will allow you to continue playing in the background, even if another window is selected\r\n- Under Config > Hotkeys, many hotkeys are listed, with many bound to common keys on the keyboard. You will likely want to disable most of these, which you can do quickly using  `Esc`\r\n- If playing with a controller, when you bind controls, disable \"P1 A Up\", \"P1 A Down\", \"P1 A Left\", and \"P1 A Right\" as these interfere with aiming if bound. Set directional input using the Analog tab instead\r\n- Under N64 enable \"Use Expansion Slot\". (The N64 menu only appears after loading a ROM.)\r\n- Under Config -> Speed/Skip, click \"Audio Throttle\" as this will fix the off pitch sounds while playing\r\n\r\nIt is strongly recommended to associate N64 rom extensions (*.n64, *.z64) to the EmuHawk we've just installed. To do so, we simply have to search any N64 rom we happened to own, right click and select \"Open with\u2026\", unfold the list that appears and select the bottom option \"Look for another application\", then browse to the BizHawk folder and select EmuHawk.exe.\r\n\r\n\r\n",
+      "download_url": "https://github.com/jjjj12212/Archipelago-Shadowgate64/releases/download/V1.0.1/shadowgate64.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1499c76d4e373d309a107393b52b533a1290f4c3f6fb5c6fe7792a4187507386",
+      "html_url": "https://github.com/jjjj12212/Archipelago-Shadowgate64/releases/tag/V1.0.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 71221,
+      "source_url": "https://api.github.com/repos/jjjj12212/Archipelago-Shadowgate64",
+      "tag": "V1.0.1",
+      "title": "V1.0.1",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
     }
   }
 }
