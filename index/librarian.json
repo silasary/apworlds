@@ -421,6 +421,21 @@
       "title": "Librarian-AP v3.0.0",
       "version_simple": "3.0.0",
       "world_version": "3.0.0"
+    },
+    "3.0.1": {
+      "created_at": "2026-10-08T15:24:28Z",
+      "description": "## Librarian-AP v3.0.1\r\n\r\nAn option to keep the base game's limits, and a name that would not display.\r\n\r\n**Existing runs are unaffected.** Nothing here changes a seed in progress, and a 3.0.0 YAML\r\nstill works: the new option defaults to off. Both changes apply to seeds generated with the\r\nnew apworld.\r\n\r\n## New: `vanilla_caps`\r\n\r\nBy default this randomizer makes you **stronger than the base game ever does**. Each magic\r\nskill can go up to five steps past its normal maximum through `<Skill> Mastery` items, and\r\n`+2` / `+3 Book Capacity` items let you carry up to 40 books instead of the game's 15.\r\n\r\n```yaml\r\nvanilla_caps: true   # default false\r\n```\r\n\r\nWith it on there are no Mastery or Book Capacity items: skills top out where the base game's\r\ndo and you carry at most 15 books. Their places go to filler. Fatigue traps stay either way.\r\n\r\n## Fix: a book title showing a box in the Archipelago client\r\n\r\n1B's *Prophecy : Angelic Self-Writing* keeps the game's full-width W, which the Archipelago\r\nclient's font cannot draw, so its items and locations showed a box. Names now use a plain W.\r\nSeeds generated with 3.0.0 keep the old spelling.\r\n\r\n## Updating\r\n\r\n> Extract the zip and drop `Librarian/` into your Steam install (overwrite). Drop\r\n> `librarian.apworld` into your Archipelago `custom_worlds/` folder. **Both are required.**\r\n> The title screen should read `LibAP v3.0.1`.\r\n\r\n## If something breaks\r\n\r\nPress F8, then send that session's log from `Mods\\Librarian-AP\\logs\\`, your YAML's\r\n`Librarian:` section, and one line on what you were doing.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/3.0.1/librarian.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d22f65cfee8f0234fc7beae3bade62cf24bf20bf75189ec9464256d23788a7f5",
+      "html_url": "https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/3.0.1",
+      "minimum_ap_version": "0.6.4",
+      "size": 87179,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/Librarian-AP",
+      "tag": "3.0.1",
+      "title": "Librarian-AP v3.0.1",
+      "version_simple": "3.0.1",
+      "world_version": "3.0.1"
     }
   }
 }

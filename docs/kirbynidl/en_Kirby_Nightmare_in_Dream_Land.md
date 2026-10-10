@@ -7,13 +7,13 @@ Welcome to the in-progress Kirby Nightmare in Dream Land Archipelago implementat
 
 The goal of Kirby Nightmare in Dream Land is to collect all pieces of the Star Rod and defeat Nightmare at the end of the Fountain of Dreams. By default, all levels are unlocked, but pieces of the Star Rod are required to enter Boss levels. The number of Star Rod pieces that exist can be adjusted in the options, with a minimum of 7 and maximum of 56. The number of pieces that are absolutely required can be less than the total, also adjustable in the options (7 is still the minimum required). The cumulative piece requirement to fight each boss is evenly distributed (ie 2 for W1, 4 for W2, 6 for W3 with 14 total pieces) with any remainder going to the final boss requirement. This requirement per boss is NOT displayed in game, so double check your options if unsure. 
 
-Clearing every normal level, boss, and Arena challenge will grant a check, as well as every Big Switch. Every food item and 1up in normal levels is also a check. Maxim tomatoes given in arenas are not checks (only clearing the Arena itself is), and 1ups given out in minigames are NOT checks. 
+Clearing every normal level, boss, and Arena challenge will grant a check, as well as every Big Switch. Every food item and 1up in normal levels is also a check. Maxim tomatoes given in arenas are not checks (only clearing the Arena itself is), and 1ups given out in minigames are NOT checks. To help track completion in-game, the door to each level in the overworld will change color from flashing red to yellow if all locations from the level (items, Big Switch, and level clear) have been checked/collected. 
 
 Kirby cannot obtain any copy abilities until that copy ability is unlocked via Archipelago. By default, Kirby also begins with a reduced number of max health segments, with more unlockable via AP vitality items. You may also use vanilla health values by reconfiguring the options to start with all 6 segments and no AP vitality items. Kirby may also receive Pep Drinks, Maxim Tomatoes, 1ups, and invincibility Candy at any time in a level via the AP client. Items will not take affect (and their SFX will not play) until you enter a level.  
 
 All items, inlcuding client-side unblockers (door keys, unlocked abilities, Star Rod pieces) will play a specific sound effect when received based on their item type (ability, door key, Star Rod...). However, you must watch the AP tracker feed to know which specific item was received, as well as what items were sent when you check locations. 
 
-Kirby Nightmare in Dreamland automatically saves your progress after every level and boss clear. Big Switches will always appear in levels, even if their location has already been checked. Consumable items will also reappear, but not in the same play session. If you quit and begin a new session, the consumable items awarded in previous sessions will NOT be awarded again. As in, the items awarded by the client DO sync between sessions by use of in-game save RAM. 
+Kirby Nightmare in Dreamland automatically saves your progress after every level and boss clear. Big Switches will always appear in levels, even if their location has already been checked. Consumable items will also reappear, but not in the same play session. If you quit and begin a new session, the consumable items given in previous sessions will NOT be awarded again. As in, the items awarded by the AP client DO sync between sessions by use of in-game save RAM. To help in revisiting levels however, in-level pickups WILL award their vanilla HP/lives/invincibility if collected a second time. 
 
 Make sure to connect to the client before exiting the title screen / file menu. 
 I canot guarantee anything in this mod is compatible with the vanilla multiplayer features. 
@@ -48,13 +48,12 @@ Specifically, the client detects the Goal Event via the "moon explosion" cutscen
 ### Note on Files: 
 Starting a new file with collected items will cause all collected items to be awarded to the new file as if they were newly sent, including HP items
 
-### Notes on Offline Play
-- You must be connected to receive items and send checks. Any checks performed offline will not take effect; there is no snap-back/catch-up procedure for locations.
-- In-level pickup items will not respawn on the same play session. You must restart the game to collect them again. 
-
 
 
 ## Options
+
+- `Death Link`
+    You probably know what this is. If this is enabled and you die, everyone else with the setting enabled also dies. The converse is true as well -- if they die, you die! 
 
 - `Number of Star Rod Pieces`:
     Set the number of Star Rod Pieces in the item pool (minimum 7)
@@ -62,6 +61,8 @@ Starting a new file with collected items will cause all collected items to be aw
 - `Number of Required Star Rod Pieces`
     Set the raw number of Star Rod Pieces to unlock the World 7 boss door and complete the game.
     The cumulative requirement for every other world's boss door will be this number divided by 7, rounded down.
+    ie, if there are 30 required pieces, W1 Boss requires 4 pieces (30/7, rounded down), W2 Boss 8 pieces, W3 12...
+    Finally, the W7 boss will still require all 30 pieces
 
 - `Percent of Required Star Rod Pieces`
     Set the percent of Star Rod Pieces in the item pool required to unlock the World 7 boss door and complete the game

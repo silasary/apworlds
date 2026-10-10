@@ -1,6 +1,6 @@
 # GTFO
 
-
+A World subclass that provides helpers for interacting with the rule builder
 
 
 ## Downloads

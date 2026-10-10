@@ -1,9 +1,12 @@
 # V Rising
 
 ## Latest
-- <a href="https://github.com/dghalfor/V-Rising-APWorld/releases/download/0.3.2/vrising.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/dghalfor/V-Rising-APWorld/releases/download/0.3.3/vrising.apworld">Latest Version (0.3.3)</a>
 
 ## All Versions
+
+#### v0.3.3
+- <a href="https://github.com/dghalfor/V-Rising-APWorld/releases/download/0.3.3/vrising.apworld">https://github.com/dghalfor/V-Rising-APWorld/releases/download/0.3.3/vrising.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/dghalfor/V-Rising-APWorld/releases/download/0.3.2/vrising.apworld">https://github.com/dghalfor/V-Rising-APWorld/releases/download/0.3.2/vrising.apworld</a>

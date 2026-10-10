@@ -6,6 +6,7 @@
     - Knowing how to edit YAMLs manually is a hard requirement, as this implementation features some non-standard YAML settings which the Web UI and Options Creator cannot handle.
 - Garry's Mod
 - Half-Life 2 (Not strictly required, but the default configs included are mainly made for HL2 maps, so you'll want it for your test run.)
+    - You specifically need the maps from the Anniversary Update, if you're not on the default public branch you may need to switch back to it.
 - [GWSockets](https://github.com/FredyH/GWSockets/releases) - More information on which version to grab can be found further down.
 - [GMAP](https://github.com/ChrisCj8/gm_ap/releases)
 - [apAdventure itself](https://github.com/ChrisCj8/ap_adventure/releases)
@@ -53,7 +54,7 @@
 
 ### Recommendations
 
-I recommend disabling all unneeded GMod addons while playing apAdventure. While apAdventure is designed to be playable alongside as many addons as possible, you will be changing between maps quite often and loading times can get very long if the player has too many addons installed.
+I recommend disabling all unneeded GMod addons while playing apAdventure. While apAdventure is designed to be playable alongside as many addons as possible, you will be changing between maps quite often and loading times can get very long if the player has too many addons enabled.
 
 ## Hosting
 
@@ -65,7 +66,7 @@ Whenever a Map Config is saved or Item Set is processed, GMod will write logic d
 
 Logic data from different players can be "merged" together, as long as all Map Groups and Item Sets using the same name are identical between all players.
 
-Note that if the host DOES have the GMod path set up in their `host.yaml` and is also loading logic data from `gmod_apadv/logic/`, the generator will prioritize loading the files from the GMod folder over the ones in the Archipelago folder. Logic data in these folders can also override the logic data included in the apworld.
+Note that if the host DOES have the GMod path set in their `gmodpath.txt` file and is also loading logic data from `gmod_apadv/logic/`, the generator will prioritize loading the files from the GMod folder over the ones in the Archipelago folder. Logic data in these folders can also override the logic data included in the apworld.
 
 ## Playing
 
@@ -126,3 +127,4 @@ apAdventure allows custom items to be defined through Lua, but this feature is c
     - 2 - Super Admins and Listen Host only
 - `adadv_slot_connect` - If connection info has already been sent to the GMod Server, (re)connects to the Archipelago Server. Does nothing otherwise. Super Admins and Listen Host only.
 - `adadv_slot_disconnect` - Disconnects the GMod Server from the Archipelago Server if it's connected. Does nothing otherwise. Super Admins and Listen Host only.
+- `apadventure_mapiconmat_resolution` - What the resolution for Map Icon Materials should be, as a power of two. (8 = 256, 9 = 512, ...) Map Icons are rarely bigger than 512x512, so there's not much of a benefit to setting this higher than 9. Won't update until you load another map. Clientside.

@@ -1,9 +1,17 @@
 {
+  "authors": [
+    "KuroLynx",
+    "EDGN"
+  ],
   "description": "Minecraft Randomizer by KuroLynx (Mod by EDGN)",
   "game": "AEMinecraft",
   "github": "https://github.com/KuroLynx/AEMinecraft",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "v0.1.0": {
       "created_at": "2026-07-06T17:53:53Z",
@@ -145,6 +153,22 @@
       "title": "v0.7.0-rc.1",
       "version_simple": "0.7.0",
       "world_version": "0.7.0rc1"
+    },
+    "v0.7.0-rc.1r2": {
+      "created_at": "2026-10-08T21:15:38Z",
+      "description": "## AEMinecraft v0.7.0-rc.1\n\n**Pre-release.** This is a test build of v0.7.0, so expect rough edges. Please report anything odd. The new in-game report button (see below) makes that a two-click job. Stay on v0.6.2 if you want a stable game.\n\n**Hotfix (2026-10-09).** The first `minecraft_aem.apworld` uploaded here had an incomplete manifest. Archipelago loaded it as version 0.0.0, so generation rejected every YAML from the template with *\"required version of world \"AEMinecraft\" is at least 0.7.0, however world is of version 0.0.0\"*. The apworld has been replaced; if you (or your host) downloaded it before, download it again. The mod jars and the YAML template are unchanged.\n\nv0.7.0 brings Minecraft 26.2 and 26.3, a rewritten logic engine, and a long list of checks that now ask for what the game actually requires.\n\n### New\n\n- **Minecraft 26.1.2, 26.2 and 26.3.** One mod jar per Minecraft version; download the one that matches your game. Each player picks their version in the YAML:\n  ```yaml\n  minecraft_version: '26.3'\n  ```\n  The mod refuses to enter a world generated for a different Minecraft version, naming both. With BACAP on, install the pack release made for your version: **1.20.3** for 26.1.2, **1.21** for 26.2, **1.21.1** for 26.3.\n- **Report a logic error from the advancement screen.** Click the book button, then the advancement that looks wrong. Choose \"wrong logic\" or \"should not be accessible yet\" and add a note if you want. The report is saved to `<world>/archipelago/logic_reports/` with everything needed to reproduce it. Send that folder along with your report.\n- **2x2 crafting is gated too.** When the crafting table is a Knowledge gate, your own 2x2 inventory grid crafts nothing until you receive **Knowledge: Crafting Table**, planks and sticks included. This is the new `inventory_crafting` route of `item_gate_behavior`, on by default.\n- **Knowledge: Composter.** A new Knowledge gate: filling or emptying a composter, including a village one, needs it.\n- **Generation progress.** Generating now prints each AEMinecraft player's steps and how long they took.\n\n### Changed\n\n- **The Biome Finder covers every biome-bound thing.** The common biomes are plains, forest, birch forest, river, ocean and beach. Anything found only outside them needs the Biome Finder when it is enabled, or a structure that contains it. That covers blocks and mobs alike: cactus, bamboo, sweet berry bushes, sea pickles, powder snow, husks, camels, foxes, llamas, polar bears, armadillos and more. Nether and End content is gated by reaching that dimension instead.\n- **Inventory Lock: locked slots stop you wearing or holding, not obtaining.** You can still pick up armor with the armor slots locked; you just can't put it on. Checks that need you to wear or hold something now wait for that slot. **`mode: fixed` is removed**: its permanently locked slots made some checks impossible.\n- **Traps arrive 10\u201320 s apart** (was 30\u201360 s). Still never two at once.\n\n### Fixed\n\n**Checks that were in logic too early:**\n\n- **Anything that needs an item in your hand** now needs a free inventory slot to hold it. With every slot locked at the start, the first Progressive Inventory Slot could otherwise land on a check you couldn't do.\n- **Stacks need a source that doesn't run dry.** A check asking for 16 or more of something no longer counts a few chests. Master Coal Miner and Paleontologist need a renewable source.\n- **Tools.** Several routes reached pickaxe-gated items without a pickaxe. Blocks that only drop to the right tool now ask for it: shovels for snow, a sword or shears for cobwebs, shears for glow lichen, grass and dead bushes.\n- **Riding a nautilus** needs it tamed, so a pufferfish (Coralful Shell).\n- **The Devil's Distance and Subspace Bubble** need the Overworld. On a Nether start they were in logic before it.\n- **Core Keeper** needs the Trial Chambers, **Flashy Items** a glow squid, and **You're doing it wrong** a shulker.\n- **Concrete** needs its powder and dye. A **worn anvil** needs an anvil.\n- **Villager trades** are priced at the trade level that offers them.\n\n**Mod:**\n\n- `bacap_rewards: false` could leave BACAP's rewards on in a brand new world.\n- The swap-offhand key, the screen swap keys and right-click equipping could put items into locked slots.\n\n### Upgrading\n\n- **Update both the apworld and the mod.** v0.7.0 seeds use content and gates the v0.6.2 mod doesn't know.\n- **YAML:**\n  - `minecraft_version` is new. Leaving it out means **26.1.2**. Write it quoted, as above.\n  - `inventory_lock: mode: fixed` is no longer accepted. Use `progressive` or `disabled`.\n  - `item_gate_behavior` gains `inventory_crafting` (default `true`). It only matters when the crafting table is in your `knowledge_gates`.\n  - The template now pins `requires: game: AEMinecraft: 0.7.0`, so an older apworld refuses it.\n- **Seeds generated with v0.6.x** should be finished with the v0.6.2 mod.\n\n### Worth testing in this RC\n\n- **Minecraft versions:** 26.2 and 26.3 worlds, joining and playing, with and without BACAP.\n- **Gates:** the 2x2 crafting gate with Knowledge: Crafting Table gated, the inventory slot locks, and the composter gate.\n- **Report button:** one report sent from the advancement screen.\n\n",
+      "download_url": "https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.1/minecraft_aem.apworld",
+      "has_manifest": true,
+      "hash_sha256": "16b83ebfbbb7ba50f6a8d7906f37f4cae6b9033abf0e5b96196133d2c0e222de",
+      "html_url": "https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 1225149,
+      "source_url": "https://api.github.com/repos/KuroLynx/AEMinecraft",
+      "tag": "v0.7.0-rc.1r2",
+      "title": "v0.7.0-rc.1",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0.post2"
     }
   }
 }

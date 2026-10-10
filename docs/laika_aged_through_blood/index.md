@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/download/v-0.1.5/laika_aged_through_blood.apworld">Latest Version (0.1.5)</a>
+- <a href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/download/v-0.1.6/laika_aged_through_blood.apworld">Latest Version (0.1.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
