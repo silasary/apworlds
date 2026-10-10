@@ -8,6 +8,9 @@
 #### v0.7.0.post2
 - <a href="https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.1/minecraft_aem.apworld">https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.1/minecraft_aem.apworld</a>
 
+#### v0.7.0rc2
+- <a href="https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.2/minecraft_aem.apworld">https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.2/minecraft_aem.apworld</a>
+
 #### v0.7.0rc1
 - <a href="https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.1/minecraft_aem.apworld">https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.1/minecraft_aem.apworld</a>
 

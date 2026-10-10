@@ -4,7 +4,7 @@ HoloCure is a game inspired by Vampire Survivors with the Hololive Production St
 
 
 ## Downloads
-- <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.2.0/holocure.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.2.1/holocure.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

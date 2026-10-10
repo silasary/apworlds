@@ -2,107 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-10T12:15:16.134093+00:00</updated>
+  <updated>2026-10-10T18:22:13.703802+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.1</id>
-    <title>Creeper World 4 v0.2.1</title>
-    <updated>2026-10-06T20:32:10+00:00</updated>
-    <author>
-      <name>droha</name>
-    </author>
-    <content>Matched pair: install the plugin zip AND regenerate with this `cw4.apworld`. The plugin and the apworld share a version number and must match.
-
-Requires Archipelago **0.6.7 or newer**.
-
-**Existing yamls keep working**, and a yaml that names no new setting means what it meant before. Seeds do change: a solo or all-Creeper-World-4 seed number generates a different layout than it did in v0.2.0, because the early weapon is now actually placed early.
-
-
-- **Fixed: `early_weapon` did nothing when every player was Creeper World 4**,
-  solo included, from v0.1.3 to v0.2.0. The option asks Archipelago to place
-  the chosen weapon - and a second mission unlock - in the checks you can reach
-  with nothing. But on those seeds the world places its own progression first,
-  so it can retry where Archipelago's fill would give up, and it took both items
-  out of the pool before Archipelago looked for them. Nothing warned. Measured
-  over 10,000 solo seeds: the chosen weapon came first on 38 percent of them,
-  the early unlock on 11. The world now places both itself, first.
-- **Fixed: in a multiworld with other games, a narrow opening asked for
-  nothing early.** Casual logic at 2 starters, or a SPAN draw with only one
-  check open at the start, stood its requests down for a bootstrap that only
-  runs when every player is Creeper World 4. 13 to 48 percent of CW4 players in
-  those multiworlds got neither. They now get the requests. When only one check
-  is open, the mission unlock gets it.
-- **Measured, not assumed.** A new tool, `tools/audit/earlysweep.py`, generates
-  through the same path a player's seed takes and checks where the items
-  actually LAND. 10,000 seeds in each of seven shapes - solo, two and four CW4
-  players, and CW4 beside ChecksFinder, VVVVVV, Meritous and Timespinner: 0
-  generation failures, 0 unreachable or unbeatable seeds, and the weapon and
-  the unlock early in every one that asked. As a side effect the world's own
-  fill now has to retry 7 to 20 times less often.
-- **Placements change.** A solo or all-CW4 seed number generates a different
-  layout than it did in v0.2.0, and so does a mixed multiworld whose CW4
-  opening is narrow; any other mixed multiworld is unchanged.
-  `tools/span-off-parity.sh` and `tools/refactor-parity.sh` report the
-  difference, by design.
-- **The yaml is short now.** `Creeper World 4.yaml` used to be the template
-  Archipelago generates, 635 lines of its own boilerplate and of notes written
-  for whoever maintains the world. It is now written by hand, 120 lines: each
-  option at its default with a line or two on what it does and the values it
-  takes, in the order of the options page - Archipelago's own progression
-  balancing and accessibility first, as in its official template, then the
-  goal and logic, traps, energy upgrades and ERNs. The descriptions on the options page are
-  rewritten for players as well; the design notes moved into the code.
-- **New: `logic_difficulty: easy`.** Casual asks for a Sniper OR a Missile
-  Launcher from We Were Never Alone (mission 6) onward. Easy asks the same until
-  The Experiment (mission 13) - the designer's "small spike in map difficulty",
-  where the worksheet calls snipers, missiles and a cannon over a mortar all
-  worth having - and from there all four of Sniper, Missile Launcher, Cannon
-  and Mortar. Like casual it counts by story number, so every SPAN map gets all
-  four, and it gates every check on those missions except the free caches. The
-  in-game tracker needs no update: it reads the requirements from the seed, so
-  a check missing one of the four shows yellow. Measured over 21,000 seeds in
-  seven multiworld shapes - solo, two and four CW4 players, and CW4 beside one
-  to four other games: 0 generation failures, and the early weapon still lands
-  early.
-- **Four options that do nothing are hidden** from the options page and the
-  yaml: `trap_weight_emitter_overdrive` and the three `filler_*_weight`
-  options. A yaml that still names them generates as before.
-
-</content>
-    <link href="https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/tag/bkclown-v1.1.2</id>
-    <title>BKClown v0.0.1r2</title>
-    <updated>2026-10-06T20:47:16+00:00</updated>
-    <author>
-      <name>creative_bananaman</name>
-    </author>
-    <author>
-      <name>Fewffwa</name>
-    </author>
-    <content>## Bugfixes:&#13;
-- Fixed Logic&#13;
-&#13;
-## Requirements:&#13;
-&#13;
-- A Steam Copy of FFPS (Freddy Fazbear's Pizzeria Simulator)&#13;
-&#13;
-- Windows&#13;
-&#13;
-## Setup:&#13;
-&#13;
-- Create a folder named "BKCLOWN" in your main archipelago folder (or launching the client should do this automatically).&#13;
-- Move your Steam copy of FFPS into the folder.&#13;
-- Open the client, and run /patch.&#13;
-- Open up the .exe titled BKCLOWN.exe and connect to your archipelago server in the top bar!&#13;
-- Enjoy!&#13;
-</content>
-    <link href="https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/tag/bkclown-v1.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H2</id>
     <title>Deadlock v1.2.0r2</title>
@@ -528,7 +432,7 @@ New to the game? Check out the [FAQ](https://discord.com/channels/73120530124780
   </entry>
   <entry>
     <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.6</id>
-    <title>Ys Origin v1.9.2r4</title>
+    <title>Ys Origin v1.9.2r2</title>
     <updated>2026-10-08T17:40:25+00:00</updated>
     <author>
       <name>4rtefakt</name>
@@ -671,7 +575,7 @@ Also, you most likely won't be able to finish any old runs you've already starte
   </entry>
   <entry>
     <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.7</id>
-    <title>Ys Origin v1.9.2r2</title>
+    <title>Ys Origin v1.9.2r3</title>
     <updated>2026-10-08T18:10:00+00:00</updated>
     <author>
       <name>4rtefakt</name>
@@ -716,7 +620,7 @@ Checked against the walkthrough for all three characters:
   </entry>
   <entry>
     <id>https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-1.2.2</id>
-    <title>Slay The Princess v1.0.0r2</title>
+    <title>Slay The Princess v1.0.0r3</title>
     <updated>2026-10-08T18:50:37+00:00</updated>
     <author>
       <name>Onilaf</name>
@@ -1437,6 +1341,54 @@ Added path renaming and added path ordering as slot data. Fixed some bugs, inclu
     <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.4.0-rc2"/>
   </entry>
   <entry>
+    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.4.0</id>
+    <title>Kirby &amp; The Amazing Mirror v0.4.0</title>
+    <updated>2026-10-10T04:18:01+00:00</updated>
+    <author>
+      <name>Harrison Sherwin</name>
+    </author>
+    <content>## v0.4.0
+
+### New Features
+- Added `minimum_health` and `maximum_health` YAML options for a custom starting/final HP capacity (Issues #778, #947). Defaults remain 6/10; all starting/final ranges within 1..10 HP are supported with up to nine unique Vitality Counter upgrades. Existing One-Hit Mode presets override these options.
+- mGBA now supported as an optional emulator.
+- All minor chests are added as locations and no longer provide their native item.
+- Spray Paints and Music Sheets added as AP items.
+- Added an `/abilities` client command that lists the abilities currently unlocked for the slot (Issue #891, PR #951).
+- Added a new option: `enemy_health_multiplier`. Scale all enemies' health values between 50% to 500% of the original game. It defaults to 100% which matches the original game (Issue #880).
+- Added `random_color_per_room` to Starting Kirby Color. It chooses an initial supported palette at generation, then changes to a different supported palette whenever the connected BizHawk client observes Kirby enter a different room (Issue #857).
+- Added four progression items that independently open the walls controlled by those levers. Pulling a lever now sends its AP location check without opening the wall; receiving the matching Lever Wall item sets the native wall-unlock state instead (Issue #859).
+
+### Improvements
+- Ability unlock gating also applies at the final native ability commit, after roulette and other pending-ability writes (Issue #892).
+- Unused Vitality Counters are replaced through the existing filler/trap policy while all vitality-chest checks remain available.
+- The Tutorial World Map - Big Chest location check is now sent during the tutorial; item delivery remains paused until normal gameplay begins (Issue #868).
+- Consolidated `defeat_random_hidden_area_boss` and `defeat_configured_area_boss` into the canonical `defeat_area_boss` goal. `configured_area_boss: random` now uses Archipelago's standard `Choice` randomization, the old `defeat_configured_area_boss` name remains a safe YAML alias, and all eight boss-to-area mappings are corrected (Issue #872).
+- Generated YAML documentation now shows the scalar `configured_area_boss: random` and `starting_kirby_color: random` shorthands and explains how they replace the generated concrete weight mappings (Issue #872).
+
+### Known Limitations
+- Progression: The entire game is still only two spheres. This means you can complete almost the entirety of Kirby and the Amazing Mirror without ever having to receive an item, except open the Dimension Mirror. In other words, you can do everything in the game except defeat Dark Mind without ever receiving an item from another player. This is a consequence of the original game design. We have plans to gate your progression in other ways, but they all require coding/hacking in intentional blockers.
+- Use newly generated ROM patches for offline custom health initialization; older patches need a same-seed rebuild to embed health bounds. Client reconciliation remains required for authoritative AP ownership. Full gameplay coverage of every custom-health interaction remains pending.
+- Kirby Color: random_color_per_room changes Kirby's color but does not update the corresponding UI element colors.
+- Localization: Only the North American ROM is supported. All AP notifications are in English.
+- Native sprites and animations: Chests still show their original item sprite and collection animation. Statues still show their original ability.
+- mGBA notifications appear as plain text in the **Archipelago Connector** scripting panel, which must be visible. They do not appear over the game image.
+
+### Bug Fixes
+
+- Boss checks were mapped incorrectly for the `defeat_configured_area_boss` goal. That's been fixed (Issue #893).
+- Adds cutter to the base ability pool to make sure players can cut the drop down platforms. (Issue #894)
+- Preserve locally found ability unlocks after reconnecting by requesting the full received-item history from the server (Issue #910).
+
+### Internal Changes
+- Added shared health-range validation, full supported-range item-pool coverage, client reconciliation regression tests, and YAML/slot-data contracts without changing payload offsets or item IDs.
+- Added pinned, checksum-verified Archipelago generation fuzzing with a strict local launcher, a pull-request/manual CI workflow, and retained failure artifacts (Issue #898).
+- `starting_kirby_color` now uses the same standard Archipelago `Choice` literal `random`; the former world-specific `random_color` sentinel has been removed (Issue #872).
+- Split Kirby color catalog validation into focused helpers so Flake8 complexity checks remain meaningful without suppressing C901 (Issue #872).
+</content>
+    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.4.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.42</id>
     <title>Mental Omega v0.6.6r2</title>
     <updated>2026-10-10T10:39:15+00:00</updated>
@@ -1459,5 +1411,36 @@ Note to Coop:&#13;
 This is *only* working currently via a LAN Connection so you will need to use something like ZeroTier, Hamachi whatever exists. &#13;
 In Shopmode each player uses their Playerprofile and keeps their unlocks, in Gridmode you share the same units/buffs etc.</content>
     <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.42"/>
+  </entry>
+  <entry>
+    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.2</id>
+    <title>AEMinecraft v0.7.0rc2</title>
+    <updated>2026-10-10T13:16:44+00:00</updated>
+    <author>
+      <name>KuroLynx</name>
+    </author>
+    <author>
+      <name>EDGN</name>
+    </author>
+    <content>## AEMinecraft v0.7.0-rc.2
+
+**Pre-release.** Second test build of v0.7.0. Stay on v0.6.2 if you want a stable game.
+
+For everything new in v0.7.0, see the **[v0.7.0-rc.1 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1)**. This RC only changes the apworld; the mod is the same code as rc.1, rebuilt with the new version number.
+
+### Fixed
+
+- **Generation hung on some BACAP slots.** With structures and mobs locked, glitch logic could take minutes or never finish building. That step now takes a couple of seconds.
+- **Same seed, different logic.** The exported logic depended on Python's hash seed, so two runs of the same seed could ship slightly different rules. It is now identical every time. Item placement was never affected.
+
+### Faster
+
+- **BACAP multiworlds generate several times faster.** The `advancements_required` goal check stops as soon as enough advancements are reachable, and rule evaluation and logic minimisation do less work. Same seeds give the same placement and slot data as before.
+
+### Upgrading from rc.1
+
+- **Replace the apworld.** The rc.1 mod jars and YAMLs keep working with it, but you may as well grab the rc.2 jar.
+</content>
+    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.2"/>
   </entry>
 </feed>

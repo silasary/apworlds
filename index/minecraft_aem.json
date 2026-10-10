@@ -169,6 +169,22 @@
       "title": "v0.7.0-rc.1",
       "version_simple": "0.7.0",
       "world_version": "0.7.0.post2"
+    },
+    "v0.7.0-rc.2": {
+      "created_at": "2026-10-10T13:16:44Z",
+      "description": "## AEMinecraft v0.7.0-rc.2\n\n**Pre-release.** Second test build of v0.7.0. Stay on v0.6.2 if you want a stable game.\n\nFor everything new in v0.7.0, see the **[v0.7.0-rc.1 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1)**. This RC only changes the apworld; the mod is the same code as rc.1, rebuilt with the new version number.\n\n### Fixed\n\n- **Generation hung on some BACAP slots.** With structures and mobs locked, glitch logic could take minutes or never finish building. That step now takes a couple of seconds.\n- **Same seed, different logic.** The exported logic depended on Python's hash seed, so two runs of the same seed could ship slightly different rules. It is now identical every time. Item placement was never affected.\n\n### Faster\n\n- **BACAP multiworlds generate several times faster.** The `advancements_required` goal check stops as soon as enough advancements are reachable, and rule evaluation and logic minimisation do less work. Same seeds give the same placement and slot data as before.\n\n### Upgrading from rc.1\n\n- **Replace the apworld.** The rc.1 mod jars and YAMLs keep working with it, but you may as well grab the rc.2 jar.\n",
+      "download_url": "https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.2/minecraft_aem.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8fac061041cde5fcf37f081ea08495b38e4d4962e85cd90fd81d0c705a14312c",
+      "html_url": "https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 1228705,
+      "source_url": "https://api.github.com/repos/KuroLynx/AEMinecraft",
+      "tag": "v0.7.0-rc.2",
+      "title": "v0.7.0-rc.2",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0rc2"
     }
   }
 }

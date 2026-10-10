@@ -1,9 +1,12 @@
 # Cult of the Lamb
 
 ## Latest
-- <a href="https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/download/v0.9.3/cult_of_the_lamb.apworld">Latest Version (0.9.3)</a>
+- <a href="https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/download/v0.9.4/cult_of_the_lamb.apworld">Latest Version (0.9.4)</a>
 
 ## All Versions
+
+#### v0.9.4
+- <a href="https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/download/v0.9.4/cult_of_the_lamb.apworld">https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/download/v0.9.4/cult_of_the_lamb.apworld</a>
 
 #### v0.9.3
 - <a href="https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/download/v0.9.3/cult_of_the_lamb.apworld">https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/download/v0.9.3/cult_of_the_lamb.apworld</a>
