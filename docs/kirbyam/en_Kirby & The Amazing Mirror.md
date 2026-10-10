@@ -88,6 +88,37 @@ Archipelago resolves each `random` value to one concrete choice during option pa
 
 
 
+### Custom health
+
+`minimum_health` sets Kirby's starting HP capacity and `maximum_health` sets the
+capacity after every Vitality Counter. Both accept whole numbers from 1 to 10.
+The defaults are 6 and 10. Set both values together, for example:
+
+```yaml
+minimum_health: 8
+maximum_health: 10
+one_hit_mode: off
+```
+
+This starts with 8 HP and places two unique Vitality Counters, each adding 1 HP.
+Equal values give a fixed capacity with no counters. The maximum must be at
+least the minimum and at most 9 HP higher: there are nine unique counters.
+Unsupported pairs fail generation with an explanation; they are not silently
+changed. If using weighted/random values, every possible pair must satisfy
+these constraints.
+
+Minimum Health is a starting capacity, not a damage floor. Kirby can still
+lose HP and die. Existing One-Hit Mode presets override both custom values:
+`exclude_vitality_counters` means 1 HP throughout; `include_vitality_counters`
+means a 1 HP start with four upgrades to 5 HP.
+
+As with One-Hit Mode, custom health applies after the tutorial while connected
+to the current BizHawk client. Native health can briefly reappear during room
+changes, respawns, and vitality grants until the next client poll. Disconnected
+play does not maintain custom limits. Nonstandard HP-meter visuals still need
+in-game validation.
+
+
 ## What does another world's item look like in Kirby \& The Amazing Mirror?
 
 

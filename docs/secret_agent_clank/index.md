@@ -9,7 +9,7 @@ are all placeholder content and every game-memory address is unconfirmed
 
 
 ## Downloads
-- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.6/secret_agent_clank.apworld">Latest Version (0.0.6)</a>
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.7/secret_agent_clank.apworld">Latest Version (0.0.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

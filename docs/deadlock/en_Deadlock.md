@@ -5,7 +5,7 @@ A **meta-progression randomizer** for [Deadlock](https://store.steampowered.com/
 ## How it works
 
 - **Items:** Progression items that unlock playable heroes (e.g. Unlock Seven, Unlock Wraith). You must have received the unlock before you can submit a match played as that hero.
-- **Locations:** Checked by the client when you submit a match. They include: winning as each hero (3 checks per hero), matches played, total wins, Soul Urn, neutral camps, Sinner’s Sacrifice jackpots, kills, assists, souls, Key Player/MVP, boss/player damage, denies, and last hits. Progress is cumulative from the start of your seed.
+- **Locations:** Checked by the client when you submit a match. They include: winning as each hero (3 checks per hero), matches played, total wins, Soul Urn/Rift (Shared Check), neutral camps, Sinner’s Sacrifice jackpots, kills, assists, souls, Key Player/MVP, boss/player damage, denies, and last hits. Progress is cumulative from the start of your seed.
 - **Goal:** Either "Win with N unique characters" or "Win N matches total." The client checks the **Goal** location automatically when you meet the condition.
 
 ## What you need

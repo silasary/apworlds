@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H1/deadlock.apworld">Latest Version (1.2.0r2)</a>
+- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H3/deadlock.apworld">Latest Version (1.2.0r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
