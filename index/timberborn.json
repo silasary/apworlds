@@ -9,6 +9,7 @@
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
+    "repo_url",
     "world_version"
   ],
   "versions": {
@@ -91,6 +92,22 @@
       "title": "v0.0.5 - Pre-Alpha Playtest",
       "version_simple": "0.0.5",
       "world_version": "0.0.5"
+    },
+    "v0.1.0": {
+      "created_at": "2026-10-01T19:18:35Z",
+      "description": "Timberborn Archipelago 0.1.0 is a test build for Timberborn 1.1. It needs 1.1 and won't load on 1.0. The full notes and a setup guide are on AP-Pie: [release notes](https://ap-pie.com/timberborn/releases/0-1-0), [setup guide](https://ap-pie.com/timberborn/setup).\n\nWhat's in it:\n\n- Ten new 1.1 buildings. Renamed buildings keep their items, and item and location IDs didn't change.\n- You start with the Forester, Stairs and Platform.\n- New options for resource milestones, resource packages, where goods are delivered, and trap percentage and weights. `logic_difficulty` and `drought_difficulty` are gone, but old YAMLs still generate.\n- Logic now expects drought and badtide defences before long goals.\n- Fixed: the Hungry and Thirsty traps, droughts and badtides counting when they end, old traps firing on a new colony, the Water Storage goal and the Sluice.\n\nPlease generate a new seed and start a new colony. I haven't tested 0.0.x seeds or saves with this build.\n\n## Needs testing\n\n- Iron Teeth: the renamed buildings and the new ones. A goods delivery worked.\n- Logic timing. If a check shows up too early or too late, tell me which check, which faction and what you had built.\n\n## Known problems\n\n- Traps can land after you've reached your goal.\n- Big resource milestones, like 1000 Logs, can be in logic too early.\n- Resource packages count toward resource milestones.\n- [#14](https://github.com/dowlle/timberborn-modding/issues/14): boosts don't apply to newborn beavers.\n- [#23](https://github.com/dowlle/timberborn-modding/issues/23): a websocket warning on every connect.\n\n## Install\n\n1. Extract `Archipelago.zip` into `Documents/Timberborn/Mods/`, replacing any older version.\n2. The person generating the seed puts `timberborn.apworld` in their Archipelago `custom_worlds` folder (Archipelago 0.6.7 or newer).\n3. `Timberborn.yaml` is the options template.\n\n## Checksums\n\n| Asset | SHA-256 |\n|---|---|\n| `Archipelago.zip` | `30090ad88700b1530c8063ea6a1a5f9814bfa7aa683a00c30e8e4314f4d0b2a4` |\n| `timberborn.apworld` | `98170cc1d559640a9ef5c1059f0c07e462b724f4c4833fa85378b10733688165` |\n| `Timberborn.yaml` | `05f9781eda639bd45cf57dfd9d194c03478fa11bf64b1228f8824c148378d657` |\n\nFound something? [Open an issue](https://github.com/dowlle/timberborn-modding/issues/new) with your faction, your YAML or seed, what happened, and your `Player.log` if you can.\n\nThis project is developed with AI assistance; the details are in the [README](https://github.com/dowlle/timberborn-modding#ai-usage-disclosure).\n",
+      "download_url": "https://github.com/dowlle/timberborn-modding/releases/download/v0.1.0/timberborn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "98170cc1d559640a9ef5c1059f0c07e462b724f4c4833fa85378b10733688165",
+      "html_url": "https://github.com/dowlle/timberborn-modding/releases/tag/v0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 46008,
+      "source_url": "https://api.github.com/repos/dowlle/timberborn-modding",
+      "tag": "v0.1.0",
+      "title": "v0.1.0 - Timberborn 1.1 test build",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
     }
   }
 }
