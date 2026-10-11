@@ -1,9 +1,12 @@
 # Mount And Blade Bannerlord
 
 ## Latest
-- <a href="https://github.com/dghalfor/Bannerlord-APWorld/releases/download/0.3.1/bannerlord.apworld">Latest Version (0.3.1)</a>
+- <a href="https://github.com/dghalfor/Bannerlord-APWorld/releases/download/0.4.0/bannerlord.apworld">Latest Version (0.4.0)</a>
 
 ## All Versions
+
+#### v0.4.0
+- <a href="https://github.com/dghalfor/Bannerlord-APWorld/releases/download/0.4.0/bannerlord.apworld">https://github.com/dghalfor/Bannerlord-APWorld/releases/download/0.4.0/bannerlord.apworld</a>
 
 #### v0.3.1
 - <a href="https://github.com/dghalfor/Bannerlord-APWorld/releases/download/0.3.1/bannerlord.apworld">https://github.com/dghalfor/Bannerlord-APWorld/releases/download/0.3.1/bannerlord.apworld</a>
