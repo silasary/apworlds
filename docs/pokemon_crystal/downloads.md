@@ -1,9 +1,12 @@
 # Pokemon Crystal
 
 ## Latest
-- <a href="https://github.com/gerbiljames/Archipelago-Crystal/releases/download/6.0.2/pokemon_crystal.apworld">Latest Version (6.0.2)</a>
+- <a href="https://github.com/gerbiljames/Archipelago-Crystal/releases/download/6.0.3/pokemon_crystal.apworld">Latest Version (6.0.3)</a>
 
 ## All Versions
+
+#### v6.0.3
+- <a href="https://github.com/gerbiljames/Archipelago-Crystal/releases/download/6.0.3/pokemon_crystal.apworld">https://github.com/gerbiljames/Archipelago-Crystal/releases/download/6.0.3/pokemon_crystal.apworld</a>
 
 #### v6.0.2
 - <a href="https://github.com/gerbiljames/Archipelago-Crystal/releases/download/6.0.2/pokemon_crystal.apworld">https://github.com/gerbiljames/Archipelago-Crystal/releases/download/6.0.2/pokemon_crystal.apworld</a>

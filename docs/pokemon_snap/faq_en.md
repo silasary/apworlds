@@ -101,20 +101,84 @@ Dash and Snap at the same time! This wasn't required in the base game but is nee
 
 ---
 
-### How come I was able to Snap (whatever) out of logic?
+### How come I was able to Snap (whatever) out of logic? / What does the "hard logic" option change?
 
-There are a handful of photos that are using soft logic instead of relying on what is technically possible. 
-These photos are hard to capture even with perfect knowledge, so they have been marked as out of logic to keep the randomizer fun. 
-The technical requirements for these shots (as far as we are aware of them) are in the brackets.
+The locations below default to using "soft logic" in a normal playthrough, but can actually be photographed
+with fewer items. Some of them are quite difficult, and have had the soft logic applied to keep the randomizer fun.
 
- - Tunnel - Multiple Kakuna requires Pester Balls, Food, or the Dash Engine (nothing)
- - Volcano - Multiple Vulpix requires Apples (sometimes Dash Engine)
- - River - Wonderful & Multiple Shellder requires the Dash Engine (nothing)
- - River - Wonderful & Multiple Metapod requires Pester Balls (nothing)
- - River - Base & Wonderful Poliwag requires a throwable (nothing)
- - Cave - Base Pikachu requires a throwable (nothing)
- - Valley - Base Sandshrew requires a Pester Ball (Dash Engine)
- - Valley - Wonderful Squirtle requires a Pester Ball (nothing)
- - Valley - Multiple Squirtle requires a Pester Ball (Dash Engine)
- - Valley - Wonderful Graveler requires a Pester Ball or Pokeflute (nothing)
- - Valley - Wonderful Graveler requires a Pester Ball or Pokeflute (nothing)
+The soft and hard logic requirements are listed below.
+
+#### Beach
+- Lapras: Good Technique / Multiple
+  - Soft Logic: 5 Film
+  - Hard Logic: 2 Film
+
+#### Tunnel
+- Pikachu on a Ball
+  - Soft Logic: 5 Film
+  - Hard Logic: 3 Film
+- Kakuna: Multiple
+  - Soft Logic: Pester Balls, Pokemon Food, or the Dash Engine
+  - Hard Logic: Nothing
+- Dugtrio: Normal / Good Technique
+  - Soft Logic: 5 Film
+  - Hard Logic: 4 Film
+- Dugtrio: Multiple
+  - Soft Logic: 7 Film
+  - Hard Logic: 5 Film
+
+#### Volcano
+- Vulpix: Multiple
+  - Soft Logic: Pokemon Food
+  - Hard Logic: Dash Engine
+- Charmander: Multiple
+  - Soft Logic: Pokemon Food
+  - Hard Logic: Nothing
+
+#### River
+- Poliwag
+  - Soft Logic: Pokemon Food or Pester Ball
+  - Hard Logic: Nothing
+- Shellder: Good Technique / Multiple
+  - Soft Logic: Dash Engine
+  - Hard Logic: Nothing
+- Metapod: Good Technique / Multiple
+  - Soft Logic: Pester Ball
+  - Hard Logic: Nothing
+- Speed Pikachu
+  - Soft Logic: 5 Film, Pokemon Food, or Pester Ball
+  - Hard Logic: 2 Film
+
+#### Cave
+- Grimer: Good Technique
+  - Soft Logic: 4 Film
+  - Hard Logic: 2 Film
+- Muk: Normal / Good Technique
+  - Soft Logic: Pester Ball and 4 Film
+  - Hard Logic: Pester Ball and 2 Film
+- Pikachu: Normal / Good Technique
+  - Soft Logic: Pokemon Food or Pester Ball
+  - Hard Logic: Nothing
+
+#### Valley
+- Squirtle: Good Technique
+  - Soft Logic: Pester Ball
+  - Hard Logic: Nothing
+- Squirtle: Multiple
+  - Soft Logic: Pester Ball
+  - Hard Logic: Dash Engine
+- Graveler: Good Technique
+  - Soft Logic: Pester Ball or PokeFlute
+  - Hard Logic: Nothing
+- Graveler: Multiple
+  - Soft Logic: PokeFlute
+  - Hard Logic: Nothing
+- Starmie
+  - Soft Logic: 5 Film
+  - Hard Logic: 2 Film
+- Starmie: Good Technique
+  - Soft Logic: 7 Film
+  - Hard Logic: 2 Film
+- Starmie: Multiple
+  - Soft Logic: 9 Film
+  - Hard Logic: 3 Film

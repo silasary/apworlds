@@ -1,10 +1,18 @@
 {
+  "authors": [
+    "Snyax",
+    "copyrite"
+  ],
   "description": "XCOM 2 is the sequel to the acclaimed turn-based tactics game about defending earth from an alien invasion.\nOutwit your enemy on the battlefield and beyond, hunt the powerful Chosen, and build up an unstoppable\nresistance to save humanity from the occupation of the Elders!\"",
+  "flags": [
+    "supports_deathlink"
+  ],
   "game": "XCOM 2 War of the Chosen",
   "github": "https://github.com/Snyax/Archipelago",
   "license": null,
   "manifest_fields": [
     "authors",
+    "flags",
     "minimum_ap_version",
     "world_version"
   ],
@@ -469,6 +477,21 @@
       "title": "0.9.2 Beta",
       "version_simple": "0.9.2",
       "world_version": "0.9.2"
+    },
+    "1.0.0": {
+      "created_at": "2026-10-10T22:09:32Z",
+      "description": "[Game Info](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/en_XCOM%202%20War%20of%20the%20Chosen.md) | [Setup Guide](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/setup_en.md) | [APWorld Mods](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/apworld_mods.md) | [Troubleshooting](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/troubleshooting.md) | [AI Disclosure](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/AI-DECLARATION.md)\r\n\r\n1.0.0 is here! This release includes many, many new features and improvements, and there's a good chance it includes one or two new bugs as well. If you run into any issues or weird behavior, or would like to give some general feedback, please write in the [Discord thread](https://discord.com/channels/731205301247803413/1037751568700805141)! If you'd like to stay on the previous version, e.g. to continue playing in an ongoing async, make sure to [manually install](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/mod_manual_installation.md) the mod to prevent Steam from auto-updating.\r\n## Changes\r\n### New Features\r\n- Added Ranksanity\r\n  - Enable `Ranksanity` option to add new items and locations for soldier class promotions and rank-up events\r\n  - Toggle `Global Promotions` option to determine behavior of excluded classes\r\n  - Fully LWOTC-compatible!\r\n- Added DeathLink\r\n  - Enable `DeathLink` option in your YAML or change your mind via in-game Mod Config Menu at any time\r\n  - Set `DeathLink Chance` option to play dice with your soldiers' lives (can also be changed in MCM)\r\n  - Added more options for better access to exclusive soldier classes to enable less punishing DeathLinks\r\n- Overhauled trap items\r\n  - Removed `[Trap] Force Level +1` and added many more traps, both for the Strategy and Tactical layers\r\n  - Enable `Disable Turn One Traps` option to ignore tactical traps from before a mission started\r\n  - Enable `Disable All Traps` in MCM if you bit off more than you can chew (it happens)\r\n  - Traps may range anywhere from 'mild inconvenience' to 'potentially run-threatening', enable whichever ones you like with the `Active Traps` option and please give feedback if they feel too strong or boring!\r\n- Overhauled progressive weapon items\r\n  - New `[Tech] Progressive Gun` track includes rifle, shotgun, cannon, and sniper techs, the order of later items is shuffled and different each seed\r\n  - `Split Progressive Items` option allows splitting these techs into separate rifle/shotgun and cannon/sniper tracks\r\n- Added `progressive` option to `Chosen Huntsanity`, grouping Chosen Hunt items into three progressive items\r\n- Added `Exlude Post-Goal Locations` option to accomodate early-goal sync settings\r\n- Added `Enemy Plando Preset` option, feel free to suggest new presets if there are fun settings you like using :)\r\n### Client\r\n- Overhauled connection, version checking, and writing to game config\r\n  - Client no longer prompts user for game path on launch but on connection\r\n  - All version checking now happens directly in the client, connection will be closed if versions are incompatible\r\n  - Added `/game_path`, `/workshop_path`, and `/reset_paths` client commands to remove need to open `host.yaml`\r\n  - `/version` client command now displays world and mod version info when connected\r\n  - Client now prints an error on connection when config file is missing version info\r\n- Added `/progressive` client command to print info about active progressive items\r\n- Client now prints names of valid progressive items if user attempts to hint one of their stages\r\n- Client now supports launching from WebHost by clicking the slot name on the room page\r\n- Proxy is now properly assigned a free port by the OS instead of using a generic default\r\n### Generation\r\n- Logic now tightly follows `Remove Corpse Costs` option\r\n- `get_filler_item_name()` now respects filler share options\r\n- Various logic difficulty tweaks, especially for early locations\r\n- Various optimizations, massively lowering generation times\r\n- Improvements to item and location name groups\r\n### Mod\r\n- Mod no longer allows launching while disconnected or while connected with incompatible version info\r\n- Minimized GameStates added to history in Strategy layer to significantly reduce risk of save file bloat\r\n- Improved guardrails around offline location checking\r\n- Replaced UI strings for objectives waiting on multiworld items\r\n- Streamlined Chosen Hunt locations for more intuitive behavior\r\n- Partial research project hints now reveal item classification in addition to flavor text\r\n- LWOTC rebels and VIPs now scale with items received from the multiworld\r\n- Removed science and engineering requirements from proving ground projects\r\n- Corpse costs are now also removed from proving ground projects if the option is enabled\r\n### Bug Fixes\r\n- Fixed a bug where Avatars could spawn damaged in the final mission\r\n- Fixed a bug where covert action risks would still appear after their associated Chosen had already been defeated\r\n- Fixed incomplete proving ground and skulljack logic in LWOTC\r\n- Fixed logic error in Muton Destroyer APWorld mod",
+      "download_url": "https://github.com/Snyax/Archipelago/releases/download/1.0.0/x2wotc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5e2f01dde7b52ce64800d175f42d03b9420a6139fc2cd9440b09083d0f19102a",
+      "html_url": "https://github.com/Snyax/Archipelago/releases/tag/1.0.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 68601,
+      "source_url": "https://api.github.com/repos/Snyax/Archipelago",
+      "tag": "1.0.0",
+      "title": "XCOM 2 War of the Chosen APWorld 1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
     }
   }
 }

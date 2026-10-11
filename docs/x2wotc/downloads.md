@@ -1,9 +1,12 @@
 # XCOM 2 War of the Chosen
 
 ## Latest
-- <a href="https://github.com/Snyax/Archipelago/releases/download/0.10.10-beta/x2wotc.apworld">Latest Version (0.10.10b0)</a>
+- <a href="https://github.com/Snyax/Archipelago/releases/download/1.0.0/x2wotc.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
+
+#### v1.0.0
+- <a href="https://github.com/Snyax/Archipelago/releases/download/1.0.0/x2wotc.apworld">https://github.com/Snyax/Archipelago/releases/download/1.0.0/x2wotc.apworld</a>
 
 #### v0.10.10b0
 - <a href="https://github.com/Snyax/Archipelago/releases/download/0.10.10-beta/x2wotc.apworld">https://github.com/Snyax/Archipelago/releases/download/0.10.10-beta/x2wotc.apworld</a>
