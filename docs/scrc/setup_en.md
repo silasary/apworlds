@@ -1,3 +1,21 @@
+# Current setup: APWorld 0.29.0 / Client 0.76.0
+
+Use the [current installation guide](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.0/docs/INSTALL.md) for installation and connection instructions. Individual-cassette seeds use schema 19; randomized pairs/triples use schema 20 and require Client 0.76.0. Archipelago 0.6.8 and Universal Tracker 0.2.32 were tested. Restart Universal Tracker after updating this APWorld and retain its normal player YAML setup.
+
+See the [release changelog and known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.0/docs/releases/v0.29.0.md). Historical candidate records below do not supersede this setup.
+
+## v0.29.0 cassette option
+
+Set `cassette_bundle_size` to `individual` (default), `pairs`, or `triples`.
+Groups are randomized once per seed; all cassettes and checks remain available.
+Bundled seeds require client 0.76.0 and a freshly generated seed. Receiving a bundle
+grants its songs for normal Cassette Lord deposit. Existing seeds retain their
+original groups and placements. Keep your Universal Tracker YAML in its player folder.
+
+If exclusions leave too few modeled locations, existing Music Lab point rewards
+are consolidated while preserving the full 180 points and 66 Stars. Impossible
+configurations fail clearly. Larger point increments can unlock chests sooner.
+
 # AP Stars combined candidate — native playthrough acceptance pending
 
 **Client v0.75.4 / APWorld v0.28.0** uses schema 19 / campaign-mapping schema 1.

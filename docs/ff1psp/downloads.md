@@ -1,9 +1,12 @@
 # Final Fantasy 1 PSP
 
 ## Latest
-- <a href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/download/v0.2.3/ff1psp.apworld">Latest Version (0.2.3)</a>
+- <a href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/download/v0.2.4/ff1psp.apworld">Latest Version (0.2.4)</a>
 
 ## All Versions
+
+#### v0.2.4
+- <a href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/download/v0.2.4/ff1psp.apworld">https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/download/v0.2.4/ff1psp.apworld</a>
 
 #### v0.2.3
 - <a href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/download/v0.2.3/ff1psp.apworld">https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/download/v0.2.3/ff1psp.apworld</a>

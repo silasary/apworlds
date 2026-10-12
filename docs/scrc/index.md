@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.28.2/scrc.apworld">Latest Version (0.28.2)</a>
+- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.0/scrc.apworld">Latest Version (0.29.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

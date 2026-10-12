@@ -354,6 +354,21 @@
       "title": "Mega Man Zero 3 APWorld v0.3.6",
       "version_simple": "0.3.6",
       "world_version": "0.3.6"
+    },
+    "v0.4.0": {
+      "created_at": "2026-10-12T00:37:51Z",
+      "description": "Traps and an early enemy randomizer! Plus automatic shop hints, tracker map switching (for when the tracker updates), and a handful of bug fixes.\r\n\r\n[Full Readme here](https://github.com/brodieberger/MMZero3Archipelago)\r\n[Link to poptracker pack here](https://github.com/ambibii/mmz3-poptracker/releases/latest)\r\n\r\n## Features\r\n\r\n### Enemy Randomizer (option, WIP)\r\n`randomize_enemies` is a (moderately limited) enemy randomizer. Enemies from across the whole game can show up anywhere. This feature is a very big work in progress. Check out the main readme as it has a bunch of known bugs. I'm sure there are plenty more.\r\n\r\n`enemy_difficulty` determines how enemies spawn in each level. This feature is not fully implemented, so enjoy the placebo:\r\n- `minimal`: Tries to match enemy placements by health. If a less health enemy replaces one with more health, place multiple copies at that location.\r\n- `chaos`: Places multiple enemies around every spawnpoint regardless of HP or enemy type. Leads to many more enemies per stage. Developer's choice!\r\n- `insanity`: Places as many enemies as possible. Tries to prioritize enemies with higher HP. Expect many shield enemies in tight quarters. Good luck!\r\n\r\nAnd expect some new additions from the battle network and mettaur mode!\r\n\r\n<div align=\"center\">\r\n<img height=\"200\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9467d621-0365-4046-9f80-de1525a82180\" />\r\n</div>\r\n\r\n### Traps (option, WIP)\r\n`trap_percentage` turns that percentage of your filler items into traps. Select which ones to enable with `enabled_traps`. The three right now are purely visual but I'm planning to do more with them:\r\n\r\nEarthquake screen, pixelate screen, and slippery floor.\r\n\r\n### Enemy disk markers (option)\r\nEnemies who drop a disk will have the archipelago icon above them. Recommended for randomized enemies.\r\n\r\n### Small stuff + Bug Fixes\r\n- Abandoned Research Laboratory no longer has progression items.\r\n- Putting the cursor on an item in Cerveau's shop now automatically unlocks its hint.\r\n- Story Progress could be undone by a game over.\r\n- The soldier in the Resistance Base's right tower sometimes never gave his check.\r\n- Receiving an item while in Ciel's save menu made all of the menu's text disappear. Items now wait until you close the menu.\r\n\r\nTracker map switching support has also been added to the client, but will have to wait until the poptracker gets updated.",
+      "download_url": "https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.4.0/mmzero3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8f328ae52a650560d1676a42f10a59943c91a997620faa410e81d7d97f516012",
+      "html_url": "https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 205735,
+      "source_url": "https://api.github.com/repos/brodieberger/MMZero3Archipelago",
+      "tag": "v0.4.0",
+      "title": "Mega Man Zero 3 APWorld v0.4.0",
+      "version_simple": "0.3.6",
+      "world_version": "0.3.6r2"
     }
   }
 }
