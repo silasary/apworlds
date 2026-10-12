@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 2.3.2   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 2.3.3   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "2.3.2"
+TS2_VERSION = "2.3.3"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.

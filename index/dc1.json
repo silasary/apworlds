@@ -282,7 +282,7 @@
       "tag": "v0.5.10",
       "title": "DC1AP v0.5.10",
       "version_simple": "0.5.0",
-      "world_version": "0.5.0r3"
+      "world_version": "0.5.0r2"
     },
     "v0.5.2": {
       "created_at": "2026-05-23T02:37:38Z",
@@ -418,6 +418,21 @@
       "title": "DC1AP v0.6.0",
       "version_simple": "0.6.0",
       "world_version": "0.6.0"
+    },
+    "v0.6.1": {
+      "created_at": "2026-10-11T20:23:40Z",
+      "description": "# Dark Cloud 1 AP Rando v0.6.1\r\n\r\n## Client\r\n - Cleaned up reconnect loop when connection is dropped\r\n - \"Connect\" button now becomes \"Disconnect\" when connected\r\n - \"Fixed\" a few potential crashes when disconnecting/reconnecting\r\n - Added a message in dungeon for outgoing items found\r\n - Reverted the client item messages to have color formatting with some small tweaks\r\n - Disabled autobuilding of the robot since it seems to cause rare crashes\r\n   - Existing saves may still have crash issues.  Either wait to receive more robot parts with the old version or worst case you can start a new save.\r\n\r\n## No server changes; works with older saves/worlds\r\n    \r\n## Known Issues\r\n - Shop sanity items don't always remove from shop inventory correctly after sending location\r\n - New ready message shows up during certain cutscenes (this is harmless for now)\r\n   - I have a fix for this but I'm not confident in it yet to release it",
+      "download_url": "https://github.com/Lizardman175/DC1AP/releases/download/v0.6.1/dc1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "74c5102753656dd60c510f54392a4dd6830e167a858603eda6ea600d27d49362",
+      "html_url": "https://github.com/Lizardman175/DC1AP/releases/tag/v0.6.1",
+      "minimum_ap_version": "0.6.5",
+      "size": 41089,
+      "source_url": "https://api.github.com/repos/Lizardman175/DC1AP",
+      "tag": "v0.6.1",
+      "title": "DC1AP v0.6.1",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0r2"
     }
   }
 }

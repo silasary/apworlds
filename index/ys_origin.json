@@ -286,7 +286,7 @@
       "tag": "v2.0.0-beta.4",
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 4 \u2014 Evil Ring, generation fix, seed fuzzer",
       "version_simple": "1.9.2",
-      "world_version": "1.9.2r2"
+      "world_version": "1.9.2r3"
     },
     "v2.0.0-beta.5": {
       "created_at": "2026-10-06T12:45:22Z",
@@ -318,7 +318,7 @@
       "tag": "v2.0.0-beta.6",
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 6 \u2014 Fire and thunder gates, reconnect and save fixes",
       "version_simple": "1.9.2",
-      "world_version": "1.9.2r2"
+      "world_version": "1.9.2r4"
     },
     "v2.0.0-beta.7": {
       "created_at": "2026-10-08T18:10:00Z",
@@ -334,7 +334,7 @@
       "tag": "v2.0.0-beta.7",
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 7 \u2014 Silver Chimes barrier, double-jump gates, catch-up EXP",
       "version_simple": "1.9.2",
-      "world_version": "1.9.2r3"
+      "world_version": "1.9.2r2"
     },
     "v2.0.1": {
       "created_at": "2026-10-08T21:52:36Z",
@@ -350,6 +350,21 @@
       "title": "Ys Origin \u00d7 Archipelago 2.0.1 \u2014 Goal reporting fix, Dalles needs all three skills, borderless",
       "version_simple": "2.0.1",
       "world_version": "2.0.1"
+    },
+    "v2.1.0": {
+      "created_at": "2026-10-11T23:46:23Z",
+      "description": "A logic release. A full multiworld run as Toal, played out of order from a 1F start, turned up a string of places where the tower can only be walked one way or needs the double jump, and the logic did not know. Requires **Archipelago 0.6.7 or newer**.\n\n> **Take all three files, and take them together.** This apworld refuses a `dinput8.dll` older than 2.1: an old dll on a new seed used to fail silently (items arriving and doing nothing), and is now turned away at connect with a message. Seeds generated with 2.0.x stay playable with the new dll.\n\n**New: a [setup guide and settings builder](https://4rtefakt.github.io/ys-origin-archipelago/)** on the web. It walks through the install and builds your yaml in the browser.\n\n## \ud83d\uddfa\ufe0f Logic\n\nEvery one of these was a check or a passage the generator could count on while it was out of reach.\n\n**Rooms that only work one way**\n- **21F boss (Pictimos).** Coming down from 22F you arrive behind him: he blocks the way and the fight never starts. His arena is entered from the 21F save only.\n- **9F boss door.** The Pre-Boss Room's ward barrier stands across it with the wards on the room side, so the boss room does not lead back down.\n- **8F Waterway Entrance.** Its grate opens when four ward monsters die, and they all stand on the Outer Corridor side. Coming up from the waterway is a dead end.\n- **18F Path 1.** Its four spear gates are lowered by switches on the way up. From the top (18F Path 2) the first gate is shut, so the 18F save and Toal's Room are reached from below only.\n\n**Places that need the double jump (Gold Bracelet)**\n- **Slippery Fork Path (16F).** The room is a pit: all three chests and 16F Path 2 are on the walkway and ledges above the floor. The way up is the climb in 16F Path 1 (double jump) or the slippery ramp from 16F Path 3 (Earth Dragon's Claws).\n- **20F save to 20F Drop-Off**, in both directions.\n- The chests of **20F Path 3**, **20F Small Room** and both of **22F Path 3**.\n- **22F Path 2's chest**: double jump plus the wind skill; for Toal, double jump plus the fire skill.\n- **The 2F Path 2 gap** also takes the double jump, not only the wind skill.\n\n**Seeds this could have broken**\n- Minimal-accessibility seeds with a random start keep the Gold Bracelet as progression, and with the \"defeat all bosses\" goal they keep their keys and medallions too. Both relied on passages listed above.\n- The warp item of your own spawn statue is no longer put in the pool (you already have that warp).\n\n## \u2699\ufe0f New option\n\n- **`fire_skill_crossing`** (off by default, Toal only). His fire skill is a forward dash that carries him over the 2F Path 2 gap and to the 22F Path 2 chest. Turn it on to let the logic count on that.\n\n## \ud83d\udee0\ufe0f Mod fixes\n\n- **SP chests no longer pay their vanilla SP on top of the seed's item.**\n- **An altar no longer resets a levelled skill to level 1.**\n- **Hugo's Eyes of Fact could stay hidden** before the Toal duel after a cut scene.\n- **Skills and blessing effects are re-derived every tick**, so a skill item can no longer arrive without its skill.\n- **A watchdog frees scripts stuck waiting on a character that never moves.**\n- **The log is safe to post.** Your Windows user name, the room's port and private server addresses are left out; the password was never logged.\n- **Refusals are shown.** When the server turns the connection down (wrong slot, old dll), the menu says why.\n\n## \ud83d\udd0d For client and tracker authors\n\n- `slot_data` now carries the seed's whole logic as plain data (`logic`: regions, entrances and locations with their rules), so a client can count what is in logic without rebuilding the world.\n\n## \u26a0\ufe0f What was and was not played\n\n- The **logic** fixes come from a real multiworld run and from walking the rooms in an engine test harness.\n- The **mod fixes** above are built and reviewed but have **not been played on the retail game** since they were written. The run that found the logic errors was played on another client.\n\n## \ud83d\udc1e Known issues\n\n- More double-jump spots are likely on floors 18 to 25. A geometry sweep flagged these as suspect and nobody has confirmed them: 18F Path 2 towards Outer Corridor 1, 19F Path 1, 20F Path 1 between the outer corridors and the Drop-Off, 22F Mirror Path, 24F Path 3 and 24F Path 4 towards the 25F save. If you get stuck in one without the Gold Bracelet, please report it.\n- **Rado's Annex and story order.** Hugo and Yunica can be turned around at the Rado Tower bridge by story flags from higher floors, and Toal by two of his own; his Shion fight can then repeat. Not fixed in this dll.\n- Used medallions, keys and Moon Crests come back into the inventory after use (cosmetic).\n- Autosave overwrites slot 8 without asking. `autosave_slot=N` picks another slot, `0` turns it off.\n\n---\n\n**Install:** `ys_origin.apworld` into `custom_worlds/`, `dinput8.dll` next to `yso_win.exe`. `Ys-Origin.yaml` is the option template, or build your own on the [website](https://4rtefakt.github.io/ys-origin-archipelago/).\n",
+      "download_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v2.1.0/ys_origin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ebd2b00ba5d8344434ece71c060e2749a4b5a8dcc2794fa64c5c67fb3b6518cc",
+      "html_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 85145,
+      "source_url": "https://api.github.com/repos/4rtefakt/ys-origin-archipelago",
+      "tag": "v2.1.0",
+      "title": "v2.1.0 \u2014 one-way rooms and double jumps",
+      "version_simple": "2.1.0",
+      "world_version": "2.1.0"
     }
   }
 }

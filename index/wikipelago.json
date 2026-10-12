@@ -79,6 +79,21 @@
       "version_simple": "1.0.3",
       "world_version": "1.0.3"
     },
+    "1.1.0": {
+      "created_at": "2026-10-11T18:52:47Z",
+      "description": "## Main changes\r\n\r\n- **Topic Realms** (on by default). Every side road becomes a Realm with its own topic (History, Music, Sports\u2026). Each Realm opens with its own Portal item instead of Branch Keys, so Realms can open in any order. Realm targets and rerolls stay on topic.\r\n- **Realm Master goal** (`goal: realm_master`). Win by clearing every Realm. No fragments, no Grand Goal question.\r\n- **Practice mode updated**: a 5\u00d75 bingo board and one open Realm, each replaceable once finished.\r\n- **Phone layout and display options**\r\n\r\n## Improvements\r\n\r\n- New dark and light themes, card icons, self-hosted fonts, text size selection, contrast mode, and colorblind-friendly colors.\r\n- Notifications are now a dismissible stack at the top of the screen.\r\n- In the Journey panel, hover a point to see the page summary, click it to open the page on Wikipedia.\r\n- The Compass reads toward your nearest live target and updates in the background.\r\n- Added a welcome screen before you connect, and removed made-up progress shown before connection.\r\n- UI responds better to different horizontal and vertical resolutions.\r\n- Bingo: \u0152 and \u00c6 count as two letters (OE, AE), as in Scrabble.\r\n- Rephrasing of certain page categories, more pages are flagged as sensitive, Grand Goal questions reworded to avoid giving the answer away.\r\n- Large rooms: websocket messages up to 16 MB (from **mooinglemur**'s fork).\r\n\r\n## Fixes\r\n\r\n- DeathLink deaths and traps could apply twice in a row.\r\n- Double-clicking a link to the target could skip a round.\r\n- Pages that differ only by accents (\"A\u00f1o\" / \"Ano\", \"B\u00fcrger\" / \"Burger\") were treated as the same page.\r\n- A short connection drop reloaded the page, jumped to the top and used up a queued trap. Now the page stays, and a target reached while disconnected counts once the connection is back.\r\n- The Journey pop-out window could take deaths and traps meant for the main window.\r\n- After Practice, joining a room started on the last practice page instead of your round.\r\n- Light theme contrast, header alignment, and missing pinyin, Vietnamese and pronunciation characters.\r\n\r\n## For hosts and players\r\n\r\n- Recommended Archipelago version: 0.6.7.\r\n- Games generated with 1.0.x keep working on the updated web client.\r\n- `topic_portals` now defaults to true, so a YAML without that line gets Realms. Set `topic_portals: false` for classic Branch Keys.\r\n- The hosted client no longer connects to private-network addresses (localhost, LAN, Tailscale\u2026). For those rooms, run the local client: see [Setup, Option 2](docs/setup.md#option-2--local-client-private--vpn-rooms).\r\n- Bugs: [GitHub Issues](https://github.com/Dreskn/Wikipelago-Continued/issues) or the Wikipelago thread on the Archipelago Discord.",
+      "download_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/download/1.1.0/wikipelago.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fe3d7a8303026a25586c984ce5b01a0a08af47eb51656c6d72793f14ebb3bbf0",
+      "html_url": "https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 1818062,
+      "source_url": "https://api.github.com/repos/Dreskn/Wikipelago-Continued",
+      "tag": "1.1.0",
+      "title": "Wikipelago 1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
+    },
     "v0.5.1": {
       "created_at": "2026-08-05T10:09:42Z",
       "description": "apworld sanitize",
