@@ -185,6 +185,22 @@
       "title": "v0.7.0-rc.2",
       "version_simple": "0.7.0",
       "world_version": "0.7.0rc2"
+    },
+    "v0.7.0-rc.3": {
+      "created_at": "2026-10-12T14:57:44Z",
+      "description": "## AEMinecraft v0.7.0-rc.3\r\n\r\n**Pre-release.** Third test build of v0.7.0. Stay on v0.6.2 if you want a stable game.\r\n\r\nThis RC only lists what changed since the **[v0.7.0-rc.2 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.2)**. For everything new in v0.7.0, see the **[v0.7.0-rc.1 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1)**.\r\n\r\n### Fixed\r\n\r\n- **The game froze on the Nether and Adventure tabs.** With glitch logic on and structure, mob or Knowledge locks, opening those tabs after receiving a few items could freeze the game for good. The tracker now remembers the result of each shared part of a rule instead of working it out again every time it comes up, so the tabs open instantly. Thanks to MissingNoShiny on discord who tracked this one down.\r\n\r\n### Changed\r\n\r\n- **One Knowledge tile per progressive item.** Progressive Material Handling, Villager Trust, Structure Finder, Keep Inventory and Inventory Slot used to get one tile per copy, which got out of hand with large Keep Inventory or Inventory Slot pools. Each one is now a single tile:\r\n  - its tooltip counts the copies received so far, e.g. `3/10`;\r\n  - its frame turns gray from the right, one step per copy, and is fully gray once every copy is in;\r\n  - the hint line shows where the next copy is.\r\n- **Clearer error when the item pool is too big.** When a YAML asks for more items than it has locations, the error now lists how many items each option adds. It only suggests the location options you have turned off.\r\n\r\n### Upgrading from rc.2\r\n\r\n- **Replace both the apworld and the mod jar.** The tracker tiles changed on both sides, so an rc.2 jar with the rc.3 apworld (or the other way round) leaves the progressive tiles missing from the Knowledge tab. Your YAMLs keep working as they are.\r\n",
+      "download_url": "https://github.com/KuroLynx/AEMinecraft/releases/download/v0.7.0-rc.3/minecraft_aem.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d7c6968618fc76dbb6c1fedf0afa01d823b8f0300a391ad8a91c617332b04ec2",
+      "html_url": "https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.3",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 1229089,
+      "source_url": "https://api.github.com/repos/KuroLynx/AEMinecraft",
+      "tag": "v0.7.0-rc.3",
+      "title": "v0.7.0-rc.3",
+      "version_simple": "0.7.0",
+      "world_version": "0.7.0rc3"
     }
   }
 }

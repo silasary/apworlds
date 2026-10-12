@@ -1,314 +1,407 @@
 # New Super Mario Bros. DS
 
-This Archipelago world turns **New Super Mario Bros. DS** into a multiworld
-randomizer. Clearing levels and finding secrets sends items to you or to other
-players. In return, your own world access, abilities, Power-Ups, and Star Coins
-may be found anywhere in the multiworld.
+This randomizer adds Archipelago support to **New Super Mario Bros. DS**.
+Clearing levels, collecting Star Coins, and finding secrets gives items to
+players in the multiworld. Items received from other games unlock worlds,
+routes, and Power-Ups. Single-player seeds are also supported.
 
-**[Roadmap](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/Roadmap.md)**
+For installation, patching the game, and connecting to a room, see the
+[Setup Guide](setup_en.md).
 
-For installation and launch instructions, see the [Setup Guide](setup_en.md).
+> **Unstable release:** This version is still being tested. Gameplay, item
+> delivery, and tracking may have bugs.
 
-> **Unstable:** This unstable-release may contain severe performance, tracking,
-> feature, or logic issues. Report reproducible issues.
+## Features
 
-## What is randomized?
+- Four goals; World Passes, Keys, Star Coin gates, and Power-Up Permits.
+- Level, Star Coin, boss, Toad House, red-coin, secret-exit, and block checks.
+- Level and music shuffling, character colors, and lower-screen backgrounds.
+- Power-Ups, bonus items, 28 traps, and configurable Death Link.
+- Client hints, item reserve, death counter, activity feed, and world-map saving.
 
-With the standard location settings, a seed includes:
-
-- all 80 level goals;
-- all 9 Castle boss defeats as separate checks;
-- all 240 Star Coins;
-- 34 Toad House rewards;
-- 29 Red Coin Challenges;
-- 51 hidden or flying 1-Up Blocks;
-- 18 Secret Exits, including the special Mini-Mario exits in the World 2 and
-  World 5 castles.
-
-Most categories except level goals and Star Coins can be disabled in your
-player options. **Star Coins are always included.** The **Star Coin Tracking**
-option controls when a pickup is saved and reported as a check:
-
-- **Instant (default):** picking up a Star Coin immediately commits it to the
-  level's save data and sends the check. It stays collected if you die or leave
-  the level before reaching the goal.
-- **After Level Completion:** a Star Coin is saved and reported only when you
-  successfully finish the level, as in the original game.
-
-The Star Coin item found for you becomes currency for overworld signs and may
-count toward your goal.
-
-### Blocksanity
-
-Blocksanity adds up to over 1,100 Coin and Power-Up Blocks as extra checks. It is
-disabled by default because it greatly increases the size of the seed. A few special blocks are still missing, such as hanging blocks.
-
-The flying-block room in World 6-2 contains 128 flying-block checks and can also be included. 
-These checks never contain progression items for the local player, 
-and at most 16 can be global checks for other players. The remaining checks contain local filler or traps.
+[Goals](#goals) · [Checks](#checks) · [Progression](#progression) ·
+[Items](#items) · [Client](#client) · [Death Link](#death-link) ·
+[Traps](#traps) · [Customization](#customization)
 
 ## Goals
 
-You can choose one of four victory conditions:
-
-| Goal | How to win |
+| Goal | Requirement |
 |---|---|
-| Defeat Bowser | Defeat Bowser & Bowser Jr. in World 8-Bowser's Castle |
-| Star Coin Hunt | Receive the chosen number of Star Coin items |
-| World Tour | Defeat all 9 Castle bosses |
-| Completionist | Defeat all 9 Castle bosses and receive the chosen number of Star Coin items |
+| **Defeat Bowser** (default) | Defeat Bowser & Bowser Jr. in World 8-Bowser's Castle. |
+| **Star Coin Hunt** | Receive the selected number of Star Coin items. |
+| **World Tour** | Defeat all 9 Castle bosses. |
+| **Completionist** | Defeat all 9 Castle bosses and receive the selected number of Star Coin items. |
 
-Star Coins spent at signs still count toward Star Coin Hunt and Completionist.
-Only your current spending balance goes down. The overview section in the client shows the total amount received so far.
+For Star Coin Hunt and Completionist, **Required Star Coins** sets the target
+from 30 to 240. The default is 80. All 240 Star Coin checks stay available,
+even with a lower target.
 
-## Progression items
+**Received Star Coin items** pay for signs on the world map and count toward
+the Star Coin goal. Spent Star Coins still count toward the goal. Overview tab
+shows the available balance, the amount spent, and the total received.
+
+## Checks
+
+| Check category | Available checks | Included by default? |
+|---|---|---|
+| Level goals | 80 | Always |
+| Star Coins | 240 | Always |
+| Castle boss defeats | 9 | Always |
+| Toad House rewards | 34 | Yes |
+| Red Coin Challenges | 30 | Yes |
+| Secret exits | 18 | No |
+| Hidden or flying 1-Up Blocks | 43, plus 8 in the World 6-2 bonus room | No |
+| Blocksanity | 1,038 Coin and Power-Up Blocks, plus 120 in the World 6-2 bonus room | No |
+
+Secret exits include the Mini-Mario exits in the World 2 and World 5 castles.
+Red Coin Challenges are completed by collecting all eight red coins before
+the ring's timer runs out.
+
+Toad House checks cover the 34 fixed houses on the world map. Temporary houses
+spawned by finishing with matching timer digits do not add AP checks.
+
+A Star Coin pickup completes a randomized check. Star Coin currency comes from
+received Star Coin items.
+
+### Star Coin Tracking
+
+This setting controls when a Star Coin pickup completes its check:
+
+- **Instant (default):** the pickup counts immediately and stays collected if
+  Mario dies or leaves the level.
+- **After Level Completion:** finishing the level is required to keep the pickup,
+  as in the original game.
+
+### Blocksanity and the World 6-2 bonus room
+
+Blocksanity adds checks for supported Coin and Power-Up Blocks. This greatly
+increases the number of checks. It is off by default.
+Some special blocks, including hanging blocks, are not included yet.
+
+**World 6-2 Bonus Area** enables the room's 128 flying blocks: 120 require
+**Blocksanity**, and eight require **1-Up Block Checks**. All three options
+are off by default. These bonus-room checks never contain required progression
+items. At most 16 can contain items for other players, the rest contain local
+filler or traps.
+
+### Hidden and difficult checks
+
+**Advanced Location Item Placement** controls items at difficult or hidden checks:
+
+- **Allow Progression (default):** checks can contain items needed for progress.
+- **Non-Progression:** checks cannot contain items needed for progress.
+
+Both settings keep these checks in the game. Non-Progression reduces the need
+to find hidden secrets or complete difficult jumps to get required items.
+
+**1-Up Blocks** and **Blocksanity** have separate item placement settings:
+
+| Setting | Allowed items |
+|---|---|
+| Excluded | Ordinary filler items and enabled traps. |
+| Non-Progression (default) | Filler, useful bonuses, and enabled traps. No items needed for progress. |
+| Progression | Any item, including items needed for progress. |
+
+**Blocksanity Global Check Percentage** controls how many block checks can hold
+items for other players. The remaining checks contain local filler or traps.
+The normal host limit is 30%; the World 6-2 room keeps its separate limit of 16.
+
+## Progression
 
 ### World Passes
 
-The Desert, Isle, Jungle, Glacier, Mountain, Cloud, and Volcano Passes unlock
-Worlds 2 through 8. A later world may therefore become available before you
-finish every earlier level.
+World 1 is available at the start. The Desert, Isle, Jungle, Glacier, Mountain,
+Cloud, and Volcano Passes open Worlds 2 through 8. Worlds can become available
+in a different order from the original game.
+
+Normal Castle-clear routes can also unlock later worlds without their Passes.
+The alternate Mini-Mario and Warp Cannon routes count in logic when their
+settings are enabled.
 
 ### Tower and Castle Keys
 
-When enabled, every Tower and Castle has its own matching Key. Worlds 6 and 8
-therefore have separate Keys for Tower 1 and Tower 2, while World 8 has separate
-Keys for its Castle and Bowser's Castle. You must receive the matching Key before
-passing its locked route. This option can be disabled for a more vanilla-like
-overworld.
+**Tower & Castle Keys** is enabled by default. Each Tower and Castle has its own
+matching Key to unlock its route. Worlds with two Towers use separate Keys, and
+World 8's Castle and Bowser's Castle also have separate Keys.
 
-### Star Coin gates
+With this option off, these routes do not need Keys.
+The route to Bowser's Castle also requires clearing the level at the
+World 8-Tower 2 entrance.
 
-In every mode, gates are arranged in tiers. Early tiers are cheaper and later
-tiers require more received Star Coins:
+### Star Coin signs
 
-- **Vanilla:** collect enough Star Coins to open each tier.
-- **Progressive:** collect Star Coins and Progressive Gate Passes to unlock the
-  tiers one after another.
-- **Individual:** collect Star Coins and the matching named Gate Pass for each tier.
+Signs need Star Coins. **Star Coin gates always use tiers**.
+Higher tiers require more total received Star Coins. No Keys keeps those tiers
+and the Star Coin price.
+
+| Star Coin Gate Mode | Requirement |
+|---|---|
+| **No Keys** (default) | Enough received Star Coins for the sign's tier. |
+| **Progressive** | Enough Star Coins and Progressive Gate Passes, which unlock tiers in order. |
+| **Individual** | Enough Star Coins and the named Gate Pass matching that sign. |
+
+Later tiers need more total received Star Coins. **Star Coin Gate Gap** sets
+the step between tiers and the price of opening each sign, from 3 to 5
+(default: 5). It applies to all 32 signs, including signs leading to side levels.
+For example, with a gap of 5, tier 3 needs 15 total received Star Coins; opening
+the sign spends 5 from the available balance. Spending does not reduce the
+total received or goal progress.
+
+No Keys and Individual modes shuffle the signs' tiers for each seed.
+Progressive mode uses the fixed gate order.
 
 ### Power-Up Permits
 
-Permits can lock the use of Mushrooms, Fire Flowers, Blue Shells, Mini
-Mushrooms, Mega Mushrooms, and the touchscreen reserve pocket. When a Permit
-option is enabled, you must find that Permit before using the ability.
-Power-Ups simply disappear when collected if you don't own the permit yet. 
-Item-based Power-Ups are queued up until you unlock the permit.
+A Permit allows use of one Power-Up type. It does not give that Power-Up.
+The Power-Up must still be found in a level or received as an item.
 
-### Music Randomization
+Each license setting can be enabled separately: Mushroom, Fire Flower,
+Blue Shell, Mini Mushroom, Mega Mushroom, and Touchscreen Pocket.
+An enabled license requires its Permit. A disabled license allows normal use
+without a Permit.
 
-Music randomization changes the background music without affecting gameplay. 
-It is disabled by default, and the selected tracks remain consistent for the entire seed. 
-Each level also keeps the same music across all of its normal areas.
+By default, Fire Flowers, Blue Shells, Mini Mushrooms, and Mega Mushrooms need
+their Permits. Ordinary Mushrooms and the touchscreen pocket are usable without one.
 
-Boss music, ambience, power-up themes, jingles, menus, minigames, sound effects,
- and unidentified tracks are not randomized.
+Regular in-level Power-Up pickups disappear when their required Permit is missing.
+Power-Ups received through Archipelago wait in the client until the Permit is
+available. These items are not lost.
 
-* `off`: Keeps all music unchanged.
-* `level`: Randomizes the 11 regular level themes across the 80 levels.
-* `level_and_worlds`: Randomizes level music and world-map music separately. 
-The 11 level themes are distributed across the story levels, while the eight 
-world-map themes are shuffled among the world maps.
-* `mixed_level_and_worlds`: Mixes all 19 level and world-map themes into one shared pool. 
-This means level music can play on a world map, and world-map music can play inside a level.
+**Powerup Permit Placement** controls early access to selected Permits:
 
+- **Normal (default):** no extra placement restrictions.
+- **Early:** the Permits chosen in **Selected Powerup Permits** must be
+  logically reachable by check sphere 2.
 
+**Selected Powerup Permits** includes Mushroom Permit, Fire Flower Permit,
+and Touchscreen Pocket Permit by default. Each selected Permit needs its license
+setting enabled. Permits with disabled licenses are ignored. An empty selection
+disables early placement. This setting affects Permits only. Permits in the
+starting inventory do not need early placement.
 
-## Items you can receive
+Selected Permits can be placed in another player's game.
 
-| Item | What it does |
+### Secret routes and cannons
+
+Secret-exit shortcuts, the Mini-Mario routes to Worlds 4 and 7, and Warp Cannon
+routes have separate settings. When enabled, the randomizer can expect these
+routes to be used to reach checks.
+All three logic settings are off by default. **Secret Exit Checks** separately
+controls whether exits award AP items.
+The physical exits and cannons remain available when their logic settings are off.
+
+### Level Randomization
+
+**Level Randomization** can keep the original layout, shuffle levels within
+each world, or shuffle them across all worlds. Towers, Castles, secret-exit
+levels, and ordinary levels stay in their matching groups. Bowser's Castle
+always stays in place.
+
+Check names follow the original level. For example, **World 3-3 Star Coin 3**
+means the coin inside the original World 3-3 level, even if the level moved.
+Keys and map routes follow the entrance on the world map.
+The special Mini-Mario exits to Worlds 4 and 7 stay tied to their World 2 and
+World 5 Castle entrances.
+
+The client command `/level` finds level entrances:
+
+| Command | Result |
 |---|---|
-| Mushroom | Gives a Mushroom |
-| Fire Flower | Gives a Fire Flower |
-| Blue Shell | Gives a Blue Shell |
-| Mini Mushroom | Gives a Mini Mushroom |
-| Mega Mushroom | Gives a Mega Mushroom |
-| Starman Buff | Grants 15 seconds of invincibility |
-| 1-Up Mushroom | Adds one life |
-| 3-Up Moon | Adds three lives |
-| Small Coin Bundle | Adds 10 Coins |
-| Coin Bundle | Adds 25 Coins |
-| Large Coin Bundle | Adds 50 Coins |
-| Time Capsule | Adds 30 seconds to the current level |
-| Starman Lite | Grants five seconds of invincibility |
-| Trap Shield | Blocks the next trap; several charges can be stored (Cyan Shield) |
-| Small Care Package | Adds time, Coins, and one life |
-| Life Insurance | Prevents the next death from consuming a life (Green Heart) |
+| `/level W3-3` | Entrance for the original World 3-3 level. |
+| `/level World 3-3 Star Coin 3` | Entrance for that check. |
+| `/level world 3` | Levels on the World 3 map. |
+| `/level all` | All level entrances. |
 
-If your reserve pocket is full, a received Power-Up waits until it can be
-delivered. It is not lost.
+Hints also show the entrance for shuffled locations.
 
-The **Power-ups** list at the bottom of the client's Overview shows your
-waiting power-ups. Click **Next** to reserve one copy for the next
-empty pocket, or click the selected power-up again to cancel. After delivery,
-the oldest available power-up is next automatically. Power-ups awaiting a
-Permit stay queued and show their requirement. Your selection and backlog
-are saved for this seed and slot across client restarts.
+## Items
 
-## Item placement
-
-1-Up Blocks and Blocksanity checks have three placement choices:
-
-| Setting | What may be placed there |
+| Item | Effect |
 |---|---|
-| Excluded | Filler items and traps only |
-| Non-Progression | Filler, repeatable Power-Ups, useful items, and traps |
-| Progression | Any item, including important progression |
+| Mushroom, Fire Flower, Blue Shell, Mini Mushroom, Mega Mushroom | Adds the matching Power-Up to the waiting items. |
+| Starman Buff | Gives 15 seconds of invincibility. |
+| Starman Lite | Adds five seconds of invincibility, up to the normal buff duration. |
+| 1-Up Mushroom | Adds one life. |
+| 3-Up Moon | Adds three lives. |
+| Small Coin Bundle / Coin Bundle / Large Coin Bundle | Adds 10 / 25 / 50 normal Coins. |
+| Time Capsule | Adds 30 seconds to the level timer. |
+| Small Care Package | Adds 15 seconds, five normal Coins, and one life. |
+| Trap Shield | Blocks the next trap. Multiple charges can be stored. Shown as a cyan shield. |
+| Life Insurance | Prevents the next death from costing a life. Shown as a green heart. |
 
-Blocksanity uses **Non-Progression** by default, so blocks may contain Power-Ups
-without hiding required world access in one of hundreds of blocks. 1-Up Blocks
-also use **Non-Progression** by default.
+### Item Reserve
 
-The Blocksanity global percentage controls how many of these checks may hold
-items for other players. The remaining blocks contain local filler or traps.
+Received Power-Ups are delivered through the touchscreen reserve pocket. If
+the pocket is full, or a required Permit is missing, they wait in the client.
+The **Power-ups** list in Overview shows what is waiting and any missing Permit.
 
-### Location groups
+**Settings → Item Reserve** has two modes:
 
-For Archipelago options that accept location groups, such as
-`exclude_locations`, this world provides the following category names:
+- **Automatic:** an empty pocket refills automatically. Use **SET NEXT** to
+  choose the next waiting Power-Up.
+- **Manual:** use **SEND 1** to select one copy for delivery when the pocket
+  is available. Further copies wait for another selection.
 
-- `Star Coins`
-- `Secret Exits`
-- `Red Coin Challenges`
-- `1-Up Blocks`
-- `Blocksanity`
-- `Toad Houses`
+Waiting Power-Ups and the selection are saved for the current seed and player
+slot across client restarts.
 
-These groups let you refer to a whole category instead of listing each location.
-They do not enable categories that are disabled in your seed options. Excluding
-a location from progression placement does not remove its check from the game.
+The same controls are available in the client chat:
 
-## Traps
+- `/nsmbds_reserve automatic` or `/nsmbds_reserve manual` changes the mode.
+- `/nsmbds_powerup Fire Flower` selects one waiting copy; `/nsmbds_powerup cancel`
+  clears the selection.
 
-The trap percentage controls how often traps replace ordinary non-progression
-items. The `traps` YAML list selects the allowed types. An empty list disables
-all traps, regardless of the configured percentage. The `filler_items` list
-works the same way for positive filler categories, but must keep at least one entry.
+## Client
 
-| Trap | Effect |
-|---|---|
-| Super Speed | Makes Mario move much faster |
-| Slowness | Makes Mario move more slowly |
-| Slippery Gloves | Temporarily disables wall jumps |
-| Ground Bound | Temporarily prevents jumping |
-| Hyper Confusion | Reverses left and right |
-| No Sprint | Temporarily disables sprinting |
-| Button Swap | Swaps the jump and sprint buttons |
-| Ice Shoes | Makes stopping and turning slippery |
-| Heavy Mario | Lowers jumps and makes Mario fall faster |
-| Can't Stop | Forces Mario to keep running |
-| Sticky Buttons | Briefly keeps released directions held |
-| Camera Drift | Pulls the camera to one side |
-| Screen Flip | Turns both DS screens upside down |
-| Drunk Camera | Makes the camera sway left and right |
-| Boo Curse | Repeatedly reverses horizontal controls |
-| I'm Stuck | Holds Mario in place for three seconds |
-| Screen Tint | Covers the game with a colored tint |
-| Retro Filter | Adds an old-screen color and scanline effect |
-| Spotlight | Darkens everything outside a small visible area |
-| Pixelation | Makes the game view appear pixelated |
-| Ground Clap | Ground pounds damage Mario for a short time |
-| Head Bonk | Hitting a block from below damages Mario |
-| Bonk Trap | Immediately damages Mario |
-| Coin Tax | Removes up to ten Coins |
-| Time Drain | Removes 50 seconds from the level timer |
-| Coin Thief | Removes all normal Coins |
-| No Turnaround Trap | Locks horizontal movement to the first chosen direction for 15 seconds |
-| Power-Up Pickpocket Trap | Immediately steals the touchscreen reserve Power-Up |
+The NSMBDS Client needs connections to Archipelago and BizHawk during play.
+**Overview** shows goal progress, completed checks, received unlocks,
+Star Coin balance, and waiting Power-Ups. **Hints** shows hinted items and locations.
 
-Most timed traps last 15 seconds. The Spotlight lasts ten seconds and I'm Stuck
-lasts three seconds. Bonk Trap can optionally be allowed to kill Small Mario.
+A separate NSMBDS PopTracker pack supports map tracking. With the client and
+tracker connected to the same slot, it can open the matching world or level map.
+
+### Save Anytime
+
+The patched game enables **SAVE** in the World Map menu. Saving is available
+at any time on the world map. Use the same in-game save when continuing a seed.
+
+### Death Counter
+
+**Settings → Death Counter** shows the player's death total in Overview.
+The counter keeps tracking when the display is hidden, including when Death
+Link is disabled. Totals are saved separately for each seed and player slot.
+
+`/deathcounter` shows the total and the number of Death Link deaths.
+Other players' shared totals appear when available. Without shared totals,
+the list shows Death Links received while the client was connected.
+Missed Death Links are not added after reconnecting.
+
+Normal deaths, insured deaths, and lethal timer drains count. Damage, time loss, or Coin loss alone do not count
+as a death. Mario must actually die.
+
+### Emulator activity feed
+
+The in-game feed shows checks and item transfers. **Settings** controls its
+width, position, fade-out time, and whether it is enabled.
+Press **Ctrl+Shift+H** to temporarily hide or show it. Older messages may
+reappear after reconnecting; this does not apply used bonuses or traps again.
 
 ## Death Link
 
-Death Link shares deaths with other participating players. 
-When enabled, your death can defeat them and their deaths can defeat you.  
-Life Insurance prevents the next local death from consuming a life. 
-The option Death Link: Trigger on Insured Deaths determines whether that insured death is still sent through Death Link. 
-It is disabled by default.
+Death Link is off by default. When enabled, deaths are shared with other
+players who use Death Link. Their deaths can affect Mario too.
 
-**Death Link: Amnesty** controls how often eligible local deaths are shared.
-The default value of 1 sends every death; a value of 5 sends only every fifth
-eligible death. Deaths caused by an incoming Death Link and Return to Map life
-losses neither send nor advance the amnesty counter.
+| Setting | Effect |
+|---|---|
+| **Amnesty** | Share every death, every fifth death, or another chosen interval. Default: every eligible death. |
+| **Grace Percentage** | A 0–75% chance to ignore an incoming Death Link. |
+| **Cooldown Seconds** | Ignore further incoming Death Links for a while after an effect is applied. |
+| **Effect** | Defeat Mario, apply damage, remove 100 seconds, remove all normal Coins, or choose randomly. |
+| **Random Effects** | Choose which effects are allowed when using Random. |
+| **Trigger on Insured Deaths** | Share deaths prevented from costing a life by Life Insurance. Off by default. |
 
-Incoming Death Links can be customized with four additional options:
+Damage removes a Power-Up and defeats Small Mario. Removing 100 seconds can
+also defeat Mario when the timer reaches zero. Incoming effects wait until
+a level is active and the game is not paused.
 
-- **Grace Percentage** is the chance to ignore an incoming Death Link completely.
-  It is rolled exactly once when the Death Link arrives. Eligible local deaths
-  are still always sent. The range is 0% to 75%, so even maximum grace lets one
-  quarter of incoming Death Links through on average. Use Death Link: Off to opt out entirely.
-- **Cooldown Seconds** ignores further incoming Death Links for the configured
-  time after an accepted effect is successfully applied. Death Links received
-  while an effect is already queued are also ignored rather than accumulated.
-- **Effect** can defeat Mario, apply normal damage, remove 100 seconds from the
-  level timer, remove all normal Coins, or randomly choose one of those four
-  effects. Damage removes a Power-Up and defeats Small Mario. Timer Drain can
-  reduce the timer to zero and therefore can also be lethal.
-- **Random Effects** selects which of the four concrete effects may be chosen
-  when Effect is set to Random. At least one effect must remain enabled in that mode.
+## Traps
 
-Incoming effects wait until Mario is in an active level. Any death caused by an
-incoming effect is suppressed locally and is never sent back as another Death Link.
+**Trap Percentage** controls how often traps replace ordinary filler items.
+It defaults to 15%; setting it to zero disables traps. **Traps** selects the
+allowed effects. An empty selection disables traps.
+**Filler Items** selects the helpful bonus categories. An empty selection fills
+ordinary filler slots with Nothing; enabled traps can still appear.
 
-## Cosmetic options
+Most timed traps last 15 seconds. Spotlight lasts ten seconds and I'm Stuck
+lasts three. Bonk Trap can optionally be allowed to kill Small Mario.
 
-Mario and Luigi can each use their own color palette. The selected colors are
-applied to the character (also the Power Ups) while playing levels; gameplay and abilities do not
-change.
+**Movement and controls**
 
-Available choices are Vanilla, Crimson, Emerald, Sapphire, Purple, Monochrome,
-Pastel Rosa, Gold, Silver, Peach, Random Preset, and Crazy Random. **Random
-Preset** chooses one of the prepared palettes for the seed. **Crazy Random**
-randomizes every pixel.
+| Trap | Effect |
+|---|---|
+| Super Speed | Makes Mario move much faster. |
+| Slowness | Makes Mario move more slowly. |
+| Slippery Gloves | Temporarily disables wall jumps. |
+| Ground Bound | Temporarily prevents jumping. |
+| Hyper Confusion | Reverses left and right. |
+| No Sprint | Temporarily disables sprinting. |
+| Button Swap | Swaps the jump and sprint buttons. |
+| Ice Shoes | Makes stopping and turning slippery. |
+| Heavy Mario | Lowers jumps and makes Mario fall faster. |
+| Can't Stop | Forces Mario to keep running. |
+| Sticky Buttons | Briefly keeps released directions held. |
+| No Turnaround Trap | Locks movement to the first chosen direction for 15 seconds. |
+| Boo Curse | Repeatedly reverses horizontal controls. |
+| I'm Stuck | Holds Mario in place for three seconds. |
 
-The **Secondary Screen Background** option can shuffle the five vanilla
-in-level lower-screen wallpapers or use one selected wallpaper in every level.
-The available fixed designs are White Bricks, Star Pattern, Blue Bricks, Mario
-Silhouette, and Classic Overworld.
+**Camera and screen effects**
+
+| Trap | Effect |
+|---|---|
+| Camera Drift | Pulls the camera to one side. |
+| Screen Flip | Turns both DS screens upside down. |
+| Drunk Camera | Makes the camera sway left and right. |
+| Screen Tint | Covers the game with a colored tint. |
+| Retro Filter | Adds an old-screen color and scanline effect. |
+| Spotlight | Darkens everything outside a small visible area. |
+| Pixelation | Makes the game view appear pixelated. |
+
+**Damage, time, and item loss**
+
+| Trap | Effect |
+|---|---|
+| Ground Clap | Ground pounds temporarily damage Mario. |
+| Head Bonk | Hitting a block from below temporarily damages Mario. |
+| Bonk Trap | Immediately damages Mario. |
+| Coin Tax | Removes up to ten normal Coins. |
+| Coin Thief | Removes all normal Coins. |
+| Time Drain | Removes 50 seconds from the level timer. |
+| Power-Up Pickpocket Trap | Steals the touchscreen reserve Power-Up. |
+
+The usual host limit is a 50% trap rate. Higher trap rates and higher global
+Blocksanity percentages depend on the host allowing them.
+
+## Customization
+
+### Character colors and lower-screen backgrounds
+
+Mario and Luigi have separate color settings. Options include original colors, preset colors,
+**Random Preset**, and **Crazy Random**.
+
+Presets include Crimson, Emerald, Sapphire, Purple, Monochrome, Pastel Rosa,
+Gold, Silver, and Peach. Random Preset chooses one preset for the seed.
+Crazy Random randomizes the model's palette colors. Both random modes stay
+consistent for the seed and player.
+
+**Secondary Screen Background** can shuffle the five in-level lower-screen
+wallpapers or use one design in every level: White Bricks, Star Pattern,
+Blue Bricks, Mario Silhouette, or Classic Overworld.
+**Vanilla (default)** keeps the original assignments. **Randomized** shuffles
+all five designs once per seed and player, with every assignment changed.
+Levels that shared a wallpaper still share its replacement.
 
 ![Secondary Screen Background choices](secondary_screen_backgrounds.png)
 
-## Client and emulator features
+### Music
 
-The NSMBDS Client can launch BizHawk, the patched ROM, and the included Lua
-script for you. During play it shows received items,
-checked locations, and notifications.
+Music can stay unchanged, shuffle in levels only, shuffle in levels and on
+world maps separately, or mix both groups. Mixed music can place a world-map
+track in a level or a level track on a world map.
 
-The patched game unlocks the native **SAVE** option in the World Map menu, so
-you can save your current game at any time while on the World Map.
+Music choices stay consistent for the seed. Boss music, ambience, jingles,
+menus, minigames, and Power-Up themes are unchanged. Level music retains the
+BAH cues that enemies react to.
 
-The emulator also displays a configurable activity feed.
-It shows checks and item transfers in real time and can be scrolled. The
-client's **Settings** tab controls its status, width, screen position, and
-fade-out time; changes apply while the game is running. The feed can also be
-hidden temporarily with CTRL+SHIFT+H. Reconnecting may
-restore older feed messages, but already used lives, Coins, Power-Ups, and traps
-are not applied a second time.
+## Other
 
-### Hotkeys
+The generated YAML explains each setting. Groups such as `Star Coins`,
+`Secret Exits`, `Red Coin Challenges`, `1-Up Blocks`, `Blocksanity`, and
+`Toad Houses` allow settings to apply to a whole check category.
+Excluding checks from progression does not remove them from the game.
 
- - Toggle Emulator Feed: `CTRL+SHIFT+H`
+For bug reports, `/nsmbds_diag full` shows the current connection and sync state.
 
-## Important player options
-
-The generated YAML explains every available setting. These are the main groups
-you will find there:
-
-- **Goal:** victory condition and required Star Coin total.
-- **Locations:** Star Coin tracking, Red Coin Challenges, 1-Up Blocks, Secret
-  Exits, Toad Houses, and Blocksanity.
-- **Progression:** Star Coin gate mode, Tower/Castle Keys, and Power-Up Permits.
-- **Filler:** select which Power-Ups, lives, Coins, bonuses, and protection
-  items may appear through one list.
-- **Traps:** set the overall percentage and select allowed effects through one list.
-- **Multiplayer:** configure Death Link amnesty, effects, grace, cooldown, and Life Insurance behavior.
-- **Cosmetics:** select separate Mario and Luigi palettes, secondary-screen
-  backgrounds, and music randomization.
-
-Normal host safety limits allow up to 30% global Blocksanity checks and a 50%
-trap rate. Higher values require the host to explicitly allow unsafe NSMBDS
-options.
+For planned features, see the [Roadmap](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/Roadmap.md).
 
 ## Credits
 

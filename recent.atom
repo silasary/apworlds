@@ -2,230 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-12T12:19:25.602355+00:00</updated>
+  <updated>2026-10-12T18:16:54.153440+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.3</id>
-    <title>Dragon Quest IX v0.1.3</title>
-    <updated>2026-10-08T16:30:15+00:00</updated>
-    <author>
-      <name>kid2407</name>
-    </author>
-    <content># Dragon Quest IX - Beta Release (Version 0.1.3)&#13;
-&#13;
-**This is a beta release. Things can possibly break, though the core gameplay should run normally.**&#13;
-&#13;
-*This requires Archipelago **0.6.7 or newer!***&#13;
-*This **is** compatible with seeds generated on an earlier version*&#13;
-&#13;
-New to the game? Check out the [FAQ](https://discord.com/channels/731205301247803413/1427594624389742716/1491731616068800543)&#13;
-## Bugs fixed&#13;
-&#13;
-* XP Reward would not get applied properly - They now are granted to all vocations equally&#13;
-* Warriour's Armor now gets sorted into the correct equipment category</content>
-    <link href="https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.6</id>
-    <title>Ys Origin v1.9.2r4</title>
-    <updated>2026-10-08T17:40:25+00:00</updated>
-    <author>
-      <name>4rtefakt</name>
-    </author>
-    <content>&gt; 🧪 **Still a beta.** Requires **Archipelago 0.6.7 or newer**.
-&gt;
-&gt; ⚠️ **Copy all three files, and start a fresh seed.** Two item names changed meaning (Ruby and Topaz, see below), so a beta 5 seed won't line up with this apworld. Players mid-run on a beta 5 seed can still take the **DLL** alone: it brings every mod-side fix below except the Roda Fruit one, which needs a seed from this apworld.
-&gt;
-&gt; The mod fixes in this beta were reviewed and built, but **not yet played in-game**. Please report anything odd.
-
-See [beta 1](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.1) for the full 2.0 change list. Everything since then is included.
-
-## 🔥⚡ Torches need fire, cracked walls need thunder
-
-Some gates are not in any script: the engine itself makes a torch ignore everything but fire and a crumbling wall ignore everything but thunder. Every room's object table was scanned for these, and the logic now requires what the game requires:
-
-- **Flooded Prison 8F:** the wall hiding the **Arthropod Medallion** chest and the wall on the way up to the Roo both need the **Levinstrike Warhammer**. The red Menoaks holding the barrier shrug off weapons and wind, so that barrier needs thunder or fire.
-- **Flames of Guilt 11F:** the far side of the moving-platform room (its second chest, and the way on to 12F) needs the **Crimson Lotusblade** and the **Cerulean Flabellum**.
-- **Flames of Guilt 12F:** the **Construct Medallion** chest needs the Lotusblade for its four torches.
-- **Silent Sands 15F:** the cracked wall on the way to the **Creeper Medallion** needs the Warhammer.
-
-Before this, a seed could put the Warhammer or the Lotusblade behind the very wall or torch it opens.
-
-## 💎 Ruby and Topaz were the wrong way round
-
-The gem called Ruby upgraded thunder and the one called Topaz upgraded fire. The names now match the game: **Topaz is thunder, Ruby is fire**. Nothing else about them changed.
-
-## ⚙️ Options
-
-- **Progressive elemental skills are always on.** The first one you find is the skill itself, the next three are its upgrades. The option is gone from the template; old yamls still load.
-- **Random start now turns Statue warp locks on by itself.** Without them the mod never warped you to your spawn, while the logic assumed it had.
-- Finding a Cleria Ore upgrades your weapon whatever `weapon_requirements` is set to (it always did; the option only controls whether zones wait for it).
-
-## 🛠️ Mod fixes
-
-- **Thrown back to your start statue at the summit.** Loading a save and walking into the Tower Summit triggered the New Game spawn warp once. Fixed.
-- **Reconnects no longer hand out extra tiers.** Progressive Armor, Boots, skills and blessings moved up a tier every time the connection dropped and came back.
-- **Items sent while you were at the title screen are no longer lost.** SP, Celcetan Panaceas, blessing effects and skill levels were written before your save loaded, then overwritten by it. They now wait until you are in the game.
-- **Per-seed saves work without touching the config.** The default file pattern never matched the game's save files, so every seed shared one set of saves unless you had set `save_pattern=.bin` yourself. That is now the default.
-- **Roda Fruit can't be wasted.** The Roos can be fed in any order, and feeding a late one first could leave an early one (that the logic had promised you) without its fruit. The mod now keeps your fruit count at "Roos still unfed among the ones you have fruits for", so that can't happen.
-- **Switching rooms from the F8 menu** no longer carries over the previous seed's locked statues and suppressed items.
-- **No more repeated "Found" toasts** for old checks after a reconnect or on re-entering a room, and a statue purchase no longer reports twice.
-- **F9** (manual spawn warp) only works while the game window has focus.
-
-## Known issues
-
-- Some vanilla "you got it!" dialogue still plays when the real item is elsewhere (for example the Evil Ring charging).
-</content>
-    <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChrisCj8/ap_adventure/releases/tag/v0.4.0</id>
-    <title>GMod - apAdventure v0.4.0</title>
-    <updated>2026-10-08T17:53:37+00:00</updated>
-    <author>
-      <name>ChrisCj8</name>
-    </author>
-    <content>Uses [Version 0.3.0 of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/v.0.3.0) (a new version!)&#13;
-&#13;
-Major Changes/Additions:&#13;
-- added deathlink (toggled ingame) with support for grouped deathlink&#13;
-- added map configs for Half-Life 2s chapter "Anticitizen One"&#13;
-- Location entities will now have particles on them based on what flags the item placed on them has, hinted locations also get an icon above them signifying the hint status&#13;
-	- a new YAML option called `trap_vision` can be used to control whether these particles should show up on trap items&#13;
-- The ingame tracker now has a separate tab that shows all hints for the current slot, similar to the one in the generic text client&#13;
-	- Unlike the generic text client, it will only show items that have actually been loaded when trying to hint for items&#13;
-	- Locations can also be hinted from the regular tracker tab&#13;
-- added a new menu that can be used to add keybinds that will only be used in the apAdventure gamemode or only for the current run&#13;
-- configs will now store the map revision number of the current map when saved and use it to check if there's a mismatch if the config needs it&#13;
-- added some HL2-themed trap items&#13;
-- added Upsets Half-Life 1 SWEPs as an alternate weapon set (requires Half-Life: Source or Half-Life Deathmatch: Source)&#13;
-	- also included a new preset that uses them&#13;
-- added a Stalker Scream trap (blacklisted by default) (I wasn't going to add this at first, but [someone asked for it.](https://discord.com/channels/1085716850370957462/1492516400747778159/1545388855702855680))&#13;
-- Item definitions can now have a bunch of fields on them to control what flags the created item will have assigned to them&#13;
-- Added the `custom_parameters` YAML option, which can be used with the cparam node in access rules and accessed through the `APADV_CUSTOMPARAMS` global in lua to allow map configs and item sets to have their own YAML options&#13;
-	- some hl2 configs now use a parameter called `hl2_enable_janky_backtracks` that needs to be enabled to allow some of the jankier backtracking routes to be added to your run&#13;
-- the condition selectors in the region editor and the access editor ui for the cparam node now display icons next to different conditions to help users tell what game certain ammo types are from&#13;
-- the RedeemCheck field in an item definition for a OneUse item can now be set to `true` instead of a function to have the Redeem function itself return if an item should count as redeemed or not instead of the RedeemCheck function&#13;
-- added GravityGun to capab node presets&#13;
-- added some basic code to the gamemodes ShouldCollide hook to allow for easy custom collision filters&#13;
-	- this is currently only used to make everything that is not a player not collide with exit entities&#13;
-- added a `test_mode` YAML option, which can be used to disable some gamemode restrictions for testing purposes&#13;
-- tweaked capabilities on some hl2 weapons&#13;
-- tracker window now refuses to open when tracker data hasn't been received yet to prevent people from seeing a broken-looking tracker&#13;
-- the apworld will now also see logic data inside gmod addon folders to make installing custom content more straightforward&#13;
-- added a guide with information about packing custom content&#13;
-- the gamemode now sets the console variables `ai_ignoreplayers 0` and `npc_citizen_auto_player_squad 1` on initialization&#13;
-- the base lua files for item sets can now set the functions `OnLoad` and `OnUnload` to have code run when an itemset is loaded or unloaded&#13;
-- pass requirement checking functions a copy of the `engine.GetGames()` table that's been converted to use the folder fields as keys&#13;
-- added a requirement tag that checks if hl:s or hldm:s is mounted&#13;
-- reduced the requirements on the grenade access rule in d1_town_05 to ShortArcProjectile, removed the handplaced grenades since the map already has a crate that's guaranteed to give grenades nearby&#13;
-- the warnings shown for inaccessible access rules have been changed&#13;
-	- the inaccessible_warning yaml option now needs to be enabled for these to be written to the warning log&#13;
-	- will now also show up on inaccessible locations, entrances and exits, instead of just internal connections (idk why this was the case i never did this before, this seems like a very obvious thing to add in hindsight)&#13;
-	- warnings will now also show the actual json data from the access rule, as well as the conditions from the region it was placed on&#13;
-- wrote a guide with information about packing custom content&#13;
-- itemset base lua files can now have a function run when the itemset is loaded and/or unloaded&#13;
-- added option groups for yaml options&#13;
-- added a new yaml option called `filler_weight_override` that allows the fill weight for filler items to be overridden&#13;
-&#13;
-Fixes/Minor Changes:&#13;
-- fixed an issue where players could be placed inside a trigger_changelevel before it was removed, causing an immediate map change&#13;
-- added a check if the tracker has been loaded before querying it since some people reported lua errors stemming from this&#13;
-- made the gamemode auto-disconnect from AP if the server doesn't send it the run id&#13;
-- most GMod code files now use tabs for indentation to reduce file size + removed a bunch of unnecessary whitespace&#13;
-- some obsolete variables were removed&#13;
-- fixed an issue where the last remaining two-way connection would not be split properly, which could cause generation errors&#13;
-- short item names were removed from the datapackage for now (I intended to have the gamemode automatically use these unless there's a conflict, but never got around to implementing it, removing it for now to not bloat the DataPackage too much.)&#13;
-- the APADV_SAVEID global is now updated sooner so it's more consistent for functions that may get called in config scripts&#13;
-- fixed the tracker not properly reloading the ammomerge table if it was loaded from a previously saved .json&#13;
-- fixed the lua file containing the requirements ui not being AddCSLuaFile'd&#13;
-- changed the wording of one of the install instruction to prevent potential confusion&#13;
-- when loading configs, check if entities that have been marked for deletion by their map creation id are valid to prevent lua errors&#13;
-- check if the dupedata table is valid before running duplicator.Paste&#13;
-- fixed the spawnmenu not actually working while sv_cheats is enabled like it's supposed to&#13;
-- fixed the spawnpoint model being in the wrong folder because of a typo in the .qc&#13;
-- changed the `apadv_apsay` console command to only to only pass the first argument instead of the entire argstring, since this could cause it to mangle chat commands&#13;
-- removed some unnecessary debug prints&#13;
-- fixed the `apadv_loadcfg` concommand checking the wrong folder to detect if a configs exists, which meant it could only be used without arguments to reload the current config, renamed it from `apadventure_loadcfg` to be consistent with other gamemode concommands&#13;
-- make config script item handlers run after OnFullConnect&#13;
-- fixed the tracker breaking if a config tries to make a connection to a non-existing region, now throws a non-halting error instead&#13;
-- made the error displayed when locations that aren't present in the datapackage are detected after receiving full data more informative&#13;
-- fixed condition overrides not being included in the regconds set, which meant that some items would not end up being classified as progression items when they should&#13;
-- fixed `host.yaml` still being mentioned in the setup guide&#13;
-- removed hoverhint on the labels in the connection UI since OnCursorEntered doesn't actually work on labels&#13;
-- fixed the map list in the file manager not displaying if a map has both a static and local config&#13;
-- fixed implied capabilities not being properly applied to items for the ingame tracker, which caused some things to be considered as inaccessible when they shouldn't&#13;
-- fixed the "Copy Tag" option given when right-clicking a requirement tag in the config editors requirements list not actually doing anything&#13;
-- fixed a mistake in the requirement ui help text&#13;
-- fixed a bunch of clientside lua files not being AddCSLuaFile'd&#13;
-- un-capitalized some words in option descriptions that probably shouldn't be capitalized&#13;
-&#13;
-If you don't know what the .fgd file is for, you don't need it.&#13;
-&#13;
-# Important&#13;
-If you had an old version of the gmod addon installed, delete the old folder before installing the new one, some parts of the file system have changed. If you have made some custom content for apAdventure and put it into the apAdventure addon folder, check out [the packing custom content guide](https://github.com/ChrisCj8/ap_adventure/blob/main/apworld/docs/packing_custom_content_en.md) for information about how to pack your stuff so you won't lose it in the future.&#13;
-&#13;
-Also, you most likely won't be able to finish any old runs you've already started with this version, so finish those before updating.</content>
-    <link href="https://github.com/ChrisCj8/ap_adventure/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.7</id>
-    <title>Ys Origin v1.9.2r2</title>
-    <updated>2026-10-08T18:10:00+00:00</updated>
-    <author>
-      <name>4rtefakt</name>
-    </author>
-    <content>&gt; 🧪 **Still a beta.** Requires **Archipelago 0.6.7 or newer**.
-&gt;
-&gt; ⚠️ **Copy all three files, and start a fresh seed.** The logic changed again, so a seed made with beta 6 can ask for things in a different order than this apworld expects. Players mid-run on a beta 6 seed can still take the **DLL** alone.
-&gt;
-&gt; The mod changes in beta 6 and beta 7 were reviewed and built, but **not yet played in-game**. Please report anything odd.
-
-See [beta 1](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.1) for the full 2.0 change list and [beta 6](https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.6) for the fire and thunder gates. Everything since then is included.
-
-## 🔔 Undead barriers need the Silver Chimes
-
-Zeruenas, Karons, Zarues, Bazeraenas and Zelkarons get back up unless the Silver Chimes are equipped. Two barriers in the tower are held by them. The Zarue pit on 15F was already in the logic; the other was not:
-
-- **Corrupted Blood 20F:** the four red Zeruenas in the room past the 20F statue hold the barrier in front of the **Dragonbone Key** chest and the story scene there. The chest now needs the **Silver Chimes**, and so does Yunica's 1F Dreaming Idol check, which waits on that scene.
-
-## 🦘 Jumps the logic didn't know about
-
-Checked against the walkthrough for all three characters:
-
-- **Corrupted Blood 18F:** the spike-and-gate room right after the statue takes three double-jumps. Going past it now needs the **Gold Bracelet**. Before this, a seed could send you into Corrupted Blood without it.
-- **Demonic Core 22F:** the Roda Fruit chest across the gap needs the **Gold Bracelet** and the **Cerulean Flabellum**. The last Roo needs the **Gold Bracelet**.
-- **Flames of Guilt 10F:** the Roda Fruit chest needs the **Mask of Eyes** (the hidden bridge leads to the switch that raises its platform).
-
-## ⚙️ Options
-
-- **Catch-up EXP now defaults to 60** (it was 20, the same as the base rate, so it did nothing). Levels ramp steeply from 18F and a player on pace at 17F was falling a dozen levels behind. Set it equal to `exp_multiplier_base` if you want one flat rate.
-
-## 🛠️ Mod fixes
-
-- **"You got it!" when you didn't.** When a story scene hands over an item that the randomizer has moved (the Zelkarons charging the Evil Ring, for example), the dialogue still plays. The feed now tells you the game's own copy was withheld and yours comes from the multiworld.
-- **`!alias` no longer confuses the toasts.** Your own items showed as someone else's and popped twice once you had set an alias.
-- The weapon upgrade can no longer be re-applied on the title screen, and a few things the network thread shared with the game thread (the log file, item colours, blessing grants) are now properly guarded.
-
-## Known issues
-
-- Used medallions, keys and Moon Crests come back into the inventory after use. The doors they opened stay open; it is cosmetic.
-</content>
-    <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.0.0-beta.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-1.2.2</id>
-    <title>Slay The Princess v1.0.0r2</title>
-    <updated>2026-10-08T18:50:37+00:00</updated>
-    <author>
-      <name>Onilaf</name>
-    </author>
-    <content>Fix 1.2.1... (allows you to correctly generate)</content>
-    <link href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/tag/STP-1.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Bartz24/ArchipelagoLR/releases/tag/0.5.2</id>
     <title>Lightning Returns: Final Fantasy XIII v0.5.2</title>
@@ -1584,6 +1365,8 @@ Every one of these was a check or a passage the generator could count on while i
     </author>
     <content>Traps and an early enemy randomizer! Plus automatic shop hints, tracker map switching (for when the tracker updates), and a handful of bug fixes.&#13;
 &#13;
+10/12/26 WARNING: The randomizer trims some in game enemy animations due to hardware limitations. But it seems that these trimmed animations happen whether or not you have the randomizer enabled or disabled. This is a bug that I'll fix later today.&#13;
+&#13;
 [Full Readme here](https://github.com/brodieberger/MMZero3Archipelago)&#13;
 [Link to poptracker pack here](https://github.com/ambibii/mmz3-poptracker/releases/latest)&#13;
 &#13;
@@ -1614,9 +1397,9 @@ Enemies who drop a disk will have the archipelago icon above them. Recommended f
 ### Small stuff + Bug Fixes&#13;
 - Abandoned Research Laboratory no longer has progression items.&#13;
 - Putting the cursor on an item in Cerveau's shop now automatically unlocks its hint.&#13;
-- Story Progress could be undone by a game over.&#13;
-- The soldier in the Resistance Base's right tower sometimes never gave his check.&#13;
-- Receiving an item while in Ciel's save menu made all of the menu's text disappear. Items now wait until you close the menu.&#13;
+- Fixed bug where Story Progress could be undone by a game over.&#13;
+- Fixed bug where soldier in the Resistance Base's right tower sometimes never gave his check.&#13;
+- Fixed bug where receiving an item while in Ciel's save menu made all of the menu's text disappear.&#13;
 &#13;
 Tracker map switching support has also been added to the client, but will have to wait until the poptracker gets updated.</content>
     <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.4.0"/>
@@ -1821,5 +1604,149 @@ Note: Even though Archipelago 0.6.8 came out since the last update, this APWorld
 - Added explosiveless TotOK B10 to glitched logic&#13;
 - Fixed flag issue with spirit shrine when missing Spirit of Wisdom</content>
     <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.10.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.4</id>
+    <title>Pokemon Crystal v6.0.4</title>
+    <updated>2026-10-12T13:01:19+00:00</updated>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+## Bug Fixes&#13;
+- Fix a game hang when calculating the damage of Psywave used by a level 1 Pokemon.&#13;
+&#13;
+_This release is backwards compatible down to 6.0.0._</content>
+    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.3</id>
+    <title>AEMinecraft v0.7.0rc3</title>
+    <updated>2026-10-12T14:57:44+00:00</updated>
+    <author>
+      <name>KuroLynx</name>
+    </author>
+    <author>
+      <name>EDGN</name>
+    </author>
+    <content>## AEMinecraft v0.7.0-rc.3&#13;
+&#13;
+**Pre-release.** Third test build of v0.7.0. Stay on v0.6.2 if you want a stable game.&#13;
+&#13;
+This RC only lists what changed since the **[v0.7.0-rc.2 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.2)**. For everything new in v0.7.0, see the **[v0.7.0-rc.1 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1)**.&#13;
+&#13;
+### Fixed&#13;
+&#13;
+- **The game froze on the Nether and Adventure tabs.** With glitch logic on and structure, mob or Knowledge locks, opening those tabs after receiving a few items could freeze the game for good. The tracker now remembers the result of each shared part of a rule instead of working it out again every time it comes up, so the tabs open instantly. Thanks to MissingNoShiny on discord who tracked this one down.&#13;
+&#13;
+### Changed&#13;
+&#13;
+- **One Knowledge tile per progressive item.** Progressive Material Handling, Villager Trust, Structure Finder, Keep Inventory and Inventory Slot used to get one tile per copy, which got out of hand with large Keep Inventory or Inventory Slot pools. Each one is now a single tile:&#13;
+  - its tooltip counts the copies received so far, e.g. `3/10`;&#13;
+  - its frame turns gray from the right, one step per copy, and is fully gray once every copy is in;&#13;
+  - the hint line shows where the next copy is.&#13;
+- **Clearer error when the item pool is too big.** When a YAML asks for more items than it has locations, the error now lists how many items each option adds. It only suggests the location options you have turned off.&#13;
+&#13;
+### Upgrading from rc.2&#13;
+&#13;
+- **Replace both the apworld and the mod jar.** The tracker tiles changed on both sides, so an rc.2 jar with the rc.3 apworld (or the other way round) leaves the progressive tiles missing from the Knowledge tab. Your YAMLs keep working as they are.&#13;
+</content>
+    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PinkSwitch/Archipelago/releases/tag/cvdos3.1</id>
+    <title>Castlevania: Dawn of Sorrow v3.1.0</title>
+    <updated>2026-10-12T15:03:08+00:00</updated>
+    <author>
+      <name>Pink Switch</name>
+    </author>
+    <content># Castlevania: Dawn of Sorrow Archipelago Version 3.1 #&#13;
+## New Settings ##&#13;
+* ``No Logical Grinding``: Guarantees that you will always find a copy of a required Soul in the item pool, assuming Soulsanity is disabled (in which case this was always true anyways). This also allows logically relevant souls to be Shuffled if soul randomizer is set to shuffled&#13;
+* ``Weighted Chaos`` for Seal Details. This rolls a random line count between 2 and 20, then rolls an appropriate number of nodes, which should create more balanced seals.&#13;
+* ``Random Weapon Stats``: Applies a random percentage to weapon damage, between a 50% decrease to a 50% increase&#13;
+* ``Random Weapon Attributes``: Randomizes each weapon's base attribute between Strike, Stab, or Slash&#13;
+* ``Random Weapon Properties``: Randomizes secondary attributes of each weapon, and adds a small chance for an additional modifier.&#13;
+## Changes ##&#13;
+* Paranoia, Gergoth, and Abaddon can now only be shuffled to 1-tile rooms for being too janky&#13;
+* Balore's room is now converted into a 1-tile room is Balore is not the boss there&#13;
+* Rahab's room now spawns a floor if Rahab is not the boss there. Consequently, more bosses are allowed to spawn there now.&#13;
+* Balore now lowers the floor by one tile if shuffled onto the second Dark Chapel boss&#13;
+* The Quetzalcoatl in Dark Chapel is no longer in logic if the boss there is Rahab&#13;
+* Rahab, when shuffled, now always comes with a 2x2 room and a water line so the fight can work properly&#13;
+* Added a tower control button to the top of Condemned Tower&#13;
+## Fixes ##&#13;
+* Fixed ``The Pinnacle: Under Big Staircase`` being overwritten with the item at the Pinnacle central indoor room&#13;
+* Fixed the Subterranean Hell Spike Hallway not logically applying Rahab when checking for Bone Ark&#13;
+* Fixed some minor non-determinism in the order of vanilla souls in the spoiler log&#13;
+* Fixed certain souls being marked as important on non-soulsanity settings&#13;
+* Fixed Dmitrii's name being typoed literally everywhere&#13;
+* Fixed some dialogue being overwritten&#13;
+* Fixed some Souls still being generatable as duplicates&#13;
+* Fixed button checks being wrong&#13;
+* Fix boss shuffle dario not dying after fighting the boss in the throne room&#13;
+## Known Issues ##&#13;
+* None so Far</content>
+    <link href="https://github.com/PinkSwitch/Archipelago/releases/tag/cvdos3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.5</id>
+    <title>Oh So Hero! v1.0.5</title>
+    <updated>2026-10-12T15:30:36+00:00</updated>
+    <author>
+      <name>L-technology-mods</name>
+    </author>
+    <content># Oh So Hero! Archipelago v1.0.5
+
+Compatibility fix for Oh So Hero! 1.13.001 (Unity 2022.3.62).
+
+The plugin could load successfully and then be destroyed during startup, preventing automatic connections, progression restrictions and location checks. This release protects the plugin manager automatically, so you do not need to edit `BepInEx.cfg`.
+
+## Install or update
+
+- Close the game.
+- Download `OhSoHeroArchipelago-Client.zip` and extract its contents into your Steam game installation folder, next to `OhSoHero.exe`. Replace the old files when prompted.
+- Keep your existing Archipelago configuration and saves. Existing seeds remain compatible with this client fix.
+- For a first installation, also download `oh_so_hero.apworld` and install it through Archipelago Launcher.
+
+`OhSoHeroArchipelago-Release.zip` contains both downloads and the installation guide.
+
+Local testing on game 1.13.001 confirmed server connection, progression restrictions, scene checks and received consumables with the BepInEx manager protection enabled. The automatic protection uses the same flags as that tested setting.
+</content>
+    <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.2-unstable</id>
+    <title>New Super Mario Bros. DS v0.5.2</title>
+    <updated>2026-10-12T15:48:31+00:00</updated>
+    <author>
+      <name>Lemix028</name>
+    </author>
+    <content>### Features&#13;
+&#13;
+- **[Star Coin Gate Gap](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#star-coin-signs):** Choose between **3–5 Star Coins** per gate tier and as the cost of opening a sign. &#13;
+- **[Manual Power-Up Reserve](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#item-reserve):** Choose when to send a waiting Power-Up instead of receiving automatic refills. Automatic mode also lets you select the next item.&#13;
+- **[Early Power-Up Permits](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#power-up-permits):** Optionally place selected permits within the first two reachable check spheres. The default selection includes **Mushroom, Fire Flower and Touchscreen Pocket**.&#13;
+- **[Death Counter](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#death-counter):** Death statistics are saved per seed and player slot, with an optional display in the Overview. `/deathcounter` shows your stats and available stats from other players.&#13;
+- **[Level lookup](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#level-randomization):** `/level` helps you find shuffled level entrances. Location hints now include the entrance leading to the hinted level.&#13;
+&#13;
+### Fixes&#13;
+&#13;
+- Improved Level Randomization compatibility and check mapping.&#13;
+- Fixed checks being lost during connection interruptions.&#13;
+- Improved instant Star Coin tracking.&#13;
+- Improved emulator disconnect and reconnect handling.&#13;
+- Prevented duplicate item deliveries and fixed joining password-protected rooms.&#13;
+- Fixed the activity feed stalling when its history fills up.&#13;
+- Shuffled level music now preserves BAH cue support, keeping enemy reactions working in levels that use them.&#13;
+- Improved DeathLink handling during pauses and level transitions.&#13;
+- Prevented duplicate DeathLinks and fixed missed deaths after non-lethal hits or received extra lives.&#13;
+- **World 8-3:** Both Red Coin Challenges now have their own checks.&#13;
+- **World 7-5 Star Coin 2:** Added the missing **Mega Mushroom Permit** requirement.&#13;
+&#13;
+### Changes&#13;
+- Renamed the **"Vanilla"** Star Coin gate mode to **"No Keys"**. Existing YAMLs using `vanilla` remain compatible.</content>
+    <link href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.2-unstable"/>
   </entry>
 </feed>
