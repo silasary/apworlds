@@ -114,7 +114,8 @@ To edit the same settings outside the game:
    save for this seed. The Python client does not need to run while playing.
 
 Setup and the updated client copy connection details from the old `GtaVcAp.VC.ini`
-only when `connection.ini` does not exist. Existing `connection.ini` files are kept.
+only when `connection.ini` does not exist. Setup adds missing marker color settings
+to existing files while preserving connection details, custom colors, and other settings.
 Future connection edits belong in `connection.ini`. If shortcut creation fails,
 setup shows the file's full path.
 
@@ -123,6 +124,65 @@ packages green, robberies light red, rampages dark red, pickups orange,
 stunt jumps blue, properties yellow, side events cyan, and shop stock purple.
 Each dot has a 5x5 pixel center and a one-pixel black outline.
 Missions retain their existing markers. Current seeds work without regeneration.
+
+### Custom map marker colors
+
+To make the custom dots easier to distinguish, choose a color for each category.
+Close Vice City and open **Archipelago Connection Settings.lnk**, or open
+`%LOCALAPPDATA%\GtaVcAp\connection.ini` directly. Edit its `[marker_colors]`
+section. Setup adds missing color settings automatically, including during updates.
+If updating manually and the section is missing, append this block:
+
+```ini
+[marker_colors]
+preset=custom
+other=FFFFFF
+hidden_packages=3CFF5A
+robbable_stores=FF828C
+rampages=B92337
+pickups=FF9B1E
+stunt_jumps=418CFF
+properties=FFEB41
+side_events=37F0F0
+shops=D778FF
+finale_assets=B4FF23
+```
+
+For a ready-made palette intended for red/green color blindness, change only
+`preset=custom` to `preset=colorblind` and restart Vice City. Square dots keep their
+size and black outline. The palette uses [Paul Tol's muted scheme](https://sronpersonalpages.nl/~pault/)
+for the nine named categories, with white for the fallback:
+
+| Setting | Preset RGB |
+| --- | --- |
+| other | FFFFFF |
+| hidden_packages | 88CCEE |
+| robbable_stores | CC6677 |
+| rampages | 882255 |
+| pickups | DDCC77 |
+| stunt_jumps | 332288 |
+| properties | 117733 |
+| side_events | 44AA99 |
+| shops | AA4499 |
+| finale_assets | 999933 |
+
+The preset takes precedence over individual RGB settings without deleting them.
+Set `preset=custom` to use your saved colors again. To adjust the preset itself,
+copy the RGB values above into the individual settings and use `preset=custom`.
+Missing or unknown presets also use your individual settings.
+Color distinctions still depend on your vision, display and the map background;
+adjust individual colors if a pair is difficult to distinguish.
+
+With `preset=custom`, replace any category value with a six-digit RGB hex color,
+such as `0088FF` for blue or `FFFFFF` for white. An optional leading `#` and
+upper- or lowercase hex digits work too. Missing or invalid values keep that
+category's default. `other` sets the fallback for unknown categories;
+`finale_assets` covers income assets without an available AP purchase check.
+Assets with an available purchase check use `properties`.
+
+Save the file and restart Vice City. Your colors apply to both the radar and
+pause-menu map, across all seeds, and are preserved by setup updates.
+The game's existing mission icons retain their original appearance.
 
 Items, goals, and DeathLink use the room's slot data. Pending checks remain in
 `%LOCALAPPDATA%/GtaVcAp/GtaVcAp.<seed-hash>.json` until the server acknowledges

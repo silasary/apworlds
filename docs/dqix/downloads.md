@@ -1,9 +1,12 @@
 # Dragon Quest IX
 
 ## Latest
-- <a href="https://github.com/DQIX/ArchipelagoDQIX/releases/download/0.1.3/dqix.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/DQIX/ArchipelagoDQIX/releases/download/0.1.4/dqix.apworld">Latest Version (0.1.4)</a>
 
 ## All Versions
+
+#### v0.1.4
+- <a href="https://github.com/DQIX/ArchipelagoDQIX/releases/download/0.1.4/dqix.apworld">https://github.com/DQIX/ArchipelagoDQIX/releases/download/0.1.4/dqix.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/DQIX/ArchipelagoDQIX/releases/download/0.1.3/dqix.apworld">https://github.com/DQIX/ArchipelagoDQIX/releases/download/0.1.3/dqix.apworld</a>
