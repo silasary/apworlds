@@ -7,7 +7,8 @@
   "game": "West of Loathing",
   "github": [
     "https://github.com/Lucasvdm/WOLAP",
-    "https://github.com/TylerJG92/Archipelago-WOL-SOL"
+    "https://github.com/TylerJG92/Archipelago-WOL-SOL",
+    "https://github.com/TylerJG92/WOLAP"
   ],
   "license": "MIT",
   "manifest_fields": [
@@ -15,12 +16,12 @@
     "minimum_ap_version",
     "world_version"
   ],
-  "setup_guide_url": "https://github.com/Lucasvdm/WOLAP",
+  "setup_guide_url": "https://github.com/TylerJG92/WOLAP",
   "sheet_disclosure": [
     "Minimal",
-    "https://github.com/Lucasvdm/WOLAP"
+    "https://github.com/TylerJG92/WOLAP"
   ],
-  "sheet_stability": "Unstable",
+  "sheet_stability": "Stable",
   "versions": {
     "v0.1.0-alpha": {
       "created_at": "2025-05-01T23:12:53Z",
@@ -192,6 +193,21 @@
       "version_simple": "0.2.4",
       "world_version": "0.2.4a0"
     },
+    "v0.3.0-alpha": {
+      "created_at": "2026-10-03T01:42:02Z",
+      "description": "# WOLAP v0.3.0\r\n\r\n> **Important:** v0.3.0 contains generation-breaking AP World changes.\r\n>\r\n> If you want to use the new AP World, you must install the new `westofloathing.apworld` and generate a **new multiworld/seed**.\r\n>\r\n> Existing installs should update using the full v0.3.0 client package or their mod manager rather than only replacing `WOLAP.dll`, as the Archipelago client dependency has also been updated.\r\n\r\n## AP World Changes\r\n\r\n- Added several new checks, including:\r\n  - `Clown Campsite - Circus Information`\r\n  - `Hellstrom Ranch - Lucky Horseshoe`\r\n  - `Year Supply of Dynamite Crafted - 52 Dynamite`\r\n  - Four Soupstock Lode El Vibrato vending-machine checks\r\n- Split the generic El Vibrato Cylinder into three location-specific progression items.\r\n- Reworked El Vibrato progression and several associated access rules.\r\n- Reworked Ghostwood logic so later checks follow the actual quest sequence instead of opening early from received items.\r\n- Updated Tony's Boots logic to support the Mushroom Map route.\r\n- Cleaned up Can of Oil / Percussive Maintenance logic.\r\n- Reworked a large number of item classifications to provide a healthier filler pool and more flexibility with excluded locations.\r\n- Renamed several locations for clarity and corrected `Kaye Ridge Mine` and the Deepest Delve bracelet location.\r\n\r\n## Client Mod Changes\r\n\r\n- Added Archipelago shop hinting for progression items.\r\n- Added visit-aware hinting for Wanderin' Sally and fixed Tony's Boots hinting.\r\n- Expanded the missed-check recovery system through Lloyd at The Jewel Saloon.\r\n- Missed checks now use randomized recovery prices, with special handling for checks such as the Silver Turnip.\r\n- Reworked Ghostwood's in-game quest flow to prevent AP items from skipping or breaking progression.\r\n- Added support for the three new El Vibrato Cylinder items and the four Soupstock Lode vending checks.\r\n- Added numerous missed-check and sequence-break recoveries.\r\n- Added a workaround allowing the player to enter Frisco before resolving Emperor Norton.\r\n- Fixed Honeyed Jellybean progression issues.\r\n- Fixed a number of smaller gameplay, dialogue, location, and check-routing issues found during testing.\r\n- Updated `Archipelago.MultiClient.Net` from 6.6.1 to 6.7.1.\r\n\r\n## Installation\r\n\r\nThree installation methods are supported:\r\n\r\n- Thunderstore Mod Manager\r\n- r2modman\r\n- Manual installation\r\n\r\nSee the repository README for full installation and update instructions.\r\n\r\nA full breakdown of changes is available in the included changelog.\r\n\r\n# Misc. Changes\r\n\r\nXylen (@Lucasvdm) has stepped back and let me take over development of the mod fully. He will still be around but going forward I (@TylerJG92) will be taking over the Development of the Mod. If he decides to come back and work once again on the mod with me I will have no issues with it and may hand the reigns back over to him if he wishes, after all, I wouldn't have been able to learn about how to do this if it wasn't for the already existing code and all the documentation that they provided to me when I started expressing interest. As a result however of Xylen stepping back, for the foreseeable future, all releases of the WOLAP Mod will be released on my GitHub repo.",
+      "download_url": "https://github.com/TylerJG92/WOLAP/releases/download/v0.3.0-alpha/westofloathing.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a2fca28e93835de6ee8d1a1ed794f426a59b400f2e0965fd3e7d6c70599ea3c7",
+      "html_url": "https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.0-alpha",
+      "minimum_ap_version": "0.6.3",
+      "size": 31394,
+      "source_url": "https://api.github.com/repos/TylerJG92/WOLAP",
+      "tag": "v0.3.0-alpha",
+      "title": "WOLAP Release v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0r2"
+    },
     "v0.3.0a": {
       "created_at": "2026-10-03T00:55:07Z",
       "description": "# WOLAP v0.3.0\r\n\r\n> **Important:** v0.3.0 contains generation-breaking AP World changes.\r\n>\r\n> If you want to use the new AP World, you must install the new `westofloathing.apworld` and generate a **new multiworld/seed**.\r\n>\r\n> Existing installs should update using the full v0.3.0 client package or their mod manager rather than only replacing `WOLAP.dll`, as the Archipelago client dependency has also been updated.\r\n\r\n## AP World Changes\r\n\r\n- Added several new checks, including:\r\n  - `Clown Campsite - Circus Information`\r\n  - `Hellstrom Ranch - Lucky Horseshoe`\r\n  - `Year Supply of Dynamite Crafted - 52 Dynamite`\r\n  - Four Soupstock Lode El Vibrato vending-machine checks\r\n- Split the generic El Vibrato Cylinder into three location-specific progression items.\r\n- Reworked El Vibrato progression and several associated access rules.\r\n- Reworked Ghostwood logic so later checks follow the actual quest sequence instead of opening early from received items.\r\n- Updated Tony's Boots logic to support the Mushroom Map route.\r\n- Cleaned up Can of Oil / Percussive Maintenance logic.\r\n- Reworked a large number of item classifications to provide a healthier filler pool and more flexibility with excluded locations.\r\n- Renamed several locations for clarity and corrected `Kaye Ridge Mine` and the Deepest Delve bracelet location.\r\n",
@@ -206,6 +222,36 @@
       "title": "West of Loathing APWorld v0.3.0a",
       "version_simple": "0.3.0",
       "world_version": "0.3.0a0"
+    },
+    "v0.3.1-alpha": {
+      "created_at": "2026-10-03T16:21:54Z",
+      "description": "# Changelog for v0.3.1\r\n\r\nAll save files and AP Worlds Generated with v0.3.0 will be fine to upgrade to v0.3.1 without causing the game to break. No regeneration needed.\r\n\r\n## Client Mod Changes\r\n\r\n- Fixed a bug where the player can accidentally be locked out of the Norton dialog until they have all the crowns and the honey jellybean\r\n  - Intended design and what it was fixed now to do is to re-unlock the dialog with Norton once the player gets ANY of the crowns or the Honey Jellybean.",
+      "download_url": "https://github.com/TylerJG92/WOLAP/releases/download/v0.3.1-alpha/westofloathing.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a2fca28e93835de6ee8d1a1ed794f426a59b400f2e0965fd3e7d6c70599ea3c7",
+      "html_url": "https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.1-alpha",
+      "minimum_ap_version": "0.6.3",
+      "size": 31394,
+      "source_url": "https://api.github.com/repos/TylerJG92/WOLAP",
+      "tag": "v0.3.1-alpha",
+      "title": "WOLAP Release v0.3.1",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
+    },
+    "v0.3.2-alpha": {
+      "created_at": "2026-10-04T19:58:32Z",
+      "description": "# WOLAP v0.3.2\r\nAll save files and AP Worlds Generated with v0.3.0 will be fine to upgrade to v0.3.1 without causing the game to break. No regeneration needed.\r\n\r\n## Client Mod Changes\r\n* Fixed checklocation code looking for `Bizarre Ruin - Half-Buried Pedestal` when it should have been looking for `Bizarre Ruin (Humming Cave) - Half-Buried Pedestal`\r\n* Fixed checklocation code looking for `Deepest Delve Mine (Level 2) - Bracelet` when it should have been looking for `Deepest Delve Mine (Level 3) - Bracelet`\r\n",
+      "download_url": "https://github.com/TylerJG92/WOLAP/releases/download/v0.3.2-alpha/westofloathing.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a2fca28e93835de6ee8d1a1ed794f426a59b400f2e0965fd3e7d6c70599ea3c7",
+      "html_url": "https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.2-alpha",
+      "minimum_ap_version": "0.6.3",
+      "size": 31394,
+      "source_url": "https://api.github.com/repos/TylerJG92/WOLAP",
+      "tag": "v0.3.2-alpha",
+      "title": "WOLAP Release v0.3.2",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0r2"
     }
   }
 }
