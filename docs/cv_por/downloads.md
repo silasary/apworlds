@@ -1,9 +1,12 @@
 # Castlevania: Portrait of Ruin
 
 ## Latest
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.3.3/cv_por.apworld">Latest Version (1.3.3)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvpor2.0/cv_por.apworld">Latest Version (2.0.0)</a>
 
 ## All Versions
+
+#### v2.0.0
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvpor2.0/cv_por.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvpor2.0/cv_por.apworld</a>
 
 #### v1.3.3
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.3.3/cv_por.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.3.3/cv_por.apworld</a>

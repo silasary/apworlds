@@ -5,7 +5,7 @@ and discover why some things are best left forgotten.
 
 
 ## Downloads
-- <a href="https://github.com/alextric234/ArchipelagoDredge/releases/download/dredge_0.6.0/dredge.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/alextric234/ArchipelagoDredge/releases/download/dredge_0.7.0/dredge.apworld">Latest Version (0.7.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

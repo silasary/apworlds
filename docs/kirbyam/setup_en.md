@@ -2,7 +2,7 @@
 
 ## Required Software
 
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). This source fork now bundles framework 0.6.8; the standalone KirbyAM APWorld retains its 0.6.7 minimum.
 - A USA Kirby & The Amazing Mirror ROM. The Archipelago community cannot provide this.
 - [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) 2.7 or later
 - Alternatively, the **draft mGBA integration** below, with current runtime acceptance still outstanding.

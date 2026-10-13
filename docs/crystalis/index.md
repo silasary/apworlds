@@ -6,7 +6,7 @@ to find himself in a strange, post-apocalyptic world. Explore the land and fight
 
 
 ## Downloads
-- <a href="https://github.com/Ars-Ignis/Archipelago/releases/download/v3.0.2-Crystalis/crystalis.apworld">Latest Version (3.0.2rc0.post0)</a>
+- <a href="https://github.com/Ars-Ignis/Archipelago/releases/download/v3.1.0-Crystalis/crystalis.apworld">Latest Version (3.1.0rc0.post0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

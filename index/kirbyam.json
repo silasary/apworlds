@@ -237,6 +237,21 @@
       "title": "KirbyAM APWorld v0.4.0-rc2",
       "version_simple": "0.4.0",
       "world_version": "0.4.0rc2"
+    },
+    "kirbyam-v0.4.1": {
+      "created_at": "2026-10-12T21:21:37Z",
+      "description": "## v0.4.1\r\n\r\n### New Features\r\n- Choose Shadow, Ivory, Citrus, White or Lavender from Kirby Squeak Squad as your starting Kirby color (Issue #599). They're also included in the random color pool.\r\n\r\n### Improvements\r\n- Configure one-hit starts through Minimum Health and Maximum Health. The redundant One-Hit Mode selector is removed from templates; older YAML presets still convert automatically (Issue #955).\r\n- Reopening a game remembers items confirmed by the updated client, so food, lives, batteries, invincibility and traps are not applied again and old receive messages stay quiet. Permanent items can still be restored when loading an older save. If an interruption leaves an item's delivery uncertain, the client asks you to resolve it instead of guessing (Issue #952, PR #954).\r\n\r\n### Known Limitations\r\n- Progression: The entire game is still only two spheres. This means you can complete almost the entirety of Kirby and the Amazing Mirror without ever having to receive an item, except open the Dimension Mirror. In other words, you can do everything in the game except defeat Dark Mind without ever receiving an item from another player. This is a consequence of the original game design. We have plans to gate your progression in other ways, but they all require coding/hacking in intentional blockers.\r\n- Localization: Only the North American ROM is supported. All AP notifications are in English.\r\n- Native sprites and animations: Chests still show their original item sprite and collection animation. Statues still show their original ability.\r\n- mGBA: notifications appear as plain text in the **Archipelago Connector** scripting panel, which must be visible. They do not appear over the game image.\r\n\r\n### Bug Fixes\r\n- Keep Kirby and the phone, life icon and health display colors together, including Pink. Random-per-room takes priority over a saved owned-paint choice, then the AP static color, then default Pink; treasure-room choices now survive native save/load (Issue #918).\r\n- Restore acknowledged lever pulls after resets and reconnects, including already-loaded levers, without granting their separate wall items (Issue #949). Regenerate the ROM patch for immediate visual recovery.\r\n- Pause new item deliveries during the update that applies an incoming DeathLink, including links received while checking locations. Items already being delivered can still finish, and new deliveries resume after Kirby respawns (Issue #944).\r\n\r\n### Internal Changes\r\n- List ability items, including guaranteed starting abilities, in `items.json` for tracker support (Issues #957, #961).\r\n- Updated to AP 0.6.8 (Issue #933)\r\n\r\n### Additional fixes included from main\r\n\r\n- Restore packaged region discovery on Python 3.11 by using a package resource anchor.\r\n- Fix room-sanity generation by making each physical room check reachable from its valid compartment and restoring the missing Moonlight 2-05 lower descent (Issues #945, #969).\r\n- Random-per-room colors now update Kirby and the HUD when native palette transformations remain enabled during gameplay (Issue #966). Regenerate the ROM patch.\r\n- Allow the six guaranteed starting ability receipts and notices during the tutorial. Other items stay deferred, and Sword still requires its ability item (Issue #967).\r\n",
+      "download_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.4.1/kirbyam.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e0f9d9f51d159d03bb2a92a44411552268bed4d8c52e1199e87eace16a59b0cd",
+      "html_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.4.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 633042,
+      "source_url": "https://api.github.com/repos/hasherwi/Archipelago-kirbyam",
+      "tag": "kirbyam-v0.4.1",
+      "title": "KirbyAM APWorld v0.4.1",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1"
     }
   }
 }
