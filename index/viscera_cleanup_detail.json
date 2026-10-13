@@ -60,6 +60,20 @@
       "title": "1.2.0",
       "version_simple": "1.2.0",
       "world_version": "1.2.0"
+    },
+    "1.2.1": {
+      "created_at": "2026-10-13T08:52:10Z",
+      "description": "# Viscera Cleanup Detail 1.2.1\n\n**Fixes**\n- **Connecting did nothing on Windows installs with certain character sets.** The client crashed quietly while checking whether the game was running, so no save swap, no unlocked levels, no auto-launch, and a silent `/installmod`. Not an Archipelago 0.6.8 issue. A failed connect step now prints an error in the client window.\n- **A locked Mop no longer leaves you empty-handed.** The hands now come up on their own.\n- **An unlocked tool no longer waits on the Hands item.** Grabbing a floor drop whose tool is unlocked always works now.\n\n**Logic**\n- **Incubation Emergency's core kit tops out at 38 percent, not 80.** Measured in game. The rungs above 38 now need both the Vendor and the Laser Welder.\n\n**Upgrading**\n- Drop the new apworld into `custom_worlds`, restart the launcher, and reconnect. The client installs the updated game mod on connect.\n- The game mod package changed, and co-op only joins between identical packages, so everyone in a session needs this build.\n- Existing yamls keep working untouched, and seeds generated on 1.2.0 keep playing on this build. Only Incubation Emergency's logic differs for new seeds.\n",
+      "download_url": "https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/download/1.2.1/viscera_cleanup_detail.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5b7dfc24763021eb40e6f030919cf639a8f14cd9faa1713933a166229ae7801c",
+      "html_url": "https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.2.1",
+      "size": 288041,
+      "source_url": "https://api.github.com/repos/Kryen112/Viscera-Cleanup-Detail-AP",
+      "tag": "1.2.1",
+      "title": "1.2.1",
+      "version_simple": "1.2.1",
+      "world_version": "1.2.1"
     }
   }
 }

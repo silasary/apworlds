@@ -8,6 +8,9 @@
 #### v0.1.0.post2
 - <a href="https://github.com/chickentuna/WeddingWitchMod/releases/download/v0.1.0/wedding_witch.apworld">https://github.com/chickentuna/WeddingWitchMod/releases/download/v0.1.0/wedding_witch.apworld</a>
 
+#### v0.1.0r2
+- <a href="https://github.com/chickentuna/WeddingWitchMod/releases/download/v0.1.1/wedding_witch.apworld">https://github.com/chickentuna/WeddingWitchMod/releases/download/v0.1.1/wedding_witch.apworld</a>
+
 #### v0.1.0
 - <a href="https://github.com/chickentuna/WeddingWitchMod/releases/download/v0.1.0/wedding_witch.apworld">https://github.com/chickentuna/WeddingWitchMod/releases/download/v0.1.0/wedding_witch.apworld</a>
 

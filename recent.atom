@@ -2,152 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-13T06:22:42.717761+00:00</updated>
+  <updated>2026-10-13T12:21:18.646240+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.6</id>
-    <title>Laika: Aged Through Blood v0.1.6</title>
-    <updated>2026-10-09T21:20:25+00:00</updated>
-    <author>
-      <name>Seras</name>
-    </author>
-    <content># Laika: Aged Through Blood v0.1.6 Release! 🎊&#13;
-&#13;
-More ways to finish your run, more control over how you start, and a fresh look for Archipelago items!&#13;
-&#13;
-This update brings configurable victory goals, starting inventory, shop previews, new QoL options, and fixes for item delivery, Viscera recovery, and weapon swapping.&#13;
-&#13;
-## New Victory Goals&#13;
-&#13;
-- **Choose your finish line:** Victory can now come from defeating selected bosses, collecting Puppy Gifts, or completing Wastelander band quests.&#13;
-- **Boss goals:** Choose which of the six supported bosses count and how many you must defeat. You can keep Two-Beak God as your goal or build a different boss route.&#13;
-- **Puppy Gifts:** Require anywhere from **1–7 distinct gifts** received through Archipelago. Duplicate gifts do not count toward the total, and you do not need to deliver them to Puppy for this goal.&#13;
-- **Wastelanders:** Require anywhere from **1–6 Wastelander band quest completions**.&#13;
-- **Combine categories:** Require one, two, or all three enabled goal categories to finish your seed.&#13;
-- **Live goal checklist:** Added an optional on-screen checklist showing your remaining goals and progress.&#13;
-- **Generation checks:** Invalid combinations, such as requiring more bosses than you selected, produce a clear generation error.&#13;
-&#13;
-## Starting Inventory&#13;
-&#13;
-- **Choose your starting items:** Added `start_inventory_from_pool`, allowing you to begin with selected items taken from your randomized pool and replaced with filler.&#13;
-- **Start with supplies:** Viscera and ingredients are supported alongside equipment and other eligible items.&#13;
-- **Both weapon modes supported:** Names such as `Blueprint: Shotgun` work in both Direct and Crafting mode, following that mode’s existing grant behavior.&#13;
-- Items that require a safe quest state still wait until they can be delivered properly, and weapon upgrades can remain pending until their weapon is available.&#13;
-&#13;
-## Shops, Previews, and Presentation&#13;
-&#13;
-- **See what you are buying:** Randomized offers in shops, travelling merchants, and Renato’s map purchases now show the Archipelago item and its recipient.&#13;
-- **Optional automatic hints:** You can now enable or disable `automatic_purchase_hints` to create AP hints when opening eligible purchase previews. Previewing or cancelling an offer does not buy it or send its location check.&#13;
-- **Custom Laika AP artwork:** Added new Laika-themed Archipelago artwork to randomized purchase previews and AP item/location presentations.&#13;
-- **Clearer item popups:** Improved received-item and location-check presentation, including sender information where available.&#13;
-- **Less popup flooding:** Bursts of significant received items can be grouped into a summary.&#13;
-&#13;
-## New YAML and QoL Options&#13;
-&#13;
-- **Configurable transition skips:** Choose whether to skip Jakob’s transition, Orella’s transition, and Roy’s boat sequences.&#13;
-- **One Roy setting:** `skip_roy_boat` controls both the outbound presentation and the later return dialogue. Quest softlock protections remain active regardless of the skip setting.&#13;
-- **Viscera Protection:** Choose normal death behavior, protection from incoming DeathLink deaths only, or protection from all deaths. Previously dropped bags are unaffected.&#13;
-- **Optional goal display:** Use `show_goal_checklist` to show or hide the new victory checklist. Enabled by default.&#13;
-- Victory categories, required totals, selected bosses, starting inventory, and automatic purchase hints can all be configured for your seed.&#13;
-&#13;
-## Fixes and Reliability&#13;
-&#13;
-- **Unsaved Viscera recovery:** AP Viscera received after your last save can now be restored when continuing that save, including while disconnected from the server.&#13;
-- **Materials and ingredients:** Added equivalent recovery for unsaved AP crafting materials and ingredients.&#13;
-- **No repeated refunds:** Saved receipts stay complete after their currency or materials have been spent.&#13;
-- **Shop purchases:** Completed AP shop purchases now save, preserving the purchased reward, shop stock, and Viscera cost when returning to the title screen.&#13;
-- **Menu and save handling:** Improved item delivery across reconnects, save reloads, and deleting/recreating saves. Items wait for the gameplay save to be ready.&#13;
-- **Black-screen item prompts:** Fixed early item popups blocking the opening scene until their prompts were dismissed.&#13;
-- **Early weapon grants:** Refreshing weapons when boarding the bike helps newly received weapons become usable without needing to die or change scenes.&#13;
-- **Weapon wheel:** Fixed selection problems involving empty slots and mismatches between the selected wheel entry and equipped weapon.&#13;
-- **Hectist safeguards:** Expanded protection against reaching her final conversation before the required earlier quest steps.&#13;
-- **Connection controls:** Fixed a case where connecting from the title screen could leave the AP settings panel unresponsive.&#13;
-- **Overlay interaction:** The informational AP overlay no longer intercepts clicks intended for other controls.&#13;
-- **Saved options:** Improved preservation of seed settings across reconnects and save loading, and fixed cached goal lists accumulating duplicate entries.&#13;
-&#13;
-## Messages and Cleanup&#13;
-&#13;
-- Added a **[Chat]** label to chat messages.&#13;
-- Corrected messages that described another player finding their own item as though you had found it.&#13;
-- Fixed missing spacing in hint messages.&#13;
-- Standardized player-facing DeathLink messages.&#13;
-- Corrected the currency item name to **Viscera x300**, matching the amount already granted.&#13;
-- Removed temporary boat/hook diagnostic tracing.&#13;
-&#13;
-## Updating&#13;
-&#13;
-Update both the Laika mod, APWorld, as well as the `.yaml` file. Generate a new seed with the updated options to use the new run settings! Please try them out!&#13;
-&#13;
-The new consumable recovery protects receipts recorded after installing this update. It cannot safely reconstruct Viscera or materials already lost before the update. Which is why, as always, I recommend you use this new version on fresh runs/generated seeds.&#13;
-&#13;
-That's all for now! Please report any bugs here, and hope you enjoy all the new changes!&#13;
-&#13;
-&lt;img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/f1296b5a-f827-4b48-af49-55a473840ab0" /&gt;&#13;
-</content>
-    <link href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.5.0</id>
-    <title>Anno 1800 v1.5.0</title>
-    <updated>2026-10-09T22:35:10+00:00</updated>
-    <author>
-      <name>DarkListener</name>
-    </author>
-    <content>Finally, I can offer a visual tracker for Anno 1800 courtesy of Universal Tracker!&#13;
-&#13;
-### Changes&#13;
-* Added support for Universal Tracker to the Anno 1800 client&#13;
-  * If UT is installed and a fitting config .yaml is present, the client will automatically add tracking tabs, one of which has a nice visual overview&#13;
-  * Tracking is fully logic-compliant&#13;
-* Reworked the client, so that you can connect to the AP server at any time - this allows checking the tracker before connecting to Anno 1800&#13;
-* Removed 1500 obreros from the victory condition of the default and full presets due to redundancy&#13;
-* Updated to Archipelago 0.6.8&#13;
-* Revamped setup guide for better readability&#13;
-* Fixed Anno 1800 not connecting to the client when the mod folder was renamed&#13;
-* Fixed Anno GUIDs counting further and further up when more than 1 slot in a multiworld was Anno&#13;
-* Fixed random skyscraper hints when receiving regular residences&#13;
-  * Unfortunately, this also removes the proper skyscraper hints on reaching engineers or investors&#13;
-* Fixed the mod not showing up for download when hosting a game on the website&#13;
-&#13;
-This release is compatible with version 1.4.0 onwards. That means you can use this to have a tracker in your existing games!&#13;
-&#13;
-### [Game Page](&lt;https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.5.0/worlds/a1800/docs/en_Anno%201800.md&gt;) | [Setup](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.5.0/worlds/a1800/docs/setup_en.md) | [Items](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.5.0/worlds/a1800/docs/items_en.md) | [Locations](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.5.0/worlds/a1800/docs/locations_en.md) | [Roadmap](https://github.com/Dark-Listener/ArchipelagoA1800/blob/release/v1.5.0/worlds/a1800/docs/roadmap_en.md)&#13;
-&#13;
-Find the apworld and several template yamls below.</content>
-    <link href="https://github.com/Dark-Listener/ArchipelagoA1800/releases/tag/release/v1.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dghalfor/V-Rising-APWorld/releases/tag/0.3.3</id>
-    <title>V Rising v0.3.3</title>
-    <updated>2026-10-09T23:44:47+00:00</updated>
-    <author>
-      <name>dghalfor</name>
-    </author>
-    <content>Tannery is now added to progression.&#13;
-&#13;
-Selecting all filler of 0 will not null except.</content>
-    <link href="https://github.com/dghalfor/V-Rising-APWorld/releases/tag/0.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H3</id>
-    <title>Deadlock v1.2.0r3</title>
-    <updated>2026-10-09T23:46:09+00:00</updated>
-    <author>
-      <name>ArchipelagoBrad</name>
-    </author>
-    <content># City Never Sleeps Update&#13;
-&#13;
-Added Baba, Rat King, Solomon (The pawns move first)&#13;
-Waiting on Deadman Danny, Violet, Nurse Harrow&#13;
-&#13;
-# Bug Fixes&#13;
-- Re-implemented Urn/Rift Fix (accidentally overrode it)&#13;
-</content>
-    <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H3"/>
-  </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.0</id>
     <title>GTFO v0.0.4r3</title>
@@ -1621,7 +1480,7 @@ You will have to generate a new multiworld for this patch. Sorry!&#13;
   </entry>
   <entry>
     <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.1</id>
-    <title>Ratchet &amp; Clank 3 v0.6.1</title>
+    <title>Ratchet &amp; Clank 3 v0.6.1.post2</title>
     <updated>2026-10-13T05:00:50+00:00</updated>
     <author>
       <name>1theory</name>
@@ -1644,123 +1503,293 @@ You will have to generate a new multiworld for this patch. Sorry!&#13;
     <author>
       <name>Yuxia228</name>
     </author>
-    <content>## RaC3 APWorld v0.6.1
-
-**Branch:** staging  
-**Date:** 2026-10-13 06:02 UTC
-
-&lt;details&gt;
-&lt;summary&gt;&lt;strong&gt;📜 Summary (588 changes since v0.6.0)&lt;/strong&gt;&lt;/summary&gt;
-
-- RAC3: Remove deprecated UT handling (afaa6ffd6)
-- RAC3: Place all fixed items prior to counting required amount of filler needed. (210efaba4)
-- RAC3: Fix hideout taxi skip logic (f8ac68594)
-- RAC3: Fix jackpot not working on x1 multiplier (686e2ca8b)
-- RAC3: Add generation behavior option to the option struct (fae0f2b34)
-- RAC3: Fix Speedups yaml description confusion (f2c5831c7)
-- RAC3: Add generation behavior to slot data (369f3bd23)
-- RAC3: fix starting item generation and UT support (2a057d369)
-- RAC3: Refactor functions to match generation order (af6463f6f)
-- RAC3: Add Errorless Generation Option (a08e296c0)
-- RAC3: Fix some linting warning (b35ad96c8)
-- RAC3: Bit Read/Write cleanup (88340f02c)
-- RAC3: Prevent out of logic weapon levelling (3b16802a1)
-- RAC3: naming cleanup (d7b34a210)
-- RAC3: Reword weapon level location skip comment (4a4fff2a5)
-- RAC3: Remove staged read helpers and make read functions read from cache before memory (3fb645d23)
-- RAC3: Use a better address for master plan location (8d6e4a082)
-- RAC3: Fix weapon level ups not accumulating from offline fillers (bd9aab347)
-- RAC3: Fix generic option group name (01b02ab05)
-- RAC3: Add more helpers to check write cache before memory (348f4933b)
-- RAC3: Fix collect locations (a5531b306)
-- RAC3: Fix update equip breaking due to batch write (91623a40c)
-- RAC3: fix batch writer not working (4fde34f55)
-- RAC3: Add squared distance to moby function (ff3c17f25)
-- RAC3: Variable client update rate command (ca73ae593)
-- RAC3: General Batching Overhaul (528a6f25d)
-- RAC3: Fix weapon mods not getting taken away (590043da8)
-- RAC3: Convert more stuff to batch writing (5c4eca9cd)
-- RAC3: Adding missing batch write to messagebox (811baefa1)
-- RAC3: convert some writes to batch writes (c06eac8bd)
-- RAC3: Fix not enough locations post generation due to UT failing (dea832ae3)
-- RAC3: Prevent duplicate mod items to ruin the unlock status value (910ca75c5)
-- RAC3: add SKIP address CHECKTYPE (1bde35f90)
-- RAC3: address convert cleanup (b83b4c789)
-- RAC3: one hp challenge property cleanup (d881ef5e7)
-- RAC3: float typing (020e96f58)
-- RAC3: Weapon Mod and Item Unlock Clean-up (02c1f83ae)
-- RAC3: Fix slot data checks (28668f50a)
-- RAC3: Formatting and Spelling (e3326adb5)
-- RAC3: Fix duplicate warning for vid comic health upgrades (8a29b9263)
-- RAC3: remove accents from code cave too (4795061d9)
-- RAC3: Refactor pause state to game state (ce04178f2)
-- RAC3: Remove unlock delay (7972b98d4)
-- RAC3: Remove wrench replacement if not unlocked (eeab2f7a4)
-- RAC3: Clarify weapon mods yasml option description (43a45a7e9)
-- RAC3: Mention weapon mods as a large item contributor (35080efad)
-- RAC3: Add weapon mods as AP items (b9c923499)
-- RAC3: Update comment and default values for weapon_level_options (ba1cd9c24)
-- RAC3: Rework weapon_level_options into OptionSet (1eb4cbc0b)
-- RAC3: Update pypine (f30d933c6)
-- RAC3: Formatting revision on the troubleshooting section (a7f8950f3)
-- RAC3: Refer to the new custom channel in the setup guide (b0219f651)
-- RAC3: Improve death count messaging (7cd0378ce)
-- RAC3: Add death count popup messages and a command for toggling it (d620b36c7)
-- RAC3: Force staging branch for vanilla changes documentation (91683ba1b)
-- RAC3: Fix changes link in FAQ (22622c79c)
-- RAC3: Update pypine (8433991e2)
-- RAC3: Auto equip charge boots when received (424fccd54)
-- RAC3: Reword the description for NGPlusStart (0ecbca0c7)
-- RAC3: Add more RAC5 versions to other ratchets (f678a6929)
-- RAC3: Add batch reads and writes to cycle benchmark stats (277f0acc8)
-- RAC3: Get rid of old pcsx2_interface (fdef65bc5)
-- RAC3: Add pypine as a submodule (d4f28ca34)
-- RAC3: Fix code cave start overlapping with something used on boot (67ed48337)
-- RAC3: JP: Fix address translation for progress flags (829fada6c)
-- RAC3: Rename skip_wait_save to skip_save_cooldown (76bc953f7)
-- RAC3: Make location checking skip the save wait time (f02d4a077)
-- RAC3: Make write vendor inventory use batching (1c1006ea6)
-- RAC3: Add batch functions to interfaces (8563d4240)
-- RAC3: Update pypine (a848b2f0f)
-- RAC3: add missing apostrophe (f5520ff1f)
-- RAC3: Change save cooldown to 1 minute instead of 3 seconds (1bf3fe1f3)
-- RAC3: Limit server side saving to once every 3 seconds (0878b0766)
-- RAC3: Make cycle update logging only appear if dev build (06ff04ea7)
-- RAC3: Fix load_level dev command not working properly with regions with spaces (104dd17a0)
-- RAC3: Remove the 255 cap on stored fillers (25a1f4af5)
-- RAC3: Move RYNO handling to rac3_interface.py (4a5e9a1b6)
-- RAC3: Update invalid planet homewarp check (e807e3f5a)
-- RAC3: Fix server saves (83c214ed7)
-- RAC3: Fix /ryno command (9a01e81d9)
-- RAC3: Fix Ship teleport on JP, fix server side save loading and fix assertion errors for PDA vendor distance (358913c4d)
-- RAC3: Add weapon level to save data (b509e61ab)
-- RAC3: Fix weapon level and exp getting reset when it shouldnt (5a81d3777)
-- RAC3: Formatting (936e8ad75)
-- RAC3: Add missing option to rac3 interface (25d3bb424)
-- RAC3: Add vid comic health upgrade locations and bonus health upgrade items (1d3883a68)
-- RAC3: Dont include Galaxy Burger if rangers missions are off (f3941f01c)
-- RAC3: Search for ratchet moby pointer if it is missing (f97410ab0)
-- RAC3: Add TODO about refractor skip (d1dcfd326)
-- RAC3: Adjust Aridia Mission 3 logic for long range weapons (a3b399e4f)
-- RAC3: Also force xp and level back to V1 for locked weapons (973aec734)
-- RAC3: Fix grammar (e1bd1852e)
-- RAC3: Explain why some refractor doors dont open with refractor skip (c4d1143cd)
-- RAC3: Fix typo in NGPlusItems (836d7a4aa)\n- ...and 388 more commits.
-
-&lt;/details&gt;
-
-**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.6.0...v0.6.1
-
-### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)
-
-### Notes
-This release was automatically generated from the **staging** branch.  
-Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
-
-### If a location is broken and does not get sent out
-Go to the server console (locally or via the Archipelago room page) and run:  
-`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`
+    <content>## RaC3 APWorld v0.6.1&#13;
+&#13;
+**Branch:** staging  &#13;
+**Date:** 2026-10-13 06:02 UTC&#13;
+&#13;
+&lt;details&gt;&#13;
+&lt;summary&gt;&lt;strong&gt;📜 Summary (588 changes since v0.6.0)&lt;/strong&gt;&lt;/summary&gt;&#13;
+&#13;
+- RAC3: Remove deprecated UT handling (afaa6ffd6)&#13;
+- RAC3: Place all fixed items prior to counting required amount of filler needed. (210efaba4)&#13;
+- RAC3: Fix hideout taxi skip logic (f8ac68594)&#13;
+- RAC3: Fix jackpot not working on x1 multiplier (686e2ca8b)&#13;
+- RAC3: Add generation behavior option to the option struct (fae0f2b34)&#13;
+- RAC3: Fix Speedups yaml description confusion (f2c5831c7)&#13;
+- RAC3: Add generation behavior to slot data (369f3bd23)&#13;
+- RAC3: fix starting item generation and UT support (2a057d369)&#13;
+- RAC3: Refactor functions to match generation order (af6463f6f)&#13;
+- RAC3: Add Errorless Generation Option (a08e296c0)&#13;
+- RAC3: Fix some linting warning (b35ad96c8)&#13;
+- RAC3: Bit Read/Write cleanup (88340f02c)&#13;
+- RAC3: Prevent out of logic weapon levelling (3b16802a1)&#13;
+- RAC3: naming cleanup (d7b34a210)&#13;
+- RAC3: Reword weapon level location skip comment (4a4fff2a5)&#13;
+- RAC3: Remove staged read helpers and make read functions read from cache before memory (3fb645d23)&#13;
+- RAC3: Use a better address for master plan location (8d6e4a082)&#13;
+- RAC3: Fix weapon level ups not accumulating from offline fillers (bd9aab347)&#13;
+- RAC3: Fix generic option group name (01b02ab05)&#13;
+- RAC3: Add more helpers to check write cache before memory (348f4933b)&#13;
+- RAC3: Fix collect locations (a5531b306)&#13;
+- RAC3: Fix update equip breaking due to batch write (91623a40c)&#13;
+- RAC3: fix batch writer not working (4fde34f55)&#13;
+- RAC3: Add squared distance to moby function (ff3c17f25)&#13;
+- RAC3: Variable client update rate command (ca73ae593)&#13;
+- RAC3: General Batching Overhaul (528a6f25d)&#13;
+- RAC3: Fix weapon mods not getting taken away (590043da8)&#13;
+- RAC3: Convert more stuff to batch writing (5c4eca9cd)&#13;
+- RAC3: Adding missing batch write to messagebox (811baefa1)&#13;
+- RAC3: convert some writes to batch writes (c06eac8bd)&#13;
+- RAC3: Fix not enough locations post generation due to UT failing (dea832ae3)&#13;
+- RAC3: Prevent duplicate mod items to ruin the unlock status value (910ca75c5)&#13;
+- RAC3: add SKIP address CHECKTYPE (1bde35f90)&#13;
+- RAC3: address convert cleanup (b83b4c789)&#13;
+- RAC3: one hp challenge property cleanup (d881ef5e7)&#13;
+- RAC3: float typing (020e96f58)&#13;
+- RAC3: Weapon Mod and Item Unlock Clean-up (02c1f83ae)&#13;
+- RAC3: Fix slot data checks (28668f50a)&#13;
+- RAC3: Formatting and Spelling (e3326adb5)&#13;
+- RAC3: Fix duplicate warning for vid comic health upgrades (8a29b9263)&#13;
+- RAC3: remove accents from code cave too (4795061d9)&#13;
+- RAC3: Refactor pause state to game state (ce04178f2)&#13;
+- RAC3: Remove unlock delay (7972b98d4)&#13;
+- RAC3: Remove wrench replacement if not unlocked (eeab2f7a4)&#13;
+- RAC3: Clarify weapon mods yasml option description (43a45a7e9)&#13;
+- RAC3: Mention weapon mods as a large item contributor (35080efad)&#13;
+- RAC3: Add weapon mods as AP items (b9c923499)&#13;
+- RAC3: Update comment and default values for weapon_level_options (ba1cd9c24)&#13;
+- RAC3: Rework weapon_level_options into OptionSet (1eb4cbc0b)&#13;
+- RAC3: Update pypine (f30d933c6)&#13;
+- RAC3: Formatting revision on the troubleshooting section (a7f8950f3)&#13;
+- RAC3: Refer to the new custom channel in the setup guide (b0219f651)&#13;
+- RAC3: Improve death count messaging (7cd0378ce)&#13;
+- RAC3: Add death count popup messages and a command for toggling it (d620b36c7)&#13;
+- RAC3: Force staging branch for vanilla changes documentation (91683ba1b)&#13;
+- RAC3: Fix changes link in FAQ (22622c79c)&#13;
+- RAC3: Update pypine (8433991e2)&#13;
+- RAC3: Auto equip charge boots when received (424fccd54)&#13;
+- RAC3: Reword the description for NGPlusStart (0ecbca0c7)&#13;
+- RAC3: Add more RAC5 versions to other ratchets (f678a6929)&#13;
+- RAC3: Add batch reads and writes to cycle benchmark stats (277f0acc8)&#13;
+- RAC3: Get rid of old pcsx2_interface (fdef65bc5)&#13;
+- RAC3: Add pypine as a submodule (d4f28ca34)&#13;
+- RAC3: Fix code cave start overlapping with something used on boot (67ed48337)&#13;
+- RAC3: JP: Fix address translation for progress flags (829fada6c)&#13;
+- RAC3: Rename skip_wait_save to skip_save_cooldown (76bc953f7)&#13;
+- RAC3: Make location checking skip the save wait time (f02d4a077)&#13;
+- RAC3: Make write vendor inventory use batching (1c1006ea6)&#13;
+- RAC3: Add batch functions to interfaces (8563d4240)&#13;
+- RAC3: Update pypine (a848b2f0f)&#13;
+- RAC3: add missing apostrophe (f5520ff1f)&#13;
+- RAC3: Change save cooldown to 1 minute instead of 3 seconds (1bf3fe1f3)&#13;
+- RAC3: Limit server side saving to once every 3 seconds (0878b0766)&#13;
+- RAC3: Make cycle update logging only appear if dev build (06ff04ea7)&#13;
+- RAC3: Fix load_level dev command not working properly with regions with spaces (104dd17a0)&#13;
+- RAC3: Remove the 255 cap on stored fillers (25a1f4af5)&#13;
+- RAC3: Move RYNO handling to rac3_interface.py (4a5e9a1b6)&#13;
+- RAC3: Update invalid planet homewarp check (e807e3f5a)&#13;
+- RAC3: Fix server saves (83c214ed7)&#13;
+- RAC3: Fix /ryno command (9a01e81d9)&#13;
+- RAC3: Fix Ship teleport on JP, fix server side save loading and fix assertion errors for PDA vendor distance (358913c4d)&#13;
+- RAC3: Add weapon level to save data (b509e61ab)&#13;
+- RAC3: Fix weapon level and exp getting reset when it shouldnt (5a81d3777)&#13;
+- RAC3: Formatting (936e8ad75)&#13;
+- RAC3: Add missing option to rac3 interface (25d3bb424)&#13;
+- RAC3: Add vid comic health upgrade locations and bonus health upgrade items (1d3883a68)&#13;
+- RAC3: Dont include Galaxy Burger if rangers missions are off (f3941f01c)&#13;
+- RAC3: Search for ratchet moby pointer if it is missing (f97410ab0)&#13;
+- RAC3: Add TODO about refractor skip (d1dcfd326)&#13;
+- RAC3: Adjust Aridia Mission 3 logic for long range weapons (a3b399e4f)&#13;
+- RAC3: Also force xp and level back to V1 for locked weapons (973aec734)&#13;
+- RAC3: Fix grammar (e1bd1852e)&#13;
+- RAC3: Explain why some refractor doors dont open with refractor skip (c4d1143cd)&#13;
+- RAC3: Fix typo in NGPlusItems (836d7a4aa)\n- ...and 388 more commits.&#13;
+&#13;
+&lt;/details&gt;&#13;
+&#13;
+**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.6.0...v0.6.1&#13;
+&#13;
+### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)&#13;
+&#13;
+### Notes&#13;
+This release was automatically generated from the **staging** branch.  &#13;
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
+&#13;
+### If a location is broken and does not get sent out&#13;
+Go to the server console (locally or via the Archipelago room page) and run:  &#13;
+`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
 </content>
     <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.2.1</id>
+    <title>Viscera Cleanup Detail v1.2.1</title>
+    <updated>2026-10-13T08:52:10+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content># Viscera Cleanup Detail 1.2.1
+
+**Fixes**
+- **Connecting did nothing on Windows installs with certain character sets.** The client crashed quietly while checking whether the game was running, so no save swap, no unlocked levels, no auto-launch, and a silent `/installmod`. Not an Archipelago 0.6.8 issue. A failed connect step now prints an error in the client window.
+- **A locked Mop no longer leaves you empty-handed.** The hands now come up on their own.
+- **An unlocked tool no longer waits on the Hands item.** Grabbing a floor drop whose tool is unlocked always works now.
+
+**Logic**
+- **Incubation Emergency's core kit tops out at 38 percent, not 80.** Measured in game. The rungs above 38 now need both the Vendor and the Laser Welder.
+
+**Upgrading**
+- Drop the new apworld into `custom_worlds`, restart the launcher, and reconnect. The client installs the updated game mod on connect.
+- The game mod package changed, and co-op only joins between identical packages, so everyone in a session needs this build.
+- Existing yamls keep working untouched, and seeds generated on 1.2.0 keep playing on this build. Only Incubation Emergency's logic differs for new seeds.
+</content>
+    <link href="https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.4</id>
+    <title>Crash Team Racing v0.2.4</title>
+    <updated>2026-10-13T08:53:12+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content>CTR Archipelago 0.2.4 is out. Here's the short version. [Full release notes are on AP-Pie](https://ap-pie.com/ctr/releases/0-2-4).
+
+[Setup guide (ap-pie.com)](https://ap-pie.com/guides/ctr) · [SETUP.md](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) · [SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.2.4/SETUP.md)
+
+## What's new since 0.2.3
+
+- **Generation:** big rooms generate much faster.
+- **Fewer refused YAMLs:** about 4 in 10 random YAMLs got refused in our tests, down from almost 8 in 10. Every YAML that worked on 0.2.3 still works.
+- **Race-loss DeathLink:** only sends when you haven't won that race yet and it's in logic for you. Rooms from before 0.2.4 keep the old rule.
+- **Trial pads:** the Slide Coliseum and Turbo Track pads no longer trap you in the warp after a Collect.
+- **Bosses:** only bosses you beat yourself count, so a Collect can't finish a Bosses goal or softlock any_percent ([#458](https://github.com/dowlle/ctr-native-ap/issues/458)).
+- **Itemsanity:** finished pads stay open if you have a weapon with an open check ([#452](https://github.com/dowlle/ctr-native-ap/issues/452)).
+- **Slide Coliseum:** if a seed has fewer than 10 Sapphire Relics, the pad opens at the number it has.
+- **Extracted assets:** no more BIN prompt on every launch ([#444](https://github.com/dowlle/ctr-native-ap/issues/444)).
+- **Demo Camera trap:** L2 no longer breaks it ([#454](https://github.com/dowlle/ctr-native-ap/issues/454)).
+
+## Downloads
+
+On Windows, grab `ctr-archipelago-v0.2.4-windows-x86.zip`. On Linux or Steam Deck, grab `ctr-archipelago-v0.2.4-linux-x86.tar.gz` (glibc 2.36 or newer). Both include the client and the matching `ctr.apworld`. You can keep playing a 0.2.3 room on the 0.2.4 client. For new seeds, use the 0.2.4 client and APWorld together. Hosting needs Archipelago 0.6.7 or newer, and 0.6.8 works too.
+
+The separate `ctr.apworld` and `Crash.Team.Racing.yaml` are for hosts. Use the `.sha256` files to check your downloads. `manifest.json` and `manifest.json.minisig` are the signed manifest; the full notes explain how to check it. The `.debug` files help with crash reports. You don't need them to play. You need your own NTSC-U disc, no game data is included. The client isn't code-signed.
+
+Known issues: a full-accessibility CTR slot next to a minimal-accessibility slot can fail to generate on some seeds (just generate again). You may also see short pauses on screen changes, stalls from big reconnect backlogs ([#147](https://github.com/dowlle/ctr-native-ap/issues/147)), or invisible podium characters ([#282](https://github.com/dowlle/ctr-native-ap/issues/282)).
+
+## Download checksums
+
+| Asset | SHA-256 |
+|---|---|
+| `ctr-archipelago-v0.2.4-windows-x86.zip` | `2a8fe4a9594e3ba77230716ff4f722bf44f62c6269a3d28f5818f91a9c54d9cf` |
+| `ctr-archipelago-v0.2.4-linux-x86.tar.gz` | `79d0d430946a27bbf939aceb875f1f20037aef093fb283599ea4d015fa4f5b8e` |
+| `ctr.apworld` | `ec904aca46a7420a88447f06005266d77d9a99ea39302f071549e438ce828e78` |
+| `manifest.json` | `c6aca5fe4ea0ed6221c5ba0be75195de4eab1621ba5fd1822c617f430305ca75` |
+
+## Found a problem?
+
+[Open a GitHub issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) with your client version, platform, seed or YAML and what happened. For a support bundle, run `support-bundle.bat` on Windows or `support-bundle.sh` on Linux. Look through it before attaching it. It doesn't upload anything by itself. Questions are welcome in the [Crash Team Racing channel](https://discord.com/channels/731205301247803413/1222304293751750777) on the Archipelago Discord.
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/chickentuna/WeddingWitchMod/releases/tag/v0.1.1</id>
+    <title>Wedding Witch v0.1.0r2</title>
+    <updated>2026-10-13T09:31:25+00:00</updated>
+    <author>
+      <name>chickentuna</name>
+    </author>
+    <content>## Changes since 0.1.0
+
+- Achievements pay out their Love Coins again: each room now keeps its own achievement progress instead of sharing your normal save's.
+- The main menu's **Shop** button can be reached with the arrow keys and gamepad.
+
+The apworld and YAML are unchanged from 0.1.0, so existing seeds keep working.
+
+Archipelago randomizer for **Wedding Witch**. The witch's upgrade shop stops selling
+upgrades — all 73 levels become Archipelago items — and its shelves are restocked with
+checks instead, which is what Love Coins buy now.
+
+A default seed is 82 checks: the three potions offered after every stage, the boss beaten
+in each of the six witch forms on Nightmare (once in any form on the lower difficulties),
+and 20 shop shelves.
+
+## What's in this release
+
+| File | Where it goes |
+|---|---|
+| `WeddingWitchArchipelago-0.1.1.zip` | unzips into the game folder |
+| `wedding_witch.apworld` | your Archipelago install's `custom_worlds/` |
+| `WeddingWitch.yaml` | your Archipelago install's `Players/`, after editing |
+
+## 1. Install BepInEx
+
+Wedding Witch is a Unity **Mono** build, so it needs the Mono flavour of BepInEx 6 from
+the [bleeding-edge builds page](https://builds.bepinex.dev/projects/bepinex_be). The
+IL2CPP builds will not load. Take the newest one for your platform:
+
+- **Windows** — `BepInEx-Unity.Mono-win-x64-6.0.0-be.*.zip`
+- **Linux** — `BepInEx-Unity.Mono-linux-x64-6.0.0-be.*.zip`
+
+Unzip it into the game folder — the one holding `Wedding Witch.exe` on Windows or
+`Wedding Witch.x86_64` on Linux. Steam's *Manage → Browse local files* will take you
+there.
+
+Then launch the game once and quit. That first run creates `BepInEx/plugins`, and it
+will not create it until the game has actually started.
+
+**Linux only**, two extra steps:
+
+```sh
+chmod +x run_bepinex.sh
+```
+
+and set the game's Steam launch options to:
+
+```
+./run_bepinex.sh %command%
+```
+
+Without the launch options BepInEx is never loaded and the game simply runs unmodded.
+Windows needs neither — its BepInEx hooks the executable directly.
+
+## 2. Install the mod
+
+Unzip `WeddingWitchArchipelago-0.1.1.zip` into the same game folder. It carries its own
+`BepInEx/plugins/...` path, so you should end up with:
+
+```
+Wedding Witch/BepInEx/plugins/WeddingWitchArchipelago/WeddingWitchArchipelago.dll
+```
+
+## 3. Install the apworld
+
+Drop `wedding_witch.apworld` into `custom_worlds/` in your Archipelago install, then edit
+`WeddingWitch.yaml` and put it in `Players/`. Both the host generating the seed and anyone
+tracking it need the apworld.
+
+## 4. Play
+
+Launch the game. The connection panel opens itself on the main menu; &lt;kbd&gt;F1&lt;/kbd&gt;
+toggles it. Fill in the server address, port, your slot name and the room password if
+there is one, then press Connect. Your details are remembered for next launch.
+
+The main menu gains a **Shop** button beside **Upgrades**: Upgrades lists the levels the
+multiworld has sent you, unbuyable, and Shop sells Archipelago checks for Love Coins.
+
+Your upgrade levels, coins and stats are kept per room, so connecting neither reads nor
+writes the save you play unconnected.
+
+## Notes
+
+Universal Tracker is supported and needs no YAML of its own.
+
+Which difficulties you can play comes from the multiworld rather than from clearing the
+previous one, so expect Hard and Nightmare to be locked until the items turn up.
+
+---
+🤖 Release notes generated with [Claude Code](https://claude.com/claude-code)
+</content>
+    <link href="https://github.com/chickentuna/WeddingWitchMod/releases/tag/v0.1.1"/>
   </entry>
 </feed>
