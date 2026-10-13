@@ -639,6 +639,21 @@
       "title": "v1.3.0",
       "version_simple": "1.3.0",
       "world_version": "1.3.0"
+    },
+    "v1.3.1": {
+      "created_at": "2026-10-12T18:54:20Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).\r\n\r\n- The \"Auto Expand Nomai Text\" setting now avoids editing the Solanum conversation (from @aXu-AP), instead of making all possible text appear at the same time. Also tweaked the wording of both the colorize and auto-expand settings.\r\n- Clicking \"New Random Expedition\" on a vanilla profile will now display a warning popup about overwriting the vanilla save (from @aXu-AP)\r\n- Changing the \"Death Link Override\" setting to disable death link now takes effect immediately. Previously *enabling* death link would take effect immediately, but due to a bug *disabling* only took effect after restarting Outer Wilds.\r\n- DLC\r\n\t- Fixed `spawn: stranger` and `early_key_item: any` placing Nomai Warp Codes early instead of Stranger Light Modulator (from @aXu-AP)\r\n\t- Stranger spawn will now spawn the ship facing outwards toward space.\r\n\t- Added \"EotE Ship Log: Hidden Gorge 1 - Visit\" to the ship log's AP Checklist (thanks @hopop201 for noticing it was missing).\r\n- Suitless logic:\r\n\t- Suitless logic is now aware that that the Sun Tower warp platform requires Spacesuit\r\n\t- shuffle_spacesuit description now warns that it's a harder setting which requires dying to reach locations (from @hopop201)\r\n- Forgotten Castaways\r\n\t- Fixed our workaround for the \"Recursive Node\" failing to spawn. @RS-Mind originally implemented this in v1.2.2, but a simple mistake unfortunately prevented that code from ever being run. Now that the mistake has been fixed, hopefully the workaround will start working.\r\n\t- Quitting while in Forgotten Castaways' custom system would previously softlock the main menu by failing to display any clickable buttons. This has been fixed.\r\n\t- Unbroke the \"Taming Techniques\" item for Forgotten Castaways. Previously, the vanilla interaction this item represents was not being disabled (thanks Dapling for noticing), but now it's been fixed so that interaction is disabled until you receive the item.\r\n\t- Similarly unbroke the randomization of Graviton's Folly lever puzzle.\r\n- Echo Hike\r\n\t- Picking up the Threader item no longer incorrectly triggers the \"EotE: Find an Artifact\" location (from @aXu-AP)\r\n- The Outsider\r\n\t- Corrected \"TO: Northern Observatory (Final Text Wheel)\" so it's now triggered by the last text wheel instead of the 2nd-to-last text wheel\r\n- Fret's Quest\r\n\t- Added missing signal locations \"FQ: Scan Tuner Signal\" and \"FQ: Scan Strum's Radio Signal\"\r\n- Some of the dynamic logic for warp rando has been refactored. This should not cause any user-facing behavior changes; just mentioning it in case a bug is found.\r\n",
+      "download_url": "https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v1.3.1/outer_wilds.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3aa979ca82e158755d7472302e3675fab4db87bcfa461095667544e777742859",
+      "html_url": "https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.3.1",
+      "minimum_ap_version": "0.5.0",
+      "size": 88981,
+      "source_url": "https://api.github.com/repos/Ixrec/OuterWildsArchipelagoRandomizer",
+      "tag": "v1.3.1",
+      "title": "v1.3.1",
+      "version_simple": "1.3.1",
+      "world_version": "1.3.1"
     }
   }
 }

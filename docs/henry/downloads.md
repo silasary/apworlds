@@ -29,3 +29,6 @@
 #### v1.0.0
 - <a href="https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/prototype2/henry.apworld">https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/prototype2/henry.apworld</a>
 
+#### v0.5
+- <a href="https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/0.5/henry.apworld">https://github.com/funjeff/HenryStickminArchipelagoIntegration/releases/download/0.5/henry.apworld</a>
+
