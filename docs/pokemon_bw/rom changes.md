@@ -1,4 +1,4 @@
-# All (player relevant) base modifications to the roms (as of 0.2.0)
+# All (player relevant) base modifications to the ROMs (as of 0.3.11)
 
 - New and changed roadblocks
   - Man hindering the player from entering route 3 now requires the parcel
@@ -23,7 +23,7 @@
     in The Riches' villa in Undella Town
   - Razor fang and razor claw in Giant Chasm (as recurring hidden item on a suspicious rock)
 - Removed trade and time requirements from evolutions
-  - Kadabra, Machocke, Graveler, Haunter, Boldore, and Gurrdurr per levelup
+  - Simple levelup: Kadabra (32), Machocke (40), Graveler, Haunter, Boldore, and Gurrdurr (37)
   - Karrablast and Shelmet by levelup with the other one (or its evolution) in your team
   - Eevee to Espeon and Umbreon via Sun and Moon Stone
   - Poliwhirl, Slowpoke, Onix, Scyther, Rhydon, Seadra, Electabuzz, Magmar, Porygon, Porygon2, Feebas, Dusclops, 
@@ -33,7 +33,7 @@
 - Added multiple NPCs for different AP-related purposes
   - An NPC in Nimbasa City that can change the weather (if `Season Control` is not `vanilla`)
   - An NPC in Castelia City that checks for the completion of the TM/HM hunt goal
-  - An NPC in Accumula Town that resets static encounters (including gift and trade encounters)
+  - An NPC in Accumula Town that resets static/gift encounters and trades
 - Added the possibility to buy Master Balls for varying prices (if enabled) via the following ways:
   - Cheren's Mom in Nuvema Town
   - The NPC in Undella Town selling evolution items can also include Master Balls in his offers
@@ -48,6 +48,7 @@
   - Also made some events trigger every time instead of once a day
 - Prevented gym events from being disabled when beating the gym leader
 - The grunt at Pokémon League teleporting you to N's castle now stays even after defeating Ghetsis
-- Professor Juniper is now always in her laboratory, regardless of current story events
+- Certain NPCs are now always at their standard locations regardless of story events
+- Changed some key items' descriptions to reflect their purpose in AP
 - Fossils can now always be revived in the Nacrene City museum, regardless of current story events
 - Added a debug menu to the PC help menu

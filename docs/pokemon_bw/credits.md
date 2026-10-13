@@ -1,11 +1,29 @@
-### Contributors
+# Credits for Pokémon Black and White Archipelago
+
+## Contributors
+
+### Main development
 
 - BlastSlimey
-- SparkyDaDoggo / Eevee658
-- palex00
-- Various users in the #future-game-design thread
 
-### Resources
+### UT map tracker integration
+
+- palex00
+- RadisNoir
+- darkfire
+- Darvitz
+
+### Other contributions
+
+- Darvitz
+- Seatori
+- SparkyDaDoggo / Eevee658
+
+### Testing and bug reporting
+
+- Various users in the #future-game-design thread and custom games channel
+
+## Resources
 
 - Bulbapedia (various contributors)
 - Action Replay cheat codes (various contributors)

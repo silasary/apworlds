@@ -2,142 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-13T12:21:18.646240+00:00</updated>
+  <updated>2026-10-13T18:20:58.307246+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.0</id>
-    <title>GTFO v0.0.4r3</title>
-    <updated>2026-10-10T00:13:38+00:00</updated>
-    <author>
-      <name>RoboRyGuy</name>
-    </author>
-    <content>First beta release of Archipelago.&#13;
-Added path renaming and added path ordering as slot data. Fixed some bugs, including an oversight with the Universal Tracker integration.</content>
-    <link href="https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.4.0-rc2</id>
-    <title>Kirby &amp; The Amazing Mirror v0.4.0rc2</title>
-    <updated>2026-10-10T04:18:01+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>## v0.4.0
-
-### New Features
-- Added `minimum_health` and `maximum_health` YAML options for a custom starting/final HP capacity (Issues #778, #947). Defaults remain 6/10; all starting/final ranges within 1..10 HP are supported with up to nine unique Vitality Counter upgrades. Existing One-Hit Mode presets override these options.
-- mGBA now supported as an optional emulator.
-- All minor chests are added as locations and no longer provide their native item.
-- Spray Paints and Music Sheets added as AP items.
-- Added an `/abilities` client command that lists the abilities currently unlocked for the slot (Issue #891, PR #951).
-- Added a new option: `enemy_health_multiplier`. Scale all enemies' health values between 50% to 500% of the original game. It defaults to 100% which matches the original game (Issue #880).
-- Added `random_color_per_room` to Starting Kirby Color. It chooses an initial supported palette at generation, then changes to a different supported palette whenever the connected BizHawk client observes Kirby enter a different room (Issue #857).
-- Added four progression items that independently open the walls controlled by those levers. Pulling a lever now sends its AP location check without opening the wall; receiving the matching Lever Wall item sets the native wall-unlock state instead (Issue #859).
-
-### Improvements
-- Ability unlock gating also applies at the final native ability commit, after roulette and other pending-ability writes (Issue #892).
-- Unused Vitality Counters are replaced through the existing filler/trap policy while all vitality-chest checks remain available.
-- The Tutorial World Map - Big Chest location check is now sent during the tutorial; item delivery remains paused until normal gameplay begins (Issue #868).
-- Consolidated `defeat_random_hidden_area_boss` and `defeat_configured_area_boss` into the canonical `defeat_area_boss` goal. `configured_area_boss: random` now uses Archipelago's standard `Choice` randomization, the old `defeat_configured_area_boss` name remains a safe YAML alias, and all eight boss-to-area mappings are corrected (Issue #872).
-- Generated YAML documentation now shows the scalar `configured_area_boss: random` and `starting_kirby_color: random` shorthands and explains how they replace the generated concrete weight mappings (Issue #872).
-
-### Known Limitations
-- Progression: The entire game is still only two spheres. This means you can complete almost the entirety of Kirby and the Amazing Mirror without ever having to receive an item, except open the Dimension Mirror. In other words, you can do everything in the game except defeat Dark Mind without ever receiving an item from another player. This is a consequence of the original game design. We have plans to gate your progression in other ways, but they all require coding/hacking in intentional blockers.
-- Use newly generated ROM patches for offline custom health initialization; older patches need a same-seed rebuild to embed health bounds. Client reconciliation remains required for authoritative AP ownership. Full gameplay coverage of every custom-health interaction remains pending.
-- Kirby Color: random_color_per_room changes Kirby's color but does not update the corresponding UI element colors.
-- Localization: Only the North American ROM is supported. All AP notifications are in English.
-- Native sprites and animations: Chests still show their original item sprite and collection animation. Statues still show their original ability.
-- mGBA notifications appear as plain text in the **Archipelago Connector** scripting panel, which must be visible. They do not appear over the game image.
-
-### Bug Fixes
-
-- Boss checks were mapped incorrectly for the `defeat_configured_area_boss` goal. That's been fixed (Issue #893).
-- Adds cutter to the base ability pool to make sure players can cut the drop down platforms. (Issue #894)
-- Preserve locally found ability unlocks after reconnecting by requesting the full received-item history from the server (Issue #910).
-
-### Internal Changes
-- Added shared health-range validation, full supported-range item-pool coverage, client reconciliation regression tests, and YAML/slot-data contracts without changing payload offsets or item IDs.
-- Added pinned, checksum-verified Archipelago generation fuzzing with a strict local launcher, a pull-request/manual CI workflow, and retained failure artifacts (Issue #898).
-- `starting_kirby_color` now uses the same standard Archipelago `Choice` literal `random`; the former world-specific `random_color` sentinel has been removed (Issue #872).
-- Split Kirby color catalog validation into focused helpers so Flake8 complexity checks remain meaningful without suppressing C901 (Issue #872).
-</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.4.0-rc2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.4.0</id>
-    <title>Kirby &amp; The Amazing Mirror v0.4.0</title>
-    <updated>2026-10-10T04:18:01+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>## v0.4.0
-
-### New Features
-- Added `minimum_health` and `maximum_health` YAML options for a custom starting/final HP capacity (Issues #778, #947). Defaults remain 6/10; all starting/final ranges within 1..10 HP are supported with up to nine unique Vitality Counter upgrades. Existing One-Hit Mode presets override these options.
-- mGBA now supported as an optional emulator.
-- All minor chests are added as locations and no longer provide their native item.
-- Spray Paints and Music Sheets added as AP items.
-- Added an `/abilities` client command that lists the abilities currently unlocked for the slot (Issue #891, PR #951).
-- Added a new option: `enemy_health_multiplier`. Scale all enemies' health values between 50% to 500% of the original game. It defaults to 100% which matches the original game (Issue #880).
-- Added `random_color_per_room` to Starting Kirby Color. It chooses an initial supported palette at generation, then changes to a different supported palette whenever the connected BizHawk client observes Kirby enter a different room (Issue #857).
-- Added four progression items that independently open the walls controlled by those levers. Pulling a lever now sends its AP location check without opening the wall; receiving the matching Lever Wall item sets the native wall-unlock state instead (Issue #859).
-
-### Improvements
-- Ability unlock gating also applies at the final native ability commit, after roulette and other pending-ability writes (Issue #892).
-- Unused Vitality Counters are replaced through the existing filler/trap policy while all vitality-chest checks remain available.
-- The Tutorial World Map - Big Chest location check is now sent during the tutorial; item delivery remains paused until normal gameplay begins (Issue #868).
-- Consolidated `defeat_random_hidden_area_boss` and `defeat_configured_area_boss` into the canonical `defeat_area_boss` goal. `configured_area_boss: random` now uses Archipelago's standard `Choice` randomization, the old `defeat_configured_area_boss` name remains a safe YAML alias, and all eight boss-to-area mappings are corrected (Issue #872).
-- Generated YAML documentation now shows the scalar `configured_area_boss: random` and `starting_kirby_color: random` shorthands and explains how they replace the generated concrete weight mappings (Issue #872).
-
-### Known Limitations
-- Progression: The entire game is still only two spheres. This means you can complete almost the entirety of Kirby and the Amazing Mirror without ever having to receive an item, except open the Dimension Mirror. In other words, you can do everything in the game except defeat Dark Mind without ever receiving an item from another player. This is a consequence of the original game design. We have plans to gate your progression in other ways, but they all require coding/hacking in intentional blockers.
-- Use newly generated ROM patches for offline custom health initialization; older patches need a same-seed rebuild to embed health bounds. Client reconciliation remains required for authoritative AP ownership. Full gameplay coverage of every custom-health interaction remains pending.
-- Kirby Color: random_color_per_room changes Kirby's color but does not update the corresponding UI element colors.
-- Localization: Only the North American ROM is supported. All AP notifications are in English.
-- Native sprites and animations: Chests still show their original item sprite and collection animation. Statues still show their original ability.
-- mGBA notifications appear as plain text in the **Archipelago Connector** scripting panel, which must be visible. They do not appear over the game image.
-
-### Bug Fixes
-
-- Boss checks were mapped incorrectly for the `defeat_configured_area_boss` goal. That's been fixed (Issue #893).
-- Adds cutter to the base ability pool to make sure players can cut the drop down platforms. (Issue #894)
-- Preserve locally found ability unlocks after reconnecting by requesting the full received-item history from the server (Issue #910).
-
-### Internal Changes
-- Added shared health-range validation, full supported-range item-pool coverage, client reconciliation regression tests, and YAML/slot-data contracts without changing payload offsets or item IDs.
-- Added pinned, checksum-verified Archipelago generation fuzzing with a strict local launcher, a pull-request/manual CI workflow, and retained failure artifacts (Issue #898).
-- `starting_kirby_color` now uses the same standard Archipelago `Choice` literal `random`; the former world-specific `random_color` sentinel has been removed (Issue #872).
-- Split Kirby color catalog validation into focused helpers so Flake8 complexity checks remain meaningful without suppressing C901 (Issue #872).
-</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.42</id>
-    <title>Mental Omega v0.6.6r2</title>
-    <updated>2026-10-10T10:39:15+00:00</updated>
-    <author>
-      <name>Mental Omega Randomizer contributors</name>
-    </author>
-    <content>- Improve Performance in UI for Shopmode&#13;
-- Fix ABOTTLE crash&#13;
-- Fix Menu in Archipelago not working&#13;
-- Fix Hovercraft units being detected as flying units for modifier in shopmode (You shall not build)&#13;
-- Fix UI bug in Shopmode&#13;
-- Add building limit buff for hyperion, warpnode, ultradome, iron guard, war rig, signal inhibitor and plasmerizer&#13;
-- Fix Shrike Nest buffs not working&#13;
-- Fix Nanocharge &#13;
-- Add Powerhouse Modifier for enemy buffs&#13;
-- Add Description which type of Mission it is (Build, no build, no build production)&#13;
-- Add Coop functionality&#13;
-&#13;
-Note to Coop:&#13;
-This is *only* working currently via a LAN Connection so you will need to use something like ZeroTier, Hamachi whatever exists. &#13;
-In Shopmode each player uses their Playerprofile and keeps their unlocks, in Gridmode you share the same units/buffs etc.</content>
-    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.42"/>
-  </entry>
   <entry>
     <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.4</id>
     <title>Dragon Quest IX v0.1.4</title>
@@ -1036,90 +905,6 @@ This RC only lists what changed since the **[v0.7.0-rc.2 release notes](https://
     <link href="https://github.com/PinkSwitch/Archipelago/releases/tag/cvdos3.1"/>
   </entry>
   <entry>
-    <id>https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.7.0</id>
-    <title>Dredge v0.7.0</title>
-    <updated>2026-10-12T15:05:00+00:00</updated>
-    <author>
-      <name>Alextric</name>
-    </author>
-    <author>
-      <name>fight4day</name>
-    </author>
-    <content>&gt; [!IMPORTANT]&#13;
-&gt; Use this apworld with **mod 3.0.0** (link to the mod release). Seeds generated with 0.6.0 should be finished on **mod 2.0.0**: abilities, pursuits and research work differently now.&#13;
-&gt;&#13;
-&gt; Gameplay changes, the in-game tracker and client fixes are in the mod release notes.&#13;
-&#13;
-## New locations&#13;
-&#13;
-A default base-game seed now has **366** locations, up from 319.&#13;
-&#13;
-| Group | 0.6.0 | 0.7.0 |&#13;
-| --- | ---: | ---: |&#13;
-| Dredge spots | 126 | 126 |&#13;
-| Encyclopedia | 151 | 151 |&#13;
-| Research | 25 | 25 |&#13;
-| Research unlocks | 17 | now events |&#13;
-| Pursuits | – | 31 |&#13;
-| World | – | 23 |&#13;
-| Messages in a bottle | – | 10 |&#13;
-| **Total** | **319** | **366** |&#13;
-&#13;
-- **Pursuits:** each character's questline, including the steps where characters hand out research books, Grotesque Fish, the relic hand-ins, and the pursuit reward grids.&#13;
-- **World:** the shrines, 13 shore caches, the Old Wreck, the Old Mayor's Camps, the Old Laboratory and the Stone Tablets.&#13;
-- **The Iron Rig** adds 4 pursuit checks: Rig Built, Science Lab Built, Generator Fuelled and the Factory.&#13;
-- **The Pale Reach** adds 6 pursuit checks (Under The Ice ×4, the Ice Shaper and the shrine), 9 captain's logs, and the Teleport Anchor dredge spot.&#13;
-&#13;
-Removed: shop checks and the unused relic and prototype locations.&#13;
-&#13;
-## New items&#13;
-&#13;
-- **The Collector's abilities** (Haste, Manifest, Banish, Atrophy) are items. Atrophy can catch spot fish in logic.&#13;
-- **Quest items:** Bronze Belt Buckle, Dog Tags, Mortar Frame, Mortar Barrel, Family Crest, Stone Tablet 1–3, and Ice Axe ×4 (Pale Reach).&#13;
-- **Aurous Anchor** (Pale Reach).&#13;
-- **Aberration chance items:** Progressive Aberration Chance and Guaranteed Aberrations. Each one received raises your minimum aberration chance.&#13;
-- **13 traps:** Damaging Event, Scary Event, Money Loss, Teleport, Panic, Hull Damage, Engine Damage, Nightfall, Rot, Slow, Lights Out, Cargo Scramble and Reverse Controls.&#13;
-- **Research Parts are removed** from the pool, since research costs nothing in an AP save.&#13;
-&#13;
-## Options&#13;
-&#13;
-| Option | Change |&#13;
-| --- | --- |&#13;
-| `require_engines` | Removed, replaced by `require_boat_performance` |&#13;
-| `require_boat_performance` | New. Areas need enough engine speed and light that fits your hull (see below) |&#13;
-| `include_message_bottles` | New, on by default |&#13;
-| `include_research_checks` | New, on by default |&#13;
-| `progressive_aberration_chance_items` | New, 0–20 |&#13;
-| `guaranteed_aberrations_item` | New |&#13;
-| `trap_percentage` | New, 0–100, default 0 |&#13;
-| `enabled_traps` | New, all traps by default |&#13;
-| `start_inventory_from_pool` | Now supported. Starting Progressive Hulls are capped at the seed's hull count |&#13;
-&#13;
-**Boat performance thresholds**&#13;
-&#13;
-| Area | Speed | Light |&#13;
-| --- | ---: | ---: |&#13;
-| Gale Cliffs, Stellar Basin, Twisted Strand, Devil's Spine | 50 kn | 1800 lm |&#13;
-| Open Ocean, the Iron Rig | 50 kn | 2100 lm |&#13;
-| The Pale Reach | 60 kn | 2100 lm |&#13;
-&#13;
-Shop-bought copies of engines and lights count toward this. Lights become progression when the option is on.&#13;
-&#13;
-**Aberrations** need at least half (rounded up) of the Progressive Aberration Chance items, or Guaranteed Aberrations. If neither option is on, aberrations aren't gated. A warning is shown when aberrations are included without these items.&#13;
-&#13;
-## Logic fixes&#13;
-&#13;
-- Rods and nets only count once the hull has room to equip them.&#13;
-- Colossal Squid and Pale Grasper need the Radiant Trawl Net.&#13;
-- Oarfish and Gulper Eel don't need exotic bait, and other exotic fish have alternative requirements.&#13;
-- Iron Rig phase fish need Iron Rig access.&#13;
-- The three Icebreaker parts satisfy Icebreaker requirements.&#13;
-- The Deluxe-only Arterial Engine is removed from the pool.&#13;
-- Useful items are only added for expansions the seed includes.&#13;
-- Generation fails clearly when items outnumber locations.</content>
-    <link href="https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.7.0"/>
-  </entry>
-  <entry>
     <id>https://github.com/PinkSwitch/Archipelago/releases/tag/cvpor2.0</id>
     <title>Castlevania: Portrait of Ruin v2.0.0</title>
     <updated>2026-10-12T15:11:18+00:00</updated>
@@ -1791,5 +1576,393 @@ previous one, so expect Hard and Nightmare to be locked until the items turn up.
 🤖 Release notes generated with [Claude Code](https://claude.com/claude-code)
 </content>
     <link href="https://github.com/chickentuna/WeddingWitchMod/releases/tag/v0.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.2.1</id>
+    <title>Taskipelago v1.2.1</title>
+    <updated>2026-10-13T14:13:41+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>## What's New&#13;
+* Regions and item groups can now be disabled via a toggle, lending to quicker editing of existing yamls. This can be an effective stand in for "yaml options" on larger yamls.&#13;
+* Subgrouping now supported for items, not just regions.&#13;
+* Items can now be set as "early" via archipelago's built-in "early_items" support&#13;
+* You can now shuffle a group's order of items without randomizing what the group includes&#13;
+* Some spreadsheet-style data entry keybinds added (Shift + Tab, Tab, Shift + Enter, Enter)&#13;
+* Region thresholds that are less than 100% are now visually indicated by a vertical line on the region's progress bar&#13;
+&#13;
+## Bug Fixes &amp; Tweaks&#13;
+* Subregions now more properly inherit from parent regions&#13;
+* Renaming a task or item now properly renames its references&#13;
+* Added a note at the top of exported YAMLs about editing via the YAML editor&#13;
+* Added a note at generation time if the YAML falls back to default goal, and a confirmation at export time about the same&#13;
+* Long tooltips can now be properly scrolled&#13;
+* Fix Default button in style section</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-24.4.0</id>
+    <title>The Legend of Zelda - Oracle of Seasons v24.4.0</title>
+    <updated>2026-10-13T15:02:21+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>## 🗳️ New Options&#13;
+- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
+- Freestanding items can now be removed from the randomizable item pool&#13;
+- The trade sequence can also separately be removed, excluding the pedestal&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+&#13;
+## 🧠 Logic&#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+- Fixed D2's boss room having holes if Digdogger was the boss</content>
+    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-24.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.0</id>
+    <title>Pokemon Black and White v0.4.0</title>
+    <updated>2026-10-13T16:00:43+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <content>## Changelog&#13;
+&#13;
+### Content and QoL&#13;
+&#13;
+- Added `Modify Levels` option (expanded from v0.3.99 pre-release)&#13;
+  - Simple method&#13;
+    - Encounter types: `Trainer`, `Wild`&#13;
+    - Modes: `Multiply`, `Add`, `Power`&#13;
+  - Advanced method&#13;
+    - Same as simple, but accepts multiple chained calculations&#13;
+- Added `Funny Dialog` and `Text Plando` options&#13;
+  - Both options require the text plando setting in the host yaml to be enabled&#13;
+  - Added a setting to enable text extraction upon running a patch file&#13;
+- Added plando mode to `Dexsanity` option&#13;
+- Added more modifiers for `Randomize Wild Pokémon`:&#13;
+  - `Prevent overpowered pokemon`&#13;
+    - Adjustable threshold (`Overpowered threshold` in `Pokémon Randomization Adjustments`)&#13;
+  - `Prevent bad early pokemon`&#13;
+    - Prevents Wonder Guard and fixed HP attacks before Castelia City&#13;
+  - `Dungeon 1 to 1`&#13;
+    - Same as `Area 1 to 1`, but also merges slots across areas of the same dungeon&#13;
+  - `Global 1 to 1`&#13;
+    - Same as `Area 1 to 1`, but merges slots across all areas&#13;
+- Added more modifiers for `Randomize Trainer Pokémon`:&#13;
+  - `Prevent overpowered pokemon`&#13;
+    - Adjustable threshold (`Overpowered threshold` in `Pokémon Randomization Adjustments`)&#13;
+  - `Evolve when possible`&#13;
+  - `Force fully evolved`&#13;
+    - Adjustable threshold (`Force threshold` in `Pokémon Randomization Adjustments`)&#13;
+  - `Force not underpowered`&#13;
+    - Adjustable thresholds (`Force threshold` and `Underpowered threshold` in `Pokémon Randomization Adjustments`)&#13;
+  - `Type themed`&#13;
+  - `Themed gym trainers`&#13;
+  - `Shuffle gym leader types`&#13;
+    - Gym leaders now always have vanilla-type themed teams by default&#13;
+  - `Rivals keep starter`&#13;
+    - They also always evolve when possible&#13;
+  - `Exclude boss trainers`&#13;
+- Added `Wild Randomization Blacklist` and `Trainer Randomization Blacklist` options&#13;
+  - The wild blacklist might not prevent some pokémon for various reasons (including other options)&#13;
+  - Ignored by `Encounter Plando`&#13;
+- Added more preset choices to `Modify Encounter Rates`:&#13;
+  - `One per method`&#13;
+  - `Dexsanity friendly`&#13;
+- Added `Randomize Base Stats` option with the following modifiers:&#13;
+  - `Randomize`&#13;
+  - `Random total`&#13;
+  - `Follow evolutions`&#13;
+- Added `Randomize Evolutions` option with the following modifiers:&#13;
+  - `Randomize`&#13;
+  - `Random methods`&#13;
+  - `Common type`&#13;
+  - `Follow type`&#13;
+  - `Multiple pre-evolutions`&#13;
+  - `More or less branches`&#13;
+  - `Looping evolution lines`&#13;
+  - `Every level`&#13;
+  - `Pair stats`&#13;
+  - `Pair 50 50`&#13;
+  - `Increasing stats`&#13;
+- Added `Randomize Types` option with the following modifiers:&#13;
+  - `Shuffle`&#13;
+  - `Randomize`&#13;
+  - `Mono only`&#13;
+  - `Dual only`&#13;
+  - `Follow evolutions`&#13;
+  - `Force evolutions`&#13;
+  - `Usual combinations`&#13;
+- Added `Randomize Level Up Movesets` option with the following modifiers:&#13;
+  - `Randomize`&#13;
+  - `Match types`&#13;
+  - `Progressive power`&#13;
+  - `Keep levels and amount`&#13;
+  - `Follow evolutions`&#13;
+  - `Start with 4`&#13;
+- Added `Randomize TM/HM Compatibility` option with the following modifiers:&#13;
+  - `Force all TMs`&#13;
+  - `Force all HMs`&#13;
+  - `Randomize`&#13;
+  - `Match types`&#13;
+  - `Follow evolutions`&#13;
+- Added `Randomize Catch Rates` option with the following modifiers:&#13;
+  - `Shuffle`&#13;
+  - `Randomize`&#13;
+  - `Follow evolutions`&#13;
+  - `Correlate with base stats`&#13;
+- Added `Randomize Egg Groups` option with the following modifiers:&#13;
+  - `Randomize`&#13;
+  - `Mono only`&#13;
+  - `Dual only`&#13;
+  - `Correlate with types`&#13;
+  - `Follow evolutions`&#13;
+  - `Allow baby stages`&#13;
+  - `Allow custom groups`&#13;
+- Added `Randomize Egg Species` option with the following modifiers:&#13;
+  - `Fix evolutions`&#13;
+  - `Randomize`&#13;
+  - `Base stages only`&#13;
+  - `Common type`&#13;
+  - `Follow evolutions`&#13;
+- Added `Stats Randomization Adjustments` option, currently with the following parameters:&#13;
+  - `Stats total minimum`&#13;
+  - `Stats total maximum`&#13;
+  - `Level up evo weight`&#13;
+  - `Maximum evo level`&#13;
+  - `Catch rates minimum`&#13;
+  - `Catch rates maximum`&#13;
+  - `Levelup moves amount minimum`&#13;
+  - `Levelup moves amount maximum`&#13;
+- Added `Stats Plando` option, currently with the following keys for every species:&#13;
+  - `base_hp`&#13;
+  - `base_attack`&#13;
+  - `base_defense`&#13;
+  - `base_sp_attack`&#13;
+  - `base_sp_defense`&#13;
+  - `base_speed`&#13;
+  - `catch_rates`&#13;
+  - `evolutions`&#13;
+  - `override_evolutions`&#13;
+  - `levelup_moveset`&#13;
+  - `override_levelup_moveset`&#13;
+  - `types`&#13;
+  - `egg_groups`&#13;
+  - `egg_species`&#13;
+- Added `Replace Evolution Methods` option with the following modifiers:&#13;
+  - `Locations`&#13;
+  - `Friendship`&#13;
+  - `PID`&#13;
+  - `Stats`&#13;
+- Added a few (new and returning) locations:&#13;
+  - `Nuvema Town - Item #2 from Mom`&#13;
+  - `P2 Laboratory - Item from scientist #1` (and `#2`)&#13;
+  - `Castelia City - Item from harlequin in Studio Castelia` (now requesting a fixed type)&#13;
+  - `Royal Unova - Item for defeating every trainer` (now time independent)&#13;
+  - `Driftveil City - Item from lady asking for a pokémon knowing a certain TM move` (now requesting a fixed TM move)&#13;
+  - `Lacunosa Town - Item from girl for showing a Shaymin`&#13;
+  - `Village Bridge - Item from fisherman for showing a certain pokémon caught today #1` (+ `#2`, `#3`, `#4`, and `#5`) (now requesting a fixed pokémon)&#13;
+- Added combined goals&#13;
+- Added `Filler Items Blacklist` option&#13;
+- Added `Randomize Move Data` option with the following modifiers:&#13;
+  - `Shuffle power`&#13;
+  - `Randomize power`&#13;
+  - `Randomize type`&#13;
+  - `Shuffle accuracy`&#13;
+  - `Randomize accuracy`&#13;
+  - `Randomize category`&#13;
+  - `Shuffle PP`&#13;
+  - `Randomize PP`&#13;
+  - `Correlate power and PP`&#13;
+  - `Correlate power and accuracy`&#13;
+  - `Correlate PP and accuracy`&#13;
+- Added `Randomize Type Chart` option with the following modifiers:&#13;
+  - `Shuffle`&#13;
+  - `Randomize`&#13;
+  - `Disable weaknesses`&#13;
+  - `Disable resistances`&#13;
+  - `Disable immunities`&#13;
+- Added `Move Data Randomization Adjustments` option, currently with the following parameters:&#13;
+  - `Move power minimum`&#13;
+  - `Move power maximum`&#13;
+  - `Accuracy minimum`&#13;
+  - `Accuracy maximum`&#13;
+  - `PP minimum`&#13;
+  - `PP maximum`&#13;
+  - `Normal type probability`&#13;
+- Added `Move Data Plando` option, currently with the following possible entries:&#13;
+  - Move data, currently with the following keys for every move:&#13;
+    - `power`&#13;
+    - `type`&#13;
+    - `accuracy`&#13;
+    - `category`&#13;
+    - `pp`&#13;
+  - Type effectiveness, currently only with the `effectiveness` key for every type combination&#13;
+- Added multiple Dexsanity variants:&#13;
+  - `Dexcountsanity` with the `Maximum`, `Steps`, and `Leniency` keys&#13;
+  - `Seensanity`&#13;
+    - Contains plando capabilities like `Dexsanity`&#13;
+    - Limits the effect of `All Pokémon Seen`&#13;
+  - `Seencountsanity`&#13;
+    - Works like `Dexcountsanity`&#13;
+    - Disables `All Pokémon Seen` entirely&#13;
+    - Requires the `Dexsanitysanity` plugin&#13;
+  - `Formsanity`&#13;
+    - Contains plando capabilities similar `Dexsanity`&#13;
+    - Limits the effect of `All Pokémon Seen`&#13;
+  - `Formcountsanity`&#13;
+    - Works like `Dexcountsanity`&#13;
+    - Limits the effect of `All Pokémon Seen`&#13;
+    - Requires the `Dexsanitysanity` plugin&#13;
+  - `Shinysanity`&#13;
+    - It shows as a toggle in the Options Creator and on Webhost, but can be edited manually to work like `Dexsanity`&#13;
+    - Contains plando capabilities like `Dexsanity`&#13;
+  - `Shinycountsanity`&#13;
+    - It shows as a toggle in the Options Creator and on Webhost, but can be edited manually to work like `Dexcountsanity`&#13;
+    - Requires the `Dexsanitysanity` plugin&#13;
+  - `Shinyformsanity`&#13;
+    - It shows as a toggle in the Options Creator and on Webhost, but can be edited manually to work like `Formsanity`&#13;
+    - Contains plando capabilities like `Formsanity`&#13;
+    - Requires the `Dexsanitysanity` plugin&#13;
+  - `Shinyformcountsanity`&#13;
+    - It shows as a toggle in the Options Creator and on Webhost, but can be edited manually to work like `Dexcountsanity`&#13;
+    - Requires the `Dexsanitysanity` plugin&#13;
+- Added an ingame option to change the shiny rate&#13;
+  - Possible values are 0 (never) to 65535 (almost guaranteed), with 8 being the vanilla value&#13;
+  - Only appears when any `Shinysanity` variant is enabled, in that case it's set to 1/64 by default&#13;
+- Added `Wild by spheres`, `Trainers by spheres`, and multiple `Tolerance X` modifiers to `Adjust levels`&#13;
+  - Also renamed `Wild` and `Trainers` to `Wild by distance` and `Trainers by distance` (respectively)&#13;
+- Added and changed some roadblocks:&#13;
+  - The grunts in Pinwheel Forest now also disappear after defeating Lenora&#13;
+  - The sand in the lower room in Relic Castle now gets whirled up by showing a `Silver Wing` to a worker NPC&#13;
+  - A line of dancing men is now blocking the gate between Black City/White Forest and Route 14 until you obtain a `GB Sounds`&#13;
+  - A line of Wingull now blocks a part of the shore of Route 13, thereby requiring you to surf around them&#13;
+- Added a portable AP menu that can be accessed by pressing the Start button, with the following content:&#13;
+  - Portable PC&#13;
+  - AP stuff (moved here from PC)&#13;
+  - APhone&#13;
+    - For now only to be able to call the Season Lady&#13;
+- Added an NPC in Castelia City's central plaza that confirms the legendary hunt goal, similar to the TM/HM hunt NPC&#13;
+- Added dynamic version selection&#13;
+- Added optional rebattling regular trainers by talking to them again&#13;
+- Added Repel re-use prompt (Credits to OnlySpaghettiCode and RadisNoir)&#13;
+- Added `Randomize Starter Pokémon` option with the following modifiers:&#13;
+  - `Randomize`&#13;
+  - `Any base`&#13;
+  - `Base with 2 evolutions`&#13;
+  - `Only official starters`&#13;
+  - `Similar base stats`&#13;
+  - `Type variety`&#13;
+  - `Vanilla types`&#13;
+- Added `Randomize Static Pokémon` option with the following modifiers:&#13;
+  - `Randomize`&#13;
+  - `Similar base stats`&#13;
+  - `No legendaries`&#13;
+  - `Split statues`&#13;
+  - `Split mimics`&#13;
+- Added `Randomize Gift Pokémon` option with the following modifiers:&#13;
+  - `Randomize`&#13;
+  - `Similar base stats`&#13;
+  - `Any base`&#13;
+  - `No legendaries`&#13;
+  - `Split monkeys`&#13;
+- Added `Randomize Legendary Pokémon` option with the following modifiers:&#13;
+  - `Randomize`&#13;
+  - `Keep legendary`&#13;
+  - `No legendaries`&#13;
+  - `Similar base stats`&#13;
+  - `Same type`&#13;
+&#13;
+### Bug fixes and technical stuff&#13;
+&#13;
+- Added a location group for season-dependant item locations&#13;
+- Added an item group for fossils and another one for TMs and HMs combined&#13;
+- Added glitched logic in UT for `Require Dowsing Machine` and `Require Flash` logic modifiers&#13;
+- Changed some locations' names&#13;
+- Added a missing hidden item location in Chargestone Cave B2F&#13;
+- Fixed "Striaton City - TM from Fennel" falsely not being able to contain an HM with certain options&#13;
+- Reduced frequency of different forms of the same pokémon in randomization&#13;
+- Wrote down levelup moveset data&#13;
+- Fixed small error with encounter plando&#13;
+- Tweaked many option descriptions&#13;
+- Made wild randomization not having to ensure 115 different obtainable pokémon if `All Pokémon Seen` is enabled&#13;
+- Made the Gracidea also accept non-event Shaymins (+ updated logic accordingly)&#13;
+- Fixed logic of move evolutions&#13;
+- Wrote down move IDs&#13;
+- Enhanced spoiler output by reworking wild, adding trainers + newly randomizable stuff, and organizing evolutions&#13;
+  - Also added setting to disable most of the data being written, in order to reduce the default spoiler log size&#13;
+- Fixed legendary hunt flags being reset after defeating Ghetsis/Alder and resetting statics&#13;
+- Fixed `Moor of Icirrus - Hidden item behind boulder (Spring/Summer/Autumn)` not showing up on the UT map tracker&#13;
+- Added option groups&#13;
+- Made the NPC next to the Pokémon Center in Accumula Town tell some information about the world&#13;
+- Merged both Aha quiz locations into one&#13;
+- Randomizing or plandoing evolutions will make all species of an evolution line have the same experience curve&#13;
+- Filled trainer names and regions&#13;
+- Fixed incorrect logic of multiple locations related to Moor of Icirrus&#13;
+- Reworked all regions and their logic and added story events to logic&#13;
+  - This includes some smaller ROM changes&#13;
+- Fully integrated arm7 expansion and deprecated the testing setting&#13;
+- Fixed evolution-related rules not being modifiable by Plugins&#13;
+- Changed rules dict to being filled on the way&#13;
+- Reworked wild and trainer pokemon randomization&#13;
+  - This also fixes a bug where `Area 1 to 1` and `Prevent rare encounters` had a conflict&#13;
+- Made all fly flags being automatically set upon entering the city&#13;
+  - This also fixes potentially getting locked out of the Driftveil City fly flag&#13;
+- Re-added forgettable HMs&#13;
+- Added static pointers for game data in RAM&#13;
+- Prevented plugin options and text plando from being put onto the multiserver&#13;
+- Added logic for seen trainer pokémon&#13;
+- Made Post-Ghetsis locations be automatically excluded if the goal is `Ghetsis`&#13;
+  - The `Post-Ghetsis locations` group is now empty due to that, but not removed in order to not break older yamls&#13;
+- Added scripting system&#13;
+  - Moved most client setup to the init script as a part of that&#13;
+- Added remaining gym leader flags to the tracker events bitmap&#13;
+- Fixed BizHawk 2.11 compatibility by padding the ROM size to a power of 2&#13;
+- Added support for poptracker co-op&#13;
+- Fixed Dexsanity checks not sending out if checked while disconnected form the server&#13;
+- Choosing the ROM now gets prompted again if the chosen ROM is incompatible&#13;
+- Removed God Stone form the useless key items pool as it is only shown as `???` ingame&#13;
+  - It can still be given via console commands&#13;
+- Tweaked most of the Master Ball sellers to let you buy/obtain multiple Master Balls at once&#13;
+- Added `Max out` and `Reset` as choices for the ingame exp. multiplier&#13;
+- Added new entries for maps in UT&#13;
+- Proper handling for putting certain progression items into `Start Inventory From Pool`&#13;
+- Fixed the dynamic field items in White Forest giving `AP Items` without being a check&#13;
+- Renamed the `PC` modifier in `Master Ball Seller` to `AP Menu`&#13;
+&#13;
+### Is this version compatible with older multiworld slots and save files?&#13;
+No</content>
+    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Simsipelago/Archipelago/releases/tag/2.1.0-beta1</id>
+    <title>The Sims 4 v2.0.99</title>
+    <updated>2026-10-13T16:51:27+00:00</updated>
+    <author>
+      <name>Simsipelago</name>
+    </author>
+    <content>This release is the long awaited rule builder refactor. It doesn't contain any other things and the latest version of the sims mod still works on this apworld, but past generations are not likely to be compatible with this version of the apworld. We're releasing this as a beta to gather feedback and ensure that the logic changes aren't super big, but the apworld does now require a minimum of 0.6.7 in order to function. &#13;
+&#13;
+Please do report bugs and things, as we are confident that this new architecture will resolve loads of logic bugs, but the process to get there might be a little bumpy. &#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Simsipelago/Archipelago/compare/2.0.1...2.1.0-beta1</content>
+    <link href="https://github.com/Simsipelago/Archipelago/releases/tag/2.1.0-beta1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
+    <title>GTFO v0.0.4r2</title>
+    <updated>2026-10-13T17:12:44+00:00</updated>
+    <author>
+      <name>RoboRyGuy</name>
+    </author>
+    <content>Hotfix for version 0.1.0. Fixed the `RundownTierRandom` progressive ordering option.</content>
+    <link href="https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1"/>
   </entry>
 </feed>

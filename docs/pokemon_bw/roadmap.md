@@ -2,11 +2,19 @@
 
 The "barely working" version will still be playable to goal, so it will start with 0.1.0.
 
-Every feature will increase the version by +0.1.
-However, do not confuse that with semantic version naming: `major.minor.build`
-Versions before 1.0.0 though can have small feature additions in +0.0.1 updates.
+Most bigger features will increase the version by +0.1.
+<br>However, do not confuse that with semantic version naming: `major.minor.build`
+<br>Versions before 1.0.0 though can have small feature additions in +0.0.1 updates.
+<br>This can lead to some features not being listed for that version.
 
 Version 1.0.0 will happen when certain important features are implemented.
+
+The content of future updates used to be predetermined, but various circumstances 
+resulted in that not really being followed, so it was changed to "whatever I wanna do next".
+
+## What features are **not** planned to be implemented
+
+- Shopsanity (due to technical limitations)
 
 ## Road to 1.0.0 (Required for core)
 
@@ -56,101 +64,188 @@ Version 1.0.0 will happen when certain important features are implemented.
     - Cost: 1000
     - Cost: 3000
     - Cost: 10000
+  - All pokémon seen (added in patch)
+  - Modify Encounter Rates (added in patch)
+  - Experience Multiplier (added in patch)
+  - Plugin system (added in patch)
+- UT auto-tabbing (added in patch)
 
-### 0.4.0
+### 0.4.0: Advanced Dataplandosanity
 
+- Modify Levels option
+  - Simple method, shown on Webhost
+  - Advanced method, more capabilities
+- Funny dialogue
+- Text Plando
+  - Text extractor setting in patching process
+- Dexsanity plando (custom behavior of the Dexsanity option)
 - More modifiers
   - Randomize Wild Pokémon
     - Prevent overpowered pokémon
+    - Prevent bad early pokemon
+    - Dungeon 1 to 1
+    - Global 1 to 1
   - Randomize Trainer Pokémon 
     - Prevent overpowered pokémon
+    - Evolve when possible
     - Force fully evolved
+    - Type themed
+    - Themed gym trainers
+    - Shuffle gym leader types
+    - Rivals keep starter
 - Randomization Blacklist
   - Wild pokémon
   - Trainer pokémon
-
-### Another update #1: Pokédex stuff
-
-- Options
-  - Goals: Regional Pokédex, National Pokédex, Custom Pokédex
-  - Seensanity
-    - Only consider wild pokémon
-  - All pokémon seen
-
-### Another update #2: Trainer stuff
-
-- Options
-  - Trainersanity
-  - Seensanity
-    - Also consider trainer pokémon
-  - Decrease trainer eyesight
-  - Trainer rebattling
-
-### Another update #3: Text stuff
-
-- Options
-  - Funny dialogue
-  - Text Plando
-    - Text extractor in client
+- Stats randomization
+  - Base stats
+  - Evolutions
+  - Types
+  - Catch rates
+  - Levelup movesets
+  - TM/HM compatibility
+  - Egg groups
+  - Egg species
+- Stats plando (with all randomizable stats at that time)
+- Replace Evolution Methods option
+- Combined goals
 - An NPC in Accumula Town telling you some information about the world
+- Filler Items Blacklist option
+- Move data randomization
+  - Move power
+  - Move type
+  - Move accuracy
+  - Move category (only Physical <-> Special)
+  - Move pp
+  - Type effectiveness chart
+- Move data plando (with all randomizable data at that time)
+- Dexcountsanity
+- Seensanity
+- Seencountsanity
+- Formsanity
+- Formcountsanity
+- Shinysanity
+- Shinycountsanity
+- Shinyformsanity
+- Shinyformcountsanity
+- arm7 expansion (required for advanced assembly)
+- Shiny rate ingame option
+- Forget HMs without Move Deleter
+- Scripting system (required for many other features)
+- Dynamic choice in Game Version option
+- Trainer rebattling
+- Statics randomization
+  - Starter
+  - Gifts
+  - Legendaries
+  - Other statics
 
-### Another update #4: Script editing stuff
+### Required for 1.0.0
 
-- Options
-  - Additional roadblocks
-  - Starter/Static/Gift/Trade/Legendary pokémon randomization
-  - Legendary hunt modifiers:
-    - Catching required
-    - Amount of to-be-hunted legendaries
-    - Whitelist
-  - Seen count checks modifier
+- Expand plugins to client
+- Options:
+  - Goals: Regional Pokédex, National Pokédex, Custom Pokédex
+  - Decrease trainer eyesight
+  - Trade pokémon randomization
+  - Disable certain location groups
+    - Hidden items
+    - Field items (will also disable min_once items)
+    - Abyssal Ruins
+    - Excluded locations (always enabled)
+  - Customize roadblocks
+    - Enabling/Disabling all roadblocks
+    - Extra cuttable trees
+    - Sudowodo trees
+    - Rock Smash rocks
+    - Something with the badge gates
+    - Something needed to cross quicksand in relic castle
+    - Massive ocean that connects
+
+### Stuff that would be nice to have in 1.0.0
+
+- Options:
+  - More trainer pokémon randomization modifiers
+    - Prevent bad early pokemon
+    - Rivals take from box
+    - N uses pokemon from nearby
+    - More or less per trainer
+  - Trainersanity
+  - Gendersanity
+  - Gendercountsanity
+  - Shinygendersanity
+  - Shinygendercountsanity
+  - Trainer pokémon plando
+  - Static pokémon plando
+  - Seen count checks modifier, e.g. Prof Juniper TM rewards
+  - Fan club chairman levels checks modifier
+  - Adjust encounters (like Adjust levels, but with species, based on base stats, mostly just devolve)
+  - Synced encounter tables
+  - Ingame options (things changeable in PC, moving Experience modifier here)
+    - Season control (only when vanilla or changeable, not randomized)
+- Dowsing Machine as a hard requirement for hidden items (with option)
+- Reducing encounter slots in Modify Encounter Rates
 - Xtransceiver being required to see certain story sequences (with some of them giving items)
   - Also, dynamic Xtransceiver item that automatically adds the correctly gendered version to the game
-- Running shoes as an item, making mom cutscene on route 2 a check
-- Relic castle room filling with sand unlockable via an item
-- Dowsing Machine as a hard requirement for hidden items
-- Free fly destination
+- Castelia badge info NPC giving hints to in which game the badges are
+- Use portable AP menu code to make on-screen item receiving possible
 
-## Big update #1 (Stats update, name WIP, required for core)
+## Post-1.0.0 stuff
 
 - Options
   - Stats randomization
-    - Base stats (+ limit)
-    - Evolutions
-    - Catch rates (+ limit)
-    - Level up movesets
-    - Types
     - Abilities
     - Gender Ratio (+ limit)
-    - TM/HM compatibility
     - Move tutor compatibility
+    - Held items
+    - Pokémon names
+  - Move data randomization
+    - Move names
+    - TM/HM content
+  - Trashsanity
+  - MetLocationsanity
+  - Visitsanity
+  - TMHMCountsanity
+  - TVsanity
   - Fairy type
-  - Evo methods replacing
-  - Experience modifier (using base exp of every species)
   - Levelup curve modifier
-- Make HMs forgettable
-
-## Big update #2 (Text and rom update, name WIP, required for core)
-
+  - Door shuffle
+  - Connections Plando
+  - Shuffle roadblock requirements
+  - Original content
+    - Story scenes
+    - Community-made trainers + teams
+    - Types
+    - Berry fields
+  - BW2 maps backport
+    - More encounter maps+slots
+    - More Visitsanity locations
+    - More connections for Door Shuffle
+    - More static encounters
+    - Altered logic in some places
+    - Requires BW2 ROM while patching
+  - Free fly destination
+  - Trainer randomization (i.e. what trainer you're actually battling against)
+    - With plando capabilities
+  - Boss Fight Plando (gym leaders, elite four (first+second run), Alder, N (N's Castle), Ghetsis, Cheren/Bianca (postgame))
+    - Sounds kinda unnecessary, but is intended as a concept for the core PlandoBosses option
+  - Story fight Plando (Cheren, Bianca, N, ...)
+    - Maybe make it a part of Boss Fight Plando
+  - DeathLink
+  - Wonder trade
+  - Multiworld gift Pokémon
+  - Phenomena activation (vanilla, any badge, Striaton Gym, always)
+  - BGM randomization
+  - Cutscenes shortening
+  - Dust cloud hunt (dust clouds have a chance to give a check)
+  - Sprite shuffle
+    - Overworld NPCs
+    - In-battle trainers
+    - Animated pokémon
+  - Higher chance of encountering uncaught species
+  - Multiple encounter rates tables
 - Offline singleplayer
   - i.e. generating a single world will produce a romhack playable without connecting to a server
-  - Redirect NPC items to other script file
+  - Some features won't be compatible with, e.g. Dexsanity
 - Display other players and item names ingame
-- Dynamic version
 - Universal language support
-
-## Big update #3 (Overworld update, name WIP)
-
-- Door shuffle
-- Optional/Shuffling roadblock requirements
-- Original content
-- Boss fight Plando (gym leaders, elite four (first+second run), Alder, N (N's Castle), Ghetsis, Cheren/Bianca (postgame))
-- Story fight Plando (Cheren, Bianca, N, ...)
-
-## Big update #4 (Multiworld update, name WIP)
-
-- DeathLink
-- Wonder trade
 - Traps
-- Multiworld gift Pokémon
 - Collected field items removal setting

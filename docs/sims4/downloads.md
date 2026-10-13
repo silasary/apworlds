@@ -1,9 +1,12 @@
 # The Sims 4
 
 ## Latest
-- <a href="https://github.com/Simsipelago/Archipelago/releases/download/2.0.1/sims4.apworld">Latest Version (2.0.1)</a>
+- <a href="https://github.com/Simsipelago/Archipelago/releases/download/2.1.0-beta1/sims4.apworld">Latest Version (2.0.99)</a>
 
 ## All Versions
+
+#### v2.0.99
+- <a href="https://github.com/Simsipelago/Archipelago/releases/download/2.1.0-beta1/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/2.1.0-beta1/sims4.apworld</a>
 
 #### v2.0.1
 - <a href="https://github.com/Simsipelago/Archipelago/releases/download/2.0.1/sims4.apworld">https://github.com/Simsipelago/Archipelago/releases/download/2.0.1/sims4.apworld</a>

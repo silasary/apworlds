@@ -9,7 +9,7 @@ while still using the well-known grid-based movement mechanics and battle UI.
 
 
 ## Downloads
-- <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.3.999/pokemon_bw.apworld">Latest Version (0.3.999)</a>
+- <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.0/pokemon_bw.apworld">Latest Version (0.4.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -22,9 +22,8 @@ while still using the well-known grid-based movement mechanics and battle UI.
 - <a href="TODO">TODO</a>
 - <a href="changelog">changelog</a>
 - <a href="credits">credits</a>
-- <a href="encounter plando">encounter plando</a>
-- <a href="maps">maps</a>
+- <a href="options guides">options guides</a>
+- <a href="plando lists">plando lists</a>
+- <a href="roadblocks">roadblocks</a>
 - <a href="roadmap">roadmap</a>
 - <a href="rom changes">rom changes</a>
-- <a href="slot values">slot values</a>
-- <a href="species">species</a>

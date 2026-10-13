@@ -1,54 +1,65 @@
 # Important stuff
 
-- fix ut_compatibility key error
-- fix optiondicts not checking whether all keys are defined
+apworld
 
-# 0.4.0
+rom
 
-- somehow fix problem with patch backwards compatibility for patch file altering versions that actually can support older versions (e.g. 0.3.99 not accepting 0.3.0)
-- somehow account for excluded locations in shuffle badges/tms
-- reduce different forms weight in randomization
-- remove arceus types
-- Merge PR adding "Randomize" to trainer/wild if other modifiers present
-- add now-possible locations
-- fix bianca being spelled "Bianka" on some location names
-- add "for seeing 25 species" to location in Castelia City
-- Fix Guidance Chamber items being called "Mistralton Cave 3F..."
-- add missing hidden item in chargestone cave b2f and change the other hidden item's name
-- More modifiers
-  - Randomize Wild Pokémon
-    - Prevent overpowered pokémon 
-      - Gets overwritten by "Ensure all obtainable"
-      - Base stat total threshold adjustable
-  - Randomize Trainer Pokémon 
-    - Prevent overpowered pokémon
-      - Base stat total threshold adjustable
-    - Force fully evolved 
-      - Level threshold adjustable
-- Randomization Blacklist
-  - Wild pokémon 
-    - This will throw an OptionError if "Ensure all obtainable" is selected and any blacklisted is base stage
-  - Trainer pokémon
-- after everything else: check docs for up-to-date information, update tests, update location names in ut                             
+both
 
 # Not urgent
 
-- dig with seasons patch crashes the game, not fixable?
-- look through scripts and remove space checking for specific items
-- fill evo method ids
-- more inclusion rules
-- complete levelup movesets
-- advertise on ds romhacking servers
-- post MonochromeScriptAssembler to ds romhacking servers
-- make simple script compiler, use for starting season, season npc vanish, tmhm hunt npc vanish, and other future stuff
-- change rules dict to being filled on the way
-- organize imports for type hints behind TYPE_CHECKING
-- pitch webhost and template yaml notes, both individual, but template copying from webhost by default
-- Fix locations in pokédex if something written to encounter tables
-- route 18 reappearing and undella bay reappearing items get still detected after pickup
-- make reusable tms option add funny dialog
-- BizHawk 2.11 having issues with modded gen 5 roms
-- Chargestone cave make north to south shortcut open after traversing it for the first time (maybe when battled N)
+- gym leader scripts control traded obedience level?
+- wingull grams overworld items not disappearing
+- extended location hint for challenge rock
+- a way to check whether map or fly menu is opened, used for switching to ow map in UT
+- Running shoes as an item, making mom cutscene on route 2 a check
+- fill more funny dialog
+- send plugin options over slot data as string (breaks backwards compatibility)
+- reload_key_items sometimes has index out of range error
+- items receiving in client has rare cases of recursion errors
+- specialized unittests for rando modifiers
+- make client use static game data pointers
+- turn plugin options into actual options (can you even add more options after initial class creation?)
+- import plugin packages and classes while the main apworld itself is getting imported
+- correlate mods in move data rando not working? => Special unit test cases
+- trainer flags setzen lassen wo es in den scripts fehlt und dann besiegte trainer IDs ins datastorage
+- rom script changes, some to comply with regions rework:
+  - inject item receiver into code that executes AP menu script
+  - Go Home button (only after all rom changes listed below are implemented)
+  - ############################
+  - various events force-teleporting you should be removed
+  - cheren+bianca after ghetsis in nuvema town are set to in front of the lab if not triggered immediately
+  - accumula guards send you both ways
+  - move striaton gym guide a bit south
+  - striaton parcel man send both ways
+  - route 3 line of pokemon, cleared after wellspring cave events
+  - make n in nacrene trigger independently of nacrene stuff, but together with cheren
+  - pinwheel shadow triad member send both ways
+  - move rumination field rocks a bit
+  - make liberty garden grunts not disappearing
+  - remove victini shiny lock
+  - waking up the desert resort statues says "It was a Darmanitan" -> Change to actual pokemon name
+  - relic castle 1f worker send both ways
+  - relic castle worker that sends you back down to sand filled room once you reached that at least once
+  - relic castle chased grunt running towards all entrances
+  - driftveil cheren and clay scene talking as alternate trigger
+  - add more clerks to driftveil gym entrance
+  - cold storage container blocking line of new grunts until triggering cheren in building near container
+  - add traffic cones to mistralton gym entrance
+  - both icirrus city scenes by trigger
+  - dragonspiral rocks inside, cleared after bryce fight
+  - make dragonspiral grunt trainers not disappear
+  - remove reshiram/zekrom shiny lock
+  - remove time requirement of tubeline bridge bikers
+  - fix route 9 infielder script
+  - add rocks to challengers cave entrance
+  - remove giant chasm warps to snow
+  - opelucid juniper by trigger
+  - triggers in badge gates that push you down
+  - remove closing doors in league
+  - add rock on landing stage that is cleared exactly when champion room is messed up
+  - some way to still get back to landing stage from champion room after champion room is repaired
+  - remove once-per-day access to the riches
 
 # Single reports, cannot recreate, need to wait for more reports
 
@@ -61,4 +72,11 @@
 - sequence break problem with npcs not moving, see channel
 - incredibly low catch chances? idk how that could be related to the apworld in any way
 - plando items having issues? plandoing basic badge into abyssal ruins sometimes raises fillerrors about this item not being placeable
-- route 8 bianca items logic, apparently said to be in logic without light/dark stone, but blocked by grunts wanting the stone
+- liberty garden blackscreen
+- one case of goal not triggering reported in sync
+- master ball seller not showing up again?
+
+# Spreadsheet and sync bugs list because I don't know where else to put them
+
+- https://docs.google.com/spreadsheets/d/1nTE-zLKvLuS_o0_4VnhBtydn03_-O1f130813sLqzuY/edit?gid=0#gid=0
+- https://docs.google.com/spreadsheets/d/1N6PfSe9zIasQOXFInW-dh5KCmem-PrmYzQROAqqA0SA/edit?gid=0#gid=0

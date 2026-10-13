@@ -1,0 +1,1646 @@
+# Various lists for various Plando options
+
+## All map names
+
+These names are ordered by internal file number (0-111).
+
+- Striaton City
+- Driftveil City
+- Icirrus City
+- Dreamyard (Ruins)
+- Dreamyard (Basement)
+- Pinwheel Forest (Outer)
+- Pinwheel Forest (Inner)
+- Desert Resort (Outer)
+- Desert Resort (Inner)
+- Relic Castle (1F Castleside)
+- Relic Castle (B1F Castleside)
+- Relic Castle (B2F Castleside)
+- Relic Castle (B3F Castleside)
+- Relic Castle (B4F Castleside)
+- Relic Castle (Castleside Sand Filled)
+- Relic Castle (Castleside Back Room)
+- Relic Castle (B7F Top Right)
+- Relic Castle (B7F Top Left)
+- Relic Castle (B7F Left of Center)
+- Relic Castle (B7F Right of Center)
+- Relic Castle (B7F Right of Top Center)
+- Relic Castle (B7F Top Center)
+- Relic Castle (B7F Left of Top Center)
+- Relic Castle (B7F Center)
+- Relic Castle (B7F Left of Volcarona Entrance)
+- Relic Castle (B7F Right of Volcarona Entrance)
+- Relic Castle (B7F Under Top Right)
+- Relic Castle (B7F Bottom Right)
+- Relic Castle (B7F Under Top Left)
+- Relic Castle (B7F Bottom Left)
+- Relic Castle (B7F Volcarona Entrance)
+- Relic Castle (Volcarona Room)
+- Relic Castle (Towerside Front Room)
+- Relic Castle (B6F Towerside)
+- Relic Castle (B5F Towerside)
+- Relic Castle (B4F Towerside)
+- Relic Castle (B3F Towerside)
+- Relic Castle (B2F Towerside)
+- Relic Castle (B1F Towerside)
+- Relic Castle (1F Towerside)
+- Cold Storage
+- Chargestone Cave (1F)
+- Chargestone Cave (B1F)
+- Chargestone Cave (B2F)
+- Twist Mountain (Upper Level)
+- Twist Mountain (Middle Level)
+- Twist Mountain (Lower Level)
+- Twist Mountain (Ice Rock Cave)
+- Dragonspiral Tower (Icirrus City)
+- Dragonspiral Tower (Tower Exterior)
+- Dragonspiral Tower (1F)
+- Dragonspiral Tower (2F)
+- Victory Road (Outside)
+- Victory Road (1F Middle Cave)
+- Victory Road (2F Left Cave)
+- Victory Road (3F Middle Cave)
+- Victory Road (4F Middle Cave)
+- Victory Road (2F Right Cave)
+- Victory Road (1F Right Cave)
+- Victory Road (3F Right Cave)
+- Victory Road (1F Left Cave)
+- Victory Road (3F Left Cave)
+- Victory Road (4F Left Cave)
+- Victory Road (5F Cave)
+- Victory Road (6F Cave)
+- Victory Road (4F Right Cave)
+- Victory Road (7F Cave)
+- Trial Chamber
+- Giant Chasm (Outside Entrance)
+- Giant Chasm (Entrance Cave)
+- Giant Chasm (Crater)
+- Giant Chasm (Kyurem's Cave)
+- P2 Laboratory
+- Undella Bay
+- Driftveil Drawbridge
+- Village Bridge
+- Marvelous Bridge
+- Route 1
+- Route 2
+- Route 3
+- Wellspring Cave (1F)
+- Wellspring Cave (B1F)
+- Route 4
+- Route 5
+- Route 6
+- Mistralton Cave (1F)
+- Mistralton Cave (2F)
+- Guidance Chamber
+- Route 7
+- Celestial Tower (2F)
+- Celestial Tower (3F)
+- Celestial Tower (4F)
+- Celestial Tower (Top)
+- Route 8
+- Moor of Icirrus
+- Route 9
+- Challenger's Cave (Entrance)
+- Challenger's Cave (B1F)
+- Challenger's Cave (B2F)
+- Route 10
+- Insect Badge Gate
+- Route 11
+- Route 12
+- Route 13
+- Route 14
+- Abundant Shrine
+- Route 15
+- Route 16
+- Lostlorn Forest
+- Route 18
+- Undella Town
+- Route 17
+
+## Maps that support having different seasons
+
+- Icirrus City
+- Twist Mountain (Upper Level)
+- Twist Mountain (Middle Level)
+- Twist Mountain (Lower Level)
+- Twist Mountain (Ice Rock Cave)
+- Dragonspiral Tower (Icirrus City)
+- Dragonspiral Tower (Tower Exterior)
+- Undella Bay
+- Route 6
+- Route 7
+- Route 8
+- Moor of Icirrus
+
+## Encounter slot values
+
+Like already said on the main guide, the slot argument can either be omitted (equal to inputting all slots),
+be a single number, or a list of numbers.
+
+The range of allowed numbers depends on the chosen method.
+The `Grass`, `Dark grass`, and `Rustling grass` methods have 12 slots (numbered 0-11) each, 
+while all other methods have only 5 slots (numbered 0-4) each.
+
+The encounter rate of each slot differs between each method, slot number, and encounter rate modifier.
+The (preset) rates are (ordered by slot number)...
+- Encounter rate modifier `vanilla`:
+  - `Grass`, `Dark grass`, and `Rustling grass`: 20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
+  - `Surfing` and `Surfing rippling`: 60, 30, 5, 4, 1
+  - `Fishing` and `Fishing rippling`: 40, 40, 15, 4, 1
+- Encounter rate modifier `try_normalized`:
+  - `Grass`, `Dark grass`, and `Rustling grass`: 9, 9, 9, 9, 8, 8, 8, 8, 8, 8, 8, 8
+  - `Surfing` and `Surfing rippling`: 20, 20, 20, 20, 20
+  - `Fishing` and `Fishing rippling`: 20, 20, 20, 20, 20
+- Encounter rate modifier `try_normalized_alt`:
+  - `Grass`, `Dark grass`, and `Rustling grass`: 10, 10, 10, 10, 10, 10, 10, 10, 10, 4, 3, 3
+  - `Surfing` and `Surfing rippling`: 20, 20, 20, 20, 20
+  - `Fishing` and `Fishing rippling`: 20, 20, 20, 20, 20
+- Encounter rate modifier `invasive`:
+  - `Grass`, `Dark grass`, and `Rustling grass`: 65, 15, 5, 4, 2, 2, 2, 1, 1, 1, 1, 1
+  - `Surfing` and `Surfing rippling`: 80, 10, 5, 4, 1
+  - `Fishing` and `Fishing rippling`: 75, 15, 5, 4, 1
+
+## All species names
+
+These names are mostly sorted by dex number and form number.
+The exceptions at the end of this list originate from these forms having their own data in the games' files
+(due to having different types, base stats, etc.).
+
+- Bulbasaur
+- Ivysaur
+- Venusaur
+- Charmander
+- Charmeleon
+- Charizard
+- Squirtle
+- Wartortle
+- Blastoise
+- Caterpie
+- Metapod
+- Butterfree
+- Weedle
+- Kakuna
+- Beedrill
+- Pidgey
+- Pidgeotto
+- Pidgeot
+- Rattata
+- Raticate
+- Spearow
+- Fearow
+- Ekans
+- Arbok
+- Pikachu
+- Raichu
+- Sandshrew
+- Sandslash
+- Nidoran♀
+- Nidorina
+- Nidoqueen
+- Nidoran♂
+- Nidorino
+- Nidoking
+- Clefairy
+- Clefable
+- Vulpix
+- Ninetales
+- Jigglypuff
+- Wigglytuff
+- Zubat
+- Golbat
+- Oddish
+- Gloom
+- Vileplume
+- Paras
+- Parasect
+- Venonat
+- Venomoth
+- Diglett
+- Dugtrio
+- Meowth
+- Persian
+- Psyduck
+- Golduck
+- Mankey
+- Primeape
+- Growlithe
+- Arcanine
+- Poliwag
+- Poliwhirl
+- Poliwrath
+- Abra
+- Kadabra
+- Alakazam
+- Machop
+- Machoke
+- Machamp
+- Bellsprout
+- Weepinbell
+- Victreebel
+- Tentacool
+- Tentacruel
+- Geodude
+- Graveler
+- Golem
+- Ponyta
+- Rapidash
+- Slowpoke
+- Slowbro
+- Magnemite
+- Magneton
+- Farfetch'd
+- Doduo
+- Dodrio
+- Seel
+- Dewgong
+- Grimer
+- Muk
+- Shellder
+- Cloyster
+- Gastly
+- Haunter
+- Gengar
+- Onix
+- Drowzee
+- Hypno
+- Krabby
+- Kingler
+- Voltorb
+- Electrode
+- Exeggcute
+- Exeggutor
+- Cubone
+- Marowak
+- Hitmonlee
+- Hitmonchan
+- Lickitung
+- Koffing
+- Weezing
+- Rhyhorn
+- Rhydon
+- Chansey
+- Tangela
+- Kangaskhan
+- Horsea
+- Seadra
+- Goldeen
+- Seaking
+- Staryu
+- Starmie
+- Mr. Mime
+- Scyther
+- Jynx
+- Electabuzz
+- Magmar
+- Pinsir
+- Tauros
+- Magikarp
+- Gyarados
+- Lapras
+- Ditto
+- Eevee
+- Vaporeon
+- Jolteon
+- Flareon
+- Porygon
+- Omanyte
+- Omastar
+- Kabuto
+- Kabutops
+- Aerodactyl
+- Snorlax
+- Articuno
+- Zapdos
+- Moltres
+- Dratini
+- Dragonair
+- Dragonite
+- Mewtwo
+- Mew
+- Chikorita
+- Bayleef
+- Meganium
+- Cyndaquil
+- Quilava
+- Typhlosion
+- Totodile
+- Croconaw
+- Feraligatr
+- Sentret
+- Furret
+- Hoothoot
+- Noctowl
+- Ledyba
+- Ledian
+- Spinarak
+- Ariados
+- Crobat
+- Chinchou
+- Lanturn
+- Pichu
+- Cleffa
+- Igglybuff
+- Togepi
+- Togetic
+- Natu
+- Xatu
+- Mareep
+- Flaaffy
+- Ampharos
+- Bellossom
+- Marill
+- Azumarill
+- Sudowoodo
+- Politoed
+- Hoppip
+- Skiploom
+- Jumpluff
+- Aipom
+- Sunkern
+- Sunflora
+- Yanma
+- Wooper
+- Quagsire
+- Espeon
+- Umbreon
+- Murkrow
+- Slowking
+- Misdreavus
+- Unown (A)
+- Unown (B)
+- Unown (C)
+- Unown (D)
+- Unown (E)
+- Unown (F)
+- Unown (G)
+- Unown (H)
+- Unown (I)
+- Unown (J)
+- Unown (K)
+- Unown (L)
+- Unown (M)
+- Unown (N)
+- Unown (O)
+- Unown (P)
+- Unown (Q)
+- Unown (R)
+- Unown (S)
+- Unown (T)
+- Unown (U)
+- Unown (V)
+- Unown (W)
+- Unown (X)
+- Unown (Y)
+- Unown (Z)
+- Unown (Exclamation Mark)
+- Unown (Question Mark)
+- Wobbuffet
+- Girafarig
+- Pineco
+- Forretress
+- Dunsparce
+- Gligar
+- Steelix
+- Snubbull
+- Granbull
+- Qwilfish
+- Scizor
+- Shuckle
+- Heracross
+- Sneasel
+- Teddiursa
+- Ursaring
+- Slugma
+- Magcargo
+- Swinub
+- Piloswine
+- Corsola
+- Remoraid
+- Octillery
+- Delibird
+- Mantine
+- Skarmory
+- Houndour
+- Houndoom
+- Kingdra
+- Phanpy
+- Donphan
+- Porygon2
+- Stantler
+- Smeargle
+- Tyrogue
+- Hitmontop
+- Smoochum
+- Elekid
+- Magby
+- Miltank
+- Blissey
+- Raikou
+- Entei
+- Suicune
+- Larvitar
+- Pupitar
+- Tyranitar
+- Lugia
+- Ho-Oh
+- Celebi
+- Treecko
+- Grovyle
+- Sceptile
+- Torchic
+- Combusken
+- Blaziken
+- Mudkip
+- Marshtomp
+- Swampert
+- Poochyena
+- Mightyena
+- Zigzagoon
+- Linoone
+- Wurmple
+- Silcoon
+- Beautifly
+- Cascoon
+- Dustox
+- Lotad
+- Lombre
+- Ludicolo
+- Seedot
+- Nuzleaf
+- Shiftry
+- Taillow
+- Swellow
+- Wingull
+- Pelipper
+- Ralts
+- Kirlia
+- Gardevoir
+- Surskit
+- Masquerain
+- Shroomish
+- Breloom
+- Slakoth
+- Vigoroth
+- Slaking
+- Nincada
+- Ninjask
+- Shedinja
+- Whismur
+- Loudred
+- Exploud
+- Makuhita
+- Hariyama
+- Azurill
+- Nosepass
+- Skitty
+- Delcatty
+- Sableye
+- Mawile
+- Aron
+- Lairon
+- Aggron
+- Meditite
+- Medicham
+- Electrike
+- Manectric
+- Plusle
+- Minun
+- Volbeat
+- Illumise
+- Roselia
+- Gulpin
+- Swalot
+- Carvanha
+- Sharpedo
+- Wailmer
+- Wailord
+- Numel
+- Camerupt
+- Torkoal
+- Spoink
+- Grumpig
+- Spinda
+- Trapinch
+- Vibrava
+- Flygon
+- Cacnea
+- Cacturne
+- Swablu
+- Altaria
+- Zangoose
+- Seviper
+- Lunatone
+- Solrock
+- Barboach
+- Whiscash
+- Corphish
+- Crawdaunt
+- Baltoy
+- Claydol
+- Lileep
+- Cradily
+- Anorith
+- Armaldo
+- Feebas
+- Milotic
+- Castform
+- Kecleon
+- Shuppet
+- Banette
+- Duskull
+- Dusclops
+- Tropius
+- Chimecho
+- Absol
+- Wynaut
+- Snorunt
+- Glalie
+- Spheal
+- Sealeo
+- Walrein
+- Clamperl
+- Huntail
+- Gorebyss
+- Relicanth
+- Luvdisc
+- Bagon
+- Shelgon
+- Salamence
+- Beldum
+- Metang
+- Metagross
+- Regirock
+- Regice
+- Registeel
+- Latias
+- Latios
+- Kyogre
+- Groudon
+- Rayquaza
+- Jirachi
+- Deoxys
+- Turtwig
+- Grotle
+- Torterra
+- Chimchar
+- Monferno
+- Infernape
+- Piplup
+- Prinplup
+- Empoleon
+- Starly
+- Staravia
+- Staraptor
+- Bidoof
+- Bibarel
+- Kricketot
+- Kricketune
+- Shinx
+- Luxio
+- Luxray
+- Budew
+- Roserade
+- Cranidos
+- Rampardos
+- Shieldon
+- Bastiodon
+- Burmy (Plant)
+- Burmy (Sandy)
+- Burmy (Trash)
+- Wormadam (Plant)
+- Mothim
+- Combee
+- Vespiquen
+- Pachirisu
+- Buizel
+- Floatzel
+- Cherubi
+- Cherrim (Overcast)
+- Cherrim (Sunshine)
+- Shellos (West)
+- Shellos (East)
+- Gastrodon (West)
+- Gastrodon (East)
+- Ambipom
+- Drifloon
+- Drifblim
+- Buneary
+- Lopunny
+- Mismagius
+- Honchkrow
+- Glameow
+- Purugly
+- Chingling
+- Stunky
+- Skuntank
+- Bronzor
+- Bronzong
+- Bonsly
+- Mime Jr.
+- Happiny
+- Chatot
+- Spiritomb
+- Gible
+- Gabite
+- Garchomp
+- Munchlax
+- Riolu
+- Lucario
+- Hippopotas
+- Hippowdon
+- Skorupi
+- Drapion
+- Croagunk
+- Toxicroak
+- Carnivine
+- Finneon
+- Lumineon
+- Mantyke
+- Snover
+- Abomasnow
+- Weavile
+- Magnezone
+- Lickilicky
+- Rhyperior
+- Tangrowth
+- Electivire
+- Magmortar
+- Togekiss
+- Yanmega
+- Leafeon
+- Glaceon
+- Gliscor
+- Mamoswine
+- Porygon-Z
+- Gallade
+- Probopass
+- Dusknoir
+- Froslass
+- Rotom
+- Uxie
+- Mesprit
+- Azelf
+- Dialga
+- Palkia
+- Heatran
+- Regigigas
+- Giratina
+- Cresselia
+- Phione
+- Manaphy
+- Darkrai
+- Shaymin
+- Arceus
+- Victini
+- Snivy
+- Servine
+- Serperior
+- Tepig
+- Pignite
+- Emboar
+- Oshawott
+- Dewott
+- Samurott
+- Patrat
+- Watchog
+- Lillipup
+- Herdier
+- Stoutland
+- Purrloin
+- Liepard
+- Pansage
+- Simisage
+- Pansear
+- Simisear
+- Panpour
+- Simipour
+- Munna
+- Musharna
+- Pidove
+- Tranquill
+- Unfezant
+- Blitzle
+- Zebstrika
+- Roggenrola
+- Boldore
+- Gigalith
+- Woobat
+- Swoobat
+- Drilbur
+- Excadrill
+- Audino
+- Timburr
+- Gurdurr
+- Conkeldurr
+- Tympole
+- Palpitoad
+- Seismitoad
+- Throh
+- Sawk
+- Sewaddle
+- Swadloon
+- Leavanny
+- Venipede
+- Whirlipede
+- Scolipede
+- Cottonee
+- Whimsicott
+- Petilil
+- Lilligant
+- Basculin (Red-Striped)
+- Sandile
+- Krokorok
+- Krookodile
+- Darumaka
+- Darmanitan
+- Maractus
+- Dwebble
+- Crustle
+- Scraggy
+- Scrafty
+- Sigilyph
+- Yamask
+- Cofagrigus
+- Tirtouga
+- Carracosta
+- Archen
+- Archeops
+- Trubbish
+- Garbodor
+- Zorua
+- Zoroark
+- Minccino
+- Cinccino
+- Gothita
+- Gothorita
+- Gothitelle
+- Solosis
+- Duosion
+- Reuniclus
+- Ducklett
+- Swanna
+- Vanillite
+- Vanillish
+- Vanilluxe
+- Deerling (Spring)
+- Deerling (Summer)
+- Deerling (Autumn)
+- Deerling (Winter)
+- Sawsbuck (Spring)
+- Sawsbuck (Summer)
+- Sawsbuck (Autumn)
+- Sawsbuck (Winter)
+- Emolga
+- Karrablast
+- Escavalier
+- Foongus
+- Amoonguss
+- Frillish
+- Jellicent
+- Alomomola
+- Joltik
+- Galvantula
+- Ferroseed
+- Ferrothorn
+- Klink
+- Klang
+- Klinklang
+- Tynamo
+- Eelektrik
+- Eelektross
+- Elgyem
+- Beheeyem
+- Litwick
+- Lampent
+- Chandelure
+- Axew
+- Fraxure
+- Haxorus
+- Cubchoo
+- Beartic
+- Cryogonal
+- Shelmet
+- Accelgor
+- Stunfisk
+- Mienfoo
+- Mienshao
+- Druddigon
+- Golett
+- Golurk
+- Pawniard
+- Bisharp
+- Bouffalant
+- Rufflet
+- Braviary
+- Vullaby
+- Mandibuzz
+- Heatmor
+- Durant
+- Deino
+- Zweilous
+- Hydreigon
+- Larvesta
+- Volcarona
+- Cobalion
+- Terrakion
+- Virizion
+- Tornadus
+- Thundurus
+- Reshiram
+- Zekrom
+- Landorus
+- Kyurem
+- Keldeo
+- Meloetta
+- Genesect
+- Deoxys (Attack)
+- Deoxys (Defense)
+- Deoxys (Speed)
+- Wormadam (Sandy)
+- Wormadam (Trash)
+- Shaymin (Sky)
+- Giratina (Origin)
+- Rotom (Heat)
+- Rotom (Wash)
+- Rotom (Frost)
+- Rotom (Fan)
+- Rotom (Mow)
+- Castform (Sunny)
+- Castform (Rainy)
+- Castform (Snowy)
+- Basculin (Blue-Striped)
+- Darmanitan (Zen)
+- Meloetta (Pirouette)
+
+## Formsanity names
+
+- Unown (A)
+- Unown (B)
+- Unown (C)
+- Unown (D)
+- Unown (E)
+- Unown (F)
+- Unown (G)
+- Unown (H)
+- Unown (I)
+- Unown (J)
+- Unown (K)
+- Unown (L)
+- Unown (M)
+- Unown (N)
+- Unown (O)
+- Unown (P)
+- Unown (Q)
+- Unown (R)
+- Unown (S)
+- Unown (T)
+- Unown (U)
+- Unown (V)
+- Unown (W)
+- Unown (X)
+- Unown (Y)
+- Unown (Z)
+- Unown (Exclamation Mark)
+- Unown (Question Mark)
+- Castform (Normal)
+- Castform (Sunny)
+- Castform (Rainy)
+- Castform (Snowy)
+- Deoxys (Normal)
+- Deoxys (Attack)
+- Deoxys (Defense)
+- Deoxys (Speed)
+- Burmy (Plant)
+- Burmy (Sandy)
+- Burmy (Trash)
+- Wormadam (Plant)
+- Wormadam (Sandy)
+- Wormadam (Trash)
+- Cherrim (Overcast)
+- Cherrim (Sunshine)
+- Shellos (West)
+- Shellos (East)
+- Gastrodon (West)
+- Gastrodon (East)
+- Rotom (Normal)
+- Rotom (Heat)
+- Rotom (Wash)
+- Rotom (Frost)
+- Rotom (Fan)
+- Rotom (Mow)
+- Giratina (Altered)
+- Giratina (Origin)
+- Shaymin (Land)
+- Shaymin (Sky)
+- Basculin (Red-Striped)
+- Basculin (Blue-Striped)
+- Darmanitan (Standard)
+- Darmanitan (Zen)
+- Deerling (Spring)
+- Deerling (Summer)
+- Deerling (Autumn)
+- Deerling (Winter)
+- Sawsbuck (Spring)
+- Sawsbuck (Summer)
+- Sawsbuck (Autumn)
+- Sawsbuck (Winter)
+- Meloetta (Aria)
+- Meloetta (Pirouette)
+
+## Evolution methods list
+
+- `Level up`: Standard levelup evolution, uses the `level` key in the evolution entry
+- `Stone`: Standard stone evolution, uses the `stone` key in the evolution entry
+- `Stone male`: Stone evolution that is only usable on male pokémon, uses the `stone` key in the evolution entry
+- `Stone female`: Stone evolution that is only usable on female pokémon, uses the `stone` key in the evolution entry
+- `Friendship`: Standard friendship evolution, doesn't use any other key in the evolution entry
+- `Friendship (Day)`: Friendship evolution that requires day time, never shows up in standard randomization 
+  and is thereby only available through plando, doesn't use any other key in the evolution entry
+- `Friendship (Night)`: Friendship evolution that requires night time, never shows up in standard randomization 
+  and is thereby only available through plando, doesn't use any other key in the evolution entry
+- `Trade`: Standard trade evolution, never shows up in standard randomization 
+  and is thereby only available through plando, doesn't use any other key in the evolution entry
+- `Trade with item`: Trade evolution that requires holding an item, never shows up in standard randomization 
+  and is thereby only available through plando, uses the `held` key in the evolution entry, logic correctly requires 
+  you to have repeatable access to the item
+- `Trade Karrablast Shelmet`: Trade evolution that is used by Karrablast and Shelmet to evolve only when traded 
+  with each other, use it at your own risk as the effects of using it outside of the vanilla trade evolution 
+  are unknown, never shows up in standard randomization and is thereby only available through plando, doesn't use 
+  any other key in the evolution entry
+- `Magnetic area`: Levelup evolution that only happens when the player is in Chargestone Cave, doesn't use any other 
+  key in the evolution entry
+- `Unused area`: A leftover method from DPPt used for evolving when in Mt. Coronet, uses the same map IDs as 
+  `Magnetic area` and is thereby functionally the same, never shows up in standard randomization and is thereby 
+  only available through plando but reserved to potential later use, doesn't use any other key in the evolution entry
+- `Level up with move`: Levelup evolution that requires the pokémon to know a certain move, uses the `move` key in 
+  the evolution entry, logic correctly requires you to have access to an appropriate area for levelup or having the 
+  corresponding TM/HM if the move can be learned those ways, otherwise it will be assumed always accessible so 
+  use moves that are not learnable those ways at your own risk
+- `Level up moss rock`: Levelup evolution that only happens when the player is in Pinwheel Forest, doesn't use any 
+  other key in the evolution entry
+- `Level up ice rock`: Levelup evolution that only happens when the player is in the lowest floor of Twist Mountain, 
+  doesn't use any other key in the evolution entry
+- `Level up item day`: Levelup evolution that triggers when holding a certain item at day time, uses the `held` key 
+  in the evolution entry, only appears in conjunction with `Level up item night` method in randomization and is 
+  thereby on its own only available through plando, it's recommended to use `_Level up item` instead of writing 
+  both methods individually
+- `Level up item night`: Levelup evolution that triggers when holding a certain item at night time, uses the `held` key 
+  in the evolution entry, only appears in conjunction with `Level up item day` method in randomization and is 
+  thereby on its own only available through plando, it's recommended to use `_Level up item` instead of writing 
+  both methods individually
+- `Level up higher defense`: Levelup evolution that happens at a certain level only when the defense stat of the 
+  pokémon is higher than its attacking stat, uses the `level` key in the evolution entry
+- `Level up higher attack`: Levelup evolution that happens at a certain level only when the attacking stat of the 
+  pokémon is higher than its defense stat, uses the `level` key in the evolution entry
+- `Level up equal physical`: Levelup evolution that happens at a certain level only when the attacking stat of the 
+  pokémon is equal to its defense stat, uses the `level` key in the evolution entry
+- `Level up Silcoon`: Levelup method that only happens to 50% of all pokémon and is the exact opposite of 
+  `Level up Cascoon`, uses the `level` key in the evolution entry
+- `Level up Cascoon`: Levelup method that only happens to 50% of all pokémon and is the exact opposite of 
+  `Level up Silcoon`, uses the `level` key in the evolution entry
+- `Level up Ninjask`: Special levelup method that is only used in conjunction with (and before) `Level up Shedinja`, 
+  uses the `level` key in the evolution entry, it's **highly recommended** to use `_Level up split` instead as the 
+  effects of using it in a different way than expected are unknown
+- `Level up Shedinja`: Special levelup method that is only used in conjunction with (and after) `Level up Ninjask`, 
+  uses the `level` key in the evolution entry, it's **highly recommended** to use `_Level up split` instead as the 
+  effects of using it in a different way than expected are unknown
+- `Level up high beauty`: Levelup method that requires a high beauty contest stat, use it at your own risk as there 
+  is no known way to increase that stat without save file editing software, never shows up in standard randomization 
+  and is thereby only available through plando, doesn't use any other key in the evolution entry
+- `Level up (female)`: Levelup method that is only triggered for female pokémon, never shows up in standard 
+  randomization and is thereby only available through plando, uses the `level` key in the evolution entry
+- `Level up (male)`: Levelup method that is only triggered for male pokémon, never shows up in standard 
+  randomization and is thereby only available through plando, uses the `level` key in the evolution entry
+- `Level up with party member`: Levelup method that requires the player to have a certain pokémon species in their 
+  party at that moment, uses the `partner` key in the evolution entry
+- `_Level up item`: Macro method that is resolved into an entry for `Level up item day` and `Level up item night` each 
+  with the same target species and required item
+- `_Level up split`: Macro method that is resolved into an entry for `Level up Ninjask` and `Level up Shedinja` each 
+  with the same required level while using the `species` key for the `Level up Ninjask` target and the `species_2` key 
+  for the `Level up Shedinja` target, **highly recommended** to be used instead of writing both methods individually
+- `_Level up PID`: Macro method that is resolved into an entry for `Level up Silcoon` and `Level up Cascoon` each 
+  with the same required level while using the `species` key for the `Level up Silcoon` target and the `species_2` key 
+  for the `Level up Cascoon` target
+- `_Level up stats`: Macro method that is resolved into an entry for `Level up higher defense`, 
+  `Level up higher attack`, and `Level up equal physical` each with the same required level while using the `species` 
+  key for the `Level up higher defense` target, the `species_2` key for the `Level up higher attack` target, and
+  the `species_3` key for the `Level up equal physical` target
+
+## Evolution items list
+
+Stone evolution items:
+- Sun Stone
+- Moon Stone
+- Fire Stone
+- Thunder Stone
+- Water Stone
+- Leaf Stone
+- Shiny Stone
+- Dusk Stone
+- Dawn Stone
+
+Held evolution items:
+- Protein
+- Iron
+- Carbos
+- Oval Stone
+- King's Rock
+- Deep Sea Tooth
+- Deep Sea Scale
+- Metal Coat
+- Dragon Scale
+- Up-Grade
+- Protector
+- Electirizer
+- Magmarizer
+- Dubious Disc
+- Reaper Cloth
+- Razor Claw
+- Razor Fang
+- Prism Scale
+
+## All move names
+
+These names are the exact in-game names.
+Some of them have been changed in later games, so look twice if you're not entirely sure a move's spelling.
+
+- Pound
+- Karate Chop
+- DoubleSlap
+- Comet Punch
+- Mega Punch
+- Pay Day
+- Fire Punch
+- Ice Punch
+- ThunderPunch
+- Scratch
+- ViceGrip
+- Guillotine
+- Razor Wind
+- Swords Dance
+- Cut
+- Gust
+- Wing Attack
+- Whirlwind
+- Fly
+- Bind
+- Slam
+- Vine Whip
+- Stomp
+- Double Kick
+- Mega Kick
+- Jump Kick
+- Rolling Kick
+- Sand-Attack
+- Headbutt
+- Horn Attack
+- Fury Attack
+- Horn Drill
+- Tackle
+- Body Slam
+- Wrap
+- Take Down
+- Thrash
+- Double-Edge
+- Tail Whip
+- Poison Sting
+- Twineedle
+- Pin Missile
+- Leer
+- Bite
+- Growl
+- Roar
+- Sing
+- Supersonic
+- SonicBoom
+- Disable
+- Acid
+- Ember
+- Flamethrower
+- Mist
+- Water Gun
+- Hydro Pump
+- Surf
+- Ice Beam
+- Blizzard
+- Psybeam
+- BubbleBeam
+- Aurora Beam
+- Hyper Beam
+- Peck
+- Drill Peck
+- Submission
+- Low Kick
+- Counter
+- Seismic Toss
+- Strength
+- Absorb
+- Mega Drain
+- Leech Seed
+- Growth
+- Razor Leaf
+- SolarBeam
+- PoisonPowder
+- Stun Spore
+- Sleep Powder
+- Petal Dance
+- String Shot
+- Dragon Rage
+- Fire Spin
+- ThunderShock
+- Thunderbolt
+- Thunder Wave
+- Thunder
+- Rock Throw
+- Earthquake
+- Fissure
+- Dig
+- Toxic
+- Confusion
+- Psychic
+- Hypnosis
+- Meditate
+- Agility
+- Quick Attack
+- Rage
+- Teleport
+- Night Shade
+- Mimic
+- Screech
+- Double Team
+- Recover
+- Harden
+- Minimize
+- SmokeScreen
+- Confuse Ray
+- Withdraw
+- Defense Curl
+- Barrier
+- Light Screen
+- Haze
+- Reflect
+- Focus Energy
+- Bide
+- Metronome
+- Mirror Move
+- Selfdestruct
+- Egg Bomb
+- Lick
+- Smog
+- Sludge
+- Bone Club
+- Fire Blast
+- Waterfall
+- Clamp
+- Swift
+- Skull Bash
+- Spike Cannon
+- Constrict
+- Amnesia
+- Kinesis
+- Softboiled
+- Hi Jump Kick
+- Glare
+- Dream Eater
+- Poison Gas
+- Barrage
+- Leech Life
+- Lovely Kiss
+- Sky Attack
+- Transform
+- Bubble
+- Dizzy Punch
+- Spore
+- Flash
+- Psywave
+- Splash
+- Acid Armor
+- Crabhammer
+- Explosion
+- Fury Swipes
+- Bonemerang
+- Rest
+- Rock Slide
+- Hyper Fang
+- Sharpen
+- Conversion
+- Tri Attack
+- Super Fang
+- Slash
+- Substitute
+- Struggle
+- Sketch
+- Triple Kick
+- Thief
+- Spider Web
+- Mind Reader
+- Nightmare
+- Flame Wheel
+- Snore
+- Curse
+- Flail
+- Conversion 2
+- Aeroblast
+- Cotton Spore
+- Reversal
+- Spite
+- Powder Snow
+- Protect
+- Mach Punch
+- Scary Face
+- Faint Attack
+- Sweet Kiss
+- Belly Drum
+- Sludge Bomb
+- Mud-Slap
+- Octazooka
+- Spikes
+- Zap Cannon
+- Foresight
+- Destiny Bond
+- Perish Song
+- Icy Wind
+- Detect
+- Bone Rush
+- Lock-On
+- Outrage
+- Sandstorm
+- Giga Drain
+- Endure
+- Charm
+- Rollout
+- False Swipe
+- Swagger
+- Milk Drink
+- Spark
+- Fury Cutter
+- Steel Wing
+- Mean Look
+- Attract
+- Sleep Talk
+- Heal Bell
+- Return
+- Present
+- Frustration
+- Safeguard
+- Pain Split
+- Sacred Fire
+- Magnitude
+- DynamicPunch
+- Megahorn
+- DragonBreath
+- Baton Pass
+- Encore
+- Pursuit
+- Rapid Spin
+- Sweet Scent
+- Iron Tail
+- Metal Claw
+- Vital Throw
+- Morning Sun
+- Synthesis
+- Moonlight
+- Hidden Power
+- Cross Chop
+- Twister
+- Rain Dance
+- Sunny Day
+- Crunch
+- Mirror Coat
+- Psych Up
+- ExtremeSpeed
+- AncientPower
+- Shadow Ball
+- Future Sight
+- Rock Smash
+- Whirlpool
+- Beat Up
+- Fake Out
+- Uproar
+- Stockpile
+- Spit Up
+- Swallow
+- Heat Wave
+- Hail
+- Torment
+- Flatter
+- Will-O-Wisp
+- Memento
+- Facade
+- Focus Punch
+- SmellingSalt
+- Follow Me
+- Nature Power
+- Charge
+- Taunt
+- Helping Hand
+- Trick
+- Role Play
+- Wish
+- Assist
+- Ingrain
+- Superpower
+- Magic Coat
+- Recycle
+- Revenge
+- Brick Break
+- Yawn
+- Knock Off
+- Endeavor
+- Eruption
+- Skill Swap
+- Imprison
+- Refresh
+- Grudge
+- Snatch
+- Secret Power
+- Dive
+- Arm Thrust
+- Camouflage
+- Tail Glow
+- Luster Purge
+- Mist Ball
+- FeatherDance
+- Teeter Dance
+- Blaze Kick
+- Mud Sport
+- Ice Ball
+- Needle Arm
+- Slack Off
+- Hyper Voice
+- Poison Fang
+- Crush Claw
+- Blast Burn
+- Hydro Cannon
+- Meteor Mash
+- Astonish
+- Weather Ball
+- Aromatherapy
+- Fake Tears
+- Air Cutter
+- Overheat
+- Odor Sleuth
+- Rock Tomb
+- Silver Wind
+- Metal Sound
+- GrassWhistle
+- Tickle
+- Cosmic Power
+- Water Spout
+- Signal Beam
+- Shadow Punch
+- Extrasensory
+- Sky Uppercut
+- Sand Tomb
+- Sheer Cold
+- Muddy Water
+- Bullet Seed
+- Aerial Ace
+- Icicle Spear
+- Iron Defense
+- Block
+- Howl
+- Dragon Claw
+- Frenzy Plant
+- Bulk Up
+- Bounce
+- Mud Shot
+- Poison Tail
+- Covet
+- Volt Tackle
+- Magical Leaf
+- Water Sport
+- Calm Mind
+- Leaf Blade
+- Dragon Dance
+- Rock Blast
+- Shock Wave
+- Water Pulse
+- Doom Desire
+- Psycho Boost
+- Roost
+- Gravity
+- Miracle Eye
+- Wake-Up Slap
+- Hammer Arm
+- Gyro Ball
+- Healing Wish
+- Brine
+- Natural Gift
+- Feint
+- Pluck
+- Tailwind
+- Acupressure
+- Metal Burst
+- U-turn
+- Close Combat
+- Payback
+- Assurance
+- Embargo
+- Fling
+- Psycho Shift
+- Trump Card
+- Heal Block
+- Wring Out
+- Power Trick
+- Gastro Acid
+- Lucky Chant
+- Me First
+- Copycat
+- Power Swap
+- Guard Swap
+- Punishment
+- Last Resort
+- Worry Seed
+- Sucker Punch
+- Toxic Spikes
+- Heart Swap
+- Aqua Ring
+- Magnet Rise
+- Flare Blitz
+- Force Palm
+- Aura Sphere
+- Rock Polish
+- Poison Jab
+- Dark Pulse
+- Night Slash
+- Aqua Tail
+- Seed Bomb
+- Air Slash
+- X-Scissor
+- Bug Buzz
+- Dragon Pulse
+- Dragon Rush
+- Power Gem
+- Drain Punch
+- Vacuum Wave
+- Focus Blast
+- Energy Ball
+- Brave Bird
+- Earth Power
+- Switcheroo
+- Giga Impact
+- Nasty Plot
+- Bullet Punch
+- Avalanche
+- Ice Shard
+- Shadow Claw
+- Thunder Fang
+- Ice Fang
+- Fire Fang
+- Shadow Sneak
+- Mud Bomb
+- Psycho Cut
+- Zen Headbutt
+- Mirror Shot
+- Flash Cannon
+- Rock Climb
+- Defog
+- Trick Room
+- Draco Meteor
+- Discharge
+- Lava Plume
+- Leaf Storm
+- Power Whip
+- Rock Wrecker
+- Cross Poison
+- Gunk Shot
+- Iron Head
+- Magnet Bomb
+- Stone Edge
+- Captivate
+- Stealth Rock
+- Grass Knot
+- Chatter
+- Judgment
+- Bug Bite
+- Charge Beam
+- Wood Hammer
+- Aqua Jet
+- Attack Order
+- Defend Order
+- Heal Order
+- Head Smash
+- Double Hit
+- Roar of Time
+- Spacial Rend
+- Lunar Dance
+- Crush Grip
+- Magma Storm
+- Dark Void
+- Seed Flare
+- Ominous Wind
+- Shadow Force
+- Hone Claws
+- Wide Guard
+- Guard Split
+- Power Split
+- Wonder Room
+- Psyshock
+- Venoshock
+- Autotomize
+- Rage Powder
+- Telekinesis
+- Magic Room
+- Smack Down
+- Storm Throw
+- Flame Burst
+- Sludge Wave
+- Quiver Dance
+- Heavy Slam
+- Synchronoise
+- Electro Ball
+- Soak
+- Flame Charge
+- Coil
+- Low Sweep
+- Acid Spray
+- Foul Play
+- Simple Beam
+- Entrainment
+- After You
+- Round
+- Echoed Voice
+- Chip Away
+- Clear Smog
+- Stored Power
+- Quick Guard
+- Ally Switch
+- Scald
+- Shell Smash
+- Heal Pulse
+- Hex
+- Sky Drop
+- Shift Gear
+- Circle Throw
+- Incinerate
+- Quash
+- Acrobatics
+- Reflect Type
+- Retaliate
+- Final Gambit
+- Bestow
+- Inferno
+- Water Pledge
+- Fire Pledge
+- Grass Pledge
+- Volt Switch
+- Struggle Bug
+- Bulldoze
+- Frost Breath
+- Dragon Tail
+- Work Up
+- Electroweb
+- Wild Charge
+- Drill Run
+- Dual Chop
+- Heart Stamp
+- Horn Leech
+- Sacred Sword
+- Razor Shell
+- Heat Crash
+- Leaf Tornado
+- Steamroller
+- Cotton Guard
+- Night Daze
+- Psystrike
+- Tail Slap
+- Hurricane
+- Head Charge
+- Gear Grind
+- Searing Shot
+- Techno Blast
+- Relic Song
+- Secret Sword
+- Glaciate
+- Bolt Strike
+- Blue Flare
+- Fiery Dance
+- Freeze Shock
+- Ice Burn
+- Snarl
+- Icicle Crash
+- V-create
+- Fusion Flare
+- Fusion Bolt
+
+# Egg group names
+
+- Vanilla groups:
+  - Monster
+  - Water 1
+  - Water 2
+  - Water 3
+  - Bug
+  - Flying
+  - Field
+  - Fairy
+  - Grass
+  - Human-Like (note that you always have to put this group in quotation marks (`"`))
+  - Mineral
+  - Amorphous
+  - Dragon
+  - Ditto (Doesn't have an effect currently)
+  - Unknown
+- Custom groups (can always be used in plando regardless of randomization):
+  - Static
