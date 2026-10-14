@@ -2,12 +2,13 @@
 
 ## Installation Procedures (Windows)
 
-1. Download the above release and extract it.
-2. Generate your world and extract the zip file
-3. Locate the .ffcc file in the zip
+1. Download the latest FFCC Randomizer release and the FFCC apworld, and install the apworld.
+2. Get your `.ffcc` file: download it from your room's page, or find it in the output zip if you generated locally.
+3. In the FFCC Randomizer's AP Patch tab, choose your clean NTSC-US ISO and your `.ffcc` file, and patch.
 
 ## Joining a MultiWorld Game
 
-1. After using the FFCC Modding application launch the FFCC Client
-2. Connect the Client to the Archipelago server
-3. The client will ask for your player name when joining
+1. Start the patched ISO in Dolphin.
+2. Open your `.ffcc` file (or launch the Final Fantasy Crystal Chronicles Client from the Archipelago Launcher).
+   A `.ffcc` downloaded from the room connects to the server on its own and fills in your slot name.
+3. Otherwise, connect with `/connect <address>` and enter your slot name when asked.

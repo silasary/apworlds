@@ -8,6 +8,9 @@
 #### v0.3.0
 - <a href="https://github.com/NyanMC/build-a-jetpack/releases/download/0.3.0/build_a_jetpack.apworld">https://github.com/NyanMC/build-a-jetpack/releases/download/0.3.0/build_a_jetpack.apworld</a>
 
+#### v0.3.0b0
+- <a href="https://github.com/NyanMC/build-a-jetpack/releases/download/0.3.0b/build_a_jetpack.apworld">https://github.com/NyanMC/build-a-jetpack/releases/download/0.3.0b/build_a_jetpack.apworld</a>
+
 #### v0.2.0
 - <a href="https://github.com/NyanMC/build-a-jetpack/releases/download/0.2.0/build_a_jetpack.apworld">https://github.com/NyanMC/build-a-jetpack/releases/download/0.2.0/build_a_jetpack.apworld</a>
 
