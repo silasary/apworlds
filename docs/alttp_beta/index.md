@@ -7,7 +7,7 @@ Ganon!
 
 
 ## Downloads
-- <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026v4/alttp_beta.apworld">Latest Version (6.0.2r3)</a>
+- <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v6/alttp_beta.apworld">Latest Version (6.0.2r3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

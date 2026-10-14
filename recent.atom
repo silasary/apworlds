@@ -2,127 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-14T00:27:29.304648+00:00</updated>
+  <updated>2026-10-14T06:17:43.917401+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Uroogla/S3AP/releases/tag/1.4.0</id>
-    <title>Spyro 3 v1.4.0</title>
-    <updated>2026-10-10T21:10:44+00:00</updated>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>This release contains both Client (S3AP.Desktop.exe) and APWorld changes. The new client is partially compatible with seeds started on 1.3.X, but you may encounter unexpected behavior when connecting.&#13;
-&#13;
-New Features&#13;
-- Added an option to put a whirlwind outside the door to Sorceress' Lair once the Sorceress has been defeated.&#13;
-  - This whirlwind takes the player to the impossible island with 3 life bottles. Having this option on when life bottles are enabled as locations adds these 3 life bottles to the location pool.&#13;
-  - This represents cut content from the original game and resembles behavior in the Reignited Trilogy.&#13;
-&#13;
-Changes and Improvements&#13;
-- Under most circumstances, the client no longer needs to be opened as an admin, and this is no longer forced.&#13;
-- Bumped version of Archipelago.Core, the underlying memory library.&#13;
-- Due to incompatibilities with older versions of Python, increased the minimum AP version from 0.6.1 to 0.6.6.&#13;
-&#13;
-Bug Fixes:&#13;
-- Fixed a critical bug where, late in full gemsanity seeds, the client could fail to save data to the Archipelago server, resulting in issues up to and including crashes.&#13;
-- Fixed a bug where, when open world was off, Super Bonus Round gems could be logically required before the player had access to Midnight Mountain.&#13;
-- Fixed a bug where filler items could be lost if connecting before in control of Spyro.</content>
-    <link href="https://github.com/Uroogla/S3AP/releases/tag/1.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Snyax/Archipelago/releases/tag/1.0.0</id>
-    <title>XCOM 2 War of the Chosen v1.0.0</title>
-    <updated>2026-10-10T22:09:32+00:00</updated>
-    <author>
-      <name>Snyax</name>
-    </author>
-    <author>
-      <name>copyrite</name>
-    </author>
-    <content>[Game Info](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/en_XCOM%202%20War%20of%20the%20Chosen.md) | [Setup Guide](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/setup_en.md) | [APWorld Mods](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/apworld_mods.md) | [Troubleshooting](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/troubleshooting.md) | [AI Disclosure](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/AI-DECLARATION.md)&#13;
-&#13;
-1.0.0 is here! This release includes many, many new features and improvements, and there's a good chance it includes one or two new bugs as well. If you run into any issues or weird behavior, or would like to give some general feedback, please write in the [Discord thread](https://discord.com/channels/731205301247803413/1037751568700805141)! If you'd like to stay on the previous version, e.g. to continue playing in an ongoing async, make sure to [manually install](https://github.com/Snyax/Archipelago/blob/main/worlds/x2wotc/docs/mod_manual_installation.md) the mod to prevent Steam from auto-updating.&#13;
-## Changes&#13;
-### New Features&#13;
-- Added Ranksanity&#13;
-  - Enable `Ranksanity` option to add new items and locations for soldier class promotions and rank-up events&#13;
-  - Toggle `Global Promotions` option to determine behavior of excluded classes&#13;
-  - Fully LWOTC-compatible!&#13;
-- Added DeathLink&#13;
-  - Enable `DeathLink` option in your YAML or change your mind via in-game Mod Config Menu at any time&#13;
-  - Set `DeathLink Chance` option to play dice with your soldiers' lives (can also be changed in MCM)&#13;
-  - Added more options for better access to exclusive soldier classes to enable less punishing DeathLinks&#13;
-- Overhauled trap items&#13;
-  - Removed `[Trap] Force Level +1` and added many more traps, both for the Strategy and Tactical layers&#13;
-  - Enable `Disable Turn One Traps` option to ignore tactical traps from before a mission started&#13;
-  - Enable `Disable All Traps` in MCM if you bit off more than you can chew (it happens)&#13;
-  - Traps may range anywhere from 'mild inconvenience' to 'potentially run-threatening', enable whichever ones you like with the `Active Traps` option and please give feedback if they feel too strong or boring!&#13;
-- Overhauled progressive weapon items&#13;
-  - New `[Tech] Progressive Gun` track includes rifle, shotgun, cannon, and sniper techs, the order of later items is shuffled and different each seed&#13;
-  - `Split Progressive Items` option allows splitting these techs into separate rifle/shotgun and cannon/sniper tracks&#13;
-- Added `progressive` option to `Chosen Huntsanity`, grouping Chosen Hunt items into three progressive items&#13;
-- Added `Exclude Post-Goal Locations` option to accomodate early-goal sync settings&#13;
-- Added `Enemy Plando Preset` option, feel free to suggest new presets if there are fun settings you like using :)&#13;
-### Client&#13;
-- Overhauled connection, version checking, and writing to game config&#13;
-  - Client no longer prompts user for game path on launch but on connection&#13;
-  - All version checking now happens directly in the client, connection will be closed if versions are incompatible&#13;
-  - Added `/game_path`, `/workshop_path`, and `/reset_paths` client commands to remove need to open `host.yaml`&#13;
-  - `/version` client command now displays world and mod version info when connected&#13;
-  - Client now prints an error on connection when config file is missing version info&#13;
-- Added `/progressive` client command to print info about active progressive items&#13;
-- Client now prints names of valid progressive items if user attempts to hint one of their stages&#13;
-- Client now supports launching from WebHost by clicking the slot name on the room page&#13;
-- Proxy is now properly assigned a free port by the OS instead of using a generic default&#13;
-### Generation&#13;
-- Logic now tightly follows `Remove Corpse Costs` option&#13;
-- `get_filler_item_name()` now respects filler share options&#13;
-- Various logic difficulty tweaks, especially for early locations&#13;
-- Various optimizations, massively lowering generation times&#13;
-- Improvements to item and location name groups&#13;
-### Mod&#13;
-- Mod no longer allows launching while disconnected or while connected with incompatible version info&#13;
-- Minimized GameStates added to history in Strategy layer to significantly reduce risk of save file bloat&#13;
-- Improved guardrails around offline location checking&#13;
-- Replaced UI strings for objectives waiting on multiworld items&#13;
-- Streamlined Chosen Hunt locations for more intuitive behavior&#13;
-- Partial research project hints now reveal item classification in addition to flavor text&#13;
-- LWOTC rebels and VIPs now scale with items received from the multiworld&#13;
-- Removed science and engineering requirements from proving ground projects&#13;
-- Corpse costs are now also removed from proving ground projects if the option is enabled&#13;
-### Bug Fixes&#13;
-- Fixed a bug where Avatars could spawn damaged in the final mission&#13;
-- Fixed a bug where covert action risks would still appear after their associated Chosen had already been defeated&#13;
-- Fixed incomplete proving ground and skulljack logic in LWOTC&#13;
-- Fixed logic error in Muton Destroyer APWorld mod</content>
-    <link href="https://github.com/Snyax/Archipelago/releases/tag/1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.3</id>
-    <title>Pokemon Crystal v6.0.3</title>
-    <updated>2026-10-10T22:17:27+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-## Bug Fixes&#13;
-- Fix Flying to the Cherrygrove side of Flooded Mine depositing you on the cave entrance instead of one tile below.&#13;
-- Fix logic for Route 32 fishing swarms also including Routes 12 and 13.&#13;
-- Fix active fishing swarms applying everywhere.&#13;
-- Fix it being impossible to deactivate a swarm if it was active for daily reset.&#13;
-- Fix swarms activating or deactivating when their trigger trainer called the player.&#13;
-- Fix Elm giving up when he encounters the correct species but incorrect OT when looking for the Mysteryegg Pokemon.&#13;
-&#13;
-_This release is backwards compatible down to 6.0.0._</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.3"/>
-  </entry>
   <entry>
     <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.8.0</id>
     <title>Pokemon Snap v0.8.0.post2</title>
@@ -1973,7 +1857,7 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r3</title>
+    <title>GTFO v0.0.4r2</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
@@ -2017,5 +1901,69 @@ Please do report bugs and things, as we are confident that this new architecture
 &#13;
 - Removed the Shuffle Chapter Stats option.</content>
     <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.14.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.1</id>
+    <title>The Legend of Zelda - Oracle of Seasons v25.0.1</title>
+    <updated>2026-10-14T00:34:41+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>## 🗳️ New Options&#13;
+- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
+- Freestanding items can now be removed from the randomizable item pool&#13;
+- The trade sequence can also separately be removed, excluding the pedestal&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+&#13;
+## 🧠 Logic&#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+- Fixed D2's boss room having holes if Digdogger was the boss</content>
+    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.17.0</id>
+    <title>Brotato v0.17.0</title>
+    <updated>2026-10-14T02:42:44+00:00</updated>
+    <author>
+      <name>Rampaging Hippy</name>
+    </author>
+    <content>## Added&#13;
+&#13;
+- New option: `include_elites_in_logic`&#13;
+  - When set, considers elites when determining access logic. Assumes you are playing&#13;
+    on Danger 2 or higher.&#13;
+  - Currently only affects legendary loot crate pickup logic (see below).&#13;
+&#13;
+## Fixed&#13;
+&#13;
+- Fix `num_wave_caps` options not being mapped to the actual value when generating.&#13;
+- Logic for legendary loot crate pickups now requires that at least one character is&#13;
+  able to reach a wave where they can drop:&#13;
+  - Wave 11 if `include_elites_in_logic` is 1.&#13;
+  - Wave 20 otherwise.</content>
+    <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.17.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03m</id>
+    <title>Cuphead v0.2.20021210</title>
+    <updated>2026-10-14T04:34:26+00:00</updated>
+    <author>
+      <name>JKLeckr</name>
+    </author>
+    <content>**To see notes and what's new for alpha03, see [alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a)**&#13;
+&#13;
+### Revision&#13;
+&#13;
+This revision:&#13;
+- Fixes top grade logic for non-plane levels including Plane super as a possible requirement item.&#13;
+- Adds a new item group Land Super that has Supers that are used in non-plane levels.&#13;
+- Cleans up and fixes some small code issues.&#13;
+</content>
+    <link href="https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03m"/>
   </entry>
 </feed>
