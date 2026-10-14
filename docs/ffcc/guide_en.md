@@ -4,7 +4,7 @@
 
 1. Download the above release and extract it.
 2. Generate your world and extract the zip file
-3. Location the .ffcc file from the zip 
+3. Locate the .ffcc file in the zip
 
 ## Joining a MultiWorld Game
 

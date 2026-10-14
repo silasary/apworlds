@@ -2,73 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-13T18:20:58.307246+00:00</updated>
+  <updated>2026-10-14T00:27:29.304648+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.4</id>
-    <title>Dragon Quest IX v0.1.4</title>
-    <updated>2026-10-10T13:13:00+00:00</updated>
-    <author>
-      <name>kid2407</name>
-    </author>
-    <content># Dragon Quest IX - Beta Release (Version 0.1.4)&#13;
-&#13;
-**This is a beta release. Things can possibly break, though the core gameplay should run normally.**&#13;
-&#13;
-*This requires Archipelago **0.6.7 or newer!***&#13;
-*This **is** compatible with seeds generated on version 0.1.2 or newer*&#13;
-&#13;
-New to the game? Check out the [FAQ](https://discord.com/channels/731205301247803413/1427594624389742716/1491731616068800543)&#13;
-## Bugs fixed&#13;
-&#13;
-* Fixed Softlock when triggering punishment mode</content>
-    <link href="https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.1.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.2</id>
-    <title>AEMinecraft v0.7.0rc2</title>
-    <updated>2026-10-10T13:16:44+00:00</updated>
-    <author>
-      <name>KuroLynx</name>
-    </author>
-    <author>
-      <name>EDGN</name>
-    </author>
-    <content>## AEMinecraft v0.7.0-rc.2
-
-**Pre-release.** Second test build of v0.7.0. Stay on v0.6.2 if you want a stable game.
-
-For everything new in v0.7.0, see the **[v0.7.0-rc.1 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1)**. This RC only changes the apworld; the mod is the same code as rc.1, rebuilt with the new version number.
-
-### Fixed
-
-- **Generation hung on some BACAP slots.** With structures and mobs locked, glitch logic could take minutes or never finish building. That step now takes a couple of seconds.
-- **Same seed, different logic.** The exported logic depended on Python's hash seed, so two runs of the same seed could ship slightly different rules. It is now identical every time. Item placement was never affected.
-
-### Faster
-
-- **BACAP multiworlds generate several times faster.** The `advancements_required` goal check stops as soon as enough advancements are reachable, and rule evaluation and logic minimisation do less work. Same seeds give the same placement and slot data as before.
-
-### Upgrading from rc.1
-
-- **Replace the apworld.** The rc.1 mod jars and YAMLs keep working with it, but you may as well grab the rc.2 jar.
-</content>
-    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Happyhappyism/Bomberman-Hero-Archipelago/releases/tag/bomberman_hero_v0.2.5</id>
-    <title>Bomberman Hero v0.2.5</title>
-    <updated>2026-10-10T20:42:47+00:00</updated>
-    <author>
-      <name>Happyhappyism</name>
-    </author>
-    <content>## Fixes&#13;
-- Fixed an issue where the project 64 bizhawk client alternative would return an invalid json after awhile</content>
-    <link href="https://github.com/Happyhappyism/Bomberman-Hero-Archipelago/releases/tag/bomberman_hero_v0.2.5"/>
-  </entry>
   <entry>
     <id>https://github.com/Uroogla/S3AP/releases/tag/1.4.0</id>
     <title>Spyro 3 v1.4.0</title>
@@ -905,6 +843,90 @@ This RC only lists what changed since the **[v0.7.0-rc.2 release notes](https://
     <link href="https://github.com/PinkSwitch/Archipelago/releases/tag/cvdos3.1"/>
   </entry>
   <entry>
+    <id>https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.7.0</id>
+    <title>Dredge v0.7.0</title>
+    <updated>2026-10-12T15:05:00+00:00</updated>
+    <author>
+      <name>Alextric</name>
+    </author>
+    <author>
+      <name>fight4day</name>
+    </author>
+    <content>&gt; [!IMPORTANT]&#13;
+&gt; Use this apworld with **mod 3.0.0** (link to the mod release). Seeds generated with 0.6.0 should be finished on **mod 2.0.0**: abilities, pursuits and research work differently now.&#13;
+&gt;&#13;
+&gt; Gameplay changes, the in-game tracker and client fixes are in the mod release notes.&#13;
+&#13;
+## New locations&#13;
+&#13;
+A default base-game seed now has **366** locations, up from 319.&#13;
+&#13;
+| Group | 0.6.0 | 0.7.0 |&#13;
+| --- | ---: | ---: |&#13;
+| Dredge spots | 126 | 126 |&#13;
+| Encyclopedia | 151 | 151 |&#13;
+| Research | 25 | 25 |&#13;
+| Research unlocks | 17 | now events |&#13;
+| Pursuits | – | 31 |&#13;
+| World | – | 23 |&#13;
+| Messages in a bottle | – | 10 |&#13;
+| **Total** | **319** | **366** |&#13;
+&#13;
+- **Pursuits:** each character's questline, including the steps where characters hand out research books, Grotesque Fish, the relic hand-ins, and the pursuit reward grids.&#13;
+- **World:** the shrines, 13 shore caches, the Old Wreck, the Old Mayor's Camps, the Old Laboratory and the Stone Tablets.&#13;
+- **The Iron Rig** adds 4 pursuit checks: Rig Built, Science Lab Built, Generator Fuelled and the Factory.&#13;
+- **The Pale Reach** adds 6 pursuit checks (Under The Ice ×4, the Ice Shaper and the shrine), 9 captain's logs, and the Teleport Anchor dredge spot.&#13;
+&#13;
+Removed: shop checks and the unused relic and prototype locations.&#13;
+&#13;
+## New items&#13;
+&#13;
+- **The Collector's abilities** (Haste, Manifest, Banish, Atrophy) are items. Atrophy can catch spot fish in logic.&#13;
+- **Quest items:** Bronze Belt Buckle, Dog Tags, Mortar Frame, Mortar Barrel, Family Crest, Stone Tablet 1–3, and Ice Axe ×4 (Pale Reach).&#13;
+- **Aurous Anchor** (Pale Reach).&#13;
+- **Aberration chance items:** Progressive Aberration Chance and Guaranteed Aberrations. Each one received raises your minimum aberration chance.&#13;
+- **13 traps:** Damaging Event, Scary Event, Money Loss, Teleport, Panic, Hull Damage, Engine Damage, Nightfall, Rot, Slow, Lights Out, Cargo Scramble and Reverse Controls.&#13;
+- **Research Parts are removed** from the pool, since research costs nothing in an AP save.&#13;
+&#13;
+## Options&#13;
+&#13;
+| Option | Change |&#13;
+| --- | --- |&#13;
+| `require_engines` | Removed, replaced by `require_boat_performance` |&#13;
+| `require_boat_performance` | New. Areas need enough engine speed and light that fits your hull (see below) |&#13;
+| `include_message_bottles` | New, on by default |&#13;
+| `include_research_checks` | New, on by default |&#13;
+| `progressive_aberration_chance_items` | New, 0–20 |&#13;
+| `guaranteed_aberrations_item` | New |&#13;
+| `trap_percentage` | New, 0–100, default 0 |&#13;
+| `enabled_traps` | New, all traps by default |&#13;
+| `start_inventory_from_pool` | Now supported. Starting Progressive Hulls are capped at the seed's hull count |&#13;
+&#13;
+**Boat performance thresholds**&#13;
+&#13;
+| Area | Speed | Light |&#13;
+| --- | ---: | ---: |&#13;
+| Gale Cliffs, Stellar Basin, Twisted Strand, Devil's Spine | 50 kn | 1800 lm |&#13;
+| Open Ocean, the Iron Rig | 50 kn | 2100 lm |&#13;
+| The Pale Reach | 60 kn | 2100 lm |&#13;
+&#13;
+Shop-bought copies of engines and lights count toward this. Lights become progression when the option is on.&#13;
+&#13;
+**Aberrations** need at least half (rounded up) of the Progressive Aberration Chance items, or Guaranteed Aberrations. If neither option is on, aberrations aren't gated. A warning is shown when aberrations are included without these items.&#13;
+&#13;
+## Logic fixes&#13;
+&#13;
+- Rods and nets only count once the hull has room to equip them.&#13;
+- Colossal Squid and Pale Grasper need the Radiant Trawl Net.&#13;
+- Oarfish and Gulper Eel don't need exotic bait, and other exotic fish have alternative requirements.&#13;
+- Iron Rig phase fish need Iron Rig access.&#13;
+- The three Icebreaker parts satisfy Icebreaker requirements.&#13;
+- The Deluxe-only Arterial Engine is removed from the pool.&#13;
+- Useful items are only added for expansions the seed includes.&#13;
+- Generation fails clearly when items outnumber locations.</content>
+    <link href="https://github.com/alextric234/ArchipelagoDredge/releases/tag/dredge_0.7.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/PinkSwitch/Archipelago/releases/tag/cvpor2.0</id>
     <title>Castlevania: Portrait of Ruin v2.0.0</title>
     <updated>2026-10-12T15:11:18+00:00</updated>
@@ -1265,7 +1287,7 @@ You will have to generate a new multiworld for this patch. Sorry!&#13;
   </entry>
   <entry>
     <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.1</id>
-    <title>Ratchet &amp; Clank 3 v0.6.1.post2</title>
+    <title>Ratchet &amp; Clank 3 v0.6.1.post3</title>
     <updated>2026-10-13T05:00:50+00:00</updated>
     <author>
       <name>1theory</name>
@@ -1275,12 +1297,6 @@ You will have to generate a new multiworld for this patch. Sorry!&#13;
     </author>
     <author>
       <name>Myth197</name>
-    </author>
-    <author>
-      <name>Stevoisiak</name>
-    </author>
-    <author>
-      <name>Taoshi</name>
     </author>
     <author>
       <name>Taoshix</name>
@@ -1957,12 +1973,49 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r2</title>
+    <title>GTFO v0.0.4r3</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
     </author>
     <content>Hotfix for version 0.1.0. Fixed the `RundownTierRandom` progressive ordering option.</content>
     <link href="https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.14.1</id>
+    <title>Paper Mario The Thousand Year Door v0.14.1</title>
+    <updated>2026-10-13T23:28:23+00:00</updated>
+    <author>
+      <name>jamesbrq</name>
+    </author>
+    <content>## Bug Fixes&#13;
+&#13;
+- Fixed a crash when receiving items from players whose names contain `&lt;` or `&gt;`.&#13;
+- Fixed duplicate badges and consumables on the first shop purchase when Remote Items is enabled.&#13;
+- Fixed the Crystal Stars goal interrupting pickup animations, including chest pickups.&#13;
+- Fixed the Chapter 2 Shadow Sirens event causing item pickups to softlock.&#13;
+- Fixed invisible falling Dull Bones in `gon_03` caused by overworld enemy replacement.&#13;
+- Fixed randomized Piders remaining near the ceiling, using incorrect descent distances, and only detecting Mario from one side.&#13;
+- Fixed Monochrome Clefts, including an encounter in `win_00`, being missed by overworld enemy replacement.&#13;
+- Fixed tossing a coconut during the full-inventory prompt removing the protected coconut from key items.&#13;
+- Fixed generation failures involving the Crystal Stars goal, All Star Shuffle, and self-locking plando in another slot.&#13;
+- Fixed reversed controls while riding Yoshi in Mirror Mode.&#13;
+- Fixed Doopliss appearing from the wrong side during his post-defeat moon entrance in `gra_00` when Mirror Mode is enabled.&#13;
+- Fixed a memory leak during Great Tree room transitions.&#13;
+&#13;
+## Boss randomizer adjustments&#13;
+&#13;
+- Improved Golden Fuzzy, Hooktail, and Gloomtail cutscene framing and replacement positioning.&#13;
+- Corrected Gloomtail’s speech-bubble placement and camera obstruction after the partner cutaway.&#13;
+- Removed Gloomtail’s dragon roar when replaced by a non-dragon enemy.&#13;
+- Corrected paper-model facing for replacements such as tutorial Crump and the Doopliss rematch.&#13;
+- Shortened the Doopliss rematch’s pre-battle scene when randomized by removing partner dialogue.&#13;
+- Permanently disabled Vivian’s mid-battle return in the Doopliss rematch.&#13;
+- Removed Goombella’s tutorial appearance and dialogue from tutorial Crump’s battle.&#13;
+&#13;
+## Other changes&#13;
+&#13;
+- Removed the Shuffle Chapter Stats option.</content>
+    <link href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.14.1"/>
   </entry>
 </feed>
