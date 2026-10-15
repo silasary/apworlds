@@ -72,6 +72,38 @@
       "title": "Version 1.0.0 Prerelease 1",
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
+    },
+    "1.0.0.p1": {
+      "created_at": "2026-10-14T11:45:10Z",
+      "description": "While not a full release of 1.0.0, as I think there's still a couple of logic issues with Item Box Sanity and a few things I want to look at tidying up/improving, this at least gives people the ability to use the updated stuff without building the mod and apworld manually. 0.1.2 has been broken slightly ever since FP2Lib gained its custom item stuff, as it broke the thing I was doing to stop the shop from sorting.\r\n",
+      "download_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p1/fp2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bc13054e7b35d2c82a6ee7daf79c5cf2978d06c92aac4d1227234ff5cec3dd8b",
+      "html_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/1.0.0.p1",
+      "minimum_ap_version": "0.6.5",
+      "prerelease": true,
+      "size": 1560531,
+      "source_url": "https://api.github.com/repos/Knuxfan24/Freedom-Planet-2-Archipelago",
+      "tag": "1.0.0.p1",
+      "title": "Version 1.0.0 Prerelease 1",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r3"
+    },
+    "1.0.0.p2": {
+      "created_at": "2026-10-14T11:45:10Z",
+      "description": "Changes since Prerelease 1:\r\n\r\n**FIXES**\r\n\r\n- Items with multiple classifications are now properly coloured in the text chat and display the most relevant sprite type. (Initially became a problem with Perfect Dark, which has a lot of items tagged as both Progression and Useful).\r\n- Hopefully finally stomped out the issue where modded items caused the end of the shops to fall apart.\r\n- Fixed the Spam Trap getting stuck when changing scenes.\r\n- RingLink had some weirdness regarding activating when it shouldn't that should be fixed at this point.\r\n\r\n**ADDITIONS**\r\n\r\n- Added a config option for whether or not Fists of Frogs should send hints out.\r\n- Silly little config option for the shop vendor names.\r\n- A, S and Rainbow S-Rank locations.\r\n- Merga Goal option.\r\n- Wordle and Flood Traps.\r\n- Stupid joke config option that makes various bits of text behave like they do in Super Mario 64 (which has missing characters be replaced by the previous one).\r\n- Games without a DeathLink message now display jokes/references rather than just \"DeathLink received from [PLAYER]\".\r\n\r\n**ADJUSTMENTS**\r\n\r\n- Changed the stage edits made to Sky Bridge.\r\n- Spike Ball Trap now specifically spawns on the screen edges rather than a fixed distance from the player.\r\n\r\n**KNOWN ISSUES**\r\n\r\n- The Trivia Trap still can't kill the BFF2000 or Bakunawa Chase Airship properly.\r\n- Swap Traps can still sometimes leave a lingering hitbox on the player.\r\n- Fists of Frog's hint sending is still really picky.\r\n- The Remote Player handler still seems to freeze the game upon close if active, requiring it to be force killed (still thinking about just throwing that out to be honest).\r\n- Game still seems to crash a lot, seemingly at random. The randomness paired with the fact that I can't strap a debugger to it makes diagnosing these a pain.",
+      "download_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p2/fp2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8ff268abeee297ed87817a579ebbb24ae1f7252cfbcb9d3431a864b927510388",
+      "html_url": "https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/1.0.0.p2",
+      "minimum_ap_version": "0.6.5",
+      "prerelease": true,
+      "size": 2673683,
+      "source_url": "https://api.github.com/repos/Knuxfan24/Freedom-Planet-2-Archipelago",
+      "tag": "1.0.0.p2",
+      "title": "Version 1.0.0 Prerelease 2",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
     }
   }
 }

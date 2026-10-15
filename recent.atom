@@ -2,181 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-15T06:21:10.505956+00:00</updated>
+  <updated>2026-10-15T12:24:38.742979+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TwinklePillar/MurderOfSonicAP/releases/tag/v0.4.0-beta</id>
-    <title>The Murder of Sonic the Hedgehog v0.4.0b0</title>
-    <updated>2026-10-11T22:57:01+00:00</updated>
-    <author>
-      <name>TwinklePillar</name>
-    </author>
-    <content># Changelog&#13;
-- Fix the "What should we take a closer look at?" location not sending after failure&#13;
-- Fix location names in Casino Part 1&#13;
-- Add close dialog button reminder when loading the Casino car&#13;
-- Renamed "Shelf Crack" to "Crack on Shelf"&#13;
-- Added a car select button to the HUD&#13;
-- The game automatically loads into a car after save file select if Car Rando is enabled&#13;
-- Added a hint game mode, connect to any slot and complete running sections for hints&#13;
-- Fixed items sometimes not appearing in the inventory&#13;
-- Fixed unit tests&#13;
-- Fixed death link always sending when completing runners</content>
-    <link href="https://github.com/TwinklePillar/MurderOfSonicAP/releases/tag/v0.4.0-beta"/>
-  </entry>
-  <entry>
-    <id>https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/tag/bkclown-v1.2.0</id>
-    <title>BKClown v1.2.0</title>
-    <updated>2026-10-11T23:04:37+00:00</updated>
-    <author>
-      <name>creative_bananaman</name>
-    </author>
-    <author>
-      <name>Fewffwa</name>
-    </author>
-    <content>## Additions:&#13;
-- Added extra checks&#13;
-- Added new option to push lemon clown access early&#13;
-- Added Icon (thank you o_.hermes._o for making it)&#13;
-## Bugfixes:&#13;
-- Fixed Generation Issues &#13;
-## Requirements:&#13;
-&#13;
-- A Steam Copy of FFPS (Freddy Fazbear's Pizzeria Simulator)&#13;
-&#13;
-- Windows&#13;
-&#13;
-## Setup:&#13;
-&#13;
-- Create a folder named "BKCLOWN" in your main archipelago folder (or launching the client should do this automatically).&#13;
-- Move your Steam copy of FFPS into the folder.&#13;
-- Open the client, and run /patch.&#13;
-- Open up the .exe titled BKCLOWN.exe and connect to your archipelago server in the top bar!&#13;
-- Enjoy!&#13;
-</content>
-    <link href="https://github.com/yeoldebananaman/ArchipelagoBKClown/releases/tag/bkclown-v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.1.0</id>
-    <title>Ys Origin v2.1.0</title>
-    <updated>2026-10-11T23:46:23+00:00</updated>
-    <author>
-      <name>4rtefakt</name>
-    </author>
-    <content>A logic release. A full multiworld run as Toal, played out of order from a 1F start, turned up a string of places where the tower can only be walked one way or needs the double jump, and the logic did not know. Requires **Archipelago 0.6.7 or newer**.
-
-&gt; **Take all three files, and take them together.** This apworld refuses a `dinput8.dll` older than 2.1: an old dll on a new seed used to fail silently (items arriving and doing nothing), and is now turned away at connect with a message. Seeds generated with 2.0.x stay playable with the new dll.
-
-**New: a [setup guide and settings builder](https://4rtefakt.github.io/ys-origin-archipelago/)** on the web. It walks through the install and builds your yaml in the browser.
-
-## 🗺️ Logic
-
-Every one of these was a check or a passage the generator could count on while it was out of reach.
-
-**Rooms that only work one way**
-- **21F boss (Pictimos).** Coming down from 22F you arrive behind him: he blocks the way and the fight never starts. His arena is entered from the 21F save only.
-- **9F boss door.** The Pre-Boss Room's ward barrier stands across it with the wards on the room side, so the boss room does not lead back down.
-- **8F Waterway Entrance.** Its grate opens when four ward monsters die, and they all stand on the Outer Corridor side. Coming up from the waterway is a dead end.
-- **18F Path 1.** Its four spear gates are lowered by switches on the way up. From the top (18F Path 2) the first gate is shut, so the 18F save and Toal's Room are reached from below only.
-
-**Places that need the double jump (Gold Bracelet)**
-- **Slippery Fork Path (16F).** The room is a pit: all three chests and 16F Path 2 are on the walkway and ledges above the floor. The way up is the climb in 16F Path 1 (double jump) or the slippery ramp from 16F Path 3 (Earth Dragon's Claws).
-- **20F save to 20F Drop-Off**, in both directions.
-- The chests of **20F Path 3**, **20F Small Room** and both of **22F Path 3**.
-- **22F Path 2's chest**: double jump plus the wind skill; for Toal, double jump plus the fire skill.
-- **The 2F Path 2 gap** also takes the double jump, not only the wind skill.
-
-**Seeds this could have broken**
-- Minimal-accessibility seeds with a random start keep the Gold Bracelet as progression, and with the "defeat all bosses" goal they keep their keys and medallions too. Both relied on passages listed above.
-- The warp item of your own spawn statue is no longer put in the pool (you already have that warp).
-
-## ⚙️ New option
-
-- **`fire_skill_crossing`** (off by default, Toal only). His fire skill is a forward dash that carries him over the 2F Path 2 gap and to the 22F Path 2 chest. Turn it on to let the logic count on that.
-
-## 🛠️ Mod fixes
-
-- **SP chests no longer pay their vanilla SP on top of the seed's item.**
-- **An altar no longer resets a levelled skill to level 1.**
-- **Hugo's Eyes of Fact could stay hidden** before the Toal duel after a cut scene.
-- **Skills and blessing effects are re-derived every tick**, so a skill item can no longer arrive without its skill.
-- **A watchdog frees scripts stuck waiting on a character that never moves.**
-- **The log is safe to post.** Your Windows user name, the room's port and private server addresses are left out; the password was never logged.
-- **Refusals are shown.** When the server turns the connection down (wrong slot, old dll), the menu says why.
-
-## 🔍 For client and tracker authors
-
-- `slot_data` now carries the seed's whole logic as plain data (`logic`: regions, entrances and locations with their rules), so a client can count what is in logic without rebuilding the world.
-
-## ⚠️ What was and was not played
-
-- The **logic** fixes come from a real multiworld run and from walking the rooms in an engine test harness.
-- The **mod fixes** above are built and reviewed but have **not been played on the retail game** since they were written. The run that found the logic errors was played on another client.
-
-## 🐞 Known issues
-
-- More double-jump spots are likely on floors 18 to 25. A geometry sweep flagged these as suspect and nobody has confirmed them: 18F Path 2 towards Outer Corridor 1, 19F Path 1, 20F Path 1 between the outer corridors and the Drop-Off, 22F Mirror Path, 24F Path 3 and 24F Path 4 towards the 25F save. If you get stuck in one without the Gold Bracelet, please report it.
-- **Rado's Annex and story order.** Hugo and Yunica can be turned around at the Rado Tower bridge by story flags from higher floors, and Toal by two of his own; his Shion fight can then repeat. Not fixed in this dll.
-- Used medallions, keys and Moon Crests come back into the inventory after use (cosmetic).
-- Autosave overwrites slot 8 without asking. `autosave_slot=N` picks another slot, `0` turns it off.
-
----
-
-**Install:** `ys_origin.apworld` into `custom_worlds/`, `dinput8.dll` next to `yso_win.exe`. `Ys-Origin.yaml` is the option template, or build your own on the [website](https://4rtefakt.github.io/ys-origin-archipelago/).
-</content>
-    <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.4.0</id>
-    <title>Mega Man Zero 3 v0.3.6r2</title>
-    <updated>2026-10-12T00:37:51+00:00</updated>
-    <author>
-      <name>Stingrays110</name>
-    </author>
-    <content>Traps and an early enemy randomizer! Plus automatic shop hints, tracker map switching (for when the tracker updates), and a handful of bug fixes.&#13;
-&#13;
-10/12/26 WARNING: The randomizer trims some in game enemy animations due to hardware limitations. But it seems that these trimmed animations happen whether or not you have the randomizer enabled or disabled. This is a bug that I'll fix later today.&#13;
-&#13;
-[Full Readme here](https://github.com/brodieberger/MMZero3Archipelago)&#13;
-[Link to poptracker pack here](https://github.com/ambibii/mmz3-poptracker/releases/latest)&#13;
-&#13;
-## Features&#13;
-&#13;
-### Enemy Randomizer (option, WIP)&#13;
-`randomize_enemies` is a (moderately limited) enemy randomizer. Enemies from across the whole game can show up anywhere. This feature is a very big work in progress. Check out the main readme as it has a bunch of known bugs. I'm sure there are plenty more.&#13;
-&#13;
-`enemy_difficulty` determines how enemies spawn in each level. This feature is not fully implemented, so enjoy the placebo:&#13;
-- `minimal`: Tries to match enemy placements by health. If a less health enemy replaces one with more health, place multiple copies at that location.&#13;
-- `chaos`: Places multiple enemies around every spawnpoint regardless of HP or enemy type. Leads to many more enemies per stage. Developer's choice!&#13;
-- `insanity`: Places as many enemies as possible. Tries to prioritize enemies with higher HP. Expect many shield enemies in tight quarters. Good luck!&#13;
-&#13;
-And expect some new additions from the battle network and mettaur mode!&#13;
-&#13;
-&lt;div align="center"&gt;&#13;
-&lt;img height="200" alt="image" src="https://github.com/user-attachments/assets/9467d621-0365-4046-9f80-de1525a82180" /&gt;&#13;
-&lt;/div&gt;&#13;
-&#13;
-### Traps (option, WIP)&#13;
-`trap_percentage` turns that percentage of your filler items into traps. Select which ones to enable with `enabled_traps`. The three right now are purely visual but I'm planning to do more with them:&#13;
-&#13;
-Earthquake screen, pixelate screen, and slippery floor.&#13;
-&#13;
-### Enemy disk markers (option)&#13;
-Enemies who drop a disk will have the archipelago icon above them. Recommended for randomized enemies.&#13;
-&#13;
-### Small stuff + Bug Fixes&#13;
-- Abandoned Research Laboratory no longer has progression items.&#13;
-- Putting the cursor on an item in Cerveau's shop now automatically unlocks its hint.&#13;
-- Fixed bug where Story Progress could be undone by a game over.&#13;
-- Fixed bug where soldier in the Resistance Base's right tower sometimes never gave his check.&#13;
-- Fixed bug where receiving an item while in Ciel's save menu made all of the menu's text disappear.&#13;
-&#13;
-Tracker map switching support has also been added to the client, but will have to wait until the poptracker gets updated.</content>
-    <link href="https://github.com/brodieberger/MMZero3Archipelago/releases/tag/v0.4.0"/>
-  </entry>
   <entry>
     <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.4</id>
     <title>Final Fantasy 1 PSP v0.2.4</title>
@@ -1594,7 +1424,7 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r2</title>
+    <title>GTFO v0.0.4r3</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
@@ -1705,7 +1535,7 @@ This revision:&#13;
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H4</id>
-    <title>Deadlock v1.2.0r3</title>
+    <title>Deadlock v1.2.0r2</title>
     <updated>2026-10-14T07:02:34+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1761,6 +1591,57 @@ Backwards compatibility with 0.2.0 multiworlds has not been tested. If anything 
 - Fixed D2's boss room having holes if Digdogger was the boss&#13;
 - Fixed Gleeok freezing when being beaten in D3</content>
     <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/1.0.0.p2</id>
+    <title>Freedom Planet 2 v1.0.0r2</title>
+    <updated>2026-10-14T11:45:10+00:00</updated>
+    <author>
+      <name>Knuxfan24</name>
+    </author>
+    <content>Changes since Prerelease 1:&#13;
+&#13;
+**FIXES**&#13;
+&#13;
+- Items with multiple classifications are now properly coloured in the text chat and display the most relevant sprite type. (Initially became a problem with Perfect Dark, which has a lot of items tagged as both Progression and Useful).&#13;
+- Hopefully finally stomped out the issue where modded items caused the end of the shops to fall apart.&#13;
+- Fixed the Spam Trap getting stuck when changing scenes.&#13;
+- RingLink had some weirdness regarding activating when it shouldn't that should be fixed at this point.&#13;
+&#13;
+**ADDITIONS**&#13;
+&#13;
+- Added a config option for whether or not Fists of Frogs should send hints out.&#13;
+- Silly little config option for the shop vendor names.&#13;
+- A, S and Rainbow S-Rank locations.&#13;
+- Merga Goal option.&#13;
+- Wordle and Flood Traps.&#13;
+- Stupid joke config option that makes various bits of text behave like they do in Super Mario 64 (which has missing characters be replaced by the previous one).&#13;
+- Games without a DeathLink message now display jokes/references rather than just "DeathLink received from [PLAYER]".&#13;
+&#13;
+**ADJUSTMENTS**&#13;
+&#13;
+- Changed the stage edits made to Sky Bridge.&#13;
+- Spike Ball Trap now specifically spawns on the screen edges rather than a fixed distance from the player.&#13;
+&#13;
+**KNOWN ISSUES**&#13;
+&#13;
+- The Trivia Trap still can't kill the BFF2000 or Bakunawa Chase Airship properly.&#13;
+- Swap Traps can still sometimes leave a lingering hitbox on the player.&#13;
+- Fists of Frog's hint sending is still really picky.&#13;
+- The Remote Player handler still seems to freeze the game upon close if active, requiring it to be force killed (still thinking about just throwing that out to be honest).&#13;
+- Game still seems to crash a lot, seemingly at random. The randomness paired with the fact that I can't strap a debugger to it makes diagnosing these a pain.</content>
+    <link href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/1.0.0.p2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/1.0.0.p1</id>
+    <title>Freedom Planet 2 v1.0.0r3</title>
+    <updated>2026-10-14T11:45:10+00:00</updated>
+    <author>
+      <name>Knuxfan24</name>
+    </author>
+    <content>While not a full release of 1.0.0, as I think there's still a couple of logic issues with Item Box Sanity and a few things I want to look at tidying up/improving, this at least gives people the ability to use the updated stuff without building the mod and apworld manually. 0.1.2 has been broken slightly ever since FP2Lib gained its custom item stuff, as it broke the thing I was doing to stop the shop from sorting.&#13;
+</content>
+    <link href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/tag/1.0.0.p1"/>
   </entry>
   <entry>
     <id>https://github.com/NyanMC/build-a-jetpack/releases/tag/0.3.0b</id>
@@ -1936,5 +1817,75 @@ This patch provides the following fixes:&#13;
 - Added auto-bankruptcy if the player reaches 10M gold in debt, plus an associated warning at 2M&#13;
 - Added credit score</content>
     <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/tag/v0.3.1a</id>
+    <title>West of Loathing v0.3.1a0</title>
+    <updated>2026-10-15T07:29:27+00:00</updated>
+    <author>
+      <name>Xylen</name>
+    </author>
+    <author>
+      <name>TylerJG92</name>
+    </author>
+    <content># Changelog for WOLAP v0.3.4 &amp; APWorld v0.3.1&#13;
+All existing save files and AP Worlds generated with v0.3.0 remain compatible with WOLAP v0.3.4 and APWorld v0.3.1. No regeneration is required to continue playing, but the corrected generation logic will only apply to newly generated AP Worlds under APWorld v0.3.1...&#13;
+&#13;
+## Client Mod Changes&#13;
+* Fixed a bug that shows a harmless dialogue failure within early Ghostwood quest progression.&#13;
+&#13;
+## APWorld Changes&#13;
+* Added `CanReachRegion` for `Map Region D` for logic generation when considering Medical containers as they do not require crowbar or lockpicking to open them while wandering there.&#13;
+* Updated Ghostwood Logic for `Ghostwood Town Hall - Issued Permit` to no longer require the sharpened pencil, cactus check and the sharpen the pencil check, instead this is now applied to `Ghostwood Town Hall - Issued ID`&#13;
+</content>
+    <link href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/tag/v0.3.1a"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.2</id>
+    <title>Ratchet &amp; Clank 3 v0.6.1r2</title>
+    <updated>2026-10-15T08:04:19+00:00</updated>
+    <author>
+      <name>1theory</name>
+    </author>
+    <author>
+      <name>AmondoVagyok</name>
+    </author>
+    <author>
+      <name>Myth197</name>
+    </author>
+    <author>
+      <name>Taoshix</name>
+    </author>
+    <author>
+      <name>Yuxia228</name>
+    </author>
+    <content>## RaC3 APWorld v0.6.2&#13;
+&#13;
+**Branch:** staging  &#13;
+**Date:** 2026-10-15 08:07 UTC&#13;
+&#13;
+&lt;details&gt;&#13;
+&lt;summary&gt;&lt;strong&gt;📜 Summary (25 changes since v0.6.1)&lt;/strong&gt;&lt;/summary&gt;&#13;
+&#13;
+- RAC3: Fix Weapon Level check (24fbffcca)&#13;
+- RAC3: Add special death message for giant clank (46a34f8ae)&#13;
+- Make it so nanopak save can only trigger as Ratchet (55a5858c2)&#13;
+- RAC3: Added Death Link behavior yaml option (523445dfa)&#13;
+&#13;
+&lt;/details&gt;&#13;
+&#13;
+**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.6.1...v0.6.2&#13;
+&#13;
+### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)&#13;
+&#13;
+### Notes&#13;
+This release was automatically generated from the **staging** branch.  &#13;
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
+&#13;
+### If a location is broken and does not get sent out&#13;
+Go to the server console (locally or via the Archipelago room page) and run:  &#13;
+`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
+</content>
+    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.2"/>
   </entry>
 </feed>

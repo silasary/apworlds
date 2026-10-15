@@ -1,9 +1,12 @@
 # West of Loathing
 
 ## Latest
-- <a href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.0a/westofloathing.apworld">Latest Version (0.3.0a0)</a>
+- <a href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.1a/westofloathing.apworld">Latest Version (0.3.1a0)</a>
 
 ## All Versions
+
+#### v0.3.1a0
+- <a href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.1a/westofloathing.apworld">https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.1a/westofloathing.apworld</a>
 
 #### v0.3.0a0
 - <a href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.0a/westofloathing.apworld">https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.0a/westofloathing.apworld</a>
