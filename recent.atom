@@ -2,38 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-15T12:24:38.742979+00:00</updated>
+  <updated>2026-10-15T18:24:34.288805+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.4</id>
-    <title>Final Fantasy 1 PSP v0.2.4</title>
-    <updated>2026-10-12T04:15:29+00:00</updated>
-    <author>
-      <name>1-800-thewolf</name>
-    </author>
-    <content>Overall a smaller update, but still the flagship feature is...&#13;
-&#13;
----&#13;
-&#13;
-## Custom Apprentice Sprite&#13;
-&#13;
-&lt;img width="38" height="51" alt="image" src="https://github.com/user-attachments/assets/4f9905cc-b007-4a65-a433-3a50e0a82f1f" /&gt;&#13;
-&#13;
-Special thanks to @✨-Prime-✨ for commissioning the fully custom Apprentice Sprite.&#13;
-Get the scroll and your Black Mage sprite upgrades in game!&#13;
-&#13;
-## Bug Fixes Related To&#13;
-- Bestiarysanity rarely failing to recognize kills&#13;
-- Saving/loading on world-changing effects like Lufenia Bridge&#13;
-- Rare crash related to entering Crescent Lake&#13;
-- Rare bug related to boss sprite discolor/sprite mix up&#13;
-&#13;
-## 👍🏻 Fully compatible with existing v0.2.0+ seeds. Please upgrade mid-run for a better experience.</content>
-    <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.2.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.29.0</id>
     <title>Super Crazy Rhythm Castle v0.29.0</title>
@@ -1424,7 +1397,7 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r3</title>
+    <title>GTFO v0.0.4r2</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
@@ -1535,7 +1508,7 @@ This revision:&#13;
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H4</id>
-    <title>Deadlock v1.2.0r2</title>
+    <title>Deadlock v1.2.0r3</title>
     <updated>2026-10-14T07:02:34+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1887,5 +1860,53 @@ Go to the server console (locally or via the Archipelago room page) and run:  &#
 `/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
 </content>
     <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/tag/AP-v1.8.1</id>
+    <title>Momodora Moonlit Farewell v1.8.1</title>
+    <updated>2026-10-15T14:19:31+00:00</updated>
+    <author>
+      <name>alditoOt</name>
+    </author>
+    <content># Fixes&#13;
+- Fixed issue where stats would be deleted when interacting with Archipelago in any form when having their settings disabled&#13;
+- Timed berries in Koho Village, Moonlight's Repose, and Ashen Hinterlands are now fully grown from the beginning&#13;
+- Nun is now properly accounted during world generation&#13;
+&#13;
+# Game Stuff&#13;
+- **Fast Travel is now enabled by default**; this is to try to mitigate the issue of being stuck and having to restart the game, at least until I can come up with a better approach&#13;
+   - Note: when defeating the Gariser Demon and being sent to Koho Village, the map is completely wiped and thus previous fast travel locations no longer exist (vanilla behavior), just take this into account if you explore the map before defeating the Gariser Demon&#13;
+   - **Mitchi Fast Travel** is still a location check, and it's sent automatically when entering the room in Demon Frontier where Mitchi is&#13;
+&#13;
+# Logic Stuff&#13;
+This is for changes in the apworld, if you're a regular player this isn't that interesting&#13;
+- **Dotted Berry 3 - Springleaf Path** location changed: **Springleaf Path** -&gt; **Springleaf Path Continued**&#13;
+- **Lunar Crystal Branch 3 - Springleaf Path** location changed: **Springleaf Path Continued** -&gt; **Springleaf Path**&#13;
+- **Dotted Berry 1 - Meikan Village** now checks for same logic rules as **Perfect Chime**&#13;
+- **Nun** now only checks for **Magic Blade** since the other two sigils are shop items (and can theoretically be obtained from game start)&#13;
+&#13;
+# Install Notes&#13;
+# Updating&#13;
+- Download **APMomodoraMoonlitFarewell.dll** and replace the existing file in your Mods folder. &#13;
+- For the apworld, download **momodoramoonlitfarewell.apworld** and replace the existing one in custom_worlds in the Archipelago folder.&#13;
+# First Time Installing&#13;
+- Download [MelonLoader](https://melonwiki.xyz/#/?id=requirements), execute the file, and when installing for Momodora: Moonlit Farewell, **ENSURE YOU'RE INSTALLING VERSION 0.5.7**. &#13;
+- Download **APMomodoraMoonlitFarewell.dll** and put it in your game's Mods folder, also download **extra-files.zip** and extract the contents into your game's Mods folder.&#13;
+   - Aditionally you can download **MomodoraMoonlitFarewell.yaml** and modify it as you see fit.&#13;
+- For the host, download **momodoramoonlitfarewell.apworld** and add it in your custom_worlds folder in your Archipelago folder.&#13;
+- Before entering a save file, open **config.json** and edit all fields as necessary. &#13;
+&#13;
+# Community&#13;
+## Discord Links &#13;
+If you want to know more about Archipelago, this game's randomizer or even the game's speedrunning community as a whole, feel free to join!&#13;
+## [Archipelago](https://discord.com/invite/8Z65BR2)&#13;
+Your go-to for Archipelago stuff. You can find the [Momodora Moonlit Farewell Channel](https://discord.com/channels/731205301247803413/1351406749315240007) inside the Archipelago Discord. Feel free to discuss the randomizer here, give feedback, ask questions, anything!&#13;
+## [Momodora Speedrunning Community](https://discord.gg/f6QGXmXfPU) &#13;
+&#13;
+Because I like speedrunning and want this game's community to grow!&#13;
+&#13;
+-----&#13;
+_And you can find [my own socials](https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/blob/Archipelago-Randomizer/README.md#my-own-socials) in the README file because I gotta shamelessly plug my stuff somewhere but it felt too shameless to put them in the release notes *wink *wink_ </content>
+    <link href="https://github.com/alditoOt/Momodora-Moonlit-Farewell-Randomizer/releases/tag/AP-v1.8.1"/>
   </entry>
 </feed>

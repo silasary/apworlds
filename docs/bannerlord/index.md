@@ -4,7 +4,7 @@ This apworld is utilizing the manual template, but is not a manual. Much of this
 
 
 ## Downloads
-- <a href="https://github.com/dghalfor/Bannerlord-APWorld/releases/download/0.4.0/bannerlord.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/dghalfor/Archipelago/releases/download/0.4.0/bannerlord.apworld">Latest Version (0.4.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
