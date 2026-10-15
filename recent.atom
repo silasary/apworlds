@@ -2,71 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-14T18:18:54.919445+00:00</updated>
+  <updated>2026-10-15T00:20:37.644033+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.7</id>
-    <title>Taylor Swift Discography v1.2.7</title>
-    <updated>2026-10-11T18:27:54+00:00</updated>
-    <author>
-      <name>benny-dreamly</name>
-    </author>
-    <content>This release contains no new apworld changes, but the configuration for the music client has changed, and the debut album config has been fixed, as it was broken in previous versions. A client side fix was issued as a bandaid fix, but a permanent fix has since been made in this release. &#13;
-&#13;
-**Full Changelog**: https://github.com/benny-dreamly/Archipelago/compare/ts-1.2.6...ts-1.2.7</content>
-    <link href="https://github.com/benny-dreamly/Archipelago/releases/tag/ts-1.2.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.1.0</id>
-    <title>Wikipelago v1.1.0</title>
-    <updated>2026-10-11T18:52:47+00:00</updated>
-    <author>
-      <name>Dreskn (continued)</name>
-    </author>
-    <author>
-      <name>Skrumptily69 (original)</name>
-    </author>
-    <content>## Main changes&#13;
-&#13;
-- **Topic Realms** (on by default). Every side road becomes a Realm with its own topic (History, Music, Sports…). Each Realm opens with its own Portal item instead of Branch Keys, so Realms can open in any order. Realm targets and rerolls stay on topic.&#13;
-- **Realm Master goal** (`goal: realm_master`). Win by clearing every Realm. No fragments, no Grand Goal question.&#13;
-- **Practice mode updated**: a 5×5 bingo board and one open Realm, each replaceable once finished.&#13;
-- **Phone layout and display options**&#13;
-&#13;
-## Improvements&#13;
-&#13;
-- New dark and light themes, card icons, self-hosted fonts, text size selection, contrast mode, and colorblind-friendly colors.&#13;
-- Notifications are now a dismissible stack at the top of the screen.&#13;
-- In the Journey panel, hover a point to see the page summary, click it to open the page on Wikipedia.&#13;
-- The Compass reads toward your nearest live target and updates in the background.&#13;
-- Added a welcome screen before you connect, and removed made-up progress shown before connection.&#13;
-- UI responds better to different horizontal and vertical resolutions.&#13;
-- Bingo: Œ and Æ count as two letters (OE, AE), as in Scrabble.&#13;
-- Rephrasing of certain page categories, more pages are flagged as sensitive, Grand Goal questions reworded to avoid giving the answer away.&#13;
-- Large rooms: websocket messages up to 16 MB (from **mooinglemur**'s fork).&#13;
-&#13;
-## Fixes&#13;
-&#13;
-- DeathLink deaths and traps could apply twice in a row.&#13;
-- Double-clicking a link to the target could skip a round.&#13;
-- Pages that differ only by accents ("Año" / "Ano", "Bürger" / "Burger") were treated as the same page.&#13;
-- A short connection drop reloaded the page, jumped to the top and used up a queued trap. Now the page stays, and a target reached while disconnected counts once the connection is back.&#13;
-- The Journey pop-out window could take deaths and traps meant for the main window.&#13;
-- After Practice, joining a room started on the last practice page instead of your round.&#13;
-- Light theme contrast, header alignment, and missing pinyin, Vietnamese and pronunciation characters.&#13;
-&#13;
-## For hosts and players&#13;
-&#13;
-- Recommended Archipelago version: 0.6.7.&#13;
-- Games generated with 1.0.x keep working on the updated web client.&#13;
-- `topic_portals` now defaults to true, so a YAML without that line gets Realms. Set `topic_portals: false` for classic Branch Keys.&#13;
-- The hosted client no longer connects to private-network addresses (localhost, LAN, Tailscale…). For those rooms, run the local client: see [Setup, Option 2](docs/setup.md#option-2--local-client-private--vpn-rooms).&#13;
-- Bugs: [GitHub Issues](https://github.com/Dreskn/Wikipelago-Continued/issues) or the Wikipelago thread on the Archipelago Discord.</content>
-    <link href="https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0-pre.4</id>
     <title>CrossCode v0.10.0rc4</title>
@@ -1794,7 +1734,7 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r2</title>
+    <title>GTFO v0.0.4r3</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
@@ -1905,7 +1845,7 @@ This revision:&#13;
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H4</id>
-    <title>Deadlock v1.2.0r3</title>
+    <title>Deadlock v1.2.0r2</title>
     <updated>2026-10-14T07:02:34+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1979,5 +1919,75 @@ Added music shuffle, which can be toggled through the PICO-8 pause menu. As this
 &#13;
 The apworld has not changed from 0.3.0.</content>
     <link href="https://github.com/NyanMC/build-a-jetpack/releases/tag/0.3.0b"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.1.1</id>
+    <title>Wikipelago v1.1.1</title>
+    <updated>2026-10-14T18:10:02+00:00</updated>
+    <author>
+      <name>Dreskn (continued)</name>
+    </author>
+    <author>
+      <name>Skrumptily69 (original)</name>
+    </author>
+    <content>## Main changes&#13;
+&#13;
+- **Realm Master mode: Realms only require their Portal.** No more reaching a crossroad on the main road first. Grand Goal games are unchanged (Portal + crossroad).&#13;
+- **Universal Tracker support.** UT should now behave correctly and not display unavailable Branch paths.&#13;
+- **Rerolls and Backs are saved.** Used Rerolls and Backs survive reconnects and switching devices.&#13;
+- **YAML option sections.** Options are sorted into a few categories in the Launcher's Options Creator for better readability.&#13;
+&#13;
+## Improvements&#13;
+&#13;
+- Once the main road is done, it says "Main road cleared" instead of showing the last target.&#13;
+- Reduced Wikipedia requests per click.&#13;
+- Article filter adjustments, and "List of…" pages are filtered in all 9 languages.&#13;
+- Some Wikipedia info tables no longer show bright blue headers and now match the theme.&#13;
+- The top banner can be hidden (it comes back next visit).&#13;
+- Keyboard focus no longer jumps away, pop-up windows keep focus, light-theme grey text is easier to read, and loading animations respect the "reduce motion" system setting.&#13;
+- The phone layout and the Journey window are now documented.&#13;
+- Added a broadcast system, mostly to warn about incoming server restart.&#13;
+&#13;
+## Bug fixes&#13;
+&#13;
+- The click count could carry over between slots, or between Practice and a room.&#13;
+- Browser Back was blocked after disconnecting; holding Backspace could spend several Backs.&#13;
+- A failed teleport showed its error twice; Disconnect showed two notices.&#13;
+&#13;
+## For hosts and players&#13;
+&#13;
+- **Archipelago 0.6.7 or newer.**&#13;
+- Games generated with 1.x keep working on the updated site, with their old rules.&#13;
+- `random_goal_article` and `goal_article_preset` are removed. Older YAMLs that still contain them generate fine; Archipelago just logs a warning. The new YAML template requires the 1.1.1 apworld.&#13;
+- Bugs: [GitHub Issues](https://github.com/Dreskn/Wikipelago-Continued/issues) or [Discord](https://discord.com/channels/731205301247803413/1462007968902938768).&#13;
+&#13;
+</content>
+    <link href="https://github.com/Dreskn/Wikipelago-Continued/releases/tag/1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.5</id>
+    <title>Cursed Words v0.5.2r2</title>
+    <updated>2026-10-14T22:16:11+00:00</updated>
+    <author>
+      <name>JammyGeeza</name>
+    </author>
+    <content>## Information&#13;
+This archipelago implementation is in **early development** and is in public pre-release for testing, so may not be complete and/or may contain bugs that heavily disrupt the experience. It is not advised to include this in large multiworlds at this time, so only do so at your own risk and inform your host beforehand.&#13;
+&#13;
+## Setup Guide&#13;
+Please visit the [Setup Guide](https://github.com/JammyGeeza/CursedWords-Archipelago#setup-guide) for instructions on how to install the mod client.&#13;
+&#13;
+## Issue / Bug Reporting&#13;
+If you experience issues that are not already on the [known issues list](https://github.com/JammyGeeza/CursedWords-Archipelago/issues/views/12865), please raise a new issue or post in the [Cursed Words Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1499176806962692196)&#13;
+&#13;
+## Patch Notes&#13;
+This patch provides the following fixes:&#13;
+### APWorld&#13;
+- Improved Sticker/Stamp groupings based on the characters they would be useful for&#13;
+- Fixed item naming mismatch for `Glass Of Milk` and `King Of The Bridge`&#13;
+### Client&#13;
+- Goal condition should now always be visible from the Character Selection page&#13;
+- Improved colouring and wording for character progress statuses in the Character Selection page</content>
+    <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.5"/>
   </entry>
 </feed>
