@@ -6,7 +6,7 @@ for one of its passwords.
 
 
 ## Downloads
-- <a href="https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.2.1/bubblebobble.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.2.2/bubblebobble.apworld">Latest Version (1.2.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

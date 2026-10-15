@@ -7,7 +7,11 @@
   "game": "Blue Prince",
   "github": "https://github.com/BatmenzDW/Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/Yascob99/BluePrinceArchipelago",
   "sheet_disclosure": [
     "None",
@@ -74,6 +78,21 @@
       "title": "Blue Prince APWorld v0.1.2",
       "version_simple": "0.1.2",
       "world_version": "0.1.2"
+    },
+    "v0.1.3": {
+      "created_at": "2026-10-14T19:02:44Z",
+      "description": "Patch Notes:\r\n\r\n- New Setting: enable_obscure_locations: disable/exclude/enable; \r\n\t- Sets if the most obscure locations are created and/or excluded; \r\n\t- Currently only includes Outer Entrance Hall Vase.\r\n\r\n- Corrected Planetarium Locked Trunks logic to require Telescope; \r\n\t- It now will not be enabled unless complex item logic or higher is on.\r\n- Corrected Mechanarium Locked Trunks logic to require the correct amount of mechanical rooms.\r\n- Corrected Furnace item spawn logic to require sheltering effect.\r\n- Corrected Upgrade Disk - Trading Post Trade to require access to Showroom items or Cursed Effigy + Coat Check/Moon Pendant\r\n- Corrected Underpass Mora Jai Box to require Boiler Room access.\r\n- Added logic to Power Hammer to require that each component can be gotten during the same day.\r\n- Added logic to Outer Entrance Hall Vase to require a way to get Sledge Hammer from anywhere other than Toolshed, unless it can be carried over with Coat Check/Moon Pendant.\r\n- Updated Lunch Box and Commissary Upgrade Disk to require access to enough coins.\r\n- Updated minimum rooms required for certain rooms to be considered reachable.\r\n- Fixed issues with Bunk Room First Entering fill hook.\r\n- Added option presets.\r\n\r\nAs this is an Alpha, expect issues and please report them when you encounter them on GitHub Issues or in the appropriate Discord Channel/Thread.",
+      "download_url": "https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.3/blueprince.apworld",
+      "has_manifest": true,
+      "hash_sha256": "20a5e9d4eb53b816abd3377de54dc55d6c0d200cfdfe9649cafb2a04e24a8716",
+      "html_url": "https://github.com/BatmenzDW/Archipelago/releases/tag/v0.1.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 115815,
+      "source_url": "https://api.github.com/repos/BatmenzDW/Archipelago",
+      "tag": "v0.1.3",
+      "title": "Archipelago v0.1.3",
+      "version_simple": "0.1.3",
+      "world_version": "0.1.3"
     }
   }
 }
