@@ -206,7 +206,7 @@ def cleanup_manifest(manifest):
 
     seen_versions = Counter()
     versions = manifest.get("versions", {}).values()
-    versions = sorted(versions, key=lambda v: v.get("created_at", datetime.datetime.min.replace(tzinfo=datetime.timezone.utc).isoformat()))
+    versions = sorted(versions, key=lambda v: v.get("created_at", datetime.datetime.min.replace(tzinfo=datetime.UTC).isoformat()))
     for info in versions:
         seen_versions[info["world_version"]] += 1
         if seen_versions[info["world_version"]] > 1:
