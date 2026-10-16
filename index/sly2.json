@@ -291,6 +291,20 @@
       "title": "v1.1.0",
       "version_simple": "1.1.0",
       "world_version": "1.1.0"
+    },
+    "v1.1.1": {
+      "created_at": "2026-10-15T20:07:53Z",
+      "description": "Sly 2 Archipelago implementation. For setup instructions, check out the [README](https://github.com/NikolajDanger/APSly2/blob/main/README.md).\r\n\r\n## Changes\r\n### Features\r\n- ThiefNet looks super cool now! Items have icons and colored text based on their item class. These can be changed or turned off with the new `/thiefnet_theme` and `/thiefnet_text` commands, and your choice is saved in the game.\r\n- The notification bar now also shows up in non-hub areas.\r\n- Receiving a DeathLink now plays an actual death animation, with a random type of death.\r\n- Receiving coins plays the coin sound, and the Noise trap now sounds an alarm.\r\n- Randomized pickpocket loot from other episodes is no longer invisible.\r\n- Pressing Start on the title screen is disabled, preventing accidental loading of the wrong save.\r\n- The spoiler log now includes the slot name and any options that were changed by `permissive_yaml`.\r\n\r\n### Bug fixes and improvements\r\n- Slightly better looking tracker maps.\r\n- More optimized PCSX2 communication (batching, caching, faster bulk transfers).\r\n- Fixed a crash when a Slow-mo or Sugar Rush trap ended during a pickpocket.\r\n- Fixed the notification bar sometimes getting stuck on screen. For real this time!!\r\n- Fixed Mega Jump getting unbound from Sly's buttons.\r\n- The Mega Jump pack in episode 8 no longer shows up or blocks treasures from being picked up. This was technically a softlock possibility that no one has ever run into.\r\n- Fixed a vanilla bug where finished jobs could be started again (the sawmill bug).\r\n- The vault marker now only shows up when the vault is actually available.\r\n- Fixed ThiefNet sometimes not updating after loading into a level.\r\n- Fixed guards keeping their vanilla pickpocket loot if they spawned before the client connected. I've lost count of how many times I've fixed this one.\r\n- Fixed the goal operations in the tracker map.\r\n- Connecting the client while the game is still booting no longer breaks the boot.\r\n- Removed the `/trace` command. When PCSX2 crashes, the client now logs crash info by itself.",
+      "download_url": "https://github.com/NikolajDanger/APSly2/releases/download/v1.1.1/sly2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5559bb49e93546872f2cae2e970be55ad20d06f75e319773fbaef254d38c01c3",
+      "html_url": "https://github.com/NikolajDanger/APSly2/releases/tag/v1.1.1",
+      "size": 3414428,
+      "source_url": "https://api.github.com/repos/NikolajDanger/APSly2",
+      "tag": "v1.1.1",
+      "title": "v1.1.1",
+      "version_simple": "1.1.1",
+      "world_version": "1.1.1"
     }
   }
 }
