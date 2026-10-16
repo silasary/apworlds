@@ -2,96 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-16T12:16:28.610824+00:00</updated>
+  <updated>2026-10-16T18:22:24.348309+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.2-unstable</id>
-    <title>New Super Mario Bros. DS v0.5.2</title>
-    <updated>2026-10-12T15:48:31+00:00</updated>
-    <author>
-      <name>Lemix028</name>
-    </author>
-    <content>### Features&#13;
-&#13;
-- **[Star Coin Gate Gap](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#star-coin-signs):** Choose between **3–5 Star Coins** per gate tier and as the cost of opening a sign. &#13;
-- **[Manual Power-Up Reserve](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#item-reserve):** Choose when to send a waiting Power-Up instead of receiving automatic refills. Automatic mode also lets you select the next item.&#13;
-- **[Early Power-Up Permits](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#power-up-permits):** Optionally place selected permits within the first two reachable check spheres. The default selection includes **Mushroom, Fire Flower and Touchscreen Pocket**.&#13;
-- **[Death Counter](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#death-counter):** Death statistics are saved per seed and player slot, with an optional display in the Overview. `/deathcounter` shows your stats and available stats from other players.&#13;
-- **[Level lookup](https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/blob/nsmbds/worlds/nsmbds/docs/en_New%20Super%20Mario%20Bros.%20DS.md#level-randomization):** `/level` helps you find shuffled level entrances. Location hints now include the entrance leading to the hinted level.&#13;
-&#13;
-### Fixes&#13;
-&#13;
-- Improved Level Randomization compatibility and check mapping.&#13;
-- Fixed checks being lost during connection interruptions.&#13;
-- Improved instant Star Coin tracking.&#13;
-- Improved emulator disconnect and reconnect handling.&#13;
-- Prevented duplicate item deliveries and fixed joining password-protected rooms.&#13;
-- Fixed the activity feed stalling when its history fills up.&#13;
-- Shuffled level music now preserves BAH cue support, keeping enemy reactions working in levels that use them.&#13;
-- Improved DeathLink handling during pauses and level transitions.&#13;
-- Prevented duplicate DeathLinks and fixed missed deaths after non-lethal hits or received extra lives.&#13;
-- **World 8-3:** Both Red Coin Challenges now have their own checks.&#13;
-- **World 7-5 Star Coin 2:** Added the missing **Mega Mushroom Permit** requirement.&#13;
-&#13;
-### Changes&#13;
-- Renamed the **"Vanilla"** Star Coin gate mode to **"No Keys"**. Existing YAMLs using `vanilla` remain compatible.</content>
-    <link href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.2-unstable"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ars-Ignis/Archipelago/releases/tag/v3.1.0-Crystalis</id>
-    <title>Crystalis v3.1.0rc0.post0</title>
-    <updated>2026-10-12T18:44:34+00:00</updated>
-    <author>
-      <name>CodeGorilla</name>
-    </author>
-    <content># Bug fixes&#13;
-- Made the client handle different datapackage versions for unidentified items a little more gracefully&#13;
-&#13;
-# Content updates&#13;
-- Added new unidentified item names for this year's tournament winners, as well as a repeat one for last year's winner&#13;
-&#13;
-**Note:** The v3.0.2 (or earlier) client may not be able to connect to slots generated with v3.1.0 or later, if the slot is using unidentified items.&#13;
-&#13;
-**Full Changelog**: https://github.com/Ars-Ignis/Archipelago/compare/v3.0.2-Crystalis...v3.1.0-Crystalis</content>
-    <link href="https://github.com/Ars-Ignis/Archipelago/releases/tag/v3.1.0-Crystalis"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.3.1</id>
-    <title>Outer Wilds v1.3.1</title>
-    <updated>2026-10-12T18:54:20+00:00</updated>
-    <author>
-      <name>Ixrec</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
-&#13;
-- The "Auto Expand Nomai Text" setting now avoids editing the Solanum conversation (from @aXu-AP), instead of making all possible text appear at the same time. Also tweaked the wording of both the colorize and auto-expand settings.&#13;
-- Clicking "New Random Expedition" on a vanilla profile will now display a warning popup about overwriting the vanilla save (from @aXu-AP)&#13;
-- Changing the "Death Link Override" setting to disable death link now takes effect immediately. Previously *enabling* death link would take effect immediately, but due to a bug *disabling* only took effect after restarting Outer Wilds.&#13;
-- DLC&#13;
-	- Fixed `spawn: stranger` and `early_key_item: any` placing Nomai Warp Codes early instead of Stranger Light Modulator (from @aXu-AP)&#13;
-	- Stranger spawn will now spawn the ship facing outwards toward space.&#13;
-	- Added "EotE Ship Log: Hidden Gorge 1 - Visit" to the ship log's AP Checklist (thanks @hopop201 for noticing it was missing).&#13;
-- Suitless logic:&#13;
-	- Suitless logic is now aware that that the Sun Tower warp platform requires Spacesuit&#13;
-	- shuffle_spacesuit description now warns that it's a harder setting which requires dying to reach locations (from @hopop201)&#13;
-- Forgotten Castaways&#13;
-	- Fixed our workaround for the "Recursive Node" failing to spawn. @RS-Mind originally implemented this in v1.2.2, but a simple mistake unfortunately prevented that code from ever being run. Now that the mistake has been fixed, hopefully the workaround will start working.&#13;
-	- Quitting while in Forgotten Castaways' custom system would previously softlock the main menu by failing to display any clickable buttons. This has been fixed.&#13;
-	- Unbroke the "Taming Techniques" item for Forgotten Castaways. Previously, the vanilla interaction this item represents was not being disabled (thanks Dapling for noticing), but now it's been fixed so that interaction is disabled until you receive the item.&#13;
-	- Similarly unbroke the randomization of Graviton's Folly lever puzzle.&#13;
-- Echo Hike&#13;
-	- Picking up the Threader item no longer incorrectly triggers the "EotE: Find an Artifact" location (from @aXu-AP)&#13;
-- The Outsider&#13;
-	- Corrected "TO: Northern Observatory (Final Text Wheel)" so it's now triggered by the last text wheel instead of the 2nd-to-last text wheel&#13;
-- Fret's Quest&#13;
-	- Added missing signal locations "FQ: Scan Tuner Signal" and "FQ: Scan Strum's Radio Signal"&#13;
-- Some of the dynamic logic for warp rando has been refactored. This should not cause any user-facing behavior changes; just mentioning it in case a bug is found.&#13;
-</content>
-    <link href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/tag/v1.3.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.29.1</id>
     <title>Super Crazy Rhythm Castle v0.29.0r2</title>
@@ -996,7 +911,7 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r3</title>
+    <title>GTFO v0.0.4r2</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
@@ -1107,7 +1022,7 @@ This revision:&#13;
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H4</id>
-    <title>Deadlock v1.2.0r2</title>
+    <title>Deadlock v1.2.0r3</title>
     <updated>2026-10-14T07:02:34+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1738,5 +1653,64 @@ https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.1...AHT-v2.2.2</content
 ## New Contributors&#13;
 * @Lordmau5 made their first contribution in https://github.com/seadoggie001/TFWR-APMod/pull/3</content>
     <link href="https://github.com/seadoggie001/TFWR-APMod/releases/tag/v0.0.10-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.3</id>
+    <title>Library of Ruina v1.0.0r2</title>
+    <updated>2026-10-16T11:14:39+00:00</updated>
+    <author>
+      <name>LastPenguin</name>
+    </author>
+    <content>As always, check known bugs and report bugs in #70&#13;
+&#13;
+**Unsubscribe from workshop mod!**&#13;
+&#13;
+**New Run NOT Required**&#13;
+&#13;
+**Uses -eta .apworld**&#13;
+&#13;
+**You can find full changelog [here](https://github.com/Az-LastPenguin/LORAP/blob/dev/Changelogs/1.0.0%20in-dev.md)**&#13;
+&#13;
+## Changelog:&#13;
+- FIXED: Vanilla books on battle graph now drop pages again&#13;
+- FIXED: Nix and The Beast now correctly give their buffs if picked before required pages and those pages are picked later&#13;
+- FIXED: Exiting to title mid battle doesn't softlock the game anymore&#13;
+- FIXED: Binah vs. Argalia should not happen anymore&#13;
+- FIXED: Pinocchio now actually copies patron librarian's deck&#13;
+- FIXED: Images of the Bygones in the reception of Black Silence now use their pages again&#13;
+- CHANGED/FIXED: Random CG on game start is now selected in a different way, also preventing a very rare game softlock&#13;
+- CHANGED/FIXED: Prison of ice in 4th phase of Keter Realization now self-desctructs if it cannot prison a librarian, making the battle more fair and less buggy looking</content>
+    <link href="https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.6.0</id>
+    <title>Links Awakening DX Beta v13.6.0</title>
+    <updated>2026-10-16T17:39:10+00:00</updated>
+    <author>
+      <name>zig</name>
+    </author>
+    <author>
+      <name>threeandthree</name>
+    </author>
+    <content>- Enables upstream overworld options: `no dungeons` and `dungeon dive`&#13;
+- enables casual logic&#13;
+- defaults tradequest on (I've been wanting to do this for a while but keep forgetting)&#13;
+- some little fixes</content>
+    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.13</id>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
+    <updated>2026-10-16T17:49:45+00:00</updated>
+    <author>
+      <name>C@:\EM1NAL\</name>
+    </author>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>Fixed **Gun Runners** campaign giving a heist-not-owned error on **Bomb: Dockyard** when the heist is owned. This update changes nothing else, so you can skip this one if you have no intention of playing that campaign.&#13;
+&#13;
+No APWorld updates since v1.0.4.</content>
+    <link href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.13"/>
   </entry>
 </feed>
