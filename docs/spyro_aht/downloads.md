@@ -20,6 +20,9 @@
 #### v2.2.0r2
 - <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.1/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.1/spyro_aht.apworld</a>
 
+#### v2.2.0r2
+- <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.2/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.2/spyro_aht.apworld</a>
+
 #### v2.2.0
 - <a href="https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld">https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.2.0-PR/spyro_aht.apworld</a>
 

@@ -2,69 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-16T00:23:04.934044+00:00</updated>
+  <updated>2026-10-16T06:16:51.641351+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/PinkSwitch/Archipelago/releases/tag/cvpor2.0</id>
-    <title>Castlevania: Portrait of Ruin v2.0.0</title>
-    <updated>2026-10-12T15:11:18+00:00</updated>
-    <author>
-      <name>Pink Switch</name>
-    </author>
-    <content># Castlevania: Portrait of Ruin Archipelago Version 2.0 #&#13;
-## New Settings ##&#13;
-* ``Shuffle Transition Doors``: Randomizes area transition doors&#13;
-* ``Early Open Castle``&#13;
-   Adds some extra platforms. Behemoth is reachable with no additional movement, the Great Stairway underground area can be reached with only Acrobat, and the main staircase section requires Stone of Flight (Or puppet if enabled).&#13;
-* ``SP for Mastery``: Allows you to randomize each Subweapon's mastery requirements or make them mastered by default&#13;
-* `` Show Drop Rates``: Makes the Gambler Glasses effect always active&#13;
-## Changes ##&#13;
-* Tweaked the weighting of random spell charge times&#13;
-* Platforms have been added to the statue room in Entrance so you don't have to use the Magical Ticket to reach the shop&#13;
-* Slightly boosted the randomization weight of armor and accessories&#13;
-* Floating items in the connector pipe room of Great Stairway are no longer placed slightly high up&#13;
-## Fixes ##&#13;
-* Fixed being able to delete Magical Tickets by using them via the touch screen&#13;
-* Fixed excluded quest filler being non-deterministic&#13;
-* Fixed Summon Ghost and Summon Skeleton having swapped IDs&#13;
-* Fixed some items on ``City of Haze: Underground Square Right`` being placed too low&#13;
-* Fixed a generation crash if Sanctuary is removed from the item pool&#13;
-* Fixed being able to swap quest text when turning in the quest&#13;
-* Fixed some optimization issues when displaying Quest rewards in the guide&#13;
-* Fixed any and all possible scenarios where quests could display AP item instead of their actual item&#13;
-## Known Issues ##&#13;
-* None so Far</content>
-    <link href="https://github.com/PinkSwitch/Archipelago/releases/tag/cvpor2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.5</id>
-    <title>Oh So Hero! v1.0.5</title>
-    <updated>2026-10-12T15:30:36+00:00</updated>
-    <author>
-      <name>L-technology-mods</name>
-    </author>
-    <content># Oh So Hero! Archipelago v1.0.5
-
-Compatibility fix for Oh So Hero! 1.13.001 (Unity 2022.3.62).
-
-The plugin could load successfully and then be destroyed during startup, preventing automatic connections, progression restrictions and location checks. This release protects the plugin manager automatically, so you do not need to edit `BepInEx.cfg`.
-
-## Install or update
-
-- Close the game.
-- Download `OhSoHeroArchipelago-Client.zip` and extract its contents into your Steam game installation folder, next to `OhSoHero.exe`. Replace the old files when prompted.
-- Keep your existing Archipelago configuration and saves. Existing seeds remain compatible with this client fix.
-- For a first installation, also download `oh_so_hero.apworld` and install it through Archipelago Launcher.
-
-`OhSoHeroArchipelago-Release.zip` contains both downloads and the installation guide.
-
-Local testing on game 1.13.001 confirmed server connection, progression restrictions, scene checks and received consumables with the BepInEx manager protection enabled. The automatic protection uses the same flags as that tested setting.
-</content>
-    <link href="https://github.com/L-technology-mods/Archipelago-Oh-So-Heroe/releases/tag/v1.0.5"/>
-  </entry>
   <entry>
     <id>https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/tag/nsmbds-v0.5.2-unstable</id>
     <title>New Super Mario Bros. DS v0.5.2</title>
@@ -1054,7 +996,7 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r3</title>
+    <title>GTFO v0.0.4r2</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
@@ -1165,7 +1107,7 @@ This revision:&#13;
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H4</id>
-    <title>Deadlock v1.2.0r2</title>
+    <title>Deadlock v1.2.0r3</title>
     <updated>2026-10-14T07:02:34+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1743,5 +1685,58 @@ KNOWN ISSUES:&#13;
 &#13;
 If you have any bugs, please report them in our discord thread!</content>
     <link href="https://github.com/Slimm160/Mini-Metro-Archipelago/releases/tag/0.3.1-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.2</id>
+    <title>Spyro: A Hero's Tail v2.2.0r2</title>
+    <updated>2026-10-16T00:48:42+00:00</updated>
+    <author>
+      <name>mayaxtg</name>
+    </author>
+    <author>
+      <name>ebbeaht</name>
+    </author>
+    <author>
+      <name>PhoenixAki</name>
+    </author>
+    <content># Spyro: A Hero's Tail v2.2.2&#13;
+This revision fixes an error that would occur when patching the game if the client is connected to a room that uses a password. This update also includes game mod version 20.2. Both the updated .apworld and game mod version 20.2 should be safe to use with pre-existing seeds from v2.2.0 or v2.2.1.&#13;
+&#13;
+NOTE: I replaced the .apworld file ~3h after this was posted because I forgot to bump the internal version of the client. Whoops lol. The client will now correctly report v2.2.2 when starting up.&#13;
+&#13;
+# Changelog (compared to v2.2.1)&#13;
+1) [.apworld update] Fixed an error that would occur (new to v2.2) if connecting to a room that uses a password. The underlying reason for the error relates to a longstanding quirk in how the client initializes, but it only became problematic due to changes made when adding PAL support to the client.&#13;
+2) [game mod update] Removed the "You've collected everything" message that displays when reaching 100%. This message would sometimes get spammed if you use Dragon Eggs as filler items and get sent too many of them.&#13;
+3) [game mod update] The Bounce trap now synchronizes with the BPM (beats per minute) of the currently playing music track. The bounces themselves wont' always line up with the track, but he will bounce at the same frequency. I prefer to call it bounces per minute, personally...&#13;
+&#13;
+[Setup Guide](https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&amp;-FAQ)&#13;
+&#13;
+## What's Changed (auto-generated by GitHub)&#13;
+https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.1...AHT-v2.2.2</content>
+    <link href="https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/seadoggie001/TFWR-APMod/releases/tag/v0.0.10-beta</id>
+    <title>The Farmer Was Replaced v0.0.10b0</title>
+    <updated>2026-10-16T01:38:40+00:00</updated>
+    <author>
+      <name>seadoggie</name>
+    </author>
+    <content>For installation instructions, please [see the setup guide.](&lt;https://github.com/seadoggie001/Archipelago/blob/theFarmerWasReplaced/worlds/tfwr/docs/setup_en.md&gt;)&#13;
+&#13;
+## Features&#13;
+* Two new unlockable functions: &#13;
+  - Teleport: Allows you to teleport to any square on the farm&#13;
+  - Power_Flip: Allows you to perform powerful flips at the expense of power&#13;
+* Built-in logic tracker as part of the Progress GUI&#13;
+* In-Game option to disable traps&#13;
+&#13;
+## Fixes&#13;
+* Draw the Settings GUI with proper monitor scaling by @Lordmau5&#13;
+* Logic fixes (require tilling for crops, fix determinism, and too-many-items)&#13;
+&#13;
+## New Contributors&#13;
+* @Lordmau5 made their first contribution in https://github.com/seadoggie001/TFWR-APMod/pull/3</content>
+    <link href="https://github.com/seadoggie001/TFWR-APMod/releases/tag/v0.0.10-beta"/>
   </entry>
 </feed>
