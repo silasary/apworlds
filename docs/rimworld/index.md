@@ -4,7 +4,7 @@ Insert description of the world/game here.
 
 
 ## Downloads
-- <a href="https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v0.6.1-alpha/rimworld.apworld">Latest Version (0.6.1a0)</a>
+- <a href="https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/download/v1.0.0-release/rimworld.apworld">Latest Version (1.0.0.post0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

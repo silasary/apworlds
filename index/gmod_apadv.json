@@ -118,6 +118,20 @@
       "version_simple": "0.4.0",
       "world_version": "0.4.0"
     },
+    "v0.4.1": {
+      "created_at": "2026-10-16T18:11:17Z",
+      "description": "Uses [Version 0.3.0 of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/v.0.3.0)\r\n\r\n- 3d2d objects drawn in editor mode now use point sampling (this means that the text drawn above some editor entities is no longer blurry as hell)\r\n- fixed \"Generate Map Index\" tool in the launcher not working\r\n- added HitScan capability to some items that were missing it\r\n- added a bunch of missing capabilities to the capability node ui\r\n- fixed local hints not being shown in the map tab of the tracker window if the player opened the tracker before receiving their first local hint\r\n- save and delete marker tools now play dryfire sounds when targeting an invalid object\r\n- entities that apadventure already saves automatically can't be targeted by the save marker tool anymore\r\n- returning `true` in a config script item handler now unregisters the item handling function\r\n- added a new GratePass capability for weapons that can shoot through grates\r\n- custom item defintions can now have code run whenever they're loaded/unloaded\r\n- made projectile size capabilities imply the base Projectile capability\r\n\r\nIf you don't know what the .fgd file is for, you don't need it.\r\n\r\n# Important\r\nIf you had an old version of the gmod addon installed, delete the old folder before installing the new one, some parts of the file system have changed. If you have made some custom content for apAdventure and put it into the apAdventure addon folder, check out [the packing custom content guide](https://github.com/ChrisCj8/ap_adventure/blob/main/apworld/docs/packing_custom_content_en.md) for information about how to pack your stuff so you won't lose it in the future.\r\n\r\nAlso, you most likely won't be able to finish any old runs you've already started with this version, so finish those before updating.",
+      "download_url": "https://github.com/ChrisCj8/ap_adventure/releases/download/v0.4.1/gmod_apadv.apworld",
+      "has_manifest": true,
+      "hash_sha256": "95861dcbf1cfd3ddb1ed03cd0bde0eff3c523ed9a781b4ae3c84ca37c7d0a893",
+      "html_url": "https://github.com/ChrisCj8/ap_adventure/releases/tag/v0.4.1",
+      "size": 68584,
+      "source_url": "https://api.github.com/repos/ChrisCj8/ap_adventure",
+      "tag": "v0.4.1",
+      "title": "Version 0.4.1",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1"
+    },
     "v1_1": {
       "created_at": "2026-04-11T21:08:52Z",
       "description": "Uses [Inititial Release Version of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/Main)\r\n\r\nFixed the apworld throwing errors on new installs because the host.yaml section and logic folders haven't been created yet.\r\n\r\nThis flew under my radar because I did not test the apworld on a new install, apologies.\r\n\r\nIf you don't know what the .fgd file is for you don't need it.",

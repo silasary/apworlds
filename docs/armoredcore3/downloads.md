@@ -1,9 +1,12 @@
 # Armored Core 3
 
 ## Latest
-- <a href="https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.1.2/armoredcore3.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.2.0/armoredcore3.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.2.0/armoredcore3.apworld">https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.2.0/armoredcore3.apworld</a>
 
 #### v0.1.2
 - <a href="https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.1.2/armoredcore3.apworld">https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.1.2/armoredcore3.apworld</a>

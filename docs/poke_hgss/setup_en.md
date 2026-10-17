@@ -134,3 +134,7 @@ need the slot's YAML.
    it'll say exactly what failed to import. If you replaced an existing `poke_hgss.apworld`, make sure
    the old copy was actually removed from `custom_worlds` first; the Launcher's "Install APWorld" refuses to
    overwrite an existing file with the same name.
+5. **Problem**: a fix says "needs the ROM re-patched" (DeathLink, trainer moves, the lighthouse). **Solution**:
+   install the new `.apworld`, then open the same `.appokehgss` again: it builds a new `.nds` for the same seed.
+   It has the same file name, so BizHawk loads your existing save. No new generation is needed while the
+   APWorld version stays the same.

@@ -1,9 +1,12 @@
 # Bubble Bobble
 
 ## Latest
-- <a href="https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.2.1/bubblebobble.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.2.2/bubblebobble.apworld">Latest Version (1.2.2)</a>
 
 ## All Versions
+
+#### v1.2.2
+- <a href="https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.2.2/bubblebobble.apworld">https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.2.2/bubblebobble.apworld</a>
 
 #### v1.2.1
 - <a href="https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.2.1/bubblebobble.apworld">https://github.com/sensokaeru/bubblebobbleAP/releases/download/v1.2.1/bubblebobble.apworld</a>

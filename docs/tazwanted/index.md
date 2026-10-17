@@ -5,7 +5,7 @@ games are scattered across the multiworld.
 
 
 ## Downloads
-- <a href="https://github.com/imklubb/Archipelago-Taz-Wanted/releases/download/1.2.3/tazwanted.apworld">Latest Version (1.2.3)</a>
+- <a href="https://github.com/imklubb/Archipelago-Taz-Wanted/releases/download/1.2.4/tazwanted.apworld">Latest Version (1.2.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

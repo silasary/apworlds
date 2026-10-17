@@ -9,7 +9,7 @@ while still using the well-known grid-based movement mechanics and battle UI.
 
 
 ## Downloads
-- <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.0/pokemon_bw.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.1/pokemon_bw.apworld">Latest Version (0.4.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

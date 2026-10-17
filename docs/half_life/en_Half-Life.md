@@ -35,6 +35,8 @@ Melee Throw, plus filler (ammo, medkits, armour batteries) and traps.
   not, and standing in each of Xen's 15 healing pools -- these can be switched
   off with `chargesanity`
 - reaching each weapon at the place Half-Life would first have given it to you
+- with `include_microwave`, exploding the food in the Anomalous Materials
+  break room microwave
 
 ## What does another world's item look like in Half-Life?
 

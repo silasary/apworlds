@@ -5,7 +5,7 @@ to kill you. You win if you complete night 5 with all 4 animatronics obtained in
 
 
 ## Downloads
-- <a href="https://github.com/EviVirus/Archipelago-FNaFW/releases/download/FFPS-v1.0.0-pre1/ffps.apworld">Latest Version (1.0.0rc1)</a>
+- <a href="https://github.com/EviVirus/Archipelago-FFPS/releases/download/v1.0.0-pre1/ffps.apworld">Latest Version (1.0.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

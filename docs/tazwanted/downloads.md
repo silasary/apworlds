@@ -1,9 +1,12 @@
 # Taz Wanted
 
 ## Latest
-- <a href="https://github.com/imklubb/Archipelago-Taz-Wanted/releases/download/1.2.3/tazwanted.apworld">Latest Version (1.2.3)</a>
+- <a href="https://github.com/imklubb/Archipelago-Taz-Wanted/releases/download/1.2.4/tazwanted.apworld">Latest Version (1.2.4)</a>
 
 ## All Versions
+
+#### v1.2.4
+- <a href="https://github.com/imklubb/Archipelago-Taz-Wanted/releases/download/1.2.4/tazwanted.apworld">https://github.com/imklubb/Archipelago-Taz-Wanted/releases/download/1.2.4/tazwanted.apworld</a>
 
 #### v1.2.3
 - <a href="https://github.com/imklubb/Archipelago-Taz-Wanted/releases/download/1.2.3/tazwanted.apworld">https://github.com/imklubb/Archipelago-Taz-Wanted/releases/download/1.2.3/tazwanted.apworld</a>

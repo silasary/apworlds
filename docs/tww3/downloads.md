@@ -14,6 +14,9 @@
 #### v0.11.0r2
 - <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.1/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.1/tww3.apworld</a>
 
+#### v0.11.0r2
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.1/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.1/tww3.apworld</a>
+
 #### v0.11.0
 - <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.1/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.1/tww3.apworld</a>
 

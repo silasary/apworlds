@@ -45,14 +45,14 @@ The player can specify their goal for the multiworld from the following selectio
 
 ## What items can be in another player's world?
 
-Any weapon, gadget, level access. When progressive modes are enabled, you receive `Progressive Weapon` or `Progressive Planet` items that unlock each weapon level / case file in a fixed order instead.
+Any weapon, gadget, level access. When progressive modes are enabled, you receive `Progressive Weapon` or `Progressive <planet>` items that unlock each weapon level / that planet's case files in a fixed order instead.
 
 ## When the player receives an item, what happens?
 
 You will be able to visit the case file with whatever case file/progressive planet/planet/agent you receive, receiving 
 Case File: Boltaire Museum will unlock the Boltaire Museum Case file. Getting Progressive Hydrano will unlock the first
 case file on Hydrano: Dam's Edge, Hydrano. Hydrano Access unlocks all case files taking place on Hydrano.
-Play as Ratchet unlocks all Ratchet case files.
+Progressive Ratchet unlocks the next Ratchet case file in order (likewise Progressive Clank, Qwark and Gadgetbots).
 Upon receiving a weapon it unlocks in the respective character's inventory, which will let you equip it
 and use to fire on enemy troops. Progressive upgrades will upgrade your weapons increasing their
 firepower.

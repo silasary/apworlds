@@ -123,7 +123,7 @@ Pokemon Black and White:
     - {Grass: [30, 10, 4, 2, 2, 2, 25, 10, 5, 4, 4, 2], Fishing: [96, 1, 1, 1, 1]}
 ```
 
-# Text Plando guide (coming in 0.4.0)
+# Text Plando guide
 
 ## How does this work?
 
@@ -185,7 +185,7 @@ Pokemon Black and White:
       at: "system 235 0 202"
 ```
 
-# Modify Levels (advanced mode) guide (coming in 0.4.0)
+# Modify Levels (advanced mode) guide
 
 ## How does this work?
 
@@ -247,7 +247,7 @@ Pokemon Black and White:
       value: 20
 ```
 
-# Dexsanity Plando guide (coming in 0.4.0)
+# Dexsanity Plando guide
 
 (This guide also applies to `Seensanity`, `Formsanity`, `Shinysanity`, and `Shinyformsanity`.)
 
@@ -305,7 +305,7 @@ Pokemon Black and White:
   - 5
 ```
 
-# Stats Plando guide (coming in 0.4.0)
+# Stats Plando guide
 
 ## How does this work?
 
@@ -445,7 +445,7 @@ Pokemon Black and White:
       egg_groups: [Monster, "Human-Like"]
 ```
 
-# Combined goals guide (coming in 0.4.0)
+# Combined goals guide
 
 ## How does this work?
 
@@ -477,7 +477,7 @@ Pokemon Black and White:
     - cynthia
 ```
 
-# Move Data Plando guide (coming in 0.4.0)
+# Move Data Plando guide
 
 ## How does this work?
 

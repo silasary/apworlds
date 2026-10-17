@@ -155,6 +155,21 @@
       "title": "v0.4.0 : Shiny Spots sanity and improvements",
       "version_simple": "0.4.0",
       "world_version": "0.4.0"
+    },
+    "v0.4.1": {
+      "created_at": "2026-10-15T09:13:33Z",
+      "description": "The Archipelago medal sprite is here ! This small update replaces the Archipelago medal texture from using the Mini medal's one to using a dedicated custom texture.\r\nThis update also adds some useful improvements.\r\n\r\n- Added a custom texture for the Archipelago medal item\r\n- Added a specific \"item get\" message and animation when receiving the Ship and Ramia\r\n- Added `rare_items_fast_animation` option to make all important items have the same \"item get\" animation as non important items (false by default)\r\n- Added an event to receive items when using some more specific field spells/abilities (other than \"Peep\")\r\n- Improved the message for getting an Archipelago medal item from a Shiny Spot location when `shiny_spots_sanity` is set to max checks: it will now also display the amount of items that got checked (between 1 and 3 depending on the spot)\r\n- Updated the \"item get\" event of the Archipelago medal item during any NPC scenes so that the non important item animation will be used instead of the vanilla one\r\n- Updated the way some field spells and abilities are registered into the game so the player will now start with some of those already unlocked\r\n- Other minor changes\r\n\r\nIf updating from v0.4.0 : replace `DQ3AP.asi`, `Game-WindowsNoEditor_P_DQ3AP.pak` and `dq3.apworld` by the new versions.\r\nOr else, follow the setup [here](https://github.com/ZigzagAwaka/DQ3AP#setup-guide).",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.4.1/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1e2fb143fbff9d4d33e3364f60f6fbcaf00dc45556f5a1d5b7e9393833a43d17",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.4.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 57109,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.4.1",
+      "title": "v0.4.1 : The Custom Item update",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1"
     }
   }
 }

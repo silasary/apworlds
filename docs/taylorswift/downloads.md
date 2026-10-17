@@ -1,9 +1,15 @@
 # Taylor Swift Discography
 
 ## Latest
-- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.2.6/taylorswift.apworld">Latest Version (1.2.6)</a>
+- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.3.0/taylorswift.apworld">Latest Version (1.3.0)</a>
 
 ## All Versions
+
+#### v1.3.0
+- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.3.0/taylorswift.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.3.0/taylorswift.apworld</a>
+
+#### v1.2.7
+- <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.2.7/taylorswift.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.2.7/taylorswift.apworld</a>
 
 #### v1.2.6
 - <a href="https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.2.6/taylorswift.apworld">https://github.com/benny-dreamly/Archipelago/releases/download/ts-1.2.6/taylorswift.apworld</a>

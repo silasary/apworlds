@@ -6,7 +6,8 @@ Players take on the role of adventurers who travel in a caravan gathering mystic
 
 
 Ported to Archipelago, this World provides the following:
-- Items
-- Locations
+- Items, Food, Magicite, Artifacts
+- Chest Locations
+- Shop Rando (No checks included yet but just a extra setting currently)
 - Dolphin automatic integration (No Support For Bizhawk)
 

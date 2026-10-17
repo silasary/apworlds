@@ -1,6 +1,26 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 0.4.1
+
+- Fixed equal minimum and maximum for catch rates rando failing generation
+- Fixed recursion errors with extended hints if `Consider trades` or `Consider evolutions` is included
+- Fixed a too restricted wild rando species pool not erroring as `OptionErrors`
+- Fixed bad content of the Dexsanitysanity options' location groups if that plugin is not installed
+- Fixed the `pokemon_master` goal not being shown in the Options Creator and in template yamls
+- Made `Stats Plando` error when more than 22 levelup moves are plando'd into a single species
+- Improved strictness of the `Follow evolutions` and `Force evolutions` modifiers in types rando
+- Fixed some evolved pokémon not getting any randomized levelup moves under certain circumstances
+- Fixed non-custom forms having empty randomized levelup and TM/HM movesets
+- Expanded all modifier-based options and combined goals
+  - Nested lists to pick a random value from
+  - `null` value to not pick a value inside a nested list
+  - Comma-separated strings for picking multiple values at once
+
+### Is this version compatible with older multiworld slots and save files?
+Yes, back to 0.4.0
+However, UT might be inaccurate in tracking worlds generated before this version
+
 ## 0.4.0: Advanced Dataplandosanity
 
 ### Content and QoL

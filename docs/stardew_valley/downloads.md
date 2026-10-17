@@ -1,9 +1,12 @@
 # Stardew Valley
 
 ## Latest
-- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.7/stardew_valley.apworld">Latest Version (8.1.7)</a>
+- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.9/stardew_valley.apworld">Latest Version (8.1.8)</a>
 
 ## All Versions
+
+#### v8.1.8
+- <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.9/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.9/stardew_valley.apworld</a>
 
 #### v8.1.7
 - <a href="https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.7/stardew_valley.apworld">https://github.com/agilbert1412/StardewArchipelago/releases/download/8.1.7/stardew_valley.apworld</a>
