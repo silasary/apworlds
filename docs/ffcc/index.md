@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.0.4/ffcc.apworld">Latest Version (0.0.4)</a>
+- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.0.5/ffcc.apworld">Latest Version (0.0.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
