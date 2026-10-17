@@ -286,7 +286,7 @@
       "tag": "v2.0.0-beta.4",
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 4 \u2014 Evil Ring, generation fix, seed fuzzer",
       "version_simple": "1.9.2",
-      "world_version": "1.9.2r2"
+      "world_version": "1.9.2r3"
     },
     "v2.0.0-beta.5": {
       "created_at": "2026-10-06T12:45:22Z",
@@ -318,7 +318,7 @@
       "tag": "v2.0.0-beta.6",
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 6 \u2014 Fire and thunder gates, reconnect and save fixes",
       "version_simple": "1.9.2",
-      "world_version": "1.9.2r2"
+      "world_version": "1.9.2r4"
     },
     "v2.0.0-beta.7": {
       "created_at": "2026-10-08T18:10:00Z",
@@ -334,7 +334,7 @@
       "tag": "v2.0.0-beta.7",
       "title": "Ys Origin \u00d7 Archipelago 2.0 beta 7 \u2014 Silver Chimes barrier, double-jump gates, catch-up EXP",
       "version_simple": "1.9.2",
-      "world_version": "1.9.2r3"
+      "world_version": "1.9.2r2"
     },
     "v2.0.1": {
       "created_at": "2026-10-08T21:52:36Z",
@@ -365,6 +365,21 @@
       "title": "v2.1.0 \u2014 one-way rooms and double jumps",
       "version_simple": "2.1.0",
       "world_version": "2.1.0"
+    },
+    "v2.1.1": {
+      "created_at": "2026-10-17T10:52:17Z",
+      "description": "A patch release: the 3F barrier fix from a Hugo player's report, and a logic audit against the game's room scripts. Requires **Archipelago 0.6.7 or newer**.\n\n> **Take all three files, and take them together.** Seeds generated with 2.1.0 stay playable with the new dll.\n\n## \ud83d\udee0\ufe0f Mod fix\n\n- **The 3F Transfer Room now always sends you to 4F first.** Its barrier teleports Yunica and Hugo to 4F unless the Blue Necklace is worn, and that teleport is the only way into the 4F rooms. A seed can hand you the necklace early, and walking in wearing it broke the barrier for good, so 4F was out of reach. Until you have been to 4F, the barrier now ignores the necklace.\n- **Saves already stuck this way are repaired.** If you broke the barrier before ever reaching 4F, it comes back the next time you are in a room next to it. Walk into it to be teleported to 4F, then come back with the necklace on to break it again.\n\n## \ud83d\uddfa\ufe0f Logic\n\nTen places where the logic counted on a check or a passage the game blocks, found by checking every room against its scripts:\n- six room gates, including the 6F room (wind in, dash out), the 8F dive and the 24F bridge's way back;\n- four story checks, including Yunica's Black Pearl, which now waits for her 19F event;\n- the 2F Gemma Room's two checks are Yunica's and Hugo's only (Toal cannot enter it).\n\n## \u26a0\ufe0f What was and was not played\n\n- The barrier fix was loaded in the retail game and its check was exercised in memory for each case. The room itself was not played through.\n- The logic changes passed AP's integration check, 60 random seeds and 8 three-player seeds.\n\n## \ud83d\udc1e Known issues\n\n- **Rado's Annex and story order** (from 2.1.0) is still not fixed in this dll. Hugo and Yunica can be turned around at the Rado Tower bridge by story flags from higher floors.\n- The known issues listed for 2.1.0 still apply.\n",
+      "download_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/download/v2.1.1/ys_origin.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e353a4bd166934904f302be769d33c7140e7f99f943602b09b6b3c6e052b350d",
+      "html_url": "https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 86379,
+      "source_url": "https://api.github.com/repos/4rtefakt/ys-origin-archipelago",
+      "tag": "v2.1.1",
+      "title": "v2.1.1 \u2014 the 3F barrier always sends you to 4F first",
+      "version_simple": "2.1.1",
+      "world_version": "2.1.1"
     }
   }
 }

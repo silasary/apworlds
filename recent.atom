@@ -2,81 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-17T06:17:54.958830+00:00</updated>
+  <updated>2026-10-17T12:17:25.051523+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.2.1</id>
-    <title>Viscera Cleanup Detail v1.2.1</title>
-    <updated>2026-10-13T08:52:10+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content># Viscera Cleanup Detail 1.2.1
-
-**Fixes**
-- **Connecting did nothing on Windows installs with certain character sets.** The client crashed quietly while checking whether the game was running, so no save swap, no unlocked levels, no auto-launch, and a silent `/installmod`. Not an Archipelago 0.6.8 issue. A failed connect step now prints an error in the client window.
-- **A locked Mop no longer leaves you empty-handed.** The hands now come up on their own.
-- **An unlocked tool no longer waits on the Hands item.** Grabbing a floor drop whose tool is unlocked always works now.
-
-**Logic**
-- **Incubation Emergency's core kit tops out at 38 percent, not 80.** Measured in game. The rungs above 38 now need both the Vendor and the Laser Welder.
-
-**Upgrading**
-- Drop the new apworld into `custom_worlds`, restart the launcher, and reconnect. The client installs the updated game mod on connect.
-- The game mod package changed, and co-op only joins between identical packages, so everyone in a session needs this build.
-- Existing yamls keep working untouched, and seeds generated on 1.2.0 keep playing on this build. Only Incubation Emergency's logic differs for new seeds.
-</content>
-    <link href="https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.4</id>
-    <title>Crash Team Racing v0.2.4</title>
-    <updated>2026-10-13T08:53:12+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>CTR Archipelago 0.2.4 is out. Here's the short version. [Full release notes are on AP-Pie](https://ap-pie.com/ctr/releases/0-2-4).
-
-[Setup guide (ap-pie.com)](https://ap-pie.com/guides/ctr) · [SETUP.md](https://github.com/dowlle/ctr-native-ap/blob/main/SETUP.md) · [SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.2.4/SETUP.md)
-
-## What's new since 0.2.3
-
-- **Generation:** big rooms generate much faster.
-- **Fewer refused YAMLs:** about 4 in 10 random YAMLs got refused in our tests, down from almost 8 in 10. Every YAML that worked on 0.2.3 still works.
-- **Race-loss DeathLink:** only sends when you haven't won that race yet and it's in logic for you. Rooms from before 0.2.4 keep the old rule.
-- **Trial pads:** the Slide Coliseum and Turbo Track pads no longer trap you in the warp after a Collect.
-- **Bosses:** only bosses you beat yourself count, so a Collect can't finish a Bosses goal or softlock any_percent ([#458](https://github.com/dowlle/ctr-native-ap/issues/458)).
-- **Itemsanity:** finished pads stay open if you have a weapon with an open check ([#452](https://github.com/dowlle/ctr-native-ap/issues/452)).
-- **Slide Coliseum:** if a seed has fewer than 10 Sapphire Relics, the pad opens at the number it has.
-- **Extracted assets:** no more BIN prompt on every launch ([#444](https://github.com/dowlle/ctr-native-ap/issues/444)).
-- **Demo Camera trap:** L2 no longer breaks it ([#454](https://github.com/dowlle/ctr-native-ap/issues/454)).
-
-## Downloads
-
-On Windows, grab `ctr-archipelago-v0.2.4-windows-x86.zip`. On Linux or Steam Deck, grab `ctr-archipelago-v0.2.4-linux-x86.tar.gz` (glibc 2.36 or newer). Both include the client and the matching `ctr.apworld`. You can keep playing a 0.2.3 room on the 0.2.4 client. For new seeds, use the 0.2.4 client and APWorld together. Hosting needs Archipelago 0.6.7 or newer, and 0.6.8 works too.
-
-The separate `ctr.apworld` and `Crash.Team.Racing.yaml` are for hosts. Use the `.sha256` files to check your downloads. `manifest.json` and `manifest.json.minisig` are the signed manifest; the full notes explain how to check it. The `.debug` files help with crash reports. You don't need them to play. You need your own NTSC-U disc, no game data is included. The client isn't code-signed.
-
-Known issues: a full-accessibility CTR slot next to a minimal-accessibility slot can fail to generate on some seeds (just generate again). You may also see short pauses on screen changes, stalls from big reconnect backlogs ([#147](https://github.com/dowlle/ctr-native-ap/issues/147)), or invisible podium characters ([#282](https://github.com/dowlle/ctr-native-ap/issues/282)).
-
-## Download checksums
-
-| Asset | SHA-256 |
-|---|---|
-| `ctr-archipelago-v0.2.4-windows-x86.zip` | `2a8fe4a9594e3ba77230716ff4f722bf44f62c6269a3d28f5818f91a9c54d9cf` |
-| `ctr-archipelago-v0.2.4-linux-x86.tar.gz` | `79d0d430946a27bbf939aceb875f1f20037aef093fb283599ea4d015fa4f5b8e` |
-| `ctr.apworld` | `ec904aca46a7420a88447f06005266d77d9a99ea39302f071549e438ce828e78` |
-| `manifest.json` | `c6aca5fe4ea0ed6221c5ba0be75195de4eab1621ba5fd1822c617f430305ca75` |
-
-## Found a problem?
-
-[Open a GitHub issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) with your client version, platform, seed or YAML and what happened. For a support bundle, run `support-bundle.bat` on Windows or `support-bundle.sh` on Linux. Look through it before attaching it. It doesn't upload anything by itself. Questions are welcome in the [Crash Team Racing channel](https://discord.com/channels/731205301247803413/1222304293751750777) on the Archipelago Discord.
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.2.4"/>
-  </entry>
   <entry>
     <id>https://github.com/chickentuna/WeddingWitchMod/releases/tag/v0.1.1</id>
     <title>Wedding Witch v0.1.0r2</title>
@@ -585,7 +515,7 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r2</title>
+    <title>GTFO v0.0.4r3</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
@@ -713,7 +643,7 @@ This revision:&#13;
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H4</id>
-    <title>Deadlock v1.2.0r3</title>
+    <title>Deadlock v1.2.0r2</title>
     <updated>2026-10-14T07:02:34+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1347,7 +1277,7 @@ https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.1...AHT-v2.2.2</content
   </entry>
   <entry>
     <id>https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.3</id>
-    <title>Library of Ruina v1.0.0r2</title>
+    <title>Library of Ruina v1.0.0r3</title>
     <updated>2026-10-16T11:14:39+00:00</updated>
     <author>
       <name>LastPenguin</name>
@@ -1391,7 +1321,7 @@ https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.1...AHT-v2.2.2</content
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.13</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r4</title>
     <updated>2026-10-16T17:49:45+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1632,7 +1562,7 @@ _This release is backwards compatible down to 6.0.0._</content>
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H5</id>
-    <title>Deadlock v1.2.0r2</title>
+    <title>Deadlock v1.2.0r3</title>
     <updated>2026-10-17T01:36:10+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1679,5 +1609,60 @@ APWORLD (needed for generating archieplago game):&#13;
 - Restart launcher for APWorld to properly install&#13;
 - (Optional but Recommended)Select "Generate Template Options" to generate default spirit valley YMAL</content>
     <link href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.7.0</id>
+    <title>The Legend of Zelda: A Link to the Past v1.7.0</title>
+    <updated>2026-10-17T06:37:26+00:00</updated>
+    <author>
+      <name>aurabot</name>
+    </author>
+    <content>* New sprites for AP items&#13;
+* New entrance option Linked Drops can decouple dropdowns from their usual exits&#13;
+* Zelgawoods has been renamed to Shuffle Skull Woods (old YAMLs will still work). With crossed entrance + shuffle skull woods + no linked drops, all Skull Woods dropdowns are randomized and could appear outside the Skull Woods area&#13;
+* New door type shuffle options to include one-way trap doors, and to slightly randomize the number of each type of door&#13;
+* New option Pseudolamp gives a light cone without needing the Lamp&#13;
+* New option to load Link's sprite from a player's local .zspr file&#13;
+* Receiving a crystal with prize shuffle now says "You acquired" instead of "You picked up"&#13;
+* Some logic changes from the newest OWR version:&#13;
+  * Bunny walking through the top of Paradox Cave is now in logic (previously the Moon Pearl was required)&#13;
+  * Bunny walking through Death Mountain Descent is now in logic, unless playing with Inverted and without crossed entrance shuffle&#13;
+* Fixed quickswap not being in the correct category in the option creator</content>
+    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.1.1</id>
+    <title>Ys Origin v2.1.1</title>
+    <updated>2026-10-17T10:52:17+00:00</updated>
+    <author>
+      <name>4rtefakt</name>
+    </author>
+    <content>A patch release: the 3F barrier fix from a Hugo player's report, and a logic audit against the game's room scripts. Requires **Archipelago 0.6.7 or newer**.
+
+&gt; **Take all three files, and take them together.** Seeds generated with 2.1.0 stay playable with the new dll.
+
+## 🛠️ Mod fix
+
+- **The 3F Transfer Room now always sends you to 4F first.** Its barrier teleports Yunica and Hugo to 4F unless the Blue Necklace is worn, and that teleport is the only way into the 4F rooms. A seed can hand you the necklace early, and walking in wearing it broke the barrier for good, so 4F was out of reach. Until you have been to 4F, the barrier now ignores the necklace.
+- **Saves already stuck this way are repaired.** If you broke the barrier before ever reaching 4F, it comes back the next time you are in a room next to it. Walk into it to be teleported to 4F, then come back with the necklace on to break it again.
+
+## 🗺️ Logic
+
+Ten places where the logic counted on a check or a passage the game blocks, found by checking every room against its scripts:
+- six room gates, including the 6F room (wind in, dash out), the 8F dive and the 24F bridge's way back;
+- four story checks, including Yunica's Black Pearl, which now waits for her 19F event;
+- the 2F Gemma Room's two checks are Yunica's and Hugo's only (Toal cannot enter it).
+
+## ⚠️ What was and was not played
+
+- The barrier fix was loaded in the retail game and its check was exercised in memory for each case. The room itself was not played through.
+- The logic changes passed AP's integration check, 60 random seeds and 8 three-player seeds.
+
+## 🐞 Known issues
+
+- **Rado's Annex and story order** (from 2.1.0) is still not fixed in this dll. Hugo and Yunica can be turned around at the Rado Tower bridge by story flags from higher floors.
+- The known issues listed for 2.1.0 still apply.
+</content>
+    <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.1.1"/>
   </entry>
 </feed>
