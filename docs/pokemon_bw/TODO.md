@@ -1,6 +1,7 @@
 # Important stuff
 
 apworld
+- options guide for nested random lists
 
 rom
 
@@ -9,7 +10,7 @@ both
 # Not urgent
 
 - gym leader scripts control traded obedience level?
-- wingull grams overworld items not disappearing
+- wingull grams overworld item not disappearing
 - extended location hint for challenge rock
 - a way to check whether map or fly menu is opened, used for switching to ow map in UT
 - Running shoes as an item, making mom cutscene on route 2 a check
@@ -23,6 +24,9 @@ both
 - import plugin packages and classes while the main apworld itself is getting imported
 - correlate mods in move data rando not working? => Special unit test cases
 - trainer flags setzen lassen wo es in den scripts fehlt und dann besiegte trainer IDs ins datastorage
+- any options with custom code should bundle error messages instead of raising immediately
+- add funny text "your free trial has ended" to old man in Striaton
+- add nested randomness to plando values
 - rom script changes, some to comply with regions rework:
   - inject item receiver into code that executes AP menu script
   - Go Home button (only after all rom changes listed below are implemented)

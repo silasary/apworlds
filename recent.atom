@@ -2,149 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-17T00:23:21.916326+00:00</updated>
+  <updated>2026-10-17T06:17:54.958830+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.1</id>
-    <title>Ratchet &amp; Clank 3 v0.6.1.post3</title>
-    <updated>2026-10-13T05:00:50+00:00</updated>
-    <author>
-      <name>Taoshi</name>
-    </author>
-    <author>
-      <name>1theory</name>
-    </author>
-    <author>
-      <name>AmondoVagyok</name>
-    </author>
-    <author>
-      <name>Myth197</name>
-    </author>
-    <author>
-      <name>Yuxia228</name>
-    </author>
-    <content>## RaC3 APWorld v0.6.1&#13;
-&#13;
-**Branch:** staging  &#13;
-**Date:** 2026-10-13 06:02 UTC&#13;
-&#13;
-&lt;details&gt;&#13;
-&lt;summary&gt;&lt;strong&gt;📜 Summary (588 changes since v0.6.0)&lt;/strong&gt;&lt;/summary&gt;&#13;
-&#13;
-- RAC3: Remove deprecated UT handling (afaa6ffd6)&#13;
-- RAC3: Place all fixed items prior to counting required amount of filler needed. (210efaba4)&#13;
-- RAC3: Fix hideout taxi skip logic (f8ac68594)&#13;
-- RAC3: Fix jackpot not working on x1 multiplier (686e2ca8b)&#13;
-- RAC3: Add generation behavior option to the option struct (fae0f2b34)&#13;
-- RAC3: Fix Speedups yaml description confusion (f2c5831c7)&#13;
-- RAC3: Add generation behavior to slot data (369f3bd23)&#13;
-- RAC3: fix starting item generation and UT support (2a057d369)&#13;
-- RAC3: Refactor functions to match generation order (af6463f6f)&#13;
-- RAC3: Add Errorless Generation Option (a08e296c0)&#13;
-- RAC3: Fix some linting warning (b35ad96c8)&#13;
-- RAC3: Bit Read/Write cleanup (88340f02c)&#13;
-- RAC3: Prevent out of logic weapon levelling (3b16802a1)&#13;
-- RAC3: naming cleanup (d7b34a210)&#13;
-- RAC3: Reword weapon level location skip comment (4a4fff2a5)&#13;
-- RAC3: Remove staged read helpers and make read functions read from cache before memory (3fb645d23)&#13;
-- RAC3: Use a better address for master plan location (8d6e4a082)&#13;
-- RAC3: Fix weapon level ups not accumulating from offline fillers (bd9aab347)&#13;
-- RAC3: Fix generic option group name (01b02ab05)&#13;
-- RAC3: Add more helpers to check write cache before memory (348f4933b)&#13;
-- RAC3: Fix collect locations (a5531b306)&#13;
-- RAC3: Fix update equip breaking due to batch write (91623a40c)&#13;
-- RAC3: fix batch writer not working (4fde34f55)&#13;
-- RAC3: Add squared distance to moby function (ff3c17f25)&#13;
-- RAC3: Variable client update rate command (ca73ae593)&#13;
-- RAC3: General Batching Overhaul (528a6f25d)&#13;
-- RAC3: Fix weapon mods not getting taken away (590043da8)&#13;
-- RAC3: Convert more stuff to batch writing (5c4eca9cd)&#13;
-- RAC3: Adding missing batch write to messagebox (811baefa1)&#13;
-- RAC3: convert some writes to batch writes (c06eac8bd)&#13;
-- RAC3: Fix not enough locations post generation due to UT failing (dea832ae3)&#13;
-- RAC3: Prevent duplicate mod items to ruin the unlock status value (910ca75c5)&#13;
-- RAC3: add SKIP address CHECKTYPE (1bde35f90)&#13;
-- RAC3: address convert cleanup (b83b4c789)&#13;
-- RAC3: one hp challenge property cleanup (d881ef5e7)&#13;
-- RAC3: float typing (020e96f58)&#13;
-- RAC3: Weapon Mod and Item Unlock Clean-up (02c1f83ae)&#13;
-- RAC3: Fix slot data checks (28668f50a)&#13;
-- RAC3: Formatting and Spelling (e3326adb5)&#13;
-- RAC3: Fix duplicate warning for vid comic health upgrades (8a29b9263)&#13;
-- RAC3: remove accents from code cave too (4795061d9)&#13;
-- RAC3: Refactor pause state to game state (ce04178f2)&#13;
-- RAC3: Remove unlock delay (7972b98d4)&#13;
-- RAC3: Remove wrench replacement if not unlocked (eeab2f7a4)&#13;
-- RAC3: Clarify weapon mods yasml option description (43a45a7e9)&#13;
-- RAC3: Mention weapon mods as a large item contributor (35080efad)&#13;
-- RAC3: Add weapon mods as AP items (b9c923499)&#13;
-- RAC3: Update comment and default values for weapon_level_options (ba1cd9c24)&#13;
-- RAC3: Rework weapon_level_options into OptionSet (1eb4cbc0b)&#13;
-- RAC3: Update pypine (f30d933c6)&#13;
-- RAC3: Formatting revision on the troubleshooting section (a7f8950f3)&#13;
-- RAC3: Refer to the new custom channel in the setup guide (b0219f651)&#13;
-- RAC3: Improve death count messaging (7cd0378ce)&#13;
-- RAC3: Add death count popup messages and a command for toggling it (d620b36c7)&#13;
-- RAC3: Force staging branch for vanilla changes documentation (91683ba1b)&#13;
-- RAC3: Fix changes link in FAQ (22622c79c)&#13;
-- RAC3: Update pypine (8433991e2)&#13;
-- RAC3: Auto equip charge boots when received (424fccd54)&#13;
-- RAC3: Reword the description for NGPlusStart (0ecbca0c7)&#13;
-- RAC3: Add more RAC5 versions to other ratchets (f678a6929)&#13;
-- RAC3: Add batch reads and writes to cycle benchmark stats (277f0acc8)&#13;
-- RAC3: Get rid of old pcsx2_interface (fdef65bc5)&#13;
-- RAC3: Add pypine as a submodule (d4f28ca34)&#13;
-- RAC3: Fix code cave start overlapping with something used on boot (67ed48337)&#13;
-- RAC3: JP: Fix address translation for progress flags (829fada6c)&#13;
-- RAC3: Rename skip_wait_save to skip_save_cooldown (76bc953f7)&#13;
-- RAC3: Make location checking skip the save wait time (f02d4a077)&#13;
-- RAC3: Make write vendor inventory use batching (1c1006ea6)&#13;
-- RAC3: Add batch functions to interfaces (8563d4240)&#13;
-- RAC3: Update pypine (a848b2f0f)&#13;
-- RAC3: add missing apostrophe (f5520ff1f)&#13;
-- RAC3: Change save cooldown to 1 minute instead of 3 seconds (1bf3fe1f3)&#13;
-- RAC3: Limit server side saving to once every 3 seconds (0878b0766)&#13;
-- RAC3: Make cycle update logging only appear if dev build (06ff04ea7)&#13;
-- RAC3: Fix load_level dev command not working properly with regions with spaces (104dd17a0)&#13;
-- RAC3: Remove the 255 cap on stored fillers (25a1f4af5)&#13;
-- RAC3: Move RYNO handling to rac3_interface.py (4a5e9a1b6)&#13;
-- RAC3: Update invalid planet homewarp check (e807e3f5a)&#13;
-- RAC3: Fix server saves (83c214ed7)&#13;
-- RAC3: Fix /ryno command (9a01e81d9)&#13;
-- RAC3: Fix Ship teleport on JP, fix server side save loading and fix assertion errors for PDA vendor distance (358913c4d)&#13;
-- RAC3: Add weapon level to save data (b509e61ab)&#13;
-- RAC3: Fix weapon level and exp getting reset when it shouldnt (5a81d3777)&#13;
-- RAC3: Formatting (936e8ad75)&#13;
-- RAC3: Add missing option to rac3 interface (25d3bb424)&#13;
-- RAC3: Add vid comic health upgrade locations and bonus health upgrade items (1d3883a68)&#13;
-- RAC3: Dont include Galaxy Burger if rangers missions are off (f3941f01c)&#13;
-- RAC3: Search for ratchet moby pointer if it is missing (f97410ab0)&#13;
-- RAC3: Add TODO about refractor skip (d1dcfd326)&#13;
-- RAC3: Adjust Aridia Mission 3 logic for long range weapons (a3b399e4f)&#13;
-- RAC3: Also force xp and level back to V1 for locked weapons (973aec734)&#13;
-- RAC3: Fix grammar (e1bd1852e)&#13;
-- RAC3: Explain why some refractor doors dont open with refractor skip (c4d1143cd)&#13;
-- RAC3: Fix typo in NGPlusItems (836d7a4aa)\n- ...and 388 more commits.&#13;
-&#13;
-&lt;/details&gt;&#13;
-&#13;
-**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.6.0...v0.6.1&#13;
-&#13;
-### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)&#13;
-&#13;
-### Notes&#13;
-This release was automatically generated from the **staging** branch.  &#13;
-Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.&#13;
-&#13;
-### If a location is broken and does not get sent out&#13;
-Go to the server console (locally or via the Archipelago room page) and run:  &#13;
-`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`&#13;
-</content>
-    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.6.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Kryen112/Viscera-Cleanup-Detail-AP/releases/tag/1.2.1</id>
     <title>Viscera Cleanup Detail v1.2.1</title>
@@ -679,6 +541,34 @@ No</content>
     <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.0"/>
   </entry>
   <entry>
+    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.1</id>
+    <title>Pokemon Black and White v0.4.1</title>
+    <updated>2026-10-13T16:00:43+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <content>## Changelog&#13;
+&#13;
+- Fixed equal minimum and maximum for catch rates rando failing generation&#13;
+- Fixed recursion errors with extended hints if `Consider trades` or `Consider evolutions` is included&#13;
+- Fixed a too restricted wild rando species pool not erroring as `OptionErrors`&#13;
+- Fixed bad content of the Dexsanitysanity options' location groups if that plugin is not installed&#13;
+- Fixed the `pokemon_master` goal not being shown in the Options Creator and in template yamls&#13;
+- Made `Stats Plando` error when more than 22 levelup moves are plando'd into a single species&#13;
+- Improved strictness of the `Follow evolutions` and `Force evolutions` modifiers in types rando&#13;
+- Fixed some evolved pokémon not getting any randomized levelup moves under certain circumstances&#13;
+- Fixed non-custom forms having empty randomized levelup and TM/HM movesets&#13;
+- Expanded all modifier-based options and combined goals&#13;
+  - Nested lists to pick a random value from&#13;
+  - `null` value to not pick a value inside a nested list&#13;
+  - Comma-separated strings for picking multiple values at once&#13;
+&#13;
+### Is this version compatible with older multiworld slots and save files?&#13;
+Yes, back to 0.4.0&#13;
+However, UT might be inaccurate in tracking worlds generated before this version</content>
+    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/Simsipelago/Archipelago/releases/tag/2.1.0-beta1</id>
     <title>The Sims 4 v2.0.99</title>
     <updated>2026-10-13T16:51:27+00:00</updated>
@@ -695,7 +585,7 @@ Please do report bugs and things, as we are confident that this new architecture
   </entry>
   <entry>
     <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r3</title>
+    <title>GTFO v0.0.4r2</title>
     <updated>2026-10-13T17:12:44+00:00</updated>
     <author>
       <name>RoboRyGuy</name>
@@ -823,7 +713,7 @@ This revision:&#13;
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H4</id>
-    <title>Deadlock v1.2.0r2</title>
+    <title>Deadlock v1.2.0r3</title>
     <updated>2026-10-14T07:02:34+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1457,7 +1347,7 @@ https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.1...AHT-v2.2.2</content
   </entry>
   <entry>
     <id>https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.3</id>
-    <title>Library of Ruina v1.0.0r3</title>
+    <title>Library of Ruina v1.0.0r2</title>
     <updated>2026-10-16T11:14:39+00:00</updated>
     <author>
       <name>LastPenguin</name>
@@ -1501,7 +1391,7 @@ https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.1...AHT-v2.2.2</content
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.13</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r4</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
     <updated>2026-10-16T17:49:45+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1739,5 +1629,55 @@ Fixed a bug where logic for raid/trade locations wasn't applying properly</conte
 &#13;
 _This release is backwards compatible down to 6.0.0._</content>
     <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H5</id>
+    <title>Deadlock v1.2.0r2</title>
+    <updated>2026-10-17T01:36:10+00:00</updated>
+    <author>
+      <name>ArchipelagoBrad</name>
+    </author>
+    <content># City Never Sleeps Update&#13;
+&#13;
+Added Baba, Rat King, Solomon (The pawns move first), Deadman Danny, and Violet &#13;
+Waiting on Nurse Harrow&#13;
+&#13;
+# Bug Fixes&#13;
+- Re-implemented Urn/Rift Fix (accidentally overrode it)&#13;
+</content>
+    <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.1.1</id>
+    <title>Spirit Valley v2.1.1</title>
+    <updated>2026-10-17T05:09:12+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- (APWorld) added warning in description of randomise_map YMAL option saying that generation will likely fail&#13;
+- (Client) made adding affection(either by item or through minigame) to a spirit send all obtained affection level locations for that spirit&#13;
+- (Client) made attempting to give a max affection spirit an affection item send all affection level locations &#13;
+&#13;
+&#13;
+V2.1.0 changelog&#13;
+- (APWorld) Redid rules to use Rule Builder allowing for "/explain" to be used in UT&#13;
+- (APworld) Fixed main/side mission battles being in logic when the associated mission isn't&#13;
+- (Client) fixed sending goal locations when server has client release disabled&#13;
+&#13;
+&#13;
+INSTALLATION INSTRUCTIONS:&#13;
+&#13;
+CLIENT:&#13;
+- Have Spirit Valley Installed&#13;
+- Download Spirit Valley Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Spirit Valley Archipelago Client V#.#.#.zip" to the directory where "SpiritValley.exe" is&#13;
+&#13;
+APWORLD (needed for generating archieplago game):&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Spirit Valley APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Spirit Valley APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recommended)Select "Generate Template Options" to generate default spirit valley YMAL</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.1.1"/>
   </entry>
 </feed>
