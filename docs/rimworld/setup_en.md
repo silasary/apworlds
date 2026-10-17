@@ -38,8 +38,6 @@
 5. Start a new game! If it's your first time connecting to this server, the main menu will prevent you from loading a game - this is mostly just a reminder that you should start a new game with every new server. Once you connect again during a later session, you can load normally from the main menu.
 
 ## Advanced Setup
-**HERE BE DRAGONS** - This is untested and may not work even after putting effort into it. I'm happy to help folks on the Archipelago After Dark Discord if you run into trouble, but the answer may be that it's too hard to make work for a while.
-
 This mod has been designed to attempt to support future expansions as well as mods. If mods don't mess with research, they should be simple enough to add alongside this mod. If you want to set up a multiworld that includes modded content, follow these steps:
 1. Set up a client with all the mods that will be used **by all RimWorld players** in the multiworld you're targeting. (If player A is using Vanilla Genetics Expanded and player B is using Dub's Bad Hygiene, the person doing setup needs both to perform this setup.)
 2. Open RimWorld, and DO NOT connect to an Archipelago server
@@ -47,7 +45,6 @@ This mod has been designed to attempt to support future expansions as well as mo
 4. Click the `Extract Ap Data` button. This wil export all of the game's data into a format that both the generator/server and the client can read. It will be saved in the user's AppData folder for RimWorld - the location will be printed, and there should be an "Open Folder" button to go directly there.
 5. Send the ArchipelagoItemDefs.xml file to all Rimworld players in this multiworld.
 6. All players must put this ArchipelagoItemDefs.xml file in their mod folder (`Rimworld/Mods/RimworldArchipelago/Defs`) - it will overwrite the existing xml file.
-7. Open the apworld file (it's a zip file - it can be opened with anything that can open a zip file.)
-8. Replace the `ArchipelagoItemDefs.xml` in the apworld with the new xml file.  Whoever generates the multiworld must replace this file as well, otherwise modded items and research will not appear in the multiworld as checks.
-9. If multiple people in the same multiworld are using different sets of mods, each player must exclude the items from the other mods from their yamls. (Soon, there will be a way to do this directly. As a workaround, you should be able to exclude the locations and items from other mods - you'll have to go digging through `ArchipelagoItemDefs.xml` to find them - it should include the source mod for all items.)
+7. Use the apworld file in the exported folder, which now contains all the information needed to generate a modded game.
+8. If multiple people in the same multiworld are using different sets of mods, each player must exclude the items from the other mods from their yamls. (Soon, there will be a way to do this directly. As a workaround, you should be able to exclude the locations and items from other mods - you'll have to go digging through `ArchipelagoItemDefs.xml` to find them - it should include the source mod for all items.)
 10. Cross your fingers and generate as normal! If it all works and we ever meet in person, you now owe me a drink. Enjoy whatever madness you have cooked up. Also, and I hope nobody has to hear this, but just in case... research and item names will be visible to other players.

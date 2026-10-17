@@ -43,6 +43,7 @@ you will send the check for that difficulty **and** the ones below as long as yo
 ## What items can appear in other worlds?
 Positive items include:
 - Each sport (Basketball, Volleyball, Dodgeball, Hockey)
+- Sports Mix OR the 4 Sports Crystals
 - Each cup for each sport OR Progressive Cup
 - Each court OR Progressive Court
 - Exhibition Difficulties
@@ -56,7 +57,6 @@ Negative items include:
 - Half your time!
 
 ## What isn't included yet?
-- Alternate Paths
 - Scoresanity
 
 ## Have any ideas?

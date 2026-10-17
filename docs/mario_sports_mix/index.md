@@ -6,7 +6,7 @@ land and conquer all the sports!
 
 
 ## Downloads
-- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v3.0.1/mario_sports_mix.apworld">Latest Version (3.0.1)</a>
+- <a href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/download/v3.1.0/mario_sports_mix.apworld">Latest Version (3.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -18,7 +18,5 @@ land and conquer all the sports!
 - <a href="setup_fr">French</a>
 
 ## Other Documentation files
-- <a href="Contributing">Contributing</a>
 - <a href="bugs_en">bugs_en</a>
 - <a href="bugs_fr">bugs_fr</a>
-- <a href="value_guide">value_guide</a>
