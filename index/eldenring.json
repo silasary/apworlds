@@ -1,0 +1,47 @@
+{
+  "authors": [
+    "Bedrock"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "EldenRing",
+  "github": "https://github.com/thefifthmatt/SoulsRandomizers/",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "eldenring-ap-0.1.1": {
+      "created_at": "2026-10-12T02:32:25Z",
+      "description": "[Setup guide](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_setup_guide.md>)\r\n[Game info](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_Elden_Ring.md>)\r\n\r\nThis version has minor fixes (see below), though it is still an **unstable alpha**. Avoid using it in runs with other people unless they are okay with these kinds of issues coming up.\r\n\r\nChanges\r\n- Changed dlc_timing option so the \"off\" option is now named \"mid\" and it prevents Pureblood Knight's Medal from being required before Altus Plateau. Note this will break yamls generated with the previous version, which can be fixed by changing off -> mid.\r\n- Prevent runes from showing up in shops.\r\n- Added an option to randomize the Flask of Wondrous Physick.\r\n- Friendlier option defaults and clearer descriptions in yaml.\r\n\r\nFixes\r\n- Fix softlocks where Ainsel River Main and Mohgwyn Palace were incorrectly assumed to be accessible under certain conditions. As a workaround, use a cheat tool to warp to locations in logic.\r\n- Mark DTS and Nameless White Mask drops as missable.\r\n- Increase deathlink cooldown from 10s to 30s to fix double sends.\r\n- Attempt to fix NG+ Trap items not changing enemy scaling without reloading.\r\n- Don't auto-hint remembrance shop items as the client did this regardless of whether they are visible or not.\r\n- Attempt at fixing \"badly_placed_prog\" error for solo gens.\r\n- Fix randomizer failures when high Great Rune requirements are set.\r\n\r\nFor credits and other information about this implementation, see [initial release notes for v0.1.0](https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.0).\r\n\r\n## This is an older version! Check out the [newest release](https://github.com/thefifthmatt/SoulsRandomizers/releases).",
+      "download_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.1/eldenring.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6b4201b502e707a16d6b0e40a99ef34afa653c07b386ebed2ca78763ba157b07",
+      "html_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 254560,
+      "source_url": "https://api.github.com/repos/thefifthmatt/SoulsRandomizers",
+      "tag": "eldenring-ap-0.1.1",
+      "title": "Elden Ring Archipelago Randomizer v0.1.1",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
+    },
+    "eldenring-ap-0.1.2": {
+      "created_at": "2026-10-16T04:05:23Z",
+      "description": "[Setup guide](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_setup_guide.md>)\r\n[Game info](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_Elden_Ring.md>)\r\n\r\nThis version has more minor fixes (see below), though it is still an **unstable alpha**. Avoid using it in runs with other people unless they are okay with these kinds of issues coming up.\r\n\r\nChanges\r\n- Allow enabling/disabling deathlink from client settings and include player name in the cause. Also save runes when receiving a deathlink, which can be an option in the future.\r\n- New priority location group for merchant items, with some balancing to avoid too many locations there, and spiritspring stones (requires them to be randomized).\r\n- New option to put whetblades at priority locations.\r\n- New option to merge all boss categories which is enabled by default.\r\n- Add DLC Overworld as a goal boss group and [document all goals](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_goal_bosses_guide.md>).\r\n\r\nFixes\r\n- Make spiritspring stones received from other worlds work correctly and add additional protections against broken has-item conditions.\r\n- Mark additional locations as missable and prevent currently missable bosses from being goals.\r\n- Make exclude_dungeon no longer exclude dungeon locations from priority, only the dungeon goal bosses. Use the dungeon exclude group in exclude_locations for that purpose.\r\n- Correctly place items from other worlds which are both progression and useful.\r\n- Handle dlc_starting_items not working if case doesn't match.\r\n\r\nKnown issues\r\n- Enabling DLC while excluding DLC locations doesn't work yet.\r\n- Sewer is assumed to be accessible without having the item to access it. Workaround: use `!getitem Sewer Lock`\r\n\r\n## eldenring.apworld and pre-generated yaml files are included in the zip file.",
+      "download_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.2/eldenring.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fc6dea276b402b5e8aee8c4fad1c750afddf41f37f61e19cb8a5090421097525",
+      "html_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 261643,
+      "source_url": "https://api.github.com/repos/thefifthmatt/SoulsRandomizers",
+      "tag": "eldenring-ap-0.1.2",
+      "title": "Elden Ring Archipelago Randomizer v0.1.2",
+      "version_simple": "0.1.2",
+      "world_version": "0.1.2"
+    }
+  }
+}
