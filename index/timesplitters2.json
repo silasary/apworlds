@@ -1,0 +1,47 @@
+{
+  "authors": [
+    "Str8UpWHITE64"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "TimeSplitters 2",
+  "github": "https://github.com/Str8UpWHITE64/TS2-AP",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "1.0.0": {
+      "created_at": "2026-10-08T19:19:31Z",
+      "description": "# TimeSplitters 2 (GameCube) Archipelago 1.0.0\r\n\r\nFirst release of the Archipelago randomizer for TimeSplitters 2 (GameCube, USA), played in Dolphin.\r\n\r\n**Playing the PC version too?** Its game is now `TimeSplitters 2 Redux`, in `ts2redux.apworld` (TS2Redux-AP 1.1.0). Its old 1.0.x apworld had this world's file name, so installing this one replaces it: install `ts2redux.apworld` as well to keep playing the PC game.\r\n\r\n## Features\r\n\r\n- **Everything is a check**: story mission clears on each difficulty, mission objectives, and Arcade League and Challenge trophies (Bronze to Platinum).\r\n- **Play the modes you want**: any mix of Story, Arcade League and Challenges. With Story, the goal is to clear Space Station once enough Time Crystals arrive; without it, the goal is a share of the trophies.\r\n- **Weapon Gating**: weapons are items, and a gun you have not received is taken away.\r\n- **Weapon Shuffle**: each weapon is replaced by another in the story, everywhere at once, by class, or only among a level's own guns. Mines only swap among themselves, and a shuffled-in gun's ammo scales to its own capacity.\r\n- **Skip Intro Cutscenes** (on by default): missions start straight away. The cutscenes still unlock in the gallery.\r\n- **DeathLink, traps and Health, Armor and Ammo Packs**, as in the PC version. Traps switch on a cheat (big heads, cloaked enemies and more) for 30 seconds in a story mission, one at a time.\r\n- **Mouse look built in**, including the turret and sentry views.\r\n- **One Launcher entry**: the client patches a copy of your disc, starts Dolphin, starts mouse look and connects.\r\n- **One profile per seed**: create a new profile for each seed and the client registers it, so progress from other profiles is never sent by mistake.\r\n\r\n## Requirements\r\n\r\n- Archipelago 0.6.4 or newer\r\n- Dolphin\r\n- Your own legally obtained copy of TimeSplitters 2 (USA) disc image (`GTSE4F`) as ISO, GCM or CISO. Convert RVZ to ISO in Dolphin first.\r\n- Windows for mouse look\r\n\r\n## Install\r\n\r\nDownload `timesplitters2.apworld` below and double-click it, or copy it into Archipelago's `custom_worlds` folder. Make your yaml with **Generate Template Options** in the Launcher, then open **TimeSplitters 2 Client** from the Launcher. It asks for Dolphin and your disc image the first time. See the README for the full walkthrough.\r\n\r\n## Notes\r\n\r\n- Create a new profile in the game for each seed.\r\n- Keep Dolphin cheat codes (Gecko / Action Replay) off for this game.\r\n- Dolphin's port 1 must be a Standard Controller for mouse look.\r\n- If the game or the client crashes, close both and start the client again.\r\n\r\n## Known issues\r\n\r\n- Unlocks show up the next time the game rebuilds a menu: back out of a menu and into it again if something you just received is not there yet.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/TS2-AP/releases/download/1.0.0/timesplitters2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a9e56407b273fce48b8f349af23982ec2c69b0e100f061fde83e89033e618319",
+      "html_url": "https://github.com/Str8UpWHITE64/TS2-AP/releases/tag/1.0.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 97382,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/TS2-AP",
+      "tag": "1.0.0",
+      "title": "TS2-AP v1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "1.0.1": {
+      "created_at": "2026-10-11T01:57:02Z",
+      "description": "# TimeSplitters 2 (GameCube) Archipelago 1.0.1\r\n\r\nMusic shuffle with your own songs, a launch window that shows its progress, an option to turn off weapon sway, and fixes for Weapon Shuffle's ammo and enemies.\r\n\r\n**Updating:** replace `timesplitters2.apworld` with this one and restart the Launcher. The client brings your patched disc copy up to date on its next launch. Seeds made with 1.0.0 keep working; the client notes the older seed format in its log and carries on.\r\n\r\n## New\r\n\r\n- **Music shuffle and your own songs.** New host.yaml options under `timesplitters2_options`:\r\n  - `music_shuffle`: `off`, `game_music` (the level and menu music shuffled), `game_and_custom` (your songs join the game's) or `custom_only` (your songs replace the game's).\r\n  - `music_folder`: a folder (or .zip) of your songs, in any common audio format.\r\n  - `music_seed`: 0 shuffles anew every launch; any other number keeps the same shuffle.\r\n  - `ffmpeg_path`: leave empty to find ffmpeg automatically.\r\n\r\n  Install ffmpeg first to use your own songs (Windows: `winget install Gyan.FFmpeg`, macOS: `brew install ffmpeg`), then restart the Launcher. Each song is converted once, matched to the game's loudness, and cached; a large folder takes a few minutes the first time only. Cutscene music is never changed, and songs in an `events` subfolder play on the win and lose results screens. The music is applied to the client's patched copy of your disc each launch and is fully undone by `off`. Your original disc is never touched.\r\n- **The client window opens straight away.** Preparing the disc copy (patching, and converting songs) now runs behind a progress bar instead of leaving a blank wait before the window appeared. Closing the window during preparation stops Dolphin from starting.\r\n- **New host.yaml options appear on first start.** You no longer need to open and close the client once after updating.\r\n- **New yaml option `disable_weapon_sway`.** Turns off the slow drift of your view and gun, both standing still and while moving, like the PC Redux's Disable Breathing. Recoil when firing is unchanged. Off by default. The client updates your patched disc copy for this on its next launch.\r\n\r\n## Changed\r\n\r\n- **The Invisible Enemies Trap is gone.** The game only cloaks a character as it spawns and never uncloaks it, so the timed trap showed nothing, or left enemies that spawned during it invisible for the rest of the level. New seeds no longer roll it, and a seed made before this update that still sends it just skips it. The Fat Enemies Trap works as it is.\r\n\r\n## Fixed\r\n\r\n- `/launch` keeps track of the Dolphin it starts, so closing the client closes it.\r\n- **Enemies use a shuffled gun as the gun they hold.** With Weapon Shuffle on, some enemy behaviour stayed with the gun a weapon replaced: a soldier handed a Flamethrower still kept to rifle range, and a gun in the Sniper Rifle's place was fired from sniper distance. Enemies now close in with a Flamethrower, keep their distance with a rifle, and aim and use secondary fire to suit the gun they actually carry. The client updates your patched disc copy for this on its next launch.\r\n- **A shuffled gun's pickups are sized for it.** With Weapon Shuffle on, a gun pickup or ammo box now gives the same share of the new gun's maximum that it gave of the old gun's: a Minigun in a pistol's place gets a proper Minigun load, and a pistol in the Minigun's place no longer comes away with a handful of rounds. Switching weapons no longer adds or loses ammo. The client updates your patched disc copy for this on its next launch.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/TS2-AP/releases/download/1.0.1/timesplitters2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8241d9bef8ae00af476a4ac915586c697bd45aa5dfb9400e8f8e1c8ada44d811",
+      "html_url": "https://github.com/Str8UpWHITE64/TS2-AP/releases/tag/1.0.1",
+      "minimum_ap_version": "0.6.4",
+      "size": 115776,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/TS2-AP",
+      "tag": "1.0.1",
+      "title": "TS2-AP v1.0.1",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
+    }
+  }
+}
