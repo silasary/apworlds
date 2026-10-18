@@ -1,9 +1,12 @@
 # Grand Theft Auto Vice City
 
 ## Latest
-- <a href="https://github.com/Kryen112/GTA-Vice-City-AP/releases/download/2.1.1/gta_vice_city.apworld">Latest Version (2.1.1)</a>
+- <a href="https://github.com/Kryen112/GTA-Vice-City-AP/releases/download/2.1.2/gta_vice_city.apworld">Latest Version (2.1.2)</a>
 
 ## All Versions
+
+#### v2.1.2
+- <a href="https://github.com/Kryen112/GTA-Vice-City-AP/releases/download/2.1.2/gta_vice_city.apworld">https://github.com/Kryen112/GTA-Vice-City-AP/releases/download/2.1.2/gta_vice_city.apworld</a>
 
 #### v2.1.1
 - <a href="https://github.com/Kryen112/GTA-Vice-City-AP/releases/download/2.1.1/gta_vice_city.apworld">https://github.com/Kryen112/GTA-Vice-City-AP/releases/download/2.1.1/gta_vice_city.apworld</a>

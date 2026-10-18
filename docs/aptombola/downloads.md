@@ -1,9 +1,12 @@
 # AP Tombola
 
 ## Latest
-- <a href="https://github.com/Arenes214/APWorld-Tombola/releases/download/0.3/aptombola.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/Arenes214/APWorld-Tombola/releases/download/0.4-RC/aptombola.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/Arenes214/APWorld-Tombola/releases/download/0.4-RC/aptombola.apworld">https://github.com/Arenes214/APWorld-Tombola/releases/download/0.4-RC/aptombola.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/Arenes214/APWorld-Tombola/releases/download/0.3/aptombola.apworld">https://github.com/Arenes214/APWorld-Tombola/releases/download/0.3/aptombola.apworld</a>
