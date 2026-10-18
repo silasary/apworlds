@@ -132,6 +132,21 @@
       "version_simple": "0.11.2",
       "world_version": "0.11.2"
     },
+    "slotlockv0.11.3": {
+      "created_at": "2026-10-17T23:29:34Z",
+      "description": "## What's Changed\r\n* minor client fixes by @Enderdraak in https://github.com/gjgfuj/SlotLock/pull/5\r\n   * [SlotLock Client]Make the entire tree be put in a single message.\r\n      * This makes copying easier.\r\n\r\n   * [SlotLock Client] Added cleaner error message when client can not find any dependencies.\r\n   * [SlotLock Client]\u00a0\u00a0 In a game shares the item ID with a SlotLock item ID. And the other gams Item was hinted. It will now no longer show up as Slot.\r\n   * [SlotLock Client]\u00a0 Changed Slotlock to SlotLock in the client name. As most places use SlotLock. You might want to change it back.\r\n   *\u00a0[SlotLock Client] Compresses the whole tree down to only show a Slots full list of unlocks only once. Made it go down from mb's to kb's on a multiworld of 300 worlds with 2 unlocks each.)\r\n   *\u00a0[SlotLock Client] added number to show how many slots are unlocked by the slot (even if the slots are not shown at that place).\r\n   *\u00a0[SlotLock Client] aligned all the lines to have the same number of characters.\r\n\r\n* [SlotLock] Added check to ensure that if all worlds are locked, and there is no free items in slotlock, it will error out immediately with a nice error message.\r\n* [SlotLock] Fixed issue where linear fill would only consider the first copy of a progression item with multiple copies. Also fixed an issue where the priority part of linear fill would include deprioritized progression items.\r\n\r\n**Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.11.2...slotlockv0.11.3",
+      "download_url": "https://github.com/gjgfuj/SlotLock/releases/download/slotlockv0.11.3/slotlock.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e7abd7c091169d44d8af5050076d09a0f07d7e8ab1ae6c3e5b5d6b64427d8a39",
+      "html_url": "https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.3",
+      "minimum_ap_version": "0.6.4",
+      "size": 129242,
+      "source_url": "https://api.github.com/repos/gjgfuj/SlotLock",
+      "tag": "slotlockv0.11.3",
+      "title": "Slotlock v0.11.3",
+      "version_simple": "0.11.3",
+      "world_version": "0.11.3"
+    },
     "slotlockv0.3.0": {
       "created_at": "2024-12-18T02:29:23Z",
       "description": "Initial github release\r\nFeatures a client to connect with that will unlock the starting items when given, instead of push_precollected \r\nThis is better for a variety of reasons:\r\n- makes it work with games like Super Metroid, which don't respect push_precollected from outside them.\r\n- Provides hint points to the slotlock slot.\r\n- Adds a goal condition, being unlocking every slot in the multiworld.\r\n",
