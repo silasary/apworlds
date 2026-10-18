@@ -30,6 +30,8 @@ Location checks that remove an item from the player's inventory that could be us
 
 - Giving the exposed paper to Lyle or developing it in Lyle's darkroom will not remove it from the player's inventory.
 
+- Picking up a painting in Fred's dark room will not add or remove pre-existing paintings/the canvas bag from the player's inventory.
+
 All offering location checks will only allow the player to take the actions that would result in a correct offering. The player is prevented from exposing the photo paper to anything but the negative disc, recording any footage except for the channel that mutated cinnamon, or picking up any painting but the correct one.
 
 Any recruitment or location checks that depend on reaching a certain disposition with a character or are missable with the wrong dialogue have been adjusted.

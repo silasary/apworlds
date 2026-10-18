@@ -54,7 +54,7 @@ If this option is selected, then locations will be rewarded for defeating the fi
 
 If this option is selected, then locations will be rewarded for defeating the five boss shades on each floor that spawn on high danger levels, as well as venturing into the secret room under the stairs and defeating the Spider, and defeating the Crawling Shade enemy that chases the player in the corridor before they meet the Spider.
 
-### Include Mask Locations
+### Include Mask Offering Locations
 
 This controls whether locations in areas specific to the Mask ending are randomized: Glitch world, the entirety of floor 4, the basement pit, and the landlord's hidden room.
 
@@ -62,9 +62,13 @@ This controls whether locations in areas specific to the Mask ending are randomi
 
 This controls whether locations in areas specific to the roommate's sidequests are randomized. This includes: Hellen's plant watering quest, Leigh's cell phone quest, and Dan's NeoDuo quest.
 
-### Include Game Skills
+### Randomize Video Game Skill Rewards
 
 If enabled, the skills rewarded for completing video games will be randomized, and a location will be granted after playing each video game at least once. If disabled, each game skill will be rewarded after only one play of its respective video game.
+
+### Floor-by-Floor Elevator Access
+
+If enabled, the option to use the elevator will be granted to players one floor at a time rather than all at once. The elevator will always have the option to return to floor 3.
 
 ### Starting Games
 
@@ -88,7 +92,7 @@ Picks what name the Rat Baby party member will have. The player will not get the
 
 ### Allow Killing Shopkeepers
 
-If this is enabled, then the player will be able to kill Mutt and Eugene whenever they want to steal their stock. If this is disabled, the option to attack them will disabled in-game. Nestor is still attackable when killing Eugene, but Eugene will survive the encounter.
+If this is enabled, then the player will be able to kill Mutt and Eugene whenever they want to steal their stock. If this is disabled, the option to attack them will disabled in-game. Nestor is still attackable when posessing Eugene, but Eugene will survive the encounter.
 
 ### Randomize Door Encounters
 
@@ -189,7 +193,7 @@ Note: if you're having trouble getting the game to patch, ensure that your clean
 
 This mod can also be installed without RPGModder
 
-1. Unzip `LOAPClient.zip`. You should have a folder titled `Look Outside`
+1. Unzip `LOAPClient.zip`. You should have a folder titled `Look Outside` (if not, then you can rename this folder to `Look Outside`)
 2. Drag this folder over your Look Outside installation. This can be found at `\SteamLibrary\steamapps\common\Look Outside`
 3. Add this text to the second to last line on the bottom of `\SteamLibrary\steamapps\common\Look Outside\js\plugins.js:`
     - It should be placed after everything in that file except for the `];` denoting the end of the object.

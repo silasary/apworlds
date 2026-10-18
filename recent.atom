@@ -2,397 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-18T00:22:38.430244+00:00</updated>
+  <updated>2026-10-18T06:18:21.660408+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.0</id>
-    <title>Pokemon Black and White v0.4.0</title>
-    <updated>2026-10-13T16:00:43+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <content>## Changelog&#13;
-&#13;
-### Content and QoL&#13;
-&#13;
-- Added `Modify Levels` option (expanded from v0.3.99 pre-release)&#13;
-  - Simple method&#13;
-    - Encounter types: `Trainer`, `Wild`&#13;
-    - Modes: `Multiply`, `Add`, `Power`&#13;
-  - Advanced method&#13;
-    - Same as simple, but accepts multiple chained calculations&#13;
-- Added `Funny Dialog` and `Text Plando` options&#13;
-  - Both options require the text plando setting in the host yaml to be enabled&#13;
-  - Added a setting to enable text extraction upon running a patch file&#13;
-- Added plando mode to `Dexsanity` option&#13;
-- Added more modifiers for `Randomize Wild Pokémon`:&#13;
-  - `Prevent overpowered pokemon`&#13;
-    - Adjustable threshold (`Overpowered threshold` in `Pokémon Randomization Adjustments`)&#13;
-  - `Prevent bad early pokemon`&#13;
-    - Prevents Wonder Guard and fixed HP attacks before Castelia City&#13;
-  - `Dungeon 1 to 1`&#13;
-    - Same as `Area 1 to 1`, but also merges slots across areas of the same dungeon&#13;
-  - `Global 1 to 1`&#13;
-    - Same as `Area 1 to 1`, but merges slots across all areas&#13;
-- Added more modifiers for `Randomize Trainer Pokémon`:&#13;
-  - `Prevent overpowered pokemon`&#13;
-    - Adjustable threshold (`Overpowered threshold` in `Pokémon Randomization Adjustments`)&#13;
-  - `Evolve when possible`&#13;
-  - `Force fully evolved`&#13;
-    - Adjustable threshold (`Force threshold` in `Pokémon Randomization Adjustments`)&#13;
-  - `Force not underpowered`&#13;
-    - Adjustable thresholds (`Force threshold` and `Underpowered threshold` in `Pokémon Randomization Adjustments`)&#13;
-  - `Type themed`&#13;
-  - `Themed gym trainers`&#13;
-  - `Shuffle gym leader types`&#13;
-    - Gym leaders now always have vanilla-type themed teams by default&#13;
-  - `Rivals keep starter`&#13;
-    - They also always evolve when possible&#13;
-  - `Exclude boss trainers`&#13;
-- Added `Wild Randomization Blacklist` and `Trainer Randomization Blacklist` options&#13;
-  - The wild blacklist might not prevent some pokémon for various reasons (including other options)&#13;
-  - Ignored by `Encounter Plando`&#13;
-- Added more preset choices to `Modify Encounter Rates`:&#13;
-  - `One per method`&#13;
-  - `Dexsanity friendly`&#13;
-- Added `Randomize Base Stats` option with the following modifiers:&#13;
-  - `Randomize`&#13;
-  - `Random total`&#13;
-  - `Follow evolutions`&#13;
-- Added `Randomize Evolutions` option with the following modifiers:&#13;
-  - `Randomize`&#13;
-  - `Random methods`&#13;
-  - `Common type`&#13;
-  - `Follow type`&#13;
-  - `Multiple pre-evolutions`&#13;
-  - `More or less branches`&#13;
-  - `Looping evolution lines`&#13;
-  - `Every level`&#13;
-  - `Pair stats`&#13;
-  - `Pair 50 50`&#13;
-  - `Increasing stats`&#13;
-- Added `Randomize Types` option with the following modifiers:&#13;
-  - `Shuffle`&#13;
-  - `Randomize`&#13;
-  - `Mono only`&#13;
-  - `Dual only`&#13;
-  - `Follow evolutions`&#13;
-  - `Force evolutions`&#13;
-  - `Usual combinations`&#13;
-- Added `Randomize Level Up Movesets` option with the following modifiers:&#13;
-  - `Randomize`&#13;
-  - `Match types`&#13;
-  - `Progressive power`&#13;
-  - `Keep levels and amount`&#13;
-  - `Follow evolutions`&#13;
-  - `Start with 4`&#13;
-- Added `Randomize TM/HM Compatibility` option with the following modifiers:&#13;
-  - `Force all TMs`&#13;
-  - `Force all HMs`&#13;
-  - `Randomize`&#13;
-  - `Match types`&#13;
-  - `Follow evolutions`&#13;
-- Added `Randomize Catch Rates` option with the following modifiers:&#13;
-  - `Shuffle`&#13;
-  - `Randomize`&#13;
-  - `Follow evolutions`&#13;
-  - `Correlate with base stats`&#13;
-- Added `Randomize Egg Groups` option with the following modifiers:&#13;
-  - `Randomize`&#13;
-  - `Mono only`&#13;
-  - `Dual only`&#13;
-  - `Correlate with types`&#13;
-  - `Follow evolutions`&#13;
-  - `Allow baby stages`&#13;
-  - `Allow custom groups`&#13;
-- Added `Randomize Egg Species` option with the following modifiers:&#13;
-  - `Fix evolutions`&#13;
-  - `Randomize`&#13;
-  - `Base stages only`&#13;
-  - `Common type`&#13;
-  - `Follow evolutions`&#13;
-- Added `Stats Randomization Adjustments` option, currently with the following parameters:&#13;
-  - `Stats total minimum`&#13;
-  - `Stats total maximum`&#13;
-  - `Level up evo weight`&#13;
-  - `Maximum evo level`&#13;
-  - `Catch rates minimum`&#13;
-  - `Catch rates maximum`&#13;
-  - `Levelup moves amount minimum`&#13;
-  - `Levelup moves amount maximum`&#13;
-- Added `Stats Plando` option, currently with the following keys for every species:&#13;
-  - `base_hp`&#13;
-  - `base_attack`&#13;
-  - `base_defense`&#13;
-  - `base_sp_attack`&#13;
-  - `base_sp_defense`&#13;
-  - `base_speed`&#13;
-  - `catch_rates`&#13;
-  - `evolutions`&#13;
-  - `override_evolutions`&#13;
-  - `levelup_moveset`&#13;
-  - `override_levelup_moveset`&#13;
-  - `types`&#13;
-  - `egg_groups`&#13;
-  - `egg_species`&#13;
-- Added `Replace Evolution Methods` option with the following modifiers:&#13;
-  - `Locations`&#13;
-  - `Friendship`&#13;
-  - `PID`&#13;
-  - `Stats`&#13;
-- Added a few (new and returning) locations:&#13;
-  - `Nuvema Town - Item #2 from Mom`&#13;
-  - `P2 Laboratory - Item from scientist #1` (and `#2`)&#13;
-  - `Castelia City - Item from harlequin in Studio Castelia` (now requesting a fixed type)&#13;
-  - `Royal Unova - Item for defeating every trainer` (now time independent)&#13;
-  - `Driftveil City - Item from lady asking for a pokémon knowing a certain TM move` (now requesting a fixed TM move)&#13;
-  - `Lacunosa Town - Item from girl for showing a Shaymin`&#13;
-  - `Village Bridge - Item from fisherman for showing a certain pokémon caught today #1` (+ `#2`, `#3`, `#4`, and `#5`) (now requesting a fixed pokémon)&#13;
-- Added combined goals&#13;
-- Added `Filler Items Blacklist` option&#13;
-- Added `Randomize Move Data` option with the following modifiers:&#13;
-  - `Shuffle power`&#13;
-  - `Randomize power`&#13;
-  - `Randomize type`&#13;
-  - `Shuffle accuracy`&#13;
-  - `Randomize accuracy`&#13;
-  - `Randomize category`&#13;
-  - `Shuffle PP`&#13;
-  - `Randomize PP`&#13;
-  - `Correlate power and PP`&#13;
-  - `Correlate power and accuracy`&#13;
-  - `Correlate PP and accuracy`&#13;
-- Added `Randomize Type Chart` option with the following modifiers:&#13;
-  - `Shuffle`&#13;
-  - `Randomize`&#13;
-  - `Disable weaknesses`&#13;
-  - `Disable resistances`&#13;
-  - `Disable immunities`&#13;
-- Added `Move Data Randomization Adjustments` option, currently with the following parameters:&#13;
-  - `Move power minimum`&#13;
-  - `Move power maximum`&#13;
-  - `Accuracy minimum`&#13;
-  - `Accuracy maximum`&#13;
-  - `PP minimum`&#13;
-  - `PP maximum`&#13;
-  - `Normal type probability`&#13;
-- Added `Move Data Plando` option, currently with the following possible entries:&#13;
-  - Move data, currently with the following keys for every move:&#13;
-    - `power`&#13;
-    - `type`&#13;
-    - `accuracy`&#13;
-    - `category`&#13;
-    - `pp`&#13;
-  - Type effectiveness, currently only with the `effectiveness` key for every type combination&#13;
-- Added multiple Dexsanity variants:&#13;
-  - `Dexcountsanity` with the `Maximum`, `Steps`, and `Leniency` keys&#13;
-  - `Seensanity`&#13;
-    - Contains plando capabilities like `Dexsanity`&#13;
-    - Limits the effect of `All Pokémon Seen`&#13;
-  - `Seencountsanity`&#13;
-    - Works like `Dexcountsanity`&#13;
-    - Disables `All Pokémon Seen` entirely&#13;
-    - Requires the `Dexsanitysanity` plugin&#13;
-  - `Formsanity`&#13;
-    - Contains plando capabilities similar `Dexsanity`&#13;
-    - Limits the effect of `All Pokémon Seen`&#13;
-  - `Formcountsanity`&#13;
-    - Works like `Dexcountsanity`&#13;
-    - Limits the effect of `All Pokémon Seen`&#13;
-    - Requires the `Dexsanitysanity` plugin&#13;
-  - `Shinysanity`&#13;
-    - It shows as a toggle in the Options Creator and on Webhost, but can be edited manually to work like `Dexsanity`&#13;
-    - Contains plando capabilities like `Dexsanity`&#13;
-  - `Shinycountsanity`&#13;
-    - It shows as a toggle in the Options Creator and on Webhost, but can be edited manually to work like `Dexcountsanity`&#13;
-    - Requires the `Dexsanitysanity` plugin&#13;
-  - `Shinyformsanity`&#13;
-    - It shows as a toggle in the Options Creator and on Webhost, but can be edited manually to work like `Formsanity`&#13;
-    - Contains plando capabilities like `Formsanity`&#13;
-    - Requires the `Dexsanitysanity` plugin&#13;
-  - `Shinyformcountsanity`&#13;
-    - It shows as a toggle in the Options Creator and on Webhost, but can be edited manually to work like `Dexcountsanity`&#13;
-    - Requires the `Dexsanitysanity` plugin&#13;
-- Added an ingame option to change the shiny rate&#13;
-  - Possible values are 0 (never) to 65535 (almost guaranteed), with 8 being the vanilla value&#13;
-  - Only appears when any `Shinysanity` variant is enabled, in that case it's set to 1/64 by default&#13;
-- Added `Wild by spheres`, `Trainers by spheres`, and multiple `Tolerance X` modifiers to `Adjust levels`&#13;
-  - Also renamed `Wild` and `Trainers` to `Wild by distance` and `Trainers by distance` (respectively)&#13;
-- Added and changed some roadblocks:&#13;
-  - The grunts in Pinwheel Forest now also disappear after defeating Lenora&#13;
-  - The sand in the lower room in Relic Castle now gets whirled up by showing a `Silver Wing` to a worker NPC&#13;
-  - A line of dancing men is now blocking the gate between Black City/White Forest and Route 14 until you obtain a `GB Sounds`&#13;
-  - A line of Wingull now blocks a part of the shore of Route 13, thereby requiring you to surf around them&#13;
-- Added a portable AP menu that can be accessed by pressing the Start button, with the following content:&#13;
-  - Portable PC&#13;
-  - AP stuff (moved here from PC)&#13;
-  - APhone&#13;
-    - For now only to be able to call the Season Lady&#13;
-- Added an NPC in Castelia City's central plaza that confirms the legendary hunt goal, similar to the TM/HM hunt NPC&#13;
-- Added dynamic version selection&#13;
-- Added optional rebattling regular trainers by talking to them again&#13;
-- Added Repel re-use prompt (Credits to OnlySpaghettiCode and RadisNoir)&#13;
-- Added `Randomize Starter Pokémon` option with the following modifiers:&#13;
-  - `Randomize`&#13;
-  - `Any base`&#13;
-  - `Base with 2 evolutions`&#13;
-  - `Only official starters`&#13;
-  - `Similar base stats`&#13;
-  - `Type variety`&#13;
-  - `Vanilla types`&#13;
-- Added `Randomize Static Pokémon` option with the following modifiers:&#13;
-  - `Randomize`&#13;
-  - `Similar base stats`&#13;
-  - `No legendaries`&#13;
-  - `Split statues`&#13;
-  - `Split mimics`&#13;
-- Added `Randomize Gift Pokémon` option with the following modifiers:&#13;
-  - `Randomize`&#13;
-  - `Similar base stats`&#13;
-  - `Any base`&#13;
-  - `No legendaries`&#13;
-  - `Split monkeys`&#13;
-- Added `Randomize Legendary Pokémon` option with the following modifiers:&#13;
-  - `Randomize`&#13;
-  - `Keep legendary`&#13;
-  - `No legendaries`&#13;
-  - `Similar base stats`&#13;
-  - `Same type`&#13;
-&#13;
-### Bug fixes and technical stuff&#13;
-&#13;
-- Added a location group for season-dependant item locations&#13;
-- Added an item group for fossils and another one for TMs and HMs combined&#13;
-- Added glitched logic in UT for `Require Dowsing Machine` and `Require Flash` logic modifiers&#13;
-- Changed some locations' names&#13;
-- Added a missing hidden item location in Chargestone Cave B2F&#13;
-- Fixed "Striaton City - TM from Fennel" falsely not being able to contain an HM with certain options&#13;
-- Reduced frequency of different forms of the same pokémon in randomization&#13;
-- Wrote down levelup moveset data&#13;
-- Fixed small error with encounter plando&#13;
-- Tweaked many option descriptions&#13;
-- Made wild randomization not having to ensure 115 different obtainable pokémon if `All Pokémon Seen` is enabled&#13;
-- Made the Gracidea also accept non-event Shaymins (+ updated logic accordingly)&#13;
-- Fixed logic of move evolutions&#13;
-- Wrote down move IDs&#13;
-- Enhanced spoiler output by reworking wild, adding trainers + newly randomizable stuff, and organizing evolutions&#13;
-  - Also added setting to disable most of the data being written, in order to reduce the default spoiler log size&#13;
-- Fixed legendary hunt flags being reset after defeating Ghetsis/Alder and resetting statics&#13;
-- Fixed `Moor of Icirrus - Hidden item behind boulder (Spring/Summer/Autumn)` not showing up on the UT map tracker&#13;
-- Added option groups&#13;
-- Made the NPC next to the Pokémon Center in Accumula Town tell some information about the world&#13;
-- Merged both Aha quiz locations into one&#13;
-- Randomizing or plandoing evolutions will make all species of an evolution line have the same experience curve&#13;
-- Filled trainer names and regions&#13;
-- Fixed incorrect logic of multiple locations related to Moor of Icirrus&#13;
-- Reworked all regions and their logic and added story events to logic&#13;
-  - This includes some smaller ROM changes&#13;
-- Fully integrated arm7 expansion and deprecated the testing setting&#13;
-- Fixed evolution-related rules not being modifiable by Plugins&#13;
-- Changed rules dict to being filled on the way&#13;
-- Reworked wild and trainer pokemon randomization&#13;
-  - This also fixes a bug where `Area 1 to 1` and `Prevent rare encounters` had a conflict&#13;
-- Made all fly flags being automatically set upon entering the city&#13;
-  - This also fixes potentially getting locked out of the Driftveil City fly flag&#13;
-- Re-added forgettable HMs&#13;
-- Added static pointers for game data in RAM&#13;
-- Prevented plugin options and text plando from being put onto the multiserver&#13;
-- Added logic for seen trainer pokémon&#13;
-- Made Post-Ghetsis locations be automatically excluded if the goal is `Ghetsis`&#13;
-  - The `Post-Ghetsis locations` group is now empty due to that, but not removed in order to not break older yamls&#13;
-- Added scripting system&#13;
-  - Moved most client setup to the init script as a part of that&#13;
-- Added remaining gym leader flags to the tracker events bitmap&#13;
-- Fixed BizHawk 2.11 compatibility by padding the ROM size to a power of 2&#13;
-- Added support for poptracker co-op&#13;
-- Fixed Dexsanity checks not sending out if checked while disconnected form the server&#13;
-- Choosing the ROM now gets prompted again if the chosen ROM is incompatible&#13;
-- Removed God Stone form the useless key items pool as it is only shown as `???` ingame&#13;
-  - It can still be given via console commands&#13;
-- Tweaked most of the Master Ball sellers to let you buy/obtain multiple Master Balls at once&#13;
-- Added `Max out` and `Reset` as choices for the ingame exp. multiplier&#13;
-- Added new entries for maps in UT&#13;
-- Proper handling for putting certain progression items into `Start Inventory From Pool`&#13;
-- Fixed the dynamic field items in White Forest giving `AP Items` without being a check&#13;
-- Renamed the `PC` modifier in `Master Ball Seller` to `AP Menu`&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-No</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.1</id>
-    <title>Pokemon Black and White v0.4.1</title>
-    <updated>2026-10-13T16:00:43+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <content>## Changelog&#13;
-&#13;
-- Fixed equal minimum and maximum for catch rates rando failing generation&#13;
-- Fixed recursion errors with extended hints if `Consider trades` or `Consider evolutions` is included&#13;
-- Fixed a too restricted wild rando species pool not erroring as `OptionErrors`&#13;
-- Fixed bad content of the Dexsanitysanity options' location groups if that plugin is not installed&#13;
-- Fixed the `pokemon_master` goal not being shown in the Options Creator and in template yamls&#13;
-- Made `Stats Plando` error when more than 22 levelup moves are plando'd into a single species&#13;
-- Improved strictness of the `Follow evolutions` and `Force evolutions` modifiers in types rando&#13;
-- Fixed some evolved pokémon not getting any randomized levelup moves under certain circumstances&#13;
-- Fixed non-custom forms having empty randomized levelup and TM/HM movesets&#13;
-- Expanded all modifier-based options and combined goals&#13;
-  - Nested lists to pick a random value from&#13;
-  - `null` value to not pick a value inside a nested list&#13;
-  - Comma-separated strings for picking multiple values at once&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.4.0&#13;
-However, UT might be inaccurate in tracking worlds generated before this version</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Simsipelago/Archipelago/releases/tag/2.1.0-beta1</id>
-    <title>The Sims 4 v2.0.99</title>
-    <updated>2026-10-13T16:51:27+00:00</updated>
-    <author>
-      <name>Simsipelago</name>
-    </author>
-    <content>This release is the long awaited rule builder refactor. It doesn't contain any other things and the latest version of the sims mod still works on this apworld, but past generations are not likely to be compatible with this version of the apworld. We're releasing this as a beta to gather feedback and ensure that the logic changes aren't super big, but the apworld does now require a minimum of 0.6.7 in order to function. &#13;
-&#13;
-Please do report bugs and things, as we are confident that this new architecture will resolve loads of logic bugs, but the process to get there might be a little bumpy. &#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/Simsipelago/Archipelago/compare/2.0.1...2.1.0-beta1</content>
-    <link href="https://github.com/Simsipelago/Archipelago/releases/tag/2.1.0-beta1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1</id>
-    <title>GTFO v0.0.4r3</title>
-    <updated>2026-10-13T17:12:44+00:00</updated>
-    <author>
-      <name>RoboRyGuy</name>
-    </author>
-    <content>Hotfix for version 0.1.0. Fixed the `RundownTierRandom` progressive ordering option.</content>
-    <link href="https://github.com/RoboRyGuy/Archipelago-GTFO/releases/tag/0.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0b</id>
-    <title>Refunct v1.8.0b0</title>
-    <updated>2026-10-13T19:19:14+00:00</updated>
-    <author>
-      <name>Spineraks</name>
-    </author>
-    <content>⚠️ Same apworld and yaml as 1.8.0, this is a small mod update &amp; upgrade only ⚠️ &#13;
-- Added nametags in multiplayer! (you can turn them off/on in settings) @nielrenned&#13;
-- Remove multiplayer collision near the spawn to avoid getting stuck @nielrenned&#13;
-- Fix mod launch issue if somehow Refunct has multiple processes in Windows @nepcore&#13;
-&#13;
-- &lt;sub&gt; I changed the version number from v1.8.0a to v1.8.0b which might not sound like much and it indeed is not much @spinerak &#13;
-&#13;
-&lt;3</content>
-    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0b"/>
-  </entry>
   <entry>
     <id>https://github.com/jamesbrq/ArchipelagoTTYD/releases/tag/v0.14.1</id>
     <title>Paper Mario The Thousand Year Door v0.14.1</title>
@@ -496,7 +110,7 @@ This revision:&#13;
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H4</id>
-    <title>Deadlock v1.2.0r2</title>
+    <title>Deadlock v1.2.0r3</title>
     <updated>2026-10-14T07:02:34+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1130,7 +744,7 @@ https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.1...AHT-v2.2.2</content
   </entry>
   <entry>
     <id>https://github.com/Az-LastPenguin/LORAP/releases/tag/v1.0.0-eta.3</id>
-    <title>Library of Ruina v1.0.0r3</title>
+    <title>Library of Ruina v1.0.0r2</title>
     <updated>2026-10-16T11:14:39+00:00</updated>
     <author>
       <name>LastPenguin</name>
@@ -1174,7 +788,7 @@ https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.1...AHT-v2.2.2</content
   </entry>
   <entry>
     <id>https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/tag/v1.0.13</id>
-    <title>PAYDAY 2: Criminal Dawn v1.0.4r4</title>
+    <title>PAYDAY 2: Criminal Dawn v1.0.4r2</title>
     <updated>2026-10-16T17:49:45+00:00</updated>
     <author>
       <name>C@:\EM1NAL\</name>
@@ -1356,6 +970,34 @@ You can consider this implementation out of beta, as the APWorld has also proven
     <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.6"/>
   </entry>
   <entry>
+    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.7</id>
+    <title>The Legend of Zelda - Oracle of Seasons v25.0.7</title>
+    <updated>2026-10-16T19:42:07+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>## 🗳️ New Options&#13;
+- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
+- Freestanding items can now be removed from the randomizable item pool&#13;
+- The trade sequence can also separately be removed, excluding the pedestal&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+- Made Blaino reequip items after the match&#13;
+  - It is also no longer possible to open the ring menu during the match&#13;
+&#13;
+## 🧠 Logic&#13;
+- Added the jump between market and forge with just a feather and pegs in hard&#13;
+- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+- Fixed D2's boss room having holes if Digdogger was the boss&#13;
+- Fixed Gleeok freezing when being beaten in D3</content>
+    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.7"/>
+  </entry>
+  <entry>
     <id>https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/tag/v0.3.2a</id>
     <title>West of Loathing v0.3.2a0</title>
     <updated>2026-10-16T20:48:44+00:00</updated>
@@ -1415,7 +1057,7 @@ _This release is backwards compatible down to 6.0.0._</content>
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H5</id>
-    <title>Deadlock v1.2.0r3</title>
+    <title>Deadlock v1.2.0r2</title>
     <updated>2026-10-17T01:36:10+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -1569,6 +1211,78 @@ DOS2 mod pak file [Github](https://github.com/Intaiachi/DOS2-Archipelago-Mod/rel
     <link href="https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.6.1"/>
   </entry>
   <entry>
+    <id>https://github.com/Turese/LOArchipelagoPlugins/releases/tag/1.2.3</id>
+    <title>Look Outside v1.2.3</title>
+    <updated>2026-10-17T23:03:19+00:00</updated>
+    <author>
+      <name>Turese</name>
+    </author>
+    <content># QOL Features&#13;
+### New Player options:&#13;
+- Various player options have been renamed and reorganized for ease of reading&#13;
+- Casanova Mode: sets the game to “Casanova mode”, allowing the player to kiss many of the enemies around the apartment complex. Each smooch is a location.&#13;
+- Include Final True Ending Equipment: When set to false, items exclusive to the Final True ending boss battle will be excluded from the item pool&#13;
+- Locations that are granted automatically by taking mutually exclusive actions now send in-game messages upon being granted.&#13;
+&#13;
+## New Goal Option Changes&#13;
+- Completing a perfect ritual no longer counts as completing a flawed or partial ritual for goal purposes&#13;
+- XIN-AMON and Eternal fate endings still count as Flawed Ritual endings&#13;
+- Failed Ritual (zero correct offerings) is now differentiated from Flawed Ritual, and Mask Ending counts as a Failed Ritual &#13;
+- Overhauled “Goal” player option to be a set of goals that the player can mix and match&#13;
+	- "Failed Ritual": Go to the roof without giving the astronomers any correct offerings&#13;
+	- "Flawed Ritual": Give the astronomers at least one correct offering and defeat them on the roof&#13;
+	- "Perfect Ritual": Give the astronomers all four correct offerings and defeat them on the roof&#13;
+	- "Screaming Sky Ending": Give the astronomers all four correct offerings and flee from their final form on the roof&#13;
+	- "Promise Ending": Give the astronomers all four correct offerings and defeat them on the roof after making a promise to Sybil&#13;
+	- "Mask Ending": Give the astronomers all four weird offerings and face the Masked Shadow on the roof&#13;
+	- "XIN-AMON Ending": Give three correct offerings and a Guinea Pig to Beryl, and then defeat XIN-AMON on the roof&#13;
+	- "Eternal Fate Ending" - Give the Guinea Pig as any offering and face it on the roof&#13;
+	- "Unity Ending" - Kill Sybil and enter the red door in the observatory to learn the truth&#13;
+	- "Final True Ending" - Give the astronomers all four correct offerings, defeat them on the roof, then unleash the true power of your Meteor Strike!&#13;
+	- "Words of Power Ending" - Complete all crosswords for the secret key, then accept Wilhelmina’s offer in the Tomb of Crosswords&#13;
+	- “Smooch the Sultan” - Power up by kissing 49 or more enemies and then give the Sultan of Kissing a kiss (selecting this goal activates Casanova Mode + locations)&#13;
+	- "Smooch The Visitor" - Give the astronomers all four correct offerings, defeat them on the roof, then give the Visitor a kiss :3. (selecting this goal activates Casanova Mode + locations)&#13;
+&#13;
+# Client Changes&#13;
+- Removed ._DS_Store artifacts from zip file&#13;
+- Fixed bug where item name was not displayed and location was not rewarded for "Apt. 12 Walls Large Room - Item on East Table"&#13;
+- Fixed bug where the randomized item at location "Apt. 12 Planetarium - Item in North Closet" replaced the exit door instead of the intended item.&#13;
+- Fixed bug where item grant message would not be sent for “Landlord Hell South Hall - Slay Gatling”&#13;
+- Fixed bug where “Fungus Maze Depths - Spore Guardian Audrey Loot” would not be correctly rewarded upon defeating the Spore Guardian with Audrey already in your party&#13;
+- Fixed some missing or swapped item icons&#13;
+- Added missing text for “Ease Regrets” option that revives Spine&#13;
+- Added “Ease Regrets” option that revives the Minesweeper&#13;
+- Removed trigger that permanently disables the blackout event when walking through the door to the roof&#13;
+- Removed vanilla “Custom Gun” drop from Nestored Eugene&#13;
+- Fixed bug where Elevator Freak would die upon player running away from combat&#13;
+- Also removed vanilla game behavior where player would be transferred to the basement floor upon running away from the Elevator Freak&#13;
+- Fixed bug where the incorrect variable was being tracked to check whether or not Colonel Squeakums had been killed for both Ernest’s “Ease Regrets” option and the location "Ernest's Hideout - Slay Colonel Squeakums"&#13;
+&#13;
+# Apworld Changes&#13;
+- Cleaned up print statement that was sending out irrelevant info during world generation&#13;
+- “Apt. 28 Twilight - Slay Piranha Guy” is no longer considered a Friendly Fire location as Piranha Guy dies no matter what the player does&#13;
+- Fixed logic bug where the game assumed players were able to enter stairwell from ground floor before placing any planet discs in the stairwell sockets &#13;
+- Fixed logic bug where Basement Key wasn’t considered a requirement to reach Apt. 25 (Dan’s Apartment)&#13;
+- Fixed logic bug where game assumed players didn’t need any extra herbicide to traverse inner Apartment 12&#13;
+- Fixed logic bug where “Audrey” was not considered a required item for some Audrey Loot locations&#13;
+- Fixed logic bug where “Guinea Pig” was not considered a required item for "Security Room - Slay Cinnamon"&#13;
+- Fixed logic bug where the ability to face Garbage Worm on ground floor was not considered a requirement for “Basement Utility Room - Item Dropped by Garbage Worm”&#13;
+- Removed glitch world keys from the item pool when mask offering areas are disabled in settings&#13;
+- Fixed logic bug where only two “yellow key” items were considered necessary to traverse glitch world, when the game requires three. A third key will also be added to the item pool in seeds that include glitch world locations.&#13;
+- Fixed other glitch key counts that were larger than the amount of corresponding locks; the item pool now only contains as many glitch world keys as there are glitch world locks&#13;
+- Landlord Hell East - Slay Gatling is now assigned to the correct Landlord apartment phase in logic&#13;
+- Updated locations and removed duplicate locations corresponding to slaying the Basilisk in Meat World Eyeball and picking up the item where the Ocular Tetherblade would be in vanilla&#13;
+- Split singular locations for enemies fought in a group into multiple in cases where the vanilla game has separate variables tracking whether they have been killed&#13;
+	- In the locked room of Vincent’s apartment: “Apt. 37 Locked Room - Slay Eye Monsters” has been split into "Apt. 37 Locked Room - Slay Eye Legs", "Apt. 37 Locked Room - Slay Eye Shoulder", and "Apt. 37 Locked Room - Slay Wiggle Eye"&#13;
+		- Because of this, Eye Shoulder is now fightable on all difficulties&#13;
+	- In the west bedroom of Vincent’s apartment: "Apt. 37 Bedroom - Slay Onlookers" has been split into "Apt. 37 Bedroom - Slay Onlooker 1" and "Apt. 37 Bedroom - Slay Onlooker 2"&#13;
+- Other new locations:&#13;
+	- “Eugene's Shop - Gift From Nestor's Head” (Gift given upon interacting with a freshly Nestored Eugene)&#13;
+	- “Fred's Apt. - Gift from Fred” (gift given upon first speaking to the fake Fred/facetaker)&#13;
+</content>
+    <link href="https://github.com/Turese/LOArchipelagoPlugins/releases/tag/1.2.3"/>
+  </entry>
+  <entry>
     <id>https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.3</id>
     <title>SlotLock v0.11.3</title>
     <updated>2026-10-17T23:29:34+00:00</updated>
@@ -1592,5 +1306,69 @@ DOS2 mod pak file [Github](https://github.com/Intaiachi/DOS2-Archipelago-Mod/rel
 &#13;
 **Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.11.2...slotlockv0.11.3</content>
     <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.6.0-beta</id>
+    <title>Dicey Dungeons v0.6.0b0</title>
+    <updated>2026-10-18T01:19:48+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>## What's Changed&#13;
+- Multiple characters in one slot&#13;
+  - Play as any of the Warrior, Thief, Robot, and Inventor, all in one slot! Character choice is now a list.&#13;
+  - You must still have at least 1 character selected.&#13;
+  - Character progression is "open-world" only - all characters will be available from the start.&#13;
+  - Each character's items, episode progression, etc, should all follow your other settings&#13;
+&#13;
+## WARNING&#13;
+This will almost certainly break any worlds generated prior to this update. Please ensure your Client version matches the version your world was generated with!&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.5.0-beta...v0.6.0-beta</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.6.0-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.10</id>
+    <title>Stardew Valley v8.1.10</title>
+    <updated>2026-10-18T02:45:01+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Apworld&#13;
+- Fixed various issues with recipe requirements, notably cask -&gt; Cellar&#13;
+- Added automated tests for the above problems&#13;
+&#13;
+## Mod&#13;
+- Fixed Something for Santa showing up on the day of the festival, instead of on winter 24th (the day of the secret)&#13;
+- Added a filter on the Noise trap so no looping sounds are triggered&#13;
+- Prevented chaos ER slots from registering deferred entrances in data storage&#13;
+- Prevented chaos ER slots from failing at shuffling some of the one-way entrances due to their naming pattern&#13;
+- Added a "is connected?" check to the deferred entrance code to not try to interact with datastorage while disconnected</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.6.1</id>
+    <title>Links Awakening DX Beta v13.6.1</title>
+    <updated>2026-10-18T06:07:45+00:00</updated>
+    <author>
+      <name>zig</name>
+    </author>
+    <author>
+      <name>threeandthree</name>
+    </author>
+    <content>Fixes determinism and the combination of dungeon dive + entrance rando.&#13;
+&#13;
+Some reduction in fill errors I hope but not gone.</content>
+    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.6.1"/>
   </entry>
 </feed>
