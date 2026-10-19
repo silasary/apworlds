@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "haloopdy"
+  ],
+  "flags": [],
+  "game": "Animal Crossing",
+  "github": "https://github.com/randomouscrap98/AP_ACGC_PC",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.5.0": {
+      "created_at": "2026-10-18T08:00:26Z",
+      "description": "Setup instructions: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/setup_en.md\r\nGame info: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/game_info_en.md\r\n\r\nThis is the last version with breaking changes; future versions should be fully backwards compatible with seeds made from this version onwards, unless otherwise stated.\r\n\r\n## New features\r\n- **New goals: Furniture Set + Chess Set**. Items go into the pool, you must set up the set in your house\r\n- **Tracker page for furniture + chess set**. Shows when an item was received from the pool + whether it is detected in your house\r\n- **Extra bells option**. On top of bell credits which automatically apply to your loan, you can also just get money directly in the mail. Careful, set this too high and you'll get a LOT of mail\r\n- **Fossil Loans option**. Make sure you can make a lot of money each day before getting later progressive house loans\r\n- **Shops never sell out option**. Useful for flowers, etc\r\n- **Render scale + fixed scaling**. Rendering now works more like an emulator, which should feel familiar\r\n- **Version-aware slot data**. Slot data is versioned with a compatibility layer; should have backwards compatibility from now on (update software, use on old seed). Forward compatibility is blocked for safety; won't let you play new seeds on old game\r\n- **Nook tells you he's waiting on progressive house**. To reduce confusion\r\n- **Better config experience**. Config is created at startup with expected structure, game starts even with invalid config, more error messages\r\n\r\n## Bugfixes\r\n- (Old PC port bug): Rain should no longer crash the game randomly. For those of you on linux, you shouldn't see random textures fly across the screen during rain anymore\r\n- Nook store never renovated with timesanity + early morning\r\n- Mole cricket and pill bug now require the shovel in logic\r\n- Butterflies no longer get stuck in a tight circle (particularly bad for purple butterflies)\r\n- Offline json no longer wraps to unexpected values for out of range ints\r\n\r\n## Tweaks\r\n- Better dynamic critters: more pond fish in pond, more bug spawns, etc\r\n- No museum items in pool if museum goal is not on\r\n- AP trackers moved to AP submenu (sorry, was getting too long)\r\n- MSAA off by default (not needed with new auto render scale) and doesn't require a video reset to change\r\n- Resetti disabled by default (you can turn him on anytime)\r\n- Borderless acres disabled by default (you can turn them on anytime)\r\n- Line tweaks to letters\r\n- Moved options around in options creator:\r\n  - Each sanity now has its own group\r\n  - Settings which work regardless of whether the related sanity is on or off moved out of sanity groups\r\n  - New \"Matters of Money\" group for money options that work all the time\r\n  - New \"Goal\" group for everything related to goals. Some sanity options (completion % etc) moved here (weren't actually related to sanity, only to the goal)\r\n- Clear generation error when no check is doable at start\r\n- Example yamls as individual files",
+      "download_url": "https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.5.0/animal_crossing.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d291e2f676d834e46f5dbdfb9b84cdb31129e572bff4b41571158cda7c226070",
+      "html_url": "https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.5.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 62502,
+      "source_url": "https://api.github.com/repos/randomouscrap98/AP_ACGC_PC",
+      "tag": "v0.5.0",
+      "title": "Animal Crossing AP 0.5",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
+    }
+  }
+}

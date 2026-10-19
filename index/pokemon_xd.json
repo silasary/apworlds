@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "GiovanavoiG"
+  ],
+  "flags": [],
+  "game": "Pokemon XD Gale of Darkness",
+  "github": "https://github.com/GiovanavoiG/PokemonXD_Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.1.4": {
+      "created_at": "2026-10-13T22:43:20Z",
+      "description": "## New\r\n- **Move tutor:** the Agate tutor can teach every move as many times as you like. \r\n- **`/toggledeathlink`:** turns Death Link on or off from the client.\r\n\r\n## Shadow Pok\u00e9mon\r\n- **No more respawns:** snagged or purified Shadows are no longer rebuilt when you rematch their trainer.\r\n- **More trainers can carry Shadows:** rematchable trainers can hold Shadows again (Gorps, Jols, Ladi, Cron, Bost, Cida, Dosk, Raling, Labet, Doby).\r\n- **Mirrors:** a trainer's Shadow is copied onto their other fights, so you can still get it if you meet a later team first. Snag it once and it's gone from all of them; beat it and it goes to Miror B.\r\n- **First fights can hold Shadows:** Clerr, Belish, Dosk, Dert, Raling, Labet, Doby and Cail. Their later fights always carry the copy.\r\n- **One per evolution line:** no two Shadow Pok\u00e9mon share an evolution line when species are randomized or added by the expansion. The one exception is vanilla species, where Hitmonlee and Hitmonchan are both Shadows.\r\n- **Shadow Monitor:** the PDA's Shadow Monitor shows each Shadow's real species.\r\n- **Shuffle Shadow Lugia:** never puts Lugia somewhere without checks.\r\n\r\n## Logic and checks\r\n- **No post-game Shadow checks:** Greevil's Shadows and Miror B.'s post-game Dragonite have no checks. That leaves 75 Purify checks in a vanilla roster and up to 119 with the expansion.\r\n- **Mt. Battle goal:** generation now requires Mt. Battle to be reachable, not Citadark.\r\n- **Snag Machine:** you get it without the Machine Part. Shadow catches no longer need the Machine Part in logic.\r\n- **SS Libra:** logically needs only the Phenac unlock, plus the Scooter Upgrade if it's shuffled.\r\n- **Cumulative \"Defeat N Trainers\":** counts each trainer once and never a missable one. Counts past that are filler-only.\r\n- **Master Ball:** now a useful item, still one per seed.\r\n- **Item group \"Key Items\":** replaces \"Krane Memos\" and \"Voice Cases\".\r\n\r\n## Story and travel\r\n- **HQ Lab:** waits for 0x0F and Krane Memos 1\u20132 before pinning the lab for the Machine Part.\r\n- **SS Libra entry:** stays locked until you have the Phenac unlock, and no longer fails to let you in after a reconnect.\r\n- **Phenac checks:** arriving in Phenac from the SS Libra no longer sends all of Phenac's checks.\r\n- **Vanilla locations:** SS Libra plays the Snag Machine theft as written.\r\n- **Zook at the Key Lair:** beating Zook moves the Key Lair past his fight, so he doesn't come back.\r\n- **Rock Pok\u00e9 Spot:** the tray works. The spots load in at the Duking-news point, and the client repairs the story byte if it slips back.\r\n\r\n## Levels\r\n- **Sixes:** with path scaling, the Sixes' Cipher Lab and Phenac fights are each levelled to their own area.\r\n\r\n## Client\r\n- **Purification checks:** one check per purification, never two. Fixed purifications being missed when a purified Shadow evolved into another Shadow's species.\r\n- **Death Link:**\r\n  - It now sends off the game's own white-out, counted the moment the white-out begins, instead of reading your party.\r\n  - It no longer sends at full HP or misses real wipes.\r\n  - A death you receive is never sent back out.\r\n- **Commands:** client messages now say `/command` instead of `!command`. The debug catch command is `/catchscan`.\r\n- **Speed:** large multiworlds generate faster with several Pok\u00e9mon XD players.\r\n\r\n## Housekeeping\r\n- Bug-report link and setup-guide author fixed.\r\n- Option descriptions and the game page updated.\r\n- Fixed a Windows-only test failure.\r\n- Added `.gitignore` for compiled Python files.\r\n- Passes Archipelago's general world tests: item pool, manifest and item groups.\r\n",
+      "download_url": "https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/download/v0.1.4/pokemon_xd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0d64f1175fc9993090f68153bfe2336ee71ad43b82e2c228b8985f296a974d7c",
+      "html_url": "https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/tag/v0.1.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 2056999,
+      "source_url": "https://api.github.com/repos/GiovanavoiG/PokemonXD_Archipelago",
+      "tag": "v0.1.4",
+      "title": "v0.1.4",
+      "version_simple": "0.1.4",
+      "world_version": "0.1.4"
+    }
+  }
+}
