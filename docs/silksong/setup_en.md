@@ -53,7 +53,7 @@ The profile code contains the Archipelago Randomizer Mod, Custom Music Randomize
 
 **NOTE: Please make sure to press "Update Mods" when installing or when new versions release and it'll automatically update you to the latest version of the mod.**
 
-**Cogfly Import Code:** `01a109ba-4c4f-b4f0-8695-8b4d42cb8159` (Same as R2Modman)
+**Cogfly Import Code:** `01a12cf3-f4cb-5402-d6a8-0f266b3e7aa8` (Same as R2Modman)
 
 ### Using R2Modman (3.2.18+) / Thunderstore Manager (1.123.1+)
 1.) First start off by installing [R2Modman](https://r2modman.com/download-latest/) to the latest version for your preferred operating system.
@@ -66,7 +66,7 @@ The profile code contains the Archipelago Randomizer Mod, Custom Music Randomize
 
 **NOTE: Please make sure to press "Update Mods" when installing or when new versions release and it'll automatically update you to the latest version of the mod.**
 
-**R2Modman Import Code:** `01a109ba-4c4f-b4f0-8695-8b4d42cb8159` (Same as Cogfly)
+**R2Modman Import Code:** `01a12cf3-f4cb-5402-d6a8-0f266b3e7aa8` (Same as Cogfly)
 
 ### Manually
 1.) Find your Hollow Knight: Silksong installation folder based on your Silksong storefront.
@@ -148,6 +148,8 @@ This occurs when you've changed your APWorld to a new version for an update whil
 
 Use one of the installation methods to downgrade. Manual is preferred for downgrading but here are some old codes for the mod managers (these work for both):
 
+**v0.5.1** Import Code: `01a12cf3-f4cb-5402-d6a8-0f266b3e7aa8`
+
 **v0.5.0** Import Code: `01a109ba-4c4f-b4f0-8695-8b4d42cb8159`
 
 **v0.4.7** Import Code: `01a0dfd5-7d5b-682a-324c-6e2f385ad7df`
@@ -207,16 +209,18 @@ Some of these regions are still incomplete and still being mapped out. They've b
 
 | Contributor | Regions |
 | :--- | :--- |
+| **Gallos** | [Choral Chambers](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/choral-chambers) |
 | **Herchey** | [Bilewater](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/bilewater), [Sinner's Road](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/sinner-s-road) |
 | **Heric** | [Memorium](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/memorium) |
 | **Hero** | [Bone Bottom](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/bone-bottom), [Deep Docks](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/deep-docks), [Far Fields](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/far-fields), [Hunter's March](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/hunter-s-march), [Moss Grotto](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/moss-grotto), [The Marrow](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-marrow), [Weavenest Atla](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/weavenest-atla), [Wormways](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/wormways) |
 | **Isssma** | [Greymoor](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/greymoor) |
-| **Pyxl** | [Bellhart](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/bellhart), [Grand Gate](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/grand-gate), [Mount Fay](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/mount-fay), [Putrified Ducts](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/putrified-ducts), [Sands of Karak](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/sands-of-karak), [Shellwood](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/shellwood), [The Abyss](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-abyss), [The Cradle](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-cradle) |
+| **Maya** | [The Slab](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-slab)
+| **Pyxl** | [Bellhart](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/bellhart), [Grand Gate](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/grand-gate), [Mount Fay](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/mount-fay), [Putrified Ducts](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/putrified-ducts), [Sands of Karak](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/sands-of-karak), [Shellwood](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/shellwood), [The Abyss](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-abyss), [The Cradle](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-cradle), [Verdania](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/verdania) |
 | **Rebel** | [Cogwork Core](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/cogwork-core), [Underworks (East)](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/underworks), [Whispering Vaults](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/whispering-vaults) |
 | **Sergio** | [Choral Chambers](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/choral-chambers), [Grand Gate](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/grand-gate), [High Halls](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/high-halls), [The Slab](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-slab), [Underworks (West)](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/underworks), [Wisp Thicket](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/whisp-thicket) |
 | **Skai** | [Blasted Steps](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/blasted-steps), [Grand Gate](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/grand-gate), [Whiteward](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/whiteward)|
 | **SuperEpicGuy** | [Moss Grotto](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/moss-grotto) |
-| **UNMAPPED** | [The Mist](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-mist), [Red Memory](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/red-memory), [Verdania](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/verdania) |
+| **UNMAPPED** | [The Mist](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/the-mist), [Red Memory](https://github.com/zerounit-dev/silksong-rando-ap-logic/tree/main/red-memory) |
 
 ### Contributors
 A huge thanks to all the people who have contributed to this project including ones that aren't displayed on the contributors list.
