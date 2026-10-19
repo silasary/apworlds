@@ -1,0 +1,176 @@
+# The save file is loaded into a different address in memory every time you boot up the game.
+# You can find where it is by reading **0x8045DE80**.
+
+# From the offset of 0x380 onwards, everything is specific to certain profiles.
+# Every profile is at an offset of 0x380 + 0x6FF00 * [profile's index].
+Current Profile's Index Finder: 0x50
+Profile Slot 1 Offset: 0x380
+Profile Slot 2 Offset: 0x70280
+Profile Slot 3 Offset: 0xE0180
+Profile Slot 4 Offset: 0x150080
+
+Save Data Offsets:
+
+Poké Coupons: 0x124E1
+
+Gateway Colosseum Clears: 0x124F0
+Main Street Colosseum Clears: 0x124F7
+Waterfall Colosseum Clears: 0x124F6
+Neon Colosseum Clears: 0x124F5
+Crystal Colosseum Clears: 0x124F4
+Sunny Park Colosseum Clears: 0x124FB
+Magma Colosseum Clears: 0x124FA
+Courtyard Colosseum Clears: 0x124F9
+Sunset Colosseum Clears: 0x124F8
+Stargazer Colosseum Clears: 0x124FF
+
+Colosseum Unlock Bitfield 1: 0x12509
+Colosseum Unlock Bitfield 2: 0x12508
+Post Game Flag: 0x12511
+
+Mark if the Player is Currently Borrowing a New Pass from Gateway: 0x125B7
+
+Cyndy's Rental Pass: 0x23A39
+Nate's Rental Pass: 0x24125
+Tommy's Rental Pass: 0x24811
+Daisy's Rental Pass: 0x24EFD
+Joel's Rental Pass: 0x255E9
+Natalie's Rental Pass: 0x25CD5
+
+Flags #383-#390: 0x12565
+
+Rental Pass Bits:
+
+Rental Pass Available at Gateway: +0x08 | Bit Index 3
+Rental Pass Unlocked: +0x10 | Bit Index 4
+
+# Note: When is this ever turned off?
+Turn on the Lights (?): +0x40 | Bit Index 6
+
+Colosseum Unlock Bitfield 1 Bits:
+
+Gateway Colosseum: +0x10 | Bit Index 4
+Main Street Colosseum: +0x20 | Bit Index 5
+Waterfall Colosseum: +0x40 | Bit Index 6
+Neon Colosseum: +0x80 | Bit Index 7
+
+Colosseum Unlock Bitfield 2 Bits:
+
+Crystal Colosseum: +0x01 | Bit Index 0
+Sunny Park Colosseum: +0x02 | Bit Index 1
+Magma Colosseum: +0x04 | Bit Index 2
+Courtyard Colosseum: +0x08 | Bit Index 3
+Sunset Colosseum: +0x10 | Bit Index 4
+Stargazer Colosseum: +0x20 | Bit Index 5
+
+Save Slot Data
+0x8: play_time (double)
+0x10: name[10] (wchar_t, maybe longer only 10 is used in english)
+0x30: birthday_month[4] (wchar_t, yes pretty sure it's stored as a string despite being a number, length is an assumption)
+0x38: birthday_day[4] (wchar_t, yes pretty sure it's stored as a string despite being a number, length is an assumption)
+0x40: region_id (uin16_t)
+0x42: sub_region_id (uint16_t, ie: California)
+0x48: self_introduction[50] (wchar_t, might be slightly longer, but unused in english)
+
+(SAVE DATA POINTER OFFSETS (-380) )
+
+0x5F8: Box PKMN data start
+0x1252F : Box PKMN data end
+
+///
+
+0x134D8 - Start of Custom Pass 1
+0x13BC4 - Start of Custom Pass 2
+0x142B0 - Start of Custom Pass 3
+0x1499C - Start of Custom Pass 4
+0x15088 - Start of Custom Pass 5
+0x15774 - Start of Custom Pass 6
+0x15E60 - Start of Custom Pass 7
+0x1654C - Start of Custom Pass 8
+0x16C38 - Start of Custom Pass 9
+0x17324 - Start of Custom Pass 10
+0x17A10 - Start of Custom Pass 11
+0x180FC - Start of Custom Pass 12 
+0x187E8 - Start of Custom Pass 13
+0x18ED4 - Start of Custom Pass 14
+0x195C0 - Start of Custom Pass 15
+0x19CAC - Start of Custom Pass 16
+0x1A398 - Start of Custom Pass 17
+0x1AA84 - Start of Custom Pass 18
+0x1B170 - Start of Custom Pass 19
+0x1B85C - Start of Custom Pass 20
+0x1BF48 - Start of Custom Pass 21
+0x1C634 - Start of Custom Pass 22 
+0x1CD20 - Start of Custom Pass 23
+0x1D40C - Start of Custom Pass 24
+0x1DAF8 - Start of Custom Pass 25
+0x1E1E4 - Start of Custom Pass 26
+0x1E8D0 - Start of Custom Pass 27
+0x1EFBC - Start of Custom Pass 28
+0x1F6A8 - Start of Custom Pass 29
+0x1FD94 - Start of Custom Pass 30
+0x20480 - Start of Custom Pass 31
+0x20B6C - Start of Custom Pass 32
+0x21258 - Start of Custom Pass 33
+0x21944 - Start of Custom Pass 34
+0x22030 - Start of Custom Pass 35
+0x2271C - Start of Custom Pass 36
+0x22E08 - Start of Custom Pass 37
+
+///
+
+Contents of Custom Pass
+0x004 : Pass Trainer Name
+0x01C : 2 bytes, pulls text string for trainer title
+0x021 : Character Style
+0x022 : Gear (Head)
+0x023 : Gear (Hair)
+0x024 : Gear (Face)
+0x025 : Gear (Top)
+0x026 : Gear (Pants)
+0x027 : Gear (Shoes)
+0x028 : Gear (Hand)
+0x029 : Gear (Glasses / Bag)
+0x02A : Gear (Badge)
+0x02C : Catchphrase GREETING
+0x060 : Catchphrase PKMN SENT OUT
+0x098 : Catchphrase PKMN SHIFT1
+0x0CC : Catchphrase PKMN SHIFT2
+0x100 : Catchphrase WIN
+0x168 : Catchphrase LOSE
+0x1EE : Skin Tone
+0x544 : Pass Design *and* Photo Type.
+ # i.e. 00 is design 1 with fullbody image, 01 is design 1 with a head shot
+0x545 : Pokeball Mark (0x545 : bitflag, 0x80 = Pokeball Mark (Sparkly) / 0x40 locked rental pass)
+
+///
+
+~0x58163 : Store? (Gear)
+
+# Notes on the store are incomplete.
+
+0x5816C : Summer Cap B (01 -> 03)
+0x5816E : Shiny Yellow (02 -> 06)
+0x58170 : Summer T-Shirt B (10 -> 30)
+0x58172 : Summer Jeans B (40 -> C0)
+0x58177 : Summer Wristband B (00 -> 01)
+0x58175 : Summer Shoes B (01 -> 03)
+0x58178 : Summer Bag B (01 -> 03)
+
+0x5818C : Cool Hat B (01 -> 03)
+0x5818E : Light Brown (02 -> 06)
+0x58190 : Cool Jacket B (10 -> 30)
+
+0x581AD : Blue Gray (40 -> C0)
+0x581B0 : Army Tank Top B (01 -> 03)
+
+0x581D0 : Girls' Minidress (10 -> 30)
+0x581CC : Girl's Cap B (01 -> 03)
+0x581CE : Dark Gray (02 -> 06)
+
+0x581EC : Cool Cap B (01 -> 03)
+0x581F0 : Cool Tank Top B (10 -> 30)
+
+0x5820C : Cute Headband B (01 -> 03)
+0x5820E : Orange (02 -> 06)
+0x58210 : Cute Dress B (10 -> 30)
