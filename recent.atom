@@ -2,172 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-20T12:17:03.557653+00:00</updated>
+  <updated>2026-10-20T18:21:34.779016+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.3.0</id>
-    <title>DUSK v0.3.0</title>
-    <updated>2026-10-17T02:20:33+00:00</updated>
-    <author>
-      <name>FlapjackRetro</name>
-    </author>
-    <content>## New&#13;
-&#13;
-- ARCHIPELAGO button on the main menu. It sits above Campaign. Pick a difficulty and you land on your first episode’s level map, showing only the levels you’ve unlocked.&#13;
-- Episode switcher on the level map. E1 / E2 / E3 buttons sit above Back to Main Menu. Your current episode is highlighted and episodes you haven’t unlocked are greyed out.&#13;
-- Level Select in the pause menu. It takes you back to the current episode’s map from inside a level.&#13;
-&#13;
-## Fixed&#13;
-&#13;
-- Weapon loadout picker (#9). It now ticks exactly the weapons you’ve received and can’t be toggled. MAX and Reset only change ammo for weapons you own.&#13;
-- Window mode (#10). DUSK no longer switches back to fullscreen after the intro or on every level load. The game’s own Fullscreen setting still works, and the KeepWindowMode config option turns this off.&#13;
-- Items for other games (#19). Pickups for other players now say who and which game they’re for, e.g. “Found Tower of Babel (E2M8) for Flapjack (DOOM 1993)”, so another game’s level items aren’t mistaken for DUSK’s.&#13;
-- Missing item models (#7). A Box of Mortar Grenades no longer shows the grey Archipelago logo in levels that don’t contain one; it shows as a mortar grenade until its own model has been seen. Keys borrow the same colour from another episode when needed.&#13;
-- Archipelago item models have depth (#6). The logo used for other games’ items is now a solid-looking slab instead of a flat image.&#13;
-&#13;
-Install: extract DuskRando-v0.3.0.zip into your DUSK folder (over 0.2.0 is fine), and replace dusk.apworld in Archipelago’s custom_worlds folder. See the [Setup Guide](https://github.com/FlapjackRetro/dusk-rando/blob/master/docs/setup.md).</content>
-    <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.1.1</id>
-    <title>Spirit Valley v2.1.1</title>
-    <updated>2026-10-17T05:09:12+00:00</updated>
-    <author>
-      <name>Dotsofdarkness</name>
-    </author>
-    <content>- (APWorld) added warning in description of randomise_map YMAL option saying that generation will likely fail&#13;
-- (Client) made adding affection(either by item or through minigame) to a spirit send all obtained affection level locations for that spirit&#13;
-- (Client) made attempting to give a max affection spirit an affection item send all affection level locations &#13;
-&#13;
-&#13;
-V2.1.0 changelog&#13;
-- (APWorld) Redid rules to use Rule Builder allowing for "/explain" to be used in UT&#13;
-- (APworld) Fixed main/side mission battles being in logic when the associated mission isn't&#13;
-- (Client) fixed sending goal locations when server has client release disabled&#13;
-&#13;
-&#13;
-INSTALLATION INSTRUCTIONS:&#13;
-&#13;
-CLIENT:&#13;
-- Have Spirit Valley Installed&#13;
-- Download Spirit Valley Archipelago plugin (See Releases for latest version)&#13;
-- Extract and copy the contents of "Spirit Valley Archipelago Client V#.#.#.zip" to the directory where "SpiritValley.exe" is&#13;
-&#13;
-APWORLD (needed for generating archieplago game):&#13;
-- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
-- Download Spirit Valley APWorld (See Releases for latest version)&#13;
-- Select "Install APWorld" in launcher and select Spirit Valley APWorld you downloaded&#13;
-- Restart launcher for APWorld to properly install&#13;
-- (Optional but Recommended)Select "Generate Template Options" to generate default spirit valley YMAL</content>
-    <link href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/AAces17/EquilinoxAPClient/releases/tag/0.1.1</id>
-    <title>equilinox v0.1.1</title>
-    <updated>2026-10-17T05:30:09+00:00</updated>
-    <author>
-      <name>AAces17</name>
-    </author>
-    <content>## Changelog&#13;
-&#13;
-### Game mod&#13;
-- Replace main menu logo with custom AP logo&#13;
-- Replace in-game notification icon with colored AP icon&#13;
-- Replace AP toolbar menu icon with white AP icon&#13;
-- Remove the game dev's email from the crash message -- crashes with the mod installed are my problem, not theirs&#13;
-&#13;
-### .apworld&#13;
-- None&#13;
-&#13;
-## Updating the Mod&#13;
-&#13;
-View the [Setup Guide](https://github.com/AAces17/EquilinoxAPClient#setup-instructions) on the Github repository.&#13;
-&#13;
-This update is compatible with worlds generated on v0.1.0. </content>
-    <link href="https://github.com/AAces17/EquilinoxAPClient/releases/tag/0.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.7.0</id>
-    <title>The Legend of Zelda: A Link to the Past v1.7.0</title>
-    <updated>2026-10-17T06:37:26+00:00</updated>
-    <author>
-      <name>aurabot</name>
-    </author>
-    <content>* New sprites for AP items&#13;
-* New entrance option Linked Drops can decouple dropdowns from their usual exits&#13;
-* Zelgawoods has been renamed to Shuffle Skull Woods (old YAMLs will still work). With crossed entrance + shuffle skull woods + no linked drops, all Skull Woods dropdowns are randomized and could appear outside the Skull Woods area&#13;
-* New door type shuffle options to include one-way trap doors, and to slightly randomize the number of each type of door&#13;
-* New option Pseudolamp gives a light cone without needing the Lamp&#13;
-* New option to load Link's sprite from a player's local .zspr file&#13;
-* Receiving a crystal with prize shuffle now says "You acquired" instead of "You picked up"&#13;
-* Some logic changes from the newest OWR version:&#13;
-  * Bunny walking through the top of Paradox Cave is now in logic (previously the Moon Pearl was required)&#13;
-  * Bunny walking through Death Mountain Descent is now in logic, unless playing with Inverted and without crossed entrance shuffle&#13;
-* Fixed quickswap not being in the correct category in the option creator</content>
-    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.1.1</id>
-    <title>Ys Origin v2.1.1</title>
-    <updated>2026-10-17T10:52:17+00:00</updated>
-    <author>
-      <name>4rtefakt</name>
-    </author>
-    <content>A patch release: the 3F barrier fix from a Hugo player's report, and a logic audit against the game's room scripts. Requires **Archipelago 0.6.7 or newer**.
-
-&gt; **Take all three files, and take them together.** Seeds generated with 2.1.0 stay playable with the new dll.
-
-## 🛠️ Mod fix
-
-- **The 3F Transfer Room now always sends you to 4F first.** Its barrier teleports Yunica and Hugo to 4F unless the Blue Necklace is worn, and that teleport is the only way into the 4F rooms. A seed can hand you the necklace early, and walking in wearing it broke the barrier for good, so 4F was out of reach. Until you have been to 4F, the barrier now ignores the necklace.
-- **Saves already stuck this way are repaired.** If you broke the barrier before ever reaching 4F, it comes back the next time you are in a room next to it. Walk into it to be teleported to 4F, then come back with the necklace on to break it again.
-
-## 🗺️ Logic
-
-Ten places where the logic counted on a check or a passage the game blocks, found by checking every room against its scripts:
-- six room gates, including the 6F room (wind in, dash out), the 8F dive and the 24F bridge's way back;
-- four story checks, including Yunica's Black Pearl, which now waits for her 19F event;
-- the 2F Gemma Room's two checks are Yunica's and Hugo's only (Toal cannot enter it).
-
-## ⚠️ What was and was not played
-
-- The barrier fix was loaded in the retail game and its check was exercised in memory for each case. The room itself was not played through.
-- The logic changes passed AP's integration check, 60 random seeds and 8 three-player seeds.
-
-## 🐞 Known issues
-
-- **Rado's Annex and story order** (from 2.1.0) is still not fixed in this dll. Hugo and Yunica can be turned around at the Rado Tower bridge by story flags from higher floors.
-- The known issues listed for 2.1.0 still apply.
-</content>
-    <link href="https://github.com/4rtefakt/ys-origin-archipelago/releases/tag/v2.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.0</id>
-    <title>DUSK v0.4.0</title>
-    <updated>2026-10-17T13:40:35+00:00</updated>
-    <author>
-      <name>FlapjackRetro</name>
-    </author>
-    <content>## New&#13;
-&#13;
-- KEYS row on the level map: below SECRETS, each level’s stats now show its blue, yellow and red keys. They’re in colour once you’ve received them and dark until then. A level with no keys shows “NONE”.&#13;
-- Per-seed level stats (#15): best times, kills, secrets and awards on the map are now tracked separately for each seed. The same seed picks up where you left off, a new seed starts clean, and your normal DUSK stats aren’t touched.&#13;
-- PopTracker support: the mod tells the server which level or episode map you’re on, so the DUSK PopTracker pack can switch to the right map tab automatically.&#13;
-- Compressed connection (#24): the mod now uses the compressed websocket connection that Archipelago recommends. This removes the “client does not support compressed websocket connections” warning and cuts down on network traffic. If compression doesn’t work, it quietly falls back to a normal connection. You can turn it off with UseCompression in the config file.&#13;
-&#13;
-## Fixes&#13;
-&#13;
-- Level Complete checks (#8): finishing a level now reliably sends its Level Complete check from the win screen.&#13;
-- Item models: replacement models, including the Archipelago logo, now stand upright and spin on every pickup. Before, some lay flat and didn’t move, such as the Crossbow in E1M1.&#13;
-&#13;
-## Notes&#13;
-Update both dusk.apworld and the mod ZIP.&#13;
-The mod now requires exactly Archipelago.MultiClient.Net 6.7.1, which is already included in the ZIP.</content>
-    <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.0"/>
-  </entry>
   <entry>
     <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.1</id>
     <title>DUSK v0.4.1</title>
@@ -451,7 +290,7 @@ This will almost certainly break any worlds generated prior to this update. Plea
   </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_3</id>
-    <title>Civilization IV v0.0.1r2</title>
+    <title>Civilization IV v0.0.1r3</title>
     <updated>2026-10-18T06:04:27+00:00</updated>
     <author>
       <name>VincentSIFTD</name>
@@ -1167,7 +1006,8 @@ Bug Fixes&#13;
 &#13;
 #sm64ex hotfixes&#13;
 - October 19, 2026: Reading an entrance hint on a sign no longer causes Universal Tracker to treat the entrance as discovered. A separate flag is saved on the server instead which will be used in the future 1.0.5 release by Universal Tracker to consider an entrance "discovered" but not treated as reachable if you cannot reach it.&#13;
-- October 19, 2026: Location checks should not be lost when done while disconnected from the server.</content>
+- October 19, 2026: Location checks should not be lost when done while disconnected from the server.&#13;
+- October 20, 2026: Fixed coin count displays in the global level items menu.</content>
     <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.4"/>
   </entry>
   <entry>
@@ -1538,5 +1378,151 @@ That's all for now! I apologize Crafting mode enjoyers for making you have to wa
 - Fixed Gleeok freezing when being beaten in D3&#13;
 - Fixed Ricky crashing if going up to the swamp and trying to leave</content>
     <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.0.1</id>
+    <title>Dome Keeper v2.0.1</title>
+    <updated>2026-10-20T12:29:04+00:00</updated>
+    <author>
+      <name>Arrcival</name>
+    </author>
+    <content/>
+    <link href="https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4-RC-h2</id>
+    <title>AP Tombola v0.3.1r2</title>
+    <updated>2026-10-20T13:50:13+00:00</updated>
+    <author>
+      <name>Arenes214</name>
+    </author>
+    <content>Prerelease Version - Not Fully Tested&#13;
+(APWorld Reports internally as 0.3.1 to AP)&#13;
+&#13;
+Hotfix 19/10:&#13;
+Added an extra check to avoid easy item links breaking&#13;
+&#13;
+Hotfix 20/10:&#13;
+Fixed Unlock Link crashing&#13;
+&#13;
+Changelog APWorld:&#13;
+Easy Item Links&#13;
+"Deprioritize Numbers" Yaml Option&#13;
+Added Milestones&#13;
+Added Filler Items&#13;
+Moved to Rule Builder&#13;
+Universal Tracker Support (Yamlless)&#13;
+Rowsanity Default ON&#13;
+Milestone cannot roll more tombola than goal&#13;
+&#13;
+Changelog Client:&#13;
+Added the ability to modify Saves&#13;
+Fixed Automatic Mark&#13;
+Automatic Mark now happens 3 seconds after a number received / trap end&#13;
+Automatic Mark now also clicks Milestones&#13;
+Fixed Free Location Hints being wasted on already hinted locations&#13;
+Extra message when sending a hinted item from your locations&#13;
+Fixed Itemlink "player" names not being highlighted for your links&#13;
+Fixed Shields number not being updated when none were used beforehand&#13;
+Fixed hint message having an extra space&#13;
+Added "Please Wait..." message in-between clicking free mark and getting server confirmation&#13;
+</content>
+    <link href="https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4-RC-h2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release7</id>
+    <title>Ocarina of Time v9.1.0r2</title>
+    <updated>2026-10-20T14:05:24+00:00</updated>
+    <author>
+      <name>espeon65536</name>
+    </author>
+    <author>
+      <name>TreZ</name>
+    </author>
+    <content># OoT Randomizer APWorld v9.1.0 Full Release 7&#13;
+&#13;
+This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
+&#13;
+Note: Not compatible with older versions&#13;
+&#13;
+## Changes:&#13;
+- BREAKING CHANGE: Migrated to procedural patch (.apoot files)&#13;
+  - A romfile is no longer needed for generation, just for client patching&#13;
+  - Unfortunately, NTSC 1.0 is still the only supported version.&#13;
+  - With this change, AP's "Open Patch" will now automatically open the correct client&#13;
+- Full ER support for Universal Tracker&#13;
+  - Available checks are updated on every entrance transition&#13;
+  - Dedicated UT tab in the client&#13;
+- Updated UI for Adjuster&#13;
+  -  Different cosmetic categories are now sorted into tabs&#13;
+&#13;
+Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.</content>
+    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.2.0</id>
+    <title>Dragon Quest IX v0.2.0</title>
+    <updated>2026-10-20T15:35:15+00:00</updated>
+    <author>
+      <name>kid2407</name>
+    </author>
+    <content># Dragon Quest IX - Beta Release (Version 0.2.0)&#13;
+&#13;
+**This is a beta release. Things can possibly break, though the core gameplay should run normally.**&#13;
+&#13;
+*This requires Archipelago **0.6.7 or newer!***&#13;
+*This **is not** compatible with seeds generated on an earlier version*&#13;
+&#13;
+New to the game? Check out the [FAQ](https://discord.com/channels/731205301247803413/1427594624389742716/1491731616068800543)&#13;
+## Bugs fixed&#13;
+&#13;
+* Removed DLC only location "Stornway Castle - Cellar"&#13;
+&#13;
+## New Feature: Shop Randomization&#13;
+&#13;
+After a lot of trial and error, and with help of the Ap community, Shop Randomization is here! You can choose from the following options, how much / if you want to randomize shops:&#13;
+* "None" =&gt; Do not randomize Shops&#13;
+* "Same Shop Type" =&gt; Shops of the same type are randomized&#13;
+* "Same Region" =&gt; Shops in the same region are randomized&#13;
+* "Same Shop Type And Region" =&gt; Shops of the same type and in the same region are randomized&#13;
+* "True Random" =&gt; All Shops get randomized together&#13;
+&#13;
+Generation may fail &lt;1% of the time, in such a case just try again :)&#13;
+&#13;
+## New Feature and Change: Patch Files&#13;
+&#13;
+Dragon Quest IX now also makes use of a patch file to put it's data into the game where it is possible. When generation, you will find a `.apdqix` file in the output - open it via the "Open Patch" Option in the launcher, or just double click it from your Downloads.&#13;
+&#13;
+This will ask for your copy of the game as well as the EmuHawk executable, if not already set form playing other games. Once set up, it automatically runs BizHawk with the patched ROM - have fun!&#13;
+&#13;
+If you continue your run later, just re-open the modified ROM, which should be placed in the same folder where you have your original ROM.</content>
+    <link href="https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.4.1</id>
+    <title>Medievil v0.3.0r2</title>
+    <updated>2026-10-20T16:50:32+00:00</updated>
+    <author>
+      <name>RiezaHughes</name>
+    </author>
+    <content/>
+    <link href="https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.44</id>
+    <title>Mental Omega v0.6.7r2</title>
+    <updated>2026-10-20T16:55:11+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Make Archipelago more robust&#13;
+- Fix Stalins Fist cloning&#13;
+- Fix Perma shop buffs for Powerups&#13;
+- Fix coop shopmode units that should not be there&#13;
+- Add Challenge maps for Coop and in Singleplayer, this was a suggested PR&#13;
+- Fix Unit leakage in Grid/Standard mode&#13;
+- Fix Brute Armor&#13;
+- Adjust UI for Challenge maps and coop mode</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.44"/>
   </entry>
 </feed>

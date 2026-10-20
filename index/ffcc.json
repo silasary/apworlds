@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "EverydaySimpleDev"
+  ],
   "flags": [],
   "game": "Final Fantasy Crystal Chronicles",
   "github": "https://github.com/EverydaySimpleDev/Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "ffcc-beta.0.0.1": {
       "created_at": "2026-07-09T12:41:51Z",
@@ -74,6 +81,21 @@
       "title": "Final Fantasy Crystal Chronicles 0.0.5",
       "version_simple": "0.0.5",
       "world_version": "0.0.5"
+    },
+    "ffcc-beta.0.1.7": {
+      "created_at": "2026-10-06T17:18:40Z",
+      "description": "## New Features\r\n\r\n- New Icons: Now have a custom Archipelago title screen logo, and the banner and disc name show the player name and seed (Thanks again PaulSRC!).\r\n- Progressive Equipment (new option): adds Progressive Weapon, Progressive Armor and Progressive Tribal Gear to the item pool. Each one upgrades your equipped piece to the next one for your tribe without taking up bag space. Open your menu or move to another area for the new stats to apply.\r\n- Rebena Te Ra Timed Chests (new option, off by default): chests 6 and 9 need tight timing to reach solo. When off, they only hold filler items and show as a sequence break in the tracker.\r\n- Stage Keys: the world map's element menus now always work, even without the dungeon's key and before the stage is cleared. You can always change your chalice's element to cross a Miasma Stream, and entering the dungeon still needs the key.\r\n- Stage Keys: the boatmen at the Jegon River pier, Port Tipa and Leuda won't sail to Mount Kilanda unless you have its key.\r\n- Jegon River logic: everything across the river now needs the Ring of Life and access to Veo Lu Sluice, so you can always refill the river when it dries up in Year 5. With Shuffle Loading Zones, Veo Lu Sluice always stays on this side of the river.\r\n- Universal Tracker support: the FFCC client gets a Tracker tab and a Map tab that follows the dungeon you're in. Select the tracker pack's `.zip` when asked.\r\n- New option defaults: Goblin Wall in Year 1, Mog Never Tired and Skip Intro Cutscene are now on. Cycle and Year Location Checks are now off.\r\n- **Tracker Pack:**\r\n  - River logic added.\r\n  - Progressive Equipment counters added.\r\n  - Moschet Manor map layout updated.\r\n  - Stone items removed, since stones are lost when you leave a stage.\r\n\r\n## Bug Fixes\r\n\r\n- Fixed dungeon cycles (seen on Mount Kilanda and Conall Curach) advancing in the tracker while you were in a town. The client now reads the game's own stage index.\r\n- Mount Kilanda chests 2, 7 and 8 are now checks in all 3 cycles.\r\n- Mushroom Forest chest 8 is now a check in Cycle 3.\r\n- Conall Curach chests 12 and 21 now need access to Daemon's Court, because the log bridge has to be bombed there first.\r\n- Fixed seeds / updated logic where Stage Keys could leave you stuck in front of a Miasma Stream with no way to get the element it asks for.\r\n- Fixed a generation failure caused by the river logic.\r\n- Updated Github versions to match real versions to help prevent confusion\r\n",
+      "download_url": "https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.1.7/ffcc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "064a7d2e9972259d0fc1dee62054f62606b0003b764136d2b51788cbb59b90a1",
+      "html_url": "https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta.0.1.7",
+      "minimum_ap_version": "0.6.7",
+      "size": 446334,
+      "source_url": "https://api.github.com/repos/EverydaySimpleDev/Archipelago",
+      "tag": "ffcc-beta.0.1.7",
+      "title": "Final Fantasy Crystal Chronicles 0.1.7",
+      "version_simple": "0.1.7",
+      "world_version": "0.1.7"
     }
   }
 }

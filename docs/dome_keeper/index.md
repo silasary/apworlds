@@ -4,7 +4,7 @@ Dome Keeper is a roguelike/mining game where you need to dig up a relic while de
 
 
 ## Downloads
-- <a href="https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.0.0/dome_keeper.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.0.1/dome_keeper.apworld">Latest Version (2.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

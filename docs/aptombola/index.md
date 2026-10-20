@@ -8,7 +8,6 @@ AP Tombola is an AP implementation of Tombola, an italian bingo game dating back
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_AP Tombola">English</a>
 
 ## Setup Guide
 

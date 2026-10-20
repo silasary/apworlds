@@ -4,7 +4,7 @@ Full catalogue; each seed&#x27;s shape comes from one signed manifest.
 
 
 ## Downloads
-- <a href="https://github.com/Heinki/Reloaded-Randomizer/releases/download/V1.7/cnc_reloaded.apworld">Latest Version (1.7.0)</a>
+- <a href="https://github.com/Heinki/Reloaded-Randomizer/releases/download/V1.8/cnc_reloaded.apworld">Latest Version (1.7.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
