@@ -2,234 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-19T18:21:11.715767+00:00</updated>
+  <updated>2026-10-20T00:23:13.616408+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ChrisCj8/ap_adventure/releases/tag/v0.4.1</id>
-    <title>GMod - apAdventure v0.4.1</title>
-    <updated>2026-10-16T18:11:17+00:00</updated>
-    <author>
-      <name>ChrisCj8</name>
-    </author>
-    <content>Uses [Version 0.3.0 of GMAP](https://github.com/ChrisCj8/gm_ap/releases/tag/v.0.3.0)&#13;
-&#13;
-- 3d2d objects drawn in editor mode now use point sampling (this means that the text drawn above some editor entities is no longer blurry as hell)&#13;
-- fixed "Generate Map Index" tool in the launcher not working&#13;
-- added HitScan capability to some items that were missing it&#13;
-- added a bunch of missing capabilities to the capability node ui&#13;
-- fixed local hints not being shown in the map tab of the tracker window if the player opened the tracker before receiving their first local hint&#13;
-- save and delete marker tools now play dryfire sounds when targeting an invalid object&#13;
-- entities that apadventure already saves automatically can't be targeted by the save marker tool anymore&#13;
-- returning `true` in a config script item handler now unregisters the item handling function&#13;
-- added a new GratePass capability for weapons that can shoot through grates&#13;
-- custom item definitions can now have code run whenever they're loaded/unloaded&#13;
-- made projectile size capabilities imply the base Projectile capability&#13;
-&#13;
-If you don't know what the .fgd file is for, you don't need it.&#13;
-&#13;
-# Important&#13;
-If you had an old version of the gmod addon installed, delete the old folder before installing the new one, some parts of the file system have changed. If you have made some custom content for apAdventure and put it into the apAdventure addon folder, check out [the packing custom content guide](https://github.com/ChrisCj8/ap_adventure/blob/main/apworld/docs/packing_custom_content_en.md) for information about how to pack your stuff so you won't lose it in the future.&#13;
-&#13;
-Also, you most likely won't be able to finish any old runs you've already started with this version, so finish those before updating.</content>
-    <link href="https://github.com/ChrisCj8/ap_adventure/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.4</id>
-    <title>DOOM Eternal v0.6.3r2</title>
-    <updated>2026-10-16T18:36:10+00:00</updated>
-    <author>
-      <name>snowzzrra</name>
-    </author>
-    <content># DOOM Eternal Archipelago v0.6.4&#13;
-&#13;
-## Fixes&#13;
-- Fixed console command collisions that could prevent paired Extra Life pickups in The Holt and UAC Atlantica from producing both AP checks.&#13;
-- Fixed command collisions between Taras Nabad’s Mission Complete and campaign-goal events that could block Full Saga progression.&#13;
-- The Fortress Unmaykr check triggers at the end of acquisition instead of during partial key insertion, preserving the correct six-key requirement, oops!&#13;
-&#13;
-## Launcher&#13;
-- Fixed the packaged Linux launcher failing to start with “attempted relative import with no known parent package.”&#13;
-- Inventory Resync reads health, armor and ammo capacity stages independently and selects only confirmed missing stages.&#13;
-- Unresolved inventory observations identify the affected item IDs (under the hood stuff).&#13;
-&#13;
-**Update to Sentinel Core 1.0.6 and rebuild the room package when prompted. You may keep the same room, slot and AP save.**&#13;
-&#13;
-## What's next&#13;
-Development continues on v0.7: Random Enemies (or the Enemizer).&#13;
-&#13;
-Check out the official DOOM Eternal thread in the Archipelago After Dark Discord for more info and support.</content>
-    <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.0</id>
-    <title>Mario Sports Mix v3.1.0</title>
-    <updated>2026-10-16T18:40:52+00:00</updated>
-    <author>
-      <name>ElectroStarz</name>
-    </author>
-    <author>
-      <name>Puffy</name>
-    </author>
-    <content># Mario Sports Mix AP v3.1.0 - THE Bugfix!&#13;
-## It's finally here!! Hopefully within a couple days you should see Mario Sports Mix on Ionium!! (If nothing goes wrong...)&#13;
-### This release is NOT compatible with any prior 3.1.0 release...&#13;
-&#13;
-### Breaking Changes!&#13;
-&#13;
-- **Start With Random Sports:** Now accepts a number from `0–4` instead of on/off. Default: `4`.&#13;
-- **Start with Party Modes:** Now accepts `0–4` instead of on/off. Default: `0`.&#13;
-- Either Start With Random Sports OR Start With Party Modes must be at least 1! If not, the generator will pick a random amount of Sports OR Party Modes to start with.&#13;
-- **Enable Points Win (Basketball/Hockey):** Now has three options: `off`, `win_set`, and `win_round`.&#13;
-- **Death Link Action:** The default is now `losing_a_match`. Ties only trigger Death Link if you select `losing_or_tying_a_match`.&#13;
-- **Enabled Party Modes:** Now defaults to none instead of Feed Petey and Smash Skate.&#13;
-&#13;
-### Added&#13;
-&#13;
-#### Gameplay and Progression&#13;
-&#13;
-- Added **Progressive Party Mode Court**, which unlocks party mode courts and songs across three tiers when Progressive Court is enabled.&#13;
-- You can now choose how many random sports and party modes you start with.&#13;
-- Added a safeguard that grants 1–4 random sports or party modes if you would otherwise start with neither.&#13;
-- Starting sports and party modes are limited to the number you've enabled.&#13;
-- Added **Win Round** for Basketball and Hockey, allowing the point target to end the entire round instead of just a set or period.&#13;
-&#13;
-#### Client Features&#13;
-&#13;
-- Added a settings group for configuring your game ISO and Dolphin executable.&#13;
-- Added automatic Dolphin launching when `auto_open` is enabled. - Check your host.yaml for both of these!&#13;
-- Added `/roster_fix` to fix overlapping roster characters.&#13;
-- Added a background roster patch that applies automatically at startup.&#13;
-- Added `/super_debug` to display game, boss/goal, and Death Link status.&#13;
-- Added the ability to skip the four sport tutorials.&#13;
-- Improved goal tracking across disconnects and reconnects.&#13;
-- Death Link health recovery for Behemoth and Behemoth King now appears as a coloured chat message.&#13;
-- Improved client messages when waiting for game memory or when no save file is loaded.&#13;
-&#13;
-#### Documentation and Packaging&#13;
-&#13;
-- Updated the README, setup guide, and known-bugs documentation.&#13;
-- Added an Alt Paths Guide link and Mac setup instructions.&#13;
-- Added a new application icon.&#13;
-- Updated packaging to exclude developer files from the distributed APWorld.&#13;
-&#13;
-### Changed&#13;
-&#13;
-#### Logic and Generation&#13;
-&#13;
-- **Special Meter** is now a progression item regardless of Special Sanity.&#13;
-- Cup, alternate path, and Sports Mix entrances now correctly require their corresponding sport unlocks.&#13;
-- Progressive Court requirements now scale with enabled sports instead of using a fixed number of courts.&#13;
-- Party mode courts now use individual logic, including the new progressive tiers.&#13;
-- Improved validation for Special Sanity and Character Sanity settings.&#13;
-- Generation is now deterministic: the same seed and YAML produce consistent results.&#13;
-- Improved Universal Tracker compatibility.&#13;
-- Reorganised Harmony Hustle songs to match the new tier layout.&#13;
-- Renamed item groups to avoid naming conflicts.&#13;
-&#13;
-#### Client Behaviour&#13;
-&#13;
-- Updated game memory addresses for Behemoth HP and exhibition difficulty. - Should fix goal error!&#13;
-- Fixed Flower Cup bridge-toggle logic.&#13;
-- Improved item processing and court unlock order.&#13;
-- Corrected Death Link behaviour for losses, ties, and received effects.&#13;
-- Fixed score detection for set-based and round-based point wins.&#13;
-- Improved disconnect handling and Final Fantasy character unlock logic.&#13;
-&#13;
-### Fixed&#13;
-&#13;
-- Improved Death Link and point-based goal tracking to prevent missed or duplicated updates caused by desynchronised local state.&#13;
-- Fixed memory-address lookups affecting alternate paths, current nodes, rounds, cups, and sports.&#13;
-- Fixed errors when checking the game region before memory initialises.&#13;
-- Fixed errors when no save file is loaded.&#13;
-- Removed incorrect entries from the Harmony Hustle item table.&#13;
-- Fixed party mode enabled/disabled checks.</content>
-    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mitchell1711/Archipelago/releases/tag/v1.0.0</id>
-    <title>Shovel Knight Pocket Dungeon v1.0.0</title>
-    <updated>2026-10-16T18:50:54+00:00</updated>
-    <author>
-      <name>Mitchell</name>
-    </author>
-    <content># Shovel Knight Pocket Dungeon Archipelago v1.0.0&#13;
-&#13;
-[Setup](https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md) | [Mod Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702)&#13;
-&#13;
-A major update that reworks how dungeon locations and hats are handled. This update will not be backwards compatible with 0.x versions, so make sure both the apworld and mod are on version 1!&#13;
-You can consider this implementation out of beta, as the APWorld has also proven to be stable over the past months and I'm much happier with the current iteration of the features. Of course, I'll still continue to work on updates!&#13;
-&#13;
-### Changes&#13;
-- "Dungeon Shops" have been replaced with "Dungeon Items", instead of needing to enter Chesters relic shop during a dungeon, Archipelago units will fall down from the top of the screen. Defeat them to obtain their item!&#13;
-- Added an option in the .yaml that dictates how many items will fall down during a dungeon, allowing players to increase the speed of getting checks.&#13;
-- Removed the "shuffle hats" option, hats are instead shuffled into the itempool using the filler weights. The keyword "Hats" will shuffle hats randomly into the pool.&#13;
-- Added "per level" to the "hat expiration action" setting in the yaml, this is now the new default.&#13;
-- Added option templates, use "Generate template options" in the launcher to create them.&#13;
-- Chesters camp shop will now show the sprites for items from Pocket Dungeon, a selection of games have also been given custom sprites that represent their game or series.&#13;
-- Hats will now show a pop-up that describes what effect is currently being applied.&#13;
-- Give a received relic directly to the player if they're doing a run, also give a received key fragment if the player is on Scholar Sanctum.&#13;
-- Added a launcher icon for the client!</content>
-    <link href="https://github.com/Mitchell1711/Archipelago/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.6</id>
-    <title>The Legend of Zelda - Oracle of Seasons v25.0.6</title>
-    <updated>2026-10-16T19:42:07+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>## 🗳️ New Options&#13;
-- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
-- Freestanding items can now be removed from the randomizable item pool&#13;
-- The trade sequence can also separately be removed, excluding the pedestal&#13;
-&#13;
-## ⏫ Miscellaneous Improvements&#13;
-- Made Blaino reequip items after the match&#13;
-  - It is also no longer possible to open the ring menu during the match&#13;
-&#13;
-## 🧠 Logic&#13;
-- Added the jump between market and forge with just a feather and pegs in hard&#13;
-- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
-&#13;
-## 🛠️ Bugfixes&#13;
-- Fixed D2's boss room having holes if Digdogger was the boss&#13;
-- Fixed Gleeok freezing when being beaten in D3</content>
-    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.7</id>
-    <title>The Legend of Zelda - Oracle of Seasons v25.0.7</title>
-    <updated>2026-10-16T19:42:07+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>## 🗳️ New Options&#13;
-- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
-- Freestanding items can now be removed from the randomizable item pool&#13;
-- The trade sequence can also separately be removed, excluding the pedestal&#13;
-&#13;
-## ⏫ Miscellaneous Improvements&#13;
-- Made Blaino reequip items after the match&#13;
-  - It is also no longer possible to open the ring menu during the match&#13;
-&#13;
-## 🧠 Logic&#13;
-- Added the jump between market and forge with just a feather and pegs in hard&#13;
-- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
-&#13;
-## 🛠️ Bugfixes&#13;
-- Fixed D2's boss room having holes if Digdogger was the boss&#13;
-- Fixed Gleeok freezing when being beaten in D3</content>
-    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-25.0.7"/>
-  </entry>
   <entry>
     <id>https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/tag/v0.3.2a</id>
     <title>West of Loathing v0.3.2a0</title>
@@ -290,7 +67,7 @@ _This release is backwards compatible down to 6.0.0._</content>
   </entry>
   <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H5</id>
-    <title>Deadlock v1.2.0r2</title>
+    <title>Deadlock v1.2.0r3</title>
     <updated>2026-10-17T01:36:10+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -749,7 +526,7 @@ This will almost certainly break any worlds generated prior to this update. Plea
   </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_3</id>
-    <title>Civilization IV v0.0.1r3</title>
+    <title>Civilization IV v0.0.1r2</title>
     <updated>2026-10-18T06:04:27+00:00</updated>
     <author>
       <name>VincentSIFTD</name>
@@ -1567,5 +1344,148 @@ Fixed hint message having an extra space&#13;
 Added "Please Wait..." message in-between clicking free mark and getting server confirmation&#13;
 </content>
     <link href="https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4-RC-h1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.5</id>
+    <title>DOOM Eternal v0.6.5</title>
+    <updated>2026-10-19T18:46:53+00:00</updated>
+    <author>
+      <name>snowzzrra</name>
+    </author>
+    <content># DOOM Eternal Archipelago v0.6.5&#13;
+&#13;
+## Gameplay and item delivery&#13;
+&#13;
+- Fixed the Unmaykr check still triggering when inserting a single or more (less than all of them) Empyrean Key. The check waits until you collect the weapon.&#13;
+- Fixed DeathLink stopping both incoming and outgoing deaths after cancelling a pending death.&#13;
+- Mission completion checks keep updating if DeathLink encounters an error.&#13;
+- Prevented leftover mission checks from a previous room from completing missions in a new room.&#13;
+- Fixed Weapon Upgrade Points blocking later item deliveries when local delivery history was missing. Recovery accounts for points already received without refunding spent points.&#13;
+- Fixed a Windows item-delivery error affecting drives such as exFAT.&#13;
+&#13;
+## Launcher and save recovery&#13;
+&#13;
+- Improved recovery for usable AP saves incorrectly reported as corrupted.&#13;
+- Added an automatic local backup before attempting to resume an existing AP save.&#13;
+- Added save details and **Copy details** under **AP SAVE**, plus an option to back up available local files with the game closed.&#13;
+- Support reports include more information about missing or inaccessible save files.&#13;
+- Added **SELECT PROTON** shortcuts in Session and Help. Saving a valid selection retries preparation for the connected room.&#13;
+- Improved session startup, communication and shutdown on Linux/Proton, including CachyOS.&#13;
+&#13;
+## APWorld — newly generated rooms only&#13;
+&#13;
+**The APWorld determines mission order, item placements and progression rules when you generate a room. The changes below require a new room generated with APWorld v0.6.5.**&#13;
+&#13;
+- Fixed progression getting stuck with **Vanilla Order + Full Saga + Kill the Icon of Sin**. Final Sin stays at the end of the campaign.&#13;
+- Fixed some randomized campaigns placing items needed for their opening missions too late.&#13;
+- Prevented DLC Only campaigns from starting at The Dark Lord when that start could block progression.&#13;
+- Fixed progression involving The Crucible with DLC content disabled, including the requirement to complete all mission challenges.&#13;
+- Removed the obsolete **DLC Logic Timing** option and its From the Beginning/Late Game choices. DLC missions use their individual equipment and combat requirements.&#13;
+&#13;
+**Existing rooms keep their original mission order, item placements and generation rules. Updating the launcher or installing the new APWorld does not apply these generation fixes to an existing room.**&#13;
+&#13;
+## Updating from v0.6.4&#13;
+&#13;
+Close DOOM and the old launcher, extract the complete v0.6.5 package into a new folder, update to **Sentinel Core 1.0.7**, and reconnect to the same room and slot. Rebuild the room package when prompted.&#13;
+&#13;
+**You can keep your compatible v0.6.x room and AP save for the gameplay, launcher and recovery fixes. No save reset is required.**</content>
+    <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.3</id>
+    <title>plateup v0.2.7.3</title>
+    <updated>2026-10-19T19:41:41+00:00</updated>
+    <author>
+      <name>CazIsABoi</name>
+    </author>
+    <content>## What's New?&#13;
+&#13;
+Fixed Universal Tracker showing the wrong recipes, the tracker now uses the exact dishes and starting dishes your seed generated with, instead of picking a new random set each time it launched. Your tracker's dish checks and logic now match what's actually available in game (thanks to daniel_hlfrd for tracking this down)&#13;
+Fixed `random` yaml options rolling again on the tracker, options are now restored from the generated seed, so the tracker always reflects the settings you actually got&#13;
+&#13;
+## Notes&#13;
+&#13;
+Existing seeds work with the new apworld for tracking, no need to regenerate. Seeds made before this update may still show the wrong recipes if your yaml randomizes the dish count&#13;
+[Mod Version 0.2.7.3](https://github.com/CazIsABoi/PlateUpAPMod/releases/tag/0.2.7.3)&#13;
+</content>
+    <link href="https://github.com/CazIsABoi/Archipelago/releases/tag/0.2.7.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.8</id>
+    <title>Paper Mario v0.6.8</title>
+    <updated>2026-10-19T20:02:05+00:00</updated>
+    <author>
+      <name>icebound777</name>
+    </author>
+    <content>## Changes to existing features&#13;
+&#13;
+* Death Link&#13;
+  * Since the option is not actually implemented yet, it has now been removed from the options list. This should no longer show the option in generated YAML files.&#13;
+&#13;
+## Bugfixes/Corrections&#13;
+&#13;
+* Fix consumable items in the Dry Dry Outpost shop not being considered logical progression, even if they are required for beating the seed. This only manifested in seeds failing to generate when setting `RandomPuzzles` to `True` and `ConsumableItemPool` to `mystery_only`.&#13;
+* Fix logic sometimes considering some Rowf, Koopa Koot, and Dojo locations as excluded, even if 5 or more star spirits were required to beat the seed. This would happen if the number of spirits needed to open Star Way was below 5, but the number of spirits required for the Star Beam item location was 5 or higher.&#13;
+&#13;
+## Other&#13;
+&#13;
+* Migrate logic to AP's RuleBuilder system&#13;
+  * This change aims to make maintaining and understanding the logic easier.&#13;
+* Manifest&#13;
+  * Add `"minimum_ap_version": "0.6.7"` to the manifest, as Archipelago version 0.6.7 or newer is required for the newly added Rule Builder system&#13;
+* AI usage disclaimer&#13;
+  * Add an AI usage disclaimer block to the README file.&#13;
+* More tracker data&#13;
+  * Add the following slot data for trackers to read:&#13;
+    * `kent_c_koopa` option value&#13;
+    * `bowser_door_quiz` option value</content>
+    <link href="https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/bmorledge-hampton19/bitty_buddies_apworld/releases/tag/1.0.1</id>
+    <title>Bitty Buddies v1.0.0r2</title>
+    <updated>2026-10-19T20:32:21+00:00</updated>
+    <author>
+      <name>Ben Morledge-Hampton (Dr. Bean)</name>
+    </author>
+    <content>Fixes a bug where generation alongside some worlds (e.g., Wind Waker) would fail because Bitty Buddies item names were StrEnums instead of regular strings.</content>
+    <link href="https://github.com/bmorledge-hampton19/bitty_buddies_apworld/releases/tag/1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.11.4</id>
+    <title>Void Stranger v0.11.4</title>
+    <updated>2026-10-19T20:51:28+00:00</updated>
+    <author>
+      <name>CriminalPancake</name>
+    </author>
+    <content>## What's Changed for v0.11.4&#13;
+&#13;
+- Fixed mural room stairs from unblocking themselves if moved&#13;
+- Removed Idol Checks from location groups</content>
+    <link href="https://github.com/CriminalPancake/void-stranger-ap/releases/tag/v0.11.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.2</id>
+    <title>Pokemon Black and White v0.4.2</title>
+    <updated>2026-10-19T22:59:57+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <content>## Changelog&#13;
+&#13;
+- Fixed logic of some Opelucid City Battle House trainers&#13;
+- Fixed incorrect regions of some form change events&#13;
+- Fixed form change events being shown in the locations list in the spoiler log&#13;
+- Fixed `Shinysanity` variants sometimes putting booleans into slot data instead of integers&#13;
+- Fixed `Shiny(form)countsanity` still being shown as a dictionary in the spoiler log even if disabled&#13;
+- Fixed `Shinyformsanity` not generating more than one location without using plando mode&#13;
+- Fixed `Shinyformsanity` mistakenly accepting values higher than 72&#13;
+- Fixed `Shinyformcountsanity` never generating more than 16 locations&#13;
+- Fixed generation failures caused by the `Follow/Force evolutions` modifiers in types rando&#13;
+&#13;
+### Is this version compatible with older multiworld slots and save files?&#13;
+Yes, back to 0.4.0&#13;
+However, UT might be inaccurate when tracking worlds generated before 0.4.1</content>
+    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.2"/>
   </entry>
 </feed>

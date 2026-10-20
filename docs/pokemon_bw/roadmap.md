@@ -179,6 +179,7 @@ resulted in that not really being followed, so it was changed to "whatever I wan
   - Fan club chairman levels checks modifier
   - Adjust encounters (like Adjust levels, but with species, based on base stats, mostly just devolve)
   - Synced encounter tables
+  - More encounter tables using behavior+flags editing
   - Ingame options (things changeable in PC, moving Experience modifier here)
     - Season control (only when vanilla or changeable, not randomized)
 - Dowsing Machine as a hard requirement for hidden items (with option)
@@ -215,6 +216,7 @@ resulted in that not really being followed, so it was changed to "whatever I wan
     - Community-made trainers + teams
     - Types
     - Berry fields
+    - Spinning puzzles
   - BW2 maps backport
     - More encounter maps+slots
     - More Visitsanity locations

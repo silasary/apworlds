@@ -9,13 +9,13 @@ in their own game, but with some experimentation, you'll find that their true ta
 
 ## How do I create a config (yaml) file for this game?
 
-The [player options page for this game](../../player-options) contains all the options you need to
+The [player options page for this game](../player-options) contains all the options you need to
 create your config file.
 
 ## What does randomization do to this game?
 
-Buddy level ups, cartridge-specific bonus points, and optionally, buddy power increases, are randomized into the item pool. and random items are sent
-when you achieve goal scores in each cartridge or fulfill special "silly" or "skill" checks (see below).
+Buddy level ups, cartridge-specific bonus points, and buddy power increases can all be randomized into the item pool.
+Items are sent when you achieve goal scores in each cartridge or fulfill special "silly" or "skill" checks (see below).
 The buddy that you start with will also be randomized.
 
 The gameplay itself is unchanged, but you may find yourself forced to develop new strategies as you play through the
@@ -23,15 +23,16 @@ game with a different lineup of buddies than you're used to!
 
 ## What's the goal?
 
-The goal is to achieve the total high score specified in your YAML. The default goal score is 999 (the same as the
-base game) but you can set it as high as 2000 points if you're looking for a challenge!
+The goal is to achieve the total high score specified in your yaml. The default goal score is 999 (the same as the
+base game) but you can adjust this alongside the cartridge goal scores and logic difficulty for shorter/longer games.
 
 ## Where's the setup guide?
+
 Right [here](/tutorial/Bitty%20Buddies/guide_en)!
 
 ## What are the "Silly Checks" that can be enabled in the options?
 
-The silly checks are 5 extra locations centered around interactions between buddies and their sub-optimal cartridges:
+The silly checks are 5 extra tasks for buddies in their sub-optimal cartridges:
 - Bud's silly check (Mean Mugging): Get your shoe stolen by an angry balloon in Bazz's Big Day.
 - Biff's silly check (Heavyweight Champion): Drop to the ground without slowing your fall in Acrobird.
 - Benson's silly check (Frictionless Fruit): Hit one of the banana peels with your tire in Trash Dash.
@@ -40,7 +41,7 @@ The silly checks are 5 extra locations centered around interactions between budd
 
 ## What are the "Skill Checks" that can be enabled in the options?
 
-The skill checks are 5 extra locations for buddies in their optimal cartridges:
+The skill checks are 5 extra tasks for buddies in their optimal cartridges:
 - Bud's skill check (Fast Pharma): Deliver orders to three different customers within 7 seconds in Treatment To-Go.
 - Biff's skill check (Parry King): Deflect 5 balloons with a single block action in Bazz's Big Day.
 - Benson's skill check (Miracle Cure): Go below 0 hp and survive by regenerating health in Have at Thee.
@@ -52,8 +53,14 @@ The skill checks are 5 extra locations for buddies in their optimal cartridges:
 Death links are sent when you receive a game over in a cartridge without at least matching your previous high score.
 This also applies to games you end manually (via the pause menu), so be careful about needlessly resetting!
 
+Additionally, attempts are considered exempt from death link under the following conditions:
+- You received a death link during the attempt.
+- You have not scored any points during the attempt. (bonus points don't count, so you can always quit a game at the
+very start and avoid sending a death link.)
+
 Received death links can have one of two different effects, based on your settings:
 - Game Over: Death links trigger a game over.
 - Next Buddy: Death links trigger a transition to the next available buddy (as if the current buddy just failed).
 
-Additionally, when you receive a death link, the affected attempt becomes exempt from sending a death link.
+Death link settings can be changed in-game from the Bitty Buddies Archipelago main menu.
+This includes the ability to enable/disable death link entirely, regardless of the settings in your yaml.

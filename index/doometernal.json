@@ -93,6 +93,21 @@
       "title": "0.6.4 - Beta",
       "version_simple": "0.6.3",
       "world_version": "0.6.3r2"
+    },
+    "0.6.5": {
+      "created_at": "2026-10-19T18:46:53Z",
+      "description": "# DOOM Eternal Archipelago v0.6.5\r\n\r\n## Gameplay and item delivery\r\n\r\n- Fixed the Unmaykr check still triggering when inserting a single or more (less than all of them) Empyrean Key. The check waits until you collect the weapon.\r\n- Fixed DeathLink stopping both incoming and outgoing deaths after cancelling a pending death.\r\n- Mission completion checks keep updating if DeathLink encounters an error.\r\n- Prevented leftover mission checks from a previous room from completing missions in a new room.\r\n- Fixed Weapon Upgrade Points blocking later item deliveries when local delivery history was missing. Recovery accounts for points already received without refunding spent points.\r\n- Fixed a Windows item-delivery error affecting drives such as exFAT.\r\n\r\n## Launcher and save recovery\r\n\r\n- Improved recovery for usable AP saves incorrectly reported as corrupted.\r\n- Added an automatic local backup before attempting to resume an existing AP save.\r\n- Added save details and **Copy details** under **AP SAVE**, plus an option to back up available local files with the game closed.\r\n- Support reports include more information about missing or inaccessible save files.\r\n- Added **SELECT PROTON** shortcuts in Session and Help. Saving a valid selection retries preparation for the connected room.\r\n- Improved session startup, communication and shutdown on Linux/Proton, including CachyOS.\r\n\r\n## APWorld \u2014 newly generated rooms only\r\n\r\n**The APWorld determines mission order, item placements and progression rules when you generate a room. The changes below require a new room generated with APWorld v0.6.5.**\r\n\r\n- Fixed progression getting stuck with **Vanilla Order + Full Saga + Kill the Icon of Sin**. Final Sin stays at the end of the campaign.\r\n- Fixed some randomized campaigns placing items needed for their opening missions too late.\r\n- Prevented DLC Only campaigns from starting at The Dark Lord when that start could block progression.\r\n- Fixed progression involving The Crucible with DLC content disabled, including the requirement to complete all mission challenges.\r\n- Removed the obsolete **DLC Logic Timing** option and its From the Beginning/Late Game choices. DLC missions use their individual equipment and combat requirements.\r\n\r\n**Existing rooms keep their original mission order, item placements and generation rules. Updating the launcher or installing the new APWorld does not apply these generation fixes to an existing room.**\r\n\r\n## Updating from v0.6.4\r\n\r\nClose DOOM and the old launcher, extract the complete v0.6.5 package into a new folder, update to **Sentinel Core 1.0.7**, and reconnect to the same room and slot. Rebuild the room package when prompted.\r\n\r\n**You can keep your compatible v0.6.x room and AP save for the gameplay, launcher and recovery fixes. No save reset is required.**",
+      "download_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.5/doometernal.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1fbe2c0a65be3c3c8b1b6181672f5ef7320e52b335c9c63c289b83fee2238aef",
+      "html_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 279384,
+      "source_url": "https://api.github.com/repos/snowzzrra/DoomEternal-AP-Mod",
+      "tag": "0.6.5",
+      "title": "0.6.5 - Beta",
+      "version_simple": "0.6.5",
+      "world_version": "0.6.5"
     }
   }
 }

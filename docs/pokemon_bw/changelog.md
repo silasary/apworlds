@@ -1,7 +1,23 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
-## 0.4.1
+## 0.4.2: "Shiny***fix***sanity" update
+
+- Fixed logic of some Opelucid City Battle House trainers
+- Fixed incorrect regions of some form change events
+- Fixed form change events being shown in the locations list in the spoiler log
+- Fixed `Shinysanity` variants sometimes putting booleans into slot data instead of integers
+- Fixed `Shiny(form)countsanity` still being shown as a dictionary in the spoiler log even if disabled
+- Fixed `Shinyformsanity` not generating more than one location without using plando mode
+- Fixed `Shinyformsanity` mistakenly accepting values higher than 72
+- Fixed `Shinyformcountsanity` never generating more than 16 locations
+- Fixed generation failures caused by the `Follow/Force evolutions` modifiers in types rando
+
+### Is this version compatible with older multiworld slots and save files?
+Yes, back to 0.4.0
+However, UT might be inaccurate when tracking worlds generated before 0.4.1
+
+## 0.4.1: "After all, there were still critical bugs" update
 
 - Fixed equal minimum and maximum for catch rates rando failing generation
 - Fixed recursion errors with extended hints if `Consider trades` or `Consider evolutions` is included
@@ -19,7 +35,7 @@ Versions are sorted in ascending order, i.e. the most recent changes are at the 
 
 ### Is this version compatible with older multiworld slots and save files?
 Yes, back to 0.4.0
-However, UT might be inaccurate in tracking worlds generated before this version
+However, UT might be inaccurate when tracking worlds generated before this version
 
 ## 0.4.0: Advanced Dataplandosanity
 
