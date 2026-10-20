@@ -4,7 +4,7 @@ A World subclass that provides helpers for interacting with the rule builder
 
 
 ## Downloads
-- <a href="https://github.com/Turese/LOArchipelagoPlugins/releases/download/1.2.3/look_outside.apworld">Latest Version (1.2.3)</a>
+- <a href="https://github.com/Turese/LOArchipelagoPlugins/releases/download/1.2.4/look_outside.apworld">Latest Version (1.2.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

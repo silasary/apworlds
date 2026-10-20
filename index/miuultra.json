@@ -1,6 +1,7 @@
 {
   "authors": [
-    "KitLemonfoot"
+    "KitLemonfoot",
+    "thearst3rd"
   ],
   "description": "Marble It Up! Ultra is a marble platforming game made by the minds behind the Marble Blast series. \nRoll through an extensive single-player campaign filled with dangerous obstacles, mind-bending paths, shifting gravity, bouncy floors, and potent power-ups.",
   "flags": [],
@@ -90,6 +91,21 @@
       "title": "ArchipelagoMIUU Alpha v0.2.1-hotfix",
       "version_simple": "0.2.0",
       "world_version": "0.2.0r2"
+    },
+    "v0.3.0": {
+      "created_at": "2026-10-18T17:59:51Z",
+      "description": "**NOTABLE:** You can now specifically choose which medals you would like to play with. A minimum of 2 medal types is enforced and must be selected (though one can be substituted with Treasureboxsanity).\r\n**NOTABLE:** Added the Bonus Arc End Goal. You can choose whether to beat just the final level of the Ultra Arc, the Bonus Arc, or both.\r\n**NOTABLE:** The in-game tracker can now be scrolled to see the requirements for different medals and the treasure box, if enabled.\r\n**NOTABLE:** Added an `apDisconnect` command that disconnects you from your current Archipelago server. No more game restarting to switch servers or to reconnect!\r\n\r\n**GENERAL:** Added thearst3rd as co-author.\r\n**GENERAL:** Removed `Bounce Surfaces` as a requirement for *Boomerang*. (Ricocheting off the wall works just as well as the bounce surface.)\r\n**GENERAL:** Fixed a logic bug with *Head In The Clouds*. `Blue Moving Platforms` is now required for all completion levels.\r\n**APWORLD:** Fixed an error where Cosmetic Shuffle Traps had the wrong name internally.\r\n**CLIENT:** Using `apConnect` or `apDisconnect` will automatically return you to the main menu.\r\n**CLIENT:** Added an `apRelease` command for seeds that do not automatically release their checks.\r\n**CLIENT:** The warning message before playing out-of-logic levels will now tell you which medal can't be obtained, or if the treasure box can't be obtained.\r\n**CLIENT:** The Level Select's medal display will now be based on the lowest medal that has been collected, to better account for `/send_location` and `/collect`.\r\n**CLIENT:** Your goal level(s) will now glitter blue and be highlighted blue on the chapter select screen.",
+      "download_url": "https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.3.0/miuultra.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5bb2dba500f71b3c7d68e55aff5287ad423c44f3ee5ed236d07aa0c4cd4eeddf",
+      "html_url": "https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/tag/v0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 13529,
+      "source_url": "https://api.github.com/repos/KitLemonfoot/ArchipelagoMIUU",
+      "tag": "v0.3.0",
+      "title": "ArchipelagoMIUU Alpha v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

@@ -1,3 +1,15 @@
+# Table of contents
+
+- [Encounter Plando guide](#encounter-plando-guide)
+- [Custom encounter rates guide](#custom-encounter-rates-guide)
+- [Text Plando guide](#text-plando-guide)
+- [Modify Levels (advanced mode) guide](#modify-levels-advanced-mode-guide)
+- [Dexsanity Plando guide](#dexsanity-plando-guide)
+- [Stats Plando guide](#stats-plando-guide)
+- [Nested randomness in modifier-based options guide](#nested-randomness-in-modifier-based-options-guide)
+- [Combined goals guide](#combined-goals-guide)
+- [Move Data Plando guide](#move-data-plando-guide)
+
 # Encounter Plando guide
 
 ## How does this work?
@@ -253,23 +265,19 @@ Pokemon Black and White:
 
 ## How does this work?
 
-Instead of writing a single number to determine the amount of random Dexsanity checks you 
-want to have in your world, you can provide a fixed list of dex numbers (or form names 
-for `Formsanity` variants) you want to have checks for. Randomizing wild encounters will 
-also ensure, that your plando'd Dexsanity checks are actually possible.
-However, not randomizing wild encounters and then adding dex numbers that are not 
-catchable in vanilla will only add a location if you plando that species somewhere in the 
-game.
+Instead of writing a single number to determine the amount of random Dexsanity checks you want to have in your world, 
+you can provide a fixed list of dex numbers (or form names for `Formsanity` variants) you want to have checks for. 
+Randomizing wild encounters will also ensure, that your plando'd Dexsanity checks are actually possible.
+However, not randomizing wild encounters and then adding dex numbers that are not catchable in vanilla will only add a 
+location if you plando that species somewhere in the game.
 
 ## How do I use it?
 
-Instead of writing a single number, you can write a list of multiple dex numbers, pokémon 
-names (without the form suffix), dex number ranges, and (weighted or unweighted) lists 
-**as an entry**, i.e. as a list inside a list. Using even further nested lists inside 
-that entry will pick a random element out of them.
-Writing a simple list (e.g. `dexsanity: [1, 4, 7]`) will be interpreted by AP 
-as a list to pick a random entry from, i.e. you will end up with one of the numbers as 
-the amount of random checks.
+Instead of writing a single number, you can write a list of multiple dex numbers, pokémon names (without the form 
+suffix), dex number ranges, and (weighted or unweighted) lists **as an entry**, i.e. as a list inside a list. 
+Using even further nested lists inside that entry will pick a random element out of them.
+Writing a simple list (e.g. `dexsanity: [1, 4, 7]`) will be interpreted by AP as a list to pick a random entry from, 
+i.e. you will end up with one of the numbers as the amount of random checks.
 However, this makes it possible to choose between multiple lists of dex numbers.
 
 In the case of all `Formsanity` variants, you have to write a list of form names (and 
@@ -364,17 +372,14 @@ Every entry (currently) consists of the following keys (with all of them being o
 - `override_evolutions` determines whether the provided list of evolutions should override the existing evolutions 
   (thereby excluding that pokémon from evolution randomization) or append to the existing (potentially randomized) 
   evolutions. It is optional and defaults to `true` if omitted.
-- `levelup_moveset` will override that pokémon's levelup moveset (or append to them). 
-  It is an optional list of level-move entries. If it's supposed to override the levelup
-  moveset, at least one move learned at level 1 must be added. Each entry has the 
-  following format:
+- `levelup_moveset` will override that pokémon's levelup moveset (or append to them). It is an optional list of 
+  level-move entries. If it's supposed to override the levelup moveset, at least one move learned at level 1 must be 
+  added. Each entry has the following format:
   - `level` is the level at which the move should. Allowed values are in range 1-100.
-  - `move` is the name of the move that should be learned. Any move in the game is 
-    allowed to be used.
-- `override_levelup_moveset` determines whether the provided list of levelup moves should 
-  override the existing evolutions (thereby excluding that pokémon from levelup moves 
-  randomization) or append to the existing (potentially randomized) 
-  moves. It is optional and defaults to `true` if omitted.
+  - `move` is the name of the move that should be learned. Any move in the game is allowed to be used.
+- `override_levelup_moveset` determines whether the provided list of levelup moves should override the existing 
+  evolutions (thereby excluding that pokémon from levelup moves randomization) or append to the existing (potentially 
+  randomized) moves. It is optional and defaults to `true` if omitted.
 - `tm_hm_compatibility` adds a list of TMs and HMs to the list of (potentially randomized) already compatible TMs and 
   HMs. Each list entry needs to be written as `TMxx` or `HMxx` with `xx` being the number. It is optional and defaults 
   to an empty list if omitted.
@@ -445,25 +450,53 @@ Pokemon Black and White:
       egg_groups: [Monster, "Human-Like"]
 ```
 
+# Nested randomness in modifier-based options guide
+
+## How does this work?
+
+Modifier-based options (e.g. `Randomize Wild Pokémon`) natively support values like `random` or `random-range-0-5` to 
+get a random amount of unique modifiers.
+The options in this apworld additionally support nested lists to give more control over what modifiers should be rolled.
+
+## How do I use it?
+
+Instead of writing a modifier's name as an entry in the option, you can write a whole list, of which a random value 
+should be chosen from.
+Weighted lists, a `null` value for not choosing any modifier, and comma-separated modifiers in a single string 
+(i.e. inbetween two `"`) for choosing multiple modifiers at once are supported as well.
+
+## An example on how using this option could look like
+
+```
+Pokemon Black and White:
+  ...
+  randomize_wild_pokemon:
+    # Always included:
+    - Ensure all obtainable
+    # Only one of them will be included:
+    - [Prevent overpowered pokemon, Prevent bad early pokemon]
+    # 50% chance to include "Type themed areas":
+    - [Type themed areas, null]
+    # Either ONLY Prevent rare encounters or Area 1 to 1 AND Merge Phenomena will be included:
+    - [Prevent rare encounters, "Area 1 to 1, Merge Phenomena"]
+```
+
 # Combined goals guide
 
 ## How does this work?
 
-Usually, you choose one of many goals of an apworld, which is, well, the goal of your 
-adventure. 
-This game features a "Pokémon master" goal, which combines all other goal, 
-similar to Stardew Valley's "Perfection" goal.
+Usually, you choose one of many goals of an apworld, which is, well, the goal of your adventure. 
+This game features a "Pokémon master" goal, which combines all other goal, similar to 
+Stardew Valley's "Perfection" goal.
 Using combined goals, you can make a Pokémon master goal with a somewhat smaller scope.
 
 ## How do I use it?
 
-Instead of writing a single goal, you can write a list of multiple goals **as an entry**, 
-i.e. as a list inside a list. 
-Writing a simple list (e.g. `goal: ["ghetsis", "cobalion"]`) will be interpreted by AP 
-as a list to pick a random entry from, i.e. you will end up with only one of the 
-provided goals.
-However, this makes it possible to choose between multiple combinations, including 
-single goals.
+Instead of writing a single goal, you can write a list of multiple goals **as an entry**, i.e. as a list inside a list. 
+Writing a simple list (e.g. `goal: [ghetsis, cobalion]`) will be interpreted by AP as a list to pick a random entry 
+from, i.e. you will end up with only one of the provided goals.
+However, this makes it possible to choose between multiple combinations, including single goals.
+This also supports the nested randomness of modifier-based options.
 
 ## An example on how using this option could look like
 
@@ -473,7 +506,7 @@ Pokemon Black and White:
   goal:
     # One of the 3 (combined or single) goals will be chosen at random
     - [tmhm_hunt, legendary_hunt]
-    - [seven_sages_hunt, cobalion]
+    - [seven_sages_hunt, cobalion, [ghetsis, champion]]
     - cynthia
 ```
 

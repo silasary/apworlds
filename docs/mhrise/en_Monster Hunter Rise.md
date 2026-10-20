@@ -24,11 +24,16 @@ across the multiworld as Archipelago items. Hunting a licensed monster
 sends a check to the AP server, which causes the multiworld to release
 more items — including more licenses.
 
-The license requirement is a **soft gate**: the player can fight any
+Additionally, the huntathon monster pool is partitioned into three
+tiers of monsters: an easy tier, a medium tier, and a hard tier.
+Access to each tier is gated by completing at least half of the previous tier.
+The goal monster for the seed is gated behind clearing half of the hard tier.
+
+The license and tier requirements are a **soft gate**: the player can fight any
 monster, but the check only sends when the player holds the
-corresponding license. Hunting an unlicensed monster simply does
-nothing from Archipelago's perspective. Goal: hunt the goal elder
-dragon.
+corresponding license and meets the tier requirements. Hunting an monster while
+missing a requirement simply does nothing from Archipelago's perspective. 
+Goal: hunt the goal elder dragon.
 
 ### Quest Randomizer (`quest_rando`)
 
@@ -36,7 +41,7 @@ dragon.
 > at the moment a quest is cleared, so a save that has already 
 > cleared quests will need to redo them.
 
-Every village quest in the pool has its **boss monster swapped** to a
+Every quest in the pool has its **boss monster swapped** to a
 random other monster (chosen at generation time, applied in-game when
 you connect). So you might fight a Magnamalo quest and a Rathalos shows up
 instead.
@@ -48,9 +53,9 @@ equipped weapon type). This is a **soft gate** like Hunt-A-Thon: the
 game's own progression decides which quests are visible and clearable;
 Archipelago only registers the checks once you hold the correct items.
 
-The **goal** is clearing the village urgent quest,
-**Comeuppance** (vanilla Magnamalo) — its boss is randomized too when
-quest-monster swapping is on.
+The **goal** is clearing a target urgent quest. The specific quest depends
+on which quest pool you select. The default village quest pool targets
+**Comeuppance** (vanilla Magnamalo), the hub quest pool targets **Serpent Goddess of Thunder**, (vanilla Narwa) and the sunbreak quest pool targets **Proof of Courage** (vanilla Gaismagorm).
 
 The `RandomizeQuestMonsters` option (default **on**) controls the swap.
 Turn it off and the quests keep their vanilla bosses — the mode reduces
@@ -108,7 +113,93 @@ tracker overlay.
   while holding the relevant licenses (the monster's
   license, plus the current weapon's license when `IncludeWeapons` is
   on).
-- **Quest Randomizer:** clearing a pool village quest
+- **Quest Randomizer:** clearing a pool quest
   while holding that quest's `Unlock:` item (plus the
   current weapon's license when `IncludeWeapons` is on). Each clear
   sends two checks.
+
+## List of Monster Names
+If you want to exclude specific monsters from the randomization pool, you can refer to this list of monsters for the correct spelling and capitalization expected by the options file.
+### Non-Elder Dragons
+#### Base Game
+* "Rathian"
+* "Rathalos"
+* "Khezu"
+* "Basarios"
+* "Diablos"
+* "Tigrex"
+* "Nargacuga"
+* "Barioth"
+* "Barroth"
+* "Royal Ludroth"
+* "Great Baggi"
+* "Zinogre"
+* "Great Wroggi"
+* "Arzuros"
+* "Lagombi"
+* "Volvidon"
+* "Mizutsune"
+* "Magnamalo"
+* "Bishaten"
+* "Aknosom"
+* "Tetranadon"
+* "Somnacanth"
+* "Rakna-Kadaki"
+* "Almudron"
+* "Goss Harag"
+* "Great Izuchi"
+
+#### Sunbreak
+* "Daimyo Hermitaur"
+* "Shogun Ceanataur"
+* "Anjanath"
+* "Pukei-Pukei"
+* "Kulu-Ya-Ku"
+* "Jyuratodus"
+* "Tobi-Kadachi"
+* "Bazelgeuse"
+* "Lunagaron"
+* "Garangolm"
+* "Espinas"
+* "Seregios"
+* "Astalos"
+* "Gore Magala"
+* "Blood Orange Bishaten"
+* "Aurora Somnacanth"
+* "Pyre Rakna-Kadaki"
+* "Magma Almudron"
+* "Flaming Espinas"
+* "Gold Rathian"
+* "Silver Rathalos"
+* "Lucent Nargacuga"
+* "Violet Mizutsune"
+* "Chaotic Gore Magala"
+* "Scorned Magnamalo"
+* "Seething Bazelgeuse"
+
+### Elder Dragons
+#### Base Game
+* "Rajang"
+* "Kushala Daora"
+* "Chameleos"
+* "Teostra"
+* "Wind Serpent Ibushi"
+* "Thunder Serpent Narwa"
+
+#### Sunbreak
+* "Velkhana"
+* "Malzeno"
+* "Gaismagorm"
+* "Shagaru Magala"
+* "Amatsu"
+* "Furious Rajang"
+* "Crimson Glow Valstrax"
+* "Narwa the Allmother"
+* "Primordial Malzeno"
+
+#### Risen
+* "Risen Kushala Daora"
+* "Risen Chameleos"
+* "Risen Teostra"
+* "Risen Shagaru Magala"
+* "Risen Crimson Glow Valstrax"

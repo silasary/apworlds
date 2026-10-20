@@ -456,6 +456,21 @@
       "title": "0.7.2",
       "version_simple": "0.7.2",
       "world_version": "0.7.2"
+    },
+    "v0.8.0": {
+      "created_at": "2026-10-19T04:39:34Z",
+      "description": "Baldur's Gate 3 Archipelago Version 0.8.0 BETA:\r\n\r\nRelease of Act 3! Support for Questsanity, Killsanity and Containersanity.\r\nQuestsanity has been untested. Block Entrances has been untested. I make no guarantees either option is even playable.\r\nI have used the ap_out of my successful run to run as test verification against killsanity and containersanity, so those should at least be playable, but I have not done much examination regarding what kills/containers may exist in alternative configurations of act 3's events.\r\n\r\nAlso included in this release:\r\n* Changed default yaml to be Killsanity instead of Questsanity\r\n* Removed Sync Method from the yaml options (after the 0.7.0 revamp it wasn't very relevant)\r\n* Improved some documentation (options have location count updates, a warning on Confusion traps, revamped the setup docs to treat this release as source of truth)\r\n* Fixed a logic glitch that would force Underwell access too early\r\n* Fixed the \"Find Benryn\" location to have more triggers\r\n* Renamed \"Nightsong: Enter Underdark\" to \"... through Temple\" since apparently it only triggers that direction.\r\n* Minor fixes to Act 1+2 containersanity\r\n* Filtered out summons from killsanity logs because they're never locations and the @$#%@#% wizards in act 3 spam like nothing\r\n* Fixed the Waypoint lockout- Act 2 Shar Trials and Act 3 should no longer remove waypoints from the waypoint list. I _don't_ know how successful this is at actually being able to visit old waypoints and accomplishing things, but it seemed like a good start.\r\n* Some mild revamps to the container highlight aura for optimization.",
+      "download_url": "https://github.com/zane31415/ArchipelagoBG3/releases/download/v0.8.0/bg3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "09a94fb5f8bb85793e41b954b937c254f13d8268611a854c62b3e1b1d72c9b95",
+      "html_url": "https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.8.0",
+      "minimum_ap_version": "0.6.2",
+      "size": 836515,
+      "source_url": "https://api.github.com/repos/zane31415/ArchipelagoBG3",
+      "tag": "v0.8.0",
+      "title": "0.8.0 BETA",
+      "version_simple": "0.8.0",
+      "world_version": "0.8.0"
     }
   }
 }

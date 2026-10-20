@@ -1,0 +1,299 @@
+Bit flag table is in common 0017.bin
+
+FUN_80138970 unlocks new colosseums, with the use of SetSaveSlotFlag
+It also seems to handle a bunch of other flags
+
+Bit Flag Table IDs
+0xe = Gateway Wins
+0xf = Main Street Wins
+0x10 = Waterfall Wins
+0x11 = Neon Wins
+0x12 = Crystal Wins
+0x13 = Sunny Park Wins
+0x14 = Magma Wins
+0x15 = Courtyard Wins
+0x16 = Sunset Wins
+0x17 = Stargazer Wins
+0x2d = Gateway Unlock
+0x2e = Main Street Unlock
+0x2f = Waterfall Unlock
+0x30 = Neon Unlock
+0x31 = Crystal Unlock
+0x32 = Sunny Park Unlock
+0x33 = Magma Unlock
+0x34 = Courtyard Unlock
+0x35 = Sunset Unlock
+0x36 = Stargazer Unlock
+0x39 = Post Game
+0x251 = Gateway Post Game Win
+0x257 = Sunny Park Post Game Win
+0x25a = Courtyard Post Game Win
+0x25c = Stargazer Post Game Win
+0x280 = Is the Player Currently Borrowing a New Rental Pass from Gateway?
+
+Colosseum Unlock Calls:
+InitSaveSlotFlags = Gateway and Main Street Unlock
+80139ec4 = Waterfall Unlock
+80139f04 = Neon Unlock
+80139f14 = Crystal Unlock
+80139f84 = Sunny Park Unlock
+80139fd4 = Magma Unlock
+80139fe4 = Sunset Unlock
+8013a054 = Courtyard Unlock
+8013a0a4 = Stargazer Unlock
+
+
+FUN_800e7f24 sets various flags for Battle Passes
+param 1 = What flag to change
+param 2 = What to set it to
+param 3 = Pass id
+
+Rental Pass ids are from 0x25-0x2A
+0x25 = Cyndy
+0x26 = Nate
+0x27 = Tommy
+0x28 = Daisy
+0x29 = Joel
+0x2A = Natalie
+
+80452998+ tracks what Rental Passes are visible in the rental pass menu
+
+Rental Pass Values:
+0x4a = Cyndy
+0x4b = Cyndy (Disabled)
+0x4c = Nate
+0x4d = Nate (Disabled)
+0x4e = Tommy
+0x4f = Tommy (Disabled)
+0x50 = Daisy
+0x51 = Daisy (Disabled)
+0x52 = Joel
+0x53 = Joel (Disabled)
+0x54 = Natalie
+0x55 = Natalie (Disabled)
+
+800d1f50 gives you a rental pass when borrowing it at Gateway
+
+8010ba14 removes a rental pass after losing at Gateway
+
+801389e4+ runs when you beat Gateway (potential hook point for location check?)
+
+800d2034 calls the unlock for starter pass
+
+FUN_800e7ce8 does various things related to rental passes, depending on its parameters
+most notably, it counts how many rental passes pass a certain condition, such as being in gateway or being unlocked
+Case 0xc checks if a rental pass is in Gateway (so if bit 3 is checked, but not bit 4)
+800e7e60 is the check for bit 4 not being 0
+
+800886a0 checks if all Rental Passes have been unlocked, and if so, skips the menu that let's you choose between using one of your Rental Passes or borrowing a new one.
+
+800c8b08 checks which Rental Passes can show up in the Borrow New Pass menu.
+
+80086cf4 check whether the Borrow New Pass button should be pressable.
+
+Other addresses that check if a Rental Pass is in Gateway (not sure what these do): 
+	800dccd4
+	800c8930
+
+800cdbd4 may be starting rental pass call? probably not
+
+8008f0f8 handles the buttons in Colosseum Battle menu
+Cases 0x0-0x9 handle if you can select each colosseum
+From case 0xa onwards, even cases handle how to display the button icons,
+while odd cases handle the arrows pointing to each colosseum's location on the map
+
+Rental Passes become available to borrow through FUN_800e8aa8 (which is weird cuz SetBattlePassFlag already has a case for it?)
+It gets called by FUN_8013bf94, which has various cases for many Passes, even ones that aren't Rental Passes
+Note that it has a check to see if the Pass has already been unlocked before adding it to Gateway
+This function, in turn, gets called by FUN_8013a354, which does various things based on what flags are turned on
+8013a820 onwards handles adding Tommy, Daisy, Joel and Natalie to Gateway
+It checks a certain flag, and if said flag is 1, it adds a specific Rental Pass to Gateway
+Flag 0x1ff is checked for Tommy
+Flag 0x201 is checked for Daisy
+Flag 0x203 is checked for Joel
+Flag 0x205 is checked for Natalie
+These flags are turned on in FUN_80138970, in addresses 80139c30 and onwards
+The function seems to run every time you beat a colosseum
+Flags 0x1ff, 0x200, 0x194, 0x201, 0x202 and 0x195 are turned on if the player has beaten Main Street and Waterfall
+Flags 0x203, 0x204, 0x196, 0x205, 0x206 and 0x197 are turned on if the player has beaten Neon, Crystal and Sunny Park, as well as having unlocked at least 2 Rental Passes
+
+
+80626e9b tracks what menu button the cursor is hovering over
+80626ea3 tracks what menu button the Wii Remote pointer is hovering over
+FUN_8005b5ec seems to be responsible for dealing with the cursor in menus
+8005ba88 sets the default menu button the cursor should hover over when entering a new menu, with set default button being param_2
+800852e8 is the call to FUN_8005b5ec that sets the default cursor position when entering the Colosseums menu, with param_2 being DAT_8062700c
+80084de4 is where DAT_8062700c gets set to 2 (Main Street Colosseum)
+
+
+SetButtonDPadMapping (FUN_80053fe8) sets the d-pad mappings for a specific menu button id, taking a base address as a parameter, which it uses to find the location of each mapping in memory
+
+SetButtonDPadMappingFrom0x8044c258 (FUN_8005b548) calls SetButtonDPadMapping with 0x8044c258 as the start_address parameter. It also sets DAT_8044d420 + button_id * 2 to param_6, not sure for what purpose this is though.
+
+SetGroupButtonDPadMapping (FUN_80084cac) runs a loop to set the mappings for multiple different buttons, using SetButtonDPadMappingFrom0x8044c258. It takes a memory address as a parameter, with a said memory address containing the start of a bunch 4 byte groups of button mappings, with each byte representing a direction (in the order of up left right and down). The loop will read a group of button mappings, set is as the mappings for a button id, increment the button id and then move on to the next group of mappings, rinse and repeat until one of the groups starts with 0xFF, which signal it to break the loop and end the function.
+
+FUN_80084d10, specifically from 0x80084f20 onwards, handles where pressing each direction on the d-pad should take you in the Colosseum Battle menu. It achieves this through a ton of nestled if-else statements, each one checking for if the player lacks at least 1 of a specific group of Colosseums, meant as a way to check for different game states. Once it finds a specific game state, it calls SetGroupButtonDPadMapping, with an address to a different set of mappings depending on the game state, and SetButtonDPadMappingFrom0x8044c258, to set the mappings for the return button, said mappings being 0 for every direction except for up, which is either 1 (Gateway) or 6 (Sunny Park) depending on the game state.
+
+
+0x806251b8 - Pointer To Some Table About The Bitflag In The Save File, Set At Runtime (Maybe loaded from fsys file?)
+0x80627336 (byte) - The Save Slot To Save The Bits For? At the very least when initing.
+0x800e6d58 - InitAllBattlePasses (func)
+0x80629880 (8 bytes, double) - The Initial Play Time Value (0, duh)
+0x800566A0 - Does nothing, but takes a save_slot_idx. Probably defunct debug function. (func)
+0x801673C8 - Does something to init bit flags for save_slot_idx using the table above. (func)
+0x80166b84 - Does something to init bit flags for save_slot_idx using the table above. (func)
+
+0x801673C8, 0x80166b84 unclear to me how these functions are different? Yes, one has an extra check, but the previous one has a loop with no check so should it not already be handled by the first loop? 
+0x806251b8 may hold the values to initialize the bitfield with but it's hard to tell for...
+BITFLAG_TABLE
+0x0 - Number of Bitflags (0x28D)
+0x10 - Pointer To Bitflags Init Value Entries? (In my testing this has always been a pointer BITFLAG_TABLE + 0x30, but not sure if that is guaranteed) 
+BITFLAG_TABLE_ENTRY (Each Entry is 0xC in Size)
+0x0 (word) is the initial value to set the flag to I believe (unsurprisingly, most are initialized to 0)
+0x4 (word) is related to the offset of the flag? 
+0x8 (byte) is the size in bits possibly?
+0x9 (byte) if true, does something after init in FUN_801673C8 to init again?
+
+
+The word at 91c0f4dc + 0x4 is read on loop at many points in the game
+It is read by FUN_8039a298, which is called at 801675f8
+
+The byte at 91c0f4dc + 0x8 is read on loop at many points in the game
+It is read by FUN_8039a230, which is called at 801675e8
+
+The word at 91c0d898 + 0x4 is read during the intro movie showcasing Pokétopia
+It is read by FUN_8039a298, which is called at 801675f8
+
+The byte at 91c0d898 + 0x8 is read during the intro movie showcasing Pokétopia
+It is read by FUN_8039a230, which is called at 801675e8
+
+Various bytes and words are read on loop in Colosseum select menu
+This includes:
+91c0dae4, 91c0f4dc, 91c0da84, 91c0da90, 91c0da9c, 91c0daa8, 91c0dacc,
+91c0dac0, 91c0dad8, 91c0dab4, 91c0da6c, 91c0dafc, 91c0d8f8, 91c0da78,
+91c0d904
+
+
+Fresh Save File Documentation
+
+As soon as file name is inputted:
+0x010 : Name is set
+0x030 : Birth month is set to "??"
+0x038 : Birth day is set to "??"
+0x040 : Region ID is set to 00 DC
+
+0x12510 : becomes 75 00 00 00 9A 3E 80 50 00 7F F1 CA (non-00 values seem to be random each time i perform this action)
+
+Nothing seems to change during either cutscene
+
+By the time Anna introduces herself:
+0x00004 : (from null) 40 17 7D 2F 1A A0
+0x124DC : set to 02 02
+
+When first rental pass screen is loaded, all Rental
+Passes are copied into the save data.
+
+After choosing Cydney's rental pass:
+0x124DD : 02
+0x125B7 : 10
+0x23A39 : 58
+
+0x124E0 : Marks that (i fucking ctrl+z'd and lost what this was)
+
+0x15CB8 : Marks the design of pass unlocked by 0x15CB9? Changes to 01 when pass design is used?
+0x15CB9 : Marks if pass at 0x15CB8 is unlocked?
+
+Upon starting first battle in Gateway Colluseum using Nate's rental pass:
+
+803 bits changed (5 are play time)
+
+0x58605 : bytes here might track colluseum progress?
+byte set to 01 upon starting match, with the neighboring
+one set to 00 (from FF)
+
+0x5DD4C : game does a BUNCH of shit here post winning match 1
+
+0x5DD4C : 4 bytes change immediately upon opponent's final pkmn returning to ball
+0x5DD4C : 4 bytes change AGAIN immediately before 'YOU WIN'
+
+Game seems to remove your unselected PKMN'd data from the battle pass in memory. Replaces it
+when the battle 
+
+0xC79FC : Game seems to store previous opponent's PKMN here after winning a battle (upon 'YOU WIN!' text appearance)
+
+After beating Gateway for the first time
+0x4B8B0 : Joe's Battle Pass information is stored here (PIDs rerolled? imagine it being shiny lmao)
+0x125B7 : Gateway Colosseum Clears (00 -> 01) 
+0x124F0 : (00 -> 01)
+0x124FD : (00 -> 01)
+0x1251F : (00 -> 80)
+0x12579 : Bronze Badge? (00 -> 05), then immediately (05 -> 06)
+0x12581 : Also Bronze Badge? (00 -> 50), then immediately (50 -> 60)
+
+After beating Main Street for the first time
+0x1250B : (01 -> 05)
+0x12568 : (00 -> 20)
+0x124F7 : (00 -> 01)
+0x124FC : (00 -> 01)
+0x12509 : (30 -> 70)
+0x1251D : (00 -> 80)
+0x12579 : (06 -> 56) -> PIKACHU badge -> (56 -> A6)
+0x1258C : (00 -> 04) -> PIKACHU badge -> (04 -> 08)
+0x1259C : (00 -> 01) -> News from Poketopia -> (01 -> 02)
+0x4CD74 : Taylor's Battle Pass info here WHY tho???
+
+(Told: Unlocked PIKACHU badge, new battle pass, and waterfall colosseum)
+
+Upon entering menu after "transfering PKMN from DS":
+0x12579 : (A6 -> AA)
+0x12581 : (60 -> A0)
+0x155CD : (00 -> 08)
+0x19B05 : (00 -> 08)
+0x58600 : (02 -> 14)
+
+
+-- Axcel's madman's notes on FUN_8016746c which may be illegible --
+
+r0 = lr
+r30 = param 1
+r28 = param 2
+r27 = param 3
+
+r29 = 80625174
+
+r4 = param 1
+r3 = r29 + 0x44 = 806251b8
+
+r3 = value in 806251b8 = 91c0d820
+
+r0 = param 1 * 0xC
+
+r3 = value in 0x0010(r3) + r0 = 91c0d850 + r0 
+
+r3 = value in 0x0008(r3)
+
+r31 = 91a2f4ac
+rlwinm    r31, r3, 0, 24, 31 (000000ff)
+r31 = 0x1
+
+r3 = r29 + 0x44 = 806251b8
+
+r3 = value in 0x0010(r3) + r0
+
+r3 = 0x0004(r3) = 0x196
+
+rlwinm    r27, r3, 27, 5, 31 (ffffffe0)
+rlwinm    r30, r3, 0, 27, 31 (0000001f)
+
+r4 = 0x80460000
+r3 = 0x00070000
+
+r4 = -0x2180(r4) = 0x918f6d40
+
+-- stuff I didn't write down (my brain was melting) --
+
+r4 = 0x918f6d40
+rlwinm    r4, r27, 2, 0, 29 (3fffffff) = 0x00000030
+r29 = current save slot + 0x124D8
+
+Bit to turn on = 0x1 shifted left by (bits 27-31 of the value in (save file start address + 0x316B10) + param1 * 12 + 0x4)

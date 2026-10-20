@@ -38,20 +38,20 @@ Otherwise, install `qt6`, `patch`, `git`, `sdl2`, `glew`, `cmake`, `python` and 
 3. Unpack the zip file in an empty folder.
 4. Run the Launcher. On first start, press `Check Requirements`, which will guide you through the rest of the needed steps.
     - Windows: If you did not use the default install directory for MSYS, close this window, check `Show advanced options` and reopen using `Re-check Requirements`. You can then set the path manually.
-5. When finished, use `Compile default SM64AP build` to continue.
-    - **Advanced configuration:** If you want to use additional build options such as Better Camera, No Drawing Distance, etc or apply game patches such as 60FPS, Enhanced Moveset, etc, then use the `Compile custom build` option:
-      - Set a name for your build, e.g. "archipelago" or whatever you like.
-      - Press the `Download Files` button.
-      - Set Make Flags, e.g. `-j8 BETTERCAMERA=1 NODRAWINGDISTANCE=1` to enable Better Camera and No Drawing Distance.
-      - Press `Apply Patches` to select patches to apply. Example patches include:
-        - Automatic Bowser Spin: Hold the joystick in any direction to spin Bowser automatically. Holding it farther from the center accelerates the spin faster, up to vanilla acceleration and maximum-speed limits.
-        - 60FPS: Improves frame rate.
-        - Enhanced Moveset: Gives Mario new abilities. [Details here](https://github.com/TheGag96/sm64-port#extended-moveset-for-sm64).
-      - Press `Create Build`. This will take several minutes.
-      - You can also use the Repository and Branch fields to build with different repos or branches if you want to build using a fork or development version of SM64AP.
-      - For more details, see:
-        - [Available Makeflags](https://github.com/sm64pc/sm64ex/wiki/Build-options)
-        - [Included Game Patches](https://github.com/N00byKing/sm64ex/blob/archipelago/enhancements/README.md)
+5. When finished, use `Compile custom build` to continue. *Do not use the `Compile default SM64AP build` option*    
+    - **Important:** Change the Repository from the default to https://github.com/Alchav/sm64ex 
+    - Set a name for your build, e.g. "archipelago" or whatever you like.
+    - Press the `Download Files` button.
+    - Set Make Flags, e.g. `-j8 BETTERCAMERA=1 NODRAWINGDISTANCE=1` to enable Better Camera and No Drawing Distance.
+    - Press `Apply Patches` to select patches to apply. Example patches include:
+      - Automatic Bowser Spin: Hold the joystick in any direction to spin Bowser automatically. Holding it farther from the center accelerates the spin faster, up to vanilla acceleration and maximum-speed limits.
+      - 60FPS: Improves frame rate.
+      - Enhanced Moveset: Gives Mario new abilities. [Details here](https://github.com/TheGag96/sm64-port#extended-moveset-for-sm64).
+    - Press `Create Build`. This will take several minutes.
+    - You can also use the Repository and Branch fields to build with different repos or branches if you want to build using a fork or development version of SM64AP.
+    - For more details, see:
+      - [Available Makeflags](https://github.com/sm64pc/sm64ex/wiki/Build-options)
+      - [Included Game Patches](https://github.com/N00byKing/sm64ex/blob/archipelago/enhancements/README.md)
 6. Press `Download Files` to prepare the build, afterwards `Create Build`.
 7. SM64EX will now be compiled. This can take a while.
 
@@ -157,6 +157,21 @@ If your Name or Password have spaces in them, surround them in quotes.
 This happens when the game is missing the relevant randomizer data. If you are trying to connect to a server, verify the
 information entered is correct, and for a local file ensure you are using the full file path to the file in conjunction
 with its name.
+
+### Game displays 'Connecting to Serrer' at the title screen and never connects
+
+Double-check that you compiled the build after changing the Repository to https://github.com/Alchav/sm64ex. If you are
+trying to run a core SM64 build on a seed built on Spicy Mycena 64, it won't work.
+
+### Level features/enemies/coins in levels are missing even though AP says I collected them
+
+Make sure you're running the correct version of the client. If the apworld version is 1.0.x but you're trying to play
+on a 0.2.3 client, or vice versa, the world may not sync up properly.
+
+Building using the `archipelago` branch will always build the latest client version. If you need an older version,
+change the branch to the appropriate number. For versions older than 1.0.0, this is the apworld version (e.g. 0.2.3).
+
+All 1.0.x versions of the apworld and client are forward- and backward-compatible with each other.
 
 ## Game Troubleshooting
 

@@ -295,6 +295,20 @@
       "title": "MKWii AP Release Version 0.3.1",
       "version_simple": "0.3.1",
       "world_version": "0.3.1"
+    },
+    "v0.3.2": {
+      "created_at": "2026-10-18T19:30:28Z",
+      "description": "## Release Version 0.3.2: Deathlink Amnesty & Fixes :)\r\nAdded deathlink amnesty, so you can make those deathlinks a little less punishing. I also rewrote some stuff that will help later for a ntsc implementation to the same client. I also fixed some common glitches and frustrations to both the tracker and the client. If you want to help index the memory adresses, pointers and constants for ntsc, check out the `./worlds/mkwii/\"MKWii Client\"/dme_addresses.py` script, it houses all the current memory addresses, pointers and constants for pal. These all need to be translated to ntsc for the client to work. Your help is greatly appreciated, as I do not own a ntsc copy.\r\n\r\n### Changelog:\r\n- [APWorld] Added support for deathlink amnesty.\r\n- [Client] Added support for deathlink amnesty.\r\n- [Client] Added some fun deathlink messages, they are randomly chosen.\r\n- [Client] Rewrote parts of client regarding future-proofing for _future_ ntsc support.\r\n- [Client] Rewrote reporting logic.\r\n- [Client] Fixed mirror mode not unlocking when starting off with a mirror cup as one of your starting cups.\r\n- [Tracker] Removed bloated dependency to decrease file size by approximately 60% (was already included in the build last time but not on the source).\r\n- [Tracker] Fixed issue where another game's release/completion would obstruct vision of completion on cups screen.\r\n \r\n**REQUIRES THIS NEW APWORLD**\r\n_(it can run on the 0.3.1 APWorld but deathlink amnesty will NOT work)_  \r\n\r\n_Linux users, download the source code here to run the client._\r\n\r\n**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.3.1...v0.3.2",
+      "download_url": "https://github.com/toent/Archipelago-MKWii/releases/download/v0.3.2/mkwii.apworld",
+      "has_manifest": false,
+      "hash_sha256": "66842e784db6ea4b87d40ecc92298df0bef2a035d6f0ac551e1bea94ef39f12a",
+      "html_url": "https://github.com/toent/Archipelago-MKWii/releases/tag/v0.3.2",
+      "size": 14237,
+      "source_url": "https://api.github.com/repos/toent/Archipelago-MKWii",
+      "tag": "v0.3.2",
+      "title": "MKWii AP Release Version 0.3.2",
+      "version_simple": "0.3.2",
+      "world_version": "0.3.2"
     }
   }
 }

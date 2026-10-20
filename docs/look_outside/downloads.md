@@ -1,9 +1,12 @@
 # Look Outside
 
 ## Latest
-- <a href="https://github.com/Turese/LOArchipelagoPlugins/releases/download/1.2.3/look_outside.apworld">Latest Version (1.2.3)</a>
+- <a href="https://github.com/Turese/LOArchipelagoPlugins/releases/download/1.2.4/look_outside.apworld">Latest Version (1.2.4)</a>
 
 ## All Versions
+
+#### v1.2.4
+- <a href="https://github.com/Turese/LOArchipelagoPlugins/releases/download/1.2.4/look_outside.apworld">https://github.com/Turese/LOArchipelagoPlugins/releases/download/1.2.4/look_outside.apworld</a>
 
 #### v1.2.3
 - <a href="https://github.com/Turese/LOArchipelagoPlugins/releases/download/1.2.3/look_outside.apworld">https://github.com/Turese/LOArchipelagoPlugins/releases/download/1.2.3/look_outside.apworld</a>

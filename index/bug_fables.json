@@ -1,0 +1,75 @@
+{
+  "authors": [
+    "Tsukino"
+  ],
+  "flags": [],
+  "game": "Bug Fables",
+  "github": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.1.0": {
+      "created_at": "2026-09-26T06:11:46Z",
+      "description": "**Full Changelog**: https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/commits/v0.1.0",
+      "download_url": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/releases/download/v0.1.0/bug_fables.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4def5e954af9bd355a829338dbfadb3666758aa9390ca1c64fc5a8fb190f50a6",
+      "html_url": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/releases/tag/v0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 42308,
+      "source_url": "https://api.github.com/repos/Tsukino-uwu/Bug-Fables-Archipelago",
+      "tag": "v0.1.0",
+      "title": "v0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
+    "v0.2.0": {
+      "created_at": "2026-09-27T09:27:36Z",
+      "description": "### Features\n- New yaml options: Starting Party Member (all three by default), Shuffle Field Moves, Shuffle Jump\n- The goal is now reported to the server\n- Quality of life: Skip confirm, item colours and backgrounds for other players' items, Uncap FPS (experimental)\n- More cutscenes skipped: Snakemouth Den's arrival, the trapdoor, the spider scene\n\n### Logic\n- Snakemouth Den and its trapdoor need the Horn\n- The first boss needs Vi\n- Chuck's Abode and the corridor shortcut are open from the start\n\n### Bug Fixes\n- Fixed a base-game stutter every 5 seconds (the game clears its memory on a timer)\n- Fixed the settings panel's text inside shops\n\n**Full Changelog**: https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/compare/v0.1.0...v0.2.0\n",
+      "download_url": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/releases/download/v0.2.0/bug_fables.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1b024abda90a7a0ef32c65ed9cd77a8776c9b2b85d6a716d7d934d037cc356e5",
+      "html_url": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/releases/tag/v0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 49949,
+      "source_url": "https://api.github.com/repos/Tsukino-uwu/Bug-Fables-Archipelago",
+      "tag": "v0.2.0",
+      "title": "v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "v0.3.0": {
+      "created_at": "2026-10-04T21:24:06Z",
+      "description": "### Features\n- New yaml options:\n  - Enemysanity\n  - Extra Roadblocks\n  - Music Shuffle\n  - Progressive Boat\n  - Shuffle Shop Inventories\n  - Filler Starting Checks\n  - Points of No Return\n- Entrance Randomizer (experimental): Decoupled and Room Swap modes, one-way doors shuffled among themselves\n- The submarine as an item\n- The seven learned field abilities are items, with the scenes that teach them as locations\n- DeathLink\n- Universal Tracker support\n\n### Logic\n- The way to Snakemouth Den stays open once the Explorer Permit opens it\n- The Termite Capitol's gate opens from inside\n\n### Bug Fixes\n- Fixed blockers and scenes that could close an area the logic counts as open\n- Fixed a scene missing its party member freezing\n\n**Full Changelog**: https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/compare/v0.2.0...v0.3.0\n",
+      "download_url": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/releases/download/v0.3.0/bug_fables.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bf928711dd2bc076652a5e6e5cbb5615736c96006881dc33c07132658f6fcfa3",
+      "html_url": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/releases/tag/v0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 127292,
+      "source_url": "https://api.github.com/repos/Tsukino-uwu/Bug-Fables-Archipelago",
+      "tag": "v0.3.0",
+      "title": "v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
+    },
+    "v0.4.0": {
+      "created_at": "2026-10-13T22:17:17Z",
+      "description": "This apworld is still WIP/experimental, and it's not recommended to bring it to any public syncs/asyncs yet. Things should be stable, but a lot of things are untested, and things like logic or cutscenes played out of order might break until properly tested or proven otherwise, so please don't risk ruining the experience of public AP lobbies for others.\r\n\r\n### Features\r\n- Updated for AP 0.6.8\r\n- Room logic for every single room in the game (ground items, how to traverse rooms, shops)\r\n- Final Boss goal, as an actual goal instead of just collecting X artifacts\r\n- Aria is now present in all of the Golden Settlement town maps, and lets you swap between day and night\r\n- New yaml options:\r\n  - Map Shuffle (a new Entrance Randomizer mode)\r\n  - Artifact Shuffle\r\n  - Shuffle Hidden Items\r\n  - Shuffle Dig Spots\r\n  - Shuffle Termacade\r\n  - Minigame Prizes\r\n  - DeathLink (also in the yaml now)\r\n  - Start Inventory from Pool\r\n\r\n### Logic\r\n- Logic begins at the spawn; a tight start gets a forced early item\r\n- Door shuffle retries when it fails, solving entrance rando failures\r\n\r\n### Bug Fixes\r\n- Fixed a lot of softlocks and crashes when doing story-related cutscenes out of order\r\n- Removed a lot of unintended blockers stopping you from going to and from areas related to cutscenes and followers\r\n- Opened up some entrances that could get you stuck when using entrance rando, for example the big wasp door between the Far Grasslands and the desert is always open now\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/compare/v0.3.0...v0.4.0",
+      "download_url": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/releases/download/v0.4.0/bug_fables.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2fd94a917e890824740476db0868033b193fe5f48ce7a43455fe628d22d2953c",
+      "html_url": "https://github.com/Tsukino-uwu/Bug-Fables-Archipelago/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 551890,
+      "source_url": "https://api.github.com/repos/Tsukino-uwu/Bug-Fables-Archipelago",
+      "tag": "v0.4.0",
+      "title": "v0.4.0",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
+    }
+  }
+}

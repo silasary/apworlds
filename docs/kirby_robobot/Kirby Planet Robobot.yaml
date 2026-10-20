@@ -1,0 +1,39 @@
+# Kirby: Planet Robobot — sample options
+#
+# Copy this into your Archipelago/Players/ folder and edit as desired.
+# The game name contains a colon, so it must be quoted in YAML.
+
+name: Player1
+description: "Kirby: Planet Robobot sample"
+game: "Kirby: Planet Robobot"
+
+"Kirby: Planet Robobot":
+  # --- Goal ---------------------------------------------------------------
+  # story_star_dream   : Defeat Star Dream at the end of Story Mode
+  # story_boss_count   : Defeat `story_boss_count` Story bosses
+  # clash_bosses       : Defeat all 6 Team Kirby Clash bosses
+  # meta_galacta       : Defeat Galacta Knight (Meta Knightmare Returns)
+  # arena_star_dream   : Defeat Star Dream at the end of The Arena
+  # true_arena_soul_os : Defeat Star Dream Soul OS (The True Arena)
+  goal: story_star_dream
+  story_boss_count: 6            # only used when goal is story_boss_count
+
+  # --- Optional sub-games (each adds its own locations + access items) -----
+  include_3d_rumble: false       # Kirby 3D Rumble (3 levels)
+  include_kirby_clash: false     # Team Kirby Clash (6 bosses, 4 classes)
+  include_meta_knightmare: false # Meta Knightmare Returns (6 stages)
+  include_arena: false           # The Arena (11 rounds)
+  include_true_arena: false      # The True Arena (12 rounds)
+
+  # --- Location toggles ----------------------------------------------------
+  sticker_checks: true           # 138 normal Sticker pickups as checks
+  rare_sticker_checks: true      # 35 in-stage Rare Stickers as checks
+
+  # --- EX stage handling ---------------------------------------------------
+  # location : unlocking each EX stage (by cube count) is a check
+  # item     : EX stages need an "EX Key" item to enter
+  # both     : unlock is a check AND entry needs the key
+  ex_stage_handling: both
+
+  # --- Misc ----------------------------------------------------------------
+  death_link: false

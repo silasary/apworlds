@@ -1,11 +1,16 @@
 # Important stuff
 
 apworld
-- options guide for nested random lists
+- specialized unittests for rando modifiers
+- correlate mods in move data rando not working? => Special unit test cases
+- Keep levels and amount still broken, see unittests
 
 rom
+- trainer flags setzen lassen wo es in den scripts fehlt und dann besiegte trainer IDs ins datastorage
 
 both
+- fill more funny dialog
+- add funny text "your free trial has ended" to old man in Striaton
 
 # Not urgent
 
@@ -14,18 +19,12 @@ both
 - extended location hint for challenge rock
 - a way to check whether map or fly menu is opened, used for switching to ow map in UT
 - Running shoes as an item, making mom cutscene on route 2 a check
-- fill more funny dialog
-- send plugin options over slot data as string (breaks backwards compatibility)
 - reload_key_items sometimes has index out of range error
 - items receiving in client has rare cases of recursion errors
-- specialized unittests for rando modifiers
 - make client use static game data pointers
 - turn plugin options into actual options (can you even add more options after initial class creation?)
 - import plugin packages and classes while the main apworld itself is getting imported
-- correlate mods in move data rando not working? => Special unit test cases
-- trainer flags setzen lassen wo es in den scripts fehlt und dann besiegte trainer IDs ins datastorage
 - any options with custom code should bundle error messages instead of raising immediately
-- add funny text "your free trial has ended" to old man in Striaton
 - add nested randomness to plando values
 - rom script changes, some to comply with regions rework:
   - inject item receiver into code that executes AP menu script
