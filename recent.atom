@@ -2,72 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-20T00:23:13.616408+00:00</updated>
+  <updated>2026-10-20T06:20:11.708871+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/tag/v0.3.2a</id>
-    <title>West of Loathing v0.3.2a0</title>
-    <updated>2026-10-16T20:48:44+00:00</updated>
-    <author>
-      <name>Xylen</name>
-    </author>
-    <author>
-      <name>TylerJG92</name>
-    </author>
-    <content># APWorld Changes&#13;
-* Added forgotten `player` arg to `state.can_reach_region("Map Region D", player)` for medical container checks logic&#13;
-* Added Redundant `state.can_reach_location("Ghostwood Town Hall - Issued Permit", player)` to `get_location("Ghostwood Town Hall - Issued ID")` </content>
-    <link href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/tag/v0.3.2a"/>
-  </entry>
-  <entry>
-    <id>https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/tag/v1.0.0-release</id>
-    <title>Rimworld v1.0.0.post0</title>
-    <updated>2026-10-16T22:41:08+00:00</updated>
-    <author>
-      <name>PhantomOfAres</name>
-    </author>
-    <content>### Features&#13;
-&#13;
-More raid/negative filler variety - "raid traps" should now choose any "big threat," so can include things like infestations, mech drops, or animal insanity. Normal negative filler also has a chance for any negative event, including diseases and the like.&#13;
-Trade locations now have fake logic, so they aren't all in-logic at once.&#13;
-Quest locations have been added. Like raids and trade locations, completing a quest with an item for a reward will include a quest location item.&#13;
-Implemented deathlink - If a player on the server dies, it will cause a negative, stacking thought in all colonists. If a colonist dies, it will send a deathlink to the server.&#13;
-&#13;
-### Bugfixes&#13;
-&#13;
-Changed raid/trade locations so they can't be savescummed.&#13;
-Items sent as filler will now be sent in increments of ~200 silver, rather than (roughly) "1 full stack"&#13;
-Changed drop pod behavior to use the trading drop pod logic, so they drop closer to your base&#13;
-Location items can be stockpiled&#13;
-Blood Rain research should now grant correctly when sent from AP&#13;
-Fixed a bug where logic for raid/trade locations wasn't applying properly</content>
-    <link href="https://github.com/PhantomOfAres/ArchipelagoRimworld/releases/tag/v1.0.0-release"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.5</id>
-    <title>Pokemon Crystal v6.0.5</title>
-    <updated>2026-10-16T22:56:05+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content># Changelog&#13;
-&#13;
-# Bug Fixes&#13;
-- Fix TM/HM compatibility not respecting randomized move types (thanks @sdwoodard).&#13;
-- Fix various edge cases with wonder trade, it should now be more resilient to unstable connections.&#13;
-- Fix move power randomization sometimes preventing Return, Frustration, Present, Magnitude and Hidden Power from being able to crit, as well as preventing Counter and Mirror Coat from working with them.&#13;
-- The version on the continue screen will now reflect the version of the APWorld that patched the ROM.&#13;
-- Elm will now check that you actually hatched the Mystery Egg for the Everstone. This fixes a case where you could hatch it and then reset statics, and Elm would not accept it.&#13;
-&#13;
-_This release is backwards compatible down to 6.0.0._</content>
-    <link href="https://github.com/gerbiljames/Archipelago-Crystal/releases/tag/6.0.5"/>
-  </entry>
-  <entry>
     <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0-H5</id>
-    <title>Deadlock v1.2.0r3</title>
+    <title>Deadlock v1.2.0r2</title>
     <updated>2026-10-17T01:36:10+00:00</updated>
     <author>
       <name>ArchipelagoBrad</name>
@@ -526,7 +468,7 @@ This will almost certainly break any worlds generated prior to this update. Plea
   </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_3</id>
-    <title>Civilization IV v0.0.1r2</title>
+    <title>Civilization IV v0.0.1r3</title>
     <updated>2026-10-18T06:04:27+00:00</updated>
     <author>
       <name>VincentSIFTD</name>
@@ -1241,7 +1183,8 @@ Bug Fixes&#13;
 - More robust handling of saving and retrieving coin collection data from the server.&#13;
 &#13;
 #sm64ex hotfixes&#13;
-- October 19, 2026: Reading an entrance hint on a sign no longer causes Universal Tracker to treat the entrance as discovered. A separate flag is saved on the server instead which will be used in the future 1.0.5 release by Universal Tracker to consider an entrance "discovered" but not treated as reachable if you cannot reach it.</content>
+- October 19, 2026: Reading an entrance hint on a sign no longer causes Universal Tracker to treat the entrance as discovered. A separate flag is saved on the server instead which will be used in the future 1.0.5 release by Universal Tracker to consider an entrance "discovered" but not treated as reachable if you cannot reach it.&#13;
+- October 19, 2026: Location checks should not be lost when done while disconnected from the server.</content>
     <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.4"/>
   </entry>
   <entry>
@@ -1487,5 +1430,100 @@ Existing seeds work with the new apworld for tracking, no need to regenerate. Se
 Yes, back to 0.4.0&#13;
 However, UT might be inaccurate when tracking worlds generated before 0.4.1</content>
     <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spencer2585/APESO/releases/tag/0.4.0</id>
+    <title>Elder Scrolls Online v0.4.0</title>
+    <updated>2026-10-20T00:24:23+00:00</updated>
+    <author>
+      <name>Spencer2585</name>
+    </author>
+    <content># What's New&#13;
+- Added new Unlimited Wallet Item togglable in the yaml. If received you will be able to hold as much gold as you want&#13;
+- Wayshrine Locking - You can now lock the ability to fast travel to a wayshrine behind an item. Supports by region or individual&#13;
+- Added new AP Data menu to the AP menu. You can use this to see the options for your game&#13;
+&#13;
+# Other Changes&#13;
+- Switched logic to using rule builder&#13;
+- Switched errors on invalid option combinations to use OptionError&#13;
+- Fixed an issue with generation when delves are set to 0&#13;
+&#13;
+# Known Bugs&#13;
+- When switching characters and slots without a full reboot of the game and client can cause issues with items from one character and slot sending for the other&#13;
+- Controller can break on reload, this can be temporarily fixed by entering dialogue with an npc&#13;
+- leaving the client on for an extended period of time can result in the client wiping all items sent to the mod, this can by fixed by closing and reopening the client, upon reconnection it should fix you received items</content>
+    <link href="https://github.com/spencer2585/APESO/releases/tag/0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.10</id>
+    <title>Modded Minecraft v3.0.10</title>
+    <updated>2026-10-20T00:46:47+00:00</updated>
+    <author>
+      <name>Stuff691734</name>
+    </author>
+    <content>Added an error when the final goal does not get randomized.&#13;
+fixed an issue where tab mode was only checking dependencies chapters and not their own.&#13;
+changed option creator name for checks, it now mentions the setup guide.&#13;
+&#13;
+added options for better questing because I didn't think about using a seperate branch... *sigh*</content>
+    <link href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.7</id>
+    <title>Laika: Aged Through Blood v0.1.7</title>
+    <updated>2026-10-20T00:58:45+00:00</updated>
+    <author>
+      <name>Seras</name>
+    </author>
+    <content>This update fixes several crafting and item-delivery issues, expands weapon upgrades, and improves playing with Archipelago disabled. Rejoice vanilla enjoyers!&#13;
+&#13;
+**Crafting and progression**&#13;
+&#13;
+- Fixed weapon-material and blueprint crates appearing already opened when you owned their reward through another source. Owning a Rusty Spring, for example, no longer prevents collecting its crate’s location check.&#13;
+- Corrected Crafting mode blueprint rewards. A weapon blueprint now grants only its blueprint, while its crafting material remains a separate item. Starting with both grants one of each.&#13;
+- Added recovery for missing blueprints you previously received through Archipelago. Recipes already learned at the blacksmith remain recognized without repeatedly restoring paper blueprints.&#13;
+- Fixed a potential Crafting mode progression lock. Shotgun access now accounts for completing A Heart for Poochie and reaching the Bones needed for crafting in Where Rock Bleeds.&#13;
+- Heartglaze Flower can no longer be placed at Quest Complete: Old Warfare in Crafting mode.&#13;
+- Updated tracker explanations to reflect the corrected shotgun crafting requirements.&#13;
+&#13;
+**Weapon upgrades**&#13;
+&#13;
+- Added Pistol upgrade support.&#13;
+- All six weapons now have **three separate upgrades** available: Pistol, Shotgun, Sniper Rifle, Machine Gun, Rocket Launcher, and Crossbow.&#13;
+- Both Direct and Crafting modes now contain **18 weapon upgrades total**. These replace filler items without adding more location checks.&#13;
+- Upgrades received before obtaining a weapon are held until that weapon is acquired or crafted.&#13;
+- Fixed upgrade handling that could apply the same received upgrades more than once during recovery or reconnecting.&#13;
+&#13;
+**Item delivery and recovery**&#13;
+&#13;
+- Fixed missing or heavily delayed item deliveries, including starting Viscera, ingredients, key items, and weapon upgrades.&#13;
+- Improved delivery during loading and save transitions so items wait until the active run is ready.&#13;
+- Fixed Recent AP Activity failing to display received items and completed locations.&#13;
+- Fixed an issue where finding an item at its original vanilla location could remove the newly received Archipelago reward. This affected Fogg’s Drumsticks and could affect other quest items.&#13;
+- Improved recovery of previously received items while respecting quest items already turned in and blueprints already learned.&#13;
+&#13;
+**Playing with AP Off**&#13;
+&#13;
+- Fixed vanilla rewards being blocked while Archipelago was disabled.&#13;
+- AP Off now bypasses randomizer item handling, progression repairs, location reporting, and DeathLink behavior.&#13;
+- Randomizer cutscene skips are ignored while AP is disabled, including the Jakob death scene.&#13;
+- Archipelago Viscera protection settings no longer override vanilla money-bag behavior in AP Off.&#13;
+- AP gameplay overlays remain hidden while playing with Archipelago disabled.&#13;
+&#13;
+**Performance and presentation**&#13;
+&#13;
+- Reduced unnecessary overlay and title-screen updates while keeping item delivery running independently.&#13;
+- Disabled repetitive map-visibility logging by default to reduce unnecessary background work.&#13;
+- Added elapsed timestamps to Recent AP Activity so players can distinguish when events occurred.&#13;
+- Styled activity timestamps in a muted slate gray to keep the focus on item and location messages.&#13;
+&#13;
+**Updating**&#13;
+&#13;
+Plenty of optimization and performance improvements, so it's highly recommend to update if you are currently playing on an older version. You only need to update the `APWorld` and `LaikaMod.dll` file as always.&#13;
+&#13;
+That's all for now! I apologize Crafting mode enjoyers for making you have to wait, but I hope these new quality of life changes make it worth it. As always, please report any further issues in in the Laika Discord channel on the Archipelago Discord! &#13;
+&lt;img width="280" height="463" alt="Shaza_idle_1" src="https://github.com/user-attachments/assets/1c2e9088-7da9-4b69-9b0b-a6a0c53af67c" /&gt;&#13;
+</content>
+    <link href="https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.7"/>
   </entry>
 </feed>

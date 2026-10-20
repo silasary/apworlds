@@ -92,7 +92,7 @@
       "tag": "v-0.1.4",
       "title": "Laika AP Release V 0.1.4",
       "version_simple": "0.1.0",
-      "world_version": "0.1.0r2"
+      "world_version": "0.1.0r3"
     },
     "v-0.1.5": {
       "created_at": "2026-09-25T00:17:24Z",
@@ -123,6 +123,21 @@
       "title": "Laika AP Release V 0.1.6",
       "version_simple": "0.1.6",
       "world_version": "0.1.6"
+    },
+    "v-0.1.7": {
+      "created_at": "2026-10-20T00:58:45Z",
+      "description": "This update fixes several crafting and item-delivery issues, expands weapon upgrades, and improves playing with Archipelago disabled. Rejoice vanilla enjoyers!\r\n\r\n**Crafting and progression**\r\n\r\n- Fixed weapon-material and blueprint crates appearing already opened when you owned their reward through another source. Owning a Rusty Spring, for example, no longer prevents collecting its crate\u2019s location check.\r\n- Corrected Crafting mode blueprint rewards. A weapon blueprint now grants only its blueprint, while its crafting material remains a separate item. Starting with both grants one of each.\r\n- Added recovery for missing blueprints you previously received through Archipelago. Recipes already learned at the blacksmith remain recognized without repeatedly restoring paper blueprints.\r\n- Fixed a potential Crafting mode progression lock. Shotgun access now accounts for completing A Heart for Poochie and reaching the Bones needed for crafting in Where Rock Bleeds.\r\n- Heartglaze Flower can no longer be placed at Quest Complete: Old Warfare in Crafting mode.\r\n- Updated tracker explanations to reflect the corrected shotgun crafting requirements.\r\n\r\n**Weapon upgrades**\r\n\r\n- Added Pistol upgrade support.\r\n- All six weapons now have **three separate upgrades** available: Pistol, Shotgun, Sniper Rifle, Machine Gun, Rocket Launcher, and Crossbow.\r\n- Both Direct and Crafting modes now contain **18 weapon upgrades total**. These replace filler items without adding more location checks.\r\n- Upgrades received before obtaining a weapon are held until that weapon is acquired or crafted.\r\n- Fixed upgrade handling that could apply the same received upgrades more than once during recovery or reconnecting.\r\n\r\n**Item delivery and recovery**\r\n\r\n- Fixed missing or heavily delayed item deliveries, including starting Viscera, ingredients, key items, and weapon upgrades.\r\n- Improved delivery during loading and save transitions so items wait until the active run is ready.\r\n- Fixed Recent AP Activity failing to display received items and completed locations.\r\n- Fixed an issue where finding an item at its original vanilla location could remove the newly received Archipelago reward. This affected Fogg\u2019s Drumsticks and could affect other quest items.\r\n- Improved recovery of previously received items while respecting quest items already turned in and blueprints already learned.\r\n\r\n**Playing with AP Off**\r\n\r\n- Fixed vanilla rewards being blocked while Archipelago was disabled.\r\n- AP Off now bypasses randomizer item handling, progression repairs, location reporting, and DeathLink behavior.\r\n- Randomizer cutscene skips are ignored while AP is disabled, including the Jakob death scene.\r\n- Archipelago Viscera protection settings no longer override vanilla money-bag behavior in AP Off.\r\n- AP gameplay overlays remain hidden while playing with Archipelago disabled.\r\n\r\n**Performance and presentation**\r\n\r\n- Reduced unnecessary overlay and title-screen updates while keeping item delivery running independently.\r\n- Disabled repetitive map-visibility logging by default to reduce unnecessary background work.\r\n- Added elapsed timestamps to Recent AP Activity so players can distinguish when events occurred.\r\n- Styled activity timestamps in a muted slate gray to keep the focus on item and location messages.\r\n\r\n**Updating**\r\n\r\nPlenty of optimization and performance improvements, so it's highly recommend to update if you are currently playing on an older version. You only need to update the `APWorld` and `LaikaMod.dll` file as always.\r\n\r\nThat's all for now! I apologize Crafting mode enjoyers for making you have to wait, but I hope these new quality of life changes make it worth it. As always, please report any further issues in in the Laika Discord channel on the Archipelago Discord! \r\n<img width=\"280\" height=\"463\" alt=\"Shaza_idle_1\" src=\"https://github.com/user-attachments/assets/1c2e9088-7da9-4b69-9b0b-a6a0c53af67c\" />\r\n",
+      "download_url": "https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/download/v-0.1.7/laika_aged_through_blood.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1518469f2a159adb7f7e24b77c6b716f53447f7065f4b9a51b2781ada9318ae3",
+      "html_url": "https://github.com/ItsSeras/Laika-Aged-Through-Blood-Archipelago/releases/tag/v-0.1.7",
+      "minimum_ap_version": "0.6.4",
+      "size": 15958382,
+      "source_url": "https://api.github.com/repos/ItsSeras/Laika-Aged-Through-Blood-Archipelago",
+      "tag": "v-0.1.7",
+      "title": "Laika AP Release V 0.1.7",
+      "version_simple": "0.1.7",
+      "world_version": "0.1.7"
     }
   }
 }
