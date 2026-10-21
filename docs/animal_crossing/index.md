@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.5.1/animal_crossing.apworld">Latest Version (0.5.1)</a>
+- <a href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.5.2/animal_crossing.apworld">Latest Version (0.5.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

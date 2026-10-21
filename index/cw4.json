@@ -212,6 +212,21 @@
       "title": "v0.2.1 - Early Weapon does what it says, a new easy tier, and a yaml you can read",
       "version_simple": "0.2.1",
       "world_version": "0.2.1"
+    },
+    "v0.2.2": {
+      "created_at": "2026-10-21T02:52:08Z",
+      "description": "Matched pair: install the plugin zip AND regenerate with this `cw4.apworld`. The plugin and the apworld share a version number and must match.\r\n\r\nRequires Archipelago **0.6.7 or newer**.\r\n\r\n**Existing yamls keep working.** The four hidden options removed here did nothing; a yaml that still names one generates normally, with a warning. **Seeds do not change**: the same seed number generates the same layout as in v0.2.1, checked for default, SPAN and casual logic. Nothing a player sees in the game changes.\r\n\r\n- **The mod no longer carries debug code.** When the debug channel became its\r\n  own plugin (2026-09-03), its commands moved but the counters, readbacks and\r\n  tuning code they drove stayed inside the mod, and later debug features\r\n  followed the same pattern. All of it is in the debug plugin now, which ships\r\n  in no release. That removes a Harmony patch, a per-frame check and extra reads\r\n  on every planet repaint that ran in every player's game for nobody's benefit.\r\n  Nothing a player sees changes.\r\n- **Retired items do nothing.** `Build Limit +1 (Tower)`, `(Cannon)` and\r\n  `(Mortar)`, `Emitter Overdrive Trap` and `Greenar Refinery` have not been\r\n  generated for several releases; their names stay so item ids do not move. The\r\n  mod no longer applies them, so one handed out by `start_inventory`, plando or\r\n  `/send` is ignored. Factory still unlocks the greenar refinery.\r\n- **Removed four hidden options that did nothing:**\r\n  `trap_weight_emitter_overdrive`, `filler_energy_storage_weight`,\r\n  `filler_base_generation_weight` and `filler_build_limit_weight`. A yaml that\r\n  still names one generates normally, with a warning.\r\n- **Slot data no longer sends** `mission_titles`, `span_missions`,\r\n  `mission_requirements` or `ern_per_item`, none of which the mod read. The mod\r\n  ignores them in an older seed. Placements are unchanged: checked old against\r\n  new on the same seed for default, SPAN and casual logic.\r\n- **The apworld no longer carries test-only code.** The tests and audit tools\r\n  record what the world placed from outside it, and the hooks the world kept\r\n  for them are gone. SPAN map notes moved from the shipped `span_data.py` to the\r\n  tools-side `tools/span_notes.py`.\r\n- **The game page** lists all three recommended options and describes the\r\n  `easy` logic tier.\r\n- **Release checks are exact.** `tools/check_release.py` holds the mod zip and\r\n  the `.apworld` to exact file lists instead of a blocklist, and reads the\r\n  shipped DLLs' metadata for the debug-only names removed here.\r\n- **Corrected comments that were wrong**, among them a tracker colour that never\r\n  existed: a mission with some checks reachable and some not is drawn green.\r\n",
+      "download_url": "https://github.com/drohack/cw4-archipelago/releases/download/v0.2.2/cw4.apworld",
+      "has_manifest": true,
+      "hash_sha256": "492b07f985a495b6cf31173cb8186e74fae5f6abfd3195c806213cb38c798ed2",
+      "html_url": "https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 70218,
+      "source_url": "https://api.github.com/repos/drohack/cw4-archipelago",
+      "tag": "v0.2.2",
+      "title": "v0.2.2 - Only what a player uses",
+      "version_simple": "0.2.2",
+      "world_version": "0.2.2"
     }
   }
 }

@@ -44,12 +44,13 @@ the goal.
 
 ## What should I know before starting?
 
-Two options are worth a look before you generate:
+Three options are worth a look before you generate:
 
 - `logic_difficulty` - `standard` assumes only what is needed to WIN a mission.
   `casual` also assumes anti-air (a sniper or a missile launcher) from We Were
   Never Alone onward, so those arrive earlier and the mid-campaign is less of a
-  grind.
+  grind. `easy` is casual, and from The Experiment onward also assumes both a
+  sniper and a missile launcher, and both a cannon and a mortar.
 - `starter_missions` - how many missions you begin with unlocked, drawn from the
   ones whose cache can be collected with no weapon. Default 2.
 - `span_missions` - **experimental, off by default.** Mixes the game's 26 SPAN
