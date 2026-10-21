@@ -1,14 +1,36 @@
 # Credit
+<!-- TOC -->
+* [Credit](#credit)
+  * [Main developer](#main-developer)
+  * [Main logic designer](#main-logic-designer)
+  * [Others that helped](#others-that-helped)
+  * [Communities that helped](#communities-that-helped)
+* [Licences](#licences)
+  * [Image licences](#image-licences)
+    * [NSMBW_logo:](#nsmbw_logo)
+    * [Tracker images](#tracker-images)
+    * [Community projects used](#community-projects-used)
+    * [AP projects based on](#ap-projects-based-on-)
+    * [NSMBW projects used / taken inspiration from](#nsmbw-projects-used--taken-inspiration-from)
+    * [Other open source software bundled with the client](#other-open-source-software-bundled-with-the-client)
+  * [Original game](#original-game)
+  * [NSMBW AI Usage Disclosure](#nsmbw-ai-usage-disclosure)
+  * [Specific AI-usage](#specific-ai-usage)
+<!-- TOC -->
 ## Main developer
 - [Miiroun](https://github.com/Miiroun) : Coded apworld, client and patches.
 
+## Main logic designer
+- [React](https://github.com/ReactJacob) : Developed most of logic.
+
 
 ## Others that helped
-- [React](https://github.com/ReactJacob) : Created most of logic
 - Sponk : Created 3d model of star coin merged with archipelago logo and boss key model
 - CrazyJoe : Created the custom title screen
+- Flo : Playtester and designed some icons
 - Matgamer2575 : started project and found some memory addresses
 - Adibtw : Consulted Linux compatibility
+- [CelestePihen](https://github.com/CelestePihen) : PRed a few fixes.
 - [IndyGibb](https://github.com/IndyGibb) : PRed some light code changes using Claude
 - Techmuse : helped with locating addresses
 - LuigiXRules : Fixed typos in documentation, provided helpful insight and playtested Us rev1
@@ -19,14 +41,19 @@
 - [Archipelago](https://discord.gg/archipelago) dc server (worlddev help and documentation)
 - [Horizon](https://discord.gg/Quvaj2Ufhb) and [NSMBW Hacking Depot](https://discord.gg/nXgyHrMyjA) discord servers (knowledge about the game)
 
-
-# NSMBW_logo:
+# Licences
+## Image licences
+### NSMBW_logo:
 - Image by miiroun
 - Remixed of archipelago logo by Krista Corkos and Christopher Wilson, licensed under [Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/)
 - Based on star coins in mario, made by nintendo
 
+### Tracker images
+- The world map images are downloaded from https://www.mariowiki.com/ which is licenced under https://creativecommons.org/licenses/by-sa/4.0/. Some of them have been compresed.
+- ALl draw images are (for now) made by miiroun and licenced under MIT
 
-# Community projects used
+
+### Community projects used
 - [Archipelago](https://archipelago.gg/)
 - [Dolphin emulator](https://dolphin-emu.org/)
 - [Dolphin memory engine (python lib)](https://github.com/randovania/py-dolphin-memory-engine)
@@ -40,25 +67,41 @@
 - [NSMBW Symbol map](https://rootcubed.dev/nsmbw-symbols/)
 
 
-
-## AP projects based on 
-(have borrowed some code from the following ap-games, licenced under MIT)
+### AP projects based on 
+(have borrowed significant code from the following ap-implementations, licenced under MIT)
 - [APquest](https://github.com/ArchipelagoMW/Archipelago/tree/main/worlds/apquest)
 - [Metroid Prime](https://github.com/Electro1512/MetroidAPrime/tree/main)
 - [Mario kart Wii](https://github.com/toent/Archipelago-MKWii)
 
 
-## NSMBW projects used / taken inspiration from
-- [wii-code-tools](https://github.com/RoadrunnerWMC/wii-code-tools/tree/master)
-- [Kamek (NSMBW compiler)](https://github.com/Treeki/Kamek)
-- [Propeller parts](https://github.com/PropelParts-org/PropelParts)
-- [mkwcat/gecko-codes](https://github.com/mkwcat/gecko-codes)
-- [nsmbw-pipe-randomizer](https://github.com/mkwcat/nsmbw-pipe-randomizer)
-- [NSMBW randomizer (original, non ap)](https://hbrohei.github.io/NSMRWii/)
+### NSMBW projects used / taken inspiration from
+- [wii-code-tools](https://github.com/RoadrunnerWMC/wii-code-tools/tree/master), MIT, convert memory addresses between versions
+- [Kamek (NSMBW compiler)](https://github.com/Treeki/Kamek), MIT, build system
+- [Propeller parts](https://github.com/PropelParts-org/PropelParts), MIT, build system
+- [mkwcat/gecko-codes](https://github.com/mkwcat/gecko-codes), MIT, some of the patches are modified but included
+- [nsmbw-pipe-randomizer](https://github.com/mkwcat/nsmbw-pipe-randomizer), MIT, included but modified
+- [NSMBW randomizer (original, non ap)](https://hbrohei.github.io/NSMRWii/), GPL, only inspiration
+
+
+### Other open source software bundled with the client
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago), MIT
+- [Keyboard (Python library)](https://github.com/boppreh/keyboard), MIT
+- [wii-code-tools](https://github.com/RoadrunnerWMC/wii-code-tools/tree/master), MIT
+- [Kamek-Ninja-Template](https://github.com/NSMBW-Community/Kamek-Ninja-Template), MIT
+- [Wiithon](https://github.com/Demorck/wiithon), MIT
+- [Propellerparts](https://github.com/PropelParts-org/PropelParts), MIT, only the binary loader
+- [Archipelago fuzzer](https://github.com/Eijebong/Archipelago-fuzzer), MIT
+- [Universal tracker](https://github.com/FarisTheAncient/Archipelago), MIT
+- [NSMBW headers](https://github.com/PropelParts-org/PropelParts/tree/main/PropelParts/include), licenced under different licences, see each file separately.
+
+
+The included licenses can be found [here](../dev_files/Licences).
+TLDR: NSMBW Client and AP-world are both licenced under MIT with copyright by miiroun.
+
 
 
 ## Original game
-- Nintendo
+Nintendo
 
 ## NSMBW AI Usage Disclosure
 - NSMBW is not vibe-coded.
@@ -69,7 +112,7 @@ However, generative AI have been used for the following in this project:
 3) Small PR have been made by IndyGibb using Caude, they have been thoroughly reviewed by humans ( ~ 50 lines of code, later modified by human)
 
 
-## AI-usage
+## Specific AI-usage
 Gemini & ChatGPT 
   - decoding assembly and reading address maps (very minor usage, they are not good at this)
 
@@ -78,19 +121,3 @@ Pycharm linter
 
 Claude
   - Small PR have been made by IndyGibb using claude, they have been thoroughly reviewed by humans
-
-
-NSMBW Client and AP-world are both licenced under MIT with copyright by miiroun.
-
-
-## Libraries licensed under MIT bundled with this client
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago)
-- [Keyboard (Python library)](https://github.com/boppreh/keyboard)
-- [wii-code-tools](https://github.com/RoadrunnerWMC/wii-code-tools/tree/master)
-- [Kamek-Ninja-Template](https://github.com/NSMBW-Community/Kamek-Ninja-Template)
-- [Wiithon](https://github.com/Demorck/wiithon)
-- [Propellerparts (just loader)](https://github.com/PropelParts-org/PropelParts)
-- [Archipelago fuzzer](https://github.com/Eijebong/Archipelago-fuzzer)
-- [Universal tracker](https://github.com/FarisTheAncient/Archipelago)
-
-Licenses can be found [here](../dev_files/Licences).

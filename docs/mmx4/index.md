@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Daxtear/ArchipelagoMMX4/releases/download/0.1.3/mmx4.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/Daxtear/ArchipelagoMMX4/releases/download/0.1.4/mmx4.apworld">Latest Version (0.1.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

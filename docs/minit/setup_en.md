@@ -3,8 +3,8 @@
 ## Required Software
 
 - Minit installed
-	- Tested with [Steam](https://store.steampowered.com/app/609490/Minit/), and Epic games.
-	- The itch.io release is not supported currently.
+  - Tested with [Steam](https://store.steampowered.com/app/609490/Minit/), and Epic games.
+  - The itch.io release is not supported currently.
 - Archipelago from the [Archipelago Releases Page](https://github.com/ArchipelagoMW/Archipelago/releases)
 
 ## Configuring your YAML file
@@ -30,13 +30,22 @@ You can customize your options by visiting the [Minit Player Options Page](../pl
 * You now have the proxy client connected to the AP server
 
 ### For Patching
-In the client there is a `/Patch` command you can use which will automatically create a patched data file
-if needed and launch the game when the patching is complete.
-
-The entire process should be automated but in case you need the information for debugging or alternate setups:
-* The location of your install will be saved in the `host.yaml` configuration file in your Archipelago Install
-* The patched data file will be saved in your minit install folder as `ap_v1.0_data.win`. If you need to manually
-  launch then the launch args `-game ap_v1.0_data.win` will work both in a terminal and in steam launch args
-  (swap the `v1.0` version for whatever patch version it is).
-* If the client does not have access to that folder unexpected things may happen, so having a copy of your Minit folder
-  for AP and pointing it there may be safer.
+* Install the Mod Loader
+  * download from https://github.com/qwint/UFO-50-MOD-LOADER/releases
+  * unzip the appropriate version to a reasonable location, run `minit Mod Loader` to open the Mod Loader
+* Install the Minit Mod into the Mod Loader
+  * download `Source code (zip)` from https://github.com/qwint/archipelago_minit_mod/releases
+  * Launch the Mod Loader
+  * under `Mod Loader` select `Open Mod Loader Folder`
+  * Open the `Minit mods` subfolder and place the downloaded zip
+* Patch the game
+  * Launch the Mod Loader
+  * Optional: Under `Settings` you can check `Overwrite Installed Files` to patch the source copy of the game
+  * Check the installed Minit mod to include it
+  * Press the `Load Mods and Launch Game` button
+* Run the game
+  * The previous step will automatically launch the game, but to not need to patch every time you can either
+    * Use the `Overwrite Installed Files` setting and launch through your previous launcher of choice
+    * Run the modded copy directly, it will be in `./workspace/Minit Modded Copy/minit.exe` from the same Mod Loader Folder as before
+      * On linux the Mod Loader runs the game through `wine` so it is safe to do so manually as well
+    * Open the Mod Loader and press the `Launch Game` button

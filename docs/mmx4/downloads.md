@@ -1,9 +1,12 @@
 # Mega Man X4
 
 ## Latest
-- <a href="https://github.com/Daxtear/ArchipelagoMMX4/releases/download/0.1.3/mmx4.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/Daxtear/ArchipelagoMMX4/releases/download/0.1.4/mmx4.apworld">Latest Version (0.1.4)</a>
 
 ## All Versions
+
+#### v0.1.4
+- <a href="https://github.com/Daxtear/ArchipelagoMMX4/releases/download/0.1.4/mmx4.apworld">https://github.com/Daxtear/ArchipelagoMMX4/releases/download/0.1.4/mmx4.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/Daxtear/ArchipelagoMMX4/releases/download/0.1.3/mmx4.apworld">https://github.com/Daxtear/ArchipelagoMMX4/releases/download/0.1.3/mmx4.apworld</a>

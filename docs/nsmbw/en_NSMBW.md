@@ -1,8 +1,28 @@
 # New Super Mario Bros Wii
+<!-- TOC -->
+* [New Super Mario Bros Wii](#new-super-mario-bros-wii)
+  * [Goals](#goals)
+  * [Items](#items)
+  * [Locations](#locations)
+  * [General randomized things](#general-randomized-things)
+  * [Options](#options)
+  * [Deathlink](#deathlink)
+  * [Settings](#settings)
+  * [Prominent commands](#prominent-commands)
+  * [Known quirks / bugs / help with debug](#known-quirks--bugs--help-with-debug)
+  * [Multiplayer](#multiplayer)
+  * [FAQ](#faq)
+  * [Debug tips](#debug-tips)
+  * [Other NSMBW modding projects](#other-nsmbw-modding-projects)
+<!-- TOC -->
 
-## What is goal
+## Goals
 - To beat bowsers castle at world 8
 - Bowsers castle is looked behind having a number of star coin items and beaten the last level in a number of worlds. (Configurable in player yaml)
+- There also exist alternative goals:
+  - Collect all hint movies.
+  - Collect X star coins.
+  - Beat X levels.
 
 
 ## Items
@@ -40,17 +60,31 @@
   - Low Gravity
 - Traps
   - Loose powerup trap
+    - Removes your curent powerup
   - Goomba speed trap
+    - Speeds up goombas
   - Death trap
+    - Kills mario
   - Time trap 
+    - Speeds up the level time.
   - Robbery trap
+    - Takes your money and an inventory powerup
   - Shrink trap
+    - Makes mario small
   - Literature trap
+    - Prints text in the client.
   - Throw trap 
+    - Makes
   - Reverse Control trap
+    - Revers the left and right movement buttons.
   - Movement lock trap
-  - Slow Trap
+    - Makes you unable to move for a short time.
+  - Slow trap
+    - reduces Marios speed.
   - Gravity trap
+    - Increases gravity.
+  - Paranoia trap
+    - Gives you paranoia.
 
 
 ## Locations
@@ -60,6 +94,7 @@
 - Completing towers, castles and secret exits that unlock cannons ( 8 towers, 8 castles and 8 secret exits) World1 tower, 1-3 Secret exit
 - Getting powerups to inventory (from toad-houses or enemy ambushes) e.g. Inventory_powerup_001
 - Unlocking secret exits
+- Hitting blocks, roullette blocks and red rings.
 
 ## General randomized things
 - Level placements
@@ -96,28 +131,43 @@ Among them are alternative to the keyboard library for Linux, and which slot to 
 - Please run this and send a [screenshot](https://screenshot.help/) of it before asking for help.
 
 `/match_server_state`
-- if your save file was somehow messed up will this fix it
+- If your save file was somehow messed up, this command will fix it.
+
+`\rm_tmp`
+- Will fix most errors related to patching, including region file not found.
 
 
 ## Known quirks / bugs / help with debug
 - Making savestates is currently difficult depending on location. Do not close game or make savestates when you are in peach's castle or world 9.
-- For some features (death link and move rando) the game will overwrite savestate 8 in dolphin. (It does this to clear the JIT cache).
 - With movement rando on and not having the item climb will cause a soft lock if you encounter a ledge (like in 6-1). You are free from the softlock if you do /kill.
-- Sometimes mario is invisible on the worldmap.
 - Only save file 2 will work to play on.
 - Known Issues for other game versions
   - None US2: Inventory powerups
   - EU1: Movement (dont turn on)
   - US1: Star and swim movement (add these to don't rando moves if you have movement rando on)
-- On Linux you will need to give the client root access for it to properly access save states. You can also use Xdotools or Ydotools, selectable in `host.yaml`.
+- On Linux, if you disabled `use_riivolution` will you have to use the external tools Xdotools or Ydotools, selectable in `host.yaml`.
 - Climb movement have issues, you can't leve vine without climb and through other ways can climb sometimes softlocks you. You solve this with the /kill command. 
 - Deathlink problems:
   - If not received, try running `/kill`, if this does not work, make sure you have changed the dolphin settings in the set-up guide.
-  - If not sending, try turing off your deathlink group and then toggle deathlink off and on again.
   - Run `/deathlink_debug` or `/debug` (0.3.0) to get information about its current state and post this information in the archipelago discord.
-- Dolphin doesn't autostart: make sure dolphin is your default program for opening iso / wbfs files
+- Dolphin doesn't autostart: make sure dolphin is your default program for opening iso / wbfs files. 
 - Music shuffle can cause crashes when you reach some parts of the game. To fix this deleate the `Sounds` directory from `Dolphin Emulator\Load\Riivolution\nsmbw_ap_<seedname>\Sounds` 
 - If the client does not auto make savestates (This causes issues with deathlink, movement, etc): Make sure the dolphin settings are correct according to the set-up docs. If you use linux try switch the libraries used by changing the setting in host.yaml.
+- Multiple things can mess with the nsmbw cache stored in the temp folder. To fix them run `/rm_tmp` to clear the temp folder and all riivolution patches. (This will NOT remove your savefiles) .
+- If the games error on patching, try running the command `/rm_tmp`.
+
+
+## Multiplayer
+You can play NSMBW multiplay 2 ways:
+Same-slot co-op:
+- Both connect to the same archipelago slot separately.
+- This entails you play seperate levels but a level completed for you get marked for your friend.
+- Run `/change_collection_level 2` for a better experience to make castle level progression also match.
+
+Local play:
+- Works out of the box, just connect your controllers and it should function. 
+- Might have small issues with deathlink and some movements.
+- If you want to play over the internet it is strongly recommended to use PARSEC over dolphin net-play since net-play doesn't work well with the client mod.
 
 
 ## FAQ
@@ -127,16 +177,18 @@ What is different from vanilla?
 - Peach's castle hint movie shop requires starcoin items
 - You need world items to unlock both half of worlds
 
-Multiplayer? <br>
-&emsp; You can play NSMBW multiplay 2 ways:
-  1) Same-slot co-op: Both connect to the same archipelago slot separately. This entails you play seperate levels but a level completed for you get marked for your friend. Run /change_collection_level 2 for a better experience
-  2) Local/Dolphin net-play: Works, just connect your controllers and it should function. Might have small issues with deathlink and some movements.\
+What does the different names mean? <br>
+&emsp; 1-T is the Tower in world 1, 1-🏯 <br>
+&emsp; 2-C is the Castle in world 2, 2-🏰 <br>
+&emsp; 3-G is the Ghost house in world 3, 3-🏚️ <br>
+&emsp; 4-A is the Airship in world 4, 4-🚢, 4-⚓ <br>
+&emsp; C-1 is the fist coin level, Coin-1, 🪙-1 <br>
 
 Tracker? <br>
-&emsp; A basic implementation of Universal tracker, see setup_en.md for instructions. A pop tracker pack is in development.
+&emsp; A basic implementation of Universal tracker, see setup_en.md for instructions. It has an internal location and item tracker.
 
 Do I need a rivvolution patch? <br>
-&emsp;Some settings require a riivolution patch, it should be auto generated and loaded when you first connect to the archipelago server. Otherwise it is not needed and all patching will be done from memory.
+&emsp; Yes, it should be auto generated and loaded when you first connect to the archipelago server. Otherwise it is not needed and all patching will be done from memory.
 
 Do you support item/location groups?<br>
 &emsp;yes, e.g. Powerups, Movement, Hintmovies, Starcoins, Starcoins_World1, Starcoins_World1_Level1, Level_completion_world1, Level_completion
@@ -160,22 +212,28 @@ Why does the client auto press hotkeys to save and load save states? <br>
 
 Can I run this randomizer on real hardware?<br>
 &emsp;No, since most modifications are run through the external python client. There are no plans to implement this.<br>
-&emsp;You are however encouraged to run the other nsmbw randomizers mentioned bellow, which works on hardware.
+&emsp;You are however encouraged to run the other nsmbw randomizers mentioned below, which works on hardware.
 
 What does the star coin item do?<br>
 &emsp;They can do up to 3 things depending on what you have enabled:
-  1) Enables you to buy hint movies 
-  2) Required to unlock world 9 levels 
-  3) Required to unlock 8-C
+  1) Required MacGuffin to goal.
+  2) Enables you to buy hint movies.
+  3) Required to unlock world 9 levels.
+  4) Required to unlock worlds (on some settings)
 
 I game over'ed and lost all progress, how do I get it back?.<br>
-&emsp;You can run `/match_server_state` in the client to get back all your levels, depending on the collection state set in `host.yaml`.
+&emsp;You can run `/match_server_state` in the client to get back all your level clears.
+You might need to change your collection state set in `host.yaml`.
 
-What does the level names stand for? <br>
-- 1-T = 1-Tower
-- 2-C = 2-Castle
-- 3-G = 3-Ghosthouse
-- 4-A = 4-Airship
+What are the limitations of level shuffle? <br>
+&emsp; Secret exits must be mapped to other secret exits.<br>
+&emsp; Some level break when moved and are therefor frozzen in place; They are: 2-C, 6-C, 8-3<br>
+&emsp; We have also decided becasue of gameplay reasons not to move the tower, castle, airship and bowsers castle levels.
+
+How does the soft logic for Inventory powerups work?<br>
+&emsp; It weights each source by how good it is (enemy = 6, red mushroom house = 4, star house = 1) by the total amount that exists in game.<br>
+&emsp; This is then compared to how many you have enabled and each source points becomes a ratio so they each put in logic the same amount.<br>
+&emsp; We also round that value up and have a small margin to not cause generation errors and ensure all seeds are beatable (requiring 1 source as hard logic).
 
 Are there bugs?<br>
 &emsp;Expect bugs, it is still in development.<br>

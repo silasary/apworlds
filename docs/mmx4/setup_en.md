@@ -58,7 +58,7 @@ There are 2 ways to connect
 * To change this:
 	* PSX -> Settings -> Sync Settings -> Virtual Port 1 -> Digital Gamepad
 
-### My character keeps dying when I pick up health and there are these splotches in the top left corner
+### My character keeps dying in one hit/when I pick up health and there are these black splotches in the top left corner instead of my health bar
 * Something in the chain of connections is not connected to the next
 * Check that:
 	* The Lua script is running
@@ -71,3 +71,7 @@ There are 2 ways to connect
 	* Update to the newest apworld
 	* Use the manual setup instructions
 		* You might want to update your apworld anyway though after you're done
+
+### I only get the armor capsule in Cyber Peacock's stage
+* When playing as Zero, that's currently the way it is
+* The other locations don't have any items in them though, so don't worry about it

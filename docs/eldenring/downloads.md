@@ -1,9 +1,12 @@
 # EldenRing
 
 ## Latest
-- <a href="https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.3/eldenring.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.3/eldenring.apworld">Latest Version (0.1.3.post2)</a>
 
 ## All Versions
+
+#### v0.1.3.post2
+- <a href="https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.3/eldenring.apworld">https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.3/eldenring.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.3/eldenring.apworld">https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.3/eldenring.apworld</a>

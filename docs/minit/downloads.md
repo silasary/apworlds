@@ -1,9 +1,12 @@
 # Minit
 
 ## Latest
-- <a href="https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld">Latest Version (0.6.11r2)</a>
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.7.0/minit.apworld">Latest Version (0.7.0)</a>
 
 ## All Versions
+
+#### v0.7.0
+- <a href="https://github.com/qwint/APMinit/releases/download/v0.7.0/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.7.0/minit.apworld</a>
 
 #### v0.6.11r2
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld</a>
