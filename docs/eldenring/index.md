@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.2/eldenring.apworld">Latest Version (0.1.2)</a>
+- <a href="https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.3/eldenring.apworld">Latest Version (0.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

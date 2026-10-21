@@ -54,11 +54,11 @@ Dolphin Path. For auto open to work, you must set your Game Path (Which should l
 "C:\Users\elect\Downloads\Dolphin Emulator\Dolphin-x64\Dolphin.exe"). 
 
 Once you open the client (If Dolphin isn't already open), you should see Mario Sports Mix automatically open with the
-Roster Fix automatically applied! (See [here](https://github.com/ElectroStarz/ArchipelagoMSM/blob/main/worlds/mario_sports_mix/docs/bugs.md)
+Roster Fix automatically applied! (See [here](https://github.com/ElectroStarz/ArchipelagoMSM/blob/main/docs/bugs_en.md)
 for more info on the Roster Bug)
 
 ## Still Having Trouble?
 * Read the [information doc](https://github.com/ElectroStarz/ArchipelagoMSM/blob/main/worlds/mario_sports_mix/docs/en_Mario%20Sports%20Mix.md)!
-* Read the [known bugs](https://github.com/ElectroStarz/ArchipelagoMSM/blob/main/worlds/mario_sports_mix/docs/bugs.md)!
+* Read the [known bugs](https://github.com/ElectroStarz/ArchipelagoMSM/blob/main/docs/bugs_en.md)!
 * Ask your question in the [Mario Sports Mix Thread](https://discord.com/channels/731205301247803413/1485699253450833942)
 in the [Archipelago Discord Server](https://discord.gg/archipelago)!

@@ -76,8 +76,8 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 ### Limgrave
 
 </td></tr>
-<tr><td><strong>BS: </strong>Bridge of Sacrifice landmark, connection point between S Limgrave and Weeping Peninsula.</td></tr>
 <tr><td><strong>LG/(AS): </strong>Artists Shack landmark, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/(BS): </strong>Bridge of Sacrifice landmark, connection point between S Limgrave and Weeping Peninsula.</td></tr>
 <tr><td><strong>LG/(CE): </strong>Church of Elleh landmark, W Limgrave.</td></tr>
 <tr><td><strong>LG/(DBR): </strong>Dragon-Burnt Ruins landmark, S Limgrave.</td></tr>
 <tr><td><strong>LG/(FH): </strong>Fort Haight landmark, E Limgrave.</td></tr>
@@ -275,10 +275,10 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 <tr><td><strong>LL/MCMG: </strong></td></tr>
 <tr><td><strong>LL/MEW: </strong></td></tr>
 <tr><td><strong>LL/NLLS: </strong></td></tr>
+<tr><td><strong>LL/RC: </strong></td></tr>
 <tr><td><strong>LL/REC: </strong></td></tr>
 <tr><td><strong>LL/RL: </strong></td></tr>
 <tr><td><strong>LL/RM: </strong></td></tr>
-<tr><td><strong>LL/RS: </strong></td></tr>
 <tr><td><strong>LL/RVV: </strong></td></tr>
 <tr><td><strong>LL/SHE: </strong></td></tr>
 <tr><td><strong>LL/SRLG: </strong></td></tr>
@@ -514,7 +514,6 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 ### Altus Plateau
 
 </td></tr>
-<tr><td><strong>AP/(DMV): </strong></td></tr>
 <tr><td><strong>AP/(DWV): </strong></td></tr>
 <tr><td><strong>AP/(HLT): </strong></td></tr>
 <tr><td><strong>AP/(MR): </strong></td></tr>
@@ -545,7 +544,6 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 <tr><td><strong>AP/SR: </strong></td></tr>
 <tr><td><strong>AP/STH: </strong></td></tr>
 <tr><td><strong>AP/TSC: </strong></td></tr>
-<tr><td><strong>AP/VW: </strong></td></tr>
 <tr><td><strong>AP/VWP: </strong></td></tr>
 <tr><td><strong>AP/WV: </strong></td></tr>
 <tr><td><strong>AP/WWP: </strong></td></tr>
@@ -1105,7 +1103,7 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 <tr><td><strong>MM/SFC: </strong></td></tr>
 <tr><td><h3>
 
-### Enir Ilim
+### Enir-Ilim
 
 </td></tr>
 <tr><td><strong>BTS|EI/SR: </strong></td></tr>

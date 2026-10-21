@@ -1,9 +1,12 @@
 # Pikmin 2
 
 ## Latest
-- <a href="https://github.com/chpas/Pikmin2Archipelago/releases/download/v0.9.1/pikmin2.apworld">Latest Version (0.9.1)</a>
+- <a href="https://github.com/chpas/Pikmin2Archipelago/releases/download/v1.0.0/pikmin2.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
+
+#### v1.0.0
+- <a href="https://github.com/chpas/Pikmin2Archipelago/releases/download/v1.0.0/pikmin2.apworld">https://github.com/chpas/Pikmin2Archipelago/releases/download/v1.0.0/pikmin2.apworld</a>
 
 #### v0.9.1
 - <a href="https://github.com/chpas/Pikmin2Archipelago/releases/download/v0.9.1/pikmin2.apworld">https://github.com/chpas/Pikmin2Archipelago/releases/download/v0.9.1/pikmin2.apworld</a>

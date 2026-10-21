@@ -2,15 +2,15 @@
 
 ## What does randomization do to this game?
 
-All treasures are shuffled to different locations, except for the five treasures that the Titan Dweevil drops (Flare Cannon, Monster Pump, Shock Therapist, Comedy Bomb, and King of Bugs).
+All treasures are shuffled to different locations, except for the five treasures that the Titan Dweevil drops (Flare Cannon, Monster Pump, Shock Therapist, Comedy Bomb, and King of Bugs). The former four can be randomized to be in the pool, and if so will show up in either their pool location or on the Titan Dweevil.
 
 ## What items and locations get shuffled?
 
-Any location that contains a treasure, including those in caves, are included in the pool, except for those on floor 14 of Dream Den (Titan Dweevil treasure drops). There are a total of 196 randomized locations. More checks can be added through randomizer options.
+Any location that contains a treasure, including those in caves, are included in the pool, except for those on the boss floor of Dream Den (Titan Dweevil treasure drops). There are a total of 196 base randomized locations. More checks can be added through randomizer options.
 
 ## What is the goal of Pikmin 2 when randomized?
 
-By default, the goal is to beat the Titan Dweevil and collect Louie (King of Bugs). The goal can be changed to collect a certain number of treasures or to collect a certain number of Pokos.
+By default, the goal is to beat the Titan Dweevil and collect Louie (King of Bugs). The goal can be changed to collect a certain number of treasure, to collect a certain number of Pokos, or to spell a phrase.
 
 ## Which items can be in another player's world?
 

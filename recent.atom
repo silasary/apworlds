@@ -2,122 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-20T18:21:34.779016+00:00</updated>
+  <updated>2026-10-21T00:22:54.769427+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.1</id>
-    <title>DUSK v0.4.1</title>
-    <updated>2026-10-17T14:12:03+00:00</updated>
-    <author>
-      <name>FlapjackRetro</name>
-    </author>
-    <content>## New&#13;
-- Version shown in-game (#29): the Archipelago connection window now shows the mod version in small print at the bottom. Please include it when reporting bugs.&#13;
-## Fixes&#13;
-- Connection window size: the window now sizes itself to fit its contents, so the status line, hints and version are never cut off.&#13;
-### Notes&#13;
-Update both dusk.apworld and the mod ZIP. There are no gameplay or logic changes since 0.4.0.</content>
-    <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.9.1</id>
-    <title>Divinity Original Sin 2 v0.9.1</title>
-    <updated>2026-10-17T18:58:44+00:00</updated>
-    <author>
-      <name>Intaiachi</name>
-    </author>
-    <author>
-      <name>chaotic</name>
-    </author>
-    <author>
-      <name>JeyKey09</name>
-    </author>
-    <content>Changes/Bugfixes:&#13;
-- Fort Joy Ghetto guards will no longer send you to prison if you don't have Fort Joy access&#13;
-- Act keys and the Level Teleport will no longer be stuck in a chest should your inventory be confiscated&#13;
-- Several barriers around Fort Joy have been improved&#13;
-- Fixed being able to teleport to The Hollow Marshes early through the drawbridge&#13;
-- Fixed typo (Driftwood: Bsaket (419, 789))&#13;
-- Fixed two crates in Fort Joy coming into logic too early&#13;
-&#13;
-About [here](https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/en_Divinty%20Original%20Sin%202.md)&#13;
-Setup Guide [here](https://github.com/Intaiachi/ArchipelagoDOS2/blob/main/worlds/dos2/docs/steup_en.md)&#13;
-&#13;
-DOS2 mod pak file [Github](https://github.com/Intaiachi/DOS2-Archipelago-Mod/releases), [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354)</content>
-    <link href="https://github.com/Intaiachi/ArchipelagoDOS2/releases/tag/v0.9.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.2</id>
-    <title>DUSK v0.4.2</title>
-    <updated>2026-10-17T19:53:48+00:00</updated>
-    <author>
-      <name>FlapjackRetro</name>
-    </author>
-    <content>## Changes&#13;
-&#13;
-- Combat logic reworked: the combat_logic option now has three settings, from easiest to hardest:&#13;
-- easy (new default): the logic expects the most guns, earliest. Episode 1 needs 1 gun from E1M3 and 2 from E1M6. Episode 2 needs 2 from E2M2 and 3 from E2M6. Episode 3 needs 3 from E3M2 and 4 from E3M6.&#13;
-- normal: one gun fewer at every step. Episode 1 needs 1 gun from E1M6. Episode 2 needs 1 from E2M2 and 2 from E2M6. Episode 3 needs 2 from E3M2 and 3 from E3M6.&#13;
-- unhinged: no combat logic. You may play a long time with only the sickles.&#13;
-- Each episode’s first level never needs a gun. Secret levels need as many as the end of their episode. The Sword doesn’t count as a gun.&#13;
-- E2M1 developer pickups removed: a hidden developer stash in E2M1 (16 extra blue keys and a sword) is no longer part of the randomizer. That’s 17 fewer checks. E2M1’s real blue key is now named E2M1 - Blue Key.&#13;
-- Linux, Steam Deck and macOS setup: the Setup Guide now has install instructions for each system, including Steam Deck with native Linux or Proton. These platforms haven’t been tested in game yet, so reports are welcome.&#13;
-&#13;
-## Fixes&#13;
-&#13;
-- Build: fixed a build error introduced in 0.4.1. It only affected people building the mod themselves.&#13;
-&#13;
-## Upgrading&#13;
-&#13;
-- Update both dusk.apworld and the mod ZIP.&#13;
-- YAML changes for combat_logic:&#13;
-- normal used to mean the strictest rules. That setting is now called easy, and normal now has the looser rules that used to be called lenient. If your YAML says combat_logic: normal and you want the old behaviour, change it to easy or remove the line.&#13;
-- lenient and none still work. They now mean normal and unhinged.&#13;
-- If your YAML refers to E2M1 - Blue Key 1 (for example in exclude_locations), rename it to E2M1 - Blue Key.</content>
-    <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.6.1</id>
-    <title>Rain World v1.6.1</title>
-    <updated>2026-10-17T21:39:09+00:00</updated>
-    <author>
-      <name>alphappy, SaltySyrup</name>
-    </author>
-    <content>## This release is intended to be used with [v1.6.0+ of the client](https://github.com/SaltiestSyrup/RWRandomizer/releases/tag/v1.6.0), and version 0.6.7+ of Archipelago. See [the setup page](https://github.com/alphappy/ArchipelagoRW/blob/v1.5.0/worlds/rain_world/docs/setup_en.md) for instructions.&#13;
-&#13;
-## New Features&#13;
-- New Option: Sparse Gates (1c0e09861c931c0a9c9d9223bc3c02ba64cee3b1)&#13;
-  - When enabled, the generator will try to place the minimum amount of gate items needed to make every region accessible. This makes the game more restrictive, but ensures every gate item is valuable.&#13;
-&#13;
-## Bug Fixes&#13;
-- Fixed a case where Weaver checks would be generated while it is impossible to encounter. (a490d5d06985d427d779f68c0de5408d3743de49)&#13;
-- Removed the caged green lizard in Cold Storage from logic. (3d2342bdd1ab0f8a0ea5387ddbe7cfff5e9d35de)&#13;
-- Fixed Outskirts filtration area being out of logic for Spearmaster with the requisite movement abilities in the pool. (3c385d8c698b18dd0d6cbed72458db2093033d37)&#13;
-&#13;
-## Other&#13;
-- Changed the way regions are populated to reduce hard-coding. (2bef746e5f0aa10b414532ebca568aab3db93c29)&#13;
-- Converted all access rules to use Rule Builder rather than the old custom rule helper classes. (4d810b418da7efe3e745d0c2136d6dc3cbb9cdc8)</content>
-    <link href="https://github.com/alphappy/ArchipelagoRW/releases/tag/v1.6.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.3</id>
-    <title>DUSK v0.4.3</title>
-    <updated>2026-10-17T22:07:57+00:00</updated>
-    <author>
-      <name>FlapjackRetro</name>
-    </author>
-    <content>## Changes&#13;
-&#13;
-- Smarter key logic, starting with E1M8: checks in a level with keys no longer always need all of that level’s keys. &#13;
-- End of an episode goes back to the level select: after E1M10 or E2M10, Proceed on the story screen now takes you back to that episode’s map. Before, it played the next episode’s intro movie and dropped you straight into its first level. Return to Menu and the Episode 3 ending are unchanged.&#13;
-&#13;
-## Notes&#13;
-Update both dusk.apworld (key logic) and the mod ZIP (episode-end change).</content>
-    <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.3"/>
-  </entry>
   <entry>
     <id>https://github.com/Turese/LOArchipelagoPlugins/releases/tag/1.2.3</id>
     <title>Look Outside v1.2.3</title>
@@ -290,7 +179,7 @@ This will almost certainly break any worlds generated prior to this update. Plea
   </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_3</id>
-    <title>Civilization IV v0.0.1r3</title>
+    <title>Civilization IV v0.0.1r2</title>
     <updated>2026-10-18T06:04:27+00:00</updated>
     <author>
       <name>VincentSIFTD</name>
@@ -926,7 +815,7 @@ Free code signing for open source projects, provided by
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `456eb5d73eac583132e5cf515a1959d5e5634e39`.
+Built from `29334a735af70a5c18c3430393754e104b985fc4`.
 
 ## Downloads
 
@@ -935,6 +824,8 @@ Built from `456eb5d73eac583132e5cf515a1959d5e5634e39`.
 
 ## Since v1.18.3
 
+- fix(plugin): stop the minus button paying the bundle ledger again
+- test(docker): refuse an image that drops the plugin's gamedata
 - docs(readme): keep the README to downloads and install links
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
@@ -1073,43 +964,6 @@ Also included in this release:&#13;
 [Game Info](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Hexagon/blob/main/worlds/super_hexagon/docs/en_Super%20Hexagon.md)&#13;
 [Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Hexagon/blob/main/worlds/super_hexagon/docs/setup_en.md)</content>
     <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Hexagon/releases/tag/1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4-RC-h1</id>
-    <title>AP Tombola v0.3.1r2</title>
-    <updated>2026-10-19T12:48:48+00:00</updated>
-    <author>
-      <name>Arenes214</name>
-    </author>
-    <content>Prerelease Version - Not Fully Tested&#13;
-(APWorld Reports internally as 0.3.1 to AP)&#13;
-&#13;
-Hotfix 19/10:&#13;
-Added an extra check to avoid easy item links breaking&#13;
-&#13;
-Changelog APWorld:&#13;
-Easy Item Links&#13;
-"Deprioritize Numbers" Yaml Option&#13;
-Added Milestones&#13;
-Added Filler Items&#13;
-Moved to Rule Builder&#13;
-Universal Tracker Support (Yamlless)&#13;
-Rowsanity Default ON&#13;
-Milestone cannot roll more tombola than goal&#13;
-&#13;
-Changelog Client:&#13;
-Added the ability to modify Saves&#13;
-Fixed Automatic Mark&#13;
-Automatic Mark now happens 3 seconds after a number received / trap end&#13;
-Automatic Mark now also clicks Milestones&#13;
-Fixed Free Location Hints being wasted on already hinted locations&#13;
-Extra message when sending a hinted item from your locations&#13;
-Fixed Itemlink "player" names not being highlighted for your links&#13;
-Fixed Shields number not being updated when none were used beforehand&#13;
-Fixed hint message having an extra space&#13;
-Added "Please Wait..." message in-between clicking free mark and getting server confirmation&#13;
-</content>
-    <link href="https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4-RC-h1"/>
   </entry>
   <entry>
     <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.5</id>
@@ -1431,7 +1285,7 @@ Added "Please Wait..." message in-between clicking free mark and getting server 
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release7</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r4</title>
     <updated>2026-10-20T14:05:24+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1500,7 +1354,7 @@ If you continue your run later, just re-open the modified ROM, which should be p
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.4.1</id>
-    <title>Medievil v0.3.0r2</title>
+    <title>Medievil v0.3.0r3</title>
     <updated>2026-10-20T16:50:32+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1524,5 +1378,117 @@ If you continue your run later, just re-open the modified ROM, which should be p
 - Fix Brute Armor&#13;
 - Adjust UI for Challenge maps and coop mode</content>
     <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.44"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.5.1</id>
+    <title>Animal Crossing v0.5.1</title>
+    <updated>2026-10-20T18:26:17+00:00</updated>
+    <author>
+      <name>haloopdy</name>
+    </author>
+    <content>Setup instructions: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/setup_en.md&#13;
+Game info: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/game_info_en.md&#13;
+&#13;
+This version is backwards compatible back to 0.5.0&#13;
+&#13;
+## New Features&#13;
+- **Built-in Archipelago client**. You can now do all the usual things (see log, hints, locations, checks, etc) directly in the pause menu&#13;
+- **Fruit Filler**, on by default. Adds one of all non-town fruit to the pool&#13;
+- **Better version alerts**, the version at the bottom right will indicate if it's a fully incompatible version (shown as red), a compatible but non-matching version (shown in white/gray), or a matching version (green, as usual)&#13;
+&#13;
+## Tweaks&#13;
+- **MUCH simpler defaults**: only goal is Statue by default, only additional checks are favors, loansanity, and museumsanity (no museum goal). Old defaults now at [docs/example_yamls/expert.yaml](https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/example_yamls/expert.yaml)&#13;
+- Title screen "Options" now "Settings" to match PC pause menu.&#13;
+- Update option description wording, update documentation wording&#13;
+- Letter paper defaults to random&#13;
+- Letter Send and Loan Letter Text now empty by default (still fills with default text from before at generation)&#13;
+&#13;
+Note: if you had a hand-written yaml pre-0.5.1 with missing fields that relied on the defaults, the defaults have changed now. Be careful! Yamls generated from the options creator are unaffected (they export every option)</content>
+    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/tag/Beta-1.4.1</id>
+    <title>LEGO Star Wars III: The Clone Wars v1.4.1</title>
+    <updated>2026-10-20T19:58:45+00:00</updated>
+    <author>
+      <name>Newtboy</name>
+    </author>
+    <content>**Full Changelog**: https://github.com/Newtboy/Newtboy-LSW3-Archipelago/compare/Hotfix-1.3.1...Beta-1.4.1</content>
+    <link href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/tag/Beta-1.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.1</id>
+    <title>Mario Sports Mix v3.1.1</title>
+    <updated>2026-10-20T20:02:57+00:00</updated>
+    <author>
+      <name>ElectroStarz</name>
+    </author>
+    <author>
+      <name>Puffy</name>
+    </author>
+    <content>## What's Changed?&#13;
+* Fixed /super_debug&#13;
+* Fixed the client logging "Server not recognised goal" upon connection&#13;
+* Got rid of some of the `or if character in ["Mii (Male)", "Mii (Female)"]`, not required for future releases.&#13;
+&#13;
+Compatible with v3.1.0!</content>
+    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.11.2</id>
+    <title>Total War Warhammer 3 v0.11.2</title>
+    <updated>2026-10-20T21:48:17+00:00</updated>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>Bug fixes&#13;
+&#13;
+Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
+[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).&#13;
+&#13;
+Alpha build.</content>
+    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.11.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/tag/Beta-1.4-2</id>
+    <title>LEGO Star Wars III: The Clone Wars v1.4.post2</title>
+    <updated>2026-10-20T23:34:50+00:00</updated>
+    <author>
+      <name>Newtboy</name>
+    </author>
+    <content>**Full Changelog**: https://github.com/Newtboy/Newtboy-LSW3-Archipelago/compare/Hotfix-1.3.1...Beta-1.4-2</content>
+    <link href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/tag/Beta-1.4-2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.3</id>
+    <title>EldenRing v0.1.3</title>
+    <updated>2026-10-20T23:46:16+00:00</updated>
+    <author>
+      <name>Bedrock</name>
+    </author>
+    <content>[Setup guide](&lt;https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_setup_guide.md&gt;)&#13;
+[Game info](&lt;https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_Elden_Ring.md&gt;)&#13;
+&#13;
+This version has minor fixes (see below), though it is still an **unstable alpha**. Avoid using it in runs with other people unless they are okay with these kinds of issues coming up.&#13;
+&#13;
+0.1.3 requires Elden Ring version 1.17.2 which dropped earlier today. If you are continuing a run from before 0.1.3, [use 0.1.2_patch instead](https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.2).&#13;
+&#13;
+Changes&#13;
+- Additional [Universal Tracker](https://archipelago.miraheze.org/wiki/Universal_Tracker) support: priority locations are shown on top and the original yaml is not required.&#13;
+- Ancient Dragon Man and Jori locations don’t get excluded by the `Dungeon` group anymore&#13;
+- Bosses in cellars now have the chest they block act as the priority location (Sellen doesn’t count).&#13;
+- Add option to place other worlds' useful items at priority only, like Hollow Knight's Pale Ore.&#13;
+- Add Blizzard Trap, Status Trap, and Blindness Trap. There is a new setting for the total number of traps, where each individual trap can be assigned a chance of showing up, and traps replace filler items.&#13;
+- All priority groups are now either Base-only or DLC-only.&#13;
+- Add more local item groups to prevent spamming other worlds.&#13;
+- Try to determine the cause of death and include it in deathlink messages.&#13;
+&#13;
+Fixes&#13;
+- Fix logic so Golden Hippopotamus requires SK lock and Sewer requires its lock, as neither are accessible in-game otherwise.&#13;
+- Excluding the DLC without disabling it now works, in which case it will be fully out of logic and DLC-only items like Scadutree Blessings are also excluded.&#13;
+- For now, disable duping remembrances or Ashes of War from other worlds, as otherwise it showed incorrect entries.&#13;
+&#13;
+## eldenring.apworld and pre-generated yaml files are included in the zip file.</content>
+    <link href="https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.3"/>
   </entry>
 </feed>
