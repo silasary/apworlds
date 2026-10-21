@@ -2,12 +2,14 @@
   "flags": [],
   "game": null,
   "github": "https://github.com/SynthKat67/BugsBunnylitAPWorld",
+  "license": null,
   "manifest_fields": [],
   "versions": {
     "v.0.2.0": {
       "created_at": "2026-08-12T11:49:32Z",
       "description": "big update from a backend perspective, the world is far more sturdy now, and has an AP controlled system for opening and controlling level entrances.\r\nWith this version more content will be implemented in the upcoming releases.\r\n\r\nNew:\r\n\r\n- shuffled entry requirements\r\nvanilla: levels open in the vanilla order\r\nshuffled: swaps the requirements for each level, changing the order of unlocks.\r\n\r\n- hubs are all open after Nowhere\r\nthis is less of a feature and hopefully a temporary solution, in the future having hub unlocks be items would be preferable\r\n\r\n\r\nBug Fixes:\r\n\r\n- Levels now open when in hub with the appropriate amount of Clocks/GC's\r\n- magic locations are decoupled from their items, you get both separately\r\n- demo or soft resets no longer release checks\r\n\r\n\r\nStill Existing Bugs:\r\n\r\n- tracking for levels like whats cookin doc which have more than 1 magic requirement is still a bit scuffed, the magic wont be behind those areas, however the tracker might think you have access if you have one of the magics (since were still using counters. Once next update comes out this won't be an issue)\r\n\r\n- music stops in two instances, objects in the mirror on the turn after the fire hydrants, and the timer slide in carrot-henge. honestly not sure why this occurs yet.\r\n\r\n- Bugs Bunny himself\r\n\r\nFuture content:\r\n\r\n- the next update will set each location as a unique location, not a counter \r\n(wanted this from the beginning but only now found address for this)\r\n\r\n- AP enforced level progression\r\n( what this means is if a location is checked the AP will enforce that onto the game, so in case of a crash of save state the game's level values should be correct (currently can't do this due to clocks n carrots using counters))\r\n\r\n- adjustable random requirements for levels\r\n(this will make GC's wayy more rewarding)\r\n\r\n- adjustable goal requirements\r\n(will also implement GC's into goal requirement as a yaml option)\r\n\r\n- potentially new locations/items in the form of ACME crates and challenge timers\r\n\r\n- potentially traps in the form of the robots ice trap",
       "download_url": "https://github.com/SynthKat67/BugsBunnylitAPWorld/releases/download/v.0.2.0/bugsbunnylit.apworld",
+      "failed_to_load": "'NoneType' object is not iterable",
       "has_manifest": false,
       "hash_sha256": "503386a6ea42f2087d2ffe157c5e44501db833f92b63e639a62f23aae79ffdc1",
       "html_url": "https://github.com/SynthKat67/BugsBunnylitAPWorld/releases/tag/v.0.2.0",
