@@ -2,9 +2,11 @@
   "authors": [
     "Bedrock"
   ],
+  "description": "Elden Ring Archipeligo.",
   "flags": [],
   "game": "EldenRing",
   "github": "https://github.com/thefifthmatt/SoulsRandomizers",
+  "license": null,
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
@@ -40,6 +42,21 @@
       "title": "Elden Ring Archipelago Randomizer v0.1.2",
       "version_simple": "0.1.2",
       "world_version": "0.1.2"
+    },
+    "eldenring-ap-0.1.3": {
+      "created_at": "2026-10-20T23:46:16Z",
+      "description": "[Setup guide](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_setup_guide.md>)\r\n[Game info](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_Elden_Ring.md>)\r\n\r\nThis version has minor fixes (see below), though it is still an **unstable alpha**. Avoid using it in runs with other people unless they are okay with these kinds of issues coming up.\r\n\r\n0.1.3 requires Elden Ring version 1.17.2 which dropped earlier today. If you are continuing a run from before 0.1.3, [use 0.1.2_patch instead](https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.2).\r\n\r\nChanges\r\n- Additional [Universal Tracker](https://archipelago.miraheze.org/wiki/Universal_Tracker) support: priority locations are shown on top and the original yaml is not required.\r\n- Ancient Dragon Man and Jori locations don\u2019t get excluded by the `Dungeon` group anymore\r\n- Bosses in cellars now have the chest they block act as the priority location (Sellen doesn\u2019t count).\r\n- Add option to place other worlds' useful items at priority only, like Hollow Knight's Pale Ore.\r\n- Add Blizzard Trap, Status Trap, and Blindness Trap. There is a new setting for the total number of traps, where each individual trap can be assigned a chance of showing up, and traps replace filler items.\r\n- All priority groups are now either Base-only or DLC-only.\r\n- Add more local item groups to prevent spamming other worlds.\r\n- Try to determine the cause of death and include it in deathlink messages.\r\n\r\nFixes\r\n- Fix logic so Golden Hippopotamus requires SK lock and Sewer requires its lock, as neither are accessible in-game otherwise.\r\n- Excluding the DLC without disabling it now works, in which case it will be fully out of logic and DLC-only items like Scadutree Blessings are also excluded.\r\n- For now, disable duping remembrances or Ashes of War from other worlds, as otherwise it showed incorrect entries.\r\n\r\n## eldenring.apworld and pre-generated yaml files are included in the zip file.",
+      "download_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.3/eldenring.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7a50e82c8d0ccb8f79ca95cfc56665c9366209609c61f600253dc7fd2ab80489",
+      "html_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 263344,
+      "source_url": "https://api.github.com/repos/thefifthmatt/SoulsRandomizers",
+      "tag": "eldenring-ap-0.1.3",
+      "title": "Elden Ring Archipelago Randomizer v0.1.3",
+      "version_simple": "0.1.3",
+      "world_version": "0.1.3"
     }
   }
 }
