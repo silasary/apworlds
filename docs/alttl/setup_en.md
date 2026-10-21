@@ -36,8 +36,8 @@
    while BepInEx generates its files. The main menu gains an **Archipelago**
    entry.
 
-The mod is also on
-[Thunderstore's A Little to the Left page](https://thunderstore.io/c/a-little-to-the-left/),
+Or start from
+[the mod's Thunderstore page](https://thunderstore.io/c/a-little-to-the-left/p/drohack/A_Little_to_the_Left_Archipelago/),
 whose **Install with Mod Manager** button does steps 2 to 5.
 
 ### Manual setup

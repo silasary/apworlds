@@ -4,7 +4,11 @@
   ],
   "game": "A Little to the Left",
   "github": "https://github.com/drohack/alttl-archipelago",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/drohack/alttl-archipelago/blob/main/docs/installation.md",
   "sheet_disclosure": [
     "Extensive",
@@ -204,6 +208,21 @@
       "title": "1.0.0 - On Thunderstore, and one way out of every puzzle",
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
+    },
+    "v1.0.1": {
+      "created_at": "2026-10-21T15:07:35Z",
+      "description": "**1.0.0 seeds: finish them on 1.0.0, or regenerate.** No location id moved,\nbut the mod refuses a seed made by a different apworld version, as it has\nsince 0.3.3.\n\n## Install\n\n**With a mod manager (recommended):** in r2modman or Thunderstore Mod\nManager, choose A Little to the Left, search the Online tab for\n**A Little to the Left Archipelago**, press Download, then Start modded.\nBepInEx comes with it. The package is the same build as these files, on\n[its Thunderstore page](https://thunderstore.io/c/a-little-to-the-left/p/drohack/A_Little_to_the_Left_Archipelago/).\n\n**By hand:** three files, and they carry the same version on purpose. See\n[docs/installation.md](https://github.com/drohack/alttl-archipelago/blob/v1.0.1/docs/installation.md).\n\n- `ALTTLArchipelago-1.0.1.zip` - the mod. Extract into the game folder. **You\n  need [BepInEx 6 for Unity IL2CPP](https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip)\n  (be.755) installed first** - it is not included.\n- `alttl.apworld` - only whoever generates the seed needs it. Goes in\n  Archipelago's `custom_worlds/`. Requires Archipelago 0.6.7 or newer.\n- `A Little to the Left.yaml` - your settings. Edit the name and hand it to\n  whoever generates.\n\nEvery player needs the yaml and whoever generates needs the apworld, from\nthis release whichever way you install the mod.\n\n## What a player will notice\n\nNothing in play changes. This release is a smaller download and a stricter\nrelease check.\n\n- **Less in the download.** Code the mod never runs is gone, and what only\n  tests and developer tools use moved out of the shipped files: Core.dll\n  83 KB -> 60 KB, ModKit.dll 28 KB -> 22 KB. The apworld no longer packs\n  hand-test evidence the generator never reads.\n- **Two settings left the mod's config:** `[Input] TypingSuppression` and\n  `[Diagnostics] BadgeWhyProbe`. BepInEx leaves an old entry in place; it\n  does nothing.\n\n## How it was checked\n\n- Full gate 30/30 and DLC gate 30/30 on these exact files, each from a fresh\n  install that meets and answers the game's first-run prompts (Colour Assist,\n  the multiple-solutions tutorial), with no game errors in either.\n- Not re-run, as nothing they cover changed: the by-hand solve of the levels\n  the gate cannot force, and the level table against the game (`levels.json`\n  and `abilities.json` untouched; `names.json` only in its `_comment`).\n\nFull details: [CHANGELOG.md](https://github.com/drohack/alttl-archipelago/blob/v1.0.1/CHANGELOG.md).\n",
+      "download_url": "https://github.com/drohack/alttl-archipelago/releases/download/v1.0.1/alttl.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9296ec03a0799cdd9dcbbc0b6debd5a4687a6246d86a4768be63904f28878f11",
+      "html_url": "https://github.com/drohack/alttl-archipelago/releases/tag/v1.0.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 77565,
+      "source_url": "https://api.github.com/repos/drohack/alttl-archipelago",
+      "tag": "v1.0.1",
+      "title": "1.0.1 - A smaller download, and a gate that plays a fresh install",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
     }
   }
 }
