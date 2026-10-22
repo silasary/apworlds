@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.1.43/kssu.apworld">Latest Version (0.1.43)</a>
+- <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.0/kssu.apworld">Latest Version (0.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

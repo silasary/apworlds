@@ -107,7 +107,7 @@ Include that output, the steps to reproduce the problem, and any relevant error
 message when reporting a bug. `/nsmbds_diag short` gives a smaller overview.
 
 For a problem that needs more detailed logs, enter `/nsmbds_debug on`, reproduce
-it. Logs can be found in your Archipelago Folder in `/logs/BizHawkClient_xxxx.txt`.
+it. Logs can be found in your Archipelago Folder in `/logs/NsmbdsClient_xxxx.txt`.
 
 ## Verify the original ROM
 

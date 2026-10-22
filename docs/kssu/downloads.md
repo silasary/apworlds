@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.1.43/kssu.apworld">Latest Version (0.1.43)</a>
+- <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.0/kssu.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.0/kssu.apworld">https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.0/kssu.apworld</a>
 
 #### v0.1.43
 - <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.1.43/kssu.apworld">https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.1.43/kssu.apworld</a>

@@ -49,14 +49,11 @@ ___
 ### Are there any known bugs?
 
 - Occasionally in MWW, the abilities on the bottom screen will be the wrong color.
-- The abilities on MWW's pause screen are not what abilities were recieved, but which ones were collected. (Selecting them does nothing unless already collected)
 - When watching the beginner show, you may experience some visual bugs. It's best to skip these.
 - Swallowing two enemies will still give you at least one of the abilities or mix, even if the ability isn't unlocked.
 - When a progressive key is recieved for TGCO or MKU, the barrier will still be there visually (read more below)
 - Reloading Dyna Blade will sometimes spawn Iron Mam, even when defeated.
-- If an ability is recieved while playing MWW, it won't appear until the game is exited and re-entered.
-- Hard restarting or re-opening the game will re-send every item.
-
+  
 ___
 ### I found another bug, where do I report it?
 
@@ -69,14 +66,21 @@ ___
 This happens when you try to enter a game you do not have unlocked yet. Double-check to make sure you are properly connected
 with the LUA and to the Archipelago server.
 
+If you received the game but cannot play it, you may have reset your game before the emulator could process it.
+Please have the host re-send it using /send [NAME] [GAME]. You should also refer to the bottom section.
+
 ___
 ### I got a progressive key in The Great Cave Offensive / Meta Knightmare Ultra, but the block is still there!
 
-Try pausing and unpausing your game to see if it disappears. Otherwise, please report this bug to me directly.
-This bug will happen in Meta Knightmare Ultra when re-loading your save. Please make sure to try this first.
+Try pausing and unpausing your game to see if it disappears. 
+If not, double check your YAML to see if you are using "key" or "gold", ensuring you have enough to proceed.
+(You can double check this using Universal Tracker)
+
+Otherwise, please report this bug to me directly.
+This bug will always happen in Meta Knightmare Ultra when re-loading your save. Please make sure to try this first.
 (You can also just walk through the block, it'll only be there visually but not physically.)
 
-In a future update, this problem will hopefully be resolved in a better fashion.
+In a future update, this problem will hopefully be resolved for more clarity.
 
 ___
 ### I beat a boss/level in Meta Knightmare Ultra, but the check didn't send!
@@ -90,8 +94,6 @@ ___
 ### Are there any features you plan to add?
 
 Most updates will focus on bug fixes and quality of life. Outside of those, some features I plan to add at a later date are:
-- Traps
-- Deathlink
 - Locking helpers in Helper to Hero based on abilities unlocked
 - "Helpersanity" (Locations for each helper in Helper to Hero)
 - "Foodsanity" (Locations for each food item)

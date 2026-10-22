@@ -8,6 +8,9 @@ routes, and Power-Ups. Single-player seeds are also supported.
 For installation, patching the game, and connecting to a room, see the
 [Setup Guide](setup_en.md).
 
+[Checks & Logic Guide](checks_logic.md)
+[Complete Check List](check_catalog.md)
+
 > **Unstable release:** This version is still being tested. Gameplay, item
 > delivery, and tracking may have bugs.
 

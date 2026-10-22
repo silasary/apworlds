@@ -11,16 +11,37 @@
 This AP World requires the following Gecko Code to be enabled in Dolphin:
 
 ```text
-C22E5CD8 00000007
-387B0010 39C00020
-7C6373D6 1DC30020
-7DCED850 39CE0010
-3DE0817F 61EFC3A8
-1C630004 7C637850
-80630000 7C637430
+USA Disc 1 Revision 1
+
+C22E5CD8 00000005
+5763E8FE 736E0007
+3DE0817F 61EFC020
+7C6F1A14 88630000
+69CE0007 7C637430
 70630001 00000000
 0410A23C 4800001C
 0410A388 48000014
+C2316B0C 00000003
+3CC0817F 60C6C02C
+90060000 90040000
+60000000 00000000
+```
+
+```text
+EU Disc 1 Revision 0
+
+C22E54D8 00000005
+5763E8FE 736E0007
+3DE0817F 61EFC020
+7C6F1A14 88630000
+69CE0007 7C637430
+70630001 00000000
+0410A18C 4800001C
+0410A2D8 48000014
+C231611C 00000003
+3CC0817F 60C6C02C
+90060000 90040000
+60000000 00000000
 ```
 
 The steps below explain how to install the AP World and add this code to Dolphin.
@@ -43,17 +64,20 @@ The steps below explain how to install the AP World and add this code to Dolphin
    ```
    Name: Donkey Kong Country Returns (Disc 1, Revision 1)
    Country: USA
+   
+   Name: Donkey Kong Country Returns (Disc 1, Revision 0)
+   Country: Europe
    ```
 
    Other regions or revisions are not currently supported.
 
 5. Open the **Gecko Codes** tab and select **Add New Code**.
 
-   Enter a name and creator, then paste the Gecko Code from above into the **Code** section. Save the code and make sure the checkbox next to it is enabled.
+   Enter a name and then paste the Gecko Code from above into the **Code** section. Save the code and make sure the checkbox next to it is enabled.
 
 6. Launch **Donkey Kong Country Returns** in Dolphin, then launch the **Donkey Kong Country Returns Client** from the Archipelago Launcher.
 
-7. Enter your server address, port, and slot name in the client. Once connected, start a new save file in the game.
+7. Enter your server address, port, and log into your slot name in the client. Once connected, start a new save file in the game.
 
 8. Have fun!
 
@@ -66,5 +90,6 @@ A [PopTracker pack for DKCR AP](https://github.com/MagicMason1000/DKCR-AP-PopTra
 * No game patch or modified ISO is required.
 * The AP World runs through memory injection while using an unmodified game.
 * The Gecko Code must be enabled for the AP World to communicate with the game.
-* The supported game version is the **USA release of Donkey Kong Country Returns (Disc 1, Revision 1)**.
+* The supported game versions are the **USA release of Donkey Kong Country Returns (Disc 1, Revision 1)** or
+**EU release of Donkey Kong Country Returns (Disc 1, Revision 0)**.
 * Other regions or game revisions may not work correctly.

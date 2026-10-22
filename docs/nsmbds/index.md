@@ -4,7 +4,7 @@ Archipelago World implementation for New Super Mario Bros. DS.
 
 
 ## Downloads
-- <a href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.5.2-unstable/nsmbds.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/Lemix028/Archipelago-NewSuperMarioBrosDS/releases/download/nsmbds-v0.5.3-unstable/nsmbds.apworld">Latest Version (0.5.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -15,3 +15,5 @@ Archipelago World implementation for New Super Mario Bros. DS.
 
 ## Other Documentation files
 - <a href="Roadmap">Roadmap</a>
+- <a href="check_catalog">check_catalog</a>
+- <a href="checks_logic">checks_logic</a>

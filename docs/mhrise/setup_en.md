@@ -121,6 +121,7 @@ Rise" YAML. The available options are:
   on, every pool quest's boss monster is randomly swapped. Turn it off
   to keep vanilla bosses and only gate the clear-checks.
 - `Deathlink` (default off) — whether or not the game should participate in  deathlink. This setting can be toggled in-game at any time.
+- `TrapChance` (range 0 - 100, default 0) — the chance of a filler item being swapped for a trap item. Leave at 0 to disable traps
 
 Drop the YAML into `<Archipelago install>/Players/`, run
 `ArchipelagoGenerate`, then host the resulting room (or upload the
