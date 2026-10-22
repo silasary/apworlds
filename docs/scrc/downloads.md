@@ -8,6 +8,9 @@
 #### v0.29.0r2
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.1/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.1/scrc.apworld</a>
 
+#### v0.29.0r2
+- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.2/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.2/scrc.apworld</a>
+
 #### v0.29.0
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.0/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.0/scrc.apworld</a>
 

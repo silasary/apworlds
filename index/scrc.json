@@ -290,6 +290,21 @@
       "title": "v0.29.1 - Player Movement Repair",
       "version_simple": "0.29.0",
       "world_version": "0.29.0r2"
+    },
+    "v0.29.2": {
+      "created_at": "2026-10-22T07:36:55Z",
+      "description": "# v0.29.2 \ufffd Cell Tower escape fixes\r\n\r\n**October 22, 2026. Client 0.76.2 / APWorld 0.29.0 (unchanged).**\r\n\r\n## Fixed\r\n\r\n- Cell Tower Access now keeps the return gate from the Central Mainframe room toward the Cell Tower phone usable, including its interaction, before the native level-attempt requirement is met.\r\n- Leaving that room toward Lobby before Fish Tears delivery now returns the player safely to Music Lab, avoiding the upper-Lobby hand-blocker trap. After delivery, the normal route remains subject to existing area ownership checks.\r\n- These repairs do not complete quests, grant items, send checks or change generated progression rules.\r\n\r\n## Updating\r\n\r\nClose the game and install **RhythmCastleAP-v0.76.2.zip**, retaining its included licenses. Keep your configuration, current seed and associated save. APWorld remains **0.29.0**; the unchanged APWorld download is included for convenience. No regeneration or tracker update is required for this client patch.\r\n\r\n## Validation and scope\r\n\r\nBoth reported escape routes passed targeted user gameplay testing. The release contains the accepted native-interaction repair with a version-label update. Native-reference tests cover exact condition validation, idempotence, wrong flags/classes and failed writes; existing routing regressions are also covered. Full release validation is recorded in [testing](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.2/docs/TESTING.md).\r\n\r\nSeparate investigation confirmed early Violance did not prevent Old Tom's note in the tested post-nectar state, and the Cell Tower Star Eater did not require Cold Storage completion after leaving and returning. Complete prerequisites are not yet isolated, so generation logic remains unchanged.\r\n\r\nIntermittent performance stalls, extended-session/multiplayer coverage and remaining native-rule uncertainties remain in [known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.2/docs/KNOWN_ISSUES.md). This release does not claim to resolve those reports.\r\n\r\nSee the [AI disclosure](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.2/docs/AI_DISCLOSURE.md) and [gate acceptance record](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.2/docs/testing/2026-10-22-hub-escape.md).\r\n\r\nRelease validation: all 45 client regression projects passed, the Release build completed with zero warnings/errors, repository validation passed, and all 10 packaging tests passed. The APWorld asset is reused byte-for-byte from v0.29.1.\r\n\r\n",
+      "download_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.2/scrc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6011ee8a492ca8312a3d4569b3bb6268521b675ea9bc85abef739e9580405aa9",
+      "html_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.29.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 73878,
+      "source_url": "https://api.github.com/repos/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago",
+      "tag": "v0.29.2",
+      "title": "v0.29.2 \u2014 Cell Tower escape fixes",
+      "version_simple": "0.29.0",
+      "world_version": "0.29.0r2"
     }
   }
 }
