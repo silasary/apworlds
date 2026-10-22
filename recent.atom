@@ -2,164 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-22T00:20:21.183443+00:00</updated>
+  <updated>2026-10-22T06:17:40.500271+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ArsonAssassin/DC2AP/releases/tag/0.1.0.0</id>
-    <title>Dark Cloud 2 v0.1.0.0</title>
-    <updated>2026-10-18T20:37:55+00:00</updated>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <content>**Full Changelog**: https://github.com/ArsonAssassin/DC2AP/compare/0.0.4.0...0.1.0.0</content>
-    <link href="https://github.com/ArsonAssassin/DC2AP/releases/tag/0.1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/mario-tennis-gbc-disasm/releases/tag/apworld-v0.2.0</id>
-    <title>Mario Tennis GBC v0.2.0</title>
-    <updated>2026-10-18T21:04:20+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content>## New options
-
-- **`shot_items`** (default off): your shots become items.
-  - **Strokes:** topspin, slice and the flat shot. The second copy of each adds its power shot (the smash, for the flat shot).
-  - **Lob and drop shot.**
-  - **Serves:** topspin, slice and flat. The second copy adds the nice serve.
-  - You start with one random stroke and one random serve. A locked shot plays the first stroke or serve you own.
-  - **Logic:**
-    - Story matches want more shots as you climb: 3 for Senior, 5 for Varsity, 8 for the Island Open, 11 for the Dream Match.
-    - Shot-hungry mini-games and drills want the shots they need.
-    - Anything that can still be won without the shots shows as glitched logic in Universal Tracker.
-- **`experience_modifier`** (default normal): scales every EXP award, from ×0.5 up to ×5. That covers story, exhibition and linked matches, drills, and EXP Bundles.
-- **`nerf_two_on_one`** (default off): Bowser's Two-on-One plays 2 games per set instead of 6.
-- **`skip_ceremony`** (default off): winning the Island Open final skips the fireworks and the Awards Ceremony. You go straight from the bracket to the congratulations artwork and credits.
-- **`dream_match_difficulty`** (default intense): sets how hard Mario plays in Peach's first Dream Match offer: hard, intense or max. After a win she offers all three, as usual.
-
-## Locations
-
-- **New:** each class's practice match, in both arcs (6 locations). Each one still needs that class's pass.
-- **Removed:** the three mini-game record-court locations.
-- That makes 88 locations in total.
-
-## Logic
-
-- **Mini-games:**
-  - Perfect Shot needs the lob.
-  - Target Shot levels 2 and 3 need the drop shot, and want the lob.
-  - Two-on-One wants the Dream Match's shot count.
-- **Drills:** a level's logic includes the level before it. Service Matches want a nice serve, and are glitched without one.
-
-## Other changes to the game
-
-- **Academy front gate:** once both the Island Open and Peach's Castle are open, the gate opens an Island Open / Mario World menu. Pressing B walks you back into the Academy.
-- **Assigning EXP:**
-  - Select gives the highlighted character all the remaining EXP.
-  - Holding the increase keeps speeding up, past the original game's top speed, to as much as 64 points a frame.
-</content>
-    <link href="https://github.com/gerbiljames/mario-tennis-gbc-disasm/releases/tag/apworld-v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.18.3r2</title>
-    <updated>2026-10-18T21:24:25+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `29334a735af70a5c18c3430393754e104b985fc4`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.18.3
-
-- fix(plugin): stop the minus button paying the bundle ledger again
-- test(docker): refuse an image that drops the plugin's gamedata
-- docs(readme): keep the README to downloads and install links
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Uroogla/S2AP/releases/tag/2.2.0</id>
-    <title>Spyro 2 v2.2.0</title>
-    <updated>2026-10-19T00:14:43+00:00</updated>
-    <author>
-      <name>Uroogla</name>
-    </author>
-    <content>This release modifies both the Duckstation client (S2AP.Desktop.exe) and the APWorld (including the Bizhawk client). This release is not compatible with previous versions. As this release patches a significant DataStorage usage issue with the Duckstation client, full gemsanity players are urged to update immediately.&#13;
-&#13;
-New Features:&#13;
-- Players can now menu out of Glimmer before entering Summer Forest for the first time.&#13;
-  - Game overs prior to entering Summer Forest continue to redirect the player to Glimmer, as in vanilla.&#13;
-&#13;
-Changes:&#13;
-- The minimum supported AP version is now 0.6.6, up from 0.6.1.&#13;
-- Most users will no longer need to run the Duckstation client in admin mode. This is no longer forced on opening it.&#13;
-- Gemsanity Rework&#13;
-  - Gem locations and items are now separated.&#13;
-    - The player may specify how many gems to become locations.&#13;
-    - Gems will behave normally if only locations are added.&#13;
-    - Adding 500 or more locations requires host approval.&#13;
-  - Simplified gem item options.&#13;
-  - When choosing gem bundles or full gemsanity, the player's gem location count may be overridden to provide enough locations.&#13;
-  - If not logically required, red gems are now filler items. Otherwise, they are converted to green and blue gems.&#13;
-    - This significantly improves the speed of generation and success rate for full gemsanity.&#13;
-- When Level Locks are on, beating Ripto unlocks Dragon Shores permanently.&#13;
-  - The lock now only prevents entering from out of bounds.&#13;
-- The trick enabling wall access from Zephyr with Double Jump now also grants access to the two gems outside Metro Speedway into logic. (Coded by PhoenixAki)&#13;
-&#13;
-Bug Fixes&#13;
-- [Duckstation] Fixed a critical bug where inefficient DataStorage use could cause issues up to and including crashes in full gemsanity seeds.&#13;
-- Fixed a logic error that incorrectly handled the warp from Crush to Autumn Plains when the player had swim but not climb.&#13;
-- [Bizhawk] Fixed a pair of bugs around Sparx range and the Lazy Sparx Trap.&#13;
-- Fixed a bug where loading into an in-progress gemsanity seed could release checks based on your vanilla progression instead of your AP progression.&#13;
-- [Duckstation] Fixed a bug where connecting before in game could cause filler items received offline to be lost.&#13;
-- Fixed a bug where Elora could let the player into the Ripto fight early under rare circumstances.</content>
-    <link href="https://github.com/Uroogla/S2AP/releases/tag/2.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.4</id>
-    <title>SM64: Spicy Mycena 64 v1.0.4</title>
-    <updated>2026-10-19T00:27:59+00:00</updated>
-    <author>
-      <name>Alchav</name>
-    </author>
-    <content># APWorld updates&#13;
-- Trick tags added. You can now use the following to enable all tricks tagged with the specified tags (note that the difficulty tags no longer include tricks below the specified difficulty levels. If you want all easy and all medium tricks, you will need to add both All Easy Tricks and All Medium Tricks):&#13;
-  - All Easy Tricks&#13;
-  - All Medium Tricks&#13;
-  - All Hard Tricks&#13;
-  - All Pro Tricks&#13;
-  - All Cannon Precision Tricks&#13;
-  - All Metal Cap Skip Tricks&#13;
-- New tricks added:&#13;
-  - Big Boo's Haunt Shed Roof 1-Up with Crazy Box #18 @Spoider1315&#13;
-  - Hazy Maze Cave Pit Islands with Long Jump&#13;
-  - Tick Tock Clock Top Past Spinners with Side Flip #27 @ClTYOFEVlL&#13;
-- Many logic fixes, including from #20 @ItzLoonie&#13;
-- Sign hints now select items from later spheres only, rather than the same or later sphere.&#13;
-- Updated setup guide #26 @Prelle&#13;
-&#13;
-# sm64ex updates&#13;
-- Split coin storage into separate DataStorage keys for each course. Hopefully, this prevents DataStorage from hitting a limit on the archipelago.gg servers. The limits do not seem to be public information.&#13;
-- More robust handling of saving and retrieving coin collection data from the server.&#13;
-&#13;
-#sm64ex hotfixes&#13;
-- October 19, 2026: Reading an entrance hint on a sign no longer causes Universal Tracker to treat the entrance as discovered. A separate flag is saved on the server instead which will be used in the future 1.0.5 release by Universal Tracker to consider an entrance "discovered" but not treated as reachable if you cannot reach it.&#13;
-- October 19, 2026: Location checks should not be lost when done while disconnected from the server.&#13;
-- October 20, 2026: Fixed coin count displays in the global level items menu.</content>
-    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.4"/>
-  </entry>
   <entry>
     <id>https://github.com/zane31415/ArchipelagoBG3/releases/tag/v0.8.0</id>
     <title>Baldur's Gate 3 v0.8.0</title>
@@ -1385,5 +1232,71 @@ Use apworld 0.4.2 together with mod 0.4.2. Seeds generated with apworld 0.4.0 or
 - The mod and apworld READMEs are now one README, attached to this release and included in the mod zip. It covers setup from start to finish, every in-game Mod Option and every yaml option, including the new shop and planting options.&#13;
 </content>
     <link href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/tag/v0.4.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.11</id>
+    <title>Modded Minecraft v3.0.11</title>
+    <updated>2026-10-22T02:06:58+00:00</updated>
+    <author>
+      <name>Stuff691734</name>
+    </author>
+    <content>Changed error about about final goal not being randomized into a warning, and made it only check if the module is activated.</content>
+    <link href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.11"/>
+  </entry>
+  <entry>
+    <id>https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/tag/v0.1.1-alpha</id>
+    <title>Trails Beyond the Horizon v0.1.1a0</title>
+    <updated>2026-10-22T03:35:34+00:00</updated>
+    <author>
+      <name>Brimaster2000</name>
+    </author>
+    <content>Added /game command to select your game folder and /patch_status to ensure your game is patched. This should allow for storefronts other than Steam, as well as any issues with finding the game installation. Other storefronts such as GOG remain untested but should work unless the memory addresses are vastly different. Please let me know if any issues arise.&#13;
+</content>
+    <link href="https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/tag/v0.1.1-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.6.3</id>
+    <title>Links Awakening DX Beta v13.6.3</title>
+    <updated>2026-10-22T04:20:26+00:00</updated>
+    <author>
+      <name>zig</name>
+    </author>
+    <author>
+      <name>threeandthree</name>
+    </author>
+    <content>Fixes patching for dungeon dive</content>
+    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.5-alpha</id>
+    <title>West of Loathing v0.3.2r2</title>
+    <updated>2026-10-22T04:57:31+00:00</updated>
+    <author>
+      <name>Xylen</name>
+    </author>
+    <author>
+      <name>TylerJG92</name>
+    </author>
+    <content># Changelog for WOLAP v0.3.5 (&amp;APWorld v0.3.2 from 10/16/26)&#13;
+All save files and APWorlds generated with v0.3.0 remain compatible with WOLAP v0.3.5 and APWorld v0.3.2. No regeneration is required to continue playing, but the corrected generation logic will only apply to newly generated APWorld seeds under APWorld v0.3.2 (from v0.3.0)&#13;
+&#13;
+## Client Mod Changes&#13;
+* Fixed a bug that caused the check location `Random Encounter (Region D) - 3rd Encounter` to be skipped&#13;
+* Fixed a bug where Dirtwater's extra shops were hinting the `Bonus Item` in their shop that was not quite in the shop yet.&#13;
+&#13;
+## APWorld Changes (From between v0.3.4 and v0.3.5 of WOLAP)&#13;
+* Added forgotten player arg to `state.can_reach_region("Map Region D", player)` for medical container checks logic&#13;
+* Added Redundant `state.can_reach_location("Ghostwood Town Hall - Issued Permit", player)` to `get_location("Ghostwood Town Hall - Issued ID")`</content>
+    <link href="https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.5-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/tag/v0.1.2-alpha</id>
+    <title>Trails Beyond the Horizon v0.1.2a0</title>
+    <updated>2026-10-22T05:00:30+00:00</updated>
+    <author>
+      <name>Brimaster2000</name>
+    </author>
+    <content>Fixes a Critical Save Data bug. Should prevent accidentally sending multiple items when connecting the game to a client before playing.</content>
+    <link href="https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/tag/v0.1.2-alpha"/>
   </entry>
 </feed>

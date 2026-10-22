@@ -13,20 +13,24 @@
   Garten goal, can reach every domain).
 
 ## Requirements
-- The Legend of Heroes: Trails beyond the Horizon (Steam, Windows), English script, unmodded.
+- The Legend of Heroes: Trails beyond the Horizon (Windows), English script, unmodded. Tested on the Steam release;
+  other stores (GOG and others) are untested so far: please report how they go.
 - Archipelago 0.6.7 or newer.
 
 ## Installing
 1. Install `beyondthehorizon.apworld`: double-click it, or put it in the `custom_worlds` folder of your Archipelago
    install. Restart the Archipelago Launcher.
 2. Close the game. Open "Trails Beyond the Horizon Client" from the Launcher and type `/install_patch`.
-   - It finds the game through Steam. If it doesn't, give the folder:
-     `/install_patch "D:\SteamLibrary\steamapps\common\The Legend of Heroes Trails beyond the Horizon"`.
+   - Choosing the game: a Steam install is found automatically. Otherwise a file browser opens: select the game's
+     `kai.exe`. The choice is saved in Archipelago's `host.yaml` (`trails_beyond_the_horizon_options` >
+     `game_exe`), so you only do this once.
+   - `/game` changes it: `/game` alone opens the file browser, or give the path to `kai.exe` or the game folder in
+     quotes, e.g. `/game "D:\GOG Games\Trails beyond the Horizon\kai.exe"`.
    - It patches `script_eng.p3a` and keeps your original as `script_eng.p3a.archipelago_backup`.
    - It only patches the file it was made for. After a game update (or with other mods installed) it refuses: verify
-     the game files in Steam and wait for an updated patch.
+     the game files in your store and wait for an updated patch.
 3. `/patch_status` shows whether the patch is installed. `/uninstall_patch` restores the original; verifying the game
-   files in Steam also does.
+   files in your store also does.
 
 ## Playing
 1. Start the game and load a save (or start a new game).
