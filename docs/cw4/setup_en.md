@@ -39,7 +39,7 @@ and the BepInEx and dotnet folders from the game directory.
 in another, the mod treats
 `Documents/My Games/creeperworld4/saves/farsite` as slot-specific: connecting to
 a different slot moves the current contents into
-`Documents/My Games/creeperworld4/archipelago/save-archive/<slot>/` and restores
+`Documents/My Games/creeperworld4/archipelago/save-archive/<seed>-<slot>/` and restores
 that slot's set. Your original pre-mod campaign saves are archived under the key
 `vanilla`.
 

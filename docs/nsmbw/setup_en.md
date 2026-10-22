@@ -39,6 +39,7 @@
    - Do NOT have dolphin open before and during this step.
 4) The game will now open automatically.
    - If it does not, you can right-click your game in dolphin → `start with riivolution patch`. Enable just the patch for this multiworld and start the game.
+   - Do NOT start dolphin without the riivolution patch.
 5) Select `SAVEFILE 2` to play on.
 6) Play the game: Beat levels and collect star coins. Prepare to beat bowser once and for all.
 7) See the quirks section in [en_NSMBW.md](../docs/en_NSMBW.md) for quirks with the implementation.

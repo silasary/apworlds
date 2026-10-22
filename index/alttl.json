@@ -223,6 +223,21 @@
       "title": "1.0.1 - A smaller download, and a gate that plays a fresh install",
       "version_simple": "1.0.1",
       "world_version": "1.0.1"
+    },
+    "v1.0.2": {
+      "created_at": "2026-10-21T18:33:02Z",
+      "description": "**1.0.1 seeds: finish them on 1.0.1, or regenerate.** No location id moved,\nbut the mod refuses a seed made by a different apworld version, as it has\nsince 0.3.3.\n\n## Install\n\n**With a mod manager (recommended):** in r2modman or Thunderstore Mod\nManager, choose A Little to the Left, search the Online tab for\n**A Little to the Left Archipelago**, press Download, then Start modded.\nBepInEx comes with it. The package is the same build as these files, on\n[its Thunderstore page](https://thunderstore.io/c/a-little-to-the-left/p/drohack/A_Little_to_the_Left_Archipelago/).\n\n**By hand:** three files, and they carry the same version on purpose. See\n[docs/installation.md](https://github.com/drohack/alttl-archipelago/blob/v1.0.2/docs/installation.md).\n\n- `ALTTLArchipelago-1.0.2.zip` - the mod. Extract into the game folder. **You\n  need [BepInEx 6 for Unity IL2CPP](https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip)\n  (be.755) installed first** - it is not included.\n- `alttl.apworld` - only whoever generates the seed needs it. Goes in\n  Archipelago's `custom_worlds/`. Requires Archipelago 0.6.7 or newer.\n- `A Little to the Left.yaml` - your settings. Edit the name and hand it to\n  whoever generates.\n\nEvery player needs the yaml and whoever generates needs the apworld, from\nthis release whichever way you install the mod.\n\n## What a player will notice\n\nNothing in play changes. This release finishes 1.0.1's cleanup and fixes two\nthings that could go wrong without being seen.\n\n- **A save redirect that fails now ends the run.** The mod logged that it was\n  disconnecting to protect the campaign save, then did not, so later saves in\n  that run went to the campaign save. Never seen in play.\n- **The connection pane no longer leaves hidden objects behind** each time it\n  opens.\n- **Smaller cleanups:** more unused code gone from the shipped files, and\n  slot_data no longer carries three keys the mod stopped reading\n  (`cat_trap_chance`, and each slot's `source` and `dlc`).\n\n## How it was checked\n\n- Full gate 30/30 and DLC gate 30/30 on these exact files, each from a fresh\n  install that meets and answers the game's first-run prompts, with no game\n  errors in either. CI green on the release commit.\n\n- Against 1.0.0 on the same seed, once with cat traps off and once with them\n  on: the same 43 checks in the same order, the same 53 items, the same 13\n  cat-trap outcomes, and an identical spoiler.\n- Not re-run, as nothing they cover changed: the by-hand solve of the levels\n  the gate cannot force, and the level table against the game (`levels.json`,\n  `abilities.json` and `names.json` untouched).\n\nFull details: [CHANGELOG.md](https://github.com/drohack/alttl-archipelago/blob/v1.0.2/CHANGELOG.md).\n",
+      "download_url": "https://github.com/drohack/alttl-archipelago/releases/download/v1.0.2/alttl.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7e3a81c56490472314c26c1d8522de0303a70c696ed70ad784eadc843fd89dec",
+      "html_url": "https://github.com/drohack/alttl-archipelago/releases/tag/v1.0.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 77525,
+      "source_url": "https://api.github.com/repos/drohack/alttl-archipelago",
+      "tag": "v1.0.2",
+      "title": "1.0.2 - Two quiet fixes and the rest of the cleanup",
+      "version_simple": "1.0.2",
+      "world_version": "1.0.2"
     }
   }
 }

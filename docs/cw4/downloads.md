@@ -1,9 +1,12 @@
 # Creeper World 4
 
 ## Latest
-- <a href="https://github.com/drohack/cw4-archipelago/releases/download/v0.2.2/cw4.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/drohack/cw4-archipelago/releases/download/v0.2.3/cw4.apworld">Latest Version (0.2.3)</a>
 
 ## All Versions
+
+#### v0.2.3
+- <a href="https://github.com/drohack/cw4-archipelago/releases/download/v0.2.3/cw4.apworld">https://github.com/drohack/cw4-archipelago/releases/download/v0.2.3/cw4.apworld</a>
 
 #### v0.2.2
 - <a href="https://github.com/drohack/cw4-archipelago/releases/download/v0.2.2/cw4.apworld">https://github.com/drohack/cw4-archipelago/releases/download/v0.2.2/cw4.apworld</a>

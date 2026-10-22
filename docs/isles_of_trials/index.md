@@ -4,7 +4,7 @@ Travel between islands and loot chests in this small PICO-8 adventure game.
 
 
 ## Downloads
-- <a href="https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0/isles_of_trials.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0d/isles_of_trials.apworld">Latest Version (0.2.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

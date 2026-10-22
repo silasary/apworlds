@@ -227,6 +227,21 @@
       "title": "v0.2.2 - Only what a player uses",
       "version_simple": "0.2.2",
       "world_version": "0.2.2"
+    },
+    "v0.2.3": {
+      "created_at": "2026-10-21T18:15:30Z",
+      "description": "Matched pair: install the plugin zip AND regenerate with this `cw4.apworld`. The plugin and the apworld share a version number and must match.\n\nRequires Archipelago **0.6.7 or newer**.\n\n**Seeds do not change**: the same seed number generates the same layout as in v0.2.1 and v0.2.2, checked on 100 seeds across default, SPAN, casual and easy logic. Existing yamls keep working.\n\n\n- **The mission map's completion display follows the multiworld for every\n  objective.** Nullify, Totems and Collect were answered from your local save\n  instead, so a mission your save had finished showed those objectives as done\n  even where the multiworld still had checks open. Reclaim and Custom were\n  already right. An objective now reads done only when every one of its checks\n  is.\n\n- **The `Units` and `Economy` item groups no longer list `Greenar Refinery`.**\n  It is never generated (Factory unlocks the refinery), so naming it in a group\n  did nothing. Placements are unchanged.\n\n- **The setup guides name the right save-archive folder.** Switching slots\n  moves your saves into `archipelago/save-archive/<seed>-<slot>/`, not\n  `<slot>/`. The installation guide also lists all 21 options correctly and\n  says how `trap_percentage` and the ERN maximums really count.\n",
+      "download_url": "https://github.com/drohack/cw4-archipelago/releases/download/v0.2.3/cw4.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2b04c1b056b8c946bb2c14aafd1f202e076f046262aa90b5797dd23e5291d055",
+      "html_url": "https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 70449,
+      "source_url": "https://api.github.com/repos/drohack/cw4-archipelago",
+      "tag": "v0.2.3",
+      "title": "v0.2.3 - The map's completion display follows the multiworld",
+      "version_simple": "0.2.3",
+      "world_version": "0.2.3"
     }
   }
 }
