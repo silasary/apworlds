@@ -1,9 +1,16 @@
 {
+  "authors": [
+    "vgm5"
+  ],
   "description": "Scooby-Doo! Night of 100 Frights is a MetroidVania 3D Platformer game\nmade by Heavy Iron Studios and published by THQ.\n\nThe Mystery Gang are invited to the Mystic Manor by Holly, but shortly after arriving Scooby-Doo\ngets separated from the rest of the crew, Scooby must navigate a wide variety of levels to collect new inventions\nand scooby snacks so that he can explore new areas and look for his friends, while\nhe fights off his old foes along the way.",
   "game": "Scooby-Doo! Night of 100 Frights",
   "github": "https://github.com/vgm5/Night_Of_100_Frights_ap_world",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/vgm5/Night_Of_100_Frights_ap_world/blob/main/docs/setup_en.md",
   "sheet_disclosure": [
     "None",
@@ -250,6 +257,21 @@
       "title": "Major Release v1.4.0 | Rev 1 Implementation | Full",
       "version_simple": "1.4.0",
       "world_version": "1.4.0"
+    },
+    "Release_1_4_2": {
+      "created_at": "2026-10-23T13:28:01Z",
+      "description": "# Bugfix Release\r\n\r\n## Indirect Condition Logic Fix\r\n- Fixes an issue where if access to a region/location was dependent on another region being reachable, Tracker Logic could potentially get confused and improperly flag checks as reachable",
+      "download_url": "https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_4_2/no100f.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7578884166d8f3f7dc308ea84c7e7984395803b19af0b44b5116ba34ed62983e",
+      "html_url": "https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_4_2",
+      "minimum_ap_version": "0.6.6",
+      "size": 158872,
+      "source_url": "https://api.github.com/repos/vgm5/Night_Of_100_Frights_ap_world",
+      "tag": "Release_1_4_2",
+      "title": "Bugfix Release v1.4.2 | Logic Fixes | Full",
+      "version_simple": "1.4.2",
+      "world_version": "1.4.2"
     }
   }
 }

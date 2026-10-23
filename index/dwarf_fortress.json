@@ -273,6 +273,21 @@
       "title": "Dwarfipelago 2.1.1 Release Notes",
       "version_simple": "2.1.1",
       "world_version": "2.1.1"
+    },
+    "2.1.2": {
+      "created_at": "2026-10-23T15:54:22Z",
+      "description": "A fix-only release. **2.1.x and 2.0.x seeds and worlds stay playable** - the item\r\nand location tables are untouched. The one exception is a skillsanity seed with\r\ncombat skills turned off: those were generated broken (see below) and need\r\nregenerating.\r\n\r\n### Removed checks\r\n\r\nTwo checks are no longer generated. Their ids stay registered, and an older seed\r\nthat still has them gets them sent automatically, so their items are released.\r\n\r\n- **Titan Slain.** Titans too rarely reach a fort for this to be a fair check;\r\n  Forgotten Beast Slain still covers the first forgotten beast kill.\r\n- **Record Keeper skillsanity checks.** The skill barely trains in play, so its\r\n  levels were close to unreachable. It is gone from the Medium and All skill\r\n  groups and the manual skill list, and a yaml that still lists it is accepted\r\n  with the skill ignored.\r\n\r\n### Fixes\r\n\r\n- **Fixed the Mountainhome goal and the Monarch Takes Residence check never\r\n  firing.** Both looked for a KING or QUEEN noble position, but DF's dwarven\r\n  monarch is the MONARCH position; king and queen are only its gendered names.\r\n\r\n- **Fixed combat skill checks appearing with combat skillsanity turned off.** With\r\n  skillsanity on and `skillsanity_enable_combat` off, the combat skills were never\r\n  removed from the location list, so every combat skill was added at all 15 levels,\r\n  ignoring the max level. Those checks had no logic rules and were missing from the\r\n  client's skill tracking, so they could never be sent, and anything placed on them,\r\n  progression included, was lost. Affected seeds are unwinnable and must be\r\n  regenerated with this version.\r\n- **Fixed the gorlak caravan leaving AP goods behind.** A caravan's groups leave the\r\n  map one at a time. Pack animals that had already left were mistaken for wild\r\n  thieves and struck down, and goods they carried off were respawned in the depot\r\n  where nobody collected them. When the caravan left, DF handed those goods to the\r\n  fort, which counted as purchases (free checks) and left the items in the fort.\r\n  Goods are now only created for a caravan that is arriving or trading, and units\r\n  that have left the map are no longer treated as thieves.\r\n- **AP goods a caravan leaves behind, e.g. after being spooked, can be bought\r\n  again.** The next gorlak caravan takes them over, lists them for sale and packs\r\n  them up when it leaves. A purchase now only counts while a gorlak caravan is at\r\n  the depot, so a good DF gives the fort after a caravan leaves is removed instead,\r\n  and its slot comes back on a later visit.\r\n- **New AP goods belong to the gorlak caravan that is arriving or trading**, rather\r\n  than whichever gorlak merchant was found first, which mattered in worlds with\r\n  more than one gorlak civ.\r\n- **AP goods could never be removed.** DFHack refuses to remove items flagged as in\r\n  a building, which every AP good is, so clearing goods, removing abandoned ones\r\n  and reaping goods recovered from thieves all failed silently and retried forever.\r\n- **A Merchant's Coffer no longer summons the gorlaks when the shop is off.** The\r\n  Legendary Wealth goal keeps coffers in the pool without the shop, and receiving\r\n  one still forced a gorlak caravan with no AP goods, or, in a world without\r\n  gorlaks, warned on every coffer that the shop could never work. The coffer now\r\n  only counts toward the wealth goal.",
+      "download_url": "https://github.com/EthanTheBrave/Dwarfipelago/releases/download/2.1.2/dwarf_fortress.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2b4c96102cf204dcc053c514eaefda63d3f1f1cfeda7efc127d2fd382b424d01",
+      "html_url": "https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.2",
+      "minimum_ap_version": "0.4.0",
+      "size": 309962,
+      "source_url": "https://api.github.com/repos/EthanTheBrave/Dwarfipelago",
+      "tag": "2.1.2",
+      "title": "Dwarfipelago 2.1.2 Release Notes",
+      "version_simple": "2.1.2",
+      "world_version": "2.1.2"
     }
   }
 }

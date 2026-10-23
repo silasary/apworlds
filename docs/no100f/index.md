@@ -10,7 +10,7 @@ he fights off his old foes along the way.
 
 
 ## Downloads
-- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release1.4.1/no100f.apworld">Latest Version (1.4.1)</a>
+- <a href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/download/Release_1_4_2/no100f.apworld">Latest Version (1.4.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
