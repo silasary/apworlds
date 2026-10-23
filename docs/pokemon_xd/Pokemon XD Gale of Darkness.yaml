@@ -32,9 +32,9 @@ description: Default Pokemon XD Gale of Darkness Template
 
 game: Pokemon XD Gale of Darkness
 requires:
-  version: 0.6.7 # Version of Archipelago required for this yaml to work as expected.
+  version: 0.6.8 # Version of Archipelago required for this yaml to work as expected.
   game:
-    Pokemon XD Gale of Darkness: 0.0.1 # Version of the world required for this yaml to work as expected.
+    Pokemon XD Gale of Darkness: 0.1.6 # Version of the world required for this yaml to work as expected.
 
 Pokemon XD Gale of Darkness:
   ################
@@ -65,25 +65,749 @@ Pokemon XD Gale of Darkness:
     full: 50
     minimal: 0
 
-  shuffle_overworld_items:
-    # If enabled, overworld item locations (chests, NPC gifts, found items) are included as checks and can hold
-    # any item from the multiworld.
+  ########
+  # Goal #
+  ########
+  goal:
+    # Defeat Greevil: Goal is complete upon defeating Greevil (the second time) on Citadark Isle.
+    # Win Mt Battle: Defeat the final trainer on Mt Battle. Recommended with Enhanced Difficulty ON and Exclude Mt Battle OFF.
+    defeat_greevil: 50
+    win_mt_battle: 0
+
+  robo_kyogre_parts_unlock_citadark:
+    # Gate Citadark Isle behind collecting Robo Kyogre Parts.
+    # 
+    # Adds maguffin item to the pool - upon acquiring your set amount, Gateon Port will gain the Robo Kyogre.
+    # This will allow you to ride to Citadark and complete the final dungeon/game, regardless of story progress.
+    # 
+    # On by default.
     'false': 0
     'true': 50
 
-  shuffle_trainer_defeats:
-    # If enabled, defeating any trainer (Shadow Pokemon trainers included) counts as a check and can award any
-    # item from the multiworld. Shadow Pokemon defeats are no longer their own separate check category -- the
-    # separate randomize_shadow_species option only ever controls which species you catch, never whether
-    # defeating one is a check.
-    'false': 0
-    'true': 50
+  robo_kyogre_parts_required:
+    # How many Robo Kyogre Parts are needed to reach Citadark Isle.
+    # 
+    # Only meaningful when "Robo Kyogre Parts Unlock Citadark Isle" is on. Must be no greater than
+    # "Robo Kyogre Parts Available" below -- generation fails if it is, rather than producing a seed that
+    # cannot be finished.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 20
+    8: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-20: 0 # random value between 1 and 20
 
-  include_traps:
-    # If enabled, some filler items in the pool may be replaced with traps (currently just a minor
-    # Itemfinder-disabling trap) instead of always being helpful/neutral junk.
+  robo_kyogre_parts_available:
+    # How many Robo Kyogre Parts exist in the multiworld.
+    # 
+    # More copies = easier time clearing the game. Less = harder.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 40
+    12: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-40: 0 # random value between 1 and 40
+
+  citadark_story_weight:
+    # With location shuffle off and "Robo Kyogre Parts Unlock Citadark Isle" on, Citadark Isle needs only the
+    # Parts. This is the chance, in percent, that the seed keeps enough of them in the late story (from the
+    # stranded SS Libra onward) that you finish most of the story before you can ride there. 0 lets the Parts go
+    # anywhere.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    85: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+
+  ###########################
+  # Locations & Progression #
+  ###########################
+  randomize_travel_locations:
+    # If enabled, 10 of this game's travel destinations become receivable AP items
+    # ("Travel Unlock - {name}"): Snagem Hideout, Outskirt Stand, Poke Spots, Pyrite Town, Phenac City,
+    # Realgam Tower, Cipher Key Lair, Cipher Lab, Mt. Battle and SS Libra. Orre Colosseum is not one: it opens
+    # as in the vanilla game and holds no checks.
+    # 
+    # This setting is significantly more stable than the first release. It may still have the occasional issue, but should be okay.
     'false': 50
     'true': 0
+
+  key_item_shuffle:
+    # Shuffles key items into the pool. Will remove them from your inventory if you're not supposed to have them,
+    # and will add them to your inventory upon receiving them in Archipelago.
+    # 
+    # The items that actually gate something: Machine Part, Data ROM & ID Card, Music Disc, Mayor's Note, System Lever,
+    # and the Robo Kyogre Parts. Two are excluded from the shuffle even when this is on:
+    # 
+    #   * **Elevator Key** -- taking it out of its vanilla chest (79, Phenac Colosseum)
+    #     can leave you locked in the room.
+    #   * **Gonzap's Key** -- the container it opens is not in the game's treasure table at all, so it gates no AP
+    #     location and is left vanilla rather than shuffled into a pool where it would do nothing.
+    'false': 0
+    'true': 50
+
+  shuffle_scooter_upgrade:
+    # Puts the SS Libra's scooter upgrade into the multiworld as an item ("Scooter Upgrade"). OFF by default.
+    # 
+    # SS Libra is really two places behind one map icon: the STRANDED first visit, and the REAL ship you board
+    # after Makan upgrades your scooter in Gateon. With this on, that upgrade stops being something the story
+    # hands you and becomes something the multiworld sends.
+    # 
+    # Three things happen while you do not hold it:
+    # 
+    #   * the SS Libra icon takes you to the stranded ship, whatever your story progress says;
+    #   * the Gateon cutscene that would grant the upgrade is allowed to play, and then the story is held just
+    #     below it, so the game cannot give you what the item is for;
+    #   * logic knows all of this, so nothing you need is ever placed past the ship without the item.
+    # 
+    # HOW MUCH THIS GATES DEPENDS ON THE OTHER OPTION. With Randomize Travel Locations ON, it gates the SS Libra
+    # and nothing else -- the Outskirt Stand, Snagem Hideout, both Key Lair tiers and Citadark Isle are all
+    # reachable without it. With travel randomization OFF you walk the story,
+    # the ship is a chokepoint on the way to the Cipher Key Lair, and all of those ARE behind this item.
+    # 
+    # The in-game half works the same either way: the icon takes you to the stranded ship and the story is held
+    # below the upgrade until the item arrives, whichever mode you are in.
+    'false': 50
+    'true': 0
+
+  randomize_shops:
+    # Replaces every item in shops (except Scents and Poke Snacks) with AP Items.
+    # Each shop has its own unique checks - AP Items are priced by category, filler costing 100, useful 500, and progressive 1500.
+    # Recommended ON/true.
+    'false': 0
+    'true': 50
+
+  agate_village_pit_stop:
+    # Agate Village's shop sells real supplies instead of AP Items: Poke Balls, Great Balls, Ultra Balls,
+    # Potions, Super Potions, Hyper Potions and Full Heals from the start, plus Revives after its first restock
+    # and Max Potions after its second. Its Scents stay where they are.
+    # 
+    # Agate's shop checks are removed from the seed. Only does anything with Randomize Shops on - with it off,
+    # every shop already sells its normal items.
+    'false': 50
+    'true': 0
+
+  pokespot_catch_checks:
+    # The wild Pokemon at the Poke Spots each have a "Catch -" check. Turn this off to remove those checks; the
+    # Poke Spots still have their Pokemon.
+    'false': 0
+    'true': 50
+
+  shadow_catch_progression:
+    # Whether "Catch - {species}" checks may hold a progression or useful item. OFF by default.
+    # 
+    # PLEASE only turn on if you plan on trying to catch every shadow pokemon as they come up.
+    # Currently, with location shuffle on, this can lock you unless you have access to Miror B and Pyrite town/poke spots
+    # In vanilla, this setting SHOULD work so long as you're careful to catch every shadow pokemon.
+    # You can use /mirorforce {pyrite, realgam, oasis, rock, cave} to spawn Miror B in these locations, once you have the radar and one of the locations.
+    # 
+    # Warning: Without Agate Pit Stop enabled, you may run out of/need to wait for Poke Balls. Proceed with caution if Agate Pit Stop is disabled.
+    'false': 50
+    'true': 0
+
+  citadark_progression_chance:
+    # The percentage of Citadark Isle checks left eligible to hold progression or useful items. The rest are
+    # marked EXCLUDED -- filler only -- and WHICH ones are chosen varies per seed rather than being a fixed list.
+    # 
+    # The higher the number, the more items can be locked behind Citadark.
+    # Recommended at 0 (Citadark is all filler) or 5 (SOME progressive items can be gated in Citadark, unlikely)
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    5: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  ##################
+  # Trainer Checks #
+  ##################
+  shuffle_trainer_defeats:
+    # Shuffle trainer defeats as checks into the multiworld. Check below setting for options.
+    'false': 0
+    'true': 50
+
+  trainer_defeat_mode:
+    # Cumulative or Unique Trainer Defeats.
+    # 
+    # **Cumulative** : defeating any trainer advances one
+    # shared counter, so the checks are "Defeat 1 Trainers" ... "Defeat X Trainers" (X set by Trainer Defeat
+    # Check Count below), and nothing else -- a tally.
+    # CUMULATIVE WITH LOCATION SHUFFLE IS PRONE TO SOFTLOCK DUE TO HOW REMATCHES WORK.
+    # IF YOU LOCATION SHUFFLE + CUMULATIVE, KEEP THE NUMBER OF DEFEATS LOW IN THE SETTING IN THE YAML.
+    # 
+    # **Unique**: one check per named trainer in the game. Recommended.
+    cumulative: 0
+    unique: 50
+
+  trainer_defeat_check_count:
+    # Only meaningful when Shuffle Trainer Defeats is on with setting Cumulative. Defaults to 100.
+    # 
+    # If you choose 114, you will need to battle nearly every trainer the moment they are accessible.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 114
+    100: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-114: 0 # random value between 1 and 114
+
+  exclude_mt_battle_trainers:
+    # Excludes Mt Battle from enhanced difficulty -- no extra team members and no level multiplier.
+    # Also excludes Mt Battle trainers from checks. Off gives each of Mt. Battle's trainers 4-100 a check.
+    # 
+    # Path Level Scaling is a separate option and still applies to Mt Battle when this is on.
+    # Recommended "true" to exclude, unless you're doing a Mt Battle goal.
+    'false': 0
+    'true': 50
+
+  mt_battle_progression_checks:
+    # With Exclude Mt. Battle Trainers off, each Mt. Battle trainer is a check. This many of them, counted from the
+    # first trainer up, can hold progression; the rest only hold filler.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 97
+    0: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-97: 0 # random value between 0 and 97
+
+  ##################
+  # Shadow Pokemon #
+  ##################
+  purification_checks:
+    # Make purifications checks: "Purify 1 Shadow Pokemon" up to one per Shadow Pokemon in your seed
+    # (83, plus however many 'Shadow Pokemon Expansion' adds).
+    # 
+    # Off: no purification checks at all, and the cap below does nothing.
+    'false': 0
+    'true': 50
+
+  purification_progression_cap:
+    # How many of the "Purify N Shadow Pokemon" checks are allowed to hold a progression or useful item.
+    # Only meaningful with "Purification Checks" on.
+    # 
+    # IF YOU DO NOT PLAN TO CATCH EVERY SHADOW POKEMON, KEEP THIS RELATIVELY LOW OR YOU WILL LOCK YOURSELF.
+    # You can use /mirorforce {pyrite, realgam, oasis, rock, cave} to spawn Miror B in these locations, once you have the radar and one of the locations.
+    # There are 83 + your shadow expansion setting purifications available.
+    # A higher number means you may have to purify more pokemon to progress.
+    # Default is 30.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 127
+    30: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-127: 0 # random value between 0 and 127
+
+  shadow_pokemon_expansion:
+    # Adds this many BRAND-NEW Shadow Pokemon to the game, on top of the 83 vanilla ones -- real trainers each
+    # gain one or more extra team members that are Shadow Pokemon (Shadow-only moves included), the same
+    # as any vanilla Shadow encounter.
+    # 
+    # Trainers with at least one empty slot have a chance of receiving a shadow pokemon.
+    # 
+    # The real disc format has room for exactly 44 new Shadow Pokemon and no more (128 total Shadow Pokemon slots
+    # in the game's data, 83 already used by the vanilla roster, 1 reserved) -- this is a hard ceiling, not a
+    # tuning choice, so 44 is both the default and the highest this can be set to. 0 turns
+    # this off entirely and leaves every trainer's team exactly as vanilla/however other options left it.
+    # 
+    # Each new Shadow Pokemon's level matches its trainer's own team (their average level, rounded),
+    # and its moves are drawn from that species' real level-up learnset at that level,
+    # same as Shuffle Trainer Movesets already does for ordinary Pokemon.
+    # 
+    # Highly recommended to turn on! Miror B rematching also works to catch these if you defeat them.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 44
+    44: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-44: 0 # random value between 0 and 44
+
+  missable_trainer_shadows:
+    # Lets Shadow Pokemon Expansion (and Shadows moved off Citadark or Greevil) also be placed on missable trainers --
+    # the one-time fights whose checks are sent for you once their area is done.
+    # 
+    # If an area finishes without you beating its missable trainer, that trainer's Shadow goes to Miror B., the same
+    # as a Shadow that ran from you. Miror B. also brings two Shadows at once at the Poke Spots whenever two or more
+    # are waiting for him.
+    # 
+    # Their catch checks follow Shadow Catch Progression and are in logic once the trainer's fight is, like any
+    # other Shadow.
+    'false': 50
+    'true': 0
+
+  randomize_shadow_species:
+    # Shuffles all of the shadow pokemon in the game into different pokemon - can be any in the game.
+    # Use !shadowdex to check what they were shuffled into/check locations.
+    'false': 0
+    'true': 50
+
+  shadow_inherited_moves:
+    # Shadow Pokemon keep the four normal moves of the Shadow Pokemon they replaced, instead of moves their new
+    # species can really learn. With Randomize Shadow Species on, that means a few illegal moves for fun -- moves
+    # the new species could never learn, which it keeps after you snag and purify it.
+    # 
+    # Shadow moves are not affected either way, and the extra Shadows from Shadow Pokemon Expansion replace
+    # nothing, so they always get legal moves. Off gives every Shadow legal moves.
+    'false': 50
+    'true': 0
+
+  no_legendary_shadows:
+    # No Shadow Pokemon is a legendary. With "Randomize Shadow Species" on, Shadows are never randomized into one;
+    # with it off, the vanilla legendary Shadows (Shadow Lugia and the three birds) become random non-legendary
+    # Pokemon instead. Shadow Lugia is the one exception when "Shuffle Shadow Lugia" is on.
+    'false': 50
+    'true': 0
+
+  shuffle_shadow_lugia:
+    # Shadow Lugia trades places with a random Shadow Pokemon, so it can turn up anywhere in the game and never at
+    # Greevil's first battle (Randomize Shadow Species alone leaves Lugia where it is).
+    'false': 50
+    'true': 0
+
+  remove_citadark_shadows:
+    # No Citadark Isle trainer except Greevil has a Shadow Pokemon. Each of those Shadow Pokemon moves to a
+    # trainer elsewhere in the game that you cannot miss, at that trainer's level, so every one is still there
+    # to snag and purify. The trainers keep an ordinary copy of the Pokemon in its place.
+    # 
+    # Greevil's own Shadow Pokemon follow "Remove Greevil Shadows".
+    'false': 50
+    'true': 0
+
+  remove_greevil_shadows:
+    # Greevil has no Shadow Pokemon: Shadow Lugia and the six Shadow Pokemon of his second battle move to
+    # trainers elsewhere in the game that you cannot miss, at those trainers' levels. Greevil keeps an ordinary
+    # copy of each Pokemon in its place.
+    'false': 50
+    'true': 0
+
+  ##############
+  # Difficulty #
+  ##############
+  enhanced_difficulty:
+    # How many EXTRA (ordinary, non-Shadow) Pokemon get added to real trainers' teams.
+    # 
+    # Off: nobody's team is padded.
+    # Up to one additional pokemon: at most one extra member per trainer.
+    # Up to two additional pokemon: at most two.
+    # Fill enemy team: every remaining slot, up to a full team of six.
+    # 
+    # Early trainers are balanced to be beatable.
+    # 
+    # "Up to" is literal in both directions - a trainer with fewer free slots than your setting only gets what
+    # it has room for, and nobody ever loses an existing member or ends up with more than six.
+    # 
+    # Level scaling is a separate option below - this one only adds Pokemon.
+    # 
+    # This is completely separate from, and works independently of, Shadow Pokemon Expansion above -- Enhanced
+    # Difficulty only ever adds ORDINARY Pokemon (never a Shadow Pokemon, never touching Shadow Pokemon
+    # Expansion's own 44-slot capacity), so the two can be turned on together, or either one alone, with no
+    # interaction between them.
+    'off': 50
+    up_to_one_additional_pokemon: 0
+    up_to_two_additional_pokemon: 0
+    fill_enemy_team: 0
+
+  enhanced_difficulty_level_scaling:
+    # If enabled, every real trainer's existing team member has its level multiplied by 1.33x and rounded down.
+    # 
+    # Independent of the team padding above: you can scale levels without adding a single Pokemon, pad teams
+    # without touching levels, or do both. With this off, any Pokemon added by the setting above joins at its
+    # trainer's own average level instead of a boosted one.
+    'false': 50
+    'true': 0
+
+  path_level_scaling:
+    # For use with Location Shuffle. Scales trainers to match the level curve of the original game,
+    # regardless of the order you unlock locations. Intended early areas are scaled to lower levels,
+    # and intended later areas are scaled higher. The ramp runs from level 8 to 50, and Citadark Isle always
+    # comes after it, at 53.
+    # 
+    # Stacks with Enhanced Difficulty Level Scaling: this sets the base level, and that multiplies it.
+    # Recommended.
+    'false': 0
+    'true': 50
+
+  map_trainer_levels:
+    # The world map's place descriptions show the level of the trainers you meet on your first visit there, in this
+    # seed. Later fights at the same place (rematches, story returns) can be higher.
+    'false': 0
+    'true': 50
+
+  legendary_trainer_pokemon:
+    # Ordinary trainers (not Shadow Pokemon) can field legendary Pokemon when their teams are randomized, including
+    # the extra team members Enhanced Difficulty adds. Lugia, Bonsly and Munchlax stay off every team.
+    'false': 50
+    'true': 0
+
+  nightmare_citadark:
+    # Every Citadark Isle trainer fields a different team of six from the Orre Colosseum's toughest
+    # challengers in XD and Colosseum, at level 100, with those trainers' own battle AI. Greevil's first
+    # fight, Shadow Lugia alone, is left as it is.
+    # 
+    # The other Shadow Pokemon on Citadark Isle move to trainers elsewhere you cannot miss, at those
+    # trainers' levels, so every Shadow is still there to snag and purify.
+    'false': 50
+    'true': 0
+
+  nightmare_greevil:
+    # Greevil's final battle (and his post-game rematch) take Nightmare teams: six of the Orre Colosseum's
+    # toughest challengers' Pokemon from XD or Colosseum, at level 100, with that challenger's own battle AI. His
+    # Shadow Lugia fight is left as it is; the six Shadows his final battle held move to other trainers.
+    # 
+    # Does nothing with Nightmare Citadark on, which already includes it.
+    'false': 50
+    'true': 0
+
+  ################
+  # Your Pokemon #
+  ################
+  randomize_starter:
+    # Replaces the Eevee you start with. Off keeps Eevee; Random No Legendary picks any Pokemon that is not a
+    # legendary; True Random can pick anything, legendaries included. The new starter is level 10 with moves it
+    # can really learn, always including at least one attacking move.
+    'off': 50
+    random_no_legendary: 0
+    true_random: 0
+
+  catch_rate_scaling:
+    # Makes catching easier.
+    # 
+    # Off: normal catch rates.
+    # 
+    # Location Scaled: Shadow Pokemon are much easier to snag early on and the help tapers off as the game goes on --
+    # late Shadows (Citadark Isle, a legendary at the end) are still noticeably easier than vanilla, never harder. "Later"
+    # follows the order this seed opens areas in, so it works with Randomize Travel Locations on or off. Wild Poke Spot
+    # Pokemon get the highest catch rate wherever they are.
+    # 
+    # Guaranteed Catches: every catch succeeds.
+    'off': 50
+    location_scaled: 0
+    guaranteed_catches: 0
+
+  catch_rate_exclude_citadark:
+    # With Catch Rate Scaling on, Citadark Isle's Shadow Pokemon keep their normal catch rates.
+    # 
+    # With Guaranteed Catches, every other catch in the game stays guaranteed.
+    'false': 50
+    'true': 0
+
+  catch_rate_exclude_greevil:
+    # With Catch Rate Scaling on, Greevil's Shadow Pokemon keep their normal catch rates.
+    # 
+    # With Guaranteed Catches, every other catch in the game stays guaranteed.
+    'false': 50
+    'true': 0
+
+  purification_rate:
+    # How fast a Shadow Pokemon's heart gauge goes down, in percentage. Battling, walking, calling it, the Day Care
+    # and Scents all count for this much more. Reduces the grind before a Shadow can be purified.
+    # 
+    # Works by making each of those lower the gauge by more -- the gauges themselves are untouched. At 200% every
+    # Shadow is ready in about half the steps, battles and Scents. The Purify Chamber is unchanged.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 100
+    # Maximum value is 1000
+    100: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-100-1000: 0 # random value between 100 and 1000
+
+  experience_rate:
+    # EXP gain rate, in percentage. Reduces the need for grinding.
+    # 
+    # Up to 700% this is exact, because it changes the divisor in the game's own experience formula. Above that
+    # the species tables make up the difference and a little is lost to rounding: 1000% lands at about 991%.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 100
+    # Maximum value is 1000
+    100: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-100-1000: 0 # random value between 100 and 1000
+
+  trade_evolutions_by_level:
+    # Pokemon that evolve by trading evolve by leveling up instead, at the same levels enemy trainers' Pokemon
+    # use: Kadabra, Machoke, Graveler and Haunter at 37; Onix, Scyther and Porygon at 30; Seadra at 40; Poliwhirl
+    # into Politoed at 36 (a Water Stone still makes Poliwrath). Feebas, which needs Beauty that XD has no way to
+    # raise, evolves into Milotic at 30.
+    # 
+    # Where a Pokemon could become either of two, its personality decides, the way Wurmple's does: Clamperl
+    # becomes Huntail or Gorebyss at 30, and Slowpoke becomes Slowbro or Slowking at 37.
+    # 
+    # Friendship evolutions are always by level, whether this is on or not: Pichu, Cleffa, Igglybuff, Togepi and
+    # Azurill at 15, Golbat at 35, Chansey at 40.
+    'false': 0
+    'true': 50
+
+  reduce_citadark_grind:
+    # Gateon Port's shop, once it restocks after Gorigan (or all required Kyogre Parts),
+    # sells a Rare Candy and a Candy Box for 1 each, as many times as you like.
+    # 
+    # on: the Candy Box raises a Pokemon straight to level 100 -- or to 99 if it can still evolve, so it evolves on
+    # the way and one more candy finishes the job.
+    # equal_to_citadark_entry: the Candy Box raises a Pokemon to the level of the lowest-levelled Pokemon on any
+    # Citadark Isle trainer in your seed, after Enhanced Difficulty and Path Level Scaling have set the levels.
+    # A Pokemon already at or above that level goes up one level, like a Rare Candy.
+    # 
+    # Shadow Pokemon cannot use either. Works with or without Randomize Shops. With it on, two of Gateon's restock
+    # checks are removed from the seed.
+    'off': 50
+    'on': 0
+    equal_to_citadark_entry: 0
+
+  infinite_tms:
+    # TMs are never used up: teaching a move from a TM keeps the TM in your Bag, the way HMs already work.
+    'false': 50
+    'true': 0
+
+  start_with_poke_spots:
+    # Start with the Miror Radar in your Key Items and the Poke Spots' unlock in your starting inventory. Logic treats
+    # the Poke Spots and Miror B. as reachable from the start, and Shadow catches no longer wait on the Miror Radar.
+    # Needs Location Shuffle; with it off, this option is turned off.
+    'false': 50
+    'true': 0
+
+  all_pokemon_learn_all_tms:
+    # Every Pokemon can learn every TM. (Shadow Pokemon still can't use TMs until they are purified.)
+    'false': 50
+    'true': 0
+
+  shadow_move_tms:
+    # This many TMs, chosen at random, teach a Shadow move instead of their usual move -- each a different one of
+    # the 18 Shadow moves. The TM keeps its number; the Bag shows the new move. 0 turns this off.
+    # 
+    # Only Pokemon that can learn that TM can learn its Shadow move (or every Pokemon, with All Pokemon Learn All TMs).
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 18
+    0: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-18: 0 # random value between 0 and 18
+
+  #########
+  # Speed #
+  #########
+  text_speed:
+    # How fast text is drawn, in and out of battle. Normal is the game's own speed (holding A or B already speeds it
+    # up); Fast is that sped-up speed all the time; Instant draws each box at once. A box still waits for your
+    # button press either way.
+    normal: 50
+    fast: 0
+    instant: 0
+
+  hold_b_to_advance:
+    # Holding B advances each text box as soon as it has finished drawing, so you can hold B through dialogue
+    # instead of pressing a button for every box. Yes/No questions and menus still need their own press.
+    'false': 50
+    'true': 0
+
+  battle_speed:
+    # How long battles pause on their messages, HP bars and experience bars. Normal is the game's own pacing;
+    # Fast halves the waits, Faster quarters them. Move animations are a separate option.
+    normal: 50
+    fast: 0
+    faster: 0
+
+  disable_move_animations:
+    # Turns off every move's battle animation. Attacks resolve instantly, with the message and the damage but no
+    # animation, which makes a long playthrough substantially shorter.
+    # 
+    # Definitely removes a lot of the soul, but shortens time SIGNIFICANTLY.
+    'false': 50
+    'true': 0
+
+  ##############
+  # Death Link #
+  ##############
+  death_link:
+    # When another linked player dies, your whole party faints. When you white out, they die.
+    # 
+    # Will insta-faint you in battle, or drop your whole party to 0 out of battle.
+    # 
+    # Your own white-outs send a death. One caused by an incoming death does not send one back.
+    'false': 50
+    'true': 0
+
+  ##################
+  # Filler Weights #
+  ##################
+  filler_weight_poke_balls:
+    # Filler weight for Poke Balls: Every ball, singles and the 10 Poke Balls / 5 Great Balls / 3 Ultra Balls bundles.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    43: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_medicine:
+    # Filler weight for Medicine: Potions, revives, PP restorers, drinks, herbs and Rare Candy -- everything that heals except the single-status cures.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    28: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_status_heals:
+    # Filler weight for Status Heals: Antidote, Burn Heal, Ice Heal, Awakening, Parlyz Heal and Heal Powder.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    2: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_berries:
+    # Filler weight for Berries: Held/usable berries.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    4: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_battle_items:
+    # Filler weight for Battle Items: X items, Guard Spec., Dire Hit, Poke Doll and Fluffy Tail.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    2: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_treasure:
+    # Filler weight for Treasure: Sellables -- Nugget, Pearls, Stardust, Star Piece, Mushrooms.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    2: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_flutes:
+    # Filler weight for Flutes: Blue, Yellow and Red Flute.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    1: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_tms:
+    # Filler weight for TMs: TM01-TM50.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    12: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_evolution_stones:
+    # Filler weight for Evolution Stones: Sun, Moon, Fire, Thunder, Water and Leaf Stone.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    4: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  filler_weight_currency:
+    # Filler weight for Currency: 5000 Poke Coupons.
+    # Weights are relative shares of the filler pool (all ten add up to 100 by default). 0 = never appears.
+    # Poke Coupons are Mt. Battle's currency -- this is not a Bag item; the client adds it to your save
+    # directly, to both the spendable balance and the lifetime total the prize tiers read.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    4: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  single_master_ball:
+    # Only one Master Ball in the item pool. Turn this off to let more be drawn as filler, at the weight below.
+    'false': 0
+    'true': 50
+
+  filler_weight_master_ball:
+    # Filler weight for extra Master Balls, used only when Single Master Ball is off. 0 = never appears.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    0: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
 
   ###########################
   # Item & Location Options #

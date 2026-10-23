@@ -1,9 +1,12 @@
 # Pokemon XD Gale of Darkness
 
 ## Latest
-- <a href="https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/download/v0.1.4/pokemon_xd.apworld">Latest Version (0.1.4)</a>
+- <a href="https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/download/v0.1.5/pokemon_xd.apworld">Latest Version (0.1.6)</a>
 
 ## All Versions
+
+#### v0.1.6
+- <a href="https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/download/v0.1.5/pokemon_xd.apworld">https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/download/v0.1.5/pokemon_xd.apworld</a>
 
 #### v0.1.4
 - <a href="https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/download/v0.1.4/pokemon_xd.apworld">https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/download/v0.1.4/pokemon_xd.apworld</a>
