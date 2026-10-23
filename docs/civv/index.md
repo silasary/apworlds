@@ -4,7 +4,7 @@ APWorld for Civilization V.
 
 
 ## Downloads
-- <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.9/civv.apworld">Latest Version (0.10.9)</a>
+- <a href="https://github.com/1313e/Civ-V-AP-World/releases/download/v0.10.10/civv.apworld">Latest Version (0.10.10)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

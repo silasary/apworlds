@@ -8,7 +8,7 @@ The initial implementation provides:
 
 
 ## Downloads
-- <a href="https://github.com/OrcThrowman/7-Days-to-Die-AP/releases/download/1.2.0/7dtd_world.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/OrcThrowman/7-Days-to-Die-AP/releases/download/1.2.1/7dtd_world.apworld">Latest Version (1.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
