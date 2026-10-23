@@ -1,9 +1,12 @@
 # DUSK
 
 ## Latest
-- <a href="https://github.com/FlapjackRetro/dusk-rando/releases/download/v0.4.5/dusk.apworld">Latest Version (0.4.5)</a>
+- <a href="https://github.com/FlapjackRetro/dusk-rando/releases/download/v0.4.7/dusk.apworld">Latest Version (0.4.7)</a>
 
 ## All Versions
+
+#### v0.4.7
+- <a href="https://github.com/FlapjackRetro/dusk-rando/releases/download/v0.4.7/dusk.apworld">https://github.com/FlapjackRetro/dusk-rando/releases/download/v0.4.7/dusk.apworld</a>
 
 #### v0.4.5
 - <a href="https://github.com/FlapjackRetro/dusk-rando/releases/download/v0.4.5/dusk.apworld">https://github.com/FlapjackRetro/dusk-rando/releases/download/v0.4.5/dusk.apworld</a>

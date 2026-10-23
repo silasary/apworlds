@@ -1,9 +1,12 @@
 # Donkey Kong Country Returns
 
 ## Latest
-- <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld">Latest Version (0.2.0b0)</a>
+- <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld">Latest Version (0.2.0.post2)</a>
 
 ## All Versions
+
+#### v0.2.0.post2
+- <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld</a>
 
 #### v0.2.0b0
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld</a>

@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/WolfBoi008/One-More-Night/releases/download/2.5.0/manual_onemorenight_wolfboi008.apworld">Latest Version (2.5.0)</a>
+- <a href="https://github.com/WolfBoi008/One-More-Night/releases/download/pre-3.0.0-1/manual_onemorenight_wolfboi008.apworld">Latest Version (3.0.0.post1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -7,7 +7,11 @@
   ],
   "game": "DUSK",
   "github": "https://github.com/FlapjackRetro/dusk-rando",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/FlapjackRetro/dusk-rando/blob/master/docs/setup.md",
   "sheet_disclosure": [
     "Extensive",
@@ -157,6 +161,22 @@
       "title": "DUSK Archipelago v0.4.5",
       "version_simple": "0.4.5",
       "world_version": "0.4.5"
+    },
+    "v0.4.7": {
+      "created_at": "2026-10-22T22:59:28Z",
+      "description": "## New\r\n- randomize_flashlights option (off by default): the Flashlight pickups in E2M4, E2M8 and E3M4 now stay normal Flashlights, so dark levels like E3M4 can be completed normally. Turn the option on, with randomize_powerups, to make them checks again.\r\n## Changes\r\nMore key logic:\r\n- E1M9 and E3M7 now have mapped key rules, so checks that don\u2019t need keys are in logic without them.\r\n- E3M1\u2019s Super Shotgun now needs the Blue and Red keys plus either the Mortar or the Riveter.\r\n## Notes\r\n- Update dusk.apworld. The mod ZIP only changes version number.\r\n- With default options, the three Flashlight checks are gone. If your YAML lists them by name (for example in exclude_locations), remove them or turn on randomize_flashlights.",
+      "download_url": "https://github.com/FlapjackRetro/dusk-rando/releases/download/v0.4.7/dusk.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9e9ddeeb8ab1e8d4fdd46cba0cfdd0c2b8d9395b93e0aa0659ab629f566ec3c5",
+      "html_url": "https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.7",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 139404,
+      "source_url": "https://api.github.com/repos/FlapjackRetro/dusk-rando",
+      "tag": "v0.4.7",
+      "title": "DUSK Archipelago v0.4.7",
+      "version_simple": "0.4.7",
+      "world_version": "0.4.7"
     }
   }
 }

@@ -8,8 +8,14 @@
 #### v1.4.1
 - <a href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4.1/lsw3.apworld">https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4.1/lsw3.apworld</a>
 
+#### v1.4.post3
+- <a href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4-3/lsw3.apworld">https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4-3/lsw3.apworld</a>
+
 #### v1.4.post2
 - <a href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4-2/lsw3.apworld">https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4-2/lsw3.apworld</a>
+
+#### v1.4.post1
+- <a href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4-1/lsw3.apworld">https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4-1/lsw3.apworld</a>
 
 #### v1.3.1
 - <a href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Hotfix-1.3.1/lsw3.apworld">https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Hotfix-1.3.1/lsw3.apworld</a>

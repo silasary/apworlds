@@ -108,6 +108,21 @@
       "title": "0.6.5 - Beta",
       "version_simple": "0.6.5",
       "world_version": "0.6.5"
+    },
+    "0.6.6": {
+      "created_at": "2026-10-22T19:24:42Z",
+      "description": "# DOOM Eternal Archipelago v0.6.6 (6)\r\n\r\n## Linux / Proton\r\n\r\n- Fixed a session startup failure that could show \u201cThe session supervisor requires an inherited stdin pipe\u201d and prevent the launcher from preparing the AP campaign.\r\n- Fixed a Proton communication issue that could interrupt session preparation with `BrokenPipeError`.\r\n- Fixed additional Linux/Proton issues that could cause error popups or prevent AP sessions from being prepared.\r\n\r\n## Launcher and item delivery\r\n\r\n- Fixed item delivery getting stuck after repairing Core or a session because the game integration helper had stopped. The launcher restarts the helper when needed before reporting a successful repair.\r\n- The launcher reports an error if the game integration helper cannot start during a repair.",
+      "download_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.6/doometernal.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1fbe2c0a65be3c3c8b1b6181672f5ef7320e52b335c9c63c289b83fee2238aef",
+      "html_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.6",
+      "minimum_ap_version": "0.6.7",
+      "size": 279384,
+      "source_url": "https://api.github.com/repos/snowzzrra/DoomEternal-AP-Mod",
+      "tag": "0.6.6",
+      "title": "0.6.6-6 - Beta",
+      "version_simple": "0.6.5",
+      "world_version": "0.6.5r2"
     }
   }
 }
