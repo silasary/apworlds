@@ -2,150 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-23T18:21:05.277390+00:00</updated>
+  <updated>2026-10-24T00:23:21.231273+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.3</id>
-    <title>EldenRing v0.1.3.post2</title>
-    <updated>2026-10-20T23:46:16+00:00</updated>
-    <author>
-      <name>Bedrock</name>
-    </author>
-    <content>[Setup guide](&lt;https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_setup_guide.md&gt;)&#13;
-[Game info](&lt;https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_Elden_Ring.md&gt;)&#13;
-&#13;
-This version has minor fixes (see below), though it is still an **unstable alpha**. Avoid using it in runs with other people unless they are okay with these kinds of issues coming up.&#13;
-&#13;
-0.1.3 requires Elden Ring version 1.17.2 which dropped earlier today. If you are continuing a run from before 0.1.3, [use 0.1.2_patch instead](https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.2).&#13;
-&#13;
-Changes&#13;
-- Additional [Universal Tracker](https://archipelago.miraheze.org/wiki/Universal_Tracker) support: priority locations are shown on top and the original yaml is not required.&#13;
-- Ancient Dragon Man and Jori locations don’t get excluded by the `Dungeon` group anymore&#13;
-- Bosses in cellars now have the chest they block act as the priority location (Sellen doesn’t count).&#13;
-- Add option to place other worlds' useful items at priority only, like Hollow Knight's Pale Ore.&#13;
-- Add Blizzard Trap, Status Trap, and Blindness Trap. There is a new setting for the total number of traps, where each individual trap can be assigned a chance of showing up, and traps replace filler items.&#13;
-- All priority groups are now either Base-only or DLC-only.&#13;
-- Add more local item groups to prevent spamming other worlds.&#13;
-- Try to determine the cause of death and include it in deathlink messages.&#13;
-&#13;
-Fixes&#13;
-- Fix logic so Golden Hippopotamus requires SK lock and Sewer requires its lock, as neither are accessible in-game otherwise.&#13;
-- Excluding the DLC without disabling it now works, in which case it will be fully out of logic and DLC-only items like Scadutree Blessings are also excluded.&#13;
-- For now, disable duping remembrances or Ashes of War from other worlds, as otherwise it showed incorrect entries.&#13;
-&#13;
-## eldenring.apworld and pre-generated yaml files are included in the zip file.</content>
-    <link href="https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/T0r1nn/APLC/releases/tag/v0.8.0</id>
-    <title>Lethal Company v0.8.0</title>
-    <updated>2026-10-21T01:20:33+00:00</updated>
-    <author>
-      <name>T0r1nn, ThisGuyHere</name>
-    </author>
-    <content># THIS AND ALL FUTURE VERSIONS ARE NOT COMPATIBLE WITH WORLDS CREATED PRIOR TO 0.8.0&#13;
-&#13;
-It's finally here. Below you will find all changes since v0.7.13, including the ones listed in both pre-releases.&#13;
-&#13;
-Mod:&#13;
-* completely switched from LethalLevelLoader to DawnLib and replaced commands that used LethalAPI Terminal with Dawn commands&#13;
-* updated MultiClient.Net to the latest stable version&#13;
-* made custom company moons (Galetry, Oxyde, etc.) share logic with Gordion&#13;
-* scrap that spawns in custom interiors is now in logic&#13;
-* fixed an issue where non-scrap (flashlights, spray paint, etc.) in a custom moon's scrap pool could have locations&#13;
-* MASSIVELY reduced the time taken to connect to a multiworld slot&#13;
-* collecting a goal item now displays a notification in the ship (this may be blocked by the report card)&#13;
-* fixed moon difficulty calculation (i.e. 'hard' moons now reference the correct yaml setting for grade locations)&#13;
-* added a new option for calculating moon difficulty&#13;
-* added the moon grade required for grade locations to the in-game tracker&#13;
-* fixed an issue where some moons incorrectly cost credits to visit&#13;
-* added a mod config option to reduce the amount of scrap that spawns on Dine&#13;
-* custom world names (set when using the 'apworld' command) are now saved&#13;
-* added more space after the locked moon text&#13;
-* GetGameLogic is no longer called twice when connecting to a multiworld&#13;
-* added a terminal command that gets the logic string without UnityExplorer&#13;
-* cloned scrap now parent to the ship correctly&#13;
-* the custom world name set using the 'apworld' command is now correctly shared with clients&#13;
-* the apworld and mod version are now displayed in the log output (so I'll know if you try to mix incompatible versions)&#13;
-* extra inventory slots added by mods should now be useable when the player has all four vanilla ones unlocked&#13;
-&#13;
-Apworld:&#13;
-* changed moon checks to grade locations (ex. 'Vow check 1' is now 'Vow Grade Location 1')&#13;
-* for the sake of clarity, locations and items are no longer referred to as 'checks' anywhere in the mod or apworld&#13;
-* reworked the Collectathon goal&#13;
-  * it now requires the player to collect an assortment of random scrap in addition to the ap chests&#13;
-* players can now set min_scrap_chance and min_monster_chance to 0 without encountering issues&#13;
-* fixed a logic issue where rare scrap and monsters could still have certain progression items&#13;
-* the gold bar scrap is no longer always excluded&#13;
-* slightly tweaked custom content instructions for clarity&#13;
-* removed numbers from moon names for clarity&#13;
-* fixed the credit hunt goal generating an incorrect amount of company credit items&#13;
-* stamina and inventory changes&#13;
-  * the player always has 4 stamina bars and 4 inventory slots in the item pool&#13;
-  * the initial amount of stamina and inventory specified in the yaml options are now add to the player's starting inventory&#13;
-  * quota locations now require three inventory slots and two stamina bars before they become in-logic&#13;
-* made a tiny change to mitigate errors when generating scrap regions&#13;
-* documentation updates and minor setting tweaks&#13;
-  * rewrote most of the setup guide&#13;
-  * rewrote some option descriptions&#13;
-  * reduced money_per_quota_location minimum from 100 to 50 and maximum from 10000 to 2000&#13;
-  * reduced quota_checkpoint_every default value from 5 to 3&#13;
-&#13;
-Known issues:&#13;
-* If a player connects to a slot that has modify_scrap_spawns, scrap spawns will remain modified for until the player closes the game, even if the player opens a different save file.&#13;
-* Connecting to a multiworld with a large amount of custom content may take up to a few minutes.</content>
-    <link href="https://github.com/T0r1nn/APLC/releases/tag/v0.8.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.2</id>
-    <title>Creeper World 4 v0.2.2</title>
-    <updated>2026-10-21T02:52:08+00:00</updated>
-    <author>
-      <name>droha</name>
-    </author>
-    <content>Matched pair: install the plugin zip AND regenerate with this `cw4.apworld`. The plugin and the apworld share a version number and must match.&#13;
-&#13;
-Requires Archipelago **0.6.7 or newer**.&#13;
-&#13;
-**Existing yamls keep working.** The four hidden options removed here did nothing; a yaml that still names one generates normally, with a warning. **Seeds do not change**: the same seed number generates the same layout as in v0.2.1, checked for default, SPAN and casual logic. Nothing a player sees in the game changes.&#13;
-&#13;
-- **The mod no longer carries debug code.** When the debug channel became its&#13;
-  own plugin (2026-09-03), its commands moved but the counters, readbacks and&#13;
-  tuning code they drove stayed inside the mod, and later debug features&#13;
-  followed the same pattern. All of it is in the debug plugin now, which ships&#13;
-  in no release. That removes a Harmony patch, a per-frame check and extra reads&#13;
-  on every planet repaint that ran in every player's game for nobody's benefit.&#13;
-  Nothing a player sees changes.&#13;
-- **Retired items do nothing.** `Build Limit +1 (Tower)`, `(Cannon)` and&#13;
-  `(Mortar)`, `Emitter Overdrive Trap` and `Greenar Refinery` have not been&#13;
-  generated for several releases; their names stay so item ids do not move. The&#13;
-  mod no longer applies them, so one handed out by `start_inventory`, plando or&#13;
-  `/send` is ignored. Factory still unlocks the greenar refinery.&#13;
-- **Removed four hidden options that did nothing:**&#13;
-  `trap_weight_emitter_overdrive`, `filler_energy_storage_weight`,&#13;
-  `filler_base_generation_weight` and `filler_build_limit_weight`. A yaml that&#13;
-  still names one generates normally, with a warning.&#13;
-- **Slot data no longer sends** `mission_titles`, `span_missions`,&#13;
-  `mission_requirements` or `ern_per_item`, none of which the mod read. The mod&#13;
-  ignores them in an older seed. Placements are unchanged: checked old against&#13;
-  new on the same seed for default, SPAN and casual logic.&#13;
-- **The apworld no longer carries test-only code.** The tests and audit tools&#13;
-  record what the world placed from outside it, and the hooks the world kept&#13;
-  for them are gone. SPAN map notes moved from the shipped `span_data.py` to the&#13;
-  tools-side `tools/span_notes.py`.&#13;
-- **The game page** lists all three recommended options and describes the&#13;
-  `easy` logic tier.&#13;
-- **Release checks are exact.** `tools/check_release.py` holds the mod zip and&#13;
-  the `.apworld` to exact file lists instead of a blocklist, and reads the&#13;
-  shipped DLLs' metadata for the debug-only names removed here.&#13;
-- **Corrected comments that were wrong**, among them a tracker colour that never&#13;
-  existed: a mission with some checks reachable and some not is drawn green.&#13;
-</content>
-    <link href="https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.5.2</id>
     <title>Animal Crossing v0.5.2.post2</title>
@@ -1155,7 +1016,7 @@ More key logic:&#13;
   </entry>
   <entry>
     <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.5</id>
-    <title>AEMinecraft v0.7.0rc5</title>
+    <title>AEMinecraft v0.7.0r2</title>
     <updated>2026-10-23T15:19:57+00:00</updated>
     <author>
       <name>KuroLynx</name>
@@ -1163,15 +1024,82 @@ More key logic:&#13;
     <author>
       <name>EDGN</name>
     </author>
-    <content>Hey, so I kinda hit my session limit before writing the notes. . .&#13;
-&#13;
-So here a quick resume for this one:&#13;
-&#13;
-Many, (like many), logic fixes.&#13;
-Mod fixes.&#13;
-QoL options&#13;
-&#13;
-Some of the mods feature that I wanted to implement (QoL) will be shipped later on on r.c-6, which will be the last release candidate before v0.7.0.</content>
+    <content>## AEMinecraft v0.7.0-rc.5
+
+**Pre-release.** Fifth test build of v0.7.0. Stay on v0.6.2 if you want a stable game. rc.6 will be the last release candidate before v0.7.0, with a few more quality-of-life features.
+
+This RC only lists what changed since the **[v0.7.0-rc.4 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.4)**. For everything new in v0.7.0, see the **[v0.7.0-rc.1 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1)**.
+
+Most of this RC comes from player reports. Thanks to everyone who sent them; every report was checked one by one.
+
+### Hotfix (apworld re-uploaded 2026-10-23)
+
+- **Generation could run out of memory and crash the PC.** A BACAP slot with glitch logic and every lock on used more than 11 GB while building its logic, and nothing was freed between Minecraft slots, so a multiworld with several of them ran the machine out of memory. The same slot now peaks around 3 GB, and each slot's memory is released before the next one starts. The logic and placements are unchanged: the same seed gives the same game as before. **If you downloaded the rc.5 apworld before this note, download it again.** The mod jars did not change.
+
+### New options
+
+- **`split_structure_variants`** (default `false`). Structures that only differ by biome now share one unlock: one `Structure Unlock: Village` opens all five villages, and the same goes for Ruined Portal (7), Ocean Ruin (2), Shipwreck (with beached), Mineshaft (with mesa) and, on 26.3, Abandoned Camp (18). The groups come from the game's own structure tags, so a datapack structure that joins one of those tags joins the group. The Structure Unlocks tab shows one tile per group and lays its tiles out as a full grid. Set it to `true` to get one item per variant, as before.
+- **`combat_logic`** (default `true`). A hard fight is only in logic once you have Sword or Axe Handling, Material Handling up to iron, a reliable food supply and, when `inventory_lock` locks armor slots, the first two of them. Hard fights are raids, the Trial Chambers' ominous challenge (Trial Omen, ominous vault) and bosses. Everything that goes through one inherits it, such as raid gifts.
+- **`exploration_logic`** (default `true`). An advancement that only asks you to go somewhere (Adventuring Time, Atlantis?, Subspace Bubble…) is only in logic once you have a reliable food supply (Hoe Handling, or one of Cow, Pig, Chicken, Sheep, Rabbit, Mooshroom, Cod or Salmon) and, with `inventory_lock`, a slot to carry it in.
+- Both logic options only change where items are placed. The tracker still shows such a check yellow when you could already try it. Set them to `false` for the old behaviour.
+
+### Logic fixes
+
+Status effects and potions
+- Status effects come from their real sources (mobs, food, beacons, stews, structures…) instead of "own a brewing stand". Darkness also comes from a Deep Dark's shriekers.
+- Splash and lingering potions are brewed properly (gunpowder, dragon's breath), so Noxious Fumes and Gas! need the End. A 14% Trial Chambers dispenser no longer counts as a reliable source.
+- A tipped arrow needs its lingering potion.
+- Suspicious stew effects come from every flower that gives them (I'm gonna be sick!).
+- Beacon effects need a beacon base.
+
+Mobs and raids
+- Raid advancements follow the mod's raid gate, and only pillagers and raids make raid captains.
+- A banner with more layers than a loom can make is a raid captain's ominous banner (Superhero of the Village).
+- Raid gifts are an unreliable source with unknown odds.
+- Bees: honey and honeycomb need bees, a calm harvest needs a campfire, and honey bottles come from a full hive.
+- The Happy Ghast needs a dried ghast, so the Nether (Lead Zeppelin).
+- Trick or Treat! needs a mob that can actually wear a pumpkin.
+- The Camel Husk comes with its Husk; wolf armor needs a tamed wolf (Armadoggo, Good as New, Shear Brilliance).
+- Cured zombie villagers and igloo villagers count as villagers for every trade, even without a village.
+- Villager trades are an unreliable item source when villages are not locked behind an unlock.
+- Mob drops and structure loot of an unlock are reliable whatever the unlock's classification (leather, string: Help! I've been framed!, A Masterpiece!).
+- Elder Guardian and Piglin Brute drops run out; wet sponges dry in the Nether (Sponge Miner).
+- The ominous bottle: Trial Omen, Wind Burst and every item only the ominous vault or spawners hold need the Trial Chambers, a trial spawner mob and combat readiness.
+
+Items, blocks and structures
+- Mining a tiered block needs a pickaxe of that tier.
+- A named enchantment's book comes from a librarian; random books are glitch only (Thin Ice!). An enchantment on an unnamed item asks for an item it can go on (Mace Windu), and the enchanting table only offers an enchantment on its primary items.
+- Archaeology loot needs a brush.
+- Wax scrapes off with an axe and crafted copper ages too (Lighten Up); aged copper blocks come from their plain block (Grate Expectations).
+- Stripped logs need an axe or a village/camp palette (Shelfception).
+- Dead coral needs living coral, and coral its Warm Ocean (Just a sample).
+- Rare structure palette blocks are glitch routes, e.g. the copper golem statue in 2-14% of camps (Such a poser).
+- An Overworld fossil's bone blocks are a glitch route (Boned, Paleontologist…).
+- Naturally generated blocks that also have a recipe read as natural, with the Biome Finder when rare.
+- Item colours ask for that dye (Colorful Cavalry).
+- On 26.3, structure lists and structure tags in advancement conditions are read properly (Raidin' Master, Atlantis?, Quicksand, Ahoy!).
+- New glitch routes: a Nether portal cast from water and lava, and string from a cobweb with a water bucket.
+- Each armor slot unlocks one at a time in logic, in the mod's order.
+- Fixed the replacement item used by item links, plando and start_inventory_from_pool.
+- Glitch logic is much smaller on BACAP (export 5.5 MB → 1.7 MB), so trackers and tools handle it faster.
+
+### Mod fixes
+
+- **Raids:** when a raid can't start, the game tells you which raid mobs are still locked. The ominous bottle can't be drunk within 32 blocks of an unlocked village or Trial Chambers whose raid or trial can't start yet, and it says why.
+- **Structures:** unlocked structures are rebuilt only into loaded chunks, without lag spikes or log spam (the mineshaft unlock lagged servers). Structures and mobs owed while a server was off are placed on the next start.
+- **Abandoned Camps** show on the Structure Finder bar with a campfire and a biome badge.
+- **Inventory lock:** inventory rows open from the hotbar up. Inventory Shuffle only shuffles unlocked slots. Dispensers can't put armor into a locked armor slot.
+- **keep_inventory** keeps its share of XP, and a totem of undying no longer loses the kept items.
+- **DeathLink:** `/aem deathlink mode random|all` picks whether a death kills one player or everyone on a server; saved in the world.
+- **Tracker:** checks under a hidden advancement re-parent to the nearest visible one, and a tab root with checks below it shows (gray). Goal tiles go gray on their own count and blue once collected.
+- The Biome Finder button follows the recipe book panel.
+- The BACAP rewards marker now lives in the world's `data/` folder.
+- `/aem dump` logs a failed pack dump and keeps it on screen, and the dump button writes every file.
+
+### Upgrading from rc.4
+
+- **Replace both the apworld and the mod jar.** Your YAMLs keep working; the three new options take their defaults. With the defaults, grouped structure unlocks shrink the item pool and the new logic options place combat and exploration progression a little later, so expect different seeds from the same YAML.
+</content>
     <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.5"/>
   </entry>
   <entry>
@@ -1264,5 +1192,252 @@ that still has them gets them sent automatically, so their items are released.&#
 &#13;
 **Existing, compatible v0.6.x rooms and AP saves can be kept for the launcher and item-delivery fixes. No save reset is required.**</content>
     <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.4</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.4</title>
+    <updated>2026-10-23T19:51:02+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Fixed
+
+- **The Docker stack generates the seed you set in the admin page.** Twelve
+  run options never reached `make seed` or the self-hosted multiworld:
+  mission modifiers and their minimum and maximum, the Australium Medal on
+  clear, the Grappling Hook, cash rewards, the weapon-buff share and stack
+  chance, the trap share, and bot cards with their starting count and mode.
+  The seed was generated with their defaults whatever `.env` said.
+- **A seed with a community mission whose pack is not installed stops at
+  Start.** The launcher used to start the run anyway, and you found out when
+  the run switched to that mission, sometimes an hour in. Now the server stops
+  as soon as it joins the room and names the mission and the pack to tick in
+  Settings &gt; Missions.
+- **Unticking a community pack takes its missions out of the run.** With the
+  pack's ZIP on disk but unticked, Settings &gt; Missions still showed its
+  missions as Ready and the seed could draw them, though Start never installs
+  an unticked pack, so the server then refused the seed. The missions now
+  leave the pool and the page says to tick the pack.
+- **The tier menu and the mission count agree.** With SigMod ticked but not
+  yet installed, the tier menu and the highest mission count you could pick
+  counted different missions, 25 against 26 for the same settings. Both now
+  count the same pool.
+- **A download site that is down no longer sends you to Repair.** When
+  alliedmods.net or another site the install downloads from fails, the launcher
+  now names the address and says to try again later. Repair would only have
+  asked the same site again.
+- **A Valve mission loads with SigMod on.** Starting on Doe's Drill, or
+  switching to any Valve mission on a map that also has community missions,
+  could leave the server at wave 0 with "Could not find a valid population
+  file" in the console. SigMod refuses a mission named in the first ten
+  seconds of a map unless it is a loose file, and Valve's are not. The server
+  now names the mission once those ten seconds are over.
+- **Taking an upgrade back no longer pays out every Cash Bundle again.** With
+  cash rewards in the run, buying an upgrade and pressing minus at the station
+  handed you all the bundle credits of the mission on top of the refund, every
+  time. The minus button now gives back what the upgrade cost and nothing more.
+  Refund All and a lost wave still keep your bundle credits.
+- **Two refunds at once no longer pay your Cash Bundles twice.** Refund All
+  twice in a row, or Refund All as a wave is lost, gave your bundle credits
+  back once per refund. With 800 in bundles, 400 came back as 2000 instead of
+  1200. They now come back once.
+- **Demoman bots reload their stickybomb launcher.** Once a Demoman had fired
+  his stickies he never reloaded them, so against the next giant he was back
+  to grenades. He also emptied the launcher on a lone robot or one standing
+  right next to him, then never set the stickies off. He now keeps the
+  launcher loaded between fights and only fires stickies he is going to
+  detonate. A Demoman with nothing but stickies, on Booties or out of pipes,
+  now sets them off on a single robot instead of letting it walk over them.
+- **Linux: a server missing `steamclient.so` says so instead of crashing.**
+  Without it the game server dies at `replay_srv.so` on every start, and the
+  launcher used to start it anyway. It now runs SteamCMD once to fetch the
+  file, refuses the start with a message naming it if that fails, and the
+  debug bundle's summary says where the link points and whether it works.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* docs(readme): keep the README to downloads and install links by @m-this in https://github.com/m-this/tf2-archipelago/pull/223
+* test(docker): refuse an image that drops the plugin's gamedata by @m-this in https://github.com/m-this/tf2-archipelago/pull/224
+* fix(plugin): stop the minus button paying the bundle ledger again by @m-this in https://github.com/m-this/tf2-archipelago/pull/225
+* chore(deps): tf2-mvm-bots-go v0.18.8 by @m-this in https://github.com/m-this/tf2-archipelago/pull/226
+* fix(launcher): refuse a Linux start with no steamclient.so link by @m-this in https://github.com/m-this/tf2-archipelago/pull/228
+* fix(plugin): name the mission once SigMod's vote guard is over by @m-this in https://github.com/m-this/tf2-archipelago/pull/229
+* fix: stop at Start for an uninstalled community pack, and at a failing download site by @m-this in https://github.com/m-this/tf2-archipelago/pull/230
+* fix(bridge): wait for the client to stop before a test's TempDir goes by @m-this in https://github.com/m-this/tf2-archipelago/pull/232
+* chore(deploy): pin floating image tags by @m-this in https://github.com/m-this/tf2-archipelago/pull/231
+* fix(docker): hand every run option to the seed containers by @m-this in https://github.com/m-this/tf2-archipelago/pull/234
+* refactor(plugin): own the grant cursor and the bundle ledger in grant_ledger.inc by @m-this in https://github.com/m-this/tf2-archipelago/pull/235
+* refactor(launcher): every mission question goes through availability by @m-this in https://github.com/m-this/tf2-archipelago/pull/236
+* refactor(plugin): own the weapon buff levels in weapon_buff_levels.inc by @m-this in https://github.com/m-this/tf2-archipelago/pull/238
+* chore(release): v1.18.4 by @m-this in https://github.com/m-this/tf2-archipelago/pull/233
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.3...v1.18.4
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/N2RkMjE4YTMzODc3MWJjZjQ2ZTQyMTFhNjhmOWM4NGY6MTc5Mjc4NTUwMg==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/NTk3MmI5YmRlNmY2NDllN2E2OTQ4NjdhYTJhNTU1YzQ6MTc5Mjc4NTUwNA==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Emerassi/CrystalProjectAPWorld/releases/tag/CrystalProject-v0.19.0</id>
+    <title>Crystal Project v0.19.0</title>
+    <updated>2026-10-23T22:28:20+00:00</updated>
+    <author>
+      <name>Dragons but also Rabbits, FabulaFey, Emerassi</name>
+    </author>
+    <content>### **Crystal Project v. 0.19.0 is out!** :tada:&#13;
+&lt;https://github.com/Emerassi/CrystalProjectAPWorld/releases&gt;&#13;
+&#13;
+### Setup Guide&#13;
+&lt;https://github.com/Emerassi/CrystalProjectAPWorld/blob/main/worlds/crystal_project/docs/setup_en.md&gt;&#13;
+&#13;
+### Find a Bug? Have a Suggestion?&#13;
+- Check if it's in here: &lt;https://github.com/Emerassi/CrystalProjectAPWorld/issues&gt;&#13;
+- If not, please add it! :&gt; Thanks!&#13;
+&#13;
+### New Features &#13;
+- Deathlink: This is for all the sickos out there who have grown tired of experiencing joy and can only truly feel something by inflicting pain on themselves and others.  When you kill your friends, be sure to ask them what their game says happened, because deathlink lets us devs put whatever we want in the message =)&#13;
+- New Mystery Trap: We'll let it be a secret for now... but feel free to post about it as soon as you've seen it!&#13;
+- Homepoint Warp Counters: The region screen now lets you know how many homepoint warps you've unlocked in a region.  Plot your heists with ease!&#13;
+&#13;
+### Upgrades&#13;
+- Modern Mods: Decompiled version 1.6.9 of Crystal Project so we can now support mods with up to mod editor version 34.&#13;
+- Revamped Homepoint Icons: It should now be easier to tell categories of homepoints apart (e.g. filler/useful/progression/types of hints), as well as much more obvious whether or not a homepoint can be teleported to.  If you've unlocked the warp, it will have a green circle under it.&#13;
+- Deterministic Generation: Our APWorld now generates entirely deterministically.  Previously, some of the data structures we used were un-ordered, and as a result, re-using the exact same seed to generate could give you different results for starting jobs and for what traps were selected.&#13;
+&#13;
+### Bug Fixes &#13;
+- If Shopsanity was enabled and regions included Advanced or greater, previously some of the items that should have been showing up were missing!  And it was the most powerful ones! Math error corrected. You'll see less filler and more real items now.&#13;
+- No longer possible for Sequoia Athenaeum to be your starting region.  It is (almost) impossible to collect any checks inside it without access to the outside, so that you can push the ice block in through the door.&#13;
+- Earned Item Info Mode sometimes failed to start showing item information.&#13;
+&#13;
+### KNOWN ISSUES&#13;
+- Only works on the Steam version&#13;
+- Receiving a passive point cap increase does not update the available passive points until a passive is toggled on or off.&#13;
+- Mods that change the text scrolls (such as the intro in spawning meadows) may result in unexpected behavior.&#13;
+- If Crystal Project (the game not this mod) ever updates beyond version 1.6.9, any newly updated non-Archipelago mods will not work (this has always been true every time it updates until we release a new version of the Archipelago mod).</content>
+    <link href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/tag/CrystalProject-v0.19.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.8</id>
+    <title>DUSK v0.4.8</title>
+    <updated>2026-10-23T23:43:55+00:00</updated>
+    <author>
+      <name>FlapjackRetro</name>
+    </author>
+    <content>## New&#13;
+- CHECKS row on the level map (#53): hovering a level now shows how many of its checks you’ve found in this seed, e.g. 12 / 31, under KEYS. It turns green once they’re all done.&#13;
+## Fixes&#13;
+- Secret exits completed the wrong level (#52): leaving a level by a secret exit, or finishing a secret level, sometimes sent another level’s Level Complete check. That other level didn’t need to have been played. Affected:&#13;
+-- E3M4’s secret exit (sent E3M10)&#13;
+-- E2M4’s secret exit (sent E2M10)&#13;
+-- the exits of E1MS, E2MS and E3MS (sent E1M2, E2M4 and E3M4)&#13;
+- The win screen now credits the level you actually played.&#13;
+## Notes&#13;
+- Update the mod ZIP. Both changes are in the mod; dusk.apworld only changes version number.</content>
+    <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.8"/>
   </entry>
 </feed>

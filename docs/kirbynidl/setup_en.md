@@ -8,6 +8,9 @@ Kirby Nightmare in Dreamland uses the common Bizhawk client connector, and so se
 - Bizhawk emulator (version 2.7 or above)
 - A US Kirby Nightmare in Dreamland ROM file
 
+## Optional Software
+- [Poptracker by Blakel](https://github.com/blakelmenakle/KNiDL-Poptracker)
+
 ### Configuring Bizhawk
 - If you're using BizHawk 2.7 or 2.8, go to Config > Customize. On the Advanced tab, switch the Lua Core from NLua+KopiLua to Lua+LuaInterface, then restart EmuHawk. (If you're using BizHawk 2.9, you can skip this step.)
 
@@ -25,13 +28,15 @@ By default, opening a patch file will do steps 1-5 below for you automatically. 
 
 1. Kirby Nightmare in Dream Land uses Archipelago's BizHawk Client. If the client isn't still open from when you patched your game, you can re-open it from the launcher.
 2. Ensure EmuHawk is running the patched ROM.
+  - The game may freeze on the GBA BIOS screen (console's intro logo/jingle). If this happens, set the "Skip BIOS" option to "True" in Emuhawk (Top menu GBA -> Settings).
 3. In EmuHawk, go to Tools > Lua Console. This window must stay open while playing.
-4. In the Lua Console window, go to Script > Open Script….
+4. In the Lua Console window, go to Script > Open Script.
 5. Navigate to your Archipelago install folder and open data/lua/connector_bizhawk_generic.lua.
 6. The emulator and client will eventually connect to each other. The BizHawk Client window should indicate that it connected and recognized Kirby Nightmare in Dream Land.
 7. To connect the client to the server, enter your room's address and port (e.g. archipelago.gg:38281, localhost:38247) into the top text field of the client and click Connect. 
   - Connection should be established on the in-game title screen or startup menu before starting a file - certain systems *will* break otherwise.
 
 You should now be able to receive and send items. You'll need to do these steps every time you want to reconnect. Kirby Nightmare in Dreamland relies on the AP connection to send and receive items -- you cannot obtain any items without a connection, nor will any locations you check be reflected in the multiworld. Thus, playing without a connection is completely useless, and may cause certain systems to break. 
+
 
 
