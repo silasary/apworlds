@@ -7,7 +7,7 @@ The following are required in order to play Ratchet & Clank: Size Matters in Arc
 - Installed the latest version of [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)
 - The latest version of the Ratchet & Clank: Size Matters apworld
 - [PCSX2 emulator](https://pcsx2.net/downloads/) (2.x or later recommended for the required PINE support)
-- A copy of **Ratchet & Clank: Size Matters** — US (`SCUS-97615`), EU (`SCES-55019`), or JP (`SCPS-15120`).
+- A copy of **Ratchet & Clank: Size Matters** - US (`SCUS-97615`), EU (`SCES-55019`), or JP (`SCPS-15120`).
 ---
 
 ## Enabling PINE in PCSX2

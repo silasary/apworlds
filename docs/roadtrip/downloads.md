@@ -1,9 +1,12 @@
 # Road Trip Adventure
 
 ## Latest
-- <a href="https://github.com/Phenra/RoadTripAdventure-AP/releases/download/v0.3.0/roadtrip.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/Phenra/RoadTripAdventure-AP/releases/download/v0.3.1/roadtrip.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/Phenra/RoadTripAdventure-AP/releases/download/v0.3.1/roadtrip.apworld">https://github.com/Phenra/RoadTripAdventure-AP/releases/download/v0.3.1/roadtrip.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/Phenra/RoadTripAdventure-AP/releases/download/v0.3.0/roadtrip.apworld">https://github.com/Phenra/RoadTripAdventure-AP/releases/download/v0.3.0/roadtrip.apworld</a>

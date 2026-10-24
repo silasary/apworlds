@@ -2,83 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-24T00:23:21.231273+00:00</updated>
+  <updated>2026-10-24T06:20:48.016479+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.5.2</id>
-    <title>Animal Crossing v0.5.2.post2</title>
-    <updated>2026-10-21T04:18:12+00:00</updated>
-    <author>
-      <name>haloopdy</name>
-    </author>
-    <content>Setup instructions: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/setup_en.md&#13;
-Game info: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/game_info_en.md&#13;
-&#13;
-This version is backwards compatible back to 0.5.0&#13;
-&#13;
-## New features&#13;
-- **Treesanity**: grow a configurable amount of trees, gated by progressive fruit, for additional checks. Off by default&#13;
-- **Nook sells fruit**: Nook will sell fruit you've already seen randomly, or always if you're missing checks for that fruit&#13;
-- **Plant Vision**: See the tiles where trees will not grow, or where they will be stunted. Off by default&#13;
-- **Instant Text**: Press A or B to skip text. Off by default&#13;
-&#13;
-## Bugfixes&#13;
-- Fixed normalized time travel counting as too much time for trees&#13;
-- Fixed a bug in the original game that made all saplings at the bottom row of an acre always die&#13;
-&#13;
-**EDIT 2026-10-21:** needed to do a hotfix for the apworld. If you have started seeds with both treesanity and tools in pool on, there's a chance you will need to get your shovel released to you, as I forgot logic for fruit requiring the shovel. It is fixed in the latest apworld attached to this post</content>
-    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.5.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/qwint/APMinit/releases/tag/v0.7.0</id>
-    <title>Minit v0.7.0</title>
-    <updated>2026-10-21T05:44:44+00:00</updated>
-    <author>
-      <name>qwint</name>
-    </author>
-    <content>First and foremost, the recent update to Minit (the actual game) has made the previous patching system unmaintainable,&#13;
-BUT, it also made the Mod Loader (I forked from UFO50) possible without more headaches.&#13;
-&#13;
-The Mod has been completely ported over to said Mod Loader, new instructions can be found [here](https://github.com/qwint/APMinit#for-patching).&#13;
-The `/patch` command will now display a message about this change as well.&#13;
-&#13;
-Changes:&#13;
-* Coins, Tentacles, and Hearts are now marked deprioritized, meaning they will not show up on priority locations if possible.&#13;
-* The Box used for sword toss tentacle now respawns meaning you can check the location purely coming from the left side by resetting the room.&#13;
-* In Entrance Rando the Temple Coin quest will progress from any death from the respective houses.&#13;
-* Other minor Entrance Rando tweaks including not randomizing the water entrances to shark infested waters at all, leaving them vanilla (but still traversable out of logic)</content>
-    <link href="https://github.com/qwint/APMinit/releases/tag/v0.7.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0</id>
-    <title>Deadlock v1.2.0.post3</title>
-    <updated>2026-10-21T08:12:44+00:00</updated>
-    <author>
-      <name>ArchipelagoBrad</name>
-    </author>
-    <content># City Never Sleeps Update&#13;
-&#13;
-Added Baba, Rat King, Solomon (The pawns move first), Deadman Danny, and Violet&#13;
-YAML Site and Rules updated to account for updated characters and locations&#13;
-&#13;
-# Bug Fixes&#13;
-&#13;
-Re-implemented Urn/Rift Fix (accidentally overrode it)</content>
-    <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Daxtear/ArchipelagoMMX4/releases/tag/0.1.4</id>
-    <title>Mega Man X4 v0.1.4</title>
-    <updated>2026-10-21T10:15:02+00:00</updated>
-    <author>
-      <name>Daxtear</name>
-    </author>
-    <content>Zero gains the Body Armor capsule location in Magma Dragoon's stage, as he can reach it using Shippuuga (Twin Slasher).</content>
-    <link href="https://github.com/Daxtear/ArchipelagoMMX4/releases/tag/0.1.4"/>
-  </entry>
   <entry>
     <id>https://github.com/drohack/alttl-archipelago/releases/tag/v1.0.1</id>
     <title>A Little to the Left v1.0.1</title>
@@ -1439,5 +1367,152 @@ Free code signing for open source projects, provided by
 ## Notes&#13;
 - Update the mod ZIP. Both changes are in the mod; dusk.apworld only changes version number.</content>
     <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.3</id>
+    <title>The Legend of Zelda - Oracle of Seasons v26.0.3</title>
+    <updated>2026-10-24T00:41:05+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>## 🗳️ New Options&#13;
+- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
+- Freestanding items can now be removed from the randomizable item pool&#13;
+- The trade sequence can also separately be removed, excluding the pedestal&#13;
+- The linked items can also be removed from the itempool&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+- Made Blaino reequip items after the match&#13;
+  - It is also no longer possible to open the ring menu during the match&#13;
+&#13;
+## 🧠 Logic&#13;
+- Added the jump between market and forge with just a feather and pegs in hard&#13;
+- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
+- Added the need to progress a bit in the game before getting gasha rewards, shop items and maple trade&#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+- Fixed D2's boss room having holes if Digdogger was the boss&#13;
+- Fixed Gleeok freezing when being beaten in D3&#13;
+- Moved the D4 reward when the room was edited for Dodongo&#13;
+- Fixed Ricky crashing if going up to the swamp and trying to leave&#13;
+- Fixed a crash when leaving Subrosia through the village portal room if coming from the Subrosia start&#13;
+- Fixed the 3rd regular shop item's repeatability depending on the first's</content>
+    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.7</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.5.7</title>
+    <updated>2026-10-24T02:31:10+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## Installation &amp; Setup
+
+- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.
+- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.
+- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.
+- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.
+- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)
+- Click **Generate** to create a multiworld `.zip` in the `output` folder.
+- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.
+- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).
+- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.
+- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2
+
+
+
+## Changelog
+
+- fix(SM): removed mini-gun turret as a location as was broken on EU and JP release, /skin_patch cmd and some other fixes and rule changes (4f5411af)
+- fix(SM): refactor imports and update rules (fa0bc149)
+- feat(SM): add in HIG treehouse locations (dd501410)
+- fix(SM): rule builder tidy up, infobot inside clank, dreamtime, outpost omega 1 are created, currently only event items for time being (5a86930a)
+- Update setup_en.md (122464c1)
+- chore(SM): update ai disclosure document (76948c34)
+- fix(SM): ng+ items not including armour sets (c2f7e3ff)
+- fix(SM): move logic to seperate process so client should have no reason to freeze (24361184)
+- fix(SM): added glitch rule to first grindrail section in kalidon if player has shrink ray (2bb8f9f0)
+- fix(SM): added skin patch on and off command in case skin related issues pop up mid run (1f93a0ca)
+
+Full comparison:
+https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.6...rac_size_matters-v0.5.7</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Phenra/RoadTripAdventure-AP/releases/tag/v0.3.1</id>
+    <title>Road Trip Adventure v0.3.1</title>
+    <updated>2026-10-24T02:59:16+00:00</updated>
+    <author>
+      <name>Phenra</name>
+    </author>
+    <content>**Randomizer info page:**&#13;
+https://github.com/Phenra/RoadTripAdventure-AP/blob/main/docs/en_Road%20Trip%20Adventure.md&#13;
+**Setup guide:**&#13;
+https://github.com/Phenra/RoadTripAdventure-AP/blob/main/docs/setup_en.md&#13;
+&#13;
+### Bug fixes:&#13;
+- Added missing item and location for Body Q031 (Klien)&#13;
+- Fixed two flipped Q coin names in White Mountain ("Behind House with Bell on Hill" and "Next to Ski Jump Building")&#13;
+- Fixed access rules for Stamp 81 and Jet Turbine differing</content>
+    <link href="https://github.com/Phenra/RoadTripAdventure-AP/releases/tag/v0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.8</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.5.8</title>
+    <updated>2026-10-24T03:03:29+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## Installation &amp; Setup
+
+- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.
+- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.
+- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.
+- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.
+- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)
+- Click **Generate** to create a multiworld `.zip` in the `output` folder.
+- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.
+- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).
+- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.
+- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2
+
+
+
+## Changelog
+
+- fix(SM): saving state of planet patch when disconnection occurs (6cbabe86)
+
+Full comparison:
+https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.7...rac_size_matters-v0.5.8</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.3</id>
+    <title>Mario Sports Mix v3.1.3</title>
+    <updated>2026-10-24T04:22:00+00:00</updated>
+    <author>
+      <name>ElectroStarz</name>
+    </author>
+    <author>
+      <name>Puffy</name>
+    </author>
+    <content>## What's Changed&#13;
+* Fixed /roster_fix to use NTSC-U addresses.</content>
+    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.3"/>
   </entry>
 </feed>

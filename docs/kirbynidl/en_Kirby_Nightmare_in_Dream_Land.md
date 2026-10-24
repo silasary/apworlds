@@ -82,7 +82,8 @@ Starting a new file with collected items will cause all collected items to be aw
     - Using various abilities to break blocks through walls or from below in ways would seem impossible (ie, 2-4 laser room with cutter)
 
 - `Lock Bonus Doors`:
-    Locks all doors to minigames and other side areas (Arenas, Museums, Warp Star Stations) until the correponding key is obtained. Adds Bonus door keys to the item pool
+    Locks all doors to minigames and other side areas (Arenas, Museums, Warp Star Stations) until the correponding key is obtained. Adds Bonus door keys to the item pool.
+    If this option is disabled while Warp Station Skips are enabled, then Warp Stations will still be locked behind keys. 
 
 - `Lock Copy Abilities`:
     Locks all Copy Abilities behind AP items. Adds Copy Abilities to the item pool

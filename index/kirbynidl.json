@@ -75,6 +75,20 @@
       "title": "0.0.2 Warp Skips & Commands",
       "version_simple": "0.0.2",
       "world_version": "0.0.2"
+    },
+    "v0.0.2r2": {
+      "created_at": "2026-10-23T20:21:15Z",
+      "description": "This is a small release that adds two new features.\r\n\r\n### Warp Station Skips \r\nWith this option enabled, you can skip bosses and play worlds out of order if you find Warp Station keys. This results in a less linear experience, and is great for players that want to shake their run up (before I make level shuffle, at least). \r\n\r\n### Commands\r\nFour new client commands have been added that allow you to check your received items and game status without consulting a tracker.\r\n- `/starrod`: displays info about current Star Rod Piece progression, required Pieces to Goal, and the target for the next Boss Door. \r\n- `/abilities`: lists all currently unlocked copy abilities\r\n- `/hp`: lists current HP in reserve and the HP values of incoming food items\r\n- `/doors`: lists all currently unlocked overworld Bonus Doors, ordered by World\r\n\r\nClient.py code has been abstracted/streamlined slightly under the hood\r\n\r\n## Full Changelog\r\n- 10/14/26:\r\n    - Added client \"starrod\" and \"abilities\" command\r\n    - Updated docs with BIOS crash note, poptracker links\r\n    - Fixed client not receiving starting inventory\r\n    - Added Warp Station skips to Options, Tests, and gen logic (no client yet though)\r\n- 10/21/26\r\n    - Updated Logic for Crash lighting fuses and 7-5 Cannon with Burning\r\n    - Added additional \"hp\" and \"doors\" commands\r\n    - Added Warp Station skips to client (tested)\r\n    - Some function-based abstraction/reformatting of client.py\r\n- 10/23/26\r\n    - Final prep for 0.0.2 release\r\n    - Fixed bug where \"locked door names\" was being initialized as a list and not a set\r\n    - Fixed Warp Station Skips + Bonus Doors option putting (nearly) entire game in sphere 1 (probably)",
+      "download_url": "https://github.com/VizCount467/Kirby-NIDL-AP/releases/download/v0.0.2/kirbynidl.apworld",
+      "has_manifest": false,
+      "hash_sha256": "82ea468c89c20d2841563a76089196d006c93c03ea4514e3db57ae06760fdc84",
+      "html_url": "https://github.com/VizCount467/Kirby-NIDL-AP/releases/tag/v0.0.2",
+      "size": 104611,
+      "source_url": "https://api.github.com/repos/VizCount467/Kirby-NIDL-AP",
+      "tag": "v0.0.2r2",
+      "title": "0.0.2 Warp Skips & Commands",
+      "version_simple": "0.0.2",
+      "world_version": "0.0.2.post2"
     }
   }
 }
