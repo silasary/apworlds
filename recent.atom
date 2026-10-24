@@ -2,133 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-24T12:22:38.214807+00:00</updated>
+  <updated>2026-10-24T18:18:55.710684+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.3</id>
-    <title>Creeper World 4 v0.2.3</title>
-    <updated>2026-10-21T18:15:30+00:00</updated>
-    <author>
-      <name>droha</name>
-    </author>
-    <content>Matched pair: install the plugin zip AND regenerate with this `cw4.apworld`. The plugin and the apworld share a version number and must match.
-
-Requires Archipelago **0.6.7 or newer**.
-
-**Seeds do not change**: the same seed number generates the same layout as in v0.2.1 and v0.2.2, checked on 100 seeds across default, SPAN, casual and easy logic. Existing yamls keep working.
-
-
-- **The mission map's completion display follows the multiworld for every
-  objective.** Nullify, Totems and Collect were answered from your local save
-  instead, so a mission your save had finished showed those objectives as done
-  even where the multiworld still had checks open. Reclaim and Custom were
-  already right. An objective now reads done only when every one of its checks
-  is.
-
-- **The `Units` and `Economy` item groups no longer list `Greenar Refinery`.**
-  It is never generated (Factory unlocks the refinery), so naming it in a group
-  did nothing. Placements are unchanged.
-
-- **The setup guides name the right save-archive folder.** Switching slots
-  moves your saves into `archipelago/save-archive/&lt;seed&gt;-&lt;slot&gt;/`, not
-  `&lt;slot&gt;/`. The installation guide also lists all 21 options correctly and
-  says how `trap_percentage` and the ERN maximums really count.
-</content>
-    <link href="https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/drohack/alttl-archipelago/releases/tag/v1.0.2</id>
-    <title>A Little to the Left v1.0.2</title>
-    <updated>2026-10-21T18:33:02+00:00</updated>
-    <author>
-      <name>droha</name>
-    </author>
-    <content>**1.0.1 seeds: finish them on 1.0.1, or regenerate.** No location id moved,
-but the mod refuses a seed made by a different apworld version, as it has
-since 0.3.3.
-
-## Install
-
-**With a mod manager (recommended):** in r2modman or Thunderstore Mod
-Manager, choose A Little to the Left, search the Online tab for
-**A Little to the Left Archipelago**, press Download, then Start modded.
-BepInEx comes with it. The package is the same build as these files, on
-[its Thunderstore page](https://thunderstore.io/c/a-little-to-the-left/p/drohack/A_Little_to_the_Left_Archipelago/).
-
-**By hand:** three files, and they carry the same version on purpose. See
-[docs/installation.md](https://github.com/drohack/alttl-archipelago/blob/v1.0.2/docs/installation.md).
-
-- `ALTTLArchipelago-1.0.2.zip` - the mod. Extract into the game folder. **You
-  need [BepInEx 6 for Unity IL2CPP](https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip)
-  (be.755) installed first** - it is not included.
-- `alttl.apworld` - only whoever generates the seed needs it. Goes in
-  Archipelago's `custom_worlds/`. Requires Archipelago 0.6.7 or newer.
-- `A Little to the Left.yaml` - your settings. Edit the name and hand it to
-  whoever generates.
-
-Every player needs the yaml and whoever generates needs the apworld, from
-this release whichever way you install the mod.
-
-## What a player will notice
-
-Nothing in play changes. This release finishes 1.0.1's cleanup and fixes two
-things that could go wrong without being seen.
-
-- **A save redirect that fails now ends the run.** The mod logged that it was
-  disconnecting to protect the campaign save, then did not, so later saves in
-  that run went to the campaign save. Never seen in play.
-- **The connection pane no longer leaves hidden objects behind** each time it
-  opens.
-- **Smaller cleanups:** more unused code gone from the shipped files, and
-  slot_data no longer carries three keys the mod stopped reading
-  (`cat_trap_chance`, and each slot's `source` and `dlc`).
-
-## How it was checked
-
-- Full gate 30/30 and DLC gate 30/30 on these exact files, each from a fresh
-  install that meets and answers the game's first-run prompts, with no game
-  errors in either. CI green on the release commit.
-
-- Against 1.0.0 on the same seed, once with cat traps off and once with them
-  on: the same 43 checks in the same order, the same 53 items, the same 13
-  cat-trap outcomes, and an identical spoiler.
-- Not re-run, as nothing they cover changed: the by-hand solve of the levels
-  the gate cannot force, and the level table against the game (`levels.json`,
-  `abilities.json` and `names.json` untouched).
-
-Full details: [CHANGELOG.md](https://github.com/drohack/alttl-archipelago/blob/v1.0.2/CHANGELOG.md).
-</content>
-    <link href="https://github.com/drohack/alttl-archipelago/releases/tag/v1.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.4.1</id>
-    <title>NSMBW v0.4.1</title>
-    <updated>2026-10-21T19:16:09+00:00</updated>
-    <author>
-      <name>Miiroun</name>
-    </author>
-    <content># New Super Mario Bros Wii v0.4.1&#13;
-&#13;
-## Features&#13;
-- None&#13;
-&#13;
-## Fixes&#13;
-- Fixed reprompt_gamefile&#13;
-- Removed error if RAMOverrideEnable wasn't found in dolphin settings&#13;
-- Linux reading wrong map name when patching&#13;
-&#13;
-&#13;
-## Backwards compatibility&#13;
-This update is backwards compatible ONLY with 0.4.0&#13;
-&#13;
-## Links&#13;
-[Download](&lt;https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.4.1&gt;)&#13;
-[Setup Guide](&lt;https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/blob/NSMBW/worlds/nsmbw/docs/setup_en.md&gt;)</content>
-    <link href="https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/tag/v0.4.1"/>
-  </entry>
   <entry>
     <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0d</id>
     <title>Isles of Trials v0.2.0r2</title>
@@ -1483,5 +1361,142 @@ https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.7...ra
 ### AI Disclosure&#13;
 - AI assistance was used for learning BepInEx/Harmony modding patterns, and supporting code refactoring. The vast majority of the codebase was authored by hand..</content>
     <link href="https://github.com/Skelrin/WoLArchipelago/releases/tag/v1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.5.3</id>
+    <title>Hollow Knight: Silksong v0.5.3</title>
+    <updated>2026-10-24T12:19:09+00:00</updated>
+    <author>
+      <name>BatAtVideoGames</name>
+    </author>
+    <content>This is a serious message to everybody reading my update right now. Peace and love, peace and love. I want to tell you, please, after the 24th of October, do not send any Silksong bug reports, that you have. Nothing will be updated after the 24th of October. If that has a date on the report, it's gonna be tossed. I am warning you, with peace and love, that I have too much to do. So no more Silksong. Thank you, thank you. And no seeds to be played. Nothing. Anyway, peace and love, peace and love.&#13;
+(It's my birthday and I want to take the weekend off, Skong work resumes next week)&#13;
+&#13;
+### Note&#13;
+Tried to prioritize everything that's important, but there's one issue that hasn't been tackled: Ledge Grab randomization does NOT account for rosary economy (which means it can expect you to buy stuff from Pebb despite potentially not having access to anything that gives rosaries). This will be worked on but I had no time, the safest workaround if you want to play with randomized Ledge Grab for the time being is to put price rando for shop prices to free. The new Starting Locations should be safe but they're so far entirely untested so if anything funky happens glhf&#13;
+&#13;
+## Main Changelog&#13;
+&#13;
+- Added Wormways Laboratory, Pilgrim's Rest, Deep Docks, Shellwood Bellshrine, Blasted Steps Bellway, Bellhart and Songclave starting areas. Songclave requires an Act 2 or later goal&#13;
+- Completely reworked Blasted Steps logic, several other updates in Cradle, Sands of Karak, Shellwood, Memorium, Whiteward, High Halls, Far Fields, Wormways, Moss Grotto, Cogwork Core, Bellhart, Mount Fay and Choral Chambers&#13;
+- Fixed receiving Skull Tyrant boss credit early making the Marrow fight and The Terrible Tyrant wish unavailable&#13;
+- Corrected Heal Stall logic to require an available non-Shaman crest. Owning Shaman alongside another crest still qualifies&#13;
+- Fixed Conjoined Heart incorrectly appearing as LogicUnknown&#13;
+- Restored missing mapped routes in Greymoor, Pinstress's room and Whispering Vaults&#13;
+- Fixed missing mapped silk-barrier routes, including Original Silkshot&#13;
+- Early Dash now only forces Sprint early with both split options enabled&#13;
+- Fixed Hero's Memento giving its vanilla reward instead of the randomized check&#13;
+- Fixed Loddie's second reward logic with Widow credit&#13;
+- Clarified randomized bell and melody marker option descriptions&#13;
+- Removed the nonexistent "Grand bellway hidden chest" item&#13;
+- Prevented that cunt Grindle from stealing randomized chest rewards in High Halls and Choral Chambers&#13;
+- Fixed Jubilana's randomized spool fragment showing the vanilla name and icon&#13;
+- Fixed Game Pass saving by keeping randomizer saves locally&#13;
+- Added an optional room/subroom overlay, disabled by default. Helps a lot for bug reports. Enable it through config or ModMenu&#13;
+- Craftmetal validation no longer rejects generation for unrelated accessibility problems&#13;
+- Removed four later-area Karak shard caches and the Lower Coral Tablet from Act 1 goals&#13;
+- Last Judge's boss-sanity check now waits for her confirmed defeat&#13;
+- Everbloom now protects against Abyss tendrils before completing its ritual&#13;
+- Corrected Far Fields Savage Beastfly hunt logic to require defeating Fourth Chorus&#13;
+- Fixed shuffled Silver Bells counting toward Bellhome’s key requirements before completion&#13;
+- Removed the extra preference for early movement abilities in multiworlds (haha oops)&#13;
+- Fixed Slab arena access appearing in logic through its closed gate&#13;
+- Fixed Cogwork Core lever access incorrectly requiring several crest pogo routes simultaneously&#13;
+- Fixed Shakra’s shared stock in Sinner’s Road incorrectly requiring crest-pogo skips when the ordinary spike-pogo route was available&#13;
+- Added the Broodmother wish's necklace reward to Heavy Rosary Necklace randomization for Act 2 and Act 3 seeds&#13;
+- Fixed randomized Rosary Bank caches and the Pale Rosary Necklace becoming unavailable after Act 3 or a Snitchfly robbery. Uncollected rewards now appear as pickups inside the opened vault&#13;
+- Fixed Mossgrotto Shell Shard / Beast Shard being marked Out of Logic / LogicUnknown in non-vanilla starts&#13;
+- Fixed shuffled Crawbug Clearing incorrectly requiring Widow credit after obtaining its wish-wall notice&#13;
+- Fixed the Deep Docks central Spool Fragment incorrectly requiring movement upgrades despite its lever being reachable&#13;
+- Restored Father of the Flame’s boss and journal markers and Wispfire Lantern in UT&#13;
+- Added the missing Conjoined Heart marker to the in-game map&#13;
+- Fixed Underworks Shell Shard Cache logic to match the actual pickup positions&#13;
+- Fixed Songclave progression incorrectly requiring a visit to Choral Chambers Above Ventrica&#13;
+- Fixed Trail’s End logic that could place required items behind Act 3&#13;
+- Swim randomization now preserves ice-water damage and muckmaggot effects when falling into water without swim&#13;
+- With split Cling Grip/Swift Step enabled, wall climbing uses the dash direction matching the wall's side&#13;
+- Corrected the Upper and Lower Coral Tablet names in Sands of Karak&#13;
+- Fixed pre-Phantom mist traversal and restored&#13;
+- Made the game more Chinese&#13;
+- Fixed Greymoor’s Bone Scroll and Jubilana's Choral Commandment disappearing&#13;
+- Restored soup damage without Swim&#13;
+- Fixed the black cover over Moss Mother’s arena when entering from the left&#13;
+- Standardized Pebb and Jubilana's purchase names&#13;
+- Improved Universal Tracker route and check explanation layout (by Faris)&#13;
+- Fixed incorrect routes between the central shaft and right-hand entrance in Underworks East Shaft&#13;
+- Temporarily disabled the Blasted Steps "Top Third Lever"&#13;
+- Fixed Slab escapes leaving linked currency locked and DeathLink waiting&#13;
+- Kept Jubilana’s initial shop stock available during The Lost Merchant&#13;
+&#13;
+## Beta Changelog&#13;
+- Soul of Sula now only enters the pool in Steel Soul runs with NPC Souls enabled&#13;
+- Fixed Mnemonord's first-kill check failing to award its randomized item when destroyed&#13;
+- Fixed Eva's first meeting trapping players without her soul&#13;
+- Shakra's combat assistance now requires her NPC soul&#13;
+- Corrected Zaza's soul portrait&#13;
+- Deep Fort's Memory Locket no longer requires Flapping Fertid's Soul. Skarrgard remains required&#13;
+- Missing Rhinogrund’s Soul no longer triggers Pilgrim's Rest’s shop and bench lockout&#13;
+- Halfway Home's cellar no longer requires the ambient Mite or Fluttermite Souls&#13;
+- Coral Tower memory arenas now block the far exit when required Souls are missing&#13;
+- Enemy Souls runs now correctly require Yuma's soul to reach Khann&#13;
+- Fixed Tarmite's Skull Cavern route missing Vicious Caranid’s soul requirement&#13;
+- Fixed enemy souls causing entrance randomization to leave most connections vanilla&#13;
+- Corrected Savage Beastfly, Whispering Vaults and Diving Bell  soul requirements&#13;
+- Fixed several other gauntlet soul reqs that I can't be assed to individually document&#13;
+- Fixed soul gating for Burning Bugs, Snitchfly crowds, Pilby's replacement and early Gron</content>
+    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.45</id>
+    <title>Mental Omega v0.6.8</title>
+    <updated>2026-10-24T16:31:09+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Fix AGHOST and SBLEED unit leakage in chaos/standard mode&#13;
+- Add self healing buffs, tick and rank buffs&#13;
+- Add Auto updater for future version, this should give a notification if a new version got released in the randomizer launcher&#13;
+- Fix Thor/Super Thor ammo rewards&#13;
+- Fix Yuri Hero star insigina missing&#13;
+- Add Cameos for Movie star heroes&#13;
+- Fix Paladin Aid Cursor error&#13;
+- Fix Epsilon Elite cloning&#13;
+- Fix Rainbow Bunker clone&#13;
+- Add new game Mode called "Final Fortress".&#13;
+Two maps so far only. Hold and defend your post against 3 hostile AI enemys for an hour! Gather crates on the maps for bonus and earn perks to make the next defend easier! Available aswell in coop mode.  </content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.45"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.0</id>
+    <title>Donkey Kong 64 v2.0.0</title>
+    <updated>2026-10-24T17:59:59+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.0
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.0"/>
   </entry>
 </feed>

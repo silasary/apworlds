@@ -4,7 +4,7 @@ Spyro 2 is a game about a purple dragon who wants to go on vacation.
 
 
 ## Downloads
-- <a href="https://github.com/Uroogla/S2AP/releases/download/2.2.0/spyro2.apworld">Latest Version (2.2.0.post2)</a>
+- <a href="https://github.com/Uroogla/S2AP/releases/download/2.2.0/spyro2.apworld">Latest Version (2.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

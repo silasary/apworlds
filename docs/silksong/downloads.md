@@ -1,9 +1,12 @@
 # Hollow Knight: Silksong
 
 ## Latest
-- <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.5.2/silksong.apworld">Latest Version (0.5.2)</a>
+- <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.5.3/silksong.apworld">Latest Version (0.5.3)</a>
 
 ## All Versions
+
+#### v0.5.3
+- <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.5.3/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.5.3/silksong.apworld</a>
 
 #### v0.5.2
 - <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.5.2/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.5.2/silksong.apworld</a>
