@@ -2,93 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-24T06:20:48.016479+00:00</updated>
+  <updated>2026-10-24T12:22:38.214807+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/drohack/alttl-archipelago/releases/tag/v1.0.1</id>
-    <title>A Little to the Left v1.0.1</title>
-    <updated>2026-10-21T15:07:35+00:00</updated>
-    <author>
-      <name>droha</name>
-    </author>
-    <content>**1.0.0 seeds: finish them on 1.0.0, or regenerate.** No location id moved,
-but the mod refuses a seed made by a different apworld version, as it has
-since 0.3.3.
-
-## Install
-
-**With a mod manager (recommended):** in r2modman or Thunderstore Mod
-Manager, choose A Little to the Left, search the Online tab for
-**A Little to the Left Archipelago**, press Download, then Start modded.
-BepInEx comes with it. The package is the same build as these files, on
-[its Thunderstore page](https://thunderstore.io/c/a-little-to-the-left/p/drohack/A_Little_to_the_Left_Archipelago/).
-
-**By hand:** three files, and they carry the same version on purpose. See
-[docs/installation.md](https://github.com/drohack/alttl-archipelago/blob/v1.0.1/docs/installation.md).
-
-- `ALTTLArchipelago-1.0.1.zip` - the mod. Extract into the game folder. **You
-  need [BepInEx 6 for Unity IL2CPP](https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip)
-  (be.755) installed first** - it is not included.
-- `alttl.apworld` - only whoever generates the seed needs it. Goes in
-  Archipelago's `custom_worlds/`. Requires Archipelago 0.6.7 or newer.
-- `A Little to the Left.yaml` - your settings. Edit the name and hand it to
-  whoever generates.
-
-Every player needs the yaml and whoever generates needs the apworld, from
-this release whichever way you install the mod.
-
-## What a player will notice
-
-Nothing in play changes. This release is a smaller download and a stricter
-release check.
-
-- **Less in the download.** Code the mod never runs is gone, and what only
-  tests and developer tools use moved out of the shipped files: Core.dll
-  83 KB -&gt; 60 KB, ModKit.dll 28 KB -&gt; 22 KB. The apworld no longer packs
-  hand-test evidence the generator never reads.
-- **Two settings left the mod's config:** `[Input] TypingSuppression` and
-  `[Diagnostics] BadgeWhyProbe`. BepInEx leaves an old entry in place; it
-  does nothing.
-
-## How it was checked
-
-- Full gate 30/30 and DLC gate 30/30 on these exact files, each from a fresh
-  install that meets and answers the game's first-run prompts (Colour Assist,
-  the multiple-solutions tutorial), with no game errors in either.
-- Not re-run, as nothing they cover changed: the by-hand solve of the levels
-  the gate cannot force, and the level table against the game (`levels.json`
-  and `abilities.json` untouched; `names.json` only in its `_comment`).
-
-Full details: [CHANGELOG.md](https://github.com/drohack/alttl-archipelago/blob/v1.0.1/CHANGELOG.md).
-</content>
-    <link href="https://github.com/drohack/alttl-archipelago/releases/tag/v1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/olixx12/Foragipelago/releases/tag/0.2-alpha</id>
-    <title>forager v0.2a0</title>
-    <updated>2026-10-21T16:58:08+00:00</updated>
-    <author>
-      <name>olixx12</name>
-    </author>
-    <content># Foragipelago 0.2&#13;
-## Additions : &#13;
-- Added 2 new options : Deathlink and Easier Crafting&#13;
-- Easier Crafting halves the cost of the most basic of craftable materials (Glass, Coal, Ingots and Thread), this is meant mainly to help short syncs.&#13;
-- Popups in game when recieving items.&#13;
-## Changes : &#13;
-- Various bug fixes, including :&#13;
-   - That one out of bounds error spammed when a player recieves too many of a progressive item&#13;
-   - Hammer, Fishing rod and obliterator not being sent properly&#13;
-- Logic greatly improved, this include a lot more items being set as progression. Non prog items are still not guarenteed to be in a world, but should be far less of an issue (mainly due to a relative lack of checks currently)&#13;
-## Known issues : &#13;
- - Game still crash when going back to the main menu (including by dying). This does mean that deathlinks can cause crashes rarely.&#13;
-&#13;
-This release is likely backwards compatible with previous releases, but is untested, grab the previous release's mod and download it manually if you want to be safe.</content>
-    <link href="https://github.com/olixx12/Foragipelago/releases/tag/0.2-alpha"/>
-  </entry>
   <entry>
     <id>https://github.com/drohack/cw4-archipelago/releases/tag/v0.2.3</id>
     <title>Creeper World 4 v0.2.3</title>
@@ -1514,5 +1432,56 @@ https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.7...ra
     <content>## What's Changed&#13;
 * Fixed /roster_fix to use NTSC-U addresses.</content>
     <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.1</id>
+    <title>Funi Raccoon Game v1.8.1</title>
+    <updated>2026-10-24T07:34:42+00:00</updated>
+    <author>
+      <name>Jeffdev</name>
+    </author>
+    <content>- Removed progressive mystical jewels from the itempool when lugh goal isn't set but gemsanity is enabled, as they do nothing in that case (if you really want to do the Lugh ending for fun, you can still admin send 4 of them and the mod will work)&#13;
+- Fixed a logic bug where BLMB Reactor Core and its associated items went into logic without checking for act 4 item threshold, making them appear in logic early.&#13;
+&#13;
+(There is no mod update attached to this release.)&#13;
+&#13;
+[Mod Link](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)&#13;
+[Setup Guide](https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/blob/main/worlds/funi_raccoon/docs/setup_en.md)</content>
+    <link href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Funi/releases/tag/1.8.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Skelrin/WoLArchipelago/releases/tag/v1.1.0</id>
+    <title>wizardoflegend v1.1.0</title>
+    <updated>2026-10-24T09:36:19+00:00</updated>
+    <author>
+      <name>Skelrin</name>
+    </author>
+    <content>## [1.1.0] - V1.1.0 Release&#13;
+&#13;
+### Added&#13;
+- "Teleport to Hub" button in the pause menu to quickly reroll the dungeon.&#13;
+- Perfect boss / miniboss locations, with bosses being optional.&#13;
+- New NPC's Tokens progression item added.&#13;
+- New trap system that queues traps instead of triggering them all at once.&#13;
+- Game items are now reintroduced in shops when no Archipelago locations are left available.&#13;
+&#13;
+### Changed&#13;
+- Reworked archipelago items by bundling relics and arcanas to have less items.&#13;
+- Rebalanced the APWorld: reduced grindy locations and diversified traps.&#13;
+- NPC locations are now locked behind their associated token requirement.&#13;
+- Refactored `ItemHandler`.&#13;
+- Removed the BouncyCastle proxy dependency.&#13;
+&#13;
+### Fixed&#13;
+- Max HP Boost no longer resets the player's health when picking a relic inside the dungeon.&#13;
+- Removed potential in-game freezes while sending checks by sending them to the server in a separate thread.&#13;
+- Loop NPC not appearing.&#13;
+- Level locations are now correctly checked even if the player cannot go to the next level.&#13;
+- Group Relics no longer behave erratically.&#13;
+- Various fixes following playtesting, including the Perfect miniboss bug, shop slots and the Collector NPC.&#13;
+&#13;
+### AI Disclosure&#13;
+- AI assistance was used for learning BepInEx/Harmony modding patterns, and supporting code refactoring. The vast majority of the codebase was authored by hand..</content>
+    <link href="https://github.com/Skelrin/WoLArchipelago/releases/tag/v1.1.0"/>
   </entry>
 </feed>

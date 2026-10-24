@@ -10,7 +10,7 @@ Wizard of Legend is a fast-paced action roguelike focused on spell-slinging comb
 * **Arcana Slots & Relics**: Your ability slots (Standard Arcana, Signature Arcana, and Bonus Slots) and Relic slots are locked initially and must be unlocked via MultiWorld progression items.
 * **Element Licenses**: If enabled, picking up or using Arcana of specific elements (Fire, Water, Earth, Air, Lightning) requires finding the corresponding Element License.
 * **Dungeon Access & Biomes**: Stage progression requires finding **Boss Keys**, while accessing elemental chests and specific elemental enemies requires **Biome Keys**.
-* **Shops & NPCs**: Spawn shops (Outfit, Relic, Arcana) require **Shop Upgrades** to unlock higher inventory tiers.
+* **Shops & NPCs**: Spawn shops (Outfit, Relic, Arcana) require **Shop Upgrades** to open and unlock higher inventory tiers. NPCs inside the dungeon require their **Tokens** to be unlocked to be able to interact with them.
 
 ## What is the goal of Wizard of Legend?
 
@@ -24,20 +24,20 @@ To access the final showdown against Master Sura, you must:
 
 Items in the multiworld pool include:
 * **Progression Items**: `Boss Keys`, `Chaos Fragments`, `Biome Keys` (Fire, Water, Earth, Air, Lightning), `Shop Upgrades`, `Element Licenses`, `Arcana Slot Unlocks`, and `Relic Slot Upgrades`.
-* **Outfits & Upgrades**: `Outfits` (Venture, Awe, Fall, Pride, etc.), `Max HP Boosts`, `Gold Packs`, and `Chaos Gems Packs`.
+* **Outfits & Upgrades**: `Outfits` (Venture, Awe, Fall, Pride, etc.), `NPC's Tokens`,`Max HP Boosts`, `Gold Packs`, and `Chaos Gems Packs`.
 * **Arcanas & Relics**: Randomized `Arcanas` (Tier 1–5) and `Relics` (Tier 1–5).
-* **Traps**: `Cursed Trap`.
+* **Traps**: `Cursed Trap`, `Mob Trap`, `Heal Trap`, `Gold Trap`.
 
 ## How many location checks are there?
 
-With default options, there are **488 location checks** in total.
+With default options, there are over **300 location checks** in total.
 
 Locations are categorized as follows:
-* **Bosses & Minibosses**: Defeating Council Bosses, Minibosses, and reaching defeat count milestones (e.g. defeating a boss 5 times).
+* **Bosses & Minibosses**: Defeating Council Bosses, Minibosses, and reaching defeat count milestones (e.g. defeating a miniboss 5 times).
 * **Enemies**: Kill count milestones (25 or 50 kills) for standard and elemental enemies.
 * **Chests & Milestones**: Opening elemental, miniboss, and boss chests, plus total chest milestones (10, 25, 50, 75, 100 chests opened).
 * **Spawn Shops & NPCs**: Purchasing items from Outfit, Relic, and Arcana shops in town, plus interacting with dungeon NPCs (Doctor Song, Savile, Nox, Nocturne, Cremire, Doki, Time Keeper).
-* **Progression & Gameplay Milestones**: Stage clear milestones, breaking paintings, falling, dashing, accumulating gold/gems, and perfecting a boss.
+* **Progression & Gameplay Milestones**: Stage clear milestones, breaking paintings, accumulating gold, and perfecting a miniboss/boss.
 
 ## Is Archipelago integrated into the game UI?
 

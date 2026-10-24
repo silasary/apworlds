@@ -3,10 +3,7 @@
   "game": "Spyro 2",
   "github": "https://github.com/Uroogla/S2AP",
   "license": "MIT",
-  "manifest_fields": [
-    "minimum_ap_version",
-    "world_version"
-  ],
+  "manifest_fields": [],
   "versions": {
     "0.1.0": {
       "created_at": "2025-08-09T01:39:57Z",
@@ -333,6 +330,20 @@
       "title": "v2.2.0",
       "version_simple": "2.2.0",
       "world_version": "2.2.0"
+    },
+    "2.2.0r2": {
+      "created_at": "2026-10-19T00:14:43Z",
+      "description": "This release modifies both the Duckstation client (S2AP.Desktop.exe) and the APWorld (including the Bizhawk client). This release is not compatible with previous versions. As this release patches a significant DataStorage usage issue with the Duckstation client, full gemsanity players are urged to update immediately.\r\n\r\nNew Features:\r\n- Players can now menu out of Glimmer before entering Summer Forest for the first time.\r\n  - Game overs prior to entering Summer Forest continue to redirect the player to Glimmer, as in vanilla.\r\n\r\nChanges:\r\n- The minimum supported AP version is now 0.6.6, up from 0.6.1.\r\n- Most users will no longer need to run the Duckstation client in admin mode. This is no longer forced on opening it.\r\n- Gemsanity Rework\r\n  - Gem locations and items are now separated.\r\n    - The player may specify how many gems to become locations.\r\n    - Gems will behave normally if only locations are added.\r\n    - Adding 500 or more locations requires host approval.\r\n  - Simplified gem item options.\r\n  - When choosing gem bundles or full gemsanity, the player's gem location count may be overridden to provide enough locations.\r\n  - If not logically required, red gems are now filler items. Otherwise, they are converted to green and blue gems.\r\n    - This significantly improves the speed of generation and success rate for full gemsanity.\r\n- When Level Locks are on, beating Ripto unlocks Dragon Shores permanently.\r\n  - The lock now only prevents entering from out of bounds.\r\n- The trick enabling wall access from Zephyr with Double Jump now also grants access to the two gems outside Metro Speedway into logic. (Coded by PhoenixAki)\r\n\r\nBug Fixes\r\n- [Duckstation] Fixed a critical bug where inefficient DataStorage use could cause issues up to and including crashes in full gemsanity seeds.\r\n- Fixed a logic error that incorrectly handled the warp from Crush to Autumn Plains when the player had swim but not climb.\r\n- [Bizhawk] Fixed a pair of bugs around Sparx range and the Lazy Sparx Trap.\r\n- Fixed a bug where loading into an in-progress gemsanity seed could release checks based on your vanilla progression instead of your AP progression.\r\n- [Duckstation] Fixed a bug where connecting before in game could cause filler items received offline to be lost.\r\n- Fixed a bug where Elora could let the player into the Ripto fight early under rare circumstances.\r\n\r\nUT Support for a few gemsanity edge cases patched 24 Oct 2026",
+      "download_url": "https://github.com/Uroogla/S2AP/releases/download/2.2.0/spyro2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "8b74abb21db86d9c49521685370a44c5efe44ff87aec3a975f6af705f447a467",
+      "html_url": "https://github.com/Uroogla/S2AP/releases/tag/2.2.0",
+      "size": 75546,
+      "source_url": "https://api.github.com/repos/Uroogla/S2AP",
+      "tag": "2.2.0r2",
+      "title": "v2.2.0",
+      "version_simple": "2.2.0",
+      "world_version": "2.2.0.post2"
     },
     "full_gemsanity_31_10_25": {
       "created_at": "2025-10-11T17:37:59Z",

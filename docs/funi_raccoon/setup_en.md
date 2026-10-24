@@ -11,7 +11,8 @@
     - [Funi Raccoon AP](https://github.com/Jeffdev-Archipelago-Implementations/FuniRaccoonAP/releases/latest)
 2. Open your Funi Raccoon Game installation directory. On Steam, you can find it easily by right-clicking the game and clicking `Manage` > `Browse local files`.
 3. Extract the contents of the Funi Raccoon AP mod into the main directory. Make sure your root includes **modloader.pck**, **override.cfg**, **mod_boot.gd**, and a **mods** folder, with a zip file called **Jeffdev-FuniRaccoonAP.zip** in that mods folder and NOT in root.
-4. Launch and play!
+4. If you still have a file called "mods.pck", remove that file. That was from older versions and is no longer necessary.
+5. Launch and play!
 
 ## Joining a new MultiWorld Game
 

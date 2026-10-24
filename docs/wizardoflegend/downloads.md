@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/Skelrin/WoLArchipelago/releases/download/v1.0.0/wizardoflegend.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/Skelrin/WoLArchipelago/releases/download/v1.1.0/wizardoflegend.apworld">Latest Version (1.1.0)</a>
 
 ## All Versions
+
+#### v1.1.0
+- <a href="https://github.com/Skelrin/WoLArchipelago/releases/download/v1.1.0/wizardoflegend.apworld">https://github.com/Skelrin/WoLArchipelago/releases/download/v1.1.0/wizardoflegend.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Skelrin/WoLArchipelago/releases/download/v1.0.0/wizardoflegend.apworld">https://github.com/Skelrin/WoLArchipelago/releases/download/v1.0.0/wizardoflegend.apworld</a>

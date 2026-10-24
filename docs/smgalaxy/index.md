@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Joethepic/Archipelago/releases/download/smg-V0.0.1/smgalaxy.apworld">Latest Version (0.0.1)</a>
+- <a href="https://github.com/Joethepic/Archipelago/releases/download/smg-V0.0.2/smgalaxy.apworld">Latest Version (0.0.1r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

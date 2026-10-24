@@ -4,7 +4,7 @@
 
 - [Wizard of Legend](https://store.steampowered.com/app/445980/Wizard_of_Legend/) on PC.
 - [BepInEx 5.x](https://github.com/BepInEx/BepInEx/releases).
-- [Wizard of Legend Archipelago Mod](https://github.com/Skelrin/WoLArchipelago/releases).
+- [Wizard of Legend Archipelago Mod](https://github.com/Skelrin/WoLArchipelago/releases) also available on [Thunderstore](https://thunderstore.io/c/wizard-of-legend/p/BDLP/WoLArchipelago/).
 
 ## Installation
 

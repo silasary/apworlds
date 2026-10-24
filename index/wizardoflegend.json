@@ -110,7 +110,7 @@
     },
     "v1.0.0": {
       "created_at": "2026-09-29T19:27:42Z",
-      "description": "## [1.0.0] - V1.0.0 Release\r\n\r\n### Added\r\n- Complete project documentation, including repository `README.md`, setup guide (`setup_en.md`), and Archipelago world documentation (`en_WizardOfLegend.md`).\r\n\r\n### Changed\r\n- Global codebase refactor to improve overall architecture, readability, and maintainability.\r\n- Added extensive inline code comments across most of the project.\r\n\r\n### Fixed\r\n- Various minor bug fixes and general stability improvements.\r\n\r\n### AI Disclosure\r\n- AI assistance was used for learning BepInEx/Harmony modding patterns, setting up the TLS 1.2/1.3 proxy, and supporting code refactoring. The vast majority of the codebase was authored by hand..",
+      "description": "## [1.0.0] - V1.0.0 Release\r\n\r\n### Added\r\n- Complete project documentation, including repository `README.md`, setup guide (`setup_en.md`), and Archipelago world documentation (`en_WizardOfLegend.md`).\r\n\r\n### Changed\r\n- Global codebase refactor to improve overall architecture, readability, and maintainability.\r\n- Added extensive inline code comments across most of the project.\r\n\r\n### Fixed\r\n- Various minor bug fixes and general stability improvements.",
       "download_url": "https://github.com/Skelrin/WoLArchipelago/releases/download/v1.0.0/wizardoflegend.apworld",
       "has_manifest": false,
       "hash_sha256": "fa2944a5fdab699492c10fbd36c9927a89c68989afd8c50627ad7305cc242377",
@@ -121,6 +121,20 @@
       "title": "v1.0.0",
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
+    },
+    "v1.1.0": {
+      "created_at": "2026-10-24T09:36:19Z",
+      "description": "## [1.1.0] - V1.1.0 Release\r\n\r\n### Added\r\n- \"Teleport to Hub\" button in the pause menu to quickly reroll the dungeon.\r\n- Perfect boss / miniboss locations, with bosses being optional.\r\n- New NPC's Tokens progression item added.\r\n- New trap system that queues traps instead of triggering them all at once.\r\n- Game items are now reintroduced in shops when no Archipelago locations are left available.\r\n\r\n### Changed\r\n- Reworked archipelago items by bundling relics and arcanas to have less items.\r\n- Rebalanced the APWorld: reduced grindy locations and diversified traps.\r\n- NPC locations are now locked behind their associated token requirement.\r\n- Refactored `ItemHandler`.\r\n- Removed the BouncyCastle proxy dependency.\r\n\r\n### Fixed\r\n- Max HP Boost no longer resets the player's health when picking a relic inside the dungeon.\r\n- Removed potential in-game freezes while sending checks by sending them to the server in a separate thread.\r\n- Loop NPC not appearing.\r\n- Level locations are now correctly checked even if the player cannot go to the next level.\r\n- Group Relics no longer behave erratically.\r\n- Various fixes following playtesting, including the Perfect miniboss bug, shop slots and the Collector NPC.\r\n\r\n### AI Disclosure\r\n- AI assistance was used for learning BepInEx/Harmony modding patterns, and supporting code refactoring. The vast majority of the codebase was authored by hand..",
+      "download_url": "https://github.com/Skelrin/WoLArchipelago/releases/download/v1.1.0/wizardoflegend.apworld",
+      "has_manifest": false,
+      "hash_sha256": "b48d4ee65ce4c2fe304a9fac3e458129283a3b93799b1add79b6570f46a9381f",
+      "html_url": "https://github.com/Skelrin/WoLArchipelago/releases/tag/v1.1.0",
+      "size": 10620,
+      "source_url": "https://api.github.com/repos/Skelrin/WoLArchipelago",
+      "tag": "v1.1.0",
+      "title": "v1.1.0",
+      "version_simple": "1.1.0",
+      "world_version": "1.1.0"
     }
   }
 }
