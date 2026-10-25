@@ -1,6 +1,10 @@
-# Core Keeper Multiworld Setup
+# Core Keeper Multiworld Setup - v1.2.0-rc.5
 
-This is the Core Keeper Archipelago 1.2.0-rc.2 test candidate for Core Keeper 1.3.0.4 (Steam build 25625027). Gameplay validation is still required before release. Existing AP worlds keep their original checks; generate a new AP world to use the new checks.
+This public-testing prerelease adds a minimum-game-version setting for Core Keeper 1.1.2.10, 1.2.0.7, 1.2.1.5 and 1.3.0.6. Automated compatibility checks and in-game testing are separate; please report any bugs found while testing.
+
+In **Game Options**, **Version** appears above **Death Link**, with **1.1.2.10+**, **1.2.0.7+**, **1.2.1.5+**, and **1.3.0.6**. **1.3.0.6** is the default.
+
+Use `game_version: v1_1_2_10`, `game_version: v1_2_0_7`, or `game_version: v1_2_1_5` in that player's YAML for the corresponding older target. Generation excludes unavailable checks and equipment/legendary rewards; 1.2.0.7 also excludes the six potion/critter pouches added later. Cache contents follow the room's target even on newer games. Older-target rooms remain valid on newer supported games. A newer-target room cannot be played on an older game. Existing rooms without compatibility metadata remain usable on modern games; older clients refuse them rather than assuming their content is safe.
 
 1. Install `core_keeper.apworld` with **Install APWorld** in the Archipelago
    Launcher, then restart Archipelago if prompted.
@@ -14,10 +18,8 @@ This is the Core Keeper Archipelago 1.2.0-rc.2 test candidate for Core Keeper 1.
    slot name, and the optional password. Select **Save and Connect**.
 5. Wait for `Saved. Connected.` before testing checks.
 
-The APWorld and mod must be the same version. The optional PopTracker pack
-should also match when it is used. The current client observes the player's
+Use a mod that understands the room's slot-data and compatibility contract. The current client observes the player's
 complete authoritative item buffer, including the four pouch inventory ranges
 defined by the game.
 
-The Core Keeper mod, APWorld, and tracker must be updated together. A room
-generated with a different Core Keeper APWorld version is not supported.
+Use this candidate APWorld and client together to test legacy targets. The tracker does not choose the game-version target; published item and location IDs are unchanged.

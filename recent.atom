@@ -2,43 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-25T06:22:28.585753+00:00</updated>
+  <updated>2026-10-25T12:19:05.513454+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.5-alpha</id>
-    <title>West of Loathing v0.3.2r2</title>
-    <updated>2026-10-22T04:57:31+00:00</updated>
-    <author>
-      <name>Xylen</name>
-    </author>
-    <author>
-      <name>TylerJG92</name>
-    </author>
-    <content># Changelog for WOLAP v0.3.5 (&amp;APWorld v0.3.2 from 10/16/26)&#13;
-All save files and APWorlds generated with v0.3.0 remain compatible with WOLAP v0.3.5 and APWorld v0.3.2. No regeneration is required to continue playing, but the corrected generation logic will only apply to newly generated APWorld seeds under APWorld v0.3.2 (from v0.3.0)&#13;
-&#13;
-## Client Mod Changes&#13;
-* Fixed a bug that caused the check location `Random Encounter (Region D) - 3rd Encounter` to be skipped&#13;
-* Fixed a bug where Dirtwater's extra shops were hinting the `Bonus Item` in their shop that was not quite in the shop yet.&#13;
-&#13;
-## APWorld Changes (From between v0.3.4 and v0.3.5 of WOLAP)&#13;
-* Added forgotten player arg to `state.can_reach_region("Map Region D", player)` for medical container checks logic&#13;
-* Added Redundant `state.can_reach_location("Ghostwood Town Hall - Issued Permit", player)` to `get_location("Ghostwood Town Hall - Issued ID")`</content>
-    <link href="https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.5-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/tag/v0.1.2-alpha</id>
-    <title>Trails Beyond the Horizon v0.1.2a0</title>
-    <updated>2026-10-22T05:00:30+00:00</updated>
-    <author>
-      <name>Brimaster2000</name>
-    </author>
-    <content>Fixes a Critical Save Data bug. Should prevent accidentally sending multiple items when connecting the game to a client before playing.</content>
-    <link href="https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/tag/v0.1.2-alpha"/>
-  </entry>
   <entry>
     <id>https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.0</id>
     <title>kssu v0.2.0</title>
@@ -1471,5 +1439,65 @@ Requires Archipelago 0.6.7+ and *Final Fantasy VIII* Steam 2013 (`FF8_EN.exe`). 
 **Full Changelog**: https://github.com/wilsonao/ff8_arch/compare/v0.9.0...v0.10.0
 </content>
     <link href="https://github.com/wilsonao/ff8_arch/releases/tag/v0.10.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.1.1</id>
+    <title>La-Mulana 2 v1.1.1</title>
+    <updated>2026-10-25T09:46:34+00:00</updated>
+    <author>
+      <name>Crownmuri</name>
+    </author>
+    <author>
+      <name>Coookie93</name>
+    </author>
+    <content>## For players, please update the mod to v1.1.1 (Shuffled Guardian Souls &amp; QoL)&#13;
+&#13;
+# Changelogs &#13;
+*v1.1.1*&#13;
+- New option: Alpha implemented of Guardian Souls &#13;
+  - Bosses no longer affect Soul Gates, instead 9 Soul items are added to the pool&#13;
+  - Bosses have 1 additional check upon defeating them&#13;
+- QoL toggle: Infinite Starting Weapon Ammo &#13;
+- QoL toggle: Red tint on unchecked AP pots&#13;
+- QoL toggle: hovering AP icon over enemy &amp; npc glossary&#13;
+&#13;
+*v1.1.0*&#13;
+- Added "progressive useful" tagging for items that often lead to large location access / go mode.&#13;
+- Split Require FDC and Required Totem (for DLC)&#13;
+- Enemy Glossary accessibility now takes world difficulty scaling into logic&#13;
+  - This makes Harp and Ganesha's Talisman progressive as they affect the scaling&#13;
+- Non-vanilla soul gate values can now be set (full range from 0 to 9)&#13;
+- With Random Dissonance, sealing the corridor now only requires the charged Beherit&#13;
+  - The Required Guardians requirement is enforced through the Spiral Boat soul gate value &#13;
+  - This allows any post-Ragnarok checks to be in logic before meeting the Required Guardians&#13;
+- Some minor logic corrections and additions</content>
+    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/fogmike/Archipelago_ManicMiners/releases/tag/v1.6.0</id>
+    <title>Manic Miners v1.6.0</title>
+    <updated>2026-10-25T11:21:01+00:00</updated>
+    <author>
+      <name>fogmike</name>
+    </author>
+    <content>_**Manic Miners v1.6**_ brings a slew of client and QoL updates!&#13;
+&#13;
+The v1.6 client is incompatible with v1.5-generated games, and vice versa. &#13;
+&#13;
+Major changes:&#13;
+* Client overhaul! Informational client commands are replaced by full UI tabs.&#13;
+* Integrated YAML-less Universal Tracker into client! No need to have UT open separately, or have the original YAML to hand.&#13;
+* Item Groups and Location Groups! Support for grouped AP functionality added, so you can hint for 'Levels' for example instead of a specific one, have 'Vehicles' all in start_hints, or blanket exclude all locations from a given level at once. &#13;
+* Seed protection and save management - no more seed bleed! The MM client will automatically validate and cycle your save files when connecting to slots. Provided you only have one copy of the client open at once, you can freely cycle between slots without restarting!&#13;
+* EnergyLink! Turn your surplus crystals into power for the multiworld. (One-way only - the LMS Explorer can only run on crystals.)&#13;
+* Optional behaviour changes when locations are !collected by other players! Prevents needing to replay !collected levels locally if that's your preference. &#13;
+* Petting a slug is now a location! This is clearly the most important change. &#13;
+&#13;
+Minor changes:&#13;
+* Research Coordinates locations are not made if CoordinatesUnlocked is set to true&#13;
+* Boss levels during Coordinate Hunt, which inherently have time and crystal targets disabled, no longer display time or crystal information. &#13;
+* YAML auto-adjustments are logged in the generation output&#13;
+* Various client or apworld bug/typo fixes </content>
+    <link href="https://github.com/fogmike/Archipelago_ManicMiners/releases/tag/v1.6.0"/>
   </entry>
 </feed>

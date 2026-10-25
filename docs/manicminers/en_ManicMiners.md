@@ -87,39 +87,19 @@ In-game, selecting the very top-left tile of the map will pop up a message about
 
 ## Additional commands
 
-The Manic Miners client comes with some extra commands on top of the regular Archipelago Text Client, most of which are to view extra detail about the Archipelago game state:
-
-#### `/reset_installation`
-
-A necessary first step to a fresh Archipelago run, this wipes and refreshes all the Archipelago-specific modifications to the Manic Miners installation. 
+The Manic Miners client comes with some extra commands on top of the regular Archipelago Text Client, detailed below.
 
 #### `/clear_installation`
 
 This command will wipe all Archipelago data from the Manic Miners installation, should you wish for a simple uninstall. 
 
-#### `/chiefs_report`
-
-Shows overall game information about your current progress, such as how many things you've unlocked or how many levels you've cleared. 
-
-#### `/mining_map`
-
-Shows specific game information about which levels are accessible, but not yet cleared. It _only_ considers the level unlock items, and does not factor if you have all other prerequisites. 
-
-#### `/check_watch`
-
-Shows specific game information about which target times are accessible, but not yet cleared. It _only_ considers the level unlock items, and does not factor if you have all other prerequisites. Par times only become in logic once you wither have a tool store, or can have 20 miners at once.
-
-#### `/power_levels`
-
-Shows specific game information about which crystal targets are accessible, but not yet cleared. It _only_ considers the level unlock items, and does not factor if you have all other prerequisites. Crystal targets may have additional prerequisites beyond those needed to clear a level.
-
-#### `/visit_storage`
-
-Shows specific game information about what non-level unlocks you have or haven't received yet. 
-
 #### `/toggle_truck`
 
 If playing with Chief's Favourite Truck enabled, this allows you to disable it temporarily if it's causing more hindrance than help (possible in certain monster- or lava-heavy levels). Run it again to re-enable. Must be run each time the client is restarted, i.e. truck is enabled by default at the start of each session. 
+
+#### `/spend_crystals`
+
+Sparks has figured out how to send surplus power out into the galaxy! Manic Miners offers EnergyLink support in a one-way direction. By using this command, 100 of your 'total collected crystals' are vaporised, and a boost of energy (378MJ) is sent to the multiworld. Manic Miners does not have support for receiving energy out of the multiworld. 
 
 ## Other notes and recommendations
 
@@ -134,6 +114,8 @@ The Archipelago integration works in two main ways.
 Firstly, as you unlock levels, it copies the master level files into a dedicated directory to make them available, and then modifies the level data to disable anything you haven't unlocked yet. 
 
 Secondly, it scans the Archipelago-specific save file for level data, to determine which levels you've cleared and what times you've set for them. 
+
+It also maintains a directory of auxiliary files to perform seed validation, as a subfolder of the main MM save location.
 
 ## Problems? 
 

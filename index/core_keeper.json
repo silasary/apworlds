@@ -95,6 +95,22 @@
       "title": "Core Keeper Archipelago APWorld and Tracker 1.2.0-rc.2",
       "version_simple": "1.2.0",
       "world_version": "1.2.0rc2"
+    },
+    "v1.2.0-rc.5": {
+      "created_at": "2026-10-01T21:22:31Z",
+      "description": "Download `core_keeper.apworld` without renaming it. The COMPLETE bundle contains the APWorld, texture-free tracker, optional local-artwork setup, and installation instructions. PopTracker is installed separately.\n\nMatching companion release: https://github.com/URAQTDev/Core-Keeper-Archipelago/releases/tag/v1.2.0-rc.5\n\n## Added\n\n- Support for Core Keeper 1.1.2.10, 1.2.0.7, 1.2.1.5, and 1.3.0.6.\n- A Version option in Game Options, above Death Link. Choose the oldest game version your slot will use; unavailable checks and rewards are excluded automatically.\n- Older-target rooms can be played on newer supported game versions. Connecting to a room that requires a newer game now shows a clear compatibility message.\n\n## Fixes\n\n- Improved performance by reducing repeated inventory work, XP queries, and unnecessary saves.\n- Progress now saves in smaller checkpoints while preserving queued rewards and protection against duplicate deliveries.\n- Fixed a reconnect issue that could overwrite newer reward-history records with an older snapshot.\n- Fixed AP chat messages and their outlines lingering after fading, and restored message history when pressing Enter.\n- Fixed Core Rewards, Archipelago settings, locked-chest checks, and Death Link compatibility across the supported game versions.\n- Keep Inventory Death Link preserves backpack items for received deaths; ordinary deaths still follow the game's normal inventory rules.\n\nUse the updated mod and APWorld when generating rooms for older game versions. Existing compatible rooms retain their progress; regenerate only to change the room's Version option. Published item and location IDs are unchanged.\n\nThis is a prerelease for public testing. Please report bugs with the game/mod version and Player.log.\n\n\n\nUse the named download assets for rc.5. GitHub-generated source archives reflect the existing repository snapshot; updating the source branches is separate from this asset release.\n",
+      "download_url": "https://github.com/URAQTDev/Core-Keeper-Archipelago-APWorld-Tracker/releases/download/v1.2.0-rc.5/core_keeper.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2f9ea5f592f92d87d152718580012eed6660cc253fa045eeca6f417d82f890b8",
+      "html_url": "https://github.com/URAQTDev/Core-Keeper-Archipelago-APWorld-Tracker/releases/tag/v1.2.0-rc.5",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 73905,
+      "source_url": "https://api.github.com/repos/URAQTDev/Core-Keeper-Archipelago-APWorld-Tracker",
+      "tag": "v1.2.0-rc.5",
+      "title": "Core Keeper AP v1.2.0-rc.5 - Public Testing",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0rc5"
     }
   }
 }

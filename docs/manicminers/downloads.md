@@ -1,9 +1,12 @@
 # Manic Miners
 
 ## Latest
-- <a href="https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.5.2/manicminers.apworld">Latest Version (1.5.2)</a>
+- <a href="https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.6.0/manicminers.apworld">Latest Version (1.6.0)</a>
 
 ## All Versions
+
+#### v1.6.0
+- <a href="https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.6.0/manicminers.apworld">https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.6.0/manicminers.apworld</a>
 
 #### v1.5.2
 - <a href="https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.5.2/manicminers.apworld">https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.5.2/manicminers.apworld</a>
