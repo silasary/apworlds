@@ -4,7 +4,7 @@ UNDERTALE II: Revenge of the Robots is the new awesome sequel to UNDERTALE every
 
 
 ## Downloads
-- <a href="https://github.com/studkid/Undertale2-AP/releases/download/v0.2.7/undertale2.apworld">Latest Version (0.2.7)</a>
+- <a href="https://github.com/studkid/Undertale2-AP/releases/download/v0.2.8/undertale2.apworld">Latest Version (0.2.8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

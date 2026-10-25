@@ -1,0 +1,21 @@
+- TODO
+
+- Achievements? There are a couple of miscellaneous achievements that could be checked locations. Some of these would need to be gated behind YAML difficulty. Achievements could include:
+  - 8Ball: Kill 8 enemies with a single bomb
+  - ElecTrick (Amplified): Kill 8 enemies at once with electricity
+  - Smitemaster (Synchrony): Kill 4 enemies in one swing as Klarinetta
+  - Bat Trick: Kill three green bats (would certainly require an increase in spawn rates or just be excluded)
+  - Friendly Fire: Use a red dragon's fireball to kill another miniboss
+  - Doppelganger (Synchrony): Kill a miniboss while possessing one of the same kind as Chaunter
+  - En Passant (Synchrony): Get captured by a Pawn while trying to leap past its attack
+  - Destructive Interference (Synchrony): Kill Dead Ringer with his own attack
+  - Mostly Harmless: Get killed by a Green Slime
+  - Fool's Mate: Checkmate Deep Blues without harming another piece
+  - Ghost in the Pot (Synchrony): Possess 'Teh Urn'
+  - Merchanticide: Kill the Shopkeeper (How to Get Away with Murder wouldn't count)
+  - Heartthrob: Have 10 heart containers at the same time
+  - Fully Loaded (Synchrony): Equip an item in every possible slot
+  - Sunk Cost (Synchrony): Sell your seven items to the Pawnbroker in one run
+  - Tachyarrhythmia (Synchrony): Complete Zone 1 in "Double Tempo Mode" with solo Bolt
+  - I love gooooooold!: Have 6000 coins in a single run
+  - Golden Loot (Amplified): Have 8000 coins in a single run with solo Nocturna

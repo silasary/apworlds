@@ -2,205 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-24T18:18:55.710684+00:00</updated>
+  <updated>2026-10-25T00:27:08.248326+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0d</id>
-    <title>Isles of Trials v0.2.0r2</title>
-    <updated>2026-10-21T20:32:40+00:00</updated>
-    <author>
-      <name>NyanMC</name>
-    </author>
-    <content>added an experimental feature to draw the entire world map. you can use it from a new option in the pico-8 pause menu, and exit it with either button or by selecting the option again.&#13;
-&#13;
-the apworld has not changed from 0.2.0</content>
-    <link href="https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0d"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/3.0.2</id>
-    <title>Librarian Tidy Up the Arcane Library v3.0.2</title>
-    <updated>2026-10-21T20:47:07+00:00</updated>
-    <author>
-      <name>Str8UpWHITE64</name>
-    </author>
-    <content>## Librarian-AP v3.0.2&#13;
-&#13;
-Traps, a higher spare book percent for custom goals, and four fixes.&#13;
-&#13;
-**Existing runs keep working.** Install over 3.0.1 and reconnect. The end door fix works&#13;
-on a run in progress; the other three fixes and the new options need a seed generated with&#13;
-the new apworld. A 3.0.1 YAML still works, but see the trap note below.&#13;
-&#13;
-## New: traps&#13;
-&#13;
-Traps are items that make things harder for a short while. They take the place of filler,&#13;
-never of anything a check or your goal depends on, and nothing a trap does is saved into&#13;
-your game.&#13;
-&#13;
-**Traps are on by default.** A YAML that says nothing about them gets about 10% of its&#13;
-filler turned into traps, and that includes a 3.0.1 YAML regenerated with the new apworld.&#13;
-Set `trap_percentage: 0` for a seed with none.&#13;
-&#13;
-```yaml&#13;
-trap_percentage: 10   # 0-100, default 10&#13;
-trap_weights:         # how often each one comes up; 0 turns it off&#13;
-  Fatigue: 2&#13;
-  Floor Shuffle: 2&#13;
-  Veil: 2&#13;
-  Butterfingers: 2&#13;
-  Scramble Shelf: 1&#13;
-  Shelf Spill: 1&#13;
-```&#13;
-&#13;
-| Trap | What it does |&#13;
-|---|---|&#13;
-| Fatigue | One magic skill recovers slowly for two minutes. |&#13;
-| Floor Shuffle | The loose books lying on the floor swap places with each other. |&#13;
-| Veil | The loose books you could pick up are hidden for 30 seconds, then come back. |&#13;
-| Butterfingers | Some of the books in your hands, from one up to all of them, fall beside you in a pile. |&#13;
-| Scramble Shelf | A few books in a row you have not finished trade places. |&#13;
-| Shelf Spill | A few books in a row you have not finished fall out onto the floor in front of their bookcase. |&#13;
-&#13;
-The shelf traps never touch a finished row, so a completed row and its check stay done.&#13;
-Their notice says which bookcase and row they hit, for example "Scramble Shelf: 2 books on&#13;
-bookcase 2J, row 1 are out of order", and says so when one is skipped because you are&#13;
-carrying books or the shelves are empty.&#13;
-A notice shows on screen when a trap takes effect. In the multiworld the items end in&#13;
-"Trap", for example `Veil Trap` and `Sort Fatigue Trap`.&#13;
-&#13;
-**Fatigue changed.** In 3.0.1 every seed had a fixed set of up to ten Fatigue items. Fatigue&#13;
-is now one of the traps above, so how many you get follows `trap_percentage` and its weight.&#13;
-&#13;
-## New: higher `spare_book_item_percent` on custom goals&#13;
-&#13;
-```yaml&#13;
-spare_book_item_percent: 10   # 0-100, default 10&#13;
-```&#13;
-&#13;
-The range goes up to 100. Past 20 it only works on `goal: custom`, and only when the host&#13;
-allows it (`allow_high_spare_book_percent` in `host.yaml`, off by default). Other goals are&#13;
-held at 20.&#13;
-&#13;
-## Fix: you could leave through the end door before your goal&#13;
-&#13;
-Once every book you had unlocked was shelved, the game let you leave through the library&#13;
-door and play the ending before your Archipelago goal was reached. The door now stays shut&#13;
-until the goal is reached.&#13;
-&#13;
-## Fix: individual book unlocks with count checks never showed any books&#13;
-&#13;
-With `unlock_mode: individual_book_unlocks` and `check_mode: count`, the books you received&#13;
-never appeared. Seeds generated with the new apworld reveal them as they arrive.&#13;
-&#13;
-## Fix: booksanity milestones were in logic from the start&#13;
-&#13;
-With `check_mode: booksanity`, the "Correctly shelve N books" checks (with series unlocks) and,&#13;
-on floor and custom goals, the Reached Level checks past what the seed's rows can reach were in&#13;
-logic from the start, so the tracker showed them early and items could be placed on them out&#13;
-of reach. New seeds gate them by the books and rows you can actually shelve.&#13;
-&#13;
-## Fix: random book bundles all came from the two starting sections&#13;
-&#13;
-With `unlock_mode: random_book_bundle` and `bookcase_unlocks: unlocked`, the first bundles&#13;
-all came from the two starting sections instead of from across the library. Seeds generated&#13;
-with the new apworld draw every bundle from the whole library.&#13;
-&#13;
-## Updating&#13;
-&#13;
-&gt; Extract the zip and drop `Librarian/` into your Steam install (overwrite). Drop&#13;
-&gt; `librarian.apworld` into your Archipelago `custom_worlds/` folder. **Both are required.**&#13;
-&gt; The title screen should read `LibAP v3.0.2`.&#13;
-&#13;
-## If something breaks&#13;
-&#13;
-Press F8, then send that session's log from `Mods\Librarian-AP\logs\`, your YAML's&#13;
-`Librarian:` section, and one line on what you were doing.&#13;
-</content>
-    <link href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/3.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/tag/v0.4.2</id>
-    <title>Death's Door v0.4.2</title>
-    <updated>2026-10-21T22:25:51+00:00</updated>
-    <author>
-      <name>rose.as.romeo</name>
-    </author>
-    <author>
-      <name>ChrisIsAwesome</name>
-    </author>
-    <content># Death's Door Archipelago 0.4.2&#13;
-&#13;
-Use apworld 0.4.2 together with mod 0.4.2. Seeds generated with apworld 0.4.0 or 0.4.1 also work with mod 0.4.2.&#13;
-&#13;
-## Mod (ArchipelagoRandomizer 0.4.2)&#13;
-&#13;
-### Skip Cutscenes&#13;
-- The late-game story scenes are now skipped, including on saves that are already under way:&#13;
-  - the Grey Crow opening Death's Door&#13;
-  - the Grey Crow and Death in the void&#13;
-  - Death's talk after the Grey Crow fight&#13;
-  - the crows' scene in the Hall of Doors&#13;
-  - the Lord of Doors' speeches before the gauntlet and during the final fight&#13;
-- The camera pans that show what you just opened are now skipped too. These include the Castle Lockstone braziers, the Lost Cemetery ghosts, crow souls flying into an Ancient Door, and doors, levers and cleared fights.&#13;
-- The ending after the Lord of Doors and the credits still play.&#13;
-- The few cutscenes that can leave invisible walls behind are always skipped, whether or not Skip Cutscenes is on.&#13;
-&#13;
-### Shop&#13;
-- With Shop Hints on, looking at a stat in the shop shows the item its next upgrade holds and hints it.&#13;
-- Progressive Strength, Dexterity, Haste and Magic now show the shop's stat icons, in white, in popups and in the Recent Items list.&#13;
-&#13;
-### Door and stat tracker&#13;
-- While the game is paused, press Tab (keyboard) or Y (controller) to open a tracker panel. A small hint in the bottom-left of the pause menu shows this:&#13;
-  - With entrance randomization, the doors of the area you're in and where each one leads once you've been through it. In coupled seeds the way back counts too. Page Up / Page Down or the triggers show other areas.&#13;
-  - With Shop Upgrades on, the level you've received for each stat and how many of its upgrades you've bought.&#13;
-- The shop's description panel now shows your current level of each stat. The shop's bars only show what you bought.&#13;
-&#13;
-### DeathLink&#13;
-- Fixed the game crashing when it received a DeathLink.&#13;
-- A DeathLink that arrives while you're rolling, invincible or just respawned is no longer lost. It kills you as soon as it can.&#13;
-- Fixed your own deaths sometimes not being sent after you received a DeathLink.&#13;
-- A DeathLink that arrives while you're already dead no longer kills you again after respawning.&#13;
-- The game now shows who caused a DeathLink when it kills you.&#13;
-&#13;
-### Fixes&#13;
-- Fixed a possible crash when the connection to the server drops.&#13;
-- The Grove of Spirits Door check is now sent when you arrive in the Hall of Doors, even with Skip Cutscenes off.&#13;
-- Fixed short freezes when planting a Life Seed in a new pot. They happened even with planting checks off.&#13;
-- Fixed a freeze in entrance randomizer seeds when a door led to another door in the same area, such as one Hall of Doors door to another.&#13;
-- Fixed a bug in ItemChanger that logged an error every frame in some areas. This made log files grow to over 100 MB and could cause stutter.&#13;
-&#13;
-&#13;
-## APWorld (deaths_door 0.4.2)&#13;
-- Every Life Seed now counts towards the logic. The tracker now shows the Green Tablet and the goal as reachable once you've planted enough seeds.&#13;
-- On the Universal Tracker map:&#13;
-  - Planting pot pins follow each pot's own requirements. The Crypt pot needs Fire.&#13;
-  - The Imp Loft pot pin has moved to the Ceramic Manor left wing.&#13;
-  - The "Beat the Lord of Doors" and "Open the Green Ancient Tablet Door" pins only light up once you can actually do them.&#13;
-- Entrance randomizer never connects two Hall of Doors doors to each other.&#13;
-- Grunt's Old Mask is no longer shown as glitched in the tracker when you can actually get it.&#13;
-- Leaving Ceramic Manor through the gate to the Estate of the Urn Witch is now in logic. The gate opens from the inside, day or night.&#13;
-- Universal Tracker's `/get_logical_path &lt;place&gt;` now lists the doors to take from the Hall of Doors, in order, with where each one actually leads in your seed. It only uses doors you've been through and paths you can walk with your current items.&#13;
-- New option **Shop Hints** (on by default). It controls the shop preview and hints described above.&#13;
-- Corrected the descriptions of Extra Life Seeds and Planted Pots Required.&#13;
-&#13;
-## README&#13;
-- The mod and apworld READMEs are now one README, attached to this release and included in the mod zip. It covers setup from start to finish, every in-game Mod Option and every yaml option, including the new shop and planting options.&#13;
-</content>
-    <link href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/tag/v0.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.11</id>
-    <title>Modded Minecraft v3.0.11</title>
-    <updated>2026-10-22T02:06:58+00:00</updated>
-    <author>
-      <name>Stuff691734</name>
-    </author>
-    <content>Changed error about about final goal not being randomized into a warning, and made it only check if the module is activated.</content>
-    <link href="https://github.com/Stuff691734/ModdedMCArchipelago/releases/tag/v3.0.11"/>
-  </entry>
   <entry>
     <id>https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/tag/v0.1.1-alpha</id>
     <title>Trails Beyond the Horizon v0.1.1a0</title>
@@ -1498,5 +1304,110 @@ Two maps so far only. Hold and defend your post against 3 hostile AI enemys for 
 
 This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
     <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/2.0.0</id>
+    <title>The Legend of Zelda - Oracle of Ages v2.0.0</title>
+    <updated>2026-10-24T20:41:03+00:00</updated>
+    <author>
+      <name>josephanimate2021</name>
+    </author>
+    <author>
+      <name>Glan9</name>
+    </author>
+    <author>
+      <name>Piapiou (SenPierre)</name>
+    </author>
+    <author>
+      <name>FlameStripe</name>
+    </author>
+    <content>Ahoy guys ! New release with some spice !&#13;
+&#13;
+🎉 New features&#13;
+&#13;
+- Full ER ! Get lost in all of labrynna by randomizing all its entrances ! You have the option the exclude some entrances if you want them to stay vanilla, and you have the option to group the entrance between past and present, and between surface and underwater! Your can also group the dungeons together even in full ER.&#13;
+- Gathering the Maku seed is now a now option ! You gathered the essences, they can figure out how to beat Veran on their own.&#13;
+- Hint system ! The owls now give you an hint of where are your item where you activate them, and the know-it-all birds tell uou how many items have each regions&#13;
+&#13;
+🧹 Notable changes : &#13;
+&#13;
+- Vasu option has been split into three different option, so the option generators don't break anymore&#13;
+- Dungeon shuffle option has been moved in the ER option, as it make no sense to have both enabled at the same time&#13;
+- Impa has been moved to the crossroad, the space distortion of all the entrance made her sick and she preferred to stay somewhere that stay the same !&#13;
+&#13;
+🛠️ Fixed bugs&#13;
+&#13;
+- Fixing a bug where the wrong text were sometime displayed, leading to a softlock with the shops and other checks that required a confirmation&#13;
+- Fixing D8 compass sound glitching&#13;
+- Fixing Zora reward being given when you have the essence 7 instead of finishing the dungeon 7&#13;
+- General logic fixes and improvement.</content>
+    <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0c</id>
+    <title>Refunct v1.8.0rc0</title>
+    <updated>2026-10-24T21:07:33+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content>Do we want new exciting features? YES&#13;
+Do we get them now? no...&#13;
+&#13;
+Same apworld &amp; yaml, just a mod update&#13;
+- Some blocks in minigames rotate now (because we can, but we can't move them all because that is too heavy) (you can turn this off in settings)&#13;
+- Fix deathlink issue when changing into defunct minigame&#13;
+- Fixed issue where the mod wouldn't launch if there was an é in the pathname&#13;
+- Added visual block that points underwater so maybe Block Blub is less confusing&#13;
+- Add note to readme about malloc linux error (thanks @riking)&#13;
+- Print version number in window&#13;
+</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0c"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.1</id>
+    <title>Donkey Kong 64 v2.0.1</title>
+    <updated>2026-10-24T21:10:31+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.1
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.3.2</id>
+    <title>Metroid: Samus Returns v0.3.2</title>
+    <updated>2026-10-24T23:21:03+00:00</updated>
+    <author>
+      <name>lil David</name>
+    </author>
+    <content>Updates Open Samus Returns Rando to 3.6.2. That release fixes a multiworld issue and in my testing seems to have fixed connection issues players have been getting around receiving items and sending hints.&#13;
+&#13;
+You'll need to repatch your game to see this take effect.&#13;
+&#13;
+**Full Changelog**: https://github.com/lilDavid/AP-SamusReturns/compare/0.3.1...0.3.2</content>
+    <link href="https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.3.2"/>
   </entry>
 </feed>
