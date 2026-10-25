@@ -11,7 +11,7 @@ moments become multiworld checks:
 - Unique key-item handouts (the Magical Lamp, the Solomon Ring)
 - Optionally, the ~100 visible field draw points — drawing from one for the first
   time sends a check
-- Optionally (own toggle), the 125 hidden world-map draw points — invisible
+- Optionally (own toggle), the 126 hidden world-map draw points — invisible
   in-game, but the tracker map shows where every one is, the Islands Closest
   to Heaven and Hell included
 - Optionally, Triple Triad: a total-wins ladder, a unique-card-collection
@@ -39,7 +39,7 @@ moments become multiworld checks:
   you hold that rank while the client is connected, and it stays counted
   even if your rank later decays (a peak reached while the client wasn't
   running has to be re-earned — tests and battles both raise it)
-- Optionally, GF abilities: 49 signature abilities (Card Mod, Enc-None, Mug,
+- Optionally, GF abilities: 50 signature abilities (Card Mod, Enc-None, Mug,
   the refines, the stat Bonuses, Tonberry's shop tricks, the Auto- abilities
   and more), a Mastered check per GF for learning all 22 of its abilities,
   and a party-wide abilities-learned ladder — a GF's checks need that GF in
@@ -64,15 +64,17 @@ stock above a cap within a second. Drawing still works mechanically — the draw
 still sends its check and draw-based stat ladders still count — but the drawn magic
 vanishes unless you're refilling stock you've cast, and refining magic is repossessed
 the same way (the refined items are still consumed, so don't). You start with a small
-kit of spells (**Starter Magic** scales it, down to nothing), and the filler pool
-switches to a much wider magic roster: your junction strength is decided by the
-multiworld, not the draw grind. **Progressive Magic** turns the Fire, Blizzard,
+kit of spells (**Starter Magic** scales it, down to nothing), and every spell but
+Apocalypse has a "<Spell> Stock" item whose amount is rolled per copy: **Magic
+Abundance** (default 150 %) sets the whole game's total against what the party can
+hold, about 28,800 spells or 60-200 per item. Your junction strength is decided by
+the multiworld, not the draw grind. **Progressive Magic** turns the Fire, Blizzard,
 Thunder, Cure, and Life families into progressive chains — each copy received unlocks
 the next tier.
 
 Want the classic Archipelago "weak until your friends feed you" opening? Four lock
 options put FF8's whole power system in the pool: **Character Locks** (party members
-fight unjunctioned until their item arrives), **GF Ability Locks** (the 49 signature
+fight unjunctioned until their item arrives), **GF Ability Locks** (the 50 signature
 abilities revoke until unlocked — learning one still sends its check), **Junction
 Locks** (no junctioning magic to a stat until you receive that stat's junction item),
 and **Command Locks** (Magic, GF, Draw, and Item are items — until then it's Attack
@@ -105,4 +107,6 @@ Final Fantasy VIII (Steam, 2013) — `FF8_EN.exe`. FF8 Remastered is **not** sup
 
 ## How do I get started?
 
-See the [setup guide](../../../tutorial/Final%20Fantasy%20VIII/setup/en).
+See the [setup guide](../../../tutorial/Final%20Fantasy%20VIII/setup/en). Every
+option in full detail, and the questions players ask most, are in the
+[FAQ](https://github.com/wilsonao/ff8_arch/blob/main/docs/faq.md).

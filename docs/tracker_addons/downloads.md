@@ -1,9 +1,12 @@
 # Universal Tracker Addons
 
 ## Latest
-- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_Addons_v0.1.3/tracker_addons.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_Addons_v0.1.4/tracker_addons.apworld">Latest Version (0.1.4)</a>
 
 ## All Versions
+
+#### v0.1.4
+- <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_Addons_v0.1.4/tracker_addons.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_Addons_v0.1.4/tracker_addons.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_Addons_v0.1.3/tracker_addons.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/Tracker_Addons_v0.1.3/tracker_addons.apworld</a>

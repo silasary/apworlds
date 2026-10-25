@@ -30,7 +30,13 @@ That is the whole install — nothing else to download, install, or configure.
 
 Launcher → **Generate Template Options** → edit `Final Fantasy VIII.yaml` (or use
 this game's options page on the WebHost) and give it to whoever is generating.
-Presets: *All Checks*, *Core Only*, *Junction Master*.
+The option descriptions are deliberately short; every option in full detail, and
+the questions players ask most, are in the FAQ:
+https://github.com/wilsonao/ff8_arch/blob/main/docs/faq.md
+
+The default is the challenging experience (checks-only magic, every lock on).
+Presets: *Relaxed* (full checks, no handicap), *Core Only*, *All Checks*,
+*Disc One Rush*, *Sync*, *Staircase*, *Story Keys*, *Junction Master*, *SeeD Cadet*.
 
 ## Connecting
 
@@ -50,7 +56,8 @@ Presets: *All Checks*, *Core Only*, *Junction Master*.
    stretch this on the first launch). The Launcher shows "FF8 Client is
    starting" so you know the click registered.
 3. The client finds `FF8_EN.exe` on its own and attaches; it keeps retrying until the
-   game is running. `/ff8` shows the connection status.
+   game is running. The client window's **FF8** tab shows the connection status and
+   has every client command as a button; typing them (`/ff8`, …) works too.
 4. Play. Items arrive while you are on a field screen (never in menus or battles), and
    reloading an older save re-delivers whatever that save is missing.
 
