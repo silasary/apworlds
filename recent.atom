@@ -2,108 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-25T12:19:05.513454+00:00</updated>
+  <updated>2026-10-25T18:16:21.662906+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.0</id>
-    <title>kssu v0.2.0</title>
-    <updated>2026-10-22T06:17:57+00:00</updated>
-    <author>
-      <name>GhostCappy</name>
-    </author>
-    <content>## New Additions&#13;
-- Added Eject Trap &amp; Freeze Trap&#13;
-- Added an option to enable extra locations for Samurai Kirby &amp; Megaton Punch, for each level of difficulty.&#13;
-&#13;
-## Changes&#13;
-- Slightly modified logic for The Arena, which now logically requires at least 1 ability after the 3rd win (and 5 abilities after the 9th win).&#13;
-- Slightly modified logic for The True Arena, which now logically requires at least 5 abilities after the 3rd win.&#13;
-- Added checks during item pool generation to prevent unbeatable seeds when certain games are selected as the starting game.&#13;
-- Adjusted the `/games`, `/ability` and `/planets` commands to take up less space.&#13;
-&#13;
-## Bug fixes&#13;
-- **Items that were already collected no longer re-send after resetting or re-connecting, and are now saved in-game.**&#13;
-- Fixed MWW's ability pause screen, which now accurately displays the abilities that have been received.&#13;
-- Fixed a bug that inaccurately sent locations when the option "Multiworld" was selected for MWW.&#13;
-- Changed generation to ensure no impossible seeds are possible when starting with Dyna Blade&#13;
-- Fixed a bug where losing Round 2 of Gourmet Race after winning Round 1 would send the location for Round 3&#13;
-&#13;
-## Known Bugs&#13;
-Please refer to the [FAQ](https://github.com/GhostCappy/Archipelago/blob/main/worlds/kssu/docs/FAQ.md) for all currently known bugs. If you have any questions, feel free to ping!&#13;
-&#13;
-This version is **NOT** backwards compatible with seeds generated before v0.2.0.</content>
-    <link href="https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.29.2</id>
-    <title>Super Crazy Rhythm Castle v0.29.0r2</title>
-    <updated>2026-10-22T07:36:55+00:00</updated>
-    <author>
-      <name>Jack</name>
-    </author>
-    <author>
-      <name>OpenAI</name>
-    </author>
-    <content># v0.29.2 � Cell Tower escape fixes&#13;
-&#13;
-**October 22, 2026. Client 0.76.2 / APWorld 0.29.0 (unchanged).**&#13;
-&#13;
-## Fixed&#13;
-&#13;
-- Cell Tower Access now keeps the return gate from the Central Mainframe room toward the Cell Tower phone usable, including its interaction, before the native level-attempt requirement is met.&#13;
-- Leaving that room toward Lobby before Fish Tears delivery now returns the player safely to Music Lab, avoiding the upper-Lobby hand-blocker trap. After delivery, the normal route remains subject to existing area ownership checks.&#13;
-- These repairs do not complete quests, grant items, send checks or change generated progression rules.&#13;
-&#13;
-## Updating&#13;
-&#13;
-Close the game and install **RhythmCastleAP-v0.76.2.zip**, retaining its included licenses. Keep your configuration, current seed and associated save. APWorld remains **0.29.0**; the unchanged APWorld download is included for convenience. No regeneration or tracker update is required for this client patch.&#13;
-&#13;
-## Validation and scope&#13;
-&#13;
-Both reported escape routes passed targeted user gameplay testing. The release contains the accepted native-interaction repair with a version-label update. Native-reference tests cover exact condition validation, idempotence, wrong flags/classes and failed writes; existing routing regressions are also covered. Full release validation is recorded in [testing](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.2/docs/TESTING.md).&#13;
-&#13;
-Separate investigation confirmed early Violance did not prevent Old Tom's note in the tested post-nectar state, and the Cell Tower Star Eater did not require Cold Storage completion after leaving and returning. Complete prerequisites are not yet isolated, so generation logic remains unchanged.&#13;
-&#13;
-Intermittent performance stalls, extended-session/multiplayer coverage and remaining native-rule uncertainties remain in [known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.2/docs/KNOWN_ISSUES.md). This release does not claim to resolve those reports.&#13;
-&#13;
-See the [AI disclosure](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.2/docs/AI_DISCLOSURE.md) and [gate acceptance record](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.29.2/docs/testing/2026-10-22-hub-escape.md).&#13;
-&#13;
-Release validation: all 45 client regression projects passed, the Release build completed with zero warnings/errors, repository validation passed, and all 10 packaging tests passed. The APWorld asset is reused byte-for-byte from v0.29.1.&#13;
-&#13;
-</content>
-    <link href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.29.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.4</id>
-    <title>AEMinecraft v0.7.0rc4</title>
-    <updated>2026-10-22T11:32:49+00:00</updated>
-    <author>
-      <name>KuroLynx</name>
-    </author>
-    <author>
-      <name>EDGN</name>
-    </author>
-    <content>## AEMinecraft v0.7.0-rc.4
-
-**Pre-release.** Fourth test build of v0.7.0. Stay on v0.6.2 if you want a stable game.
-
-This RC only lists what changed since the **[v0.7.0-rc.3 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.3)**. For everything new in v0.7.0, see the **[v0.7.0-rc.1 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1)**.
-
-### Changed
-
-- **The Biome Finder screen is a map.** Right-clicking the Biome Finder now shows a top-down map of the biomes around you, next to a searchable list of every biome in your dimension. Click a spot on the map or a name in the list to track it.
-- **An arrow points the way.** While you track a biome, a small arrowhead floats just ahead of your view and turns toward it, like a compass needle. It faces you while you glide, swim or crawl. Its textures live in `textures/misc/biome_finder_arrow/`, so resource packs can replace them.
-- **Clearing the target.** The biome you're tracking sits at the top of the screen with a ✕ to stop tracking it. Tracking also stops on its own once you walk into that biome.
-
-### Upgrading from rc.3
-
-- **Only the mod jar changed.** Keep the rc.3 apworld and your YAMLs.
-</content>
-    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.4"/>
-  </entry>
   <entry>
     <id>https://github.com/Happyhappyism/Sonic-Battle-Archipelago/releases/tag/sonic_battle_v0.1.7</id>
     <title>Sonic Battle v0.1.7</title>
@@ -1499,5 +1402,60 @@ Minor changes:&#13;
 * YAML auto-adjustments are logged in the generation output&#13;
 * Various client or apworld bug/typo fixes </content>
     <link href="https://github.com/fogmike/Archipelago_ManicMiners/releases/tag/v1.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Cynichill/APBingo/releases/tag/1.1.2</id>
+    <title>APBingo v1.1.2</title>
+    <updated>2026-10-25T13:07:31+00:00</updated>
+    <author>
+      <name>Cynichill</name>
+    </author>
+    <content>- Fixed an issue where Auto-hints wouldn't work on multiworlds with multiple Bingos (Credit - [mlarente](https://github.com/mlarente))</content>
+    <link href="https://github.com/Cynichill/APBingo/releases/tag/1.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.1</id>
+    <title>kssu v0.2.1r2</title>
+    <updated>2026-10-25T14:48:47+00:00</updated>
+    <author>
+      <name>GhostCappy</name>
+    </author>
+    <content>## Bug fixes&#13;
+- The locations for Megaton Punch are no longer sent when starting a different game&#13;
+- Freeze Trap and Eject Trap now wait for chest animation to finish before sending.&#13;
+&#13;
+## Known Bugs&#13;
+Please refer to the [FAQ](https://github.com/GhostCappy/Archipelago/blob/main/worlds/kssu/docs/FAQ.md) for all currently known bugs. If you have any questions, feel free to ping!&#13;
+&#13;
+This version is backwards compatible with seeds generated during v0.2.0 and beyond.</content>
+    <link href="https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/sitskin/apCassetteBeasts/releases/tag/v0.0.7</id>
+    <title>Cassette Beasts v0.0.7</title>
+    <updated>2026-10-25T16:43:38+00:00</updated>
+    <author>
+      <name>sitskin</name>
+    </author>
+    <content>### Download / Install instructions&#13;
+&#13;
+Download the .apworld and .pck files.  The ap file will go in the custom_worlds folder in the Archipelago files.  The pck mod will go in your Cassette Beasts mod folder generally located in `C:\Users\(username)\AppData\Roaming\CassetteBeasts\mods` for windows and `~/.local/share/CassetteBeasts/mods/` for linux.  If that folder does not already exist you will need to create it.&#13;
+NOTE: This mod requires cat's mod utils mod as well and will not work without it.  It can be found on the steam workshop, Mod Utils by cat or it can be downloaded from [the github releases](https://github.com/Yukitty/CassetteBeasts-modutils/releases) and put in the same folder above.&#13;
+&#13;
+### Fixed&#13;
+- Song parts and stamps skip location blocker and now check inventory before blocking&#13;
+- Tutorial item hard replace script&#13;
+- Damascus tape is now metal instead of astral&#13;
+&#13;
+## What's Changed&#13;
+* Main -&gt; develop by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/69&#13;
+* MOD: Fix tutorial item by hard replacing script. by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/72&#13;
+* MOD: Fix damascus tape type. by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/73&#13;
+* MOD: Fix song and stamp received logic. by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/74&#13;
+* Release/0.0.7 by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/75&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/sitskin/apCassetteBeasts/compare/v0.0.6...v0.0.7</content>
+    <link href="https://github.com/sitskin/apCassetteBeasts/releases/tag/v0.0.7"/>
   </entry>
 </feed>

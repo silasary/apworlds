@@ -5,31 +5,30 @@
 - If a bingo square is found, it's marked off on your bingo sheet
 - Getting the right squares for a bingo sends out checks!
 
-## What is the Goal of Mega Mix in Archipelago
+## What is the Goal of APBingo in Archipelago
 
 The goal of APBingo is to get a certain amount of Bingos, as set in your YAML
 
 ## What is Required to Play the Game in Archipelago?
 
-Just the APworld itself, the bingo sheet is part of the client
+The APWorld itself, and one of the available Web Clients.
 
 ## Set Up Guide
 
 - Install the APWorld
-- Launch the APworld client and connect to the server
-- The bingo board will launch, and display the locations for items, the rest is handled automatically!
+- Open one of the available Web Clients
 
 ### Installing the APWorld
 
 - Download and install the latest archipelago release from the archipelago releases page.
-- Download Bingo.apworld
+- Download APBingo.apworld
 - Navigate to your archipelago installation (default C:\ProgramData\Archipelago).
 - Navigate to custom_worlds under your archipelago base folder.
-- Move Bingo.apworld into this folder.
+- Move APBingo.apworld into this folder.
 
 ### Generating a game
 
-- Download or generate the megamix YAML file
+- Download or generate the APBingo YAML file
 - Edit the file to have your desired settings.
 - Navigate to your archipelago installation (default C:\ProgramData\Archipelago).
 - Navigate to \players under your archipelago base folder.
@@ -40,6 +39,6 @@ Just the APworld itself, the bingo sheet is part of the client
 ### Joining a multiworld:
 
 - Navigate to your archipelago base folder (default C:\ProgramData\Archipelago).
-- Run ArchipelagoLauncher.exe and click "APBingo Client".
-- Connect to the room via the room URL.
+- Open your Web Client of choice
+- Connect to the room via the AP panel at the top left
 
