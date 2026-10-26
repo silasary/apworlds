@@ -9,7 +9,7 @@ them in-game.
 
 
 ## Downloads
-- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.4.0/spelunky2.apworld">Latest Version (0.4.0)</a>
+- <a href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.5.0/spelunky2.apworld">Latest Version (0.5.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

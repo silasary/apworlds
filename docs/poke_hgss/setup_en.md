@@ -82,8 +82,8 @@ perfectly safe to make progress offline; everything will re-sync when you reconn
   server sent you. Save in-game afterwards.
 - `/restore_power`: repairs the Kanto Power Plant in your save, so the Magnet Train runs as soon as you hold the
   Pass. With `magnet_train` on this already happens automatically; use it only if you are stuck with the option
-  off. Save in-game afterwards. With `magnet_train` off, the Power Plant manager's TM57 check can no longer be
-  collected: ask the host to `/send_location` it.
+  off. Save in-game afterwards. With `magnet_train` off, the Power Plant manager's TM57 check is sent at the same
+  time and its item arrives through the server.
 
 ## Tracking
 
@@ -108,7 +108,7 @@ reach; click one to see its checks. Places fold out region by region (Johto, Kan
 and towers, and routes, down to each check and its "?". French and English, switched with the FR/EN button.
 
 Maintainers: `python tracker_gen.py` builds the pack and the web page (needs an Archipelago checkout; the web map
-also needs `HEARTGOLD_ROM_PATH` and the decomp in `ressources/`).
+also needs `HEARTGOLD_ROM_PATH` and the map sources in `ressources/`).
 
 ### Universal Tracker
 

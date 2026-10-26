@@ -1,9 +1,12 @@
 # The Legend of Zelda: Four Swords Adventures
 
 ## Latest
-- <a href="https://github.com/Drogebot/Archipelago-zfsa/releases/download/v0.0.9/ZeldaFSA.apworld">Latest Version (0.0.9)</a>
+- <a href="https://github.com/Drogebot/Archipelago-zfsa/releases/download/v0.0.10/ZeldaFSA.apworld">Latest Version (0.0.10)</a>
 
 ## All Versions
+
+#### v0.0.10
+- <a href="https://github.com/Drogebot/Archipelago-zfsa/releases/download/v0.0.10/ZeldaFSA.apworld">https://github.com/Drogebot/Archipelago-zfsa/releases/download/v0.0.10/ZeldaFSA.apworld</a>
 
 #### v0.0.9
 - <a href="https://github.com/Drogebot/Archipelago-zfsa/releases/download/v0.0.9/ZeldaFSA.apworld">https://github.com/Drogebot/Archipelago-zfsa/releases/download/v0.0.9/ZeldaFSA.apworld</a>

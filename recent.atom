@@ -2,188 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-26T13:35:29.759692+00:00</updated>
+  <updated>2026-10-26T18:21:57.570115+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_4_2</id>
-    <title>Scooby-Doo! Night of 100 Frights v1.4.2</title>
-    <updated>2026-10-23T13:28:01+00:00</updated>
-    <author>
-      <name>vgm5</name>
-    </author>
-    <content># Bugfix Release&#13;
-&#13;
-## Indirect Condition Logic Fix&#13;
-- Fixes an issue where if access to a region/location was dependent on another region being reachable, Tracker Logic could potentially get confused and improperly flag checks as reachable</content>
-    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_4_2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.2</id>
-    <title>Mario Sports Mix v3.1.2</title>
-    <updated>2026-10-23T15:05:27+00:00</updated>
-    <author>
-      <name>ElectroStarz</name>
-    </author>
-    <author>
-      <name>Puffy</name>
-    </author>
-    <content>## What's Changed&#13;
-* Added /ff_roster_fix for FF characters that refuse to obey /roster_fix</content>
-    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.5</id>
-    <title>AEMinecraft v0.7.0r2</title>
-    <updated>2026-10-23T15:19:57+00:00</updated>
-    <author>
-      <name>KuroLynx</name>
-    </author>
-    <author>
-      <name>EDGN</name>
-    </author>
-    <content>## AEMinecraft v0.7.0-rc.5
-
-**Pre-release.** Fifth test build of v0.7.0. Stay on v0.6.2 if you want a stable game. rc.6 will be the last release candidate before v0.7.0, with a few more quality-of-life features.
-
-This RC only lists what changed since the **[v0.7.0-rc.4 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.4)**. For everything new in v0.7.0, see the **[v0.7.0-rc.1 release notes](https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.1)**.
-
-Most of this RC comes from player reports. Thanks to everyone who sent them; every report was checked one by one.
-
-### Hotfix (apworld re-uploaded 2026-10-23)
-
-- **Generation could run out of memory and crash the PC.** A BACAP slot with glitch logic and every lock on used more than 11 GB while building its logic, and nothing was freed between Minecraft slots, so a multiworld with several of them ran the machine out of memory. The same slot now peaks around 3 GB, and each slot's memory is released before the next one starts. The logic and placements are unchanged: the same seed gives the same game as before. **If you downloaded the rc.5 apworld before this note, download it again.** The mod jars did not change.
-
-### New options
-
-- **`split_structure_variants`** (default `false`). Structures that only differ by biome now share one unlock: one `Structure Unlock: Village` opens all five villages, and the same goes for Ruined Portal (7), Ocean Ruin (2), Shipwreck (with beached), Mineshaft (with mesa) and, on 26.3, Abandoned Camp (18). The groups come from the game's own structure tags, so a datapack structure that joins one of those tags joins the group. The Structure Unlocks tab shows one tile per group and lays its tiles out as a full grid. Set it to `true` to get one item per variant, as before.
-- **`combat_logic`** (default `true`). A hard fight is only in logic once you have Sword or Axe Handling, Material Handling up to iron, a reliable food supply and, when `inventory_lock` locks armor slots, the first two of them. Hard fights are raids, the Trial Chambers' ominous challenge (Trial Omen, ominous vault) and bosses. Everything that goes through one inherits it, such as raid gifts.
-- **`exploration_logic`** (default `true`). An advancement that only asks you to go somewhere (Adventuring Time, Atlantis?, Subspace Bubble…) is only in logic once you have a reliable food supply (Hoe Handling, or one of Cow, Pig, Chicken, Sheep, Rabbit, Mooshroom, Cod or Salmon) and, with `inventory_lock`, a slot to carry it in.
-- Both logic options only change where items are placed. The tracker still shows such a check yellow when you could already try it. Set them to `false` for the old behaviour.
-
-### Logic fixes
-
-Status effects and potions
-- Status effects come from their real sources (mobs, food, beacons, stews, structures…) instead of "own a brewing stand". Darkness also comes from a Deep Dark's shriekers.
-- Splash and lingering potions are brewed properly (gunpowder, dragon's breath), so Noxious Fumes and Gas! need the End. A 14% Trial Chambers dispenser no longer counts as a reliable source.
-- A tipped arrow needs its lingering potion.
-- Suspicious stew effects come from every flower that gives them (I'm gonna be sick!).
-- Beacon effects need a beacon base.
-
-Mobs and raids
-- Raid advancements follow the mod's raid gate, and only pillagers and raids make raid captains.
-- A banner with more layers than a loom can make is a raid captain's ominous banner (Superhero of the Village).
-- Raid gifts are an unreliable source with unknown odds.
-- Bees: honey and honeycomb need bees, a calm harvest needs a campfire, and honey bottles come from a full hive.
-- The Happy Ghast needs a dried ghast, so the Nether (Lead Zeppelin).
-- Trick or Treat! needs a mob that can actually wear a pumpkin.
-- The Camel Husk comes with its Husk; wolf armor needs a tamed wolf (Armadoggo, Good as New, Shear Brilliance).
-- Cured zombie villagers and igloo villagers count as villagers for every trade, even without a village.
-- Villager trades are an unreliable item source when villages are not locked behind an unlock.
-- Mob drops and structure loot of an unlock are reliable whatever the unlock's classification (leather, string: Help! I've been framed!, A Masterpiece!).
-- Elder Guardian and Piglin Brute drops run out; wet sponges dry in the Nether (Sponge Miner).
-- The ominous bottle: Trial Omen, Wind Burst and every item only the ominous vault or spawners hold need the Trial Chambers, a trial spawner mob and combat readiness.
-
-Items, blocks and structures
-- Mining a tiered block needs a pickaxe of that tier.
-- A named enchantment's book comes from a librarian; random books are glitch only (Thin Ice!). An enchantment on an unnamed item asks for an item it can go on (Mace Windu), and the enchanting table only offers an enchantment on its primary items.
-- Archaeology loot needs a brush.
-- Wax scrapes off with an axe and crafted copper ages too (Lighten Up); aged copper blocks come from their plain block (Grate Expectations).
-- Stripped logs need an axe or a village/camp palette (Shelfception).
-- Dead coral needs living coral, and coral its Warm Ocean (Just a sample).
-- Rare structure palette blocks are glitch routes, e.g. the copper golem statue in 2-14% of camps (Such a poser).
-- An Overworld fossil's bone blocks are a glitch route (Boned, Paleontologist…).
-- Naturally generated blocks that also have a recipe read as natural, with the Biome Finder when rare.
-- Item colours ask for that dye (Colorful Cavalry).
-- On 26.3, structure lists and structure tags in advancement conditions are read properly (Raidin' Master, Atlantis?, Quicksand, Ahoy!).
-- New glitch routes: a Nether portal cast from water and lava, and string from a cobweb with a water bucket.
-- Each armor slot unlocks one at a time in logic, in the mod's order.
-- Fixed the replacement item used by item links, plando and start_inventory_from_pool.
-- Glitch logic is much smaller on BACAP (export 5.5 MB → 1.7 MB), so trackers and tools handle it faster.
-
-### Mod fixes
-
-- **Raids:** when a raid can't start, the game tells you which raid mobs are still locked. The ominous bottle can't be drunk within 32 blocks of an unlocked village or Trial Chambers whose raid or trial can't start yet, and it says why.
-- **Structures:** unlocked structures are rebuilt only into loaded chunks, without lag spikes or log spam (the mineshaft unlock lagged servers). Structures and mobs owed while a server was off are placed on the next start.
-- **Abandoned Camps** show on the Structure Finder bar with a campfire and a biome badge.
-- **Inventory lock:** inventory rows open from the hotbar up. Inventory Shuffle only shuffles unlocked slots. Dispensers can't put armor into a locked armor slot.
-- **keep_inventory** keeps its share of XP, and a totem of undying no longer loses the kept items.
-- **DeathLink:** `/aem deathlink mode random|all` picks whether a death kills one player or everyone on a server; saved in the world.
-- **Tracker:** checks under a hidden advancement re-parent to the nearest visible one, and a tab root with checks below it shows (gray). Goal tiles go gray on their own count and blue once collected.
-- The Biome Finder button follows the recipe book panel.
-- The BACAP rewards marker now lives in the world's `data/` folder.
-- `/aem dump` logs a failed pack dump and keeps it on screen, and the dump button writes every file.
-
-### Upgrading from rc.4
-
-- **Replace both the apworld and the mod jar.** Your YAMLs keep working; the three new options take their defaults. With the defaults, grouped structure unlocks shrink the item pool and the new logic options place combat and exploration progression a little later, so expect different seeds from the same YAML.
-</content>
-    <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.2</id>
-    <title>Dwarf Fortress v2.1.2</title>
-    <updated>2026-10-23T15:54:22+00:00</updated>
-    <author>
-      <name>Dwarfipelago Contributors</name>
-    </author>
-    <content>A fix-only release. **2.1.x and 2.0.x seeds and worlds stay playable** - the item&#13;
-and location tables are untouched. The one exception is a skillsanity seed with&#13;
-combat skills turned off: those were generated broken (see below) and need&#13;
-regenerating.&#13;
-&#13;
-### Removed checks&#13;
-&#13;
-Two checks are no longer generated. Their ids stay registered, and an older seed&#13;
-that still has them gets them sent automatically, so their items are released.&#13;
-&#13;
-- **Titan Slain.** Titans too rarely reach a fort for this to be a fair check;&#13;
-  Forgotten Beast Slain still covers the first forgotten beast kill.&#13;
-- **Record Keeper skillsanity checks.** The skill barely trains in play, so its&#13;
-  levels were close to unreachable. It is gone from the Medium and All skill&#13;
-  groups and the manual skill list, and a yaml that still lists it is accepted&#13;
-  with the skill ignored.&#13;
-&#13;
-### Fixes&#13;
-&#13;
-- **Fixed the Mountainhome goal and the Monarch Takes Residence check never&#13;
-  firing.** Both looked for a KING or QUEEN noble position, but DF's dwarven&#13;
-  monarch is the MONARCH position; king and queen are only its gendered names.&#13;
-&#13;
-- **Fixed combat skill checks appearing with combat skillsanity turned off.** With&#13;
-  skillsanity on and `skillsanity_enable_combat` off, the combat skills were never&#13;
-  removed from the location list, so every combat skill was added at all 15 levels,&#13;
-  ignoring the max level. Those checks had no logic rules and were missing from the&#13;
-  client's skill tracking, so they could never be sent, and anything placed on them,&#13;
-  progression included, was lost. Affected seeds are unwinnable and must be&#13;
-  regenerated with this version.&#13;
-- **Fixed the gorlak caravan leaving AP goods behind.** A caravan's groups leave the&#13;
-  map one at a time. Pack animals that had already left were mistaken for wild&#13;
-  thieves and struck down, and goods they carried off were respawned in the depot&#13;
-  where nobody collected them. When the caravan left, DF handed those goods to the&#13;
-  fort, which counted as purchases (free checks) and left the items in the fort.&#13;
-  Goods are now only created for a caravan that is arriving or trading, and units&#13;
-  that have left the map are no longer treated as thieves.&#13;
-- **AP goods a caravan leaves behind, e.g. after being spooked, can be bought&#13;
-  again.** The next gorlak caravan takes them over, lists them for sale and packs&#13;
-  them up when it leaves. A purchase now only counts while a gorlak caravan is at&#13;
-  the depot, so a good DF gives the fort after a caravan leaves is removed instead,&#13;
-  and its slot comes back on a later visit.&#13;
-- **New AP goods belong to the gorlak caravan that is arriving or trading**, rather&#13;
-  than whichever gorlak merchant was found first, which mattered in worlds with&#13;
-  more than one gorlak civ.&#13;
-- **AP goods could never be removed.** DFHack refuses to remove items flagged as in&#13;
-  a building, which every AP good is, so clearing goods, removing abandoned ones&#13;
-  and reaping goods recovered from thieves all failed silently and retried forever.&#13;
-- **A Merchant's Coffer no longer summons the gorlaks when the shop is off.** The&#13;
-  Legendary Wealth goal keeps coffers in the pool without the shop, and receiving&#13;
-  one still forced a gorlak caravan with no AP goods, or, in a world without&#13;
-  gorlaks, warned on every coffer that the shop could never work. The coffer now&#13;
-  only counts toward the wealth goal.</content>
-    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.7</id>
     <title>DOOM Eternal v0.6.7</title>
@@ -1649,5 +1472,193 @@ In theory this should also work on previous patches now with the same mod, but r
 &#13;
 **Existing seeds remain compatible. APWorld logic fixes require a new seed.**</content>
     <link href="https://github.com/randomcodegen/CrashNST-AP/releases/tag/1.0.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/tag/0.5.0</id>
+    <title>Spelunky 2 v0.5.0</title>
+    <updated>2026-10-26T14:12:25+00:00</updated>
+    <author>
+      <name>Eszenn</name>
+    </author>
+    <author>
+      <name>DDRKhat</name>
+    </author>
+    <content>This is an update to both APworld + Client. Huge architectural changes mean that _**ALL**_ previous versions _WILL NOT WORK_.&#13;
+# What's new&#13;
+## The game mod itself&#13;
+The entire thing has been re-written from the ground-up to make future coding changes far more sustainable and more granular. For a general player, you shouldn't notice almost anything different except for...&#13;
+## Friendlier locked-out items&#13;
+Hedjet / Crown / Ankh -- previously they would be replaced upon the level loading and getting near them -- now they will "be replaced" but still exist safely until you collect it's replacement; This can mean you are just about to pick up that Bomb bag then suddenly it'll become a Crown in time because you receive it from the multiworld!&#13;
+_(Not YET for the HouYi Bow or Light Arrow, more R&amp;D required)_ &#13;
+## Deathlink black-listing&#13;
+John Celeste keeps dying and has no Amnesty? Now you can choose to stop accepting deathlinks from them and play in peace!&#13;
+## "CO" goal can now be 7-5&#13;
+After quite some discussion I've been convinced to make this change. One thing to be aware; the goal is that you enter the exit OF your goal level (So a goal of 7-5 means you go through the exit OF 7-5 to meet your goal)&#13;
+## Deathlink taken into account for logic!&#13;
+If you have deathlink on, you are not _logically_ expected to send the "spikes" or "ghost" journal entries until you have an ankh (or telepack, in the instance of the spikes) -- no deaths needed!&#13;
+## Some new "sent location" icons!&#13;
+Just a tiny bit of visual feedback adjustments but now there is a graphical distinction between "useless" filler, "helpful" filler, and "HELPFUL" progression.  Thanks again 'activegalacticnuclear' aka 'Ganymede' for these!!&#13;
+## new "Must visit world" setting&#13;
+For those that want shortcuts to require not just access, but also having visited them :)&#13;
+## Receive "Upgrades" mid-run!&#13;
+During any run if you receive an upgrade, it'll be granted to you (if it's a normal one) or added to waddler (if it's a waddler one) rather than needing to wait for a new run. This respects your "journal entry" and "locked" item settings you choose.&#13;
+## Unknown extras!&#13;
+Due to how long this has taken there's probably a bunch of other small happy changes I've made and failed to document. Oopsies!&#13;
+&#13;
+_**Note:**_ Deathlink messages will refer to a "WIP message", it's something I plan to fully address and handle in a future update but this one has taken FAR too long and caused crashes for FAR too long. I needed it out sooner rather than later.&#13;
+&#13;
+## Bug Fixes!&#13;
+- Send deathlinks even though you are already dead _(D'oh!)_&#13;
+- Boss Doors causing a crash _**ACTUALLY FOR REAL THIS TIME**_&#13;
+- Broken Sword logic not accounting for access to Clone Gun (who'da thunk you need to actually be able to get it... Oops)&#13;
+- _ALL_ locked out items being considered "in logic" _(I was setting the wrong rule and quietly suppressing an error... ugh)_&#13;
+- Eggplant being able to send it's check despite not being unlocked&#13;
+- Probably SEVERAL more&#13;
+&#13;
+# Huge thanks and respect to [Eszenn](https://github.com/Eszenn/) for piloting the original implementation, best of wishes to them.&#13;
+## Big thanks still goes to @cloiss + (discord) ``activegalacticnucleus`` for their contributions to 0.3.0&#13;
+&#13;
+# [Installation Steps here](https://github.com/DDR-Khat/Spelunky2-Archipelago?tab=readme-ov-file#installation-instructions)</content>
+    <link href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/tag/0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Drogebot/Archipelago-zfsa/releases/tag/v0.0.10</id>
+    <title>The Legend of Zelda: Four Swords Adventures v0.0.10</title>
+    <updated>2026-10-26T15:14:14+00:00</updated>
+    <author>
+      <name>Drogings</name>
+    </author>
+    <content>* Added Item Pedestals as optional locations&#13;
+* Combined a Pyramid key and moon gate into a progressive key&#13;
+* Fixed logic&#13;
+* Fixed jewel and maiden requirements</content>
+    <link href="https://github.com/Drogebot/Archipelago-zfsa/releases/tag/v0.0.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.3</id>
+    <title>Donkey Kong 64 v2.0.3</title>
+    <updated>2026-10-26T15:27:42+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.3
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.6</id>
+    <title>Pokemon HGSS Singe v0.11.0</title>
+    <updated>2026-10-26T15:46:57+00:00</updated>
+    <author>
+      <name>Olivier</name>
+    </author>
+    <content># Pokemon HGSS Singe APWorld  v0.2.6&#13;
+&#13;
+**New seeds needed** (APWorld version 0.2.6). A seed generated with v0.2.5 keeps working with the v0.2.5 apworld: finish it with that one, and generate new seeds with this one. The BizHawk Client warns you when a seed and the installed apworld do not match.&#13;
+&#13;
+## Files&#13;
+&#13;
+- `poke_hgss.apworld`: the world. Put it in your Archipelago `custom_worlds` folder.&#13;
+- `Poke_HGSS.yaml`: the default options file, ready to edit.&#13;
+- `poke_hgss_tracker.html`: web tracker, open it in your browser (double-click).&#13;
+&#13;
+## How to update&#13;
+&#13;
+1. Delete the old `poke_hgss.apworld` from `custom_worlds`, then add this one (the Launcher's "Install APWorld" does not overwrite an existing file).&#13;
+2. Your YAML keeps working. The new options below are all off by default.&#13;
+3. Generate a new seed.&#13;
+&#13;
+## Highlights&#13;
+&#13;
+- **Logic overhaul.** Every map was walked on the ROM's own collision data (HeartGold and SoulSilver, identical results) and every story lock was checked against the game's scripts: caves, cut trees, boulders, water and story events now ask for exactly what the game needs.&#13;
+- **Items no longer lost**: the count of delivered items now lives in the save, so a reload, a game closed without saving or a battle running when an item arrives no longer loses it.&#13;
+- **Weekday and night events are permanent**, so a check never depends on the day or the hour.&#13;
+- **New quality of life options**, off by default:&#13;
+  - `running_shoes_at_start` and `map_card_at_start`: the Cherrygrove Guide Gent's gifts from the start, useful with a random start;&#13;
+  - `fly_points_at_start`: every Johto town is a Fly destination (not part of the logic);&#13;
+  - `item_received_messages`: "Received X from Bob" on the BizHawk screen.&#13;
+- **Web tracker** redrawn after the game's own Town Map, with in-game icons and Gym Leaders you can tick by hand.&#13;
+&#13;
+## Fixes&#13;
+&#13;
+- Player reports: Clear Bell and Tidal Bell, TM78 "Game Corner JP", items missing from the save, items lost during a battle, the "Bag data looks wrong" message, Jasmine ignoring the Secret Potion, "File hash does not match" with a trimmed US ROM, DeathLink, the Olivine Lighthouse, the Sudowoodo and the Squirtbottle, randomized trainers keeping their old moves.&#13;
+- Radio Tower takeover, Mom at New Bark Town's east shore, `johto_only`, Dexsanity tables, badges found on the ground, Blackthorn Gym's TM59, Super Rod, Coin Case and Basement Key.&#13;
+- Logic loosened where the map allows it: Ice Path B2F and B3F, Monica on Route 40.&#13;
+- Olivine Gym's TM23 and the Department Store B1F Amulet Coin now ask for what the game really needs; the MooMoo Farm checks show as conditional in the trackers.&#13;
+- Patching is about 50 s faster.&#13;
+&#13;
+Full details in `CHANGELOG.md`.&#13;
+&#13;
+## Use of an LLM&#13;
+&#13;
+This project is developed with the help of an LLM. Every change is reviewed, the main files are read, and fixes are tested in game on HeartGold and SoulSilver before release. Details in the README.&#13;
+&#13;
+Thanks You all for your FeedBack !!!! &#13;
+&#13;
+## Next time &#13;
+&#13;
+- `Shop_sanity` : shop will can containt somes Item from Archipelago&#13;
+- Upgrade of `Randomizer_chart_sanity` -&gt; APCheck for each Weakness\Efficiency detecte&#13;
+&#13;
+&#13;
+Have nice day !!!</content>
+    <link href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.8</id>
+    <title>The Legend of Zelda - Oracle of Seasons v26.0.8</title>
+    <updated>2026-10-26T17:08:03+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>## 🗳️ New Options&#13;
+- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
+- Freestanding items can now be removed from the randomizable item pool&#13;
+- The trade sequence can also separately be removed, excluding the pedestal&#13;
+- The linked items can also be removed from the itempool&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+- Made Blaino reequip items after the match&#13;
+  - It is also no longer possible to open the ring menu during the match&#13;
+&#13;
+## 🧠 Logic&#13;
+- Added the jump between market and forge with just a feather and pegs in hard&#13;
+- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
+- Added the need to progress a bit in the game before getting gasha rewards, shop items and maple trade&#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+- Fixed D2's boss room having holes if Digdogger was the boss&#13;
+- Fixed Gleeok freezing when being beaten in D3&#13;
+- Moved the D4 reward when the room was edited for Dodongo&#13;
+- Fixed Ricky crashing if going up to the swamp and trying to leave&#13;
+- Fixed a crash when leaving Subrosia through the village portal room if coming from the Subrosia start&#13;
+- Fixed the 3rd regular shop item's repeatability depending on the first's&#13;
+- Only randomize bosses when boss rando is enabled</content>
+    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.8"/>
   </entry>
 </feed>

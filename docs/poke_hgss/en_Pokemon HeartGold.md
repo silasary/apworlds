@@ -16,6 +16,8 @@
 - Ground items, hidden items, NPC gifts, HMs/TMs, and badge-gated key
   items.
 - Apricorns & Berries.
+- Starters (`randomize_starters`) and the starting town
+  (`randomize_start_location`).
 - Victory condition (Elite Four, Red at Mt. Silver, or a configurable
   number of badges -- your choice, see the YAML options).
 - Optional extras, off by default: trainer level scaling
@@ -45,22 +47,17 @@ Both default to off.
 
 ## Notable Differences from Base Game
 
-- **Starters are not randomized.** Extensive investigation could not
-  locate a patchable source for the vanilla starter species in the ROM --
-  see the project's `docs/architecture.md` for the full write-up. You'll
-  always be offered the vanilla Chikorita/Cyndaquil/Totodile choice.
 - **Both HeartGold and SoulSilver are supported.** Either US ROM can be
   patched, but you must set the `game_version` option to match the ROM
   you actually plan to patch (wild encounters genuinely differ between
   the two versions -- generating with the wrong `game_version` produces
   a patch that refuses to apply to a mismatched ROM rather than silently
   writing the wrong version's data into it).
-- **Gym badges are not randomized.** HGSS represents badges as a
-  save-data flag rather than a bag item, so (unlike some other Pokémon
-  worlds) they can't currently be shuffled into the general item pool --
-  each badge is still earned from its usual gym, in the usual order, and
-  only tracked internally for logic purposes (e.g. gating which HMs you
-  can use in the field).
-- Trainersanity (a check for every trainer battle won) is available as
-  an optional, off-by-default toggle (not yet wired up to real
-  generation/gameplay -- see the project's `docs/scope.md`).
+- **Gym badges are items.** Beating a Leader is a check, and the badge
+  itself can be anywhere in the multiworld. Field moves still need their
+  badge, as in the game.
+- **Optional checks**, off by default: Trainersanity (a check for every
+  trainer battle won) and Dexsanity (a check for every species caught).
+- **Quality of life**, off by default: fast text, battle animations
+  skipped, Running Shoes, Map Card and Johto Fly points from the start,
+  on-screen messages for received items, and more (see the YAML options).

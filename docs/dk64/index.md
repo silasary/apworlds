@@ -6,7 +6,7 @@ Play as the whole DK Crew and rescue the Golden Banana hoard from King K. Rool.
 
 
 ## Downloads
-- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v2.0.2/dk64.apworld">Latest Version (2.0.2)</a>
+- <a href="https://github.com/2dos/DK64-Randomizer-Dev/releases/download/v2.0.3/dk64.apworld">Latest Version (2.0.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

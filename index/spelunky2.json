@@ -1,4 +1,8 @@
 {
+  "authors": [
+    "Eszenn",
+    "DDRKhat"
+  ],
   "description": "Spelunky 2 is an extremely difficult roguelike platformer where your progression is gated by multiworld unlocks.\nYour ultimate goal is to complete one of the game's various paths. Your primary objective is to complete 'checks' by\ndiscovering new journal entries, which sends an item from the multiworld into the item pool. The rewards you receive\ncan range from simple 'filler' items to world unlocks that allow you to progress, as well as key quest-chain items\nlike the Udjat Eye and Hou Yi's Bow. These critical items must be received from the multiworld before you can obtain\nthem in-game.",
   "game": "Spelunky 2",
   "github": "https://github.com/DDR-Khat/Spelunky2-Archipelago",
@@ -195,6 +199,21 @@
       "title": "Spelunky 2 Archipelago v0.4.0",
       "version_simple": "0.4.0",
       "world_version": "0.4.0"
+    },
+    "0.5.0": {
+      "created_at": "2026-10-26T14:12:25Z",
+      "description": "This is an update to both APworld + Client. Huge architectural changes mean that _**ALL**_ previous versions _WILL NOT WORK_.\r\n# What's new\r\n## The game mod itself\r\nThe entire thing has been re-written from the ground-up to make future coding changes far more sustainable and more granular. For a general player, you shouldn't notice almost anything different except for...\r\n## Friendlier locked-out items\r\nHedjet / Crown / Ankh -- previously they would be replaced upon the level loading and getting near them -- now they will \"be replaced\" but still exist safely until you collect it's replacement; This can mean you are just about to pick up that Bomb bag then suddenly it'll become a Crown in time because you receive it from the multiworld!\r\n_(Not YET for the HouYi Bow or Light Arrow, more R&D required)_ \r\n## Deathlink black-listing\r\nJohn Celeste keeps dying and has no Amnesty? Now you can choose to stop accepting deathlinks from them and play in peace!\r\n## \"CO\" goal can now be 7-5\r\nAfter quite some discussion I've been convinced to make this change. One thing to be aware; the goal is that you enter the exit OF your goal level (So a goal of 7-5 means you go through the exit OF 7-5 to meet your goal)\r\n## Deathlink taken into account for logic!\r\nIf you have deathlink on, you are not _logically_ expected to send the \"spikes\" or \"ghost\" journal entries until you have an ankh (or telepack, in the instance of the spikes) -- no deaths needed!\r\n## Some new \"sent location\" icons!\r\nJust a tiny bit of visual feedback adjustments but now there is a graphical distinction between \"useless\" filler, \"helpful\" filler, and \"HELPFUL\" progression.  Thanks again 'activegalacticnuclear' aka 'Ganymede' for these!!\r\n## new \"Must visit world\" setting\r\nFor those that want shortcuts to require not just access, but also having visited them :)\r\n## Receive \"Upgrades\" mid-run!\r\nDuring any run if you receive an upgrade, it'll be granted to you (if it's a normal one) or added to waddler (if it's a waddler one) rather than needing to wait for a new run. This respects your \"journal entry\" and \"locked\" item settings you choose.\r\n## Unknown extras!\r\nDue to how long this has taken there's probably a bunch of other small happy changes I've made and failed to document. Oopsies!\r\n\r\n_**Note:**_ Deathlink messages will refer to a \"WIP message\", it's something I plan to fully address and handle in a future update but this one has taken FAR too long and caused crashes for FAR too long. I needed it out sooner rather than later.\r\n\r\n## Bug Fixes!\r\n- Send deathlinks even though you are already dead _(D'oh!)_\r\n- Boss Doors causing a crash _**ACTUALLY FOR REAL THIS TIME**_\r\n- Broken Sword logic not accounting for access to Clone Gun (who'da thunk you need to actually be able to get it... Oops)\r\n- _ALL_ locked out items being considered \"in logic\" _(I was setting the wrong rule and quietly suppressing an error... ugh)_\r\n- Eggplant being able to send it's check despite not being unlocked\r\n- Probably SEVERAL more\r\n\r\n# Huge thanks and respect to [Eszenn](https://github.com/Eszenn/) for piloting the original implementation, best of wishes to them.\r\n## Big thanks still goes to @cloiss + (discord) ``activegalacticnucleus`` for their contributions to 0.3.0\r\n\r\n# [Installation Steps here](https://github.com/DDR-Khat/Spelunky2-Archipelago?tab=readme-ov-file#installation-instructions)",
+      "download_url": "https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/download/0.5.0/spelunky2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ceff35de1729f4e990a90636f251888afb23752623acb65bba30dabb2c13fedb",
+      "html_url": "https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/tag/0.5.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 22095,
+      "source_url": "https://api.github.com/repos/DDR-Khat/Spelunky2-Archipelago",
+      "tag": "0.5.0",
+      "title": "Spelunky 2 Archipelago v0.5.0",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
     },
     "3.5": {
       "created_at": "2025-09-30T22:29:40Z",
