@@ -2,145 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-26T00:28:10.185553+00:00</updated>
+  <updated>2026-10-26T06:19:27.776522+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.7</id>
-    <title>DUSK v0.4.7</title>
-    <updated>2026-10-22T22:59:28+00:00</updated>
-    <author>
-      <name>FlapjackRetro</name>
-    </author>
-    <content>## New&#13;
-- randomize_flashlights option (off by default): the Flashlight pickups in E2M4, E2M8 and E3M4 now stay normal Flashlights, so dark levels like E3M4 can be completed normally. Turn the option on, with randomize_powerups, to make them checks again.&#13;
-## Changes&#13;
-More key logic:&#13;
-- E1M9 and E3M7 now have mapped key rules, so checks that don’t need keys are in logic without them.&#13;
-- E3M1’s Super Shotgun now needs the Blue and Red keys plus either the Mortar or the Riveter.&#13;
-## Notes&#13;
-- Update dusk.apworld. The mod ZIP only changes version number.&#13;
-- With default options, the three Flashlight checks are gone. If your YAML lists them by name (for example in exclude_locations), remove them or turn on randomize_flashlights.</content>
-    <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release1.4.1</id>
-    <title>Scooby-Doo! Night of 100 Frights v1.4.1</title>
-    <updated>2026-10-23T01:26:43+00:00</updated>
-    <author>
-      <name>vgm5</name>
-    </author>
-    <content># Bugfix Release&#13;
-&#13;
-## Knight 2 Logic Fix&#13;
-- Fixes an issue where if Keys were set to Vanilla an warps were random, backwards navigation would be in logic without any additional items besides knight warp</content>
-    <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release1.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/tag/v0.1.5</id>
-    <title>Pokemon XD Gale of Darkness v0.1.6</title>
-    <updated>2026-10-23T01:55:13+00:00</updated>
-    <author>
-      <name>GiovanavoiG</name>
-    </author>
-    <content>## New options&#13;
-- **Poke Spot Catch Checks** (On): turn it off to remove the "Catch –" checks for Pokemon found wild only at the Poke Spots. The spots still have their Pokemon.&#13;
-- **Mt. Battle Progression Checks** (0): with Exclude Mt. Battle Trainers off, each Mt. Battle trainer from 4 to 100 is a check. This many of them, counting from the first, can hold progression. The rest hold filler.&#13;
-- **Map Shows Trainer Levels** (On): the world map shows each place's trainer level on your first visit&#13;
-- **Single Master Ball** (On): turn it off to let extra Master Balls be in the filler pool&#13;
-- **Filler Weight: Master Ball** (0): weight for master balls if single master ball is off&#13;
-- **All Pokemon Learn All TMs** (Off): every Pokemon can learn every TM.&#13;
-- **Shadow Move TMs** (0): this many random TMs (up to 18) teach a Shadow move instead, each a different one.&#13;
-- **Start With Miror Radar and Poke Spots** (Off): start with the Miror Radar and the Poke Spots' unlock. Logic treats the Poke Spots, Miror B. and Shadow catches as open from the start. Needs Location Shuffle; with it off, this option is turned off.&#13;
-- **Missable Trainer Shadows** (Off): Shadows can also go on missable one-time trainers, whose checks are sent for you when their area is done. A Shadow you don't beat/catch goes to Miror B. Their catch checks never hold progression.&#13;
-&#13;
-## Checks&#13;
-### Added&#13;
-- **Gateon Port – Perr's Machine Part.** Sent when the story reaches Perr's scene at the parts shop, or once the story moves past it. It can hold progression.&#13;
-- **Mt. Battle – Defeat (trainer)**: 97 checks for trainers 4–100. They exist only in unique trainer-defeat mode with Exclude Mt. Battle Trainers off.&#13;
-### Removed&#13;
-- **Numbered rematch checks.** Rematch fights no longer get their own "Defeat X #N" checks, except Naps #2, Smarton #2, Snattle #2, Gorigan #2 and Lovrina #2. Every "Defeat X (Any)" check stays.&#13;
-- **Kaminko Crane Room Chest 2.** It shares a flag with Chest 1, so the game can't hand out a second item from it.&#13;
-&#13;
-## Logic&#13;
-- **Miror B. #2** is fought at the Outskirt Stand. "Defeat Miror B. (Any)" counts if you can reach the Poke Spots or the Outskirt Stand.&#13;
-- **Aferd, Laken and Hebon** are fixed and can hold progression, since they always battle when talked to.&#13;
-- **Missable one-time trainers the client sends for you** can hold progression too. With Missable Trainer Shadows on, they can also carry Shadows.&#13;
-- **Krane Memos 1–5** are all in the HQ Lab. Memos 3–5 need the Machine Part, or the Cipher Lab cleared with the Data ROM &amp; ID Card.&#13;
-- **Acrod** is behind the System Lever.&#13;
-- **Ibsol, Jelstin and Fudler** are sent once Gorigan is defeated. They used to be sent the moment you entered the Key Lair.&#13;
-- **The Sixes' Shadows are only at the Cipher Lab.** At Phenac, that slot is an ordinary Pokemon of the same species.&#13;
-- **Fuzzer fix** for Location Shuffle seeds. ([#17](&lt;https://github.com/GiovanavoiG/PokemonXD_Archipelago/issues/17&gt;))&#13;
-&#13;
-## Shadow Pokemon&#13;
-- **At most two Shadow moves.** Some late-game Shadows (Lugia, the birds, Citadark's) used to keep three or four after being randomized or moved.&#13;
-- **Every Shadow purifies normally, Lugia included.** &#13;
-- **Catch rates**&#13;
-  - A randomized or swapped Shadow uses its new species' catch rate. A Lugia placed elsewhere is rate 3, then scaled by your settings.&#13;
-  - Catch Rate Scaling now reaches every Shadow.&#13;
-  - With Max Catch Rate on, the patcher checks that every Shadow ended up at 255.&#13;
-- **Missable Trainer Shadows** (new option, off by default)&#13;
-  - When the trainer's area is done and its Shadow was never snagged, the client hands it to Miror B. and prints "X sent to Miror B. from a missable trainer."&#13;
-  - Miror B. brings two Shadows at once at the Poke Spots whenever two or more are waiting. Normally that only happens at seven waiting.&#13;
-  - `/missableshadows` lists them and what has been sent.&#13;
-- **Shadow catches are also read from the Shadow Monitor**, so a snagged Shadow counts wherever it went afterwards.&#13;
-- **Miror B.'s Cave Poke Spot Shadow can't be lost.** In the vanilla game, losing that fight means you never meet it again. Now the client hands it to Miror B.'s pool once the story is past it.&#13;
-- **Purifications are also read from the save's Shadow table.** A Shadow purified in the chamber, moved out of your party, or purified while the client was disconnected still counts, and never twice.&#13;
-&#13;
-## NPCs&#13;
-- **Aferd, Laken and Hebon always battle when talked to.** Their teams still follow the story&#13;
-- **The Agate move tutor** offers all twelve moves from the start.&#13;
-&#13;
-## Poke Spots&#13;
-- **All five Pokemon in a Poke Spotare equally likely**, about 20% each. That's its three regulars plus the two shared rare visitors.&#13;
-- **Wild catch hints** name the spot, e.g. "Cave Spot", or "Rock Spot, Oasis Spot or Cave Spot (rare visitor)". `/catches` shows the same.&#13;
-- **Stuck spots fixed.** Whiting out at a spot could leave a flag set that stops it spawning. The client now clears that flag once you've left.&#13;
-&#13;
-## Story and travel&#13;
-- **HQ Lab memo hold** only holds the lab at the Krane Memo 3–5 step. Gateon's first visit, Perr's scene and the early Machine Part turn-in now play normally.&#13;
-- **Location Shuffle:** "Unlock – Realgam Tower" is sent the first time you stand in Phenac City. The HQ Lab moves on to the Purify Chamber scene after the Cipher Lab is cleared.&#13;
-&#13;
-## Escape Rope&#13;
-- **Always in your Key Items.** Use it from the Bag and you go straight to the world map.&#13;
-- ⚠️ Using it mid-story (a cutscene area, the SS Libra, Citadark Isle) can leave the story somewhere it doesn't expect. **Save first.**&#13;
-&#13;
-## Client&#13;
-- **No lost checks on a bad connection.** Checks found while the connection is down are re-sent until the server confirms them. Chests will likely still fail while disconnected.&#13;
-- **`/animations on|off`** turns move animations on or off on any patched ISO. The choice is remembered per slot.&#13;
-- **Saving over an older file no longer sends checks or completes your goal.** The client waits for the save data to settle before reading the story or travel record.&#13;
-- **`/pokespots`** shows each spot's snacks, waiting Pokemon, Miror B.'s location and more.&#13;
-- **Slot data carries every YAML option**, for trackers.&#13;
-&#13;
-## Patching&#13;
-- **A missing file extension is added back.** If you forget the .iso/.ciso when naming your copy, the source disc's extension is used.&#13;
-&#13;
-## Trainers and movesets&#13;
-- **Nightmare Greevil now replaces his real final battle.** It used to change only his post-game rematch, so the goal fight kept a normal randomized team.&#13;
-- **Trade Evolutions By Level** - Feebas upon reaching age 30 will strive towards beauty and grow into a big weird water snake fish eel.&#13;
-- **The Candy Box works in every seed.** You can getitem 99 candy boxes regardless of options.&#13;
-- **Icy Wind** shows up about half as often in trainer movesets.&#13;
-&#13;
-## For tracker authors&#13;
-- Slot data includes every option that decides which locations exist or what logic needs, plus `purification_location_count`.&#13;
-- The client writes the current room id and area name to Data Storage on every room change. The keys are `pokemon_xd_room_{team}_{slot}` and `pokemon_xd_area_{team}_{slot}`, which slot data names as `room_id_key` and `room_area_key`.&#13;
-&#13;
-&#13;
-## Known Issues&#13;
-- Rock spot is mean and breaks sometimes on location shuffle. Please report any findings.</content>
-    <link href="https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/tag/v0.1.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.1.2</id>
-    <title>Mina The Hollower v1.1.1r2</title>
-    <updated>2026-10-23T04:52:36+00:00</updated>
-    <author>
-      <name>FyreDay, Axertin, ZXavier</name>
-    </author>
-    <content>- Update compatibility to the latest UT version</content>
-    <link href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/tag/v1.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Levisaxos/Archipelago_GemcraftFrostbornWrath/releases/tag/v0.0.6.4</id>
     <title>GemCraft: Frostborn Wrath v0.6.2r2</title>
@@ -1697,5 +1563,87 @@ This version is backwards compatible back to 0.5.0. There are some features of t
 - Various logic tweaks&#13;
 - Various bug fixes</content>
     <link href="https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/tag/v0.3.0-hotfix</id>
+    <title>Marble It Up! Ultra v0.3.0r2</title>
+    <updated>2026-10-26T00:12:42+00:00</updated>
+    <author>
+      <name>KitLemonfoot</name>
+    </author>
+    <author>
+      <name>thearst3rd</name>
+    </author>
+    <content>*This is a client-only update. Multiworlds generated on v0.3.0 will still function.*&#13;
+&#13;
+**CLIENT:** Fixed an issue with items not appearing after re-connecting to a game.&#13;
+**CLIENT:** Updated the build system to use ILRepack.&#13;
+**CLIENT:** Handle server disconnection better. If you lose connection to the server, the client will automatically disconnect and you will be sent back to the main menu.&#13;
+**CLIENT:** Messages will now appear for server countdowns and recieved hints.&#13;
+&#13;
+**NOTE:** If you are upgrading from a previous version, *you will need to fully reinstall the mod.* You can do this by deleting the ArchipelagoMIUU folder in `Marble It Up!/Mods/` folder, then extracting the contents of `ArchipelagoMIUU_v0.3.0-hotfix.zip` to the `Mods` folder.</content>
+    <link href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/tag/v0.3.0-hotfix"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.10.25</id>
+    <title>Northgard v2026.10.25</title>
+    <updated>2026-10-26T01:52:54+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Fixed&#13;
+- Playing more than one Northgard slot in the same seed (e.g. a solo run and a co-op run) no longer mixes up your saves. Each slot now remembers its own Conquest save. (Thank you Aeros Valos! ❤️)&#13;
+- In co-op, every player now gets resources like "100 Food", not just the host.&#13;
+&#13;
+### Changed&#13;
+- **After updating, run `/conquest` once per slot** to pick your save again.&#13;
+- `/conquest` now numbers saves starting from 1.&#13;
+- The client now updates the Northgard patch by itself whenever a new version needs it.&#13;
+&#13;
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.09.14...2026.10.25&#13;
+</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.10.25"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.11</id>
+    <title>Stardew Valley v8.1.10r2</title>
+    <updated>2026-10-26T03:00:41+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Apworld&#13;
+- Fixed an issue where slimes from the slime hutch were considered valid sources of monster compendium&#13;
+- Added a mines requirement to the logic rules of ancient seed&#13;
+- Fixed several issues with the volcano exit shortcut in ER&#13;
+&#13;
+## Mod&#13;
+- Reduced the weight of Emily's "Say Hello" quest on the board (from 1/10th of your villagers to 1/15th of your villagers)&#13;
+- Fixed an issue where some chaos entrances would fail to match up with each other due to the ` Exit` syntax&#13;
+- Fixed a formatting error in the gateway gazette episodes&#13;
+- Allowed the player to fix their body odor issues&#13;
+- Fixed purchases at Clint that have more than one extra material not benefitting from cheaper prices&#13;
+- Fixed issues where the volcano exit shortcut would not get ERed properly</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.11"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.17.2</id>
+    <title>Brotato v0.17.2</title>
+    <updated>2026-10-26T05:34:18+00:00</updated>
+    <author>
+      <name>Rampaging Hippy</name>
+    </author>
+    <content>## Changed&#13;
+&#13;
+- Enabling more logging for character unlock events.</content>
+    <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.17.2"/>
   </entry>
 </feed>

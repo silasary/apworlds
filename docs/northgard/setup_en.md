@@ -22,10 +22,11 @@
    start a new one now -- every Chapter will show as locked until you pin the save in the
    next step.
 8. Run `/conquest` in the client to see your in-progress Conquest saves and pick the one
-   for this playthrough with e.g. `/conquest 1`. This is remembered per Archipelago room,
-   so running more than one room at once (each with its own client) doesn't mix up which
-   save belongs to which. Any items you've already received unlock within a few seconds
-   of pinning, live in-game -- no need to back out of the map screen or relaunch anything.
+   for this playthrough with e.g. `/conquest 1`. This is remembered per slot in each
+   Archipelago room, so playing more than one Northgard slot (in the same seed or in
+   different rooms) doesn't mix up which save belongs to which. Any items you've already
+   received unlock within a few seconds of pinning, live in-game, with no need to back out
+   of the map screen or relaunch anything.
 9. Leave the client running in the background while you play -- it watches your pinned
    Northgard save directly; you don't need to manually report anything in-game.
 
