@@ -36,3 +36,20 @@ next time you are walking around in a story file. That is also when the short it
 
 EXP Bundles are saved up on the story file. Open Char/Partner Data from the pause menu to receive them and level up
 straight away; any still saved up are awarded the next time you continue that file.
+
+## DeathLink
+
+DeathLink has separate settings for what you send and what you receive, each `off`, `point`, `game` or `match`.
+
+- **Sending:** a death goes out when you lose at least that much in a story or exhibition match, or Two-on-One: a
+  point, a game, or the match. Losing a match point is still only one death. A failed mini-game or drill counts as a
+  lost match, and a failed drill point as a lost point. Quitting doesn't count, and neither does a high-score run.
+- **Receiving:** in a match, a death from another player costs you the current point, game or match. For a game or
+  the match, the score jumps so that one point decides it; a game lost in a tiebreak also loses the set. Any death
+  ends a mini-game or drill at once as failed; a high-score run already past its record ends as a high score. Outside
+  a match, mini-game or drill, deaths are ignored, and they are never sent back out. If two carts play the same slot,
+  each one's deaths reach the other.
+
+The settings in your options are where you start. Change them while playing with the client commands
+`/deathlink_send <off|point|game|match>` and `/deathlink_receive <off|point|game|match>`; with no argument they show
+the current setting. Changes are kept on the server for your slot.

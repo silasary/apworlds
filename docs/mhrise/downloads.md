@@ -1,9 +1,15 @@
 # Monster Hunter Rise
 
 ## Latest
-- <a href="https://github.com/LittleLudroth/MHRise-APWorld/releases/download/v0.5.0/mhrise.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/LittleLudroth/MHRise-APWorld/releases/download/v0.5.2/mhrise.apworld">Latest Version (0.5.2)</a>
 
 ## All Versions
+
+#### v0.5.2
+- <a href="https://github.com/LittleLudroth/MHRise-APWorld/releases/download/v0.5.2/mhrise.apworld">https://github.com/LittleLudroth/MHRise-APWorld/releases/download/v0.5.2/mhrise.apworld</a>
+
+#### v0.5.1
+- <a href="https://github.com/LittleLudroth/MHRise-APWorld/releases/download/v0.5.1/mhrise.apworld">https://github.com/LittleLudroth/MHRise-APWorld/releases/download/v0.5.1/mhrise.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/LittleLudroth/MHRise-APWorld/releases/download/v0.5.0/mhrise.apworld">https://github.com/LittleLudroth/MHRise-APWorld/releases/download/v0.5.0/mhrise.apworld</a>

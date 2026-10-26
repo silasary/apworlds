@@ -1,9 +1,12 @@
-# None
+# Bloodstained: Ritual of the Night
 
 ## Latest
-- <a href="https://github.com/vgfreak95/BloodstainedAP/releases/download/1.0.5/bloodstained_rotn.apworld">Latest Version (1.0.5)</a>
+- <a href="https://github.com/vgfreak95/BloodstainedAP/releases/download/1.1.1/bloodstained_rotn.apworld">Latest Version (1.1.1)</a>
 
 ## All Versions
+
+#### v1.1.1
+- <a href="https://github.com/vgfreak95/BloodstainedAP/releases/download/1.1.1/bloodstained_rotn.apworld">https://github.com/vgfreak95/BloodstainedAP/releases/download/1.1.1/bloodstained_rotn.apworld</a>
 
 #### v1.0.5
 - <a href="https://github.com/vgfreak95/BloodstainedAP/releases/download/1.0.5/bloodstained_rotn.apworld">https://github.com/vgfreak95/BloodstainedAP/releases/download/1.0.5/bloodstained_rotn.apworld</a>

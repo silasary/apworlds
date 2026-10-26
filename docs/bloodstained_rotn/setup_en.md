@@ -1,55 +1,58 @@
-# Bloodstained Randomizer Setup Guide
+# Bloodstained Archipelago Setup Guide
 
-## Required Software
+## Requirements
 
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
-- [The Bloodstained AP World](https://github.com/vgfreak95/BloodstainedAP/releases/latest)
-- [Lakifume's True Randomizer](https://github.com/Lakifume/True-Randomization/releases/latest)
-- [Bloodstained Modding SDK](https://github.com/vgfreak95/BloodstainedModdingSDK/releases/latest)
+- Bloodstained: Ritual of the Night for Windows
+- [Archipelago 0.6.7 or newer](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
+- The Bloodstained AP 1.1.0 release bundle
 
-## Terms for File locations
-- Game Shipping Directory = steamapps\common\Bloodstained Ritual of the Night\BloodstainedRotN\Binaries\Win64
+True Randomizer, .NET, and UE4SS are no longer required. The release includes one pinned, seed-independent
+`BloodstainedAP.pak` for all supported slots and difficulties.
 
-## How to play
-First, you need a room to connect to. For this, you or someone you know has to generate a game.  
-This will not be explained here,
-but you can check the [Archipelago Setup Guide](/tutorial/Archipelago/setup_en#generating-a-game).
+Paid DLC is not part of the world or item pool. Content distributed for free is included even when Bloodstained's
+internal data marks it as DLC; this includes the Shantae crossover update.
 
-You also need to have [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest) installed
-and the [The Bloodstained AP World](https://github.com/vgfreak95/BloodstainedAP/releases/latest) installed into Archipelago.
+## Install the APWorld
 
-Next there are two different ways to host the world. Whether you choose to host it locally or on the webhost, instructions are still the same.
+Open `Archipelago/bloodstained_rotn.apworld` from the release bundle with Archipelago's **Install APWorld**
+command.
 
-## Setup for True Randomizer
-1. Download [Lakifume's True Randomizer](https://github.com/Lakifume/True-Randomization/releases/latest).
-2. Open Data/config.ini and find [Archipelago] and change bEnable from false to true.
-3. Extract the zip file and find the Randomizer.exe file.
+## Install the game client
 
-## Using the True Randomizer
-1. Open the True Randomizer by double-clicking `Randomizer.exe`, and in the bottom left, select Empty preset.
-2. Check `Overworld Pool` and change the Game Difficulty in the bottom left. Optionally in Graphic Randomization select `Outfit Color`.
-3. Press the Generate button. Generating adds AP specific assets into the game which the AP Mod reads from.
-Note: Applying these fixes will make enemies drop random shards including progression, if it happens that's not intended progression, read bottom
-of page for more information.
+The game installation folder is the folder containing `BloodstainedRotN`.
 
-## Setup for the Bloodstained AP Client
-1. Download [Bloodstained Modding SDK](https://github.com/vgfreak95/BloodstainedModdingSDK/releases/latest) `version.dll`.
-2. Navigate the File Explorer to your `Game Shipping Directory` (see Terms), and drag `version.dll` into the directory.
-3. Still inside `Game Shipping Directory` ensure `UE4SS.dll`, `dwmapi.dll`, and `version.dll` is in the directory.
-5. In the Game Shipping Directory, open `UE4SS-settings.ini` in notepad or equivalent and change the [Debug] section to be exactly like this:
-```
-[Debug]
-; Whether to enable the external UE4SS debug console.
-ConsoleEnabled = 0
-GuiConsoleEnabled = 0
-GuiConsoleVisible = 0
-```
-5. Launch game and load a new save file, once loaded, press `F5` to open ImGui window. Note: You cannot connect to AP in the title the gui won't let you!
-6. In game, ensure minimap has green outline box. This means the compatibility between UE4SS and the AP Client are correct.
-7. Insert the correct archipelago slot information and press connect!
+1. Copy everything inside the bundle's `Game` folder into the game installation folder, preserving the folder
+   structure.
+2. Remove `BloodstainedRotN/Content/Paks/~mods/Randomizer.pak` if it exists. The old generated pak conflicts with
+   `BloodstainedAP.pak`.
+3. Remove the old AP `version.dll` proxy from
+   `BloodstainedRotN/Binaries/Win64` if it exists. The included `winhttp.dll` is the loader; the AP client itself
+   is `plugins/BloodstainedAP.asi`.
+4. Launch the game and start a **new story save**. Bloodstained AP saves from before 1.1.0 are intentionally rejected.
+5. Press `F5` after loading the save, enter the server, slot, and password, then select **Connect**.
 
-## Important Things To Note
-- Enemies and Shards are CURRENTLY NOT SUPPORTED. If you receive a duplicate shard, that is expected behavior. The required logic shards are in the item pool
-so even if you get duplicate shards by defeating bosses, any shards collected from defeating bosses aren't intended, so please do not use them for a fair
-game to ensure true completion.
-- Please report any crashes, as this software is still in its early beta stages.
+The title screen reports whether the exact 1.1.0 pak is installed and whether a legacy `Randomizer.pak` conflicts
+with it.
+
+## Difficulty
+
+Normal, Hard, and Nightmare use the same static pak. Select the intended difficulty in the YAML before generating the
+multiworld, then create the story save on that same difficulty. The client rejects a mismatch rather than silently
+using the wrong logic.
+
+## Tracking and item behavior
+
+- Reachable rooms retain the game's native explored/unexplored map shading.
+- Chests, breakable walls, and shard-room hints are Unreal UI widgets inside the native main-map/minimap hierarchy.
+  They therefore follow native clipping, fades, warp effects, HUD scaling, and z-order.
+- A physical chest may contain multiple AP checks. Its marker remains until all checks assigned to that physical chest
+  are complete.
+- Ordinary enemy drops are shuffled by the client from the room seed name and slot ID. Corresponding slots on
+  different racing teams receive the same drops.
+- Every item available from a vanilla or included-free-content enemy drop remains assigned to at least one enemy.
+
+## Troubleshooting
+
+The client log is written to
+`%LOCALAPPDATA%/BloodstainedRotN/Saved/Logs/BloodstainedAP.log`. Include it with the matching Archipelago server log
+when reporting connection, item, or location-check problems.

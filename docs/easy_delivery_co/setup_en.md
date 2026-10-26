@@ -5,7 +5,7 @@
 - [Easy Delivery Co.](https://store.steampowered.com/app/3293010/Easy_Delivery_Co/) for PC
 - [Easy Delivery Co. Randomizer Mod](https://github.com/Aeromaze/Archipelago/releases)
 - [BepInEx 5.4.23.4 (win_x64)](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.4)
-- [Easy Deliver API](https://github.com/foxfoxfoxgay/EasyDeliveryAPI/releases/tag/1.0.0)
+- [Easy Delivery API](https://github.com/foxliveswin/EasyDeliveryAPI/releases/tag/1.0.0)
 
 ## Optional Software
 - [Archipelago Text Client](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
@@ -35,12 +35,12 @@ Launch the game once and close it to finish the BepInEx installation.
 
 ### Install The Easy Delivery Co. Randomizer Mod
 
-Download the latest release of the [Easy Delivery Mod](https://github.com/Aeromaze/Archipelago/releases) and the latest release of the [Easy Deliver API](https://github.com/foxfoxfoxgay/EasyDeliveryAPI/releases/tag/1.0.0).
+Download the latest release of the [Easy Delivery Randomizer Mod](https://github.com/Aeromaze/Archipelago/releases) and the latest release of [Easy Delivery API](https://github.com/foxliveswin/EasyDeliveryAPI/releases/tag/1.0.0).
 
 Extract the contents of the downloaded .zip files, and find the folders labeled EasyDeliveryAP and BepInEx
 
 Copy the `EasyDeliveryAP` folder into `BepInEx/plugins` in your Easy Delivery Co. game installation directory.
-Copy the `BepInEx` folder into your Easy Delivery Co. game installation directory.
+Copy the `BepInEx` folder from `EasyDeliveryAPI.zip` into your Easy Delivery Co. game installation directory.
 
 The filepath to the mode should look like `BepInEx/plugins/EasyDeliveryAP/EasyDeliveryAP.dll`<br>
 

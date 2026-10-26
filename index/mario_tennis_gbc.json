@@ -37,9 +37,24 @@
       "size": 36163,
       "source_url": "https://api.github.com/repos/gerbiljames/mario-tennis-gbc-disasm",
       "tag": "apworld-v0.2.0",
-      "title": "apworld-v0.2.0",
+      "title": "Mario Tennis GBC apworld v0.2.0",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "apworld-v0.3.0": {
+      "created_at": "2026-10-25T21:48:49Z",
+      "description": "## New options\n\n- **DeathLink**, as two independent options, both off by default. You can change either while playing with the client's `/deathlink_send` and `/deathlink_receive` commands.\n  - **`death_link_send`** (off, point, game or match): the smallest loss that sends a death.\n    - A lost match point is still only one death.\n    - A failed mini-game or drill counts as a lost match, and a failed drill point as a lost point.\n  - **`death_link_receive`** (off, point, game or match): what a received death costs you in a match.\n    - A lost game in a tiebreak takes the set with it.\n    - Any death ends a mini-game or drill as failed. The exception is a high-score run already past its record, which ends as a high score.\n    - Deaths that arrive outside a match, mini-game or drill are ignored.\n  - Two-on-One counts as a match for both options.\n- **`court_shuffle`** (default vanilla): the courts story matches are played on.\n  - **Shuffled:** the story's own courts are dealt out between its matches, so each court is played as often as usual, in different matches.\n  - **Randomized:** every match picks its own court from the nine exhibition courts and Center Court.\n- **`opponent_strategy`** (default vanilla): where singles story opponents stand and move. In the original game every one of them uses the same adaptive positioning.\n  - **Randomized:** each singles match's opponent gets one of the game's eight positioning strategies, such as staying back at the baseline, sliding sideways or rushing the net.\n  - Their skill is unchanged.\n  - Doubles opponents always keep their usual positioning.\n\n## Logic\n\nWith `shot_items` on, three drills now strictly need a shot instead of counting as glitched logic without it:\n\n- **Net Game Lesson 2** needs the smash.\n- **Stroke Match 2** needs the lob.\n- **Net Game Match 2** needs the smash. Clearing it without the lob is still glitched logic.\n\nThere are still 88 locations.\n",
+      "download_url": "https://github.com/gerbiljames/mario-tennis-gbc-disasm/releases/download/apworld-v0.3.0/mario_tennis_gbc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e03d9bb5a1bc02148a40d402852c82aa3c6888df0ab3519577c9165d27f89ce1",
+      "html_url": "https://github.com/gerbiljames/mario-tennis-gbc-disasm/releases/tag/apworld-v0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 44897,
+      "source_url": "https://api.github.com/repos/gerbiljames/mario-tennis-gbc-disasm",
+      "tag": "apworld-v0.3.0",
+      "title": "Mario Tennis GBC apworld v0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

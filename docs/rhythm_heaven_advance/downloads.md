@@ -1,9 +1,12 @@
 # Rhythm Heaven Advance
 
 ## Latest
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/rha-v1.0.2/rhythm_heaven_advance.apworld">Latest Version (1.0.2)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/rha-v1.1.0/rhythm_heaven_advance.apworld">Latest Version (1.1.0)</a>
 
 ## All Versions
+
+#### v1.1.0
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/rha-v1.1.0/rhythm_heaven_advance.apworld">https://github.com/TheLX5/Archipelago/releases/download/rha-v1.1.0/rhythm_heaven_advance.apworld</a>
 
 #### v1.0.2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/rha-v1.0.2/rhythm_heaven_advance.apworld">https://github.com/TheLX5/Archipelago/releases/download/rha-v1.0.2/rhythm_heaven_advance.apworld</a>
