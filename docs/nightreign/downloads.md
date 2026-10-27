@@ -1,9 +1,12 @@
 # Elden Ring Nightreign
 
 ## Latest
-- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.8/nightreign.apworld">Latest Version (0.4.7)</a>
+- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.9/nightreign.apworld">Latest Version (0.4.7r2)</a>
 
 ## All Versions
+
+#### v0.4.7r2
+- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.9/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.9/nightreign.apworld</a>
 
 #### v0.4.7
 - <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.8/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.8/nightreign.apworld</a>
@@ -30,7 +33,7 @@
 - <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.5/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.5/nightreign.apworld</a>
 
 #### v0.3.2r3
-- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.1/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.1/nightreign.apworld</a>
+- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.0/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.0/nightreign.apworld</a>
 
 #### v0.3.2r2
 - <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.3/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.3/nightreign.apworld</a>
@@ -39,7 +42,7 @@
 - <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.4/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.4/nightreign.apworld</a>
 
 #### v0.3.2r2
-- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.0/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.0/nightreign.apworld</a>
+- <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.1/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.4.1/nightreign.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.2/nightreign.apworld">https://github.com/jacksonstubblefield/nightreign-ap/releases/download/v0.3.2/nightreign.apworld</a>

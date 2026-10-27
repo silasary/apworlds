@@ -2,127 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-27T00:28:06.523651+00:00</updated>
+  <updated>2026-10-27T06:19:30.634345+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.8</id>
-    <title>DUSK v0.4.8</title>
-    <updated>2026-10-23T23:43:55+00:00</updated>
-    <author>
-      <name>FlapjackRetro</name>
-    </author>
-    <content>## New&#13;
-- CHECKS row on the level map (#53): hovering a level now shows how many of its checks you’ve found in this seed, e.g. 12 / 31, under KEYS. It turns green once they’re all done.&#13;
-## Fixes&#13;
-- Secret exits completed the wrong level (#52): leaving a level by a secret exit, or finishing a secret level, sometimes sent another level’s Level Complete check. That other level didn’t need to have been played. Affected:&#13;
--- E3M4’s secret exit (sent E3M10)&#13;
--- E2M4’s secret exit (sent E2M10)&#13;
--- the exits of E1MS, E2MS and E3MS (sent E1M2, E2M4 and E3M4)&#13;
-- The win screen now credits the level you actually played.&#13;
-## Notes&#13;
-- Update the mod ZIP. Both changes are in the mod; dusk.apworld only changes version number.</content>
-    <link href="https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.3</id>
-    <title>The Legend of Zelda - Oracle of Seasons v26.0.3</title>
-    <updated>2026-10-24T00:41:05+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>## 🗳️ New Options&#13;
-- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
-- Freestanding items can now be removed from the randomizable item pool&#13;
-- The trade sequence can also separately be removed, excluding the pedestal&#13;
-- The linked items can also be removed from the itempool&#13;
-&#13;
-## ⏫ Miscellaneous Improvements&#13;
-- Made Blaino reequip items after the match&#13;
-  - It is also no longer possible to open the ring menu during the match&#13;
-&#13;
-## 🧠 Logic&#13;
-- Added the jump between market and forge with just a feather and pegs in hard&#13;
-- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
-- Added the need to progress a bit in the game before getting gasha rewards, shop items and maple trade&#13;
-&#13;
-## 🛠️ Bugfixes&#13;
-- Fixed D2's boss room having holes if Digdogger was the boss&#13;
-- Fixed Gleeok freezing when being beaten in D3&#13;
-- Moved the D4 reward when the room was edited for Dodongo&#13;
-- Fixed Ricky crashing if going up to the swamp and trying to leave&#13;
-- Fixed a crash when leaving Subrosia through the village portal room if coming from the Subrosia start&#13;
-- Fixed the 3rd regular shop item's repeatability depending on the first's</content>
-    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.7</id>
-    <title>Ratchet &amp; Clank: Size Matters v0.5.7</title>
-    <updated>2026-10-24T02:31:10+00:00</updated>
-    <author>
-      <name>Pangu</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <author>
-      <name>ImJustATester</name>
-    </author>
-    <content>## Installation &amp; Setup
-
-- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.
-- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.
-- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.
-- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.
-- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)
-- Click **Generate** to create a multiworld `.zip` in the `output` folder.
-- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.
-- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).
-- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.
-- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2
-
-
-
-## Changelog
-
-- fix(SM): removed mini-gun turret as a location as was broken on EU and JP release, /skin_patch cmd and some other fixes and rule changes (4f5411af)
-- fix(SM): refactor imports and update rules (fa0bc149)
-- feat(SM): add in HIG treehouse locations (dd501410)
-- fix(SM): rule builder tidy up, infobot inside clank, dreamtime, outpost omega 1 are created, currently only event items for time being (5a86930a)
-- Update setup_en.md (122464c1)
-- chore(SM): update ai disclosure document (76948c34)
-- fix(SM): ng+ items not including armour sets (c2f7e3ff)
-- fix(SM): move logic to seperate process so client should have no reason to freeze (24361184)
-- fix(SM): added glitch rule to first grindrail section in kalidon if player has shrink ray (2bb8f9f0)
-- fix(SM): added skin patch on and off command in case skin related issues pop up mid run (1f93a0ca)
-
-Full comparison:
-https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.6...rac_size_matters-v0.5.7</content>
-    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Phenra/RoadTripAdventure-AP/releases/tag/v0.3.1</id>
-    <title>Road Trip Adventure v0.3.1</title>
-    <updated>2026-10-24T02:59:16+00:00</updated>
-    <author>
-      <name>Phenra</name>
-    </author>
-    <content>**Randomizer info page:**&#13;
-https://github.com/Phenra/RoadTripAdventure-AP/blob/main/docs/en_Road%20Trip%20Adventure.md&#13;
-**Setup guide:**&#13;
-https://github.com/Phenra/RoadTripAdventure-AP/blob/main/docs/setup_en.md&#13;
-&#13;
-### Bug fixes:&#13;
-- Added missing item and location for Body Q031 (Klien)&#13;
-- Fixed two flipped Q coin names in White Mountain ("Behind House with Bell on Hill" and "Next to Ski Jump Building")&#13;
-- Fixed access rules for Stamp 81 and Jet Turbine differing</content>
-    <link href="https://github.com/Phenra/RoadTripAdventure-AP/releases/tag/v0.3.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.5.8</id>
     <title>Ratchet &amp; Clank: Size Matters v0.5.8</title>
@@ -1544,5 +1428,77 @@ Report bugs either on the [Discord Channel](https://discord.com/channels/7312053
 
 This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
     <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.4</id>
+    <title>Chrono Trigger Rando-Dalton Imperial v0.0.4</title>
+    <updated>2026-10-27T00:54:30+00:00</updated>
+    <author>
+      <name>Pseudoarc</name>
+    </author>
+    <author>
+      <name>Anguirel</name>
+    </author>
+    <content>Package the ctrando library inside of the apworld. No more need for a separate library zip.&#13;
+Fixed create_item issue causing errors in Universal Tracker&#13;
+&#13;
+ctrando fixes:&#13;
+Fixed bronze fist policy causing a crash when "remove" was selected.</content>
+    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.3.2</id>
+    <title>Starship Titanic v0.3.2</title>
+    <updated>2026-10-27T00:57:45+00:00</updated>
+    <author>
+      <name>rescheer</name>
+    </author>
+    <content># v0.3.2 (Unstable)&#13;
+Both client and .apworld updated. Make sure to regenerate your YAML templates to see the new options.&#13;
+## New Features&#13;
+- Major feature: Optional Access Cards for each area of the ship&#13;
+- New Client UI Panel for tracking acquired Access Cards&#13;
+- Deliverable Item Reminders: Approaching a Succ-u-Bus terminal that has already been checked will give an in-game reminder of how many AP items are waiting to be delivered. &#13;
+## Fixes&#13;
+- A rare situation could trap the player in the embarkation lobby early in a seed&#13;
+- Checks collected while offline were not being sent properly when the client reconnects&#13;
+- Lemon would not be interactable if it was granted and used in the Vision center puzzle before being picked up naturally&#13;
+## Changes&#13;
+- Added a safety net that will return the Magazine to the player if the 2nd Class upgrade check fails&#13;
+## Known Issues in this release&#13;
+- Minor cosmetic issues with both Ear puzzles&#13;
+&#13;
+## General Tips&#13;
+- Ctrl+C opens the cheat menu, which allows teleporting around the ship. This shouldn't cause any major issues, but I would be careful spawning items, because that may get messy.&#13;
+- No visual tracker yet, but for now I highly recommend Universal Tracker to see in-logic checks&#13;
+&#13;
+Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
+    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.7</id>
+    <title>Universal Tracker v0.3.7</title>
+    <updated>2026-10-27T02:03:24+00:00</updated>
+    <author>
+      <name>FarisTheAncient</name>
+    </author>
+    <content>* Fixes many import/host.yaml related crashes/errors&#13;
+* Entrances are valid in explain&#13;
+* fix tooltips? 👀 ?&#13;
+&#13;
+**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.3.6...Tracker_v0.3.7</content>
+    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.8</id>
+    <title>Universal Tracker v0.3.8</title>
+    <updated>2026-10-27T03:14:16+00:00</updated>
+    <author>
+      <name>FarisTheAncient</name>
+    </author>
+    <content> * fixes stupid error&#13;
+&#13;
+**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.3.7...Tracker_v0.3.8</content>
+    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.8"/>
   </entry>
 </feed>
