@@ -70,6 +70,21 @@
       "title": "Elden Ring Archipelago Randomizer v0.1.3",
       "version_simple": "0.1.3",
       "world_version": "0.1.3.post2"
+    },
+    "eldenring-ap-0.1.4": {
+      "created_at": "2026-10-27T06:27:57Z",
+      "description": "[Setup guide](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_setup_guide.md>)\r\n[Game info](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_Elden_Ring.md>)\r\n\r\nThis version has minor fixes (see below), though it is still an **unstable alpha**. Avoid using it in runs with other people unless they are okay with these kinds of issues coming up.\r\n\r\nChanges\r\n- Support interactive location maps in [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases) with live position tracking (requires UT 0.3.8). See the setup guide above for more details.\r\n- Show in-game map icons for unchecked priority locations.\r\n- Add option to prevent heavy load, Heavy Trap which forces heavy load, and allow opening map in combat (except during boss fights).\r\n- Add option to split Imbued Sword Keys into 4 different keys for each destination, on by default.\r\n- Support random goal bosses, shown in the spoiler log.\r\n- Support excluding any region in `exclude_locations`. Check the [Region Guide](https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_region_guide.md) for a full list.\r\n- Avoid placing remembrances in shops.\r\n\r\nFixes\r\n- Work around progression balancing not working for Archipelago priority locations by not marking Elden Ring priority locations as priority for Archipelago.\r\n- Other worlds' `progression_deprioritized` items like puzzle pieces and SM64 stars can't place off priority now.\r\n- Move Wyndham Catacombs from Mt. Gelmir in logic to Altus where it is actually accessible.\r\n- Include all chests in the \"Chest\" priority group and add \"Rise\" to `exclude_locations`\r\n- Don't count all items blocked by a boss as boss rewards.\r\n- Prevent Bell Bearing soft logic from applying in UT.\r\n- Make Ymir give the Hole-Laden Necklace check even if it was already used.\r\n- Enemy randomizer: prevent Bayle in Temple of Eiglay and fix \"unknown target segment phasedisable\" error.\r\n\r\n**What to download**:\r\n- EldenRingArchipelagoRandomizer.zip includes the client, and also includes eldenring.apworld and pre-generated yaml files.\r\n- ERMaps.zip can be used with Universal Tracker (at least version 0.3.8) and is derived from in-game map assets.",
+      "download_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.4/eldenring.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a3827d99bc67e07078c8730e3079a041a628e5adbe5c1119a587ab108b038963",
+      "html_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.4",
+      "minimum_ap_version": "0.6.7",
+      "size": 385350,
+      "source_url": "https://api.github.com/repos/thefifthmatt/SoulsRandomizers",
+      "tag": "eldenring-ap-0.1.4",
+      "title": "Elden Ring Archipelago Randomizer v0.1.4",
+      "version_simple": "0.1.4",
+      "world_version": "0.1.4"
     }
   }
 }

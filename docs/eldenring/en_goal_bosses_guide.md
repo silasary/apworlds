@@ -177,10 +177,10 @@ This table shows all Boss Groups you can use for your Goal
 <tr><td><strong>Erdtree Avatar (LL/MEW)</strong></td></tr>
 <tr><td><strong>Erdtree Avatar (MotG)</strong></td></tr>
 <tr><td><strong>Erdtree Avatar (WP)</strong></td></tr>
+<tr><td><strong>Erdtree Burial Watchdog (AP/WC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (CL/MEC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (LG/SC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (LL/CC)</strong></td></tr>
-<tr><td><strong>Erdtree Burial Watchdog (MtG/WC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (WP/IC)</strong></td></tr>
 <tr><td><strong>Esgar, Priest of Blood (SSG/LC)</strong></td></tr>
 <tr><td><strong>Fallingstar Beast (AP)</strong></td></tr>
@@ -414,10 +414,10 @@ This table shows all Boss Groups you can use for your Goal
 <tr><td><strong>Demi-Human Chief (LG/CC)</strong></td></tr>
 <tr><td><strong>Demi-Human Queen Margot (MtG/VC)</strong></td></tr>
 <tr><td><strong>Demi-Human Swordmaster Onze (GP/BG)</strong></td></tr>
+<tr><td><strong>Erdtree Burial Watchdog (AP/WC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (CL/MEC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (LG/SC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (LL/CC)</strong></td></tr>
-<tr><td><strong>Erdtree Burial Watchdog (MtG/WC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (WP/IC)</strong></td></tr>
 <tr><td><strong>Esgar, Priest of Blood (SSG/LC)</strong></td></tr>
 <tr><td><strong>Fallingstar Beast (CL/SCT)</strong></td></tr>
@@ -471,10 +471,10 @@ This table shows all Boss Groups you can use for your Goal
 <tr><td><strong>Cemetery Shade (WP/TCC)</strong></td></tr>
 <tr><td><strong>Death Knight (GP/FRC)</strong></td></tr>
 <tr><td><strong>Death Knight (RB/SRC)</strong></td></tr>
+<tr><td><strong>Erdtree Burial Watchdog (AP/WC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (CL/MEC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (LG/SC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (LL/CC)</strong></td></tr>
-<tr><td><strong>Erdtree Burial Watchdog (MtG/WC)</strong></td></tr>
 <tr><td><strong>Erdtree Burial Watchdog (WP/IC)</strong></td></tr>
 <tr><td><strong>Esgar, Priest of Blood (SSG/LC)</strong></td></tr>
 <tr><td><strong>Grave Warden Duelist (CO/AST)</strong></td></tr>
@@ -763,6 +763,7 @@ This table shows all Boss Groups you can use for your Goal
 <tr><td><strong>Crystalians - Ringblade/Spear (AP/AT)</strong></td></tr>
 <tr><td><strong>Demi-Human Queen Gilika (AP/LR)</strong></td></tr>
 <tr><td><strong>Elemer of the Briar (AP)</strong></td></tr>
+<tr><td><strong>Erdtree Burial Watchdog (AP/WC)</strong></td></tr>
 <tr><td><strong>Fallingstar Beast (AP)</strong></td></tr>
 <tr><td><strong>Godefroy the Grafted (AP)</strong></td></tr>
 <tr><td><strong>Godskin Apostle (AP)</strong></td></tr>
@@ -798,7 +799,6 @@ This table shows all Boss Groups you can use for your Goal
 </td></tr>
 <tr><td><strong>Demi-Human Queen Maggie (MtG)</strong></td></tr>
 <tr><td><strong>Demi-Human Queen Margot (MtG/VC)</strong></td></tr>
-<tr><td><strong>Erdtree Burial Watchdog (MtG/WC)</strong></td></tr>
 <tr><td><strong>Full-Grown Fallingstar Beast (MtG)</strong></td></tr>
 <tr><td><strong>Kindred of Rot (MtG/SC)</strong></td></tr>
 <tr><td><strong>Magma Wyrm (MtG)</strong></td></tr>

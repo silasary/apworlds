@@ -76,57 +76,58 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 ### Limgrave
 
 </td></tr>
-<tr><td><strong>LG/(AS): </strong>Artists Shack landmark, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/(AS): </strong>Artist&#x27;s Shack landmark, Mid Limgrave.</td></tr>
 <tr><td><strong>LG/(BS): </strong>Bridge of Sacrifice landmark, connection point between S Limgrave and Weeping Peninsula.</td></tr>
 <tr><td><strong>LG/(CE): </strong>Church of Elleh landmark, W Limgrave.</td></tr>
 <tr><td><strong>LG/(DBR): </strong>Dragon-Burnt Ruins landmark, S Limgrave.</td></tr>
 <tr><td><strong>LG/(FH): </strong>Fort Haight landmark, E Limgrave.</td></tr>
 <tr><td><strong>LG/(FHE): </strong>Forlorn Hound Evergaol, S Limgrave.</td></tr>
-<tr><td><strong>LG/(GR): </strong></td></tr>
-<tr><td><strong>LG/(MR): </strong></td></tr>
-<tr><td><strong>LG/(SWV): </strong></td></tr>
-<tr><td><strong>LG/(TCM): </strong></td></tr>
-<tr><td><strong>LG/(WR): </strong></td></tr>
-<tr><td><strong>LG/ALN: </strong></td></tr>
-<tr><td><strong>LG/ALS: </strong></td></tr>
-<tr><td><strong>LG/AS: </strong></td></tr>
-<tr><td><strong>LG/CC: </strong></td></tr>
-<tr><td><strong>LG/CE: </strong></td></tr>
-<tr><td><strong>LG/DBR: </strong></td></tr>
-<tr><td><strong>LG/FHE: </strong></td></tr>
-<tr><td><strong>LG/FHW: </strong></td></tr>
-<tr><td><strong>LG/GC: </strong></td></tr>
-<tr><td><strong>LG/HC: </strong></td></tr>
-<tr><td><strong>LG/MCO: </strong></td></tr>
-<tr><td><strong>LG/MCV: </strong></td></tr>
-<tr><td><strong>LG/ME: </strong></td></tr>
-<tr><td><strong>LG/MO: </strong></td></tr>
-<tr><td><strong>LG/MR: </strong></td></tr>
-<tr><td><strong>LG/SC: </strong></td></tr>
-<tr><td><strong>LG/SG: </strong></td></tr>
-<tr><td><strong>LG/SR: </strong></td></tr>
-<tr><td><strong>LG/SRW: </strong></td></tr>
-<tr><td><strong>LG/SWV: </strong></td></tr>
-<tr><td><strong>LG/SWVO: </strong></td></tr>
-<tr><td><strong>LG/TCM: </strong></td></tr>
-<tr><td><strong>LG/TFS: </strong></td></tr>
-<tr><td><strong>LG/WR: </strong></td></tr>
+<tr><td><strong>LG/(GR): </strong>Gatefront Ruins landmark, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/(MR): </strong>Mistwood Ruins landmark, E Limgrave.</td></tr>
+<tr><td><strong>LG/(SGr): </strong>Stranded Graveyard landmark, SW Limgrave.</td></tr>
+<tr><td><strong>LG/(SWV): </strong>Summonwater Village landmark, NE Limgrave.</td></tr>
+<tr><td><strong>LG/(TCM): </strong>Third Church of Marika landmark, E Limgrave.</td></tr>
+<tr><td><strong>LG/(WR): </strong>Waypoint Ruins landmark, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/ALN: </strong>Agheel Lake North grace, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/ALS: </strong>Agheel Lake South grace, S Limgrave.</td></tr>
+<tr><td><strong>LG/AS: </strong>Artist&#x27;s Shack landmark, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/CC: </strong>Coastal Cave landmark, SW Limgrave.</td></tr>
+<tr><td><strong>LG/CE: </strong>Church of Elleh landmark, W Limgrave.</td></tr>
+<tr><td><strong>LG/DBR: </strong>Dragon-Burnt Ruins landmark, S Limgrave.</td></tr>
+<tr><td><strong>LG/FHE: </strong>Forlorn Hound Evergaol, S Limgrave.</td></tr>
+<tr><td><strong>LG/FHW: </strong>Fort Haight West grave, SE Limgrave.</td></tr>
+<tr><td><strong>LG/GC: </strong>Groveside Cave landmark, W Limgrave.</td></tr>
+<tr><td><strong>LG/HC: </strong>Highroad Cave landmark, N Limgrave.</td></tr>
+<tr><td><strong>LG/MCO: </strong>Murkwater Coast grace, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/MCV: </strong>Murkwater Cave landmark, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/ME: </strong>Minor Erdtree, E Limgrave.</td></tr>
+<tr><td><strong>LG/MO: </strong>Mistwood Outskirts grace, E Limgrave.</td></tr>
+<tr><td><strong>LG/MR: </strong>Waypoint Ruins landmark, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/SC: </strong>Stormfoot Catacombs landmark, Mid Limgrave.</td></tr>
+<tr><td><strong>LG/SGr: </strong>Stranded Graveyard landmark, SW Limgrave.</td></tr>
+<tr><td><strong>LG/SR: </strong>Seaside Ruins grace, SW Limgrave.</td></tr>
+<tr><td><strong>LG/SRW: </strong>Siofra River Well landmark, E Limgrave.</td></tr>
+<tr><td><strong>LG/SWV: </strong>Summonwater Village landmark, NE Limgrave.</td></tr>
+<tr><td><strong>LG/SWVO: </strong>Summonwater Village Outskirts grace, NE Limgrave.</td></tr>
+<tr><td><strong>LG/TCM: </strong>Third Church of Marika landmark, E Limgrave.</td></tr>
+<tr><td><strong>LG/TFS: </strong>The First Step grace, SW Limgrave.</td></tr>
+<tr><td><strong>LG/WR: </strong>Waypoint Ruins landmark, Mid Limgrave.</td></tr>
 <tr><td><h3>
 
 ### Stormhill
 
 </td></tr>
-<tr><td><strong>LG/(SE): </strong></td></tr>
-<tr><td><strong>LG/(SG): </strong></td></tr>
-<tr><td><strong>LG/(SS): </strong></td></tr>
-<tr><td><strong>LG/(WS): </strong></td></tr>
-<tr><td><strong>LG/DC: </strong></td></tr>
-<tr><td><strong>LG/LC: </strong></td></tr>
-<tr><td><strong>LG/SB: </strong></td></tr>
-<tr><td><strong>LG/SS: </strong></td></tr>
-<tr><td><strong>LG/SV: </strong></td></tr>
-<tr><td><strong>LG/WS: </strong></td></tr>
-<tr><td><strong>SV/CT: </strong></td></tr>
+<tr><td><strong>LG/(SE): </strong>Stormhill Evergaol, S Stormhill.</td></tr>
+<tr><td><strong>LG/(SGa): </strong>Stormgate landmark, S Stormhill.</td></tr>
+<tr><td><strong>LG/(SS): </strong>Stormhill Shack landmark, W Stormhill.</td></tr>
+<tr><td><strong>LG/(WS): </strong>Warmaster&#x27;s Shack landmark, mid Stormhill.</td></tr>
+<tr><td><strong>LG/DC: </strong>Deathtouched Catacombs landmark, NE Stormhill.</td></tr>
+<tr><td><strong>LG/LC: </strong>Limgrave Colosseum landmark, N Stormhill.</td></tr>
+<tr><td><strong>LG/SB: </strong>Saintsbridge grace, E Stormhill.</td></tr>
+<tr><td><strong>LG/SS: </strong>Stormhill Shack grace, W Stormhill.</td></tr>
+<tr><td><strong>LG/SV: </strong>Stormveil landmark, area S of Margit arena.</td></tr>
+<tr><td><strong>LG/WS: </strong>Warmaster&#x27;s Shack grace, mid Stormhill.</td></tr>
+<tr><td><strong>SV/CT: </strong>Castleward Tunnel grace, Stormveil enterance.</td></tr>
 <tr><td><h3>
 
 ### Limgrave Dungeons
@@ -153,16 +154,16 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 ### Stormveil Castle
 
 </td></tr>
-<tr><td><strong>SV/GC: </strong></td></tr>
-<tr><td><strong>SV/LC: </strong></td></tr>
-<tr><td><strong>SV/LTB: </strong></td></tr>
-<tr><td><strong>SV/RT: </strong></td></tr>
-<tr><td><strong>SV/SMG: </strong></td></tr>
-<tr><td><strong>SV/SeC: </strong></td></tr>
-<tr><td><strong>SV/StC: </strong></td></tr>
-<tr><td><strong>SV/GG: </strong>Godrick the Grafted grace in Godrick&#x27;s arena.</td></tr>
-<tr><td><strong>SV/LL: </strong></td></tr>
-<tr><td><strong>SV/(DTL): </strong></td></tr>
+<tr><td><strong>SV/GC: </strong>Gateside Chamber grace.</td></tr>
+<tr><td><strong>SV/LC: </strong>Liftside Chamber grace.</td></tr>
+<tr><td><strong>SV/LTB: </strong>Limgrave Tower Bridge grace.</td></tr>
+<tr><td><strong>SV/RT: </strong>Rampart Tower grace.</td></tr>
+<tr><td><strong>SV/SMG: </strong>Stormveil Main Gate grace.</td></tr>
+<tr><td><strong>SV/SeC: </strong>Secluded Cell grace.</td></tr>
+<tr><td><strong>SV/StC: </strong>Stormveil Cliffside grace.</td></tr>
+<tr><td><strong>SV/GG: </strong>Godrick the Grafted grace, in Godrick&#x27;s arena.</td></tr>
+<tr><td><strong>SV/LL: </strong>Liurnia side of Stormveil, after Godrick&#x27;s arena.</td></tr>
+<tr><td><strong>SV/(DTL): </strong>Divine Tower of Limgrave landmark.</td></tr>
 <tr><td><h3>
 
 ### Weeping Peninsula
@@ -201,21 +202,21 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 ### Weeping Peninsula Dungeons
 
 </td></tr>
-<tr><td><strong>WP/(IC): </strong></td></tr>
-<tr><td><strong>WP/(TCC): </strong></td></tr>
-<tr><td><strong>WP/(TCV): </strong></td></tr>
-<tr><td><strong>WP/(MT): </strong></td></tr>
-<tr><td><strong>WP/(EC): </strong></td></tr>
+<tr><td><strong>WP/(IC): </strong>Impaler&#x27;s Catacombs, NE Weeping.</td></tr>
+<tr><td><strong>WP/(TCC): </strong>Tombsward Catacombs, mid Weeping.</td></tr>
+<tr><td><strong>WP/(TCV): </strong>Tombsward Cave, W Weeping.</td></tr>
+<tr><td><strong>WP/(MT): </strong>Morne Tunnel, mid Weeping.</td></tr>
+<tr><td><strong>WP/(EC): </strong>Earthbore Cave, N Weeping.</td></tr>
 <tr><td><h3>
 
 ### Siofra River
 
 </td></tr>
-<tr><td><strong>SR/(HG): </strong></td></tr>
-<tr><td><strong>SR/BW: </strong></td></tr>
-<tr><td><strong>SR/SRB: </strong></td></tr>
-<tr><td><strong>SR/SRWD: </strong></td></tr>
-<tr><td><strong>SR/WW: </strong></td></tr>
+<tr><td><strong>SR/(HG): </strong>Hallowhorn Grounds landmark, SE Siofra.</td></tr>
+<tr><td><strong>SR/BW: </strong>Below The Well grace, N Siofra.</td></tr>
+<tr><td><strong>SR/SRB: </strong>Siofra River Bank grace, S Siofra.</td></tr>
+<tr><td><strong>SR/SRWD: </strong>Siofra River Well Depths grace, SW Siofra.</td></tr>
+<tr><td><strong>SR/WW: </strong>Worshippers&#x27; Woods grace, mid Siofra.</td></tr>
 <tr><td><h3>
 
 ### Liurnia of The Lakes
@@ -563,6 +564,7 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 <tr><td><strong>AP/(SCV): </strong></td></tr>
 <tr><td><strong>AP/(OAT): </strong></td></tr>
 <tr><td><strong>AP/(AT): </strong></td></tr>
+<tr><td><strong>AP/(WC): </strong></td></tr>
 <tr><td><h3>
 
 ### Mt. Gelmir
@@ -592,7 +594,6 @@ Regions | [Base Game Regions](#base-game-1) | [DLC Regions](#dlc-1)
 ### Mt. Gelmir Dungeons
 
 </td></tr>
-<tr><td><strong>MtG/(WC): </strong></td></tr>
 <tr><td><strong>MtG/(GHG): </strong></td></tr>
 <tr><td><strong>MtG/(SC): </strong></td></tr>
 <tr><td><strong>MtG/(VC): </strong></td></tr>

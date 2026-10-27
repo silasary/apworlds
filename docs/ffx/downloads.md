@@ -1,12 +1,18 @@
 # Final Fantasy X
 
 ## Latest
-- <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.10.0/ffx.apworld">Latest Version (0.10.0)</a>
+- <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.10.0/ffx.apworld">Latest Version (0.10.0.post2)</a>
 
 ## All Versions
 
+#### v0.10.0.post2
+- <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.10.0/ffx.apworld">https://github.com/FFX-AP/Archipelago/releases/download/v0.10.0/ffx.apworld</a>
+
 #### v0.10.0
 - <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.10.0/ffx.apworld">https://github.com/FFX-AP/Archipelago/releases/download/v0.10.0/ffx.apworld</a>
+
+#### v0.10.0rc0.post0
+- <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.10.0-prerelease/ffx.apworld">https://github.com/FFX-AP/Archipelago/releases/download/v0.10.0-prerelease/ffx.apworld</a>
 
 #### v0.9.0
 - <a href="https://github.com/FFX-AP/Archipelago/releases/download/v0.9.0/ffx.apworld">https://github.com/FFX-AP/Archipelago/releases/download/v0.9.0/ffx.apworld</a>

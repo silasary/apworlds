@@ -59,11 +59,21 @@ The game launches using an alternate save file which will not affect your main s
 
 ### Is there a tracker for this?
 
-The apworld is compatible with [Universal Tracker](https://archipelago.miraheze.org/wiki/Universal_Tracker) and as of v0.1.3 does not need your original yaml. When priority locations are used, they are shown at the top of the list with an asterisk by their name.
+The apworld has [Universal Tracker](https://archipelago.miraheze.org/wiki/Universal_Tracker) support to show all in-logic checks and show check locations on an interactive map. Universal Tracker version 0.3.8 or higher is required, so make sure to update if you're using an older version.
 
-Map support is in progress. When it is available, instructions will be added here.
+To use it for a run, you need:
+- The `eldenring.apworld` that was used to create the run. Your original yaml file is not needed.
+- `tracker.apworld` from [Universal Tracker releases](https://github.com/FarisTheAncient/Archipelago/releases). Version 0.3.8 or higher is required, so make sure to update if you're using an older version.
+- Optional: `ERMaps.zip` from [Elden Ring Archipelago Randomizer releases](https://github.com/thefifthmatt/SoulsRandomizers/releases) for the interactive map, as of Elden Ring Archipelago version 0.1.4. You must use the version that corresponds to the `eldenring.apworld` you used or you'll get a hash mismatch.
+- Room URL and slot details.
 
-See also the [Location Guide](./en_location_guide.md) to read tracked and hinted locations.
+Install both apworlds, restart Archipelago Launcher, and select Universal Tracker in the launcher. Connect to the room, and when prompted, select the `ERMaps.zip` file matching the apworld. If you didn't get a map prompt or dismissed it, use `/reload_pack` to show it again. If you run into issues, reread the above instructions carefully. If you're sure you followed everything, see also the [UT setup guide](https://github.com/FarisTheAncient/Archipelago/blob/tracker/worlds/tracker/docs/setup.md) (note player yamls are not needed for Elden Ring) and report the issue in the Archipelago discord server.
+
+There is some support for showing priority locations in the tracker tab, though not in the interactive map. Scroll to the top of the list, and priority locations are shown with an asterisk by their name.
+
+Additionally, you can add in-game map icons for priority locations that disappear when the locations have been locally checked with the "Add markers for all unchecked priority locations" option in randomizer. It does *not* show which locations are currently in-logic, as some locations may be either inaccessible or unnecessary if released from other worlds.
+
+See also the [Location Guide](./en_location_guide.md) to understand the format of tracked and hinted locations.
 
 ### Can I play on Linux?
 
