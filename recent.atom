@@ -2,268 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-26T18:21:57.570115+00:00</updated>
+  <updated>2026-10-27T00:28:06.523651+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.7</id>
-    <title>DOOM Eternal v0.6.7</title>
-    <updated>2026-10-23T16:53:41+00:00</updated>
-    <author>
-      <name>snowzzrra</name>
-    </author>
-    <content># DOOM Eternal Archipelago v0.6.7&#13;
-&#13;
-## Linux / Proton&#13;
-&#13;
-- Fixed a Proton launch deadlock that could leave Steam showing DOOM as running without opening the game.&#13;
-&#13;
-## Launcher and item delivery&#13;
-&#13;
-- Fixed item delivery getting stuck during gameplay when the bridge lost track of the current map. Recovery checks the live Core session and map before resuming delivery.&#13;
-- Added automatic diagnostics for Core session admission failures, including engine recognition and save installation details in support reports.&#13;
-- Improved launcher readiness checks when Core refuses the current game session.&#13;
-&#13;
-## APWorld — newly generated rooms only&#13;
-&#13;
-- Completing The Holt requires **Plasma Rifle + Microwave Beam** for the Spirits in the Samur fight.&#13;
-- Microwave Beam is guaranteed in the item pool when The Holt is included, even with Weapon Mastery Challenges disabled.&#13;
-&#13;
-**These logic fixes require a new room generated with APWorld v0.6.7. Existing rooms retain their original item placements and progression rules.**&#13;
-&#13;
-**Existing, compatible v0.6.x rooms and AP saves can be kept for the launcher and item-delivery fixes. No save reset is required.**</content>
-    <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.6.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.4</id>
-    <title>Team Fortress 2 Mann vs Machine v1.18.4</title>
-    <updated>2026-10-23T19:51:02+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Fixed
-
-- **The Docker stack generates the seed you set in the admin page.** Twelve
-  run options never reached `make seed` or the self-hosted multiworld:
-  mission modifiers and their minimum and maximum, the Australium Medal on
-  clear, the Grappling Hook, cash rewards, the weapon-buff share and stack
-  chance, the trap share, and bot cards with their starting count and mode.
-  The seed was generated with their defaults whatever `.env` said.
-- **A seed with a community mission whose pack is not installed stops at
-  Start.** The launcher used to start the run anyway, and you found out when
-  the run switched to that mission, sometimes an hour in. Now the server stops
-  as soon as it joins the room and names the mission and the pack to tick in
-  Settings &gt; Missions.
-- **Unticking a community pack takes its missions out of the run.** With the
-  pack's ZIP on disk but unticked, Settings &gt; Missions still showed its
-  missions as Ready and the seed could draw them, though Start never installs
-  an unticked pack, so the server then refused the seed. The missions now
-  leave the pool and the page says to tick the pack.
-- **The tier menu and the mission count agree.** With SigMod ticked but not
-  yet installed, the tier menu and the highest mission count you could pick
-  counted different missions, 25 against 26 for the same settings. Both now
-  count the same pool.
-- **A download site that is down no longer sends you to Repair.** When
-  alliedmods.net or another site the install downloads from fails, the launcher
-  now names the address and says to try again later. Repair would only have
-  asked the same site again.
-- **A Valve mission loads with SigMod on.** Starting on Doe's Drill, or
-  switching to any Valve mission on a map that also has community missions,
-  could leave the server at wave 0 with "Could not find a valid population
-  file" in the console. SigMod refuses a mission named in the first ten
-  seconds of a map unless it is a loose file, and Valve's are not. The server
-  now names the mission once those ten seconds are over.
-- **Taking an upgrade back no longer pays out every Cash Bundle again.** With
-  cash rewards in the run, buying an upgrade and pressing minus at the station
-  handed you all the bundle credits of the mission on top of the refund, every
-  time. The minus button now gives back what the upgrade cost and nothing more.
-  Refund All and a lost wave still keep your bundle credits.
-- **Two refunds at once no longer pay your Cash Bundles twice.** Refund All
-  twice in a row, or Refund All as a wave is lost, gave your bundle credits
-  back once per refund. With 800 in bundles, 400 came back as 2000 instead of
-  1200. They now come back once.
-- **Demoman bots reload their stickybomb launcher.** Once a Demoman had fired
-  his stickies he never reloaded them, so against the next giant he was back
-  to grenades. He also emptied the launcher on a lone robot or one standing
-  right next to him, then never set the stickies off. He now keeps the
-  launcher loaded between fights and only fires stickies he is going to
-  detonate. A Demoman with nothing but stickies, on Booties or out of pipes,
-  now sets them off on a single robot instead of letting it walk over them.
-- **Linux: a server missing `steamclient.so` says so instead of crashing.**
-  Without it the game server dies at `replay_srv.so` on every start, and the
-  launcher used to start it anyway. It now runs SteamCMD once to fetch the
-  file, refuses the start with a message naming it if that fails, and the
-  debug bundle's summary says where the link points and whether it works.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* docs(readme): keep the README to downloads and install links by @m-this in https://github.com/m-this/tf2-archipelago/pull/223
-* test(docker): refuse an image that drops the plugin's gamedata by @m-this in https://github.com/m-this/tf2-archipelago/pull/224
-* fix(plugin): stop the minus button paying the bundle ledger again by @m-this in https://github.com/m-this/tf2-archipelago/pull/225
-* chore(deps): tf2-mvm-bots-go v0.18.8 by @m-this in https://github.com/m-this/tf2-archipelago/pull/226
-* fix(launcher): refuse a Linux start with no steamclient.so link by @m-this in https://github.com/m-this/tf2-archipelago/pull/228
-* fix(plugin): name the mission once SigMod's vote guard is over by @m-this in https://github.com/m-this/tf2-archipelago/pull/229
-* fix: stop at Start for an uninstalled community pack, and at a failing download site by @m-this in https://github.com/m-this/tf2-archipelago/pull/230
-* fix(bridge): wait for the client to stop before a test's TempDir goes by @m-this in https://github.com/m-this/tf2-archipelago/pull/232
-* chore(deploy): pin floating image tags by @m-this in https://github.com/m-this/tf2-archipelago/pull/231
-* fix(docker): hand every run option to the seed containers by @m-this in https://github.com/m-this/tf2-archipelago/pull/234
-* refactor(plugin): own the grant cursor and the bundle ledger in grant_ledger.inc by @m-this in https://github.com/m-this/tf2-archipelago/pull/235
-* refactor(launcher): every mission question goes through availability by @m-this in https://github.com/m-this/tf2-archipelago/pull/236
-* refactor(plugin): own the weapon buff levels in weapon_buff_levels.inc by @m-this in https://github.com/m-this/tf2-archipelago/pull/238
-* chore(release): v1.18.4 by @m-this in https://github.com/m-this/tf2-archipelago/pull/233
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.3...v1.18.4
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/N2RkMjE4YTMzODc3MWJjZjQ2ZTQyMTFhNjhmOWM4NGY6MTc5Mjc4NTUwMg==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/NTk3MmI5YmRlNmY2NDllN2E2OTQ4NjdhYTJhNTU1YzQ6MTc5Mjc4NTUwNA==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Emerassi/CrystalProjectAPWorld/releases/tag/CrystalProject-v0.19.0</id>
-    <title>Crystal Project v0.19.0</title>
-    <updated>2026-10-23T22:28:20+00:00</updated>
-    <author>
-      <name>Dragons but also Rabbits, FabulaFey, Emerassi</name>
-    </author>
-    <content>### **Crystal Project v. 0.19.0 is out!** :tada:&#13;
-&lt;https://github.com/Emerassi/CrystalProjectAPWorld/releases&gt;&#13;
-&#13;
-### Setup Guide&#13;
-&lt;https://github.com/Emerassi/CrystalProjectAPWorld/blob/main/worlds/crystal_project/docs/setup_en.md&gt;&#13;
-&#13;
-### Find a Bug? Have a Suggestion?&#13;
-- Check if it's in here: &lt;https://github.com/Emerassi/CrystalProjectAPWorld/issues&gt;&#13;
-- If not, please add it! :&gt; Thanks!&#13;
-&#13;
-### New Features &#13;
-- Deathlink: This is for all the sickos out there who have grown tired of experiencing joy and can only truly feel something by inflicting pain on themselves and others.  When you kill your friends, be sure to ask them what their game says happened, because deathlink lets us devs put whatever we want in the message =)&#13;
-- New Mystery Trap: We'll let it be a secret for now... but feel free to post about it as soon as you've seen it!&#13;
-- Homepoint Warp Counters: The region screen now lets you know how many homepoint warps you've unlocked in a region.  Plot your heists with ease!&#13;
-&#13;
-### Upgrades&#13;
-- Modern Mods: Decompiled version 1.6.9 of Crystal Project so we can now support mods with up to mod editor version 34.&#13;
-- Revamped Homepoint Icons: It should now be easier to tell categories of homepoints apart (e.g. filler/useful/progression/types of hints), as well as much more obvious whether or not a homepoint can be teleported to.  If you've unlocked the warp, it will have a green circle under it.&#13;
-- Deterministic Generation: Our APWorld now generates entirely deterministically.  Previously, some of the data structures we used were un-ordered, and as a result, re-using the exact same seed to generate could give you different results for starting jobs and for what traps were selected.&#13;
-&#13;
-### Bug Fixes &#13;
-- If Shopsanity was enabled and regions included Advanced or greater, previously some of the items that should have been showing up were missing!  And it was the most powerful ones! Math error corrected. You'll see less filler and more real items now.&#13;
-- No longer possible for Sequoia Athenaeum to be your starting region.  It is (almost) impossible to collect any checks inside it without access to the outside, so that you can push the ice block in through the door.&#13;
-- Earned Item Info Mode sometimes failed to start showing item information.&#13;
-&#13;
-### KNOWN ISSUES&#13;
-- Only works on the Steam version&#13;
-- Receiving a passive point cap increase does not update the available passive points until a passive is toggled on or off.&#13;
-- Mods that change the text scrolls (such as the intro in spawning meadows) may result in unexpected behavior.&#13;
-- If Crystal Project (the game not this mod) ever updates beyond version 1.6.9, any newly updated non-Archipelago mods will not work (this has always been true every time it updates until we release a new version of the Archipelago mod).</content>
-    <link href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/tag/CrystalProject-v0.19.0"/>
-  </entry>
   <entry>
     <id>https://github.com/FlapjackRetro/dusk-rando/releases/tag/v0.4.8</id>
     <title>DUSK v0.4.8</title>
@@ -1660,5 +1403,146 @@ Have nice day !!!</content>
 - Fixed the 3rd regular shop item's repeatability depending on the first's&#13;
 - Only randomize bosses when boss rando is enabled</content>
     <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4</id>
+    <title>AP Tombola v0.4.0</title>
+    <updated>2026-10-26T18:19:25+00:00</updated>
+    <author>
+      <name>Arenes214</name>
+    </author>
+    <content>## New Additions - APWorld&#13;
+- **Easy Item Links**&#13;
+Link your items with other Tombola players in the world by simply writing what categories of item you want to link!&#13;
+Unlike normal item links, this option accounts for players having different amounts of a particular item, and is able to link *the highest* amount of items theoretically linkable.&#13;
+Example Usage: `easy_item_links: ["Numbers","Traps &amp; Shields","Unlocks","Free Location Hints","Free Marks"]`&#13;
+- **Deprioritize Numbers** Yaml Option&#13;
+Sets the "Deprioritized" flag on numbers, so that they do not appear in other players' Priority Locations&#13;
+- **Universal Tracker Support**&#13;
+- New Milestones Added&#13;
+- New Filler Items Added&#13;
+- Moved to Rule Builder&#13;
+&#13;
+## New Additions - Client&#13;
+- Added the ability to modify the info for slots you have saved&#13;
+- When sending a hinted item, there is now a client-side notification in chat&#13;
+- The Title of the game's window now contains Slot Name and Save Name when connected to a slot&#13;
+- Updated GodotAP to commit `177e052` to fix a security issue&#13;
+&#13;
+## Changes - APWorld&#13;
+- Rowsanity is now enabled by default&#13;
+- Tombola Milestones that require more Tombola than what's required for goal cannot be rolled&#13;
+&#13;
+## Changes - Client&#13;
+- Automark now happens 3 seconds after receiving a Number (Timer is shown on top-right, where the Shields Counter/Trap Timer resides)&#13;
+- Automark now also marks Milestones&#13;
+- When trying to use a Free Mark, a "Please Wait" message now shows before the server sends the go-ahead to Free Mark a number&#13;
+&#13;
+# Bugfixes&#13;
+- Fixed Automark not marking numbers in some situations&#13;
+- Enabling Automark now tries to mark numbers and milestones&#13;
+- Fixed enabling Automark in-game not persisting in case of a Disconnect&#13;
+- Fixed Automark not opening Cards&#13;
+- Fixed Free Location Hints being able to choose a location that is already hinted&#13;
+- Fixed Slot Names for Item Links you are a part of not being highlighted in chat&#13;
+- Fixed the counter of Shields you currently have not visually updating if no shields were already used&#13;
+- Fixed Hint messages having an extra space&#13;
+- Controller Inputs are now ignored&#13;
+- Fixed being able to send an empty message in chat&#13;
+- Fixed Free Marked Numbers visually not being marked after a Blindness Trap&#13;
+- Client now uses **drastically less** CPU/GPU resources</content>
+    <link href="https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.3.0</id>
+    <title>Deltarune v2.3.0</title>
+    <updated>2026-10-26T22:21:17+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <author>
+      <name>TerraFail457</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.2.0/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.2.0/worlds/deltarune/docs/en_DELTARUNE.md) - [Credits](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/DELTARUNEAP%20CREDITS.md)&#13;
+&#13;
+[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
+Or, alternatively,&#13;
+[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
+&#13;
+Report bugs either on the [Discord Channel](https://discord.com/channels/731205301247803413/1481971897024516250) or [the GitHub Issues Tab](https://github.com/theemeraldsword85/DELTARUNEAP/issues)!&#13;
+&#13;
+**INCOMPATIBLE WITH VERSIONS OLDER THAN 2.2.0**&#13;
+&#13;
+## General&#13;
+- Rock Sanity Options are now in the proper category&#13;
+- SMILE is now Cross-Chapter&#13;
+- Added a dummy option for users who don't know how Options Creator works&#13;
+- The default choice for Randomized Chapters is now In Order [(I'm sorry)](https://github.com/theemeraldsword85/DELTARUNEAP/commit/bfc28b6f069e4ca147bbaf52aa876c3f9be51b7f)&#13;
+- Turning on Z-Rank in the Rhythm minigames no longer has locations for Hard Difficulty&#13;
+- Python version 3.11 is no longer supported&#13;
+&#13;
+## Chapter 2&#13;
+- Fixed logic with recruiting Mauswheel&#13;
+- Fixed logic with bageloverflow in Weird Route&#13;
+&#13;
+## Chapter 3&#13;
+- Lanino/Elnina fight can now be expected to be done with violence if you turn on annoying farming&#13;
+&#13;
+## Chapter 4&#13;
+- Lanino/Elnina fight can now be expected to be done with violence if you turn on annoying farming&#13;
+- Edited logic with Jackenstein fight&#13;
+- Fixed returning to Dark Sanctuary in glitched logic</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.4</id>
+    <title>Donkey Kong 64 v2.0.4</title>
+    <updated>2026-10-27T00:00:19+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.4
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.4"/>
   </entry>
 </feed>

@@ -88,6 +88,21 @@
       "version_simple": "0.3.0",
       "world_version": "0.3.0"
     },
+    "0.4": {
+      "created_at": "2026-10-26T18:19:25Z",
+      "description": "## New Additions - APWorld\r\n- **Easy Item Links**\r\nLink your items with other Tombola players in the world by simply writing what categories of item you want to link!\r\nUnlike normal item links, this option accounts for players having different amounts of a particular item, and is able to link *the highest* amount of items theoretically linkable.\r\nExample Usage: `easy_item_links: [\"Numbers\",\"Traps & Shields\",\"Unlocks\",\"Free Location Hints\",\"Free Marks\"]`\r\n- **Deprioritize Numbers** Yaml Option\r\nSets the \"Deprioritized\" flag on numbers, so that they do not appear in other players' Priority Locations\r\n- **Universal Tracker Support**\r\n- New Milestones Added\r\n- New Filler Items Added\r\n- Moved to Rule Builder\r\n\r\n## New Additions - Client\r\n- Added the ability to modify the info for slots you have saved\r\n- When sending a hinted item, there is now a client-side notification in chat\r\n- The Title of the game's window now contains Slot Name and Save Name when connected to a slot\r\n- Updated GodotAP to commit `177e052` to fix a security issue\r\n\r\n## Changes - APWorld\r\n- Rowsanity is now enabled by default\r\n- Tombola Milestones that require more Tombola than what's required for goal cannot be rolled\r\n\r\n## Changes - Client\r\n- Automark now happens 3 seconds after receiving a Number (Timer is shown on top-right, where the Shields Counter/Trap Timer resides)\r\n- Automark now also marks Milestones\r\n- When trying to use a Free Mark, a \"Please Wait\" message now shows before the server sends the go-ahead to Free Mark a number\r\n\r\n# Bugfixes\r\n- Fixed Automark not marking numbers in some situations\r\n- Enabling Automark now tries to mark numbers and milestones\r\n- Fixed enabling Automark in-game not persisting in case of a Disconnect\r\n- Fixed Automark not opening Cards\r\n- Fixed Free Location Hints being able to choose a location that is already hinted\r\n- Fixed Slot Names for Item Links you are a part of not being highlighted in chat\r\n- Fixed the counter of Shields you currently have not visually updating if no shields were already used\r\n- Fixed Hint messages having an extra space\r\n- Controller Inputs are now ignored\r\n- Fixed being able to send an empty message in chat\r\n- Fixed Free Marked Numbers visually not being marked after a Blindness Trap\r\n- Client now uses **drastically less** CPU/GPU resources",
+      "download_url": "https://github.com/Arenes214/APWorld-Tombola/releases/download/0.4/aptombola.apworld",
+      "has_manifest": true,
+      "hash_sha256": "45e829a94dc2e779133139ab958ba3da977fe40fbf7ad2a291da0e3165d2aa94",
+      "html_url": "https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4",
+      "minimum_ap_version": "0.6.8",
+      "size": 598340,
+      "source_url": "https://api.github.com/repos/Arenes214/APWorld-Tombola",
+      "tag": "0.4",
+      "title": "AP Tombola v0.4 - The Easy Item Links Update",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
+    },
     "0.4-RC": {
       "created_at": "2026-10-18T17:42:06Z",
       "description": "Prerelease Version - Not Fully Tested\r\n(APWorld Reports internally as 0.3.1 to AP)\r\n\r\nChangelog APWorld:\r\nEasy Item Links\r\n\"Deprioritize Numbers\" Yaml Option\r\nAdded Milestones\r\nAdded Filler Items\r\nMoved to Rule Builder\r\nUniversal Tracker Support (Yamlless)\r\nRowsanity Default ON\r\nMilestone cannot roll more tombola than goal\r\n\r\nChangelog Client:\r\nAdded the ability to modify Saves\r\nFixed Automatic Mark\r\nAutomatic Mark now happens 3 seconds after a number received / trap end\r\nAutomatic Mark now also clicks Milestones\r\nFixed Free Location Hints being wasted on already hinted locations\r\nExtra message when sending a hinted item from your locations\r\nFixed Itemlink \"player\" names not being highlighted for your links\r\nFixed Shields number not being updated when none were used beforehand\r\nFixed hint message having an extra space\r\nAdded \"Please Wait...\" message in-between clicking free mark and getting server confirmation\r\n",
