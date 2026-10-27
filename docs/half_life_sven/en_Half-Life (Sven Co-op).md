@@ -130,7 +130,8 @@ own maps register rather than weapons the game ships, so they exist only while
 you are playing They Hunger: receive one elsewhere and it is handed to you the
 moment you arrive in an episode.
 
-`trap_percentage` turns some of that filler into traps. There are four. Like
+`trap_percentage` turns some of that filler into traps, each picked by its own
+`*_trap_weight` (0 leaves one out). There are seven. Like
 DeathLink, they are the whole lobby's problem rather than one player's, and all
 of them are nuisances rather than punishments: none can cost you a run:
 
@@ -138,7 +139,8 @@ of them are nuisances rather than punishments: none can cost you a run:
   player and start following them about.
 - **Headcrab Trap**: four headcrabs each, same idea, considerably less friendly.
 - **Butterfingers Trap**: everyone drops the weapon they are holding. The suit
-  reissues it after thirty seconds if you cannot find it again.
+  reissues it after thirty seconds if you cannot find it again; with
+  `butterfingers_reissue: false` only once you have nothing else to fight with.
 - **Bot Swarm Trap**: six crowbar-wielding bots appear around the lobby, run
   about crouch-jumping over things, and swing at whatever they bump into,
   players included.
@@ -147,6 +149,13 @@ of them are nuisances rather than punishments: none can cost you a run:
   to eight of them. A player who lacks one of those models has to download
   it, so a server with custom models but downloads turned off should remove
   them. A custom model missing the player animations the bots use is skipped.
+  The host can keep bots to the stock models with `!custombots 0` in game or
+  `/toggle_custom_bots` in the client; it is remembered between sessions.
+- **Bunny Hop Trap**: everyone jumps every time they land, for fifteen seconds.
+- **Sticky Key Trap**: everyone is pushed along one movement direction
+  (forward, back, or a strafe) for fifteen seconds. You are told which.
+- **Reload Trap**: the weapon in everyone's hands reloads from empty. The clip
+  goes back into the reserve first, so no ammo is lost.
 
 Optional items, each behind its own option:
 
@@ -158,6 +167,10 @@ Optional items, each behind its own option:
   it arrives.
 - **Melee Throw** (`melee_throw`): secondary fire throws the crowbar, which
   hits four times as hard as a swing and comes back after ten seconds.
+- **Progressive Air Acceleration** (`progressive_air_acceleration`): air control
+  (`sv_airaccelerate`, shared by the lobby) starts at
+  `air_acceleration_minimum` and each item raises it a step, the last reaching
+  `air_acceleration_maximum`. 15 items for the defaults of 10 and 100.
 
 **Locations**: 189 in Half-Life alone, 383 with all four campaigns:
 
@@ -166,6 +179,8 @@ Optional items, each behind its own option:
 - finding each weapon for the first time in each campaign, the crowbar included
 - using each health charger and HEV charge panel, and stepping into each Xen
   healing pool
+- with `include_microwave`, exploding the food in the Anomalous Materials break
+  room microwave (keep pressing its button)
 
 Sven Co-op splits Half-Life's campaign into 35 maps across 18 missions, so
 progress through a mission is itself the check. Every wall-mounted charger is a

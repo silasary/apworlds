@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/DQIX/ArchipelagoDQIX/releases/download/0.2.0/dqix.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/DQIX/ArchipelagoDQIX/releases/download/0.2.1/dqix.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

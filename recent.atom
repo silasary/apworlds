@@ -2,239 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-27T12:21:20.207950+00:00</updated>
+  <updated>2026-10-27T18:20:36.300858+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Skelrin/WoLArchipelago/releases/tag/v1.1.0</id>
-    <title>wizardoflegend v1.1.0</title>
-    <updated>2026-10-24T09:36:19+00:00</updated>
-    <author>
-      <name>Skelrin</name>
-    </author>
-    <content>## [1.1.0] - V1.1.0 Release&#13;
-&#13;
-### Added&#13;
-- "Teleport to Hub" button in the pause menu to quickly reroll the dungeon.&#13;
-- Perfect boss / miniboss locations, with bosses being optional.&#13;
-- New NPC's Tokens progression item added.&#13;
-- New trap system that queues traps instead of triggering them all at once.&#13;
-- Game items are now reintroduced in shops when no Archipelago locations are left available.&#13;
-&#13;
-### Changed&#13;
-- Reworked archipelago items by bundling relics and arcanas to have less items.&#13;
-- Rebalanced the APWorld: reduced grindy locations and diversified traps.&#13;
-- NPC locations are now locked behind their associated token requirement.&#13;
-- Refactored `ItemHandler`.&#13;
-- Removed the BouncyCastle proxy dependency.&#13;
-&#13;
-### Fixed&#13;
-- Max HP Boost no longer resets the player's health when picking a relic inside the dungeon.&#13;
-- Removed potential in-game freezes while sending checks by sending them to the server in a separate thread.&#13;
-- Loop NPC not appearing.&#13;
-- Level locations are now correctly checked even if the player cannot go to the next level.&#13;
-- Group Relics no longer behave erratically.&#13;
-- Various fixes following playtesting, including the Perfect miniboss bug, shop slots and the Collector NPC.&#13;
-&#13;
-### AI Disclosure&#13;
-- AI assistance was used for learning BepInEx/Harmony modding patterns, and supporting code refactoring. The vast majority of the codebase was authored by hand..</content>
-    <link href="https://github.com/Skelrin/WoLArchipelago/releases/tag/v1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.5.3</id>
-    <title>Hollow Knight: Silksong v0.5.3</title>
-    <updated>2026-10-24T12:19:09+00:00</updated>
-    <author>
-      <name>BatAtVideoGames</name>
-    </author>
-    <content>This is a serious message to everybody reading my update right now. Peace and love, peace and love. I want to tell you, please, after the 24th of October, do not send any Silksong bug reports, that you have. Nothing will be updated after the 24th of October. If that has a date on the report, it's gonna be tossed. I am warning you, with peace and love, that I have too much to do. So no more Silksong. Thank you, thank you. And no seeds to be played. Nothing. Anyway, peace and love, peace and love.&#13;
-(It's my birthday and I want to take the weekend off, Skong work resumes next week)&#13;
-&#13;
-### Note&#13;
-Tried to prioritize everything that's important, but there's one issue that hasn't been tackled: Ledge Grab randomization does NOT account for rosary economy (which means it can expect you to buy stuff from Pebb despite potentially not having access to anything that gives rosaries). This will be worked on but I had no time, the safest workaround if you want to play with randomized Ledge Grab for the time being is to put price rando for shop prices to free. The new Starting Locations should be safe but they're so far entirely untested so if anything funky happens glhf&#13;
-&#13;
-## Main Changelog&#13;
-&#13;
-- Added Wormways Laboratory, Pilgrim's Rest, Deep Docks, Shellwood Bellshrine, Blasted Steps Bellway, Bellhart and Songclave starting areas. Songclave requires an Act 2 or later goal&#13;
-- Completely reworked Blasted Steps logic, several other updates in Cradle, Sands of Karak, Shellwood, Memorium, Whiteward, High Halls, Far Fields, Wormways, Moss Grotto, Cogwork Core, Bellhart, Mount Fay and Choral Chambers&#13;
-- Fixed receiving Skull Tyrant boss credit early making the Marrow fight and The Terrible Tyrant wish unavailable&#13;
-- Corrected Heal Stall logic to require an available non-Shaman crest. Owning Shaman alongside another crest still qualifies&#13;
-- Fixed Conjoined Heart incorrectly appearing as LogicUnknown&#13;
-- Restored missing mapped routes in Greymoor, Pinstress's room and Whispering Vaults&#13;
-- Fixed missing mapped silk-barrier routes, including Original Silkshot&#13;
-- Early Dash now only forces Sprint early with both split options enabled&#13;
-- Fixed Hero's Memento giving its vanilla reward instead of the randomized check&#13;
-- Fixed Loddie's second reward logic with Widow credit&#13;
-- Clarified randomized bell and melody marker option descriptions&#13;
-- Removed the nonexistent "Grand bellway hidden chest" item&#13;
-- Prevented that cunt Grindle from stealing randomized chest rewards in High Halls and Choral Chambers&#13;
-- Fixed Jubilana's randomized spool fragment showing the vanilla name and icon&#13;
-- Fixed Game Pass saving by keeping randomizer saves locally&#13;
-- Added an optional room/subroom overlay, disabled by default. Helps a lot for bug reports. Enable it through config or ModMenu&#13;
-- Craftmetal validation no longer rejects generation for unrelated accessibility problems&#13;
-- Removed four later-area Karak shard caches and the Lower Coral Tablet from Act 1 goals&#13;
-- Last Judge's boss-sanity check now waits for her confirmed defeat&#13;
-- Everbloom now protects against Abyss tendrils before completing its ritual&#13;
-- Corrected Far Fields Savage Beastfly hunt logic to require defeating Fourth Chorus&#13;
-- Fixed shuffled Silver Bells counting toward Bellhome’s key requirements before completion&#13;
-- Removed the extra preference for early movement abilities in multiworlds (haha oops)&#13;
-- Fixed Slab arena access appearing in logic through its closed gate&#13;
-- Fixed Cogwork Core lever access incorrectly requiring several crest pogo routes simultaneously&#13;
-- Fixed Shakra’s shared stock in Sinner’s Road incorrectly requiring crest-pogo skips when the ordinary spike-pogo route was available&#13;
-- Added the Broodmother wish's necklace reward to Heavy Rosary Necklace randomization for Act 2 and Act 3 seeds&#13;
-- Fixed randomized Rosary Bank caches and the Pale Rosary Necklace becoming unavailable after Act 3 or a Snitchfly robbery. Uncollected rewards now appear as pickups inside the opened vault&#13;
-- Fixed Mossgrotto Shell Shard / Beast Shard being marked Out of Logic / LogicUnknown in non-vanilla starts&#13;
-- Fixed shuffled Crawbug Clearing incorrectly requiring Widow credit after obtaining its wish-wall notice&#13;
-- Fixed the Deep Docks central Spool Fragment incorrectly requiring movement upgrades despite its lever being reachable&#13;
-- Restored Father of the Flame’s boss and journal markers and Wispfire Lantern in UT&#13;
-- Added the missing Conjoined Heart marker to the in-game map&#13;
-- Fixed Underworks Shell Shard Cache logic to match the actual pickup positions&#13;
-- Fixed Songclave progression incorrectly requiring a visit to Choral Chambers Above Ventrica&#13;
-- Fixed Trail’s End logic that could place required items behind Act 3&#13;
-- Swim randomization now preserves ice-water damage and muckmaggot effects when falling into water without swim&#13;
-- With split Cling Grip/Swift Step enabled, wall climbing uses the dash direction matching the wall's side&#13;
-- Corrected the Upper and Lower Coral Tablet names in Sands of Karak&#13;
-- Fixed pre-Phantom mist traversal and restored&#13;
-- Made the game more Chinese&#13;
-- Fixed Greymoor’s Bone Scroll and Jubilana's Choral Commandment disappearing&#13;
-- Restored soup damage without Swim&#13;
-- Fixed the black cover over Moss Mother’s arena when entering from the left&#13;
-- Standardized Pebb and Jubilana's purchase names&#13;
-- Improved Universal Tracker route and check explanation layout (by Faris)&#13;
-- Fixed incorrect routes between the central shaft and right-hand entrance in Underworks East Shaft&#13;
-- Temporarily disabled the Blasted Steps "Top Third Lever"&#13;
-- Fixed Slab escapes leaving linked currency locked and DeathLink waiting&#13;
-- Kept Jubilana’s initial shop stock available during The Lost Merchant&#13;
-&#13;
-## Beta Changelog&#13;
-- Soul of Sula now only enters the pool in Steel Soul runs with NPC Souls enabled&#13;
-- Fixed Mnemonord's first-kill check failing to award its randomized item when destroyed&#13;
-- Fixed Eva's first meeting trapping players without her soul&#13;
-- Shakra's combat assistance now requires her NPC soul&#13;
-- Corrected Zaza's soul portrait&#13;
-- Deep Fort's Memory Locket no longer requires Flapping Fertid's Soul. Skarrgard remains required&#13;
-- Missing Rhinogrund’s Soul no longer triggers Pilgrim's Rest’s shop and bench lockout&#13;
-- Halfway Home's cellar no longer requires the ambient Mite or Fluttermite Souls&#13;
-- Coral Tower memory arenas now block the far exit when required Souls are missing&#13;
-- Enemy Souls runs now correctly require Yuma's soul to reach Khann&#13;
-- Fixed Tarmite's Skull Cavern route missing Vicious Caranid’s soul requirement&#13;
-- Fixed enemy souls causing entrance randomization to leave most connections vanilla&#13;
-- Corrected Savage Beastfly, Whispering Vaults and Diving Bell  soul requirements&#13;
-- Fixed several other gauntlet soul reqs that I can't be assed to individually document&#13;
-- Fixed soul gating for Burning Bugs, Snitchfly crowds, Pilby's replacement and early Gron</content>
-    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.5.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomcodegen/CrashNST-AP/releases/tag/1.0.6</id>
-    <title>Crash Bandicoot N. Sane Trilogy v1.0.6</title>
-    <updated>2026-10-24T13:16:13+00:00</updated>
-    <author>
-      <name>Rando</name>
-    </author>
-    <content>## Bugfixes&#13;
-&#13;
-- Fixed CB2 portals disappearing when a boss activates before its Access item is received&#13;
-- Fixed the yellow-gem route in Sewer or Later and the gem door in Tomb Time&#13;
-- Fixed gem-hook failures that could interrupt incoming DeathLinks&#13;
-- Reduced box-tint overhead and corrected oversized crate outlines&#13;
-- Reduced CB1 map movement delays after loading and returning from stages&#13;
-&#13;
-**Existing 1.0.5 seeds remain compatible.**</content>
-    <link href="https://github.com/randomcodegen/CrashNST-AP/releases/tag/1.0.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.45</id>
-    <title>Mental Omega v0.6.8</title>
-    <updated>2026-10-24T16:31:09+00:00</updated>
-    <author>
-      <name>Mental Omega Randomizer contributors</name>
-    </author>
-    <content>- Fix AGHOST and SBLEED unit leakage in chaos/standard mode&#13;
-- Add self healing buffs, tick and rank buffs&#13;
-- Add Auto updater for future version, this should give a notification if a new version got released in the randomizer launcher&#13;
-- Fix Thor/Super Thor ammo rewards&#13;
-- Fix Yuri Hero star insigina missing&#13;
-- Add Cameos for Movie star heroes&#13;
-- Fix Paladin Aid Cursor error&#13;
-- Fix Epsilon Elite cloning&#13;
-- Fix Rainbow Bunker clone&#13;
-- Add new game Mode called "Final Fortress".&#13;
-Two maps so far only. Hold and defend your post against 3 hostile AI enemys for an hour! Gather crates on the maps for bonus and earn perks to make the next defend easier! Available aswell in coop mode.  </content>
-    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.45"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.0</id>
-    <title>Donkey Kong 64 v2.0.0</title>
-    <updated>2026-10-24T17:59:59+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.0
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/2.0.0</id>
-    <title>The Legend of Zelda - Oracle of Ages v2.0.0</title>
-    <updated>2026-10-24T20:41:03+00:00</updated>
-    <author>
-      <name>josephanimate2021</name>
-    </author>
-    <author>
-      <name>Glan9</name>
-    </author>
-    <author>
-      <name>Piapiou (SenPierre)</name>
-    </author>
-    <author>
-      <name>FlameStripe</name>
-    </author>
-    <content>Ahoy guys ! New release with some spice !&#13;
-&#13;
-🎉 New features&#13;
-&#13;
-- Full ER ! Get lost in all of labrynna by randomizing all its entrances ! You have the option the exclude some entrances if you want them to stay vanilla, and you have the option to group the entrance between past and present, and between surface and underwater! Your can also group the dungeons together even in full ER.&#13;
-- Gathering the Maku seed is now a now option ! You gathered the essences, they can figure out how to beat Veran on their own.&#13;
-- Hint system ! The owls now give you an hint of where are your item where you activate them, and the know-it-all birds tell uou how many items have each regions&#13;
-&#13;
-🧹 Notable changes : &#13;
-&#13;
-- Vasu option has been split into three different option, so the option generators don't break anymore&#13;
-- Dungeon shuffle option has been moved in the ER option, as it make no sense to have both enabled at the same time&#13;
-- Impa has been moved to the crossroad, the space distortion of all the entrance made her sick and she preferred to stay somewhere that stay the same !&#13;
-&#13;
-🛠️ Fixed bugs&#13;
-&#13;
-- Fixing a bug where the wrong text were sometime displayed, leading to a softlock with the shops and other checks that required a confirmation&#13;
-- Fixing D8 compass sound glitching&#13;
-- Fixing Zora reward being given when you have the essence 7 instead of finishing the dungeon 7&#13;
-- General logic fixes and improvement.</content>
-    <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/2.0.0"/>
-  </entry>
   <entry>
     <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0c</id>
     <title>Refunct v1.8.0rc0</title>
@@ -470,6 +242,20 @@ Minor changes:&#13;
 * YAML auto-adjustments are logged in the generation output&#13;
 * Various client or apworld bug/typo fixes </content>
     <link href="https://github.com/fogmike/Archipelago_ManicMiners/releases/tag/v1.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/Taskipelago/releases/tag/v1.2.2</id>
+    <title>Taskipelago v1.2.2</title>
+    <updated>2026-10-25T11:57:12+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>## What's New&#13;
+* Added renewable tasks allowing for easier consumables logic&#13;
+* Increased max task and item count to 5000&#13;
+* Fixed a bug where the text console wouldn't always scroll to the most recent messages when returning from other tabs&#13;
+* Fixed a bug where sequential and region-0 were not treated as free reqs by the generation check</content>
+    <link href="https://github.com/barretg/Taskipelago/releases/tag/v1.2.2"/>
   </entry>
   <entry>
     <id>https://github.com/Cynichill/APBingo/releases/tag/1.1.2</id>
@@ -753,6 +539,21 @@ Old files can be upgraded to the new format via find-and-replace:&#13;
     <content>- Fix patching to always make boomerang guy available in dungeon dive&#13;
 - Fix shop logic in dungeon dive</content>
     <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.8</id>
+    <title>Feeding Frenzy 2 v0.8</title>
+    <updated>2026-10-25T20:20:17+00:00</updated>
+    <author>
+      <name>barretg</name>
+    </author>
+    <content>## What's New&#13;
+* Deathlink Amnesty: If you're bad like me you don't have to constantly kill your friends anymore! Hooray!&#13;
+* Power-up-sanity: All power-ups blocked until their item is received&#13;
+* Frenzsanity: Frenzy meter as progressive checks (doesn't matter much now but when there's score checks this will matter more)&#13;
+* Fixed an early goaling bug&#13;
+* Fixed a bug where having suck without dash could cause suck to trigger constantly</content>
+    <link href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/tag/v0.8"/>
   </entry>
   <entry>
     <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.2.6</id>
@@ -1272,6 +1073,22 @@ Sets the "Deprioritized" flag on numbers, so that they do not appear in other pl
     <link href="https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4"/>
   </entry>
   <entry>
+    <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4.1</id>
+    <title>Half-Life (Sven Co-op) v0.4.0r2</title>
+    <updated>2026-10-26T19:13:03+00:00</updated>
+    <author>
+      <name>hl1-sven-ap</name>
+    </author>
+    <content>## What's New&#13;
+* HEV Suit now always on for Suspension&#13;
+* Deathlink loopback fixed (no more deaths being doubled)&#13;
+* Tripmine drops off of moving entities or func_rotating/func_door no longer erroneously send first tripmine check&#13;
+* Bring in tracelines and other QOL features from HL anniversary branch and update some text output for parity&#13;
+&#13;
+Thanks to Iris, MetaPrism, and AlexCorruptor for the help with testing!</content>
+    <link href="https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.3.0</id>
     <title>Deltarune v2.3.0</title>
     <updated>2026-10-26T22:21:17+00:00</updated>
@@ -1524,5 +1341,274 @@ Fixes&#13;
 &#13;
 This release contains no new AP features, and is published for the express purpose of compatibility with v0.10.0 of the FFX-AP client, as to work with the October 1st patch to Final Fantasy X HD Remaster</content>
     <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.10.0-prerelease"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.2.1</id>
+    <title>Dragon Quest IX v0.2.1</title>
+    <updated>2026-10-27T14:26:21+00:00</updated>
+    <author>
+      <name>kid2407</name>
+    </author>
+    <content># Dragon Quest IX - Beta Release (Version 0.2.1)&#13;
+&#13;
+**This is a beta release. Things can possibly break, though the core gameplay should run normally.**&#13;
+&#13;
+*This requires Archipelago **0.6.7 or newer!***&#13;
+*This **is** compatible with seeds generated on an earlier version, but brings new options*&#13;
+&#13;
+New to the game? Check out the [FAQ](https://discord.com/channels/731205301247803413/1427594624389742716/1491731616068800543)&#13;
+## Bugs fixed&#13;
+&#13;
+* Shops now get correctly filled for all variants of Shop randomization&#13;
+&#13;
+## New Options: Shop pricing&#13;
+&#13;
+You can now adjust the price modifier of the shops in the game. Most have 100% in vanilla, and two sit at 500% (dourbridge item shop, and merchant in the goretress):&#13;
+* Shop prices: Vanilla / Global Shared / Global Shared&#13;
+* Shop Price Range Minimum&#13;
+* Shop Price Range Maximum&#13;
+&#13;
+With these you can adjust the pricing of shops as you like, either having the same price everywhere ("Global Shared") or a random value for each shop ("Global Shared")</content>
+    <link href="https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.0</id>
+    <title>DOOM Eternal v0.7.0</title>
+    <updated>2026-10-27T15:49:13+00:00</updated>
+    <author>
+      <name>snowzzrra</name>
+    </author>
+    <content># DOOM Eternal Archipelago v0.7.0 — Enemy Randomizer &amp; Killsanity&#13;
+&#13;
+v0.7.0 adds configurable enemy randomization, kill-based Archipelago checks, and new controls for campaign progression, resources, and weapon mastery requirements.&#13;
+&#13;
+The release uses **Sentinel Core 1.1.0** with **Mod and APWorld 0.7.0**.&#13;
+&#13;
+## Enemy Randomizer&#13;
+&#13;
+- Added **Enemy Randomizer**, enabled by default, for encounters throughout the Base Campaign and The Ancient Gods. Disable it to keep the original enemies.&#13;
+- Each seed determines enemy replacements and attributes, including waves, smaller fights outside arenas, possessed enemies, and summons.&#13;
+- Added a configurable bestiary covering fodder, heavies, superheavies, and support enemies.&#13;
+- Included **every enemy**, alongside DLC enemies such as **Armored Barons, Cursed Prowlers, Stone Imps, Riot Soldiers, Demonic Troopers, and Blood Maykrs**.&#13;
+- Extended **Use DLC Content** to control DLC enemy availability independently of the selected mission pool.&#13;
+- Enabled ordinary **Tentacles** and **Turrets** in the default bestiary; **Giant Tentacles** are opt-in with a default weight of zero.&#13;
+- Bosses are vanilla, and temporarily, Dark Lord's summons too.&#13;
+&#13;
+## Enemy presets&#13;
+&#13;
+- Added **UAC Patrol** for gentler fights with more weak enemies.&#13;
+- Added **Sentinel Training** for a lighter campaign with moderate progression.&#13;
+- Added **Slayer's Path**, the default, for a balanced mixture following vanilla encounter progression.&#13;
+- Added **Hell's Vanguard** for more intense fights and heavier enemy pressure.&#13;
+- Added **Icon's Wrath** for extreme pressure and more demanding special-enemy combinations.&#13;
+- Added **Gore Nest** for swarms of weaker enemies.&#13;
+- Added **Gladiator's Gauntlet** for smaller groups of stronger enemies.&#13;
+- Added **Cultist Chaos** for greater variation in species and attributes.&#13;
+- Added **Oops! All Imps** for Imp-focused encounters.&#13;
+- Added **Piñata Party**, favoring Maykr Drones, Lost Souls, and Buff Totems.&#13;
+- Added **Custom** for manual configuration. Presets can also serve as a starting point for individual overrides.&#13;
+&#13;
+## Enemy customization&#13;
+&#13;
+- Added **Early Intensity / Late Intensity** to control the preference for stronger enemies at the beginning and end of a campaign.&#13;
+- Added **Progressive Difficulty** to transition from early settings to late settings as the campaign advances. With progression disabled, the campaign uses the early settings.&#13;
+- Added **Density** for simultaneous population and **Enemy Length** for the total finite enemy population over a fight.&#13;
+- Added **Variety** to favor more uniform groups or a broader mixture of species.&#13;
+- Added **Enemy Count** modes for following the preset, using **Auto**, or applying an **Enemy Count Multiplier**. For example, 200% requests twice the population, subject to encounter spawn constraints.&#13;
+- Added **Bestiary Weights** for individual species. Higher weights increase selection frequency; zero excludes a species from eligible random selections.&#13;
+- Added global and per-species **Health Ranges** and **Damage Ranges**. **100%** is the normal value; equal minimum and maximum values make an attribute fixed.&#13;
+- Added **Speed Ranges** for the species identified as supported in the editor. Other species retain normal speed.&#13;
+- Added global and per-species **Size Ranges**, constrained by the available spawn space.&#13;
+- Added **Size Variation Chance** for half-size or double-size enemies. An explicit species size range takes priority.&#13;
+- Allowed separate early and late ranges for attributes.&#13;
+- Added **Special Enemy Limits** for Marauders, Arch-viles, Spirits, and their combined population. Buff Totems and Screechers also follow the applicable Arch-vile and combined restrictions.&#13;
+- Made explicit values override preset values. **Auto** retains automatic behavior through editing, YAML export, and import.&#13;
+&#13;
+## Encounter progression and mission difficulty&#13;
+&#13;
+- Based progression on the enemies generated for the seed: composition, attributes, finite population, simultaneous pressure, and fight length.&#13;
+- Used vanilla encounters as references for fodder, heavy, superheavy, and special-enemy quantities and simultaneous population limits.&#13;
+- Matched encounters by relative progress through the mission and compatible encounter type, preserving the selected map's encounter sequence. For example, a five-encounter reference `1 2 3 4 5` distributed across ten encounters becomes `1 1 2 2 3 3 4 4 5 5`.&#13;
+- Applied encounter-specific treatment to ordinary rooms, arenas, secret encounters, and special spawn sites, accounting for their space and scripted function.&#13;
+- Kept isolated incidental fights and individual arena phases distinct from full arenas, with more suitable references when their spawn formats differ.&#13;
+- Limited ordinary Zombie and Blaster Zombie concentration in mixed encounters. Scripted ammunition maintenance is not treated as a large finite kill quota.&#13;
+- Allowed marked mixed-combat completion gates to clear when only those Zombies remain, without granting kill credit. Zombie-only fights retain their completion requirements.&#13;
+- Made **Slayer's Path** follow the vanilla campaign curve. More intense presets add pressure according to their settings; manual overrides can change that behavior.&#13;
+- Started automatic attributes at **100%** in progression presets. The late automatic limits reach **110% health / 105% damage / 105% speed** in Slayer's Path, **125% / 115% / 110%** in Hell's Vanguard, and **135% / 120% / 110%** in Icon's Wrath, where each attribute is supported.&#13;
+- Kept automatic attributes at vanilla values in **UAC Patrol** and **Sentinel Training**. Explicit attribute ranges take priority over automatic values.&#13;
+- Made **Random Mission Order** account for generated encounter difficulty when planning progression, with the goal mission as the ending.&#13;
+- Gave **Mission Access as Items** its own mission difficulty bands and access-item placement preferences for opening appropriate alternatives.&#13;
+- Protected the opening route by considering its first fights, starting equipment, and accessible checks. Standalone boss maps are excluded as starting missions.&#13;
+- Kept opening enemy variety within its preparation budget. If the configured opening cannot fit its required combat preparation into the early checks, generation permits that opening with the configured equipment and no guaranteed minimum Combat Rating. Traversal and mandatory progression requirements still apply.&#13;
+- Placed weapons and mods required for the opening in suitable early Fortress and opening-mission checks, respecting **Local Items** and **Non-local Items** choices.&#13;
+- Include the keys for enabled DLC Slayer Gates even when DLC equipment is disabled.&#13;
+- Updated mission difficulty skulls and displayed Combat Rating values and ranges to reflect the generated fights.&#13;
+&#13;
+## Special enemies, counters, and resource spawns&#13;
+&#13;
+- Checked the physical inventory when enemies spawn and provided counter-dependent alternatives:&#13;
+  - **Spirit:** requires **Plasma Rifle + Microwave Beam**; otherwise uses a **Cacodemon**.&#13;
+  - **Cursed Prowler:** requires **Blood Punch**; otherwise uses a regular **Prowler**.&#13;
+  - **Stone Imp:** requires **Combat Shotgun + Full Auto**, **Chainsaw**, or **Sentinel Hammer**; otherwise uses a regular **Imp**.&#13;
+  - **Armored Baron:** requires **Heavy Cannon + Precision Bolt**, **Combat Shotgun + Sticky Bombs**, or **Ballista**; otherwise uses a regular **Baron**.&#13;
+- Allowed the corresponding special variant in later spawns once its counter is acquired.&#13;
+- Preserved appropriate Chainsaw ammo producers according to the encounter's resource pools and quotas.&#13;
+- Kept renewable resource enemies separate from the finite enemies required to complete a wave.&#13;
+- Applied population limits to invoked and possessed enemies as well as directly spawned enemies.&#13;
+- Accounted for portals, entrances, landing positions, and enemy size when choosing compatible replacements.&#13;
+- Used compatible flying replacements for floorless aerial sections, including the relevant waves of the Samur fight.&#13;
+&#13;
+## Killsanity&#13;
+&#13;
+- Added **Killsanity**, disabled by default, for Archipelago checks awarded at enemy-kill milestones.&#13;
+- Added **Kills per Check**, defaulting to **100**, with a configurable interval from **1 to 2,147,483,647**. An interval of 100 awards checks at 100, 200, 300 kills, and so on.&#13;
+- Counted each observed physical enemy death once, including environmental deaths, traps, renewable enemies, and mission replays. A randomized enemy representing several original encounter credits still counts as one kill.&#13;
+- Persisted kill progress by room and player across reconnects and session resumes.&#13;
+- Added a HUD counter below **ITEMS FOUND**, showing total kills and the next target, with a launcher preference to show or hide it.&#13;
+- Added dedicated milestone progress and reward notifications.&#13;
+- Added **Kill Rewards: Auto**: estimate campaign kills, add **10%**, divide by the selected interval, and round down, with a maximum of **50 rewards**.&#13;
+- Allowed a fixed reward count from **1 to 65,535**.&#13;
+- Used the selected missions and generated enemies for the estimate. Higher targets can require replays; Auto does not guarantee that every check is completed in one pass.&#13;
+- Restricted essential progression placements to milestones supported by the reviewed finite-combat budget. Higher grind targets do not receive essential progression items.&#13;
+&#13;
+## Logic Difficulty and Combat Readiness&#13;
+&#13;
+- Added **Logic Difficulty**, separate from the in-game **Campaign Difficulty**:&#13;
+  - **Relaxed:** allows the logic to expect fights with less equipment.&#13;
+  - **Standard:** intermediate preparation; the default.&#13;
+  - **Expert:** waits for a stronger collection of weapons and upgrades before expecting a clear.&#13;
+- Made Combat Readiness account for randomized encounter composition and pressure, while retaining mechanical combat and traversal requirements.&#13;
+- Increased the value of permanent **Health, Armor, and Ammo** upgrades.&#13;
+- Increased the value of **Faster Weapon Swap**, **Blood Fueled**, **Dazed and Confused**, **Equipment Fiend**, and **Punch and Reave** according to their usable benefits.&#13;
+- Required compatible equipment for Equipment Fiend's contribution and Blood Punch for Punch and Reave's contribution.&#13;
+- Evaluated arsenal breadth by ammunition families, so several weapons sharing one ammo reserve do not count as equally diverse resources.&#13;
+- Adjusted Ballista and Chaingun contributions and limited arsenal readiness according to defense and sustain.&#13;
+- Removed **Ammo Refill** from permanent Combat Readiness scoring.&#13;
+- Accounted for enemy availability and required equipment in weak-point challenges, mastery targets, Secret Encounters, and active campaign objectives.&#13;
+- Changed **Ballista** from **12 to 8 Arsenal** and **Chaingun** from **5 to 4 Arsenal**.&#13;
+- Changed each **Health upgrade** from **1.75 to 3.5 Defense**, each **Armor upgrade** from **1.5 to 3 Defense**, and each **Ammo upgrade** from **1.75 to 3.5 Sustain**.&#13;
+- Changed **Faster Weapon Swap** from **15% of evaluated Arsenal, capped at 6**, to **25%, capped at 8**.&#13;
+- Changed **Blood Fueled** from **1 to 3 Mobility**, **Dazed and Confused** from **1 to 2 Control/Utility**, **Equipment Fiend** from **2 to 4 Sustain**, and **Punch and Reave** from **1 to 3 Sustain**.&#13;
+- Changed **Ammo Refill** from **2 Sustain** to **no CR contribution**.&#13;
+&#13;
+## Item pools, resources, and short campaigns&#13;
+&#13;
+- Added **Resource Profile** choices: **Balanced**, the default; **Generous**, with more surplus and recovery resources; and **Lean**, with fewer extras.&#13;
+- Included all **nine normal runes** and **four upgrades each for Health, Armor, and Ammo** in the default pool. With DLC content enabled, also included all **three Support Runes**.&#13;
+- Made **Praetor Suit Upgrades in Pool: Auto** include all **17 suit upgrades**, including **Faster Weapon Swap**, at every supported campaign length.&#13;
+- Retained **Random** and explicit suit-upgrade counts for players who want a different pool.&#13;
+- Preserved the guaranteed upgrades across resource profiles. Explicit item-pool overrides can change quantities within item limits and campaign dependency requirements.&#13;
+- Raised the minimum **Mission Count** from **three to six normal missions** for Random Mission Order and Mission Access as Items. &#13;
+- Fitted shorter campaigns by adjusting spare batteries, active Fortress purchases, and mastery families, preserving the guaranteed default upgrades.&#13;
+- Matched mastery resources and Weapon Upgrade Points to active mastery challenges, reserving the points needed to avoid blocking another required challenge through mod purchases.&#13;
+- Added **Item Pool Overrides** for exact permanent-item quantities. Zero can exclude an item where the campaign permits it; required dependencies are validated.&#13;
+- Added **Filler Weights** for relative consumable and recovery-reward frequency.&#13;
+- Added **Trap Weights** for the relative frequency of each enabled trap, alongside the overall trap percentage.&#13;
+- Added generation feedback for incompatible exclusions and missing required resources.&#13;
+&#13;
+## New consumable rewards&#13;
+&#13;
+- (Re)Added **Berserk**, **Onslaught**, and **Overdrive** to the filler reward pool.&#13;
+- Delivered these power-ups as physical pickups near the Slayer, allowing collection during gameplay.&#13;
+- Included the new power-ups in configurable filler weights alongside existing consumables.&#13;
+- Made **Generous** favor recovery rewards such as Full Heal, Full Armor, and Soulsphere, while **Lean** reduces their relative frequency.&#13;
+&#13;
+## Weapon mastery requirements&#13;
+&#13;
+- Added **Mastery Requirements** profiles: **Original**, **Half**, and **Quarter**.&#13;
+- Set **Half** as the default. Requirements round up after division, with a minimum of one action.&#13;
+- Example: Energy Shield's damage mastery challenge requirement is **20,000 in Original**, **10,000 in Half**, or **5,000 in Quarter**.&#13;
+&#13;
+## Secret Encounters&#13;
+&#13;
+- Adapted encounter timers to the generated enemy composition.&#13;
+- Added a safety margin of **25% or five seconds**, whichever is larger.&#13;
+- Added **Easier Secret Encounters** for an additional **50%** on the resulting timer.&#13;
+&#13;
+## New locations and exploration&#13;
+&#13;
+- Added checks at **19 Automap Stations** across the Base Campaign and The Ancient Gods.&#13;
+- Added **Exultia — Secret Armor: Breakable Wall**.&#13;
+- Added **Exultia — Soulsphere: First Ruined Hall**.&#13;
+- Added **Exultia — Soulsphere: Trenches Secret Wall**.&#13;
+- Added **Exultia — Soulsphere: Lava Secret Chamber**.&#13;
+- Added **Super Gore Nest — Soulsphere: Birthday Secret**.&#13;
+- Added **Cultist Base — Soulsphere: Central Hub Secret**.&#13;
+- Added **UAC Atlantica Facility — Soulsphere: Underwater Facility Secret**.&#13;
+- Added **The Holt — Soulsphere: Crimson Forest Secret Wall**.&#13;
+- Made paired Extra Life pickups representing one secret share one check, including the corresponding pairs in **UAC Atlantica** and **The Holt**.&#13;
+- Integrated the new checks into mission progress and Automap presentation when AP markers are enabled.&#13;
+- Preserved secret discovery and required mission-object interactions in pickup presentation.&#13;
+- Placed the Fortress Ice Bomb pickup in front of the Ripatorium door, with a floating, rotating model above the floor.&#13;
+&#13;
+## HUD, encounter rewards, and inventory recovery&#13;
+&#13;
+- Added Killsanity total/next-target presentation and notifications independent of vanilla challenges.&#13;
+- Revised special-weapon, equipment, and toggle-indicator layout for the different inventory combinations in an AP run.&#13;
+- Extended Archipelago reward presentation to **The Ancient Gods Secret Encounters and Escalation Encounters**.&#13;
+- Expanded native inventory observation and recovery for permanent perks, **Flame Belch, Blood Punch, Support Runes, and special-weapon stages**.&#13;
+- Extended **Resync Inventory** to restore missing permanent upgrades and special-weapon states after resumes and campaign-context changes, preserving gear already present and consumables already spent.&#13;
+- Improved pickup processing, check confirmation, and item-delivery responsiveness during a session.&#13;
+&#13;
+## Launcher and player settings&#13;
+&#13;
+- Added Create Player categories and controls for enemies, Killsanity, logic, resources, and mastery requirements.&#13;
+- Added per-item and per-species weights and attribute-range editing, with individual entries resettable to **Auto**.&#13;
+- Added **Enemies-only YAML import/export**, allowing enemy presets to be shared without replacing other player settings.&#13;
+- Preserved automatic values and individual overrides through YAML import and export.&#13;
+- Exposed multiworld settings in the player editor, including accessibility, progression balancing, **Local Items**, and **Non-local Items**.&#13;
+- Extended **View All Settings** with the new room options and logic/enemy settings.&#13;
+- Reused cached room resources and previously validated enemy-plan data during preparation.&#13;
+- Expanded room-package handling for the additional data in large Enemy Randomizer and Killsanity campaigns.&#13;
+- Kept the interface responsive during lengthy checks and Support Report collection.&#13;
+- Hid auxiliary console windows while retaining the interactive installer window when user action is required.&#13;
+- Recognized equivalent executable paths inside the selected Proton prefix, including Steam game-drive aliases, while retaining process and room checks.&#13;
+- Added a validated fast recognition path for the supported game build before the bounded fallback scan.&#13;
+- Added more specific package, installation, integration, and session states with corresponding recovery actions.&#13;
+- Checked embedded Core/bootstrap build identities during installation and installed-runtime diagnosis.&#13;
+- Expanded Support Reports with room, package, and latest preparation-failure context, including partial reports when some diagnostics are unavailable.&#13;
+- Reorganized Windows and Linux/Proton installation and option documentation, including generation, connection, manual installation, and recovery guidance.&#13;
+&#13;
+## Fixes and improvements to existing features&#13;
+&#13;
+- Improved **Linux/Proton game recognition** when Steam and Wine expose the same executable through different drive aliases. Process identity, selected prefix and room validation remain required.&#13;
+- Improved launcher focus and background-window handling on **Windows and Linux/Proton**, including session startup and preparation.&#13;
+- Improved **inventory recovery after checkpoint reloads and campaign changes**, checking physical ownership before restoring permanent items and preserving spent consumables.&#13;
+- Expanded **Resync Inventory** to cover permanent upgrades and special-weapon stages, including AP capacity upgrades delivered outside the vanilla Crystal menu.&#13;
+- Improved **Automap marker cleanup** for checked locations, including progress restored from the room's checked-location history.&#13;
+- Improved **Ammo Refill** delivery across campaign contexts and included owned Crucible ammunition.&#13;
+- Improved room preparation, installation diagnostics and recovery when a retained room package needs attention.&#13;
+- Made the **Fortress Ice Bomb** accessible in front of the Ripatorium door, with its complete pickup model above the floor.&#13;
+- Fixed **Linux/Proton save detection**, where the active save could stay unrecognized and block save-dependent features after a successful session start.&#13;
+- Kept **rune delivery** moving when the game is briefly too busy to apply a rune: delivery retries, then records the rune and continues the queue, and Resync restores it later without duplicates.&#13;
+- Made the launcher **Inventory** status follow the session, showing preparation and the refusal reason instead of staying on "waiting for an AP session".&#13;
+- Replaced terse **Ammo Refill** unavailability reasons with clear messages, such as "Disconnected from Archipelago; reconnect before using Ammo Refill."&#13;
+- Added **connection diagnostics** to Support Reports: server address and DNS timing, handshake results, disconnect reasons, keepalive latency and client stalls. Passwords and tokens are excluded.&#13;
+- Improved item queue delivery time. Most items should be instantly delivered now.&#13;
+- Fixes #6.&#13;
+&#13;
+## DeathLink Grace&#13;
+&#13;
+- Added **DeathLink Grace** to launcher preferences, allowing one outgoing DeathLink every **X local deaths**. With 3, the third eligible local death sends the DeathLink.&#13;
+- A value of **0 disables Grace**; **0 or 1** keeps sending every eligible local death.&#13;
+- Kept received DeathLinks governed by the room's **Soft** or **Hardcore** mode. Grace controls outgoing local deaths.&#13;
+&#13;
+**The new generation features require a room generated with APWorld v0.7.0. Existing rooms retain their original item placements, enemy plans, and progression rules. Use the launcher, APWorld, and Core versions compatible with your room.**&#13;
+</content>
+    <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.1-beta1</id>
+    <title>Deadlock v1.2.1b1</title>
+    <updated>2026-10-27T16:16:57+00:00</updated>
+    <author>
+      <name>ArchipelagoBrad</name>
+    </author>
+    <content># Self-Host Update&#13;
+Added the option to self host Deadlock-API allowing you to bypass the API Rate Limits and (hopefully) reduce the instances of Error 503.&#13;
+&#13;
+&#13;
+**If you are not self hosting download only the APWorld. If you are Self Hosting download both the APWorld and the Self-Host.zip**</content>
+    <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.1-beta1"/>
   </entry>
 </feed>

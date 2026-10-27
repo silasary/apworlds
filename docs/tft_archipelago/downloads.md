@@ -1,9 +1,12 @@
 # TFT Archipelago
 
 ## Latest
-- <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.7/tft_archipelago.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.8/tft_archipelago.apworld">Latest Version (0.6.0)</a>
 
 ## All Versions
+
+#### v0.6.0
+- <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.8/tft_archipelago.apworld">https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.8/tft_archipelago.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.7/tft_archipelago.apworld">https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.7/tft_archipelago.apworld</a>

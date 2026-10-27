@@ -9,11 +9,7 @@
   "game": "Tony Hawk's Pro Skater 3",
   "github": "https://github.com/randomcodegen/partymod-thps3_ap",
   "license": "MIT",
-  "manifest_fields": [
-    "authors",
-    "minimum_ap_version",
-    "world_version"
-  ],
+  "manifest_fields": [],
   "versions": {
     "1.0.0": {
       "created_at": "2026-08-30T17:31:51Z",
@@ -103,6 +99,20 @@
       "title": "THPS3 AP 1.0.5",
       "version_simple": "1.0.5",
       "world_version": "1.0.5"
+    },
+    "1.0.6": {
+      "created_at": "2026-10-27T12:12:23Z",
+      "description": "## New Features\r\n\r\n- **Wallride unlock:** wallrides now unlock separately from Grind Tricks and Lip Tricks\r\n- **DeathLink:** enable `death_link` in your YAML to send a death when you bail and bail when another player sends one\r\n- **DeathLink amnesty:** `/deathlink_amnesty X` sends one death every X local bails, defaults to 1\r\n- **In-game console:** F1 opens the console. Adjust connection details or use client/server commands\r\n- **Notifications:** smaller temporary popups for received items/messages\r\n- **CAS Randomization:** Create-A-Skater now creates a fully random preset\r\n\r\n## Bugfixes\r\n\r\n- Fixed scoring logic\r\n\r\n**Client and APWorld have to be updated for the new wallride item.**\r\n\r\n\r\n## Installation\r\n1. Install THPS3 and the 1.01 patch. The game directory must contain the unmodified `Skate3.exe`\r\n2. Extract **every file** from `partymod-thps3_ap-*.zip` directly into the THPS3 installation directory, next to `Skate3.exe`\r\n3. From that directory, run `partypatcher.exe` once\r\n\tIt validates `Skate3.exe` and creates the supported `THPS3.exe`\r\n\tIf validation fails, restore the original US English 1.01 executable\r\n4. Edit the `[Archipelago]` connection settings in `partymod.ini`\r\n\tOptionally run `partyconfig.exe` to configure graphics and controls\r\n5. Launch the game with the newly created `THPS3.exe`, not `Skate3.exe`\r\n\r\n[Setup](https://github.com/randomcodegen/Archipelago/blob/thps3_dev/worlds/thps3/docs/setup_en.md)\r\n[Game Info](https://github.com/randomcodegen/Archipelago/blob/thps3_dev/worlds/thps3/docs/en_Tony%20Hawk's%20Pro%20Skater%203.md)",
+      "download_url": "https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.6/thps3.apworld",
+      "has_manifest": false,
+      "hash_sha256": "402c5fa56cd431371c35c70c6b998b5c0d5b3ec18301e1f5e6c0ca9dc2680a0e",
+      "html_url": "https://github.com/randomcodegen/partymod-thps3_ap/releases/tag/1.0.6",
+      "size": 32880,
+      "source_url": "https://api.github.com/repos/randomcodegen/partymod-thps3_ap",
+      "tag": "1.0.6",
+      "title": "THPS3 AP 1.0.6",
+      "version_simple": "1.0.6",
+      "world_version": "1.0.6"
     }
   }
 }

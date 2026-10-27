@@ -1,9 +1,12 @@
 # Feeding Frenzy 2
 
 ## Latest
-- <a href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.7.2/feeding_frenzy_2.apworld">Latest Version (0.7.2)</a>
+- <a href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.8/feeding_frenzy_2.apworld">Latest Version (0.8)</a>
 
 ## All Versions
+
+#### v0.8
+- <a href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.8/feeding_frenzy_2.apworld">https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.8/feeding_frenzy_2.apworld</a>
 
 #### v0.7.2
 - <a href="https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.7.2/feeding_frenzy_2.apworld">https://github.com/barretg/feeding-frenzy-2-archipelago/releases/download/v0.7.2/feeding_frenzy_2.apworld</a>

@@ -88,6 +88,9 @@ by a whole starting mission.
 | `/missions` | show mission unlock status |
 | `/deathlink` | toggle DeathLink |
 | `/amnesty <n>` | show or change the DeathLink amnesty for this session |
+| `/newrun` | starting this slot over: forget which missions were finished on this machine, so the server's completions show as "(Remote Complete)" until played again |
+| `/force_melee_throw` | toggle Melee Throw on in a seed that has no Melee Throw item |
+| `/toggle_custom_bots` | let Bot Swarm's bots wear custom player models, or only the game's own so nobody has to download one; kept across sessions |
 
 ## Campaigns
 
@@ -217,12 +220,14 @@ Chat commands (press `Y` in game, not the console):
 | `!tracker <text>` | just the maps or missions matching that, e.g. `!tracker hl_c03` or `!tracker office` |
 | `!find` | point you at the nearest check on this map you have not found |
 | `!find <text>` | point you at a check by name, e.g. `!find hev charger 3` |
+| `!trace [text]` | draw a line from your feet to the nearest check, or one you name; `!trace` again to stop. A later part's Reached or a mission's Complete traces to the level exit |
 | `!warp <number or name>` | travel to an unlocked mission |
 | `!warp <name>` | the same by name, e.g. `!warp office` |
 | `!warp <name> <part>` | back to one part of it, e.g. `!warp surface tension 3` |
 | `!warp <map>` | the same by map name, e.g. `!warp hl_c11_a3` |
 | `!warp <game> <number>` | a mission counted within one game, e.g. `!warp of 3` (with a part: `!warp of 3 2`) |
-| `!menu` | numbered menus for warping and the tracker, picked with the number keys |
+| `!menu` | numbered menus: warp, a tracker that opens on the mission you are in, find, and trace |
+| `!custombots [0\|1]` | host only: whether Bot Swarm's bots may wear custom player models |
 | `!aphud` | toggle an on-screen counter of checks found on this map, mission and seed |
 | `!hub` | return to the campaign portal |
 
@@ -242,6 +247,8 @@ with no namespace set the separator dot is still there: so it is `.ap`, not
 | `!ap` | `.ap` |
 | `!tracker [text]` | `.ap_tracker [text]` |
 | `!find [text]` | `.ap_find [text]` |
+| `!trace [text]` | `.ap_trace [text]` |
+| `!custombots [0\|1]` | `.ap_custom_bots [0\|1]` |
 | `!warp <number or name>` | `.ap_warp <number or name>` |
 | `!hub` | `.ap_hub` |
 | `!help` | `.ap_help` |

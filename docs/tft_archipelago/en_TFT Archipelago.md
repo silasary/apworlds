@@ -36,16 +36,18 @@ some locations hold traps instead, which add a short extra restriction such as n
 
 ## What are the locations?
 
-There are 172 checks, generated from the current TFT set:
+There are 171 checks, generated from the current TFT set:
 
 - **Major checks** (33): a trait at a high breakpoint or a 5-cost champion on your final board, for example
   "Reach Top 4 with Alune on your board". They need a Top 4 finish (a victory in Tocker's Trials). Only a few
   majors are open at the start; each Progressive Major Check Unlock opens one more.
-- **Minor checks** (139): "Field a 2-Star X" and "Field a 3-Star X" for every champion, plus checks such as
-  "Have 5 Traits active", "Reach 80 gold", "Reach level 8", "Eliminate a player" and "Reach Stage 5". They are
+- **Minor checks** (138): "Field a 2-Star X" and "Field a 3-Star X" for every champion, plus checks such as
+  "Have 5 Traits active", "Reach 80 gold", "Reach level 8" and "Reach Stage 5". They are
   completed during the match and need no Top 4.
 
-3-Star checks for 4- and 5-cost champions never hold an item you need to progress.
+3-Star checks for 4- and 5-cost champions never hold an item you need to progress. Turn off
+`three_star_progression` and the same goes for all 3-Star checks, which is fairer to the other games in a
+multiworld.
 
 Normal, Ranked and Tocker's Trials matches count. Other modes, such as Double Up, complete no checks.
 
