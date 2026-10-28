@@ -87,18 +87,17 @@ Pokemon XD Gale of Darkness:
   robo_kyogre_parts_required:
     # How many Robo Kyogre Parts are needed to reach Citadark Isle.
     # 
-    # Only meaningful when "Robo Kyogre Parts Unlock Citadark Isle" is on. Must be no greater than
-    # "Robo Kyogre Parts Available" below -- generation fails if it is, rather than producing a seed that
-    # cannot be finished.
+    # Only meaningful when "Robo Kyogre Parts Unlock Citadark Isle" is on. If it is greater than
+    # "Robo Kyogre Parts Available" below, Available is raised to match, so the seed can always be finished.
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 1
-    # Maximum value is 20
+    # Maximum value is 40
     8: 50
     random: 0
     random-low: 0 # random value weighted towards lower values
     random-high: 0 # random value weighted towards higher values
-    random-range-1-20: 0 # random value between 1 and 20
+    random-range-1-40: 0 # random value between 1 and 40
 
   robo_kyogre_parts_available:
     # How many Robo Kyogre Parts exist in the multiworld.
@@ -267,7 +266,7 @@ Pokemon XD Gale of Darkness:
 
   exclude_mt_battle_trainers:
     # Excludes Mt Battle from enhanced difficulty -- no extra team members and no level multiplier.
-    # Also excludes Mt Battle trainers from checks. Off gives each of Mt. Battle's trainers 4-100 a check.
+    # Also excludes Mt Battle trainers from checks. Off gives each of Mt. Battle's trainers 4-100 a check and randomizes their teams.
     # 
     # Path Level Scaling is a separate option and still applies to Mt Battle when this is on.
     # Recommended "true" to exclude, unless you're doing a Mt Battle goal.
@@ -349,13 +348,23 @@ Pokemon XD Gale of Darkness:
     # the one-time fights whose checks are sent for you once their area is done.
     # 
     # If an area finishes without you beating its missable trainer, that trainer's Shadow goes to Miror B., the same
-    # as a Shadow that ran from you. Miror B. also brings two Shadows at once at the Poke Spots whenever two or more
-    # are waiting for him.
+    # as a Shadow that ran from you -- unless you have already caught that species. With Kaminko Missable Trainers on,
+    # it stays with the trainer outside Kaminko's House instead. Miror B. also brings two Shadows at once at the Poke
+    # Spots whenever two or more are waiting for him.
     # 
     # Their catch checks follow Shadow Catch Progression and are in logic once the trainer's fight is, like any
     # other Shadow.
     'false': 50
     'true': 0
+
+  kaminko_missable_trainers:
+    # EXPERIMENTAL. A missable trainer you did not beat waits outside Kaminko's House once its area's story is past
+    # it, up to twelve at a time. Their checks are no longer sent for you when the area is done: you get each one by
+    # beating that trainer there. Beat one and they leave; the next time you arrive, another takes their place.
+    # A Shadow on one of them stays with them for that fight, and goes to Miror B. only if you beat them without
+    # snagging it.
+    'false': 0
+    'true': 50
 
   randomize_shadow_species:
     # Shuffles all of the shadow pokemon in the game into different pokemon - can be any in the game.
@@ -468,6 +477,8 @@ Pokemon XD Gale of Darkness:
     # 
     # The other Shadow Pokemon on Citadark Isle move to trainers elsewhere you cannot miss, at those
     # trainers' levels, so every Shadow is still there to snag and purify.
+    # 
+    # Turns on Reduce Citadark Grind if it is off.
     'false': 50
     'true': 0
 
@@ -476,7 +487,17 @@ Pokemon XD Gale of Darkness:
     # toughest challengers' Pokemon from XD or Colosseum, at level 100, with that challenger's own battle AI. His
     # Shadow Lugia fight is left as it is; the six Shadows his final battle held move to other trainers.
     # 
-    # Does nothing with Nightmare Citadark on, which already includes it.
+    # Does nothing with Nightmare Citadark on, which already includes it. Turns on Reduce Citadark Grind if it is off.
+    'false': 50
+    'true': 0
+
+  citadark_admins_only:
+    # On Citadark Isle only the admins fight: Lovrina, Snattle, Ardos, Gorigan, Eldes and Greevil. Every other
+    # trainer there is already beaten and gone, and has no defeat check. Their Shadow Pokemon move to trainers
+    # elsewhere in the game that you cannot miss, at those trainers' levels, so every one is still there to snag and
+    # purify.
+    # 
+    # Works with Nightmare Citadark: the admins keep their Nightmare teams.
     'false': 50
     'true': 0
 
@@ -576,7 +597,7 @@ Pokemon XD Gale of Darkness:
     # A Pokemon already at or above that level goes up one level, like a Rare Candy.
     # 
     # Shadow Pokemon cannot use either. Works with or without Randomize Shops. With it on, two of Gateon's restock
-    # checks are removed from the seed.
+    # checks are removed from the seed. Nightmare Citadark and Nightmare Greevil turn it on (to "on") if it is off.
     'off': 50
     'on': 0
     equal_to_citadark_entry: 0
@@ -588,7 +609,7 @@ Pokemon XD Gale of Darkness:
 
   start_with_poke_spots:
     # Start with the Miror Radar in your Key Items and the Poke Spots' unlock in your starting inventory. Logic treats
-    # the Poke Spots and Miror B. as reachable from the start, and Shadow catches no longer wait on the Miror Radar.
+    # the Poke Spots and Miror B. as reachable from the start.
     # Needs Location Shuffle; with it off, this option is turned off.
     'false': 50
     'true': 0
@@ -642,6 +663,17 @@ Pokemon XD Gale of Darkness:
     # animation, which makes a long playthrough substantially shorter.
     # 
     # Definitely removes a lot of the soul, but shortens time SIGNIFICANTLY.
+    'false': 50
+    'true': 0
+
+  skip_opening_movie:
+    # Skips the opening cutscene after you start a new game (Shadow Lugia lifting the S.S. Libra). You go straight
+    # to the HQ Lab.
+    'false': 50
+    'true': 0
+
+  increased_walk_speed:
+    # You and the people in the overworld walk faster.
     'false': 50
     'true': 0
 

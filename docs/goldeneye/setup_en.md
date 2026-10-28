@@ -1,38 +1,33 @@
 # GoldenEye 007 Setup Guide
 
-## What You Need
+## First-time setup
 
-- Archipelago `0.6.6` or newer
-- BizHawk
-- Archipelago BizHawk Client
-- GoldenEye 007 AP world installed as a custom world
-- A compatible patched GoldenEye 007 ROM
+Install:
 
-## Install the AP World
+1. Archipelago 0.6.7 or newer
+2. BizHawk (Should work on any 2.9+, but was optimized on 2.10)
+3. The newest goldeneye.apworld on the releases page.
 
-1. Place the packaged `goldeneye.apworld` into Archipelago's `custom_worlds` folder.
-2. Restart Archipelago tools if they were already open. I still fuck this up all the time, you actually have to completely close everything AP if you install a new apworld.
+Restart Archipelago after installing the world.
+You need your own legally dumped USA GoldenEye 007 ROM in `.z64` format.
+A pre-patched ROM will not work.
 
-## Generate a Seed
+## Play from a room
 
-1. Open your YAML template.
-2. Configure your GoldenEye options.
-3. Generate normally through Archipelago.
-4. Do death_link unless you're a big baby.
+1. Download your `.apge` patch from the Archipelago room page.
+2. Open it with Archipelago Launcher. On Windows, use **Open with**, select
+   `ArchipelagoLauncher.exe`, and choose to always use it for `.apge` files.
+3. On first use, select your base GoldenEye ROM and `EmuHawk.exe` when asked.
 
-## BizHawk Setup
+The launcher creates a patched `.z64` beside the download, starts BizHawk,
+loads GoldenEye's Lua script, enables the 8 MiB Expansion Pak, and opens the
+client. This ROM NEEDS the Expansion Pak so don't turn that off.
+The ROM supplies your slot and seed. Room downloads supply the server
+address. If there's no password, just leave that blank if it asks.
 
-1. Open the patched GoldenEye ROM in BizHawk.
-2. Load `goldeneye_ap_randomizer.lua`.
+## Host Server / Play Solo
 
-## Connect to Archipelago
-
-1. Start the Archipelago BizHawk Client.
-2. Connect it to your server.
-3. Join using your GoldenEye slot name.
-
-## Troubleshooting
-
-- If the client does not connect, make sure `goldeneye_ap_randomizer.lua` and `connector_bizhawk_generic.lua` are in the same folder.
-- If generation fails, refresh the CSV exports and rerun `test_build/codegen.py`.
-- If the world does not appear in Archipelago, confirm the `.apworld` is in `custom_worlds` and that `archipelago.json` is present inside the package.
+Use the Options Creator in Archipelago Launcher or manually configure your 
+GoldenEye player YAML and use ArchipelagoGenerate.exe. Upload the generated
+game to a room or use ArchipelagoServer.exe to run locally. The seed host should 
+not need a base ROM.

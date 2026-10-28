@@ -2,95 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-27T18:20:36.300858+00:00</updated>
+  <updated>2026-10-28T00:21:31.112261+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0c</id>
-    <title>Refunct v1.8.0rc0</title>
-    <updated>2026-10-24T21:07:33+00:00</updated>
-    <author>
-      <name>Spineraks</name>
-    </author>
-    <content>Do we want new exciting features? YES&#13;
-Do we get them now? no...&#13;
-&#13;
-Same apworld &amp; yaml, just a mod update&#13;
-- Some blocks in minigames rotate now (because we can, but we can't move them all because that is too heavy) (you can turn this off in settings)&#13;
-- Fix deathlink issue when changing into defunct minigame&#13;
-- Fixed issue where the mod wouldn't launch if there was an é in the pathname&#13;
-- Added visual block that points underwater so maybe Block Blub is less confusing&#13;
-- Add note to readme about malloc linux error (thanks @riking)&#13;
-- Print version number in window&#13;
-</content>
-    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0c"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.1</id>
-    <title>Donkey Kong 64 v2.0.1</title>
-    <updated>2026-10-24T21:10:31+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.1
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.3.2</id>
-    <title>Metroid: Samus Returns v0.3.2</title>
-    <updated>2026-10-24T23:21:03+00:00</updated>
-    <author>
-      <name>lil David</name>
-    </author>
-    <content>Updates Open Samus Returns Rando to 3.6.2. That release fixes a multiworld issue and in my testing seems to have fixed connection issues players have been getting around receiving items and sending hints.&#13;
-&#13;
-You'll need to repatch your game to see this take effect.&#13;
-&#13;
-**Full Changelog**: https://github.com/lilDavid/AP-SamusReturns/compare/0.3.1...0.3.2</content>
-    <link href="https://github.com/lilDavid/AP-SamusReturns/releases/tag/0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.6</id>
-    <title>Universal Tracker v0.3.6</title>
-    <updated>2026-10-25T02:41:15+00:00</updated>
-    <author>
-      <name>FarisTheAncient</name>
-    </author>
-    <content>## What's Changed&#13;
-* Item tracker fixes by @NaveTK in https://github.com/FarisTheAncient/Archipelago/pull/155&#13;
-* `/reload_pack` command to... reload... the poptracker pack (only exists if the map failed to load, was dismissed, or you're on a source install)&#13;
-* added `nested_pack` attribute for tracker_world struct for packs that are in a folder of the same base name (like in GitHub source download links)&#13;
-* some refactoring you prob don't have to care about&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.3.5...Tracker_v0.3.6</content>
-    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.6"/>
-  </entry>
   <entry>
     <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_Addons_v0.1.4</id>
     <title>Universal Tracker Addons v0.1.4</title>
@@ -1343,6 +1259,68 @@ This release contains no new AP features, and is published for the express purpo
     <link href="https://github.com/FFX-AP/Archipelago/releases/tag/v0.10.0-prerelease"/>
   </entry>
   <entry>
+    <id>https://github.com/NotFamilyJules/goldeneye_ap/releases/tag/v0%2C2</id>
+    <title>GoldenEye 007 v0.1.1</title>
+    <updated>2026-10-27T10:26:16+00:00</updated>
+    <author>
+      <name>FamilyJules</name>
+    </author>
+    <content>### Goldeneye Multiworld Archipelago v0.2&#13;
+&#13;
+Full code refactor to be more modular and robust. Far less reliance on AI as I'm becoming more confident with flesh coding. Now uses a patched rom vs the Everything_Unlocked Patch. Streamlined [install and setup](https://github.com/NotFamilyJules/goldeneye_ap/blob/main/docs/setup_en.md). &#13;
+&#13;
+[Release Trailer with Video Setup](https://youtu.be/sY99KyXEgXQ)&#13;
+&#13;
+**Quick Start**&#13;
+&#13;
+1. Install the latest Archipelago and BizHawk, then download goldeneye.apworld from this page’s releases. Optional: install the latest PopTracker and Vincent’sSin’s GoldenEye tracker pack.&#13;
+2. Close all Archipelago windows, double-click goldeneye.apworld to install, then reopen the Launcher. Create and export your YAML using Options Creator.&#13;
+3. Send your YAML to your host or generate your own game. Open your .apge with ArchipelagoLauncher.exe. When prompted, select EmuHawk.exe and your unpatched USA GoldenEye .z64 ROM.&#13;
+4. BizHawk, the client, and Lua should launch and connect automatically. Leave the 8 MiB Expansion Pak enabled. You’re ready to play!&#13;
+&#13;
+**Items:**&#13;
+&#13;
+- All guns (individually or progressive)&#13;
+- Key Items&#13;
+- Loadout Items&#13;
+- Level Unlocks&#13;
+- Cheats&#13;
+- Ammo Fillers (adds to your starting pool of that weapon)&#13;
+- Health Packs / Armor&#13;
+&#13;
+**Locations:**&#13;
+&#13;
+- Objective Clears (per map or per difficulty)&#13;
+- Level Clears (per map or per difficulty)&#13;
+- Freestanding Objects and Weapons&#13;
+- NPC Dropped Key Items&#13;
+- NPC Handoff Items&#13;
+- Cheat Unlocks&#13;
+&#13;
+**Traps:**&#13;
+&#13;
+- Goldeneye Trap&#13;
+- Holster Gun Trap&#13;
+- Auto-Fail Trap&#13;
+&#13;
+**Added Features**&#13;
+&#13;
+- Quick Equip using D-pad&#13;
+- Randomized Music&#13;
+- Randomized SFX&#13;
+- Randomized NPC Heads/Bodies&#13;
+- Randomized Guard Loadouts&#13;
+- Enemy Weapons pickups are vanilla, just ammo, or nothing&#13;
+- In-Game Item Tracker (F8 to close)&#13;
+- Poptracker by Vincent'sSin&#13;
+&#13;
+**Known issues:**&#13;
+&#13;
+- Depot Ammo Cache Crash - Sometimes picking up the items in the ammo cache room causes bizhawk to crash. I've investigated extensively but haven't been able to recreate it.&#13;
+- Depot Final Hanger Armor - This armor has been known to be picked up but not send a check. Not sure why as I also can't replicate this one.</content>
+    <link href="https://github.com/NotFamilyJules/goldeneye_ap/releases/tag/v0%2C2"/>
+  </entry>
+  <entry>
     <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.2.1</id>
     <title>Dragon Quest IX v0.2.1</title>
     <updated>2026-10-27T14:26:21+00:00</updated>
@@ -1610,5 +1588,139 @@ Added the option to self host Deadlock-API allowing you to bypass the API Rate L
 &#13;
 **If you are not self hosting download only the APWorld. If you are Self Hosting download both the APWorld and the Self-Host.zip**</content>
     <link href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/tag/1.2.1-beta1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.5</id>
+    <title>Donkey Kong 64 v2.0.5</title>
+    <updated>2026-10-27T18:55:46+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.5
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/tag/v0.1.6</id>
+    <title>Pokemon XD Gale of Darkness v0.1.6r2</title>
+    <updated>2026-10-27T22:51:35+00:00</updated>
+    <author>
+      <name>GiovanavoiG</name>
+    </author>
+    <content>## Options&#13;
+&#13;
+- **New: Kaminko Missable Trainers** (off, experimental). Missed one-time trainers wait outside Kaminko's House instead of having their checks sent for you. See below.&#13;
+- **New: Citadark Admins Only** (off). Only Lovrina, Snattle, Ardos, Gorigan, Eldes and Greevil fight on Citadark Isle. The rest are marked beaten and gone, with no checks, and their Shadows move elsewhere. Works with Nightmare Citadark.&#13;
+- **New: Skip Opening Movie** (off). New Game goes straight to the HQ Lab. It's part of the patch, so it works before the client connects.&#13;
+- **New: Increased Walk Speed** (off). You walk at double speed - added by Rotobash (Pull request #19.)&#13;
+- **Robo Kyogre Parts Required** goes up to max of 40 (was 20).&#13;
+- **Nightmare Citadark and Nightmare Greevil turn on Reduce Citadark Grind** if your YAML has it off. If you picked a Reduce Citadark Grind setting yourself, it's kept.&#13;
+&#13;
+## Checks&#13;
+&#13;
+- **Citadark Isle's chests are named.**&#13;
+&#13;
+- **Gateon's shop checks run 1–14 with no gap.**&#13;
+&#13;
+## Logic&#13;
+&#13;
+- **Shadow catches are in logic as soon as their fight is.** The backup for a Shadow you knocked out used to be the Poke Spots, after Pyrite. It's now Miror B. outside Kaminko's House, open from the start.&#13;
+- **Chobin never gets a Shadow.** A Shadow on his late Robo Groudon fight was counted the moment Kaminko's House was reachable.&#13;
+&#13;
+## Kaminko's House&#13;
+&#13;
+**Miror B.** is teaching Kaminko the art of the groove.&#13;
+- While he's holding Shadows that got away, he fights you for them with his Poke Spot team.&#13;
+- Snag one and it leaves his queue everywhere.&#13;
+- Beating him there sends no Miror B. defeat checks.&#13;
+&#13;
+**Kaminko Missable Trainers (experimental option)**&#13;
+- The client fills Kaminko's House with missable trainers you missed and haven't beaten, and each trainer shows up with their own overworld model.&#13;
+- Each trainer says who they are and asks to battle. A win sends their usual "Defeat –" check. Beaten trainers leave, and later visits fill the gaps.&#13;
+- A Shadow on one stays with them for that fight. Win without snagging it, and it runs to Miror B., who's standing right there.&#13;
+&#13;
+## Story and travel&#13;
+&#13;
+- **The Music Disc scene no longer repeats.**&#13;
+- **The ID Card and Data ROM chests are (I think) fixed.**&#13;
+- **Lovrina #2, Grason and Litnar now appear on Citadark Isle.**&#13;
+- **The HQ Lab hold only ever lowers the lab.** An early Machine Part from the multiworld no longer jumps the lab ahead.&#13;
+- **Every room plays its own music.**&#13;
+- **After a crash or reload, the Snag Machine comes back.** If the HQ Lab is past 0x03 and you don't have the Snag Machine, you're given it, Kaminko's House is opened on the map, and Naps's Shadow goes to Miror B. if you never snagged it.&#13;
+ &#13;
+## Trainers&#13;
+&#13;
+- **Mt. Battle's teams are randomized when Exclude Mt. Battle Trainers is off**: new species and movesets by the same rules as story trainers. With the option on, Mt. Battle stays vanilla.&#13;
+&#13;
+---&#13;
+&#13;
+## Shadow Pokemon&#13;
+&#13;
+- **Generation III species are read correctly** in the Shadow scan and the PC fallback. A Sceptile or Gardevoir could be misread as another species, so purifications could be misnamed or double-counted.&#13;
+&#13;
+## Wonder trades (new)&#13;
+&#13;
+Trade with your multiworld's Emerald and Crystal players, both ways.&#13;
+- `/wondertrade send &lt;box&gt; &lt;slot&gt;` sends a PC Pokemon, `/wondertrade box &lt;n&gt;` lists a box, and `/wondertrade` shows the status.&#13;
+- One at a time: send one, and the next Pokemon another player sends lands in your first free PC slot. Save after each send and each arrival.&#13;
+- Unpurified Shadows, eggs, Bonsly and Munchlax can't be sent. Shadow moves, moves the other game doesn't have, and the items this randomizer uses for checks are left off.&#13;
+- A traded-in Pokemon never counts as a catch or a purification.&#13;
+&#13;
+## Client&#13;
+&#13;
+- **Switching seeds in one client run starts clean**, and any purification count the server never got is sent again.&#13;
+- **Guaranteed Catches is kept true in the running game.** If the game is missing the always-catch code or any catch rate is below 255 (an ISO patched without it, or a save state from another build), the client writes them back and says so.&#13;
+- **Perr's Machine Part is also sent** when the Machine Part hold has pulled the story back from his scene, or Gateon's remembered story mark has reached it.&#13;
+- **New commands:** `/kaminko`, `/mirorqueue`, `/saveclock`, `/wondertrade`, `/mirorforce kaminko`, and `/openkaminko` (debug).&#13;
+- **`/pokespotforce rock|oasis|cave [number or name]`** puts one of that spot's Pokemon there, waiting for you, even with no Poke Snacks. No arguments lists who is there.&#13;
+&#13;
+&#13;
+</content>
+    <link href="https://github.com/GiovanavoiG/PokemonXD_Archipelago/releases/tag/v0.1.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.46</id>
+    <title>Mental Omega v0.6.9</title>
+    <updated>2026-10-27T23:03:59+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Remove unnecessary buffs for AI in Final Fortress&#13;
+- Fix crate pickup in Final Fortress&#13;
+- add correct build limit for defensive structures in Final Fortress&#13;
+- Fix enemy rewards&#13;
+- Add variation in enemy waves for Final Fortress&#13;
+- Add Transport, Fortified infrastructure, open topped and stolen tech perks&#13;
+- fix explosion units with correct explosion&#13;
+- Add Shopmode Classic!&#13;
+- Add Skirmish maps for Shop/Grid selector&#13;
+- Fix Reprocessor&#13;
+- Add Color for Final Fortress mode&#13;
+- Fix Libra Clone buff for Final Fortress&#13;
+- Fix Soviet Bunker/Instant Bunker shared buffs&#13;
+- Fix UI for smaller screensizes</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.46"/>
   </entry>
 </feed>
