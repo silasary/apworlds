@@ -1,6 +1,19 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 0.4.3
+
+- Fixed a rare case of patch files failing due to internal species forms
+- Fixed the client incorrectly sending the goal when switching slots without closing it
+- Fixed the client crashing when setting `"(Shiny)Formcountsanity` to maximum
+- Fixed patching crashing due to an unknown problem with trainer pokémon
+  - It's only a band-aid fix for now
+- Fixed all `[...]countsanity` options sending checks for one number less than the actual amount
+
+### Is this version compatible with older multiworld slots and save files?
+Yes, back to 0.4.0
+However, UT might be inaccurate when tracking worlds generated before 0.4.3
+
 ## 0.4.2: "Shiny***fix***sanity" update
 
 - Fixed logic of some Opelucid City Battle House trainers

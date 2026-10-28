@@ -1,9 +1,12 @@
 # Spirit Valley
 
 ## Latest
-- <a href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V2.1.1/spiritvalley.apworld">Latest Version (2.1.1)</a>
+- <a href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V2.1.2/spiritvalley.apworld">Latest Version (2.1.2)</a>
 
 ## All Versions
+
+#### v2.1.2
+- <a href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V2.1.2/spiritvalley.apworld">https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V2.1.2/spiritvalley.apworld</a>
 
 #### v2.1.1
 - <a href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V2.1.1/spiritvalley.apworld">https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V2.1.1/spiritvalley.apworld</a>

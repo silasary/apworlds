@@ -164,7 +164,7 @@ Every entry contains 2 or 3 arguments:
     The arrow only appears when the line ends with an `[End]`. You always need to make sure you only and always use 
     an `[End]` when needed. If it is needed, and you omit it, the text box will close without any player interaction.
     If it's not required, and you add it, the game will wait for two button presses.
-    - `[c_xxx_#x_x_...]` and `[d_xxx_#x_x_...]` are various commands used for different purposes, e.g. displaying 
+  - `[c_xxx_#x_x_...]` and `[d_xxx_#x_x_...]` are various commands used for different purposes, e.g. displaying 
     various names with different formatting, forcing the text to be displayed faster, changing the text color, etc.
     The best way to learn what commands to use for your use case is by looking at already existing text lines, 
     especially the one you are trying to overwrite.

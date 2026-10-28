@@ -109,6 +109,34 @@
       "title": "Starship Titanic AP v0.3.2",
       "version_simple": "0.3.2",
       "world_version": "0.3.2"
+    },
+    "v0.4.0": {
+      "created_at": "2026-10-28T01:59:28Z",
+      "description": "# v0.4.0 (Unstable)\r\nBoth client and .apworld updated. Incompatible with older seeds.\r\nMake sure to regenerate your YAML templates to see the new goal options.\r\n## New Features\r\n- New Goal Option: Repair Titania\r\n  - Goal completed the moment you correctly add the last piece to Titania. Saves a few minutes of cutscenes compared to the Return Home goal\r\n- Improved information panel on the client showing room accessibility and checks remaining\r\n- More client commands. Changed prefix to / instead of ! for clarity. Usable in-game or in the client window:\r\n  - /help - list all client commands\r\n  - /ap <text> - sends <text> to the AP server from in game\r\n  - /hint - alias for /ap !hint. Used the same way as AP's !hint command\r\n  - /force_seed - Forces the client to accept the current save as the correct save for the connected slot\r\n  - /return <item> - [experimental] Returns an item to your inventory. Only works with items already received from the multiworld. Recommended only as a bug recovery tool\r\n  - /getmail - [experimental] Moves all the pending granted AP items from the mail system straight into your inventory. Skip listening to the Succ-U-Bus vomiting sounds! (after 170 hours of testing, I am overjoyed)\r\n  - /loc - prints your current location data\r\n## Changes\r\n- Client log now uses the standard AP colors when reporting checks and items\r\n- Changed client command prefix to / to avoid confusion with !-prefixed AP commands\r\n## Fixes\r\n- Crushed TV location check would permanently fail if you held it on your cursor for too long after you picked it up\r\n- Added missing Parrot Lobby access rule to Crushed TV check\r\n- Titania's Nose could be invisible and non-interactive in some situations\r\n- Titania's Core would sometimes render invisibly inside the parrot cage\r\n- The save/seed tagging system would only tag the save game with the AP seed, which could cause issues if there were multiple Starship Titanic slots in the room. Now it uses the seed and the slot name\r\n## Known Issues in this release\r\n- Cosmetic issues with both Ear puzzles\r\n- Sometimes you can take the Phonograph ear before you've finished the Music Room puzzle\r\n- Traps are generated as filler items but their effects are not implemented yet\r\n\r\n## General Tips\r\n- I highly recommend Universal Tracker to see in-logic checks\r\n\r\nFind installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)",
+      "download_url": "https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.4.0/starship_titanic.apworld",
+      "has_manifest": false,
+      "hash_sha256": "484b06204a675705f9bf734b300596c814437f39a4a0b74bc4b9cb06d3fb3e07",
+      "html_url": "https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.4.0",
+      "size": 12501,
+      "source_url": "https://api.github.com/repos/rescheer/Starship-Titanic-AP",
+      "tag": "v0.4.0",
+      "title": "Starship Titanic AP v0.4.0",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
+    },
+    "v0.4.1": {
+      "created_at": "2026-10-28T03:04:30Z",
+      "description": "# v0.4.1 (Unstable) - Bug Fix\r\nClient update only. Compatible with seeds back to v0.4.0\r\n## Fixes\r\n- Magazine check could be impossible in a specific situation\r\n## Known Issues in this release\r\n- Cosmetic issues with both Ear puzzles\r\n- Sometimes you can take the Phonograph ear before you've finished the Music Room puzzle\r\n- Traps are generated as filler items but their effects are not implemented yet\r\n\r\n## General Tips\r\n- I highly recommend Universal Tracker to see in-logic checks\r\n\r\nFind installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)",
+      "download_url": "https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.4.1/starship_titanic.apworld",
+      "has_manifest": false,
+      "hash_sha256": "c99958cedd5523b47745ca9e42dcf1528bcbfee0e20565d069b1ed8274a9af64",
+      "html_url": "https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.4.1",
+      "size": 12501,
+      "source_url": "https://api.github.com/repos/rescheer/Starship-Titanic-AP",
+      "tag": "v0.4.1",
+      "title": "Starship Titanic AP v0.4.1",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1"
     }
   }
 }

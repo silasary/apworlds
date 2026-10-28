@@ -1,9 +1,15 @@
 # Starship Titanic
 
 ## Latest
-- <a href="https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.3.2/starship_titanic.apworld">Latest Version (0.3.2)</a>
+- <a href="https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.4.1/starship_titanic.apworld">Latest Version (0.4.1)</a>
 
 ## All Versions
+
+#### v0.4.1
+- <a href="https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.4.1/starship_titanic.apworld">https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.4.1/starship_titanic.apworld</a>
+
+#### v0.4.0
+- <a href="https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.4.0/starship_titanic.apworld">https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.4.0/starship_titanic.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.3.2/starship_titanic.apworld">https://github.com/rescheer/Starship-Titanic-AP/releases/download/v0.3.2/starship_titanic.apworld</a>

@@ -153,6 +153,21 @@
       "title": "0.7.0 - Beta",
       "version_simple": "0.7.0",
       "world_version": "0.7.0"
+    },
+    "0.7.1": {
+      "created_at": "2026-10-28T01:52:13Z",
+      "description": "# DOOM Eternal Archipelago v0.7.1\r\n\r\nBug fixes for room generation, item delivery, Automap checks, encounters, and launcher setup.\r\n\r\nUse **Mod and APWorld 0.7.1** with **Sentinel Core 1.1.1**.\r\n\r\n## Launcher and room preparation\r\n\r\n- Improved setup and recovery messages for missing, damaged, conflicting, or incompatible game connection files.\r\n- Improved Linux/Proton process detection and installation diagnostics.\r\n- Expanded Support Reports with installed-file identities, installer output, and native diagnostics retained after the game exits. Passwords and tokens are excluded.\r\n- Fixed enemy-plan reconstruction from compact room data.\r\n- Reduced room compilation work and included matching prebuilt resources for v0.7.1.\r\n\r\n## Item delivery and recovery\r\n\r\n- Improved delivery recovery when saving receipt progress fails, preserving the resume position instead of continuing with uncertain state.\r\n- Improved native command deduplication and delivery retries.\r\n- Fixed Ammo Refill handling around delayed confirmations, uncertain charges, and room changes.\r\n- Prevented Frag Grenade upgrades from granting the base grenade before its item is received.\r\n\r\n## Encounters and enemy randomization\r\n\r\n- Fixed replacement enemies inheriting the behavior of the enemy they replaced, which could leave a demon idle and the arena locked (for example, the cell room after the Super Shotgun in **Cultist Base**).\r\n- Fixed the final arena of **Nekravol \u2014 Part II** killing every demon at once when the Doom Hunter's replacement died.\r\n- Limited endless reinforcements before waves that wait for most enemies to die, so encounters such as the **Taras Nabad** Slayer Gate can no longer spawn fodder indefinitely.\r\n- Mission challenges that require a specific demon, such as **Resurrect No More** in Nekravol \u2014 Part II, now always keep an original enemy of that type in the level.\r\n\r\n## Automap\r\n\r\n- Fixed check publication for location offsets above 511.\r\n- Added the missing native registration for **Exultia \u2014 Soulsphere: Lava Secret Chamber**.\r\n\r\n## APWorld and Universal Tracker\r\n\r\n- Fixed compact-campaign battery budgets and validation of the generator's selected surplus.\r\n- Made opening-equipment placement respect excluded locations, item restrictions, and plando placements.\r\n- Added Universal Tracker reconstruction of campaign options, enemy plans, Killsanity, locations, and progression logic.\r\n\r\n**Generation and tracker fixes apply to rooms generated with APWorld v0.7.1. Existing rooms retain their original placements and generation settings.**",
+      "download_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.1/doometernal.apworld",
+      "has_manifest": true,
+      "hash_sha256": "fe3a4d8484727c39fb6805c1ee0b6eb606c708c8bc6fcb97cf6e5736bdf1e883",
+      "html_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 1024565,
+      "source_url": "https://api.github.com/repos/snowzzrra/DoomEternal-AP-Mod",
+      "tag": "0.7.1",
+      "title": "0.7.1 - Beta",
+      "version_simple": "0.7.1",
+      "world_version": "0.7.1"
     }
   }
 }

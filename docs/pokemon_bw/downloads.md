@@ -1,9 +1,12 @@
 # Pokemon Black and White
 
 ## Latest
-- <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.2/pokemon_bw.apworld">Latest Version (0.4.2)</a>
+- <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.3/pokemon_bw.apworld">Latest Version (0.4.3)</a>
 
 ## All Versions
+
+#### v0.4.3
+- <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.3/pokemon_bw.apworld">https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.3/pokemon_bw.apworld</a>
 
 #### v0.4.2
 - <a href="https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.2/pokemon_bw.apworld">https://github.com/BlastSlimey/PokemonBWAP/releases/download/0.4.2/pokemon_bw.apworld</a>

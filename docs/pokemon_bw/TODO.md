@@ -4,13 +4,16 @@ apworld
 - specialized unittests for rando modifiers
 - correlate mods in move data rando not working? => Special unit test cases
 - Keep levels and amount still broken, see unittests
+- too many pokemon for a trainer written into patch file
 
 rom
 - trainer flags setzen lassen wo es in den scripts fehlt und dann besiegte trainer IDs ins datastorage
+- give national dex at start, will be turned into an item later on like running shoes
 
 both
 - fill more funny dialog
 - add funny text "your free trial has ended" to old man in Striaton
+- loot sack grunts broken? apparently not moving even after beating lenora
 
 # Not urgent
 
@@ -19,6 +22,7 @@ both
 - extended location hint for challenge rock
 - a way to check whether map or fly menu is opened, used for switching to ow map in UT
 - Running shoes as an item, making mom cutscene on route 2 a check
+- regional and national pokedex as items
 - reload_key_items sometimes has index out of range error
 - items receiving in client has rare cases of recursion errors
 - make client use static game data pointers
