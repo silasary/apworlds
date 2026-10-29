@@ -6,7 +6,7 @@ Bearing the glyph of Dominus, will Shanoa be able to defeat him?
 
 
 ## Downloads
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe2.0.1/cv_ooe.apworld">Latest Version (2.0.1)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvooe2.1/cv_ooe.apworld">Latest Version (2.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

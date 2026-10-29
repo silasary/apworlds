@@ -18,7 +18,7 @@
 
 ## Setting Up the Client
 
-Put the `mcdungeons.apworld` into your Archipelago `custom_worlds/` folder. Or, run it, it should appear in the `custom_worlds/` folder. There's is no mods needed. There is a client and it's inside the `.apworld` and the Launcher picks it up automatically.
+Put the `mcdungeons.apworld` into your Archipelago `custom_worlds/` folder. Or, run it, it should appear in the `custom_worlds/` folder. No mods are needed. There is a client and it's inside the `.apworld` and the Launcher picks it up automatically.
 
 ## Connecting to a Game
 
@@ -28,7 +28,7 @@ Put the `mcdungeons.apworld` into your Archipelago `custom_worlds/` folder. Or, 
 
 After that, the client injects `dungeons_bridge.dll` into the  game on its own to detect chests, boss kills,
 and mission completion. If Windows Defender or another
-antivirus flags this, add an exclusion for the client's folder. This uses injection to work so it gets flagged falsly rather than for an actual problem.
+antivirus flags this, add an exclusion for the client's folder. This uses injection to work so it gets flagged falsely rather than for an actual problem.
 
 If Minecraft Dungeons isn't running yet when you start the client, it will keep retrying in the background.
 

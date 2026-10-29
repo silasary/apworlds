@@ -54,13 +54,24 @@ You can reach the first chest in Skeleton Cave by first killing the top Bone Pil
 
 If you fail to keep up with the moving platform, you can simply wait for it to come back around.
 ### --------------------------------------------------------------
-## • Tymeo Mountains Spike Room With Arma Felix
+## • Cross Spikes with Arma Felix
 ![](../src/tricks/tymeo_spike_tackle.gif)
 
-You can time the invincibility frames of Arma Felix's tackle attack to get through the spike hallway in Tymeo Mountains without taking damage.
+You can time the invincibility frames of Arma Felix's tackle attack to get through rows of spikes without taking damage.
 ### ---------------------------------------------------------------
 ## • Mechanical Tower Lowest Gear Room with Double Jump
 ![](../src/tricks/tower_jump_left.gif)
 ![](../src/tricks/tower_jump_right.gif)
 
 You can dive kick off of the Imp in the lowest gears room to ascend both sides.
+### ---------------------------------------------------------------
+## • Misty Forest Ledges with Kicks
+![](../src/tricks/misty_ledges_with_kicks.gif)
+
+You can dive kick off of the enemies to reach the item ledges in Misty Forest road,
+though it's more awkward than in Oblivion Ridge.
+### ---------------------------------------------------------------
+## • Speed Boots in Logic
+![](../src/tricks/logic_boots_speed.gif)
+
+You can make it across certain gaps by equipping the Mercury or Winged bootss.
