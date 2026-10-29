@@ -1,9 +1,12 @@
 # Final Fantasy Crystal Chronicles
 
 ## Latest
-- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.1.7/ffcc.apworld">Latest Version (0.1.7)</a>
+- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.2.0/ffcc.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.2.0/ffcc.apworld">https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.2.0/ffcc.apworld</a>
 
 #### v0.1.7
 - <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.1.7/ffcc.apworld">https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.1.7/ffcc.apworld</a>

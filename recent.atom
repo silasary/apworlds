@@ -2,45 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-29T12:17:16.862571+00:00</updated>
+  <updated>2026-10-29T18:20:47.165117+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.6</id>
-    <title>The Legend of Zelda - Oracle of Seasons v26.0.6</title>
-    <updated>2026-10-25T20:10:17+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>## 🗳️ New Options&#13;
-- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
-- Freestanding items can now be removed from the randomizable item pool&#13;
-- The trade sequence can also separately be removed, excluding the pedestal&#13;
-- The linked items can also be removed from the itempool&#13;
-&#13;
-## ⏫ Miscellaneous Improvements&#13;
-- Made Blaino reequip items after the match&#13;
-  - It is also no longer possible to open the ring menu during the match&#13;
-&#13;
-## 🧠 Logic&#13;
-- Added the jump between market and forge with just a feather and pegs in hard&#13;
-- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
-- Added the need to progress a bit in the game before getting gasha rewards, shop items and maple trade&#13;
-&#13;
-## 🛠️ Bugfixes&#13;
-- Fixed D2's boss room having holes if Digdogger was the boss&#13;
-- Fixed Gleeok freezing when being beaten in D3&#13;
-- Moved the D4 reward when the room was edited for Dodongo&#13;
-- Fixed Ricky crashing if going up to the swamp and trying to leave&#13;
-- Fixed a crash when leaving Subrosia through the village portal room if coming from the Subrosia start&#13;
-- Fixed the 3rd regular shop item's repeatability depending on the first's</content>
-    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.6"/>
-  </entry>
   <entry>
     <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.6.4</id>
     <title>Links Awakening DX Beta v13.6.4</title>
@@ -1657,5 +1623,95 @@ Note: This will be the last update before the game's full release unless somethi
     </author>
     <content>New release the v.0.0.3</content>
     <link href="https://github.com/BarbeucTheCat/Minecraft-Dungeons-Apworld/releases/tag/v0.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta.0.2.0</id>
+    <title>Final Fantasy Crystal Chronicles v0.2.0</title>
+    <updated>2026-10-29T15:19:46+00:00</updated>
+    <author>
+      <name>EverydaySimpleDev</name>
+    </author>
+    <content>## New Features&#13;
+&#13;
+- Victory Goal: Monster Hunt. Defeat at least one of every enemy type or every enemy in every cycle! Chests are no longer checks (Keep in mind that if you enable every enemy as a check, you will have over 1000 checks!)&#13;
+&#13;
+- Shop Checks: The first purchase from each shop slot is a check, 94 slots in 8 shops. Each shop sells the same stock all game. Tipa's shop is excluded, since it only exists with a Merchant family. Shella's shop expects Veo Lu Sluice first, for the Shella Mark.&#13;
+&#13;
+- Mog Stamp Hints (on by default): each new Mog Stamp hints where one of your progression items is, in any world.&#13;
+&#13;
+- New AP item model: It no longer looks like a bag but looks like the AP logo! &#13;
+&#13;
+### New Options&#13;
+&#13;
+- Hotspot Elements: the elemental pools change element every year. &#13;
+&#13;
+Match Miasma Streams: each side of the world gets the elements its streams need that year. This seems to be the fix for most of the soft locks due to having the miasma streams randomized!&#13;
+Shuffled: random elements each year. May end up with more soft locks but thought I would still give it as a option for players. The client still has the /element command just in case you get stuck!&#13;
+&#13;
+A dungeon keeps its usual number of elements. The world-map name bubble and the "Change element" menus follow the year too.&#13;
+&#13;
+- Progressive Artifact Order: game order, strength first, magic first, defense first, or random.&#13;
+&#13;
+- Progression Cycles: play only Cycle 1, or Cycles 1-2. Later cycles hold only filler. Makes seeds a bit faster!&#13;
+&#13;
+- Dungeon shortcuts, one option each! Makes it a lot faster to get to the end of stages! These options do not change any logic but are only to be helpful to the player.&#13;
+&#13;
+River Belle Path bridges (Not a big shortcut but I thought I would include it)&#13;
+Goblin Wall gates (All the gates are open in both areas. Making it fast to go to the boss!)&#13;
+Mine boxes (No longer need to keep on hitting the cart to play the stage)&#13;
+Tida webs (Webs don't show up to make it faster on the player!)&#13;
+Moschet Manor doors (Doors will open up right away as you enter the area)&#13;
+Selepation Cave elevators (Elevators start lowered)&#13;
+Conall Curach log bridges (The log bridges start enabled in the stage)&#13;
+Rebena Te Ra gates (All magic puzzle gates are opened!)&#13;
+Lynari Desert Unknown puzzle (I kept forgetting this puzzle order so this saved me some time haha)&#13;
+&#13;
+- Chest Color Matches Contents: gold chests hold progression items! &#13;
+&#13;
+- Hide Collected Chests: chests whose check is done don't appear. Some players may want to farm the chest resources while others want to be able to see the chests they missed.&#13;
+&#13;
+- Magicite Needs Its Ring: magicite only works once you have its ring. Just in case the game wasn't hard enough already :)&#13;
+&#13;
+- Best Bonus Tier: the end-of-dungeon bonus always offers the best tier.&#13;
+&#13;
+- Items Dropped At Your Feet: received items land on the ground in front of you instead of directly into your bag. Might help players who want to do some interesting Co-op play!&#13;
+&#13;
+- Keep Picked-Up Artifacts: picked-up artifacts go straight to your artifact list instead of inside the temporary treasures UI. This will work with any player who picks up the artifact and not just player 1!&#13;
+&#13;
+- Mog stamp hints! Every mog stamp will give you a new hint for a progressive item. &#13;
+&#13;
+&#13;
+## Fixes / Changes&#13;
+&#13;
+- Progressive Equipment pieces now go into your bag to equip, instead of replacing your gear.&#13;
+- The apworld decides the bonus rewards, so the poptracker can show them. Great tracking for you players who want to farm bonus rewards :) &#13;
+- Code clean up for my own sanity!&#13;
+&#13;
+### Logic&#13;
+&#13;
+- Shuffle Loading Zones fix: ring-gated dungeons only count once a dungeon with no ring requirement is reachable. Some seeds used to fail to generate.&#13;
+- Stream elements, hotspots and the "Change element" menus are worked out year by year.&#13;
+- Town shops need their area's year. The Fields of Fum also need the river crossing, and Shella needs Veo Lu Sluice.&#13;
+&#13;
+### Client &#13;
+&#13;
+- New commands:&#13;
+&#13;
+/cycle - Show / change cycle of any stage!&#13;
+/bonus - Shows the current bonus condition, does the math to show the current bonus value! Great for you 100% players out there!&#13;
+/hunt - Shows the remaining enemy types and the best place to find them!&#13;
+/resend - Drops the last item again just in case something goes wrong.&#13;
+/deathlink - on, off or default. The choice is remembered through reconnects. Just in case you change your mind about deathlink during play. This game can get difficult!&#13;
+&#13;
+- Items are delivered in towns too, dropped once the shop menu is closed.&#13;
+- Reports the year, dungeon cycles, current stage and bonus picks to the trackers.&#13;
+&#13;
+### Universal Tracker&#13;
+&#13;
+- The map page shows every pack pin (chests, enemies, shop slots) and highlights hinted ones.&#13;
+- UT rebuilds the seed with its own layout, streams, hotspot and menu tables, so its logic matches generation.&#13;
+&#13;
+</content>
+    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta.0.2.0"/>
   </entry>
 </feed>

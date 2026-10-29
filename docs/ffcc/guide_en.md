@@ -17,7 +17,7 @@
 
 - **Universal Tracker:** install [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker)
   (`tracker.apworld`) next to the FFCC apworld. The FFCC client then gets a Tracker tab listing what is in logic, a Map
-  tab with the dungeon maps, and Universal Tracker's commands. The first time, it asks for the FFCC PopTracker pack;
+  tab with the dungeon maps, and Universal Tracker's commands. The first time, it asks for the FFCC PopTracker pack:
   pick the pack's `.zip` file itself (an unzipped folder won't load), and after that it remembers it. The Map tab
   turns to the dungeon you are in.
 - **PopTracker:** load the FFCC pack in PopTracker and connect it to the same room.
