@@ -305,6 +305,21 @@
       "title": "v0.29.2 \u2014 Cell Tower escape fixes",
       "version_simple": "0.29.0",
       "world_version": "0.29.0r2"
+    },
+    "v0.30.0": {
+      "created_at": "2026-10-28T19:35:19Z",
+      "description": "# v0.30.0 \u2014 Bunker and True Ending\r\n\r\nOctober 28, 2026. Client 0.77.0 / APWorld 0.30.0.\r\n\r\n## New progression\r\n\r\n- Optional True Ending victory alongside the default King Ferdinand ending.\r\n- Randomized Bunker Keycard, Demon Key, Virus, Cheat Codes and Game Ender, plus six new checks.\r\n- Bunker progression defaults to enabled; requires at least two goal Stars. The Bunker Star Eater always requires fewer Stars than the Level 22 entrance and its Superstar cartridge source is randomized.\r\n- The Demon Key controls the separate Devil quest; Gecko's Data Stick and Note Pad remain native quest setup.\r\n- New seeds open Demolition Training and School Trip doors with Lobby Access, retaining generated Star gates.\r\n- Cell Tower Access opens Old Tom's connecting route without nectar delivery; read the note and leave/re-enter the area to update the Star Eater route.\r\n\r\n## Fixes and cleanup\r\n\r\n- Correct incompatible Bunker/goal settings to raise Archipelago OptionError, rather than generation crashes.\r\n- Replace an unsafe native event conversion implicated in final-level transition crashes.\r\n- Remove F8 movement recording and temporary profiling/diagnostic callbacks while preserving movement repairs and ordinary error logging.\r\n- Add schema21 Universal Tracker reconstruction and preserve legacy schema19/20 rules.\r\n\r\n## Updating and validation\r\n\r\nInstall the client archive with its licenses and scrc.apworld into Archipelago's custom_worlds folder while applications are closed. Use a fresh seed and native save for the new Bunker options. Existing schema19/20 rooms retain their original placements and rules; do not regenerate an active room. Keep its YAML for Universal Tracker. The Ionium YAML creator may still offer the previous indexed version until this release is indexed.\r\n\r\nThe corrected APWorld passed Ionium's full browser CI preset on Archipelago 0.6.7 and 0.6.8: 458 unit tests, 29,000 attempted fuzz cases, zero failures/timeouts, including Universal Tracker. Invalid option combinations were correctly ignored. Version metadata is updated for this release; index CI remains authoritative.\r\n\r\nThe native Gecko quest and final ending were investigated in staged saves, but the complete randomized schema21 receipt/source/goal flow has not yet completed an end-to-end gameplay acceptance run. Intermittent performance reports and broader multiplayer coverage remain open. See [known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/KNOWN_ISSUES.md) and [testing](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/TESTING.md).\r\n\r\nThis project uses substantial AI assistance under human direction; see the [AI disclosure](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/AI_DISCLOSURE.md).\r\n",
+      "download_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.0/scrc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f68ce1452968d826a39b2331f4f684851ed32034aef61f414b537f36e0c54843",
+      "html_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 72236,
+      "source_url": "https://api.github.com/repos/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago",
+      "tag": "v0.30.0",
+      "title": "v0.30.0 - Bunker and True Ending",
+      "version_simple": "0.30.0",
+      "world_version": "0.30.0"
     }
   }
 }

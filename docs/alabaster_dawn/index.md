@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Satisha10/AlabasterDawnAPClient/releases/download/v0.2.2/alabaster_dawn.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/Satisha10/AlabasterDawnAPClient/releases/download/v0.2.3/alabaster_dawn.apworld">Latest Version (0.2.2r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

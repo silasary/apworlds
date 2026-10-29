@@ -2,99 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-28T18:20:53.203161+00:00</updated>
+  <updated>2026-10-29T00:19:50.714711+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Cynichill/APBingo/releases/tag/1.1.2</id>
-    <title>APBingo v1.1.2</title>
-    <updated>2026-10-25T13:07:31+00:00</updated>
-    <author>
-      <name>Cynichill</name>
-    </author>
-    <content>- Fixed an issue where Auto-hints wouldn't work on multiworlds with multiple Bingos (Credit - [mlarente](https://github.com/mlarente))</content>
-    <link href="https://github.com/Cynichill/APBingo/releases/tag/1.1.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.1</id>
-    <title>kssu v0.2.1r2</title>
-    <updated>2026-10-25T14:48:47+00:00</updated>
-    <author>
-      <name>GhostCappy</name>
-    </author>
-    <content>## Bug fixes&#13;
-- The locations for Megaton Punch are no longer sent when starting a different game&#13;
-- Freeze Trap and Eject Trap now wait for chest animation to finish before sending.&#13;
-&#13;
-## Known Bugs&#13;
-Please refer to the [FAQ](https://github.com/GhostCappy/Archipelago/blob/main/worlds/kssu/docs/FAQ.md) for all currently known bugs. If you have any questions, feel free to ping!&#13;
-&#13;
-This version is backwards compatible with seeds generated during v0.2.0 and beyond.</content>
-    <link href="https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/sitskin/apCassetteBeasts/releases/tag/v0.0.7</id>
-    <title>Cassette Beasts v0.0.7</title>
-    <updated>2026-10-25T16:43:38+00:00</updated>
-    <author>
-      <name>sitskin</name>
-    </author>
-    <content>### Download / Install instructions&#13;
-&#13;
-Download the .apworld and .pck files.  The ap file will go in the custom_worlds folder in the Archipelago files.  The pck mod will go in your Cassette Beasts mod folder generally located in `C:\Users\(username)\AppData\Roaming\CassetteBeasts\mods` for windows and `~/.local/share/CassetteBeasts/mods/` for linux.  If that folder does not already exist you will need to create it.&#13;
-NOTE: This mod requires cat's mod utils mod as well and will not work without it.  It can be found on the steam workshop, Mod Utils by cat or it can be downloaded from [the github releases](https://github.com/Yukitty/CassetteBeasts-modutils/releases) and put in the same folder above.&#13;
-&#13;
-### Fixed&#13;
-- Song parts and stamps skip location blocker and now check inventory before blocking&#13;
-- Tutorial item hard replace script&#13;
-- Damascus tape is now metal instead of astral&#13;
-&#13;
-## What's Changed&#13;
-* Main -&gt; develop by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/69&#13;
-* MOD: Fix tutorial item by hard replacing script. by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/72&#13;
-* MOD: Fix damascus tape type. by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/73&#13;
-* MOD: Fix song and stamp received logic. by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/74&#13;
-* Release/0.0.7 by @sitskin in https://github.com/sitskin/apCassetteBeasts/pull/75&#13;
-&#13;
-&#13;
-**Full Changelog**: https://github.com/sitskin/apCassetteBeasts/compare/v0.0.6...v0.0.7</content>
-    <link href="https://github.com/sitskin/apCassetteBeasts/releases/tag/v0.0.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.2</id>
-    <title>Donkey Kong 64 v2.0.2</title>
-    <updated>2026-10-25T18:49:11+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.2
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/ToxicFrog/doom-mods/releases/tag/uzap-0.9.0</id>
     <title>UZDoom v0.9.0</title>
@@ -1657,10 +1569,10 @@ Make sure to regenerate your YAML templates to see the new goal options.&#13;
 - Improved information panel on the client showing room accessibility and checks remaining&#13;
 - More client commands. Changed prefix to / instead of ! for clarity. Usable in-game or in the client window:&#13;
   - /help - list all client commands&#13;
-  - /ap &lt;text&gt; - sends &lt;text&gt; to the AP server from in game&#13;
+  - /ap \&lt;text\&gt; - sends \&lt;text\&gt; to the AP server from in game&#13;
   - /hint - alias for /ap !hint. Used the same way as AP's !hint command&#13;
   - /force_seed - Forces the client to accept the current save as the correct save for the connected slot&#13;
-  - /return &lt;item&gt; - [experimental] Returns an item to your inventory. Only works with items already received from the multiworld. Recommended only as a bug recovery tool&#13;
+  - /return \&lt;item\&gt; - [experimental] Returns an item to your inventory. Only works with items already received from the multiworld. Recommended only as a bug recovery tool&#13;
   - /getmail - [experimental] Moves all the pending granted AP items from the mail system straight into your inventory. Skip listening to the Succ-U-Bus vomiting sounds! (after 170 hours of testing, I am overjoyed)&#13;
   - /loc - prints your current location data&#13;
 ## Changes&#13;
@@ -1740,5 +1652,109 @@ APWORLD (needed for generating archieplago game):&#13;
 - Restart launcher for APWorld to properly install&#13;
 - (Optional but Recommended)Select "Generate Template Options" to generate default spirit valley YMAL</content>
     <link href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/tag/V2.1.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.2</id>
+    <title>kssu v0.2.2</title>
+    <updated>2026-10-28T18:37:46+00:00</updated>
+    <author>
+      <name>GhostCappy</name>
+    </author>
+    <content>## Bug fixes&#13;
+- "Local" mode for Milky Way wishes is now properly fixed.&#13;
+&#13;
+## Known Bugs&#13;
+Please refer to the [FAQ](https://github.com/GhostCappy/Archipelago/blob/main/worlds/kssu/docs/FAQ.md) for all currently known bugs. If you have any questions, feel free to ping!&#13;
+&#13;
+This version is NOT backwards compatible with seeds generated before v0.2.2. Please finish any current seeds before updating!</content>
+    <link href="https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.0</id>
+    <title>Super Crazy Rhythm Castle v0.30.0</title>
+    <updated>2026-10-28T19:35:19+00:00</updated>
+    <author>
+      <name>Jack</name>
+    </author>
+    <author>
+      <name>OpenAI</name>
+    </author>
+    <content># v0.30.0 — Bunker and True Ending&#13;
+&#13;
+October 28, 2026. Client 0.77.0 / APWorld 0.30.0.&#13;
+&#13;
+## New progression&#13;
+&#13;
+- Optional True Ending victory alongside the default King Ferdinand ending.&#13;
+- Randomized Bunker Keycard, Demon Key, Virus, Cheat Codes and Game Ender, plus six new checks.&#13;
+- Bunker progression defaults to enabled; requires at least two goal Stars. The Bunker Star Eater always requires fewer Stars than the Level 22 entrance and its Superstar cartridge source is randomized.&#13;
+- The Demon Key controls the separate Devil quest; Gecko's Data Stick and Note Pad remain native quest setup.&#13;
+- New seeds open Demolition Training and School Trip doors with Lobby Access, retaining generated Star gates.&#13;
+- Cell Tower Access opens Old Tom's connecting route without nectar delivery; read the note and leave/re-enter the area to update the Star Eater route.&#13;
+&#13;
+## Fixes and cleanup&#13;
+&#13;
+- Correct incompatible Bunker/goal settings to raise Archipelago OptionError, rather than generation crashes.&#13;
+- Replace an unsafe native event conversion implicated in final-level transition crashes.&#13;
+- Remove F8 movement recording and temporary profiling/diagnostic callbacks while preserving movement repairs and ordinary error logging.&#13;
+- Add schema21 Universal Tracker reconstruction and preserve legacy schema19/20 rules.&#13;
+&#13;
+## Updating and validation&#13;
+&#13;
+Install the client archive with its licenses and scrc.apworld into Archipelago's custom_worlds folder while applications are closed. Use a fresh seed and native save for the new Bunker options. Existing schema19/20 rooms retain their original placements and rules; do not regenerate an active room. Keep its YAML for Universal Tracker. The Ionium YAML creator may still offer the previous indexed version until this release is indexed.&#13;
+&#13;
+The corrected APWorld passed Ionium's full browser CI preset on Archipelago 0.6.7 and 0.6.8: 458 unit tests, 29,000 attempted fuzz cases, zero failures/timeouts, including Universal Tracker. Invalid option combinations were correctly ignored. Version metadata is updated for this release; index CI remains authoritative.&#13;
+&#13;
+The native Gecko quest and final ending were investigated in staged saves, but the complete randomized schema21 receipt/source/goal flow has not yet completed an end-to-end gameplay acceptance run. Intermittent performance reports and broader multiplayer coverage remain open. See [known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/KNOWN_ISSUES.md) and [testing](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/TESTING.md).&#13;
+&#13;
+This project uses substantial AI assistance under human direction; see the [AI disclosure](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/AI_DISCLOSURE.md).&#13;
+</content>
+    <link href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ToxicFrog/doom-mods/releases/tag/uzap-0.9.1</id>
+    <title>UZDoom v0.9.1</title>
+    <updated>2026-10-28T20:38:01+00:00</updated>
+    <author>
+      <name>ToxicFrog</name>
+    </author>
+    <content># 0.9.1&#13;
+&#13;
+This is a bugfix release to fix a crash in the client. It is backwards&#13;
+compatible with logic and tuning data from 0.9.0. Updating with games in&#13;
+progress may work but has not been tested.&#13;
+&#13;
+If you are updating from 0.8.x or any earlier version, you are strongly&#13;
+encouraged to also read the 0.9.0 release notes.&#13;
+&#13;
+- New:&#13;
+  - You can now select `all` (0) as the spawn filter in the YAML. This will&#13;
+    spawn checks for all difficulties at once, not just the one you are playing.&#13;
+  - Key shapes and colours are now defined [in GZAPRC](../../blob/uzap-0.9.1/gzap/doc/gzaprc.md#keyshape-missing-held--key-classes-or-patterns).&#13;
+    Logic developers can add this to the GZAPRC for the wad, and players can&#13;
+    provide their own to override the defaults.&#13;
+- Changed:&#13;
+ - UZAP now uses `RuleBuilder` internally. This makes generation much faster and&#13;
+   enables the `/explain` command in the client.&#13;
+- Fixed:&#13;
+  - Errors in Ashes 2063 logic. (This was hotfixed back to 0.9.0.)&#13;
+  - Client crash when used with `--slot`.</content>
+    <link href="https://github.com/ToxicFrog/doom-mods/releases/tag/uzap-0.9.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ragmoa/Archipelago/releases/tag/0.5.4</id>
+    <title>Okami HD v0.5.4</title>
+    <updated>2026-10-28T20:53:30+00:00</updated>
+    <author>
+      <name>Axertin</name>
+    </author>
+    <author>
+      <name>Ragmoa</name>
+    </author>
+    <content>- Rework item instaciation.&#13;
+- Junk pool can now be customized with new settings&#13;
+- Added Food Items in Junk pool&#13;
+</content>
+    <link href="https://github.com/Ragmoa/Archipelago/releases/tag/0.5.4"/>
   </entry>
 </feed>
