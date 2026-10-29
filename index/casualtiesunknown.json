@@ -114,6 +114,21 @@
       "version_simple": "0.12.0",
       "world_version": "0.12.0"
     },
+    "v0.12.1": {
+      "created_at": "2026-10-29T02:44:54Z",
+      "description": "### Casualties: Unknown Archipelago v0.12.1\r\nThis update is compatible with worlds generated on version 0.12.0!\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).\r\nDevelopment on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.\r\n\r\nNote: This will be the last update before the game's full release unless something game breaking is found.\r\n\r\n# Additions\r\n- The slot will now display as \"Playing\" on the web tracker when in a run, and revert back to \"Connected\" when on the main menu\r\n- The APWorld is now part of the GitHub repo\r\n# Changes\r\n- Rewrote all logic to use the Rule Builder system [APWorld Change]\r\n- Removed RingLink [APWorld Change]\r\n- The mod will now refuse to start if KrokMP is installed\r\n\t- This will eventually be changed to allow for the mod being in disabled mode\r\n- Amputated is no longer part of the Deadly Moodlesanity Exclusions preset\r\n# Fixes\r\n- Fixed Moodlesanity locations relating to hearing loss expecting the player to craft a Drill repair kit without the recipe unlocked [APWorld Change]\r\n- Fixed `Moodlesanity - Half-asleep` not sending [APWorld Change]\r\n# Known Issues\r\n- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators\r\n- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game\r\n- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game\r\n- Skillsanity skill levels received offline will not be given when loading a save file from a previous session. You must start a new run to receive them\r\n- There are sometimes accessibility errors relating to Craftsanity locations that require Overgrown Depths access despite the generated seed having access to Overgrown Depths. I do not know how to fix this\r\n- EnergyLink sometimes doesn't work when playing in a server with more than one slot. I plan to rewrite EnergyLink entierly in an upcoming update.\r\n\r\n**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.12.0...v0.12.1",
+      "download_url": "https://github.com/Nichologeam/CUAP/releases/download/v0.12.1/casualtiesunknown.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3d6d431b4a6be0db2994a64c14db4495ce8783d9febb1e714374b2e9455db9a1",
+      "html_url": "https://github.com/Nichologeam/CUAP/releases/tag/v0.12.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 95394,
+      "source_url": "https://api.github.com/repos/Nichologeam/CUAP",
+      "tag": "v0.12.1",
+      "title": "",
+      "version_simple": "0.12.1",
+      "world_version": "0.12.1"
+    },
     "v0.2.0": {
       "created_at": "2025-08-28T13:40:33Z",
       "description": "### Casualties: Unknown/Scav Prototype Archipelago v0.2.0\r\n\r\nThis release updated the APWorld. Make sure you get the new version!\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).\r\n\r\n# Changes\r\nLogic! Going deeper now requires Depth Extender items, which are obtained through the multiworld (#1) [APWorld change]\r\nMoodlesanity also has some logic now, with Hearing Loss requiring either Wasteland or access to repairing Drill Pods if Recipe Randomization is on (#1) [APWorld change]\r\nNew yaml option that lets you specify custom goal depth, up to 5000m (#2) [APWorld change]\r\nDying with Deathlink disabled no longer sends a stray Deathlink\r\nRecipe Randomization no longer spams the log when loading a new game\r\nThree new traps have been added: Earthquake Trap, Reversed Controls Trap, and Sleep Trap [APWorld change]\r\nActually remembered to increase the version number this time\r\n\r\nI rewrote basically half the APWorld with this update, so things might break. Let me know if they do.\r\n\r\n**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.1.2...v0.2.0",

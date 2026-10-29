@@ -2,145 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-29T00:19:50.714711+00:00</updated>
+  <updated>2026-10-29T06:22:51.422554+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ToxicFrog/doom-mods/releases/tag/uzap-0.9.0</id>
-    <title>UZDoom v0.9.0</title>
-    <updated>2026-10-25T19:23:29+00:00</updated>
-    <author>
-      <name>ToxicFrog</name>
-    </author>
-    <content># 0.9.0&#13;
-&#13;
-This is probably the biggest release so far. While most of it was focused on&#13;
-internal improvements to better handle complicated total conversions (work that&#13;
-will continue in the next version), it also comes with new features. The full&#13;
-changelog is below, but the headline features are:&#13;
-&#13;
-- **For players:**&#13;
-  - Support for per-map weapons, and better weapon handling in general&#13;
-  - Significant improvements to the YAML, including WAD-aware comments&#13;
-  - In-game UI improvements&#13;
-  - Support for four new megaWADs and two new total conversions&#13;
-  - Experimental support for [UZDoom 5.0.x](../../blob/uzap-0.9.0/gzap/doc/setup.md#uzdoom-50x-support)&#13;
-- **For logic developers:**&#13;
-  - Improvements to the in-game logic dashboard&#13;
-  - Ability to add comments to the tuning record using in-game chat&#13;
-  - Support for turning items that spawn mid-game into checks, such as boss drops&#13;
-  - New [GZAPRC directives](../../blob/uzap-0.9.0/gzap/doc/gzaprc.md)&#13;
-&#13;
-🛈 [Logic pack downloads](../../blob/84f6e054436519f47601b8ab175943516f3068b7/gzap/doc/support-table.md)&#13;
-&#13;
-⚠️ YAML options have changed. You must regenerate your YAML templates.&#13;
-&#13;
-⚠️ Item categorization rules and the included scanner configurations have&#13;
-changed. Rescanning your wads is not *mandatory* but is *strongly recommended*.&#13;
-&#13;
-⚠️ Tuning format has changed. You do not need to redo all your custom tuning.&#13;
-Old files can be upgraded to the new format via find-and-replace:&#13;
-`,"event","exit"` -&gt; `,"exit"`.&#13;
-&#13;
-- New:&#13;
-  - `per_map_weapons` yaml setting. If enabled, a different copy of each weapon&#13;
-    is added to the pool for each map. To use a weapon on a given map you need&#13;
-    to find the corresponding version of it in the pool first.&#13;
-    - If this is enabled, the level select screen will show you which weapons&#13;
-      have been unlocked in each map.&#13;
-  - Weapons can now be hinted and toggled on and off from the inventory screen.&#13;
-  - Errors caused by mismatches between the generating apworld and the pk3&#13;
-    loaded during play should now produce a slightly more obvious error at game&#13;
-    startup.&#13;
-  - `--slot` and `--wad` command line flags for the client.&#13;
-  - Experimental UZDoom 5.0.x support; see [setup.md](../../blob/uzap-0.9.0/gzap/doc/setup.md#uzdoom-50x-support).&#13;
-  - Complete logic and tuning for `BTSX E2`, by Sayeth.&#13;
-  - Complete logic and tuning for `Rise of the Wool Ball`, by Xindage.&#13;
-  - Complete logic and tuning for `Alien Vendetta`, `Ancient Aliens`, and&#13;
-    `Hellevator`, by Halcyon.&#13;
-  - Complete logic and tuning for `Ashes 2063 Enriched Edition`, by ToxicFrog.&#13;
-- For logic developers:&#13;
-  - Chat messages starting with `;` will be inserted into the tuning file as&#13;
-    comments, rather than sent to other players.&#13;
-  - Support for checks that only spawn partway through the level, e.g. boss loot&#13;
-    and crafting/puzzle outputs.&#13;
-    - See [events.md](../../blob/uzap-0.9.0/gzap/doc/design/events.md) for documentation.&#13;
-    - `Adventures of Square` now uses this for the floppy disk drops in E1A9 and&#13;
-      the hexagon key drop in E2A11.&#13;
-  - Simple HUD for logic developers showing map, last checked location, region&#13;
-    name, and region prereqs. Enable with `ap_show_logic_hud`.&#13;
-  - `replacement` and `episode` directives in `GZAPRC`. See [gzaprc.md](../../blob/uzap-0.9.0/gzap/doc/gzaprc.md).&#13;
-- Changed:&#13;
-  - Major overhaul of the yaml options.&#13;
-    - Many settings that previously had to be controlled by editing the&#13;
-      `included_item_categories` are now their own toggles or sliders.&#13;
-    - `included_item_categories` is still present to support less common use&#13;
-      cases not covered by the separate options.&#13;
-    - Item-related settings now tell you how many checks turning a category on&#13;
-      or off will add or remove, along with what items belong to that category&#13;
-      in the current wad.&#13;
-  - Major overhaul of item categorization. Filler should now all have a size&#13;
-    (`big`, `medium`, or `small`), and one or more kinds (`health`, `armor`,&#13;
-    `ammo`, `attack`, `defence`, or `tool`). See [categories.md](../../blob/uzap-0.9.0/gzap/doc/categories.md)&#13;
-    for details.&#13;
-    - As a result of the above, many item categories have changed. `medium-armor`&#13;
-      is now actually used, and many things previously considered `powerup` or&#13;
-      `tool` now have proper sizing and more specific categories.&#13;
-  - Redesign of the weapon suppression system. It should now be much more&#13;
-    reliable, both at blocking weapons you shouldn't have and at permitting&#13;
-    weapons you should.&#13;
-  - Redesign of how weapons are granted to you by AP. Once you receive a weapon&#13;
-    it will try very hard to make sure you always have it. If you have a weapon&#13;
-    replacer mod loaded it will remember whatever the weapon turned into and&#13;
-    keep that in your inventory instead.&#13;
-  - Redesign of weapon logic. It is now deterministic. This is still a work in&#13;
-    progress.&#13;
-  - If per-map weapons are enabled, only those weapons required for combat logic&#13;
-    (or explicitly in the logic) are Progression; other weapons are Useful.&#13;
-  - Internal redesign of how exit and secret locations are handled. Future work&#13;
-    in this area will support randomizing items into exits and implementing&#13;
-    spawn-based checks.&#13;
-  - Tuning data now uses `[map,"exit"]` for exit events rather than&#13;
-    `[map,"event","exit"]`.&#13;
-  - Hub map has a new look. (No interactivity, just shiny.)&#13;
-  - Client should now be much more robust about UZDoom restarting (even with a&#13;
-    different game loaded!) while the client stays running.&#13;
-- Fixed:&#13;
-  - MAP31 and MAP32 were incorrectly excluded from 1000 Lines 2.&#13;
-  - Adventures of Square logic is now aware of the previously-missing "Totally&#13;
-    Square" and "Cubular" difficulty levels. Checks that exist only on those&#13;
-    difficulties may lack tuning data.&#13;
-  - Doom 1/2, Heretic, Chex Quest, and Faithless no longer have ammo pickups&#13;
-    with duplicate names.&#13;
-  - If the apworld generates a pk3 that requires items the engine doesn't know&#13;
-    about, it will now crash on startup with an explanatory message rather than&#13;
-    crashing confusingly later.&#13;
-  - The apworld no longer crashes during option construction if the default&#13;
-    settings don't contain enough locations for reliable solo-play generation&#13;
-    even with all maps.&#13;
-  - Entering a level will now scan for checks that were picked up but never&#13;
-    received by the server (e.g. because the client disconnected) and re-send&#13;
-    them all.&#13;
-  - A yaml configuration that produces more progression items than there are&#13;
-    locations to place them will now produce an OptionError rather than (likely)&#13;
-    failing generation later.&#13;
-  - `get_filler_item_name()` now works again (and the generated filler is&#13;
-    weighted based on its prevalence in the item pool).&#13;
-  - Region names are now taken into account when deciding if location names are&#13;
-    unique.&#13;
-  - AP will no longer send you extra copies of keys whenever you load a saved&#13;
-    game.&#13;
-  - If disallowed weapons are configured to `turn into ammo`, but we can't&#13;
-    figure out what ammo to spawn, the weapon is left on the floor rather than&#13;
-    deleted outright.&#13;
-  - Reported spawn filter name when generating was incorrect. (Behaviour was&#13;
-    fine, just the log messages were wrong.)&#13;
-&#13;
-</content>
-    <link href="https://github.com/ToxicFrog/doom-mods/releases/tag/uzap-0.9.0"/>
-  </entry>
   <entry>
     <id>https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.1</id>
     <title>Monster Hunter Rise v0.5.1</title>
@@ -1756,5 +1622,43 @@ encouraged to also read the 0.9.0 release notes.&#13;
 - Added Food Items in Junk pool&#13;
 </content>
     <link href="https://github.com/Ragmoa/Archipelago/releases/tag/0.5.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.12.1</id>
+    <title>Casualties: Unknown v0.12.1</title>
+    <updated>2026-10-29T02:44:54+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.12.1&#13;
+This update is compatible with worlds generated on version 0.12.0!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
+&#13;
+Note: This will be the last update before the game's full release unless something game breaking is found.&#13;
+&#13;
+# Additions&#13;
+- The slot will now display as "Playing" on the web tracker when in a run, and revert back to "Connected" when on the main menu&#13;
+- The APWorld is now part of the GitHub repo&#13;
+# Changes&#13;
+- Rewrote all logic to use the Rule Builder system [APWorld Change]&#13;
+- Removed RingLink [APWorld Change]&#13;
+- The mod will now refuse to start if KrokMP is installed&#13;
+	- This will eventually be changed to allow for the mod being in disabled mode&#13;
+- Amputated is no longer part of the Deadly Moodlesanity Exclusions preset&#13;
+# Fixes&#13;
+- Fixed Moodlesanity locations relating to hearing loss expecting the player to craft a Drill repair kit without the recipe unlocked [APWorld Change]&#13;
+- Fixed `Moodlesanity - Half-asleep` not sending [APWorld Change]&#13;
+# Known Issues&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game&#13;
+- Skillsanity skill levels received offline will not be given when loading a save file from a previous session. You must start a new run to receive them&#13;
+- There are sometimes accessibility errors relating to Craftsanity locations that require Overgrown Depths access despite the generated seed having access to Overgrown Depths. I do not know how to fix this&#13;
+- EnergyLink sometimes doesn't work when playing in a server with more than one slot. I plan to rewrite EnergyLink entierly in an upcoming update.&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.12.0...v0.12.1</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.12.1"/>
   </entry>
 </feed>
