@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.1/doometernal.apworld">Latest Version (0.7.1)</a>
+- <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.2/doometernal.apworld">Latest Version (0.7.1r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

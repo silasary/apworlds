@@ -1,9 +1,12 @@
 # DOOM Eternal
 
 ## Latest
-- <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.1/doometernal.apworld">Latest Version (0.7.1)</a>
+- <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.2/doometernal.apworld">Latest Version (0.7.1r2)</a>
 
 ## All Versions
+
+#### v0.7.1r2
+- <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.2/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.2/doometernal.apworld</a>
 
 #### v0.7.1
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.1/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.1/doometernal.apworld</a>

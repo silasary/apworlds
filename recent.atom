@@ -2,120 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-30T00:25:33.899464+00:00</updated>
+  <updated>2026-10-30T06:17:11.978907+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/rha-v1.1.0</id>
-    <title>Rhythm Heaven Advance v1.1.0</title>
-    <updated>2026-10-25T21:04:26+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>FASTER&#13;
-# Info&#13;
-* [Info](https://thelx5.github.io/rha/index.html)&#13;
-* [Setup](https://thelx5.github.io/rha/setup.html)&#13;
-# Changes&#13;
-* Updated source to the somewhere close to the latest commit on main&#13;
-    * Adds in-game toggles for localized voices and music&#13;
-    * Updates some localized audio files&#13;
-    * Some additional fixes&#13;
-* Removed `patches` in favor of individual YAML options&#13;
-* Repurposed Flow counter as a Beep counter</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/rha-v1.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/gerbiljames/mario-tennis-gbc-disasm/releases/tag/apworld-v0.3.0</id>
-    <title>Mario Tennis GBC v0.3.0</title>
-    <updated>2026-10-25T21:48:49+00:00</updated>
-    <author>
-      <name>gerbiljames</name>
-    </author>
-    <content>## New options
-
-- **DeathLink**, as two independent options, both off by default. You can change either while playing with the client's `/deathlink_send` and `/deathlink_receive` commands.
-  - **`death_link_send`** (off, point, game or match): the smallest loss that sends a death.
-    - A lost match point is still only one death.
-    - A failed mini-game or drill counts as a lost match, and a failed drill point as a lost point.
-  - **`death_link_receive`** (off, point, game or match): what a received death costs you in a match.
-    - A lost game in a tiebreak takes the set with it.
-    - Any death ends a mini-game or drill as failed. The exception is a high-score run already past its record, which ends as a high score.
-    - Deaths that arrive outside a match, mini-game or drill are ignored.
-  - Two-on-One counts as a match for both options.
-- **`court_shuffle`** (default vanilla): the courts story matches are played on.
-  - **Shuffled:** the story's own courts are dealt out between its matches, so each court is played as often as usual, in different matches.
-  - **Randomized:** every match picks its own court from the nine exhibition courts and Center Court.
-- **`opponent_strategy`** (default vanilla): where singles story opponents stand and move. In the original game every one of them uses the same adaptive positioning.
-  - **Randomized:** each singles match's opponent gets one of the game's eight positioning strategies, such as staying back at the baseline, sliding sideways or rushing the net.
-  - Their skill is unchanged.
-  - Doubles opponents always keep their usual positioning.
-
-## Logic
-
-With `shot_items` on, three drills now strictly need a shot instead of counting as glitched logic without it:
-
-- **Net Game Lesson 2** needs the smash.
-- **Stroke Match 2** needs the lob.
-- **Net Game Match 2** needs the smash. Clearing it without the lob is still glitched logic.
-
-There are still 88 locations.
-</content>
-    <link href="https://github.com/gerbiljames/mario-tennis-gbc-disasm/releases/tag/apworld-v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.5.4</id>
-    <title>Animal Crossing v0.5.4</title>
-    <updated>2026-10-25T21:58:50+00:00</updated>
-    <author>
-      <name>haloopdy</name>
-    </author>
-    <content>Setup instructions: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/setup_en.md&#13;
-Game info: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/game_info_en.md&#13;
-&#13;
-This version is backwards compatible back to 0.5.0. There are some features of this release which do not carry over if you bring your save into dolphin or the normal PC port (global storage + outdoor furniture). Outdoor furniture is converted into leaves upon loading in vanilla.&#13;
-&#13;
-![screenshot](https://raw.githubusercontent.com/randomouscrap98/AP_ACGC_PC/master/docs/doc_assets/shot_20261025_163027.jpg)&#13;
-&#13;
-## New Features&#13;
-- **Global Storage:** Access an extra 200 slots of items in the PC pause menu. Default "indoors only", can turn it on anywhere or fully off. CANNOT be changed once seed generated&#13;
-- **Outdoor Furniture:** Do you like New Horizons? Most furniture can be displayed outdoors now. Limitations:&#13;
-  - Instruments, radios, etc cannot be placed outdoors&#13;
-  - NES cartridges also can't be placed outdoors&#13;
-  - Storage items can't be placed outdoors, though this may change in the future (cosmetic only, no storage)&#13;
-  - Items can't be placed on top of each other&#13;
-  - Collision boxes are not precise like they are inside&#13;
-- **Integer Scale Rendering:** For those who need pixel-perfection&#13;
-- **F12 Screenshots**&#13;
-- **Button repeat:** You can now scroll normally through all pc menus by holding down a direction&#13;
-- **Less Mail:** You can stop most solicitations/extra mail if desired (anything with a gift goes through)&#13;
-- **Save settings on exit:** You can now (finally) save settings when pressing B or Start to exit settings&#13;
-&#13;
-## Bugfixes/tweaks&#13;
-- Some events blocked by timesanity now function again (train, balloons, shells at 10 minutes)&#13;
-- Show runtime at bottom right&#13;
-- Large items have larger sparkles (totems, etc)&#13;
-- More obvious/natural underground bug hints (pill bug, mole cricket)&#13;
-- Catalogsanity items released from multiworld now actually release in your game&#13;
-- Fixed random brightness changes at night when camera moved. Only happens with freecam now (intended)&#13;
-- December in timesanity clears out christmas items from December 1 - 17 (to give more days to buy things)</content>
-    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.5.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.2</id>
-    <title>Monster Hunter Rise v0.5.2</title>
-    <updated>2026-10-25T22:17:24+00:00</updated>
-    <author>
-      <name>SolomonW</name>
-    </author>
-    <author>
-      <name>LittleLudroth</name>
-    </author>
-    <content>**Full Changelog**: https://github.com/LittleLudroth/MHRise-APWorld/compare/v0.5.1...v0.5.2</content>
-    <link href="https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.2"/>
-  </entry>
   <entry>
     <id>https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.8.0</id>
     <title>Yellow Taxi Goes Vroom v0.8.0</title>
@@ -1837,6 +1728,48 @@ Fixes:&#13;
     <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.3.0"/>
   </entry>
   <entry>
+    <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.2</id>
+    <title>DOOM Eternal v0.7.1r2</title>
+    <updated>2026-10-29T22:56:32+00:00</updated>
+    <author>
+      <name>snowzzrra</name>
+    </author>
+    <content># DOOM Eternal Archipelago v0.7.2&#13;
+&#13;
+Bug fixes for Linux installation, encounters that unlock too early or never end, and Support Report diagnostics.&#13;
+&#13;
+Use **Mod 0.7.2** and **APWorld 0.7.1** with **Sentinel Core 1.1.3**.&#13;
+&#13;
+## Launcher and room preparation&#13;
+&#13;
+- Fixed Linux/Proton installations being reported as "Installation could not be checked" after a correct install, for rooms without DLC missions and for every room's Fortress of Doom resources.&#13;
+- Fixed the Linux/Proton installer breaking on its first run after a game update, file verification, or a reset of installer backups when files from a previous room were still present.&#13;
+- Repaired stale or empty installer resource maps before running the installer, so it rebuilds them instead of failing later with an unclear error.&#13;
+- Installation failures now state the step that failed and the cause, instead of a generic message.&#13;
+- Fixed Linux/Proton sessions failing with "Session request is too large" for rooms with large enemy plans.&#13;
+&#13;
+## Encounters and enemy randomization&#13;
+&#13;
+- Fixed waits for a specific demon type not counting the replacements of that demon, which could open gates while replacements were still alive (for example, the key encounter in **Super Gore Nest**) or keep a fight waiting forever (for example, the **Super Gore Nest** Slayer Gate with endlessly respawning fodder).&#13;
+- Fixed Spirits spawning in unreachable spots in **UAC Atlantica Facility**, which could leave the last enemy of an encounter out of reach. Those spawn points now use a Cacodemon.&#13;
+- Hell Knight and Spirit health and remaining-enemy waits now track replacements by the enemy they replaced (for example, the catapult fight in **Immora**).&#13;
+&#13;
+## Encounter recovery&#13;
+&#13;
+- Added the `ap_finish_encounter` console command to get out of a stuck combat encounter. It stops the encounter's spawners, defeats its remaining demons, and lets the encounter end normally, so doors, music, the encounter's check, and checkpoints still trigger.&#13;
+- It only affects the active encounter, gives no Killsanity credit for the demons it defeats, and is refused during boss fights.&#13;
+- Each use is recorded in Support Reports.&#13;
+&#13;
+## Support Reports and diagnostics&#13;
+&#13;
+- Support Reports now include the full installer output, the installer state before and after each run, and the failing installation step with its error.&#13;
+- Added diagnostics for enemy removal, replacement counting in waits, spawn positions, checkpoint saving, power-up delivery, and recent crash reports from Windows Error Reporting.&#13;
+- Kept more of the game console around the latest encounter event and separated the current session's item queue from older entries.&#13;
+&#13;
+**These fixes do not require a new room. Rooms that work with v0.7.1 keep working, and the Atlantica spawn fix applies when the launcher prepares the room package again.**</content>
+    <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.3</id>
     <title>Monster Hunter Rise v0.5.3</title>
     <updated>2026-10-29T23:06:31+00:00</updated>
@@ -1848,5 +1781,60 @@ Fixes:&#13;
     </author>
     <content>**Full Changelog**: https://github.com/LittleLudroth/MHRise-APWorld/compare/v0.5.2...v0.5.3</content>
     <link href="https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/threeandthreee/Archipelago/releases/tag/13.6.5</id>
+    <title>Links Awakening DX Beta v13.6.5</title>
+    <updated>2026-10-30T01:37:10+00:00</updated>
+    <author>
+      <name>zig</name>
+    </author>
+    <author>
+      <name>threeandthree</name>
+    </author>
+    <content>Fixes locations I broke:&#13;
+ - Ballad of the Wind Fish&#13;
+ - Sword on the Beach</content>
+    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/13.6.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.12</id>
+    <title>Stardew Valley v8.1.12</title>
+    <updated>2026-10-30T02:44:14+00:00</updated>
+    <author>
+      <name>Kaito Kid</name>
+    </author>
+    <author>
+      <name>Jouramie</name>
+    </author>
+    <author>
+      <name>Witchybun (Mod Support)</name>
+    </author>
+    <author>
+      <name>Noa (Entrance Randomizer)</name>
+    </author>
+    <content>## Apworld&#13;
+- Fixed a logic bug where some items were erroneously marked as required to purchase the equivalent location in a shop. Notably some rarecrows&#13;
+&#13;
+## Mod&#13;
+- Fixed the qualified item id of shrimp cocktail. This created issues in the lingo bundle</content>
+    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.12"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/tag/v0.7.0</id>
+    <title>Soul Blazer v0.7.0</title>
+    <updated>2026-10-30T04:09:33+00:00</updated>
+    <author>
+      <name>Tranquilite</name>
+    </author>
+    <content>## What's Changed&#13;
+### Base Patch Improvements&#13;
+* Made it so that "shopkeepers" will go back to giving medical herbs once they have given their randomized check.&#13;
+* Made it so that key items are not removed from your inventory when used.&#13;
+* Made it so that most key items (dream rod excluded) will be used without having to be equipped.&#13;
+* Fixed bug where releasing the mountain king with release cutscene skipping would cause the jail not not open until a subsequent revisit to the area.&#13;
+&#13;
+**Full Changelog**: &lt;https://github.com/Tranquilite0/Archipelago-SoulBlazer/compare/v0.6.2...v0.7.0&gt;</content>
+    <link href="https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/tag/v0.7.0"/>
   </entry>
 </feed>

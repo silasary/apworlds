@@ -168,6 +168,21 @@
       "title": "0.7.1 - Beta",
       "version_simple": "0.7.1",
       "world_version": "0.7.1"
+    },
+    "0.7.2": {
+      "created_at": "2026-10-29T22:56:32Z",
+      "description": "# DOOM Eternal Archipelago v0.7.2\r\n\r\nBug fixes for Linux installation, encounters that unlock too early or never end, and Support Report diagnostics.\r\n\r\nUse **Mod 0.7.2** and **APWorld 0.7.1** with **Sentinel Core 1.1.3**.\r\n\r\n## Launcher and room preparation\r\n\r\n- Fixed Linux/Proton installations being reported as \"Installation could not be checked\" after a correct install, for rooms without DLC missions and for every room's Fortress of Doom resources.\r\n- Fixed the Linux/Proton installer breaking on its first run after a game update, file verification, or a reset of installer backups when files from a previous room were still present.\r\n- Repaired stale or empty installer resource maps before running the installer, so it rebuilds them instead of failing later with an unclear error.\r\n- Installation failures now state the step that failed and the cause, instead of a generic message.\r\n- Fixed Linux/Proton sessions failing with \"Session request is too large\" for rooms with large enemy plans.\r\n\r\n## Encounters and enemy randomization\r\n\r\n- Fixed waits for a specific demon type not counting the replacements of that demon, which could open gates while replacements were still alive (for example, the key encounter in **Super Gore Nest**) or keep a fight waiting forever (for example, the **Super Gore Nest** Slayer Gate with endlessly respawning fodder).\r\n- Fixed Spirits spawning in unreachable spots in **UAC Atlantica Facility**, which could leave the last enemy of an encounter out of reach. Those spawn points now use a Cacodemon.\r\n- Hell Knight and Spirit health and remaining-enemy waits now track replacements by the enemy they replaced (for example, the catapult fight in **Immora**).\r\n\r\n## Encounter recovery\r\n\r\n- Added the `ap_finish_encounter` console command to get out of a stuck combat encounter. It stops the encounter's spawners, defeats its remaining demons, and lets the encounter end normally, so doors, music, the encounter's check, and checkpoints still trigger.\r\n- It only affects the active encounter, gives no Killsanity credit for the demons it defeats, and is refused during boss fights.\r\n- Each use is recorded in Support Reports.\r\n\r\n## Support Reports and diagnostics\r\n\r\n- Support Reports now include the full installer output, the installer state before and after each run, and the failing installation step with its error.\r\n- Added diagnostics for enemy removal, replacement counting in waits, spawn positions, checkpoint saving, power-up delivery, and recent crash reports from Windows Error Reporting.\r\n- Kept more of the game console around the latest encounter event and separated the current session's item queue from older entries.\r\n\r\n**These fixes do not require a new room. Rooms that work with v0.7.1 keep working, and the Atlantica spawn fix applies when the launcher prepares the room package again.**",
+      "download_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.2/doometernal.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1cf7c87cfb9cfd1b08482296574d9b9cc52caa3746ca8f5f092b0e289b8c49b6",
+      "html_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 1024696,
+      "source_url": "https://api.github.com/repos/snowzzrra/DoomEternal-AP-Mod",
+      "tag": "0.7.2",
+      "title": "0.7.2 - Beta",
+      "version_simple": "0.7.1",
+      "world_version": "0.7.1r2"
     }
   }
 }

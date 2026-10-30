@@ -1,9 +1,12 @@
 # Soul Blazer
 
 ## Latest
-- <a href="https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/download/v0.6.2/soulblazer.apworld">Latest Version (0.6.2)</a>
+- <a href="https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/download/v0.7.0/soulblazer.apworld">Latest Version (0.7.0)</a>
 
 ## All Versions
+
+#### v0.7.0
+- <a href="https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/download/v0.7.0/soulblazer.apworld">https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/download/v0.7.0/soulblazer.apworld</a>
 
 #### v0.6.2
 - <a href="https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/download/v0.6.2/soulblazer.apworld">https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/download/v0.6.2/soulblazer.apworld</a>
