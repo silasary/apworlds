@@ -63,11 +63,15 @@ have a completed save file and connect to a multiworld with it, you will complet
 
 Unfortunately, Kirby Air Ride only has one save slot in-game. But no worries if you want to keep your save - Dolphin can export save files that can be re-loaded later.
 
+**IMPORTANT:** There are TWO save files to delete or preserve! For both options below, if you've played before, you will have TWO. 
+
 To make sure you have a fresh save file:
 
 * In Dolphin, go to `Tools -> Memory Card Manager`
-* If you have Kirby Air Ride data in this menu, click on it and click `Export as` if you wish to keep the save file for later, or `Delete` if you wish to wipe the save.
-* **IMPORTANT:** You'll also see a `01-GKYE-hoshi` save here if you've played before. This must be deleted as well! This can be hard to see!
+  * If you have Kirby Air Ride data in this menu, click on it and click `Export as` if you wish to keep the save file for later, or `Delete` if you wish to wipe the save.
+    * If you chose to export, make sure to then delete the original files as well
+  * If you do not see save data in here but have played before, you likely have your saves as `.gci` instead of a memory card. 
+    * Go to `File->Open User Folder` in dolphin, and browse to the `GC` folder. Under one of `USA, JAP, or EUR`, you can find the `.gci` files to manually delete. There should be 2 files that contain `GKYE`.
 
 ## Universal Tracker (optional)
 
@@ -91,15 +95,16 @@ See the Universal Tracker repo for further usage instructions.
    * set KARchipelago to `Enabled`
    * press `Start`
 2. Start the Archipelago Launcher and choose `Kirby Air Ride Client`, which will open the text client. It will begin attempting to connect to Dolphin.
-   * Once the ISO is running in Dolphin, and everything is operational, the client will print `Dolphin connected.`
+   * Once the modded game is running in Dolphin, the client will print `KARchipelago mod detected.`
    * If it is not connecting successfully, use `/dolphin` to get the current status.
 3. Connect to the room by entering the server name and port number in the client and pressing `Connect`. For rooms hosted on the website, this will be `archipelago.gg:<port>`. 
    * You will be prompted to enter your slot name, which is the name you selected when creating your yaml. Type that in and press enter.
+   * Shortcut for rooms hosted on the website, in place of steps 2 and 3: click your slot name on the room page. Your browser hands the link to the Archipelago Launcher, which asks which client to open. Choose `Kirby Air Ride Client`, and it opens already connected as that slot. Enter the password, if needed.
 4. Once you're connected to the room and have started a new save file in-game, the client finishes its handshake and prints `Handshake complete. Ready to play!`. You are now connected and ready to play!
 
 ## Troubleshooting
 
-* Use the `/dolphin` command in the client to check the connection status. If it isn't connected, the status includes the reason (no Dolphin process, no emulated game, wrong-region disc, etc.).
+* Use the `/dolphin` command in the client to check the connection status. It shows what the client is waiting for (Dolphin, the game, the mod, the save, or the Archipelago server), or why it can't connect (a different game or a wrong-region disc).
 * Ensure you are running the latest version of the apworld.
 * Ensure you are running the latest version of the mod.
 * Ensure `kirby_air_ride.apworld` is in your Archipelago installation's `custom_worlds` folder.

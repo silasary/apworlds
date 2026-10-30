@@ -1,9 +1,12 @@
 # Manual_OneMoreNight_WolfBoi008
 
 ## Latest
-- <a href="https://github.com/WolfBoi008/One-More-Night/releases/download/pre-3.0.0-1/manual_onemorenight_wolfboi008.apworld">Latest Version (3.0.0.post1)</a>
+- <a href="https://github.com/WolfBoi008/One-More-Night/releases/download/3.0.0-RC2/manual_onemorenight_wolfboi008.apworld">Latest Version (3.0.0.post2)</a>
 
 ## All Versions
+
+#### v3.0.0.post2
+- <a href="https://github.com/WolfBoi008/One-More-Night/releases/download/3.0.0-RC2/manual_onemorenight_wolfboi008.apworld">https://github.com/WolfBoi008/One-More-Night/releases/download/3.0.0-RC2/manual_onemorenight_wolfboi008.apworld</a>
 
 #### v3.0.0.post1
 - <a href="https://github.com/WolfBoi008/One-More-Night/releases/download/pre-3.0.0-1/manual_onemorenight_wolfboi008.apworld">https://github.com/WolfBoi008/One-More-Night/releases/download/pre-3.0.0-1/manual_onemorenight_wolfboi008.apworld</a>

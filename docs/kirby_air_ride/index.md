@@ -5,7 +5,7 @@ controls to race and battle your pals in one of three hectic game modes!
 
 
 ## Downloads
-- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.2.1-TEST/kirby_air_ride.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.3.0/kirby_air_ride.apworld">Latest Version (1.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

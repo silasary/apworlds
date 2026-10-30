@@ -3,7 +3,7 @@
 ## Required Software
 
 * Latest version of the [Dolphin Emulator](https://github.com/dolphin-emu/dolphin)
-* At least version 0.6.7 of the [Archipelago Launcher](https://github.com/ArchipelagoMW/Archipelago)
+* At least version 0.6.8 of the [Archipelago Launcher](https://github.com/ArchipelagoMW/Archipelago)
 * Latest [DKCR AP World](https://github.com/CallmeZewo/DKCR_APWorld/releases)
 
 ## Other Requirements

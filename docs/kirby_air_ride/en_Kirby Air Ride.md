@@ -105,9 +105,6 @@ When more than one mode has a goal, you only complete your game by completing ev
 
 ### Archipelago checklist
 
-**EXPERIMENTAL:** this checklist is incomplete and under active development. It does not yet have all 120 checkboxes. Logic or checks for this may
-not work properly. 
-
 - **Fill in N Checklist Boxes**
 - **Complete a specific list of checklist boxes** (via "Archipelago Goal Locations").
 - **Assemble the Archipelago Star.** Collect all six Archipelago spheres in one City Trial round.
@@ -130,15 +127,15 @@ The categories are:
 
 - **High Effort** - long grinds, such as breaking 1000 boxes or driving for two hours (all four checklists)
 - **Multiplayer** - boxes that need a second player (City Trial, Top Ride)
-- **Free Run** - boxes you can only fill in Free Run (City Trial, Air Ride, Top Ride)
-- **Time Attack** - boxes you can only fill in Time Attack (Air Ride, Top Ride)
+- **Free Run** - boxes you can only fill in Free Run (City Trial, Air Ride, Top Ride, Archipelago)
+- **Time Attack** - boxes you can only fill in Time Attack (Air Ride, Top Ride, Archipelago)
 - **Bust Vehicle on Vehicle** - busting one machine with another (City Trial)
-- **RNG: Events** - City Trial events (City Trial)
+- **RNG: Events** - City Trial events (City Trial, Archipelago)
 - **RNG: Food** - eating X food items in one CT run (City Trial, Archipelago)
 - **RNG: Copy Chance Wheel** - abilities the wheel has to land on (City Trial, Archipelago)
 - **RNG: Rivals** - boxes that depend on what your rivals happen to do (Air Ride, Archipelago)
 
-"Non-Progression Checkboxes" decides what happens to the rest. **Excluded** (the default) keeps them asclocations that only ever hold filler, so you can still fill them in-game for a check. **Removed** takes them out of your world entirely: nothing is placed there and filling them in-game sends nothing.
+"Non-Progression Checkboxes" decides what happens to the rest. **Removed** (the default) takes them out of your world entirely: nothing is placed there and filling them in-game sends nothing. **Excluded** keeps them as locations that only ever hold filler, so you can still fill them in-game for a check.
 
 ## Access gating
 
@@ -246,7 +243,7 @@ You can enable or disable this in the in-game settings menu, or in your yaml. It
 
 EnergyLink applies to every mode. While it is on, charging your machine, collecting patches and other items, and destroying objects (rocks, trees, coral, houses, etc.) in the City contributes energy to the multiworld's shared pool, and you can spend that pool from within the game to receive items.
 
-You can enable or disable this in the in-game settings menu, or in your yaml.
+You can enable or disable this in the in-game settings menu, or in your yaml. Under Settings -> Energy Link -> Sources you can also turn off each way of earning energy (Objects, Patches, Charge) on its own.
 
 ### Energylink spend menu
 
@@ -254,9 +251,9 @@ There is an in-game menu where you can spend your pooled energy to purchase in-g
 
 ### Auto-Charge
 
-Auto-Charge (Settings -> Energy Link -> Auto-Charge in the in-game menu) spends pooled energy to keep your machine's charge meter topped up. It adds a steady amount over time, so it gently assists your own charging - holding A, or coasting and gliding - and your energy drains gradually rather than all at once.
+Auto-Charge (Settings -> Energy Link -> Machine Charge in the in-game menu) spends pooled energy to keep your machine's charge meter topped up. It adds a steady amount of charge over time.
 
-The **Auto-Charge Rate** setting (Slow / Medium / Fast) controls how quickly the meter fills.
+Machine Charge is Off by default; Slow / Med / Fast controls how quickly the meter fills. It only runs while EnergyLink is on.
 
 ## DeathLink
 
