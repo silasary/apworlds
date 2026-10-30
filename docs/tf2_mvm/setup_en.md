@@ -47,6 +47,8 @@ then **Generate seed**. To write it by hand, the options are under
   the seed. The default is 25.
 - `trap_percentage`: the share of spare checks that hold a trap. The default
   is 1.
+- `traps`: which traps the seed draws from, by key. The default is
+  `team_jarate` alone, and an empty list means the same.
 - `victory_caches`, `milestone_checks`, `giantsanity`, `tanksanity`: more
   checks. Off by default.
 - `death_link`: off by default. A lost wave kills every linked player, and one

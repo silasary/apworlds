@@ -41,9 +41,10 @@ d'arme, les paquets de crédits et les pièges. Seules les Australium Medals
 restent dans votre propre monde.
 
 Un piège a un mauvais effet. `trap_percentage` décide combien la partie en
-contient, un pour cent par défaut. Le seul piège pour l'instant couvre toute
-l'équipe de Jarate pendant dix secondes. Un piège qui arrive entre deux
-vagues attend la suivante.
+contient, un pour cent par défaut, et `traps` décide lesquels. Chacun frappe
+toute l'équipe pendant dix secondes : Jarate, Mad Milk, feu, ralentissement,
+saignement, Marked For Death ou gaz du Gas Passer. Seul le Jarate est activé
+par défaut. Un piège qui arrive entre deux vagues attend la suivante.
 
 ## À quoi ressemble l'objet d'un autre monde dans Mann vs Machine ?
 

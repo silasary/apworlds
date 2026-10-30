@@ -316,6 +316,22 @@
       "version_simple": "1.18.3",
       "world_version": "1.18.3r2"
     },
+    "nightlyr27": {
+      "created_at": "2026-10-30T07:23:10Z",
+      "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `a987d13c82f0f5090238d27e777a6cc8849c2026`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.18.4\n\n- feat(traps): six more team traps, Jarate-only runs unchanged\n- fix(stability): preserve reports and evidence for each run attempt\n- fix(bots): stop the SourceMod 1.13 crashes at wave start (#247)\n- chore(go): bump to 1.27.3 (#227)\n- docs(stability): record successful hosted reliability checks\n- perf(stability): reuse production image build cache\n- fix(stability): cache runtime packages and recover Docker setup\n- fix(stability): expose Steam failures during Docker startup\n- fix(stability): diagnose and retry transient Steam setup failures\n- fix(plugin): give the buffed ammo again at spawn and resupply (#245)\n- fix(launcher): bot lineup save and card apply report what really happened (#244)\n- fix(stability): show planned-case percentages and actionable failures\n- fix(stability): recover pruned compilers and crashed test servers\n- Include Python in the validated stability build environment\n- Trust the container workspace for source revision stamping\n- Match production CI container and gzip dependency cache format\n- Describe complete catalog coverage beside the stability widgets\n- Document complete catalog stability validation and retained failures\n- Corroborate final running and installed TF2 versions\n- Wait for final map readiness before stability health checks\n- Use native point and tank objectives for Arctic Arrangement\n- Recognize BSP navigation and refresh installs when the mission catalog changes\n- Accept native player capture as Galois delivery evidence\n- Require the mission-specific native witness when aggregating reverse passes\n- feat: cover all playable reverse missions in stability sweeps\n- style: apply pinned gofumpt formatting to waveprobe tests\n- ci: include validated reverse missions in daily stability scores\n- test: prototype opt-in reverse MvM bomb and carrier objective checks\n- ci: add daily cross-platform TF2 stability checks and percentage badges\n- refactor(srcds): one source for server.cfg, args and mods (#237)\n- refactor(fakeroom): draw the test pool through availability\n- fix(settings): leave unticked community packs out of the pool and the seed\n- refactor(settings): declare each environment variable once\n- test(settings): pin what ApplyEnv and the admin .env do today\n",
+      "download_url": "https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld",
+      "has_manifest": true,
+      "hash_sha256": "45ba8d3f672cac15d2cb324f671357c5bca0035608a508b75286e6a165d55c3e",
+      "html_url": "https://github.com/m-this/tf2-archipelago/releases/tag/nightly",
+      "minimum_ap_version": "0.6.8",
+      "prerelease": true,
+      "size": 242445,
+      "source_url": "https://api.github.com/repos/m-this/tf2-archipelago",
+      "tag": "nightlyr27",
+      "title": "nightly",
+      "version_simple": "1.18.4",
+      "world_version": "1.18.4r2"
+    },
     "nightlyr3": {
       "created_at": "2026-08-27T15:36:05Z",
       "description": "**This is not a release.** It is the head of `main`, rebuilt on every push,\nand it is replaced without warning. For something that stays put, use the\n[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).\n\nBuilt from `ca87f09f783e2647582594c644930774c7f34288`.\n\n## Downloads\n\n- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows\n- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux\n\n## Since v1.10.0\n\n- chore(beads): Mannhunt plays in the test-bed at last\n- chore(beads): correct the wedge recovery record\n- chore(beads): record the launcher goroutine panic fix\n- chore(beads): record the wedged-bot kick on apw-eei\n- fix(launcher): a panic on a background goroutine no longer kills the launcher\n- test(launcher): keep the window and the terminal at the same features\n- chore(beads): record where apw-eei actually stands\n- feat(launcher): keep only the robot health scale\n- chore(beads): note the lever instrumentation on apw-d7u\n- chore(beads): close apw-d7u, the balancing levers are fixed and measured\n- docs(plugin): record why a Cash Bundle keeps the Scout heal (apw-jo7)\n- chore(beads): record the balancing and teleporter work\n- feat(plugin): restore the wave after a restart, and hide the empty buff window\n- fix(launcher): use strings.Cut in reselectLoadout\n- chore(beads): file the balancing levers as P0 (apw-d7u)\n- chore(beads): file the Cash Bundle heal (apw-jo7)\n- chore(beads): file the empty buff window as P0\n- fix(launcher): name a custom loadout in the Bot Switcher, and open the Bots tab\n- fix(launcher): refresh the loadout menus when one is saved or removed\n- docs(changelog): the fixes since the section was drafted (apw-u63, apw-6hf)\n- chore(beads): close apw-u63\n- fix(launcher): the settings window would not open at all (apw-u63)\n- feat(fakeroom): hand out weapon buffs early enough to try them\n- chore(deps): bots v2.20.0 -> v2.21.0 (mvm-hnb)\n- chore(beads): mannhunt is a community map (apw-eei)\n- fix(test): use the real helpers in the resume test (apw-onf)\n- docs: credit k-kaneta, Cowser and Peppy as play-testers\n- chore(beads): mannhunt crashes, and the boots share the shield's hole (apw-7w9)\n- feat(bridge): remember where the run is, so a restart can put it back (apw-onf)\n- fix(plugin): refund the bundle credits the minus button loses (apw-6hf)\n- chore(beads): the shield bypasses a locked secondary (apw-7w9)\n- release: 1.11.0\n- chore(beads): the 2026-08-27 discord reports (apw-6hf, apw-8t6)\n- chore(deps): bots v2.19.0 -> v2.20.0 (mvm-78m)\n- docs: credit kelly-cs, and file the community maps work (apw-4zk)\n- chore(beads): close apw-5tk, the buffs shipped\n- feat(launcher): a Balancing tab, with the robot levers on it (mvm-bha, apw-5tk)\n- fix(test): skip the game data test without the real ripext (apw-5tk)\n- chore(beads): apw-5tk, what PR #3 solves\n- Add Archipelago weapon buff upgrades\n- chore(beads): a restart must not cost the mission (apw)\n- chore(deps): bots v2.18.1 -> v2.19.0 (mvm-bha)\n- feat(launcher): build your own bot loadouts (mvm-e5r)\n- feat(launcher): resolve the loadouts a player builds (mvm-e5r)\n- docs: the Bot Switcher, in both languages (mvm-6dc)\n- feat(gamedata): a weapon catalogue, generated from the mod and the game (mvm-e5r)\n- feat(launcher): a Bot Switcher tab, and lineup changes without a restart (mvm-6dc)\n- chore(beads): update a bead\n- chore(beads): update apw-r85 The game server crashes with an access violation, and the la\u2026\n- chore(beads): update apw-hut RED gets nine bots when the mission loads\n- chore(beads): update apw-48u De-upgrading appears not to take\n- chore(beads): update apw-4cb A bundle is money the game never recorded\n- feat(launcher): validate Archipelago run capacity\n- feat(launcher): install selected community assets\n- feat(community): add portable MvM mission support\n",
@@ -378,7 +394,7 @@
       "tag": "nightlyr6",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r2"
+      "world_version": "1.11.0r3"
     },
     "nightlyr7": {
       "created_at": "2026-09-06T18:20:06Z",
@@ -394,7 +410,7 @@
       "tag": "nightlyr7",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r2"
+      "world_version": "1.11.0r4"
     },
     "nightlyr8": {
       "created_at": "2026-09-06T12:00:14Z",
@@ -426,7 +442,7 @@
       "tag": "nightlyr9",
       "title": "nightly",
       "version_simple": "1.11.0",
-      "world_version": "1.11.0r3"
+      "world_version": "1.11.0r2"
     },
     "v1.0.0": {
       "created_at": "2026-08-17T17:37:17Z",

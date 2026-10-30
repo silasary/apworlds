@@ -37,8 +37,10 @@ buffs, the cash bundles and the traps. Only the Australium Medals stay in your
 own world.
 
 A trap has a bad effect. `trap_percentage` decides how many the run holds,
-one percent by default. The one trap so far soaks the whole team in Jarate for
-ten seconds. A trap that arrives between waves waits for the next one.
+one percent by default, and `traps` decides which. Each hits the whole team for
+ten seconds: Jarate, Mad Milk, fire, a slow, bleeding, Marked For Death or Gas
+Passer gas. Only Jarate is on by default. A trap that arrives between waves
+waits for the next one.
 
 ## What does another world's item look like in Mann vs Machine?
 

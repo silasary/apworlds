@@ -50,6 +50,8 @@ puis **Generate seed**. Pour l'écrire à la main, les options sont sous
   niveau à un bonus déjà dans la seed. La valeur par défaut est 25.
 - `trap_percentage` : la part des checks libres qui contiennent un piège. La
   valeur par défaut est 1.
+- `traps` : les pièges que la seed peut tirer, par clé. Par défaut
+  `team_jarate` seul, et une liste vide veut dire la même chose.
 - `victory_caches`, `milestone_checks`, `giantsanity`, `tanksanity` : plus
   de checks. Désactivés par défaut.
 - `death_link` : désactivé par défaut. Une vague perdue tue chaque joueur

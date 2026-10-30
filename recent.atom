@@ -2,35 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-30T06:17:11.978907+00:00</updated>
+  <updated>2026-10-30T12:24:20.099249+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.8.0</id>
-    <title>Yellow Taxi Goes Vroom v0.8.0</title>
-    <updated>2026-10-25T23:06:05+00:00</updated>
-    <author>
-      <name>soopercool101</name>
-    </author>
-    <content>[Mod](https://github.com/soopercool101/YellowTaxiAP/releases/tag/v0.8.0) | [Setup Guide](https://github.com/soopercool101/Archipelago/blob/YTGV.v0.8.0/worlds/yellowtaxi/docs/setup_en.md)&#13;
-&#13;
-## v0.8.0 - The "Polish" Update&#13;
-&#13;
-- Add Morio's Mind&#13;
-- Add Progressive Spin Attack option&#13;
-- Add Pizzasanity&#13;
-- Add option to include all rocket levels&#13;
-- Add Hat World Membership&#13;
-- Add Price Randomization&#13;
-- Add various cosmetic options&#13;
-- More item aliases&#13;
-- Adjust default options&#13;
-- Various logic tweaks&#13;
-- Various bug fixes</content>
-    <link href="https://github.com/soopercool101/Archipelago/releases/tag/YTGV.v0.8.0"/>
-  </entry>
   <entry>
     <id>https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V0.0.6</id>
     <title>Fantastic Fist v0.0.6</title>
@@ -1832,9 +1808,66 @@ Use **Mod 0.7.2** and **APWorld 0.7.1** with **Sentinel Core 1.1.3**.&#13;
 * Made it so that "shopkeepers" will go back to giving medical herbs once they have given their randomized check.&#13;
 * Made it so that key items are not removed from your inventory when used.&#13;
 * Made it so that most key items (dream rod excluded) will be used without having to be equipped.&#13;
-* Fixed bug where releasing the mountain king with release cutscene skipping would cause the jail not not open until a subsequent revisit to the area.&#13;
+* Fixed bug where releasing the mountain king with release cutscene skipping would cause the jail to not open until a subsequent revisit to the area.&#13;
 &#13;
 **Full Changelog**: &lt;https://github.com/Tranquilite0/Archipelago-SoulBlazer/compare/v0.6.2...v0.7.0&gt;</content>
     <link href="https://github.com/Tranquilite0/Archipelago-SoulBlazer/releases/tag/v0.7.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.4r2</title>
+    <updated>2026-10-30T07:23:10+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `a987d13c82f0f5090238d27e777a6cc8849c2026`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.18.4
+
+- feat(traps): six more team traps, Jarate-only runs unchanged
+- fix(stability): preserve reports and evidence for each run attempt
+- fix(bots): stop the SourceMod 1.13 crashes at wave start (#247)
+- chore(go): bump to 1.27.3 (#227)
+- docs(stability): record successful hosted reliability checks
+- perf(stability): reuse production image build cache
+- fix(stability): cache runtime packages and recover Docker setup
+- fix(stability): expose Steam failures during Docker startup
+- fix(stability): diagnose and retry transient Steam setup failures
+- fix(plugin): give the buffed ammo again at spawn and resupply (#245)
+- fix(launcher): bot lineup save and card apply report what really happened (#244)
+- fix(stability): show planned-case percentages and actionable failures
+- fix(stability): recover pruned compilers and crashed test servers
+- Include Python in the validated stability build environment
+- Trust the container workspace for source revision stamping
+- Match production CI container and gzip dependency cache format
+- Describe complete catalog coverage beside the stability widgets
+- Document complete catalog stability validation and retained failures
+- Corroborate final running and installed TF2 versions
+- Wait for final map readiness before stability health checks
+- Use native point and tank objectives for Arctic Arrangement
+- Recognize BSP navigation and refresh installs when the mission catalog changes
+- Accept native player capture as Galois delivery evidence
+- Require the mission-specific native witness when aggregating reverse passes
+- feat: cover all playable reverse missions in stability sweeps
+- style: apply pinned gofumpt formatting to waveprobe tests
+- ci: include validated reverse missions in daily stability scores
+- test: prototype opt-in reverse MvM bomb and carrier objective checks
+- ci: add daily cross-platform TF2 stability checks and percentage badges
+- refactor(srcds): one source for server.cfg, args and mods (#237)
+- refactor(fakeroom): draw the test pool through availability
+- fix(settings): leave unticked community packs out of the pool and the seed
+- refactor(settings): declare each environment variable once
+- test(settings): pin what ApplyEnv and the admin .env do today
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
 </feed>
